@@ -1,0 +1,109 @@
+# Abrechnung & Tarife
+
+Verwalten Sie Ihr MyCompanyDesk-Abonnement, sehen Sie Ihre Nutzung ein und führen Sie ein Upgrade Ihres Tarifs durch.
+
+## Tarife
+
+MyCompanyDesk bietet drei Tarife:
+
+### Free
+
+Kostenlos starten:
+
+- Begrenzte Rechnungen und Kunden
+- Grundlegende Ausgabenverfolgung
+- Grundlegende Berichte
+- 1 Benutzer
+- Community-Support
+
+### Pro
+
+Für wachsende Unternehmen:
+
+- Unbegrenzte Rechnungen und Kunden
+- Vollständige Ausgabenverfolgung mit Belegscanner
+- KI-Vorschläge
+- Individuelles PDF-Branding
+- CSV-Export
+- Bis zu 5 Teammitglieder
+- E-Mail-Support
+
+### Business
+
+Für Teams und skalierenden Betrieb:
+
+- Alles aus Pro
+- Unbegrenzte Teammitglieder
+- API-Zugang
+- Prioritäts-Support
+- Erweiterte Integrationen
+
+Tarife sind in **monatlichen** und **jährlichen** Abrechnungsintervallen verfügbar. Jahrestarife beinhalten einen Rabatt.
+
+## Abonnement verwalten
+
+### Upgrade
+
+1. Gehen Sie zu **Einstellungen > Abrechnung**
+2. Klicken Sie auf **Upgrade** beim gewünschten Tarif
+3. Schließen Sie die Zahlung über Stripe ab
+4. Funktionen werden sofort aktiviert
+
+### Downgrade
+
+1. Gehen Sie zu **Einstellungen > Abrechnung**
+2. Klicken Sie auf **Tarif ändern**
+3. Wählen Sie den niedrigeren Tarif
+4. Änderungen treten am Ende der aktuellen Abrechnungsperiode in Kraft
+
+### Kündigung
+
+1. Gehen Sie zu **Einstellungen > Abrechnung**
+2. Klicken Sie auf **Abonnement verwalten**, um das Stripe-Abrechnungsportal zu öffnen
+3. Kündigen Sie Ihr Abonnement
+4. Sie behalten den Zugang bis zum Ende des bezahlten Zeitraums
+
+## Nutzungsverfolgung
+
+Sehen Sie Ihre aktuelle Nutzung auf der Abrechnungsseite:
+
+- **Erstellte Rechnungen** in diesem Monat
+- **Kunden** in Ihrem Arbeitsbereich
+- **Teammitglieder** aktiv
+- **API-Aufrufe** (Business-Tarif)
+
+Die Nutzung wird monatlich zurückgesetzt. Wenn Sie sich einem Limit nähern, sehen Sie eine Benachrichtigung mit Upgrade-Vorschlag.
+
+## Zahlungsmethoden
+
+Zahlungen werden sicher über **Stripe** abgewickelt. Akzeptierte Methoden:
+
+- Kreditkarte (Visa, Mastercard, Amex)
+- Debitkarte
+- SEPA-Lastschrift (EU)
+
+Verwalten Sie Ihre Zahlungsmethode im Stripe-Abrechnungsportal.
+
+## Abrechnungsportal
+
+Klicken Sie auf **Abonnement verwalten**, um auf das Stripe-Abrechnungsportal zuzugreifen, wo Sie:
+
+- Zahlungsmethode aktualisieren
+- Rechnungsverlauf einsehen
+- Belege herunterladen
+- Rechnungsadresse ändern
+
+## Funktionsberechtigungen
+
+Einige Funktionen sind an den Tarif gebunden:
+
+| Funktion | Free | Pro | Business |
+|---|---|---|---|
+| Individuelles Branding | - | Ja | Ja |
+| CSV-Export | - | Ja | Ja |
+| Belegscanner | - | Ja | Ja |
+| KI-Vorschläge | - | Ja | Ja |
+| Textprüfung | - | Ja | Ja |
+| API-Zugang | - | - | Ja |
+
+Der Versuch, eine tarifgebundene Funktion in einem niedrigeren Tarif zu nutzen, zeigt eine Upgrade-Aufforderung.

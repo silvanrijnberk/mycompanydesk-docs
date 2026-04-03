@@ -1,0 +1,51 @@
+# Introductie
+
+MyCompanyDesk is een alles-in-een boekhoud- en bedrijfsmanagementplatform, ontworpen voor zzp'ers, kleine bedrijven en vastgoedbeheerders. Het helpt je bij het beheren van je volledige financiele workflow — van het maken van facturen en het bijhouden van uitgaven tot het doen van BTW-aangifte en het beheren van klantrelaties.
+
+## Wat kun je doen met MyCompanyDesk?
+
+- **Facturen maken en versturen** — Professionele facturen met betaallinks, PDF-generatie en e-mailverzending
+- **Uitgaven bijhouden** — Registreer uitgaven handmatig of scan bonnen met AI-gestuurde OCR
+- **Klanten beheren** — Onderhoud een complete klantendatabase met contactgegevens en geschiedenis
+- **Offertes maken** — Maak offertes en zet ze om naar facturen wanneer ze geaccepteerd zijn
+- **Projecten beheren** — Organiseer werk in projecten, registreer tijd en monitor winstgevendheid
+- **Contracten beheren** — Stel terugkerende service- of huurcontracten in
+- **Objecten bijhouden** — Beheer huurwoningen, voertuigen en apparatuur
+- **Facturatie automatiseren** — Stel terugkerende facturen en uitgaven in
+- **Rapportages bekijken** — Omzet, winst, cashflow, BTW en klantanalyses
+- **Samenwerken** — Nodig teamleden uit, stel rechten in en deel met je boekhouder
+
+## Ondersteunde talen
+
+MyCompanyDesk is volledig beschikbaar in:
+
+- English
+- Nederlands (Dutch)
+- Deutsch (German)
+- Fran&ccedil;ais (French)
+
+Je kunt op elk moment van taal wisselen via je profielinstellingen. Facturen en e-mails kunnen in elk van deze talen worden verstuurd, ongeacht je interfacetaal.
+
+## Abonnementen
+
+| Functie | Gratis | Pro | Business |
+|---|---|---|---|
+| Facturen & offertes | Beperkt | Onbeperkt | Onbeperkt |
+| Klanten | Beperkt | Onbeperkt | Onbeperkt |
+| Uitgaven bijhouden | Basis | Volledig | Volledig |
+| Bonnen scannen | - | Ja | Ja |
+| AI-suggesties | - | Ja | Ja |
+| Eigen huisstijl | - | Ja | Ja |
+| Teamleden | 1 | Tot 5 | Onbeperkt |
+| Rapportages & export | Basis | Volledig | Volledig |
+| API-toegang | - | - | Ja |
+
+## Hulp krijgen
+
+- Gebruik de **contextuele gids** (het hulp-icoon in de app) voor contextgerichte assistentie
+- Blader door deze documentatie voor gedetailleerde functiegidsen
+- Neem contact op met support via het in-app supportticketsysteem
+
+## Volgende stappen
+
+Klaar om te beginnen? Ga naar [Account aanmaken](/nl/getting-started/create-account) om je werkruimte in te richten.
