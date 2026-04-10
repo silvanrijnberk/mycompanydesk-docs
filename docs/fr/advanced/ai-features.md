@@ -31,6 +31,10 @@ Des recommandations intelligentes qui vous aident a categoriser et decrire vos e
 
 Lorsque vous creez une depense, l'IA analyse la description et suggere la categorie la plus appropriee. Cela fait gagner du temps et assure une categorisation coherente.
 
+### Suggestions de taux de TVA
+
+Lors de l'ajout de lignes a vos factures, l'IA suggere le taux de TVA correct en fonction de la description de l'article et des regles fiscales de votre pays.
+
 ### Amelioration des descriptions
 
 L'IA peut suggerer des descriptions plus claires et plus professionnelles pour :
@@ -38,6 +42,14 @@ L'IA peut suggerer des descriptions plus claires et plus professionnelles pour :
 - Les lignes de facturation
 - Les descriptions de depenses
 - Les notes clients
+
+### Classification des heures
+
+Lors de l'enregistrement du temps, l'IA suggere un type d'activite (par ex. reunion, developpement, administration) en fonction de votre description.
+
+### Classification des deplacements
+
+Lors de l'ajout d'entrees de deplacement, l'IA suggere le type de trajet (par ex. domicile-travail, visite client, livraison) pour categoriser vos deplacements.
 
 ### Comment ca fonctionne
 
@@ -75,15 +87,32 @@ Prend en charge l'anglais, le neerlandais, l'allemand et le francais.
 La verification de texte necessite le plan **Pro** ou superieur.
 :::
 
-## Resumes de compte
+## Analyses IA
 
-L'IA genere des resumes periodiques de votre activite commerciale :
+L'IA genere des resumes periodiques de votre activite commerciale, affiches sur le tableau de bord.
+
+### Types de resumes
 
 - **Quotidien** -- Apercu rapide des transactions du jour
 - **Hebdomadaire** -- Bilan de la semaine avec tendances
 - **Mensuel** -- Analyse mensuelle complete
 
-Les resumes sont generes dans votre langue preferee et disponibles depuis le tableau de bord.
+### Personnaliser les analyses
+
+Configurez les domaines d'attention de l'IA dans **Parametres > Analyses IA** :
+
+- **Domaines d'attention** -- Activez ou desactivez des sujets individuels : chiffre d'affaires, depenses, elements en retard, clients, benefices, actions recommandees, enregistrement du temps
+- **Ton** -- Choisissez entre concis, detaille ou oriente vers l'action
+- **Instructions personnalisees** -- Ajoutez vos propres consignes pour la redaction des resumes (256 caracteres max.)
+- **Notifications** -- Activez les e-mails de synthese quotidiens ou mensuels
+
+Les resumes sont generes dans votre langue preferee.
+
+## Detection de secteur
+
+MyCompanyDesk detecte automatiquement le secteur d'activite de votre entreprise en analysant vos factures, depenses et clients. Une fois suffisamment confiant, ce contexte est utilise pour ameliorer toutes les suggestions IA -- par exemple, en recommandant des taux de TVA specifiques au secteur ou des categories de depenses pertinentes.
+
+Cette detection fonctionne en arriere-plan et ne necessite aucune configuration.
 
 ## Conseils
 

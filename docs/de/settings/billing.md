@@ -40,6 +40,18 @@ Für Teams und skalierenden Betrieb:
 
 Tarife sind in **monatlichen** und **jährlichen** Abrechnungsintervallen verfügbar. Jahrestarife beinhalten einen Rabatt.
 
+### Open Beta
+
+MyCompanyDesk befindet sich derzeit in der offenen Beta mit einer begrenzten Anzahl kostenloser Upgrade-Plätze:
+
+- Eine begrenzte Anzahl von **Starter**-, **Pro**- und **Enterprise**-Plätzen wird kostenlos angeboten
+- Sichern Sie sich einen Platz über die Abrechnungsseite, solange Plätze verfügbar sind
+- Jede Person kann nur einen Platz beanspruchen
+
+::: info
+Open-Beta-Plätze sind begrenzt und werden nach dem Prinzip "Wer zuerst kommt, mahlt zuerst" vergeben. Sobald alle Plätze vergeben sind, gelten die regulären Preise.
+:::
+
 ## Abonnement verwalten
 
 ### Upgrade

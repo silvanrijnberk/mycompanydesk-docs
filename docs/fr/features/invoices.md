@@ -81,6 +81,10 @@ Creez une copie d'une facture existante -- utile pour la facturation recurrente 
 
 Envoyez un rappel de paiement pour les factures en retard.
 
+### E-mail rapide
+
+Depuis la barre laterale de detail de la facture, cliquez sur l'action rapide **e-mail** pour composer et envoyer un e-mail au client directement -- sans quitter la page de la facture.
+
 ## Actions groupees
 
 Selectionnez plusieurs factures dans la liste pour effectuer des actions groupees :

@@ -2,7 +2,7 @@ import { defineConfig } from 'vitepress'
 
 const sharedHead = [
   ['link', { rel: 'icon', type: 'image/svg+xml', href: '/logo.svg' }],
-  ['meta', { name: 'theme-color', content: '#4f6ef7' }],
+  ['meta', { name: 'theme-color', content: '#2563eb' }],
   ['meta', { property: 'og:type', content: 'website' }],
   ['meta', { property: 'og:title', content: 'MyCompanyDesk Docs' }],
   ['meta', { property: 'og:description', content: 'Learn how to use MyCompanyDesk to manage invoices, expenses, customers, and more.' }],
@@ -57,6 +57,7 @@ function sidebarEN() {
         { text: 'Profile', link: '/account/profile' },
         { text: 'Security', link: '/account/security' },
         { text: 'Data Import & Export', link: '/account/data' },
+        { text: 'Feedback', link: '/account/feedback' },
       ],
     },
     {
@@ -123,6 +124,7 @@ function sidebarNL() {
         { text: 'Profiel', link: '/nl/account/profile' },
         { text: 'Beveiliging', link: '/nl/account/security' },
         { text: 'Gegevens importeren & exporteren', link: '/nl/account/data' },
+        { text: 'Feedback', link: '/nl/account/feedback' },
       ],
     },
     {
@@ -189,6 +191,7 @@ function sidebarDE() {
         { text: 'Profil', link: '/de/account/profile' },
         { text: 'Sicherheit', link: '/de/account/security' },
         { text: 'Datenimport & -export', link: '/de/account/data' },
+        { text: 'Feedback', link: '/de/account/feedback' },
       ],
     },
     {
@@ -255,6 +258,7 @@ function sidebarFR() {
         { text: 'Profil', link: '/fr/account/profile' },
         { text: 'Sécurité', link: '/fr/account/security' },
         { text: 'Import & Export de données', link: '/fr/account/data' },
+        { text: 'Commentaires', link: '/fr/account/feedback' },
       ],
     },
     {

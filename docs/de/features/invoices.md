@@ -81,6 +81,10 @@ Erstellen Sie eine Kopie einer bestehenden Rechnung — nützlich für wiederkeh
 
 Senden Sie eine Zahlungserinnerung für überfällige Rechnungen.
 
+### Schnell-E-Mail
+
+Klicken Sie in der Rechnungsdetail-Seitenleiste auf die **E-Mail**-Schnellaktion, um direkt eine E-Mail an den Kunden zu verfassen und zu senden — ohne die Rechnungsseite zu verlassen.
+
 ## Massenaktionen
 
 Wählen Sie mehrere Rechnungen aus der Liste, um Aktionen in großem Umfang durchzuführen:

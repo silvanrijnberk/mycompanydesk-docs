@@ -27,9 +27,54 @@ L'enregistrement du temps vous aide a :
    - **Taux horaire** -- Votre tarif pour ce travail
 4. Cliquez sur **Enregistrer**
 
+### Ajout rapide
+
+Pour une saisie plus rapide, utilisez le flux d'ajout rapide :
+
+1. Appuyez sur le bouton **+**
+2. Selectionnez un client dans la grille des clients recents -- vos clients les plus utilises apparaissent en premier
+3. Remplissez les heures et la description
+4. Enregistrez
+
+La grille des clients recents est pre-remplie avec vos 10 meilleurs clients en fonction des factures, depenses et projets.
+
+### Vue grille hebdomadaire
+
+Passez a la grille hebdomadaire pour un apercu sous forme de tableau de votre semaine :
+
+- Les lignes representent les clients, les colonnes les jours
+- Saisissez les heures directement dans les cellules de la grille
+- Activez les entrees de deplacement par ligne
+- Les clients favoris (etoiles) apparaissent en haut
+
+::: tip
+Si vous n'avez pas encore configure vos heures de travail, la vue par defaut affiche une liste de cartes au lieu de la grille hebdomadaire.
+:::
+
+### Heures de travail
+
+Configurez vos heures de travail standard pour suivre vos objectifs quotidiens :
+
+1. Allez dans les parametres d'enregistrement du temps
+2. Definissez vos heures de **debut** et de **fin**
+3. Activez optionnellement les **pauses** avec une heure de debut et une duree
+
+La grille hebdomadaire utilise ces parametres pour afficher vos heures prevues vs. reelles.
+
 ### Mode heures uniquement
 
 Pour un suivi du temps simplifie, activez le mode heures uniquement dans les parametres. Cela masque le taux horaire et les champs de facturation, n'affichant que les heures et la description.
+
+## Enregistrement des deplacements
+
+Suivez vos deplacements professionnels en parallele de vos entrees de temps :
+
+- Ajoutez des entrees de deplacement avec origine, destination et distance
+- Enregistrez les itineraires frequents sur les fiches clients pour une reutilisation rapide
+- L'IA suggere le type de deplacement (domicile-travail, visite client, livraison)
+- Activez la visibilite des deplacements par client dans la grille hebdomadaire
+
+Les distances et couts de deplacement sont suivis separement des entrees de temps et peuvent etre exportes pour le remboursement kilometrique.
 
 ## Facturer les entrees de temps
 

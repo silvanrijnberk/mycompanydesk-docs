@@ -40,6 +40,18 @@ Voor teams en groeiende organisaties:
 
 Abonnementen zijn beschikbaar in **maandelijkse** en **jaarlijkse** factureringsintervallen. Jaarabonnementen bevatten korting.
 
+### Open beta
+
+MyCompanyDesk bevindt zich momenteel in open beta met een beperkt aantal gratis upgraded abonnementsplekken:
+
+- Een beperkt aantal **Starter**-, **Pro**- en **Enterprise**-plekken worden kosteloos aangeboden
+- Claim een plek via de factureringspagina zolang er plekken beschikbaar zijn
+- Elke persoon kan slechts een plek claimen
+
+::: info
+Open beta-plekken zijn beperkt en beschikbaar op basis van wie het eerst komt, het eerst maalt. Zodra alle plekken zijn geclaimd, gelden de standaardtarieven.
+:::
+
 ## Je abonnement beheren
 
 ### Upgraden

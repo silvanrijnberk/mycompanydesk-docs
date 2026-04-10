@@ -63,6 +63,17 @@ Ihre USt.-Einstellungen respektieren das Registrierungsland Ihres Unternehmens. 
 - Fristenberechnungen
 - Anwendbarkeit der Reverse-Charge-Regelung
 
+### Unterstützte Länder
+
+MyCompanyDesk enthält länderspezifische USt.-Sätze für 30 Länder:
+
+| Region | Länder |
+|---|---|
+| **EU** | Niederlande, Deutschland, Belgien, Frankreich, Österreich, Spanien, Italien, Portugal, Irland, Luxemburg, Finnland, Schweden, Dänemark, Polen, Tschechien, Griechenland, Ungarn, Rumänien, Bulgarien, Kroatien, Slowakei, Slowenien, Estland, Lettland, Litauen, Zypern, Malta |
+| **Sonstige** | Vereinigtes Königreich, Vereinigte Staaten (Sales Tax), Kanada (GST) |
+
+Jedes Land hat eigene Standard- und ermäßigte Steuersätze. Deutschland verwendet beispielsweise 0%/7%/19%, während Italien 0%/4%/5%/10%/22% nutzt. Die korrekten Sätze werden automatisch basierend auf der Ländereinstellung Ihres Unternehmens angewendet.
+
 ## Reverse-Charge
 
 Für innergemeinschaftliche B2B-Transaktionen aktivieren Sie die Reverse-Charge-Regelung:

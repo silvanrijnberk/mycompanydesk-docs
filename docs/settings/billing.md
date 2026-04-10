@@ -40,6 +40,18 @@ For teams and scaling operations:
 
 Plans are available in **monthly** and **annual** billing intervals. Annual plans include a discount.
 
+### Open beta
+
+MyCompanyDesk is currently in open beta with a limited number of free upgraded plan spots available:
+
+- A limited pool of **Starter**, **Pro**, and **Enterprise** spots are offered at no cost
+- Claim a spot from the billing page while spots remain
+- Each person can claim one spot only
+
+::: info
+Open beta spots are limited and available on a first-come, first-served basis. Once all spots are claimed, standard pricing applies.
+:::
+
 ## Managing your subscription
 
 ### Upgrade

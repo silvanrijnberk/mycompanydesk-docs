@@ -31,6 +31,10 @@ Smart recommendations that help you categorize and describe your records:
 
 When you create an expense, AI analyzes the description and suggests the most appropriate category. This saves time and ensures consistent categorization.
 
+### VAT rate suggestions
+
+When adding line items to invoices, AI suggests the correct VAT rate based on the item description and your country's tax rules.
+
 ### Description improvements
 
 AI can suggest clearer, more professional descriptions for:
@@ -38,6 +42,14 @@ AI can suggest clearer, more professional descriptions for:
 - Invoice line items
 - Expense descriptions
 - Customer notes
+
+### Time entry classification
+
+When logging time, AI suggests an activity type (e.g. meeting, development, administration) based on your description.
+
+### Travel classification
+
+When adding travel entries, AI suggests the travel type (e.g. commute, client visit, delivery) to help categorize your trips.
 
 ### How it works
 
@@ -75,15 +87,32 @@ Supports English, Dutch, German, and French.
 Text check requires the **Pro** plan or higher.
 :::
 
-## Account summaries
+## AI Insights
 
-AI generates periodic summaries of your business activity:
+AI generates periodic summaries of your business activity, shown on the dashboard.
+
+### Summary types
 
 - **Daily** — Quick overview of the day's transactions
 - **Weekly** — Week-in-review with trends
 - **Monthly** — Comprehensive monthly analysis
 
-Summaries are generated in your preferred language and available from the dashboard.
+### Customizing insights
+
+Configure what the AI focuses on in **Settings > AI Insights**:
+
+- **Focus areas** — Toggle individual topics: revenue, expenses, overdue items, customers, profit, actionable items, time registration
+- **Tone** — Choose between concise, detailed, or actionable summaries
+- **Custom instructions** — Add your own guidance for how summaries should be written (up to 256 characters)
+- **Notifications** — Enable daily or monthly summary emails
+
+Summaries are generated in your preferred language.
+
+## Industry detection
+
+MyCompanyDesk automatically detects your company's industry by analyzing your invoices, expenses, and customers. Once confident, it uses this context to improve all AI suggestions — for example, recommending construction-specific VAT rates or industry-relevant expense categories.
+
+This detection runs in the background and requires no configuration.
 
 ## Tips
 

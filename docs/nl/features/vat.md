@@ -63,6 +63,17 @@ Je BTW-instellingen respecteren het vestigingsland van je bedrijf. Dit beinvloed
 - Deadlineberekeningen
 - Toepasbaarheid van verlegde BTW
 
+### Ondersteunde landen
+
+MyCompanyDesk bevat landspecifieke BTW-tarieven voor 30 landen:
+
+| Regio | Landen |
+|---|---|
+| **EU** | Nederland, Duitsland, Belgie, Frankrijk, Oostenrijk, Spanje, Italie, Portugal, Ierland, Luxemburg, Finland, Zweden, Denemarken, Polen, Tsjechie, Griekenland, Hongarije, Roemenie, Bulgarije, Kroatie, Slowakije, Slovenie, Estland, Letland, Litouwen, Cyprus, Malta |
+| **Overig** | Verenigd Koninkrijk, Verenigde Staten (sales tax), Canada (GST) |
+
+Elk land heeft zijn eigen standaard- en verlaagde tariefschijven. Duitsland gebruikt bijvoorbeeld 0%/7%/19%, terwijl Italie 0%/4%/5%/10%/22% hanteert. De juiste tarieven worden automatisch toegepast op basis van de landinstelling van je bedrijf.
+
 ## Verlegde BTW
 
 Voor intra-EU business-to-business-transacties schakel je verlegde BTW in:

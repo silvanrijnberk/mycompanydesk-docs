@@ -63,6 +63,17 @@ Your VAT settings respect your company's country of registration. This affects:
 - Deadline calculations
 - Reverse charge applicability
 
+### Supported countries
+
+MyCompanyDesk includes country-specific VAT rates for 30 countries:
+
+| Region | Countries |
+|---|---|
+| **EU** | Netherlands, Germany, Belgium, France, Austria, Spain, Italy, Portugal, Ireland, Luxembourg, Finland, Sweden, Denmark, Poland, Czech Republic, Greece, Hungary, Romania, Bulgaria, Croatia, Slovakia, Slovenia, Estonia, Latvia, Lithuania, Cyprus, Malta |
+| **Other** | United Kingdom, United States (sales tax), Canada (GST) |
+
+Each country has its own standard and reduced rate brackets. For example, Germany uses 0%/7%/19%, while Italy uses 0%/4%/5%/10%/22%. The correct rates are automatically applied based on your company's country setting.
+
 ## Reverse charge
 
 For intra-EU business-to-business transactions, enable reverse charge:

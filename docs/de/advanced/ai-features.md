@@ -31,6 +31,10 @@ Intelligente Empfehlungen, die Ihnen helfen, Ihre Datensätze zu kategorisieren 
 
 Wenn Sie eine Ausgabe erstellen, analysiert die KI die Beschreibung und schlägt die passendste Kategorie vor. Dies spart Zeit und sorgt für konsistente Kategorisierung.
 
+### USt.-Satz-Vorschläge
+
+Beim Hinzufügen von Positionen zu Rechnungen schlägt die KI den korrekten USt.-Satz basierend auf der Artikelbeschreibung und den Steuerregeln Ihres Landes vor.
+
 ### Beschreibungsverbesserungen
 
 Die KI kann klarere, professionellere Beschreibungen vorschlagen für:
@@ -38,6 +42,14 @@ Die KI kann klarere, professionellere Beschreibungen vorschlagen für:
 - Rechnungspositionen
 - Ausgabenbeschreibungen
 - Kundennotizen
+
+### Zeiterfassungsklassifizierung
+
+Beim Erfassen von Stunden schlägt die KI einen Aktivitätstyp vor (z.B. Besprechung, Entwicklung, Verwaltung) basierend auf Ihrer Beschreibung.
+
+### Reiseklassifizierung
+
+Beim Hinzufügen von Reiseeinträgen schlägt die KI den Reisetyp vor (z.B. Pendeln, Kundenbesuch, Lieferung), um Ihre Fahrten zu kategorisieren.
 
 ### So funktioniert es
 
@@ -75,15 +87,32 @@ Unterstützt Englisch, Niederländisch, Deutsch und Französisch.
 Textprüfung erfordert den **Pro**-Tarif oder höher.
 :::
 
-## Kontozusammenfassungen
+## KI-Einblicke
 
-Die KI erstellt regelmäßige Zusammenfassungen Ihrer Geschäftsaktivitäten:
+Die KI erstellt regelmäßige Zusammenfassungen Ihrer Geschäftsaktivitäten, die auf dem Dashboard angezeigt werden.
+
+### Zusammenfassungstypen
 
 - **Täglich** — Kurzer Überblick über die Tagesgeschäfte
 - **Wöchentlich** — Wochenrückblick mit Trends
 - **Monatlich** — Umfassende monatliche Analyse
 
-Zusammenfassungen werden in Ihrer bevorzugten Sprache erstellt und sind über das Dashboard verfügbar.
+### Einblicke anpassen
+
+Konfigurieren Sie, worauf sich die KI konzentriert, unter **Einstellungen > KI-Einblicke**:
+
+- **Schwerpunktbereiche** — Einzelne Themen ein-/ausschalten: Umsatz, Ausgaben, überfällige Posten, Kunden, Gewinn, Handlungsempfehlungen, Zeiterfassung
+- **Ton** — Wählen Sie zwischen knapp, detailliert oder handlungsorientiert
+- **Benutzerdefinierte Anweisungen** — Fügen Sie eigene Vorgaben hinzu, wie Zusammenfassungen formuliert werden sollen (max. 256 Zeichen)
+- **Benachrichtigungen** — Aktivieren Sie tägliche oder monatliche Zusammenfassungs-E-Mails
+
+Zusammenfassungen werden in Ihrer bevorzugten Sprache erstellt.
+
+## Branchenerkennung
+
+MyCompanyDesk erkennt automatisch die Branche Ihres Unternehmens durch Analyse Ihrer Rechnungen, Ausgaben und Kunden. Sobald ausreichend Vertrauen besteht, wird dieser Kontext genutzt, um alle KI-Vorschläge zu verbessern — beispielsweise durch branchenspezifische USt.-Sätze oder relevante Ausgabenkategorien.
+
+Diese Erkennung läuft im Hintergrund und erfordert keine Konfiguration.
 
 ## Tipps
 

@@ -27,9 +27,54 @@ Time registration helps you:
    - **Hourly rate** — Your rate for this work
 4. Click **Save**
 
+### Smart add
+
+For faster entry, use the smart add flow:
+
+1. Tap the **+** button
+2. Select a customer from the recent clients grid — your most frequently used customers appear first
+3. Fill in hours and description
+4. Save
+
+The recent clients grid is pre-populated with your top 10 customers based on invoices, expenses, and projects.
+
+### Weekly grid view
+
+Switch to the weekly grid for a spreadsheet-like overview of your week:
+
+- Rows represent customers, columns represent days
+- Enter hours directly in the grid cells
+- Toggle travel entries per row
+- Favorite customers (starred) appear at the top
+
+::: tip
+If you haven't configured working hours yet, the default view shows a card list instead of the weekly grid.
+:::
+
+### Working hours
+
+Configure your standard working hours to help track your daily targets:
+
+1. Go to time registration settings
+2. Set your **day start** and **end** times
+3. Optionally enable **breaks** with a start time and duration
+
+The weekly grid uses these settings to show your expected vs. actual hours.
+
 ### Hours-only mode
 
 For simplified time tracking, enable hours-only mode in settings. This hides the hourly rate and billable fields, showing only hours and description.
+
+## Travel registration
+
+Track business travel alongside your time entries:
+
+- Add travel entries with origin, destination, and distance
+- Save frequently used routes on customer records for quick reuse
+- AI suggests the travel type (commute, client visit, delivery)
+- Toggle travel visibility per customer in the weekly grid
+
+Travel distances and costs are tracked separately from time entries and can be exported for mileage reimbursement.
 
 ## Invoicing time entries
 

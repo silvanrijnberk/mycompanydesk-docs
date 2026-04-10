@@ -81,6 +81,10 @@ Create a copy of an existing invoice — useful for recurring billing to the sam
 
 Send a payment reminder for overdue invoices.
 
+### Quick email
+
+From the invoice detail sidebar, click the **email** quick action to compose and send an email to the customer directly — without leaving the invoice page.
+
 ## Bulk actions
 
 Select multiple invoices from the list to perform actions in bulk:

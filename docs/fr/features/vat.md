@@ -63,6 +63,17 @@ Vos parametres de TVA respectent le pays d'immatriculation de votre entreprise. 
 - Les calculs d'echeances
 - L'applicabilite de l'autoliquidation
 
+### Pays pris en charge
+
+MyCompanyDesk inclut des taux de TVA specifiques pour 30 pays :
+
+| Region | Pays |
+|---|---|
+| **UE** | Pays-Bas, Allemagne, Belgique, France, Autriche, Espagne, Italie, Portugal, Irlande, Luxembourg, Finlande, Suede, Danemark, Pologne, Republique tcheque, Grece, Hongrie, Roumanie, Bulgarie, Croatie, Slovaquie, Slovenie, Estonie, Lettonie, Lituanie, Chypre, Malte |
+| **Autres** | Royaume-Uni, Etats-Unis (sales tax), Canada (TPS) |
+
+Chaque pays dispose de ses propres tranches de taux normal et reduit. Par exemple, l'Allemagne utilise 0%/7%/19%, tandis que l'Italie utilise 0%/4%/5%/10%/22%. Les taux corrects sont automatiquement appliques en fonction du pays de votre entreprise.
+
 ## Autoliquidation
 
 Pour les transactions intracommunautaires entre entreprises, activez l'autoliquidation :

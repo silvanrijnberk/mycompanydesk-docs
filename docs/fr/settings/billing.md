@@ -40,6 +40,18 @@ Pour les equipes et les operations en expansion :
 
 Les plans sont disponibles en intervalles de facturation **mensuelle** et **annuelle**. Les plans annuels incluent une remise.
 
+### Beta ouverte
+
+MyCompanyDesk est actuellement en beta ouverte avec un nombre limite de places gratuites sur des plans ameliores :
+
+- Un nombre limite de places **Starter**, **Pro** et **Enterprise** sont proposees gratuitement
+- Reclamez une place depuis la page de facturation tant qu'il en reste
+- Chaque personne ne peut reclamer qu'une seule place
+
+::: info
+Les places en beta ouverte sont limitees et attribuees selon le principe du premier arrive, premier servi. Une fois toutes les places prises, les tarifs standards s'appliquent.
+:::
+
 ## Gerer votre abonnement
 
 ### Mettre a niveau

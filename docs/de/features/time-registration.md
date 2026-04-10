@@ -27,9 +27,54 @@ Die Zeiterfassung hilft Ihnen:
    - **Stundensatz** — Ihr Satz für diese Arbeit
 4. Klicken Sie auf **Speichern**
 
+### Schnell hinzufügen
+
+Für schnellere Eingabe nutzen Sie den Schnell-hinzufügen-Ablauf:
+
+1. Tippen Sie auf die **+**-Schaltfläche
+2. Wählen Sie einen Kunden aus dem Raster der letzten Kunden — Ihre am häufigsten genutzten Kunden erscheinen zuerst
+3. Geben Sie Stunden und Beschreibung ein
+4. Speichern
+
+Das Kundenraster wird automatisch mit Ihren Top-10-Kunden basierend auf Rechnungen, Ausgaben und Projekten befüllt.
+
+### Wochenrasteransicht
+
+Wechseln Sie zum Wochenraster für eine tabellarische Übersicht Ihrer Woche:
+
+- Zeilen stehen für Kunden, Spalten für Tage
+- Geben Sie Stunden direkt in die Rasterzellen ein
+- Schalten Sie Reiseeinträge pro Zeile um
+- Favorisierte Kunden (mit Stern) erscheinen oben
+
+::: tip
+Wenn Sie noch keine Arbeitszeiten konfiguriert haben, zeigt die Standardansicht eine Kartenliste statt des Wochenrasters.
+:::
+
+### Arbeitszeiten
+
+Konfigurieren Sie Ihre Standard-Arbeitszeiten, um Ihre Tagesziele zu verfolgen:
+
+1. Gehen Sie zu den Zeiterfassungseinstellungen
+2. Legen Sie Ihre **Anfangs-** und **Endzeit** fest
+3. Aktivieren Sie optional **Pausen** mit Startzeit und Dauer
+
+Das Wochenraster nutzt diese Einstellungen, um Ihre Soll- vs. Ist-Stunden anzuzeigen.
+
 ### Nur-Stunden-Modus
 
 Für vereinfachte Zeiterfassung aktivieren Sie den Nur-Stunden-Modus in den Einstellungen. Dieser blendet die Felder für Stundensatz und Abrechenbarkeit aus und zeigt nur Stunden und Beschreibung an.
+
+## Reiseerfassung
+
+Erfassen Sie Geschäftsreisen zusammen mit Ihren Zeiteinträgen:
+
+- Fügen Sie Reiseeinträge mit Start, Ziel und Entfernung hinzu
+- Speichern Sie häufig genutzte Routen bei Kundendatensätzen für schnelle Wiederverwendung
+- KI schlägt den Reisetyp vor (Pendeln, Kundenbesuch, Lieferung)
+- Schalten Sie die Reisesichtbarkeit pro Kunde im Wochenraster um
+
+Reiseentfernungen und -kosten werden getrennt von Zeiteinträgen erfasst und können für Kilometerpauschalen exportiert werden.
 
 ## Zeiteinträge abrechnen
 

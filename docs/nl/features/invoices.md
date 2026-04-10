@@ -81,6 +81,10 @@ Maak een kopie van een bestaande factuur — handig voor terugkerende facturatie
 
 Verstuur een betalingsherinnering voor achterstallige facturen.
 
+### Snelle e-mail
+
+Klik vanuit de factuurdetal-zijbalk op de **e-mail** snelactie om direct een e-mail naar de klant op te stellen en te versturen — zonder de factuurpagina te verlaten.
+
 ## Bulkacties
 
 Selecteer meerdere facturen uit de lijst om acties in bulk uit te voeren:
