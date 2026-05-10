@@ -1,5 +1,5 @@
 ---
-title: "Duplicate invoice"
+title: Duplicate an invoice
 last_verified: 2026-05-09
 chatbot:
   triggers: ["duplicate invoice", "copy invoice", "clone invoice", "reuse invoice", "invoice template", "factuur kopieren", "factuur dupliceren", "rechnung kopieren", "dupliquer facture"]

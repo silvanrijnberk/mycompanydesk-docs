@@ -1,5 +1,5 @@
 ---
-title: Find Customer
+title: Find customer
 last_verified: 2026-05-09
 chatbot:
   triggers: ["find customer", "search customer", "look up customer", "filter customers", "klant zoeken", "klant vinden", "kunde suchen", "chercher client"]

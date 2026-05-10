@@ -1,5 +1,5 @@
 ---
-title: Api keys
+title: API keys
 last_verified: 2026-05-09
 chatbot:
   triggers: ["api key", "api keys", "api access", "integration", "api token", "connect api", "api instellen", "api schlussel", "cle api"]

@@ -1,5 +1,5 @@
 ---
-title: Two Factor Auth
+title: Two-factor authentication
 last_verified: 2026-05-09
 chatbot:
   triggers: ["two factor", "two-factor", "2fa", "two step", "authenticator", "mfa", "tweestapsverificatie", "twee-factor", "zwei faktor", "authentification deux facteurs", "double authentification"]

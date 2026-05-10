@@ -1,5 +1,5 @@
 ---
-title: Keyboard Shortcuts
+title: Keyboard shortcuts
 last_verified: 2026-05-09
 chatbot:
   triggers: ["keyboard shortcuts", "shortcuts", "hotkeys", "quick navigation", "sneltoetsen", "tastaturkurzel", "raccourcis clavier"]

@@ -1,5 +1,5 @@
 ---
-title: Change Date Format
+title: Change date format
 last_verified: 2026-05-09
 chatbot:
   triggers: ["date format", "change date format", "number format", "decimal format", "datumformaat", "datumformaat wijzigen", "datumsformat", "format date", "format nombre"]

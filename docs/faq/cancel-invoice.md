@@ -1,5 +1,5 @@
 ---
-title: "Cancel invoice"
+title: Cancel an invoice
 last_verified: 2026-05-09
 chatbot:
   triggers: ["cancel invoice", "void invoice", "annul invoice", "reverse invoice", "credit note", "undo invoice", "factuur annuleren", "factuur ongedaan", "hoe annuleer ik een factuur", "rechnung stornieren", "wie storniere ich eine rechnung", "annuler facture"]

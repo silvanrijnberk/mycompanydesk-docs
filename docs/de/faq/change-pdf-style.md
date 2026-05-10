@@ -1,5 +1,5 @@
 ---
-title: Change PDF Style
+title: Change PDF style
 last_verified: 2026-05-09
 chatbot:
   triggers: ["change pdf style", "customize pdf", "pdf template", "invoice design", "invoice layout", "change invoice look", "pdf editor", "edit pdf template", "pdf stijl wijzigen", "factuur uiterlijk", "pdf sjabloon", "pdf-vorlage andern", "style pdf"]

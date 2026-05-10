@@ -1,5 +1,5 @@
 ---
-title: Credit Note
+title: Credit note
 last_verified: 2026-05-09
 chatbot:
   triggers: ["credit note", "create credit note", "issue credit", "credit invoice", "creditnota", "creditnota aanmaken", "gutschrift erstellen", "note de credit", "avoir"]

@@ -1,5 +1,5 @@
 ---
-title: Customer merge
+title: Merge customers
 last_verified: 2026-05-09
 chatbot:
   triggers: ["merge customers", "duplicate customer", "combine customers", "customer duplicate", "klanten samenvoegen", "dubbele klant", "kunden zusammenfuhren", "fusionner clients", "doublons clients"]

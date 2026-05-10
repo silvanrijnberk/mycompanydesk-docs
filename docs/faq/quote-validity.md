@@ -1,5 +1,5 @@
 ---
-title: Quote Validity
+title: Quote validity
 last_verified: 2026-05-09
 chatbot:
   triggers: ["quote validity", "valid until quote", "quote expiry", "quote expiration", "how long quote valid", "quote valid days", "geldigheid offerte", "offerte geldig", "angebotsgultigkeit", "devis validite", "validez devis", "validez cotizacion", "validade proposta"]

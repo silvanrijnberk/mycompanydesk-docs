@@ -1,5 +1,5 @@
 ---
-title: Expense split
+title: Split an expense
 last_verified: 2026-05-09
 chatbot:
   triggers: ["split expense", "divide expense", "expense between categories", "allocate expense", "expense allocation", "uitgave splitsen", "uitgave verdelen", "ausgabe aufteilen", "repartir depense"]

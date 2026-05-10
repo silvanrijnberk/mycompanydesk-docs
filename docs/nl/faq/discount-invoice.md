@@ -1,5 +1,5 @@
 ---
-title: Discount invoice
+title: Apply a discount to an invoice
 last_verified: 2026-05-09
 chatbot:
   triggers: ["discount", "add discount", "invoice discount", "percentage discount", "reduce price", "korting", "korting toevoegen", "rabatt", "rabatt gewahren", "remise", "reduction"]

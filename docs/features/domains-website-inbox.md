@@ -131,7 +131,7 @@ Capabilities:
 - **Alias notice** — when an inbound message arrives at an address that isn't yet a declared alias, the thread shows a soft notice with an "Add as alias" action.
 - **Linking** — threads can be linked to a customer, project or invoice for cross-referencing.
 - **Catch-all fallback** — mail to any local-part on the domain falls through to the default mailbox (`is_default = true`, one per domain). This means typos and undeclared aliases don't vanish silently.
-- **Audit log** — outbound sends, mailbox changes and thread state changes are recorded in an audit table for the workspace.
+- **Audit log** — outbound sends, mailbox changes and thread state changes are recorded in an audit table for the workspace. Currently API-only (no UI surface yet) — accessible to support staff for troubleshooting.
 
 The inbox uses your custom domain only after `quickEnableInbox` has run successfully and the apex MX records point at Cloudflare. Until then, the workspace can still send mail through the default delivery path described in [Email Integration](/settings/email), but it can't receive mail.
 

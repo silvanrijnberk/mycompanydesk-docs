@@ -1,5 +1,5 @@
 ---
-title: Automatic Reminders
+title: Automatic reminders
 last_verified: 2026-05-09
 chatbot:
   triggers: ["automatic reminders", "auto reminder", "scheduled reminders", "reminder automation", "automatische herinnering", "herinneringen instellen", "automatische erinnerung", "rappels automatiques"]

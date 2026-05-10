@@ -1,5 +1,5 @@
 ---
-title: Profit Loss
+title: Profit and loss
 last_verified: 2026-05-09
 chatbot:
   triggers: ["profit and loss", "profit loss", "income statement", "p&l", "winst en verlies", "resultatenrekening", "gewinn und verlust", "compte de resultat", "resultat net"]

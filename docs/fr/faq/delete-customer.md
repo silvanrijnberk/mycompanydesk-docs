@@ -1,5 +1,5 @@
 ---
-title: Delete Customer
+title: Delete customer
 last_verified: 2026-05-09
 chatbot:
   triggers: ["delete customer", "remove customer", "trash customer", "klant verwijderen", "klant wissen", "kunde loschen", "supprimer client"]
