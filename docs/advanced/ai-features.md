@@ -18,11 +18,13 @@ The help icon in the app shell opens a chat panel that knows which page you are 
 - **FAQ short-circuit.** Before the model is called, the query is matched against the workspace FAQ corpus using SymSpell-corrected keyword search and a vector cosine fallback (Workers AI `bge-m3` primary, Gemini embeddings fallback). A confident match returns the curated FAQ answer with no LLM round-trip — fast and free.
 - **Page context.** The current route, the visible entity, and a compact app-state summary are injected into the system prompt. The guide answers about what you are seeing, not in the abstract.
 - **Conversation memory.** The last 6 turns are kept verbatim; older turns are summarised into a rolling memory.
-- **Frustration handling.** A pre-classifier detects forbidden, casual, idle, and frustrated messages; those responses are answered without consuming the LLM tier.
+- **Pre-filter, no router.** A small deterministic filter catches forbidden topics, casual messages, and empty input before the model is called. Beyond that there is **no DATA/FAQ/GENERAL classifier in front of the agent** — the model sees the full tool catalog and picks tools itself, including a tool that searches the help knowledge base. One question can naturally use multiple tools (e.g. "how do I file my Q2 VAT and what's my saldo" calls `search_help` and `vat_aangifte_rubrieken` in the same loop).
 
-### Data-query tool catalog
+### Tool catalog
 
-When the question needs a number, the model calls one of ten parameterised tools. Each tool is a hand-written, RLS-protected `SELECT` exposed to Gemini as a function declaration — the model picks the tool name and arguments, it cannot author SQL. Read-only by design.
+When the question needs a number, page-help, or a VAT-specific aggregate, the model calls one of ~18 parameterised tools. Each handler is a hand-written, RLS-protected `SELECT` (or a wrapper around an existing aggregate service) — the model picks the tool name and arguments, it cannot author SQL. Read-only by design. The same catalog is exposed to Gemini (function declarations) and to Ollama Cloud (OpenAI-compatible `tools` array), so a fallback between providers keeps capabilities identical.
+
+**Data tools** — accept `period` of `this_month` / `last_month` / `this_quarter` / `this_year` / `last_year`:
 
 | Tool | Returns |
 |---|---|
@@ -37,13 +39,27 @@ When the question needs a number, the model calls one of ten parameterised tools
 | `customer_aging` | Receivables aging buckets per customer |
 | `tax_summary` | Country-aware tax position for the period |
 
-Periods accept `this_month`, `last_month`, `this_quarter`, `this_year`, `last_year`. Results come back as small JSON payloads the model summarises in your language.
+**VAT tools** — accept `year` plus `period` of `Q1`/`Q2`/`Q3`/`Q4`/`year`:
 
-### VAT assistant (Dutch VAT page)
+| Tool | Returns |
+|---|---|
+| `vat_aangifte_rubrieken` | Unified NL aangifte sheet (sections 1–5, codes 1a–5g) |
+| `vat_pre_filing_checks` | Concrete blockers before filing (drafts, missing receipts, ICP pending) |
+| `vat_kor_status` | KOR threshold tracker — YTD revenue vs €20.000 limit |
+| `vat_kia_status` | KIA bracket tracker — investments and deduction amount |
+| `vat_icp_opgaaf` | Per-customer intra-EU B2B sales |
+| `vat_oss_breakdown` | Per-country EU OSS B2C sales |
+| `vat_foreign_refundables` | Foreign VAT refundables, EU procedure deadline |
 
-The NL VAT page has a dedicated assistant at `POST /api/vat-assistant/ask` that is **separate** from the general chatbot. It is pinned to `gpt-oss:120b-cloud` on Ollama Cloud Pro and receives the actual aangifte context for the selected period — KOR/KIA/OSS/ICP status, current quarter balance, treatment breakdown, and foreign-VAT refundables. It answers concretely about your numbers, not in the abstract, and always defers to the Belastingdienst for legal certainty.
+**Help tool**:
 
-Streaming is available via `askStream` for the same typewriter UX as the main chatbot.
+| Tool | Returns |
+|---|---|
+| `search_help` | Best-matching FAQ entry (semantic-search wrapper). Used for "how do I X" questions. |
+
+The chat is pinned to `deepseek-v4-pro:cloud` on Ollama Cloud — empirical bench showed deepseek lands a 2-tool plan + synthesis in ~3 seconds, faster than `qwen3-coder-next:cloud` and `gpt-oss:120b-cloud` on this workload. Gemini is the fallback path when Ollama Cloud is unavailable.
+
+The standalone `/api/vat-assistant/*` route is **gone** as of May 2026 — VAT questions go through the same unified contextual-guide endpoint and the `vat_*` tools above. There is no separate model or panel.
 
 ## Vendor classifier (expenses)
 
@@ -117,13 +133,12 @@ Bulk locale-file sync (filling missing keys, re-translating drift across `nl/de/
 
 | Surface | Free | Pro | Business |
 |---|---|---|---|
-| Contextual guide | Limited messages, FAQ-only on overflow | Standard tier | Highest tier |
+| Contextual guide (incl. VAT tools) | Limited messages, FAQ-only on overflow | Standard tier | Highest tier |
 | AI suggestions | Off | On | On |
 | Vendor classifier | Off | On | On |
 | Receipt scanner | Off | On | On |
 | Text check | On | On | On |
 | Translation | On (UI strings only) | On | On |
-| VAT assistant | Off | On (NL) | On (NL) |
 
 Beta workspaces with `beta_override` bypass restrictions. See [Billing](/settings/billing) for the live plan matrix.
 
