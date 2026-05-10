@@ -63,6 +63,13 @@ function sidebarEN() {
       ],
     },
     {
+      text: 'FAQ',
+      collapsed: true,
+      items: [
+        { text: 'All FAQ entries', link: '/faq/' },
+      ],
+    },
+    {
       text: 'Advanced',
       collapsed: true,
       items: [
@@ -127,6 +134,13 @@ function sidebarNL() {
         { text: 'Profiel', link: '/nl/account/profile' },
         { text: 'Beveiliging', link: '/nl/account/security' },
         { text: 'Gegevens importeren & exporteren', link: '/nl/account/data' },
+      ],
+    },
+    {
+      text: 'Veelgestelde vragen',
+      collapsed: true,
+      items: [
+        { text: 'Alle FAQ-onderwerpen', link: '/nl/faq/' },
       ],
     },
     {
@@ -197,6 +211,13 @@ function sidebarDE() {
       ],
     },
     {
+      text: 'FAQ',
+      collapsed: true,
+      items: [
+        { text: 'Alle FAQ-Einträge', link: '/de/faq/' },
+      ],
+    },
+    {
       text: 'Erweitert',
       collapsed: true,
       items: [
@@ -261,6 +282,13 @@ function sidebarFR() {
         { text: 'Profil', link: '/fr/account/profile' },
         { text: 'Sécurité', link: '/fr/account/security' },
         { text: 'Import & Export de données', link: '/fr/account/data' },
+      ],
+    },
+    {
+      text: 'FAQ',
+      collapsed: true,
+      items: [
+        { text: 'Toutes les FAQ', link: '/fr/faq/' },
       ],
     },
     {
