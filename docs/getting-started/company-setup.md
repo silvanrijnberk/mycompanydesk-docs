@@ -1,99 +1,123 @@
+---
+last_verified: 2026-05-09
+---
+
 # Set Up Your Company
 
-Before you can send invoices, you need to configure your company information. This data appears on your invoices, quotes, and other documents.
+The first time you sign in, MyCompanyDesk runs you through a **setup wizard** at `/setup`. It is five short steps, asks you the minimum it needs, and uses the answers to seed the rest of your workspace — branding, default categories, VAT regime, a starter website. You can always re-run it later to tweak.
 
-## Company information
+## Where to find it
 
-Navigate to **Company** in the sidebar to access your company settings.
+- **First sign-in:** the wizard opens automatically.
+- **Later:** there is a "Finish setup" banner pinned to the top of `/dashboard` until you complete it. Click the banner, or go to `/setup` directly.
+- **After completion:** revisit `/setup` any time to re-run with diff-and-approve. Re-running starts at step 1 and shows you exactly what will change before you confirm.
 
-### Required fields
+There is also a **Skip for now** button on every step. Skipping leaves the banner on `/dashboard` and brings you back later.
 
-These fields are needed to send invoices:
+## Step 1 — Business
 
-- **Company name** — Your registered business name
-- **Address** — Street, postal code, and city (address autocomplete is available)
-- **Email** — Your business contact email
+Two questions:
 
-### Recommended fields
+- **Business name** — What appears on invoices and in the sidebar.
+- **What you do** — One or two sentences. The wizard feeds this to Gemini in the Magic step to generate your tagline, services list, and email tone.
 
-These are strongly recommended for professional invoices and legal compliance:
+The business name is also the seed for the registry lookup (step 2) and the subdomain slug (step 3), so spelling matters.
 
-- **VAT number** — Your VAT registration number (e.g., NL123456789B01)
-- **Chamber of Commerce / Registration number** — Your business registration ID
-- **IBAN** — Your bank account number where customers should pay
-- **Phone number** — Business contact phone
+## Step 2 — Registry
 
-::: tip
-In many countries, VAT number and registration number are legally required on invoices. Make sure these are filled in before sending your first invoice.
-:::
+Tell us where you are registered. The country picker drives which official registry the wizard talks to:
 
-## Branding
+| Country | Registry | Lookup |
+|---|---|---|
+| Netherlands | KvK | Yes |
+| Germany | Handelsregister | Manual entry only |
+| France | SIRENE | Yes |
+| United Kingdom | Companies House | Yes |
+| Other | — | Manual entry only |
 
-### Company logo
+For supported countries, type your registration number and click **Look up**. The wizard auto-fills:
 
-Upload your company logo to have it appear on:
+- Legal name
+- Registered address
+- Sector / SBI code
 
-- Invoices and quotes (PDF)
-- Email communications
-- Your public business page
-- The customer payment portal
+You can correct any of these inline before continuing. **Not registered yet** is also a valid answer — just tick "Skip" and the wizard will accept the country alone.
 
-Supported formats: PNG, JPG, SVG. For best results, use a high-resolution image with a transparent background.
+## Step 3 — Domain
 
-### Color scheme
+Where customers find you on the web. Two paths:
 
-Customize the accent color used on your invoices and documents to match your brand identity.
+### Free subdomain
 
-## Financial defaults
+The wizard suggests a slug from your business name (lowercased, dashes for spaces, ASCII only) and pins it to:
 
-Set up defaults that apply to new invoices and quotes:
+- `<slug>.mycompanydesk.nl` for NL workspaces
+- `<slug>.mycompanydesk.com` for everyone else
 
-- **Currency** — Your default currency (EUR by default)
-- **Payment terms** — Default number of days until an invoice is due (e.g., 14 or 30 days)
-- **Invoice numbering** — Customize the format of your invoice numbers
-  - Prefix (e.g., `INV-` or `2024-`)
-  - Starting number
-  - Auto-increment
+Edit the slug if you want. Availability is checked live.
 
-### Invoice numbering examples
+### Your own domain
 
-| Format | Example |
+Type it in (`example.com`). The wizard records the choice; on **Finish**, MyCompanyDesk creates the Cloudflare configuration and shows you the DNS records to add. Until you point your nameservers, the website stays parked on the subdomain.
+
+### Personal mailbox
+
+Optional. If enabled, also creates a personal `firstname@<your-domain>` address routed to your inbox. Default local-part is your first name; edit if you want.
+
+## Step 4 — Magic
+
+The wizard generates branding suggestions in the background while you watch:
+
+- **Brand colour** — Extracted from your uploaded logo, or a Gemini-picked palette based on sector.
+- **Logo** — Use your uploaded one, or have the wizard render initials in your brand colour.
+- **Tagline** — Short pitch line.
+- **About text** — Two paragraphs for the website and customer portal.
+- **Services list** — Three to six items pulled from your "what you do" answer and the website (if you gave one).
+- **Email tone** — Formal, friendly, or casual. Drives default email templates.
+
+Every suggestion is editable. If Gemini is unreachable, a localised fallback ships you a sensible starter set so you can keep going.
+
+## Step 5 — Review
+
+A diff-and-approve list of everything the wizard will change on **Finish**, split into:
+
+- **Will change** — Field-by-field "current → new".
+- **No change** — Fields the wizard captured but match what you already have.
+
+Click **Finish** and the wizard applies everything in one transaction. The Finish splash shows what got applied: subdomain ready, custom-domain DNS pending, logo created, services added, email templates set. On a free plan, the splash also shows your monthly headroom (invoices / expenses / quotes left this period).
+
+Where you land after Finish:
+
+- **Custom domain still needs DNS** — `/workspace/organization/company/address` to copy nameservers.
+- **Anything else** — Back to `/dashboard`.
+
+## What gets seeded
+
+Based on your wizard answers, the workspace is pre-populated with:
+
+| From | Seeded |
 |---|---|
-| Simple | `001`, `002`, `003` |
-| With prefix | `INV-001`, `INV-002` |
-| Year-based | `2024-001`, `2024-002` |
+| Country | Default currency (EUR, USD, GBP), VAT regime (NL VAT / DE UStG / FR TVA / GB VAT / none), invoice number locale, working-week defaults |
+| Sector | Expense category list (drawn from a sector-aware preset table — construction, consulting, retail, hospitality, etc.) |
+| Registry | Legal name and registered address on `companies` |
+| Brand colour + logo | Invoice PDF accent, customer portal, public website, email signature |
+| Tagline + about + services | `/business/<slug>` public website |
+| Email tone | Default templates for invoice-sent, reminder, thank-you |
 
-The numbering resets options and format can be adjusted at any time. Existing invoice numbers are never changed.
+Default VAT rates are not invented — they come from the country's official rate table (e.g. NL: 21 / 9 / 0).
 
-## PDF template
+## Re-running and editing later
 
-MyCompanyDesk generates professional PDF invoices automatically. You can customize the layout using the **PDF Editor**:
+The wizard is non-destructive: re-running shows you exactly what will change before you commit, so it is safe to revisit when something needs tweaking.
 
-- Adjust field positions and visibility
-- Choose which information to display
-- Customize fonts and sizing
-- Preview changes in real-time with a sample invoice
+You can also edit the underlying fields directly without re-running:
 
-Access the PDF editor from **Company > PDF Editor** or from the branding section.
-
-::: info
-PDF customization beyond basic settings requires the **Pro** plan or higher.
-:::
-
-## Features toggle
-
-MyCompanyDesk has optional modules that you can enable or disable depending on your business needs:
-
-- **Objects / Assets** — For rental property and asset management
-- **Contracts** — For recurring service or rental contracts
-- **Projects** — For project-based work and time tracking
-- **Quotes** — For sending quotations
-- **Reverse charge** — For intra-EU B2B transactions
-- **AI suggestions** — For smart categorization and recommendations
-- **Receipt scanning** — For OCR-based expense entry
-- **Text check** — For grammar and spelling in your documents
-
-Disabling a module hides it from the navigation, keeping your workspace clean and focused.
+- **Company name, legal name, address, KvK number** — `/workspace/organization/company/about`
+- **Logo, brand colour, tagline** — `/workspace/organization/company/look`
+- **Subdomain and custom domain** — `/workspace/organization/company/address`
+- **Public website content (services, about)** — `/workspace/organization/company/website`
+- **VAT regime, default currency, working week** — `/workspace/financial/...`
+- **Expense categories** — `/workspace/financial/categories`
 
 ## Next steps
 

@@ -1,76 +1,157 @@
-# Profile
+---
+last_verified: 2026-05-09
+---
 
-Manage your personal account settings, preferences, and notifications.
+# My Account
 
-## Personal information
+Your personal account settings live under **My Account** at `/me`. This is everything that belongs to *you* — your profile, language, security, connected accounts. It is separate from **Workspace** (`/workspace/...`), which holds shared company settings that every team member sees.
 
-Update your profile from the **Profile** page:
+## Account vs workspace
 
-- **Name** — Your display name
-- **Email** — Your login email
-- **Profile picture** — Upload a photo or avatar
-- **Language** — Interface language (English, Dutch, German, French)
+| Surface | Path | Scope | Examples |
+|---|---|---|---|
+| **My Account** | `/me/...` | Just you | Your name, password, passkeys, language, theme, push notifications |
+| **Workspace** | `/workspace/...` | Shared with team | Company info, branding, invoice templates, billing, team members |
 
-### Changing your language
+Changing your interface language under **My Account** only changes it for you. Changing the invoice language under **Workspace** changes the default for every invoice your company sends.
 
-1. Go to **Profile**
-2. Select your preferred language
-3. The interface updates immediately
+## Sidebar layout
 
-Your language setting affects:
+The `/me` shell has its own left sidebar (collapsed to a sheet on mobile) with three groups:
 
-- All UI text and navigation
-- Date and number formatting
-- Default language for new documents
+- **Account** — Profile, App look, Notifications
+- **Work** — Time and travel, Calendar
+- **Security** — Sign-in and security, My data
+
+Pages with grey card-edit-and-go content auto-save while you type and show a "Saving / Saved" pill at the top right. Security and Data pages have explicit Save / Confirm actions.
+
+## Profile
+
+`/me/profile`
+
+- **First name** and **Last name** — Used in the sidebar avatar and on outgoing emails when team-member attribution is enabled.
+- **Email** — Read-only. This is your login. To change it, contact support.
+- **Profile picture** — Upload PNG, JPG, or WebP up to 5 MB. The crop is round.
+
+## App look
+
+`/me/preferences`
+
+This page covers everything cosmetic and locale-related.
+
+- **Theme** — Light, Dark, or System. Switching is instant.
+- **Font size** — Small, Medium, Large. Affects every page; finance numbers stay tabular at every size.
+- **Language** — English, Dutch, German, French. Changes UI strings only; reload prompted.
+- **Timezone** — Used for dates on invoices, expenses, and time entries.
+- **Date format** — DD-MM-YYYY, MM/DD/YYYY, YYYY-MM-DD.
+- **Time format** — 12-hour or 24-hour.
+- **Number separator** — `1.234,56` (European) or `1,234.56` (US/UK).
+- **Default currency** — EUR, USD, GBP. Used as the default on new invoices and expenses; per-document overrides still work.
+- **Working week** — Which days count as working days. Drives KPIs on the dashboard and the time-registration grid.
+- **Dashboard profile** — One of eight roles (owner, bookkeeper, AR, AP, freelancer, VAT compliance, project, growth). Picks which cards show on `/dashboard`.
 
 ::: tip
-Invoice language is set per invoice and can differ from your interface language. You can send a Dutch invoice while using the English interface.
+Invoice language is set per invoice and is independent of your interface language. You can run the app in English while sending Dutch invoices.
 :::
 
-## Password
+## Notifications
 
-Change your password:
+`/me/notifications`
 
-1. Go to **Profile > Password**
-2. Enter your current password
-3. Enter and confirm your new password
-4. Click **Save**
+Three independent channels — email, in-app, push — each with their own toggles. Toggles are auto-saved.
 
-If you signed up with Google or Microsoft, you can still set a password for email-based login.
+### Email
 
-## Notification preferences
+- **Invoice reminders** — When a customer's invoice is approaching the due date.
+- **Payment confirmations** — When a customer pays an invoice.
+- **News and updates** — Product announcements (low frequency).
+- **VAT deadline emails** — A reminder before each VAT filing deadline.
 
-Control which notifications you receive and how:
+### In-app
 
-### Email notifications
+These appear in the bell menu in the header.
 
-- **Invoice paid** — When a customer pays an invoice
-- **Quote request received** — When someone requests a quote from your business page
-- **Team activity** — When team members perform actions
-- **Expense approved** — When an expense is approved
+- **Overdue invoices**
+- **Deadline reminders**
+- **Draft reminders** — Drafts that have been sitting for a while.
+- **Contract renewals**
+- **Recurring notifications** — When a recurring invoice or expense is generated.
+- **VAT deadline alerts** — In addition to the email.
+- **VAT reminder window** — How many days ahead to start warning (7, 14, or 30).
 
-### Email digest
+### Push
 
-Choose how frequently you receive summary emails:
+Browser/PWA push. Requires permission grant. When the master toggle is off, the per-event sub-toggles hide.
 
-- **Daily** — Daily summary of activity
-- **Weekly** — Weekly roundup
-- **Monthly** — Monthly overview
-- **Off** — No digest emails
+- **Overdue invoices**
+- **Deadlines**
+- **Payments**
+- **Recurring**
 
-### Push notifications
+## Sign-in and security
 
-Enable browser push notifications for real-time alerts when you have the app open.
+`/me/security`
 
-### In-app notifications
+- **Password** — Current + new + confirm. Minimum 8 characters. Skipped if you signed up with Google or Microsoft and never set one; you can still set one here to enable email login.
+- **Passkeys** — Add and manage WebAuthn credentials (Face ID, Touch ID, Windows Hello, hardware keys). Each passkey is named so you can revoke individually. Passwordless sign-in works once any passkey is registered.
+- **Two-factor (TOTP)** — Set up an authenticator app (Authy, 1Password, Google Authenticator). Scan the QR or enter the secret manually. After verifying, you get backup codes — store them somewhere safe.
+- **Sessions** — Sign out of the current session. (Session list across devices is not surfaced today.)
+- **Danger zone** — **Delete account** permanently removes your user. If you are the only owner of a workspace, you are blocked until you transfer ownership or close the workspace from `/workspace/account/billing`.
 
-Real-time notifications within the MyCompanyDesk interface. These are always on and appear in the notification bell in the header.
+## Calendar
 
-## Connected apps
+`/me/connected`
 
-View and manage OAuth connections:
+Two-way sync with Google Calendar or Outlook for time entries and travel. The connect flow runs OAuth in a popup and stores the refresh token server-side. Each connection lists which calendar it writes to and lets you disconnect.
 
-- **Google** — Connected for login and/or Gmail sending
-- **Microsoft** — Connected for login and/or Outlook sending
+OAuth scopes are requested per purpose:
 
-Revoke access to disconnect an app from your account.
+- **Sign-in** (Google or Microsoft) — `email`, `profile`. Granted once at signup; visible here so you can revoke.
+- **Send email as you** (Gmail or Outlook) — `gmail.send` or `Mail.Send`. Used for outbound invoices.
+- **Calendar sync** — `calendar.events`. Used by the time-registration calendar view.
+
+## Time and travel
+
+`/me/time-travel`
+
+Personal defaults that drive the time-registration and travel modules. The page has two tabs:
+
+- **Time** (`/me/time-travel/time`) — Default project, default activity, default rate, rounding rules.
+- **Travel** (`/me/time-travel/travel`) — Home address, NS-Business OV-chip, default car, mileage rate.
+
+Workspace-level travel settings (per-company defaults, OV cards owned by the company) live under `/workspace/financial/travel`.
+
+## My data
+
+`/me/data`
+
+Personal data export and import. Plan-gated: free plans see a banner pointing at the upgrade required for exports.
+
+- **Invoices**, **Customers**, **Expenses** — Per-entity CSV download.
+- **Complete backup** — One ZIP with everything, JSON-shaped for re-import.
+- **Import from CSV** — Opens the legacy importer at `/profile/import`. Supports invoices, customers, expenses with a column-mapping step.
+
+This page only handles *your* personal account data export. Workspace-level exports (full-company accounting export, accountant package) live under `/workspace/account/data`.
+
+## Mobile
+
+`/me/mobile`
+
+Settings that only apply to the mobile/PWA app.
+
+- **Quick navigation** — Toggle the radial menu shown when long-pressing the FAB; reorder which six destinations appear, or pin them to specific positions.
+- **Biometric unlock** — Use Face ID / Touch ID for app re-entry after lock.
+- **Offline preview** — Cache recently viewed invoices and expenses for offline viewing.
+
+## Where things moved from
+
+If you were on the older `/profile/...` tree, here is the map:
+
+| Old path | New path |
+|---|---|
+| `/profile` | `/me/profile` |
+| `/profile/notifications` | `/me/notifications` |
+| `/profile/security` | `/me/security` |
+| `/profile/data` | `/me/data` |
+| `/profile/connected` | `/me/connected` |
+| `/profile/preferences` (theme, language) | `/me/preferences` |
