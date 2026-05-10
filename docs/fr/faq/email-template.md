@@ -1,5 +1,5 @@
 ---
-title: Email template
+title: Email templates
 last_verified: 2026-05-09
 chatbot:
   triggers: ["email template", "customize email", "invoice email message", "email text", "change email message", "email sjabloon", "email aanpassen", "e-mail vorlage", "modele email", "personnaliser email"]

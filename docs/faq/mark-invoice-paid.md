@@ -1,5 +1,5 @@
 ---
-title: Mark invoice paid
+title: Mark an invoice as paid
 last_verified: 2026-05-09
 chatbot:
   triggers: ["mark invoice paid", "invoice paid", "mark as paid", "record payment", "received payment", "payment received", "factuur betaald", "betaald markeren", "factuur als betaald", "rechnung als bezahlt", "marquer payee"]

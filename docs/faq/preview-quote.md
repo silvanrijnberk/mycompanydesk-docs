@@ -1,5 +1,5 @@
 ---
-title: Preview quote
+title: Preview a quote
 last_verified: 2026-05-09
 chatbot:
   triggers: ["preview quote", "quote preview", "preview proposal", "view quote pdf", "print quote", "offerte voorbeeld", "offerte preview", "angebot vorschau", "apercu devis", "previsualizar cotizacion", "visualizar proposta"]

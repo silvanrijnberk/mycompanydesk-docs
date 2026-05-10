@@ -1,5 +1,5 @@
 ---
-title: Create Expense
+title: Create expense
 last_verified: 2026-05-09
 chatbot:
   triggers: ["create expense", "new expense", "add expense", "log expense", "record expense", "track expense", "uitgave toevoegen", "nieuwe uitgave", "uitgave aanmaken", "ausgabe hinzufugen", "wie erstelle ich eine ausgabe", "ajouter depense", "comment creer une depense"]

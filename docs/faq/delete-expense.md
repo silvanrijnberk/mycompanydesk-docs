@@ -1,5 +1,5 @@
 ---
-title: "Delete expense"
+title: Delete an expense
 last_verified: 2026-05-09
 chatbot:
   triggers: ["delete expense", "remove expense", "trash expense", "erase expense", "uitgave verwijderen", "uitgave wissen", "hoe verwijder ik een uitgave", "ausgabe loschen", "wie losche ich eine ausgabe", "supprimer depense"]

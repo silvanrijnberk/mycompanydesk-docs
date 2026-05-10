@@ -1,5 +1,5 @@
 ---
-title: Duplicate Expense
+title: Duplicate expense
 last_verified: 2026-05-09
 chatbot:
   triggers: ["duplicate expense", "copy expense", "clone expense", "reuse expense", "uitgave kopieren", "uitgave dupliceren", "ausgabe kopieren", "dupliquer depense"]

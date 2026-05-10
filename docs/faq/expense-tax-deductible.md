@@ -1,5 +1,5 @@
 ---
-title: Expense Tax Deductible
+title: Expense tax-deductible
 last_verified: 2026-05-09
 chatbot:
   triggers: ["tax deductible", "deductible expenses", "which expenses deductible", "tax write off", "aftrekbare kosten", "welke kosten aftrekbaar", "absetzbare ausgaben", "depenses deductibles", "charges deductibles"]

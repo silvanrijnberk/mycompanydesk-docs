@@ -1,5 +1,5 @@
 ---
-title: Find Archived Customers
+title: Find archived customers
 last_verified: 2026-05-09
 chatbot:
   triggers: ["where are archived customers", "where can i find archived customers", "where do i find archived customers", "customer archive", "archived customers", "gearchiveerde klanten", "klanten archief", "archivierte kunden", "archivierten kunden", "kunden archiv", "clients archives", "mes clients archives", "archives clients"]
