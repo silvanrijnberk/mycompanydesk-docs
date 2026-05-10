@@ -1,107 +1,87 @@
+---
+last_verified: 2026-05-09
+---
+
 # Company Settings
 
-Configure your business information, branding, financial defaults, and enabled features.
+Everything that defines how your business looks to the outside world — the name on your invoices, your logo, your public business page, and the domain customers find you on.
 
-## Accessing settings
+## Where to find it
 
-Navigate to **Company** in the sidebar to access all company-level settings. The settings are organized into sections.
+Open the workspace switcher → **Workspace settings** → **Company**, or navigate directly to `/workspace/organization/company`.
 
-## Business information
+The umbrella page is a tile menu with four leaves and a shortcut to the magical setup wizard at `/setup` (shown as a wide tile while there are still pending setup steps).
 
-### Company details
+## What you can change
 
-- **Company name** — Your registered business name (appears on all documents)
-- **Address** — Street, postal code, city, country
-- **Contact email** — Primary business email
-- **Phone** — Business phone number
+The Company surface is split into four focused pages.
 
-### Registration
+### About your business
 
-- **VAT number** — Your VAT registration (e.g., NL123456789B01)
-- **Chamber of Commerce** — Business registration number
-- **IBAN** — Bank account for receiving payments
+Path: `/workspace/organization/company/about`
 
-::: tip
-Address autocomplete is available — start typing and select from suggestions powered by Google Maps.
-:::
+The identity form. What every invoice, quote, and email shows.
 
-## Branding
+- **Business name** — appears on every document
+- **Address** — street, postal code, city, country (with address autocomplete)
+- **Registration** — KvK or other registration number
+- **Tax ID** — VAT number (e.g. `NL123456789B01`)
+- **Contact** — public email, phone, support email
+- **Website + social** — used by the email signature, business page, and footers
 
-### Logo
+This page wraps the `CompanyInfo` component. Changes auto-save through the `useWorkspaceSettings` pipeline.
 
-Upload your company logo to use on:
+### Look & feel
 
-- Invoice and quote PDFs
-- Email communications
-- Customer portal
-- Public business page
+Path: `/workspace/organization/company/look`
 
-Supported formats: PNG, JPG, SVG. Use a high-resolution image with a transparent background for best results.
+Branding for invoices, quotes, and outgoing email.
 
-### Colors
+- **Logo upload** — used on every PDF and email header
+- **Brand colour** — primary accent across documents and the public business page
+- **PDF style presets** — gated by the `style_presets` feature (Pro and Business)
+- **Document styling** — header layout, footer content, accent placement
 
-Set your brand accent color. This is used on:
+The page is scaffolding around the existing `CompanyBranding` component (a full inner-form rebuild is on the roadmap; the chrome is already the redesigned tone).
 
-- PDF documents
-- Email templates
-- Customer-facing pages
+### Your website
 
-## Financial defaults
+Path: `/workspace/organization/company/website`
 
-### Currency
+A simple public business page customers can find online — contact info, what you do, and links to message you.
 
-Set your default currency (EUR by default). This applies to new invoices and quotes.
+- Gated by the `public_business_page` feature (Pro and Business)
+- Locked workspaces still see the tile but the leaf shows an upgrade prompt
+- Wraps the `CompanyServices` component
 
-### Payment terms
+When a user clicks through the wizard's "set up your website" tile they land here.
 
-Set the default number of days until an invoice is due. Common values:
+### Your own .com address
 
-- **14 days** — Two weeks
-- **30 days** — One month
-- **60 days** — Two months
+Path: `/workspace/organization/company/address`
 
-You can override this per invoice.
+Hook up a domain you already own (or buy a new one) for your website and email.
 
-### Invoice numbering
+- Gated by the `custom_domains` feature (Pro and Business)
+- Replaces the default `acme.mycompanydesk.com` subdomain
+- DNS, SPF, and DKIM records are managed for you
+- The DNS record table sits behind an "Advanced" strip — most users never need to look at it
 
-Customize how invoice numbers are generated:
+This page is the most technical surface in the Company tree; the intro deliberately explains in plain language what the feature is for before any DNS UI appears.
 
-- **Prefix** — Text before the number (e.g., `INV-`, `2024-`)
-- **Starting number** — The first number in the sequence
-- **Auto-increment** — Numbers increase automatically
+## Plan gating quick reference
 
-## Features toggle
+| Leaf | Free | Starter | Pro | Business |
+|---|---|---|---|---|
+| About your business | yes | yes | yes | yes |
+| Look & feel | yes | yes | yes | yes |
+| Your website | locked | locked | yes | yes |
+| Your own .com address | locked | locked | yes | yes |
 
-Enable or disable optional modules:
+Locked tiles stay visible so you know the feature exists; clicking one opens the upgrade prompt.
 
-| Feature | Description |
-|---|---|
-| **Objects / Assets** | Rental property and asset management |
-| **Contracts** | Recurring service and rental contracts |
-| **Projects** | Project-based work tracking |
-| **Quotes** | Quotation management |
-| **Reverse charge** | Intra-EU B2B invoicing |
-| **AI suggestions** | Smart categorization recommendations |
-| **Receipt scanning** | OCR expense entry |
-| **Text check** | Grammar and spelling checking |
+## Related
 
-Disabled modules are hidden from the navigation to keep your workspace focused.
-
-## PDF template
-
-Customize the layout and appearance of your generated PDFs:
-
-- Field positioning
-- Information visibility
-- Font and sizing
-- Logo placement
-
-Access the full **PDF Editor** for visual drag-and-drop customization from Company > PDF Editor.
-
-::: info
-Advanced PDF customization requires the **Pro** plan or higher.
-:::
-
-## Team members
-
-View and manage your team from the company page. See [Team Management](/settings/team) for details.
+- [Plan & payments](/settings/billing) — to unlock website and custom-domain features
+- [Email setup](/settings/email) — your business email lives on the same domain
+- The magical setup wizard at `/setup` walks new workspaces through every leaf in one flow

@@ -1,106 +1,118 @@
-# Team Management
+---
+last_verified: 2026-05-09
+---
 
-Invite team members, assign roles, and control who can access what in your workspace.
+# Team
 
-## Inviting team members
+Add a partner, employee, or your accountant. Each person gets their own login.
 
-1. Go to **Settings > Team** or **Company > Team Members**
-2. Click **Invite Member**
-3. Enter the person's **email address**
-4. Choose a **role** (see below)
-5. Click **Send Invitation**
+## Where to find it
 
-The invitee receives an email with a link to join your workspace. If they don't have a MyCompanyDesk account, they can create one during the process.
+Open the workspace switcher → **Account** → **Team**, or navigate directly to `/workspace/account/team`.
+
+The page is gated by the `team_members` feature (Pro and Business). Free and Starter workspaces see the upgrade prompt; the workspace owner is always counted as one team member.
+
+## What's on the page
+
+The page wraps the `CompanyTeam` component and is split into four cards.
+
+### Workspace name
+
+A single-field card. Workspace name appears in the navigation, on team invitations, and on the in-app account menu. Only team admins can edit it. Auto-saves through the workspace settings store.
+
+### Current members
+
+A list of everyone who can sign in. Each row shows:
+
+- Avatar with initials and a presence dot (green online, grey idle, hidden if you're not an admin)
+- Name and email
+- Role badge or role picker (admin only)
+- A `lucide:settings-2` icon that opens the **Manage access** drawer
+- Last activity ("Active 2 minutes ago", "Last seen yesterday") — admin only
+
+When the list is empty, the card shows the solo state: "You're working solo. Your workspace is fully functional. Add teammates when you're ready."
+
+### Invite teammate
+
+Admins type an email address and hit **Send invite**. The invitee receives an email with a link; if they don't have a MyCompanyDesk account they create one during acceptance. Pending invitations show in a separate **Pending invitations** card with sent-at timestamp and a `Pending` badge.
+
+Non-admins see an info banner instead: "Only team admins can invite new members."
+
+### Accountant contacts
+
+A separate list for external accountants. Each row shows status:
+
+| Badge | Meaning |
+|---|---|
+| **Contact only** | In your address book, no app access |
+| **Invited** | Invitation email sent, not yet accepted |
+| **Activated** | Has an account and can sign in |
+| **Revoked** | Access removed (can be restored later) |
+
+Admin actions per row: **Invite accountant**, **Manage access** drawer, **Remove**.
 
 ## Roles
 
 | Role | Description |
 |---|---|
-| **Admin** | Full access to everything, including team and billing management |
-| **Member** | Access to assigned features, cannot manage team or billing |
-| **Accountant** | Read-only access with specific accounting views |
+| **Admin** | Full access. Can invite/remove members, change roles, manage billing, edit company settings. |
+| **Member** | Access to whatever the admin grants in the Manage Access drawer. |
+| **Accountant** | A separate type of contact. Granted access via the accountant flow rather than the member invite. |
 
-### Admin
+Roles are toggled inline on the member row via a dropdown (admin only). You can't change your own role.
 
-Admins can:
+## Permissions tree
 
-- Manage team members (invite, remove, change roles)
-- Access billing and subscription settings
-- Configure company settings
-- Access all features
+The **Manage access** drawer opens a per-page permission table. Each row is one section of the app, with three independent toggles.
 
-### Member
+| Page | Icon |
+|---|---|
+| Dashboard | `lucide:layout-dashboard` |
+| Invoices | `lucide:file-text` |
+| Expenses | `lucide:receipt` |
+| Customers | `lucide:users` |
+| Projects | `lucide:folder-kanban` |
+| Objects | `lucide:box` |
+| Contracts | `lucide:file-signature` |
+| Quotes | `lucide:file-check` |
+| Rentals | `lucide:home` |
+| Reports | `lucide:bar-chart-3` |
+| Settings | `lucide:settings` |
 
-Members have access to the features you assign them. Configure their permissions per feature.
+For each page, three independent toggles:
 
-### Accountant
+- **Read** — sees the page and the records on it
+- **Write** — can edit existing records
+- **Create** — can add new records
 
-A special role for external accountants:
+The drawer also has an **Access revoked** banner for accounts that have been suspended (the Restore button re-enables them).
 
-- View financial data (invoices, expenses, reports)
-- Cannot create or modify records (by default)
-- Specific permission set for audit purposes
+The store handles the legacy boolean format too — older `page_access` values of `true` / `false` are migrated to `{ read: true, write: true, create: true }` (or all-false) on first load. Granular per-action permissions live behind the `advanced_permissions` feature (Business only); other plans get the read/write/create model with sensible defaults.
 
-## Permissions
+## Sign-in security
 
-Fine-grained permissions let you control access per feature:
+Each team member's sign-in security lives on their own profile, not on the team page:
 
-### Page access
+- **Passkeys** — at `/me/security`. Members can register one or more passkeys via WebAuthn; once registered, sign-in defaults to the passkey button instead of the password field.
+- **TOTP step-up** — at `/me/security`. When enabled, the login flow returns `{ totpRequired: true, sessionToken }` after the password and prompts for the 6-digit code in a second step. The session token is short-lived; an invalid or expired code returns `TOTP_SESSION_INVALID` / `TOTP_CODE_INVALID`.
+- **Account recovery** — emergency wipe via `/api/auth/recovery` deletes every passkey and clears the TOTP secret in one transaction so a locked-out user can sign in again with email + password reset.
 
-Choose which sections each member can see:
-
-- Invoices
-- Quotes
-- Expenses
-- Customers
-- Projects
-- Contracts
-- Objects
-- Time Registration
-- Reports
-- VAT
-- Settings
-
-### Edit permissions
-
-For each accessible page, choose whether the member can:
-
-- **View only** — Read access, no modifications
-- **Edit** — Full read/write access
-
-## Accountant contacts
-
-Manage external accountant relationships:
-
-1. Go to **Settings > Team > Accountants**
-2. Click **Add Accountant**
-3. Enter their name and email
-4. Click **Invite** to send access
-5. Configure their specific permissions
-
-### Managing accountant access
-
-- **Invite** — Send or resend the access invitation
-- **Revoke** — Remove access (can be restored later)
-- **Restore** — Re-enable previously revoked access
-- **Update permissions** — Change what they can see
+Admins cannot manage another member's passkeys or TOTP — those are personal credentials. To force a step-up reset, ask the member to use the recovery flow on their own account.
 
 ## Switching workspaces
 
-If you're a member of multiple workspaces (companies), switch between them:
+Open the workspace switcher in the top bar to jump between workspaces or create a new one. The switcher is the same dropdown that opens the **Workspace settings** menu — workspaces and personal account live behind one entry point.
 
-1. Click your account menu
-2. Select **Switch Workspace**
-3. Choose the workspace
+## Plan gating quick reference
 
-Or create a **new workspace** from the same menu.
+| Capability | Free | Starter | Pro | Business |
+|---|---|---|---|---|
+| Workspace owner only | yes | yes | yes | yes |
+| Invite team members | no | no | yes (up to 5) | yes (unlimited) |
+| Granular per-action permissions | no | no | no | yes |
+| Accountant contacts | yes | yes | yes | yes |
 
-## Tips
+## Related
 
-- Use the accountant role for your bookkeeper — it provides exactly the access they need
-- Set member permissions thoughtfully — not everyone needs access to billing or team settings
-- Review team access periodically, especially when team members change roles
-
-::: info
-Team management beyond 1 member requires the **Pro** plan. Unlimited members are available on the **Business** plan.
-:::
+- [Plan & payments](/settings/billing) — to unlock `team_members` and `advanced_permissions`
+- [Account & security](/account/security) — passkey and TOTP setup for the signed-in user

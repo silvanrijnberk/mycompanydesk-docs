@@ -1,109 +1,101 @@
-# Billing & Plans
+---
+last_verified: 2026-05-09
+---
 
-Manage your MyCompanyDesk subscription, view usage, and upgrade your plan.
+# Plan & payments
+
+What you pay us, your invoices from us, and your payment card.
+
+## Where to find it
+
+Open the workspace switcher → **Account** → **Plan & payments**, or navigate directly to `/workspace/account/billing`.
+
+The legacy `/settings/billing` URL is now a redirect stub to the new path; bookmarks still work and the `?checkout=success|canceled` query parameter is preserved across the redirect.
 
 ## Plans
 
-MyCompanyDesk offers three plans:
+MyCompanyDesk has four plans. Plan definitions live in `apps/api/src/modules/billing/plans.config.js`.
 
-### Free
+| Plan | Monthly | Yearly | Description |
+|---|---|---|---|
+| **Free** | €0 | €0 | For anyone just getting started |
+| **Starter** | €4.99 | €49.90 | For freelancers who need full invoicing |
+| **Pro** | €9.99 | €99.90 | Everything: AI, advanced reports, full branding, business email |
+| **Business** | €19.99 | €199.90 | Integrations, unlimited scale, priority support |
 
-Get started at no cost:
+Pro is the highlighted (recommended) plan in the picker. Internally the Business tier still uses the key `enterprise` for backwards compatibility, but every customer-facing surface says "Business".
 
-- Limited invoices and customers
-- Basic expense tracking
-- Basic reports
-- 1 user
-- Community support
+### What each plan includes
 
-### Pro
+Quota-limited features (monthly caps unless noted):
 
-For growing businesses:
+| Metric | Free | Starter | Pro | Business |
+|---|---|---|---|---|
+| Invoices created | 5 | unlimited | unlimited | unlimited |
+| Expenses created | 10 | unlimited | unlimited | unlimited |
+| Quotes created | 3 | unlimited | unlimited | unlimited |
+| Storage | 100 MB | 2 GB | 10 GB | unlimited |
+| Team members | 1 | 1 | 5 | unlimited |
+| Custom domains | 0 | 0 | 1 | 5 |
+| AI chat messages (daily) | 10 | 30 | 75 | 200 |
+| AI receipt scans (daily) | 3 | 15 | 40 | 100 |
+| AI suggestions (daily) | 10 | 50 | 150 | 500 |
+| Inbox mailboxes | 0 | 0 | 1 | unlimited |
+| Inbox monthly sends | 0 | 0 | 10 000 | 100 000 |
+| Inbox monthly receives | 0 | 0 | 20 000 | 200 000 |
 
-- Unlimited invoices and customers
-- Full expense tracking with receipt scanning
-- AI suggestions
-- Custom PDF branding
-- CSV export
-- Up to 5 team members
-- Email support
+Boolean features unlocked per plan:
 
-### Business
+| Feature key | Free | Starter | Pro | Business |
+|---|---|---|---|---|
+| `contracts`, `properties`, `projects` | no | yes | yes | yes |
+| `recurring_invoices`, `recurring_expenses` | no | yes | yes | yes |
+| `receipt_scanning`, `language_tools` | no | yes | yes | yes |
+| `time_registration`, `assistant_chat` | no | yes | yes | yes |
+| `description_enrichment` | no | yes | yes | yes |
+| `custom_branding`, `exports_excel` | no | yes | yes | yes |
+| `team_members`, `advanced_reports` | no | no | yes | yes |
+| `public_business_page` | no | no | yes | yes |
+| `custom_domains`, `custom_domain_routing` | no | no | yes | yes |
+| `inbox`, `style_presets`, `privacy_mode`, `company_subdomain` | no | no | yes | yes |
+| `api_access`, `webhooks`, `priority_support` | no | no | no | yes |
+| `advanced_permissions`, `custom_domain_full_website` | no | no | no | yes |
 
-For teams and scaling operations:
+The full feature list lives in `FEATURE_KEYS` in `plans.config.js`.
 
-- Everything in Pro
-- Unlimited team members
-- API access
-- Priority support
-- Advanced integrations
+## Beta override
 
-Plans are available in **monthly** and **annual** billing intervals. Annual plans include a discount.
+Workspaces with `user.role === "beta"` bypass plan restrictions entirely. The entitlement service (`apps/api/src/modules/billing/entitlement.service.js`) returns `{ allowed: true, source: "beta_override" }` for any feature or quota check, even ones the current plan doesn't include. Two beta surfaces exist:
 
-## Managing your subscription
+- **Manually assigned beta** — a `lucide:flask-conical` badge appears at the top of the billing page and reads "Beta access — full Business features unlocked"
+- **Open beta** — limited public spots; the page shows a `lucide:rocket` claim card. Once claimed, the user gets a confirmation banner and either a time-bounded or lifetime entitlement depending on the tier configuration
 
-### Upgrade
+Beta users see plan tiles for context but never hit gating prompts.
 
-1. Go to **Settings > Billing**
-2. Click **Upgrade** on the desired plan
-3. Complete payment via Stripe
-4. Features are activated immediately
+## Stripe portal
 
-### Downgrade
-
-1. Go to **Settings > Billing**
-2. Click **Change Plan**
-3. Select the lower plan
-4. Changes take effect at the end of the current billing period
-
-### Cancel
-
-1. Go to **Settings > Billing**
-2. Click **Manage Subscription** to open the Stripe billing portal
-3. Cancel your subscription
-4. You retain access until the end of the paid period
-
-## Usage tracking
-
-View your current usage on the billing page:
-
-- **Invoices created** this month
-- **Customers** in your workspace
-- **Team members** active
-- **API calls** (Business plan)
-
-Usage resets monthly. If you approach a limit, you'll see a notification suggesting an upgrade.
-
-## Payment methods
-
-Payments are processed securely through **Stripe**. Accepted methods:
-
-- Credit card (Visa, Mastercard, Amex)
-- Debit card
-- SEPA direct debit (EU)
-
-Manage your payment method in the Stripe billing portal.
-
-## Billing portal
-
-Click **Manage Subscription** to access the Stripe billing portal where you can:
+The **Manage subscription** button (visible whenever the workspace has an active period or non-Free plan) calls `POST /api/billing/portal`, which returns a one-shot Stripe Customer Portal URL. From the portal you can:
 
 - Update payment method
-- View invoice history
-- Download receipts
+- Download invoices and receipts
 - Change billing address
+- Cancel the subscription
 
-## Feature entitlements
+Cancellation takes effect at the end of the current paid period; access remains until then.
 
-Some features are gated by plan:
+## Checkout flow
 
-| Feature | Free | Pro | Business |
-|---|---|---|---|
-| Custom branding | - | Yes | Yes |
-| CSV export | - | Yes | Yes |
-| Receipt scanning | - | Yes | Yes |
-| AI suggestions | - | Yes | Yes |
-| Text check | - | Yes | Yes |
-| API access | - | - | Yes |
+1. Click **Upgrade** on a plan tile
+2. The frontend calls `POST /api/billing/checkout`, which returns a Stripe Checkout URL
+3. Stripe redirects back with `?checkout=success` or `?checkout=canceled`
+4. The page shows a success / cancel banner; the entitlement cache invalidates and gated UI unlocks immediately
 
-Attempting to use a gated feature on a lower plan shows an upgrade prompt.
+## Contextual upgrade banner
+
+When a user lands on the billing page from a gated feature (the feature-flag middleware redirects with `?upgrade=<feature>`), the page shows a "you came here for X — here's what unlocks it" banner above the plan grid instead of a generic plans pitch.
+
+## Related
+
+- [Company Settings](/settings/company) — `public_business_page` and `custom_domains` are gated here
+- [Email](/settings/email) — `inbox` requires Pro or Business
+- [Team](/settings/team) — `team_members` requires Pro or higher

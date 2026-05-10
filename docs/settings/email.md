@@ -1,102 +1,109 @@
-# Email Integration
+---
+last_verified: 2026-05-09
+---
 
-Configure how MyCompanyDesk sends emails to your customers — from invoice delivery to payment reminders.
+# Email
 
-## Email delivery methods
+Your business has its own email address. Customers write to it, you reply, and we send your invoices and quotes from there.
 
-MyCompanyDesk supports three ways to send emails:
+## Where to find it
 
-### 1. Built-in email (default)
+Open the workspace switcher → **Workspace settings** → **Email**, or navigate directly to `/workspace/email`.
 
-Out of the box, emails are sent through MyCompanyDesk's own email service. No configuration needed.
+The legacy `/workspace/communication/emails` URL redirects here, as do `/workspace/email/activity`, `/workspace/email/delivery`, `/workspace/email/mailboxes`, and `/workspace/email/templates`.
 
-### 2. Gmail integration
+The umbrella page renders different content depending on where you are in setup. The state machine is:
 
-Send emails directly from your Gmail account:
-
-1. Go to **Settings > Communication > Email**
-2. Click **Connect Gmail**
-3. Authorize MyCompanyDesk to send on your behalf via Google OAuth
-4. Emails now appear as sent from your Gmail address
-
-**Benefits:**
-
-- Emails show your Gmail address as the sender
-- Sent emails appear in your Gmail Sent folder
-- Better deliverability (your own domain reputation)
-
-### 3. Outlook / Microsoft integration
-
-Send from your Outlook or Microsoft 365 account:
-
-1. Go to **Settings > Communication > Email**
-2. Click **Connect Outlook**
-3. Authorize via Microsoft OAuth
-4. Emails are sent from your Outlook address
-
-### 4. Custom SMTP
-
-For full control, use your own SMTP server:
-
-1. Go to **Settings > Communication > Email**
-2. Enter your SMTP details:
-   - **Host** — SMTP server address
-   - **Port** — Server port (587 for TLS, 465 for SSL)
-   - **Username** — SMTP login
-   - **Password** — SMTP password
-3. Click **Test Connection** to verify it works
-4. Save
-
-## Email templates
-
-Customize the emails sent with your invoices and reminders.
-
-### Invoice email template
-
-The default email sent when delivering an invoice. Customize:
-
-- **Subject line** — The email subject (supports variables like invoice number)
-- **Body** — The message content
-- **Language** — Set per-language templates
-
-### Reminder email template
-
-The email sent when following up on overdue invoices. Customize the same fields as above but with a more urgent tone.
-
-### Preview
-
-Before sending, you can preview any email to see exactly what your customer will receive:
-
-- Rendered HTML with your branding
-- PDF attachment preview
-- Payment link inclusion
-
-## Variables
-
-Email templates support dynamic variables:
-
-| Variable | Description |
+| State | What you see |
 |---|---|
-| `{invoice_number}` | The invoice number |
-| `{customer_name}` | Customer's name |
-| `{amount}` | Total invoice amount |
-| `{due_date}` | Payment due date |
-| `{company_name}` | Your company name |
-| `{payment_link}` | Link to online payment |
+| `live` | Your inbox address, an "Open inbox" button, and the five tile menu below |
+| `dns_pending` | "DNS still propagating" with a check-again button |
+| `mx_conflict` | Apex MX conflict warning (your domain already runs Gmail or Microsoft 365) |
+| `inbox_off` | "Turn on email" — a one-click `quickEnableInbox` action |
+| `subdomain_reserved` | Free `acme.mycompanydesk.com` subdomain reserved, awaiting routing rollout |
+| `empty` | CTA to the `/setup` magical wizard |
 
-## Notifications
+Email is gated by the `inbox` feature (Pro and Business). Free and Starter workspaces see the upgrade prompt instead.
 
-Configure what email notifications you receive:
+## What you can change
 
-- **Invoice paid** — Get notified when a customer pays
-- **Quote request received** — Alert for new quote requests
-- **Team activity** — Updates on team member actions
+Once email is live, the umbrella shows five tiles.
 
-Notification preferences can be set in your [Profile](/account/profile).
+### Where mail arrives
 
-## Tips
+Path: `/workspace/email/address`
 
-- Connect Gmail or Outlook for the best deliverability
-- Always test your email template before sending your first invoice
-- Set up language-specific templates if you serve customers in multiple languages
-- Use the reminder template for professional follow-ups on overdue invoices
+Your business email address, who else's mail lands here, and how long we keep it.
+
+- **Default mailbox** — usually `info@yourdomain.com`, set during the wizard
+- **Send-only aliases** — addresses like `support@`, `sales@`, or `billing@` that you can compose from but that share the same inbox
+- **Apex catch-all** — every mailbox under your domain lands in the same inbox by default
+- **Retention controls** — how long messages stay in the archive
+
+The Pro plan includes one real mailbox plus unlimited send-as identities; Business unlocks multi-mailbox routing.
+
+Wraps the `SettingsInbox` component (mailbox CRUD plus alias editor). Inner UI is scheduled for a future redesign; today it is reachable end-to-end.
+
+### What your emails say
+
+Path: `/workspace/email/messages`
+
+The text customers read when you send an invoice, quote, or reminder.
+
+- **Invoice template** — sent when delivering an invoice
+- **Quote template** — sent when delivering a quote
+- **Reminder template** — sent when following up on overdue invoices
+- **PDF attachment toggle** — whether to attach the PDF (default on)
+
+Each template has its own subject and body. Mustache-style placeholders like `{customer_name}` and `{invoice_number}` are filled in automatically when the email goes out.
+
+### Your sign-off
+
+Path: `/workspace/email/signature`
+
+The footer at the bottom of every outgoing email. The page shows a live preview of the actual footer and a list of toggles for what to include:
+
+- Your name (the personal sender, useful when you have a team)
+- Website link (uses the website set under Company → About your business)
+- Support email (when you have a separate support address)
+- Your MyCompanyDesk business page (when public business page is enabled)
+- Social links (LinkedIn, X, Facebook, Instagram)
+
+Toggles auto-disable with a friendly hint when the underlying field isn't filled in yet.
+
+### How emails are sent
+
+Path: `/workspace/email/sending`
+
+Most users never need to touch this. The default uses MyCompanyDesk's shared sender — delivery, retries, and reputation are handled for you.
+
+The advanced strip exposes alternative delivery methods:
+
+- **Gmail** — connect via Google OAuth; emails go out from your Gmail address and appear in your Gmail Sent folder
+- **Outlook / Microsoft 365** — connect via Microsoft OAuth
+- **Custom SMTP** — host, port (587 TLS / 465 SSL), username, password, with a "Test connection" button
+
+The whole page is "advanced" in spirit, so the body sits behind an `AdvancedStrip` with a friendly explanation up top.
+
+### List of everything sent
+
+Path: `/workspace/email/log`
+
+Every email we sent for you in the last 90 days, what happened to it, and (when relevant) why it didn't reach the customer. Statuses include sent, delivered, opened, bounced, and failed. Wraps the `SettingsEmailActivity` table.
+
+## New email wizard
+
+When the email umbrella is in the `empty` state, the **Open the wizard** CTA sends you to `/setup` — the magical setup wizard that creates the address (free or your own domain), the info / support / sales mailboxes, and the email templates in your brand voice in about a minute.
+
+## Send-as picker
+
+When composing in the inbox, the **From** picker shows your default mailbox plus every send-only alias. Reply-to threads default to the address the customer originally wrote to.
+
+## Delivery tracking
+
+Each sent message records its delivery state via webhook callbacks from the underlying provider. The state shows on the invoice or quote detail page (next to the **Sent** status) and in the activity log.
+
+## Related
+
+- [Company → Your own .com address](/settings/company) — the domain your email runs on
+- [Plan & payments](/settings/billing) — to unlock the `inbox` feature
