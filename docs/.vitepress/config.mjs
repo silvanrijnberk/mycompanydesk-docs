@@ -25,6 +25,7 @@ function sidebarEN() {
       collapsed: false,
       items: [
         { text: 'Dashboard', link: '/features/dashboard' },
+        { text: 'Setup Wizard', link: '/features/setup-wizard' },
         { text: 'Invoices', link: '/features/invoices' },
         { text: 'Quotes', link: '/features/quotes' },
         { text: 'Expenses', link: '/features/expenses' },
@@ -43,6 +44,7 @@ function sidebarEN() {
       text: 'Settings',
       collapsed: false,
       items: [
+        { text: 'Settings overview', link: '/settings/' },
         { text: 'Company Settings', link: '/settings/company' },
         { text: 'Email Integration', link: '/settings/email' },
         { text: 'PDF Customization', link: '/settings/pdf' },
