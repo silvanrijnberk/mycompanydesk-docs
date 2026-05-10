@@ -1,0 +1,156 @@
+---
+last_verified: 2026-05-09
+---
+
+# Domains, Website, and Inbox
+
+> **Status: pre-launch.** All three features in this page roll out together as a single bundle. They are gated by the `custom_domains` and `public_business_page` feature flags and are still being onboarded onto the public plans. Behaviour described here matches the codebase as of 2026-05-09; if a screen looks different in your workspace, the bundle has not been enabled there yet.
+
+Custom domains, the hosted business website, and the shared email inbox ship as one product. The reason: they share state. The same `domains` row that proves you control `acme.nl` also makes `acme.nl` your website's URL and lets `info@acme.nl` start receiving mail. There is one onboarding flow, one settings tree, and one place in the app to manage all of it.
+
+## The bundled value
+
+Add a domain once and you get three things:
+
+- **A custom address.** Your business lives at `acme.nl` instead of `acme.mycompanydesk.com`.
+- **A live website.** The hosted business page is automatically published on the verified domain.
+- **A working inbox.** `info@acme.nl`, plus `support@`, `sales@` and a send-only `noreply@` alias, start catching mail and sending replies.
+
+You can run the bundled flow from the [Setup wizard](/getting-started/company-setup) (`/setup`, the "Your web address" step), or piece-by-piece from `Company › Your own .com address` and the Inbox.
+
+## One onboarding flow
+
+The wizard step at `/setup` is the recommended entry point. It applies through `apply.service.js → activateSubdomain | addDomain → quickEnableInbox` in a single submit, so the user answers a few questions and the platform wires everything underneath.
+
+### Step 1 — Add a domain
+
+Two paths in the wizard, both stored on the `domains` table:
+
+- **Free workspace subdomain** — `your-slug.mycompanydesk.com` (or `.nl` for NL workspaces). No DNS work; the slug is registered as a Cloudflare Pages custom domain and the website is live within seconds. This is the default for new workspaces.
+- **Your own domain** — paste `acme.nl`. Two setup modes are supported:
+  - **Nameserver mode** (recommended) — a Cloudflare zone is created for the domain. You change your registrar's nameservers to the two `*.ns.cloudflare.com` hostnames the wizard shows. Cloudflare becomes authoritative DNS for the domain, which is what unlocks email, SSL and DNS-record management inside MyCompanyDesk.
+  - **CNAME mode** — for subdomains only (e.g. `portal.acme.nl`). You add a single CNAME record pointing at `mycompanydesk-app.pages.dev`. No nameserver change. Email routing is not available in this mode.
+
+Adding a custom domain automatically deactivates the workspace subdomain — there is one canonical website per company, never two.
+
+### Step 2 — Verify
+
+Verification runs both on demand and on a poll. The detail page exposes a **Verify** button (`POST /api/domains/:id/verify`), and a background job re-checks every pending domain at intervals.
+
+- **Nameserver mode** is verified once Cloudflare reports the zone as `active`. The status moves `pending_nameservers → pending_verification → active`. The user is notified via the in-app notification bell when the flip happens.
+- **CNAME mode** is verified by resolving the CNAME and confirming it points at the Pages target. Status moves `pending_cname → active`.
+
+### Step 3 — SSL
+
+SSL is provisioned by Cloudflare automatically once the zone is active. The default mode is **Full (strict)**; you can change it from `Domain detail › SSL` (`off / flexible / full / strict`). The certificate-status field on the SSL panel mirrors Cloudflare's verification result.
+
+### Step 4 — Website goes live
+
+The hosted business page (see [Business Page](/advanced/business-page)) is automatically published at the domain root once the zone is active. The wizard's `getBusinessPageUrl` resolver returns, in priority:
+
+1. A custom domain with `business_page_enabled = true` → `https://acme.nl`
+2. A custom domain with `portal_subdomain_enabled = true` → `https://portal.acme.nl`
+3. The workspace subdomain → `https://acme.mycompanydesk.com`
+4. The fallback portal route (`/portal/<slug>`) when nothing else is configured.
+
+### Step 5 — Inbox catches mail
+
+For nameserver-mode custom domains, the wizard runs `quickEnableInbox` after verification. That call is idempotent and does the following:
+
+- Provisions the sending subdomain (`mail.acme.nl`) and writes the DKIM and SPF DNS records.
+- Sets a Cloudflare Email Routing catch-all rule on the zone, pointed at the `inbox-inbound` Worker.
+- Inspects the apex MX records. If they are empty or already point at Cloudflare, the wizard installs the Cloudflare MX. If a third-party provider (Google Workspace, Microsoft 365) is already there, the wizard refuses to overwrite and surfaces a `conflict` warning so you can decide.
+- Creates `info@acme.nl` as the default shared mailbox.
+- Provisions `support@` and `sales@` as bidirectional aliases of `info@`, and `noreply@` as a send-only alias (allowed in From, dropped on inbound).
+- Optionally creates a personal mailbox (`silvan@acme.nl`) when you ticked the box in the wizard.
+
+## Per-feature reference
+
+### Custom domains
+
+UI lives at `Company › Your own .com address` — the leaf page is `/workspace/organization/company/address`, mounted from `apps/web/pages/workspace/organization/company/address.vue` and rendering the `SettingsDomains` component. The two older paths `/workspace/organization/domains` and `/workspace/communication/domains` redirect here.
+
+What the page lets you do:
+
+- **Add a domain** (nameserver or CNAME mode).
+- **Verify** a pending domain.
+- **Manage DNS records** — A, AAAA, CNAME, MX, TXT, SRV, CAA, NS. CRUD goes through Cloudflare via the API.
+- **SSL** — view certificate status, change SSL mode.
+- **URL redirects** — three free Cloudflare Page Rules per zone. Source pattern + destination + 301/302.
+- **Email security** — SPF/DMARC/DKIM check with a one-click "fix" that writes safe defaults (`v=spf1 ~all`, `v=DMARC1; p=quarantine; …`).
+- **Quick settings** — toggle Cloudflare Development Mode, toggle "Under attack" security level, purge cache.
+- **Analytics** — last 30 days of requests, bandwidth, threats, visitors, pageviews. The current Cloudflare Analytics endpoint is sunset; the page renders an empty `unavailable` state until the GraphQL migration lands.
+- **Remove** — soft-deletes the row (`status = 'removed'`) and tears down the Cloudflare zone (or the Pages domain in CNAME mode).
+
+#### `domains` table — the shared state
+
+Notable columns the app reads from:
+
+| Column | Purpose |
+|---|---|
+| `domain_name` | The hostname, e.g. `acme.nl`. |
+| `setup_mode` | `nameserver` (full delegation) or `cname` (single subdomain). |
+| `status` | `pending_nameservers`, `pending_verification`, `pending_cname`, `active`, `failed`, `removed`. |
+| `cloudflare_zone_id` | Set in nameserver mode. Drives DNS, SSL, redirects, analytics, email-routing. |
+| `nameserver_1`, `nameserver_2` | Shown to the user during nameserver setup. |
+| `cname_hostname`, `cname_target` | Set in CNAME mode. |
+| `email_routing_enabled` | `true` once the Cloudflare Email Routing zone is enabled. |
+| `inbox_enabled`, `inbox_subdomain_tag`, `inbox_dkim_ready` | Flipped by `quickEnableInbox`. The mail-sending subdomain (`mail.acme.nl` by default) and DKIM provisioning state. |
+| `business_page_enabled`, `portal_subdomain_enabled` | Determine which hostname serves the public website. |
+| `verified_at` | Set when verification succeeds. |
+
+### Hosted website
+
+The website builder lives at `Company › Your website` (`/workspace/organization/company/website`). It mounts the `CompanyServices` component, which writes to `companies.business_page_*` columns and the related `company_services`, `company_team_members`, `company_testimonials` and `company_gallery` tables. The public face is served from `/portal/<slug>` (and from your custom domain once verified).
+
+What the editor surfaces:
+
+- **Live status** — whether the website is enabled and its public URL.
+- **Pages** — toggle About, Contact, Services, Team, Quote form, Legal.
+- **Hero** — tagline, content, hero image.
+- **About** — long-form copy.
+- **Photos** — hero image upload + gallery.
+- **Services** — catalog with descriptions, prices, slugs, photos. Services have their own detail page (`/portal/<slug>/services/<service-slug>`).
+- **Team** — public team-member cards.
+- **Testimonials** — quotes from customers.
+- **Quote requests** — public quote-request form, rate-limited to 1 per 15 minutes per IP. Submissions land in `Quotes › Requests` (see [Quotes](/features/quotes)).
+
+The public site is served at the highest-priority URL the company owns: custom domain root → `portal.<custom-domain>` → workspace subdomain → fallback `/portal/<slug>` route.
+
+### Email inbox
+
+The inbox is a top-level surface at `/inbox` (`apps/web/pages/inbox/index.vue`). Backend lives in `apps/api/src/modules/inbox/*` and writes to a separate set of tables (`company_email_domains`, `company_mailboxes`, `email_threads`, `email_messages`, `email_attachments`, `email_events`).
+
+Capabilities:
+
+- **Threading** — inbound mail is grouped into threads keyed by RFC 822 `Message-ID` / `In-Reply-To` / `References`. Each thread carries `last_message_preview`, `participants`, status (`open / snoozed / closed / spam`) and labels.
+- **Reply** — inline reply box on the thread. Smart `From` picks the address the original mail was sent to, so a customer who emailed `support@acme.nl` gets a reply from `support@`, not `info@`.
+- **Compose** — drawer form with mailbox picker, send-as picker, customer picker (or freeform `To`), subject, body, attachments. Bounced-recipient warning is shown before send.
+- **Send-as aliases** — `info@`, `support@`, `sales@` are bidirectional aliases on the same mailbox. `noreply@` is send-only — selectable as From, but inbound mail to it is dropped on ingest.
+- **Attachments** — upload before send (compose and reply both). Attachments on inbound mail are downloadable from the message; signed download URLs expire after a short TTL.
+- **Alias notice** — when an inbound message arrives at an address that isn't yet a declared alias, the thread shows a soft notice with an "Add as alias" action.
+- **Linking** — threads can be linked to a customer, project or invoice for cross-referencing.
+- **Catch-all fallback** — mail to any local-part on the domain falls through to the default mailbox (`is_default = true`, one per domain). This means typos and undeclared aliases don't vanish silently.
+- **Audit log** — outbound sends, mailbox changes and thread state changes are recorded in an audit table for the workspace.
+
+The inbox uses your custom domain only after `quickEnableInbox` has run successfully and the apex MX records point at Cloudflare. Until then, the workspace can still send mail through the default delivery path described in [Email Integration](/settings/email), but it can't receive mail.
+
+## Sending mail vs receiving mail
+
+This bundle is the **receiving** side. Outgoing email — invoice delivery, reminders, quote sends — is handled by the broader email pipeline described in [Email Integration](/settings/email). Once a domain is verified and the inbox is enabled, the same domain is used as the From address for outbound mail too, with DKIM signing on `mail.acme.nl`.
+
+## Limits and gotchas
+
+- **One website per company.** Adding a custom domain deactivates the workspace subdomain. Removing the domain doesn't auto-revive the slug — re-activate it manually if you want to fall back.
+- **CNAME mode has no email.** Email routing requires a full Cloudflare zone, which only nameserver mode provides.
+- **The wizard refuses to overwrite an existing third-party MX.** If your apex already points at Google Workspace or Microsoft 365, `quickEnableInbox` returns `apexMx.status = 'conflict'` and you have to choose: migrate MX to Cloudflare, or stay on your existing provider and skip the bundled inbox.
+- **Reserved subdomains.** `app`, `admin`, `api`, `www`, `mail`, `support`, `portal`, `dashboard` and a handful of others are blocked at the workspace-slug level.
+- **Pre-launch.** The bundle is feature-gated by `custom_domains` and `public_business_page`. Workspaces without those flags see the upgrade prompt instead of the editor.
+
+## Related
+
+- [Setup wizard](/getting-started/company-setup) — the magical onboarding that drives the bundled flow.
+- [Email Integration](/settings/email) — outgoing email, send-as picker, delivery tracking.
+- [Business Page](/advanced/business-page) — the public-facing surface.
+- [Company Settings](/settings/company) — the umbrella that hosts About / Look / Website / Address.
+- [Billing & Plans](/settings/billing) — feature flags that gate the bundle.
