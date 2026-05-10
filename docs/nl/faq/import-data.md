@@ -13,7 +13,7 @@ chatbot:
     - "gegevens importeren"
     - "daten importieren"
     - "importer donnees"
-  actions:[]
+  actions: []
   follow_up:
     - "How do I export my data?"
     - "How do I add customers manually?"

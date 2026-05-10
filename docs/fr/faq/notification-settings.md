@@ -11,7 +11,7 @@ chatbot:
     - "notificatie instellingen"
     - "benachrichtigungen"
     - "parametres notification"
-  actions:[]
+  actions: []
   follow_up:
     - "How do I send payment reminders?"
     - "How do I change my email?"

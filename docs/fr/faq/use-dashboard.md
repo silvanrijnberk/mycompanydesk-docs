@@ -11,7 +11,7 @@ chatbot:
     - "dashboard gebruiken"
     - "dashboard nutzen"
     - "utiliser tableau de bord"
-  actions:[]
+  actions: []
   follow_up:
     - "How do I view overdue invoices?"
     - "How do I check my reports?"

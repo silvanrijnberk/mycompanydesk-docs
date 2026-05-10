@@ -11,7 +11,7 @@ chatbot:
     - "projekt erstellen"
     - "creer projet"
     - "comment creer un projet"
-  actions:[]
+  actions: []
   follow_up:
     - "How do I create a contract?"
     - "How do I link expenses to a project?"
