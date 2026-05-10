@@ -37,6 +37,7 @@ function sidebarEN() {
         { text: 'Time Registration', link: '/features/time-registration' },
         { text: 'Reports', link: '/features/reports' },
         { text: 'VAT Management', link: '/features/vat' },
+        { text: 'Domains, Website & Inbox', link: '/features/domains-website-inbox' },
       ],
     },
     {
@@ -103,6 +104,7 @@ function sidebarNL() {
         { text: 'Tijdregistratie', link: '/nl/features/time-registration' },
         { text: 'Rapporten', link: '/nl/features/reports' },
         { text: 'BTW-beheer', link: '/nl/features/vat' },
+        { text: 'Domeinen, website & inbox', link: '/nl/features/domains-website-inbox' },
       ],
     },
     {
@@ -169,6 +171,7 @@ function sidebarDE() {
         { text: 'Zeiterfassung', link: '/de/features/time-registration' },
         { text: 'Berichte', link: '/de/features/reports' },
         { text: 'USt.-Verwaltung', link: '/de/features/vat' },
+        { text: 'Domains, Website & Posteingang', link: '/de/features/domains-website-inbox' },
       ],
     },
     {
@@ -235,6 +238,7 @@ function sidebarFR() {
         { text: 'Suivi du temps', link: '/fr/features/time-registration' },
         { text: 'Rapports', link: '/fr/features/reports' },
         { text: 'Gestion de la TVA', link: '/fr/features/vat' },
+        { text: 'Domaines, site web et boîte de réception', link: '/fr/features/domains-website-inbox' },
       ],
     },
     {
