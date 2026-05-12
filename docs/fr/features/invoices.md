@@ -1,3 +1,7 @@
+---
+title: Factures
+---
+
 # Factures
 
 Les factures sont au coeur de MyCompanyDesk. Creez des factures professionnelles, envoyez-les a vos clients avec des liens de paiement et suivez les paiements jusqu'a leur reception.

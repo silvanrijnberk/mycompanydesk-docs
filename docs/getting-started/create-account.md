@@ -1,3 +1,7 @@
+---
+title: Create Your Account
+---
+
 # Create Your Account
 
 Getting started with MyCompanyDesk takes just a few minutes.

@@ -1,4 +1,5 @@
 ---
+title: Settings overview
 last_verified: 2026-05-09
 ---
 

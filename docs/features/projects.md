@@ -1,3 +1,7 @@
+---
+title: Projects
+---
+
 # Projects
 
 Organize your work into projects to track time, revenue, and profitability per engagement.

@@ -1,3 +1,7 @@
+---
+title: Business Page
+---
+
 # Business Page
 
 Create a public profile for your business that customers can visit to learn about your services and request quotes.

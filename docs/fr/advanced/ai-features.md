@@ -1,3 +1,7 @@
+---
+title: Fonctionnalites IA
+---
+
 # Fonctionnalites IA
 
 MyCompanyDesk integre des fonctionnalites alimentees par l'IA pour vous aider a travailler plus vite et plus intelligemment.

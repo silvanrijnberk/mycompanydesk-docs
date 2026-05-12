@@ -1,3 +1,7 @@
+---
+title: Zeiterfassung
+---
+
 # Zeiterfassung
 
 Erfassen Sie Arbeitsstunden für Projekte und Kunden, um abrechenbare Zeit zu verfolgen und Rechnungen aus Zeiteinträgen zu erstellen.

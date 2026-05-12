@@ -1,3 +1,7 @@
+---
+title: Berichte
+---
+
 # Berichte
 
 Erhalten Sie Einblicke in Ihre Geschäftsfinanzen mit acht integrierten Berichtsansichten zu Umsatz, Ausgaben, Gewinn, USt. und mehr.

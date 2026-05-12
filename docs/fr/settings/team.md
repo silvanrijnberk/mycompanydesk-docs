@@ -1,3 +1,7 @@
+---
+title: "Gestion de l'equipe"
+---
+
 # Gestion de l'equipe
 
 Invitez des membres d'equipe, attribuez des roles et controlez qui peut acceder a quoi dans votre espace de travail.

@@ -1,3 +1,7 @@
+---
+title: Rechnungen
+---
+
 # Rechnungen
 
 Rechnungen stehen im Mittelpunkt von MyCompanyDesk. Erstellen Sie professionelle Rechnungen, versenden Sie sie mit Zahlungslinks an Kunden und verfolgen Sie Zahlungen bis zum Abschluss.

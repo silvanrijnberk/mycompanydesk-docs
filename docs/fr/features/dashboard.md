@@ -1,3 +1,7 @@
+---
+title: Tableau de bord
+---
+
 # Tableau de bord
 
 Le tableau de bord est votre page d'accueil dans MyCompanyDesk. Il vous offre une vue d'ensemble de vos finances, alertes et actions rapides.

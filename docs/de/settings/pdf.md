@@ -1,3 +1,7 @@
+---
+title: PDF-Anpassung
+---
+
 # PDF-Anpassung
 
 Passen Sie das Erscheinungsbild Ihrer Rechnungs-, Angebots- und Gutschrift-PDFs an Ihre Marke an.

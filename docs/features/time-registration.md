@@ -1,3 +1,7 @@
+---
+title: Time Registration
+---
+
 # Time Registration
 
 Log working hours against projects and customers to track billable time and generate invoices from time entries.

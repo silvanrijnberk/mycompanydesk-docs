@@ -1,3 +1,7 @@
+---
+title: KI-Funktionen
+---
+
 # KI-Funktionen
 
 MyCompanyDesk enthält KI-gestützte Funktionen, die Ihnen helfen, schneller und intelligenter zu arbeiten.

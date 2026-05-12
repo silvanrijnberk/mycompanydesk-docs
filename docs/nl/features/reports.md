@@ -1,3 +1,7 @@
+---
+title: Rapportages
+---
+
 # Rapportages
 
 Krijg inzicht in je bedrijfsfinancien met acht ingebouwde rapportweergaven over omzet, uitgaven, winst, BTW en meer.

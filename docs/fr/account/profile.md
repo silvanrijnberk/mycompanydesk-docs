@@ -1,3 +1,7 @@
+---
+title: Profil
+---
+
 # Profil
 
 Gerez vos parametres personnels de compte, vos preferences et vos notifications.

@@ -1,3 +1,7 @@
+---
+title: "Parametres de l'entreprise"
+---
+
 # Parametres de l'entreprise
 
 Configurez les informations de votre entreprise, l'image de marque, les parametres financiers par defaut et les fonctionnalites activees.

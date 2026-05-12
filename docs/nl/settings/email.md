@@ -1,3 +1,7 @@
+---
+title: E-mailintegratie
+---
+
 # E-mailintegratie
 
 Configureer hoe MyCompanyDesk e-mails verstuurt naar je klanten — van factuurverzending tot betalingsherinneringen.

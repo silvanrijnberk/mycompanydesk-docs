@@ -1,3 +1,7 @@
+---
+title: Depenses recurrentes
+---
+
 # Depenses recurrentes
 
 Automatisez le suivi de vos couts professionnels reguliers comme le loyer, les abonnements et les charges.

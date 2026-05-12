@@ -1,3 +1,7 @@
+---
+title: Je eerste factuur
+---
+
 # Je eerste factuur
 
 Deze gids helpt je stap voor stap bij het maken en versturen van je eerste factuur in MyCompanyDesk.

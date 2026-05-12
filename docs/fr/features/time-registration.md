@@ -1,3 +1,7 @@
+---
+title: Enregistrement du temps
+---
+
 # Enregistrement du temps
 
 Enregistrez vos heures de travail par projet et par client pour suivre le temps facturable et generer des factures a partir des entrees de temps.

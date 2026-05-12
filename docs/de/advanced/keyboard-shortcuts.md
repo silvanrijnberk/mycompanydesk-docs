@@ -1,3 +1,7 @@
+---
+title: Tastenkombinationen
+---
+
 # Tastenkombinationen
 
 Navigieren Sie schneller durch MyCompanyDesk mit Tastenkombinationen.

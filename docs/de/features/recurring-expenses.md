@@ -1,3 +1,7 @@
+---
+title: Wiederkehrende Ausgaben
+---
+
 # Wiederkehrende Ausgaben
 
 Automatisieren Sie die Erfassung regelmäßiger Geschäftskosten wie Miete, Abonnements und Nebenkosten.

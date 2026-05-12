@@ -1,3 +1,7 @@
+---
+title: Configurer votre entreprise
+---
+
 # Configurer votre entreprise
 
 Avant de pouvoir envoyer des factures, vous devez configurer les informations de votre entreprise. Ces donnees apparaissent sur vos factures, devis et autres documents.

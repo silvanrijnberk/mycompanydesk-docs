@@ -1,3 +1,7 @@
+---
+title: Numerisation de recus
+---
+
 # Numerisation de recus
 
 Extrayez automatiquement les donnees de depenses a partir d'images de recus et de factures PDF grace a l'OCR alimente par l'IA.

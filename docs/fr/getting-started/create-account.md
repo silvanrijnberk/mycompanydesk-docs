@@ -1,3 +1,7 @@
+---
+title: Creer votre compte
+---
+
 # Creer votre compte
 
 Demarrer avec MyCompanyDesk ne prend que quelques minutes.

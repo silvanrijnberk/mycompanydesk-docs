@@ -1,3 +1,7 @@
+---
+title: Bedrijfspagina
+---
+
 # Bedrijfspagina
 
 Maak een openbaar profiel voor je bedrijf dat klanten kunnen bezoeken om meer te weten te komen over je diensten en offertes aan te vragen.

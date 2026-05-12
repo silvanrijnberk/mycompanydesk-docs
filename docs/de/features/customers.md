@@ -1,3 +1,7 @@
+---
+title: Kunden
+---
+
 # Kunden
 
 Verwalten Sie Ihre vollständige Kundendatenbank. Jede Rechnung, jedes Angebot und jedes Projekt ist mit einem Kundendatensatz verknüpft.

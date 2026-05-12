@@ -1,3 +1,7 @@
+---
+title: "Objekte & Vermögenswerte"
+---
+
 # Objekte & Vermögenswerte
 
 Verfolgen Sie Mietobjekte, Fahrzeuge, Ausstattung und andere Geschäftsvermögenswerte mit vollständigem Lebenszyklus-Management.

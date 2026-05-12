@@ -1,3 +1,7 @@
+---
+title: Factures recurrentes
+---
+
 # Factures recurrentes
 
 Automatisez votre facturation reguliere en configurant des factures qui se generent selon un calendrier.

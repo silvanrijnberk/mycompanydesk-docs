@@ -1,3 +1,7 @@
+---
+title: Rapports
+---
+
 # Rapports
 
 Obtenez des analyses de vos finances avec huit vues de rapports couvrant le chiffre d'affaires, les depenses, les benefices, la TVA et bien plus.

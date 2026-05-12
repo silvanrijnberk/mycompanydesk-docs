@@ -1,3 +1,7 @@
+---
+title: Projecten
+---
+
 # Projecten
 
 Organiseer je werk in projecten om tijd, omzet en winstgevendheid per opdracht bij te houden.

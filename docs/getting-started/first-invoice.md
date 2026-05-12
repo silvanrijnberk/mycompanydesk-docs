@@ -1,3 +1,7 @@
+---
+title: Your First Invoice
+---
+
 # Your First Invoice
 
 This guide walks you through creating and sending your first invoice in MyCompanyDesk.

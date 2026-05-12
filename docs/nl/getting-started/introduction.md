@@ -1,3 +1,7 @@
+---
+title: Introductie
+---
+
 # Introductie
 
 MyCompanyDesk is een alles-in-een boekhoud- en bedrijfsmanagementplatform, ontworpen voor zzp'ers, kleine bedrijven en vastgoedbeheerders. Het helpt je bij het beheren van je volledige financiele workflow — van het maken van facturen en het bijhouden van uitgaven tot het doen van BTW-aangifte en het beheren van klantrelaties.

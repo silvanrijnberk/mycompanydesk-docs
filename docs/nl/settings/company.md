@@ -1,3 +1,7 @@
+---
+title: Bedrijfsinstellingen
+---
+
 # Bedrijfsinstellingen
 
 Configureer je bedrijfsinformatie, huisstijl, financiele standaardwaarden en ingeschakelde functies.

@@ -1,3 +1,7 @@
+---
+title: Invoices
+---
+
 # Invoices
 
 Invoices are at the core of MyCompanyDesk. Create professional invoices, send them to customers with payment links, and track payments through to completion.

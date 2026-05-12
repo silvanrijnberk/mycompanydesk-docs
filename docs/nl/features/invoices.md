@@ -1,3 +1,7 @@
+---
+title: Facturen
+---
+
 # Facturen
 
 Facturen vormen de kern van MyCompanyDesk. Maak professionele facturen, verstuur ze naar klanten met betaallinks en volg betalingen tot aan de afhandeling.

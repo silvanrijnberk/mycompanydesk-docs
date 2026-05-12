@@ -1,3 +1,7 @@
+---
+title: Introduction
+---
+
 # Introduction
 
 MyCompanyDesk est une plateforme tout-en-un de comptabilite et de gestion d'entreprise concue pour les freelances, les petites entreprises et les gestionnaires de biens locatifs. Elle vous aide a gerer l'ensemble de votre flux financier -- de la creation de factures et du suivi des depenses a la declaration de TVA et a la gestion des relations clients.

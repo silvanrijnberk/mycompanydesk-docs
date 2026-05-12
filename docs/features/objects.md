@@ -1,3 +1,7 @@
+---
+title: "Objects & Assets"
+---
+
 # Objects & Assets
 
 Track rental properties, vehicles, equipment, and other business assets with full lifecycle management.

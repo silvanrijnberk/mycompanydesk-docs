@@ -1,3 +1,7 @@
+---
+title: Security
+---
+
 # Security
 
 Protect your account with strong authentication and monitor access.

@@ -1,3 +1,7 @@
+---
+title: Profil
+---
+
 # Profil
 
 Verwalten Sie Ihre persönlichen Kontoeinstellungen, Präferenzen und Benachrichtigungen.

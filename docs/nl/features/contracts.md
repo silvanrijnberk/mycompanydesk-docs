@@ -1,3 +1,7 @@
+---
+title: Contracten
+---
+
 # Contracten
 
 Beheer terugkerende serviceovereenkomsten en huurcontracten met automatische facturatieschema's.

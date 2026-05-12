@@ -1,3 +1,7 @@
+---
+title: Devis
+---
+
 # Devis
 
 Envoyez des devis professionnels a vos clients potentiels et convertissez-les en factures une fois acceptes.

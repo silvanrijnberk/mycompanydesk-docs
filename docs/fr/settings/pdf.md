@@ -1,3 +1,7 @@
+---
+title: Personnalisation PDF
+---
+
 # Personnalisation PDF
 
 Personnalisez l'apparence de vos PDF de factures, devis et avoirs pour correspondre a votre marque.

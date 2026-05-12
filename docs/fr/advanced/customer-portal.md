@@ -1,3 +1,7 @@
+---
+title: Portail client
+---
+
 # Portail client
 
 Le portail client permet a vos clients de consulter et payer leurs factures en ligne via une interface securisee a votre image.

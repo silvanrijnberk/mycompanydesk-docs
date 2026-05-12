@@ -1,3 +1,7 @@
+---
+title: Clients
+---
+
 # Clients
 
 Gerez votre base de donnees clients complete. Chaque facture, devis et projet est lie a une fiche client.

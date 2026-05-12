@@ -1,3 +1,7 @@
+---
+title: Customers
+---
+
 # Customers
 
 Manage your complete customer database. Every invoice, quote, and project links back to a customer record.

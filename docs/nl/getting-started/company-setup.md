@@ -1,3 +1,7 @@
+---
+title: Je bedrijf instellen
+---
+
 # Je bedrijf instellen
 
 Voordat je facturen kunt versturen, moet je je bedrijfsinformatie configureren. Deze gegevens verschijnen op je facturen, offertes en andere documenten.

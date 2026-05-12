@@ -1,3 +1,7 @@
+---
+title: Recurring Expenses
+---
+
 # Recurring Expenses
 
 Automate tracking of regular business costs like rent, subscriptions, and utilities.

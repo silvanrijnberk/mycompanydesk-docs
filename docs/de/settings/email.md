@@ -1,3 +1,7 @@
+---
+title: E-Mail-Integration
+---
+
 # E-Mail-Integration
 
 Konfigurieren Sie, wie MyCompanyDesk E-Mails an Ihre Kunden sendet — von der Rechnungszustellung bis zu Zahlungserinnerungen.

@@ -1,3 +1,7 @@
+---
+title: Receipt Scanning
+---
+
 # Receipt Scanning
 
 Automatically extract expense data from receipt images and PDF invoices using AI-powered OCR.
