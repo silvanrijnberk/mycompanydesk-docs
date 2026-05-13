@@ -1,3 +1,7 @@
+---
+title: Objets et actifs
+---
+
 # Objets et actifs
 
 Suivez les biens locatifs, vehicules, equipements et autres actifs professionnels avec une gestion complete du cycle de vie.

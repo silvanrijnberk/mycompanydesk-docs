@@ -1,3 +1,7 @@
+---
+title: Kundenportal
+---
+
 # Kundenportal
 
 Das Kundenportal ermöglicht es Ihren Kunden, Rechnungen online über eine sichere, gebrandete Oberfläche einzusehen und zu bezahlen.

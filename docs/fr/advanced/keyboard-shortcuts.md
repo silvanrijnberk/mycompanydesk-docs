@@ -1,3 +1,7 @@
+---
+title: Raccourcis clavier
+---
+
 # Raccourcis clavier
 
 Naviguez plus rapidement dans MyCompanyDesk grace aux raccourcis clavier.

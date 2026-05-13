@@ -1,3 +1,7 @@
+---
+title: Contracts
+---
+
 # Contracts
 
 Manage recurring service agreements and rental contracts with automatic billing schedules.

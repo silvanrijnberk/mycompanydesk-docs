@@ -1,3 +1,7 @@
+---
+title: Angebote
+---
+
 # Angebote
 
 Versenden Sie professionelle Kostenvoranschläge an potenzielle Kunden und wandeln Sie diese bei Annahme in Rechnungen um.

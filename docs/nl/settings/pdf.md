@@ -1,3 +1,7 @@
+---
+title: PDF-aanpassing
+---
+
 # PDF-aanpassing
 
 Pas het uiterlijk van je factuur-, offerte- en creditnota-PDF's aan zodat ze passen bij je huisstijl.

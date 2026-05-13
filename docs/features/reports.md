@@ -1,3 +1,7 @@
+---
+title: Reports
+---
+
 # Reports
 
 Get insights into your business finances with eight built-in report views covering revenue, expenses, profit, VAT, and more.

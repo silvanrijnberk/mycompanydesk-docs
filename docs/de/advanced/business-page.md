@@ -1,3 +1,7 @@
+---
+title: Geschäftsseite
+---
+
 # Geschäftsseite
 
 Erstellen Sie ein öffentliches Profil für Ihr Unternehmen, das Kunden besuchen können, um mehr über Ihre Dienstleistungen zu erfahren und Angebote anzufragen.

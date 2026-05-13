@@ -1,3 +1,7 @@
+---
+title: Keyboard Shortcuts
+---
+
 # Keyboard Shortcuts
 
 Navigate MyCompanyDesk faster with keyboard shortcuts.

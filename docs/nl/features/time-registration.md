@@ -1,3 +1,7 @@
+---
+title: Tijdregistratie
+---
+
 # Tijdregistratie
 
 Registreer werkuren op projecten en klanten om declarabele tijd bij te houden en facturen te genereren vanuit tijdregistraties.

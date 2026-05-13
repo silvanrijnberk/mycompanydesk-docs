@@ -1,3 +1,7 @@
+---
+title: Contrats
+---
+
 # Contrats
 
 Gerez les accords de services recurrents et les contrats de location avec des calendriers de facturation automatiques.

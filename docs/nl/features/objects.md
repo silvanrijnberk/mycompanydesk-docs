@@ -1,3 +1,7 @@
+---
+title: "Objecten & Activa"
+---
+
 # Objecten & Activa
 
 Houd huurwoningen, voertuigen, apparatuur en andere bedrijfsactiva bij met volledig levenscyclusbeheer.

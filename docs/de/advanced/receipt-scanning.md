@@ -1,3 +1,7 @@
+---
+title: Belegscanner
+---
+
 # Belegscanner
 
 Extrahieren Sie automatisch Ausgabendaten aus Belegbildern und PDF-Rechnungen mit KI-gestützter OCR.

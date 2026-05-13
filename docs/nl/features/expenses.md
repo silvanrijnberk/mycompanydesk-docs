@@ -1,3 +1,7 @@
+---
+title: Uitgaven
+---
+
 # Uitgaven
 
 Houd al je zakelijke uitgaven bij, scan bonnen met AI en categoriseer kosten voor nauwkeurige boekhouding en BTW-aangifte.

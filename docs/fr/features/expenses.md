@@ -1,3 +1,7 @@
+---
+title: Depenses
+---
+
 # Depenses
 
 Suivez toutes vos depenses professionnelles, numerisez des recus avec l'IA et categorisez les couts pour une comptabilite precise et la declaration de TVA.

@@ -1,3 +1,7 @@
+---
+title: Einführung
+---
+
 # Einführung
 
 MyCompanyDesk ist eine All-in-One-Plattform für Buchhaltung und Geschäftsverwaltung, die für Freiberufler, Kleinunternehmen und Verwalter von Mietobjekten entwickelt wurde. Sie hilft Ihnen, Ihren gesamten Finanzworkflow zu verwalten — von der Rechnungserstellung und Ausgabenverfolgung bis zur USt.-Meldung und Kundenverwaltung.

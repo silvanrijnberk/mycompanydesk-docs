@@ -1,3 +1,7 @@
+---
+title: Sicherheit
+---
+
 # Sicherheit
 
 Schützen Sie Ihr Konto mit starker Authentifizierung und überwachen Sie den Zugang.

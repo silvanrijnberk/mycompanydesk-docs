@@ -1,3 +1,7 @@
+---
+title: Offertes
+---
+
 # Offertes
 
 Verstuur professionele offertes naar potentiele klanten en zet ze om naar facturen wanneer ze geaccepteerd zijn.

@@ -1,3 +1,7 @@
+---
+title: Dashboard
+---
+
 # Dashboard
 
 Het dashboard is je startpagina in MyCompanyDesk. Het geeft je in een oogopslag een overzicht van je bedrijfsfinancien, meldingen en snelle acties.

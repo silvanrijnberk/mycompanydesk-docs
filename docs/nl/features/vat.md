@@ -1,3 +1,7 @@
+---
+title: BTW-beheer
+---
+
 # BTW-beheer
 
 Volg, bereken en beheer je BTW-verplichtingen met periodevergrendeling en deadlineopvolging.

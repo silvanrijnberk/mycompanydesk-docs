@@ -1,3 +1,7 @@
+---
+title: "Page d'entreprise"
+---
+
 # Page d'entreprise
 
 Creez un profil public pour votre entreprise que les clients peuvent visiter pour decouvrir vos services et demander des devis.

@@ -1,3 +1,7 @@
+---
+title: Ihre erste Rechnung
+---
+
 # Ihre erste Rechnung
 
 Diese Anleitung führt Sie durch die Erstellung und den Versand Ihrer ersten Rechnung in MyCompanyDesk.

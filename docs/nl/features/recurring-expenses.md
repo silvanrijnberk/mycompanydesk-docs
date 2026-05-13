@@ -1,3 +1,7 @@
+---
+title: Terugkerende uitgaven
+---
+
 # Terugkerende uitgaven
 
 Automatiseer het bijhouden van regelmatige bedrijfskosten zoals huur, abonnementen en nutsvoorzieningen.

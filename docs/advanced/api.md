@@ -1,3 +1,7 @@
+---
+title: API Integration
+---
+
 # API Integration
 
 Access your MyCompanyDesk data programmatically through the REST API.

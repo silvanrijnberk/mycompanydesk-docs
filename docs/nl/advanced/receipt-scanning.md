@@ -1,3 +1,7 @@
+---
+title: Bonnen scannen
+---
+
 # Bonnen scannen
 
 Extraheer automatisch uitgavegegevens uit bonafbeeldingen en PDF-facturen met behulp van AI-gestuurde OCR.

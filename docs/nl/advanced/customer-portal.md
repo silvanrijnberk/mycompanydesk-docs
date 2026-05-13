@@ -1,3 +1,7 @@
+---
+title: Klantportaal
+---
+
 # Klantportaal
 
 Het klantportaal stelt je klanten in staat om facturen te bekijken en online te betalen via een beveiligde, huisstijl-conforme interface.

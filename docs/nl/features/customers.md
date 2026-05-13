@@ -1,3 +1,7 @@
+---
+title: Klanten
+---
+
 # Klanten
 
 Beheer je volledige klantendatabase. Elke factuur, offerte en elk project is gekoppeld aan een klantrecord.

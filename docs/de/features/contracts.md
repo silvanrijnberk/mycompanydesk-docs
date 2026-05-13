@@ -1,3 +1,7 @@
+---
+title: Verträge
+---
+
 # Verträge
 
 Verwalten Sie wiederkehrende Dienstleistungsvereinbarungen und Mietverträge mit automatischen Abrechnungsplänen.

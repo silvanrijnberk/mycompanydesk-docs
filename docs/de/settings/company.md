@@ -1,3 +1,7 @@
+---
+title: Unternehmenseinstellungen
+---
+
 # Unternehmenseinstellungen
 
 Konfigurieren Sie Ihre Geschäftsinformationen, Ihr Branding, finanzielle Standardeinstellungen und aktivierte Funktionen.

@@ -1,4 +1,5 @@
 ---
+title: Set Up Your Company
 last_verified: 2026-05-09
 ---
 

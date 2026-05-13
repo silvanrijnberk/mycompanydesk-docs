@@ -1,3 +1,7 @@
+---
+title: Votre premiere facture
+---
+
 # Votre premiere facture
 
 Ce guide vous accompagne dans la creation et l'envoi de votre premiere facture dans MyCompanyDesk.

@@ -1,3 +1,7 @@
+---
+title: Dashboard
+---
+
 # Dashboard
 
 Das Dashboard ist Ihre Startseite in MyCompanyDesk. Es bietet Ihnen einen Überblick über Ihre Geschäftsfinanzen, Warnungen und Schnellaktionen auf einen Blick.

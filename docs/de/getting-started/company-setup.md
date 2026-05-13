@@ -1,3 +1,7 @@
+---
+title: Unternehmen einrichten
+---
+
 # Unternehmen einrichten
 
 Bevor Sie Rechnungen versenden können, müssen Sie Ihre Unternehmensinformationen konfigurieren. Diese Daten erscheinen auf Ihren Rechnungen, Angeboten und anderen Dokumenten.

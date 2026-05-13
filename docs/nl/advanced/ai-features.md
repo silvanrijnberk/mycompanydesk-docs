@@ -1,3 +1,7 @@
+---
+title: AI-functies
+---
+
 # AI-functies
 
 MyCompanyDesk bevat AI-gestuurde functies om je sneller en slimmer te laten werken.

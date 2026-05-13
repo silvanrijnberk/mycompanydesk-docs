@@ -1,4 +1,5 @@
 ---
+title: Setup Wizard
 last_verified: 2026-05-09
 ---
 

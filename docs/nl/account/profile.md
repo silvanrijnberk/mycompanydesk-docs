@@ -1,3 +1,7 @@
+---
+title: Profiel
+---
+
 # Profiel
 
 Beheer je persoonlijke accountinstellingen, voorkeuren en meldingen.

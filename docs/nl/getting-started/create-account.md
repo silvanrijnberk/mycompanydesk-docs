@@ -1,3 +1,7 @@
+---
+title: Account aanmaken
+---
+
 # Account aanmaken
 
 Aan de slag gaan met MyCompanyDesk duurt maar een paar minuten.

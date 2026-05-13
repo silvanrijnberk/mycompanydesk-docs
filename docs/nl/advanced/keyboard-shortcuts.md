@@ -1,3 +1,7 @@
+---
+title: Sneltoetsen
+---
+
 # Sneltoetsen
 
 Navigeer sneller door MyCompanyDesk met sneltoetsen.

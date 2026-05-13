@@ -1,3 +1,7 @@
+---
+title: Recurring Invoices
+---
+
 # Recurring Invoices
 
 Automate your regular billing by setting up invoices that generate on a schedule.

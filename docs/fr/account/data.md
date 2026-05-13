@@ -1,3 +1,7 @@
+---
+title: Import et export de donnees
+---
+
 # Import et export de donnees
 
 Importez des donnees existantes dans MyCompanyDesk et exportez vos enregistrements pour sauvegarde ou utilisation dans d'autres outils.

@@ -1,3 +1,7 @@
+---
+title: Projekte
+---
+
 # Projekte
 
 Organisieren Sie Ihre Arbeit in Projekten, um Zeit, Umsatz und Rentabilität pro Auftrag zu verfolgen.

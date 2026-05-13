@@ -1,3 +1,7 @@
+---
+title: Customer Portal
+---
+
 # Customer Portal
 
 The customer portal lets your clients view and pay invoices online through a secure, branded interface.

@@ -1,3 +1,7 @@
+---
+title: Ausgaben
+---
+
 # Ausgaben
 
 Verfolgen Sie alle Ihre Geschäftsausgaben, scannen Sie Belege mit KI und kategorisieren Sie Kosten für eine genaue Buchführung und USt.-Meldung.

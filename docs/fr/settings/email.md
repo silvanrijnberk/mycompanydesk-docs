@@ -1,3 +1,7 @@
+---
+title: Integration e-mail
+---
+
 # Integration e-mail
 
 Configurez la maniere dont MyCompanyDesk envoie des e-mails a vos clients -- de la livraison des factures aux rappels de paiement.

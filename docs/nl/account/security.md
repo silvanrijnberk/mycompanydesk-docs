@@ -1,3 +1,7 @@
+---
+title: Beveiliging
+---
+
 # Beveiliging
 
 Bescherm je account met sterke authenticatie en monitor toegang.

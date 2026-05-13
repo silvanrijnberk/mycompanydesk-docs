@@ -1,3 +1,7 @@
+---
+title: Teambeheer
+---
+
 # Teambeheer
 
 Nodig teamleden uit, wijs rollen toe en bepaal wie toegang heeft tot wat in je werkruimte.

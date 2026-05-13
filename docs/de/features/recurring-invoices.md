@@ -1,3 +1,7 @@
+---
+title: Wiederkehrende Rechnungen
+---
+
 # Wiederkehrende Rechnungen
 
 Automatisieren Sie Ihre regelmäßige Abrechnung, indem Sie Rechnungen einrichten, die nach einem Zeitplan generiert werden.

@@ -1,3 +1,7 @@
+---
+title: Quotes
+---
+
 # Quotes
 
 Send professional quotations to potential customers and convert them to invoices when accepted.

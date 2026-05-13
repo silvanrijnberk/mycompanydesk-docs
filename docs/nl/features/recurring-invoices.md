@@ -1,3 +1,7 @@
+---
+title: Terugkerende facturen
+---
+
 # Terugkerende facturen
 
 Automatiseer je regelmatige facturatie door facturen in te stellen die volgens een schema worden gegenereerd.

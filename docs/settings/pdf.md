@@ -1,3 +1,7 @@
+---
+title: PDF Customization
+---
+
 # PDF Customization
 
 Customize the appearance of your invoice, quote, and credit note PDFs to match your brand.

@@ -1,3 +1,7 @@
+---
+title: Introduction
+---
+
 # Introduction
 
 MyCompanyDesk is an all-in-one accounting and business management platform designed for freelancers, small businesses, and rental property managers. It helps you manage your entire financial workflow — from creating invoices and tracking expenses to filing VAT and managing customer relationships.

@@ -1,3 +1,7 @@
+---
+title: "Facturering & Abonnementen"
+---
+
 # Facturering & Abonnementen
 
 Beheer je MyCompanyDesk-abonnement, bekijk je verbruik en upgrade je abonnement.

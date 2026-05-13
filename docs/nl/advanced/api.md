@@ -1,3 +1,7 @@
+---
+title: API-integratie
+---
+
 # API-integratie
 
 Krijg programmatisch toegang tot je MyCompanyDesk-gegevens via de REST API.

@@ -1,3 +1,7 @@
+---
+title: Projets
+---
+
 # Projets
 
 Organisez votre travail en projets pour suivre le temps, le chiffre d'affaires et la rentabilite par engagement.
