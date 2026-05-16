@@ -19,7 +19,17 @@ MyCompanyDesk biedt een Founding Members-programma voor de eerste 100 werkruimte
 
 ### Een plek claimen
 
-Als er nog plekken over zijn, toont de factureringspagina een Founding Member-claimkaart. Klik op **Plek claimen** om je plek vast te leggen. De upgrade gaat meteen in.
+Je kunt op twee manieren een Founding Member-plek claimen:
+
+**Via de factureringspagina.** Als er nog plekken over zijn, toont de factureringspagina een Founding Member-claimkaart. Klik op **Plek claimen** om je plek vast te leggen. De upgrade gaat meteen in.
+
+**Via de landingspagina.** De CTA op de landingspagina linkt naar het registratieformulier met een founding-member-intentie. Wanneer je via die flow een account aanmaakt:
+
+1. Het registratieformulier onthoudt je intentie in de lokale opslag.
+2. Na e-mailverificatie en inloggen claimt het systeem automatisch je plek op de achtergrond.
+3. Een bevestigingstoast laat zien of het claimen gelukt is. Zijn de plekken op voordat je het registratieproces afrondde, dan krijg je alsnog een Pro-proefperiode van 60 dagen.
+
+Eenmaal geclaimd is de claim definitief en houdt de werkruimte Pro gratis voor het leven. Als het automatisch claimen mislukt (plekken vol, IP al gebruikt door een andere werkruimte, of een netwerkfout), wordt de claim niet opnieuw geprobeerd. Je kunt dan nog steeds op de factureringspagina kijken en handmatig claimen als er nog plekken zijn.
 
 Founding Member-werkruimtes zijn in alle opzichten gewone Pro-klanten: dezelfde functies, dezelfde limieten. Het enige verschil is de abonnementsbron ("intern") en de badge in de facturering.
 

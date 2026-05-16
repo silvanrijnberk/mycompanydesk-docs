@@ -19,7 +19,17 @@ MyCompanyDesk propose un programme Founding Members pour les 100 premiers espace
 
 ### Reserver une place
 
-S'il reste des places disponibles, la page de facturation affiche une carte de reservation Founding Member. Cliquez sur **Reserver une place** pour la securiser. La mise a niveau prend effet immediatement.
+Il y a deux facons de reserver une place Founding Member :
+
+**Depuis la page de facturation.** S'il reste des places disponibles, la page de facturation affiche une carte de reservation Founding Member. Cliquez sur **Reserver une place** pour la securiser. La mise a niveau prend effet immediatement.
+
+**Depuis la landing page.** Le CTA de la landing page renvoie vers le formulaire d'inscription avec une intention founding-member. Lorsque vous vous inscrivez via ce parcours :
+
+1. Le formulaire d'inscription conserve votre intention dans le stockage local.
+2. Apres la verification de l'e-mail et la connexion, le systeme reserve automatiquement votre place en arriere-plan.
+3. Un toast de confirmation indique si la reservation a reussi. Si les places etaient deja parties avant que vous ne terminiez l'inscription, vous beneficiez tout de meme d'un essai Pro de 60 jours.
+
+Une fois reservee, la place est definitive et l'espace de travail conserve Pro gratuit a vie. Si la reservation automatique echoue (places epuisees, IP deja utilisee par un autre espace de travail ou erreur reseau), la reservation n'est pas retentee. Vous pouvez toujours consulter la page de facturation et reserver manuellement s'il reste des places.
 
 Les espaces de travail Founding Member sont des clients Pro comme les autres : memes fonctionnalites, memes limites. La seule difference est la source de l'abonnement ("interne") et le badge dans la section de facturation.
 
