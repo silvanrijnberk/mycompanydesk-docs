@@ -8,7 +8,7 @@ chatbot:
 ---
 So erstellst du einen Vertrag:
 1. Gehe zu Vertraege und oeffne „Neuer Vertrag"
-2. Waehle Objekt und Kunde aus
+2. Waehle bei Mietvertraegen das Objekt und den Kunden aus. Bei anderen Typen (Service, NDA, Projekt) ist nur ein Kunde erforderlich.
 3. Gib Vertragsname, Betrag, MwSt-Satz und Wiederholung ein
 4. Setze Startdatum und Datum der ersten Rechnung
 5. Fuege bei Bedarf Serviceangaben oder Auto-Senden hinzu und speichere

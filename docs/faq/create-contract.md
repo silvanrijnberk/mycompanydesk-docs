@@ -8,7 +8,7 @@ chatbot:
 ---
 To create a contract:
 1. Go to Contracts and open "New Contract"
-2. Select the property and customer
+2. For rental contracts, select the property, then choose the customer. For other contract types (service, NDA, project), only a customer is needed.
 3. Enter the contract name, amount, VAT rate, and recurrence
 4. Set the start date and first invoice date
 5. Add optional service details or auto-send settings if needed
