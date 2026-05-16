@@ -78,7 +78,7 @@ Elke contractregel op de objectdetailpagina toont nu een ondertekenstatusbadge n
 - **Verzonden** (geel): de ondertekenuitnodiging is verstuurd, nog geen handtekeningen
 - **Verlopen** of **Beeindigd** (rood): het ondertekenverzoek is niet langer geldig
 
-Volledig ondertekende contracten tonen een klein oogicoon waarmee je een inline preview van het ondertekende document opent. Zo kun je het afgeronde contract lezen zonder de propertypagina te verlaten.
+Volledig ondertekende contracten tonen een klein oogicoon waarmee je een inline preview van het ondertekende document opent. Zo kun je het afgeronde contract lezen zonder de objectdetailpagina te verlaten.
 
 Legacycontracten die zijn aangemaakt voordat de e-signing-feature werd toegevoegd, tonen geen ondertekenbadge. Het systeem detecteert legacycontracten op dezelfde manier als op de contractdetailpagina: een contract moet ondertekenpartijen, een template of ondertekencontent hebben om een badge te tonen.
 
