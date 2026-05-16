@@ -110,7 +110,7 @@ Wat de editor laat zien:
 - **Pagina's-tab** -- Pagina's aanmaken, hernoemen, verwijderen en filteren op status (live, concept, ingepland). Kies een sjabloon bij het maken van een nieuwe pagina.
 - **Stijl-tab** -- Ontwerptokens voor kleuren, lettertypes, schaal, beweging, knoppen, aangepaste CSS en head-snippets (analytics, lettertype-preconnects).
 - **Domein & SEO-tab** -- Eigen domeinbeheer. Zie de sectie eigen domeinen hierboven.
-- **Koppelingen-tab** -- Diensten van derden verbinden.
+- **Koppelingen-tab** -- Verbind betaalproviders (Mollie, Stripe Connect) met inline setup-kaarten, plus diensten van derden zoals Mailchimp, Plausible en Trustpilot. Dezelfde betaalkoppeling stuurt de betaalknoppen op facturen aan; zie [Geldinstellingen](/nl/workspace/financial/money/payments) voor de volledige configuratie.
 - **Navigatie-editor** -- Sleep en zet headerlinks op volgorde, met dropdown-groepen en externe links.
 - **Publiceerknop** -- Toont het aantal ongepubliceerde wijzigingen. Publiceert een snapshot met een klik.
 - **Responsieve preview** -- Schakel tussen desktop-, tablet- en mobiele weergave in de editor.

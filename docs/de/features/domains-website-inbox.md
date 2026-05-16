@@ -110,7 +110,7 @@ Was der Editor anzeigt:
 - **Seiten-Tab** -- Seiten erstellen, umbenennen, löschen und nach Status filtern (live, Entwurf, geplant). Wählen Sie eine Vorlage beim Erstellen einer neuen Seite.
 - **Stil-Tab** -- Design-Tokens für Farben, Schriften, Skalierung, Bewegung, Schaltflächen, benutzerdefiniertes CSS und Head-Snippets (Analytics, Schrift-Preconnects).
 - **Domain & SEO-Tab** -- Verwaltung eigener Domains. Siehe den Abschnitt eigene Domains oben.
-- **Integrationen-Tab** -- Verbinden Sie Drittanbieterdienste.
+- **Integrationen-Tab** -- Verbinden Sie Zahlungsanbieter (Mollie, Stripe Connect) mit Inline-Setup-Karten sowie Drittanbieterdienste wie Mailchimp, Plausible und Trustpilot. Dieselbe Zahlungsverbindung steuert die Bezahl-Buttons auf Rechnungen; siehe [Geld-Einstellungen](/de/workspace/financial/money/payments) fur die vollstandige Konfiguration.
 - **Navigations-Editor** -- Ordnen Sie Header-Links per Drag-and-Drop, mit Dropdown-Gruppen und externen Links.
 - **Veröffentlichen-Schaltfläche** -- Zeigt die Anzahl unveröffentlichter Änderungen an. Veröffentlicht einen Snapshot mit einem Klick.
 - **Responsive Vorschau** -- Wechseln Sie zwischen Desktop-, Tablet- und Mobilansicht im Editor.
