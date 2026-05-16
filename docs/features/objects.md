@@ -47,9 +47,19 @@ The detail page shows:
 
 - Asset information and type
 - Current status
+- **WOZ history** (for Properties) — annual WOZ values used in the Box 3 tax calculation
 - Linked contracts
 - Rental history
 - Associated invoices
+
+### WOZ history (Property objects)
+
+For objects with type **Property**, the detail page includes a WOZ history section. WOZ values (Waardering Onroerende Zaken) are the municipality-assessed property values used in Dutch Box 3 tax calculations.
+
+- **View** annual WOZ values per year.
+- **Add** new values by entering the year and the WOZ value assigned by the municipality.
+- Box 3 uses the WOZ value with peildatum 1 January — enter the value that applies to the start of the tax year.
+- If no values are entered yet, the section shows an empty state prompting you to add the first one.
 
 ## Linking objects to contracts and invoices
 

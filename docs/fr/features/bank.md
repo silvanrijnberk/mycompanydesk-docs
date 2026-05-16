@@ -35,6 +35,20 @@ La conversion s'effectue en deux passages : d'abord après l'application des rè
 
 Seules les transactions sortantes (montant inférieur à zéro) sont converties en dépenses. Les paiements entrants ne sont pas transformés en dépenses. Si votre espace de travail n'a pas encore de catégories de dépenses configurées, cette étape est sautée et les transactions attendent un examen manuel.
 
+### Examiner les dépenses importées automatiquement
+
+Lorsque des dépenses provisoires sont créées à partir de transactions bancaires, elles atterrissent d'abord dans la boîte de réception d'examen. Allez dans **Espace de travail** → **Finances** → **Comptes bancaires** et ouvrez l'onglet **Examiner**. Vous verrez une liste de dépenses provisoires, chacune affichant le fournisseur, le montant, la suggestion de catégorie et la source de cette suggestion (règle fournisseur, catégorie par défaut, suggestion IA ou flux bancaire).
+
+Pour chaque dépense, vous pouvez :
+
+- **Confirmer** — La dépense est directement comptabilisée. Elle apparaît dans votre liste de dépenses actives et alimente les rapports et récapitulatifs de TVA.
+- **Modifier** — Ouvrez le formulaire de dépense pour ajuster la catégorie, le traitement de TVA, la description ou le montant avant de comptabiliser.
+- **Rejeter** — Le brouillon est abandonné. La transaction retourne dans la file d'attente non rapprochée du flux bancaire.
+
+L'étape d'examen garantit que vous gardez le contrôle : aucune dépense n'entre dans votre comptabilité sans que quelqu'un ne l'ait vérifiée. Les dépenses confirmées affichent brièvement une notification avec le nom du fournisseur ; les dépenses rejetées montrent le rejet. Si une action échoue, un message apparaît et vous pouvez réessayer.
+
+Chaque fiche de dépense affiche une étiquette de source pour que vous sachiez pourquoi MyCompanyDesk a fait cette suggestion particulière. Les sources possibles sont `vendor_rule`, `workspace_default`, `ai_flag` et `feed` — le même pipeline de catégorisation décrit ci-dessus.
+
 ### Échecs de synchronisation
 
 Si une synchronisation échoue (par exemple parce que l'autorisation bancaire a expiré ou que la connexion a été interrompue), MyCompanyDesk vous envoie un e-mail et une notification in-app avec le nom de la connexion et un lien pour résoudre le problème. Vous pouvez également activer les notifications push pour les erreurs de synchronisation dans les préférences de notification.

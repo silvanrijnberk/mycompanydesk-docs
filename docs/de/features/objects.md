@@ -47,9 +47,19 @@ Die Detailseite zeigt:
 
 - Vermögenswertinformationen und Typ
 - Aktueller Status
+- **WOZ-Verlauf** (bei Immobilien) — jährliche WOZ-Werte, die für die Box-3-Berechnung verwendet werden
 - Verknüpfte Verträge
 - Mietverlauf
 - Zugehörige Rechnungen
+
+### WOZ-Verlauf (Immobilienobjekte)
+
+Bei Objekten des Typs **Immobilie** enthält die Detailseite einen Abschnitt zum WOZ-Verlauf. WOZ-Werte (Waardering Onroerende Zaken) sind die von der Gemeinde festgesetzten Immobilienwerte, die in der niederländischen Box-3-Steuerberechnung verwendet werden.
+
+- **Sehen** Sie jährliche WOZ-Werte pro Jahr ein.
+- **Fügen Sie** neue Werte hinzu, indem Sie das Jahr und den von der Gemeinde festgesetzten WOZ-Wert eingeben.
+- Box 3 verwendet den WOZ-Wert mit Stichtag 1. Januar — geben Sie den Wert ein, der zu Beginn des Steuerjahres gilt.
+- Wurden noch keine Werte eingetragen, zeigt der Abschnitt einen leeren Zustand mit der Aufforderung, den ersten hinzuzufügen.
 
 ## Objekte mit Verträgen und Rechnungen verknüpfen
 

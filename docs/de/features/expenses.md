@@ -41,9 +41,7 @@ Verwenden Sie die Schnellerfassungs-Schublade für schnelle Ausgabenerfassung:
 
 ### Aus Banktransaktionen
 
-Wenn Ihr [Bankfeed](/de/features/bank) verbunden ist, werden kategorisierte ausgehende Transaktionen automatisch in Ausgabenentwürfe umgewandelt. Jede Ausgabe erhält die Gegenpartei als Lieferant, den absoluten Betrag als Brutto, den Standard-USt.-Satz und die Behandlung der Kategorie sowie das Buchungsdatum der Transaktion. Die Ausgabe erscheint in Ihrer Ausgabenliste mit einem Hinweis, dass sie aus dem Bankfeed importiert wurde.
-
-Sie können bankimportierte Ausgaben wie jede andere prüfen und bearbeiten: ändern Sie die Kategorie, passen Sie die USt.-Behandlung an, fügen Sie einen Beleg hinzu oder verknüpfen Sie sie mit einem Projekt. Die Banktransaktion wird auf der Bankseite als zugeordnet markiert, sodass sie nicht doppelt gezählt wird. Wenn Sie eine bankimportierte Ausgabe löschen, kehrt die Transaktion in die nicht zugeordnete Warteschlange im Bankfeed zurück.
+Wenn Ihr [Bankfeed](/de/features/bank) verbunden ist, werden kategorisierte ausgehende Transaktionen automatisch in Ausgabenentwürfe umgewandelt. Jede Ausgabe erhält die Gegenpartei als Lieferant, den absoluten Betrag als Brutto, den Standard-USt.-Satz und die Behandlung der Kategorie sowie das Buchungsdatum der Transaktion. Ausgabenentwürfe erscheinen zuerst im Prüf-Posteingang des Bankfeeds, wo Sie sie bestätigen, bearbeiten oder ablehnen können, bevor sie in Ihre Buchhaltung gelangen. Siehe [automatisch importierte Ausgaben prüfen](/de/features/bank#automatisch-importierte-ausgaben-prufen) für den vollständigen Ablauf.
 
 ### Belegscanner
 

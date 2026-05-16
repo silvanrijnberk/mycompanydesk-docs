@@ -47,9 +47,19 @@ La page de detail affiche :
 
 - Informations sur l'actif et son type
 - Statut actuel
+- **Historique WOZ** (pour les Proprietes) — valeurs WOZ annuelles utilisees par le calcul Box 3
 - Contrats lies
 - Historique de location
 - Factures associees
+
+### Historique WOZ (objets de type Propriete)
+
+Pour les objets de type **Propriete**, la page de detail inclut une section d'historique WOZ. Les valeurs WOZ (Waardering Onroerende Zaken) sont les valeurs immobilieres fixees par la municipalite et utilisees dans le calcul de l'impot neerlandais Box 3.
+
+- **Consultez** les valeurs WOZ annuelles par annee.
+- **Ajoutez** de nouvelles valeurs en saisissant l'annee et la valeur WOZ attribuee par la municipalite.
+- Box 3 utilise la valeur WOZ avec date de reference au 1er janvier — saisissez la valeur applicable au debut de cette annee fiscale.
+- Si aucune valeur n'est encore saisie, la section affiche un etat vide vous invitant a ajouter la premiere.
 
 ## Lier les objets aux contrats et factures
 
