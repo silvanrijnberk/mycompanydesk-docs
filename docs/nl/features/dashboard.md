@@ -39,6 +39,7 @@ Kritieke zaken die je aandacht vereisen:
 - Aankomende BTW-deadlines
 - Aflopende contracten
 - Waarschuwingen bij lage cashflow
+- Te beoordelen uitgaven uit de bankimport
 
 ### Belangrijke statistieken
 
