@@ -33,6 +33,7 @@ La page de detail du client affiche :
 - **Coordonnees** -- Toutes les informations enregistrees
 - **Historique des factures** -- Chaque facture envoyee a ce client
 - **Historique des depenses** -- Depenses liees a ce client
+- **Contrats** -- Contrats actifs et inactifs, avec badges de statut de signature et une icone d'apercu PDF lorsque la signature electronique est activee
 - **Projets** -- Projets actifs et termines
 - **Statistiques** -- Chiffre d'affaires total, solde en cours, delai de paiement moyen
 

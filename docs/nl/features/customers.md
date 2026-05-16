@@ -33,6 +33,7 @@ De klantdetailpagina toont:
 - **Contactgegevens** — Alle opgeslagen gegevens
 - **Factuurgeschiedenis** — Elke factuur die naar deze klant is gestuurd
 - **Uitgavengeschiedenis** — Uitgaven gekoppeld aan deze klant
+- **Contracten** - Actieve en inactieve contracten, met ondertekeningsstatus-badges en een pdf-voorbeeldicoon wanneer e-signing is ingeschakeld
 - **Projecten** — Actieve en voltooide projecten
 - **Statistieken** — Totale omzet, openstaand saldo, gemiddelde betaaltijd
 
