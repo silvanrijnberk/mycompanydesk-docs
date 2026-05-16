@@ -35,6 +35,20 @@ Die Ausgabenerstellung erfolgt in zwei Durchläufen: zuerst nach Anwendung von L
 
 Nur ausgehende Transaktionen (Betrag unter null) werden in Ausgaben umgewandelt. Eingehende Zahlungen werden nicht als Ausgabe erstellt. Wenn Ihr Workspace noch keine Ausgabenkategorien konfiguriert hat, wird dieser Schritt übersprungen und Transaktionen bleiben zur manuellen Prüfung.
 
+### Automatisch importierte Ausgaben prüfen
+
+Wenn aus Banktransaktionen Entwurfsausgaben erstellt wurden, landen diese zunächst im Prüf-Posteingang. Gehen Sie zu **Arbeitsbereich** → **Finanzen** → **Bankkonten** und öffnen Sie den Tab **Prüfen**. Sie sehen eine Liste mit Entwurfsausgaben, jeweils mit Lieferant, Betrag, Kategorievorschlag und der Quelle dieses Vorschlags (Lieferantenregel, Standardkategorie, KI-Vorschlag oder Bankfeed).
+
+Für jede Ausgabe können Sie:
+
+- **Bestätigen**: Die Ausgabe wird direkt gebucht. Sie erscheint in Ihrer aktiven Ausgabenliste und fließt in Berichte und USt.-Übersichten ein.
+- **Bearbeiten**: Öffnen Sie das Ausgabenformular, um Kategorie, USt.-Behandlung, Beschreibung oder Betrag vor dem Buchen anzupassen.
+- **Ablehnen**: Der Entwurf wird verworfen. Die Transaktion kehrt in die nicht-zugeordnete Warteschlange im Bankfeed zurück.
+
+Der Prüfschritt stellt sicher, dass Sie die Kontrolle behalten: Keine Ausgabe gelangt in Ihre Buchhaltung, ohne dass jemand sie geprüft hat. Bestätigte Ausgaben zeigen kurz eine Meldung mit dem Lieferantennamen; abgelehnte zeigen die Ablehnung. Schlägt eine Aktion fehl, erscheint eine Meldung und Sie können es erneut versuchen.
+
+Jede Ausgabenkarte zeigt ein Quell-Label, damit Sie wissen, warum MyCompanyDesk diesen bestimmten Vorschlag gemacht hat. Die möglichen Quellen sind `vendor_rule`, `workspace_default`, `ai_flag` und `feed`, dieselbe Kategorisierungspipeline wie oben beschrieben.
+
 ### Synchronisationsfehler
 
 Schlägt eine Synchronisation fehl (zum Beispiel weil die Bank-Autorisierung abgelaufen oder die Verbindung unterbrochen ist), sendet MyCompanyDesk Ihnen eine E-Mail und eine In-App-Benachrichtigung mit dem Namen der Verbindung und einem Link zur Behebung. Sie können Push-Benachrichtigungen für Sync-Fehler auch unter den Benachrichtigungseinstellungen aktivieren.

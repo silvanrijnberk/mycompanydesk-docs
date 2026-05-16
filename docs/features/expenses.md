@@ -41,9 +41,7 @@ When you're creating a new expense and you've typed a supplier name, the **Gener
 
 ### From bank transactions
 
-When your [bank feed](/features/bank) is connected, categorised outgoing transactions are automatically turned into draft expenses. Each one carries the transaction's counterpart as supplier, the absolute amount as gross, the category's default VAT rate and treatment, and the transaction's booking date. The expense lands in your expense list with a note indicating it was imported from the bank feed.
-
-You can review and edit bank-imported expenses like any other: change the category, adjust the VAT treatment, attach a receipt, or link it to a project. The bank transaction is marked as matched on the bank side so it does not duplicate. If you delete a bank-imported expense, the transaction returns to the unmatched queue in the bank feed.
+When your [bank feed](/features/bank) is connected, categorised outgoing transactions are automatically turned into draft expenses. Each one carries the transaction's counterpart as supplier, the absolute amount as gross, the category's default VAT rate and treatment, and the transaction's booking date. Draft expenses first appear in the bank-feed review inbox, where you can confirm, edit, or reject them before they land in your books. See [reviewing auto-imported expenses](/features/bank#reviewing-auto-imported-expenses) for the full workflow.
 
 ### Receipt scanner
 

@@ -47,9 +47,19 @@ De detailpagina toont:
 
 - Objectinformatie en type
 - Huidige status
+- **WOZ-geschiedenis** (bij Vastgoed) — jaarlijkse WOZ-waarden die de Box 3-berekening gebruikt
 - Gekoppelde contracten
 - Verhuurgeschiedenis
 - Bijbehorende facturen
+
+### WOZ-geschiedenis (Vastgoed-objecten)
+
+Bij objecten van het type **Vastgoed** bevat de detailpagina een WOZ-geschiedenissectie. WOZ-waarden (Waardering Onroerende Zaken) zijn de door de gemeente vastgestelde woningwaarden die worden gebruikt in de Nederlandse Box 3-belastingberekening.
+
+- **Bekijk** jaarlijkse WOZ-waarden per jaar.
+- **Voeg** nieuwe waarden toe door het jaar en de WOZ-waarde van de gemeente in te vullen.
+- Box 3 hanteert de WOZ-waarde met peildatum 1 januari. Vul de waarde in die geldt voor de start van dat belastingjaar.
+- Als er nog geen waarden zijn ingevoerd, toont de sectie een lege staat met de vraag om de eerste toe te voegen.
 
 ## Objecten koppelen aan contracten en facturen
 
