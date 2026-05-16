@@ -90,6 +90,34 @@ Les contrats crees avant l'introduction de la signature electronique n'affichent
 Les contrats existants affichent un tiret dans la colonne Signature et apparaissent sous le filtre « Sans signature electronique ».
 :::
 
+## Versions de modele
+
+Les modeles de contrat prennent en charge le versionnage pour suivre les modifications dans le temps. Chaque version est un instantane fige du contenu du modele a un moment donne, ce qui vous permet de faire evoluer vos modeles sans affecter les contrats deja crees.
+
+### Publier une version
+
+1. Allez dans **Contrats > Modeles**
+2. Trouvez votre modele et cliquez sur le bouton **Versions**
+3. Dans la fenetre des versions, saisissez :
+   - **Etiquette** -- Un identifiant court pour la version (par ex. "v2"). Si vous laissez le champ vide, le systeme attribue automatiquement une etiquette sequentielle.
+   - **Note de modification** -- Une breve description de ce qui a change dans cette version
+4. Cliquez sur **Publier**
+
+Le brouillon actuel est capture comme nouvelle version. Les contrats existants restent rattaches a la version avec laquelle ils ont ete crees, la publication ne reecrit donc jamais le texte historique des contrats.
+
+### Consulter l'historique des versions
+
+L'historique des versions de chaque modele affiche :
+
+- L'etiquette de version (par ex. "v1", "v2")
+- La note de modification et la date de publication
+- Un badge **Actuelle** sur la derniere version publiee
+- Un badge **Archivee** sur toutes les versions precedentes
+
+### Comment les versions affectent les contrats
+
+Lorsqu'un contrat est cree a partir d'un modele, il est fige sur la version qui etait actuelle a ce moment-la. Si vous publiez ulterieurement une nouvelle version du modele, les contrats existants continuent de s'afficher a partir de leur version figee. Vous pouvez donc reviser les modeles en toute securite sans modifier les contrats en cours.
+
 ## Conseils
 
 - Utilisez les contrats conjointement avec les [factures recurrentes](/fr/features/recurring-invoices) pour differents scenarios de facturation
