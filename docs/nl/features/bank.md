@@ -41,13 +41,13 @@ Wanneer er conceptuitgaven zijn aangemaakt vanuit banktransacties, komen die eer
 
 Voor elke uitgave kun je:
 
-- **Bevestigen** — De uitgave wordt direct geboekt. Hij verschijnt in je actieve uitgavenlijst en telt mee in rapportages en BTW-overzichten.
-- **Bewerken** — Open het uitgaveformulier om de categorie, BTW-behandeling, omschrijving of het bedrag aan te passen voordat je boekt.
-- **Afwijzen** — Het concept verdwijnt. De transactie komt terug in de niet-gekoppelde wachtrij in de bankfeed voor handmatige afhandeling.
+- **Bevestigen**: De uitgave wordt direct geboekt. Hij verschijnt in je actieve uitgavenlijst en telt mee in rapportages en BTW-overzichten.
+- **Bewerken**: Open het uitgaveformulier om de categorie, BTW-behandeling, omschrijving of het bedrag aan te passen voordat je boekt.
+- **Afwijzen**: Het concept verdwijnt. De transactie komt terug in de niet-gekoppelde wachtrij in de bankfeed voor handmatige afhandeling.
 
 De beoordelingsstap zorgt dat jij de controle houdt: geen uitgave komt in je boekhouding zonder dat iemand hem heeft gecontroleerd. Bevestigde uitgaven tonen kort een melding met de leveranciersnaam; afgewezen uitgaven tonen de afwijzing. Als een actie mislukt, verschijnt er een melding en kun je het opnieuw proberen.
 
-Elke uitgavekaart toont een bronlabel zodat je weet waarom MyCompanyDesk die specifieke suggestie heeft gedaan. De mogelijke bronnen zijn `vendor_rule`, `workspace_default`, `ai_flag` en `feed` — dezelfde categoriseringspijplijn als hierboven beschreven.
+Elke uitgavekaart toont een bronlabel zodat je weet waarom MyCompanyDesk die specifieke suggestie heeft gedaan. De mogelijke bronnen zijn `vendor_rule`, `workspace_default`, `ai_flag` en `feed`, dezelfde categoriseringspijplijn als hierboven beschreven.
 
 ### Synchronisatiefouten
 

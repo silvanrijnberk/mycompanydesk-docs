@@ -58,7 +58,7 @@ Bei Objekten des Typs **Immobilie** enthält die Detailseite einen Abschnitt zum
 
 - **Sehen** Sie jährliche WOZ-Werte pro Jahr ein.
 - **Fügen Sie** neue Werte hinzu, indem Sie das Jahr und den von der Gemeinde festgesetzten WOZ-Wert eingeben.
-- Box 3 verwendet den WOZ-Wert mit Stichtag 1. Januar — geben Sie den Wert ein, der zu Beginn des Steuerjahres gilt.
+- Box 3 verwendet den WOZ-Wert mit Stichtag 1. Januar. Geben Sie den Wert ein, der zu Beginn des Steuerjahres gilt.
 - Wurden noch keine Werte eingetragen, zeigt der Abschnitt einen leeren Zustand mit der Aufforderung, den ersten hinzuzufügen.
 
 ## Objekte mit Verträgen und Rechnungen verknüpfen

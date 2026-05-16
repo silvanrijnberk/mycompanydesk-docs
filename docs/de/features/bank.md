@@ -41,13 +41,13 @@ Wenn aus Banktransaktionen Entwurfsausgaben erstellt wurden, landen diese zunäc
 
 Für jede Ausgabe können Sie:
 
-- **Bestätigen** — Die Ausgabe wird direkt gebucht. Sie erscheint in Ihrer aktiven Ausgabenliste und fließt in Berichte und USt.-Übersichten ein.
-- **Bearbeiten** — Öffnen Sie das Ausgabenformular, um Kategorie, USt.-Behandlung, Beschreibung oder Betrag vor dem Buchen anzupassen.
-- **Ablehnen** — Der Entwurf wird verworfen. Die Transaktion kehrt in die nicht-zugeordnete Warteschlange im Bankfeed zurück.
+- **Bestätigen**: Die Ausgabe wird direkt gebucht. Sie erscheint in Ihrer aktiven Ausgabenliste und fließt in Berichte und USt.-Übersichten ein.
+- **Bearbeiten**: Öffnen Sie das Ausgabenformular, um Kategorie, USt.-Behandlung, Beschreibung oder Betrag vor dem Buchen anzupassen.
+- **Ablehnen**: Der Entwurf wird verworfen. Die Transaktion kehrt in die nicht-zugeordnete Warteschlange im Bankfeed zurück.
 
 Der Prüfschritt stellt sicher, dass Sie die Kontrolle behalten: Keine Ausgabe gelangt in Ihre Buchhaltung, ohne dass jemand sie geprüft hat. Bestätigte Ausgaben zeigen kurz eine Meldung mit dem Lieferantennamen; abgelehnte zeigen die Ablehnung. Schlägt eine Aktion fehl, erscheint eine Meldung und Sie können es erneut versuchen.
 
-Jede Ausgabenkarte zeigt ein Quell-Label, damit Sie wissen, warum MyCompanyDesk diesen bestimmten Vorschlag gemacht hat. Die möglichen Quellen sind `vendor_rule`, `workspace_default`, `ai_flag` und `feed` — dieselbe Kategorisierungspipeline wie oben beschrieben.
+Jede Ausgabenkarte zeigt ein Quell-Label, damit Sie wissen, warum MyCompanyDesk diesen bestimmten Vorschlag gemacht hat. Die möglichen Quellen sind `vendor_rule`, `workspace_default`, `ai_flag` und `feed`, dieselbe Kategorisierungspipeline wie oben beschrieben.
 
 ### Synchronisationsfehler
 

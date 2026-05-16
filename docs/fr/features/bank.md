@@ -41,13 +41,13 @@ Lorsque des dépenses provisoires sont créées à partir de transactions bancai
 
 Pour chaque dépense, vous pouvez :
 
-- **Confirmer** — La dépense est directement comptabilisée. Elle apparaît dans votre liste de dépenses actives et alimente les rapports et récapitulatifs de TVA.
-- **Modifier** — Ouvrez le formulaire de dépense pour ajuster la catégorie, le traitement de TVA, la description ou le montant avant de comptabiliser.
-- **Rejeter** — Le brouillon est abandonné. La transaction retourne dans la file d'attente non rapprochée du flux bancaire.
+- **Confirmer**: La dépense est directement comptabilisée. Elle apparaît dans votre liste de dépenses actives et alimente les rapports et récapitulatifs de TVA.
+- **Modifier**: Ouvrez le formulaire de dépense pour ajuster la catégorie, le traitement de TVA, la description ou le montant avant de comptabiliser.
+- **Rejeter**: Le brouillon est abandonné. La transaction retourne dans la file d'attente non rapprochée du flux bancaire.
 
 L'étape d'examen garantit que vous gardez le contrôle : aucune dépense n'entre dans votre comptabilité sans que quelqu'un ne l'ait vérifiée. Les dépenses confirmées affichent brièvement une notification avec le nom du fournisseur ; les dépenses rejetées montrent le rejet. Si une action échoue, un message apparaît et vous pouvez réessayer.
 
-Chaque fiche de dépense affiche une étiquette de source pour que vous sachiez pourquoi MyCompanyDesk a fait cette suggestion particulière. Les sources possibles sont `vendor_rule`, `workspace_default`, `ai_flag` et `feed` — le même pipeline de catégorisation décrit ci-dessus.
+Chaque fiche de dépense affiche une étiquette de source pour que vous sachiez pourquoi MyCompanyDesk a fait cette suggestion particulière. Les sources possibles sont `vendor_rule`, `workspace_default`, `ai_flag` et `feed`, le même pipeline de catégorisation décrit ci-dessus.
 
 ### Échecs de synchronisation
 

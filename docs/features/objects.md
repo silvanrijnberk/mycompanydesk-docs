@@ -58,7 +58,7 @@ For objects with type **Property**, the detail page includes a WOZ history secti
 
 - **View** annual WOZ values per year.
 - **Add** new values by entering the year and the WOZ value assigned by the municipality.
-- Box 3 uses the WOZ value with peildatum 1 January — enter the value that applies to the start of the tax year.
+- Box 3 uses the WOZ value with peildatum 1 January. Enter the value that applies to the start of the tax year.
 - If no values are entered yet, the section shows an empty state prompting you to add the first one.
 
 ## Linking objects to contracts and invoices

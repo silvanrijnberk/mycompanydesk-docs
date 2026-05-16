@@ -58,7 +58,7 @@ Pour les objets de type **Propriete**, la page de detail inclut une section d'hi
 
 - **Consultez** les valeurs WOZ annuelles par annee.
 - **Ajoutez** de nouvelles valeurs en saisissant l'annee et la valeur WOZ attribuee par la municipalite.
-- Box 3 utilise la valeur WOZ avec date de reference au 1er janvier — saisissez la valeur applicable au debut de cette annee fiscale.
+- Box 3 utilise la valeur WOZ avec date de reference au 1er janvier. Saisissez la valeur applicable au debut de cette annee fiscale.
 - Si aucune valeur n'est encore saisie, la section affiche un etat vide vous invitant a ajouter la premiere.
 
 ## Lier les objets aux contrats et factures

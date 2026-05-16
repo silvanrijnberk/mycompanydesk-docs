@@ -42,13 +42,13 @@ When draft expenses are created from bank transactions, they first land in the r
 
 For each expense you can:
 
-- **Confirm** — Book the expense as-is. It moves to your active expense list and flows into reports and VAT summaries.
-- **Edit** — Open the expense form to tweak the category, VAT treatment, description, or amount before booking.
-- **Reject** — Discard the draft. The transaction returns to the unmatched queue in the bank feed for manual handling.
+- **Confirm**: Book the expense as-is. It moves to your active expense list and flows into reports and VAT summaries.
+- **Edit**: Open the expense form to tweak the category, VAT treatment, description, or amount before booking.
+- **Reject**: Discard the draft. The transaction returns to the unmatched queue in the bank feed for manual handling.
 
 The review step is designed so you stay in control: no expense lands in your books without someone checking it first. Confirmed expenses show a brief toast confirming the supplier name; rejected ones show the rejection. If an action fails, a retry message appears and you can try again.
 
-Each expense card shows a source tag so you know why MyCompanyDesk made that particular suggestion. The possible sources are `vendor_rule`, `workspace_default`, `ai_flag`, and `feed` — the same categorisation pipeline described above.
+Each expense card shows a source tag so you know why MyCompanyDesk made that particular suggestion. The possible sources are `vendor_rule`, `workspace_default`, `ai_flag`, and `feed`, the same categorisation pipeline described above.
 
 ### Sync failures
 
