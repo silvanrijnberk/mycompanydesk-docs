@@ -12,7 +12,7 @@ The site builder replaces the old single-page business profile. It gives you a f
 
 - **Multi-page support**: Create as many pages as you need, each with its own path and sections.
 - **Section blocks**: Add hero, text, gallery, services, team, testimonials, contact form, and custom HTML sections to any page.
-- **Design tokens**: Set brand colors, fonts, spacing, border radius, motion style, and custom CSS. Changes apply across the whole site.
+- **Design tokens**: Set brand colors, fonts, spacing, border radius, motion style, custom CSS, and a site favicon. Changes apply across the whole site.
 - **Navigation editor**: Drag-and-drop reorder of header links, with dropdown groups and external links.
 - **Publish snapshots**: Work in draft, preview your changes, then publish. Unpublished changes are tracked in the top bar.
 - **Responsive preview**: Toggle between desktop, tablet, and mobile viewports while editing.
@@ -79,6 +79,7 @@ In the **Style** tab, you control the look and feel of your entire site:
 - **Motion**: Enable reduced motion or choose a motion style (none, subtle, playful).
 - **Buttons**: Customize button border radius, padding, and hover effects.
 - **Custom CSS**: Write your own CSS that gets injected into the site. Useful for fine-tuning or overriding defaults.
+- **Favicon**: Upload a favicon for your site. It is shown in browser tabs and bookmarks. If not set, the site falls back to your light logo, then your business profile picture.
 - **Head snippets**: Add analytics scripts (Plausible, Umami, Matomo) or font preconnects via the snippet picker.
 
 Changes in the Style tab are saved automatically on edit and apply to all pages.
@@ -99,6 +100,7 @@ The navigation editor lets you arrange your site's header links:
 - Drag pages to reorder the top-level navigation.
 - Create dropdown groups to nest pages under a parent label.
 - Add external links that point outside your site.
+- The logo in the header is clickable and always links back to the home page.
 - The home page is always first and locked in position.
 
 ## Public URL

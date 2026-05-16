@@ -12,7 +12,7 @@ Der Website-Builder ersetzt das alte einseitige Unternehmensprofil. Sie erhalten
 
 - **Mehrere Seiten**: Erstellen Sie so viele Seiten, wie Sie benötigen, jede mit eigenem Pfad und eigenen Abschnitten.
 - **Abschnittsblöcke**: Fügen Sie Hero-, Text-, Galerie-, Dienstleistungs-, Team-, Testimonial-, Kontaktformular- und benutzerdefinierte HTML-Abschnitte zu jeder Seite hinzu.
-- **Design-Tokens**: Legen Sie Markenfarben, Schriften, Abstände, Eckenradius, Bewegungsstil und benutzerdefiniertes CSS fest. Änderungen gelten für die gesamte Site.
+- **Design-Tokens**: Legen Sie Markenfarben, Schriften, Abstände, Eckenradius, Bewegungsstil, benutzerdefiniertes CSS und ein Site-Favicon fest. Änderungen gelten für die gesamte Site.
 - **Navigations-Editor**: Ordnen Sie Header-Links per Drag-and-Drop, mit Dropdown-Gruppen und externen Links.
 - **Veröffentlichungs-Snapshots**: Arbeiten Sie im Entwurf, sehen Sie sich Ihre Änderungen in der Vorschau an und veröffentlichen Sie dann. Unveröffentlichte Änderungen werden in der oberen Leiste angezeigt.
 - **Responsive Vorschau**: Wechseln Sie während der Bearbeitung zwischen Desktop-, Tablet- und Mobilansicht.
@@ -79,6 +79,7 @@ Im **Stil**-Tab steuern Sie das Erscheinungsbild Ihrer gesamten Site:
 - **Bewegung**: Aktivieren Sie reduzierte Bewegung oder wählen Sie einen Bewegungsstil (keine, dezent, verspielt).
 - **Schaltflächen**: Passen Sie Schaltflächenradius, Innenabstand und Hover-Effekte an.
 - **Benutzerdefiniertes CSS**: Schreiben Sie Ihr eigenes CSS, das in die Site eingebunden wird. Nützlich für Feinanpassungen oder zum Überschreiben von Standardwerten.
+- **Favicon**: Laden Sie ein Favicon für Ihre Site hoch. Es erscheint in Browser-Tabs und Lesezeichen. Wenn Sie kein Favicon festlegen, verwendet die Site Ihr helles Logo, dann Ihr Geschäftsprofilbild.
 - **Head-Snippets**: Fügen Sie Analytics-Skripte (Plausible, Umami, Matomo) oder Schrift-Preconnects über die Snippet-Auswahl hinzu.
 
 Änderungen im Stil-Tab werden automatisch gespeichert und gelten für alle Seiten.
@@ -99,6 +100,7 @@ Der Navigations-Editor ermöglicht es Ihnen, die Header-Links Ihrer Site zu ordn
 - Ziehen Sie Seiten, um die Navigation neu anzuordnen.
 - Erstellen Sie Dropdown-Gruppen, um Seiten unter einem übergeordneten Label zu verschachteln.
 - Fügen Sie externe Links hinzu, die aus Ihrer Site herausführen.
+- Das Logo im Header ist anklickbar und führt immer zurück zur Startseite.
 - Die Startseite steht immer an erster Stelle und ist gesperrt.
 
 ## Öffentliche URL

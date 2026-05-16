@@ -12,7 +12,7 @@ De sitebouwer vervangt het oude bedrijfsprofiel van één pagina. Je krijgt een 
 
 - **Meerdere pagina's**: Maak zoveel pagina's als je nodig hebt, elk met een eigen pad en secties.
 - **Sectieblokken**: Voeg hero-, tekst-, galerij-, diensten-, team-, testimonial-, contactformulier- en aangepaste HTML-secties toe aan elke pagina.
-- **Ontwerptokens**: Stel merkkleuren, lettertypes, witruimte, hoekradius, bewegingsstijl en aangepaste CSS in. Wijzigingen gelden voor de hele site.
+- **Ontwerptokens**: Stel merkkleuren, lettertypes, witruimte, hoekradius, bewegingsstijl, aangepaste CSS en een site-favicon in. Wijzigingen gelden voor de hele site.
 - **Navigatie-editor**: Sleep en zet headerlinks op volgorde, met dropdown-groepen en externe links.
 - **Publicatiesnapshots**: Werk in concept, bekijk je wijzigingen en publiceer daarna. Ongepubliceerde wijzigingen zie je in de bovenbalk.
 - **Responsieve preview**: Schakel tussen desktop-, tablet- en mobiele weergave tijdens het bewerken.
@@ -79,6 +79,7 @@ In de **Stijl**-tab bepaal je de look-and-feel van je hele site:
 - **Beweging**: Schakel verminderde beweging in of kies een bewegingsstijl (geen, subtiel, speels).
 - **Knoppen**: Pas knopradius, padding en hover-effecten aan.
 - **Aangepaste CSS**: Schrijf je eigen CSS die in de site wordt geïnjecteerd. Handig voor fijnafstemming of het overschrijven van standaardwaarden.
+- **Favicon**: Upload een favicon voor je site. Deze verschijnt in browsertabs en bladwijzers. Als je geen favicon instelt, gebruikt de site je lichte logo, en daarna je bedrijfsprofielfoto.
 - **Head-snippets**: Voeg analytics-scripts toe (Plausible, Umami, Matomo) of lettertype-preconnects via de snippetkiezer.
 
 Wijzigingen in de Stijl-tab worden automatisch opgeslagen bij bewerken en gelden voor alle pagina's.
@@ -99,6 +100,7 @@ De navigatie-editor laat je de headerlinks van je site indelen:
 - Sleep pagina's om de navigatie op volgorde te zetten.
 - Maak dropdown-groepen om pagina's onder een bovenliggend label te nesten.
 - Voeg externe links toe die buiten je site verwijzen.
+- Het logo in de header is klikbaar en linkt altijd terug naar de homepage.
 - De homepage staat altijd vooraan en is vergrendeld.
 
 ## Openbare URL
