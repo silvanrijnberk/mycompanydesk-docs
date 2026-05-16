@@ -66,9 +66,26 @@ Die Vertragsliste zeigt zusammenfassende Kennzahlen:
 - **Archivieren** — Ins Archiv verschieben
 - **Wiederherstellen** — Archivierte Verträge zurückholen
 
+## Signieren
+
+Verträge unterstützen die elektronische Signatur. Sie können Parteien über das Vertragsformular hinzufügen; jede Partei erhält einen Signierlink per E-Mail.
+
+Sobald ein Vertrag signiert wurde, zeigt die Vertragsdetailseite eine Signierkarte mit:
+
+- Dem Status jeder Partei (eingeladen, angesehen, signiert oder abgelaufen)
+- Eine **Ansehen**-Schaltfläche, die eine Inline-Vorschau des signierten Dokuments öffnet
+- Eine Download-Schaltfläche zum Speichern des PDFs
+
+Die Vorschauseite enthält eine Werkzeugleiste mit Druck- und Download-Aktionen und zeigt den signierten Vertrag direkt im Browser an.
+
+::: info Bestandsverträge
+Verträge, die vor der Einführung der elektronischen Signatur erstellt wurden, zeigen keine Signierkarte auf der Detailseite an. Das System erkennt Bestandsverträge, indem es prüft, ob der Vertrag Signierparteien, eine Vorlage oder Signierinhalte besitzt. Nur Verträge, die nach der Einführung des E-Signings erstellt oder aktualisiert wurden, zeigen die Signierkarte an.
+:::
+
 ## Tipps
 
 - Verwenden Sie Verträge zusammen mit [wiederkehrenden Rechnungen](/de/features/recurring-invoices) für verschiedene Abrechnungsszenarien
 - Verknüpfen Sie Verträge mit Objekten für eine vollständige Mietverwaltung
 - Setzen Sie Enddaten, um vor Vertragsablauf benachrichtigt zu werden
 - Verwenden Sie den Vertragsfilter, um aktive und inaktive Verträge auf einen Blick zu sehen
+- Fügen Sie Signierparteien beim Erstellen eines Vertrags hinzu, um die elektronische Signatur zu aktivieren

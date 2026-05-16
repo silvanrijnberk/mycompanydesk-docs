@@ -66,9 +66,26 @@ La page de liste des contrats affiche des indicateurs de synthese :
 - **Archiver** -- Deplacez vers les archives
 - **Restaurer** -- Recuperez les contrats archives
 
+## Signature electronique
+
+Les contrats prennent en charge la signature electronique. Vous pouvez ajouter des parties via le formulaire de contrat, et chaque partie recoit un lien de signature par e-mail.
+
+Lorsqu'un contrat est signe, la page de detail du contrat affiche une carte de signature avec :
+
+- Le statut de chaque partie (invitee, consultee, signee ou expiree)
+- Un bouton **Voir** qui ouvre un apercu en ligne du document signe
+- Un bouton de telechargement pour enregistrer le PDF
+
+La page d'apercu comprend une barre d'outils avec des actions d'impression et de telechargement, et affiche le contrat signe directement dans le navigateur.
+
+::: info Contrats existants
+Les contrats crees avant l'introduction de la signature electronique n'affichent pas de carte de signature sur la page de detail. Le systeme detecte les contrats existants en verifiant si le contrat comporte des parties signataires, un modele ou un contenu de signature. Seuls les contrats crees ou mis a jour apres le deploiement de la signature electronique incluent la carte de signature.
+:::
+
 ## Conseils
 
 - Utilisez les contrats conjointement avec les [factures recurrentes](/fr/features/recurring-invoices) pour differents scenarios de facturation
 - Liez les contrats aux objets pour une gestion locative complete
 - Definissez des dates de fin pour etre averti avant l'expiration des contrats
 - Utilisez le filtre des contrats pour voir les actifs vs. les inactifs en un coup d'oeil
+- Ajoutez des parties signataires lors de la creation d'un contrat pour activer la signature electronique

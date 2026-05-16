@@ -66,9 +66,26 @@ De contractenlijstpagina toont samenvattende statistieken:
 - **Archiveren** — Verplaats naar archief
 - **Herstellen** — Haal gearchiveerde contracten terug
 
+## Ondertekenen
+
+Contracten ondersteunen elektronisch ondertekenen. Je kunt partijen toevoegen via het contractformulier, en elke partij ontvangt een ondertekenlink per e-mail.
+
+Wanneer een contract is ondertekend, toont de contractdetailpagina een ondertekenkaart met:
+
+- De status van elke partij (uitgenodigd, bekeken, getekend of verlopen)
+- Een **Bekijk**-knop die een inline voorbeeld van het ondertekende document opent
+- Een downloadknop om de PDF op te slaan
+
+De voorbeeldpagina bevat een werkbalk met print- en downloadacties, en toont het ondertekende contract direct in de browser.
+
+::: info Oude contracten
+Contracten die zijn aangemaakt voordat de ondertekenfunctie werd toegevoegd, tonen geen ondertekenkaart op de detailpagina. Het systeem herkent oude contracten door te controleren of het contract ondertekenpartijen, een sjabloon of ondertekeninhoud heeft. Alleen contracten die na de introductie van elektronisch ondertekenen zijn aangemaakt of bijgewerkt, tonen de ondertekenkaart.
+:::
+
 ## Tips
 
 - Gebruik contracten samen met [terugkerende facturen](/nl/features/recurring-invoices) voor verschillende facturatiescenario's
 - Koppel contracten aan objecten voor volledig verhuurbeheer
 - Stel einddatums in om een melding te ontvangen voordat contracten aflopen
 - Gebruik het contractenfilter om actief vs. inactief in een oogopslag te zien
+- Voeg ondertekenpartijen toe bij het aanmaken van een contract om elektronisch ondertekenen in te schakelen
