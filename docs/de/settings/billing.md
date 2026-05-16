@@ -19,7 +19,17 @@ MyCompanyDesk bietet ein Founding-Members-Programm fur die ersten 100 Arbeitsber
 
 ### Einen Platz claimen
 
-Wenn noch Platze verfugbar sind, zeigt die Abrechnungsseite eine Founding-Member-Claimkarte. Klicken Sie auf **Platz claimen**, um Ihren Platz zu sichern. Das Upgrade wird sofort wirksam.
+Es gibt zwei Wege, einen Founding-Member-Platz zu beanspruchen:
+
+**Uber die Abrechnungsseite.** Wenn noch Platze verfugbar sind, zeigt die Abrechnungsseite eine Founding-Member-Claimkarte. Klicken Sie auf **Platz claimen**, um Ihren Platz zu sichern. Das Upgrade wird sofort wirksam.
+
+**Uber die Landing-Page.** Der CTA auf der Landing-Page verlinkt auf das Registrierungsformular mit einer Founding-Member-Absicht. Wenn Sie sich uber diesen Weg registrieren:
+
+1. Das Registrierungsformular speichert Ihre Absicht im lokalen Speicher.
+2. Nach der E-Mail-Verifizierung und dem Login beansprucht das System Ihren Platz automatisch im Hintergrund.
+3. Eine Bestatigungs-Toast zeigt, ob das Claimen erfolgreich war. Waren die Platze bereits weg, bevor Sie die Registrierung abgeschlossen haben, erhalten Sie dennoch eine 60-tagige Pro-Testphase.
+
+Einmal geclaimt, ist der Claim endgultig und der Arbeitsbereich behalt Pro lebenslang kostenlos. Schlagt das automatische Claimen fehl (Platze voll, IP bereits von einem anderen Arbeitsbereich genutzt oder ein Netzwerkfehler), wird der Claim nicht erneut versucht. Sie konnen weiterhin auf der Abrechnungsseite nachsehen und manuell claimen, falls noch Platze verfugbar sind.
 
 Founding-Member-Arbeitsbereiche sind in jeder Hinsicht ganz normale Pro-Kunden: gleiche Funktionen, gleiche Limits. Der einzige Unterschied ist die Abonnementquelle ("intern") und das Badge im Abrechnungsbereich.
 

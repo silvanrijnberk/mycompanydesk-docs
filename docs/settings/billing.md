@@ -26,7 +26,17 @@ MyCompanyDesk offers a Founding Members program for the first 100 workspaces tha
 
 ### Claiming a spot
 
-If spots remain, the billing page shows a Founding Member claim card. Click **Claim spot** to reserve your spot. The upgrade takes effect immediately.
+There are two ways to claim a Founding Member spot:
+
+**From the billing page.** If spots remain, the billing page shows a Founding Member claim card. Click **Claim spot** to reserve your spot. The upgrade takes effect immediately.
+
+**From the landing page.** The landing page CTA links to the registration form with a founding-member intent. When you sign up through that flow:
+
+1. The signup form remembers your intent in local storage.
+2. After email verification and login, the system auto-claims your spot in the background.
+3. A confirmation toast tells you whether the claim succeeded. If spots ran out before you completed signup, you still get a 60-day Pro trial.
+
+Once claimed, the claim is permanent and the workspace keeps Pro free for life. If the auto-claim fails (spots full, IP already used by another workspace, or a network error), the claim does not retry. You can still check the billing page and claim manually if spots remain.
 
 Founding Member workspaces are regular Pro customers in every respect: same features, same limits. The only difference is the subscription source ("internal") and the badge in billing.
 
