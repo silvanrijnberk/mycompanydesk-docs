@@ -110,7 +110,7 @@ What the editor surfaces:
 - **Pages tab** — Create, rename, delete, and filter pages by status (live, draft, scheduled). Pick a template when creating a new page.
 - **Style tab** — Design tokens for colors, fonts, scale, motion, buttons, custom CSS, and head snippets (analytics, font preconnects).
 - **Domain & SEO tab** — Custom domain management. See the custom domains section above.
-- **Integrations tab** — Connect third-party services.
+- **Integrations tab**: Connect payment processors (Mollie, Stripe Connect) with inline setup cards, plus third-party services like Mailchimp, Plausible and Trustpilot. The same payment connection powers pay buttons on invoices; see [Money settings](/workspace/financial/money/payments) for the full configuration.
 - **Navigation editor** — Drag-and-drop reorder of header links, with dropdown groups and external links.
 - **Publish button** — Shows unpublished change count. Pushes a snapshot live with one click.
 - **Responsive preview** — Toggle desktop, tablet, and mobile viewports in the editor.

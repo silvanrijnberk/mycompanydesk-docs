@@ -110,7 +110,7 @@ Ce que l'editeur affiche :
 - **Onglet Pages** -- Créer, renommer, supprimer et filtrer les pages par statut (en ligne, brouillon, planifie). Choisir un modele lors de la creation d'une nouvelle page.
 - **Onglet Style** -- Tokens de design pour les couleurs, les polices, l'echelle, le mouvement, les boutons, le CSS personnalise et les snippets d'en-tête (analytique, preconnexions de polices).
 - **Onglet Domaine et SEO** -- Gestion des domaines personnalises. Voir la section domaines personnalises ci-dessus.
-- **Onglet Integrations** -- Connecter des services tiers.
+- **Onglet Integrations** -- Connectez des prestataires de paiement (Mollie, Stripe Connect) avec des fiches de configuration integrees, ainsi que des services tiers comme Mailchimp, Plausible et Trustpilot. La meme connexion de paiement alimente les boutons de paiement sur les factures ; voir [Parametres financiers](/fr/workspace/financial/money/payments) pour la configuration complete.
 - **Editeur de navigation** -- Reorganiser les liens d'en-tête par glisser-deposer, avec des groupes deroulants et des liens externes.
 - **Bouton Publier** -- Affiche le nombre de modifications non publiees. Publie un snapshot en un clic.
 - **Apercu responsive** -- Basculer entre les vues desktop, tablette et mobile dans l'editeur.
