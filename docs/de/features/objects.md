@@ -52,6 +52,14 @@ Die Detailseite zeigt:
 - Mietverlauf
 - Zugehörige Rechnungen
 
+### Vertragszusammenfassung
+
+Oberhalb der Vertragsliste gibt eine Zusammenfassungszeile einen schnellen Überblick über den Vertragszustand des Objekts:
+
+- **Verträge gesamt** — mit diesem Objekt verknüpft
+- **Signierte Verträge** — wie viele vollständig unterzeichnet sind
+- **Monatlich aktiv** — kombinierter monatlicher Wert aller aktiven Verträge, normalisiert aus Verträgen mit unterschiedlicher Frequenz (wöchentlich, vierteljährlich, jährlich)
+
 ### WOZ-Verlauf (Immobilienobjekte)
 
 Bei Objekten des Typs **Immobilie** enthält die Detailseite einen Abschnitt zum WOZ-Verlauf. WOZ-Werte (Waardering Onroerende Zaken) sind die von der Gemeinde festgesetzten Immobilienwerte, die in der niederländischen Box-3-Steuerberechnung verwendet werden.
@@ -60,6 +68,19 @@ Bei Objekten des Typs **Immobilie** enthält die Detailseite einen Abschnitt zum
 - **Fügen Sie** neue Werte hinzu, indem Sie das Jahr und den von der Gemeinde festgesetzten WOZ-Wert eingeben.
 - Box 3 verwendet den WOZ-Wert mit Stichtag 1. Januar. Geben Sie den Wert ein, der zu Beginn des Steuerjahres gilt.
 - Wurden noch keine Werte eingetragen, zeigt der Abschnitt einen leeren Zustand mit der Aufforderung, den ersten hinzuzufügen.
+
+### Signierstatus der Verträge
+
+Jede Vertragszeile auf der Objektdetailseite zeigt nun eine Signierstatus-Badge neben der Aktiv/Pausiert-Badge. Die Farbgebung folgt der gleichen Zuordnung wie auf der Vertragsdetailseite:
+
+- **Signiert** (grün) — alle Parteien haben unterzeichnet
+- **Teilweise signiert** (blau) — einige Parteien haben unterzeichnet, andere noch nicht
+- **Gesendet** (gelb) — die Signiereinladung wurde versendet, noch keine Unterschriften
+- **Abgelaufen** oder **Beendet** (rot) — die Signieranfrage ist nicht mehr gültig
+
+Vollständig signierte Verträge zeigen ein kleines Augensymbol, das eine Inline-Vorschau des unterschriebenen Dokuments öffnet. So können Sie den abgeschlossenen Vertrag lesen, ohne die Objektseite zu verlassen.
+
+Altverträge, die vor der Einführung der E-Signing-Funktion angelegt wurden, zeigen keine Signier-Badge. Das System erkennt Altverträge auf dieselbe Weise wie auf der Vertragsdetailseite: Ein Vertrag benötigt Signierparteien, eine Vorlage oder Signierinhalte, damit eine Badge angezeigt wird.
 
 ## Objekte mit Verträgen und Rechnungen verknüpfen
 

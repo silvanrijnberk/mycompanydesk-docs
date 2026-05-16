@@ -52,6 +52,14 @@ De detailpagina toont:
 - Verhuurgeschiedenis
 - Bijbehorende facturen
 
+### Contractoverzicht
+
+Boven de contractenlijst geeft een samenvattingsbalk je in een oogopslag inzicht in de contractuele staat van het object:
+
+- **Totaal aantal contracten** gekoppeld aan dit object
+- **Getekende contracten** — hoeveel er volledig zijn ondertekend
+- **Maandelijks actief totaal** — de gecombineerde maandwaarde van alle actieve contracten, genormaliseerd uit contracten met verschillende frequenties (wekelijks, per kwartaal, jaarlijks)
+
 ### WOZ-geschiedenis (Vastgoed-objecten)
 
 Bij objecten van het type **Vastgoed** bevat de detailpagina een WOZ-geschiedenissectie. WOZ-waarden (Waardering Onroerende Zaken) zijn de door de gemeente vastgestelde woningwaarden die worden gebruikt in de Nederlandse Box 3-belastingberekening.
@@ -60,6 +68,19 @@ Bij objecten van het type **Vastgoed** bevat de detailpagina een WOZ-geschiedeni
 - **Voeg** nieuwe waarden toe door het jaar en de WOZ-waarde van de gemeente in te vullen.
 - Box 3 hanteert de WOZ-waarde met peildatum 1 januari. Vul de waarde in die geldt voor de start van dat belastingjaar.
 - Als er nog geen waarden zijn ingevoerd, toont de sectie een lege staat met de vraag om de eerste toe te voegen.
+
+### Ondertekenstatus van contracten
+
+Elke contractregel op de objectdetailpagina toont nu een ondertekenstatusbadge naast de actief/gepauzeerd-badge. De kleur volgt dezelfde indeling als op de contractdetailpagina:
+
+- **Getekend** (groen) — alle partijen hebben ondertekend
+- **Deels getekend** (blauw) — sommige partijen hebben getekend, anderen nog niet
+- **Verzonden** (geel) — de ondertekenuitnodiging is verstuurd, nog geen handtekeningen
+- **Verlopen** of **Beeindigd** (rood) — het ondertekenverzoek is niet langer geldig
+
+Volledig ondertekende contracten tonen een klein oogicoon waarmee je een inline preview van het ondertekende document opent. Zo kun je het afgeronde contract lezen zonder de propertypagina te verlaten.
+
+Legacycontracten die zijn aangemaakt voordat de e-signing-feature werd toegevoegd, tonen geen ondertekenbadge. Het systeem detecteert legacycontracten op dezelfde manier als op de contractdetailpagina: een contract moet ondertekenpartijen, een template of ondertekencontent hebben om een badge te tonen.
 
 ## Objecten koppelen aan contracten en facturen
 
