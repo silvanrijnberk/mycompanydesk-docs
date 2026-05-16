@@ -8,7 +8,7 @@ chatbot:
 ---
 Om een contract aan te maken:
 1. Ga naar Contracten en open "Nieuw contract"
-2. Selecteer het object en de klant
+2. Selecteer bij een huurcontract het object en de klant. Bij andere typen (service, NDA, project) is alleen een klant nodig.
 3. Vul de contractnaam, het bedrag, het BTW-tarief en de herhaling in
 4. Stel de startdatum en datum van de eerste factuur in
 5. Voeg zo nodig servicegegevens of automatisch verzenden toe en sla op
