@@ -30,7 +30,7 @@ Het portaal toont een overzichtelijke, huisstijl-conforme weergave van de factuu
 
 ### Betaling
 
-Klanten kunnen direct via het portaal betalen. Wanneer de betaling is bevestigd, wordt de factuurstatus in je dashboard automatisch bijgewerkt naar **Betaald**.
+Klanten kunnen direct via het portaal betalen. Als je Mollie of Stripe hebt gekoppeld, verschijnen er betaalknoppen op de factuurweergave zodat je klant met één klik kan betalen. Wanneer de betaling is bevestigd, wordt de factuurstatus in je dashboard automatisch bijgewerkt naar **Betaald**.
 
 ### Huisstijl
 
