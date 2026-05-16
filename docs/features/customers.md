@@ -33,7 +33,7 @@ The customer detail page shows:
 - **Contact information** — All stored details
 - **Invoice history** — Every invoice sent to this customer
 - **Expense history** — Expenses linked to this customer
-- **Contracts** — Active and inactive contracts, with signing status badges and a PDF preview icon when e-signing is enabled
+- **Contracts** - Active and inactive contracts, with signing status badges and a PDF preview icon when e-signing is enabled
 - **Projects** — Active and completed projects
 - **Statistics** — Total revenue, outstanding balance, average payment time
 
