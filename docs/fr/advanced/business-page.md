@@ -1,69 +1,114 @@
 ---
-title: "Page d'entreprise"
+title: Constructeur de site
 ---
 
-# Page d'entreprise
+# Constructeur de site
 
-Creez un profil public pour votre entreprise que les clients peuvent visiter pour decouvrir vos services et demander des devis.
+Construisez votre site web professionnel avec un editeur par glisser-deposer. Creez plusieurs pages, composez-les avec des sections et des blocs, personnalisez les couleurs et les polices, puis publiez quand vous etes pret.
 
 ## Vue d'ensemble
 
-Votre page d'entreprise est une page web publique qui presente :
+Le constructeur de site remplace l'ancien profil d'entreprise a page unique. Vous obtenez un editeur de site complet avec :
 
-- Les informations de votre entreprise
-- Les services que vous proposez
-- Les coordonnees de contact
-- Les liens vers les reseaux sociaux
-- Un formulaire de demande de devis
+- **Pages multiples**: Creez autant de pages que necessaire, chacune avec son propre chemin et ses propres sections.
+- **Blocs de section**: Ajoutez des sections hero, texte, galerie, services, equipe, temoignages, formulaire de contact et HTML personnalise a chaque page.
+- **Tokens de design**: Definissez les couleurs de marque, les polices, les espacements, les coins arrondis, le style de mouvement et le CSS personnalise. Les modifications s'appliquent a l'ensemble du site.
+- **Editeur de navigation**: Reorganisez les liens d'en-tete par glisser-deposer, avec des groupes deroulants et des liens externes.
+- **Snapshots de publication**: Travaillez en brouillon, previsualisez vos modifications, puis publiez. Les modifications non publiees sont affichees dans la barre superieure.
+- **Apercu responsive**: Basculez entre les vues desktop, tablette et mobile pendant l'edition.
 
-## Configurer votre page d'entreprise
+Le constructeur de site se trouve sous **Entreprise > Votre site web** (`/website`).
 
-1. Allez dans les parametres **Entreprise**
-2. Remplissez la section **profil d'entreprise** :
-   - **Description** -- Un bref apercu de votre activite
-   - **Services** -- Listez les services que vous proposez
-   - **Site web** -- L'URL du site web de votre entreprise
-   - **Reseaux sociaux** -- Liens vers vos profils sociaux
-3. Votre page d'entreprise est automatiquement disponible a une URL unique
+## Onglets
 
-## URL de la page d'entreprise
+Le constructeur de site dispose de cinq onglets :
 
-Votre page est accessible a l'adresse :
+- **Editeur**: Composez des pages en ajoutant et en organisant des sections. Cliquez sur une section pour modifier son contenu, sa mise en page, son style ou son animation. Faites glisser les sections pour les reordonner, les dupliquer ou les supprimer.
+- **Pages**: Gelez vos pages : creez-en de nouvelles a partir de modeles, definissez les chemins et la visibilite, et voyez quelles pages sont en ligne, en brouillon ou planifiees. Cliquez sur une page pour l'ouvrir dans l'editeur. La page d'accueil verrouillee ne peut pas etre supprimee.
+- **Style**: Personnalisez vos tokens de design a l'echelle du site : couleurs (marque, accent, papier, encre), polices (titres, corps, mono de la bibliotheque de polices), echelle (rayon, densite, largeur maximale, espacement des sections), mouvement, styles de boutons et CSS personnalise. Vous pouvez egalement ajouter des snippets d'en-tete pour l'analytique (Plausible, Umami, Matomo) ou les preconnexions de polices.
+- **Domaine et SEO**: Configurez votre domaine personnalise et vos parametres SEO. Consultez [Domaines, site web et boite de reception](/fr/features/domains-website-inbox) pour la gestion complete des domaines.
+- **Integrations**: Connectez des services tiers a votre site web.
 
-```
-https://app.mycompanydesk.com/portal/{votre-slug-entreprise}
-```
+## Creer des pages
 
-Partagez ce lien sur votre site web, vos reseaux sociaux ou vos cartes de visite.
+1. Allez dans l'onglet **Pages**.
+2. Cliquez sur **Nouvelle page**.
+3. Saisissez un titre et un chemin (par ex. `/a-propos`).
+4. Choisissez un modele ou commencez avec une page vierge.
+5. La page s'ouvre dans l'editeur, ou vous pouvez ajouter des sections et la construire.
+
+Chaque page recoit un chemin unique. La page d'accueil (`/`) est creee par defaut et ne peut pas etre supprimee.
+
+## Construire des pages avec des sections
+
+Dans l'onglet **Editeur** :
+
+- Cliquez sur **Ajouter une section** pour voir les types de blocs disponibles (hero, texte, galerie, services, equipe, temoignages, formulaire de contact, HTML personnalise, etc.).
+- Selectionnez un type de bloc pour l'inserer sur la page.
+- Cliquez sur une section pour ouvrir le panneau d'inspection, ou vous pouvez modifier son contenu, sa mise en page, son style et son animation.
+- Faites glisser les sections vers le haut ou le bas pour les reordonner. Utilisez les actions dupliquer et supprimer sur chaque section.
+
+Certaines sections ont des variantes systeme uniquement disponibles sur la page d'accueil verrouillee.
+
+## Personnaliser le style de votre site
+
+Dans l'onglet **Style**, vous controlez l'apparence de l'ensemble de votre site :
+
+- **Couleurs**: Choisissez les couleurs de marque, d'accent, de papier, d'encre, de surface et attenuees. La palette est appliquee via des proprietes CSS personnalisees.
+- **Typographie**: Choisissez les polices de titre, de corps et mono dans la bibliotheque integree (Geist, Inter, DM Sans, DM Serif Display, Fraunces, Instrument Serif, Geist Mono).
+- **Echelle**: Definissez le rayon des coins, la densite (compact, aere, genereux), la largeur maximale du contenu et l'espacement vertical des sections.
+- **Mouvement**: Activez le mouvement reduit ou choisissez un style de mouvement (aucun, subtil, ludique).
+- **Boutons**: Personnalisez le rayon, le remplissage et les effets de survol des boutons.
+- **CSS personnalise**: Ecrivez votre propre CSS qui sera injecte dans le site. Utile pour les ajustements fins ou pour remplacer les valeurs par defaut.
+- **Snippets d'en-tete**: Ajoutez des scripts d'analytique (Plausible, Umami, Matomo) ou des preconnexions de polices via le selecteur de snippets.
+
+Les modifications dans l'onglet Style sont enregistrees automatiquement et s'appliquent a toutes les pages.
+
+## Publier
+
+La barre superieure indique le nombre de modifications non publiees. Lorsque vous etes pret :
+
+1. Cliquez sur **Publier** dans la barre superieure.
+2. Votre site est publie sur l'URL publique (votre domaine personnalise, le sous-domaine de l'espace de travail ou la route portail de secours).
+
+Les modifications non publiees sont suivies par page et par token. Le bouton Publier est desactive lorsqu'il n'y a rien a publier.
+
+## Navigation
+
+L'editeur de navigation vous permet d'organiser les liens d'en-tete de votre site :
+
+- Faites glisser les pages pour reordonner la navigation.
+- Creez des groupes deroulants pour imbriquer des pages sous un libelle parent.
+- Ajoutez des liens externes qui pointent hors de votre site.
+- La page d'accueil est toujours en premiere position et verrouillee.
+
+## URL publique
+
+Votre site web est servi a l'URL la plus prioritaire disponible :
+
+1. Votre domaine personnalise (par ex. `https://acme.fr`) lorsqu'il est verifie et active
+2. Votre sous-domaine d'espace de travail (par ex. `https://acme.mycompanydesk.com`)
+3. La route portail de secours (`/portal/{slug}`)
+
+Consultez [Domaines, site web et boite de reception](/fr/features/domains-website-inbox) pour la configuration et la verification du domaine.
 
 ## Formulaire de demande de devis
 
-Les visiteurs de votre page d'entreprise peuvent soumettre une demande de devis :
+Les visiteurs peuvent toujours soumettre des demandes de devis via la section formulaire de contact :
 
-1. Ils remplissent leur **nom**, **e-mail** et la **description du service**
-2. La demande est soumise
-3. Vous recevez une notification
-4. La demande apparait dans **Devis > Demandes**
+1. Ils remplissent leur nom, leur e-mail et leur message.
+2. La demande est soumise.
+3. Vous recevez une notification.
+4. La demande apparait dans **Devis > Demandes**.
 
-### Limitation de debit
-
-Pour prevenir le spam, les demandes de devis sont limitees a 1 par 15 minutes par adresse IP.
+Les demandes de devis sont limitees a 1 par 15 minutes par adresse IP.
 
 ## Gerer les demandes
 
 Consultez [Devis -- Demandes de devis](/fr/features/quotes#quote-requests) pour les details sur la gestion des demandes entrantes.
 
-## Image de marque
+## Voir aussi
 
-Votre page d'entreprise utilise l'image de marque de votre entreprise :
-
-- Logo de l'entreprise
-- Couleur d'accentuation
-- Nom et coordonnees de l'entreprise
-
-## Conseils
-
-- Gardez votre liste de services a jour
-- Ajoutez un lien vers votre page d'entreprise sur votre site web
-- Repondez rapidement aux demandes de devis pour un meilleur taux de conversion
-- Utilisez le flux de travail des demandes de devis pour suivre les prospects
+- [Domaines, site web et boite de reception](/fr/features/domains-website-inbox): Configuration de domaine personnalise, verification, SSL et boite de reception e-mail.
+- [Parametres de l'entreprise](/fr/settings/company): Ou se trouvent les details, l'image de marque et l'adresse de votre entreprise.
+- [Devis](/fr/features/quotes): Gerer les demandes de devis qui arrivent via votre site web.

@@ -53,7 +53,7 @@ Une fois que votre client accepte votre devis, convertissez-le en facture en un 
 
 ## Demandes de devis
 
-Les clients peuvent soumettre des demandes de devis via votre [page d'entreprise](/fr/advanced/business-page). Celles-ci apparaissent dans **Devis > Demandes**.
+Les clients peuvent soumettre des demandes de devis via votre [constructeur de site](/fr/advanced/business-page). Celles-ci apparaissent dans **Devis > Demandes**.
 
 ### Gerer les demandes
 
