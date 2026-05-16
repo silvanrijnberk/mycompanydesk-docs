@@ -78,8 +78,16 @@ When a contract has been signed, the contract detail page shows a signing card w
 
 The preview page includes a toolbar with print and download actions, and renders the signed contract directly in the browser.
 
+### Signing on the contracts list
+
+The contracts list includes a **Signing** column showing the signing status for each contract that has e-signing enabled. Statuses appear as colored badges: draft (neutral), sent (warning), partially signed (info), and active (success).
+
+A signing filter dropdown above the list lets you narrow the view by signing status, or filter to contracts without e-signing ("No e-signing").
+
 ::: info Legacy contracts
 Contracts created before the e-signing feature was added do not show a signing card on the detail page. The system detects legacy contracts by checking whether the contract has signing parties, a template, or signing content. Only contracts created or updated after the e-signing rollout include the signing card.
+
+Legacy contracts show a dash in the Signing column and appear under the "No e-signing" filter.
 :::
 
 ## Tips
@@ -88,4 +96,5 @@ Contracts created before the e-signing feature was added do not show a signing c
 - Link contracts to objects for full rental management
 - Set end dates to get notified before contracts expire
 - Review the contracts filter to see active vs. inactive at a glance
+- Filter by signing status to find contracts that still need signatures
 - Add signing parties when creating a contract to enable electronic signing
