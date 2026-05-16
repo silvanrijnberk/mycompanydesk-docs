@@ -106,7 +106,7 @@ Le constructeur de site se trouve sous **Entreprise > Votre site web** (`/websit
 
 Ce que l'editeur affiche :
 
-- **Onglet Editeur** -- Composez des pages en ajoutant et en organisant des sections (hero, texte, galerie, services, equipe, temoignages, formulaire de contact, tarifs, produit, HTML personnalise). Inspectez et modifiez le contenu, la mise en page, le style et l'animation des sections. Les niveaux de tarifs peuvent optionnellement avoir un bouton d'achat qui redirige vers le checkout Mollie ou Stripe Connect. Le bloc produit est une fiche d'achat autonome avec la meme plomberie de paiement.
+- **Onglet Editeur** -- Composez des pages en ajoutant et en organisant des sections (hero, texte, galerie, services, equipe, temoignages, formulaire de contact, tarifs, produit, HTML personnalise). Inspectez et modifiez le contenu, la mise en page, le style et l'animation des sections. Les niveaux de tarifs peuvent optionnellement avoir un bouton d'achat qui redirige vers le checkout Mollie ou Stripe Connect. Chaque niveau a un taux de TVA configurable (21%, 9% ou 0%), le prix affiche au client etant le prix final TVA comprise. Le bloc produit est une fiche d'achat autonome avec la meme plomberie de paiement.
 - **Onglet Pages** -- Créer, renommer, supprimer et filtrer les pages par statut (en ligne, brouillon, planifie). Choisir un modele lors de la creation d'une nouvelle page.
 - **Onglet Style** -- Tokens de design pour les couleurs, les polices, l'echelle, le mouvement, les boutons, le CSS personnalise et les snippets d'en-tête (analytique, preconnexions de polices).
 - **Onglet Domaine et SEO** -- Gestion des domaines personnalises. Voir la section domaines personnalises ci-dessus.
@@ -144,17 +144,22 @@ Lorsque vous ajoutez des boutons d'achat aux niveaux de tarifs ou a un bloc prod
 Ce que le journal des ventes affiche :
 
 - Une liste chronologique de tous les achats effectues via votre site.
-- Le prestataire de paiement (Mollie ou Stripe Connect) et le statut du paiement.
+- Le prestataire de paiement (Mollie ou Stripe Connect) et le statut du paiement (`paid`, `pending`, `failed`, `expired`, `refunded`).
 - La section d'origine (quel niveau de tarif ou quel bloc produit a ete achete).
 - L'e-mail du client, le montant paye et la devise.
 
 Les enregistrements de vente sont crees par le point de terminaison de checkout public (`POST /public/sites/:slug/checkout`), qui valide la section, cree un paiement via le prestataire connecte et redirige l'acheteur vers la page de checkout hebergee.
 
+Les ventes payees affichent un menu d'actions (trois points) avec deux options :
+
+- **Regenerer la facture.** Recree la facture liee si elle a ete perdue ou n'a pas ete generee lors de l'achat. Sans danger meme si la facture existe deja.
+- **Rembourser.** Reverse le montant total au client via le prestataire de paiement d'origine (Mollie ou Stripe). Un avoir est automatiquement cree contre la facture liee pour votre comptabilite. Disponible uniquement pour les ventes payees.
+
 ### Parcours apres l'achat
 
 Lorsqu'un paiement est finalise, la plateforme execute automatiquement les etapes suivantes. Tout fonctionne en fire-and-forget : les erreurs sont journalisees et n'affectent pas le statut de paiement que l'acheteur voit.
 
-1. **Facture generee.** Une facture est creee a partir de la vente, avec le nom du produit, le prix et l'e-mail de l'acheteur. Si l'e-mail correspond a un client existant dans votre espace de travail, la facture est liee a ce client. Sinon, une fiche client minimale est creee. La facture est finalisee immediatement (statut `sent`) puisque le paiement a deja ete recu.
+1. **Facture generee.** Une facture est creee a partir de la vente, avec le nom du produit, le prix et l'e-mail de l'acheteur. Le prix que vous definissez dans l'editeur est le prix final client, TVA comprise. La ligne de facture separe ce montant en un prix HT et le taux de TVA que vous avez configure sur le niveau de tarif ou le bloc produit (21% par defaut). Si l'e-mail correspond a un client existant dans votre espace de travail, la facture est liee a ce client. Sinon, une fiche client minimale est creee. La facture est finalisee immediatement (statut `sent`) puisque le paiement a deja ete recu.
 2. **Paiement enregistre.** Un enregistrement de paiement est cree sur la facture via le service de paiement standard. La methode de paiement est definie sur le prestataire (Mollie ou Stripe) et la reference contient l'ID de session du processeur pour les pistes d'audit.
 3. **Confirmation au client.** L'acheteur recoit un e-mail de confirmation avec le nom du produit, le montant et la methode de paiement. Si une facture a ete generee, l'e-mail contient un lien securise vers le portail pour consulter et telecharger la facture en PDF.
 4. **Proprietaire averti.** Vous recevez une notification dans l'application et un resume par e-mail de la vente : produit, montant, e-mail du client et un lien direct vers la facture.
