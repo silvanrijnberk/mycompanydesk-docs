@@ -106,7 +106,7 @@ Der Website-Builder befindet sich unter **Unternehmen > Ihre Website** (`/websit
 
 Was der Editor anzeigt:
 
-- **Editor-Tab** -- Erstellen Sie Seiten durch Hinzufügen und Anordnen von Abschnitten (Hero, Text, Galerie, Dienstleistungen, Team, Testimonials, Kontaktformular, Preise, Produkt, benutzerdefiniertes HTML). Überprüfen und bearbeiten Sie Abschnittsinhalte, Layout, Stil und Animation. Preisstufen können optional einen Kauf-Button erhalten, der zum Mollie- oder Stripe Connect-Checkout weiterleitet. Der Produktblock ist eine eigenständige Kaufkarte mit derselben Zahlungsanbindung.
+- **Editor-Tab** -- Erstellen Sie Seiten durch Hinzufügen und Anordnen von Abschnitten (Hero, Text, Galerie, Dienstleistungen, Team, Testimonials, Kontaktformular, Preise, Produkt, benutzerdefiniertes HTML). Überprüfen und bearbeiten Sie Abschnittsinhalte, Layout, Stil und Animation. Preisstufen können optional einen Kauf-Button erhalten, der zum Mollie- oder Stripe Connect-Checkout weiterleitet. Jede Stufe hat einen konfigurierbaren Mehrwertsteuersatz (21%, 9% oder 0%), wobei der dem Kunden angezeigte Preis der Endpreis inklusive Mehrwertsteuer ist. Der Produktblock ist eine eigenständige Kaufkarte mit derselben Zahlungsanbindung.
 - **Seiten-Tab** -- Seiten erstellen, umbenennen, löschen und nach Status filtern (live, Entwurf, geplant). Wählen Sie eine Vorlage beim Erstellen einer neuen Seite.
 - **Stil-Tab** -- Design-Tokens für Farben, Schriften, Skalierung, Bewegung, Schaltflächen, benutzerdefiniertes CSS und Head-Snippets (Analytics, Schrift-Preconnects).
 - **Domain & SEO-Tab** -- Verwaltung eigener Domains. Siehe den Abschnitt eigene Domains oben.
@@ -144,17 +144,22 @@ Wenn Sie Kauf-Buttons zu Preisstufen oder einem Produktblock auf Ihrer öffentli
 Was das Verkaufsprotokoll zeigt:
 
 - Eine chronologisch sortierte Liste aller über Ihre Website getätigten Käufe.
-- Den Zahlungsdienstleister (Mollie oder Stripe Connect) und den Zahlungsstatus.
+- Den Zahlungsdienstleister (Mollie oder Stripe Connect) und den Zahlungsstatus (`paid`, `pending`, `failed`, `expired`, `refunded`).
 - Den ursprünglichen Abschnitt (welche Preisstufe oder welcher Produktblock gekauft wurde).
 - Kunden-E-Mail, gezahlter Betrag und Währung.
 
 Verkaufsdatensätze werden vom öffentlichen Checkout-Endpunkt (`POST /public/sites/:slug/checkout`) erstellt, der den Abschnitt validiert, eine Zahlung über den verbundenen Dienstleister anlegt und den Käufer zur gehosteten Checkout-Seite weiterleitet.
 
+Bezahlte Verkäufe zeigen ein Aktionsmenü (drei Punkte) mit zwei Optionen:
+
+- **Rechnung neu erstellen.** Erstellt die verknüpfte Rechnung neu, falls sie verloren gegangen oder beim Kauf nicht generiert wurde. Auch sicher ausführbar, wenn die Rechnung bereits existiert.
+- **Rückerstattung.** Überweist den vollen Betrag über den ursprünglichen Zahlungsdienstleister (Mollie oder Stripe) an den Kunden zurück. Eine Gutschrift wird automatisch gegen die verknüpfte Rechnung für Ihre Buchhaltung erstellt. Nur für bezahlte Verkäufe verfügbar.
+
 ### Ablauf nach dem Kauf
 
 Wenn eine Zahlung abgeschlossen ist, führt die Plattform automatisch die folgenden Schritte aus. Alles läuft fire-and-forget: Fehler werden protokolliert und haben keinen Einfluss auf den Zahlungsstatus, den der Käufer sieht.
 
-1. **Rechnung erstellt.** Eine Rechnung wird aus dem Verkauf erstellt, mit Produktname, Preis und der E-Mail des Käufers. Wenn die E-Mail mit einem bestehenden Kunden in Ihrem Workspace übereinstimmt, wird die Rechnung diesem Kunden zugeordnet. Andernfalls wird ein minimaler Kundendatensatz erstellt. Die Rechnung wird sofort finalisiert (Status `sent`), da die Zahlung bereits eingegangen ist.
+1. **Rechnung erstellt.** Eine Rechnung wird aus dem Verkauf erstellt, mit Produktname, Preis und der E-Mail des Käufers. Der Preis, den Sie im Editor festlegen, ist der endgültige Kundenpreis inklusive Mehrwertsteuer. Die Rechnungsposition teilt diesen in einen Netto-Betrag und den Mehrwertsteuersatz auf, den Sie in der Preisstufe oder dem Produktblock konfiguriert haben (Standard 21%). Wenn die E-Mail mit einem bestehenden Kunden in Ihrem Workspace übereinstimmt, wird die Rechnung diesem Kunden zugeordnet. Andernfalls wird ein minimaler Kundendatensatz erstellt. Die Rechnung wird sofort finalisiert (Status `sent`), da die Zahlung bereits eingegangen ist.
 2. **Zahlung verbucht.** Ein Zahlungsdatensatz wird auf der Rechnung über den Standard-Zahlungsservice erstellt. Die Zahlungsmethode wird auf den Dienstleister (Mollie oder Stripe) gesetzt und die Referenz enthält die Prozessor-Session-ID für Audit-Trails.
 3. **Kundenbestätigung.** Der Käufer erhält eine Bestätigungs-E-Mail mit Produktname, Betrag und Zahlungsmethode. Wenn eine Rechnung erstellt wurde, enthält die E-Mail einen gesicherten Portal-Link zum Anzeigen und Herunterladen des Rechnungs-PDFs.
 4. **Inhaber benachrichtigt.** Sie erhalten eine In-App-Benachrichtigung und eine E-Mail-Zusammenfassung des Verkaufs: Produkt, Betrag, Kunden-E-Mail und einen direkten Link zur Rechnung.

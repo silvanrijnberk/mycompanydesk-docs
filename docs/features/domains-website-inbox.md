@@ -106,7 +106,7 @@ The site builder lives at `Company › Your website` (`/website`). It is a full 
 
 What the editor surfaces:
 
-- **Editor tab** — Compose pages by adding and arranging sections (hero, text, gallery, services, team, testimonials, contact form, pricing, product, custom HTML). Inspect and edit section content, layout, style, and animation. Pricing tiers can optionally carry a buy button that redirects to Mollie or Stripe Connect checkout. The product block is a single-item buy card with the same payment plumbing.
+- **Editor tab** — Compose pages by adding and arranging sections (hero, text, gallery, services, team, testimonials, contact form, pricing, product, custom HTML). Inspect and edit section content, layout, style, and animation. Pricing tiers can optionally carry a buy button that redirects to Mollie or Stripe Connect checkout. Each tier has a configurable VAT rate (21%, 9% or 0%), with the price shown to the customer being the final price, VAT included. The product block is a single-item buy card with the same payment plumbing.
 - **Pages tab** — Create, rename, delete, and filter pages by status (live, draft, scheduled). Pick a template when creating a new page.
 - **Style tab** — Design tokens for colors, fonts, scale, motion, buttons, custom CSS, and head snippets (analytics, font preconnects).
 - **Domain & SEO tab** — Custom domain management. See the custom domains section above.
@@ -144,17 +144,22 @@ When you add buy buttons to pricing tiers or a product block on your public site
 What the sales log shows:
 
 - A chronologically ordered list of all purchases made through your site.
-- The payment processor (Mollie or Stripe Connect) and the payment status.
+- The payment processor (Mollie or Stripe Connect) and the payment status (`paid`, `pending`, `failed`, `expired`, `refunded`).
 - The originating section (which pricing tier or product block was purchased).
 - Customer email, amount paid, and currency.
 
 Sales records are created by the public checkout endpoint (`POST /public/sites/:slug/checkout`), which validates the section, creates a payment through the connected processor, and redirects the buyer to the hosted checkout page.
 
+Paid sales show an action menu (three dots) with two options:
+
+- **Regenerate invoice.** Re-creates the linked invoice if it was lost or not generated during the purchase. Safe to run even if the invoice already exists.
+- **Refund.** Returns the full amount to the customer through the original payment processor (Mollie or Stripe). A credit note is automatically created against the linked invoice for your bookkeeping. Only available for paid sales.
+
 ### Post-purchase flow
 
 When a payment completes, the platform automatically runs the following steps. Everything runs fire-and-forget: failures are logged and do not affect the payment status the buyer sees.
 
-1. **Invoice generated.** An invoice is created from the sale, with the product name, price and the buyer's email. If the buyer's email matches an existing customer in your workspace, the invoice is linked to that customer. Otherwise a minimal customer record is created. The invoice is finalised immediately (status `sent`) since payment was already received.
+1. **Invoice generated.** An invoice is created from the sale, with the product name, price and the buyer's email. The price you set in the editor is the final customer price, VAT included. The invoice line splits this into an ex-VAT amount and the VAT rate you configured on the pricing tier or product block (default 21%). If the buyer's email matches an existing customer in your workspace, the invoice is linked to that customer. Otherwise a minimal customer record is created. The invoice is finalised immediately (status `sent`) since payment was already received.
 2. **Payment recorded.** A payment record is created on the invoice through the standard payment service. The payment method is set to the processor (Mollie or Stripe), and the reference includes the processor session ID for audit trails.
 3. **Customer receipt.** The buyer receives a confirmation email with the product name, amount and payment method. If an invoice was generated, the email includes a secure portal link to view and download the invoice PDF.
 4. **Owner notified.** You get an in-app notification and an email summary of the sale: product, amount, customer email, and a direct link to the invoice.

@@ -106,7 +106,7 @@ De sitebouwer staat op `Bedrijf › Je website` (`/website`). Het is een volwaar
 
 Wat de editor laat zien:
 
-- **Editor-tab** -- Stel pagina's samen door secties toe te voegen en te rangschikken (hero, tekst, galerij, diensten, team, testimonials, contactformulier, tarieven, product, aangepaste HTML). Bekijk en bewerk sectie-inhoud, layout, stijl en animatie. Tarieven kunnen optioneel een koopknop krijgen die doorverwijst naar de Mollie- of Stripe Connect-checkout. Het productblok is een losse koopkaart met dezelfde betalingskoppeling.
+- **Editor-tab** -- Stel pagina's samen door secties toe te voegen en te rangschikken (hero, tekst, galerij, diensten, team, testimonials, contactformulier, tarieven, product, aangepaste HTML). Bekijk en bewerk sectie-inhoud, layout, stijl en animatie. Tarieven kunnen optioneel een koopknop krijgen die doorverwijst naar de Mollie- of Stripe Connect-checkout. Elke tier heeft een instelbaar BTW-tarief (21%, 9% of 0%), waarbij de prijs die de klant ziet de uiteindelijke prijs is, inclusief BTW. Het productblok is een losse koopkaart met dezelfde betalingskoppeling.
 - **Pagina's-tab** -- Pagina's aanmaken, hernoemen, verwijderen en filteren op status (live, concept, ingepland). Kies een sjabloon bij het maken van een nieuwe pagina.
 - **Stijl-tab** -- Ontwerptokens voor kleuren, lettertypes, schaal, beweging, knoppen, aangepaste CSS en head-snippets (analytics, lettertype-preconnects).
 - **Domein & SEO-tab** -- Eigen domeinbeheer. Zie de sectie eigen domeinen hierboven.
@@ -144,17 +144,22 @@ Wanneer je koopknoppen toevoegt aan tarieven of een productblok op je openbare s
 Wat het verkooplogboek laat zien:
 
 - Een chronologisch gesorteerde lijst van alle aankopen via je site.
-- De betalingsprovider (Mollie of Stripe Connect) en de betalingsstatus.
+- De betalingsprovider (Mollie of Stripe Connect) en de betalingsstatus (`paid`, `pending`, `failed`, `expired`, `refunded`).
 - De oorspronkelijke sectie (welke tarief-tier of productblok is gekocht).
 - E-mailadres van de klant, betaald bedrag en valuta.
 
 Verkooprecords worden aangemaakt door het openbare checkout-eindpunt (`POST /public/sites/:slug/checkout`), dat de sectie valideert, een betaling aanmaakt via de gekoppelde provider en de koper doorstuurt naar de gehoste checkout-pagina.
 
+Betaalde verkopen tonen een actiemenu (drie puntjes) met twee opties:
+
+- **Factuur opnieuw genereren.** Maakt de gekoppelde factuur opnieuw aan als deze zoek is geraakt of niet is gegenereerd tijdens de aankoop. Veilig om uit te voeren ook als de factuur al bestaat.
+- **Terugbetalen.** Stort het volledige bedrag terug naar de klant via de oorspronkelijke betaalprovider (Mollie of Stripe). Er wordt automatisch een creditnota aangemaakt tegen de gekoppelde factuur voor je boekhouding. Alleen beschikbaar voor betaalde verkopen.
+
 ### Verwerkingsflow na aankoop
 
 Wanneer een betaling voltooid is, voert het platform automatisch de volgende stappen uit. Alles draait fire-and-forget: fouten worden gelogd en hebben geen effect op de betalingsstatus die de koper ziet.
 
-1. **Factuur aangemaakt.** Er wordt een factuur aangemaakt op basis van de verkoop, met de productnaam, prijs en het e-mailadres van de koper. Als het e-mailadres overeenkomt met een bestaande klant in je werkruimte, wordt de factuur daaraan gekoppeld. Anders wordt een minimaal klantrecord aangemaakt. De factuur wordt direct afgerond (status `sent`) omdat de betaling al ontvangen is.
+1. **Factuur aangemaakt.** Er wordt een factuur aangemaakt op basis van de verkoop, met de productnaam, prijs en het e-mailadres van de koper. De prijs die je in de editor instelt is de uiteindelijke klantprijs, inclusief BTW. De factuurregel splitst dit in een ex-BTW bedrag en het BTW-tarief dat je op de tarief-tier of het productblok hebt ingesteld (standaard 21%). Als het e-mailadres overeenkomt met een bestaande klant in je werkruimte, wordt de factuur daaraan gekoppeld. Anders wordt een minimaal klantrecord aangemaakt. De factuur wordt direct afgerond (status `sent`) omdat de betaling al ontvangen is.
 2. **Betaling geregistreerd.** Er wordt een betalingsrecord aangemaakt op de factuur via de standaard betalingsservice. De betalingsmethode wordt ingesteld op de provider (Mollie of Stripe) en de referentie bevat het processor-sessie-ID voor audittrails.
 3. **Klantbevestiging.** De koper ontvangt een bevestigingsmail met de productnaam, het bedrag en de betalingsmethode. Als er een factuur is gegenereerd, bevat de mail een beveiligde portaal-link om de factuur-PDF te bekijken en te downloaden.
 4. **Eigenaar op de hoogte gesteld.** Je ontvangt een in-app notificatie en een e-mailsamenvatting van de verkoop: product, bedrag, e-mail van de klant, en een directe link naar de factuur.
