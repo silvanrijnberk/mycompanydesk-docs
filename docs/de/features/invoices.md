@@ -100,9 +100,20 @@ Wenn Sie eine Rechnung versenden, wird ein eindeutiger Zahlungslink generiert. I
 
 1. Auf den Link in der E-Mail klicken
 2. Die Rechnung im **Kundenportal** ansehen
-3. Direkt online bezahlen
+3. Direkt online bezahlen, ueber Ihr verbundenes Mollie- oder Stripe-Konto
 
 Die Zahlung wird automatisch erfasst und der Rechnungsstatus wird auf **Bezahlt** aktualisiert.
+
+## Online-Zahlungen
+
+Aktivieren Sie Online-Rechnungszahlungen, indem Sie Ihr eigenes Mollie- oder Stripe-Konto verbinden:
+
+1. Gehen Sie zu **Geld → Zahlungen** in der Seitenleiste Ihres Arbeitsbereichs
+2. Verbinden Sie unter **Online betalingen** den gewuenschten Anbieter
+3. Mollie unterstuetzt iDEAL, Bancontact, Kreditkarte und Bankueberweisung
+4. Stripe Connect unterstuetzt Karte, Apple Pay, Google Pay und SEPA-Lastschrift
+
+Nach der Verbindung enthaelt jede von Ihnen versendete Rechnung einen Zahlungslink. Ihre Kunden bezahlen ueber Ihr eigenes Anbieterkonto. Das Geld geht direkt an Sie. MyCompanyDesk verarbeitet oder verwahrt keine Zahlungen fuer Sie.
 
 ## Dokumenttypen
 

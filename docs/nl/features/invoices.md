@@ -100,9 +100,20 @@ Wanneer je een factuur verstuurt, wordt een unieke betaallink gegenereerd. Je kl
 
 1. Op de link in de e-mail klikken
 2. De factuur bekijken in het **klantportaal**
-3. Direct online betalen
+3. Direct online betalen via je gekoppelde Mollie- of Stripe-account
 
 De betaling wordt automatisch geregistreerd en de factuurstatus wordt bijgewerkt naar **Betaald**.
+
+## Online betalingen
+
+Schakel online factuurbetalingen in door je eigen Mollie- of Stripe-account te koppelen:
+
+1. Ga naar **Geld → Betalingen** in het werkruimtemenu
+2. Koppel onder **Online betalingen** de gewenste verwerker
+3. Mollie ondersteunt iDEAL, Bancontact, creditcard en bankoverboeking
+4. Stripe Connect ondersteunt card, Apple Pay, Google Pay en SEPA-incasso
+
+Na het koppelen bevat elke factuur die je verstuurt een betaallink. Je klanten betalen via jouw eigen verwerker. Het geld staat direct op jouw rekening. MyCompanyDesk verwerkt of beheert geen betalingen voor je.
 
 ## Documenttypen
 

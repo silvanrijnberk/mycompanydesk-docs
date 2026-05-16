@@ -100,9 +100,20 @@ When you send an invoice, a unique payment link is generated. Your customer can:
 
 1. Click the link in the email
 2. View the invoice in the **customer portal**
-3. Pay directly online
+3. Pay directly online using your connected Mollie or Stripe account
 
 Payment is automatically recorded and the invoice status updates to **Paid**.
+
+## Online payments
+
+Enable online invoice payments by connecting your own Mollie or Stripe account:
+
+1. Go to **Money → Payments** in your workspace sidebar
+2. Under **Online betalingen**, connect your processor of choice
+3. Mollie supports iDEAL, Bancontact, credit card, and bank transfer
+4. Stripe Connect supports card, Apple Pay, Google Pay, and SEPA direct debit
+
+Once connected, every invoice you send includes a payment link. Your customers pay through your own processor account. Funds go directly to you. MyCompanyDesk does not handle or hold your payments.
 
 ## Document types
 
