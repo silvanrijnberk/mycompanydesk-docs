@@ -16,7 +16,7 @@ Getting started with MyCompanyDesk takes just a few minutes.
 3. If you signed up with email, check your inbox for a **verification email** and click the link to verify your account
 
 :::tip Partner referral
-If your accountant or boekhouder gave you a referral link (for example, `app.mycompanydesk.com/register?partner=THEIRCODE`), open that link to sign up. Your signup will be attributed to them automatically, which may qualify your workspace for a partner benefit such as an extended free trial.
+If your accountant or boekhouder gave you a referral link (for example, `app.mycompanydesk.com/register?partner=THEIRCODE`), open that link to sign up. Your signup will be attributed to them automatically, which qualifies your workspace for a 12-month free Pro trial instead of the standard 60-day trial.
 :::
 
 ## Create or join a workspace

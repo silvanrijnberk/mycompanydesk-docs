@@ -16,7 +16,7 @@ Demarrer avec MyCompanyDesk ne prend que quelques minutes.
 3. Si vous vous etes inscrit par e-mail, verifiez votre boite de reception pour trouver un **e-mail de verification** et cliquez sur le lien pour verifier votre compte
 
 :::tip Parrainage comptable
-Votre comptable ou expert-comptable vous a transmis un lien de parrainage (par exemple `app.mycompanydesk.com/register?partner=LEURCODE`) ? Ouvrez ce lien pour vous inscrire. Votre inscription sera automatiquement attribuee, ce qui peut faire beneficier votre espace de travail d'un avantage partenaire tel qu'une periode d'essai gratuite prolongee.
+Votre comptable ou expert-comptable vous a transmis un lien de parrainage (par exemple `app.mycompanydesk.com/register?partner=LEURCODE`) ? Ouvrez ce lien pour vous inscrire. Votre inscription sera automatiquement attribuee, ce qui fait beneficier votre espace de travail d'une periode d'essai Pro gratuite de 12 mois au lieu des 60 jours standard.
 :::
 
 ## Creer ou rejoindre un espace de travail
