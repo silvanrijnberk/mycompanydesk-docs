@@ -6,13 +6,22 @@ title: "Abrechnung & Tarife"
 
 Verwalten Sie Ihr MyCompanyDesk-Abonnement, sehen Sie Ihre Nutzung ein und führen Sie ein Upgrade Ihres Tarifs durch.
 
-## Kostenlose Pro-Testphase
+## Founding Members
 
-Jeder neue Arbeitsbereich startet mit einer **60-tägigen kostenlosen Pro-Testphase**. Keine Zahlungsmethode erforderlich. Sie erhalten sofort nach dem Erstellen Ihres Arbeitsbereichs vollen Pro-Zugriff.
+MyCompanyDesk bietet ein Founding-Members-Programm fur die ersten 100 Arbeitsbereiche, die sich wahrend der Startphase anmelden. Ein Founding Member erhalt den Pro-Tarif lebenslang kostenlos, ohne Ablaufdatum und ohne Zahlungsmethode.
 
-Wenn die Testphase endet, wechselt Ihr Arbeitsbereich automatisch zum Free-Tarif. Sie können jederzeit während oder nach der Testphase auf einen kostenpflichtigen Tarif upgraden. Kostenpflichtige Abonnements werden über Stripe abgewickelt (siehe [Upgrade](#upgrade)).
+### So funktioniert es
 
-Testphasenstatus und verbleibende Tage sehen Sie auf der Abrechnungsseite. Wenn Sie vor Ablauf der Testphase upgraden, endet die Testphase und Ihr bezahlter Zeitraum beginnt sofort.
+- Das Programm ist auf **100 Platze** uber alle Arbeitsbereiche hinweg begrenzt.
+- Nach dem Claim ist Ihr Arbeitsbereich dauerhaft auf Pro upgegradet. Das Abonnement zeigt ein "Founding Member"-Badge im Abrechnungsbereich.
+- Jeder Arbeitsbereich kann nur einen Platz beanspruchen. Von derselben IP-Adresse darf ebenfalls nur ein Platz geclaimt werden (Missbrauchspravention).
+- Das Claimen ist endgultig. Es gibt keine Testphase oder Verlangerung; der Pro-Tarif bleibt unbegrenzt aktiv.
+
+### Einen Platz claimen
+
+Wenn noch Platze verfugbar sind, zeigt die Abrechnungsseite eine Founding-Member-Claimkarte. Klicken Sie auf **Platz claimen**, um Ihren Platz zu sichern. Das Upgrade wird sofort wirksam.
+
+Founding-Member-Arbeitsbereiche sind in jeder Hinsicht ganz normale Pro-Kunden: gleiche Funktionen, gleiche Limits. Der einzige Unterschied ist die Abonnementquelle ("intern") und das Badge im Abrechnungsbereich.
 
 ## Tarife
 
@@ -55,8 +64,6 @@ Tarife sind in **monatlichen** und **jährlichen** Abrechnungsintervallen verfü
 ## Abonnement verwalten
 
 ### Upgrade
-
-Die Tarifübersicht zeigt immer monatliche und jährliche Intervalloptionen, auch während einer Beta oder Testphase.
 
 1. Gehen Sie zu **Einstellungen > Abrechnung**
 2. Klicken Sie auf **Upgrade** beim gewünschten Tarif

@@ -6,13 +6,22 @@ title: "Facturering & Abonnementen"
 
 Beheer je MyCompanyDesk-abonnement, bekijk je verbruik en upgrade je abonnement.
 
-## Gratis Pro-proefperiode
+## Founding Members
 
-Elke nieuwe werkruimte begint met een **gratis Pro-proefperiode van 60 dagen**. Er is geen betaalmethode nodig. Je krijgt meteen volledige Pro-functionaliteit zodra je je werkruimte aanmaakt.
+MyCompanyDesk biedt een Founding Members-programma voor de eerste 100 werkruimtes die zich aanmelden tijdens de lanceringsperiode. Een Founding Member krijgt het Pro-abonnement gratis voor het leven, zonder einddatum en zonder betaalmethode.
 
-Als de proefperiode afloopt, gaat je werkruimte automatisch over naar het Gratis abonnement. Je kunt op elk moment tijdens of na de proefperiode upgraden naar een betaald abonnement. Betaalde abonnementen verlopen via Stripe (zie [Upgraden](#upgraden)).
+### Hoe het werkt
 
-De proefperiodestatus en resterende dagen zie je op de factureringspagina. Als je upgrade voordat de proefperiode afloopt, wordt de proefperiode beëindigd en begint je betaalde periode direct.
+- Het programma is beperkt tot **100 plekken** over alle werkruimtes.
+- Zodra je claimt, is je werkruimte permanent geupgrade naar Pro. Het abonnement toont een "Founding Member"-badge in de factureringssectie.
+- Elke werkruimte kan maar een plek claimen. Vanaf hetzelfde IP-adres mag ook maar een plek geclaimd worden (misbruikpreventie).
+- Claimen is definitief. Er is geen proefperiode of verlenging; het Pro-abonnement blijft onbeperkt actief.
+
+### Een plek claimen
+
+Als er nog plekken over zijn, toont de factureringspagina een Founding Member-claimkaart. Klik op **Plek claimen** om je plek vast te leggen. De upgrade gaat meteen in.
+
+Founding Member-werkruimtes zijn in alle opzichten gewone Pro-klanten: dezelfde functies, dezelfde limieten. Het enige verschil is de abonnementsbron ("intern") en de badge in de facturering.
 
 ## Abonnementen
 
@@ -55,8 +64,6 @@ Abonnementen zijn beschikbaar in **maandelijkse** en **jaarlijkse** facturerings
 ## Je abonnement beheren
 
 ### Upgraden
-
-De abonnementsweergave toont altijd maandelijkse en jaarlijkse intervalopties, ook tijdens een beta of proefperiode.
 
 1. Ga naar **Instellingen > Facturering**
 2. Klik op **Upgraden** bij het gewenste abonnement

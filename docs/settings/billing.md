@@ -13,13 +13,22 @@ Open the workspace switcher → **Account** → **Plan & payments**, or navigate
 
 The legacy `/settings/billing` URL is now a redirect stub to the new path; bookmarks still work and the `?checkout=success|canceled` query parameter is preserved across the redirect.
 
-## Free Pro trial
+## Founding Members
 
-Every new workspace starts with a **60-day free Pro trial**. No payment method is required. You get full Pro features immediately after creating your workspace.
+MyCompanyDesk offers a Founding Members program for the first 100 workspaces that join during the launch period. A Founding Member receives the Pro plan free for life, with no expiration and no payment method required.
 
-When the trial ends, your workspace moves to the Free plan automatically. You can upgrade to a paid plan at any time during or after the trial. Paid subscriptions are handled through Stripe (see [Checkout flow](#checkout-flow)).
+### How it works
 
-Trial status appears on the billing page with the remaining days. If you upgrade before the trial ends, the trial is cancelled and your paid period starts immediately.
+- The program is limited to **100 spots** across all workspaces.
+- Once claimed, the workspace is permanently upgraded to Pro. The subscription shows as active with a "Founding Member" badge in the billing section.
+- Each workspace can claim only one spot. A single IP address may not claim more than one spot (fraud prevention).
+- Claiming is irreversible. There is no trial period or renewal; the Pro plan stays active indefinitely.
+
+### Claiming a spot
+
+If spots remain, the billing page shows a Founding Member claim card. Click **Claim spot** to reserve your spot. The upgrade takes effect immediately.
+
+Founding Member workspaces are regular Pro customers in every respect: same features, same limits. The only difference is the subscription source ("internal") and the badge in billing.
 
 ## Plans
 
@@ -93,8 +102,6 @@ The **Manage subscription** button (visible whenever the workspace has an active
 Cancellation takes effect at the end of the current paid period; access remains until then.
 
 ## Checkout flow
-
-Stripe checkout is always available regardless of beta or trial status. The plan grid shows monthly and yearly interval toggles unconditionally.
 
 1. Click **Upgrade** on a plan tile
 2. The frontend calls `POST /api/billing/checkout`, which returns a Stripe Checkout URL
