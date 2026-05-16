@@ -33,6 +33,7 @@ Die Kundendetailseite zeigt:
 - **Kontaktinformationen** — Alle gespeicherten Daten
 - **Rechnungsverlauf** — Jede an diesen Kunden gesendete Rechnung
 - **Ausgabenverlauf** — Mit diesem Kunden verknüpfte Ausgaben
+- **Verträge** — Aktive und inaktive Verträge, mit Signaturstatus-Badges und einem PDF-Vorschau-Icon, wenn E-Signing aktiviert ist
 - **Projekte** — Aktive und abgeschlossene Projekte
 - **Statistiken** — Gesamtumsatz, ausstehender Saldo, durchschnittliche Zahlungsdauer
 
