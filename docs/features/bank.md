@@ -20,6 +20,22 @@ You can connect multiple accounts across different banks. Each account appears a
 
 MyCompanyDesk syncs transactions from your connected accounts on an automatic schedule. You can also trigger a manual sync from the bank-accounts page at any time. New transactions are matched against your existing customers, invoices, and expenses using vendor rules and AI matching. Matched transactions flow directly into your books; unmatched ones appear in the bank feed for manual review.
 
+### Expense materialisation
+
+When a bank transaction is categorised (by a vendor rule, a default category, or the AI classifier), MyCompanyDesk automatically creates a draft expense in your books. The expense is filled with:
+
+- The transaction's counterpart name as the supplier.
+- The absolute amount as the gross cost.
+- The category's default VAT rate (or the AI-suggested rate when available).
+- The category key matching your workspace's real expense categories.
+- The transaction's booking date as the expense date.
+
+The transaction is then marked as matched so it does not create a duplicate on the next sync. The new expense appears immediately in your expense list and flows into your reports and VAT summaries.
+
+Materialisation runs in two passes: first, after vendor-rule and default-category matching (synchronous, during the sync); second, after the AI classifier completes (asynchronous). In both cases the created expense uses your workspace's actual expense categories and their default VAT treatments, so the numbers stay consistent with your manual entries.
+
+Only outgoing transactions (amount below zero) are materialised. Incoming payments are not turned into expenses. If your workspace has no expense categories configured yet, the materialisation step is skipped and transactions wait for manual review.
+
 ### Sync failures
 
 If a sync fails (for example, the bank's authorisation expired or the connection dropped), MyCompanyDesk sends you an email and an in-app notification with the connection name and a link to fix it. You can also opt into push notifications for sync errors under notification preferences.
