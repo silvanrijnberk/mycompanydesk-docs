@@ -28,3 +28,17 @@ To configure payment methods on documents:
 5. Changes in that section save automatically
 
 The enabled methods and instructions appear on supported document templates.
+
+## Online payment processors
+
+You can connect your own Mollie or Stripe account so customers can pay invoices directly online. Funds go straight to your own account — MyCompanyDesk only handles the integration.
+
+To connect a processor:
+1. Go to **Money → Payments** in your workspace
+2. Under **Online betalingen**, click **Verbind Mollie** or **Verbind Stripe**
+3. Follow the OAuth flow to authorize your account
+4. Once connected, sent invoices include a payment link your customers can use
+
+Mollie supports iDEAL, Bancontact, credit card, and bank transfer — ideal for Dutch and Belgian customers. Stripe Connect supports card, Apple Pay, Google Pay, and SEPA direct debit — suitable for international customers.
+
+To disconnect, click **Loskoppelen** on the relevant card. After disconnecting, customers can no longer pay via that processor.

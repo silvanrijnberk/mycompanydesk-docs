@@ -20,11 +20,25 @@ chatbot:
     - "How do I change the PDF template?"
 ---
 
-Pour gerer les methodes de paiement sur les documents :
-1. Accedez a Entreprise → Options de paiement
-2. Activez les methodes a utiliser
-3. Definissez la methode par defaut
-4. Ajoutez les coordonnees et instructions de paiement
-5. Les modifications de cette section sont enregistrees automatiquement
+Pour gérer les méthodes de paiement sur les documents :
+1. Accédez à Entreprise → Options de paiement
+2. Activez les méthodes à utiliser
+3. Définissez la méthode par défaut
+4. Ajoutez les coordonnées et instructions de paiement
+5. Les modifications de cette section sont enregistrées automatiquement
 
-Les methodes activees et les instructions apparaissent sur les modeles de document qui prennent ces champs en charge.
+Les méthodes activées et les instructions apparaissent sur les modèles de document qui prennent ces champs en charge.
+
+## Prestataires de paiement en ligne
+
+Vous pouvez connecter votre propre compte Mollie ou Stripe pour que les clients puissent payer leurs factures directement en ligne. Les fonds sont versés directement sur votre compte — MyCompanyDesk ne gère que la connexion.
+
+Pour connecter un prestataire :
+1. Allez dans **Argent → Paiements** dans votre espace de travail
+2. Sous **Online betalingen**, cliquez sur **Verbind Mollie** ou **Verbind Stripe**
+3. Suivez le flux OAuth pour autoriser votre compte
+4. Une fois connecté, chaque facture envoyée inclut un lien de paiement pour vos clients
+
+Mollie prend en charge iDEAL, Bancontact, la carte bancaire et le virement — idéal pour les clients néerlandais et belges. Stripe Connect prend en charge la carte, Apple Pay, Google Pay et le prélèvement SEPA — adapté aux clients internationaux.
+
+Pour déconnecter, cliquez sur **Loskoppelen** sur la carte correspondante. Après la déconnexion, les clients ne peuvent plus payer via ce prestataire.

@@ -100,9 +100,20 @@ Lorsque vous envoyez une facture, un lien de paiement unique est genere. Votre c
 
 1. Cliquer sur le lien dans l'e-mail
 2. Consulter la facture dans le **portail client**
-3. Payer directement en ligne
+3. Payer directement en ligne via votre compte Mollie ou Stripe connecte
 
 Le paiement est automatiquement enregistre et le statut de la facture passe a **Payee**.
+
+## Paiements en ligne
+
+Activez les paiements de factures en ligne en connectant votre propre compte Mollie ou Stripe :
+
+1. Allez dans **Argent → Paiements** dans la barre laterale de votre espace de travail
+2. Sous **Online betalingen**, connectez le prestataire de votre choix
+3. Mollie prend en charge iDEAL, Bancontact, la carte bancaire et le virement
+4. Stripe Connect prend en charge la carte, Apple Pay, Google Pay et le prelevement SEPA
+
+Une fois connecte, chaque facture que vous envoyez inclut un lien de paiement. Vos clients paient via votre propre compte prestataire — les fonds vous sont verses directement. MyCompanyDesk ne traite ni ne conserve vos paiements.
 
 ## Types de documents
 
