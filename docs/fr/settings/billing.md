@@ -23,6 +23,23 @@ S'il reste des places disponibles, la page de facturation affiche une carte de r
 
 Les espaces de travail Founding Member sont des clients Pro comme les autres : memes fonctionnalites, memes limites. La seule difference est la source de l'abonnement ("interne") et le badge dans la section de facturation.
 
+## Founding Members
+
+MyCompanyDesk propose un programme Founding Members pour les 100 premiers espaces de travail qui s'inscrivent pendant la periode de lancement. Un Founding Member recoit le plan Pro gratuit a vie, sans date d'expiration et sans moyen de paiement requis.
+
+### Comment ca marche
+
+- Le programme est limite a **100 places** sur l'ensemble des espaces de travail.
+- Une fois la place reservee, votre espace de travail est definitivement passe au plan Pro. L'abonnement affiche un badge "Founding Member" dans la section de facturation.
+- Chaque espace de travail ne peut reserver qu'une seule place. Une meme adresse IP ne peut pas non plus reserver plus d'une place (prevention de la fraude).
+- La reservation est irreversible. Il n'y a pas de periode d'essai ni de renouvellement ; le plan Pro reste actif indefiniment.
+
+### Reserver une place
+
+S'il reste des places disponibles, la page de facturation affiche une carte de reservation Founding Member. Cliquez sur **Reserver une place** pour la securiser. La mise a niveau prend effet immediatement.
+
+Les espaces de travail Founding Member sont des clients Pro comme les autres : memes fonctionnalites, memes limites. La seule difference est la source de l'abonnement ("interne") et le badge dans la section de facturation.
+
 ## Abonnements
 
 MyCompanyDesk propose trois plans :

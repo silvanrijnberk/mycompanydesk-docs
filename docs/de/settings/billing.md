@@ -23,6 +23,23 @@ Wenn noch Platze verfugbar sind, zeigt die Abrechnungsseite eine Founding-Member
 
 Founding-Member-Arbeitsbereiche sind in jeder Hinsicht ganz normale Pro-Kunden: gleiche Funktionen, gleiche Limits. Der einzige Unterschied ist die Abonnementquelle ("intern") und das Badge im Abrechnungsbereich.
 
+## Founding Members
+
+MyCompanyDesk bietet ein Founding-Members-Programm fur die ersten 100 Arbeitsbereiche, die sich wahrend der Startphase anmelden. Ein Founding Member erhalt den Pro-Tarif lebenslang kostenlos, ohne Ablaufdatum und ohne Zahlungsmethode.
+
+### So funktioniert es
+
+- Das Programm ist auf **100 Platze** uber alle Arbeitsbereiche hinweg begrenzt.
+- Nach dem Claim ist Ihr Arbeitsbereich dauerhaft auf Pro upgegradet. Das Abonnement zeigt ein "Founding Member"-Badge im Abrechnungsbereich.
+- Jeder Arbeitsbereich kann nur einen Platz beanspruchen. Von derselben IP-Adresse darf ebenfalls nur ein Platz geclaimt werden (Missbrauchspravention).
+- Das Claimen ist endgultig. Es gibt keine Testphase oder Verlangerung; der Pro-Tarif bleibt unbegrenzt aktiv.
+
+### Einen Platz claimen
+
+Wenn noch Platze verfugbar sind, zeigt die Abrechnungsseite eine Founding-Member-Claimkarte. Klicken Sie auf **Platz claimen**, um Ihren Platz zu sichern. Das Upgrade wird sofort wirksam.
+
+Founding-Member-Arbeitsbereiche sind in jeder Hinsicht ganz normale Pro-Kunden: gleiche Funktionen, gleiche Limits. Der einzige Unterschied ist die Abonnementquelle ("intern") und das Badge im Abrechnungsbereich.
+
 ## Tarife
 
 MyCompanyDesk bietet drei Tarife:
