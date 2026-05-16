@@ -8,7 +8,7 @@ Koppel je bankrekeningen aan MyCompanyDesk voor automatische transactie-import, 
 
 ## Een bankrekening koppelen
 
-1. Ga naar **Instellingen** en dan **Bankrekeningen**.
+1. Ga naar **Werkruimte** → **Financieel** → **Bankrekeningen**.
 2. Klik op **Bank koppelen** en kies je bank uit de lijst.
 3. Doorloop de autorisatiestappen in het pop-upvenster.
 4. Na het koppelen haalt MyCompanyDesk transacties op van de afgelopen 90 dagen en houdt de feed actueel met periodieke automatische syncs.

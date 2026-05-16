@@ -65,6 +65,7 @@ Single-tree umbrella at `/workspace/email`. The wizard, send-as picker, send-onl
 | Payments | `/workspace/financial/money/payments` | Default payment method, instructions |
 | Expenses | `/workspace/financial/expenses` | Defaults, depreciation toggles |
 | Expense categories | `/workspace/financial/categories` | Workspace `expense_categories` table |
+| Bank accounts | `/workspace/financial/bank-accounts` | Link your bank, sync transactions, vendor rules |
 | Time & Travel | `/workspace/financial/time-travel` | Working hours, OV / NS, mileage |
 
 ### Features
@@ -142,6 +143,7 @@ Quick reference for users following an old link or instruction.
 | Language / date format / theme | `/me/preferences` |
 | Notification preferences | `/me/notifications` |
 | Password & 2FA | `/me/security` |
+| Bank accounts (moved from `/me/bank-accounts`) | `/workspace/financial/bank-accounts` |
 | Connected Google / Microsoft account | `/me/connected` |
 | CSV import & export | `/me/data` |
 | Delete your user account | `/me/data` |
@@ -162,6 +164,7 @@ Cmd-K (Ctrl-K on Windows / Linux) opens a global search. Results from the settin
 - [Company settings](/settings/company) — deep dive on the Organization > Company tree.
 - [Email integration](/settings/email) — deep dive on `/workspace/email`.
 - [Team management](/settings/team) — deep dive on `/workspace/account/team`.
+- [Bank feed](/features/bank) — deep dive on `/workspace/financial/bank-accounts`.
 - [Billing & plans](/settings/billing) — deep dive on `/workspace/account/billing`.
 - [Profile](/account/profile) — deep dive on `/me/profile`.
 - [Security](/account/security) — deep dive on `/me/security`.
