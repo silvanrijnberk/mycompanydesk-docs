@@ -43,7 +43,7 @@ Utilisez le tiroir d'ajout rapide pour une saisie rapide de dépenses :
 
 Lorsque votre [flux bancaire](/fr/features/bank) est connecté, les transactions sortantes catégorisées sont automatiquement converties en dépenses provisoires. Chaque dépense reçoit la contrepartie comme fournisseur, le montant absolu comme brut, le taux de TVA et le traitement par défaut de la catégorie, et la date comptable de la transaction. La dépense apparaît dans votre liste de dépenses avec une note indiquant qu'elle a été importée depuis le flux bancaire.
 
-Vous pouvez consulter et modifier les dépenses importées comme n'importe quelle autre dépense — changez la catégorie, ajustez le traitement de TVA, joignez un justificatif ou liez-la à un projet. La transaction bancaire est marquée comme rapprochée du côté banque afin de ne pas être comptée en double. Si vous supprimez une dépense importée, la transaction retourne dans la file d'attente non rapprochée du flux bancaire.
+Vous pouvez consulter et modifier les dépenses importées comme n'importe quelle autre dépense: changez la catégorie, ajustez le traitement de TVA, joignez un justificatif ou liez-la à un projet. La transaction bancaire est marquée comme rapprochée du côté banque afin de ne pas être comptée en double. Si vous supprimez une dépense importée, la transaction retourne dans la file d'attente non rapprochée du flux bancaire.
 
 ### Numérisation de reçus
 
