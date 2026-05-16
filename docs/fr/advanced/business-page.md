@@ -12,7 +12,7 @@ Le constructeur de site remplace l'ancien profil d'entreprise a page unique. Vou
 
 - **Pages multiples**: Creez autant de pages que necessaire, chacune avec son propre chemin et ses propres sections.
 - **Blocs de section**: Ajoutez des sections hero, texte, galerie, services, equipe, temoignages, formulaire de contact et HTML personnalise a chaque page.
-- **Tokens de design**: Definissez les couleurs de marque, les polices, les espacements, les coins arrondis, le style de mouvement et le CSS personnalise. Les modifications s'appliquent a l'ensemble du site.
+- **Tokens de design**: Definissez les couleurs de marque, les polices, les espacements, les coins arrondis, le style de mouvement, le CSS personnalise et un favicon de site. Les modifications s'appliquent a l'ensemble du site.
 - **Editeur de navigation**: Reorganisez les liens d'en-tete par glisser-deposer, avec des groupes deroulants et des liens externes.
 - **Snapshots de publication**: Travaillez en brouillon, previsualisez vos modifications, puis publiez. Les modifications non publiees sont affichees dans la barre superieure.
 - **Apercu responsive**: Basculez entre les vues desktop, tablette et mobile pendant l'edition.
@@ -79,6 +79,7 @@ Dans l'onglet **Style**, vous controlez l'apparence de l'ensemble de votre site 
 - **Mouvement**: Activez le mouvement reduit ou choisissez un style de mouvement (aucun, subtil, ludique).
 - **Boutons**: Personnalisez le rayon, le remplissage et les effets de survol des boutons.
 - **CSS personnalise**: Ecrivez votre propre CSS qui sera injecte dans le site. Utile pour les ajustements fins ou pour remplacer les valeurs par defaut.
+- **Favicon**: Telechargez un favicon pour votre site. Il apparait dans les onglets du navigateur et les favoris. Si vous n'en definissez pas, le site utilise votre logo clair, puis votre photo de profil d'entreprise.
 - **Snippets d'en-tete**: Ajoutez des scripts d'analytique (Plausible, Umami, Matomo) ou des preconnexions de polices via le selecteur de snippets.
 
 Les modifications dans l'onglet Style sont enregistrees automatiquement et s'appliquent a toutes les pages.
@@ -99,6 +100,7 @@ L'editeur de navigation vous permet d'organiser les liens d'en-tete de votre sit
 - Faites glisser les pages pour reordonner la navigation.
 - Creez des groupes deroulants pour imbriquer des pages sous un libelle parent.
 - Ajoutez des liens externes qui pointent hors de votre site.
+- Le logo dans l'en-tete est cliquable et renvoie toujours a la page d'accueil.
 - La page d'accueil est toujours en premiere position et verrouillee.
 
 ## URL publique
