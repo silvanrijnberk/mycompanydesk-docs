@@ -66,9 +66,26 @@ The contracts list page shows summary metrics:
 - **Archive** — Move to archive
 - **Restore** — Bring back archived contracts
 
+## Signing
+
+Contracts support electronic signing. You can add parties through the contract form, and each party receives a signing link via email.
+
+When a contract has been signed, the contract detail page shows a signing card with:
+
+- The status of each party (invited, viewed, signed, or expired)
+- A **View** button that opens an inline preview of the signed document
+- A download button to save the PDF
+
+The preview page includes a toolbar with print and download actions, and renders the signed contract directly in the browser.
+
+::: info Legacy contracts
+Contracts created before the e-signing feature was added do not show a signing card on the detail page. The system detects legacy contracts by checking whether the contract has signing parties, a template, or signing content. Only contracts created or updated after the e-signing rollout include the signing card.
+:::
+
 ## Tips
 
 - Use contracts together with [recurring invoices](/features/recurring-invoices) for different billing scenarios
 - Link contracts to objects for full rental management
 - Set end dates to get notified before contracts expire
 - Review the contracts filter to see active vs. inactive at a glance
+- Add signing parties when creating a contract to enable electronic signing
