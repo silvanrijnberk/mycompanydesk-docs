@@ -78,8 +78,16 @@ Sobald ein Vertrag signiert wurde, zeigt die Vertragsdetailseite eine Signierkar
 
 Die Vorschauseite enthält eine Werkzeugleiste mit Druck- und Download-Aktionen und zeigt den signierten Vertrag direkt im Browser an.
 
+### Signieren in der Vertragsliste
+
+Die Vertragsliste enthält eine **Signatur**-Spalte, die den Signaturstatus für jeden Vertrag mit E-Signatur anzeigt. Die Status erscheinen als farbige Badges: Entwurf (neutral), gesendet (Warnung), teilweise signiert (Info) und aktiv (Erfolg).
+
+Ein Signaturfilter-Dropdown über der Liste erlaubt es Ihnen, nach Signaturstatus zu filtern oder Verträge ohne E-Signatur ("Keine E-Signatur") anzuzeigen.
+
 ::: info Bestandsverträge
 Verträge, die vor der Einführung der elektronischen Signatur erstellt wurden, zeigen keine Signierkarte auf der Detailseite an. Das System erkennt Bestandsverträge, indem es prüft, ob der Vertrag Signierparteien, eine Vorlage oder Signierinhalte besitzt. Nur Verträge, die nach der Einführung des E-Signings erstellt oder aktualisiert wurden, zeigen die Signierkarte an.
+
+Bestandsverträge zeigen einen Bindestrich in der Signatur-Spalte und erscheinen unter dem Filter "Keine E-Signatur".
 :::
 
 ## Tipps
@@ -88,4 +96,5 @@ Verträge, die vor der Einführung der elektronischen Signatur erstellt wurden, 
 - Verknüpfen Sie Verträge mit Objekten für eine vollständige Mietverwaltung
 - Setzen Sie Enddaten, um vor Vertragsablauf benachrichtigt zu werden
 - Verwenden Sie den Vertragsfilter, um aktive und inaktive Verträge auf einen Blick zu sehen
+- Filtern Sie nach Signaturstatus, um Verträge zu finden, die noch signiert werden müssen
 - Fügen Sie Signierparteien beim Erstellen eines Vertrags hinzu, um die elektronische Signatur zu aktivieren

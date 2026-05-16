@@ -78,8 +78,16 @@ Wanneer een contract is ondertekend, toont de contractdetailpagina een onderteke
 
 De voorbeeldpagina bevat een werkbalk met print- en downloadacties, en toont het ondertekende contract direct in de browser.
 
+### Ondertekenen op de contractenlijst
+
+De contractenlijst heeft een **Tekenstatus**-kolom die de ondertekenstatus toont voor elk contract met e-handtekening. De statussen verschijnen als gekleurde badges: concept (neutraal), verstuurd (waarschuwing), deels getekend (info) en actief (succes).
+
+Een ondertekenfilter boven de lijst laat je filteren op ondertekenstatus, of op contracten zonder e-handtekening ("Geen e-handtekening").
+
 ::: info Oude contracten
 Contracten die zijn aangemaakt voordat de ondertekenfunctie werd toegevoegd, tonen geen ondertekenkaart op de detailpagina. Het systeem herkent oude contracten door te controleren of het contract ondertekenpartijen, een sjabloon of ondertekeninhoud heeft. Alleen contracten die na de introductie van elektronisch ondertekenen zijn aangemaakt of bijgewerkt, tonen de ondertekenkaart.
+
+Oude contracten tonen een streepje in de Tekenstatus-kolom en vallen onder het filter "Geen e-handtekening".
 :::
 
 ## Tips
@@ -88,4 +96,5 @@ Contracten die zijn aangemaakt voordat de ondertekenfunctie werd toegevoegd, ton
 - Koppel contracten aan objecten voor volledig verhuurbeheer
 - Stel einddatums in om een melding te ontvangen voordat contracten aflopen
 - Gebruik het contractenfilter om actief vs. inactief in een oogopslag te zien
+- Filter op ondertekenstatus om contracten te vinden die nog ondertekend moeten worden
 - Voeg ondertekenpartijen toe bij het aanmaken van een contract om elektronisch ondertekenen in te schakelen

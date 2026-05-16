@@ -78,8 +78,16 @@ Lorsqu'un contrat est signe, la page de detail du contrat affiche une carte de s
 
 La page d'apercu comprend une barre d'outils avec des actions d'impression et de telechargement, et affiche le contrat signe directement dans le navigateur.
 
+### Signature sur la liste des contrats
+
+La liste des contrats inclut une colonne **Signature** affichant le statut de signature pour chaque contrat avec signature electronique. Les statuts apparaissent sous forme de badges colores : brouillon (neutre), envoye (avertissement), partiellement signe (info) et actif (succes).
+
+Un filtre de signature au-dessus de la liste vous permet de filtrer par statut de signature, ou d'afficher les contrats sans signature electronique (« Sans signature electronique »).
+
 ::: info Contrats existants
 Les contrats crees avant l'introduction de la signature electronique n'affichent pas de carte de signature sur la page de detail. Le systeme detecte les contrats existants en verifiant si le contrat comporte des parties signataires, un modele ou un contenu de signature. Seuls les contrats crees ou mis a jour apres le deploiement de la signature electronique incluent la carte de signature.
+
+Les contrats existants affichent un tiret dans la colonne Signature et apparaissent sous le filtre « Sans signature electronique ».
 :::
 
 ## Conseils
@@ -88,4 +96,5 @@ Les contrats crees avant l'introduction de la signature electronique n'affichent
 - Liez les contrats aux objets pour une gestion locative complete
 - Definissez des dates de fin pour etre averti avant l'expiration des contrats
 - Utilisez le filtre des contrats pour voir les actifs vs. les inactifs en un coup d'oeil
+- Filtrez par statut de signature pour trouver les contrats qui doivent encore etre signes
 - Ajoutez des parties signataires lors de la creation d'un contrat pour activer la signature electronique
