@@ -81,15 +81,6 @@ Boolean features unlocked per plan:
 
 The full feature list lives in `FEATURE_KEYS` in `plans.config.js`.
 
-## Beta override
-
-Workspaces with `user.role === "beta"` bypass plan restrictions entirely. The entitlement service (`apps/api/src/modules/billing/entitlement.service.js`) returns `{ allowed: true, source: "beta_override" }` for any feature or quota check, even ones the current plan doesn't include. Two beta surfaces exist:
-
-- **Manually assigned beta** — a `lucide:flask-conical` badge appears at the top of the billing page and reads "Beta access — full Business features unlocked"
-- **Open beta** — limited public spots; the page shows a `lucide:rocket` claim card. Once claimed, the user gets a confirmation banner and either a time-bounded or lifetime entitlement depending on the tier configuration
-
-Beta users see plan tiles for context but never hit gating prompts.
-
 ## Stripe portal
 
 The **Manage subscription** button (visible whenever the workspace has an active period or non-Free plan) calls `POST /api/billing/portal`, which returns a one-shot Stripe Customer Portal URL. From the portal you can:
