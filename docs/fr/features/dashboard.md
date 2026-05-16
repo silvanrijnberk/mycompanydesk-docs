@@ -39,6 +39,7 @@ Elements critiques necessitant votre attention :
 - Echeances TVA a venir
 - Contrats arrivant a expiration
 - Alertes de tresorerie faible
+- Depenses importees de la banque a verifier
 
 ### Indicateurs cles
 

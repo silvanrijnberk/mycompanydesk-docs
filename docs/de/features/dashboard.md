@@ -39,6 +39,7 @@ Kritische Punkte, die Ihre Aufmerksamkeit erfordern:
 - Bevorstehende USt.-Fristen
 - Auslaufende Verträge
 - Warnungen bei niedrigem Cashflow
+- Aus Bankimport zu prüfende Ausgaben
 
 ### Wichtige Kennzahlen
 

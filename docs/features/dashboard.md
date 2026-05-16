@@ -65,7 +65,7 @@ Adapts column count to its rendered width: 1 / 2 / 3 / 4 columns for widths < 4 
 The queue is the alerts surface. It groups attention items into tiers and colour-codes them:
 
 - **Tier 1 (red / orange).** Overdue invoices, VAT deadline within the reminder window, cash position negative, overdue bills, VAT review flags, projects over budget, overdue project invoices.
-- **Tier 2 (amber).** Invoice number gaps, uncategorised expenses, draft invoices, VAT checklist incomplete, missing supplier fields on expenses.
+- **Tier 2 (amber).** Invoice number gaps, uncategorised expenses, draft invoices, VAT checklist incomplete, missing supplier fields on expenses, bank-imported expenses waiting for review.
 
 Every alert links to the underlying record list so one click moves you from "I see a number" to "I am fixing it". Stats inside each alert (oldest overdue days, average days, outstanding total) are computed from live workspace data.
 
