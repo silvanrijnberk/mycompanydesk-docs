@@ -6,6 +6,14 @@ title: "Abrechnung & Tarife"
 
 Verwalten Sie Ihr MyCompanyDesk-Abonnement, sehen Sie Ihre Nutzung ein und führen Sie ein Upgrade Ihres Tarifs durch.
 
+## Kostenlose Pro-Testphase
+
+Jeder neue Arbeitsbereich startet mit einer **60-tägigen kostenlosen Pro-Testphase**. Keine Zahlungsmethode erforderlich. Sie erhalten sofort nach dem Erstellen Ihres Arbeitsbereichs vollen Pro-Zugriff.
+
+Wenn die Testphase endet, wechselt Ihr Arbeitsbereich automatisch zum Free-Tarif. Sie können jederzeit während oder nach der Testphase auf einen kostenpflichtigen Tarif upgraden. Kostenpflichtige Abonnements werden über Stripe abgewickelt (siehe [Upgrade](#upgrade)).
+
+Testphasenstatus und verbleibende Tage sehen Sie auf der Abrechnungsseite. Wenn Sie vor Ablauf der Testphase upgraden, endet die Testphase und Ihr bezahlter Zeitraum beginnt sofort.
+
 ## Tarife
 
 MyCompanyDesk bietet drei Tarife:
@@ -47,6 +55,8 @@ Tarife sind in **monatlichen** und **jährlichen** Abrechnungsintervallen verfü
 ## Abonnement verwalten
 
 ### Upgrade
+
+Die Tarifübersicht zeigt immer monatliche und jährliche Intervalloptionen, auch während einer Beta oder Testphase.
 
 1. Gehen Sie zu **Einstellungen > Abrechnung**
 2. Klicken Sie auf **Upgrade** beim gewünschten Tarif

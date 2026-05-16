@@ -27,7 +27,7 @@ Als je de eerste persoon van je bedrijf bent, maak dan een nieuwe werkruimte aan
 2. Kies je gewenste **taal**
 3. Klik op **Werkruimte aanmaken**
 
-Dit maakt een lege werkruimte aan waar je je bedrijfsinformatie, klanten en facturen kunt toevoegen.
+Dit maakt een lege werkruimte aan met een **gratis Pro-proefperiode van 60 dagen** (geen betaalmethode nodig). Je kunt meteen alle Pro-functies verkennen terwijl je je bedrijfsinformatie, klanten en facturen toevoegt.
 
 ### Deelnemen aan een bestaande werkruimte
 

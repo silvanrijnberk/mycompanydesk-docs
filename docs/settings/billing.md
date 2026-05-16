@@ -13,6 +13,14 @@ Open the workspace switcher → **Account** → **Plan & payments**, or navigate
 
 The legacy `/settings/billing` URL is now a redirect stub to the new path; bookmarks still work and the `?checkout=success|canceled` query parameter is preserved across the redirect.
 
+## Free Pro trial
+
+Every new workspace starts with a **60-day free Pro trial**. No payment method is required. You get full Pro features immediately after creating your workspace.
+
+When the trial ends, your workspace moves to the Free plan automatically. You can upgrade to a paid plan at any time during or after the trial. Paid subscriptions are handled through Stripe (see [Checkout flow](#checkout-flow)).
+
+Trial status appears on the billing page with the remaining days. If you upgrade before the trial ends, the trial is cancelled and your paid period starts immediately.
+
 ## Plans
 
 MyCompanyDesk has four plans. Plan definitions live in `apps/api/src/modules/billing/plans.config.js`.
@@ -85,6 +93,8 @@ The **Manage subscription** button (visible whenever the workspace has an active
 Cancellation takes effect at the end of the current paid period; access remains until then.
 
 ## Checkout flow
+
+Stripe checkout is always available regardless of beta or trial status. The plan grid shows monthly and yearly interval toggles unconditionally.
 
 1. Click **Upgrade** on a plan tile
 2. The frontend calls `POST /api/billing/checkout`, which returns a Stripe Checkout URL

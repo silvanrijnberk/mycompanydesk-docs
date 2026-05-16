@@ -6,6 +6,14 @@ title: Facturation et abonnements
 
 Gerez votre abonnement MyCompanyDesk, consultez votre utilisation et mettez a niveau votre plan.
 
+## Periode d'essai Pro gratuite
+
+Chaque nouvel espace de travail commence par une **periode d'essai Pro gratuite de 60 jours**. Aucun moyen de paiement requis. Vous beneficiez immediatement de toutes les fonctionnalites Pro des la creation de votre espace de travail.
+
+Quand la periode d'essai se termine, votre espace de travail passe automatiquement au plan Gratuit. Vous pouvez a tout moment passer a un plan payant pendant ou apres la periode d'essai. Les abonnements payants sont geres via Stripe (voir [Mettre a niveau](#mettre-a-niveau)).
+
+Le statut de la periode d'essai et les jours restants s'affichent sur la page de facturation. Si vous passez a un plan payant avant la fin de l'essai, celui-ci est annule et votre periode payante commence immediatement.
+
 ## Abonnements
 
 MyCompanyDesk propose trois plans :
@@ -47,6 +55,8 @@ Les plans sont disponibles en intervalles de facturation **mensuelle** et **annu
 ## Gerer votre abonnement
 
 ### Mettre a niveau
+
+La grille des plans affiche toujours les options d'intervalle mensuel et annuel, meme pendant une periode beta ou d'essai.
 
 1. Allez dans **Parametres > Facturation**
 2. Cliquez sur **Mettre a niveau** sur le plan souhaite

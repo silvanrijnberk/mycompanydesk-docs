@@ -27,7 +27,7 @@ Wenn Sie die erste Person aus Ihrem Unternehmen sind, erstellen Sie einen neuen 
 2. Wählen Sie Ihre bevorzugte **Sprache**
 3. Klicken Sie auf **Arbeitsbereich erstellen**
 
-Dies erstellt einen neuen Arbeitsbereich, in dem Sie Ihre Unternehmensinformationen, Kunden und Rechnungen hinzufügen können.
+Dies erstellt einen neuen Arbeitsbereich mit einer **60-tägigen kostenlosen Pro-Testphase** (keine Zahlungsmethode erforderlich). Sie können sofort alle Pro-Funktionen erkunden, während Sie Ihre Unternehmensinformationen, Kunden und Rechnungen hinzufügen.
 
 ### Einem bestehenden Arbeitsbereich beitreten
 
