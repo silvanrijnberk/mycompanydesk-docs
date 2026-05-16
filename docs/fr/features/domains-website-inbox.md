@@ -23,29 +23,29 @@ Vous pouvez lancer le flux depuis l'[Assistant de configuration](/fr/getting-sta
 
 L'etape de l'assistant sur `/setup` est le point d'entree recommande. Elle execute via `apply.service.js → activateSubdomain | addDomain → quickEnableInbox` toutes les etapes en une seule soumission, de sorte que l'utilisateur reponde a quelques questions et la plateforme câble tout en dessous.
 
-### Etape 1 — Ajouter un domaine
+### Etape 1 -- Ajouter un domaine
 
 Deux chemins dans l'assistant, tous deux stockes dans la table `domains` :
 
-- **Sous-domaine d'espace de travail gratuit** — `votre-slug.mycompanydesk.com` (ou `.nl` pour les espaces NL). Aucun travail DNS ; le slug est enregistre comme domaine personnalise Cloudflare Pages et le site web est en ligne en quelques secondes. C'est le choix par defaut pour les nouveaux espaces de travail.
-- **Votre propre domaine** — saisissez `acme.fr`. Deux modes de configuration sont pris en charge :
-  - **Mode nameserver** (recommande) — une zone Cloudflare est creee pour le domaine. Vous modifiez les nameservers de votre registraire vers les deux noms d'hôte `*.ns.cloudflare.com` affiches par l'assistant. Cloudflare devient le DNS faisant autorite pour le domaine, ce qui permet l'e-mail, le SSL et la gestion des enregistrements DNS dans MyCompanyDesk.
-  - **Mode CNAME** — uniquement pour les sous-domaines (ex. `portal.acme.fr`). Vous ajoutez un enregistrement CNAME pointant vers `mycompanydesk-app.pages.dev`. Aucun changement de nameserver. Le routage des e-mails n'est pas disponible dans ce mode.
+- **Sous-domaine d'espace de travail gratuit** -- `votre-slug.mycompanydesk.com` (ou `.nl` pour les espaces NL). Aucun travail DNS ; le slug est enregistre comme domaine personnalise Cloudflare Pages et le site web est en ligne en quelques secondes. C'est le choix par defaut pour les nouveaux espaces de travail.
+- **Votre propre domaine** -- saisissez `acme.fr`. Deux modes de configuration sont pris en charge :
+  - **Mode nameserver** (recommande) -- une zone Cloudflare est creee pour le domaine. Vous modifiez les nameservers de votre registraire vers les deux noms d'hôte `*.ns.cloudflare.com` affiches par l'assistant. Cloudflare devient le DNS faisant autorite pour le domaine, ce qui permet l'e-mail, le SSL et la gestion des enregistrements DNS dans MyCompanyDesk.
+  - **Mode CNAME** -- uniquement pour les sous-domaines (ex. `portal.acme.fr`). Vous ajoutez un enregistrement CNAME pointant vers `mycompanydesk-app.pages.dev`. Aucun changement de nameserver. Le routage des e-mails n'est pas disponible dans ce mode.
 
-L'ajout d'un domaine personnalise desactive automatiquement le sous-domaine de l'espace de travail — il y a un site web canonique par entreprise, jamais deux.
+L'ajout d'un domaine personnalise desactive automatiquement le sous-domaine de l'espace de travail -- il y a un site web canonique par entreprise, jamais deux.
 
-### Etape 2 — Verification
+### Etape 2 -- Verification
 
 La verification s'execute a la fois a la demande et par interrogation periodique. La page de detail affiche un bouton **Verifier** (`POST /api/domains/:id/verify`) et un job en arriere-plan reinterroge chaque domaine en attente a intervalles reguliers.
 
 - **Mode nameserver** est verifie des que Cloudflare signale la zone comme `active`. Le statut passe de `pending_nameservers → pending_verification → active`. L'utilisateur est informe via la cloche de notification dans l'application.
 - **Mode CNAME** est verifie en resolvant le CNAME et en confirmant qu'il pointe vers la cible Pages. Le statut passe de `pending_cname → active`.
 
-### Etape 3 — SSL
+### Etape 3 -- SSL
 
 Le SSL est provisionne automatiquement par Cloudflare des que la zone est active. Le mode par defaut est **Full (strict)** ; vous pouvez le modifier depuis `Detail du domaine › SSL` (`off / flexible / full / strict`). Le champ de statut du certificat dans le panneau SSL reflete le resultat de verification de Cloudflare.
 
-### Etape 4 — Le site web est en ligne
+### Etape 4 -- Le site web est en ligne
 
 La page d'entreprise hebergee (voir [Constructeur de site](/fr/advanced/business-page)) est automatiquement publiee a la racine du domaine des que la zone est active. Le resolver `getBusinessPageUrl` de l'assistant retourne, par ordre de priorite :
 
@@ -54,7 +54,7 @@ La page d'entreprise hebergee (voir [Constructeur de site](/fr/advanced/business
 3. Le sous-domaine de l'espace de travail → `https://acme.mycompanydesk.com`
 4. La route portail de secours (`/portal/<slug>`) lorsque rien d'autre n'est configure.
 
-### Etape 5 — La boite de reception capture les e-mails
+### Etape 5 -- La boite de reception capture les e-mails
 
 Pour les domaines personnalises en mode nameserver, l'assistant execute `quickEnableInbox` apres la verification. Cet appel est idempotent et effectue les operations suivantes :
 
@@ -69,21 +69,21 @@ Pour les domaines personnalises en mode nameserver, l'assistant execute `quickEn
 
 ### Domaines personnalises
 
-L'interface se trouve sous **Entreprise > Votre propre adresse .com** — la page leaf est `/workspace/organization/company/address`, montee depuis `apps/web/pages/workspace/organization/company/address.vue` et affichant le composant `SettingsDomains`. Les deux anciens chemins `/workspace/organization/domains` et `/workspace/communication/domains` redirigent ici.
+L'interface se trouve sous **Entreprise > Votre propre adresse .com** -- la page leaf est `/workspace/organization/company/address`, montee depuis `apps/web/pages/workspace/organization/company/address.vue` et affichant le composant `SettingsDomains`. Les deux anciens chemins `/workspace/organization/domains` et `/workspace/communication/domains` redirigent ici.
 
 Ce que la page vous permet de faire :
 
 - **Ajouter un domaine** (mode nameserver ou CNAME).
 - **Verifier** un domaine en attente.
-- **Gerer les enregistrements DNS** — A, AAAA, CNAME, MX, TXT, SRV, CAA, NS. Le CRUD passe par Cloudflare via l'API.
-- **SSL** — consulter le statut du certificat, changer le mode SSL.
-- **Redirections URL** — trois Cloudflare Page Rules gratuites par zone. Modele source + destination + 301/302.
-- **Securite des e-mails** — verification SPF/DMARC/DKIM avec une option "corriger" en un clic qui ecrit des valeurs par defaut securisees (`v=spf1 ~all`, `v=DMARC1; p=quarantine; …`).
-- **Parametres rapides** — activer/desactiver le mode developpement Cloudflare, activer/desactiver le niveau de securite "Under attack", vider le cache.
-- **Analytique** — 30 derniers jours de requêtes, bande passante, menaces, visiteurs, pages vues. Le point de terminaison Cloudflare Analytics actuel est en fin de vie ; la page affiche un etat `unavailable` vide jusqu'a la migration GraphQL.
-- **Supprimer** — suppression logicielle de la ligne (`status = 'removed'`) et demantelement de la zone Cloudflare (ou du domaine Pages en mode CNAME).
+- **Gerer les enregistrements DNS** -- A, AAAA, CNAME, MX, TXT, SRV, CAA, NS. Le CRUD passe par Cloudflare via l'API.
+- **SSL** -- consulter le statut du certificat, changer le mode SSL.
+- **Redirections URL** -- trois Cloudflare Page Rules gratuites par zone. Modele source + destination + 301/302.
+- **Securite des e-mails** -- verification SPF/DMARC/DKIM avec une option "corriger" en un clic qui ecrit des valeurs par defaut securisees (`v=spf1 ~all`, `v=DMARC1; p=quarantine; …`).
+- **Parametres rapides** -- activer/desactiver le mode developpement Cloudflare, activer/desactiver le niveau de securite "Under attack", vider le cache.
+- **Analytique** -- 30 derniers jours de requêtes, bande passante, menaces, visiteurs, pages vues. Le point de terminaison Cloudflare Analytics actuel est en fin de vie ; la page affiche un etat `unavailable` vide jusqu'a la migration GraphQL.
+- **Supprimer** -- suppression logicielle de la ligne (`status = 'removed'`) et demantelement de la zone Cloudflare (ou du domaine Pages en mode CNAME).
 
-#### Table `domains` — l'etat partage
+#### Table `domains` -- l'etat partage
 
 Colonnes notables que l'application lit :
 
@@ -106,14 +106,14 @@ Le constructeur de site se trouve sous **Entreprise > Votre site web** (`/websit
 
 Ce que l'editeur affiche :
 
-- **Onglet Editeur** — Composez des pages en ajoutant et en organisant des sections (hero, texte, galerie, services, equipe, temoignages, formulaire de contact, tarifs, produit, HTML personnalise). Inspectez et modifiez le contenu, la mise en page, le style et l'animation des sections. Les niveaux de tarifs peuvent optionnellement avoir un bouton d'achat qui redirige vers le checkout Mollie ou Stripe Connect. Le bloc produit est une fiche d'achat autonome avec la meme plomberie de paiement.
-- **Onglet Pages** — Créer, renommer, supprimer et filtrer les pages par statut (en ligne, brouillon, planifie). Choisir un modele lors de la creation d'une nouvelle page.
-- **Onglet Style** — Tokens de design pour les couleurs, les polices, l'echelle, le mouvement, les boutons, le CSS personnalise et les snippets d'en-tête (analytique, preconnexions de polices).
-- **Onglet Domaine et SEO** — Gestion des domaines personnalises. Voir la section domaines personnalises ci-dessus.
-- **Onglet Integrations** — Connecter des services tiers.
-- **Editeur de navigation** — Reorganiser les liens d'en-tête par glisser-deposer, avec des groupes deroulants et des liens externes.
-- **Bouton Publier** — Affiche le nombre de modifications non publiees. Publie un snapshot en un clic.
-- **Apercu responsive** — Basculer entre les vues desktop, tablette et mobile dans l'editeur.
+- **Onglet Editeur** -- Composez des pages en ajoutant et en organisant des sections (hero, texte, galerie, services, equipe, temoignages, formulaire de contact, tarifs, produit, HTML personnalise). Inspectez et modifiez le contenu, la mise en page, le style et l'animation des sections. Les niveaux de tarifs peuvent optionnellement avoir un bouton d'achat qui redirige vers le checkout Mollie ou Stripe Connect. Le bloc produit est une fiche d'achat autonome avec la meme plomberie de paiement.
+- **Onglet Pages** -- Créer, renommer, supprimer et filtrer les pages par statut (en ligne, brouillon, planifie). Choisir un modele lors de la creation d'une nouvelle page.
+- **Onglet Style** -- Tokens de design pour les couleurs, les polices, l'echelle, le mouvement, les boutons, le CSS personnalise et les snippets d'en-tête (analytique, preconnexions de polices).
+- **Onglet Domaine et SEO** -- Gestion des domaines personnalises. Voir la section domaines personnalises ci-dessus.
+- **Onglet Integrations** -- Connecter des services tiers.
+- **Editeur de navigation** -- Reorganiser les liens d'en-tête par glisser-deposer, avec des groupes deroulants et des liens externes.
+- **Bouton Publier** -- Affiche le nombre de modifications non publiees. Publie un snapshot en un clic.
+- **Apercu responsive** -- Basculer entre les vues desktop, tablette et mobile dans l'editeur.
 
 Le site public est diffuse a l'URL la plus prioritaire disponible pour l'entreprise : racine du domaine personnalise → sous-domaine de l'espace de travail → route de secours `/portal/<slug>`.
 
@@ -125,15 +125,15 @@ La boite de reception est une interface de premier niveau sur `/inbox` (`apps/we
 
 Fonctionnalites :
 
-- **Fils de discussion** — les e-mails entrants sont regroupes en fils bases sur RFC 822 `Message-ID` / `In-Reply-To` / `References`. Chaque fil contient `last_message_preview`, `participants`, le statut (`open / snoozed / closed / spam`) et des etiquettes.
-- **Repondre** — champ de reponse integre dans le fil. L'expediteur `From` choisit intelligemment l'adresse a laquelle l'e-mail original a ete envoye, de sorte qu'un client qui a ecrit a `support@acme.fr` recoive une reponse de `support@`, pas de `info@`.
-- **Rediger** — formulaire en tiroir avec selection de la boite aux lettres, selection de l'expediteur, selection du client (ou champ `A` libre), sujet, message, pieces jointes. Un avertissement de destinataire rejete est affiche avant l'envoi.
-- **Alias d'envoi** — `info@`, `support@`, `sales@` sont des alias bidirectionnels de la meme boite aux lettres. `noreply@` est un alias d'envoi uniquement — selectionnable comme From, mais les e-mails entrants sont rejetes a l'ingestion.
-- **Pieces jointes** — telechargement avant envoi (redaction et reponse). Les pieces jointes des e-mails entrants sont telechargeables depuis le message ; les URL de telechargement signees expirent apres un court TTL.
-- **Avis d'alias** — lorsqu'un message entrant arrive a une adresse qui n'est pas encore un alias declare, le fil affiche un avis discret avec une action "Ajouter comme alias".
-- **Liaison** — les fils peuvent etre lies a un client, un projet ou une facture pour reference croisee.
-- **Secours catch-all** — les e-mails vers n'importe quelle partie locale du domaine sont achemines vers la boite aux lettres par defaut (`is_default = true`, une par domaine). Cela signifie que les fautes de frappe et les alias non declares ne disparaissent pas silencieusement.
-- **Journal d'audit** — les envois sortants, les modifications de boite aux lettres et les changements d'etat des fils sont enregistres dans une table d'audit pour l'espace de travail. Actuellement API uniquement (pas encore d'interface utilisateur) — accessible au personnel d'assistance pour le depannage.
+- **Fils de discussion** -- les e-mails entrants sont regroupes en fils bases sur RFC 822 `Message-ID` / `In-Reply-To` / `References`. Chaque fil contient `last_message_preview`, `participants`, le statut (`open / snoozed / closed / spam`) et des etiquettes.
+- **Repondre** -- champ de reponse integre dans le fil. L'expediteur `From` choisit intelligemment l'adresse a laquelle l'e-mail original a ete envoye, de sorte qu'un client qui a ecrit a `support@acme.fr` recoive une reponse de `support@`, pas de `info@`.
+- **Rediger** -- formulaire en tiroir avec selection de la boite aux lettres, selection de l'expediteur, selection du client (ou champ `A` libre), sujet, message, pieces jointes. Un avertissement de destinataire rejete est affiche avant l'envoi.
+- **Alias d'envoi** -- `info@`, `support@`, `sales@` sont des alias bidirectionnels de la meme boite aux lettres. `noreply@` est un alias d'envoi uniquement -- selectionnable comme From, mais les e-mails entrants sont rejetes a l'ingestion.
+- **Pieces jointes** -- telechargement avant envoi (redaction et reponse). Les pieces jointes des e-mails entrants sont telechargeables depuis le message ; les URL de telechargement signees expirent apres un court TTL.
+- **Avis d'alias** -- lorsqu'un message entrant arrive a une adresse qui n'est pas encore un alias declare, le fil affiche un avis discret avec une action "Ajouter comme alias".
+- **Liaison** -- les fils peuvent etre lies a un client, un projet ou une facture pour reference croisee.
+- **Secours catch-all** -- les e-mails vers n'importe quelle partie locale du domaine sont achemines vers la boite aux lettres par defaut (`is_default = true`, une par domaine). Cela signifie que les fautes de frappe et les alias non declares ne disparaissent pas silencieusement.
+- **Journal d'audit** -- les envois sortants, les modifications de boite aux lettres et les changements d'etat des fils sont enregistres dans une table d'audit pour l'espace de travail. Actuellement API uniquement (pas encore d'interface utilisateur) -- accessible au personnel d'assistance pour le depannage.
 
 La boite de reception utilise votre domaine personnalise uniquement apres que `quickEnableInbox` a ete execute avec succes et que les enregistrements MX apex pointent vers Cloudflare. Jusque-la, l'espace de travail peut toujours envoyer des e-mails via le chemin de livraison par defaut decrit dans [Integration e-mail](/fr/settings/email), mais il ne peut pas recevoir d'e-mails.
 
@@ -152,11 +152,11 @@ Les enregistrements de vente sont crees par le point de terminaison de checkout 
 
 ## Envoyer des e-mails vs recevoir des e-mails
 
-Ce lot correspond au côte **reception**. Les e-mails sortants — envoi de factures, rappels, envoi de devis — sont geres par le pipeline e-mail plus large decrit dans [Integration e-mail](/fr/settings/email). Une fois qu'un domaine est verifie et la boite de reception activee, le meme domaine est egalement utilise comme adresse From pour les e-mails sortants, avec signature DKIM sur `mail.acme.fr`.
+Ce lot correspond au côte **reception**. Les e-mails sortants -- envoi de factures, rappels, envoi de devis -- sont geres par le pipeline e-mail plus large decrit dans [Integration e-mail](/fr/settings/email). Une fois qu'un domaine est verifie et la boite de reception activee, le meme domaine est egalement utilise comme adresse From pour les e-mails sortants, avec signature DKIM sur `mail.acme.fr`.
 
 ## Limites et points d'attention
 
-- **Un site web par entreprise.** L'ajout d'un domaine personnalise desactive le sous-domaine de l'espace de travail. La suppression du domaine ne reactive pas automatiquement le slug — reactivez-le manuellement si vous souhaitez revenir en arriere.
+- **Un site web par entreprise.** L'ajout d'un domaine personnalise desactive le sous-domaine de l'espace de travail. La suppression du domaine ne reactive pas automatiquement le slug -- reactivez-le manuellement si vous souhaitez revenir en arriere.
 - **Le mode CNAME n'a pas d'e-mail.** Le routage des e-mails necessite une zone Cloudflare complete, ce que seul le mode nameserver fournit.
 - **L'assistant refuse d'ecraser un MX tiers existant.** Si votre apex pointe deja vers Google Workspace ou Microsoft 365, `quickEnableInbox` retourne `apexMx.status = 'conflict'` et vous devez choisir : migrer le MX vers Cloudflare, ou rester chez votre fournisseur existant et sauter la boite de reception integree.
 - **Sous-domaines reserves.** `app`, `admin`, `api`, `www`, `mail`, `support`, `portal`, `dashboard` et quelques autres sont bloques au niveau du slug de l'espace de travail.
@@ -164,8 +164,8 @@ Ce lot correspond au côte **reception**. Les e-mails sortants — envoi de fact
 
 ## Voir aussi
 
-- [Assistant de configuration](/fr/getting-started/company-setup) — l'intégration magique qui pilote le flux integre.
-- [Integration e-mail](/fr/settings/email) — e-mails sortants, selection de l'expediteur, suivi de livraison.
-- [Constructeur de site](/fr/advanced/business-page) — le guide complet de l'editeur.
-- [Parametres de l'entreprise](/fr/settings/company) — le parapluie qui contient A propos / Apparence / Site web / Adresse.
-- [Facturation et abonnements](/fr/settings/billing) — les flags de fonctionnalites qui contrôlent le lot.
+- [Assistant de configuration](/fr/getting-started/company-setup) -- l'intégration magique qui pilote le flux integre.
+- [Integration e-mail](/fr/settings/email) -- e-mails sortants, selection de l'expediteur, suivi de livraison.
+- [Constructeur de site](/fr/advanced/business-page) -- le guide complet de l'editeur.
+- [Parametres de l'entreprise](/fr/settings/company) -- le parapluie qui contient A propos / Apparence / Site web / Adresse.
+- [Facturation et abonnements](/fr/settings/billing) -- les flags de fonctionnalites qui contrôlent le lot.

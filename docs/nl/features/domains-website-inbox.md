@@ -23,29 +23,29 @@ Je kunt de gebundelde flow starten vanuit de [Setup-wizard](/nl/getting-started/
 
 De wizardstap op `/setup` is de aanbevolen start. Het voert via `apply.service.js → activateSubdomain | addDomain → quickEnableInbox` alle stappen in een keer uit, dus de gebruiker beantwoordt een paar vragen en het platform regelt alles eronder.
 
-### Stap 1 — Domein toevoegen
+### Stap 1 -- Domein toevoegen
 
 Twee routes in de wizard, beide opgeslagen in de `domains`-tabel:
 
-- **Gratis werkruimte-subdomein** — `jouw-slug.mycompanydesk.com` (of `.nl` voor NL-werkruimtes). Geen DNS-werk; de slug wordt geregistreerd als Cloudflare Pages custom domain en de website is binnen enkele seconden live. Dit is de standaard voor nieuwe werkruimtes.
-- **Je eigen domein** — voer `acme.nl` in. Twee setup-modi worden ondersteund:
-  - **Nameserver-modus** (aanbevolen) — er wordt een Cloudflare-zone aangemaakt voor het domein. Je wijzigt de nameservers van je registrar naar de twee `*.ns.cloudflare.com`-hostnamen die de wizard toont. Cloudflare wordt de gezaghebbende DNS voor het domein, wat e-mail, SSL en DNS-beheer binnen MyCompanyDesk mogelijk maakt.
-  - **CNAME-modus** — alleen voor subdomeinen (bijv. `portal.acme.nl`). Je voegt een CNAME-record toe die naar `mycompanydesk-app.pages.dev` wijst. Geen nameserverwijziging. E-mailroutering is niet beschikbaar in deze modus.
+- **Gratis werkruimte-subdomein** -- `jouw-slug.mycompanydesk.com` (of `.nl` voor NL-werkruimtes). Geen DNS-werk; de slug wordt geregistreerd als Cloudflare Pages custom domain en de website is binnen enkele seconden live. Dit is de standaard voor nieuwe werkruimtes.
+- **Je eigen domein** -- voer `acme.nl` in. Twee setup-modi worden ondersteund:
+  - **Nameserver-modus** (aanbevolen) -- er wordt een Cloudflare-zone aangemaakt voor het domein. Je wijzigt de nameservers van je registrar naar de twee `*.ns.cloudflare.com`-hostnamen die de wizard toont. Cloudflare wordt de gezaghebbende DNS voor het domein, wat e-mail, SSL en DNS-beheer binnen MyCompanyDesk mogelijk maakt.
+  - **CNAME-modus** -- alleen voor subdomeinen (bijv. `portal.acme.nl`). Je voegt een CNAME-record toe die naar `mycompanydesk-app.pages.dev` wijst. Geen nameserverwijziging. E-mailroutering is niet beschikbaar in deze modus.
 
-Het toevoegen van een eigen domein deactiveert automatisch het werkruimte-subdomein — er is een canonieke website per bedrijf, nooit twee.
+Het toevoegen van een eigen domein deactiveert automatisch het werkruimte-subdomein -- er is een canonieke website per bedrijf, nooit twee.
 
-### Stap 2 — Verificatie
+### Stap 2 -- Verificatie
 
 Verificatie vindt zowel op aanvraag als via een poll plaats. De detailpagina heeft een **Verifiëren**-knop (`POST /api/domains/:id/verify`), en een achtergrondjob controleert elk pending domein met tussenpozen opnieuw.
 
 - **Nameserver-modus** wordt geverifieerd zodra Cloudflare de zone als `active` meldt. De status gaat `pending_nameservers → pending_verification → active`. De gebruiker krijgt een melding via de in-app notificatiebel zodra de overgang plaatsvindt.
 - **CNAME-modus** wordt geverifieerd door de CNAME op te lossen en te controleren of die naar het Pages-doel wijst. Status gaat `pending_cname → active`.
 
-### Stap 3 — SSL
+### Stap 3 -- SSL
 
 SSL wordt automatisch door Cloudflare geregeld zodra de zone actief is. De standaardmodus is **Full (strict)**; je kunt dit wijzigen via `Domeindetail › SSL` (`off / flexible / full / strict`). Het certificaatstatusveld op het SSL-paneel weerspiegelt Cloudflare's verificatieresultaat.
 
-### Stap 4 — Website gaat live
+### Stap 4 -- Website gaat live
 
 De gehoste bedrijfspagina (zie [Sitebouwer](/nl/advanced/business-page)) wordt automatisch gepubliceerd op de domein-root zodra de zone actief is. De `getBusinessPageUrl`-resolver van de wizard retourneert, in volgorde van prioriteit:
 
@@ -54,7 +54,7 @@ De gehoste bedrijfspagina (zie [Sitebouwer](/nl/advanced/business-page)) wordt a
 3. Het werkruimte-subdomein → `https://acme.mycompanydesk.com`
 4. De terugvalportalroute (`/portal/<slug>`) wanneer er niets anders is geconfigureerd.
 
-### Stap 5 — Inbox ontvangt mail
+### Stap 5 -- Inbox ontvangt mail
 
 Voor nameserver-modus eigen domeinen voert de wizard `quickEnableInbox` uit na verificatie. Die aanroep is idempotent en doet het volgende:
 
@@ -69,21 +69,21 @@ Voor nameserver-modus eigen domeinen voert de wizard `quickEnableInbox` uit na v
 
 ### Eigen domeinen
 
-UI staat op `Bedrijf › Je eigen .com-adres` — de leaf-pagina is `/workspace/organization/company/address`, gemount vanuit `apps/web/pages/workspace/organization/company/address.vue` en toont de `SettingsDomains`-component. De twee oudere paden `/workspace/organization/domains` en `/workspace/communication/domains` verwijzen hierheen.
+UI staat op `Bedrijf › Je eigen .com-adres` -- de leaf-pagina is `/workspace/organization/company/address`, gemount vanuit `apps/web/pages/workspace/organization/company/address.vue` en toont de `SettingsDomains`-component. De twee oudere paden `/workspace/organization/domains` en `/workspace/communication/domains` verwijzen hierheen.
 
 Wat je op de pagina kunt doen:
 
 - **Domein toevoegen** (nameserver- of CNAME-modus).
 - **Verifiëren** van een pending domein.
-- **DNS-records beheren** — A, AAAA, CNAME, MX, TXT, SRV, CAA, NS. CRUD gaat via Cloudflare via de API.
-- **SSL** — certificaatstatus bekijken, SSL-modus wijzigen.
-- **URL-doorverwijzingen** — drie gratis Cloudflare Page Rules per zone. Bronpatroon + bestemming + 301/302.
-- **E-mailbeveiliging** — SPF/DMARC/DKIM-controle met een een-klik "fix" die veilige standaardwaarden schrijft (`v=spf1 ~all`, `v=DMARC1; p=quarantine; …`).
-- **Snelle instellingen** — Cloudflare Development Mode aan/uit, "Under attack"-beveiligingsniveau aan/uit, cache legen.
-- **Analytics** — laatste 30 dagen van verzoeken, bandbreedte, dreigingen, bezoekers, paginaweergaven. Het huidige Cloudflare Analytics-eindpunt is uitgefaseerd; de pagina toont een lege `unavailable`-status tot de GraphQL-migratie landt.
-- **Verwijderen** — soft-delete van de rij (`status = 'removed'`) en afbreken van de Cloudflare-zone (of het Pages-domein in CNAME-modus).
+- **DNS-records beheren** -- A, AAAA, CNAME, MX, TXT, SRV, CAA, NS. CRUD gaat via Cloudflare via de API.
+- **SSL** -- certificaatstatus bekijken, SSL-modus wijzigen.
+- **URL-doorverwijzingen** -- drie gratis Cloudflare Page Rules per zone. Bronpatroon + bestemming + 301/302.
+- **E-mailbeveiliging** -- SPF/DMARC/DKIM-controle met een een-klik "fix" die veilige standaardwaarden schrijft (`v=spf1 ~all`, `v=DMARC1; p=quarantine; …`).
+- **Snelle instellingen** -- Cloudflare Development Mode aan/uit, "Under attack"-beveiligingsniveau aan/uit, cache legen.
+- **Analytics** -- laatste 30 dagen van verzoeken, bandbreedte, dreigingen, bezoekers, paginaweergaven. Het huidige Cloudflare Analytics-eindpunt is uitgefaseerd; de pagina toont een lege `unavailable`-status tot de GraphQL-migratie landt.
+- **Verwijderen** -- soft-delete van de rij (`status = 'removed'`) en afbreken van de Cloudflare-zone (of het Pages-domein in CNAME-modus).
 
-#### `domains`-tabel — de gedeelde status
+#### `domains`-tabel -- de gedeelde status
 
 Belangrijke kolommen die de app leest:
 
@@ -106,14 +106,14 @@ De sitebouwer staat op `Bedrijf › Je website` (`/website`). Het is een volwaar
 
 Wat de editor laat zien:
 
-- **Editor-tab** — Stel pagina's samen door secties toe te voegen en te rangschikken (hero, tekst, galerij, diensten, team, testimonials, contactformulier, tarieven, product, aangepaste HTML). Bekijk en bewerk sectie-inhoud, layout, stijl en animatie. Tarieven kunnen optioneel een koopknop krijgen die doorverwijst naar de Mollie- of Stripe Connect-checkout. Het productblok is een losse koopkaart met dezelfde betalingskoppeling.
-- **Pagina's-tab** — Pagina's aanmaken, hernoemen, verwijderen en filteren op status (live, concept, ingepland). Kies een sjabloon bij het maken van een nieuwe pagina.
-- **Stijl-tab** — Ontwerptokens voor kleuren, lettertypes, schaal, beweging, knoppen, aangepaste CSS en head-snippets (analytics, lettertype-preconnects).
-- **Domein & SEO-tab** — Eigen domeinbeheer. Zie de sectie eigen domeinen hierboven.
-- **Koppelingen-tab** — Diensten van derden verbinden.
-- **Navigatie-editor** — Sleep en zet headerlinks op volgorde, met dropdown-groepen en externe links.
-- **Publiceerknop** — Toont het aantal ongepubliceerde wijzigingen. Publiceert een snapshot met een klik.
-- **Responsieve preview** — Schakel tussen desktop-, tablet- en mobiele weergave in de editor.
+- **Editor-tab** -- Stel pagina's samen door secties toe te voegen en te rangschikken (hero, tekst, galerij, diensten, team, testimonials, contactformulier, tarieven, product, aangepaste HTML). Bekijk en bewerk sectie-inhoud, layout, stijl en animatie. Tarieven kunnen optioneel een koopknop krijgen die doorverwijst naar de Mollie- of Stripe Connect-checkout. Het productblok is een losse koopkaart met dezelfde betalingskoppeling.
+- **Pagina's-tab** -- Pagina's aanmaken, hernoemen, verwijderen en filteren op status (live, concept, ingepland). Kies een sjabloon bij het maken van een nieuwe pagina.
+- **Stijl-tab** -- Ontwerptokens voor kleuren, lettertypes, schaal, beweging, knoppen, aangepaste CSS en head-snippets (analytics, lettertype-preconnects).
+- **Domein & SEO-tab** -- Eigen domeinbeheer. Zie de sectie eigen domeinen hierboven.
+- **Koppelingen-tab** -- Diensten van derden verbinden.
+- **Navigatie-editor** -- Sleep en zet headerlinks op volgorde, met dropdown-groepen en externe links.
+- **Publiceerknop** -- Toont het aantal ongepubliceerde wijzigingen. Publiceert een snapshot met een klik.
+- **Responsieve preview** -- Schakel tussen desktop-, tablet- en mobiele weergave in de editor.
 
 De openbare site wordt getoond op de best beschikbare URL die het bedrijf bezit: eigen domein-root → werkruimte-subdomein → terugval `/portal/<slug>`-route.
 
@@ -125,15 +125,15 @@ De inbox is een top-level weergave op `/inbox` (`apps/web/pages/inbox/index.vue`
 
 Mogelijkheden:
 
-- **Threading** — inkomende mail wordt gegroepeerd in threads op basis van RFC 822 `Message-ID` / `In-Reply-To` / `References`. Elke thread bevat `last_message_preview`, `participants`, status (`open / snoozed / closed / spam`) en labels.
-- **Beantwoorden** — inline antwoordveld op de thread. Slimme `From` kiest het adres waarnaar de oorspronkelijke mail was gestuurd, zodat een klant die naar `support@acme.nl` mailde antwoord krijgt van `support@`, niet `info@`.
-- **Opstellen** — ladeformulier met mailboxkiezer, send-as-kiezer, klantkiezer (of vrij `Aan`), onderwerp, bericht, bijlagen. Waarschuwing voor bounced ontvanger wordt getoond voor verzending.
-- **Send-as aliassen** — `info@`, `support@`, `sales@` zijn bidirectionele aliassen op dezelfde mailbox. `noreply@` is alleen-verzend — selecteerbaar als From, maar inkomende mail erop wordt weggegooid bij opname.
-- **Bijlagen** — uploaden voor verzending (zowel opstellen als beantwoorden). Bijlagen op inkomende mail zijn downloadbaar vanuit het bericht; ondertekende download-URL's verlopen na een korte TTL.
-- **Alias-melding** — wanneer een inkomend bericht binnenkomt op een adres dat nog geen geregistreerd alias is, toont de thread een zachte melding met een "Toevoegen als alias"-actie.
-- **Koppelen** — threads kunnen worden gekoppeld aan een klant, project of factuur voor kruisverwijzing.
-- **Catch-all terugval** — mail naar elk lokaal deel op het domein valt door naar de standaardmailbox (`is_default = true`, een per domein). Dit betekent dat typefouten en niet-gedeclareerde aliassen niet stil verdwijnen.
-- **Auditlog** — uitgaande verzendingen, mailboxwijzigingen en threadstatuswijzigingen worden vastgelegd in een audittabel voor de werkruimte. Momenteel alleen API (nog geen UI) — toegankelijk voor supportmedewerkers voor troubleshooting.
+- **Threading** -- inkomende mail wordt gegroepeerd in threads op basis van RFC 822 `Message-ID` / `In-Reply-To` / `References`. Elke thread bevat `last_message_preview`, `participants`, status (`open / snoozed / closed / spam`) en labels.
+- **Beantwoorden** -- inline antwoordveld op de thread. Slimme `From` kiest het adres waarnaar de oorspronkelijke mail was gestuurd, zodat een klant die naar `support@acme.nl` mailde antwoord krijgt van `support@`, niet `info@`.
+- **Opstellen** -- ladeformulier met mailboxkiezer, send-as-kiezer, klantkiezer (of vrij `Aan`), onderwerp, bericht, bijlagen. Waarschuwing voor bounced ontvanger wordt getoond voor verzending.
+- **Send-as aliassen** -- `info@`, `support@`, `sales@` zijn bidirectionele aliassen op dezelfde mailbox. `noreply@` is alleen-verzend -- selecteerbaar als From, maar inkomende mail erop wordt weggegooid bij opname.
+- **Bijlagen** -- uploaden voor verzending (zowel opstellen als beantwoorden). Bijlagen op inkomende mail zijn downloadbaar vanuit het bericht; ondertekende download-URL's verlopen na een korte TTL.
+- **Alias-melding** -- wanneer een inkomend bericht binnenkomt op een adres dat nog geen geregistreerd alias is, toont de thread een zachte melding met een "Toevoegen als alias"-actie.
+- **Koppelen** -- threads kunnen worden gekoppeld aan een klant, project of factuur voor kruisverwijzing.
+- **Catch-all terugval** -- mail naar elk lokaal deel op het domein valt door naar de standaardmailbox (`is_default = true`, een per domein). Dit betekent dat typefouten en niet-gedeclareerde aliassen niet stil verdwijnen.
+- **Auditlog** -- uitgaande verzendingen, mailboxwijzigingen en threadstatuswijzigingen worden vastgelegd in een audittabel voor de werkruimte. Momenteel alleen API (nog geen UI) -- toegankelijk voor supportmedewerkers voor troubleshooting.
 
 De inbox gebruikt je eigen domein pas nadat `quickEnableInbox` succesvol is uitgevoerd en de apex MX-records naar Cloudflare wijzen. Tot die tijd kan de werkruimte wel mail versturen via het standaard afleverpad beschreven in [E-mailintegratie](/nl/settings/email), maar geen mail ontvangen.
 
@@ -152,11 +152,11 @@ Verkooprecords worden aangemaakt door het openbare checkout-eindpunt (`POST /pub
 
 ## Mail verzenden vs mail ontvangen
 
-Deze bundel is de **ontvangstkant**. Uitgaande e-mail — factuurverzending, herinneringen, offerteverzending — wordt afgehandeld door de bredere e-mailpipeline beschreven in [E-mailintegratie](/nl/settings/email). Zodra een domein is geverifieerd en de inbox is ingeschakeld, wordt hetzelfde domein ook gebruikt als From-adres voor uitgaande mail, met DKIM-ondertekening op `mail.acme.nl`.
+Deze bundel is de **ontvangstkant**. Uitgaande e-mail -- factuurverzending, herinneringen, offerteverzending -- wordt afgehandeld door de bredere e-mailpipeline beschreven in [E-mailintegratie](/nl/settings/email). Zodra een domein is geverifieerd en de inbox is ingeschakeld, wordt hetzelfde domein ook gebruikt als From-adres voor uitgaande mail, met DKIM-ondertekening op `mail.acme.nl`.
 
 ## Limieten en aandachtspunten
 
-- **Een website per bedrijf.** Het toevoegen van een eigen domein deactiveert het werkruimte-subdomein. Het verwijderen van het domein herstelt de slug niet automatisch — activeer het handmatig opnieuw als je wilt terugvallen.
+- **Een website per bedrijf.** Het toevoegen van een eigen domein deactiveert het werkruimte-subdomein. Het verwijderen van het domein herstelt de slug niet automatisch -- activeer het handmatig opnieuw als je wilt terugvallen.
 - **CNAME-modus heeft geen e-mail.** E-mailroutering vereist een volledige Cloudflare-zone, wat alleen nameserver-modus biedt.
 - **De wizard weigert een bestaande externe MX te overschrijven.** Als je apex al naar Google Workspace of Microsoft 365 wijst, retourneert `quickEnableInbox` `apexMx.status = 'conflict'` en moet je kiezen: migreer MX naar Cloudflare, of blijf bij je bestaande provider en sla de gebundelde inbox over.
 - **Gereserveerde subdomeinen.** `app`, `admin`, `api`, `www`, `mail`, `support`, `portal`, `dashboard` en een handvol andere zijn geblokkeerd op werkruimte-slug-niveau.
@@ -164,8 +164,8 @@ Deze bundel is de **ontvangstkant**. Uitgaande e-mail — factuurverzending, her
 
 ## Gerelateerd
 
-- [Setup-wizard](/nl/getting-started/company-setup) — de magische onboarding die de gebundelde flow aandrijft.
-- [E-mailintegratie](/nl/settings/email) — uitgaande e-mail, send-as-kiezer, afleveringsregistratie.
-- [Sitebouwer](/nl/advanced/business-page) — de volledige editorgids.
-- [Bedrijfsinstellingen](/nl/settings/company) — de paraplu die Over / Look / Website / Adres bevat.
-- [Facturering & Abonnementen](/nl/settings/billing) — feature flags die de bundel beheren.
+- [Setup-wizard](/nl/getting-started/company-setup) -- de magische onboarding die de gebundelde flow aandrijft.
+- [E-mailintegratie](/nl/settings/email) -- uitgaande e-mail, send-as-kiezer, afleveringsregistratie.
+- [Sitebouwer](/nl/advanced/business-page) -- de volledige editorgids.
+- [Bedrijfsinstellingen](/nl/settings/company) -- de paraplu die Over / Look / Website / Adres bevat.
+- [Facturering & Abonnementen](/nl/settings/billing) -- feature flags die de bundel beheren.

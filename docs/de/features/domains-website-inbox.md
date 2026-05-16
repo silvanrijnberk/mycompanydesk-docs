@@ -23,29 +23,29 @@ Sie können den gebündelten Ablauf über den [Einrichtungsassistenten](/de/gett
 
 Der Assistentenschritt unter `/setup` ist der empfohlene Einstiegspunkt. Er führt über `apply.service.js → activateSubdomain | addDomain → quickEnableInbox` alle Schritte auf einmal aus, sodass der Benutzer ein paar Fragen beantwortet und die Plattform alles darunter verdrahtet.
 
-### Schritt 1 — Domain hinzufügen
+### Schritt 1 -- Domain hinzufügen
 
 Zwei Wege im Assistenten, beide in der `domains`-Tabelle gespeichert:
 
-- **Kostenlose Workspace-Subdomain** — `ihr-slug.mycompanydesk.com` (oder `.nl` für NL-Workspaces). Keine DNS-Arbeit; der Slug wird als Cloudflare Pages Custom Domain registriert und die Website ist innerhalb von Sekunden live. Dies ist der Standard für neue Workspaces.
-- **Ihre eigene Domain** — geben Sie `acme.de` ein. Zwei Setup-Modi werden unterstützt:
-  - **Nameserver-Modus** (empfohlen) — es wird eine Cloudflare-Zone für die Domain erstellt. Sie ändern die Nameserver Ihres Registrars auf die beiden `*.ns.cloudflare.com`-Hostnamen, die der Assistent anzeigt. Cloudflare wird zum autoritativen DNS für die Domain, was E-Mail, SSL und DNS-Record-Verwaltung innerhalb von MyCompanyDesk ermöglicht.
-  - **CNAME-Modus** — nur für Subdomains (z. B. `portal.acme.de`). Sie fügen einen CNAME-Record hinzu, der auf `mycompanydesk-app.pages.dev` zeigt. Keine Nameserver-Änderung. E-Mail-Routing ist in diesem Modus nicht verfügbar.
+- **Kostenlose Workspace-Subdomain** -- `ihr-slug.mycompanydesk.com` (oder `.nl` für NL-Workspaces). Keine DNS-Arbeit; der Slug wird als Cloudflare Pages Custom Domain registriert und die Website ist innerhalb von Sekunden live. Dies ist der Standard für neue Workspaces.
+- **Ihre eigene Domain** -- geben Sie `acme.de` ein. Zwei Setup-Modi werden unterstützt:
+  - **Nameserver-Modus** (empfohlen) -- es wird eine Cloudflare-Zone für die Domain erstellt. Sie ändern die Nameserver Ihres Registrars auf die beiden `*.ns.cloudflare.com`-Hostnamen, die der Assistent anzeigt. Cloudflare wird zum autoritativen DNS für die Domain, was E-Mail, SSL und DNS-Record-Verwaltung innerhalb von MyCompanyDesk ermöglicht.
+  - **CNAME-Modus** -- nur für Subdomains (z. B. `portal.acme.de`). Sie fügen einen CNAME-Record hinzu, der auf `mycompanydesk-app.pages.dev` zeigt. Keine Nameserver-Änderung. E-Mail-Routing ist in diesem Modus nicht verfügbar.
 
-Das Hinzufügen einer eigenen Domain deaktiviert automatisch die Workspace-Subdomain — es gibt eine kanonische Website pro Unternehmen, niemals zwei.
+Das Hinzufügen einer eigenen Domain deaktiviert automatisch die Workspace-Subdomain -- es gibt eine kanonische Website pro Unternehmen, niemals zwei.
 
-### Schritt 2 — Verifizierung
+### Schritt 2 -- Verifizierung
 
 Die Verifizierung erfolgt sowohl auf Abruf als auch per Polling. Die Detailseite zeigt eine **Verifizieren**-Schaltfläche (`POST /api/domains/:id/verify`), und ein Hintergrundjob prüft jede ausstehende Domain in Intervallen erneut.
 
 - **Nameserver-Modus** wird verifiziert, sobald Cloudflare die Zone als `active` meldet. Der Status wechselt `pending_nameservers → pending_verification → active`. Der Benutzer wird über die In-App-Benachrichtigungsglocke informiert.
 - **CNAME-Modus** wird verifiziert, indem der CNAME aufgelöst und geprüft wird, ob er auf das Pages-Ziel zeigt. Status wechselt `pending_cname → active`.
 
-### Schritt 3 — SSL
+### Schritt 3 -- SSL
 
 SSL wird automatisch von Cloudflare bereitgestellt, sobald die Zone aktiv ist. Der Standardmodus ist **Full (strict)**; Sie können ihn unter `Domain-Detail › SSL` ändern (`off / flexible / full / strict`). Das Zertifikatsstatusfeld im SSL-Panel spiegelt das Verifizierungsergebnis von Cloudflare wider.
 
-### Schritt 4 — Website geht live
+### Schritt 4 -- Website geht live
 
 Die gehostete Unternehmensseite (siehe [Website-Builder](/de/advanced/business-page)) wird automatisch unter der Domain-Root veröffentlicht, sobald die Zone aktiv ist. Der `getBusinessPageUrl`-Resolver des Assistenten gibt zurück, in Prioritätsreihenfolge:
 
@@ -54,7 +54,7 @@ Die gehostete Unternehmensseite (siehe [Website-Builder](/de/advanced/business-p
 3. Die Workspace-Subdomain → `https://acme.mycompanydesk.com`
 4. Die Fallback-Portalroute (`/portal/<slug>`), wenn nichts anderes konfiguriert ist.
 
-### Schritt 5 — Posteingang empfängt E-Mails
+### Schritt 5 -- Posteingang empfängt E-Mails
 
 Für Nameserver-Modus eigene Domains führt der Assistent `quickEnableInbox` nach der Verifizierung aus. Dieser Aufruf ist idempotent und führt Folgendes aus:
 
@@ -69,21 +69,21 @@ Für Nameserver-Modus eigene Domains führt der Assistent `quickEnableInbox` nac
 
 ### Eigene Domains
 
-Die Benutzeroberfläche befindet sich unter **Unternehmen > Ihre eigene .com-Adresse** — die Leaf-Seite ist `/workspace/organization/company/address`, gemountet von `apps/web/pages/workspace/organization/company/address.vue` und rendert die `SettingsDomains`-Komponente. Die beiden älteren Pfade `/workspace/organization/domains` und `/workspace/communication/domains` leiten hierher um.
+Die Benutzeroberfläche befindet sich unter **Unternehmen > Ihre eigene .com-Adresse** -- die Leaf-Seite ist `/workspace/organization/company/address`, gemountet von `apps/web/pages/workspace/organization/company/address.vue` und rendert die `SettingsDomains`-Komponente. Die beiden älteren Pfade `/workspace/organization/domains` und `/workspace/communication/domains` leiten hierher um.
 
 Was Sie auf der Seite tun können:
 
 - **Domain hinzufügen** (Nameserver- oder CNAME-Modus).
 - **Verifizieren** einer ausstehenden Domain.
-- **DNS-Records verwalten** — A, AAAA, CNAME, MX, TXT, SRV, CAA, NS. CRUD erfolgt über Cloudflare via API.
-- **SSL** — Zertifikatsstatus anzeigen, SSL-Modus ändern.
-- **URL-Weiterleitungen** — drei kostenlose Cloudflare Page Rules pro Zone. Quellmuster + Ziel + 301/302.
-- **E-Mail-Sicherheit** — SPF/DMARC/DKIM-Prüfung mit einer Ein-Klick-"Fix"-Option, die sichere Standardwerte schreibt (`v=spf1 ~all`, `v=DMARC1; p=quarantine; …`).
-- **Schnelleinstellungen** — Cloudflare Development Mode ein/aus, "Under Attack"-Sicherheitsstufe ein/aus, Cache leeren.
-- **Analytics** — die letzten 30 Tage mit Anfragen, Bandbreite, Bedrohungen, Besuchern, Seitenaufrufen. Der aktuelle Cloudflare Analytics-Endpunkt ist abgekündigt; die Seite zeigt einen leeren `unavailable`-Zustand, bis die GraphQL-Migration erfolgt.
-- **Entfernen** — Soft-Delete der Zeile (`status = 'removed'`) und Abbau der Cloudflare-Zone (oder der Pages-Domain im CNAME-Modus).
+- **DNS-Records verwalten** -- A, AAAA, CNAME, MX, TXT, SRV, CAA, NS. CRUD erfolgt über Cloudflare via API.
+- **SSL** -- Zertifikatsstatus anzeigen, SSL-Modus ändern.
+- **URL-Weiterleitungen** -- drei kostenlose Cloudflare Page Rules pro Zone. Quellmuster + Ziel + 301/302.
+- **E-Mail-Sicherheit** -- SPF/DMARC/DKIM-Prüfung mit einer Ein-Klick-"Fix"-Option, die sichere Standardwerte schreibt (`v=spf1 ~all`, `v=DMARC1; p=quarantine; …`).
+- **Schnelleinstellungen** -- Cloudflare Development Mode ein/aus, "Under Attack"-Sicherheitsstufe ein/aus, Cache leeren.
+- **Analytics** -- die letzten 30 Tage mit Anfragen, Bandbreite, Bedrohungen, Besuchern, Seitenaufrufen. Der aktuelle Cloudflare Analytics-Endpunkt ist abgekündigt; die Seite zeigt einen leeren `unavailable`-Zustand, bis die GraphQL-Migration erfolgt.
+- **Entfernen** -- Soft-Delete der Zeile (`status = 'removed'`) und Abbau der Cloudflare-Zone (oder der Pages-Domain im CNAME-Modus).
 
-#### `domains`-Tabelle — der gemeinsame Zustand
+#### `domains`-Tabelle -- der gemeinsame Zustand
 
 Wichtige Spalten, die die App liest:
 
@@ -106,14 +106,14 @@ Der Website-Builder befindet sich unter **Unternehmen > Ihre Website** (`/websit
 
 Was der Editor anzeigt:
 
-- **Editor-Tab** — Erstellen Sie Seiten durch Hinzufügen und Anordnen von Abschnitten (Hero, Text, Galerie, Dienstleistungen, Team, Testimonials, Kontaktformular, Preise, Produkt, benutzerdefiniertes HTML). Überprüfen und bearbeiten Sie Abschnittsinhalte, Layout, Stil und Animation. Preisstufen können optional einen Kauf-Button erhalten, der zum Mollie- oder Stripe Connect-Checkout weiterleitet. Der Produktblock ist eine eigenständige Kaufkarte mit derselben Zahlungsanbindung.
-- **Seiten-Tab** — Seiten erstellen, umbenennen, löschen und nach Status filtern (live, Entwurf, geplant). Wählen Sie eine Vorlage beim Erstellen einer neuen Seite.
-- **Stil-Tab** — Design-Tokens für Farben, Schriften, Skalierung, Bewegung, Schaltflächen, benutzerdefiniertes CSS und Head-Snippets (Analytics, Schrift-Preconnects).
-- **Domain & SEO-Tab** — Verwaltung eigener Domains. Siehe den Abschnitt eigene Domains oben.
-- **Integrationen-Tab** — Verbinden Sie Drittanbieterdienste.
-- **Navigations-Editor** — Ordnen Sie Header-Links per Drag-and-Drop, mit Dropdown-Gruppen und externen Links.
-- **Veröffentlichen-Schaltfläche** — Zeigt die Anzahl unveröffentlichter Änderungen an. Veröffentlicht einen Snapshot mit einem Klick.
-- **Responsive Vorschau** — Wechseln Sie zwischen Desktop-, Tablet- und Mobilansicht im Editor.
+- **Editor-Tab** -- Erstellen Sie Seiten durch Hinzufügen und Anordnen von Abschnitten (Hero, Text, Galerie, Dienstleistungen, Team, Testimonials, Kontaktformular, Preise, Produkt, benutzerdefiniertes HTML). Überprüfen und bearbeiten Sie Abschnittsinhalte, Layout, Stil und Animation. Preisstufen können optional einen Kauf-Button erhalten, der zum Mollie- oder Stripe Connect-Checkout weiterleitet. Der Produktblock ist eine eigenständige Kaufkarte mit derselben Zahlungsanbindung.
+- **Seiten-Tab** -- Seiten erstellen, umbenennen, löschen und nach Status filtern (live, Entwurf, geplant). Wählen Sie eine Vorlage beim Erstellen einer neuen Seite.
+- **Stil-Tab** -- Design-Tokens für Farben, Schriften, Skalierung, Bewegung, Schaltflächen, benutzerdefiniertes CSS und Head-Snippets (Analytics, Schrift-Preconnects).
+- **Domain & SEO-Tab** -- Verwaltung eigener Domains. Siehe den Abschnitt eigene Domains oben.
+- **Integrationen-Tab** -- Verbinden Sie Drittanbieterdienste.
+- **Navigations-Editor** -- Ordnen Sie Header-Links per Drag-and-Drop, mit Dropdown-Gruppen und externen Links.
+- **Veröffentlichen-Schaltfläche** -- Zeigt die Anzahl unveröffentlichter Änderungen an. Veröffentlicht einen Snapshot mit einem Klick.
+- **Responsive Vorschau** -- Wechseln Sie zwischen Desktop-, Tablet- und Mobilansicht im Editor.
 
 Die öffentliche Website wird unter der am besten geeigneten URL des Unternehmens bereitgestellt: eigene Domain-Root → Workspace-Subdomain → Fallback `/portal/<slug>`-Route.
 
@@ -125,15 +125,15 @@ Der Posteingang ist eine Top-Level-Oberfläche unter `/inbox` (`apps/web/pages/i
 
 Funktionen:
 
-- **Threading** — eingehende E-Mails werden in Threads gruppiert, basierend auf RFC 822 `Message-ID` / `In-Reply-To` / `References`. Jeder Thread enthält `last_message_preview`, `participants`, Status (`open / snoozed / closed / spam`) und Labels.
-- **Antworten** — Inline-Antwortfeld im Thread. Intelligentes `From` wählt die Adresse aus, an die die ursprüngliche E-Mail gesendet wurde, sodass ein Kunde, der an `support@acme.de` geschrieben hat, eine Antwort von `support@` erhält, nicht von `info@`.
-- **Verfassen** — Drawer-Formular mit Postfach-Auswahl, Send-As-Auswahl, Kundenauswahl (oder freies `An`), Betreff, Nachricht, Anhänge. Warnung vor zurückgewiesenen Empfängern wird vor dem Senden angezeigt.
-- **Send-As-Aliase** — `info@`, `support@`, `sales@` sind bidirektionale Aliase desselben Postfachs. `noreply@` ist reiner Sende-Alias — als From wählbar, aber eingehende E-Mails daran werden bei der Aufnahme verworfen.
-- **Anhänge** — Hochladen vor dem Senden (sowohl Verfassen als auch Antworten). Anhänge eingehender E-Mails sind aus der Nachricht herunterladbar; signierte Download-URLs verfallen nach kurzer TTL.
-- **Alias-Hinweis** — wenn eine eingehende Nachricht an eine Adresse eingeht, die noch kein deklarierter Alias ist, zeigt der Thread einen sanften Hinweis mit einer "Als Alias hinzufügen"-Aktion.
-- **Verknüpfung** — Threads können mit einem Kunden, Projekt oder einer Rechnung zur Querverweisung verknüpft werden.
-- **Catch-All-Fallback** — E-Mails an jeden lokalen Teil der Domain fallen auf das Standardpostfach durch (`is_default = true`, eines pro Domain). Das bedeutet, Tippfehler und nicht deklarierte Aliase verschwinden nicht stillschweigend.
-- **Audit-Log** — ausgehende Sendungen, Postfachänderungen und Thread-Statusänderungen werden in einer Audit-Tabelle für den Workspace aufgezeichnet. Derzeit nur API (noch keine UI) — für Support-Mitarbeiter zur Fehlerbehebung zugänglich.
+- **Threading** -- eingehende E-Mails werden in Threads gruppiert, basierend auf RFC 822 `Message-ID` / `In-Reply-To` / `References`. Jeder Thread enthält `last_message_preview`, `participants`, Status (`open / snoozed / closed / spam`) und Labels.
+- **Antworten** -- Inline-Antwortfeld im Thread. Intelligentes `From` wählt die Adresse aus, an die die ursprüngliche E-Mail gesendet wurde, sodass ein Kunde, der an `support@acme.de` geschrieben hat, eine Antwort von `support@` erhält, nicht von `info@`.
+- **Verfassen** -- Drawer-Formular mit Postfach-Auswahl, Send-As-Auswahl, Kundenauswahl (oder freies `An`), Betreff, Nachricht, Anhänge. Warnung vor zurückgewiesenen Empfängern wird vor dem Senden angezeigt.
+- **Send-As-Aliase** -- `info@`, `support@`, `sales@` sind bidirektionale Aliase desselben Postfachs. `noreply@` ist reiner Sende-Alias -- als From wählbar, aber eingehende E-Mails daran werden bei der Aufnahme verworfen.
+- **Anhänge** -- Hochladen vor dem Senden (sowohl Verfassen als auch Antworten). Anhänge eingehender E-Mails sind aus der Nachricht herunterladbar; signierte Download-URLs verfallen nach kurzer TTL.
+- **Alias-Hinweis** -- wenn eine eingehende Nachricht an eine Adresse eingeht, die noch kein deklarierter Alias ist, zeigt der Thread einen sanften Hinweis mit einer "Als Alias hinzufügen"-Aktion.
+- **Verknüpfung** -- Threads können mit einem Kunden, Projekt oder einer Rechnung zur Querverweisung verknüpft werden.
+- **Catch-All-Fallback** -- E-Mails an jeden lokalen Teil der Domain fallen auf das Standardpostfach durch (`is_default = true`, eines pro Domain). Das bedeutet, Tippfehler und nicht deklarierte Aliase verschwinden nicht stillschweigend.
+- **Audit-Log** -- ausgehende Sendungen, Postfachänderungen und Thread-Statusänderungen werden in einer Audit-Tabelle für den Workspace aufgezeichnet. Derzeit nur API (noch keine UI) -- für Support-Mitarbeiter zur Fehlerbehebung zugänglich.
 
 Der Posteingang verwendet Ihre eigene Domain erst, nachdem `quickEnableInbox` erfolgreich ausgeführt wurde und die Apex-MX-Records auf Cloudflare zeigen. Bis dahin kann der Workspace weiterhin E-Mails über den Standardzustellpfad senden, der unter [E-Mail-Integration](/de/settings/email) beschrieben ist, aber keine E-Mails empfangen.
 
@@ -152,11 +152,11 @@ Verkaufsdatensätze werden vom öffentlichen Checkout-Endpunkt (`POST /public/si
 
 ## E-Mails senden vs. E-Mails empfangen
 
-Dieses Bundle ist die **Empfangsseite**. Ausgehende E-Mails — Rechnungsversand, Erinnerungen, Angebotsversand — werden von der breiteren E-Mail-Pipeline abgewickelt, die unter [E-Mail-Integration](/de/settings/email) beschrieben ist. Sobald eine Domain verifiziert und der Posteingang aktiviert ist, wird dieselbe Domain auch als From-Adresse für ausgehende E-Mails verwendet, mit DKIM-Signierung auf `mail.acme.de`.
+Dieses Bundle ist die **Empfangsseite**. Ausgehende E-Mails -- Rechnungsversand, Erinnerungen, Angebotsversand -- werden von der breiteren E-Mail-Pipeline abgewickelt, die unter [E-Mail-Integration](/de/settings/email) beschrieben ist. Sobald eine Domain verifiziert und der Posteingang aktiviert ist, wird dieselbe Domain auch als From-Adresse für ausgehende E-Mails verwendet, mit DKIM-Signierung auf `mail.acme.de`.
 
 ## Grenzen und Fallstricke
 
-- **Eine Website pro Unternehmen.** Das Hinzufügen einer eigenen Domain deaktiviert die Workspace-Subdomain. Das Entfernen der Domain stellt den Slug nicht automatisch wieder her — aktivieren Sie ihn manuell, wenn Sie zurückfallen möchten.
+- **Eine Website pro Unternehmen.** Das Hinzufügen einer eigenen Domain deaktiviert die Workspace-Subdomain. Das Entfernen der Domain stellt den Slug nicht automatisch wieder her -- aktivieren Sie ihn manuell, wenn Sie zurückfallen möchten.
 - **CNAME-Modus hat keine E-Mail.** E-Mail-Routing erfordert eine vollständige Cloudflare-Zone, die nur der Nameserver-Modus bietet.
 - **Der Assistent verweigert das Überschreiben eines bestehenden Drittanbieter-MX.** Wenn Ihr Apex bereits auf Google Workspace oder Microsoft 365 zeigt, gibt `quickEnableInbox` `apexMx.status = 'conflict'` zurück und Sie müssen wählen: MX zu Cloudflare migrieren oder bei Ihrem bestehenden Anbieter bleiben und den gebündelten Posteingang überspringen.
 - **Reservierte Subdomains.** `app`, `admin`, `api`, `www`, `mail`, `support`, `portal`, `dashboard` und eine Handvoll anderer sind auf Workspace-Slug-Ebene gesperrt.
@@ -164,8 +164,8 @@ Dieses Bundle ist die **Empfangsseite**. Ausgehende E-Mails — Rechnungsversand
 
 ## Verwandt
 
-- [Einrichtungsassistent](/de/getting-started/company-setup) — die magische Einführung, die den gebündelten Ablauf antreibt.
-- [E-Mail-Integration](/de/settings/email) — ausgehende E-Mails, Send-As-Auswahl, Zustellverfolgung.
-- [Website-Builder](/de/advanced/business-page) — die vollständige Editor-Anleitung.
-- [Unternehmenseinstellungen](/de/settings/company) — das Dach, das Über / Aussehen / Website / Adresse enthält.
-- [Abrechnung & Tarife](/de/settings/billing) — Feature-Flags, die das Bundle steuern.
+- [Einrichtungsassistent](/de/getting-started/company-setup) -- die magische Einführung, die den gebündelten Ablauf antreibt.
+- [E-Mail-Integration](/de/settings/email) -- ausgehende E-Mails, Send-As-Auswahl, Zustellverfolgung.
+- [Website-Builder](/de/advanced/business-page) -- die vollständige Editor-Anleitung.
+- [Unternehmenseinstellungen](/de/settings/company) -- das Dach, das Über / Aussehen / Website / Adresse enthält.
+- [Abrechnung & Tarife](/de/settings/billing) -- Feature-Flags, die das Bundle steuern.
