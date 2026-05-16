@@ -43,12 +43,31 @@ Elke pagina krijgt een uniek pad. De homepage (`/`) wordt standaard aangemaakt e
 
 In de **Editor**-tab:
 
-- Klik op **Sectie toevoegen** om de beschikbare bloktypes te zien (hero, tekst, galerij, diensten, team, testimonials, contactformulier, aangepaste HTML, en meer).
+- Klik op **Sectie toevoegen** om de beschikbare bloktypes te zien (hero, tekst, galerij, diensten, team, testimonials, contactformulier, tarieven, product, aangepaste HTML, en meer).
 - Kies een bloktype om het op de pagina te plaatsen.
 - Klik op een sectie om het inspectiepaneel te openen, waar je inhoud, layout, stijl en animatie kunt bewerken.
 - Sleep secties omhoog of omlaag om ze te verplaatsen. Gebruik de dupliceer- en verwijderacties op elke sectie.
 
 Sommige secties hebben alleen-systeemvarianten die beschikbaar zijn op de vergrendelde homepage maar niet op aangepaste pagina's.
+
+### Tarieven met koopknoppen
+
+Bij de tarievensectie kun je pakketten of abonnementen laten zien. Elke tier kan optioneel een koopknop krijgen:
+
+- Zet een tier op **purchasable** en geef het **bedrag in centen** op (bijv. 4999 voor EUR 49,99).
+- Een **Koop nu**-knop vervangt de statische CTA-link. Bezoekers die erop klikken gaan via de MyCompanyDesk-checkout naar Mollie of Stripe Connect om te betalen.
+- Het koopknop-label is standaard "Koop nu" maar kan per tier worden aangepast met het **buyLabel**-veld.
+- Tarieven zonder koopknop houden het bestaande CTA-linkgedrag.
+
+### Productblok
+
+Een losstaande eenmalige koopkaart, voor als een volledige tarieventabel meer is dan je nodig hebt:
+
+- Een productnaam, beschrijving, optionele afbeelding, prijs en een koopknop.
+- Dezelfde checkout-koppeling als de tarief-koopknoppen, je bezoeker betaalt via Mollie of Stripe Connect.
+- Een optionele notitieregel onder de knop voor verzendinformatie, disclaimers of opmerkingen.
+
+Zie [Verkopen](/nl/features/domains-website-inbox#verkopen) voor het bijhouden van betalingen en bestellingen.
 
 ## Je site vormgeven
 

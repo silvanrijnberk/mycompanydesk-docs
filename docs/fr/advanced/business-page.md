@@ -43,12 +43,31 @@ Chaque page recoit un chemin unique. La page d'accueil (`/`) est creee par defau
 
 Dans l'onglet **Editeur** :
 
-- Cliquez sur **Ajouter une section** pour voir les types de blocs disponibles (hero, texte, galerie, services, equipe, temoignages, formulaire de contact, HTML personnalise, etc.).
+- Cliquez sur **Ajouter une section** pour voir les types de blocs disponibles (hero, texte, galerie, services, equipe, temoignages, formulaire de contact, tarifs, produit, HTML personnalise, etc.).
 - Selectionnez un type de bloc pour l'inserer sur la page.
 - Cliquez sur une section pour ouvrir le panneau d'inspection, ou vous pouvez modifier son contenu, sa mise en page, son style et son animation.
 - Faites glisser les sections vers le haut ou le bas pour les reordonner. Utilisez les actions dupliquer et supprimer sur chaque section.
 
 Certaines sections ont des variantes systeme uniquement disponibles sur la page d'accueil verrouillee.
+
+### Grille tarifaire avec boutons d'achat
+
+La section tarifs affiche vos forfaits ou abonnements. Chaque niveau peut optionnellement avoir un bouton d'achat :
+
+- Marquez un niveau comme **purchasable** et indiquez le **montant en centimes** (ex. 4999 pour EUR 49,99).
+- Un bouton **Acheter** remplace le lien CTA statique. Les visiteurs qui cliquent passent par le checkout MyCompanyDesk et sont rediriges vers Mollie ou Stripe Connect pour le paiement.
+- Le libelle du bouton est par defaut "Acheter", personnalisable par niveau avec le champ **buyLabel**.
+- Les niveaux sans bouton d'achat conservent le comportement de lien CTA existant.
+
+### Bloc produit
+
+Une fiche d'achat autonome pour un seul article, quand un tableau tarifaire complet est superflu :
+
+- Un nom de produit, une description, une image optionnelle, un prix et un bouton d'achat.
+- Meme plomberie de checkout que les boutons d'achat des tarifs, votre visiteur paie via Mollie ou Stripe Connect.
+- Une ligne de note optionnelle sous le bouton pour les informations de livraison, les mentions legales ou les remarques.
+
+Consultez [Ventes](/fr/features/domains-website-inbox#ventes) pour le suivi des paiements et des commandes.
 
 ## Personnaliser le style de votre site
 

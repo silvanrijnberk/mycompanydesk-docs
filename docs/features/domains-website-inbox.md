@@ -106,7 +106,7 @@ The site builder lives at `Company › Your website` (`/website`). It is a full 
 
 What the editor surfaces:
 
-- **Editor tab** — Compose pages by adding and arranging sections (hero, text, gallery, services, team, testimonials, contact form, custom HTML). Inspect and edit section content, layout, style, and animation.
+- **Editor tab** — Compose pages by adding and arranging sections (hero, text, gallery, services, team, testimonials, contact form, pricing, product, custom HTML). Inspect and edit section content, layout, style, and animation. Pricing tiers can optionally carry a buy button that redirects to Mollie or Stripe Connect checkout. The product block is a single-item buy card with the same payment plumbing.
 - **Pages tab** — Create, rename, delete, and filter pages by status (live, draft, scheduled). Pick a template when creating a new page.
 - **Style tab** — Design tokens for colors, fonts, scale, motion, buttons, custom CSS, and head snippets (analytics, font preconnects).
 - **Domain & SEO tab** — Custom domain management. See the custom domains section above.
@@ -136,6 +136,19 @@ Capabilities:
 - **Audit log** — outbound sends, mailbox changes and thread state changes are recorded in an audit table for the workspace. Currently API-only (no UI surface yet) — accessible to support staff for troubleshooting.
 
 The inbox uses your custom domain only after `quickEnableInbox` has run successfully and the apex MX records point at Cloudflare. Until then, the workspace can still send mail through the default delivery path described in [Email Integration](/settings/email), but it can't receive mail.
+
+### Sales
+
+When you add buy buttons to pricing tiers or a product block on your public site, every completed payment creates a sale record. Track them at **Money > Sales** (`/workspace/financial/money/sales`).
+
+What the sales log shows:
+
+- A chronologically ordered list of all purchases made through your site.
+- The payment processor (Mollie or Stripe Connect) and the payment status.
+- The originating section (which pricing tier or product block was purchased).
+- Customer email, amount paid, and currency.
+
+Sales records are created by the public checkout endpoint (`POST /public/sites/:slug/checkout`), which validates the section, creates a payment through the connected processor, and redirects the buyer to the hosted checkout page.
 
 ## Sending mail vs receiving mail
 

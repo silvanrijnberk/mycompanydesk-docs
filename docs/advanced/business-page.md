@@ -43,12 +43,31 @@ Each page gets a unique path. The home page (`/`) is created by default and cann
 
 In the **Editor** tab:
 
-- Click **Add section** to see the available block types (hero, text, gallery, services, team, testimonials, contact form, custom HTML, and more).
+- Click **Add section** to see the available block types (hero, text, gallery, services, team, testimonials, contact form, pricing, product, custom HTML, and more).
 - Select a block type to insert it onto the page.
 - Click any section to open the inspector panel, where you can edit its content, layout, style, and animation.
 - Drag sections up or down to reorder. Use the duplicate and delete actions on each section.
 
 Some sections have system-only variants that are available on the locked home page but not on custom pages.
+
+### Pricing tiers with buy buttons
+
+The pricing section lets you list your plans or packages. Each tier can optionally include a buy button:
+
+- Set a tier as **purchasable** and provide the **amount in cents** (e.g. 4999 for EUR 49.99).
+- A **Buy now** button replaces the static CTA link. Visitors clicking it go through the MyCompanyDesk checkout, which redirects to Mollie or Stripe Connect for payment.
+- The buy-button label defaults to "Koop nu" but can be customised per tier with the **buyLabel** field.
+- Pricing tiers without buy buttons keep the existing CTA link behaviour.
+
+### Product block
+
+A standalone single-item buy card, for when a full pricing table is more than you need:
+
+- One product name, description, optional image, price, and a buy button.
+- Same checkout plumbing as the pricing buy buttons, your visitor pays through Mollie or Stripe Connect.
+- An optional note line under the button for delivery info, disclaimers, or shipping notes.
+
+See [Sales](/features/domains-website-inbox#sales) for tracking payments and orders.
 
 ## Styling your site
 
