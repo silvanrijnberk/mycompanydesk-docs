@@ -15,6 +15,10 @@ Aan de slag gaan met MyCompanyDesk duurt maar een paar minuten.
    - **Microsoft/Outlook** — Log in met je Microsoft-account
 3. Als je je met e-mail hebt geregistreerd, controleer dan je inbox op een **verificatie-e-mail** en klik op de link om je account te bevestigen
 
+:::tip Verwijzing via boekhouder
+Heeft je boekhouder of accountant je een verwijzingslink gegeven (bijvoorbeeld `app.mycompanydesk.com/register?partner=HUNCODE`)? Gebruik die link dan om je te registreren. Je aanmelding wordt automatisch aan hen gekoppeld, wat je mogelijk recht geeft op een partnervoordeel zoals een langere gratis proefperiode.
+:::
+
 ## Werkruimte aanmaken of deelnemen
 
 Na het registreren heb je twee opties:
