@@ -19,6 +19,22 @@ Sie können mehrere Konten von verschiedenen Banken verbinden. Jedes Konto ersch
 
 MyCompanyDesk synchronisiert Transaktionen Ihrer verbundenen Konten automatisch nach einem festen Zeitplan. Sie können jederzeit auch eine manuelle Synchronisation über die Bankkonten-Seite auslösen. Neue Transaktionen werden mithilfe von Lieferantenregeln und KI-Zuordnung automatisch Ihren bestehenden Kunden, Rechnungen und Ausgaben zugeordnet. Zugeordnete Transaktionen fließen direkt in Ihre Buchhaltung ein; nicht zugeordnete erscheinen im Bankfeed zur manuellen Prüfung.
 
+### Automatische Ausgabenerstellung
+
+Wenn eine Banktransaktion kategorisiert ist (durch eine Lieferantenregel, eine Standardkategorie oder die KI-Klassifikation), erstellt MyCompanyDesk automatisch eine Ausgabe in Ihrer Buchhaltung. Die Ausgabe wird gefüllt mit:
+
+- Dem Namen der Gegenpartei als Lieferant.
+- Dem absoluten Betrag als Bruttokosten.
+- Dem Standard-USt.-Satz der Kategorie (oder dem von der KI vorgeschlagenen Satz, falls verfügbar).
+- Dem Kategorie-Schlüssel, der den tatsächlichen Ausgabenkategorien Ihres Workspaces entspricht.
+- Dem Buchungsdatum der Transaktion als Ausgabendatum.
+
+Die Transaktion wird danach als zugeordnet markiert, sodass sie bei der nächsten Synchronisation kein Duplikat erzeugt. Die neue Ausgabe erscheint sofort in Ihrer Ausgabenliste und fließt in Ihre Berichte und USt.-Übersichten ein.
+
+Die Ausgabenerstellung erfolgt in zwei Durchläufen: zuerst nach Anwendung von Lieferantenregeln und Standardkategorien (synchron, während der Synchronisation); danach nach Abschluss der KI-Klassifikation (asynchron). In beiden Fällen verwendet die erstellte Ausgabe die tatsächlichen Ausgabenkategorien Ihres Workspaces und deren Standard-USt.-Behandlung, sodass die Zahlen mit Ihren manuellen Einträgen konsistent bleiben.
+
+Nur ausgehende Transaktionen (Betrag unter null) werden in Ausgaben umgewandelt. Eingehende Zahlungen werden nicht als Ausgabe erstellt. Wenn Ihr Workspace noch keine Ausgabenkategorien konfiguriert hat, wird dieser Schritt übersprungen und Transaktionen bleiben zur manuellen Prüfung.
+
 ### Synchronisationsfehler
 
 Schlägt eine Synchronisation fehl (zum Beispiel weil die Bank-Autorisierung abgelaufen oder die Verbindung unterbrochen ist), sendet MyCompanyDesk Ihnen eine E-Mail und eine In-App-Benachrichtigung mit dem Namen der Verbindung und einem Link zur Behebung. Sie können Push-Benachrichtigungen für Sync-Fehler auch unter den Benachrichtigungseinstellungen aktivieren.

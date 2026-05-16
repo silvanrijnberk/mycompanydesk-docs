@@ -39,6 +39,12 @@ Gebruik de snel-toevoegen-lade voor snelle uitgaveninvoer:
 3. Selecteer een snelle categorie
 4. Sla op
 
+### Van banktransacties
+
+Wanneer je [bankfeed](/nl/features/bank) is gekoppeld, worden gecategoriseerde uitgaande transacties automatisch omgezet naar conceptuitgaven. Elke uitgave krijgt de tegenpartij als leverancier, het absolute bedrag als bruto, het standaard BTW-tarief en de behandeling van de categorie, en de boekingsdatum van de transactie. De uitgave verschijnt in je uitgavenlijst met een notitie dat deze is geimporteerd vanuit de bankfeed.
+
+Je kunt bank-geimporteerde uitgaven bekijken en bewerken zoals elke andere uitgave: pas de categorie aan, wijzig de BTW-behandeling, voeg een bon toe of koppel hem aan een project. De banktransactie wordt aan de bankkant gemarkeerd als gekoppeld zodat deze niet dubbel wordt geteld. Als je een bank-geimporteerde uitgave verwijdert, komt de transactie terug in de niet-gekoppelde wachtrij in de bankfeed.
+
 ### Bonnen scannen
 
 Laat AI automatisch uitgavegegevens uit bonnen extraheren:

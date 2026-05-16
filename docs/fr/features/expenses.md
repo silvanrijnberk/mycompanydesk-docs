@@ -1,121 +1,127 @@
 ---
-title: Depenses
+title: Dépenses
 ---
 
-# Depenses
+# Dépenses
 
-Suivez toutes vos depenses professionnelles, numerisez des recus avec l'IA et categorisez les couts pour une comptabilite precise et la declaration de TVA.
+Suivez toutes vos dépenses professionnelles, numérisez des reçus avec l'IA et catégorisez les coûts pour une comptabilité précise et la déclaration de TVA.
 
 ## Vue d'ensemble
 
-La page des depenses repertorie toutes vos depenses enregistrees. Filtrez par :
+La page des dépenses répertorie toutes vos dépenses enregistrées. Filtrez par :
 
-- **Categorie** -- Bureau, deplacement, equipement, etc.
-- **Projet** -- Depenses liees a des projets specifiques
-- **Plage de dates** -- Filtrer par date de depense
-- **Statut** -- Active ou archivee
+- **Catégorie** -- Bureau, déplacement, équipement, etc.
+- **Projet** -- Dépenses liées à des projets spécifiques
+- **Plage de dates** -- Filtrer par date de dépense
+- **Statut** -- Active ou archivée
 
-## Creer une depense
+## Créer une dépense
 
 ### Saisie manuelle
 
-1. Allez dans **Depenses > Nouvelle depense**
+1. Allez dans **Dépenses > Nouvelle dépense**
 2. Remplissez :
-   - **Description** -- L'objet de la depense
-   - **Montant** -- Cout total (TTC ou HT)
-   - **Date** -- Date de la depense
-   - **Categorie** -- Selectionnez parmi les categories predefinies
+   - **Description** -- L'objet de la dépense
+   - **Montant** -- Coût total (TTC ou HT)
+   - **Date** -- Date de la dépense
+   - **Catégorie** -- Sélectionnez parmi les catégories prédéfinies
    - **Taux de TVA** -- Pourcentage de TVA applicable
-3. Joignez optionnellement une image ou un PDF de **recu**
-4. Liez optionnellement a un **projet** ou un **client**
+3. Joignez optionnellement une image ou un PDF de **reçu**
+4. Liez optionnellement à un **projet** ou un **client**
 5. Cliquez sur **Enregistrer**
 
 ### Ajout rapide
 
-Utilisez le tiroir d'ajout rapide pour une saisie rapide de depenses :
+Utilisez le tiroir d'ajout rapide pour une saisie rapide de dépenses :
 
-1. Cliquez sur le bouton d'ajout rapide dans la liste des depenses
+1. Cliquez sur le bouton d'ajout rapide dans la liste des dépenses
 2. Entrez le montant et la description
-3. Selectionnez une categorie rapide
+3. Sélectionnez une catégorie rapide
 4. Enregistrez
 
-### Numerisation de recus
+### Depuis les transactions bancaires
 
-Laissez l'IA extraire automatiquement les details de vos recus :
+Lorsque votre [flux bancaire](/fr/features/bank) est connecté, les transactions sortantes catégorisées sont automatiquement converties en dépenses provisoires. Chaque dépense reçoit la contrepartie comme fournisseur, le montant absolu comme brut, le taux de TVA et le traitement par défaut de la catégorie, et la date comptable de la transaction. La dépense apparaît dans votre liste de dépenses avec une note indiquant qu'elle a été importée depuis le flux bancaire.
 
-1. Allez dans **Depenses > Numeriser un recu**
-2. Telechargez une image de recu (JPEG, PNG, WebP) ou un PDF
+Vous pouvez consulter et modifier les dépenses importées comme n'importe quelle autre dépense: changez la catégorie, ajustez le traitement de TVA, joignez un justificatif ou liez-la à un projet. La transaction bancaire est marquée comme rapprochée du côté banque afin de ne pas être comptée en double. Si vous supprimez une dépense importée, la transaction retourne dans la file d'attente non rapprochée du flux bancaire.
+
+### Numérisation de reçus
+
+Laissez l'IA extraire automatiquement les détails de vos reçus :
+
+1. Allez dans **Dépenses > Numériser un reçu**
+2. Téléchargez une image de reçu (JPEG, PNG, WebP) ou un PDF
 3. Choisissez le mode d'extraction :
-   - **Simple** -- Une depense a partir du recu
-   - **Multiple** -- Plusieurs lignes a partir d'un seul recu
-4. Verifiez les donnees extraites (date, montant, fournisseur, description)
-5. Confirmez pour creer la ou les depenses
+   - **Simple** -- Une dépense à partir du reçu
+   - **Multiple** -- Plusieurs lignes à partir d'un seul reçu
+4. Vérifiez les données extraites (date, montant, fournisseur, description)
+5. Confirmez pour créer la ou les dépenses
 
 ::: info
-La numerisation de recus necessite le plan **Pro** ou superieur.
+La numérisation de reçus nécessite le plan **Pro** ou supérieur.
 :::
 
-## Categories de depenses
+## Catégories de dépenses
 
-MyCompanyDesk propose des categories predefinies avec des icones pour une selection rapide :
+MyCompanyDesk propose des catégories prédéfinies avec des icônes pour une sélection rapide :
 
 - Fournitures de bureau
-- Deplacements et transports
+- Déplacements et transports
 - Restauration et boissons
 - Logiciels et abonnements
-- Equipement
+- Équipement
 - Services professionnels
-- Marketing et publicite
+- Marketing et publicité
 - Assurance
 - Loyer et charges
 - Et bien d'autres...
 
-Les categories aident a organiser vos depenses et sont utilisees dans les rapports pour les ventilations de couts.
+Les catégories aident à organiser vos dépenses et sont utilisées dans les rapports pour les ventilations de coûts.
 
 ## Gestion de la TVA
 
-Chaque depense peut avoir son propre taux de TVA. Options courantes :
+Chaque dépense peut avoir son propre taux de TVA. Options courantes :
 
 - **21 %** -- Taux normal
-- **9 %** -- Taux reduit
-- **0 %** -- Taux zero ou exonere
+- **9 %** -- Taux réduit
+- **0 %** -- Taux zéro ou exonéré
 
-Le montant de TVA est calcule automatiquement et inclus dans vos [rapports de TVA](/fr/features/vat).
+Le montant de TVA est calculé automatiquement et inclus dans vos [rapports de TVA](/fr/features/vat).
 
-## Lier les depenses
+## Lier les dépenses
 
-Liez les depenses a :
+Liez les dépenses à :
 
-- **Projets** -- Suivez precisement les couts par projet
-- **Clients** -- Associez les couts a des clients specifiques
-- **Fournisseurs** -- Enregistrez a qui vous avez paye
+- **Projets** -- Suivez précisément les coûts par projet
+- **Clients** -- Associez les coûts à des clients spécifiques
+- **Fournisseurs** -- Enregistrez à qui vous avez payé
 
-## Actions groupees
+## Actions groupées
 
-Selectionnez plusieurs depenses pour :
+Sélectionnez plusieurs dépenses pour :
 
-- **Categoriser** -- Changer la categorie en masse
-- **Archiver** -- Deplacer vers les archives
-- **Supprimer** -- Supprimer definitivement
-- **Exporter** -- Telecharger au format CSV
+- **Catégoriser** -- Changer la catégorie en masse
+- **Archiver** -- Déplacer vers les archives
+- **Supprimer** -- Supprimer définitivement
+- **Exporter** -- Télécharger au format CSV
 
-## Depenses recurrentes
+## Dépenses récurrentes
 
-Pour les couts reguliers (loyer, abonnements, etc.), configurez des [depenses recurrentes](/fr/features/recurring-expenses) pour automatiser la creation.
+Pour les coûts réguliers (loyer, abonnements, etc.), configurez des [dépenses récurrentes](/fr/features/recurring-expenses) pour automatiser la création.
 
 ## Import
 
-Importez des depenses depuis un fichier CSV :
+Importez des dépenses depuis un fichier CSV :
 
 1. Allez dans **Profil > Import**
-2. Selectionnez **Depenses** comme type de donnees
-3. Telechargez votre fichier CSV
+2. Sélectionnez **Dépenses** comme type de données
+3. Téléchargez votre fichier CSV
 4. Faites correspondre les colonnes aux champs
-5. Verifiez et confirmez
+5. Vérifiez et confirmez
 
 ## Conseils
 
-- Activez les [suggestions IA](/fr/advanced/ai-features) pour des recommandations automatiques de categories
-- Joignez toujours les recus -- ils sont essentiels pour les controles fiscaux
-- Utilisez les projets pour suivre le ratio depenses/revenus
-- Consultez le [rapport de depenses](/fr/features/reports) pour les ventilations de couts
+- Activez les [suggestions IA](/fr/advanced/ai-features) pour des recommandations automatiques de catégories
+- Joignez toujours les reçus -- ils sont essentiels pour les contrôles fiscaux
+- Utilisez les projets pour suivre le ratio dépenses/revenus
+- Consultez le [rapport de dépenses](/fr/features/reports) pour les ventilations de coûts

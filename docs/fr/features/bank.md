@@ -19,6 +19,22 @@ Vous pouvez connecter plusieurs comptes de différentes banques. Chaque compte a
 
 MyCompanyDesk synchronise les transactions de vos comptes connectés selon un calendrier automatique. Vous pouvez également déclencher une synchronisation manuelle à tout moment depuis la page des comptes bancaires. Les nouvelles transactions sont automatiquement rapprochées avec vos clients, factures et dépenses existants à l'aide de règles fournisseur et du rapprochement par IA. Les transactions rapprochées alimentent directement votre comptabilité ; les transactions non rapprochées apparaissent dans le flux bancaire pour examen manuel.
 
+### Conversion automatique en dépenses
+
+Lorsqu'une transaction bancaire est catégorisée (par une règle fournisseur, une catégorie par défaut ou le classificateur IA), MyCompanyDesk crée automatiquement une dépense provisoire dans votre comptabilité. La dépense est remplie avec :
+
+- Le nom de la contrepartie comme fournisseur.
+- Le montant absolu comme coût brut.
+- Le taux de TVA par défaut de la catégorie (ou le taux suggéré par l'IA lorsqu'il est disponible).
+- La clé de catégorie correspondant aux vraies catégories de dépenses de votre espace de travail.
+- La date comptable de la transaction comme date de dépense.
+
+La transaction est ensuite marquée comme rapprochée afin de ne pas créer de doublon lors de la prochaine synchronisation. La nouvelle dépense apparaît immédiatement dans votre liste de dépenses et alimente vos rapports et récapitulatifs de TVA.
+
+La conversion s'effectue en deux passages : d'abord après l'application des règles fournisseur et des catégories par défaut (synchrone, pendant la synchronisation) ; ensuite après que le classificateur IA a terminé (asynchrone). Dans les deux cas, la dépense créée utilise les catégories de dépenses réelles de votre espace de travail et leurs traitements de TVA par défaut, afin que les montants restent cohérents avec vos saisies manuelles.
+
+Seules les transactions sortantes (montant inférieur à zéro) sont converties en dépenses. Les paiements entrants ne sont pas transformés en dépenses. Si votre espace de travail n'a pas encore de catégories de dépenses configurées, cette étape est sautée et les transactions attendent un examen manuel.
+
 ### Échecs de synchronisation
 
 Si une synchronisation échoue (par exemple parce que l'autorisation bancaire a expiré ou que la connexion a été interrompue), MyCompanyDesk vous envoie un e-mail et une notification in-app avec le nom de la connexion et un lien pour résoudre le problème. Vous pouvez également activer les notifications push pour les erreurs de synchronisation dans les préférences de notification.
