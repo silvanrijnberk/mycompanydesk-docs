@@ -90,6 +90,34 @@ Contracts created before the e-signing feature was added do not show a signing c
 Legacy contracts show a dash in the Signing column and appear under the "No e-signing" filter.
 :::
 
+## Template versions
+
+Contract templates support versioning so you can track changes over time. Each version is a frozen snapshot of the template content at a point in time, letting you evolve your templates without affecting contracts that were already created.
+
+### Publishing a version
+
+1. Go to **Contracts > Templates**
+2. Find your template and click the **Versions** button
+3. In the versions modal, enter:
+   - **Label** — A short identifier for the version (e.g. "v2"). If left empty the system auto-assigns a sequential label.
+   - **Change note** — A short description of what changed in this version
+4. Click **Publish**
+
+The current draft is snapshotted as a new version. Existing contracts stay pinned to the version they were created from, so publishing never rewrites historical contract text.
+
+### Viewing version history
+
+Each template's version history shows:
+
+- The version label (e.g. "v1", "v2")
+- The change note and publish date
+- A **Current** badge on the latest published version
+- An **Archived** badge on all previous versions
+
+### How versions affect contracts
+
+When a contract is created from a template, it pins to the version that was current at the time. If you later publish a new version of the template, existing contracts keep rendering from their pinned version. This means you can safely revise templates without altering active contracts.
+
 ## Tips
 
 - Use contracts together with [recurring invoices](/features/recurring-invoices) for different billing scenarios
