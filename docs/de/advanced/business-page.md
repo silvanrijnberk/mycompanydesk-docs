@@ -43,12 +43,31 @@ Jede Seite erhält einen eindeutigen Pfad. Die Startseite (`/`) wird standardmä
 
 Im **Editor**-Tab:
 
-- Klicken Sie auf **Abschnitt hinzufügen**, um die verfügbaren Blocktypen zu sehen (Hero, Text, Galerie, Dienstleistungen, Team, Testimonials, Kontaktformular, benutzerdefiniertes HTML und mehr).
+- Klicken Sie auf **Abschnitt hinzufügen**, um die verfügbaren Blocktypen zu sehen (Hero, Text, Galerie, Dienstleistungen, Team, Testimonials, Kontaktformular, Preise, Produkt, benutzerdefiniertes HTML und mehr).
 - Wählen Sie einen Blocktyp aus, um ihn auf der Seite einzufügen.
 - Klicken Sie auf einen Abschnitt, um das Inspektionspanel zu öffnen, in dem Sie Inhalt, Layout, Stil und Animation bearbeiten können.
 - Ziehen Sie Abschnitte nach oben oder unten, um sie neu anzuordnen. Nutzen Sie die Duplizieren- und Löschen-Aktionen bei jedem Abschnitt.
 
 Einige Abschnitte haben Systemvarianten, die nur auf der gesperrten Startseite verfügbar sind.
+
+### Preismodelle mit Kauf-Buttons
+
+Der Preise-Abschnitt zeigt Ihre Pakete oder Pläne. Jede Stufe kann optional einen Kauf-Button erhalten:
+
+- Markieren Sie eine Stufe als **purchasable** und geben Sie den **Betrag in Cent** an (z. B. 4999 für EUR 49,99).
+- Ein **Jetzt kaufen**-Button ersetzt den statischen CTA-Link. Besucher, die darauf klicken, werden über den MyCompanyDesk-Checkout zu Mollie oder Stripe Connect zur Zahlung weitergeleitet.
+- Das Kauf-Button-Label ist standardmäßig "Jetzt kaufen", kann aber pro Stufe mit dem **buyLabel**-Feld angepasst werden.
+- Preisstufen ohne Kauf-Button behalten das bestehende CTA-Link-Verhalten.
+
+### Produktblock
+
+Eine eigenständige Einzelprodukt-Kaufkarte, ideal wenn eine vollständige Preistabelle zu viel wäre:
+
+- Ein Produktname, Beschreibung, optionales Bild, Preis und ein Kauf-Button.
+- Dieselbe Checkout-Anbindung wie die Preisstufen-Kauf-Buttons, Ihr Besucher zahlt über Mollie oder Stripe Connect.
+- Eine optionale Hinweiszeile unter dem Button für Versandinformationen, Hinweise oder AGB-Verweise.
+
+Siehe [Verkäufe](/de/features/domains-website-inbox#verkaufe) für die Nachverfolgung von Zahlungen und Bestellungen.
 
 ## Ihre Site gestalten
 
