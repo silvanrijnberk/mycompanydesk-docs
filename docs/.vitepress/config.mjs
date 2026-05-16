@@ -25,6 +25,7 @@ function sidebarEN() {
       collapsed: false,
       items: [
         { text: 'Dashboard', link: '/features/dashboard' },
+        { text: 'Bank Feed', link: '/features/bank' },
         { text: 'Setup Wizard', link: '/features/setup-wizard' },
         { text: 'Invoices', link: '/features/invoices' },
         { text: 'Quotes', link: '/features/quotes' },
@@ -101,6 +102,7 @@ function sidebarNL() {
       collapsed: false,
       items: [
         { text: 'Dashboard', link: '/nl/features/dashboard' },
+        { text: 'Bankfeed', link: '/nl/features/bank' },
         { text: 'Facturen', link: '/nl/features/invoices' },
         { text: 'Offertes', link: '/nl/features/quotes' },
         { text: 'Uitgaven', link: '/nl/features/expenses' },
@@ -175,6 +177,7 @@ function sidebarDE() {
       collapsed: false,
       items: [
         { text: 'Dashboard', link: '/de/features/dashboard' },
+        { text: 'Bankfeed', link: '/de/features/bank' },
         { text: 'Rechnungen', link: '/de/features/invoices' },
         { text: 'Angebote', link: '/de/features/quotes' },
         { text: 'Ausgaben', link: '/de/features/expenses' },
@@ -249,6 +252,7 @@ function sidebarFR() {
       collapsed: false,
       items: [
         { text: 'Tableau de bord', link: '/fr/features/dashboard' },
+        { text: 'Flux bancaire', link: '/fr/features/bank' },
         { text: 'Factures', link: '/fr/features/invoices' },
         { text: 'Devis', link: '/fr/features/quotes' },
         { text: 'Dépenses', link: '/fr/features/expenses' },
