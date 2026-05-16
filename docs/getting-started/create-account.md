@@ -27,7 +27,7 @@ If you're the first person from your company, create a new workspace:
 2. Choose your preferred **language**
 3. Click **Create Workspace**
 
-This creates a fresh workspace where you can start adding your company information, customers, and invoices.
+This creates a fresh workspace with a **60-day free Pro trial** (no payment method required). You can explore all Pro features right away while you add your company information, customers, and invoices.
 
 ### Join an existing workspace
 

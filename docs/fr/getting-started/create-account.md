@@ -27,7 +27,7 @@ Si vous etes la premiere personne de votre entreprise, creez un nouvel espace de
 2. Choisissez votre **langue** preferee
 3. Cliquez sur **Creer l'espace de travail**
 
-Cela cree un espace de travail vierge ou vous pouvez commencer a ajouter les informations de votre entreprise, vos clients et vos factures.
+Cela cree un espace de travail vierge avec une **periode d'essai Pro gratuite de 60 jours** (aucun moyen de paiement requis). Vous pouvez explorer toutes les fonctionnalites Pro immediatement tout en ajoutant les informations de votre entreprise, vos clients et vos factures.
 
 ### Rejoindre un espace de travail existant
 

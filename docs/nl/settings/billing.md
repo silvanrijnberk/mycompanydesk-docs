@@ -6,6 +6,14 @@ title: "Facturering & Abonnementen"
 
 Beheer je MyCompanyDesk-abonnement, bekijk je verbruik en upgrade je abonnement.
 
+## Gratis Pro-proefperiode
+
+Elke nieuwe werkruimte begint met een **gratis Pro-proefperiode van 60 dagen**. Er is geen betaalmethode nodig. Je krijgt meteen volledige Pro-functionaliteit zodra je je werkruimte aanmaakt.
+
+Als de proefperiode afloopt, gaat je werkruimte automatisch over naar het Gratis abonnement. Je kunt op elk moment tijdens of na de proefperiode upgraden naar een betaald abonnement. Betaalde abonnementen verlopen via Stripe (zie [Upgraden](#upgraden)).
+
+De proefperiodestatus en resterende dagen zie je op de factureringspagina. Als je upgrade voordat de proefperiode afloopt, wordt de proefperiode beëindigd en begint je betaalde periode direct.
+
 ## Abonnementen
 
 MyCompanyDesk biedt drie abonnementen:
@@ -47,6 +55,8 @@ Abonnementen zijn beschikbaar in **maandelijkse** en **jaarlijkse** facturerings
 ## Je abonnement beheren
 
 ### Upgraden
+
+De abonnementsweergave toont altijd maandelijkse en jaarlijkse intervalopties, ook tijdens een beta of proefperiode.
 
 1. Ga naar **Instellingen > Facturering**
 2. Klik op **Upgraden** bij het gewenste abonnement
