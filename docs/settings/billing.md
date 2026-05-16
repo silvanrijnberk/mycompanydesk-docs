@@ -30,23 +30,6 @@ If spots remain, the billing page shows a Founding Member claim card. Click **Cl
 
 Founding Member workspaces are regular Pro customers in every respect: same features, same limits. The only difference is the subscription source ("internal") and the badge in billing.
 
-## Founding Members
-
-MyCompanyDesk offers a Founding Members program for the first 100 workspaces that join during the launch period. A Founding Member receives the Pro plan free for life, with no expiration and no payment method required.
-
-### How it works
-
-- The program is limited to **100 spots** across all workspaces.
-- Once claimed, the workspace is permanently upgraded to Pro. The subscription shows as active with a "Founding Member" badge in the billing section.
-- Each workspace can claim only one spot. A single IP address may not claim more than one spot (fraud prevention).
-- Claiming is irreversible. There is no trial period or renewal; the Pro plan stays active indefinitely.
-
-### Claiming a spot
-
-If spots remain, the billing page shows a Founding Member claim card. Click **Claim spot** to reserve your spot. The upgrade takes effect immediately.
-
-Founding Member workspaces are regular Pro customers in every respect: same features, same limits. The only difference is the subscription source ("internal") and the badge in billing.
-
 ## Plans
 
 MyCompanyDesk has four plans. Plan definitions live in `apps/api/src/modules/billing/plans.config.js`.

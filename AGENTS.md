@@ -34,6 +34,7 @@ After opening the PR, the agent runs through this checklist against the PR diff:
 4. Any `<script>` block, hero block, CTA copy, or top-level nav entry changed without the source merge explicitly justifying it → fail.
 5. NL/DE/FR text that reads like a literal translation (matches EN word order, uses calques) → fail.
 6. Any change to `.vitepress/config.*` not driven by the EN diff → fail.
+7. **Duplicate-section check.** Before merge, run `git pull --rebase origin main` on the PR branch and re-run the full checklist on the rebased diff. Then `grep -E '^## ' <every touched file> | sort | uniq -d` — if any H2 heading you introduced now appears more than once in any touched file, dedupe before merge. This catches concurrent-run races where another cron tick shipped overlapping content while this one was working.
 
 On any fail: fix in a new commit on the same branch, re-run the checklist. Iteration cap is 3. If iteration 3 still fails on any rule, leave the PR open with the failing items in the body and ping ops; do NOT merge dirty.
 

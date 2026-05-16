@@ -23,23 +23,6 @@ Als er nog plekken over zijn, toont de factureringspagina een Founding Member-cl
 
 Founding Member-werkruimtes zijn in alle opzichten gewone Pro-klanten: dezelfde functies, dezelfde limieten. Het enige verschil is de abonnementsbron ("intern") en de badge in de facturering.
 
-## Founding Members
-
-MyCompanyDesk biedt een Founding Members-programma voor de eerste 100 werkruimtes die zich aanmelden tijdens de lanceringsperiode. Een Founding Member krijgt het Pro-abonnement gratis voor het leven, zonder einddatum en zonder betaalmethode.
-
-### Hoe het werkt
-
-- Het programma is beperkt tot **100 plekken** over alle werkruimtes.
-- Zodra je claimt, is je werkruimte permanent geupgrade naar Pro. Het abonnement toont een "Founding Member"-badge in de factureringssectie.
-- Elke werkruimte kan maar een plek claimen. Vanaf hetzelfde IP-adres mag ook maar een plek geclaimd worden (misbruikpreventie).
-- Claimen is definitief. Er is geen proefperiode of verlenging; het Pro-abonnement blijft onbeperkt actief.
-
-### Een plek claimen
-
-Als er nog plekken over zijn, toont de factureringspagina een Founding Member-claimkaart. Klik op **Plek claimen** om je plek vast te leggen. De upgrade gaat meteen in.
-
-Founding Member-werkruimtes zijn in alle opzichten gewone Pro-klanten: dezelfde functies, dezelfde limieten. Het enige verschil is de abonnementsbron ("intern") en de badge in de facturering.
-
 ## Abonnementen
 
 MyCompanyDesk biedt drie abonnementen:
