@@ -1,0 +1,30 @@
+# VAT rates and small-business thresholds per country.
+# Curated by hand. The mcd-public-surfaces-sync agent reads but never writes.
+# See README.md in this directory for the schema and update process.
+
+last_verified: 2026-05-16
+verified_by: silvanrijnberk
+source_url: https://taxation-customs.ec.europa.eu/taxation/vat/vat-rates_en
+notes: |
+  Rates are statutory standard / reduced / zero rates. The "reduced" entry lists
+  the most commonly cited reduced rate. Some countries have multiple reduced
+  rates (super-reduced, parking) that are not modeled here yet; add them under
+  the country's `additional_reduced` list when needed.
+
+  `small_business_threshold_eur` is the annual turnover ceiling below which a
+  business may opt into the country's small-business / simplified VAT scheme.
+  Always opt-in, never automatic. Add `notes` per country when there are
+  meaningful conditions.
+
+countries:
+  NL:
+    name: Netherlands
+    standard: 21
+    reduced: 9
+    zero: 0
+    small_business_threshold_eur: 20000
+    small_business_scheme_name: KOR (Kleineondernemersregeling)
+    notes: |
+      KOR is opt-in per calendar year. Once opted in, VAT is not charged on
+      invoices and input VAT is not deductible. Sticks for at least 3 years
+      unless threshold is exceeded.
