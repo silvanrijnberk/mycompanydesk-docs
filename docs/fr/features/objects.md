@@ -57,8 +57,8 @@ La page de detail affiche :
 Au-dessus de la liste des contrats, une barre de synthese donne un apercu rapide de l'etat contractuel de l'objet :
 
 - **Total des contrats** lies a cet objet
-- **Contrats signes** — combien ont ete integralement signes
-- **Total mensuel actif** — valeur mensuelle combinee de tous les contrats actifs, normalisee a partir de contrats a frequences differentes (hebdomadaire, trimestrielle, annuelle)
+- **Contrats signes**: combien ont ete integralement signes
+- **Total mensuel actif**: valeur mensuelle combinee de tous les contrats actifs, normalisee a partir de contrats a frequences differentes (hebdomadaire, trimestrielle, annuelle)
 
 ### Historique WOZ (objets de type Propriete)
 
@@ -73,10 +73,10 @@ Pour les objets de type **Propriete**, la page de detail inclut une section d'hi
 
 Chaque ligne de contrat sur la page de detail de l'objet affiche desormais un badge de statut de signature a cote du badge actif/en pause. Les couleurs suivent la meme correspondance que sur la page de detail du contrat :
 
-- **Signe** (vert) — toutes les parties ont signe
-- **Partiellement signe** (bleu) — certaines parties ont signe, d'autres non
-- **Envoye** (jaune) — l'invitation a signer a ete envoyee, pas encore de signatures
-- **Expire** ou **Resilie** (rouge) — la demande de signature n'est plus valable
+- **Signe** (vert): toutes les parties ont signe
+- **Partiellement signe** (bleu): certaines parties ont signe, d'autres non
+- **Envoye** (jaune): l'invitation a signer a ete envoyee, pas encore de signatures
+- **Expire** ou **Resilie** (rouge): la demande de signature n'est plus valable
 
 Les contrats integralement signes affichent une petite icone en forme d'oeil qui ouvre un apercu integre du document signe. Vous pouvez ainsi lire le contrat finalise sans quitter la page de l'objet.
 

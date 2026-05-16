@@ -57,8 +57,8 @@ The detail page shows:
 Above the contracts list, a summary header gives you a quick read on the object's contractual state:
 
 - **Total contracts** linked to this object
-- **Signed contracts** — how many have been fully signed
-- **Monthly active total** — combined monthly value of all active contracts, normalised from mixed-frequency agreements (weekly, quarterly, yearly)
+- **Signed contracts**: how many have been fully signed
+- **Monthly active total**: combined monthly value of all active contracts, normalised from mixed-frequency agreements (weekly, quarterly, yearly)
 
 ### WOZ history (Property objects)
 
@@ -73,10 +73,10 @@ For objects with type **Property**, the detail page includes a WOZ history secti
 
 Each contract row in the object detail page now shows a signing status badge alongside the active/paused badge. The colour follows the same map used on the contract detail page:
 
-- **Signed** (green) — all parties have signed
-- **Partially signed** (blue) — some parties have signed, others pending
-- **Sent** (yellow) — the signing invite has been sent, no signatures yet
-- **Expired** or **Terminated** (red) — the signing request is no longer valid
+- **Signed** (green): all parties have signed
+- **Partially signed** (blue): some parties have signed, others pending
+- **Sent** (yellow): the signing invite has been sent, no signatures yet
+- **Expired** or **Terminated** (red): the signing request is no longer valid
 
 Fully signed contracts show a small eye icon that opens an inline preview of the signed document, so you can read the completed contract without leaving the property page.
 

@@ -56,9 +56,9 @@ Die Detailseite zeigt:
 
 Oberhalb der Vertragsliste gibt eine Zusammenfassungszeile einen schnellen Überblick über den Vertragszustand des Objekts:
 
-- **Verträge gesamt** — mit diesem Objekt verknüpft
-- **Signierte Verträge** — wie viele vollständig unterzeichnet sind
-- **Monatlich aktiv** — kombinierter monatlicher Wert aller aktiven Verträge, normalisiert aus Verträgen mit unterschiedlicher Frequenz (wöchentlich, vierteljährlich, jährlich)
+- **Verträge gesamt**: mit diesem Objekt verknüpft
+- **Signierte Verträge**: wie viele vollständig unterzeichnet sind
+- **Monatlich aktiv**: kombinierter monatlicher Wert aller aktiven Verträge, normalisiert aus Verträgen mit unterschiedlicher Frequenz (wöchentlich, vierteljährlich, jährlich)
 
 ### WOZ-Verlauf (Immobilienobjekte)
 
@@ -73,10 +73,10 @@ Bei Objekten des Typs **Immobilie** enthält die Detailseite einen Abschnitt zum
 
 Jede Vertragszeile auf der Objektdetailseite zeigt nun eine Signierstatus-Badge neben der Aktiv/Pausiert-Badge. Die Farbgebung folgt der gleichen Zuordnung wie auf der Vertragsdetailseite:
 
-- **Signiert** (grün) — alle Parteien haben unterzeichnet
-- **Teilweise signiert** (blau) — einige Parteien haben unterzeichnet, andere noch nicht
-- **Gesendet** (gelb) — die Signiereinladung wurde versendet, noch keine Unterschriften
-- **Abgelaufen** oder **Beendet** (rot) — die Signieranfrage ist nicht mehr gültig
+- **Signiert** (grün): alle Parteien haben unterzeichnet
+- **Teilweise signiert** (blau): einige Parteien haben unterzeichnet, andere noch nicht
+- **Gesendet** (gelb): die Signiereinladung wurde versendet, noch keine Unterschriften
+- **Abgelaufen** oder **Beendet** (rot): die Signieranfrage ist nicht mehr gültig
 
 Vollständig signierte Verträge zeigen ein kleines Augensymbol, das eine Inline-Vorschau des unterschriebenen Dokuments öffnet. So können Sie den abgeschlossenen Vertrag lesen, ohne die Objektseite zu verlassen.
 
