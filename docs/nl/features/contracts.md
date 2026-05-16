@@ -90,6 +90,16 @@ Contracten die zijn aangemaakt voordat de ondertekenfunctie werd toegevoegd, ton
 Oude contracten tonen een streepje in de Tekenstatus-kolom en vallen onder het filter "Geen e-handtekening".
 :::
 
+### SMS-verificatie
+
+Ondertekenlinks kunnen SMS-verificatie vereisen voordat een partij het document kan bekijken en ondertekenen. Als dit is ingeschakeld, moet de ondertekenaar een mobiel nummer opgeven en een 6-cijferige code bevestigen die per SMS wordt verstuurd.
+
+- **Verstuur code** — Na het invoeren van het mobiele nummer tikt de ondertekenaar op de knop en ontvangt een code
+- **Code bevestigen** — De ondertekenaar voert de 6-cijferige code in om toegang tot het nummer te bewijzen
+- **Geverifieerd-badge** — Na bevestiging verschijnt een "Geverifieerd"-badge met de laatste vier cijfers van het nummer
+
+Als een verkeerde code wordt ingevoerd, kan de ondertekenaar een nieuwe aanvragen. SMS-verificatie wordt per ondertekensessie ingesteld en geldt voor alle partijen.
+
 ## Sjabloonversies
 
 Contractsjablonen ondersteunen versiebeheer zodat je wijzigingen in de loop van de tijd kunt volgen. Elke versie is een bevroren momentopname van de sjablooninhoud op een bepaald moment, zodat je je sjablonen kunt blijven ontwikkelen zonder bestaande contracten te beinvloeden.

@@ -90,6 +90,16 @@ Les contrats crees avant l'introduction de la signature electronique n'affichent
 Les contrats existants affichent un tiret dans la colonne Signature et apparaissent sous le filtre « Sans signature electronique ».
 :::
 
+### Verification SMS
+
+Les liens de signature peuvent exiger une verification par SMS avant qu'une partie puisse consulter et signer le document. Lorsque cette option est activee, le signataire doit saisir un numero de mobile et confirmer un code a 6 chiffres envoye par SMS.
+
+- **Envoyer le code** — Apres avoir saisi son numero de mobile, le signataire appuie sur le bouton et recoit un code
+- **Verifier le code** — Le signataire saisit le code a 6 chiffres pour prouver l'acces au numero
+- **Badge Verifie** — Une fois confirme, un badge « Verifie » apparait avec les quatre derniers chiffres du numero
+
+Si un code incorrect est saisi, le signataire peut en demander un nouveau. La verification SMS est configuree par session de signature et s'applique a toutes les parties.
+
 ## Versions de modele
 
 Les modeles de contrat prennent en charge le versionnage pour suivre les modifications dans le temps. Chaque version est un instantane fige du contenu du modele a un moment donne, ce qui vous permet de faire evoluer vos modeles sans affecter les contrats deja crees.

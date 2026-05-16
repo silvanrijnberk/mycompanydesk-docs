@@ -90,6 +90,16 @@ Contracts created before the e-signing feature was added do not show a signing c
 Legacy contracts show a dash in the Signing column and appear under the "No e-signing" filter.
 :::
 
+### SMS verification
+
+Signing links can require SMS verification before a party can view and sign the document. When enabled, the signer must enter a mobile number and confirm a 6-digit code sent by SMS.
+
+- **Send code** — After entering their mobile number, the signer taps the button and receives a code
+- **Verify code** — The signer enters the 6-digit code to prove access to the phone number
+- **Verified badge** — Once confirmed, a "Verified" badge appears with the last four digits of the number
+
+If the wrong code is entered, the signer can request a new one. SMS verification is configured per signing session and applies to all parties.
+
 ## Template versions
 
 Contract templates support versioning so you can track changes over time. Each version is a frozen snapshot of the template content at a point in time, letting you evolve your templates without affecting contracts that were already created.
