@@ -15,6 +15,10 @@ Getting started with MyCompanyDesk takes just a few minutes.
    - **Microsoft/Outlook** — Sign in with your Microsoft account
 3. If you signed up with email, check your inbox for a **verification email** and click the link to verify your account
 
+:::tip Partner referral
+If your accountant or boekhouder gave you a referral link (for example, `app.mycompanydesk.com/register?partner=THEIRCODE`), open that link to sign up. Your signup will be attributed to them automatically, which may qualify your workspace for a partner benefit such as an extended free trial.
+:::
+
 ## Create or join a workspace
 
 After signing up, you have two options:

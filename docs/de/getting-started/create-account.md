@@ -15,6 +15,10 @@ Der Einstieg in MyCompanyDesk dauert nur wenige Minuten.
    - **Microsoft/Outlook** — Melden Sie sich mit Ihrem Microsoft-Konto an
 3. Wenn Sie sich per E-Mail registriert haben, prüfen Sie Ihren Posteingang auf eine **Bestätigungs-E-Mail** und klicken Sie auf den Link, um Ihr Konto zu verifizieren
 
+:::tip Partner-Empfehlung
+Hat Ihr Steuerberater oder Buchhalter Ihnen einen Empfehlungslink gegeben (zum Beispiel `app.mycompanydesk.com/register?partner=DERENCODE`)? Öffnen Sie diesen Link zur Registrierung. Ihre Anmeldung wird automatisch zugeordnet, wodurch Ihr Arbeitsbereich möglicherweise von einem Partnervorteil wie einer verlängerten kostenlosen Testphase profitiert.
+:::
+
 ## Arbeitsbereich erstellen oder beitreten
 
 Nach der Registrierung haben Sie zwei Möglichkeiten:
