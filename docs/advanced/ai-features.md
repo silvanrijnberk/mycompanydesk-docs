@@ -140,8 +140,6 @@ Bulk locale-file sync (filling missing keys, re-translating drift across `nl/de/
 | Text check | On | On | On |
 | Translation | On (UI strings only) | On | On |
 
-Beta workspaces with `beta_override` bypass restrictions. See [Billing](/settings/billing) for the live plan matrix.
-
 ## Privacy
 
 When `ai_processing_mode` is set to `local_only` on the workspace, every AI path that supports it (receipt scanner, AI suggestions, text check, vendor classifier, industry detection) routes through the local Ollama instance and never leaves the server. The contextual guide is cloud-only by design — it requires the chat-tier model and is disabled in `local_only` mode rather than degraded.
