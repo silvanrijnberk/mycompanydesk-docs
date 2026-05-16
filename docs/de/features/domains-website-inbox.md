@@ -150,6 +150,17 @@ Was das Verkaufsprotokoll zeigt:
 
 Verkaufsdatensätze werden vom öffentlichen Checkout-Endpunkt (`POST /public/sites/:slug/checkout`) erstellt, der den Abschnitt validiert, eine Zahlung über den verbundenen Dienstleister anlegt und den Käufer zur gehosteten Checkout-Seite weiterleitet.
 
+### Ablauf nach dem Kauf
+
+Wenn eine Zahlung abgeschlossen ist, führt die Plattform automatisch die folgenden Schritte aus. Alles läuft fire-and-forget: Fehler werden protokolliert und haben keinen Einfluss auf den Zahlungsstatus, den der Käufer sieht.
+
+1. **Rechnung erstellt.** Eine Rechnung wird aus dem Verkauf erstellt, mit Produktname, Preis und der E-Mail des Käufers. Wenn die E-Mail mit einem bestehenden Kunden in Ihrem Workspace übereinstimmt, wird die Rechnung diesem Kunden zugeordnet. Andernfalls wird ein minimaler Kundendatensatz erstellt. Die Rechnung wird sofort finalisiert (Status `sent`), da die Zahlung bereits eingegangen ist.
+2. **Zahlung verbucht.** Ein Zahlungsdatensatz wird auf der Rechnung über den Standard-Zahlungsservice erstellt. Die Zahlungsmethode wird auf den Dienstleister (Mollie oder Stripe) gesetzt und die Referenz enthält die Prozessor-Session-ID für Audit-Trails.
+3. **Kundenbestätigung.** Der Käufer erhält eine Bestätigungs-E-Mail mit Produktname, Betrag und Zahlungsmethode. Wenn eine Rechnung erstellt wurde, enthält die E-Mail einen gesicherten Portal-Link zum Anzeigen und Herunterladen des Rechnungs-PDFs.
+4. **Inhaber benachrichtigt.** Sie erhalten eine In-App-Benachrichtigung und eine E-Mail-Zusammenfassung des Verkaufs: Produkt, Betrag, Kunden-E-Mail und einen direkten Link zur Rechnung.
+
+Die Checkout-Erfolg- und Checkout-Abgebrochen-Seiten zeigen dem Käufer einen gebrandeten Ergebnisbildschirm, der die Design-Tokens (Farben) Ihrer Website verwendet, damit die Seite markenkonform bleibt.
+
 ## E-Mails senden vs. E-Mails empfangen
 
 Dieses Bundle ist die **Empfangsseite**. Ausgehende E-Mails -- Rechnungsversand, Erinnerungen, Angebotsversand -- werden von der breiteren E-Mail-Pipeline abgewickelt, die unter [E-Mail-Integration](/de/settings/email) beschrieben ist. Sobald eine Domain verifiziert und der Posteingang aktiviert ist, wird dieselbe Domain auch als From-Adresse für ausgehende E-Mails verwendet, mit DKIM-Signierung auf `mail.acme.de`.
