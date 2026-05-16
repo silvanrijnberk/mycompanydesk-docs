@@ -113,7 +113,7 @@ Schakel online factuurbetalingen in door je eigen Mollie- of Stripe-account te k
 3. Mollie ondersteunt iDEAL, Bancontact, creditcard en bankoverboeking
 4. Stripe Connect ondersteunt card, Apple Pay, Google Pay en SEPA-incasso
 
-Na het koppelen bevat elke factuur die je verstuurt een betaallink. Je klanten betalen via jouw eigen verwerker — het geld staat direct op jouw rekening. MyCompanyDesk verwerkt of beheert geen betalingen voor je.
+Na het koppelen bevat elke factuur die je verstuurt een betaallink. Je klanten betalen via jouw eigen verwerker. Het geld staat direct op jouw rekening. MyCompanyDesk verwerkt of beheert geen betalingen voor je.
 
 ## Documenttypen
 

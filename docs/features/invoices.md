@@ -113,7 +113,7 @@ Enable online invoice payments by connecting your own Mollie or Stripe account:
 3. Mollie supports iDEAL, Bancontact, credit card, and bank transfer
 4. Stripe Connect supports card, Apple Pay, Google Pay, and SEPA direct debit
 
-Once connected, every invoice you send includes a payment link. Your customers pay through your own processor account — funds go directly to you. MyCompanyDesk does not handle or hold your payments.
+Once connected, every invoice you send includes a payment link. Your customers pay through your own processor account. Funds go directly to you. MyCompanyDesk does not handle or hold your payments.
 
 ## Document types
 

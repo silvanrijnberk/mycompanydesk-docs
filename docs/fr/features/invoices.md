@@ -113,7 +113,7 @@ Activez les paiements de factures en ligne en connectant votre propre compte Mol
 3. Mollie prend en charge iDEAL, Bancontact, la carte bancaire et le virement
 4. Stripe Connect prend en charge la carte, Apple Pay, Google Pay et le prelevement SEPA
 
-Une fois connecte, chaque facture que vous envoyez inclut un lien de paiement. Vos clients paient via votre propre compte prestataire — les fonds vous sont verses directement. MyCompanyDesk ne traite ni ne conserve vos paiements.
+Une fois connecte, chaque facture que vous envoyez inclut un lien de paiement. Vos clients paient via votre propre compte prestataire. Les fonds vous sont verses directement. MyCompanyDesk ne traite ni ne conserve vos paiements.
 
 ## Types de documents
 

@@ -31,7 +31,7 @@ Les méthodes activées et les instructions apparaissent sur les modèles de doc
 
 ## Prestataires de paiement en ligne
 
-Vous pouvez connecter votre propre compte Mollie ou Stripe pour que les clients puissent payer leurs factures directement en ligne. Les fonds sont versés directement sur votre compte — MyCompanyDesk ne gère que la connexion.
+Vous pouvez connecter votre propre compte Mollie ou Stripe pour que les clients puissent payer leurs factures directement en ligne. Les fonds sont verses directement sur votre compte. MyCompanyDesk ne gere que la connexion.
 
 Pour connecter un prestataire :
 1. Allez dans **Argent → Paiements** dans votre espace de travail
@@ -39,6 +39,6 @@ Pour connecter un prestataire :
 3. Suivez le flux OAuth pour autoriser votre compte
 4. Une fois connecté, chaque facture envoyée inclut un lien de paiement pour vos clients
 
-Mollie prend en charge iDEAL, Bancontact, la carte bancaire et le virement — idéal pour les clients néerlandais et belges. Stripe Connect prend en charge la carte, Apple Pay, Google Pay et le prélèvement SEPA — adapté aux clients internationaux.
+Mollie prend en charge iDEAL, Bancontact, la carte bancaire et le virement, ideal pour les clients neerlandais et belges. Stripe Connect prend en charge la carte, Apple Pay, Google Pay et le prelevement SEPA, adapte aux clients internationaux.
 
 Pour déconnecter, cliquez sur **Loskoppelen** sur la carte correspondante. Après la déconnexion, les clients ne peuvent plus payer via ce prestataire.

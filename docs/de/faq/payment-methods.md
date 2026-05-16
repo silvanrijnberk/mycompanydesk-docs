@@ -31,7 +31,7 @@ Die aktivierten Methoden und Hinweise erscheinen auf Dokumentvorlagen, die diese
 
 ## Online-Zahlungsanbieter
 
-Du kannst dein eigenes Mollie- oder Stripe-Konto verbinden, damit Kunden Rechnungen direkt online bezahlen koennen. Das Geld geht direkt auf dein Konto — MyCompanyDesk stellt nur die Verbindung her.
+Du kannst dein eigenes Mollie- oder Stripe-Konto verbinden, damit Kunden Rechnungen direkt online bezahlen koennen. Das Geld geht direkt auf dein Konto. MyCompanyDesk stellt nur die Verbindung her.
 
 So verbindest du einen Anbieter:
 1. Gehe zu **Geld → Zahlungen** in deinem Arbeitsbereich
@@ -39,6 +39,6 @@ So verbindest du einen Anbieter:
 3. Folge dem OAuth-Vorgang zur Autorisierung deines Kontos
 4. Nach der Verbindung enthaelt jede versendete Rechnung einen Zahlungslink fuer deine Kunden
 
-Mollie unterstuetzt iDEAL, Bancontact, Kreditkarte und Bankueberweisung — ideal fuer niederlaendische und belgische Kunden. Stripe Connect unterstuetzt Karte, Apple Pay, Google Pay und SEPA-Lastschrift — geeignet fuer internationale Kunden.
+Mollie unterstuetzt iDEAL, Bancontact, Kreditkarte und Bankueberweisung, ideal fuer niederlaendische und belgische Kunden. Stripe Connect unterstuetzt Karte, Apple Pay, Google Pay und SEPA-Lastschrift, geeignet fuer internationale Kunden.
 
 Zum Trennen klicke auf **Loskoppelen** auf der entsprechenden Karte. Nach der Trennung koennen Kunden nicht mehr ueber diesen Anbieter bezahlen.
