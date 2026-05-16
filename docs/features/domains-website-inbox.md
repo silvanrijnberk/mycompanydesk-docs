@@ -47,7 +47,7 @@ SSL is provisioned by Cloudflare automatically once the zone is active. The defa
 
 ### Step 4 — Website goes live
 
-The hosted business page (see [Business Page](/advanced/business-page)) is automatically published at the domain root once the zone is active. The wizard's `getBusinessPageUrl` resolver returns, in priority:
+The hosted business page (see [Site Builder](/advanced/business-page)) is automatically published at the domain root once the zone is active. The wizard's `getBusinessPageUrl` resolver returns, in priority:
 
 1. A custom domain with `business_page_enabled = true` → `https://acme.nl`
 2. A custom domain with `portal_subdomain_enabled = true` → `https://portal.acme.nl`
@@ -102,21 +102,22 @@ Notable columns the app reads from:
 
 ### Hosted website
 
-The website builder lives at `Company › Your website` (`/workspace/organization/company/website`). It mounts the `CompanyServices` component, which writes to `companies.business_page_*` columns and the related `company_services`, `company_team_members`, `company_testimonials` and `company_gallery` tables. The public face is served from `/portal/<slug>` (and from your custom domain once verified).
+The site builder lives at `Company › Your website` (`/website`). It is a full multi-page editor with sections, blocks, design tokens, and publish snapshots. The public face is served from your custom domain (or workspace subdomain / fallback portal route) once published.
 
 What the editor surfaces:
 
-- **Live status** — whether the website is enabled and its public URL.
-- **Pages** — toggle About, Contact, Services, Team, Quote form, Legal.
-- **Hero** — tagline, content, hero image.
-- **About** — long-form copy.
-- **Photos** — hero image upload + gallery.
-- **Services** — catalog with descriptions, prices, slugs, photos. Services have their own detail page (`/portal/<slug>/services/<service-slug>`).
-- **Team** — public team-member cards.
-- **Testimonials** — quotes from customers.
-- **Quote requests** — public quote-request form, rate-limited to 1 per 15 minutes per IP. Submissions land in `Quotes › Requests` (see [Quotes](/features/quotes)).
+- **Editor tab** — Compose pages by adding and arranging sections (hero, text, gallery, services, team, testimonials, contact form, custom HTML). Inspect and edit section content, layout, style, and animation.
+- **Pages tab** — Create, rename, delete, and filter pages by status (live, draft, scheduled). Pick a template when creating a new page.
+- **Style tab** — Design tokens for colors, fonts, scale, motion, buttons, custom CSS, and head snippets (analytics, font preconnects).
+- **Domain & SEO tab** — Custom domain management. See the custom domains section above.
+- **Integrations tab** — Connect third-party services.
+- **Navigation editor** — Drag-and-drop reorder of header links, with dropdown groups and external links.
+- **Publish button** — Shows unpublished change count. Pushes a snapshot live with one click.
+- **Responsive preview** — Toggle desktop, tablet, and mobile viewports in the editor.
 
-The public site is served at the highest-priority URL the company owns: custom domain root → `portal.<custom-domain>` → workspace subdomain → fallback `/portal/<slug>` route.
+The public site is served at the highest-priority URL the company owns: custom domain root → workspace subdomain → fallback `/portal/<slug>` route.
+
+See [Site Builder](/advanced/business-page) for the full editor guide.
 
 ### Email inbox
 
@@ -152,6 +153,6 @@ This bundle is the **receiving** side. Outgoing email — invoice delivery, remi
 
 - [Setup wizard](/getting-started/company-setup) — the magical onboarding that drives the bundled flow.
 - [Email Integration](/settings/email) — outgoing email, send-as picker, delivery tracking.
-- [Business Page](/advanced/business-page) — the public-facing surface.
+- [Site Builder](/advanced/business-page) — the full editor guide.
 - [Company Settings](/settings/company) — the umbrella that hosts About / Look / Website / Address.
 - [Billing & Plans](/settings/billing) — feature flags that gate the bundle.

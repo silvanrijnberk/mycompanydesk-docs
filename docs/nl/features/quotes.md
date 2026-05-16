@@ -53,7 +53,7 @@ Zodra een klant je offerte accepteert, zet je deze met een klik om naar een fact
 
 ## Offerteaanvragen
 
-Klanten kunnen offerteaanvragen indienen via je [bedrijfspagina](/nl/advanced/business-page). Deze verschijnen in **Offertes > Aanvragen**.
+Klanten kunnen offerteaanvragen indienen via je [sitebouwer](/nl/advanced/business-page). Deze verschijnen in **Offertes > Aanvragen**.
 
 ### Aanvragen beheren
 

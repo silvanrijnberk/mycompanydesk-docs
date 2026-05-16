@@ -1,69 +1,114 @@
 ---
-title: Bedrijfspagina
+title: Sitebouwer
 ---
 
-# Bedrijfspagina
+# Sitebouwer
 
-Maak een openbaar profiel voor je bedrijf dat klanten kunnen bezoeken om meer te weten te komen over je diensten en offertes aan te vragen.
+Bouw je zakelijke website met een drag-and-drop-editor. Maak meerdere pagina's, stel ze samen met secties en blokken, pas kleuren en lettertypes aan, en publiceer wanneer je klaar bent.
 
 ## Overzicht
 
-Je bedrijfspagina is een openbare webpagina die het volgende toont:
+De sitebouwer vervangt het oude bedrijfsprofiel van één pagina. Je krijgt een volwaardige website-editor met:
 
-- Je bedrijfsinformatie
-- Diensten die je aanbiedt
-- Contactgegevens
-- Social media-links
-- Een offerteaanvraagformulier
+- **Meerdere pagina's**: Maak zoveel pagina's als je nodig hebt, elk met een eigen pad en secties.
+- **Sectieblokken**: Voeg hero-, tekst-, galerij-, diensten-, team-, testimonial-, contactformulier- en aangepaste HTML-secties toe aan elke pagina.
+- **Ontwerptokens**: Stel merkkleuren, lettertypes, witruimte, hoekradius, bewegingsstijl en aangepaste CSS in. Wijzigingen gelden voor de hele site.
+- **Navigatie-editor**: Sleep en zet headerlinks op volgorde, met dropdown-groepen en externe links.
+- **Publicatiesnapshots**: Werk in concept, bekijk je wijzigingen en publiceer daarna. Ongepubliceerde wijzigingen zie je in de bovenbalk.
+- **Responsieve preview**: Schakel tussen desktop-, tablet- en mobiele weergave tijdens het bewerken.
 
-## Je bedrijfspagina instellen
+De sitebouwer vind je onder **Bedrijf > Je website** (`/website`).
 
-1. Ga naar **Bedrijf**-instellingen
-2. Vul het gedeelte **bedrijfsprofiel** in:
-   - **Beschrijving** — Een kort overzicht van je bedrijf
-   - **Diensten** — Vermeld de diensten die je aanbiedt
-   - **Website** — De URL van je bedrijfswebsite
-   - **Social media** — Links naar je sociale profielen
-3. Je bedrijfspagina is automatisch beschikbaar op een unieke URL
+## Tabs
 
-## Bedrijfspagina-URL
+De sitebouwer heeft vijf tabs:
 
-Je pagina is bereikbaar op:
+- **Editor**: Stel pagina's samen door secties toe te voegen en te rangschikken. Klik op een sectie om de inhoud, layout, stijl of animatie te bewerken. Sleep secties om ze te verplaatsen, dupliceren of verwijderen.
+- **Pagina's**: Beheer je pagina's: maak nieuwe aan vanuit sjablonen, stel paden en zichtbaarheid in, en bekijk welke pagina's live, concept of ingepland zijn. Klik op een pagina om deze in de editor te openen. De vergrendelde homepage kan niet worden verwijderd.
+- **Stijl**: Pas je sitebrede ontwerptokens aan: kleuren (merk, accent, papier, inkt), lettertypes (kop, body, mono uit de lettertypebibliotheek), schaal (radius, dichtheid, maximale breedte, sectie-afstand), beweging, knopstijlen en aangepaste CSS. Je kunt ook head-snippets toevoegen voor analytics (Plausible, Umami, Matomo) of lettertype-preconnects.
+- **Domein & SEO**: Configureer je eigen domein en SEO-instellingen. Zie [Domeinen, website en inbox](/nl/features/domains-website-inbox) voor het volledige domeinbeheer.
+- **Koppelingen**: Verbind diensten van derden met je website.
 
-```
-https://app.mycompanydesk.com/portal/{jouw-bedrijfs-slug}
-```
+## Pagina's aanmaken
 
-Deel deze link op je website, social media of visitekaartjes.
+1. Ga naar de **Pagina's**-tab.
+2. Klik op **Nieuwe pagina**.
+3. Geef een titel en een pad op (bijv. `/over-ons`).
+4. Kies een sjabloon of begin leeg.
+5. De pagina opent in de editor, waar je secties kunt toevoegen en uitbouwen.
+
+Elke pagina krijgt een uniek pad. De homepage (`/`) wordt standaard aangemaakt en kan niet worden verwijderd.
+
+## Pagina's bouwen met secties
+
+In de **Editor**-tab:
+
+- Klik op **Sectie toevoegen** om de beschikbare bloktypes te zien (hero, tekst, galerij, diensten, team, testimonials, contactformulier, aangepaste HTML, en meer).
+- Kies een bloktype om het op de pagina te plaatsen.
+- Klik op een sectie om het inspectiepaneel te openen, waar je inhoud, layout, stijl en animatie kunt bewerken.
+- Sleep secties omhoog of omlaag om ze te verplaatsen. Gebruik de dupliceer- en verwijderacties op elke sectie.
+
+Sommige secties hebben alleen-systeemvarianten die beschikbaar zijn op de vergrendelde homepage maar niet op aangepaste pagina's.
+
+## Je site vormgeven
+
+In de **Stijl**-tab bepaal je de look-and-feel van je hele site:
+
+- **Kleuren**: Kies merk-, accent-, papier-, inkt-, oppervlakte- en gedempte kleuren. Het palet wordt toegepast via CSS custom properties.
+- **Typografie**: Kies kop-, body- en mono-lettertypes uit de ingebouwde lettertypebibliotheek (Geist, Inter, DM Sans, DM Serif Display, Fraunces, Instrument Serif, Geist Mono).
+- **Schaal**: Stel hoekradius, dichtheid (compact, ruim, royaal), maximale inhoudsbreedte en verticale sectie-afstand in.
+- **Beweging**: Schakel verminderde beweging in of kies een bewegingsstijl (geen, subtiel, speels).
+- **Knoppen**: Pas knopradius, padding en hover-effecten aan.
+- **Aangepaste CSS**: Schrijf je eigen CSS die in de site wordt geïnjecteerd. Handig voor fijnafstemming of het overschrijven van standaardwaarden.
+- **Head-snippets**: Voeg analytics-scripts toe (Plausible, Umami, Matomo) of lettertype-preconnects via de snippetkiezer.
+
+Wijzigingen in de Stijl-tab worden automatisch opgeslagen bij bewerken en gelden voor alle pagina's.
+
+## Publiceren
+
+De bovenbalk toont hoeveel ongepubliceerde wijzigingen er zijn. Wanneer je klaar bent:
+
+1. Klik op **Publiceer** in de bovenbalk.
+2. Je site wordt gepubliceerd naar de openbare URL (je eigen domein, werkruimte-subdomein of de terugvalportalroute).
+
+Ongepubliceerde wijzigingen worden per pagina en per token bijgehouden. De publiceerknop is uitgeschakeld als er niets te publiceren is.
+
+## Navigatie
+
+De navigatie-editor laat je de headerlinks van je site indelen:
+
+- Sleep pagina's om de navigatie op volgorde te zetten.
+- Maak dropdown-groepen om pagina's onder een bovenliggend label te nesten.
+- Voeg externe links toe die buiten je site verwijzen.
+- De homepage staat altijd vooraan en is vergrendeld.
+
+## Openbare URL
+
+Je website wordt getoond op de best beschikbare URL:
+
+1. Je eigen domein (bijv. `https://acme.nl`) wanneer geverifieerd en ingeschakeld
+2. Je werkruimte-subdomein (bijv. `https://acme.mycompanydesk.com`)
+3. De terugvalportalroute (`/portal/{slug}`)
+
+Zie [Domeinen, website en inbox](/nl/features/domains-website-inbox) voor domeininstelling en -verificatie.
 
 ## Offerteaanvraagformulier
 
-Bezoekers van je bedrijfspagina kunnen een offerteaanvraag indienen:
+Bezoekers kunnen nog steeds offerteaanvragen indienen via het contactformuliersectie:
 
-1. Ze vullen hun **naam**, **e-mail** en **dienstomschrijving** in
-2. De aanvraag wordt ingediend
-3. Je ontvangt een melding
-4. De aanvraag verschijnt in **Offertes > Aanvragen**
+1. Ze vullen hun naam, e-mail en bericht in.
+2. De aanvraag wordt ingediend.
+3. Je ontvangt een melding.
+4. De aanvraag verschijnt in **Offertes > Aanvragen**.
 
-### Snelheidslimiet
-
-Om spam te voorkomen zijn offerteaanvragen beperkt tot 1 per 15 minuten per IP-adres.
+Offerteaanvragen zijn beperkt tot 1 per 15 minuten per IP-adres.
 
 ## Aanvragen beheren
 
-Zie [Offertes — Offerteaanvragen](/nl/features/quotes#offerteaanvragen) voor details over het beheren van binnenkomende aanvragen.
+Zie [Offertes - Offerteaanvragen](/nl/features/quotes#offerteaanvragen) voor details over het beheren van binnenkomende aanvragen.
 
-## Huisstijl
+## Gerelateerd
 
-Je bedrijfspagina gebruikt je bedrijfshuisstijl:
-
-- Bedrijfslogo
-- Accentkleur
-- Bedrijfsnaam en -gegevens
-
-## Tips
-
-- Houd je dienstenaanbod up-to-date
-- Voeg een link naar je bedrijfspagina toe op je website
-- Reageer snel op offerteaanvragen voor betere conversie
-- Gebruik de offerteaanvraagworkflow om leads bij te houden
+- [Domeinen, website en inbox](/nl/features/domains-website-inbox): Eigen domein instellen, verificatie, SSL en e-mailinbox.
+- [Bedrijfsinstellingen](/nl/settings/company): Waar je bedrijfsgegevens, huisstijl en adres staan.
+- [Offertes](/nl/features/quotes): Beheren van offerteaanvragen die via je website binnenkomen.

@@ -1,69 +1,114 @@
 ---
-title: Geschäftsseite
+title: Website-Builder
 ---
 
-# Geschäftsseite
+# Website-Builder
 
-Erstellen Sie ein öffentliches Profil für Ihr Unternehmen, das Kunden besuchen können, um mehr über Ihre Dienstleistungen zu erfahren und Angebote anzufragen.
+Erstellen Sie Ihre Geschäftswebsite mit einem Drag-and-Drop-Editor. Legen Sie mehrere Seiten an, gestalten Sie sie mit Abschnitten und Blöcken, passen Sie Farben und Schriften an und veröffentlichen Sie, wenn Sie bereit sind.
 
 ## Übersicht
 
-Ihre Geschäftsseite ist eine öffentliche Webseite, die präsentiert:
+Der Website-Builder ersetzt das alte einseitige Unternehmensprofil. Sie erhalten einen vollständigen Website-Editor mit:
 
-- Ihre Unternehmensinformationen
-- Angebotene Dienstleistungen
-- Kontaktdaten
-- Social-Media-Links
-- Ein Angebotsanfrageformular
+- **Mehrere Seiten**: Erstellen Sie so viele Seiten, wie Sie benötigen, jede mit eigenem Pfad und eigenen Abschnitten.
+- **Abschnittsblöcke**: Fügen Sie Hero-, Text-, Galerie-, Dienstleistungs-, Team-, Testimonial-, Kontaktformular- und benutzerdefinierte HTML-Abschnitte zu jeder Seite hinzu.
+- **Design-Tokens**: Legen Sie Markenfarben, Schriften, Abstände, Eckenradius, Bewegungsstil und benutzerdefiniertes CSS fest. Änderungen gelten für die gesamte Site.
+- **Navigations-Editor**: Ordnen Sie Header-Links per Drag-and-Drop, mit Dropdown-Gruppen und externen Links.
+- **Veröffentlichungs-Snapshots**: Arbeiten Sie im Entwurf, sehen Sie sich Ihre Änderungen in der Vorschau an und veröffentlichen Sie dann. Unveröffentlichte Änderungen werden in der oberen Leiste angezeigt.
+- **Responsive Vorschau**: Wechseln Sie während der Bearbeitung zwischen Desktop-, Tablet- und Mobilansicht.
 
-## Geschäftsseite einrichten
+Den Website-Builder finden Sie unter **Unternehmen > Ihre Website** (`/website`).
 
-1. Gehen Sie zu den **Unternehmens**-Einstellungen
-2. Füllen Sie den Bereich **Geschäftsprofil** aus:
-   - **Beschreibung** — Ein kurzer Überblick über Ihr Unternehmen
-   - **Dienstleistungen** — Listen Sie die Dienstleistungen auf, die Sie anbieten
-   - **Website** — Die URL Ihrer Firmenwebsite
-   - **Social Media** — Links zu Ihren sozialen Profilen
-3. Ihre Geschäftsseite ist automatisch unter einer eindeutigen URL verfügbar
+## Tabs
 
-## Geschäftsseiten-URL
+Der Website-Builder hat fünf Tabs:
 
-Ihre Seite ist erreichbar unter:
+- **Editor**: Erstellen Sie Seiten durch Hinzufügen und Anordnen von Abschnitten. Klicken Sie auf einen Abschnitt, um Inhalt, Layout, Stil oder Animation zu bearbeiten. Ziehen Sie Abschnitte zum Verschieben, Duplizieren oder Löschen.
+- **Seiten**: Verwalten Sie Ihre Seiten: Erstellen Sie neue aus Vorlagen, legen Sie Pfade und Sichtbarkeit fest und sehen Sie, welche Seiten live, Entwurf oder geplant sind. Klicken Sie auf eine Seite, um sie im Editor zu öffnen. Die gesperrte Startseite kann nicht gelöscht werden.
+- **Stil**: Passen Sie Ihre site-weiten Design-Tokens an: Farben (Marke, Akzent, Papier, Tinte), Schriften (Überschrift, Text, Mono aus der Schriftbibliothek), Skalierung (Radius, Dichte, maximale Breite, Abschnittsabstand), Bewegung, Schaltflächenstile und benutzerdefiniertes CSS. Sie können auch Head-Snippets für Analytics (Plausible, Umami, Matomo) oder Schrift-Preconnects hinzufügen.
+- **Domain & SEO**: Konfigurieren Sie Ihre eigene Domain und SEO-Einstellungen. Siehe [Domains, Website und Posteingang](/de/features/domains-website-inbox) für die vollständige Domain-Verwaltung.
+- **Integrationen**: Binden Sie Drittanbieterdienste in Ihre Website ein.
 
-```
-https://app.mycompanydesk.com/portal/{ihr-firmen-slug}
-```
+## Seiten erstellen
 
-Teilen Sie diesen Link auf Ihrer Website, in sozialen Medien oder auf Visitenkarten.
+1. Gehen Sie zum Tab **Seiten**.
+2. Klicken Sie auf **Neue Seite**.
+3. Geben Sie einen Titel und einen Pfad ein (z. B. `/ueber-uns`).
+4. Wählen Sie eine Vorlage oder beginnen Sie mit einer leeren Seite.
+5. Die Seite öffnet sich im Editor, wo Sie Abschnitte hinzufügen und ausbauen können.
+
+Jede Seite erhält einen eindeutigen Pfad. Die Startseite (`/`) wird standardmäßig erstellt und kann nicht gelöscht werden.
+
+## Seiten mit Abschnitten aufbauen
+
+Im **Editor**-Tab:
+
+- Klicken Sie auf **Abschnitt hinzufügen**, um die verfügbaren Blocktypen zu sehen (Hero, Text, Galerie, Dienstleistungen, Team, Testimonials, Kontaktformular, benutzerdefiniertes HTML und mehr).
+- Wählen Sie einen Blocktyp aus, um ihn auf der Seite einzufügen.
+- Klicken Sie auf einen Abschnitt, um das Inspektionspanel zu öffnen, in dem Sie Inhalt, Layout, Stil und Animation bearbeiten können.
+- Ziehen Sie Abschnitte nach oben oder unten, um sie neu anzuordnen. Nutzen Sie die Duplizieren- und Löschen-Aktionen bei jedem Abschnitt.
+
+Einige Abschnitte haben Systemvarianten, die nur auf der gesperrten Startseite verfügbar sind.
+
+## Ihre Site gestalten
+
+Im **Stil**-Tab steuern Sie das Erscheinungsbild Ihrer gesamten Site:
+
+- **Farben**: Wählen Sie Marken-, Akzent-, Papier-, Tinten-, Oberflächen- und gedämpfte Farben. Die Palette wird über CSS Custom Properties angewendet.
+- **Typografie**: Wählen Sie Überschrift-, Text- und Mono-Schriften aus der integrierten Schriftbibliothek (Geist, Inter, DM Sans, DM Serif Display, Fraunces, Instrument Serif, Geist Mono).
+- **Skalierung**: Legen Sie Eckenradius, Dichte (kompakt, luftig, großzügig), maximale Inhaltsbreite und vertikalen Abschnittsabstand fest.
+- **Bewegung**: Aktivieren Sie reduzierte Bewegung oder wählen Sie einen Bewegungsstil (keine, dezent, verspielt).
+- **Schaltflächen**: Passen Sie Schaltflächenradius, Innenabstand und Hover-Effekte an.
+- **Benutzerdefiniertes CSS**: Schreiben Sie Ihr eigenes CSS, das in die Site eingebunden wird. Nützlich für Feinanpassungen oder zum Überschreiben von Standardwerten.
+- **Head-Snippets**: Fügen Sie Analytics-Skripte (Plausible, Umami, Matomo) oder Schrift-Preconnects über die Snippet-Auswahl hinzu.
+
+Änderungen im Stil-Tab werden automatisch gespeichert und gelten für alle Seiten.
+
+## Veröffentlichen
+
+Die obere Leiste zeigt an, wie viele unveröffentlichte Änderungen vorhanden sind. Wenn Sie bereit sind:
+
+1. Klicken Sie in der oberen Leiste auf **Veröffentlichen**.
+2. Ihre Site wird unter der öffentlichen URL veröffentlicht (Ihre eigene Domain, Workspace-Subdomain oder die Fallback-Portalroute).
+
+Unveröffentlichte Änderungen werden pro Seite und pro Token erfasst. Die Veröffentlichen-Schaltfläche ist deaktiviert, wenn nichts zu veröffentlichen ist.
+
+## Navigation
+
+Der Navigations-Editor ermöglicht es Ihnen, die Header-Links Ihrer Site zu ordnen:
+
+- Ziehen Sie Seiten, um die Navigation neu anzuordnen.
+- Erstellen Sie Dropdown-Gruppen, um Seiten unter einem übergeordneten Label zu verschachteln.
+- Fügen Sie externe Links hinzu, die aus Ihrer Site herausführen.
+- Die Startseite steht immer an erster Stelle und ist gesperrt.
+
+## Öffentliche URL
+
+Ihre Website wird unter der am besten geeigneten URL bereitgestellt:
+
+1. Ihre eigene Domain (z. B. `https://acme.de`), wenn verifiziert und aktiviert
+2. Ihre Workspace-Subdomain (z. B. `https://acme.mycompanydesk.com`)
+3. Die Fallback-Portalroute (`/portal/{slug}`)
+
+Siehe [Domains, Website und Posteingang](/de/features/domains-website-inbox) für Domain-Einrichtung und -Verifizierung.
 
 ## Angebotsanfrageformular
 
-Besucher Ihrer Geschäftsseite können eine Angebotsanfrage einreichen:
+Besucher können weiterhin Angebotsanfragen über den Kontaktformular-Abschnitt einreichen:
 
-1. Sie füllen ihren **Namen**, ihre **E-Mail** und eine **Dienstleistungsbeschreibung** aus
-2. Die Anfrage wird eingereicht
-3. Sie erhalten eine Benachrichtigung
-4. Die Anfrage erscheint unter **Angebote > Anfragen**
+1. Sie geben ihren Namen, ihre E-Mail-Adresse und ihre Nachricht ein.
+2. Die Anfrage wird eingereicht.
+3. Sie erhalten eine Benachrichtigung.
+4. Die Anfrage erscheint unter **Angebote > Anfragen**.
 
-### Ratenbegrenzung
-
-Um Spam zu verhindern, sind Angebotsanfragen auf 1 pro 15 Minuten pro IP-Adresse begrenzt.
+Angebotsanfragen sind auf 1 pro 15 Minuten pro IP-Adresse begrenzt.
 
 ## Anfragen verwalten
 
-Siehe [Angebote — Angebotsanfragen](/de/features/quotes#angebotsanfragen) für Details zur Verwaltung eingehender Anfragen.
+Siehe [Angebote - Angebotsanfragen](/de/features/quotes#angebotsanfragen) für Details zur Verwaltung eingehender Anfragen.
 
-## Branding
+## Verwandt
 
-Ihre Geschäftsseite verwendet Ihr Unternehmensbranding:
-
-- Firmenlogo
-- Akzentfarbe
-- Firmenname und Details
-
-## Tipps
-
-- Halten Sie Ihre Dienstleistungsliste aktuell
-- Fügen Sie einen Link zu Ihrer Geschäftsseite auf Ihrer Website hinzu
-- Antworten Sie zeitnah auf Angebotsanfragen für eine bessere Konversionsrate
-- Verwenden Sie den Angebotsanfrage-Workflow, um Leads zu verfolgen
+- [Domains, Website und Posteingang](/de/features/domains-website-inbox): Eigene Domain einrichten, Verifizierung, SSL und E-Mail-Posteingang.
+- [Unternehmenseinstellungen](/de/settings/company): Wo Ihre Unternehmensdaten, Ihr Branding und Ihre Adresse hinterlegt sind.
+- [Angebote](/de/features/quotes): Verwalten von Angebotsanfragen, die über Ihre Website eingehen.

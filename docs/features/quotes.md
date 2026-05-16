@@ -53,7 +53,7 @@ Once a customer accepts your quote, convert it to an invoice with one click:
 
 ## Quote requests
 
-Customers can submit quote requests through your [business page](/advanced/business-page). These appear in **Quotes > Requests**.
+Customers can submit quote requests through your [site builder](/advanced/business-page). These appear in **Quotes > Requests**.
 
 ### Managing requests
 

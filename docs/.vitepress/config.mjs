@@ -75,7 +75,7 @@ function sidebarEN() {
       collapsed: true,
       items: [
         { text: 'Customer Portal', link: '/advanced/customer-portal' },
-        { text: 'Business Page', link: '/advanced/business-page' },
+        { text: 'Site Builder', link: '/advanced/business-page' },
         { text: 'AI Features', link: '/advanced/ai-features' },
         { text: 'Receipt Scanning', link: '/advanced/receipt-scanning' },
         { text: 'API Integration', link: '/advanced/api' },
@@ -150,7 +150,7 @@ function sidebarNL() {
       collapsed: true,
       items: [
         { text: 'Klantenportaal', link: '/nl/advanced/customer-portal' },
-        { text: 'Bedrijfspagina', link: '/nl/advanced/business-page' },
+        { text: 'Sitebouwer', link: '/nl/advanced/business-page' },
         { text: 'AI-functies', link: '/nl/advanced/ai-features' },
         { text: 'Bonnen scannen', link: '/nl/advanced/receipt-scanning' },
         { text: 'API-integratie', link: '/nl/advanced/api' },
@@ -225,7 +225,7 @@ function sidebarDE() {
       collapsed: true,
       items: [
         { text: 'Kundenportal', link: '/de/advanced/customer-portal' },
-        { text: 'Unternehmensseite', link: '/de/advanced/business-page' },
+        { text: 'Website-Builder', link: '/de/advanced/business-page' },
         { text: 'KI-Funktionen', link: '/de/advanced/ai-features' },
         { text: 'Belegerfassung', link: '/de/advanced/receipt-scanning' },
         { text: 'API-Integration', link: '/de/advanced/api' },
@@ -300,7 +300,7 @@ function sidebarFR() {
       collapsed: true,
       items: [
         { text: 'Portail client', link: '/fr/advanced/customer-portal' },
-        { text: "Page d'entreprise", link: '/fr/advanced/business-page' },
+        { text: 'Constructeur de site', link: '/fr/advanced/business-page' },
         { text: 'Fonctions IA', link: '/fr/advanced/ai-features' },
         { text: 'Numérisation de reçus', link: '/fr/advanced/receipt-scanning' },
         { text: 'Intégration API', link: '/fr/advanced/api' },

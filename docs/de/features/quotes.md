@@ -53,7 +53,7 @@ Sobald ein Kunde Ihr Angebot annimmt, wandeln Sie es mit einem Klick in eine Rec
 
 ## Angebotsanfragen
 
-Kunden können Angebotsanfragen über Ihre [Geschäftsseite](/de/advanced/business-page) einreichen. Diese erscheinen unter **Angebote > Anfragen**.
+Kunden können Angebotsanfragen über Ihren [Website-Builder](/de/advanced/business-page) einreichen. Diese erscheinen unter **Angebote > Anfragen**.
 
 ### Anfragen verwalten
 
