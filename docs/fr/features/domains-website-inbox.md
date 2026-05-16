@@ -150,6 +150,17 @@ Ce que le journal des ventes affiche :
 
 Les enregistrements de vente sont crees par le point de terminaison de checkout public (`POST /public/sites/:slug/checkout`), qui valide la section, cree un paiement via le prestataire connecte et redirige l'acheteur vers la page de checkout hebergee.
 
+### Parcours apres l'achat
+
+Lorsqu'un paiement est finalise, la plateforme execute automatiquement les etapes suivantes. Tout fonctionne en fire-and-forget : les erreurs sont journalisees et n'affectent pas le statut de paiement que l'acheteur voit.
+
+1. **Facture generee.** Une facture est creee a partir de la vente, avec le nom du produit, le prix et l'e-mail de l'acheteur. Si l'e-mail correspond a un client existant dans votre espace de travail, la facture est liee a ce client. Sinon, une fiche client minimale est creee. La facture est finalisee immediatement (statut `sent`) puisque le paiement a deja ete recu.
+2. **Paiement enregistre.** Un enregistrement de paiement est cree sur la facture via le service de paiement standard. La methode de paiement est definie sur le prestataire (Mollie ou Stripe) et la reference contient l'ID de session du processeur pour les pistes d'audit.
+3. **Confirmation au client.** L'acheteur recoit un e-mail de confirmation avec le nom du produit, le montant et la methode de paiement. Si une facture a ete generee, l'e-mail contient un lien securise vers le portail pour consulter et telecharger la facture en PDF.
+4. **Proprietaire averti.** Vous recevez une notification dans l'application et un resume par e-mail de la vente : produit, montant, e-mail du client et un lien direct vers la facture.
+
+Les pages succes-du-checkout et checkout-annule affichent a l'acheteur un ecran de resultat aux couleurs de votre marque, en utilisant les tokens de design (couleurs) de votre site.
+
 ## Envoyer des e-mails vs recevoir des e-mails
 
 Ce lot correspond au côte **reception**. Les e-mails sortants -- envoi de factures, rappels, envoi de devis -- sont geres par le pipeline e-mail plus large decrit dans [Integration e-mail](/fr/settings/email). Une fois qu'un domaine est verifie et la boite de reception activee, le meme domaine est egalement utilise comme adresse From pour les e-mails sortants, avec signature DKIM sur `mail.acme.fr`.
