@@ -90,6 +90,16 @@ Verträge, die vor der Einführung der elektronischen Signatur erstellt wurden, 
 Bestandsverträge zeigen einen Bindestrich in der Signatur-Spalte und erscheinen unter dem Filter "Keine E-Signatur".
 :::
 
+### SMS-Verifizierung
+
+Signierlinks können eine SMS-Verifizierung verlangen, bevor eine Partei das Dokument einsehen und signieren kann. Wenn aktiviert, muss der Unterzeichner eine Mobilnummer eingeben und einen 6-stelligen Code per SMS bestätigen.
+
+- **Code senden** — Nach Eingabe der Mobilnummer tippt der Unterzeichner auf die Schaltfläche und erhält einen Code
+- **Code bestätigen** — Der Unterzeichner gibt den 6-stelligen Code ein, um den Zugriff auf die Nummer nachzuweisen
+- **Verifiziert-Badge** — Nach Bestätigung erscheint ein "Verifiziert"-Badge mit den letzten vier Ziffern der Nummer
+
+Bei Eingabe eines falschen Codes kann der Unterzeichner einen neuen anfordern. Die SMS-Verifizierung wird pro Signiersitzung konfiguriert und gilt für alle Parteien.
+
 ## Vorlagenversionen
 
 Vertragsvorlagen unterstützen Versionierung, damit Sie Änderungen im Laufe der Zeit nachverfolgen können. Jede Version ist ein eingefrorener Schnappschuss des Vorlageninhalts zu einem bestimmten Zeitpunkt, sodass Sie Ihre Vorlagen weiterentwickeln können, ohne bestehende Verträge zu beeinflussen.
