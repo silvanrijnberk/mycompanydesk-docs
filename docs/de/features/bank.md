@@ -8,7 +8,7 @@ Verbinden Sie Ihre Bankkonten mit MyCompanyDesk für automatische Transaktionsim
 
 ## Ein Bankkonto verbinden
 
-1. Gehen Sie zu **Einstellungen** und dann zu **Bankkonten**.
+1. Gehen Sie zu **Arbeitsbereich** → **Finanzen** → **Bankkonten**.
 2. Klicken Sie auf **Bank verbinden** und wählen Sie Ihr Institut aus der Liste.
 3. Schließen Sie die Autorisierung im Popup-Fenster ab.
 4. Nach der Verbindung ruft MyCompanyDesk Transaktionen der letzten 90 Tage ab und hält den Feed durch regelmäßige automatische Synchronisationen aktuell.
@@ -69,6 +69,6 @@ Die von Ihnen erstellten Regeln gelten workspace-weit und für alle verbundenen 
 
 **Meine Bankverbindung zeigt einen Fehler an.** Öffnen Sie die Bankkonten-Einstellungen. Wenn Ihre Bank eine erneute Autorisierung verlangt, sehen Sie eine Aufforderung zur erneuten Verbindung. Sync-Fehler-Benachrichtigungen enthalten ebenfalls einen direkten Link dorthin.
 
-**Eine Transaktion wurde nicht zugeordnet.** Prüfen Sie die Transaktion im Bankfeed unter dem Filter "Nicht zugeordnet". Sie können sie manuell zuordnen, einen neuen Kunden oder eine neue Ausgabe daraus erstellen oder eine Lieferantenregel anlegen, damit sie künftig automatisch zugeordnet wird.
+**Eine Transaktion wurde nicht zugeordnet.** Prüfen Sie die Transaktion im Bankfeed unter dem Filter „Nicht zugeordnet". Sie können sie manuell zuordnen, einen neuen Kunden oder eine neue Ausgabe daraus erstellen oder eine Lieferantenregel anlegen, damit sie künftig automatisch zugeordnet wird.
 
 **Ich erhalte keine Benachrichtigungen.** Überprüfen Sie die Benachrichtigungsschalter auf der Bankkonten-Einstellungsseite. Für Push-Benachrichtigungen stellen Sie sicher, dass Push in Ihrem Kontoprofil aktiviert ist. Für die wöchentliche Zusammenfassung muss `notify_weekly_summary` aktiviert sein und in dieser Woche tatsächlich Bankaktivität stattgefunden haben.

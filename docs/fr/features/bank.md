@@ -8,7 +8,7 @@ Connectez vos comptes bancaires à MyCompanyDesk pour l'importation automatique 
 
 ## Connecter un compte bancaire
 
-1. Allez dans **Paramètres** puis **Comptes bancaires**.
+1. Allez dans **Espace de travail** → **Finances** → **Comptes bancaires**.
 2. Cliquez sur **Connecter une banque** et choisissez votre établissement dans la liste.
 3. Suivez les étapes d'autorisation dans la fenêtre contextuelle.
 4. Une fois connecté, MyCompanyDesk récupère les transactions des 90 derniers jours et maintient le flux à jour avec des synchronisations automatiques périodiques.
@@ -69,6 +69,6 @@ Les règles que vous créez sont propres à l'espace de travail et s'appliquent 
 
 **Ma connexion bancaire affiche une erreur.** Ouvrez la page des paramètres des comptes bancaires. Si votre banque nécessite une nouvelle autorisation, vous verrez une invite pour vous reconnecter. Les notifications d'erreur de synchronisation contiennent également un lien direct.
 
-**Une transaction n'a pas été rapprochée.** Consultez la transaction dans le flux bancaire sous le filtre "non rapproché". Vous pouvez la rapprocher manuellement, créer un nouveau client ou une nouvelle dépense à partir de celle-ci, ou créer une règle fournisseur pour qu'elle soit automatiquement rapprochée à l'avenir.
+**Une transaction n'a pas été rapprochée.** Consultez la transaction dans le flux bancaire sous le filtre « non rapproché ». Vous pouvez la rapprocher manuellement, créer un nouveau client ou une nouvelle dépense à partir de celle-ci, ou créer une règle fournisseur pour qu'elle soit automatiquement rapprochée à l'avenir.
 
 **Je ne reçois pas de notifications.** Vérifiez les interrupteurs de notification sur la page des paramètres des comptes bancaires. Pour les notifications push, assurez-vous que les notifications push sont activées dans votre profil de compte. Pour le résumé hebdomadaire, vérifiez que `notify_weekly_summary` est activé et qu'il y a bien eu une activité bancaire cette semaine-là.

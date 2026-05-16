@@ -9,7 +9,7 @@ Connect your bank accounts to MyCompanyDesk for automatic transaction imports, m
 
 ## Connecting a bank account
 
-1. Go to **Settings** then **Bank Accounts**.
+1. Go to **Workspace** → **Financial** → **Bank Accounts**.
 2. Click **Connect bank** and choose your institution from the list.
 3. Complete the authorisation flow in the pop-up window.
 4. Once connected, MyCompanyDesk syncs historical transactions from the past 90 days and keeps the feed current with periodic automatic syncs.
