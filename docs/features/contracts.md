@@ -99,8 +99,8 @@ Contract templates support versioning so you can track changes over time. Each v
 1. Go to **Contracts > Templates**
 2. Find your template and click the **Versions** button
 3. In the versions modal, enter:
-   - **Label** — A short identifier for the version (e.g. "v2"). If left empty the system auto-assigns a sequential label.
-   - **Change note** — A short description of what changed in this version
+   - **Label** :  A short identifier for the version (e.g. "v2"). If left empty the system auto-assigns a sequential label.
+   - **Change note** :  A short description of what changed in this version
 4. Click **Publish**
 
 The current draft is snapshotted as a new version. Existing contracts stay pinned to the version they were created from, so publishing never rewrites historical contract text.

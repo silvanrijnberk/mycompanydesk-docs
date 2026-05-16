@@ -99,8 +99,8 @@ Contractsjablonen ondersteunen versiebeheer zodat je wijzigingen in de loop van 
 1. Ga naar **Contracten > Sjablonen**
 2. Zoek je sjabloon en klik op de **Versies**-knop
 3. Vul in het versievenster in:
-   - **Label** — Een korte aanduiding voor de versie (bijv. "v2"). Laat je het veld leeg, dan kent het systeem automatisch een oplopend label toe.
-   - **Wijzigingsnotitie** — Een korte beschrijving van wat er in deze versie is gewijzigd
+   - **Label** :  Een korte aanduiding voor de versie (bijv. "v2"). Laat je het veld leeg, dan kent het systeem automatisch een oplopend label toe.
+   - **Wijzigingsnotitie** :  Een korte beschrijving van wat er in deze versie is gewijzigd
 4. Klik op **Publiceren**
 
 Het huidige concept wordt vastgelegd als een nieuwe versie. Bestaande contracten blijven aan de versie gekoppeld waarmee ze zijn aangemaakt, dus publiceren herschrijft nooit historische contracttekst.

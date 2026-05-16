@@ -99,8 +99,8 @@ Vertragsvorlagen unterstützen Versionierung, damit Sie Änderungen im Laufe der
 1. Gehen Sie zu **Verträge > Vorlagen**
 2. Suchen Sie Ihre Vorlage und klicken Sie auf die Schaltfläche **Versionen**
 3. Geben Sie im Versionen-Modal ein:
-   - **Bezeichnung** — Eine kurze Kennung für die Version (z. B. "v2"). Lassen Sie das Feld leer, vergibt das System automatisch eine fortlaufende Bezeichnung.
-   - **Änderungsnotiz** — Eine kurze Beschreibung, was in dieser Version geändert wurde
+   - **Bezeichnung** :  Eine kurze Kennung für die Version (z. B. "v2"). Lassen Sie das Feld leer, vergibt das System automatisch eine fortlaufende Bezeichnung.
+   - **Änderungsnotiz** :  Eine kurze Beschreibung, was in dieser Version geändert wurde
 4. Klicken Sie auf **Veröffentlichen**
 
 Der aktuelle Entwurf wird als neue Version gespeichert. Bestehende Verträge bleiben an die Version gebunden, mit der sie erstellt wurden, sodass das Veröffentlichen niemals historische Vertragstexte überschreibt.
