@@ -1,35 +1,20 @@
 ---
-title: "Change language"
-last_verified: 2026-05-09
+title: "Taal wijzigen"
+last_verified: 2026-05-17
 chatbot:
   triggers:
-    - "change language"
-    - "switch language"
-    - "set language"
-    - "language settings"
-    - "app language"
-    - "change app language"
-    - "where do i change the app language"
-    - "dutch language"
-    - "german language"
-    - "french language"
     - "taal wijzigen"
     - "taal instellen"
     - "waar wijzig ik de taal van de app"
-    - "sprache andern"
-    - "wo aendere ich die sprache der app"
-    - "changer langue"
-    - "ou changer la langue de l application"
-  actions:
-    - { label: "Open profile language", to: "/profile?section=language" }
+    - "waar stel ik de factuurtaal in"
+    - "change language"
+    - "switch language"
+    - "app language"
   follow_up:
-    - "How do I change the date format?"
-    - "How do I change the currency?"
+    - "Hoe wijzig ik de datumnotatie?"
+    - "Hoe wijzig ik de valuta?"
 ---
 
-Om je taal te wijzigen:
-1. Ga naar Mijn account → Taal
-2. Selecteer je voorkeurstaal
-3. De wijziging wordt direct toegepast en herlaadt de pagina indien nodig
+De interface van MyCompanyDesk is Nederlandstalig. Er is geen instelling voor de interfacetaal.
 
-Let op: De documenttaal stel je apart in via Bedrijf → Facturatie (pdf-taal).
+Voor de documenttaal (facturen, offertes, e-mails) ga je naar Bedrijf → Facturatie (pdf-taal). Je kunt facturen, offertes en e-mails genereren in het Nederlands, Engels, Duits of Frans, onafhankelijk van de interfacetaal.

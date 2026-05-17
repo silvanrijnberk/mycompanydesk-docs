@@ -19,16 +19,11 @@ MyCompanyDesk is an all-in-one accounting and business management platform desig
 - **View reports** — Revenue, profit, cash flow, VAT, and client analytics
 - **Collaborate** — Invite team members, set permissions, and share with your accountant
 
-## Supported languages
+## Interface language
 
-MyCompanyDesk is fully available in:
+The MyCompanyDesk interface is in Dutch.
 
-- English
-- Nederlands (Dutch)
-- Deutsch (German)
-- Fran&ccedil;ais (French)
-
-You can switch languages at any time from your profile settings. Invoices and emails can be sent in any of these languages, regardless of your interface language.
+Invoices, quotes, and emails can be sent in Dutch, English, German, or French. The document language is set per invoice and does not depend on the interface language.
 
 ## Plans
 

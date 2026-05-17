@@ -19,16 +19,11 @@ MyCompanyDesk is een alles-in-een boekhoud- en bedrijfsmanagementplatform, ontwo
 - **Rapportages bekijken** — Omzet, winst, cashflow, BTW en klantanalyses
 - **Samenwerken** — Nodig teamleden uit, stel rechten in en deel met je boekhouder
 
-## Ondersteunde talen
+## Interfacetaal
 
-MyCompanyDesk is volledig beschikbaar in:
+De interface van MyCompanyDesk is Nederlandstalig.
 
-- English
-- Nederlands (Dutch)
-- Deutsch (German)
-- Fran&ccedil;ais (French)
-
-Je kunt op elk moment van taal wisselen via je profielinstellingen. Facturen en e-mails kunnen in elk van deze talen worden verstuurd, ongeacht je interfacetaal.
+Facturen, offertes en e-mails kunnen in het Nederlands, Engels, Duits of Frans worden verstuurd. De documenttaal stel je per factuur in en is onafhankelijk van de interfacetaal.
 
 ## Abonnementen
 

@@ -13,23 +13,11 @@ Aktualisieren Sie Ihr Profil über die **Profil**-Seite:
 - **Name** — Ihr Anzeigename
 - **E-Mail** — Ihre Anmelde-E-Mail
 - **Profilbild** — Laden Sie ein Foto oder einen Avatar hoch
-- **Sprache** — Oberflächensprache (Englisch, Niederländisch, Deutsch, Französisch)
+- **Sprache** — Die MyCompanyDesk-Oberflache ist auf Niederlandisch. Es gibt keine Einstellung fur die Oberflachensprache. Die Dokumentensprache (fur Rechnungen, Angebote und E-Mails) legen Sie pro Dokument uber Unternehmen → Rechnungsstellung fest.
 
-### Sprache ändern
+### Sprache
 
-1. Gehen Sie zu **Profil**
-2. Wählen Sie Ihre bevorzugte Sprache
-3. Die Oberfläche wird sofort aktualisiert
-
-Ihre Spracheinstellung beeinflusst:
-
-- Alle UI-Texte und Navigation
-- Datums- und Zahlenformatierung
-- Standardsprache für neue Dokumente
-
-::: tip
-Die Rechnungssprache wird pro Rechnung festgelegt und kann von Ihrer Oberflächensprache abweichen. Sie können eine niederländische Rechnung versenden, während Sie die deutsche Oberfläche verwenden.
-:::
+Die MyCompanyDesk-Oberflache ist auf Niederlandisch. Es gibt keine Oberflachenspracheinstellung. Rechnungen, Angebote und E-Mails konnen auf Niederlandisch, Englisch, Deutsch oder Franzosisch erstellt werden — uber Unternehmen → Rechnungsstellung (PDF-Sprache).
 
 ## Passwort
 

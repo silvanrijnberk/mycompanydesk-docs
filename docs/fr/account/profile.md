@@ -13,23 +13,11 @@ Mettez a jour votre profil depuis la page **Profil** :
 - **Nom** -- Votre nom d'affichage
 - **E-mail** -- Votre adresse e-mail de connexion
 - **Photo de profil** -- Telechargez une photo ou un avatar
-- **Langue** -- Langue de l'interface (anglais, neerlandais, allemand, francais)
+- **Langue** -- L'interface de MyCompanyDesk est en neerlandais. Il n'y a pas de parametre de langue de l'interface. La langue des documents (factures, devis, e-mails) se definit par document via Entreprise → Facturation.
 
-### Changer de langue
+### Langue
 
-1. Allez dans **Profil**
-2. Selectionnez votre langue preferee
-3. L'interface se met a jour immediatement
-
-Votre parametre de langue affecte :
-
-- Tous les textes et la navigation de l'interface
-- Le formatage des dates et des nombres
-- La langue par defaut des nouveaux documents
-
-::: tip
-La langue de la facture est definie par facture et peut differer de la langue de votre interface. Vous pouvez envoyer une facture en neerlandais tout en utilisant l'interface en francais.
-:::
+L'interface de MyCompanyDesk est en neerlandais. Il n'y a pas de parametre de langue de l'interface. Les factures, devis et e-mails peuvent etre rediges en neerlandais, anglais, allemand ou francais via Entreprise → Facturation (langue PDF).
 
 ## Mot de passe
 

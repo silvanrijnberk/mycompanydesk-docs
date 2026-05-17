@@ -1,6 +1,6 @@
 ---
 title: "Change language"
-last_verified: 2026-05-09
+last_verified: 2026-05-17
 chatbot:
   triggers:
     - "change language"
@@ -16,20 +16,16 @@ chatbot:
     - "taal wijzigen"
     - "taal instellen"
     - "waar wijzig ik de taal van de app"
+    - "waar stel ik de factuurtaal in"
     - "sprache andern"
     - "wo aendere ich die sprache der app"
     - "changer langue"
     - "ou changer la langue de l application"
-  actions:
-    - { label: "Open profile language", to: "/profile?section=language" }
   follow_up:
     - "How do I change the date format?"
     - "How do I change the currency?"
 ---
 
-To change your app language:
-1. Go to My Account → Language
-2. Select your preferred language
-3. The change applies immediately and reloads the page if needed
+The MyCompanyDesk interface is Dutch-only. There is no interface language setting.
 
-Tip: Document language is configured separately in Company → Invoicing (PDF language).
+For document language (invoices, quotes, emails), go to Company → Invoicing (PDF language). You can generate invoices, quotes, and emails in Dutch, English, German, or French regardless of the interface language.

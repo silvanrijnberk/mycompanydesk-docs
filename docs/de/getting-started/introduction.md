@@ -19,16 +19,11 @@ MyCompanyDesk ist eine All-in-One-Plattform für Buchhaltung und Geschäftsverwa
 - **Berichte anzeigen** — Umsatz, Gewinn, Cashflow, USt. und Kundenanalysen
 - **Zusammenarbeiten** — Teammitglieder einladen, Berechtigungen festlegen und mit Ihrem Steuerberater teilen
 
-## Unterstützte Sprachen
+## Oberflachensprache
 
-MyCompanyDesk ist vollständig verfügbar in:
+Die MyCompanyDesk-Benutzeroberflache ist auf Niederlandisch.
 
-- English
-- Nederlands (Dutch)
-- Deutsch (German)
-- Fran&ccedil;ais (French)
-
-Sie können die Sprache jederzeit in Ihren Profileinstellungen wechseln. Rechnungen und E-Mails können in jeder dieser Sprachen versendet werden, unabhängig von Ihrer Oberflächensprache.
+Rechnungen, Angebote und E-Mails konnen auf Niederlandisch, Englisch, Deutsch oder Franzosisch versendet werden. Die Dokumentensprache wird pro Rechnung festgelegt und ist unabhangig von der Oberflachensprache.
 
 ## Tarife
 
