@@ -22,7 +22,7 @@ Navigeer naar **Bedrijf** in de zijbalk om alle bedrijfsinstellingen te openen. 
 ### Registratie
 
 - **BTW-nummer** — Je BTW-registratie (bijv. NL123456789B01)
-- **KVK-nummer** — Bedrijfsregistratienummer
+- **KVK-nummer** — Bedrijfsregistratienummer. Gebruik **Ophalen uit KVK** om de laatste gegevens uit het Handelsregister te halen. Lege velden (bedrijfsnaam, adres, postcode, plaats, land) worden automatisch ingevuld. Velden die je zelf al hebt ingevuld blijven staan.
 - **IBAN** — Bankrekening voor het ontvangen van betalingen
 
 ::: tip

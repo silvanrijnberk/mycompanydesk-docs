@@ -25,7 +25,7 @@ The identity form. What every invoice, quote, and email shows.
 
 - **Business name** — appears on every document
 - **Address** — street, postal code, city, country (with address autocomplete)
-- **Registration** — KvK or other registration number
+- **Registration** — KvK or other registration number. The **Refresh from KVK** button pulls the latest data from the Dutch Chamber of Commerce registry and fills any blank fields (business name, address, postal code, city, country). It never overwrites values you already set.
 - **Tax ID** — VAT number (e.g. `NL123456789B01`)
 - **Contact** — public email, phone, support email
 - **Website + social** — used by the email signature, business page, and footers

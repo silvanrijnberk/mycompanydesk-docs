@@ -22,7 +22,7 @@ Navigieren Sie zu **Unternehmen** in der Seitenleiste, um auf alle Einstellungen
 ### Registrierung
 
 - **USt.-Nummer** — Ihre Umsatzsteuerregistrierung (z. B. NL123456789B01)
-- **Handelsregisternummer** — Gewerbeanmeldungsnummer
+- **Handelsregisternummer** — Gewerbeanmeldungsnummer. Nutzen Sie **Aus KVK aktualisieren**, um die aktuellsten Daten aus dem niederländischen Handelsregister abzurufen. Leere Felder (Firmenname, Adresse, Postleitzahl, Stadt, Land) werden automatisch befüllt. Bereits von Ihnen eingetragene Werte bleiben erhalten.
 - **IBAN** — Bankkonto für den Zahlungsempfang
 
 ::: tip
