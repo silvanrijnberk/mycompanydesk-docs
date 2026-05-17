@@ -13,7 +13,7 @@ Werk je profiel bij via de **Profiel**-pagina:
 - **Naam** — Je weergavenaam
 - **E-mail** — Je inlog-e-mail
 - **Profielfoto** — Upload een foto of avatar
-- **Taal** — De interface van MyCompanyDesk is Nederlandstalig. Er is geen interfacetaalinstelling. De documenttaal (voor facturen, offertes en e-mails) stel je per document in via Bedrijf → Facturatie.
+- **Taal**: De interface van MyCompanyDesk is Nederlandstalig. Er is geen interfacetaalinstelling. De documenttaal (voor facturen, offertes en e-mails) stel je per document in via Bedrijf → Facturatie.
 
 ### Taal
 

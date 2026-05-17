@@ -13,11 +13,11 @@ Aktualisieren Sie Ihr Profil über die **Profil**-Seite:
 - **Name** — Ihr Anzeigename
 - **E-Mail** — Ihre Anmelde-E-Mail
 - **Profilbild** — Laden Sie ein Foto oder einen Avatar hoch
-- **Sprache** — Die MyCompanyDesk-Oberflache ist auf Niederlandisch. Es gibt keine Einstellung fur die Oberflachensprache. Die Dokumentensprache (fur Rechnungen, Angebote und E-Mails) legen Sie pro Dokument uber Unternehmen → Rechnungsstellung fest.
+- **Sprache**: Die MyCompanyDesk-Oberflache ist auf Niederlandisch. Es gibt keine Einstellung fur die Oberflachensprache. Die Dokumentensprache (fur Rechnungen, Angebote und E-Mails) legen Sie pro Dokument uber Unternehmen → Rechnungsstellung fest.
 
 ### Sprache
 
-Die MyCompanyDesk-Oberflache ist auf Niederlandisch. Es gibt keine Oberflachenspracheinstellung. Rechnungen, Angebote und E-Mails konnen auf Niederlandisch, Englisch, Deutsch oder Franzosisch erstellt werden — uber Unternehmen → Rechnungsstellung (PDF-Sprache).
+Die MyCompanyDesk-Oberflache ist auf Niederlandisch. Es gibt keine Oberflachenspracheinstellung. Rechnungen, Angebote und E-Mails konnen auf Niederlandisch, Englisch, Deutsch oder Franzosisch erstellt werden via Unternehmen → Rechnungsstellung (PDF-Sprache).
 
 ## Passwort
 

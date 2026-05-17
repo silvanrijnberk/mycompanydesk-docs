@@ -42,7 +42,7 @@ This page covers everything cosmetic and locale-related.
 
 - **Theme** — Light, Dark, or System. Switching is instant.
 - **Font size** — Small, Medium, Large. Affects every page; finance numbers stay tabular at every size.
-- **Language** — The MyCompanyDesk interface is Dutch-only. There is no interface language setting. Document language (for invoices, quotes, and emails) is set per document via Company → Invoicing.
+- **Language**: The MyCompanyDesk interface is Dutch-only. There is no interface language setting. Document language (for invoices, quotes, and emails) is set per document via Company → Invoicing.
 - **Timezone** — Used for dates on invoices, expenses, and time entries.
 - **Date format** — DD-MM-YYYY, MM/DD/YYYY, YYYY-MM-DD.
 - **Time format** — 12-hour or 24-hour.
