@@ -76,7 +76,7 @@ Wanneer een contract is ondertekend, toont de contractdetailpagina een onderteke
 - Een **Bekijk**-knop die een inline voorbeeld van het ondertekende document opent
 - Een downloadknop om de PDF op te slaan
 
-De voorbeeldpagina bevat een werkbalk met print- en downloadacties, en toont het ondertekende contract direct in de browser.
+De voorbeeldpagina bevat een werkbalk met print- en downloadacties, en toont het ondertekende contract direct in de browser. Zowel de ondertekende PDF als de beoordelings-PDF bevatten de volledige contracttekst, zodat elke gedownloade kopie op zichzelf staat.
 
 ### Ondertekenen op de contractenlijst
 
