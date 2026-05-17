@@ -69,6 +69,18 @@ Pour les objets de type **Propriete**, la page de detail inclut une section d'hi
 - Box 3 utilise la valeur WOZ avec date de reference au 1er janvier. Saisissez la valeur applicable au debut de cette annee fiscale.
 - Si aucune valeur n'est encore saisie, la section affiche un etat vide vous invitant a ajouter la premiere.
 
+#### Integration Kadaster
+
+Lorsque vous ajoutez un objet de type Propriete avec une adresse neerlandaise valide, MyCompanyDesk peut importer l'historique WOZ directement depuis le Kadaster. Cela evite la saisie manuelle et vous donne les memes valeurs que celles enregistrees par la municipalite.
+
+- **Recuperation automatique**: si l'historique WOZ est vide, le systeme recupere les valeurs disponibles depuis le Kadaster a l'ouverture de la page de detail.
+- **Actualisation manuelle**: cliquez sur **Actualiser** pour telecharger a tout moment les dernieres donnees du Kadaster. Les valeurs importees sont marquees d'un badge source "Kadaster".
+- **Donnees manquantes**: si le Kadaster ne dispose d'aucune donnee pour cette adresse (par exemple, un bien neuf), un avis s'affiche et vous pouvez saisir les valeurs manuellement.
+
+#### Valeur actuelle estimee
+
+Pour les biens dont un historique WOZ a ete recupere depuis le Kadaster, MyCompanyDesk projette une valeur de marche actuelle estimee. Cette projection prend la peildatum WOZ la plus recente et y applique l'indice de prix CBS PBK pour la region COROP du bien, vous donnant ainsi une valeur qui reflete les tendances actuelles du marche.
+
 ### Statut de signature des contrats
 
 Chaque ligne de contrat sur la page de detail de l'objet affiche desormais un badge de statut de signature a cote du badge actif/en pause. Les couleurs suivent la meme correspondance que sur la page de detail du contrat :
