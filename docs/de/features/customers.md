@@ -30,8 +30,8 @@ Sie können Kunden auch direkt beim Erstellen einer Rechnung oder eines Angebots
 
 Beim Anlegen niederländischer Kunden kann MyCompanyDesk Unternehmensdaten automatisch aus dem KVK-Register (Kamer van Koophandel) übernehmen. Zwei Suchmethoden stehen zur Verfügung:
 
-- **Namenssuche** — Beginnen Sie mit der Eingabe des Firmennamens im **Name**-Feld. Ein Dropdown zeigt passende KVK-Einträge mit Stadt und KVK-Nummer an. Wählen Sie einen Eintrag aus, um Name und KVK-Nummer automatisch zu übernehmen.
-- **Handelsregisternummer-Suche** — Geben Sie eine 8-stellige KVK-Nummer im Feld **Handelsregister** ein. Beim Verlassen des Feldes sucht MyCompanyDesk die Nummer und füllt leere Felder (Name, Adresse, Postleitzahl, Stadt, Land) automatisch aus.
+- **Namenssuche**: Beginnen Sie mit der Eingabe des Firmennamens im **Name**-Feld. Ein Dropdown zeigt passende KVK-Einträge mit Stadt und KVK-Nummer an. Wählen Sie einen Eintrag aus, um Name und KVK-Nummer automatisch zu übernehmen.
+- **Handelsregisternummer-Suche**: Geben Sie eine 8-stellige KVK-Nummer im Feld **Handelsregister** ein. Beim Verlassen des Feldes sucht MyCompanyDesk die Nummer und füllt leere Felder (Name, Adresse, Postleitzahl, Stadt, Land) automatisch aus.
 
 Bei erfolgreicher Suche erscheint ein Verifiziert-Badge neben dem Handelsregisterfeld. Wird die Nummer nicht gefunden, erscheint eine Fehlermeldung. Beide Suchfunktionen sind nur für niederländische Kunden verfügbar.
 
