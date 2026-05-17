@@ -67,6 +67,16 @@ For supported countries the user enters a registration number and clicks **Look 
 - **invalid** — number format rejected.
 - **error** — provider error; manual entry remains an option.
 
+<!-- TODO(source-missing): KvK Basisprofiel API pricing (EUR 0.02/call) and subscription (EUR 6.40/month) from developers.kvk.nl/nl/pricing -->
+#### KvK Basisprofiel (NL only)
+
+For NL workspaces, the KvK lookup is a two-step flow:
+
+1. **Typeahead** — the user searches by company name. The `zoeken` endpoint (free) returns matching entries. This is the autocomplete step that powers the existing `ok` / `not-found` responses.
+2. **Basisprofiel** — once a match is picked, the wizard calls the KvK Basisprofiel detail endpoint. This is a paid call (EUR 0.02, 24h-cached per KVK number). It returns the full profile: `legalName`, `statutaireNaam` (statutory name), `tradeNames` (all registered trade names, ordered), `rsin`, `legalForm`, `dateFounded`, visiting and postal addresses, SBI codes with primary-flag, `employeeCount`, and `indNonMailing` (do-not-mail flag).
+
+The Basisprofiel call is gated behind `KVK_BASISPROFIEL_ENABLED`. When the flag is off, the wizard falls back to the free `zoeken`-only result (the same `ok` fields listed above). When the flag is on, the Basisprofiel data enriches the `answers.registry` payload and the Review step shows every field that will be written to the company row.
+
 ### Manual mode
 
 User fills `chosen` (their registration number), and optionally `legalName`, `address`, `sector`. All four fields are optional in this mode.

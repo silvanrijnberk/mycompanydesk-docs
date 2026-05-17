@@ -42,6 +42,8 @@ For supported countries, type your registration number and click **Look up**. Th
 - Registered address
 - Sector / SBI code
 
+For Dutch businesses (KvK), the lookup also pulls full company details from the KvK Basisprofiel: statutory name, trade names, legal form, founding date, visiting and postal addresses, SBI activities, and employee count. This richer data is 24h-cached per lookup.
+
 You can correct any of these inline before continuing. **Not registered yet** is also a valid answer — just tick "Skip" and the wizard will accept the country alone.
 
 ## Step 3 — Domain
