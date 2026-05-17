@@ -22,7 +22,7 @@ Navigeer naar **Bedrijf** in de zijbalk om alle bedrijfsinstellingen te openen. 
 ### Registratie
 
 - **BTW-nummer** — Je BTW-registratie (bijv. NL123456789B01)
-- **KVK-nummer** — Bedrijfsregistratienummer. Gebruik **Ophalen uit KVK** om de laatste gegevens uit het Handelsregister te halen. Lege velden (bedrijfsnaam, adres, postcode, plaats, land) worden automatisch ingevuld. Velden die je zelf al hebt ingevuld blijven staan. Elke werkruimte heeft een daglimiet van 100 KVK-zoekopdrachten (resultaten uit de cache tellen niet mee). Is het daglimiet bereikt, dan kun je de gegevens handmatig invullen of het morgen opnieuw proberen.
+- **KVK-nummer**, bedrijfsregistratienummer. Gebruik **Ophalen uit KVK** om de laatste gegevens uit het Handelsregister te halen. Lege velden (bedrijfsnaam, adres, postcode, plaats, land) worden automatisch ingevuld. Velden die je zelf al hebt ingevuld blijven staan. Elke werkruimte heeft een daglimiet van 100 KVK-zoekopdrachten (resultaten uit de cache tellen niet mee). Bij 20 of minder resterende zoekopdrachten toont de veldhint een teller met het aantal dat je nog over hebt. Is het daglimiet bereikt, dan kun je de gegevens handmatig invullen of het morgen opnieuw proberen.
 - **IBAN** — Bankrekening voor het ontvangen van betalingen
 
 ::: tip

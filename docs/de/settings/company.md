@@ -22,7 +22,7 @@ Navigieren Sie zu **Unternehmen** in der Seitenleiste, um auf alle Einstellungen
 ### Registrierung
 
 - **USt.-Nummer** — Ihre Umsatzsteuerregistrierung (z. B. NL123456789B01)
-- **Handelsregisternummer** — Gewerbeanmeldungsnummer. Nutzen Sie **Aus KVK aktualisieren**, um die aktuellsten Daten aus dem niederländischen Handelsregister abzurufen. Leere Felder (Firmenname, Adresse, Postleitzahl, Stadt, Land) werden automatisch befüllt. Bereits von Ihnen eingetragene Werte bleiben erhalten. Jeder Arbeitsbereich erhält 100 kostenlose KVK-Abrufe pro Tag (zwischengespeicherte Ergebnisse zählen nicht zum Limit). Wenn die Tagesgrenze erreicht ist, können Sie die Daten manuell eingeben oder es morgen erneut versuchen.
+- **Handelsregisternummer**, Gewerbeanmeldungsnummer. Nutzen Sie **Aus KVK aktualisieren**, um die aktuellsten Daten aus dem niederländischen Handelsregister abzurufen. Leere Felder (Firmenname, Adresse, Postleitzahl, Stadt, Land) werden automatisch befüllt. Bereits von Ihnen eingetragene Werte bleiben erhalten. Jeder Arbeitsbereich erhält 100 kostenlose KVK-Abrufe pro Tag (zwischengespeicherte Ergebnisse zählen nicht zum Limit). Bei 20 oder weniger verbleibenden Abrufen zeigt der Feldhinweis einen Zähler, wie viele noch übrig sind. Wenn die Tagesgrenze erreicht ist, können Sie die Daten manuell eingeben oder es morgen erneut versuchen.
 - **IBAN** — Bankkonto für den Zahlungsempfang
 
 ::: tip
