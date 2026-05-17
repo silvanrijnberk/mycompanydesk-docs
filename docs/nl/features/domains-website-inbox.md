@@ -134,6 +134,7 @@ Mogelijkheden:
 - **Koppelen** -- threads kunnen worden gekoppeld aan een klant, project of factuur voor kruisverwijzing.
 - **Catch-all terugval** -- mail naar elk lokaal deel op het domein valt door naar de standaardmailbox (`is_default = true`, een per domein). Dit betekent dat typefouten en niet-gedeclareerde aliassen niet stil verdwijnen.
 - **Auditlog** -- uitgaande verzendingen, mailboxwijzigingen en threadstatuswijzigingen worden vastgelegd in een audittabel voor de werkruimte. Momenteel alleen API (nog geen UI) -- toegankelijk voor supportmedewerkers voor troubleshooting.
+- **HTML-e-mailweergave** -- HTML-e-mails worden met hun originele opmaak getoond in een sandboxed iframe. De renderer verwijdert scripts, formulieren en event handlers tijdens de opschoning, en blokkeert standaard externe afbeeldingen om je privacy te beschermen. Een meldingsbalk verschijnt wanneer afbeeldingen geblokkeerd zijn, met een enkele klik op "Toon afbeeldingen" om het bericht opnieuw te tonen met afbeeldingen. Als er geen HTML-body is, toont de fallback het platte-tekstdeel.
 
 De inbox gebruikt je eigen domein pas nadat `quickEnableInbox` succesvol is uitgevoerd en de apex MX-records naar Cloudflare wijzen. Tot die tijd kan de werkruimte wel mail versturen via het standaard afleverpad beschreven in [E-mailintegratie](/nl/settings/email), maar geen mail ontvangen.
 
