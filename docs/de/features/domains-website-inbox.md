@@ -134,6 +134,7 @@ Funktionen:
 - **Verknüpfung** -- Threads können mit einem Kunden, Projekt oder einer Rechnung zur Querverweisung verknüpft werden.
 - **Catch-All-Fallback** -- E-Mails an jeden lokalen Teil der Domain fallen auf das Standardpostfach durch (`is_default = true`, eines pro Domain). Das bedeutet, Tippfehler und nicht deklarierte Aliase verschwinden nicht stillschweigend.
 - **Audit-Log** -- ausgehende Sendungen, Postfachänderungen und Thread-Statusänderungen werden in einer Audit-Tabelle für den Workspace aufgezeichnet. Derzeit nur API (noch keine UI) -- für Support-Mitarbeiter zur Fehlerbehebung zugänglich.
+- **HTML-E-Mail-Darstellung** -- HTML-E-Mails werden mit ihrem ursprünglichen Styling in einem sandboxed iframe dargestellt. Der Renderer entfernt Skripte, Formulare und Event-Handler während der Bereinigung und blockiert externe Bilder standardmäßig, um Ihre Privatsphäre zu schützen. Ein Hinweisfeld erscheint, wenn Bilder blockiert sind, mit einem einzigen Klick auf "Bilder anzeigen", um die Nachricht mit Bildern neu darzustellen. Wenn kein HTML-Body vorhanden ist, wird der Klartext-Teil als Fallback angezeigt.
 
 Der Posteingang verwendet Ihre eigene Domain erst, nachdem `quickEnableInbox` erfolgreich ausgeführt wurde und die Apex-MX-Records auf Cloudflare zeigen. Bis dahin kann der Workspace weiterhin E-Mails über den Standardzustellpfad senden, der unter [E-Mail-Integration](/de/settings/email) beschrieben ist, aber keine E-Mails empfangen.
 
