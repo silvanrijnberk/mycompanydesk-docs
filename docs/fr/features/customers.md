@@ -35,6 +35,8 @@ Lorsque vous creez un client neerlandais, MyCompanyDesk peut remplir automatique
 
 Un badge Verifie apparait a cote du champ du numero de chambre lorsque la recherche aboutit. Si le numero KVK est introuvable, un message d'erreur s'affiche. Les deux recherches sont disponibles uniquement pour les clients neerlandais.
 
+Chaque espace de travail dispose de 100 recherches KVK gratuites par jour (les resultats mis en cache ne comptent pas). Lorsqu.il reste 20 recherches ou moins, l.indication du champ KVK affiche un compteur du nombre restant. Si la limite quotidienne est atteinte, un message d.erreur s.affiche -- vous pouvez saisir les donnees manuellement ou reessayer demain.
+
 ## Page de detail du client
 
 La page de detail du client affiche :

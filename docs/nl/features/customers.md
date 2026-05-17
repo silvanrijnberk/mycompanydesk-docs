@@ -35,6 +35,8 @@ Bij het aanmaken van een Nederlandse klant kan MyCompanyDesk bedrijfsgegevens au
 
 Bij een geslaagde opzoeking verschijnt een geverifieerd-badge naast het KVK-nummerveld. Als het nummer niet wordt gevonden, krijg je een foutmelding te zien. Beide opzoekingen zijn alleen beschikbaar voor Nederlandse klanten.
 
+Elke werkruimte heeft 100 gratis KVK-zoekopdrachten per dag (resultaten uit de cache tellen niet mee). Bij 20 of minder resterende zoekopdrachten toont de hint bij het KVK-veld hoeveel je er nog over hebt. Is het daglimiet bereikt, dan zie je een foutmelding en kun je de gegevens handmatig invullen of het morgen opnieuw proberen.
+
 ## Klantdetailpagina
 
 De klantdetailpagina toont:

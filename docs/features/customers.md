@@ -35,6 +35,8 @@ When creating a Dutch customer, MyCompanyDesk can autofill company details from 
 
 A verified badge appears next to the chamber number field on successful lookup. If the KVK number is not found, an error message is shown. Both lookups are available only for Dutch customers.
 
+Each workspace gets 100 free KVK lookups per day (cached results do not count). When 20 or fewer lookups remain, the KVK field hint shows a counter of how many are left. If the daily cap is hit, the form shows a quota-exceeded message, and you can enter the data manually or try again tomorrow.
+
 ## Customer detail page
 
 The customer detail page shows:

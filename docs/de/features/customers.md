@@ -35,6 +35,8 @@ Beim Anlegen niederländischer Kunden kann MyCompanyDesk Unternehmensdaten autom
 
 Bei erfolgreicher Suche erscheint ein Verifiziert-Badge neben dem Handelsregisterfeld. Wird die Nummer nicht gefunden, erscheint eine Fehlermeldung. Beide Suchfunktionen sind nur für niederländische Kunden verfügbar.
 
+Jeder Arbeitsbereich hat 100 kostenlose KVK-Abrufe pro Tag (zwischengespeicherte Ergebnisse zählen nicht mit). Bei 20 oder weniger verbleibenden Abrufen zeigt der Hinweis am KVK-Feld einen Zähler, wie viele noch übrig sind. Wird das Tageslimit erreicht, erscheint eine entsprechende Meldung — Sie können die Daten dann manuell eingeben oder es morgen erneut versuchen.
+
 ## Kundendetailseite
 
 Die Kundendetailseite zeigt:
