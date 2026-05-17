@@ -69,6 +69,18 @@ For objects with type **Property**, the detail page includes a WOZ history secti
 - Box 3 uses the WOZ value with peildatum 1 January. Enter the value that applies to the start of the tax year.
 - If no values are entered yet, the section shows an empty state prompting you to add the first one.
 
+#### Kadaster integration
+
+When you add a Property object with a valid Dutch address, MyCompanyDesk can import the WOZ history directly from the Kadaster. This saves manual entry and gives you the same values the municipality filed.
+
+- **Automatic lookup**: if the WOZ history is empty, the system fetches available values from the Kadaster when you open the detail page.
+- **Manual refresh**: click **Refresh** to re-pull the latest Kadaster data at any time. Imported values are marked with a "Kadaster" source badge.
+- **Missing data**: if the Kadaster has no records for the address (for example, a newly built property), a notice appears and you can enter values manually.
+
+#### Estimated current value
+
+For properties where a Kadaster WOZ history was fetched, MyCompanyDesk projects an estimated current market value. This projection takes the most recent WOZ peildatum and applies the CBS PBK price index for the property's COROP region, giving you a value that reflects current market trends.
+
 ### Contract signing status
 
 Each contract row in the object detail page now shows a signing status badge alongside the active/paused badge. The colour follows the same map used on the contract detail page:

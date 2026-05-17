@@ -69,6 +69,18 @@ Bei Objekten des Typs **Immobilie** enthält die Detailseite einen Abschnitt zum
 - Box 3 verwendet den WOZ-Wert mit Stichtag 1. Januar. Geben Sie den Wert ein, der zu Beginn des Steuerjahres gilt.
 - Wurden noch keine Werte eingetragen, zeigt der Abschnitt einen leeren Zustand mit der Aufforderung, den ersten hinzuzufügen.
 
+#### Kadaster-Anbindung
+
+Wenn Sie ein Immobilienobjekt mit einer gültigen niederländischen Adresse anlegen, kann MyCompanyDesk die WOZ-Historie direkt aus dem Kadaster importieren. Das spart manuelle Eingaben und liefert Ihnen dieselben Werte, die die Gemeinde hinterlegt hat.
+
+- **Automatischer Abruf**: ist die WOZ-Historie noch leer, ruft das System beim Öffnen der Detailseite die verfügbaren Werte aus dem Kadaster ab.
+- **Manuelles Aktualisieren**: klicken Sie auf **Aktualisieren**, um jederzeit die neuesten Kadaster-Daten abzurufen. Importierte Werte erhalten eine "Kadaster"-Quellenkennzeichnung.
+- **Fehlende Daten**: wenn das Kadaster für die Adresse keine Daten hat (zum Beispiel bei einem Neubau), erscheint ein Hinweis und Sie können die Werte manuell eingeben.
+
+#### Geschätzter aktueller Wert
+
+Bei Immobilien, für die eine WOZ-Historie aus dem Kadaster abgerufen wurde, projiziert MyCompanyDesk einen geschätzten aktuellen Marktwert. Diese Projektion nimmt das jüngste WOZ-Stichtagsdatum und wendet den CBS-PBK-Preisindex für die COROP-Region der Immobilie an. So erhalten Sie einen Wert, der die aktuelle Marktentwicklung widerspiegelt.
+
 ### Signierstatus der Verträge
 
 Jede Vertragszeile auf der Objektdetailseite zeigt nun eine Signierstatus-Badge neben der Aktiv/Pausiert-Badge. Die Farbgebung folgt der gleichen Zuordnung wie auf der Vertragsdetailseite:
