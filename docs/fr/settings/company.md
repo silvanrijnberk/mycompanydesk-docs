@@ -22,7 +22,7 @@ Naviguez vers **Entreprise** dans la barre laterale pour acceder a tous les para
 ### Immatriculation
 
 - **Numero de TVA** -- Votre numero d'identification TVA (par ex., NL123456789B01)
-- **Chambre de Commerce** -- Numero d.immatriculation commerciale. Utilisez **Mettre a jour depuis KVK** pour recuperer les dernieres donnees du registre du commerce neerlandais. Les champs vides (nom de l.entreprise, adresse, code postal, ville, pays) sont automatiquement remplis. Les valeurs que vous avez deja saisies restent inchangees.
+- **Chambre de Commerce** -- Numero d.immatriculation commerciale. Utilisez **Mettre a jour depuis KVK** pour recuperer les dernieres donnees du registre du commerce neerlandais. Les champs vides (nom de l.entreprise, adresse, code postal, ville, pays) sont automatiquement remplis. Les valeurs que vous avez deja saisies restent inchangees. Chaque espace de travail dispose de 100 recherches KVK gratuites par jour (les resultats mis en cache ne comptent pas dans la limite). Si la limite quotidienne est atteinte, vous pouvez saisir les donnees manuellement ou reessayer demain.
 - **IBAN** -- Compte bancaire pour recevoir les paiements
 
 ::: tip
