@@ -13,23 +13,11 @@ Werk je profiel bij via de **Profiel**-pagina:
 - **Naam** — Je weergavenaam
 - **E-mail** — Je inlog-e-mail
 - **Profielfoto** — Upload een foto of avatar
-- **Taal** — Interfacetaal (Engels, Nederlands, Duits, Frans)
+- **Taal**: De interface van MyCompanyDesk is Nederlandstalig. Er is geen interfacetaalinstelling. De documenttaal (voor facturen, offertes en e-mails) stel je per document in via Bedrijf → Facturatie.
 
-### Taal wijzigen
+### Taal
 
-1. Ga naar **Profiel**
-2. Selecteer je gewenste taal
-3. De interface wordt direct bijgewerkt
-
-Je taalinstelling beinvloedt:
-
-- Alle UI-tekst en navigatie
-- Datum- en getalnotatie
-- Standaardtaal voor nieuwe documenten
-
-::: tip
-De factuurtaal wordt per factuur ingesteld en kan afwijken van je interfacetaal. Je kunt een Nederlandse factuur versturen terwijl je de Engelse interface gebruikt.
-:::
+De interface van MyCompanyDesk is Nederlandstalig. Er is geen interfacetaalinstelling. Facturen, offertes en e-mails kunnen in het Nederlands, Engels, Duits of Frans worden opgesteld via Bedrijf → Facturatie (pdf-taal).
 
 ## Wachtwoord
 

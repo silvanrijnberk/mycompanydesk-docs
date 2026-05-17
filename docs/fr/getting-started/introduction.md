@@ -19,16 +19,11 @@ MyCompanyDesk est une plateforme tout-en-un de comptabilite et de gestion d'entr
 - **Consulter les rapports** -- Chiffre d'affaires, benefices, tresorerie, TVA et analyses clients
 - **Collaborer** -- Invitez des membres d'equipe, definissez les permissions et partagez avec votre comptable
 
-## Langues disponibles
+## Langue de l'interface
 
-MyCompanyDesk est entierement disponible en :
+L'interface de MyCompanyDesk est en neerlandais.
 
-- English
-- Nederlands (Dutch)
-- Deutsch (German)
-- Fran&ccedil;ais (French)
-
-Vous pouvez changer de langue a tout moment depuis les parametres de votre profil. Les factures et les e-mails peuvent etre envoyes dans n'importe laquelle de ces langues, independamment de la langue de votre interface.
+Les factures, devis et e-mails peuvent etre envoyes en neerlandais, anglais, allemand ou francais. La langue du document est definie par facture et ne depend pas de la langue de l'interface.
 
 ## Abonnements
 
