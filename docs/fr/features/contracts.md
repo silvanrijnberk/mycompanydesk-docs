@@ -76,7 +76,7 @@ Lorsqu'un contrat est signe, la page de detail du contrat affiche une carte de s
 - Un bouton **Voir** qui ouvre un apercu en ligne du document signe
 - Un bouton de telechargement pour enregistrer le PDF
 
-La page d'apercu comprend une barre d'outils avec des actions d'impression et de telechargement, et affiche le contrat signe directement dans le navigateur.
+La page d'apercu comprend une barre d'outils avec des actions d'impression et de telechargement, et affiche le contrat signe directement dans le navigateur. Le PDF signe et le PDF de revision contiennent tous les deux le texte integral du contrat, de sorte que chaque copie telechargee soit autonome.
 
 ### Signature sur la liste des contrats
 

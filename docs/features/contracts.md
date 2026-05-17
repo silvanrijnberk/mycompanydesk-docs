@@ -76,7 +76,7 @@ When a contract has been signed, the contract detail page shows a signing card w
 - A **View** button that opens an inline preview of the signed document
 - A download button to save the PDF
 
-The preview page includes a toolbar with print and download actions, and renders the signed contract directly in the browser.
+The preview page includes a toolbar with print and download actions, and renders the signed contract directly in the browser. The signed PDF and review PDF both include the full contract body text, so every downloaded copy is self-contained.
 
 ### Signing on the contracts list
 

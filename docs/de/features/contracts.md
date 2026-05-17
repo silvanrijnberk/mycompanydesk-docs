@@ -76,7 +76,7 @@ Sobald ein Vertrag signiert wurde, zeigt die Vertragsdetailseite eine Signierkar
 - Eine **Ansehen**-Schaltfläche, die eine Inline-Vorschau des signierten Dokuments öffnet
 - Eine Download-Schaltfläche zum Speichern des PDFs
 
-Die Vorschauseite enthält eine Werkzeugleiste mit Druck- und Download-Aktionen und zeigt den signierten Vertrag direkt im Browser an.
+Die Vorschauseite enthält eine Werkzeugleiste mit Druck- und Download-Aktionen und zeigt den signierten Vertrag direkt im Browser an. Sowohl das signierte PDF als auch das Prüfungs-PDF enthalten den vollständigen Vertragstext, sodass jede heruntergeladene Kopie eigenständig ist.
 
 ### Signieren in der Vertragsliste
 
