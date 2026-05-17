@@ -67,6 +67,7 @@ For supported countries the user enters a registration number and clicks **Look 
 - **invalid** — number format rejected.
 - **error** — provider error; manual entry remains an option.
 
+<!-- TODO(source-missing): KvK Basisprofiel API pricing (EUR 0.02/call) and subscription (EUR 6.40/month) from developers.kvk.nl/nl/pricing -->
 #### KvK Basisprofiel (NL only)
 
 For NL workspaces, the KvK lookup is a two-step flow:
