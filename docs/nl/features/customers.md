@@ -26,6 +26,15 @@ De klantenpagina toont al je klanten met belangrijke informatie in een oogopslag
 Je kunt ook klanten inline aanmaken bij het maken van een factuur of offerte — je hoeft niet weg te navigeren.
 :::
 
+### KVK-autofill
+
+Bij het aanmaken van een Nederlandse klant kan MyCompanyDesk bedrijfsgegevens automatisch invullen vanuit het KVK-register. Er zijn twee manieren om gegevens op te zoeken:
+
+- **Zoeken op naam** — Begin de bedrijfsnaam te typen in het **Naam**-veld. Er verschijnt een dropdown met overeenkomende KVK-vermeldingen, inclusief plaats en KVK-nummer. Kies een vermelding om de naam en het KVK-nummer automatisch in te vullen.
+- **KVK-nummer opzoeken** — Voer een 8-cijferig KVK-nummer in bij het **Kamer van Koophandel**-veld. Bij het verlaten van het veld zoekt MyCompanyDesk het nummer op en vult lege velden in (naam, adres, postcode, plaats, land).
+
+Bij een geslaagde opzoeking verschijnt een geverifieerd-badge naast het KVK-nummerveld. Als het nummer niet wordt gevonden, krijg je een foutmelding te zien. Beide opzoekingen zijn alleen beschikbaar voor Nederlandse klanten.
+
 ## Klantdetailpagina
 
 De klantdetailpagina toont:
