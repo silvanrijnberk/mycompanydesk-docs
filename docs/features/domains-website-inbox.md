@@ -134,7 +134,7 @@ Capabilities:
 - **Linking** — threads can be linked to a customer, project or invoice for cross-referencing.
 - **Catch-all fallback** — mail to any local-part on the domain falls through to the default mailbox (`is_default = true`, one per domain). This means typos and undeclared aliases don't vanish silently.
 - **Audit log** — outbound sends, mailbox changes and thread state changes are recorded in an audit table for the workspace. Currently API-only (no UI surface yet) — accessible to support staff for troubleshooting.
-- **HTML email rendering** — HTML emails are rendered with their original styles intact inside a sandboxed iframe. The renderer strips scripts, forms and event handlers during sanitisation, and blocks remote images by default to protect your privacy. A notice bar appears when images are blocked, with a single-click "Show images" action that re-renders the message with images enabled. Text-only fallback displays the plain-text part when no HTML body is present.
+- **HTML email rendering**: HTML emails are rendered with their original styles intact inside a sandboxed iframe. The renderer strips scripts, forms and event handlers during sanitisation, and blocks remote images by default to protect your privacy. A notice bar appears when images are blocked, with a single-click "Show images" action that re-renders the message with images enabled. Text-only fallback displays the plain-text part when no HTML body is present.
 
 The inbox uses your custom domain only after `quickEnableInbox` has run successfully and the apex MX records point at Cloudflare. Until then, the workspace can still send mail through the default delivery path described in [Email Integration](/settings/email), but it can't receive mail.
 
