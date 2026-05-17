@@ -26,6 +26,15 @@ The customers page lists all your clients with key information at a glance. Use 
 You can also create customers inline when creating an invoice or quote — no need to navigate away.
 :::
 
+### KVK autofill
+
+When creating a Dutch customer, MyCompanyDesk can autofill company details from the KVK (Kamer van Koophandel) register. Two lookup methods are available:
+
+- **Name search**: Start typing the company name in the **Name** field. A dropdown shows matching KVK entries with city and KVK number. Select one to autofill the name and KVK number fields.
+- **Chamber number lookup**: Enter an 8-digit KVK number in the **Chamber of Commerce** field. On blur, MyCompanyDesk looks up the number and fills in any empty fields (name, address, postal code, city, country).
+
+A verified badge appears next to the chamber number field on successful lookup. If the KVK number is not found, an error message is shown. Both lookups are available only for Dutch customers.
+
 ## Customer detail page
 
 The customer detail page shows:

@@ -26,6 +26,15 @@ La page des clients repertorie tous vos clients avec les informations cles en un
 Vous pouvez egalement creer des clients directement lors de la creation d'une facture ou d'un devis -- sans quitter la page.
 :::
 
+### Remplissage automatique KVK
+
+Lorsque vous creez un client neerlandais, MyCompanyDesk peut remplir automatiquement les informations de l'entreprise a partir du registre KVK (Kamer van Koophandel). Deux methodes de recherche sont disponibles :
+
+- **Recherche par nom**: Commencez a taper le nom de l'entreprise dans le champ **Nom**. Une liste deroulante affiche les entrees KVK correspondantes avec la ville et le numero KVK. Selectionnez une entree pour remplir automatiquement les champs nom et numero KVK.
+- **Recherche par numero de chambre**: Saisissez un numero KVK a 8 chiffres dans le champ **Chambre de commerce**. Lorsque vous quittez le champ, MyCompanyDesk recherche le numero et remplit les champs vides (nom, adresse, code postal, ville, pays).
+
+Un badge Verifie apparait a cote du champ du numero de chambre lorsque la recherche aboutit. Si le numero KVK est introuvable, un message d'erreur s'affiche. Les deux recherches sont disponibles uniquement pour les clients neerlandais.
+
 ## Page de detail du client
 
 La page de detail du client affiche :
