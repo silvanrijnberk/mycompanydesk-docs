@@ -11,6 +11,7 @@ Bouw je zakelijke website met een drag-and-drop-editor. Maak meerdere pagina's, 
 De sitebouwer vervangt het oude bedrijfsprofiel van één pagina. Je krijgt een volwaardige website-editor met:
 
 - **Meerdere pagina's**: Maak zoveel pagina's als je nodig hebt, elk met een eigen pad en secties.
+- **Domeinwisselaar**: Wanneer je werkruimte meerdere eigen domeinen heeft (Pro- of Business-abonnement), kun je via een dropdown in de bovenbalk wisselen tussen het bewerken van de hoofdsite en een per-domein-variant. Elk domein krijgt zijn eigen pagina's, navigatie, ontwerptokens en publicatiesnapshot.
 - **Sectieblokken**: Voeg hero-, tekst-, galerij-, diensten-, team-, testimonial-, contactformulier- en aangepaste HTML-secties toe aan elke pagina.
 - **Ontwerptokens**: Stel merkkleuren, lettertypes, witruimte, hoekradius, bewegingsstijl, aangepaste CSS en een site-favicon in. Wijzigingen gelden voor de hele site.
 - **Navigatie-editor**: Sleep en zet headerlinks op volgorde, met dropdown-groepen en externe links.
@@ -26,7 +27,7 @@ De sitebouwer heeft vijf tabs (zes als Stijl is uitgeklapt):
 - **Editor**: Stel pagina's samen door secties toe te voegen en te rangschikken. Klik op een sectie om de inhoud, layout, stijl of animatie te bewerken. Sleep secties om ze te verplaatsen, dupliceren of verwijderen.
 - **Pagina's**: Beheer je pagina's: maak nieuwe aan vanuit sjablonen, stel paden en zichtbaarheid in, en bekijk welke pagina's live, concept of ingepland zijn. Klik op een pagina om deze in de editor te openen. De vergrendelde homepage kan niet worden verwijderd.
 - **Stijl**: Pas je sitebrede ontwerptokens aan: kleuren (merk, accent, papier, inkt), lettertypes (kop, body, mono uit de lettertypebibliotheek), navbar (layout, achtergrond, knopstijl), schaal (radius, dichtheid, maximale breedte, sectie-afstand), beweging, knopstijlen en aangepaste CSS. Je kunt ook head-snippets toevoegen voor analytics (Plausible, Umami, Matomo) of lettertype-preconnects. Klik op de Stijl-header om de tab uit of in te klappen.
-- **Domein & SEO**: Configureer je eigen domein en SEO-instellingen. Zie [Domeinen, website en inbox](/nl/features/domains-website-inbox) voor het volledige domeinbeheer.
+- **Domein & SEO**: Configureer je eigen domein en SEO-instellingen. De inhoud hier is gekoppeld aan het domein dat in de domeinwisselaar in de bovenbalk is geselecteerd. Wanneer de hoofdsite (weergegeven als je werkruimtenaam) is geselecteerd, verschijnt er geen domeinspecifiek paneel. Zie [Domeinen, website en inbox](/nl/features/domains-website-inbox) voor het volledige domeinbeheer.
 - **Koppelingen**: Verbind diensten van derden met je website.
 
 ## Pagina's aanmaken

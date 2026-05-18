@@ -11,6 +11,7 @@ Construisez votre site web professionnel avec un editeur par glisser-deposer. Cr
 Le constructeur de site remplace l'ancien profil d'entreprise a page unique. Vous obtenez un editeur de site complet avec :
 
 - **Pages multiples**: Creez autant de pages que necessaire, chacune avec son propre chemin et ses propres sections.
+- **Selecteur de domaine**: Lorsque votre espace de travail possede plusieurs domaines personnalises (abonnement Pro ou Business), un menu deroulant dans la barre superieure vous permet de basculer entre l'edition du site principal et une variante par domaine. Chaque domaine dispose de ses propres pages, navigation, tokens de design et snapshot de publication.
 - **Blocs de section**: Ajoutez des sections hero, texte, galerie, services, equipe, temoignages, formulaire de contact et HTML personnalise a chaque page.
 - **Tokens de design**: Definissez les couleurs de marque, les polices, les espacements, les coins arrondis, le style de mouvement, le CSS personnalise et un favicon de site. Les modifications s'appliquent a l'ensemble du site.
 - **Editeur de navigation**: Reorganisez les liens d'en-tete par glisser-deposer, avec des groupes deroulants et des liens externes.
@@ -26,7 +27,7 @@ Le constructeur de site dispose de cinq onglets (six lorsque Style est deplie) :
 - **Editeur**: Composez des pages en ajoutant et en organisant des sections. Cliquez sur une section pour modifier son contenu, sa mise en page, son style ou son animation. Faites glisser les sections pour les reordonner, les dupliquer ou les supprimer.
 - **Pages**: Gelez vos pages : creez-en de nouvelles a partir de modeles, definissez les chemins et la visibilite, et voyez quelles pages sont en ligne, en brouillon ou planifiees. Cliquez sur une page pour l'ouvrir dans l'editeur. La page d'accueil verrouillee ne peut pas etre supprimee.
 - **Style**: Personnalisez vos tokens de design a l'echelle du site : couleurs (marque, accent, papier, encre), polices (titres, corps, mono de la bibliotheque de polices), barre de navigation (disposition, arriere-plan, style du CTA), echelle (rayon, densite, largeur maximale, espacement des sections), mouvement, styles de boutons et CSS personnalise. Vous pouvez egalement ajouter des snippets d'en-tete pour l'analytique (Plausible, Umami, Matomo) ou les preconnexions de polices. Cliquez sur l'en-tete Style pour deplier ou replier l'onglet.
-- **Domaine et SEO**: Configurez votre domaine personnalise et vos parametres SEO. Consultez [Domaines, site web et boite de reception](/fr/features/domains-website-inbox) pour la gestion complete des domaines.
+- **Domaine et SEO**: Configurez votre domaine personnalise et vos parametres SEO. Le contenu ici est lie au domaine selectionne dans le selecteur de domaine de la barre superieure. Lorsque le site principal (affiche sous le nom de votre espace de travail) est selectionne, aucun panneau specifique au domaine n'apparait. Consultez [Domaines, site web et boite de reception](/fr/features/domains-website-inbox) pour la gestion complete des domaines.
 - **Integrations**: Connectez des services tiers a votre site web.
 
 ## Creer des pages

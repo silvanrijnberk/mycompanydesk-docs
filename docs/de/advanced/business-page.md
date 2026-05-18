@@ -11,6 +11,7 @@ Erstellen Sie Ihre Geschäftswebsite mit einem Drag-and-Drop-Editor. Legen Sie m
 Der Website-Builder ersetzt das alte einseitige Unternehmensprofil. Sie erhalten einen vollständigen Website-Editor mit:
 
 - **Mehrere Seiten**: Erstellen Sie so viele Seiten, wie Sie benötigen, jede mit eigenem Pfad und eigenen Abschnitten.
+- **Domain-Wechsler**: Wenn Ihr Workspace mehrere eigene Domains hat (Pro- oder Business-Tarif), können Sie über ein Dropdown in der oberen Leiste zwischen der Bearbeitung der Hauptwebsite und einer Domain-Variante wechseln. Jede Domain erhält ihre eigenen Seiten, Navigation, Design-Tokens und Veröffentlichungs-Snapshots.
 - **Abschnittsblöcke**: Fügen Sie Hero-, Text-, Galerie-, Dienstleistungs-, Team-, Testimonial-, Kontaktformular- und benutzerdefinierte HTML-Abschnitte zu jeder Seite hinzu.
 - **Design-Tokens**: Legen Sie Markenfarben, Schriften, Abstände, Eckenradius, Bewegungsstil, benutzerdefiniertes CSS und ein Site-Favicon fest. Änderungen gelten für die gesamte Site.
 - **Navigations-Editor**: Ordnen Sie Header-Links per Drag-and-Drop, mit Dropdown-Gruppen und externen Links.
@@ -26,7 +27,7 @@ Der Website-Builder hat fünf Tabs (sechs, wenn Stil ausgeklappt ist):
 - **Editor**: Erstellen Sie Seiten durch Hinzufügen und Anordnen von Abschnitten. Klicken Sie auf einen Abschnitt, um Inhalt, Layout, Stil oder Animation zu bearbeiten. Ziehen Sie Abschnitte zum Verschieben, Duplizieren oder Löschen.
 - **Seiten**: Verwalten Sie Ihre Seiten: Erstellen Sie neue aus Vorlagen, legen Sie Pfade und Sichtbarkeit fest und sehen Sie, welche Seiten live, Entwurf oder geplant sind. Klicken Sie auf eine Seite, um sie im Editor zu öffnen. Die gesperrte Startseite kann nicht gelöscht werden.
 - **Stil**: Passen Sie Ihre site-weiten Design-Tokens an: Farben (Marke, Akzent, Papier, Tinte), Schriften (Überschrift, Text, Mono aus der Schriftbibliothek), Navigationsleiste (Layout, Hintergrund, CTA-Stil), Skalierung (Radius, Dichte, maximale Breite, Abschnittsabstand), Bewegung, Schaltflächenstile und benutzerdefiniertes CSS. Sie können auch Head-Snippets für Analytics (Plausible, Umami, Matomo) oder Schrift-Preconnects hinzufügen. Klicken Sie auf die Stil-Überschrift, um die Registerkarte ein- oder auszuklappen.
-- **Domain & SEO**: Konfigurieren Sie Ihre eigene Domain und SEO-Einstellungen. Siehe [Domains, Website und Posteingang](/de/features/domains-website-inbox) für die vollständige Domain-Verwaltung.
+- **Domain & SEO**: Konfigurieren Sie Ihre eigene Domain und SEO-Einstellungen. Der Inhalt hier bezieht sich auf die Domain, die im Domain-Wechsler in der oberen Leiste ausgewählt ist. Wenn die Hauptwebsite (angezeigt als Ihr Workspace-Name) ausgewählt ist, erscheint kein domain-spezifisches Panel. Siehe [Domains, Website und Posteingang](/de/features/domains-website-inbox) für die vollständige Domain-Verwaltung.
 - **Integrationen**: Binden Sie Drittanbieterdienste in Ihre Website ein.
 
 ## Seiten erstellen
