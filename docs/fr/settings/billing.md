@@ -114,6 +114,8 @@ La resiliation prend effet a la fin de la periode payee en cours ; l'acces est c
 3. Stripe redirige avec `?checkout=success` ou `?checkout=canceled`
 4. La page affiche une banniere de succes ou d'annulation ; le cache des droits est invalide et l'interface bloque est immediatement debloquee
 
+Lors d'un passage au plan Pro, la banniere de succes prend l'accent violet Pro avec une icone de couronne ("Bienvenue chez Pro") au lieu de la confirmation verte standard. Ce meme style Pro apparait ailleurs dans l'application : un anneau violet autour de l'avatar, une icone de couronne dans le badge de plan et des pastilles "Fonction Pro" sur les pages de parametres reservees a Pro comme Cles API et Boite de reception.
+
 ## Banniere de mise a niveau contextuelle
 
 Lorsqu'un utilisateur arrive sur la page de facturation depuis une fonctionnalite bloquee (le middleware de flag de fonctionnalite redirige avec `?upgrade=<feature>`), la page affiche une banniere "vous etes venu ici pour X -- voici ce qui le debloque" au lieu d'une presentation generique des plans.

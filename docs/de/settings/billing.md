@@ -114,6 +114,8 @@ Die Kundigung wird am Ende des aktuellen Zahlungszeitraums wirksam; der Zugriff 
 3. Stripe leitet mit `?checkout=success` oder `?checkout=canceled` zuruck
 4. Die Seite zeigt ein Erfolgs- oder Abbruch-Banner; der Berechtigungscache wird entwertet und gesperrte UI wird sofort entsperrt
 
+Bei einem Upgrade auf Pro erhalt das Erfolgsbanner den violetten Pro-Akzent und ein Kronen-Symbol ("Willkommen bei Pro") anstelle der standardmassig grunen Bestatigung. Die gleiche Pro-Gestaltung finden Sie an weiteren Stellen in der App: ein violetter Ring um Ihren Avatar, ein Kronen-Symbol im Plan-Badge und "Pro-Feature"-Pills auf Pro-geschutzten Einstellungsseiten wie API-Schlussel und Inbox.
+
 ## Kontextbezogener Upgrade-Banner
 
 Wenn Sie von einer gesperrten Funktion auf die Abrechnungsseite gelangen (die Feature-Flag-Middleware leitet mit `?upgrade=<feature>` weiter), zeigt die Seite einen Banner mit "Sie sind wegen X hier -- das schaltet es frei" anstelle eines generischen Tarif-Pitches.
