@@ -71,17 +71,22 @@ Für Nameserver-Modus eigene Domains führt der Assistent `quickEnableInbox` nac
 
 Die Benutzeroberfläche befindet sich unter **Unternehmen > Ihre eigene .com-Adresse** -- die Leaf-Seite ist `/workspace/organization/company/address`, gemountet von `apps/web/pages/workspace/organization/company/address.vue` und rendert die `SettingsDomains`-Komponente. Die beiden älteren Pfade `/workspace/organization/domains` und `/workspace/communication/domains` leiten hierher um.
 
+Die Seite ist in zwei Bereiche unterteilt:
+
+- **Ausstehende Domains**: Domains, die noch verifiziert werden müssen, erscheinen immer ganz oben, unabhängig vom Domain-Wechsler in der oberen Leiste. So können Sie die Verifizierungsanweisungen für neu hinzugefügte Domains erreichen, bevor diese aktiv werden.
+- **Aktives Domain-Panel**: DNS, SSL, Weiterleitungen, Analytics, Sicherheit und SEO-Tabs beziehen sich auf die Domain, die im Domain-Wechsler in der oberen Leiste ausgewählt ist (erreichbar über den Website-Builder unter `/website`). Wenn die Hauptwebsite (angezeigt als Ihr Workspace-Name) ausgewählt ist, wird das Domain-Panel vollständig ausgeblendet. Ein Domain-Wechsel setzt den aktiven Tab auf Routing zurück.
+
 Was Sie auf der Seite tun können:
 
-- **Domain hinzufügen** (Nameserver- oder CNAME-Modus).
+- **Domain hinzufügen** (Nameserver- oder CNAME-Modus) über eine eigene Karte, die immer sichtbar ist.
 - **Verifizieren** einer ausstehenden Domain.
-- **DNS-Records verwalten** -- A, AAAA, CNAME, MX, TXT, SRV, CAA, NS. CRUD erfolgt über Cloudflare via API.
-- **SSL** -- Zertifikatsstatus anzeigen, SSL-Modus ändern.
-- **URL-Weiterleitungen** -- drei kostenlose Cloudflare Page Rules pro Zone. Quellmuster + Ziel + 301/302.
-- **E-Mail-Sicherheit** -- SPF/DMARC/DKIM-Prüfung mit einer Ein-Klick-"Fix"-Option, die sichere Standardwerte schreibt (`v=spf1 ~all`, `v=DMARC1; p=quarantine; …`).
-- **Schnelleinstellungen** -- Cloudflare Development Mode ein/aus, "Under Attack"-Sicherheitsstufe ein/aus, Cache leeren.
-- **Analytics** -- die letzten 30 Tage mit Anfragen, Bandbreite, Bedrohungen, Besuchern, Seitenaufrufen. Der aktuelle Cloudflare Analytics-Endpunkt ist abgekündigt; die Seite zeigt einen leeren `unavailable`-Zustand, bis die GraphQL-Migration erfolgt.
-- **Entfernen** -- Soft-Delete der Zeile (`status = 'removed'`) und Abbau der Cloudflare-Zone (oder der Pages-Domain im CNAME-Modus).
+- **DNS-Records verwalten** für die ausgewählte Domain -- A, AAAA, CNAME, MX, TXT, SRV, CAA, NS. CRUD erfolgt über Cloudflare via API.
+- **SSL** für die ausgewählte Domain -- Zertifikatsstatus anzeigen, SSL-Modus ändern.
+- **URL-Weiterleitungen** für die ausgewählte Domain -- drei kostenlose Cloudflare Page Rules pro Zone. Quellmuster + Ziel + 301/302.
+- **E-Mail-Sicherheit** für die ausgewählte Domain -- SPF/DMARC/DKIM-Prüfung mit einer Ein-Klick-"Fix"-Option, die sichere Standardwerte schreibt (`v=spf1 ~all`, `v=DMARC1; p=quarantine; …`).
+- **Schnelleinstellungen** für die ausgewählte Domain -- Cloudflare Development Mode ein/aus, "Under Attack"-Sicherheitsstufe ein/aus, Cache leeren.
+- **Analytics** für die ausgewählte Domain -- die letzten 30 Tage mit Anfragen, Bandbreite, Bedrohungen, Besuchern, Seitenaufrufen. Der aktuelle Cloudflare Analytics-Endpunkt ist abgekündigt; die Seite zeigt einen leeren `unavailable`-Zustand, bis die GraphQL-Migration erfolgt.
+- **Entfernen** der ausgewählten Domain -- Soft-Delete der Zeile (`status = 'removed'`) und Abbau der Cloudflare-Zone (oder der Pages-Domain im CNAME-Modus).
 
 #### `domains`-Tabelle -- der gemeinsame Zustand
 
@@ -102,10 +107,11 @@ Wichtige Spalten, die die App liest:
 
 ### Gehostete Website
 
-Der Website-Builder befindet sich unter **Unternehmen > Ihre Website** (`/website`). Es ist ein vollständiger Mehrseiten-Editor mit Abschnitten, Blöcken, Design-Tokens und Veröffentlichungs-Snapshots. Die öffentliche Website wird auf Ihrer eigenen Domain (oder Workspace-Subdomain / Fallback-Portalroute) bereitgestellt, sobald sie veröffentlicht wurde.
+Der Website-Builder befindet sich unter **Unternehmen > Ihre Website** (`/website`). Es ist ein vollständiger Mehrseiten-Editor mit Abschnitten, Blöcken, Design-Tokens und Veröffentlichungs-Snapshots. Wenn Ihr Workspace mehrere aktive eigene Domains hat (Pro- oder Business-Tarif), können Sie über einen Domain-Wechsler in der oberen Leiste eine Domain-Variante der Website bearbeiten. Jede Domain erhält ihre eigenen Seiten, Navigation, Design-Tokens und Veröffentlichungs-Snapshots. Ein Domain-Wechsel setzt den aktiven Tab zurück. Die öffentliche Website wird auf Ihrer eigenen Domain (oder Workspace-Subdomain / Fallback-Portalroute) bereitgestellt, sobald sie veröffentlicht wurde.
 
 Was der Editor anzeigt:
 
+- **Domain-Wechsler** (obere Leiste) -- Wenn mehr als eine aktive Domain vorhanden ist, können Sie über ein Dropdown auswählen, welche Website-Variante Sie bearbeiten möchten. Die Hauptwebsite-Option zeigt Ihren Workspace-Namen. Domains ohne Variante zeigen einen "eigene Variante erstellen"-Hinweis und klonen die Hauptwebsite bei der ersten Auswahl.
 - **Editor-Tab** -- Erstellen Sie Seiten durch Hinzufügen und Anordnen von Abschnitten (Hero, Text, Galerie, Dienstleistungen, Team, Testimonials, Kontaktformular, Preise, Produkt, benutzerdefiniertes HTML). Überprüfen und bearbeiten Sie Abschnittsinhalte, Layout, Stil und Animation. Preisstufen können optional einen Kauf-Button erhalten, der zum Mollie- oder Stripe Connect-Checkout weiterleitet. Jede Stufe hat einen konfigurierbaren Mehrwertsteuersatz (21%, 9% oder 0%), wobei der dem Kunden angezeigte Preis der Endpreis inklusive Mehrwertsteuer ist. Der Produktblock ist eine eigenständige Kaufkarte mit derselben Zahlungsanbindung.
 - **Seiten-Tab** -- Seiten erstellen, umbenennen, löschen und nach Status filtern (live, Entwurf, geplant). Wählen Sie eine Vorlage beim Erstellen einer neuen Seite.
 - **Stil-Tab** -- Design-Tokens für Farben, Schriften, Skalierung, Bewegung, Schaltflächen, benutzerdefiniertes CSS und Head-Snippets (Analytics, Schrift-Preconnects).

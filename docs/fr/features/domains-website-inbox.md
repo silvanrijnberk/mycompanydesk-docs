@@ -71,17 +71,22 @@ Pour les domaines personnalises en mode nameserver, l'assistant execute `quickEn
 
 L'interface se trouve sous **Entreprise > Votre propre adresse .com** -- la page leaf est `/workspace/organization/company/address`, montee depuis `apps/web/pages/workspace/organization/company/address.vue` et affichant le composant `SettingsDomains`. Les deux anciens chemins `/workspace/organization/domains` et `/workspace/communication/domains` redirigent ici.
 
+La page se divise en deux sections :
+
+- **Domaines en attente**: Les domaines en cours de verification apparaissent toujours en haut, independamment du selecteur de domaine dans la barre superieure. Cela vous permet d'acceder aux instructions de verification pour les domaines nouvellement ajoutes avant qu'ils ne deviennent actifs.
+- **Panneau du domaine actif**: Les onglets DNS, SSL, redirections, analytique, securite et SEO sont lies au domaine selectionne dans le selecteur de domaine de la barre superieure (accessible depuis le constructeur de site sur `/website`). Lorsque le site principal (affiche sous le nom de votre espace de travail) est selectionne, le panneau du domaine est entierement masque. Changer de domaine reinitialise l'onglet actif sur Routage.
+
 Ce que la page vous permet de faire :
 
-- **Ajouter un domaine** (mode nameserver ou CNAME).
+- **Ajouter un domaine** (mode nameserver ou CNAME) via une carte dediee toujours visible.
 - **Verifier** un domaine en attente.
-- **Gerer les enregistrements DNS** -- A, AAAA, CNAME, MX, TXT, SRV, CAA, NS. Le CRUD passe par Cloudflare via l'API.
-- **SSL** -- consulter le statut du certificat, changer le mode SSL.
-- **Redirections URL** -- trois Cloudflare Page Rules gratuites par zone. Modele source + destination + 301/302.
-- **Securite des e-mails** -- verification SPF/DMARC/DKIM avec une option "corriger" en un clic qui ecrit des valeurs par defaut securisees (`v=spf1 ~all`, `v=DMARC1; p=quarantine; …`).
-- **Parametres rapides** -- activer/desactiver le mode developpement Cloudflare, activer/desactiver le niveau de securite "Under attack", vider le cache.
-- **Analytique** -- 30 derniers jours de requêtes, bande passante, menaces, visiteurs, pages vues. Le point de terminaison Cloudflare Analytics actuel est en fin de vie ; la page affiche un etat `unavailable` vide jusqu'a la migration GraphQL.
-- **Supprimer** -- suppression logicielle de la ligne (`status = 'removed'`) et demantelement de la zone Cloudflare (ou du domaine Pages en mode CNAME).
+- **Gerer les enregistrements DNS** pour le domaine selectionne -- A, AAAA, CNAME, MX, TXT, SRV, CAA, NS. Le CRUD passe par Cloudflare via l'API.
+- **SSL** pour le domaine selectionne -- consulter le statut du certificat, changer le mode SSL.
+- **Redirections URL** pour le domaine selectionne -- trois Cloudflare Page Rules gratuites par zone. Modele source + destination + 301/302.
+- **Securite des e-mails** pour le domaine selectionne -- verification SPF/DMARC/DKIM avec une option "corriger" en un clic qui ecrit des valeurs par defaut securisees (`v=spf1 ~all`, `v=DMARC1; p=quarantine; …`).
+- **Parametres rapides** pour le domaine selectionne -- activer/desactiver le mode developpement Cloudflare, activer/desactiver le niveau de securite "Under attack", vider le cache.
+- **Analytique** pour le domaine selectionne -- 30 derniers jours de requêtes, bande passante, menaces, visiteurs, pages vues. Le point de terminaison Cloudflare Analytics actuel est en fin de vie ; la page affiche un etat `unavailable` vide jusqu'a la migration GraphQL.
+- **Supprimer** le domaine selectionne -- suppression logicielle de la ligne (`status = 'removed'`) et demantelement de la zone Cloudflare (ou du domaine Pages en mode CNAME).
 
 #### Table `domains` -- l'etat partage
 
@@ -102,10 +107,11 @@ Colonnes notables que l'application lit :
 
 ### Site web heberge
 
-Le constructeur de site se trouve sous **Entreprise > Votre site web** (`/website`). C'est un editeur multipage complet avec des sections, des blocs, des tokens de design et des snapshots de publication. Le site public est diffuse depuis votre domaine personnalise (ou le sous-domaine de l'espace de travail / la route portail de secours) une fois publie.
+Le constructeur de site se trouve sous **Entreprise > Votre site web** (`/website`). C'est un editeur multipage complet avec des sections, des blocs, des tokens de design et des snapshots de publication. Lorsque votre espace de travail possede plusieurs domaines personnalises actifs (abonnement Pro ou Business), un selecteur de domaine dans la barre superieure vous permet d'editer une variante du site par domaine. Chaque domaine dispose de ses propres pages, navigation, tokens de design et snapshot de publication. Changer de domaine reinitialise l'onglet actif. Le site public est diffuse depuis votre domaine personnalise (ou le sous-domaine de l'espace de travail / la route portail de secours) une fois publie.
 
 Ce que l'editeur affiche :
 
+- **Selecteur de domaine** (barre superieure) -- Lorsque plus d'un domaine actif existe, un menu deroulant vous permet de choisir quelle variante du site editer. L'option du site principal affiche le nom de votre espace de travail. Les domaines sans variante affichent une indication "creer une variante" et clonent le site principal lors de la premiere selection.
 - **Onglet Editeur** -- Composez des pages en ajoutant et en organisant des sections (hero, texte, galerie, services, equipe, temoignages, formulaire de contact, tarifs, produit, HTML personnalise). Inspectez et modifiez le contenu, la mise en page, le style et l'animation des sections. Les niveaux de tarifs peuvent optionnellement avoir un bouton d'achat qui redirige vers le checkout Mollie ou Stripe Connect. Chaque niveau a un taux de TVA configurable (21%, 9% ou 0%), le prix affiche au client etant le prix final TVA comprise. Le bloc produit est une fiche d'achat autonome avec la meme plomberie de paiement.
 - **Onglet Pages** -- Créer, renommer, supprimer et filtrer les pages par statut (en ligne, brouillon, planifie). Choisir un modele lors de la creation d'une nouvelle page.
 - **Onglet Style** -- Tokens de design pour les couleurs, les polices, l'echelle, le mouvement, les boutons, le CSS personnalise et les snippets d'en-tête (analytique, preconnexions de polices).

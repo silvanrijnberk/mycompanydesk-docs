@@ -71,17 +71,22 @@ Voor nameserver-modus eigen domeinen voert de wizard `quickEnableInbox` uit na v
 
 UI staat op `Bedrijf › Je eigen .com-adres` -- de leaf-pagina is `/workspace/organization/company/address`, gemount vanuit `apps/web/pages/workspace/organization/company/address.vue` en toont de `SettingsDomains`-component. De twee oudere paden `/workspace/organization/domains` en `/workspace/communication/domains` verwijzen hierheen.
 
+De pagina bestaat uit twee delen:
+
+- **Domeinen in afwachting**: Domeinen die nog geverifieerd moeten worden staan altijd bovenaan, los van de domeinwisselaar in de bovenbalk. Zo kun je de verificatie-instructies bereiken van nieuw toegevoegde domeinen voordat ze actief worden.
+- **Actief domeinpaneel**: DNS, SSL, doorverwijzingen, analytics, beveiliging en SEO-tabs zijn gekoppeld aan het domein dat in de domeinwisselaar in de bovenbalk is geselecteerd (bereikbaar vanuit de sitebouwer op `/website`). Wanneer de hoofdsite (weergegeven als je werkruimtenaam) is geselecteerd, wordt het domeinpaneel volledig verborgen. Wisselen van domein zet de actieve tab terug op Routering.
+
 Wat je op de pagina kunt doen:
 
-- **Domein toevoegen** (nameserver- of CNAME-modus).
+- **Domein toevoegen** (nameserver- of CNAME-modus) via een eigen kaart die altijd zichtbaar is.
 - **Verifiëren** van een pending domein.
-- **DNS-records beheren** -- A, AAAA, CNAME, MX, TXT, SRV, CAA, NS. CRUD gaat via Cloudflare via de API.
-- **SSL** -- certificaatstatus bekijken, SSL-modus wijzigen.
-- **URL-doorverwijzingen** -- drie gratis Cloudflare Page Rules per zone. Bronpatroon + bestemming + 301/302.
-- **E-mailbeveiliging** -- SPF/DMARC/DKIM-controle met een een-klik "fix" die veilige standaardwaarden schrijft (`v=spf1 ~all`, `v=DMARC1; p=quarantine; …`).
-- **Snelle instellingen** -- Cloudflare Development Mode aan/uit, "Under attack"-beveiligingsniveau aan/uit, cache legen.
-- **Analytics** -- laatste 30 dagen van verzoeken, bandbreedte, dreigingen, bezoekers, paginaweergaven. Het huidige Cloudflare Analytics-eindpunt is uitgefaseerd; de pagina toont een lege `unavailable`-status tot de GraphQL-migratie landt.
-- **Verwijderen** -- soft-delete van de rij (`status = 'removed'`) en afbreken van de Cloudflare-zone (of het Pages-domein in CNAME-modus).
+- **DNS-records beheren** voor het geselecteerde domein -- A, AAAA, CNAME, MX, TXT, SRV, CAA, NS. CRUD gaat via Cloudflare via de API.
+- **SSL** voor het geselecteerde domein -- certificaatstatus bekijken, SSL-modus wijzigen.
+- **URL-doorverwijzingen** voor het geselecteerde domein -- drie gratis Cloudflare Page Rules per zone. Bronpatroon + bestemming + 301/302.
+- **E-mailbeveiliging** voor het geselecteerde domein -- SPF/DMARC/DKIM-controle met een een-klik "fix" die veilige standaardwaarden schrijft (`v=spf1 ~all`, `v=DMARC1; p=quarantine; …`).
+- **Snelle instellingen** voor het geselecteerde domein -- Cloudflare Development Mode aan/uit, "Under attack"-beveiligingsniveau aan/uit, cache legen.
+- **Analytics** voor het geselecteerde domein -- laatste 30 dagen van verzoeken, bandbreedte, dreigingen, bezoekers, paginaweergaven. Het huidige Cloudflare Analytics-eindpunt is uitgefaseerd; de pagina toont een lege `unavailable`-status tot de GraphQL-migratie landt.
+- **Verwijderen** van het geselecteerde domein -- soft-delete van de rij (`status = 'removed'`) en afbreken van de Cloudflare-zone (of het Pages-domein in CNAME-modus).
 
 #### `domains`-tabel -- de gedeelde status
 
@@ -102,10 +107,11 @@ Belangrijke kolommen die de app leest:
 
 ### Gehoste website
 
-De sitebouwer staat op `Bedrijf › Je website` (`/website`). Het is een volwaardige multi-pagina-editor met secties, blokken, ontwerptokens en publicatiesnapshots. De openbare website wordt getoond op je eigen domein (of werkruimte-subdomein / terugvalportalroute) zodra gepubliceerd.
+De sitebouwer staat op `Bedrijf › Je website` (`/website`). Het is een volwaardige multi-pagina-editor met secties, blokken, ontwerptokens en publicatiesnapshots. Wanneer je werkruimte meerdere actieve eigen domeinen heeft (Pro- of Business-abonnement), kun je via een domeinwisselaar in de bovenbalk een per-domein-variant van de site bewerken. Elk domein krijgt zijn eigen pagina's, navigatie, ontwerptokens en publicatiesnapshot. Wisselen van domein zet de actieve tab terug. De openbare website wordt getoond op je eigen domein (of werkruimte-subdomein / terugvalportalroute) zodra gepubliceerd.
 
 Wat de editor laat zien:
 
+- **Domeinwisselaar** (bovenbalk) -- Wanneer er meer dan één actief domein is, kun je via een dropdown kiezen welke sitevariant je wilt bewerken. De hoofdsite-optie toont je werkruimtenaam. Domeinen die nog geen variant hebben tonen een "eigen variant maken"-hint en klonen de hoofdsite bij de eerste selectie.
 - **Editor-tab** -- Stel pagina's samen door secties toe te voegen en te rangschikken (hero, tekst, galerij, diensten, team, testimonials, contactformulier, tarieven, product, aangepaste HTML). Bekijk en bewerk sectie-inhoud, layout, stijl en animatie. Tarieven kunnen optioneel een koopknop krijgen die doorverwijst naar de Mollie- of Stripe Connect-checkout. Elke tier heeft een instelbaar BTW-tarief (21%, 9% of 0%), waarbij de prijs die de klant ziet de uiteindelijke prijs is, inclusief BTW. Het productblok is een losse koopkaart met dezelfde betalingskoppeling.
 - **Pagina's-tab** -- Pagina's aanmaken, hernoemen, verwijderen en filteren op status (live, concept, ingepland). Kies een sjabloon bij het maken van een nieuwe pagina.
 - **Stijl-tab** -- Ontwerptokens voor kleuren, lettertypes, schaal, beweging, knoppen, aangepaste CSS en head-snippets (analytics, lettertype-preconnects).

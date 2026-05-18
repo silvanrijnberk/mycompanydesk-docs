@@ -69,19 +69,24 @@ For nameserver-mode custom domains, the wizard runs `quickEnableInbox` after ver
 
 ### Custom domains
 
-UI lives at `Company › Your own .com address` — the leaf page is `/workspace/organization/company/address`, mounted from `apps/web/pages/workspace/organization/company/address.vue` and rendering the `SettingsDomains` component. The two older paths `/workspace/organization/domains` and `/workspace/communication/domains` redirect here.
+UI lives at `Company › Your own .com address` -- the leaf page is `/workspace/organization/company/address`, mounted from `apps/web/pages/workspace/organization/company/address.vue` and rendering the `SettingsDomains` component. The two older paths `/workspace/organization/domains` and `/workspace/communication/domains` redirect here.
+
+The page splits into two sections:
+
+- **Pending domains**: Domains still being verified always appear at the top, regardless of the topbar domain switcher state. This lets you reach verification instructions for newly added domains before they become active.
+- **Active domain panel**: DNS, SSL, redirects, analytics, security, and SEO tabs are scoped to the domain selected in the topbar domain switcher (accessible from the site builder at `/website`). Selecting the default site (shown as your workspace name in the switcher) hides the per-domain panel entirely. Switching domains resets the active tab to Routing.
 
 What the page lets you do:
 
-- **Add a domain** (nameserver or CNAME mode).
+- **Add a domain** (nameserver or CNAME mode) via a dedicated card that is always visible.
 - **Verify** a pending domain.
-- **Manage DNS records** — A, AAAA, CNAME, MX, TXT, SRV, CAA, NS. CRUD goes through Cloudflare via the API.
-- **SSL** — view certificate status, change SSL mode.
-- **URL redirects** — three free Cloudflare Page Rules per zone. Source pattern + destination + 301/302.
-- **Email security** — SPF/DMARC/DKIM check with a one-click "fix" that writes safe defaults (`v=spf1 ~all`, `v=DMARC1; p=quarantine; …`).
-- **Quick settings** — toggle Cloudflare Development Mode, toggle "Under attack" security level, purge cache.
-- **Analytics** — last 30 days of requests, bandwidth, threats, visitors, pageviews. The current Cloudflare Analytics endpoint is sunset; the page renders an empty `unavailable` state until the GraphQL migration lands.
-- **Remove** — soft-deletes the row (`status = 'removed'`) and tears down the Cloudflare zone (or the Pages domain in CNAME mode).
+- **Manage DNS records** for the selected active domain -- A, AAAA, CNAME, MX, TXT, SRV, CAA, NS. CRUD goes through Cloudflare via the API.
+- **SSL** for the selected domain -- view certificate status, change SSL mode.
+- **URL redirects** for the selected domain -- three free Cloudflare Page Rules per zone. Source pattern + destination + 301/302.
+- **Email security** for the selected domain -- SPF/DMARC/DKIM check with a one-click "fix" that writes safe defaults (`v=spf1 ~all`, `v=DMARC1; p=quarantine; …`).
+- **Quick settings** for the selected domain -- toggle Cloudflare Development Mode, toggle "Under attack" security level, purge cache.
+- **Analytics** for the selected domain -- last 30 days of requests, bandwidth, threats, visitors, pageviews. The current Cloudflare Analytics endpoint is sunset; the page renders an empty `unavailable` state until the GraphQL migration lands.
+- **Remove** the selected domain -- soft-deletes the row (`status = 'removed'`) and tears down the Cloudflare zone (or the Pages domain in CNAME mode).
 
 #### `domains` table — the shared state
 
@@ -102,10 +107,11 @@ Notable columns the app reads from:
 
 ### Hosted website
 
-The site builder lives at `Company › Your website` (`/website`). It is a full multi-page editor with sections, blocks, design tokens, and publish snapshots. The public face is served from your custom domain (or workspace subdomain / fallback portal route) once published.
+The site builder lives at `Company › Your website` (`/website`). It is a full multi-page editor with sections, blocks, design tokens, and publish snapshots. When your workspace has multiple active custom domains (Pro or Business plan), a domain switcher in the top bar lets you edit a per-domain variant of the site. Each domain gets its own pages, navigation, design tokens, and publish snapshot. Switching domains resets the active tab. The public face is served from your custom domain (or workspace subdomain / fallback portal route) once published.
 
 What the editor surfaces:
 
+- **Domain switcher** (top bar) -- When more than one active domain exists, a dropdown lets you pick which site variant to edit. The default site option is labelled with your workspace name. Domains that have not been initialized yet show an "initialize" hint and clone the default site on first selection.
 - **Editor tab** — Compose pages by adding and arranging sections (hero, text, gallery, services, team, testimonials, contact form, pricing, product, custom HTML). Inspect and edit section content, layout, style, and animation. Pricing tiers can optionally carry a buy button that redirects to Mollie or Stripe Connect checkout. Each tier has a configurable VAT rate (21%, 9% or 0%), with the price shown to the customer being the final price, VAT included. The product block is a single-item buy card with the same payment plumbing.
 - **Pages tab** — Create, rename, delete, and filter pages by status (live, draft, scheduled). Pick a template when creating a new page.
 - **Style tab** — Design tokens for colors, fonts, scale, motion, buttons, custom CSS, and head snippets (analytics, font preconnects).

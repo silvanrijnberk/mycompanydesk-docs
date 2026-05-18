@@ -11,6 +11,7 @@ Build your business website with a drag-and-drop editor. Create multiple pages, 
 The site builder replaces the old single-page business profile. It gives you a full website editor with:
 
 - **Multi-page support**: Create as many pages as you need, each with its own path and sections.
+- **Domain switcher**: When your workspace has multiple custom domains (Pro or Business plan), a dropdown in the top bar lets you switch between editing the default site and a per-domain variant. Each domain gets its own pages, navigation, design tokens, and publish snapshot.
 - **Section blocks**: Add hero, text, gallery, services, team, testimonials, contact form, and custom HTML sections to any page.
 - **Design tokens**: Set brand colors, fonts, spacing, border radius, motion style, custom CSS, and a site favicon. Changes apply across the whole site.
 - **Navigation editor**: Drag-and-drop reorder of header links, with dropdown groups and external links.
@@ -26,7 +27,7 @@ The site builder has five tabs (six when Style is expanded):
 - **Editor**: Compose pages by adding and arranging sections. Click any section to inspect its content, layout, style, or animation settings. Drag sections to reorder, duplicate, or delete them.
 - **Pages**: Manage your pages: create new ones from templates, set paths and visibility, and see which pages are live, draft, or scheduled. Click a page to open it in the editor. The locked home page cannot be deleted.
 - **Style**: Customize your site-wide design tokens: colors (brand, accent, paper, ink), fonts (heading, body, mono from the font library), navbar (layout, background, CTA style), scale (radius, density, max width, section spacing), motion preferences, button styles, and custom CSS. You can also add head snippets for analytics (Plausible, Umami, Matomo) or font preconnects. Click the Style header to open or close the tab strip.
-- **Domain & SEO**: Configure your custom domain and SEO settings. See [Domains, Website and Inbox](/features/domains-website-inbox) for the full domain management workflow.
+- **Domain & SEO**: Configure your custom domain and SEO settings. The content here is scoped to the domain selected in the topbar domain switcher. When the default site (listed as the workspace name) is selected, no domain-specific panel appears. See [Domains, Website and Inbox](/features/domains-website-inbox) for the full domain management workflow.
 - **Integrations**: Connect third-party services to your website.
 
 ## Creating pages
