@@ -114,7 +114,7 @@ Opzeggen gaat in aan het einde van de huidige betaalde periode; je behoudt toega
 3. Stripe stuurt je terug met `?checkout=success` of `?checkout=canceled`
 4. De pagina toont een succes- of annuleringsbanner; de rechtencache wordt ongeldig verklaard en gated UI wordt meteen ontgrendeld
 
-Bij een upgrade naar Pro krijgt de succesbanner het violette Pro-accent en een kroonicoontje ("Welkom bij Pro") in plaats van de standaard groene bevestiging. Dezelfde Pro-styling zie je op meer plekken in de app: een violette ring om je avatar, een kroonicoontje in de planbadge en "Pro feature"-pills op Pro-gated instellingen zoals API-sleutels en Inbox.
+Bij een upgrade naar Pro krijgt de succesbanner het violette Pro-accent en een kroonicoontje ("Welkom bij Pro") in plaats van de standaard groene bevestiging. Dezelfde Pro-styling zie je op meer plekken in de app: een violette ring om je avatar, een kroonicoontje in de planbadge en "Pro feature"-pills op Pro-gated instellingen zoals API-sleutels en Inbox. Daarnaast krijgt de contextuele gids-assistent een premium violet uiterlijk: de "AI"-pill wordt een "Pro"-pill, de paneelrand en verzendknop krijgen het Pro-accent en de statusregel verandert naar "Jouw Pro-assistent staat klaar."
 
 ## Contextuele upgrade-banner
 

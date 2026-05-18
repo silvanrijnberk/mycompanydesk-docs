@@ -38,6 +38,16 @@ Der kontextbezogene Leitfaden fallt unter das EU-KI-Gesetz (Verordnung 2024/1689
 
 Die Verpflichtung tritt im August 2026 in Kraft; die Offenlegungen wurden vor der Frist implementiert.
 
+### Pro-Erscheinungsbild
+
+Pro-Workspaces erhalten ein Premium-Assistenten-Design, das das generische Styling durch den Pro-Violett-Akzent ersetzt. Wenn der Abrechnungsplan Pro ist, andert sich das Assistenten-Panel visuell:
+
+- Die "KI"-Pille wird zu einer violetten "Pro"-Pille, die signalisiert, dass der Assistent mit dem hochwertigsten Modell und vollem App-Kontext lauft.
+- Panel-Rand, Avatar-Ring, Online-Punkt und Sende-Button wechseln zu Violett (`#a855f7`), passend zum Pro-Band in der App-Navigation.
+- Die Statuszeile zeigt "Ihr Pro-Assistent steht bereit" statt des generischen "Bereit zu helfen."
+
+Das Pro-Erscheinungsbild ist rein kosmetisch. Die zugrunde liegende Modellauswahl, der Tool-Katalog und die EU-KI-Gesetz-Offenlegungen bleiben fur alle Tarife identisch. `TIER_CHAT_CONFIG` gibt Pro bereits ein leistungsfahigeres Modell und unbegrenzten App-Kontext.
+
 ## KI-Vorschlage
 
 Intelligente Empfehlungen, die Ihnen bei der Kategorisierung und Beschreibung Ihrer Eintrage helfen:

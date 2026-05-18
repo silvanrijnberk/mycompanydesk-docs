@@ -29,6 +29,16 @@ The EU AI Act (Regulation 2024/1689) classifies the contextual guide as a limite
 
 These disclosures also appear in Dutch, German, and French in their respective locale builds. The obligation takes effect in August 2026; the disclosures shipped ahead of the deadline.
 
+### Pro visual skin
+
+Pro-tier workspaces get a premium assistant skin that replaces the generic styling with the Pro violet accent. When the billing plan is Pro, the assistant panel changes visually:
+
+- The "AI" pill becomes a violet "Pro" pill, signalling that the assistant runs on the highest-tier model with full app context.
+- The panel border, avatar ring, online-dot, and send button shift to violet (`#a855f7`), matching the Pro ribbon in the app navigation.
+- The status line reads "Your Pro assistant is ready" instead of the generic "Ready to help."
+
+The Pro skin is purely cosmetic. The underlying model selector, tool catalog, and EU AI Act disclosures remain identical across tiers. Backed by `TIER_CHAT_CONFIG` which already gives Pro a heavier model variant and unlimited app context.
+
 ### Tool catalog
 
 When the question needs a number, page-help, or a VAT-specific aggregate, the model calls one of approximately 18 parameterised tools. Each handler is a hand-written, RLS-protected `SELECT` (or a wrapper around an existing aggregate service) -- the model picks the tool name and arguments, it cannot author SQL. Read-only by design. The same catalog is exposed to Gemini (function declarations) and to Ollama Cloud (OpenAI-compatible `tools` array), so a fallback between providers keeps capabilities identical.
