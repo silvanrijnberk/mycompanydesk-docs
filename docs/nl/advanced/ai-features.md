@@ -89,9 +89,14 @@ AI genereert periodieke samenvattingen van je bedrijfsactiviteit:
 
 Samenvattingen worden gegenereerd in je voorkeurstaal en zijn beschikbaar vanaf het dashboard.
 
+## Privacy en gegevensbescherming
+
+Alle cloud-AI-functies draaien standaard op Vertex AI in `europe-west1` (EU). MyCompanyDesk heeft een verwerkersovereenkomst met Google Cloud voor Vertex AI. Ollama Cloud (ollama.com, gehost in de VS) staat standaard uit omdat er geen verwerkersovereenkomst met Ollama Inc. is. Je kunt het per workspace inschakelen voor workloads zonder persoonsgegevens, maar het staat uit voor alle abonnementen.
+
+Zet je `ai_processing_mode` op `local_only`, dan blijven bonnen scannen, AI-suggesties, tekstcontrole, leverancierclassificatie en brancheherkenning volledig op je eigen server. De contextuele gids werkt alleen in de cloud en is uitgeschakeld in `local_only`-modus.
+
 ## Tips
 
 - Schakel AI-suggesties eenmaal in en ze werken automatisch op de achtergrond
 - Bonnen scannen is vooral handig voor papieren bonnen — maak gewoon een foto
 - De contextuele gids kan de meeste "hoe doe ik..."-vragen over de app beantwoorden
-- AI-functies gebruiken privacybeschermende verwerking — je gegevens blijven veilig

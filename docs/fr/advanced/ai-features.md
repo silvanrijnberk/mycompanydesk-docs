@@ -89,9 +89,14 @@ L'IA genere des resumes periodiques de votre activite commerciale :
 
 Les resumes sont generes dans votre langue preferee et disponibles depuis le tableau de bord.
 
+## Confidentialite et protection des donnees
+
+Toutes les fonctionnalites IA cloud passent par defaut par Vertex AI dans `europe-west1` (UE). MyCompanyDesk a un accord de traitement des donnees (DPA) avec Google Cloud pour Vertex AI. Ollama Cloud (ollama.com, heberge aux Etats-Unis) est desactive par defaut car aucun DPA ni clauses contractuelles types n'existent avec Ollama Inc. Vous pouvez l'activer par workspace pour des charges sans donnees personnelles, mais il est desactive pour tous les plans.
+
+Si vous passez `ai_processing_mode` sur `local_only`, la numerisation de recus, les suggestions IA, la verification de texte, la classification des fournisseurs et la detection de secteur restent entierement sur votre propre serveur. Le guide contextuel fonctionne uniquement dans le cloud et est desactive en mode `local_only`.
+
 ## Conseils
 
 - Activez les suggestions IA une fois et elles fonctionnent automatiquement en arriere-plan
 - La numerisation de recus est particulierement utile pour les recus papier -- prenez simplement une photo
 - Le guide contextuel peut repondre a la plupart des questions "comment faire..." concernant l'application
-- Les fonctionnalites IA utilisent un traitement respectueux de la vie privee -- vos donnees restent securisees

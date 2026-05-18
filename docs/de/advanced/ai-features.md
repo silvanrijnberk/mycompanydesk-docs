@@ -89,9 +89,14 @@ Die KI erstellt regelmäßige Zusammenfassungen Ihrer Geschäftsaktivitäten:
 
 Zusammenfassungen werden in Ihrer bevorzugten Sprache erstellt und sind über das Dashboard verfügbar.
 
+## Datenschutz
+
+Alle cloudbasierten KI-Funktionen laufen standardmäßig auf Vertex AI in `europe-west1` (EU). MyCompanyDesk hat einen Auftragsverarbeitungsvertrag (AVV) mit Google Cloud für Vertex AI. Ollama Cloud (ollama.com, US-gehostet) ist standardmäßig deaktiviert, da kein AVV und keine Standardvertragsklauseln mit Ollama Inc. bestehen. Sie können es pro Workspace für Workloads ohne personenbezogene Daten aktivieren, es ist jedoch für alle Tarife standardmäßig ausgeschaltet.
+
+Wenn Sie `ai_processing_mode` auf `local_only` setzen, bleiben Belegscanner, KI-Vorschläge, Textprüfung, Lieferantenklassifizierung und Branchenerkennung vollständig auf Ihrem eigenen Server. Der kontextbezogene Leitfaden funktioniert nur cloudbasiert und ist im `local_only`-Modus deaktiviert.
+
 ## Tipps
 
 - Aktivieren Sie KI-Vorschläge einmal und sie arbeiten automatisch im Hintergrund
 - Belegscanner ist besonders nützlich für Papierbelege — machen Sie einfach ein Foto
 - Der kontextbezogene Leitfaden kann die meisten „Wie mache ich..."-Fragen zur App beantworten
-- KI-Funktionen nutzen datenschutzfreundliche Verarbeitung — Ihre Daten bleiben sicher
