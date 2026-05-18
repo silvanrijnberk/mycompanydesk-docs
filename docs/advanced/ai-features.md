@@ -37,7 +37,7 @@ Pro-tier workspaces get a premium assistant skin that replaces the generic styli
 - The panel border, avatar ring, online-dot, and send button shift to violet (`#a855f7`), matching the Pro ribbon in the app navigation.
 - The status line reads "Your Pro assistant is ready" instead of the generic "Ready to help."
 
-The Pro skin is purely cosmetic — the underlying model selector, tool catalog, and EU AI Act disclosures remain identical across tiers. Backed by `TIER_CHAT_CONFIG` which already gives Pro a heavier model variant and unlimited app context.
+The Pro skin is purely cosmetic. The underlying model selector, tool catalog, and EU AI Act disclosures remain identical across tiers. Backed by `TIER_CHAT_CONFIG` which already gives Pro a heavier model variant and unlimited app context.
 
 ### Tool catalog
 

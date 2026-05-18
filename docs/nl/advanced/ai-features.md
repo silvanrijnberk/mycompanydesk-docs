@@ -46,7 +46,7 @@ Pro-werkruimtes krijgen een premium assistent-uiterlijk dat de generieke styling
 - De paneelrand, avatarring, online-dot en verzendknop veranderen naar violet (`#a855f7`), passend bij de Pro-lint in de app-navigatie.
 - De statusregel toont "Jouw Pro-assistent staat klaar" in plaats van het generieke "Klaar om te helpen."
 
-Het Pro-uiterlijk is puur cosmetisch — de onderliggende modelselector, toolcatalogus en EU AI Act-openbaarmakingen blijven identiek voor alle abonnementen. Achter de schermen geeft `TIER_CHAT_CONFIG` Pro al een zwaarder model en onbeperkte app-context.
+Het Pro-uiterlijk is puur cosmetisch. De onderliggende modelselector, toolcatalogus en EU AI Act-openbaarmakingen blijven identiek voor alle abonnementen. Achter de schermen geeft `TIER_CHAT_CONFIG` Pro al een zwaarder model en onbeperkte app-context.
 
 ## AI-suggesties
 

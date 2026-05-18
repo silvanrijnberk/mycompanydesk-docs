@@ -46,7 +46,7 @@ Les espaces de travail Pro beneficient d'une apparence d'assistant premium qui r
 - La bordure du panneau, l'anneau de l'avatar, le point en ligne et le bouton d'envoi passent au violet (`#a855f7`), en accord avec le ruban Pro dans la navigation de l'application.
 - La ligne de statut affiche "Votre assistant Pro est pret" au lieu du generique "Pret a aider."
 
-L'apparence Pro est purement cosmetique — le selecteur de modele sous-jacent, le catalogue d'outils et les divulgations de la loi europeenne sur l'IA restent identiques pour tous les plans. `TIER_CHAT_CONFIG` donne deja a Pro un modele plus puissant et un contexte d'application illimite.
+L'apparence Pro est purement cosmetique. Le selecteur de modele sous-jacent, le catalogue d'outils et les divulgations de la loi europeenne sur l'IA restent identiques pour tous les plans. `TIER_CHAT_CONFIG` donne deja a Pro un modele plus puissant et un contexte d'application illimite.
 
 ## Suggestions IA
 
