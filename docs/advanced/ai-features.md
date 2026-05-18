@@ -7,13 +7,13 @@ last_verified: 2026-05-09
 
 MyCompanyDesk uses AI in several places to speed up data entry, surface answers from your own books, and lower the cost of writing copy in four languages. This page lists every AI surface that ships in the product today and how it behaves.
 
-Provider routing is intentional and changes per surface. Most surfaces follow a three-tier chain: Gemini (free quota) first, Ollama Cloud Pro second, local Ollama as last resort. Plan gating, where it applies, is enforced at the API layer through entitlements.
+Provider routing is intentional and changes per surface. The default chain is EU-only: Gemini (free quota) on Vertex AI `europe-west1` first, local Ollama as last resort. Ollama Cloud (US-hosted) is disabled by default because MyCompanyDesk does not have a signed Data Processing Agreement with Ollama Inc. It can be re-enabled for workloads that demonstrably carry no customer personal data, but the LLM router falls through to Vertex EU otherwise. Plan gating, where it applies, is enforced at the API layer through entitlements.
 
 ## Contextual guide (in-app chatbot)
 
 The help icon in the app shell opens a chat panel that knows which page you are on, what records you are looking at, and what your workspace data looks like. It is built as a tool-using agent: instead of guessing at numbers, it asks for them.
 
-- **Model.** Default chat model is `deepseek-v4-pro:cloud` on Ollama Cloud, with Gemini as the primary tier when the free quota is available. Both paths fall back to the next tier on rate-limit or outage; the swap is transparent to the conversation.
+- **Model.** Default chat model is Gemini on Vertex AI `europe-west1`, served over Cloudflare AI Gateway. When Ollama Cloud is explicitly enabled at the workspace level, `deepseek-v4-pro:cloud` takes over as the primary tier. Both paths fall back to the next tier on rate-limit or outage; the swap is transparent to the conversation.
 - **Streaming.** Replies stream over `POST /api/contextual-guide/stream` (Server-Sent Events). The web client renders incoming tokens as a typewriter effect so first tokens appear in well under a second.
 - **FAQ short-circuit.** Before the model is called, the query is matched against the workspace FAQ corpus using SymSpell-corrected keyword search and a vector cosine fallback (Workers AI `bge-m3` primary, Gemini embeddings fallback). A confident match returns the curated FAQ answer with no LLM round-trip — fast and free.
 - **Page context.** The current route, the visible entity, and a compact app-state summary are injected into the system prompt. The guide answers about what you are seeing, not in the abstract.
@@ -57,7 +57,7 @@ When the question needs a number, page-help, or a VAT-specific aggregate, the mo
 |---|---|
 | `search_help` | Best-matching FAQ entry (semantic-search wrapper). Used for "how do I X" questions. |
 
-The chat is pinned to `deepseek-v4-pro:cloud` on Ollama Cloud — empirical bench showed deepseek lands a 2-tool plan + synthesis in ~3 seconds, faster than `qwen3-coder-next:cloud` and `gpt-oss:120b-cloud` on this workload. Gemini is the fallback path when Ollama Cloud is unavailable.
+The chat defaults to Gemini on Vertex AI `europe-west1`. When a workspace explicitly enables Ollama Cloud, the chat is pinned to `deepseek-v4-pro:cloud` — empirical bench showed deepseek lands a 2-tool plan + synthesis in ~3 seconds, faster than `qwen3-coder-next:cloud` and `gpt-oss:120b-cloud` on this workload. Gemini is the fallback path when Ollama Cloud is unavailable or disabled.
 
 The standalone `/api/vat-assistant/*` route is **gone** as of May 2026 — VAT questions go through the same unified contextual-guide endpoint and the `vat_*` tools above. There is no separate model or panel.
 
@@ -141,5 +141,7 @@ Bulk locale-file sync (filling missing keys, re-translating drift across `nl/de/
 | Translation | On (UI strings only) | On | On |
 
 ## Privacy
+
+All cloud AI paths route through Vertex AI in `europe-west1` (EU) by default. MyCompanyDesk has a signed DPA with Google Cloud for Vertex AI usage. Ollama Cloud (ollama.com, US-hosted) is disabled by default because no DPA or Standard Contractual Clauses exist with Ollama Inc. Workspaces can enable it explicitly, but it is off by default for all plans.
 
 When `ai_processing_mode` is set to `local_only` on the workspace, every AI path that supports it (receipt scanner, AI suggestions, text check, vendor classifier, industry detection) routes through the local Ollama instance and never leaves the server. The contextual guide is cloud-only by design — it requires the chat-tier model and is disabled in `local_only` mode rather than degraded.
