@@ -106,5 +106,5 @@ Of maak een **nieuwe werkruimte** aan vanuit hetzelfde menu.
 - Controleer teamtoegang periodiek, vooral wanneer teamleden van rol wisselen
 
 ::: info
-Teambeheer met meer dan 1 lid vereist het **Pro**-abonnement. Onbeperkte leden zijn beschikbaar met het **Business**-abonnement.
+Teambeheer met meer dan 1 lid vereist het **Pro**-abonnement. Extra gebruikers zijn apart bij te boeken via stoel-add-ons.
 :::

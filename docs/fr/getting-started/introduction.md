@@ -27,17 +27,24 @@ Les factures, devis et e-mails peuvent etre envoyes en neerlandais, anglais, all
 
 ## Abonnements
 
-| Fonctionnalite | Gratuit | Pro | Business |
-|---|---|---|---|
-| Factures et devis | Limite | Illimite | Illimite |
-| Clients | Limite | Illimite | Illimite |
-| Suivi des depenses | Basique | Complet | Complet |
-| Numerisation de recus | - | Oui | Oui |
-| Suggestions IA | - | Oui | Oui |
-| Image de marque personnalisee | - | Oui | Oui |
-| Membres d'equipe | 1 | Jusqu'a 5 | Illimite |
-| Rapports et export | Basique | Complet | Complet |
-| Acces API | - | - | Oui |
+MyCompanyDesk propose deux plans payants : Starter et Pro. Les nouveaux clients beneficient d'un essai Pro de 60 jours.
+
+| Fonctionnalite | Starter | Pro |
+|---|---|---|
+| Factures, devis, clients | Illimite | Illimite |
+| Suivi des depenses | Complet | Complet |
+| Numerisation de recus | Oui | Oui |
+| Suggestions IA | Oui | Oui |
+| Image de marque personnalisee | Oui | Oui |
+| Saisie de temps, outils linguistiques | Oui | Oui |
+| Page entreprise publique | Oui | Oui |
+| Membres d'equipe | 1 | 1 (extensible avec des add-ons de sieges) |
+| Rapports & export | Complet | Complet |
+| Contrats, biens, projets | - | Oui |
+| Boite mail professionnelle sur votre domaine | - | Oui |
+| Multi-domaine, routage de domaine personnalise | - | Oui |
+| Rapports avances, support prioritaire | - | Oui |
+| Acces API, webhooks | - | Oui |
 
 ## Obtenir de l'aide
 

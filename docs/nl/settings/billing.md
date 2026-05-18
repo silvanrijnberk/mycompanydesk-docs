@@ -122,4 +122,4 @@ Wanneer je op de factureringspagina terechtkomt vanuit een gated functie (de fea
 
 - [Bedrijfsgegevens](/nl/settings/company) -- `public_business_page` en `custom_domains` zitten hier
 - [E-mail](/nl/settings/email) -- `inbox` vereist Pro
-- [Team](/nl/settings/team) -- `team_members` vereist Pro of hoger
+- [Team](/nl/settings/team) -- `team_members` vereist Pro

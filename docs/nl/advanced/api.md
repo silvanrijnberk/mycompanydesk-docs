@@ -7,7 +7,7 @@ title: API-integratie
 Krijg programmatisch toegang tot je MyCompanyDesk-gegevens via de REST API.
 
 ::: info
-API-toegang vereist het **Business**-abonnement.
+API-toegang vereist het **Pro**-abonnement.
 :::
 
 ## Overzicht

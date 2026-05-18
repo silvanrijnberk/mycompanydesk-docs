@@ -106,5 +106,5 @@ Ou creez un **nouvel espace de travail** depuis le meme menu.
 - Revisez periodiquement les acces de l'equipe, surtout lorsque les membres changent de role
 
 ::: info
-La gestion d'equipe au-dela d'un membre necessite le plan **Pro**. Un nombre illimite de membres est disponible avec le plan **Business**.
+La gestion d'equipe au-dela d'un membre necessite le plan **Pro**. Des membres supplementaires sont disponibles separement via des add-ons de sieges.
 :::

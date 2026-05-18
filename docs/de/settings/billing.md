@@ -122,4 +122,4 @@ Wenn Sie von einer gesperrten Funktion auf die Abrechnungsseite gelangen (die Fe
 
 - [Unternehmenseinstellungen](/de/settings/company) -- `public_business_page` und `custom_domains` werden hier gesteuert
 - [E-Mail](/de/settings/email) -- `inbox` erfordert Pro
-- [Team](/de/settings/team) -- `team_members` erfordert Pro oder hoher
+- [Team](/de/settings/team) -- `team_members` erfordert Pro

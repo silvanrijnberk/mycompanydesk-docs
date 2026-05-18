@@ -11,7 +11,7 @@ Add a partner, employee, or your accountant. Each person gets their own login.
 
 Open the workspace switcher → **Account** → **Team**, or navigate directly to `/workspace/account/team`.
 
-The page is gated by the `team_members` feature (Pro and Business). Free and Starter workspaces see the upgrade prompt; the workspace owner is always counted as one team member.
+The page is gated by the `team_members` feature (Pro). Free and Starter workspaces see the upgrade prompt; the workspace owner is always counted as one team member.
 
 ## What's on the page
 
@@ -88,7 +88,7 @@ For each page, three independent toggles:
 
 The drawer also has an **Access revoked** banner for accounts that have been suspended (the Restore button re-enables them).
 
-The store handles the legacy boolean format too — older `page_access` values of `true` / `false` are migrated to `{ read: true, write: true, create: true }` (or all-false) on first load. Granular per-action permissions live behind the `advanced_permissions` feature (Business only); other plans get the read/write/create model with sensible defaults.
+The store handles the legacy boolean format too — older `page_access` values of `true` / `false` are migrated to `{ read: true, write: true, create: true }` (or all-false) on first load. Granular per-action permissions live behind the `advanced_permissions` feature (Pro only); other plans get the read/write/create model with sensible defaults.
 
 ## Sign-in security
 
@@ -106,12 +106,12 @@ Open the workspace switcher in the top bar to jump between workspaces or create 
 
 ## Plan gating quick reference
 
-| Capability | Free | Starter | Pro | Business |
-|---|---|---|---|---|
-| Workspace owner only | yes | yes | yes | yes |
-| Invite team members | no | no | yes (up to 5) | yes (unlimited) |
-| Granular per-action permissions | no | no | no | yes |
-| Accountant contacts | yes | yes | yes | yes |
+| Capability | Free | Starter | Pro |
+|---|---|---|---|
+| Workspace owner only | yes | yes | yes |
+| Invite team members | no | no | yes (with seat add-ons) |
+| Granular per-action permissions | no | no | yes |
+| Accountant contacts | yes | yes | yes |
 
 ## Related
 

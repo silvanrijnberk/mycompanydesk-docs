@@ -27,17 +27,24 @@ Rechnungen, Angebote und E-Mails konnen auf Niederlandisch, Englisch, Deutsch od
 
 ## Tarife
 
-| Funktion | Free | Pro | Business |
-|---|---|---|---|
-| Rechnungen & Angebote | Begrenzt | Unbegrenzt | Unbegrenzt |
-| Kunden | Begrenzt | Unbegrenzt | Unbegrenzt |
-| Ausgabenverfolgung | Basis | Vollständig | Vollständig |
-| Belegscanner | - | Ja | Ja |
-| KI-Vorschläge | - | Ja | Ja |
-| Individuelles Branding | - | Ja | Ja |
-| Teammitglieder | 1 | Bis zu 5 | Unbegrenzt |
-| Berichte & Export | Basis | Vollständig | Vollständig |
-| API-Zugang | - | - | Ja |
+MyCompanyDesk hat zwei kostenpflichtige Tarife: Starter und Pro. Neue Kunden erhalten eine 60-tagige Pro-Testphase.
+
+| Funktion | Starter | Pro |
+|---|---|---|
+| Rechnungen, Angebote, Kunden | Unbegrenzt | Unbegrenzt |
+| Ausgabenverfolgung | Vollständig | Vollständig |
+| Belegscanner | Ja | Ja |
+| KI-Vorschläge | Ja | Ja |
+| Individuelles Branding | Ja | Ja |
+| Zeiterfassung, Sprachwerkzeuge | Ja | Ja |
+| Offentliche Unternehmensseite | Ja | Ja |
+| Teammitglieder | 1 | 1 (erweiterbar mit Sitz-Add-ons) |
+| Berichte & Export | Vollständig | Vollständig |
+| Verträge, Immobilien, Projekte | - | Ja |
+| Geschaftliche Mailbox auf Ihrer Domain | - | Ja |
+| Multi-Domain, eigene Domain-Routing | - | Ja |
+| Erweiterte Berichte, Prioritäts-Support | - | Ja |
+| API-Zugang, Webhooks | - | Ja |
 
 ## Hilfe erhalten
 

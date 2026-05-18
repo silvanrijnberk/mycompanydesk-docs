@@ -107,7 +107,7 @@ Wichtige Spalten, die die App liest:
 
 ### Gehostete Website
 
-Der Website-Builder befindet sich unter **Unternehmen > Ihre Website** (`/website`). Es ist ein vollständiger Mehrseiten-Editor mit Abschnitten, Blöcken, Design-Tokens und Veröffentlichungs-Snapshots. Wenn Ihr Workspace mehrere aktive eigene Domains hat (Pro- oder Business-Tarif), können Sie über einen Domain-Wechsler in der oberen Leiste eine Domain-Variante der Website bearbeiten. Jede Domain erhält ihre eigenen Seiten, Navigation, Design-Tokens und Veröffentlichungs-Snapshots. Ein Domain-Wechsel setzt den aktiven Tab zurück. Die öffentliche Website wird auf Ihrer eigenen Domain (oder Workspace-Subdomain / Fallback-Portalroute) bereitgestellt, sobald sie veröffentlicht wurde.
+Der Website-Builder befindet sich unter **Unternehmen > Ihre Website** (`/website`). Es ist ein vollständiger Mehrseiten-Editor mit Abschnitten, Blöcken, Design-Tokens und Veröffentlichungs-Snapshots. Wenn Ihr Workspace mehrere aktive eigene Domains hat (Pro-Tarif), können Sie über einen Domain-Wechsler in der oberen Leiste eine Domain-Variante der Website bearbeiten. Jede Domain erhält ihre eigenen Seiten, Navigation, Design-Tokens und Veröffentlichungs-Snapshots. Ein Domain-Wechsel setzt den aktiven Tab zurück. Die öffentliche Website wird auf Ihrer eigenen Domain (oder Workspace-Subdomain / Fallback-Portalroute) bereitgestellt, sobald sie veröffentlicht wurde.
 
 Was der Editor anzeigt:
 

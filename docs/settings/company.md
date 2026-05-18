@@ -40,7 +40,7 @@ Branding for invoices, quotes, and outgoing email.
 
 - **Logo upload** — used on every PDF and email header
 - **Brand colour** — primary accent across documents and the public business page
-- **PDF style presets** — gated by the `style_presets` feature (Pro and Business)
+- **PDF style presets** — gated by the `style_presets` feature (Pro)
 - **Document styling** — header layout, footer content, accent placement
 
 The page is scaffolding around the existing `CompanyBranding` component (a full inner-form rebuild is on the roadmap; the chrome is already the redesigned tone).
@@ -51,7 +51,7 @@ Path: `/workspace/organization/company/website`
 
 A simple public business page customers can find online — contact info, what you do, and links to message you.
 
-- Gated by the `public_business_page` feature (Pro and Business)
+- Gated by the `public_business_page` feature (Pro)
 - Locked workspaces still see the tile but the leaf shows an upgrade prompt
 - Wraps the `CompanyServices` component
 
@@ -63,7 +63,7 @@ Path: `/workspace/organization/company/address`
 
 Hook up a domain you already own (or buy a new one) for your website and email.
 
-- Gated by the `custom_domains` feature (Pro and Business)
+- Gated by the `custom_domains` feature (Pro)
 - Replaces the default `acme.mycompanydesk.com` subdomain
 - DNS, SPF, and DKIM records are managed for you
 - The DNS record table sits behind an "Advanced" strip — most users never need to look at it
@@ -72,12 +72,12 @@ This page is the most technical surface in the Company tree; the intro deliberat
 
 ## Plan gating quick reference
 
-| Leaf | Free | Starter | Pro | Business |
-|---|---|---|---|---|
-| About your business | yes | yes | yes | yes |
-| Look & feel | yes | yes | yes | yes |
-| Your website | locked | locked | yes | yes |
-| Your own .com address | locked | locked | yes | yes |
+| Leaf | Free | Starter | Pro |
+|---|---|---|---|
+| About your business | yes | yes | yes |
+| Look & feel | yes | yes | yes |
+| Your website | locked | locked | yes |
+| Your own .com address | locked | locked | yes |
 
 Locked tiles stay visible so you know the feature exists; clicking one opens the upgrade prompt.
 

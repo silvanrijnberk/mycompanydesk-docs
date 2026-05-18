@@ -24,7 +24,7 @@ The umbrella page renders different content depending on where you are in setup.
 | `subdomain_reserved` | Free `acme.mycompanydesk.com` subdomain reserved, awaiting routing rollout |
 | `empty` | CTA to the `/setup` magical wizard |
 
-Email is gated by the `inbox` feature (Pro and Business). Free and Starter workspaces see the upgrade prompt instead.
+Email is gated by the `inbox` feature (Pro). Free and Starter workspaces see the upgrade prompt instead.
 
 ## What you can change
 
@@ -41,7 +41,7 @@ Your business email address, who else's mail lands here, and how long we keep it
 - **Apex catch-all** — every mailbox under your domain lands in the same inbox by default
 - **Retention controls** — how long messages stay in the archive
 
-The Pro plan includes one real mailbox plus unlimited send-as identities; Business unlocks multi-mailbox routing.
+The Pro plan includes one real mailbox plus unlimited send-as identities and multi-mailbox routing.
 
 Wraps the `SettingsInbox` component (mailbox CRUD plus alias editor). Inner UI is scheduled for a future redesign; today it is reachable end-to-end.
 

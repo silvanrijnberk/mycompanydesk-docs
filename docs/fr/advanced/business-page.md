@@ -11,7 +11,7 @@ Construisez votre site web professionnel avec un editeur par glisser-deposer. Cr
 Le constructeur de site remplace l'ancien profil d'entreprise a page unique. Vous obtenez un editeur de site complet avec :
 
 - **Pages multiples**: Creez autant de pages que necessaire, chacune avec son propre chemin et ses propres sections.
-- **Selecteur de domaine**: Lorsque votre espace de travail possede plusieurs domaines personnalises (abonnement Pro ou Business), un menu deroulant dans la barre superieure vous permet de basculer entre l'edition du site principal et une variante par domaine. Chaque domaine dispose de ses propres pages, navigation, tokens de design et snapshot de publication.
+- **Selecteur de domaine**: Lorsque votre espace de travail possede plusieurs domaines personnalises (abonnement Pro), un menu deroulant dans la barre superieure vous permet de basculer entre l'edition du site principal et une variante par domaine. Chaque domaine dispose de ses propres pages, navigation, tokens de design et snapshot de publication.
 - **Blocs de section**: Ajoutez des sections hero, texte, galerie, services, equipe, temoignages, formulaire de contact et HTML personnalise a chaque page.
 - **Tokens de design**: Definissez les couleurs de marque, les polices, les espacements, les coins arrondis, le style de mouvement, le CSS personnalise et un favicon de site. Les modifications s'appliquent a l'ensemble du site.
 - **Editeur de navigation**: Reorganisez les liens d'en-tete par glisser-deposer, avec des groupes deroulants et des liens externes.
