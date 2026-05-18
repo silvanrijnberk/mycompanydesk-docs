@@ -175,7 +175,7 @@ De checkout-succes- en checkout-geannuleerd-pagina's tonen de koper een branded 
 
 ## Mail verzenden vs mail ontvangen
 
-Deze bundel is de **ontvangstkant**. Uitgaande e-mail -- factuurverzending, herinneringen, offerteverzending -- wordt afgehandeld door de bredere e-mailpipeline beschreven in [E-mailintegratie](/nl/settings/email). Zodra een domein is geverifieerd en de inbox is ingeschakeld, wordt hetzelfde domein ook gebruikt als From-adres voor uitgaande mail, met DKIM-ondertekening op `mail.acme.nl`.
+Deze bundel is de **ontvangstkant**. Uitgaande e-mail -- factuurverzending, herinneringen, offerteverzending -- wordt afgehandeld door de bredere e-mailpipeline beschreven in [E-mailintegratie](/nl/settings/email). De inbox is voor het ontvangen van klantmail en het opstellen van antwoorden; hij routeert je geautomatiseerde factuurverzendingen niet. Factuurbezorging volgt altijd je gekozen verzendmethode onder [E-mailintegratie](/nl/settings/email) (Gmail, Outlook, aangepaste SMTP of de ingebouwde verzender). De DKIM van het inboxdomein wordt gebruikt voor uitgaande antwoorden die je in de inbox opstelt, niet voor geautomatiseerde transactionele mail.
 
 ## Limieten en aandachtspunten
 

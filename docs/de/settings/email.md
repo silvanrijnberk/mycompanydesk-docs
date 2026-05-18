@@ -8,7 +8,7 @@ Konfigurieren Sie, wie MyCompanyDesk E-Mails an Ihre Kunden sendet — von der R
 
 ## E-Mail-Versandmethoden
 
-MyCompanyDesk unterstützt drei Wege zum Versenden von E-Mails:
+MyCompanyDesk unterstützt vier Wege zum Versenden von E-Mails. Ihre gewählte Versandmethode wird bei automatisierten Rechnungen und Erinnerungen immer beachtet. Wenn Sie einen Posteingang auf Ihrer Domain einrichten, überschreibt dieser Ihre Wahl nicht -- der Posteingang dient dem Empfang und Beantworten, während Ihre gewählte Versandmethode die transaktionale ausgehende Post übernimmt.
 
 ### 1. Integrierter E-Mail-Versand (Standard)
 

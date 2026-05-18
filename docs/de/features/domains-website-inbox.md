@@ -175,7 +175,7 @@ Die Checkout-Erfolg- und Checkout-Abgebrochen-Seiten zeigen dem Käufer einen ge
 
 ## E-Mails senden vs. E-Mails empfangen
 
-Dieses Bundle ist die **Empfangsseite**. Ausgehende E-Mails -- Rechnungsversand, Erinnerungen, Angebotsversand -- werden von der breiteren E-Mail-Pipeline abgewickelt, die unter [E-Mail-Integration](/de/settings/email) beschrieben ist. Sobald eine Domain verifiziert und der Posteingang aktiviert ist, wird dieselbe Domain auch als From-Adresse für ausgehende E-Mails verwendet, mit DKIM-Signierung auf `mail.acme.de`.
+Dieses Bundle ist die **Empfangsseite**. Ausgehende E-Mails -- Rechnungsversand, Erinnerungen, Angebotsversand -- werden von der breiteren E-Mail-Pipeline abgewickelt, die unter [E-Mail-Integration](/de/settings/email) beschrieben ist. Der Posteingang dient dem Empfang von Kunden-E-Mails und dem Verfassen von Antworten; er routet Ihre automatisierten Rechnungssendungen nicht. Die Rechnungszustellung folgt immer Ihrer gewählten Versandmethode unter [E-Mail-Integration](/de/settings/email) (Gmail, Outlook, benutzerdefiniertes SMTP oder der integrierte Versender). Die DKIM-Signierung der Posteingangs-Domain wird für ausgehende Antworten verwendet, die Sie im Posteingang verfassen, nicht für automatisierte Transaktions-E-Mails.
 
 ## Grenzen und Fallstricke
 
