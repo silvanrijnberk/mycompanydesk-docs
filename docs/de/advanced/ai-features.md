@@ -27,6 +27,15 @@ Die Chat-Nutzung hängt von Ihrem Tarif ab:
 | Pro | Großzügiges Kontingent |
 | Business | Höchstes Kontingent |
 
+### EU-KI-Verordnung Offenlegung (Art. 50)
+
+Der kontextbezogene Leitfaden fällt unter die EU-KI-Verordnung (Verordnung 2024/1689) als KI-System mit begrenztem Risiko (Artikel 50). Das bedeutet, wir müssen transparent machen, dass Sie mit einer KI sprechen. Zwei Mechanismen sorgen dafür:
+
+- **KI-Badge.** Ein kleiner "KI"-Pill neben dem Assistentennamen. Immer sichtbar, solange der Leitfaden geöffnet ist. Ein Tooltip auf dem Badge nennt den zugrunde liegenden Anbieter (Google Gemini).
+- **Offenlegungstext.** Eine kurze Zeile unter der Begrüßungsfrage im leeren Chat: "Sie sprechen mit einem KI-Assistenten. Antworten können Fehler enthalten; überprüfen Sie finanzielle oder steuerliche Schlussfolgerungen stets selbst."
+
+Die Verpflichtung gilt ab August 2026; die Offenlegungen wurden vor der Frist eingebaut.
+
 ## KI-Vorschläge
 
 Intelligente Empfehlungen, die Ihnen helfen, Ihre Datensätze zu kategorisieren und zu beschreiben:

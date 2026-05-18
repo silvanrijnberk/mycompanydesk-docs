@@ -20,6 +20,15 @@ The help icon in the app shell opens a chat panel that knows which page you are 
 - **Conversation memory.** The last 6 turns are kept verbatim; older turns are summarised into a rolling memory.
 - **Pre-filter, no router.** A small deterministic filter catches forbidden topics, casual messages, and empty input before the model is called. Beyond that there is **no DATA/FAQ/GENERAL classifier in front of the agent** — the model sees the full tool catalog and picks tools itself, including a tool that searches the help knowledge base. One question can naturally use multiple tools (e.g. "how do I file my Q2 VAT and what's my saldo" calls `search_help` and `vat_aangifte_rubrieken` in the same loop).
 
+### EU AI Act disclosure (art. 50)
+
+The EU AI Act (Regulation 2024/1689) classifies the contextual guide as a limited-risk AI system under article 50. Limited-risk systems must transparently disclose to end users that they are interacting with AI. Two disclosure mechanisms ship in the guide:
+
+- **AI badge.** A small "AI" pill sits next to the assistant name in the header. It is always visible while the guide is open, satisfying the continuous-disclosure requirement. A tooltip on the badge names the underlying provider (Google Gemini).
+- **Intro disclosure text.** A short line appears under the welcome prompt in the empty chat state: "You are talking to an AI assistant. Answers may contain errors; always verify financial or tax conclusions yourself."
+
+These disclosures also appear in Dutch, German, and French in their respective locale builds. The obligation takes effect in August 2026; the disclosures shipped ahead of the deadline.
+
 ### Tool catalog
 
 When the question needs a number, page-help, or a VAT-specific aggregate, the model calls one of ~18 parameterised tools. Each handler is a hand-written, RLS-protected `SELECT` (or a wrapper around an existing aggregate service) — the model picks the tool name and arguments, it cannot author SQL. Read-only by design. The same catalog is exposed to Gemini (function declarations) and to Ollama Cloud (OpenAI-compatible `tools` array), so a fallback between providers keeps capabilities identical.

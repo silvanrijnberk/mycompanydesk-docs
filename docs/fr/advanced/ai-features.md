@@ -27,6 +27,15 @@ L'utilisation du chat depend de votre plan :
 | Pro | Allocation genereuse |
 | Business | Allocation maximale |
 
+### Reglement europeen sur l'IA -- transparence (art. 50)
+
+Le guide contextuel releve du reglement europeen sur l'IA (Reglement 2024/1689) en tant que systeme d'IA a risque limite (article 50). Cela signifie que nous devons indiquer clairement que vous parlez a une IA. Deux mecanismes sont en place :
+
+- **Badge IA.** Un petit pill "IA" a cote du nom de l'assistant. Toujours visible tant que le guide est ouvert. Une info-bulle sur le badge indique le fournisseur sous-jacent (Google Gemini).
+- **Texte de transparence.** Une courte ligne sous la question d'accueil dans un chat vide : "Vous parlez avec un assistant IA. Les reponses peuvent contenir des erreurs ; verifiez toujours vous-meme les conclusions financieres ou fiscales."
+
+L'obligation prend effet en aout 2026 ; les mesures de transparence ont ete integrees avant l'echeance.
+
 ## Suggestions IA
 
 Des recommandations intelligentes qui vous aident a categoriser et decrire vos enregistrements :
