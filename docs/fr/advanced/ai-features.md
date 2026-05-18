@@ -38,6 +38,16 @@ Le guide contextuel est classe comme un systeme d'IA a risque limite en vertu de
 
 L'obligation entre en vigueur en aout 2026 ; les divulgations ont ete mises en place avant la date limite.
 
+### Apparence visuelle Pro
+
+Les espaces de travail Pro beneficient d'une apparence d'assistant premium qui remplace le style generique par l'accent violet Pro. Lorsque le plan de facturation est Pro, le panneau de l'assistant change visuellement :
+
+- La pastille "IA" devient une pastille violette "Pro", signalant que l'assistant utilise le modele le plus performant avec le contexte complet de l'application.
+- La bordure du panneau, l'anneau de l'avatar, le point en ligne et le bouton d'envoi passent au violet (`#a855f7`), en accord avec le ruban Pro dans la navigation de l'application.
+- La ligne de statut affiche "Votre assistant Pro est pret" au lieu du generique "Pret a aider."
+
+L'apparence Pro est purement cosmetique — le selecteur de modele sous-jacent, le catalogue d'outils et les divulgations de la loi europeenne sur l'IA restent identiques pour tous les plans. `TIER_CHAT_CONFIG` donne deja a Pro un modele plus puissant et un contexte d'application illimite.
+
 ## Suggestions IA
 
 Des recommandations intelligentes qui vous aident a categoriser et decrire vos enregistrements :

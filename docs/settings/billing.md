@@ -121,7 +121,7 @@ Cancellation takes effect at the end of the current paid period; access remains 
 3. Stripe redirects back with `?checkout=success` or `?checkout=canceled`
 4. The page shows a success or cancel banner; the entitlement cache invalidates and gated UI unlocks immediately
 
-When upgrading to Pro, the success banner uses the Pro violet accent and a crown icon ("Welcome to Pro") instead of the standard green confirmation. The same Pro styling appears throughout the app: a violet ring around the user avatar, a crown icon in the plan badge ribbon, and "Pro feature" pills on gated settings pages like API Keys and Inbox.
+When upgrading to Pro, the success banner uses the Pro violet accent and a crown icon ("Welcome to Pro") instead of the standard green confirmation. The same Pro styling appears throughout the app: a violet ring around the user avatar, a crown icon in the plan badge ribbon, and "Pro feature" pills on gated settings pages like API Keys and Inbox. Additionally, the contextual guide assistant gets a premium violet skin: the "AI" pill becomes a "Pro" pill, the panel border and send button adopt the Pro accent, and the status line changes to "Your Pro assistant is ready."
 
 ## Contextual upgrade banner
 

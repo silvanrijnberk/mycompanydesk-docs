@@ -114,7 +114,7 @@ Die Kundigung wird am Ende des aktuellen Zahlungszeitraums wirksam; der Zugriff 
 3. Stripe leitet mit `?checkout=success` oder `?checkout=canceled` zuruck
 4. Die Seite zeigt ein Erfolgs- oder Abbruch-Banner; der Berechtigungscache wird entwertet und gesperrte UI wird sofort entsperrt
 
-Bei einem Upgrade auf Pro erhalt das Erfolgsbanner den violetten Pro-Akzent und ein Kronen-Symbol ("Willkommen bei Pro") anstelle der standardmassig grunen Bestatigung. Die gleiche Pro-Gestaltung finden Sie an weiteren Stellen in der App: ein violetter Ring um Ihren Avatar, ein Kronen-Symbol im Plan-Badge und "Pro-Feature"-Pills auf Pro-geschutzten Einstellungsseiten wie API-Schlussel und Inbox.
+Bei einem Upgrade auf Pro erhalt das Erfolgsbanner den violetten Pro-Akzent und ein Kronen-Symbol ("Willkommen bei Pro") anstelle der standardmassig grunen Bestatigung. Die gleiche Pro-Gestaltung finden Sie an weiteren Stellen in der App: ein violetter Ring um Ihren Avatar, ein Kronen-Symbol im Plan-Badge und "Pro-Feature"-Pills auf Pro-geschutzten Einstellungsseiten wie API-Schlussel und Inbox. Zusatzlich erhalt der Kontextassistent ein Premium-Violett-Design: Die "KI"-Pille wird zur "Pro"-Pille, Panel-Rand und Sende-Button erhalten den Pro-Akzent und die Statuszeile andert sich zu "Ihr Pro-Assistent steht bereit."
 
 ## Kontextbezogener Upgrade-Banner
 

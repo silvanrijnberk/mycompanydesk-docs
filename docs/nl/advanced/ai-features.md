@@ -38,6 +38,16 @@ De contextuele gids valt onder de EU AI Act (Verordening 2024/1689) als een AI-s
 
 De verplichting geldt vanaf augustus 2026; de openbaarmakingen zijn voor de deadline ingebouwd.
 
+### Pro-uiterlijk
+
+Pro-werkruimtes krijgen een premium assistent-uiterlijk dat de generieke styling vervangt door het Pro-violet. Wanneer het facturatieplan Pro is, verandert het assistentpaneel visueel:
+
+- De "AI"-pill wordt een violette "Pro"-pill, wat aangeeft dat de assistent op het hoogste model draait met volledige app-context.
+- De paneelrand, avatarring, online-dot en verzendknop veranderen naar violet (`#a855f7`), passend bij de Pro-lint in de app-navigatie.
+- De statusregel toont "Jouw Pro-assistent staat klaar" in plaats van het generieke "Klaar om te helpen."
+
+Het Pro-uiterlijk is puur cosmetisch — de onderliggende modelselector, toolcatalogus en EU AI Act-openbaarmakingen blijven identiek voor alle abonnementen. Achter de schermen geeft `TIER_CHAT_CONFIG` Pro al een zwaarder model en onbeperkte app-context.
+
 ## AI-suggesties
 
 Slimme aanbevelingen die je helpen bij het categoriseren en beschrijven van je records:
