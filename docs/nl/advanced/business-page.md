@@ -70,6 +70,39 @@ Een losstaande eenmalige koopkaart, voor als een volledige tarieventabel meer is
 
 Zie [Verkopen](/nl/features/domains-website-inbox#verkopen) voor het bijhouden van betalingen en bestellingen.
 
+## Sectie-animaties
+
+Elk sectieblok heeft een **Animatie**-paneel in de inspector. Hiermee voeg je beweging toe die afspeelt wanneer de sectie in beeld komt, bij het laden van de pagina, of bij hover.
+
+### Animatetypes
+
+| Type | Effect |
+|---|---|
+| **Fade up** | Sectie verschijnt terwijl deze 1rem omhoog schuift. |
+| **Fade in** | Sectie verschijnt vanuit transparant. |
+| **Slide right** | Sectie verschijnt terwijl deze 2rem naar rechts beweegt. |
+| **Reveal** | Sectie onthult van rechts naar links via een clipmasker. |
+| **Stagger** | Onderliggende elementen verschijnen na elkaar in stappen van 80ms, in plaats van dat de sectie zelf beweegt. |
+
+### Triggers
+
+Hoe de animatie start:
+
+- **In-view** (standaard): De animatie wordt afgespeeld wanneer de sectie in de viewport verschijnt. Maakt gebruik van de IntersectionObserver van de browser. Eenmaal geanimeerd blijft de sectie zichtbaar.
+- **Load**: De animatie start direct zodra de pagina is geladen.
+- **Hover**: De animatie start bij mouseenter en keert terug bij mouseleave.
+
+### Instellingen
+
+- **Duration**: Hoe lang de animatie duurt, in milliseconden. Standaard 700ms.
+- **Delay**: Wachttijd voordat de animatie start, in milliseconden. Standaard 0ms.
+- **Easing**: De versnellingscurve. Keuze uit **ease-out** (standaard), **linear** en **spring**.
+- **Stagger children**: Wanneer ingeschakeld blijft de sectie zelf in rust en bewegen de directe onderliggende elementen na elkaar. Deze optie werkt bovenop elk animatietype (fade-up + stagger children, fade-in + stagger children, etc.). De animatie van de sectie zelf wordt onderdrukt zodat alleen de kinderen bewegen.
+
+### Bewegingsreductie
+
+Bezoekers die `prefers-reduced-motion: reduce` op OS-niveau hebben ingeschakeld, zien elke sectie direct in de eindpositie. Er worden geen animaties afgespeeld. Op werkruimteniveau kunnen motion-tokens beweging ook per site uitschakelen. Wanneer bewegingsreductie actief is, krijgt de sectie nooit de verborgen startklasse, zodat de server-gerenderde HTML ook toegankelijk is voordat JavaScript wordt uitgevoerd.
+
 ## Je site vormgeven
 
 In de **Stijl**-tab bepaal je de look-and-feel van je hele site:

@@ -70,6 +70,39 @@ Une fiche d'achat autonome pour un seul article, quand un tableau tarifaire comp
 
 Consultez [Ventes](/fr/features/domains-website-inbox#ventes) pour le suivi des paiements et des commandes.
 
+## Animations de section
+
+Chaque bloc de section dispose d'un panneau **Animation** dans l'inspecteur. Il vous permet d'ajouter du mouvement qui se declenche lorsque la section entre dans le viewport, au chargement de la page ou au survol.
+
+### Types d'animation
+
+| Type | Effet |
+|---|---|
+| **Fade up** | La section apparait en glissant de 1rem vers le haut. |
+| **Fade in** | La section apparait depuis la transparence. |
+| **Slide right** | La section apparait en glissant de 2rem vers la droite. |
+| **Reveal** | La section se devoile de droite a gauche via un masque de decoupage. |
+| **Stagger** | Les elements enfants apparaissent les uns apres les autres par pas de 80ms, au lieu que la section elle-meme bouge. |
+
+### Declencheurs
+
+Comment l'animation demarre :
+
+- **In-view** (par defaut) : L'animation se declenche lorsque la section entre dans le viewport. Utilise l'IntersectionObserver du navigateur. Une fois animee, la section reste visible.
+- **Load** : L'animation se declenche immediatement au chargement de la page.
+- **Hover** : L'animation se declenche au survol (mouseenter) et revient a la sortie (mouseleave).
+
+### Controles
+
+- **Duration** : Duree de l'animation en millisecondes, par defaut 700ms.
+- **Delay** : Delai avant le demarrage de l'animation en millisecondes, par defaut 0ms.
+- **Easing** : La courbe d'acceleration. Choix entre **ease-out** (par defaut), **linear** et **spring**.
+- **Stagger children** : Lorsque active, la section elle-meme reste immobile et ses elements enfants directs s'animent en sequence. Cette option fonctionne en complement de tout type d'animation (fade-up + stagger children, fade-in + stagger children, etc.). L'animation de la section est supprimee pour que seuls les enfants portent le mouvement.
+
+### Reduction de mouvement
+
+Les visiteurs ayant `prefers-reduced-motion: reduce` active au niveau du systeme d'exploitation voient chaque section directement dans sa position finale. Aucune animation n'est jouee. Au niveau de l'espace de travail, les tokens de mouvement peuvent egalement desactiver les animations par site. Lorsque la reduction de mouvement est active, la section ne recoit jamais la classe de depart masquee, de sorte que le HTML rendu cote serveur soit accessible avant meme l'execution de JavaScript.
+
 ## Personnaliser le style de votre site
 
 Dans l'onglet **Style**, vous controlez l'apparence de l'ensemble de votre site :
