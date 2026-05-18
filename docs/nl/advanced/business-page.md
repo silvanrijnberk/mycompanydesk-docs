@@ -119,6 +119,7 @@ In de **Stijl**-tab bepaal je de look-and-feel van je hele site:
 
 - **Presets**: Klik-en-klaar-startpunten die kleuren, lettertypes en witruimte in een keer instellen. De Editorial-preset geeft je een navy-met-goud-palet met serif-koppen en mono-eyebrows, de MyCompanyDesk-huisstijl. Een preset toepassen voegt de tokens samen met je werkruimte, waarbij je logo, custom CSS en head-snippets behouden blijven.
 - **Kleuren**: Kies merk-, accent-, papier-, inkt-, oppervlakte- en gedempte kleuren. Het palet wordt toegepast via CSS custom properties.
+- **Donkere modus**: Bepaal hoe je site omgaat met donkere weergave. Drie opties: **Uit** (geen donkere modus, de site blijft in het lichte palet), **Knop** (bezoekers zien een zon/maan-knop in de navigatiebalk en kunnen wisselen, hun keuze wordt lokaal opgeslagen), of **Volg systeem** (de site volgt automatisch de OS-voorkeur van de bezoeker via een live media-query). Wanneer donkere modus aan staat, verschijnt er een donker palet waarin je per kleur een nachtversie kunt instellen. Laat je het donkere palet leeg, dan past de site een automatische inversie toe waarbij je merk- en accentkleuren behouden blijven.
 - **Typografie**: Kies kop-, body- en mono-lettertypes uit de ingebouwde lettertypebibliotheek (Geist, Inter, DM Sans, DM Serif Display, Fraunces, Instrument Serif, Geist Mono).
 - **Schaal**: Stel hoekradius, dichtheid (compact, ruim, royaal), maximale inhoudsbreedte en verticale sectie-afstand in.
 - **Beweging**: Schakel verminderde beweging in of kies een bewegingsstijl (geen, subtiel, speels).
