@@ -7,7 +7,7 @@ title: Integration API
 Accedez a vos donnees MyCompanyDesk de maniere programmatique via l'API REST.
 
 ::: info
-L'acces API necessite le plan **Business**.
+L'acces API necessite le plan **Pro**.
 :::
 
 ## Vue d'ensemble

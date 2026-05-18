@@ -106,5 +106,5 @@ Oder erstellen Sie einen **neuen Arbeitsbereich** über dasselbe Menü.
 - Überprüfen Sie den Teamzugang regelmäßig, besonders wenn Teammitglieder ihre Rollen wechseln
 
 ::: info
-Teamverwaltung über 1 Mitglied hinaus erfordert den **Pro**-Tarif. Unbegrenzte Mitglieder sind im **Business**-Tarif verfügbar.
+Teamverwaltung über 1 Mitglied hinaus erfordert den **Pro**-Tarif. Zusätzliche Mitglieder sind separat über Sitz-Add-ons buchbar.
 :::

@@ -129,4 +129,4 @@ When a user lands on the billing page from a gated feature (the feature-flag mid
 
 - [Company Settings](/settings/company) -- `public_business_page` and `custom_domains` are gated here
 - [Email](/settings/email) -- `inbox` requires Pro
-- [Team](/settings/team) -- `team_members` requires Pro or higher
+- [Team](/settings/team) -- `team_members` requires Pro

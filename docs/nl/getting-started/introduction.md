@@ -27,17 +27,24 @@ Facturen, offertes en e-mails kunnen in het Nederlands, Engels, Duits of Frans w
 
 ## Abonnementen
 
-| Functie | Gratis | Pro | Business |
-|---|---|---|---|
-| Facturen & offertes | Beperkt | Onbeperkt | Onbeperkt |
-| Klanten | Beperkt | Onbeperkt | Onbeperkt |
-| Uitgaven bijhouden | Basis | Volledig | Volledig |
-| Bonnen scannen | - | Ja | Ja |
-| AI-suggesties | - | Ja | Ja |
-| Eigen huisstijl | - | Ja | Ja |
-| Teamleden | 1 | Tot 5 | Onbeperkt |
-| Rapportages & export | Basis | Volledig | Volledig |
-| API-toegang | - | - | Ja |
+MyCompanyDesk heeft twee betaalde abonnementen: Starter en Pro. Nieuwe klanten krijgen een Pro-proefperiode van 60 dagen.
+
+| Functie | Starter | Pro |
+|---|---|---|
+| Facturen, offertes, klanten | Onbeperkt | Onbeperkt |
+| Uitgaven bijhouden | Volledig | Volledig |
+| Bonnen scannen | Ja | Ja |
+| AI-suggesties | Ja | Ja |
+| Eigen huisstijl | Ja | Ja |
+| Urenregistratie, taalopties | Ja | Ja |
+| Openbare bedrijfspagina | Ja | Ja |
+| Teamleden | 1 | 1 (uitbreidbaar met stoel-add-ons) |
+| Rapportages & export | Volledig | Volledig |
+| Contracten, panden, projecten | - | Ja |
+| Zakelijke mailbox op je domein | - | Ja |
+| Multi-domein, eigen domein routering | - | Ja |
+| Geavanceerde rapporten, prioriteitsondersteuning | - | Ja |
+| API-toegang, webhooks | - | Ja |
 
 ## Hulp krijgen
 

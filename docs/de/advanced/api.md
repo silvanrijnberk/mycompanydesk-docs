@@ -7,7 +7,7 @@ title: API-Integration
 Greifen Sie programmatisch auf Ihre MyCompanyDesk-Daten über die REST API zu.
 
 ::: info
-API-Zugang erfordert den **Business**-Tarif.
+API-Zugang erfordert den **Pro**-Tarif.
 :::
 
 ## Übersicht

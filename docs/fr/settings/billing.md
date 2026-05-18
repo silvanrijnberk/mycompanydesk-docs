@@ -122,4 +122,4 @@ Lorsqu'un utilisateur arrive sur la page de facturation depuis une fonctionnalit
 
 - [Parametres de l'entreprise](/fr/settings/company) -- `public_business_page` et `custom_domains` sont geres ici
 - [E-mail](/fr/settings/email) -- `inbox` necessite Pro
-- [Equipe](/fr/settings/team) -- `team_members` necessite Pro ou superieur
+- [Equipe](/fr/settings/team) -- `team_members` necessite Pro

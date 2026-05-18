@@ -27,17 +27,24 @@ Invoices, quotes, and emails can be sent in Dutch, English, German, or French. T
 
 ## Plans
 
-| Feature | Free | Pro | Business |
-|---|---|---|---|
-| Invoices & quotes | Limited | Unlimited | Unlimited |
-| Customers | Limited | Unlimited | Unlimited |
-| Expense tracking | Basic | Full | Full |
-| Receipt scanning | - | Yes | Yes |
-| AI suggestions | - | Yes | Yes |
-| Custom branding | - | Yes | Yes |
-| Team members | 1 | Up to 5 | Unlimited |
-| Reports & export | Basic | Full | Full |
-| API access | - | - | Yes |
+MyCompanyDesk has two paid plans: Starter and Pro. New customers get a 60-day Pro trial.
+
+| Feature | Starter | Pro |
+|---|---|---|
+| Invoices, quotes, customers | Unlimited | Unlimited |
+| Expense tracking | Full | Full |
+| Receipt scanning | Yes | Yes |
+| AI suggestions | Yes | Yes |
+| Custom branding | Yes | Yes |
+| Time registration, language tools | Yes | Yes |
+| Public business page | Yes | Yes |
+| Team members | 1 | 1 (expandable with seat add-ons) |
+| Reports & export | Full | Full |
+| Contracts, properties, projects | - | Yes |
+| Business mailbox on your domain | - | Yes |
+| Multi-domain, custom domain routing | - | Yes |
+| Advanced reports, priority support | - | Yes |
+| API access, webhooks | - | Yes |
 
 ## Getting help
 

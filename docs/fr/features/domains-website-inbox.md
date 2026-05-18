@@ -107,7 +107,7 @@ Colonnes notables que l'application lit :
 
 ### Site web heberge
 
-Le constructeur de site se trouve sous **Entreprise > Votre site web** (`/website`). C'est un editeur multipage complet avec des sections, des blocs, des tokens de design et des snapshots de publication. Lorsque votre espace de travail possede plusieurs domaines personnalises actifs (abonnement Pro ou Business), un selecteur de domaine dans la barre superieure vous permet d'editer une variante du site par domaine. Chaque domaine dispose de ses propres pages, navigation, tokens de design et snapshot de publication. Changer de domaine reinitialise l'onglet actif. Le site public est diffuse depuis votre domaine personnalise (ou le sous-domaine de l'espace de travail / la route portail de secours) une fois publie.
+Le constructeur de site se trouve sous **Entreprise > Votre site web** (`/website`). C'est un editeur multipage complet avec des sections, des blocs, des tokens de design et des snapshots de publication. Lorsque votre espace de travail possede plusieurs domaines personnalises actifs (abonnement Pro), un selecteur de domaine dans la barre superieure vous permet d'editer une variante du site par domaine. Chaque domaine dispose de ses propres pages, navigation, tokens de design et snapshot de publication. Changer de domaine reinitialise l'onglet actif. Le site public est diffuse depuis votre domaine personnalise (ou le sous-domaine de l'espace de travail / la route portail de secours) une fois publie.
 
 Ce que l'editeur affiche :
 

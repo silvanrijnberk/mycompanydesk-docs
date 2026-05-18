@@ -107,7 +107,7 @@ Notable columns the app reads from:
 
 ### Hosted website
 
-The site builder lives at `Company › Your website` (`/website`). It is a full multi-page editor with sections, blocks, design tokens, and publish snapshots. When your workspace has multiple active custom domains (Pro or Business plan), a domain switcher in the top bar lets you edit a per-domain variant of the site. Each domain gets its own pages, navigation, design tokens, and publish snapshot. Switching domains resets the active tab. The public face is served from your custom domain (or workspace subdomain / fallback portal route) once published.
+The site builder lives at `Company › Your website` (`/website`). It is a full multi-page editor with sections, blocks, design tokens, and publish snapshots. When your workspace has multiple active custom domains (Pro plan), a domain switcher in the top bar lets you edit a per-domain variant of the site. Each domain gets its own pages, navigation, design tokens, and publish snapshot. Switching domains resets the active tab. The public face is served from your custom domain (or workspace subdomain / fallback portal route) once published.
 
 What the editor surfaces:
 
