@@ -21,11 +21,11 @@ The site builder lives at **Company > Your website** (`/website`).
 
 ## Tabs
 
-The site builder has five tabs:
+The site builder has five tabs (six when Style is expanded):
 
 - **Editor**: Compose pages by adding and arranging sections. Click any section to inspect its content, layout, style, or animation settings. Drag sections to reorder, duplicate, or delete them.
 - **Pages**: Manage your pages: create new ones from templates, set paths and visibility, and see which pages are live, draft, or scheduled. Click a page to open it in the editor. The locked home page cannot be deleted.
-- **Style**: Customize your site-wide design tokens: colors (brand, accent, paper, ink), fonts (heading, body, mono from the font library), scale (radius, density, max width, section spacing), motion preferences, button styles, and custom CSS. You can also add head snippets for analytics (Plausible, Umami, Matomo) or font preconnects.
+- **Style**: Customize your site-wide design tokens: colors (brand, accent, paper, ink), fonts (heading, body, mono from the font library), navbar (layout, background, CTA style), scale (radius, density, max width, section spacing), motion preferences, button styles, and custom CSS. You can also add head snippets for analytics (Plausible, Umami, Matomo) or font preconnects. Click the Style header to open or close the tab strip.
 - **Domain & SEO**: Configure your custom domain and SEO settings. See [Domains, Website and Inbox](/features/domains-website-inbox) for the full domain management workflow.
 - **Integrations**: Connect third-party services to your website.
 
@@ -78,6 +78,7 @@ In the **Style** tab, you control the look and feel of your entire site:
 - **Scale**: Set border radius, content density (compact, airy, generous), maximum content width, and vertical section spacing.
 - **Motion**: Enable reduced motion or choose a motion style (none, subtle, playful).
 - **Buttons**: Customize button border radius, padding, and hover effects.
+- **Navbar**: Set the layout (standard, centered, split), background style (solid, translucent blur, transparent), and CTA button appearance (filled, outline, text-only). The navbar settings apply to every page.
 - **Custom CSS**: Write your own CSS that gets injected into the site. Useful for fine-tuning or overriding defaults.
 - **Favicon**: Upload a favicon for your site. It is shown in browser tabs and bookmarks. If not set, the site falls back to your light logo, then your business profile picture.
 - **Head snippets**: Add analytics scripts (Plausible, Umami, Matomo) or font preconnects via the snippet picker.

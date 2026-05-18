@@ -21,11 +21,11 @@ De sitebouwer vind je onder **Bedrijf > Je website** (`/website`).
 
 ## Tabs
 
-De sitebouwer heeft vijf tabs:
+De sitebouwer heeft vijf tabs (zes als Stijl is uitgeklapt):
 
 - **Editor**: Stel pagina's samen door secties toe te voegen en te rangschikken. Klik op een sectie om de inhoud, layout, stijl of animatie te bewerken. Sleep secties om ze te verplaatsen, dupliceren of verwijderen.
 - **Pagina's**: Beheer je pagina's: maak nieuwe aan vanuit sjablonen, stel paden en zichtbaarheid in, en bekijk welke pagina's live, concept of ingepland zijn. Klik op een pagina om deze in de editor te openen. De vergrendelde homepage kan niet worden verwijderd.
-- **Stijl**: Pas je sitebrede ontwerptokens aan: kleuren (merk, accent, papier, inkt), lettertypes (kop, body, mono uit de lettertypebibliotheek), schaal (radius, dichtheid, maximale breedte, sectie-afstand), beweging, knopstijlen en aangepaste CSS. Je kunt ook head-snippets toevoegen voor analytics (Plausible, Umami, Matomo) of lettertype-preconnects.
+- **Stijl**: Pas je sitebrede ontwerptokens aan: kleuren (merk, accent, papier, inkt), lettertypes (kop, body, mono uit de lettertypebibliotheek), navbar (layout, achtergrond, knopstijl), schaal (radius, dichtheid, maximale breedte, sectie-afstand), beweging, knopstijlen en aangepaste CSS. Je kunt ook head-snippets toevoegen voor analytics (Plausible, Umami, Matomo) of lettertype-preconnects. Klik op de Stijl-header om de tab uit of in te klappen.
 - **Domein & SEO**: Configureer je eigen domein en SEO-instellingen. Zie [Domeinen, website en inbox](/nl/features/domains-website-inbox) voor het volledige domeinbeheer.
 - **Koppelingen**: Verbind diensten van derden met je website.
 
@@ -78,6 +78,7 @@ In de **Stijl**-tab bepaal je de look-and-feel van je hele site:
 - **Schaal**: Stel hoekradius, dichtheid (compact, ruim, royaal), maximale inhoudsbreedte en verticale sectie-afstand in.
 - **Beweging**: Schakel verminderde beweging in of kies een bewegingsstijl (geen, subtiel, speels).
 - **Knoppen**: Pas knopradius, padding en hover-effecten aan.
+- **Navbar**: Stel de layout in (standaard, gecentreerd, split), de achtergrondstijl (vast, transparant met blur, volledig transparant) en hoe de CTA-knop eruitziet (vol, lijn, alleen tekst). De navbar-instellingen gelden voor elke pagina.
 - **Aangepaste CSS**: Schrijf je eigen CSS die in de site wordt geïnjecteerd. Handig voor fijnafstemming of het overschrijven van standaardwaarden.
 - **Favicon**: Upload een favicon voor je site. Deze verschijnt in browsertabs en bladwijzers. Als je geen favicon instelt, gebruikt de site je lichte logo, en daarna je bedrijfsprofielfoto.
 - **Head-snippets**: Voeg analytics-scripts toe (Plausible, Umami, Matomo) of lettertype-preconnects via de snippetkiezer.

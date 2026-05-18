@@ -21,11 +21,11 @@ Den Website-Builder finden Sie unter **Unternehmen > Ihre Website** (`/website`)
 
 ## Tabs
 
-Der Website-Builder hat fünf Tabs:
+Der Website-Builder hat fünf Tabs (sechs, wenn Stil ausgeklappt ist):
 
 - **Editor**: Erstellen Sie Seiten durch Hinzufügen und Anordnen von Abschnitten. Klicken Sie auf einen Abschnitt, um Inhalt, Layout, Stil oder Animation zu bearbeiten. Ziehen Sie Abschnitte zum Verschieben, Duplizieren oder Löschen.
 - **Seiten**: Verwalten Sie Ihre Seiten: Erstellen Sie neue aus Vorlagen, legen Sie Pfade und Sichtbarkeit fest und sehen Sie, welche Seiten live, Entwurf oder geplant sind. Klicken Sie auf eine Seite, um sie im Editor zu öffnen. Die gesperrte Startseite kann nicht gelöscht werden.
-- **Stil**: Passen Sie Ihre site-weiten Design-Tokens an: Farben (Marke, Akzent, Papier, Tinte), Schriften (Überschrift, Text, Mono aus der Schriftbibliothek), Skalierung (Radius, Dichte, maximale Breite, Abschnittsabstand), Bewegung, Schaltflächenstile und benutzerdefiniertes CSS. Sie können auch Head-Snippets für Analytics (Plausible, Umami, Matomo) oder Schrift-Preconnects hinzufügen.
+- **Stil**: Passen Sie Ihre site-weiten Design-Tokens an: Farben (Marke, Akzent, Papier, Tinte), Schriften (Überschrift, Text, Mono aus der Schriftbibliothek), Navigationsleiste (Layout, Hintergrund, CTA-Stil), Skalierung (Radius, Dichte, maximale Breite, Abschnittsabstand), Bewegung, Schaltflächenstile und benutzerdefiniertes CSS. Sie können auch Head-Snippets für Analytics (Plausible, Umami, Matomo) oder Schrift-Preconnects hinzufügen. Klicken Sie auf die Stil-Überschrift, um die Registerkarte ein- oder auszuklappen.
 - **Domain & SEO**: Konfigurieren Sie Ihre eigene Domain und SEO-Einstellungen. Siehe [Domains, Website und Posteingang](/de/features/domains-website-inbox) für die vollständige Domain-Verwaltung.
 - **Integrationen**: Binden Sie Drittanbieterdienste in Ihre Website ein.
 
@@ -78,6 +78,7 @@ Im **Stil**-Tab steuern Sie das Erscheinungsbild Ihrer gesamten Site:
 - **Skalierung**: Legen Sie Eckenradius, Dichte (kompakt, luftig, großzügig), maximale Inhaltsbreite und vertikalen Abschnittsabstand fest.
 - **Bewegung**: Aktivieren Sie reduzierte Bewegung oder wählen Sie einen Bewegungsstil (keine, dezent, verspielt).
 - **Schaltflächen**: Passen Sie Schaltflächenradius, Innenabstand und Hover-Effekte an.
+- **Navigationsleiste**: Legen Sie das Layout (Standard, zentriert, geteilt), den Hintergrundstil (durchgehend, transparent mit Blur, vollständig transparent) und das Aussehen der CTA-Schaltfläche (ausgefüllt, Umrandung, nur Text) fest. Die Navigationsleisteneinstellungen gelten für jede Seite.
 - **Benutzerdefiniertes CSS**: Schreiben Sie Ihr eigenes CSS, das in die Site eingebunden wird. Nützlich für Feinanpassungen oder zum Überschreiben von Standardwerten.
 - **Favicon**: Laden Sie ein Favicon für Ihre Site hoch. Es erscheint in Browser-Tabs und Lesezeichen. Wenn Sie kein Favicon festlegen, verwendet die Site Ihr helles Logo, dann Ihr Geschäftsprofilbild.
 - **Head-Snippets**: Fügen Sie Analytics-Skripte (Plausible, Umami, Matomo) oder Schrift-Preconnects über die Snippet-Auswahl hinzu.
