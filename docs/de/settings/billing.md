@@ -57,6 +57,7 @@ Für wachsende Unternehmen:
 - Individuelles PDF-Branding
 - CSV-Export
 - Bis zu 5 Teammitglieder
+- Newsletter mit Versand-Tracking
 - E-Mail-Support
 
 ### Business
@@ -135,6 +136,7 @@ Einige Funktionen sind an den Tarif gebunden:
 | Belegscanner | - | Ja | Ja |
 | KI-Vorschläge | - | Ja | Ja |
 | Textprüfung | - | Ja | Ja |
+| Newsletter | - | Ja | Ja |
 | API-Zugang | - | - | Ja |
 
 Der Versuch, eine tarifgebundene Funktion in einem niedrigeren Tarif zu nutzen, zeigt eine Upgrade-Aufforderung.

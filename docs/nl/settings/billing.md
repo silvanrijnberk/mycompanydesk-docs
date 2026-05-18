@@ -57,6 +57,7 @@ Voor groeiende bedrijven:
 - Aangepaste PDF-huisstijl
 - CSV-export
 - Tot 5 teamleden
+- Nieuwsbrieven met verzendtracking
 - E-mailondersteuning
 
 ### Business
@@ -135,6 +136,7 @@ Sommige functies zijn beperkt per abonnement:
 | Bonnen scannen | - | Ja | Ja |
 | AI-suggesties | - | Ja | Ja |
 | Tekstcontrole | - | Ja | Ja |
+| Nieuwsbrieven | - | Ja | Ja |
 | API-toegang | - | - | Ja |
 
 Bij het proberen te gebruiken van een functie op een lager abonnement wordt een upgrademelding getoond.

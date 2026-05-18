@@ -57,6 +57,7 @@ Pour les entreprises en croissance :
 - Image de marque PDF personnalisee
 - Export CSV
 - Jusqu'a 5 membres d'equipe
+- Newsletters avec suivi de livraison
 - Support par e-mail
 
 ### Business
@@ -135,6 +136,7 @@ Certaines fonctionnalites sont reservees a certains plans :
 | Numerisation de recus | - | Oui | Oui |
 | Suggestions IA | - | Oui | Oui |
 | Verification de texte | - | Oui | Oui |
+| Newsletters | - | Oui | Oui |
 | Acces API | - | - | Oui |
 
 Tenter d'utiliser une fonctionnalite reservee sur un plan inferieur affiche une invitation a mettre a niveau.

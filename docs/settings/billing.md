@@ -85,7 +85,7 @@ Boolean features unlocked per plan:
 | `team_members`, `advanced_reports` | no | no | yes | yes |
 | `public_business_page` | no | no | yes | yes |
 | `custom_domains`, `custom_domain_routing` | no | no | yes | yes |
-| `inbox`, `style_presets`, `privacy_mode`, `company_subdomain` | no | no | yes | yes |
+| `inbox`, `style_presets`, `privacy_mode`, `company_subdomain`, `newsletter` | no | no | yes | yes |
 | `api_access`, `webhooks`, `priority_support` | no | no | no | yes |
 | `advanced_permissions`, `custom_domain_full_website` | no | no | no | yes |
 
