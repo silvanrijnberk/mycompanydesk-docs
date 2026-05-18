@@ -115,16 +115,32 @@ Your website is served at the highest-priority URL available:
 
 See [Domains, Website and Inbox](/features/domains-website-inbox) for domain setup and verification.
 
-## Quote request form
+## Contact form
 
-Visitors can still submit quote requests through the contact form section:
+The contact form block (`form` section type) is a live submit handler. When a visitor fills in the fields you configured (name, email, phone, company, message) and hits send, the platform creates a quote request and notifies your workspace. The form shows a success banner on completion and an inline error if something goes wrong. All inputs are disabled during submit to prevent double sends.
 
-1. They fill in their name, email, and message.
-2. The request is submitted.
-3. You receive a notification.
+What happens on submit:
+
+1. Only the fields the block actually renders are sent, so hiding the name input does not break the backend.
+2. The platform creates a quote request under the company tied to the site slug.
+3. You receive a workspace notification (same path as the legacy `/portal/quote-request` route).
 4. The request appears in **Quotes > Requests**.
+5. The visitor sees a customizable success message.
 
-Quote requests are rate-limited to 1 per 15 minutes per IP address.
+Contact-form submissions are rate-limited to 5 per minute per IP address.
+
+## Newsletter signup
+
+The newsletter block (`newsletter` section type) captures email signups from your published site. The backend uses a double opt-in flow: after submit, the visitor receives a confirmation email and must click the link to activate their subscription. Suppressed addresses and already-active subscribers are treated the same as new signups from the form's perspective (no data leakage).
+
+What happens on submit:
+
+1. The platform stores the subscription with `source: "site_form"`.
+2. If the address is not already active and not suppressed, a double opt-in email is sent.
+3. The visitor sees a success banner regardless, keeping the subscription state private.
+4. Once confirmed, the subscriber appears in the newsletter audience for that workspace.
+
+Newsletter submissions share the same rate limit as the contact form: 5 per minute per IP address.
 
 ## Managing requests
 

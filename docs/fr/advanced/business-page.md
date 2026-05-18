@@ -115,16 +115,32 @@ Votre site web est servi a l'URL la plus prioritaire disponible :
 
 Consultez [Domaines, site web et boite de reception](/fr/features/domains-website-inbox) pour la configuration et la verification du domaine.
 
-## Formulaire de demande de devis
+## Formulaire de contact
 
-Les visiteurs peuvent toujours soumettre des demandes de devis via la section formulaire de contact :
+Le bloc formulaire de contact (`form` type de section) dispose d'un gestionnaire d'envoi actif. Lorsqu'un visiteur remplit les champs que vous avez configurés (nom, e-mail, téléphone, entreprise, message) et clique sur Envoyer, la plateforme crée une demande de devis et notifie votre espace de travail. Le formulaire affiche une bannière de succès une fois terminé et une erreur inline en cas de problème. Tous les champs sont désactivés pendant l'envoi pour éviter les doubles soumissions.
 
-1. Ils remplissent leur nom, leur e-mail et leur message.
-2. La demande est soumise.
-3. Vous recevez une notification.
+Ce qui se passe lors de l'envoi :
+
+1. Seuls les champs que le bloc rend effectivement sont envoyés. Le fait de masquer le champ nom ne casse donc pas le backend.
+2. La plateforme crée une demande de devis sous l'entreprise liée au slug du site.
+3. Vous recevez une notification dans votre espace de travail (même chemin que l'ancienne route `/portal/quote-request`).
 4. La demande apparait dans **Devis > Demandes**.
+5. Le visiteur voit un message de succes personnalisable.
 
-Les demandes de devis sont limitees a 1 par 15 minutes par adresse IP.
+Les soumissions du formulaire de contact sont limitees a 5 par minute par adresse IP.
+
+## Inscription a la newsletter
+
+Le bloc newsletter (`newsletter` type de section) capture les inscriptions par e-mail depuis votre site publie. Le backend utilise un flux de double opt-in : apres l'envoi, le visiteur recoit un e-mail de confirmation et doit cliquer sur le lien pour activer son abonnement. Les adresses supprimees et les abonnes deja actifs sont traites de la meme maniere que les nouvelles inscriptions du point de vue du formulaire (pas de fuite de donnees).
+
+Ce qui se passe lors de l'envoi :
+
+1. La plateforme enregistre l'abonnement avec `source: "site_form"`.
+2. Si l'adresse n'est pas deja active et n'est pas supprimee, un e-mail de double opt-in est envoye.
+3. Le visiteur voit une banniere de succes dans tous les cas, preservant ainsi la confidentialite du statut d'abonnement.
+4. Une fois confirme, l'abonne apparait dans l'audience de la newsletter de cet espace de travail.
+
+Les soumissions a la newsletter partagent la meme limite de taux que le formulaire de contact : 5 par minute par adresse IP.
 
 ## Gerer les demandes
 
