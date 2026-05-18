@@ -179,14 +179,15 @@ If domain provisioning fails, the rest of Finish still applies — the failure s
 
 ## Finish splash
 
-A green confirmation panel that shows for 1.8 seconds before redirecting:
+A green confirmation panel that shows for 4.2 seconds (or 0.9 seconds when nothing was provisioned) before redirecting. It lists every item the wizard set up in a summary card list:
 
-- "We applied N changes" (count of column writes).
-- Subdomain ready / own-domain added / domain error.
-- Personal-mailbox-failed warning (if any).
-- "We created your logo from your initials" (when the initials generator ran).
-- "We added N services" / "We saved N email templates" (counts).
-- **Plan headroom** — on free plans only, a chip showing remaining invoices / expenses / quotes for the month so the user doesn't hit a surprise wall later. Beta users skip this line.
+- **Categories** - the system expense categories seeded for the workspace (e.g. "Kantoor, Reizen, Software").
+- **Services** - count of services added to the business page.
+- **Logo** - confirmation when an initials logo was generated.
+- **Email templates** - count of templates saved in the workspace brand tone.
+- **Domain** - the ready URL for subdomains or the added domain for own-domain setups.
+
+A "Go to dashboard" button lets the user skip the auto-redirect timer and jump straight in.
 
 Then the user lands on `/dashboard` (default) or `/workspace/organization/company/address` (when an own-domain is pending DNS verification).
 
