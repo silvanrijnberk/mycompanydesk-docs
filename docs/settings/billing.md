@@ -119,7 +119,9 @@ Cancellation takes effect at the end of the current paid period; access remains 
 1. Click **Upgrade** on a plan tile
 2. The frontend calls `POST /api/billing/checkout`, which returns a Stripe Checkout URL
 3. Stripe redirects back with `?checkout=success` or `?checkout=canceled`
-4. The page shows a success / cancel banner; the entitlement cache invalidates and gated UI unlocks immediately
+4. The page shows a success or cancel banner; the entitlement cache invalidates and gated UI unlocks immediately
+
+When upgrading to Pro, the success banner uses the Pro violet accent and a crown icon ("Welcome to Pro") instead of the standard green confirmation. The same Pro styling appears throughout the app: a violet ring around the user avatar, a crown icon in the plan badge ribbon, and "Pro feature" pills on gated settings pages like API Keys and Inbox.
 
 ## Contextual upgrade banner
 
