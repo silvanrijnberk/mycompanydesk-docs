@@ -119,6 +119,7 @@ In the **Style** tab, you control the look and feel of your entire site:
 
 - **Presets**: One-click starting points that set colors, fonts, and spacing in one go. The Editorial preset ships a navy-and-gold palette with serif headlines and mono eyebrows, reflecting the MyCompanyDesk house style. Applying a preset merges the tokens into your workspace, preserving your logo, custom CSS, and head snippets.
 - **Colors**: Pick brand, accent, paper, ink, surface, and muted colors. The palette is applied through CSS custom properties.
+- **Dark mode**: Choose how your site handles dark mode. Three options: **Off** (no dark mode, site stays in its light palette), **Button** (visitors see a sun/moon toggle in the navigation bar and can switch themes, with their choice saved locally), or **System** (the site follows the visitor's OS-level preference automatically via a live media-query listener). When dark mode is on, a paired dark palette appears where you can set night-optimized versions of each color. If you leave the dark palette empty, the site applies a sensible default inversion that keeps your brand and accent colors intact.
 - **Typography**: Choose heading, body, and mono fonts from the built-in font library (Geist, Inter, DM Sans, DM Serif Display, Fraunces, Instrument Serif, Geist Mono).
 - **Scale**: Set border radius, content density (compact, airy, generous), maximum content width, and vertical section spacing.
 - **Motion**: Enable reduced motion or choose a motion style (none, subtle, playful).
