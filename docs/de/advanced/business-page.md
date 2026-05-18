@@ -115,16 +115,32 @@ Ihre Website wird unter der am besten geeigneten URL bereitgestellt:
 
 Siehe [Domains, Website und Posteingang](/de/features/domains-website-inbox) für Domain-Einrichtung und -Verifizierung.
 
-## Angebotsanfrageformular
+## Kontaktformular
 
-Besucher können weiterhin Angebotsanfragen über den Kontaktformular-Abschnitt einreichen:
+Der Kontaktformular-Block (`form` Abschnittstyp) verfügt über einen aktiven Submit-Handler. Wenn ein Besucher die von Ihnen konfigurierten Felder ausfüllt (Name, E-Mail, Telefon, Unternehmen, Nachricht) und auf Senden klickt, erstellt die Plattform eine Angebotsanfrage und benachrichtigt Ihren Workspace. Das Formular zeigt nach Abschluss ein Erfolgsbanner und bei Fehlern eine Inline-Fehlermeldung an. Alle Eingabefelder werden während des Sendens deaktiviert, um Doppelabsendungen zu vermeiden.
 
-1. Sie geben ihren Namen, ihre E-Mail-Adresse und ihre Nachricht ein.
-2. Die Anfrage wird eingereicht.
-3. Sie erhalten eine Benachrichtigung.
+Was beim Absenden passiert:
+
+1. Es werden nur die Felder gesendet, die der Block tatsächlich rendert. Wird das Namensfeld ausgeblendet, bricht das Backend nicht ab.
+2. Die Plattform erstellt eine Angebotsanfrage unter dem Unternehmen, das mit dem Site-Slug verknüpft ist.
+3. Sie erhalten eine Workspace-Benachrichtigung (derselbe Pfad wie die alte `/portal/quote-request` Route).
 4. Die Anfrage erscheint unter **Angebote > Anfragen**.
+5. Der Besucher sieht eine anpassbare Erfolgsmeldung.
 
-Angebotsanfragen sind auf 1 pro 15 Minuten pro IP-Adresse begrenzt.
+Kontaktformular-Einreichungen sind auf 5 pro Minute pro IP-Adresse begrenzt.
+
+## Newsletter-Anmeldung
+
+Der Newsletter-Block (`newsletter` Abschnittstyp) erfasst E-Mail-Anmeldungen von Ihrer veröffentlichten Website. Das Backend verwendet einen Double-Opt-in-Ablauf: Nach dem Absenden erhält der Besucher eine Bestätigungs-E-Mail und muss auf den Link klicken, um das Abonnement zu aktivieren. Unterdrückte Adressen und bereits aktive Abonnenten werden aus Sicht des Formulars genauso behandelt wie neue Anmeldungen (keine Datenlecks).
+
+Was beim Absenden passiert:
+
+1. Die Plattform speichert das Abonnement mit `source: "site_form"`.
+2. Wenn die Adresse nicht bereits aktiv und nicht unterdrückt ist, wird eine Double-Opt-in-E-Mail versendet.
+3. Der Besucher sieht in jedem Fall ein Erfolgsbanner, sodass der Abonnementstatus privat bleibt.
+4. Nach der Bestätigung erscheint der Abonnent in der Newsletter-Zielgruppe dieses Workspaces.
+
+Newsletter-Einreichungen teilen dasselbe Rate-Limit wie das Kontaktformular: 5 pro Minute pro IP-Adresse.
 
 ## Anfragen verwalten
 

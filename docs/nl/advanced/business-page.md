@@ -115,16 +115,32 @@ Je website wordt getoond op de best beschikbare URL:
 
 Zie [Domeinen, website en inbox](/nl/features/domains-website-inbox) voor domeininstelling en -verificatie.
 
-## Offerteaanvraagformulier
+## Contactformulier
 
-Bezoekers kunnen nog steeds offerteaanvragen indienen via het contactformuliersectie:
+Het contactformulierblok (`form` sectietype) heeft een live verzendfunctionaliteit. Wanneer een bezoeker de velden invult die jij hebt ingesteld (naam, e-mail, telefoon, bedrijf, bericht) en op verzenden klikt, maakt het platform een offerteaanvraag aan en stuurt het een melding naar je werkruimte. Het formulier toont een succesbanner bij afronding en een foutmelding als er iets misgaat. Alle invoervelden worden tijdens het verzenden uitgeschakeld om dubbel verzenden te voorkomen.
 
-1. Ze vullen hun naam, e-mail en bericht in.
-2. De aanvraag wordt ingediend.
-3. Je ontvangt een melding.
-4. De aanvraag verschijnt in **Offertes > Aanvragen**.
+Wat gebeurt er bij verzenden:
 
-Offerteaanvragen zijn beperkt tot 1 per 15 minuten per IP-adres.
+1. Alleen de velden die het blok daadwerkelijk toont worden meegestuurd, dus het verbergen van het naamveld breekt de backend niet.
+2. Het platform maakt een offerteaanvraag aan onder het bedrijf dat aan de site-slug is gekoppeld.
+3. Je ontvangt een werkruimtemelding (dezelfde route als de oude `/portal/quote-request`).
+4. De aanvraag verschijnt bij **Offertes > Aanvragen**.
+5. De bezoeker ziet een aanpasbare succesmelding.
+
+Inzendingen via het contactformulier zijn beperkt tot 5 per minuut per IP-adres.
+
+## Nieuwsbrief aanmelden
+
+Het nieuwsbriefblok (`newsletter` sectietype) vangt e-mailaanmeldingen van je gepubliceerde site op. De backend gebruikt een double opt-in stroom: na het verzenden ontvangt de bezoeker een bevestigingsmail en moet op de link klikken om het abonnement te activeren. Onderdrukte adressen en al actieve abonnees worden vanuit het formulier op dezelfde manier behandeld als nieuwe aanmeldingen (geen datalek).
+
+Wat gebeurt er bij verzenden:
+
+1. Het platform slaat het abonnement op met `source: "site_form"`.
+2. Als het adres niet al actief is en niet onderdrukt, wordt een double opt-in e-mail verstuurd.
+3. De bezoeker ziet hoe dan ook een succesbanner, zodat de abonnementsstatus privé blijft.
+4. Na bevestiging verschijnt de abonnee in het nieuwsbriefpubliek van die werkruimte.
+
+Nieuwsbriefinzendingen delen dezelfde snelheidslimiet als het contactformulier: 5 per minuut per IP-adres.
 
 ## Aanvragen beheren
 
