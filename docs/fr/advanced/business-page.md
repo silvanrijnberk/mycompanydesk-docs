@@ -21,11 +21,11 @@ Le constructeur de site se trouve sous **Entreprise > Votre site web** (`/websit
 
 ## Onglets
 
-Le constructeur de site dispose de cinq onglets :
+Le constructeur de site dispose de cinq onglets (six lorsque Style est deplie) :
 
 - **Editeur**: Composez des pages en ajoutant et en organisant des sections. Cliquez sur une section pour modifier son contenu, sa mise en page, son style ou son animation. Faites glisser les sections pour les reordonner, les dupliquer ou les supprimer.
 - **Pages**: Gelez vos pages : creez-en de nouvelles a partir de modeles, definissez les chemins et la visibilite, et voyez quelles pages sont en ligne, en brouillon ou planifiees. Cliquez sur une page pour l'ouvrir dans l'editeur. La page d'accueil verrouillee ne peut pas etre supprimee.
-- **Style**: Personnalisez vos tokens de design a l'echelle du site : couleurs (marque, accent, papier, encre), polices (titres, corps, mono de la bibliotheque de polices), echelle (rayon, densite, largeur maximale, espacement des sections), mouvement, styles de boutons et CSS personnalise. Vous pouvez egalement ajouter des snippets d'en-tete pour l'analytique (Plausible, Umami, Matomo) ou les preconnexions de polices.
+- **Style**: Personnalisez vos tokens de design a l'echelle du site : couleurs (marque, accent, papier, encre), polices (titres, corps, mono de la bibliotheque de polices), barre de navigation (disposition, arriere-plan, style du CTA), echelle (rayon, densite, largeur maximale, espacement des sections), mouvement, styles de boutons et CSS personnalise. Vous pouvez egalement ajouter des snippets d'en-tete pour l'analytique (Plausible, Umami, Matomo) ou les preconnexions de polices. Cliquez sur l'en-tete Style pour deplier ou replier l'onglet.
 - **Domaine et SEO**: Configurez votre domaine personnalise et vos parametres SEO. Consultez [Domaines, site web et boite de reception](/fr/features/domains-website-inbox) pour la gestion complete des domaines.
 - **Integrations**: Connectez des services tiers a votre site web.
 
@@ -78,6 +78,7 @@ Dans l'onglet **Style**, vous controlez l'apparence de l'ensemble de votre site 
 - **Echelle**: Definissez le rayon des coins, la densite (compact, aere, genereux), la largeur maximale du contenu et l'espacement vertical des sections.
 - **Mouvement**: Activez le mouvement reduit ou choisissez un style de mouvement (aucun, subtil, ludique).
 - **Boutons**: Personnalisez le rayon, le remplissage et les effets de survol des boutons.
+- **Barre de navigation**: Definissez la disposition (standard, centree, divisee), le style d'arriere-plan (plein, flou translucide, transparent) et l'apparence du bouton CTA (plein, contour, texte seul). Les parametres de navigation s'appliquent a chaque page.
 - **CSS personnalise**: Ecrivez votre propre CSS qui sera injecte dans le site. Utile pour les ajustements fins ou pour remplacer les valeurs par defaut.
 - **Favicon**: Telechargez un favicon pour votre site. Il apparait dans les onglets du navigateur et les favoris. Si vous n'en definissez pas, le site utilise votre logo clair, puis votre photo de profil d'entreprise.
 - **Snippets d'en-tete**: Ajoutez des scripts d'analytique (Plausible, Umami, Matomo) ou des preconnexions de polices via le selecteur de snippets.
