@@ -1,6 +1,6 @@
 ---
 title: "Plan & payments"
-last_verified: 2026-05-09
+last_verified: 2026-05-18
 ---
 
 # Plan & payments
@@ -9,7 +9,7 @@ What you pay us, your invoices from us, and your payment card.
 
 ## Where to find it
 
-Open the workspace switcher → **Account** → **Plan & payments**, or navigate directly to `/workspace/account/billing`.
+Open the workspace switcher, then **Account**, then **Plan & payments**, or navigate directly to `/workspace/account/billing`.
 
 The legacy `/settings/billing` URL is now a redirect stub to the new path; bookmarks still work and the `?checkout=success|canceled` query parameter is preserved across the redirect.
 
@@ -42,54 +42,66 @@ Founding Member workspaces are regular Pro customers in every respect: same feat
 
 ## Plans
 
-MyCompanyDesk has four plans. Plan definitions live in `apps/api/src/modules/billing/plans.config.js`.
+MyCompanyDesk has two paid plans plus a Free state that exists only for lapsed, cancelled, or trial-expired workspaces. Free is not offered at signup; new customers get a 60-day Pro trial. Plan definitions live in `apps/api/src/modules/billing/plans.config.js`.
 
 | Plan | Monthly | Yearly | Description |
 |---|---|---|---|
-| **Free** | €0 | €0 | For anyone just getting started |
-| **Starter** | €4.99 | €49.90 | For freelancers who need full invoicing |
-| **Pro** | €9.99 | €99.90 | Everything: AI, advanced reports, full branding, business email |
-| **Business** | €19.99 | €199.90 | Integrations, unlimited scale, priority support |
+| **Starter** | €10.00 | €100.00 | For freelancers who need invoicing, expenses and a public business page |
+| **Pro** | €25.00 | €250.00 | The complete suite: AI, inbox, multi-domain, API and expandable with extra users |
 
-Pro is the highlighted (recommended) plan in the picker. Internally the Business tier still uses the key `enterprise` for backwards compatibility, but every customer-facing surface says "Business".
+Pro is the highlighted (recommended) plan in the picker. The Free state (`plan_key: "free"`) exists as a landing zone for downgrade paths and historical accounts but is hidden from the pricing page and signup flow.
 
 ### What each plan includes
 
-Quota-limited features (monthly caps unless noted):
+Quota-limited features (monthly caps):
 
-| Metric | Free | Starter | Pro | Business |
-|---|---|---|---|---|
-| Invoices created | 5 | unlimited | unlimited | unlimited |
-| Expenses created | 10 | unlimited | unlimited | unlimited |
-| Quotes created | 3 | unlimited | unlimited | unlimited |
-| Storage | 100 MB | 2 GB | 10 GB | unlimited |
-| Team members | 1 | 1 | 5 | unlimited |
-| Custom domains | 0 | 0 | 1 | 5 |
-| AI chat messages (daily) | 10 | 30 | 75 | 200 |
-| AI receipt scans (daily) | 3 | 15 | 40 | 100 |
-| AI suggestions (daily) | 10 | 50 | 150 | 500 |
-| Inbox mailboxes | 0 | 0 | 1 | unlimited |
-| Inbox monthly sends | 0 | 0 | 10 000 | 100 000 |
-| Inbox monthly receives | 0 | 0 | 20 000 | 200 000 |
+| Metric | Free | Starter | Pro |
+|---|---|---|---|
+| Invoices created | 5 | unlimited | unlimited |
+| Expenses created | 10 | unlimited | unlimited |
+| Quotes created | 3 | unlimited | unlimited |
+| Storage | 100 MB | 2 GB | unlimited |
+| Team members | 1 | 1 | 1 (expandable with seat add-ons) |
+| Custom domains | 0 | 0 | 5 |
+| AI chat messages (monthly) | 10 | 100 | 1 000 |
+| AI receipt scans (monthly) | 3 | 50 | 500 |
+| AI suggestions (monthly) | 10 | 200 | 2 000 |
+| Inbox mailboxes | 0 | 0 | unlimited |
+| Inbox monthly sends | 0 | 0 | 15 000 |
+| Inbox monthly receives | 0 | 0 | 20 000 |
+
+Note: AI caps are monthly, not daily. They reset on the first of each calendar month.
 
 Boolean features unlocked per plan:
 
-| Feature key | Free | Starter | Pro | Business |
-|---|---|---|---|---|
-| `contracts`, `properties`, `projects` | no | yes | yes | yes |
-| `recurring_invoices`, `recurring_expenses` | no | yes | yes | yes |
-| `receipt_scanning`, `language_tools` | no | yes | yes | yes |
-| `time_registration`, `assistant_chat` | no | yes | yes | yes |
-| `description_enrichment` | no | yes | yes | yes |
-| `custom_branding`, `exports_excel` | no | yes | yes | yes |
-| `team_members`, `advanced_reports` | no | no | yes | yes |
-| `public_business_page` | no | no | yes | yes |
-| `custom_domains`, `custom_domain_routing` | no | no | yes | yes |
-| `inbox`, `style_presets`, `privacy_mode`, `company_subdomain`, `newsletter` | no | no | yes | yes |
-| `api_access`, `webhooks`, `priority_support` | no | no | no | yes |
-| `advanced_permissions`, `custom_domain_full_website` | no | no | no | yes |
+| Feature key | Free | Starter | Pro |
+|---|---|---|---|
+| `invoices`, `expenses`, `quotes`, `attachments` | yes | yes | yes |
+| `exports_pdf` | yes | yes | yes |
+| `exports_excel` | no | yes | yes |
+| `custom_branding` | no | yes | yes |
+| `recurring_invoices`, `recurring_expenses` | no | yes | yes |
+| `receipt_scanning`, `language_tools` | no | yes | yes |
+| `time_registration`, `assistant_chat` | no | yes | yes |
+| `description_enrichment` | no | yes | yes |
+| `ai_insights` | no | yes | yes |
+| `public_business_page` | no | yes | yes |
+| `company_subdomain`, `style_presets` | no | yes | yes |
+| `contracts`, `properties`, `projects` | no | no | yes |
+| `team_members`, `advanced_reports` | no | no | yes |
+| `custom_domains`, `custom_domain_routing` | no | no | yes |
+| `custom_domain_full_website` | no | no | yes |
+| `inbox`, `privacy_mode`, `newsletter` | no | no | yes |
+| `api_access`, `webhooks`, `priority_support` | no | no | yes |
+| `advanced_permissions` | no | no | yes |
+| `bank_connections` | no | no | yes |
+| `e2b_realtime_classification` | no | yes | yes |
 
 The full feature list lives in `FEATURE_KEYS` in `plans.config.js`.
+
+### Seat add-ons
+
+Pro is a single-seat product. Additional users are purchased through the `workspace_seat_addons` table (Stripe quantity-based add-on, billed separately per seat). The `team_members` feature flag controls whether team functionality is available; the effective seat count comes from the add-on record.
 
 ## Stripe portal
 
@@ -111,10 +123,10 @@ Cancellation takes effect at the end of the current paid period; access remains 
 
 ## Contextual upgrade banner
 
-When a user lands on the billing page from a gated feature (the feature-flag middleware redirects with `?upgrade=<feature>`), the page shows a "you came here for X — here's what unlocks it" banner above the plan grid instead of a generic plans pitch.
+When a user lands on the billing page from a gated feature (the feature-flag middleware redirects with `?upgrade=<feature>`), the page shows a "you came here for X, here's what unlocks it" banner above the plan grid instead of a generic plans pitch.
 
 ## Related
 
-- [Company Settings](/settings/company) — `public_business_page` and `custom_domains` are gated here
-- [Email](/settings/email) — `inbox` requires Pro or Business
-- [Team](/settings/team) — `team_members` requires Pro or higher
+- [Company Settings](/settings/company) -- `public_business_page` and `custom_domains` are gated here
+- [Email](/settings/email) -- `inbox` requires Pro
+- [Team](/settings/team) -- `team_members` requires Pro or higher

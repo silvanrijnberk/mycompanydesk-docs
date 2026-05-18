@@ -4,7 +4,7 @@ title: "Abrechnung & Tarife"
 
 # Abrechnung & Tarife
 
-Verwalten Sie Ihr MyCompanyDesk-Abonnement, sehen Sie Ihre Nutzung ein und führen Sie ein Upgrade Ihres Tarifs durch.
+Verwalten Sie Ihr MyCompanyDesk-Abonnement, sehen Sie Ihre Nutzung ein und fuhren Sie ein Upgrade Ihres Tarifs durch.
 
 ## Founding Members
 
@@ -19,124 +19,107 @@ MyCompanyDesk bietet ein Founding-Members-Programm fur die ersten 100 Arbeitsber
 
 ### Einen Platz claimen
 
-Es gibt zwei Wege, einen Founding-Member-Platz zu beanspruchen:
+Sie konnen auf zwei Arten einen Founding-Member-Platz beanspruchen:
 
-**Uber die Abrechnungsseite.** Wenn noch Platze verfugbar sind, zeigt die Abrechnungsseite eine Founding-Member-Claimkarte. Klicken Sie auf **Platz claimen**, um Ihren Platz zu sichern. Das Upgrade wird sofort wirksam.
+**Uber die Abrechnungsseite.** Wenn noch Platze verfugbar sind, zeigt die Abrechnungsseite eine Founding-Member-Claim-Karte. Klicken Sie auf **Platz claimen**, um Ihren Platz zu reservieren. Das Upgrade wird sofort wirksam.
 
-**Uber die Landing-Page.** Der CTA auf der Landing-Page verlinkt auf das Registrierungsformular mit einer Founding-Member-Absicht. Wenn Sie sich uber diesen Weg registrieren:
+**Uber die Landingpage.** Der CTA auf der Landingpage verlinkt auf das Registrierungsformular mit einer Founding-Member-Absicht. Wenn Sie sich uber diesen Weg anmelden:
 
-1. Das Registrierungsformular speichert Ihre Absicht im lokalen Speicher.
-2. Nach der E-Mail-Verifizierung und dem Login beansprucht das System Ihren Platz automatisch im Hintergrund.
-3. Eine Bestatigungs-Toast zeigt, ob das Claimen erfolgreich war. Waren die Platze bereits weg, bevor Sie die Registrierung abgeschlossen haben, erhalten Sie dennoch eine 60-tagige Pro-Testphase.
+1. Das Registrierungsformular merkt sich Ihre Absicht im lokalen Speicher.
+2. Nach der E-Mail-Bestatigung und Anmeldung wird Ihr Platz automatisch im Hintergrund geclaimt.
+3. Ein Bestatigungstoast zeigt an, ob der Claim erfolgreich war. Wenn die Platze voll waren, bevor Sie die Registrierung abgeschlossen haben, erhalten Sie trotzdem eine 60-tagige Pro-Testphase.
 
-Einmal geclaimt, ist der Claim endgultig und der Arbeitsbereich behalt Pro lebenslang kostenlos. Schlagt das automatische Claimen fehl (Platze voll, IP bereits von einem anderen Arbeitsbereich genutzt oder ein Netzwerkfehler), wird der Claim nicht erneut versucht. Sie konnen weiterhin auf der Abrechnungsseite nachsehen und manuell claimen, falls noch Platze verfugbar sind.
+Einmal geclaimt ist der Claim endgultig und der Arbeitsbereich behalt Pro lebenslang kostenlos. Wenn der automatische Claim fehlschlagt (Platze voll, IP bereits von einem anderen Arbeitsbereich verwendet oder Netzwerkfehler), wird der Claim nicht erneut versucht. Sie konnen weiterhin auf der Abrechnungsseite nachsehen und manuell claimen, falls noch Platze vorhanden sind.
 
-Founding-Member-Arbeitsbereiche sind in jeder Hinsicht ganz normale Pro-Kunden: gleiche Funktionen, gleiche Limits. Der einzige Unterschied ist die Abonnementquelle ("intern") und das Badge im Abrechnungsbereich.
+Founding-Member-Arbeitsbereiche sind in jeder Hinsicht normale Pro-Kunden: dieselben Funktionen, dieselben Limits. Der einzige Unterschied ist die Abonnement-Quelle ("intern") und das Badge in der Abrechnung.
 
 ## Tarife
 
-MyCompanyDesk bietet drei Tarife:
+MyCompanyDesk hat zwei kostenpflichtige Tarife plus einen Gratis-Status, der nur fur abgelaufene, gekundigte oder testphasen-abgelaufene Arbeitsbereiche existiert. Gratis wird bei der Anmeldung nicht angeboten; neue Kunden erhalten eine 60-tagige Pro-Testphase. Tarifdefinitionen befinden sich in `apps/api/src/modules/billing/plans.config.js`.
 
-### Free
+| Tarif | Monatlich | Jahrlich | Beschreibung |
+|---|---|---|---|
+| **Starter** | 10,00 EUR | 100,00 EUR | Fur Freiberufler, die Rechnungen, Ausgaben und eine offentliche Unternehmensseite benotigen |
+| **Pro** | 25,00 EUR | 250,00 EUR | Das Komplettpaket: alles an, Inbox, Multi-Domain, API und erweiterbar mit zusatzlichen Nutzern |
 
-Kostenlos starten:
+Pro ist der hervorgehobene (empfohlene) Tarif in der Auswahl. Der Gratis-Status (`plan_key: "free"`) existiert als Landing-Zone fur Downgrade-Pfade und historische Konten, ist aber auf der Preisseite und im Anmeldeprozess ausgeblendet.
 
-- Begrenzte Rechnungen und Kunden
-- Grundlegende Ausgabenverfolgung
-- Grundlegende Berichte
-- 1 Benutzer
-- Community-Support
+### Was jeder Tarif enthalt
 
-### Pro
+Funktionen mit Nutzungslimits (monatliche Limits):
 
-Für wachsende Unternehmen:
+| Metrik | Gratis | Starter | Pro |
+|---|---|---|---|
+| Erstellte Rechnungen | 5 | unbegrenzt | unbegrenzt |
+| Erstellte Ausgaben | 10 | unbegrenzt | unbegrenzt |
+| Erstellte Angebote | 3 | unbegrenzt | unbegrenzt |
+| Speicher | 100 MB | 2 GB | unbegrenzt |
+| Teammitglieder | 1 | 1 | 1 (erweiterbar mit Sitz-Add-ons) |
+| Eigene Domains | 0 | 0 | 5 |
+| KI-Chat-Nachrichten (monatlich) | 10 | 100 | 1 000 |
+| KI-Belegscans (monatlich) | 3 | 50 | 500 |
+| KI-Vorschlage (monatlich) | 10 | 200 | 2 000 |
+| Inbox-Postfacher | 0 | 0 | unbegrenzt |
+| Inbox gesendet pro Monat | 0 | 0 | 15 000 |
+| Inbox empfangen pro Monat | 0 | 0 | 20 000 |
 
-- Unbegrenzte Rechnungen und Kunden
-- Vollständige Ausgabenverfolgung mit Belegscanner
-- KI-Vorschläge
-- Individuelles PDF-Branding
-- CSV-Export
-- Bis zu 5 Teammitglieder
-- Newsletter mit Versand-Tracking
-- E-Mail-Support
+Hinweis: KI-Limits gelten monatlich, nicht taglich. Sie werden am Ersten jedes Kalendermonats zuruckgesetzt.
 
-### Business
+Boolsche Funktionen pro Tarif:
 
-Für Teams und skalierenden Betrieb:
+| Funktion | Gratis | Starter | Pro |
+|---|---|---|---|
+| `invoices`, `expenses`, `quotes`, `attachments` | ja | ja | ja |
+| `exports_pdf` | ja | ja | ja |
+| `exports_excel` | nein | ja | ja |
+| `custom_branding` | nein | ja | ja |
+| `recurring_invoices`, `recurring_expenses` | nein | ja | ja |
+| `receipt_scanning`, `language_tools` | nein | ja | ja |
+| `time_registration`, `assistant_chat` | nein | ja | ja |
+| `description_enrichment` | nein | ja | ja |
+| `ai_insights` | nein | ja | ja |
+| `public_business_page` | nein | ja | ja |
+| `company_subdomain`, `style_presets` | nein | ja | ja |
+| `contracts`, `properties`, `projects` | nein | nein | ja |
+| `team_members`, `advanced_reports` | nein | nein | ja |
+| `custom_domains`, `custom_domain_routing` | nein | nein | ja |
+| `custom_domain_full_website` | nein | nein | ja |
+| `inbox`, `privacy_mode`, `newsletter` | nein | nein | ja |
+| `api_access`, `webhooks`, `priority_support` | nein | nein | ja |
+| `advanced_permissions` | nein | nein | ja |
+| `bank_connections` | nein | nein | ja |
+| `e2b_realtime_classification` | nein | ja | ja |
 
-- Alles aus Pro
-- Unbegrenzte Teammitglieder
-- API-Zugang
-- Prioritäts-Support
-- Erweiterte Integrationen
+Die vollstandige Funktionsliste befindet sich in `FEATURE_KEYS` in `plans.config.js`.
 
-Tarife sind in **monatlichen** und **jährlichen** Abrechnungsintervallen verfügbar. Jahrestarife beinhalten einen Rabatt.
+### Sitz-Add-ons
 
-## Abonnement verwalten
+Pro ist ein Einzelnutzer-Produkt. Zusatzliche Nutzer werden uber die Tabelle `workspace_seat_addons` erworben (Stripe mengenbasierte Add-on, separat pro Sitz abgerechnet). Das `team_members`-Feature-Flag steuert, ob Team-Funktionalitat verfugbar ist; die effektive Sitzanzahl stammt aus dem Add-on-Datensatz.
 
-### Upgrade
+## Stripe-Portal
 
-1. Gehen Sie zu **Einstellungen > Abrechnung**
-2. Klicken Sie auf **Upgrade** beim gewünschten Tarif
-3. Schließen Sie die Zahlung über Stripe ab
-4. Funktionen werden sofort aktiviert
-
-### Downgrade
-
-1. Gehen Sie zu **Einstellungen > Abrechnung**
-2. Klicken Sie auf **Tarif ändern**
-3. Wählen Sie den niedrigeren Tarif
-4. Änderungen treten am Ende der aktuellen Abrechnungsperiode in Kraft
-
-### Kündigung
-
-1. Gehen Sie zu **Einstellungen > Abrechnung**
-2. Klicken Sie auf **Abonnement verwalten**, um das Stripe-Abrechnungsportal zu öffnen
-3. Kündigen Sie Ihr Abonnement
-4. Sie behalten den Zugang bis zum Ende des bezahlten Zeitraums
-
-## Nutzungsverfolgung
-
-Sehen Sie Ihre aktuelle Nutzung auf der Abrechnungsseite:
-
-- **Erstellte Rechnungen** in diesem Monat
-- **Kunden** in Ihrem Arbeitsbereich
-- **Teammitglieder** aktiv
-- **API-Aufrufe** (Business-Tarif)
-
-Die Nutzung wird monatlich zurückgesetzt. Wenn Sie sich einem Limit nähern, sehen Sie eine Benachrichtigung mit Upgrade-Vorschlag.
-
-## Zahlungsmethoden
-
-Zahlungen werden sicher über **Stripe** abgewickelt. Akzeptierte Methoden:
-
-- Kreditkarte (Visa, Mastercard, Amex)
-- Debitkarte
-- SEPA-Lastschrift (EU)
-
-Verwalten Sie Ihre Zahlungsmethode im Stripe-Abrechnungsportal.
-
-## Abrechnungsportal
-
-Klicken Sie auf **Abonnement verwalten**, um auf das Stripe-Abrechnungsportal zuzugreifen, wo Sie:
+Die Schaltflache **Abonnement verwalten** (sichtbar, wenn der Arbeitsbereich eine aktive Periode oder einen Nicht-Gratis-Tarif hat) ruft `POST /api/billing/portal` auf und gibt eine einmalige Stripe-Customer-Portal-URL zuruck. Uber das Portal konnen Sie:
 
 - Zahlungsmethode aktualisieren
-- Rechnungsverlauf einsehen
-- Belege herunterladen
-- Rechnungsadresse ändern
+- Rechnungen und Belege herunterladen
+- Rechnungsadresse andern
+- Abonnement kundigen
 
-## Funktionsberechtigungen
+Die Kundigung wird am Ende des aktuellen Zahlungszeitraums wirksam; der Zugriff bleibt bis dahin erhalten.
 
-Einige Funktionen sind an den Tarif gebunden:
+## Checkout-Ablauf
 
-| Funktion | Free | Pro | Business |
-|---|---|---|---|
-| Individuelles Branding | - | Ja | Ja |
-| CSV-Export | - | Ja | Ja |
-| Belegscanner | - | Ja | Ja |
-| KI-Vorschläge | - | Ja | Ja |
-| Textprüfung | - | Ja | Ja |
-| Newsletter | - | Ja | Ja |
-| API-Zugang | - | - | Ja |
+1. Klicken Sie auf **Upgrade** auf einer Tarifkachel
+2. Das Frontend ruft `POST /api/billing/checkout` auf und erhalt eine Stripe-Checkout-URL
+3. Stripe leitet mit `?checkout=success` oder `?checkout=canceled` zuruck
+4. Die Seite zeigt ein Erfolgs- oder Abbruch-Banner; der Berechtigungscache wird entwertet und gesperrte UI wird sofort entsperrt
 
-Der Versuch, eine tarifgebundene Funktion in einem niedrigeren Tarif zu nutzen, zeigt eine Upgrade-Aufforderung.
+## Kontextbezogener Upgrade-Banner
+
+Wenn Sie von einer gesperrten Funktion auf die Abrechnungsseite gelangen (die Feature-Flag-Middleware leitet mit `?upgrade=<feature>` weiter), zeigt die Seite einen Banner mit "Sie sind wegen X hier -- das schaltet es frei" anstelle eines generischen Tarif-Pitches.
+
+## Verwandte Themen
+
+- [Unternehmenseinstellungen](/de/settings/company) -- `public_business_page` und `custom_domains` werden hier gesteuert
+- [E-Mail](/de/settings/email) -- `inbox` erfordert Pro
+- [Team](/de/settings/team) -- `team_members` erfordert Pro oder hoher

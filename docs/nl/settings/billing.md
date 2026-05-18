@@ -35,108 +35,91 @@ Founding Member-werkruimtes zijn in alle opzichten gewone Pro-klanten: dezelfde 
 
 ## Abonnementen
 
-MyCompanyDesk biedt drie abonnementen:
+MyCompanyDesk heeft twee betaalde abonnementen plus een Gratis-status die alleen bestaat voor verlopen, opgezegde of proefperiode-verlopen werkruimtes. Gratis wordt niet aangeboden bij aanmelding; nieuwe klanten krijgen een Pro-proefperiode van 60 dagen. Abonnementsdefinities staan in `apps/api/src/modules/billing/plans.config.js`.
 
-### Gratis
+| Abonnement | Maandelijks | Jaarlijks | Omschrijving |
+|---|---|---|---|
+| **Starter** | € 10,00 | € 100,00 | Voor zzp'ers die facturen, uitgaven en een eigen bedrijfspagina nodig hebben |
+| **Pro** | € 25,00 | € 250,00 | Het complete pakket: alles aan, inbox, multi-domein, API en uitbreidbaar met extra gebruikers |
 
-Ga gratis aan de slag:
+Pro is het uitgelichte (aanbevolen) abonnement in de kiezer. De Gratis-status (`plan_key: "free"`) bestaat als landing-zone voor downgrade-paden en historische accounts, maar is verborgen op de prijzenpagina en in het aanmeldproces.
 
-- Beperkt aantal facturen en klanten
-- Basis uitgavenbijhouding
-- Basisrapportages
-- 1 gebruiker
-- Community-ondersteuning
+### Wat elk abonnement bevat
 
-### Pro
+Functies met verbruikslimieten (maandelijkse limieten):
 
-Voor groeiende bedrijven:
+| Meting | Gratis | Starter | Pro |
+|---|---|---|---|
+| Facturen aangemaakt | 5 | onbeperkt | onbeperkt |
+| Uitgaven aangemaakt | 10 | onbeperkt | onbeperkt |
+| Offertes aangemaakt | 3 | onbeperkt | onbeperkt |
+| Opslag | 100 MB | 2 GB | onbeperkt |
+| Teamleden | 1 | 1 | 1 (uitbreidbaar met stoel-add-ons) |
+| Eigen domeinen | 0 | 0 | 5 |
+| AI-chatberichten (maandelijks) | 10 | 100 | 1 000 |
+| AI-bonscans (maandelijks) | 3 | 50 | 500 |
+| AI-suggesties (maandelijks) | 10 | 200 | 2 000 |
+| Inbox-mailboxes | 0 | 0 | onbeperkt |
+| Inbox verzonden per maand | 0 | 0 | 15 000 |
+| Inbox ontvangen per maand | 0 | 0 | 20 000 |
 
-- Onbeperkt facturen en klanten
-- Volledige uitgavenbijhouding met bonnen scannen
-- AI-suggesties
-- Aangepaste PDF-huisstijl
-- CSV-export
-- Tot 5 teamleden
-- Nieuwsbrieven met verzendtracking
-- E-mailondersteuning
+Let op: AI-limieten zijn maandelijks, niet dagelijks. Ze worden gereset op de eerste van elke kalendermaand.
 
-### Business
+Booleaanse functies per abonnement:
 
-Voor teams en groeiende organisaties:
+| Functie | Gratis | Starter | Pro |
+|---|---|---|---|
+| `invoices`, `expenses`, `quotes`, `attachments` | ja | ja | ja |
+| `exports_pdf` | ja | ja | ja |
+| `exports_excel` | nee | ja | ja |
+| `custom_branding` | nee | ja | ja |
+| `recurring_invoices`, `recurring_expenses` | nee | ja | ja |
+| `receipt_scanning`, `language_tools` | nee | ja | ja |
+| `time_registration`, `assistant_chat` | nee | ja | ja |
+| `description_enrichment` | nee | ja | ja |
+| `ai_insights` | nee | ja | ja |
+| `public_business_page` | nee | ja | ja |
+| `company_subdomain`, `style_presets` | nee | ja | ja |
+| `contracts`, `properties`, `projects` | nee | nee | ja |
+| `team_members`, `advanced_reports` | nee | nee | ja |
+| `custom_domains`, `custom_domain_routing` | nee | nee | ja |
+| `custom_domain_full_website` | nee | nee | ja |
+| `inbox`, `privacy_mode`, `newsletter` | nee | nee | ja |
+| `api_access`, `webhooks`, `priority_support` | nee | nee | ja |
+| `advanced_permissions` | nee | nee | ja |
+| `bank_connections` | nee | nee | ja |
+| `e2b_realtime_classification` | nee | ja | ja |
 
-- Alles in Pro
-- Onbeperkt teamleden
-- API-toegang
-- Prioriteitsondersteuning
-- Geavanceerde integraties
+De volledige functielijst staat in `FEATURE_KEYS` in `plans.config.js`.
 
-Abonnementen zijn beschikbaar in **maandelijkse** en **jaarlijkse** factureringsintervallen. Jaarabonnementen bevatten korting.
+### Stoel-add-ons
 
-## Je abonnement beheren
+Pro is een product voor een gebruiker. Extra gebruikers koop je via de `workspace_seat_addons`-tabel (Stripe quantity-based add-on, apart gefactureerd per stoel). De `team_members`-feature-vlag bepaalt of teamfunctionaliteit beschikbaar is; het effectieve aantal stoelen komt uit de add-on-record.
 
-### Upgraden
+## Stripe-portaal
 
-1. Ga naar **Instellingen > Facturering**
-2. Klik op **Upgraden** bij het gewenste abonnement
-3. Voltooi de betaling via Stripe
-4. Functies worden direct geactiveerd
-
-### Downgraden
-
-1. Ga naar **Instellingen > Facturering**
-2. Klik op **Abonnement wijzigen**
-3. Selecteer het lagere abonnement
-4. Wijzigingen gaan in aan het einde van de huidige factureringsperiode
-
-### Opzeggen
-
-1. Ga naar **Instellingen > Facturering**
-2. Klik op **Abonnement beheren** om het Stripe-factureringsportaal te openen
-3. Zeg je abonnement op
-4. Je behoudt toegang tot het einde van de betaalde periode
-
-## Verbruiksoverzicht
-
-Bekijk je huidige verbruik op de factureringspagina:
-
-- **Aangemaakte facturen** deze maand
-- **Klanten** in je werkruimte
-- **Teamleden** actief
-- **API-aanroepen** (Business-abonnement)
-
-Verbruik wordt maandelijks gereset. Als je een limiet nadert, zie je een melding met upgradesuggestie.
-
-## Betaalmethoden
-
-Betalingen worden veilig verwerkt via **Stripe**. Geaccepteerde methoden:
-
-- Creditcard (Visa, Mastercard, Amex)
-- Debitcard
-- SEPA-incasso (EU)
-
-Beheer je betaalmethode in het Stripe-factureringsportaal.
-
-## Factureringsportaal
-
-Klik op **Abonnement beheren** om het Stripe-factureringsportaal te openen waar je kunt:
+De knop **Abonnement beheren** (zichtbaar wanneer de werkruimte een actieve periode of niet-Gratis-abonnement heeft) roept `POST /api/billing/portal` aan, die een eenmalige Stripe Customer Portal-URL teruggeeft. Vanuit het portaal kun je:
 
 - Betaalmethode bijwerken
-- Factuurgeschiedenis bekijken
-- Bonnetjes downloaden
+- Facturen en bonnetjes downloaden
 - Factureringsadres wijzigen
+- Abonnement opzeggen
 
-## Functierechten per abonnement
+Opzeggen gaat in aan het einde van de huidige betaalde periode; je behoudt toegang tot die tijd.
 
-Sommige functies zijn beperkt per abonnement:
+## Betaalflow
 
-| Functie | Gratis | Pro | Business |
-|---|---|---|---|
-| Aangepaste huisstijl | - | Ja | Ja |
-| CSV-export | - | Ja | Ja |
-| Bonnen scannen | - | Ja | Ja |
-| AI-suggesties | - | Ja | Ja |
-| Tekstcontrole | - | Ja | Ja |
-| Nieuwsbrieven | - | Ja | Ja |
-| API-toegang | - | - | Ja |
+1. Klik op **Upgraden** op een abonnementstegel
+2. De frontend roept `POST /api/billing/checkout` aan, die een Stripe Checkout-URL teruggeeft
+3. Stripe stuurt je terug met `?checkout=success` of `?checkout=canceled`
+4. De pagina toont een succes- of annuleringsbanner; de rechtencache wordt ongeldig verklaard en gated UI wordt meteen ontgrendeld
 
-Bij het proberen te gebruiken van een functie op een lager abonnement wordt een upgrademelding getoond.
+## Contextuele upgrade-banner
+
+Wanneer je op de factureringspagina terechtkomt vanuit een gated functie (de feature-flag-middleware stuurt door met `?upgrade=<feature>`), toont de pagina een banner met "je kwam hier voor X, dit is wat het ontgrendelt" in plaats van een generieke abonnementenpitch.
+
+## Zie ook
+
+- [Bedrijfsgegevens](/nl/settings/company) -- `public_business_page` en `custom_domains` zitten hier
+- [E-mail](/nl/settings/email) -- `inbox` vereist Pro
+- [Team](/nl/settings/team) -- `team_members` vereist Pro of hoger

@@ -21,11 +21,13 @@ De gids begrijpt op welke pagina je je bevindt en geeft relevante suggesties.
 
 Chatgebruik is afhankelijk van je abonnement:
 
-| Abonnement | Chatberichten |
+| Abonnement | Chatberichten (maandelijks) |
 |---|---|
-| Gratis | Beperkt |
-| Pro | Ruime limiet |
-| Business | Hoogste limiet |
+| Gratis | 10 |
+| Starter | 100 |
+| Pro | 1 000 |
+
+AI-limieten zijn maandelijks, niet dagelijks. Ze worden elke eerste van de maand gereset.
 
 ### EU AI Act-openbaarmaking (art. 50)
 
@@ -60,7 +62,7 @@ AI kan duidelijkere, professionelere omschrijvingen suggereren voor:
 4. Klik op **Toepassen** om deze te gebruiken, of **Negeren** om over te slaan
 
 ::: info
-AI-suggesties vereisen het **Pro**-abonnement of hoger. Schakel ze in via **Bedrijf > Functies**.
+AI-suggesties vereisen het **Starter**-abonnement of hoger. Schakel ze in via **Bedrijf > Functies**.
 :::
 
 ## Bonnen scannen
@@ -85,7 +87,7 @@ Grammatica- en spellingcontrole voor je documenten:
 Ondersteunt Engels, Nederlands, Duits en Frans.
 
 ::: info
-Tekstcontrole vereist het **Pro**-abonnement of hoger.
+Tekstcontrole is beschikbaar op alle abonnementen, inclusief Gratis.
 :::
 
 ## Accountsamenvattingen
@@ -97,6 +99,17 @@ AI genereert periodieke samenvattingen van je bedrijfsactiviteit:
 - **Maandelijks** — Uitgebreide maandelijkse analyse
 
 Samenvattingen worden gegenereerd in je voorkeurstaal en zijn beschikbaar vanaf het dashboard.
+
+## Abonnementsrechten
+
+| Functie | Gratis | Starter | Pro |
+|---|---|---|---|
+| Contextuele gids | Beperkt, alleen FAQ bij overloop | Standaard | Hoogste limiet |
+| AI-suggesties | Uit | Aan | Aan |
+| Leverancierclassificatie | Uit | Aan | Aan |
+| Bonnen scannen | Uit | Aan | Aan |
+| Tekstcontrole | Aan | Aan | Aan |
+| Vertaling | Aan (alleen UI) | Aan | Aan |
 
 ## Privacy en gegevensbescherming
 

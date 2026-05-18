@@ -4,49 +4,51 @@ title: KI-Funktionen
 
 # KI-Funktionen
 
-MyCompanyDesk enthält KI-gestützte Funktionen, die Ihnen helfen, schneller und intelligenter zu arbeiten.
+MyCompanyDesk enthalt KI-gestutzte Funktionen, die Ihnen helfen, schneller und intelligenter zu arbeiten.
 
 ## Kontextbezogener Leitfaden
 
 Der In-App-Assistent hilft Ihnen bei der Navigation durch MyCompanyDesk:
 
-- Klicken Sie auf das **Hilfe-Symbol** auf einer beliebigen Seite für kontextbezogene Hilfe
+- Klicken Sie auf das **Hilfe-Symbol** auf jeder Seite fur kontextbezogene Hilfe
 - Stellen Sie Fragen zu Funktionen, Workflows oder Einstellungen
-- Erhalten Sie Schritt-für-Schritt-Anleitungen für häufige Aufgaben
-- Verfügbar in allen vier unterstützten Sprachen
+- Erhalten Sie Schritt-fur-Schritt-Anleitungen fur haufige Aufgaben
+- Verfugbar in allen vier unterstutzten Sprachen
 
-Der Leitfaden erkennt, auf welcher Seite Sie sich befinden, und liefert relevante Vorschläge.
+Der Leitfaden versteht, auf welcher Seite Sie sich befinden, und gibt relevante Vorschlage.
 
 ### Chat-Limits
 
-Die Chat-Nutzung hängt von Ihrem Tarif ab:
+Die Chat-Nutzung hangt von Ihrem Tarif ab:
 
-| Tarif | Chat-Nachrichten |
+| Tarif | Chat-Nachrichten (monatlich) |
 |---|---|
-| Free | Begrenzt |
-| Pro | Großzügiges Kontingent |
-| Business | Höchstes Kontingent |
+| Gratis | 10 |
+| Starter | 100 |
+| Pro | 1 000 |
 
-### EU-KI-Verordnung Offenlegung (Art. 50)
+KI-Limits gelten monatlich, nicht taglich. Sie werden am Ersten jedes Monats zuruckgesetzt.
 
-Der kontextbezogene Leitfaden fällt unter die EU-KI-Verordnung (Verordnung 2024/1689) als KI-System mit begrenztem Risiko (Artikel 50). Das bedeutet, wir müssen transparent machen, dass Sie mit einer KI sprechen. Zwei Mechanismen sorgen dafür:
+### EU-KI-Gesetz-Offenlegung (Art. 50)
 
-- **KI-Badge.** Ein kleiner "KI"-Pill neben dem Assistentennamen. Immer sichtbar, solange der Leitfaden geöffnet ist. Ein Tooltip auf dem Badge nennt den zugrunde liegenden Anbieter (Google Gemini).
-- **Offenlegungstext.** Eine kurze Zeile unter der Begrüßungsfrage im leeren Chat: "Sie sprechen mit einem KI-Assistenten. Antworten können Fehler enthalten; überprüfen Sie finanzielle oder steuerliche Schlussfolgerungen stets selbst."
+Der kontextbezogene Leitfaden fallt unter das EU-KI-Gesetz (Verordnung 2024/1689) als KI-System mit begrenztem Risiko (Artikel 50). Das bedeutet, wir mussen klarstellen, dass Sie mit einer KI sprechen. Der Leitfaden enthalt dafur zwei Elemente:
 
-Die Verpflichtung gilt ab August 2026; die Offenlegungen wurden vor der Frist eingebaut.
+- **KI-Badge.** Eine kleine "KI"-Pille neben dem Assistentennamen. Immer sichtbar, solange der Leitfaden geoffnet ist. Ein Tooltip auf dem Badge nennt den zugrunde liegenden Anbieter (Google Gemini).
+- **Offenlegungstext.** Eine kurze Zeile unter der Begrussungsfrage im leeren Chat: "Sie sprechen mit einem KI-Assistenten. Antworten konnen Fehler enthalten; uberprufen Sie finanzielle oder steuerliche Schlussfolgerungen immer selbst."
 
-## KI-Vorschläge
+Die Verpflichtung tritt im August 2026 in Kraft; die Offenlegungen wurden vor der Frist implementiert.
 
-Intelligente Empfehlungen, die Ihnen helfen, Ihre Datensätze zu kategorisieren und zu beschreiben:
+## KI-Vorschlage
+
+Intelligente Empfehlungen, die Ihnen bei der Kategorisierung und Beschreibung Ihrer Eintrage helfen:
 
 ### Ausgabenkategorisierung
 
-Wenn Sie eine Ausgabe erstellen, analysiert die KI die Beschreibung und schlägt die passendste Kategorie vor. Dies spart Zeit und sorgt für konsistente Kategorisierung.
+Wenn Sie eine Ausgabe erstellen, analysiert die KI die Beschreibung und schlagt die am besten geeignete Kategorie vor. Das spart Zeit und sorgt fur eine konsistente Kategorisierung.
 
 ### Beschreibungsverbesserungen
 
-Die KI kann klarere, professionellere Beschreibungen vorschlagen für:
+KI kann klarere, professionellere Beschreibungen vorschlagen fur:
 
 - Rechnungspositionen
 - Ausgabenbeschreibungen
@@ -54,58 +56,69 @@ Die KI kann klarere, professionellere Beschreibungen vorschlagen für:
 
 ### So funktioniert es
 
-1. Erstellen oder bearbeiten Sie einen Datensatz
-2. Achten Sie auf den KI-Vorschlagsindikator
-3. Überprüfen Sie den Vorschlag
-4. Klicken Sie auf **Übernehmen**, um ihn zu verwenden, oder **Verwerfen**, um ihn zu überspringen
+1. Erstellen oder bearbeiten Sie einen Eintrag
+2. Achten Sie auf die KI-Vorschlagsanzeige
+3. Prufen Sie den Vorschlag
+4. Klicken Sie auf **Ubernehmen**, um ihn zu verwenden, oder auf **Ignorieren**, um ihn zu uberspringen
 
 ::: info
-KI-Vorschläge erfordern den **Pro**-Tarif oder höher. Aktivieren Sie sie unter **Unternehmen > Funktionen**.
+KI-Vorschlage erfordern den **Starter**-Tarif oder hoher. Aktivieren Sie sie unter **Unternehmen > Funktionen**.
 :::
 
-## Belegscanner
+## Belegscanning
 
-KI-gestützte OCR extrahiert Daten aus Belegbildern und PDFs:
+KI-gestutztes OCR extrahiert Daten aus Belegbildern und PDFs:
 
-- **Datum** — Wann der Kauf getätigt wurde
-- **Betrag** — Gesamtkosten
-- **Lieferant** — An wen Sie gezahlt haben
-- **Beschreibung** — Was gekauft wurde
+- **Datum** -- Wann der Kauf getatigt wurde
+- **Betrag** -- Gesamtkosten
+- **Lieferant** -- An wen Sie gezahlt haben
+- **Beschreibung** -- Was gekauft wurde
 
-Siehe [Belegscanner](/de/advanced/receipt-scanning) für detaillierte Anleitungen.
+Siehe [Belegscanning](/de/advanced/receipt-scanning) fur detaillierte Anweisungen.
 
-## Textprüfung
+## Textprufung
 
-Grammatik- und Rechtschreibprüfung für Ihre Dokumente:
+Grammatik- und Rechtschreibprufung fur Ihre Dokumente:
 
-- Rechnungsbeschreibungen vor dem Versand prüfen
-- Angebotsinhalt verifizieren
-- Tippfehler in kundenseitigen Texten korrigieren
+- Prufen Sie Rechnungsbeschreibungen vor dem Versand
+- Uberprufen Sie Angebotsinhalte
+- Korrigieren Sie Tippfehler in kundenorientierten Texten
 
-Unterstützt Englisch, Niederländisch, Deutsch und Französisch.
+Unterstutzt Englisch, Niederlandisch, Deutsch und Franzosisch.
 
 ::: info
-Textprüfung erfordert den **Pro**-Tarif oder höher.
+Textprufung ist in allen Tarifen verfugbar, einschliesslich Gratis.
 :::
 
 ## Kontozusammenfassungen
 
-Die KI erstellt regelmäßige Zusammenfassungen Ihrer Geschäftsaktivitäten:
+KI generiert regelmaassige Zusammenfassungen Ihrer Geschaftsaktivitat:
 
-- **Täglich** — Kurzer Überblick über die Tagesgeschäfte
-- **Wöchentlich** — Wochenrückblick mit Trends
-- **Monatlich** — Umfassende monatliche Analyse
+- **Taglich** -- Kurzer Uberblick uber die Transaktionen des Tages
+- **Wochentlich** -- Wochenubersicht mit Trends
+- **Monatlich** -- Umfassende monatliche Analyse
 
-Zusammenfassungen werden in Ihrer bevorzugten Sprache erstellt und sind über das Dashboard verfügbar.
+Zusammenfassungen werden in Ihrer bevorzugten Sprache generiert und sind uber das Dashboard verfugbar.
+
+## Tarifberechtigungen
+
+| Funktion | Gratis | Starter | Pro |
+|---|---|---|---|
+| Kontextbezogener Leitfaden | Begrenzt, nur FAQ bei Uberlauf | Standard | Hochstes Limit |
+| KI-Vorschlage | Aus | An | An |
+| Lieferantenklassifizierung | Aus | An | An |
+| Belegscanning | Aus | An | An |
+| Textprufung | An | An | An |
+| Ubersetzung | An (nur UI) | An | An |
 
 ## Datenschutz
 
-Alle cloudbasierten KI-Funktionen laufen standardmäßig auf Vertex AI in `europe-west1` (EU). MyCompanyDesk hat einen Auftragsverarbeitungsvertrag (AVV) mit Google Cloud für Vertex AI. Ollama Cloud (ollama.com, US-gehostet) ist standardmäßig deaktiviert, da kein AVV und keine Standardvertragsklauseln mit Ollama Inc. bestehen. Sie können es pro Workspace für Workloads ohne personenbezogene Daten aktivieren, es ist jedoch für alle Tarife standardmäßig ausgeschaltet.
+Alle Cloud-KI-Pfade laufen standardmaassig uber Vertex AI in `europe-west1` (EU). MyCompanyDesk hat eine Auftragsverarbeitungsvereinbarung mit Google Cloud fur die Vertex-AI-Nutzung. Ollama Cloud (ollama.com, US-gehostet) ist standardmaassig deaktiviert, da keine Auftragsverarbeitungsvereinbarung mit Ollama Inc. besteht. Sie konnen es pro Arbeitsbereich fur Workloads ohne personenbezogene Daten aktivieren, aber es ist fur alle Tarife deaktiviert.
 
-Wenn Sie `ai_processing_mode` auf `local_only` setzen, bleiben Belegscanner, KI-Vorschläge, Textprüfung, Lieferantenklassifizierung und Branchenerkennung vollständig auf Ihrem eigenen Server. Der kontextbezogene Leitfaden funktioniert nur cloudbasiert und ist im `local_only`-Modus deaktiviert.
+Wenn Sie `ai_processing_mode` auf `local_only` setzen, bleiben Belegscanning, KI-Vorschlage, Textprufung, Lieferantenklassifizierung und Branchenerkennung vollstandig auf Ihrem eigenen Server. Der kontextbezogene Leitfaden funktioniert nur in der Cloud und ist im `local_only`-Modus deaktiviert.
 
 ## Tipps
 
-- Aktivieren Sie KI-Vorschläge einmal und sie arbeiten automatisch im Hintergrund
-- Belegscanner ist besonders nützlich für Papierbelege — machen Sie einfach ein Foto
-- Der kontextbezogene Leitfaden kann die meisten „Wie mache ich..."-Fragen zur App beantworten
+- Aktivieren Sie KI-Vorschlage einmal und sie arbeiten automatisch im Hintergrund
+- Belegscanning ist besonders nutzlich fur Papierbelege -- machen Sie einfach ein Foto
+- Der kontextbezogene Leitfaden kann die meisten "Wie mache ich..."-Fragen zur App beantworten
