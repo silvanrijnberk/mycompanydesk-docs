@@ -27,6 +27,15 @@ Chatgebruik is afhankelijk van je abonnement:
 | Pro | Ruime limiet |
 | Business | Hoogste limiet |
 
+### EU AI Act-openbaarmaking (art. 50)
+
+De contextuele gids valt onder de EU AI Act (Verordening 2024/1689) als een AI-systeem met beperkt risico (artikel 50). Dit betekent dat we duidelijk moeten maken dat je met AI praat. In de gids zijn daar twee dingen voor:
+
+- **AI-badge.** Een kleine "AI"-pill naast de assistentnaam. Altijd zichtbaar zolang de gids open is. Een tooltip op de badge noemt de onderliggende provider (Google Gemini).
+- **Openbaarmakingstekst.** Een korte regel onder de welkomstvraag in een leeg gesprek: "Je praat met een AI-assistent. Antwoorden kunnen fouten bevatten; controleer financiële of fiscale conclusies altijd zelf."
+
+De verplichting geldt vanaf augustus 2026; de openbaarmakingen zijn voor de deadline ingebouwd.
+
 ## AI-suggesties
 
 Slimme aanbevelingen die je helpen bij het categoriseren en beschrijven van je records:
