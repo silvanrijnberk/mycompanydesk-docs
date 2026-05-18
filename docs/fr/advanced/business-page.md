@@ -12,7 +12,7 @@ Le constructeur de site remplace l'ancien profil d'entreprise a page unique. Vou
 
 - **Pages multiples**: Creez autant de pages que necessaire, chacune avec son propre chemin et ses propres sections.
 - **Selecteur de domaine**: Lorsque votre espace de travail possede plusieurs domaines personnalises (abonnement Pro), un menu deroulant dans la barre superieure vous permet de basculer entre l'edition du site principal et une variante par domaine. Chaque domaine dispose de ses propres pages, navigation, tokens de design et snapshot de publication.
-- **Blocs de section**: Ajoutez des sections hero, texte, galerie, services, equipe, temoignages, formulaire de contact et HTML personnalise a chaque page.
+- **Blocs de section**: Ajoutez des sections hero, texte, galerie, spotlight, services, equipe, temoignages, formulaire de contact et HTML personnalise a chaque page.
 - **Tokens de design**: Definissez les couleurs de marque, les polices, les espacements, les coins arrondis, le style de mouvement, le CSS personnalise et un favicon de site. Les modifications s'appliquent a l'ensemble du site.
 - **Editeur de navigation**: Reorganisez les liens d'en-tete par glisser-deposer, avec des groupes deroulants et des liens externes.
 - **Snapshots de publication**: Travaillez en brouillon, previsualisez vos modifications, puis publiez. Les modifications non publiees sont affichees dans la barre superieure.
@@ -26,7 +26,7 @@ Le constructeur de site dispose de cinq onglets (six lorsque Style est deplie) :
 
 - **Editeur**: Composez des pages en ajoutant et en organisant des sections. Cliquez sur une section pour modifier son contenu, sa mise en page, son style ou son animation. Faites glisser les sections pour les reordonner, les dupliquer ou les supprimer.
 - **Pages**: Gelez vos pages : creez-en de nouvelles a partir de modeles, definissez les chemins et la visibilite, et voyez quelles pages sont en ligne, en brouillon ou planifiees. Cliquez sur une page pour l'ouvrir dans l'editeur. La page d'accueil verrouillee ne peut pas etre supprimee.
-- **Style**: Personnalisez vos tokens de design a l'echelle du site : couleurs (marque, accent, papier, encre), polices (titres, corps, mono de la bibliotheque de polices), barre de navigation (disposition, arriere-plan, style du CTA), echelle (rayon, densite, largeur maximale, espacement des sections), mouvement, styles de boutons et CSS personnalise. Vous pouvez egalement ajouter des snippets d'en-tete pour l'analytique (Plausible, Umami, Matomo) ou les preconnexions de polices. Cliquez sur l'en-tete Style pour deplier ou replier l'onglet.
+- **Style**: Personnalisez vos tokens de design a l'echelle du site. Choisissez un preset en un clic (Editorial) puis ajustez les couleurs (marque, accent, papier, encre), les polices (titres, corps, mono de la bibliotheque de polices), la barre de navigation (disposition, arriere-plan, style du CTA), l'echelle (rayon, densite, largeur maximale, espacement des sections), le mouvement, les styles de boutons et le CSS personnalise. Vous pouvez egalement ajouter des snippets d'en-tete pour l'analytique (Plausible, Umami, Matomo) ou les preconnexions de polices. Cliquez sur l'en-tete Style pour deplier ou replier l'onglet.
 - **Domaine et SEO**: Configurez votre domaine personnalise et vos parametres SEO. Le contenu ici est lie au domaine selectionne dans le selecteur de domaine de la barre superieure. Lorsque le site principal (affiche sous le nom de votre espace de travail) est selectionne, aucun panneau specifique au domaine n'apparait. Consultez [Domaines, site web et boite de reception](/fr/features/domains-website-inbox) pour la gestion complete des domaines.
 - **Integrations**: Connectez des services tiers a votre site web.
 
@@ -44,12 +44,22 @@ Chaque page recoit un chemin unique. La page d'accueil (`/`) est creee par defau
 
 Dans l'onglet **Editeur** :
 
-- Cliquez sur **Ajouter une section** pour voir les types de blocs disponibles (hero, texte, galerie, services, equipe, temoignages, formulaire de contact, tarifs, produit, HTML personnalise, etc.).
+- Cliquez sur **Ajouter une section** pour voir les types de blocs disponibles (hero, texte, galerie, spotlight, services, equipe, temoignages, formulaire de contact, tarifs, produit, HTML personnalise, etc.).
 - Selectionnez un type de bloc pour l'inserer sur la page.
 - Cliquez sur une section pour ouvrir le panneau d'inspection, ou vous pouvez modifier son contenu, sa mise en page, son style et son animation.
 - Faites glisser les sections vers le haut ou le bas pour les reordonner. Utilisez les actions dupliquer et supprimer sur chaque section.
 
 Certaines sections ont des variantes systeme uniquement disponibles sur la page d'accueil verrouillee.
+
+### Spotlight
+
+Le bloc spotlight est une rangee alternee d'image et de texte. Chaque rangee affiche une image d'un cote et du texte de l'autre : un eyebrow, un titre, un sous-titre, des puces avec coches et un lien call-to-action optionnel. Vous choisissez de quel cote l'image apparait dans le panneau de mise en page.
+
+Quelques points a savoir :
+
+- **Cote de l'image** : La variante de mise en page est par defaut image-a-droite. Passez a image-a-gauche dans le panneau de mise en page pour inverser la rangee.
+- **Elements optionnels** : L'eyebrow, le sous-titre, les puces, le CTA et l'image sont tous optionnels. Un spotlight avec seulement un titre et une image s'affiche tout aussi proprement.
+- **Empilement** : Ajoutez plusieurs sections spotlight les unes en dessous des autres pour reproduire le schema classique de liste de fonctionnalites de la landing page MCD.
 
 ### Grille tarifaire avec boutons d'achat
 
@@ -107,6 +117,7 @@ Les visiteurs ayant `prefers-reduced-motion: reduce` active au niveau du systeme
 
 Dans l'onglet **Style**, vous controlez l'apparence de l'ensemble de votre site :
 
+- **Presets** : Des points de depart en un clic qui definissent les couleurs, les polices et les espacements d'un coup. Le preset Editorial apporte une palette bleu marine et or avec des titres serif et des eyebrows mono, reflet du style maison MyCompanyDesk. Appliquer un preset fusionne les tokens avec votre espace de travail, en preservant votre logo, votre CSS personnalise et vos snippets d'en-tete.
 - **Couleurs**: Choisissez les couleurs de marque, d'accent, de papier, d'encre, de surface et attenuees. La palette est appliquee via des proprietes CSS personnalisees.
 - **Typographie**: Choisissez les polices de titre, de corps et mono dans la bibliotheque integree (Geist, Inter, DM Sans, DM Serif Display, Fraunces, Instrument Serif, Geist Mono).
 - **Echelle**: Definissez le rayon des coins, la densite (compact, aere, genereux), la largeur maximale du contenu et l'espacement vertical des sections.

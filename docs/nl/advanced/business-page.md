@@ -12,7 +12,7 @@ De sitebouwer vervangt het oude bedrijfsprofiel van één pagina. Je krijgt een 
 
 - **Meerdere pagina's**: Maak zoveel pagina's als je nodig hebt, elk met een eigen pad en secties.
 - **Domeinwisselaar**: Wanneer je werkruimte meerdere eigen domeinen heeft (Pro-abonnement), kun je via een dropdown in de bovenbalk wisselen tussen het bewerken van de hoofdsite en een per-domein-variant. Elk domein krijgt zijn eigen pagina's, navigatie, ontwerptokens en publicatiesnapshot.
-- **Sectieblokken**: Voeg hero-, tekst-, galerij-, diensten-, team-, testimonial-, contactformulier- en aangepaste HTML-secties toe aan elke pagina.
+- **Sectieblokken**: Voeg hero-, tekst-, galerij-, spotlight-, diensten-, team-, testimonial-, contactformulier- en aangepaste HTML-secties toe aan elke pagina.
 - **Ontwerptokens**: Stel merkkleuren, lettertypes, witruimte, hoekradius, bewegingsstijl, aangepaste CSS en een site-favicon in. Wijzigingen gelden voor de hele site.
 - **Navigatie-editor**: Sleep en zet headerlinks op volgorde, met dropdown-groepen en externe links.
 - **Publicatiesnapshots**: Werk in concept, bekijk je wijzigingen en publiceer daarna. Ongepubliceerde wijzigingen zie je in de bovenbalk.
@@ -26,7 +26,7 @@ De sitebouwer heeft vijf tabs (zes als Stijl is uitgeklapt):
 
 - **Editor**: Stel pagina's samen door secties toe te voegen en te rangschikken. Klik op een sectie om de inhoud, layout, stijl of animatie te bewerken. Sleep secties om ze te verplaatsen, dupliceren of verwijderen.
 - **Pagina's**: Beheer je pagina's: maak nieuwe aan vanuit sjablonen, stel paden en zichtbaarheid in, en bekijk welke pagina's live, concept of ingepland zijn. Klik op een pagina om deze in de editor te openen. De vergrendelde homepage kan niet worden verwijderd.
-- **Stijl**: Pas je sitebrede ontwerptokens aan: kleuren (merk, accent, papier, inkt), lettertypes (kop, body, mono uit de lettertypebibliotheek), navbar (layout, achtergrond, knopstijl), schaal (radius, dichtheid, maximale breedte, sectie-afstand), beweging, knopstijlen en aangepaste CSS. Je kunt ook head-snippets toevoegen voor analytics (Plausible, Umami, Matomo) of lettertype-preconnects. Klik op de Stijl-header om de tab uit of in te klappen.
+- **Stijl**: Pas je sitebrede ontwerptokens aan. Kies een klik-en-klaar-preset (Editorial) en stem daarna kleuren (merk, accent, papier, inkt), lettertypes (kop, body, mono uit de lettertypebibliotheek), navbar (layout, achtergrond, knopstijl), schaal (radius, dichtheid, maximale breedte, sectie-afstand), beweging, knopstijlen en aangepaste CSS fijn af. Je kunt ook head-snippets toevoegen voor analytics (Plausible, Umami, Matomo) of lettertype-preconnects. Klik op de Stijl-header om de tab uit of in te klappen.
 - **Domein & SEO**: Configureer je eigen domein en SEO-instellingen. De inhoud hier is gekoppeld aan het domein dat in de domeinwisselaar in de bovenbalk is geselecteerd. Wanneer de hoofdsite (weergegeven als je werkruimtenaam) is geselecteerd, verschijnt er geen domeinspecifiek paneel. Zie [Domeinen, website en inbox](/nl/features/domains-website-inbox) voor het volledige domeinbeheer.
 - **Koppelingen**: Verbind diensten van derden met je website.
 
@@ -44,12 +44,22 @@ Elke pagina krijgt een uniek pad. De homepage (`/`) wordt standaard aangemaakt e
 
 In de **Editor**-tab:
 
-- Klik op **Sectie toevoegen** om de beschikbare bloktypes te zien (hero, tekst, galerij, diensten, team, testimonials, contactformulier, tarieven, product, aangepaste HTML, en meer).
+- Klik op **Sectie toevoegen** om de beschikbare bloktypes te zien (hero, tekst, galerij, spotlight, diensten, team, testimonials, contactformulier, tarieven, product, aangepaste HTML, en meer).
 - Kies een bloktype om het op de pagina te plaatsen.
 - Klik op een sectie om het inspectiepaneel te openen, waar je inhoud, layout, stijl en animatie kunt bewerken.
 - Sleep secties omhoog of omlaag om ze te verplaatsen. Gebruik de dupliceer- en verwijderacties op elke sectie.
 
 Sommige secties hebben alleen-systeemvarianten die beschikbaar zijn op de vergrendelde homepage maar niet op aangepaste pagina's.
+
+### Spotlight
+
+Het spotlight-blok is een rij waarin beeld en tekst elkaar afwisselen. Elke rij toont een afbeelding aan de ene kant en tekst aan de andere: een eyebrow, titel, ondertitel, bullets met vinkjes en een optionele call-to-action-link. In het layout-paneel bepaal je aan welke kant de afbeelding staat.
+
+Een paar dingen om te weten:
+
+- **Beeldzijde**: De layout-variant staat standaard op afbeelding-rechts. Zet hem op afbeelding-links in het layout-paneel om de rij te spiegelen.
+- **Optionele onderdelen**: Eyebrow, ondertitel, bullets, CTA en afbeelding zijn allemaal optioneel. Een spotlight met alleen een titel en afbeelding toont nog steeds een strak resultaat.
+- **Stapelen**: Zet meerdere spotlight-secties onder elkaar om het klassieke feature-lijstpatroon van de MCD-landingspagina te bouwen.
 
 ### Tarieven met koopknoppen
 
@@ -107,6 +117,7 @@ Bezoekers die `prefers-reduced-motion: reduce` op OS-niveau hebben ingeschakeld,
 
 In de **Stijl**-tab bepaal je de look-and-feel van je hele site:
 
+- **Presets**: Klik-en-klaar-startpunten die kleuren, lettertypes en witruimte in een keer instellen. De Editorial-preset geeft je een navy-met-goud-palet met serif-koppen en mono-eyebrows, de MyCompanyDesk-huisstijl. Een preset toepassen voegt de tokens samen met je werkruimte, waarbij je logo, custom CSS en head-snippets behouden blijven.
 - **Kleuren**: Kies merk-, accent-, papier-, inkt-, oppervlakte- en gedempte kleuren. Het palet wordt toegepast via CSS custom properties.
 - **Typografie**: Kies kop-, body- en mono-lettertypes uit de ingebouwde lettertypebibliotheek (Geist, Inter, DM Sans, DM Serif Display, Fraunces, Instrument Serif, Geist Mono).
 - **Schaal**: Stel hoekradius, dichtheid (compact, ruim, royaal), maximale inhoudsbreedte en verticale sectie-afstand in.
