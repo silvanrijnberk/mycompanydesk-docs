@@ -70,6 +70,39 @@ A standalone single-item buy card, for when a full pricing table is more than yo
 
 See [Sales](/features/domains-website-inbox#sales) for tracking payments and orders.
 
+## Section animations
+
+Every section block has an **Animation** panel in the inspector. It lets you add motion that plays when the section enters the viewport, on page load, or on hover.
+
+### Animation types
+
+| Type | Effect |
+|---|---|
+| **Fade up** | Section fades in while sliding up from 1rem below. |
+| **Fade in** | Section fades in from transparent. |
+| **Slide right** | Section fades in while sliding left by 2rem. |
+| **Reveal** | Section reveals from right to left using a clip mask. |
+| **Stagger** | Children fade up one after another in 80ms steps instead of the section itself moving. |
+
+### Triggers
+
+How the animation starts:
+
+- **In-view** (default): Animation fires when the section scrolls into the viewport. Uses the browser's IntersectionObserver. Once a section has animated in it stays visible.
+- **Load**: Animation fires immediately when the page mounts.
+- **Hover**: Animation fires on mouseenter and reverses on mouseleave.
+
+### Controls
+
+- **Duration**: How long the animation takes, in milliseconds. Default is 700ms.
+- **Delay**: Wait time before the animation starts, in milliseconds. Default is 0ms.
+- **Easing**: The acceleration curve. Options are **ease-out** (default), **linear**, and **spring**.
+- **Stagger children**: When enabled, the section stays at its resting state and its direct children animate in sequentially. This modifier works on top of any animation type (fade-up + stagger children, fade-in + stagger children, etc.). The section root animation is suppressed so the children carry the motion alone.
+
+### Motion reduction
+
+Visitors who have `prefers-reduced-motion: reduce` enabled at the OS level see every section in its final resting state immediately. No animations play. Workspace-level motion tokens can also force reduced motion on a per-site basis. When reduced motion is active the section never receives the hidden start-state class, so the server-rendered HTML is accessible before any JavaScript runs.
+
 ## Styling your site
 
 In the **Style** tab, you control the look and feel of your entire site:

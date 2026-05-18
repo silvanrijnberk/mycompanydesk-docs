@@ -70,6 +70,39 @@ Eine eigenständige Einzelprodukt-Kaufkarte, ideal wenn eine vollständige Preis
 
 Siehe [Verkäufe](/de/features/domains-website-inbox#verkaufe) für die Nachverfolgung von Zahlungen und Bestellungen.
 
+## Abschnitts-Animationen
+
+Jeder Abschnittsblock hat ein **Animation**-Panel im Inspector. Damit fügen Sie Bewegung hinzu, die beim Erscheinen im Viewport, beim Seitenaufruf oder bei Hover abgespielt wird.
+
+### Animationstypen
+
+| Typ | Effekt |
+|---|---|
+| **Fade up** | Der Abschnitt blendet ein und gleitet 1rem nach oben. |
+| **Fade in** | Der Abschnitt blendet aus Transparenz ein. |
+| **Slide right** | Der Abschnitt blendet ein und gleitet 2rem nach rechts. |
+| **Reveal** | Der Abschnitt wird von rechts nach links durch eine Clip-Maske enthüllt. |
+| **Stagger** | Kindelemente erscheinen nacheinander in 80ms-Schritten, anstatt dass der Abschnitt selbst sich bewegt. |
+
+### Auslöser
+
+Wie die Animation startet:
+
+- **In-view** (Standard): Die Animation wird ausgelöst, wenn der Abschnitt in den Viewport scrollt. Nutzt die IntersectionObserver des Browsers. Einmal animiert bleibt der Abschnitt sichtbar.
+- **Load**: Die Animation startet sofort beim Laden der Seite.
+- **Hover**: Die Animation startet bei mouseenter und kehrt bei mouseleave zurück.
+
+### Einstellungen
+
+- **Duration**: Dauer der Animation in Millisekunden, Standard: 700ms.
+- **Delay**: Wartezeit vor Animationsstart in Millisekunden, Standard: 0ms.
+- **Easing**: Die Beschleunigungskurve. Auswahl: **ease-out** (Standard), **linear** und **spring**.
+- **Stagger children**: Wenn aktiviert, bleibt der Abschnitt selbst in Ruhe und seine direkten Kindelemente animieren nacheinander. Diese Option funktioniert zusätzlich zu jedem Animationstyp (fade-up + stagger children, fade-in + stagger children, etc.). Die Abschnittsanimation wird unterdrückt, sodass nur die Kinder die Bewegung tragen.
+
+### Bewegungsreduktion
+
+Besucher, die `prefers-reduced-motion: reduce` auf Betriebssystemebene aktiviert haben, sehen jeden Abschnitt sofort im Endzustand. Es werden keine Animationen abgespielt. Auf Workspace-Ebene können Motion-Tokens die Bewegung auch pro Site deaktivieren. Wenn Bewegungsreduktion aktiv ist, erhält der Abschnitt nie die versteckte Startklasse, sodass das vom Server gerenderte HTML bereits vor der JavaScript-Ausführung zugänglich ist.
+
 ## Ihre Site gestalten
 
 Im **Stil**-Tab steuern Sie das Erscheinungsbild Ihrer gesamten Site:
