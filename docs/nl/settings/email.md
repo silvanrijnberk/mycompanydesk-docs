@@ -8,7 +8,7 @@ Configureer hoe MyCompanyDesk e-mails verstuurt naar je klanten — van factuurv
 
 ## E-mailverzendmethoden
 
-MyCompanyDesk ondersteunt drie manieren om e-mails te versturen:
+MyCompanyDesk ondersteunt vier manieren om e-mails te versturen. Je gekozen verzendmethode wordt altijd gevolgd voor geautomatiseerde facturen en herinneringen. Als je een inbox op je domein instelt, overschrijft die je keuze niet -- de inbox is voor ontvangen en antwoorden, terwijl je gekozen verzendmethode de transactionele uitgaande mail afhandelt.
 
 ### 1. Ingebouwde e-mail (standaard)
 

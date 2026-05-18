@@ -175,7 +175,7 @@ The checkout-success and checkout-cancelled pages show the buyer a branded resul
 
 ## Sending mail vs receiving mail
 
-This bundle is the **receiving** side. Outgoing email — invoice delivery, reminders, quote sends — is handled by the broader email pipeline described in [Email Integration](/settings/email). Once a domain is verified and the inbox is enabled, the same domain is used as the From address for outbound mail too, with DKIM signing on `mail.acme.nl`.
+This bundle is the **receiving** side. Outgoing email — invoice delivery, reminders, quote sends — is handled by the broader email pipeline described in [Email Integration](/settings/email). The inbox is for receiving customer mail and composing replies; it does not route your automated invoice sends. Invoice delivery always respects your chosen delivery method under [Email Integration](/settings/email) (Gmail, Outlook, custom SMTP, or the built-in sender). The inbox domain's DKIM is used for outbound replies composed in the inbox, not for automated transactional mail.
 
 ## Limits and gotchas
 

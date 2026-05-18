@@ -78,6 +78,8 @@ Path: `/workspace/email/sending`
 
 Most users never need to touch this. The default uses MyCompanyDesk's shared sender — delivery, retries, and reputation are handled for you.
 
+Your delivery method preference is always honored for automated invoice and reminder sends. If you set up an inbox on your domain, it does not override this choice — the inbox is for receiving mail and composing replies, while your selected delivery method handles transactional outgoing mail.
+
 The advanced strip exposes alternative delivery methods:
 
 - **Gmail** — connect via Google OAuth; emails go out from your Gmail address and appear in your Gmail Sent folder

@@ -8,7 +8,7 @@ Configurez la maniere dont MyCompanyDesk envoie des e-mails a vos clients -- de 
 
 ## Methodes d'envoi d'e-mails
 
-MyCompanyDesk prend en charge trois manieres d'envoyer des e-mails :
+MyCompanyDesk prend en charge quatre manieres d'envoyer des e-mails. La methode d'envoi que vous avez choisie est toujours respectee pour les factures et rappels automatises. Si vous configurez une boite de reception sur votre domaine, elle ne remplace pas ce choix -- la boite de reception sert a recevoir et a repondre, tandis que votre methode d'envoi choisie gere les e-mails transactionnels sortants.
 
 ### 1. E-mail integre (par defaut)
 
