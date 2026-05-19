@@ -1,6 +1,6 @@
 ---
 title: Dashboard
-last_verified: 2026-05-09
+last_verified: 2026-05-19
 ---
 
 # Dashboard
@@ -38,10 +38,11 @@ Pick your profile from the profile selector in the dashboard. The default profil
 
 ## Sections
 
-The registry ships thirteen sections. Mobile-only and desktop-only flags reflect what fits sensibly at each width.
+The registry ships fourteen sections. Mobile-only and desktop-only flags reflect what fits sensibly at each width.
 
 | Section ID | Lucide icon | Category | Devices | Default desktop size |
 |---|---|---|---|---|
+| `dashboard-hero` | `gauge` | accounting | both | 12 × 4 |
 | `kpi-headline` | `bar-chart-3` | accounting | both | 12 × 4 |
 | `operational-queue` | `bell` | platform | both | 6 × 3 |
 | `activity-timeline` | `activity` | activity | both | 6 × 3 |
@@ -55,6 +56,24 @@ The registry ships thirteen sections. Mobile-only and desktop-only flags reflect
 | `email-activity` | `mail` | activity | both | 6 × 4 |
 | `portal-activity` | `door-open` | activity | both | 6 × 4 |
 | `website-activity` | `globe` | activity | both | 6 × 4 |
+
+### Dashboard hero
+
+A top-of-page summary panel with the three money tiles (revenue, expenses, net result) and, when relevant, compliance alerts (VAT deadline status and urencriterium progress).
+
+**Money tiles**
+- **Revenue**: This period's revenue with a percentage trend compared to the previous period. Green when revenue is positive.
+- **Expenses**: This period's expenses with trend. The arrow is inverted so a downward expense trend shows green.
+- **Net result**: Revenue minus expenses, green when positive, red when negative.
+
+Each tile links through to the relevant view: revenue -> reports `?lens=revenue`, expenses -> `/expenses`, net -> `/reports/pnl`.
+
+**Compliance**
+When workspace data includes VAT return deadlines and urencriterium tracking, the hero shows:
+- **VAT deadline**: `{days}` until due, due today, or overdue, with the current balance. Links to `/vat`.
+- **Urencriterium**: Current hours percentage progress and hours remaining. Links to `/dashboard?settings=compliance`.
+
+When no period figures exist yet the hero shows an empty state with "No activity" and "No figures for this period yet."
 
 ### KPI headline
 
@@ -113,16 +132,6 @@ A bottom sheet opens with a vertical reorder list and per-section visibility tog
 
 While the magical setup wizard at `/setup` still has fields to fill, a `FinishSetupBanner` pins itself above the dashboard with the count of pending fields and a **Resume setup** button. It now includes a dismiss button (X icon) that hides the banner per browser via localStorage, surviving reloads until the wizard is completed. The old onboarding card on the dashboard was removed; this banner replaces it. The wizard is non-blocking: new signups land on `/dashboard` directly and are not force-redirected.
 
-## Pro welcome banner
-
-Workspaces on the Pro plan see a subtle welcome pill above the dashboard grid. Three tiers are distinguished so a trial does not look like a paid subscription:
-
-- **Founding Member** — "Welcome back, {name}. Your Founding-Member Pro is active forever." Crown icon in celebratory gold.
-- **Trial** — "Welcome back, {name}. Pro trial runs for {days} more days." Crown icon in warm amber, reads as provisional.
-- **Paid Pro** — "Welcome back, {name}. Your Pro workspace is ready." Crown icon in violet.
-
-Each tier shows appropriate copy and styling. The pill does not compete with the setup banner or the dashboard sections below.
-
 ## Drill-through
 
 Every entity link in the dashboard takes you to a filtered list view, not a detail page:
@@ -133,6 +142,8 @@ Every entity link in the dashboard takes you to a filtered list view, not a deta
 | Draft invoice alert | `/invoices?status=draft` |
 | Cash warning | `/reports/cashflow` |
 | VAT deadline | `/vat` |
+| Dashboard hero VAT | `/vat` |
+| Dashboard hero urencriterium | `/dashboard?settings=compliance` |
 | Uncategorised expenses | `/expenses` |
 | AR aging bucket | `/invoices?status=overdue` (age-filtered) |
 | Customer concentration slice | `/customers/{id}` |

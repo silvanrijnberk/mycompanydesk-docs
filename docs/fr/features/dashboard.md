@@ -31,6 +31,27 @@ Chaque profil affiche differentes cartes d'indicateurs, alertes et actions rapid
 
 ## Sections du tableau de bord
 
+### Dashboard Hero
+
+En haut du tableau de bord se trouve un panneau de synthese avec les trois tuiles financieres (chiffre d'affaires, depenses, resultat net) et, le cas echeant, des alertes de conformite.
+
+**Tuiles financieres**
+
+- **Chiffre d'affaires** : Chiffre d'affaires de la periode avec une tendance en pourcentage par rapport a la periode precedente. Vert lorsque le CA est positif.
+- **Depenses** : Depenses de la periode avec tendance. La fleche est inversee pour qu'une baisse des depenses s'affiche en vert.
+- **Resultat net** : CA moins depenses, vert si positif, rouge si negatif.
+
+Chaque tuile renvoie vers la vue correspondante : CA vers les rapports avec lentille `revenue`, depenses vers `/expenses`, resultat net vers `/reports/pnl`.
+
+**Conformite**
+
+Lorsque votre espace de travail gere les declarations de TVA et le seuil d'heures, la hero affiche egalement :
+
+- **Echeance TVA** : Declaration dans {days} jours, a rendre aujourd'hui, ou en retard de {days} jours, avec le solde. Lie vers `/vat`.
+- **Seuil d'heures** : Progression actuelle en pourcentage et heures restantes. Lie vers `/dashboard?settings=compliance`.
+
+Si aucun chiffre n'est disponible pour la periode, la hero affiche un etat vide avec "Aucune activite" et "Pas encore de chiffres pour cette periode."
+
 ### Alertes
 
 Elements critiques necessitant votre attention :
@@ -80,13 +101,3 @@ Un fil d'evenements recents dans votre espace de travail :
 ## Carte d'accueil
 
 Tant que l'assistant de configuration sous `/setup` a encore des champs a remplir, un `FinishSetupBanner` s'affiche en haut du tableau de bord avec un decompte des champs en attente et un bouton **Continuer**. La banniere a maintenant un bouton de fermeture (icone X) qui la masque par navigateur via localStorage, la maintenant masquee d'un rechargement a l'autre jusqu'a ce que l'assistant soit termine. L'ancienne carte d'accueil a ete supprimee; cette banniere la remplace. L'assistant est non bloquant : les nouvelles inscriptions arrivent directement sur `/dashboard` et ne sont pas redirigees de force.
-
-## Banniere de bienvenue Pro
-
-Les espaces de travail avec un abonnement Pro voient un pill de bienvenue discret au-dessus de la grille du tableau de bord. Trois niveaux sont distingues pour qu'une periode d'essai ne ressemble pas a un abonnement payant :
-
-- **Founding Member** — "Content de vous revoir, {name}. Votre statut Founding-Member Pro est actif a vie." Icone de couronne en or celebratoire.
-- **Periode d'essai** — "Content de vous revoir, {name}. L'essai Pro expire dans {days} jours." Icone de couronne en ambre chaud, a lecture provisoire.
-- **Pro payant** — "Content de vous revoir, {name}. Votre espace Pro est pret." Icone de couronne en violet.
-
-Chaque niveau affiche le texte et le style appropries. Le pill n'entre pas en concurrence avec la banniere de configuration ou les sections du tableau de bord.
