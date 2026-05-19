@@ -145,17 +145,16 @@ Founder claims now have two tiers for renewal:
 
 The eligibility endpoint (`GET /api/domain-purchase/founder/eligibility`) now returns a `tier` field (`founder` | `trial` | `paid` | `free`) and `founderSlotsRemaining` alongside the existing gates. The 50-slot cap applies only to Founder-tier claims; trial-tier claims do not count against the Founder cap.
 
-Founder eligibility is determined by a set of gates checked server-side in `founder-domain-claim.service.js`:
+Founder eligibility is determined by a set of hard gates checked server-side in `founder-domain-claim.service.js`:
 
 - **Founding Member status** -- the workspace must have the Founding Member flag.
 - **Free-domain slots** capped at 50 across all Founding Members for Founder-tier claims. Trial-tier claims are not counted against this cap.
 - **KVK required** -- the workspace must have a linked KVK number.
 - **Domain must be `.nl`** -- the free program only covers the NL TLD.
 - **Domain must match the KVK name** -- the domain must correspond to the registered legal name or a trade name.
-- **Account age** -- the account must be at least 14 days old.
-- **Site must be published** -- the workspace's public business page must be live.
-- **Site content minimum** -- the site must have at least 3 paragraphs of content.
-- **One free domain per KVK** -- a KVK number can only claim one free domain.
+- **KVK must not be on the retained-claims list** -- one free domain per KVK number. A KVK that has already claimed (and then transferred away) a free domain is blocked permanently.
+
+Account age and site-content quality are not hard gates. They would block legitimate onboarding-day claims, which contradicts the "set up your business in a day, domain included" pitch. Instead, both flow into the Gemini abuse score as soft signals: a brand-new account with a template site scores low and lands in manual review; a real business with real content auto-approves regardless of age. The eligibility response carries a `softSignals` block (`ageDays`, `sitePublished`, `paragraphCount`) so the UI can surface a hint without blocking the claim.
 
 When a gate fails, the card lists the remaining requirements so the user can see what is left to unlock before the free claim becomes available.
 

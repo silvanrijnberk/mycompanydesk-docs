@@ -145,17 +145,16 @@ Les reclamations Founder ont desormais deux niveaux pour le renouvellement :
 
 Le point de terminaison d'eligibilite (`GET /api/domain-purchase/founder/eligibility`) renvoie desormais un champ `tier` (`founder` | `trial` | `paid` | `free`) et `founderSlotsRemaining` en plus des conditions existantes. La limite de 50 places ne s'applique qu'aux reclamations de niveau Founder ; les reclamations de niveau Trial ne sont pas comptees dans ce plafond.
 
-L'eligibilite Founder est determinee par un ensemble de conditions verifiees cote serveur dans `founder-domain-claim.service.js` :
+L'eligibilite Founder est determinee par un ensemble de conditions strictes verifiees cote serveur dans `founder-domain-claim.service.js` :
 
 - **Statut Founding Member** -- l'espace de travail doit avoir le drapeau Founding Member.
 - **Places de domaine gratuit** limitees a 50 pour les reclamations de niveau Founder. Les reclamations Trial ne comptent pas.
 - **KVK requis** -- l'espace de travail doit avoir un numero KVK lie.
 - **Le domaine doit être `.nl`** -- le programme gratuit ne concerne que l'extension NL.
 - **Le domaine doit correspondre au nom KVK** -- le domaine doit correspondre a la raison sociale ou a un nom commercial.
-- **Age du compte** -- le compte doit avoir au moins 14 jours.
-- **Site publie** -- la page d'entreprise publique de l'espace de travail doit être en ligne.
-- **Contenu minimum du site** -- le site doit contenir au moins 3 paragraphes.
-- **Un domaine gratuit par KVK** -- un numero KVK ne peut reclamer qu'un seul domaine gratuit.
+- **Le KVK ne doit pas figurer sur la liste des reclamations conservees** -- un domaine gratuit par numero KVK. Un KVK qui a deja reclame (puis transfere) un domaine gratuit est bloque de façon permanente.
+
+L'age du compte et le contenu du site ne sont pas des conditions strictes. Elles bloqueraient les reclamations legitimes le jour de l'intégration, ce qui contredit la promesse "creez votre entreprise en un jour, domaine inclus". Les deux sont plutot integres dans le score d'abus Gemini comme signaux faibles : un tout nouveau compte avec un site modele obtient un score bas et passe en revision manuelle ; une vraie entreprise avec du vrai contenu est automatiquement approuvee, peu importe l'age. La reponse d'eligibilite contient un bloc `softSignals` (`ageDays`, `sitePublished`, `paragraphCount`) pour que l'interface puisse afficher une indication sans bloquer la reclamation.
 
 Lorsqu'une condition n'est pas remplie, la carte liste les exigences restantes pour que l'utilisateur puisse voir ce qu'il reste a debloquer avant que la reclamation gratuite ne soit disponible.
 

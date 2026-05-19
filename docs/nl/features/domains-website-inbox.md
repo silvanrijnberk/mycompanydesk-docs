@@ -145,17 +145,16 @@ Founder-claims hebben nu twee tiers voor verlenging:
 
 Het eligibility-eindpunt (`GET /api/domain-purchase/founder/eligibility`) retourneert nu een `tier`-veld (`founder` | `trial` | `paid` | `free`) en `founderSlotsRemaining` naast de bestaande gates. De limiet van 50 plekken geldt alleen voor Founder-tier claims; trial-tier claims tellen niet mee voor het Founder-limiet.
 
-De geschiktheid wordt bepaald door voorwaarden die server-side worden gecontroleerd in `founder-domain-claim.service.js`:
+De geschiktheid wordt bepaald door harde voorwaarden die server-side worden gecontroleerd in `founder-domain-claim.service.js`:
 
 - **Founding Member-status** -- de werkruimte moet de Founding Member-vlag hebben.
 - **Gratis-domein plekken** voor Founder-tier claims beperkt tot 50. Trial-tier claims vallen hier buiten.
 - **KVK vereist** -- de werkruimte moet een KVK-nummer gekoppeld hebben.
 - **Domein moet `.nl` zijn** -- de gratis actie geldt alleen voor de NL-extensie.
 - **Domein moet overeenkomen met de KVK-naam** -- het domein moet corresponderen met de geregistreerde statutaire naam of een handelsnaam.
-- **Account-leeftijd** -- het account moet minimaal 14 dagen oud zijn.
-- **Site moet gepubliceerd zijn** -- de openbare bedrijfspagina van de werkruimte moet live zijn.
-- **Minimale site-inhoud** -- de site moet minimaal 3 alinea's bevatten.
-- **Een gratis domein per KVK** -- een KVK-nummer kan slechts een gratis domein claimen.
+- **KVK mag niet op de retained-claims-lijst staan** -- een gratis domein per KVK-nummer. Een KVK die al eerder een gratis domein heeft geclaimd (en daarna overgedragen) is permanent geblokkeerd.
+
+Account-leeftijd en site-inhoud zijn geen harde voorwaarden. Die zouden legitieme claims op de dag van onboarding blokkeren, wat in strijd is met de belofte "je bedrijf in een dag opzetten, domein inbegrepen". In plaats daarvan stromen beide in de Gemini-abuse-score als zachte signalen: een gloednieuw account met een template-site scoort laag en komt in handmatige beoordeling; een echt bedrijf met echte inhoud wordt automatisch goedgekeurd, ongeacht de leeftijd. Het eligibility-antwoord bevat een `softSignals`-blok (`ageDays`, `sitePublished`, `paragraphCount`) zodat de UI een hint kan tonen zonder de claim te blokkeren.
 
 Wanneer een voorwaarde niet wordt gehaald, toont de kaart de resterende vereisten zodat de gebruiker kan zien wat er nog nodig is voordat de gratis claim beschikbaar komt.
 

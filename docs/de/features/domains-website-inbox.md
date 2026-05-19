@@ -145,17 +145,16 @@ Founder-Claims haben jetzt zwei Stufen für die Verlängerung:
 
 Der Berechtigungs-Endpunkt (`GET /api/domain-purchase/founder/eligibility`) liefert jetzt ein `tier`-Feld (`founder` | `trial` | `paid` | `free`) und `founderSlotsRemaining` neben den bestehenden Gates. Die Begrenzung auf 50 Plätze gilt nur für Founder-Claims; Trial-Claims zählen nicht zum Founder-Kontingent.
 
-Die Founder-Berechtigung wird durch server-seitig in `founder-domain-claim.service.js` geprüfte Bedingungen bestimmt:
+Die Founder-Berechtigung wird durch server-seitig in `founder-domain-claim.service.js` geprüfte harte Bedingungen bestimmt:
 
 - **Founding-Member-Status** -- der Workspace muss das Founding-Member-Flag haben.
 - **Gratis-Domain-Plätze** für Founder-Claims auf 50 begrenzt. Trial-Claims zählen nicht dazu.
 - **KVK erforderlich** -- der Workspace muss eine KVK-Nummer verknüpft haben.
 - **Domain muss `.nl` sein** -- das Gratisprogramm gilt nur für die NL-Endung.
 - **Domain muss mit dem KVK-Namen übereinstimmen** -- die Domain muss dem registrierten Firmennamen oder einem Handelsnamen entsprechen.
-- **Kontoalter** -- das Konto muss mindestens 14 Tage alt sein.
-- **Website muss veröffentlicht sein** -- die öffentliche Unternehmensseite des Workspace muss live sein.
-- **Mindestinhalt der Website** -- die Website muss mindestens 3 Absätze enthalten.
-- **Eine Gratis-Domain pro KVK** -- eine KVK-Nummer kann nur eine Gratis-Domain beanspruchen.
+- **KVK darf nicht auf der Retained-Claims-Liste stehen** -- eine Gratis-Domain pro KVK-Nummer. Eine KVK, die bereits eine Gratis-Domain beansprucht (und dann übertragen) hat, ist dauerhaft gesperrt.
+
+Kontoalter und Website-Inhalt sind keine harten Bedingungen. Sie würden legitime Onboarding-Tag-Claims blockieren, was dem "Ihr Unternehmen an einem Tag gründen, Domain inklusive"-Versprechen widerspricht. Stattdessen fließen beide als weiche Signale in den Gemini-Abuse-Score ein: ein brandneues Konto mit einer Template-Website erzielt einen niedrigen Score und landet in der manuellen Prüfung; ein echtes Unternehmen mit echtem Inhalt wird unabhängig vom Alter automatisch genehmigt. Die Eligibility-Antwort enthält einen `softSignals`-Block (`ageDays`, `sitePublished`, `paragraphCount`), sodass die UI einen Hinweis anzeigen kann, ohne den Claim zu blockieren.
 
 Wenn eine Bedingung nicht erfüllt ist, listet die Karte die verbleibenden Anforderungen auf, damit der Benutzer sieht, was noch zum Freischalten der Gratis-Claim fehlt.
 
