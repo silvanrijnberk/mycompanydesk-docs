@@ -133,10 +133,10 @@ Capabilities:
 
 - **Threading** — inbound mail is grouped into threads keyed by RFC 822 `Message-ID` / `In-Reply-To` / `References`. Each thread carries `last_message_preview`, `participants`, status (`open / snoozed / closed / spam`) and labels.
 - **Reply** — inline reply box on the thread. Smart `From` picks the address the original mail was sent to, so a customer who emailed `support@acme.nl` gets a reply from `support@`, not `info@`.
-- **Reply all** — one-click reply to all participants on the thread. The action appears next to reply in the thread header and includes every recipient from the original message.
+- **Reply all** — reply to all participants on the thread with one click. The action appears next to reply in the thread header and includes every recipient from the original message.
 - **Forward** — forward the entire thread to another recipient. Opens a compose drawer with the original message body and attachments preserved for editing before sending. The forwarded message header shows the original sender, date and subject.
-- **CC and BCC** — CC and BCC fields are available on both compose and reply through an "Add Cc/Bcc" toggle. Addresses accept comma-separated lists or paste-from-clipboard. The inputs stay hidden until needed, matching the standard inbox pattern where most messages do not need them.
-- **Compose** — drawer form with mailbox picker, send-as picker, customer picker (or freeform `To`), subject, body, CC/BCC fields, attachments. Bounced-recipient warning is shown before send.
+- **CC and BCC** — CC and BCC fields are available on both compose and reply through an "Add Cc/Bcc" toggle. Addresses accept comma-separated lists or paste from clipboard. The inputs stay hidden until needed, matching the standard inbox pattern where most messages do not need them.
+- **Compose** — drawer form with mailbox picker, send-as picker, customer picker (or freeform `To`), subject, body, CC/BCC fields and attachments. Bounced-recipient warning is shown before send.
 - **Send-as aliases** — `info@`, `support@`, `sales@` are bidirectional aliases on the same mailbox. `noreply@` is send-only — selectable as From, but inbound mail to it is dropped on ingest.
 - **Attachments** — upload before send (compose and reply both). Attachments on inbound mail are downloadable from the message; signed download URLs expire after a short TTL.
 - **Alias notice** — when an inbound message arrives at an address that isn't yet a declared alias, the thread shows a soft notice with an "Add as alias" action.
