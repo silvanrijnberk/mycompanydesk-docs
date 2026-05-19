@@ -31,6 +31,27 @@ Elk profiel toont andere statistiekkaarten, meldingen en snelle acties die relev
 
 ## Dashboardonderdelen
 
+### Dashboard hero
+
+Bovenaan het dashboard staat een overzichtspaneel met de drie geldtegels (omzet, uitgaven, nettoresultaat) en, wanneer relevant, compliance-meldingen.
+
+**Geldtegels**
+
+- **Omzet**: Omzet van deze periode met een procentuele trend vergeleken met de vorige periode. Groen wanneer de omzet positief is.
+- **Uitgaven**: Uitgaven van deze periode met trend. De pijl is omgekeerd: een lagere uitgavetrend dan vorige periode toont groen.
+- **Nettoresultaat**: Omzet minus uitgaven, groen bij positief, rood bij negatief.
+
+Elke tegel linkt door naar het relevante overzicht: omzet naar rapporten met lens `revenue`, uitgaven naar `/expenses`, nettoresultaat naar `/reports/pnl`.
+
+**Compliance**
+
+Wanneer je werkruimte btw-aangiftes en urencriterium bijhoudt, toont de hero ook:
+
+- **BTW-deadline**: Nog {days} dagen tot aangifte, vandaag verschuldigd, of {days} dagen over tijd, met het saldo. Linkt naar `/vat`.
+- **Urencriterium**: Huidige urenvoortgang in procent en resterende uren. Linkt naar `/dashboard?settings=compliance`.
+
+Als er nog geen periodecijfers zijn toont de hero een lege staat met "Geen activiteit" en "Nog geen cijfers voor deze periode."
+
 ### Meldingen
 
 Kritieke zaken die je aandacht vereisen:
@@ -80,13 +101,3 @@ Een feed van recente gebeurtenissen in je werkruimte:
 ## Onboardingkaart
 
 Zolang de setup-wizard op `/setup` nog velden te vullen heeft, staat er een `FinishSetupBanner` bovenaan het dashboard met een teller van openstaande velden en een **Verder**-knop. De banner heeft nu een sluitknop (X-icoon) die de banner per browser verbergt via localStorage, zodat deze over herlaadbeurten verborgen blijft totdat de wizard is voltooid. De oude onboardingkaart op het dashboard is verwijderd; deze banner vervangt hem. De wizard is niet-blokkerend: nieuwe aanmeldingen komen direct op `/dashboard` en worden niet geforceerd doorgestuurd.
-
-## Pro-welkomstbanner
-
-Werkruimtes op het Pro-abonnement zien een subtiele welkomstpil boven het dashboardraster. Drie niveaus worden onderscheiden zodat een proefperiode er niet als een betaald abonnement uitziet:
-
-- **Founding Member** — "Welkom terug, {name}. Je Founding-Member Pro is voor altijd actief." Kroonicoon in feestelijk goud.
-- **Proefperiode** — "Welkom terug, {name}. Pro-proefperiode loopt nog {days} dagen." Kroonicoon in warm amber, leest als tijdelijk.
-- **Betaald Pro** — "Welkom terug, {name}. Je Pro-account staat klaar." Kroonicoon in violet.
-
-Elk niveau toont de juiste tekst en stijl. De pil concurreert niet met de setup-banner of de dashboardsecties eronder.

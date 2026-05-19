@@ -31,6 +31,27 @@ Jedes Profil zeigt unterschiedliche Kennzahlenkarten, Warnungen und Schnellaktio
 
 ## Dashboard-Bereiche
 
+### Dashboard Hero
+
+Oben im Dashboard befindet sich ein Übersichtsfenster mit den drei Geldkacheln (Umsatz, Ausgaben, Nettoergebnis) und, wenn vorhanden, Compliance-Hinweisen.
+
+**Geldkacheln**
+
+- **Umsatz**: Umsatz dieser Periode mit prozentualem Trend im Vergleich zur Vorperiode. Grün, wenn der Umsatz positiv ist.
+- **Ausgaben**: Ausgaben dieser Periode mit Trend. Der Pfeil ist umgekehrt, sodass ein sinkender Ausgabentrend grün anzeigt.
+- **Nettoergebnis**: Umsatz minus Ausgaben, grün bei positivem Wert, rot bei negativem.
+
+Jede Kachel verlinkt auf die relevante Ansicht: Umsatz zu Berichten mit Linse `revenue`, Ausgaben zu `/expenses`, Nettoergebnis zu `/reports/pnl`.
+
+**Compliance**
+
+Wenn Ihr Arbeitsbereich USt.-Voranmeldungen und Stundennachweise führt, zeigt die Hero außerdem:
+
+- **USt.-Frist**: Noch {days} Tage bis zur Abgabe, heute fällig oder {days} Tage überfällig, mit dem Saldo. Verlinkt auf `/vat`.
+- **Stundennachweis**: Aktueller Stundenfortschritt in Prozent und verbleibende Stunden. Verlinkt auf `/dashboard?settings=compliance`.
+
+Wenn es noch keine Periodenzahlen gibt, zeigt die Hero einen leeren Zustand mit "Keine Aktivität" und "Noch keine Zahlen für diesen Zeitraum."
+
 ### Warnungen
 
 Kritische Punkte, die Ihre Aufmerksamkeit erfordern:
@@ -80,13 +101,3 @@ Ein Feed der neuesten Ereignisse in Ihrem Arbeitsbereich:
 ## Onboarding-Karte
 
 Solange der Einrichtungsassistent unter `/setup` noch Felder zu füllen hat, steht ein `FinishSetupBanner` oben auf dem Dashboard mit einer Zählung der ausstehenden Felder und einem **Weiter**-Button. Die Karte hat jetzt eine Schließen-Schaltfläche (X-Symbol), die die Karte pro Browser über localStorage ausblendet, sodass sie über Seitenneuladungen hinweg ausgeblendet bleibt, bis der Assistent abgeschlossen ist. Die alte Onboarding-Karte wurde entfernt; diese Karte ersetzt sie. Der Assistent ist nicht blockierend: neue Anmeldungen landen direkt auf `/dashboard` und werden nicht zwangsumgeleitet.
-
-## Pro-Willkommensbanner
-
-Arbeitsbereiche mit Pro-Abonnement sehen ein dezentes Willkommens-Pill über dem Dashboard-Raster. Drei Stufen werden unterschieden, damit eine Testphase nicht wie ein bezahltes Abo aussieht:
-
-- **Founding Member** — "Willkommen zurück, {name}. Ihr Founding-Member Pro ist dauerhaft aktiv." Kronen-Icon in feierlichem Gold.
-- **Testphase** — "Willkommen zurück, {name}. Pro-Testphase läuft noch {days} Tage." Kronen-Icon in warmem Bernstein, wirkt vorläufig.
-- **Bezahltes Pro** — "Willkommen zurück, {name}. Ihr Pro-Arbeitsbereich ist bereit." Kronen-Icon in Violett.
-
-Jede Stufe zeigt den passenden Text und Stil. Das Pill steht nicht in Konkurrenz zum Setup-Banner oder den Dashboard-Bereichen darunter.
