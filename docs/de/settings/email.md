@@ -38,19 +38,6 @@ Senden Sie von Ihrem Outlook- oder Microsoft 365-Konto:
 3. Autorisieren Sie über Microsoft OAuth
 4. E-Mails werden von Ihrer Outlook-Adresse gesendet
 
-### 4. Benutzerdefiniertes SMTP
-
-Für volle Kontrolle verwenden Sie Ihren eigenen SMTP-Server:
-
-1. Gehen Sie zu **Einstellungen > Kommunikation > E-Mail**
-2. Geben Sie Ihre SMTP-Details ein:
-   - **Host** — SMTP-Serveradresse
-   - **Port** — Server-Port (587 für TLS, 465 für SSL)
-   - **Benutzername** — SMTP-Anmeldung
-   - **Passwort** — SMTP-Passwort
-3. Klicken Sie auf **Verbindung testen**, um die Funktion zu überprüfen
-4. Speichern
-
 ## E-Mail-Vorlagen
 
 Passen Sie die E-Mails an, die mit Ihren Rechnungen und Erinnerungen versendet werden.

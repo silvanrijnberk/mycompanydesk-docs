@@ -84,7 +84,6 @@ The advanced strip exposes alternative delivery methods:
 
 - **Gmail** — connect via Google OAuth; emails go out from your Gmail address and appear in your Gmail Sent folder
 - **Outlook / Microsoft 365** — connect via Microsoft OAuth
-- **Custom SMTP** — host, port (587 TLS / 465 SSL), username, password, with a "Test connection" button
 
 The whole page is "advanced" in spirit, so the body sits behind an `AdvancedStrip` with a friendly explanation up top.
 

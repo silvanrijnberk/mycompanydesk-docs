@@ -38,19 +38,6 @@ Envoyez depuis votre compte Outlook ou Microsoft 365 :
 3. Autorisez via Microsoft OAuth
 4. Les e-mails sont envoyes depuis votre adresse Outlook
 
-### 4. SMTP personnalise
-
-Pour un controle total, utilisez votre propre serveur SMTP :
-
-1. Allez dans **Parametres > Communication > E-mail**
-2. Entrez vos details SMTP :
-   - **Host** -- Adresse du serveur SMTP
-   - **Port** -- Port du serveur (587 pour TLS, 465 pour SSL)
-   - **Username** -- Identifiant SMTP
-   - **Password** -- Mot de passe SMTP
-3. Cliquez sur **Tester la connexion** pour verifier le fonctionnement
-4. Enregistrez
-
 ## Modeles d'e-mail
 
 Personnalisez les e-mails envoyes avec vos factures et rappels.
