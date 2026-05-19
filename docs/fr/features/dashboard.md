@@ -85,8 +85,8 @@ Tant que l'assistant de configuration sous `/setup` a encore des champs a rempli
 
 Les espaces de travail avec un abonnement Pro voient un pill de bienvenue discret au-dessus de la grille du tableau de bord. Trois niveaux sont distingues pour qu'une periode d'essai ne ressemble pas a un abonnement payant :
 
-- **Founding Member** -- "Content de vous revoir, {name}. Votre statut Founding-Member Pro est actif a vie." Icone de couronne en or celebratoire.
-- **Periode d'essai** -- "Content de vous revoir, {name}. L'essai Pro expire dans {days} jours." Icone de couronne en ambre chaud, a lecture provisoire.
-- **Pro payant** -- "Content de vous revoir, {name}. Votre espace Pro est pret." Icone de couronne en violet.
+- **Founding Member** — "Content de vous revoir, {name}. Votre statut Founding-Member Pro est actif a vie." Icone de couronne en or celebratoire.
+- **Periode d'essai** — "Content de vous revoir, {name}. L'essai Pro expire dans {days} jours." Icone de couronne en ambre chaud, a lecture provisoire.
+- **Pro payant** — "Content de vous revoir, {name}. Votre espace Pro est pret." Icone de couronne en violet.
 
 Chaque niveau affiche le texte et le style appropries. Le pill n'entre pas en concurrence avec la banniere de configuration ou les sections du tableau de bord.
