@@ -14,9 +14,9 @@ Wenn Sie hier die grundlegende Einfuhrung suchen, beginnen Sie bei [Unternehmen 
 Der Assistent ist auf zwei Wegen erreichbar:
 
 - **Direkt:** Navigieren Sie jederzeit zu `/setup`.
-- **Dashboard-Banner:** Solange das Onboarding nicht abgeschlossen ist und mindestens ein Einstellungsfeld leer ist (`businessName`, `country`, `chamber`, `address`, `brandColor`, `tagline`, `about`, `domain`), erscheint oben auf `/dashboard` ein "Setup abschliessen"-Banner mit einer Zahlung der ausstehenden Felder und einer Schaltflache zuruck zum Assistenten.
+- **Dashboard-Banner:** Solange das Onboarding nicht abgeschlossen ist, erscheint ein schließbares "Setup abschließen"-Banner oben auf `/dashboard`. Es zeigt eine Zählung der ausstehenden Felder (oder einen generischen "Profil vervollständigen"-Text, wenn die Zählung null ist) und eine Schaltfläche zurück zum Assistenten. Eine Schließen-Schaltfläche (X-Symbol) blendet das Banner pro Browser über localStorage aus, sodass es über Seitenneuladungen hinweg ausgeblendet bleibt, bis der Assistent abgeschlossen ist.
 
-Ruckkehrende Benutzer mit gesetztem `onboarding_completed_at` erhalten den Assistenten weiterhin — jeder Schritt zeigt ihre aktuellen Werte, und der Überprüfungsschritt zeigt einen expliziten Diff, bevor sie auf Abschliessen klicken.
+Der Assistent ist nicht blockierend: Die alte erzwungene Weiterleitung zu `/setup` bei der Anmeldung (die `ONBOARDING_MANDATORY`-Sperre) wurde entfernt. Neue Anmeldungen landen direkt auf `/dashboard` und sehen stattdessen das schließbare Banner.
 
 ## Seitenaufbau
 
@@ -43,7 +43,15 @@ Erfasst die zwei Antworten, von denen jeder spatere Schritt abhangt.
 
 ## Schritt 2 — Register
 
-Wahlt ein Land und sucht das Unternehmen entweder im offiziellen Register des Landes oder erfasst die Registrierung manuell.
+Wählt ein Land und sucht das Unternehmen entweder im offiziellen Register des Landes, füllt die Angaben von Hand aus, oder überspringt den Schritt.
+
+### Drei Wege
+
+1. **Suche** — Typeahead nach Firmennamen, Treffer auswählen und das Basisprofil vom Backend abrufen lassen (EUR 0,02 pro Abruf für NL). Dies ist der primäre Weg für unterstützte Länder.
+2. **Manuell** — Firmennamen, Handelsregisternummer (optional), Adresse, Postleitzahl und Ort selbst eingeben. Die Daten werden direkt über `PUT /company-settings/company` in die Unternehmenszeile geschrieben und `answers.kvk` wird mit `manual: true` markiert. Die manuelle Eingabe existiert für zwei Szenarien: (a) neue Unternehmen, die noch nicht im kostenlosen OpenKVK-Datensatz enthalten sind, und (b) Unternehmen, deren Handelsname nicht mit der Sucheingabe des Benutzers übereinstimmt.
+3. **Überspringen** — "Kein Handelsregistereintrag?" speichert `answers.kvk = null`. Der Assistent fährt fort; Unternehmensdaten können später in den Einstellungen ergänzt werden.
+
+Der Wechsel zwischen Suche und manueller Eingabe erfolgt mit einem Klick: Eine "Manuell ausfüllen"-Schaltfläche erscheint unter den Suchergebnissen, und ein "Zurück zur KVK-Suche"-Link sitzt oben im manuellen Formular.
 
 ### Landoptionen
 
@@ -59,7 +67,7 @@ Wahlt ein Land und sucht das Unternehmen entweder im offiziellen Register des La
 
 ### Suchmodus
 
-Fur unterstutzte Lander gibt der Benutzer eine Registrierungsnummer ein und klickt auf **Suchen**. Das Backend ruft die entsprechende offentliche API auf und gibt eines der folgenden Ergebnisse zuruck:
+Für unterstützte Länder sucht der Benutzer nach dem Firmennamen. Das Backend ruft die entsprechende öffentliche API auf und liefert einen der folgenden Rückgabewerte:
 
 - **ok** — `legalName`, `address`, `postalCode`, `city`, `sector` befullt und unter `answers.registry` gespeichert.
 - **not-configured** — Anbieter in dieser Umgebung noch nicht angeschlossen; der Benutzer wird aufgefordert, zur manuellen Eingabe zu wechseln.

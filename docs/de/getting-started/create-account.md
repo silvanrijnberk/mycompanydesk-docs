@@ -8,12 +8,13 @@ Der Einstieg in MyCompanyDesk dauert nur wenige Minuten.
 
 ## Registrieren
 
-1. Gehen Sie zu [app.mycompanydesk.com](https://app.mycompanydesk.com) und klicken Sie auf **Registrieren**
-2. Wählen Sie eine der folgenden Methoden:
-   - **E-Mail und Passwort** — Geben Sie Ihren Namen, Ihre E-Mail-Adresse und ein sicheres Passwort ein
-   - **Google** — Melden Sie sich mit Ihrem Google-Konto an
-   - **Microsoft/Outlook** — Melden Sie sich mit Ihrem Microsoft-Konto an
-3. Wenn Sie sich per E-Mail registriert haben, prüfen Sie Ihren Posteingang auf eine **Bestätigungs-E-Mail** und klicken Sie auf den Link, um Ihr Konto zu verifizieren
+1. Gehen Sie zu [app.mycompanydesk.com](https://app.mycompanydesk.com). Die Registrierungsseite ist ein geteilter Bildschirm mit einem **Registrieren**-Tab und einem **Anmelden**-Tab, sodass Sie zwischen beiden wechseln können, ohne die Seite zu verlassen.
+2. Auf dem **Registrieren**-Tab:
+   - **Konto erstellen** mit E-Mail und einem Passwort (mindestens 8 Zeichen).
+   - Oder nutzen Sie einen sozialen Anbieter: **Mit Google anmelden** oder **Mit Outlook anmelden**.
+   - **Passwortlose Registrierung** kommt demnächst; der Tab zeigt einen Platzhalter-Hinweis dafür.
+3. Der Registrierungsbildschirm zeigt auch eine Live-Vorschau: ein simuliertes Dashboard mit Beispielumsätzen, fälligen Posten und Aktivitäts-Chips, sodass Sie das Erlebnis vorab sehen können. Die Vorschau verwendet keine echten Daten.
+4. Wenn Sie sich per E-Mail registriert haben, prüfen Sie Ihren Posteingang auf eine **Bestätigungs-E-Mail** und klicken Sie auf den Link, um Ihr Konto zu verifizieren
 
 :::tip Partner-Empfehlung
 Hat Ihr Steuerberater oder Buchhalter Ihnen einen Empfehlungslink gegeben (zum Beispiel `app.mycompanydesk.com/register?partner=DERENCODE`)? Öffnen Sie diesen Link zur Registrierung. Ihre Anmeldung wird automatisch zugeordnet, wodurch Ihr Arbeitsbereich eine 12-monatige kostenlose Pro-Testphase anstelle der standardmäßigen 60 Tage erhält.
@@ -43,9 +44,13 @@ Wenn ein Kollege bereits einen Arbeitsbereich eingerichtet hat:
 
 Sie können Mitglied mehrerer Arbeitsbereiche sein und über Ihr Kontomenü zwischen ihnen wechseln.
 
+## Anmeldung nach der Registrierung
+
+Rückkehrende Benutzer landen auf derselben geteilten Seite. Der **Anmelden**-Tab akzeptiert Ihre E-Mail und Ihr Passwort und enthält einen **Passwort vergessen**-Link. Die passwortlose Anmeldung kommt ebenfalls demnächst, gekennzeichnet mit einem Hinweis auf dem Tab.
+
 ## Dashboard-Profil wählen
 
-Bei der ersten Anmeldung sehen Sie die **Onboarding-Karte** auf Ihrem Dashboard. MyCompanyDesk bietet Dashboard-Profile, die auf verschiedene Rollen zugeschnitten sind:
+Bei der ersten Anmeldung sehen Sie eine Willkommensnachricht und das Setup-Banner auf Ihrem Dashboard. MyCompanyDesk bietet Dashboard-Profile, die auf verschiedene Rollen zugeschnitten sind:
 
 - **Inhaber / Geschäftsführer** — Finanzieller Überblick auf hoher Ebene und Cashflow
 - **Buchhalter / Steuerberater** — USt.-Compliance, Prüfpfade, Periodensperren
@@ -60,13 +65,15 @@ Sie können Ihr Dashboard-Profil jederzeit in den Dashboard-Einstellungen änder
 
 ## Onboarding-Checkliste abschließen
 
-Die Onboarding-Karte führt Sie durch drei wichtige Einrichtungsschritte:
+Ein schließbares **Setup abschließen**-Banner oben auf dem Dashboard hilft Ihnen, die verbleibenden Setup-Felder auszufüllen. Klicken Sie auf **Weiter**, um den Einrichtungsassistenten zu öffnen, oder klicken Sie auf das X-Symbol, um das Banner auszublenden. Das Banner bleibt pro Browser über localStorage ausgeblendet, bis Sie den Assistenten abschließen. Die alte Onboarding-Karte wurde entfernt; das Assistenten-Banner ersetzt sie.
+
+Der Assistent deckt diese Schritte ab:
 
 1. **Unternehmensinformationen einrichten** — Fügen Sie Ihren Firmennamen, Ihre Adresse, USt.-Nummer und Bankdaten hinzu
 2. **Ersten Kunden hinzufügen** — Erstellen Sie einen Kundendatensatz, um mit der Rechnungsstellung zu beginnen
 3. **Erste Rechnung erstellen** — Versenden Sie Ihre erste professionelle Rechnung
 
-Die Karte verschwindet automatisch, sobald Sie diese Schritte abgeschlossen haben, oder Sie können sie manuell schließen.
+Der Assistent ist nicht blockierend: Sie können ihn über das Banner öffnen oder jederzeit zu `/setup` navigieren, und Sie können das Banner frei schließen. Es gibt keine erzwungene Weiterleitung bei der Anmeldung.
 
 ## Nächste Schritte
 

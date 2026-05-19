@@ -8,12 +8,13 @@ Getting started with MyCompanyDesk takes just a few minutes.
 
 ## Sign up
 
-1. Go to [app.mycompanydesk.com](https://app.mycompanydesk.com) and click **Sign Up**
-2. Choose one of the following methods:
-   - **Email and password** — Enter your name, email, and a secure password
-   - **Google** — Sign in with your Google account
-   - **Microsoft/Outlook** — Sign in with your Microsoft account
-3. If you signed up with email, check your inbox for a **verification email** and click the link to verify your account
+1. Go to [app.mycompanydesk.com](https://app.mycompanydesk.com). The signup page is a split-screen layout with a **Sign Up** tab and a **Sign In** tab so you can switch between the two without leaving the page.
+2. On the **Sign Up** tab:
+   - **Create account** with email and a password (minimum 8 characters).
+   - Or use a social provider: **Sign up with Google** or **Sign up with Outlook**.
+   - A **password-less registration** option is coming soon; the tab shows a placeholder badge for it.
+3. The signup screen also shows a live staging area: a simulated dashboard with sample revenue, due items, and activity chips so you can preview the experience before you commit. The staging does not use real data.
+4. If you signed up with email, check your inbox for a **verification email** and click the link to verify your account.
 
 :::tip Partner referral
 If your accountant or boekhouder gave you a referral link (for example, `app.mycompanydesk.com/register?partner=THEIRCODE`), open that link to sign up. Your signup will be attributed to them automatically, which qualifies your workspace for a 12-month free Pro trial instead of the standard 60-day trial.
@@ -43,9 +44,13 @@ If a colleague has already set up a workspace:
 
 You can be a member of multiple workspaces and switch between them from your account menu.
 
+## Sign in after registration
+
+Returning users land on the same split-screen page. The **Sign In** tab accepts your email and password and includes a **Forgot password** link. Password-less sign-in is also coming soon, marked with a badge on the tab.
+
 ## Choose your dashboard profile
 
-On first login, you'll see the **onboarding card** on your dashboard. MyCompanyDesk offers dashboard profiles tailored to different roles:
+On first login, you see a welcome message and the setup banner on your dashboard. MyCompanyDesk offers dashboard profiles tailored to different roles:
 
 - **Owner / Director** — High-level financial overview and cash flow
 - **Bookkeeper / Accountant** — VAT compliance, audit trails, period locks
@@ -60,13 +65,15 @@ You can change your dashboard profile at any time from the dashboard settings.
 
 ## Complete the onboarding checklist
 
-The onboarding card guides you through three key setup steps:
+A dismissable **Finish setup** banner at the top of the dashboard guides you through filling in the remaining setup fields. Click **Resume setup** to enter the setup wizard, or dismiss the banner by clicking the X button. The banner stays dismissed per browser via localStorage until you complete the wizard. The old onboarding card has been removed; the wizard banner replaces it.
+
+The wizard covers these steps:
 
 1. **Set up your company information** — Add your business name, address, VAT number, and bank details
 2. **Add your first customer** — Create a customer record to start invoicing
 3. **Create your first invoice** — Send your first professional invoice
 
-The card disappears automatically once you complete these steps, or you can dismiss it manually.
+The wizard is non-blocking: you can enter it from the banner or navigate to `/setup` at any time, and you can dismiss the banner freely. It does not force a redirect on signup.
 
 ## Next steps
 

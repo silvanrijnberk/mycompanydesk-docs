@@ -111,11 +111,17 @@ A bottom sheet opens with a vertical reorder list and per-section visibility tog
 
 ## Setup banner
 
-While the magical setup wizard at `/setup` still has fields to fill, a `FinishSetupBanner` pins itself above the dashboard with the count of pending fields and a **Resume setup** button. It disappears the moment you complete the wizard or the pending count drops to zero — there is no manual dismiss and no "skip for now". The old onboarding card on the dashboard was removed; this banner replaces it.
+While the magical setup wizard at `/setup` still has fields to fill, a `FinishSetupBanner` pins itself above the dashboard with the count of pending fields and a **Resume setup** button. It now includes a dismiss button (X icon) that hides the banner per browser via localStorage, surviving reloads until the wizard is completed. The old onboarding card on the dashboard was removed; this banner replaces it. The wizard is non-blocking: new signups land on `/dashboard` directly and are not force-redirected.
 
 ## Pro welcome banner
 
-Workspaces on the Pro plan see a subtle violet welcome pill above the dashboard grid. It shows a crown icon alongside "Welcome back, {name}. Your Pro workspace is ready" (or the nameless variant if no name is on file). It is a quiet daily reminder of premium status and does not compete with the setup banner or the dashboard sections below.
+Workspaces on the Pro plan see a subtle welcome pill above the dashboard grid. Three tiers are distinguished so a trial does not look like a paid subscription:
+
+- **Founding Member** — "Welcome back, {name}. Your Founding-Member Pro is active forever." Crown icon in celebratory gold.
+- **Trial** — "Welcome back, {name}. Pro trial runs for {days} more days." Crown icon in warm amber, reads as provisional.
+- **Paid Pro** — "Welcome back, {name}. Your Pro workspace is ready." Crown icon in violet.
+
+Each tier shows appropriate copy and styling. The pill does not compete with the setup banner or the dashboard sections below.
 
 ## Drill-through
 

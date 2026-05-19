@@ -79,14 +79,14 @@ Ein Feed der neuesten Ereignisse in Ihrem Arbeitsbereich:
 
 ## Onboarding-Karte
 
-Neue Benutzer sehen eine Onboarding-Karte, die sie durch die Ersteinrichtung führt:
-
-1. Unternehmensinformationen einrichten
-2. Ersten Kunden hinzufügen
-3. Erste Rechnung erstellen
-
-Die Karte verfolgt Ihren Fortschritt und verschwindet nach Abschluss (oder bei manueller Ausblendung).
+Solange der Einrichtungsassistent unter `/setup` noch Felder zu füllen hat, steht ein `FinishSetupBanner` oben auf dem Dashboard mit einer Zählung der ausstehenden Felder und einem **Weiter**-Button. Die Karte hat jetzt eine Schließen-Schaltfläche (X-Symbol), die die Karte pro Browser über localStorage ausblendet, sodass sie über Seitenneuladungen hinweg ausgeblendet bleibt, bis der Assistent abgeschlossen ist. Die alte Onboarding-Karte wurde entfernt; diese Karte ersetzt sie. Der Assistent ist nicht blockierend: neue Anmeldungen landen direkt auf `/dashboard` und werden nicht zwangsumgeleitet.
 
 ## Pro-Willkommensbanner
 
-Arbeitsbereiche mit Pro-Abonnement sehen eine dezente violette Willkommenszeile über dem Dashboard-Raster. Die Zeile zeigt ein Kronen-Icon mit "Willkommen zurück, {name}. Ihr Pro-Arbeitsbereich ist bereit" (oder die namenlose Variante, wenn kein Name hinterlegt ist). Es ist eine ruhige tägliche Erinnerung an den Premium-Status und steht nicht in Konkurrenz zum Setup-Banner oder den Dashboard-Bereichen darunter.
+Arbeitsbereiche mit Pro-Abonnement sehen ein dezentes Willkommens-Pill über dem Dashboard-Raster. Drei Stufen werden unterschieden, damit eine Testphase nicht wie ein bezahltes Abo aussieht:
+
+- **Founding Member** — "Willkommen zurück, {name}. Ihr Founding-Member Pro ist dauerhaft aktiv." Kronen-Icon in feierlichem Gold.
+- **Testphase** — "Willkommen zurück, {name}. Pro-Testphase läuft noch {days} Tage." Kronen-Icon in warmem Bernstein, wirkt vorläufig.
+- **Bezahltes Pro** — "Willkommen zurück, {name}. Ihr Pro-Arbeitsbereich ist bereit." Kronen-Icon in Violett.
+
+Jede Stufe zeigt den passenden Text und Stil. Das Pill steht nicht in Konkurrenz zum Setup-Banner oder den Dashboard-Bereichen darunter.

@@ -14,9 +14,9 @@ Si vous cherchez le guide de base, commencez par [Configurer votre entreprise](/
 L'assistant est accessible de deux manieres :
 
 - **Direct :** naviguez vers `/setup` a tout moment.
-- **Banniere du tableau de bord :** tant que l'integration n'est pas terminee et qu'au moins un champ de parametres est vide (`businessName`, `country`, `chamber`, `address`, `brandColor`, `tagline`, `about`, `domain`), une banniere "Terminer la configuration" s'affiche en haut de `/dashboard` avec un decompte des champs en attente et un bouton retournant a l'assistant.
+- **Banniere du tableau de bord :** tant que l'integration n'est pas terminee, une banniere fermable "Terminer la configuration" s'affiche en haut de `/dashboard`. Elle montre un decompte des champs en attente (ou un message generique "Completer votre profil" si le decompte est a zero) et un bouton retournant a l'assistant. Un bouton de fermeture (icone X) masque la banniere par navigateur via localStorage, la maintenant masquee d'un rechargement a l'autre jusqu'a ce que l'assistant soit termine.
 
-Les utilisateurs recurrents avec `onboarding_completed_at` defini recoivent toujours l'assistant — chaque etape montre leurs valeurs actuelles, et l'etape de Verification affiche un diff explicite avant qu'ils ne cliquent sur Terminer.
+L'assistant est non bloquant : l'ancienne redirection forcee vers `/setup` a l'inscription (la porte `ONBOARDING_MANDATORY`) a ete supprimee. Les nouvelles inscriptions arrivent directement sur `/dashboard` et voient la banniere fermable a la place.
 
 ## Mise en page
 
@@ -43,7 +43,15 @@ Capture les deux reponses dont depend chaque etape suivante.
 
 ## Etape 2 — Registre
 
-Choisit un pays et recherche l'entreprise dans le registre officiel du pays ou saisit l'enregistrement manuellement.
+Choisit un pays et recherche l'entreprise dans le registre officiel du pays, saisit les donnees manuellement, ou passe l'etape.
+
+### Trois voies
+
+1. **Recherche** — saisie predictive par nom d'entreprise, choisissez une correspondance et laissez le backend recuperer le Basisprofiel (0,02 EUR par appel pour NL). C'est la voie principale pour les pays pris en charge.
+2. **Manuel** — saisissez le nom de l'entreprise, le numero KVK (facultatif), l'adresse, le code postal et la ville vous-meme. Les donnees sont ecrites directement dans la ligne de l'entreprise via `PUT /company-settings/company` et `answers.kvk` est marque avec `manual: true`. La saisie manuelle existe pour deux scenarios : (a) les nouvelles entreprises qui ne sont pas encore dans le jeu de donnees gratuit OpenKVK, et (b) les entreprises dont le nom commercial ne correspond pas a ce que l'utilisateur a tape dans la recherche.
+3. **Passer** — "Pas de numero KvK?" stocke `answers.kvk = null`. L'assistant continue; les donnees de l'entreprise peuvent etre remplies plus tard dans les parametres.
+
+Le passage de la recherche au manuel se fait en un clic : un bouton "Saisir manuellement" apparait sous les resultats de recherche, et un lien "Retour a la recherche KVK" se trouve en haut du formulaire manuel.
 
 ### Options de pays
 
@@ -59,7 +67,7 @@ Choisit un pays et recherche l'entreprise dans le registre officiel du pays ou s
 
 ### Mode recherche
 
-Pour les pays pris en charge, l'utilisateur saisit un numero d'enregistrement et clique sur **Rechercher**. Le backend appelle l'API publique correspondante et renvoie l'un des resultats suivants :
+Pour les pays pris en charge, l'utilisateur recherche par nom d'entreprise. Le backend appelle l'API publique correspondante et renvoie l'un des resultats suivants :
 
 - **ok** — `legalName`, `address`, `postalCode`, `city`, `sector` remplis et stockes sous `answers.registry`.
 - **not-configured** — fournisseur pas encore branche dans cet environnement ; l'utilisateur est invite a passer a la saisie manuelle.

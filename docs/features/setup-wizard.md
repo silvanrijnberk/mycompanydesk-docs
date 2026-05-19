@@ -14,9 +14,9 @@ If you came here looking for the basic walk-through, start at [Set Up Your Compa
 The wizard is reachable two ways:
 
 - **Direct:** navigate to `/setup` at any time.
-- **Dashboard banner:** while onboarding is incomplete and at least one settings field is still blank (`businessName`, `country`, `chamber`, `address`, `brandColor`, `tagline`, `about`, `domain`), a "Finish setup" banner sits at the top of `/dashboard` with a count of pending fields and a button back into the wizard.
+- **Dashboard banner:** while onboarding is incomplete, a dismissable "Finish setup" banner sits at the top of `/dashboard`. It shows a count of pending fields (or a generic "complete your profile" message if the count is zero) and a button back into the wizard. A dismiss button (X icon) hides the banner per browser via localStorage, persisting across reloads until the wizard is completed.
 
-Returning users with `onboarding_completed_at` set still get the wizard — every step shows their current values, and the Review step renders an explicit diff before they hit Finish.
+The wizard is non-blocking: the old forced redirect to `/setup` on signup (the `ONBOARDING_MANDATORY` gate) has been removed. New signups land on `/dashboard` directly and see the dismissable banner instead.
 
 ## Page layout
 
@@ -43,7 +43,15 @@ Captures the two answers every later step depends on.
 
 ## Step 2 — Registry
 
-Picks a country and either looks up the business in the country's official registry or captures the registration by hand.
+Picks a country and either looks up the business in the country's official registry, fills the details in manually, or skips the step entirely.
+
+### Three paths
+
+1. **Search** — typeahead by company name, pick a match, and let the backend pull the Basisprofiel (EUR 0.02/call for NL). This is the primary path for supported countries.
+2. **Manual** — fill in the company name, KVK number (optional), address, postal code, and city by hand. The data is saved directly to the company row via `PUT /company-settings/company` and `answers.kvk` is stamped with `manual: true`. Manual entry exists for two scenarios: (a) new companies not yet in the free OpenKVK dataset, and (b) companies whose trade name does not match what the user typed in search.
+3. **Skip** — "Geen KVK-inschrijving?" (or equivalent) stores `answers.kvk = null`. The wizard continues; company data can be filled later in settings.
+
+Switching between search and manual is a single click: a "Fill in manually" button appears below the search results, and a "Back to KVK search" link sits at the top of the manual form.
 
 ### Country options
 
@@ -57,9 +65,9 @@ Picks a country and either looks up the business in the country's official regis
 
 `NL` is the default. Country drives several things on Finish: timezone (`Europe/Amsterdam` / `Europe/Berlin` / `Europe/Paris` / `Europe/London`), `pdf_language` (`nl` / `de` / `fr` / `en`), and the registry label baked into `footer_text` (`KvK 12345678`, `Handelsregister …`, `SIRENE …`, `CRN …`).
 
-### Lookup mode
+### Search mode
 
-For supported countries the user enters a registration number and clicks **Look up**. The backend calls the matching public API and returns one of:
+For supported countries the user types a company name to search. The backend calls the matching public API and returns one of:
 
 - **ok** — `legalName`, `address`, `postalCode`, `city`, `sector` populated and stored under `answers.registry`.
 - **not-configured** — provider not yet wired in this environment; the user is prompted to switch to manual entry.
