@@ -126,7 +126,7 @@ Workspace-level travel settings (per-company defaults, OV cards owned by the com
 
 `/me/data`
 
-Personal data export and import. Plan-gated: free plans see a banner pointing at the upgrade required for exports.
+Personal data export and import. Plan-gated: lapsed (read-only) workspaces see a banner pointing at the upgrade required for exports.
 
 - **Invoices**, **Customers**, **Expenses** — Per-entity CSV download.
 - **Complete backup** — One ZIP with everything, JSON-shaped for re-import.

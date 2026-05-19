@@ -87,7 +87,7 @@ A diff-and-approve list of everything the wizard will change on **Finish**, spli
 - **Will change** — Field-by-field "current → new".
 - **No change** — Fields the wizard captured but match what you already have.
 
-Click **Finish** and the wizard applies everything in one transaction. The Finish splash shows what got applied: subdomain ready, custom-domain DNS pending, logo created, services added, email templates set. On a free plan, the splash also shows your monthly headroom (invoices / expenses / quotes left this period).
+Click **Finish** and the wizard applies everything in one transaction. The Finish splash shows what got applied: subdomain ready, custom-domain DNS pending, logo created, services added, email templates set.
 
 Where you land after Finish:
 
