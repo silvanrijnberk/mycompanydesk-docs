@@ -83,6 +83,8 @@ Pour les espaces de travail NL, la recherche KvK est un processus en deux etapes
 1. **Typeahead** — l'utilisateur recherche par nom d'entreprise. Le point de terminaison `zoeken` (gratuit) renvoie les entrees correspondantes. C'est l'etape d'autocompletion qui alimente les reponses `ok` / `not-found` existantes. Lorsque la recherche ne renvoie aucun resultat, l'UI affiche un panneau d'etat vide (titre, explication et un bouton "Remplir manuellement" qui pre-remplit le formulaire manuel avec ce que l'utilisateur a deja tape). C'est frequent car le niveau gratuit d'OpenKVK ne couvre pas beaucoup de jeunes entreprises.
 2. **Basisprofiel** — une fois une correspondance choisie, l'assistant appelle le point de terminaison de detail Basisprofiel de la KvK. C'est un appel payant (0,02 EUR, mis en cache 24h par numero KVK). Il renvoie le profil complet : `legalName`, `statutaireNaam` (nom statutaire), `tradeNames` (tous les noms commerciaux enregistres, tries), `rsin`, `legalForm`, `dateFounded`, adresses de visite et postales, codes SBI avec indicateur primaire, `employeeCount` et `indNonMailing` (indicateur pas-de-courrier).
 
+Lorsqu'une correspondance est choisie (mode recherche), le frontend appelle immediatement `PUT /company-settings/company` avec le `name` de la correspondance comme `display_name`, le `kvkNumber` comme `chamber`, `city`, et `country` code en dur sur `"NL"`. Cela ecrit le nom d'affichage visible par le client immediatement, afin que le message d'accueil du tableau de bord et le site ensemence utilisent le bon nom des le moment ou l'utilisateur clique sur la correspondance, plutot que d'attendre l'etape de fin de l'assistant.
+
 Il y a deux flags de fonctionnalite independants pour les recherches KVK aux Pays-Bas :
 
 - `KVK_API_KEY` (variable d'environnement sur le conteneur API) : lorsque cette cle est absente, le champ de recherche n'est pas du tout affiche et l'assistant demarre par defaut en saisie manuelle a cette etape. Le niveau gratuit OpenKVK seul est trop limite (~2% de taux de succes, manque presque toutes les nouvelles inscriptions). Le flag bascule automatiquement des que la cle est definie.
@@ -91,6 +93,8 @@ Il y a deux flags de fonctionnalite independants pour les recherches KVK aux Pay
 ### Mode manuel
 
 L'utilisateur remplit `chosen` (son numero d'enregistrement), et eventuellement `legalName`, `address`, `sector`. Les quatre champs sont optionnels dans ce mode.
+
+Lors de l'enregistrement, le frontend appelle `PUT /company-settings/company` directement avec les valeurs saisies manuellement, plus `display_name` defini sur le nom d'entreprise saisi ici et `country` code en dur sur `"NL"`. Cela ecrit immediatement le nom visible par le client et le pays, au lieu d'attendre l'etape de fin. La logique d'application de l'etape de fin lit toujours `answers.kvk` pour le chemin de registre herite, mais le nouveau chemin de l'assistant en 2 etapes lit `answers.kvk.legalName` et `answers.kvk.kvkNumber` directement, de sorte que le PUT inline pendant cette etape est l'ecriture autoritaire.
 
 ### Mode passer
 
@@ -103,6 +107,8 @@ Choisissez l'adresse web que les clients verront sur la page d'entreprise publiq
 ### Deux chemins
 
 **Sous-domaine (par defaut) :** l'utilisateur choisit un slug ; l'assistant l'associe a `<slug>.mycompanydesk.nl` pour les espaces `NL` et `<slug>.mycompanydesk.com` partout ailleurs. Le slug est pre-rempli a partir de `businessName` (minuscules, ASCII, max 32 caracteres). A la fin, le sous-domaine est provisionne via l'API Cloudflare et le site web de l'entreprise devient immediatement accessible.
+
+Lorsque l'assistant est execute dans le flux en 2 etapes (controle par le plan), l'etape Domaine est entierement omise. L'etape de fin provisionne automatiquement un sous-domaine d'espace de travail a partir de la valeur `display_name` : le slug est derive du nom d'affichage (avec suffixes de reessai en cas de collision jusqu'a 5 tentatives), et `activateSubdomain` l'enregistre comme URL publique du site. Meilleur effort : une collision ou une erreur est journalisee et n'empeche pas l'assistant de terminer.
 
 **Domaine personnel :** l'utilisateur saisit un domaine qu'il possede deja. A la fin, l'assistant :
 
@@ -163,7 +169,10 @@ Le bouton **Terminer** dans le pied de page appelle `/onboarding/complete`. La l
 **Toujours ecraser** lorsque la reponse de l'assistant est une chaine non vide et differe de la valeur actuelle :
 
 - `display_name`, `company_name`
-- `country`
+- `country` (revient a `"NL"` si `answers.country` n'est pas defini , l'assistant en 2 etapes ne demande pas le pays, donc NL est la valeur par defaut implicite)
+- `chamber` (via `answers.kvk.kvkNumber` lorsque present)
+
+Si l'assistant en 2 etapes n'a pas capture de reponse de domaine, la fin provisionne automatiquement un sous-domaine d'espace de travail a partir de la valeur `display_name` lorsque le plan autorise les sous-domaines et que l'entreprise n'a pas de domaine personnalise. Le slug est derive de `display_name` (minuscules, ASCII, max 60 caracteres, reessaye avec suffixe `-2`…`-5` en cas de collision).
 - `chamber`, `address`, `postal_code`, `city`
 - `brand_color`, `description`, `business_page_hero_tagline`
 
