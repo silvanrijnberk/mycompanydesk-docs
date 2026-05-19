@@ -221,7 +221,7 @@ Les pages succes-du-checkout et checkout-annule affichent a l'acheteur un ecran 
 
 ## Envoyer des e-mails vs recevoir des e-mails
 
-Ce lot correspond au côte **reception**. Les e-mails sortants -- envoi de factures, rappels, envoi de devis -- sont geres par le pipeline e-mail plus large decrit dans [Integration e-mail](/fr/settings/email). La boite de reception sert a recevoir les e-mails des clients et a rediger des reponses ; elle n'achemine pas vos envois automatises de factures. La livraison des factures suit toujours la methode d'envoi que vous avez choisie dans [Integration e-mail](/fr/settings/email) (Gmail, Outlook, SMTP personnalise ou l'expediteur integre). La signature DKIM du domaine de la boite de reception est utilisee pour les reponses sortantes redigees dans la boite de reception, pas pour les e-mails transactionnels automatises.
+Ce lot correspond au côte **reception**. Les e-mails sortants -- envoi de factures, rappels, envoi de devis -- sont geres par le pipeline e-mail plus large decrit dans [Integration e-mail](/fr/settings/email). La boite de reception sert a recevoir les e-mails des clients et a rediger des reponses ; elle n'achemine pas vos envois automatises de factures. La livraison des factures suit toujours la methode d'envoi que vous avez choisie dans [Integration e-mail](/fr/settings/email) (Gmail, Outlook ou l'expediteur integre). La signature DKIM du domaine de la boite de reception est utilisee pour les reponses sortantes redigees dans la boite de reception, pas pour les e-mails transactionnels automatises.
 
 ## Limites et points d'attention
 
