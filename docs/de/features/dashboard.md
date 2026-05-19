@@ -98,6 +98,22 @@ Ein Feed der neuesten Ereignisse in Ihrem Arbeitsbereich:
 - Kunden erstellt
 - Aktionen von Teammitgliedern
 
+## Bearbeitungsmodus
+
+Klicken Sie auf das Stiftsymbol oben rechts, um den Bearbeitungsmodus zu offnen. Sie konnen Abschnitte verschieben, in der Groe andern, hinzufugen oder entfernen.
+
+### Intelligente Vorschlage
+
+Im Bearbeitungsmodus zeigt eine Chip-Leiste namens **Vorschlage** bis zu drei empfohlene Abschnitte an, die Ihr aktuelles Layout erganzen. Die Regeln sind zielgerichtet und je nach Situation unterschiedlich:
+
+- Haben Sie den AR-Alterungs-Abschnitt aber keine operative Warteschlange? Dann wird vorgeschlagen, die Warteschlange hinzuzufugen, damit Sie auf uberfallige Rechnungen reagieren konnen.
+- Bei Freelancer- oder USt-Compliance-Profilen lost das Hinzufugen der anstehenden USt einen Vorschlag fur den Stundennachweis-Abschnitt aus, denn Compliance-Prufungen gehoren zusammen.
+- Ein Dashboard ohne Hero und ohne KPI-Header erhalt den Vorschlag, den Hero hinzuzufugen, um einen leeren oberen Bereich zu vermeiden.
+- Projektbasierte und Inhaber/Geschaftsfuhrer-Profile ohne Kundenkonzentration werden aufgefordert, diese hinzuzufugen, um Abhangigkeiten von einzelnen Kunden zu erkennen.
+- Wachstumsprofile ohne Website- oder Portalaktivitat erhalten den Vorschlag, Website-Aktivitat hinzuzufugen, um Besucher zu verfolgen.
+
+Klicken Sie auf einen Chip, um den zugehorigen Abschnitt Ihrem Arbeitsraster hinzuzufugen. Die Vorschlage werden basierend auf Ihrem aktuellen Layout aktualisiert.
+
 ## Onboarding-Karte
 
 Solange der Einrichtungsassistent unter `/setup` noch Felder zu füllen hat, steht ein `FinishSetupBanner` oben auf dem Dashboard mit einer Zählung der ausstehenden Felder und einem **Weiter**-Button. Die Karte hat jetzt eine Schließen-Schaltfläche (X-Symbol), die die Karte pro Browser über localStorage ausblendet, sodass sie über Seitenneuladungen hinweg ausgeblendet bleibt, bis der Assistent abgeschlossen ist. Die alte Onboarding-Karte wurde entfernt; diese Karte ersetzt sie. Der Assistent ist nicht blockierend: neue Anmeldungen landen direkt auf `/dashboard` und werden nicht zwangsumgeleitet.
