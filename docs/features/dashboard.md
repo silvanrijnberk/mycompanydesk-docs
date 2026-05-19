@@ -70,8 +70,8 @@ Each tile links through to the relevant view: revenue -> reports `?lens=revenue`
 
 **Compliance**
 When workspace data includes VAT return deadlines and urencriterium tracking, the hero shows:
-- **VAT deadline** — `{days}` until due, due today, or overdue, with the current balance. Links to `/vat`.
-- **Urencriterium** — Current hours percentage progress and hours remaining. Links to `/dashboard?settings=compliance`.
+- **VAT deadline**: `{days}` until due, due today, or overdue, with the current balance. Links to `/vat`.
+- **Urencriterium**: Current hours percentage progress and hours remaining. Links to `/dashboard?settings=compliance`.
 
 When no period figures exist yet the hero shows an empty state with "No activity" and "No figures for this period yet."
 
