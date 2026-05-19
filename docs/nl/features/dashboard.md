@@ -79,14 +79,14 @@ Een feed van recente gebeurtenissen in je werkruimte:
 
 ## Onboardingkaart
 
-Nieuwe gebruikers zien een onboardingkaart die hen door de eerste installatie begeleidt:
-
-1. Bedrijfsinformatie instellen
-2. Eerste klant toevoegen
-3. Eerste factuur aanmaken
-
-De kaart houdt je voortgang bij en verdwijnt zodra alles is voltooid (of wanneer je hem handmatig sluit).
+Zolang de setup-wizard op `/setup` nog velden te vullen heeft, staat er een `FinishSetupBanner` bovenaan het dashboard met een teller van openstaande velden en een **Verder**-knop. De banner heeft nu een sluitknop (X-icoon) die de banner per browser verbergt via localStorage, zodat deze over herlaadbeurten verborgen blijft totdat de wizard is voltooid. De oude onboardingkaart op het dashboard is verwijderd; deze banner vervangt hem. De wizard is niet-blokkerend: nieuwe aanmeldingen komen direct op `/dashboard` en worden niet geforceerd doorgestuurd.
 
 ## Pro-welkomstbanner
 
-Werkruimtes op het Pro-abonnement zien een subtiele violette welkomstregel boven het dashboardraster. De regel toont een kroonicoon met "Welkom terug, {name}. Je Pro-account staat klaar" (of de naamloze variant als er geen naam bekend is). Het is een rustige dagelijkse herinnering aan de premiumstatus en concurreert niet met de setupbanner of de dashboardsecties eronder.
+Werkruimtes op het Pro-abonnement zien een subtiele welkomstpil boven het dashboardraster. Drie niveaus worden onderscheiden zodat een proefperiode er niet als een betaald abonnement uitziet:
+
+- **Founding Member** — "Welkom terug, {name}. Je Founding-Member Pro is voor altijd actief." Kroonicoon in feestelijk goud.
+- **Proefperiode** — "Welkom terug, {name}. Pro-proefperiode loopt nog {days} dagen." Kroonicoon in warm amber, leest als tijdelijk.
+- **Betaald Pro** — "Welkom terug, {name}. Je Pro-account staat klaar." Kroonicoon in violet.
+
+Elk niveau toont de juiste tekst en stijl. De pil concurreert niet met de setup-banner of de dashboardsecties eronder.

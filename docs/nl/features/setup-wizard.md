@@ -14,9 +14,9 @@ Als je hier bent voor de basiswandeling, begin dan bij [Je bedrijf instellen](/n
 De wizard is op twee manieren bereikbaar:
 
 - **Direct:** ga op elk moment naar `/setup`.
-- **Dashboard-banner:** zolang de onboarding niet voltooid is en er minstens een instellingenveld leeg is (`businessName`, `country`, `chamber`, `address`, `brandColor`, `tagline`, `about`, `domain`), staat er bovenaan `/dashboard` een "Setup afronden"-banner met een teller van openstaande velden en een knop terug naar de wizard.
+- **Dashboard-banner:** zolang de onboarding niet voltooid is, staat er een sluitbare "Setup afronden"-banner bovenaan `/dashboard`. Deze toont een teller van openstaande velden (of een generiek "Maak je profiel compleet"-bericht als de teller nul is) en een knop terug naar de wizard. Een sluitknop (X-icoon) verbergt de banner per browser via localStorage, zodat deze over herlaadbeurten heen verborgen blijft totdat de wizard is voltooid.
 
-Terugkerende gebruikers met `onboarding_completed_at` ingesteld krijgen de wizard nog steeds — elke stap toont hun huidige waarden, en de Controle-stap laat een expliciete diff zien voordat ze op Voltooien klikken.
+De wizard is niet-blokkerend: de oude gedwongen doorverwijzing naar `/setup` bij aanmelding (de `ONBOARDING_MANDATORY`-poort) is verwijderd. Nieuwe aanmeldingen komen direct op `/dashboard` en zien in plaats daarvan de sluitbare banner.
 
 ## Pagina-opbouw
 
@@ -43,7 +43,15 @@ Legt de twee antwoorden vast waarvan elke latere stap afhangt.
 
 ## Stap 2 — Register
 
-Kies een land en zoek het bedrijf op in het officiele register van het land, of leg de registratie handmatig vast.
+Kies een land en zoek het bedrijf op in het officiele register van het land, vul de gegevens handmatig in, of sla de stap over.
+
+### Drie wegen
+
+1. **Zoeken** — typeahead op bedrijfsnaam, kies een match en laat de backend het Basisprofiel ophalen (EUR 0,02 per aanroep voor NL). Dit is de primaire weg voor ondersteunde landen.
+2. **Handmatig** — vul zelf de bedrijfsnaam, KVK-nummer (optioneel), adres, postcode en plaats in. De gegevens worden direct naar de bedrijfsrij geschreven via `PUT /company-settings/company` en `answers.kvk` krijgt `manual: true`. Handmatige invoer bestaat voor twee situaties: (a) nieuwe bedrijven die nog niet in de gratis OpenKVK-dataset staan, en (b) bedrijven waarvan de handelsnaam niet overeenkomt met wat de gebruiker in de zoekopdracht typte.
+3. **Overslaan** — "Geen KVK-inschrijving?" slaat `answers.kvk = null` op. De wizard gaat verder; bedrijfsgegevens kunnen later in de instellingen worden ingevuld.
+
+Wisselen tussen zoeken en handmatig gaat met een klik: een "Vul handmatig in"-knop staat onder de zoekresultaten, en een "Terug naar KVK-zoeken"-link bovenaan het handmatige formulier.
 
 ### Landopties
 
@@ -57,9 +65,9 @@ Kies een land en zoek het bedrijf op in het officiele register van het land, of 
 
 `NL` is de standaard. Land bepaalt meerdere dingen bij Voltooien: tijdzone (`Europe/Amsterdam` / `Europe/Berlin` / `Europe/Paris` / `Europe/London`), `pdf_language` (`nl` / `de` / `fr` / `en`), en het registerlabel in `footer_text` (`KvK 12345678`, `Handelsregister …`, `SIRENE …`, `CRN …`).
 
-### Opzoekmodus
+### Zoekmodus
 
-Voor ondersteunde landen voert de gebruiker een registratienummer in en klikt op **Opzoeken**. De backend roept de bijpassende publieke API aan en retourneert een van:
+Voor ondersteunde landen zoekt de gebruiker op bedrijfsnaam. De backend roept de bijpassende publieke API aan en retourneert een van:
 
 - **ok** — `legalName`, `address`, `postalCode`, `city`, `sector` ingevuld en opgeslagen onder `answers.registry`.
 - **not-configured** — provider nog niet aangesloten in deze omgeving; de gebruiker wordt gevraagd over te schakelen naar handmatige invoer.

@@ -79,14 +79,14 @@ Un fil d'evenements recents dans votre espace de travail :
 
 ## Carte d'accueil
 
-Les nouveaux utilisateurs voient une carte d'accueil qui les guide dans la configuration initiale :
-
-1. Configurer les informations de l'entreprise
-2. Ajouter un premier client
-3. Creer une premiere facture
-
-La carte suit votre progression et disparait une fois terminee (ou lorsqu'elle est fermee manuellement).
+Tant que l'assistant de configuration sous `/setup` a encore des champs a remplir, un `FinishSetupBanner` s'affiche en haut du tableau de bord avec un decompte des champs en attente et un bouton **Continuer**. La banniere a maintenant un bouton de fermeture (icone X) qui la masque par navigateur via localStorage, la maintenant masquee d'un rechargement a l'autre jusqu'a ce que l'assistant soit termine. L'ancienne carte d'accueil a ete supprimee; cette banniere la remplace. L'assistant est non bloquant : les nouvelles inscriptions arrivent directement sur `/dashboard` et ne sont pas redirigees de force.
 
 ## Banniere de bienvenue Pro
 
-Les espaces de travail avec un abonnement Pro voient une ligne de bienvenue violette discrete au-dessus de la grille du tableau de bord. Elle affiche une icone de couronne avec "Content de vous revoir, {name}. Votre espace Pro est pret" (ou la variante sans nom si aucun nom n'est enregistre). C'est un rappel quotidien discret du statut premium, sans concurrence avec la banniere de configuration ou les sections du tableau de bord.
+Les espaces de travail avec un abonnement Pro voient un pill de bienvenue discret au-dessus de la grille du tableau de bord. Trois niveaux sont distingues pour qu'une periode d'essai ne ressemble pas a un abonnement payant :
+
+- **Founding Member** -- "Content de vous revoir, {name}. Votre statut Founding-Member Pro est actif a vie." Icone de couronne en or celebratoire.
+- **Periode d'essai** -- "Content de vous revoir, {name}. L'essai Pro expire dans {days} jours." Icone de couronne en ambre chaud, a lecture provisoire.
+- **Pro payant** -- "Content de vous revoir, {name}. Votre espace Pro est pret." Icone de couronne en violet.
+
+Chaque niveau affiche le texte et le style appropries. Le pill n'entre pas en concurrence avec la banniere de configuration ou les sections du tableau de bord.
