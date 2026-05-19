@@ -110,6 +110,25 @@ Belangrijke kolommen die de app leest:
 | `purchase_price_period` | Facturatieperiode voor gekochte domeinen (`yearly`).
 | `purchase_intent_id` | Verwijst naar de `domain_purchase_intents`-rij voor betaalde aankopen.
 | `founder_claim_id` | Verwijst naar de `founder_domain_claims`-rij voor Founder gratis claims.
+| `transferred_out_at` | Gezet wanneer tijdens de wekelijkse sync wordt gedetecteerd dat een domein is overgedragen uit het MCD-registraraccount.
+
+#### Verlengingscyclus
+
+Domeinverlenging volgt drie routes, afhankelijk van hoe het domein is verkregen:
+
+1. **Gratis gebundelde verlenging** (Founder-tier of naar Pro geconverteerde trial-tier): MCD neemt de wholesale-verlengkosten voor zijn rekening. Het domein verloopt automatisch zolang de werkruimte op Pro blijft. Geen betaalmiddel nodig.
+2. **Betaalde automatische verlenging** (betaalde aankoop, of trial-tier zonder Pro): Jaarlijks in rekening gebracht via de opgeslagen kaart. Werkt als elke andere abonnementsverlenging.
+3. **Handmatige verlenging**: Als een trial-tier werkruimte van Pro af valt EN geen opgeslagen kaart heeft, slaat het automatische verlengingspad deze over. De gebruiker ziet een melding en kan een eenmalige betaling starten via `POST /api/domains/renew/:domainId`, wat een Stripe Embedded Checkout-sessie aanmaakt voor de verlenging. Dit is de enige manier om een domein actief te houden zonder actief abonnement of opgeslagen kaart.
+
+#### Overdrachtsgevolgen
+
+Het overdragen van een domein dat via MyCompanyDesk is geregistreerd naar een andere registrar heeft permanente gevolgen, afgedwongen door de wekelijkse OpenProvider-statussynchronisatie:
+
+- **Founder-tier domeinen**: De Founder-claim wordt verwijderd en het interne levenslange-Pro-abonnement van de werkruimte wordt opgezegd. De werkruimte wordt een normale betalende klant. Dit is onomkeerbaar. De Founder-status kan niet opnieuw worden geclaimd.
+- **Trial-tier / Pro-gebundelde domeinen**: De gebundelde-gratis-status gaat verloren. De werkruimte kan nooit meer een ander gratis domein claimen (al afgedwongen via de retained-claims-lijst).
+- **Betaalde domeinen**: Geen voordeelintrekking. Het domein gaat simpelweg naar `status = 'transferred_out'`.
+
+De claim-modal waarschuwt voor deze gevolgen voordat een gratis-domein claim wordt ingediend, en vereist expliciete bevestiging van de gebruiker. Intrekkingsdetails worden vastgelegd in de `domain_perk_revocations`-audittabel voor supportreferentie.
 
 #### Domein kopen of claimen
 
@@ -120,8 +139,9 @@ De domein-aanschafkaart (`DomainPurchaseCard.vue`, `domain-purchase.service.ts`)
 
 Founder-claims hebben nu twee tiers voor verlenging:
 
-- **Founder-tier** -- De werkruimte is een Founding Member met volledige levenslange gratis verlenging. Geen betaalmiddel nodig.
-- **Trial-tier** -- De werkruimte loopt op een trial. Het eerste jaar is gratis, en de gebruiker kan optioneel een kaart opslaan via Stripe SetupIntent in de modal voor automatische verlenging volgend jaar. Zonder opgeslagen kaart ontvangt de gebruiker een reminder wanneer verlenging nodig is.
+- **Founder-tier** -- De werkruimte is een Founding Member met volledige levenslange gratis verlenging. Geen betaalmiddel nodig. Verlenging wordt automatisch door het platform afgehandeld, waarbij MCD de wholesale-kosten draagt.
+- **Trial-tier** -- De werkruimte loopt op een trial. Het eerste jaar is gratis, en de gebruiker kan optioneel een kaart opslaan via Stripe SetupIntent in de modal voor automatische verlenging volgend jaar. Als de werkruimte naar Pro converteert voordat het domein verloopt, wordt het domein onderdeel van de Pro-bundel en verloopt verlenging gratis op MCD's rekening. Als de werkruimte van Pro af valt en geen opgeslagen kaart heeft, ontvangt de gebruiker een melding en moet handmatig verlengen via een eenmalige Stripe Embedded Checkout-sessie vanuit de domeininstellingen.
+- **Paid-tier** -- Standaard domeinen gekocht voor de volle prijs. Verlenging wordt via de opgeslagen betaalmethode in rekening gebracht op de jaarlijkse cyclus. Als de betaling mislukt, wordt een handmatige-verlenging-melding verstuurd.
 
 Het eligibility-eindpunt (`GET /api/domain-purchase/founder/eligibility`) retourneert nu een `tier`-veld (`founder` | `trial` | `paid` | `free`) en `founderSlotsRemaining` naast de bestaande gates. De limiet van 50 plekken geldt alleen voor Founder-tier claims; trial-tier claims tellen niet mee voor het Founder-limiet.
 

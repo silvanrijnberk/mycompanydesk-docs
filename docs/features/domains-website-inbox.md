@@ -110,6 +110,25 @@ Notable columns the app reads from:
 | `purchase_price_period` | Billing period for purchased domains (`yearly`). |
 | `purchase_intent_id` | Links to the `domain_purchase_intents` row for paid purchases. |
 | `founder_claim_id` | Links to the `founder_domain_claims` row for Founder free claims. |
+| `transferred_out_at` | Set when a domain is detected as transferred away from the MCD registrar account during the weekly sync. |
+
+#### Renewal lifecycle
+
+Domain renewal follows three paths depending on how the domain was acquired:
+
+1. **Free bundled renewal** (Founder-tier or Pro-converted trial-tier): MCD absorbs the wholesale renewal cost. The domain auto-renews as long as the workspace stays on Pro. No payment method needed.
+2. **Paid auto-renewal** (paid purchase, or trial-tier without Pro): Charged annually via the saved card. Works like any subscription renewal.
+3. **Manual renewal**: If a trial-tier workspace falls off Pro AND has no saved card, the auto-renewal path skips it. The user sees a notification and can trigger a one-off payment via `POST /api/domains/renew/:domainId`, which creates a Stripe Embedded Checkout session for the renewal. This is the only way to keep a domain alive without an active subscription or saved card.
+
+#### Transfer consequences
+
+Transferring a domain registered through MyCompanyDesk to another registrar has permanent consequences, enforced by the weekly OpenProvider status sync:
+
+- **Founder-tier domains**: The Founder claim is deleted, and the workspace's internal lifetime-Pro subscription is cancelled. The workspace becomes a regular paid customer. This is irreversible. The Founder status cannot be reclaimed.
+- **Trial-tier / Pro-bundled domains**: The bundled-free status is lost. The workspace can never claim another free domain (already enforced via the retained-claims list).
+- **Paid domains**: No perk revocation. The domain simply moves to `status = 'transferred_out'`.
+
+The claim modal warns about these consequences before a free-domain claim is submitted, and requires explicit acknowledgement from the user. Revocation details are recorded in the `domain_perk_revocations` audit table for support reference.
 
 #### Buy or claim a domain
 
@@ -120,8 +139,9 @@ The domain purchase card (`DomainPurchaseCard.vue`, `domain-purchase.service.ts`
 
 Founder claims now have two tiers for renewal:
 
-- **Founder tier** -- The workspace is a Founding Member with full lifetime-free renewal. No payment method is required.
-- **Trial tier** -- The workspace is on a trial. The first year is free, and the user can optionally save a card via Stripe SetupIntent in the modal for automatic renewal next year. Without a saved card, the user receives a reminder when renewal is due.
+- **Founder tier** -- The workspace is a Founding Member with full lifetime-free renewal. No payment method is required. Renewal is handled automatically by the platform, with MCD absorbing the wholesale cost.
+- **Trial tier** -- The workspace is on a trial. The first year is free, and the user can optionally save a card via Stripe SetupIntent in the modal for automatic renewal next year. If the workspace converts to Pro before the domain expires, the domain becomes part of the Pro bundle and renews free on MCD's tab. If the workspace falls off Pro and has no saved card, the user receives a notification and must renew manually through a one-off Stripe Embedded Checkout session from the domain settings.
+- **Paid tier** -- Standard domains purchased at full price. Renewal is charged via the saved payment method on the annual cycle. If the charge fails, a manual-renewal notification is sent.
 
 The eligibility endpoint (`GET /api/domain-purchase/founder/eligibility`) now returns a `tier` field (`founder` | `trial` | `paid` | `free`) and `founderSlotsRemaining` alongside the existing gates. The 50-slot cap applies only to Founder-tier claims; trial-tier claims do not count against the Founder cap.
 
