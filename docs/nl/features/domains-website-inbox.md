@@ -133,7 +133,10 @@ Mogelijkheden:
 
 - **Threading** -- inkomende mail wordt gegroepeerd in threads op basis van RFC 822 `Message-ID` / `In-Reply-To` / `References`. Elke thread bevat `last_message_preview`, `participants`, status (`open / snoozed / closed / spam`) en labels.
 - **Beantwoorden** -- inline antwoordveld op de thread. Slimme `From` kiest het adres waarnaar de oorspronkelijke mail was gestuurd, zodat een klant die naar `support@acme.nl` mailde antwoord krijgt van `support@`, niet `info@`.
-- **Opstellen** -- ladeformulier met mailboxkiezer, send-as-kiezer, klantkiezer (of vrij `Aan`), onderwerp, bericht, bijlagen. Waarschuwing voor bounced ontvanger wordt getoond voor verzending.
+- **Allen beantwoorden** -- antwoord in een klik naar alle deelnemers van de thread. De knop staat naast Beantwoorden in de thread-header en neemt elke ontvanger uit het oorspronkelijke bericht mee.
+- **Doorsturen** -- stuur de hele thread door naar een andere ontvanger. Opent een opstellade met het oorspronkelijke bericht en de bijlagen, klaar om te bewerken voor verzending. De header van het doorgestuurde bericht toont de oorspronkelijke afzender, datum en onderwerp.
+- **CC en BCC** -- CC- en BCC-velden zijn beschikbaar bij zowel opstellen als beantwoorden via een "Cc/Bcc toevoegen"-toggle. Adressen accepteren kommagescheiden lijsten of plakken vanuit het klembord. De velden blijven verborgen tot je ze nodig hebt, volgens het standaard inbox-patroon waarbij de meeste berichten ze niet nodig hebben.
+- **Opstellen** -- ladeformulier met mailboxkiezer, send-as-kiezer, klantkiezer (of vrij `Aan`), onderwerp, bericht, CC/BCC-velden, bijlagen. Waarschuwing voor bounced ontvanger wordt getoond voor verzending.
 - **Send-as aliassen** -- `info@`, `support@`, `sales@` zijn bidirectionele aliassen op dezelfde mailbox. `noreply@` is alleen-verzend -- selecteerbaar als From, maar inkomende mail erop wordt weggegooid bij opname.
 - **Bijlagen** -- uploaden voor verzending (zowel opstellen als beantwoorden). Bijlagen op inkomende mail zijn downloadbaar vanuit het bericht; ondertekende download-URL's verlopen na een korte TTL.
 - **Alias-melding** -- wanneer een inkomend bericht binnenkomt op een adres dat nog geen geregistreerd alias is, toont de thread een zachte melding met een "Toevoegen als alias"-actie.
