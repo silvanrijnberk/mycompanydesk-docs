@@ -8,20 +8,29 @@ Verwalten Sie Ihr MyCompanyDesk-Abonnement, sehen Sie Ihre Nutzung ein und fuhre
 
 ## Founding Members
 
-MyCompanyDesk bietet ein Founding-Members-Programm fur die ersten 100 Arbeitsbereiche, die sich wahrend der Startphase anmelden. Ein Founding Member erhalt den Pro-Tarif lebenslang kostenlos, ohne Ablaufdatum und ohne Zahlungsmethode.
+MyCompanyDesk bietet ein Founding-Members-Programm fur die ersten 100 Arbeitsbereiche, die sich wahrend der Startphase anmelden.
+
+### Aktuelles Angebot (ab 20. Mai 2026)
+
+Ein Founding Member erhalt das erste Jahr Pro kostenlos und danach lebenslang 50% Rabatt auf den Pro-Tarif. Das kostenlose Jahr beginnt sofort mit dem Claim. Am Ende des Gratis-Jahres kann der Arbeitsbereich auf kostenpflichtiges Pro umstellen, mit einem lebenslangen 50%-Rabatt (als Stripe-Coupon beim Checkout angewendet). Wenn der Arbeitsbereich nicht umstellt, lauft die Pro-Testphase wie jede andere aus.
+
+Die inkludierte `.nl`-Domain ist im ersten Jahr kostenlos und wird ab Jahr zwei Teil des kostenpflichtigen Pro-Abonnements. Ein Arbeitsbereich, der nach dem Gratis-Jahr nicht mehr zahlt, verliert Pro und die Domain verfallt. Es gibt keine unbefristete Gratis-auf-Lebenszeit-Zusage mehr fur neue Mitglieder.
+
+### Ursprungliche Kohorte (grandfathered)
+
+Die erste Welle von Founding Members, die unter den ursprunglichen Bedingungen vor dem 20. Mai 2026 geclaimt haben, behalten Pro lebenslang kostenlos und erhalten lebenslange kostenlose Domain-Verlangerung. Diese Claims bestehen fur die Lebensdauer von MyCompanyDesk, solange der Dienst und die betreffende Funktion angeboten werden. Der neue Flow schreibt diese Zeilen nie; bestehende gegrandfatherte Arbeitsbereiche bleiben unangetastet.
 
 ### So funktioniert es
 
 - Das Programm ist auf **100 Platze** uber alle Arbeitsbereiche hinweg begrenzt.
-- Nach dem Claim ist Ihr Arbeitsbereich dauerhaft auf Pro upgegradet. Das Abonnement zeigt ein "Founding Member"-Badge im Abrechnungsbereich.
 - Jeder Arbeitsbereich kann nur einen Platz beanspruchen. Von derselben IP-Adresse darf ebenfalls nur ein Platz geclaimt werden (Missbrauchspravention).
-- Das Claimen ist endgultig. Es gibt keine Testphase oder Verlangerung; der Pro-Tarif bleibt unbegrenzt aktiv.
+- Das Claimen ist endgultig. Es gibt keinen zweiten Claim oder Neu-Claim; ist der Platz weg, ist er weg.
 
 ### Einen Platz claimen
 
 Sie konnen auf zwei Arten einen Founding-Member-Platz beanspruchen:
 
-**Uber die Abrechnungsseite.** Wenn noch Platze verfugbar sind, zeigt die Abrechnungsseite eine Founding-Member-Claim-Karte. Klicken Sie auf **Platz claimen**, um Ihren Platz zu reservieren. Das Upgrade wird sofort wirksam.
+**Uber die Abrechnungsseite.** Wenn noch Platze verfugbar sind, zeigt die Abrechnungsseite eine Founding-Member-Claim-Karte. Klicken Sie auf **Platz claimen**, um Ihr kostenloses Pro-Jahr zu starten. Das Upgrade wird sofort wirksam.
 
 **Uber die Landingpage.** Der CTA auf der Landingpage verlinkt auf das Registrierungsformular mit einer Founding-Member-Absicht. Wenn Sie sich uber diesen Weg anmelden:
 
@@ -29,7 +38,7 @@ Sie konnen auf zwei Arten einen Founding-Member-Platz beanspruchen:
 2. Nach der E-Mail-Bestatigung und Anmeldung wird Ihr Platz automatisch im Hintergrund geclaimt.
 3. Ein Bestatigungstoast zeigt an, ob der Claim erfolgreich war. Wenn die Platze voll waren, bevor Sie die Registrierung abgeschlossen haben, erhalten Sie trotzdem eine 60-tagige Pro-Testphase.
 
-Einmal geclaimt ist der Claim endgultig und der Arbeitsbereich behalt Pro lebenslang kostenlos. Wenn der automatische Claim fehlschlagt (Platze voll, IP bereits von einem anderen Arbeitsbereich verwendet oder Netzwerkfehler), wird der Claim nicht erneut versucht. Sie konnen weiterhin auf der Abrechnungsseite nachsehen und manuell claimen, falls noch Platze vorhanden sind.
+Wenn der automatische Claim fehlschlagt (Platze voll, IP bereits von einem anderen Arbeitsbereich verwendet oder Netzwerkfehler), wird der Claim nicht erneut versucht. Sie konnen weiterhin auf der Abrechnungsseite nachsehen und manuell claimen, falls noch Platze vorhanden sind.
 
 Founding-Member-Arbeitsbereiche sind in jeder Hinsicht normale Pro-Kunden: dieselben Funktionen, dieselben Limits. Der einzige Unterschied ist die Abonnement-Quelle ("intern") und das Badge in der Abrechnung.
 

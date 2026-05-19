@@ -8,20 +8,29 @@ Beheer je MyCompanyDesk-abonnement, bekijk je verbruik en upgrade je abonnement.
 
 ## Founding Members
 
-MyCompanyDesk biedt een Founding Members-programma voor de eerste 100 werkruimtes die zich aanmelden tijdens de lanceringsperiode. Een Founding Member krijgt het Pro-abonnement gratis voor het leven, zonder einddatum en zonder betaalmethode.
+MyCompanyDesk biedt een Founding Members-programma voor de eerste 100 werkruimtes die zich aanmelden tijdens de lanceringsperiode.
+
+### Huidige aanbieding (vanaf 20 mei 2026)
+
+Een Founding Member krijgt het eerste jaar Pro gratis en daarna voor altijd 50% korting op het Pro-abonnement. Het gratis jaar start direct bij het claimen. Aan het einde van het gratis jaar kan de werkruimte overstappen naar betaald Pro met een levenslange korting van 50% (toegepast als Stripe-coupon bij het afrekenen). Als de werkruimte niet overstapt, loopt de Pro-proefperiode af zoals elke andere proefperiode.
+
+Het inbegrepen `.nl`-domein is het eerste jaar gratis en wordt vanaf jaar twee onderdeel van het betaalde Pro-abonnement. Een werkruimte die na het gratis jaar stopt met betalen, verliest Pro en het domein verloopt. Er is niet langer een open einde gratis-voor-het-leven-toezegging voor nieuwe leden.
+
+### Oorspronkelijke lichting (grandfathered)
+
+De eerste lichting Founding Members die onder de oorspronkelijke voorwaarden heeft geclaimd (voor 20 mei 2026) houdt Pro gratis voor het leven en krijgt levenslange gratis domeinverlenging. Deze claims gelden voor de levensduur van MyCompanyDesk zolang de dienst en de betreffende functionaliteit worden aangeboden. De nieuwe flow schrijft deze rijen nooit; bestaande gegrandfatherde werkruimtes blijven onaangetast.
 
 ### Hoe het werkt
 
 - Het programma is beperkt tot **100 plekken** over alle werkruimtes.
-- Zodra je claimt, is je werkruimte permanent geupgrade naar Pro. Het abonnement toont een "Founding Member"-badge in de factureringssectie.
 - Elke werkruimte kan maar een plek claimen. Vanaf hetzelfde IP-adres mag ook maar een plek geclaimd worden (misbruikpreventie).
-- Claimen is definitief. Er is geen proefperiode of verlenging; het Pro-abonnement blijft onbeperkt actief.
+- Claimen is definitief. Er is geen tweede claim of her-claim; als je plek weg is, is die weg.
 
 ### Een plek claimen
 
 Je kunt op twee manieren een Founding Member-plek claimen:
 
-**Via de factureringspagina.** Als er nog plekken over zijn, toont de factureringspagina een Founding Member-claimkaart. Klik op **Plek claimen** om je plek vast te leggen. De upgrade gaat meteen in.
+**Via de factureringspagina.** Als er nog plekken over zijn, toont de factureringspagina een Founding Member-claimkaart. Klik op **Plek claimen** om je gratis Pro-jaar te starten. De upgrade gaat meteen in.
 
 **Via de landingspagina.** De CTA op de landingspagina linkt naar het registratieformulier met een founding-member-intentie. Wanneer je via die flow een account aanmaakt:
 
@@ -29,7 +38,7 @@ Je kunt op twee manieren een Founding Member-plek claimen:
 2. Na e-mailverificatie en inloggen claimt het systeem automatisch je plek op de achtergrond.
 3. Een bevestigingstoast laat zien of het claimen gelukt is. Zijn de plekken op voordat je het registratieproces afrondde, dan krijg je alsnog een Pro-proefperiode van 60 dagen.
 
-Eenmaal geclaimd is de claim definitief en houdt de werkruimte Pro gratis voor het leven. Als het automatisch claimen mislukt (plekken vol, IP al gebruikt door een andere werkruimte, of een netwerkfout), wordt de claim niet opnieuw geprobeerd. Je kunt dan nog steeds op de factureringspagina kijken en handmatig claimen als er nog plekken zijn.
+Als het automatisch claimen mislukt (plekken vol, IP al gebruikt door een andere werkruimte, of een netwerkfout), wordt de claim niet opnieuw geprobeerd. Je kunt dan nog steeds op de factureringspagina kijken en handmatig claimen als er nog plekken zijn.
 
 Founding Member-werkruimtes zijn in alle opzichten gewone Pro-klanten: dezelfde functies, dezelfde limieten. Het enige verschil is de abonnementsbron ("intern") en de badge in de facturering.
 
