@@ -86,3 +86,7 @@ Les nouveaux utilisateurs voient une carte d'accueil qui les guide dans la confi
 3. Creer une premiere facture
 
 La carte suit votre progression et disparait une fois terminee (ou lorsqu'elle est fermee manuellement).
+
+## Banniere de bienvenue Pro
+
+Les espaces de travail avec un abonnement Pro voient une ligne de bienvenue violette discrete au-dessus de la grille du tableau de bord. Elle affiche une icone de couronne avec "Content de vous revoir, {name}. Votre espace Pro est pret" (ou la variante sans nom si aucun nom n'est enregistre). C'est un rappel quotidien discret du statut premium, sans concurrence avec la banniere de configuration ou les sections du tableau de bord.

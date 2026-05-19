@@ -113,6 +113,10 @@ A bottom sheet opens with a vertical reorder list and per-section visibility tog
 
 While the magical setup wizard at `/setup` still has fields to fill, a `FinishSetupBanner` pins itself above the dashboard with the count of pending fields and a **Resume setup** button. It disappears the moment you complete the wizard or the pending count drops to zero — there is no manual dismiss and no "skip for now". The old onboarding card on the dashboard was removed; this banner replaces it.
 
+## Pro welcome banner
+
+Workspaces on the Pro plan see a subtle violet welcome pill above the dashboard grid. It shows a crown icon alongside "Welcome back, {name}. Your Pro workspace is ready" (or the nameless variant if no name is on file). It is a quiet daily reminder of premium status and does not compete with the setup banner or the dashboard sections below.
+
 ## Drill-through
 
 Every entity link in the dashboard takes you to a filtered list view, not a detail page:
