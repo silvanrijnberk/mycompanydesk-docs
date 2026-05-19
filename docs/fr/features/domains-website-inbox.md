@@ -78,6 +78,7 @@ La page se divise en deux sections :
 
 Ce que la page vous permet de faire :
 
+- **Acheter ou reclamer un domaine** via la carte d'achat de domaine. Saisissez un nom de domaine, verifiez la disponibilite via OpenProvider, et achetez le domaine ou reclamez-le gratuitement si vous êtes eligible en tant que Founding Member.
 - **Ajouter un domaine** (mode nameserver ou CNAME) via une carte dediee toujours visible.
 - **Verifier** un domaine en attente.
 - **Gerer les enregistrements DNS** pour le domaine selectionne -- A, AAAA, CNAME, MX, TXT, SRV, CAA, NS. Le CRUD passe par Cloudflare via l'API.
@@ -103,7 +104,41 @@ Colonnes notables que l'application lit :
 | `email_routing_enabled` | `true` une fois la zone Cloudflare Email Routing activee. |
 | `inbox_enabled`, `inbox_subdomain_tag`, `inbox_dkim_ready` | Definis par `quickEnableInbox`. Le sous-domaine d'envoi d'e-mails (`mail.acme.fr` par defaut) et le statut de provisionnement DKIM. |
 | `business_page_enabled`, `portal_subdomain_enabled` | Determinant quel nom d'hôte dessert le site web public. |
-| `verified_at` | Defini lorsque la verification reussit. |
+| `verified_at` | Defini lorsque la verification reussit.
+| `registrar` | Le service de registrar, actuellement `openprovider` pour les domaines achetes via le flux d'achat de domaine.
+| `registrar_domain_id` | L'identifiant interne du registrar pour les domaines achetes.
+| `purchase_price_period` | Periode de facturation pour les domaines achetes (`yearly`).
+| `purchase_intent_id` | Renvoie a la ligne `domain_purchase_intents` pour les achats payants.
+| `founder_claim_id` | Renvoie a la ligne `founder_domain_claims` pour les reclamations gratuites Founder.
+
+#### Acheter ou reclamer un domaine
+
+La carte d'achat de domaine (`DomainPurchaseCard.vue`, `domain-purchase.service.ts`) est la premiere carte sur la page des parametres Domaines. Elle apparait lorsque l'espace de travail n'a pas encore de domaine personnalise actif. La carte permet a l'utilisateur de choisir et d'acquerir un domaine via deux chemins :
+
+- **Acheter** -- Achat payant via OpenProvider. L'utilisateur saisit un nom de domaine, la carte appelle `GET /api/domain-purchase/quote` pour verifier la disponibilite et le prix aupres de l'API d'OpenProvider, puis ouvre un flux d'achat avec Stripe Elements pour collecter le paiement et les donnees du titulaire. Une fois le paiement termine, la plateforme enregistre le domaine chez OpenProvider et cree la ligne `domains` en mode nameserver, reliee a Cloudflare.
+- **Reclamation gratuite Founder** -- Les Founding Members eligibles peuvent reclamer gratuitement un domaine `.nl`. La carte appelle `GET /api/domain-purchase/founder/eligibility` pour verifier si l'espace de travail remplit toutes les conditions (statut Founding Member, KVK lie, age du compte, contenu du site, places disponibles, et domaine correspondant au nom KVK). Si eligible, l'utilisateur peut reclamer le domaine via un module dedie. La plateforme prend en charge les frais d'enregistrement de la premiere annee ; le renouvellement annuel est couvert par MyCompanyDesk pour la duree de vie de l'espace de travail.
+
+L'eligibilite Founder est determinee par un ensemble de conditions verifiees cote serveur dans `founder-domain-claim.service.js` :
+
+- **Statut Founding Member** -- l'espace de travail doit avoir le drapeau Founding Member.
+- **Places de domaine gratuit** limitees a 50 pour l'ensemble des Founding Members.
+- **KVK requis** -- l'espace de travail doit avoir un numero KVK lie.
+- **Le domaine doit être `.nl`** -- le programme gratuit ne concerne que l'extension NL.
+- **Le domaine doit correspondre au nom KVK** -- le domaine doit correspondre a la raison sociale ou a un nom commercial.
+- **Age du compte** -- le compte doit avoir au moins 14 jours.
+- **Site publie** -- la page d'entreprise publique de l'espace de travail doit être en ligne.
+- **Contenu minimum du site** -- le site doit contenir au moins 3 paragraphes.
+- **Un domaine gratuit par KVK** -- un numero KVK ne peut reclamer qu'un seul domaine gratuit.
+
+Lorsqu'une condition n'est pas remplie, la carte liste les exigences restantes pour que l'utilisateur puisse voir ce qu'il reste a debloquer avant que la reclamation gratuite ne soit disponible.
+
+Les TLD pris en charge pour l'achat sont `.nl`, `.eu`, `.com`, `.net` et `.org`. Les autres TLD affichent un message indiquant qu'ils ne sont pas encore pris en charge, avec la suggestion d'acheter le domaine ailleurs et de l'ajouter via le chemin BYO existant.
+
+Nouvelles tables de base de donnees introduites par cette fonctionnalite :
+
+- `domain_purchase_intents` -- suit les intentions d'achat payantes avec les identifiants Stripe PaymentIntent, les donnees du titulaire et le statut d'achat.
+- `founder_domain_claims` -- suit les reclamations gratuites Founder avec des snapshots d'eligibilite, un score d'abus et le statut de la reclamation.
+- La migration `domain_registrar_columns` ajoute des colonnes liees au registrar a la table `domains` existante.
 
 ### Site web heberge
 

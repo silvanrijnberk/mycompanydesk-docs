@@ -78,6 +78,7 @@ The page splits into two sections:
 
 What the page lets you do:
 
+- **Buy or claim a domain** via the domain purchase card. Enter a domain name, check availability against OpenProvider, and either buy it or claim it free if you qualify as a Founding Member.
 - **Add a domain** (nameserver or CNAME mode) via a dedicated card that is always visible.
 - **Verify** a pending domain.
 - **Manage DNS records** for the selected active domain -- A, AAAA, CNAME, MX, TXT, SRV, CAA, NS. CRUD goes through Cloudflare via the API.
@@ -104,6 +105,40 @@ Notable columns the app reads from:
 | `inbox_enabled`, `inbox_subdomain_tag`, `inbox_dkim_ready` | Flipped by `quickEnableInbox`. The mail-sending subdomain (`mail.acme.nl` by default) and DKIM provisioning state. |
 | `business_page_enabled`, `portal_subdomain_enabled` | Determine which hostname serves the public website. |
 | `verified_at` | Set when verification succeeds. |
+| `registrar` | The registrar service, currently `openprovider` for domains purchased through the buy-a-domain flow. |
+| `registrar_domain_id` | The registrar-side identifier for purchased domains. |
+| `purchase_price_period` | Billing period for purchased domains (`yearly`). |
+| `purchase_intent_id` | Links to the `domain_purchase_intents` row for paid purchases. |
+| `founder_claim_id` | Links to the `founder_domain_claims` row for Founder free claims. |
+
+#### Buy or claim a domain
+
+The domain purchase card (`DomainPurchaseCard.vue`, `domain-purchase.service.ts`) is the first card on the Domains settings page. It appears when the workspace has no active custom domain yet. The card lets the user pick and acquire a domain through two paths:
+
+- **Buy** -- Paid purchase via OpenProvider. The user enters a domain name, the card calls `GET /api/domain-purchase/quote` to check availability and pricing with OpenProvider's API, and then opens a purchase flow powered by Stripe Elements to collect payment and registrant details. Once the payment is complete, the platform registers the domain with OpenProvider and creates the `domains` row in nameserver mode, wired to Cloudflare.
+- **Founder free claim** -- Eligible Founding Members can claim one `.nl` domain free of charge. The card calls `GET /api/domain-purchase/founder/eligibility` to check whether the workspace passes all gates (Founding Member status, KVK linked, account age, site content, slot availability, and domain matching the KVK name). If eligible, the user can claim the domain through a dedicated modal. The platform pays the first-year registration fee; the annual renewal is covered by MyCompanyDesk for the life of the workspace.
+
+Founder eligibility is determined by a set of gates checked server-side in `founder-domain-claim.service.js`:
+
+- **Founding Member status** -- the workspace must have the Founding Member flag.
+- **Free-domain slots** capped at 50 across all Founding Members.
+- **KVK required** -- the workspace must have a linked KVK number.
+- **Domain must be `.nl`** -- the free program only covers the NL TLD.
+- **Domain must match the KVK name** -- the domain must correspond to the registered legal name or a trade name.
+- **Account age** -- the account must be at least 14 days old.
+- **Site must be published** -- the workspace's public business page must be live.
+- **Site content minimum** -- the site must have at least 3 paragraphs of content.
+- **One free domain per KVK** -- a KVK number can only claim one free domain.
+
+When a gate fails, the card lists the remaining requirements so the user can see what is left to unlock before the free claim becomes available.
+
+The supported TLDs for purchase are `.nl`, `.eu`, `.com`, `.net`, and `.org`. Other TLDs show an unsupported message with a suggestion to buy the domain elsewhere and add it via the existing BYO flow.
+
+New database tables introduced by this feature:
+
+- `domain_purchase_intents` -- tracks paid purchase intents with Stripe PaymentIntent IDs, registrant details, and purchase status.
+- `founder_domain_claims` -- tracks Founder free claims with eligibility snapshots, abuse scoring, and claim status.
+- `domain_registrar_columns` migration adds registrar-related columns to the existing `domains` table.
 
 ### Hosted website
 
