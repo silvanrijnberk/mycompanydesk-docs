@@ -173,6 +173,7 @@ Side effects beyond column writes:
 - **Initials logo** is generated from the business name + brand colour, but only if `logo_path` and `logo_svg` are both blank. Skipped entirely if the user uploaded a real logo on the Magic step.
 - **Services** — up to 8 inserts into `company_services`, only if the company has none yet.
 - **Email templates** — saved per type via the template repository.
+- **Website site seed** — on the first Finish that finds zero pages in the workspace, `apply.service.js` creates a default site with a draft homepage (`/`, template "home", `is_home: true`) and populates design tokens with the brand colour captured in the wizard. Re-runs skip creation when any page already exists, so the wizard never overwrites manual edits.
 - **Domain** — `activateSubdomain` for the subdomain path, or `addDomain` + `quickEnableInbox` (+ optional personal mailbox) for the own-domain path.
 
 If domain provisioning fails, the rest of Finish still applies — the failure shows on the Finish splash with a specific error code (`subdomain_failed`, `domain_failed`, `inbox_enable_failed`, `personal_mailbox_failed`, `personal_mailbox_remove_failed`, `personal_mailbox_list_failed`) translated to a user-readable line.
@@ -185,11 +186,15 @@ A green confirmation panel that shows for 4.2 seconds (or 0.9 seconds when nothi
 - **Services** - count of services added to the business page.
 - **Logo** - confirmation when an initials logo was generated.
 - **Email templates** - count of templates saved in the workspace brand tone.
+- **Website** - confirmation that a default site with homepage, navigation and brand colour is ready. Only shown when the site was freshly seeded.
 - **Domain** - the ready URL for subdomains or the added domain for own-domain setups.
 
-A "Go to dashboard" button lets the user skip the auto-redirect timer and jump straight in.
+Two buttons appear below the summary:
 
-Then the user lands on `/dashboard` (default) or `/workspace/organization/company/address` (when an own-domain is pending DNS verification).
+- **Go to dashboard** — takes the user to `/dashboard` immediately, skipping the auto-redirect timer.
+- **Open the website builder** — visible only when a site was seeded. Takes the user straight to `/website` so they can start editing their homepage.
+
+Then the user lands on `/dashboard` (default path), `/website` (when they click the website builder CTA), or `/workspace/organization/company/address` (when an own-domain is pending DNS verification).
 
 ## Re-running the wizard
 
