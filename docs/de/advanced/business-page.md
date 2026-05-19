@@ -20,6 +20,20 @@ Der Website-Builder ersetzt das alte einseitige Unternehmensprofil. Sie erhalten
 
 Den Website-Builder finden Sie unter **Unternehmen > Ihre Website** (`/website`).
 
+## KI-Schnellstart
+
+Wenn Sie den Website-Builder zum ersten Mal in einem neuen Workspace öffnen, erscheint ein Schnellstart-Banner oben. Es liest Ihre Handelsregisterdaten (Firmenname, Branche, Stadt) und schlägt einen ersten Claim, einen Über-uns-Text und drei Dienstleistungen vor. Sie können alles direkt anpassen bevor Sie übernehmen, neu generieren wenn der erste Vorschlag nicht ganz passt, oder das Banner ausblenden. Keine Wizard-Fragen, keine Hürde vorab.
+
+Was das Banner für Sie tut:
+
+- **Generieren**: Klicken Sie auf **Vorschlag generieren**, um die KI Ihre KVK-Daten lesen und Text vorschlagen zu lassen.
+- **Inline bearbeiten**: Passen Sie Claim, Über-uns-Text und Dienstleistungsnamen und -beschreibungen direkt im Banner an.
+- **Übernehmen**: Klicken Sie auf **Übernehmen**, um den freigegebenen Text in Ihren Workspace zu schreiben. Ihre Unternehmensbeschreibung, der Hero-Claim und die Dienstleistungen werden in einem Schritt aktualisiert.
+- **Neu generieren**: Nicht zufrieden? Klicken Sie auf **Neu generieren** für einen neuen Satz Vorschläge.
+- **Ausblenden**: Das Banner merkt sich Ihre Entscheidung lokal. Es bleibt ausgeblendet, bis Sie Ihre Workspace-Daten zurücksetzen.
+
+Das Banner verwendet das Gemini KI-Modell (Lite-Variante), sofern in Ihrem Workspace verfügbar. Wenn KI nicht konfiguriert ist, arbeitet das Banner trotzdem mit einem sinnvollen Fallback auf Basis Ihrer Branchenkennzahl und Ihres Firmennamens.
+
 ## Tabs
 
 Der Website-Builder hat fünf Tabs (sechs, wenn Stil ausgeklappt ist):

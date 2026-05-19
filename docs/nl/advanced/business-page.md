@@ -20,6 +20,20 @@ De sitebouwer vervangt het oude bedrijfsprofiel van één pagina. Je krijgt een 
 
 De sitebouwer vind je onder **Bedrijf > Je website** (`/website`).
 
+## AI-snelstart
+
+Als je voor het eerst de sitebouwer opent op een nieuwe werkruimte, zie je een snelstartbanner bovenaan. Die leest je KVK-gegevens (bedrijfsnaam, branche, plaats) en stelt een eerste tagline, een over-ons-tekst en drie diensten voor. Je kunt alles ter plekke aanpassen voordat je het overneemt, opnieuw genereren als de eerste suggestie niet helemaal klopt, of de banner wegklikken. Geen wizardvragen, geen gedoe vooraf.
+
+Wat de banner voor je doet:
+
+- **Genereren**: Klik op **Genereer voorstel** om de AI je KVK-data te laten lezen en kopij voor te stellen.
+- **Inline bewerken**: Pas de tagline, over-tekst en dienstnamen en omschrijvingen direct in de banner aan.
+- **Overnemen**: Klik op **Overnemen** om de goedgekeurde kopij naar je werkruimte te schrijven. Je bedrijfsomschrijving, hero-tagline en diensten worden in een keer bijgewerkt.
+- **Opnieuw genereren**: Niet tevreden? Klik op **Opnieuw genereren** voor een nieuwe set suggesties.
+- **Wegklikken**: De banner onthoudt je keuze lokaal. Hij blijft verborgen totdat je je werkruimtegegevens opnieuw instelt.
+
+De banner gebruikt het Gemini AI-model (lite-variant) als dat beschikbaar is in je werkruimte. Als AI niet is geconfigureerd, werkt de banner alsnog met een verstandige terugval op basis van je branchecode en bedrijfsnaam.
+
 ## Tabs
 
 De sitebouwer heeft vijf tabs (zes als Stijl is uitgeklapt):

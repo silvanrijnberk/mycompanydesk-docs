@@ -20,6 +20,20 @@ The site builder replaces the old single-page business profile. It gives you a f
 
 The site builder lives at **Company > Your website** (`/website`).
 
+## AI scaffolding
+
+When you open the site builder for the first time on a fresh workspace, the editor shows a quick-start banner at the top. It reads your business register data (legal name, industry code, city) and generates a starter tagline, an about-us paragraph and three service drafts for you. You can edit everything inline before accepting, regenerate if the first suggestion is not quite right, or dismiss the banner. No wizard questions, no upfront friction.
+
+What the banner can do for you:
+
+- **Generate**: Click **Generate suggestion** to let the AI read your KVK data and propose copy.
+- **Edit inline**: Adjust the tagline, about text and service names and descriptions right in the banner.
+- **Accept**: Click **Apply** to write the accepted copy to your workspace. Your company description, hero tagline and services are updated in one go.
+- **Regenerate**: Not happy with the result? Click **Regenerate** for a fresh set of suggestions.
+- **Dismiss**: The banner remembers your choice locally. It stays hidden until you reset your workspace data.
+
+The banner uses the Gemini AI model (lite variant) when available on your workspace. If AI is not configured, the banner still works with a sensible fallback based on your industry code and company name.
+
 ## Tabs
 
 The site builder has five tabs (six when Style is expanded):
