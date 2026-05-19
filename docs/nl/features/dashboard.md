@@ -86,3 +86,7 @@ Nieuwe gebruikers zien een onboardingkaart die hen door de eerste installatie be
 3. Eerste factuur aanmaken
 
 De kaart houdt je voortgang bij en verdwijnt zodra alles is voltooid (of wanneer je hem handmatig sluit).
+
+## Pro-welkomstbanner
+
+Werkruimtes op het Pro-abonnement zien een subtiele violette welkomstregel boven het dashboardraster. De regel toont een kroonicoon met "Welkom terug, {name}. Je Pro-account staat klaar" (of de naamloze variant als er geen naam bekend is). Het is een rustige dagelijkse herinnering aan de premiumstatus en concurreert niet met de setupbanner of de dashboardsecties eronder.

@@ -86,3 +86,7 @@ Neue Benutzer sehen eine Onboarding-Karte, die sie durch die Ersteinrichtung fü
 3. Erste Rechnung erstellen
 
 Die Karte verfolgt Ihren Fortschritt und verschwindet nach Abschluss (oder bei manueller Ausblendung).
+
+## Pro-Willkommensbanner
+
+Arbeitsbereiche mit Pro-Abonnement sehen eine dezente violette Willkommenszeile über dem Dashboard-Raster. Die Zeile zeigt ein Kronen-Icon mit "Willkommen zurück, {name}. Ihr Pro-Arbeitsbereich ist bereit" (oder die namenlose Variante, wenn kein Name hinterlegt ist). Es ist eine ruhige tägliche Erinnerung an den Premium-Status und steht nicht in Konkurrenz zum Setup-Banner oder den Dashboard-Bereichen darunter.
