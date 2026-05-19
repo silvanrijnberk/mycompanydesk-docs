@@ -47,11 +47,11 @@ Wählt ein Land und sucht das Unternehmen entweder im offiziellen Register des L
 
 ### Drei Wege
 
-1. **Suche** — Typeahead nach Firmennamen, Treffer auswählen und das Basisprofil vom Backend abrufen lassen (EUR 0,02 pro Abruf für NL). Dies ist der primäre Weg für unterstützte Länder.
-2. **Manuell** — Firmennamen, Handelsregisternummer (optional), Adresse, Postleitzahl und Ort selbst eingeben. Die Daten werden direkt über `PUT /company-settings/company` in die Unternehmenszeile geschrieben und `answers.kvk` wird mit `manual: true` markiert. Die manuelle Eingabe existiert für zwei Szenarien: (a) neue Unternehmen, die noch nicht im kostenlosen OpenKVK-Datensatz enthalten sind, und (b) Unternehmen, deren Handelsname nicht mit der Sucheingabe des Benutzers übereinstimmt.
+1. **Suche** — Typeahead nach Firmennamen, Treffer auswählen und das Basisprofil vom Backend abrufen lassen (EUR 0,02 pro Abruf für NL). Das Suchfeld wird nur angezeigt, wenn die kostenpflichtige KVK-API (`KVK_API_KEY`) auf dem API-Container konfiguriert ist. Fehlt der Schlüssel, wird die Suche übersprungen und der Assistent startet standardmäßig mit manueller Eingabe (Weg 2).
+2. **Manuell** — Firmennamen, Handelsregisternummer (optional), Adresse, Postleitzahl und Ort selbst eingeben. Die Daten werden direkt über `PUT /company-settings/company` in die Unternehmenszeile geschrieben und `answers.kvk` wird mit `manual: true` markiert. Die manuelle Eingabe ist der Standard, wenn KVK_API_KEY nicht gesetzt ist, und existiert auch für zwei zusätzliche Szenarien selbst wenn die Suche verfügbar ist: (a) neue Unternehmen, die noch nicht im kostenlosen OpenKVK-Datensatz enthalten sind, und (b) Unternehmen, deren Handelsname nicht mit der Sucheingabe des Benutzers übereinstimmt.
 3. **Überspringen** — "Kein Handelsregistereintrag?" speichert `answers.kvk = null`. Der Assistent fährt fort; Unternehmensdaten können später in den Einstellungen ergänzt werden.
 
-Der Wechsel zwischen Suche und manueller Eingabe erfolgt mit einem Klick: Eine "Manuell ausfüllen"-Schaltfläche erscheint unter den Suchergebnissen, und ein "Zurück zur KVK-Suche"-Link sitzt oben im manuellen Formular.
+Der Wechsel zwischen Suche und manueller Eingabe erfolgt mit einem Klick (wenn die Suche verfügbar ist): Eine "Manuell ausfüllen"-Schaltfläche erscheint unter den Suchergebnissen, und ein "Zurück zur KVK-Suche"-Link sitzt oben im manuellen Formular. Wenn `KVK_API_KEY` fehlt, ist die Zurück-zur-Suche-Schaltfläche vollständig ausgeblendet und der Benutzer beginnt und bleibt auf manueller Eingabe.
 
 ### Landoptionen
 
@@ -83,7 +83,10 @@ Fur NL-Workspaces ist die KvK-Suche ein zweistufiger Prozess:
 1. **Typeahead** — der Benutzer sucht nach Unternehmensnamen. Der `zoeken`-Endpunkt (kostenlos) gibt ubereinstimmende Eintrage zuruck. Dies ist der Autocomplete-Schritt, der die bestehenden `ok`- / `not-found`-Antworten antreibt. Wenn die Suche null Treffer liefert, zeigt die UI ein Inline-Panel fur leere Ergebnisse an (Titel, Erklarung und ein "Manuell eintragen"-Button, der das manuelle Formular mit dem bereits eingegebenen Text vorausfullt). Dies kommt haufig vor, da die kostenlose OpenKVK-Stufe viele junge Unternehmen nicht erfasst.
 2. **Basisprofiel** — sobald ein Treffer ausgewahlt ist, ruft der Assistent den KvK-Basisprofiel-Detailendpunkt auf. Dies ist ein kostenpflichtiger Aufruf (EUR 0,02, 24h zwischengespeichert pro KVK-Nummer). Er gibt das vollstandige Profil zuruck: `legalName`, `statutaireNaam` (satzungsmassiger Name), `tradeNames` (alle registrierten Handelsnamen, sortiert), `rsin`, `legalForm`, `dateFounded`, Besuchs- und Postadressen, SBI-Codes mit Primarflag, `employeeCount` und `indNonMailing` (Keine-Post-Flag).
 
-Der Basisprofiel-Aufruf wird durch `KVK_BASISPROFIEL_ENABLED` gesteuert. Wenn das Flag deaktiviert ist, fallt der Assistent auf das kostenlose `zoeken`-Ergebnis zuruck (dieselben `ok`-Felder wie oben). Wenn das Flag aktiviert ist, reichern die Basisprofiel-Daten die `answers.registry`-Payload an und der Überprüfungsschritt zeigt jedes Feld, das in die Unternehmenszeile geschrieben wird.
+Es gibt zwei unabhängige Feature-Flags für NL-KVK-Abfragen:
+
+- `KVK_API_KEY` (Env-Var auf dem API-Container): Wenn dieser fehlt, wird das Suchfeld gar nicht angezeigt und der Assistent startet in diesem Schritt standardmäßig mit manueller Eingabe. Die kostenlose OpenKVK-Stufe allein ist zu lückenhaft (~2% Trefferquote, verpasst fast jede Neuanmeldung). Das Flag schaltet automatisch um, sobald der Schlüssel gesetzt ist.
+- `KVK_BASISPROFIEL_ENABLED`: Wenn deaktiviert (oder wenn `KVK_API_KEY` fehlt), verwendet der Assistent nur das kostenlose `zoeken`-Ergebnis (dieselben `ok`-Felder wie oben). Wenn aktiviert und `KVK_API_KEY` vorhanden ist, reichern die Basisprofiel-Daten die `answers.registry`-Payload an und der Überprüfungsschritt zeigt jedes Feld, das in die Unternehmenszeile geschrieben wird.
 
 ### Manueller Modus
 

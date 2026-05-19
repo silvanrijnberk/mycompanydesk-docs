@@ -47,11 +47,11 @@ Choisit un pays et recherche l'entreprise dans le registre officiel du pays, sai
 
 ### Trois voies
 
-1. **Recherche** — saisie predictive par nom d'entreprise, choisissez une correspondance et laissez le backend recuperer le Basisprofiel (0,02 EUR par appel pour NL). C'est la voie principale pour les pays pris en charge.
-2. **Manuel** — saisissez le nom de l'entreprise, le numero KVK (facultatif), l'adresse, le code postal et la ville vous-meme. Les donnees sont ecrites directement dans la ligne de l'entreprise via `PUT /company-settings/company` et `answers.kvk` est marque avec `manual: true`. La saisie manuelle existe pour deux scenarios : (a) les nouvelles entreprises qui ne sont pas encore dans le jeu de donnees gratuit OpenKVK, et (b) les entreprises dont le nom commercial ne correspond pas a ce que l'utilisateur a tape dans la recherche.
+1. **Recherche** — saisie predictive par nom d'entreprise, choisissez une correspondance et laissez le backend recuperer le Basisprofiel (0,02 EUR par appel pour NL). Le champ de recherche n'est affiche que lorsque l'API KVK payante (`KVK_API_KEY`) est configuree sur le conteneur API. Lorsque la cle est absente, la recherche est sautee et l'assistant demarre par defaut en saisie manuelle (voie 2).
+2. **Manuel** — saisissez le nom de l'entreprise, le numero KVK (facultatif), l'adresse, le code postal et la ville vous-meme. Les donnees sont ecrites directement dans la ligne de l'entreprise via `PUT /company-settings/company` et `answers.kvk` est marque avec `manual: true`. La saisie manuelle est le comportement par defaut lorsque KVK_API_KEY n'est pas defini, et existe aussi pour deux scenarios supplementaires meme lorsque la recherche est disponible : (a) les nouvelles entreprises qui ne sont pas encore dans le jeu de donnees gratuit OpenKVK, et (b) les entreprises dont le nom commercial ne correspond pas a ce que l'utilisateur a tape dans la recherche.
 3. **Passer** — "Pas de numero KvK?" stocke `answers.kvk = null`. L'assistant continue; les donnees de l'entreprise peuvent etre remplies plus tard dans les parametres.
 
-Le passage de la recherche au manuel se fait en un clic : un bouton "Saisir manuellement" apparait sous les resultats de recherche, et un lien "Retour a la recherche KVK" se trouve en haut du formulaire manuel.
+Le passage de la recherche au manuel se fait en un clic (lorsque la recherche est disponible) : un bouton "Saisir manuellement" apparait sous les resultats de recherche, et un lien "Retour a la recherche KVK" se trouve en haut du formulaire manuel. Lorsque `KVK_API_KEY` est absent, le bouton de retour a la recherche est entierement masque et l'utilisateur commence et reste en saisie manuelle.
 
 ### Options de pays
 
@@ -83,7 +83,10 @@ Pour les espaces de travail NL, la recherche KvK est un processus en deux etapes
 1. **Typeahead** — l'utilisateur recherche par nom d'entreprise. Le point de terminaison `zoeken` (gratuit) renvoie les entrees correspondantes. C'est l'etape d'autocompletion qui alimente les reponses `ok` / `not-found` existantes. Lorsque la recherche ne renvoie aucun resultat, l'UI affiche un panneau d'etat vide (titre, explication et un bouton "Remplir manuellement" qui pre-remplit le formulaire manuel avec ce que l'utilisateur a deja tape). C'est frequent car le niveau gratuit d'OpenKVK ne couvre pas beaucoup de jeunes entreprises.
 2. **Basisprofiel** — une fois une correspondance choisie, l'assistant appelle le point de terminaison de detail Basisprofiel de la KvK. C'est un appel payant (0,02 EUR, mis en cache 24h par numero KVK). Il renvoie le profil complet : `legalName`, `statutaireNaam` (nom statutaire), `tradeNames` (tous les noms commerciaux enregistres, tries), `rsin`, `legalForm`, `dateFounded`, adresses de visite et postales, codes SBI avec indicateur primaire, `employeeCount` et `indNonMailing` (indicateur pas-de-courrier).
 
-L'appel Basisprofiel est controle par `KVK_BASISPROFIEL_ENABLED`. Lorsque le flag est desactive, l'assistant revient au resultat gratuit `zoeken` uniquement (les memes champs `ok` que ci-dessus). Lorsque le flag est active, les donnees Basisprofiel enrichissent la charge utile `answers.registry` et l'etape de Verification montre chaque champ qui sera ecrit dans la ligne de l'entreprise.
+Il y a deux flags de fonctionnalite independants pour les recherches KVK aux Pays-Bas :
+
+- `KVK_API_KEY` (variable d'environnement sur le conteneur API) : lorsque cette cle est absente, le champ de recherche n'est pas du tout affiche et l'assistant demarre par defaut en saisie manuelle a cette etape. Le niveau gratuit OpenKVK seul est trop limite (~2% de taux de succes, manque presque toutes les nouvelles inscriptions). Le flag bascule automatiquement des que la cle est definie.
+- `KVK_BASISPROFIEL_ENABLED` : lorsque desactive (ou lorsque `KVK_API_KEY` est absent), l'assistant utilise uniquement le resultat gratuit `zoeken` (les memes champs `ok` que ci-dessus). Lorsque active et que `KVK_API_KEY` est present, les donnees Basisprofiel enrichissent la charge utile `answers.registry` et l'etape de Verification montre chaque champ qui sera ecrit dans la ligne de l'entreprise.
 
 ### Mode manuel
 

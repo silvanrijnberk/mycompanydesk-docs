@@ -47,11 +47,11 @@ Kies een land en zoek het bedrijf op in het officiele register van het land, vul
 
 ### Drie wegen
 
-1. **Zoeken** — typeahead op bedrijfsnaam, kies een match en laat de backend het Basisprofiel ophalen (EUR 0,02 per aanroep voor NL). Dit is de primaire weg voor ondersteunde landen.
-2. **Handmatig** — vul zelf de bedrijfsnaam, KVK-nummer (optioneel), adres, postcode en plaats in. De gegevens worden direct naar de bedrijfsrij geschreven via `PUT /company-settings/company` en `answers.kvk` krijgt `manual: true`. Handmatige invoer bestaat voor twee situaties: (a) nieuwe bedrijven die nog niet in de gratis OpenKVK-dataset staan, en (b) bedrijven waarvan de handelsnaam niet overeenkomt met wat de gebruiker in de zoekopdracht typte.
+1. **Zoeken** — typeahead op bedrijfsnaam, kies een match en laat de backend het Basisprofiel ophalen (EUR 0,02 per aanroep voor NL). Het zoekvak wordt alleen getoond als de betaalde KVK API (`KVK_API_KEY`) is ingesteld op de API-container. Als de sleutel ontbreekt, wordt zoeken overgeslagen en start de wizard standaard met handmatige invoer (weg 2).
+2. **Handmatig** — vul zelf de bedrijfsnaam, KVK-nummer (optioneel), adres, postcode en plaats in. De gegevens worden direct naar de bedrijfsrij geschreven via `PUT /company-settings/company` en `answers.kvk` krijgt `manual: true`. Handmatige invoer is de standaard wanneer KVK_API_KEY niet is ingesteld, en bestaat ook voor twee extra situaties zelfs wanneer zoeken beschikbaar is: (a) nieuwe bedrijven die nog niet in de gratis OpenKVK-dataset staan, en (b) bedrijven waarvan de handelsnaam niet overeenkomt met wat de gebruiker in de zoekopdracht typte.
 3. **Overslaan** — "Geen KVK-inschrijving?" slaat `answers.kvk = null` op. De wizard gaat verder; bedrijfsgegevens kunnen later in de instellingen worden ingevuld.
 
-Wisselen tussen zoeken en handmatig gaat met een klik: een "Vul handmatig in"-knop staat onder de zoekresultaten, en een "Terug naar KVK-zoeken"-link bovenaan het handmatige formulier.
+Wisselen tussen zoeken en handmatig gaat met een klik (wanneer zoeken beschikbaar is): een "Vul handmatig in"-knop staat onder de zoekresultaten, en een "Terug naar KVK-zoeken"-link bovenaan het handmatige formulier. Wanneer `KVK_API_KEY` ontbreekt, is de schakel-naar-zoeken-knop volledig verborgen en begint en blijft de gebruiker op handmatige invoer.
 
 ### Landopties
 
@@ -83,7 +83,10 @@ Voor NL-werkruimtes is de KvK-opzoeking een tweestapsproces:
 1. **Typeahead** — de gebruiker zoekt op bedrijfsnaam. Het `zoeken`-endpoint (gratis) retourneert overeenkomende vermeldingen. Dit is de autocomplete-stap die de bestaande `ok` / `not-found`-antwoorden aanstuurt. Als de zoekopdracht nul treffers oplevert, toont de UI een inline leeg-resultaatpaneel (titel, uitleg, en een "vul handmatig in"-knop die het handmatige formulier alvast vult met wat de gebruiker typte). Dit is gebruikelijk omdat de gratis OpenKVK-laag veel jonge bedrijven mist.
 2. **Basisprofiel** — zodra een match is gekozen, roept de wizard het KvK Basisprofiel-detailendpoint aan. Dit is een betaalde aanroep (EUR 0,02, 24u gecached per KVK-nummer). Het retourneert het volledige profiel: `legalName`, `statutaireNaam`, `tradeNames` (alle geregistreerde handelsnamen, gesorteerd), `rsin`, `legalForm`, `dateFounded`, bezoek- en postadressen, SBI-codes met primair-vlag, `employeeCount` en `indNonMailing` (geen-post-vlag).
 
-De Basisprofiel-aanroep wordt beveiligd door `KVK_BASISPROFIEL_ENABLED`. Als de vlag uit staat, valt de wizard terug op het gratis `zoeken`-resultaat (dezelfde `ok`-velden als hierboven). Als de vlag aan staat, verrijken de Basisprofielgegevens de `answers.registry`-payload en toont de Controle-stap elk veld dat naar de bedrijfsrij wordt geschreven.
+Er zijn twee onafhankelijke functievlaggen voor NL KVK-opzoekingen:
+
+- `KVK_API_KEY` (env-var op de API-container): als deze ontbreekt, wordt het zoekvak helemaal niet getoond en start de wizard op die stap standaard met handmatige invoer. De gratis OpenKVK-laag alleen is te beperkt (~2% trefferkans, mist bijna elke nieuwe inschrijving). De vlag schakelt automatisch om zodra de sleutel is ingesteld.
+- `KVK_BASISPROFIEL_ENABLED`: als deze uit staat (of als `KVK_API_KEY` ontbreekt), gebruikt de wizard alleen het gratis `zoeken`-resultaat (dezelfde `ok`-velden als hierboven). Als deze aan staat en `KVK_API_KEY` is aanwezig, verrijken de Basisprofielgegevens de `answers.registry`-payload en toont de Controle-stap elk veld dat naar de bedrijfsrij wordt geschreven.
 
 ### Handmatige modus
 
