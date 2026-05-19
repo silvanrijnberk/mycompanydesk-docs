@@ -6,6 +6,10 @@ title: E-mailintegratie
 
 Configureer hoe MyCompanyDesk e-mails verstuurt naar je klanten — van factuurverzending tot betalingsherinneringen.
 
+## Waar te vinden
+
+Open de inbox in de hoofdnavigatie en ga naar het tabblad **Instellingen**. Dit is de centrale plek voor alle inboxconfiguratie: mailboxes, log, domein en geavanceerde opties.
+
 ## E-mailverzendmethoden
 
 MyCompanyDesk ondersteunt vier manieren om e-mails te versturen. Je gekozen verzendmethode wordt altijd gevolgd voor geautomatiseerde facturen en herinneringen. Als je een inbox op je domein instelt, overschrijft die je keuze niet -- de inbox is voor ontvangen en antwoorden, terwijl je gekozen verzendmethode de transactionele uitgaande mail afhandelt.
@@ -18,7 +22,7 @@ Standaard worden e-mails verstuurd via de eigen e-mailservice van MyCompanyDesk.
 
 Verstuur e-mails rechtstreeks vanuit je Gmail-account:
 
-1. Ga naar **Instellingen > Communicatie > E-mail**
+1. Ga naar **Inbox > Instellingen** en open **Verzending**
 2. Klik op **Gmail koppelen**
 3. Autoriseer MyCompanyDesk om namens jou te versturen via Google OAuth
 4. E-mails worden nu verzonden vanaf je Gmail-adres
@@ -33,7 +37,7 @@ Verstuur e-mails rechtstreeks vanuit je Gmail-account:
 
 Verstuur vanuit je Outlook of Microsoft 365-account:
 
-1. Ga naar **Instellingen > Communicatie > E-mail**
+1. Ga naar **Inbox > Instellingen** en open **Verzending**
 2. Klik op **Outlook koppelen**
 3. Autoriseer via Microsoft OAuth
 4. E-mails worden verstuurd vanaf je Outlook-adres
@@ -42,7 +46,7 @@ Verstuur vanuit je Outlook of Microsoft 365-account:
 
 Voor volledige controle gebruik je je eigen SMTP-server:
 
-1. Ga naar **Instellingen > Communicatie > E-mail**
+1. Ga naar **Inbox > Instellingen** en open **Verzending**
 2. Vul je SMTP-gegevens in:
    - **Host** — SMTP-serveradres
    - **Poort** — Serverpoort (587 voor TLS, 465 voor SSL)
@@ -87,6 +91,10 @@ E-mailsjablonen ondersteunen dynamische variabelen:
 | `{due_date}` | Vervaldatum |
 | `{company_name}` | Je bedrijfsnaam |
 | `{payment_link}` | Link naar online betaling |
+
+## E-mailactiviteit
+
+Een overzicht van alle verzonden e-mails in de afgelopen 90 dagen vind je in **Inbox > Instellingen** onder Activiteitenlog.
 
 ## Meldingen
 

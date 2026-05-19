@@ -6,6 +6,10 @@ title: Integration e-mail
 
 Configurez la maniere dont MyCompanyDesk envoie des e-mails a vos clients -- de la livraison des factures aux rappels de paiement.
 
+## Ou trouver
+
+Ouvrez la boite de reception dans la navigation principale et allez dans l'onglet **Parametres**. C'est le point central pour toute la configuration de la boite de reception : boites mail, activite, domaine et options avancees.
+
 ## Methodes d'envoi d'e-mails
 
 MyCompanyDesk prend en charge quatre manieres d'envoyer des e-mails. La methode d'envoi que vous avez choisie est toujours respectee pour les factures et rappels automatises. Si vous configurez une boite de reception sur votre domaine, elle ne remplace pas ce choix -- la boite de reception sert a recevoir et a repondre, tandis que votre methode d'envoi choisie gere les e-mails transactionnels sortants.
@@ -18,7 +22,7 @@ Par defaut, les e-mails sont envoyes via le service de messagerie de MyCompanyDe
 
 Envoyez des e-mails directement depuis votre compte Gmail :
 
-1. Allez dans **Parametres > Communication > E-mail**
+1. Allez dans **Boite de reception > Parametres** et ouvrez **Envoi**
 2. Cliquez sur **Connecter Gmail**
 3. Autorisez MyCompanyDesk a envoyer en votre nom via Google OAuth
 4. Les e-mails apparaissent desormais comme envoyes depuis votre adresse Gmail
@@ -33,7 +37,7 @@ Envoyez des e-mails directement depuis votre compte Gmail :
 
 Envoyez depuis votre compte Outlook ou Microsoft 365 :
 
-1. Allez dans **Parametres > Communication > E-mail**
+1. Allez dans **Boite de reception > Parametres** et ouvrez **Envoi**
 2. Cliquez sur **Connecter Outlook**
 3. Autorisez via Microsoft OAuth
 4. Les e-mails sont envoyes depuis votre adresse Outlook
@@ -74,6 +78,10 @@ Les modeles d'e-mail prennent en charge les variables dynamiques :
 | `{due_date}` | La date d'echeance du paiement |
 | `{company_name}` | Le nom de votre entreprise |
 | `{payment_link}` | Le lien vers le paiement en ligne |
+
+## Activite e-mail
+
+Un apercu de tous les e-mails envoyes au cours des 90 derniers jours se trouve dans **Boite de reception > Parametres** sous Journal d'activite.
 
 ## Notifications
 

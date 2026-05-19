@@ -9,9 +9,7 @@ Your business has its own email address. Customers write to it, you reply, and w
 
 ## Where to find it
 
-Open the workspace switcher → **Workspace settings** → **Email**, or navigate directly to `/workspace/email`.
-
-The legacy `/workspace/communication/emails` URL redirects here, as do `/workspace/email/activity`, `/workspace/email/delivery`, `/workspace/email/mailboxes`, and `/workspace/email/templates`.
+Open the inbox from the main navigation, go to the **Instellingen** (Settings) tab. The legacy `/workspace/communication/emails` URL redirects here, as do `/workspace/email/activity`, `/workspace/email/delivery`, `/workspace/email/mailboxes`, and `/workspace/email/templates`.
 
 The umbrella page renders different content depending on where you are in setup. The state machine is:
 
@@ -32,7 +30,7 @@ Once email is live, the umbrella shows five tiles.
 
 ### Where mail arrives
 
-Path: `/workspace/email/address`
+Path: `/inbox/settings/address`
 
 Your business email address, who else's mail lands here, and how long we keep it.
 
@@ -47,7 +45,7 @@ Wraps the `SettingsInbox` component (mailbox CRUD plus alias editor). Inner UI i
 
 ### What your emails say
 
-Path: `/workspace/email/messages`
+Path: `/inbox/settings/messages`
 
 The text customers read when you send an invoice, quote, or reminder.
 
@@ -60,7 +58,7 @@ Each template has its own subject and body. Mustache-style placeholders like `{c
 
 ### Your sign-off
 
-Path: `/workspace/email/signature`
+Path: `/inbox/settings/signature`
 
 The footer at the bottom of every outgoing email. The page shows a live preview of the actual footer and a list of toggles for what to include:
 
@@ -74,7 +72,7 @@ Toggles auto-disable with a friendly hint when the underlying field isn't filled
 
 ### How emails are sent
 
-Path: `/workspace/email/sending`
+Path: `/inbox/settings/sending`
 
 Most users never need to touch this. The default uses MyCompanyDesk's shared sender — delivery, retries, and reputation are handled for you.
 
@@ -89,7 +87,7 @@ The whole page is "advanced" in spirit, so the body sits behind an `AdvancedStri
 
 ### List of everything sent
 
-Path: `/workspace/email/log`
+Path: `/inbox/settings/log`
 
 Every email we sent for you in the last 90 days, what happened to it, and (when relevant) why it didn't reach the customer. Statuses include sent, delivered, opened, bounced, and failed. Wraps the `SettingsEmailActivity` table.
 

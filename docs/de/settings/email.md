@@ -6,6 +6,10 @@ title: E-Mail-Integration
 
 Konfigurieren Sie, wie MyCompanyDesk E-Mails an Ihre Kunden sendet — von der Rechnungszustellung bis zu Zahlungserinnerungen.
 
+## Wo zu finden
+
+Öffnen Sie den Posteingang in der Hauptnavigation und gehen Sie zum Tab **Einstellungen**. Dies ist die zentrale Anlaufstelle für die gesamte Posteingangskonfiguration: Postfächer, Aktivität, Domain und erweiterte Optionen.
+
 ## E-Mail-Versandmethoden
 
 MyCompanyDesk unterstützt vier Wege zum Versenden von E-Mails. Ihre gewählte Versandmethode wird bei automatisierten Rechnungen und Erinnerungen immer beachtet. Wenn Sie einen Posteingang auf Ihrer Domain einrichten, überschreibt dieser Ihre Wahl nicht -- der Posteingang dient dem Empfang und Beantworten, während Ihre gewählte Versandmethode die transaktionale ausgehende Post übernimmt.
@@ -18,7 +22,7 @@ Standardmäßig werden E-Mails über den eigenen E-Mail-Dienst von MyCompanyDesk
 
 Senden Sie E-Mails direkt von Ihrem Gmail-Konto:
 
-1. Gehen Sie zu **Einstellungen > Kommunikation > E-Mail**
+1. Gehen Sie zu **Posteingang > Einstellungen** und öffnen Sie **Versand**
 2. Klicken Sie auf **Gmail verbinden**
 3. Autorisieren Sie MyCompanyDesk, in Ihrem Namen über Google OAuth zu senden
 4. E-Mails werden jetzt als von Ihrer Gmail-Adresse gesendet angezeigt
@@ -33,7 +37,7 @@ Senden Sie E-Mails direkt von Ihrem Gmail-Konto:
 
 Senden Sie von Ihrem Outlook- oder Microsoft 365-Konto:
 
-1. Gehen Sie zu **Einstellungen > Kommunikation > E-Mail**
+1. Gehen Sie zu **Posteingang > Einstellungen** und öffnen Sie **Versand**
 2. Klicken Sie auf **Outlook verbinden**
 3. Autorisieren Sie über Microsoft OAuth
 4. E-Mails werden von Ihrer Outlook-Adresse gesendet
@@ -74,6 +78,10 @@ E-Mail-Vorlagen unterstützen dynamische Variablen:
 | `{due_date}` | Fälligkeitsdatum der Zahlung |
 | `{company_name}` | Ihr Firmenname |
 | `{payment_link}` | Link zur Online-Zahlung |
+
+## E-Mail-Aktivität
+
+Eine Übersicht aller gesendeten E-Mails der letzten 90 Tage finden Sie in **Posteingang > Einstellungen** unter Aktivitätsprotokoll.
 
 ## Benachrichtigungen
 
