@@ -98,6 +98,22 @@ Un fil d'evenements recents dans votre espace de travail :
 - Clients crees
 - Actions des membres de l'equipe
 
+## Mode d'edition
+
+Cliquez sur l'icone de crayon en haut a droite pour ouvrir le mode d'edition. Vous pouvez deplacer, redimensionner, ajouter ou supprimer des sections.
+
+### Suggestions intelligentes
+
+En mode d'edition, une rangee de pastilles appelee **Suggestions** affiche jusqu'a trois sections recommandes qui completent votre disposition actuelle. Les regles sont ciblees et varient selon la situation :
+
+- Vous avez la section vieillissement des creances mais pas de file operationnelle ? Elle vous suggere d'ajouter la file pour pouvoir agir sur les factures en retard.
+- Sur les profils freelance ou conformite TVA, l'ajout de la TVA a venir declenche une suggestion pour la section du seuil d'heures, car les controles de conformite vont de pair.
+- Un tableau de bord sans hero ni bandeau KPI recoit une suggestion pour ajouter le hero afin d'eviter un espace vide en haut de page.
+- Les profils orientes projets et proprietaire/directeur sans concentration client sont invites a l'ajouter pour reperer la dependance a un seul client.
+- Les profils croissance sans activite site web ni portail recoivent une suggestion pour ajouter l'activite site web afin de suivre les visites.
+
+Cliquez sur une pastille pour ajouter la section correspondante a votre grille de travail. Les suggestions s'actualisent en fonction de votre disposition actuelle.
+
 ## Carte d'accueil
 
 Tant que l'assistant de configuration sous `/setup` a encore des champs a remplir, un `FinishSetupBanner` s'affiche en haut du tableau de bord avec un decompte des champs en attente et un bouton **Continuer**. La banniere a maintenant un bouton de fermeture (icone X) qui la masque par navigateur via localStorage, la maintenant masquee d'un rechargement a l'autre jusqu'a ce que l'assistant soit termine. L'ancienne carte d'accueil a ete supprimee; cette banniere la remplace. L'assistant est non bloquant : les nouvelles inscriptions arrivent directement sur `/dashboard` et ne sont pas redirigees de force.

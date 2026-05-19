@@ -128,6 +128,18 @@ A toolbar appears with **Cancel** / **Reset** / **Save** / **Add section**. Drag
 
 A bottom sheet opens with a vertical reorder list and per-section visibility toggles. Drag the handle to reorder, tap the eye icon to hide a section. Save commits the new order; Reset restores the profile template.
 
+### Smart suggestions
+
+When you edit your dashboard, a chip row called **Suggestions** appears inside the toolbar, showing up to three recommended sections that complement your current layout. The rules are narrow and scenario-aware:
+
+- If you have the AR aging section but no operational queue, it suggests the queue so you can act on overdue-invoice alerts.
+- On freelancer or VAT-compliance profiles, adding upcoming VAT triggers a suggestion for the urencriterium section (compliance checks come as a pair).
+- A dashboard missing both the hero and KPI headline section gets a suggestion to add the hero to avoid an empty top-of-page.
+- Project-based and owner/director profiles without customer concentration are prompted to add it for spotting single-customer risk.
+- Growth-operations profiles with no website or portal activity section get a suggestion to add website activity for tracking inbound traffic.
+
+Click any chip to add its section to the working grid. Suggestions refresh to match your current layout.
+
 ## Setup banner
 
 While the magical setup wizard at `/setup` still has fields to fill, a `FinishSetupBanner` pins itself above the dashboard with the count of pending fields and a **Resume setup** button. It now includes a dismiss button (X icon) that hides the banner per browser via localStorage, surviving reloads until the wizard is completed. The old onboarding card on the dashboard was removed; this banner replaces it. The wizard is non-blocking: new signups land on `/dashboard` directly and are not force-redirected.

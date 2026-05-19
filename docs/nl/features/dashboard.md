@@ -98,6 +98,22 @@ Een feed van recente gebeurtenissen in je werkruimte:
 - Aangemaakte klanten
 - Acties van teamleden
 
+## Bewerkmodus
+
+Klik op het potloodpictogram rechtsboven om de bewerkmodus te openen. Je kunt secties verslepen, van grootte veranderen, toevoegen of verwijderen.
+
+### Slimme suggesties
+
+In de bewerkmodus toont een chiprij met de naam **Suggesties** maximaal drie aanbevolen secties die je huidige indeling aanvullen. De regels zijn gericht en per situatie verschillend:
+
+- Heb je de AR-aging-sectie maar geen operationele wachtrij? Dan stelt die voor om de wachtrij toe te voegen zodat je actie kunt ondernemen op openstaande facturen.
+- Op freelancer- of btw-complianceprofielen triggert het toevoegen van aankomende btw een suggestie voor de urencriteriumsectie, want nalevingscontroles horen bij elkaar.
+- Een dashboard zonder hero en zonder KPI-headline krijgt een suggestie om de hero toe te voegen en een lege bovenkant te voorkomen.
+- Projectgerichte en eigenaar/directeur-profielen zonder klantconcentratie worden aangemoedigd om die toe te voegen voor inzicht in afhankelijkheid van een klant.
+- Groei-operations-profielen zonder website- of portalactiviteit krijgen een suggestie om websiteactiviteit toe te voegen voor het volgen van bezoekers.
+
+Klik op een chip om de bijbehorende sectie aan je werkende raster toe te voegen. De suggesties worden bijgewerkt op basis van je huidige indeling.
+
 ## Onboardingkaart
 
 Zolang de setup-wizard op `/setup` nog velden te vullen heeft, staat er een `FinishSetupBanner` bovenaan het dashboard met een teller van openstaande velden en een **Verder**-knop. De banner heeft nu een sluitknop (X-icoon) die de banner per browser verbergt via localStorage, zodat deze over herlaadbeurten verborgen blijft totdat de wizard is voltooid. De oude onboardingkaart op het dashboard is verwijderd; deze banner vervangt hem. De wizard is niet-blokkerend: nieuwe aanmeldingen komen direct op `/dashboard` en worden niet geforceerd doorgestuurd.
