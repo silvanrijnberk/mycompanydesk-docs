@@ -102,27 +102,23 @@ Een "Nog niet geregistreerd"-toggle slaat `answers.registry = null` op. **Doorga
 
 ## Stap 3 — Domein
 
-Kies het webadres dat klanten zien op de openbare bedrijfspagina en (waar van toepassing) op inkomende e-mail.
+Kies het webadres dat je klanten zien op de openbare bedrijfspagina en je e-mailinbox. Drie routes, weergegeven als kaarten, dekken elk pad van gratis snelstart tot het kopen van een domein in de wizard.
 
-### Twee routes
+### Drie-keuze-kiezer
 
-**Subdomein (standaard):** de gebruiker kiest een slug; de wizard koppelt deze aan `<slug>.mycompanydesk.nl` voor `NL`-werkruimtes en `<slug>.mycompanydesk.com` overal elders. De slug is vooringevuld vanuit `businessName` (kleine letters, ASCII, max 32 tekens). Bij Voltooien wordt het subdomein via de Cloudflare API aangemaakt en is de website van het bedrijf direct bereikbaar.
+Een rooster van drie kaarten biedt de keuze. Het selecteren van een route onthult de bijbehorende editor eronder; er is maar een route tegelijk actief.
+
+**Subdomein (gratis):** de gebruiker kiest een slug; een TLD-kiezer laat kiezen tussen `.mycompanydesk.nl` en `.mycompanydesk.com`. De slug is vooringevuld vanuit de KVK-juridische naam wanneer beschikbaar (kleine letters, accenten verwijderd, niet-ASCII-tekens verwijderd, afgekapt op 63 tekens), zodat de meeste gebruikers kunnen tikken-en-doorgaan zonder te typen. Beschikbaarheid wordt live gecontroleerd met een vertraging van 350 ms terwijl de gebruiker typt. Bij Voltooien wordt het subdomein via de Cloudflare API aangemaakt en is de website van het bedrijf direct bereikbaar.
 
 Wanneer de wizard wordt uitgevoerd in de 2-staps (plan-gestuurde) flow, wordt de Domein-stap volledig overgeslagen. De Voltooien-stap maakt automatisch een werkruimte-subdomein aan op basis van de `display_name`-waarde: de slug wordt afgeleid van de weergavenaam (met opnieuw-proberen-bij-botsing-achtervoegsels tot 5 pogingen), en `activateSubdomain` registreert deze als de openbare site-URL. Best-effort: een botsing of fout wordt gelogd en blokkeert de wizard niet om te voltooien.
 
-**Eigen domein:** de gebruiker typt een domein dat hij al bezit. Bij Voltooien doet de wizard:
-
-1. Het domein toevoegen aan de domeinlijst van de werkruimte (geen actie als het al was toegevoegd).
-2. De inbox erop automatisch inschakelen: maakt `info@<domein>` aan als standaard mailbox plus `support@`, `sales@` en `noreply@` aliassen.
-3. Optioneel een persoonlijke mailbox aanmaken (zie hieronder).
+**Eigen domein:** de gebruiker typt een domein dat hij al bezit. Een live validatie-regex controleert het formaat tijdens het typen (`[a-z0-9][a-z0-9-]*(\.[a-z0-9]([a-z0-9-]*[a-z0-9])?)+`). Bij Voltooien voegt de wizard het domein toe aan de domeinlijst van de werkruimte (geen actie als het al was toegevoegd) en schakelt automatisch de inbox in: `info@<domein>` als de standaard mailbox plus `support@`, `sales@` en `noreply@` aliassen. Het 409-al-bestaand-pad van `apply.service` wordt netjes afgehandeld.
 
 Als het domein nog niet naar de nameservers van MCD wijst, stuurt Voltooien door naar `/workspace/organization/company/address` zodat de gebruiker direct de DNS-instructies en een **Verifieren**-knop ziet. Anders gaat het naar het dashboard.
 
-### Persoonlijke mailbox-toggle
+**Registreer een domein:** integreert de live `DomainPurchaseCard` + `DomainClaimModal` uit de instellingenomgeving. De gebruiker kan een domein zoeken, beschikbaarheid en prijs controleren, en het kopen via OpenProvider of gratis claimen als Founding Member. Bij een succesvolle claim of aankoop is het domein al server-side aan de werkruimte gekoppeld via de `/api/domain-purchase`-flow, dus de wizard slaat het antwoord op als `mode='own'` met de geregistreerde naam en `registered: true`; `apply.service` behandelt het als een no-op hertoevoeging. Een groene succesbanner toont de geregistreerde domeinnaam en laat de gebruiker doorgaan.
 
-Wanneer **Eigen domein** is geselecteerd, biedt een checkbox een persoonlijk adres aan (bijv. `silvan@<domein>`). Het standaard lokaal-deel is de voornaam van de gebruiker, in kleine letters en ASCII-ontdaan. De mailbox wordt aangemaakt met `type: 'personal'` zodat deze een eigen threadlijst krijgt, los van de gedeelde `info@`-mailbox.
-
-Bij een herstart verwijdert het uitvinken van de box eventuele bestaande `type: 'personal'`-mailboxen voor dat domein. Gedeelde en aangepaste mailboxen blijven onaangeroerd.
+Als de gebruiker de Registreer-route opent maar geen aankoop voltooit, wordt de stap gemarkeerd als overgeslagen zodat de wizard verder kan. Ze kunnen later terugkeren via `Bedrijf › Je eigen .com-adres` wanneer ze er klaar voor zijn.
 
 ### Terugschakelen van een eigen domein naar een subdomein
 
@@ -234,9 +230,9 @@ Zie [Instellingenoverzicht](/nl/settings/) voor de volledige kaart.
 
 ## Randgevallen
 
-- **Een stap overslaan.** Doorgaan is per stap beveiligd op de minimaal vereiste antwoorden. De Register-stap heeft geen poort; Domein vereist een gekozen pad met een niet-lege waarde; Magie vereist dat Genereren is uitgevoerd; Bedrijf en Controle hebben hun eigen poorten.
+- **Een stap overslaan.** Doorgaan is per stap beveiligd op de minimaal vereiste antwoorden. De Register-stap heeft geen poort; Domein vereist een gekozen pad met een niet-lege waarde, of een voltooide aankoop bij de Registreer-route, of de overgeslagen-vlag; Magie vereist dat Genereren is uitgevoerd; Bedrijf en Controle hebben hun eigen poorten.
 - **Sluiten midden in een stap.** Elk antwoord wordt bij wijziging opgeslagen, dus het volgende bezoek gaat verder waar de gebruiker was gebleven. Stapindex wordt ook opgeslagen (`answers` en `currentStep` leven in dezelfde JSONB-kolom).
-- **Van gedachten veranderen op de Domein-stap.** Overschakelen van `eigen` naar `subdomein` na het typen van een domein overschrijft `answers.domain` naar `null` totdat de gebruiker een slug kiest. Overschakelen naar een subdomein wanneer er al een aangepast domein is, toont een waarschuwing vooraf.
+- **Van gedachten veranderen op de Domein-stap.** Overschakelen van `eigen` naar `subdomein` na het typen van een domein overschrijft `answers.domain` naar `null` totdat de gebruiker een slug kiest. Overschakelen naar de Registreer-route slaat een overgeslagen-antwoord op zodat een nieuwe aanmelding niet vastloopt als ze Registreer openen maar de aankoop uitstellen. Overschakelen naar een subdomein wanneer er al een aangepast domein is, toont een waarschuwing vooraf.
 - **Logo-extractie mislukt.** Overwegend witte logo's en alleen-SVG-invoer die `sharp` niet kan rasteren retourneren `color: null`. De Gemini-merkkleursuggestie wordt dan gebruikt.
 - **Domein al toegevoegd bij eigen-domein Voltooien.** Een 409 van `addDomain` valt terug op de bestaande rij zodat de inbox-inschakelstap nog steeds wordt uitgevoerd.
 - **Persoonlijke mailbox bestaat al.** Een 409 van `createMailbox` wordt als succes behandeld.

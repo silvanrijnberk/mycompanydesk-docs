@@ -98,27 +98,23 @@ A "Not registered yet" toggle stores `answers.registry = null`. **Continue is al
 
 ## Step 3 — Domain
 
-Pick the web address customers will see on the public business page and (where applicable) on inbound email.
+Pick the web address your customers will see on the public business page and your email inbox. Three branches, displayed as cards, cover every path from free quick-start to buying a domain in-wizard.
 
-### Two paths
+### Three-branch picker
 
-**Subdomain (default):** the user picks a slug; the wizard pins it to `<slug>.mycompanydesk.nl` for `NL` workspaces and `<slug>.mycompanydesk.com` everywhere else. The slug is pre-filled from `businessName` (lowercase, ASCII, max 32 chars). On Finish the subdomain is provisioned via the Cloudflare API and the company's website becomes immediately reachable.
+A grid of three cards presents the choice. Selecting a branch reveals the matching editor below; only one branch is active at a time.
+
+**Subdomain (free):** the user picks a slug; a TLD selector lets them choose between `.mycompanydesk.nl` and `.mycompanydesk.com`. The slug is pre-filled from the KVK legal name when available (lowercased, accents stripped, non-ASCII characters removed, truncated at 63 characters), so most users can tap-and-continue without typing. Availability is checked live with a 350 ms debounce as the user types. On Finish the subdomain is provisioned via the Cloudflare API and the company's website becomes immediately reachable.
 
 When the wizard is run in the 2-step (plan-gated) flow, the Domain step is omitted entirely. The Finish step auto-provisions a workspace subdomain from the `display_name` value: the slug is derived from the display name (with retry-on-collision suffixes up to 5 attempts), and `activateSubdomain` registers it as the public site URL. Best-effort: a collision or failure is logged and does not block the wizard from finishing.
 
-**Own domain:** the user types a domain they already own. On Finish the wizard:
-
-1. Adds the domain to the workspace's domain list (no-op if it was already added).
-2. Auto-enables the inbox on it: creates `info@<domain>` as the default mailbox plus `support@`, `sales@`, and `noreply@` aliases.
-3. Optionally creates a personal mailbox (see below).
+**Own domain:** the user types a domain they already own. A live validation regex checks the format as they type (`[a-z0-9][a-z0-9-]*(\.[a-z0-9]([a-z0-9-]*[a-z0-9])?)+`). On Finish the wizard adds the domain to the workspace's domain list (no-op if it was already added) and auto-enables the inbox: `info@<domain>` as the default mailbox plus `support@`, `sales@`, and `noreply@` aliases. The 409-already-exists path from `apply.service` is handled gracefully.
 
 If the domain isn't yet pointed at MCD's nameservers, Finish redirects to `/workspace/organization/company/address` so the user immediately sees the DNS instructions and a **Verify** button. Otherwise it goes to the dashboard.
 
-### Personal mailbox toggle
+**Register a new domain:** embeds the live `DomainPurchaseCard` + `DomainClaimModal` from the settings surface. The user can search for a domain, check availability and pricing, and either buy it through OpenProvider or claim it free as a Founding Member. On a successful claim or purchase, the domain is already attached to the workspace server-side via the `/api/domain-purchase` flow, so the wizard records the answer as `mode='own'` with the registered name and `registered: true`; `apply.service` treats it as a no-op re-add. A green success banner shows the registered domain name and lets the user continue.
 
-When **Own domain** is selected, a checkbox offers a personal address (e.g. `silvan@<domain>`). The default local-part is the user's first name, lowercased and ASCII-stripped. The mailbox is created with `type: 'personal'` so it gets its own thread list, separate from the shared `info@` mailbox.
-
-On a re-run, unchecking the box deletes any existing `type: 'personal'` mailboxes for that domain. Shared and custom mailboxes are untouched.
+If the user opens the Register branch but does not complete a purchase, the step is marked as skipped so the wizard can continue. They can return later via `Company › Your own .com address` whenever ready.
 
 ### Switching from a custom domain back to a subdomain
 
@@ -227,9 +223,9 @@ See [Settings overview](/settings/) for the full map.
 
 ## Edge cases
 
-- **Skipping a step.** Continue is gated per step on the minimum required answers. The Registry step has no gate; Domain requires a chosen path with a non-empty value; Magic requires Generate to have run; Business and Review have their own gates.
+- **Skipping a step.** Continue is gated per step on the minimum required answers. The Registry step has no gate; Domain requires a chosen path with a non-empty value, or a completed purchase for the Register branch, or the skipped flag; Magic requires Generate to have run; Business and Review have their own gates.
 - **Closing mid-step.** Every answer is persisted on change, so the next visit resumes where the user left off. Step index is also persisted (`answers` and `currentStep` live in the same JSONB column).
-- **Changing your mind on the Domain step.** Switching from `own` to `subdomain` after typing a domain rewrites `answers.domain` to `null` until the user picks a slug. Switching to a subdomain when a custom domain is already attached surfaces a pre-flight warning.
+- **Changing your mind on the Domain step.** Switching from `own` to `subdomain` after typing a domain rewrites `answers.domain` to `null` until the user picks a slug. Switching to the Register branch stores a skipped-answer so a fresh signup isn't dead-ended if they open Register but defer the purchase. Switching to a subdomain when a custom domain is already attached surfaces a pre-flight warning.
 - **Logo extraction fails.** Mostly-white logos and SVG-only inputs that `sharp` can't rasterise return `color: null`. The Gemini brand-colour suggestion is used instead.
 - **Domain already added on own-domain Finish.** A 409 from `addDomain` falls back to the existing row so the inbox-enable step still runs.
 - **Personal mailbox already exists.** A 409 from `createMailbox` is treated as success.
