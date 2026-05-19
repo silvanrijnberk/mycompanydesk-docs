@@ -47,11 +47,11 @@ Picks a country and either looks up the business in the country's official regis
 
 ### Three paths
 
-1. **Search** — typeahead by company name, pick a match, and let the backend pull the Basisprofiel (EUR 0.02/call for NL). This is the primary path for supported countries.
-2. **Manual** — fill in the company name, KVK number (optional), address, postal code, and city by hand. The data is saved directly to the company row via `PUT /company-settings/company` and `answers.kvk` is stamped with `manual: true`. Manual entry exists for two scenarios: (a) new companies not yet in the free OpenKVK dataset, and (b) companies whose trade name does not match what the user typed in search.
+1. **Search:** typeahead by company name, pick a match, and let the backend pull the Basisprofiel (EUR 0.02/call for NL). The search box is only shown when the paid KVK API (`KVK_API_KEY`) is configured on the API container. When the key is missing, search is skipped and the wizard defaults to manual entry (path 2).
+2. **Manual:** fill in the company name, KVK number (optional), address, postal code, and city by hand. The data is saved directly to the company row via `PUT /company-settings/company` and `answers.kvk` is stamped with `manual: true`. Manual entry is the default when KVK_API_KEY is not set, and also exists for two additional scenarios even when search is available: (a) new companies not yet in the free OpenKVK dataset, and (b) companies whose trade name does not match what the user typed in search.
 3. **Skip** — "Geen KVK-inschrijving?" (or equivalent) stores `answers.kvk = null`. The wizard continues; company data can be filled later in settings.
 
-Switching between search and manual is a single click: a "Fill in manually" button appears below the search results, and a "Back to KVK search" link sits at the top of the manual form.
+Switching between search and manual is a single click (when search is available): a "Fill in manually" button appears below the search results, and a "Back to KVK search" link sits at the top of the manual form. When `KVK_API_KEY` is absent, the switch-to-search button is hidden entirely and the user starts and stays on manual entry.
 
 ### Country options
 
@@ -83,7 +83,10 @@ For NL workspaces, the KvK lookup is a two-step flow:
 1. **Typeahead** — the user searches by company name. The `zoeken` endpoint (free) returns matching entries. This is the autocomplete step that powers the existing `ok` / `not-found` responses. When the search returns zero hits, the UI shows an inline empty-state panel (title, explanation, and a "fill manually" CTA that seeds the manual form with what the user already typed). This is common because OpenKVK's free tier misses many young businesses.
 2. **Basisprofiel** — once a match is picked, the wizard calls the KvK Basisprofiel detail endpoint. This is a paid call (EUR 0.02, 24h-cached per KVK number). It returns the full profile: `legalName`, `statutaireNaam` (statutory name), `tradeNames` (all registered trade names, ordered), `rsin`, `legalForm`, `dateFounded`, visiting and postal addresses, SBI codes with primary-flag, `employeeCount`, and `indNonMailing` (do-not-mail flag).
 
-The Basisprofiel call is gated behind `KVK_BASISPROFIEL_ENABLED`. When the flag is off, the wizard falls back to the free `zoeken`-only result (the same `ok` fields listed above). When the flag is on, the Basisprofiel data enriches the `answers.registry` payload and the Review step shows every field that will be written to the company row.
+There are two independent feature gates for NL KVK lookups:
+
+- `KVK_API_KEY` (env var on the API container): when absent, the search box is not shown at all and the wizard defaults to manual entry on that step. OpenKVK's free tier alone is too sparse (~2% hit rate, misses nearly every fresh registration). The flag flips automatically once the key is set.
+- `KVK_BASISPROFIEL_ENABLED`: when off (or when `KVK_API_KEY` is absent), the wizard uses the free `zoeken`-only result (the same `ok` fields listed above). When on and `KVK_API_KEY` is present, the Basisprofiel data enriches the `answers.registry` payload and the Review step shows every field that will be written to the company row.
 
 ### Manual mode
 
