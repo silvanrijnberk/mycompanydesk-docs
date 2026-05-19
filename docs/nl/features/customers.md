@@ -48,6 +48,15 @@ De klantdetailpagina toont:
 - **Projecten** — Actieve en voltooide projecten
 - **Statistieken** — Totale omzet, openstaand saldo, gemiddelde betaaltijd
 
+### E-mailgezondheidsbanner
+
+Er verschijnt een waarschuwingsbanner bovenaan de klantdetailpagina wanneer het e-mailadres van de klant recent is gebounced (permanent onbestelbaar) of een spamklacht heeft gegenereerd. De banner blijft stil wanneer het adres gezond is.
+
+- **Bounce**, toont een rode banner met de datum van de laatste mislukte verzending en de afwijsreden van de e-mailprovider. Als er geen specifieke reden is opgegeven, wordt er een algemene melding getoond.
+- **Klacht**, toont een gele banner die waarschuwt dat de klant je e-mail als spam heeft gemarkeerd. Het bericht raadt af om nog meer mail naar dat adres te sturen zonder eerst contact op te nemen.
+
+Deze informatie komt van provider-events en de bezorgstatus van uitgaande berichten, zodat je bezorgproblemen ziet voordat je de volgende factuur of offerte verstuurt.
+
 ## Acties
 
 - **Bewerken** — Klantinformatie bijwerken

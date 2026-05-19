@@ -1,6 +1,6 @@
 ---
 title: Setup Wizard
-last_verified: 2026-05-09
+last_verified: 2026-05-19
 ---
 
 # Setup Wizard
