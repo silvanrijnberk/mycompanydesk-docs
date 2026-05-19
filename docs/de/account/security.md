@@ -33,6 +33,21 @@ Mit aktivierter 2FA benötigen Sie sowohl Ihr Passwort als auch einen Code aus I
 2. Klicken Sie auf **Zwei-Faktor-Authentifizierung deaktivieren**
 3. Geben Sie Ihr Passwort zur Bestätigung ein
 
+## Passwortlose Anmeldung (Magic Link)
+
+Sie können sich ohne Passwort mit einem einmaligen Link anmelden, der an Ihre E-Mail gesendet wird:
+
+1. Gehen Sie zur Anmeldeseite
+2. Klicken Sie auf **Senden Sie mir einen Anmeldelink**
+3. Geben Sie Ihre E-Mail-Adresse ein
+4. Öffnen Sie Ihren Posteingang und klicken Sie auf den Link
+
+Der Link ist 15 Minuten gültig und kann nur einmal verwendet werden. Aus Sicherheitsgründen werden beim Anfordern eines neuen Links alle noch offenen Links ungültig.
+
+::: tip
+Wenn Sie Ihre E-Mail nach der Registrierung bestätigen, werden Sie automatisch angemeldet. Ein zusätzlicher Anmeldeschritt ist dann nicht erforderlich.
+:::
+
 ## Sitzungsverwaltung
 
 Sehen und verwalten Sie Ihre aktiven Sitzungen:
