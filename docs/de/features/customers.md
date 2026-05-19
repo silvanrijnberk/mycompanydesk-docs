@@ -48,6 +48,15 @@ Die Kundendetailseite zeigt:
 - **Projekte** — Aktive und abgeschlossene Projekte
 - **Statistiken** — Gesamtumsatz, ausstehender Saldo, durchschnittliche Zahlungsdauer
 
+### E-Mail-Zustellbarkeitsbanner
+
+Ein Warnbanner erscheint oben auf der Kundendetailseite, wenn die E-Mail-Adresse des Kunden kürzlich gebounct (dauerhaft unzustellbar) ist oder eine Spam-Beschwerde ausgelöst hat. Das Banner bleibt still, wenn die Adresse in Ordnung ist.
+
+- **Bounce** — zeigt ein rotes Banner mit dem Datum der letzten fehlgeschlagenen Zustellung und dem Ablehnungsgrund des E-Mail-Anbieters. Wurde kein spezifischer Grund mitgeteilt, erscheint ein allgemeiner Hinweis.
+- **Beschwerde** — zeigt ein gelbes Banner, das davor warnt, dass der Kunde Ihre E-Mail als Spam markiert hat. Die Nachricht rät davon ab, weitere E-Mails an diese Adresse zu senden, ohne vorher Kontakt aufzunehmen.
+
+Diese Informationen stammen von Provider-Ereignissen und dem Zustellstatus ausgehender Nachrichten und helfen Ihnen, Zustellprobleme zu erkennen, bevor Sie die nächste Rechnung oder das nächste Angebot versenden.
+
 ## Aktionen
 
 - **Bearbeiten** — Kundeninformationen aktualisieren

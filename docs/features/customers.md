@@ -48,6 +48,15 @@ The customer detail page shows:
 - **Projects** — Active and completed projects
 - **Statistics** — Total revenue, outstanding balance, average payment time
 
+### Email health banner
+
+A warning banner appears at the top of the customer detail page when the customer's email address has recently bounced (permanently undeliverable) or generated a spam complaint. The banner is quiet when the address is healthy.
+
+- **Bounce** — shows a red banner with the last failed delivery date and the rejection reason from the email provider. If no specific reason was given, a generic note is shown instead.
+- **Complaint** — shows a yellow banner warning that the customer marked your email as spam. The message advises against sending more mail to that address without prior contact.
+
+This information comes from provider events and outbound message delivery status, helping you spot delivery problems before sending the next invoice or quote.
+
 ## Actions
 
 - **Edit** — Update customer information
