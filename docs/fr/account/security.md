@@ -33,6 +33,21 @@ Avec l'authentification a deux facteurs activee, vous aurez besoin de votre mot 
 2. Cliquez sur **Desactiver l'authentification a deux facteurs**
 3. Entrez votre mot de passe pour confirmer
 
+## Connexion sans mot de passe (lien magique)
+
+Vous pouvez vous connecter sans mot de passe grace a un lien a usage unique envoye par e-mail :
+
+1. Allez sur la page de connexion
+2. Cliquez sur **Envoyez-moi un lien de connexion**
+3. Saisissez votre adresse e-mail
+4. Consultez votre messagerie et cliquez sur le lien
+
+Le lien est valable 15 minutes et ne peut etre utilise qu'une seule fois. Pour des raisons de securite, demander un nouveau lien invalide tous les liens en attente.
+
+::: tip
+Lorsque vous verifiez votre e-mail apres l'inscription, vous etes automatiquement connecte. Aucune etape de connexion supplementaire n'est necessaire.
+:::
+
 ## Gestion des sessions
 
 Consultez et gerez vos sessions actives :

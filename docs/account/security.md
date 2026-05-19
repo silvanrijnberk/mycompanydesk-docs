@@ -33,6 +33,21 @@ With 2FA enabled, you'll need both your password and a code from your authentica
 2. Click **Disable Two-Factor Authentication**
 3. Enter your password to confirm
 
+## Passwordless sign-in (magic link)
+
+You can sign in without a password using a one-time link sent to your email:
+
+1. Go to the login page
+2. Click **Send me a sign-in link**
+3. Enter your email address
+4. Check your inbox and click the link
+
+The link is valid for 15 minutes and can only be used once. For security, requesting a new link invalidates any outstanding ones.
+
+::: tip
+If you verify your email after signing up, you are signed in automatically. No extra login step is needed.
+:::
+
 ## Session management
 
 View and manage your active sessions:

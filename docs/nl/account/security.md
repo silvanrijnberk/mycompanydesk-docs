@@ -33,6 +33,21 @@ Met 2FA ingeschakeld heb je zowel je wachtwoord als een code van je authenticato
 2. Klik op **Tweefactorauthenticatie uitschakelen**
 3. Vul je wachtwoord in ter bevestiging
 
+## Wachtwoordloos inloggen (magic link)
+
+Je kunt inloggen zonder wachtwoord via een eenmalige link die naar je e-mail wordt gestuurd:
+
+1. Ga naar de inlogpagina
+2. Klik op **Stuur me een inloglink**
+3. Vul je e-mailadres in
+4. Check je inbox en klik op de link
+
+De link is 15 minuten geldig en kan eenmalig worden gebruikt. Voor de veiligheid maakt het aanvragen van een nieuwe link eventuele openstaande links ongeldig.
+
+::: tip
+Als je je e-mail verifieert na het aanmelden, word je automatisch ingelogd. Je hoeft dan niet nog een keer apart in te loggen.
+:::
+
 ## Sessiebeheer
 
 Bekijk en beheer je actieve sessies:
