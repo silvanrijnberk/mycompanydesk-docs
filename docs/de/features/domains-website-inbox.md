@@ -226,6 +226,12 @@ Wenn eine Zahlung abgeschlossen ist, führt die Plattform automatisch die folgen
 
 Die Checkout-Erfolg- und Checkout-Abgebrochen-Seiten zeigen dem Käufer einen gebrandeten Ergebnisbildschirm, der die Design-Tokens (Farben) Ihrer Website verwendet, damit die Seite markenkonform bleibt.
 
+## Sichtbarkeit des Posteingang-Tabs
+
+Der Posteingang-Tab erscheint nur dann in der Seitenleiste und der unteren Navigationsleiste, wenn der Workspace eine Posteingang-fähige Domain konfiguriert hat. Zugriff auf Tarifebene allein reicht nicht aus -- der Workspace muss den Onboarding-Ablauf abgeschlossen und den Posteingang auf mindestens einer Domain aktiviert haben. So wird verhindert, dass der Tab bei Benutzern erscheint, die zwar über ihren Tarif Zugriff auf den Posteingang haben, ihre E-Mails aber woanders lesen und nie einen leeren zweiten Posteingang sehen wollen.
+
+Bei kostenlosen Tarifen ohne Posteingang bleibt der Tab als Upgrade-Hinweis sichtbar. Bei kostenpflichtigen Tarifen erscheint der Tab jedoch automatisch, sobald eine Domain über den Einrichtungsassistenten eingerichtet und der Posteingang bereit ist.
+
 ## E-Mails senden vs. E-Mails empfangen
 
 Dieses Bundle ist die **Empfangsseite**. Ausgehende E-Mails -- Rechnungsversand, Erinnerungen, Angebotsversand -- werden von der breiteren E-Mail-Pipeline abgewickelt, die unter [E-Mail-Integration](/de/settings/email) beschrieben ist. Der Posteingang dient dem Empfang von Kunden-E-Mails und dem Verfassen von Antworten; er routet Ihre automatisierten Rechnungssendungen nicht. Die Rechnungszustellung folgt immer Ihrer gewählten Versandmethode unter [E-Mail-Integration](/de/settings/email) (Gmail, Outlook oder der integrierte Versender). Die DKIM-Signierung der Posteingangs-Domain wird für ausgehende Antworten verwendet, die Sie im Posteingang verfassen, nicht für automatisierte Transaktions-E-Mails.

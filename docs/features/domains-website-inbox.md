@@ -226,6 +226,12 @@ When a payment completes, the platform automatically runs the following steps. E
 
 The checkout-success and checkout-cancelled pages show the buyer a branded result screen that uses your site's design tokens (colors) so the page stays on-brand.
 
+## Inbox tab visibility
+
+The Inbox tab appears in the sidebar and bottom navigation only when the workspace has an inbox-enabled domain configured. Having plan-level access is not enough on its own -- the workspace must complete the onboarding flow and enable inbox on at least one domain. This prevents the tab from appearing for users who have inbox access through their plan but read email elsewhere and would never want an empty second inbox.
+
+On free plans that do not include inbox, the tab remains visible as an upgrade hint. But on paid plans, once a domain is wired through the setup wizard and the inbox is ready, the tab appears automatically.
+
 ## Sending mail vs receiving mail
 
 This bundle is the **receiving** side. Outgoing email — invoice delivery, reminders, quote sends — is handled by the broader email pipeline described in [Email Integration](/settings/email). The inbox is for receiving customer mail and composing replies; it does not route your automated invoice sends. Invoice delivery always respects your chosen delivery method under [Email Integration](/settings/email) (Gmail, Outlook, or the built-in sender). The inbox domain's DKIM is used for outbound replies composed in the inbox, not for automated transactional mail.
