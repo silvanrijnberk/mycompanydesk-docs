@@ -60,6 +60,8 @@ PDFs are generated in the language of the invoice. If you send an invoice in Ger
 
 Supported PDF languages: English, Dutch, German, French.
 
+The default PDF language for new NL-platform workspaces is Dutch (`nl`). This is applied when onboarding finishes via the wizard (from the country setting) and through the database default when no explicit language preference has been saved. Workspaces registered outside the Netherlands default to English.
+
 ## Logo requirements
 
 For best results:
