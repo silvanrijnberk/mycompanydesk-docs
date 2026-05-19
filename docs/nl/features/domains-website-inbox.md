@@ -76,6 +76,8 @@ De pagina bestaat uit twee delen:
 - **Domeinen in afwachting**: Domeinen die nog geverifieerd moeten worden staan altijd bovenaan, los van de domeinwisselaar in de bovenbalk. Zo kun je de verificatie-instructies bereiken van nieuw toegevoegde domeinen voordat ze actief worden.
 - **Actief domeinpaneel**: DNS, SSL, doorverwijzingen, analytics, beveiliging en SEO-tabs zijn gekoppeld aan het domein dat in de domeinwisselaar in de bovenbalk is geselecteerd (bereikbaar vanuit de sitebouwer op `/website`). Wanneer de hoofdsite (weergegeven als je werkruimtenaam) is geselecteerd, wordt het domeinpaneel volledig verborgen. Wisselen van domein zet de actieve tab terug op Routering.
 
+De pagina toont standaard een opgeschoonde weergave met de meest gebruikte tabbladen. Zes power-user tabbladen zijn verborgen totdat je **Geavanceerde modus** inschakelt in `/me/preferences`. Die tabbladen zijn: DNS, SSL, Doorverwijzingen, Analytics, Snelle instellingen en Beveiliging. Zie [Instellingenoverzicht](/nl/settings#account-settings-me) voor het aanzetten van geavanceerde modus.
+
 Wat je op de pagina kunt doen:
 
 - **Domein kopen of claimen** via de domein-aanschafkaart. Voer een domeinnaam in, controleer de beschikbaarheid via OpenProvider, en koop het domein of claim het gratis als je als Founding Member in aanmerking komt.

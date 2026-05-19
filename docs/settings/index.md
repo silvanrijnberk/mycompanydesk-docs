@@ -96,7 +96,7 @@ The `/me` sidebar groups pages into three sections:
 | Page | Path | Covers |
 |---|---|---|
 | Profile | `/me/profile` | Display name, avatar, default workspace |
-| Preferences | `/me/preferences` | Locale, date format, time format, theme |
+| Preferences | `/me/preferences` | Locale, date format, time format, theme, advanced mode |
 | Notifications | `/me/notifications` | Email + push, per-type toggles, quiet hours |
 
 ### Work
