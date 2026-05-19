@@ -8,20 +8,29 @@ Gerez votre abonnement MyCompanyDesk, consultez votre utilisation et mettez a ni
 
 ## Founding Members
 
-MyCompanyDesk propose un programme Founding Members pour les 100 premiers espaces de travail qui s'inscrivent pendant la periode de lancement. Un Founding Member recoit le plan Pro gratuit a vie, sans date d'expiration et sans moyen de paiement requis.
+MyCompanyDesk propose un programme Founding Members pour les 100 premiers espaces de travail qui s'inscrivent pendant la periode de lancement.
+
+### Offre actuelle (a partir du 20 mai 2026)
+
+Un Founding Member recoit sa premiere annee de Pro gratuite, puis 50% de reduction sur le plan Pro a vie. L'annee gratuite commence immediatement a la reservation. A la fin de l'annee gratuite, l'espace de travail peut passer au plan Pro payant avec une reduction a vie de 50% (appliquee comme un coupon Stripe lors du paiement). Si l'espace de travail ne convertit pas, la periode d'essai Pro expire comme toute autre periode d'essai.
+
+Le domaine `.nl` inclus est gratuit la premiere annee et devient ensuite partie integrante de l'abonnement Pro payant. Un espace de travail qui cesse de payer apres l'annee gratuite perd Pro et le domaine expire. Il n'y a plus d'engagement gratuit-a-vie illimite pour les nouveaux membres.
+
+### Cohorte d'origine (grandfathered)
+
+La premiere vague de Founding Members ayant reserve sous les conditions d'origine (avant le 20 mai 2026) conserve Pro gratuit a vie et beneficie du renouvellement de domaine gratuit a vie. Ces droits sont maintenus pour la duree de vie de MyCompanyDesk tant que le service et la fonctionnalite concernee continuent d'etre proposes. Le nouveau flux n'ecrit jamais ces lignes ; les espaces de travail grandfathered existants restent intouches.
 
 ### Comment ca marche
 
 - Le programme est limite a **100 places** sur l'ensemble des espaces de travail.
-- Une fois la place reservee, votre espace de travail est definitivement passe au plan Pro. L'abonnement affiche un badge "Founding Member" dans la section de facturation.
 - Chaque espace de travail ne peut reserver qu'une seule place. Une meme adresse IP ne peut pas non plus reserver plus d'une place (prevention de la fraude).
-- La reservation est irreversible. Il n'y a pas de periode d'essai ni de renouvellement ; le plan Pro reste actif indefiniment.
+- La reservation est irreversible. Il n'y a pas de deuxieme reservation ou de re-reservation ; une fois votre place partie, elle est partie.
 
 ### Reserver une place
 
 Vous pouvez reserver une place Founding Member de deux facons :
 
-**Depuis la page de facturation.** S'il reste des places, la page de facturation affiche une carte de reservation Founding Member. Cliquez sur **Reserver une place** pour la bloquer. La mise a niveau prend effet immediatement.
+**Depuis la page de facturation.** S'il reste des places, la page de facturation affiche une carte de reservation Founding Member. Cliquez sur **Reserver une place** pour demarrer votre annee Pro gratuite. La mise a niveau prend effet immediatement.
 
 **Depuis la page d'accueil.** Le CTA de la page d'accueil renvoie vers le formulaire d'inscription avec une intention founding-member. Lorsque vous vous inscrivez via ce parcours :
 
@@ -29,7 +38,7 @@ Vous pouvez reserver une place Founding Member de deux facons :
 2. Apres verification de l'e-mail et connexion, le systeme reserve automatiquement votre place en arriere-plan.
 3. Un toast de confirmation vous indique si la reservation a reussi. Si les places etaient epuisees avant que vous n'ayez termine l'inscription, vous beneficiez tout de meme d'un essai Pro de 60 jours.
 
-Une fois reservee, la place est definitive et l'espace de travail conserve Pro gratuit a vie. Si la reservation automatique echoue (places epuisees, IP deja utilisee par un autre espace de travail ou erreur reseau), la reservation n'est pas retentee. Vous pouvez toujours consulter la page de facturation et reserver manuellement s'il reste des places.
+Si la reservation automatique echoue (places epuisees, IP deja utilisee par un autre espace de travail ou erreur reseau), la reservation n'est pas retentee. Vous pouvez toujours consulter la page de facturation et reserver manuellement s'il reste des places.
 
 Les espaces de travail Founding Member sont des clients Pro comme les autres : memes fonctionnalites, memes limites. La seule difference est la source d'abonnement ("interne") et le badge dans la facturation.
 
