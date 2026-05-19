@@ -110,6 +110,25 @@ Colonnes notables que l'application lit :
 | `purchase_price_period` | Periode de facturation pour les domaines achetes (`yearly`).
 | `purchase_intent_id` | Renvoie a la ligne `domain_purchase_intents` pour les achats payants.
 | `founder_claim_id` | Renvoie a la ligne `founder_domain_claims` pour les reclamations gratuites Founder.
+| `transferred_out_at` | Defini lorsque la synchronisation hebdomadaire detecte qu'un domaine a ete transfere hors du compte registrar MCD.
+
+#### Cycle de renouvellement
+
+Le renouvellement de domaine suit trois chemins selon la maniere dont le domaine a ete acquis :
+
+1. **Renouvellement groupe gratuit** (niveau Founder ou niveau Trial converti en Pro) : MCD prend en charge le cout de gros du renouvellement. Le domaine se renouvelle automatiquement tant que l'espace de travail reste sur Pro. Aucun moyen de paiement requis.
+2. **Renouvellement automatique payant** (achat payant ou niveau Trial sans Pro) : Facture annuellement via la carte enregistree. Fonctionne comme tout autre renouvellement d'abonnement.
+3. **Renouvellement manuel** : Si un espace de travail de niveau Trial quitte Pro ET n'a pas de carte enregistree, le chemin de renouvellement automatique le saute. L'utilisateur voit une notification et peut declencher un paiement ponctuel via `POST /api/domains/renew/:domainId`, qui cree une session Stripe Embedded Checkout pour le renouvellement. C'est le seul moyen de garder un domaine actif sans abonnement actif ni carte enregistree.
+
+#### Consequences d'un transfert
+
+Transferer un domaine enregistre via MyCompanyDesk vers un autre registrar a des consequences permanentes, appliquees par la synchronisation hebdomadaire du statut OpenProvider :
+
+- **Domaines niveau Founder** : La reclamation Founder est supprimee et l'abonnement Pro a vie interne de l'espace de travail est resilie. L'espace de travail devient un client payant normal. C'est irreversible -- le statut Founder ne peut pas etre reclame a nouveau.
+- **Domaines niveau Trial / groupes Pro** : Le statut groupe gratuit est perdu. L'espace de travail ne pourra plus jamais reclamer un autre domaine gratuit (deja applique via la liste des reclamations conservees).
+- **Domaines payants** : Aucune revocation d'avantage -- le domaine passe simplement a `status = 'transferred_out'`.
+
+Le modal de reclamation avertit de ces consequences avant qu'une reclamation de domaine gratuit ne soit soumise, et exige une confirmation explicite de l'utilisateur. Les details de revocation sont enregistres dans la table d'audit `domain_perk_revocations` pour reference par le support.
 
 #### Acheter ou reclamer un domaine
 
@@ -120,8 +139,9 @@ La carte d'achat de domaine (`DomainPurchaseCard.vue`, `domain-purchase.service.
 
 Les reclamations Founder ont desormais deux niveaux pour le renouvellement :
 
-- **Niveau Founder** -- L'espace de travail est un Founding Member avec renouvellement gratuit a vie. Aucun moyen de paiement requis.
-- **Niveau Trial** -- L'espace de travail est en periode d'essai. La premiere annee est gratuite, et l'utilisateur peut optionnellement enregistrer une carte via Stripe SetupIntent dans le modal pour le renouvellement automatique l'annee suivante. Sans carte enregistree, l'utilisateur recoit un rappel a l'echeance du renouvellement.
+- **Niveau Founder** -- L'espace de travail est un Founding Member avec renouvellement gratuit a vie. Aucun moyen de paiement requis. Le renouvellement est gere automatiquement par la plateforme, MCD absorbant le cout de gros.
+- **Niveau Trial** -- L'espace de travail est en periode d'essai. La premiere annee est gratuite, et l'utilisateur peut optionnellement enregistrer une carte via Stripe SetupIntent dans le modal pour le renouvellement automatique l'annee suivante. Si l'espace de travail passe a Pro avant l'expiration du domaine, le domaine fait partie du bundle Pro et se renouvelle gratuitement aux frais de MCD. Si l'espace de travail quitte Pro et n'a pas de carte enregistree, l'utilisateur recoit une notification et doit renouveler manuellement via une session Stripe Embedded Checkout ponctuelle depuis les parametres du domaine.
+- **Niveau Payant** -- Domaines standard achetes au prix fort. Le renouvellement est facture via le moyen de paiement enregistre sur le cycle annuel. Si le paiement echoue, une notification de renouvellement manuel est envoyee.
 
 Le point de terminaison d'eligibilite (`GET /api/domain-purchase/founder/eligibility`) renvoie desormais un champ `tier` (`founder` | `trial` | `paid` | `free`) et `founderSlotsRemaining` en plus des conditions existantes. La limite de 50 places ne s'applique qu'aux reclamations de niveau Founder ; les reclamations de niveau Trial ne sont pas comptees dans ce plafond.
 

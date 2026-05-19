@@ -110,6 +110,25 @@ Wichtige Spalten, die die App liest:
 | `purchase_price_period` | Abrechnungszeitraum für gekaufte Domains (`yearly`).
 | `purchase_intent_id` | Verweist auf die `domain_purchase_intents`-Zeile für bezahlte Käufe.
 | `founder_claim_id` | Verweist auf die `founder_domain_claims`-Zeile für Founder-Gratis-Claims.
+| `transferred_out_at` | Wird gesetzt, wenn beim wöchentlichen Sync erkannt wird, dass eine Domain aus dem MCD-Registrar-Konto übertragen wurde.
+
+#### Verlängerungszyklus
+
+Die Domain-Verlängerung folgt drei Pfaden, je nachdem, wie die Domain erworben wurde:
+
+1. **Kostenlose gebündelte Verlängerung** (Founder-Stufe oder auf Pro umgestellte Trial-Stufe): MCD übernimmt die Wholesale-Verlängerungskosten. Die Domain verlängert sich automatisch, solange der Workspace auf Pro bleibt. Keine Zahlungsmethode erforderlich.
+2. **Kostenpflichtige automatische Verlängerung** (bezahlter Kauf oder Trial-Stufe ohne Pro): Wird jährlich über die hinterlegte Karte abgerechnet. Funktioniert wie jede andere Abonnementverlängerung.
+3. **Manuelle Verlängerung**: Wenn ein Trial-Workspace aus Pro herausfällt UND keine Karte hinterlegt hat, überspringt der automatische Verlängerungspfad ihn. Der Benutzer sieht eine Benachrichtigung und kann eine einmalige Zahlung über `POST /api/domains/renew/:domainId` auslösen, die eine Stripe Embedded Checkout-Sitzung für die Verlängerung erstellt. Dies ist der einzige Weg, eine Domain ohne aktives Abonnement oder hinterlegte Karte aktiv zu halten.
+
+#### Übertragungsfolgen
+
+Die Übertragung einer über MyCompanyDesk registrierten Domain zu einem anderen Registrar hat dauerhafte Konsequenzen, die durch den wöchentlichen OpenProvider-Statusabgleich durchgesetzt werden:
+
+- **Founder-Domains**: Der Founder-Claim wird gelöscht und das interne lebenslange Pro-Abonnement des Workspace wird gekündigt. Der Workspace wird zu einem normalen zahlenden Kunden. Dies ist unumkehrbar — der Founder-Status kann nicht erneut beansprucht werden.
+- **Trial- / Pro-gebündelte Domains**: Der gebündelte Gratis-Status geht verloren. Der Workspace kann nie wieder eine andere Gratis-Domain beanspruchen (bereits über die Retained-Claims-Liste durchgesetzt).
+- **Bezahlte Domains**: Kein Vorteilsentzug — die Domain wechselt einfach zu `status = 'transferred_out'`.
+
+Das Claim-Modal warnt vor diesen Konsequenzen, bevor ein Gratis-Domain-Claim eingereicht wird, und verlangt eine ausdrückliche Bestätigung des Benutzers. Widerrufsdetails werden in der `domain_perk_revocations`-Audit-Tabelle für Support-Zwecke festgehalten.
 
 #### Domain kaufen oder beanspruchen
 
@@ -120,8 +139,9 @@ Die Domain-Kaufkarte (`DomainPurchaseCard.vue`, `domain-purchase.service.ts`) is
 
 Founder-Claims haben jetzt zwei Stufen für die Verlängerung:
 
-- **Founder-Stufe** -- Der Workspace ist ein Founding Member mit vollständiger lebenslanger Gratis-Verlängerung. Keine Zahlungsmethode erforderlich.
-- **Trial-Stufe** -- Der Workspace befindet sich in einer Testphase. Das erste Jahr ist kostenlos, und der Benutzer kann optional eine Karte über Stripe SetupIntent im Modal für die automatische Verlängerung im nächsten Jahr hinterlegen. Ohne hinterlegte Karte erhält der Benutzer eine Erinnerung, wenn die Verlängerung fällig ist.
+- **Founder-Stufe** -- Der Workspace ist ein Founding Member mit vollständiger lebenslanger Gratis-Verlängerung. Keine Zahlungsmethode erforderlich. Die Verlängerung erfolgt automatisch über die Plattform, wobei MCD die Wholesale-Kosten trägt.
+- **Trial-Stufe** -- Der Workspace befindet sich in einer Testphase. Das erste Jahr ist kostenlos, und der Benutzer kann optional eine Karte über Stripe SetupIntent im Modal für die automatische Verlängerung im nächsten Jahr hinterlegen. Wenn der Workspace vor Ablauf der Domain auf Pro umstellt, wird die Domain Teil des Pro-Pakets und verlängert sich kostenlos auf MCDs Rechnung. Fällt der Workspace aus Pro heraus und hat keine hinterlegte Karte, erhält der Benutzer eine Benachrichtigung und muss manuell über eine einmalige Stripe Embedded Checkout-Sitzung in den Domain-Einstellungen verlängern.
+- **Paid-Stufe** -- Standard-Domains zum vollen Preis gekauft. Die Verlängerung wird jährlich über die hinterlegte Zahlungsmethode abgerechnet. Schlägt die Zahlung fehl, wird eine Benachrichtigung zur manuellen Verlängerung gesendet.
 
 Der Berechtigungs-Endpunkt (`GET /api/domain-purchase/founder/eligibility`) liefert jetzt ein `tier`-Feld (`founder` | `trial` | `paid` | `free`) und `founderSlotsRemaining` neben den bestehenden Gates. Die Begrenzung auf 50 Plätze gilt nur für Founder-Claims; Trial-Claims zählen nicht zum Founder-Kontingent.
 
