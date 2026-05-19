@@ -113,15 +113,22 @@ Belangrijke kolommen die de app leest:
 
 #### Domein kopen of claimen
 
-De domein-aanschafkaart (`DomainPurchaseCard.vue`, `domain-purchase.service.ts`) is de eerste kaart op de Domeinen-pagina. De kaart verschijnt wanneer de werkruimte nog geen actief eigen domein heeft. Via de kaart kan de gebruiker een domein uitkiezen en bemachtigen via twee routes:
+De domein-aanschafkaart (`DomainPurchaseCard.vue`, `domain-purchase.service.ts`) is de eerste kaart op de Domeinen-pagina. De kaart verschijnt wanneer de werkruimte nog geen actief eigen domein heeft. Via de kaart kan de gebruiker een domein uitkiezen en bemachtigen via twee routes, die beide een speciale twee-stappen aanschafmodal openen (`DomainClaimModal.vue`). Stap 1 verzamelt de registrantgegevens (de gegevens die de registrar nodig heeft voor WHOIS). Stap 2 handelt de betaling of claim af:
 
-- **Kopen** -- Betaalde aankoop via OpenProvider. De gebruiker voert een domeinnaam in, de kaart roept `GET /api/domain-purchase/quote` aan om beschikbaarheid en prijs te controleren via de API van OpenProvider, en opent daarna een aankoopflow met Stripe Elements om betaling en registrantgegevens te verzamelen. Zodra de betaling is voltooid, registreert het platform het domein bij OpenProvider en maakt de `domains`-rij aan in nameserver-modus, gekoppeld aan Cloudflare.
-- **Founder gratis claim** -- Founding Members die aan de voorwaarden voldoen kunnen een `.nl`-domein gratis claimen. De kaart roept `GET /api/domain-purchase/founder/eligibility` aan om te controleren of de werkruimte aan alle voorwaarden voldoet (Founding Member-status, KVK gekoppeld, accountleeftijd, site-inhoud, beschikbare plekken, en domein dat overeenkomt met de KVK-naam). Als de gebruiker in aanmerking komt, kan die het domein claimen via een aparte modal. Het platform betaalt de eerstejaars registratiekosten; de jaarlijkse verlenging wordt door MyCompanyDesk gedragen zolang de werkruimte bestaat.
+- **Kopen** -- Betaalde aankoop via OpenProvider. De gebruiker voert een domeinnaam in, de kaart roept `GET /api/domain-purchase/quote` aan om beschikbaarheid en prijs te controleren, en opent daarna de aanschafmodal. Nadat de registrantgegevens zijn ingevuld, roept de modal `POST /api/domain-purchase/checkout-session` aan om een Stripe-betalingssessie aan te maken en toont Stripe Embedded Checkout voor de betaling. Zodra de betaling voltooid is, registreert `POST /api/domain-purchase/finalize` het domein bij OpenProvider en maakt de `domains`-rij aan in nameserver-modus, gekoppeld aan Cloudflare.
+- **Gratis claim** -- Founding Members die aan de voorwaarden voldoen kunnen een `.nl`-domein gratis claimen. De kaart roept `GET /api/domain-purchase/founder/eligibility` aan om de claim-tier van de werkruimte (`founder` of `trial`) en de gate-status te controleren. De modal verzamelt de registrantgegevens en roept bij indienen `POST /api/domain-purchase/founder/claim` aan. Het platform betaalt de eerstejaars registratiekosten.
 
-De geschiktheid voor de Founder-actie wordt bepaald door een set voorwaarden die server-side worden gecontroleerd in `founder-domain-claim.service.js`:
+Founder-claims hebben nu twee tiers voor verlenging:
+
+- **Founder-tier** -- De werkruimte is een Founding Member met volledige levenslange gratis verlenging. Geen betaalmiddel nodig.
+- **Trial-tier** -- De werkruimte loopt op een trial. Het eerste jaar is gratis, en de gebruiker kan optioneel een kaart opslaan via Stripe SetupIntent in de modal voor automatische verlenging volgend jaar. Zonder opgeslagen kaart ontvangt de gebruiker een reminder wanneer verlenging nodig is.
+
+Het eligibility-eindpunt (`GET /api/domain-purchase/founder/eligibility`) retourneert nu een `tier`-veld (`founder` | `trial` | `paid` | `free`) en `founderSlotsRemaining` naast de bestaande gates. De limiet van 50 plekken geldt alleen voor Founder-tier claims; trial-tier claims tellen niet mee voor het Founder-limiet.
+
+De geschiktheid wordt bepaald door voorwaarden die server-side worden gecontroleerd in `founder-domain-claim.service.js`:
 
 - **Founding Member-status** -- de werkruimte moet de Founding Member-vlag hebben.
-- **Gratis-domein plekken** zijn beperkt tot 50 over alle Founding Members.
+- **Gratis-domein plekken** voor Founder-tier claims beperkt tot 50. Trial-tier claims vallen hier buiten.
 - **KVK vereist** -- de werkruimte moet een KVK-nummer gekoppeld hebben.
 - **Domein moet `.nl` zijn** -- de gratis actie geldt alleen voor de NL-extensie.
 - **Domein moet overeenkomen met de KVK-naam** -- het domein moet corresponderen met de geregistreerde statutaire naam of een handelsnaam.
