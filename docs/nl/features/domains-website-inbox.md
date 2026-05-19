@@ -226,6 +226,12 @@ Wanneer een betaling voltooid is, voert het platform automatisch de volgende sta
 
 De checkout-succes- en checkout-geannuleerd-pagina's tonen de koper een branded resultaatscherm dat de ontwerptokens (kleuren) van je site gebruikt zodat de pagina bij je branding past.
 
+## Zichtbaarheid van de Inbox-tab
+
+De Inbox-tab verschijnt alleen in de zijbalk en de onderste navigatiebalk als de werkruimte een inbox-domein heeft geconfigureerd. Toegang op abonnementsniveau alleen is niet genoeg -- de werkruimte moet de onboarding-flow hebben voltooid en op minstens een domein de inbox hebben ingeschakeld. Dit voorkomt dat de tab verschijnt bij gebruikers die via hun abonnement wel toegang hebben tot inbox, maar hun mail elders lezen en nooit een lege tweede inbox willen zien.
+
+Op gratis abonnementen die geen inbox hebben, blijft de tab zichtbaar als upgrade-hint. Maar op betaalde abonnementen verschijnt de tab automatisch zodra een domein via de setup-wizard is ingericht en de inbox klaar is.
+
 ## Mail verzenden vs mail ontvangen
 
 Deze bundel is de **ontvangstkant**. Uitgaande e-mail -- factuurverzending, herinneringen, offerteverzending -- wordt afgehandeld door de bredere e-mailpipeline beschreven in [E-mailintegratie](/nl/settings/email). De inbox is voor het ontvangen van klantmail en het opstellen van antwoorden; hij routeert je geautomatiseerde factuurverzendingen niet. Factuurbezorging volgt altijd je gekozen verzendmethode onder [E-mailintegratie](/nl/settings/email) (Gmail, Outlook of de ingebouwde verzender). De DKIM van het inboxdomein wordt gebruikt voor uitgaande antwoorden die je in de inbox opstelt, niet voor geautomatiseerde transactionele mail.

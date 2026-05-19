@@ -226,6 +226,12 @@ Lorsqu'un paiement est finalise, la plateforme execute automatiquement les etape
 
 Les pages succes-du-checkout et checkout-annule affichent a l'acheteur un ecran de resultat aux couleurs de votre marque, en utilisant les tokens de design (couleurs) de votre site.
 
+## Visibilite de l'onglet Boite de reception
+
+L'onglet Boite de reception apparait uniquement dans la barre laterale et la barre de navigation inferieure lorsque l'espace de travail a un domaine avec boite de reception configure. L'acces au niveau de l'abonnement ne suffit pas a lui seul -- l'espace de travail doit avoir termine le flux d'intégration et active la boite de reception sur au moins un domaine. Cela evite que l'onglet ne s'affiche pour les utilisateurs qui ont acces a la boite de reception via leur abonnement mais lisent leurs e-mails ailleurs et ne voudraient jamais voir une seconde boite vide.
+
+Sur les abonnements gratuits sans boite de reception, l'onglet reste visible comme indicateur de mise a niveau. Mais sur les abonnements payants, l'onglet apparait automatiquement des qu'un domaine est configure via l'assistant de configuration et que la boite de reception est prête.
+
 ## Envoyer des e-mails vs recevoir des e-mails
 
 Ce lot correspond au côte **reception**. Les e-mails sortants -- envoi de factures, rappels, envoi de devis -- sont geres par le pipeline e-mail plus large decrit dans [Integration e-mail](/fr/settings/email). La boite de reception sert a recevoir les e-mails des clients et a rediger des reponses ; elle n'achemine pas vos envois automatises de factures. La livraison des factures suit toujours la methode d'envoi que vous avez choisie dans [Integration e-mail](/fr/settings/email) (Gmail, Outlook ou l'expediteur integre). La signature DKIM du domaine de la boite de reception est utilisee pour les reponses sortantes redigees dans la boite de reception, pas pour les e-mails transactionnels automatises.
