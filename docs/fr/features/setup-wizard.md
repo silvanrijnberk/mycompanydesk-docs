@@ -102,27 +102,23 @@ Un bouton "Pas encore enregistre" stocke `answers.registry = null`. **Continuer 
 
 ## Etape 3 — Domaine
 
-Choisissez l'adresse web que les clients verront sur la page d'entreprise publique et (le cas echeant) sur les e-mails entrants.
+Choisissez l'adresse web que vos clients verront sur la page d'entreprise publique et dans votre boite de reception. Trois chemins, affiches sous forme de cartes, couvrent chaque scenario, du demarrage rapide gratuit a l'achat d'un domaine directement dans l'assistant.
 
-### Deux chemins
+### Selecteur a trois choix
 
-**Sous-domaine (par defaut) :** l'utilisateur choisit un slug ; l'assistant l'associe a `<slug>.mycompanydesk.nl` pour les espaces `NL` et `<slug>.mycompanydesk.com` partout ailleurs. Le slug est pre-rempli a partir de `businessName` (minuscules, ASCII, max 32 caracteres). A la fin, le sous-domaine est provisionne via l'API Cloudflare et le site web de l'entreprise devient immediatement accessible.
+Une grille de trois cartes presente le choix. La selection d'un chemin revele l'editeur correspondant en dessous ; un seul chemin est actif a la fois.
+
+**Sous-domaine (gratuit) :** l'utilisateur choisit un slug ; un selecteur de TLD permet de choisir entre `.mycompanydesk.nl` et `.mycompanydesk.com`. Le slug est pre-rempli a partir du nom legal KVK lorsqu'il est disponible (minuscules, accents supprimes, caracteres non-ASCII supprimes, tronque a 63 caracteres), de sorte que la plupart des utilisateurs peuvent cliquer-et-continuer sans taper. La disponibilite est verifiee en direct avec un delai de 350 ms pendant la saisie. A la fin, le sous-domaine est provisionne via l'API Cloudflare et le site web de l'entreprise est immediatement accessible.
 
 Lorsque l'assistant est execute dans le flux en 2 etapes (controle par le plan), l'etape Domaine est entierement omise. L'etape de fin provisionne automatiquement un sous-domaine d'espace de travail a partir de la valeur `display_name` : le slug est derive du nom d'affichage (avec suffixes de reessai en cas de collision jusqu'a 5 tentatives), et `activateSubdomain` l'enregistre comme URL publique du site. Meilleur effort : une collision ou une erreur est journalisee et n'empeche pas l'assistant de terminer.
 
-**Domaine personnel :** l'utilisateur saisit un domaine qu'il possede deja. A la fin, l'assistant :
-
-1. Ajoute le domaine a la liste des domaines de l'espace de travail (sans effet s'il etait deja ajoute).
-2. Active automatiquement la boite de reception dessus : cree `info@<domaine>` comme boite par defaut plus les alias `support@`, `sales@` et `noreply@`.
-3. Cree eventuellement une boite personnelle (voir ci-dessous).
+**Domaine personnel :** l'utilisateur saisit un domaine qu'il possede deja. Une validation regex en direct verifie le format pendant la saisie (`[a-z0-9][a-z0-9-]*(.[a-z0-9]([a-z0-9-]*[a-z0-9])?)+`). A la fin, l'assistant ajoute le domaine a la liste des domaines de l'espace de travail (sans effet s'il etait deja ajoute) et active automatiquement la boite de reception : `info@<domaine>` comme boite par defaut plus les alias `support@`, `sales@` et `noreply@`. Le chemin 409-deja-existant de `apply.service` est gere avec elegance.
 
 Si le domaine ne pointe pas encore vers les serveurs de noms de MCD, la fin redirige vers `/workspace/organization/company/address` pour que l'utilisateur voie immediatement les instructions DNS et un bouton **Verifier**. Sinon, cela va au tableau de bord.
 
-### Option de boite personnelle
+**Enregistrer un domaine :** integre les composants live `DomainPurchaseCard` + `DomainClaimModal` de l'interface des parametres. L'utilisateur peut rechercher un domaine, verifier la disponibilite et le prix, puis l'acheter via OpenProvider ou le reclamer gratuitement en tant que Founding Member. En cas de reclamation ou d'achat reussi, le domaine est deja attache a l'espace de travail cote serveur via le flux `/api/domain-purchase`, de sorte que l'assistant enregistre la reponse comme `mode='own'` avec le nom enregistre et `registered: true` ; `apply.service` le traite comme un re-ajout sans effet. Une banniere de succes verte affiche le nom de domaine enregistre et laisse l'utilisateur continuer.
 
-Lorsque **Domaine personnel** est selectionne, une case a cocher propose une adresse personnelle (par ex. `silvan@<domaine>`). La partie locale par defaut est le prenom de l'utilisateur, en minuscules et nettoye des caracteres ASCII etendus. La boite est creee avec `type: 'personal'` afin qu'elle recoive sa propre liste de fils de discussion, separee de la boite partagee `info@`.
-
-Lors d'une nouvelle execution, decocher la case supprime toutes les boites `type: 'personal'` existantes pour ce domaine. Les boites partagees et personnalisees restent intactes.
+Si l'utilisateur ouvre le chemin Enregistrer mais ne finalise pas l'achat, l'etape est marquee comme sautee pour que l'assistant puisse continuer. Il peut revenir plus tard via `Entreprise > Votre propre adresse .com` quand il est pret.
 
 ### Revenir d'un domaine personnel a un sous-domaine
 
@@ -234,9 +230,9 @@ Voir [Apercu des parametres](/fr/settings/) pour la carte complete.
 
 ## Cas particuliers
 
-- **Passer une etape.** Continuer est controle par etape sur les reponses minimales requises. L'etape Registre n'a pas d'obstacle ; Domaine necessite un chemin choisi avec une valeur non vide ; Magie necessite que Generer ait ete execute ; Entreprise et Verification ont leurs propres obstacles.
+- **Passer une etape.** Continuer est controle par etape sur les reponses minimales requises. L'etape Registre n'a pas d'obstacle ; Domaine necessite un chemin choisi avec une valeur non vide, ou un achat termine pour le chemin Enregistrer, ou le drapeau passe ; Magie necessite que Generer ait ete execute ; Entreprise et Verification ont leurs propres obstacles.
 - **Fermer au milieu d'une etape.** Chaque reponse est enregistree a la modification, donc la prochaine visite reprend la ou l'utilisateur s'etait arrete. L'index d'etape est egalement enregistre (`answers` et `currentStep` vivent dans la meme colonne JSONB).
-- **Changer d'avis a l'etape Domaine.** Passer de `personnel` a `sous-domaine` apres avoir saisi un domaine reecrit `answers.domain` a `null` jusqu'a ce que l'utilisateur choisisse un slug. Passer a un sous-domaine lorsqu'un domaine personnalise est deja attache affiche un avertissement prealable.
+- **Changer d'avis a l'etape Domaine.** Passer de `personnel` a `sous-domaine` apres avoir saisi un domaine reecrit `answers.domain` a `null` jusqu'a ce que l'utilisateur choisisse un slug. Passer au chemin Enregistrer enregistre une reponse passee pour qu.un nouvel inscrit ne soit pas bloque s.il ouvre Enregistrer mais reporte l.achat. Passer a un sous-domaine lorsqu.un domaine personnalise est deja attache affiche un avertissement prealable.
 - **Echec de l'extraction du logo.** Les logos principalement blancs et les entrees SVG uniquement que `sharp` ne peut pas rasteriser renvoient `color: null`. La suggestion de couleur de marque Gemini est alors utilisee.
 - **Domaine deja ajoute a la fin du domaine personnel.** Un 409 de `addDomain` revient a la ligne existante pour que l'etape d'activation de la boite de reception soit toujours executee.
 - **Boite personnelle existe deja.** Un 409 de `createMailbox` est traite comme un succes.

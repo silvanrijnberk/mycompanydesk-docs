@@ -102,27 +102,23 @@ Ein "Noch nicht registriert"-Schalter speichert `answers.registry = null`. **Wei
 
 ## Schritt 3 — Domain
 
-Wahlen Sie die Webadresse, die Kunden auf der offentlichen Unternehmensseite und (wo zutreffend) bei eingehenden E-Mails sehen.
+Wahlen Sie die Webadresse, die Ihre Kunden auf der offentlichen Unternehmensseite und in Ihrem E-Mail-Posteingang sehen. Drei Wege, als Karten angezeigt, decken jeden Pfad ab, vom kostenlosen Schnellstart bis zum Kauf einer Domain direkt im Assistenten.
 
-### Zwei Wege
+### Drei-Wege-Auswahl
 
-**Subdomain (Standard):** der Benutzer wahlt einen Slug; der Assistent verknupft ihn mit `<slug>.mycompanydesk.nl` fur `NL`-Workspaces und `<slug>.mycompanydesk.com` uberall sonst. Der Slug ist aus `businessName` vorbefullt (Kleinbuchstaben, ASCII, max. 32 Zeichen). Beim Abschluss wird die Subdomain uber die Cloudflare-API bereitgestellt und die Unternehmenswebsite ist sofort erreichbar.
+Ein Raster von drei Karten prasentiert die Wahl. Die Auswahl eines Weges zeigt den zugehorigen Editor darunter; es ist immer nur ein Weg gleichzeitig aktiv.
 
-Wenn der Assistent im 2-Schritt (Plan-gesteuerten) Ablauf ausgefuhrt wird, wird der Domain-Schritt vollstandig weggelassen. Der Abschluss-Schritt stellt automatisch eine Workspace-Subdomain aus dem `display_name`-Wert bereit: Der Slug wird aus dem Anzeigenamen abgeleitet (mit Wiederholung-bei-Kollision-Suffixen bis zu 5 Versuche), und `activateSubdomain` registriert ihn als öffentliche Site-URL. Best-Effort: Eine Kollision oder ein Fehler wird protokolliert und blockiert den Assistenten nicht am Abschluss.
+**Subdomain (kostenlos):** der Benutzer wahlt einen Slug; eine TLD-Auswahl lasst zwischen `.mycompanydesk.nl` und `.mycompanydesk.com` wahlen. Der Slug ist aus dem rechtlichen KVK-Namen vorbefullt, wenn verfugbar (Kleinbuchstaben, Akzente entfernt, Nicht-ASCII-Zeichen entfernt, auf 63 Zeichen gekurzt), sodass die meisten Benutzer tippen-und-weitermachen konnen, ohne etwas einzugeben. Die Verfugbarkeit wird live mit einer Verzogerung von 350 ms gepruft, wahrend der Benutzer tippt. Beim Abschluss wird die Subdomain uber die Cloudflare-API bereitgestellt und die Unternehmenswebsite ist sofort erreichbar.
 
-**Eigene Domain:** der Benutzer gibt eine Domain ein, die er bereits besitzt. Beim Abschluss fuhrt der Assistent Folgendes aus:
+Wenn der Assistent im 2-Schritt (Plan-gesteuerten) Ablauf ausgefuhrt wird, wird der Domain-Schritt vollstandig weggelassen. Der Abschluss-Schritt stellt automatisch eine Workspace-Subdomain aus dem `display_name`-Wert bereit: Der Slug wird aus dem Anzeigenamen abgeleitet (mit Wiederholung-bei-Kollision-Suffixen bis zu 5 Versuche), und `activateSubdomain` registriert ihn als offentliche Site-URL. Best-Effort: Eine Kollision oder ein Fehler wird protokolliert und blockiert den Assistenten nicht am Abschluss.
 
-1. Fugt die Domain zur Domainliste des Workspace hinzu (keine Aktion, wenn sie bereits hinzugefugt wurde).
-2. Aktiviert automatisch den Posteingang darauf: erstellt `info@<domain>` als Standard-Postfach plus `support@`, `sales@` und `noreply@`-Aliase.
-3. Erstellt optional ein personliches Postfach (siehe unten).
+**Eigene Domain:** der Benutzer gibt eine Domain ein, die er bereits besitzt. Eine Live-Validierungs-Regex pruft das Format wahrend der Eingabe (`[a-z0-9][a-z0-9-]*(.[a-z0-9]([a-z0-9-]*[a-z0-9])?)+`). Beim Abschluss fugt der Assistent die Domain zur Domainliste des Workspace hinzu (keine Aktion, wenn sie bereits hinzugefugt wurde) und aktiviert automatisch den Posteingang: `info@<domain>` als Standard-Postfach plus `support@`, `sales@` und `noreply@`-Aliase. Der 409-bereits-vorhanden-Pfad von `apply.service` wird sauber behandelt.
 
-Wenn die Domain noch nicht auf die Nameserver von MCD zeigt, leitet der Abschluss zu `/workspace/organization/company/address` weiter, sodass der Benutzer sofort die DNS-Anweisungen und eine **Überprufen**-Schaltflache sieht. Andernfalls geht es zum Dashboard.
+Wenn die Domain noch nicht auf die Nameserver von MCD zeigt, leitet der Abschluss zu `/workspace/organization/company/address` weiter, sodass der Benutzer sofort die DNS-Anweisungen und eine **Uberprufen**-Schaltflache sieht. Andernfalls geht es zum Dashboard.
 
-### Personliche Postfach-Umschaltung
+**Domain registrieren:** bettet die live `DomainPurchaseCard` + `DomainClaimModal` aus der Einstellungsoberflache ein. Der Benutzer kann eine Domain suchen, Verfugbarkeit und Preis prufen und sie entweder uber OpenProvider kaufen oder als Founding Member kostenlos beanspruchen. Bei erfolgreicher Beanspruchung oder Kauf ist die Domain bereits server-seitig uber den `/api/domain-purchase`-Workflow mit dem Workspace verbunden, sodass der Assistent die Antwort als `mode='own'` mit dem registrierten Namen und `registered: true` speichert; `apply.service` behandelt dies als No-Op-Wiederhinzufugung. Ein grunes Erfolgsbanner zeigt den registrierten Domainnamen an und lasst den Benutzer fortfahren.
 
-Wenn **Eigene Domain** ausgewahlt ist, bietet eine Checkbox eine personliche Adresse an (z. B. `silvan@<domain>`). Der Standard-Lokalteil ist der Vorname des Benutzers, klein geschrieben und ASCII-bereinigt. Das Postfach wird mit `type: 'personal'` erstellt, sodass es eine eigene Thread-Liste erhalt, getrennt vom gemeinsamen `info@`-Postfach.
-
-Bei einem erneuten Durchlauf entfernt das Deaktivieren der Checkbox alle vorhandenen `type: 'personal'`-Postfacher fur diese Domain. Gemeinsame und benutzerdefinierte Postfacher bleiben unberuhrt.
+Wenn der Benutzer den Registrieren-Weg offnet, aber keinen Kauf abschliesst, wird der Schritt als ubersprungen markiert, damit der Assistent fortfahren kann. Der Benutzer kann spater uber `Unternehmen > Ihre eigene .com-Adresse` zuruckkehren, wann immer er bereit ist.
 
 ### Zuruckwechseln von einer eigenen Domain zu einer Subdomain
 
@@ -234,9 +230,9 @@ Siehe [Einstellungsübersicht](/de/settings/) fur die vollstandige Karte.
 
 ## Randfalle
 
-- **Einen Schritt uberspringen.** Weiter ist pro Schritt durch die mindestens erforderlichen Antworten gesteuert. Der Registerschritt hat keine Hürde; Domain erfordert einen gewahlten Pfad mit nicht-leerem Wert; Magie erfordert, dass Generieren ausgefuhrt wurde; Unternehmen und Überprufung haben ihre eigenen Hürden.
+- **Einen Schritt uberspringen.** Weiter ist pro Schritt durch die mindestens erforderlichen Antworten gesteuert. Der Registerschritt hat keine Hürde; Domain erfordert einen gewahlten Pfad mit nicht-leerem Wert, oder einen abgeschlossenen Kauf im Registrieren-Weg, oder das Ubersprungen-Flag; Magie erfordert, dass Generieren ausgefuhrt wurde; Unternehmen und Überprufung haben ihre eigenen Hürden.
 - **Schliessen mitten im Schritt.** Jede Antwort wird bei Änderung gespeichert, sodass der nachste Besuch dort fortgesetzt wird, wo der Benutzer aufgehort hat. Der Schrittindex wird ebenfalls gespeichert (`answers` und `currentStep` leben in derselben JSONB-Spalte).
-- **Meinungsanderung im Domain-Schritt.** Wechsel von `eigene` zu `subdomain` nach Eingabe einer Domain uberschreibt `answers.domain` auf `null`, bis der Benutzer einen Slug wahlt. Wechsel zu einer Subdomain, wenn bereits eine eigene Domain angehangt ist, zeigt eine Vorabwarnung.
+- **Meinungsanderung im Domain-Schritt.** Wechsel von `eigene` zu `subdomain` nach Eingabe einer Domain uberschreibt `answers.domain` auf `null`, bis der Benutzer einen Slug wahlt. Wechsel zum Registrieren-Weg speichert eine Ubersprungen-Antwort, sodass eine neue Anmeldung nicht blockiert wird, wenn der Benutzer Registrieren offnet, aber den Kauf verschiebt. Wechsel zu einer Subdomain, wenn bereits eine eigene Domain angehangt ist, zeigt eine Vorabwarnung.
 - **Logo-Extraktion fehlgeschlagen.** Überwiegend weisse Logos und Nur-SVG-Eingaben, die `sharp` nicht rastern kann, geben `color: null` zuruck. Der Gemini-Markenfarbvorschlag wird dann verwendet.
 - **Domain bereits bei eigene-Domain-Abschluss hinzugefugt.** Ein 409 von `addDomain` fallt auf die bestehende Zeile zuruck, sodass der Posteingang-Aktivierungsschritt trotzdem ausgefuhrt wird.
 - **Personliches Postfach existiert bereits.** Ein 409 von `createMailbox` wird als Erfolg behandelt.
