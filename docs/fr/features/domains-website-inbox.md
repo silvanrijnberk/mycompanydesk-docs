@@ -113,15 +113,22 @@ Colonnes notables que l'application lit :
 
 #### Acheter ou reclamer un domaine
 
-La carte d'achat de domaine (`DomainPurchaseCard.vue`, `domain-purchase.service.ts`) est la premiere carte sur la page des parametres Domaines. Elle apparait lorsque l'espace de travail n'a pas encore de domaine personnalise actif. La carte permet a l'utilisateur de choisir et d'acquerir un domaine via deux chemins :
+La carte d'achat de domaine (`DomainPurchaseCard.vue`, `domain-purchase.service.ts`) est la premiere carte sur la page des parametres Domaines. Elle apparait lorsque l'espace de travail n'a pas encore de domaine personnalise actif. La carte permet a l'utilisateur de choisir et d'acquerir un domaine via deux chemins, qui ouvrent tous deux un modal d'achat en deux etapes (`DomainClaimModal.vue`). La premiere etape collecte les donnees du titulaire (requises par le registrar pour le WHOIS). La deuxieme etape gere le paiement ou la soumission :
 
-- **Acheter** -- Achat payant via OpenProvider. L'utilisateur saisit un nom de domaine, la carte appelle `GET /api/domain-purchase/quote` pour verifier la disponibilite et le prix aupres de l'API d'OpenProvider, puis ouvre un flux d'achat avec Stripe Elements pour collecter le paiement et les donnees du titulaire. Une fois le paiement termine, la plateforme enregistre le domaine chez OpenProvider et cree la ligne `domains` en mode nameserver, reliee a Cloudflare.
-- **Reclamation gratuite Founder** -- Les Founding Members eligibles peuvent reclamer gratuitement un domaine `.nl`. La carte appelle `GET /api/domain-purchase/founder/eligibility` pour verifier si l'espace de travail remplit toutes les conditions (statut Founding Member, KVK lie, age du compte, contenu du site, places disponibles, et domaine correspondant au nom KVK). Si eligible, l'utilisateur peut reclamer le domaine via un module dedie. La plateforme prend en charge les frais d'enregistrement de la premiere annee ; le renouvellement annuel est couvert par MyCompanyDesk pour la duree de vie de l'espace de travail.
+- **Acheter** -- Achat payant via OpenProvider. L'utilisateur saisit un nom de domaine, la carte appelle `GET /api/domain-purchase/quote` pour verifier la disponibilite et le prix, puis ouvre le modal d'achat. Apres avoir saisi les donnees du titulaire, le modal appelle `POST /api/domain-purchase/checkout-session` pour creer une session de paiement Stripe et affiche Stripe Embedded Checkout pour le paiement. Une fois le paiement termine, `POST /api/domain-purchase/finalize` enregistre le domaine chez OpenProvider et cree la ligne `domains` en mode nameserver, reliee a Cloudflare.
+- **Reclamation gratuite** -- Les Founding Members eligibles peuvent reclamer gratuitement un domaine `.nl`. La carte appelle `GET /api/domain-purchase/founder/eligibility` pour verifier le niveau de reclamation (`founder` ou `trial`) et le statut des conditions. Le modal collecte les donnees du titulaire et appelle `POST /api/domain-purchase/founder/claim` a l'envoi. La plateforme prend en charge les frais d'enregistrement de la premiere annee.
+
+Les reclamations Founder ont desormais deux niveaux pour le renouvellement :
+
+- **Niveau Founder** -- L'espace de travail est un Founding Member avec renouvellement gratuit a vie. Aucun moyen de paiement requis.
+- **Niveau Trial** -- L'espace de travail est en periode d'essai. La premiere annee est gratuite, et l'utilisateur peut optionnellement enregistrer une carte via Stripe SetupIntent dans le modal pour le renouvellement automatique l'annee suivante. Sans carte enregistree, l'utilisateur recoit un rappel a l'echeance du renouvellement.
+
+Le point de terminaison d'eligibilite (`GET /api/domain-purchase/founder/eligibility`) renvoie desormais un champ `tier` (`founder` | `trial` | `paid` | `free`) et `founderSlotsRemaining` en plus des conditions existantes. La limite de 50 places ne s'applique qu'aux reclamations de niveau Founder ; les reclamations de niveau Trial ne sont pas comptees dans ce plafond.
 
 L'eligibilite Founder est determinee par un ensemble de conditions verifiees cote serveur dans `founder-domain-claim.service.js` :
 
 - **Statut Founding Member** -- l'espace de travail doit avoir le drapeau Founding Member.
-- **Places de domaine gratuit** limitees a 50 pour l'ensemble des Founding Members.
+- **Places de domaine gratuit** limitees a 50 pour les reclamations de niveau Founder. Les reclamations Trial ne comptent pas.
 - **KVK requis** -- l'espace de travail doit avoir un numero KVK lie.
 - **Le domaine doit être `.nl`** -- le programme gratuit ne concerne que l'extension NL.
 - **Le domaine doit correspondre au nom KVK** -- le domaine doit correspondre a la raison sociale ou a un nom commercial.

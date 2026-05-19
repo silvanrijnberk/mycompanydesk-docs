@@ -113,15 +113,22 @@ Notable columns the app reads from:
 
 #### Buy or claim a domain
 
-The domain purchase card (`DomainPurchaseCard.vue`, `domain-purchase.service.ts`) is the first card on the Domains settings page. It appears when the workspace has no active custom domain yet. The card lets the user pick and acquire a domain through two paths:
+The domain purchase card (`DomainPurchaseCard.vue`, `domain-purchase.service.ts`) is the first card on the Domains settings page. It appears when the workspace has no active custom domain yet. The card lets the user pick and acquire a domain through two paths, both opening a dedicated two-step purchase modal (`DomainClaimModal.vue`). Step 1 collects registrant details (the data required by the registrar for WHOIS). Step 2 handles payment or claim submission:
 
-- **Buy** -- Paid purchase via OpenProvider. The user enters a domain name, the card calls `GET /api/domain-purchase/quote` to check availability and pricing with OpenProvider's API, and then opens a purchase flow powered by Stripe Elements to collect payment and registrant details. Once the payment is complete, the platform registers the domain with OpenProvider and creates the `domains` row in nameserver mode, wired to Cloudflare.
-- **Founder free claim** -- Eligible Founding Members can claim one `.nl` domain free of charge. The card calls `GET /api/domain-purchase/founder/eligibility` to check whether the workspace passes all gates (Founding Member status, KVK linked, account age, site content, slot availability, and domain matching the KVK name). If eligible, the user can claim the domain through a dedicated modal. The platform pays the first-year registration fee; the annual renewal is covered by MyCompanyDesk for the life of the workspace.
+- **Buy** -- Paid purchase via OpenProvider. The user enters a domain name, the card calls `GET /api/domain-purchase/quote` to check availability and pricing, and then opens the purchase modal. After collecting the registrant details, the modal calls `POST /api/domain-purchase/checkout-session` to create a Stripe payment session and mounts Stripe Embedded Checkout for the payment. Once complete, `POST /api/domain-purchase/finalize` registers the domain with OpenProvider and creates the `domains` row in nameserver mode, wired to Cloudflare.
+- **Free claim** -- Eligible Founding Members can claim one `.nl` domain free of charge. The card calls `GET /api/domain-purchase/founder/eligibility` to check the workspace's claim tier (`founder` or `trial`) and gate status. The modal collects the registrant details, and on submit calls `POST /api/domain-purchase/founder/claim`. The platform pays the first-year registration fee.
+
+Founder claims now have two tiers for renewal:
+
+- **Founder tier** -- The workspace is a Founding Member with full lifetime-free renewal. No payment method is required.
+- **Trial tier** -- The workspace is on a trial. The first year is free, and the user can optionally save a card via Stripe SetupIntent in the modal for automatic renewal next year. Without a saved card, the user receives a reminder when renewal is due.
+
+The eligibility endpoint (`GET /api/domain-purchase/founder/eligibility`) now returns a `tier` field (`founder` | `trial` | `paid` | `free`) and `founderSlotsRemaining` alongside the existing gates. The 50-slot cap applies only to Founder-tier claims; trial-tier claims do not count against the Founder cap.
 
 Founder eligibility is determined by a set of gates checked server-side in `founder-domain-claim.service.js`:
 
 - **Founding Member status** -- the workspace must have the Founding Member flag.
-- **Free-domain slots** capped at 50 across all Founding Members.
+- **Free-domain slots** capped at 50 across all Founding Members for Founder-tier claims. Trial-tier claims are not counted against this cap.
 - **KVK required** -- the workspace must have a linked KVK number.
 - **Domain must be `.nl`** -- the free program only covers the NL TLD.
 - **Domain must match the KVK name** -- the domain must correspond to the registered legal name or a trade name.

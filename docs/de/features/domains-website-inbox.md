@@ -113,15 +113,22 @@ Wichtige Spalten, die die App liest:
 
 #### Domain kaufen oder beanspruchen
 
-Die Domain-Kaufkarte (`DomainPurchaseCard.vue`, `domain-purchase.service.ts`) ist die erste Karte auf der Domains-Einstellungsseite. Sie erscheint, wenn der Workspace noch keine aktive eigene Domain hat. Die Karte erlaubt es, eine Domain auszuwählen und über zwei Wege zu erwerben:
+Die Domain-Kaufkarte (`DomainPurchaseCard.vue`, `domain-purchase.service.ts`) ist die erste Karte auf der Domains-Einstellungsseite. Sie erscheint, wenn der Workspace noch keine aktive eigene Domain hat. Die Karte erlaubt es, eine Domain auszuwählen und über zwei Wege zu erwerben, die beide ein eigenes Zwei-Schritte-Kaufmodal öffnen (`DomainClaimModal.vue`). Schritt 1 sammelt die Registrantdaten (die vom Registrar für WHOIS benötigten Angaben). Schritt 2 bearbeitet die Zahlung oder Einreichung:
 
-- **Kaufen** -- Bezahlter Kauf über OpenProvider. Der Benutzer gibt einen Domainnamen ein, die Karte ruft `GET /api/domain-purchase/quote` auf, um Verfügbarkeit und Preisgestaltung über die API von OpenProvider zu prüfen, und öffnet dann einen Kaufprozess mit Stripe Elements, um Zahlung und Registrantdaten zu sammeln. Sobald die Zahlung abgeschlossen ist, registriert die Plattform die Domain bei OpenProvider und legt die `domains`-Zeile im Nameserver-Modus an, verbunden mit Cloudflare.
-- **Founder-Gratis-Claim** -- Berechtigte Founding Members können eine `.nl`-Domain kostenlos beanspruchen. Die Karte ruft `GET /api/domain-purchase/founder/eligibility` auf, um zu prüfen, ob der Workspace alle Bedingungen erfüllt (Founding-Member-Status, KVK verknüpft, Kontoalter, Website-Inhalt, Slotverfügbarkeit und Domain muss mit dem KVK-Namen übereinstimmen). Ist die Berechtigung gegeben, kann der Benutzer die Domain über ein separates Modal beanspruchen. Die Plattform trägt die Registrierungsgebühr für das erste Jahr; die jährliche Verlängerung wird von MyCompanyDesk für die Lebensdauer des Workspace übernommen.
+- **Kaufen** -- Bezahlter Kauf über OpenProvider. Der Benutzer gibt einen Domainnamen ein, die Karte ruft `GET /api/domain-purchase/quote` auf, um Verfügbarkeit und Preisgestaltung zu prüfen, und öffnet dann das Kaufmodal. Nach Erfassung der Registrantdaten ruft das Modal `POST /api/domain-purchase/checkout-session` auf, um eine Stripe-Zahlungssitzung zu erstellen, und lädt Stripe Embedded Checkout für die Zahlung. Nach Abschluss registriert `POST /api/domain-purchase/finalize` die Domain bei OpenProvider und legt die `domains`-Zeile im Nameserver-Modus an, verbunden mit Cloudflare.
+- **Gratis-Claim** -- Berechtigte Founding Members können eine `.nl`-Domain kostenlos beanspruchen. Die Karte ruft `GET /api/domain-purchase/founder/eligibility` auf, um den Claim-Tier des Workspace (`founder` oder `trial`) und den Gate-Status zu prüfen. Das Modal sammelt die Registrantdaten und ruft beim Absenden `POST /api/domain-purchase/founder/claim` auf. Die Plattform trägt die Registrierungsgebühr für das erste Jahr.
+
+Founder-Claims haben jetzt zwei Stufen für die Verlängerung:
+
+- **Founder-Stufe** -- Der Workspace ist ein Founding Member mit vollständiger lebenslanger Gratis-Verlängerung. Keine Zahlungsmethode erforderlich.
+- **Trial-Stufe** -- Der Workspace befindet sich in einer Testphase. Das erste Jahr ist kostenlos, und der Benutzer kann optional eine Karte über Stripe SetupIntent im Modal für die automatische Verlängerung im nächsten Jahr hinterlegen. Ohne hinterlegte Karte erhält der Benutzer eine Erinnerung, wenn die Verlängerung fällig ist.
+
+Der Berechtigungs-Endpunkt (`GET /api/domain-purchase/founder/eligibility`) liefert jetzt ein `tier`-Feld (`founder` | `trial` | `paid` | `free`) und `founderSlotsRemaining` neben den bestehenden Gates. Die Begrenzung auf 50 Plätze gilt nur für Founder-Claims; Trial-Claims zählen nicht zum Founder-Kontingent.
 
 Die Founder-Berechtigung wird durch server-seitig in `founder-domain-claim.service.js` geprüfte Bedingungen bestimmt:
 
 - **Founding-Member-Status** -- der Workspace muss das Founding-Member-Flag haben.
-- **Gratis-Domain-Plätze** sind auf 50 über alle Founding Members begrenzt.
+- **Gratis-Domain-Plätze** für Founder-Claims auf 50 begrenzt. Trial-Claims zählen nicht dazu.
 - **KVK erforderlich** -- der Workspace muss eine KVK-Nummer verknüpft haben.
 - **Domain muss `.nl` sein** -- das Gratisprogramm gilt nur für die NL-Endung.
 - **Domain muss mit dem KVK-Namen übereinstimmen** -- die Domain muss dem registrierten Firmennamen oder einem Handelsnamen entsprechen.
