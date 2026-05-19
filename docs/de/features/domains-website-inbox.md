@@ -78,6 +78,7 @@ Die Seite ist in zwei Bereiche unterteilt:
 
 Was Sie auf der Seite tun können:
 
+- **Domain kaufen oder beanspruchen** über die Domain-Kaufkarte. Geben Sie einen Domainnamen ein, prüfen Sie die Verfügbarkeit über OpenProvider, und kaufen Sie die Domain oder beanspruchen Sie sie kostenlos, wenn Sie als Founding Member berechtigt sind.
 - **Domain hinzufügen** (Nameserver- oder CNAME-Modus) über eine eigene Karte, die immer sichtbar ist.
 - **Verifizieren** einer ausstehenden Domain.
 - **DNS-Records verwalten** für die ausgewählte Domain -- A, AAAA, CNAME, MX, TXT, SRV, CAA, NS. CRUD erfolgt über Cloudflare via API.
@@ -103,7 +104,41 @@ Wichtige Spalten, die die App liest:
 | `email_routing_enabled` | `true`, sobald die Cloudflare Email Routing-Zone aktiviert ist. |
 | `inbox_enabled`, `inbox_subdomain_tag`, `inbox_dkim_ready` | Von `quickEnableInbox` gesetzt. Die E-Mail-Sende-Subdomain (`mail.acme.de` standardmäßig) und der DKIM-Bereitstellungsstatus. |
 | `business_page_enabled`, `portal_subdomain_enabled` | Bestimmen, welcher Hostname die öffentliche Website bedient. |
-| `verified_at` | Wird bei erfolgreicher Verifizierung gesetzt. |
+| `verified_at` | Wird bei erfolgreicher Verifizierung gesetzt.
+| `registrar` | Der Registrar-Dienst, derzeit `openprovider` für Domains, die über den Domain-Kaufflow erworben wurden.
+| `registrar_domain_id` | Die registrar-interne Kennung für gekaufte Domains.
+| `purchase_price_period` | Abrechnungszeitraum für gekaufte Domains (`yearly`).
+| `purchase_intent_id` | Verweist auf die `domain_purchase_intents`-Zeile für bezahlte Käufe.
+| `founder_claim_id` | Verweist auf die `founder_domain_claims`-Zeile für Founder-Gratis-Claims.
+
+#### Domain kaufen oder beanspruchen
+
+Die Domain-Kaufkarte (`DomainPurchaseCard.vue`, `domain-purchase.service.ts`) ist die erste Karte auf der Domains-Einstellungsseite. Sie erscheint, wenn der Workspace noch keine aktive eigene Domain hat. Die Karte erlaubt es, eine Domain auszuwählen und über zwei Wege zu erwerben:
+
+- **Kaufen** -- Bezahlter Kauf über OpenProvider. Der Benutzer gibt einen Domainnamen ein, die Karte ruft `GET /api/domain-purchase/quote` auf, um Verfügbarkeit und Preisgestaltung über die API von OpenProvider zu prüfen, und öffnet dann einen Kaufprozess mit Stripe Elements, um Zahlung und Registrantdaten zu sammeln. Sobald die Zahlung abgeschlossen ist, registriert die Plattform die Domain bei OpenProvider und legt die `domains`-Zeile im Nameserver-Modus an, verbunden mit Cloudflare.
+- **Founder-Gratis-Claim** -- Berechtigte Founding Members können eine `.nl`-Domain kostenlos beanspruchen. Die Karte ruft `GET /api/domain-purchase/founder/eligibility` auf, um zu prüfen, ob der Workspace alle Bedingungen erfüllt (Founding-Member-Status, KVK verknüpft, Kontoalter, Website-Inhalt, Slotverfügbarkeit und Domain muss mit dem KVK-Namen übereinstimmen). Ist die Berechtigung gegeben, kann der Benutzer die Domain über ein separates Modal beanspruchen. Die Plattform trägt die Registrierungsgebühr für das erste Jahr; die jährliche Verlängerung wird von MyCompanyDesk für die Lebensdauer des Workspace übernommen.
+
+Die Founder-Berechtigung wird durch server-seitig in `founder-domain-claim.service.js` geprüfte Bedingungen bestimmt:
+
+- **Founding-Member-Status** -- der Workspace muss das Founding-Member-Flag haben.
+- **Gratis-Domain-Plätze** sind auf 50 über alle Founding Members begrenzt.
+- **KVK erforderlich** -- der Workspace muss eine KVK-Nummer verknüpft haben.
+- **Domain muss `.nl` sein** -- das Gratisprogramm gilt nur für die NL-Endung.
+- **Domain muss mit dem KVK-Namen übereinstimmen** -- die Domain muss dem registrierten Firmennamen oder einem Handelsnamen entsprechen.
+- **Kontoalter** -- das Konto muss mindestens 14 Tage alt sein.
+- **Website muss veröffentlicht sein** -- die öffentliche Unternehmensseite des Workspace muss live sein.
+- **Mindestinhalt der Website** -- die Website muss mindestens 3 Absätze enthalten.
+- **Eine Gratis-Domain pro KVK** -- eine KVK-Nummer kann nur eine Gratis-Domain beanspruchen.
+
+Wenn eine Bedingung nicht erfüllt ist, listet die Karte die verbleibenden Anforderungen auf, damit der Benutzer sieht, was noch zum Freischalten der Gratis-Claim fehlt.
+
+Die unterstützten TLDs für den Kauf sind `.nl`, `.eu`, `.com`, `.net` und `.org`. Andere TLDs zeigen eine Meldung, dass sie noch nicht unterstützt werden, mit dem Hinweis, die Domain woanders zu kaufen und über den bestehenden BYO-Pfad hinzuzufügen.
+
+Neue Datenbanktabellen, die mit diesem Feature eingeführt wurden:
+
+- `domain_purchase_intents` -- verfolgt bezahlte Kaufabsichten mit Stripe PaymentIntent-IDs, Registrantdaten und Kaufstatus.
+- `founder_domain_claims` -- verfolgt Founder-Gratis-Claims mit Berechtigungs-Snapshots, Abuse-Scoring und Claim-Status.
+- `domain_registrar_columns`-Migration fügt registrar-bezogene Spalten zur bestehenden `domains`-Tabelle hinzu.
 
 ### Gehostete Website
 
