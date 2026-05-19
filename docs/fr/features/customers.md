@@ -52,14 +52,14 @@ La page de detail du client affiche :
 
 Une banniere d'avertissement apparait en haut de la page de detail du client lorsque l'adresse e-mail du client a recemment rebondi (definitivement non delivrable) ou genere une plainte pour spam. La banniere reste silencieuse lorsque l'adresse est en bon etat.
 
-- **Rebond** — affiche une banniere rouge avec la date du dernier echec de livraison et le motif de refus de l'operateur. Si aucun motif specifique n'a ete donne, une note generique s'affiche a la place.
-- **Plainte** — affiche une banniere jaune avertissant que le client a marque votre e-mail comme spam. Le message deconseille d'envoyer d'autres messages a cette adresse sans avoir pris contact au prealable.
+- **Rebond**, affiche une banniere rouge avec la date du dernier echec de livraison et le motif de refus de l'operateur. Si aucun motif specifique n'a ete donne, une note generique s'affiche a la place.
+- **Plainte**, affiche une banniere jaune avertissant que le client a marque votre e-mail comme spam. Le message deconseille d'envoyer d'autres messages a cette adresse sans avoir pris contact au prealable.
 
 Ces informations proviennent des evenements de l'operateur et du statut de livraison des messages sortants, vous aidant a reperer les problemes avant d'envoyer la prochaine facture ou le prochain devis.
 
 ## Actions
 
-- **Modifier** — Mettre a jour les informations du client
+- **Modifier**, mettre a jour les informations du client
 - **Creer une facture** -- Demarrer une nouvelle facture pre-remplie avec ce client
 - **Creer un devis** -- Demarrer un nouveau devis pour ce client
 - **Archiver** -- Deplacer vers les archives (restauration possible)
