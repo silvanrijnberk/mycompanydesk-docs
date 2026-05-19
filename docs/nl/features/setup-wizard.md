@@ -80,7 +80,7 @@ Voor ondersteunde landen zoekt de gebruiker op bedrijfsnaam. De backend roept de
 
 Voor NL-werkruimtes is de KvK-opzoeking een tweestapsproces:
 
-1. **Typeahead** — de gebruiker zoekt op bedrijfsnaam. Het `zoeken`-endpoint (gratis) retourneert overeenkomende vermeldingen. Dit is de autocomplete-stap die de bestaande `ok` / `not-found`-antwoorden aanstuurt.
+1. **Typeahead** — de gebruiker zoekt op bedrijfsnaam. Het `zoeken`-endpoint (gratis) retourneert overeenkomende vermeldingen. Dit is de autocomplete-stap die de bestaande `ok` / `not-found`-antwoorden aanstuurt. Als de zoekopdracht nul treffers oplevert, toont de UI een inline leeg-resultaatpaneel (titel, uitleg, en een "vul handmatig in"-knop die het handmatige formulier alvast vult met wat de gebruiker typte). Dit is gebruikelijk omdat de gratis OpenKVK-laag veel jonge bedrijven mist.
 2. **Basisprofiel** — zodra een match is gekozen, roept de wizard het KvK Basisprofiel-detailendpoint aan. Dit is een betaalde aanroep (EUR 0,02, 24u gecached per KVK-nummer). Het retourneert het volledige profiel: `legalName`, `statutaireNaam`, `tradeNames` (alle geregistreerde handelsnamen, gesorteerd), `rsin`, `legalForm`, `dateFounded`, bezoek- en postadressen, SBI-codes met primair-vlag, `employeeCount` en `indNonMailing` (geen-post-vlag).
 
 De Basisprofiel-aanroep wordt beveiligd door `KVK_BASISPROFIEL_ENABLED`. Als de vlag uit staat, valt de wizard terug op het gratis `zoeken`-resultaat (dezelfde `ok`-velden als hierboven). Als de vlag aan staat, verrijken de Basisprofielgegevens de `answers.registry`-payload en toont de Controle-stap elk veld dat naar de bedrijfsrij wordt geschreven.

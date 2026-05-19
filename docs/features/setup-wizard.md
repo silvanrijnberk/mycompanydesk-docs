@@ -80,7 +80,7 @@ For supported countries the user types a company name to search. The backend cal
 
 For NL workspaces, the KvK lookup is a two-step flow:
 
-1. **Typeahead** — the user searches by company name. The `zoeken` endpoint (free) returns matching entries. This is the autocomplete step that powers the existing `ok` / `not-found` responses.
+1. **Typeahead** — the user searches by company name. The `zoeken` endpoint (free) returns matching entries. This is the autocomplete step that powers the existing `ok` / `not-found` responses. When the search returns zero hits, the UI shows an inline empty-state panel (title, explanation, and a "fill manually" CTA that seeds the manual form with what the user already typed). This is common because OpenKVK's free tier misses many young businesses.
 2. **Basisprofiel** — once a match is picked, the wizard calls the KvK Basisprofiel detail endpoint. This is a paid call (EUR 0.02, 24h-cached per KVK number). It returns the full profile: `legalName`, `statutaireNaam` (statutory name), `tradeNames` (all registered trade names, ordered), `rsin`, `legalForm`, `dateFounded`, visiting and postal addresses, SBI codes with primary-flag, `employeeCount`, and `indNonMailing` (do-not-mail flag).
 
 The Basisprofiel call is gated behind `KVK_BASISPROFIEL_ENABLED`. When the flag is off, the wizard falls back to the free `zoeken`-only result (the same `ok` fields listed above). When the flag is on, the Basisprofiel data enriches the `answers.registry` payload and the Review step shows every field that will be written to the company row.
