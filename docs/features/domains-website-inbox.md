@@ -124,9 +124,9 @@ Domain renewal follows three paths depending on how the domain was acquired:
 
 Transferring a domain registered through MyCompanyDesk to another registrar has permanent consequences, enforced by the weekly OpenProvider status sync:
 
-- **Founder-tier domains**: The Founder claim is deleted, and the workspace's internal lifetime-Pro subscription is cancelled. The workspace becomes a regular paid customer. This is irreversible — the Founder status cannot be reclaimed.
+- **Founder-tier domains**: The Founder claim is deleted, and the workspace's internal lifetime-Pro subscription is cancelled. The workspace becomes a regular paid customer. This is irreversible. The Founder status cannot be reclaimed.
 - **Trial-tier / Pro-bundled domains**: The bundled-free status is lost. The workspace can never claim another free domain (already enforced via the retained-claims list).
-- **Paid domains**: No perk revocation — the domain simply moves to `status = 'transferred_out'`.
+- **Paid domains**: No perk revocation. The domain simply moves to `status = 'transferred_out'`.
 
 The claim modal warns about these consequences before a free-domain claim is submitted, and requires explicit acknowledgement from the user. Revocation details are recorded in the `domain_perk_revocations` audit table for support reference.
 

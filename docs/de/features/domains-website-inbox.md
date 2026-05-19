@@ -124,9 +124,9 @@ Die Domain-Verlängerung folgt drei Pfaden, je nachdem, wie die Domain erworben 
 
 Die Übertragung einer über MyCompanyDesk registrierten Domain zu einem anderen Registrar hat dauerhafte Konsequenzen, die durch den wöchentlichen OpenProvider-Statusabgleich durchgesetzt werden:
 
-- **Founder-Domains**: Der Founder-Claim wird gelöscht und das interne lebenslange Pro-Abonnement des Workspace wird gekündigt. Der Workspace wird zu einem normalen zahlenden Kunden. Dies ist unumkehrbar — der Founder-Status kann nicht erneut beansprucht werden.
+- **Founder-Domains**: Der Founder-Claim wird gelöscht und das interne lebenslange Pro-Abonnement des Workspace wird gekündigt. Der Workspace wird zu einem normalen zahlenden Kunden. Dies ist unumkehrbar. Der Founder-Status kann nicht erneut beansprucht werden.
 - **Trial- / Pro-gebündelte Domains**: Der gebündelte Gratis-Status geht verloren. Der Workspace kann nie wieder eine andere Gratis-Domain beanspruchen (bereits über die Retained-Claims-Liste durchgesetzt).
-- **Bezahlte Domains**: Kein Vorteilsentzug — die Domain wechselt einfach zu `status = 'transferred_out'`.
+- **Bezahlte Domains**: Kein Vorteilsentzug. Die Domain wechselt einfach zu `status = 'transferred_out'`.
 
 Das Claim-Modal warnt vor diesen Konsequenzen, bevor ein Gratis-Domain-Claim eingereicht wird, und verlangt eine ausdrückliche Bestätigung des Benutzers. Widerrufsdetails werden in der `domain_perk_revocations`-Audit-Tabelle für Support-Zwecke festgehalten.
 
