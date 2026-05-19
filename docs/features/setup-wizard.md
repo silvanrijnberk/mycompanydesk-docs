@@ -104,6 +104,8 @@ Pick the web address customers will see on the public business page and (where a
 
 **Subdomain (default):** the user picks a slug; the wizard pins it to `<slug>.mycompanydesk.nl` for `NL` workspaces and `<slug>.mycompanydesk.com` everywhere else. The slug is pre-filled from `businessName` (lowercase, ASCII, max 32 chars). On Finish the subdomain is provisioned via the Cloudflare API and the company's website becomes immediately reachable.
 
+When the wizard is run in the 2-step (plan-gated) flow, the Domain step is omitted entirely. The Finish step auto-provisions a workspace subdomain from the `display_name` value: the slug is derived from the display name (with retry-on-collision suffixes up to 5 attempts), and `activateSubdomain` registers it as the public site URL. Best-effort: a collision or failure is logged and does not block the wizard from finishing.
+
 **Own domain:** the user types a domain they already own. On Finish the wizard:
 
 1. Adds the domain to the workspace's domain list (no-op if it was already added).

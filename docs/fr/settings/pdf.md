@@ -60,6 +60,8 @@ Les PDF sont generes dans la langue de la facture. Si vous envoyez une facture e
 
 Langues PDF prises en charge : anglais, neerlandais, allemand, francais.
 
+La langue PDF par defaut pour les nouveaux espaces de travail de la plateforme NL est le neerlandais (`nl`). Ceci est applique lorsque l'integration se termine via l'assistant (a partir du parametre pays) et via la valeur par defaut de la base de donnees lorsqu'aucune preference de langue explicite n'a ete enregistree. Les espaces de travail enregistres hors des Pays-Bas recoivent l'anglais par defaut.
+
 ## Exigences pour le logo
 
 Pour de meilleurs resultats :

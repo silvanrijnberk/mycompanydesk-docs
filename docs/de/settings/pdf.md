@@ -60,7 +60,7 @@ PDFs werden in der Sprache der Rechnung generiert. Wenn Sie eine Rechnung auf De
 
 Unterstützte PDF-Sprachen: Englisch, Niederländisch, Deutsch, Französisch.
 
-## Logo-Anforderungen
+Die Standard-PDF-Sprache für neue NL-Plattform-Workspaces ist Niederländisch (`nl`). Dies wird beim Abschluss des Onboardings über den Assistenten (aus der Landeseinstellung) und über den Datenbank-Standard angewendet, wenn keine explizite Spracheinstellung gespeichert wurde. Außerhalb der Niederlande registrierte Workspaces erhalten standardmäßig Englisch.## Logo-Anforderungen
 
 Für beste Ergebnisse:
 

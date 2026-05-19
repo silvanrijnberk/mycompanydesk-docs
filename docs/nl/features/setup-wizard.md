@@ -83,6 +83,8 @@ Voor NL-werkruimtes is de KvK-opzoeking een tweestapsproces:
 1. **Typeahead** — de gebruiker zoekt op bedrijfsnaam. Het `zoeken`-endpoint (gratis) retourneert overeenkomende vermeldingen. Dit is de autocomplete-stap die de bestaande `ok` / `not-found`-antwoorden aanstuurt. Als de zoekopdracht nul treffers oplevert, toont de UI een inline leeg-resultaatpaneel (titel, uitleg, en een "vul handmatig in"-knop die het handmatige formulier alvast vult met wat de gebruiker typte). Dit is gebruikelijk omdat de gratis OpenKVK-laag veel jonge bedrijven mist.
 2. **Basisprofiel** — zodra een match is gekozen, roept de wizard het KvK Basisprofiel-detailendpoint aan. Dit is een betaalde aanroep (EUR 0,02, 24u gecached per KVK-nummer). Het retourneert het volledige profiel: `legalName`, `statutaireNaam`, `tradeNames` (alle geregistreerde handelsnamen, gesorteerd), `rsin`, `legalForm`, `dateFounded`, bezoek- en postadressen, SBI-codes met primair-vlag, `employeeCount` en `indNonMailing` (geen-post-vlag).
 
+Wanneer een match wordt gekozen (zoekmodus), roept de frontend direct `PUT /company-settings/company` aan met de `name` van de match als `display_name`, het `kvkNumber` als `chamber`, `city`, en `country` hardcoded op `"NL"`. Dit schrijft de klantgerichte weergavenaam direct weg, zodat de dashboardbegroeting en de ge-seede site de juiste naam gebruiken vanaf het moment dat de gebruiker op de match klikt, in plaats van te wachten op de Voltooien-stap van de wizard.
+
 Er zijn twee onafhankelijke functievlaggen voor NL KVK-opzoekingen:
 
 - `KVK_API_KEY` (env-var op de API-container): als deze ontbreekt, wordt het zoekvak helemaal niet getoond en start de wizard op die stap standaard met handmatige invoer. De gratis OpenKVK-laag alleen is te beperkt (~2% trefferkans, mist bijna elke nieuwe inschrijving). De vlag schakelt automatisch om zodra de sleutel is ingesteld.
@@ -91,6 +93,8 @@ Er zijn twee onafhankelijke functievlaggen voor NL KVK-opzoekingen:
 ### Handmatige modus
 
 Gebruiker vult `chosen` (het registratienummer) in, en optioneel `legalName`, `address`, `sector`. Alle vier velden zijn optioneel in deze modus.
+
+Bij opslaan roept de frontend `PUT /company-settings/company` aan met de handmatig ingevulde waarden plus `display_name` ingesteld op de hier getypte bedrijfsnaam en `country` hardcoded op `"NL"`. Dit schrijft zowel de klantgerichte naam als het land direct weg, in plaats van te wachten op de Voltooien-stap. De apply-logica van de Voltooien-stap leest nog steeds `answers.kvk` voor het legacy registerpad, maar het nieuwe 2-staps wizardpad leest `answers.kvk.legalName` en `answers.kvk.kvkNumber` direct, dus de inline PUT tijdens deze stap is de gezaghebbende schrijfactie.
 
 ### Overslaan-modus
 
@@ -103,6 +107,8 @@ Kies het webadres dat klanten zien op de openbare bedrijfspagina en (waar van to
 ### Twee routes
 
 **Subdomein (standaard):** de gebruiker kiest een slug; de wizard koppelt deze aan `<slug>.mycompanydesk.nl` voor `NL`-werkruimtes en `<slug>.mycompanydesk.com` overal elders. De slug is vooringevuld vanuit `businessName` (kleine letters, ASCII, max 32 tekens). Bij Voltooien wordt het subdomein via de Cloudflare API aangemaakt en is de website van het bedrijf direct bereikbaar.
+
+Wanneer de wizard wordt uitgevoerd in de 2-staps (plan-gestuurde) flow, wordt de Domein-stap volledig overgeslagen. De Voltooien-stap maakt automatisch een werkruimte-subdomein aan op basis van de `display_name`-waarde: de slug wordt afgeleid van de weergavenaam (met opnieuw-proberen-bij-botsing-achtervoegsels tot 5 pogingen), en `activateSubdomain` registreert deze als de openbare site-URL. Best-effort: een botsing of fout wordt gelogd en blokkeert de wizard niet om te voltooien.
 
 **Eigen domein:** de gebruiker typt een domein dat hij al bezit. Bij Voltooien doet de wizard:
 
@@ -163,7 +169,10 @@ De **Voltooien**-knop in de footer roept `/onboarding/complete` aan. De huidige 
 **Altijd overschrijven** wanneer het wizard-antwoord een niet-lege string is en afwijkt van de huidige waarde:
 
 - `display_name`, `company_name`
-- `country`
+- `country` (valt terug op `"NL"` als `answers.country` niet is ingesteld , het 2-staps wizardpad vraagt geen land, dus NL is de impliciete standaard)
+- `chamber` (via `answers.kvk.kvkNumber` indien aanwezig)
+
+Als de 2-staps wizard geen domein-antwoord heeft vastgelegd, maakt Finish automatisch een werkruimte-subdomein aan op basis van de `display_name`-waarde wanneer het abonnement subdomeinen toestaat en het bedrijf geen eigen domein heeft. De slug wordt afgeleid van `display_name` (kleine letters, ASCII, max 60 tekens, opnieuw geprobeerd met `-2`…`-5` achtervoegsel bij botsing).
 - `chamber`, `address`, `postal_code`, `city`
 - `brand_color`, `description`, `business_page_hero_tagline`
 

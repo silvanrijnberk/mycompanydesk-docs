@@ -83,6 +83,8 @@ Fur NL-Workspaces ist die KvK-Suche ein zweistufiger Prozess:
 1. **Typeahead** — der Benutzer sucht nach Unternehmensnamen. Der `zoeken`-Endpunkt (kostenlos) gibt ubereinstimmende Eintrage zuruck. Dies ist der Autocomplete-Schritt, der die bestehenden `ok`- / `not-found`-Antworten antreibt. Wenn die Suche null Treffer liefert, zeigt die UI ein Inline-Panel fur leere Ergebnisse an (Titel, Erklarung und ein "Manuell eintragen"-Button, der das manuelle Formular mit dem bereits eingegebenen Text vorausfullt). Dies kommt haufig vor, da die kostenlose OpenKVK-Stufe viele junge Unternehmen nicht erfasst.
 2. **Basisprofiel** — sobald ein Treffer ausgewahlt ist, ruft der Assistent den KvK-Basisprofiel-Detailendpunkt auf. Dies ist ein kostenpflichtiger Aufruf (EUR 0,02, 24h zwischengespeichert pro KVK-Nummer). Er gibt das vollstandige Profil zuruck: `legalName`, `statutaireNaam` (satzungsmassiger Name), `tradeNames` (alle registrierten Handelsnamen, sortiert), `rsin`, `legalForm`, `dateFounded`, Besuchs- und Postadressen, SBI-Codes mit Primarflag, `employeeCount` und `indNonMailing` (Keine-Post-Flag).
 
+Wenn ein Treffer ausgewahlt wird (Suchmodus), ruft das Frontend sofort `PUT /company-settings/company` mit dem `name` des Treffers als `display_name`, der `kvkNumber` als `chamber`, `city` und `country` hartcodiert auf `"NL"` auf. Dies schreibt den kundenorientierten Anzeigenamen sofort, sodass die Dashboard-Begrußung und die geseedete Site den richtigen Namen ab dem Moment verwenden, in dem der Benutzer auf den Treffer klickt, anstatt auf den Abschluss-Schritt des Assistenten zu warten.
+
 Es gibt zwei unabhängige Feature-Flags für NL-KVK-Abfragen:
 
 - `KVK_API_KEY` (Env-Var auf dem API-Container): Wenn dieser fehlt, wird das Suchfeld gar nicht angezeigt und der Assistent startet in diesem Schritt standardmäßig mit manueller Eingabe. Die kostenlose OpenKVK-Stufe allein ist zu lückenhaft (~2% Trefferquote, verpasst fast jede Neuanmeldung). Das Flag schaltet automatisch um, sobald der Schlüssel gesetzt ist.
@@ -91,6 +93,8 @@ Es gibt zwei unabhängige Feature-Flags für NL-KVK-Abfragen:
 ### Manueller Modus
 
 Benutzer fullt `chosen` (seine Registrierungsnummer) aus, und optional `legalName`, `address`, `sector`. Alle vier Felder sind in diesem Modus optional.
+
+Beim Speichern ruft das Frontend `PUT /company-settings/company` direkt mit den manuell eingegebenen Werten plus `display_name` gesetzt auf den hier eingegebenen Firmennamen und `country` hartcodiert auf `"NL"` auf. Dies schreibt sowohl den kundenorientierten Namen als auch das Land sofort, anstatt auf den Abschluss-Schritt zu warten. Die Apply-Logik des Abschluss-Schritts liest weiterhin `answers.kvk` fur den Legacy-Registerpfad, aber der neue 2-Schritt-Assistentenpfad liest `answers.kvk.legalName` und `answers.kvk.kvkNumber` direkt, sodass das inline PUT wahrend dieses Schritts der autoritative Schreibvorgang ist.
 
 ### Überspringen-Modus
 
@@ -103,6 +107,8 @@ Wahlen Sie die Webadresse, die Kunden auf der offentlichen Unternehmensseite und
 ### Zwei Wege
 
 **Subdomain (Standard):** der Benutzer wahlt einen Slug; der Assistent verknupft ihn mit `<slug>.mycompanydesk.nl` fur `NL`-Workspaces und `<slug>.mycompanydesk.com` uberall sonst. Der Slug ist aus `businessName` vorbefullt (Kleinbuchstaben, ASCII, max. 32 Zeichen). Beim Abschluss wird die Subdomain uber die Cloudflare-API bereitgestellt und die Unternehmenswebsite ist sofort erreichbar.
+
+Wenn der Assistent im 2-Schritt (Plan-gesteuerten) Ablauf ausgefuhrt wird, wird der Domain-Schritt vollstandig weggelassen. Der Abschluss-Schritt stellt automatisch eine Workspace-Subdomain aus dem `display_name`-Wert bereit: Der Slug wird aus dem Anzeigenamen abgeleitet (mit Wiederholung-bei-Kollision-Suffixen bis zu 5 Versuche), und `activateSubdomain` registriert ihn als öffentliche Site-URL. Best-Effort: Eine Kollision oder ein Fehler wird protokolliert und blockiert den Assistenten nicht am Abschluss.
 
 **Eigene Domain:** der Benutzer gibt eine Domain ein, die er bereits besitzt. Beim Abschluss fuhrt der Assistent Folgendes aus:
 
@@ -163,7 +169,10 @@ Die **Abschliessen**-Schaltflache in der Fusszeile ruft `/onboarding/complete` a
 **Immer uberschreiben**, wenn die Assistent-Antwort ein nicht-leerer String ist und vom aktuellen Wert abweicht:
 
 - `display_name`, `company_name`
-- `country`
+- `country` (fallt auf `"NL"` zuruck, wenn `answers.country` nicht gesetzt ist , der 2-Schritt-Assistent fragt kein Land ab, daher ist NL die implizite Voreinstellung)
+- `chamber` (via `answers.kvk.kvkNumber`, wenn vorhanden)
+
+Wenn der 2-Schritt-Assistent keine Domain-Antwort erfasst hat, stellt Finish automatisch eine Workspace-Subdomain aus dem `display_name`-Wert bereit, wenn der Tarif Subdomains erlaubt und das Unternehmen keine eigene Domain hat. Der Slug wird aus `display_name` abgeleitet (Kleinbuchstaben, ASCII, max. 60 Zeichen, bei Kollision mit `-2`…`-5`-Suffix wiederholt).
 - `chamber`, `address`, `postal_code`, `city`
 - `brand_color`, `description`, `business_page_hero_tagline`
 

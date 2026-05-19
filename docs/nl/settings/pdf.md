@@ -60,6 +60,8 @@ PDF's worden gegenereerd in de taal van de factuur. Als je een factuur in het Du
 
 Ondersteunde PDF-talen: Engels, Nederlands, Duits, Frans.
 
+De standaard PDF-taal voor nieuwe NL-platform werkruimtes is Nederlands (`nl`). Dit wordt toegepast wanneer de onboarding via de wizard wordt voltooid (van de landinstelling) en via de database-standaard wanneer er nog geen expliciete taalvoorkeur is opgeslagen. Werkruimtes die buiten Nederland zijn geregistreerd, krijgen standaard Engels.
+
 ## Logo-vereisten
 
 Voor het beste resultaat:
