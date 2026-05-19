@@ -1,165 +1,62 @@
 ---
 title: Dashboard
-last_verified: 2026-05-19
+last_verified: 2026-05-20
 ---
 
 # Dashboard
 
-The dashboard at `/dashboard` is your home base. It is a **customisable grid of sections** rendered on top of one of eight role-based templates, with separate desktop and mobile layouts that you can edit independently.
+The dashboard at `/dashboard` is your home base. It presents a fixed briefing layout that surfaces what needs your attention, key financial indicators, and recent activity in a single scrollable view.
 
 ## Architecture
 
-The page is a single shell (`DashboardShell`) over a section registry. Each section is a self-contained component that pulls its own data, has its own period scope, and ships with sensible default sizes for both devices.
+The dashboard is a single page (`BriefingDashboard`) composed of editorial blocks. There is no per-user customization. Every user in the workspace sees the same structure, fed from the same live data.
 
-- **Desktop.** A 12-column drag-and-drop grid (`DesktopGridEngine`) with row-height locked to 5rem. Sections can be moved, resized within their min-size, and added or removed.
-- **Mobile.** A vertical stack (`MobileStackEngine`) where each section is full-width. You reorder by drag and toggle visibility per section in the edit sheet.
-- **Persistence.** Layouts are saved per workspace at `/api/dashboard/layout`. The shell waits for the API to confirm your saved layout before rendering, so you do not see the template flash on page load.
+The shell loads:
+- A **hero** panel with greeting, lede summary, and period context
+- A **pulse** row of four KPIs: liquidity/runway, revenue (month + YTD), receivables + DSO, and VAT balance + deadline
+- A **briefing feed** split into three tabs: **Now** (requires attention), **This Week** (upcoming), and **Good News** (confirmations)
+- A **cash chart** spanning a 12-month window with actual + forecast
+- A **week card**, **project margins** list, **top clients** list, **activity feed**, and a **VAT ring**
+- A **setup banner** that persists until the wizard at `/setup` is completed
 
-::: info
-Both layouts are tied to your **dashboard profile** (see below). Switching profiles loads that profile's saved layout — your customisations are kept per profile.
-:::
+## Hero
 
-## Profiles
+The top-of-page greets with a time-of-day greeting. The lede text summarizes the current state: whether anything demands action today, the largest overdue item, draft counts, and cash position.
 
-There are eight role-based profiles. The active profile decides which sections the template ships with, but you can customise every profile freely.
+The hero also carries the period label (month is default).
 
-| Profile ID | Focus |
+## Pulse row
+
+The four-cell pulse row replaces the old money tiles and KPI headline. Each cell presents a focused metric with context:
+
+| Cell | What it shows |
 |---|---|
-| `owner_director` | Cash flow, profitability, high-level overview |
-| `bookkeeper_accountant` | VAT, compliance, audit trails, period locks |
-| `ar_invoicing` | AR aging, outstanding payments, cash forecast |
-| `ap_purchases` | Cash flow, operational queue, expense view |
-| `freelancer_simple` | Mixed: cash flow, VAT, urencriterium, profit margin |
-| `vat_compliance` | Upcoming VAT, queue, KPI focus on tax |
-| `project_job_based` | Project profitability, time tracking |
-| `growth_operations` | Period comparison, customer concentration |
+| **Liquidity** | Current balance (actual when a bank connection is active, estimated otherwise), plus runway in weeks |
+| **Revenue** | Current month revenue with percentage vs previous month, plus year-to-date |
+| **Receivables** | Total outstanding, overdue count, and days sales outstanding |
+| **VAT** | Balance (refund or pay), deadline date, and tax reserve |
 
-Pick your profile from the profile selector in the dashboard. The default profile is set on the workspace in **Workspace > Account > Preferences**; individual users can override it in **Me > Preferences**.
+## Briefing feed
 
-## Sections
+The feed is the main attention surface. It assembles real signals from workspace data into a structured list with three tab views:
 
-The registry ships fourteen sections. Mobile-only and desktop-only flags reflect what fits sensibly at each width.
+- **Now.** Items that require action today: overdue invoices, overdue bills, open receipts, draft invoices waiting for send, and VAT checklist items.
+- **This week.** Items due in the coming week: invoices due, bills to pay, and VAT deadlines.
+- **Good news.** Confirmations: recently paid invoices, revenue growth, and new customers this month.
 
-| Section ID | Lucide icon | Category | Devices | Default desktop size |
-|---|---|---|---|---|
-| `dashboard-hero` | `gauge` | accounting | both | 12 × 4 |
-| `kpi-headline` | `bar-chart-3` | accounting | both | 12 × 4 |
-| `operational-queue` | `bell` | platform | both | 6 × 3 |
-| `activity-timeline` | `activity` | activity | both | 6 × 3 |
-| `ar-aging` | `clock-3` | accounting | both | 6 × 3 |
-| `cash-flow-forecast` | `trending-up` | accounting | desktop only | 8 × 5 |
-| `period-comparison` | `git-compare` | accounting | desktop only | 6 × 5 |
-| `customer-concentration` | `pie-chart` | accounting | desktop only | 4 × 5 |
-| `upcoming-vat` | `receipt` | accounting | desktop only | 4 × 3 |
-| `urencriterium-progress` | `clock` | accounting | both | 4 × 4 |
-| `profit-margin` | `percent` | accounting | both | 6 × 4 |
-| `email-activity` | `mail` | activity | both | 6 × 4 |
-| `portal-activity` | `door-open` | activity | both | 6 × 4 |
-| `website-activity` | `globe` | activity | both | 6 × 4 |
+Each feed item shows the entity, amount, and contextual detail. The feed opens from a tab bar anchored to the top of the list.
 
-### Dashboard hero
+## Right rail and bottom row
 
-A top-of-page summary panel with the three money tiles (revenue, expenses, net result) and, when relevant, compliance alerts (VAT deadline status and urencriterium progress).
-
-**Money tiles**
-- **Revenue**: This period's revenue with a percentage trend compared to the previous period. Green when revenue is positive.
-- **Expenses**: This period's expenses with trend. The arrow is inverted so a downward expense trend shows green.
-- **Net result**: Revenue minus expenses, green when positive, red when negative.
-
-Each tile links through to the relevant view: revenue -> reports `?lens=revenue`, expenses -> `/expenses`, net -> `/reports/pnl`.
-
-**Compliance**
-When workspace data includes VAT return deadlines and urencriterium tracking, the hero shows:
-- **VAT deadline**: `{days}` until due, due today, or overdue, with the current balance. Links to `/vat`.
-- **Urencriterium**: Current hours percentage progress and hours remaining. Links to `/dashboard?settings=compliance`.
-
-When no period figures exist yet the hero shows an empty state with "No activity" and "No figures for this period yet."
-
-### KPI headline
-
-Adapts column count to its rendered width: 1 / 2 / 3 / 4 columns for widths < 4 / 4–5 / 6–9 / 10+. Cards include revenue, expenses, profit, VAT balance, outstanding receivables, and the rest of the metrics relevant to the active profile.
-
-### Operational queue (alerts)
-
-The queue is the alerts surface. It groups attention items into tiers and colour-codes them:
-
-- **Tier 1 (red / orange).** Overdue invoices, VAT deadline within the reminder window, cash position negative, overdue bills, VAT review flags, projects over budget, overdue project invoices.
-- **Tier 2 (amber).** Invoice number gaps, uncategorised expenses, draft invoices, VAT checklist incomplete, missing supplier fields on expenses, bank-imported expenses waiting for review.
-
-Every alert links to the underlying record list so one click moves you from "I see a number" to "I am fixing it". Stats inside each alert (oldest overdue days, average days, outstanding total) are computed from live workspace data.
-
-The VAT-deadline reminder window is configurable in **Workspace > Compliance > VAT** via `vatDeadlineReminderDays`; the default is country-aware.
-
-### AR aging
-
-Receivables broken into the standard 0–30 / 31–60 / 61–90 / 90+ buckets with totals per bucket. Click a bucket to drill into `/invoices?status=overdue` filtered to that age band.
-
-### Cash-flow forecast
-
-A line chart projecting cash position from current receivables and recurring obligations. Desktop-only because it needs the chart real estate.
-
-### Period comparison
-
-Compares the selected period against the previous one across revenue, expenses, and profit. Each section has its own period override, so you can compare this quarter on one card while looking at this month on another.
-
-### Activity timeline
-
-A feed of recent invoice / quote / expense / customer / payment events in the workspace.
-
-### Sections that need their own integrations
-
-- **Email activity.** Send / open / click / reply counts, gated on the email module.
-- **Portal activity.** Customer-portal opens / downloads / payments per invoice.
-- **Website activity.** Visits and quote-request submissions on your business page.
-
-## Period selector
-
-Each section that exposes `period.enabled = true` carries its own period control. The default is **month**, with custom date ranges supported. Periods are scoped per section, not per page — use it when you want one chart on quarter and another on year-to-date side by side.
-
-## Edit mode
-
-Click the **pencil icon** in the top-right of the dashboard to enter edit mode.
-
-### Desktop
-
-A toolbar appears with **Cancel** / **Reset** / **Save** / **Add section**. Drag any section by its header to move it, drag the bottom-right grip to resize within the section's min-size. The "Add section" picker shows only sections that are not already on the grid. **Reset** restores the active profile's template; **Cancel** discards unsaved changes.
-
-### Mobile
-
-A bottom sheet opens with a vertical reorder list and per-section visibility toggles. Drag the handle to reorder, tap the eye icon to hide a section. Save commits the new order; Reset restores the profile template.
-
-### Smart suggestions
-
-When you edit your dashboard, a chip row called **Suggestions** appears inside the toolbar, showing up to three recommended sections that complement your current layout. The rules are narrow and scenario-aware:
-
-- If you have the AR aging section but no operational queue, it suggests the queue so you can act on overdue-invoice alerts.
-- On freelancer or VAT-compliance profiles, adding upcoming VAT triggers a suggestion for the urencriterium section (compliance checks come as a pair).
-- A dashboard missing both the hero and KPI headline section gets a suggestion to add the hero to avoid an empty top-of-page.
-- Project-based and owner/director profiles without customer concentration are prompted to add it for spotting single-customer risk.
-- Growth-operations profiles with no website or portal activity section get a suggestion to add website activity for tracking inbound traffic.
-
-Click any chip to add its section to the working grid. Suggestions refresh to match your current layout.
+| Card | Content |
+|---|---|
+| **Cash (12-month)** | A line chart with actual cash position through today and a forecast forward to month-end. Requires enough history to generate the projection. |
+| **Week card** | Hours logged this week. |
+| **Project margins** | All projects with revenue, sorted by margin percentage, colour-coded green/amber/red. |
+| **Top clients** | Top clients by revenue this year, with percentage of total. |
+| **Recent activity** | Invoice created, invoice paid, and expense added events. |
+| **VAT ring** | Current VAT return period, checklist completion, and open receipt count. Links to the VAT return. |
 
 ## Setup banner
 
-While the magical setup wizard at `/setup` still has fields to fill, a `FinishSetupBanner` pins itself above the dashboard with the count of pending fields and a **Resume setup** button. It now includes a dismiss button (X icon) that hides the banner per browser via localStorage, surviving reloads until the wizard is completed. The old onboarding card on the dashboard was removed; this banner replaces it. The wizard is non-blocking: new signups land on `/dashboard` directly and are not force-redirected.
-
-## Drill-through
-
-Every entity link in the dashboard takes you to a filtered list view, not a detail page:
-
-| Source | Destination |
-|---|---|
-| Overdue invoice alert | `/invoices?status=overdue` |
-| Draft invoice alert | `/invoices?status=draft` |
-| Cash warning | `/reports/cashflow` |
-| VAT deadline | `/vat` |
-| Dashboard hero VAT | `/vat` |
-| Dashboard hero urencriterium | `/dashboard?settings=compliance` |
-| Uncategorised expenses | `/expenses` |
-| AR aging bucket | `/invoices?status=overdue` (age-filtered) |
-| Customer concentration slice | `/customers/{id}` |
-
-## Mobile behaviour
-
-The mobile layout collapses every section to full width. Sections with `availableOn: "desktop-only"` are not shown on mobile at all — no sideways scrolling rails, no truncated charts, no inner scroll. Profile defaults pre-hide sections that do not earn their height on a phone (the email / portal / website activity sections default to hidden on mobile and can be enabled in the edit sheet).
+While the setup wizard at `/setup` still has fields to fill, a `FinishSetupBanner` pins itself above the dashboard with the count of pending fields and a **Resume setup** button. It includes a dismiss button (X icon) that hides the banner per browser via localStorage, surviving reloads until the wizard is completed. The wizard is non-blocking: new signups land on `/dashboard` directly and are not force-redirected.
