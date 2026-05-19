@@ -20,6 +20,20 @@ Le constructeur de site remplace l'ancien profil d'entreprise a page unique. Vou
 
 Le constructeur de site se trouve sous **Entreprise > Votre site web** (`/website`).
 
+## Démarrage rapide par IA
+
+Quand vous ouvrez le constructeur de site pour la première fois sur un nouvel espace de travail, une bannière de démarrage rapide apparaît en haut. Elle lit les données de votre registre de commerce (nom légal, code NAF, ville) et génère un premier slogan, un texte de présentation et trois services. Vous pouvez tout modifier sur place avant d'appliquer, régénérer si la première suggestion ne convient pas, ou masquer la bannière. Pas de questions, pas de friction.
+
+Ce que la bannière fait pour vous :
+
+- **Générer** : Cliquez sur **Générer une suggestion** pour laisser l'IA lire vos données et proposer du contenu.
+- **Modifier en ligne** : Ajustez le slogan, le texte de présentation et les noms et descriptions des services directement dans la bannière.
+- **Appliquer** : Cliquez sur **Appliquer** pour écrire le contenu validé dans votre espace de travail. La description de votre entreprise, le slogan hero et les services sont mis à jour en une fois.
+- **Régénérer** : Pas satisfait du résultat ? Cliquez sur **Régénérer** pour obtenir un nouveau jeu de suggestions.
+- **Masquer** : La bannière mémorise votre choix localement. Elle reste cachée jusqu'à ce que vous réinitialisiez les données de votre espace.
+
+La bannière utilise le modèle IA Gemini (variante lite) s'il est disponible dans votre espace. Si l'IA n'est pas configurée, la bannière fonctionne quand même avec une solution de repli basée sur votre code NAF et le nom de votre entreprise.
+
 ## Onglets
 
 Le constructeur de site dispose de cinq onglets (six lorsque Style est deplie) :
