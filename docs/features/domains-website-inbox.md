@@ -76,6 +76,8 @@ The page splits into two sections:
 - **Pending domains**: Domains still being verified always appear at the top, regardless of the topbar domain switcher state. This lets you reach verification instructions for newly added domains before they become active.
 - **Active domain panel**: DNS, SSL, redirects, analytics, security, and SEO tabs are scoped to the domain selected in the topbar domain switcher (accessible from the site builder at `/website`). Selecting the default site (shown as your workspace name in the switcher) hides the per-domain panel entirely. Switching domains resets the active tab to Routing.
 
+The page defaults to a clean view with the most commonly needed tabs. Six power-user tabs are hidden unless you turn on **Advanced Mode** in `/me/preferences`. Those tabs are: DNS, SSL, Redirects, Analytics, Quick Settings, and Security. See [Settings overview](/settings#account-settings-me) for how to toggle advanced mode.
+
 What the page lets you do:
 
 - **Buy or claim a domain** via the domain purchase card. Enter a domain name, check availability against OpenProvider, and either buy it or claim it free if you qualify as a Founding Member.
