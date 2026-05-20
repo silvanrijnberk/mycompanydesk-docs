@@ -101,6 +101,12 @@ Fonctionnalites booleennes par plan :
 
 La liste complete des fonctionnalites se trouve dans `FEATURE_KEYS` dans `plans.config.js`.
 
+### Delai de grace du site public
+
+Lorsqu'un espace de travail payant retombe en Gratuit, son site web public et le constructeur de site restent en ligne pendant 7 jours avant de passer hors ligne. Cela empeche un paiement oublie de faire disparaitre instantanement un site professionnel en ligne et ses URL indexees. Le delai de grace est calcule a partir du dernier evenement de fin d'acces: fin d'essai, resiliation ou fin de periode de paiement. Si le systeme ne peut pas determiner la fin d'acces, le site reste en ligne pour eviter une coupure accidentelle. La verification a lieu a chaque requete, avant le cache, pour que les changements d'abonnement prennent effet immediatement.
+
+Source: `apps/api/src/modules/billing/entitlement.service.js` — `PUBLIC_PAGE_GRACE_DAYS`, `computePublicPageGate`.
+
 ### Add-ons de sieges
 
 Pro est un produit mono-utilisateur. Les utilisateurs supplementaires sont achetes via la table `workspace_seat_addons` (add-on Stripe base sur la quantite, facture separement par siege). Le flag de fonctionnalite `team_members` controle si la fonctionnalite d'equipe est disponible ; le nombre effectif de sieges provient de l'enregistrement d'add-on.

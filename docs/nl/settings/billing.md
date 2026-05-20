@@ -101,6 +101,12 @@ Booleaanse functies per abonnement:
 
 De volledige functielijst staat in `FEATURE_KEYS` in `plans.config.js`.
 
+### Openbare site - respijtperiode
+
+Wanneer een betaalde werkruimte naar Gratis vervalt, blijft de openbare website en sitebouwer nog 7 dagen online voordat de site op zwart gaat. Zo voorkom je dat een vergeten betaling je live bedrijfssite meteen offline haalt, met alle geindexeerde URL's erbij. Het respijtvenster gaat in op het laatste moment dat je toegang eindigde: einde proefperiode, opzegging of einde betaalperiode. Als het systeem niet kan bepalen wanneer je toegang eindigde, blijft de site online om te voorkomen dat een site onbedoeld verdwijnt. De controle gebeurt bij elk verzoek, voor de cache, zodat abonnementswijzigingen meteen zichtbaar zijn.
+
+Bron: `apps/api/src/modules/billing/entitlement.service.js` — `PUBLIC_PAGE_GRACE_DAYS`, `computePublicPageGate`.
+
 ### Stoel-add-ons
 
 Pro is een product voor een gebruiker. Extra gebruikers koop je via de `workspace_seat_addons`-tabel (Stripe quantity-based add-on, apart gefactureerd per stoel). De `team_members`-feature-vlag bepaalt of teamfunctionaliteit beschikbaar is; het effectieve aantal stoelen komt uit de add-on-record.

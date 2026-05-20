@@ -108,6 +108,12 @@ Boolean features unlocked per plan:
 
 The full feature list lives in `FEATURE_KEYS` in `plans.config.js`.
 
+### Public-site grace period
+
+When a paid workspace lapses to Free, its public website and site-builder pages stay online for 7 days before going dark. This prevents a forgotten payment from instantly taking down a live business site and its indexed URLs. The grace window is measured from the most recent access-ending event: trial end, cancellation, or paid period expiry. If the system cannot determine when access ended, the site stays up rather than risking an accidental takedown. The gate runs on every request, before any caching, so subscription changes take effect immediately.
+
+Source: `apps/api/src/modules/billing/entitlement.service.js` — `PUBLIC_PAGE_GRACE_DAYS`, `computePublicPageGate`.
+
 ### Seat add-ons
 
 Pro is a single-seat product. Additional users are purchased through the `workspace_seat_addons` table (Stripe quantity-based add-on, billed separately per seat). The `team_members` feature flag controls whether team functionality is available; the effective seat count comes from the add-on record.
