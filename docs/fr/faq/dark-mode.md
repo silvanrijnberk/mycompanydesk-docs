@@ -23,7 +23,7 @@ Vous avez un site web professionnel hébergé ? Vous pouvez également définir 
 Trois options :
 
 - **Désactivé** (par défaut) : Pas de mode sombre. Votre site reste sur le thème clair.
-- **Bouton** : Les visiteurs voient un bouton soleil/lune dans la barre de navigation. Leur choix est enregistré dans leur navigateur pour la prochaine visite.
+- **Bouton** : Les visiteurs voient un bouton soleil/lune dans la barre de navigation. Le mode clair est toujours le choix par défaut ; les visiteurs qui préfèrent le mode sombre doivent l'activer eux-mêmes. Une fois choisi, le réglage est enregistré dans leur navigateur pour la prochaine visite.
 - **Suivre le système** : Le site suit automatiquement la préférence du visiteur au niveau du système d'exploitation. S'adapte dès que le visiteur change son paramètre système.
 
 Lorsque vous activez le mode sombre, un panneau de palette sombre apparaît pour que vous puissiez choisir une version nocturne de chaque couleur de marque. Laisser la palette vide est possible ; le site applique une inversion par défaut qui préserve vos couleurs de marque et d'accent.

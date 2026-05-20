@@ -23,7 +23,7 @@ Hast du eine gehostete Geschäftswebsite? Dann kannst du auch für deine Besuche
 Drei Optionen:
 
 - **Aus** (Standard): Kein Dunkelmodus. Deine Site bleibt im hellen Farbschema.
-- **Schaltfläche**: Besucher sehen einen Sonne/Mond-Umschalter in der Navigationsleiste. Ihre Wahl wird im Browser für den nächsten Besuch gespeichert.
+- **Schaltfläche**: Besucher sehen einen Sonne/Mond-Umschalter in der Navigationsleiste. Die Voreinstellung ist immer hell; Besucher, die den dunklen Modus möchten, müssen ihn selbst aktivieren. Nach der Wahl wird die Einstellung im Browser für den nächsten Besuch gespeichert.
 - **System folgen**: Die Site übernimmt automatisch die Betriebssystem-Einstellung des Besuchers. Passt sich an, sobald der Besucher seine Systemeinstellung ändert.
 
 Wenn du den Dunkelmodus aktivierst, erscheint eine dunkle Farbpalette, in der du für jede Markenfarbe eine nachtoptimierte Version festlegen kannst. Die Palette leer zu lassen ist in Ordnung; die Site verwendet dann eine automatische Invertierung, bei der deine Marken- und Akzentfarben erhalten bleiben.

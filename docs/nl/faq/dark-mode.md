@@ -23,7 +23,7 @@ Heb je een hosted zakelijke website? Dan kun je ook voor je bezoekers een donker
 Drie opties:
 
 - **Uit** (standaard): Geen donkere modus. Je site blijft in het lichte palet.
-- **Knop**: Bezoekers zien een zon/maan-knop in de navigatiebalk. Hun keuze wordt opgeslagen in hun browser voor een volgend bezoek.
+- **Knop**: Bezoekers zien een zon/maan-knop in de navigatiebalk. De standaard is altijd licht, dus bezoekers die donker willen moeten de knop zelf aanzetten. Eenmaal gekozen, wordt de voorkeur opgeslagen in hun browser voor een volgend bezoek.
 - **Volg systeem**: De site volgt automatisch de OS-voorkeur van de bezoeker. Past zich aan zodra de bezoeker zijn systeeminstelling wijzigt.
 
 Zet je donkere modus aan, dan verschijnt er een donker palet waarin je per merkkleur een nachtversie kunt instellen. Het palet leeg laten is prima; de site gebruikt dan een automatische inversie waarbij je merk- en accentkleuren behouden blijven.
