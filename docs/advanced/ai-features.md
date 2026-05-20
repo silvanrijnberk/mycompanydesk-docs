@@ -148,6 +148,18 @@ Runtime translation of short snippets goes through `translate.service` which wra
 
 Bulk locale-file sync (filling missing keys, re-translating drift across `nl/de/fr`) is **not** in this service -- it lives in the Huisbot weekly cron which opens PRs against `development` autonomously. The in-app UI never blocks on translation drift.
 
+## Dashboard briefing insight (Pro)
+
+The dashboard briefing hero shows a one-line AI-written summary for Pro workspaces. The server generates it once per calendar day and caches it for the rest of the day.
+
+- **Model.** The endpoint `POST /api/dashboard/briefing-insight` runs on Vertex AI `europe-west1` (Gemini). Ollama Cloud is not used for this path.
+- **Input signals.** The client sends a compact digest of the day's live data: liquidity and runway, overdue count and amounts, recent payments, revenue growth, new customers, drafts, and VAT position. All amounts are rounded to whole euros before reaching the model.
+- **Locales.** The model generates the sentence in `nl/de/en/fr` based on the user's locale. The client includes the ISO 639-1 code with the request.
+- **Plan gating.** The endpoint is gated on the `ai_insights` feature flag, which requires Pro. When a workspace is not entitled, the client keeps the deterministic lede alone.
+- **Fallback.** On any failure (model unavailable, 403, network error) the client uses the existing deterministic lede. No error is shown to the user.
+
+The deterministic lede (computed client-side from the same signals) always renders. The AI sentence is additive: it shows above the deterministic lede with a sparkle icon and primary text color.
+
 ## Plan gating
 
 | Surface | Free | Starter | Pro |
@@ -158,6 +170,7 @@ Bulk locale-file sync (filling missing keys, re-translating drift across `nl/de/
 | Receipt scanner | Off | On | On |
 | Text check | On | On | On |
 | Translation | On (UI strings only) | On | On |
+| Briefing insight | Off | Off | On |
 
 ## AI usage caps (monthly)
 

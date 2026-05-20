@@ -23,6 +23,8 @@ The shell loads:
 
 The top-of-page greets with a time-of-day greeting. The lede text summarizes the current state: whether anything demands action today, the largest overdue item, draft counts, and cash position.
 
+Pro workspaces also see an AI-written lede sentence above the deterministic lede. The AI sentence is generated once per calendar day and cached for the rest of the day. It draws on the same live signals (liquidity, overdue items, recent payments, VAT posture, revenue growth) and is available in all four supported languages. On Pro, the AI lede appears with a sparkle icon and takes the primary color of the hero text. When the AI model is unavailable or the workspace is not entitled, the deterministic lede is shown alone.
+
 The hero also carries the period label (month is default).
 
 ## Pulse row

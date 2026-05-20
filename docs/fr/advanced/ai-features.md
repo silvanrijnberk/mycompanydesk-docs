@@ -110,6 +110,19 @@ L'IA genere des resumes periodiques de votre activite commerciale :
 
 Les resumes sont generes dans votre langue preferee et sont disponibles depuis le tableau de bord.
 
+## Apercu du tableau de bord par IA (Pro)
+
+La section hero du tableau de bord affiche une phrase de synthese generee par IA pour les espaces de travail Pro. Le serveur genere la phrase une fois par jour calendaire et la met en cache pour le reste de la journee.
+
+- **Modele.** L'endpoint `POST /api/dashboard/briefing-insight` fonctionne sur Vertex AI `europe-west1` (Gemini). Ollama Cloud n'est pas utilise pour ce chemin.
+- **Signaux d'entree.** Le client envoie un resume compact des donnees en direct du jour : liquidite et autonomie, nombre et montants des elements en retard, paiements recents, croissance du CA, nouveaux clients, brouillons et position TVA. Tous les montants sont arrondis a l'euro entier avant d'atteindre le modele.
+- **Langues.** Le modele genere la phrase en `nl/de/en/fr` selon la langue de l'utilisateur. Le client inclut le code ISO-639-1 dans la requete.
+- **Restriction par plan.** L'endpoint est controle par le flag `ai_insights`, qui necessite Pro. Si un espace de travail n'est pas eligible, le client conserve uniquement le texte standard.
+- **Fallback.** En cas d'echec (modele indisponible, 403, erreur reseau), le client utilise le texte standard existant. Aucune erreur n'est affichee a l'utilisateur.
+
+Le texte standard (calcule cote client a partir des memes signaux) est toujours affiche. La phrase IA est complementaire : elle apparait au-dessus du texte standard avec une icone sparkle et la couleur de texte principale.
+
+
 ## Droits par plan
 
 | Fonctionnalite | Gratuit | Starter | Pro |
@@ -120,6 +133,7 @@ Les resumes sont generes dans votre langue preferee et sont disponibles depuis l
 | Numerisation des recus | Desactive | Active | Active |
 | Verification du texte | Active | Active | Active |
 | Traduction | Active (UI uniquement) | Active | Active |
+| Apercu tableau de bord IA | Desactive | Desactive | Active |
 
 ## Confidentialite
 

@@ -22,6 +22,8 @@ La page se compose de :
 
 En haut de la page, une salutation basee sur l'heure de la journee. Le texte d'introduction resume la situation actuelle : si quelque chose necessite une action aujourd'hui, le plus gros element en retard, le nombre de brouillons et la position de tresorerie.
 
+Les espaces de travail Pro voient egalement une phrase d'accroche generee par IA au-dessus du texte standard. La phrase IA est generee une fois par jour calendaire et mise en cache pour le reste de la journee. Elle s'appuie sur les memes signaux en direct (liquidite, elements en retard, paiements recents, position TVA, croissance du CA) et est disponible dans les quatre langues prises en charge. Sur Pro, la phrase IA apparait avec une icone sparkle et la couleur de texte principale de la section hero. Si le modele IA est indisponible ou que l'espace de travail n'est pas eligible, seul le texte standard est affiche.
+
 La hero affiche egalement le libelle de periode (mois par defaut).
 
 ## Rangee pulse

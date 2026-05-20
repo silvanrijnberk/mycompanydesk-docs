@@ -110,6 +110,19 @@ KI generiert regelmaassige Zusammenfassungen Ihrer Geschaftsaktivitat:
 
 Zusammenfassungen werden in Ihrer bevorzugten Sprache generiert und sind uber das Dashboard verfugbar.
 
+## Dashboard-Briefing Insight (Pro)
+
+Der Dashboard-Briefing-Hero zeigt einen KI-generierten Zusammenfassungssatz fur Pro-Workspaces. Der Server generiert den Satz einmal pro Kalendertag und cached ihn fur den Rest des Tages.
+
+- **Modell.** Der Endpunkt `POST /api/dashboard/briefing-insight` lauft auf Vertex AI `europe-west1` (Gemini). Ollama Cloud wird fur diesen Pfad nicht verwendet.
+- **Input-Signale.** Der Client sendet eine kompakte Ubersicht der Live-Daten des Tages: Liquiditat und Runway, Anzahl und Betrage uberfalliger Posten, aktuelle Zahlungen, Umsatzwachstum, neue Kunden, Entwurfe und USt.-Position. Alle Betrage werden vor dem Erreichen des Modells auf ganze Euro gerundet.
+- **Sprachen.** Das Modell generiert den Satz in `nl/de/en/fr` basierend auf der Sprache des Benutzers. Der Client sendet den ISO-639-1-Code mit der Anfrage.
+- **Tarif-Gating.** Der Endpunkt ist an das `ai_insights` Feature-Flag gebunden, das Pro erfordert. Wenn ein Workspace nicht berechtigt ist, zeigt der Client nur den Standard-Lede an.
+- **Fallback.** Bei einem Fehler (Modell nicht verfugbar, 403, Netzwerkfehler) verwendet der Client den bestehenden Standard-Lede. Dem Benutzer wird keine Fehlermeldung angezeigt.
+
+Der Standard-Lede (client-seitig aus denselben Signalen berechnet) wird immer angezeigt. Der KI-Satz ist erganzend: Er erscheint uber dem Standard-Lede mit einem Sparkle-Symbol und primarer Textfarbe.
+
+
 ## Tarifberechtigungen
 
 | Funktion | Gratis | Starter | Pro |
@@ -120,6 +133,7 @@ Zusammenfassungen werden in Ihrer bevorzugten Sprache generiert und sind uber da
 | Belegscanning | Aus | An | An |
 | Textprufung | An | An | An |
 | Ubersetzung | An (nur UI) | An | An |
+| Dashboard-Briefing Insight | Aus | Aus | An |
 
 ## Datenschutz
 
