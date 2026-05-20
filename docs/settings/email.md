@@ -39,7 +39,7 @@ Your business email address, who else's mail lands here, and how long we keep it
 - **Apex catch-all** — every mailbox under your domain lands in the same inbox by default
 - **Retention controls** — how long messages stay in the archive
 
-The Pro plan includes one real mailbox plus unlimited send-as identities and multi-mailbox routing.
+The Pro plan includes one real mailbox plus unlimited send-from identities and multi-mailbox routing.
 
 Wraps the `SettingsInbox` component (mailbox CRUD plus alias editor). Inner UI is scheduled for a future redesign; today it is reachable end-to-end.
 
@@ -95,9 +95,9 @@ Every email we sent for you in the last 90 days, what happened to it, and (when 
 
 When the email umbrella is in the `empty` state, the **Open the wizard** CTA sends you to `/setup` — the magical setup wizard that creates the address (free or your own domain), the info / support / sales mailboxes, and the email templates in your brand voice in about a minute.
 
-## Send-as picker
+## Send-from identity picker
 
-When composing in the inbox, the **From** picker shows your default mailbox plus every send-only alias. Reply-to threads default to the address the customer originally wrote to.
+When composing in the inbox, a single **Send from** control picks both the mailbox and the sender address. Reply-to threads default to the address the customer originally wrote to.
 
 ## Delivery tracking
 
