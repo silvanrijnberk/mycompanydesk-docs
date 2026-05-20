@@ -39,7 +39,7 @@ The banner uses the Gemini AI model (lite variant) when available on your worksp
 The site builder has five tabs (six when Style is expanded):
 
 - **Editor**: Compose pages by adding and arranging sections. Click any section to inspect its content, layout, style, or animation settings. Drag sections to reorder, duplicate, or delete them.
-- **Pages**: Manage your pages: create new ones from templates, set paths and visibility, and see which pages are live, draft, or scheduled. Click a page to open it in the editor. The locked home page cannot be deleted.
+- **Pages**: Manage your pages: create new ones from templates, set paths and visibility, and see which pages are live, draft, or scheduled. Click a page to open it in the editor. The locked home page cannot be deleted. Each page shows a Live/Concept badge alongside quick-toggle buttons: click the globe icon to set a draft page live, or use the eye-off icon to hide a live page back to concept.
 - **Style**: Customize your site-wide design tokens. Apply a one-click preset (Editorial), then fine-tune colors (brand, accent, paper, ink), fonts (heading, body, mono from the font library), navbar (layout, background, CTA style), scale (radius, density, max width, section spacing), motion preferences, button styles, and custom CSS. You can also add head snippets for analytics (Plausible, Umami, Matomo) or font preconnects. Click the Style header to open or close the tab strip.
 - **Domain & SEO**: Configure your custom domain and SEO settings. The content here is scoped to the domain selected in the topbar domain switcher. When the default site (listed as the workspace name) is selected, no domain-specific panel appears. See [Domains, Website and Inbox](/features/domains-website-inbox) for the full domain management workflow.
 - **Integrations**: Connect third-party services to your website.
@@ -53,6 +53,17 @@ The site builder has five tabs (six when Style is expanded):
 5. The page opens in the editor, where you can add sections and build it out.
 
 Each page gets a unique path. The home page (`/`) is created by default and cannot be deleted.
+
+### Page status: Live vs Concept
+
+Pages have a status that controls whether they appear on your published site:
+
+- **Live**: The page is included in the publish snapshot. Visitors see it on your public site after you publish.
+- **Concept** (draft): The page is a work in progress. It stays hidden from visitors even after you publish the site.
+
+The home page starts as **Live** by default. Every other new page starts as **Concept** so it does not go public before you are ready. You can toggle any page between Live and Concept with the quick-action buttons in the Pages table. Changing the status updates immediately and lights up the Publish button in the top bar, so the next publish picks up the change.
+
+A site whose home page is in Concept renders nothing when published. If you toggle the home page to Concept, switch it back to Live and publish to restore the site.
 
 ## Building pages with sections
 
@@ -147,12 +158,14 @@ Changes in the Style tab are saved automatically on edit and apply to all pages.
 
 ## Publishing
 
-The top bar shows how many unpublished changes exist. When you are ready:
+The top bar shows how many unpublished changes exist. Publishing snapshots only the pages marked as Live. Pages in Concept stay hidden from the public site, even after you publish.
+
+When you are ready:
 
 1. Click **Publish** in the top bar.
 2. Your site is published to the public URL (your custom domain, workspace subdomain, or the fallback portal route).
 
-Unpublished changes are tracked per page and per token. The publish button is disabled when there is nothing to publish.
+Unpublished changes are tracked per page and per token. The publish button is disabled when there is nothing to publish. Toggling a page between Live and Concept is an immediate save that registers as an unpublished change, so the Publish button lights up the moment you toggle.
 
 ## Navigation
 

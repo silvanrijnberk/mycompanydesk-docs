@@ -39,7 +39,7 @@ La bannière utilise le modèle IA Gemini (variante lite) s'il est disponible da
 Le constructeur de site dispose de cinq onglets (six lorsque Style est deplie) :
 
 - **Editeur**: Composez des pages en ajoutant et en organisant des sections. Cliquez sur une section pour modifier son contenu, sa mise en page, son style ou son animation. Faites glisser les sections pour les reordonner, les dupliquer ou les supprimer.
-- **Pages**: Gelez vos pages : creez-en de nouvelles a partir de modeles, definissez les chemins et la visibilite, et voyez quelles pages sont en ligne, en brouillon ou planifiees. Cliquez sur une page pour l'ouvrir dans l'editeur. La page d'accueil verrouillee ne peut pas etre supprimee.
+- **Pages**: Gelez vos pages : creez-en de nouvelles a partir de modeles, definissez les chemins et la visibilite, et voyez quelles pages sont en ligne, en brouillon ou planifiees. Cliquez sur une page pour l'ouvrir dans l'editeur. La page d'accueil verrouillee ne peut pas etre supprimee. Chaque page affiche un badge En ligne/Brouillon avec des boutons d'action rapide : cliquez sur l'icone globe pour mettre une page brouillon en ligne, ou sur l'icone masquer pour repasser une page en ligne en brouillon.
 - **Style**: Personnalisez vos tokens de design a l'echelle du site. Choisissez un preset en un clic (Editorial) puis ajustez les couleurs (marque, accent, papier, encre), les polices (titres, corps, mono de la bibliotheque de polices), la barre de navigation (disposition, arriere-plan, style du CTA), l'echelle (rayon, densite, largeur maximale, espacement des sections), le mouvement, les styles de boutons et le CSS personnalise. Vous pouvez egalement ajouter des snippets d'en-tete pour l'analytique (Plausible, Umami, Matomo) ou les preconnexions de polices. Cliquez sur l'en-tete Style pour deplier ou replier l'onglet.
 - **Domaine et SEO**: Configurez votre domaine personnalise et vos parametres SEO. Le contenu ici est lie au domaine selectionne dans le selecteur de domaine de la barre superieure. Lorsque le site principal (affiche sous le nom de votre espace de travail) est selectionne, aucun panneau specifique au domaine n'apparait. Consultez [Domaines, site web et boite de reception](/fr/features/domains-website-inbox) pour la gestion complete des domaines.
 - **Integrations**: Connectez des services tiers a votre site web.
@@ -53,6 +53,17 @@ Le constructeur de site dispose de cinq onglets (six lorsque Style est deplie) :
 5. La page s'ouvre dans l'editeur, ou vous pouvez ajouter des sections et la construire.
 
 Chaque page recoit un chemin unique. La page d'accueil (`/`) est creee par defaut et ne peut pas etre supprimee.
+
+### Statut des pages : En ligne vs Brouillon
+
+Les pages ont un statut qui determine si elles apparaissent sur votre site publie :
+
+- **En ligne** : La page est incluse dans le snapshot de publication. Les visiteurs la voient sur votre site public apres publication.
+- **Brouillon** : La page est en cours d'elaboration. Elle reste invisible pour les visiteurs, meme apres la publication du site.
+
+La page d'accueil demarre par defaut en **En ligne**. Toute autre nouvelle page demarre en **Brouillon** pour ne pas apparaitre publiquement avant que vous soyez pret. Vous pouvez basculer chaque page entre En ligne et Brouillon avec les boutons d'action rapide dans le tableau Pages. Le changement de statut est enregistre immediatement et active le bouton Publier dans la barre superieure.
+
+Un site dont la page d'accueil est en Brouillon n'affiche rien lors de la publication. Si vous avez passe la page d'accueil en Brouillon, remettez-la en En ligne et publiez pour restaurer le site.
 
 ## Construire des pages avec des sections
 
@@ -147,12 +158,14 @@ Les modifications dans l'onglet Style sont enregistrees automatiquement et s'app
 
 ## Publier
 
-La barre superieure indique le nombre de modifications non publiees. Lorsque vous etes pret :
+La barre superieure indique le nombre de modifications non publiees. Lors de la publication, seules les pages marquees En ligne sont incluses dans le snapshot. Les pages en Brouillon restent invisibles sur le site public, meme apres publication.
+
+Lorsque vous etes pret :
 
 1. Cliquez sur **Publier** dans la barre superieure.
 2. Votre site est publie sur l'URL publique (votre domaine personnalise, le sous-domaine de l'espace de travail ou la route portail de secours).
 
-Les modifications non publiees sont suivies par page et par token. Le bouton Publier est desactive lorsqu'il n'y a rien a publier.
+Les modifications non publiees sont suivies par page et par token. Le bouton Publier est desactive lorsqu'il n'y a rien a publier. Basculer une page entre En ligne et Brouillon est un enregistrement immediat qui compte comme modification non publiee, le bouton Publier s'allume donc des que vous basculez.
 
 ## Navigation
 

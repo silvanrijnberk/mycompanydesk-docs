@@ -39,7 +39,7 @@ Das Banner verwendet das Gemini KI-Modell (Lite-Variante), sofern in Ihrem Works
 Der Website-Builder hat fünf Tabs (sechs, wenn Stil ausgeklappt ist):
 
 - **Editor**: Erstellen Sie Seiten durch Hinzufügen und Anordnen von Abschnitten. Klicken Sie auf einen Abschnitt, um Inhalt, Layout, Stil oder Animation zu bearbeiten. Ziehen Sie Abschnitte zum Verschieben, Duplizieren oder Löschen.
-- **Seiten**: Verwalten Sie Ihre Seiten: Erstellen Sie neue aus Vorlagen, legen Sie Pfade und Sichtbarkeit fest und sehen Sie, welche Seiten live, Entwurf oder geplant sind. Klicken Sie auf eine Seite, um sie im Editor zu öffnen. Die gesperrte Startseite kann nicht gelöscht werden.
+- **Seiten**: Verwalten Sie Ihre Seiten: Erstellen Sie neue aus Vorlagen, legen Sie Pfade und Sichtbarkeit fest und sehen Sie, welche Seiten live, Entwurf oder geplant sind. Klicken Sie auf eine Seite, um sie im Editor zu öffnen. Die gesperrte Startseite kann nicht gelöscht werden. Jede Seite zeigt ein Live/Entwurf-Symbol mit Schnellumschaltflächen: Klicken Sie auf das Globus-Icon, um eine Entwurfsseite live zu schalten, oder auf das Ausblenden-Icon, um eine Live-Seite zurück in den Entwurf zu setzen.
 - **Stil**: Passen Sie Ihre site-weiten Design-Tokens an. Wählen Sie ein Ein-Klick-Preset (Editorial) und passen Sie dann Farben (Marke, Akzent, Papier, Tinte), Schriften (Überschrift, Text, Mono aus der Schriftbibliothek), Navigationsleiste (Layout, Hintergrund, CTA-Stil), Skalierung (Radius, Dichte, maximale Breite, Abschnittsabstand), Bewegung, Schaltflächenstile und benutzerdefiniertes CSS an. Sie können auch Head-Snippets für Analytics (Plausible, Umami, Matomo) oder Schrift-Preconnects hinzufügen. Klicken Sie auf die Stil-Überschrift, um die Registerkarte ein- oder auszuklappen.
 - **Domain & SEO**: Konfigurieren Sie Ihre eigene Domain und SEO-Einstellungen. Der Inhalt hier bezieht sich auf die Domain, die im Domain-Wechsler in der oberen Leiste ausgewählt ist. Wenn die Hauptwebsite (angezeigt als Ihr Workspace-Name) ausgewählt ist, erscheint kein domain-spezifisches Panel. Siehe [Domains, Website und Posteingang](/de/features/domains-website-inbox) für die vollständige Domain-Verwaltung.
 - **Integrationen**: Binden Sie Drittanbieterdienste in Ihre Website ein.
@@ -53,6 +53,17 @@ Der Website-Builder hat fünf Tabs (sechs, wenn Stil ausgeklappt ist):
 5. Die Seite öffnet sich im Editor, wo Sie Abschnitte hinzufügen und ausbauen können.
 
 Jede Seite erhält einen eindeutigen Pfad. Die Startseite (`/`) wird standardmäßig erstellt und kann nicht gelöscht werden.
+
+### Seitenstatus: Live vs Entwurf
+
+Seiten haben einen Status, der steuert, ob sie auf Ihrer veröffentlichten Site erscheinen:
+
+- **Live**: Die Seite wird in den Veröffentlichungs-Snapshot aufgenommen. Besucher sehen sie nach der Veröffentlichung auf Ihrer öffentlichen Site.
+- **Entwurf**: Die Seite ist in Bearbeitung. Sie bleibt für Besucher unsichtbar, auch nachdem Sie die Site veröffentlichen.
+
+Die Startseite beginnt standardmäßig als **Live**. Jede andere neue Seite beginnt als **Entwurf**, damit sie nicht öffentlich wird, bevor Sie bereit sind. Sie können jede Seite mit den Schnellaktionen in der Seitentabelle zwischen Live und Entwurf umschalten. Die Statusänderung wird sofort gespeichert und aktiviert die Veröffentlichen-Schaltfläche in der oberen Leiste.
+
+Eine Site, deren Startseite auf Entwurf steht, zeigt bei der Veröffentlichung nichts an. Wenn Sie die Startseite in den Entwurf gesetzt haben, schalten Sie sie zurück auf Live und veröffentlichen Sie erneut, um die Site wiederherzustellen.
 
 ## Seiten mit Abschnitten aufbauen
 
@@ -147,12 +158,14 @@ Im **Stil**-Tab steuern Sie das Erscheinungsbild Ihrer gesamten Site:
 
 ## Veröffentlichen
 
-Die obere Leiste zeigt an, wie viele unveröffentlichte Änderungen vorhanden sind. Wenn Sie bereit sind:
+Die obere Leiste zeigt an, wie viele unveröffentlichte Änderungen vorhanden sind. Bei der Veröffentlichung werden nur Seiten mit dem Status Live in den Snapshot aufgenommen. Seiten im Entwurf bleiben auf der öffentlichen Site unsichtbar, auch nach der Veröffentlichung.
+
+Wenn Sie bereit sind:
 
 1. Klicken Sie in der oberen Leiste auf **Veröffentlichen**.
 2. Ihre Site wird unter der öffentlichen URL veröffentlicht (Ihre eigene Domain, Workspace-Subdomain oder die Fallback-Portalroute).
 
-Unveröffentlichte Änderungen werden pro Seite und pro Token erfasst. Die Veröffentlichen-Schaltfläche ist deaktiviert, wenn nichts zu veröffentlichen ist.
+Unveröffentlichte Änderungen werden pro Seite und pro Token erfasst. Die Veröffentlichen-Schaltfläche ist deaktiviert, wenn nichts zu veröffentlichen ist. Das Umschalten einer Seite zwischen Live und Entwurf wird sofort gespeichert und zählt als unveröffentlichte Änderung, sodass die Veröffentlichen-Schaltfläche beim Umschalten aufleuchtet.
 
 ## Navigation
 

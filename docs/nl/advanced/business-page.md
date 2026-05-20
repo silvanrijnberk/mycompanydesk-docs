@@ -39,7 +39,7 @@ De banner gebruikt het Gemini AI-model (lite-variant) als dat beschikbaar is in 
 De sitebouwer heeft vijf tabs (zes als Stijl is uitgeklapt):
 
 - **Editor**: Stel pagina's samen door secties toe te voegen en te rangschikken. Klik op een sectie om de inhoud, layout, stijl of animatie te bewerken. Sleep secties om ze te verplaatsen, dupliceren of verwijderen.
-- **Pagina's**: Beheer je pagina's: maak nieuwe aan vanuit sjablonen, stel paden en zichtbaarheid in, en bekijk welke pagina's live, concept of ingepland zijn. Klik op een pagina om deze in de editor te openen. De vergrendelde homepage kan niet worden verwijderd.
+- **Pagina's**: Beheer je pagina's: maak nieuwe aan vanuit sjablonen, stel paden en zichtbaarheid in, en bekijk welke pagina's live, concept of ingepland zijn. Klik op een pagina om deze in de editor te openen. De vergrendelde homepage kan niet worden verwijderd. Elke pagina toont een Live/Concept-badge met snelle wisselknoppen: klik op het wereldbol-icoontje om een conceptpagina live te zetten, of op het oog-dicht-icoontje om een live pagina terug naar concept te zetten.
 - **Stijl**: Pas je sitebrede ontwerptokens aan. Kies een klik-en-klaar-preset (Editorial) en stem daarna kleuren (merk, accent, papier, inkt), lettertypes (kop, body, mono uit de lettertypebibliotheek), navbar (layout, achtergrond, knopstijl), schaal (radius, dichtheid, maximale breedte, sectie-afstand), beweging, knopstijlen en aangepaste CSS fijn af. Je kunt ook head-snippets toevoegen voor analytics (Plausible, Umami, Matomo) of lettertype-preconnects. Klik op de Stijl-header om de tab uit of in te klappen.
 - **Domein & SEO**: Configureer je eigen domein en SEO-instellingen. De inhoud hier is gekoppeld aan het domein dat in de domeinwisselaar in de bovenbalk is geselecteerd. Wanneer de hoofdsite (weergegeven als je werkruimtenaam) is geselecteerd, verschijnt er geen domeinspecifiek paneel. Zie [Domeinen, website en inbox](/nl/features/domains-website-inbox) voor het volledige domeinbeheer.
 - **Koppelingen**: Verbind diensten van derden met je website.
@@ -53,6 +53,17 @@ De sitebouwer heeft vijf tabs (zes als Stijl is uitgeklapt):
 5. De pagina opent in de editor, waar je secties kunt toevoegen en uitbouwen.
 
 Elke pagina krijgt een uniek pad. De homepage (`/`) wordt standaard aangemaakt en kan niet worden verwijderd.
+
+### Paginastatus: Live vs Concept
+
+Pagina's hebben een status die bepaalt of ze op je gepubliceerde site verschijnen:
+
+- **Live**: De pagina wordt meegenomen in de publicatie. Bezoekers zien hem op je openbare site na publicatie.
+- **Concept**: De pagina is nog in bewerking. Hij blijft onzichtbaar voor bezoekers, ook nadat je de site publiceert.
+
+De homepage start standaard als **Live**. Elke andere nieuwe pagina start als **Concept**, zodat die niet in de openbaarheid komt voordat jij er klaar voor bent. Je kunt elke pagina wisselen tussen Live en Concept met de snelle actieknoppen in de Pagina's-tabel. De statuswijziging wordt meteen opgeslagen en zet de Publiceerknop in de bovenbalk aan, zodat de volgende publicatie de wijziging oppikt.
+
+Een site waarvan de homepage op Concept staat, toont niets bij publicatie. Als je de homepage naar Concept hebt gezet, zet je hem terug naar Live en publiceer je om je site te herstellen.
 
 ## Pagina's bouwen met secties
 
@@ -147,12 +158,14 @@ Wijzigingen in de Stijl-tab worden automatisch opgeslagen bij bewerken en gelden
 
 ## Publiceren
 
-De bovenbalk toont hoeveel ongepubliceerde wijzigingen er zijn. Wanneer je klaar bent:
+De bovenbalk toont hoeveel ongepubliceerde wijzigingen er zijn. Bij publiceren worden alleen pagina's op Live meegenomen in de snapshot. Concept-pagina's blijven onzichtbaar op de openbare site, ook na publicatie.
+
+Wanneer je klaar bent:
 
 1. Klik op **Publiceer** in de bovenbalk.
 2. Je site wordt gepubliceerd naar de openbare URL (je eigen domein, werkruimte-subdomein of de terugvalportalroute).
 
-Ongepubliceerde wijzigingen worden per pagina en per token bijgehouden. De publiceerknop is uitgeschakeld als er niets te publiceren is.
+Ongepubliceerde wijzigingen worden per pagina en per token bijgehouden. De publiceerknop is uitgeschakeld als er niets te publiceren is. Een pagina wisselen tussen Live en Concept wordt meteen opgeslagen en telt als ongepubliceerde wijziging, dus de Publiceerknop licht op zodra je wisselt.
 
 ## Navigatie
 
