@@ -11,18 +11,24 @@ Het dashboard op `/dashboard` is je startpagina. Het toont een vaste briefingind
 Het dashboard is een enkele pagina (`BriefingDashboard`) opgebouwd uit vaste redactionele blokken. Er is geen aanpassing per gebruiker mogelijk. Iedereen in de werkruimte ziet dezelfde structuur, gevoed vanuit dezelfde live data.
 
 De pagina bestaat uit:
-- Een **hero**-paneel met begroeting, lede-samenvatting en periodecontext
+- Een **hero**-paneel met begroeting, AI-lede en periodecontext
 - Een **pulse**-rij van vier KPI's: liquiditeit/runway, omzet (maand + jaar), debiteuren + DSO, en btw-saldo + deadline
 - Een **briefingfeed** verdeeld over drie tabs: **Nu** (vraagt om aandacht), **Deze week** (komt eraan), en **Goed nieuws** (bevestigingen)
 - Een **cash-grafiek** over een venster van 12 maanden met werkelijk + prognose
 - Een **weekkaart**, **projectmarges**-lijst, **top klanten**-lijst, **activiteitenfeed** en een **btw-ring**
 - Een **setup-banner** die blijft staan totdat de wizard op `/setup` is voltooid
 
+Terwijl data laadt, toont het dashboard een **skeleton**-placeholder (`BriefingSkeleton`): een shimmer die de exacte vorm van elke kaart spiegelt. Zodra de kerndata binnen is (metrics gecached en liquiditeit opgelost), lost de skeleton op in een gecoordineerde fade-up-animatie. Elk blok op het hoogste niveau komt met een vertraagd effect omhoog, zodat het hele dashboard in een vloeiende beweging verschijnt. Een veiligheidsnet van 2,5 seconden voorkomt dat de gebruiker vast blijft zitten op de skeleton bij een trage verbinding. De media query `prefers-reduced-motion: reduce` schakelt alle entry-animaties uit.
+
 ## Hero
 
-Bovenaan staat een begroeting op basis van het tijdstip. De lede-tekst vat de huidige situatie samen: of er vandaag iets actie vereist, het grootste achterstallige item, het aantal concepten en de cashpositie.
+Bovenaan staat een begroeting op basis van het tijdstip. De AI-lede is het middelpunt van de hero: een korte, persoonlijke, AI-geschreven briefing die het volledige zakelijke plaatje synthetiseert.
 
-Pro-werkruimtes zien ook een AI-geschreven lede-zin boven de standaard lede. De AI-zin wordt eenmaal per kalenderdag gegenereerd en de rest van de dag gecached. Hij gebruikt dezelfde live signalen (liquiditeit, achterstallige items, recente betalingen, btw-positie, omzetgroei) en is beschikbaar in alle vier ondersteunde talen. Bij Pro verschijnt de AI-lede met een sparkle-icoon en de primaire tekstkleur van de hero. Als het AI-model niet beschikbaar is of de werkruimte geen recht heeft, wordt alleen de standaard lede getoond.
+De AI-briefing spreekt in de eerste persoon ("ik") en spreekt de gebruiker informeel aan ("je"). Hij opent met de meest urgente actie voor vandaag, dan hooguit een of twee ondersteunende punten waar die waarde toevoegen. Hij sluit af met een concrete vervolgstap in de app (bijv. "stuur Atelier Norden vandaag een herinnering", "rond je BTW af"). Het model put uit een volledige set live signalen: liquiditeit en runway, omzet en winst (maand + YTD), achterstallige debiteuren (aantal, totaal, slechtste klant), rekeningen (binnenkort + achterstallig), aantal concepten, projectmarges, btw-positie (saldo, deadline, checklistvoortgang, reserve), niet-gefactureerde uren, recente betalingen en nieuwe klanten. Alle bedragen zijn afgerond op hele euro's.
+
+Terwijl de AI-briefing nog laadt, toont de hero de gecachte deterministische lede van de vorige dag. De cross-fade naar de AI-versie is een vloeiende opacity-and-slide-overgang (`Transition` met `mode="out-in"`). De AI-briefing verschijnt met een sparkle-icoon en de primaire tekstkleur.
+
+De AI-briefing is beschikbaar in alle vier ondersteunde talen. Hij wordt eenmaal per kalenderdag per bedrijf gegenereerd op Vertex AI `europe-west1` (Gemini 2.5 Flash) en de rest van de dag gecached. Als het model niet beschikbaar is of de werkruimte geen Pro-rechten heeft, wordt alleen de deterministische lede getoond en vindt er geen cross-fade plaats.
 
 De hero toont ook het periodelabel (standaard maand).
 

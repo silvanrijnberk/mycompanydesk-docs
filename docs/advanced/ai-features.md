@@ -150,15 +150,15 @@ Bulk locale-file sync (filling missing keys, re-translating drift across `nl/de/
 
 ## Dashboard briefing insight (Pro)
 
-The dashboard briefing hero shows a one-line AI-written summary for Pro workspaces. The server generates it once per calendar day and caches it for the rest of the day.
+The dashboard briefing hero shows a short, personal AI-written briefing for Pro workspaces. The server generates it once per calendar day and caches it for the rest of the day.
 
-- **Model.** The endpoint `POST /api/dashboard/briefing-insight` runs on Vertex AI `europe-west1` (Gemini). Ollama Cloud is not used for this path.
-- **Input signals.** The client sends a compact digest of the day's live data: liquidity and runway, overdue count and amounts, recent payments, revenue growth, new customers, drafts, and VAT position. All amounts are rounded to whole euros before reaching the model.
-- **Locales.** The model generates the sentence in `nl/de/en/fr` based on the user's locale. The client includes the ISO 639-1 code with the request.
+- **Voice.** The briefing speaks in the first person ("ik") and addresses the user informally ("je"). It opens with the single most urgent action, adds at most one or two supporting points, and closes with a concrete suggested next step (e.g. "stuur Atelier Norden vandaag een herinnering"). Warm, confident, concise — the tone of a smart assistant who knows the business.
+- **Model.** The endpoint `POST /api/dashboard/briefing-insight` runs on Vertex AI `europe-west1` (Gemini 2.5 Flash). Ollama Cloud is not used for this path.
+- **Input signals.** The client sends a full digest of the day's business data: liquidity and runway, revenue and profit (MTD + YTD), overdue receivables (count, total, worst customer), bills (due soon + overdue), draft counts, project margins, VAT position (balance, deadline, checklist progress, reserve), unbilled hours, recent payments, and new customers. All amounts are rounded to whole euros before reaching the model.
+- **Locales.** The model generates the briefing in `nl/de/en/fr` based on the user's locale. The client includes the ISO 639-1 code with the request.
 - **Plan gating.** The endpoint is gated on the `ai_insights` feature flag, which requires Pro. When a workspace is not entitled, the client keeps the deterministic lede alone.
 - **Fallback.** On any failure (model unavailable, 403, network error) the client uses the existing deterministic lede. No error is shown to the user.
-
-The deterministic lede (computed client-side from the same signals) always renders. The AI sentence is additive: it shows above the deterministic lede with a sparkle icon and primary text color.
+- **Client UX.** While the AI briefing loads, the hero shows the previous day's cached deterministic lede. When the AI version arrives, a cross-fade transition (opacity + slide) replaces it. The AI briefing appears with a sparkle icon and primary text color. A layout-matched skeleton shimmer (`BriefingSkeleton`) holds the entire dashboard shape until core data settles, then dissolves into a coordinated staggered entrance animation. Reduced-motion users get no animations.
 
 ## Plan gating
 

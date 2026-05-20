@@ -11,8 +11,10 @@ The dashboard at `/dashboard` is your home base. It presents a fixed briefing la
 
 The dashboard is a single page (`BriefingDashboard`) composed of editorial blocks. There is no per-user customization. Every user in the workspace sees the same structure, fed from the same live data.
 
+While data loads, the dashboard shows a **skeleton** placeholder (`BriefingSkeleton`): a layout-matched shimmer that mirrors the final shape of each card. Once the core data is settled (metrics cached and liquidity resolved), the skeleton dissolves into a coordinated fade-up entrance. Every top-level block rises with a staggered delay so the whole dashboard appears in one smooth motion. A safety net of 2.5 seconds ensures the skeleton never traps the user on slow connections. The `prefers-reduced-motion: reduce` media query disables all entry animations.
+
 The shell loads:
-- A **hero** panel with greeting, lede summary, and period context
+- A **hero** panel with greeting, AI-lede, and period context
 - A **pulse** row of four KPIs: liquidity/runway, revenue (month + YTD), receivables + DSO, and VAT balance + deadline
 - A **briefing feed** split into three tabs: **Now** (requires attention), **This Week** (upcoming), and **Good News** (confirmations)
 - A **cash chart** spanning a 12-month window with actual + forecast
@@ -21,9 +23,13 @@ The shell loads:
 
 ## Hero
 
-The top-of-page greets with a time-of-day greeting. The lede text summarizes the current state: whether anything demands action today, the largest overdue item, draft counts, and cash position.
+The top-of-page greets with a time-of-day greeting. The AI-lede is the hero's centerpiece: a short, personal, AI-written briefing that synthesizes the full picture of the business.
 
-Pro workspaces also see an AI-written lede sentence above the deterministic lede. The AI sentence is generated once per calendar day and cached for the rest of the day. It draws on the same live signals (liquidity, overdue items, recent payments, VAT posture, revenue growth) and is available in all four supported languages. On Pro, the AI lede appears with a sparkle icon and takes the primary color of the hero text. When the AI model is unavailable or the workspace is not entitled, the deterministic lede is shown alone.
+The AI briefing speaks in the first person ("ik") and addresses the user informally ("je"). It opens with the single most urgent action for today, then at most one or two supporting points where they add value. It closes with a suggested in-app next step (e.g. "stuur Atelier Norden vandaag een herinnering", "rond je BTW af"). The model draws on a full digest of live signals: liquidity and runway, revenue and profit (MTD + YTD), overdue receivables (count, total, worst customer), bills (due soon + overdue), draft counts, project margins, VAT position (balance, deadline, checklist progress, reserve), unbilled hours, recent payments, and new customers. All amounts are rounded to whole euros.
+
+When the AI briefing is still loading, the hero shows the previous day's cached deterministic lede. The cross-fade to the AI version is a smooth opacity-and-slide transition (`Transition` with `mode="out-in"`). The AI briefing appears with a sparkle icon and the primary text color.
+
+The AI briefing is available in all four supported languages. It is generated once per calendar day per company on Vertex AI `europe-west1` (Gemini 2.5 Flash) and cached for the rest of the day. When the model is unavailable or the workspace is not entitled (Pro only), the deterministic lede is shown alone and no cross-fade occurs.
 
 The hero also carries the period label (month is default).
 
