@@ -22,6 +22,8 @@ De pagina bestaat uit:
 
 Bovenaan staat een begroeting op basis van het tijdstip. De lede-tekst vat de huidige situatie samen: of er vandaag iets actie vereist, het grootste achterstallige item, het aantal concepten en de cashpositie.
 
+Pro-werkruimtes zien ook een AI-geschreven lede-zin boven de standaard lede. De AI-zin wordt eenmaal per kalenderdag gegenereerd en de rest van de dag gecached. Hij gebruikt dezelfde live signalen (liquiditeit, achterstallige items, recente betalingen, btw-positie, omzetgroei) en is beschikbaar in alle vier ondersteunde talen. Bij Pro verschijnt de AI-lede met een sparkle-icoon en de primaire tekstkleur van de hero. Als het AI-model niet beschikbaar is of de werkruimte geen recht heeft, wordt alleen de standaard lede getoond.
+
 De hero toont ook het periodelabel (standaard maand).
 
 ## Pulse-rij

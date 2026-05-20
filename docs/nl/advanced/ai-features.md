@@ -110,6 +110,19 @@ AI genereert periodieke samenvattingen van je bedrijfsactiviteit:
 
 Samenvattingen worden gegenereerd in je voorkeurstaal en zijn beschikbaar vanaf het dashboard.
 
+## Dashboard-briefing inzicht (Pro)
+
+De dashboard-briefing hero toont een AI-geschreven samenvattingszin voor Pro-werkruimtes. De server genereert de zin eenmaal per kalenderdag en cached deze voor de rest van de dag.
+
+- **Model.** Het endpoint `POST /api/dashboard/briefing-insight` draait op Vertex AI `europe-west1` (Gemini). Ollama Cloud wordt niet gebruikt voor dit pad.
+- **Input signalen.** De client stuurt een compact overzicht van de live data van de dag: liquiditeit en runway, aantal en bedragen van achterstallige posten, recente betalingen, omzetgroei, nieuwe klanten, concepten en btw-positie. Alle bedragen worden afgerond op hele euro's voordat ze het model bereiken.
+- **Talen.** Het model genereert de zin in `nl/de/en/fr` op basis van de taal van de gebruiker. De client stuurt de ISO-639-1-code mee met het verzoek.
+- **Plan-gating.** Het endpoint is gekoppeld aan de `ai_insights` feature flag, die Pro vereist. Als een werkruimte geen recht heeft, toont de client alleen de standaard lede.
+- **Fallback.** Bij een fout (model niet beschikbaar, 403, netwerkfout) gebruikt de client de bestaande standaard lede. De gebruiker ziet geen foutmelding.
+
+De standaard lede (client-side berekend uit dezelfde signalen) wordt altijd getoond. De AI-zin is aanvullend: hij verschijnt boven de standaard lede met een sparkle-icoon en primaire tekstkleur.
+
+
 ## Abonnementsrechten
 
 | Functie | Gratis | Starter | Pro |
@@ -120,6 +133,7 @@ Samenvattingen worden gegenereerd in je voorkeurstaal en zijn beschikbaar vanaf 
 | Bonnen scannen | Uit | Aan | Aan |
 | Tekstcontrole | Aan | Aan | Aan |
 | Vertaling | Aan (alleen UI) | Aan | Aan |
+| Dashboard-briefing inzicht | Uit | Uit | Aan |
 
 ## Privacy en gegevensbescherming
 

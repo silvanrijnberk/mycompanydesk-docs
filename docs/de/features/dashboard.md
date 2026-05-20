@@ -20,7 +20,9 @@ Die Seite besteht aus:
 
 ## Hero
 
-Oben wird eine tageszeitabhangige Begruung angezeigt. Der Lede-Text fasst die aktuelle Situation zusammen: ob heute etwas Aufmerksamkeit erfordert, der grote uberfallige Posten, die Anzahl der Entwurfe und die Cash-Position.
+Oben wird eine tageszeitabhangige Begruung angezeigt. Der Lede-Text fasst die aktuelle Situation zusammen: ob heute etwas Aufmerksamkeit erfordert, der grosse uberfallige Posten, die Anzahl der Entwurfe und die Cash-Position.
+
+Pro-Workspaces sehen zusatzlich einen KI-generierten Lede-Satz uber dem Standard-Lede. Der KI-Satz wird einmal pro Kalendertag generiert und fur den Rest des Tages gecached. Er bezieht sich auf dieselben Live-Signale (Liquiditat, uberfallige Posten, aktuelle Zahlungen, USt.-Position, Umsatzwachstum) und ist in allen vier unterstutzten Sprachen verfugbar. Bei Pro erscheint der KI-Lede mit einem Sparkle-Symbol und der primaren Textfarbe des Hero-Bereichs. Wenn das KI-Modell nicht verfugbar oder der Workspace nicht berechtigt ist, wird nur der Standard-Lede angezeigt.
 
 Die Hero zeigt auch die Periodenbezeichnung (Standard ist Monat).
 
