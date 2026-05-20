@@ -112,15 +112,15 @@ Samenvattingen worden gegenereerd in je voorkeurstaal en zijn beschikbaar vanaf 
 
 ## Dashboard-briefing inzicht (Pro)
 
-De dashboard-briefing hero toont een AI-geschreven samenvattingszin voor Pro-werkruimtes. De server genereert de zin eenmaal per kalenderdag en cached deze voor de rest van de dag.
+De dashboard-briefing hero toont een korte, persoonlijke AI-geschreven briefing voor Pro-werkruimtes. De server genereert de briefing eenmaal per kalenderdag en cached deze voor de rest van de dag.
 
-- **Model.** Het endpoint `POST /api/dashboard/briefing-insight` draait op Vertex AI `europe-west1` (Gemini). Ollama Cloud wordt niet gebruikt voor dit pad.
-- **Input signalen.** De client stuurt een compact overzicht van de live data van de dag: liquiditeit en runway, aantal en bedragen van achterstallige posten, recente betalingen, omzetgroei, nieuwe klanten, concepten en btw-positie. Alle bedragen worden afgerond op hele euro's voordat ze het model bereiken.
-- **Talen.** Het model genereert de zin in `nl/de/en/fr` op basis van de taal van de gebruiker. De client stuurt de ISO-639-1-code mee met het verzoek.
+- **Stem.** De briefing spreekt in de eerste persoon ("ik") en spreekt de gebruiker informeel aan ("je"). Hij opent met de meest urgente actie, voegt hooguit een of twee ondersteunende punten toe, en sluit af met een concrete vervolgstap (bijv. "stuur Atelier Norden vandaag een herinnering"). Warm, zelfverzekerd, bondig -- de toon van een slimme assistent die de zaak kent.
+- **Model.** Het endpoint `POST /api/dashboard/briefing-insight` draait op Vertex AI `europe-west1` (Gemini 2.5 Flash). Ollama Cloud wordt niet gebruikt voor dit pad.
+- **Input signalen.** De client stuurt een volledig overzicht van de zakelijke data van de dag: liquiditeit en runway, omzet en winst (MTD + YTD), achterstallige debiteuren (aantal, totaal, slechtste klant), rekeningen (binnenkort + achterstallig), aantal concepten, projectmarges, btw-positie (saldo, deadline, checklistvoortgang, reserve), niet-gefactureerde uren, recente betalingen en nieuwe klanten. Alle bedragen worden afgerond op hele euro's voordat ze het model bereiken.
+- **Locales.** Het model genereert de briefing in `nl/de/en/fr` op basis van de taal van de gebruiker. De client stuurt de ISO 639-1-code mee met het verzoek.
 - **Plan-gating.** Het endpoint is gekoppeld aan de `ai_insights` feature flag, die Pro vereist. Als een werkruimte geen recht heeft, toont de client alleen de standaard lede.
 - **Fallback.** Bij een fout (model niet beschikbaar, 403, netwerkfout) gebruikt de client de bestaande standaard lede. De gebruiker ziet geen foutmelding.
-
-De standaard lede (client-side berekend uit dezelfde signalen) wordt altijd getoond. De AI-zin is aanvullend: hij verschijnt boven de standaard lede met een sparkle-icoon en primaire tekstkleur.
+- **Client UX.** Terwijl de AI-briefing laadt, toont de hero de gecachte deterministische lede van de vorige dag. Zodra de AI-versie binnen is, vervangt een cross-fade-overgang (opacity + slide) deze. De AI-briefing verschijnt met een sparkle-icoon en primaire tekstkleur. Een layout-matched skeleton-shimmer (`BriefingSkeleton`) houdt de volledige dashboardvorm vast totdat de kerndata binnen is, waarna deze oplost in een gecoordineerde, gestaffelde entree-animatie. Gebruikers met reduced-motion krijgen geen animaties.
 
 
 ## Abonnementsrechten

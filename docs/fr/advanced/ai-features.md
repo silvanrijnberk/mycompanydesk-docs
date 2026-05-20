@@ -112,15 +112,15 @@ Les resumes sont generes dans votre langue preferee et sont disponibles depuis l
 
 ## Apercu du tableau de bord par IA (Pro)
 
-La section hero du tableau de bord affiche une phrase de synthese generee par IA pour les espaces de travail Pro. Le serveur genere la phrase une fois par jour calendaire et la met en cache pour le reste de la journee.
+La section hero du tableau de bord affiche un briefing court et personnel genere par IA pour les espaces de travail Pro. Le serveur genere le briefing une fois par jour calendaire et le met en cache pour le reste de la journee.
 
-- **Modele.** L'endpoint `POST /api/dashboard/briefing-insight` fonctionne sur Vertex AI `europe-west1` (Gemini). Ollama Cloud n'est pas utilise pour ce chemin.
-- **Signaux d'entree.** Le client envoie un resume compact des donnees en direct du jour : liquidite et autonomie, nombre et montants des elements en retard, paiements recents, croissance du CA, nouveaux clients, brouillons et position TVA. Tous les montants sont arrondis a l'euro entier avant d'atteindre le modele.
-- **Langues.** Le modele genere la phrase en `nl/de/en/fr` selon la langue de l'utilisateur. Le client inclut le code ISO-639-1 dans la requete.
+- **Voix.** Le briefing parle a la premiere personne ("je") et s'adresse a l'utilisateur avec le vouvoiement ("vous"). Il s'ouvre sur l'action la plus urgente, ajoute au plus un ou deux points supplementaires, et se termine par une etape suivante concrete (ex. "envoyez un rappel a Atelier Norden aujourd'hui"). Chaleureux, confiant, concis -- le ton d'un assistant competent qui connait l'entreprise.
+- **Modele.** L'endpoint `POST /api/dashboard/briefing-insight` fonctionne sur Vertex AI `europe-west1` (Gemini 2.5 Flash). Ollama Cloud n'est pas utilise pour ce chemin.
+- **Signaux d'entree.** Le client envoie un apercu complet des donnees d'activite du jour : liquidite et autonomie, CA et benefice (mois + annee), creances en retard (nombre, total, pire client), depenses (a venir + en retard), nombre de brouillons, marges par projet, position TVA (solde, echeance, progression checklist, reserve), heures non facturees, paiements recents et nouveaux clients. Tous les montants sont arrondis a l'euro entier avant d'atteindre le modele.
+- **Langues.** Le modele genere le briefing en `nl/de/en/fr` selon la langue de l'utilisateur. Le client inclut le code ISO-639-1 dans la requete.
 - **Restriction par plan.** L'endpoint est controle par le flag `ai_insights`, qui necessite Pro. Si un espace de travail n'est pas eligible, le client conserve uniquement le texte standard.
 - **Fallback.** En cas d'echec (modele indisponible, 403, erreur reseau), le client utilise le texte standard existant. Aucune erreur n'est affichee a l'utilisateur.
-
-Le texte standard (calcule cote client a partir des memes signaux) est toujours affiche. La phrase IA est complementaire : elle apparait au-dessus du texte standard avec une icone sparkle et la couleur de texte principale.
+- **UX client.** Pendant le chargement du briefing IA, le hero affiche le texte standard mis en cache de la veille. Lorsque la version IA arrive, une transition en fondu enchaine (opacite + glissement) la remplace. Le briefing IA apparait avec une icone sparkle et la couleur de texte principale. Un shimmer squelette fidele a la mise en page (`BriefingSkeleton`) maintient la forme complete du tableau de bord jusqu'a l'arrivee des donnees principales, puis se dissout dans une animation d'entree coordonnee et progressive. Les utilisateurs avec reduced-motion ne recoivent aucune animation.
 
 
 ## Droits par plan
