@@ -101,6 +101,12 @@ Boolsche Funktionen pro Tarif:
 
 Die vollstandige Funktionsliste befindet sich in `FEATURE_KEYS` in `plans.config.js`.
 
+### Schonfrist fur die offentliche Website
+
+Wenn ein bezahlter Arbeitsbereich auf Gratis zuruckfallt, bleibt seine offentliche Website und der Website-Builder noch 7 Tage online, bevor die Seite offline geht. So verhindern Sie, dass eine vergessene Zahlung Ihre live geschaltete Unternehmenswebsite mit all ihren indexierten URLs sofort vom Netz nimmt. Das Schonfenster beginnt mit dem letzten Zugriffsende: Testende, Kundigung oder Ende des Zahlungszeitraums. Kann das System das Ende des Zugriffs nicht bestimmen, bleibt die Website online, um ein versehentliches Abschalten zu vermeiden. Die Prufung erfolgt bei jeder Anfrage vor dem Cache, sodass Abonnement-Anderungen sofort wirksam werden.
+
+Quelle: `apps/api/src/modules/billing/entitlement.service.js` — `PUBLIC_PAGE_GRACE_DAYS`, `computePublicPageGate`.
+
 ### Sitz-Add-ons
 
 Pro ist ein Einzelnutzer-Produkt. Zusatzliche Nutzer werden uber die Tabelle `workspace_seat_addons` erworben (Stripe mengenbasierte Add-on, separat pro Sitz abgerechnet). Das `team_members`-Feature-Flag steuert, ob Team-Funktionalitat verfugbar ist; die effektive Sitzanzahl stammt aus dem Add-on-Datensatz.

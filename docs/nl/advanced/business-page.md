@@ -205,8 +205,21 @@ Nieuwsbriefinzendingen delen dezelfde snelheidslimiet als het contactformulier: 
 
 Zie [Offertes - Offerteaanvragen](/nl/features/quotes#offerteaanvragen) voor details over het beheren van binnenkomende aanvragen.
 
+## Abonnementsvereiste
+
+De openbare website (bedrijfspagina en sitebouwer) is een betaalde functie. De site is zichtbaar zolang je werkruimte een Starter- of Pro-abonnement heeft. Als een werkruimte naar Gratis vervalt, blijft de site nog 7 dagen live en gaat daarna op zwart.
+
+- **Betaald of in proefperiode**: De site is altijd zichtbaar.
+- **Vervallen naar Gratis**: De site blijft nog 7 dagen zichtbaar nadat je betaalde toegang eindigt (op basis van proefperiode-einde, opzeggingsdatum of einde betaalperiode, welke het meest recent is). Na het respijtvenster geeft de site een 404-fout.
+- **Onzekere toestand**: Als het systeem niet kan bepalen wanneer je betaalde toegang eindigde, blijft de site online om te voorkomen dat een site onterecht offline gaat.
+
+Deze poort geldt voor alle publieke paden: de bedrijfspagina, de servicedetailroute en de pagina's van de sitebouwer. De controle gebeurt bij elk verzoek, voor elke cachinglaag, zodat het klopt ook als je abonnement midden in een cacheperiode verandert.
+
+Bron: `apps/api/src/modules/billing/entitlement.service.js` — `PUBLIC_PAGE_GRACE_DAYS`, `computePublicPageGate`, `getPublicPageVisibility`.
+
 ## Gerelateerd
 
 - [Domeinen, website en inbox](/nl/features/domains-website-inbox): Eigen domein instellen, verificatie, SSL en e-mailinbox.
 - [Bedrijfsinstellingen](/nl/settings/company): Waar je bedrijfsgegevens, huisstijl en adres staan.
 - [Offertes](/nl/features/quotes): Beheren van offerteaanvragen die via je website binnenkomen.
+- [Abonnementen & betalingen](/nl/settings/billing): Abonnementsvormen en functievlaggen.

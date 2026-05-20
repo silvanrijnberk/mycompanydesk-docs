@@ -205,8 +205,21 @@ Newsletter-Einreichungen teilen dasselbe Rate-Limit wie das Kontaktformular: 5 p
 
 Siehe [Angebote - Angebotsanfragen](/de/features/quotes#angebotsanfragen) für Details zur Verwaltung eingehender Anfragen.
 
+## Abonnement-Voraussetzung
+
+Die öffentliche Website (Unternehmensseite und Website-Builder) ist eine kostenpflichtige Funktion. Die Website ist sichtbar, solange Ihr Arbeitsbereich einen Starter- oder Pro-Tarif hat. Wenn ein Arbeitsbereich auf Gratis zurückfällt, bleibt die Website noch 7 Tage lang online und geht dann offline.
+
+- **Bezahlt oder in Testphase**: Die Website ist immer sichtbar.
+- **Auf Gratis zurückgefallen**: Die Website bleibt noch 7 Tage sichtbar, nachdem Ihr Zugang endet (basierend auf Testende, Kündigungsdatum oder Ende des Zahlungszeitraums, je nachdem welches am nächsten liegt). Nach dem Schonfenster liefert die Website einen 404-Fehler.
+- **Ungewisser Zustand**: Wenn das System nicht feststellen kann, wann Ihr bezahlter Zugang geendet hat, bleibt die Website online, um ein versehentliches Abschalten zu vermeiden.
+
+Diese Sperre gilt für alle öffentlichen Pfade: die Unternehmensseite, die Service-Detail-Route und die Seiten des Website-Builders. Die Prüfung erfolgt bei jeder Anfrage, vor jeder Caching-Schicht, damit sie auch dann korrekt ist, wenn sich Ihr Abonnement während einer Cache-Periode ändert.
+
+Quelle: `apps/api/src/modules/billing/entitlement.service.js` — `PUBLIC_PAGE_GRACE_DAYS`, `computePublicPageGate`, `getPublicPageVisibility`.
+
 ## Verwandt
 
 - [Domains, Website und Posteingang](/de/features/domains-website-inbox): Eigene Domain einrichten, Verifizierung, SSL und E-Mail-Posteingang.
 - [Unternehmenseinstellungen](/de/settings/company): Wo Ihre Unternehmensdaten, Ihr Branding und Ihre Adresse hinterlegt sind.
 - [Angebote](/de/features/quotes): Verwalten von Angebotsanfragen, die über Ihre Website eingehen.
+- [Abrechnung & Tarife](/de/settings/billing): Tarifmodelle und Feature-Flags.

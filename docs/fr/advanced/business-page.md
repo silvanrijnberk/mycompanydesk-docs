@@ -205,8 +205,21 @@ Les soumissions a la newsletter partagent la meme limite de taux que le formulai
 
 Consultez [Devis -- Demandes de devis](/fr/features/quotes#quote-requests) pour les details sur la gestion des demandes entrantes.
 
+## Condition d'abonnement
+
+Le site web public (page entreprise et constructeur de site) est une fonction payante. Le site est visible tant que votre espace de travail est sur un plan Starter ou Pro. Lorsqu'un espace de travail retombe en Gratuit, le site reste en ligne pendant un delai de grace de 7 jours, puis passe hors ligne.
+
+- **Payant ou en essai**: Le site est toujours visible.
+- **Retombe en Gratuit**: Le site reste visible pendant 7 jours apres la fin de votre acces payant (base sur la fin d'essai, la date de resiliation ou la fin de periode de paiement, selon la plus recente). Apres le delai de grace, le site renvoie une erreur 404.
+- **Etat incertain**: Si le systeme ne peut pas determiner quand votre acces payant a pris fin, le site reste en ligne pour eviter une coupure accidentelle.
+
+Ce controle s'applique a tous les chemins publics: la page entreprise, la route de detail des services et les pages du constructeur de site. La verification a lieu a chaque requete, avant toute couche de cache, afin de rester exacte meme si votre abonnement change en cours de cache.
+
+Source: `apps/api/src/modules/billing/entitlement.service.js` — `PUBLIC_PAGE_GRACE_DAYS`, `computePublicPageGate`, `getPublicPageVisibility`.
+
 ## Voir aussi
 
 - [Domaines, site web et boite de reception](/fr/features/domains-website-inbox): Configuration de domaine personnalise, verification, SSL et boite de reception e-mail.
 - [Parametres de l'entreprise](/fr/settings/company): Ou se trouvent les details, l'image de marque et l'adresse de votre entreprise.
 - [Devis](/fr/features/quotes): Gerer les demandes de devis qui arrivent via votre site web.
+- [Facturation et abonnements](/fr/settings/billing): Plans d'abonnement et flags de fonctionnalites.

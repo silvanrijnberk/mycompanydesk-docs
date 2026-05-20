@@ -205,8 +205,21 @@ Newsletter submissions share the same rate limit as the contact form: 5 per minu
 
 See [Quotes - Quote Requests](/features/quotes#quote-requests) for details on managing incoming requests.
 
+## Subscription requirement
+
+The public website (business page and site builder) is a paid feature. It is visible while your workspace is on a Starter or Pro plan. When a workspace lapses to Free, the site stays live for a 7-day grace period, then goes dark.
+
+- **Paid or trialing**: The site is always visible.
+- **Lapsed to Free**: The site remains visible for 7 days after your access ends (based on trial end, cancellation date, or paid period end, whichever is most recent). After the grace window, the site returns a 404 page.
+- **Uncertain state**: If the system cannot determine when your paid access ended, the site stays up rather than risking an accidental takedown.
+
+This gate applies to all public serving paths: the business page, the service-detail route, and the site builder's rendered pages. It is checked on every request, before any caching layer, so it stays accurate even if your subscription changes mid-cache.
+
+Source: `apps/api/src/modules/billing/entitlement.service.js` — `PUBLIC_PAGE_GRACE_DAYS`, `computePublicPageGate`, `getPublicPageVisibility`.
+
 ## Related
 
 - [Domains, Website and Inbox](/features/domains-website-inbox): Custom domain setup, verification, SSL, and email inbox.
 - [Company Settings](/settings/company): Where your company details, branding, and address live.
 - [Quotes](/features/quotes): Managing quote requests that come in through your website.
+- [Plan & payments](/settings/billing): Subscription plans and feature flags.
