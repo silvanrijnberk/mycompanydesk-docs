@@ -200,8 +200,8 @@ Capabilities:
 - **Forward**: forward the entire thread to another recipient. Opens a compose drawer with the original message body and attachments preserved for editing before sending. The forwarded message header shows the original sender, date and subject.
 - **CC and BCC**: CC and BCC fields are available on both compose and reply through an "Add Cc/Bcc" toggle. Addresses accept comma-separated lists or paste from clipboard. The inputs stay hidden until needed, matching the standard inbox pattern where most messages do not need them.
 - **Drafts**: save partially written messages and come back to them later. Drafts are stored server-side and persist across browser sessions. Each draft carries a subject, recipient list and body. Drafts that are missing a subject show "(no subject)", and drafts without a recipient show "(no recipient)". A reply draft is indicated with a "Reply" chip in the thread list, so you can tell at a glance which thread you were mid-response on.
-- **Compose**: drawer form with mailbox picker, send-as picker, customer picker (or freeform `To`), subject, body, CC/BCC fields and attachments. Bounced-recipient warning is shown before send.
-- **Send-as aliases** — `info@`, `support@`, `sales@` are bidirectional aliases on the same mailbox. `noreply@` is send-only — selectable as From, but inbound mail to it is dropped on ingest.
+- **Compose**: drawer form with a unified identity picker that sets both mailbox and sender address in one control, customer picker (or freeform `To`), subject, body, CC/BCC fields and attachments. Bounced-recipient warning is shown before send.
+- **Send-from aliases** — `info@`, `support@`, `sales@` are bidirectional aliases on the same mailbox. `noreply@` is send-only — selectable as From, but inbound mail to it is dropped on ingest.
 - **Attachments** — upload before send (compose and reply both). Attachments on inbound mail are downloadable from the message; signed download URLs expire after a short TTL.
 - **Alias notice** — when an inbound message arrives at an address that isn't yet a declared alias, the thread shows a soft notice with an "Add as alias" action.
 - **Linking** — threads can be linked to a customer, project or invoice for cross-referencing.
@@ -268,7 +268,7 @@ This bundle is the **receiving** side. Outgoing email — invoice delivery, remi
 ## Related
 
 - [Setup wizard](/getting-started/company-setup) — the magical onboarding that drives the bundled flow.
-- [Email Integration](/settings/email) — outgoing email, send-as picker, delivery tracking.
+- [Email Integration](/settings/email) — outgoing email, send-from identity picker, delivery tracking.
 - [Site Builder](/advanced/business-page) — the full editor guide.
 - [Company Settings](/settings/company) — the umbrella that hosts About / Look / Website / Address.
 - [Billing & Plans](/settings/billing) — feature flags that gate the bundle.

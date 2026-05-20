@@ -38,14 +38,14 @@ The legacy `/workspace/organization/branding`, `/profile`, `/domains`, `/website
 
 ### Email
 
-Single-tree umbrella at `/workspace/email`. The wizard, send-as picker, send-only aliases, CC/BCC/attachments, delivery tracking, activity log, and templates all live under here.
+Single-tree umbrella at `/workspace/email`. The wizard, send-from identity picker, send-only aliases, CC/BCC/attachments, delivery tracking, activity log, and templates all live under here.
 
 | Page | Path | Covers |
 |---|---|---|
 | Email overview | `/workspace/email` | Inbox state machine — live, DNS pending, MX conflict, off, empty |
 | Mailboxes | `/workspace/email/mailboxes` | Shared `info@`, aliases, personal mailboxes |
 | Address & domain | `/workspace/email/address` | Sending address, MX status, DKIM |
-| Sending | `/workspace/email/sending` | Send-as picker, default tone, per-doc overrides |
+| Sending | `/workspace/email/sending` | Send-from identity picker, default tone, per-doc overrides |
 | Signature | `/workspace/email/signature` | Email footer / signature block |
 | Templates | `/workspace/email/templates` | Per-document-type subject + body |
 | Messages | `/workspace/email/messages` | Outbound history |

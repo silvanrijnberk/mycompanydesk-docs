@@ -200,8 +200,8 @@ Mogelijkheden:
 - **Doorsturen** -- stuur de hele thread door naar een andere ontvanger. Opent een opstellade met het oorspronkelijke bericht en de bijlagen, klaar om te bewerken voor verzending. De header van het doorgestuurde bericht toont de oorspronkelijke afzender, datum en onderwerp.
 - **CC en BCC** -- CC- en BCC-velden zijn beschikbaar bij zowel opstellen als beantwoorden via een "Cc/Bcc toevoegen"-toggle. Adressen accepteren kommagescheiden lijsten of plakken vanuit het klembord. De velden blijven verborgen tot je ze nodig hebt, volgens het standaard inbox-patroon waarbij de meeste berichten ze niet nodig hebben.
 - **Concepten** -- bewaar deels geschreven berichten en kom er later op terug. Concepten worden server-side opgeslagen en blijven bewaard tussen browsersessies. Elk concept heeft een onderwerp, ontvangerlijst en berichttekst. Concepten zonder onderwerp tonen "(geen onderwerp)", en concepten zonder ontvanger tonen "(geen ontvanger)". Een antwoord-concept krijgt een "Antwoord"-chip in de threadlijst, zodat je in een oogopslag ziet op welke thread je bezig was met antwoorden.
-- **Opstellen** -- ladeformulier met mailboxkiezer, send-as-kiezer, klantkiezer (of vrij `Aan`), onderwerp, bericht, CC/BCC-velden, bijlagen. Waarschuwing voor bounced ontvanger wordt getoond voor verzending.
-- **Send-as aliassen** -- `info@`, `support@`, `sales@` zijn bidirectionele aliassen op dezelfde mailbox. `noreply@` is alleen-verzend -- selecteerbaar als From, maar inkomende mail erop wordt weggegooid bij opname.
+- **Opstellen** -- ladeformulier met een enkele identiteitskiezer die mailbox en afzenderadres in één bediening instelt, klantkiezer (of vrij `Aan`), onderwerp, bericht, CC/BCC-velden, bijlagen. Waarschuwing voor bounced ontvanger wordt getoond voor verzending.
+- **Send-from aliassen** -- `info@`, `support@`, `sales@` zijn bidirectionele aliassen op dezelfde mailbox. `noreply@` is alleen-verzend -- selecteerbaar als From, maar inkomende mail erop wordt weggegooid bij opname.
 - **Bijlagen** -- uploaden voor verzending (zowel opstellen als beantwoorden). Bijlagen op inkomende mail zijn downloadbaar vanuit het bericht; ondertekende download-URL's verlopen na een korte TTL.
 - **Alias-melding** -- wanneer een inkomend bericht binnenkomt op een adres dat nog geen geregistreerd alias is, toont de thread een zachte melding met een "Toevoegen als alias"-actie.
 - **Koppelen** -- threads kunnen worden gekoppeld aan een klant, project of factuur voor kruisverwijzing.
@@ -268,7 +268,7 @@ Deze bundel is de **ontvangstkant**. Uitgaande e-mail -- factuurverzending, heri
 ## Gerelateerd
 
 - [Setup-wizard](/nl/getting-started/company-setup) -- de magische onboarding die de gebundelde flow aandrijft.
-- [E-mailintegratie](/nl/settings/email) -- uitgaande e-mail, send-as-kiezer, afleveringsregistratie.
+- [E-mailintegratie](/nl/settings/email) -- uitgaande e-mail, send-from identiteitskiezer, afleveringsregistratie.
 - [Sitebouwer](/nl/advanced/business-page) -- de volledige editorgids.
 - [Bedrijfsinstellingen](/nl/settings/company) -- de paraplu die Over / Look / Website / Adres bevat.
 - [Facturering & Abonnementen](/nl/settings/billing) -- feature flags die de bundel beheren.

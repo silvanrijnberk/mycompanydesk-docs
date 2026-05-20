@@ -200,8 +200,8 @@ Funktionen:
 - **Weiterleiten** -- leiten Sie den gesamten Thread an einen anderen Empfänger weiter. Öffnet ein Verfassen-Drawer, in dem der ursprüngliche Nachrichtentext und die Anhänge vor dem Senden bearbeitet werden können. Der Header der weitergeleiteten Nachricht zeigt den ursprünglichen Absender, das Datum und den Betreff.
 - **CC und BCC** -- CC- und BCC-Felder stehen sowohl beim Verfassen als auch beim Antworten über einen "Cc/Bcc hinzufügen"-Toggle zur Verfügung. Adressen akzeptieren kommagetrennte Listen oder Einfügen aus der Zwischenablage. Die Felder bleiben ausgeblendet, bis sie benötigt werden, entsprechend dem üblichen Posteingangsmuster, bei dem die meisten Nachrichten sie nicht brauchen.
 - **Entwürfe** -- speichern Sie teilweise geschriebene Nachrichten und kommen Sie später darauf zurück. Entwürfe werden serverseitig gespeichert und bleiben über Browser-Sitzungen hinweg erhalten. Jeder Entwurf hat einen Betreff, eine Empfängerliste und einen Nachrichtentext. Entwürfe ohne Betreff zeigen "(kein Betreff)", und Entwürfe ohne Empfänger zeigen "(kein Empfänger)". Ein Antwort-Entwurf wird mit einem "Antwort"-Chip in der Thread-Liste markiert, sodass Sie auf einen Blick sehen, bei welchem Thread Sie mitten in der Antwort waren.
-- **Verfassen** -- Drawer-Formular mit Postfach-Auswahl, Send-As-Auswahl, Kundenauswahl (oder freies `An`), Betreff, Nachricht, CC/BCC-Felder, Anhänge. Warnung vor zurückgewiesenen Empfängern wird vor dem Senden angezeigt.
-- **Send-As-Aliase** -- `info@`, `support@`, `sales@` sind bidirektionale Aliase desselben Postfachs. `noreply@` ist reiner Sende-Alias -- als From wählbar, aber eingehende E-Mails daran werden bei der Aufnahme verworfen.
+- **Verfassen** -- Drawer-Formular mit einer einzigen Identitätsauswahl, die Postfach und Absenderadresse in einem Bedienelement festlegt, Kundenauswahl (oder freies `An`), Betreff, Nachricht, CC/BCC-Felder, Anhänge. Warnung vor zurückgewiesenen Empfängern wird vor dem Senden angezeigt.
+- **Send-From-Aliase** -- `info@`, `support@`, `sales@` sind bidirektionale Aliase desselben Postfachs. `noreply@` ist reiner Sende-Alias -- als From wählbar, aber eingehende E-Mails daran werden bei der Aufnahme verworfen.
 - **Anhänge** -- Hochladen vor dem Senden (sowohl Verfassen als auch Antworten). Anhänge eingehender E-Mails sind aus der Nachricht herunterladbar; signierte Download-URLs verfallen nach kurzer TTL.
 - **Alias-Hinweis** -- wenn eine eingehende Nachricht an eine Adresse eingeht, die noch kein deklarierter Alias ist, zeigt der Thread einen sanften Hinweis mit einer "Als Alias hinzufügen"-Aktion.
 - **Verknüpfung** -- Threads können mit einem Kunden, Projekt oder einer Rechnung zur Querverweisung verknüpft werden.
@@ -268,7 +268,7 @@ Dieses Bundle ist die **Empfangsseite**. Ausgehende E-Mails -- Rechnungsversand,
 ## Verwandt
 
 - [Einrichtungsassistent](/de/getting-started/company-setup) -- die magische Einführung, die den gebündelten Ablauf antreibt.
-- [E-Mail-Integration](/de/settings/email) -- ausgehende E-Mails, Send-As-Auswahl, Zustellverfolgung.
+- [E-Mail-Integration](/de/settings/email) -- ausgehende E-Mails, Send-From-Identitätsauswahl, Zustellverfolgung.
 - [Website-Builder](/de/advanced/business-page) -- die vollständige Editor-Anleitung.
 - [Unternehmenseinstellungen](/de/settings/company) -- das Dach, das Über / Aussehen / Website / Adresse enthält.
 - [Abrechnung & Tarife](/de/settings/billing) -- Feature-Flags, die das Bundle steuern.
