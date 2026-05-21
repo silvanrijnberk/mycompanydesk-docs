@@ -147,7 +147,7 @@ In de **Stijl**-tab bepaal je de look-and-feel van je hele site:
 - **Donkere modus**: Bepaal hoe je site omgaat met donkere weergave. Drie opties: **Uit** (geen donkere modus, de site blijft in het lichte palet), **Knop** (bezoekers zien een zon/maan-knop in de navigatiebalk en kunnen wisselen, hun keuze wordt lokaal opgeslagen), of **Volg systeem** (de site volgt automatisch de OS-voorkeur van de bezoeker via een live media-query). Wanneer donkere modus aan staat, verschijnt er een donker palet waarin je per kleur een nachtversie kunt instellen. Laat je het donkere palet leeg, dan past de site een automatische inversie toe waarbij je merk- en accentkleuren behouden blijven.
 - **Typografie**: Kies kop-, body- en mono-lettertypes uit de ingebouwde lettertypebibliotheek (Geist, Inter, DM Sans, DM Serif Display, Fraunces, Instrument Serif, Geist Mono).
 - **Schaal**: Stel hoekradius, dichtheid (compact, ruim, royaal), maximale inhoudsbreedte en verticale sectie-afstand in.
-- **Beweging**: Schakel verminderde beweging in of kies een bewegingsstijl (geen, subtiel, speels).
+- **Beweging**: Schakel verminderde beweging in of kies een bewegingsstijl (Uit, Subtiele fade, Slide-up).
 - **Knoppen**: Pas knopradius, padding en hover-effecten aan.
 - **Navbar**: Stel de layout in (standaard, gecentreerd, split), de achtergrondstijl (vast, transparant met blur, volledig transparant) en hoe de CTA-knop eruitziet (vol, lijn, alleen tekst). De navbar-instellingen gelden voor elke pagina.
 - **Aangepaste CSS**: Schrijf je eigen CSS die in de site wordt geïnjecteerd. Handig voor fijnafstemming of het overschrijven van standaardwaarden.
