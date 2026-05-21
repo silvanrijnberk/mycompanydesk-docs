@@ -141,6 +141,14 @@ Exportieren Sie Ihre Rechnungen als CSV zur Verwendung in Excel, Google Sheets o
 CSV-Export erfordert den **Pro**-Tarif oder höher.
 :::
 
+## Finalisieren und Versenden
+
+Wenn Sie eine Rechnung finalisieren oder versenden, prüft MyCompanyDesk, ob Ihre Firma eine USt-IdNr. (Umsatzsteuer-Identifikationsnummer) und eine IBAN hinterlegt hat. In den Niederlanden ist eine USt-IdNr. gesetzlich auf der Rechnung vorgeschrieben, und Ihre IBAN zeigt Kunden, wohin sie zahlen sollen.
+
+Fehlt eines der Felder, oeffnet sich ein Dialog, in dem Sie die Angaben direkt nachtragen koennen. Nach dem Speichern wird die Rechnung automatisch finalisiert.
+
+Warten Sie noch auf Ihre USt-IdNr. vom Finanzamt, oder sind Sie unter der Kleinunternehmerregelung (KOR) befreit? Sie koennen den Hinweis ueberspringen und trotzdem fortfahren. Tragen Sie Ihre USt-IdNr. spaeter nach, sobald sie vorliegt.
+
 ## Tipps
 
 - Richten Sie Ihre [E-Mail-Vorlagen](/de/settings/email) ein, bevor Sie Ihre erste Rechnung versenden

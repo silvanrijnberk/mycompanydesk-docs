@@ -10,7 +10,7 @@ Ce guide vous accompagne dans la creation et l'envoi de votre premiere facture d
 
 Assurez-vous d'avoir :
 
-- [Configure les informations de votre entreprise](/fr/getting-started/company-setup) (nom, adresse, IBAN)
+- [Configure les informations de votre entreprise](/fr/getting-started/company-setup) (nom, adresse, numero de TVA, IBAN)
 - Au moins un client a facturer (vous pouvez en creer un pendant le processus)
 
 ## Creer une facture

@@ -10,7 +10,7 @@ Deze gids helpt je stap voor stap bij het maken en versturen van je eerste factu
 
 Zorg dat je het volgende hebt gedaan:
 
-- [Je bedrijfsinformatie ingesteld](/nl/getting-started/company-setup) (naam, adres, IBAN)
+- [Je bedrijfsinformatie ingesteld](/nl/getting-started/company-setup) (naam, adres, btw-id, IBAN)
 - Ten minste een klant om te factureren (je kunt er een aanmaken tijdens het proces)
 
 ## Een factuur maken

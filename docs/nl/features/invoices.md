@@ -141,6 +141,14 @@ Exporteer je facturen als CSV voor gebruik in Excel, Google Sheets of je boekhou
 CSV-export vereist het **Pro**-abonnement of hoger.
 :::
 
+## Afronden en versturen
+
+Wanneer je een factuur afrondt of verstuurt, controleert MyCompanyDesk of je bedrijf een btw-id en IBAN op je profiel hebt staan. In Nederland is een btw-id verplicht op je factuur, en je IBAN vertelt je klanten waar ze kunnen betalen.
+
+Ontbreekt een van de twee, dan opent een dialoog waarin je ze direct kunt invullen. Na opslaan wordt de factuur automatisch afgerond.
+
+Wacht je nog op je btw-id van de Belastingdienst, of val je onder de KOR (kleineondernemersregeling)? Dan kun je de melding overslaan en toch doorgaan. Vul je btw-id later aan zodra je hem hebt.
+
 ## Tips
 
 - Stel je [e-mailsjablonen](/nl/settings/email) in voordat je je eerste factuur verstuurt
