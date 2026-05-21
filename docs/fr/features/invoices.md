@@ -141,6 +141,14 @@ Exportez vos factures au format CSV pour les utiliser dans Excel, Google Sheets 
 L'export CSV necessite le plan **Pro** ou superieur.
 :::
 
+## Finalisation et envoi
+
+Lorsque vous finalisez ou envoyez une facture, MyCompanyDesk verifie que votre entreprise a un numero de TVA et un IBAN dans votre profil. Aux Pays-Bas, un numero de TVA est obligatoire sur la facture, et votre IBAN indique aux clients ou payer.
+
+Si l'un de ces champs est manquant, une fenetre s'ouvre pour que vous puissiez le remplir directement. Une fois enregistre, la facture est automatiquement finalisee.
+
+Vous attendez encore votre numero de TVA de l'administration fiscale, ou vous beneficiez du regime de la franchise en base (KOR) ? Vous pouvez passer l'alerte et continuer malgre tout. Ajoutez votre numero de TVA des que vous l'avez.
+
 ## Conseils
 
 - Configurez vos [modeles d'e-mail](/fr/settings/email) avant d'envoyer votre premiere facture

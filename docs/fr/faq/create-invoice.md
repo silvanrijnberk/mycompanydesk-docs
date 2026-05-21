@@ -13,7 +13,7 @@ Voici comment creer une facture :
 2. Selectionnez un client ou ajoutez-en un depuis le selecteur client
 3. Ajoutez des lignes avec description, quantite, prix et TVA
 4. Definissez dans la carte des details la date de facture et la date d echeance
-5. Utilisez « Enregistrer comme brouillon » si la facture n est pas encore prete, ou « Finaliser » quand elle est prete
+5. Utilisez « Enregistrer comme brouillon » si la facture n est pas encore prete, ou « Finaliser » quand elle est prete (MyCompanyDesk verifie d'abord votre numero de TVA et votre IBAN, vous pouvez les remplir directement si besoin)
 6. Apres l enregistrement, ouvrez la page detail de la facture pour la previsualiser ou l envoyer
 
-Astuce : Les reglages comme la numerotation, les delais de paiement et les PDF se trouvent sous Entreprise.
+Astuce : Les reglages comme la numerotation, les delais de paiement et les PDF se trouvent sous Entreprise. Assurez-vous que votre numero de TVA et votre IBAN y sont renseignes pour finaliser vos factures sans interruption.

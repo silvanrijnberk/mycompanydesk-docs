@@ -10,7 +10,7 @@ Diese Anleitung führt Sie durch die Erstellung und den Versand Ihrer ersten Rec
 
 Stellen Sie sicher, dass Sie:
 
-- [Ihre Unternehmensinformationen eingerichtet](/de/getting-started/company-setup) haben (Name, Adresse, IBAN)
+- [Ihre Unternehmensinformationen eingerichtet](/de/getting-started/company-setup) haben (Name, Adresse, USt-IdNr., IBAN)
 - Mindestens einen Kunden haben, dem Sie eine Rechnung stellen können (Sie können während des Prozesses einen erstellen)
 
 ## Rechnung erstellen

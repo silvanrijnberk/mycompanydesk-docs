@@ -141,6 +141,14 @@ Export your invoices as CSV for use in Excel, Google Sheets, or your accounting 
 CSV export requires the **Pro** plan or higher.
 :::
 
+## Finalizing and sending
+
+When you finalize or send an invoice, MyCompanyDesk checks that your company has a BTW-id (VAT number) and IBAN on file. In the Netherlands, a valid invoice requires your BTW-id, and your IBAN tells customers where to pay.
+
+If either field is missing, a dialog opens so you can fill them in right there. Once saved, your invoice finalizes automatically.
+
+If you are still waiting for your BTW-id from the Belastingdienst, or you are exempt under the small business scheme (KOR), you can acknowledge the gap and proceed anyway. You should add your BTW-id later once you have it.
+
 ## Tips
 
 - Set up your [email templates](/settings/email) before sending your first invoice
