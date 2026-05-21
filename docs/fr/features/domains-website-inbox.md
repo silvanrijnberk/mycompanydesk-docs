@@ -122,15 +122,27 @@ Le renouvellement de domaine suit trois chemins selon la maniere dont le domaine
 2. **Renouvellement automatique payant** (achat payant ou niveau Trial sans Pro) : Facture annuellement via la carte enregistree. Fonctionne comme tout autre renouvellement d'abonnement.
 3. **Renouvellement manuel** : Si un espace de travail de niveau Trial quitte Pro ET n'a pas de carte enregistree, le chemin de renouvellement automatique le saute. L'utilisateur voit une notification et peut declencher un paiement ponctuel via `POST /api/domains/renew/:domainId`, qui cree une session Stripe Embedded Checkout pour le renouvellement. C'est le seul moyen de garder un domaine actif sans abonnement actif ni carte enregistree.
 
+#### Rachat du domaine en cas de depart pendant l'essai
+
+<!-- TODO(source-missing): prix de rachat €15 confirmation dans sources/ -->
+
+Lorsqu'un client en periode d'essai Pro decide de partir avant de devenir client Pro payant, il dispose d'une troisieme option pour son domaine `.nl` gratuit : le racheter pour un montant forfaitaire de €15 (tout compris, paiement unique). Le flux de rachat (`DomainBuyoutModal.vue`) permet au client de payer via Stripe Embedded Checkout et d'obtenir la pleine propriete. Une fois le paiement effectue, le titulaire du domaine est transfere de MCD au client et le code d'authentification (EPP) est affiche, permettant de deplacer le domaine vers n'importe quel registrar.
+
+Le prix de rachat est un prix produit, pas un supplement de transfert. MCD ne facture jamais de frais pour le jeton de transfert lui-meme une fois que le client est le titulaire enregistre. Cette distinction est documentee dans la note juridique interne `docs/legal/gratis-domein-voorwaarden.md` du depot RichardTool.
+
+Tables de base de donnees concernees :
+
+- `domain_buyout_intents` — suit les intentions de paiement de rachat avec les identifiants Stripe PaymentIntent et le statut.
+
 #### Consequences d'un transfert
 
 Transferer un domaine enregistre via MyCompanyDesk vers un autre registrar a des consequences permanentes, appliquees par la synchronisation hebdomadaire du statut OpenProvider :
 
 - **Domaines niveau Founder** : La reclamation Founder est supprimee et l'abonnement Pro a vie interne de l'espace de travail est resilie. L'espace de travail devient un client payant normal. C'est irreversible -- le statut Founder ne peut pas etre reclame a nouveau.
-- **Domaines niveau Trial / groupes Pro** : Le statut groupe gratuit est perdu. L'espace de travail ne pourra plus jamais reclamer un autre domaine gratuit (deja applique via la liste des reclamations conservees).
+- **Domaines niveau Trial / groupes Pro** : Le statut groupe gratuit est perdu. L'espace de travail ne pourra plus jamais reclamer un autre domaine gratuit (deja applique via la liste des reclamations conservees). A noter : le rachat du domaine pendant l'essai (voir section rachat ci-dessus) n'est pas un transfert -- c'est un changement de titulaire qui donne la propriete au client avant tout transfert, preservant ainsi l'avantage du domaine gratuit pour la duree de l'essai.
 - **Domaines payants** : Aucune revocation d'avantage -- le domaine passe simplement a `status = 'transferred_out'`.
 
-Le modal de reclamation avertit de ces consequences avant qu'une reclamation de domaine gratuit ne soit soumise, et exige une confirmation explicite de l'utilisateur. Les details de revocation sont enregistres dans la table d'audit `domain_perk_revocations` pour reference par le support.
+Le modal de reclamation avertit de ces consequences avant qu'une reclamation de domaine gratuit ne soit soumise, et exige une confirmation explicite de l'utilisateur. Une notice "Fonctionnement de votre domaine gratuit" explique que le domaine est enregistre au nom de MCD pendant l'essai, qu'il sera transfere gratuitement au nom du client en cas de passage a Pro, et qu'il peut etre rachete pour €15 en cas de depart anticipe. Les details de revocation sont enregistres dans la table d'audit `domain_perk_revocations` pour reference par le support.
 
 #### Acheter ou reclamer un domaine
 
@@ -166,6 +178,7 @@ Nouvelles tables de base de donnees introduites par cette fonctionnalite :
 
 - `domain_purchase_intents` -- suit les intentions d'achat payantes avec les identifiants Stripe PaymentIntent, les donnees du titulaire et le statut d'achat.
 - `founder_domain_claims` -- suit les reclamations gratuites Founder avec des snapshots d'eligibilite, un score d'abus et le statut de la reclamation.
+- `domain_buyout_intents` -- suit les intentions de paiement de rachat en cas de depart pendant l'essai avec les identifiants Stripe PaymentIntent et le statut de transfert.
 - La migration `domain_registrar_columns` ajoute des colonnes liees au registrar a la table `domains` existante.
 
 ### Site web heberge

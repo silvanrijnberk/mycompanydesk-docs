@@ -122,15 +122,27 @@ Domeinverlenging volgt drie routes, afhankelijk van hoe het domein is verkregen:
 2. **Betaalde automatische verlenging** (betaalde aankoop, of trial-tier zonder Pro): Jaarlijks in rekening gebracht via de opgeslagen kaart. Werkt als elke andere abonnementsverlenging.
 3. **Handmatige verlenging**: Als een trial-tier werkruimte van Pro af valt EN geen opgeslagen kaart heeft, slaat het automatische verlengingspad deze over. De gebruiker ziet een melding en kan een eenmalige betaling starten via `POST /api/domains/renew/:domainId`, wat een Stripe Embedded Checkout-sessie aanmaakt voor de verlenging. Dit is de enige manier om een domein actief te houden zonder actief abonnement of opgeslagen kaart.
 
+#### Overname bij vertrek tijdens de proef
+
+<!-- TODO(source-missing): overnameprijs €15 bevestiging in sources/ -->
+
+Wanneer een klant tijdens de Pro-proefperiode vertrekt zonder Pro-klant te worden, is er een derde optie voor het gratis `.nl`-domein: overnemen voor eenmalig €15 (all-in). De overname-flow (`DomainBuyoutModal.vue`) laat de klant betalen via Stripe Embedded Checkout en krijgt daarmee volledig eigendom. Na betaling wordt de houder overgezet van MCD naar de klant en wordt de verhuiscode (EPP) getoond, waarmee het domein naar elke registrar verhuisd kan worden.
+
+Het overnamebedrag is een productprijs, geen verhuist toeslag. MCD rekent nooit kosten voor de verhuistoken zelf zodra de klant geregistreerd houder is. Het onderscheid is vastgelegd in de interne juridische notitie `docs/legal/gratis-domein-voorwaarden.md` in de RichardTool-repo.
+
+Databasetabellen:
+
+- `domain_buyout_intents` — volgt overname-betalingsintents met Stripe PaymentIntent-ID's en status.
+
 #### Overdrachtsgevolgen
 
 Het overdragen van een domein dat via MyCompanyDesk is geregistreerd naar een andere registrar heeft permanente gevolgen, afgedwongen door de wekelijkse OpenProvider-statussynchronisatie:
 
 - **Founder-tier domeinen**: De Founder-claim wordt verwijderd en het interne levenslange-Pro-abonnement van de werkruimte wordt opgezegd. De werkruimte wordt een normale betalende klant. Dit is onomkeerbaar. De Founder-status kan niet opnieuw worden geclaimd.
-- **Trial-tier / Pro-gebundelde domeinen**: De gebundelde-gratis-status gaat verloren. De werkruimte kan nooit meer een ander gratis domein claimen (al afgedwongen via de retained-claims-lijst).
+- **Trial-tier / Pro-gebundelde domeinen**: De gebundelde-gratis-status gaat verloren. De werkruimte kan nooit meer een ander gratis domein claimen (al afgedwongen via de retained-claims-lijst). Let op: het overnemen van het domein tijdens de proef (zie overnamesectie hierboven) is geen overdracht — het is een houderswijziging die de klant eigendom geeft voordat een overdracht plaatsvindt, waardoor het gratis-domeinvoordeel behouden blijft voor de duur van de proef.
 - **Betaalde domeinen**: Geen voordeelintrekking. Het domein gaat simpelweg naar `status = 'transferred_out'`.
 
-De claim-modal waarschuwt voor deze gevolgen voordat een gratis-domein claim wordt ingediend, en vereist expliciete bevestiging van de gebruiker. Intrekkingsdetails worden vastgelegd in de `domain_perk_revocations`-audittabel voor supportreferentie.
+De claim-modal waarschuwt voor deze gevolgen voordat een gratis-domein claim wordt ingediend, en vereist expliciete bevestiging van de gebruiker. Een "Zo werkt je gratis domein"-uitleg toont dat het domein tijdens de proef op naam van MCD staat, gratis op eigen naam komt bij Pro, en bij vertrek voor €15 overgenomen kan worden. Intrekkingsdetails worden vastgelegd in de `domain_perk_revocations`-audittabel voor supportreferentie.
 
 #### Domein kopen of claimen
 
@@ -166,6 +178,7 @@ Nieuwe databasetabellen die door deze feature zijn toegevoegd:
 
 - `domain_purchase_intents` -- volgt betaalde aankoopintents met Stripe PaymentIntent-ID's, registrantgegevens en aankoopstatus.
 - `founder_domain_claims` -- volgt Founder gratis claims met geschiktheidssnapshots, abuse-scoring en claimstatus.
+- `domain_buyout_intents` -- volgt overname-betalingsintents bij vertrek tijdens de proef met Stripe PaymentIntent-ID's en overdrachtsstatus.
 - `domain_registrar_columns`-migratie voegt registrar-gerelateerde kolommen toe aan de bestaande `domains`-tabel.
 
 ### Gehoste website

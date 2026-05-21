@@ -122,15 +122,27 @@ Die Domain-Verlängerung folgt drei Pfaden, je nachdem, wie die Domain erworben 
 2. **Kostenpflichtige automatische Verlängerung** (bezahlter Kauf oder Trial-Stufe ohne Pro): Wird jährlich über die hinterlegte Karte abgerechnet. Funktioniert wie jede andere Abonnementverlängerung.
 3. **Manuelle Verlängerung**: Wenn ein Trial-Workspace aus Pro herausfällt UND keine Karte hinterlegt hat, überspringt der automatische Verlängerungspfad ihn. Der Benutzer sieht eine Benachrichtigung und kann eine einmalige Zahlung über `POST /api/domains/renew/:domainId` auslösen, die eine Stripe Embedded Checkout-Sitzung für die Verlängerung erstellt. Dies ist der einzige Weg, eine Domain ohne aktives Abonnement oder hinterlegte Karte aktiv zu halten.
 
+#### Domain-Übernahme bei vorzeitigem Probezeit-Ende
+
+<!-- TODO(source-missing): Übernahmepreis €15 Bestätigung in sources/ -->
+
+Wenn ein Kunde während der Pro-Testphase abspringt, ohne Pro-Kunde zu werden, gibt es eine dritte Option für die kostenlose `.nl`-Domain: Übernahme für einmalig €15 (all-in). Der Übernahme-Ablauf (`DomainBuyoutModal.vue`) lässt den Kunden über Stripe Embedded Checkout bezahlen und erhält damit das vollständige Eigentum. Nach der Zahlung wird der Domain-Inhaber von MCD auf den Kunden übertragen und der Auth-Code (EPP) wird angezeigt, sodass die Domain zu jedem Registrar umgezogen werden kann.
+
+Der Übernahmepreis ist ein Produktpreis, kein Übertragungsaufschlag. MCD berechnet niemals Gebühren für den Transfer-Token selbst, sobald der Kunde registrierter Inhaber ist. Die Unterscheidung ist im internen Rechtsvermerk `docs/legal/gratis-domein-voorwaarden.md` im RichardTool-Repo dokumentiert.
+
+Betroffene Datenbanktabellen:
+
+- `domain_buyout_intents` — verfolgt Übernahme-Zahlungsabsichten mit Stripe PaymentIntent-IDs und Status.
+
 #### Übertragungsfolgen
 
 Die Übertragung einer über MyCompanyDesk registrierten Domain zu einem anderen Registrar hat dauerhafte Konsequenzen, die durch den wöchentlichen OpenProvider-Statusabgleich durchgesetzt werden:
 
 - **Founder-Domains**: Der Founder-Claim wird gelöscht und das interne lebenslange Pro-Abonnement des Workspace wird gekündigt. Der Workspace wird zu einem normalen zahlenden Kunden. Dies ist unumkehrbar. Der Founder-Status kann nicht erneut beansprucht werden.
-- **Trial- / Pro-gebündelte Domains**: Der gebündelte Gratis-Status geht verloren. Der Workspace kann nie wieder eine andere Gratis-Domain beanspruchen (bereits über die Retained-Claims-Liste durchgesetzt).
+- **Trial- / Pro-gebündelte Domains**: Der gebündelte Gratis-Status geht verloren. Der Workspace kann nie wieder eine andere Gratis-Domain beanspruchen (bereits über die Retained-Claims-Liste durchgesetzt). Hinweis: Die Übernahme der Domain während der Testphase (siehe Übernahme-Abschnitt oben) ist keine Übertragung — es handelt sich um eine Inhaberübergabe, die dem Kunden Eigentum verschafft, bevor eine Übertragung stattfindet, sodass der Gratis-Domain-Vorteil für die Dauer der Testphase erhalten bleibt.
 - **Bezahlte Domains**: Kein Vorteilsentzug. Die Domain wechselt einfach zu `status = 'transferred_out'`.
 
-Das Claim-Modal warnt vor diesen Konsequenzen, bevor ein Gratis-Domain-Claim eingereicht wird, und verlangt eine ausdrückliche Bestätigung des Benutzers. Widerrufsdetails werden in der `domain_perk_revocations`-Audit-Tabelle für Support-Zwecke festgehalten.
+Das Claim-Modal warnt vor diesen Konsequenzen, bevor ein Gratis-Domain-Claim eingereicht wird, und verlangt eine ausdrückliche Bestätigung des Benutzers. Ein "So funktioniert Ihre Gratis-Domain"-Hinweis erklärt, dass die Domain während der Testphase auf MCD registriert ist, bei Pro-Umstellung kostenlos auf den eigenen Namen übertragen wird und bei vorzeitigem Ausstieg für €15 übernommen werden kann. Widerrufsdetails werden in der `domain_perk_revocations`-Audit-Tabelle für Support-Zwecke festgehalten.
 
 #### Domain kaufen oder beanspruchen
 
@@ -166,6 +178,7 @@ Neue Datenbanktabellen, die mit diesem Feature eingeführt wurden:
 
 - `domain_purchase_intents` -- verfolgt bezahlte Kaufabsichten mit Stripe PaymentIntent-IDs, Registrantdaten und Kaufstatus.
 - `founder_domain_claims` -- verfolgt Founder-Gratis-Claims mit Berechtigungs-Snapshots, Abuse-Scoring und Claim-Status.
+- `domain_buyout_intents` -- verfolgt Übernahme-Zahlungsabsichten bei vorzeitigem Probezeit-Ende mit Stripe PaymentIntent-IDs und Übergabestatus.
 - `domain_registrar_columns`-Migration fügt registrar-bezogene Spalten zur bestehenden `domains`-Tabelle hinzu.
 
 ### Gehostete Website
