@@ -122,15 +122,27 @@ Domain renewal follows three paths depending on how the domain was acquired:
 2. **Paid auto-renewal** (paid purchase, or trial-tier without Pro): Charged annually via the saved card. Works like any subscription renewal.
 3. **Manual renewal**: If a trial-tier workspace falls off Pro AND has no saved card, the auto-renewal path skips it. The user sees a notification and can trigger a one-off payment via `POST /api/domains/renew/:domainId`, which creates a Stripe Embedded Checkout session for the renewal. This is the only way to keep a domain alive without an active subscription or saved card.
 
+#### Trial-exit domain buy-out
+
+<!-- TODO(source-missing): buy-out price €15 confirmation in sources/ -->
+
+When a customer on a Pro trial decides to leave before converting to paid Pro, they have a third option for their free `.nl` domain: buy it out for a flat €15 (all-in, one-time). The buy-out flow (`DomainBuyoutModal.vue`) lets the customer pay via Stripe Embedded Checkout and receive full ownership. Once paid, the domain holder is transferred from MCD to the customer and the EPP (transfer) code is shown so the domain can be moved to any registrar.
+
+The buy-out price is a product price, not a transfer surcharge. MCD never charges for the transfer token itself once the customer is the registered holder. The distinction is documented in the internal legal memo `docs/legal/gratis-domein-voorwaarden.md` in the RichardTool repo.
+
+Database tables involved:
+
+- `domain_buyout_intents` — tracks buy-out payment intents with Stripe PaymentIntent IDs and status.
+
 #### Transfer consequences
 
 Transferring a domain registered through MyCompanyDesk to another registrar has permanent consequences, enforced by the weekly OpenProvider status sync:
 
 - **Founder-tier domains**: The Founder claim is deleted, and the workspace's internal lifetime-Pro subscription is cancelled. The workspace becomes a regular paid customer. This is irreversible. The Founder status cannot be reclaimed.
-- **Trial-tier / Pro-bundled domains**: The bundled-free status is lost. The workspace can never claim another free domain (already enforced via the retained-claims list).
+- **Trial-tier / Pro-bundled domains**: The bundled-free status is lost. The workspace can never claim another free domain (already enforced via the retained-claims list). Note that buying out the domain during the trial (see buy-out section above) is not a transfer — it is a holder handover that gives the customer ownership before any transfer happens, so the free-domain perk is preserved for the duration of the trial.
 - **Paid domains**: No perk revocation. The domain simply moves to `status = 'transferred_out'`.
 
-The claim modal warns about these consequences before a free-domain claim is submitted, and requires explicit acknowledgement from the user. Revocation details are recorded in the `domain_perk_revocations` audit table for support reference.
+The claim modal warns about these consequences before a free-domain claim is submitted, and requires explicit acknowledgement from the user. A "Held during trial" notice explains that the domain is registered under MCD during the trial and will be transferred to the customer for free on Pro conversion, or available for buy-out at €15 on early exit. Revocation details are recorded in the `domain_perk_revocations` audit table for support reference.
 
 #### Buy or claim a domain
 
@@ -166,6 +178,7 @@ New database tables introduced by this feature:
 
 - `domain_purchase_intents` -- tracks paid purchase intents with Stripe PaymentIntent IDs, registrant details, and purchase status.
 - `founder_domain_claims` -- tracks Founder free claims with eligibility snapshots, abuse scoring, and claim status.
+- `domain_buyout_intents` -- tracks trial-exit buy-out payment intents with Stripe PaymentIntent IDs and handover status.
 - `domain_registrar_columns` migration adds registrar-related columns to the existing `domains` table.
 
 ### Hosted website
