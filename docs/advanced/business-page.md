@@ -147,7 +147,7 @@ In the **Style** tab, you control the look and feel of your entire site:
 - **Dark mode**: Choose how your site handles dark mode. Three options: **Off** (no dark mode, site stays in its light palette), **Button** (visitors see a sun/moon toggle in the navigation bar and can switch themes, with their choice saved locally), or **System** (the site follows the visitor's OS-level preference automatically via a live media-query listener). When dark mode is on, a paired dark palette appears where you can set night-optimized versions of each color. If you leave the dark palette empty, the site applies a sensible default inversion that keeps your brand and accent colors intact.
 - **Typography**: Choose heading, body, and mono fonts from the built-in font library (Geist, Inter, DM Sans, DM Serif Display, Fraunces, Instrument Serif, Geist Mono).
 - **Scale**: Set border radius, content density (compact, airy, generous), maximum content width, and vertical section spacing.
-- **Motion**: Enable reduced motion or choose a motion style (none, subtle, playful).
+- **Motion**: Enable reduced motion or choose a motion style (Off, Subtle fade, Slide up).
 - **Buttons**: Customize button border radius, padding, and hover effects.
 - **Navbar**: Set the layout (standard, centered, split), background style (solid, translucent blur, transparent), and CTA button appearance (filled, outline, text-only). The navbar settings apply to every page.
 - **Custom CSS**: Write your own CSS that gets injected into the site. Useful for fine-tuning or overriding defaults.
