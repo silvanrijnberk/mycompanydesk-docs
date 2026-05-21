@@ -58,7 +58,7 @@ De gehoste bedrijfspagina (zie [Sitebouwer](/nl/advanced/business-page)) wordt a
 
 Voor nameserver-modus eigen domeinen voert de wizard `quickEnableInbox` uit na verificatie. Die aanroep is idempotent en doet het volgende:
 
-- Richt het verzend-subdomein (`mail.acme.nl`) in en schrijft de DKIM- en SPF DNS-records.
+- Richt de CF Email Sending-identiteit in op het kale apex-domein (`acme.nl` standaard) en schrijft de DKIM- en SPF DNS-records. Een expliciet subdomeinlabel provisioneert `<label>.<domein>` in plaats daarvan (bijv. `mail.acme.nl`).
 - Stelt een Cloudflare Email Routing catch-all-regel in op de zone, gericht naar de `inbox-inbound` Worker.
 - Inspecteert de apex MX-records. Als deze leeg zijn of al naar Cloudflare wijzen, installeert de wizard de Cloudflare MX. Als er al een externe provider (Google Workspace, Microsoft 365) staat, weigert de wizard te overschrijven en meldt een `conflict`-waarschuwing zodat je kunt beslissen.
 - Maakt `info@acme.nl` aan als de standaard gedeelde mailbox.
@@ -104,7 +104,7 @@ Belangrijke kolommen die de app leest:
 | `nameserver_1`, `nameserver_2` | Getoond aan de gebruiker tijdens nameserver-setup. |
 | `cname_hostname`, `cname_target` | Gezet in CNAME-modus. |
 | `email_routing_enabled` | `true` zodra de Cloudflare Email Routing-zone is ingeschakeld. |
-| `inbox_enabled`, `inbox_subdomain_tag`, `inbox_dkim_ready` | Gezet door `quickEnableInbox`. Het mailverzend-subdomein (`mail.acme.nl` standaard) en DKIM-voorzieningsstatus. |
+| `inbox_enabled`, `inbox_subdomain_tag`, `inbox_dkim_ready` | Gezet door `quickEnableInbox`. De CF Email Sending-identiteit (apex-domein standaard; `mail.acme.nl` wanneer een subdomeinlabel is opgegeven) en DKIM-voorzieningsstatus. |
 | `business_page_enabled`, `portal_subdomain_enabled` | Bepalen welke hostnaam de openbare website bedient. |
 | `verified_at` | Gezet wanneer verificatie slaagt.
 | `registrar` | De registrar-dienst, momenteel `openprovider` voor domeinen gekocht via de domein-aanschafflow.
