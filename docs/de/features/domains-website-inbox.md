@@ -58,7 +58,7 @@ Die gehostete Unternehmensseite (siehe [Website-Builder](/de/advanced/business-p
 
 Für Nameserver-Modus eigene Domains führt der Assistent `quickEnableInbox` nach der Verifizierung aus. Dieser Aufruf ist idempotent und führt Folgendes aus:
 
-- Richtet die Sende-Subdomain (`mail.acme.de`) ein und schreibt die DKIM- und SPF-DNS-Records.
+- Richtet die CF Email Sending-Identitat auf der reinen Apex-Domain ein (`acme.de` standardmassig) und schreibt die DKIM- und SPF-DNS-Records. Ein explizites Subdomain-Label provisioniert stattdessen `<label>.<domain>` (z. B. `mail.acme.de`).
 - Setzt eine Cloudflare Email Routing Catch-All-Regel auf der Zone, die auf den `inbox-inbound` Worker zeigt.
 - Prüft die Apex-MX-Records. Sind diese leer oder zeigen bereits auf Cloudflare, installiert der Assistent die Cloudflare-MX. Ist ein Drittanbieter (Google Workspace, Microsoft 365) bereits vorhanden, verweigert der Assistent das Überschreiben und zeigt eine `conflict`-Warnung an, damit Sie entscheiden können.
 - Erstellt `info@acme.de` als das standardmäßige gemeinsame Postfach.
@@ -104,7 +104,7 @@ Wichtige Spalten, die die App liest:
 | `nameserver_1`, `nameserver_2` | Werden dem Benutzer während der Nameserver-Einrichtung angezeigt. |
 | `cname_hostname`, `cname_target` | Gesetzt im CNAME-Modus. |
 | `email_routing_enabled` | `true`, sobald die Cloudflare Email Routing-Zone aktiviert ist. |
-| `inbox_enabled`, `inbox_subdomain_tag`, `inbox_dkim_ready` | Von `quickEnableInbox` gesetzt. Die E-Mail-Sende-Subdomain (`mail.acme.de` standardmäßig) und der DKIM-Bereitstellungsstatus. |
+| `inbox_enabled`, `inbox_subdomain_tag`, `inbox_dkim_ready` | Von `quickEnableInbox` gesetzt. Die CF Email Sending-Identitat (Apex-Domain standardmassig; `mail.acme.de` wenn ein Subdomain-Label angegeben ist) und der DKIM-Bereitstellungsstatus. |
 | `business_page_enabled`, `portal_subdomain_enabled` | Bestimmen, welcher Hostname die öffentliche Website bedient. |
 | `verified_at` | Wird bei erfolgreicher Verifizierung gesetzt.
 | `registrar` | Der Registrar-Dienst, derzeit `openprovider` für Domains, die über den Domain-Kaufflow erworben wurden.

@@ -58,7 +58,7 @@ La page d'entreprise hebergee (voir [Constructeur de site](/fr/advanced/business
 
 Pour les domaines personnalises en mode nameserver, l'assistant execute `quickEnableInbox` apres la verification. Cet appel est idempotent et effectue les operations suivantes :
 
-- Met en place le sous-domaine d'envoi (`mail.acme.fr`) et ecrit les enregistrements DNS DKIM et SPF.
+- Met en place l'identite CF Email Sending sur le domaine apex nu (`acme.fr` par defaut) et ecrit les enregistrements DNS DKIM et SPF. Un label de sous-domaine explicite provisionne `<label>.<domaine>` a la place (ex. `mail.acme.fr`).
 - Definit une regle Cloudflare Email Routing catch-all sur la zone, dirigee vers le Worker `inbox-inbound`.
 - Inspecte les enregistrements MX apex. S'ils sont vides ou pointent deja vers Cloudflare, l'assistant installe le MX Cloudflare. Si un fournisseur tiers (Google Workspace, Microsoft 365) est deja present, l'assistant refuse d'ecraser et affiche un avertissement de `conflict` pour que vous puissiez decider.
 - Cree `info@acme.fr` comme la boite aux lettres partagee par defaut.
@@ -104,7 +104,7 @@ Colonnes notables que l'application lit :
 | `nameserver_1`, `nameserver_2` | Affiches a l'utilisateur lors de la configuration nameserver. |
 | `cname_hostname`, `cname_target` | Definis en mode CNAME. |
 | `email_routing_enabled` | `true` une fois la zone Cloudflare Email Routing activee. |
-| `inbox_enabled`, `inbox_subdomain_tag`, `inbox_dkim_ready` | Definis par `quickEnableInbox`. Le sous-domaine d'envoi d'e-mails (`mail.acme.fr` par defaut) et le statut de provisionnement DKIM. |
+| `inbox_enabled`, `inbox_subdomain_tag`, `inbox_dkim_ready` | Definis par `quickEnableInbox`. L'identite CF Email Sending (domaine apex par defaut ; `mail.acme.fr` lorsqu'un label de sous-domaine est fourni) et le statut de provisionnement DKIM. |
 | `business_page_enabled`, `portal_subdomain_enabled` | Determinant quel nom d'hôte dessert le site web public. |
 | `verified_at` | Defini lorsque la verification reussit.
 | `registrar` | Le service de registrar, actuellement `openprovider` pour les domaines achetes via le flux d'achat de domaine.
