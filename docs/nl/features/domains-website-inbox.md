@@ -237,7 +237,7 @@ De inbox ververst automatisch zolang de tab open staat. De threadlijst pollt elk
 
 #### Markeren als ongelezen
 
-Je kunt een geopende thread vanuit de toolbar als ongelezen markeren. Waar de ongelezen-status eerder alleen lokaal werd bijgehouden en bij een refetch verdween, wordt dit nu server-side opgeslagen. De ongelezen-teller van de thread wordt herberekend, de sidebar-badge wordt bijgewerkt en de thread blijft ongelezen bij paginaherladingen, browserherstart en op andere apparaten totdat je hem opnieuw opent.
+Je kunt een geopende thread vanuit de toolbar als ongelezen markeren. Waar de ongelezen-status eerder alleen lokaal werd bijgehouden en bij een refetch verdween, wordt dit nu server-side opgeslagen. De sidebar-badge telt ongelezen berichten, niet threads met ongelezen berichten, en wordt dienovereenkomstig bijgewerkt. De thread blijft ongelezen bij paginaherladingen, browserherstart en op andere apparaten totdat je hem opnieuw opent.
 
 ### Verkopen
 

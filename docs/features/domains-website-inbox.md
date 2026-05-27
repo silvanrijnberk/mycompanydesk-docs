@@ -237,7 +237,7 @@ The inbox refreshes automatically while the tab is open. The thread list polls e
 
 #### Mark as unread
 
-You can mark any open thread as unread from the toolbar. Unlike earlier versions where the unread state was a local-only toggle that a refetch would discard, this is now persisted server-side. The thread's unread count is recomputed, the sidebar badge updates, and the thread stays unread across page reloads, browser restarts, and devices until you open it again.
+You can mark any open thread as unread from the toolbar. Unlike earlier versions where the unread state was a local-only toggle that a refetch would discard, this is now persisted server-side. The sidebar badge counts unread messages, not threads with unread, and updates accordingly. The thread stays unread across page reloads, browser restarts, and devices until you open it again.
 
 ### Sales
 
