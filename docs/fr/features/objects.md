@@ -47,6 +47,8 @@ La page de detail affiche :
 
 - Informations sur l'actif et son type
 - Statut actuel
+- **Chiffre d'affaires total** : revenus reels issus des factures payees pour cet objet, calcules a partir des donnees financieres
+- **Contrats actifs** : nombre de contrats actuellement actifs lies a cet objet
 - **Historique WOZ** (pour les Proprietes) — valeurs WOZ annuelles utilisees par le calcul Box 3
 - Contrats lies
 - Historique de location

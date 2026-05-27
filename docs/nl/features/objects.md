@@ -47,6 +47,8 @@ De detailpagina toont:
 
 - Objectinformatie en type
 - Huidige status
+- **Totale omzet**: echte omzet op basis van betaalde facturen voor dit object, berekend via de financiele gegevens
+- **Actieve contracten**: aantal actieve contracten dat aan dit object is gekoppeld
 - **WOZ-geschiedenis** (bij Vastgoed) — jaarlijkse WOZ-waarden die de Box 3-berekening gebruikt
 - Gekoppelde contracten
 - Verhuurgeschiedenis
