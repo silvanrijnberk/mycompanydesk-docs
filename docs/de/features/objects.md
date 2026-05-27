@@ -47,6 +47,8 @@ Die Detailseite zeigt:
 
 - Vermögenswertinformationen und Typ
 - Aktueller Status
+- **Gesamtumsatz** — tatsächlicher Umsatz aus bezahlten Rechnungen für dieses Objekt, berechnet aus den Finanzdaten
+- **Aktive Verträge** — Anzahl der derzeit aktiven Verträge zu diesem Objekt
 - **WOZ-Verlauf** (bei Immobilien) — jährliche WOZ-Werte, die für die Box-3-Berechnung verwendet werden
 - Verknüpfte Verträge
 - Mietverlauf
