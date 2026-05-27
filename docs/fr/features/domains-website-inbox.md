@@ -231,6 +231,14 @@ L'onglet Brouillons se trouve a côte de la liste principale des fils. Les broui
 
 La boite de reception utilise votre domaine personnalise uniquement apres que `quickEnableInbox` a ete execute avec succes et que les enregistrements MX apex pointent vers Cloudflare. Jusque-la, l'espace de travail peut toujours envoyer des e-mails via le chemin de livraison par defaut decrit dans [Integration e-mail](/fr/settings/email), mais il ne peut pas recevoir d'e-mails.
 
+#### Actualisation en direct
+
+La boite de reception s'actualise automatiquement tant que l'onglet est ouvert. La liste des fils interroge le serveur toutes les 45 secondes pour les nouveaux messages, et le badge de la barre laterale s'actualise toutes les 60 secondes. Les deux se mettent en pause lorsque l'onglet est en arriere-plan -- aucun trafic reseau inutile. L'actualisation est silencieuse : aucun spinner de chargement ne clignote lors des rafraichissements en arriere-plan, et les interrogations sont entierement sautees pendant une recherche active pour que vos resultats restent stables.
+
+#### Marquer comme non lu
+
+Vous pouvez marquer un fil ouvert comme non lu depuis la barre d'outils. Contrairement aux versions precedentes ou l'etat non lu etait uniquement local et perdu au prochain rafraichissement, il est desormais persiste côte serveur. Le compteur de messages non lus du fil est recalcule, le badge de la barre laterale est mis a jour et le fil reste non lu apres les rechargements de page, les redemarrages du navigateur et sur tous vos appareils, jusqu'a ce que vous le rouvriez.
+
 ### Ventes
 
 Lorsque vous ajoutez des boutons d'achat aux niveaux de tarifs ou a un bloc produit sur votre site public, chaque paiement effectue cree un enregistrement de vente. Suivez-les dans **Argent > Ventes** (`/workspace/financial/money/sales`).

@@ -231,6 +231,14 @@ De Concepten-tab staat naast de hoofdthreadlijst. Concepten worden server-side o
 
 De inbox gebruikt je eigen domein pas nadat `quickEnableInbox` succesvol is uitgevoerd en de apex MX-records naar Cloudflare wijzen. Tot die tijd kan de werkruimte wel mail versturen via het standaard afleverpad beschreven in [E-mailintegratie](/nl/settings/email), maar geen mail ontvangen.
 
+#### Live polling
+
+De inbox ververst automatisch zolang de tab open staat. De threadlijst pollt elke 45 seconden op nieuwe mail, en de sidebar-badge ververst elke 60 seconden. Beide pauzeren zodra de tab op de achtergrond staat, dus geen onnodig netwerkverkeer. Het pollen is stil: laadspinners knipperen niet bij achtergrondverversingen, en polls worden overgeslagen tijdens een actieve zoekopdracht zodat je resultaten stabiel blijven.
+
+#### Markeren als ongelezen
+
+Je kunt een geopende thread vanuit de toolbar als ongelezen markeren. Waar de ongelezen-status eerder alleen lokaal werd bijgehouden en bij een refetch verdween, wordt dit nu server-side opgeslagen. De ongelezen-teller van de thread wordt herberekend, de sidebar-badge wordt bijgewerkt en de thread blijft ongelezen bij paginaherladingen, browserherstart en op andere apparaten totdat je hem opnieuw opent.
+
 ### Verkopen
 
 Wanneer je koopknoppen toevoegt aan tarieven of een productblok op je openbare site, creëert elke voltooide betaling een verkooprecord. Volg ze via **Geld > Verkopen** (`/workspace/financial/money/sales`).

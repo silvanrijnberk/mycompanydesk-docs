@@ -231,6 +231,14 @@ Der Entwürfe-Tab befindet sich neben der Hauptthread-Liste. Entwürfe werden se
 
 Der Posteingang verwendet Ihre eigene Domain erst, nachdem `quickEnableInbox` erfolgreich ausgeführt wurde und die Apex-MX-Records auf Cloudflare zeigen. Bis dahin kann der Workspace weiterhin E-Mails über den Standardzustellpfad senden, der unter [E-Mail-Integration](/de/settings/email) beschrieben ist, aber keine E-Mails empfangen.
 
+#### Live-Polling
+
+Der Posteingang aktualisiert sich automatisch, während der Tab geöffnet ist. Die Thread-Liste pollt alle 45 Sekunden auf neue E-Mails, und das Seitenleisten-Badge aktualisiert sich alle 60 Sekunden. Beides pausiert, wenn der Tab im Hintergrund ist -- kein unnötiger Netzwerkverkehr. Das Polling ist lautlos: Ladespinner blinken nicht bei Hintergrundaktualisierungen, und Polls werden während einer aktiven Suche komplett übersprungen, damit Ihre Ergebnisse stabil bleiben.
+
+#### Als ungelesen markieren
+
+Sie können einen geöffneten Thread über die Toolbar als ungelesen markieren. Anders als in früheren Versionen, in denen der Ungelesen-Status nur lokal gespeichert und bei einem Refetch verloren war, wird dieser nun serverseitig persistiert. Der Ungelesen-Zähler des Threads wird neu berechnet, das Seitenleisten-Badge wird aktualisiert, und der Thread bleibt bei Seitenaktualisierungen, Browser-Neustarts und geräteübergreifend ungelesen, bis Sie ihn erneut öffnen.
+
 ### Verkäufe
 
 Wenn Sie Kauf-Buttons zu Preisstufen oder einem Produktblock auf Ihrer öffentlichen Website hinzufügen, erstellt jede abgeschlossene Zahlung einen Verkaufsdatensatz. Verfolgen Sie diese unter **Geld > Verkäufe** (`/workspace/financial/money/sales`).

@@ -231,6 +231,14 @@ The Drafts tab sits alongside the main thread list. Drafts are saved server-side
 
 The inbox uses your custom domain only after `quickEnableInbox` has run successfully and the apex MX records point at Cloudflare. Until then, the workspace can still send mail through the default delivery path described in [Email Integration](/settings/email), but it can't receive mail.
 
+#### Live polling
+
+The inbox refreshes automatically while the tab is open. The thread list polls every 45 seconds for new mail, and the sidebar badge refreshes every 60 seconds. Both pauses when the tab is hidden, so no unnecessary network traffic in the background. The polling is silent: no loading spinners flash on background refreshes, and polls are skipped entirely during an active search to keep your results stable.
+
+#### Mark as unread
+
+You can mark any open thread as unread from the toolbar. Unlike earlier versions where the unread state was a local-only toggle that a refetch would discard, this is now persisted server-side. The thread's unread count is recomputed, the sidebar badge updates, and the thread stays unread across page reloads, browser restarts, and devices until you open it again.
+
 ### Sales
 
 When you add buy buttons to pricing tiers or a product block on your public site, every completed payment creates a sale record. Track them at **Money > Sales** (`/workspace/financial/money/sales`).
