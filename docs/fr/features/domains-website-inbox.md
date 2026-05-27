@@ -237,7 +237,7 @@ La boite de reception s'actualise automatiquement tant que l'onglet est ouvert. 
 
 #### Marquer comme non lu
 
-Vous pouvez marquer un fil ouvert comme non lu depuis la barre d'outils. Contrairement aux versions precedentes ou l'etat non lu etait uniquement local et perdu au prochain rafraichissement, il est desormais persiste côte serveur. Le compteur de messages non lus du fil est recalcule, le badge de la barre laterale est mis a jour et le fil reste non lu apres les rechargements de page, les redemarrages du navigateur et sur tous vos appareils, jusqu'a ce que vous le rouvriez.
+Vous pouvez marquer un fil ouvert comme non lu depuis la barre d'outils. Contrairement aux versions precedentes ou l'etat non lu etait uniquement local et perdu au prochain rafraichissement, il est desormais persiste côte serveur. Le badge de la barre laterale compte les messages non lus, pas les fils avec des messages non lus, et se met a jour en consequence. Le fil reste non lu apres les rechargements de page, les redemarrages du navigateur et sur tous vos appareils, jusqu'a ce que vous le rouvriez.
 
 ### Ventes
 

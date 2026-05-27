@@ -237,7 +237,7 @@ Der Posteingang aktualisiert sich automatisch, während der Tab geöffnet ist. D
 
 #### Als ungelesen markieren
 
-Sie können einen geöffneten Thread über die Toolbar als ungelesen markieren. Anders als in früheren Versionen, in denen der Ungelesen-Status nur lokal gespeichert und bei einem Refetch verloren war, wird dieser nun serverseitig persistiert. Der Ungelesen-Zähler des Threads wird neu berechnet, das Seitenleisten-Badge wird aktualisiert, und der Thread bleibt bei Seitenaktualisierungen, Browser-Neustarts und geräteübergreifend ungelesen, bis Sie ihn erneut öffnen.
+Sie können einen geöffneten Thread über die Toolbar als ungelesen markieren. Anders als in früheren Versionen, in denen der Ungelesen-Status nur lokal gespeichert und bei einem Refetch verloren war, wird dieser nun serverseitig persistiert. Das Seitenleisten-Badge zählt ungelesene Nachrichten, nicht Threads mit ungelesenen Nachrichten, und wird entsprechend aktualisiert. Der Thread bleibt bei Seitenaktualisierungen, Browser-Neustarts und geräteübergreifend ungelesen, bis Sie ihn erneut öffnen.
 
 ### Verkäufe
 
