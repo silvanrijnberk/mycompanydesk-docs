@@ -14,7 +14,7 @@ Demarrer avec MyCompanyDesk ne prend que quelques minutes.
    - Ou utilisez un fournisseur social: **S'inscrire avec Google** ou **S'inscrire avec Outlook**.
    - L'**inscription sans mot de passe** arrive bientot; l'onglet affiche un badge indicatif.
 3. L'ecran d'inscription montre aussi un apercu en direct : un tableau de bord simule avec un chiffre d'affaires fictif, des elements d'echeance et des puces d'activite, pour que vous puissiez voir l'experience avant de vous engager. L'apercu n'utilise pas de donnees reelles.
-4. Si vous vous etes inscrit par e-mail, verifiez votre boite de reception pour trouver un **e-mail de verification** et cliquez sur le lien pour verifier votre compte.
+4. Si vous vous etes inscrit par e-mail, verifiez votre boite de reception pour trouver un **e-mail de verification** et cliquez sur le lien pour verifier votre compte. Pas recu ? Renvoyez-le depuis l'ecran de verification. Mauvaise adresse utilisee ? Cliquez sur **Wrong email address? Start over** pour revenir a l'inscription.
 
 :::tip Parrainage comptable
 Votre comptable ou expert-comptable vous a transmis un lien de parrainage (par exemple `app.mycompanydesk.com/register?partner=LEURCODE`) ? Ouvrez ce lien pour vous inscrire. Votre inscription sera automatiquement attribuee, ce qui fait beneficier votre espace de travail d'une periode d'essai Pro gratuite de 12 mois au lieu des 60 jours standard.

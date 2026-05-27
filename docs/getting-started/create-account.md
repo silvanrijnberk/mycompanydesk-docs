@@ -14,7 +14,7 @@ Getting started with MyCompanyDesk takes just a few minutes.
    - Or use a social provider: **Sign up with Google** or **Sign up with Outlook**.
    - A **password-less registration** option is coming soon; the tab shows a placeholder badge for it.
 3. The signup screen also shows a live staging area: a simulated dashboard with sample revenue, due items, and activity chips so you can preview the experience before you commit. The staging does not use real data.
-4. If you signed up with email, check your inbox for a **verification email** and click the link to verify your account.
+4. If you signed up with email, check your inbox for a **verification email** and click the link to verify your account. If you don't see it, you can resend it from the verification screen. Entered the wrong address? Click **Wrong email address? Start over** to return to registration.
 
 :::tip Partner referral
 If your accountant or boekhouder gave you a referral link (for example, `app.mycompanydesk.com/register?partner=THEIRCODE`), open that link to sign up. Your signup will be attributed to them automatically, which qualifies your workspace for a 12-month free Pro trial instead of the standard 60-day trial.
