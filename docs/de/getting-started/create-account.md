@@ -14,7 +14,7 @@ Der Einstieg in MyCompanyDesk dauert nur wenige Minuten.
    - Oder nutzen Sie einen sozialen Anbieter: **Mit Google anmelden** oder **Mit Outlook anmelden**.
    - **Passwortlose Registrierung** kommt demnächst; der Tab zeigt einen Platzhalter-Hinweis dafür.
 3. Der Registrierungsbildschirm zeigt auch eine Live-Vorschau: ein simuliertes Dashboard mit Beispielumsätzen, fälligen Posten und Aktivitäts-Chips, sodass Sie das Erlebnis vorab sehen können. Die Vorschau verwendet keine echten Daten.
-4. Wenn Sie sich per E-Mail registriert haben, prüfen Sie Ihren Posteingang auf eine **Bestätigungs-E-Mail** und klicken Sie auf den Link, um Ihr Konto zu verifizieren
+4. Wenn Sie sich per E-Mail registriert haben, prüfen Sie Ihren Posteingang auf eine **Bestätigungs-E-Mail** und klicken Sie auf den Link, um Ihr Konto zu verifizieren. Keine E-Mail erhalten? Senden Sie sie über den Verifizierungsbildschirm erneut. Falsche E-Mail-Adresse verwendet? Klicken Sie auf **Wrong email address? Start over**, um zur Registrierung zurückzukehren.
 
 :::tip Partner-Empfehlung
 Hat Ihr Steuerberater oder Buchhalter Ihnen einen Empfehlungslink gegeben (zum Beispiel `app.mycompanydesk.com/register?partner=DERENCODE`)? Öffnen Sie diesen Link zur Registrierung. Ihre Anmeldung wird automatisch zugeordnet, wodurch Ihr Arbeitsbereich eine 12-monatige kostenlose Pro-Testphase anstelle der standardmäßigen 60 Tage erhält.

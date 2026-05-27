@@ -14,7 +14,7 @@ Aan de slag gaan met MyCompanyDesk duurt maar een paar minuten.
    - Of gebruik een sociale provider: **Aanmelden met Google** of **Aanmelden met Outlook**.
    - **Registreren zonder wachtwoord** komt binnenkort; de tab toont een placeholder-badge.
 3. Het registratiescherm toont ook een live voorbeeldweergave: een gesimuleerd dashboard met voorbeeldinkomsten, openstaande items en activiteitschips, zodat je de ervaring kunt bekijken voordat je je vastlegt. De voorbeeldweergave gebruikt geen echte data.
-4. Als je je met e-mail hebt geregistreerd, controleer dan je inbox op een **verificatie-e-mail** en klik op de link om je account te bevestigen
+4. Als je je met e-mail hebt geregistreerd, controleer dan je inbox op een **verificatie-e-mail** en klik op de link om je account te bevestigen. Geen mail ontvangen? Stuur hem opnieuw via het verificatiescherm. Verkeerde e-mailadres gebruikt? Klik op **Verkeerd e-mailadres? Begin opnieuw** om terug te keren naar het registratiescherm.
 
 :::tip Verwijzing via boekhouder
 Heeft je boekhouder of accountant je een verwijzingslink gegeven (bijvoorbeeld `app.mycompanydesk.com/register?partner=HUNCODE`)? Gebruik die link dan om je te registreren. Je aanmelding wordt automatisch aan hen gekoppeld, wat je recht geeft op een gratis Pro-proefperiode van 12 maanden in plaats van de standaard 60 dagen.
