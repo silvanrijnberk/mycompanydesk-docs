@@ -10,6 +10,14 @@ Het dashboard op `/dashboard` is je startpagina. Het toont een vaste briefingind
 
 Het dashboard is een enkele pagina (`BriefingDashboard`) opgebouwd uit vaste redactionele blokken. Er is geen aanpassing per gebruiker mogelijk. Iedereen in de werkruimte ziet dezelfde structuur, gevoed vanuit dezelfde live data.
 
+### Welkomstscherm
+
+Op een gloednieuw account zonder facturen of klanten toont het dashboard een **welkomstscherm** (`BriefingWelcome`) in plaats van de volledige briefing. Het leidt de gebruiker naar drie eerste acties: een factuur maken, een klant toevoegen of een uitgave registreren. Onder de actiekaarten staat een link naar de [introductie](/nl/getting-started/introduction). Zodra er minstens een factuur of klant bestaat, verdwijnt het welkomstscherm permanent en neemt het volledige dashboard het over.
+
+### Skeleton en eerste laadbeurt
+
+Terwijl data laadt, toont het dashboard een **skeleton**-placeholder (`BriefingSkeleton`): een shimmer die de exacte vorm van elke kaart spiegelt. Zodra de kerndata binnen is (metrics gecached en liquiditeit opgelost), lost de skeleton op in een gecoordineerde fade-up-animatie. Elk blok op het hoogste niveau komt met een vertraagd effect omhoog, zodat het hele dashboard in een vloeiende beweging verschijnt. Een veiligheidsnet van 2,5 seconden voorkomt dat de gebruiker vast blijft zitten op de skeleton bij een trage verbinding. De media query `prefers-reduced-motion: reduce` schakelt alle entry-animaties uit.
+
 De pagina bestaat uit:
 - Een **hero**-paneel met begroeting, AI-lede en periodecontext
 - Een **pulse**-rij van vier KPI's: liquiditeit/runway, omzet (maand + jaar), debiteuren + DSO, en btw-saldo + deadline

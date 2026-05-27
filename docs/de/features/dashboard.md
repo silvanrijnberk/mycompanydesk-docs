@@ -10,6 +10,14 @@ Das Dashboard unter `/dashboard` ist Ihre Startseite. Es zeigt ein festes Briefi
 
 Das Dashboard ist eine einzelne Seite (`BriefingDashboard`), die aus festen redaktionellen Bloecken aufgebaut ist. Es gibt keine individuelle Anpassung pro Benutzer. Jeder im Arbeitsbereich sieht dieselbe Struktur, gespeist aus denselben Live-Daten.
 
+### Willkommensbildschirm
+
+Bei einem brandneuen Konto ohne Rechnungen oder Kunden zeigt das Dashboard einen **Willkommensbildschirm** (`BriefingWelcome`) anstelle des vollstaendigen Briefings. Er fuehrt den Benutzer zu drei ersten Aktionen: eine Rechnung erstellen, einen Kunden hinzufuegen oder eine Ausgabe erfassen. Unter den Aktionskarten befindet sich ein Link zur [Einfuehrung](/de/getting-started/introduction). Sobald mindestens eine Rechnung oder ein Kunde existiert, verschwindet der Willkommensbildschirm dauerhaft und das vollstaendige Dashboard uebernimmt.
+
+### Skeleton und erster Ladevorgang
+
+Waehrend Daten geladen werden, zeigt das Dashboard einen **Skeleton**-Platzhalter (`BriefingSkeleton`): einen Shimmer, der die exakte Form jeder Karte spiegelt. Sobald die Kerndaten verfuegbar sind (Metriken gecached und Liquiditaet aufgeloest), loest sich der Skeleton in einer koordinierten Fade-Up-Animation auf. Jeder Block auf oberster Ebene erscheint mit einer gestaffelten Verzoegerung, sodass das gesamte Dashboard in einer fliessenden Bewegung sichtbar wird. Ein Sicherheitsnetz von 2,5 Sekunden verhindert, dass der Benutzer bei langsamen Verbindungen am Skeleton haengen bleibt. Die Media Query `prefers-reduced-motion: reduce` deaktiviert alle Eintrittsanimationen.
+
 Die Seite besteht aus:
 - Einem **Hero**-Panel mit Begruessung, AI-Lede und Periodenkontext
 - Einer **Pulse**-Zeile mit vier KPIs: Liquiditaet/Runway, Umsatz (Monat + Jahr), Forderungen + DSO und USt.-Saldo + Frist

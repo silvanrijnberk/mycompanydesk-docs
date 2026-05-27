@@ -10,6 +10,14 @@ Le tableau de bord sur `/dashboard` est votre page d'accueil. Il presente une mi
 
 Le tableau de bord est une page unique (`BriefingDashboard`) composee de blocs editoriaux fixes. Il n'y a pas de personnalisation par utilisateur. Tout le monde dans l'espace de travail voit la meme structure, alimentee par les memes donnees en direct.
 
+### Ecran d'accueil
+
+Sur un compte tout neuf sans factures ni clients, le tableau de bord affiche un **ecran d'accueil** (`BriefingWelcome`) a la place du briefing complet. Il guide l'utilisateur vers trois premieres actions : creer une facture, ajouter un client ou enregistrer une depense. Un lien vers l'[introduction](/fr/getting-started/introduction) se trouve sous les cartes d'action. Des qu'au moins une facture ou un client existe, l'ecran d'accueil disparait definitivement et le tableau de bord complet prend le relais.
+
+### Skeleton et premier chargement
+
+Pendant le chargement des donnees, le tableau de bord affiche un placeholder **skeleton** (`BriefingSkeleton`) : un shimmer qui reflete la forme exacte de chaque carte. Une fois les donnees principales stabilisees (metriques en cache et liquidite resolue), le skeleton se dissout dans une animation d'apparition coordonnee. Chaque bloc de premier niveau apparait avec un decalage progressif, de sorte que l'ensemble du tableau de bord emerge en un seul mouvement fluide. Un filet de securite de 2,5 secondes empeche l'utilisateur de rester bloque sur le skeleton en cas de connexion lente. La media query `prefers-reduced-motion: reduce` desactive toutes les animations d'entree.
+
 La page se compose de :
 - Un panneau **hero** avec salutation, AI-lede et contexte de periode
 - Une rangee **pulse** de quatre KPI : liquidite/autonomie, CA (mois + annee), creances + DSO, et solde TVA + echeance

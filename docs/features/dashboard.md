@@ -11,6 +11,12 @@ The dashboard at `/dashboard` is your home base. It presents a fixed briefing la
 
 The dashboard is a single page (`BriefingDashboard`) composed of editorial blocks. There is no per-user customization. Every user in the workspace sees the same structure, fed from the same live data.
 
+### Welcome screen
+
+On a brand-new account with no invoices or customers, the dashboard shows a **welcome screen** (`BriefingWelcome`) instead of the full briefing. It guides the user to three core first actions: create an invoice, add a customer, or log an expense. A link to the [Getting Started](/getting-started/introduction) docs sits below the action cards. Once at least one invoice or customer exists, the welcome screen disappears permanently and the full dashboard takes its place.
+
+### Skeleton and first load
+
 While data loads, the dashboard shows a **skeleton** placeholder (`BriefingSkeleton`): a layout-matched shimmer that mirrors the final shape of each card. Once the core data is settled (metrics cached and liquidity resolved), the skeleton dissolves into a coordinated fade-up entrance. Every top-level block rises with a staggered delay so the whole dashboard appears in one smooth motion. A safety net of 2.5 seconds ensures the skeleton never traps the user on slow connections. The `prefers-reduced-motion: reduce` media query disables all entry animations.
 
 The shell loads:
