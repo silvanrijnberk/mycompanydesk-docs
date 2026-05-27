@@ -47,8 +47,8 @@ The detail page shows:
 
 - Asset information and type
 - Current status
-- **Total revenue** — real paid-invoice revenue for this object, computed from the financials endpoint
-- **Active contracts** — number of currently active contracts linked to this object
+- **Total revenue**: real paid-invoice revenue for this object, computed from the financials endpoint
+- **Active contracts**: number of currently active contracts linked to this object
 - **WOZ history** (for Properties) — annual WOZ values used in the Box 3 tax calculation
 - Linked contracts
 - Rental history
