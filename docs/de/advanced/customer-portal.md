@@ -30,7 +30,7 @@ Das Portal zeigt eine übersichtliche, gebrandete Ansicht der Rechnung, einschli
 
 ### Zahlung
 
-Kunden können direkt über das Portal bezahlen. Wenn Sie Mollie oder Stripe verbunden haben, erscheinen Zahlungsschaltflächen auf der Rechnungsansicht, sodass Ihr Kunde mit einem Klick bezahlen kann. Wenn die Zahlung bestätigt wird, aktualisiert sich der Rechnungsstatus in Ihrem Dashboard automatisch auf **Bezahlt**.
+Kunden können direkt über das Portal bezahlen. Wenn Sie Mollie oder Stripe verbunden haben, erscheinen Zahlungsschaltflächen auf der Rechnungsansicht, sodass Ihr Kunde mit einem Klick bezahlen kann. Wenn ein Kunde einem Autopay-Link folgt (zum Beispiel aus einer Zahlungserinnerung), scrollt das Portal zur richtigen Zahlungsschaltfläche und hebt sie mit einer pulsierenden Animation hervor, anstatt automatisch zum Zahlungsvorgang weiterzuleiten. So kann der Kunde die Rechnung vor der Zahlung prüfen. Wenn die Zahlung bestätigt wird, aktualisiert sich der Rechnungsstatus in Ihrem Dashboard automatisch auf **Bezahlt**.
 
 #### Mollie-Zahlungseinstellungen
 

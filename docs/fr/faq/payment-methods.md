@@ -41,7 +41,7 @@ Pour connecter un prestataire :
 
 Mollie prend en charge iDEAL, Bancontact, la carte bancaire et le virement, ideal pour les clients neerlandais et belges. Stripe Connect prend en charge la carte, Apple Pay, Google Pay et le prelevement SEPA, adapte aux clients internationaux.
 
-Pour deconnecter, cliquez sur **Loskoppelen** sur la carte correspondante. Apres la deconnexion, les clients ne peuvent plus payer via ce prestataire.
+Pour deconnecter, cliquez sur **Loskoppelen** sur la carte correspondante. Si des paiements ont eu lieu au cours des 24 dernieres heures, un avertissement vous rappelle que des webhooks en attente peuvent encore arriver et que les remboursements pour ces paiements doivent etre traites manuellement. Apres la deconnexion, les clients ne peuvent plus payer via ce prestataire.
 
 ### Parametres de paiement Mollie
 

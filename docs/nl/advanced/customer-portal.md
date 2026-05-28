@@ -30,7 +30,7 @@ Het portaal toont een overzichtelijke, huisstijl-conforme weergave van de factuu
 
 ### Betaling
 
-Klanten kunnen direct via het portaal betalen. Als je Mollie of Stripe hebt gekoppeld, verschijnen er betaalknoppen op de factuurweergave zodat je klant met één klik kan betalen. Wanneer de betaling is bevestigd, wordt de factuurstatus in je dashboard automatisch bijgewerkt naar **Betaald**.
+Klanten kunnen direct via het portaal betalen. Als je Mollie of Stripe hebt gekoppeld, verschijnen er betaalknoppen op de factuurweergave zodat je klant met één klik kan betalen. Als een klant een autopay-link volgt (bijvoorbeeld vanuit een betaalherinnering), scrolt het portaal naar de juiste betaalknop en markeert deze met een pulserende animatie in plaats van automatisch door te verwijzen naar het betaalproces. Zo kan de klant de factuur eerst bekijken voordat deze betaalt. Wanneer de betaling is bevestigd, wordt de factuurstatus in je dashboard automatisch bijgewerkt naar **Betaald**.
 
 #### Mollie-betalingsinstellingen
 
