@@ -14,7 +14,7 @@ Le constructeur de site remplace l'ancien profil d'entreprise a page unique. Cha
 - **Selecteur de domaine**: Lorsque votre espace de travail possede plusieurs domaines personnalises (abonnement Pro), un menu deroulant dans la barre superieure vous permet de basculer entre l'edition du site principal et une variante par domaine. Chaque domaine dispose de ses propres pages, navigation, tokens de design et snapshot de publication.
 - **Blocs de section**: Ajoutez des sections hero, texte, galerie, spotlight, services, equipe, temoignages, formulaire de contact et HTML personnalise a chaque page. Sauvegardez des sections comme blocs reutilisables pour constituer votre propre bibliotheque.
 - **Tokens de design**: Definissez les couleurs de marque, les polices, les espacements, les coins arrondis, le style de mouvement, le CSS personnalise et un favicon de site. Les modifications s'appliquent a l'ensemble du site.
-- **Editeur de navigation**: Reorganisez les liens d'en-tete par glisser-deposer, avec des groupes deroulants et des liens externes.
+- **Editeur de navigation**: Reorganisez les liens d'en-tete par glisser-deposer, avec des groupes deroulants, des liens externes et le style de la barre de navigation en ligne (nom de marque, bouton CTA, telephone, barre d'appel, sticky).
 - **Snapshots de publication**: Travaillez en brouillon, previsualisez vos modifications, puis publiez. Les modifications non publiees sont affichees dans la barre superieure.
 - **Apercu responsive**: Basculez entre les vues desktop, tablette et mobile pendant l'edition.
 
@@ -291,13 +291,24 @@ Les modifications non publiees sont suivies par page et par token. Le bouton Pub
 
 ## Navigation
 
-L'editeur de navigation vous permet d'organiser les liens d'en-tete de votre site :
+L'editeur de navigation vous permet d'organiser les liens d'en-tete de votre site et de controler l'apparence de la barre de navigation sur l'ensemble de votre site :
 
 - Faites glisser les pages pour reordonner la navigation.
 - Creez des groupes deroulants pour imbriquer des pages sous un libelle parent.
 - Ajoutez des liens externes qui pointent hors de votre site.
 - Le logo dans l'en-tete est cliquable et renvoie toujours a la page d'accueil.
 - La page d'accueil est toujours en premiere position et verrouillee.
+
+Au-dessus du menu principal, un panneau **Navbar** vous donne un acces direct aux parametres de style de l'en-tete qui n'etaient auparavant disponibles que dans l'onglet Style. Vous pouvez definir :
+
+- **Nom de marque** : Le texte affiche dans l'en-tete lorsqu'aucune image de logo n'est telechargee (laissez vide pour utiliser le logo de la section Branding).
+- **Bouton CTA** : Le libelle et le lien de destination pour le bouton d'appel a l'action en haut a droite. Les deux champs doivent etre remplis pour que le bouton apparaisse.
+- **Numero de telephone** : Un lien `tel:` cliquable qui apparait a cote du bouton CTA sur ordinateur et dans le tiroir de navigation mobile. Laissez vide pour masquer le bouton d'appel.
+- **Libelle du telephone** : Le texte affiche a cote de l'icone de telephone sur mobile (par defaut << Appeler >> si laisse vide).
+- **Barre d'appel mobile** : Lorsqu'elle est activee, un bouton d'appel fixe reste epingle en bas de l'ecran sur les appareils mobiles.
+- **Navbar collante** : Lorsqu'elle est activee (activee par defaut), la barre de navigation reste visible lors du defilement.
+
+Ces parametres s'appliquent a chaque page de votre site, comme dans l'onglet Style. Les modifications sont enregistrees automatiquement avec un court delai apres l'arret de la saisie. Pour la mise en page visuelle, le style d'arriere-plan et l'apparence du bouton, consultez l'[onglet Style](#styling-votre-site).
 
 ## URL publique
 

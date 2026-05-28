@@ -14,7 +14,7 @@ De sitebouwer vervangt het oude bedrijfsprofiel van één pagina. Elke nieuwe we
 - **Domeinwisselaar**: Wanneer je werkruimte meerdere eigen domeinen heeft (Pro-abonnement), kun je via een dropdown in de bovenbalk wisselen tussen het bewerken van de hoofdsite en een per-domein-variant. Elk domein krijgt zijn eigen pagina's, navigatie, ontwerptokens en publicatiesnapshot.
 - **Sectieblokken**: Voeg hero-, tekst-, galerij-, spotlight-, diensten-, team-, testimonial-, contactformulier- en aangepaste HTML-secties toe aan elke pagina. Sla secties op als herbruikbare blokken en bouw je eigen bibliotheek op.
 - **Ontwerptokens**: Stel merkkleuren, lettertypes, witruimte, hoekradius, bewegingsstijl, aangepaste CSS en een site-favicon in. Wijzigingen gelden voor de hele site.
-- **Navigatie-editor**: Sleep en zet headerlinks op volgorde, met dropdown-groepen en externe links.
+- **Navigatie-editor**: Sleep en zet headerlinks op volgorde, met dropdown-groepen, externe links en inline navbar-styling (merknaam, CTA-knop, telefoon, belknop, sticky).
 - **Publicatiesnapshots**: Werk in concept, bekijk je wijzigingen en publiceer daarna. Ongepubliceerde wijzigingen zie je in de bovenbalk.
 - **Responsieve preview**: Schakel tussen desktop-, tablet- en mobiele weergave tijdens het bewerken.
 
@@ -291,13 +291,24 @@ Ongepubliceerde wijzigingen worden per pagina en per token bijgehouden. De publi
 
 ## Navigatie
 
-De navigatie-editor laat je de headerlinks van je site indelen:
+De navigatie-editor laat je de headerlinks van je site indelen en bepaalt hoe de navigatiebalk er op je hele site uitziet:
 
 - Sleep pagina's om de navigatie op volgorde te zetten.
 - Maak dropdown-groepen om pagina's onder een bovenliggend label te nesten.
 - Voeg externe links toe die buiten je site verwijzen.
 - Het logo in de header is klikbaar en linkt altijd terug naar de homepage.
 - De homepage staat altijd vooraan en is vergrendeld.
+
+Boven het hoofdmenu geeft een **Navbar**-paneel je direct toegang tot de headerstyling die voorheen alleen op het Stijl-tabblad te vinden was. Je kunt instellen:
+
+- **Merknaam**: De tekst die in de header wordt getoond wanneer er geen logo is geupload (laat leeg om het logo van Branding te gebruiken).
+- **CTA-knop**: Het label en de bestemmingslink voor de call-to-actionknop rechtsboven. Beide velden moeten ingevuld zijn om de knop zichtbaar te maken.
+- **Telefoonnummer**: Een klikbare `tel:`-link die naast de CTA-knop op desktop verschijnt en in de mobiele navigatielade. Laat leeg om de belknop te verbergen.
+- **Bel-label**: De tekst naast het telefoonicoon op mobiel (standaard is dit "Bel direct" wanneer leeg gelaten).
+- **Belknop op mobiel**: Wanneer ingeschakeld blijft er onderaan het scherm een vaste belknop staan op mobiele apparaten.
+- **Sticky navigatiebalk**: Wanneer ingeschakeld (standaard aan), blijft de navigatiebalk zichtbaar terwijl de bezoeker naar beneden scrollt.
+
+Deze instellingen gelden voor elke pagina van je site, net zoals op het Stijl-tabblad. Wijzigingen worden automatisch opgeslagen met een korte wachttijd nadat je stopt met typen. Voor de visuele layout, achtergrondstijl en knopweergave, zie het [Stijl-tabblad](#styling-van-je-site).
 
 ## Openbare URL
 
