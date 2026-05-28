@@ -60,6 +60,18 @@ Bekijk en beheer je actieve sessies:
 Als je een sessie ziet die je niet herkent, trek deze dan direct in en wijzig je wachtwoord.
 :::
 
+## Passkeys
+
+Met passkeys kun je inloggen met biometrie of een security key in plaats van een wachtwoord. Ga naar **Profiel > Beveiliging** om ze te beheren.
+
+- Registreer meerdere passkeys (Face ID, Touch ID, Windows Hello, hardware keys)
+- Geef elke passkey een naam zodat je individuele apparaten kunt intrekken
+- Zodra er een passkey is geregistreerd, verschijnt er standaard een passkey-knop bij het inloggen
+
+::: info
+In werkruimtes waar passkeys door een beheerder worden beheerd, zien niet-beheerders een informatiekaart in plaats van het beheerpaneel. Vraag je beheerder om een passkey voor je in te stellen, of om je beheerdersrechten te geven zodat je het zelf kunt doen.
+:::
+
 ## Social login
 
 Als je Google of Microsoft gebruikt om in te loggen:

@@ -60,6 +60,18 @@ Sehen und verwalten Sie Ihre aktiven Sitzungen:
 Wenn Sie eine Sitzung sehen, die Sie nicht erkennen, widerrufen Sie sie sofort und ändern Sie Ihr Passwort.
 :::
 
+## Passkeys
+
+Mit Passkeys können Sie sich mit Biometrie oder einem Sicherheitsschlüssel statt eines Passworts anmelden. Gehen Sie zu **Profil > Sicherheit**, um sie zu verwalten.
+
+- Registrieren Sie mehrere Passkeys (Face ID, Touch ID, Windows Hello, Hardware-Schlüssel)
+- Benennen Sie jeden Passkey, damit Sie einzelne Geräte widerrufen können
+- Sobald ein Passkey registriert ist, wird standardmäßig die Passkey-Schaltfläche beim Anmelden angezeigt
+
+::: info
+In Arbeitsbereichen, in denen Passkeys von einem Administrator verwaltet werden, sehen Mitglieder ohne Admin-Rechte eine Infokarte anstelle des Verwaltungspanels. Bitten Sie Ihren Administrator, einen Passkey für Sie einzurichten, oder Ihnen Admin-Rechte zu geben, damit Sie sie selbst konfigurieren können.
+:::
+
 ## Social Login
 
 Wenn Sie Google oder Microsoft zur Anmeldung verwenden:
