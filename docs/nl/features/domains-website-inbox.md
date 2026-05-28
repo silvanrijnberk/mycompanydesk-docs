@@ -280,7 +280,7 @@ Wanneer MyCompanyDesk een demo-website bouwt voor een prospect als onderdeel van
 
 ### Zo werkt het
 
-1. Sil of de outreach-cron maakt een demo-werkruimte aan (`companies.is_demo = true`) met een branchespecifieke website en inhoud.
+1. Sil of de outreach-cron maakt een demo-werkruimte aan (`companies.is_demo = true`) met een branchespecifieke website van 4 pagina's (Home, Diensten, Over ons, Contact), gebouwd op de standaard multi-page basis die elke nieuwe werkruimte krijgt, waarna branchespecifieke kopij over de Home-hero wordt gelegd.
 2. De prospect ontvangt een link zoals `https://app.mycompanydesk.com/claim/dakdekker-amsterdam`.
 3. De claimpagina laadt de demo op basis van de slug en toont de bedrijfsnaam. Als de demo-werkruimte bestaat en claimable is, vult de prospect zijn e-mailadres en een wachtwoord in (minimaal 8 tekens, met een letter en een cijfer).
 4. Bij verzending wordt de werkruimte atomisch overgedragen: de placeholder-gebruiker wordt herschreven met het e-mailadres en wachtwoord van de prospect, `is_demo` wordt uitgezet en de outreach-rij wordt bijgewerkt met claim-metadata.

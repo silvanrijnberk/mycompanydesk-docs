@@ -280,7 +280,7 @@ Wenn MyCompanyDesk im Rahmen des Outreach-Programms eine Demo-Website fur einen 
 
 ### So funktioniert es
 
-1. Sil oder der Outreach-Cron erstellt einen Demo-Arbeitsbereich (`companies.is_demo = true`) mit einer branchenspezifischen Website und Inhalten.
+1. Sil oder der Outreach-Cron erstellt einen Demo-Arbeitsbereich (`companies.is_demo = true`) mit einer 4-seitigen branchenspezifischen Website (Home, Diensten, Über uns, Kontakt), aufgebaut auf der Standard-Multi-Page-Basis, die jeder neue Workspace erhält, und legt anschließend branchenspezifischen Text über den Home-Hero.
 2. Der Interessent erhalt einen Link wie `https://app.mycompanydesk.com/claim/dachdecker-berlin`.
 3. Die Beanspruchungsseite ladt die Demo anhand des Slugs und zeigt den Firmennamen an. Wenn der Demo-Arbeitsbereich existiert und beanspruchbar ist, gibt der Interessent seine E-Mail-Adresse und ein Passwort ein (mindestens 8 Zeichen, mit einem Buchstaben und einer Ziffer).
 4. Beim Absenden wird der Arbeitsbereich atomar ubertragen: Der Platzhalter-Benutzer wird mit der E-Mail-Adresse und dem Passwort des Interessenten uberschrieben, `is_demo` wird deaktiviert und die Outreach-Zeile wird mit den Beanspruchungs-Metadaten aktualisiert.

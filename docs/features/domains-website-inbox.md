@@ -280,7 +280,7 @@ When MyCompanyDesk builds a demo website for a prospect as part of the outreach 
 
 ### How it works
 
-1. Sil or the outreach cron generates a demo workspace (`companies.is_demo = true`) with a trade-specific website and content.
+1. Sil or the outreach cron generates a demo workspace (`companies.is_demo = true`) with a 4-page trade-specific website (Home, Diensten, Over ons, Contact) built on top of every new workspace's default site foundation, then overlays trade-aware copy on the Home hero.
 2. The prospect receives a link like `https://app.mycompanydesk.com/claim/roofer-amsterdam`.
 3. The claim page loads the demo by slug and shows the business name. If the demo workspace exists and is claimable, the prospect fills in their email and a password (minimum 8 characters, at least one letter and one digit).
 4. On submit, the workspace is atomically transferred: the placeholder user is rewritten with the prospect's email and password, `is_demo` is flipped off, and the outreach row is updated with claim metadata.

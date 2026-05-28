@@ -280,7 +280,7 @@ Lorsque MyCompanyDesk cree un site de demonstration pour un prospect dans le cad
 
 ### Comment ca fonctionne
 
-1. Sil ou le cron de prospection cree un espace de travail de demonstration (`companies.is_demo = true`) avec un site web et du contenu specifiques au secteur.
+1. Sil ou le cron de prospection cree un espace de travail de demonstration (`companies.is_demo = true`) avec un site web de 4 pages specifique au secteur (Accueil, Services, A propos, Contact), construit sur la base multi-page standard que chaque nouvel espace de travail recoit, avec un contenu specifique au metier superpose sur le hero de la page d'accueil.
 2. Le prospect recoit un lien comme `https://app.mycompanydesk.com/claim/couvreur-lyon`.
 3. La page de revendication charge la demonstration par slug et affiche le nom de l'entreprise. Si l'espace de travail de demonstration existe et peut etre revendique, le prospect saisit son adresse e-mail et un mot de passe (minimum 8 caracteres, avec une lettre et un chiffre).
 4. A la soumission, l'espace de travail est transfere de maniere atomique : l'utilisateur placeholder est reecrit avec l'e-mail et le mot de passe du prospect, `is_demo` est desactive et la ligne de prospection est mise a jour avec les metadonnees de revendication.

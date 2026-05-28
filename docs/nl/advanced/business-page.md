@@ -8,9 +8,9 @@ Bouw je zakelijke website met een drag-and-drop-editor. Maak meerdere pagina's, 
 
 ## Overzicht
 
-De sitebouwer vervangt het oude bedrijfsprofiel van één pagina. Je krijgt een volwaardige website-editor met:
+De sitebouwer vervangt het oude bedrijfsprofiel van één pagina. Elke nieuwe werkruimte begint met een standaardsite van 4 pagina's (Home, Diensten, Over ons, Contact), zodat je vanaf dag één een echte multi-page basis hebt. De editor biedt je:
 
-- **Meerdere pagina's**: Maak zoveel pagina's als je nodig hebt, elk met een eigen pad en secties.
+- **Meerdere pagina's**: Maak zoveel pagina's als je nodig hebt, elk met een eigen pad en secties. De vier standaardpagina's zijn klaar om te bewerken, te verwijderen of aan te vullen.
 - **Domeinwisselaar**: Wanneer je werkruimte meerdere eigen domeinen heeft (Pro-abonnement), kun je via een dropdown in de bovenbalk wisselen tussen het bewerken van de hoofdsite en een per-domein-variant. Elk domein krijgt zijn eigen pagina's, navigatie, ontwerptokens en publicatiesnapshot.
 - **Sectieblokken**: Voeg hero-, tekst-, galerij-, spotlight-, diensten-, team-, testimonial-, contactformulier- en aangepaste HTML-secties toe aan elke pagina. Sla secties op als herbruikbare blokken en bouw je eigen bibliotheek op.
 - **Ontwerptokens**: Stel merkkleuren, lettertypes, witruimte, hoekradius, bewegingsstijl, aangepaste CSS en een site-favicon in. Wijzigingen gelden voor de hele site.
@@ -52,7 +52,18 @@ De sitebouwer heeft vijf tabs (zes als Stijl is uitgeklapt):
 4. Kies een sjabloon of begin leeg.
 5. De pagina opent in de editor, waar je secties kunt toevoegen en uitbouwen.
 
-Elke pagina krijgt een uniek pad. De homepage (`/`) wordt standaard aangemaakt en kan niet worden verwijderd.
+### Standaardpagina's
+
+Elke nieuwe werkruimte krijgt vier pagina's mee:
+
+| Pagina | Pad | Beschrijving |
+|---|---|---|
+| Home | `/` | Je hoofdpagina. Kan niet worden verwijderd. |
+| Diensten | `/diensten` | Laat zien wat je aanbiedt. Vooraf gevuld met een dienstensectie. |
+| Over ons | `/over-ons` | Vertel bezoekers wie je bent. |
+| Contact | `/contact` | Contactformulier en gegevens. Gekoppeld vanuit de footer. |
+
+Deze pagina's zijn automatisch verbonden met de navigatie-header en footer. Je kunt ze allemaal bewerken of verwijderen, behalve de Home-pagina die altijd verplicht is. De navigatie past zijn links aan als je pagina's toevoegt of verwijdert.
 
 ### Paginastatus: Live vs Concept
 
