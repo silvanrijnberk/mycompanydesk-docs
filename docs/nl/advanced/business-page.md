@@ -76,6 +76,33 @@ In de **Editor**-tab:
 
 Sommige secties hebben alleen-systeemvarianten die beschikbaar zijn op de vergrendelde homepage maar niet op aangepaste pagina's.
 
+## AI-hulptools
+
+Twee AI-gestuurde tools helpen je sneller pagina's te schrijven en te illustreren, direct in het editor-inspectiepaneel.
+
+### Tekst herschrijven
+
+Elk tekst- en tekstvlakveld in de sectie-inspector krijgt vier kleine toonknopjes eronder zodra het veld genoeg inhoud heeft (meer dan een paar woorden). De knoppen sturen je huidige tekst naar de server, die een lichtgewicht Gemini-model gebruikt om het in een specifieke toon te herschrijven:
+
+- **Korter**: Halveert de tekst ongeveer, met behoud van de betekenis.
+- **Kalmer**: Maakt de tekst rustiger en geruststellend. Minder verkooppraatje, meer vertrouwen.
+- **Scherper**: Verscherpt de formulering. Sterkere werkwoorden, geen aarzeling.
+- **Vriendelijker**: Verzacht de toon, warmer en toegankelijker.
+
+De herschrijving blijft altijd in dezelfde taal als het origineel (meestal Nederlands). Het model herschrijft alleen, het verzint geen nieuwe informatie. De herschreven tekst vervangt je veldinhoud direct. Je kunt op een andere toonknop klikken, ongedaan maken of verder bewerken.
+
+Het tekstveld is beperkt tot 2000 tekens voor de herschrijf-aanroep, zodat het model snel en voorspelbaar blijft. Als de AI-service tijdelijk niet beschikbaar is, zie je een foutmelding en blijft je oorspronkelijke tekst onaangeroerd.
+
+### Stockfoto zoeken
+
+Wanneer je het afbeelding-uploadveld opent in een willekeurig sectieblok (hero, spotlight, team, portfolio, logo's, product), zie je nu een **Stockfoto**-knop naast de upload- en URL-plak-knoppen. Als je erop klikt, opent zich een inline zoekpaneel dat is verbonden met Unsplash, de gratis stockfotobibliotheek.
+
+- Typ een zoekterm (bijv. "kapsalon", "koffie", "hout") en druk op enter.
+- Resultaten verschijnen in een raster. Klik op een foto om deze als sectie-afbeelding in te voegen.
+- De zoekopdracht loopt via de MyCompanyDesk-server, dus je Unsplash-toegangssleutel komt nooit in de browser.
+- Naamsvermelding wordt automatisch bijgehouden volgens de API-richtlijnen van Unsplash. We raden aan om fotografen te vermelden waar mogelijk.
+- Als Unsplash niet is geconfigureerd op je werkruimte, blijft de Stockfoto-knop verborgen, zodat je nooit een niet-werkende functie ziet.
+
 ## Opgeslagen blokken
 
 Sla elke sectie op als herbruikbaar blok en bouw een persoonlijke bibliotheek van voorgestijlde bouwstenen. Opgeslagen blokken verschijnen bovenaan de sectie-toevoeger, zodat je een bewaarde layout op elke pagina kunt plaatsen zonder hem opnieuw op te bouwen.

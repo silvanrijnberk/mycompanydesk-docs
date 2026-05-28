@@ -76,6 +76,33 @@ Im **Editor**-Tab:
 
 Einige Abschnitte haben Systemvarianten, die nur auf der gesperrten Startseite verfügbar sind.
 
+## KI-Hilfswerkzeuge
+
+Zwei KI-gestützte Werkzeuge helfen Ihnen, Ihre Seiten schneller zu texten und zu bebildern, direkt im Editor-Inspektor.
+
+### Text umschreiben
+
+Jedes Text- und Textarea-Feld im Abschnitts-Inspektor bekommt vier kleine Ton-Buttons darunter, sobald das Feld genug Inhalt hat (mehr als ein paar Wörter). Die Buttons senden Ihren aktuellen Text an den Server, der ein schlankes Gemini-Modell nutzt, um ihn in einem bestimmten Ton umzuschreiben:
+
+- **Kürzer**: Kürzt den Text auf etwa die Hälfte, behält aber die Bedeutung.
+- **Ruhiger**: Macht den Text ruhiger und beruhigender. Weniger Verkaufsfloskel, mehr Vertrauen.
+- **Schärfer**: Verschärft die Formulierung. Stärkere Verben, kein Zögern.
+- **Freundlicher**: Mildert den Ton, wärmer und zugänglicher.
+
+Die Umschreibung bleibt immer in derselben Sprache wie das Original (meist Niederländisch). Das Modell schreibt nur um, es erfindet keine neuen Informationen. Der umgeschriebene Text ersetzt Ihren Feldinhalt direkt. Sie können einen anderen Ton-Button klicken, rückgängig machen oder weiter bearbeiten.
+
+Das Textfeld ist auf 2000 Zeichen für den Umschreib-Aufruf begrenzt, damit das Modell schnell und vorhersehbar bleibt. Wenn der KI-Dienst vorübergehend nicht verfügbar ist, sehen Sie eine Fehlermeldung und Ihr ursprünglicher Text bleibt unberührt.
+
+### Stockfoto-Suche
+
+Wenn Sie das Bild-Upload-Feld in einem beliebigen Abschnittsblock öffnen (Hero, Spotlight, Team, Portfolio, Logos, Produkt), sehen Sie jetzt einen **Stockfoto**-Button neben den Upload- und URL-Buttons. Ein Klick öffnet ein Inline-Suchpanel, das mit Unsplash, der kostenlosen Stockfoto-Bibliothek, verbunden ist.
+
+- Geben Sie einen Suchbegriff ein (z. B. "friseursalon", "kaffee", "holz") und drücken Sie Enter.
+- Ergebnisse erscheinen in einem Raster. Klicken Sie auf ein Foto, um es als Abschnittsbild einzufügen.
+- Die Suche läuft über den MyCompanyDesk-Server, sodass Ihr Unsplash-Zugriffsschlüssel niemals den Browser erreicht.
+- Die Namensnennung wird automatisch gemäß den API-Richtlinien von Unsplash verfolgt. Wir empfehlen, Fotografen wo möglich zu nennen.
+- Wenn Unsplash in Ihrem Workspace nicht konfiguriert ist, bleibt der Stockfoto-Button ausgeblendet, sodass Sie nie ein nicht funktionierendes Feature sehen.
+
 ## Gespeicherte Blöcke
 
 Speichern Sie jeden Abschnitt als wiederverwendbaren Block und bauen Sie eine persönliche Bibliothek vorgestylter Bausteine auf. Gespeicherte Blöcke erscheinen ganz oben im Abschnitts-Hinzufügen-Panel, sodass Sie ein gespeichertes Layout auf jeder Seite einfügen können, ohne es neu aufbauen zu müssen.
