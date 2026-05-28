@@ -23,7 +23,7 @@ Die Rechnungsseite zeigt alle Ihre Rechnungen mit Filter- und Suchfunktionen. Ve
 
 1. Gehen Sie zu **Rechnungen > Neue Rechnung**
 2. Wählen oder erstellen Sie einen **Kunden**
-3. Fügen Sie **Positionen** mit Beschreibung, Menge, Einzelpreis und USt.-Satz hinzu
+3. Fügen Sie **Positionen** mit Beschreibung, Menge, Einzelpreis und USt.-Satz hinzu. Der Standard-USt.-Satz für neue Positionen stammt aus Ihren Steuereinstellungen (Finanzen → Steuern). Bei Kunden mit Reverse-Charge wird automatisch 0% verwendet.
 4. Legen Sie das **Rechnungsdatum** und das **Fälligkeitsdatum** fest
 5. Fügen Sie optionale **Anmerkungen** oder **interne Bemerkungen** hinzu
 6. Klicken Sie auf **Speichern**, um einen Entwurf zu erstellen

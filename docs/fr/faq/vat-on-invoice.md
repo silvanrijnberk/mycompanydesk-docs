@@ -12,3 +12,5 @@ Pour définir la TVA sur une facture :
 2. Définissez le taux de TVA par ligne (ex. 21%, 6%, 0%)
 3. Le système calcule la TVA automatiquement
 4. Les totaux TVA apparaissent dans le résumé
+
+Les nouvelles lignes de facture démarrent avec le taux de TVA par défaut issu de vos paramètres fiscaux (Finances → TVA → Taux de TVA standard Factures). Vous pouvez le modifier dans Paramètres de l'espace de travail → Finances → TVA. Pour les clients en autoliquidation, le taux est toujours de 0%.

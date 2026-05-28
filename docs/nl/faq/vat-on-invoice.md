@@ -12,3 +12,5 @@ Om BTW op een factuur in te stellen:
 2. Stel het BTW-tarief per regel in (bijv. 21%, 9%, 0%)
 3. Het systeem berekent de BTW automatisch
 4. BTW-totalen verschijnen in de factuursamenvatting
+
+Nieuwe factuurregels beginnen met het standaard BTW-tarief uit je belastinginstellingen (Geldzaken → Belasting → Standaard BTW-tarief Facturen). Je past dit aan via werkruimte-instellingen → Financieel → Belasting. Voor klanten met verlegde BTW is het tarief altijd 0%.
