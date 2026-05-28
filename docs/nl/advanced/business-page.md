@@ -138,6 +138,26 @@ Hoe de animatie start:
 
 Bezoekers die `prefers-reduced-motion: reduce` op OS-niveau hebben ingeschakeld, zien elke sectie direct in de eindpositie. Er worden geen animaties afgespeeld. Op werkruimteniveau kunnen motion-tokens beweging ook per site uitschakelen. Wanneer bewegingsreductie actief is, krijgt de sectie nooit de verborgen startklasse, zodat de server-gerenderde HTML ook toegankelijk is voordat JavaScript wordt uitgevoerd.
 
+## Sectiescheidingen
+
+Elk sectieblok heeft een **Onderkant scheiding**-instelling in het stijlpaneel van de inspector. Het voegt een SVG-vorm toe aan de onderrand van de sectie die overlapt met de volgende sectie, voor een organische visuele overgang in plaats van een harde knip. De scheiding gebruikt de achtergrondkleur van de huidige sectie, dus het werkt het best tussen aangrenzende secties met verschillende egale achtergronden.
+
+### Scheidingstypes
+
+| Type | Effect |
+|---|---|
+| **Golf** | Een vloeiende S-curve langs de onderrand. |
+| **Boog** | Een holle welving: de volgende sectie komt omhoog in het midden. |
+| **Schuin** | Een diagonaal die van links naar rechts omhoog loopt. |
+| **Geen** | Geen scheiding. Secties sluiten aan op een rechte horizontale rand (standaard). |
+
+### Zo werkt het
+
+- De SVG-scheiding bevindt zich volledig onder de sectie, in de ruimte van de volgende sectie. Het overlapt de inhoud van de huidige sectie niet.
+- Het gevulde deel van het pad tekent de achtergrond van de huidige sectie naar beneden toe. Het transparante gedeelte onder de vorm laat de volgende sectie doorschijnen.
+- De scheiding volgt automatisch de achtergrondkleur van de sectie, inclusief aangepaste hex-waarden en CSS-variabele-tokens.
+- Scheidingen zijn decoratief (`aria-hidden="true"`) en beïnvloeden toetsenbord- of schermlezernavigatie niet.
+
 ## Je site vormgeven
 
 In de **Stijl**-tab bepaal je de look-and-feel van je hele site:
