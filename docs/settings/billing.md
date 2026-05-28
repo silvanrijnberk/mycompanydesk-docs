@@ -105,7 +105,7 @@ Boolean features unlocked per plan:
 | `api_access`, `webhooks`, `priority_support` | no | no | yes |
 | `advanced_permissions` | no | no | yes |
 | `bank_connections` | no | no | yes |
-| `e2b_realtime_classification` | no | yes | yes |
+| `realtime_classification` | no | yes | yes |
 
 The full feature list lives in `FEATURE_KEYS` in `plans.config.js`.
 

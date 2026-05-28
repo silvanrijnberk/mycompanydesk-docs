@@ -98,7 +98,7 @@ Boolsche Funktionen pro Tarif:
 | `api_access`, `webhooks`, `priority_support` | nein | nein | ja |
 | `advanced_permissions` | nein | nein | ja |
 | `bank_connections` | nein | nein | ja |
-| `e2b_realtime_classification` | nein | ja | ja |
+| `realtime_classification` | nein | ja | ja |
 
 Die vollstandige Funktionsliste befindet sich in `FEATURE_KEYS` in `plans.config.js`.
 

@@ -98,7 +98,7 @@ Booleaanse functies per abonnement:
 | `api_access`, `webhooks`, `priority_support` | nee | nee | ja |
 | `advanced_permissions` | nee | nee | ja |
 | `bank_connections` | nee | nee | ja |
-| `e2b_realtime_classification` | nee | ja | ja |
+| `realtime_classification` | nee | ja | ja |
 
 De volledige functielijst staat in `FEATURE_KEYS` in `plans.config.js`.
 
