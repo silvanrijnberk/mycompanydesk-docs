@@ -42,3 +42,7 @@ So verbindest du einen Anbieter:
 Mollie unterstuetzt iDEAL, Bancontact, Kreditkarte und Bankueberweisung, ideal fuer niederlaendische und belgische Kunden. Stripe Connect unterstuetzt Karte, Apple Pay, Google Pay und SEPA-Lastschrift, geeignet fuer internationale Kunden.
 
 Zum Trennen klicke auf **Loskoppelen** auf der entsprechenden Karte. Nach der Trennung koennen Kunden nicht mehr ueber diesen Anbieter bezahlen.
+
+### Mollie-Zahlungseinstellungen
+
+Sobald Mollie verbunden ist, erscheinen ein **Betaalknop op facturen**-Schalter und ein **Betaalmethoden**-Bereich auf der Mollie-Karte. Der Schalter aktiviert oder deaktiviert die Zahlungsschaltflaeche auf allen Rechnungen, ohne Mollie zu trennen. Die Methodenliste, live aus Ihrem Mollie-Dashboard, laesst Sie auswaehlen, welche Zahlungsmethoden Ihre Kunden sehen. Mit **Stuur testbetaling** durchlaufen Sie einen kostenlosen €1-Test-Checkout ueber Mollie, um zu bestaetigen, dass alles Ende-zu-Ende funktioniert.

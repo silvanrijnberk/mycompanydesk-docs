@@ -42,3 +42,7 @@ To connect a processor:
 Mollie supports iDEAL, Bancontact, credit card, and bank transfer, ideal for Dutch and Belgian customers. Stripe Connect supports card, Apple Pay, Google Pay, and SEPA direct debit, suitable for international customers.
 
 To disconnect, click **Loskoppelen** on the relevant card. After disconnecting, customers can no longer pay via that processor.
+
+### Mollie payment settings
+
+Once Mollie is connected, a **Betaalknop op facturen** toggle and **Betaalmethoden** section appear on the Mollie card. The toggle turns the pay button on or off across all invoices without disconnecting. The method list, fetched live from your Mollie dashboard, lets you limit which payment methods customers see. A **Stuur testbetaling** button runs a free €1 test checkout through Mollie so you can confirm everything works end-to-end.
