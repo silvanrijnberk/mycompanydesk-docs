@@ -138,6 +138,26 @@ Wie die Animation startet:
 
 Besucher, die `prefers-reduced-motion: reduce` auf Betriebssystemebene aktiviert haben, sehen jeden Abschnitt sofort im Endzustand. Es werden keine Animationen abgespielt. Auf Workspace-Ebene können Motion-Tokens die Bewegung auch pro Site deaktivieren. Wenn Bewegungsreduktion aktiv ist, erhält der Abschnitt nie die versteckte Startklasse, sodass das vom Server gerenderte HTML bereits vor der JavaScript-Ausführung zugänglich ist.
 
+## Abschnittstrenner
+
+Jeder Abschnittsblock hat eine **Unterkante-Trenner**-Einstellung im Stil-Panel des Inspectors. Sie fügt eine SVG-Form an der Unterkante des Abschnitts hinzu, die in den nächsten Abschnitt überläuft und einen organischen visuellen Übergang statt eines harten Schnitts erzeugt. Der Trenner verwendet die Hintergrundfarbe des aktuellen Abschnitts und funktioniert daher am besten zwischen benachbarten Abschnitten mit unterschiedlichen einfarbigen Hintergründen.
+
+### Trennertypen
+
+| Typ | Effekt |
+|---|---|
+| **Welle** | Eine sanfte S-Kurve entlang der Unterkante. |
+| **Bogen** | Eine konkave Wölbung: Der nächste Abschnitt ragt in der Mitte nach oben. |
+| **Schräge** | Eine von links nach rechts ansteigende Diagonale. |
+| **Keine** | Kein Trenner. Abschnitte treffen an einer geraden horizontalen Kante aufeinander (Standard). |
+
+### Funktionsweise
+
+- Der SVG-Trenner befindet sich vollständig unterhalb des Abschnitts im Raum des nächsten Abschnitts. Er überlappt den Inhalt des aktuellen Abschnitts nicht.
+- Der gefüllte Teil des Pfads zeichnet den Hintergrund des aktuellen Abschnitts nach unten. Der transparente Bereich unter der Form lässt den nächsten Abschnitt durchscheinen.
+- Der Trenner folgt automatisch der Hintergrundfarbe des Abschnitts, einschließlich benutzerdefinierter Hex-Werte und CSS-Variablen-Tokens.
+- Trenner sind dekorativ (`aria-hidden="true"`) und beeinträchtigen weder die Tastatur- noch die Screenreader-Navigation.
+
 ## Ihre Site gestalten
 
 Im **Stil**-Tab steuern Sie das Erscheinungsbild Ihrer gesamten Site:

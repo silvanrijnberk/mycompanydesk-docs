@@ -138,6 +138,26 @@ How the animation starts:
 
 Visitors who have `prefers-reduced-motion: reduce` enabled at the OS level see every section in its final resting state immediately. No animations play. Workspace-level motion tokens can also force reduced motion on a per-site basis. When reduced motion is active the section never receives the hidden start-state class, so the server-rendered HTML is accessible before any JavaScript runs.
 
+## Section dividers
+
+Each section block has a **Bottom divider** setting in the inspector's style panel. It adds an SVG shape at the section's bottom edge that overflows into the next section, creating an organic visual transition instead of a hard horizontal cut. The divider draws the current section's background color, so it works best between adjacent sections that have different solid backgrounds.
+
+### Divider types
+
+| Type | Effect |
+|---|---|
+| **Wave** | A smooth S-curve along the bottom edge. |
+| **Curve** | A concave bowl: the next section intrudes upward in the middle. |
+| **Slant** | A right-rising diagonal cut from left to right. |
+| **None** | No divider. Sections meet at a flat horizontal edge (default). |
+
+### How it works
+
+- The divider SVG sits entirely below the section, in the next section's space. It does not overlap the current section's content.
+- The filled portion of the path draws the current section's background extending downward. The transparent area below the shape lets the next section show through.
+- The divider preserves the section's background color automatically, including custom hex values and CSS variable tokens.
+- Dividers are decorative (`aria-hidden="true"`) and do not affect keyboard or screen-reader navigation.
+
 ## Styling your site
 
 In the **Style** tab, you control the look and feel of your entire site:

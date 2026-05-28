@@ -138,6 +138,26 @@ Comment l'animation demarre :
 
 Les visiteurs ayant `prefers-reduced-motion: reduce` active au niveau du systeme d'exploitation voient chaque section directement dans sa position finale. Aucune animation n'est jouee. Au niveau de l'espace de travail, les tokens de mouvement peuvent egalement desactiver les animations par site. Lorsque la reduction de mouvement est active, la section ne recoit jamais la classe de depart masquee, de sorte que le HTML rendu cote serveur soit accessible avant meme l'execution de JavaScript.
 
+## Sepurateurs de section
+
+Chaque bloc de section dispose d'un parametre **Separateur inferieur** dans le panneau de style de l'inspecteur. Il ajoute une forme SVG au bord inferieur de la section qui deborde dans la section suivante, creant une transition visuelle organique au lieu d'une coupure nette. Le separateur utilise la couleur de fond de la section actuelle, il fonctionne donc le mieux entre des sections adjacentes ayant des fonds unis differents.
+
+### Types de separateurs
+
+| Type | Effet |
+|---|---|
+| **Vague** | Une courbe en S lisse le long du bord inferieur. |
+| **Courbe** | Un bol concave : la section suivante remonte au centre. |
+| **Diagonale** | Une coupe diagonale montante de gauche a droite. |
+| **Aucun** | Aucun separateur. Les sections se rejoignent sur un bord horizontal droit (par defaut). |
+
+### Fonctionnement
+
+- Le separateur SVG se trouve entierement sous la section, dans l'espace de la section suivante. Il ne chevauche pas le contenu de la section actuelle.
+- La partie remplie du chemin dessine l'arriere-plan de la section actuelle vers le bas. La zone transparente sous la forme laisse la section suivante apparaitre.
+- Le separateur reprend automatiquement la couleur de fond de la section, y compris les valeurs hexadecimales personnalisees et les tokens de variables CSS.
+- Les separateurs sont decoratifs (`aria-hidden="true"`) et n'affectent pas la navigation au clavier ou par lecteur d'ecran.
+
 ## Personnaliser le style de votre site
 
 Dans l'onglet **Style**, vous controlez l'apparence de l'ensemble de votre site :
