@@ -14,7 +14,7 @@ The site builder replaces the old single-page business profile. Every new worksp
 - **Domain switcher**: When your workspace has multiple custom domains (Pro plan), a dropdown in the top bar lets you switch between editing the default site and a per-domain variant. Each domain gets its own pages, navigation, design tokens, and publish snapshot.
 - **Section blocks**: Add hero, text, gallery, spotlight, services, team, testimonials, contact form, and custom HTML sections to any page. Save sections as reusable blocks to build a personal library.
 - **Design tokens**: Set brand colors, fonts, spacing, border radius, motion style, custom CSS, and a site favicon. Changes apply across the whole site.
-- **Navigation editor**: Drag-and-drop reorder of header links, with dropdown groups and external links.
+- **Navigation editor**: Drag-and-drop reorder of header links, with dropdown groups, external links, and inline navbar styling (brand name, CTA button, phone, call bar, sticky).
 - **Publish snapshots**: Work in draft, preview your changes, then publish. Unpublished changes are tracked in the top bar.
 - **Responsive preview**: Toggle between desktop, tablet, and mobile viewports while editing.
 
@@ -291,13 +291,24 @@ Unpublished changes are tracked per page and per token. The publish button is di
 
 ## Navigation
 
-The navigation editor lets you arrange your site's header links:
+The navigation editor lets you arrange your site's header links and control how the navigation bar looks across your entire site:
 
 - Drag pages to reorder the top-level navigation.
 - Create dropdown groups to nest pages under a parent label.
 - Add external links that point outside your site.
 - The logo in the header is clickable and always links back to the home page.
 - The home page is always first and locked in position.
+
+Above the main navigation menu, a **Navbar** panel gives you direct access to the header styling settings that were previously only available in the Style tab. You can set:
+
+- **Brand name**: Text shown in the header when no logo image is uploaded (leave empty to use the logo from Branding).
+- **CTA button**: The label and destination link for the call-to-action button in the top-right corner. Both fields must be filled for the button to appear.
+- **Phone number**: A clickable `tel:` link that appears next to the CTA button on desktop and in the mobile navigation drawer. Leaving it empty hides the call button.
+- **Phone label**: The text shown next to the phone icon on mobile (defaults to the locale-native equivalent of "Call us" when left empty).
+- **Mobile call bar**: When enabled, a fixed "tap to call" button stays pinned at the bottom of the screen on mobile devices.
+- **Sticky navbar**: When enabled (default on), the navigation bar stays visible as the visitor scrolls down the page.
+
+These settings apply to every page on your site, the same way they do in the Style tab. Changes save automatically with a short debounce after you stop typing. For the visual layout, background style, and button appearance controls, see the [Style tab](#styling-your-site).
 
 ## Public URL
 
