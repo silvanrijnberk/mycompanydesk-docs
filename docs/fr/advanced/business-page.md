@@ -76,6 +76,36 @@ Dans l'onglet **Editeur** :
 
 Certaines sections ont des variantes systeme uniquement disponibles sur la page d'accueil verrouillee.
 
+### Variantes de mise en page
+
+Les sections hero, services et tarifs prennent en charge plusieurs variantes de mise en page. Choisissez-en une dans le menu deroulant **Style** de l'onglet Mise en page du panneau d'inspection pour changer l'apparence de la section. La variante par defaut conserve l'aspect familier, vos sections creees avant cette fonctionnalite restent donc inchangees.
+
+#### Variantes hero
+
+| Variante | Effet |
+|---|---|
+| **Standard (divise a droite)** | Defaut. Image a droite, texte a gauche. Se replie en texte centre quand il n'y a pas d'image. |
+| **Divise a gauche** | Miroir du standard : image a gauche, texte a droite. Necessite une image. |
+| **Centre** | Texte centre, image optionnelle en dessous dans un cadre large 16:9. |
+| **Banniere** | Image en fond pleine largeur avec un degrade en surimpression. Texte blanc sur fond sombre, haute pour laisser respirer l'image. Necessite une image. |
+| **Minimal** | Texte seul dans une colonne etroite. Pas d'image. Propre et discret, adapte aux pages de type documentation. |
+
+#### Variantes services
+
+| Variante | Effet |
+|---|---|
+| **Standard (cartes)** | Defaut. Grille de cartes en 2, 3 ou 4 colonnes. Icone, titre et description par element. |
+| **Grille d'icones** | Mise en page plus dense, axee sur les icones avec des icones plus grands et moins d'habillage. Ideal pour 4 elements courts ou plus. |
+| **Liste** | Lignes verticales avec une icone a gauche et le texte a droite, separees par des traits fins. Convient aux longues listes a parcourir. |
+| **Accordeon** | Lignes cliquables empilees verticalement. Description masquee jusqu'a ce que la ligne soit ouverte. Utilise la meme animation de chevron que le bloc FAQ. |
+
+#### Variantes tarifs
+
+| Variante | Effet |
+|---|---|
+| **Standard (cartes)** | Defaut. Cartes de niveaux cote a cote avec nom, prix, liste de fonctionnalites et bouton d'achat ou CTA. |
+| **Tableau comparatif** | Matrice de fonctionnalites. Les lignes sont toutes les fonctionnalites de tous les niveaux regroupees. Les colonnes sont les niveaux. Chaque cellule affiche une coche ou un tiret pour que les visiteurs puissent rapidement scanner les colonnes et comparer les forfaits. La colonne du niveau mis en avant reste teintee. |
+
 ### Spotlight
 
 Le bloc spotlight est une rangee alternee d'image et de texte. Chaque rangee affiche une image d'un cote et du texte de l'autre : un eyebrow, un titre, un sous-titre, des puces avec coches et un lien call-to-action optionnel. Vous choisissez de quel cote l'image apparait dans le panneau de mise en page.
@@ -94,6 +124,8 @@ La section tarifs affiche vos forfaits ou abonnements. Chaque niveau peut option
 - Un bouton **Acheter** remplace le lien CTA statique. Les visiteurs qui cliquent passent par le checkout MyCompanyDesk et sont rediriges vers Mollie ou Stripe Connect pour le paiement.
 - Le libelle du bouton est par defaut "Acheter", personnalisable par niveau avec le champ **buyLabel**.
 - Les niveaux sans bouton d'achat conservent le comportement de lien CTA existant.
+
+Les sections tarifs peuvent egalement s'afficher sous forme de matrice comparative. Passez la variante de mise en page sur **Tableau comparatif** dans le panneau d'inspection. La matrice presente chaque niveau comme une colonne et toutes les fonctionnalites de tous les niveaux comme des lignes, avec des coches la ou un niveau inclut la fonctionnalite. Vous voyez ainsi en un coup d'oeil comment les forfaits se comparent. Voir [Variantes de mise en page](#variantes-de-mise-en-page) pour toutes les options.
 
 ### Bloc produit
 

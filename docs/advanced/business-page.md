@@ -76,6 +76,36 @@ In the **Editor** tab:
 
 Some sections have system-only variants that are available on the locked home page but not on custom pages.
 
+### Section layout variants
+
+Hero, services, and pricing sections support multiple layout variants. Pick one from the **Stijl** (Style) dropdown in the inspector's Layout tab to change how the section renders. The default variant preserves the existing look, so sections you built before this feature keep rendering as they always did.
+
+#### Hero variants
+
+| Variant | Effect |
+|---|---|
+| **Standard (split right)** | Default. Image on the right, text on the left. Falls back to centered text when there is no image. |
+| **Split left** | Mirror of the default: image on the left, text on the right. Requires an image. |
+| **Centered** | Text centered, optional image beneath it in a wide 16:9 frame. |
+| **Banner** | Full-bleed background image with a gradient overlay. White text on a dark scrim, tall so the image breathes. Requires an image. |
+| **Minimal** | Text-only in a narrow column. No image. Clean and quiet for documentation-style pages. |
+
+#### Services variants
+
+| Variant | Effect |
+|---|---|
+| **Standard (cards)** | Default. Grid of cards in 2, 3, or 4 columns. Icon, title, and description per item. |
+| **Icon grid** | Denser, icon-led layout with larger icons and less card chrome. Best for 4 or more short-label items. |
+| **List** | Vertical rows with an icon on the left and text on the right, separated by thin rules. Good for long read-through lists. |
+| **Accordion** | Vertically stacked clickable rows. Description hidden until the row opens. Uses the same chevron animation as the FAQ block. |
+
+#### Pricing variants
+
+| Variant | Effect |
+|---|---|
+| **Standard (cards)** | Default. Side-by-side tier cards with name, price, feature list, and buy button or CTA. |
+| **Comparison table** | Feature matrix. Rows are the union of all features across tiers. Columns are the tiers. Each cell shows a check mark or a dash so visitors can scan across columns to compare plans. The highlighted tier column stays tinted. |
+
 ### Spotlight
 
 The spotlight block is an alternating media-and-text row. Each instance shows an image on one side and text on the other: eyebrow, title, subtitle, bullets with check marks, and an optional call-to-action link. You control which side the image sits on via the layout panel.
@@ -94,6 +124,8 @@ The pricing section lets you list your plans or packages. Each tier can optional
 - A **Buy now** button replaces the static CTA link. Visitors clicking it go through the MyCompanyDesk checkout, which redirects to Mollie or Stripe Connect for payment.
 - The buy-button label defaults to "Koop nu" but can be customised per tier with the **buyLabel** field.
 - Pricing tiers without buy buttons keep the existing CTA link behaviour.
+
+Pricing sections can also render as a feature comparison matrix. Switch the layout variant to **Comparison table** in the inspector. The matrix shows each tier as a column and every feature from all tiers as a row, with check marks where a tier includes the feature. This makes plan-to-plan comparison easy at a glance. See [Section layout variants](#section-layout-variants) for the full options.
 
 ### Product block
 

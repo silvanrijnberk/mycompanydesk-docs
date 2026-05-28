@@ -76,6 +76,36 @@ Im **Editor**-Tab:
 
 Einige Abschnitte haben Systemvarianten, die nur auf der gesperrten Startseite verfügbar sind.
 
+### Abschnitts-Layoutvarianten
+
+Hero-, Dienstleistungs- und Preisabschnitte unterstützen mehrere Layoutvarianten. Wählen Sie eine aus dem **Stil**-Dropdown im Layout-Tab des Inspektionspanels, um das Erscheinungsbild des Abschnitts zu ändern. Die Standardvariante behält das vertraute Aussehen bei, sodass Abschnitte, die Sie vor dieser Funktion gebaut haben, unverändert bleiben.
+
+#### Hero-Varianten
+
+| Variante | Effekt |
+|---|---|
+| **Standard (geteilt rechts)** | Standard. Bild rechts, Text links. Fällt auf zentrierten Text zurück, wenn kein Bild vorhanden ist. |
+| **Geteilt links** | Spiegelung des Standards: Bild links, Text rechts. Erfordert ein Bild. |
+| **Zentriert** | Text zentriert, optionales Bild darunter in einem breiten 16:9-Rahmen. |
+| **Banner** | Bild über die volle Breite als Hintergrund mit Verlauf-Overlay. Weißer Text auf dunkler Tönung, extra hoch für ausreichend Bildraum. Erfordert ein Bild. |
+| **Minimal** | Nur Text in einer schmalen Spalte. Kein Bild. Sauber und ruhig, geeignet für dokumentationsartige Seiten. |
+
+#### Dienstleistungs-Varianten
+
+| Variante | Effekt |
+|---|---|
+| **Standard (Karten)** | Standard. Raster mit Karten in 2, 3 oder 4 Spalten. Icon, Titel und Beschreibung pro Element. |
+| **Icon-Raster** | Kompakteres, icon-getriebenes Layout mit größeren Icons und weniger Karten-Chrome. Geeignet für 4 oder mehr kurze Elemente. |
+| **Liste** | Vertikale Zeilen mit einem Icon links und Text rechts, getrennt durch dünne Linien. Gut für lange Leselisten. |
+| **Akkordeon** | Vertikal gestapelte klickbare Zeilen. Beschreibung ausgeblendet, bis die Zeile geöffnet wird. Verwendet dieselbe Chevron-Animation wie der FAQ-Block. |
+
+#### Preis-Varianten
+
+| Variante | Effekt |
+|---|---|
+| **Standard (Karten)** | Standard. Tier-Karten nebeneinander mit Name, Preis, Funktionsliste und Kauf-Button oder CTA. |
+| **Vergleichstabelle** | Feature-Matrix. Zeilen sind alle Funktionen aller Tiers zusammengeführt. Spalten sind die Tiers. Jede Zelle zeigt ein Häkchen oder einen Strich, damit Besucher schnell Spalten scannen und Tarife vergleichen können. Die hervorgehobene Tier-Spalte bleibt eingefärbt. |
+
 ### Spotlight
 
 Der Spotlight-Block ist eine Zeile mit abwechselndem Bild und Text. Jede Zeile zeigt ein Bild auf der einen Seite und Text auf der anderen: eine Eyebrow, einen Titel, einen Untertitel, Aufzählungspunkte mit Häkchen und einen optionalen Call-to-Action-Link. Im Layout-Panel legen Sie fest, auf welcher Seite das Bild erscheint.
@@ -94,6 +124,8 @@ Der Preise-Abschnitt zeigt Ihre Pakete oder Pläne. Jede Stufe kann optional ein
 - Ein **Jetzt kaufen**-Button ersetzt den statischen CTA-Link. Besucher, die darauf klicken, werden über den MyCompanyDesk-Checkout zu Mollie oder Stripe Connect zur Zahlung weitergeleitet.
 - Das Kauf-Button-Label ist standardmäßig "Jetzt kaufen", kann aber pro Stufe mit dem **buyLabel**-Feld angepasst werden.
 - Preisstufen ohne Kauf-Button behalten das bestehende CTA-Link-Verhalten.
+
+Preisabschnitte können auch als Vergleichsmatrix dargestellt werden. Setzen Sie die Layoutvariante im Inspektionspanel auf **Vergleichstabelle**. Die Matrix zeigt jede Stufe als Spalte und alle Funktionen aller Stufen als Zeilen, mit Häkchen dort, wo eine Stufe die Funktion enthält. So sehen Sie auf einen Blick, wie die Tarife zueinander stehen. Siehe [Abschnitts-Layoutvarianten](#abschnitts-layoutvarianten) für alle Optionen.
 
 ### Produktblock
 
