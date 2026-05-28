@@ -12,7 +12,7 @@ Der Website-Builder ersetzt das alte einseitige Unternehmensprofil. Sie erhalten
 
 - **Mehrere Seiten**: Erstellen Sie so viele Seiten, wie Sie benötigen, jede mit eigenem Pfad und eigenen Abschnitten.
 - **Domain-Wechsler**: Wenn Ihr Workspace mehrere eigene Domains hat (Pro-Tarif), können Sie über ein Dropdown in der oberen Leiste zwischen der Bearbeitung der Hauptwebsite und einer Domain-Variante wechseln. Jede Domain erhält ihre eigenen Seiten, Navigation, Design-Tokens und Veröffentlichungs-Snapshots.
-- **Abschnittsblöcke**: Fügen Sie Hero-, Text-, Galerie-, Spotlight-, Dienstleistungs-, Team-, Testimonial-, Kontaktformular- und benutzerdefinierte HTML-Abschnitte zu jeder Seite hinzu.
+- **Abschnittsblöcke**: Fügen Sie Hero-, Text-, Galerie-, Spotlight-, Dienstleistungs-, Team-, Testimonial-, Kontaktformular- und benutzerdefinierte HTML-Abschnitte zu jeder Seite hinzu. Speichern Sie Abschnitte als wiederverwendbare Blöcke, um Ihre eigene Bibliothek aufzubauen.
 - **Design-Tokens**: Legen Sie Markenfarben, Schriften, Abstände, Eckenradius, Bewegungsstil, benutzerdefiniertes CSS und ein Site-Favicon fest. Änderungen gelten für die gesamte Site.
 - **Navigations-Editor**: Ordnen Sie Header-Links per Drag-and-Drop, mit Dropdown-Gruppen und externen Links.
 - **Veröffentlichungs-Snapshots**: Arbeiten Sie im Entwurf, sehen Sie sich Ihre Änderungen in der Vorschau an und veröffentlichen Sie dann. Unveröffentlichte Änderungen werden in der oberen Leiste angezeigt.
@@ -75,6 +75,29 @@ Im **Editor**-Tab:
 - Ziehen Sie Abschnitte nach oben oder unten, um sie neu anzuordnen. Nutzen Sie die Duplizieren- und Löschen-Aktionen bei jedem Abschnitt.
 
 Einige Abschnitte haben Systemvarianten, die nur auf der gesperrten Startseite verfügbar sind.
+
+## Gespeicherte Blöcke
+
+Speichern Sie jeden Abschnitt als wiederverwendbaren Block und bauen Sie eine persönliche Bibliothek vorgestylter Bausteine auf. Gespeicherte Blöcke erscheinen ganz oben im Abschnitts-Hinzufügen-Panel, sodass Sie ein gespeichertes Layout auf jeder Seite einfügen können, ohne es neu aufbauen zu müssen.
+
+### Abschnitt als Block speichern
+
+1. Klicken Sie auf das Lesezeichen-Symbol in einer Abschnittszeile im Editor.
+2. Geben Sie dem Block einen Namen (die Abschnittsbezeichnung oder der Typ ist bereits als Vorschlag vorausgefüllt).
+3. Der Block wird in Ihrer persönlichen Bibliothek für diesen Workspace gespeichert.
+
+### Gespeicherten Block einfügen
+
+1. Klicken Sie auf **Abschnitt hinzufügen** auf einer beliebigen Seite.
+2. Ihre gespeicherten Blöcke erscheinen unter **Meine Blöcke** ganz oben im Panel.
+3. Klicken Sie auf einen gespeicherten Block, um ihn als neuen Abschnitt auf der aktuellen Seite einzufügen.
+
+Das Einfügen eines gespeicherten Blocks kopiert dessen Vorlage in eine neue Abschnittszeile. Das Bearbeiten oder Löschen des eingefügten Abschnitts wirkt sich nicht auf den gespeicherten Block in Ihrer Bibliothek aus und umgekehrt.
+
+### Ihre Bibliothek verwalten
+
+- **Einen Block löschen** Sie aus der Bibliothek, indem Sie auf das x-Symbol neben dem Block klicken. Dies entfernt nur die gespeicherte Vorlage; bereits eingefügte Abschnitte bleiben erhalten.
+- Der **Meine Blöcke**-Header wird ausgeblendet, wenn Ihre Bibliothek leer ist, sodass ein Erstbenutzer keine leere Kategorie sieht.
 
 ### Abschnitts-Layoutvarianten
 
@@ -259,7 +282,7 @@ Was beim Absenden passiert:
 4. Die Anfrage erscheint unter **Angebote > Anfragen**.
 5. Der Besucher sieht eine anpassbare Erfolgsmeldung.
 
-Kontaktformular-Einreichungen sind auf 5 pro Minute pro IP-Adresse begrenzt.
+Kontaktformular-Einreichungen sind auf 5 pro Minute pro IP-Adresse begrenzt. Ein Cloudflare-Turnstile-Widget erscheint vor dem Absenden, wenn es in Ihrem Workspace konfiguriert ist, und blockiert automatisierte Bot-Einreichungen, ohne echte Besucher zu verlangsamen.
 
 ## Newsletter-Anmeldung
 
@@ -272,7 +295,7 @@ Was beim Absenden passiert:
 3. Der Besucher sieht in jedem Fall ein Erfolgsbanner, sodass der Abonnementstatus privat bleibt.
 4. Nach der Bestätigung erscheint der Abonnent in der Newsletter-Zielgruppe dieses Workspaces.
 
-Newsletter-Einreichungen teilen dasselbe Rate-Limit wie das Kontaktformular: 5 pro Minute pro IP-Adresse.
+Newsletter-Einreichungen teilen dasselbe Rate-Limit wie das Kontaktformular: 5 pro Minute pro IP-Adresse. Der Turnstile-Bot-Schutz ist auch bei Newsletter-Formularen aktiv, wenn konfiguriert.
 
 ## Anfragen verwalten
 

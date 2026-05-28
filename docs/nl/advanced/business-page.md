@@ -12,7 +12,7 @@ De sitebouwer vervangt het oude bedrijfsprofiel van één pagina. Je krijgt een 
 
 - **Meerdere pagina's**: Maak zoveel pagina's als je nodig hebt, elk met een eigen pad en secties.
 - **Domeinwisselaar**: Wanneer je werkruimte meerdere eigen domeinen heeft (Pro-abonnement), kun je via een dropdown in de bovenbalk wisselen tussen het bewerken van de hoofdsite en een per-domein-variant. Elk domein krijgt zijn eigen pagina's, navigatie, ontwerptokens en publicatiesnapshot.
-- **Sectieblokken**: Voeg hero-, tekst-, galerij-, spotlight-, diensten-, team-, testimonial-, contactformulier- en aangepaste HTML-secties toe aan elke pagina.
+- **Sectieblokken**: Voeg hero-, tekst-, galerij-, spotlight-, diensten-, team-, testimonial-, contactformulier- en aangepaste HTML-secties toe aan elke pagina. Sla secties op als herbruikbare blokken en bouw je eigen bibliotheek op.
 - **Ontwerptokens**: Stel merkkleuren, lettertypes, witruimte, hoekradius, bewegingsstijl, aangepaste CSS en een site-favicon in. Wijzigingen gelden voor de hele site.
 - **Navigatie-editor**: Sleep en zet headerlinks op volgorde, met dropdown-groepen en externe links.
 - **Publicatiesnapshots**: Werk in concept, bekijk je wijzigingen en publiceer daarna. Ongepubliceerde wijzigingen zie je in de bovenbalk.
@@ -75,6 +75,29 @@ In de **Editor**-tab:
 - Sleep secties omhoog of omlaag om ze te verplaatsen. Gebruik de dupliceer- en verwijderacties op elke sectie.
 
 Sommige secties hebben alleen-systeemvarianten die beschikbaar zijn op de vergrendelde homepage maar niet op aangepaste pagina's.
+
+## Opgeslagen blokken
+
+Sla elke sectie op als herbruikbaar blok en bouw een persoonlijke bibliotheek van voorgestijlde bouwstenen. Opgeslagen blokken verschijnen bovenaan de sectie-toevoeger, zodat je een bewaarde layout op elke pagina kunt plaatsen zonder hem opnieuw op te bouwen.
+
+### Sectie opslaan als blok
+
+1. Klik op het bladwijzer-icoon op een sectierij in de editor.
+2. Geef het blok een naam (het sectielabel of -type is alvast ingevuld als suggestie).
+3. Het blok wordt opgeslagen in je persoonlijke bibliotheek voor deze werkruimte.
+
+### Opgeslagen blok invoegen
+
+1. Klik op **Sectie toevoegen** op een pagina.
+2. Je opgeslagen blokken staan onder **Mijn blokken** bovenaan het paneel.
+3. Klik op een blok om het als nieuwe sectie op de huidige pagina te plaatsen.
+
+Het invoegen van een blok kopieert de template naar een nieuwe sectierij. Het bewerken of verwijderen van de ingevoegde sectie heeft geen invloed op het opgeslagen blok in je bibliotheek, en andersom.
+
+### Je bibliotheek beheren
+
+- **Verwijder een blok** uit de bibliotheek door op het x-icoon naast het blok te klikken. Dit verwijdert alleen het opgeslagen sjabloon; secties die al vanuit dat blok zijn ingevoegd blijven staan.
+- De **Mijn blokken**-kop is verborgen als je bibliotheek leeg is, zodat een eerste editor geen lege categorie ziet.
 
 ### Sectie-layoutvarianten
 
@@ -259,7 +282,7 @@ Wat gebeurt er bij verzenden:
 4. De aanvraag verschijnt bij **Offertes > Aanvragen**.
 5. De bezoeker ziet een aanpasbare succesmelding.
 
-Inzendingen via het contactformulier zijn beperkt tot 5 per minuut per IP-adres.
+Inzendingen via het contactformulier zijn beperkt tot 5 per minuut per IP-adres. Een Cloudflare Turnstile-widget verschijnt ook voordat de bezoeker verzendt, mits geconfigureerd op je werkruimte, en blokkeert geautomatiseerde botinzendingen zonder echte bezoekers te vertragen.
 
 ## Nieuwsbrief aanmelden
 
@@ -272,7 +295,7 @@ Wat gebeurt er bij verzenden:
 3. De bezoeker ziet hoe dan ook een succesbanner, zodat de abonnementsstatus privé blijft.
 4. Na bevestiging verschijnt de abonnee in het nieuwsbriefpubliek van die werkruimte.
 
-Nieuwsbriefinzendingen delen dezelfde snelheidslimiet als het contactformulier: 5 per minuut per IP-adres.
+Nieuwsbriefinzendingen delen dezelfde snelheidslimiet als het contactformulier: 5 per minuut per IP-adres. De Turnstile-botbescherming is ook actief op nieuwsbriefformulieren wanneer geconfigureerd.
 
 ## Aanvragen beheren
 
