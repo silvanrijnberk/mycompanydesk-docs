@@ -40,6 +40,14 @@ Onder de schakelaar staat een **Betaalmethoden**-sectie die elke betaalmethode t
 
 Met de **Stuur testbetaling**-knop loop je een gratis €1-testcheckout door Mollie, zodat je zeker weet dat alles werkt voordat je klanten het zien. Er gaat geen echt geld over de toonbank.
 
+#### Stripe-betalingsinstellingen
+
+Zodra Stripe is gekoppeld, krijg je een **Betaalknop op facturen**-schakelaar in je werkruimte onder **Geld → Betalingen → Online betalingen**. Zet hem aan om een Stripe-betaalknop op elke uitgaande factuur te tonen. Zet hem uit en de knop verdwijnt zonder Stripe te ontkoppelen. De schakelaar is pas beschikbaar nadat de Stripe-onboarding (KYC) is afgerond.
+
+Onder de schakelaar staat een **Betaalmethoden**-sectie die elke ondersteunde betaalmethode toont, afgestemd op de capabilities van je Stripe-account (card, iDEAL, Bancontact, SEPA Direct Debit, PayPal, Klarna en Link by Stripe). Standaard kiest Stripe Checkout automatisch de juiste methode per klant. Vink specifieke methoden aan om te beperken wat klanten zien, alleen die verschijnen bij het afrekenen. Haal alle vinkjes weg om terug te gaan naar automatische selectie.
+
+Met de **Open Stripe Dashboard**-knop word je doorgelinkt naar je Stripe-betaalmethode-instellingen, zodat je je integratie kunt verifieren en betalingen rechtstreeks in Stripe kunt testen.
+
 ### Huisstijl
 
 Het klantportaal gebruikt je bedrijfshuisstijl:

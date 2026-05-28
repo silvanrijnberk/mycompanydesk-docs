@@ -46,3 +46,7 @@ To disconnect, click **Loskoppelen** on the relevant card. After disconnecting, 
 ### Mollie payment settings
 
 Once Mollie is connected, a **Betaalknop op facturen** toggle and **Betaalmethoden** section appear on the Mollie card. The toggle turns the pay button on or off across all invoices without disconnecting. The method list, fetched live from your Mollie dashboard, lets you limit which payment methods customers see. A **Stuur testbetaling** button runs a free €1 test checkout through Mollie so you can confirm everything works end-to-end.
+
+### Stripe payment settings
+
+Once Stripe is connected and onboarding (KYC) is complete, a **Betaalknop op facturen** toggle and **Betaalmethoden** section appear on the Stripe card. The toggle turns the Stripe pay button on or off across all invoices without disconnecting. The method list, cross-referenced with your Stripe account capabilities, lets you limit which payment methods customers see at checkout (card, iDEAL, Bancontact, SEPA Direct Debit, PayPal, Klarna, Link by Stripe). Clearing all ticks returns to automatic method selection by Stripe Checkout. An **Open Stripe Dashboard** button deep-links you to your Stripe payment-method settings so you can verify your integration and test payments.

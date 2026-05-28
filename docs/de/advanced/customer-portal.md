@@ -40,6 +40,14 @@ Unter dem Schalter befindet sich ein **Betaalmethoden**-Bereich, der jede in Ihr
 
 Mit der Schaltfläche **Stuur testbetaling** können Sie einen kostenlosen €1-Test-Checkout über Mollie durchlaufen, um sicherzustellen, dass alles funktioniert, bevor Ihre Kunden es sehen. Es fließt kein echtes Geld.
 
+#### Stripe-Zahlungseinstellungen
+
+Sobald Stripe verbunden ist, erhalten Sie einen **Betaalknop op facturen**-Schalter in Ihrem Arbeitsbereich unter **Geld → Zahlungen → Online betalingen**. Aktivieren Sie ihn, um eine Stripe-Zahlungsschaltfläche auf jeder ausgehenden Rechnung anzuzeigen. Deaktivieren Sie ihn, und die Schaltfläche verschwindet, ohne Stripe zu trennen. Der Schalter ist erst verfügbar, nachdem das Stripe-Onboarding (KYC) abgeschlossen ist.
+
+Unter dem Schalter befindet sich ein **Betaalmethoden**-Bereich, der jede unterstützte Zahlungsmethode zeigt, abgeglichen mit den Capabilities Ihres Stripe-Kontos (Karte, iDEAL, Bancontact, SEPA-Lastschrift, PayPal, Klarna und Link by Stripe). Standardmäßig wählt Stripe Checkout automatisch die richtige Methode pro Kunde. Aktivieren Sie bestimmte Methoden, um die Auswahl einzuschränken, nur diese erscheinen im Checkout. Entfernen Sie alle Häkchen, um zur automatischen Auswahl zurückzukehren.
+
+Die Schaltfläche **Open Stripe Dashboard** verlinkt Sie direkt zu Ihren Stripe-Zahlungsmethodeneinstellungen, damit Sie Ihre Integration überprüfen und Zahlungen direkt in Stripe testen können.
+
 ### Branding
 
 Das Kundenportal verwendet Ihr Unternehmensbranding:

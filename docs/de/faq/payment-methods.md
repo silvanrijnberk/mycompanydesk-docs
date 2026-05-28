@@ -46,3 +46,7 @@ Zum Trennen klicke auf **Loskoppelen** auf der entsprechenden Karte. Nach der Tr
 ### Mollie-Zahlungseinstellungen
 
 Sobald Mollie verbunden ist, erscheinen ein **Betaalknop op facturen**-Schalter und ein **Betaalmethoden**-Bereich auf der Mollie-Karte. Der Schalter aktiviert oder deaktiviert die Zahlungsschaltflaeche auf allen Rechnungen, ohne Mollie zu trennen. Die Methodenliste, live aus Ihrem Mollie-Dashboard, laesst Sie auswaehlen, welche Zahlungsmethoden Ihre Kunden sehen. Mit **Stuur testbetaling** durchlaufen Sie einen kostenlosen €1-Test-Checkout ueber Mollie, um zu bestaetigen, dass alles Ende-zu-Ende funktioniert.
+
+### Stripe-Zahlungseinstellungen
+
+Sobald Stripe verbunden und das Onboarding (KYC) abgeschlossen ist, erscheinen ein **Betaalknop op facturen**-Schalter und ein **Betaalmethoden**-Bereich auf der Stripe-Karte. Der Schalter aktiviert oder deaktiviert die Stripe-Zahlungsschaltflaeche auf allen Rechnungen, ohne Stripe zu trennen. Die Methodenliste, abgeglichen mit den Capabilities Ihres Stripe-Kontos, laesst Sie waehlen, welche Zahlungsmethoden Ihre Kunden beim Checkout sehen (Karte, iDEAL, Bancontact, SEPA-Lastschrift, PayPal, Klarna, Link by Stripe). Entfernen Sie alle Haekchen, um zur automatischen Methodenauswahl durch Stripe Checkout zurueckzukehren. Mit **Open Stripe Dashboard** werden Sie direkt zu Ihren Stripe-Zahlungsmethodeneinstellungen verlinkt, um Ihre Integration zu ueberpruefen und Zahlungen zu testen.

@@ -46,3 +46,7 @@ Pour deconnecter, cliquez sur **Loskoppelen** sur la carte correspondante. Apres
 ### Parametres de paiement Mollie
 
 Une fois Mollie connecte, un interrupteur **Betaalknop op facturen** et une section **Betaalmethoden** apparaissent sur la carte Mollie. L'interrupteur active ou desactive le bouton de paiement sur toutes les factures sans deconnecter Mollie. La liste des methodes, recuperee en direct de votre tableau de bord Mollie, vous permet de choisir les methodes de paiement que vos clients verront. Avec **Stuur testbetaling**, vous parcourez un checkout test gratuit de €1 via Mollie pour confirmer que tout fonctionne de bout en bout.
+
+### Parametres de paiement Stripe
+
+Une fois Stripe connecte et l'onboarding (KYC) termine, un interrupteur **Betaalknop op facturen** et une section **Betaalmethoden** apparaissent sur la carte Stripe. L'interrupteur active ou desactive le bouton de paiement Stripe sur toutes les factures sans deconnecter Stripe. La liste des methodes, croisee avec les capacites de votre compte Stripe, vous permet de choisir les methodes de paiement que vos clients verront au checkout (carte, iDEAL, Bancontact, prelevement SEPA, PayPal, Klarna, Link by Stripe). Decochez tout pour revenir a la selection automatique des methodes par Stripe Checkout. Avec **Open Stripe Dashboard**, vous etes redirige vers vos parametres de methodes de paiement Stripe pour verifier votre integration et tester les paiements.
