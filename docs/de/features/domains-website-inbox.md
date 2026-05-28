@@ -274,6 +274,26 @@ Der Posteingang-Tab erscheint nur dann in der Seitenleiste und der unteren Navig
 
 Bei kostenlosen Tarifen ohne Posteingang bleibt der Tab als Upgrade-Hinweis sichtbar. Bei kostenpflichtigen Tarifen erscheint der Tab jedoch automatisch, sobald eine Domain über den Einrichtungsassistenten eingerichtet und der Posteingang bereit ist.
 
+## Demo-Website beanspruchen
+
+Wenn MyCompanyDesk im Rahmen des Outreach-Programms eine Demo-Website fur einen Interessenten erstellt, erhalt der Interessent einen personlichen Beanspruchungslink (per WhatsApp oder E-Mail). Die Beanspruchungsseite unter `/claim/<slug>` ermoglicht es dem Interessenten, den Demo-Arbeitsbereich mit seiner eigenen E-Mail-Adresse und einem Passwort zu ubernehmen.
+
+### So funktioniert es
+
+1. Sil oder der Outreach-Cron erstellt einen Demo-Arbeitsbereich (`companies.is_demo = true`) mit einer branchenspezifischen Website und Inhalten.
+2. Der Interessent erhalt einen Link wie `https://app.mycompanydesk.com/claim/dachdecker-berlin`.
+3. Die Beanspruchungsseite ladt die Demo anhand des Slugs und zeigt den Firmennamen an. Wenn der Demo-Arbeitsbereich existiert und beanspruchbar ist, gibt der Interessent seine E-Mail-Adresse und ein Passwort ein (mindestens 8 Zeichen, mit einem Buchstaben und einer Ziffer).
+4. Beim Absenden wird der Arbeitsbereich atomar ubertragen: Der Platzhalter-Benutzer wird mit der E-Mail-Adresse und dem Passwort des Interessenten uberschrieben, `is_demo` wird deaktiviert und die Outreach-Zeile wird mit den Beanspruchungs-Metadaten aktualisiert.
+5. Die E-Mail-Adresse wird bei der Beanspruchung als verifiziert markiert (der Interessent hat bereits nachgewiesen, dass er Inhaber des fur die Kontaktaufnahme genutzten Kommunikationskanals ist). Es wird dennoch eine Willkommens-E-Mail versendet, damit die Adresse in seinem Posteingang erscheint.
+6. Der Interessent wird mit einer Erfolgsmeldung zur Anmeldeseite weitergeleitet und kann sich sofort anmelden, seine Website bearbeiten, Rechnungen versenden und den Posteingang nutzen.
+
+### Sicherheitsgarantien
+
+- Nur Arbeitsbereiche mit `is_demo = true` konnen beansprucht werden. Echte Kundenseiten sind uber diesen Endpunkt niemals beanspruchbar.
+- Die E-Mail-Adresse darf noch keinem anderen Benutzer auf der Plattform gehoren.
+- Die Beanspruchung ist atomar (eine einzelne Datenbanktransaktion), sodass Teilubertragungen keinen inkonsistenten Zustand hinterlassen konnen.
+- Beanspruchungslinks werden nach der Beanspruchung ungultig, wodurch eine Wiederverwendung verhindert wird.
+
 ## E-Mails senden vs. E-Mails empfangen
 
 Dieses Bundle ist die **Empfangsseite**. Ausgehende E-Mails -- Rechnungsversand, Erinnerungen, Angebotsversand -- werden von der breiteren E-Mail-Pipeline abgewickelt, die unter [E-Mail-Integration](/de/settings/email) beschrieben ist. Der Posteingang dient dem Empfang von Kunden-E-Mails und dem Verfassen von Antworten; er routet Ihre automatisierten Rechnungssendungen nicht. Die Rechnungszustellung folgt immer Ihrer gewählten Versandmethode unter [E-Mail-Integration](/de/settings/email) (Gmail, Outlook oder der integrierte Versender). Die DKIM-Signierung der Posteingangs-Domain wird für ausgehende Antworten verwendet, die Sie im Posteingang verfassen, nicht für automatisierte Transaktions-E-Mails.

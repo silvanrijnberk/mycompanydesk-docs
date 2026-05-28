@@ -274,6 +274,26 @@ The Inbox tab appears in the sidebar and bottom navigation only when the workspa
 
 On free plans that do not include inbox, the tab remains visible as an upgrade hint. But on paid plans, once a domain is wired through the setup wizard and the inbox is ready, the tab appears automatically.
 
+## Demo website claim
+
+When MyCompanyDesk builds a demo website for a prospect as part of the outreach program, the prospect receives a personalised claim link (via WhatsApp or email). The claim page at `/claim/<slug>` lets the prospect take ownership of the demo workspace with their own email address and password.
+
+### How it works
+
+1. Sil or the outreach cron generates a demo workspace (`companies.is_demo = true`) with a trade-specific website and content.
+2. The prospect receives a link like `https://app.mycompanydesk.com/claim/roofer-amsterdam`.
+3. The claim page loads the demo by slug and shows the business name. If the demo workspace exists and is claimable, the prospect fills in their email and a password (minimum 8 characters, at least one letter and one digit).
+4. On submit, the workspace is atomically transferred: the placeholder user is rewritten with the prospect's email and password, `is_demo` is flipped off, and the outreach row is updated with claim metadata.
+5. The email is marked as verified on claim (the prospect already proved ownership of the contact method used for outreach). A welcome email is still sent so the address is in their inbox.
+6. The prospect is redirected to the login page with a success message and can immediately sign in, edit their website, send invoices, and use the inbox.
+
+### Safety guarantees
+
+- Only `is_demo = true` workspaces can be claimed. Real customer sites are never claimable through this endpoint.
+- The email must not already belong to another user on the platform.
+- The claim is atomic (single database transaction), so partial transfers cannot leave a workspace in an inconsistent state.
+- Claim links are invalidated once the demo is claimed, preventing reuse.
+
 ## Sending mail vs receiving mail
 
 This bundle is the **receiving** side. Outgoing email — invoice delivery, reminders, quote sends — is handled by the broader email pipeline described in [Email Integration](/settings/email). The inbox is for receiving customer mail and composing replies; it does not route your automated invoice sends. Invoice delivery always respects your chosen delivery method under [Email Integration](/settings/email) (Gmail, Outlook, or the built-in sender). The inbox domain's DKIM is used for outbound replies composed in the inbox, not for automated transactional mail.

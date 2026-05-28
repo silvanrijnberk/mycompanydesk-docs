@@ -274,6 +274,26 @@ L'onglet Boite de reception apparait uniquement dans la barre laterale et la bar
 
 Sur les abonnements gratuits sans boite de reception, l'onglet reste visible comme indicateur de mise a niveau. Mais sur les abonnements payants, l'onglet apparait automatiquement des qu'un domaine est configure via l'assistant de configuration et que la boite de reception est prête.
 
+## Revendication d'un site de demonstration
+
+Lorsque MyCompanyDesk cree un site de demonstration pour un prospect dans le cadre du programme de prospection, le prospect recoit un lien de revendication personnalise (par WhatsApp ou e-mail). La page de revendication sur `/claim/<slug>` permet au prospect de prendre possession de l'espace de travail de demonstration avec sa propre adresse e-mail et son mot de passe.
+
+### Comment ca fonctionne
+
+1. Sil ou le cron de prospection cree un espace de travail de demonstration (`companies.is_demo = true`) avec un site web et du contenu specifiques au secteur.
+2. Le prospect recoit un lien comme `https://app.mycompanydesk.com/claim/couvreur-lyon`.
+3. La page de revendication charge la demonstration par slug et affiche le nom de l'entreprise. Si l'espace de travail de demonstration existe et peut etre revendique, le prospect saisit son adresse e-mail et un mot de passe (minimum 8 caracteres, avec une lettre et un chiffre).
+4. A la soumission, l'espace de travail est transfere de maniere atomique : l'utilisateur placeholder est reecrit avec l'e-mail et le mot de passe du prospect, `is_demo` est desactive et la ligne de prospection est mise a jour avec les metadonnees de revendication.
+5. L'adresse e-mail est marquee comme verifiee lors de la revendication (le prospect a deja prouve etre proprietaire du moyen de contact utilise pour la prospection). Un e-mail de bienvenue est tout de meme envoye pour que l'adresse figure dans sa boite de reception.
+6. Le prospect est redirige vers la page de connexion avec un message de succes et peut immediatement se connecter, modifier son site web, envoyer des factures et utiliser la boite de reception.
+
+### Garanties de securite
+
+- Seuls les espaces de travail avec `is_demo = true` peuvent etre revendiques. Les sites de vrais clients ne sont jamais revendicables via ce point d'acces.
+- L'adresse e-mail ne doit pas deja appartenir a un autre utilisateur sur la plateforme.
+- La revendication est atomique (une seule transaction de base de donnees), de sorte que les transferts partiels ne peuvent pas laisser un etat incoherent.
+- Les liens de revendication sont invalides une fois la demonstration revendiquee, empechant toute reutilisation.
+
 ## Envoyer des e-mails vs recevoir des e-mails
 
 Ce lot correspond au côte **reception**. Les e-mails sortants -- envoi de factures, rappels, envoi de devis -- sont geres par le pipeline e-mail plus large decrit dans [Integration e-mail](/fr/settings/email). La boite de reception sert a recevoir les e-mails des clients et a rediger des reponses ; elle n'achemine pas vos envois automatises de factures. La livraison des factures suit toujours la methode d'envoi que vous avez choisie dans [Integration e-mail](/fr/settings/email) (Gmail, Outlook ou l'expediteur integre). La signature DKIM du domaine de la boite de reception est utilisee pour les reponses sortantes redigees dans la boite de reception, pas pour les e-mails transactionnels automatises.

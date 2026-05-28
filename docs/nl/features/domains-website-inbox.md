@@ -274,6 +274,26 @@ De Inbox-tab verschijnt alleen in de zijbalk en de onderste navigatiebalk als de
 
 Op gratis abonnementen die geen inbox hebben, blijft de tab zichtbaar als upgrade-hint. Maar op betaalde abonnementen verschijnt de tab automatisch zodra een domein via de setup-wizard is ingericht en de inbox klaar is.
 
+## Demo-website claimen
+
+Wanneer MyCompanyDesk een demo-website bouwt voor een prospect als onderdeel van het outreach-programma, ontvangt de prospect een persoonlijke claimlink (via WhatsApp of e-mail). De claimpagina op `/claim/<slug>` laat de prospect het demo-werkruimte overnemen met een eigen e-mailadres en wachtwoord.
+
+### Zo werkt het
+
+1. Sil of de outreach-cron maakt een demo-werkruimte aan (`companies.is_demo = true`) met een branchespecifieke website en inhoud.
+2. De prospect ontvangt een link zoals `https://app.mycompanydesk.com/claim/dakdekker-amsterdam`.
+3. De claimpagina laadt de demo op basis van de slug en toont de bedrijfsnaam. Als de demo-werkruimte bestaat en claimable is, vult de prospect zijn e-mailadres en een wachtwoord in (minimaal 8 tekens, met een letter en een cijfer).
+4. Bij verzending wordt de werkruimte atomisch overgedragen: de placeholder-gebruiker wordt herschreven met het e-mailadres en wachtwoord van de prospect, `is_demo` wordt uitgezet en de outreach-rij wordt bijgewerkt met claim-metadata.
+5. Het e-mailadres wordt bij de claim als geverifieerd gemarkeerd (de prospect heeft al aangetoond eigenaar te zijn van het contactkanaal dat voor outreach is gebruikt). Er wordt nog steeds een welkomstmail verstuurd, zodat het adres in hun inbox staat.
+6. De prospect wordt doorgestuurd naar de inlogpagina met een succesmelding en kan meteen inloggen, de website bewerken, facturen versturen en de inbox gebruiken.
+
+### Veiligheidsgaranties
+
+- Alleen werkruimtes met `is_demo = true` kunnen worden geclaimd. Echte klantsites zijn nooit via dit endpoint te claimen.
+- Het e-mailadres mag nog niet bij een andere gebruiker op het platform horen.
+- De claim is atomisch (een enkele databasetransactie), dus gedeeltelijke overdrachten kunnen geen inconsistente staat achterlaten.
+- Claimlinks worden ongeldig zodra de demo is geclaimd, waardoor hergebruik wordt voorkomen.
+
 ## Mail verzenden vs mail ontvangen
 
 Deze bundel is de **ontvangstkant**. Uitgaande e-mail -- factuurverzending, herinneringen, offerteverzending -- wordt afgehandeld door de bredere e-mailpipeline beschreven in [E-mailintegratie](/nl/settings/email). De inbox is voor het ontvangen van klantmail en het opstellen van antwoorden; hij routeert je geautomatiseerde factuurverzendingen niet. Factuurbezorging volgt altijd je gekozen verzendmethode onder [E-mailintegratie](/nl/settings/email) (Gmail, Outlook of de ingebouwde verzender). De DKIM van het inboxdomein wordt gebruikt voor uitgaande antwoorden die je in de inbox opstelt, niet voor geautomatiseerde transactionele mail.
