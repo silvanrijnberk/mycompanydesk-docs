@@ -65,15 +65,21 @@ Klik op de **Exporteren**-knop op de lijstpagina om te downloaden.
 CSV-export vereist het **Pro**-abonnement of hoger.
 :::
 
-### AVG-gegevensexport
+### Volledige back-up (JSON)
 
-Exporteer al je persoonlijke gegevens in JSON-formaat:
+Exporteer al je gegevens als volledige JSON-back-up:
 
 1. Ga naar **Profiel > Gegevens**
 2. Klik op **Mijn gegevens exporteren**
 3. Download het JSON-bestand met al je accountgegevens
 
-Deze AVG-export bevat:
+Je kunt ook een CSV-export downloaden van specifieke onderdelen: facturen, klanten, uitgaven, of een volledige back-up.
+
+::: info Account verwijderen
+Je account verwijderen doe je niet hier maar bij **Veilig inloggen** (Profiel > Beveiliging).
+:::
+
+Deze back-up bevat:
 
 - Je profielinformatie
 - Alle facturen, uitgaven, offertes
@@ -86,4 +92,4 @@ Deze AVG-export bevat:
 - Exporteer je gegevens regelmatig als back-up
 - Gebruik CSV-export om gegevens te delen met je boekhouder
 - Wanneer je overstapt van een andere tool, gebruik dan de importwizard om je klantenlijst te migreren
-- De AVG-export biedt een compleet overzicht van je gegevens
+- De volledige back-up biedt een compleet overzicht van je gegevens
