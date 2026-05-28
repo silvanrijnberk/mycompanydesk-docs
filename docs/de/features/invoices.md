@@ -119,6 +119,24 @@ Nach der Verbindung enthaelt jede von Ihnen versendete Rechnung einen Zahlungsli
 
 Wenn eine Rechnung vollstaendig bezahlt ist, zeigt die Kopfzeile des Zahlungsbereichs ein Badge an, das angibt, ueber welchen Anbieter die Zahlung eingegangen ist: "Bezahlt ueber Mollie" oder "Bezahlt ueber Stripe". Der dominante Anbieter wird angezeigt, wenn mehrere Zahlungsmethoden verwendet wurden. So sehen Sie auf einen Blick, wo das Geld eingegangen ist, ohne durch den Zahlungsverlauf scrollen zu muessen.
 
+## Zahlungen rückerstatten
+
+Online-Zahlungen über Mollie oder Stripe können direkt aus MyCompanyDesk rückerstattet werden. Wenn Sie eine Zahlung rückerstatten:
+
+- Wird der volle Betrag über denselben Zahlungsanbieter an den Kunden zurücküberwiesen
+- Wird die Rückerstattung sofort von Mollie oder Stripe verarbeitet
+- Wird die Zahlung in Ihrer Verwaltung als rückerstattet markiert
+
+Offline-Zahlungsmethoden (Banküberweisung, Bargeld) nutzen den bestehenden Stornierungsweg: die Zahlung wird ohne anbieterseitige Rückerstattung als storniert markiert.
+
+So erstatten Sie eine Zahlung:
+
+1. Öffnen Sie die Rechnungsdetailseite
+2. Suchen Sie die Zahlung in der Zahlungsliste
+3. Klicken Sie auf die Schaltfläche **Rückerstatten** (nur für Mollie- und Stripe-Zahlungen verfügbar)
+4. Geben Sie optional einen Grund an
+5. Bestätigen Sie die Rückerstattung
+
 ## Dokumenttypen
 
 Das Rechnungsmodul unterstützt mehrere Dokumenttypen:

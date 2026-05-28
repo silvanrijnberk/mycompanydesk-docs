@@ -119,6 +119,24 @@ Une fois connecte, chaque facture que vous envoyez inclut un lien de paiement. V
 
 Lorsqu'une facture est integralement payee, l'en-tete de la section des paiements affiche un badge indiquant par quel prestataire le paiement est arrive : "Paye via Mollie" ou "Paye via Stripe". Le prestataire dominant est affiche lorsque plusieurs methodes de paiement ont ete utilisees. Vous voyez ainsi en un coup d'oeil ou l'argent a ete recu, sans faire defiler l'historique des paiements.
 
+## Remboursement des paiements
+
+Les paiements en ligne effectues via Mollie ou Stripe peuvent etre rembourses directement depuis MyCompanyDesk. Lorsque vous remboursez un paiement :
+
+- Le montant total est retourne au client via le meme prestataire de paiement
+- Le remboursement est traite immediatement par Mollie ou Stripe
+- Le paiement est marque comme rembourse dans vos archives
+
+Les methodes de paiement hors ligne (virement bancaire, especes) utilisent le chemin d'annulation existant: le paiement est marque comme annule sans remboursement cote prestataire.
+
+Pour rembourser un paiement :
+
+1. Ouvrez la page de detail de la facture
+2. Localisez le paiement dans la liste des paiements
+3. Cliquez sur le bouton **Rembourser** (disponible uniquement pour les paiements Mollie et Stripe)
+4. Ajoutez une raison facultative
+5. Confirmez le remboursement
+
 ## Types de documents
 
 Le module de facturation prend en charge plusieurs types de documents :
