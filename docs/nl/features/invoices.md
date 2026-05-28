@@ -23,7 +23,7 @@ De facturenpagina toont al je facturen met filter- en zoekmogelijkheden. Gebruik
 
 1. Ga naar **Facturen > Nieuwe factuur**
 2. Selecteer of maak een **klant** aan
-3. Voeg **regelitems** toe met omschrijving, aantal, eenheidsprijs en BTW-tarief
+3. Voeg **regelitems** toe met omschrijving, aantal, eenheidsprijs en BTW-tarief. Het standaard BTW-tarief voor nieuwe regels komt uit de belastinginstellingen van je werkruimte (Geldzaken → Belasting). Bij klanten met verlegde BTW wordt automatisch 0% gebruikt.
 4. Stel de **factuurdatum** en **vervaldatum** in
 5. Voeg optionele **notities** of **interne opmerkingen** toe
 6. Klik op **Opslaan** om een concept aan te maken

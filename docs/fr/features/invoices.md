@@ -23,7 +23,7 @@ La page des factures affiche toutes vos factures avec des fonctionnalites de fil
 
 1. Allez dans **Factures > Nouvelle facture**
 2. Selectionnez ou creez un **client**
-3. Ajoutez des **lignes de facturation** avec description, quantite, prix unitaire et taux de TVA
+3. Ajoutez des **lignes de facturation** avec description, quantite, prix unitaire et taux de TVA. Le taux de TVA par defaut pour les nouvelles lignes provient de vos parametres fiscaux (Finances → TVA). Pour les clients en autoliquidation, le taux est automatiquement de 0%.
 4. Definissez la **date de facture** et la **date d'echeance**
 5. Ajoutez des **notes** ou **remarques internes** optionnelles
 6. Cliquez sur **Enregistrer** pour creer un brouillon

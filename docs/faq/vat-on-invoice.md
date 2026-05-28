@@ -13,4 +13,4 @@ To set VAT on an invoice:
 3. The system calculates VAT automatically
 4. VAT totals appear in the invoice summary
 
-If you want new invoices to start with the same rate more often, review the default VAT settings in Company.
+New invoice lines default to the standard VAT rate from your workspace tax settings (Geldzaken → Belasting → Standaard BTW-tarief Facturen). To change it, go to workspace settings → Financial → Tax and update the default rate for invoices or expenses. The rate is always 0% for reverse-charge customers.

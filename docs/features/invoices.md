@@ -23,7 +23,7 @@ The invoices page shows all your invoices with filtering and search capabilities
 
 1. Go to **Invoices > New Invoice**
 2. Select or create a **customer**
-3. Add **line items** with description, quantity, unit price, and VAT rate
+3. Add **line items** with description, quantity, unit price, and VAT rate. The default VAT rate for new lines comes from your workspace tax settings (Geldzaken → Belasting). If a customer has reverse charge enabled, the line automatically uses 0%.
 4. Set the **invoice date** and **due date**
 5. Add optional **notes** or **internal remarks**
 6. Click **Save** to create a draft
