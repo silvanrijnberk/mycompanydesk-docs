@@ -12,7 +12,7 @@ The site builder replaces the old single-page business profile. It gives you a f
 
 - **Multi-page support**: Create as many pages as you need, each with its own path and sections.
 - **Domain switcher**: When your workspace has multiple custom domains (Pro plan), a dropdown in the top bar lets you switch between editing the default site and a per-domain variant. Each domain gets its own pages, navigation, design tokens, and publish snapshot.
-- **Section blocks**: Add hero, text, gallery, spotlight, services, team, testimonials, contact form, and custom HTML sections to any page.
+- **Section blocks**: Add hero, text, gallery, spotlight, services, team, testimonials, contact form, and custom HTML sections to any page. Save sections as reusable blocks to build a personal library.
 - **Design tokens**: Set brand colors, fonts, spacing, border radius, motion style, custom CSS, and a site favicon. Changes apply across the whole site.
 - **Navigation editor**: Drag-and-drop reorder of header links, with dropdown groups and external links.
 - **Publish snapshots**: Work in draft, preview your changes, then publish. Unpublished changes are tracked in the top bar.
@@ -75,6 +75,29 @@ In the **Editor** tab:
 - Drag sections up or down to reorder. Use the duplicate and delete actions on each section.
 
 Some sections have system-only variants that are available on the locked home page but not on custom pages.
+
+## Saved blocks
+
+Save any section as a reusable block and build a personal library of pre-styled building blocks. Saved blocks appear at the top of the section adder, so you can drop a saved layout onto any page without rebuilding it from scratch.
+
+### Save a section as a block
+
+1. Click the bookmark icon on any section row in the editor.
+2. Give the block a name (the section label or type is pre-filled as a suggestion).
+3. The block is saved to your personal library for this workspace.
+
+### Insert a saved block
+
+1. Click **Add section** on any page.
+2. Your saved blocks appear under **My blocks** at the top of the adder panel.
+3. Click a saved block to insert it as a new section on the current page.
+
+Inserting a saved block copies its template into a fresh section row. Editing or deleting the inserted section does not touch the saved block in your library, and the other way around.
+
+### Manage your library
+
+- **Remove a block** from the library by clicking the x icon on the block in the adder panel. This only removes the saved template; it does not affect sections already inserted from it.
+- The **My blocks** header is hidden when your library is empty, so a first-time editor does not see an empty category.
 
 ### Section layout variants
 
@@ -259,7 +282,7 @@ What happens on submit:
 4. The request appears in **Quotes > Requests**.
 5. The visitor sees a customizable success message.
 
-Contact-form submissions are rate-limited to 5 per minute per IP address.
+Contact-form submissions are rate-limited to 5 per minute per IP address. A Cloudflare Turnstile widget also appears before submit when configured on your workspace, blocking automated bot submissions without slowing real visitors down.
 
 ## Newsletter signup
 
@@ -272,7 +295,7 @@ What happens on submit:
 3. The visitor sees a success banner regardless, keeping the subscription state private.
 4. Once confirmed, the subscriber appears in the newsletter audience for that workspace.
 
-Newsletter submissions share the same rate limit as the contact form: 5 per minute per IP address.
+Newsletter submissions share the same rate limit as the contact form: 5 per minute per IP address. The Turnstile bot-protection widget is also active on newsletter forms when configured.
 
 ## Managing requests
 

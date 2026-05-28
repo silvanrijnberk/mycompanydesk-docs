@@ -12,7 +12,7 @@ Le constructeur de site remplace l'ancien profil d'entreprise a page unique. Vou
 
 - **Pages multiples**: Creez autant de pages que necessaire, chacune avec son propre chemin et ses propres sections.
 - **Selecteur de domaine**: Lorsque votre espace de travail possede plusieurs domaines personnalises (abonnement Pro), un menu deroulant dans la barre superieure vous permet de basculer entre l'edition du site principal et une variante par domaine. Chaque domaine dispose de ses propres pages, navigation, tokens de design et snapshot de publication.
-- **Blocs de section**: Ajoutez des sections hero, texte, galerie, spotlight, services, equipe, temoignages, formulaire de contact et HTML personnalise a chaque page.
+- **Blocs de section**: Ajoutez des sections hero, texte, galerie, spotlight, services, equipe, temoignages, formulaire de contact et HTML personnalise a chaque page. Sauvegardez des sections comme blocs reutilisables pour constituer votre propre bibliotheque.
 - **Tokens de design**: Definissez les couleurs de marque, les polices, les espacements, les coins arrondis, le style de mouvement, le CSS personnalise et un favicon de site. Les modifications s'appliquent a l'ensemble du site.
 - **Editeur de navigation**: Reorganisez les liens d'en-tete par glisser-deposer, avec des groupes deroulants et des liens externes.
 - **Snapshots de publication**: Travaillez en brouillon, previsualisez vos modifications, puis publiez. Les modifications non publiees sont affichees dans la barre superieure.
@@ -75,6 +75,29 @@ Dans l'onglet **Editeur** :
 - Faites glisser les sections vers le haut ou le bas pour les reordonner. Utilisez les actions dupliquer et supprimer sur chaque section.
 
 Certaines sections ont des variantes systeme uniquement disponibles sur la page d'accueil verrouillee.
+
+## Blocs sauvegardes
+
+Sauvegardez n'importe quelle section comme bloc reutilisable et constituez une bibliotheque personnelle de composants pre-stylises. Les blocs sauvegardes apparaissent en haut du panneau d'ajout de section, vous permettant d'inserer une mise en page sauvegardee sur n'importe quelle page sans la reconstruire.
+
+### Sauvegarder une section comme bloc
+
+1. Cliquez sur l'icone de signet dans une ligne de section de l'editeur.
+2. Donnez un nom au bloc (le libelle ou le type de la section est pre-rempli comme suggestion).
+3. Le bloc est sauvegarde dans votre bibliotheque personnelle pour cet espace de travail.
+
+### Inserer un bloc sauvegarde
+
+1. Cliquez sur **Ajouter une section** sur une page.
+2. Vos blocs sauvegardes apparaissent sous **Mes blocs** en haut du panneau.
+3. Cliquez sur un bloc sauvegarde pour l'inserer comme nouvelle section sur la page actuelle.
+
+L'insertion d'un bloc sauvegarde copie son modele dans une nouvelle ligne de section. Modifier ou supprimer la section inseree n'affecte pas le bloc sauvegarde dans votre bibliotheque, et inversement.
+
+### Gerer votre bibliotheque
+
+- **Supprimez un bloc** de la bibliotheque en cliquant sur l'icone x a cote du bloc. Cela supprime uniquement le modele sauvegarde ; les sections deja inserees a partir de ce bloc restent intactes.
+- L'en-tete **Mes blocs** est masque lorsque votre bibliotheque est vide, afin qu'un nouvel editeur ne voie pas de categorie vide.
 
 ### Variantes de mise en page
 
@@ -259,7 +282,7 @@ Ce qui se passe lors de l'envoi :
 4. La demande apparait dans **Devis > Demandes**.
 5. Le visiteur voit un message de succes personnalisable.
 
-Les soumissions du formulaire de contact sont limitees a 5 par minute par adresse IP.
+Les soumissions du formulaire de contact sont limitees a 5 par minute par adresse IP. Un widget Cloudflare Turnstile apparait egalement avant l'envoi lorsqu'il est configure sur votre espace de travail, bloquant les soumissions automatisees de bots sans ralentir les vrais visiteurs.
 
 ## Inscription a la newsletter
 
@@ -272,7 +295,7 @@ Ce qui se passe lors de l'envoi :
 3. Le visiteur voit une banniere de succes dans tous les cas, preservant ainsi la confidentialite du statut d'abonnement.
 4. Une fois confirme, l'abonne apparait dans l'audience de la newsletter de cet espace de travail.
 
-Les soumissions a la newsletter partagent la meme limite de taux que le formulaire de contact : 5 par minute par adresse IP.
+Les soumissions a la newsletter partagent la meme limite de taux que le formulaire de contact : 5 par minute par adresse IP. La protection anti-bot Turnstile est egalement active sur les formulaires de newsletter lorsque configuree.
 
 ## Gerer les demandes
 
