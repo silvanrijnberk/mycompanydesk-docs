@@ -8,9 +8,9 @@ Construisez votre site web professionnel avec un editeur par glisser-deposer. Cr
 
 ## Vue d'ensemble
 
-Le constructeur de site remplace l'ancien profil d'entreprise a page unique. Vous obtenez un editeur de site complet avec :
+Le constructeur de site remplace l'ancien profil d'entreprise a page unique. Chaque nouvel espace de travail commence avec un site standard de 4 pages (Accueil, Services, A propos, Contact), vous offrant une vraie fondation multi-pages des le premier jour. L'editeur vous donne :
 
-- **Pages multiples**: Creez autant de pages que necessaire, chacune avec son propre chemin et ses propres sections.
+- **Pages multiples**: Creez autant de pages que necessaire, chacune avec son propre chemin et ses propres sections. Les quatre pages par defaut sont pretes a etre modifiees, supprimees ou completees.
 - **Selecteur de domaine**: Lorsque votre espace de travail possede plusieurs domaines personnalises (abonnement Pro), un menu deroulant dans la barre superieure vous permet de basculer entre l'edition du site principal et une variante par domaine. Chaque domaine dispose de ses propres pages, navigation, tokens de design et snapshot de publication.
 - **Blocs de section**: Ajoutez des sections hero, texte, galerie, spotlight, services, equipe, temoignages, formulaire de contact et HTML personnalise a chaque page. Sauvegardez des sections comme blocs reutilisables pour constituer votre propre bibliotheque.
 - **Tokens de design**: Definissez les couleurs de marque, les polices, les espacements, les coins arrondis, le style de mouvement, le CSS personnalise et un favicon de site. Les modifications s'appliquent a l'ensemble du site.
@@ -52,7 +52,18 @@ Le constructeur de site dispose de cinq onglets (six lorsque Style est deplie) :
 4. Choisissez un modele ou commencez avec une page vierge.
 5. La page s'ouvre dans l'editeur, ou vous pouvez ajouter des sections et la construire.
 
-Chaque page recoit un chemin unique. La page d'accueil (`/`) est creee par defaut et ne peut pas etre supprimee.
+### Pages par défaut
+
+Chaque nouvel espace de travail recoit quatre pages deja crees :
+
+| Page | Chemin | Description |
+|---|---|---|
+| Accueil | `/` | Votre page d'atterrissage principale. Ne peut pas etre supprimee. |
+| Services | `/diensten` | Montrez ce que vous proposez. Pre-remplie avec une section services. |
+| A propos | `/over-ons` | Dites aux visiteurs qui vous etes. |
+| Contact | `/contact` | Formulaire de contact et details. Lie depuis le pied de page. |
+
+Ces pages sont automatiquement connectees a l'en-tete de navigation et au pied de page. Vous pouvez modifier ou supprimer n'importe laquelle, sauf la page d'Accueil qui est toujours obligatoire. La navigation met a jour ses liens quand vous ajoutez ou supprimez des pages.
 
 ### Statut des pages : En ligne vs Brouillon
 

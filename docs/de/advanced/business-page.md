@@ -8,9 +8,9 @@ Erstellen Sie Ihre Geschäftswebsite mit einem Drag-and-Drop-Editor. Legen Sie m
 
 ## Übersicht
 
-Der Website-Builder ersetzt das alte einseitige Unternehmensprofil. Sie erhalten einen vollständigen Website-Editor mit:
+Der Website-Builder ersetzt das alte einseitige Unternehmensprofil. Jeder neue Workspace startet mit einer 4-seitigen Standard-Site (Home, Diensten, Über uns, Kontakt), damit Sie von Tag eins an eine echte mehrseitige Grundlage haben. Der Editor bietet Ihnen:
 
-- **Mehrere Seiten**: Erstellen Sie so viele Seiten, wie Sie benötigen, jede mit eigenem Pfad und eigenen Abschnitten.
+- **Mehrere Seiten**: Erstellen Sie so viele Seiten, wie Sie benötigen, jede mit eigenem Pfad und eigenen Abschnitten. Die vier Standardseiten sind bereit zum Bearbeiten, Löschen oder Ergänzen.
 - **Domain-Wechsler**: Wenn Ihr Workspace mehrere eigene Domains hat (Pro-Tarif), können Sie über ein Dropdown in der oberen Leiste zwischen der Bearbeitung der Hauptwebsite und einer Domain-Variante wechseln. Jede Domain erhält ihre eigenen Seiten, Navigation, Design-Tokens und Veröffentlichungs-Snapshots.
 - **Abschnittsblöcke**: Fügen Sie Hero-, Text-, Galerie-, Spotlight-, Dienstleistungs-, Team-, Testimonial-, Kontaktformular- und benutzerdefinierte HTML-Abschnitte zu jeder Seite hinzu. Speichern Sie Abschnitte als wiederverwendbare Blöcke, um Ihre eigene Bibliothek aufzubauen.
 - **Design-Tokens**: Legen Sie Markenfarben, Schriften, Abstände, Eckenradius, Bewegungsstil, benutzerdefiniertes CSS und ein Site-Favicon fest. Änderungen gelten für die gesamte Site.
@@ -52,7 +52,18 @@ Der Website-Builder hat fünf Tabs (sechs, wenn Stil ausgeklappt ist):
 4. Wählen Sie eine Vorlage oder beginnen Sie mit einer leeren Seite.
 5. Die Seite öffnet sich im Editor, wo Sie Abschnitte hinzufügen und ausbauen können.
 
-Jede Seite erhält einen eindeutigen Pfad. Die Startseite (`/`) wird standardmäßig erstellt und kann nicht gelöscht werden.
+### Standardseiten
+
+Jeder neue Workspace wird mit vier Seiten ausgeliefert:
+
+| Seite | Pfad | Beschreibung |
+|---|---|---|
+| Home | `/` | Ihre Haupt-Landingpage. Kann nicht gelöscht werden. |
+| Diensten | `/diensten` | Zeigen Sie, was Sie anbieten. Vorausgefüllt mit einem Dienstleistungsabschnitt. |
+| Über uns | `/over-ons` | Erzählen Sie Besuchern, wer Sie sind. |
+| Kontakt | `/contact` | Kontaktformular und Details. Aus dem Footer verlinkt. |
+
+Diese Seiten werden automatisch mit der Navigationsleiste und dem Footer verknüpft. Sie können jede Seite bearbeiten oder löschen, außer der Home-Seite, die immer erforderlich ist. Die Navigation passt ihre Links an, wenn Sie Seiten hinzufügen oder entfernen.
 
 ### Seitenstatus: Live vs Entwurf
 

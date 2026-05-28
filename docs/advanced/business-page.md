@@ -8,9 +8,9 @@ Build your business website with a drag-and-drop editor. Create multiple pages, 
 
 ## Overview
 
-The site builder replaces the old single-page business profile. It gives you a full website editor with:
+The site builder replaces the old single-page business profile. Every new workspace starts with a 4-page default site (Home, Diensten, Over ons, Contact) so you have a real multi-page foundation from day one. The editor gives you:
 
-- **Multi-page support**: Create as many pages as you need, each with its own path and sections.
+- **Multi-page support**: Create as many pages as you need, each with its own path and sections. The four default pages are ready to edit, remove, or add to.
 - **Domain switcher**: When your workspace has multiple custom domains (Pro plan), a dropdown in the top bar lets you switch between editing the default site and a per-domain variant. Each domain gets its own pages, navigation, design tokens, and publish snapshot.
 - **Section blocks**: Add hero, text, gallery, spotlight, services, team, testimonials, contact form, and custom HTML sections to any page. Save sections as reusable blocks to build a personal library.
 - **Design tokens**: Set brand colors, fonts, spacing, border radius, motion style, custom CSS, and a site favicon. Changes apply across the whole site.
@@ -52,7 +52,18 @@ The site builder has five tabs (six when Style is expanded):
 4. Choose a template or start blank.
 5. The page opens in the editor, where you can add sections and build it out.
 
-Each page gets a unique path. The home page (`/`) is created by default and cannot be deleted.
+### Default pages
+
+Every new workspace comes with four pages already created:
+
+| Page | Path | Description |
+|---|---|---|
+| Home | `/` | Your main landing page. Cannot be deleted. |
+| Diensten | `/diensten` | Show what you offer. Pre-filled with a services section. |
+| Over ons | `/over-ons` | Tell visitors who you are. |
+| Contact | `/contact` | Contact form and details. Linked from the footer. |
+
+These pages are wired into the navigation header and footer automatically. You can edit or delete any of them, except the Home page which is always required. The navigation updates its links when you add or remove pages.
 
 ### Page status: Live vs Concept
 
