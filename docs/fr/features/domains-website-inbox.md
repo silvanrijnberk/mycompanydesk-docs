@@ -233,7 +233,7 @@ La boite de reception utilise votre domaine personnalise uniquement apres que `q
 
 #### Actualisation en direct
 
-La boite de reception s'actualise automatiquement tant que l'onglet est ouvert. La liste des fils interroge le serveur toutes les 45 secondes pour les nouveaux messages, et le badge de la barre laterale s'actualise toutes les 60 secondes. Les deux se mettent en pause lorsque l'onglet est en arriere-plan -- aucun trafic reseau inutile. L'actualisation est silencieuse : aucun spinner de chargement ne clignote lors des rafraichissements en arriere-plan, et les interrogations sont entierement sautees pendant une recherche active pour que vos resultats restent stables.
+La boite de reception s'actualise automatiquement tant que l'onglet est ouvert. La liste des fils interroge le serveur toutes les 45 secondes pour les nouveaux messages, et le badge de la barre laterale s'actualise toutes les 60 secondes. Les deux se mettent en pause lorsque l'onglet est en arriere-plan -- aucun trafic reseau inutile. L'actualisation est silencieuse : aucun spinner de chargement ne clignote lors des rafraichissements en arriere-plan, et les interrogations sont entierement sautees pendant une recherche active pour que vos resultats restent stables. Un bouton d'actualisation manuelle a côte de Rediger recupere le dernier etat instantanement quand vous attendez quelque chose ; il est desactive pendant l'appel en cours pour eviter l'empilement de requêtes.
 
 #### Marquer comme non lu
 

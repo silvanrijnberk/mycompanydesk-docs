@@ -233,7 +233,7 @@ The inbox uses your custom domain only after `quickEnableInbox` has run successf
 
 #### Live polling
 
-The inbox refreshes automatically while the tab is open. The thread list polls every 45 seconds for new mail, and the sidebar badge refreshes every 60 seconds. Both pauses when the tab is hidden, so no unnecessary network traffic in the background. The polling is silent: no loading spinners flash on background refreshes, and polls are skipped entirely during an active search to keep your results stable.
+The inbox refreshes automatically while the tab is open. The thread list polls every 45 seconds for new mail, and the sidebar badge refreshes every 60 seconds. Both pauses when the tab is hidden, so no unnecessary network traffic in the background. The polling is silent: no loading spinners flash on background refreshes, and polls are skipped entirely during an active search to keep your results stable. A manual refresh button next to Compose lets you pull the latest state instantly when you are expecting something right now; it is disabled during the in-flight call to prevent request stacking.
 
 #### Mark as unread
 
