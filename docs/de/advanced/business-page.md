@@ -100,7 +100,7 @@ Wenn Sie das Bild-Upload-Feld in einem beliebigen Abschnittsblock öffnen (Hero,
 - Geben Sie einen Suchbegriff ein (z. B. "friseursalon", "kaffee", "holz") und drücken Sie Enter.
 - Ergebnisse erscheinen in einem Raster. Klicken Sie auf ein Foto, um es als Abschnittsbild einzufügen.
 - Die Suche läuft über den MyCompanyDesk-Server, sodass Ihr Unsplash-Zugriffsschlüssel niemals den Browser erreicht.
-- Die Namensnennung wird automatisch gemäß den API-Richtlinien von Unsplash verfolgt. Wir empfehlen, Fotografen wo möglich zu nennen.
+- Die Namensnennung wird automatisch gemäß den API-Richtlinien von Unsplash verfolgt und auf Ihrer veröffentlichten Website angezeigt. Sobald Ihre Website live geht, erscheint ein "Fotos: <Fotograf> · Unsplash"-Hinweis in der Fußzeile jeder Seite, die mindestens ein Stockfoto enthält, sodass Sie stets richtlinienkonform sind.
 - Wenn Unsplash in Ihrem Workspace nicht konfiguriert ist, bleibt der Stockfoto-Button ausgeblendet, sodass Sie nie ein nicht funktionierendes Feature sehen.
 
 ## Gespeicherte Blöcke
