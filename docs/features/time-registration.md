@@ -31,6 +31,16 @@ Time registration helps you:
    - **Hourly rate** — Your rate for this work
 4. Click **Save**
 
+### Default description
+
+When adding a time entry, the description field is automatically pre-filled from your workspace's **Standaard regelomschrijving** (standard line description). The system checks in order:
+
+1. The project's default line description
+2. The customer's default line description
+3. The workspace default
+
+Your own input is never overwritten. Once you type a custom description, the pre-filled value will not replace it.
+
 ### Hours-only mode
 
 For simplified time tracking, enable hours-only mode in settings. This hides the hourly rate and billable fields, showing only hours and description.

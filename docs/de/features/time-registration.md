@@ -31,6 +31,16 @@ Die Zeiterfassung hilft Ihnen:
    - **Stundensatz** — Ihr Satz für diese Arbeit
 4. Klicken Sie auf **Speichern**
 
+### Standardbeschreibung
+
+Wenn Sie einen Zeiteintrag hinzufugen, wird das Beschreibungsfeld automatisch aus der **Standardbeschreibung** (Standaard regelomschrijving) Ihres Arbeitsbereichs vorausgefullt. Das System pruft in dieser Reihenfolge:
+
+1. Die Standardbeschreibung des Projekts
+2. Die Standardbeschreibung des Kunden
+3. Die Standardbeschreibung des Arbeitsbereichs
+
+Ihre eigene Eingabe wird niemals uberschrieben. Sobald Sie eine eigene Beschreibung eintippen, wird der vorausgefullte Wert nicht mehr ersetzt.
+
 ### Nur-Stunden-Modus
 
 Für vereinfachte Zeiterfassung aktivieren Sie den Nur-Stunden-Modus in den Einstellungen. Dieser blendet die Felder für Stundensatz und Abrechenbarkeit aus und zeigt nur Stunden und Beschreibung an.

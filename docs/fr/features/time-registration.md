@@ -31,6 +31,16 @@ L'enregistrement du temps vous aide a :
    - **Taux horaire** -- Votre tarif pour ce travail
 4. Cliquez sur **Enregistrer**
 
+### Description par defaut
+
+Lorsque vous ajoutez une entree de temps, le champ de description est automatiquement prerempli a partir de la **description standard** (Standaard regelomschrijving) de votre espace de travail. Le systeme verifie dans l'ordre :
+
+1. La description standard du projet
+2. La description standard du client
+3. La description standard de l'espace de travail
+
+Votre propre saisie n'est jamais ecrasee. Des que vous tapez une description personnalisee, la valeur preremplie ne la remplace plus.
+
 ### Mode heures uniquement
 
 Pour un suivi du temps simplifie, activez le mode heures uniquement dans les parametres. Cela masque le taux horaire et les champs de facturation, n'affichant que les heures et la description.

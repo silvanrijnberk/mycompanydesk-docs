@@ -31,6 +31,16 @@ Tijdregistratie helpt je om:
    - **Uurtarief** — Je tarief voor dit werk
 4. Klik op **Opslaan**
 
+### Standaard omschrijving
+
+Wanneer je een tijdregistratie toevoegt, wordt het omschrijvingsveld automatisch vooraf ingevuld vanuit de **Standaard regelomschrijving** van je werkruimte. Het systeem controleert in volgorde:
+
+1. De standaard regelomschrijving van het project
+2. De standaard regelomschrijving van de klant
+3. De standaard regelomschrijving van de werkruimte
+
+Je eigen invoer wordt nooit overschreven. Zodra je een eigen omschrijving typt, wordt de vooraf ingevulde waarde niet meer vervangen.
+
 ### Alleen-uren-modus
 
 Voor vereenvoudigde tijdregistratie schakel je de alleen-uren-modus in via de instellingen. Dit verbergt het uurtarief en declarabele velden en toont alleen uren en omschrijving.
