@@ -104,7 +104,7 @@ A FIFO cap of 50 examples per `(company_id, task)` keeps lookup at microseconds 
 
 ## Industry detection
 
-The local **E2B** model (Workers AI primary, Gemini Flash-Lite when `ai_processing_mode` is `google_only`) classifies your workspace's industry from invoice and expense history. It re-evaluates progressively:
+The local **E2B** model (Gemini Flash-Lite primary, Workers AI fallback for both processing modes; Ollama Cloud as an additional fallback in Optimise mode only) classifies your workspace's industry from invoice and expense history. It re-evaluates progressively:
 
 | Workspace state | Behaviour |
 |---|---|
