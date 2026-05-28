@@ -76,6 +76,36 @@ In de **Editor**-tab:
 
 Sommige secties hebben alleen-systeemvarianten die beschikbaar zijn op de vergrendelde homepage maar niet op aangepaste pagina's.
 
+### Sectie-layoutvarianten
+
+Hero-, diensten- en tarievensecties ondersteunen meerdere layoutvarianten. Kies er een uit de **Stijl**-dropdown in het Layout-tabblad van de inspector om te bepalen hoe de sectie eruitziet. De standaardvariant behoudt het vertrouwde uiterlijk, dus secties die je vóór deze functie hebt gebouwd blijven hetzelfde tonen.
+
+#### Hero-varianten
+
+| Variant | Effect |
+|---|---|
+| **Standaard (split rechts)** | Standaard. Afbeelding rechts, tekst links. Valt terug op gecentreerde tekst als er geen afbeelding is. |
+| **Split links** | Spiegel van de standaard: afbeelding links, tekst rechts. Vereist een afbeelding. |
+| **Gecentreerd** | Tekst gecentreerd, optionele afbeelding eronder in een breed 16:9-kader. |
+| **Banner** | Afbeelding over de volle breedte als achtergrond met een verloopoverlay. Witte tekst op een donkere scherm, extra hoog zodat de afbeelding ruimte krijgt. Vereist een afbeelding. |
+| **Minimaal** | Alleen tekst in een smalle kolom. Geen afbeelding. Strak en rustig, geschikt voor documentatie-achtige pagina's. |
+
+#### Diensten-varianten
+
+| Variant | Effect |
+|---|---|
+| **Standaard (kaarten)** | Standaard. Grid van kaarten in 2, 3 of 4 kolommen. Icoon, titel en omschrijving per item. |
+| **Icoon-raster** | Compactere, icoon-gedreven layout met grotere iconen en minder kaartchroom. Geschikt voor 4 of meer korte items. |
+| **Lijst** | Verticale rijen met een icoon links en tekst rechts, gescheiden door dunne lijnen. Goed voor lange doorleeslijsten. |
+| **Accordeon** | Verticaal gestapelde klikbare rijen. Omschrijving verborgen tot de rij wordt uitgeklapt. Gebruikt dezelfde chevron-animatie als het FAQ-blok. |
+
+#### Tarieven-varianten
+
+| Variant | Effect |
+|---|---|
+| **Standaard (kaarten)** | Standaard. Tier-kaarten naast elkaar met naam, prijs, functielijst en koopknop of CTA. |
+| **Vergelijkingstabel** | Feature-matrix. Rijen zijn alle functies uit alle tiers samengevoegd. Kolommen zijn de tiers. Elke cel toont een vinkje of een streepje, zodat bezoekers snel kolommen kunnen scannen om abonnementen te vergelijken. De uitgelichte tier-kolom blijft getint. |
+
 ### Spotlight
 
 Het spotlight-blok is een rij waarin beeld en tekst elkaar afwisselen. Elke rij toont een afbeelding aan de ene kant en tekst aan de andere: een eyebrow, titel, ondertitel, bullets met vinkjes en een optionele call-to-action-link. In het layout-paneel bepaal je aan welke kant de afbeelding staat.
@@ -94,6 +124,8 @@ Bij de tarievensectie kun je pakketten of abonnementen laten zien. Elke tier kan
 - Een **Koop nu**-knop vervangt de statische CTA-link. Bezoekers die erop klikken gaan via de MyCompanyDesk-checkout naar Mollie of Stripe Connect om te betalen.
 - Het koopknop-label is standaard "Koop nu" maar kan per tier worden aangepast met het **buyLabel**-veld.
 - Tarieven zonder koopknop houden het bestaande CTA-linkgedrag.
+
+Tarievensecties kunnen ook als vergelijkingsmatrix worden getoond. Zet de layoutvariant op **Vergelijkingstabel** in de inspector. De matrix toont elke tier als kolom en alle functies uit alle tiers als rijen, met vinkjes waar een tier de functie heeft. Zo zie je in een oogopslag hoe abonnementen zich tot elkaar verhouden. Zie [Sectie-layoutvarianten](#sectie-layoutvarianten) voor de volledige opties.
 
 ### Productblok
 
