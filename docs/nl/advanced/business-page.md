@@ -78,7 +78,7 @@ Sommige secties hebben alleen-systeemvarianten die beschikbaar zijn op de vergre
 
 ### Sectie-layoutvarianten
 
-Hero-, diensten- en tarievensecties ondersteunen meerdere layoutvarianten. Kies er een uit de **Stijl**-dropdown in het Layout-tabblad van de inspector om te bepalen hoe de sectie eruitziet. De standaardvariant behoudt het vertrouwde uiterlijk, dus secties die je vóór deze functie hebt gebouwd blijven hetzelfde tonen.
+Hero-, diensten-, tarieven- en testimonialsecties ondersteunen meerdere layoutvarianten. Kies er een uit de **Stijl**-dropdown in het Layout-tabblad van de inspector om te bepalen hoe de sectie eruitziet. De standaardvariant behoudt het vertrouwde uiterlijk, dus secties die je vóór deze functie hebt gebouwd blijven hetzelfde tonen.
 
 #### Hero-varianten
 
@@ -105,6 +105,14 @@ Hero-, diensten- en tarievensecties ondersteunen meerdere layoutvarianten. Kies 
 |---|---|
 | **Standaard (kaarten)** | Standaard. Tier-kaarten naast elkaar met naam, prijs, functielijst en koopknop of CTA. |
 | **Vergelijkingstabel** | Feature-matrix. Rijen zijn alle functies uit alle tiers samengevoegd. Kolommen zijn de tiers. Elke cel toont een vinkje of een streepje, zodat bezoekers snel kolommen kunnen scannen om abonnementen te vergelijken. De uitgelichte tier-kolom blijft getint. |
+
+#### Testimonial-varianten
+
+| Variant | Effect |
+|---|---|
+| **Standaard (raster)** | Standaard. Kaarten in een raster van 2 tot 3 kolommen. Elke kaart toont de quote, naam en optionele rol. |
+| **Spotlight (enkele quote)** | Een enkele grote pull-quote in magazine-stijl, gecentreerd met serif-typografie. Extra getuigenissen verschijnen als kleine naambadges onder de hoofdquote. |
+| **Lopende band** | Een horizontaal scrollende rij met quote-kaarten. Hoveren pauzeert de animatie; de reduced-motion-voorkeur van het besturingssysteem stopt hem volledig. De track loopt naadloos door met twee kopieën van de itemset. |
 
 ### Spotlight
 
@@ -194,7 +202,7 @@ Elk sectieblok heeft een **Onderkant scheiding**-instelling in het stijlpaneel v
 
 In de **Stijl**-tab bepaal je de look-and-feel van je hele site:
 
-- **Presets**: Klik-en-klaar-startpunten die kleuren, lettertypes en witruimte in een keer instellen. De Editorial-preset geeft je een navy-met-goud-palet met serif-koppen en mono-eyebrows, de MyCompanyDesk-huisstijl. Een preset toepassen voegt de tokens samen met je werkruimte, waarbij je logo, custom CSS en head-snippets behouden blijven.
+- **Presets**: Klik-en-klaar-startpunten die kleuren, lettertypes en witruimte in een keer instellen. Er zijn acht presets: **Editorial** (navy en goud, serif-koppen), **Studio** (warme roomkleur met terracotta), **Tech** (strak slate met elektrisch blauw), **Atelier** (bone-wit met diepgroen), **Bold** (hoog contrast zwart met fel accent), **Calm** (saliegroen en zacht wit), **Mono** (architectonisch minimalisme, geen accentkleur) en **Vivid** (kobalt en koraal op koel wit). Een preset toepassen voegt de tokens samen met je werkruimte, waarbij je logo, custom CSS en head-snippets behouden blijven.
 - **Kleuren**: Kies merk-, accent-, papier-, inkt-, oppervlakte- en gedempte kleuren. Het palet wordt toegepast via CSS custom properties.
 - **Donkere modus**: Bepaal hoe je site omgaat met donkere weergave. Drie opties: **Uit** (geen donkere modus, de site blijft in het lichte palet), **Knop** (bezoekers zien een zon/maan-knop in de navigatiebalk en kunnen wisselen, hun keuze wordt lokaal opgeslagen), of **Volg systeem** (de site volgt automatisch de OS-voorkeur van de bezoeker via een live media-query). Wanneer donkere modus aan staat, verschijnt er een donker palet waarin je per kleur een nachtversie kunt instellen. Laat je het donkere palet leeg, dan past de site een automatische inversie toe waarbij je merk- en accentkleuren behouden blijven.
 - **Typografie**: Kies kop-, body- en mono-lettertypes uit de ingebouwde lettertypebibliotheek (Geist, Inter, DM Sans, DM Serif Display, Fraunces, Instrument Serif, Geist Mono).

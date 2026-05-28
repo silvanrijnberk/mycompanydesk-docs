@@ -78,7 +78,7 @@ Certaines sections ont des variantes systeme uniquement disponibles sur la page 
 
 ### Variantes de mise en page
 
-Les sections hero, services et tarifs prennent en charge plusieurs variantes de mise en page. Choisissez-en une dans le menu deroulant **Style** de l'onglet Mise en page du panneau d'inspection pour changer l'apparence de la section. La variante par defaut conserve l'aspect familier, vos sections creees avant cette fonctionnalite restent donc inchangees.
+Les sections hero, services, tarifs et temoignages prennent en charge plusieurs variantes de mise en page. Choisissez-en une dans le menu deroulant **Style** de l'onglet Mise en page du panneau d'inspection pour changer l'apparence de la section. La variante par defaut conserve l'aspect familier, vos sections creees avant cette fonctionnalite restent donc inchangees.
 
 #### Variantes hero
 
@@ -105,6 +105,14 @@ Les sections hero, services et tarifs prennent en charge plusieurs variantes de 
 |---|---|
 | **Standard (cartes)** | Defaut. Cartes de niveaux cote a cote avec nom, prix, liste de fonctionnalites et bouton d'achat ou CTA. |
 | **Tableau comparatif** | Matrice de fonctionnalites. Les lignes sont toutes les fonctionnalites de tous les niveaux regroupees. Les colonnes sont les niveaux. Chaque cellule affiche une coche ou un tiret pour que les visiteurs puissent rapidement scanner les colonnes et comparer les forfaits. La colonne du niveau mis en avant reste teintee. |
+
+#### Variantes temoignages
+
+| Variante | Effet |
+|---|---|
+| **Standard (grille)** | Defaut. Cartes en grille de 2 a 3 colonnes. Chaque carte affiche la citation, le nom et le role optionnel. |
+| **Spotlight (citation unique)** | Une grande citation unique en style magazine, centree avec typographie serif. Les temoignages supplementaires apparaissent comme de petits badges nominatifs sous la citation principale. |
+| **Bandeau defilant** | Une rangee de cartes de citations defilant horizontalement. Le survol met la defilement en pause ; la preference de mouvement reduit du systeme l'arrete completement. La piste boucle de maniere transparente avec deux copies de l'ensemble. |
 
 ### Spotlight
 
@@ -194,7 +202,7 @@ Chaque bloc de section dispose d'un parametre **Separateur inferieur** dans le p
 
 Dans l'onglet **Style**, vous controlez l'apparence de l'ensemble de votre site :
 
-- **Presets** : Des points de depart en un clic qui definissent les couleurs, les polices et les espacements d'un coup. Le preset Editorial apporte une palette bleu marine et or avec des titres serif et des eyebrows mono, reflet du style maison MyCompanyDesk. Appliquer un preset fusionne les tokens avec votre espace de travail, en preservant votre logo, votre CSS personnalise et vos snippets d'en-tete.
+- **Presets** : Des points de depart en un clic qui definissent les couleurs, les polices et les espacements d'un coup. Huit presets sont disponibles : **Editorial** (bleu marine et or, titres serif), **Studio** (creme chaud avec terre cuite), **Tech** (ardoise sobre avec bleu electrique), **Atelier** (blanc os avec vert profond), **Bold** (noir a fort contraste avec un accent vif), **Calm** (vert sauge et blanc doux), **Mono** (minimalisme architectural, sans couleur d'accent) et **Vivid** (cobalt et corail sur blanc froid). Appliquer un preset fusionne les tokens avec votre espace de travail, en preservant votre logo, votre CSS personnalise et vos snippets d'en-tete.
 - **Couleurs**: Choisissez les couleurs de marque, d'accent, de papier, d'encre, de surface et attenuees. La palette est appliquee via des proprietes CSS personnalisees.
 - **Mode sombre**: Definit le comportement du site en affichage sombre. Trois options : **Desactive** (pas de mode sombre, le site reste sur le theme clair), **Bouton** (les visiteurs voient un bouton soleil/lune dans la navigation et peuvent changer de theme, leur choix est enregistre localement), ou **Suivre le systeme** (le site suit automatiquement la preference du visiteur au niveau du systeme d'exploitation via un ecouteur media-query en direct). Lorsque le mode sombre est actif, une palette sombre apparait, vous permettant de definir une version nocturne de chaque couleur. Si vous laissez la palette sombre vide, le site applique une inversion par defaut qui preserve vos couleurs de marque et d'accent.
 - **Typographie**: Choisissez les polices de titre, de corps et mono dans la bibliotheque integree (Geist, Inter, DM Sans, DM Serif Display, Fraunces, Instrument Serif, Geist Mono).
