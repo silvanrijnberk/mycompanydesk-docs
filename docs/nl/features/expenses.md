@@ -24,8 +24,9 @@ De uitgavenpagina toont al je geregistreerde uitgaven. Filter op:
    - **Omschrijving** — Waarvoor de uitgave is
    - **Bedrag** — Totale kosten (inclusief of exclusief BTW)
    - **Datum** — Wanneer de uitgave plaatsvond
-   - **Categorie** — Selecteer uit voorgedefinieerde categorieen
+   - **Categorie** — Selecteer uit voorgedefinieerde categorieen. Als je een standaard uitgavecategorie hebt ingesteld onder werkruimte-instellingen, is deze hier al vooringevuld.
    - **BTW-tarief** — Wordt vooringevuld met het standaard BTW-tarief voor uitgaven van je werkruimte (in te stellen onder werkruimte-instellingen). Je kunt het altijd per uitgave aanpassen.
+   - **Betaalmethode** — Wordt vooringevuld met de standaard betaalmethode voor uitgaven van je werkruimte, indien ingesteld.
 3. Voeg optioneel een **bon**-afbeelding of PDF toe
 4. Koppel optioneel aan een **project** of **klant**
 5. Klik op **Opslaan**
@@ -119,7 +120,7 @@ Importeer uitgaven vanuit CSV:
 
 ## Tips
 
-- Stel je standaard BTW-tarief voor uitgaven in onder **Werkruimte-instellingen** zodat het formulier niet steeds op 21% begint. Een 0%-instelling werkt correct; het formulier behandelt die als een bewuste keuze.
+- Stel je standaard BTW-tarief, standaard uitgavecategorie en standaard betaalmethode voor uitgaven in onder **Werkruimte-instellingen** zodat het formulier niet steeds leeg begint. Een 0%-BTW-instelling werkt correct; het formulier behandelt die als een bewuste keuze.
 - Schakel [AI-suggesties](/nl/advanced/ai-features) in voor automatische categorie-aanbevelingen
 - Voeg altijd bonnen toe — ze zijn essentieel voor belastingcontroles
 - Gebruik projecten om de verhouding uitgaven-inkomsten bij te houden

@@ -24,8 +24,9 @@ Die Ausgabenseite listet alle Ihre erfassten Ausgaben auf. Filtern Sie nach:
    - **Beschreibung** — Wofür die Ausgabe ist
    - **Betrag** — Gesamtkosten (inklusive oder exklusive USt.)
    - **Datum** — Wann die Ausgabe angefallen ist
-   - **Kategorie** — Aus vordefinierten Kategorien auswählen
+   - **Kategorie** — Aus vordefinierten Kategorien auswählen. Wenn Sie unter Arbeitsbereichseinstellungen eine Standard-Ausgabenkategorie festgelegt haben, ist diese hier bereits vorausgefüllt.
    - **USt.-Satz** — Wird mit dem Standard-USt.-Satz fur Ausgaben Ihres Arbeitsbereichs vorausgefullt (einstellbar unter Arbeitsbereichseinstellungen). Sie konnen ihn jederzeit pro Ausgabe uberschreiben.
+   - **Zahlungsmethode** — Wird mit der Standard-Zahlungsmethode fur Ausgaben Ihres Arbeitsbereichs vorausgefullt, falls festgelegt.
 3. Hängen Sie optional ein **Beleg**-Bild oder PDF an
 4. Verknüpfen Sie optional mit einem **Projekt** oder **Kunden**
 5. Klicken Sie auf **Speichern**
@@ -119,7 +120,7 @@ Importieren Sie Ausgaben aus CSV:
 
 ## Tipps
 
-- Legen Sie Ihren Standard-USt.-Satz fur Ausgaben unter **Arbeitsbereichseinstellungen** fest, damit das Formular nicht jedes Mal mit 21 % startet. Eine 0-%-Einstellung funktioniert korrekt; das Formular behandelt sie als bewusste Wahl.
+- Legen Sie Ihren Standard-USt.-Satz, Ihre Standard-Ausgabenkategorie und Ihre Standard-Zahlungsmethode fur Ausgaben unter **Arbeitsbereichseinstellungen** fest, damit das Formular nicht jedes Mal leer startet. Eine 0-%-Einstellung funktioniert korrekt; das Formular behandelt sie als bewusste Wahl.
 - Aktivieren Sie [KI-Vorschläge](/de/advanced/ai-features) für automatische Kategorieempfehlungen
 - Hängen Sie immer Belege an — sie sind für Steuerprüfungen unerlässlich
 - Verwenden Sie Projekte, um das Verhältnis von Ausgaben zu Einnahmen zu verfolgen

@@ -24,8 +24,9 @@ La page des dépenses répertorie toutes vos dépenses enregistrées. Filtrez pa
    - **Description** -- L'objet de la dépense
    - **Montant** -- Coût total (TTC ou HT)
    - **Date** -- Date de la dépense
-   - **Catégorie** -- Sélectionnez parmi les catégories prédéfinies
+   - **Catégorie** -- Sélectionnez parmi les catégories prédéfinies. Si vous avez défini une catégorie de dépense par défaut dans les paramètres de l'espace de travail, elle est déjà pré-remplie ici.
    - **Taux de TVA** -- Pre-rempli avec le taux de TVA par defaut pour les depenses de votre espace de travail (configurable dans les parametres de l'espace de travail). Vous pouvez toujours le modifier par depense.
+   - **Mode de paiement** -- Pre-rempli avec le mode de paiement par defaut pour les depenses de votre espace de travail, s'il est defini.
 3. Joignez optionnellement une image ou un PDF de **reçu**
 4. Liez optionnellement à un **projet** ou un **client**
 5. Cliquez sur **Enregistrer**
@@ -119,7 +120,7 @@ Importez des dépenses depuis un fichier CSV :
 
 ## Conseils
 
-- Definissez votre taux de TVA par defaut pour les depenses dans **Parametres de l'espace de travail** pour que le formulaire ne commence pas toujours a 21 %. Un reglage a 0 % fonctionne correctement; le formulaire le traite comme un choix intentionnel.
+- Definissez votre taux de TVA, votre categorie de depense et votre mode de paiement par defaut dans **Parametres de l'espace de travail** pour que le formulaire ne commence pas toujours avec des champs vides. Un reglage a 0 % pour la TVA fonctionne correctement; le formulaire le traite comme un choix intentionnel.
 - Activez les [suggestions IA](/fr/advanced/ai-features) pour des recommandations automatiques de catégories
 - Joignez toujours les reçus -- ils sont essentiels pour les contrôles fiscaux
 - Utilisez les projets pour suivre le ratio dépenses/revenus
