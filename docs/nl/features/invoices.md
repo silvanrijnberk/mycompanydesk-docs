@@ -119,6 +119,24 @@ Na het koppelen bevat elke factuur die je verstuurt een betaallink. Je klanten b
 
 Wanneer een factuur volledig is betaald, toont de kop van de betalingssectie een badge die aangeeft via welke provider de betaling binnenkwam: "Betaald via Mollie" of "Betaald via Stripe". De dominante provider wordt getoond wanneer meerdere betaalmethoden zijn gebruikt. Zo zie je in een oogopslag waar het geld is binnengekomen, zonder door het betalingsverloop te scrollen.
 
+## Betalingen terugstorten
+
+Online betalingen via Mollie of Stripe kunnen direct vanuit MyCompanyDesk worden teruggestort. Wanneer je een betaling terugstort:
+
+- Wordt het volledige bedrag teruggestort naar je klant via dezelfde betaalprovider
+- Wordt de terugbetaling direct verwerkt door Mollie of Stripe
+- Wordt de betaling gemarkeerd als teruggestort in je administratie
+
+Offline betaalmethoden (bankoverschrijving, contant) gebruiken de bestaande ongeldig-route — de betaling wordt gemarkeerd als ongeldig zonder terugstorting via de provider.
+
+Om een betaling terug te storten:
+
+1. Open de factuurdetailpagina
+2. Zoek de betaling in de betalingslijst
+3. Klik op de **terugbetalen**-knop (alleen beschikbaar voor Mollie- en Stripe-betalingen)
+4. Voeg een optionele reden toe
+5. Bevestig de terugbetaling
+
 ## Documenttypen
 
 De factuurmodule ondersteunt meerdere documenttypen:

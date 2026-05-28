@@ -119,6 +119,24 @@ Once connected, every invoice you send includes a payment link. Your customers p
 
 When an invoice is fully paid, the payment section header shows a badge identifying which processor the payment came through: "Paid via Mollie" or "Paid via Stripe". The dominant processor is displayed when multiple payment methods were used. This lets you see at a glance where the money landed without scrolling through the payment history.
 
+## Payment refunds
+
+Online payments made via Mollie or Stripe can be refunded directly from MyCompanyDesk. When you refund a payment:
+
+- The full amount is returned to your customer through the same payment provider
+- The refund is processed immediately by Mollie or Stripe
+- The payment is marked as refunded in your records
+
+Non-online methods (bank transfer, cash) use the existing void path — the payment is marked voided without a processor-side refund.
+
+To refund a payment:
+
+1. Open the invoice detail page
+2. Locate the payment in the payment list
+3. Click the **refund** button (available for Mollie and Stripe payments only)
+4. Add an optional reason
+5. Confirm the refund
+
 ## Document types
 
 The invoice module supports multiple document types:
