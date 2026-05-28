@@ -115,6 +115,10 @@ Enable online invoice payments by connecting your own Mollie or Stripe account:
 
 Once connected, every invoice you send includes a payment link. Your customers pay through your own processor account. Funds go directly to you. MyCompanyDesk does not handle or hold your payments.
 
+## Payment processor badge
+
+When an invoice is fully paid, the payment section header shows a badge identifying which processor the payment came through: "Paid via Mollie" or "Paid via Stripe". The dominant processor is displayed when multiple payment methods were used. This lets you see at a glance where the money landed without scrolling through the payment history.
+
 ## Document types
 
 The invoice module supports multiple document types:
