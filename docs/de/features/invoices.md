@@ -115,6 +115,10 @@ Aktivieren Sie Online-Rechnungszahlungen, indem Sie Ihr eigenes Mollie- oder Str
 
 Nach der Verbindung enthaelt jede von Ihnen versendete Rechnung einen Zahlungslink. Ihre Kunden bezahlen ueber Ihr eigenes Anbieterkonto. Das Geld geht direkt an Sie. MyCompanyDesk verarbeitet oder verwahrt keine Zahlungen fuer Sie.
 
+## Zahlungsanbieter-Badge
+
+Wenn eine Rechnung vollstaendig bezahlt ist, zeigt die Kopfzeile des Zahlungsbereichs ein Badge an, das angibt, ueber welchen Anbieter die Zahlung eingegangen ist: "Bezahlt ueber Mollie" oder "Bezahlt ueber Stripe". Der dominante Anbieter wird angezeigt, wenn mehrere Zahlungsmethoden verwendet wurden. So sehen Sie auf einen Blick, wo das Geld eingegangen ist, ohne durch den Zahlungsverlauf scrollen zu muessen.
+
 ## Dokumenttypen
 
 Das Rechnungsmodul unterstützt mehrere Dokumenttypen:

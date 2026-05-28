@@ -115,6 +115,10 @@ Schakel online factuurbetalingen in door je eigen Mollie- of Stripe-account te k
 
 Na het koppelen bevat elke factuur die je verstuurt een betaallink. Je klanten betalen via jouw eigen verwerker. Het geld staat direct op jouw rekening. MyCompanyDesk verwerkt of beheert geen betalingen voor je.
 
+## Betaalprovider-badge
+
+Wanneer een factuur volledig is betaald, toont de kop van de betalingssectie een badge die aangeeft via welke provider de betaling binnenkwam: "Betaald via Mollie" of "Betaald via Stripe". De dominante provider wordt getoond wanneer meerdere betaalmethoden zijn gebruikt. Zo zie je in een oogopslag waar het geld is binnengekomen, zonder door het betalingsverloop te scrollen.
+
 ## Documenttypen
 
 De factuurmodule ondersteunt meerdere documenttypen:

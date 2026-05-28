@@ -115,6 +115,10 @@ Activez les paiements de factures en ligne en connectant votre propre compte Mol
 
 Une fois connecte, chaque facture que vous envoyez inclut un lien de paiement. Vos clients paient via votre propre compte prestataire. Les fonds vous sont verses directement. MyCompanyDesk ne traite ni ne conserve vos paiements.
 
+## Badge du prestataire de paiement
+
+Lorsqu'une facture est integralement payee, l'en-tete de la section des paiements affiche un badge indiquant par quel prestataire le paiement est arrive : "Paye via Mollie" ou "Paye via Stripe". Le prestataire dominant est affiche lorsque plusieurs methodes de paiement ont ete utilisees. Vous voyez ainsi en un coup d'oeil ou l'argent a ete recu, sans faire defiler l'historique des paiements.
+
 ## Types de documents
 
 Le module de facturation prend en charge plusieurs types de documents :
