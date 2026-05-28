@@ -98,7 +98,7 @@ Fonctionnalites booleennes par plan :
 | `api_access`, `webhooks`, `priority_support` | non | non | oui |
 | `advanced_permissions` | non | non | oui |
 | `bank_connections` | non | non | oui |
-| `e2b_realtime_classification` | non | oui | oui |
+| `realtime_classification` | non | oui | oui |
 
 La liste complete des fonctionnalites se trouve dans `FEATURE_KEYS` dans `plans.config.js`.
 
