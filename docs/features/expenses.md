@@ -30,14 +30,14 @@ The setup wizard seeds an industry-tailored set on top of the eleven system defa
 1. Go to **Expenses > New**.
 2. Type the **supplier** name. The supplier autocomplete suggests previously-used vendors as you type.
 3. Pick a **category**. The form pulls the category's default VAT treatment, default VAT rate hint and deduction percentage straight into the matching fields.
-4. Fill in the **description**, **amount excl. VAT**, **VAT rate** and **date**. The VAT amount is calculated automatically; you can also enter the inclusive amount and let the form back out the components.
+4. Fill in the **description**, **amount excl. VAT**, **VAT rate** and **date**. The VAT rate is pre-filled from your workspace's default expense VAT rate (set under workspace settings as "Standard VAT rate expenses"). The VAT amount is calculated automatically; you can also enter the inclusive amount and let the form back out the components.
 5. Optionally set the **VAT treatment** (overrides the category default), **payment method**, **customer**, **project**, **reference** and **notes**.
 6. Optionally attach a **receipt**.
 7. Click **Save**.
 
 ### Generate from supplier
 
-When you're creating a new expense and you've typed a supplier name, the **Generate** button (sparkles icon, top right) runs an LLM prefill. It uses the supplier and any partial inputs to suggest a description, category, VAT treatment, amount and date. Review the result before saving — the prefill is a draft, not an autopilot.
+When you're creating a new expense and you've typed a supplier name, the **Generate** button (sparkles icon, top right) runs an LLM prefill. It uses the supplier and any partial inputs to suggest a description, category, VAT treatment, amount and date. If the form's VAT rate still matches your workspace default, the prefill will overwrite it with what it finds on the receipt; otherwise it leaves your override alone. Review the result before saving — the prefill is a draft, not an autopilot.
 
 ### From bank transactions
 
@@ -126,6 +126,7 @@ Import historical expenses from CSV via **Profile > Import** > **Expenses**. Map
 ## Tips
 
 - Pick the right category first — VAT treatment, deduction percentage and the investment flag all flow from it.
+- Set your workspace default VAT rate for expenses in **Workspace settings** to stop the form defaulting to 21% every time. A 0% setting works correctly; the form treats it as intentional.
 - Use the per-expense VAT treatment override sparingly; if you find yourself overriding every entry in a category, the category default is wrong and should be edited.
 - Always attach receipts. The pre-filing checks on the [VAT page](/features/vat) flag missing receipts before you file.
 - For mixed-rate receipts, use the lines API path until the form UI ships — single-rate entry is fine for everything else.

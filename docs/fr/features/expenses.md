@@ -25,7 +25,7 @@ La page des dépenses répertorie toutes vos dépenses enregistrées. Filtrez pa
    - **Montant** -- Coût total (TTC ou HT)
    - **Date** -- Date de la dépense
    - **Catégorie** -- Sélectionnez parmi les catégories prédéfinies
-   - **Taux de TVA** -- Pourcentage de TVA applicable
+   - **Taux de TVA** -- Pre-rempli avec le taux de TVA par defaut pour les depenses de votre espace de travail (configurable dans les parametres de l'espace de travail). Vous pouvez toujours le modifier par depense.
 3. Joignez optionnellement une image ou un PDF de **reçu**
 4. Liez optionnellement à un **projet** ou un **client**
 5. Cliquez sur **Enregistrer**
@@ -56,7 +56,7 @@ Laissez l'IA extraire automatiquement les détails de vos reçus :
 5. Confirmez pour créer la ou les dépenses
 
 ::: info
-La numérisation de reçus nécessite le plan **Pro** ou supérieur.
+La numerisation de recus necessite le plan **Pro** ou superieur. Le taux de TVA d'une nouvelle depense commence par votre reglage d'espace de travail par defaut.
 :::
 
 ## Catégories de dépenses
@@ -119,6 +119,7 @@ Importez des dépenses depuis un fichier CSV :
 
 ## Conseils
 
+- Definissez votre taux de TVA par defaut pour les depenses dans **Parametres de l'espace de travail** pour que le formulaire ne commence pas toujours a 21 %. Un reglage a 0 % fonctionne correctement; le formulaire le traite comme un choix intentionnel.
 - Activez les [suggestions IA](/fr/advanced/ai-features) pour des recommandations automatiques de catégories
 - Joignez toujours les reçus -- ils sont essentiels pour les contrôles fiscaux
 - Utilisez les projets pour suivre le ratio dépenses/revenus
