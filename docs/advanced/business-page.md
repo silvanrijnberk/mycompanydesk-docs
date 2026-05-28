@@ -78,7 +78,7 @@ Some sections have system-only variants that are available on the locked home pa
 
 ### Section layout variants
 
-Hero, services, and pricing sections support multiple layout variants. Pick one from the **Stijl** (Style) dropdown in the inspector's Layout tab to change how the section renders. The default variant preserves the existing look, so sections you built before this feature keep rendering as they always did.
+Hero, services, pricing, and testimonials sections support multiple layout variants. Pick one from the **Stijl** (Style) dropdown in the inspector's Layout tab to change how the section renders. The default variant preserves the existing look, so sections you built before this feature keep rendering as they always did.
 
 #### Hero variants
 
@@ -105,6 +105,14 @@ Hero, services, and pricing sections support multiple layout variants. Pick one 
 |---|---|
 | **Standard (cards)** | Default. Side-by-side tier cards with name, price, feature list, and buy button or CTA. |
 | **Comparison table** | Feature matrix. Rows are the union of all features across tiers. Columns are the tiers. Each cell shows a check mark or a dash so visitors can scan across columns to compare plans. The highlighted tier column stays tinted. |
+
+#### Testimonials variants
+
+| Variant | Effect |
+|---|---|
+| **Standard (grid)** | Default. Cards in a 2 to 3-column grid. Each card shows the quote, name, and optional role. |
+| **Spotlight (single quote)** | A single large pull-quote in magazine style, centered with serif typography. Extra testimonials appear as small attribution chips below the main quote. |
+| **Marquee** | A horizontally scrolling row of quote cards. Hover pauses the animation; the OS reduced-motion preference stops it entirely. The track loops seamlessly with two copies of the item set. |
 
 ### Spotlight
 
@@ -194,7 +202,7 @@ Each section block has a **Bottom divider** setting in the inspector's style pan
 
 In the **Style** tab, you control the look and feel of your entire site:
 
-- **Presets**: One-click starting points that set colors, fonts, and spacing in one go. The Editorial preset ships a navy-and-gold palette with serif headlines and mono eyebrows, reflecting the MyCompanyDesk house style. Applying a preset merges the tokens into your workspace, preserving your logo, custom CSS, and head snippets.
+- **Presets**: One-click starting points that set colors, fonts, and spacing in one go. Eight presets are available: **Editorial** (navy and gold, serif headlines), **Studio** (warm cream with terracotta), **Tech** (sharp slate with electric blue), **Atelier** (bone-white with deep green), **Bold** (high-contrast black with a bright accent), **Calm** (sage green and soft white), **Mono** (architectural minimalism, no accent color), and **Vivid** (cobalt and coral on cool white). Applying a preset merges the tokens into your workspace, preserving your logo, custom CSS, and head snippets.
 - **Colors**: Pick brand, accent, paper, ink, surface, and muted colors. The palette is applied through CSS custom properties.
 - **Dark mode**: Choose how your site handles dark mode. Three options: **Off** (no dark mode, site stays in its light palette), **Button** (visitors see a sun/moon toggle in the navigation bar and can switch themes, with their choice saved locally), or **System** (the site follows the visitor's OS-level preference automatically via a live media-query listener). When dark mode is on, a paired dark palette appears where you can set night-optimized versions of each color. If you leave the dark palette empty, the site applies a sensible default inversion that keeps your brand and accent colors intact.
 - **Typography**: Choose heading, body, and mono fonts from the built-in font library (Geist, Inter, DM Sans, DM Serif Display, Fraunces, Instrument Serif, Geist Mono).

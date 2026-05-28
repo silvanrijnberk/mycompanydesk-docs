@@ -78,7 +78,7 @@ Einige Abschnitte haben Systemvarianten, die nur auf der gesperrten Startseite v
 
 ### Abschnitts-Layoutvarianten
 
-Hero-, Dienstleistungs- und Preisabschnitte unterstützen mehrere Layoutvarianten. Wählen Sie eine aus dem **Stil**-Dropdown im Layout-Tab des Inspektionspanels, um das Erscheinungsbild des Abschnitts zu ändern. Die Standardvariante behält das vertraute Aussehen bei, sodass Abschnitte, die Sie vor dieser Funktion gebaut haben, unverändert bleiben.
+Hero-, Dienstleistungs-, Preis- und Kundenstimmen-Abschnitte unterstützen mehrere Layoutvarianten. Wählen Sie eine aus dem **Stil**-Dropdown im Layout-Tab des Inspektionspanels, um das Erscheinungsbild des Abschnitts zu ändern. Die Standardvariante behält das vertraute Aussehen bei, sodass Abschnitte, die Sie vor dieser Funktion gebaut haben, unverändert bleiben.
 
 #### Hero-Varianten
 
@@ -105,6 +105,14 @@ Hero-, Dienstleistungs- und Preisabschnitte unterstützen mehrere Layoutvariante
 |---|---|
 | **Standard (Karten)** | Standard. Tier-Karten nebeneinander mit Name, Preis, Funktionsliste und Kauf-Button oder CTA. |
 | **Vergleichstabelle** | Feature-Matrix. Zeilen sind alle Funktionen aller Tiers zusammengeführt. Spalten sind die Tiers. Jede Zelle zeigt ein Häkchen oder einen Strich, damit Besucher schnell Spalten scannen und Tarife vergleichen können. Die hervorgehobene Tier-Spalte bleibt eingefärbt. |
+
+#### Kundenstimmen-Varianten
+
+| Variante | Effekt |
+|---|---|
+| **Standard (Raster)** | Standard. Karten in einem 2- bis 3-spaltigen Raster. Jede Karte zeigt das Zitat, den Namen und die optionale Rolle. |
+| **Spotlight (Einzelzitat)** | Ein einzelnes großes Pull-Quote im Magazin-Stil, zentriert mit Serif-Typografie. Weitere Kundenstimmen erscheinen als kleine Namens-Chips unter dem Hauptzitat. |
+| **Laufband** | Eine horizontal scrollende Zeile mit Zitat-Karten. Hover pausiert die Animation; die Reduced-Motion-Einstellung des Betriebssystems stoppt sie komplett. Die Spur läuft nahtlos mit zwei Kopien des Elementsatzes durch. |
 
 ### Spotlight
 
@@ -194,7 +202,7 @@ Jeder Abschnittsblock hat eine **Unterkante-Trenner**-Einstellung im Stil-Panel 
 
 Im **Stil**-Tab steuern Sie das Erscheinungsbild Ihrer gesamten Site:
 
-- **Presets**: Ein-Klick-Startpunkte, die Farben, Schriften und Abstände auf einmal setzen. Das Editorial-Preset bringt eine Navy-mit-Gold-Palette mit Serif-Überschriften und Mono-Eyebrows mit, die MyCompanyDesk-Hausstil widerspiegelt. Beim Anwenden eines Presets werden die Tokens mit Ihrem Workspace zusammengeführt, wobei Logo, benutzerdefiniertes CSS und Head-Snippets erhalten bleiben.
+- **Presets**: Ein-Klick-Startpunkte, die Farben, Schriften und Abstände auf einmal setzen. Acht Presets sind verfügbar: **Editorial** (Navy und Gold, Serif-Überschriften), **Studio** (warmes Cremeweiß mit Terrakotta), **Tech** (klares Slate mit Elektroblau), **Atelier** (Knochenweiß mit Tiefgrün), **Bold** (kontrastreiches Schwarz mit kräftigem Akzent), **Calm** (Salbeigrün und sanftes Weiß), **Mono** (architektonischer Minimalismus, keine Akzentfarbe) und **Vivid** (Kobalt und Koralle auf kühlem Weiß). Beim Anwenden eines Presets werden die Tokens mit Ihrem Workspace zusammengeführt, wobei Logo, benutzerdefiniertes CSS und Head-Snippets erhalten bleiben.
 - **Farben**: Wählen Sie Marken-, Akzent-, Papier-, Tinten-, Oberflächen- und gedämpfte Farben. Die Palette wird über CSS Custom Properties angewendet.
 - **Dunkelmodus**: Legen Sie fest, wie Ihre Site mit dunkler Darstellung umgeht. Drei Optionen: **Aus** (kein Dunkelmodus, die Site bleibt im hellen Farbschema), **Schaltfläche** (Besucher sehen einen Sonne/Mond-Umschalter in der Navigationsleiste und können das Thema wechseln, ihre Wahl wird lokal gespeichert), oder **System folgen** (die Site übernimmt automatisch die Betriebssystem-Einstellung des Besuchers über einen Live-Media-Query-Listener). Wenn der Dunkelmodus aktiviert ist, erscheint eine dunkle Farbpalette, in der Sie für jede Farbe eine nachtoptimierte Variante festlegen können. Lassen Sie die dunkle Palette leer, wendet die Site eine automatische Invertierung an, bei der Ihre Marken- und Akzentfarben erhalten bleiben.
 - **Typografie**: Wählen Sie Überschrift-, Text- und Mono-Schriften aus der integrierten Schriftbibliothek (Geist, Inter, DM Sans, DM Serif Display, Fraunces, Instrument Serif, Geist Mono).
