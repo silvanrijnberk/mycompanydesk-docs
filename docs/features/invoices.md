@@ -127,7 +127,7 @@ Online payments made via Mollie or Stripe can be refunded directly from MyCompan
 - The refund is processed immediately by Mollie or Stripe
 - The payment is marked as refunded in your records
 
-Non-online methods (bank transfer, cash) use the existing void path — the payment is marked voided without a processor-side refund.
+Non-online methods (bank transfer, cash) use the existing void path: the payment is marked voided without a processor-side refund.
 
 To refund a payment:
 
