@@ -233,7 +233,7 @@ Der Posteingang verwendet Ihre eigene Domain erst, nachdem `quickEnableInbox` er
 
 #### Live-Polling
 
-Der Posteingang aktualisiert sich automatisch, während der Tab geöffnet ist. Die Thread-Liste pollt alle 45 Sekunden auf neue E-Mails, und das Seitenleisten-Badge aktualisiert sich alle 60 Sekunden. Beides pausiert, wenn der Tab im Hintergrund ist -- kein unnötiger Netzwerkverkehr. Das Polling ist lautlos: Ladespinner blinken nicht bei Hintergrundaktualisierungen, und Polls werden während einer aktiven Suche komplett übersprungen, damit Ihre Ergebnisse stabil bleiben.
+Der Posteingang aktualisiert sich automatisch, während der Tab geöffnet ist. Die Thread-Liste pollt alle 45 Sekunden auf neue E-Mails, und das Seitenleisten-Badge aktualisiert sich alle 60 Sekunden. Beides pausiert, wenn der Tab im Hintergrund ist -- kein unnötiger Netzwerkverkehr. Das Polling ist lautlos: Ladespinner blinken nicht bei Hintergrundaktualisierungen, und Polls werden während einer aktiven Suche komplett übersprungen, damit Ihre Ergebnisse stabil bleiben. Eine manuelle Aktualisieren-Schaltfläche neben Verfassen holt den neuesten Stand sofort, wenn Sie gerade etwas erwarten; sie ist während des laufenden Aufrufs deaktiviert, um Request-Stapelung zu verhindern.
 
 #### Als ungelesen markieren
 

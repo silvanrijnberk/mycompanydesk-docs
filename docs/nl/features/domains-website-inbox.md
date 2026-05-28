@@ -233,7 +233,7 @@ De inbox gebruikt je eigen domein pas nadat `quickEnableInbox` succesvol is uitg
 
 #### Live polling
 
-De inbox ververst automatisch zolang de tab open staat. De threadlijst pollt elke 45 seconden op nieuwe mail, en de sidebar-badge ververst elke 60 seconden. Beide pauzeren zodra de tab op de achtergrond staat, dus geen onnodig netwerkverkeer. Het pollen is stil: laadspinners knipperen niet bij achtergrondverversingen, en polls worden overgeslagen tijdens een actieve zoekopdracht zodat je resultaten stabiel blijven.
+De inbox ververst automatisch zolang de tab open staat. De threadlijst pollt elke 45 seconden op nieuwe mail, en de sidebar-badge ververst elke 60 seconden. Beide pauzeren zodra de tab op de achtergrond staat, dus geen onnodig netwerkverkeer. Het pollen is stil: laadspinners knipperen niet bij achtergrondverversingen, en polls worden overgeslagen tijdens een actieve zoekopdracht zodat je resultaten stabiel blijven. Een handmatige vernieuw-knop naast Opstellen haalt meteen de laatste stand op als je iets direct verwacht; de knop is uitgeschakeld tijdens de lopende aanroep om request-stapeling te voorkomen.
 
 #### Markeren als ongelezen
 
