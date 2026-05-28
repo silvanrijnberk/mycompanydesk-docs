@@ -271,6 +271,7 @@ In de **Stijl**-tab bepaal je de look-and-feel van je hele site:
 - **Beweging**: Schakel verminderde beweging in of kies een bewegingsstijl (Uit, Subtiele fade, Slide-up).
 - **Knoppen**: Pas knopradius, padding en hover-effecten aan.
 - **Navbar**: Stel de layout in (standaard, gecentreerd, split), de achtergrondstijl (vast, transparant met blur, volledig transparant) en hoe de CTA-knop eruitziet (vol, lijn, alleen tekst). De navbar-instellingen gelden voor elke pagina.
+- **Telefoon & belbalk**: Voeg een klikbaar telefoonnummer toe aan je navigatiebalk. Het nummer verschijnt naast de CTA-knop op desktop en in de mobiele navigatielade. Zet de **Mobiele belbalk**-toggle aan om een vaste "tik om te bellen"-knop onderaan het scherm te plaatsen op mobiele apparaten, zodat bezoekers je met één tik kunnen bereiken, waar ze ook zijn op de pagina. Het telefoonlabel is standaard "Bel direct" als je het leeg laat.
 - **Aangepaste CSS**: Schrijf je eigen CSS die in de site wordt geïnjecteerd. Handig voor fijnafstemming of het overschrijven van standaardwaarden.
 - **Favicon**: Upload een favicon voor je site. Deze verschijnt in browsertabs en bladwijzers. Als je geen favicon instelt, gebruikt de site je lichte logo, en daarna je bedrijfsprofielfoto.
 - **Head-snippets**: Voeg analytics-scripts toe (Plausible, Umami, Matomo) of lettertype-preconnects via de snippetkiezer.

@@ -271,6 +271,7 @@ In the **Style** tab, you control the look and feel of your entire site:
 - **Motion**: Enable reduced motion or choose a motion style (Off, Subtle fade, Slide up).
 - **Buttons**: Customize button border radius, padding, and hover effects.
 - **Navbar**: Set the layout (standard, centered, split), background style (solid, translucent blur, transparent), and CTA button appearance (filled, outline, text-only). The navbar settings apply to every page.
+- **Phone & call bar**: Add a clickable phone number to your navigation bar. When set, the phone number appears beside the CTA button on desktop and in the mobile navigation drawer. Enable the **Mobile call bar** toggle to pin a fixed "tap to call" button at the bottom of the screen on mobile devices, so visitors can reach you with one tap regardless of where they are on the page. The phone label defaults to "Call us" when left empty.
 - **Custom CSS**: Write your own CSS that gets injected into the site. Useful for fine-tuning or overriding defaults.
 - **Favicon**: Upload a favicon for your site. It is shown in browser tabs and bookmarks. If not set, the site falls back to your light logo, then your business profile picture.
 - **Head snippets**: Add analytics scripts (Plausible, Umami, Matomo) or font preconnects via the snippet picker.
