@@ -76,6 +76,33 @@ In the **Editor** tab:
 
 Some sections have system-only variants that are available on the locked home page but not on custom pages.
 
+## AI assistant tools
+
+Two AI-powered tools help you write and illustrate your pages faster, right inside the editor inspector.
+
+### Text rewrite
+
+Every text and textarea field in the section inspector gets four small tone buttons below it when the field has enough content (more than a few words). The buttons send your current text to the server, which runs a lightweight Gemini model to rewrite it with a specific tone:
+
+- **Shorter**: Cuts the text to about half its length while keeping the meaning.
+- **Calmer**: Makes the text warmer and more reassuring. Less sales pitch, more confidence.
+- **Sharper**: Tightens the wording. Stronger verbs, no hesitation.
+- **Friendlier**: Softens the tone to be warmer and more approachable.
+
+The rewrite always stays in the same language as the original (usually Dutch). The model only rewrites, it does not invent new information. The rewritten text replaces your field content inline. You can click another tone button, undo, or edit further.
+
+The text field is limited to 2000 characters for the rewrite call, so the model returns quickly and stays predictable. If the AI service is temporarily unavailable, you will see an error message and your original text stays untouched.
+
+### Stock photo search
+
+When you open the image upload field in any section block (hero, spotlight, team, portfolio, logos, product), you now see a **Stockfoto** button next to the upload and URL paste buttons. Clicking it opens an inline search panel connected to Unsplash, the free stock photo library.
+
+- Type a search term (e.g. "hair salon", "coffee", "wood") and hit enter.
+- Results appear in a grid. Click any photo to insert it as your section image.
+- The search is proxied through the MyCompanyDesk server, so your Unsplash access key never reaches the browser.
+- Attribution is tracked automatically per Unsplash's API guidelines. We encourage you to credit photographers where possible.
+- If Unsplash is not configured on your workspace, the Stockfoto button stays hidden so you never see a broken feature.
+
 ## Saved blocks
 
 Save any section as a reusable block and build a personal library of pre-styled building blocks. Saved blocks appear at the top of the section adder, so you can drop a saved layout onto any page without rebuilding it from scratch.

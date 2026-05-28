@@ -76,6 +76,33 @@ Dans l'onglet **Editeur** :
 
 Certaines sections ont des variantes systeme uniquement disponibles sur la page d'accueil verrouillee.
 
+## Outils d'assistance IA
+
+Deux outils bases sur l'IA vous aident a rediger et illustrer vos pages plus rapidement, directement dans l'inspecteur de l'editeur.
+
+### Reecriture de texte
+
+Chaque champ de texte et zone de texte dans l'inspecteur de section affiche quatre petits boutons de ton en dessous des que le champ contient suffisamment de texte (plus de quelques mots). Les boutons envoient votre texte actuel au serveur, qui utilise un modele Gemini leger pour le reecrire avec un ton specifique :
+
+- **Plus court** : Reduit le texte a environ la moitie de sa longueur tout en conservant le sens.
+- **Plus calme** : Rend le texte plus apaise et rassurant. Moins de discours commercial, plus de confiance.
+- **Plus percutant** : Affute la formulation. Des verbes plus forts, aucune hesitation.
+- **Plus chaleureux** : Adoucit le ton, plus chaleureux et accessible.
+
+La reecriture reste toujours dans la meme langue que l'original (generalement le neerlandais). Le modele ne fait que reecrire, il n'invente pas de nouvelles informations. Le texte reecrit remplace directement le contenu de votre champ. Vous pouvez cliquer sur un autre bouton de ton, annuler ou modifier davantage.
+
+Le champ de texte est limite a 2000 caracteres pour l'appel de reecriture, afin que le modele reste rapide et previsible. Si le service IA est temporairement indisponible, vous verrez un message d'erreur et votre texte original reste intact.
+
+### Recherche de photos libres
+
+Lorsque vous ouvrez le champ de telechargement d'image dans n'importe quel bloc de section (hero, spotlight, equipe, portfolio, logos, produit), vous voyez maintenant un bouton **Stockfoto** a cote des boutons de telechargement et de collage d'URL. Un clic ouvre un panneau de recherche integre connecte a Unsplash, la bibliotheque gratuite de photos libres.
+
+- Saisissez un terme de recherche (par ex. "salon de coiffure", "cafe", "bois") et appuyez sur Entree.
+- Les resultats apparaissent dans une grille. Cliquez sur une photo pour l'inserer comme image de votre section.
+- La recherche passe par le serveur MyCompanyDesk, votre cle d'acces Unsplash n'atteint donc jamais le navigateur.
+- L'attribution est suivie automatiquement conformement aux directives API d'Unsplash. Nous vous encourageons a mentionner les photographes lorsque c'est possible.
+- Si Unsplash n'est pas configure sur votre espace de travail, le bouton Stockfoto reste masque, vous ne voyez donc jamais une fonctionnalite defaillante.
+
 ## Blocs sauvegardes
 
 Sauvegardez n'importe quelle section comme bloc reutilisable et constituez une bibliotheque personnelle de composants pre-stylises. Les blocs sauvegardes apparaissent en haut du panneau d'ajout de section, vous permettant d'inserer une mise en page sauvegardee sur n'importe quelle page sans la reconstruire.
