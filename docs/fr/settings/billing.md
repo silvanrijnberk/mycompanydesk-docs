@@ -66,7 +66,8 @@ Fonctionnalites avec limites d'utilisation (limites mensuelles) :
 | Membres d'equipe | 1 | 1 | 1 (extensible avec des add-ons de sieges) |
 | Domaines personnalises | 0 | 0 | 5 |
 | Messages de chat IA (mensuel) | 10 | 100 | 1 000 |
-| Scans de recus IA (mensuel) | 3 | 50 | 500 |
+<!-- TODO(source-missing): plan limit values from RichardTool apps/api/src/modules/billing/plans.config.js -->
+| Scans de recus IA (mensuel) | 3 | 30 | 200 |
 | Suggestions IA (mensuel) | 10 | 200 | 2 000 |
 | Boites de reception | 0 | 0 | illimite |
 | Envois boite de reception par mois | 0 | 0 | 15 000 |

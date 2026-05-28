@@ -73,7 +73,8 @@ Quota-limited features (monthly caps):
 | Team members | 1 | 1 | 1 (expandable with seat add-ons) |
 | Custom domains | 0 | 0 | 5 |
 | AI chat messages (monthly) | 10 | 100 | 1 000 |
-| AI receipt scans (monthly) | 3 | 50 | 500 |
+<!-- TODO(source-missing): plan limit values from RichardTool apps/api/src/modules/billing/plans.config.js -->
+| AI receipt scans (monthly) | 3 | 30 | 200 |
 | AI suggestions (monthly) | 10 | 200 | 2 000 |
 | Inbox mailboxes | 0 | 0 | unlimited |
 | Inbox monthly sends | 0 | 0 | 15 000 |

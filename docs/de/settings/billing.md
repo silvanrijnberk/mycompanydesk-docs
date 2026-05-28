@@ -66,7 +66,8 @@ Funktionen mit Nutzungslimits (monatliche Limits):
 | Teammitglieder | 1 | 1 | 1 (erweiterbar mit Sitz-Add-ons) |
 | Eigene Domains | 0 | 0 | 5 |
 | KI-Chat-Nachrichten (monatlich) | 10 | 100 | 1 000 |
-| KI-Belegscans (monatlich) | 3 | 50 | 500 |
+<!-- TODO(source-missing): plan limit values from RichardTool apps/api/src/modules/billing/plans.config.js -->
+| KI-Belegscans (monatlich) | 3 | 30 | 200 |
 | KI-Vorschlage (monatlich) | 10 | 200 | 2 000 |
 | Inbox-Postfacher | 0 | 0 | unbegrenzt |
 | Inbox gesendet pro Monat | 0 | 0 | 15 000 |
