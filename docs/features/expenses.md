@@ -29,9 +29,9 @@ The setup wizard seeds an industry-tailored set on top of the eleven system defa
 
 1. Go to **Expenses > New**.
 2. Type the **supplier** name. The supplier autocomplete suggests previously-used vendors as you type.
-3. Pick a **category**. The form pulls the category's default VAT treatment, default VAT rate hint and deduction percentage straight into the matching fields.
-4. Fill in the **description**, **amount excl. VAT**, **VAT rate** and **date**. The VAT rate is pre-filled from your workspace's default expense VAT rate (set under workspace settings as "Standard VAT rate expenses"). The VAT amount is calculated automatically; you can also enter the inclusive amount and let the form back out the components.
-5. Optionally set the **VAT treatment** (overrides the category default), **payment method**, **customer**, **project**, **reference** and **notes**.
+3. Pick a **category**. The form pulls the category's default VAT treatment, default VAT rate hint and deduction percentage straight into the matching fields. If a workspace-wide default expense category is set under workspace settings, it is pre-filled here.
+4. Fill in the **description**, **amount excl. VAT**, **VAT rate** and **date**. The VAT rate and the **payment method** are pre-filled from your workspace defaults (set under workspace settings as "Standard VAT rate expenses", default expense category and default payment method). The VAT amount is calculated automatically; you can also enter the inclusive amount and let the form back out the components.
+5. Optionally set the **VAT treatment** (overrides the category default), **customer**, **project**, **reference** and **notes**. The pre-filled category and payment method can be overridden on a per-expense basis.
 6. Optionally attach a **receipt**.
 7. Click **Save**.
 
@@ -126,7 +126,7 @@ Import historical expenses from CSV via **Profile > Import** > **Expenses**. Map
 ## Tips
 
 - Pick the right category first — VAT treatment, deduction percentage and the investment flag all flow from it.
-- Set your workspace default VAT rate for expenses in **Workspace settings** to stop the form defaulting to 21% every time. A 0% setting works correctly; the form treats it as intentional.
+- Set your workspace default VAT rate, default expense category and default payment method in **Workspace settings** to stop the form starting with empty fields every time. A 0% VAT setting works correctly; the form treats it as intentional.
 - Use the per-expense VAT treatment override sparingly; if you find yourself overriding every entry in a category, the category default is wrong and should be edited.
 - Always attach receipts. The pre-filing checks on the [VAT page](/features/vat) flag missing receipts before you file.
 - For mixed-rate receipts, use the lines API path until the form UI ships — single-rate entry is fine for everything else.
