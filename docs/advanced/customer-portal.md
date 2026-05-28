@@ -40,6 +40,14 @@ Below the toggle is a **Betaalmethoden** section listing every payment method en
 
 A **Stuur testbetaling** button lets you walk a free €1 test checkout through Mollie, so you can confirm everything works before your customers see it. No real money moves.
 
+#### Stripe payment controls
+
+Once Stripe is connected, you get a **Betaalknop op facturen** toggle in your workspace under **Money → Payments → Online betalingen**. Turn it on to add a Stripe pay button to every outgoing invoice. Turn it off and the button disappears without disconnecting Stripe. The toggle is only available once Stripe onboarding (KYC) is complete.
+
+Below the toggle is a **Betaalmethoden** section listing every supported payment method cross-referenced with your Stripe account capabilities (card, iDEAL, Bancontact, SEPA Direct Debit, PayPal, Klarna, and Link by Stripe). By default Stripe Checkout automatically picks the right method per customer. Tick specific methods to limit what customers see, only those appear at checkout. Clear all ticks to return to automatic selection.
+
+An **Open Stripe Dashboard** button deep-links you to your Stripe payment-method settings so you can verify your integration and test payments directly in Stripe.
+
 ### Branding
 
 The customer portal uses your company branding:

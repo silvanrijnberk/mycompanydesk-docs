@@ -46,3 +46,7 @@ Loskoppelen doe je met **Loskoppelen** op de betreffende kaart. Na het loskoppel
 ### Mollie-betalingsinstellingen
 
 Zodra Mollie is gekoppeld, verschijnen een **Betaalknop op facturen**-schakelaar en **Betaalmethoden**-sectie op de Mollie-kaart. Met de schakelaar zet je de betaalknop op alle facturen aan of uit zonder Mollie te ontkoppelen. De methodenlijst, live uit je Mollie-dashboard, laat je kiezen welke betaalmethoden je klanten te zien krijgen. Met **Stuur testbetaling** loop je een gratis €1-testcheckout door Mollie om te bevestigen dat alles van begin tot eind werkt.
+
+### Stripe-betalingsinstellingen
+
+Zodra Stripe is gekoppeld en de onboarding (KYC) is afgerond, verschijnen een **Betaalknop op facturen**-schakelaar en **Betaalmethoden**-sectie op de Stripe-kaart. Met de schakelaar zet je de Stripe-betaalknop op alle facturen aan of uit zonder Stripe te ontkoppelen. De methodenlijst, afgestemd op de capabilities van je Stripe-account, laat je kiezen welke betaalmethoden klanten bij het afrekenen zien (card, iDEAL, Bancontact, SEPA-incasso, PayPal, Klarna, Link by Stripe). Haal alle vinkjes weg om terug te gaan naar automatische methodeselectie door Stripe Checkout. Met **Open Stripe Dashboard** word je doorgelinkt naar je Stripe-betaalmethode-instellingen om je integratie te verifieren en betalingen te testen.

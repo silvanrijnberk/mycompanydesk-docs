@@ -40,6 +40,14 @@ Sous l'interrupteur se trouve une section **Betaalmethoden** listant chaque meth
 
 Le bouton **Stuur testbetaling** vous permet de parcourir un checkout test gratuit de €1 via Mollie, pour confirmer que tout fonctionne avant que vos clients ne le voient. Aucun argent reel n'est transfere.
 
+#### Parametres de paiement Stripe
+
+Une fois Stripe connecte, vous obtenez un interrupteur **Betaalknop op facturen** dans votre espace de travail sous **Argent → Paiements → Online betalingen**. Activez-le pour ajouter un bouton de paiement Stripe sur chaque facture envoyee. Desactivez-le et le bouton disparait sans deconnecter Stripe. L'interrupteur n'est disponible qu'une fois l'onboarding Stripe (KYC) termine.
+
+Sous l'interrupteur se trouve une section **Betaalmethoden** listant chaque methode de paiement prise en charge, croisee avec les capacites de votre compte Stripe (carte, iDEAL, Bancontact, prelevement SEPA, PayPal, Klarna et Link by Stripe). Par defaut, Stripe Checkout choisit automatiquement la bonne methode par client. Cochez des methodes specifiques pour restreindre ce que les clients voient, seules celles-ci apparaissent au checkout. Decochez tout pour revenir a la selection automatique.
+
+Le bouton **Open Stripe Dashboard** vous redirige directement vers vos parametres de methodes de paiement Stripe, afin que vous puissiez verifier votre integration et tester les paiements directement dans Stripe.
+
 ### Image de marque
 
 Le portail client utilise l'image de marque de votre entreprise :
