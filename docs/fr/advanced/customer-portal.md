@@ -30,7 +30,7 @@ Le portail affiche une vue claire et personnalisee de la facture comprenant :
 
 ### Paiement
 
-Les clients peuvent payer directement via le portail. Si vous avez connecte Mollie ou Stripe, des boutons de paiement apparaissent sur la vue de la facture pour que votre client puisse payer en un clic. Lorsque le paiement est confirme, le statut de la facture dans votre tableau de bord est automatiquement mis a jour a **Payee**.
+Les clients peuvent payer directement via le portail. Si vous avez connecte Mollie ou Stripe, des boutons de paiement apparaissent sur la vue de la facture pour que votre client puisse payer en un clic. Lorsqu un client suit un lien autopay (par exemple depuis un rappel de paiement), le portail fait defiler jusqu au bon bouton de paiement et le met en evidence avec une animation pulsante au lieu de rediriger automatiquement vers le processus de paiement. Ainsi, le client peut consulter la facture avant de payer. Lorsque le paiement est confirme, le statut de la facture dans votre tableau de bord est automatiquement mis a jour a **Payee**.
 
 #### Parametres de paiement Mollie
 

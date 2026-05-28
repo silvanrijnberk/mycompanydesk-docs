@@ -41,7 +41,7 @@ So verbindest du einen Anbieter:
 
 Mollie unterstuetzt iDEAL, Bancontact, Kreditkarte und Bankueberweisung, ideal fuer niederlaendische und belgische Kunden. Stripe Connect unterstuetzt Karte, Apple Pay, Google Pay und SEPA-Lastschrift, geeignet fuer internationale Kunden.
 
-Zum Trennen klicke auf **Loskoppelen** auf der entsprechenden Karte. Nach der Trennung koennen Kunden nicht mehr ueber diesen Anbieter bezahlen.
+Zum Trennen klicke auf **Loskoppelen** auf der entsprechenden Karte. Wenn in den letzten 24 Stunden Zahlungen eingegangen sind, erscheint eine Warnung, dass moeglicherweise noch ausstehende Webhooks eintreffen und dass Rueckzahlungen fuer diese Zahlungen manuell bearbeitet werden muessen. Nach der Trennung koennen Kunden nicht mehr ueber diesen Anbieter bezahlen.
 
 ### Mollie-Zahlungseinstellungen
 

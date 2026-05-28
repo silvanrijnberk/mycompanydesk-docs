@@ -30,7 +30,7 @@ The portal shows a clean, branded view of the invoice including:
 
 ### Payment
 
-Customers can pay directly through the portal. If you have connected Mollie or Stripe, pay buttons appear on the invoice view so customers can complete payment in one click. When payment is confirmed, the invoice status in your dashboard automatically updates to **Paid**.
+Customers can pay directly through the portal. If you have connected Mollie or Stripe, pay buttons appear on the invoice view so customers can complete payment in one click. When a customer follows an autopay link (for example from a payment reminder email), the portal scrolls to the correct pay button and highlights it with a pulsing animation instead of automatically redirecting to the payment flow. This gives the customer a chance to review the invoice before paying. When payment is confirmed, the invoice status in your dashboard automatically updates to **Paid**.
 
 #### Mollie payment controls
 
