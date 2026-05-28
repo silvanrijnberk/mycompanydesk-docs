@@ -32,6 +32,14 @@ Le portail affiche une vue claire et personnalisee de la facture comprenant :
 
 Les clients peuvent payer directement via le portail. Si vous avez connecte Mollie ou Stripe, des boutons de paiement apparaissent sur la vue de la facture pour que votre client puisse payer en un clic. Lorsque le paiement est confirme, le statut de la facture dans votre tableau de bord est automatiquement mis a jour a **Payee**.
 
+#### Parametres de paiement Mollie
+
+Une fois Mollie connecte, vous obtenez un interrupteur **Betaalknop op facturen** dans votre espace de travail sous **Argent → Paiements → Online betalingen**. Activez-le pour ajouter un bouton de paiement Mollie sur chaque facture envoyee. Desactivez-le et le bouton disparait sans deconnecter Mollie.
+
+Sous l'interrupteur se trouve une section **Betaalmethoden** listant chaque methode de paiement activee dans votre tableau de bord Mollie (iDEAL, Bancontact, carte bancaire, et plus). Par defaut, les clients voient toutes les methodes. Cochez des methodes specifiques pour restreindre la selection, seules celles-ci apparaissent sur vos factures. Decochez tout pour revenir a "tout afficher."
+
+Le bouton **Stuur testbetaling** vous permet de parcourir un checkout test gratuit de €1 via Mollie, pour confirmer que tout fonctionne avant que vos clients ne le voient. Aucun argent reel n'est transfere.
+
 ### Image de marque
 
 Le portail client utilise l'image de marque de votre entreprise :

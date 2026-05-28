@@ -42,3 +42,7 @@ Zo koppel je een verwerker:
 Mollie ondersteunt iDEAL, Bancontact, creditcard en bankoverboeking, ideaal voor Nederlandse en Belgische klanten. Stripe Connect ondersteunt card, Apple Pay, Google Pay en SEPA-incasso, geschikt voor internationale klanten.
 
 Loskoppelen doe je met **Loskoppelen** op de betreffende kaart. Na het loskoppelen kunnen klanten niet meer via die verwerker betalen.
+
+### Mollie-betalingsinstellingen
+
+Zodra Mollie is gekoppeld, verschijnen een **Betaalknop op facturen**-schakelaar en **Betaalmethoden**-sectie op de Mollie-kaart. Met de schakelaar zet je de betaalknop op alle facturen aan of uit zonder Mollie te ontkoppelen. De methodenlijst, live uit je Mollie-dashboard, laat je kiezen welke betaalmethoden je klanten te zien krijgen. Met **Stuur testbetaling** loop je een gratis €1-testcheckout door Mollie om te bevestigen dat alles van begin tot eind werkt.

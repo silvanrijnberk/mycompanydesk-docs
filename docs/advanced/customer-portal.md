@@ -32,6 +32,14 @@ The portal shows a clean, branded view of the invoice including:
 
 Customers can pay directly through the portal. If you have connected Mollie or Stripe, pay buttons appear on the invoice view so customers can complete payment in one click. When payment is confirmed, the invoice status in your dashboard automatically updates to **Paid**.
 
+#### Mollie payment controls
+
+Once Mollie is connected, you get a **Betaalknop op facturen** toggle in your workspace under **Money → Payments → Online betalingen**. Turn it on to add a Mollie pay button to every outgoing invoice. Turn it off and the button disappears without disconnecting Mollie.
+
+Below the toggle is a **Betaalmethoden** section listing every payment method enabled in your Mollie dashboard (iDEAL, Bancontact, credit card, and more). By default all methods are shown to customers. Tick specific methods to narrow the set, only those appear on your invoices. Clear all ticks to go back to "show everything."
+
+A **Stuur testbetaling** button lets you walk a free €1 test checkout through Mollie, so you can confirm everything works before your customers see it. No real money moves.
+
 ### Branding
 
 The customer portal uses your company branding:
