@@ -60,6 +60,18 @@ Consultez et gerez vos sessions actives :
 Si vous voyez une session que vous ne reconnaissez pas, revoquez-la immediatement et changez votre mot de passe.
 :::
 
+## Passkeys
+
+Les passkeys vous permettent de vous connecter avec la biometrie ou une cle de securite au lieu d'un mot de passe. Allez dans **Profil > Securite** pour les gerer.
+
+- Enregistrez plusieurs passkeys (Face ID, Touch ID, Windows Hello, cles physiques)
+- Nommez chaque passkey pour pouvoir revoquer des appareils individuellement
+- Une fois un passkey enregistre, la connexion propose par defaut le bouton passkey
+
+::: info
+Dans les espaces de travail ou les passkeys sont gerees par un administrateur, les membres non-administrateurs voient une carte d'information au lieu du panneau de gestion. Demandez a votre administrateur de configurer une passkey pour vous, ou de vous accorder les droits d'administration pour que vous puissiez les configurer vous-meme.
+:::
+
 ## Connexion sociale
 
 Si vous utilisez Google ou Microsoft pour vous connecter :

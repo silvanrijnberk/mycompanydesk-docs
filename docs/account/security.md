@@ -60,6 +60,18 @@ View and manage your active sessions:
 If you see a session you don't recognize, revoke it immediately and change your password.
 :::
 
+## Passkeys
+
+Passkeys let you sign in with biometrics or a security key instead of a password. Go to **Profile > Security** to manage them.
+
+- Register multiple passkeys (Face ID, Touch ID, Windows Hello, hardware keys)
+- Name each passkey so you can revoke individual devices
+- Once a passkey is registered, sign-in defaults to the passkey button
+
+::: info
+In workspaces where passkeys are managed by an administrator, non-admin members see an info card instead of the management panel. Ask your admin to set up a passkey for you, or to grant you admin rights so you can configure them yourself.
+:::
+
 ## Social login
 
 If you use Google or Microsoft to sign in:
