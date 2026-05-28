@@ -19,16 +19,7 @@ Mettez a jour votre profil depuis la page **Profil** :
 
 L'interface de MyCompanyDesk est en neerlandais. Il n'y a pas de parametre de langue de l'interface. Les factures, devis et e-mails peuvent etre rediges en neerlandais, anglais, allemand ou francais via Entreprise → Facturation (langue PDF).
 
-## Mot de passe
-
-Changez votre mot de passe :
-
-1. Allez dans **Profil > Mot de passe**
-2. Entrez votre mot de passe actuel
-3. Entrez et confirmez votre nouveau mot de passe
-4. Cliquez sur **Enregistrer**
-
-Si vous vous etes inscrit avec Google ou Microsoft, vous pouvez tout de meme definir un mot de passe pour la connexion par e-mail.
+Vous ne gerez plus votre mot de passe via Profil mais via [Connexion securisee](/fr/account/security).
 
 ## Preferences de notification
 

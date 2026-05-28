@@ -19,16 +19,7 @@ Aktualisieren Sie Ihr Profil über die **Profil**-Seite:
 
 Die MyCompanyDesk-Oberflache ist auf Niederlandisch. Es gibt keine Oberflachenspracheinstellung. Rechnungen, Angebote und E-Mails konnen auf Niederlandisch, Englisch, Deutsch oder Franzosisch erstellt werden via Unternehmen → Rechnungsstellung (PDF-Sprache).
 
-## Passwort
-
-Passwort ändern:
-
-1. Gehen Sie zu **Profil > Passwort**
-2. Geben Sie Ihr aktuelles Passwort ein
-3. Geben Sie Ihr neues Passwort ein und bestätigen Sie es
-4. Klicken Sie auf **Speichern**
-
-Wenn Sie sich mit Google oder Microsoft registriert haben, können Sie trotzdem ein Passwort für die E-Mail-basierte Anmeldung festlegen.
+Ihr Passwort verwalten Sie nicht mehr uber Profil, sondern uber [Sicher einloggen](/de/account/security).
 
 ## Benachrichtigungseinstellungen
 

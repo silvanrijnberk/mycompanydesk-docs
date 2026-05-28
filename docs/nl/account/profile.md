@@ -19,16 +19,7 @@ Werk je profiel bij via de **Profiel**-pagina:
 
 De interface van MyCompanyDesk is Nederlandstalig. Er is geen interfacetaalinstelling. Facturen, offertes en e-mails kunnen in het Nederlands, Engels, Duits of Frans worden opgesteld via Bedrijf → Facturatie (pdf-taal).
 
-## Wachtwoord
-
-Wijzig je wachtwoord:
-
-1. Ga naar **Profiel > Wachtwoord**
-2. Vul je huidige wachtwoord in
-3. Vul je nieuwe wachtwoord in en bevestig het
-4. Klik op **Opslaan**
-
-Als je je met Google of Microsoft hebt geregistreerd, kun je alsnog een wachtwoord instellen voor e-mailgebaseerd inloggen.
+Je wachtwoord beheer je niet meer via Profiel maar via [Veilig inloggen](/nl/account/security).
 
 ## Meldingsvoorkeuren
 
