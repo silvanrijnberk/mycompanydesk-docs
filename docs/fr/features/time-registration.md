@@ -45,6 +45,27 @@ Votre propre saisie n'est jamais ecrasee. Des que vous tapez une description per
 
 Pour un suivi du temps simplifie, activez le mode heures uniquement dans les parametres. Cela masque le taux horaire et les champs de facturation, n'affichant que les heures et la description.
 
+### Remplacements personnels
+
+Chaque membre de l'equipe peut definir des valeurs par defaut personnelles pour l'enregistrement du temps dans **Mon compte > Temps et deplacements** (`/me/time-travel/time`). Lorsqu'une valeur personnelle est definie, elle a priorite sur la valeur par defaut de l'espace de travail. Si le champ reste vide, la valeur de l'espace de travail s'applique.
+
+Les parametres suivants peuvent etre remplaces par personne :
+
+| Parametre | Ordre de cascade |
+|---|---|
+| **Taux horaire** | Projet > Client > Personnel > Espace de travail |
+| **Intervalle d'arrondi** | Personnel > Espace de travail |
+| **Projet obligatoire** | Personnel > Espace de travail |
+| **Description obligatoire** | Personnel > Espace de travail |
+| **Description par defaut** | Personnel > Espace de travail |
+| **Format de description facture** | Personnel > Espace de travail |
+| **Frais de service** (description, montant, taux TVA) | Client > Personnel > Espace de travail |
+| **Chronologie journaliere** (debut, fin, pause) | Personnel > Espace de travail |
+
+Par exemple, si l'intervalle d'arrondi de l'espace de travail est de 15 minutes mais que vous preferez un arrondi de 30 minutes, definissez-le dans vos remplacements personnels. Vos entrees de temps seront arrondies a 30 minutes tandis que le reste de l'equipe reste a 15.
+
+Les remplacements personnels sont enregistres automatiquement lors de la saisie. Un bouton d'effacement apparait a cote de chaque champ avec une valeur personnelle, vous permettant de revenir a la valeur par defaut de l'espace de travail.
+
 ## Facturer les entrees de temps
 
 Convertissez les heures enregistrees en factures :

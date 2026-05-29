@@ -28,6 +28,10 @@ La page des factures affiche toutes vos factures avec des fonctionnalites de fil
 5. Ajoutez des **notes** ou **remarques internes** optionnelles
 6. Cliquez sur **Enregistrer** pour creer un brouillon
 
+### Prefixe de facture
+
+Definissez un prefixe personnalise pour vos numeros de facture dans **Espace de travail > Finances > Factures**. Le prefixe est ajoute devant chaque numero de facture au format `[PREFIXE]AAAA-NNN` (par ex. le prefixe "INV-" donne des numeros comme "INV-2026-001"). Laissez-le vide pour une numerotation simple. Le prefixe est limite a 20 caracteres.
+
 ### Ajout rapide
 
 Pour une creation plus rapide :
@@ -85,6 +89,19 @@ Creez une copie d'une facture existante -- utile pour la facturation recurrente 
 
 Envoyez un rappel de paiement pour les factures en retard.
 
+### Rappels de paiement automatiques
+
+Activez les rappels automatiques pour ne plus avoir a relancer manuellement les factures en retard. Allez dans **Espace de travail > Finances > Factures** et activez **Automatische herinneringen**.
+
+Lorsque cette option est activee :
+
+- Un e-mail de rappel est envoye pour toute facture ouverte qui a 3 jours ou plus de retard
+- Des rappels de suivi sont envoyes tous les 7 jours jusqu'a ce que la facture soit payee ou annulee
+- Maximum un rappel par facture par periode de 7 jours
+- Le rappel utilise votre modele d'e-mail standard
+
+Desactivez l'option pour arreter les rappels automatiques sans affecter les factures deja envoyees.
+
 ## Actions groupees
 
 Selectionnez plusieurs factures dans la liste pour effectuer des actions groupees :
@@ -103,6 +120,27 @@ Lorsque vous envoyez une facture, un lien de paiement unique est genere. Votre c
 3. Payer directement en ligne via votre compte Mollie ou Stripe connecte
 
 Le paiement est automatiquement enregistre et le statut de la facture passe a **Payee**.
+
+## Frais de service
+
+Des frais de service ou d'administration fixes peuvent etre ajoutes automatiquement aux factures contenant des entrees de temps. Configurez les frais a trois niveaux :
+
+| Niveau | Chemin |
+|---|---|
+| Valeur par defaut de l'espace de travail | **Espace de travail > Finances > Temps et deplacements** |
+| Par client | Formulaire client > parametres de facturation |
+| Remplacement personnel | **Mon compte > Temps et deplacements** (`/me/time-travel/time`) |
+
+Chaque niveau a trois champs : **description**, **montant** et **taux de TVA**. Les frais au niveau client ont priorite sur le personnel, qui a priorite sur l'espace de travail. La ligne de frais est ajoutee une fois par facture lorsqu'au moins une entree de temps est presente.
+
+## Inclusion automatique des depenses
+
+Lorsque cette option est activee, les depenses non facturees pour le meme client sont automatiquement ajoutees comme lignes de facturation lors de la creation d'une facture a partir d'entrees de temps. Cela vous evite d'ajouter manuellement les depenses a chaque facture. L'option est disponible a :
+
+- **Niveau espace de travail** : Espace de travail > Finances > Temps et deplacements
+- **Par client** : Formulaire client > parametres de facturation
+
+Lorsque l'espace de travail et un client ont tous deux l'option activee, la valeur du client prevaut.
 
 ## Paiements en ligne
 

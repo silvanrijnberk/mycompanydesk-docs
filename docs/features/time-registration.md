@@ -1,5 +1,6 @@
 ---
 title: Time Registration
+last_verified: 2026-05-29
 ---
 
 # Time Registration
@@ -44,6 +45,27 @@ Your own input is never overwritten. Once you type a custom description, the pre
 ### Hours-only mode
 
 For simplified time tracking, enable hours-only mode in settings. This hides the hourly rate and billable fields, showing only hours and description.
+
+### Personal overrides
+
+Each team member can set personal time-registration defaults at **My Account > Time and Travel** (`/me/time-travel/time`). When a personal override is set, it takes priority over the workspace default. When left empty, the workspace value applies.
+
+The following settings can be overridden per person:
+
+| Setting | Cascade order |
+|---|---|
+| **Hourly rate** | Project > Customer > Personal > Workspace |
+| **Rounding interval** | Personal > Workspace |
+| **Require project** | Personal > Workspace |
+| **Require description** | Personal > Workspace |
+| **Default line description** | Personal > Workspace |
+| **Invoice description format** | Personal > Workspace |
+| **Service fee** (description, amount, VAT rate) | Customer > Personal > Workspace |
+| **Day timeline** (start, end, break) | Personal > Workspace |
+
+For example, if the workspace rounding interval is 15 minutes but you prefer 30-minute rounding, set it under your personal overrides. Your time entries round to 30 minutes while the rest of the team stays at 15.
+
+Personal overrides auto-save as you type. A clear button appears next to each field when a personal value is set, letting you revert to the workspace default.
 
 ## Invoicing time entries
 

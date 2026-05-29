@@ -1,6 +1,6 @@
 ---
 title: My Account
-last_verified: 2026-05-17
+last_verified: 2026-05-29
 ---
 
 # My Account
@@ -117,8 +117,26 @@ OAuth scopes are requested per purpose:
 
 Personal defaults that drive the time-registration and travel modules. The page has two tabs:
 
-- **Time** (`/me/time-travel/time`) — Default project, default activity, default rate, rounding rules.
+- **Time** (`/me/time-travel/time`) — Personal overrides for time-registration defaults.
 - **Travel** (`/me/time-travel/travel`) — Home address, NS-Business OV-chip, default car, mileage rate.
+
+### Time overrides
+
+The Time tab lets you override workspace-wide time-registration defaults for your own entries. Each field has a clear button that reverts to the workspace value. All changes auto-save.
+
+| Setting | What it controls |
+|---|---|
+| **Hourly rate** | Your default rate for new time entries |
+| **Rounding interval** | Snap entry duration to 15, 30, or 60-minute increments |
+| **Require project** | Block saving an entry without a project |
+| **Require description** | Block saving an entry without a description |
+| **Default line description** | Pre-fill the description field on new entries |
+| **Invoice description format** | Template for formatting time-entry lines on invoices |
+| **Service fee** | Fixed fee line (description, amount, VAT rate) auto-added to invoices with time entries |
+| **Day start / end** | Working-day boundaries on the timeline view |
+| **Break** | Enable/disable break display plus start time and duration |
+
+When a personal value is set, it takes priority over the workspace default. See [Time Registration > Personal overrides](/features/time-registration#personal-overrides) for the full cascade rules.
 
 Workspace-level travel settings (per-company defaults, OV cards owned by the company) live under `/workspace/financial/travel`.
 

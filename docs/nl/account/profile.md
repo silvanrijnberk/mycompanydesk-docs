@@ -57,3 +57,30 @@ Bekijk en beheer OAuth-verbindingen:
 - **Microsoft** — Gekoppeld voor inloggen en/of Outlook-verzending
 
 Trek de toegang in om een app los te koppelen van je account.
+
+## Tijd en reizen
+
+`/me/time-travel`
+
+Persoonlijke standaarden voor de tijdregistratie- en reismodules. De pagina heeft twee tabs:
+
+- **Tijd** (`/me/time-travel/time`) — Persoonlijke overschrijvingen voor tijdregistratiestandaarden.
+- **Reizen** (`/me/time-travel/travel`) — Thuisadres, NS-Business OV-chip, standaardauto, kilometervergoeding.
+
+### Tijdoverschrijvingen
+
+Via de Tijd-tab kun je werkruimtebrede tijdregistratiestandaarden overschrijven voor je eigen registraties. Elk veld heeft een wisknop om terug te keren naar de werkruimtewaarde. Alle wijzigingen worden automatisch opgeslagen.
+
+| Instelling | Wat het bepaalt |
+|---|---|
+| **Uurtarief** | Je standaardtarief voor nieuwe tijdregistraties |
+| **Afrondingsinterval** | Rond de duur af op stappen van 15, 30 of 60 minuten |
+| **Project verplicht** | Blokkeer opslaan zonder project |
+| **Omschrijving verplicht** | Blokkeer opslaan zonder omschrijving |
+| **Standaard regelomschrijving** | Vul het omschrijvingsveld voor bij nieuwe registraties |
+| **Factuuromschrijvingsformaat** | Sjabloon voor opmaak van tijdregistratieregels op facturen |
+| **Servicekosten** | Vaste kostenregel (omschrijving, bedrag, BTW-tarief) automatisch toegevoegd aan facturen met tijdregistraties |
+| **Dag start / einde** | Grenzen van de werkdag op de tijdlijnweergave |
+| **Pauze** | Pauzeweergave aan/uit plus starttijd en duur |
+
+Wanneer een persoonlijke waarde is ingesteld, gaat deze voor op de werkruimtestandaard. Zie [Tijdregistratie > Persoonlijke overschrijvingen](/nl/features/time-registration#persoonlijke-overschrijvingen) voor de volledige cascade-regels.

@@ -87,6 +87,12 @@ Chaque dépense peut avoir son propre taux de TVA. Options courantes :
 
 Le montant de TVA est calculé automatiquement et inclus dans vos [rapports de TVA](/fr/features/vat).
 
+## Seuil d'alerte
+
+Definissez un montant pour signaler les depenses elevees. Allez dans **Espace de travail > Finances > Depenses** et remplissez le montant du **Waarschuwingsdrempel** (seuil d'alerte).
+
+Lorsqu'une depense depasse le seuil, un avertissement est affiche sur la page de detail. Activez **Notitie verplicht boven drempel** pour exiger une note sur toute depense depassant le seuil, empechant l'enregistrement tant qu'une note n'est pas ajoutee.
+
 ## Lier les dépenses
 
 Liez les dépenses à :

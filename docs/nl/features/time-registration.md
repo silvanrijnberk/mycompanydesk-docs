@@ -45,6 +45,27 @@ Je eigen invoer wordt nooit overschreven. Zodra je een eigen omschrijving typt, 
 
 Voor vereenvoudigde tijdregistratie schakel je de alleen-uren-modus in via de instellingen. Dit verbergt het uurtarief en declarabele velden en toont alleen uren en omschrijving.
 
+### Persoonlijke overschrijvingen
+
+Elk teamlid kan persoonlijke tijdregistratie-standaarden instellen via **Mijn account > Tijd en reizen** (`/me/time-travel/time`). Als een persoonlijke waarde is ingesteld, heeft deze voorrang op de werkruimtestandaard. Als het veld leeg blijft, geldt de werkruimtewaarde.
+
+De volgende instellingen zijn per persoon te overschrijven:
+
+| Instelling | Cascade-volgorde |
+|---|---|
+| **Uurtarief** | Project > Klant > Persoonlijk > Werkruimte |
+| **Afrondingsinterval** | Persoonlijk > Werkruimte |
+| **Project verplicht** | Persoonlijk > Werkruimte |
+| **Omschrijving verplicht** | Persoonlijk > Werkruimte |
+| **Standaard regelomschrijving** | Persoonlijk > Werkruimte |
+| **Factuuromschrijvingsformaat** | Persoonlijk > Werkruimte |
+| **Servicekosten** (omschrijving, bedrag, BTW-tarief) | Klant > Persoonlijk > Werkruimte |
+| **Dagtijdlijn** (start, einde, pauze) | Persoonlijk > Werkruimte |
+
+Stel je het werkruimte-afrondingsinterval op 15 minuten maar werk je liever met 30 minuten? Stel het in onder je persoonlijke overschrijvingen. Jouw tijdregistraties ronden af op 30 minuten, de rest van het team blijft op 15.
+
+Persoonlijke overschrijvingen worden automatisch opgeslagen terwijl je typt. Naast elk veld met een persoonlijke waarde verschijnt een wisknop waarmee je terugkeert naar de werkruimtestandaard.
+
 ## Tijdregistraties factureren
 
 Zet gelogde uren om in facturen:

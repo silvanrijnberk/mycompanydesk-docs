@@ -28,6 +28,10 @@ Die Rechnungsseite zeigt alle Ihre Rechnungen mit Filter- und Suchfunktionen. Ve
 5. Fügen Sie optionale **Anmerkungen** oder **interne Bemerkungen** hinzu
 6. Klicken Sie auf **Speichern**, um einen Entwurf zu erstellen
 
+### Rechnungspräfix
+
+Legen Sie ein benutzerdefiniertes Präfix für Ihre Rechnungsnummern unter **Arbeitsbereich > Finanzen > Rechnungen** fest. Das Präfix wird jeder Rechnungsnummer im Format `[PRÄFIX]JJJJ-NNN` vorangestellt (z.B. ergibt das Präfix "INV-" Nummern wie "INV-2026-001"). Lassen Sie es leer für einfache Nummerierung. Das Präfix ist auf 20 Zeichen begrenzt.
+
 ### Schnellerfassung
 
 Für eine schnellere Erstellung:
@@ -85,6 +89,19 @@ Erstellen Sie eine Kopie einer bestehenden Rechnung — nützlich für wiederkeh
 
 Senden Sie eine Zahlungserinnerung für überfällige Rechnungen.
 
+### Automatische Zahlungserinnerungen
+
+Aktivieren Sie automatische Erinnerungen, damit Sie überfälligen Rechnungen nicht mehr manuell hinterherlaufen müssen. Gehen Sie zu **Arbeitsbereich > Finanzen > Rechnungen** und aktivieren Sie **Automatische herinneringen**.
+
+Wenn aktiviert:
+
+- Wird eine Erinnerungs-E-Mail für jede offene Rechnung gesendet, die 3 oder mehr Tage überfällig ist
+- Werden Folgeerinnerungen alle 7 Tage gesendet, bis die Rechnung bezahlt oder storniert ist
+- Maximal eine Erinnerung pro Rechnung pro 7-Tage-Zeitraum
+- Die Erinnerung verwendet Ihre Standard-E-Mail-Vorlage
+
+Deaktivieren Sie den Schalter, um automatische Erinnerungen zu stoppen, ohne bereits gesendete Rechnungen zu beeinflussen.
+
 ## Massenaktionen
 
 Wählen Sie mehrere Rechnungen aus der Liste, um Aktionen in großem Umfang durchzuführen:
@@ -103,6 +120,27 @@ Wenn Sie eine Rechnung versenden, wird ein eindeutiger Zahlungslink generiert. I
 3. Direkt online bezahlen, ueber Ihr verbundenes Mollie- oder Stripe-Konto
 
 Die Zahlung wird automatisch erfasst und der Rechnungsstatus wird auf **Bezahlt** aktualisiert.
+
+## Servicegebühr
+
+Eine feste Service- oder Verwaltungsgebühr kann automatisch zu Rechnungen hinzugefügt werden, die Zeiteinträge enthalten. Konfigurieren Sie die Gebühr auf drei Ebenen:
+
+| Ebene | Pfad |
+|---|---|
+| Arbeitsbereich-Standard | **Arbeitsbereich > Finanzen > Zeit und Reisen** |
+| Pro Kunde | Kundenformular > Rechnungsstandards |
+| Persönliche Überschreibung | **Mein Konto > Zeit und Reisen** (`/me/time-travel/time`) |
+
+Jede Ebene hat drei Felder: **Beschreibung**, **Betrag** und **USt.-Satz**. Eine kundenspezifische Gebühr hat Vorrang vor persönlich, die wiederum Vorrang vor dem Arbeitsbereich hat. Die Gebührenposition wird einmal pro Rechnung hinzugefügt, wenn mindestens ein Zeiteintrag vorhanden ist.
+
+## Ausgaben automatisch einbeziehen
+
+Wenn aktiviert, werden nicht abgerechnete Ausgaben für denselben Kunden automatisch als Positionen hinzugefügt, wenn Sie eine Rechnung aus Zeiteinträgen erstellen. Dies erspart Ihnen das manuelle Hinzufügen von Ausgaben zu jeder Rechnung. Der Schalter ist verfügbar unter:
+
+- **Arbeitsbereich-Ebene**: Arbeitsbereich > Finanzen > Zeit und Reisen
+- **Pro Kunde**: Kundenformular > Rechnungsstandards
+
+Wenn sowohl der Arbeitsbereich als auch ein Kunde den Schalter gesetzt haben, gewinnt der Kundenwert.
 
 ## Online-Zahlungen
 

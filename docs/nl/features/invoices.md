@@ -28,6 +28,10 @@ De facturenpagina toont al je facturen met filter- en zoekmogelijkheden. Gebruik
 5. Voeg optionele **notities** of **interne opmerkingen** toe
 6. Klik op **Opslaan** om een concept aan te maken
 
+### Factuurprefix
+
+Stel een eigen prefix in voor je factuurnummers via **Werkruimte > Geldzaken > Facturen**. De prefix wordt voor elk factuurnummer geplaatst in het formaat `[PREFIX]JJJJ-NNN` (bijv. prefix "INV-" geeft nummers als "INV-2026-001"). Laat het leeg voor standaardnummering. De prefix is beperkt tot 20 tekens.
+
 ### Snel toevoegen
 
 Voor snellere aanmaak:
@@ -85,6 +89,19 @@ Maak een kopie van een bestaande factuur — handig voor terugkerende facturatie
 
 Verstuur een betalingsherinnering voor achterstallige facturen.
 
+### Automatische betalingsherinneringen
+
+Schakel automatische herinneringen in zodat je niet meer handmatig achter achterstallige facturen hoeft aan te gaan. Ga naar **Werkruimte > Geldzaken > Facturen** en schakel **Automatische herinneringen** in.
+
+Wanneer ingeschakeld:
+
+- Wordt een herinnerings-e-mail verstuurd voor elke open factuur die 3 of meer dagen achterstallig is
+- Worden vervolgherinneringen elke 7 dagen verstuurd totdat de factuur is betaald of geannuleerd
+- Maximaal een herinnering per factuur per 7-daagse periode
+- De herinnering gebruikt je standaard e-mailsjabloon
+
+Schakel de toggle uit om automatische herinneringen te stoppen zonder al verstuurde facturen te beinvloeden.
+
 ## Bulkacties
 
 Selecteer meerdere facturen uit de lijst om acties in bulk uit te voeren:
@@ -103,6 +120,27 @@ Wanneer je een factuur verstuurt, wordt een unieke betaallink gegenereerd. Je kl
 3. Direct online betalen via je gekoppelde Mollie- of Stripe-account
 
 De betaling wordt automatisch geregistreerd en de factuurstatus wordt bijgewerkt naar **Betaald**.
+
+## Servicekosten
+
+Een vast service- of administratiebedrag kan automatisch worden toegevoegd aan facturen met tijdregistraties. Configureer de kosten op drie niveaus:
+
+| Niveau | Pad |
+|---|---|
+| Werkruimtestandaard | **Werkruimte > Geldzaken > Tijd en reizen** |
+| Per klant | Klantformulier > factuurstandaarden |
+| Persoonlijke overschrijving | **Mijn account > Tijd en reizen** (`/me/time-travel/time`) |
+
+Elk niveau heeft drie velden: **omschrijving**, **bedrag** en **BTW-tarief**. Een klantspecifieke instelling gaat voor op persoonlijk, dat weer voorgaat op werkruimte. De kostenregel wordt een keer per factuur toegevoegd wanneer minimaal een tijdregistratie aanwezig is.
+
+## Uitgaven automatisch opnemen
+
+Wanneer ingeschakeld, worden ongefactureerde uitgaven voor dezelfde klant automatisch als regelitems toegevoegd wanneer je een factuur aanmaakt vanuit tijdregistraties. Dit bespaart je het handmatig toevoegen van uitgaven aan elke factuur. De toggle is beschikbaar op:
+
+- **Werkruimteniveau**: Werkruimte > Geldzaken > Tijd en reizen
+- **Per klant**: Klantformulier > factuurstandaarden
+
+Wanneer zowel de werkruimte als de klant de toggle hebben ingesteld, wint de klantwaarde.
 
 ## Online betalingen
 

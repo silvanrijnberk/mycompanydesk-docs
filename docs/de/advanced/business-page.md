@@ -39,7 +39,7 @@ Das Banner verwendet das Gemini KI-Modell (Lite-Variante), sofern in Ihrem Works
 Der Website-Builder hat fünf Tabs (sechs, wenn Stil ausgeklappt ist):
 
 - **Editor**: Erstellen Sie Seiten durch Hinzufügen und Anordnen von Abschnitten. Klicken Sie auf einen Abschnitt, um Inhalt, Layout, Stil oder Animation zu bearbeiten. Ziehen Sie Abschnitte zum Verschieben, Duplizieren oder Löschen.
-- **Seiten**: Verwalten Sie Ihre Seiten: Erstellen Sie neue aus Vorlagen, legen Sie Pfade und Sichtbarkeit fest und sehen Sie, welche Seiten live, Entwurf oder geplant sind. Klicken Sie auf eine Seite, um sie im Editor zu öffnen. Die gesperrte Startseite kann nicht gelöscht werden. Jede Seite zeigt ein Live/Entwurf-Symbol mit Schnellumschaltflächen: Klicken Sie auf das Globus-Icon, um eine Entwurfsseite live zu schalten, oder auf das Ausblenden-Icon, um eine Live-Seite zurück in den Entwurf zu setzen.
+- **Seiten**: Verwalten Sie Ihre Seiten: Erstellen Sie neue aus Vorlagen, ordnen Sie sie per Drag-and-Drop neu, duplizieren Sie eine bestehende Seite mit allen Abschnitten und Medien, legen Sie Pfade und Sichtbarkeit fest und sehen Sie, welche Seiten live, Entwurf oder geplant sind. Klicken Sie auf eine Seite, um sie im Editor zu öffnen. Die gesperrte Startseite kann nicht gelöscht werden. Jede Seite zeigt ein Live/Entwurf-Symbol mit Schnellumschaltflächen: Klicken Sie auf das Globus-Icon, um eine Entwurfsseite live zu schalten, oder auf das Ausblenden-Icon, um eine Live-Seite zurück in den Entwurf zu setzen.
 - **Stil**: Passen Sie Ihre site-weiten Design-Tokens an. Wählen Sie ein Ein-Klick-Preset (Editorial) und passen Sie dann Farben (Marke, Akzent, Papier, Tinte), Schriften (Überschrift, Text, Mono aus der Schriftbibliothek), Navigationsleiste (Layout, Hintergrund, CTA-Stil), Skalierung (Radius, Dichte, maximale Breite, Abschnittsabstand), Bewegung, Schaltflächenstile und benutzerdefiniertes CSS an. Sie können auch Head-Snippets für Analytics (Plausible, Umami, Matomo) oder Schrift-Preconnects hinzufügen. Klicken Sie auf die Stil-Überschrift, um die Registerkarte ein- oder auszuklappen.
 - **Domain & SEO**: Konfigurieren Sie Ihre eigene Domain und SEO-Einstellungen. Der Inhalt hier bezieht sich auf die Domain, die im Domain-Wechsler in der oberen Leiste ausgewählt ist. Wenn die Hauptwebsite (angezeigt als Ihr Workspace-Name) ausgewählt ist, erscheint kein domain-spezifisches Panel. Siehe [Domains, Website und Posteingang](/de/features/domains-website-inbox) für die vollständige Domain-Verwaltung.
 - **Integrationen**: Binden Sie Drittanbieterdienste in Ihre Website ein.
@@ -51,6 +51,14 @@ Der Website-Builder hat fünf Tabs (sechs, wenn Stil ausgeklappt ist):
 3. Geben Sie einen Titel und einen Pfad ein (z. B. `/ueber-uns`).
 4. Wählen Sie eine Vorlage oder beginnen Sie mit einer leeren Seite.
 5. Die Seite öffnet sich im Editor, wo Sie Abschnitte hinzufügen und ausbauen können.
+
+### Seiten neu anordnen
+
+Ziehen Sie Seiten im **Seiten**-Tab, um ihre Reihenfolge zu ändern. Die Navigationsleiste wird automatisch aktualisiert. Die Startseite steht immer an erster Stelle und kann nicht verschoben werden.
+
+### Seite duplizieren
+
+Klicken Sie auf die Duplizieren-Aktion auf einer Seite im **Seiten**-Tab. Eine Kopie wird mit allen Abschnitten, Inhalten und Galeriemedien erstellt. Das Duplikat startet als **Entwurf**-Seite mit einem neuen Pfad, sodass Sie es vor der Veröffentlichung anpassen können.
 
 ### Standardseiten
 
@@ -273,7 +281,7 @@ Im **Stil**-Tab steuern Sie das Erscheinungsbild Ihrer gesamten Site:
 - **Navigationsleiste**: Legen Sie das Layout (Standard, zentriert, geteilt), den Hintergrundstil (durchgehend, transparent mit Blur, vollständig transparent) und das Aussehen der CTA-Schaltfläche (ausgefüllt, Umrandung, nur Text) fest. Die Navigationsleisteneinstellungen gelten für jede Seite.
 - **Telefon & Anrufleiste**: Fügen Sie eine anklickbare Telefonnummer zu Ihrer Navigationsleiste hinzu. Die Nummer erscheint neben der CTA-Schaltfläche auf dem Desktop und in der mobilen Navigationsleiste. Aktivieren Sie den **Mobile Anrufleiste**-Schalter, um eine feste Schaltfläche "Zum Anrufen tippen" am unteren Bildschirmrand auf mobilen Geräten anzuzeigen, damit Besucher Sie mit einem Fingertipp erreichen können, egal wo sie sich auf der Seite befinden. Das Telefonlabel lautet standardmäßig "Jetzt anrufen", wenn es leer gelassen wird.
 - **Benutzerdefiniertes CSS**: Schreiben Sie Ihr eigenes CSS, das in die Site eingebunden wird. Nützlich für Feinanpassungen oder zum Überschreiben von Standardwerten.
-- **Favicon**: Laden Sie ein Favicon für Ihre Site hoch. Es erscheint in Browser-Tabs und Lesezeichen. Wenn Sie kein Favicon festlegen, verwendet die Site Ihr helles Logo, dann Ihr Geschäftsprofilbild.
+- **Marke (Merk)**: Laden Sie Ihr Site-Logo und Favicon an einem Ort hoch. Der Markenbereich akzeptiert separate helle und dunkle Logo-Varianten, damit Ihre Marke auf beiden Hintergründen korrekt aussieht. Das Favicon erscheint in Browser-Tabs und Lesezeichen. Wenn kein Favicon festgelegt ist, verwendet die Site Ihr helles Logo, dann Ihr Geschäftsprofilbild. Der Navigationseditor verweist auf diese Uploads: Wenn kein Logo hochgeladen ist, wird stattdessen der Markenname als Text angezeigt.
 - **Head-Snippets**: Fügen Sie Analytics-Skripte (Plausible, Umami, Matomo) oder Schrift-Preconnects über die Snippet-Auswahl hinzu.
 
 Änderungen im Stil-Tab werden automatisch gespeichert und gelten für alle Seiten.
