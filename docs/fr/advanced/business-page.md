@@ -39,7 +39,7 @@ La bannière utilise le modèle IA Gemini (variante lite) s'il est disponible da
 Le constructeur de site dispose de cinq onglets (six lorsque Style est deplie) :
 
 - **Editeur**: Composez des pages en ajoutant et en organisant des sections. Cliquez sur une section pour modifier son contenu, sa mise en page, son style ou son animation. Faites glisser les sections pour les reordonner, les dupliquer ou les supprimer.
-- **Pages**: Gelez vos pages : creez-en de nouvelles a partir de modeles, definissez les chemins et la visibilite, et voyez quelles pages sont en ligne, en brouillon ou planifiees. Cliquez sur une page pour l'ouvrir dans l'editeur. La page d'accueil verrouillee ne peut pas etre supprimee. Chaque page affiche un badge En ligne/Brouillon avec des boutons d'action rapide : cliquez sur l'icone globe pour mettre une page brouillon en ligne, ou sur l'icone masquer pour repasser une page en ligne en brouillon.
+- **Pages**: Gerez vos pages : creez-en de nouvelles a partir de modeles, reordonnez-les par glisser-deposer, dupliquez une page existante avec toutes ses sections et medias, definissez les chemins et la visibilite, et voyez quelles pages sont en ligne, en brouillon ou planifiees. Cliquez sur une page pour l'ouvrir dans l'editeur. La page d'accueil verrouillee ne peut pas etre supprimee. Chaque page affiche un badge En ligne/Brouillon avec des boutons d'action rapide : cliquez sur l'icone globe pour mettre une page brouillon en ligne, ou sur l'icone masquer pour repasser une page en ligne en brouillon.
 - **Style**: Personnalisez vos tokens de design a l'echelle du site. Choisissez un preset en un clic (Editorial) puis ajustez les couleurs (marque, accent, papier, encre), les polices (titres, corps, mono de la bibliotheque de polices), la barre de navigation (disposition, arriere-plan, style du CTA), l'echelle (rayon, densite, largeur maximale, espacement des sections), le mouvement, les styles de boutons et le CSS personnalise. Vous pouvez egalement ajouter des snippets d'en-tete pour l'analytique (Plausible, Umami, Matomo) ou les preconnexions de polices. Cliquez sur l'en-tete Style pour deplier ou replier l'onglet.
 - **Domaine et SEO**: Configurez votre domaine personnalise et vos parametres SEO. Le contenu ici est lie au domaine selectionne dans le selecteur de domaine de la barre superieure. Lorsque le site principal (affiche sous le nom de votre espace de travail) est selectionne, aucun panneau specifique au domaine n'apparait. Consultez [Domaines, site web et boite de reception](/fr/features/domains-website-inbox) pour la gestion complete des domaines.
 - **Integrations**: Connectez des services tiers a votre site web.
@@ -51,6 +51,14 @@ Le constructeur de site dispose de cinq onglets (six lorsque Style est deplie) :
 3. Saisissez un titre et un chemin (par ex. `/a-propos`).
 4. Choisissez un modele ou commencez avec une page vierge.
 5. La page s'ouvre dans l'editeur, ou vous pouvez ajouter des sections et la construire.
+
+### Reordonner les pages
+
+Faites glisser les pages dans l'onglet **Pages** pour modifier leur ordre. L'en-tete de navigation se met a jour automatiquement. La page d'accueil est toujours en premiere position et ne peut pas etre deplacee.
+
+### Dupliquer une page
+
+Cliquez sur l'action de duplication sur une page dans l'onglet **Pages**. Une copie est creee avec toutes les sections, le contenu et les medias de la galerie. Le duplicata commence en tant que page **Brouillon** avec un nouveau chemin, vous permettant de l'ajuster avant la publication.
 
 ### Pages par défaut
 
@@ -273,7 +281,7 @@ Dans l'onglet **Style**, vous controlez l'apparence de l'ensemble de votre site 
 - **Barre de navigation**: Definissez la disposition (standard, centree, divisee), le style d'arriere-plan (plein, flou translucide, transparent) et l'apparence du bouton CTA (plein, contour, texte seul). Les parametres de navigation s'appliquent a chaque page.
 - **Telephone et barre d'appel**: Ajoutez un numero de telephone cliquable a votre barre de navigation. Le numero apparait a cote du bouton CTA sur ordinateur et dans le tiroir de navigation mobile. Activez l'option **Barre d'appel mobile** pour epingler un bouton fixe "Appuyez pour appeler" en bas de l'ecran sur les appareils mobiles, permettant a vos visiteurs de vous joindre en un geste, ou qu'ils se trouvent sur la page. Le libelle du telephone est par defaut "Appeler" si vous le laissez vide.
 - **CSS personnalise**: Ecrivez votre propre CSS qui sera injecte dans le site. Utile pour les ajustements fins ou pour remplacer les valeurs par defaut.
-- **Favicon**: Telechargez un favicon pour votre site. Il apparait dans les onglets du navigateur et les favoris. Si vous n'en definissez pas, le site utilise votre logo clair, puis votre photo de profil d'entreprise.
+- **Marque (Merk)**: Telechargez votre logo de site et favicon en un seul endroit. La section marque accepte des variantes de logo claires et sombres separees pour que votre marque soit correcte sur les deux arriere-plans. Le favicon apparait dans les onglets du navigateur et les favoris. Si aucun favicon n'est defini, le site utilise votre logo clair, puis votre photo de profil d'entreprise. L'editeur de navigation fait reference a ces telechargements : si aucun logo n'est telecharge, il affiche le nom de marque en texte.
 - **Snippets d'en-tete**: Ajoutez des scripts d'analytique (Plausible, Umami, Matomo) ou des preconnexions de polices via le selecteur de snippets.
 
 Les modifications dans l'onglet Style sont enregistrees automatiquement et s'appliquent a toutes les pages.

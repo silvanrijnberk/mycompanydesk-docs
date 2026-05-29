@@ -39,7 +39,7 @@ De banner gebruikt het Gemini AI-model (lite-variant) als dat beschikbaar is in 
 De sitebouwer heeft vijf tabs (zes als Stijl is uitgeklapt):
 
 - **Editor**: Stel pagina's samen door secties toe te voegen en te rangschikken. Klik op een sectie om de inhoud, layout, stijl of animatie te bewerken. Sleep secties om ze te verplaatsen, dupliceren of verwijderen.
-- **Pagina's**: Beheer je pagina's: maak nieuwe aan vanuit sjablonen, stel paden en zichtbaarheid in, en bekijk welke pagina's live, concept of ingepland zijn. Klik op een pagina om deze in de editor te openen. De vergrendelde homepage kan niet worden verwijderd. Elke pagina toont een Live/Concept-badge met snelle wisselknoppen: klik op het wereldbol-icoontje om een conceptpagina live te zetten, of op het oog-dicht-icoontje om een live pagina terug naar concept te zetten.
+- **Pagina's**: Beheer je pagina's: maak nieuwe aan vanuit sjablonen, versleep ze om de volgorde aan te passen, dupliceer een bestaande pagina met alle secties en media, stel paden en zichtbaarheid in, en bekijk welke pagina's live, concept of ingepland zijn. Klik op een pagina om deze in de editor te openen. De vergrendelde homepage kan niet worden verwijderd. Elke pagina toont een Live/Concept-badge met snelle wisselknoppen: klik op het wereldbol-icoontje om een conceptpagina live te zetten, of op het oog-dicht-icoontje om een live pagina terug naar concept te zetten.
 - **Stijl**: Pas je sitebrede ontwerptokens aan. Kies een klik-en-klaar-preset (Editorial) en stem daarna kleuren (merk, accent, papier, inkt), lettertypes (kop, body, mono uit de lettertypebibliotheek), navbar (layout, achtergrond, knopstijl), schaal (radius, dichtheid, maximale breedte, sectie-afstand), beweging, knopstijlen en aangepaste CSS fijn af. Je kunt ook head-snippets toevoegen voor analytics (Plausible, Umami, Matomo) of lettertype-preconnects. Klik op de Stijl-header om de tab uit of in te klappen.
 - **Domein & SEO**: Configureer je eigen domein en SEO-instellingen. De inhoud hier is gekoppeld aan het domein dat in de domeinwisselaar in de bovenbalk is geselecteerd. Wanneer de hoofdsite (weergegeven als je werkruimtenaam) is geselecteerd, verschijnt er geen domeinspecifiek paneel. Zie [Domeinen, website en inbox](/nl/features/domains-website-inbox) voor het volledige domeinbeheer.
 - **Koppelingen**: Verbind diensten van derden met je website.
@@ -51,6 +51,14 @@ De sitebouwer heeft vijf tabs (zes als Stijl is uitgeklapt):
 3. Geef een titel en een pad op (bijv. `/over-ons`).
 4. Kies een sjabloon of begin leeg.
 5. De pagina opent in de editor, waar je secties kunt toevoegen en uitbouwen.
+
+### Pagina's herordenen
+
+Versleep pagina's in de **Pagina's**-tab om de volgorde te wijzigen. De navigatie-header wordt automatisch bijgewerkt. De homepage staat altijd bovenaan en kan niet verplaatst worden.
+
+### Een pagina dupliceren
+
+Klik op de dupliceeractie op een pagina in de **Pagina's**-tab. Er wordt een kopie aangemaakt met alle secties, inhoud en galerij-media. Het duplicaat start als **Concept**-pagina met een nieuw pad, zodat je het kunt aanpassen voor publicatie.
 
 ### Standaardpagina's
 
@@ -273,7 +281,7 @@ In de **Stijl**-tab bepaal je de look-and-feel van je hele site:
 - **Navbar**: Stel de layout in (standaard, gecentreerd, split), de achtergrondstijl (vast, transparant met blur, volledig transparant) en hoe de CTA-knop eruitziet (vol, lijn, alleen tekst). De navbar-instellingen gelden voor elke pagina.
 - **Telefoon & belbalk**: Voeg een klikbaar telefoonnummer toe aan je navigatiebalk. Het nummer verschijnt naast de CTA-knop op desktop en in de mobiele navigatielade. Zet de **Mobiele belbalk**-toggle aan om een vaste "tik om te bellen"-knop onderaan het scherm te plaatsen op mobiele apparaten, zodat bezoekers je met één tik kunnen bereiken, waar ze ook zijn op de pagina. Het telefoonlabel is standaard "Bel direct" als je het leeg laat.
 - **Aangepaste CSS**: Schrijf je eigen CSS die in de site wordt geïnjecteerd. Handig voor fijnafstemming of het overschrijven van standaardwaarden.
-- **Favicon**: Upload een favicon voor je site. Deze verschijnt in browsertabs en bladwijzers. Als je geen favicon instelt, gebruikt de site je lichte logo, en daarna je bedrijfsprofielfoto.
+- **Merk (Brand)**: Upload je sitelogo en favicon op een plek. De merksectie accepteert aparte lichte en donkere logo-varianten zodat je merk er goed uitziet op beide achtergronden. De favicon verschijnt in browsertabs en bladwijzers. Als je geen favicon instelt, gebruikt de site je lichte logo, en daarna je bedrijfsprofielfoto. De navigatie-editor verwijst naar deze uploads: als er geen logo is ge-upload, toont hij de merknaam als tekst.
 - **Head-snippets**: Voeg analytics-scripts toe (Plausible, Umami, Matomo) of lettertype-preconnects via de snippetkiezer.
 
 Wijzigingen in de Stijl-tab worden automatisch opgeslagen bij bewerken en gelden voor alle pagina's.

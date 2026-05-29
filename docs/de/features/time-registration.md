@@ -45,6 +45,27 @@ Ihre eigene Eingabe wird niemals uberschrieben. Sobald Sie eine eigene Beschreib
 
 Für vereinfachte Zeiterfassung aktivieren Sie den Nur-Stunden-Modus in den Einstellungen. Dieser blendet die Felder für Stundensatz und Abrechenbarkeit aus und zeigt nur Stunden und Beschreibung an.
 
+### Persönliche Überschreibungen
+
+Jedes Teammitglied kann persönliche Zeiterfassungs-Standardwerte unter **Mein Konto > Zeit und Reisen** (`/me/time-travel/time`) festlegen. Wenn ein persönlicher Wert gesetzt ist, hat er Vorrang vor dem Arbeitsbereich-Standard. Wenn das Feld leer bleibt, gilt der Arbeitsbereich-Wert.
+
+Die folgenden Einstellungen können pro Person überschrieben werden:
+
+| Einstellung | Kaskaden-Reihenfolge |
+|---|---|
+| **Stundensatz** | Projekt > Kunde > Persönlich > Arbeitsbereich |
+| **Rundungsintervall** | Persönlich > Arbeitsbereich |
+| **Projekt erforderlich** | Persönlich > Arbeitsbereich |
+| **Beschreibung erforderlich** | Persönlich > Arbeitsbereich |
+| **Standardbeschreibung** | Persönlich > Arbeitsbereich |
+| **Rechnungsbeschreibungsformat** | Persönlich > Arbeitsbereich |
+| **Servicegebühr** (Beschreibung, Betrag, MwSt.-Satz) | Kunde > Persönlich > Arbeitsbereich |
+| **Tageszeitleiste** (Start, Ende, Pause) | Persönlich > Arbeitsbereich |
+
+Wenn beispielsweise das Rundungsintervall des Arbeitsbereichs 15 Minuten beträgt, Sie aber 30-Minuten-Rundung bevorzugen, stellen Sie dies unter Ihren persönlichen Überschreibungen ein. Ihre Zeiteinträge werden auf 30 Minuten gerundet, während der Rest des Teams bei 15 bleibt.
+
+Persönliche Überschreibungen werden beim Tippen automatisch gespeichert. Neben jedem Feld mit persönlichem Wert erscheint eine Löschen-Schaltfläche, mit der Sie zum Arbeitsbereich-Standard zurückkehren können.
+
 ## Zeiteinträge abrechnen
 
 Wandeln Sie erfasste Stunden in Rechnungen um:

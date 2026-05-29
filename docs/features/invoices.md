@@ -1,5 +1,6 @@
 ---
 title: Invoices
+last_verified: 2026-05-29
 ---
 
 # Invoices
@@ -27,6 +28,10 @@ The invoices page shows all your invoices with filtering and search capabilities
 4. Set the **invoice date** and **due date**
 5. Add optional **notes** or **internal remarks**
 6. Click **Save** to create a draft
+
+### Invoice prefix
+
+Set a custom prefix for your invoice numbers at **Workspace > Financial > Invoices**. The prefix is prepended to every invoice number in the format `[PREFIX]YYYY-NNN` (e.g. setting prefix "INV-" produces numbers like "INV-2026-001"). Leave it empty for plain numbering. The prefix is limited to 20 characters.
 
 ### Quick Add
 
@@ -85,6 +90,19 @@ Create a copy of an existing invoice — useful for recurring billing to the sam
 
 Send a payment reminder for overdue invoices.
 
+### Automatic payment reminders
+
+Enable automatic reminders to stop chasing overdue invoices manually. Go to **Workspace > Financial > Invoices** and turn on **Automatische herinneringen**.
+
+When enabled:
+
+- A reminder email is sent for any open invoice that is 3 or more days past due
+- Follow-up reminders are sent every 7 days until the invoice is paid or cancelled
+- No more than one reminder per invoice per 7-day window
+- The reminder uses your standard email template
+
+Turn the toggle off to stop automatic reminders without affecting invoices already sent.
+
 ## Bulk actions
 
 Select multiple invoices from the list to perform actions in bulk:
@@ -103,6 +121,27 @@ When you send an invoice, a unique payment link is generated. Your customer can:
 3. Pay directly online using your connected Mollie or Stripe account
 
 Payment is automatically recorded and the invoice status updates to **Paid**.
+
+## Service fee
+
+A fixed service or administration fee can be added automatically to invoices that contain time entries. Configure the fee at three levels:
+
+| Level | Path |
+|---|---|
+| Workspace default | **Workspace > Financial > Time & Travel** |
+| Per customer | Customer form > invoice defaults |
+| Personal override | **My Account > Time and Travel** (`/me/time-travel/time`) |
+
+Each level has three fields: **description**, **amount**, and **VAT rate**. A customer-level fee takes priority over personal, which takes priority over workspace. The fee line is added once per invoice when at least one time entry is present.
+
+## Auto-include expenses
+
+When enabled, uninvoiced expenses for the same customer are automatically added as line items when you create an invoice from time entries. This saves you from having to add expenses manually to each invoice. The toggle is available at:
+
+- **Workspace level**: Workspace > Financial > Time & Travel
+- **Per customer**: Customer form > invoice defaults
+
+When both the workspace and a customer have the toggle set, the customer value wins.
 
 ## Online payments
 

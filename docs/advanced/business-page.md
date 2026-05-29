@@ -39,7 +39,7 @@ The banner uses the Gemini AI model (lite variant) when available on your worksp
 The site builder has five tabs (six when Style is expanded):
 
 - **Editor**: Compose pages by adding and arranging sections. Click any section to inspect its content, layout, style, or animation settings. Drag sections to reorder, duplicate, or delete them.
-- **Pages**: Manage your pages: create new ones from templates, set paths and visibility, and see which pages are live, draft, or scheduled. Click a page to open it in the editor. The locked home page cannot be deleted. Each page shows a Live/Concept badge alongside quick-toggle buttons: click the globe icon to set a draft page live, or use the eye-off icon to hide a live page back to concept.
+- **Pages**: Manage your pages: create new ones from templates, reorder them by dragging, duplicate an existing page with all its sections and media, set paths and visibility, and see which pages are live, draft, or scheduled. Click a page to open it in the editor. The locked home page cannot be deleted. Each page shows a Live/Concept badge alongside quick-toggle buttons: click the globe icon to set a draft page live, or use the eye-off icon to hide a live page back to concept.
 - **Style**: Customize your site-wide design tokens. Apply a one-click preset (Editorial), then fine-tune colors (brand, accent, paper, ink), fonts (heading, body, mono from the font library), navbar (layout, background, CTA style), scale (radius, density, max width, section spacing), motion preferences, button styles, and custom CSS. You can also add head snippets for analytics (Plausible, Umami, Matomo) or font preconnects. Click the Style header to open or close the tab strip.
 - **Domain & SEO**: Configure your custom domain and SEO settings. The content here is scoped to the domain selected in the topbar domain switcher. When the default site (listed as the workspace name) is selected, no domain-specific panel appears. See [Domains, Website and Inbox](/features/domains-website-inbox) for the full domain management workflow.
 - **Integrations**: Connect third-party services to your website.
@@ -51,6 +51,14 @@ The site builder has five tabs (six when Style is expanded):
 3. Enter a title and a path (e.g. `/about`).
 4. Choose a template or start blank.
 5. The page opens in the editor, where you can add sections and build it out.
+
+### Reorder pages
+
+Drag pages in the **Pages** tab to change their order. The navigation header updates to match the new order. The home page is always first and cannot be moved.
+
+### Duplicate a page
+
+Click the duplicate action on any page in the **Pages** tab. A copy is created with all sections, content, and gallery media. The duplicate starts as a **Concept** page with a new path, so you can adjust it before publishing.
 
 ### Default pages
 
@@ -273,7 +281,7 @@ In the **Style** tab, you control the look and feel of your entire site:
 - **Navbar**: Set the layout (standard, centered, split), background style (solid, translucent blur, transparent), and CTA button appearance (filled, outline, text-only). The navbar settings apply to every page.
 - **Phone & call bar**: Add a clickable phone number to your navigation bar. When set, the phone number appears beside the CTA button on desktop and in the mobile navigation drawer. Enable the **Mobile call bar** toggle to pin a fixed "tap to call" button at the bottom of the screen on mobile devices, so visitors can reach you with one tap regardless of where they are on the page. The phone label defaults to "Call us" when left empty.
 - **Custom CSS**: Write your own CSS that gets injected into the site. Useful for fine-tuning or overriding defaults.
-- **Favicon**: Upload a favicon for your site. It is shown in browser tabs and bookmarks. If not set, the site falls back to your light logo, then your business profile picture.
+- **Brand (Merk)**: Upload your site logo and favicon in one place. The brand section accepts separate light and dark logo variants so your mark looks correct on both backgrounds. The favicon is shown in browser tabs and bookmarks. If no favicon is set, the site falls back to your light logo, then your business profile picture. The navigation editor references these uploads: when no logo is uploaded, it renders the brand name text instead.
 - **Head snippets**: Add analytics scripts (Plausible, Umami, Matomo) or font preconnects via the snippet picker.
 
 Changes in the Style tab are saved automatically on edit and apply to all pages.

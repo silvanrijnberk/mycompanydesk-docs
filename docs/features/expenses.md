@@ -1,6 +1,6 @@
 ---
 title: Expenses
-last_verified: 2026-05-09
+last_verified: 2026-05-29
 ---
 
 # Expenses
@@ -95,6 +95,12 @@ Categories with `auto_flag_investment = true` (typically equipment and other cap
 - Lines live in `expense_depreciation_lines` and feed your reports.
 
 Editing the category, date or amount on an existing expense re-triggers the recompute — old lines are deleted and a fresh schedule is written. Toggling an expense out of an investment-flagged category cleans up the depreciation lines too.
+
+## Warning threshold
+
+Set a monetary threshold to flag high-value expenses. Go to **Workspace > Financial > Expenses** and fill in the **Waarschuwingsdrempel** (warning threshold) amount.
+
+When an expense exceeds the threshold, a warning is shown on the detail page. Enable **Notitie verplicht boven drempel** to require a note on any expense above the threshold, preventing save until a note is added.
 
 ## Linking and filtering
 

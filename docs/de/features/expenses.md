@@ -87,6 +87,12 @@ Jede Ausgabe kann ihren eigenen USt.-Satz haben. Gängige Optionen:
 
 Der USt.-Betrag wird automatisch berechnet und in Ihre [USt.-Berichte](/de/features/vat) aufgenommen.
 
+## Warnschwelle
+
+Legen Sie einen Geldbetrag fest, um teure Ausgaben zu kennzeichnen. Gehen Sie zu **Arbeitsbereich > Finanzen > Ausgaben** und füllen Sie den **Waarschuwingsdrempel** (Warnschwelle) Betrag aus.
+
+Wenn eine Ausgabe den Schwellenwert überschreitet, wird eine Warnung auf der Detailseite angezeigt. Aktivieren Sie **Notitie verplicht boven drempel**, um eine Notiz bei jeder Ausgabe über dem Schwellenwert zu verlangen. Das Speichern ist erst möglich, nachdem eine Notiz hinzugefügt wurde.
+
 ## Ausgaben verknüpfen
 
 Verknüpfen Sie Ausgaben mit:

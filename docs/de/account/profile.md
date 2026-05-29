@@ -57,3 +57,30 @@ Sehen und verwalten Sie OAuth-Verbindungen:
 - **Microsoft** — Verbunden für Anmeldung und/oder Outlook-Versand
 
 Widerrufen Sie den Zugriff, um eine App von Ihrem Konto zu trennen.
+
+## Zeit und Reisen
+
+`/me/time-travel`
+
+Persönliche Standardwerte für die Zeiterfassungs- und Reisemodule. Die Seite hat zwei Tabs:
+
+- **Zeit** (`/me/time-travel/time`) — Persönliche Überschreibungen für Zeiterfassungs-Standardwerte.
+- **Reisen** (`/me/time-travel/travel`) — Heimatadresse, NS-Business OV-Chip, Standard-Auto, Kilometersatz.
+
+### Zeitüberschreibungen
+
+Im Zeit-Tab können Sie arbeitsbereichsweite Zeiterfassungs-Standardwerte für Ihre eigenen Einträge überschreiben. Jedes Feld hat eine Löschen-Schaltfläche zum Zurückkehren zum Arbeitsbereich-Wert. Alle Änderungen werden automatisch gespeichert.
+
+| Einstellung | Was sie steuert |
+|---|---|
+| **Stundensatz** | Ihr Standardsatz für neue Zeiteinträge |
+| **Rundungsintervall** | Dauer auf 15-, 30- oder 60-Minuten-Schritte runden |
+| **Projekt erforderlich** | Speichern ohne Projekt blockieren |
+| **Beschreibung erforderlich** | Speichern ohne Beschreibung blockieren |
+| **Standardbeschreibung** | Beschreibungsfeld bei neuen Einträgen vorausfüllen |
+| **Rechnungsbeschreibungsformat** | Vorlage für Zeiteintragspositionen auf Rechnungen |
+| **Servicegebühr** | Feste Gebührenposition (Beschreibung, Betrag, USt.-Satz), automatisch zu Rechnungen mit Zeiteinträgen hinzugefügt |
+| **Tagesstart / -ende** | Arbeitstaggrenzen in der Zeitleistenansicht |
+| **Pause** | Pausenanzeige ein/aus plus Startzeit und Dauer |
+
+Wenn ein persönlicher Wert gesetzt ist, hat er Vorrang vor dem Arbeitsbereich-Standard. Siehe [Zeiterfassung > Persönliche Überschreibungen](/de/features/time-registration#personliche-uberschreibungen) für die vollständigen Kaskaden-Regeln.

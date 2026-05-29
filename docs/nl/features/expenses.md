@@ -87,6 +87,12 @@ Elke uitgave kan een eigen BTW-tarief hebben. Veelgebruikte opties:
 
 Het BTW-bedrag wordt automatisch berekend en opgenomen in je [BTW-rapportages](/nl/features/vat).
 
+## Waarschuwingsdrempel
+
+Stel een geldbedrag in om dure uitgaven te signaleren. Ga naar **Werkruimte > Geldzaken > Uitgaven** en vul het **Waarschuwingsdrempel**-bedrag in.
+
+Wanneer een uitgave het drempelbedrag overschrijdt, wordt een waarschuwing getoond op de detailpagina. Schakel **Notitie verplicht boven drempel** in om een notitie te vereisen bij elke uitgave boven de drempel, waardoor opslaan pas mogelijk is nadat een notitie is toegevoegd.
+
 ## Uitgaven koppelen
 
 Koppel uitgaven aan:

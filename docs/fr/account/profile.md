@@ -57,3 +57,30 @@ Consultez et gerez les connexions OAuth :
 - **Microsoft** -- Connecte pour la connexion et/ou l'envoi via Outlook
 
 Revoquez l'acces pour deconnecter une application de votre compte.
+
+## Temps et deplacements
+
+`/me/time-travel`
+
+Valeurs par defaut personnelles pour les modules d'enregistrement du temps et de deplacements. La page a deux onglets :
+
+- **Temps** (`/me/time-travel/time`) -- Remplacements personnels pour les valeurs par defaut d'enregistrement du temps.
+- **Deplacements** (`/me/time-travel/travel`) -- Adresse du domicile, carte OV NS-Business, voiture par defaut, tarif kilometrique.
+
+### Remplacements de temps
+
+L'onglet Temps vous permet de remplacer les valeurs par defaut d'enregistrement du temps de l'espace de travail pour vos propres entrees. Chaque champ dispose d'un bouton d'effacement pour revenir a la valeur de l'espace de travail. Toutes les modifications sont enregistrees automatiquement.
+
+| Parametre | Ce qu'il controle |
+|---|---|
+| **Taux horaire** | Votre taux par defaut pour les nouvelles entrees de temps |
+| **Intervalle d'arrondi** | Arrondir la duree par pas de 15, 30 ou 60 minutes |
+| **Projet obligatoire** | Bloquer l'enregistrement sans projet |
+| **Description obligatoire** | Bloquer l'enregistrement sans description |
+| **Description par defaut** | Pre-remplir le champ de description pour les nouvelles entrees |
+| **Format de description facture** | Modele pour formater les lignes d'entrees de temps sur les factures |
+| **Frais de service** | Ligne de frais fixes (description, montant, taux TVA) ajoutee automatiquement aux factures avec entrees de temps |
+| **Debut / fin de journee** | Limites de la journee de travail dans la vue chronologique |
+| **Pause** | Activer/desactiver l'affichage de la pause plus heure de debut et duree |
+
+Lorsqu'une valeur personnelle est definie, elle a priorite sur la valeur par defaut de l'espace de travail. Voir [Enregistrement du temps > Remplacements personnels](/fr/features/time-registration#remplacements-personnels) pour les regles de cascade completes.
