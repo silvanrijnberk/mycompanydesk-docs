@@ -110,7 +110,7 @@ When the wizard is run in the 2-step (plan-gated) flow, the Domain step is omitt
 
 **Own domain:** the user types a domain they already own. A live validation regex checks the format as they type (`[a-z0-9][a-z0-9-]*(\.[a-z0-9]([a-z0-9-]*[a-z0-9])?)+`). On Finish the wizard adds the domain to the workspace's domain list (no-op if it was already added) and auto-enables the inbox: `info@<domain>` as the default mailbox plus `support@`, `sales@`, and `noreply@` aliases. The 409-already-exists path from `apply.service` is handled gracefully.
 
-If the domain isn't yet pointed at MCD's nameservers, Finish redirects to `/workspace/organization/company/address` so the user immediately sees the DNS instructions and a **Verify** button. Otherwise it goes to the dashboard.
+If the domain isn't yet pointed at MCD's nameservers, Finish redirects to `/website?tab=domein` so the user immediately sees the DNS instructions and a **Verify** button. Otherwise it goes to the dashboard.
 
 **Register a new domain:** embeds the live `DomainPurchaseCard` + `DomainClaimModal` from the settings surface. The user can search for a domain, check availability and pricing, and either buy it through OpenProvider or claim it free as a Founding Member. On a successful claim or purchase, the domain is already attached to the workspace server-side via the `/api/domain-purchase` flow, so the wizard records the answer as `mode='own'` with the registered name and `registered: true`; `apply.service` treats it as a no-op re-add. A green success banner shows the registered domain name and lets the user continue.
 
@@ -203,7 +203,7 @@ Two buttons appear below the summary:
 - **Go to dashboard** — takes the user to `/dashboard` immediately, skipping the auto-redirect timer.
 - **Open the website builder** — visible only when a site was seeded. Takes the user straight to `/website` so they can start editing their homepage.
 
-Then the user lands on `/dashboard` (default path), `/website` (when they click the website builder CTA), or `/workspace/organization/company/address` (when an own-domain is pending DNS verification).
+Then the user lands on `/dashboard` (default path), `/website` (when they click the website builder CTA), or `/website?tab=domein` (when an own-domain is pending DNS verification).
 
 ## Re-running the wizard
 
@@ -215,9 +215,9 @@ To revisit individual settings without the wizard, go to:
 
 - `/workspace/organization/company/about` — name, registration, address, VAT.
 - `/workspace/organization/company/look` — brand colour, logo.
-- `/workspace/organization/company/website` — tagline, about text, services.
-- `/workspace/organization/company/address` — custom domain + DNS.
-- `/workspace/email` — inbox, mailboxes, templates.
+- `/website` — tagline, about text, services (public business page).
+- `/website?tab=domein` — custom domain + DNS.
+- `/inbox` — inbox, mailboxes, templates.
 
 See [Settings overview](/settings/) for the full map.
 

@@ -120,7 +120,7 @@ Personal defaults that drive the time-registration and travel modules. The page 
 - **Time** (`/me/time-travel/time`) — Default project, default activity, default rate, rounding rules.
 - **Travel** (`/me/time-travel/travel`) — Home address, NS-Business OV-chip, default car, mileage rate.
 
-Workspace-level travel settings (per-company defaults, OV cards owned by the company) live under `/workspace/financial/travel`.
+Workspace-level travel settings (per-company defaults, OV cards owned by the company) live under `/workspace/financial/time-travel/travel`.
 
 ## My data
 

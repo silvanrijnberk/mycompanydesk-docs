@@ -1,6 +1,6 @@
 ---
 title: Settings overview
-last_verified: 2026-05-09
+last_verified: 2026-06-04
 ---
 
 # Settings overview
@@ -28,32 +28,27 @@ The desktop sidebar groups workspace settings into five sections:
 
 | Page | Path | Covers |
 |---|---|---|
-| Company | `/workspace/organization/company` | Umbrella with four leaves below |
+| Company | `/workspace/organization/company` | Umbrella with the two leaves below |
 | About your business | `/workspace/organization/company/about` | Name, KvK / registry, VAT, address |
-| Look & feel | `/workspace/organization/company/look` | Logo, brand colour, second accent |
-| Your website | `/workspace/organization/company/website` | Public business page tagline, about, services |
-| Your own .com address | `/workspace/organization/company/address` | Custom domain + DNS verification |
+| Look & feel | `/workspace/organization/company/look` | Logo, brand colour, second accent, PDF document styling |
 
-The legacy `/workspace/organization/branding`, `/profile`, `/domains`, `/website`, `/services` paths are still present but are being absorbed into the four leaves above.
+Your public business page and custom domain moved to the top-level **Website** surface (`/website`, with the Pagina's and Domein & SEO tabs) — they are no longer under the company umbrella. The legacy `/workspace/organization/{branding,profile,services,website,domains}`, `/workspace/organization/company/{website,address}`, and `/company/*` paths now redirect to their new homes.
 
 ### Email
 
-Single-tree umbrella at `/workspace/email`. The wizard, send-from identity picker, send-only aliases, CC/BCC/attachments, delivery tracking, activity log, and templates all live under here.
+Email is **not** in the workspace settings tree — it lives under the top-level **Inbox** surface (`/inbox`). The settings sit behind the Inbox tabs, with focused deep editors under `/inbox/settings/*`.
 
 | Page | Path | Covers |
 |---|---|---|
-| Email overview | `/workspace/email` | Inbox state machine — live, DNS pending, MX conflict, off, empty |
-| Mailboxes | `/workspace/email/mailboxes` | Shared `info@`, aliases, personal mailboxes |
-| Address & domain | `/workspace/email/address` | Sending address, MX status, DKIM |
-| Sending | `/workspace/email/sending` | Send-from identity picker, default tone, per-doc overrides |
-| Signature | `/workspace/email/signature` | Email footer / signature block |
-| Templates | `/workspace/email/templates` | Per-document-type subject + body |
-| Messages | `/workspace/email/messages` | Outbound history |
-| Activity | `/workspace/email/activity` | Open / click / bounce events |
-| Delivery | `/workspace/email/delivery` | Delivery diagnostics |
-| Log | `/workspace/email/log` | Raw event log |
+| Inbox settings | `/inbox?tab=instellingen` | Mailboxes, aliases, delivery method, activity log, signature — all in one tab |
+| Templates | `/inbox?tab=sjablonen` | Document email templates hub |
+| Mailboxes & address | `/inbox/settings/address` | Shared `info@`, aliases, sending address, MX status, DKIM |
+| Sending | `/inbox/settings/sending` | Delivery method (Resend / Gmail / Outlook) + OAuth connect |
+| Signature | `/inbox/settings/signature` | Email footer / signature toggles with live preview |
+| Templates | `/inbox/settings/messages` | Per-document-type subject + body, include-buttons |
+| Activity log | `/inbox/settings/log` | Delivery / open / bounce events |
 
-`/workspace/communication/emails` redirects to `/workspace/email`. The legacy SMTP path still works but the inbox / Cloudflare Email Sending product is the primary surface.
+The legacy `/workspace/email/*` and `/workspace/communication/*` paths redirect here. The inbox / Cloudflare Email Sending product is the primary surface.
 
 ### Financial
 
@@ -72,8 +67,9 @@ Single-tree umbrella at `/workspace/email`. The wizard, send-from identity picke
 
 | Page | Path | Covers |
 |---|---|---|
-| Features | `/workspace/features` | Module on/off — quotes, contracts, objects, projects, recurring |
-| Modules — appearance | `/workspace/modules/appearance` | App theme overrides applied workspace-wide |
+| Features | `/workspace/features` | Module on/off — quotes, contracts, objects, projects, recurring — plus AI processing mode + text-check language |
+
+App theme and appearance are a **personal** preference, not a workspace one — they live at `/me/preferences`. The old `/workspace/modules/*` paths redirect to `/workspace/features`.
 
 ### Account
 
@@ -106,7 +102,7 @@ The `/me` sidebar groups pages into three sections:
 | Time & Travel defaults | `/me/time-travel` | Personal defaults overlaid on the workspace defaults |
 | Connected | `/me/connected` | Google / Microsoft sign-in, Gmail / Outlook send, OAuth scopes per provider |
 
-`/me/time-registration` and `/me/travel` exist as direct deep links to the two halves of `/me/time-travel`.
+The old `/me/time-registration` and `/me/travel` paths redirect to the two halves of `/me/time-travel`.
 
 ### Security
 
@@ -125,11 +121,11 @@ Quick reference for users following an old link or instruction.
 | Company name & registration | `/workspace/organization/company/about` |
 | VAT number | `/workspace/organization/company/about` |
 | Logo & brand colour | `/workspace/organization/company/look` |
-| Website / business page copy | `/workspace/organization/company/website` |
-| Custom domain | `/workspace/organization/company/address` |
-| Email signature | `/workspace/email/signature` |
-| Email templates | `/workspace/email/templates` |
-| Mailboxes & aliases | `/workspace/email/mailboxes` |
+| Website / business page copy | `/website` |
+| Custom domain | `/website?tab=domein` |
+| Email signature | `/inbox/settings/signature` |
+| Email templates | `/inbox/settings/messages` |
+| Mailboxes & aliases | `/inbox/settings/address` |
 | Invoice numbering | `/workspace/financial/money/invoices` |
 | VAT regime / KOR / ICP / OSS | `/workspace/financial/money/tax` |
 | Payment instructions | `/workspace/financial/money/payments` |
@@ -162,7 +158,7 @@ Cmd-K (Ctrl-K on Windows / Linux) opens a global search. Results from the settin
 - [Setup wizard](/features/setup-wizard) — fills most workspace settings on first run, can be re-run.
 - [Set Up Your Company](/getting-started/company-setup) — first-time walk-through.
 - [Company settings](/settings/company) — deep dive on the Organization > Company tree.
-- [Email integration](/settings/email) — deep dive on `/workspace/email`.
+- [Email integration](/settings/email) — deep dive on the Inbox (`/inbox`) email settings.
 - [Team management](/settings/team) — deep dive on `/workspace/account/team`.
 - [Bank feed](/features/bank) — deep dive on `/workspace/financial/bank-accounts`.
 - [Billing & plans](/settings/billing) — deep dive on `/workspace/account/billing`.
