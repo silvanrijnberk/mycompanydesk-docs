@@ -9,7 +9,7 @@ Your business has its own email address. Customers write to it, you reply, and w
 
 ## Where to find it
 
-Open the inbox from the main navigation, go to the **Instellingen** (Settings) tab. The legacy `/workspace/communication/emails` URL redirects here, as do `/workspace/email/activity`, `/workspace/email/delivery`, `/workspace/email/mailboxes`, and `/workspace/email/templates`.
+Open the inbox from the main navigation, go to the **Instellingen** (Settings) tab. The whole legacy `/workspace/email/*` and `/workspace/communication/*` tree redirects into the inbox email settings — e.g. `/workspace/email/templates` now lands on `/inbox/settings/messages` and `/workspace/email/signature` on `/inbox/settings/signature`.
 
 The umbrella page renders different content depending on where you are in setup. The state machine is:
 

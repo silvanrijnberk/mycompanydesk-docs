@@ -69,7 +69,7 @@ For nameserver-mode custom domains, the wizard runs `quickEnableInbox` after ver
 
 ### Custom domains
 
-UI lives at `Company › Your own .com address` -- the leaf page is `/workspace/organization/company/address`, mounted from `apps/web/pages/workspace/organization/company/address.vue` and rendering the `SettingsDomains` component. The two older paths `/workspace/organization/domains` and `/workspace/communication/domains` redirect here.
+UI lives at `Website › Domein & SEO` -- the page is `/website?tab=domein`, rendering the `SettingsDomains` component. The older paths `/workspace/organization/company/address`, `/workspace/organization/domains`, and `/workspace/communication/domains` all redirect here.
 
 The page splits into two sections:
 

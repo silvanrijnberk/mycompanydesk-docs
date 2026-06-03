@@ -47,7 +47,7 @@ The page is scaffolding around the existing `CompanyBranding` component (a full 
 
 ### Your website
 
-Path: `/workspace/organization/company/website`
+Path: `/website` (top-level surface — moved out of the company umbrella; the old `/workspace/organization/company/website` redirects here)
 
 A simple public business page customers can find online — contact info, what you do, and links to message you.
 
@@ -59,7 +59,7 @@ When a user clicks through the wizard's "set up your website" tile they land her
 
 ### Your own .com address
 
-Path: `/workspace/organization/company/address`
+Path: `/website?tab=domein` (the Domein & SEO tab of the Website surface; the old `/workspace/organization/company/address` redirects here)
 
 Hook up a domain you already own (or buy a new one) for your website and email.
 
