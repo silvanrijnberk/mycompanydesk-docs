@@ -1,5 +1,6 @@
 ---
 title: Klanten
+last_verified: 2026-06-05
 ---
 
 # Klanten
@@ -36,6 +37,15 @@ Bij het aanmaken van een Nederlandse klant kan MyCompanyDesk bedrijfsgegevens au
 Bij een geslaagde opzoeking verschijnt een geverifieerd-badge naast het KVK-nummerveld. Als het nummer niet wordt gevonden, krijg je een foutmelding te zien. Beide opzoekingen zijn alleen beschikbaar voor Nederlandse klanten.
 
 Elke werkruimte heeft 100 gratis KVK-zoekopdrachten per dag (resultaten uit de cache tellen niet mee). Bij 20 of minder resterende zoekopdrachten toont de hint bij het KVK-veld hoeveel je er nog over hebt. Is het daglimiet bereikt, dan zie je een foutmelding en kun je de gegevens handmatig invullen of het morgen opnieuw proberen.
+
+### BTW-nummervalidatie
+
+Wanneer je een BTW-nummer invoert in het klantformulier, valideert MyCompanyDesk het in twee stappen:
+
+- **Formaatcontrole** (automatisch): Bij het verlaten van het BTW-nummerveld controleert het formulier of het nummer overeenkomt met het verwachte formaat voor het land (bijv. `NL123456789B01` voor Nederland). Bij een ongeldig formaat verschijnt een zachte inline-waarschuwing. Dit voorkomt niet dat je opslaat — het is alleen informatief.
+- **VIES-verificatie** (handmatig): Voor correct opgemaakte EU-BTW-nummers verschijnt een **Verifieer via VIES**-knop. Klik erop om een live controle uit te voeren tegen het EU-VIES-register. Het resultaat toont of het nummer geregistreerd en actief is, of niet gevonden. Dit is ook niet-blokkerend — je kunt de klant opslaan ongeacht het VIES-resultaat.
+
+Het valideren van BTW-nummers helpt voorkomen dat foutieve of inactieve nummers in verlegde facturen terechtkomen.
 
 ## Klantdetailpagina
 

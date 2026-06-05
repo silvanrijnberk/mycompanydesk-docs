@@ -1,11 +1,11 @@
 ---
 title: Set Up Your Company
-last_verified: 2026-05-09
+last_verified: 2026-06-05
 ---
 
 # Set Up Your Company
 
-The first time you sign in, MyCompanyDesk runs you through a **setup wizard** at `/setup`. It is five short steps, asks you the minimum it needs, and uses the answers to seed the rest of your workspace — branding, default categories, VAT regime, a starter website. You can always re-run it later to tweak.
+The first time you sign in, MyCompanyDesk runs you through a **setup wizard** at `/setup`. It is six short steps, asks you the minimum it needs, and uses the answers to seed the rest of your workspace — branding, default categories, VAT regime, a starter website. You can always re-run it later to tweak.
 
 ## Where to find it
 
@@ -67,7 +67,16 @@ Type it in (`example.com`). The wizard records the choice; on **Finish**, MyComp
 
 Optional. If enabled, also creates a personal `firstname@<your-domain>` address routed to your inbox. Default local-part is your first name; edit if you want.
 
-## Step 4 — Magic
+## Step 4 — Brand
+
+An optional step where you can upload your logo and preview your AI-generated brand identity. This step is fully skippable — if you skip it, the wizard uses an auto-generated initials logo based on your business name.
+
+- **Logo upload**: Upload your company logo (PNG, JPG, SVG). The wizard extracts the dominant colour from the logo and uses it as your brand colour suggestion in the next step.
+- **Brand preview**: Shows the AI-suggested brand colour and tagline (generated from your business description and registry data in earlier steps). You can review how these will look before continuing.
+
+If you already uploaded a logo or want to handle branding later, click **Skip** to move on. You can always upload or change your logo in Company Settings after the wizard.
+
+## Step 5 — Magic
 
 The wizard generates branding suggestions in the background while you watch:
 
@@ -80,7 +89,7 @@ The wizard generates branding suggestions in the background while you watch:
 
 Every suggestion is editable. If Gemini is unreachable, a localised fallback ships you a sensible starter set so you can keep going.
 
-## Step 5 — Review
+## Step 6 — Review
 
 A diff-and-approve list of everything the wizard will change on **Finish**, split into:
 

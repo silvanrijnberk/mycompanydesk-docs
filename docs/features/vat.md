@@ -1,6 +1,6 @@
 ---
 title: VAT
-last_verified: 2026-05-09
+last_verified: 2026-06-05
 ---
 
 # VAT
@@ -18,7 +18,7 @@ A page-wide period selector (Q1, Q2, Q3, Q4, full year) sits next to the tab bar
 The hero summarises your year-to-date position:
 
 - **Balance** — Net VAT (collected minus paid) with a "te betalen" or "terug te ontvangen" label.
-- **Deadline ring** — A circular progress ring counting down to the next filing deadline. Red when 3 days or fewer remain, amber up to 14 days, green otherwise.
+- **Deadline ring** — A circular progress ring counting down to the next filing deadline. The deadline is computed automatically: for quarterly filers it is the last day of the month after the quarter ends (Q1 → 30 April, Q2 → 31 July, Q3 → 31 October, Q4 → 31 January), and for monthly filers it is the last day of the following month. Red when 3 days or fewer remain, amber up to 14 days, green otherwise.
 - **BTW-spaarpotje** — A suggested reserve next to the balance. The amount is the period balance times 1.10, so you have a small buffer on top of what you owe. When the balance is negative (refund expected) the tile flips to a green refund tile showing the amount due back.
 
 Two CTAs sit under the balance:
@@ -48,6 +48,16 @@ Four cards (Q1, Q2, Q3, Q4) summarising revenue, VAT collected, VAT paid and the
 - **Upcoming** — Future quarter.
 
 Click a quarter card to switch the page-wide period selector to that quarter.
+
+### Filing deadline warnings
+
+When you edit an invoice or expense that falls in a past (unlocked) period, a banner appears at the top of the form showing the filing deadline and its severity:
+
+- **Open** — The period is still running (today is before the period end). No banner.
+- **Warning** — The period has ended but the filing deadline has not passed yet. A yellow banner reminds you to file.
+- **Overdue** — The filing deadline has passed and the period is still unlocked. A red banner urges you to file immediately.
+
+Locked periods bypass this logic — they always show the "Filed" state. The deadlines follow the same computation as the hero deadline ring (last day of the month following the period end).
 
 ### Summary metrics and quarterly table
 
@@ -96,6 +106,14 @@ A toggle plus a YTD revenue tracker against the €20,000 threshold. The card sh
 - A progress bar with a colour that escalates as you approach the threshold.
 - A status hint explaining what enrolment means for your invoicing.
 - An enrolment toggle (calls the `kor-settings` endpoint).
+
+When KOR is enabled, all invoices you create automatically have their VAT set to 0% — the VAT breakdown is suppressed on the PDF and replaced with the statutory KOR exemption statement. This ensures your invoices comply with the Belastingdienst requirement that KOR participants do not charge VAT. Reverse charge takes precedence over KOR when both apply.
+
+### VAT-exempt supplies (vrijgesteld)
+
+Some supplies are exempt from VAT by law (e.g. medical services, education, certain financial services). VAT-exempt is distinct from 0%-rated: exempt supplies have no output VAT and are excluded from the aangifte rubrieken entirely, whereas 0%-rated supplies (like intra-EU or export) still appear in the rubrieken and preserve your input-VAT deduction rights.
+
+When creating an invoice, toggle **Vrijgesteld van btw** to mark it as VAT-exempt. This forces all lines to 0% and prints a VAT-exemption statement on the PDF instead of the normal VAT breakdown. Exempt invoices are excluded from rubrieken 1a through 1e in the aangifte sheet.
 
 ### KIA (kleinschaligheidsinvesteringsaftrek)
 

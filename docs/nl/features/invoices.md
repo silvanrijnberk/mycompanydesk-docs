@@ -1,5 +1,6 @@
 ---
 title: Facturen
+last_verified: 2026-06-05
 ---
 
 # Facturen
@@ -137,12 +138,39 @@ Om een betaling terug te storten:
 4. Voeg een optionele reden toe
 5. Bevestig de terugbetaling
 
+## Creditnota's
+
+Een creditnota (creditfactuur) is een officieel document dat een eerder verzonden factuur geheel of gedeeltelijk corrigeert. Het is wettelijk vereist wanneer je een bedrag moet corrigeren, een terugbetaling verleent, of een reeds afgeronde factuur annuleert.
+
+### Een creditnota aanmaken
+
+1. Open de detailpagina van de oorspronkelijke factuur
+2. Klik op **Maak creditfactuur**
+3. MyCompanyDesk genereert de creditnota automatisch: de klantgegevens en regelitems worden overgenomen van de bronfactuur, alle bedragen worden omgekeerd, en er wordt terugverwezen naar het oorspronkelijke factuurnummer
+4. De creditnota krijgt een eigen volgnummer en wordt direct afgerond
+
+De creditnota-PDF toont "Creditfactuur" als documenttitel en bevat een verwijzing naar de oorspronkelijke factuur.
+
+### Regels
+
+- Alleen afgeronde facturen kunnen gecrediteerd worden — concepten, offertes en bestaande creditnota's niet
+- De bedragen op een creditnota zijn negatief opgeslagen, waardoor ze automatisch je omzet en BTW-totalen verlagen in rapportages en de aangifte
+- Verlegde-BTW- en vrijgesteld-vlaggen worden overgenomen van de bronfactuur
+
+### Impact op BTW
+
+Creditnota's worden meegenomen in de BTW-aangifte naast reguliere facturen. De negatieve bedragen verlagen je afgedragen BTW (rubriek 5a) en de omzet in de relevante rubrieken. ICP-opgaaf, OSS en KOR-omzetberekeningen houden ook rekening met creditnota's.
+
+## BTW-verlegnummer vereist
+
+Wanneer je een factuur aanmaakt met verlegde BTW, vereist MyCompanyDesk dat de klant een geldig BTW-nummer heeft. Als het BTW-nummerveld van de klant leeg is, toont het formulier een validatiefout en voorkomt opslaan. Dit waarborgt dat je verlegde facturen wettelijk correct zijn — EU-regelgeving vereist het BTW-identificatienummer van de koper op verlegde documenten.
+
 ## Documenttypen
 
 De factuurmodule ondersteunt meerdere documenttypen:
 
 - **Factuur** — Standaard factuurtype
-- **Creditnota** — Correctie voor terugbetalingen of aanpassingen
+- **Creditnota** — Correctie van een eerder verzonden factuur (zie [Creditnota's](#creditnota-s) hierboven)
 - **Herinnering** — Betalingsherinnering voor achterstallige facturen
 
 ## Filteren en zoeken
