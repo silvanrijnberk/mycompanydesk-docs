@@ -1,5 +1,6 @@
 ---
 title: Gestion de la TVA
+last_verified: 2026-06-05
 ---
 
 # Gestion de la TVA
@@ -52,11 +53,27 @@ Ne deverrouillez les periodes que lorsque vous devez deposer une correction. Un 
 
 ## Suivi des echeances
 
-MyCompanyDesk suit les echeances de declaration de TVA selon votre pays :
+MyCompanyDesk suit les echeances de declaration de TVA selon votre pays. L'echeance est calculee automatiquement : pour les declarants trimestriels, c'est le dernier jour du mois suivant la fin du trimestre (T1 → 30 avril, T2 → 31 juillet, T3 → 31 octobre, T4 → 31 janvier), et pour les declarants mensuels, le dernier jour du mois suivant.
 
 - Indicateurs visuels pour les echeances a venir
 - Avertissements lorsqu'une echeance approche
 - Statut clair indiquant quelles periodes necessitent votre attention
+
+### Alertes d'echeance dans les formulaires
+
+Lorsque vous modifiez une facture ou une depense appartenant a une periode passee (non verrouillee), une banniere en haut du formulaire affiche l'echeance de declaration et sa gravite :
+
+- **Ouvert** -- La periode est encore en cours. Pas de banniere.
+- **Avertissement** -- La periode est terminee mais l'echeance n'est pas encore depassee. Une banniere jaune vous rappelle de declarer.
+- **En retard** -- L'echeance est depassee et la periode n'est toujours pas verrouillee. Une banniere rouge vous presse de declarer immediatement.
+
+### Comportement KOR sur les factures
+
+Lorsque le KOR (regime de la franchise en base) est active, toutes les factures sont automatiquement a 0% de TVA. La ventilation de la TVA est supprimee sur le PDF et remplacee par la mention legale d'exoneration KOR.
+
+### Livraisons exonerees de TVA (vrijgesteld)
+
+Certaines prestations sont exonerees de TVA par la loi (par ex. services medicaux, education, certains services financiers). L'exoneration differe du taux de 0% : les livraisons exonerees n'ont pas de TVA en sortie et sont entierement exclues des rubriques de la declaration. Lors de la creation d'une facture, vous pouvez activer **Exonere de TVA** pour mettre toutes les lignes a 0% avec une mention d'exoneration sur le PDF.
 
 ## Indicateur de pays
 

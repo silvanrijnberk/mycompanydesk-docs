@@ -1,5 +1,6 @@
 ---
 title: Invoices
+last_verified: 2026-06-05
 ---
 
 # Invoices
@@ -137,12 +138,39 @@ To refund a payment:
 4. Add an optional reason
 5. Confirm the refund
 
+## Credit notes
+
+A credit note (creditfactuur) is a formal document that reverses all or part of a previously issued invoice. It is legally required when you need to correct an amount, grant a refund, or cancel an invoice that was already finalized.
+
+### Creating a credit note
+
+1. Open the original invoice detail page
+2. Click **Create credit note** (Maak creditfactuur)
+3. MyCompanyDesk generates the credit note automatically: it copies the customer and line items from the source invoice, negates all amounts, and links back to the original invoice number
+4. The credit note receives its own sequential number and is immediately finalized
+
+The credit note PDF displays "Creditfactuur" as the document title and includes a reference to the original invoice.
+
+### Rules
+
+- Only finalized invoices can be credited — drafts, quotes, and existing credit notes cannot
+- A credit note's line amounts are stored as negative values, so they automatically reduce your revenue and VAT totals in reports and the aangifte
+- Reverse-charge and VAT-exempt flags carry over from the source invoice
+
+### Impact on VAT
+
+Credit notes are included in the VAT filing alongside regular invoices. The negative amounts reduce your collected VAT (rubriek 5a) and turnover in the relevant rubrieken. ICP-opgaaf, OSS, and KOR revenue calculations also account for credit notes.
+
+## Reverse-charge VAT requirement
+
+When you create an invoice with reverse charge (BTW verlegd) enabled, MyCompanyDesk requires the customer to have a valid VAT number on file. If the customer's VAT number field is empty, the form shows a validation error and prevents saving. This ensures your reverse-charge invoices are legally compliant — EU regulations require the buyer's VAT identification number on reverse-charge documents.
+
 ## Document types
 
 The invoice module supports multiple document types:
 
 - **Invoice** — Standard billing document
-- **Credit note** — Adjustment for refunds or corrections
+- **Credit note** — Reversal of a previously issued invoice (see [Credit notes](#credit-notes) above)
 - **Reminder** — Payment reminder for overdue invoices
 
 ## Filtering and search

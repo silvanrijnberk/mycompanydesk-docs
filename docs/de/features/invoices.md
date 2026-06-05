@@ -1,5 +1,6 @@
 ---
 title: Rechnungen
+last_verified: 2026-06-05
 ---
 
 # Rechnungen
@@ -137,12 +138,39 @@ So erstatten Sie eine Zahlung:
 4. Geben Sie optional einen Grund an
 5. Bestätigen Sie die Rückerstattung
 
+## Gutschriften
+
+Eine Gutschrift (Creditfactuur) ist ein offizielles Dokument, das eine zuvor ausgestellte Rechnung ganz oder teilweise storniert. Sie ist gesetzlich erforderlich, wenn Sie einen Betrag korrigieren, eine Rückerstattung gewähren oder eine bereits finalisierte Rechnung annullieren müssen.
+
+### Gutschrift erstellen
+
+1. Öffnen Sie die Detailseite der ursprünglichen Rechnung
+2. Klicken Sie auf **Gutschrift erstellen** (Maak creditfactuur)
+3. MyCompanyDesk erstellt die Gutschrift automatisch: Kundendaten und Positionen werden von der Originalrechnung übernommen, alle Beträge negiert und mit der ursprünglichen Rechnungsnummer verknüpft
+4. Die Gutschrift erhält eine eigene fortlaufende Nummer und wird sofort finalisiert
+
+Das Gutschrift-PDF zeigt "Creditfactuur" als Dokumenttitel und enthält einen Verweis auf die Originalrechnung.
+
+### Regeln
+
+- Nur finalisierte Rechnungen können gutgeschrieben werden — Entwürfe, Angebote und bestehende Gutschriften nicht
+- Die Beträge einer Gutschrift sind als negative Werte gespeichert, sodass sie Ihren Umsatz und USt.-Summen in Berichten und der Steuererklärung automatisch reduzieren
+- Reverse-Charge- und USt.-Befreiungs-Kennzeichen werden von der Originalrechnung übernommen
+
+### Auswirkung auf die USt.
+
+Gutschriften werden zusammen mit regulären Rechnungen in die USt.-Erklärung einbezogen. Die negativen Beträge reduzieren Ihre erhobene USt. und den Umsatz in den relevanten Rubriken.
+
+## Reverse-Charge erfordert USt.-Nummer des Käufers
+
+Wenn Sie eine Rechnung mit Reverse-Charge erstellen, verlangt MyCompanyDesk, dass der Kunde eine gültige USt.-Nummer hinterlegt hat. Ist das USt.-Nummernfeld des Kunden leer, zeigt das Formular einen Validierungsfehler und verhindert das Speichern. EU-Vorschriften verlangen die USt.-Identifikationsnummer des Käufers auf Reverse-Charge-Dokumenten.
+
 ## Dokumenttypen
 
 Das Rechnungsmodul unterstützt mehrere Dokumenttypen:
 
 - **Rechnung** — Standard-Abrechnungsdokument
-- **Gutschrift** — Anpassung für Rückerstattungen oder Korrekturen
+- **Gutschrift** — Stornierung einer zuvor ausgestellten Rechnung (siehe [Gutschriften](#gutschriften) oben)
 - **Erinnerung** — Zahlungserinnerung für überfällige Rechnungen
 
 ## Filtern und Suchen

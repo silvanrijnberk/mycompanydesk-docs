@@ -1,5 +1,6 @@
 ---
 title: Site Builder
+last_verified: 2026-06-05
 ---
 
 # Site Builder
@@ -40,7 +41,7 @@ The site builder has five tabs (six when Style is expanded):
 
 - **Editor**: Compose pages by adding and arranging sections. Click any section to inspect its content, layout, style, or animation settings. Drag sections to reorder, duplicate, or delete them.
 - **Pages**: Manage your pages: create new ones from templates, set paths and visibility, and see which pages are live, draft, or scheduled. Click a page to open it in the editor. The locked home page cannot be deleted. Each page shows a Live/Concept badge alongside quick-toggle buttons: click the globe icon to set a draft page live, or use the eye-off icon to hide a live page back to concept.
-- **Style**: Customize your site-wide design tokens. Apply a one-click preset (Editorial), then fine-tune colors (brand, accent, paper, ink), fonts (heading, body, mono from the font library), navbar (layout, background, CTA style), scale (radius, density, max width, section spacing), motion preferences, button styles, and custom CSS. You can also add head snippets for analytics (Plausible, Umami, Matomo) or font preconnects. Click the Style header to open or close the tab strip.
+- **Style**: Customize your site-wide design tokens. Apply a one-click preset (Editorial), then fine-tune colors (brand, accent, paper, ink), fonts (heading, body, mono from the font library), navbar (layout, background, CTA style), scale (radius, density, max width, section spacing), motion preferences, button styles, and custom CSS. You can also add head snippets for analytics (Plausible, Umami, Matomo) or font preconnects. Click the Style header to open or close the tab strip. The Kleuren (Colors) and Knoppen (Buttons) tabs show **live preview samples** that update in real time as you adjust tokens, so you can see how your changes look before publishing. The navbar tab also includes a **live mini-preview** of the navigation bar that reflects your chosen layout variant, background style, and CTA appearance as you change them.
 - **Domain & SEO**: Configure your custom domain and SEO settings. The content here is scoped to the domain selected in the topbar domain switcher. When the default site (listed as the workspace name) is selected, no domain-specific panel appears. See [Domains, Website and Inbox](/features/domains-website-inbox) for the full domain management workflow.
 - **Integrations**: Connect third-party services to your website.
 
@@ -269,7 +270,7 @@ In the **Style** tab, you control the look and feel of your entire site:
 - **Typography**: Choose heading, body, and mono fonts from the built-in font library (Geist, Inter, DM Sans, DM Serif Display, Fraunces, Instrument Serif, Geist Mono).
 - **Scale**: Set border radius, content density (compact, airy, generous), maximum content width, and vertical section spacing.
 - **Motion**: Enable reduced motion or choose a motion style (Off, Subtle fade, Slide up).
-- **Buttons**: Customize button border radius, padding, and hover effects.
+- **Buttons**: Customize button border radius, padding, and hover effects. Six button styles are available: **Solid** (filled background), **Ghost** (transparent with border), **Pill** (fully rounded), **Ink** (text-weight with underline), **Underline** (subtle bottom border), and **Block** (full-width rectangular). The live preview in the Knoppen tab shows each style with your current brand colours.
 - **Navbar**: Set the layout (standard, centered, split), background style (solid, translucent blur, transparent), and CTA button appearance (filled, outline, text-only). The navbar settings apply to every page.
 - **Phone & call bar**: Add a clickable phone number to your navigation bar. When set, the phone number appears beside the CTA button on desktop and in the mobile navigation drawer. Enable the **Mobile call bar** toggle to pin a fixed "tap to call" button at the bottom of the screen on mobile devices, so visitors can reach you with one tap regardless of where they are on the page. The phone label defaults to "Call us" when left empty.
 - **Custom CSS**: Write your own CSS that gets injected into the site. Useful for fine-tuning or overriding defaults.
@@ -336,7 +337,7 @@ Contact-form submissions are rate-limited to 5 per minute per IP address. A Clou
 
 ## Newsletter signup
 
-The newsletter block (`newsletter` section type) captures email signups from your published site. The backend uses a double opt-in flow: after submit, the visitor receives a confirmation email and must click the link to activate their subscription. Suppressed addresses and already-active subscribers are treated the same as new signups from the form's perspective (no data leakage).
+The newsletter block (`newsletter` section type) captures email signups from your published site. The backend uses a double opt-in flow: after submit, the visitor receives a confirmation email and must click the link to activate their subscription. Suppressed addresses and already-active subscribers are treated the same as new signups from the form's perspective (no data leakage). The opt-in and welcome emails are sent from your verified newsletter domain when one is configured for the workspace.
 
 What happens on submit:
 
@@ -346,6 +347,32 @@ What happens on submit:
 4. Once confirmed, the subscriber appears in the newsletter audience for that workspace.
 
 Newsletter submissions share the same rate limit as the contact form: 5 per minute per IP address. The Turnstile bot-protection widget is also active on newsletter forms when configured.
+
+## Newsletter sequences
+
+Sequences let you set up automated email series that send to subscribers based on triggers and timing. A sequence is a series of steps, each with its own subject, content, and delay.
+
+### Creating a sequence
+
+1. Go to the newsletter management area
+2. Create a new sequence and give it a name
+3. Set the trigger — what causes a subscriber to enter the sequence (e.g. new signup)
+4. Optionally add a source filter to target specific subscriber segments
+5. Add steps with subject lines, email content, and delay between sends (in hours)
+
+### How sequences work
+
+- Each sequence is attached to a publication (your newsletter audience)
+- When a subscriber matches the trigger, a sequence run is created for them
+- Steps are executed in order, with the configured delay between each
+- You can pause or deactivate a sequence at any time — in-flight runs stop at the current step
+
+### Sequence settings
+
+- **Name**: Identifies the sequence in your dashboard
+- **Status**: Active or paused
+- **Source filter**: Optional JSON conditions to target specific subscriber segments
+- **Step delay**: Hours to wait between sending each step (configurable per step)
 
 ## Managing requests
 

@@ -1,5 +1,6 @@
 ---
 title: USt.-Verwaltung
+last_verified: 2026-06-05
 ---
 
 # USt.-Verwaltung
@@ -52,11 +53,27 @@ Entsperren Sie Perioden nur, wenn Sie eine Korrektur einreichen müssen. Häufig
 
 ## Fristenverfolgung
 
-MyCompanyDesk verfolgt USt.-Einreichungsfristen basierend auf Ihrem Land:
+MyCompanyDesk verfolgt USt.-Einreichungsfristen basierend auf Ihrem Land. Die Frist wird automatisch berechnet: für Quartalsmelder ist es der letzte Tag des Monats nach Quartalsende (Q1 → 30. April, Q2 → 31. Juli, Q3 → 31. Oktober, Q4 → 31. Januar), für Monatsmelder der letzte Tag des Folgemonats.
 
 - Visuelle Indikatoren für bevorstehende Fristen
 - Warnungen, wenn eine Frist naht
 - Klarer Status, welche Perioden Aufmerksamkeit erfordern
+
+### Fristenwarnungen in Formularen
+
+Wenn Sie eine Rechnung oder Ausgabe bearbeiten, die in eine vergangene (nicht gesperrte) Periode fällt, zeigt ein Banner oben im Formular die Einreichungsfrist und deren Dringlichkeit:
+
+- **Offen** — Die Periode läuft noch. Kein Banner.
+- **Warnung** — Die Periode ist abgelaufen, aber die Frist noch nicht überschritten. Ein gelbes Banner erinnert an die Einreichung.
+- **Überfällig** — Die Frist ist überschritten und die Periode noch nicht gesperrt. Ein rotes Banner drängt auf sofortige Einreichung.
+
+### KOR-Rechnungsverhalten
+
+Wenn die KOR (Kleinunternehmerregelung) aktiviert ist, wird bei allen Rechnungen automatisch 0% USt. angesetzt. Die USt.-Aufschlüsselung wird auf dem PDF unterdrückt und durch die gesetzliche KOR-Befreiungserklärung ersetzt.
+
+### USt.-befreite Lieferungen (vrijgesteld)
+
+Bestimmte Lieferungen sind gesetzlich von der USt. befreit (z.B. medizinische Leistungen, Bildung, bestimmte Finanzdienstleistungen). USt.-befreit unterscheidet sich von 0%-besteuert: befreite Lieferungen haben keine Ausgangs-USt. und werden vollständig aus den Steuererklärungsrubriken ausgeschlossen. Beim Erstellen einer Rechnung können Sie **USt.-befreit** aktivieren, um alle Positionen auf 0% zu setzen und eine Befreiungserklärung auf dem PDF anzuzeigen.
 
 ## Länderindikator
 

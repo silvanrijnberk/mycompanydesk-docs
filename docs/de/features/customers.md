@@ -1,5 +1,6 @@
 ---
 title: Kunden
+last_verified: 2026-06-05
 ---
 
 # Kunden
@@ -36,6 +37,15 @@ Beim Anlegen niederländischer Kunden kann MyCompanyDesk Unternehmensdaten autom
 Bei erfolgreicher Suche erscheint ein Verifiziert-Badge neben dem Handelsregisterfeld. Wird die Nummer nicht gefunden, erscheint eine Fehlermeldung. Beide Suchfunktionen sind nur für niederländische Kunden verfügbar.
 
 Jeder Arbeitsbereich hat 100 kostenlose KVK-Abrufe pro Tag (zwischengespeicherte Ergebnisse zählen nicht mit). Bei 20 oder weniger verbleibenden Abrufen zeigt der Hinweis am KVK-Feld einen Zähler, wie viele noch übrig sind. Wird das Tageslimit erreicht, erscheint eine entsprechende Meldung. Sie können die Daten dann manuell eingeben oder es morgen erneut versuchen.
+
+### USt.-Nummern-Validierung
+
+Wenn Sie eine USt.-Nummer im Kundenformular eingeben, validiert MyCompanyDesk diese in zwei Schritten:
+
+- **Formatprüfung** (automatisch): Beim Verlassen des USt.-Nummernfeldes prüft das Formular, ob die Nummer dem erwarteten Format für das Land entspricht (z.B. `NL123456789B01` für die Niederlande). Bei ungültigem Format erscheint ein dezenter Inline-Hinweis. Dies verhindert nicht das Speichern — es dient nur zur Information.
+- **VIES-Prüfung** (manuell): Für korrekt formatierte EU-USt.-Nummern erscheint eine Schaltfläche **Über VIES prüfen**. Klicken Sie darauf, um eine Live-Prüfung gegen das EU-VIES-Register durchzuführen. Das Ergebnis zeigt, ob die Nummer registriert und aktiv ist oder nicht gefunden wurde. Auch dies ist nicht blockierend — Sie können den Kunden unabhängig vom VIES-Ergebnis speichern.
+
+Die Validierung von USt.-Nummern hilft zu verhindern, dass fehlerhafte oder inaktive Nummern in Reverse-Charge-Rechnungen gelangen.
 
 ## Kundendetailseite
 

@@ -1,5 +1,6 @@
 ---
 title: Factures
+last_verified: 2026-06-05
 ---
 
 # Factures
@@ -137,12 +138,39 @@ Pour rembourser un paiement :
 4. Ajoutez une raison facultative
 5. Confirmez le remboursement
 
+## Avoirs (notes de credit)
+
+Un avoir (creditfactuur) est un document officiel qui annule tout ou partie d'une facture precedemment emise. Il est legalement requis lorsque vous devez corriger un montant, accorder un remboursement ou annuler une facture deja finalisee.
+
+### Creer un avoir
+
+1. Ouvrez la page de detail de la facture d'origine
+2. Cliquez sur **Creer un avoir** (Maak creditfactuur)
+3. MyCompanyDesk genere l'avoir automatiquement : les donnees client et les lignes sont copiees de la facture source, tous les montants sont inverses, et un lien vers le numero de facture d'origine est ajoute
+4. L'avoir recoit son propre numero sequentiel et est immediatement finalise
+
+Le PDF de l'avoir affiche "Creditfactuur" comme titre de document et inclut une reference a la facture d'origine.
+
+### Regles
+
+- Seules les factures finalisees peuvent faire l'objet d'un avoir -- les brouillons, devis et avoirs existants ne le peuvent pas
+- Les montants d'un avoir sont stockes en negatif, ce qui reduit automatiquement votre chiffre d'affaires et vos totaux de TVA dans les rapports et la declaration
+- Les indicateurs d'autoliquidation et d'exoneration de TVA sont repris de la facture source
+
+### Impact sur la TVA
+
+Les avoirs sont inclus dans la declaration de TVA aux cotes des factures classiques. Les montants negatifs reduisent votre TVA collectee et le chiffre d'affaires dans les rubriques concernees.
+
+## Autoliquidation : numero de TVA requis
+
+Lorsque vous creez une facture en autoliquidation, MyCompanyDesk exige que le client ait un numero de TVA valide enregistre. Si le champ du numero de TVA du client est vide, le formulaire affiche une erreur de validation et empeche l'enregistrement. La reglementation europeenne exige le numero d'identification TVA de l'acheteur sur les documents en autoliquidation.
+
 ## Types de documents
 
 Le module de facturation prend en charge plusieurs types de documents :
 
 - **Facture** -- Document de facturation standard
-- **Avoir** -- Ajustement pour remboursements ou corrections
+- **Avoir** -- Annulation d'une facture precedemment emise (voir [Avoirs](#avoirs-notes-de-credit) ci-dessus)
 - **Rappel** -- Rappel de paiement pour les factures en retard
 
 ## Filtrage et recherche

@@ -1,5 +1,6 @@
 ---
 title: Clients
+last_verified: 2026-06-05
 ---
 
 # Clients
@@ -36,6 +37,15 @@ Lorsque vous creez un client neerlandais, MyCompanyDesk peut remplir automatique
 Un badge Verifie apparait a cote du champ du numero de chambre lorsque la recherche aboutit. Si le numero KVK est introuvable, un message d'erreur s'affiche. Les deux recherches sont disponibles uniquement pour les clients neerlandais.
 
 Chaque espace de travail dispose de 100 recherches KVK gratuites par jour (les resultats mis en cache ne comptent pas). Lorsqu.il reste 20 recherches ou moins, l.indication du champ KVK affiche un compteur du nombre restant. Si la limite quotidienne est atteinte, un message d.erreur s.affiche -- vous pouvez saisir les donnees manuellement ou reessayer demain.
+
+### Validation du numero de TVA
+
+Lorsque vous saisissez un numero de TVA dans le formulaire client, MyCompanyDesk le valide en deux etapes :
+
+- **Verification du format** (automatique) : lorsque vous quittez le champ du numero de TVA, le formulaire verifie si le numero correspond au format attendu pour le pays (par ex. `NL123456789B01` pour les Pays-Bas). Si le format est invalide, un avertissement discret s'affiche en ligne. Cela n'empeche pas l'enregistrement -- c'est purement informatif.
+- **Verification VIES** (manuelle) : pour les numeros de TVA europeens bien formates, un bouton **Verifier via VIES** apparait. Cliquez dessus pour effectuer une verification en direct aupres du registre VIES de l'UE. Le resultat indique si le numero est enregistre et actif, ou introuvable. Cela n'est pas bloquant non plus -- vous pouvez enregistrer le client quel que soit le resultat VIES.
+
+La validation des numeros de TVA aide a prevenir l'utilisation de numeros errones ou inactifs dans les factures en autoliquidation.
 
 ## Page de detail du client
 

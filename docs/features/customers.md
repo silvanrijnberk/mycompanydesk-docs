@@ -1,5 +1,6 @@
 ---
 title: Customers
+last_verified: 2026-06-05
 ---
 
 # Customers
@@ -36,6 +37,15 @@ When creating a Dutch customer, MyCompanyDesk can autofill company details from 
 A verified badge appears next to the chamber number field on successful lookup. If the KVK number is not found, an error message is shown. Both lookups are available only for Dutch customers.
 
 Each workspace gets 100 free KVK lookups per day (cached results do not count). When 20 or fewer lookups remain, the KVK field hint shows a counter of how many are left. If the daily cap is hit, the form shows a quota-exceeded message, and you can enter the data manually or try again tomorrow.
+
+### VAT number validation
+
+When you enter a VAT number in the customer form, MyCompanyDesk validates it in two stages:
+
+- **Format check** (automatic): When you leave the VAT number field, the form checks whether the number matches the expected format for the country (e.g. `NL123456789B01` for the Netherlands). If the format is invalid, a soft inline warning appears. This does not prevent saving — it is informational only.
+- **VIES verification** (manual): For well-formed EU VAT numbers, a **Verify via VIES** button appears. Click it to run a live check against the EU VIES registry. The result shows whether the number is registered and active, or not found. This is also non-blocking — you can save the customer regardless of the VIES result.
+
+Validating VAT numbers helps prevent malformed or inactive numbers from flowing into reverse-charge invoices. See [Invoices — Reverse-charge VAT requirement](/features/invoices#reverse-charge-vat-requirement) for the invoice-level enforcement.
 
 ## Customer detail page
 

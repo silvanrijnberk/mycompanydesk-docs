@@ -1,5 +1,6 @@
 ---
 title: BTW-beheer
+last_verified: 2026-06-05
 ---
 
 # BTW-beheer
@@ -52,11 +53,27 @@ Ontgrendel perioden alleen wanneer je een correctie moet indienen. Frequent ontg
 
 ## Deadlineopvolging
 
-MyCompanyDesk houdt BTW-aangiftedeadlines bij op basis van je land:
+MyCompanyDesk houdt BTW-aangiftedeadlines bij op basis van je land. De deadline wordt automatisch berekend: voor kwartaalaangevers is het de laatste dag van de maand na het kwartaaleinde (Q1 → 30 april, Q2 → 31 juli, Q3 → 31 oktober, Q4 → 31 januari), en voor maandaangevers de laatste dag van de volgende maand.
 
 - Visuele indicatoren voor aankomende deadlines
 - Waarschuwingen wanneer een deadline nadert
 - Duidelijke status die aangeeft welke perioden aandacht nodig hebben
+
+### Deadlinewaarschuwingen in formulieren
+
+Wanneer je een factuur of uitgave bewerkt die in een afgelopen (niet-vergrendelde) periode valt, toont een banner bovenaan het formulier de aangiftedeadline en de ernst:
+
+- **Open** — De periode loopt nog. Geen banner.
+- **Waarschuwing** — De periode is afgelopen maar de deadline is nog niet verstreken. Een gele banner herinnert je om aangifte te doen.
+- **Te laat** — De deadline is verstreken en de periode is nog niet vergrendeld. Een rode banner dringt aan op directe aangifte.
+
+### KOR-factuurgedrag
+
+Wanneer KOR is ingeschakeld, worden alle facturen automatisch op 0% BTW gezet. De BTW-specificatie wordt onderdrukt op de PDF en vervangen door de wettelijke KOR-vrijstellingsvermelding.
+
+### Vrijgestelde leveringen (vrijgesteld van BTW)
+
+Sommige leveringen zijn wettelijk vrijgesteld van BTW (bijv. medische diensten, onderwijs, bepaalde financiële diensten). Vrijgesteld is iets anders dan 0%-tarief: vrijgestelde leveringen hebben geen output-BTW en worden volledig uitgesloten van de aangifte-rubrieken. Bij het aanmaken van een factuur kun je **Vrijgesteld van btw** inschakelen om alle regels op 0% te zetten met een vrijstellingsvermelding op de PDF.
 
 ## Landindicator
 
