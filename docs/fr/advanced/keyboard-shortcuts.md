@@ -4,47 +4,48 @@ title: Raccourcis clavier
 
 # Raccourcis clavier
 
-Naviguez plus rapidement dans MyCompanyDesk grace aux raccourcis clavier.
+MyCompanyDesk garde volontairement un nombre réduit de raccourcis clavier. Voici ceux qui fonctionnent réellement.
 
-## Raccourcis globaux
-
-| Raccourci | Action |
-|---|---|
-| `/` | Activer la recherche |
-| `?` | Afficher l'aide des raccourcis clavier |
-
-## Navigation
+## Fenêtre de recherche
 
 | Raccourci | Action |
 |---|---|
-| `G` puis `D` | Aller au tableau de bord |
-| `G` puis `I` | Aller aux factures |
-| `G` puis `Q` | Aller aux devis |
-| `G` puis `E` | Aller aux depenses |
-| `G` puis `C` | Aller aux clients |
-| `G` puis `P` | Aller aux projets |
-| `G` puis `R` | Aller aux rapports |
-| `G` puis `S` | Aller aux parametres |
+| `Cmd+K` (Mac) / `Ctrl+K` (Windows/Linux) | Ouvrir ou fermer la fenêtre de recherche |
 
-## Actions
+La fenêtre de recherche est le moyen le plus rapide de naviguer dans l'application :
 
-| Raccourci | Action |
-|---|---|
-| `A` | Ajouter nouveau (selon le contexte) |
-| `E` | Modifier l'element actuel |
-| `S` | Envoyer (facture/devis) |
-| `Escape` | Fermer la fenetre modale ou le tiroir |
+- Tapez au moins deux caractères pour rechercher parmi vos clients, factures et dépenses (ainsi que les projets, contrats et biens si ces modules sont activés).
+- Les paramètres sont également consultables : tapez par exemple "TVA" ou "rappels" pour accéder directement à la carte de paramètres correspondante.
+- Les actions rapides vous permettent d'accéder à n'importe quelle section ou de créer une nouvelle facture, un devis, une dépense ou un client.
+- Les puces de filtre sous le champ de recherche limitent les résultats à un seul type.
 
-## Pages de liste
+Dans la fenêtre de recherche :
 
 | Raccourci | Action |
 |---|---|
-| `J` / `K` | Naviguer vers le bas / vers le haut dans la liste |
-| `Enter` | Ouvrir l'element selectionne |
-| `X` | Basculer la selection (pour les actions groupees) |
+| `Haut` / `Bas` | Parcourir les résultats |
+| `Entrée` | Ouvrir le résultat sélectionné |
+| `Échap` | Fermer la fenêtre de recherche |
 
-## Conseils
+## Échap
 
-- Les raccourcis fonctionnent lorsqu'aucun champ de saisie n'est actif
-- Appuyez sur `?` sur n'importe quelle page pour voir les raccourcis disponibles
-- Combinez les raccourcis de navigation pour un acces rapide (par ex., `G` puis `I` pour aller directement aux factures)
+La touche `Échap` vous fait remonter d'un niveau à la fois :
+
+- Pendant la saisie dans un champ, elle retire le focus de ce champ.
+- Lorsqu'une boîte de dialogue est ouverte, elle la ferme.
+- Sur une page de détail, elle vous ramène à la liste (comme le bouton retour).
+
+## Éditeur de site
+
+Pendant la modification de votre site web dans l'éditeur de site :
+
+| Raccourci | Action |
+|---|---|
+| `Cmd+Z` / `Ctrl+Z` | Annuler |
+| `Cmd+Maj+Z` / `Ctrl+Maj+Z` ou `Ctrl+Y` | Rétablir |
+
+Tant qu'un champ de texte est actif, annuler et rétablir s'appliquent au texte que vous saisissez. Cliquez d'abord en dehors du champ pour annuler une étape de modification complète.
+
+## Formulaires
+
+Les touches habituelles du navigateur fonctionnent partout : `Tab` et `Maj+Tab` passent d'un champ à l'autre, et `Entrée` envoie la plupart des formulaires.

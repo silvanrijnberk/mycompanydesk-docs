@@ -1,101 +1,66 @@
 ---
-title: E-Mail-Integration
+title: E-Mail
 ---
 
-# E-Mail-Integration
+# E-Mail
 
-Konfigurieren Sie, wie MyCompanyDesk E-Mails an Ihre Kunden sendet — von der Rechnungszustellung bis zu Zahlungserinnerungen.
+MyCompanyDesk sendet Ihre Rechnungen und Angebote per E-Mail an Ihre Kunden. Unter **Einstellungen → E-Mail** steuern Sie die Versandseite: von welcher Adresse Ihre Dokumente verschickt werden und die Grußformel unter jeder Nachricht. Die Seite ist in jedem Abo verfügbar.
 
-## Wo zu finden
+Der E-Mail-Empfang (der Posteingang) wird an anderer Stelle eingerichtet; siehe [Empfangen: Posteingang-Einstellungen](#empfangen-posteingang-einstellungen) weiter unten.
 
-Öffnen Sie den Posteingang in der Hauptnavigation und gehen Sie zum Tab **Einstellungen**. Dies ist die zentrale Anlaufstelle für die gesamte Posteingangskonfiguration: Postfächer, Aktivität, Domain und erweiterte Optionen.
+## Absender
 
-## E-Mail-Versandmethoden
+Die Karte **Versandmethode** legt fest, welche Adresse Ihre Kunden als Absender sehen. Es gibt drei Optionen.
 
-MyCompanyDesk unterstützt vier Wege zum Versenden von E-Mails. Ihre gewählte Versandmethode wird bei automatisierten Rechnungen und Erinnerungen immer beachtet. Wenn Sie einen Posteingang auf Ihrer Domain einrichten, überschreibt dieser Ihre Wahl nicht -- der Posteingang dient dem Empfang und Beantworten, während Ihre gewählte Versandmethode die transaktionale ausgehende Post übernimmt.
+### Eigene Domain
 
-### 1. Integrierter E-Mail-Versand (Standard)
+Senden Sie Rechnungen von Ihrer eigenen Domain, genau wie Ihren Posteingang. Kunden sehen Ihre Adresse als Absender.
 
-Standardmäßig werden E-Mails über den eigenen E-Mail-Dienst von MyCompanyDesk versendet. Keine Konfiguration erforderlich.
+- Der Versand von der eigenen Domain gehört zum Pro-Abo; in anderen Abos zeigt die Option einen Upgrade-Link.
+- Ist bereits eine Domain verbunden? Dann bietet die Karte einen Ein-Klick-Button (**E-Mail für ihredomain.de aktivieren**). Das ist sicher für bestehende E-Mail: Läuft auf Ihrer Domain bereits Mail bei einem anderen Anbieter (zum Beispiel Gmail oder Microsoft 365), warnt MyCompanyDesk und übernimmt nichts.
+- Noch keine Domain? Über **Domain hinzufügen** gelangen Sie zu den Domain-Einstellungen.
+- Sobald der Versand aktiv ist, zeigt die Karte, von welcher Adresse Ihre Dokumente verschickt werden, mit einem Link zu den DNS-Einträgen.
 
-### 2. Gmail-Integration
+### Gmail
 
-Senden Sie E-Mails direkt von Ihrem Gmail-Konto:
+Verbinden Sie Ihr Google-Konto über **Gmail verbinden**. E-Mails gehen von Ihrer Gmail-Adresse aus und erscheinen in Ihrem Gmail-Ordner "Gesendet".
 
-1. Gehen Sie zu **Posteingang > Einstellungen** und öffnen Sie **Versand**
-2. Klicken Sie auf **Gmail verbinden**
-3. Autorisieren Sie MyCompanyDesk, in Ihrem Namen über Google OAuth zu senden
-4. E-Mails werden jetzt als von Ihrer Gmail-Adresse gesendet angezeigt
+### Outlook / Microsoft 365
 
-**Vorteile:**
+Verbinden Sie Ihr Microsoft-Konto über **Outlook verbinden**. E-Mails werden von Ihrer Outlook- oder Microsoft 365-Adresse verschickt.
 
-- E-Mails zeigen Ihre Gmail-Adresse als Absender
-- Gesendete E-Mails erscheinen in Ihrem Gmail-Ordner „Gesendet"
-- Bessere Zustellbarkeit (Ihre eigene Domain-Reputation)
+Dokumente werden immer unter Ihrer eigenen Identität versendet. Ist noch kein Absender eingerichtet, bittet MyCompanyDesk Sie zuerst, Gmail oder Outlook zu verbinden oder Ihre eigene Domain zu aktivieren, bevor eine Rechnungs- oder Angebots-E-Mail verschickt werden kann.
 
-### 3. Outlook / Microsoft-Integration
+### Rechnungen senden von
 
-Senden Sie von Ihrem Outlook- oder Microsoft 365-Konto:
+Ist Ihre eigene Domain aktiv und hat sie mehrere Adressen, erscheint eine zusätzliche Auswahl: **Rechnungen senden von**. Wählen Sie, welche Adresse Ihre Kunden als Absender auf Rechnungen und Angeboten sehen.
 
-1. Gehen Sie zu **Posteingang > Einstellungen** und öffnen Sie **Versand**
-2. Klicken Sie auf **Outlook verbinden**
-3. Autorisieren Sie über Microsoft OAuth
-4. E-Mails werden von Ihrer Outlook-Adresse gesendet
+## Ihre Grußformel
 
-## E-Mail-Vorlagen
+Die Fußzeile unter jeder ausgehenden E-Mail wird automatisch aus den Angaben aufgebaut, die Sie hier ausfüllen:
 
-Passen Sie die E-Mails an, die mit Ihren Rechnungen und Erinnerungen versendet werden.
+- **Support-E-Mail**
+- **Website**
+- Social Links (LinkedIn, X, Facebook, Instagram)
 
-### Rechnungs-E-Mail-Vorlage
+Alles, was Sie ausfüllen, wird übernommen; was leer bleibt, wird einfach weggelassen. Diese Felder teilen Sie mit Ihren Unternehmensdaten: Ob Sie sie hier oder unter **Einstellungen → Unternehmensdaten** bearbeiten, beide bleiben synchron.
 
-Die Standard-E-Mail, die beim Versand einer Rechnung gesendet wird. Passen Sie an:
+## E-Mail-Texte
 
-- **Betreffzeile** — Der E-Mail-Betreff (unterstützt Variablen wie Rechnungsnummer)
-- **Text** — Der Nachrichteninhalt
-- **Sprache** — Sprachspezifische Vorlagen festlegen
+Rechnungs-, Angebots- und Erinnerungs-E-Mails verwenden die standardmäßigen, gut erprobten Texte von MyCompanyDesk, in Ihrer Dokumentsprache. Es gibt keine Vorlagen pro Dokumenttyp zu pflegen. Bevor ein Dokument verschickt wird, können Sie im Versandfenster weiterhin Empfänger, Betreff und Nachricht dieser einen E-Mail anpassen und wählen, ob Ansicht-Button, Download-Button, PDF-Anhang und Rechnungspositionen enthalten sein sollen. Siehe [E-Mail-Vorlagen](/de/faq/email-template).
 
-### Erinnerungs-E-Mail-Vorlage
+## Empfangen: Posteingang-Einstellungen
 
-Die E-Mail, die beim Nachfassen bei überfälligen Rechnungen gesendet wird. Passen Sie die gleichen Felder wie oben an, aber mit einem dringenderen Ton.
+Alles rund um den Mail-Empfang finden Sie auf der Einstellungsseite des Posteingangs (**Posteingang → Einstellungen**):
 
-### Vorschau
+- **Postfächer & Adressen**: Ihre Adressen, Aliasse und wie lange Nachrichten aufbewahrt werden.
+- **Aktivität**: die letzten ausgehenden Zustellungen, hilfreich, wenn Sie sich fragen, ob ein Kunde Ihre Rechnung erhalten hat.
+- **Vertrauenswürdige Absender**: Absender, die nie als Spam markiert werden.
+- **DSGVO-Datenlöschung**: Löschen Sie alle Unterhaltungen und Anhänge einer bestimmten Adresse (nur für Administratoren).
 
-Vor dem Versand können Sie jede E-Mail in der Vorschau ansehen, um genau zu sehen, was Ihr Kunde erhalten wird:
+Regeln für eingehende Mail finden Sie unter **Posteingang → Einstellungen → Regeln & Routing**.
 
-- Gerendertes HTML mit Ihrem Branding
-- PDF-Anhang-Vorschau
-- Zahlungslink-Einbindung
+## Verwandte Themen
 
-## Variablen
-
-E-Mail-Vorlagen unterstützen dynamische Variablen:
-
-| Variable | Beschreibung |
-|---|---|
-| `{invoice_number}` | Die Rechnungsnummer |
-| `{customer_name}` | Name des Kunden |
-| `{amount}` | Gesamtrechnungsbetrag |
-| `{due_date}` | Fälligkeitsdatum der Zahlung |
-| `{company_name}` | Ihr Firmenname |
-| `{payment_link}` | Link zur Online-Zahlung |
-
-## E-Mail-Aktivität
-
-Eine Übersicht aller gesendeten E-Mails der letzten 90 Tage finden Sie in **Posteingang > Einstellungen** unter Aktivitätsprotokoll.
-
-## Benachrichtigungen
-
-Konfigurieren Sie, welche E-Mail-Benachrichtigungen Sie erhalten:
-
-- **Rechnung bezahlt** — Benachrichtigung, wenn ein Kunde zahlt
-- **Angebotsanfrage eingegangen** — Benachrichtigung bei neuen Angebotsanfragen
-- **Teamaktivitäten** — Aktualisierungen zu Aktionen von Teammitgliedern
-
-Benachrichtigungseinstellungen können in Ihrem [Profil](/de/account/profile) festgelegt werden.
-
-## Tipps
-
-- Verbinden Sie Gmail oder Outlook für die beste Zustellbarkeit
-- Testen Sie Ihre E-Mail-Vorlage immer, bevor Sie Ihre erste Rechnung versenden
-- Richten Sie sprachspezifische Vorlagen ein, wenn Sie Kunden in mehreren Sprachen bedienen
-- Verwenden Sie die Erinnerungsvorlage für professionelle Nachfassaktionen bei überfälligen Rechnungen
+- [Unternehmenseinstellungen](/de/settings/company): die Unternehmensdaten hinter Ihrer Grußformel
+- [Abo & Zahlungen](/de/settings/billing): der Versand von der eigenen Domain gehört zu Pro

@@ -226,7 +226,7 @@ Om individuele instellingen te herzien zonder de wizard, ga naar:
 - `/workspace/organization/company/address` — eigen domein + DNS.
 - `/workspace/email` — inbox, mailboxen, sjablonen.
 
-Zie [Instellingenoverzicht](/nl/settings/) voor de volledige kaart.
+Het volledige overzicht vind je in de instellingen van de app.
 
 ## Randgevallen
 

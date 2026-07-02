@@ -111,7 +111,7 @@ When you open the image upload field in any section block (hero, spotlight, team
 - Type a search term (e.g. "hair salon", "coffee", "wood") and hit enter.
 - Results appear in a grid. Click any photo to insert it as your section image.
 - The search is proxied through the MyCompanyDesk server, so your Unsplash access key never reaches the browser.
-- Attribution is tracked automatically per Unsplash's API guidelines and rendered on your published site. When your site goes live, a "Foto's: <photographer> · Unsplash" credit line appears in the footer for every page that uses at least one stock photo, so you are always compliant.
+- Attribution is tracked automatically per Unsplash's API guidelines and rendered on your published site. When your site goes live, a "Foto's: `photographer` · Unsplash" credit line appears in the footer for every page that uses at least one stock photo, so you are always compliant.
 - If Unsplash is not configured on your workspace, the Stockfoto button stays hidden so you never see a broken feature.
 
 ## Saved blocks

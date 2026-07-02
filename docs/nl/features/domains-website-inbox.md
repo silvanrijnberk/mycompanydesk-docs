@@ -76,7 +76,7 @@ De pagina bestaat uit twee delen:
 - **Domeinen in afwachting**: Domeinen die nog geverifieerd moeten worden staan altijd bovenaan, los van de domeinwisselaar in de bovenbalk. Zo kun je de verificatie-instructies bereiken van nieuw toegevoegde domeinen voordat ze actief worden.
 - **Actief domeinpaneel**: DNS, SSL, doorverwijzingen, analytics, beveiliging en SEO-tabs zijn gekoppeld aan het domein dat in de domeinwisselaar in de bovenbalk is geselecteerd (bereikbaar vanuit de sitebouwer op `/website`). Wanneer de hoofdsite (weergegeven als je werkruimtenaam) is geselecteerd, wordt het domeinpaneel volledig verborgen. Wisselen van domein zet de actieve tab terug op Routering.
 
-De pagina toont standaard een opgeschoonde weergave met de meest gebruikte tabbladen. Zes power-user tabbladen zijn verborgen totdat je **Geavanceerde modus** inschakelt in `/me/preferences`. Die tabbladen zijn: DNS, SSL, Doorverwijzingen, Analytics, Snelle instellingen en Beveiliging. Zie [Instellingenoverzicht](/nl/settings#account-settings-me) voor het aanzetten van geavanceerde modus.
+De pagina toont standaard een opgeschoonde weergave met de meest gebruikte tabbladen. Zes power-user tabbladen zijn verborgen totdat je **Geavanceerde modus** inschakelt in `/me/preferences`. Die tabbladen zijn: DNS, SSL, Doorverwijzingen, Analytics, Snelle instellingen en Beveiliging. Geavanceerde modus zet je aan bij je persoonlijke voorkeuren.
 
 Wat je op de pagina kunt doen:
 
@@ -192,7 +192,7 @@ Wat de editor laat zien:
 - **Pagina's-tab** -- Pagina's aanmaken, hernoemen, verwijderen en filteren op status (live, concept, ingepland). Kies een sjabloon bij het maken van een nieuwe pagina.
 - **Stijl-tab** -- Ontwerptokens voor kleuren, lettertypes, schaal, beweging, knoppen, aangepaste CSS en head-snippets (analytics, lettertype-preconnects).
 - **Domein & SEO-tab** -- Eigen domeinbeheer. Zie de sectie eigen domeinen hierboven.
-- **Koppelingen-tab** -- Verbind betaalproviders (Mollie, Stripe Connect) met inline setup-kaarten, plus diensten van derden zoals Mailchimp, Plausible en Trustpilot. Dezelfde betaalkoppeling stuurt de betaalknoppen op facturen aan; zie [Geldinstellingen](/nl/workspace/financial/money/payments) voor de volledige configuratie.
+- **Koppelingen-tab** -- Verbind betaalproviders (Mollie, Stripe Connect) met inline setup-kaarten, plus diensten van derden zoals Mailchimp, Plausible en Trustpilot. Dezelfde betaalkoppeling stuurt de betaalknoppen op facturen aan; zie de [FAQ over betaalmethodes](/nl/faq/payment-methods) voor de volledige configuratie.
 - **Navigatie-editor** -- Sleep en zet headerlinks op volgorde, met dropdown-groepen en externe links.
 - **Publiceerknop** -- Toont het aantal ongepubliceerde wijzigingen. Publiceert een snapshot met een klik.
 - **Responsieve preview** -- Schakel tussen desktop-, tablet- en mobiele weergave in de editor.

@@ -1,15 +1,13 @@
 ---
-title: Change currency
-last_verified: 2026-05-09
+title: Währung ändern
+last_verified: 2026-07-02
 chatbot:
   triggers: ["change currency", "set currency", "currency settings", "euro dollar", "valuta wijzigen", "valuta instellen", "wahrung andern", "changer devise"]
-  actions:
-    - { label: "Open profile preferences", to: "/profile?section=preferences" }
   follow_up: ["How do I invoice in a different currency?", "How do I change my language?"]
 ---
-So änderst du deine Standardwährung:
-1. Gehe zu Mein Konto → Einstellungen
-2. Wähle dort deine Standardwährung
-3. Änderungen werden automatisch gespeichert
 
-Hinweis: Bestehende Rechnungen behalten ihre gespeicherte Währung.
+Es gibt keine Währungseinstellung, die Sie ändern könnten. MyCompanyDesk arbeitet bewusst nur in Euro: Alle Rechnungen, Angebote, Ausgaben und Berichte sind in EUR. Das lässt sich nirgendwo anpassen, auch nicht unter Mein Konto.
+
+Wie das bei Kunden im Ausland funktioniert, lesen Sie unter [Mehrere Währungen](/de/faq/multi-currency).
+
+Tipp: Rechnungen können Sie trotzdem auf Englisch, Deutsch oder Französisch versenden; nur die Beträge sind immer in Euro.
