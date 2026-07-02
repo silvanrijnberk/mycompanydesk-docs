@@ -1,6 +1,6 @@
 ---
 title: "Moyens de paiement"
-last_verified: 2026-05-09
+last_verified: 2026-07-02
 chatbot:
   triggers:
     - "payment methods"
