@@ -21,9 +21,9 @@ MyCompanyDesk is an all-in-one accounting and business management platform desig
 
 ## Interface language
 
-The MyCompanyDesk interface is in Dutch.
+You can use the MyCompanyDesk interface in Dutch, English, German, or French, and switch language at any time.
 
-Invoices, quotes, and emails can be sent in Dutch, English, German, or French. The document language is set per invoice and does not depend on the interface language.
+Invoices, quotes, and emails can also be sent in Dutch, English, German, or French. The document language is set per invoice and does not depend on the interface language.
 
 ## Plans
 
@@ -33,15 +33,16 @@ MyCompanyDesk has two paid plans: Starter and Pro. New customers get a 60-day Pr
 |---|---|---|
 | Invoices, quotes, customers | Unlimited | Unlimited |
 | Expense tracking | Full | Full |
-| Receipt scanning | Yes | Yes |
+| Receipt scanning | Yes (30 scans/month) | Yes (200 scans/month) |
 | AI suggestions | Yes | Yes |
 | Custom branding | Yes | Yes |
 | Time registration, language tools | Yes | Yes |
 | Public business page | Yes | Yes |
-| Team members | 1 | 1 (expandable with seat add-ons) |
-| Reports & export | Full | Full |
-| Contracts, properties, projects | - | Yes |
+| Contracts and projects | Yes | Yes |
+| Reports and CSV/Excel exports | Yes | Yes |
+| Team access | Just you | Unlimited people |
 | Business mailbox on your domain | - | Yes |
+| Bank connections | - | Up to 3 |
 | Multi-domain, custom domain routing | - | Yes |
 | Advanced reports, priority support | - | Yes |
 | API access, webhooks | - | Yes |

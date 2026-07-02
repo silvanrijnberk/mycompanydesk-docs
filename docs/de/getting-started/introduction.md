@@ -19,29 +19,30 @@ MyCompanyDesk ist eine All-in-One-Plattform für Buchhaltung und Geschäftsverwa
 - **Berichte anzeigen** — Umsatz, Gewinn, Cashflow, USt. und Kundenanalysen
 - **Zusammenarbeiten** — Teammitglieder einladen, Berechtigungen festlegen und mit Ihrem Steuerberater teilen
 
-## Oberflachensprache
+## Oberflächensprache
 
-Die MyCompanyDesk-Benutzeroberflache ist auf Niederlandisch.
+Sie können die MyCompanyDesk-Benutzeroberfläche auf Niederländisch, Englisch, Deutsch oder Französisch verwenden und die Sprache jederzeit wechseln.
 
-Rechnungen, Angebote und E-Mails konnen auf Niederlandisch, Englisch, Deutsch oder Franzosisch versendet werden. Die Dokumentensprache wird pro Rechnung festgelegt und ist unabhangig von der Oberflachensprache.
+Rechnungen, Angebote und E-Mails können ebenfalls auf Niederländisch, Englisch, Deutsch oder Französisch versendet werden. Die Dokumentensprache wird pro Rechnung festgelegt und ist unabhängig von der Oberflächensprache.
 
 ## Tarife
 
-MyCompanyDesk hat zwei kostenpflichtige Tarife: Starter und Pro. Neue Kunden erhalten eine 60-tagige Pro-Testphase.
+MyCompanyDesk hat zwei kostenpflichtige Tarife: Starter und Pro. Neue Kunden erhalten eine 60-tägige Pro-Testphase.
 
 | Funktion | Starter | Pro |
 |---|---|---|
 | Rechnungen, Angebote, Kunden | Unbegrenzt | Unbegrenzt |
 | Ausgabenverfolgung | Vollständig | Vollständig |
-| Belegscanner | Ja | Ja |
+| Belegscanner | Ja (30 Scans/Monat) | Ja (200 Scans/Monat) |
 | KI-Vorschläge | Ja | Ja |
 | Individuelles Branding | Ja | Ja |
 | Zeiterfassung, Sprachwerkzeuge | Ja | Ja |
-| Offentliche Unternehmensseite | Ja | Ja |
-| Teammitglieder | 1 | 1 (erweiterbar mit Sitz-Add-ons) |
-| Berichte & Export | Vollständig | Vollständig |
-| Verträge, Immobilien, Projekte | - | Ja |
-| Geschaftliche Mailbox auf Ihrer Domain | - | Ja |
+| Öffentliche Unternehmensseite | Ja | Ja |
+| Verträge und Projekte | Ja | Ja |
+| Berichte und CSV/Excel-Export | Ja | Ja |
+| Teamzugang | Nur Sie | Unbegrenzt viele Personen |
+| Geschäftliche Mailbox auf Ihrer Domain | - | Ja |
+| Bankverbindungen | - | Bis zu 3 |
 | Multi-Domain, eigene Domain-Routing | - | Ja |
 | Erweiterte Berichte, Prioritäts-Support | - | Ja |
 | API-Zugang, Webhooks | - | Ja |

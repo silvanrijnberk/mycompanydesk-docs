@@ -21,9 +21,9 @@ MyCompanyDesk is een alles-in-een boekhoud- en bedrijfsmanagementplatform, ontwo
 
 ## Interfacetaal
 
-De interface van MyCompanyDesk is Nederlandstalig.
+Je kunt de interface van MyCompanyDesk gebruiken in het Nederlands, Engels, Duits of Frans, en je kunt op elk moment van taal wisselen.
 
-Facturen, offertes en e-mails kunnen in het Nederlands, Engels, Duits of Frans worden verstuurd. De documenttaal stel je per factuur in en is onafhankelijk van de interfacetaal.
+Facturen, offertes en e-mails kunnen ook in het Nederlands, Engels, Duits of Frans worden verstuurd. De documenttaal stel je per factuur in en is onafhankelijk van de interfacetaal.
 
 ## Abonnementen
 
@@ -33,15 +33,16 @@ MyCompanyDesk heeft twee betaalde abonnementen: Starter en Pro. Nieuwe klanten k
 |---|---|---|
 | Facturen, offertes, klanten | Onbeperkt | Onbeperkt |
 | Uitgaven bijhouden | Volledig | Volledig |
-| Bonnen scannen | Ja | Ja |
+| Bonnen scannen | Ja (30 scans/maand) | Ja (200 scans/maand) |
 | AI-suggesties | Ja | Ja |
 | Eigen huisstijl | Ja | Ja |
 | Urenregistratie, taalopties | Ja | Ja |
 | Openbare bedrijfspagina | Ja | Ja |
-| Teamleden | 1 | 1 (uitbreidbaar met stoel-add-ons) |
-| Rapportages & export | Volledig | Volledig |
-| Contracten, panden, projecten | - | Ja |
+| Contracten en projecten | Ja | Ja |
+| Rapportages en CSV/Excel-export | Ja | Ja |
+| Teamtoegang | Alleen jij | Onbeperkt aantal mensen |
 | Zakelijke mailbox op je domein | - | Ja |
+| Bankkoppelingen | - | Maximaal 3 |
 | Multi-domein, eigen domein routering | - | Ja |
 | Geavanceerde rapporten, prioriteitsondersteuning | - | Ja |
 | API-toegang, webhooks | - | Ja |
