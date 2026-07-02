@@ -1,15 +1,27 @@
 ---
 title: Two-factor authentication
-last_verified: 2026-05-09
+last_verified: 2026-07-02
 chatbot:
   triggers: ["two factor", "two-factor", "2fa", "two step", "authenticator", "mfa", "tweestapsverificatie", "twee-factor", "zwei faktor", "authentification deux facteurs", "double authentification"]
   actions:
-    - { label: "Open profile security", to: "/profile?section=security" }
+    - { label: "Open login settings", to: "/settings/inloggen" }
   follow_up: ["How do I change my password?", "How do I reset a forgotten password?", "How do I manage team access?"]
 ---
 
-Two-factor authentication is currently not available in this app build.
+Two-factor authentication (2FA) adds a 6-digit code from an authenticator app on top of your password.
 
-You can still open Profile → Security to review the security options that are available there now.
+To enable 2FA:
+1. Go to Settings ("Instellingen") → "Inloggen"
+2. Click "Enable authenticator app" and scan the QR code with an authenticator app (Google Authenticator, 1Password, Authy)
+3. Enter the 6-digit code from the app and click "Verify & enable"
+4. Save the backup codes that appear. Each code works once when you don't have your authenticator at hand
 
-If 2FA is added later, it will appear in that section.
+From then on, signing in asks for the 6-digit code after your email and password. Check "Remember this device for 30 days" and trusted devices skip the code.
+
+On the same page you can also add passkeys (Touch ID, Face ID, Windows Hello or your phone), give each one a name, and remove the ones you no longer use. The login screen then offers passkey sign-in as well.
+
+Lost access to your authenticator? Enter one of your backup codes at sign-in, or use the "Lost access to your second factor?" link on the login screen. After a 24-hour security delay your second factor is cleared and you can sign in with just your password.
+
+To turn 2FA off, use the same settings page and confirm with a code from your authenticator app, a backup code, or your password.
+
+Tip: Download your backup codes as a .txt file and keep them somewhere safe, away from the device you sign in on.

@@ -1,101 +1,66 @@
 ---
-title: Integration e-mail
+title: E-mail
 ---
 
-# Integration e-mail
+# E-mail
 
-Configurez la maniere dont MyCompanyDesk envoie des e-mails a vos clients -- de la livraison des factures aux rappels de paiement.
+MyCompanyDesk envoie vos factures et devis par e-mail à vos clients. **Paramètres → E-mail** est l'endroit où vous gérez l'envoi : depuis quelle adresse vos documents partent, et la signature sous chaque message. La page est disponible dans tous les abonnements.
 
-## Ou trouver
+La réception des e-mails (la boîte de réception) se configure ailleurs ; voir [Recevoir : paramètres de la boîte de réception](#recevoir-parametres-de-la-boite-de-reception) ci-dessous.
 
-Ouvrez la boite de reception dans la navigation principale et allez dans l'onglet **Parametres**. C'est le point central pour toute la configuration de la boite de reception : boites mail, activite, domaine et options avancees.
+## Expéditeur
 
-## Methodes d'envoi d'e-mails
+La carte **Méthode d'envoi** détermine quelle adresse vos clients voient comme expéditeur. Il y a trois options.
 
-MyCompanyDesk prend en charge quatre manieres d'envoyer des e-mails. La methode d'envoi que vous avez choisie est toujours respectee pour les factures et rappels automatises. Si vous configurez une boite de reception sur votre domaine, elle ne remplace pas ce choix -- la boite de reception sert a recevoir et a repondre, tandis que votre methode d'envoi choisie gere les e-mails transactionnels sortants.
+### Votre propre domaine
 
-### 1. E-mail integre (par defaut)
+Envoyez des factures depuis votre propre domaine, comme votre boîte de réception. Les clients voient votre adresse comme expéditeur.
 
-Par defaut, les e-mails sont envoyes via le service de messagerie de MyCompanyDesk. Aucune configuration necessaire.
+- L'envoi depuis votre propre domaine fait partie de l'abonnement Pro ; dans les autres abonnements, l'option affiche un lien de mise à niveau.
+- Vous avez déjà un domaine connecté ? La carte propose un bouton d'activation en un clic (**Activer l'e-mail sur votredomaine.fr**). C'est sans danger pour votre e-mail existant : si votre domaine reçoit déjà du courrier ailleurs (par exemple Gmail ou Microsoft 365), MyCompanyDesk vous avertit et ne prend rien en main.
+- Pas encore de domaine ? Le lien **Ajouter un domaine** vous amène aux paramètres de domaine.
+- Une fois l'envoi actif, la carte affiche l'adresse depuis laquelle vos documents partent, avec un lien vers les enregistrements DNS.
 
-### 2. Integration Gmail
+### Gmail
 
-Envoyez des e-mails directement depuis votre compte Gmail :
+Connectez votre compte Google avec **Connecter Gmail**. Les e-mails partent de votre adresse Gmail et apparaissent dans votre dossier Messages envoyés de Gmail.
 
-1. Allez dans **Boite de reception > Parametres** et ouvrez **Envoi**
-2. Cliquez sur **Connecter Gmail**
-3. Autorisez MyCompanyDesk a envoyer en votre nom via Google OAuth
-4. Les e-mails apparaissent desormais comme envoyes depuis votre adresse Gmail
+### Outlook / Microsoft 365
 
-**Avantages :**
+Connectez votre compte Microsoft avec **Connecter Outlook**. Les e-mails partent de votre adresse Outlook ou Microsoft 365.
 
-- Les e-mails affichent votre adresse Gmail comme expediteur
-- Les e-mails envoyes apparaissent dans votre dossier Gmail Envoyes
-- Meilleure delivrabilite (reputation de votre propre domaine)
+Les documents sont toujours envoyés sous votre propre identité. Si aucun expéditeur n'est encore configuré, MyCompanyDesk vous demande d'abord de connecter Gmail ou Outlook, ou d'activer votre propre domaine, avant qu'un e-mail de facture ou de devis puisse partir.
 
-### 3. Integration Outlook / Microsoft
+### Envoyer les factures depuis
 
-Envoyez depuis votre compte Outlook ou Microsoft 365 :
+Quand votre propre domaine est actif et compte plusieurs adresses, un choix supplémentaire apparaît : **Envoyer les factures depuis**. Choisissez quelle adresse vos clients voient comme expéditeur sur les factures et les devis.
 
-1. Allez dans **Boite de reception > Parametres** et ouvrez **Envoi**
-2. Cliquez sur **Connecter Outlook**
-3. Autorisez via Microsoft OAuth
-4. Les e-mails sont envoyes depuis votre adresse Outlook
+## Votre signature
 
-## Modeles d'e-mail
+Le pied de page sous chaque e-mail sortant est construit automatiquement à partir des informations que vous remplissez ici :
 
-Personnalisez les e-mails envoyes avec vos factures et rappels.
+- **E-mail de support**
+- **Site web**
+- Liens sociaux (LinkedIn, X, Facebook, Instagram)
 
-### Modele d'e-mail de facture
+Tout ce que vous remplissez est repris ; ce qui reste vide est simplement omis. Ces champs sont partagés avec les informations de votre entreprise : que vous les modifiiez ici ou sous **Paramètres → Informations de l'entreprise**, les deux restent synchronisés.
 
-L'e-mail par defaut envoye lors de la livraison d'une facture. Personnalisez :
+## Textes des e-mails
 
-- **Objet** -- L'objet de l'e-mail (prend en charge les variables comme le numero de facture)
-- **Corps** -- Le contenu du message
-- **Langue** -- Definissez des modeles par langue
+Les e-mails de facture, de devis et de rappel utilisent les textes standard et éprouvés de MyCompanyDesk, dans la langue de vos documents. Il n'y a aucun modèle par type de document à entretenir. Avant l'envoi d'un document, la fenêtre d'envoi vous permet encore d'ajuster le destinataire, l'objet et le message de cet e-mail précis, et de choisir d'inclure le bouton de consultation, le bouton de téléchargement, la pièce jointe PDF et les lignes de facture. Voir [Modèles d'e-mail](/fr/faq/email-template).
 
-### Modele d'e-mail de rappel
+## Recevoir : paramètres de la boîte de réception
 
-L'e-mail envoye lors du suivi des factures en retard. Personnalisez les memes champs que ci-dessus mais avec un ton plus urgent.
+Tout ce qui concerne la réception du courrier se trouve sur la page de paramètres de la boîte de réception (**Boîte de réception → Paramètres**) :
 
-### Apercu
+- **Boîtes & adresses** : vos adresses, alias et la durée de conservation des messages.
+- **Activité** : les dernières livraisons sortantes, utile quand vous vous demandez si un client a bien reçu votre facture.
+- **Expéditeurs approuvés** : des expéditeurs qui ne sont jamais marqués comme spam.
+- **Suppression de données RGPD** : supprimez toutes les conversations et pièces jointes d'une adresse précise (administrateurs uniquement).
 
-Avant l'envoi, vous pouvez previsualiser n'importe quel e-mail pour voir exactement ce que votre client recevra :
+Les règles pour le courrier entrant se trouvent sous **Boîte de réception → Paramètres → Règles & routage**.
 
-- Rendu HTML avec votre image de marque
-- Apercu de la piece jointe PDF
-- Inclusion du lien de paiement
+## Voir aussi
 
-## Variables
-
-Les modeles d'e-mail prennent en charge les variables dynamiques :
-
-| Variable | Description |
-|---|---|
-| `{invoice_number}` | Le numero de facture |
-| `{customer_name}` | Le nom du client |
-| `{amount}` | Le montant total de la facture |
-| `{due_date}` | La date d'echeance du paiement |
-| `{company_name}` | Le nom de votre entreprise |
-| `{payment_link}` | Le lien vers le paiement en ligne |
-
-## Activite e-mail
-
-Un apercu de tous les e-mails envoyes au cours des 90 derniers jours se trouve dans **Boite de reception > Parametres** sous Journal d'activite.
-
-## Notifications
-
-Configurez les notifications par e-mail que vous recevez :
-
-- **Facture payee** -- Recevez une notification lorsqu'un client paie
-- **Demande de devis recue** -- Alerte pour les nouvelles demandes de devis
-- **Activite de l'equipe** -- Mises a jour sur les actions des membres de l'equipe
-
-Les preferences de notification peuvent etre definies dans votre [Profil](/fr/account/profile).
-
-## Conseils
-
-- Connectez Gmail ou Outlook pour la meilleure delivrabilite
-- Testez toujours votre modele d'e-mail avant d'envoyer votre premiere facture
-- Configurez des modeles specifiques par langue si vous servez des clients dans plusieurs langues
-- Utilisez le modele de rappel pour des relances professionnelles sur les factures en retard
+- [Paramètres de l'entreprise](/fr/settings/company) : les informations d'entreprise derrière votre signature
+- [Abonnement & paiements](/fr/settings/billing) : l'envoi depuis votre propre domaine fait partie de Pro

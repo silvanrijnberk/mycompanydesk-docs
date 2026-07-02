@@ -1,47 +1,58 @@
 ---
-title: Integration API
+title: Intégration API
 ---
 
-# Integration API
+# Intégration API
 
-Accedez a vos donnees MyCompanyDesk de maniere programmatique via l'API REST.
+Accédez à vos données MyCompanyDesk de manière programmatique via l'API REST.
 
 ::: info
-L'acces API necessite le plan **Pro**.
+L'accès API fait partie du plan **Pro**.
 :::
 
 ## Vue d'ensemble
 
 L'API MyCompanyDesk vous permet de :
 
-- Creer et recuperer des factures, depenses et clients
+- Créer et récupérer des factures, dépenses et clients
 - Automatiser les flux de facturation
-- Integrer d'autres outils professionnels
-- Creer des rapports personnalises
-- Synchroniser les donnees avec des systemes externes
+- Intégrer d'autres outils professionnels
+- Créer des rapports personnalisés
+- Synchroniser les données avec des systèmes externes
 
 ## Authentification
 
-Toutes les requetes API necessitent une cle API envoyee dans l'en-tete de la requete :
+Envoyez votre clé API dans l'en-tête `X-API-Key` :
 
+```bash
+curl -X GET "https://api.mycompanydesk.com/api/invoices" \
+  -H "X-API-Key: mcd_live_xxxxx"
 ```
-Authorization: Bearer YOUR_API_KEY
-```
 
-### Creer une cle API
+L'en-tête `Authorization: Bearer` est réservé aux sessions navigateur. Les clés API vont toujours dans `X-API-Key`.
 
-1. Allez dans **Parametres > Cles API**
-2. Cliquez sur **Generer une nouvelle cle**
-3. Donnez a la cle un nom descriptif
-4. Copiez la cle -- elle n'est affichee qu'une seule fois
+### Créer une clé API
+
+1. Allez dans **Paramètres > Clés API**
+2. Cliquez sur **Créer une clé API**
+3. Donnez à la clé un nom descriptif et choisissez ses permissions
+4. Copiez la clé immédiatement, elle n'est affichée qu'une seule fois
+
+Lors de la création d'une clé, vous pouvez définir :
+
+- **Permissions** : *Lecture* (consulter les données), *Écriture* (créer, modifier et supprimer) et *Admin* (accès complet)
+- **Liste d'IP autorisées** (optionnel) : limitez la clé à des adresses IP spécifiques
+- **Expiration** (optionnel) : 30 jours, 90 jours, 1 an ou jamais
+
+Vous pouvez révoquer une clé à tout moment depuis la même page. Les clés révoquées perdent immédiatement leur accès.
 
 ::: warning
-Conservez votre cle API en lieu sur. Ne la commitez jamais dans un depot de code source et ne la partagez jamais publiquement.
+Conservez votre clé API en lieu sûr. Ne la validez jamais dans un dépôt de code et ne la partagez pas publiquement.
 :::
 
 ## URL de base
 
-Tous les endpoints API sont disponibles a l'adresse :
+Tous les endpoints de l'API sont disponibles sur :
 
 ```
 https://api.mycompanydesk.com/api
@@ -51,54 +62,58 @@ https://api.mycompanydesk.com/api
 
 ### Clients
 
-| Methode | Endpoint | Description |
+| Méthode | Endpoint | Description |
 |---|---|---|
 | `GET` | `/customers` | Lister tous les clients |
-| `POST` | `/customers` | Creer un client |
-| `GET` | `/customers/:id` | Obtenir un client |
-| `PUT` | `/customers/:id` | Mettre a jour un client |
+| `POST` | `/customers` | Créer un client |
+| `GET` | `/customers/:id` | Récupérer un client |
+| `PUT` | `/customers/:id` | Mettre à jour un client |
 | `DELETE` | `/customers/:id` | Supprimer un client |
 
 ### Factures
 
-| Methode | Endpoint | Description |
+| Méthode | Endpoint | Description |
 |---|---|---|
 | `GET` | `/invoices` | Lister toutes les factures |
-| `POST` | `/invoices` | Creer une facture |
-| `GET` | `/invoices/:id` | Obtenir une facture |
-| `PUT` | `/invoices/:id` | Mettre a jour une facture |
+| `POST` | `/invoices` | Créer une facture |
+| `GET` | `/invoices/:id` | Récupérer une facture |
+| `PUT` | `/invoices/:id` | Mettre à jour une facture |
 | `DELETE` | `/invoices/:id` | Supprimer une facture |
-| `POST` | `/invoices/:id/send` | Envoyer une facture |
-| `POST` | `/invoices/:id/mark-paid` | Marquer comme payee |
+| `GET` | `/invoices/:id/pdf` | Télécharger le PDF de la facture |
+| `POST` | `/invoices/:id/email` | Envoyer la facture par e-mail |
+| `POST` | `/invoices/:id/reminder` | Envoyer un rappel de paiement |
+| `POST` | `/invoices/:id/duplicate` | Dupliquer une facture |
+| `POST` | `/invoices/:id/credit-note` | Créer un avoir |
 
-### Depenses
+### Dépenses
 
-| Methode | Endpoint | Description |
+| Méthode | Endpoint | Description |
 |---|---|---|
-| `GET` | `/expenses` | Lister toutes les depenses |
-| `POST` | `/expenses` | Creer une depense |
-| `GET` | `/expenses/:id` | Obtenir une depense |
-| `PUT` | `/expenses/:id` | Mettre a jour une depense |
-| `DELETE` | `/expenses/:id` | Supprimer une depense |
+| `GET` | `/expenses` | Lister toutes les dépenses |
+| `POST` | `/expenses` | Créer une dépense |
+| `GET` | `/expenses/:id` | Récupérer une dépense |
+| `PUT` | `/expenses/:id` | Mettre à jour une dépense |
+| `DELETE` | `/expenses/:id` | Supprimer une dépense |
 
 ### Projets
 
-| Methode | Endpoint | Description |
+| Méthode | Endpoint | Description |
 |---|---|---|
 | `GET` | `/projects` | Lister tous les projets |
-| `POST` | `/projects` | Creer un projet |
-| `GET` | `/projects/:id` | Obtenir un projet |
-| `PUT` | `/projects/:id` | Mettre a jour un projet |
+| `POST` | `/projects` | Créer un projet |
+| `GET` | `/projects/:id` | Récupérer un projet |
+| `PUT` | `/projects/:id` | Mettre à jour un projet |
+| `DELETE` | `/projects/:id` | Supprimer un projet |
 
 ### Recherche
 
-| Methode | Endpoint | Description |
+| Méthode | Endpoint | Description |
 |---|---|---|
-| `GET` | `/search?q=term&type=entity` | Rechercher parmi les entites |
+| `GET` | `/search?q=term&type=entity` | Rechercher parmi toutes les entités |
 
 ## Filtrage
 
-Les endpoints de liste prennent en charge les parametres de requete pour le filtrage :
+Les endpoints de liste acceptent des paramètres de requête pour filtrer :
 
 ```
 GET /api/invoices?status=sent&customer_id=123&limit=50
@@ -106,57 +121,75 @@ GET /api/invoices?status=sent&customer_id=123&limit=50
 
 Filtres courants :
 
-- `status` -- Filtrer par statut
-- `customer_id` -- Filtrer par client
-- `project_id` -- Filtrer par projet
-- `limit` -- Nombre de resultats (par defaut : 50)
-- `offset` -- Decalage de pagination
+- `status` : filtrer par statut
+- `customer_id` : filtrer par client
+- `search` : recherche en texte libre
+- `date_from` / `date_to` : filtrer par plage de dates
+- `limit` : nombre de résultats
+- `offset` : décalage de pagination
 
-## Limitation de debit
+## Limitation de débit
 
-Les requetes API sont soumises a une limitation de debit pour garantir une utilisation equitable :
-
-- La limite standard s'applique par cle API
-- Le depassement de la limite renvoie une reponse `429 Too Many Requests`
-- Incluez une strategie de reessai dans votre integration
+Les requêtes API sont limitées à 200 requêtes par minute. Chaque réponse contient les en-têtes `X-RateLimit-Limit`, `X-RateLimit-Remaining` et `X-RateLimit-Reset`. En cas de dépassement, vous recevez une réponse `429 Too Many Requests` avec un en-tête `Retry-After`, prévoyez donc une stratégie de nouvelle tentative dans votre intégration.
 
 ## Gestion des erreurs
 
-L'API renvoie des codes de statut HTTP standard :
+L'API renvoie les codes de statut HTTP standard :
 
 | Code | Description |
 |---|---|
-| `200` | Succes |
-| `201` | Cree |
-| `400` | Requete invalide (verifiez vos parametres) |
-| `401` | Non autorise (cle API invalide) |
+| `200` | Succès |
+| `201` | Créé |
+| `400` | Requête invalide (vérifiez vos paramètres) |
+| `401` | Non autorisé (clé API invalide) |
 | `403` | Interdit (permissions insuffisantes) |
-| `404` | Non trouve |
-| `429` | Debit limite |
+| `404` | Introuvable |
+| `429` | Limite de débit atteinte |
 | `500` | Erreur serveur |
 
-Les reponses d'erreur incluent un corps JSON :
+Les réponses d'erreur contiennent un corps JSON :
 
 ```json
 {
-  "error": "Description de ce qui s'est mal passe"
+  "error": "Description du problème"
 }
 ```
 
 ## Webhooks
 
-Configurez des webhooks pour recevoir des notifications en temps reel lorsque des evenements se produisent :
+Les webhooks notifient vos systèmes en temps réel lorsqu'un événement se produit dans votre compte. Configurez-les dans **Paramètres > Webhooks** : donnez au webhook un nom et une URL, puis choisissez les événements que vous souhaitez recevoir.
 
-- Facture envoyee
-- Facture payee
-- Client cree
-- Depense ajoutee
+Événements disponibles :
 
-Configurez les webhooks dans **Parametres > Cles API > Webhooks**.
+- `invoice.created`, `invoice.updated`, `invoice.paid`, `invoice.overdue`
+- `expense.created`, `expense.updated`, `expense.deleted`
+- `customer.created`, `customer.updated`
+- `inbox.thread.received`, `inbox.message.received`
+- `test.ping` (pour tester votre endpoint)
+
+Chaque livraison est un `POST` HTTP avec un corps JSON :
+
+```json
+{
+  "id": "event id",
+  "type": "invoice.paid",
+  "company_id": 123,
+  "created_at": "2026-07-02T12:00:00.000Z",
+  "data": { }
+}
+```
+
+### Vérifier les livraisons
+
+Chaque webhook possède un secret de signature, affiché une seule fois à la création (vous pouvez le renouveler plus tard). Chaque livraison contient un en-tête `X-MCD-Signature` avec un hachage HMAC-SHA256 (hex) du corps brut de la requête, calculé avec votre secret de signature. Recalculez le hachage de votre côté et comparez-le à l'en-tête avant de faire confiance à la charge utile. Les en-têtes `X-MCD-Event-Type`, `X-MCD-Event-Id` et `X-MCD-Delivery-Id` identifient la livraison.
+
+### Nouvelles tentatives
+
+Les livraisons échouées sont réessayées automatiquement avec des délais croissants. Un endpoint qui échoue de manière répétée est désactivé automatiquement ; réactivez-le depuis la page des webhooks dès que votre endpoint fonctionne à nouveau.
 
 ## Conseils
 
-- Utilisez la pagination pour les grands ensembles de donnees
-- Mettez en cache les reponses lorsque c'est possible pour reduire les appels API
-- Implementez une logique de reessai avec un backoff exponentiel pour les limites de debit
-- Utilisez les webhooks au lieu du polling pour les mises a jour en temps reel
+- Utilisez la pagination pour les grands volumes de données
+- Mettez en cache les réponses lorsque c'est pertinent pour réduire les appels API
+- Implémentez une logique de nouvelle tentative avec backoff exponentiel pour les limites de débit
+- Utilisez les webhooks plutôt que le polling pour les mises à jour en temps réel

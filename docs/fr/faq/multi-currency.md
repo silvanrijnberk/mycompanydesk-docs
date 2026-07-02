@@ -1,17 +1,15 @@
 ---
-title: "Multi currency"
-last_verified: 2026-05-09
+title: "Plusieurs devises"
+last_verified: 2026-07-02
 chatbot:
   triggers: ["multi currency", "different currency", "foreign currency", "invoice in dollars", "invoice in pounds", "andere valuta", "vreemde valuta", "andere wahrung", "devise etrangere", "dollar invoice", "pound invoice"]
   actions:
-    - { label: "Open profile preferences", to: "/profile?section=preferences" }
     - { label: "Create invoice", to: "/invoices/new" }
-  follow_up: ["How do I change my default currency?", "How do I set up my company settings?"]
+  follow_up: ["How do I set up my company settings?", "How do I change my language?"]
 ---
 
-Comportement actuel pour les devises :
-1. Définissez votre devise par défaut dans Mon compte → Préférences
-2. Les nouveaux documents utilisent cette valeur par défaut lorsque c'est pris en charge
-3. Les factures existantes conservent la devise avec laquelle elles ont été enregistrées
+MyCompanyDesk fonctionne uniquement en euros. Toutes les factures, tous les devis, toutes les dépenses et tous les rapports sont en EUR. Il n'existe aucun réglage de devise ni de sélecteur de devise par document ; c'est un choix produit délibéré, pas une préférence manquante.
 
-Le formulaire de facture actuel ne propose pas de sélecteur de devise par facture.
+Si vous facturez un client à l'étranger, la facture reste en euros.
+
+Astuce : convenez à l'avance avec vos clients étrangers d'une facturation en euros. Ils paient le montant en euros et la conversion éventuelle se fait de leur côté.

@@ -4,47 +4,48 @@ title: Keyboard Shortcuts
 
 # Keyboard Shortcuts
 
-Navigate MyCompanyDesk faster with keyboard shortcuts.
+MyCompanyDesk keeps its set of keyboard shortcuts deliberately small. The shortcuts below are the ones that work today.
 
-## Global shortcuts
-
-| Shortcut | Action |
-|---|---|
-| `/` | Focus search |
-| `?` | Show keyboard shortcuts help |
-
-## Navigation
+## Search palette
 
 | Shortcut | Action |
 |---|---|
-| `G` then `D` | Go to Dashboard |
-| `G` then `I` | Go to Invoices |
-| `G` then `Q` | Go to Quotes |
-| `G` then `E` | Go to Expenses |
-| `G` then `C` | Go to Customers |
-| `G` then `P` | Go to Projects |
-| `G` then `R` | Go to Reports |
-| `G` then `S` | Go to Settings |
+| `Cmd+K` (Mac) / `Ctrl+K` (Windows/Linux) | Open or close the search palette |
 
-## Actions
+The search palette is the fastest way to move around the app:
 
-| Shortcut | Action |
-|---|---|
-| `A` | Add new (context-dependent) |
-| `E` | Edit current item |
-| `S` | Send (invoice/quote) |
-| `Escape` | Close modal or drawer |
+- Type at least two characters to search your customers, invoices, and expenses (plus projects, contracts, and properties when those features are enabled).
+- Settings are searchable too: type something like "VAT" or "reminders" to jump straight to the matching settings card.
+- Quick actions let you jump to any section or start a new invoice, quote, expense, or customer.
+- Filter chips under the search box narrow results to a single type.
 
-## List pages
+Inside the palette:
 
 | Shortcut | Action |
 |---|---|
-| `J` / `K` | Navigate down / up in list |
-| `Enter` | Open selected item |
-| `X` | Toggle selection (for bulk actions) |
+| `Up` / `Down` | Move through the results |
+| `Enter` | Open the highlighted result |
+| `Esc` | Close the palette |
 
-## Tips
+## Escape
 
-- Shortcuts work when no input field is focused
-- Press `?` on any page to see available shortcuts
-- Combine navigation shortcuts for quick access (e.g., `G` then `I` to jump to invoices)
+`Esc` steps back one level at a time:
+
+- While typing in a field, it removes focus from that field.
+- With a dialog open, it closes the dialog.
+- On a detail page, it takes you back to the list (the same as the back button).
+
+## Site builder
+
+While editing your website in the site builder:
+
+| Shortcut | Action |
+|---|---|
+| `Cmd+Z` / `Ctrl+Z` | Undo |
+| `Cmd+Shift+Z` / `Ctrl+Shift+Z` or `Ctrl+Y` | Redo |
+
+While a text field is focused, undo and redo apply to the text you are typing. Click outside the field first to undo a whole editing step.
+
+## Forms
+
+Standard browser keys work everywhere: `Tab` and `Shift+Tab` move between fields, and `Enter` submits most forms.

@@ -1,17 +1,15 @@
 ---
 title: "Multi currency"
-last_verified: 2026-05-09
+last_verified: 2026-07-02
 chatbot:
   triggers: ["multi currency", "different currency", "foreign currency", "invoice in dollars", "invoice in pounds", "andere valuta", "vreemde valuta", "andere wahrung", "devise etrangere", "dollar invoice", "pound invoice"]
   actions:
-    - { label: "Open profile preferences", to: "/profile?section=preferences" }
     - { label: "Create invoice", to: "/invoices/new" }
-  follow_up: ["How do I change my default currency?", "How do I set up my company settings?"]
+  follow_up: ["How do I set up my company settings?", "How do I change my language?"]
 ---
 
-Current behavior for currency:
-1. Set your default currency in My Account → Preferences
-2. New documents use that default where supported
-3. Existing invoices keep the currency they were saved with
+MyCompanyDesk works in euros only. All invoices, quotes, expenses, and reports are in EUR. There is no currency setting and no per-document currency picker; this is a deliberate product choice, not a missing preference.
 
-The current invoice form does not expose a dedicated per-invoice currency picker.
+If you bill a customer abroad, the invoice is still in euros.
+
+Tip: Agree with foreign clients up front that you invoice in EUR. They pay the euro amount, and any conversion happens on their side.

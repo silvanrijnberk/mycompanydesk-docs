@@ -4,47 +4,48 @@ title: Tastenkombinationen
 
 # Tastenkombinationen
 
-Navigieren Sie schneller durch MyCompanyDesk mit Tastenkombinationen.
+MyCompanyDesk hält die Zahl der Tastenkombinationen bewusst klein. Unten stehen die Kombinationen, die tatsächlich funktionieren.
 
-## Globale Tastenkombinationen
-
-| Tastenkombination | Aktion |
-|---|---|
-| `/` | Suche fokussieren |
-| `?` | Hilfe zu Tastenkombinationen anzeigen |
-
-## Navigation
+## Suchfenster
 
 | Tastenkombination | Aktion |
 |---|---|
-| `G` dann `D` | Zum Dashboard gehen |
-| `G` dann `I` | Zu Rechnungen gehen |
-| `G` dann `Q` | Zu Angeboten gehen |
-| `G` dann `E` | Zu Ausgaben gehen |
-| `G` dann `C` | Zu Kunden gehen |
-| `G` dann `P` | Zu Projekten gehen |
-| `G` dann `R` | Zu Berichten gehen |
-| `G` dann `S` | Zu Einstellungen gehen |
+| `Cmd+K` (Mac) / `Strg+K` (Windows/Linux) | Suchfenster öffnen oder schließen |
 
-## Aktionen
+Das Suchfenster ist der schnellste Weg durch die App:
 
-| Tastenkombination | Aktion |
-|---|---|
-| `A` | Neu hinzufügen (kontextabhängig) |
-| `E` | Aktuelles Element bearbeiten |
-| `S` | Senden (Rechnung/Angebot) |
-| `Escape` | Modal oder Schublade schließen |
+- Geben Sie mindestens zwei Zeichen ein, um Ihre Kunden, Rechnungen und Ausgaben zu durchsuchen (plus Projekte, Verträge und Objekte, wenn diese Bereiche aktiviert sind).
+- Auch Einstellungen sind durchsuchbar: Tippen Sie zum Beispiel "USt" oder "Erinnerungen", um direkt zur passenden Einstellungskarte zu springen.
+- Mit Schnellaktionen springen Sie zu jedem Bereich oder starten eine neue Rechnung, ein Angebot, eine Ausgabe oder einen Kunden.
+- Mit den Filter-Chips unter dem Suchfeld begrenzen Sie die Ergebnisse auf einen einzelnen Typ.
 
-## Listenseiten
+Innerhalb des Suchfensters:
 
 | Tastenkombination | Aktion |
 |---|---|
-| `J` / `K` | In der Liste nach unten / oben navigieren |
-| `Enter` | Ausgewähltes Element öffnen |
-| `X` | Auswahl umschalten (für Massenaktionen) |
+| `Pfeil hoch` / `Pfeil runter` | Durch die Ergebnisse bewegen |
+| `Enter` | Das markierte Ergebnis öffnen |
+| `Esc` | Suchfenster schließen |
 
-## Tipps
+## Escape
 
-- Tastenkombinationen funktionieren, wenn kein Eingabefeld fokussiert ist
-- Drücken Sie `?` auf einer beliebigen Seite, um verfügbare Tastenkombinationen anzuzeigen
-- Kombinieren Sie Navigationstastenkombinationen für schnellen Zugriff (z. B. `G` dann `I`, um zu Rechnungen zu springen)
+Mit `Esc` gehen Sie jeweils eine Ebene zurück:
+
+- Beim Tippen in einem Feld wird der Fokus vom Feld entfernt.
+- Bei einem geöffneten Dialog wird der Dialog geschlossen.
+- Auf einer Detailseite kehren Sie zur Liste zurück (wie mit der Zurück-Schaltfläche).
+
+## Website-Editor
+
+Beim Bearbeiten Ihrer Website im Website-Editor:
+
+| Tastenkombination | Aktion |
+|---|---|
+| `Cmd+Z` / `Strg+Z` | Rückgängig |
+| `Cmd+Umschalt+Z` / `Strg+Umschalt+Z` oder `Strg+Y` | Wiederholen |
+
+Solange ein Textfeld fokussiert ist, wirken Rückgängig und Wiederholen auf den Text, den Sie gerade tippen. Klicken Sie zuerst außerhalb des Feldes, um einen ganzen Bearbeitungsschritt zurückzunehmen.
+
+## Formulare
+
+Die üblichen Browser-Tasten funktionieren überall: Mit `Tab` und `Umschalt+Tab` wechseln Sie zwischen Feldern, mit `Enter` senden Sie die meisten Formulare ab.

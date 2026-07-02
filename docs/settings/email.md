@@ -1,109 +1,67 @@
 ---
 title: Email
-last_verified: 2026-05-09
+last_verified: 2026-07-02
 ---
 
 # Email
 
-Your business has its own email address. Customers write to it, you reply, and we send your invoices and quotes from there.
+MyCompanyDesk emails your invoices and quotes to your customers. **Settings → Email** is where you control the sending side: which address your documents go out from, and the sign-off under every message. The page is available on every plan.
 
-## Where to find it
+Receiving email (the Inbox) is configured elsewhere; see [Receiving: Inbox settings](#receiving-inbox-settings) below.
 
-Open the inbox from the main navigation, go to the **Instellingen** (Settings) tab. The whole legacy `/workspace/email/*` and `/workspace/communication/*` tree redirects into the inbox email settings — e.g. `/workspace/email/templates` now lands on `/inbox/settings/messages` and `/workspace/email/signature` on `/inbox/settings/signature`.
+## Sender
 
-The umbrella page renders different content depending on where you are in setup. The state machine is:
+The **Delivery method** card decides which address your customers see as the sender. There are three options.
 
-| State | What you see |
-|---|---|
-| `live` | Your inbox address, an "Open inbox" button, and the five tile menu below |
-| `dns_pending` | "DNS still propagating" with a check-again button |
-| `mx_conflict` | Apex MX conflict warning (your domain already runs Gmail or Microsoft 365) |
-| `inbox_off` | "Turn on email" — a one-click `quickEnableInbox` action |
-| `subdomain_reserved` | Free `acme.mycompanydesk.com` subdomain reserved, awaiting routing rollout |
-| `empty` | CTA to the `/setup` magical wizard |
+### Your own domain
 
-Email is gated by the `inbox` feature (Pro). Free and Starter workspaces see the upgrade prompt instead.
+Send invoices from your own domain, just like your inbox. Customers see your address as the sender.
 
-## What you can change
+- Sending from your own domain is part of the Pro plan; on other plans the option shows an upgrade link.
+- Already have a domain connected? The card offers a one-click enable button (**Enable email on yourdomain.com**). This is safe for existing email: if your domain already runs mail somewhere else (for example Gmail or Microsoft 365), MyCompanyDesk warns you and does not take it over.
+- No domain yet? The **Add domain** link takes you to the domain settings.
+- Once active, the card shows the address your documents are sent from, with a link to the DNS records.
 
-Once email is live, the umbrella shows five tiles.
+### Gmail
 
-### Where mail arrives
+Connect your Google account with **Connect Gmail**. Emails go out from your Gmail address and appear in your Gmail Sent folder.
 
-Path: `/inbox/settings/address`
+### Outlook / Microsoft 365
 
-Your business email address, who else's mail lands here, and how long we keep it.
+Connect your Microsoft account with **Connect Outlook**. Emails go out from your Outlook or Microsoft 365 address.
 
-- **Default mailbox** — usually `info@yourdomain.com`, set during the wizard
-- **Send-only aliases** — addresses like `support@`, `sales@`, or `billing@` that you can compose from but that share the same inbox
-- **Apex catch-all** — every mailbox under your domain lands in the same inbox by default
-- **Retention controls** — how long messages stay in the archive
+Documents are always sent from your own identity. If no sender is set up yet, MyCompanyDesk asks you to connect Gmail or Outlook, or to enable your own domain, before an invoice or quote email can go out.
 
-The Pro plan includes one real mailbox plus unlimited send-from identities and multi-mailbox routing.
+### Send invoices from
 
-Wraps the `SettingsInbox` component (mailbox CRUD plus alias editor). Inner UI is scheduled for a future redesign; today it is reachable end-to-end.
+When your own domain is active and has more than one address, an extra picker appears: **Send invoices from**. Choose which of your addresses customers see as the sender on invoices and quotes.
 
-### What your emails say
+## Your sign-off
 
-Path: `/inbox/settings/messages`
+The footer under every outgoing email is built automatically from the details you fill in here:
 
-The text customers read when you send an invoice, quote, or reminder.
-
-- **Invoice template** — sent when delivering an invoice
-- **Quote template** — sent when delivering a quote
-- **Reminder template** — sent when following up on overdue invoices
-- **PDF attachment toggle** — whether to attach the PDF (default on)
-
-Each template has its own subject and body. Mustache-style placeholders like `{customer_name}` and `{invoice_number}` are filled in automatically when the email goes out.
-
-### Your sign-off
-
-Path: `/inbox/settings/signature`
-
-The footer at the bottom of every outgoing email. The page shows a live preview of the actual footer and a list of toggles for what to include:
-
-- Your name (the personal sender, useful when you have a team)
-- Website link (uses the website set under Company → About your business)
-- Support email (when you have a separate support address)
-- Your MyCompanyDesk business page (when public business page is enabled)
+- **Support email**
+- **Website**
 - Social links (LinkedIn, X, Facebook, Instagram)
 
-Toggles auto-disable with a friendly hint when the underlying field isn't filled in yet.
+Every item you fill in is included; anything left empty is simply skipped. These fields are shared with your company details, so editing them here or under **Settings → Company details** keeps both in sync.
 
-### How emails are sent
+## Email texts
 
-Path: `/inbox/settings/sending`
+Invoice, quote, and reminder emails use MyCompanyDesk's standard, well-tested texts, in your document language. There are no per-document templates to maintain. Before a document goes out, the send window still lets you adjust the recipient, subject, and message for that one email, and choose whether to include the view button, download button, PDF attachment, and invoice lines. See [Email templates](/faq/email-template).
 
-Most users never need to touch this. The default uses MyCompanyDesk's shared sender — delivery, retries, and reputation are handled for you.
+## Receiving: Inbox settings
 
-Your delivery method preference is always honored for automated invoice and reminder sends. If you set up an inbox on your domain, it does not override this choice — the inbox is for receiving mail and composing replies, while your selected delivery method handles transactional outgoing mail.
+Everything about receiving mail lives on the Inbox settings page (**Inbox → Settings**):
 
-The advanced strip exposes alternative delivery methods:
+- **Mailboxes & addresses**: your addresses, aliases, and how long messages are kept.
+- **Activity**: recent outbound delivery, useful when you wonder whether a customer received your invoice.
+- **Trusted senders**: senders that are never marked as spam.
+- **GDPR data removal**: delete all conversations and attachments from a specific address (admins only).
 
-- **Gmail** — connect via Google OAuth; emails go out from your Gmail address and appear in your Gmail Sent folder
-- **Outlook / Microsoft 365** — connect via Microsoft OAuth
-
-The whole page is "advanced" in spirit, so the body sits behind an `AdvancedStrip` with a friendly explanation up top.
-
-### List of everything sent
-
-Path: `/inbox/settings/log`
-
-Every email we sent for you in the last 90 days, what happened to it, and (when relevant) why it didn't reach the customer. Statuses include sent, delivered, opened, bounced, and failed. Wraps the `SettingsEmailActivity` table.
-
-## New email wizard
-
-When the email umbrella is in the `empty` state, the **Open the wizard** CTA sends you to `/setup` — the magical setup wizard that creates the address (free or your own domain), the info / support / sales mailboxes, and the email templates in your brand voice in about a minute.
-
-## Send-from identity picker
-
-When composing in the inbox, a single **Send from** control picks both the mailbox and the sender address. Reply-to threads default to the address the customer originally wrote to.
-
-## Delivery tracking
-
-Each sent message records its delivery state via webhook callbacks from the underlying provider. The state shows on the invoice or quote detail page (next to the **Sent** status) and in the activity log.
+Rules for incoming mail live under **Inbox → Settings → Rules & routing**.
 
 ## Related
 
-- [Company → Your own .com address](/settings/company) — the domain your email runs on
-- [Plan & payments](/settings/billing) — to unlock the `inbox` feature
+- [Company settings](/settings/company): the company details behind your sign-off
+- [Plan & payments](/settings/billing): sending from your own domain is part of Pro

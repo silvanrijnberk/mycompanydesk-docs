@@ -1,114 +1,66 @@
 ---
-title: E-mailintegratie
+title: E-mail
 ---
 
-# E-mailintegratie
+# E-mail
 
-Configureer hoe MyCompanyDesk e-mails verstuurt naar je klanten — van factuurverzending tot betalingsherinneringen.
+MyCompanyDesk stuurt je facturen en offertes per e-mail naar je klanten. Bij **Instellingen → E-mail** regel je de verzendkant: vanaf welk adres je documenten worden verstuurd en de afsluiter onder elk bericht. De pagina is op elk abonnement beschikbaar.
 
-## Waar te vinden
+E-mail ontvangen (de Inbox) stel je op een andere plek in; zie [Ontvangen: inboxinstellingen](#ontvangen-inboxinstellingen) hieronder.
 
-Open de inbox in de hoofdnavigatie en ga naar het tabblad **Instellingen**. Dit is de centrale plek voor alle inboxconfiguratie: mailboxes, log, domein en geavanceerde opties.
+## Afzender
 
-## E-mailverzendmethoden
+De kaart **Verzendmethode** bepaalt welk adres je klanten als afzender zien. Er zijn drie opties.
 
-MyCompanyDesk ondersteunt vier manieren om e-mails te versturen. Je gekozen verzendmethode wordt altijd gevolgd voor geautomatiseerde facturen en herinneringen. Als je een inbox op je domein instelt, overschrijft die je keuze niet -- de inbox is voor ontvangen en antwoorden, terwijl je gekozen verzendmethode de transactionele uitgaande mail afhandelt.
+### Je eigen domein
 
-### 1. Ingebouwde e-mail (standaard)
+Verstuur facturen vanaf je eigen domein, net als je inbox. Klanten zien jouw adres als afzender.
 
-Standaard worden e-mails verstuurd via de eigen e-mailservice van MyCompanyDesk. Geen configuratie nodig.
+- Verzenden vanaf je eigen domein hoort bij het Pro-abonnement; op andere abonnementen zie je bij deze optie een upgradelink.
+- Heb je al een domein gekoppeld? Dan staat er een knop om het met een klik aan te zetten (**E-mail activeren op jouwdomein.nl**). Dat is veilig voor bestaande e-mail: draait er al mail op je domein (bijvoorbeeld Gmail of Microsoft 365), dan waarschuwt MyCompanyDesk en nemen we niets over.
+- Nog geen domein? Via **Domein toevoegen** kom je bij de domeininstellingen.
+- Zodra het actief is, zie je op de kaart vanaf welk adres je documenten worden verstuurd, met een link naar de DNS-records.
 
-### 2. Gmail-integratie
+### Gmail
 
-Verstuur e-mails rechtstreeks vanuit je Gmail-account:
+Koppel je Google-account via **Verbind Gmail**. E-mails gaan de deur uit vanaf je Gmail-adres en verschijnen in je Gmail-map Verzonden.
 
-1. Ga naar **Inbox > Instellingen** en open **Verzending**
-2. Klik op **Gmail koppelen**
-3. Autoriseer MyCompanyDesk om namens jou te versturen via Google OAuth
-4. E-mails worden nu verzonden vanaf je Gmail-adres
+### Outlook / Microsoft 365
 
-**Voordelen:**
+Koppel je Microsoft-account via **Verbind Outlook**. E-mails worden verstuurd vanaf je Outlook- of Microsoft 365-adres.
 
-- E-mails tonen je Gmail-adres als afzender
-- Verzonden e-mails verschijnen in je Gmail Verzonden-map
-- Betere bezorgbaarheid (je eigen domeinreputatie)
+Documenten worden altijd vanuit je eigen naam verstuurd. Is er nog geen afzender ingesteld, dan vraagt MyCompanyDesk je eerst Gmail of Outlook te koppelen of je eigen domein te activeren voordat een factuur- of offertemail verstuurd kan worden.
 
-### 3. Outlook / Microsoft-integratie
+### Verstuur facturen vanaf
 
-Verstuur vanuit je Outlook of Microsoft 365-account:
+Is je eigen domein actief en heeft het meerdere adressen, dan verschijnt er een extra keuze: **Verstuur facturen vanaf**. Kies welk adres je klanten als afzender zien op facturen en offertes.
 
-1. Ga naar **Inbox > Instellingen** en open **Verzending**
-2. Klik op **Outlook koppelen**
-3. Autoriseer via Microsoft OAuth
-4. E-mails worden verstuurd vanaf je Outlook-adres
+## Je afsluiter
 
-### 4. Aangepaste SMTP
+Onder elke uitgaande e-mail bouwen we automatisch een afsluiter op met de gegevens die je hier invult:
 
-Voor volledige controle gebruik je je eigen SMTP-server:
+- **Support-e-mail**
+- **Website**
+- Social links (LinkedIn, X, Facebook, Instagram)
 
-1. Ga naar **Inbox > Instellingen** en open **Verzending**
-2. Vul je SMTP-gegevens in:
-   - **Host** — SMTP-serveradres
-   - **Poort** — Serverpoort (587 voor TLS, 465 voor SSL)
-   - **Gebruikersnaam** — SMTP-login
-   - **Wachtwoord** — SMTP-wachtwoord
-3. Klik op **Verbinding testen** om te verifieren dat het werkt
-4. Sla op
+Alles wat je invult nemen we mee; wat leeg blijft, laten we weg. Deze velden deel je met je bedrijfsgegevens: pas je ze hier of bij **Instellingen → Bedrijfsgegevens** aan, dan blijven beide gelijk.
 
-## E-mailsjablonen
+## E-mailteksten
 
-Pas de e-mails aan die worden verstuurd met je facturen en herinneringen.
+Voor factuur-, offerte- en herinneringsmails gebruikt MyCompanyDesk standaard, goed geteste teksten in je documenttaal. Er zijn geen sjablonen per documenttype om te onderhouden. Voordat een document de deur uit gaat, kun je in het verzendvenster nog wel de ontvanger, het onderwerp en het bericht van die ene e-mail aanpassen, en kiezen of je de bekijkknop, downloadknop, PDF-bijlage en factuurregels meestuurt. Zie [E-mailsjablonen](/nl/faq/email-template).
 
-### Factuur-e-mailsjabloon
+## Ontvangen: inboxinstellingen
 
-De standaard e-mail die wordt verstuurd bij het bezorgen van een factuur. Pas aan:
+Alles over het ontvangen van mail vind je op de instellingenpagina van de inbox (**Inbox → Instellingen**):
 
-- **Onderwerpregel** — Het e-mailonderwerp (ondersteunt variabelen zoals factuurnummer)
-- **Inhoud** — De berichttekst
-- **Taal** — Stel sjablonen per taal in
+- **Postbussen & adressen**: je adressen, aliassen en hoelang berichten bewaard blijven.
+- **Activiteit**: recente uitgaande aflevering, handig als je je afvraagt of een klant je factuur heeft ontvangen.
+- **Vertrouwde afzenders**: afzenders die nooit als spam worden gemarkeerd.
+- **AVG-gegevensverwijdering**: verwijder alle gesprekken en bijlagen van een specifiek adres (alleen voor beheerders).
 
-### Herinnerings-e-mailsjabloon
+Regels voor inkomende mail vind je onder **Inbox → Instellingen → Regels & routing**.
 
-De e-mail die wordt verstuurd bij het opvolgen van achterstallige facturen. Pas dezelfde velden aan als hierboven, maar met een urgentere toon.
+## Gerelateerd
 
-### Voorbeeld bekijken
-
-Voor het versturen kun je elke e-mail bekijken om precies te zien wat je klant ontvangt:
-
-- Gerenderde HTML met je huisstijl
-- PDF-bijlagevoorbeeld
-- Betaallink-opname
-
-## Variabelen
-
-E-mailsjablonen ondersteunen dynamische variabelen:
-
-| Variabele | Beschrijving |
-|---|---|
-| `{invoice_number}` | Het factuurnummer |
-| `{customer_name}` | Naam van de klant |
-| `{amount}` | Totaal factuurbedrag |
-| `{due_date}` | Vervaldatum |
-| `{company_name}` | Je bedrijfsnaam |
-| `{payment_link}` | Link naar online betaling |
-
-## E-mailactiviteit
-
-Een overzicht van alle verzonden e-mails in de afgelopen 90 dagen vind je in **Inbox > Instellingen** onder Activiteitenlog.
-
-## Meldingen
-
-Configureer welke e-mailmeldingen je ontvangt:
-
-- **Factuur betaald** — Ontvang een melding wanneer een klant betaalt
-- **Offerteaanvraag ontvangen** — Melding bij nieuwe offerteaanvragen
-- **Teamactiviteit** — Updates over acties van teamleden
-
-Meldingsvoorkeuren kun je instellen in je [Profiel](/nl/account/profile).
-
-## Tips
-
-- Koppel Gmail of Outlook voor de beste bezorgbaarheid
-- Test je e-mailsjabloon altijd voordat je je eerste factuur verstuurt
-- Stel taalspecifieke sjablonen in als je klanten in meerdere talen bedient
-- Gebruik het herinneringssjabloon voor professionele opvolging van achterstallige facturen
+- [Bedrijfsinstellingen](/nl/settings/company): de bedrijfsgegevens achter je afsluiter
+- [Abonnement & betalingen](/nl/settings/billing): verzenden vanaf je eigen domein hoort bij Pro

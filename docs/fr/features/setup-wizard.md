@@ -226,7 +226,7 @@ Pour revoir les parametres individuels sans l'assistant, allez a :
 - `/workspace/organization/company/address` — domaine personnel + DNS.
 - `/workspace/email` — boite de reception, boites aux lettres, modeles.
 
-Voir [Apercu des parametres](/fr/settings/) pour la carte complete.
+La carte complète se trouve dans les paramètres de l'application.
 
 ## Cas particuliers
 

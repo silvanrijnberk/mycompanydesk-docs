@@ -111,7 +111,7 @@ Wanneer je het afbeelding-uploadveld opent in een willekeurig sectieblok (hero, 
 - Typ een zoekterm (bijv. "kapsalon", "koffie", "hout") en druk op enter.
 - Resultaten verschijnen in een raster. Klik op een foto om deze als sectie-afbeelding in te voegen.
 - De zoekopdracht loopt via de MyCompanyDesk-server, dus je Unsplash-toegangssleutel komt nooit in de browser.
-- Naamsvermelding wordt automatisch bijgehouden volgens de API-richtlijnen van Unsplash en getoond op je gepubliceerde site. Zodra je site live staat, verschijnt er een "Foto's: <fotograaf> · Unsplash"-vermelding in de footer van elke pagina die minstens één stockfoto bevat, zodat je altijd aan de richtlijnen voldoet.
+- Naamsvermelding wordt automatisch bijgehouden volgens de API-richtlijnen van Unsplash en getoond op je gepubliceerde site. Zodra je site live staat, verschijnt er een "Foto's: `fotograaf` · Unsplash"-vermelding in de footer van elke pagina die minstens één stockfoto bevat, zodat je altijd aan de richtlijnen voldoet.
 - Als Unsplash niet is geconfigureerd op je werkruimte, blijft de Stockfoto-knop verborgen, zodat je nooit een niet-werkende functie ziet.
 
 ## Opgeslagen blokken

@@ -111,7 +111,7 @@ Lorsque vous ouvrez le champ de telechargement d'image dans n'importe quel bloc 
 - Saisissez un terme de recherche (par ex. "salon de coiffure", "cafe", "bois") et appuyez sur Entree.
 - Les resultats apparaissent dans une grille. Cliquez sur une photo pour l'inserer comme image de votre section.
 - La recherche passe par le serveur MyCompanyDesk, votre cle d'acces Unsplash n'atteint donc jamais le navigateur.
-- L'attribution est suivie automatiquement conformement aux directives API d'Unsplash et affichee sur votre site publie. Lorsque votre site est en ligne, une mention "Photos: <photographe> · Unsplash" apparait dans le pied de page de chaque page contenant au moins une photo libre, vous assurant ainsi une conformite permanente.
+- L'attribution est suivie automatiquement conformement aux directives API d'Unsplash et affichee sur votre site publie. Lorsque votre site est en ligne, une mention "Photos: `photographe` · Unsplash" apparait dans le pied de page de chaque page contenant au moins une photo libre, vous assurant ainsi une conformite permanente.
 - Si Unsplash n'est pas configure sur votre espace de travail, le bouton Stockfoto reste masque, vous ne voyez donc jamais une fonctionnalite defaillante.
 
 ## Blocs sauvegardes

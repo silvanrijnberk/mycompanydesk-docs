@@ -76,7 +76,7 @@ The page splits into two sections:
 - **Pending domains**: Domains still being verified always appear at the top, regardless of the topbar domain switcher state. This lets you reach verification instructions for newly added domains before they become active.
 - **Active domain panel**: DNS, SSL, redirects, analytics, security, and SEO tabs are scoped to the domain selected in the topbar domain switcher (accessible from the site builder at `/website`). Selecting the default site (shown as your workspace name in the switcher) hides the per-domain panel entirely. Switching domains resets the active tab to Routing.
 
-The page defaults to a clean view with the most commonly needed tabs. Six power-user tabs are hidden unless you turn on **Advanced Mode** in `/me/preferences`. Those tabs are: DNS, SSL, Redirects, Analytics, Quick Settings, and Security. See [Settings overview](/settings#account-settings-me) for how to toggle advanced mode.
+The page defaults to a clean view with the most commonly needed tabs. Six power-user tabs are hidden unless you turn on **Advanced Mode** in `/me/preferences`. Those tabs are: DNS, SSL, Redirects, Analytics, Quick Settings, and Security. Advanced mode is toggled in your personal preferences.
 
 What the page lets you do:
 
@@ -192,7 +192,7 @@ What the editor surfaces:
 - **Pages tab** — Create, rename, delete, and filter pages by status (live, draft, scheduled). Pick a template when creating a new page.
 - **Style tab** — Design tokens for colors, fonts, scale, motion, buttons, custom CSS, and head snippets (analytics, font preconnects).
 - **Domain & SEO tab** — Custom domain management. See the custom domains section above.
-- **Integrations tab**: Connect payment processors (Mollie, Stripe Connect) with inline setup cards, plus third-party services like Mailchimp, Plausible and Trustpilot. The same payment connection powers pay buttons on invoices; see [Money settings](/workspace/financial/money/payments) for the full configuration.
+- **Integrations tab**: Connect payment processors (Mollie, Stripe Connect) with inline setup cards, plus third-party services like Mailchimp, Plausible and Trustpilot. The same payment connection powers pay buttons on invoices; see the [payment methods FAQ](/faq/payment-methods) for the full configuration.
 - **Navigation editor** — Drag-and-drop reorder of header links, with dropdown groups and external links.
 - **Publish button** — Shows unpublished change count. Pushes a snapshot live with one click.
 - **Responsive preview** — Toggle desktop, tablet, and mobile viewports in the editor.
