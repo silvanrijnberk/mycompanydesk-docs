@@ -1,143 +1,161 @@
 ---
-title: Facturation et abonnements
+title: Abonnement et paiements
+last_verified: 2026-07-02
 ---
 
-# Facturation et abonnements
+# Abonnement et paiements
 
-Gerez votre abonnement MyCompanyDesk, consultez votre utilisation et mettez a niveau votre plan.
+Ce que vous nous payez, vos factures de notre part et votre carte de paiement.
+
+## Où le trouver
+
+Ouvrez **Paramètres**, puis **Je abonnement** (votre abonnement), ou naviguez directement vers `/settings/abonnement`.
+
+Les anciennes URL `/workspace/account/billing` et `/settings/billing` redirigent vers la nouvelle page ; vos favoris continuent de fonctionner et le paramètre de requête `?checkout=success|canceled` est conservé lors de la redirection.
 
 ## Founding Members
 
-MyCompanyDesk propose un programme Founding Members pour les 100 premiers espaces de travail qui s'inscrivent pendant la periode de lancement.
+MyCompanyDesk propose un programme Founding Members pour les 100 premiers espaces de travail qui s'inscrivent pendant la période de lancement.
 
-### Offre actuelle (a partir du 20 mai 2026)
+### Offre actuelle (à partir du 20 mai 2026)
 
-Un Founding Member recoit sa premiere annee de Pro gratuite, puis 50% de reduction sur le plan Pro a vie. L'annee gratuite commence immediatement a la reservation. A la fin de l'annee gratuite, l'espace de travail peut passer au plan Pro payant avec une reduction a vie de 50% (appliquee comme un coupon Stripe lors du paiement). Si l'espace de travail ne convertit pas, la periode d'essai Pro expire comme toute autre periode d'essai.
+Un Founding Member reçoit sa première année de Pro gratuite, puis 50% de réduction sur le plan Pro à vie. L'année gratuite commence immédiatement à la réservation. À la fin de l'année gratuite, l'espace de travail peut passer au plan Pro payant avec une réduction à vie de 50% (appliquée automatiquement lors du paiement). Si l'espace de travail ne convertit pas, la période d'essai Pro expire comme toute autre période d'essai.
 
-Le domaine `.nl` inclus est gratuit la premiere annee et devient ensuite partie integrante de l'abonnement Pro payant. Un espace de travail qui cesse de payer apres l'annee gratuite perd Pro et le domaine expire. Il n'y a plus d'engagement gratuit-a-vie illimite pour les nouveaux membres.
+Le domaine `.nl` inclus est gratuit la première année et devient ensuite partie intégrante de l'abonnement Pro payant. Un espace de travail qui cesse de payer après l'année gratuite perd Pro et le domaine expire. Il n'y a plus d'engagement gratuit à vie illimité pour les nouveaux membres.
 
-### Cohorte d'origine (grandfathered)
+### Cohorte d'origine (droits acquis)
 
-La premiere vague de Founding Members ayant reserve sous les conditions d'origine (avant le 20 mai 2026) conserve Pro gratuit a vie et beneficie du renouvellement de domaine gratuit a vie. Ces droits sont maintenus pour la duree de vie de MyCompanyDesk tant que le service et la fonctionnalite concernee continuent d'etre proposes. Le nouveau flux n'ecrit jamais ces lignes ; les espaces de travail grandfathered existants restent intouches.
+La première vague de Founding Members ayant réservé sous les conditions d'origine (avant le 20 mai 2026) conserve Pro gratuit à vie et bénéficie du renouvellement de domaine gratuit à vie. Ces droits sont maintenus pour la durée de vie de MyCompanyDesk tant que le service et la fonctionnalité concernée continuent d'être proposés. Les espaces de travail existants de cette cohorte ne sont pas affectés par la nouvelle offre.
 
-### Comment ca marche
+### Comment ça marche
 
-- Le programme est limite a **100 places** sur l'ensemble des espaces de travail.
-- Chaque espace de travail ne peut reserver qu'une seule place. Une meme adresse IP ne peut pas non plus reserver plus d'une place (prevention de la fraude).
-- La reservation est irreversible. Il n'y a pas de deuxieme reservation ou de re-reservation ; une fois votre place partie, elle est partie.
+- Le programme est limité à **100 places** sur l'ensemble des espaces de travail.
+- Chaque espace de travail ne peut réserver qu'une seule place. Une même adresse IP ne peut pas non plus réserver plus d'une place (prévention de la fraude).
+- La réservation est irréversible. Il n'y a pas de deuxième réservation ou de re-réservation ; une fois votre place partie, elle est partie.
 
-### Reserver une place
+### Réserver une place
 
-Vous pouvez reserver une place Founding Member de deux facons :
+Vous pouvez réserver une place Founding Member de deux façons :
 
-**Depuis la page de facturation.** S'il reste des places, la page de facturation affiche une carte de reservation Founding Member. Cliquez sur **Reserver une place** pour demarrer votre annee Pro gratuite. La mise a niveau prend effet immediatement.
+**Depuis la page d'abonnement.** S'il reste des places, la page d'abonnement affiche une carte de réservation Founding Member. Cliquez sur **Réserver une place** pour démarrer votre année Pro gratuite. La mise à niveau prend effet immédiatement.
 
 **Depuis la page d'accueil.** Le CTA de la page d'accueil renvoie vers le formulaire d'inscription avec une intention founding-member. Lorsque vous vous inscrivez via ce parcours :
 
-1. Le formulaire d'inscription conserve votre intention dans le stockage local.
-2. Apres verification de l'e-mail et connexion, le systeme reserve automatiquement votre place en arriere-plan.
-3. Un toast de confirmation vous indique si la reservation a reussi. Si les places etaient epuisees avant que vous n'ayez termine l'inscription, vous beneficiez tout de meme d'un essai Pro de 60 jours.
+1. Le formulaire d'inscription conserve votre intention.
+2. Après vérification de l'e-mail et connexion, le système réserve automatiquement votre place en arrière-plan.
+3. Un toast de confirmation vous indique si la réservation a réussi. Si les places étaient épuisées avant que vous n'ayez terminé l'inscription, vous bénéficiez tout de même d'un essai Pro de 60 jours.
 
-Si la reservation automatique echoue (places epuisees, IP deja utilisee par un autre espace de travail ou erreur reseau), la reservation n'est pas retentee. Vous pouvez toujours consulter la page de facturation et reserver manuellement s'il reste des places.
+Si la réservation automatique échoue (places épuisées, IP déjà utilisée par un autre espace de travail ou erreur réseau), la réservation n'est pas retentée. Vous pouvez toujours consulter la page d'abonnement et réserver manuellement s'il reste des places.
 
-Les espaces de travail Founding Member sont des clients Pro comme les autres : memes fonctionnalites, memes limites. La seule difference est la source d'abonnement ("interne") et le badge dans la facturation.
+Les espaces de travail Founding Member sont des clients Pro comme les autres : mêmes fonctionnalités, mêmes limites. La seule différence est la source d'abonnement et le badge sur la page d'abonnement.
 
 ## Plans
 
-MyCompanyDesk propose deux plans payants plus un etat Gratuit qui n'existe que pour les espaces de travail expires, resilies ou en fin de periode d'essai. Gratuit n'est pas propose a l'inscription ; les nouveaux clients beneficient d'un essai Pro de 60 jours. Les definitions de plan se trouvent dans `apps/api/src/modules/billing/plans.config.js`.
+MyCompanyDesk propose deux plans payants plus un état Gratuit qui n'existe que pour les espaces de travail expirés, résiliés ou en fin de période d'essai. Gratuit n'est pas proposé à l'inscription ; les nouveaux clients bénéficient d'un essai Pro de 60 jours.
 
 | Plan | Mensuel | Annuel | Description |
 |---|---|---|---|
-| **Starter** | 10,00 EUR | 100,00 EUR | Pour les independants qui ont besoin de factures, de depenses et d'une page entreprise publique |
-| **Pro** | 25,00 EUR | 250,00 EUR | La suite complete : tout active, boite de reception, multi-domaine, API et extensible avec des utilisateurs supplementaires |
+| **Starter** | 10,00 EUR | 100,00 EUR | Tout pour faire votre travail : factures, devis, dépenses, heures et projets, sur votre propre page |
+| **Pro** | 25,00 EUR | 250,00 EUR | Faites grandir votre entreprise : domaine et site web personnels, boîte mail professionnelle, connexion bancaire, accès équipe, API et plus |
 
-Pro est le plan mis en avant (recommande) dans le selecteur. L'etat Gratuit (`plan_key: "free"`) existe comme zone d'atterrissage pour les parcours de retrogradation et les comptes historiques, mais il est masque sur la page de tarifs et dans le flux d'inscription.
+Tous les prix s'entendent hors TVA néerlandaise de 21%, ajoutée lors du paiement. L'application affiche les prix avec la mention « excl. btw » (hors TVA) ; en tant qu'entreprise, vous récupérez cette TVA comme taxe déductible. Le prix annuel équivaut à dix paiements mensuels, payer à l'année vous offre donc deux mois gratuits.
+
+Pro est le plan mis en avant (recommandé) dans le sélecteur. L'état Gratuit existe comme zone d'atterrissage pour les comptes expirés et historiques, mais il est masqué sur la page de tarifs et dans le flux d'inscription.
 
 ### Ce que chaque plan inclut
 
-Fonctionnalites avec limites d'utilisation (limites mensuelles) :
+Fonctionnalités avec limites d'utilisation (limites mensuelles) :
 
-| Metrique | Gratuit | Starter | Pro |
+| Métrique | Gratuit | Starter | Pro |
 |---|---|---|---|
-| Factures creees | 5 | illimite | illimite |
-| Depenses creees | 10 | illimite | illimite |
-| Devis crees | 3 | illimite | illimite |
-| Stockage | 100 Mo | 2 Go | illimite |
-| Membres d'equipe | 1 | 1 | 1 (extensible avec des add-ons de sieges) |
-| Domaines personnalises | 0 | 0 | 5 |
+| Factures créées | 5 | illimité | illimité |
+| Dépenses créées | 10 | illimité | illimité |
+| Devis créés | 3 | illimité | illimité |
+| Stockage | 100 Mo | 2 Go | illimité |
+| Personnes avec accès | vous seul | vous seul | illimité |
+| Domaines personnalisés | 0 | 0 | 5 |
 | Messages de chat IA (mensuel) | 10 | 100 | 1 000 |
-<!-- TODO(source-missing): plan limit values from RichardTool apps/api/src/modules/billing/plans.config.js -->
-| Scans de recus IA (mensuel) | 3 | 30 | 200 |
+| Scans de reçus IA (mensuel) | 3 | 30 | 200 |
 | Suggestions IA (mensuel) | 10 | 200 | 2 000 |
-| Boites de reception | 0 | 0 | illimite |
-| Envois boite de reception par mois | 0 | 0 | 15 000 |
-| Receptions boite de reception par mois | 0 | 0 | 20 000 |
+| Connexions bancaires | 0 | 0 | 3 |
 
-Remarque : les limites IA sont mensuelles, et non quotidiennes. Elles sont reinitialisees le premier de chaque mois civil.
+Remarque : les limites IA sont mensuelles, et non quotidiennes. Elles sont réinitialisées le premier de chaque mois civil.
 
-Fonctionnalites booleennes par plan :
+Fonctionnalités par plan :
 
-| Fonctionnalite | Gratuit | Starter | Pro |
+| Fonctionnalité | Gratuit | Starter | Pro |
 |---|---|---|---|
-| `invoices`, `expenses`, `quotes`, `attachments` | oui | oui | oui |
-| `exports_pdf` | oui | oui | oui |
-| `exports_excel` | non | oui | oui |
-| `custom_branding` | non | oui | oui |
-| `recurring_invoices`, `recurring_expenses` | non | oui | oui |
-| `receipt_scanning`, `language_tools` | non | oui | oui |
-| `time_registration`, `assistant_chat` | non | oui | oui |
-| `description_enrichment` | non | oui | oui |
-| `ai_insights` | non | oui | oui |
-| `public_business_page` | non | oui | oui |
-| `company_subdomain`, `style_presets` | non | oui | oui |
-| `contracts`, `properties`, `projects` | non | non | oui |
-| `team_members`, `advanced_reports` | non | non | oui |
-| `custom_domains`, `custom_domain_routing` | non | non | oui |
-| `custom_domain_full_website` | non | non | oui |
-| `inbox`, `privacy_mode`, `newsletter` | non | non | oui |
-| `api_access`, `webhooks`, `priority_support` | non | non | oui |
-| `advanced_permissions` | non | non | oui |
-| `bank_connections` | non | non | oui |
-| `realtime_classification` | non | oui | oui |
+| Factures, dépenses, devis, pièces jointes | oui | oui | oui |
+| Export PDF | oui | oui | oui |
+| Export CSV/Excel | non | oui | oui |
+| Numérisation de reçus (avec les limites mensuelles ci-dessus) | oui | oui | oui |
+| Chat assistant | oui | oui | oui |
+| Analyses IA | oui | oui | oui |
+| Classification des dépenses en temps réel | oui | oui | oui |
+| Contrats | non | oui | oui |
+| Projets | non | oui | oui |
+| Biens locatifs * | non | oui | oui |
+| Factures et dépenses récurrentes | non | oui | oui |
+| Saisie de temps | non | oui | oui |
+| Image de marque personnalisée | non | oui | oui |
+| Outils linguistiques | non | oui | oui |
+| Enrichissement des descriptions | non | oui | oui |
+| Page entreprise publique | non | oui | oui |
+| Sous-domaine d'entreprise et préréglages de style | non | oui | oui |
+| Accès équipe (personnes illimitées) | non | non | oui |
+| Suppression de la marque MyCompanyDesk | non | non | oui |
+| Rapports avancés | non | non | oui |
+| Domaine personnalisé, routage de domaine, site web complet sur votre domaine | non | non | oui |
+| Boîte mail professionnelle | non | non | oui |
+| Newsletter | non | non | oui |
+| Mode confidentialité | non | non | oui |
+| Accès API et webhooks | non | non | oui |
+| Permissions avancées | non | non | oui |
+| Support prioritaire | non | non | oui |
+| Connexions bancaires (jusqu'à 3) | non | non | oui |
 
-La liste complete des fonctionnalites se trouve dans `FEATURE_KEYS` dans `plans.config.js`.
+\* Le module de biens locatifs n'est actuellement affiché qu'aux espaces de travail qui l'utilisent déjà.
 
-### Delai de grace du site public
+L'accès de votre comptable est gratuit sur tous les plans et ne compte pas comme accès équipe.
 
-Lorsqu'un espace de travail payant retombe en Gratuit, son site web public et le constructeur de site restent en ligne pendant 7 jours avant de passer hors ligne. Cela empeche un paiement oublie de faire disparaitre instantanement un site professionnel en ligne et ses URL indexees. Le delai de grace est calcule a partir du dernier evenement de fin d'acces: fin d'essai, resiliation ou fin de periode de paiement. Si le systeme ne peut pas determiner la fin d'acces, le site reste en ligne pour eviter une coupure accidentelle. La verification a lieu a chaque requete, avant le cache, pour que les changements d'abonnement prennent effet immediatement.
+### Limites de la boîte mail professionnelle
 
-Source: `apps/api/src/modules/billing/entitlement.service.js` — `PUBLIC_PAGE_GRACE_DAYS`, `computePublicPageGate`.
+La boîte mail professionnelle est une fonctionnalité Pro. Avec Pro, vous pouvez envoyer jusqu'à 15 000 e-mails et en recevoir jusqu'à 20 000 par mois ; le nombre de boîtes mail n'est pas limité.
 
-### Add-ons de sieges
+### Délai de grâce du site public
 
-Pro est un produit mono-utilisateur. Les utilisateurs supplementaires sont achetes via la table `workspace_seat_addons` (add-on Stripe base sur la quantite, facture separement par siege). Le flag de fonctionnalite `team_members` controle si la fonctionnalite d'equipe est disponible ; le nombre effectif de sieges provient de l'enregistrement d'add-on.
+Lorsqu'un espace de travail payant retombe en Gratuit, son site web public et le constructeur de site restent en ligne pendant 7 jours avant de passer hors ligne. Cela empêche un paiement oublié de faire disparaître instantanément un site professionnel en ligne et ses URL indexées. Le délai de grâce est calculé à partir du dernier événement de fin d'accès : fin d'essai, résiliation ou fin de période de paiement. Si le système ne peut pas déterminer la fin d'accès, le site reste en ligne pour éviter une coupure accidentelle. La vérification a lieu à chaque requête, avant le cache, pour que les changements d'abonnement prennent effet immédiatement.
+
+### Accès équipe
+
+L'accès équipe est inclus dans Pro sans frais par personne : invitez autant d'utilisateurs actifs que vous le souhaitez. Il n'y a pas de tarification par siège ni d'add-on par siège. Avec Gratuit et Starter, vous travaillez seul, mais votre comptable peut toujours recevoir un accès gratuit.
 
 ## Portail Stripe
 
-Le bouton **Gerer l'abonnement** (visible lorsque l'espace de travail a une periode active ou un plan non Gratuit) appelle `POST /api/billing/portal`, qui renvoie une URL unique du portail client Stripe. Depuis le portail, vous pouvez :
+Le bouton **Gérer l'abonnement** (visible lorsque l'espace de travail a une période active ou un plan non Gratuit) ouvre une session unique du portail client Stripe. Depuis le portail, vous pouvez :
 
-- Mettre a jour le moyen de paiement
-- Telecharger les factures et recus
+- Mettre à jour le moyen de paiement
+- Télécharger les factures et reçus
 - Modifier l'adresse de facturation
-- Resilier l'abonnement
+- Résilier l'abonnement
 
-La resiliation prend effet a la fin de la periode payee en cours ; l'acces est conserve jusque-la.
+La résiliation prend effet à la fin de la période payée en cours ; l'accès est conservé jusque-là.
 
 ## Flux de paiement
 
-1. Cliquez sur **Mettre a niveau** sur une vignette de plan
-2. Le frontend appelle `POST /api/billing/checkout`, qui renvoie une URL Stripe Checkout
+1. Cliquez sur **Mettre à niveau** sur une vignette de plan
+2. Vous arrivez sur une page Stripe Checkout
 3. Stripe redirige avec `?checkout=success` ou `?checkout=canceled`
-4. La page affiche une banniere de succes ou d'annulation ; le cache des droits est invalide et l'interface bloque est immediatement debloquee
+4. La page affiche une bannière de succès ou d'annulation ; l'interface verrouillée est immédiatement déverrouillée
 
-Lors d'un passage au plan Pro, la banniere de succes prend l'accent violet Pro avec une icone de couronne ("Bienvenue chez Pro") au lieu de la confirmation verte standard. Ce meme style Pro apparait ailleurs dans l'application : un anneau violet autour de l'avatar, une icone de couronne dans le badge de plan et des pastilles "Fonction Pro" sur les pages de parametres reservees a Pro comme Cles API et Boite de reception. De plus, l'assistant du guide contextuel recoit une apparence violette premium : la pastille "IA" devient une pastille "Pro", la bordure du panneau et le bouton d'envoi adoptent l'accent Pro et la ligne de statut devient "Votre assistant Pro est pret."
+Lors d'un passage au plan Pro, la bannière de succès prend l'accent violet Pro avec une icône de couronne (« Bienvenue chez Pro ») au lieu de la confirmation verte standard. Ce même style Pro apparaît ailleurs dans l'application : un anneau violet autour de l'avatar, une icône de couronne dans le badge de plan et des pastilles « Fonction Pro » sur les pages de paramètres réservées à Pro comme Clés API et Boîte de réception. De plus, l'assistant du guide contextuel reçoit une apparence violette premium : la pastille « IA » devient une pastille « Pro », la bordure du panneau et le bouton d'envoi adoptent l'accent Pro et la ligne de statut devient « Votre assistant Pro est prêt. »
 
-## Banniere de mise a niveau contextuelle
+## Bannière de mise à niveau contextuelle
 
-Lorsqu'un utilisateur arrive sur la page de facturation depuis une fonctionnalite bloquee (le middleware de flag de fonctionnalite redirige avec `?upgrade=<feature>`), la page affiche une banniere "vous etes venu ici pour X -- voici ce qui le debloque" au lieu d'une presentation generique des plans.
+Lorsque vous arrivez sur la page d'abonnement depuis une fonctionnalité verrouillée, la page affiche une bannière « vous êtes venu ici pour X, voici ce qui le débloque » au lieu d'une présentation générique des plans.
 
 ## Voir aussi
 
-- [Parametres de l'entreprise](/fr/settings/company) -- `public_business_page` et `custom_domains` sont geres ici
-- [E-mail](/fr/settings/email) -- `inbox` necessite Pro
-- [Equipe](/fr/settings/team) -- `team_members` necessite Pro
+- [Paramètres de l'entreprise](/fr/settings/company) -- la page entreprise publique et les domaines personnalisés se gèrent ici
+- [E-mail](/fr/settings/email) -- la boîte mail professionnelle nécessite Pro
+- [Équipe](/fr/settings/team) -- l'accès équipe nécessite Pro

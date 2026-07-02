@@ -7,7 +7,7 @@ title: Bonnen scannen
 Extraheer automatisch uitgavegegevens uit bonafbeeldingen en PDF-facturen met behulp van AI-gestuurde OCR.
 
 ::: info
-Bonnen scannen vereist het **Pro**-abonnement of hoger.
+Bonnen scannen is beschikbaar op elk abonnement, met een maandelijkse limiet op het aantal scans: 3 op Gratis, 30 op Starter en 200 op Pro. De limiet wordt gereset op de eerste van elke kalendermaand.
 :::
 
 ## Overzicht
@@ -23,10 +23,10 @@ In plaats van elke uitgave handmatig in te voeren, maak je een foto van een bon 
 ## Een bon scannen
 
 1. Ga naar **Uitgaven > Bon scannen**
-2. Upload je bonbestand (slepen en neerzetten of klik om te bladeren)
-3. Kies de extractiemodus:
-   - **Enkel** — Extraheer een uitgave van de bon
-   - **Meervoudig** — Extraheer meerdere regelitems van dezelfde bon
+2. Upload je bonbestand (slepen en neerzetten of klik om te bladeren). De scanner verwerkt een bestand per keer.
+3. Open eventueel de geavanceerde opties en kies de extractiemodus:
+   - **Enkel**: extraheer een uitgave van de bon
+   - **Meervoudig**: extraheer meerdere regelitems van dezelfde bon (de standaard)
 4. Wacht op verwerking (enkele seconden)
 5. Controleer de geextraheerde gegevens:
    - Datum
@@ -60,10 +60,14 @@ Extraheert: individuele regelitems met omschrijvingen en bedragen.
 
 ## Geavanceerde instellingen
 
-De scanner heeft geavanceerde opties:
+De scanner heeft een paneel met geavanceerde opties:
 
-- **Aanvullende instructies** — Voeg context toe om de AI te helpen (bijv. "Dit is een Nederlandse bon van Albert Heijn")
-- **Beeldverwerking** — Automatische verbetering voor foto's van lage kwaliteit
+- **Instructies**: voeg vrije tekst toe om de AI te helpen (bijv. "Dit is een Nederlandse bon van Albert Heijn")
+- **Extractiemodus**: een enkele uitgave of meerdere regelitems (standaard: meervoudig)
+- **Categorie**: beperk de extractie tot een uitgavencategorie, of laat alle categorieën toe
+- **Filtertags**: trefwoordtags; alleen items die bij de tags passen worden geëxtraheerd
+- **Prijsbereik**: een minimum- en maximumbedrag; items buiten het bereik worden overgeslagen
+- **Bon bijvoegen**: of het originele bestand als bijlage aan de aangemaakte uitgave wordt gekoppeld (standaard aan)
 
 ## Tips voor het beste resultaat
 
@@ -83,13 +87,9 @@ Na bevestiging wordt de uitgave aangemaakt met:
 
 Je kunt de uitgave daarna bewerken zoals elke handmatig aangemaakte uitgave.
 
-## Batchupload
+## Meerdere bonnen scannen
 
-Upload meerdere bonnen tegelijk:
-
-1. Selecteer meerdere bestanden
-2. Elk wordt onafhankelijk verwerkt
-3. Controleer en bevestig elke extractie
+De uploader verwerkt een bestand per keer. Wil je meerdere bonnen verwerken, scan ze dan een voor een; elke scan telt een keer mee voor je maandelijkse limiet. Voor een bon of factuur met meerdere items gebruik je de extractiemodus **Meervoudig** om met een scan meerdere uitgaven aan te maken.
 
 ## Tips
 

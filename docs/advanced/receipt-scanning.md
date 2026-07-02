@@ -7,7 +7,7 @@ title: Receipt Scanning
 Automatically extract expense data from receipt images and PDF invoices using AI-powered OCR.
 
 ::: info
-Receipt scanning requires the **Pro** plan or higher.
+Receipt scanning is available on every plan, with a monthly cap on the number of scans: 3 on Free, 30 on Starter, and 200 on Pro. The cap resets on the first of each calendar month.
 :::
 
 ## Overview
@@ -23,10 +23,10 @@ Instead of manually entering every expense, take a photo of a receipt or upload 
 ## How to scan a receipt
 
 1. Go to **Expenses > Scan Receipt**
-2. Upload your receipt file (drag and drop or click to browse)
-3. Choose the extraction mode:
-   - **Single** — Extract one expense from the receipt
-   - **Multiple** — Extract multiple line items from the same receipt
+2. Upload your receipt file (drag and drop or click to browse). The scanner takes one file at a time.
+3. Optionally open the advanced options and choose the extraction mode:
+   - **Single**: extract one expense from the receipt
+   - **Multiple**: extract multiple line items from the same receipt (the default)
 4. Wait for processing (a few seconds)
 5. Review the extracted data:
    - Date
@@ -60,10 +60,14 @@ Extracts: individual line items with descriptions and amounts.
 
 ## Advanced settings
 
-The scanner has advanced options:
+The scanner has an advanced options panel:
 
-- **Customer instructions** — Add context to help the AI (e.g., "This is a Dutch receipt from Albert Heijn")
-- **Image processing** — Automatic enhancement for low-quality photos
+- **Instructions**: add free-text context to help the AI (e.g., "This is a Dutch receipt from Albert Heijn")
+- **Extraction mode**: single expense or multiple line items (default: multiple)
+- **Category**: limit extraction to one expense category, or leave it on any category
+- **Filter tags**: keyword tags; only items matching the tags are extracted
+- **Price range**: a minimum and maximum amount; items outside the range are skipped
+- **Attach receipt**: whether the original file is attached to the created expense (on by default)
 
 ## Tips for best results
 
@@ -83,13 +87,9 @@ Once confirmed, the expense is created with:
 
 You can edit the expense afterward like any manually created expense.
 
-## Batch upload
+## Scanning several receipts
 
-Upload multiple receipts at once:
-
-1. Select multiple files
-2. Each is processed independently
-3. Review and confirm each extraction
+The uploader takes one file at a time. To process several receipts, scan them one after another; each scan counts once towards your monthly cap. For a receipt or invoice that contains multiple items, use the **Multiple** extraction mode to create several expenses from a single scan.
 
 ## Tips
 

@@ -1,59 +1,68 @@
 ---
-title: "Abrechnung & Tarife"
+title: "Abonnement & Zahlungen"
+last_verified: 2026-07-02
 ---
 
-# Abrechnung & Tarife
+# Abonnement & Zahlungen
 
-Verwalten Sie Ihr MyCompanyDesk-Abonnement, sehen Sie Ihre Nutzung ein und fuhren Sie ein Upgrade Ihres Tarifs durch.
+Was Sie uns zahlen, Ihre Rechnungen von uns und Ihre Zahlungskarte.
+
+## Wo Sie es finden
+
+Öffnen Sie **Einstellungen** und dann **Je abonnement** (Ihr Abonnement), oder navigieren Sie direkt zu `/settings/abonnement`.
+
+Die alten URLs `/workspace/account/billing` und `/settings/billing` leiten auf die neue Seite weiter; Lesezeichen funktionieren weiterhin und der Query-Parameter `?checkout=success|canceled` bleibt bei der Weiterleitung erhalten.
 
 ## Founding Members
 
-MyCompanyDesk bietet ein Founding-Members-Programm fur die ersten 100 Arbeitsbereiche, die sich wahrend der Startphase anmelden.
+MyCompanyDesk bietet ein Founding-Members-Programm für die ersten 100 Arbeitsbereiche, die sich während der Startphase anmelden.
 
 ### Aktuelles Angebot (ab 20. Mai 2026)
 
-Ein Founding Member erhalt das erste Jahr Pro kostenlos und danach lebenslang 50% Rabatt auf den Pro-Tarif. Das kostenlose Jahr beginnt sofort mit dem Claim. Am Ende des Gratis-Jahres kann der Arbeitsbereich auf kostenpflichtiges Pro umstellen, mit einem lebenslangen 50%-Rabatt (als Stripe-Coupon beim Checkout angewendet). Wenn der Arbeitsbereich nicht umstellt, lauft die Pro-Testphase wie jede andere aus.
+Ein Founding Member erhält das erste Jahr Pro kostenlos und danach lebenslang 50% Rabatt auf den Pro-Tarif. Das kostenlose Jahr beginnt sofort mit dem Claim. Am Ende des Gratis-Jahres kann der Arbeitsbereich auf kostenpflichtiges Pro umstellen, mit einem lebenslangen 50%-Rabatt (automatisch beim Checkout angewendet). Wenn der Arbeitsbereich nicht umstellt, läuft die Pro-Testphase wie jede andere aus.
 
-Die inkludierte `.nl`-Domain ist im ersten Jahr kostenlos und wird ab Jahr zwei Teil des kostenpflichtigen Pro-Abonnements. Ein Arbeitsbereich, der nach dem Gratis-Jahr nicht mehr zahlt, verliert Pro und die Domain verfallt. Es gibt keine unbefristete Gratis-auf-Lebenszeit-Zusage mehr fur neue Mitglieder.
+Die inkludierte `.nl`-Domain ist im ersten Jahr kostenlos und wird ab Jahr zwei Teil des kostenpflichtigen Pro-Abonnements. Ein Arbeitsbereich, der nach dem Gratis-Jahr nicht mehr zahlt, verliert Pro und die Domain verfällt. Es gibt keine unbefristete Gratis-auf-Lebenszeit-Zusage mehr für neue Mitglieder.
 
-### Ursprungliche Kohorte (grandfathered)
+### Ursprüngliche Kohorte (Bestandsschutz)
 
-Die erste Welle von Founding Members, die unter den ursprunglichen Bedingungen vor dem 20. Mai 2026 geclaimt haben, behalten Pro lebenslang kostenlos und erhalten lebenslange kostenlose Domain-Verlangerung. Diese Claims bestehen fur die Lebensdauer von MyCompanyDesk, solange der Dienst und die betreffende Funktion angeboten werden. Der neue Flow schreibt diese Zeilen nie; bestehende gegrandfatherte Arbeitsbereiche bleiben unangetastet.
+Die erste Welle von Founding Members, die unter den ursprünglichen Bedingungen vor dem 20. Mai 2026 geclaimt haben, behalten Pro lebenslang kostenlos und erhalten lebenslange kostenlose Domain-Verlängerung. Diese Claims bestehen für die Lebensdauer von MyCompanyDesk, solange der Dienst und die betreffende Funktion angeboten werden. Bestehende Arbeitsbereiche dieser Kohorte bleiben vom neuen Angebot unberührt.
 
 ### So funktioniert es
 
-- Das Programm ist auf **100 Platze** uber alle Arbeitsbereiche hinweg begrenzt.
-- Jeder Arbeitsbereich kann nur einen Platz beanspruchen. Von derselben IP-Adresse darf ebenfalls nur ein Platz geclaimt werden (Missbrauchspravention).
-- Das Claimen ist endgultig. Es gibt keinen zweiten Claim oder Neu-Claim; ist der Platz weg, ist er weg.
+- Das Programm ist auf **100 Plätze** über alle Arbeitsbereiche hinweg begrenzt.
+- Jeder Arbeitsbereich kann nur einen Platz beanspruchen. Von derselben IP-Adresse darf ebenfalls nur ein Platz geclaimt werden (Missbrauchsprävention).
+- Das Claimen ist endgültig. Es gibt keinen zweiten Claim oder Neu-Claim; ist der Platz weg, ist er weg.
 
 ### Einen Platz claimen
 
-Sie konnen auf zwei Arten einen Founding-Member-Platz beanspruchen:
+Sie können auf zwei Arten einen Founding-Member-Platz beanspruchen:
 
-**Uber die Abrechnungsseite.** Wenn noch Platze verfugbar sind, zeigt die Abrechnungsseite eine Founding-Member-Claim-Karte. Klicken Sie auf **Platz claimen**, um Ihr kostenloses Pro-Jahr zu starten. Das Upgrade wird sofort wirksam.
+**Über die Abonnementseite.** Wenn noch Plätze verfügbar sind, zeigt die Abonnementseite eine Founding-Member-Claim-Karte. Klicken Sie auf **Platz claimen**, um Ihr kostenloses Pro-Jahr zu starten. Das Upgrade wird sofort wirksam.
 
-**Uber die Landingpage.** Der CTA auf der Landingpage verlinkt auf das Registrierungsformular mit einer Founding-Member-Absicht. Wenn Sie sich uber diesen Weg anmelden:
+**Über die Landingpage.** Der CTA auf der Landingpage verlinkt auf das Registrierungsformular mit einer Founding-Member-Absicht. Wenn Sie sich über diesen Weg anmelden:
 
-1. Das Registrierungsformular merkt sich Ihre Absicht im lokalen Speicher.
-2. Nach der E-Mail-Bestatigung und Anmeldung wird Ihr Platz automatisch im Hintergrund geclaimt.
-3. Ein Bestatigungstoast zeigt an, ob der Claim erfolgreich war. Wenn die Platze voll waren, bevor Sie die Registrierung abgeschlossen haben, erhalten Sie trotzdem eine 60-tagige Pro-Testphase.
+1. Das Registrierungsformular merkt sich Ihre Absicht.
+2. Nach der E-Mail-Bestätigung und Anmeldung wird Ihr Platz automatisch im Hintergrund geclaimt.
+3. Ein Bestätigungstoast zeigt an, ob der Claim erfolgreich war. Wenn die Plätze voll waren, bevor Sie die Registrierung abgeschlossen haben, erhalten Sie trotzdem eine 60-tägige Pro-Testphase.
 
-Wenn der automatische Claim fehlschlagt (Platze voll, IP bereits von einem anderen Arbeitsbereich verwendet oder Netzwerkfehler), wird der Claim nicht erneut versucht. Sie konnen weiterhin auf der Abrechnungsseite nachsehen und manuell claimen, falls noch Platze vorhanden sind.
+Wenn der automatische Claim fehlschlägt (Plätze voll, IP bereits von einem anderen Arbeitsbereich verwendet oder Netzwerkfehler), wird der Claim nicht erneut versucht. Sie können weiterhin auf der Abonnementseite nachsehen und manuell claimen, falls noch Plätze vorhanden sind.
 
-Founding-Member-Arbeitsbereiche sind in jeder Hinsicht normale Pro-Kunden: dieselben Funktionen, dieselben Limits. Der einzige Unterschied ist die Abonnement-Quelle ("intern") und das Badge in der Abrechnung.
+Founding-Member-Arbeitsbereiche sind in jeder Hinsicht normale Pro-Kunden: dieselben Funktionen, dieselben Limits. Der einzige Unterschied ist die Abonnement-Quelle und das Badge auf der Abonnementseite.
 
 ## Tarife
 
-MyCompanyDesk hat zwei kostenpflichtige Tarife plus einen Gratis-Status, der nur fur abgelaufene, gekundigte oder testphasen-abgelaufene Arbeitsbereiche existiert. Gratis wird bei der Anmeldung nicht angeboten; neue Kunden erhalten eine 60-tagige Pro-Testphase. Tarifdefinitionen befinden sich in `apps/api/src/modules/billing/plans.config.js`.
+MyCompanyDesk hat zwei kostenpflichtige Tarife plus einen Gratis-Status, der nur für abgelaufene, gekündigte oder testphasen-abgelaufene Arbeitsbereiche existiert. Gratis wird bei der Anmeldung nicht angeboten; neue Kunden erhalten eine 60-tägige Pro-Testphase.
 
-| Tarif | Monatlich | Jahrlich | Beschreibung |
+| Tarif | Monatlich | Jährlich | Beschreibung |
 |---|---|---|---|
-| **Starter** | 10,00 EUR | 100,00 EUR | Fur Freiberufler, die Rechnungen, Ausgaben und eine offentliche Unternehmensseite benotigen |
-| **Pro** | 25,00 EUR | 250,00 EUR | Das Komplettpaket: alles an, Inbox, Multi-Domain, API und erweiterbar mit zusatzlichen Nutzern |
+| **Starter** | 10,00 EUR | 100,00 EUR | Alles für Ihre Arbeit: Rechnungen, Angebote, Ausgaben, Stunden und Projekte, auf Ihrer eigenen Seite |
+| **Pro** | 25,00 EUR | 250,00 EUR | Lassen Sie Ihr Unternehmen wachsen: eigene Domain und Website, geschäftliche Inbox, Bankverbindung, Teamzugang, API und mehr |
 
-Pro ist der hervorgehobene (empfohlene) Tarif in der Auswahl. Der Gratis-Status (`plan_key: "free"`) existiert als Landing-Zone fur Downgrade-Pfade und historische Konten, ist aber auf der Preisseite und im Anmeldeprozess ausgeblendet.
+Alle Preise verstehen sich zuzüglich 21% niederländischer Mehrwertsteuer, die beim Checkout hinzugefügt wird. Die App kennzeichnet Preise mit "excl. btw" (exkl. MwSt.); als Unternehmen holen Sie sich diese Steuer als Vorsteuer zurück. Der Jahrespreis entspricht zehn Monatszahlungen, jährliche Zahlung schenkt Ihnen also zwei Monate.
 
-### Was jeder Tarif enthalt
+Pro ist der hervorgehobene (empfohlene) Tarif in der Auswahl. Der Gratis-Status existiert als Auffangzone für abgelaufene und historische Konten, ist aber auf der Preisseite und im Anmeldeprozess ausgeblendet.
+
+### Was jeder Tarif enthält
 
 Funktionen mit Nutzungslimits (monatliche Limits):
 
@@ -63,81 +72,90 @@ Funktionen mit Nutzungslimits (monatliche Limits):
 | Erstellte Ausgaben | 10 | unbegrenzt | unbegrenzt |
 | Erstellte Angebote | 3 | unbegrenzt | unbegrenzt |
 | Speicher | 100 MB | 2 GB | unbegrenzt |
-| Teammitglieder | 1 | 1 | 1 (erweiterbar mit Sitz-Add-ons) |
+| Personen mit Zugang | nur Sie | nur Sie | unbegrenzt |
 | Eigene Domains | 0 | 0 | 5 |
 | KI-Chat-Nachrichten (monatlich) | 10 | 100 | 1 000 |
-<!-- TODO(source-missing): plan limit values from RichardTool apps/api/src/modules/billing/plans.config.js -->
 | KI-Belegscans (monatlich) | 3 | 30 | 200 |
-| KI-Vorschlage (monatlich) | 10 | 200 | 2 000 |
-| Inbox-Postfacher | 0 | 0 | unbegrenzt |
-| Inbox gesendet pro Monat | 0 | 0 | 15 000 |
-| Inbox empfangen pro Monat | 0 | 0 | 20 000 |
+| KI-Vorschläge (monatlich) | 10 | 200 | 2 000 |
+| Bankverbindungen | 0 | 0 | 3 |
 
-Hinweis: KI-Limits gelten monatlich, nicht taglich. Sie werden am Ersten jedes Kalendermonats zuruckgesetzt.
+Hinweis: KI-Limits gelten monatlich, nicht täglich. Sie werden am Ersten jedes Kalendermonats zurückgesetzt.
 
-Boolsche Funktionen pro Tarif:
+Funktionen pro Tarif:
 
 | Funktion | Gratis | Starter | Pro |
 |---|---|---|---|
-| `invoices`, `expenses`, `quotes`, `attachments` | ja | ja | ja |
-| `exports_pdf` | ja | ja | ja |
-| `exports_excel` | nein | ja | ja |
-| `custom_branding` | nein | ja | ja |
-| `recurring_invoices`, `recurring_expenses` | nein | ja | ja |
-| `receipt_scanning`, `language_tools` | nein | ja | ja |
-| `time_registration`, `assistant_chat` | nein | ja | ja |
-| `description_enrichment` | nein | ja | ja |
-| `ai_insights` | nein | ja | ja |
-| `public_business_page` | nein | ja | ja |
-| `company_subdomain`, `style_presets` | nein | ja | ja |
-| `contracts`, `properties`, `projects` | nein | nein | ja |
-| `team_members`, `advanced_reports` | nein | nein | ja |
-| `custom_domains`, `custom_domain_routing` | nein | nein | ja |
-| `custom_domain_full_website` | nein | nein | ja |
-| `inbox`, `privacy_mode`, `newsletter` | nein | nein | ja |
-| `api_access`, `webhooks`, `priority_support` | nein | nein | ja |
-| `advanced_permissions` | nein | nein | ja |
-| `bank_connections` | nein | nein | ja |
-| `realtime_classification` | nein | ja | ja |
+| Rechnungen, Ausgaben, Angebote, Anhänge | ja | ja | ja |
+| PDF-Export | ja | ja | ja |
+| CSV/Excel-Export | nein | ja | ja |
+| Belegscanner (mit den monatlichen Limits oben) | ja | ja | ja |
+| Assistent-Chat | ja | ja | ja |
+| KI-Einblicke | ja | ja | ja |
+| Echtzeit-Ausgabenklassifizierung | ja | ja | ja |
+| Verträge | nein | ja | ja |
+| Projekte | nein | ja | ja |
+| Mietobjekte * | nein | ja | ja |
+| Wiederkehrende Rechnungen und Ausgaben | nein | ja | ja |
+| Zeiterfassung | nein | ja | ja |
+| Individuelles Branding | nein | ja | ja |
+| Sprachwerkzeuge | nein | ja | ja |
+| Beschreibungsanreicherung | nein | ja | ja |
+| Öffentliche Unternehmensseite | nein | ja | ja |
+| Firmen-Subdomain und Stilvorlagen | nein | ja | ja |
+| Teamzugang (unbegrenzt viele Personen) | nein | nein | ja |
+| MyCompanyDesk-Branding entfernen | nein | nein | ja |
+| Erweiterte Berichte | nein | nein | ja |
+| Eigene Domain, Domain-Routing, vollständige Website auf Ihrer Domain | nein | nein | ja |
+| Geschäftliche Inbox | nein | nein | ja |
+| Newsletter | nein | nein | ja |
+| Privatsphäre-Modus | nein | nein | ja |
+| API-Zugang und Webhooks | nein | nein | ja |
+| Erweiterte Berechtigungen | nein | nein | ja |
+| Prioritäts-Support | nein | nein | ja |
+| Bankverbindungen (bis zu 3) | nein | nein | ja |
 
-Die vollstandige Funktionsliste befindet sich in `FEATURE_KEYS` in `plans.config.js`.
+\* Das Mietobjekte-Modul wird derzeit nur Arbeitsbereichen angezeigt, die es bereits nutzen.
 
-### Schonfrist fur die offentliche Website
+Der Zugang für Ihren Buchhalter ist in jedem Tarif kostenlos und zählt nicht als Teamzugang.
 
-Wenn ein bezahlter Arbeitsbereich auf Gratis zuruckfallt, bleibt seine offentliche Website und der Website-Builder noch 7 Tage online, bevor die Seite offline geht. So verhindern Sie, dass eine vergessene Zahlung Ihre live geschaltete Unternehmenswebsite mit all ihren indexierten URLs sofort vom Netz nimmt. Das Schonfenster beginnt mit dem letzten Zugriffsende: Testende, Kundigung oder Ende des Zahlungszeitraums. Kann das System das Ende des Zugriffs nicht bestimmen, bleibt die Website online, um ein versehentliches Abschalten zu vermeiden. Die Prufung erfolgt bei jeder Anfrage vor dem Cache, sodass Abonnement-Anderungen sofort wirksam werden.
+### Limits der geschäftlichen Inbox
 
-Quelle: `apps/api/src/modules/billing/entitlement.service.js` — `PUBLIC_PAGE_GRACE_DAYS`, `computePublicPageGate`.
+Die geschäftliche Inbox ist eine Pro-Funktion. Mit Pro können Sie pro Monat bis zu 15 000 E-Mails senden und bis zu 20 000 E-Mails empfangen; die Anzahl der Postfächer ist nicht begrenzt.
 
-### Sitz-Add-ons
+### Schonfrist für die öffentliche Website
 
-Pro ist ein Einzelnutzer-Produkt. Zusatzliche Nutzer werden uber die Tabelle `workspace_seat_addons` erworben (Stripe mengenbasierte Add-on, separat pro Sitz abgerechnet). Das `team_members`-Feature-Flag steuert, ob Team-Funktionalitat verfugbar ist; die effektive Sitzanzahl stammt aus dem Add-on-Datensatz.
+Wenn ein bezahlter Arbeitsbereich auf Gratis zurückfällt, bleibt seine öffentliche Website und der Website-Builder noch 7 Tage online, bevor die Seite offline geht. So verhindern Sie, dass eine vergessene Zahlung Ihre live geschaltete Unternehmenswebsite mit all ihren indexierten URLs sofort vom Netz nimmt. Das Schonfenster beginnt mit dem letzten Zugriffsende: Testende, Kündigung oder Ende des Zahlungszeitraums. Kann das System das Ende des Zugriffs nicht bestimmen, bleibt die Website online, um ein versehentliches Abschalten zu vermeiden. Die Prüfung erfolgt bei jeder Anfrage vor dem Cache, sodass Abonnement-Änderungen sofort wirksam werden.
+
+### Teamzugang
+
+Der Teamzugang ist in Pro ohne Kosten pro Person enthalten: Laden Sie so viele mitarbeitende Nutzer ein, wie Sie möchten. Es gibt keine Sitzpreise und keine Add-ons pro Sitz. Mit Gratis und Starter arbeiten Sie allein, wobei Ihr Buchhalter jederzeit kostenlosen Zugang erhalten kann.
 
 ## Stripe-Portal
 
-Die Schaltflache **Abonnement verwalten** (sichtbar, wenn der Arbeitsbereich eine aktive Periode oder einen Nicht-Gratis-Tarif hat) ruft `POST /api/billing/portal` auf und gibt eine einmalige Stripe-Customer-Portal-URL zuruck. Uber das Portal konnen Sie:
+Die Schaltfläche **Abonnement verwalten** (sichtbar, wenn der Arbeitsbereich eine aktive Periode oder einen Nicht-Gratis-Tarif hat) öffnet eine einmalige Stripe-Customer-Portal-Sitzung. Über das Portal können Sie:
 
 - Zahlungsmethode aktualisieren
 - Rechnungen und Belege herunterladen
-- Rechnungsadresse andern
-- Abonnement kundigen
+- Rechnungsadresse ändern
+- Abonnement kündigen
 
-Die Kundigung wird am Ende des aktuellen Zahlungszeitraums wirksam; der Zugriff bleibt bis dahin erhalten.
+Die Kündigung wird am Ende des aktuellen Zahlungszeitraums wirksam; der Zugriff bleibt bis dahin erhalten.
 
 ## Checkout-Ablauf
 
 1. Klicken Sie auf **Upgrade** auf einer Tarifkachel
-2. Das Frontend ruft `POST /api/billing/checkout` auf und erhalt eine Stripe-Checkout-URL
-3. Stripe leitet mit `?checkout=success` oder `?checkout=canceled` zuruck
-4. Die Seite zeigt ein Erfolgs- oder Abbruch-Banner; der Berechtigungscache wird entwertet und gesperrte UI wird sofort entsperrt
+2. Sie gelangen auf eine Stripe-Checkout-Seite
+3. Stripe leitet mit `?checkout=success` oder `?checkout=canceled` zurück
+4. Die Seite zeigt ein Erfolgs- oder Abbruch-Banner; gesperrte UI wird sofort entsperrt
 
-Bei einem Upgrade auf Pro erhalt das Erfolgsbanner den violetten Pro-Akzent und ein Kronen-Symbol ("Willkommen bei Pro") anstelle der standardmassig grunen Bestatigung. Die gleiche Pro-Gestaltung finden Sie an weiteren Stellen in der App: ein violetter Ring um Ihren Avatar, ein Kronen-Symbol im Plan-Badge und "Pro-Feature"-Pills auf Pro-geschutzten Einstellungsseiten wie API-Schlussel und Inbox. Zusatzlich erhalt der Kontextassistent ein Premium-Violett-Design: Die "KI"-Pille wird zur "Pro"-Pille, Panel-Rand und Sende-Button erhalten den Pro-Akzent und die Statuszeile andert sich zu "Ihr Pro-Assistent steht bereit."
+Bei einem Upgrade auf Pro erhält das Erfolgsbanner den violetten Pro-Akzent und ein Kronen-Symbol ("Willkommen bei Pro") anstelle der standardmäßig grünen Bestätigung. Die gleiche Pro-Gestaltung finden Sie an weiteren Stellen in der App: ein violetter Ring um Ihren Avatar, ein Kronen-Symbol im Plan-Badge und "Pro-Feature"-Pills auf Pro-geschützten Einstellungsseiten wie API-Schlüssel und Inbox. Zusätzlich erhält der Kontextassistent ein Premium-Violett-Design: Die "KI"-Pille wird zur "Pro"-Pille, Panel-Rand und Sende-Button erhalten den Pro-Akzent und die Statuszeile ändert sich zu "Ihr Pro-Assistent steht bereit."
 
 ## Kontextbezogener Upgrade-Banner
 
-Wenn Sie von einer gesperrten Funktion auf die Abrechnungsseite gelangen (die Feature-Flag-Middleware leitet mit `?upgrade=<feature>` weiter), zeigt die Seite einen Banner mit "Sie sind wegen X hier -- das schaltet es frei" anstelle eines generischen Tarif-Pitches.
+Wenn Sie von einer gesperrten Funktion auf die Abonnementseite gelangen, zeigt die Seite einen Banner mit "Sie sind wegen X hier, das schaltet es frei" anstelle eines generischen Tarif-Pitches.
 
 ## Verwandte Themen
 
-- [Unternehmenseinstellungen](/de/settings/company) -- `public_business_page` und `custom_domains` werden hier gesteuert
-- [E-Mail](/de/settings/email) -- `inbox` erfordert Pro
-- [Team](/de/settings/team) -- `team_members` erfordert Pro
+- [Unternehmenseinstellungen](/de/settings/company) -- die öffentliche Unternehmensseite und eigene Domains werden hier verwaltet
+- [E-Mail](/de/settings/email) -- die geschäftliche Inbox erfordert Pro
+- [Team](/de/settings/team) -- der Teamzugang erfordert Pro
