@@ -226,7 +226,7 @@ Um einzelne Einstellungen ohne den Assistenten zu uberprufen, gehen Sie zu:
 - `/workspace/organization/company/address` — eigene Domain + DNS.
 - `/workspace/email` — Posteingang, Postfacher, Vorlagen.
 
-Die vollständige Übersicht finden Sie in den Einstellungen der App.
+Die vollständige Übersicht finden Sie in der [Übersicht der Einstellungen](/de/settings/).
 
 ## Randfalle
 

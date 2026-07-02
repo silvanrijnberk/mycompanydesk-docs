@@ -1,6 +1,6 @@
 ---
-title: "Change your address"
-last_verified: 2026-05-09
+title: "Modifier votre adresse"
+last_verified: 2026-07-02
 chatbot:
   triggers:
     - "change address"
@@ -16,15 +16,15 @@ chatbot:
     - "modifier mon adresse d entreprise"
     - "ou modifier mon adresse d entreprise"
   actions:
-    - { label: "Open company info", to: "/company?section=company" }
+    - { label: "Open business details", to: "/settings/bedrijfsgegevens" }
   follow_up:
     - "How do I set up my company settings?"
     - "How do I change the PDF template?"
 ---
 
-Pour changer votre adresse d entreprise :
-1. Allez dans Entreprise → Informations entreprise
-2. Utilisez l aide d adresse pour rechercher puis appliquer la nouvelle adresse
-3. Les nouveaux documents utiliseront ensuite l adresse mise a jour
+Pour changer l'adresse de votre entreprise :
+1. Allez dans Paramètres → « Données de l'entreprise »
+2. Utilisez l'aide d'adresse pour rechercher puis appliquer la nouvelle adresse
+3. Les nouveaux documents utiliseront ensuite l'adresse mise à jour
 
-Note : le formulaire actuel utilise l aide d adresse plutot que des champs d adresse manuels separes.
+Remarque : les documents déjà émis conservent l'adresse qu'ils avaient.

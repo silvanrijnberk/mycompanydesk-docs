@@ -76,7 +76,7 @@ The page splits into two sections:
 - **Pending domains**: Domains still being verified always appear at the top, regardless of the topbar domain switcher state. This lets you reach verification instructions for newly added domains before they become active.
 - **Active domain panel**: DNS, SSL, redirects, analytics, security, and SEO tabs are scoped to the domain selected in the topbar domain switcher (accessible from the site builder at `/website`). Selecting the default site (shown as your workspace name in the switcher) hides the per-domain panel entirely. Switching domains resets the active tab to Routing.
 
-The page defaults to a clean view with the most commonly needed tabs. Six power-user tabs are hidden unless you turn on **Advanced Mode** in `/me/preferences`. Those tabs are: DNS, SSL, Redirects, Analytics, Quick Settings, and Security. Advanced mode is toggled in your personal preferences.
+The page defaults to a clean view with the most commonly needed tabs. Six power-user tabs are hidden unless you turn on **Advanced Mode**. Those tabs are: DNS, SSL, Redirects, Analytics, Quick Settings, and Security. Advanced mode is a per-device switch on the **Weergave** (display) page in settings; see the [Settings overview](/settings/).
 
 What the page lets you do:
 

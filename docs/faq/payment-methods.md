@@ -14,27 +14,27 @@ chatbot:
     - "modes de paiement"
     - "moyens de paiement"
   actions:
-    - { label: "Open payment options", to: "/company?section=paymentOptions" }
+    - { label: "Open payment settings", to: "/settings/betalen" }
   follow_up:
     - "How do I add my bank details?"
     - "How do I change the PDF template?"
 ---
 
 To configure payment methods on documents:
-1. Go to Company → Payment Options
-2. Enable the methods you want to offer, such as bank transfer or PayPal
-3. Set the default method
-4. Add the related account details and payment instructions
-5. Changes in that section save automatically
+1. Go to Settings and open "Betalen"
+2. Enter your IBAN to offer bank transfer; filling in an IBAN enables it automatically and adds a payment QR code to your invoices
+3. Toggle PayPal on and enter your PayPal email address if you want to offer it
+4. Connect Mollie or Stripe if you want customers to pay online, for example with iDEAL
+5. Changes on this page save automatically
 
-The enabled methods and instructions appear on supported document templates.
+The enabled methods appear at the bottom of your invoices.
 
 ## Online payment processors
 
 You can connect your own Mollie or Stripe account so customers can pay invoices directly online. Funds go straight to your own account. MyCompanyDesk only handles the integration.
 
 To connect a processor:
-1. Go to **Money → Payments** in your workspace
+1. Go to **Settings → Betalen**
 2. Under **Online betalingen**, click **Verbind Mollie** or **Verbind Stripe**
 3. Follow the OAuth flow to authorize your account
 4. Once connected, sent invoices include a payment link your customers can use

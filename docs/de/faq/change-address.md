@@ -1,6 +1,6 @@
 ---
-title: "Change your address"
-last_verified: 2026-05-09
+title: "Firmenadresse ändern"
+last_verified: 2026-07-02
 chatbot:
   triggers:
     - "change address"
@@ -16,15 +16,15 @@ chatbot:
     - "modifier mon adresse d entreprise"
     - "ou modifier mon adresse d entreprise"
   actions:
-    - { label: "Open company info", to: "/company?section=company" }
+    - { label: "Open business details", to: "/settings/bedrijfsgegevens" }
   follow_up:
     - "How do I set up my company settings?"
     - "How do I change the PDF template?"
 ---
 
-So aenderst du deine Firmenadresse:
-1. Gehe zu Unternehmen → Unternehmensinfo
-2. Nutze dort die Adresshilfe, um die neue Adresse zu suchen und zu uebernehmen
+So ändern Sie Ihre Firmenadresse:
+1. Gehen Sie zu Einstellungen → „Unternehmensdaten"
+2. Nutzen Sie dort die Adresshilfe, um die neue Adresse zu suchen und zu übernehmen
 3. Neue Dokumente verwenden danach die aktualisierte Adresse
 
-Hinweis: Das aktuelle Formular nutzt die Adresshilfe statt separater manueller Adressfelder.
+Hinweis: Bereits ausgestellte Dokumente behalten die Adresse, die sie schon hatten.
