@@ -9,9 +9,9 @@ chatbot:
 ---
 
 To view charts and graphs:
-1. Go to Reports
-2. Open the Charts section
-3. Use date filters to adjust the time period
-4. Click through to related records when you spot spikes or drops
+1. Go to Reports in the sidebar
+2. Open one of the report views: Overview, P&L, Cash Flow, Clients, or Forecast
+3. The charts are built into each view; there is no separate Charts section
+4. Use the period filters to adjust the time period
 
-Tip: Always confirm active filters first when chart values seem off.
+Tip: Always confirm the active filters first when chart values seem off.

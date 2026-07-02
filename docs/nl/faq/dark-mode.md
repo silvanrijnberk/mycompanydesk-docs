@@ -1,6 +1,6 @@
 ---
-title: "Dark mode"
-last_verified: 2026-05-09
+title: "Donkere modus"
+last_verified: 2026-07-02
 chatbot:
   triggers: ["dark mode", "light mode", "switch theme", "change theme", "night mode", "donkere modus", "thema wijzigen", "dunkler modus", "mode sombre"]
   actions: []
@@ -10,15 +10,15 @@ chatbot:
 ## Donkere modus in de app
 
 Om je thema te wisselen:
-1. Ga naar Mijn account → Weergave
-2. Kies Licht, Donker of Systeem
+1. Ga naar Instellingen → "Weergave"
+2. Kies Licht, Donker of Vanzelf (volgt je apparaat)
 3. De wijziging wordt direct toegepast en automatisch opgeslagen
 
-Tip: Je kunt ook de thema-schakelaar in het navigatiemenu gebruiken voor een snelle wissel.
+Tip: je kunt ook de thema-schakelaar in het navigatiemenu gebruiken voor een snelle wissel.
 
 ## Donkere modus voor je website
 
-Heb je een hosted zakelijke website? Dan kun je ook voor je bezoekers een donkere modus instellen. Ga naar **Bedrijf → Je website**, open de **Stijl**-tab en zoek de donkere-modus-instelling onder de kleurenpaletten.
+Heb je een gehoste zakelijke website? Dan kun je ook voor je bezoekers een donkere modus instellen. Open het onderdeel **Website** in de app, ga naar de pagina **Stijl** en zoek de donkere-modusinstelling in de sectie **Kleuren**.
 
 Drie opties:
 

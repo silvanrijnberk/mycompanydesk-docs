@@ -10,8 +10,8 @@ chatbot:
 
 To open the profit and loss view in the app:
 1. Open Reports
-2. Open the profit and loss or income statement view available there
-3. Select the date range you want to inspect
-4. Review the revenue and expense rows shown for that period, or export the visible report if needed
+2. Switch to the P&L view
+3. Select the period you want to inspect with the period and year filters
+4. Review the figures for that period; the Profit, Revenue, and Expenses tabs inside the view let you zoom in on each side
 
-This answer is limited to where to find the report and what the app shows there.
+Turn on the comparison filter to see the same period next to a previous year.

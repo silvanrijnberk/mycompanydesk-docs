@@ -1,6 +1,6 @@
 ---
-title: "Dark mode"
-last_verified: 2026-05-09
+title: "Dunkelmodus"
+last_verified: 2026-07-02
 chatbot:
   triggers: ["dark mode", "light mode", "switch theme", "change theme", "night mode", "donkere modus", "thema wijzigen", "dunkler modus", "mode sombre"]
   actions: []
@@ -9,23 +9,23 @@ chatbot:
 
 ## Dunkelmodus in der App
 
-So wechselst du dein Theme:
-1. Gehe zu Mein Konto → Anzeige
-2. Wähle Hell, Dunkel oder System
+So wechseln Sie Ihr Theme:
+1. Gehen Sie zu Einstellungen → „Darstellung"
+2. Wählen Sie Hell, Dunkel oder Automatisch (folgt Ihrem Gerät)
 3. Die Änderung wird sofort angewendet und automatisch gespeichert
 
-Tipp: Du kannst auch den Theme-Schalter im Navigationsmenü für einen schnellen Wechsel nutzen.
+Tipp: Sie können auch den Theme-Schalter im Navigationsmenü für einen schnellen Wechsel nutzen.
 
-## Dunkelmodus für deine Website
+## Dunkelmodus für Ihre Website
 
-Hast du eine gehostete Geschäftswebsite? Dann kannst du auch für deine Besucher einen Dunkelmodus einrichten. Gehe zu **Unternehmen → Ihre Website**, öffne den **Stil**-Tab und suche die Dunkelmodus-Einstellung unter den Farbpaletten.
+Haben Sie eine gehostete Geschäftswebsite? Dann können Sie auch für Ihre Besucher einen Dunkelmodus einrichten. Öffnen Sie den Bereich **Website** in der App, gehen Sie zur Seite **Stil** und suchen Sie die Dunkelmodus-Einstellung im Abschnitt **Farben**.
 
 Drei Optionen:
 
-- **Aus** (Standard): Kein Dunkelmodus. Deine Site bleibt im hellen Farbschema.
+- **Aus** (Standard): Kein Dunkelmodus. Ihre Site bleibt im hellen Farbschema.
 - **Schaltfläche**: Besucher sehen einen Sonne/Mond-Umschalter in der Navigationsleiste. Die Voreinstellung ist immer hell; Besucher, die den dunklen Modus möchten, müssen ihn selbst aktivieren. Nach der Wahl wird die Einstellung im Browser für den nächsten Besuch gespeichert.
 - **System folgen**: Die Site übernimmt automatisch die Betriebssystem-Einstellung des Besuchers. Passt sich an, sobald der Besucher seine Systemeinstellung ändert.
 
-Wenn du den Dunkelmodus aktivierst, erscheint eine dunkle Farbpalette, in der du für jede Markenfarbe eine nachtoptimierte Version festlegen kannst. Die Palette leer zu lassen ist in Ordnung; die Site verwendet dann eine automatische Invertierung, bei der deine Marken- und Akzentfarben erhalten bleiben.
+Wenn Sie den Dunkelmodus aktivieren, erscheint eine dunkle Farbpalette, in der Sie für jede Markenfarbe eine nachtoptimierte Version festlegen können. Die Palette leer zu lassen ist in Ordnung; die Site verwendet dann eine automatische Invertierung, bei der Ihre Marken- und Akzentfarben erhalten bleiben.
 
-Siehe [Website-Builder](/de/advanced/business-page) für mehr zur Gestaltung deiner Website.
+Siehe [Website-Builder](/de/advanced/business-page) für mehr zur Gestaltung Ihrer Website.

@@ -23,8 +23,8 @@ chatbot:
 
 To review a full year in the app:
 1. Open Reports
-2. Set the date filter to the year you want to inspect
-3. Open the overview cards and related report sections for the data you want to review
-4. Export the visible report if you need the same view outside the app
+2. Set the period filter to Year and pick the year you want to inspect
+3. The Overview shows the headline figures; switch to the P&L, Cash Flow, Clients, or Forecast view for more detail
+4. Turn on the comparison filter to see the year next to a previous year
 
-This answer is limited to where to find the yearly overview in the app.
+Tip: The include open invoices filter controls whether unpaid invoices count toward the totals.

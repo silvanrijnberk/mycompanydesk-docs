@@ -1,6 +1,6 @@
 ---
-title: "Dark mode"
-last_verified: 2026-05-09
+title: "Mode sombre"
+last_verified: 2026-07-02
 chatbot:
   triggers: ["dark mode", "light mode", "switch theme", "change theme", "night mode", "donkere modus", "thema wijzigen", "dunkler modus", "mode sombre"]
   actions: []
@@ -10,15 +10,15 @@ chatbot:
 ## Mode sombre dans l'application
 
 Pour changer de thème :
-1. Allez dans Mon compte → Affichage
-2. Choisissez Clair, Sombre ou Système
+1. Allez dans Paramètres → « Affichage »
+2. Choisissez Clair, Sombre ou Automatique (suit votre appareil)
 3. Le changement s'applique immédiatement et est enregistré automatiquement
 
 Astuce : vous pouvez aussi utiliser le bouton de thème dans le menu de navigation pour un changement rapide.
 
 ## Mode sombre pour votre site web
 
-Vous avez un site web professionnel hébergé ? Vous pouvez également définir un mode sombre pour vos visiteurs. Allez dans **Entreprise → Votre site web**, ouvrez l'onglet **Style** et cherchez le contrôle de mode sombre sous les palettes de couleurs.
+Vous avez un site web professionnel hébergé ? Vous pouvez également définir un mode sombre pour vos visiteurs. Ouvrez la section **Site web** de l'application, allez sur la page **Style** et cherchez le réglage du mode sombre dans la section **Couleurs**.
 
 Trois options :
 

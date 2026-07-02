@@ -1,5 +1,5 @@
 ---
-title: Delete customer
+title: "Supprimer un client"
 last_verified: 2026-05-09
 chatbot:
   triggers: ["delete customer", "remove customer", "trash customer", "klant verwijderen", "klant wissen", "kunde loschen", "supprimer client"]
@@ -11,8 +11,8 @@ chatbot:
 Pour supprimer un client :
 1. Allez dans Clients et trouvez le client
 2. Ouvrez le profil
-3. Dans la barre laterale, faites defiler jusqu'a la section « Zone de danger »
+3. Dans la barre latérale, faites défiler jusqu'à la section « Zone de danger »
 4. Cliquez sur « Supprimer »
 5. Confirmez la suppression
 
-Les clients ayant des factures liees ne peuvent pas toujours etre supprimes. Archivez alors le client a la place.
+La suppression n'est jamais bloquée, même pour les clients ayant des factures liées. Elle se fait par étapes : supprimer un client actif l'archive d'abord, le supprimer à nouveau le déplace vers la Corbeille, et le supprimer depuis la Corbeille est définitif. Jusqu'à cette dernière étape, vous pouvez toujours restaurer le client depuis la vue Archives ou Corbeille.

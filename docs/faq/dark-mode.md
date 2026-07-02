@@ -1,6 +1,6 @@
 ---
 title: "Dark mode"
-last_verified: 2026-05-09
+last_verified: 2026-07-02
 chatbot:
   triggers: ["dark mode", "light mode", "switch theme", "change theme", "night mode", "donkere modus", "thema wijzigen", "dunkler modus", "mode sombre"]
   actions: []
@@ -10,15 +10,15 @@ chatbot:
 ## App dark mode
 
 To switch your app theme:
-1. Go to My Account → Display
-2. Choose Light, Dark, or System
+1. Go to Settings → "Weergave" (display)
+2. Choose Licht (light), Donker (dark), or Vanzelf (automatic, follows your device)
 3. The change is applied immediately and saved automatically
 
 Tip: You can also use the theme toggle from the navigation menu for a quick switch.
 
-## Site builder dark mode
+## Website dark mode
 
-If you have a hosted business website, you can also set a dark mode for your visitors. Open **Company → Your website**, go to the **Style** tab, and find the dark-mode control under the color palettes.
+If you have a hosted business website, you can also set a dark mode for your visitors. Open the **Website** area of the app, go to the **Stijl** (style) page, and find the dark-mode control in the **Kleuren** (colours) section.
 
 Three modes are available:
 

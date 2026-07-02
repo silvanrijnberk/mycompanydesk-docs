@@ -1,5 +1,5 @@
 ---
-title: Customer payment history
+title: "Historique des paiements d'un client"
 last_verified: 2026-05-09
 chatbot:
   triggers: ["customer payment history", "payment history", "customer invoices", "customer payments", "betalingsgeschiedenis", "klant facturen bekijken", "zahlungshistorie", "historique paiements client"]
@@ -8,10 +8,9 @@ chatbot:
   follow_up: ["How do I send a payment reminder?", "How do I view overdue invoices?", "How do I edit customer details?"]
 ---
 
-Pour consulter l historique des paiements d un client :
-1. Ouvrez Clients et selectionnez le client
-2. Ouvrez dans la fiche client la vue des factures ou de l historique des paiements
-3. Verifiez les statuts, dates d echeance, dates de paiement et montants enregistres qui y sont affiches
-4. Ouvrez une facture depuis cette liste si vous avez besoin de la page detail complete
+Pour consulter l'historique des paiements d'un client :
+1. Ouvrez Clients et sélectionnez le client
+2. Consultez la carte « Factures récentes » sur la fiche client ; elle affiche pour chaque facture le numéro, la date, le total et le statut
+3. Ouvrez une facture depuis cette carte pour les détails de paiement, comme la date et le mode de paiement
 
-Cette reponse se limite a ce que l application enregistre et a l endroit ou le trouver.
+Les informations de paiement complètes se trouvent sur la page de détail de la facture ; la fiche client vous donne l'aperçu rapide des statuts.
