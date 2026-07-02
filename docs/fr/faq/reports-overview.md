@@ -1,5 +1,5 @@
 ---
-title: "Reports overview"
+title: "Aperçu des rapports"
 last_verified: 2026-05-09
 chatbot:
   triggers:
@@ -22,10 +22,11 @@ chatbot:
     - "How do I see profit and loss?"
 ---
 
-Pour consulter les rapports :
+Pour consulter vos rapports :
 1. Allez dans Rapports
-2. Utilisez le filtre de date pour choisir la periode
-3. Appliquez des filtres de statut ou de categorie si necessaire
-4. Ouvrez les graphiques ou les lignes du tableau pour verifier les enregistrements source
+2. Passez d'une vue à l'autre parmi les cinq : l'aperçu, Compte de résultat, Trésorerie, Clients et Prévision
+3. Utilisez les filtres pour choisir le découpage de la période (année, trimestre, mois, semaine ou jour), sélectionner l'année, inclure les factures ouvertes ou comparer avec une autre année
 
-Si un chiffre semble incorrect, verifiez d abord les filtres actifs et la plage de dates.
+Les rapports n'ont pas de filtres de statut ou de catégorie ; les filtres de période et de comparaison s'appliquent à toutes les vues.
+
+Astuce : si un chiffre semble incorrect, vérifiez d'abord les réglages actifs de période et de comparaison.

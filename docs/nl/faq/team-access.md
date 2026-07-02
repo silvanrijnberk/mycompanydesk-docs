@@ -1,6 +1,6 @@
 ---
-title: "Team access"
-last_verified: 2026-05-09
+title: "Teamtoegang"
+last_verified: 2026-07-02
 chatbot:
   triggers:
     - "team access"
@@ -23,17 +23,17 @@ chatbot:
     - "uitnodigen"
     - "werkruimte"
   actions:
-    - { label: "Open team settings", to: "/settings?section=team" }
+    - { label: "Open access settings", to: "/settings/team" }
   follow_up:
     - "How do I set page permissions for a team member?"
     - "How do I manage accountant access?"
     - "How do I remove a team member?"
 ---
 
-Om teamleden en gebruikerstoegang te beheren:
-1. Ga naar Workspace-instellingen → Team
-2. Klik op "Nodig teamgenoot uit" om een teamlid toe te voegen
-3. Klik op "Verstuur uitnodiging" om de uitnodiging te verzenden
-4. Gebruik "Toegang beheren" om rollen en paginarechten te beheren
+Om te beheren wie toegang heeft tot je werkruimte:
+1. Ga naar Instellingen → "Toegang en boekhouder"
+2. Bekijk de huidige leden en rollen in het onderdeel "Mensen met toegang"
+3. Gebruik "Iemand toegang geven" om een teamgenoot per e-mail uit te nodigen
+4. Open "Toegang beheren" of het tandwielicoon bij een lid om paginatoegang in te stellen
 
-Teamleden ontvangen een uitnodiging per e-mail en maken daarna hun eigen login aan.
+Rechten beheer je per pagina met de opties Lezen, Schrijven en Aanmaken. Teamleden uitnodigen vereist het Pro-abonnement; het boekhoudergedeelte op dezelfde pagina is gratis op elk abonnement.

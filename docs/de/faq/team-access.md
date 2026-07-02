@@ -1,6 +1,6 @@
 ---
-title: "Team access"
-last_verified: 2026-05-09
+title: "Teamzugang"
+last_verified: 2026-07-02
 chatbot:
   triggers:
     - "team access"
@@ -23,17 +23,17 @@ chatbot:
     - "uitnodigen"
     - "werkruimte"
   actions:
-    - { label: "Open team settings", to: "/settings?section=team" }
+    - { label: "Open access settings", to: "/settings/team" }
   follow_up:
     - "How do I set page permissions for a team member?"
     - "How do I manage accountant access?"
     - "How do I remove a team member?"
 ---
 
-So verwaltest du Teammitglieder und Benutzerzugriff:
-1. Gehe zu Workspace-Einstellungen → Team
-2. Klicke auf „Teammitglied einladen", um ein Teammitglied hinzuzufügen
-3. Klicke auf „Einladung senden", um die Einladung zu verschicken
-4. Nutze „Zugang verwalten", um Rollen und Seitenrechte festzulegen
+So verwalten Sie, wer Zugang zu Ihrem Arbeitsbereich hat:
+1. Gehen Sie zu Einstellungen → „Zugang und Steuerberater"
+2. Prüfen Sie die aktuellen Mitglieder und Rollen im Bereich „Personen mit Zugang"
+3. Nutzen Sie „Jemandem Zugang geben", um einen Teamkollegen per E-Mail einzuladen
+4. Öffnen Sie „Zugang verwalten" oder das Zahnradsymbol bei einem Mitglied, um den Seitenzugriff festzulegen
 
-Teammitglieder erhalten eine Einladungs-E-Mail und erstellen danach ihren eigenen Login.
+Berechtigungen werden pro Seite mit den Optionen Lesen, Schreiben und Erstellen verwaltet. Das Einladen von Teammitgliedern erfordert den Pro-Tarif; der Steuerberater-Bereich auf derselben Seite ist in jedem Tarif kostenlos.

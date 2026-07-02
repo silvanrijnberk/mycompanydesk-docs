@@ -1,6 +1,6 @@
 ---
-title: "Team access"
-last_verified: 2026-05-09
+title: "Accès de l'équipe"
+last_verified: 2026-07-02
 chatbot:
   triggers:
     - "team access"
@@ -23,17 +23,17 @@ chatbot:
     - "uitnodigen"
     - "werkruimte"
   actions:
-    - { label: "Open team settings", to: "/settings?section=team" }
+    - { label: "Open access settings", to: "/settings/team" }
   follow_up:
     - "How do I set page permissions for a team member?"
     - "How do I manage accountant access?"
     - "How do I remove a team member?"
 ---
 
-Pour gérer les membres d équipe et les accès utilisateurs :
-1. Accédez à Paramètres de l espace de travail → Équipe
-2. Cliquez sur « Inviter un membre » pour ajouter une personne
-3. Cliquez sur « Envoyer l invitation » pour l envoyer
-4. Utilisez « Gérer l accès » pour définir les rôles et les droits de page
+Pour gérer qui a accès à votre espace de travail :
+1. Allez dans Paramètres → « Accès et comptable »
+2. Passez en revue les membres actuels et leurs rôles dans la section « Personnes ayant accès »
+3. Utilisez « Donner accès à quelqu'un » pour inviter un collègue par e-mail
+4. Ouvrez « Gérer l'accès » ou l'icône d'engrenage d'un membre pour définir l'accès aux pages
 
-Les membres reçoivent un e-mail d invitation puis créent leur propre connexion.
+Les permissions se gèrent par page avec les options Lecture, Écriture et Création. Inviter des membres d'équipe nécessite le plan Pro ; la section comptable sur la même page est gratuite sur tous les plans.

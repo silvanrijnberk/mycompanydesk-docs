@@ -1,5 +1,5 @@
 ---
-title: "Reports overview"
+title: "Rapportenoverzicht"
 last_verified: 2026-05-09
 chatbot:
   triggers:
@@ -22,10 +22,11 @@ chatbot:
     - "How do I see profit and loss?"
 ---
 
-Om rapporten te bekijken:
+Om je rapporten te bekijken:
 1. Ga naar Rapporten
-2. Gebruik de datumfilter om de periode te kiezen
-3. Pas status- of categoriefilters toe als dat nodig is
-4. Open grafieken of tabelregels om de onderliggende records te controleren
+2. Wissel tussen de vijf weergaven: het overzicht, Winst & verlies, Cashflow, Klanten en Prognose
+3. Gebruik de filters om de periode-indeling te kiezen (jaar, kwartaal, maand, week of dag), het jaar te selecteren, open facturen mee te tellen of te vergelijken met een ander jaar
 
-Als een cijfer niet klopt, controleer dan eerst de actieve filters en het datumbereik.
+Rapporten hebben geen status- of categoriefilters; de periode- en vergelijkingsfilters gelden voor alle weergaven.
+
+Tip: Als een cijfer niet klopt, controleer dan eerst de actieve periode- en vergelijkingsinstellingen.
