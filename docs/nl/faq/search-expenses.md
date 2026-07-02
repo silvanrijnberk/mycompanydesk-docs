@@ -1,5 +1,5 @@
 ---
-title: Search expenses
+title: "Uitgaven zoeken"
 last_verified: 2026-05-09
 chatbot:
   triggers: ["search expenses", "find expense", "filter expenses", "sort expenses", "uitgave zoeken", "uitgaven filteren", "ausgabe suchen", "chercher depense"]
@@ -8,10 +8,10 @@ chatbot:
   follow_up: ["How do I filter by category?", "How do I create an expense?"]
 ---
 
-Om een specifieke uitgave te zoeken:
+Om uitgaven te zoeken en te filteren:
 1. Ga naar Uitgaven
-2. Gebruik de zoekbalk om leveranciersnaam, bedrag of omschrijving te typen
-3. Gebruik filters voor datumbereik of categorie
-4. Klik op de uitgave om deze te openen
+2. Gebruik de zoekbalk om te zoeken op leverancier, omschrijving of categorie
+3. Gebruik filters om te verfijnen op categorie of betaalstatus
+4. Sorteer op datum, leverancier, categorie, status of bedrag
 
-Tip: Regelmatig categoriseren maakt uitgaven veel gemakkelijker terug te vinden.
+Combineer de zoekbalk met het categoriefilter als de lijst lang is.

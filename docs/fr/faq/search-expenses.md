@@ -1,5 +1,5 @@
 ---
-title: Search expenses
+title: "Rechercher des dépenses"
 last_verified: 2026-05-09
 chatbot:
   triggers: ["search expenses", "find expense", "filter expenses", "sort expenses", "uitgave zoeken", "uitgaven filteren", "ausgabe suchen", "chercher depense"]
@@ -8,10 +8,10 @@ chatbot:
   follow_up: ["How do I filter by category?", "How do I create an expense?"]
 ---
 
-Pour rechercher une dépense spécifique :
+Pour rechercher et filtrer les dépenses :
 1. Accédez aux Dépenses
-2. Utilisez la barre de recherche pour taper le nom du fournisseur, le montant ou la description
-3. Utilisez les filtres de période ou de catégorie
-4. Cliquez sur la dépense pour l'ouvrir
+2. Utilisez la barre de recherche pour chercher par fournisseur, description ou catégorie
+3. Utilisez les filtres pour affiner par catégorie ou statut de paiement
+4. Triez par date, fournisseur, catégorie, statut ou montant
 
-Astuce : Une catégorisation régulière facilite grandement la recherche ultérieure des dépenses.
+Combinez la barre de recherche avec le filtre de catégorie quand la liste est longue.
