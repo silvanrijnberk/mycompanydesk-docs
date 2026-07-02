@@ -1,111 +1,60 @@
 ---
 title: Unternehmenseinstellungen
+last_verified: 2026-07-02
 ---
 
 # Unternehmenseinstellungen
 
-Konfigurieren Sie Ihre Geschäftsinformationen, Ihr Branding, finanzielle Standardeinstellungen und aktivierte Funktionen.
+Alles, was bestimmt, wie Ihr Unternehmen nach außen wirkt: der Name auf Ihren Rechnungen, Ihr Logo und Ihre Markenfarbe sowie Ihre öffentliche Website.
 
-## Einstellungen aufrufen
+## Wo Sie es finden
 
-Navigieren Sie zu **Unternehmen** in der Seitenleiste, um auf alle Einstellungen auf Unternehmensebene zuzugreifen. Die Einstellungen sind in Abschnitte unterteilt.
+Öffnen Sie **Einstellungen** über das Menü oder gehen Sie zu `/settings`. Unternehmensthemen sind Zeilen in der Gruppe **Ihr Unternehmen** (in der App: "Je bedrijf"):
 
-## Geschäftsinformationen
+- **Unternehmensdaten** (Bedrijfsgegevens) unter `/settings/bedrijfsgegevens`: Firmendaten, Adresse, KVK-Nummer, USt.-Nummer
+- **Logo und Farbe** (Logo en kleur) unter `/settings/uiterlijk`: Logo, Markenfarbe, Dokumentstil
+- **Rechnungsdesign** (Factuurontwerp) unter `/settings/factuurontwerp`: das Designstudio für Ihre Rechnungen, beschrieben unter [PDF-Anpassung](/de/settings/pdf)
 
-### Unternehmensdaten
+Alte Links zu den früheren Arbeitsbereich-Einstellungen leiten automatisch auf die neuen Seiten weiter.
 
-- **Firmenname** — Ihr eingetragener Firmenname (erscheint auf allen Dokumenten)
-- **Adresse** — Straße, Postleitzahl, Stadt, Land
-- **Kontakt-E-Mail** — Primäre geschäftliche E-Mail-Adresse
-- **Telefon** — Geschäftstelefonnummer
+## Unternehmensdaten (Bedrijfsgegevens)
 
-### Registrierung
+Pfad: `/settings/bedrijfsgegevens`
 
-- **USt.-Nummer** — Ihre Umsatzsteuerregistrierung (z. B. NL123456789B01)
-- **Handelsregisternummer**, Gewerbeanmeldungsnummer. Nutzen Sie **Aus KVK aktualisieren**, um die aktuellsten Daten aus dem niederländischen Handelsregister abzurufen. Leere Felder (Firmenname, Adresse, Postleitzahl, Stadt, Land) werden automatisch befüllt. Bereits von Ihnen eingetragene Werte bleiben erhalten. Jeder Arbeitsbereich erhält 100 kostenlose KVK-Abrufe pro Tag (zwischengespeicherte Ergebnisse zählen nicht zum Limit). Bei 20 oder weniger verbleibenden Abrufen zeigt der Feldhinweis einen Zähler, wie viele noch übrig sind. Wenn die Tagesgrenze erreicht ist, können Sie die Daten manuell eingeben oder es morgen erneut versuchen.
-- **IBAN** — Bankkonto für den Zahlungsempfang
+Das Identitätsformular. Was jede Rechnung, jedes Angebot und jede E-Mail zeigt.
 
-::: tip
-Adress-Autovervollständigung ist verfügbar — beginnen Sie zu tippen und wählen Sie aus Vorschlägen, die von Google Maps bereitgestellt werden.
-:::
+- **Firmenname**: erscheint auf jedem Dokument
+- **Adresse**: Straße, Postleitzahl, Stadt, Land (mit Adress-Autovervollständigung)
+- **Registrierung**: KVK-Nummer oder andere Registrierungsnummer. Die Schaltfläche **Aus KVK aktualisieren** ruft die aktuellsten Daten aus dem niederländischen Handelsregister ab und füllt leere Felder aus (Firmenname, Adresse, Postleitzahl, Stadt, Land). Bereits von Ihnen eingetragene Werte bleiben erhalten. Jeder Arbeitsbereich erhält 100 kostenlose KVK-Abrufe pro Tag (zwischengespeicherte Ergebnisse zählen nicht zum Limit). Bei 20 oder weniger verbleibenden Abrufen zeigt der Feldhinweis einen Zähler, wie viele noch übrig sind. Wenn die Tagesgrenze erreicht ist, können Sie die Daten manuell eingeben oder es morgen erneut versuchen.
+- **USt.-Nummer**: Ihre Umsatzsteuernummer (z. B. `NL123456789B01`)
+- **Kontakt**: öffentliche E-Mail-Adresse, Telefon, Support-E-Mail-Adresse
+- **Website + Social Media**: verwendet in der E-Mail-Signatur, auf Ihrer Unternehmensseite und in Fußzeilen
 
-## Branding
+Änderungen werden automatisch gespeichert.
 
-### Logo
+## Logo und Farbe (Logo en kleur)
 
-Laden Sie Ihr Firmenlogo hoch, um es zu verwenden auf:
+Pfad: `/settings/uiterlijk`
 
-- Rechnungs- und Angebots-PDFs
-- E-Mail-Kommunikation
-- Kundenportal
-- Öffentliche Geschäftsseite
+Das Branding für Rechnungen, Angebote und ausgehende E-Mails, mit einer Live-Vorschau des Ergebnisses.
 
-Unterstützte Formate: PNG, JPG, SVG. Verwenden Sie ein hochauflösendes Bild mit transparentem Hintergrund für beste Ergebnisse.
+- **Logo hochladen**: wird auf jeder PDF und im E-Mail-Kopf verwendet
+- **Markenfarbe**: eine Akzentfarbe für alle Ihre Dokumente und Ihre öffentliche Unternehmensseite
+- **Stilvorlagen**: wählen Sie einen Dokumentstil, verfügbar ab Starter
+- **PDF-Fußzeile**: der Fußzeilentext unten auf Ihren Dokumenten
 
-### Farben
+Es gibt einen Stil und eine Markenfarbe für alle Dokumenttypen; eine zweite Akzentfarbe existiert nicht mehr. Für volle Kontrolle über Layout, Farben und Schriftart Ihrer Rechnungen und Angebote öffnen Sie die Zeile **Rechnungsdesign** (das Designstudio); siehe [PDF-Anpassung](/de/settings/pdf).
 
-Legen Sie Ihre Marken-Akzentfarbe fest. Diese wird verwendet auf:
+## Ihre Website
 
-- PDF-Dokumenten
-- E-Mail-Vorlagen
-- Kundenseitigen Seiten
+Ihre öffentliche Unternehmensseite verwalten Sie im eigenständigen Bereich **Website** in der Navigation, nicht unter Einstellungen. Er hat eigene Seiten: **Seiten**, **Stil**, **Domain & SEO** und **Integrationen**.
 
-## Finanzielle Standardeinstellungen
+- Die Website ist ab dem Starter-Tarif verfügbar.
+- Das Verbinden einer eigenen Domain, anstelle der Standard-Subdomain auf `mycompanydesk.com`, erfordert Pro. DNS-, SPF- und DKIM-Einträge werden für Sie verwaltet; sie liegen hinter einem Erweitert-Bereich, den die meisten Nutzer nie öffnen müssen.
 
-### Währung
+## Verwandte Themen
 
-Legen Sie Ihre Standardwährung fest (standardmäßig EUR). Diese gilt für neue Rechnungen und Angebote.
-
-### Zahlungsbedingungen
-
-Legen Sie die Standard-Anzahl der Tage bis zur Fälligkeit einer Rechnung fest. Übliche Werte:
-
-- **14 Tage** — Zwei Wochen
-- **30 Tage** — Ein Monat
-- **60 Tage** — Zwei Monate
-
-Sie können dies pro Rechnung überschreiben.
-
-### Rechnungsnummerierung
-
-Passen Sie an, wie Rechnungsnummern generiert werden:
-
-- **Präfix** — Text vor der Nummer (z. B. `INV-`, `2024-`)
-- **Startnummer** — Die erste Nummer in der Sequenz
-- **Automatische Erhöhung** — Nummern werden automatisch erhöht
-
-## Funktionsumschalter
-
-Aktivieren oder deaktivieren Sie optionale Module:
-
-| Funktion | Beschreibung |
-|---|---|
-| **Objekte / Vermögenswerte** | Mietobjekt- und Vermögensverwaltung |
-| **Verträge** | Wiederkehrende Dienstleistungs- und Mietverträge |
-| **Projekte** | Projektbasierte Arbeitsverfolgung |
-| **Angebote** | Angebotsverwaltung |
-| **Reverse-Charge** | Innergemeinschaftliche B2B-Rechnungsstellung |
-| **KI-Vorschläge** | Intelligente Kategorisierungsempfehlungen |
-| **Belegscanner** | OCR-Ausgabenerfassung |
-| **Textprüfung** | Grammatik- und Rechtschreibprüfung |
-
-Deaktivierte Module werden in der Navigation ausgeblendet, um Ihren Arbeitsbereich fokussiert zu halten.
-
-## PDF-Vorlage
-
-Passen Sie das Layout und das Erscheinungsbild Ihrer generierten PDFs an:
-
-- Feldpositionierung
-- Sichtbarkeit von Informationen
-- Schriftart und Größe
-- Logo-Platzierung
-
-Greifen Sie auf den vollständigen **PDF-Editor** für visuelle Drag-and-Drop-Anpassung über Unternehmen > PDF-Editor zu.
-
-::: info
-Erweiterte PDF-Anpassung erfordert den **Pro**-Tarif oder höher.
-:::
-
-## Teammitglieder
-
-Sehen und verwalten Sie Ihr Team über die Unternehmensseite. Siehe [Teamverwaltung](/de/settings/team) für Details.
+- [PDF-Anpassung](/de/settings/pdf) für das Designstudio Rechnungsdesign
+- [Tarif und Zahlungen](/de/settings/billing), um eine eigene Domain freizuschalten
+- [E-Mail-Einrichtung](/de/settings/email), um von Ihrer eigenen Domain zu versenden
+- Der Einrichtungsassistent unter `/setup` führt neue Arbeitsbereiche in einem Durchlauf durch diese Einstellungen

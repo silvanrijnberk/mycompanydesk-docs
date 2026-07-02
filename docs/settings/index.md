@@ -1,167 +1,100 @@
 ---
 title: Settings overview
-last_verified: 2026-06-04
+last_verified: 2026-07-02
 ---
 
 # Settings overview
 
-MyCompanyDesk's settings tree is split into two trees that reflect who they belong to:
+Everything you can configure in MyCompanyDesk lives on a single settings page. Open **Instellingen** (Settings) from the menu, or go to `/settings`. Every topic is a full-width row, sorted into three plain-language groups, and each setting is at most two clicks away.
 
-- **`/workspace/...`** — settings shared by every member of one company. Edits here affect everyone in the workspace.
-- **`/me/...`** — settings personal to the logged-in user. Edits here follow you across workspaces.
+There is no longer a separate tree for company settings and personal settings. Personal topics and business topics sit on the same page; the group headers make clear which is which. Old bookmarked settings links redirect to the matching new page automatically.
 
-The old flat `/settings/*` and `/profile/*` URLs are gone. If you've bookmarked a `/settings/something` link, see [Where things moved](#where-things-moved) below.
+## Over jou (about you)
 
-## Why the split exists
+Personal settings. They apply to your own account and never change anything for teammates.
 
-A real user often belongs to more than one workspace — a freelancer doing the books for a client, an accountant invited to several customer companies, a team member moonlighting on a side project. Account-level preferences (notification quiet hours, password, connected Google/Microsoft account, language, time-format, mobile push tokens) should follow that person across every workspace they're a member of. Workspace-level preferences (company name, VAT regime, invoice numbering, expense categories, email signature, team roster, plan + billing) belong to the company, not to the individual managing it.
-
-Splitting the trees lets the same person sign into two workspaces and see the same `/me` settings in both, while `/workspace` always reflects the currently active company.
-
-## Workspace settings (`/workspace/...`)
-
-Shared across the team. Editing requires team-admin permission; non-admins see a read-only banner.
-
-The desktop sidebar groups workspace settings into five sections:
-
-### Organization
-
-| Page | Path | Covers |
-|---|---|---|
-| Company | `/workspace/organization/company` | Umbrella with the two leaves below |
-| About your business | `/workspace/organization/company/about` | Name, KvK / registry, VAT, address |
-| Look & feel | `/workspace/organization/company/look` | Logo, brand colour, second accent, PDF document styling |
-
-Your public business page and custom domain moved to the top-level **Website** surface (`/website`, with the Pagina's and Domein & SEO tabs) — they are no longer under the company umbrella. The legacy `/workspace/organization/{branding,profile,services,website,domains}`, `/workspace/organization/company/{website,address}`, and `/company/*` paths now redirect to their new homes.
-
-### Email
-
-Email is **not** in the workspace settings tree — it lives under the top-level **Inbox** surface (`/inbox`). The settings sit behind the Inbox tabs, with focused deep editors under `/inbox/settings/*`.
-
-| Page | Path | Covers |
-|---|---|---|
-| Inbox settings | `/inbox?tab=instellingen` | Mailboxes, aliases, delivery method, activity log, signature — all in one tab |
-| Templates | `/inbox?tab=sjablonen` | Document email templates hub |
-| Mailboxes & address | `/inbox/settings/address` | Shared `info@`, aliases, sending address, MX status, DKIM |
-| Sending | `/inbox/settings/sending` | Delivery method (Resend / Gmail / Outlook) + OAuth connect |
-| Signature | `/inbox/settings/signature` | Email footer / signature toggles with live preview |
-| Templates | `/inbox/settings/messages` | Per-document-type subject + body, include-buttons |
-| Activity log | `/inbox/settings/log` | Delivery / open / bounce events |
-
-The legacy `/workspace/email/*` and `/workspace/communication/*` paths redirect here. The inbox / Cloudflare Email Sending product is the primary surface.
-
-### Financial
-
-| Page | Path | Covers |
-|---|---|---|
-| Money umbrella | `/workspace/financial/money` | Tile menu — Invoices, Tax, How customers pay |
-| Invoices | `/workspace/financial/money/invoices` | Numbering, payment terms, late fees |
-| Tax | `/workspace/financial/money/tax` | VAT regime, KOR toggle, ICP, OSS |
-| Payments | `/workspace/financial/money/payments` | Default payment method, instructions |
-| Expenses | `/workspace/financial/expenses` | Defaults, depreciation toggles |
-| Expense categories | `/workspace/financial/categories` | Workspace `expense_categories` table |
-| Bank accounts | `/workspace/financial/bank-accounts` | Link your bank, sync transactions, vendor rules |
-| Time & Travel | `/workspace/financial/time-travel` | Working hours, OV / NS, mileage |
-
-### Features
-
-| Page | Path | Covers |
-|---|---|---|
-| Features | `/workspace/features` | Module on/off — quotes, contracts, objects, projects, recurring — plus AI processing mode + text-check language |
-
-App theme and appearance are a **personal** preference, not a workspace one — they live at `/me/preferences`. The old `/workspace/modules/*` paths redirect to `/workspace/features`.
-
-### Account
-
-The "Account" group inside `/workspace` is the **workspace's** account — not yours. It owns the team roster and the subscription that the company pays for.
-
-| Page | Path | Covers |
-|---|---|---|
-| Team | `/workspace/account/team` | Team members, accountants, roles, invites |
-| Billing | `/workspace/account/billing` | Plan, Stripe customer portal, usage, invoices |
-| Danger zone | `/workspace/account/danger-zone` | Workspace deletion |
-
-## Account settings (`/me/...`)
-
-Personal to the logged-in user. Travels with you across workspaces.
-
-The `/me` sidebar groups pages into three sections:
-
-### Account
-
-| Page | Path | Covers |
-|---|---|---|
-| Profile | `/me/profile` | Display name, avatar, default workspace |
-| Preferences | `/me/preferences` | Locale, date format, time format, theme, advanced mode |
-| Notifications | `/me/notifications` | Email + push, per-type toggles, quiet hours |
-
-### Work
-
-| Page | Path | Covers |
-|---|---|---|
-| Time & Travel defaults | `/me/time-travel` | Personal defaults overlaid on the workspace defaults |
-| Connected | `/me/connected` | Google / Microsoft sign-in, Gmail / Outlook send, OAuth scopes per provider |
-
-The old `/me/time-registration` and `/me/travel` paths redirect to the two halves of `/me/time-travel`.
-
-### Security
-
-| Page | Path | Covers |
-|---|---|---|
-| Security | `/me/security` | Password, TOTP + backup codes, passkey step-up, sessions, new-device email |
-| Data | `/me/data` | CSV import/export, GDPR export, account deletion |
-| Mobile | `/me/mobile` | Capacitor APK install, push tokens, mobile-specific toggles |
-
-## Where things moved
-
-Quick reference for users following an old link or instruction.
-
-| Looking for… | Now at |
+| Row | What it covers |
 |---|---|
-| Company name & registration | `/workspace/organization/company/about` |
-| VAT number | `/workspace/organization/company/about` |
-| Logo & brand colour | `/workspace/organization/company/look` |
-| Website / business page copy | `/website` |
-| Custom domain | `/website?tab=domein` |
-| Email signature | `/inbox/settings/signature` |
-| Email templates | `/inbox/settings/messages` |
-| Mailboxes & aliases | `/inbox/settings/address` |
-| Invoice numbering | `/workspace/financial/money/invoices` |
-| VAT regime / KOR / ICP / OSS | `/workspace/financial/money/tax` |
-| Payment instructions | `/workspace/financial/money/payments` |
-| Expense categories | `/workspace/financial/categories` |
-| Mileage rate / OV defaults | `/workspace/financial/time-travel` |
-| Module on/off (quotes, contracts, …) | `/workspace/features` |
-| Team members & roles | `/workspace/account/team` |
-| Plan & subscription | `/workspace/account/billing` |
-| Delete the workspace | `/workspace/account/danger-zone` |
-| Your name & avatar | `/me/profile` |
-| Language / date format / theme | `/me/preferences` |
-| Notification preferences | `/me/notifications` |
-| Password & 2FA | `/me/security` |
-| Bank accounts (moved from `/me/bank-accounts`) | `/workspace/financial/bank-accounts` |
-| Connected Google / Microsoft account | `/me/connected` |
-| CSV import & export | `/me/data` |
-| Delete your user account | `/me/data` |
+| **Jouw gegevens** (your details) | Your name, email address and photo |
+| **Inloggen** (signing in) | Password, two-step verification, passkeys and logging out |
+| **Meldingen** (notifications) | Which events we message you about, plus push notifications on this device |
+| **Weergave** (display) | Light or dark theme, text size and the language of the app |
 
-## Permissions
+See [Your personal settings](/account/profile) for a walkthrough of these four pages.
 
-- **Workspace settings** require team-admin permission. Non-admins viewing a `/workspace/...` page see a banner explaining the page is admin-only; they can still read the values, but every input is disabled.
-- **Account settings** are always available to the logged-in user. There is no admin override for another user's `/me` settings.
+## Je bedrijf (your business)
 
-## Search & deep-linking
+Shared settings. Changes here apply to everyone in your workspace.
 
-Cmd-K (Ctrl-K on Windows / Linux) opens a global search. Results from the settings index deep-link to the right page with `?focus=<anchor>`, scrolling the matching card into view with a brief highlight. Use this instead of remembering paths — typing "VAT", "signature", "team", "password" all work.
+| Row | What it covers |
+|---|---|
+| **Bedrijfsgegevens** (business details) | Name, address, KvK and VAT number; these appear on your invoices and quotes |
+| **Logo en kleur** (logo and colour) | How your invoices and quotes look |
+| **Facturen en offertes** (invoices and quotes) | Payment term, automatic payment reminders and how long quotes stay valid |
+| **Factuurontwerp** (invoice design) | Layout, colour and font of your invoices, with a live preview |
+| **Betalen** (getting paid) | How customers can pay you: your IBAN, iDEAL and PayPal |
+| **BTW** (VAT) | Your usual VAT rate, how often you file and the KOR small-business scheme |
+| **E-mail** | The address your invoices and quotes are sent from |
+| **Je website en domein** (your website and domain) | Your own site and domain name |
+| **Onderdelen** (features) | Switch parts of the app on or off: quotes, receipt scanning, contracts, projects, website, newsletters |
+| **Toegang en boekhouder** (access and accountant) | Give a partner, employee or your accountant access to your books |
+
+## Abonnement en gegevens (subscription and data)
+
+| Row | What it covers |
+|---|---|
+| **Je abonnement** (your subscription) | What you pay and what is included |
+| **Mijn verzoeken** (my requests) | View and manage your support questions |
+| **Gegevens downloaden** (download your data) | Everything you have stored, in one file |
+| **Account opzeggen** (cancel your account) | Stop using MyCompanyDesk |
+
+## Admin-only rows
+
+Three rows are only visible to team admins: **Toegang en boekhouder**, **Je abonnement** and **Account opzeggen**. If you were invited as a team member without admin rights, these rows are hidden for you; ask the workspace admin to make those changes.
+
+## Search
+
+Press **Cmd+K** (Mac) or **Ctrl+K** (Windows and Linux), or click the search box at the top of the settings page. Typing filters the rows as you type, and everyday words work too: "iban" finds **Betalen**, "donker" (dark) finds **Weergave**, "aangifte" (tax return) finds **BTW**.
+
+A few pages only appear through search, to keep the main list calm:
+
+- **Bankrekening koppelen** (connect your bank account): opens the bank connection settings on the expenses side of the app, so incoming transactions are recognised as expenses automatically.
+- **API-sleutels** (API keys) and **Webhooks**: developer settings, shown when the public API is available on your account.
+
+## Where do I find...
+
+| I want to... | Open |
+|---|---|
+| Change my name or photo | **Jouw gegevens** |
+| Change my password or set up two-step verification | **Inloggen** |
+| Choose what I get notified about | **Meldingen** |
+| Switch to dark mode, larger text or another app language | **Weergave** |
+| Fix my company address or VAT number | **Bedrijfsgegevens** |
+| Upload a logo or change my brand colour | **Logo en kleur** |
+| Change the payment term or reminder emails | **Facturen en offertes** |
+| Restyle my invoice PDF | **Factuurontwerp** |
+| Add my IBAN or let customers pay with iDEAL | **Betalen** |
+| Change my VAT rate or filing frequency | **BTW** |
+| Send invoices from my own email address | **E-mail** |
+| Set up my website or domain | **Je website en domein** |
+| Turn quotes, projects or newsletters on or off | **Onderdelen** |
+| Give my accountant access | **Toegang en boekhouder** (admins) |
+| Upgrade or check my plan | **Je abonnement** (admins) |
+| Connect my bank | Search for "bank koppelen" |
+| Download a copy of my data | **Gegevens downloaden** |
+| Cancel my account | **Account opzeggen** (admins) |
+
+Calendar sync with Google or Outlook is not on the settings page; you connect a calendar from the agenda's own settings. See [Your personal settings](/account/profile#connected-calendars).
+
+## Old links
+
+Settings URLs from earlier versions of the app, including the old separate workspace and personal settings trees, redirect to the matching new page. Bookmarks and links in old emails keep working.
 
 ## Related pages
 
-- [Setup wizard](/features/setup-wizard) — fills most workspace settings on first run, can be re-run.
-- [Set Up Your Company](/getting-started/company-setup) — first-time walk-through.
-- [Company settings](/settings/company) — deep dive on the Organization > Company tree.
-- [Email integration](/settings/email) — deep dive on the Inbox (`/inbox`) email settings.
-- [Team management](/settings/team) — deep dive on `/workspace/account/team`.
-- [Bank feed](/features/bank) — deep dive on `/workspace/financial/bank-accounts`.
-- [Billing & plans](/settings/billing) — deep dive on `/workspace/account/billing`.
-- [Profile](/account/profile) — deep dive on `/me/profile`.
-- [Security](/account/security) — deep dive on `/me/security`.
-- [Data import & export](/account/data) — deep dive on `/me/data`.
+- [Setup wizard](/features/setup-wizard) fills most business settings on first run and can be re-run at any time.
+- [Your personal settings](/account/profile) covers the Over jou group in detail.
+- [Security](/account/security) covers passwords, two-step verification and passkeys.
+- [Data import and export](/account/data) covers Gegevens downloaden and CSV import.
+- [Team management](/settings/team) covers access for partners and accountants.
+- [Billing and plans](/settings/billing) covers your subscription.

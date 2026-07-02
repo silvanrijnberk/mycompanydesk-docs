@@ -1,111 +1,60 @@
 ---
 title: Bedrijfsinstellingen
+last_verified: 2026-07-02
 ---
 
 # Bedrijfsinstellingen
 
-Configureer je bedrijfsinformatie, huisstijl, financiele standaardwaarden en ingeschakelde functies.
+Alles wat bepaalt hoe je bedrijf er naar buiten toe uitziet: de naam op je facturen, je logo en huisstijlkleur, en je publieke website.
 
-## Instellingen openen
+## Waar vind je het
 
-Navigeer naar **Bedrijf** in de zijbalk om alle bedrijfsinstellingen te openen. De instellingen zijn georganiseerd in secties.
+Open **Instellingen** via het menu, of ga naar `/settings`. Bedrijfsonderwerpen zijn rijen in de groep **Je bedrijf**:
 
-## Bedrijfsinformatie
+- **Bedrijfsgegevens** op `/settings/bedrijfsgegevens`: bedrijfsinformatie, adres, KVK-nummer, BTW-nummer
+- **Logo en kleur** op `/settings/uiterlijk`: logo, huisstijlkleur, documentstijl
+- **Factuurontwerp** op `/settings/factuurontwerp`: de ontwerpstudio voor je facturen, beschreven op [PDF-aanpassing](/nl/settings/pdf)
 
-### Bedrijfsgegevens
+Oude links naar de vroegere werkruimte-instellingen verwijzen automatisch door naar de nieuwe plek.
 
-- **Bedrijfsnaam** — Je geregistreerde handelsnaam (verschijnt op alle documenten)
-- **Adres** — Straat, postcode, plaats, land
-- **Contacte-mail** — Primair zakelijk e-mailadres
-- **Telefoon** — Zakelijk telefoonnummer
+## Bedrijfsgegevens
 
-### Registratie
+Pad: `/settings/bedrijfsgegevens`
 
-- **BTW-nummer** — Je BTW-registratie (bijv. NL123456789B01)
-- **KVK-nummer**, bedrijfsregistratienummer. Gebruik **Ophalen uit KVK** om de laatste gegevens uit het Handelsregister te halen. Lege velden (bedrijfsnaam, adres, postcode, plaats, land) worden automatisch ingevuld. Velden die je zelf al hebt ingevuld blijven staan. Elke werkruimte heeft een daglimiet van 100 KVK-zoekopdrachten (resultaten uit de cache tellen niet mee). Bij 20 of minder resterende zoekopdrachten toont de veldhint een teller met het aantal dat je nog over hebt. Is het daglimiet bereikt, dan kun je de gegevens handmatig invullen of het morgen opnieuw proberen.
-- **IBAN** — Bankrekening voor het ontvangen van betalingen
+Het identiteitsformulier. Wat elke factuur, offerte en e-mail toont.
 
-::: tip
-Adresaanvulling is beschikbaar — begin met typen en selecteer uit suggesties aangestuurd door Google Maps.
-:::
+- **Bedrijfsnaam**: verschijnt op elk document
+- **Adres**: straat, postcode, plaats, land (met adresaanvulling)
+- **Registratie**: KVK-nummer of ander registratienummer. De knop **Ophalen uit KVK** haalt de laatste gegevens uit het Handelsregister en vult lege velden in (bedrijfsnaam, adres, postcode, plaats, land). Velden die je zelf al hebt ingevuld blijven staan. Elke werkruimte heeft 100 gratis KVK-zoekopdrachten per dag (resultaten uit de cache tellen niet mee). Bij 20 of minder resterende zoekopdrachten toont de veldhint een teller met het aantal dat je nog over hebt. Is de daglimiet bereikt, dan kun je de gegevens handmatig invullen of het morgen opnieuw proberen.
+- **BTW-nummer**: je BTW-id (bijv. `NL123456789B01`)
+- **Contact**: publiek e-mailadres, telefoon, support-e-mailadres
+- **Website + social media**: gebruikt in de e-mailhandtekening, op je bedrijfspagina en in footers
 
-## Huisstijl
+Wijzigingen worden automatisch opgeslagen.
 
-### Logo
+## Logo en kleur
 
-Upload je bedrijfslogo voor gebruik op:
+Pad: `/settings/uiterlijk`
 
-- Factuur- en offerte-PDF's
-- E-mailcommunicatie
-- Klantportaal
-- Openbare bedrijfspagina
+De huisstijl voor facturen, offertes en uitgaande e-mail, met een livevoorbeeld van het resultaat.
 
-Ondersteunde formaten: PNG, JPG, SVG. Gebruik een afbeelding met hoge resolutie en transparante achtergrond voor het beste resultaat.
+- **Logo uploaden**: gebruikt op elke PDF en in de e-mailheader
+- **Huisstijlkleur**: een accentkleur voor al je documenten en je publieke bedrijfspagina
+- **Stijlen**: kies een documentstijl, beschikbaar vanaf Starter
+- **PDF-voettekst**: de voettekst onderaan je documenten
 
-### Kleuren
+Er is een stijl en een huisstijlkleur voor alle documenttypes; een tweede accentkleur bestaat niet meer. Wil je de opmaak, kleuren en het lettertype van je facturen en offertes helemaal zelf bepalen? Open dan de rij **Factuurontwerp** (de ontwerpstudio); zie [PDF-aanpassing](/nl/settings/pdf).
 
-Stel je merk-accentkleur in. Deze wordt gebruikt op:
+## Je website
 
-- PDF-documenten
-- E-mailsjablonen
-- Klantgerichte pagina's
+Je publieke bedrijfspagina beheer je in het aparte onderdeel **Website** in de navigatie, niet onder Instellingen. Het heeft eigen pagina's: **Pagina's**, **Stijl**, **Domein & SEO** en **Koppelingen**.
 
-## Financiele standaardwaarden
+- De website is beschikbaar vanaf het Starter-abonnement.
+- Je eigen domein koppelen, in plaats van het standaard `mycompanydesk.com`-subdomein, vereist Pro. DNS-, SPF- en DKIM-records worden voor je beheerd; ze staan achter een geavanceerd-strookje dat de meeste gebruikers nooit hoeven te openen.
 
-### Valuta
+## Gerelateerd
 
-Stel je standaardvaluta in (standaard EUR). Dit geldt voor nieuwe facturen en offertes.
-
-### Betalingstermijn
-
-Stel het standaard aantal dagen in tot een factuur vervalt. Veelgebruikte waarden:
-
-- **14 dagen** — Twee weken
-- **30 dagen** — Een maand
-- **60 dagen** — Twee maanden
-
-Je kunt dit per factuur overschrijven.
-
-### Factuurnummering
-
-Pas aan hoe factuurnummers worden gegenereerd:
-
-- **Voorvoegsel** — Tekst voor het nummer (bijv. `INV-`, `2024-`)
-- **Startnummer** — Het eerste nummer in de reeks
-- **Automatische ophoging** — Nummers worden automatisch verhoogd
-
-## Functiemodules aan/uit
-
-Schakel optionele modules in of uit:
-
-| Functie | Beschrijving |
-|---|---|
-| **Objecten / Activa** | Verhuur- en activabeheer |
-| **Contracten** | Terugkerende service- en huurcontracten |
-| **Projecten** | Projectmatig werken bijhouden |
-| **Offertes** | Offertebeheer |
-| **Verlegde BTW** | Intra-EU B2B-facturatie |
-| **AI-suggesties** | Slimme categorisatie-aanbevelingen |
-| **Bonnen scannen** | OCR-uitgaveninvoer |
-| **Tekstcontrole** | Grammatica- en spellingcontrole |
-
-Uitgeschakelde modules worden verborgen uit de navigatie om je werkruimte overzichtelijk te houden.
-
-## PDF-sjabloon
-
-Pas de lay-out en het uiterlijk van je gegenereerde PDF's aan:
-
-- Veldpositionering
-- Informatiezichtbaarheid
-- Lettertype en grootte
-- Logoplaatsing
-
-Open de volledige **PDF-editor** voor visuele drag-and-drop-aanpassing via Bedrijf > PDF-editor.
-
-::: info
-Geavanceerde PDF-aanpassing vereist het **Pro**-abonnement of hoger.
-:::
-
-## Teamleden
-
-Bekijk en beheer je team vanaf de bedrijfspagina. Zie [Teambeheer](/nl/settings/team) voor details.
+- [PDF-aanpassing](/nl/settings/pdf) voor de ontwerpstudio Factuurontwerp
+- [Abonnement en betalingen](/nl/settings/billing) om een eigen domein te ontgrendelen
+- [E-mailinstellingen](/nl/settings/email) om vanaf je eigen domein te versturen
+- De installatiewizard op `/setup` loopt met nieuwe werkruimtes in een keer door deze instellingen heen
