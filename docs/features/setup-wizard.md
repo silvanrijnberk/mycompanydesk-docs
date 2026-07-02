@@ -1,231 +1,116 @@
 ---
-title: Setup Wizard
-last_verified: 2026-05-19
+title: Setup wizard
+last_verified: 2026-07-02
 ---
 
-# Setup Wizard
+# Setup wizard
 
-A five-step magical setup at `/setup` that captures your business identity, optionally pulls your registration from KvK or an EU registry, picks a web address, generates brand suggestions, and applies everything in one click. The wizard is the front door for first-time users and stays available later for tweaks.
+The setup wizard at `/setup` gets a new workspace ready in a few minutes: it asks what work you do and what you want from the app, pulls your company details from the Dutch trade register (KVK), optionally sets up a web address and brand, and confirms your trial. It is the front door for first-time users and stays available afterwards.
 
-If you came here looking for the basic walk-through, start at [Set Up Your Company](/getting-started/company-setup). This page is the deep reference: every step, every option, every consequence.
+If you came here for the basic walkthrough, start at [Set up your company](/getting-started/company-setup). This page is the reference for every step and option.
 
 ## When the wizard is offered
 
-The wizard is reachable two ways:
+- **First sign-in:** new accounts land in the wizard automatically.
+- **Dashboard banner:** while setup is unfinished, a banner at the top of the dashboard offers to finish it. The banner can be hidden with the close button; hiding it is per browser, and `/setup` stays reachable directly.
+- **Any time:** navigate to `/setup` to run or re-run the wizard.
 
-- **Direct:** navigate to `/setup` at any time.
-- **Dashboard banner:** while onboarding is incomplete, a dismissable "Finish setup" banner sits at the top of `/dashboard`. It shows a count of pending fields (or a generic "complete your profile" message if the count is zero) and a button back into the wizard. A dismiss button (X icon) hides the banner per browser via localStorage, persisting across reloads until the wizard is completed.
+The wizard is non-blocking. **Voor nu overslaan** (skip for now) takes you to the dashboard without finishing; nothing is lost, because every answer is saved the moment you give it. Come back later and you continue exactly where you stopped.
 
-The wizard is non-blocking: the old forced redirect to `/setup` on signup (the `ONBOARDING_MANDATORY` gate) has been removed. New signups land on `/dashboard` directly and see the dismissable banner instead.
+## The steps
 
-## Page layout
+The wizard shows a progress bar with up to six steps:
 
-The wizard is a single page (`/setup`) with five steps in a stepper. Each step writes its answers to a JSONB column (`companies.onboarding_state`) on every change, so the wizard is fully resumable: close the tab mid-step and the next visit lands you on the same step with the same answers filled in.
+1. **Werk** (work): what kind of work you do
+2. **Doelen** (goals): what you want to do with MyCompanyDesk
+3. **KVK**: your company details
+4. **Online adres** (web address): only when you picked the website goal
+5. **Merk** (brand): only when you picked the website goal
+6. **Founding Members**: trial confirmation and finish
 
-Three buttons sit at the bottom on every step:
+**Doorgaan** (continue) moves forward once a step has what it needs; **Setup afronden** (finish setup) on the last step applies everything.
 
-- **Back** — go to the previous step (hidden on step 1).
-- **Skip for now** — leaves without marking onboarding complete. The dashboard banner stays up so the user can come back.
-- **Continue** / **Finish** — gated per step on the answers below.
+## Step: Werk
 
-There is no "save and exit" — saving is automatic. **Skip for now** is a clean exit, not a discard.
+A grid of common trades: Timmerman, Schilder, Loodgieter, Elektricien, Stukadoor, Hovenier, Fotograaf, Kapper, Schoonheidsspecialist, Webdesigner, Consultant, Verhuurder, and **Iets anders** (something else) with a free-text field.
 
-## Step 1 — Business
+Picking a trade pre-ticks a matching set of goals on the next step: a carpenter gets invoices, quotes, expenses, hours and projects; a landlord gets rentals, invoices, expenses and VAT. You can change every tick on the goals step; the wizard only resets them if you come back and pick a different trade.
 
-Captures the two answers every later step depends on.
+You need to pick a trade to continue.
 
-| Field | Stored as | Required | Notes |
-|---|---|:---:|---|
-| Business name | `answers.businessName` | yes | Used as `display_name` and `company_name` on Finish (legal name from the registry step wins for `company_name` if both are present). Also seeds the subdomain slug suggestion in step 3. |
-| What you do | `answers.what` | yes | Free-text, 1–2 sentences. Fed to the magic step's suggestion generator (Gemini) along with country and sector. |
+## Step: Doelen
 
-**Continue is disabled** until both fields have non-empty trimmed values.
+A checklist of eight goals:
 
-## Step 2 — Registry
+- **Facturen sturen** (send invoices)
+- **Offertes maken** (make quotes)
+- **Uitgaven bijhouden** (track expenses)
+- **Uren schrijven** (log hours)
+- **Projecten beheren** (manage projects)
+- **Verhuur bijhouden** (manage rentals)
+- **Online gevonden worden** (be found online)
+- **Btw en overzichten** (VAT and overviews)
 
-Picks a country and either looks up the business in the country's official registry, fills the details in manually, or skips the step entirely.
+Each ticked goal switches the matching part of the app on for your workspace; unticked goals stay off so the menu stays calm. You can always change this later under **Onderdelen** (features) in Settings.
 
-### Three paths
+**Online gevonden worden** is the goal with the biggest effect on the wizard itself: it adds the **Online adres** and **Merk** steps. Without it, no website is set up and you go from KVK straight to the final step.
 
-1. **Search:** typeahead by company name, pick a match, and let the backend pull the Basisprofiel (EUR 0.02/call for NL). The search box is only shown when the paid KVK API (`KVK_API_KEY`) is configured on the API container. When the key is missing, search is skipped and the wizard defaults to manual entry (path 2).
-2. **Manual:** fill in the company name, KVK number (optional), address, postal code, and city by hand. The data is saved directly to the company row via `PUT /company-settings/company` and `answers.kvk` is stamped with `manual: true`. Manual entry is the default when KVK_API_KEY is not set, and also exists for two additional scenarios even when search is available: (a) new companies not yet in the free OpenKVK dataset, and (b) companies whose trade name does not match what the user typed in search.
-3. **Skip** — "Geen KVK-inschrijving?" (or equivalent) stores `answers.kvk = null`. The wizard continues; company data can be filled later in settings.
+At least one goal must be ticked to continue.
 
-Switching between search and manual is a single click (when search is available): a "Fill in manually" button appears below the search results, and a "Back to KVK search" link sits at the top of the manual form. When `KVK_API_KEY` is absent, the switch-to-search button is hidden entirely and the user starts and stays on manual entry.
+## Step: KVK
 
-### Country options
+Three ways through:
 
-| Code | Registry shown | Lookup wired |
-|---|---|:---:|
-| `NL` | KvK | yes |
-| `FR` | SIRENE | yes |
-| `GB` | Companies House | yes |
-| `DE` | Handelsregister | no — manual entry |
-| `OTHER` | (no registry) | no — manual entry |
+1. **Search:** type your company name (two characters or more) and pick your business from the live suggestions. MyCompanyDesk then retrieves your KVK Basisprofiel and prefills your company details: legal name, trade names, legal form, address and business activity. Prefill only fills empty fields; anything you already entered by hand is preserved.
+2. **Vul handmatig in** (fill in manually): a short form for company name, KVK number, address, postal code and city. Use it when your business is too new to appear in the search results, or when your trade name does not match what you searched for. Your entries are saved to your company details right away. A link takes you back to search at any time.
+3. **Geen KVK-inschrijving?** (no KVK registration): continue without company data and fill it in later under **Bedrijfsgegevens** in Settings.
 
-`NL` is the default. Country drives several things on Finish: timezone (`Europe/Amsterdam` / `Europe/Berlin` / `Europe/Paris` / `Europe/London`), `pdf_language` (`nl` / `de` / `fr` / `en`), and the registry label baked into `footer_text` (`KvK 12345678`, `Handelsregister …`, `SIRENE …`, `CRN …`).
+When a search finds nothing, the wizard says so and offers to switch to manual entry with the name you typed already filled in.
 
-### Search mode
+The step also asks for a one-line description of what your business does; when your company was found in the register, it is pre-filled from your registered business activity. On **Doorgaan**, MyCompanyDesk uses your company name and this description to generate brand suggestions in the background: a brand colour, a tagline and starter content. You see the result on the Merk step (when you have the website goal) and on your documents and website after finishing.
 
-For supported countries the user types a company name to search. The backend calls the matching public API and returns one of:
+To continue, pick a company, save a manual entry, or choose the no-KVK option.
 
-- **ok** — `legalName`, `address`, `postalCode`, `city`, `sector` populated and stored under `answers.registry`.
-- **not-configured** — provider not yet wired in this environment; the user is prompted to switch to manual entry.
-- **not-found** — number didn't resolve; user can retry or switch to manual.
-- **invalid** — number format rejected.
-- **error** — provider error; manual entry remains an option.
+## Step: Online adres
 
-<!-- TODO(source-missing): KvK Basisprofiel API pricing (EUR 0.02/call) and subscription (EUR 6.40/month) from developers.kvk.nl/nl/pricing -->
-#### KvK Basisprofiel (NL only)
+Shown only with the website goal. Three cards:
 
-For NL workspaces, the KvK lookup is a two-step flow:
+- **Gratis subdomein** (free subdomain): pick a name for a free address ending in `.mycompanydesk.site`. The name is pre-filled from your company name, and availability is checked live while you type. Continue is only enabled once the name is confirmed available.
+- **Ik heb al een domein** (I already have a domain): type a domain you own. It is connected to your workspace when you finish the wizard; if it does not point to MyCompanyDesk yet, you complete the DNS steps afterwards from your website settings.
+- **Registreer een domein** (register a domain): search for a domain, see availability and price, and buy it directly in the wizard. Founding Members can claim one for free. A successful purchase is attached to your workspace immediately.
 
-1. **Typeahead** — the user searches by company name. The `zoeken` endpoint (free) returns matching entries. This is the autocomplete step that powers the existing `ok` / `not-found` responses. When the search returns zero hits, the UI shows an inline empty-state panel (title, explanation, and a "fill manually" CTA that seeds the manual form with what the user already typed). This is common because OpenKVK's free tier misses many young businesses.
-2. **Basisprofiel** — once a match is picked, the wizard calls the KvK Basisprofiel detail endpoint. This is a paid call (EUR 0.02, 24h-cached per KVK number). It returns the full profile: `legalName`, `statutaireNaam` (statutory name), `tradeNames` (all registered trade names, ordered), `rsin`, `legalForm`, `dateFounded`, visiting and postal addresses, SBI codes with primary-flag, `employeeCount`, and `indNonMailing` (do-not-mail flag). The wizard auto-fills `business_page_hero_tagline` from the first trade name and city ("[tradeName] in [city]"), and `description` from the primary SBI description (capped at 280 characters). Both use COALESCE so any user edits in Settings are preserved.
+The step can be skipped; a domain can always be added later from your website settings.
 
-There are two independent feature gates for NL KVK lookups:
+## Step: Merk
 
-- `KVK_API_KEY` (env var on the API container): when absent, the search box is not shown at all and the wizard defaults to manual entry on that step. OpenKVK's free tier alone is too sparse (~2% hit rate, misses nearly every fresh registration). The flag flips automatically once the key is set.
-- `KVK_BASISPROFIEL_ENABLED`: when off (or when `KVK_API_KEY` is absent), the wizard uses the free `zoeken`-only result (the same `ok` fields listed above). When on and `KVK_API_KEY` is present, the Basisprofiel data enriches the `answers.registry` payload and the Review step shows every field that will be written to the company row.
+Shown only with the website goal, and fully optional:
 
-### Manual mode
+- **Logo upload:** PNG, JPG, SVG or WebP. The dominant colour of your logo is picked up as your brand colour automatically. If you skip the upload, MyCompanyDesk generates a clean initials logo from your business name, so your invoices and website never look unfinished.
+- **Preview:** the brand colour and tagline proposed for you, based on your KVK details and your one-line description. Editing them is a follow-up in Settings; nothing on this step blocks you from continuing.
 
-User fills `chosen` (their registration number), and optionally `legalName`, `address`, `sector`. All four fields are optional in this mode.
+## Step: Founding Members
 
-### Skip mode
+The final step confirms your trial and offers the Founding Members programme:
 
-A "Not registered yet" toggle stores `answers.registry = null`. **Continue is always allowed on this step**, regardless of mode — registry data is convenience, not a gate.
+- **Your trial:** every new workspace starts with 60 days of Pro, free, no credit card needed.
+- **Founding Members:** while spots last (100 in total, with a live counter), one click reserves a spot: a full year of Pro free, then 50 percent off Pro for as long as you stay. When all spots are gone, the step simply notes that your 60-day trial continues as normal.
 
-## Step 3 — Domain
+**Setup afronden** applies everything: your company details, brand colour, logo, starter services and email templates, expense categories that fit your work, and, with the website goal, your website and domain. A summary lists what was set up, with buttons to go to the dashboard or straight into the website builder.
 
-Pick the web address your customers will see on the public business page and your email inbox. Three branches, displayed as cards, cover every path from free quick-start to buying a domain in-wizard.
+## Skipping, resuming and re-running
 
-### Three-branch picker
+- **Skip:** **Voor nu overslaan** exits to the dashboard at any point. The dashboard banner keeps a way back until setup is finished.
+- **Resume:** answers are saved on every change. Closing the tab mid-step loses nothing; the next visit continues on the same step.
+- **Re-run:** after finishing, `/setup` starts the flow again from the first step with your saved answers. The wizard fills blanks rather than overwriting: a services list you built, a logo you uploaded or settings you chose by hand are not replaced.
 
-A grid of three cards presents the choice. Selecting a branch reveals the matching editor below; only one branch is active at a time.
+## Editing without the wizard
 
-**Subdomain (free):** the user picks a slug; a TLD selector lets them choose between `.mycompanydesk.nl` and `.mycompanydesk.com`. The slug is pre-filled from the KVK legal name when available (lowercased, accents stripped, non-ASCII characters removed, truncated at 63 characters), so most users can tap-and-continue without typing. Availability is checked live with a 350 ms debounce as the user types. On Finish the subdomain is provisioned via the Cloudflare API and the company's website becomes immediately reachable.
+Every field the wizard touches has a home in **Instellingen** (Settings):
 
-When the wizard is run in the 2-step (plan-gated) flow, the Domain step is omitted entirely. The Finish step auto-provisions a workspace subdomain from the `display_name` value: the slug is derived from the display name (with retry-on-collision suffixes up to 5 attempts), and `activateSubdomain` registers it as the public site URL. Best-effort: a collision or failure is logged and does not block the wizard from finishing.
+- **Bedrijfsgegevens** (business details): name, KVK number, address, VAT number
+- **Logo en kleur** (logo and colour): logo and brand colour
+- **Factuurontwerp** (invoice design): the look of your PDFs
+- **Je website en domein** (your website and domain): domain and website
+- **Onderdelen** (features): switch app parts on or off
 
-**Own domain:** the user types a domain they already own. A live validation regex checks the format as they type (`[a-z0-9][a-z0-9-]*(\.[a-z0-9]([a-z0-9-]*[a-z0-9])?)+`). On Finish the wizard adds the domain to the workspace's domain list (no-op if it was already added) and auto-enables the inbox: `info@<domain>` as the default mailbox plus `support@`, `sales@`, and `noreply@` aliases. The 409-already-exists path from `apply.service` is handled gracefully.
-
-If the domain isn't yet pointed at MCD's nameservers, Finish redirects to `/website?tab=domein` so the user immediately sees the DNS instructions and a **Verify** button. Otherwise it goes to the dashboard.
-
-**Register a new domain:** embeds the live `DomainPurchaseCard` + `DomainClaimModal` from the settings surface. The user can search for a domain, check availability and pricing, and either buy it through OpenProvider or claim it free as a Founding Member. On a successful claim or purchase, the domain is already attached to the workspace server-side via the `/api/domain-purchase` flow, so the wizard records the answer as `mode='own'` with the registered name and `registered: true`; `apply.service` treats it as a no-op re-add. A green success banner shows the registered domain name and lets the user continue.
-
-If the user opens the Register branch but does not complete a purchase, the step is marked as skipped so the wizard can continue. They can return later via `Company › Your own .com address` whenever ready.
-
-### Switching from a custom domain back to a subdomain
-
-If the workspace already has a custom website domain, the wizard surfaces a warning before letting the user switch to the subdomain path — `activateSubdomain` refuses on companies with a custom domain still attached, and the failure would otherwise only surface at Finish.
-
-## Step 4 — Magic
-
-Generates brand suggestions from the answers captured so far. Fields:
-
-- **Brand colour** — hex. If the user uploads a logo on this step, the dominant non-white colour is extracted from the raster (via `sharp`) and used; that overrides the Gemini suggestion, and a flag (`brandColorFromLogo`) prevents a later regenerate from clobbering it. SVG-only logos and mostly-white inputs fall back to the Gemini palette.
-- **Tagline** — short hero line for the public business page.
-- **About text** — paragraph for the business page.
-- **Services** — list of up to 8 service names. Each is inserted into `company_services` on Finish, but **only if the company has zero services already** — the wizard never overwrites an existing services list.
-- **Email tone** — `formal` / `friendly` / `casual`. Maps to the email style: `formal → classic`, `friendly` and `casual → modern`.
-- **Email templates** — keyed by template type (`invoice_default`, `reminder_default`, etc.), each with `subject` + `body`. Saved via the email template repository on Finish.
-
-The user can edit any suggestion inline before continuing. **Continue is disabled** until suggestions exist (clicking **Generate suggestions** at least once).
-
-### Logo upload
-
-Clicking the upload tile lets the user pick an image up to 4 MB. The file is sent as a base64 data URI to `/onboarding/upload-logo`, which:
-
-1. Stores it via the canonical companies logo path.
-2. Returns the dominant non-white colour, which is auto-applied to the brand-colour suggestion.
-3. Sets `answers.logoUploaded = true` so the Review copy adjusts ("we'll use your logo" instead of "we'll create an initials logo from your business name") and the apply step skips the initials generator.
-
-If the user already had a logo on file, it's shown as the existing preview ("you already have a logo") instead of an empty upload CTA.
-
-## Step 5 — Review
-
-Read-only diff of every field the wizard would change. Two sections:
-
-- **Changes** — `current → next` rows. Includes a swatch for `brandColor`. Only fields the wizard wrote and that differ from the current company row appear here.
-- **Already set** — fields the wizard captured but that already match the company row.
-
-Fields shown: business name, country, registry number, legal name, address, brand colour, tagline, about text, domain summary (`info@<resolved-domain>` is previewed if a domain is set).
-
-The footer's **Finish** button calls `/onboarding/complete`. The current locale is forwarded so default copy (e.g. payment instructions) is localised.
-
-## What Finish actually applies
-
-`apply.service.js` walks the answers and writes them into the real company row. Two semantics, deliberately split:
-
-**Always overwrite** when the wizard answer is a non-empty string and differs from the current value:
-
-- `display_name`, `company_name`
-- `country`
-- `chamber`, `address`, `postal_code`, `city`
-- `brand_color`, `description`, `business_page_hero_tagline`
-
-**Fill blanks only** (never override an existing manual choice, so re-runs don't surprise users):
-
-- `second_accent_color` (derived from brand colour if blank)
-- `email_style` (from email tone)
-- `timezone` (country default)
-- `pdf_language` (country default)
-- `footer_text` (`Trader name - KvK 12345678` style)
-- `payment_options_enabled` (`bank_transfer`)
-- `payment_default_method` (`bank_transfer`)
-- `payment_instructions` (localised default copy)
-- `email_footer_show_website`, `email_footer_show_support_email`, `email_footer_show_business_page` (booleans)
-
-Side effects beyond column writes:
-
-- **Initials logo** is generated from the business name + brand colour, but only if `logo_path` and `logo_svg` are both blank. Skipped entirely if the user uploaded a real logo on the Magic step.
-- **Services** — up to 8 inserts into `company_services`, only if the company has none yet.
-- **Email templates** — saved per type via the template repository.
-- **Website site seed** — on the first Finish that finds zero pages in the workspace, `apply.service.js` creates a default site with a draft homepage (`/`, template "home", `is_home: true`) and populates design tokens with the brand colour captured in the wizard. Re-runs skip creation when any page already exists, so the wizard never overwrites manual edits.
-- **Domain** — `activateSubdomain` for the subdomain path, or `addDomain` + `quickEnableInbox` (+ optional personal mailbox) for the own-domain path.
-
-If domain provisioning fails, the rest of Finish still applies — the failure shows on the Finish splash with a specific error code (`subdomain_failed`, `domain_failed`, `inbox_enable_failed`, `personal_mailbox_failed`, `personal_mailbox_remove_failed`, `personal_mailbox_list_failed`) translated to a user-readable line.
-
-## Finish splash
-
-A green confirmation panel that shows for 4.2 seconds (or 0.9 seconds when nothing was provisioned) before redirecting. It lists every item the wizard set up in a summary card list:
-
-- **Categories** - the system expense categories seeded for the workspace (e.g. "Kantoor, Reizen, Software").
-- **Services** - count of services added to the business page.
-- **Logo** - confirmation when an initials logo was generated.
-- **Email templates** - count of templates saved in the workspace brand tone.
-- **Website** - confirmation that a default site with homepage, navigation and brand colour is ready. Only shown when the site was freshly seeded.
-- **Domain** - the ready URL for subdomains or the added domain for own-domain setups.
-
-Two buttons appear below the summary:
-
-- **Go to dashboard** — takes the user to `/dashboard` immediately, skipping the auto-redirect timer.
-- **Open the website builder** — visible only when a site was seeded. Takes the user straight to `/website` so they can start editing their homepage.
-
-Then the user lands on `/dashboard` (default path), `/website` (when they click the website builder CTA), or `/website?tab=domein` (when an own-domain is pending DNS verification).
-
-## Re-running the wizard
-
-The wizard is fully re-runnable. Returning users land on step 1 with their current answers visible. Nothing forces them through every step — they can edit one field on one step and click Finish.
-
-The Review step's diff is the safety net: it shows the user every overwrite that's about to happen. Sensible-default fields (timezone, pdf_language, payment defaults, footer text) are not in the diff because Finish only fills blanks for those — silently flipping them would surprise users who set them deliberately.
-
-To revisit individual settings without the wizard, go to:
-
-- `/workspace/organization/company/about` — name, registration, address, VAT.
-- `/workspace/organization/company/look` — brand colour, logo.
-- `/website` — tagline, about text, services (public business page).
-- `/website?tab=domein` — custom domain + DNS.
-- `/inbox` — inbox, mailboxes, templates.
-
-See [Settings overview](/settings/) for the full map.
-
-## Edge cases
-
-- **Skipping a step.** Continue is gated per step on the minimum required answers. The Registry step has no gate; Domain requires a chosen path with a non-empty value, or a completed purchase for the Register branch, or the skipped flag; Magic requires Generate to have run; Business and Review have their own gates.
-- **Closing mid-step.** Every answer is persisted on change, so the next visit resumes where the user left off. Step index is also persisted (`answers` and `currentStep` live in the same JSONB column).
-- **Changing your mind on the Domain step.** Switching from `own` to `subdomain` after typing a domain rewrites `answers.domain` to `null` until the user picks a slug. Switching to the Register branch stores a skipped-answer so a fresh signup isn't dead-ended if they open Register but defer the purchase. Switching to a subdomain when a custom domain is already attached surfaces a pre-flight warning.
-- **Logo extraction fails.** Mostly-white logos and SVG-only inputs that `sharp` can't rasterise return `color: null`. The Gemini brand-colour suggestion is used instead.
-- **Domain already added on own-domain Finish.** A 409 from `addDomain` falls back to the existing row so the inbox-enable step still runs.
-- **Personal mailbox already exists.** A 409 from `createMailbox` is treated as success.
+See the [settings overview](/settings/) for the full map.

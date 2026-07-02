@@ -24,7 +24,7 @@ chatbot:
 
 Pour consulter vos rapports :
 1. Allez dans Rapports
-2. Passez d'une vue à l'autre parmi les cinq : l'aperçu, Compte de résultat, Trésorerie, Clients et Prévision
+2. Passez d'une vue à l'autre parmi les six : l'aperçu, Compte de résultat, Trésorerie, Clients, Prévision et Impôt sur le revenu
 3. Utilisez les filtres pour choisir le découpage de la période (année, trimestre, mois, semaine ou jour), sélectionner l'année, inclure les factures ouvertes ou comparer avec une autre année
 
 Les rapports n'ont pas de filtres de statut ou de catégorie ; les filtres de période et de comparaison s'appliquent à toutes les vues.

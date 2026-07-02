@@ -4,91 +4,69 @@ title: Berichte
 
 # Berichte
 
-Erhalten Sie Einblicke in Ihre Geschäftsfinanzen mit acht integrierten Berichtsansichten zu Umsatz, Ausgaben, Gewinn, USt. und mehr.
+Verstehen Sie, wie Ihr Unternehmen dasteht: mit fünf fokussierten Berichtsansichten und einer Übersicht, die alles zusammenführt. Diagramme sind direkt in jede Ansicht eingebettet, jeder Bericht kombiniert also Zahlen und Grafik an einem Ort.
 
 ## Berichte aufrufen
 
-Navigieren Sie zu **Berichte** in der Seitenleiste. Verwenden Sie die Tabs oder die Wischnavigation (auf Mobilgeräten), um zwischen den Berichtsansichten zu wechseln.
+Navigieren Sie zu **Berichte** in der Seitenleiste. Auf dem Desktop wechseln Sie die Ansicht über die Tab-Leiste oben; auf Mobilgeräten nutzen Sie die Ansichtsauswahl oder wischen nach links und rechts zwischen den Ansichten.
 
 ## Berichtsansichten
 
-### Umsatz
+### Übersicht
 
-Verfolgen Sie Ihre Einnahmen über die Zeit:
+Die Startansicht bündelt Ihre wichtigsten Zahlen für den gewählten Zeitraum:
 
-- Gesamtumsatz nach Periode
-- Umsatztrends (Diagramm)
-- Umsatz nach Kunde
-- Vergleich mit vorherigen Perioden
+- Kernzahlen: Umsatz, Gewinn mit Marge, offene Rechnungen, erfasste Stunden und Ausgaben
+- Ein Finanzübersichtsdiagramm (monatlich oder quartalsweise)
+- Eine Fälligkeitsanalyse unbezahlter Rechnungen, mit Direktlink zum Versenden von Erinnerungen
+- Ihre umsatzstärksten Kunden
+- Hinweis-Karten, die auf Handlungsbedarf aufmerksam machen, etwa überfällige Rechnungen oder eine knappe Gewinnmarge
 
-### Ausstehend
+Jeder Block verlinkt auf den passenden Detailbericht.
 
-Überwachen Sie unbezahlte Rechnungen:
+### Gewinn und Verlust
 
-- Gesamtbetrag ausstehend
-- Altersanalyse (wie lange Rechnungen unbezahlt sind)
-- Überfällige Rechnungen
-- Erwarteter Zahlungszeitplan
+Die Ansicht **GuV** zeigt Ihr Ergebnis aus drei Blickwinkeln, zwischen denen Sie oben wechseln:
 
-### Ausgaben
-
-Verstehen Sie Ihre Ausgaben:
-
-- Gesamtausgaben nach Periode
-- Ausgabenaufschlüsselung nach Kategorie
-- Ausgabentrends
-- Top-Ausgabenkategorien
-
-### Gewinn
-
-Sehen Sie Ihr Endergebnis:
-
-- Umsatz minus Ausgaben = Nettogewinn
-- Gewinnmargen
-- Gewinntrends über die Zeit
-- Vergleich von Periode zu Periode
-
-### USt.
-
-Berechnen Sie Ihre USt.-Verbindlichkeit:
-
-- Erhobene USt. (auf Rechnungen)
-- Gezahlte USt. (auf Ausgaben)
-- Netto-USt. zu zahlen oder zurückzufordern
-- Aufschlüsselung nach USt.-Satz
-
-Für detailliertes USt.-Management siehe [USt.-Verwaltung](/de/features/vat).
+- **Gewinn**: Umsatz minus Ausgaben, Margen und deren Entwicklung
+- **Umsatz**: Einnahmen pro Zeitraum, Trends und Vergleiche
+- **Ausgaben**: wohin Ihr Geld fließt, aufgeschlüsselt nach Kategorie
 
 ### Cashflow
 
-Verfolgen Sie Geldbewegungen:
-
-- Geldzuflüsse (erhaltene Zahlungen)
-- Geldabflüsse (bezahlte Ausgaben)
-- Netto-Cashflow
-- Laufender Saldo über die Zeit
+Verfolgen Sie die tatsächlichen Geldbewegungen: eingehende Zahlungen, ausgehende Ausgaben, das Nettoergebnis und Ihren laufenden Saldo über die Zeit.
 
 ### Kunden
 
-Analysieren Sie Ihren Kundenstamm:
+Analysieren Sie Ihren Kundenstamm in zwei Tabs:
 
-- Umsatz pro Kunde
-- Kundenranking nach Gesamtausgaben
-- Kundenakquise-Trends
-- Durchschnittlicher Rechnungswert pro Kunde
+- **Aktivität**: Umsatz pro Kunde, Kundenranking und Rechnungsmuster
+- **Offene Posten**: unbezahlte Rechnungen pro Kunde, wie lange sie offen sind und was überfällig ist
+
+### Prognose
+
+Sehen Sie, wohin sich Ihre Zahlen entwickeln, auf Basis wiederkehrender Abrechnungen, offener Rechnungen und Ihres jüngsten Tempos. Wechseln Sie den Horizont zwischen **3 Monate**, **6 Monate** und **12 Monate** und sehen Sie erwarteten Umsatz, Ausgaben, Gewinn und Ihre Liquiditätsreichweite.
+
+### Einkommensteuer
+
+Die Ansicht **Einkommensteuer** schätzt die Einkommensteuer für das gewählte Jahr: Bruttogewinn, Selbstständigenabzug und KMU-Gewinnfreistellung, zu versteuerndes Einkommen, die Steuerstufen, geschätzte Steuer, Gewinn nach Steuern und den Betrag, den Sie zurücklegen sollten. Führen Sie eine BV, sehen Sie stattdessen eine geschätzte Körperschaftsteuer. Verstehen Sie die Ansicht als Planungshilfe zum Reservieren von Geld, nicht als Steuererklärung.
+
+### Sie suchen den USt.-Bericht?
+
+Die Umsatzsteuer hat eine eigene Seite mit Quartalsübersichten und Unterstützung bei der Meldung. Siehe [USt.-Verwaltung](/de/features/vat).
 
 ## Filter
 
-Alle Berichte unterstützen:
+Öffnen Sie das Panel **Filter** über die Schaltfläche oben auf der Berichtsseite. Die Filter gelten für jede Berichtsansicht:
 
-- **Periodenauswahl** — Woche, Monat, Quartal, Jahr oder benutzerdefinierter Zeitraum
-- **Jahresauswahl** — Bestimmtes Geschäftsjahr wählen
-- **Vergleichsmodus** — Aktuelle Periode mit einer vorherigen Periode vergleichen
-- **Offene Rechnungen einbeziehen** — Umschalten, ob unbezahlte Rechnungen zum Umsatz gezählt werden
+- **Zeitraum**: wählen Sie die Granularität (**Jahr**, **Quartal**, **Monat**, **Woche** oder **Tag**), mit passender Auswahl für die gewählte Granularität
+- **Jahr**: das Berichtsjahr
+- **Vergleichen mit**: aktivieren Sie den Vergleich und wählen Sie ein **Vergleichsjahr**, um Veränderungen zwischen Zeiträumen zu sehen
+- **Offene Rechnungen einbeziehen**: legen Sie fest, ob unbezahlte Rechnungen zum Umsatz zählen
 
 ## Tipps
 
-- Verwenden Sie den Vergleichsmodus, um Trends und saisonale Muster zu erkennen
-- Prüfen Sie den Bericht über ausstehende Rechnungen regelmäßig, um überfälligen Rechnungen nachzugehen
-- Überprüfen Sie Gewinnberichte monatlich, um Ihre Margen zu verstehen
-- Exportieren Sie Berichtsdaten zur Verwendung in Tabellen oder Präsentationen
+- Nutzen Sie den Vergleichsmodus, um Trends und saisonale Muster zu erkennen
+- Prüfen Sie den Tab **Offene Posten** unter Kunden regelmäßig, um überfällige Rechnungen nachzufassen
+- Sehen Sie sich die GuV monatlich an, um Ihre Margen zu verstehen
+- Werfen Sie jedes Quartal einen Blick auf die Ansicht **Einkommensteuer**, damit der zurückzulegende Betrag Sie nie überrascht

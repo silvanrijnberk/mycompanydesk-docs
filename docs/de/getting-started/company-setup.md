@@ -4,100 +4,69 @@ title: Unternehmen einrichten
 
 # Unternehmen einrichten
 
-Bevor Sie Rechnungen versenden können, müssen Sie Ihre Unternehmensinformationen konfigurieren. Diese Daten erscheinen auf Ihren Rechnungen, Angeboten und anderen Dokumenten.
+Beim ersten Anmelden führt MyCompanyDesk Sie durch einen kurzen **Einrichtungsassistenten** unter `/setup`. Er fragt, welche Arbeit Sie machen und wofür Sie die App nutzen möchten, sucht Ihr Unternehmen im niederländischen Handelsregister (KVK) und füllt anhand Ihrer Antworten Ihre Unternehmensdaten, Ihr Branding und die Standardeinstellungen aus. Nichts ist endgültig: Jeder Schritt lässt sich überspringen, und alles kann später in den Einstellungen geändert werden.
 
-## Unternehmensinformationen
+## Wo Sie den Assistenten finden
 
-Navigieren Sie zu **Unternehmen** in der Seitenleiste, um auf Ihre Unternehmenseinstellungen zuzugreifen.
+- **Erste Anmeldung:** Der Assistent öffnet sich automatisch.
+- **Später:** Solange die Einrichtung nicht abgeschlossen ist, zeigt ein Banner oben auf dem Dashboard eine Schaltfläche zurück in den Assistenten. Sie können das Banner ausblenden oder jederzeit direkt zu `/setup` gehen.
+- **Überspringen:** Auf jedem Schritt gibt es eine Schaltfläche zum Überspringen. Ihre bisherigen Antworten werden gespeichert, Sie machen später einfach dort weiter, wo Sie waren.
 
-### Pflichtfelder
+## Schritt 1: Welche Arbeit Sie machen
 
-Diese Felder werden zum Versenden von Rechnungen benötigt:
+Wählen Sie Ihr Gewerk aus einem Raster gängiger Berufe: Zimmermann, Maler, Installateur, Elektriker, Fotograf, Berater, Vermieter und mehr. Ist Ihres nicht dabei? Wählen Sie die Option für etwas anderes und beschreiben Sie es in eigenen Worten.
 
-- **Firmenname** — Ihr eingetragener Firmenname
-- **Adresse** — Straße, Postleitzahl und Stadt (Adress-Autovervollständigung ist verfügbar)
-- **E-Mail** — Ihre geschäftliche Kontakt-E-Mail
+Ihr Gewerk wählt im nächsten Schritt bereits eine sinnvolle Auswahl an Zielen vor, sodass die meisten nur bestätigen müssen.
 
-### Empfohlene Felder
+## Schritt 2: Ihre Ziele
 
-Diese werden für professionelle Rechnungen und die rechtliche Konformität dringend empfohlen:
+Eine Checkliste, was Sie mit MyCompanyDesk tun möchten: Rechnungen senden, Angebote erstellen, Ausgaben erfassen, Stunden buchen, Projekte verwalten, Vermietung verwalten, Umsatzsteuer und Übersichten, und online gefunden werden. Angekreuzte Ziele schalten die passenden Teile der App ein; alles andere bleibt Ihnen aus dem Weg.
 
-- **USt.-Nummer** — Ihre Umsatzsteuer-Identifikationsnummer (z. B. NL123456789B01)
-- **Handelsregisternummer** — Ihre Gewerbeanmeldungsnummer
-- **IBAN** — Ihre Bankkontonummer, auf die Kunden zahlen sollen
-- **Telefonnummer** — Geschäftliche Kontakttelefonnummer
+Eine Wahl prägt den Rest des Assistenten: Kreuzen Sie das Ziel, online gefunden zu werden, an, fügt der Assistent zwei zusätzliche Schritte für Ihre Web-Adresse und Ihre Marke hinzu. Lassen Sie es weg, geht es direkt zum letzten Schritt.
 
-::: tip
-In vielen Ländern sind USt.-Nummer und Registrierungsnummer auf Rechnungen gesetzlich vorgeschrieben. Stellen Sie sicher, dass diese ausgefüllt sind, bevor Sie Ihre erste Rechnung versenden.
-:::
+## Schritt 3: Ihre Unternehmensdaten (KVK)
 
-## Branding
+Tippen Sie Ihren Firmennamen ein und wählen Sie Ihr Unternehmen aus den Live-Vorschlägen aus dem Handelsregister. MyCompanyDesk ruft dann Ihr KVK-Basisprofil ab und füllt Ihre Unternehmensdaten vor: juristischer Name, Handelsnamen, Rechtsform, Adresse und Geschäftstätigkeit. Es werden nur leere Felder gefüllt; was Sie bereits eingetragen haben, bleibt unverändert.
 
-### Firmenlogo
+Kein Treffer oder keine KVK-Registrierung?
 
-Laden Sie Ihr Firmenlogo hoch, damit es erscheint auf:
+- **Manuell eintragen:** Geben Sie Firmennamen, KVK-Nummer, Adresse, Postleitzahl und Ort selbst ein.
+- **Kein Handelsregister-Eintrag?**: Überspringen Sie die Suche ganz und ergänzen Sie Ihre Daten später in den Einstellungen.
 
-- Rechnungen und Angeboten (PDF)
-- E-Mail-Kommunikation
-- Ihrer öffentlichen Geschäftsseite
-- Dem Kundenzahlungsportal
+Dieser Schritt fragt auch nach einer Zeile darüber, was Ihr Unternehmen macht. Wenn Sie fortfahren, nutzt MyCompanyDesk sie zusammen mit Ihren Unternehmensdaten, um eine Markenfarbe, einen Slogan und Startinhalte vorzuschlagen.
 
-Unterstützte Formate: PNG, JPG, SVG. Für beste Ergebnisse verwenden Sie ein hochauflösendes Bild mit transparentem Hintergrund.
+## Schritt 4: Ihre Web-Adresse (nur mit Website-Ziel)
 
-### Farbschema
+Wählen Sie, wie Kunden Sie online finden:
 
-Passen Sie die Akzentfarbe an, die auf Ihren Rechnungen und Dokumenten verwendet wird, um sie an Ihre Markenidentität anzupassen.
+- **Kostenlose Subdomain:** eine kostenlose Adresse mit der Endung `.mycompanydesk.site`, vorgeschlagen aus Ihrem Firmennamen und beim Tippen live auf Verfügbarkeit geprüft.
+- **Eigene Domain:** Verbinden Sie eine Domain, die Sie anderswo registriert haben.
+- **Domain registrieren:** Suchen Sie eine neue Domain, prüfen Sie den Preis und kaufen Sie sie direkt im Assistenten. Gründungsmitglieder erhalten eine inklusive.
 
-## Finanzielle Standardeinstellungen
+Sie können diesen Schritt überspringen und eine Domain später einrichten.
 
-Richten Sie Standardwerte ein, die für neue Rechnungen und Angebote gelten:
+## Schritt 5: Ihre Marke (nur mit Website-Ziel)
 
-- **Währung** — Ihre Standardwährung (standardmäßig EUR)
-- **Zahlungsbedingungen** — Standard-Anzahl der Tage bis zur Fälligkeit einer Rechnung (z. B. 14 oder 30 Tage)
-- **Rechnungsnummerierung** — Passen Sie das Format Ihrer Rechnungsnummern an
-  - Präfix (z. B. `INV-` oder `2024-`)
-  - Startnummer
-  - Automatische Erhöhung
+Laden Sie Ihr Logo hoch, wenn Sie eines haben; MyCompanyDesk übernimmt daraus automatisch Ihre Markenfarbe. Kein Logo? Kein Problem: Aus Ihren Initialen wird ein sauberes Logo erzeugt. Der Schritt zeigt außerdem eine Vorschau der vorgeschlagenen Markenfarbe und des Slogans, damit Sie sehen, wie Ihre Rechnungen und Ihre Website aussehen werden.
 
-### Beispiele für Rechnungsnummerierung
+## Schritt 6: Gründungsmitglieder und Ihre Testphase
 
-| Format | Beispiel |
+Der letzte Schritt bestätigt, dass Ihre 60-tägige Pro-Testphase aktiv ist, ohne Kreditkarte. Solange Plätze frei sind, können Sie hier auch einen Gründungsmitglieder-Platz sichern, mit einer längeren Gratisphase und dauerhaftem Rabatt. Mit dem Abschließen der Einrichtung wendet der Assistent alles an, zeigt eine Zusammenfassung dessen, was eingerichtet wurde, und bringt Sie zu Ihrem Dashboard.
+
+## Später ändern
+
+Alles, was der Assistent einstellt, lässt sich in den **Einstellungen** bearbeiten:
+
+| Ich möchte ändern... | Öffnen |
 |---|---|
-| Einfach | `001`, `002`, `003` |
-| Mit Präfix | `INV-001`, `INV-002` |
-| Jahresbasiert | `2024-001`, `2024-002` |
+| Firmenname, Adresse, KVK- oder USt-Nummer | **Unternehmensdaten** |
+| Logo und Markenfarbe | **Logo und Farbe** |
+| Wie Kunden Sie bezahlen: IBAN, iDEAL, PayPal | **Zahlung** |
+| Zahlungsziel, Erinnerungen, Gültigkeit von Angeboten | **Rechnungen und Angebote** |
+| Das Erscheinungsbild Ihrer Rechnungs-PDFs | **Rechnungsdesign** |
+| Ihre Website und Domain | **Deine Website und Domain** |
 
-Die Nummerierungsoptionen und das Format können jederzeit angepasst werden. Bestehende Rechnungsnummern werden nie geändert.
-
-## PDF-Vorlage
-
-MyCompanyDesk generiert automatisch professionelle PDF-Rechnungen. Sie können das Layout mit dem **PDF-Editor** anpassen:
-
-- Feldpositionen und Sichtbarkeit anpassen
-- Wählen, welche Informationen angezeigt werden
-- Schriftarten und Größen anpassen
-- Änderungen in Echtzeit mit einer Musterrechnung in der Vorschau ansehen
-
-Greifen Sie auf den PDF-Editor über **Unternehmen > PDF-Editor** oder über den Branding-Bereich zu.
-
-::: info
-PDF-Anpassungen über die Grundeinstellungen hinaus erfordern den **Pro**-Tarif oder höher.
-:::
-
-## Funktionsumschalter
-
-MyCompanyDesk verfügt über optionale Module, die Sie je nach Ihren Geschäftsanforderungen aktivieren oder deaktivieren können:
-
-- **Objekte / Vermögenswerte** — Für Mietobjekt- und Vermögensverwaltung
-- **Verträge** — Für wiederkehrende Dienstleistungs- oder Mietverträge
-- **Projekte** — Für projektbasierte Arbeit und Zeiterfassung
-- **Angebote** — Für das Versenden von Kostenvoranschlägen
-- **Reverse-Charge** — Für innergemeinschaftliche B2B-Transaktionen
-- **KI-Vorschläge** — Für intelligente Kategorisierung und Empfehlungen
-- **Belegscanner** — Für OCR-basierte Ausgabenerfassung
-- **Textprüfung** — Für Grammatik- und Rechtschreibprüfung in Ihren Dokumenten
-
-Das Deaktivieren eines Moduls blendet es in der Navigation aus und hält Ihren Arbeitsbereich übersichtlich und fokussiert.
+Die vollständige Übersicht finden Sie in der [Einstellungsübersicht](/de/settings/). Sie können den Assistenten auch jederzeit über `/setup` erneut durchlaufen; er füllt leere Felder auf, statt zu überschreiben, was Sie selbst eingestellt haben.
 
 ## Nächste Schritte
 

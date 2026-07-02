@@ -1,19 +1,17 @@
 ---
 title: Change PDF style
-last_verified: 2026-05-09
+last_verified: 2026-07-02
 chatbot:
   triggers: ["change pdf style", "customize pdf", "pdf template", "invoice design", "invoice layout", "change invoice look", "pdf editor", "edit pdf template", "pdf stijl wijzigen", "factuur uiterlijk", "pdf sjabloon", "pdf-vorlage andern", "style pdf"]
   actions:
-    - { label: "Open Branding & Documents", to: "/company?section=brandingDocuments" }
+    - { label: "Open invoice design", to: "/settings/factuurontwerp" }
   follow_up: ["How do I add my logo?", "How do I preview an invoice?", "How do I export a PDF?"]
 ---
 
-To change your PDF invoice style:
-1. Go to Company → Branding & Documents
-2. Choose or customize your template layout
-3. Upload your logo and set brand colors
-4. Adjust fonts, spacing, and field placement
-5. Preview the result with sample data
-6. Save - all new invoices will use the updated design
+To change the style of your PDF invoices:
+1. Go to Settings → "Factuurontwerp" (invoice design)
+2. Click "Genereer uit huisstijl" for a design in your own brand colour, or pick one of the style presets
+3. Fine-tune the accent colour, paper tint, fonts, layout and footer text; the A4 preview updates live
+4. Changes save automatically and apply to all new invoices, quotes and reminders
 
-Tip: Keep your design clean and professional. Include your company details, VAT number, and bank information.
+Tip: your logo and brand colour live under Settings → "Logo en kleur"; the design studio builds on them.

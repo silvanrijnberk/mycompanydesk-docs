@@ -1,63 +1,58 @@
 ---
 title: VAT
-last_verified: 2026-05-09
+last_verified: 2026-07-02
 ---
 
 # VAT
 
-Track collected and paid VAT, prepare your aangifte, and stay ahead of deadlines. The Netherlands page is documented in detail below — other countries use the same five-tab layout with country-specific cards.
+Track collected and paid VAT, prepare your aangifte, and stay ahead of deadlines. MyCompanyDesk supports the Dutch VAT flow (BTW): the page mirrors the Belastingdienst aangifte, so the numbers you see are the numbers you file.
 
 ## Page layout
 
-The VAT page is split into a hero and five tabs: **Overzicht**, **Aangifte**, **Transacties**, **Planner** and **Regels**. Both the active tab and the active period are reflected in the URL (`?tab=&period=`), so refresh and the back button preserve your place.
+The VAT page has three tabs: **Overview**, **Filing** and **Transactions** (Overzicht, Aangifte and Transacties when your app language is Dutch). Both the active tab and the active period are kept in the URL, so refresh and the back button preserve your place.
 
-A page-wide period selector (Q1, Q2, Q3, Q4, full year) sits next to the tab bar. Switching it propagates to every card on every tab.
+A page-wide period selector (Q1 to Q4 plus full year) sits next to the tab bar; switching it updates every card on every tab. If your workspace files monthly, the selector shows the twelve months instead of quarters, matching the filing frequency in your tax settings. A year switcher at the top of the page moves everything to another year.
 
 ## Hero card
 
-The hero summarises your year-to-date position:
+The hero summarises the selected period:
 
-- **Balance** — Net VAT (collected minus paid) with a "te betalen" or "terug te ontvangen" label.
-- **Deadline ring** — A circular progress ring counting down to the next filing deadline. Red when 3 days or fewer remain, amber up to 14 days, green otherwise.
-- **BTW-spaarpotje** — A suggested reserve next to the balance. The amount is the period balance times 1.10, so you have a small buffer on top of what you owe. When the balance is negative (refund expected) the tile flips to a green refund tile showing the amount due back.
+- **Balance**: net VAT (collected minus paid) with a "te betalen" or "terug te ontvangen" label. It follows the period selector.
+- **Deadline ring**: a circular countdown to the next filing deadline. Red when 3 days or fewer remain, amber up to 14 days, green otherwise.
+- **VAT savings pot (BTW-spaarpotje)**: a suggested reserve of the period balance plus a 10% buffer, shown when you owe VAT. When you are due money back, the tile flips to a green refund tile instead.
 
-Two CTAs sit under the balance:
+Two buttons sit under the balance: **Open aangifte** jumps to the Filing tab, and **How is this calculated?** walks through the math behind the balance.
 
-- **Naar aangifte** jumps to the Aangifte tab.
-- **Hoe wordt dit berekend?** opens a drawer that walks through the math (collected from rubriek 5a, minus paid in rubriek 5b, equals the balance).
+A banner above the hero warns when your data is incomplete (draft invoices or expenses without VAT), so you can fix it before filing.
 
-## Overzicht tab
-
-### Pre-filing checks
-
-A checklist that runs against the active period. Every check has a "Fix now" deep link that takes you straight to the affected records:
-
-- **Drafts** — Invoices in draft status that won't be counted in the aangifte.
-- **Missing VAT** — Expenses without a VAT amount.
-- **Missing receipts** — Expenses without an attached receipt.
-- **ICP pending** — EU B2B sales that need to be reported separately on the ICP-opgaaf.
-
-A badge in the header shows the number of blockers, or "all clear" when everything passes.
+## Overview tab
 
 ### Quarter strip
 
-Four cards (Q1, Q2, Q3, Q4) summarising revenue, VAT collected, VAT paid and the balance for each quarter. Each card has a state derived from `period_locks`:
+Four cards (Q1 to Q4) summarising revenue, VAT collected, VAT paid, and the balance per quarter, along with the filing deadline and a lock badge on filed or locked quarters. Click a card to switch the page-wide period.
 
-- **Filed** — Period is locked. No further edits allowed without unlocking.
-- **Active** — The current quarter, still accepting new transactions.
-- **Upcoming** — Future quarter.
+### Pre-filing checks
 
-Click a quarter card to switch the page-wide period selector to that quarter.
+A checklist that runs against the active period. Every check has a fix link that takes you straight to the affected records:
 
-### Summary metrics and quarterly table
+- **Drafts**: invoices still in draft that will not count in the aangifte.
+- **Missing VAT**: expenses without a VAT amount.
+- **Missing receipts**: expenses without an attached receipt.
+- **ICP pending**: EU B2B sales that need to be reported separately on the ICP-opgaaf.
 
-Below the strip you'll see the year totals (revenue, expenses, profit, VAT collected, VAT paid, taxable profit, corporate tax estimate, net profit, recommended reserve) and a quarterly breakdown table.
+A badge in the header shows the number of blockers, or that everything is clear.
 
-## Aangifte tab
+### Summary and year totals
+
+Below the checks you see the year's key figures (revenue, expenses, profit, VAT collected and paid, an estimated tax burden, and a recommended reserve), plus a one-line total across the quarters.
+
+While your revenue is still in KOR territory, this tab also shows a hint pointing to the KOR settings (see below).
+
+## Filing tab
 
 ### Rubrieken sheet
 
-A unified table that mirrors the Belastingdienst aangifteformulier exactly:
+A table that mirrors the Belastingdienst aangifteformulier:
 
 | Section | Codes |
 |---|---|
@@ -65,62 +60,57 @@ A unified table that mirrors the Belastingdienst aangifteformulier exactly:
 | 2. Verleggingsregelingen binnenland | 2a |
 | 3. Prestaties naar of in het buitenland | 3a, 3b, 3c |
 | 4. Prestaties vanuit het buitenland aan u verricht | 4a, 4b |
-| 5. Berekening totaal | 5a, 5b, 5c, 5d, 5g |
+| 5. Voorbelasting en berekening totaal | 5a, 5b, 5c |
 
-Each row shows the omzet (excl.) and the BTW amount. The bottom bar highlights rubriek 5g (totaal te betalen of terug te ontvangen).
+Each row shows the omzet (excl.) and the VAT amount. The bottom bar shows the total to pay or receive. Corrections that fall outside the form (KOR, suppletie) appear as a separate adjustment row, so what you actually pay stays visible.
 
-### Right rail
+### Exports for your accountant
 
-The Aangifte tab also surfaces drill-down cards as a companion column:
+A download card next to the sheet offers CSV exports: a full export for your boekhouder, a BTW summary for the selected quarter, and a year overview.
 
-- **ICP-opgaaf** — EU B2B sales grouped per customer. Required when you sold goods or services to VAT-registered customers in other EU countries.
-- **OSS-breakdown** — Per-country B2C sales for the One Stop Shop scheme.
-- **Foreign-VAT refundables** — Foreign VAT charged to you that's reclaimable through the EU refund procedure. The deadline for the previous year is **30 September**.
-- **Corrections** — Privé-onttrekking, suppletie and other adjustments rolled into the period totals.
+### International cards
 
-## Transacties tab
+When you have international activity, companion cards appear under the sheet:
 
-A flat list of every invoice and expense feeding the active period. Useful for spot-checking individual records before filing. Filter by type, customer/supplier, VAT treatment, or rubriek.
+- **ICP-opgaaf**: EU B2B sales grouped per customer. Required when you sold goods or services to VAT-registered customers in other EU countries.
+- **OSS breakdown**: per-country B2C sales for the One Stop Shop scheme.
+- **Foreign VAT**: foreign VAT charged to you that may be reclaimable through the EU refund procedure.
+- **Corrections**: privé-onttrekking, suppletie, and other adjustments rolled into the period totals.
 
-## Planner tab
+These cards stay hidden until there is actual international data, so most workspaces never see them.
 
-A compliance timeline showing every NL deadline (BTW per quarter, ICP, KOR review, KIA, IB) for the selected year. Each item links to the underlying record or settings page.
+## Transactions tab
 
-## Regels tab
-
-### KOR (kleineondernemersregeling)
-
-A toggle plus a YTD revenue tracker against the €20,000 threshold. The card shows:
-
-- YTD revenue versus the limit.
-- A progress bar with a colour that escalates as you approach the threshold.
-- A status hint explaining what enrolment means for your invoicing.
-- An enrolment toggle (calls the `kor-settings` endpoint).
-
-### KIA (kleinschaligheidsinvesteringsaftrek)
-
-Tracks investment-flagged expenses against the five-bracket NL deduction table for the year. The card surfaces your deduction amount and the bracket you fall into.
-
-### Country insights
-
-Country-specific guidance and rate references (NL by default; other countries surface their own variants).
-
-## VAT assistant
-
-A floating assistant card sits above the page (visible on every tab). It answers questions about your aangifte using your own workspace numbers, via the contextual-guide tool catalog. Tools like `vat_aangifte_rubrieken` and `vat_kor_status` let it cite the same numbers you see on screen, and "Open …" actions in its replies jump to the matching tab.
+A flat list of every invoice and expense feeding the selected period, useful for spot-checking records before you file. Filter chips narrow the list down: **All**, **Missing receipt**, **Missing VAT**, **Reverse charge** and **Foreign VAT**, each with a live count. Every row links to the underlying invoice or expense.
 
 ## Period locking
 
-Period locks still exist — they're just not the headline of the page anymore. Filed quarters appear with a lock badge in the quarter strip. Editing a record inside a locked period is blocked at the form level; the form offers a one-click "Create correction" path that produces a suppletie or privé-onttrekking entry in the current period.
+A summary bar at the top of the VAT page shows how many periods are locked; expand it to manage them.
 
-## Other countries
+- **Automatic locking**: once a period's filing deadline has passed, MyCompanyDesk locks it automatically, so your books keep matching the aangifte you filed.
+- **Manual locking**: period chips let you lock any past period of the selected year yourself, for example right after filing early. Locking a period that is still running triggers an extra warning.
+- **Mark as filed**: flag a locked period as filed once you have submitted the aangifte. Filed quarters show this in the quarter strip too.
+- **Temporary unlock**: need to fix something? Unlock a period temporarily (72 hours) and it relocks by itself, or relock it manually when you are done. Removing a lock entirely is only possible while the filing deadline has not yet passed.
 
-The same five-tab structure renders for Belgium, France, Germany, the UK, the US, Canada, the EU shell and a generic profile. Country-specific cards (rates, schemas, deduction tables) take the place of the NL-only KOR, KIA, ICP and OSS cards.
+Editing an invoice or expense inside a locked period is blocked at the form: the financial fields turn read-only (notes stay editable) and the form offers a correction path instead, such as creating a correction in the current open period or a credit invoice.
+
+## KOR
+
+The kleineondernemersregeling is managed under **Settings → BTW**: a card tracks your year revenue against the €20,000 threshold with a progress bar, explains what enrolment means for your invoicing, and has the enrolment toggle. While your revenue is still below the KOR range, the VAT page shows a hint linking there.
+
+## KIA and Box 3
+
+KIA (kleinschaligheidsinvesteringsaftrek) and Box 3 are income tax topics and live under **Reports → Income tax**, not on the VAT page. The Box 3 card only appears for workspaces using the properties module.
+
+## VAT assistant
+
+The built-in assistant can answer questions about your aangifte using your own workspace numbers, and its replies can jump straight to the matching tab or record.
 
 ## Tips
 
-- Set the page period to the quarter you're filing — every card and metric updates together.
-- Run through the pre-filing checks before clicking "Naar aangifte"; a clean check list usually means the rubrieken sheet matches the Belastingdienst form.
-- Use the spaarpotje as a target for what to set aside — it already includes a 10% buffer.
+- Set the page period to the tijdvak you are filing; every card and metric updates together.
+- Run through the pre-filing checks before opening the Filing tab; a clean checklist usually means the rubrieken sheet matches the Belastingdienst form.
+- Use the savings pot as a target for what to set aside; it already includes a 10% buffer.
 - The deadline ring goes red at three days. Treat that as a hard cue to file.
-- For EU B2B sellers, open the ICP-opgaaf card before filing — it's a separate submission that's easy to forget.
+- Selling B2B in the EU? Open the ICP-opgaaf card before filing; it is a separate submission that is easy to forget.
+- Mark a period as filed right after submitting, then let the automatic lock protect it.
