@@ -1,16 +1,13 @@
 ---
 title: Change date format
-last_verified: 2026-05-09
+last_verified: 2026-07-02
 chatbot:
   triggers: ["date format", "change date format", "number format", "decimal format", "datumformaat", "datumformaat wijzigen", "datumsformat", "format date", "format nombre"]
   actions:
-    - { label: "Open profile preferences", to: "/profile?section=preferences" }
+    - { label: "Open display settings", to: "/settings/weergave" }
   follow_up: ["How do I change my language?", "How do I change my currency?"]
 ---
 
-To change date, time, number, or currency format:
-1. Go to My Account → Preferences
-2. Choose the date/time format, number separator, or currency settings you want
-3. Changes save automatically
+Date, time, and number formatting in MyCompanyDesk follows Dutch conventions and cannot be changed. There is no date or number format setting.
 
-The new format is applied across the app where that preference is used.
+What you can change is the language of the app itself: go to Settings → "Weergave" (display) and pick Dutch, English, German, or French for the interface.

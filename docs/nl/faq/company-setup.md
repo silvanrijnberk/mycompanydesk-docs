@@ -1,20 +1,20 @@
 ---
-title: "Company setup"
-last_verified: 2026-05-09
+title: "Bedrijf instellen"
+last_verified: 2026-07-02
 chatbot:
   triggers: ["set up company", "company setup", "company settings", "first setup", "getting started", "initial setup", "how to start", "where to begin", "bedrijf instellen", "aan de slag", "unternehmen einrichten", "configurer entreprise"]
   actions:
-    - { label: "Open company setup", to: "/company" }
+    - { label: "Open settings", to: "/settings" }
     - { label: "Create first invoice", to: "/invoices/new" }
   follow_up: ["How do I add my logo?", "How do I create my first invoice?", "How do I change the PDF style?"]
 ---
 
-Checklist voor de eerste keer instellen:
-1. Ga naar Bedrijf → Bedrijfsgegevens
-2. Voeg je officiële bedrijfsnaam, adres en belastinggegevens toe
-3. Ga naar Bedrijf → Huisstijl & documenten om je logo en documentstijl in te stellen
-4. Ga naar Bedrijf → Betaalopties om bankgegevens en betaalinstructies toe te voegen
-5. Ga naar Bedrijf → Facturatie om nummering, betaaltermijnen en pdf-standaarden in te stellen
-6. Open Mijn account → Taal en Mijn account → Voorkeuren voor je persoonlijke taal- en valutavoorkeuren
+Checklist voor de eerste keer instellen. Alles staat onder Instellingen:
 
-Volgende stap: maak je eerste klant aan!
+1. Ga naar Instellingen → "Bedrijfsgegevens" en voeg je officiële bedrijfsnaam, adres, KVK-nummer en BTW-nummer toe
+2. Ga naar Instellingen → "Logo en kleur" om je logo te uploaden en je huisstijlkleur te kiezen
+3. Ga naar Instellingen → "Betalen" om je IBAN toe te voegen; zodra dat veld is ingevuld, komen de overboekingsgegevens automatisch op je facturen
+4. Ga naar Instellingen → "Facturen en offertes" voor je betaaltermijn, automatische herinneringen en de geldigheid van offertes
+5. Ga naar Instellingen → "Weergave" voor je persoonlijke thema, tekstgrootte en app-taal
+
+Volgende stap: maak je eerste klant aan en verstuur een testfactuur!

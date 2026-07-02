@@ -1,6 +1,6 @@
 ---
-title: "Accountant access"
-last_verified: 2026-05-09
+title: "Boekhouder toegang geven"
+last_verified: 2026-07-02
 chatbot:
   triggers:
     - "accountant access"
@@ -16,18 +16,17 @@ chatbot:
     - "accountant invite"
     - "revoke accountant"
   actions:
-    - { label: "Open team settings", to: "/settings?section=team" }
+    - { label: "Open access settings", to: "/settings/team" }
   follow_up:
     - "How do I set page permissions?"
     - "How do I invite a team member?"
     - "How do I revoke access?"
 ---
 
-Om accountantstoegang te beheren:
-1. Ga naar Workspace-instellingen → Team
-2. Klik in de sectie Accountants op "Accountant toevoegen"
-3. Vul naam en e-mailadres in, en eventueel kantoor of telefoon
-4. Klik op "Uitnodigen" om accounttoegang te geven
-5. Gebruik "Toegang beheren" om de paginarechten in te stellen
+Om boekhoudertoegang te beheren:
+1. Ga naar Instellingen → "Toegang en boekhouder"
+2. Klik in het onderdeel Boekhouder op "Boekhouder toevoegen" en vul de contactgegevens in
+3. Verstuur de uitnodiging wanneer je wilt dat je boekhouder een account aanmaakt
+4. Open "Toegang beheren" om de paginarechten in te stellen
 
-Veelvoorkomende statussen zijn alleen contact, uitgenodigd, actief en ingetrokken.
+Boekhoudertoegang is gratis op elk abonnement; er is geen Pro of teamplek voor nodig. Veelvoorkomende statussen zijn alleen contact, uitgenodigd, actief en ingetrokken.
