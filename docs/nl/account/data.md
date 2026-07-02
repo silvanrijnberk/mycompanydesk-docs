@@ -1,95 +1,79 @@
 ---
 title: "Gegevens importeren & exporteren"
+last_verified: 2026-07-02
 ---
 
 # Gegevens importeren & exporteren
 
-Importeer bestaande gegevens in MyCompanyDesk en exporteer je administratie voor back-up of gebruik in andere tools.
+Importeer bestaande gegevens in MyCompanyDesk en exporteer je administratie als back-up of voor gebruik in andere tools.
 
 ## Importeren
 
 ### CSV-import
 
-Importeer gegevens vanuit CSV-bestanden voor:
+Importeer gegevens uit CSV-bestanden voor:
 
-- **Klanten** — Naam, e-mail, telefoon, adres, BTW-nummer
-- **Facturen** — Factuurgegevens met regelitems
-- **Uitgaven** — Uitgavenrecords met categorieen
-- **Projecten** — Projectnamen en details
-- **Objecten** — Activarecords
+- **Klanten** met naam, e-mail, telefoon, adres, BTW-nummer
+- **Facturen** met factuurgegevens
+- **Uitgaven** met categorieën en bedragen
 
-### Hoe te importeren
+Andere soorten gegevens (zoals projecten of objecten) kun je niet uit CSV importeren; die maak je in de app zelf aan.
 
-1. Ga naar **Profiel > Importeren**
-2. Selecteer het **gegevenstype** dat je wilt importeren
-3. Upload je **CSV-bestand**
-4. **Kolommen koppelen** — Koppel je CSV-kolomkoppen aan MyCompanyDesk-velden
-5. **Voorbeeld** — Controleer de gegevens voor het importeren
-6. **Bevestigen** — Klik op Importeren om de records aan te maken
+### Zo importeer je
+
+De importwizard heeft een eigen pagina in de app: open `/profile/import` rechtstreeks, handig als je net na het aanmelden overstapt vanuit een andere tool.
+
+1. Kies het **gegevenstype** dat je wilt importeren (klanten, facturen of uitgaven)
+2. Upload je **CSV-bestand**
+3. **Koppel kolommen** door je CSV-kolomkoppen aan MyCompanyDesk-velden te koppelen
+4. **Importeer** om de records aan te maken; het resultaat toont hoeveel rijen zijn geïmporteerd en hoeveel er zijn mislukt
 
 ### Importtips
 
 - Gebruik UTF-8-codering voor je CSV-bestanden
-- Voeg een koprij toe met kolomnamen
-- Datumnotaties moeten consistent zijn (JJJJ-MM-DD aanbevolen)
-- Bedragvelden moeten een punt (.) als decimaalteken gebruiken
+- Neem een koprij met kolomnamen op
+- Houd datumnotaties consistent (JJJJ-MM-DD aanbevolen)
+- Gebruik een punt (.) als decimaalteken in bedragvelden
 - Lege velden worden overgeslagen (bestaande standaardwaarden worden gebruikt)
 
-### Kolomkoppeling
+### Kolommen koppelen
 
-De importwizard toont je CSV-kolommen en laat je elke kolom koppelen aan het bijbehorende MyCompanyDesk-veld. Veelgebruikte koppelingen:
+De importwizard toont je CSV-kolommen en laat je elke kolom aan het bijbehorende MyCompanyDesk-veld koppelen. Veelvoorkomende koppelingen:
 
-| CSV-kolom | Koppelt aan |
+| CSV-kolom | Wordt |
 |---|---|
 | Bedrijfsnaam / Naam | Klantnaam |
-| E-mail | Klant-e-mail |
+| E-mail | E-mail van de klant |
 | Straat / Adres | Straatadres |
 | Postcode | Postcode |
 | Plaats | Plaats |
-| BTW | BTW-nummer |
+| VAT / BTW | BTW-nummer |
 | Telefoon | Telefoonnummer |
 
 ## Exporteren
 
+Exports vind je op één plek: open **Instellingen** en kies **Gegevens downloaden**.
+
 ### CSV-export
 
-Exporteer je gegevens als CSV vanaf de betreffende lijstpagina's:
+Download je gegevens per soort:
 
-- **Facturen** — Alle facturen met bedragen, datums, statussen
-- **Uitgaven** — Alle uitgaven met categorieen en bedragen
-- **Klanten** — Je klantendatabase
-
-Klik op de **Exporteren**-knop op de lijstpagina om te downloaden.
+- **Facturen** als CSV, met bedragen, datums en statussen
+- **Klanten** als CSV, je volledige klantenlijst
+- **Uitgaven** als CSV, met categorieën en bedragen
 
 ::: info
-CSV-export vereist het **Pro**-abonnement of hoger.
+CSV- en volledige back-upexports zijn beschikbaar vanaf het **Starter**-abonnement. Op het gratis abonnement toont de pagina een upgrademelding.
 :::
 
-### Volledige back-up (JSON)
+### Volledige back-up
 
-Exporteer al je gegevens als volledige JSON-back-up:
+Dezelfde pagina biedt een **volledige back-up**: al je gegevens in één JSON-bestand. Gebruik hem als periodieke back-up of als compleet overzicht van je administratie, bijvoorbeeld voor een AVG-inzageverzoek.
 
-1. Ga naar **Profiel > Gegevens**
-2. Klik op **Mijn gegevens exporteren**
-3. Download het JSON-bestand met al je accountgegevens
-
-Je kunt ook een CSV-export downloaden van specifieke onderdelen: facturen, klanten, uitgaven, of een volledige back-up.
-
-::: info Account verwijderen
-Je account verwijderen doe je niet hier maar bij **Veilig inloggen** (Profiel > Beveiliging).
-:::
-
-Deze back-up bevat:
-
-- Je profielinformatie
-- Alle facturen, uitgaven, offertes
-- Klantrecords
-- Project- en tijdgegevens
-- Instellingen en voorkeuren
+Exports bevatten alleen gegevens waar jij toegang toe hebt. PDF-versies van facturen download je apart, op de pagina van elke factuur.
 
 ## Tips
 
 - Exporteer je gegevens regelmatig als back-up
-- Gebruik CSV-export om gegevens te delen met je boekhouder
-- Wanneer je overstapt van een andere tool, gebruik dan de importwizard om je klantenlijst te migreren
-- De volledige back-up biedt een compleet overzicht van je gegevens
+- Mail geen bestanden naar je boekhouder, maar geef diegene direct toegang via **Instellingen > Toegang en boekhouder**; dan kijkt je boekhouder altijd naar de nieuwste cijfers
+- Stap je over van een andere tool, gebruik dan de importwizard om je klantenlijst mee te nemen

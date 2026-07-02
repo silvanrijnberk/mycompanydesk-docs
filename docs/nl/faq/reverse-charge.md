@@ -1,15 +1,18 @@
 ---
-title: Reverse charge
-last_verified: 2026-05-09
+title: "BTW verlegd"
+last_verified: 2026-07-02
 chatbot:
   triggers: ["reverse charge", "reverse charge invoice", "eu invoice", "intracommunautair", "intracommunity", "btw verlegd", "reverse charge rechnung", "autoliquidation", "intra-community"]
   actions:
     - { label: "Create invoice", to: "/invoices/new" }
-  follow_up: ["How do I add a customer VAT number?", "How does reverse charge affect my VAT return?", "How do I set VAT to 0% on line items?"]
+  follow_up: ["How do I add a customer VAT number?", "How does reverse charge affect my VAT return?", "How do I preview an invoice?"]
 ---
-Om een factuur met verlegde BTW aan te maken:
+
+Zo maak je een factuur met BTW verlegd (EU):
 1. Ga naar Facturen → Nieuwe factuur
-2. Selecteer je EU-klant en controleer of het BTW-nummer op het klantrecord is ingevuld
-3. Voeg regels toe met 0% BTW
-4. Bekijk de preview om te controleren welke BTW-velden en notitie op het document staan
-5. Sla op en verstuur
+2. Kies je EU-klant en controleer of het BTW-nummer bij de klant is ingevuld
+3. Zet de schakelaar "BTW verlegd" aan op het factuurformulier; MyCompanyDesk stelt dit automatisch voor bij zakelijke EU-klanten
+4. De BTW op alle factuurregels springt automatisch naar 0%, je hoeft niets handmatig aan te passen
+5. Bekijk het voorbeeld om de vermelding van de verlegde BTW te controleren en verstuur de factuur
+
+Tip: De schakelaar staat altijd op het factuurformulier; je hoeft vooraf niets in je instellingen aan te zetten.

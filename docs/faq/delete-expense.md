@@ -14,4 +14,4 @@ To delete an expense:
 3. Click "Delete"
 4. Confirm the deletion
 
-Deleted expenses are removed from the related lists, totals, and reports in the app.
+Deletion happens in stages. Deleting an active expense archives it first, deleting it again from the Archive moves it to the Trash, and deleting it from the Trash removes it permanently. You can restore an expense from the Archive or Trash view at any point before the final step. Note: selecting expenses in the list and using the bulk Delete action removes them permanently right away.

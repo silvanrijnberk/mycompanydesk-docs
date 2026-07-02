@@ -1,6 +1,6 @@
 ---
-title: "Recurring setup"
-last_verified: 2026-05-09
+title: "Wiederkehrende Rechnungen einrichten"
+last_verified: 2026-07-02
 chatbot:
   triggers: ["set up recurring", "recurring invoice", "recurring expense", "automate invoice", "automatic invoice", "monthly invoice", "terugkerende factuur", "terugkerende uitgave", "wiederkehrende rechnung", "facture recurrente"]
   actions:
@@ -9,9 +9,13 @@ chatbot:
   follow_up: ["How do I stop a recurring invoice?", "How do I edit a recurring item?", "How do I change the frequency?"]
 ---
 
-So richtest du wiederkehrende Rechnungen ein:
-1. Gehe zu Wiederkehrende Rechnungen → klicke auf „Neu"
-2. Wähle den Kunden und füge Positionen hinzu
-3. Setze Frequenz und Startdatum
-4. Wähle, ob automatisch gesendet oder als Entwurf erstellt
-5. Speichere - das System erstellt Rechnungen automatisch
+So richten Sie eine wiederkehrende Rechnung ein:
+1. Gehen Sie zu Wiederkehrende Rechnungen und klicken Sie auf "Wiederkehrende Rechnung hinzufügen"
+2. Wählen Sie den Kunden und fügen Sie Positionen hinzu
+3. Legen Sie Häufigkeit und Startdatum fest
+4. Wählen Sie, ob jede Rechnung automatisch per E-Mail versendet oder als Entwurf erstellt wird
+5. Speichern Sie und prüfen Sie den Zeitplan in der Liste der wiederkehrenden Rechnungen
+
+Ein Enddatum-Feld gibt es nicht. Möchten Sie stoppen, öffnen Sie die wiederkehrende Rechnung und klicken Sie auf "Pausieren"; derselbe Schalter zeigt "Aktivieren", damit Sie später fortsetzen können.
+
+Tipp: Wiederkehrende Ausgaben funktionieren genauso. Öffnen Sie Wiederkehrende Ausgaben und folgen Sie dort denselben Schritten.

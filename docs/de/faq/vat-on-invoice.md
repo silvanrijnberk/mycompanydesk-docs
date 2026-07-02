@@ -1,16 +1,20 @@
 ---
-title: VAT on invoice
-last_verified: 2026-05-09
+title: "MwSt. auf einer Rechnung"
+last_verified: 2026-07-02
 chatbot:
   triggers: ["vat on invoice", "add vat to invoice", "tax rate invoice", "change vat rate", "btw op factuur", "btw tarief", "mwst auf rechnung", "tva sur facture"]
   actions:
     - { label: "Open invoices", to: "/invoices" }
+    - { label: "Open VAT settings", to: "/settings/btw" }
   follow_up: ["How do I change the default VAT rate?", "How do I prepare my VAT return?"]
 ---
-So setzen Sie die Mehrwertsteuer auf eine Rechnung:
+
+So legen Sie die MwSt. auf einer Rechnung fest:
 1. Bearbeiten oder erstellen Sie eine Rechnung
-2. Legen Sie den MwSt.-Satz pro Position fest (z.B. 19%, 7%, 0%)
+2. Wählen Sie für jede Position den MwSt.-Satz (z. B. 21 %, 9 %, 0 %)
 3. Das System berechnet die MwSt. automatisch
 4. Die MwSt.-Summen erscheinen in der Rechnungsübersicht
 
-Neue Rechnungspositionen übernehmen den Standard-MwSt.-Satz aus Ihren Steuereinstellungen (Finanzen → Steuern → Standard-MwSt.-Satz Rechnungen). Sie ändern dies unter Arbeitsbereich-Einstellungen → Finanzen → Steuern. Bei Kunden mit Reverse-Charge beträgt der Satz immer 0%.
+Neue Rechnungspositionen erhalten automatisch Ihren Standard-MwSt.-Satz. Um diesen Standard zu ändern, gehen Sie zu Einstellungen → "MwSt." und passen Sie den Standardsatz an. Der Satz ist immer 0 %, wenn die Rechnung den Reverse-Charge-Schalter verwendet.
+
+Tipp: Stellen Sie einem Geschäftskunden in der EU eine Rechnung? Nutzen Sie den Schalter "Reverse Charge (Steuerschuldnerschaft des Leistungsempfängers)", statt selbst 0 % zu wählen.

@@ -1,15 +1,20 @@
 ---
-title: Quote status
-last_verified: 2026-05-09
+title: "Offertestatus"
+last_verified: 2026-07-02
 chatbot:
   triggers: ["quote status", "quote statuses", "quote lifecycle", "draft open sent canceled", "offerte status", "angebotsstatus", "statut devis", "estado cotizacion", "status proposta"]
   actions:
     - { label: "Open quotes", to: "/quotes" }
   follow_up: ["How do I mark a quote as finalized?", "How do I mark as sent?", "How do I convert to invoice?"]
 ---
-Offertestatussen uitgelegd:
-• Concept - bewerkbare versie
-• Open - afgerond en klaar om te versturen
-• Verstuurd - naar klant verzonden
-• Achterstallig - geldig-tot datum verstreken
-• Geannuleerd - ongeldig gemaakt
+
+De offertestatussen op een rij:
+• Concept: nog te bewerken, nog niet naar de klant verstuurd
+• Verzonden: bij de klant afgeleverd
+• Geaccepteerd: de klant is akkoord met de offerte
+• Geweigerd: de klant heeft de offerte afgewezen
+• Verlopen: de geldig-tot-datum is verstreken; dit wordt automatisch getoond
+
+Zet je een geaccepteerde offerte om naar een factuur, dan blijft de offerte Geaccepteerd en krijgt die de markering "Omgezet naar factuur".
+
+Tip: Gebruik de filters in de offertelijst om eerst naar concepten en verlopen offertes te kijken.

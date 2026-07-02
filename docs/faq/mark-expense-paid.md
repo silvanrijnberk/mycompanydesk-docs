@@ -21,8 +21,7 @@ chatbot:
 
 To mark an expense as paid:
 1. Open the expense from the list
-2. Click the status or "Mark as Paid" button
-3. Optionally enter the payment date
-4. Save - the expense status updates to Paid
+2. Click "Mark as Paid"
+3. The status updates to Paid right away
 
-Tip: If it does not update immediately, reload the detail page and check whether any required fields are missing.
+That single click is all it takes: there is no payment date prompt and no separate save step.

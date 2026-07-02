@@ -1,6 +1,6 @@
 ---
-title: "Export to PDF"
-last_verified: 2026-05-09
+title: "Exporteren naar PDF"
+last_verified: 2026-07-02
 chatbot:
   triggers:
     - "export pdf"
@@ -16,15 +16,16 @@ chatbot:
     - "telecharger pdf"
   actions:
     - { label: "Open invoices", to: "/invoices" }
-    - { label: "Open Branding & Documents", to: "/company?section=brandingDocuments" }
+    - { label: "Open logo and colour", to: "/settings/uiterlijk" }
+    - { label: "Open invoice design", to: "/settings/factuurontwerp" }
   follow_up:
     - "How do I change the PDF style?"
     - "How do I send an invoice by email?"
 ---
 
-Om een PDF te exporteren of downloaden:
+Zo exporteer of download je een PDF:
 1. Open de factuur vanuit de lijst
-2. Klik op de PDF-preview of downloadknop
-3. De PDF gebruikt je sjabloon uit Instellingen → PDF-editor
+2. Klik op de PDF-voorbeeld- of downloadknop
+3. De PDF gebruikt je logo, kleur en opmaak uit Instellingen → "Logo en kleur" en Instellingen → "Factuurontwerp"
 
-Tip: Pas je PDF-sjabloon aan met je logo en huisstijl in Instellingen → PDF-editor.
+Tip: Stel je logo en huisstijlkleur in via Instellingen → "Logo en kleur", en kies de opmaak, kleuren en het lettertype van je facturen via Instellingen → "Factuurontwerp".

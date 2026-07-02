@@ -1,6 +1,6 @@
 ---
-title: "Quote numbering"
-last_verified: 2026-05-09
+title: "Angebotsnummerierung"
+last_verified: 2026-07-02
 chatbot:
   triggers:
     - "quote number"
@@ -15,14 +15,16 @@ chatbot:
     - "numero proposta"
     - "numero preventivo"
   actions:
-    - { label: "Open company setup", to: "/company?section=invoicing" }
+    - { label: "Open quotes", to: "/quotes" }
   follow_up:
     - "How do I set quote validity?"
     - "How do I edit a quote number safely?"
     - "How do I create a new quote?"
 ---
 
-Die Angebotsnummerierung nutzt deine Abrechnungsnummerierung:
-1. Gehe zu Unternehmenseinstellungen → Abrechnung
-2. Prefix, naechste Nummer und Format setzen
-3. Neue Angebote folgen dieser Sequenz
+Angebotsnummern werden automatisch vergeben:
+1. Erstellen Sie ein Angebot; MyCompanyDesk vergibt automatisch die nächste Nummer in Ihrer Serie
+2. Es gibt kein Nummernformat zu konfigurieren, die Serie bleibt von selbst sauber fortlaufend
+3. Sie brauchen eine bestimmte Nummer auf einem Entwurf? Öffnen Sie das Angebot im Formular und klicken Sie in der Seitenleiste auf "Eigene Nummer eingeben"
+
+Tipp: Sobald ein Angebot versendet wurde, ist es gesperrt, einschließlich der Nummer. Legen Sie eine eigene Nummer daher fest, solange das Dokument noch ein Entwurf ist.

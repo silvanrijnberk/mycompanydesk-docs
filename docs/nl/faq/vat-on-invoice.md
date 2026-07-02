@@ -1,16 +1,20 @@
 ---
-title: VAT on invoice
-last_verified: 2026-05-09
+title: "BTW op een factuur"
+last_verified: 2026-07-02
 chatbot:
   triggers: ["vat on invoice", "add vat to invoice", "tax rate invoice", "change vat rate", "btw op factuur", "btw tarief", "mwst auf rechnung", "tva sur facture"]
   actions:
     - { label: "Open invoices", to: "/invoices" }
+    - { label: "Open VAT settings", to: "/settings/btw" }
   follow_up: ["How do I change the default VAT rate?", "How do I prepare my VAT return?"]
 ---
-Om BTW op een factuur in te stellen:
-1. Bewerk of maak een factuur aan
-2. Stel het BTW-tarief per regel in (bijv. 21%, 9%, 0%)
-3. Het systeem berekent de BTW automatisch
-4. BTW-totalen verschijnen in de factuursamenvatting
 
-Nieuwe factuurregels beginnen met het standaard BTW-tarief uit je belastinginstellingen (Geldzaken → Belasting → Standaard BTW-tarief Facturen). Je past dit aan via werkruimte-instellingen → Financieel → Belasting. Voor klanten met verlegde BTW is het tarief altijd 0%.
+Zo stel je BTW in op een factuur:
+1. Bewerk of maak een factuur
+2. Kies per factuurregel het BTW-tarief (bijv. 21%, 9%, 0%)
+3. Het systeem berekent de BTW automatisch
+4. De BTW-totalen verschijnen in de samenvatting van de factuur
+
+Nieuwe factuurregels krijgen automatisch je standaard-BTW-tarief. Wil je dat standaardtarief aanpassen, ga dan naar Instellingen → "BTW". Het tarief is altijd 0% wanneer de factuur de schakelaar BTW verlegd gebruikt.
+
+Tip: Factureer je een zakelijke klant in de EU? Gebruik dan de schakelaar "BTW verlegd" in plaats van zelf 0% te kiezen.

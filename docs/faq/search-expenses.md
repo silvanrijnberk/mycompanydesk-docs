@@ -10,8 +10,8 @@ chatbot:
 
 To search and filter expenses:
 1. Go to Expenses
-2. Use the search bar to find by vendor name, amount, or description
-3. Use filters to narrow by category, date range, or payment status
-4. Sort by date, amount, or category
+2. Use the search bar to find by supplier, description, or category
+3. Use filters to narrow by category or payment status
+4. Sort by date, supplier, category, status, or amount
 
-Use category and date filters together when the list is long.
+Combine the search bar with the category filter when the list is long.

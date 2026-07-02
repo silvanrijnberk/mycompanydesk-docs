@@ -1,6 +1,6 @@
 ---
 title: Create an invoice
-last_verified: 2026-05-09
+last_verified: 2026-07-02
 chatbot:
   triggers: ["create invoice", "new invoice", "make invoice", "add invoice", "write invoice", "send invoice", "first invoice", "how to invoice", "maak factuur", "nieuwe factuur", "factuur maken", "factuur aanmaken", "hoe maak ik een factuur", "rechnung erstellen", "wie erstelle ich eine rechnung", "neue rechnung", "creer facture", "comment creer une facture"]
   actions:
@@ -16,4 +16,6 @@ Here's how to create an invoice:
 5. Use "Save as Draft" if it is not ready yet, or "Finalize" when the invoice is ready (MyCompanyDesk checks your BTW-id and IBAN first, you can fill them in on the spot if needed)
 6. After saving, open the invoice detail page to preview or send it
 
-Tip: Company defaults like numbering, payment terms, and PDF settings live under Company. Make sure your BTW-id and IBAN are filled in under Company so you can finalize without interruption.
+If the customer has unbilled time entries, the form pulls them in as line items and fills in missing descriptions automatically.
+
+Tip: Defaults like payment terms and quote validity live at Settings → "Facturen en offertes"; invoice numbering is automatic, so there is nothing to configure there. Make sure your BTW-id and IBAN are filled in so you can finalize without interruption.

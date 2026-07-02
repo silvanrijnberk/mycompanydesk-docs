@@ -1,17 +1,19 @@
 ---
-title: Apply a discount to an invoice
-last_verified: 2026-05-09
+title: "Korting op een factuur"
+last_verified: 2026-07-02
 chatbot:
   triggers: ["discount", "add discount", "invoice discount", "percentage discount", "reduce price", "korting", "korting toevoegen", "rabatt", "rabatt gewahren", "remise", "reduction"]
   actions:
     - { label: "Open invoices", to: "/invoices" }
   follow_up: ["How do I set payment terms?", "How do I create a credit note?", "How do I preview the invoice PDF?"]
 ---
-Om een korting toe te voegen aan een factuur:
-1. Open de factuur in bewerkingsmodus
-2. Zoek het veld "Korting" bij elk regelitem of het factuurtotaal
-3. Voer de korting in als percentage of vast bedrag
-4. De totalen worden automatisch herberekend
-5. Sla de factuur op
 
-Tip: Je kunt kortingen per regelitem of als algehele factuurkorting toepassen.
+Zo geef je korting op een factuur:
+1. Bewerk of maak een factuur
+2. Voeg een aparte factuurregel toe met een negatief bedrag voor de korting
+3. Het totaal toont het verlaagde bedrag
+4. Sla de factuur op
+
+Er is geen apart kortingsveld; een negatieve factuurregel is de manier om korting te geven in MyCompanyDesk.
+
+Tip: Geef de kortingsregel een duidelijke omschrijving (bijv. "Betalingskorting -5%"), zodat de klant de aftrek begrijpt.

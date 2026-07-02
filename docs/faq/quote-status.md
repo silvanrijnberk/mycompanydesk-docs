@@ -1,17 +1,20 @@
 ---
 title: Quote status
-last_verified: 2026-05-09
+last_verified: 2026-07-02
 chatbot:
   triggers: ["quote status", "quote statuses", "quote lifecycle", "draft open sent canceled", "offerte status", "angebotsstatus", "statut devis", "estado cotizacion", "status proposta"]
   actions:
     - { label: "Open quotes", to: "/quotes" }
   follow_up: ["How do I mark a quote as finalized?", "How do I mark as sent?", "How do I convert to invoice?"]
 ---
-Quote statuses explained:
-• Draft - editable working version
-• Open - finalized quote ready to send/track
-• Sent - delivered to customer
-• Overdue - valid-until date passed
-• Canceled - voided quote
 
-Tip: Use quote list filters to focus on overdue or draft quotes first.
+Quote statuses explained:
+• Draft: still editable, not sent to the customer yet
+• Sent: delivered to the customer
+• Accepted: the customer agreed to the quote
+• Declined: the customer turned the quote down
+• Expired: the valid-until date has passed; this is shown automatically
+
+When you convert an accepted quote to an invoice, the quote stays Accepted and gets a "Converted to invoice" marker.
+
+Tip: Use the quote list filters to check drafts and expired quotes first.
