@@ -58,7 +58,7 @@ function sidebarEN() {
       text: 'Account',
       collapsed: true,
       items: [
-        { text: 'Profile', link: '/account/profile' },
+        { text: 'Personal settings', link: '/account/profile' },
         { text: 'Security', link: '/account/security' },
         { text: 'Data Import & Export', link: '/account/data' },
       ],
@@ -134,7 +134,7 @@ function sidebarNL() {
       text: 'Account',
       collapsed: true,
       items: [
-        { text: 'Profiel', link: '/nl/account/profile' },
+        { text: 'Persoonlijke instellingen', link: '/nl/account/profile' },
         { text: 'Beveiliging', link: '/nl/account/security' },
         { text: 'Gegevens importeren & exporteren', link: '/nl/account/data' },
       ],
@@ -210,7 +210,7 @@ function sidebarDE() {
       text: 'Konto',
       collapsed: true,
       items: [
-        { text: 'Profil', link: '/de/account/profile' },
+        { text: 'Persönliche Einstellungen', link: '/de/account/profile' },
         { text: 'Sicherheit', link: '/de/account/security' },
         { text: 'Datenimport & -export', link: '/de/account/data' },
       ],
@@ -286,7 +286,7 @@ function sidebarFR() {
       text: 'Compte',
       collapsed: true,
       items: [
-        { text: 'Profil', link: '/fr/account/profile' },
+        { text: 'Paramètres personnels', link: '/fr/account/profile' },
         { text: 'Sécurité', link: '/fr/account/security' },
         { text: 'Import & Export de données', link: '/fr/account/data' },
       ],

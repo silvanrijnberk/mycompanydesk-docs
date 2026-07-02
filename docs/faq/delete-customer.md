@@ -15,4 +15,4 @@ To delete a customer:
 4. Click "Delete"
 5. Confirm the deletion
 
-Customers with linked invoices may not be deletable. If Delete is unavailable, archive the customer instead.
+Deleting is never blocked, even for customers with linked invoices. It happens in stages: deleting an active customer archives them first, deleting again moves them to the Trash, and deleting from the Trash removes them permanently. You can restore the customer from the Archive or Trash view at any point before that final step.

@@ -1,6 +1,6 @@
 ---
-title: "Notification settings"
-last_verified: 2026-05-09
+title: "Benachrichtigungseinstellungen"
+last_verified: 2026-07-02
 chatbot:
   triggers:
     - "notifications"
@@ -17,9 +17,10 @@ chatbot:
     - "How do I change my email?"
 ---
 
-So verwaltest du deine Benachrichtigungseinstellungen:
-1. Gehe zu Mein Konto → Benachrichtigungen
-2. Wähle aus, welche E-Mail-, App- oder Push-Benachrichtigungen du ändern möchtest
-3. Änderungen dort werden automatisch gespeichert
+So verwalten Sie Ihre Benachrichtigungseinstellungen:
+1. Gehen Sie zu Einstellungen → „Benachrichtigungen"
+2. Schalten Sie die vier Benachrichtigungsthemen ein oder aus: überfällige Rechnungen, eingegangene Zahlungen, MwSt.-Fristen und Tipps. Sie erhalten sie in der App und per E-Mail.
+3. Auf derselben Seite aktivieren Sie auch Push-Benachrichtigungen für das Gerät, das Sie gerade nutzen
+4. Änderungen werden automatisch gespeichert
 
-Tipp: Lass zahlungsbezogene Benachrichtigungen aktiviert, damit du keine eingehende Zahlung oder Erinnerung verpasst.
+Wenn eine Benachrichtigung ausbleibt, prüfen Sie sowohl den Schalter als auch die E-Mail-Adresse Ihres Kontos.

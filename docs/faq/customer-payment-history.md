@@ -10,8 +10,7 @@ chatbot:
 
 To view a customer's payment history:
 1. Open Customers and select the customer
-2. Open the invoices or payment history view on the customer profile
-3. Review the invoice statuses, due dates, payment dates, and recorded amounts shown there
-4. Open an invoice from that list if you need the full detail page
+2. Check the "Recent invoices" card on the customer profile; it shows each invoice's number, date, total, and status
+3. Open an invoice from that card for the payment details, such as when and how it was paid
 
-This answer is limited to what the app records and where to find it.
+The invoice detail page is where the full payment information lives; the customer profile gives you the quick status overview.

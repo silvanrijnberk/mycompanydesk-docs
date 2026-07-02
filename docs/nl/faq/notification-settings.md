@@ -1,6 +1,6 @@
 ---
-title: "Notification settings"
-last_verified: 2026-05-09
+title: "Meldingsinstellingen"
+last_verified: 2026-07-02
 chatbot:
   triggers:
     - "notifications"
@@ -18,8 +18,9 @@ chatbot:
 ---
 
 Om je meldingsinstellingen te beheren:
-1. Ga naar Mijn account → Meldingen
-2. Kies welke e-mail-, app- of pushmeldingen je wilt aanpassen
-3. Wijzigingen worden daar automatisch opgeslagen
+1. Ga naar Instellingen → "Meldingen"
+2. Zet de vier meldingsonderwerpen aan of uit: te late facturen, ontvangen betalingen, BTW-deadlines en tips. Je krijgt ze in de app en per e-mail.
+3. Op dezelfde pagina zet je ook pushmeldingen aan voor het apparaat dat je gebruikt
+4. Wijzigingen worden automatisch opgeslagen
 
-Tip: Laat betalingsgerelateerde meldingen aanstaan, zodat je geen inkomende betaling of herinnering mist.
+Mis je een melding? Controleer dan zowel de meldingsschakelaar als het e-mailadres van je account.

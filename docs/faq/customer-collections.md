@@ -11,7 +11,7 @@ chatbot:
 To view customer data that affects invoice follow-up in the app:
 1. Open Customers and select the customer
 2. Check the saved billing email, address, VAT number, and payment terms on the customer profile
-3. Open the customer's invoices or payment history view to see statuses, due dates, and recorded payments
+3. Check the "Recent invoices" card for each invoice's status and total, and open an invoice for its payment details
 4. Update the customer record if the contact or billing details are outdated
 
-This answer is limited to the customer data the app records and where to find it.
+Up-to-date contact and billing details make reminders land at the right address, which is the biggest lever for getting invoices paid on time.
