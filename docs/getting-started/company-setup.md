@@ -1,126 +1,73 @@
 ---
-title: Set Up Your Company
-last_verified: 2026-05-09
+title: Set up your company
+last_verified: 2026-07-02
 ---
 
-# Set Up Your Company
+# Set up your company
 
-The first time you sign in, MyCompanyDesk runs you through a **setup wizard** at `/setup`. It is five short steps, asks you the minimum it needs, and uses the answers to seed the rest of your workspace — branding, default categories, VAT regime, a starter website. You can always re-run it later to tweak.
+The first time you sign in, MyCompanyDesk walks you through a short **setup wizard** at `/setup`. It asks what kind of work you do and what you want to use the app for, finds your company in the Dutch trade register (KVK), and uses the answers to fill in your company details, branding and defaults. Nothing is locked in: every step can be skipped and everything can be changed later in Settings.
 
 ## Where to find it
 
 - **First sign-in:** the wizard opens automatically.
-- **Later:** there is a "Finish setup" banner pinned to the top of `/dashboard` until you complete it. Click the banner, or go to `/setup` directly.
-- **After completion:** revisit `/setup` any time to re-run with diff-and-approve. Re-running starts at step 1 and shows you exactly what will change before you confirm.
+- **Later:** as long as setup is unfinished, a banner sits at the top of your dashboard with a button back into the wizard. You can hide the banner, or go to `/setup` directly at any time.
+- **Skipping:** the wizard has a **Voor nu overslaan** (skip for now) button on every step. Your answers so far are saved, so you continue where you left off.
 
-There is also a **Skip for now** button on every step. Skipping leaves the banner on `/dashboard` and brings you back later.
+## Step 1: What kind of work you do
 
-## Step 1 — Business
+Pick your trade from a grid of common professions: carpenter, painter, plumber, electrician, photographer, consultant, landlord and more. Is yours not listed? Choose **Iets anders** (something else) and describe it in your own words.
 
-Two questions:
+Your trade pre-selects a sensible set of goals on the next step, so most people only need to confirm.
 
-- **Business name** — What appears on invoices and in the sidebar.
-- **What you do** — One or two sentences. The wizard feeds this to Gemini in the Magic step to generate your tagline, services list, and email tone.
+## Step 2: Your goals
 
-The business name is also the seed for the registry lookup (step 2) and the subdomain slug (step 3), so spelling matters.
+A checklist of what you want to do with MyCompanyDesk: send invoices, make quotes, track expenses, log hours, manage projects, manage rentals, VAT and overviews, and being found online. Ticked goals switch the matching parts of the app on; unticked ones stay out of your way.
 
-## Step 2 — Registry
+One choice shapes the rest of the wizard: tick **Online gevonden worden** (be found online) and the wizard adds two extra steps for your web address and your brand. Leave it unticked and you go straight to the final step.
 
-Tell us where you are registered. The country picker drives which official registry the wizard talks to:
+## Step 3: Your company details (KVK)
 
-| Country | Registry | Lookup |
-|---|---|---|
-| Netherlands | KvK | Yes |
-| Germany | Handelsregister | Manual entry only |
-| France | SIRENE | Yes |
-| United Kingdom | Companies House | Yes |
-| Other | — | Manual entry only |
+Type your company name and pick your business from the live suggestions out of the trade register. MyCompanyDesk then pulls your KVK Basisprofiel and prefills your company details: legal name, trade names, legal form, address and business activity. It only fills fields that are still empty, so anything you already entered stays untouched.
 
-For supported countries, type your registration number and click **Look up**. The wizard auto-fills:
+No match, or no KVK registration?
 
-- Legal name
-- Registered address
-- Sector / SBI code
+- **Vul handmatig in** (fill in manually): enter your company name, KVK number, address, postal code and city yourself.
+- **Geen KVK-inschrijving?** (no KVK registration): skip the lookup entirely and add your details later in Settings.
 
-For Dutch businesses (KvK), the lookup also pulls full company details from the KvK Basisprofiel: statutory name, trade names, legal form, founding date, visiting and postal addresses, SBI activities, and employee count. The wizard also auto-fills your public website tagline ("[tradeName] in [city]") and description from your primary SBI activity. This richer data is 24h-cached per lookup.
+This step also asks for a one-line description of what your business does. When you continue, MyCompanyDesk uses it together with your company details to propose a brand colour, tagline and starter content.
 
-You can correct any of these inline before continuing. **Not registered yet** is also a valid answer — just tick "Skip" and the wizard will accept the country alone.
+## Step 4: Your web address (website goal only)
 
-## Step 3 — Domain
+Choose how customers find you online:
 
-Where customers find you on the web. Two paths:
+- **Gratis subdomein** (free subdomain): a free address ending in `.mycompanydesk.site`, suggested from your company name and checked for availability while you type.
+- **Ik heb al een domein** (I already have a domain): connect a domain you registered elsewhere.
+- **Registreer een domein** (register a domain): search for a new domain, check the price and buy it directly in the wizard. Founding Members get one included.
 
-### Free subdomain
+You can skip this step and set up a domain later.
 
-The wizard suggests a slug from your business name (lowercased, dashes for spaces, ASCII only) and pins it to:
+## Step 5: Your brand (website goal only)
 
-- `<slug>.mycompanydesk.nl` for NL workspaces
-- `<slug>.mycompanydesk.com` for everyone else
+Upload your logo if you have one; MyCompanyDesk picks your brand colour from it automatically. No logo? No problem: a clean logo is generated from your initials. The step also previews the brand colour and tagline the wizard proposes, so you see what your invoices and website will look like.
 
-Edit the slug if you want. Availability is checked live.
+## Step 6: Founding Members and your trial
 
-### Your own domain
+The final step confirms that your 60-day Pro trial is active, no credit card needed. While spots last, you can also claim a Founding Members spot here for a longer free period and a lasting discount. Click **Setup afronden** (finish setup) and the wizard applies everything, shows a summary of what it set up, and takes you to your dashboard.
 
-Type it in (`example.com`). The wizard records the choice; on **Finish**, MyCompanyDesk creates the Cloudflare configuration and shows you the DNS records to add. Until you point your nameservers, the website stays parked on the subdomain.
+## Changing things later
 
-### Personal mailbox
+Everything the wizard sets can be edited in **Instellingen** (Settings):
 
-Optional. If enabled, also creates a personal `firstname@<your-domain>` address routed to your inbox. Default local-part is your first name; edit if you want.
-
-## Step 4 — Magic
-
-The wizard generates branding suggestions in the background while you watch:
-
-- **Brand colour** — Extracted from your uploaded logo, or a Gemini-picked palette based on sector.
-- **Logo** — Use your uploaded one, or have the wizard render initials in your brand colour.
-- **Tagline** — Short pitch line.
-- **About text** — Two paragraphs for the website and customer portal.
-- **Services list** — Three to six items pulled from your "what you do" answer and the website (if you gave one).
-- **Email tone** — Formal, friendly, or casual. Drives default email templates.
-
-Every suggestion is editable. If Gemini is unreachable, a localised fallback ships you a sensible starter set so you can keep going.
-
-## Step 5 — Review
-
-A diff-and-approve list of everything the wizard will change on **Finish**, split into:
-
-- **Will change** — Field-by-field "current → new".
-- **No change** — Fields the wizard captured but match what you already have.
-
-Click **Finish** and the wizard applies everything in one transaction. The Finish splash shows what got applied: subdomain ready, custom-domain DNS pending, logo created, services added, email templates set.
-
-Where you land after Finish:
-
-- **Custom domain still needs DNS** — `/workspace/organization/company/address` to copy nameservers.
-- **Anything else** — Back to `/dashboard`.
-
-## What gets seeded
-
-Based on your wizard answers, the workspace is pre-populated with:
-
-| From | Seeded |
+| I want to change... | Open |
 |---|---|
-| Country | Default currency (EUR, USD, GBP), VAT regime (NL VAT / DE UStG / FR TVA / GB VAT / none), invoice number locale, working-week defaults |
-| Sector | Expense category list (drawn from a sector-aware preset table — construction, consulting, retail, hospitality, etc.) |
-| Registry | Legal name and registered address on `companies` |
-| Brand colour + logo | Invoice PDF accent, customer portal, public website, email signature |
-| Tagline + about + services | `/business/<slug>` public website |
-| Email tone | Default templates for invoice-sent, reminder, thank-you |
+| Company name, address, KVK or VAT number | **Bedrijfsgegevens** (business details) |
+| Logo and brand colour | **Logo en kleur** (logo and colour) |
+| How customers pay you: IBAN, iDEAL, PayPal | **Betalen** (getting paid) |
+| Payment terms, reminders, quote validity | **Facturen en offertes** (invoices and quotes) |
+| The look of your invoice PDFs | **Factuurontwerp** (invoice design) |
+| Your website and domain | **Je website en domein** (your website and domain) |
 
-Default VAT rates are not invented — they come from the country's official rate table (e.g. NL: 21 / 9 / 0).
-
-## Re-running and editing later
-
-The wizard is non-destructive: re-running shows you exactly what will change before you commit, so it is safe to revisit when something needs tweaking.
-
-You can also edit the underlying fields directly without re-running:
-
-- **Company name, legal name, address, KvK number** — `/workspace/organization/company/about`
-- **Logo, brand colour, tagline** — `/workspace/organization/company/look`
-- **Subdomain and custom domain** — `/workspace/organization/company/address`
-- **Public website content (services, about)** — `/workspace/organization/company/website`
-- **VAT regime, default currency, working week** — `/workspace/financial/...`
-- **Expense categories** — `/workspace/financial/categories`
+See the [settings overview](/settings/) for the full map. You can also re-run the wizard from `/setup` whenever you like; it fills in blanks rather than overwriting what you set yourself.
 
 ## Next steps
 

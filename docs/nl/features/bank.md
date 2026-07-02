@@ -4,101 +4,106 @@ title: Bankfeed
 
 # Bankfeed
 
-Koppel je bankrekeningen aan MyCompanyDesk voor automatische transactie-import, matching en real-time meldingen. De bankfeed houdt je boekhouding actueel zonder handmatig invoerwerk.
+Koppel je bankrekening aan MyCompanyDesk en je transacties stromen automatisch binnen. Regels en slimme categorisering maken van uitgaande betalingen concept-uitgaven, en jij bevestigt elk concept voordat het in je boekhouding belandt.
+
+## Waar vind je het
+
+De bankfeed zit in het Uitgaven-gedeelte:
+
+- **Koppelingen en instellingen**: open **Uitgaven** en klik op het tandwiel in de paginakop. Daar koppel je banken, controleer je automatisch geïmporteerde uitgaven en beheer je regels en meldingen.
+- **Transactiefeed**: de knop **Transacties** in de paginakop van Uitgaven opent de lijst met geïmporteerde banktransacties.
 
 ## Een bankrekening koppelen
 
-1. Ga naar **Werkruimte** → **Financieel** → **Bankrekeningen**.
-2. Klik op **Bank koppelen** en kies je bank uit de lijst.
-3. Doorloop de autorisatiestappen in het pop-upvenster.
-4. Na het koppelen haalt MyCompanyDesk transacties op van de afgelopen 90 dagen en houdt de feed actueel met periodieke automatische syncs.
+1. Ga naar **Uitgaven** en klik op het tandwiel.
+2. Klik in het bankgedeelte op **Koppel je eerste bank**, of kies je bank direct wanneer er een bankkiezer staat.
+3. Bevestig de koppeling in de app of website van je eigen bank. Dit is een beveiligde PSD2-stroom: MyCompanyDesk kan alleen de transacties lezen die jij toestaat en kan nooit geld overmaken.
+4. Daarna kom je terug in MyCompanyDesk. De eerste sync haalt transacties van de afgelopen 90 dagen op; daarna blijft de feed automatisch actueel.
 
-Je kunt meerdere rekeningen van verschillende banken koppelen. Elke rekening verschijnt als een aparte verbinding met een eigen sync-cadans en transactielijst.
+Je kunt tot 10 rekeningen van verschillende banken koppelen. Elke rekening staat als eigen rij met het actuele saldo en het moment van de laatste sync. Met **Nog een bank koppelen** voeg je er meer toe. De banktoestemming verloopt periodiek volgens de PSD2-regels (meestal elke 90 dagen); je krijgt vooraf een seintje.
 
-## Transacties synchroniseren
+Per rekening kun je:
 
-MyCompanyDesk synchroniseert transacties van je gekoppelde rekeningen via een automatisch schema. Je kunt op elk moment ook handmatig synchroniseren via de bankrekeningenpagina. Nieuwe transacties worden automatisch gekoppeld aan je bestaande klanten, facturen en uitgaven met behulp van leveranciersregels en AI-matching. Gekoppelde transacties stromen direct je boekhouding in; niet-gekoppelde transacties verschijnen in de bankfeed voor handmatige beoordeling.
+- **Auto-import** aan- of uitzetten, zodat jij bepaalt welke rekeningen je uitgaven voeden.
+- Op elk moment een **handmatige sync** starten.
+- De rekening ontkoppelen.
 
-### Automatische uitgaven aanmaken
+## Sync-frequentie
 
-Wanneer een banktransactie gecategoriseerd is (door een leveranciersregel, een standaardcategorie of de AI-classificatie), maakt MyCompanyDesk automatisch een conceptuitgave aan in je boekhouding. De uitgave wordt gevuld met:
+Hoe vaak MyCompanyDesk nieuwe transacties ophaalt is één instelling voor je hele werkruimte: **Realtime**, **Elke 4 uur** of **Dagelijks**. De handmatige sync per rekening werkt daar altijd bovenop.
 
-- De naam van de tegenpartij als leverancier.
-- Het absolute bedrag als bruto kosten.
-- Het standaard BTW-tarief van de categorie (of het door AI voorgestelde tarief als dat beschikbaar is).
-- De categorie-sleutel die overeenkomt met de echte uitgavecategorieen in je workspace.
-- De boekingsdatum van de transactie als uitgavedatum.
+## Van transactie naar uitgave
 
-De transactie wordt daarna gemarkeerd als gekoppeld, zodat deze bij de volgende sync geen duplicaat oplevert. De nieuwe uitgave verschijnt meteen in je uitgavenlijst en telt mee in je rapportages en BTW-overzichten.
+Nieuwe transacties gaan langs je regels en de slimme categorisering:
 
-Het aanmaken van uitgaven gebeurt in twee rondes: eerst na het toepassen van leveranciersregels en standaardcategorieen (synchroon, tijdens de sync); daarna nadat de AI-classificatie is voltooid (asynchroon). In beide gevallen gebruikt de aangemaakte uitgave de echte uitgavecategorieen van je workspace en hun standaard BTW-behandeling, zodat de bedragen consistent blijven met je handmatige invoer.
+1. Eerst worden je eigen regels gecontroleerd. Een transactie die matcht krijgt de categorie van de regel.
+2. Transacties zonder regelmatch krijgen een categoriesuggestie van de slimme categorisering, of vallen terug op je standaardcategorie als je die hebt ingesteld.
+3. Een gecategoriseerde uitgaande transactie wordt een **concept-uitgave**: de tegenpartij wordt de leverancier, en het bedrag, de datum en de gebruikelijke BTW-behandeling van de categorie worden ingevuld.
+4. Het concept belandt in de controlelijst, dus er wordt niets geboekt zonder dat jij het ziet.
 
-Alleen uitgaande transacties (bedrag onder nul) worden omgezet naar uitgaven. Inkomende betalingen worden niet als uitgave aangemaakt. Als je workspace nog geen uitgavecategorieen heeft, wordt deze stap overgeslagen en blijven transacties wachten op handmatige beoordeling.
+Alleen uitgaande transacties worden uitgaven; inkomende betalingen worden nooit omgezet in uitgaven. Uitgaven die uit banktransacties zijn ontstaan tonen een klein bankicoon in de uitgavenlijst, zodat je altijd ziet waar een boeking vandaan komt.
 
-### Auto-importuitgaven beoordelen
+## Automatisch geïmporteerde uitgaven controleren
 
-Wanneer er conceptuitgaven zijn aangemaakt vanuit banktransacties, komen die eerst in de beoordelingsinbox. Ga naar **Werkruimte** → **Financieel** → **Bankrekeningen** en open het tabblad **Beoordelen**. Je ziet een lijst met conceptuitgaven, elk met de leverancier, het bedrag, de categoriesuggestie en de bron van die suggestie (leveranciersregel, standaardcategorie, AI-suggestie of bankfeed).
+De kaart **Automatisch geïmporteerde uitgaven om te controleren** staat bovenaan de uitgaven-instellingen zodra er concepten klaarstaan. Elke rij toont de leverancier, datum, het bedrag, de voorgestelde categorie en waar die suggestie vandaan komt (een van je regels, je standaardcategorie, een slimme suggestie of de bankfeed).
 
-Voor elke uitgave kun je:
+Per concept kun je:
 
-- **Bevestigen**: De uitgave wordt direct geboekt. Hij verschijnt in je actieve uitgavenlijst en telt mee in rapportages en BTW-overzichten.
-- **Bewerken**: Open het uitgaveformulier om de categorie, BTW-behandeling, omschrijving of het bedrag aan te passen voordat je boekt.
-- **Afwijzen**: Het concept verdwijnt. De transactie komt terug in de niet-gekoppelde wachtrij in de bankfeed voor handmatige afhandeling.
+- **Bevestigen**: de uitgave boeken zoals hij is. Hij verschijnt in je uitgavenlijst en telt mee in rapportages en BTW.
+- **Bewerken**: de uitgave openen om categorie, BTW of bedrag aan te passen voordat je boekt.
+- **Afwijzen**: het concept verwijderen. De transactie gaat terug naar de feed voor handmatige afhandeling.
 
-De beoordelingsstap zorgt dat jij de controle houdt: geen uitgave komt in je boekhouding zonder dat iemand hem heeft gecontroleerd. Bevestigde uitgaven tonen kort een melding met de leveranciersnaam; afgewezen uitgaven tonen de afwijzing. Als een actie mislukt, verschijnt er een melding en kun je het opnieuw proberen.
+## Feedinstellingen
 
-Elke uitgavekaart toont een bronlabel zodat je weet waarom MyCompanyDesk die specifieke suggestie heeft gedaan. De mogelijke bronnen zijn `vendor_rule`, `workspace_default`, `ai_flag` en `feed`, dezelfde categoriseringspijplijn als hierboven beschreven.
+Op dezelfde instellingenpagina bepaal je hoe de feed zich gedraagt:
 
-### Synchronisatiefouten
+- **Auto-import naar Uitgaven**: het automatisch aanmaken van concept-uitgaven aan- of uitzetten voor de hele werkruimte.
+- **Slim categoriseren**: laat MyCompanyDesk een categorie voorstellen voor transacties zonder regel.
+- **Negeer eigen overboekingen**: overboekingen tussen je eigen gekoppelde rekeningen overslaan.
+- **Vraag bonnetje op via e-mail**: een dagelijkse ronde mailt leveranciers één gebundeld verzoek voor bonnetjes die nog missen. Elke leverancier wordt per transactie maar één keer gevraagd.
+- **Minimumbedrag voor import**: transacties onder dit bedrag worden geen uitgaven.
+- **Standaardcategorie**: de categorie die geldt als niets anders matcht.
+- **Boekingsdatum**: kies of uitgaven de transactiedatum, de valutadatum of de bondatum gebruiken.
 
-Als een sync mislukt (bijvoorbeeld omdat de autorisatie van je bank is verlopen of de verbinding is verbroken), stuurt MyCompanyDesk je een e-mail en een in-app melding met de naam van de verbinding en een link om het op te lossen. Je kunt ook pushmeldingen voor sync-fouten inschakelen onder de notificatievoorkeuren.
+## Regels
 
-## Notificaties
+Met regels leer je MyCompanyDesk hoe terugkerende betalingen gecategoriseerd moeten worden. Klik op de instellingenpagina op **Regel toevoegen** en vul in:
 
-De bankfeed ondersteunt vier notificatievoorkeuren, per workspace in te stellen via de bankrekeningenpagina:
+1. Een naam voor de regel (meestal de leverancier).
+2. Eén trefwoord.
+3. De uitgavencategorie die erbij hoort.
 
-| Voorkeur | Wat het doet |
-|---|---|
-| **Sync-foutmeldingen** | E-mail en in-app melding wanneer een bankverbinding niet kan synchroniseren. |
-| **Grote-transactiemeldingen** | Push- en in-app melding wanneer een transactie een door jou ingestelde drempel overschrijdt (bijvoorbeeld €5.000). |
-| **Wekelijkse samenvatting** | Een e-mail op maandagochtend met een overzicht van de geimporteerde transacties, niet-gekoppelde items en de top-3 van automatisch gecategoriseerde leveranciers. |
-| **Bonverzoeken** | Een dagelijkse automatische sweep die je leveranciers mailt met het verzoek om ontbrekende bonnen voor niet-gekoppelde uitgaande transacties. |
+Het trefwoord wordt vergeleken met de omschrijving en de naam van de tegenpartij; hoofdletters maken niet uit. Transacties die matchen krijgen de categorie van de regel en worden concept-uitgaven. Regels gelden voor alle gekoppelde rekeningen, elke regel toont hoe vaak hij heeft gematcht, en je kunt een regel altijd bewerken of verwijderen.
 
-Alle notificaties zijn best-effort: ze blokkeren of onderbreken nooit een sync. Je kunt elke notificatie afzonderlijk aan- of uitzetten.
+Een regel matcht op één trefwoord. Voorwaarden op bedrag worden niet ondersteund, en regels maak je op de instellingenpagina, niet vanuit de transactiefeed.
 
-### Drempel voor grote transacties
+## De transactiefeed
 
-Stel een eurobedrag in bij de bankrekeninginstellingen. Elke inkomende of uitgaande transactie waarvan het absolute bedrag die drempel haalt of overschrijdt, genereert een pushmelding en een in-app alert. Handig om grote betalingen of onverwachte afschrijvingen snel te spotten.
+Open **Transacties** vanuit de paginakop van Uitgaven om alle geïmporteerde transacties te zien, met bovenaan een paar snelle cijfers (transacties deze maand, het aandeel dat automatisch is geboekt en hoeveel er nog aandacht nodig hebben). Drie tabbladen verdelen de feed:
 
-### Wekelijkse samenvatting
+- **Te koppelen**: transacties die nog nergens aan gekoppeld zijn.
+- **Gekoppeld**: transacties gekoppeld aan een factuur of uitgave, met een link naar dat record.
+- **Genegeerd**: transacties die je hebt genegeerd.
 
-Elke maandag om 08:00 (lokale tijd van je workspace) stuurt MyCompanyDesk je een korte e-mail met de bankfeed-activiteit van de afgelopen zeven dagen:
+Per openstaande transactie:
 
-- Aantal nieuwe geimporteerde transacties.
-- Aantal niet-gekoppelde uitgaande transacties die nog wachten op een bon.
-- Top drie van automatisch gecategoriseerde leveranciers.
+- **Koppelen** opent een venster waarin je de transactie koppelt aan een bestaande factuur of uitgave. Geld eruit stelt uitgaven voor en geld erin facturen, en je kunt wisselen en zoeken.
+- **Negeren** verplaatst de transactie naar het tabblad Genegeerd.
 
-Als er die week geen activiteit was, wordt de samenvatting overgeslagen. De samenvatting volgt je workspace-notificatie-instelling en wordt alleen verzonden als `notify_weekly_summary` aan staat.
+Koppelen is altijd een handmatige stap: MyCompanyDesk koppelt transacties niet automatisch aan klanten, facturen of bestaande uitgaven.
 
-### Bonverzoeken naar leveranciers
+## Meldingen
 
-Als deze optie aan staat, voert MyCompanyDesk dagelijks om 06:00 lokale tijd een sweep uit. Voor elke workspace met `ask_receipt_email` ingeschakeld zoekt het systeem naar niet-gekoppelde uitgaande transacties van de afgelopen 30 dagen waarvan de tegenpartij overeenkomt met een klant die een e-mailadres heeft. Het stuurt elke leverancier een gecombineerde e-mail met alle transacties waarvan een bon ontbreekt, en tagt die transacties zodat dezelfde leverancier niet opnieuw wordt gevraagd.
+Onderaan de instellingenpagina kun je drie bankmeldingen los van elkaar aanzetten:
 
-## Leveranciersregels beheren
-
-Met leveranciersregels leer je MyCompanyDesk hoe terugkerende transacties gecategoriseerd moeten worden:
-
-- Maak een regel vanaf elke transactie door in de bankfeed op **Regel aanmaken** te klikken.
-- Regels matchen op naam van de tegenpartij, omschrijving of bedragspatronen.
-- Gekoppelde transacties worden automatisch aan de juiste klant, factuur of uitgave verbonden.
-- De wekelijkse samenvatting toont je best presterende regels.
-
-Regels die je aanmaakt zijn workspace-gebonden en gelden voor alle gekoppelde bankrekeningen.
+- **E-mail bij sync-fout**: een e-mail en in-app melding wanneer een bankkoppeling niet kan synchroniseren, met een link om het op te lossen.
+- **Wekelijks overzicht**: een e-mail op maandagochtend met de bankactiviteit van de afgelopen week. Deze wordt overgeslagen als er niets te melden was.
+- **Push bij grote transactie**: een melding wanneer een transactie een door jou ingesteld bedrag bereikt of overschrijdt.
 
 ## Problemen oplossen
 
-**Mijn bankverbinding geeft een foutmelding.** Open de pagina met bankrekeninginstellingen. Als je bank opnieuw autorisatie vereist, zie je een prompt om opnieuw te verbinden. Sync-foutmeldingen bevatten ook een directe link.
+**Mijn bankkoppeling toont een fout.** Open de uitgaven-instellingen via het tandwiel op de Uitgaven-pagina. Als je bank een nieuwe autorisatie nodig heeft zie je dat op de rij van de koppeling; de sync-foutmelding linkt er ook naartoe.
 
-**Een transactie is niet gekoppeld.** Bekijk de transactie in de bankfeed onder het filter 'niet-gekoppeld'. Je kunt hem handmatig koppelen, er een nieuwe klant of uitgave van maken, of een leveranciersregel aanmaken zodat hij voortaan automatisch wordt gekoppeld.
+**Een transactie is geen uitgave geworden.** Controleer of auto-import aanstaat, of het bedrag boven je minimumbedrag ligt en of het een uitgaande betaling is. Je kunt de transactie altijd handmatig koppelen op de Transacties-pagina.
 
-**Ik krijg geen meldingen.** Controleer de notificatie-schakelaars op de bankrekeningeninstellingenpagina. Voor pushmeldingen moet je checken of push aan staat in je accountprofiel. Voor de wekelijkse samenvatting moet `notify_weekly_summary` aan staan en er moet daadwerkelijk bankactiviteit zijn geweest die week.
+**Ik krijg geen meldingen.** Controleer de meldingsschakelaars onderaan de uitgaven-instellingen.

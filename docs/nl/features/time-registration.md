@@ -1,39 +1,38 @@
 ---
-title: Tijdregistratie
+title: Uren & agenda
 ---
 
-# Tijdregistratie
+# Uren & agenda
 
-Registreer werkuren op projecten en klanten om declarabele tijd bij te houden en facturen te genereren vanuit tijdregistraties.
+Schrijf je uren, plan je dagen en zet declarabele tijd om in facturen. De pagina **Uren & agenda** in de zijbalk combineert urenregistratie met een agenda: je ziet het plan voor vandaag, geplande registraties naast gelogde uren en suggesties uit je gekoppelde agenda's, alles op een plek.
 
-## Overzicht
+## De pagina in het kort
 
-Tijdregistratie helpt je om:
+Wissel tussen vier weergaven met de kiezer bovenaan (veeg tussen periodes op mobiel):
 
-- Bij te houden hoeveel uur je aan elk project besteedt
-- Declarabele vs. niet-declarabele tijd te berekenen
-- Facturen direct te genereren vanuit gelogde uren
-- Je effectieve uurtarief te begrijpen
+- **Dag**: het plan en de gelogde uren van vandaag. Afhankelijk van je instellingen zie je een tijdlijn of een compacte lijst, met geplande registraties apart van gelogde. Afspraken uit gekoppelde agenda's verschijnen naast je registraties en zijn met een tik om te zetten naar een urenregistratie, en je krijgt suggesties op basis van je recente activiteit.
+- **Week**: op desktop een planner van zeven dagen waarin gevulde blokken gelogde uren zijn en gearceerde blokken gepland; klik op een leeg vak om een registratie toe te voegen. Op mobiel een samenvatting per dag waar je op kunt tikken.
+- **Maand**: totalen per dag; selecteer een dag om ernaartoe te springen.
+- **Lijst**: een doorzoekbare tabel van alle registraties met filters voor factuurstatus, klant, project en reizen, plus totalen voor de huidige selectie.
 
-## Tijd registreren
+Geplande registraties dragen het label **Gepland**; druk op **Bevestigen** zodra het werk echt is gedaan om ze om te zetten naar gelogde uren.
 
-### Een tijdregistratie aanmaken
+## Uren schrijven
 
-1. Ga naar **Tijdregistratie**
-2. Klik op **Registratie toevoegen** (of de + knop op mobiel)
-3. Vul in:
-   - **Datum** — Wanneer het werk is gedaan
-   - **Uren** — Duur van het werk
-   - **Project** — Voor welk project de tijd is
-   - **Klant** — De klant (automatisch ingevuld vanuit project)
-   - **Omschrijving** — Waar je aan hebt gewerkt
-   - **Declarabel** — Of deze tijd gefactureerd moet worden
-   - **Uurtarief** — Je tarief voor dit werk
-4. Klik op **Opslaan**
+### Timer
 
-### Standaard omschrijving
+Op mobiel bevat de dagweergave een timer: start hem als je begint met werken en stop hem om de verstreken tijd als registratie te loggen. Via de werkmodus-instelling maak je de timer je standaardmanier van werken (zie Instellingen hieronder).
 
-Wanneer je een tijdregistratie toevoegt, wordt het omschrijvingsveld automatisch vooraf ingevuld vanuit de **Standaard regelomschrijving** van je werkruimte. Het systeem controleert in volgorde:
+### Handmatige registraties
+
+1. Klik op **Uren toevoegen** (sneltoets A, of de + knop op mobiel)
+2. De snelle invoerlade opent: kies de klant en eventueel een project, vul je uren in en pas waar nodig de omschrijving en het tarief aan
+3. Voer tijd in als totaal aantal uren, of schakel naar een begin- en eindtijd
+4. Sla de registratie op
+
+### Standaard regelomschrijving
+
+Wanneer je een urenregistratie toevoegt, wordt het omschrijvingsveld automatisch vooraf ingevuld vanuit je standaard regelomschrijvingen. Het systeem controleert in volgorde:
 
 1. De standaard regelomschrijving van het project
 2. De standaard regelomschrijving van de klant
@@ -43,46 +42,60 @@ Je eigen invoer wordt nooit overschreven. Zodra je een eigen omschrijving typt, 
 
 ### Alleen-uren-modus
 
-Voor vereenvoudigde tijdregistratie schakel je de alleen-uren-modus in via de instellingen. Dit verbergt het uurtarief en declarabele velden en toont alleen uren en omschrijving.
+Log je liever alleen een totaal per dag? Zet dan **Alleen uren modus** aan in de agenda-instellingen. Dit verbergt de tijdlijn en de invoer voor begin- en eindtijd, zodat je alleen het totaal aantal uren per dag invult. Het tarief en het declarabel-veld blijven beschikbaar.
 
-## Tijdregistraties factureren
+## Je uren factureren
 
-Zet gelogde uren om in facturen:
+### Een factuur maken vanaf de pagina Uren & agenda
 
-1. Filter tijdregistraties op klant of project
-2. Selecteer de registraties die je wilt factureren
-3. Klik op **Factuur aanmaken**
-4. Een nieuwe factuur wordt vooraf ingevuld met regelitems van de geselecteerde tijdregistraties
-5. Controleer en verstuur
+Heb je niet-gefactureerde registraties, klik dan op **Factuur aanmaken**. Er opent een lade waarin je een klant kiest; je ziet alle niet-gefactureerde registraties van die klant met het totaal. Bevestig, en er wordt een conceptfactuur aangemaakt met een regel per registratie. Declarabele reistijd en reiskosten die aan die registraties zijn gekoppeld, komen er als aparte regels bij.
 
-### Auto-factuurinstellingen
+### Losse registraties kiezen op het factuurformulier
 
-Configureer automatische facturatie voor tijdregistraties:
+Wil je maar een deel van de registraties factureren? Maak of bewerk dan direct een factuur: het factuurformulier heeft een urensectie die de niet-gefactureerde registraties van de gekozen klant toont, zodat je precies kiest welke je meeneemt.
 
-1. Ga naar de instellingen voor tijdregistratie
-2. Stel auto-factuurregels in
-3. Tijdregistraties die aan de regels voldoen, worden automatisch aan facturen toegevoegd
+### Regelomschrijvingen op de factuur
 
-## Filteren
+Factuurregels worden automatisch omschreven: eerst de omschrijving van de registratie zelf, anders de projectnaam, anders de periode. Een omschrijvingssjabloon per klant (ingesteld op de klantpagina) gaat boven dit formaat.
 
-Filter je tijdregistraties op:
+### Automatisch uren factureren
 
-- **Klant** — Bekijk tijd per klant
-- **Project** — Bekijk tijd per project
-- **Datumbereik** — Specifieke periode
-- **Declarabelstatus** — Declarabel vs. niet-declarabel
-- **Factuurstatus** — Gefactureerd vs. ongefactureerd
+Automatisch factureren stel je per klant in. Zet op de pagina van de klant **Automatisch factureren** aan om maandelijks automatisch een factuur aan te maken voor de geregistreerde uren van die klant, desgewenst ook automatisch verzonden.
 
 ## Bulkacties
 
-- **Markeer als declarabel** — Stel meerdere registraties in als declarabel
-- **Factuur aanmaken** — Factureer meerdere registraties tegelijk
-- **Archiveren** — Verplaats registraties naar archief
-- **Verwijderen** — Verwijder registraties
+Selecteer meerdere registraties in de lijstweergave (lang indrukken op mobiel) om ze in een keer te bewerken:
+
+- **Markeer als factureerbaar** of **Markeer als niet factureerbaar**
+- **Archiveren**
+- Verwijderen
+
+## Externe agenda koppelen
+
+Koppel Google Agenda of Outlook Agenda om je agenda en je uren samen te brengen. Open de agenda-instellingen via het tandwiel en volg de agendalink, of ga direct naar de pagina met gekoppelde agenda's. Daar kun je:
+
+- **Google Agenda** of **Outlook Agenda** koppelen
+- Synchronisatie per koppeling aanzetten met **Synchronisatie inschakelen**
+- De **Synchronisatierichting** kiezen: **Naar agenda** (je gelogde uren verschijnen in je agenda), **Uit agenda** (je afspraken verschijnen op de pagina Uren & agenda, klaar om te loggen) of **Beide**
+- Een alleen-lezen feed **Agenda abonnement (iCal)** aanzetten om je gelogde uren te volgen vanuit elke agenda-app
+
+Afspraken uit een gekoppelde agenda verschijnen in de dag- en weekweergave; tik erop om er een urenregistratie van te maken.
+
+## Instellingen
+
+Het tandwiel op de pagina Uren & agenda opent de agenda-instellingen. Hier stel je in:
+
+- **Alleen uren modus** en ander invoergedrag
+- De werkmodus: **Uren**, **Diensten** of **Timer**
+- De werktijden die op de tijdlijn zichtbaar zijn
+- Welke stappen de snelle invoer toont (project, notities, reizen)
+- Het standaard uurtarief (teambeheerders)
+- Reisstandaarden zoals adressen, voertuig en kilometertarief
+- Een link om een externe agenda te koppelen
 
 ## Tips
 
-- Registreer dagelijks je tijd voor nauwkeurige records
-- Gebruik het projectfilter om totalen per project te zien
-- Controleer regelmatig ongefactureerde tijd om declarabele uren niet te missen
-- Het projectgerichte dashboardprofiel benadrukt tijdregistratiestatistieken
+- Schrijf dagelijks je uren voor nauwkeurige administratie; met de suggesties log je terugkerend werk met een tik opnieuw
+- Plan je week vooruit met geplande registraties en bevestig ze gaandeweg
+- Controleer regelmatig je niet-gefactureerde uren, zodat er geen declarabele uren blijven liggen
+- Koppel je agenda een keer en je afspraken worden automatisch logbare registraties

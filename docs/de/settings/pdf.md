@@ -1,85 +1,58 @@
 ---
-title: PDF-Anpassung
+title: PDF-Design
 ---
 
-# PDF-Anpassung
+# PDF-Design
 
-Passen Sie das Erscheinungsbild Ihrer Rechnungs-, Angebots- und Gutschrift-PDFs an Ihre Marke an.
+Bringen Sie Ihre Rechnungs-, Angebots- und Erinnerungs-PDFs in Einklang mit Ihrer Marke. Zwei Einstellungsseiten bestimmen das Erscheinungsbild, und ein Stil gilt für alle Ihre Dokumente.
 
-## PDF-Editor
+- **Logo und Farbe:** Ihr Logo und Ihre Markenfarbe, die Grundlage von allem.
+- **Rechnungsdesign:** das Designstudio, in dem Sie das Dokument selbst gestalten, mit Live-Vorschau.
 
-Der visuelle PDF-Editor ermöglicht es Ihnen, Ihr Dokumentlayout mit einer Live-Vorschau anzupassen.
+Beide finden Sie in den **Einstellungen**. Die vollständige Übersicht steht in der [Einstellungsübersicht](/de/settings/).
 
-### Editor aufrufen
+## Logo und Farbe
 
-Gehen Sie zu **Unternehmen > PDF-Editor** oder rufen Sie ihn über Unternehmen > Branding auf.
+Gehen Sie zu den **Einstellungen** und öffnen Sie **Logo und Farbe**. Diese Seite bestimmt Ihre Markenidentität:
 
-### Anpassungsoptionen
+- **Anzeigename:** der Name, den Kunden sehen, falls er von Ihrem eingetragenen Firmennamen abweicht.
+- **Markenfarbe:** Wählen Sie eine beliebige Farbe oder starten Sie mit einer der Voreinstellungen. Diese Farbe erscheint auf Ihren Rechnungen, Angeboten, E-Mails und Ihrer Website. Eine Warnung erscheint, wenn eine Farbe zu hell ist, um lesbar zu bleiben.
+- **Logo:** Laden Sie ein PNG, JPG oder SVG hoch. Für Foto-Logos gibt es eine Hintergrundentfernung mit einem Klick. Noch kein Logo? Erzeugen Sie direkt auf dieser Seite eines aus Ihren Initialen und einer Hintergrundfarbe.
+- **Live-Vorschau:** Ein Beispielkopf zeigt Logo und Farbe zusammen, damit Sie das Ergebnis sehen, bevor ein Kunde es sieht.
 
-#### Layout
+Änderungen werden automatisch gespeichert.
 
-- **Logo-Position und -Größe** — Platzieren Sie Ihr Logo dort, wo es am besten aussieht
-- **Firmeninformationen-Platzierung** — Positionieren Sie Ihre Geschäftsdaten
-- **Kundeninformationen-Platzierung** — Wo Kundendetails erscheinen
-- **Positionstabelle** — Spaltenbreiten und Ausrichtung
+## Rechnungsdesign
 
-#### Inhalt
+Gehen Sie zu den **Einstellungen** und öffnen Sie **Rechnungsdesign**. Das ist das Designstudio für Ihre Dokumente: alle Regler links, eine große Live-A4-Vorschau rechts, die bei jedem Klick mitzieht.
 
-Wählen Sie, welche Felder angezeigt oder ausgeblendet werden:
+Der schnellste Weg ist die Schaltfläche **Aus meinem Corporate Design generieren**: Sie baut ein komplettes Design rund um die Markenfarbe, die Sie unter Logo und Farbe gewählt haben. Nicht zufrieden? **Anderen Look ausprobieren** wechselt zu einer anderen Variante. Alles bleibt danach anpassbar:
 
-- USt.-Nummer des Unternehmens
-- Handelsregisternummer
-- IBAN / Bankdaten
-- Zahlungsbedingungen
-- Anmerkungsbereich
-- Fußzeilentext
+- **Ausgangspunkt:** sechs Stilvorlagen: Klassisch, Modern, Botanisch, Atelier, Editorial und Blanko. Sobald Sie danach etwas ändern, wird das Design zu Ihrer eigenen Variante.
+- **Akzentfarbe:** Ihre Markenfarbe steht an erster Stelle. Haben Sie ein Logo, erscheinen daraus entnommene Farben als fertige Farbfelder. Dazu kommen eine Auswahl kuratierter Töne und ein eigener Farbwähler für jede Farbe.
+- **Papierton:** Weiß oder einer der sanften gebrochen-weißen Töne (Creme, Greige, Sand, Nebel).
+- **Schriftart:** eine Überschriftenschrift (Marcellus, Playfair Display, Fraunces oder Cormorant) und eine Textschrift (Inter, Lato oder EB Garamond).
+- **Thema / Layout:** der Gesamtaufbau des Dokuments plus die Dichte (Kompakt, Normal, Luftig). Das Layout Botanisch hat optionale dekorative Elemente, die sich abschalten lassen.
+- **Fußzeile:** die Zeile am Ende jedes Dokuments, zum Beispiel Ihre KVK-Nummer oder ein Dankeschön.
 
-#### Gestaltung
+Änderungen werden automatisch gespeichert und erscheinen sofort in der Vorschau. Möchten Sie zurück zum Standard? **Thema deaktivieren** setzt Ihre Dokumente auf das Standarddesign zurück.
 
-- **Schriftart** — Aus verfügbaren Schriftarten wählen
-- **Schriftgröße** — Textgröße anpassen
-- **Akzentfarbe** — Ihre Markenfarbe für Überschriften und Akzente
-- **Zeilenabstand** — Dokumentdichte anpassen
+## Ein Stil für alle Dokumente
 
-### Vorschau
+Das Design gilt für jedes PDF, das MyCompanyDesk für Sie erstellt: Rechnungen, Angebote und Zahlungserinnerungen. Sie gestalten es einmal; jeder Dokumenttyp bleibt konsistent.
 
-Der Editor zeigt eine Echtzeit-Vorschau mit Beispieldaten. Sie können auch ein **Muster-PDF** generieren, um genau zu sehen, wie eine gedruckte Rechnung aussehen wird.
+## Sprache
 
-## Dokumenttypen
+Dokument-PDFs sind auf Niederländisch, Englisch, Deutsch und Französisch verfügbar. Dokumente aus einem niederländischen Arbeitsbereich werden standardmäßig auf Niederländisch erstellt, damit die Beschriftungen auf Ihren Rechnungen zu Ihren Kunden passen.
 
-PDF-Einstellungen gelten für alle generierten Dokumente:
+## Logo-Tipps
 
-- **Rechnungen** — Standard-Abrechnungsdokumente
-- **Angebote** — Angebotsdokumente
-- **Gutschriften** — Erstattungs-/Korrekturdokumente
-- **Erinnerungen** — Zahlungserinnerungsdokumente
+Für das beste Ergebnis auf PDFs:
 
-## Sprachunterstützung
-
-PDFs werden in der Sprache der Rechnung generiert. Wenn Sie eine Rechnung auf Deutsch versenden, erscheinen die PDF-Bezeichnungen (wie „Rechnung", „Fälligkeitsdatum", „Gesamt") auf Deutsch.
-
-Unterstützte PDF-Sprachen: Englisch, Niederländisch, Deutsch, Französisch.
-
-Die Standard-PDF-Sprache für neue NL-Plattform-Workspaces ist Niederländisch (`nl`). Dies wird beim Abschluss des Onboardings über den Assistenten (aus der Landeseinstellung) und über den Datenbank-Standard angewendet, wenn keine explizite Spracheinstellung gespeichert wurde. Außerhalb der Niederlande registrierte Workspaces erhalten standardmäßig Englisch.## Logo-Anforderungen
-
-Für beste Ergebnisse:
-
-- **Format:** PNG mit transparentem Hintergrund (empfohlen), JPG oder SVG
-- **Auflösung:** Mindestens 300px Breite
-- **Seitenverhältnis:** Querformat- oder quadratische Logos funktionieren am besten
-- **Dateigröße:** Unter 2MB
+- **Format:** PNG mit transparentem Hintergrund funktioniert am besten; JPG und SVG gehen ebenfalls
+- **Auflösung:** mindestens 300 Pixel breit
+- **Form:** liegende oder quadratische Logos passen am besten in die Layouts
 
 ::: info
-SVG-Logos werden für E-Mail-Kompatibilität automatisch in PNG konvertiert.
-:::
-
-## Tipps
-
-- Generieren Sie nach Änderungen ein Muster-PDF, um das Layout zu überprüfen
-- Verwenden Sie die Akzentfarbe Ihrer Marke für ein professionelles Erscheinungsbild
-- Halten Sie das Layout übersichtlich — überladen Sie das PDF nicht mit zu vielen Informationen
-- Testen Sie mit einer echten Rechnung (an sich selbst), bevor Sie an Kunden versenden
-
-::: info
-Erweiterte PDF-Anpassung erfordert den **Pro**-Tarif oder höher.
+Rechnungsdesign und Stilvorlagen sind ab dem **Starter**-Tarif enthalten.
 :::

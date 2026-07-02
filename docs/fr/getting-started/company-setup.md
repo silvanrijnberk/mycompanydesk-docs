@@ -4,101 +4,70 @@ title: Configurer votre entreprise
 
 # Configurer votre entreprise
 
-Avant de pouvoir envoyer des factures, vous devez configurer les informations de votre entreprise. Ces donnees apparaissent sur vos factures, devis et autres documents.
+Lors de votre première connexion, MyCompanyDesk vous guide à travers un court **assistant de configuration** sur `/setup`. Il vous demande quel travail vous faites et ce que vous attendez de l'application, retrouve votre entreprise dans le registre du commerce néerlandais (KVK) et utilise vos réponses pour remplir vos informations d'entreprise, votre identité visuelle et vos réglages par défaut. Rien n'est figé : chaque étape peut être passée et tout peut être modifié plus tard dans les paramètres.
 
-## Informations de l'entreprise
+## Où trouver l'assistant
 
-Naviguez vers **Entreprise** dans la barre laterale pour acceder aux parametres de votre entreprise.
+- **Première connexion :** l'assistant s'ouvre automatiquement.
+- **Plus tard :** tant que la configuration n'est pas terminée, une bannière en haut de votre tableau de bord propose un bouton pour y revenir. Vous pouvez masquer la bannière, ou aller directement sur `/setup` à tout moment.
+- **Passer :** chaque étape comporte un bouton pour passer pour l'instant. Vos réponses sont conservées, vous reprenez plus tard là où vous étiez.
 
-### Champs obligatoires
+## Étape 1 : Quel travail vous faites
 
-Ces champs sont necessaires pour envoyer des factures :
+Choisissez votre métier dans une grille de professions courantes : menuisier, peintre, plombier, électricien, photographe, consultant, bailleur et plus encore. Le vôtre n'y figure pas ? Choisissez l'option autre et décrivez-le avec vos propres mots.
 
-- **Nom de l'entreprise** -- Le nom enregistre de votre entreprise
-- **Adresse** -- Rue, code postal et ville (l'autocompletion d'adresse est disponible)
-- **E-mail** -- L'adresse e-mail de contact de votre entreprise
+Votre métier pré-coche un ensemble cohérent d'objectifs à l'étape suivante, si bien que la plupart des gens n'ont qu'à confirmer.
 
-### Champs recommandes
+## Étape 2 : Vos objectifs
 
-Ceux-ci sont fortement recommandes pour des factures professionnelles et la conformite legale :
+Une liste de ce que vous voulez faire avec MyCompanyDesk : envoyer des factures, créer des devis, suivre les dépenses, saisir les heures, gérer des projets, gérer des locations, la TVA et les récapitulatifs, et être trouvé en ligne. Les objectifs cochés activent les parties correspondantes de l'application ; le reste ne vous encombre pas.
 
-- **Numero de TVA** -- Votre numero d'identification TVA (par ex., NL123456789B01)
-- **Chambre de Commerce / Numero d'immatriculation** -- Votre identifiant d'immatriculation commerciale
-- **IBAN** -- Votre numero de compte bancaire ou les clients doivent effectuer les paiements
-- **Numero de telephone** -- Telephone professionnel de contact
+Un choix façonne la suite de l'assistant : cochez l'objectif d'être trouvé en ligne et l'assistant ajoute deux étapes supplémentaires pour votre adresse web et votre marque. Sans lui, vous passez directement à la dernière étape.
 
-::: tip
-Dans de nombreux pays, le numero de TVA et le numero d'immatriculation sont legalement requis sur les factures. Assurez-vous qu'ils sont remplis avant d'envoyer votre premiere facture.
-:::
+## Étape 3 : Les informations de votre entreprise (KVK)
 
-## Image de marque
+Tapez le nom de votre entreprise et choisissez-la parmi les suggestions en direct issues du registre du commerce. MyCompanyDesk récupère alors votre profil de base KVK et préremplit vos informations : dénomination légale, noms commerciaux, forme juridique, adresse et activité. Seuls les champs vides sont remplis ; ce que vous avez déjà saisi reste intact.
 
-### Logo de l'entreprise
+Aucun résultat, ou pas d'immatriculation KVK ?
 
-Telechargez le logo de votre entreprise pour qu'il apparaisse sur :
+- **Remplir manuellement :** saisissez vous-même le nom de l'entreprise, le numéro KVK, l'adresse, le code postal et la ville.
+- **Pas d'immatriculation KVK :** passez complètement la recherche et complétez vos informations plus tard dans les paramètres.
 
-- Les factures et devis (PDF)
-- Les communications par e-mail
-- Votre page publique d'entreprise
-- Le portail de paiement client
+Cette étape demande aussi une ligne décrivant ce que fait votre entreprise. Quand vous continuez, MyCompanyDesk l'utilise avec vos informations d'entreprise pour proposer une couleur de marque, un slogan et du contenu de départ.
 
-Formats acceptes : PNG, JPG, SVG. Pour de meilleurs resultats, utilisez une image haute resolution avec un fond transparent.
+## Étape 4 : Votre adresse web (objectif site web uniquement)
 
-### Palette de couleurs
+Choisissez comment les clients vous trouvent en ligne :
 
-Personnalisez la couleur d'accentuation utilisee sur vos factures et documents pour correspondre a l'identite de votre marque.
+- **Sous-domaine gratuit :** une adresse gratuite se terminant par `.mycompanydesk.site`, suggérée à partir du nom de votre entreprise et vérifiée en direct pendant que vous tapez.
+- **J'ai déjà un domaine :** connectez un domaine enregistré ailleurs.
+- **Enregistrer un domaine :** cherchez un nouveau domaine, vérifiez le prix et achetez-le directement dans l'assistant. Les Founding Members en reçoivent un inclus.
 
-## Parametres financiers par defaut
+Vous pouvez passer cette étape et configurer un domaine plus tard.
 
-Configurez les valeurs par defaut qui s'appliquent aux nouvelles factures et aux nouveaux devis :
+## Étape 5 : Votre marque (objectif site web uniquement)
 
-- **Devise** -- Votre devise par defaut (EUR par defaut)
-- **Conditions de paiement** -- Nombre de jours par defaut avant l'echeance d'une facture (par ex., 14 ou 30 jours)
-- **Numerotation des factures** -- Personnalisez le format de vos numeros de facture
-  - Prefixe (par ex., `INV-` ou `2024-`)
-  - Numero de depart
-  - Incrementation automatique
+Importez votre logo si vous en avez un ; MyCompanyDesk en tire automatiquement votre couleur de marque. Pas de logo ? Pas de problème : un logo sobre est généré à partir de vos initiales. L'étape affiche aussi un aperçu de la couleur de marque et du slogan proposés, pour que vous voyiez à quoi ressembleront vos factures et votre site.
 
-### Exemples de numerotation de factures
+## Étape 6 : Founding Members et votre essai
 
-| Format | Exemple |
+La dernière étape confirme que votre essai Pro de 60 jours est actif, sans carte bancaire. Tant qu'il reste des places, vous pouvez aussi y réserver une place de Founding Member, avec une période gratuite plus longue et une remise durable. Terminez la configuration et l'assistant applique tout, affiche un récapitulatif de ce qui a été mis en place et vous amène à votre tableau de bord.
+
+## Modifier plus tard
+
+Tout ce que l'assistant règle se modifie dans les **paramètres** :
+
+| Je veux modifier... | Ouvrir |
 |---|---|
-| Simple | `001`, `002`, `003` |
-| Avec prefixe | `INV-001`, `INV-002` |
-| Base sur l'annee | `2024-001`, `2024-002` |
+| Nom, adresse, numéro KVK ou de TVA | **Données de l'entreprise** |
+| Logo et couleur de marque | **Logo et couleur** |
+| Comment les clients vous paient : IBAN, iDEAL, PayPal | **Paiement** |
+| Délai de paiement, relances, validité des devis | **Factures et devis** |
+| L'apparence de vos PDF de factures | **Mise en page des factures** |
+| Votre site web et domaine | **Votre site et domaine** |
 
-Les options de reinitialisation de la numerotation et le format peuvent etre ajustes a tout moment. Les numeros de factures existants ne sont jamais modifies.
+Consultez l'[aperçu des paramètres](/fr/settings/) pour la carte complète. Vous pouvez aussi relancer l'assistant depuis `/setup` quand vous voulez ; il complète les champs vides sans écraser ce que vous avez réglé vous-même.
 
-## Modele PDF
+## Prochaines étapes
 
-MyCompanyDesk genere automatiquement des factures PDF professionnelles. Vous pouvez personnaliser la mise en page a l'aide de l'**editeur PDF** :
-
-- Ajuster la position et la visibilite des champs
-- Choisir les informations a afficher
-- Personnaliser les polices et les tailles
-- Previsualiser les modifications en temps reel avec une facture exemple
-
-Accedez a l'editeur PDF depuis **Entreprise > Editeur PDF** ou depuis la section image de marque.
-
-::: info
-La personnalisation avancee du PDF necessite le plan **Pro** ou superieur.
-:::
-
-## Activation des fonctionnalites
-
-MyCompanyDesk dispose de modules optionnels que vous pouvez activer ou desactiver selon vos besoins professionnels :
-
-- **Objets / Actifs** -- Pour la gestion de biens locatifs et d'actifs
-- **Contrats** -- Pour les contrats de services ou de location recurrents
-- **Projets** -- Pour le travail base sur des projets et le suivi du temps
-- **Devis** -- Pour l'envoi de devis
-- **Autoliquidation** -- Pour les transactions B2B intra-UE
-- **Suggestions IA** -- Pour la categorisation et les recommandations intelligentes
-- **Numerisation de recus** -- Pour la saisie de depenses basee sur l'OCR
-- **Verification de texte** -- Pour la grammaire et l'orthographe de vos documents
-
-La desactivation d'un module le masque dans la navigation, gardant votre espace de travail epure et concentre.
-
-## Prochaines etapes
-
-Votre entreprise est configuree. Il est temps de [creer votre premiere facture](/fr/getting-started/first-invoice).
+Votre entreprise est configurée. Il est temps de [créer votre première facture](/fr/getting-started/first-invoice).

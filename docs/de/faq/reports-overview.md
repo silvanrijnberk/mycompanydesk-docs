@@ -24,7 +24,7 @@ chatbot:
 
 So sehen Sie Ihre Berichte:
 1. Gehen Sie zu Berichte
-2. Wechseln Sie zwischen den fünf Ansichten: Übersicht, GuV, Cashflow, Kunden und Prognose
+2. Wechseln Sie zwischen den sechs Ansichten: Übersicht, GuV, Cashflow, Kunden, Prognose und Einkommensteuer
 3. Nutzen Sie die Filter, um die Zeitraumeinteilung zu wählen (Jahr, Quartal, Monat, Woche oder Tag), das Jahr auszuwählen, offene Rechnungen einzubeziehen oder mit einem anderen Jahr zu vergleichen
 
 Berichte haben keine Status- oder Kategoriefilter; die Zeitraum- und Vergleichsfilter gelten für alle Ansichten.

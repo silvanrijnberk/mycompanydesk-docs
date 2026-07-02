@@ -1,87 +1,58 @@
 ---
-title: PDF-aanpassing
+title: PDF-ontwerp
 ---
 
-# PDF-aanpassing
+# PDF-ontwerp
 
-Pas het uiterlijk van je factuur-, offerte- en creditnota-PDF's aan zodat ze passen bij je huisstijl.
+Laat je factuur-, offerte- en herinnerings-PDF's aansluiten op je huisstijl. Twee instellingenpagina's bepalen het uiterlijk, en één stijl geldt voor al je documenten.
 
-## PDF-editor
+- **Logo en kleur**: je logo en merkkleur, de basis van alles.
+- **Factuurontwerp**: de ontwerpstudio waar je het document zelf vormgeeft, met een livevoorbeeld.
 
-De visuele PDF-editor stelt je in staat om je documentlay-out aan te passen met een live voorbeeld.
+Beide vind je onder **Instellingen**. Zie het [instellingenoverzicht](/nl/settings/) voor de volledige kaart.
 
-### De editor openen
+## Logo en kleur
 
-Ga naar **Bedrijf > PDF-editor** of open deze via Bedrijf > Huisstijl.
+Ga naar **Instellingen** en open **Logo en kleur**. Deze pagina bepaalt je merkidentiteit:
 
-### Aanpassingsopties
+- **Weergavenaam:** de naam die klanten zien, als die afwijkt van je geregistreerde bedrijfsnaam.
+- **Merkkleur:** kies elke kleur, of begin met een van de voorinstellingen. Deze kleur wordt gebruikt op je facturen, offertes, e-mails en website. Er verschijnt een waarschuwing als een kleur te licht is om leesbaar te blijven.
+- **Logo:** upload een PNG, JPG of SVG. Voor fotologo's is er een achtergrondverwijderaar met één klik. Nog geen logo? Genereer er direct op deze pagina een uit je initialen en een achtergrondkleur.
+- **Livevoorbeeld:** een voorbeeldkop toont je logo en kleur samen, zodat je het resultaat ziet voordat een klant het ziet.
 
-#### Lay-out
+Wijzigingen worden automatisch opgeslagen.
 
-- **Logopositie en -grootte** — Plaats je logo waar het het beste uitkomt
-- **Bedrijfsinfo-plaatsing** — Positioneer je bedrijfsgegevens
-- **Klantinfo-plaatsing** — Waar klantgegevens verschijnen
-- **Regelitemtabel** — Kolombreedtes en uitlijning
+## Factuurontwerp
 
-#### Inhoud
+Ga naar **Instellingen** en open **Factuurontwerp**. Dit is de ontwerpstudio voor je documenten: alle knoppen links, een live A4-voorbeeld rechts dat meebeweegt terwijl je klikt.
 
-Kies welke velden je wilt tonen of verbergen:
+De snelste route is de knop **Genereer uit mijn huisstijl**: die bouwt een compleet ontwerp rond de merkkleur die je onder Logo en kleur hebt gekozen. Niet tevreden? **Probeer andere** wisselt naar een andere look. Alles blijft daarna aanpasbaar:
 
-- BTW-nummer bedrijf
-- KVK-nummer
-- IBAN / bankgegevens
-- Betalingstermijn
-- Notitiesectie
-- Voettekst
+- **Startpunt**: zes stijlvoorinstellingen: Klassiek, Modern, Botanisch, Atelier, Editorial en Blanco. Zodra je daarna iets aanpast, wordt het ontwerp je eigen variant.
+- **Accentkleur**: je merkkleur staat vooraan. Heb je een logo, dan verschijnen kleuren uit je logo als kant-en-klare stalen. Er is ook een set uitgekozen tinten, plus een eigen kiezer voor elke kleur.
+- **Papiertint**: wit of een van de zachte gebroken-witte tinten (Crème, Greige, Zand, Mist).
+- **Lettertype**: een koplettertype (Marcellus, Playfair Display, Fraunces of Cormorant) en een tekstlettertype (Inter, Lato of EB Garamond).
+- **Thema / indeling**: de algemene opbouw van het document, plus de dichtheid (Compact, Normaal, Ruim). De indeling Botanisch heeft optioneel decoratief artwork dat je kunt uitzetten.
+- **Voettekst**: de regel onderaan elk document, bijvoorbeeld je KVK-nummer of een bedankje.
 
-#### Stijl
+Wijzigingen worden automatisch opgeslagen en zijn binnen een moment zichtbaar in het voorbeeld. Wil je terug naar de standaardlook? **Thema uitschakelen** zet je documenten terug op het standaardontwerp.
 
-- **Lettertype** — Kies uit beschikbare lettertypen
-- **Lettergrootte** — Pas tekstgrootte aan
-- **Accentkleur** — Je merkkleur voor kopteksten en accenten
-- **Regelafstand** — Pas de documentdichtheid aan
+## Eén stijl voor alle documenten
 
-### Voorbeeld
+Het ontwerp geldt voor elke PDF die MyCompanyDesk voor je maakt: facturen, offertes en betalingsherinneringen. Je stelt het één keer in; elk documenttype blijft consistent.
 
-De editor toont een realtime voorbeeld met voorbeeldgegevens. Je kunt ook een **voorbeeld-PDF** genereren om precies te zien hoe een geprinte factuur eruitziet.
+## Taal
 
-## Documenttypen
+Document-PDF's zijn beschikbaar in het Nederlands, Engels, Duits en Frans. Documenten uit een Nederlandse werkruimte worden standaard in het Nederlands gemaakt, zodat de labels op je facturen (zoals "Factuur" en "Vervaldatum") kloppen voor je klanten.
 
-PDF-instellingen gelden voor alle gegenereerde documenten:
+## Logotips
 
-- **Facturen** — Standaard factuurtype
-- **Offertes** — Offertedocumenten
-- **Creditnota's** — Terugbetalings-/correctiedocumenten
-- **Herinneringen** — Betalingsherinneringsdocumenten
+Voor het beste resultaat op PDF's:
 
-## Taalondersteuning
-
-PDF's worden gegenereerd in de taal van de factuur. Als je een factuur in het Duits verstuurt, verschijnen de PDF-labels (zoals "Rechnung", "Falligkeitsdatum", "Gesamt") in het Duits.
-
-Ondersteunde PDF-talen: Engels, Nederlands, Duits, Frans.
-
-De standaard PDF-taal voor nieuwe NL-platform werkruimtes is Nederlands (`nl`). Dit wordt toegepast wanneer de onboarding via de wizard wordt voltooid (van de landinstelling) en via de database-standaard wanneer er nog geen expliciete taalvoorkeur is opgeslagen. Werkruimtes die buiten Nederland zijn geregistreerd, krijgen standaard Engels.
-
-## Logo-vereisten
-
-Voor het beste resultaat:
-
-- **Formaat:** PNG met transparante achtergrond (aanbevolen), JPG of SVG
-- **Resolutie:** Minimaal 300px breed
-- **Beeldverhouding:** Landschap- of vierkante logo's werken het beste
-- **Bestandsgrootte:** Onder 2MB
+- **Formaat:** PNG met transparante achtergrond werkt het best; JPG en SVG kunnen ook
+- **Resolutie:** minstens 300 pixels breed
+- **Vorm:** liggende of vierkante logo's passen het best in de indelingen
 
 ::: info
-SVG-logo's worden automatisch omgezet naar PNG voor e-mailcompatibiliteit.
-:::
-
-## Tips
-
-- Genereer een voorbeeld-PDF na wijzigingen om de lay-out te verifieren
-- Gebruik de accentkleur van je merk voor een professionele uitstraling
-- Houd de lay-out schoon — overlaad de PDF niet met te veel informatie
-- Test met een echte factuur (aan jezelf) voordat je naar klanten verstuurt
-
-::: info
-Geavanceerde PDF-aanpassing vereist het **Pro**-abonnement of hoger.
+Factuurontwerp en stijlvoorinstellingen zijn inbegrepen vanaf het **Starter**-abonnement.
 :::

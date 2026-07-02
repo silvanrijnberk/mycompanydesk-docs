@@ -4,91 +4,69 @@ title: Reports
 
 # Reports
 
-Get insights into your business finances with eight built-in report views covering revenue, expenses, profit, VAT, and more.
+Understand how your business is doing with five focused report views and an overview that ties them together. Charts are embedded directly in each view, so every report combines numbers and visuals in one place.
 
 ## Accessing reports
 
-Navigate to **Reports** in the sidebar. Use the tabs or swipe navigation (on mobile) to switch between report views.
+Navigate to **Reports** in the sidebar. On desktop, switch views with the tab bar at the top; on mobile, use the view selector or swipe left and right between views.
 
 ## Report views
 
-### Revenue
+### Overview
 
-Track your income over time:
+The landing view brings your key numbers together for the selected period:
 
-- Total revenue by period
-- Revenue trends (chart)
-- Revenue by customer
-- Comparison with previous periods
+- Headline stats: revenue, profit with margin, outstanding invoices, tracked hours, and expenses
+- A financial overview chart (monthly or quarterly)
+- An aging breakdown of unpaid invoices, with a shortcut to send reminders
+- Your top clients by revenue
+- Insight cards that flag things worth acting on, such as overdue invoices or a slim profit margin
 
-### Outstanding
+Each block links through to the matching detailed report.
 
-Monitor unpaid invoices:
+### Profit & Loss
 
-- Total outstanding amount
-- Aging analysis (how long invoices have been unpaid)
-- Overdue invoices
-- Expected payment timeline
+The **P&L** view covers your results through three lenses you switch between at the top:
 
-### Expenses
-
-Understand your spending:
-
-- Total expenses by period
-- Expense breakdown by category
-- Spending trends
-- Top expense categories
-
-### Profit
-
-See your bottom line:
-
-- Revenue minus expenses = net profit
-- Profit margins
-- Profit trends over time
-- Period-over-period comparison
-
-### VAT
-
-Calculate your VAT liability:
-
-- VAT collected (on invoices)
-- VAT paid (on expenses)
-- Net VAT to pay or reclaim
-- Breakdown by VAT rate
-
-For detailed VAT management, see [VAT Management](/features/vat).
+- **Profit**: revenue minus expenses, margins, and how they develop over time
+- **Revenue**: income per period, trends, and comparisons
+- **Expenses**: where your money goes, broken down by category
 
 ### Cash Flow
 
-Track money movement:
-
-- Cash inflows (payments received)
-- Cash outflows (expenses paid)
-- Net cash flow
-- Running balance over time
+Track actual money movement: cash coming in from payments, cash going out to expenses, the net result, and your running balance over time.
 
 ### Clients
 
-Analyze your customer base:
+Analyze your customer base in two tabs:
 
-- Revenue per customer
-- Customer ranking by total spend
-- Customer acquisition trends
-- Average invoice value per customer
+- **Activity**: revenue per client, client ranking, and invoice patterns
+- **Outstanding**: unpaid invoices per client, how long they have been open, and what is overdue
+
+### Forecast
+
+See where your numbers are heading, based on recurring billings, open invoices, and your recent run rate. Switch the horizon between **3 months**, **6 months**, and **12 months** to see expected revenue, expenses, profit, and your cash runway.
+
+### Income tax
+
+The **Income tax** view estimates the income tax for the selected year: gross profit, the self-employed deduction and SME profit exemption, taxable income, the tax brackets, estimated tax, profit after tax, and how much to set aside. If your company is a BV, it shows an estimated corporate tax instead. Treat it as a planning aid for reserving money, not as a filing.
+
+### Looking for the VAT report?
+
+VAT has its own dedicated page with quarterly overviews and filing support. See [VAT Management](/features/vat).
 
 ## Filters
 
-All reports support:
+Open the **Filters** panel with the button at the top of the reports page. The filters apply to every report view:
 
-- **Period selection** — Week, month, quarter, year, or custom range
-- **Year selection** — Choose specific fiscal year
-- **Comparison mode** — Compare current period with a previous period
-- **Include open invoices** — Toggle whether unpaid invoices count toward revenue
+- **Period**: choose the granularity (**Year**, **Quarter**, **Month**, **Week**, or **Day**), with a matching picker for the chosen granularity
+- **Year**: the reporting year
+- **Compare with**: enable comparison and pick a **Compare year** to see period-over-period changes
+- **Include open invoices**: toggle whether unpaid invoices count toward revenue
 
 ## Tips
 
 - Use comparison mode to spot trends and seasonal patterns
-- Check the outstanding report regularly to follow up on overdue invoices
-- Review profit reports monthly to understand your margins
-- Export report data for use in spreadsheets or presentations
+- Check the **Outstanding** tab under Clients regularly to follow up on overdue invoices
+- Review the P&L monthly to understand your margins
+- Glance at the **Income tax** view each quarter so the amount to reserve never surprises you
