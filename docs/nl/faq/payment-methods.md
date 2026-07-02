@@ -1,5 +1,5 @@
 ---
-title: "Payment methods"
+title: "Betaalmethoden"
 last_verified: 2026-05-09
 chatbot:
   triggers:
@@ -14,27 +14,27 @@ chatbot:
     - "modes de paiement"
     - "moyens de paiement"
   actions:
-    - { label: "Open payment options", to: "/company?section=paymentOptions" }
+    - { label: "Open payment settings", to: "/settings/betalen" }
   follow_up:
     - "How do I add my bank details?"
     - "How do I change the PDF template?"
 ---
 
 Om betaalmethoden op documenten te beheren:
-1. Ga naar Bedrijf → Betaalopties
-2. Zet de methoden aan die je wilt gebruiken
-3. Kies de standaardmethode
-4. Voeg rekeninggegevens en betaalinstructies toe
-5. Wijzigingen in deze sectie worden automatisch opgeslagen
+1. Ga naar Instellingen en open "Betalen"
+2. Vul je IBAN in om bankoverschrijving aan te bieden; een ingevulde IBAN schakelt die automatisch in en zet een betaal-QR-code op je facturen
+3. Zet PayPal aan en vul je PayPal-e-mailadres in als je dat wilt aanbieden
+4. Koppel Mollie of Stripe als je klanten online wilt laten betalen, bijvoorbeeld met iDEAL
+5. Wijzigingen op deze pagina worden automatisch opgeslagen
 
-De ingeschakelde methoden en instructies verschijnen op documenttemplates die deze velden ondersteunen.
+De ingeschakelde methoden verschijnen onderaan je factuur.
 
 ## Online betaalverwerkers
 
 Je kunt je eigen Mollie- of Stripe-account koppelen zodat klanten facturen direct online kunnen betalen. Het geld komt rechtstreeks op jouw rekening. MyCompanyDesk regelt alleen de koppeling.
 
 Zo koppel je een verwerker:
-1. Ga naar **Geld → Betalingen** in je werkruimte
+1. Ga naar **Instellingen → Betalen**
 2. Klik onder **Online betalingen** op **Verbind Mollie** of **Verbind Stripe**
 3. Volg de OAuth-stappen om je account te autoriseren
 4. Na het koppelen bevat elke verstuurde factuur een betaallink voor je klanten

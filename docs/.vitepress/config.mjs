@@ -122,6 +122,7 @@ function sidebarNL() {
       text: 'Instellingen',
       collapsed: false,
       items: [
+        { text: 'Overzicht instellingen', link: '/nl/settings/' },
         { text: 'Bedrijfsinstellingen', link: '/nl/settings/company' },
         { text: 'E-mailintegratie', link: '/nl/settings/email' },
         { text: 'PDF-aanpassing', link: '/nl/settings/pdf' },
@@ -197,6 +198,7 @@ function sidebarDE() {
       text: 'Einstellungen',
       collapsed: false,
       items: [
+        { text: 'Übersicht der Einstellungen', link: '/de/settings/' },
         { text: 'Unternehmenseinstellungen', link: '/de/settings/company' },
         { text: 'E-Mail-Integration', link: '/de/settings/email' },
         { text: 'PDF-Anpassung', link: '/de/settings/pdf' },
@@ -272,6 +274,7 @@ function sidebarFR() {
       text: 'Paramètres',
       collapsed: false,
       items: [
+        { text: 'Aperçu des paramètres', link: '/fr/settings/' },
         { text: "Paramètres de l'entreprise", link: '/fr/settings/company' },
         { text: 'Intégration e-mail', link: '/fr/settings/email' },
         { text: 'Personnalisation PDF', link: '/fr/settings/pdf' },

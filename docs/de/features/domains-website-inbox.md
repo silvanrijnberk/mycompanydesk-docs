@@ -76,7 +76,7 @@ Die Seite ist in zwei Bereiche unterteilt:
 - **Ausstehende Domains**: Domains, die noch verifiziert werden müssen, erscheinen immer ganz oben, unabhängig vom Domain-Wechsler in der oberen Leiste. So können Sie die Verifizierungsanweisungen für neu hinzugefügte Domains erreichen, bevor diese aktiv werden.
 - **Aktives Domain-Panel**: DNS, SSL, Weiterleitungen, Analytics, Sicherheit und SEO-Tabs beziehen sich auf die Domain, die im Domain-Wechsler in der oberen Leiste ausgewählt ist (erreichbar über den Website-Builder unter `/website`). Wenn die Hauptwebsite (angezeigt als Ihr Workspace-Name) ausgewählt ist, wird das Domain-Panel vollständig ausgeblendet. Ein Domain-Wechsel setzt den aktiven Tab auf Routing zurück.
 
-Die Seite zeigt standardmassig eine bereinigte Ansicht mit den am haufigsten benotigten Registerkarten. Sechs Power-User-Registerkarten sind ausgeblendet, bis Sie den **Erweiterten Modus** in `/me/preferences` aktivieren. Diese Registerkarten sind: DNS, SSL, Weiterleitungen, Analytics, Schnelleinstellungen und Sicherheit. Den erweiterten Modus aktivieren Sie in Ihren persönlichen Einstellungen.
+Die Seite zeigt standardmassig eine bereinigte Ansicht mit den am haufigsten benotigten Registerkarten. Sechs Power-User-Registerkarten sind ausgeblendet, bis Sie den **Erweiterten Modus** aktivieren. Diese Registerkarten sind: DNS, SSL, Weiterleitungen, Analytics, Schnelleinstellungen und Sicherheit. Der erweiterte Modus ist ein Schalter pro Gerät auf der Seite **Darstellung** in den Einstellungen; siehe die [Übersicht der Einstellungen](/de/settings/).
 
 Was Sie auf der Seite tun konnen:
 
