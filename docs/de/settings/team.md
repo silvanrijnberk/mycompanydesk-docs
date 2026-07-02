@@ -1,110 +1,102 @@
 ---
-title: Teamverwaltung
+title: Zugang und Steuerberater
+last_verified: 2026-07-02
 ---
 
-# Teamverwaltung
+# Zugang und Steuerberater
 
-Laden Sie Teammitglieder ein, weisen Sie Rollen zu und kontrollieren Sie, wer auf was in Ihrem Arbeitsbereich zugreifen kann.
+Geben Sie einem Partner, Mitarbeiter oder Ihrem Steuerberater Zugang zu Ihrer Buchhaltung. Jede Person erhält einen eigenen Login. In der App heißt diese Seite **Toegang en boekhouder** (Zugang und Steuerberater).
 
-## Teammitglieder einladen
+## Wo Sie es finden
 
-1. Gehen Sie zu **Einstellungen > Team** oder **Unternehmen > Teammitglieder**
-2. Klicken Sie auf **Mitglied einladen**
-3. Geben Sie die **E-Mail-Adresse** der Person ein
-4. Wählen Sie eine **Rolle** (siehe unten)
-5. Klicken Sie auf **Einladung senden**
+Öffnen Sie **Einstellungen** über das Menü und wählen Sie **Zugang und Steuerberater**, oder gehen Sie direkt zu `/settings/team`. Alte Links zu den Teameinstellungen leiten hierher weiter.
 
-Der Eingeladene erhält eine E-Mail mit einem Link, um Ihrem Arbeitsbereich beizutreten. Wenn er kein MyCompanyDesk-Konto hat, kann er während des Prozesses eines erstellen.
+Die Seite hat zwei Bereiche:
+
+- **Personen mit Zugang**: Laden Sie Teamkollegen ein und legen Sie fest, was sie sehen und tun können. Dieser Bereich erfordert den Pro-Tarif; auf Free und Starter erscheint ein Upgrade-Hinweis. Auf Pro gibt es keine Begrenzung der Anzahl eingeladener Personen.
+- **Steuerberater**: Laden Sie Ihren Steuerberater ein und verwalten Sie dessen Zugang. Dieser Bereich ist in jedem Tarif kostenlos.
+
+## Was auf der Seite steht
+
+### Name des Arbeitsbereichs
+
+Eine Karte mit einem einzigen Feld. Der Name des Arbeitsbereichs erscheint in der Navigation, auf Einladungen und im Kontomenü der App. Nur Team-Admins können ihn bearbeiten. Änderungen werden automatisch gespeichert.
+
+### Aktuelle Mitglieder
+
+Eine Liste aller Personen, die sich anmelden können. Jede Zeile zeigt:
+
+- Avatar mit Initialen und einem Anwesenheitspunkt (grün online, grau inaktiv, ausgeblendet, wenn Sie kein Admin sind)
+- Name und E-Mail-Adresse
+- Rollen-Badge oder Rollenauswahl (nur Admin)
+- Ein Einstellungssymbol, das das Panel **Zugang verwalten** öffnet
+- Letzte Aktivität ("Vor 2 Minuten aktiv", "Gestern zuletzt gesehen"), nur Admin
+
+Ist die Liste leer, zeigt die Karte den Solo-Zustand: Sie arbeiten allein, Ihr Arbeitsbereich ist voll funktionsfähig, und Sie fügen Teamkollegen hinzu, wann immer Sie bereit sind.
+
+### Jemandem Zugang geben
+
+Admins geben eine E-Mail-Adresse ein und senden die Einladung. In der App heißt die Schaltfläche **Iemand toegang geven** (jemandem Zugang geben). Der Eingeladene erhält eine E-Mail mit einem Link; wer noch kein MyCompanyDesk-Konto hat, erstellt beim Annehmen eines. Ausstehende Einladungen erscheinen in einer separaten Karte mit Sendezeitpunkt und einem Badge.
+
+Nicht-Admins sehen stattdessen einen Hinweis: Nur Team-Admins können neue Mitglieder einladen.
+
+### Steuerberater
+
+Eine separate Liste für externe Steuerberater, in jedem Tarif kostenlos. Ihr Steuerberater kann Ihre Zahlen einsehen und Ihre Abgaben prüfen, ohne einen Pro-Teamplatz zu belegen. Jede Zeile zeigt einen Status:
+
+| Badge | Bedeutung |
+|---|---|
+| **Nur Kontakt** | In Ihrem Adressbuch, kein App-Zugang |
+| **Eingeladen** | Einladungs-E-Mail gesendet, noch nicht angenommen |
+| **Aktiviert** | Hat ein Konto und kann sich anmelden |
+| **Widerrufen** | Zugang entfernt (kann später wiederhergestellt werden) |
+
+Admin-Aktionen pro Zeile: **Steuerberater einladen**, das Panel **Zugang verwalten** und **Entfernen**.
 
 ## Rollen
 
 | Rolle | Beschreibung |
 |---|---|
-| **Admin** | Vollständiger Zugriff auf alles, einschließlich Team- und Abrechnungsverwaltung |
-| **Mitglied** | Zugriff auf zugewiesene Funktionen, kann Team oder Abrechnung nicht verwalten |
-| **Buchhalter** | Nur-Lese-Zugriff mit spezifischen Buchhaltungsansichten |
+| **Admin** | Vollzugriff. Kann Mitglieder einladen und entfernen, Rollen ändern, das Abonnement verwalten und Unternehmenseinstellungen bearbeiten. |
+| **Mitglied** | Zugriff auf das, was der Admin im Panel Zugang verwalten freigibt. |
+| **Steuerberater** | Ein eigener Kontakttyp. Erhält Zugang über den Steuerberater-Ablauf statt über die Mitgliedereinladung. |
 
-### Admin
-
-Admins können:
-
-- Teammitglieder verwalten (einladen, entfernen, Rollen ändern)
-- Auf Abrechnungs- und Abonnementeinstellungen zugreifen
-- Unternehmenseinstellungen konfigurieren
-- Auf alle Funktionen zugreifen
-
-### Mitglied
-
-Mitglieder haben Zugriff auf die Funktionen, die Sie ihnen zuweisen. Konfigurieren Sie ihre Berechtigungen pro Funktion.
-
-### Buchhalter
-
-Eine spezielle Rolle für externe Buchhalter:
-
-- Finanzdaten einsehen (Rechnungen, Ausgaben, Berichte)
-- Kann standardmäßig keine Datensätze erstellen oder ändern
-- Spezifischer Berechtigungssatz für Prüfungszwecke
+Rollen werden direkt in der Mitgliederzeile über ein Menü umgeschaltet (nur Admin). Ihre eigene Rolle können Sie nicht ändern.
 
 ## Berechtigungen
 
-Feinabgestimmte Berechtigungen ermöglichen die Zugriffskontrolle pro Funktion:
+Das Panel **Zugang verwalten** öffnet eine Berechtigungstabelle pro Seite. Jede Zeile ist ein Bereich der App: Dashboard, Rechnungen, Ausgaben, Kunden, Projekte, Objekte, Verträge, Angebote, Vermietung, Berichte und Einstellungen.
 
-### Seitenzugriff
+Für jede Seite gibt es drei unabhängige Schalter:
 
-Wählen Sie, welche Bereiche jedes Mitglied sehen kann:
+- **Lesen**: sieht die Seite und die Einträge darauf
+- **Schreiben**: kann bestehende Einträge bearbeiten
+- **Erstellen**: kann neue Einträge hinzufügen
 
-- Rechnungen
-- Angebote
-- Ausgaben
-- Kunden
-- Projekte
-- Verträge
-- Objekte
-- Zeiterfassung
-- Berichte
-- USt.
-- Einstellungen
+Das Panel zeigt außerdem einen Hinweis **Zugang widerrufen** für gesperrte Konten (die Wiederherstellen-Schaltfläche aktiviert sie erneut).
 
-### Bearbeitungsberechtigungen
+## Anmeldesicherheit
 
-Für jede zugängliche Seite wählen Sie, ob das Mitglied:
+Die Anmeldesicherheit jedes Mitglieds liegt beim eigenen Konto, unter **Einstellungen** und dann **Anmeldung**, nicht auf dieser Seite:
 
-- **Nur anzeigen** — Lesezugriff, keine Änderungen
-- **Bearbeiten** — Vollständiger Lese-/Schreibzugriff
+- **Passkeys**: Mitglieder können einen oder mehrere Passkeys registrieren; danach ist die Passkey-Schaltfläche der Standardweg zur Anmeldung statt des Passwortfelds.
+- **Zwei-Schritt-Verifizierung**: Ist sie aktiviert, fragt die Anmeldung nach dem Passwort nach einem 6-stelligen Code aus einer Authenticator-App.
 
-## Buchhalter-Kontakte
-
-Verwalten Sie externe Buchhalter-Beziehungen:
-
-1. Gehen Sie zu **Einstellungen > Team > Buchhalter**
-2. Klicken Sie auf **Buchhalter hinzufügen**
-3. Geben Sie Name und E-Mail ein
-4. Klicken Sie auf **Einladen**, um den Zugang zu senden
-5. Konfigurieren Sie die spezifischen Berechtigungen
-
-### Buchhalter-Zugang verwalten
-
-- **Einladen** — Zugriffseinladung senden oder erneut senden
-- **Widerrufen** — Zugang entfernen (kann später wiederhergestellt werden)
-- **Wiederherstellen** — Zuvor widerrufenen Zugang reaktivieren
-- **Berechtigungen aktualisieren** — Ändern, was sie sehen können
+Admins können die Passkeys oder Zwei-Schritt-Verifizierung eines anderen Mitglieds nicht verwalten; das sind persönliche Zugangsdaten. Wer ausgesperrt ist, nutzt die Wiederherstellungsoption auf dem Anmeldebildschirm, um sie zurückzusetzen.
 
 ## Arbeitsbereiche wechseln
 
-Wenn Sie Mitglied mehrerer Arbeitsbereiche (Unternehmen) sind, wechseln Sie zwischen ihnen:
+Öffnen Sie den Arbeitsbereich-Umschalter in der oberen Leiste, um zwischen Arbeitsbereichen zu wechseln oder einen neuen anzulegen.
 
-1. Klicken Sie auf Ihr Kontomenü
-2. Wählen Sie **Arbeitsbereich wechseln**
-3. Wählen Sie den Arbeitsbereich
+## Tarife im Überblick
 
-Oder erstellen Sie einen **neuen Arbeitsbereich** über dasselbe Menü.
+| Möglichkeit | Free | Starter | Pro |
+|---|---|---|---|
+| Nur der Inhaber | ja | ja | ja |
+| Teammitglieder einladen | nein | nein | ja (unbegrenzt) |
+| Steuerberater-Zugang | ja | ja | ja |
 
-## Tipps
+## Verwandte Themen
 
-- Verwenden Sie die Buchhalter-Rolle für Ihren Steuerberater — sie bietet genau den Zugang, den er benötigt
-- Legen Sie Mitgliederberechtigungen sorgfältig fest — nicht jeder braucht Zugriff auf Abrechnungs- oder Teameinstellungen
-- Überprüfen Sie den Teamzugang regelmäßig, besonders wenn Teammitglieder ihre Rollen wechseln
-
-::: info
-Teamverwaltung über 1 Mitglied hinaus erfordert den **Pro**-Tarif. Zusätzliche Mitglieder sind separat über Sitz-Add-ons buchbar.
-:::
+- [Tarif und Zahlungen](/de/settings/billing), um Teammitglieder freizuschalten
+- [Konto und Sicherheit](/de/account/security) für Passkeys und Zwei-Schritt-Verifizierung

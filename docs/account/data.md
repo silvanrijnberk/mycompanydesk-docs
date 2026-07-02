@@ -1,5 +1,6 @@
 ---
 title: "Data Import & Export"
+last_verified: 2026-07-02
 ---
 
 # Data Import & Export
@@ -12,20 +13,20 @@ Import existing data into MyCompanyDesk and export your records for backup or us
 
 Import data from CSV files for:
 
-- **Customers** — Name, email, phone, address, VAT number
-- **Invoices** — Invoice details with line items
-- **Expenses** — Expense records with categories
-- **Projects** — Project names and details
-- **Objects** — Asset records
+- **Customers** with name, email, phone, address, VAT number
+- **Invoices** with invoice details
+- **Expenses** with categories and amounts
+
+Other record types (such as projects or objects) cannot be imported from CSV; you create those in the app itself.
 
 ### How to import
 
-1. Go to **Profile > Import**
-2. Select the **data type** you want to import
-3. Upload your **CSV file**
-4. **Map columns** — Match your CSV column headers to MyCompanyDesk fields
-5. **Preview** — Review the data before importing
-6. **Confirm** — Click Import to create the records
+The import wizard lives on its own page in the app: open `/profile/import` directly, useful when you are moving over from another tool right after signing up.
+
+1. Select the **data type** you want to import (customers, invoices, or expenses)
+2. Upload your **CSV file**
+3. **Map columns** by matching your CSV column headers to MyCompanyDesk fields
+4. **Import** to create the records; the result shows how many rows were imported and how many failed
 
 ### Import tips
 
@@ -51,39 +52,28 @@ The import wizard shows your CSV columns and lets you map each to the correspond
 
 ## Export
 
+Exports live in one place: open **Instellingen** (Settings) and pick **Gegevens downloaden** (download your data).
+
 ### CSV export
 
-Export your data as CSV from the respective list pages:
+Download your records per type:
 
-- **Invoices** — All invoices with amounts, dates, statuses
-- **Expenses** — All expenses with categories and amounts
-- **Customers** — Your customer database
-
-Click the **Export** button on the list page to download.
+- **Invoices** as CSV, with amounts, dates, and statuses
+- **Customers** as CSV, your full customer list
+- **Expenses** as CSV, with categories and amounts
 
 ::: info
-CSV export requires the **Pro** plan or higher.
+CSV and full-backup exports are available from the **Starter** plan. On the Free plan the page shows an upgrade notice.
 :::
 
-### GDPR data export
+### Complete backup
 
-Export all your personal data in JSON format:
+The same page offers a **complete backup**: all your data in one JSON file. Use it as a periodic backup or as a full snapshot of your records, for example for a GDPR data request.
 
-1. Go to **Profile > Data**
-2. Click **Export My Data**
-3. Download the JSON file containing all your account data
-
-This GDPR export includes:
-
-- Your profile information
-- All invoices, expenses, quotes
-- Customer records
-- Project and time data
-- Settings and preferences
+Exports contain only the data you have access to. PDF versions of invoices are downloaded separately, from each invoice's own page.
 
 ## Tips
 
 - Export your data regularly as a backup
-- Use CSV export to share data with your accountant
+- Rather than emailing files to your accountant, give them direct access via **Settings > Toegang en boekhouder**; they always see your latest figures
 - When switching from another tool, use the import wizard to migrate your customer list
-- The GDPR export provides a complete snapshot of your data
