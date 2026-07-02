@@ -1,6 +1,6 @@
 ---
-title: "Sprache andern"
-last_verified: 2026-05-17
+title: "Sprache ändern"
+last_verified: 2026-07-02
 chatbot:
   triggers:
     - "sprache andern"
@@ -13,6 +13,6 @@ chatbot:
     - "Wie andere ich die Wahrung?"
 ---
 
-Die MyCompanyDesk-Benutzeroberflache ist auf Niederlandisch. Es gibt keine Einstellung fur die Oberflachensprache.
+Sie können die Sprache der App-Oberfläche ändern. Gehen Sie zu Einstellungen → „Darstellung" und wählen Sie unter „App-Sprache" Niederländisch, Englisch, Deutsch oder Französisch. Die Änderung gilt sofort und nur für Ihre eigene Ansicht, nicht für Ihre Teamkollegen.
 
-Fur die Dokumentensprache (Rechnungen, Angebote, E-Mails) gehen Sie zu Unternehmen → Rechnungsstellung (PDF-Sprache). Sie konnen Rechnungen, Angebote und E-Mails auf Niederlandisch, Englisch, Deutsch oder Franzosisch erstellen, unabhangig von der Oberflachensprache.
+Die Sprache der Dokumente, die Sie versenden (Rechnungen, Angebote, E-Mails an Kunden), ist von der Oberflächensprache getrennt; dafür gibt es derzeit keine Einstellung in der App. Wenn Sie Ihre Dokumente in einer anderen Sprache benötigen, nutzen Sie das Support-Ticket-Formular unter dem Chat.

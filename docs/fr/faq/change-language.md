@@ -1,6 +1,6 @@
 ---
 title: "Changer la langue"
-last_verified: 2026-05-17
+last_verified: 2026-07-02
 chatbot:
   triggers:
     - "changer langue"
@@ -13,6 +13,6 @@ chatbot:
     - "Comment changer la devise ?"
 ---
 
-L'interface de MyCompanyDesk est en neerlandais. Il n'y a pas de reglage de langue de l'interface.
+Vous pouvez changer la langue de l'interface de l'application. Allez dans Paramètres → « Affichage » et choisissez, sous « Langue de l'application », le néerlandais, l'anglais, l'allemand ou le français. Le changement s'applique immédiatement et ne concerne que votre propre affichage, pas celui de vos collègues.
 
-Pour la langue des documents (factures, devis, e-mails), allez dans Entreprise → Facturation (langue PDF). Vous pouvez generer des factures, devis et e-mails en neerlandais, anglais, allemand ou francais, independamment de la langue de l'interface.
+La langue des documents que vous envoyez (factures, devis, e-mails aux clients) est distincte de la langue de l'interface ; il n'existe actuellement aucun réglage pour cela dans l'application. Si vous avez besoin de vos documents dans une autre langue, utilisez le formulaire de ticket support sous le chat.
