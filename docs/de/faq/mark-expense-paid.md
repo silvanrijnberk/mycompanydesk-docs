@@ -1,5 +1,5 @@
 ---
-title: "Mark an expense as paid"
+title: "Ausgabe als bezahlt markieren"
 last_verified: 2026-05-09
 chatbot:
   triggers:
@@ -19,8 +19,9 @@ chatbot:
     - "How do I export expense data?"
 ---
 
-So markierst du eine Ausgabe als bezahlt:
-1. Öffne die Ausgabe aus der Liste
-2. Klicke auf den Status oder „Als bezahlt markieren"
-3. Gib optional das Zahlungsdatum ein
-4. Speichere - der Status wird auf Bezahlt aktualisiert
+So markieren Sie eine Ausgabe als bezahlt:
+1. Öffnen Sie die Ausgabe aus der Liste
+2. Klicken Sie auf „Als bezahlt markieren"
+3. Der Status wird sofort auf Bezahlt aktualisiert
+
+Dieser eine Klick genügt: Es erscheint kein Dialog für das Zahlungsdatum, und ein separates Speichern ist nicht nötig.

@@ -1,5 +1,5 @@
 ---
-title: "Year overview"
+title: "Aperçu annuel"
 last_verified: 2026-05-09
 chatbot:
   triggers:
@@ -21,10 +21,10 @@ chatbot:
     - "How do I prepare my VAT return?"
 ---
 
-Pour consulter une annee complete dans l application :
+Pour examiner une année complète dans l'application :
 1. Ouvrez Rapports
-2. Reglez le filtre de date sur l annee que vous voulez examiner
-3. Ouvrez les cartes d apercu et les sections de rapport associees aux donnees que vous souhaitez consulter
-4. Exportez le rapport visible si vous avez besoin de cette meme vue en dehors de l application
+2. Réglez le filtre de période sur Année et choisissez l'année à examiner
+3. L'aperçu montre les chiffres clés ; passez à la vue Compte de résultat, Trésorerie, Clients ou Prévision pour plus de détail
+4. Activez le filtre de comparaison pour voir l'année à côté d'une année précédente
 
-Cette reponse se limite a l endroit ou trouver l apercu annuel dans l application.
+Astuce : le filtre « Inclure les factures ouvertes » détermine si les factures impayées comptent dans les totaux.

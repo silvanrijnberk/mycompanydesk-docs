@@ -1,6 +1,6 @@
 ---
-title: "Import data"
-last_verified: 2026-05-09
+title: "Gegevens importeren"
+last_verified: 2026-07-02
 chatbot:
   triggers:
     - "import data"
@@ -13,17 +13,21 @@ chatbot:
     - "gegevens importeren"
     - "daten importieren"
     - "importer donnees"
-  actions: []
+  actions:
+    - { label: "Open import page", to: "/profile/import" }
   follow_up:
     - "How do I export my data?"
     - "How do I add customers manually?"
 ---
 
-Om gegevens te importeren in de app:
-1. Ga naar Mijn account → Export & back-up
-2. Klik op "Importeren vanuit CSV"
-3. Kies het gegevenstype dat je wilt importeren
-4. Download het CSV-sjabloon om het vereiste formaat te zien
-5. Vul je gegevens in, upload het bestand en bevestig de preview
+MyCompanyDesk kan klanten, facturen en uitgaven importeren uit een CSV-bestand. Andere gegevenstypes kun je niet importeren.
 
-Tip: Start met een kleine testimport om het formaat te controleren voordat je grotere datasets importeert.
+De importpagina staat op `/profile/import`. Er is geen menu-ingang voor, dus open de pagina via de knop hierboven of door het adres direct in te voeren. Daarna:
+
+1. Kies het gegevenstype: klanten, facturen of uitgaven
+2. Upload je CSV-bestand
+3. Koppel de kolommen van je bestand aan de juiste velden en bevestig de preview
+
+Er is geen CSV-sjabloon om te downloaden; de import werkt met de kolommen van je eigen bestand en laat je die tijdens het uploaden koppelen.
+
+Tip: begin met een kleine testimport om de koppeling te controleren voordat je grotere datasets importeert.

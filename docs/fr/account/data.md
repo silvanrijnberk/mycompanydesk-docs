@@ -1,89 +1,79 @@
 ---
-title: Import et export de donnees
+title: Import et export de données
+last_verified: 2026-07-02
 ---
 
-# Import et export de donnees
+# Import et export de données
 
-Importez des donnees existantes dans MyCompanyDesk et exportez vos enregistrements pour sauvegarde ou utilisation dans d'autres outils.
+Importez des données existantes dans MyCompanyDesk et exportez vos enregistrements pour sauvegarde ou utilisation dans d'autres outils.
 
 ## Import
 
 ### Import CSV
 
-Importez des donnees depuis des fichiers CSV pour :
+Importez des données depuis des fichiers CSV pour :
 
-- **Clients** -- Nom, e-mail, telephone, adresse, numero de TVA
-- **Factures** -- Details des factures avec lignes de facturation
-- **Depenses** -- Enregistrements de depenses avec categories
-- **Projets** -- Noms et details des projets
-- **Objets** -- Enregistrements d'actifs
+- **Clients** avec nom, e-mail, téléphone, adresse, numéro de TVA
+- **Factures** avec les détails de facturation
+- **Dépenses** avec catégories et montants
+
+Les autres types d'enregistrements (comme les projets ou les objets) ne peuvent pas être importés depuis un CSV; vous les créez directement dans l'application.
 
 ### Comment importer
 
-1. Allez dans **Profil > Import**
-2. Selectionnez le **type de donnees** que vous souhaitez importer
-3. Telechargez votre **fichier CSV**
-4. **Faites correspondre les colonnes** -- Associez les en-tetes de colonnes de votre CSV aux champs MyCompanyDesk
-5. **Apercu** -- Verifiez les donnees avant l'import
-6. **Confirmez** -- Cliquez sur Importer pour creer les enregistrements
+L'assistant d'import a sa propre page dans l'application : ouvrez directement `/profile/import`, pratique lorsque vous migrez depuis un autre outil juste après votre inscription.
+
+1. Sélectionnez le **type de données** à importer (clients, factures ou dépenses)
+2. Téléversez votre **fichier CSV**
+3. **Associez les colonnes** en faisant correspondre les en-têtes de votre CSV aux champs MyCompanyDesk
+4. **Importez** pour créer les enregistrements; le résultat indique combien de lignes ont été importées et combien ont échoué
 
 ### Conseils d'import
 
 - Utilisez l'encodage UTF-8 pour vos fichiers CSV
-- Incluez une ligne d'en-tete avec les noms de colonnes
-- Les formats de date doivent etre coherents (AAAA-MM-JJ recommande)
-- Les champs de montant doivent utiliser le point (.) comme separateur decimal
-- Les champs vides sont ignores (les valeurs par defaut existantes sont utilisees)
+- Incluez une ligne d'en-tête avec les noms de colonnes
+- Gardez des formats de date cohérents (AAAA-MM-JJ recommandé)
+- Utilisez le point (.) comme séparateur décimal dans les champs de montant
+- Les champs vides sont ignorés (les valeurs par défaut existantes sont utilisées)
 
 ### Correspondance des colonnes
 
-L'assistant d'import affiche vos colonnes CSV et vous permet de faire correspondre chacune au champ MyCompanyDesk correspondant. Correspondances courantes :
+L'assistant d'import affiche vos colonnes CSV et vous laisse associer chacune au champ MyCompanyDesk correspondant. Correspondances courantes :
 
-| Colonne CSV | Correspond a |
+| Colonne CSV | Devient |
 |---|---|
-| Company Name / Name | Nom du client |
-| Email | E-mail du client |
-| Street / Address | Adresse |
-| ZIP / Postal Code | Code postal |
-| City | Ville |
-| VAT / BTW | Numero de TVA |
-| Phone | Numero de telephone |
+| Nom de société / Nom | Nom du client |
+| E-mail | E-mail du client |
+| Rue / Adresse | Adresse |
+| Code postal | Code postal |
+| Ville | Ville |
+| VAT / TVA | Numéro de TVA |
+| Téléphone | Numéro de téléphone |
 
 ## Export
 
+Les exports se trouvent à un seul endroit : ouvrez **Paramètres** et choisissez **Télécharger les données**.
+
 ### Export CSV
 
-Exportez vos donnees au format CSV depuis les pages de listes respectives :
+Téléchargez vos enregistrements par type :
 
-- **Factures** -- Toutes les factures avec montants, dates, statuts
-- **Depenses** -- Toutes les depenses avec categories et montants
-- **Clients** -- Votre base de donnees clients
-
-Cliquez sur le bouton **Exporter** sur la page de liste pour telecharger.
+- **Factures** en CSV, avec montants, dates et statuts
+- **Clients** en CSV, votre liste de clients complète
+- **Dépenses** en CSV, avec catégories et montants
 
 ::: info
-L'export CSV necessite le plan **Pro** ou superieur.
+Les exports CSV et la sauvegarde complète sont disponibles à partir du forfait **Starter**. Sur le forfait gratuit, la page affiche une invitation à mettre à niveau.
 :::
 
-### Export de donnees RGPD
+### Sauvegarde complète
 
-Exportez toutes vos donnees personnelles au format JSON :
+La même page propose une **sauvegarde complète** : toutes vos données dans un seul fichier JSON. Utilisez-la comme sauvegarde périodique ou comme instantané complet de vos enregistrements, par exemple pour une demande d'accès RGPD.
 
-1. Allez dans **Profil > Donnees**
-2. Cliquez sur **Exporter mes donnees**
-3. Telechargez le fichier JSON contenant toutes les donnees de votre compte
-
-Cet export RGPD comprend :
-
-- Vos informations de profil
-- Toutes les factures, depenses, devis
-- Les fiches clients
-- Les donnees de projets et de temps
-- Les parametres et preferences
+Les exports ne contiennent que les données auxquelles vous avez accès. Les versions PDF des factures se téléchargent séparément, depuis la page de chaque facture.
 
 ## Conseils
 
-- Exportez vos donnees regulierement en guise de sauvegarde
-- Utilisez l'export CSV pour partager des donnees avec votre comptable
-- Lorsque vous migrez depuis un autre outil, utilisez l'assistant d'import pour migrer votre liste de clients
-- L'export RGPD fournit un instantane complet de vos donnees
+- Exportez régulièrement vos données comme sauvegarde
+- Plutôt que d'envoyer des fichiers par e-mail à votre comptable, donnez-lui un accès direct via **Paramètres > Accès et comptable**; il consulte ainsi toujours vos chiffres les plus récents
+- Si vous venez d'un autre outil, utilisez l'assistant d'import pour migrer votre liste de clients

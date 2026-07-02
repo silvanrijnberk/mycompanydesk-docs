@@ -1,6 +1,6 @@
 ---
-title: "Export to PDF"
-last_verified: 2026-05-09
+title: "Exporter en PDF"
+last_verified: 2026-07-02
 chatbot:
   triggers:
     - "export pdf"
@@ -16,7 +16,8 @@ chatbot:
     - "telecharger pdf"
   actions:
     - { label: "Open invoices", to: "/invoices" }
-    - { label: "Open Branding & Documents", to: "/company?section=brandingDocuments" }
+    - { label: "Open logo and colour", to: "/settings/uiterlijk" }
+    - { label: "Open invoice design", to: "/settings/factuurontwerp" }
   follow_up:
     - "How do I change the PDF style?"
     - "How do I send an invoice by email?"
@@ -24,5 +25,7 @@ chatbot:
 
 Pour exporter ou télécharger un PDF :
 1. Ouvrez la facture depuis la liste
-2. Cliquez sur l'aperçu PDF ou le bouton de téléchargement
-3. Le PDF utilise votre modèle de Paramètres → Éditeur PDF
+2. Cliquez sur le bouton d'aperçu ou de téléchargement du PDF
+3. Le PDF utilise votre logo, votre couleur et votre mise en page depuis Paramètres → "Logo et couleur" et Paramètres → "Mise en page des factures"
+
+Astuce : définissez votre logo et votre couleur dans Paramètres → "Logo et couleur", et choisissez la mise en page, les couleurs et la police de vos factures dans Paramètres → "Mise en page des factures".

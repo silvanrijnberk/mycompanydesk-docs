@@ -76,7 +76,7 @@ La page se divise en deux sections :
 - **Domaines en attente**: Les domaines en cours de verification apparaissent toujours en haut, independamment du selecteur de domaine dans la barre superieure. Cela vous permet d'acceder aux instructions de verification pour les domaines nouvellement ajoutes avant qu'ils ne deviennent actifs.
 - **Panneau du domaine actif**: Les onglets DNS, SSL, redirections, analytique, securite et SEO sont lies au domaine selectionne dans le selecteur de domaine de la barre superieure (accessible depuis le constructeur de site sur `/website`). Lorsque le site principal (affiche sous le nom de votre espace de travail) est selectionne, le panneau du domaine est entierement masque. Changer de domaine reinitialise l'onglet actif sur Routage.
 
-La page affiche par defaut une vue allegee avec les onglets les plus couramment utilises. Six onglets pour utilisateurs avances sont masques jusqu'a ce que vous activiez le **Mode avance** dans `/me/preferences`. Ces onglets sont : DNS, SSL, Redirections, Analytique, Parametres rapides et Securite. Le mode avancé s'active dans vos préférences personnelles.
+La page affiche par defaut une vue allegee avec les onglets les plus couramment utilises. Six onglets pour utilisateurs avances sont masques jusqu'a ce que vous activiez le **Mode avance**. Ces onglets sont : DNS, SSL, Redirections, Analytique, Parametres rapides et Securite. Le mode avancé est un interrupteur par appareil sur la page **Affichage** des paramètres; voir l'[aperçu des paramètres](/fr/settings/).
 
 Ce que la page vous permet de faire :
 

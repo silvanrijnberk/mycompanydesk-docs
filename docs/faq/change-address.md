@@ -1,6 +1,6 @@
 ---
 title: "Change your address"
-last_verified: 2026-05-09
+last_verified: 2026-07-02
 chatbot:
   triggers:
     - "change address"
@@ -16,14 +16,14 @@ chatbot:
     - "modifier mon adresse d entreprise"
     - "ou modifier mon adresse d entreprise"
   actions:
-    - { label: "Open company info", to: "/company?section=company" }
+    - { label: "Open business details", to: "/settings/bedrijfsgegevens" }
   follow_up:
     - "How do I set up my company settings?"
     - "How do I change the PDF template?"
 ---
 
 To change your company address:
-1. Go to Company → Company Info
+1. Go to Settings → "Bedrijfsgegevens" (business details)
 2. Use the address helper to search for and apply the updated address
 3. New documents will use that updated address
 

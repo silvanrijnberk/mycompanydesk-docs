@@ -1,6 +1,6 @@
 ---
-title: Create an invoice
-last_verified: 2026-05-09
+title: "Rechnung erstellen"
+last_verified: 2026-07-02
 chatbot:
   triggers: ["create invoice", "new invoice", "make invoice", "add invoice", "write invoice", "send invoice", "first invoice", "how to invoice", "maak factuur", "nieuwe factuur", "factuur maken", "factuur aanmaken", "hoe maak ik een factuur", "rechnung erstellen", "wie erstelle ich eine rechnung", "neue rechnung", "creer facture", "comment creer une facture"]
   actions:
@@ -8,12 +8,14 @@ chatbot:
   follow_up: ["How do I add a customer first?", "How do I change the PDF style?", "How do I set payment terms?"]
 ---
 
-So erstellst du eine Rechnung:
-1. Gehe zu Rechnungen und oeffne "Neue Rechnung"
-2. Waehle einen Kunden aus oder fuege ihn ueber die Kundenauswahl hinzu
-3. Fuege Positionen mit Beschreibung, Menge, Preis und MwSt hinzu
-4. Setze in der Karte mit den Rechnungsdetails Rechnungsdatum und Faelligkeitsdatum
-5. Nutze "Als Entwurf speichern", wenn die Rechnung noch nicht fertig ist, oder "Finalisieren", wenn sie bereit ist (MyCompanyDesk prueft zuerst Ihre USt-IdNr. und IBAN, Sie koennen sie direkt vor Ort ergaenzen)
-6. Oeffne nach dem Speichern die Rechnungsdetailseite, um sie zu pruefen oder zu senden
+So erstellen Sie eine Rechnung:
+1. Gehen Sie zu Rechnungen und öffnen Sie "Neue Rechnung"
+2. Wählen Sie einen Kunden oder fügen Sie über die Kundenauswahl einen hinzu
+3. Fügen Sie Positionen mit Beschreibung, Menge, Preis und MwSt. hinzu
+4. Legen Sie in der Karte mit den Rechnungsdetails Rechnungsdatum und Fälligkeitsdatum fest
+5. Nutzen Sie "Als Entwurf speichern", wenn die Rechnung noch nicht fertig ist, oder "Abschließen", wenn sie bereit ist (MyCompanyDesk prüft zuerst Ihre USt-IdNr. und IBAN, Sie können sie bei Bedarf direkt eintragen)
+6. Öffnen Sie nach dem Speichern die Detailseite der Rechnung, um sie anzusehen oder zu senden
 
-Tipp: Einstellungen wie Nummerierung, Zahlungsfristen und PDF-Standards findest du unter Unternehmen. Tragen Sie Ihre USt-IdNr. und IBAN dort ein, damit Sie Rechnungen ohne Unterbrechung finalisieren koennen.
+Hat der Kunde noch nicht abgerechnete Zeiteinträge, zieht das Formular sie als Positionen in die Rechnung und ergänzt fehlende Beschreibungen automatisch.
+
+Tipp: Standardwerte wie Zahlungsfrist und Angebotsgültigkeit finden Sie unter Einstellungen → "Rechnungen und Angebote"; die Rechnungsnummerierung läuft automatisch, dort müssen Sie nichts einstellen. Hinterlegen Sie Ihre USt-IdNr. und IBAN, dann schließen Sie Rechnungen ohne Unterbrechung ab.

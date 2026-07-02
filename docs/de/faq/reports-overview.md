@@ -1,5 +1,5 @@
 ---
-title: "Reports overview"
+title: "Berichtsübersicht"
 last_verified: 2026-05-09
 chatbot:
   triggers:
@@ -22,10 +22,11 @@ chatbot:
     - "How do I see profit and loss?"
 ---
 
-So siehst du Berichte:
-1. Gehe zu Berichte
-2. Nutze den Datumsfilter fuer den Zeitraum
-3. Wende Status- oder Kategoriefilter an, wenn noetig
-4. Oeffne Diagramme oder Tabellenzeilen, um die zugrunde liegenden Datensaetze zu pruefen
+So sehen Sie Ihre Berichte:
+1. Gehen Sie zu Berichte
+2. Wechseln Sie zwischen den fünf Ansichten: Übersicht, GuV, Cashflow, Kunden und Prognose
+3. Nutzen Sie die Filter, um die Zeitraumeinteilung zu wählen (Jahr, Quartal, Monat, Woche oder Tag), das Jahr auszuwählen, offene Rechnungen einzubeziehen oder mit einem anderen Jahr zu vergleichen
 
-Wenn eine Zahl nicht stimmt, pruefe zuerst die aktiven Filter und den Datumsbereich.
+Berichte haben keine Status- oder Kategoriefilter; die Zeitraum- und Vergleichsfilter gelten für alle Ansichten.
+
+Tipp: Wenn eine Zahl nicht stimmt, prüfen Sie zuerst die aktiven Zeitraum- und Vergleichseinstellungen.

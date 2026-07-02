@@ -1,5 +1,5 @@
 ---
-title: "Expense category"
+title: "Ausgabenkategorie"
 last_verified: 2026-05-09
 chatbot:
   triggers: ["expense category", "categorize expense", "expense categories", "which category", "change category", "uitgave categorie", "categorie wijzigen", "ausgabe kategorie", "categorie depense"]
@@ -8,10 +8,10 @@ chatbot:
   follow_up: ["Which expenses are tax deductible?", "How do I create a new expense?", "How do I view expenses by category?"]
 ---
 
-So setzt oder aenderst du eine Ausgabenkategorie:
-1. Oeffne die Ausgabe im Bearbeitungsmodus
-2. Finde das Dropdown „Kategorie"
-3. Waehle die passende Kategorie (z. B. Buero, Reise, Software)
-4. Speichere die Ausgabe
+So legen Sie eine Ausgabenkategorie fest oder ändern sie:
+1. Öffnen Sie die Ausgabe im Bearbeitungsmodus
+2. Suchen Sie das Dropdown „Kategorie"
+3. Wählen Sie eine der sechs Standardkategorien: Allgemeine Kosten, Bürokosten, Fahrzeugkosten & Reisen, Telefon & Internet, Repräsentationskosten oder Einkauf & Material
+4. Speichern Sie die Ausgabe
 
-Verwende Kategorien konsistent, damit Filter, Listen und Berichte leichter zu pruefen bleiben.
+Die sechs Standardkategorien folgen der niederländischen Steuererklärung, sodass Ihre Buchhaltung zur Aangifte passt. Über das Zahnrad auf der Seite Ausgaben können Sie auch eigene Kategorien hinzufügen. Verwenden Sie Kategorien konsistent, damit Filter, Listen und Berichte leicht zu prüfen bleiben.

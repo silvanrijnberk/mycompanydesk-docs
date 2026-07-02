@@ -1,6 +1,6 @@
 ---
-title: "Payment methods"
-last_verified: 2026-05-09
+title: "Zahlungsmethoden"
+last_verified: 2026-07-02
 chatbot:
   triggers:
     - "payment methods"
@@ -14,39 +14,39 @@ chatbot:
     - "modes de paiement"
     - "moyens de paiement"
   actions:
-    - { label: "Open payment options", to: "/company?section=paymentOptions" }
+    - { label: "Open payment settings", to: "/settings/betalen" }
   follow_up:
     - "How do I add my bank details?"
     - "How do I change the PDF template?"
 ---
 
-So verwaltest du Zahlungsmethoden auf Dokumenten:
-1. Gehe zu Unternehmen → Zahlungsoptionen
-2. Aktiviere die Methoden, die du verwenden willst
-3. Lege die Standardmethode fest
-4. Fuege Kontodaten und Zahlungsanweisungen hinzu
-5. Aenderungen in diesem Bereich werden automatisch gespeichert
+So verwalten Sie Zahlungsmethoden auf Dokumenten:
+1. Gehen Sie zu Einstellungen und öffnen Sie „Zahlung"
+2. Tragen Sie Ihre IBAN ein, um die Banküberweisung anzubieten; eine eingetragene IBAN aktiviert sie automatisch und setzt einen Zahlungs-QR-Code auf Ihre Rechnungen
+3. Aktivieren Sie PayPal und geben Sie Ihre PayPal-E-Mail-Adresse ein, wenn Sie das anbieten möchten
+4. Verbinden Sie Mollie oder Stripe, wenn Kunden online bezahlen sollen, zum Beispiel mit iDEAL
+5. Änderungen auf dieser Seite werden automatisch gespeichert
 
-Die aktivierten Methoden und Hinweise erscheinen auf Dokumentvorlagen, die diese Felder unterstuetzen.
+Die aktivierten Methoden erscheinen unten auf Ihren Rechnungen.
 
 ## Online-Zahlungsanbieter
 
-Du kannst dein eigenes Mollie- oder Stripe-Konto verbinden, damit Kunden Rechnungen direkt online bezahlen koennen. Das Geld geht direkt auf dein Konto. MyCompanyDesk stellt nur die Verbindung her.
+Sie können Ihr eigenes Mollie- oder Stripe-Konto verbinden, damit Kunden Rechnungen direkt online bezahlen können. Das Geld geht direkt auf Ihr Konto. MyCompanyDesk stellt nur die Verbindung her.
 
-So verbindest du einen Anbieter:
-1. Gehe zu **Geld → Zahlungen** in deinem Arbeitsbereich
-2. Klicke unter **Online betalingen** auf **Verbind Mollie** oder **Verbind Stripe**
-3. Folge dem OAuth-Vorgang zur Autorisierung deines Kontos
-4. Nach der Verbindung enthaelt jede versendete Rechnung einen Zahlungslink fuer deine Kunden
+So verbinden Sie einen Anbieter:
+1. Gehen Sie zu **Einstellungen → Zahlung**
+2. Klicken Sie unter **Online betalingen** auf **Verbind Mollie** oder **Verbind Stripe**
+3. Folgen Sie dem OAuth-Vorgang zur Autorisierung Ihres Kontos
+4. Nach der Verbindung enthält jede versendete Rechnung einen Zahlungslink für Ihre Kunden
 
-Mollie unterstuetzt iDEAL, Bancontact, Kreditkarte und Bankueberweisung, ideal fuer niederlaendische und belgische Kunden. Stripe Connect unterstuetzt Karte, Apple Pay, Google Pay und SEPA-Lastschrift, geeignet fuer internationale Kunden.
+Mollie unterstützt iDEAL, Bancontact, Kreditkarte und Banküberweisung, ideal für niederländische und belgische Kunden. Stripe Connect unterstützt Karte, Apple Pay, Google Pay und SEPA-Lastschrift, geeignet für internationale Kunden.
 
-Zum Trennen klicke auf **Loskoppelen** auf der entsprechenden Karte. Wenn in den letzten 24 Stunden Zahlungen eingegangen sind, erscheint eine Warnung, dass moeglicherweise noch ausstehende Webhooks eintreffen und dass Rueckzahlungen fuer diese Zahlungen manuell bearbeitet werden muessen. Nach der Trennung koennen Kunden nicht mehr ueber diesen Anbieter bezahlen.
+Zum Trennen klicken Sie auf **Loskoppelen** auf der entsprechenden Karte. Wenn in den letzten 24 Stunden Zahlungen eingegangen sind, erscheint eine Warnung, dass möglicherweise noch ausstehende Webhooks eintreffen und dass Rückzahlungen für diese Zahlungen manuell bearbeitet werden müssen. Nach der Trennung können Kunden nicht mehr über diesen Anbieter bezahlen.
 
 ### Mollie-Zahlungseinstellungen
 
-Sobald Mollie verbunden ist, erscheinen ein **Betaalknop op facturen**-Schalter und ein **Betaalmethoden**-Bereich auf der Mollie-Karte. Der Schalter aktiviert oder deaktiviert die Zahlungsschaltflaeche auf allen Rechnungen, ohne Mollie zu trennen. Die Methodenliste, live aus Ihrem Mollie-Dashboard, laesst Sie auswaehlen, welche Zahlungsmethoden Ihre Kunden sehen. Mit **Stuur testbetaling** durchlaufen Sie einen kostenlosen €1-Test-Checkout ueber Mollie, um zu bestaetigen, dass alles Ende-zu-Ende funktioniert.
+Sobald Mollie verbunden ist, erscheinen ein **Betaalknop op facturen**-Schalter und ein **Betaalmethoden**-Bereich auf der Mollie-Karte. Der Schalter aktiviert oder deaktiviert die Zahlungsschaltfläche auf allen Rechnungen, ohne Mollie zu trennen. Die Methodenliste, live aus Ihrem Mollie-Dashboard, lässt Sie auswählen, welche Zahlungsmethoden Ihre Kunden sehen. Mit **Stuur testbetaling** durchlaufen Sie einen kostenlosen €1-Test-Checkout über Mollie, um zu bestätigen, dass alles Ende-zu-Ende funktioniert.
 
 ### Stripe-Zahlungseinstellungen
 
-Sobald Stripe verbunden und das Onboarding (KYC) abgeschlossen ist, erscheinen ein **Betaalknop op facturen**-Schalter und ein **Betaalmethoden**-Bereich auf der Stripe-Karte. Der Schalter aktiviert oder deaktiviert die Stripe-Zahlungsschaltflaeche auf allen Rechnungen, ohne Stripe zu trennen. Die Methodenliste, abgeglichen mit den Capabilities Ihres Stripe-Kontos, laesst Sie waehlen, welche Zahlungsmethoden Ihre Kunden beim Checkout sehen (Karte, iDEAL, Bancontact, SEPA-Lastschrift, PayPal, Klarna, Link by Stripe). Entfernen Sie alle Haekchen, um zur automatischen Methodenauswahl durch Stripe Checkout zurueckzukehren. Mit **Open Stripe Dashboard** werden Sie direkt zu Ihren Stripe-Zahlungsmethodeneinstellungen verlinkt, um Ihre Integration zu ueberpruefen und Zahlungen zu testen.
+Sobald Stripe verbunden und das Onboarding (KYC) abgeschlossen ist, erscheinen ein **Betaalknop op facturen**-Schalter und ein **Betaalmethoden**-Bereich auf der Stripe-Karte. Der Schalter aktiviert oder deaktiviert die Stripe-Zahlungsschaltfläche auf allen Rechnungen, ohne Stripe zu trennen. Die Methodenliste, abgeglichen mit den Capabilities Ihres Stripe-Kontos, lässt Sie wählen, welche Zahlungsmethoden Ihre Kunden beim Checkout sehen (Karte, iDEAL, Bancontact, SEPA-Lastschrift, PayPal, Klarna, Link by Stripe). Entfernen Sie alle Häkchen, um zur automatischen Methodenauswahl durch Stripe Checkout zurückzukehren. Mit **Open Stripe Dashboard** werden Sie direkt zu Ihren Stripe-Zahlungsmethodeneinstellungen verlinkt, um Ihre Integration zu überprüfen und Zahlungen zu testen.

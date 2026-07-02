@@ -9,7 +9,7 @@ chatbot:
 ---
 
 Here's how to add an expense:
-1. Go to Expenses and open "New Expense"
+1. Go to Expenses and click "Add"
 2. Enter the supplier, category, description, amount, and date
 3. Save the expense so the record is created
 4. If you want to attach a receipt, open the saved expense and use "Upload Receipt" on the detail page

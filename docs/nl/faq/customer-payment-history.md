@@ -1,5 +1,5 @@
 ---
-title: Customer payment history
+title: "Betalingsgeschiedenis van een klant"
 last_verified: 2026-05-09
 chatbot:
   triggers: ["customer payment history", "payment history", "customer invoices", "customer payments", "betalingsgeschiedenis", "klant facturen bekijken", "zahlungshistorie", "historique paiements client"]
@@ -10,8 +10,7 @@ chatbot:
 
 Om de betalingsgeschiedenis van een klant te bekijken:
 1. Open Klanten en selecteer de klant
-2. Open in het klantprofiel het overzicht met facturen of betalingsgeschiedenis
-3. Bekijk daar de factuurstatussen, vervaldata, betaaldata en geregistreerde bedragen
-4. Open vanuit die lijst een factuur als je de volledige detailpagina nodig hebt
+2. Bekijk de kaart "Recente facturen" op het klantprofiel; daar zie je per factuur het nummer, de datum, het totaal en de status
+3. Open een factuur vanuit die kaart voor de betaalgegevens, zoals wanneer en hoe er is betaald
 
-Dit antwoord blijft beperkt tot wat de app registreert en waar je het vindt.
+De volledige betaalinformatie vind je op de detailpagina van de factuur; het klantprofiel geeft je het snelle statusoverzicht.

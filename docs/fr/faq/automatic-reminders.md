@@ -1,18 +1,18 @@
 ---
-title: Automatic reminders
-last_verified: 2026-05-09
+title: "Rappels automatiques"
+last_verified: 2026-07-02
 chatbot:
   triggers: ["automatic reminders", "auto reminder", "scheduled reminders", "reminder automation", "automatische herinnering", "herinneringen instellen", "automatische erinnerung", "rappels automatiques"]
   actions:
-    - { label: "Open company invoicing", to: "/company?section=invoicing" }
-    - { label: "Open email templates", to: "/settings?section=emails" }
-  follow_up: ["How do I send a manual reminder?", "How do I view overdue invoices?", "How do I customize the reminder message?"]
+    - { label: "Open invoice settings", to: "/settings/facturen" }
+  follow_up: ["How do I send a manual reminder?", "How do I view overdue invoices?", "How do I set payment terms?"]
 ---
 
-Pour configurer des rappels automatiques :
-1. Accédez à Entreprise → Facturation
-2. Activez les rappels automatiques à cet endroit
-3. Les changements dans cette section sont enregistrés automatiquement
-4. Ouvrez Paramètres de l espace de travail → Modèles d e-mail si vous voulez modifier le texte du rappel
+Pour configurer les rappels de paiement automatiques :
+1. Allez dans Paramètres → "Factures et devis"
+2. Activez l'interrupteur "En retard ? Envoyer automatiquement un rappel"
+3. Les modifications sont enregistrées automatiquement
 
-Vérifiez ensuite une facture exemple en retard ainsi que le modèle de rappel pour voir comment le flux apparaît dans l application.
+Quand une facture dépasse de quelques jours sa date d'échéance, MyCompanyDesk envoie automatiquement un rappel courtois, puis le répète chaque semaine jusqu'au paiement. Les e-mails de rappel utilisent des modèles système fixes ; le texte ne peut pas être modifié.
+
+Astuce : besoin de relancer un client tout de suite ? Vous pouvez aussi envoyer un rappel manuel depuis la facture.

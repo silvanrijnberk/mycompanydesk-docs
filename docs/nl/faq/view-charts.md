@@ -1,5 +1,5 @@
 ---
-title: "View charts"
+title: "Grafieken bekijken"
 last_verified: 2026-05-09
 chatbot:
   triggers: ["view charts", "see graphs", "financial charts", "revenue chart", "expense chart", "grafieken bekijken", "diagramme anzeigen", "voir graphiques"]
@@ -9,9 +9,9 @@ chatbot:
 ---
 
 Om grafieken en diagrammen te bekijken:
-1. Ga naar Rapporten
-2. Open de grafieksectie
-3. Gebruik datumfilters om de periode aan te passen
-4. Klik door naar gerelateerde records als je een piek of daling ziet
+1. Ga naar Rapporten in de zijbalk
+2. Open een van de rapportweergaven: het overzicht, Winst & verlies, Cashflow, Klanten of Prognose
+3. De grafieken zitten in elke weergave ingebouwd; er is geen aparte grafieksectie
+4. Gebruik de periodefilters om het tijdvak aan te passen
 
-Als grafiekwaarden niet kloppen, controleer dan eerst de actieve filters.
+Tip: Controleer altijd eerst de actieve filters als grafiekwaarden niet lijken te kloppen.

@@ -1,6 +1,6 @@
 ---
-title: "Add VAT number"
-last_verified: 2026-05-09
+title: "USt-IdNr. hinzufügen"
+last_verified: 2026-07-02
 chatbot:
   triggers:
     - "add vat number"
@@ -11,15 +11,15 @@ chatbot:
     - "ust id eingeben"
     - "numero tva"
   actions:
-    - { label: "Open company info", to: "/company?section=company" }
+    - { label: "Open business details", to: "/settings/bedrijfsgegevens" }
   follow_up:
     - "How do I set up my company settings?"
     - "How do I set VAT on an invoice?"
 ---
 
-So fuegst du deine USt-IdNr. hinzu oder aenderst sie:
-1. Gehe zu Unternehmen → Unternehmensinfo
-2. Finde dort das Feld „USt-IdNr."
-3. Aenderungen werden automatisch gespeichert
+So fügen Sie Ihre USt-IdNr. hinzu oder ändern sie:
+1. Gehen Sie zu Einstellungen → „Unternehmensdaten"
+2. Füllen Sie dort das Feld „USt-IdNr." aus
+3. Änderungen werden automatisch gespeichert
 
-Deine USt-IdNr. wird danach auf erzeugten Dokumenten verwendet. Fuer Kunden-USt-Nummern oeffnest du das Kundenprofil und pflegst dort das Feld ein.
+Ihre USt-IdNr. wird danach auf erzeugten Dokumenten verwendet. Für Kunden-USt-Nummern öffnen Sie das Kundenprofil und pflegen dort das Feld ein.

@@ -24,8 +24,9 @@ chatbot:
 
 To view your reports:
 1. Go to Reports
-2. Use the date range picker to filter the period
-3. Apply status/category filters as needed
-4. Open chart or table rows to inspect underlying records
+2. Switch between the five views: Overview, P&L, Cash Flow, Clients, and Forecast
+3. Use the filters to set the period granularity (year, quarter, month, week, or day), pick the year, include open invoices, or compare with another year
 
-Tip: If a number looks wrong, verify active filters and date range first.
+There are no status or category filters on reports; the period and comparison filters apply across all views.
+
+Tip: If a number looks wrong, verify the active period and comparison settings first.

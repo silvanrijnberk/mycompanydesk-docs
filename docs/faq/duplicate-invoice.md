@@ -1,6 +1,6 @@
 ---
 title: Duplicate an invoice
-last_verified: 2026-05-09
+last_verified: 2026-07-02
 chatbot:
   triggers: ["duplicate invoice", "copy invoice", "clone invoice", "reuse invoice", "invoice template", "factuur kopieren", "factuur dupliceren", "rechnung kopieren", "dupliquer facture"]
   actions:
@@ -10,9 +10,9 @@ chatbot:
 
 To duplicate an invoice:
 1. Open the invoice you want to copy
-2. In the sidebar, find the "Quick Actions" card
+2. In the sidebar, find the "Actions" section
 3. Click "Duplicate"
 4. A new draft is created with the same line items and customer
 5. Adjust the date, amounts, or details as needed and save
 
-Tip: This is great for similar invoices to the same customer - saves re-entering all line items.
+Tip: This is great for similar invoices to the same customer, it saves re-entering all line items.

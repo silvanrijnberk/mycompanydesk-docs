@@ -10,7 +10,7 @@ chatbot:
 
 To find a customer:
 1. Go to Customers
-2. Use the search bar at the top to type the customer name, email, or company
+2. Use the search bar at the top; it matches the customer name, customer number, email, and city
 3. Results filter in real-time as you type
 
-Tip: You can also sort the customer list by name or date to browse through your accounts.
+Tip: The list is always in name order, with favorites pinned to the top. Mark customers you work with often as favorites (the star) so they are always at hand.

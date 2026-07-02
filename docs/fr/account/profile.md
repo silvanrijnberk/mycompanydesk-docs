@@ -1,59 +1,50 @@
 ---
-title: Profil
+title: Vos paramètres personnels
+last_verified: 2026-07-02
 ---
 
-# Profil
+# Vos paramètres personnels
 
-Gerez vos parametres personnels de compte, vos preferences et vos notifications.
+Vos paramètres personnels se trouvent dans le même espace Paramètres que tout le reste. Ouvrez **Paramètres** et regardez le groupe **À votre sujet** en haut : quatre lignes qui ne concernent que votre propre compte, jamais vos coéquipiers. Les modifications sur ces pages s'enregistrent automatiquement pendant que vous tapez.
 
-## Informations personnelles
+Voir l'[aperçu des paramètres](/fr/settings/) pour la page de paramètres complète.
 
-Mettez a jour votre profil depuis la page **Profil** :
+## Vos données
 
-- **Nom** -- Votre nom d'affichage
-- **E-mail** -- Votre adresse e-mail de connexion
-- **Photo de profil** -- Telechargez une photo ou un avatar
-- **Langue** -- L'interface de MyCompanyDesk est en neerlandais. Il n'y a pas de parametre de langue de l'interface. La langue des documents (factures, devis, e-mails) se definit par document via Entreprise → Facturation.
+Votre nom, votre adresse e-mail et votre photo de profil.
 
-### Langue
+- **Prénom** et **nom**. Votre nom figure aussi sur vos factures.
+- **Adresse e-mail**. C'est votre identifiant de connexion et elle ne peut pas être modifiée ici; le champ est en lecture seule.
+- **Photo de profil**. Téléversez un PNG, JPG ou WebP de 5 Mo maximum. Vos clients la voient sur les e-mails que vous envoyez. La photo est facultative et vous pouvez la retirer à tout moment.
 
-L'interface de MyCompanyDesk est en neerlandais. Il n'y a pas de parametre de langue de l'interface. Les factures, devis et e-mails peuvent etre rediges en neerlandais, anglais, allemand ou francais via Entreprise → Facturation (langue PDF).
+## Affichage
 
-Vous ne gerez plus votre mot de passe via Profil mais via [Connexion securisee](/fr/account/security).
+L'apparence de l'application pour vous, sur chaque appareil où vous vous connectez.
 
-## Preferences de notification
+- **Thème** : clair, sombre ou automatique. Le mode automatique suit votre appareil : clair en journée, sombre le soir.
+- **Taille du texte** : normale ou grande, pour une lecture plus confortable.
+- **Langue de l'application** : néerlandais, anglais, allemand ou français. Cela ne change que les menus et boutons pour vous; la langue de vos factures et devis est un choix séparé, par document.
+- **Paramètres avancés** : un interrupteur par appareil qui révèle des options techniques supplémentaires dans l'application, comme la gestion DNS et SSL sur les pages de domaine. Laissez-le désactivé si vous n'en avez pas besoin.
 
-Controlez quelles notifications vous recevez et comment :
+## Notifications
 
-### Notifications par e-mail
+Quatre interrupteurs déterminent les sujets sur lesquels MyCompanyDesk vous envoie un message, dans l'application et par e-mail :
 
-- **Facture payee** -- Lorsqu'un client paie une facture
-- **Demande de devis recue** -- Lorsque quelqu'un demande un devis via votre page d'entreprise
-- **Activite de l'equipe** -- Lorsque des membres de l'equipe effectuent des actions
-- **Depense approuvee** -- Lorsqu'une depense est approuvee
+- Quand une facture est payée en retard, pour relancer aussitôt.
+- Quand un client a payé.
+- Quand votre déclaration de TVA approche, avec une bonne avance.
+- Conseils et nouveautés de MyCompanyDesk, au plus un e-mail par mois.
 
-### Resume par e-mail
+Les messages vraiment importants concernant votre compte sont toujours envoyés; ils ne peuvent pas être désactivés.
 
-Choisissez la frequence a laquelle vous recevez les e-mails de synthese :
+Sous les interrupteurs, vous pouvez activer les **notifications push sur cet appareil**, pour que les factures en retard, les paiements et les échéances vous parviennent aussi sous forme de notification sur votre téléphone ou ordinateur. Votre navigateur ou téléphone demandera l'autorisation la première fois.
 
-- **Quotidien** -- Resume quotidien de l'activite
-- **Hebdomadaire** -- Recapitulatif de la semaine
-- **Mensuel** -- Vue d'ensemble mensuelle
-- **Desactive** -- Pas d'e-mails de synthese
+## Agendas connectés
 
-### Notifications push
+Vous pouvez connecter **Google Agenda** ou **Outlook** pour que les rendez-vous de votre agenda apparaissent aussi dans MyCompanyDesk. Ce n'est pas une ligne de la page des paramètres : ouvrez l'agenda dans l'application et allez dans ses réglages, où la page des connexions d'agenda est accessible. Chaque connexion peut être retirée depuis la même page.
 
-Activez les notifications push du navigateur pour des alertes en temps reel lorsque l'application est ouverte.
+## Pages associées
 
-### Notifications dans l'application
-
-Notifications en temps reel dans l'interface MyCompanyDesk. Elles sont toujours actives et apparaissent dans la cloche de notification dans l'en-tete.
-
-## Applications connectees
-
-Consultez et gerez les connexions OAuth :
-
-- **Google** -- Connecte pour la connexion et/ou l'envoi via Gmail
-- **Microsoft** -- Connecte pour la connexion et/ou l'envoi via Outlook
-
-Revoquez l'acces pour deconnecter une application de votre compte.
+- [Aperçu des paramètres](/fr/settings/) pour tout le reste de la page des paramètres.
+- [Sécurité](/fr/account/security) pour les mots de passe, la vérification en deux étapes et les passkeys, sous **Connexion**.
+- [Import et export de données](/fr/account/data) pour télécharger une copie de vos données.

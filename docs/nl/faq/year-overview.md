@@ -1,5 +1,5 @@
 ---
-title: "Year overview"
+title: "Jaaroverzicht"
 last_verified: 2026-05-09
 chatbot:
   triggers:
@@ -23,8 +23,8 @@ chatbot:
 
 Om een volledig jaar in de app te bekijken:
 1. Open Rapporten
-2. Zet de datumfilter op het jaar dat je wilt controleren
-3. Open de overzichtskaarten en de bijbehorende rapportsecties voor de gegevens die je wilt bekijken
-4. Exporteer het zichtbare rapport als je precies die weergave buiten de app nodig hebt
+2. Zet de periodefilter op Jaar en kies het jaar dat je wilt bekijken
+3. Het overzicht toont de hoofdcijfers; ga naar de weergave Winst & verlies, Cashflow, Klanten of Prognose voor meer detail
+4. Zet de vergelijkingsfilter aan om het jaar naast een eerder jaar te zien
 
-Dit antwoord blijft beperkt tot waar je het jaaroverzicht in de app vindt.
+Tip: Met de filter "Inclusief open facturen" bepaal je of onbetaalde facturen meetellen in de totalen.

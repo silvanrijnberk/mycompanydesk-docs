@@ -1,59 +1,50 @@
 ---
-title: Profil
+title: Ihre persönlichen Einstellungen
+last_verified: 2026-07-02
 ---
 
-# Profil
+# Ihre persönlichen Einstellungen
 
-Verwalten Sie Ihre persönlichen Kontoeinstellungen, Präferenzen und Benachrichtigungen.
+Ihre persönlichen Einstellungen liegen im selben Einstellungsbereich wie alles andere. Öffnen Sie **Einstellungen** und schauen Sie oben in die Gruppe **Über dich**: vier Zeilen, die nur Ihr eigenes Konto betreffen, nie Ihre Teamkollegen. Änderungen auf diesen Seiten werden automatisch gespeichert, während Sie tippen.
 
-## Persönliche Informationen
+Siehe die [Übersicht der Einstellungen](/de/settings/) für die vollständige Einstellungsseite.
 
-Aktualisieren Sie Ihr Profil über die **Profil**-Seite:
+## Deine Daten
 
-- **Name** — Ihr Anzeigename
-- **E-Mail** — Ihre Anmelde-E-Mail
-- **Profilbild** — Laden Sie ein Foto oder einen Avatar hoch
-- **Sprache**: Die MyCompanyDesk-Oberflache ist auf Niederlandisch. Es gibt keine Einstellung fur die Oberflachensprache. Die Dokumentensprache (fur Rechnungen, Angebote und E-Mails) legen Sie pro Dokument uber Unternehmen → Rechnungsstellung fest.
+Ihr Name, Ihre E-Mail-Adresse und Ihr Profilfoto.
 
-### Sprache
+- **Vorname** und **Nachname**. Ihr Name erscheint auch auf Ihren Rechnungen.
+- **E-Mail-Adresse**. Das ist Ihr Login und kann hier nicht geändert werden; das Feld ist schreibgeschützt.
+- **Profilfoto**. Laden Sie ein PNG, JPG oder WebP von maximal 5 MB hoch. Kunden sehen das Foto bei E-Mails, die Sie senden. Ein Foto ist optional, und Sie können es jederzeit wieder entfernen.
 
-Die MyCompanyDesk-Oberflache ist auf Niederlandisch. Es gibt keine Oberflachenspracheinstellung. Rechnungen, Angebote und E-Mails konnen auf Niederlandisch, Englisch, Deutsch oder Franzosisch erstellt werden via Unternehmen → Rechnungsstellung (PDF-Sprache).
+## Darstellung
 
-Ihr Passwort verwalten Sie nicht mehr uber Profil, sondern uber [Sicher einloggen](/de/account/security).
+Wie die App für Sie aussieht, auf jedem Gerät, auf dem Sie sich anmelden.
 
-## Benachrichtigungseinstellungen
+- **Design**: Hell, Dunkel oder Automatisch. Automatisch folgt Ihrem Gerät: tagsüber hell, abends dunkel.
+- **Schriftgröße**: Normal oder Groß, für entspannteres Lesen.
+- **Sprache der App**: Niederländisch, Englisch, Deutsch oder Französisch. Das ändert nur die Menüs und Schaltflächen für Sie; die Sprache Ihrer Rechnungen und Angebote ist eine eigene Wahl pro Dokument.
+- **Erweiterte Einstellungen**: ein Schalter pro Gerät, der zusätzliche technische Optionen in der App sichtbar macht, etwa DNS- und SSL-Verwaltung auf den Domain-Seiten. Lassen Sie ihn aus, wenn Sie diese nicht brauchen.
 
-Steuern Sie, welche Benachrichtigungen Sie erhalten und wie:
+## Benachrichtigungen
 
-### E-Mail-Benachrichtigungen
+Vier Schalter legen fest, worüber MyCompanyDesk Ihnen eine Nachricht schickt, in der App und per E-Mail:
 
-- **Rechnung bezahlt** — Wenn ein Kunde eine Rechnung bezahlt
-- **Angebotsanfrage eingegangen** — Wenn jemand über Ihre Geschäftsseite ein Angebot anfragt
-- **Teamaktivitäten** — Wenn Teammitglieder Aktionen durchführen
-- **Ausgabe genehmigt** — Wenn eine Ausgabe genehmigt wird
+- Wenn eine Rechnung zu spät bezahlt wurde, damit Sie sofort nachfassen können.
+- Wenn ein Kunde bezahlt hat.
+- Wenn Ihre Umsatzsteuererklärung bald fällig ist, mit reichlich Vorlauf.
+- Tipps und Neuigkeiten von MyCompanyDesk, höchstens eine E-Mail pro Monat.
 
-### E-Mail-Zusammenfassung
+Wirklich wichtige Nachrichten zu Ihrem Konto senden wir immer; diese lassen sich nicht abschalten.
 
-Wählen Sie, wie häufig Sie Zusammenfassungs-E-Mails erhalten:
+Unter den Schaltern aktivieren Sie **Push-Benachrichtigungen auf diesem Gerät**, damit überfällige Rechnungen, Zahlungen und Fristen Sie auch als Benachrichtigung auf Ihrem Telefon oder Computer erreichen. Ihr Browser oder Telefon fragt beim ersten Mal um Erlaubnis.
 
-- **Täglich** — Tägliche Aktivitätsübersicht
-- **Wöchentlich** — Wöchentliche Zusammenfassung
-- **Monatlich** — Monatlicher Überblick
-- **Aus** — Keine Zusammenfassungs-E-Mails
+## Verbundene Kalender
 
-### Push-Benachrichtigungen
+Sie können **Google Kalender** oder **Outlook** verbinden, damit Termine aus Ihrem Kalender auch in MyCompanyDesk erscheinen. Das ist keine Zeile auf der Einstellungsseite: Öffnen Sie den Kalender in der App und gehen Sie in dessen Einstellungen, dort ist die Seite mit den Kalenderverbindungen verlinkt. Jede Verbindung lässt sich auf derselben Seite wieder entfernen.
 
-Aktivieren Sie Browser-Push-Benachrichtigungen für Echtzeit-Warnungen, wenn die App geöffnet ist.
+## Verwandte Seiten
 
-### In-App-Benachrichtigungen
-
-Echtzeit-Benachrichtigungen innerhalb der MyCompanyDesk-Oberfläche. Diese sind immer aktiv und erscheinen in der Benachrichtigungsglocke in der Kopfzeile.
-
-## Verbundene Apps
-
-Sehen und verwalten Sie OAuth-Verbindungen:
-
-- **Google** — Verbunden für Anmeldung und/oder Gmail-Versand
-- **Microsoft** — Verbunden für Anmeldung und/oder Outlook-Versand
-
-Widerrufen Sie den Zugriff, um eine App von Ihrem Konto zu trennen.
+- [Übersicht der Einstellungen](/de/settings/) für alles Weitere auf der Einstellungsseite.
+- [Sicherheit](/de/account/security) für Passwörter, Bestätigung in zwei Schritten und Passkeys, zu finden unter **Anmelden**.
+- [Datenimport und -export](/de/account/data) zum Herunterladen einer Kopie Ihrer Daten.

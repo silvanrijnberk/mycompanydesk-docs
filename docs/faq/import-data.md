@@ -1,6 +1,6 @@
 ---
 title: "Import data"
-last_verified: 2026-05-09
+last_verified: 2026-07-02
 chatbot:
   triggers:
     - "import data"
@@ -13,17 +13,21 @@ chatbot:
     - "gegevens importeren"
     - "daten importieren"
     - "importer donnees"
-  actions: []
+  actions:
+    - { label: "Open import page", to: "/profile/import" }
   follow_up:
     - "How do I export my data?"
     - "How do I add customers manually?"
 ---
 
-To import data into the application:
-1. Go to My Account → Data
-2. Click "Import from CSV"
-3. Choose the data type you want to import
-4. Download the template CSV to see the required format
-5. Fill in your data, upload the file, and confirm the preview
+MyCompanyDesk can import customers, invoices, and expenses from a CSV file. Other data types cannot be imported.
 
-Tip: Start with a small test import to verify the format before importing large datasets.
+The import page lives at `/profile/import`. There is no menu entry for it, so open it via the button above or by entering the address directly. Then:
+
+1. Choose the data type: customers, invoices, or expenses
+2. Upload your CSV file
+3. Match the columns of your file to the right fields and confirm the preview
+
+There is no template CSV to download; the import works with the columns of your own file and lets you map them during the upload.
+
+Tip: Start with a small test import to verify the mapping before importing large datasets.

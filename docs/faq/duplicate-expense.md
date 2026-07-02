@@ -9,10 +9,9 @@ chatbot:
 ---
 
 To duplicate an expense:
-1. Open the expense you want to copy
-2. In the sidebar, find the "Actions" card
-3. Click "Duplicate"
-4. A new expense is created with the same details
-5. Adjust the date, amount, or other details as needed
+1. Open the paid expense you want to copy. Duplicate is only available on paid expenses; an unpaid expense shows "Mark as Paid" instead
+2. Click "Duplicate" in the header, or use it from the "Actions" card in the sidebar
+3. A new unpaid copy is created with the same details, dated today
+4. Adjust the amount or other details as needed
 
 Tip: Useful for regular expenses that occur with slight variations each time.

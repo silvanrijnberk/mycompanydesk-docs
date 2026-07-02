@@ -1,16 +1,18 @@
 ---
-title: "Invoice number"
-last_verified: 2026-05-09
+title: "Rechnungsnummer"
+last_verified: 2026-07-02
 chatbot:
   triggers: ["invoice number", "change invoice number", "invoice numbering", "set invoice number", "numbering format", "factuurnummer", "factuurnummering", "rechnungsnummer", "numero facture"]
   actions:
-    - { label: "Open company invoicing", to: "/company?section=invoicing" }
-  follow_up: ["How do I set up my company settings?", "How do I change the invoice format?", "How do I create my first invoice?"]
+    - { label: "Open invoices", to: "/invoices" }
+    - { label: "Reset invoice numbering", to: "/settings/opzeggen" }
+  follow_up: ["How do I set up my company settings?", "How do I change the PDF style?", "How do I create my first invoice?"]
 ---
 
-Rechnungsnummern werden automatisch verwaltet:
-• Jede neue finale Rechnung erhaelt die naechste laufende Nummer
-• Das Format folgt deinen Firmeneinstellungen
-• Du siehst das Nummernformat in Einstellungen → Firmenprofil
+Rechnungsnummern werden automatisch vergeben:
+1. Erstellen Sie eine Rechnung; MyCompanyDesk nummeriert sie fortlaufend, so wie es das Finanzamt erwartet
+2. Es gibt kein Nummernformat zu konfigurieren
+3. Sie brauchen eine bestimmte Nummer auf einem Entwurf? Öffnen Sie die Rechnung im Formular und klicken Sie in der Seitenleiste auf "Eigene Nummer eingeben"
+4. Um die Serie neu zu starten, gehen Sie zu Einstellungen → "Konto kündigen" und nutzen Sie "Rechnungsnummerierung zurücksetzen"
 
-Entwurfsrechnungen kannst du meist vor der Finalisierung loeschen, ohne dass die naechste gespeicherte Nummer verwendet wird.
+Tipp: Entwürfe haben noch keine endgültige Nummer. Löschen Sie Testentwürfe, bevor Sie sie abschließen, dann bleibt Ihre Serie lückenlos.

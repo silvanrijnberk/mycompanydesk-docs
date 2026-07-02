@@ -1,5 +1,5 @@
 ---
-title: Delete an expense
+title: "Uitgave verwijderen"
 last_verified: 2026-05-09
 chatbot:
   triggers: ["delete expense", "remove expense", "trash expense", "erase expense", "uitgave verwijderen", "uitgave wissen", "hoe verwijder ik een uitgave", "ausgabe loschen", "wie losche ich eine ausgabe", "supprimer depense"]
@@ -14,4 +14,4 @@ Om een uitgave te verwijderen:
 3. Klik op "Verwijderen"
 4. Bevestig de verwijdering
 
-Verwijderde uitgaven verdwijnen uit de gerelateerde lijsten, totalen en rapporten in de app.
+Verwijderen gaat in stappen. Een actieve uitgave verwijderen archiveert deze eerst, nog een keer verwijderen vanuit het Archief verplaatst de uitgave naar de Prullenbak, en verwijderen vanuit de Prullenbak is definitief. Tot die laatste stap kun je de uitgave altijd terugzetten vanuit de weergave Archief of Prullenbak. Let op: uitgaven selecteren in de lijst en daar de bulkactie Verwijderen gebruiken verwijdert ze meteen definitief.

@@ -1,110 +1,102 @@
 ---
-title: Teambeheer
+title: Toegang en boekhouder
+last_verified: 2026-07-02
 ---
 
-# Teambeheer
+# Toegang en boekhouder
 
-Nodig teamleden uit, wijs rollen toe en bepaal wie toegang heeft tot wat in je werkruimte.
+Geef een partner, medewerker of je boekhouder toegang tot je administratie. Iedereen krijgt een eigen login.
 
-## Teamleden uitnodigen
+## Waar vind je het
 
-1. Ga naar **Instellingen > Team** of **Bedrijf > Teamleden**
-2. Klik op **Lid uitnodigen**
-3. Vul het **e-mailadres** van de persoon in
-4. Kies een **rol** (zie hieronder)
-5. Klik op **Uitnodiging versturen**
+Open **Instellingen** via het menu en kies **Toegang en boekhouder**, of ga direct naar `/settings/team`. Oude links naar de teaminstellingen verwijzen hierheen door.
 
-De genodigde ontvangt een e-mail met een link om deel te nemen aan je werkruimte. Als ze nog geen MyCompanyDesk-account hebben, kunnen ze er een aanmaken tijdens het proces.
+De pagina heeft twee onderdelen:
+
+- **Mensen met toegang**: nodig teamgenoten uit en bepaal wat ze kunnen zien en doen. Dit onderdeel vereist het Pro-abonnement; op Free en Starter zie je een upgrade-melding. Op Pro zit er geen limiet op het aantal mensen dat je uitnodigt.
+- **Boekhouder**: nodig je boekhouder uit en beheer diens toegang. Dit onderdeel is gratis op elk abonnement.
+
+## Wat staat er op de pagina
+
+### Naam van de werkruimte
+
+Een kaart met een enkel veld. De naam van de werkruimte verschijnt in de navigatie, op uitnodigingen en in het accountmenu in de app. Alleen teamadmins kunnen de naam wijzigen. Wijzigingen worden automatisch opgeslagen.
+
+### Huidige leden
+
+Een lijst van iedereen die kan inloggen. Elke rij toont:
+
+- Avatar met initialen en een aanwezigheidsstip (groen online, grijs inactief, verborgen als je geen admin bent)
+- Naam en e-mailadres
+- Rolbadge of rolkiezer (alleen admin)
+- Een instellingenicoon dat het paneel **Toegang beheren** opent
+- Laatste activiteit ("2 minuten geleden actief", "Gisteren voor het laatst gezien"), alleen admin
+
+Is de lijst leeg, dan toont de kaart de solostand: je werkt alleen, je werkruimte werkt volledig, en je voegt teamgenoten toe wanneer je er klaar voor bent.
+
+### Iemand toegang geven
+
+Admins typen een e-mailadres en versturen de uitnodiging. In de app heet de knop **Iemand toegang geven**. De genodigde ontvangt een e-mail met een link; wie nog geen MyCompanyDesk-account heeft, maakt er tijdens het accepteren een aan. Openstaande uitnodigingen staan in een aparte kaart met verzendtijd en een badge.
+
+Ben je geen admin, dan zie je in plaats daarvan een infomelding: alleen teamadmins kunnen nieuwe leden uitnodigen.
+
+### Boekhouder
+
+Een aparte lijst voor externe boekhouders, gratis op elk abonnement. Je boekhouder kan je cijfers zien en je aangifte controleren zonder een Pro-teamplek in te nemen. Elke rij toont een status:
+
+| Badge | Betekenis |
+|---|---|
+| **Alleen contact** | In je adresboek, geen toegang tot de app |
+| **Uitgenodigd** | Uitnodigingsmail verstuurd, nog niet geaccepteerd |
+| **Geactiveerd** | Heeft een account en kan inloggen |
+| **Ingetrokken** | Toegang verwijderd (kan later hersteld worden) |
+
+Adminacties per rij: **Boekhouder uitnodigen**, het paneel **Toegang beheren** en **Verwijderen**.
 
 ## Rollen
 
 | Rol | Beschrijving |
 |---|---|
-| **Admin** | Volledige toegang tot alles, inclusief team- en factureringsbeheer |
-| **Lid** | Toegang tot toegewezen functies, kan geen team of facturering beheren |
-| **Accountant** | Alleen-lezen toegang met specifieke boekhoudweergaven |
+| **Admin** | Volledige toegang. Kan leden uitnodigen en verwijderen, rollen wijzigen, het abonnement beheren en bedrijfsinstellingen aanpassen. |
+| **Lid** | Toegang tot wat de admin toekent in het paneel Toegang beheren. |
+| **Boekhouder** | Een apart type contact. Krijgt toegang via de boekhouderflow in plaats van de ledenuitnodiging. |
 
-### Admin
-
-Admins kunnen:
-
-- Teamleden beheren (uitnodigen, verwijderen, rollen wijzigen)
-- Facturerings- en abonnementsinstellingen openen
-- Bedrijfsinstellingen configureren
-- Alle functies openen
-
-### Lid
-
-Leden hebben toegang tot de functies die je aan hen toewijst. Configureer hun rechten per functie.
-
-### Accountant
-
-Een speciale rol voor externe accountants:
-
-- Financiele gegevens bekijken (facturen, uitgaven, rapportages)
-- Kan standaard geen records aanmaken of wijzigen
-- Specifieke rechtenset voor controledoeleinden
+Rollen wissel je direct op de ledenrij via een menu (alleen admin). Je eigen rol kun je niet wijzigen.
 
 ## Rechten
 
-Fijnmazige rechten stellen je in staat om toegang per functie te bepalen:
+Het paneel **Toegang beheren** opent een rechtentabel per pagina. Elke rij is een onderdeel van de app: Dashboard, Facturen, Uitgaven, Klanten, Projecten, Objecten, Contracten, Offertes, Verhuur, Rapportages en Instellingen.
 
-### Paginatoegang
+Per pagina zijn er drie losse schakelaars:
 
-Kies welke secties elk lid kan zien:
+- **Lezen**: ziet de pagina en de gegevens erop
+- **Schrijven**: kan bestaande gegevens bewerken
+- **Aanmaken**: kan nieuwe gegevens toevoegen
 
-- Facturen
-- Offertes
-- Uitgaven
-- Klanten
-- Projecten
-- Contracten
-- Objecten
-- Tijdregistratie
-- Rapportages
-- BTW
-- Instellingen
+Het paneel heeft ook een melding **Toegang ingetrokken** voor accounts die zijn geblokkeerd (met de herstelknop zet je ze weer aan).
 
-### Bewerkrechten
+## Inlogbeveiliging
 
-Voor elke toegankelijke pagina kies je of het lid kan:
+De inlogbeveiliging van elk lid staat op het eigen account, onder **Instellingen** en dan **Inloggen**, niet op deze pagina:
 
-- **Alleen bekijken** — Leestoegang, geen wijzigingen
-- **Bewerken** — Volledige lees-/schrijftoegang
+- **Passkeys**: leden kunnen een of meer passkeys registreren; daarna is de passkeyknop de standaard manier van inloggen in plaats van het wachtwoordveld.
+- **Tweestapsverificatie**: staat die aan, dan vraagt het inloggen na het wachtwoord om een 6-cijferige code uit een authenticator-app.
 
-## Accountantcontacten
+Admins kunnen de passkeys of tweestapsverificatie van een ander lid niet beheren; dat zijn persoonlijke gegevens. Wie buitengesloten is, gebruikt de herstelfunctie op het inlogscherm om ze te resetten.
 
-Beheer relaties met externe accountants:
+## Wisselen tussen werkruimtes
 
-1. Ga naar **Instellingen > Team > Accountants**
-2. Klik op **Accountant toevoegen**
-3. Vul hun naam en e-mailadres in
-4. Klik op **Uitnodigen** om toegang te versturen
-5. Configureer hun specifieke rechten
+Open de werkruimtewisselaar in de bovenbalk om tussen werkruimtes te springen of een nieuwe aan te maken.
 
-### Accountanttoegang beheren
+## Abonnementen in het kort
 
-- **Uitnodigen** — Verstuur of verstuur de toegangsuitnodiging opnieuw
-- **Intrekken** — Verwijder toegang (kan later worden hersteld)
-- **Herstellen** — Eerder ingetrokken toegang opnieuw inschakelen
-- **Rechten bijwerken** — Wijzig wat ze kunnen zien
+| Mogelijkheid | Free | Starter | Pro |
+|---|---|---|---|
+| Alleen de eigenaar | ja | ja | ja |
+| Teamleden uitnodigen | nee | nee | ja (onbeperkt) |
+| Boekhoudertoegang | ja | ja | ja |
 
-## Wisselen tussen werkruimten
+## Gerelateerd
 
-Als je lid bent van meerdere werkruimten (bedrijven), wissel je ertussen:
-
-1. Klik op je accountmenu
-2. Selecteer **Werkruimte wisselen**
-3. Kies de werkruimte
-
-Of maak een **nieuwe werkruimte** aan vanuit hetzelfde menu.
-
-## Tips
-
-- Gebruik de accountantrol voor je boekhouder — deze biedt precies de toegang die ze nodig hebben
-- Stel lidrechten zorgvuldig in — niet iedereen heeft toegang nodig tot facturering of teaminstellingen
-- Controleer teamtoegang periodiek, vooral wanneer teamleden van rol wisselen
-
-::: info
-Teambeheer met meer dan 1 lid vereist het **Pro**-abonnement. Extra gebruikers zijn apart bij te boeken via stoel-add-ons.
-:::
+- [Abonnement en betalingen](/nl/settings/billing) om teamleden te ontgrendelen
+- [Account en beveiliging](/nl/account/security) voor passkeys en tweestapsverificatie

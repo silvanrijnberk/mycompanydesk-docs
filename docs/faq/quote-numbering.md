@@ -1,6 +1,6 @@
 ---
 title: "Quote numbering"
-last_verified: 2026-05-09
+last_verified: 2026-07-02
 chatbot:
   triggers:
     - "quote number"
@@ -15,16 +15,16 @@ chatbot:
     - "numero proposta"
     - "numero preventivo"
   actions:
-    - { label: "Open company setup", to: "/company?section=invoicing" }
+    - { label: "Open quotes", to: "/quotes" }
   follow_up:
     - "How do I set quote validity?"
     - "How do I edit a quote number safely?"
     - "How do I create a new quote?"
 ---
 
-Quote numbering uses your company invoicing numbering settings:
-1. Go to Company setup → Invoicing
-2. Configure prefix, next number, and format
-3. New quotes follow that sequence and format
+Quote numbers are assigned automatically:
+1. Create a quote; MyCompanyDesk gives it the next number in your sequence
+2. There is no numbering format to configure, the sequence stays neat and sequential on its own
+3. Need a specific number on a draft? Open the quote in the form and click "Set custom number" in the sidebar
 
-Tip: Keep numbering sequential and unique for traceability.
+Tip: Once a quote has been sent it is locked, including its number, so set a custom number while the document is still a draft.

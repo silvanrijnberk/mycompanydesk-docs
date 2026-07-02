@@ -1,17 +1,18 @@
 ---
-title: Quote validity
-last_verified: 2026-05-09
+title: "Validité des devis"
+last_verified: 2026-07-02
 chatbot:
   triggers: ["quote validity", "valid until quote", "quote expiry", "quote expiration", "how long quote valid", "quote valid days", "geldigheid offerte", "offerte geldig", "angebotsgultigkeit", "devis validite", "validez devis", "validez cotizacion", "validade proposta"]
   actions:
-    - { label: "Open company setup", to: "/company?section=invoicing" }
-    - { label: "Open Branding & Documents", to: "/company?section=brandingDocuments" }
-  follow_up: ["Where do I change numbering format?", "How do I edit valid-until per quote?", "How do I preview the final PDF?"]
+    - { label: "Open invoice settings", to: "/settings/facturen" }
+  follow_up: ["How does quote numbering work?", "How do I edit valid-until per quote?", "How do I preview the final PDF?"]
 ---
 
-La validite des devis se regle a deux endroits :
-1. Allez dans Entreprise → Facturation et reglez-y « Validite du devis » pour la periode par defaut
-2. Allez dans Entreprise → Image de marque & documents si vous devez aussi aligner le reglage document « Validite du devis (jours) »
-3. Les modifications dans les deux sections s enregistrent automatiquement
+La validité des devis se règle à un seul endroit :
+1. Allez dans Paramètres → "Factures et devis"
+2. Sous "Combien de temps un devis reste-t-il valable ?", choisissez 2 semaines, 1 mois ou 2 mois
+3. Les modifications sont enregistrées automatiquement
 
-Astuce : alignez ces deux reglages pour que le comportement et le PDF correspondent.
+Les nouveaux devis reçoivent leur date de validité selon ce choix. Une fois cette date dépassée, le devis apparaît comme Expiré dans votre liste de devis.
+
+Astuce : le statut Expiré apparaît automatiquement, vous n'avez pas à mettre à jour vos devis vous-même.

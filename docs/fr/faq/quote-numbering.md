@@ -1,6 +1,6 @@
 ---
-title: "Quote numbering"
-last_verified: 2026-05-09
+title: "Numérotation des devis"
+last_verified: 2026-07-02
 chatbot:
   triggers:
     - "quote number"
@@ -15,14 +15,16 @@ chatbot:
     - "numero proposta"
     - "numero preventivo"
   actions:
-    - { label: "Open company setup", to: "/company?section=invoicing" }
+    - { label: "Open quotes", to: "/quotes" }
   follow_up:
     - "How do I set quote validity?"
     - "How do I edit a quote number safely?"
     - "How do I create a new quote?"
 ---
 
-La numerotation des devis utilise les reglages de facturation :
-1. Allez dans Configuration entreprise → Facturation
-2. Definissez prefixe, numero suivant et format
-3. Les nouveaux devis suivent cette sequence
+Les numéros de devis sont attribués automatiquement :
+1. Créez un devis ; MyCompanyDesk lui attribue le numéro suivant de votre série
+2. Il n'y a aucun format de numérotation à configurer, la série reste ordonnée d'elle-même
+3. Besoin d'un numéro précis sur un brouillon ? Ouvrez le devis dans le formulaire et cliquez sur "Définir un numéro personnalisé" dans la barre latérale
+
+Astuce : une fois le devis envoyé, il est verrouillé, y compris son numéro. Définissez donc un numéro personnalisé tant que le document est encore un brouillon.

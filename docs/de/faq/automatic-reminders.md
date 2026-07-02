@@ -1,18 +1,18 @@
 ---
-title: Automatic reminders
-last_verified: 2026-05-09
+title: "Automatische Erinnerungen"
+last_verified: 2026-07-02
 chatbot:
   triggers: ["automatic reminders", "auto reminder", "scheduled reminders", "reminder automation", "automatische herinnering", "herinneringen instellen", "automatische erinnerung", "rappels automatiques"]
   actions:
-    - { label: "Open company invoicing", to: "/company?section=invoicing" }
-    - { label: "Open email templates", to: "/settings?section=emails" }
-  follow_up: ["How do I send a manual reminder?", "How do I view overdue invoices?", "How do I customize the reminder message?"]
+    - { label: "Open invoice settings", to: "/settings/facturen" }
+  follow_up: ["How do I send a manual reminder?", "How do I view overdue invoices?", "How do I set payment terms?"]
 ---
 
-So richtest du automatische Zahlungserinnerungen ein:
-1. Gehe zu Unternehmen → Rechnungsstellung
-2. Aktiviere dort automatische Erinnerungen
-3. Änderungen in diesem Bereich werden automatisch gespeichert
-4. Gehe zu Workspace-Einstellungen → E-Mail-Vorlagen, wenn du den Erinnerungstext anpassen willst
+So richten Sie automatische Zahlungserinnerungen ein:
+1. Gehen Sie zu Einstellungen → "Rechnungen und Angebote"
+2. Aktivieren Sie den Schalter "Zu spät? Automatisch eine Erinnerung senden"
+3. Änderungen werden automatisch gespeichert
 
-Prüfe danach eine Beispielrechnung mit überfälligem Status und die Erinnerungsvorlage, um zu sehen, wie der Ablauf in der App aussieht.
+Ist eine Rechnung ein paar Tage über dem Fälligkeitsdatum, sendet MyCompanyDesk automatisch eine freundliche Erinnerung, und danach jede Woche erneut, bis bezahlt wurde. Die Erinnerungs-E-Mails verwenden feste Systemvorlagen; der Text lässt sich nicht bearbeiten.
+
+Tipp: Möchten Sie einen Kunden sofort erinnern? Sie können von der Rechnung aus auch manuell eine Erinnerung senden.

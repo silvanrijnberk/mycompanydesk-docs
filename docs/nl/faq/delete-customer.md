@@ -1,5 +1,5 @@
 ---
-title: Delete customer
+title: "Klant verwijderen"
 last_verified: 2026-05-09
 chatbot:
   triggers: ["delete customer", "remove customer", "trash customer", "klant verwijderen", "klant wissen", "kunde loschen", "supprimer client"]
@@ -15,4 +15,4 @@ Om een klant te verwijderen:
 4. Klik op "Verwijderen"
 5. Bevestig de verwijdering
 
-Klanten met gekoppelde facturen kun je mogelijk niet verwijderen. Archiveer de klant dan in plaats daarvan.
+Verwijderen wordt nooit geblokkeerd, ook niet bij klanten met gekoppelde facturen. Het gaat in stappen: een actieve klant verwijderen archiveert deze eerst, nog een keer verwijderen verplaatst de klant naar de Prullenbak, en verwijderen vanuit de Prullenbak is definitief. Tot die laatste stap kun je de klant altijd terugzetten vanuit de weergave Archief of Prullenbak.

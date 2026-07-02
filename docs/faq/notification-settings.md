@@ -1,6 +1,6 @@
 ---
 title: "Notification settings"
-last_verified: 2026-05-09
+last_verified: 2026-07-02
 chatbot:
   triggers:
     - "notifications"
@@ -18,8 +18,9 @@ chatbot:
 ---
 
 To manage your notification settings:
-1. Go to My Account → Notifications
-2. Choose the email, app, or push notification settings you want to change
-3. Changes there save automatically
+1. Go to Settings → "Meldingen" (notifications)
+2. Switch the four notification topics on or off: late invoices, payments received, VAT deadlines, and tips. These arrive in the app and by email.
+3. On the same page you can also turn on push notifications for the device you are using
+4. Changes save automatically
 
 If you are troubleshooting a missing alert, check both the notification toggle and the email address on your account.

@@ -1,15 +1,18 @@
 ---
-title: Reverse charge
-last_verified: 2026-05-09
+title: "Autoliquidation"
+last_verified: 2026-07-02
 chatbot:
   triggers: ["reverse charge", "reverse charge invoice", "eu invoice", "intracommunautair", "intracommunity", "btw verlegd", "reverse charge rechnung", "autoliquidation", "intra-community"]
   actions:
     - { label: "Create invoice", to: "/invoices/new" }
-  follow_up: ["How do I add a customer VAT number?", "How does reverse charge affect my VAT return?", "How do I set VAT to 0% on line items?"]
+  follow_up: ["How do I add a customer VAT number?", "How does reverse charge affect my VAT return?", "How do I preview an invoice?"]
 ---
-Pour creer une facture avec autoliquidation :
-1. Accedez a Factures → Nouvelle facture
-2. Selectionnez votre client dans l'UE et verifiez que son numero de TVA est renseigne dans sa fiche
-3. Ajoutez des lignes avec 0 % de TVA
-4. Ouvrez l'apercu pour verifier les champs TVA et la mention affiches sur le document
-5. Enregistrez et envoyez
+
+Pour créer une facture en autoliquidation (UE) :
+1. Allez dans Factures → Nouvelle facture
+2. Sélectionnez votre client de l'UE et vérifiez que son numéro de TVA figure sur sa fiche
+3. Activez l'interrupteur "Autoliquidation de la TVA" sur le formulaire de facture ; MyCompanyDesk le propose automatiquement pour les clients professionnels de l'UE
+4. La TVA de toutes les lignes passe automatiquement à 0 %, aucun changement manuel n'est nécessaire
+5. Vérifiez la mention d'autoliquidation dans l'aperçu, puis envoyez la facture
+
+Astuce : l'interrupteur est toujours disponible sur le formulaire de facture ; vous n'avez rien à activer au préalable dans vos paramètres.

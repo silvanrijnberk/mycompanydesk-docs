@@ -1,6 +1,6 @@
 ---
 title: "Stop recurring"
-last_verified: 2026-05-09
+last_verified: 2026-07-02
 chatbot:
   triggers: ["stop recurring", "cancel recurring", "pause recurring", "disable recurring", "end recurring", "terugkerend stoppen", "terugkerend annuleren", "wiederkehrend stoppen", "arreter recurrent"]
   actions:
@@ -9,10 +9,12 @@ chatbot:
   follow_up: ["How do I edit a recurring item?", "How do I create a new recurring invoice?"]
 ---
 
-To stop or pause a recurring invoice/expense:
-1. Go to Recurring Invoices (or Recurring Expenses)
-2. Open the recurring item
-3. Click "Edit" and set the end date, or disable/delete it
-4. Save - no further invoices or expenses will be generated
+To stop a recurring invoice:
+1. Go to Recurring Invoices
+2. Open the recurring invoice
+3. Click "Pause" on the detail page; the same button then shows "Activate" so you can resume later
+4. While it is paused, no further invoices are generated
 
-Tip: Setting an end date is safer than deleting, as it preserves the history of previously generated items.
+There is no end date field; pausing is how you stop the schedule, and it keeps the history of previously generated invoices intact. There are also no bulk actions on the recurring list, so pause each item individually. Recurring expenses work the same way with their own Pause and Activate buttons.
+
+Tip: Pausing is safe. Nothing is deleted, and one click on "Activate" picks the schedule back up.

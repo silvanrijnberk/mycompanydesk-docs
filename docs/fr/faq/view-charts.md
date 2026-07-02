@@ -1,5 +1,5 @@
 ---
-title: "View charts"
+title: "Consulter les graphiques"
 last_verified: 2026-05-09
 chatbot:
   triggers: ["view charts", "see graphs", "financial charts", "revenue chart", "expense chart", "grafieken bekijken", "diagramme anzeigen", "voir graphiques"]
@@ -9,9 +9,9 @@ chatbot:
 ---
 
 Pour consulter les graphiques :
-1. Allez dans Rapports
-2. Ouvrez la section graphiques
-3. Utilisez les filtres de date pour ajuster la periode
-4. Ouvrez les enregistrements lies si vous voyez un pic ou une baisse
+1. Allez dans Rapports dans la barre latérale
+2. Ouvrez l'une des vues de rapport : l'aperçu, Compte de résultat, Trésorerie, Clients ou Prévision
+3. Les graphiques sont intégrés à chaque vue ; il n'y a pas de section graphiques séparée
+4. Utilisez les filtres de période pour ajuster la plage de temps
 
-Si les valeurs du graphique semblent incorrectes, verifiez d abord les filtres actifs.
+Astuce : vérifiez toujours d'abord les filtres actifs si les valeurs d'un graphique semblent incorrectes.

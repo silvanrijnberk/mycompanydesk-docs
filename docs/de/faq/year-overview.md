@@ -1,5 +1,5 @@
 ---
-title: "Year overview"
+title: "Jahresübersicht"
 last_verified: 2026-05-09
 chatbot:
   triggers:
@@ -21,10 +21,10 @@ chatbot:
     - "How do I prepare my VAT return?"
 ---
 
-So pruefst du ein ganzes Jahr in der App:
-1. Oeffne Berichte
-2. Setze den Datumsfilter auf das Jahr, das du ansehen willst
-3. Oeffne die Uebersichtskarten und die zugehoerigen Berichtsbereiche fuer die Daten, die du pruefen willst
-4. Exportiere den sichtbaren Bericht, wenn du genau diese Ansicht ausserhalb der App brauchst
+So prüfen Sie ein ganzes Jahr in der App:
+1. Öffnen Sie Berichte
+2. Stellen Sie den Zeitraumfilter auf Jahr und wählen Sie das gewünschte Jahr
+3. Die Übersicht zeigt die Kernzahlen; wechseln Sie zur Ansicht GuV, Cashflow, Kunden oder Prognose für mehr Detail
+4. Aktivieren Sie den Vergleichsfilter, um das Jahr neben einem früheren Jahr zu sehen
 
-Diese Antwort beschraenkt sich darauf, wo du die Jahresuebersicht in der App findest.
+Tipp: Mit dem Filter „Offene Rechnungen einbeziehen" steuern Sie, ob unbezahlte Rechnungen in die Summen einfließen.

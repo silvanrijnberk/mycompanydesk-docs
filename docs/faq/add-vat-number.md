@@ -1,6 +1,6 @@
 ---
 title: "Add VAT number"
-last_verified: 2026-05-09
+last_verified: 2026-07-02
 chatbot:
   triggers:
     - "add vat number"
@@ -11,14 +11,14 @@ chatbot:
     - "ust id eingeben"
     - "numero tva"
   actions:
-    - { label: "Open company info", to: "/company?section=company" }
+    - { label: "Open business details", to: "/settings/bedrijfsgegevens" }
   follow_up:
     - "How do I set up my company settings?"
     - "How do I set VAT on an invoice?"
 ---
 
 To add or change your company VAT number:
-1. Go to Company → Company Info
+1. Go to Settings → "Bedrijfsgegevens" (business details)
 2. Fill in the "VAT number" field there
 3. Changes save automatically
 

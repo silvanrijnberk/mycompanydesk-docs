@@ -1,6 +1,6 @@
 ---
-title: "Notification settings"
-last_verified: 2026-05-09
+title: "Paramètres de notification"
+last_verified: 2026-07-02
 chatbot:
   triggers:
     - "notifications"
@@ -18,8 +18,9 @@ chatbot:
 ---
 
 Pour gérer vos paramètres de notification :
-1. Accédez à Mon compte → Notifications
-2. Choisissez les notifications e-mail, dans l’application ou push que vous souhaitez modifier
-3. Les changements sont enregistrés automatiquement dans cette section
+1. Allez dans Paramètres → « Notifications »
+2. Activez ou désactivez les quatre sujets de notification : factures en retard, paiements reçus, échéances de TVA et conseils. Vous les recevez dans l'application et par e-mail.
+3. Sur la même page, vous pouvez aussi activer les notifications push pour l'appareil que vous utilisez
+4. Les modifications sont enregistrées automatiquement
 
-Astuce : gardez les notifications liées aux paiements activées pour ne manquer ni paiement entrant ni rappel.
+Si une alerte vous échappe, vérifiez à la fois l'interrupteur de notification et l'adresse e-mail de votre compte.

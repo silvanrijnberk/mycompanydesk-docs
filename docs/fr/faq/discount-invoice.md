@@ -1,17 +1,19 @@
 ---
-title: Apply a discount to an invoice
-last_verified: 2026-05-09
+title: "Remise sur une facture"
+last_verified: 2026-07-02
 chatbot:
   triggers: ["discount", "add discount", "invoice discount", "percentage discount", "reduce price", "korting", "korting toevoegen", "rabatt", "rabatt gewahren", "remise", "reduction"]
   actions:
     - { label: "Open invoices", to: "/invoices" }
   follow_up: ["How do I set payment terms?", "How do I create a credit note?", "How do I preview the invoice PDF?"]
 ---
-Pour ajouter une remise à une facture :
-1. Ouvrez la facture en mode édition
-2. Recherchez le champ « Remise » sur chaque ligne ou sur le total de la facture
-3. Saisissez la remise en pourcentage ou en montant fixe
-4. Les totaux sont recalculés automatiquement
-5. Enregistrez la facture
 
-Astuce : Vous pouvez appliquer des remises par ligne ou comme remise globale sur la facture.
+Pour appliquer une remise sur une facture :
+1. Modifiez ou créez une facture
+2. Ajoutez une ligne séparée avec un montant négatif pour la remise
+3. Le total reflète le montant réduit
+4. Enregistrez la facture
+
+Il n'y a pas de champ de remise dédié ; une ligne négative est la façon d'accorder une remise dans MyCompanyDesk.
+
+Astuce : libellez clairement la ligne de remise (par ex. "Remise pour paiement anticipé -5 %") pour que le client comprenne la déduction.

@@ -1,6 +1,6 @@
 ---
-title: "Quote numbering"
-last_verified: 2026-05-09
+title: "Offertenummering"
+last_verified: 2026-07-02
 chatbot:
   triggers:
     - "quote number"
@@ -15,14 +15,16 @@ chatbot:
     - "numero proposta"
     - "numero preventivo"
   actions:
-    - { label: "Open company setup", to: "/company?section=invoicing" }
+    - { label: "Open quotes", to: "/quotes" }
   follow_up:
     - "How do I set quote validity?"
     - "How do I edit a quote number safely?"
     - "How do I create a new quote?"
 ---
 
-Offertenummering gebruikt je facturatienummering:
-1. Ga naar Bedrijfsinstellingen → Facturatie
-2. Stel prefix, volgend nummer en formaat in
-3. Nieuwe offertes volgen deze reeks
+Offertenummers worden automatisch toegekend:
+1. Maak een offerte; MyCompanyDesk geeft die het volgende nummer in je reeks
+2. Er is geen nummeringsformaat om in te stellen, de reeks blijft vanzelf netjes op volgorde
+3. Wil je een eigen nummer op een concept? Open de offerte in het formulier en klik in de zijbalk op "Eigen nummer invoeren"
+
+Tip: Zodra een offerte is verstuurd, is die vergrendeld, inclusief het nummer. Stel een eigen nummer dus in zolang het document nog een concept is.

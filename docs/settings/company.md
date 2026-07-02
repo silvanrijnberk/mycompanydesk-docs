@@ -1,88 +1,60 @@
 ---
 title: Company Settings
-last_verified: 2026-05-09
+last_verified: 2026-07-02
 ---
 
 # Company Settings
 
-Everything that defines how your business looks to the outside world — the name on your invoices, your logo, your public business page, and the domain customers find you on.
+Everything that defines how your business looks to the outside world: the name on your invoices, your logo and brand colour, and your public website.
 
 ## Where to find it
 
-Open the workspace switcher → **Workspace settings** → **Company**, or navigate directly to `/workspace/organization/company`.
+Open **Instellingen** (Settings) from the menu, or go to `/settings`. Company topics are rows in the **Je bedrijf** (your business) group:
 
-The umbrella page is a tile menu with four leaves and a shortcut to the magical setup wizard at `/setup` (shown as a wide tile while there are still pending setup steps).
+- **Bedrijfsgegevens** (business details) at `/settings/bedrijfsgegevens`: company info, address, KvK number, VAT number
+- **Logo en kleur** (logo and colour) at `/settings/uiterlijk`: logo, brand colour, document styling
+- **Factuurontwerp** (invoice design) at `/settings/factuurontwerp`: the invoice design studio, covered on [PDF Customization](/settings/pdf)
 
-## What you can change
+Old links to the previous workspace settings pages redirect to the new locations automatically.
 
-The Company surface is split into four focused pages.
+## Business details (Bedrijfsgegevens)
 
-### About your business
-
-Path: `/workspace/organization/company/about`
+Path: `/settings/bedrijfsgegevens`
 
 The identity form. What every invoice, quote, and email shows.
 
-- **Business name** — appears on every document
-- **Address** — street, postal code, city, country (with address autocomplete)
-- **Registration**, KvK or other registration number. The **Refresh from KVK** button pulls the latest data from the Dutch Chamber of Commerce registry and fills any blank fields (business name, address, postal code, city, country). It never overwrites values you already set. Each workspace gets 100 free KVK lookups per day (cached results do not count toward the limit). When 20 or fewer lookups remain, the field hint switches to a counter showing how many are left. If the daily cap is reached, you can enter the data manually or try again tomorrow.
-- **Tax ID** — VAT number (e.g. `NL123456789B01`)
-- **Contact** — public email, phone, support email
-- **Website + social** — used by the email signature, business page, and footers
+- **Business name**: appears on every document
+- **Address**: street, postal code, city, country (with address autocomplete)
+- **Registration**: KvK or other registration number. The **Refresh from KVK** button pulls the latest data from the Dutch Chamber of Commerce registry and fills any blank fields (business name, address, postal code, city, country). It never overwrites values you already set. Each workspace gets 100 free KVK lookups per day (cached results do not count toward the limit). When 20 or fewer lookups remain, the field hint switches to a counter showing how many are left. If the daily cap is reached, you can enter the data manually or try again tomorrow.
+- **Tax ID**: VAT number (e.g. `NL123456789B01`)
+- **Contact**: public email, phone, support email
+- **Website + social**: used by the email signature, business page, and footers
 
-This page wraps the `CompanyInfo` component. Changes auto-save through the `useWorkspaceSettings` pipeline.
+Changes save automatically.
 
-### Look & feel
+## Logo and colour (Logo en kleur)
 
-Path: `/workspace/organization/company/look`
+Path: `/settings/uiterlijk`
 
-Branding for invoices, quotes, and outgoing email.
+Branding for invoices, quotes, and outgoing email, with a live preview of the result.
 
-- **Logo upload** — used on every PDF and email header
-- **Brand colour** — primary accent across documents and the public business page
-- **PDF style presets** — gated by the `style_presets` feature (Pro)
-- **Document styling** — header layout, footer content, accent placement
+- **Logo upload**: used on every PDF and email header
+- **Brand colour**: one accent colour across your documents and public business page
+- **Style presets**: pick a document style, available on Starter and up
+- **PDF footer**: the footer text at the bottom of your documents
 
-The page is scaffolding around the existing `CompanyBranding` component (a full inner-form rebuild is on the roadmap; the chrome is already the redesigned tone).
+There is one style and one brand colour for all document types; a second accent colour no longer exists. For full control over the layout, colours, and font of your invoices and quotes, open the **Factuurontwerp** row (the invoice design studio); see [PDF Customization](/settings/pdf).
 
-### Your website
+## Your website
 
-Path: `/website` (top-level surface — moved out of the company umbrella; the old `/workspace/organization/company/website` redirects here)
+Your public business page is managed in the top-level **Website** area of the app, not under Settings. It has its own pages: **Pagina's** (pages), **Stijl** (style), **Domein & SEO**, and **Koppelingen** (integrations).
 
-A simple public business page customers can find online — contact info, what you do, and links to message you.
-
-- Gated by the `public_business_page` feature (Pro)
-- Locked workspaces still see the tile but the leaf shows an upgrade prompt
-- Wraps the `CompanyServices` component
-
-When a user clicks through the wizard's "set up your website" tile they land here.
-
-### Your own .com address
-
-Path: `/website?tab=domein` (the Domein & SEO tab of the Website surface; the old `/workspace/organization/company/address` redirects here)
-
-Hook up a domain you already own (or buy a new one) for your website and email.
-
-- Gated by the `custom_domains` feature (Pro)
-- Replaces the default `acme.mycompanydesk.com` subdomain
-- DNS, SPF, and DKIM records are managed for you
-- The DNS record table sits behind an "Advanced" strip — most users never need to look at it
-
-This page is the most technical surface in the Company tree; the intro deliberately explains in plain language what the feature is for before any DNS UI appears.
-
-## Plan gating quick reference
-
-| Leaf | Free | Starter | Pro |
-|---|---|---|---|
-| About your business | yes | yes | yes |
-| Look & feel | yes | yes | yes |
-| Your website | locked | locked | yes |
-| Your own .com address | locked | locked | yes |
-
-Locked tiles stay visible so you know the feature exists; clicking one opens the upgrade prompt.
+- The website is available from the Starter plan.
+- Connecting your own domain, replacing the default `mycompanydesk.com` subdomain, requires Pro. DNS, SPF, and DKIM records are managed for you, tucked behind an advanced strip most users never need to open.
 
 ## Related
 
-- [Plan & payments](/settings/billing) — to unlock website and custom-domain features
-- [Email setup](/settings/email) — your business email lives on the same domain
-- The magical setup wizard at `/setup` walks new workspaces through every leaf in one flow
+- [PDF Customization](/settings/pdf) for the Factuurontwerp design studio
+- [Plan & payments](/settings/billing) to unlock the custom domain
+- [Email setup](/settings/email) for sending from your own domain
+- The setup wizard at `/setup` walks new workspaces through these settings in one flow

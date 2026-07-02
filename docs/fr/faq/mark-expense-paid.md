@@ -1,5 +1,5 @@
 ---
-title: "Mark an expense as paid"
+title: "Marquer une dépense comme payée"
 last_verified: 2026-05-09
 chatbot:
   triggers:
@@ -21,6 +21,7 @@ chatbot:
 
 Pour marquer une dépense comme payée :
 1. Ouvrez la dépense depuis la liste
-2. Cliquez sur le statut ou « Marquer comme payée »
-3. Entrez optionnellement la date de paiement
-4. Enregistrez - le statut passe à Payée
+2. Cliquez sur « Marquer comme payé »
+3. Le statut passe immédiatement à Payée
+
+Ce simple clic suffit : aucune fenêtre de date de paiement ne s'affiche et il n'y a pas d'enregistrement séparé.
