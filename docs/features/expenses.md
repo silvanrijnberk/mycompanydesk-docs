@@ -82,7 +82,7 @@ The treatment is inherited from the category. Override it on the expense itself 
 Larger purchases (a laptop, machinery, furniture) are usually not booked as a cost in one go but written off over several years. MyCompanyDesk handles this per expense:
 
 - The form has an **Investment (depreciate)** switch. Flip it on to book the expense as an investment.
-- From 450 euros excl. VAT the form suggests it for you, in line with the Belastingdienst threshold, with a one-click **Book as investment** button. Categories can also be set to flag investments automatically.
+- From 450 euros excl. VAT the form suggests it for you, with a one-click **Book as investment** button. Categories can also be set to flag investments automatically.
 - Choose the write-off period in the **Depreciate over (years)** field, from 1 to 10 years. This overrides the category default; if the category has none, 5 years is used.
 - A live preview shows roughly what the monthly depreciation will be.
 

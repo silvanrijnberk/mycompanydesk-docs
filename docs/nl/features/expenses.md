@@ -81,7 +81,7 @@ De behandeling wordt overgenomen van de categorie. Wijk er per uitgave van af al
 Grotere aankopen (een laptop, machines, meubilair) boek je meestal niet in één keer als kosten, maar schrijf je over meerdere jaren af. MyCompanyDesk regelt dit per uitgave:
 
 - Het formulier heeft een schakelaar **Investering (afschrijven)**. Zet hem aan om de uitgave als investering te boeken.
-- Vanaf 450 euro excl. BTW stelt het formulier dit zelf voor, in lijn met de grens van de Belastingdienst, met een knop **Als investering boeken**. Ook kunnen categorieën investeringen automatisch markeren.
+- Vanaf 450 euro excl. BTW stelt het formulier dit zelf voor, met een knop **Als investering boeken**. Ook kunnen categorieën investeringen automatisch markeren.
 - Kies de afschrijvingstermijn in het veld **Afschrijven over (jaar)**, van 1 tot 10 jaar. Dit gaat vóór de standaard van de categorie; heeft de categorie er geen, dan geldt 5 jaar.
 - Een live voorbeeld toont ongeveer wat de maandelijkse afschrijving wordt.
 
