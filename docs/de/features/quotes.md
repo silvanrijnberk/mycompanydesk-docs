@@ -19,7 +19,7 @@ Der Angebotsbereich ermöglicht es Ihnen, Angebote zu erstellen, zu versenden un
 5. Fügen Sie optionale **Anmerkungen** hinzu
 6. Klicken Sie auf **Speichern**
 
-Das Angebotsformular ähnelt dem Rechnungsformular — wenn Sie wissen, wie man eine Rechnung erstellt, wissen Sie bereits, wie man ein Angebot erstellt.
+Das Angebotsformular ähnelt dem Rechnungsformular: Wenn Sie wissen, wie man eine Rechnung erstellt, wissen Sie bereits, wie man ein Angebot erstellt.
 
 ## Angebot versenden
 
@@ -39,7 +39,8 @@ Das Angebots-PDF wird der E-Mail als Anhang beigefügt, damit der Kunde es über
 | **Angenommen** | Kunde hat das Angebot angenommen |
 | **Abgelehnt** | Kunde hat das Angebot abgelehnt |
 | **Abgelaufen** | Gültigkeitsdatum überschritten |
-| **In Rechnung gestellt** | In eine Rechnung umgewandelt |
+
+Ein Angebot, das in eine Rechnung umgewandelt wurde, behält seinen Status **Angenommen** und erhält eine Kennzeichnung **In Rechnung umgewandelt** mit Link zur Rechnung.
 
 ## In Rechnung umwandeln
 
@@ -82,12 +83,11 @@ Jede Anfrage zeigt:
 
 ## Massenaktionen
 
-- **Senden** — Mehrere Angebote gleichzeitig versenden
-- **Archivieren** — Angebote ins Archiv verschieben
-- **Löschen** — Angebote entfernen
+- **Senden**: markiert die ausgewählten Angebote als gesendet. Dies aktualisiert nur den Status; es werden keine E-Mails versendet.
+- **Archivieren**: Angebote ins Archiv verschieben
+- **Löschen**: Angebote entfernen
 
 ## Tipps
 
 - Angebotsanfragen-Kennzahlen (eingegangen, angeboten, geschlossen) werden oben auf der Anfragenseite angezeigt
-- Nutzen Sie die Schnellerfassungsfunktion für schnelle Angebotserstellung
 - Angebote können mit Projekten verknüpft werden, um eine bessere Nachverfolgung zu ermöglichen
