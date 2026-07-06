@@ -10,7 +10,7 @@ Registreer je zakelijke uitgaven, scan bonnetjes en laat MyCompanyDesk de BTW-st
 
 De uitgavenpagina toont elke geregistreerde uitgave. Gebruik het zoekveld en het filtermenu om de lijst te verfijnen op categorie, factuurstatus (gefactureerd of niet gefactureerd) en periode, en wissel tussen de weergaven **Actief**, **Archief** en **Prullenbak**. De kaarten boven de lijst werken ook als snelfilter: klik op de kaart met onbetaalde uitgaven om alleen onbetaalde uitgaven te zien, of op de kaart zonder categorie om uitgaven te tonen die nog een categorie nodig hebben. Ook links vanaf de BTW-pagina en de facturenpagina kunnen de lijst voorgefilterd openen, bijvoorbeeld op uitgaven zonder bonnetje, zonder BTW-bedrag, of op kosten die je nog aan een klant kunt doorbelasten. Elk actief filter verschijnt als een chip die je met een klik weer weghaalt.
 
-Uitgaven die via je [bankkoppeling](/features/bank) zijn binnengekomen dragen een klein bankicoon, zodat je ze altijd kunt onderscheiden van handmatige invoer.
+Uitgaven die via je [bankkoppeling](/nl/features/bank) zijn binnengekomen dragen een klein bankicoon, zodat je ze altijd kunt onderscheiden van handmatige invoer.
 
 Klik op een uitgave om de detailpagina te openen, of klik op **Nieuwe uitgave** om er handmatig een vast te leggen. Het tandwiel bovenaan opent de uitgaven-instellingen.
 
@@ -48,7 +48,7 @@ Zodra je een leveranciersnaam hebt getypt, stelt de knop **Genereren** (het ster
 
 ### Vanuit banktransacties
 
-Met een gekoppelde [bankrekening](/features/bank) kunnen uitgaande transacties worden omgezet in uitgaven. Elke transactie draagt de tegenpartij als leverancier, het bedrag en de boekingsdatum, en jij beoordeelt ze voordat ze in je administratie terechtkomen. Zie [automatisch geïmporteerde uitgaven beoordelen](/features/bank#reviewing-auto-imported-expenses) voor de volledige werkwijze.
+Met een gekoppelde [bankrekening](/nl/features/bank) kunnen uitgaande transacties worden omgezet in uitgaven. Elke transactie draagt de tegenpartij als leverancier, het bedrag en de boekingsdatum, en jij beoordeelt ze voordat ze in je administratie terechtkomen. Zie [automatisch geïmporteerde uitgaven beoordelen](/nl/features/bank#automatisch-geimporteerde-uitgaven-controleren) voor de volledige werkwijze.
 
 ### Bonnetjes scannen
 
@@ -101,7 +101,7 @@ Selecteer meerdere uitgaven om ze in één keer te verwerken. In de actieve lijs
 
 ## Terugkerende uitgaven
 
-Voor voorspelbare kosten (huur, abonnementen, hosting) stel je [terugkerende uitgaven](/features/recurring-expenses) in die de boekingen op schema aanmaken.
+Voor voorspelbare kosten (huur, abonnementen, hosting) stel je [terugkerende uitgaven](/nl/features/recurring-expenses) in die de boekingen op schema aanmaken.
 
 ## Importeren
 
@@ -112,4 +112,4 @@ Importeer historische uitgaven uit CSV via **Profiel > Importeren**. Koppel je k
 - Kies eerst de juiste categorie: de BTW-behandeling, het aftrekbare percentage en de investeringsmarkering volgen er allemaal uit.
 - Stel je standaardcategorie en betaalmethode in via het tandwiel op de uitgavenpagina, en je gebruikelijke BTW-tarief onder **Instellingen > BTW**, zodat het formulier alvast ingevuld start.
 - Merk je dat je de BTW-behandeling bij elke uitgave in een categorie overschrijft, pas dan de standaard van de categorie aan.
-- Voeg altijd bonnetjes toe. De controles vooraf op de [BTW-pagina](/features/vat) wijzen je op ontbrekende bonnetjes voordat je aangifte doet.
+- Voeg altijd bonnetjes toe. De controles vooraf op de [BTW-pagina](/nl/features/vat) wijzen je op ontbrekende bonnetjes voordat je aangifte doet.

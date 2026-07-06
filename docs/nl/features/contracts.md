@@ -48,7 +48,7 @@ Je kunt gegenereerde facturen handmatig bekijken en versturen, of automatische v
 
 ## Koppelen aan objecten
 
-Contracten kunnen worden gekoppeld aan [objecten/activa](/features/objects) voor verhuurbeheer:
+Contracten kunnen worden gekoppeld aan [objecten/activa](/nl/features/objects) voor verhuurbeheer:
 
 - Koppel een contract aan een pand, voertuig of apparaat
 - Houd bij welke objecten momenteel verhuurd zijn en aan wie
@@ -133,7 +133,7 @@ Wanneer een contract wordt aangemaakt vanuit een sjabloon, wordt het vastgezet o
 
 ## Tips
 
-- Gebruik contracten samen met [terugkerende facturen](/features/recurring-invoices) voor verschillende facturatiescenario's
+- Gebruik contracten samen met [terugkerende facturen](/nl/features/recurring-invoices) voor verschillende facturatiescenario's
 - Koppel contracten aan objecten voor volledig verhuurbeheer
 - Gebruik het statusfilter om actieve en gepauzeerde contracten in één oogopslag te zien
 - Filter op ondertekenstatus om contracten te vinden die nog ondertekend moeten worden

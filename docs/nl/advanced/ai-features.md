@@ -39,17 +39,17 @@ De samenvatting en suggesties kun je voor elk gesprek op verzoek opnieuw laten g
 
 ## Hulp bij websiteteksten
 
-De [sitebouwer](/advanced/business-page) bevat drie schrijfhulpmiddelen:
+De [sitebouwer](/nl/advanced/business-page) bevat drie schrijfhulpmiddelen:
 
 - **Toon herschrijven**: elk tekstveld in de sectie-inspector biedt vier herschrijvingen met één klik: korter, rustiger, scherper of vriendelijker. De herschrijving houdt je eigen taal aan en verzint nooit nieuwe informatie.
 - **Vul met AI**: vul alle tekst van een sectie in één klik, op basis van je bedrijfsprofiel. Klik je nog eens, dan wissel je gratis tussen eerder gegenereerde varianten.
 - **Regenereer met AI**: genereer de startteksten van je site (tagline, over-ons-tekst en conceptteksten voor je diensten) op verzoek opnieuw, voor elke werkruimte. Je bekijkt en bewerkt alles voordat het wordt toegepast.
 
-Zie [Sitebouwer](/advanced/business-page#ai-writing-help) voor de details.
+Zie [Sitebouwer](/nl/advanced/business-page#ai-schrijfhulp) voor de details.
 
 ## Bonnenscanner
 
-Upload een foto of PDF van een bonnetje of inkoopfactuur en de scanner haalt de datum, de leverancier, het bedrag, de regels, het BTW-tarief en een voorgestelde categorie eruit, klaar om als uitgave op te slaan. Lange documenten worden efficiënt verwerkt, en scans tellen mee voor je maandelijkse AI-limiet. Zie [Bonnen scannen](/advanced/receipt-scanning) voor de volledige werkwijze.
+Upload een foto of PDF van een bonnetje of inkoopfactuur en de scanner haalt de datum, de leverancier, het bedrag, de regels, het BTW-tarief en een voorgestelde categorie eruit, klaar om als uitgave op te slaan. Lange documenten worden efficiënt verwerkt, en scans tellen mee voor je maandelijkse AI-limiet. Zie [Bonnen scannen](/nl/advanced/receipt-scanning) voor de volledige werkwijze.
 
 ## Categoriesuggesties voor uitgaven
 

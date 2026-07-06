@@ -80,7 +80,7 @@ De detailpagina van de terugkerende factuur toont alle eerder gegenereerde factu
 
 ## Tips
 
-- Combineer met [contracten](/features/contracts) voor contractgebaseerde facturatie
+- Combineer met [contracten](/nl/features/contracts) voor contractgebaseerde facturatie
 - Controleer gegenereerde facturen voor de eerste automatische verzending om te zorgen dat alles er goed uitziet
 - Gebruik het voorbeeld van de volgende uitvoering om te zien wanneer de volgende factuur wordt aangemaakt
 - Bekijk het actieve aantal en de statistieken bovenaan de pagina

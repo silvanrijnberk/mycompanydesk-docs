@@ -299,7 +299,7 @@ Je website wordt geserveerd op de best beschikbare URL:
 2. Je werkruimte-subdomein (bijv. `https://acme.mycompanydesk.com`)
 3. De fallback-portaalroute (`/portal/{slug}`)
 
-Eén website, één URL: zodra een eigen domein actief is, stapt het werkruimte-subdomein automatisch opzij (en komt terug als je het domein later verwijdert). Domeinen beheer je onder **Instellingen > Domeinen**. Zie [Domeinen, website en inbox](/features/domains-website-inbox) voor installatie en verificatie.
+Eén website, één URL: zodra een eigen domein actief is, stapt het werkruimte-subdomein automatisch opzij (en komt terug als je het domein later verwijdert). Domeinen beheer je onder **Instellingen > Domeinen**. Zie [Domeinen, website en inbox](/nl/features/domains-website-inbox) voor installatie en verificatie.
 
 ## Contactformulier
 
@@ -331,11 +331,11 @@ De prijzensectie toont je pakketten of plannen. Elk pakket kan optioneel een koo
 - De knoptekst is standaard "Koop nu" en is per pakket aan te passen.
 - Pakketten zonder koopknop behouden de gewone CTA-link.
 
-Het **Product**-blok is een losse koopkaart voor één artikel, voor wanneer een volledige prijstabel te veel is: één naam, omschrijving, optionele afbeelding, prijs, koopknop en een optionele notitieregel voor bezorginformatie. Zie [Verkoop](/features/domains-website-inbox#sales) voor het volgen van betalingen en bestellingen.
+Het **Product**-blok is een losse koopkaart voor één artikel, voor wanneer een volledige prijstabel te veel is: één naam, omschrijving, optionele afbeelding, prijs, koopknop en een optionele notitieregel voor bezorginformatie. Zie [Verkoop](/nl/features/domains-website-inbox#verkopen-via-je-website) voor het volgen van betalingen en bestellingen.
 
 ## Aanvragen beheren
 
-Zie [Offertes - Offerteaanvragen](/features/quotes#quote-requests) voor het beheren van binnenkomende aanvragen.
+Zie [Offertes - Offerteaanvragen](/nl/features/quotes#offerteaanvragen) voor het beheren van binnenkomende aanvragen.
 
 ## Abonnementsvereiste
 
@@ -349,7 +349,7 @@ Deze controle geldt voor alle publieke routes en gebeurt bij elk verzoek, dus hi
 
 ## Gerelateerd
 
-- [Domeinen, website en inbox](/features/domains-website-inbox): Eigen domein instellen, verificatie, SSL en e-mailinbox.
-- [Bedrijfsinstellingen](/settings/company): Waar je bedrijfsgegevens, huisstijl en adres staan.
-- [Offertes](/features/quotes): Offerteaanvragen beheren die via je website binnenkomen.
-- [Abonnement & betalingen](/settings/billing): Abonnementen en functietoegang.
+- [Domeinen, website en inbox](/nl/features/domains-website-inbox): Eigen domein instellen, verificatie, SSL en e-mailinbox.
+- [Bedrijfsinstellingen](/nl/settings/company): Waar je bedrijfsgegevens, huisstijl en adres staan.
+- [Offertes](/nl/features/quotes): Offerteaanvragen beheren die via je website binnenkomen.
+- [Abonnement & betalingen](/nl/settings/billing): Abonnementen en functietoegang.

@@ -45,7 +45,7 @@ Der [Site-Builder](/de/advanced/business-page) enthält drei Schreibwerkzeuge:
 - **Vul met AI**: Füllt alle Texte eines Bereichs mit einem Klick, basierend auf Ihrem Firmenprofil. Wiederholtes Klicken wechselt kostenlos durch zwischengespeicherte Varianten.
 - **Regenereer met AI**: Generiert die Starttexte Ihrer Website (Slogan, Über-uns-Text und Leistungsentwürfe) auf Wunsch neu, für jeden Arbeitsbereich. Sie prüfen und bearbeiten alles, bevor es übernommen wird.
 
-Details finden Sie im [Site-Builder](/de/advanced/business-page#ai-writing-help).
+Details finden Sie im [Site-Builder](/de/advanced/business-page#ki-schreibhilfe).
 
 ## Belegscanner
 

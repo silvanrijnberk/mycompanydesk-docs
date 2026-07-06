@@ -299,7 +299,7 @@ Ihre Website wird unter der bestmöglichen URL ausgeliefert:
 2. Ihre Arbeitsbereich-Subdomain (z. B. `https://acme.mycompanydesk.com`)
 3. Die Fallback-Portalroute (`/portal/{slug}`)
 
-Eine Website, eine URL: Sobald eine eigene Domain aktiv ist, tritt die Arbeitsbereich-Subdomain automatisch zurück (und kehrt zurück, wenn Sie die Domain später entfernen). Domains verwalten Sie unter **Einstellungen > Domains**. Siehe [Domains, Website und Inbox](/features/domains-website-inbox) für Einrichtung und Verifizierung.
+Eine Website, eine URL: Sobald eine eigene Domain aktiv ist, tritt die Arbeitsbereich-Subdomain automatisch zurück (und kehrt zurück, wenn Sie die Domain später entfernen). Domains verwalten Sie unter **Einstellungen > Domains**. Siehe [Domains, Website und Inbox](/de/features/domains-website-inbox) für Einrichtung und Verifizierung.
 
 ## Kontaktformular
 
@@ -331,11 +331,11 @@ Der Preisabschnitt zeigt Ihre Pakete oder Tarife. Jedes Paket kann optional eine
 - Die Button-Beschriftung ist standardmäßig "Koop nu" und pro Paket anpassbar.
 - Pakete ohne Kauf-Button behalten den normalen CTA-Link.
 
-Der **Produkt**-Block ist eine eigenständige Kaufkarte für einen einzelnen Artikel, wenn eine volle Preistabelle zu viel wäre: ein Name, Beschreibung, optionales Bild, Preis, Kauf-Button und eine optionale Hinweiszeile für Lieferinformationen. Siehe [Verkauf](/features/domains-website-inbox#sales) zum Verfolgen von Zahlungen und Bestellungen.
+Der **Produkt**-Block ist eine eigenständige Kaufkarte für einen einzelnen Artikel, wenn eine volle Preistabelle zu viel wäre: ein Name, Beschreibung, optionales Bild, Preis, Kauf-Button und eine optionale Hinweiszeile für Lieferinformationen. Siehe [Verkauf](/de/features/domains-website-inbox#verkaufe-uber-ihre-website) zum Verfolgen von Zahlungen und Bestellungen.
 
 ## Anfragen verwalten
 
-Siehe [Angebote - Angebotsanfragen](/features/quotes#quote-requests) für Details zum Verwalten eingehender Anfragen.
+Siehe [Angebote - Angebotsanfragen](/de/features/quotes#angebotsanfragen) für Details zum Verwalten eingehender Anfragen.
 
 ## Abonnement-Voraussetzung
 
@@ -349,7 +349,7 @@ Diese Prüfung gilt für alle öffentlichen Routen und erfolgt bei jeder Anfrage
 
 ## Verwandte Themen
 
-- [Domains, Website und Inbox](/features/domains-website-inbox): Eigene Domain einrichten, Verifizierung, SSL und E-Mail-Inbox.
-- [Unternehmenseinstellungen](/settings/company): Wo Ihre Firmendaten, Ihr Branding und Ihre Adresse liegen.
-- [Angebote](/features/quotes): Angebotsanfragen verwalten, die über Ihre Website eingehen.
-- [Tarif & Zahlungen](/settings/billing): Abonnements und Funktionszugang.
+- [Domains, Website und Inbox](/de/features/domains-website-inbox): Eigene Domain einrichten, Verifizierung, SSL und E-Mail-Inbox.
+- [Unternehmenseinstellungen](/de/settings/company): Wo Ihre Firmendaten, Ihr Branding und Ihre Adresse liegen.
+- [Angebote](/de/features/quotes): Angebotsanfragen verwalten, die über Ihre Website eingehen.
+- [Tarif & Zahlungen](/de/settings/billing): Abonnements und Funktionszugang.
