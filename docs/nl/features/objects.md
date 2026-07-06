@@ -18,10 +18,10 @@ De objectenmodule is ontworpen voor bedrijven die fysieke activa beheren, met na
 
 | Type | Toepassing |
 |---|---|
-| **Woning / Garage** | Woningen, garages, opslagboxen |
+| **Pand / Garage** | Woningen, garages, opslagboxen |
 | **Appartement** | Huurappartementen |
 | **Kantoor** | Kantoorruimten |
-| **Winkel** | Winkels en commerciële ruimten |
+| **Retail** | Winkels en commerciële ruimten |
 | **Voertuig** | Auto's, vrachtwagens, bestelbussen, bouwvoertuigen |
 | **Machine** | Industriële apparatuur, generatoren |
 | **Apparatuur** | Gereedschap en apparaten |
@@ -39,7 +39,7 @@ De objectenmodule is ontworpen voor bedrijven die fysieke activa beheren, met na
 | **Onderhoud** | Tijdelijk buiten gebruik |
 | **Inactief** | Niet beschikbaar |
 | **Verkocht** | Niet meer van jou; bewaard voor de administratie |
-| **Afgevoerd** | Afgeschreven of weggedaan |
+| **Afgestoten** | Afgeschreven of weggedaan |
 
 De lijst biedt ook een **Verhuurd**-filter dat alles toont wat momenteel bezet is.
 
@@ -78,7 +78,7 @@ Boven de contractenlijst geeft een samenvattingsbalk je in een oogopslag inzicht
 
 ### WOZ-geschiedenis (woning-objecten)
 
-Bij objecten van het type **Woning** bevat de detailpagina een WOZ-geschiedenissectie. WOZ-waarden (Waardering Onroerende Zaken) zijn de door de gemeente vastgestelde woningwaarden die worden gebruikt in de Nederlandse Box 3-belastingberekening.
+Bij objecten van het type **Pand / Garage** bevat de detailpagina een WOZ-geschiedenissectie. WOZ-waarden (Waardering Onroerende Zaken) zijn de door de gemeente vastgestelde woningwaarden die worden gebruikt in de Nederlandse Box 3-belastingberekening.
 
 - **Bekijk** jaarlijkse WOZ-waarden per jaar.
 - **Voeg** nieuwe waarden toe door het jaar en de WOZ-waarde van de gemeente in te vullen.
@@ -123,7 +123,7 @@ Objecten integreren met andere MyCompanyDesk-functies:
 Filter je objecten op:
 
 - **Type**: een van de tien objecttypen
-- **Status**: Beschikbaar, Verhuurd, Onderhoud, Actief, Verkocht, Afgevoerd of Inactief
+- **Status**: Beschikbaar, Verhuurd, Onderhoud, Actief, Verkocht, Afgestoten of Inactief
 - **Periode** en **zoeken**: zoek op naam of omschrijving
 - **Weergave**: wissel tussen Actief, Archief en Prullenbak
 

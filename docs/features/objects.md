@@ -78,7 +78,7 @@ Above the contracts list, a summary header gives you a quick read on the object'
 
 ### WOZ history (Property objects)
 
-For objects with type **Property**, the detail page includes a WOZ history section. WOZ values (Waardering Onroerende Zaken) are the municipality-assessed property values used in Dutch Box 3 tax calculations.
+For objects with type **Property / Garage**, the detail page includes a WOZ history section. WOZ values (Waardering Onroerende Zaken) are the municipality-assessed property values used in Dutch Box 3 tax calculations.
 
 - **View** annual WOZ values per year.
 - **Add** new values by entering the year and the WOZ value assigned by the municipality.
