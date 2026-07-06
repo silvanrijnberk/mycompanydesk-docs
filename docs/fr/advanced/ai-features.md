@@ -1,148 +1,88 @@
 ---
-title: Fonctionnalites IA
+title: Fonctions IA
 ---
 
-# Fonctionnalites IA
+# Fonctions IA
 
-MyCompanyDesk inclut des fonctionnalites basees sur l'IA pour vous aider a travailler plus vite et plus intelligemment.
+MyCompanyDesk utilise l'IA à plusieurs endroits pour accélérer la saisie, tirer des réponses de votre propre comptabilité et vous aider à mieux rédiger. Cette page liste toutes les fonctions IA du produit et ce qu'elles font pour vous.
 
-## Guide contextuel
+## Assistant intégré
 
-L'assistant integre vous aide a naviguer dans MyCompanyDesk :
+L'icône d'aide dans l'application ouvre un panneau de discussion qui sait sur quelle page vous êtes et ce que vous regardez, et répond donc sur votre situation plutôt que dans l'abstrait.
 
-- Cliquez sur l'**icone d'aide** sur chaque page pour obtenir une aide contextuelle
-- Posez des questions sur les fonctionnalites, les workflows ou les parametres
-- Obtenez des instructions etape par etape pour les taches courantes
-- Disponible dans les quatre langues prises en charge
+L'assistant peut chercher de vrais chiffres dans votre propre espace de travail quand vous les demandez :
 
-Le guide comprend sur quelle page vous vous trouvez et donne des suggestions pertinentes.
+- Chiffre d'affaires, dépenses et bénéfice sur une période, y compris la ventilation par mois
+- Factures en attente et en retard, et quels clients vous doivent le plus
+- Totaux de dépenses par catégorie et enregistrement du temps par projet
+- Votre position TVA : collectée, payée et nette par période
+- La déclaration de TVA néerlandaise, remplie par rubrique, plus des contrôles qui signalent tout ce qui bloque un dépôt (factures en brouillon, justificatifs manquants)
+- Les indicateurs KOR et KIA : où vous en êtes par rapport au seuil du régime des petites entreprises et à quoi ressemble votre déduction pour investissement
+- Les ventes intracommunautaires pour la déclaration ICP et les ventes UE par pays
 
-### Limites de chat
+Il répond aussi aux questions "comment faire" à partir du contenu d'aide intégré, et une même question peut combiner les deux : demandez "comment déposer ma TVA du T2 et quel est mon solde" et vous obtenez les étapes et le chiffre dans une seule réponse. Les réponses s'affichent en continu, vous voyez donc la réponse se former au lieu d'attendre.
 
-L'utilisation du chat depend de votre plan :
+L'assistant est en lecture seule par conception : il peut consulter vos données, mais il ne crée, ne modifie et ne supprime jamais rien.
 
-| Plan | Messages de chat (mensuel) |
-|---|---|
-| Gratuit | 10 |
-| Starter | 100 |
-| Pro | 1 000 |
+Une petite pastille "AI" à côté du nom de l'assistant vous rappelle que vous parlez à une IA, et la discussion vide affiche une courte mention : les réponses peuvent contenir des erreurs, vérifiez donc toujours vous-même les conclusions financières ou fiscales. Sur le plan Pro, le panneau de l'assistant reçoit un accent violet Pro ; les capacités et les mentions sont les mêmes sur tous les plans.
 
-Les limites IA sont mensuelles, et non quotidiennes. Elles sont reinitialisees le premier de chaque mois.
+## Aide dans la boîte de réception
 
-### Divulgation selon la loi europeenne sur l'IA (art. 50)
+Quand votre boîte de réception professionnelle reçoit des e-mails, l'IA trie chaque conversation pour vous :
 
-Le guide contextuel est classe comme un systeme d'IA a risque limite en vertu de l'article 50 du reglement europeen sur l'IA (Reglement 2024/1689). Cela signifie que nous devons indiquer clairement que vous interagissez avec une IA. Le guide contient deux elements a cet effet :
+- **Résumé de conversation** : Un court résumé du sujet de la conversation, dans la langue de votre espace de travail.
+- **Actions suggérées** : Des étapes suivantes concrètes, comme "envoyer le devis" ou "confirmer le rendez-vous".
+- **Suggestions de libellés** : Des libellés proposés que vous acceptez en un clic. L'IA propose, vous décidez ; rien n'est étiqueté automatiquement.
+- **Détection du spam** : Les messages clairement indésirables sont déplacés automatiquement vers le spam. En cas de doute, la conversation reste dans votre boîte de réception avec une indication discrète et un raccourci "marquer comme spam" en un geste ; les messages ambigus ne sont jamais routés automatiquement.
 
-- **Badge IA.** Une petite pastille "IA" a cote du nom de l'assistant. Toujours visible lorsque le guide est ouvert. Une info-bulle sur le badge indique le fournisseur sous-jacent (Google Gemini).
-- **Texte de divulgation.** Une courte ligne sous la question de bienvenue dans un etat de chat vide : "Vous parlez a un assistant IA. Les reponses peuvent contenir des erreurs ; verifiez toujours vous-meme les conclusions financieres ou fiscales."
+Vous pouvez régénérer le résumé et les suggestions de n'importe quelle conversation à la demande.
 
-L'obligation entre en vigueur en aout 2026 ; les divulgations ont ete mises en place avant la date limite.
+## Aide à la rédaction du site web
 
-### Apparence visuelle Pro
+Le [constructeur de site](/fr/advanced/business-page) inclut trois outils de rédaction :
 
-Les espaces de travail Pro beneficient d'une apparence d'assistant premium qui remplace le style generique par l'accent violet Pro. Lorsque le plan de facturation est Pro, le panneau de l'assistant change visuellement :
+- **Réécriture de ton** : Chaque champ de texte de l'inspecteur de section offre quatre réécritures en un clic : plus court, plus calme, plus percutant ou plus amical. La réécriture garde votre langue et n'invente jamais de nouvelles informations.
+- **Vul met AI** : Remplissez tout le texte d'une section en un clic, à partir de votre profil d'entreprise. Les clics suivants font défiler gratuitement des variantes mises en cache.
+- **Regenereer met AI** : Régénérez le texte de départ de votre site (slogan, texte de présentation et brouillons de services) à la demande, pour n'importe quel espace de travail. Vous relisez et modifiez tout avant application.
 
-- La pastille "IA" devient une pastille violette "Pro", signalant que l'assistant utilise le modele le plus performant avec le contexte complet de l'application.
-- La bordure du panneau, l'anneau de l'avatar, le point en ligne et le bouton d'envoi passent au violet (`#a855f7`), en accord avec le ruban Pro dans la navigation de l'application.
-- La ligne de statut affiche "Votre assistant Pro est pret" au lieu du generique "Pret a aider."
+Consultez [Constructeur de site](/fr/advanced/business-page#aide-a-la-redaction-par-ia) pour les détails.
 
-L'apparence Pro est purement cosmetique. Le selecteur de modele sous-jacent, le catalogue d'outils et les divulgations de la loi europeenne sur l'IA restent identiques pour tous les plans. `TIER_CHAT_CONFIG` donne deja a Pro un modele plus puissant et un contexte d'application illimite.
+## Scanner de justificatifs
 
-## Suggestions IA
+Téléchargez une photo ou un PDF d'un reçu ou d'une facture fournisseur et le scanner en extrait la date, le fournisseur, le montant, les lignes, le taux de TVA et une catégorie suggérée, prêts à enregistrer comme dépense. Les documents longs sont traités efficacement, et les scans comptent dans votre plafond IA mensuel. Consultez [Numérisation des reçus](/fr/advanced/receipt-scanning) pour le parcours complet.
 
-Des recommandations intelligentes qui vous aident a categoriser et decrire vos enregistrements :
+## Suggestions de catégorie de dépense
 
-### Categorisation des depenses
+Quand vous saisissez une dépense, le fournisseur est associé à la bonne catégorie de votre propre liste de catégories, pas d'une liste figée intégrée. La suggestion choisit aussi le traitement TVA correct selon le pays du fournisseur et signale les investissements potentiels (équipement de plus de 450 euros hors TVA) pour que l'amortissement soit traité correctement.
 
-Lorsque vous creez une depense, l'IA analyse la description et suggere la categorie la plus appropriee. Cela fait gagner du temps et garantit une categorisation coherente.
+## Suggestions intelligentes
 
-### Ameliorations des descriptions
+Après la création d'une facture, d'une dépense ou d'une note client, un contrôle en arrière-plan suggère des améliorations : une meilleure catégorie pour les dépenses classées dans "autres", ou une description plus claire pour les lignes de facture. Les suggestions apprennent de vous : quand vous en acceptez une, les suggestions similaires suivent ensuite automatiquement votre style. Rien n'est modifié tant que vous n'acceptez pas.
 
-L'IA peut suggerer des descriptions plus claires et plus professionnelles pour :
+La plateforme détecte aussi votre secteur d'activité à partir de votre historique de factures et de dépenses, pour que les suggestions correspondent à la façon dont les entreprises comme la vôtre comptabilisent réellement.
 
-- Les lignes de facture
-- Les descriptions de depenses
-- Les notes clients
+## Suggestions instantanées dans les formulaires
 
-### Comment ca marche
+Les formulaires client, projet et dépense proposent une saisie semi-automatique basée sur ce que vous avez saisi auparavant. Cela repose entièrement sur vos propres données, sans IA, c'est donc instantané et toujours disponible.
 
-1. Creez ou modifiez un enregistrement
-2. Surveillez l'indicateur de suggestion IA
-3. Examinez la suggestion
-4. Cliquez sur **Appliquer** pour l'utiliser, ou sur **Ignorer** pour passer
+## Vérification du texte
 
-::: info
-Les suggestions IA necessitent le plan **Starter** ou superieur. Activez-les via **Entreprise > Fonctionnalites**.
-:::
+Les champs de formulaire corrigent les fautes de frappe pendant la saisie, dans neuf formulaires (factures, devis, dépenses, clients, projets, contrats, objets, écritures récurrentes et enregistrements de temps). Le néerlandais est la langue par défaut ; l'anglais, l'allemand et le français sont aussi pris en charge.
 
-## Numerisation des recus
+## Briefing du tableau de bord
 
-L'OCR alimentee par l'IA extrait les donnees des images de recus et des PDF :
+Le tableau de bord s'ouvre sur un briefing court et personnel rédigé pour votre journée : l'action la plus urgente d'abord, un ou deux points d'appui, et une étape suivante concrète. Il est généré une fois par jour dans votre langue et renouvelé le lendemain. Si le briefing ne peut pas être généré, le tableau de bord revient discrètement à son résumé standard ; vous ne voyez jamais d'erreur.
 
-- **Date** -- Quand l'achat a ete effectue
-- **Montant** -- Cout total
-- **Fournisseur** -- A qui vous avez paye
-- **Description** -- Ce qui a ete achete
+## Plafonds d'utilisation mensuels
 
-Voir [Numerisation des recus](/fr/advanced/receipt-scanning) pour des instructions detaillees.
+L'utilisation de l'IA est plafonnée par mois calendaire, pas par jour : traiter 40 scans de reçus d'un coup le vendredi après-midi ne pose donc aucun problème.
 
-## Verification du texte
-
-Verification grammaticale et orthographique pour vos documents :
-
-- Verifiez les descriptions de facture avant envoi
-- Verifiez le contenu des devis
-- Corrigez les fautes de frappe dans les textes destines aux clients
-
-Prend en charge l'anglais, le neerlandais, l'allemand et le francais.
-
-::: info
-La verification du texte est disponible sur tous les plans, y compris Gratuit.
-:::
-
-## Resumes de compte
-
-L'IA genere des resumes periodiques de votre activite commerciale :
-
-- **Quotidien** -- Apercu rapide des transactions du jour
-- **Hebdomadaire** -- Resume hebdomadaire avec tendances
-- **Mensuel** -- Analyse mensuelle complete
-
-Les resumes sont generes dans votre langue preferee et sont disponibles depuis le tableau de bord.
-
-## Apercu du tableau de bord par IA (Pro)
-
-La section hero du tableau de bord affiche un briefing court et personnel genere par IA pour les espaces de travail Pro. Le serveur genere le briefing une fois par jour calendaire et le met en cache pour le reste de la journee.
-
-- **Voix.** Le briefing parle a la premiere personne ("je") et s'adresse a l'utilisateur avec le vouvoiement ("vous"). Il s'ouvre sur l'action la plus urgente, ajoute au plus un ou deux points supplementaires, et se termine par une etape suivante concrete (ex. "envoyez un rappel a Atelier Norden aujourd'hui"). Chaleureux, confiant, concis -- le ton d'un assistant competent qui connait l'entreprise.
-- **Modele.** L'endpoint `POST /api/dashboard/briefing-insight` fonctionne sur Vertex AI `europe-west1` (Gemini 2.5 Flash). Ollama Cloud n'est pas utilise pour ce chemin.
-- **Signaux d'entree.** Le client envoie un apercu complet des donnees d'activite du jour : liquidite et autonomie, CA et benefice (mois + annee), creances en retard (nombre, total, pire client), depenses (a venir + en retard), nombre de brouillons, marges par projet, position TVA (solde, echeance, progression checklist, reserve), heures non facturees, paiements recents et nouveaux clients. Tous les montants sont arrondis a l'euro entier avant d'atteindre le modele.
-- **Langues.** Le modele genere le briefing en `nl/de/en/fr` selon la langue de l'utilisateur. Le client inclut le code ISO-639-1 dans la requete.
-- **Restriction par plan.** L'endpoint est controle par le flag `ai_insights`, qui necessite Pro. Si un espace de travail n'est pas eligible, le client conserve uniquement le texte standard.
-- **Fallback.** En cas d'echec (modele indisponible, 403, erreur reseau), le client utilise le texte standard existant. Aucune erreur n'est affichee a l'utilisateur.
-- **UX client.** Pendant le chargement du briefing IA, le hero affiche le texte standard mis en cache de la veille. Lorsque la version IA arrive, une transition en fondu enchaine (opacite + glissement) la remplace. Le briefing IA apparait avec une icone sparkle et la couleur de texte principale. Un shimmer squelette fidele a la mise en page (`BriefingSkeleton`) maintient la forme complete du tableau de bord jusqu'a l'arrivee des donnees principales, puis se dissout dans une animation d'entree coordonnee et progressive. Les utilisateurs avec reduced-motion ne recoivent aucune animation.
-
-
-## Droits par plan
-
-| Fonctionnalite | Gratuit | Starter | Pro |
+| Compteur | Gratuit | Starter | Pro |
 |---|---|---|---|
-| Guide contextuel | Limite, FAQ uniquement en debordement | Standard | Limite la plus elevee |
-| Suggestions IA | Desactive | Active | Active |
-| Classification des fournisseurs | Desactive | Active | Active |
-| Numerisation des recus | Desactive | Active | Active |
-| Verification du texte | Active | Active | Active |
-| Traduction | Active (UI uniquement) | Active | Active |
-| Apercu tableau de bord IA | Desactive | Desactive | Active |
+| Messages de chat IA | 10 | 100 | 1 000 |
+| Scans de reçus IA | 3 | 30 | 200 |
+| Suggestions IA | 10 | 200 | 2 000 |
 
-## Confidentialite
+## Confidentialité
 
-Tous les chemins d'IA cloud passent par defaut par Vertex AI dans `europe-west1` (UE). MyCompanyDesk a un accord de traitement des donnees avec Google Cloud pour l'utilisation de Vertex AI. Ollama Cloud (ollama.com, heberge aux Etats-Unis) est desactive par defaut car aucun accord de traitement des donnees n'existe avec Ollama Inc. Vous pouvez l'activer par espace de travail pour les charges de travail sans donnees personnelles, mais il est desactive pour tous les plans.
-
-Si vous reglez `ai_processing_mode` sur `local_only`, la numerisation des recus, les suggestions IA, la verification du texte, la classification des fournisseurs et la detection du secteur restent entierement sur votre propre serveur. Le guide contextuel fonctionne uniquement dans le cloud et est desactive en mode `local_only`.
-
-## Conseils
-
-- Activez les suggestions IA une fois et elles fonctionnent automatiquement en arriere-plan
-- La numerisation des recus est particulierement utile pour les recus papier -- prenez simplement une photo
-- Le guide contextuel peut repondre a la plupart des questions "comment faire..." sur l'application
+Le traitement IA dans le cloud s'exécute sur une infrastructure basée dans l'UE. Sur le plan Pro, vous pouvez en plus activer le mode confidentialité, qui garde les fonctions IA prises en charge (numérisation des reçus, suggestions, vérification du texte, suggestions de catégorie) sur les propres serveurs de MyCompanyDesk, pour que les documents ne quittent jamais la plateforme. L'assistant intégré a besoin du traitement cloud et est indisponible tant que le mode confidentialité est actif, plutôt que dégradé en silence.
