@@ -1,89 +1,86 @@
 ---
-title: Factures recurrentes
+title: Factures récurrentes
 ---
 
-# Factures recurrentes
+# Factures récurrentes
 
-Automatisez votre facturation reguliere en configurant des factures qui se generent selon un calendrier.
+Automatisez votre facturation régulière en configurant des factures qui se génèrent selon un calendrier.
 
 ## Vue d'ensemble
 
-Les factures recurrentes sont des modeles qui creent automatiquement de nouvelles factures a des intervalles definis. Ideal pour :
+Les factures récurrentes sont des modèles qui créent automatiquement de nouvelles factures à des intervalles définis. Idéal pour :
 
-- Les abonnements mensuels
+- Les forfaits mensuels
 - La facturation d'abonnements
 - L'encaissement des loyers
 - Les contrats de maintenance
-- Les honoraires de conseil reguliers
+- Les honoraires de conseil réguliers
 
-## Creer une facture recurrente
+## Créer une facture récurrente
 
-1. Allez dans **Factures recurrentes > Nouveau**
-2. Remplissez le modele :
-   - **Client** -- A qui facturer
-   - **Lignes de facturation** -- Ce qu'il faut facturer (descriptions, montants, TVA)
-   - **Frequence** -- A quelle frequence (hebdomadaire, mensuelle, trimestrielle, annuelle)
-   - **Date de debut** -- Quand commencer la generation
+1. Allez dans **Factures récurrentes > Nouveau**
+2. Remplissez le modèle :
+   - **Client** : à qui facturer
+   - **Lignes de facturation** : ce qu'il faut facturer (descriptions, montants, TVA)
+   - **Fréquence** : à quelle fréquence (hebdomadaire, mensuelle, trimestrielle, annuelle)
+   - **Date de début** : quand commencer la génération
 3. Cliquez sur **Enregistrer**
 
-La facture recurrente est creee avec le statut **Active** et generera sa premiere facture a la prochaine date programmee.
+La facture récurrente est créée avec le statut **Active** et générera sa première facture à la prochaine date programmée.
 
-## Options de frequence
+L'option **Envoi automatique de l'e-mail à la création** est activée par défaut : chaque facture générée est envoyée immédiatement par e-mail au client. Désactivez-la si vous préférez vérifier et envoyer chaque facture vous-même.
 
-| Frequence | Description |
+## Options de fréquence
+
+| Fréquence | Description |
 |---|---|
 | **Hebdomadaire** | Tous les 7 jours |
-| **Mensuelle** | Le meme jour chaque mois |
+| **Mensuelle** | Le même jour chaque mois |
 | **Trimestrielle** | Tous les 3 mois |
 | **Annuelle** | Une fois par an |
 
-## Gerer les factures recurrentes
+## Gérer les factures récurrentes
 
 ### Mettre en pause
 
-Arretez temporairement la generation de factures :
+Arrêtez temporairement la génération de factures :
 
-1. Ouvrez la facture recurrente
+1. Ouvrez la facture récurrente
 2. Cliquez sur **Mettre en pause**
-3. Le statut passe a **En pause** -- aucune facture n'est generee
+3. Le statut passe à **En pause** : aucune facture n'est générée
 
 ### Reprendre
 
-Redemarrez une facture recurrente en pause :
+Redémarrez une facture récurrente en pause :
 
-1. Ouvrez la facture recurrente en pause
+1. Ouvrez la facture récurrente en pause
 2. Cliquez sur **Reprendre**
-3. La generation reprend a partir de la prochaine date programmee
+3. La génération reprend à partir de la prochaine date programmée
 
 ### Modifier
 
-La modification d'une facture recurrente n'affecte que les factures **futures**. Les factures deja generees ne sont pas modifiees.
+La modification d'une facture récurrente n'affecte que les factures **futures**. Les factures déjà générées ne sont pas modifiées.
 
 ### Supprimer
 
-Supprimez le modele recurrent entierement. Les factures precedemment generees restent dans vos archives.
+Supprimez entièrement le modèle récurrent. Les factures précédemment générées restent dans vos archives.
 
-## Factures generees
+## Factures générées
 
-A chaque declenchement d'une facture recurrente, une nouvelle facture est creee :
+À chaque déclenchement d'une facture récurrente, une nouvelle facture est créée :
 
-- Elle utilise les lignes et le client du modele
-- Elle suit votre numerotation de factures actuelle
-- Elle commence en tant que **Brouillon** (a examiner et envoyer) ou est envoyee automatiquement si configure
-- Chaque facture generee est independante -- vous pouvez la modifier sans affecter le modele
+- Elle utilise les lignes et le client du modèle
+- Elle suit votre numérotation de factures actuelle
+- Elle est envoyée automatiquement par e-mail, ou conservée en **Brouillon** à vérifier et envoyer si vous avez désactivé l'envoi automatique
+- Chaque facture générée est indépendante : vous pouvez la modifier sans affecter le modèle
 
 ## Consulter l'historique
 
-La page de detail de la facture recurrente affiche toutes les factures precedemment generees, vous permettant de suivre l'historique complet de facturation.
-
-## Actions groupees
-
-- **Mettre en pause / Reprendre** -- Basculez plusieurs factures recurrentes
-- **Supprimer** -- Supprimez plusieurs modeles
+La page de détail de la facture récurrente affiche toutes les factures précédemment générées, vous permettant de suivre l'historique complet de facturation.
 
 ## Conseils
 
 - Combinez avec les [contrats](/fr/features/contracts) pour la facturation contractuelle
-- Examinez les factures generees avant le premier envoi automatique pour vous assurer que tout est correct
-- Utilisez l'apercu de la prochaine occurrence pour voir quand la prochaine facture sera creee
-- Consultez le compteur d'actifs et les indicateurs en haut de la page
+- Examinez les factures générées avant le premier envoi automatique pour vous assurer que tout est correct
+- Utilisez l'aperçu de la prochaine occurrence pour voir quand la prochaine facture sera créée
+- Consultez le compteur de factures actives et les indicateurs en haut de la page
