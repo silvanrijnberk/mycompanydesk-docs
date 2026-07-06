@@ -7,7 +7,7 @@ title: Belegscanner
 Extrahieren Sie automatisch Ausgabendaten aus Belegbildern und PDF-Rechnungen mit KI-gestützter OCR.
 
 ::: info
-Belegscanner erfordert den **Pro**-Tarif oder höher.
+Der Belegscanner ist in jedem Tarif verfügbar, mit einem monatlichen Limit für die Anzahl der Scans: 3 mit Gratis, 30 mit Starter und 200 mit Pro. Das Limit wird am Ersten jedes Kalendermonats zurückgesetzt.
 :::
 
 ## Übersicht
@@ -23,10 +23,10 @@ Anstatt jede Ausgabe manuell einzugeben, fotografieren Sie einen Beleg oder lade
 ## So scannen Sie einen Beleg
 
 1. Gehen Sie zu **Ausgaben > Beleg scannen**
-2. Laden Sie Ihre Belegdatei hoch (Drag-and-Drop oder klicken zum Durchsuchen)
-3. Wählen Sie den Extraktionsmodus:
-   - **Einzeln** — Eine Ausgabe aus dem Beleg extrahieren
-   - **Mehrfach** — Mehrere Positionen aus demselben Beleg extrahieren
+2. Laden Sie Ihre Belegdatei hoch (Drag-and-Drop oder klicken zum Durchsuchen). Der Scanner verarbeitet eine Datei pro Durchgang.
+3. Öffnen Sie bei Bedarf die erweiterten Optionen und wählen Sie den Extraktionsmodus:
+   - **Einzeln**: eine Ausgabe aus dem Beleg extrahieren
+   - **Mehrfach**: mehrere Positionen aus demselben Beleg extrahieren (die Voreinstellung)
 4. Warten Sie auf die Verarbeitung (wenige Sekunden)
 5. Überprüfen Sie die extrahierten Daten:
    - Datum
@@ -60,10 +60,14 @@ Extrahiert: Einzelne Positionen mit Beschreibungen und Beträgen.
 
 ## Erweiterte Einstellungen
 
-Der Scanner hat erweiterte Optionen:
+Der Scanner hat ein Panel mit erweiterten Optionen:
 
-- **Benutzerdefinierte Anweisungen** — Fügen Sie Kontext hinzu, um der KI zu helfen (z. B. „Dies ist ein niederländischer Beleg von Albert Heijn")
-- **Bildverarbeitung** — Automatische Verbesserung für Fotos mit schlechter Qualität
+- **Anweisungen**: Fügen Sie Freitext-Kontext hinzu, um der KI zu helfen (z. B. „Dies ist ein niederländischer Beleg von Albert Heijn")
+- **Extraktionsmodus**: eine einzelne Ausgabe oder mehrere Positionen (Voreinstellung: Mehrfach)
+- **Kategorie**: Beschränken Sie die Extraktion auf eine Ausgabenkategorie, oder lassen Sie alle Kategorien zu
+- **Filter-Tags**: Stichwort-Tags; nur Positionen, die zu den Tags passen, werden extrahiert
+- **Preisspanne**: ein Mindest- und Höchstbetrag; Positionen außerhalb der Spanne werden übersprungen
+- **Beleg anhängen**: ob die Originaldatei an die erstellte Ausgabe angehängt wird (standardmäßig aktiviert)
 
 ## Tipps für beste Ergebnisse
 
@@ -83,13 +87,9 @@ Nach der Bestätigung wird die Ausgabe erstellt mit:
 
 Sie können die Ausgabe anschließend wie jede manuell erstellte Ausgabe bearbeiten.
 
-## Stapel-Upload
+## Mehrere Belege scannen
 
-Laden Sie mehrere Belege gleichzeitig hoch:
-
-1. Wählen Sie mehrere Dateien aus
-2. Jede wird unabhängig verarbeitet
-3. Überprüfen und bestätigen Sie jede Extraktion
+Der Uploader verarbeitet eine Datei pro Durchgang. Um mehrere Belege zu verarbeiten, scannen Sie sie nacheinander; jeder Scan zählt einmal für Ihr monatliches Limit. Für einen Beleg oder eine Rechnung mit mehreren Positionen verwenden Sie den Extraktionsmodus **Mehrfach**, um mit einem Scan mehrere Ausgaben zu erstellen.
 
 ## Tipps
 

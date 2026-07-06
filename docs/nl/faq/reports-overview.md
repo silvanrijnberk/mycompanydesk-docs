@@ -24,7 +24,7 @@ chatbot:
 
 Om je rapporten te bekijken:
 1. Ga naar Rapporten
-2. Wissel tussen de vijf weergaven: het overzicht, Winst & verlies, Cashflow, Klanten en Prognose
+2. Wissel tussen de zes weergaven: het overzicht, Winst & verlies, Cashflow, Klanten, Prognose en Inkomstenbelasting
 3. Gebruik de filters om de periode-indeling te kiezen (jaar, kwartaal, maand, week of dag), het jaar te selecteren, open facturen mee te tellen of te vergelijken met een ander jaar
 
 Rapporten hebben geen status- of categoriefilters; de periode- en vergelijkingsfilters gelden voor alle weergaven.

@@ -24,7 +24,7 @@ chatbot:
 
 To view your reports:
 1. Go to Reports
-2. Switch between the five views: Overview, P&L, Cash Flow, Clients, and Forecast
+2. Switch between the six views: Overview, P&L, Cash Flow, Clients, Forecast, and Income tax
 3. Use the filters to set the period granularity (year, quarter, month, week, or day), pick the year, include open invoices, or compare with another year
 
 There are no status or category filters on reports; the period and comparison filters apply across all views.

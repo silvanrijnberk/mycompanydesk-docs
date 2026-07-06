@@ -4,91 +4,69 @@ title: Rapports
 
 # Rapports
 
-Obtenez des analyses de vos finances avec huit vues de rapports couvrant le chiffre d'affaires, les depenses, les benefices, la TVA et bien plus.
+Comprenez la santé de votre entreprise grâce à cinq vues de rapport ciblées et à une vue d'ensemble qui relie le tout. Les graphiques sont intégrés directement dans chaque vue : chaque rapport combine chiffres et visuels au même endroit.
 
-## Acceder aux rapports
+## Accéder aux rapports
 
-Naviguez vers **Rapports** dans la barre laterale. Utilisez les onglets ou la navigation par balayage (sur mobile) pour passer d'une vue de rapport a l'autre.
+Naviguez vers **Rapports** dans la barre latérale. Sur ordinateur, changez de vue avec la barre d'onglets en haut ; sur mobile, utilisez le sélecteur de vue ou balayez vers la gauche et la droite.
 
-## Vues des rapports
+## Vues de rapport
 
-### Chiffre d'affaires
+### Vue d'ensemble
 
-Suivez vos revenus dans le temps :
+La vue d'accueil rassemble vos chiffres clés pour la période choisie :
 
-- Chiffre d'affaires total par periode
-- Tendances du chiffre d'affaires (graphique)
-- Chiffre d'affaires par client
-- Comparaison avec les periodes precedentes
+- Indicateurs principaux : chiffre d'affaires, bénéfice avec marge, factures impayées, heures enregistrées et dépenses
+- Un graphique de synthèse financière (mensuel ou trimestriel)
+- Une analyse de l'ancienneté des factures impayées, avec un raccourci pour envoyer des rappels
+- Vos meilleurs clients par chiffre d'affaires
+- Des cartes d'analyse qui signalent les points d'attention, comme des factures en retard ou une marge trop faible
 
-### En attente
+Chaque bloc renvoie vers le rapport détaillé correspondant.
 
-Surveillez les factures impayees :
+### Compte de résultat
 
-- Montant total en attente
-- Analyse de l'anciennete (depuis combien de temps les factures sont impayees)
-- Factures en retard
-- Calendrier de paiement prevu
+La vue **Compte de résultat** présente vos résultats sous trois angles, à sélectionner en haut :
 
-### Depenses
+- **Bénéfice** : chiffre d'affaires moins dépenses, marges et leur évolution
+- **Chiffre d'affaires** : revenus par période, tendances et comparaisons
+- **Dépenses** : où part votre argent, ventilé par catégorie
 
-Comprenez vos couts :
+### Trésorerie
 
-- Total des depenses par periode
-- Ventilation des depenses par categorie
-- Tendances des depenses
-- Principales categories de depenses
-
-### Benefices
-
-Consultez votre resultat net :
-
-- Chiffre d'affaires moins depenses = benefice net
-- Marges beneficiaires
-- Evolution des benefices dans le temps
-- Comparaison d'une periode a l'autre
-
-### TVA
-
-Calculez votre obligation de TVA :
-
-- TVA collectee (sur les factures)
-- TVA deductible (sur les depenses)
-- TVA nette a payer ou a recuperer
-- Ventilation par taux de TVA
-
-Pour la gestion detaillee de la TVA, consultez [Gestion de la TVA](/fr/features/vat).
-
-### Tresorerie
-
-Suivez les mouvements de tresorerie :
-
-- Entrees de tresorerie (paiements recus)
-- Sorties de tresorerie (depenses payees)
-- Tresorerie nette
-- Solde cumulatif dans le temps
+Suivez les mouvements d'argent réels : les encaissements, les décaissements, le résultat net et votre solde courant dans le temps.
 
 ### Clients
 
-Analysez votre base de clients :
+Analysez votre clientèle dans deux onglets :
 
-- Chiffre d'affaires par client
-- Classement des clients par depenses totales
-- Tendances d'acquisition de clients
-- Valeur moyenne de facture par client
+- **Activité** : chiffre d'affaires par client, classement des clients et habitudes de facturation
+- **En souffrance** : factures impayées par client, depuis combien de temps elles sont ouvertes et ce qui est en retard
+
+### Prévision
+
+Voyez où vont vos chiffres, sur la base des facturations récurrentes, des factures ouvertes et de votre rythme récent. Changez l'horizon entre **3 mois**, **6 mois** et **12 mois** pour voir le chiffre d'affaires, les dépenses et le bénéfice attendus, ainsi que votre marge de trésorerie.
+
+### Impôt sur le revenu
+
+La vue **Impôt sur le revenu** estime l'impôt sur le revenu pour l'année choisie : bénéfice brut, déduction pour indépendants et exonération de bénéfice PME, revenu imposable, tranches d'imposition, impôt estimé, bénéfice après impôt et montant à mettre de côté. Si votre société est une BV, elle affiche à la place une estimation de l'impôt sur les sociétés. Considérez cette vue comme une aide à la planification pour réserver de l'argent, pas comme une déclaration.
+
+### Vous cherchez le rapport TVA ?
+
+La TVA dispose de sa propre page avec des synthèses trimestrielles et une aide à la déclaration. Consultez [Gestion de la TVA](/fr/features/vat).
 
 ## Filtres
 
-Tous les rapports prennent en charge :
+Ouvrez le panneau **Filtres** avec le bouton en haut de la page des rapports. Les filtres s'appliquent à toutes les vues :
 
-- **Selection de la periode** -- Semaine, mois, trimestre, annee ou plage personnalisee
-- **Selection de l'annee** -- Choisissez un exercice fiscal specifique
-- **Mode comparaison** -- Comparez la periode actuelle avec une periode precedente
-- **Inclure les factures ouvertes** -- Activez ou desactivez la prise en compte des factures impayees dans le chiffre d'affaires
+- **Période** : choisissez la granularité (**Année**, **Trimestre**, **Mois**, **Semaine** ou **Jour**), avec un sélecteur adapté à la granularité choisie
+- **Année** : l'année de référence
+- **Comparer avec** : activez la comparaison et choisissez une **Année de comparaison** pour voir les évolutions d'une période à l'autre
+- **Inclure les factures ouvertes** : décidez si les factures impayées comptent dans le chiffre d'affaires
 
 ## Conseils
 
-- Utilisez le mode comparaison pour reperer les tendances et les variations saisonnieres
-- Consultez regulierement le rapport des factures en attente pour relancer les factures en retard
-- Examinez les rapports de benefices mensuellement pour comprendre vos marges
-- Exportez les donnees des rapports pour les utiliser dans des tableurs ou des presentations
+- Utilisez le mode comparaison pour repérer les tendances et les effets saisonniers
+- Consultez régulièrement l'onglet **En souffrance** sous Clients pour relancer les factures en retard
+- Passez en revue le compte de résultat chaque mois pour comprendre vos marges
+- Jetez un œil à la vue **Impôt sur le revenu** chaque trimestre pour ne jamais être surpris par le montant à réserver

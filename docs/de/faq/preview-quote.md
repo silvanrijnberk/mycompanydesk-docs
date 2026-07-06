@@ -5,7 +5,7 @@ chatbot:
   triggers: ["preview quote", "quote preview", "preview proposal", "view quote pdf", "print quote", "offerte voorbeeld", "offerte preview", "angebot vorschau", "apercu devis", "previsualizar cotizacion", "visualizar proposta"]
   actions:
     - { label: "Open quotes", to: "/quotes" }
-    - { label: "Open Branding & Documents", to: "/company?section=brandingDocuments" }
+    - { label: "Open invoice design", to: "/settings/factuurontwerp" }
   follow_up: ["How do I change quote branding?", "How do I send the quote after preview?", "How do I edit the quote?"]
 ---
 So pruefst, druckst oder laedst du ein Angebot als PDF herunter:

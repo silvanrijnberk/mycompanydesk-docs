@@ -21,30 +21,31 @@ MyCompanyDesk est une plateforme tout-en-un de comptabilite et de gestion d'entr
 
 ## Langue de l'interface
 
-L'interface de MyCompanyDesk est en neerlandais.
+Vous pouvez utiliser l'interface de MyCompanyDesk en néerlandais, anglais, allemand ou français, et changer de langue à tout moment.
 
-Les factures, devis et e-mails peuvent etre envoyes en neerlandais, anglais, allemand ou francais. La langue du document est definie par facture et ne depend pas de la langue de l'interface.
+Les factures, devis et e-mails peuvent également être envoyés en néerlandais, anglais, allemand ou français. La langue du document est définie par facture et ne dépend pas de la langue de l'interface.
 
 ## Abonnements
 
-MyCompanyDesk propose deux plans payants : Starter et Pro. Les nouveaux clients beneficient d'un essai Pro de 60 jours.
+MyCompanyDesk propose deux plans payants : Starter et Pro. Les nouveaux clients bénéficient d'un essai Pro de 60 jours.
 
-| Fonctionnalite | Starter | Pro |
+| Fonctionnalité | Starter | Pro |
 |---|---|---|
-| Factures, devis, clients | Illimite | Illimite |
-| Suivi des depenses | Complet | Complet |
-| Numerisation de recus | Oui | Oui |
+| Factures, devis, clients | Illimité | Illimité |
+| Suivi des dépenses | Complet | Complet |
+| Numérisation de reçus | Oui (30 scans/mois) | Oui (200 scans/mois) |
 | Suggestions IA | Oui | Oui |
-| Image de marque personnalisee | Oui | Oui |
+| Image de marque personnalisée | Oui | Oui |
 | Saisie de temps, outils linguistiques | Oui | Oui |
 | Page entreprise publique | Oui | Oui |
-| Membres d'equipe | 1 | 1 (extensible avec des add-ons de sieges) |
-| Rapports & export | Complet | Complet |
-| Contrats, biens, projets | - | Oui |
-| Boite mail professionnelle sur votre domaine | - | Oui |
-| Multi-domaine, routage de domaine personnalise | - | Oui |
-| Rapports avances, support prioritaire | - | Oui |
-| Acces API, webhooks | - | Oui |
+| Contrats et projets | Oui | Oui |
+| Rapports et export CSV/Excel | Oui | Oui |
+| Accès équipe | Vous seul | Personnes illimitées |
+| Boîte mail professionnelle sur votre domaine | - | Oui |
+| Connexions bancaires | - | Jusqu'à 3 |
+| Multi-domaine, routage de domaine personnalisé | - | Oui |
+| Rapports avancés, support prioritaire | - | Oui |
+| Accès API, webhooks | - | Oui |
 
 ## Obtenir de l'aide
 

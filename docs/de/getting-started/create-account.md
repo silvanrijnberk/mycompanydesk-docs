@@ -12,27 +12,17 @@ Der Einstieg in MyCompanyDesk dauert nur wenige Minuten.
 2. Auf dem **Registrieren**-Tab:
    - **Konto erstellen** mit E-Mail und einem Passwort (mindestens 8 Zeichen).
    - Oder nutzen Sie einen sozialen Anbieter: **Mit Google anmelden** oder **Mit Outlook anmelden**.
-   - **Passwortlose Registrierung** kommt demnächst; der Tab zeigt einen Platzhalter-Hinweis dafür.
 3. Der Registrierungsbildschirm zeigt auch eine Live-Vorschau: ein simuliertes Dashboard mit Beispielumsätzen, fälligen Posten und Aktivitäts-Chips, sodass Sie das Erlebnis vorab sehen können. Die Vorschau verwendet keine echten Daten.
 4. Wenn Sie sich per E-Mail registriert haben, prüfen Sie Ihren Posteingang auf eine **Bestätigungs-E-Mail** und klicken Sie auf den Link, um Ihr Konto zu verifizieren. Keine E-Mail erhalten? Senden Sie sie über den Verifizierungsbildschirm erneut. Falsche E-Mail-Adresse verwendet? Klicken Sie auf **Wrong email address? Start over**, um zur Registrierung zurückzukehren.
+5. Nach der Verifizierung erhalten Sie eine Willkommens-E-Mail und gelangen direkt in die App, in Ihren eigenen Arbeitsbereich.
 
 :::tip Partner-Empfehlung
 Hat Ihr Steuerberater oder Buchhalter Ihnen einen Empfehlungslink gegeben (zum Beispiel `app.mycompanydesk.com/register?partner=DERENCODE`)? Öffnen Sie diesen Link zur Registrierung. Ihre Anmeldung wird automatisch zugeordnet, wodurch Ihr Arbeitsbereich eine 12-monatige kostenlose Pro-Testphase anstelle der standardmäßigen 60 Tage erhält.
 :::
 
-## Arbeitsbereich erstellen oder beitreten
+## Ihr Arbeitsbereich
 
-Nach der Registrierung haben Sie zwei Möglichkeiten:
-
-### Neuen Arbeitsbereich erstellen
-
-Wenn Sie die erste Person aus Ihrem Unternehmen sind, erstellen Sie einen neuen Arbeitsbereich:
-
-1. Geben Sie Ihren **Firmennamen** ein
-2. Wählen Sie Ihre bevorzugte **Sprache**
-3. Klicken Sie auf **Arbeitsbereich erstellen**
-
-Dies erstellt einen neuen Arbeitsbereich mit einer **60-tägigen kostenlosen Pro-Testphase** (keine Zahlungsmethode erforderlich). Sie können sofort alle Pro-Funktionen erkunden, während Sie Ihre Unternehmensinformationen, Kunden und Rechnungen hinzufügen.
+Ihr Arbeitsbereich wird bei der Registrierung automatisch erstellt, mit einer **60-tägigen kostenlosen Pro-Testphase** (keine Zahlungsmethode erforderlich). Sie können sofort alle Pro-Funktionen erkunden; Ihre Unternehmensdaten füllen Sie später im Einrichtungsassistenten aus.
 
 ### Einem bestehenden Arbeitsbereich beitreten
 
@@ -46,32 +36,13 @@ Sie können Mitglied mehrerer Arbeitsbereiche sein und über Ihr Kontomenü zwis
 
 ## Anmeldung nach der Registrierung
 
-Rückkehrende Benutzer landen auf derselben geteilten Seite. Der **Anmelden**-Tab akzeptiert Ihre E-Mail und Ihr Passwort und enthält einen **Passwort vergessen**-Link. Die passwortlose Anmeldung kommt ebenfalls demnächst, gekennzeichnet mit einem Hinweis auf dem Tab.
+Rückkehrende Benutzer landen auf derselben geteilten Seite. Der **Anmelden**-Tab akzeptiert Ihre E-Mail und Ihr Passwort und enthält einen **Passwort vergessen**-Link. Sie können sich auch ohne Passwort anmelden, mit einem Magic Link per E-Mail oder mit einem Passkey.
 
-## Dashboard-Profil wählen
+## Einrichtungsassistenten abschließen
 
-Bei der ersten Anmeldung sehen Sie eine Willkommensnachricht und das Setup-Banner auf Ihrem Dashboard. MyCompanyDesk bietet Dashboard-Profile, die auf verschiedene Rollen zugeschnitten sind:
+Ein schließbares **Setup abschließen**-Banner oben auf dem Dashboard begleitet Sie durch die restliche Einrichtung. Klicken Sie auf **Weiter**, um den Einrichtungsassistenten zu öffnen, oder klicken Sie auf das X-Symbol, um das Banner auszublenden; es bleibt in diesem Browser ausgeblendet, bis Sie den Assistenten abschließen.
 
-- **Inhaber / Geschäftsführer** — Finanzieller Überblick auf hoher Ebene und Cashflow
-- **Buchhalter / Steuerberater** — USt.-Compliance, Prüfpfade, Periodensperren
-- **Freiberufler** — Vereinfachte Ansicht mit Fokus auf Rechnungsstellung und Einnahmen
-- **Projektbasiert** — Projektrentabilität und Zeiterfassung im Fokus
-- **Debitorenbuchhaltung (Rechnungsstellung)** — Rechnungskennzahlen und Zahlungsverfolgung
-- **Kreditorenbuchhaltung (Einkauf)** — Ausgabenverfolgung und Lieferantenverwaltung
-- **USt.-Compliance** — USt.-Berechnungen und Fristen
-- **Wachstum / Betrieb** — Umsatztrends und Kundenakquise
-
-Sie können Ihr Dashboard-Profil jederzeit in den Dashboard-Einstellungen ändern.
-
-## Onboarding-Checkliste abschließen
-
-Ein schließbares **Setup abschließen**-Banner oben auf dem Dashboard hilft Ihnen, die verbleibenden Setup-Felder auszufüllen. Klicken Sie auf **Weiter**, um den Einrichtungsassistenten zu öffnen, oder klicken Sie auf das X-Symbol, um das Banner auszublenden. Das Banner bleibt pro Browser über localStorage ausgeblendet, bis Sie den Assistenten abschließen. Die alte Onboarding-Karte wurde entfernt; das Assistenten-Banner ersetzt sie.
-
-Der Assistent deckt diese Schritte ab:
-
-1. **Unternehmensinformationen einrichten** — Fügen Sie Ihren Firmennamen, Ihre Adresse, USt.-Nummer und Bankdaten hinzu
-2. **Ersten Kunden hinzufügen** — Erstellen Sie einen Kundendatensatz, um mit der Rechnungsstellung zu beginnen
-3. **Erste Rechnung erstellen** — Versenden Sie Ihre erste professionelle Rechnung
+Der Assistent fragt nach Ihrem Gewerbe und Ihren Zielen, findet Ihre Unternehmensdaten über das KVK-Register und kann optional eine Website für Sie einrichten. Eine spätere Dokumentationsseite behandelt den Assistenten vollständig.
 
 Der Assistent ist nicht blockierend: Sie können ihn über das Banner öffnen oder jederzeit zu `/setup` navigieren, und Sie können das Banner frei schließen. Es gibt keine erzwungene Weiterleitung bei der Anmeldung.
 

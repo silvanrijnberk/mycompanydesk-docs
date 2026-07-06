@@ -1,88 +1,101 @@
 ---
-title: Enregistrement du temps
+title: Agenda
 ---
 
-# Enregistrement du temps
+# Agenda
 
-Enregistrez vos heures de travail par projet et par client pour suivre le temps facturable et generer des factures a partir des entrees de temps.
+Enregistrez vos heures de travail, planifiez vos journées et transformez le temps facturable en factures. La page **Agenda** dans la barre latérale combine l'enregistrement du temps avec un agenda : vous voyez le plan du jour, les entrées planifiées à côté des heures enregistrées et des suggestions issues de vos calendriers connectés, le tout au même endroit.
 
-## Vue d'ensemble
+## La page en un coup d'œil
 
-L'enregistrement du temps vous aide a :
+Passez d'une vue à l'autre avec le sélecteur en haut (balayez entre les périodes sur mobile) :
 
-- Suivre combien d'heures vous consacrez a chaque projet
-- Calculer le temps facturable vs. non facturable
-- Generer des factures directement a partir des heures enregistrees
-- Comprendre votre taux horaire effectif
+- **Jour** : le plan et les heures enregistrées du jour. Selon vos réglages, vous voyez une chronologie ou une liste compacte, avec les entrées planifiées séparées des entrées enregistrées. Les événements de vos calendriers connectés apparaissent à côté de vos entrées et se convertissent en entrées de temps d'un simple appui, et vous recevez des suggestions basées sur votre activité récente.
+- **Semaine** : sur ordinateur, un planning sur sept jours où les blocs pleins sont des heures enregistrées et les blocs hachurés des heures planifiées ; cliquez sur un créneau vide pour ajouter une entrée. Sur mobile, un résumé par jour à explorer d'un appui.
+- **Mois** : les totaux par jour ; sélectionnez un jour pour y accéder.
+- **Liste** : un tableau consultable de toutes les entrées avec des filtres par statut de facturation, client, projet et déplacements, plus les totaux de la sélection en cours.
+
+Les entrées planifiées portent le badge **Provisoire** ; appuyez sur **Confirmer** une fois le travail réellement effectué pour les transformer en heures enregistrées.
 
 ## Enregistrer du temps
 
-### Creer une entree de temps
+### Minuteur
 
-1. Allez dans **Enregistrement du temps**
-2. Cliquez sur **Ajouter une entree** (ou le bouton + sur mobile)
-3. Remplissez :
-   - **Date** -- Quand le travail a ete effectue
-   - **Heures** -- Duree du travail
-   - **Projet** -- A quel projet le temps est destine
-   - **Client** -- Le client (rempli automatiquement a partir du projet)
-   - **Description** -- Ce sur quoi vous avez travaille
-   - **Facturable** -- Si ce temps doit etre facture
-   - **Taux horaire** -- Votre tarif pour ce travail
-4. Cliquez sur **Enregistrer**
+Sur mobile, la vue Jour comprend un minuteur : lancez-le quand vous commencez à travailler et arrêtez-le pour enregistrer le temps écoulé comme entrée. Vous pouvez faire du minuteur votre mode de travail par défaut via le réglage du mode de travail (voir Paramètres ci-dessous).
 
-### Description par defaut
+### Entrées manuelles
 
-Lorsque vous ajoutez une entree de temps, le champ de description est automatiquement prerempli a partir de la **description standard** (Standaard regelomschrijving) de votre espace de travail. Le systeme verifie dans l'ordre :
+1. Cliquez sur **Ajouter une entrée** (raccourci clavier A, ou le bouton + sur mobile)
+2. Le panneau de saisie rapide s'ouvre : choisissez le client et éventuellement un projet, saisissez vos heures et ajustez la description et le tarif si nécessaire
+3. Saisissez le temps en nombre total d'heures, ou passez à une heure de début et de fin
+4. Enregistrez l'entrée
 
-1. La description standard du projet
-2. La description standard du client
-3. La description standard de l'espace de travail
+### Description de ligne par défaut
 
-Votre propre saisie n'est jamais ecrasee. Des que vous tapez une description personnalisee, la valeur preremplie ne la remplace plus.
+Lors de l'ajout d'une entrée de temps, le champ de description est prérempli automatiquement à partir de vos descriptions de ligne par défaut. Le système vérifie dans l'ordre :
+
+1. La description de ligne par défaut du projet
+2. La description de ligne par défaut du client
+3. La valeur par défaut de l'espace de travail
+
+Votre propre saisie n'est jamais écrasée. Dès que vous tapez une description personnalisée, la valeur préremplie ne la remplace plus.
 
 ### Mode heures uniquement
 
-Pour un suivi du temps simplifie, activez le mode heures uniquement dans les parametres. Cela masque le taux horaire et les champs de facturation, n'affichant que les heures et la description.
+Vous préférez n'enregistrer qu'un total par jour ? Activez le **Mode heures uniquement** dans les paramètres de l'agenda. Il masque la chronologie et les champs d'heure de début et de fin : vous saisissez uniquement le total d'heures par jour. Le tarif et le champ facturable restent disponibles.
 
-## Facturer les entrees de temps
+## Facturer vos heures
 
-Convertissez les heures enregistrees en factures :
+### Créer une facture depuis la page Agenda
 
-1. Filtrez les entrees de temps par client ou projet
-2. Selectionnez les entrees que vous souhaitez facturer
-3. Cliquez sur **Creer une facture**
-4. Une nouvelle facture est pre-remplie avec les lignes correspondant aux entrees de temps selectionnees
-5. Verifiez et envoyez
+Lorsque vous avez des entrées non facturées, cliquez sur **Créer une facture**. Un panneau s'ouvre où vous choisissez un client ; il liste toutes les entrées non facturées de ce client avec leur total. Confirmez, et un brouillon de facture est créé avec une ligne par entrée. Le temps de trajet et les frais de déplacement facturables liés à ces entrées sont ajoutés en lignes séparées.
 
-### Parametres de facturation automatique
+### Choisir des entrées individuelles dans le formulaire de facture
 
-Configurez la facturation automatique pour les entrees de temps :
+Vous ne voulez facturer qu'une partie des entrées ? Créez ou modifiez directement une facture : le formulaire de facture comporte une section temps qui liste les entrées non facturées du client sélectionné, pour choisir précisément lesquelles inclure.
 
-1. Allez dans les parametres d'enregistrement du temps
-2. Configurez les regles de facturation automatique
-3. Les entrees de temps correspondant aux regles sont automatiquement ajoutees aux factures
+### Descriptions de ligne sur la facture
 
-## Filtrage
+Les lignes de facture sont décrites automatiquement : d'abord la description de l'entrée elle-même, sinon le nom du projet, sinon la période. Un modèle de description par client (défini sur la page du client) remplace ce format.
 
-Filtrez vos entrees de temps par :
+### Facturation automatique du temps
 
-- **Client** -- Voir le temps par client
-- **Projet** -- Voir le temps par projet
-- **Plage de dates** -- Periode specifique
-- **Statut facturable** -- Facturable vs. non facturable
-- **Statut de facturation** -- Facture vs. non facture
+La facturation automatique se configure par client. Sur la page du client, activez **Facturation auto** pour créer automatiquement chaque mois une facture pour les heures enregistrées de ce client, avec envoi automatique en option.
 
-## Actions groupees
+## Actions groupées
 
-- **Marquer comme facturable** -- Definir plusieurs entrees comme facturables
-- **Creer une facture** -- Facturer plusieurs entrees a la fois
-- **Archiver** -- Deplacer les entrees vers les archives
-- **Supprimer** -- Supprimer des entrees
+Sélectionnez plusieurs entrées dans la vue Liste (appui long sur mobile) pour agir en une fois :
+
+- **Marquer comme facturable** ou **Marquer comme non facturable**
+- **Archiver**
+- Supprimer
+
+## Synchronisation de calendrier externe
+
+Connectez Google Agenda ou le calendrier Outlook pour réunir votre agenda et vos heures. Ouvrez les paramètres de l'agenda via la roue dentée et suivez le lien calendrier, ou rendez-vous directement sur la page des calendriers connectés. Vous pouvez y :
+
+- Connecter **Google Agenda** ou **Calendrier Outlook**
+- Activer la synchronisation par connexion avec **Activer la synchronisation**
+- Choisir la **Direction de synchronisation** : **Vers le calendrier** (vos heures enregistrées apparaissent dans votre calendrier), **Depuis le calendrier** (vos événements apparaissent sur la page Agenda, prêts à être enregistrés) ou **Les deux**
+- Activer un flux en lecture seule **Abonnement calendrier (iCal)** pour suivre vos heures enregistrées depuis n'importe quelle application de calendrier
+
+Les événements provenant d'un calendrier connecté apparaissent dans les vues Jour et Semaine ; appuyez sur l'un d'eux pour le transformer en entrée de temps.
+
+## Paramètres
+
+La roue dentée sur la page Agenda ouvre les paramètres de l'agenda. Vous y configurez :
+
+- Le **Mode heures uniquement** et le comportement de saisie
+- Le mode de travail : **Heures**, **Postes** ou minuteur
+- Les heures de travail affichées sur la chronologie
+- Les étapes affichées par la saisie rapide (projet, notes, déplacements)
+- Le tarif horaire par défaut (administrateurs d'équipe)
+- Les valeurs par défaut des déplacements comme les adresses, le véhicule et le tarif kilométrique
+- Un lien pour connecter un calendrier externe
 
 ## Conseils
 
-- Enregistrez le temps quotidiennement pour des archives precises
-- Utilisez le filtre par projet pour voir les totaux de temps par projet
-- Verifiez regulierement le temps non facture pour eviter de manquer des heures facturables
-- Le profil de tableau de bord base sur les projets met en avant les indicateurs de suivi du temps
+- Enregistrez vos heures chaque jour pour des données fiables ; grâce aux suggestions, réenregistrer un travail récurrent ne prend qu'un appui
+- Planifiez votre semaine à l'avance avec des entrées provisoires et confirmez-les au fur et à mesure
+- Vérifiez régulièrement le temps non facturé pour ne laisser passer aucune heure facturable
+- Connectez votre calendrier une fois et vos rendez-vous deviennent automatiquement des entrées prêtes à enregistrer

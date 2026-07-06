@@ -7,7 +7,7 @@ title: Numerisation de recus
 Extrayez automatiquement les donnees de depenses a partir d'images de recus et de factures PDF grace a l'OCR alimente par l'IA.
 
 ::: info
-La numerisation de recus necessite le plan **Pro** ou superieur.
+La numérisation de reçus est disponible sur tous les plans, avec une limite mensuelle sur le nombre de scans : 3 avec Gratuit, 30 avec Starter et 200 avec Pro. La limite est réinitialisée le premier de chaque mois civil.
 :::
 
 ## Vue d'ensemble
@@ -23,10 +23,10 @@ Au lieu de saisir manuellement chaque depense, prenez une photo d'un recu ou tel
 ## Comment numeriser un recu
 
 1. Allez dans **Depenses > Numeriser un recu**
-2. Telechargez votre fichier de recu (glisser-deposer ou cliquez pour parcourir)
-3. Choisissez le mode d'extraction :
-   - **Simple** -- Extraire une depense du recu
-   - **Multiple** -- Extraire plusieurs lignes du meme recu
+2. Téléchargez votre fichier de reçu (glisser-déposer ou cliquez pour parcourir). Le scanner traite un fichier à la fois.
+3. Ouvrez si besoin les options avancées et choisissez le mode d'extraction :
+   - **Simple** : extraire une dépense du reçu
+   - **Multiple** : extraire plusieurs lignes du même reçu (le mode par défaut)
 4. Attendez le traitement (quelques secondes)
 5. Verifiez les donnees extraites :
    - Date
@@ -60,10 +60,14 @@ Extrait : lignes individuelles avec descriptions et montants.
 
 ## Parametres avances
 
-Le scanner dispose d'options avancees :
+Le scanner dispose d'un panneau d'options avancées :
 
-- **Instructions personnalisees** -- Ajoutez du contexte pour aider l'IA (par ex., "Ceci est un recu neerlandais d'Albert Heijn")
-- **Traitement d'image** -- Amelioration automatique pour les photos de mauvaise qualite
+- **Instructions** : ajoutez du contexte en texte libre pour aider l'IA (par ex., « Ceci est un reçu néerlandais d'Albert Heijn »)
+- **Mode d'extraction** : une dépense unique ou plusieurs lignes (par défaut : multiple)
+- **Catégorie** : limitez l'extraction à une catégorie de dépenses, ou laissez toutes les catégories
+- **Tags de filtrage** : des mots-clés ; seuls les éléments correspondant aux tags sont extraits
+- **Fourchette de prix** : un montant minimum et maximum ; les éléments hors fourchette sont ignorés
+- **Joindre le reçu** : si le fichier original est joint à la dépense créée (activé par défaut)
 
 ## Conseils pour de meilleurs resultats
 
@@ -83,13 +87,9 @@ Une fois confirme, la depense est creee avec :
 
 Vous pouvez modifier la depense par la suite comme n'importe quelle depense creee manuellement.
 
-## Telechargement par lot
+## Numériser plusieurs reçus
 
-Telechargez plusieurs recus en une fois :
-
-1. Selectionnez plusieurs fichiers
-2. Chacun est traite independamment
-3. Verifiez et confirmez chaque extraction
+L'outil de téléchargement traite un fichier à la fois. Pour traiter plusieurs reçus, numérisez-les l'un après l'autre ; chaque scan compte une fois dans votre limite mensuelle. Pour un reçu ou une facture contenant plusieurs éléments, utilisez le mode d'extraction **Multiple** afin de créer plusieurs dépenses avec un seul scan.
 
 ## Conseils
 

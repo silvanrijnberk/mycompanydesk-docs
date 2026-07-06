@@ -1,94 +1,72 @@
 ---
-title: Rapportages
+title: Rapporten
 ---
 
-# Rapportages
+# Rapporten
 
-Krijg inzicht in je bedrijfsfinancien met acht ingebouwde rapportweergaven over omzet, uitgaven, winst, BTW en meer.
+Krijg inzicht in hoe je bedrijf ervoor staat met vijf gerichte rapportweergaven en een overzicht dat alles samenbrengt. Grafieken zijn direct in elke weergave ingebouwd, dus elk rapport combineert cijfers en beeld op een plek.
 
-## Rapportages openen
+## Rapporten openen
 
-Navigeer naar **Rapportages** in de zijbalk. Gebruik de tabbladen of veegnavigatie (op mobiel) om tussen rapportweergaven te wisselen.
+Ga naar **Rapporten** in de zijbalk. Op desktop wissel je van weergave via de tabbladen bovenaan; op mobiel gebruik je de weergavekiezer of veeg je naar links en rechts tussen de weergaven.
 
 ## Rapportweergaven
 
-### Omzet
+### Overzicht
 
-Volg je inkomsten over tijd:
+De startweergave brengt je belangrijkste cijfers samen voor de gekozen periode:
 
-- Totale omzet per periode
-- Omzettrends (grafiek)
-- Omzet per klant
-- Vergelijking met voorgaande perioden
+- Kerncijfers: omzet, winst met marge, openstaande facturen, geschreven uren en uitgaven
+- Een financiele overzichtsgrafiek (per maand of per kwartaal)
+- Een ouderdomsoverzicht van onbetaalde facturen, met een snelkoppeling om herinneringen te sturen
+- Je grootste klanten op omzet
+- Inzichtkaarten die aandachtspunten signaleren, zoals achterstallige facturen of een krappe winstmarge
 
-### Openstaand
+Elk blok linkt door naar het bijbehorende gedetailleerde rapport.
 
-Monitor onbetaalde facturen:
+### Winst & verlies
 
-- Totaal openstaand bedrag
-- Ouderdomsanalyse (hoe lang facturen onbetaald zijn)
-- Achterstallige facturen
-- Verwachte betalingstijdlijn
+De weergave **Winst & verlies** toont je resultaat via drie invalshoeken die je bovenaan wisselt:
 
-### Uitgaven
-
-Begrijp je bestedingen:
-
-- Totale uitgaven per periode
-- Uitgavenspecificatie per categorie
-- Bestedingstrends
-- Top uitgavecategorieen
-
-### Winst
-
-Bekijk je resultaat:
-
-- Omzet minus uitgaven = nettowinst
-- Winstmarges
-- Winsttrends over tijd
-- Vergelijking per periode
-
-### BTW
-
-Bereken je BTW-verplichting:
-
-- Ontvangen BTW (op facturen)
-- Betaalde BTW (op uitgaven)
-- Netto af te dragen of terug te vorderen BTW
-- Specificatie per BTW-tarief
-
-Voor gedetailleerd BTW-beheer, zie [BTW-beheer](/nl/features/vat).
+- **Winst**: omzet min uitgaven, marges en hoe die zich ontwikkelen
+- **Omzet**: inkomsten per periode, trends en vergelijkingen
+- **Uitgaven**: waar je geld naartoe gaat, uitgesplitst per categorie
 
 ### Cashflow
 
-Volg geldstromen:
-
-- Inkomende cashflow (ontvangen betalingen)
-- Uitgaande cashflow (betaalde uitgaven)
-- Netto cashflow
-- Lopend saldo over tijd
+Volg de echte geldstromen: geld dat binnenkomt uit betalingen, geld dat uitgaat aan uitgaven, het nettoresultaat en je lopende saldo over tijd.
 
 ### Klanten
 
-Analyseer je klantenbestand:
+Analyseer je klantenbestand in twee tabbladen:
 
-- Omzet per klant
-- Klantrangschikking op totale besteding
-- Klantenwervingstrends
-- Gemiddelde factuurwaarde per klant
+- **Activiteit**: omzet per klant, klantrangschikking en factuurpatronen
+- **Openstaand**: onbetaalde facturen per klant, hoe lang ze openstaan en wat achterstallig is
+
+### Prognose
+
+Bekijk waar je cijfers naartoe gaan, op basis van terugkerende facturatie, openstaande facturen en je recente tempo. Wissel de horizon tussen **3 maanden**, **6 maanden** en **12 maanden** en zie de verwachte omzet, uitgaven, winst en je financiele buffer.
+
+### Inkomstenbelasting
+
+De weergave **Inkomstenbelasting** maakt een schatting van de inkomstenbelasting voor het gekozen jaar: brutowinst, zelfstandigenaftrek en mkb-winstvrijstelling, belastbaar inkomen, de belastingschijven, geschatte belasting, winst na belasting en hoeveel je opzij zet. Heb je een BV, dan zie je in plaats daarvan een schatting van de vennootschapsbelasting. Zie het als hulpmiddel om geld te reserveren, niet als aangifte.
+
+### Op zoek naar het BTW-rapport?
+
+BTW heeft een eigen pagina met kwartaaloverzichten en aangiftehulp. Zie [BTW-beheer](/nl/features/vat).
 
 ## Filters
 
-Alle rapportages ondersteunen:
+Open het paneel **Filters** met de knop bovenaan de rapportenpagina. De filters gelden voor elke rapportweergave:
 
-- **Periodeselectie** — Week, maand, kwartaal, jaar of aangepast bereik
-- **Jaarselectie** — Kies een specifiek boekjaar
-- **Vergelijkingsmodus** — Vergelijk de huidige periode met een voorgaande periode
-- **Inclusief open facturen** — Schakel in of onbetaalde facturen meetellen als omzet
+- **Periode**: kies de granulariteit (**Jaar**, **Kwartaal**, **Maand**, **Week** of **Dag**), met een bijpassende kiezer voor de gekozen granulariteit
+- **Jaar**: het rapportagejaar
+- **Vergelijken met**: zet vergelijken aan en kies een **Vergelijk jaar** om verschillen tussen periodes te zien
+- **Inclusief open facturen**: bepaal of onbetaalde facturen meetellen als omzet
 
 ## Tips
 
 - Gebruik de vergelijkingsmodus om trends en seizoenspatronen te herkennen
-- Controleer het openstaand-rapport regelmatig om achterstallige facturen op te volgen
-- Bekijk winstrapportages maandelijks om je marges te begrijpen
-- Exporteer rapportgegevens voor gebruik in spreadsheets of presentaties
+- Controleer het tabblad **Openstaand** onder Klanten regelmatig om achterstallige facturen op te volgen
+- Bekijk Winst & verlies maandelijks om je marges te begrijpen
+- Werp elk kwartaal een blik op **Inkomstenbelasting**, zodat het te reserveren bedrag je nooit verrast

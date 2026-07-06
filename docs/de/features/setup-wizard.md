@@ -1,238 +1,116 @@
 ---
 title: Einrichtungsassistent
-last_verified: 2026-05-19
+last_verified: 2026-07-02
 ---
 
 # Einrichtungsassistent
 
-Ein magisches Setup in fünf Schritten unter `/setup`, das Ihre Unternehmensidentitat erfasst, optional Ihre Registrierung vom Handelsregister oder einem EU-Register abruft, eine Webadresse auswahlt, Markenvorschlage generiert und alles mit einem Klick anwendet. Der Assistent ist die Eingangstur fur Erstbenutzer und bleibt danach fur Anpassungen verfugbar.
+Der Einrichtungsassistent unter `/setup` macht einen neuen Arbeitsbereich in wenigen Minuten startklar: Er fragt, welche Arbeit Sie machen und was Sie von der App erwarten, holt Ihre Unternehmensdaten aus dem niederländischen Handelsregister (KVK), richtet optional eine Web-Adresse und Marke ein und bestätigt Ihre Testphase. Er ist die Eingangstür für neue Benutzer und bleibt danach verfügbar.
 
-Wenn Sie hier die grundlegende Einfuhrung suchen, beginnen Sie bei [Unternehmen einrichten](/de/getting-started/company-setup). Diese Seite ist die ausfuhrliche Referenz: jeder Schritt, jede Option, jede Konsequenz.
+Wenn Sie die Grundlagen suchen, beginnen Sie bei [Unternehmen einrichten](/de/getting-started/company-setup). Diese Seite ist die Referenz für jeden Schritt und jede Option.
 
-## Wann der Assistent angeboten wird
+## Wann der Assistent erscheint
 
-Der Assistent ist auf zwei Wegen erreichbar:
+- **Erste Anmeldung:** Neue Konten landen automatisch im Assistenten.
+- **Dashboard-Banner:** Solange die Einrichtung nicht abgeschlossen ist, bietet ein Banner oben auf dem Dashboard an, sie abzuschließen. Das Banner lässt sich über das Kreuz ausblenden; das Ausblenden gilt pro Browser, und `/setup` bleibt direkt erreichbar.
+- **Jederzeit:** Rufen Sie `/setup` auf, um den Assistenten zu starten oder erneut zu durchlaufen.
 
-- **Direkt:** Navigieren Sie jederzeit zu `/setup`.
-- **Dashboard-Banner:** Solange das Onboarding nicht abgeschlossen ist, erscheint ein schließbares "Setup abschließen"-Banner oben auf `/dashboard`. Es zeigt eine Zählung der ausstehenden Felder (oder einen generischen "Profil vervollständigen"-Text, wenn die Zählung null ist) und eine Schaltfläche zurück zum Assistenten. Eine Schließen-Schaltfläche (X-Symbol) blendet das Banner pro Browser über localStorage aus, sodass es über Seitenneuladungen hinweg ausgeblendet bleibt, bis der Assistent abgeschlossen ist.
+Der Assistent blockiert Sie nirgends. Überspringen bringt Sie zum Dashboard, ohne abzuschließen; dabei geht nichts verloren, denn jede Antwort wird sofort gespeichert. Kommen Sie später zurück, machen Sie genau dort weiter, wo Sie aufgehört haben.
 
-Der Assistent ist nicht blockierend: Die alte erzwungene Weiterleitung zu `/setup` bei der Anmeldung (die `ONBOARDING_MANDATORY`-Sperre) wurde entfernt. Neue Anmeldungen landen direkt auf `/dashboard` und sehen stattdessen das schließbare Banner.
+## Die Schritte
 
-## Seitenaufbau
+Der Assistent zeigt eine Fortschrittsleiste mit bis zu sechs Schritten:
 
-Der Assistent ist eine einzelne Seite (`/setup`) mit fünf Schritten in einer Schrittleiste. Jeder Schritt schreibt seine Antworten bei jeder Änderung in eine JSONB-Spalte (`companies.onboarding_state`), sodass der Assistent vollstandig fortsetzbar ist: Schliessen Sie den Tab mitten im Schritt und der nachste Besuch bringt Sie zum selben Schritt mit denselben ausgefullten Antworten.
+1. **Arbeit:** welche Arbeit Sie machen
+2. **Ziele:** was Sie mit MyCompanyDesk tun möchten
+3. **KVK:** Ihre Unternehmensdaten
+4. **Web-Adresse:** nur wenn Sie das Website-Ziel gewählt haben
+5. **Marke:** nur wenn Sie das Website-Ziel gewählt haben
+6. **Gründungsmitglieder:** Testbestätigung und Abschluss
 
-Drei Schaltflachen sitzen unten auf jedem Schritt:
+**Weiter** führt fort, sobald ein Schritt hat, was er braucht; **Setup abschließen** auf dem letzten Schritt wendet alles an.
 
-- **Zuruck** — zum vorherigen Schritt (bei Schritt 1 ausgeblendet).
-- **Jetzt uberspringen** — verlasst den Assistenten, ohne das Onboarding als abgeschlossen zu markieren. Das Dashboard-Banner bleibt sichtbar, damit der Benutzer zuruckkehren kann.
-- **Weiter** / **Abschliessen** — pro Schritt durch die unten stehenden Antworten gesteuert.
+## Schritt: Arbeit
 
-Es gibt kein "Speichern und Beenden" — das Speichern erfolgt automatisch. **Jetzt uberspringen** ist ein sauberer Ausstieg, kein Verwerfen.
+Ein Raster gängiger Gewerke: Zimmermann, Maler, Installateur, Elektriker, Stuckateur, Gärtner, Fotograf, Friseur, Kosmetiker, Webdesigner, Berater, Vermieter und eine Option für etwas anderes mit Freitextfeld.
 
-## Schritt 1 — Unternehmen
+Die Wahl des Gewerks kreuzt im nächsten Schritt bereits passende Ziele an: Ein Zimmermann bekommt Rechnungen, Angebote, Ausgaben, Stunden und Projekte; ein Vermieter bekommt Vermietung, Rechnungen, Ausgaben und Umsatzsteuer. Auf dem Ziele-Schritt können Sie jedes Häkchen ändern; der Assistent setzt sie nur zurück, wenn Sie zurückkehren und ein anderes Gewerk wählen.
 
-Erfasst die zwei Antworten, von denen jeder spatere Schritt abhangt.
+Sie müssen ein Gewerk wählen, um fortzufahren.
 
-| Feld | Gespeichert als | Erforderlich | Hinweise |
-|---|---|:---:|---|
-| Unternehmensname | `answers.businessName` | ja | Wird als `display_name` und `company_name` bei Abschluss verwendet (der rechtliche Name aus dem Registerschritt gewinnt fur `company_name`, wenn beide vorhanden sind). Befullt auch den Subdomain-Slug-Vorschlag in Schritt 3. |
-| Was Sie tun | `answers.what` | ja | Freitext, 1–2 Satze. Wird zusammen mit Land und Branche an den Vorschlagsgenerator (Gemini) des magischen Schritts gesendet. |
+## Schritt: Ziele
 
-**Weiter ist deaktiviert**, bis beide Felder nicht-leere, bereinigte Werte haben.
+Eine Checkliste mit acht Zielen:
 
-## Schritt 2 — Register
+- Rechnungen senden
+- Angebote erstellen
+- Ausgaben erfassen
+- Stunden buchen
+- Projekte verwalten
+- Vermietung verwalten
+- Online gefunden werden
+- Umsatzsteuer und Übersichten
 
-Wählt ein Land und sucht das Unternehmen entweder im offiziellen Register des Landes, füllt die Angaben von Hand aus, oder überspringt den Schritt.
+Jedes angekreuzte Ziel schaltet den passenden Teil der App für Ihren Arbeitsbereich ein; nicht angekreuzte Ziele bleiben aus, damit das Menü übersichtlich bleibt. Das können Sie später jederzeit in den Einstellungen ändern.
 
-### Drei Wege
+Das Ziel, online gefunden zu werden, hat die größte Wirkung auf den Assistenten selbst: Es fügt die Schritte **Web-Adresse** und **Marke** hinzu. Ohne dieses Ziel wird keine Website eingerichtet, und es geht von KVK direkt zum letzten Schritt.
 
-1. **Suche:** Typeahead nach Firmennamen, Treffer auswählen und das Basisprofil vom Backend abrufen lassen (EUR 0,02 pro Abruf für NL). Das Suchfeld wird nur angezeigt, wenn die kostenpflichtige KVK-API (`KVK_API_KEY`) auf dem API-Container konfiguriert ist. Fehlt der Schlüssel, wird die Suche übersprungen und der Assistent startet standardmäßig mit manueller Eingabe (Weg 2).
-2. **Manuell:** Firmennamen, Handelsregisternummer (optional), Adresse, Postleitzahl und Ort selbst eingeben. Die Daten werden direkt über `PUT /company-settings/company` in die Unternehmenszeile geschrieben und `answers.kvk` wird mit `manual: true` markiert. Die manuelle Eingabe ist der Standard, wenn KVK_API_KEY nicht gesetzt ist, und existiert auch für zwei zusätzliche Szenarien selbst wenn die Suche verfügbar ist: (a) neue Unternehmen, die noch nicht im kostenlosen OpenKVK-Datensatz enthalten sind, und (b) Unternehmen, deren Handelsname nicht mit der Sucheingabe des Benutzers übereinstimmt.
-3. **Überspringen** — "Kein Handelsregistereintrag?" speichert `answers.kvk = null`. Der Assistent fährt fort; Unternehmensdaten können später in den Einstellungen ergänzt werden.
+Mindestens ein Ziel muss angekreuzt sein, um fortzufahren.
 
-Der Wechsel zwischen Suche und manueller Eingabe erfolgt mit einem Klick (wenn die Suche verfügbar ist): Eine "Manuell ausfüllen"-Schaltfläche erscheint unter den Suchergebnissen, und ein "Zurück zur KVK-Suche"-Link sitzt oben im manuellen Formular. Wenn `KVK_API_KEY` fehlt, ist die Zurück-zur-Suche-Schaltfläche vollständig ausgeblendet und der Benutzer beginnt und bleibt auf manueller Eingabe.
+## Schritt: KVK
 
-### Landoptionen
+Drei Wege:
 
-| Code | Angezeigtes Register | Suche aktiv |
-|---|---|:---:|
-| `NL` | KvK | ja |
-| `FR` | SIRENE | ja |
-| `GB` | Companies House | ja |
-| `DE` | Handelsregister | nein — manuelle Eingabe |
-| `OTHER` | (kein Register) | nein — manuelle Eingabe |
+1. **Suchen:** Tippen Sie Ihren Firmennamen (zwei Zeichen oder mehr) und wählen Sie Ihr Unternehmen aus den Live-Vorschlägen. MyCompanyDesk ruft dann Ihr KVK-Basisprofil ab und füllt Ihre Unternehmensdaten vor: juristischer Name, Handelsnamen, Rechtsform, Adresse und Geschäftstätigkeit. Es werden nur leere Felder gefüllt; manuell Eingetragenes bleibt erhalten.
+2. **Manuell eintragen:** ein kurzes Formular für Firmennamen, KVK-Nummer, Adresse, Postleitzahl und Ort. Nützlich, wenn Ihr Unternehmen zu neu ist, um in den Suchergebnissen zu erscheinen, oder Ihr Handelsname nicht dem entspricht, wonach Sie gesucht haben. Ihre Eingaben werden sofort bei Ihren Unternehmensdaten gespeichert. Über einen Link gelangen Sie jederzeit zurück zur Suche.
+3. **Kein Handelsregister-Eintrag?**: Fahren Sie ohne Unternehmensdaten fort und tragen Sie sie später unter Unternehmensdaten in den Einstellungen nach.
 
-`NL` ist die Voreinstellung. Das Land bestimmt mehrere Dinge beim Abschluss: Zeitzone (`Europe/Amsterdam` / `Europe/Berlin` / `Europe/Paris` / `Europe/London`), `pdf_language` (`nl` / `de` / `fr` / `en`) und das Registerlabel in `footer_text` (`KvK 12345678`, `Handelsregister …`, `SIRENE …`, `CRN …`).
+Findet eine Suche nichts, sagt der Assistent das und bietet den Wechsel zur manuellen Eingabe an, mit dem bereits eingetippten Namen vorausgefüllt.
 
-### Suchmodus
+Der Schritt fragt außerdem nach einer Zeile darüber, was Ihr Unternehmen macht; wurde Ihr Unternehmen im Register gefunden, ist sie mit Ihrer registrierten Geschäftstätigkeit vorausgefüllt. Bei **Weiter** nutzt MyCompanyDesk Ihren Firmennamen und diese Beschreibung, um im Hintergrund Markenvorschläge zu erzeugen: eine Markenfarbe, einen Slogan und Startinhalte. Das Ergebnis sehen Sie auf dem Schritt Marke (mit Website-Ziel) und nach dem Abschluss auf Ihren Dokumenten und Ihrer Website.
 
-Für unterstützte Länder sucht der Benutzer nach dem Firmennamen. Das Backend ruft die entsprechende öffentliche API auf und liefert einen der folgenden Rückgabewerte:
+Zum Fortfahren wählen Sie ein Unternehmen, speichern eine manuelle Eingabe oder wählen die Option ohne KVK.
 
-- **ok** — `legalName`, `address`, `postalCode`, `city`, `sector` befullt und unter `answers.registry` gespeichert.
-- **not-configured** — Anbieter in dieser Umgebung noch nicht angeschlossen; der Benutzer wird aufgefordert, zur manuellen Eingabe zu wechseln.
-- **not-found** — Nummer nicht gefunden; Benutzer kann erneut versuchen oder manuell wechseln.
-- **invalid** — Nummernformat abgelehnt.
-- **error** — Anbieterfehler; manuelle Eingabe bleibt eine Option.
+## Schritt: Web-Adresse
 
-<!-- TODO(source-missing): KvK Basisprofiel API pricing (EUR 0.02/call) and subscription (EUR 6.40/month) from developers.kvk.nl/nl/pricing -->
-#### KvK Basisprofiel (nur NL)
+Nur mit Website-Ziel sichtbar. Drei Karten:
 
-Fur NL-Workspaces ist die KvK-Suche ein zweistufiger Prozess:
+- **Kostenlose Subdomain:** Wählen Sie einen Namen für eine kostenlose Adresse mit der Endung `.mycompanydesk.site`. Der Name ist aus Ihrem Firmennamen vorausgefüllt, die Verfügbarkeit wird beim Tippen live geprüft. Weiter geht es erst, wenn der Name als verfügbar bestätigt ist.
+- **Ich habe bereits eine Domain:** Tippen Sie eine Domain ein, die Ihnen gehört. Sie wird beim Abschluss des Assistenten mit Ihrem Arbeitsbereich verbunden; zeigt sie noch nicht auf MyCompanyDesk, erledigen Sie die DNS-Schritte danach in Ihren Website-Einstellungen.
+- **Domain registrieren:** Suchen Sie eine Domain, sehen Sie Verfügbarkeit und Preis und kaufen Sie sie direkt im Assistenten. Gründungsmitglieder können eine kostenlos beanspruchen. Ein erfolgreicher Kauf wird sofort mit Ihrem Arbeitsbereich verknüpft.
 
-1. **Typeahead** — der Benutzer sucht nach Unternehmensnamen. Der `zoeken`-Endpunkt (kostenlos) gibt ubereinstimmende Eintrage zuruck. Dies ist der Autocomplete-Schritt, der die bestehenden `ok`- / `not-found`-Antworten antreibt. Wenn die Suche null Treffer liefert, zeigt die UI ein Inline-Panel fur leere Ergebnisse an (Titel, Erklarung und ein "Manuell eintragen"-Button, der das manuelle Formular mit dem bereits eingegebenen Text vorausfullt). Dies kommt haufig vor, da die kostenlose OpenKVK-Stufe viele junge Unternehmen nicht erfasst.
-2. **Basisprofiel** — sobald ein Treffer ausgewahlt ist, ruft der Assistent den KvK-Basisprofiel-Detailendpunkt auf. Dies ist ein kostenpflichtiger Aufruf (EUR 0,02, 24h zwischengespeichert pro KVK-Nummer). Er gibt das vollstandige Profil zuruck: `legalName`, `statutaireNaam` (satzungsmassiger Name), `tradeNames` (alle registrierten Handelsnamen, sortiert), `rsin`, `legalForm`, `dateFounded`, Besuchs- und Postadressen, SBI-Codes mit Primarflag, `employeeCount` und `indNonMailing` (Keine-Post-Flag). Der Assistent befullt `business_page_hero_tagline` mit dem ersten Handelsnamen und der Stadt ("[Handelsname] in [Stadt]"), und `description` mit der primaren SBI-Beschreibung (auf 280 Zeichen begrenzt). Beide verwenden COALESCE, sodass manuelle Bearbeitungen in den Einstellungen erhalten bleiben.
+Der Schritt lässt sich überspringen; eine Domain können Sie jederzeit später über Ihre Website-Einstellungen hinzufügen.
 
-Wenn ein Treffer ausgewahlt wird (Suchmodus), ruft das Frontend sofort `PUT /company-settings/company` mit dem `name` des Treffers als `display_name`, der `kvkNumber` als `chamber`, `city` und `country` hartcodiert auf `"NL"` auf. Dies schreibt den kundenorientierten Anzeigenamen sofort, sodass die Dashboard-Begrußung und die geseedete Site den richtigen Namen ab dem Moment verwenden, in dem der Benutzer auf den Treffer klickt, anstatt auf den Abschluss-Schritt des Assistenten zu warten.
+## Schritt: Marke
 
-Es gibt zwei unabhängige Feature-Flags für NL-KVK-Abfragen:
+Nur mit Website-Ziel sichtbar und völlig optional:
 
-- `KVK_API_KEY` (Env-Var auf dem API-Container): Wenn dieser fehlt, wird das Suchfeld gar nicht angezeigt und der Assistent startet in diesem Schritt standardmäßig mit manueller Eingabe. Die kostenlose OpenKVK-Stufe allein ist zu lückenhaft (~2% Trefferquote, verpasst fast jede Neuanmeldung). Das Flag schaltet automatisch um, sobald der Schlüssel gesetzt ist.
-- `KVK_BASISPROFIEL_ENABLED`: Wenn deaktiviert (oder wenn `KVK_API_KEY` fehlt), verwendet der Assistent nur das kostenlose `zoeken`-Ergebnis (dieselben `ok`-Felder wie oben). Wenn aktiviert und `KVK_API_KEY` vorhanden ist, reichern die Basisprofiel-Daten die `answers.registry`-Payload an und der Überprüfungsschritt zeigt jedes Feld, das in die Unternehmenszeile geschrieben wird.
+- **Logo hochladen:** PNG, JPG, SVG oder WebP. Die dominante Farbe Ihres Logos wird automatisch Ihre Markenfarbe. Überspringen Sie den Upload, erzeugt MyCompanyDesk ein sauberes Initialen-Logo aus Ihrem Firmennamen, damit Rechnungen und Website nie unfertig wirken.
+- **Vorschau:** die für Sie vorgeschlagene Markenfarbe und der Slogan, basierend auf Ihren KVK-Daten und Ihrer Ein-Zeilen-Beschreibung. Anpassen können Sie beides später in den Einstellungen; nichts auf diesem Schritt hält Sie vom Fortfahren ab.
 
-### Manueller Modus
+## Schritt: Gründungsmitglieder
 
-Benutzer fullt `chosen` (seine Registrierungsnummer) aus, und optional `legalName`, `address`, `sector`. Alle vier Felder sind in diesem Modus optional.
+Der letzte Schritt bestätigt Ihre Testphase und bietet das Gründungsmitglieder-Programm an:
 
-Beim Speichern ruft das Frontend `PUT /company-settings/company` direkt mit den manuell eingegebenen Werten plus `display_name` gesetzt auf den hier eingegebenen Firmennamen und `country` hartcodiert auf `"NL"` auf. Dies schreibt sowohl den kundenorientierten Namen als auch das Land sofort, anstatt auf den Abschluss-Schritt zu warten. Die Apply-Logik des Abschluss-Schritts liest weiterhin `answers.kvk` fur den Legacy-Registerpfad, aber der neue 2-Schritt-Assistentenpfad liest `answers.kvk.legalName` und `answers.kvk.kvkNumber` direkt, sodass das inline PUT wahrend dieses Schritts der autoritative Schreibvorgang ist.
+- **Ihre Testphase:** Jeder neue Arbeitsbereich startet mit 60 Tagen Pro, kostenlos, ohne Kreditkarte.
+- **Gründungsmitglieder:** Solange Plätze frei sind (100 insgesamt, mit Live-Zähler), sichert ein Klick einen Platz: ein volles Jahr Pro kostenlos, danach 50 Prozent Rabatt auf Pro, solange Sie bleiben. Sind alle Plätze vergeben, weist der Schritt einfach darauf hin, dass Ihre 60-Tage-Testphase normal weiterläuft.
 
-### Überspringen-Modus
+**Setup abschließen** wendet alles an: Ihre Unternehmensdaten, Markenfarbe, Logo, Startdienstleistungen und E-Mail-Vorlagen, zu Ihrer Arbeit passende Ausgabenkategorien und, mit Website-Ziel, Ihre Website und Domain. Eine Zusammenfassung zeigt, was eingerichtet wurde, mit Schaltflächen zum Dashboard oder direkt in den Website-Baukasten.
 
-Ein "Noch nicht registriert"-Schalter speichert `answers.registry = null`. **Weiter ist in diesem Schritt immer erlaubt**, unabhangig vom Modus — Registerdaten sind Bequemlichkeit, keine Hürde.
+## Überspringen, Fortsetzen und erneut Durchlaufen
 
-## Schritt 3 — Domain
+- **Überspringen:** bringt Sie jederzeit zum Dashboard. Das Dashboard-Banner hält einen Weg zurück offen, bis die Einrichtung abgeschlossen ist.
+- **Fortsetzen:** Antworten werden bei jeder Änderung gespeichert. Den Tab mittendrin zu schließen kostet nichts; beim nächsten Besuch geht es auf demselben Schritt weiter.
+- **Erneut durchlaufen:** Nach dem Abschluss startet `/setup` den Ablauf wieder beim ersten Schritt, mit Ihren gespeicherten Antworten. Der Assistent füllt leere Felder auf, statt zu überschreiben: eine aufgebaute Dienstleistungsliste, ein hochgeladenes Logo oder selbst gewählte Einstellungen werden nicht ersetzt.
 
-Wahlen Sie die Webadresse, die Ihre Kunden auf der offentlichen Unternehmensseite und in Ihrem E-Mail-Posteingang sehen. Drei Wege, als Karten angezeigt, decken jeden Pfad ab, vom kostenlosen Schnellstart bis zum Kauf einer Domain direkt im Assistenten.
+## Bearbeiten ohne den Assistenten
 
-### Drei-Wege-Auswahl
-
-Ein Raster von drei Karten prasentiert die Wahl. Die Auswahl eines Weges zeigt den zugehorigen Editor darunter; es ist immer nur ein Weg gleichzeitig aktiv.
-
-**Subdomain (kostenlos):** der Benutzer wahlt einen Slug; eine TLD-Auswahl lasst zwischen `.mycompanydesk.nl` und `.mycompanydesk.com` wahlen. Der Slug ist aus dem rechtlichen KVK-Namen vorbefullt, wenn verfugbar (Kleinbuchstaben, Akzente entfernt, Nicht-ASCII-Zeichen entfernt, auf 63 Zeichen gekurzt), sodass die meisten Benutzer tippen-und-weitermachen konnen, ohne etwas einzugeben. Die Verfugbarkeit wird live mit einer Verzogerung von 350 ms gepruft, wahrend der Benutzer tippt. Beim Abschluss wird die Subdomain uber die Cloudflare-API bereitgestellt und die Unternehmenswebsite ist sofort erreichbar.
-
-Wenn der Assistent im 2-Schritt (Plan-gesteuerten) Ablauf ausgefuhrt wird, wird der Domain-Schritt vollstandig weggelassen. Der Abschluss-Schritt stellt automatisch eine Workspace-Subdomain aus dem `display_name`-Wert bereit: Der Slug wird aus dem Anzeigenamen abgeleitet (mit Wiederholung-bei-Kollision-Suffixen bis zu 5 Versuche), und `activateSubdomain` registriert ihn als offentliche Site-URL. Best-Effort: Eine Kollision oder ein Fehler wird protokolliert und blockiert den Assistenten nicht am Abschluss.
-
-**Eigene Domain:** der Benutzer gibt eine Domain ein, die er bereits besitzt. Eine Live-Validierungs-Regex pruft das Format wahrend der Eingabe (`[a-z0-9][a-z0-9-]*(.[a-z0-9]([a-z0-9-]*[a-z0-9])?)+`). Beim Abschluss fugt der Assistent die Domain zur Domainliste des Workspace hinzu (keine Aktion, wenn sie bereits hinzugefugt wurde) und aktiviert automatisch den Posteingang: `info@<domain>` als Standard-Postfach plus `support@`, `sales@` und `noreply@`-Aliase. Der 409-bereits-vorhanden-Pfad von `apply.service` wird sauber behandelt.
-
-Wenn die Domain noch nicht auf die Nameserver von MCD zeigt, leitet der Abschluss zu `/workspace/organization/company/address` weiter, sodass der Benutzer sofort die DNS-Anweisungen und eine **Uberprufen**-Schaltflache sieht. Andernfalls geht es zum Dashboard.
-
-**Domain registrieren:** bettet die live `DomainPurchaseCard` + `DomainClaimModal` aus der Einstellungsoberflache ein. Der Benutzer kann eine Domain suchen, Verfugbarkeit und Preis prufen und sie entweder uber OpenProvider kaufen oder als Founding Member kostenlos beanspruchen. Bei erfolgreicher Beanspruchung oder Kauf ist die Domain bereits server-seitig uber den `/api/domain-purchase`-Workflow mit dem Workspace verbunden, sodass der Assistent die Antwort als `mode='own'` mit dem registrierten Namen und `registered: true` speichert; `apply.service` behandelt dies als No-Op-Wiederhinzufugung. Ein grunes Erfolgsbanner zeigt den registrierten Domainnamen an und lasst den Benutzer fortfahren.
-
-Wenn der Benutzer den Registrieren-Weg offnet, aber keinen Kauf abschliesst, wird der Schritt als ubersprungen markiert, damit der Assistent fortfahren kann. Der Benutzer kann spater uber `Unternehmen > Ihre eigene .com-Adresse` zuruckkehren, wann immer er bereit ist.
-
-### Zuruckwechseln von einer eigenen Domain zu einer Subdomain
-
-Wenn der Workspace bereits eine eigene Website-Domain hat, zeigt der Assistent eine Warnung, bevor der Benutzer zum Subdomain-Pfad wechseln kann — `activateSubdomain` verweigert bei Unternehmen mit noch angehangter eigener Domain, und der Fehler wurde sonst erst beim Abschluss sichtbar.
-
-## Schritt 4 — Magie
-
-Generiert Markenvorschlage aus den bisher erfassten Antworten. Felder:
-
-- **Markenfarbe** — Hex. Wenn der Benutzer in diesem Schritt ein Logo hochladt, wird die dominante nicht-weisse Farbe aus dem Raster extrahiert (via `sharp`) und verwendet; das uberschreibt den Gemini-Vorschlag, und ein Flag (`brandColorFromLogo`) verhindert, dass eine spatere Neugenerierung ihn uberschreibt. Nur-SVG-Logos und uberwiegend weisse Eingaben fallen auf die Gemini-Palette zuruck.
-- **Tagline** — kurze Hero-Zeile fur die offentliche Unternehmensseite.
-- **Über-Text** — Absatz fur die Unternehmensseite.
-- **Dienstleistungen** — Liste von bis zu 8 Dienstleistungsnamen. Jede wird beim Abschluss in `company_services` eingefugt, aber **nur wenn das Unternehmen noch keine Dienstleistungen hat** — der Assistent uberschreibt niemals eine bestehende Dienstleistungsliste.
-- **E-Mail-Ton** — `formal` / `friendly` / `casual`. Wird auf den E-Mail-Stil abgebildet: `formal → classic`, `friendly` und `casual → modern`.
-- **E-Mail-Vorlagen** — nach Vorlagentyp (`invoice_default`, `reminder_default` usw.), jeweils mit `subject` + `body`. Beim Abschluss uber das E-Mail-Vorlagen-Repository gespeichert.
-
-Der Benutzer kann jeden Vorschlag vor dem Fortfahren inline bearbeiten. **Weiter ist deaktiviert**, bis Vorschlage existieren (mindestens einmal auf **Vorschlage generieren** klicken).
-
-### Logo-Upload
-
-Durch Klicken auf die Upload-Kachel kann der Benutzer ein Bild bis zu 4 MB auswahlen. Die Datei wird als base64 data URI an `/onboarding/upload-logo` gesendet, die:
-
-1. Es uber den kanonischen Unternehmenslogo-Pfad speichert.
-2. Die dominante nicht-weisse Farbe zuruckgibt, die automatisch auf den Markenfarbvorschlag angewendet wird.
-3. `answers.logoUploaded = true` setzt, damit sich der Überprüfungstext anpasst ("wir verwenden Ihr Logo" statt "wir erstellen ein Initialenlogo aus Ihrem Unternehmensnamen") und der Anwendungsschritt den Initialengenerator uberspringt.
-
-Wenn der Benutzer bereits ein Logo hatte, wird es als bestehende Vorschau ("Sie haben bereits ein Logo") statt einer leeren Upload-CTA angezeigt.
-
-## Schritt 5 — Überprufung
-
-Schreibgeschutzter Diff jedes Feldes, das der Assistent andern wurde. Zwei Abschnitte:
-
-- **Änderungen** — `aktuell → neu` Zeilen. Enthalt ein Farbfeld fur `brandColor`. Nur Felder, die der Assistent geschrieben hat und die von der aktuellen Unternehmenszeile abweichen, erscheinen hier.
-- **Bereits gesetzt** — Felder, die der Assistent erfasst hat, aber bereits mit der Unternehmenszeile ubereinstimmen.
-
-Angezeigte Felder: Unternehmensname, Land, Registrierungsnummer, rechtlicher Name, Adresse, Markenfarbe, Tagline, Über-Text, Domain-Übersicht (`info@<aufgeloste-domain>` wird als Vorschau angezeigt, wenn eine Domain gesetzt ist).
-
-Die **Abschliessen**-Schaltflache in der Fusszeile ruft `/onboarding/complete` auf. Die aktuelle Sprache wird weitergeleitet, damit Standardtext (z. B. Zahlungsanweisungen) lokalisiert ist.
-
-## Was Abschliessen tatsachlich anwendet
-
-`apply.service.js` durchlauft die Antworten und schreibt sie in die echte Unternehmenszeile. Zwei Semantiken, bewusst getrennt:
-
-**Immer uberschreiben**, wenn die Assistent-Antwort ein nicht-leerer String ist und vom aktuellen Wert abweicht:
-
-- `display_name`, `company_name`
-- `country` (fallt auf `"NL"` zuruck, wenn `answers.country` nicht gesetzt ist , der 2-Schritt-Assistent fragt kein Land ab, daher ist NL die implizite Voreinstellung)
-- `chamber` (via `answers.kvk.kvkNumber`, wenn vorhanden)
-
-Wenn der 2-Schritt-Assistent keine Domain-Antwort erfasst hat, stellt Finish automatisch eine Workspace-Subdomain aus dem `display_name`-Wert bereit, wenn der Tarif Subdomains erlaubt und das Unternehmen keine eigene Domain hat. Der Slug wird aus `display_name` abgeleitet (Kleinbuchstaben, ASCII, max. 60 Zeichen, bei Kollision mit `-2`…`-5`-Suffix wiederholt).
-- `chamber`, `address`, `postal_code`, `city`
-- `brand_color`, `description`, `business_page_hero_tagline`
-
-**Nur leere Felder fullen** (niemals eine bestehende manuelle Wahl uberschreiben, damit erneute Durchlaufe Benutzer nicht uberraschen):
-
-- `second_accent_color` (von Markenfarbe abgeleitet, wenn leer)
-- `email_style` (vom E-Mail-Ton)
-- `timezone` (Landesstandard)
-- `pdf_language` (Landesstandard)
-- `footer_text` (Stil `Handelsname - Handelsregister 12345678`)
-- `payment_options_enabled` (`bank_transfer`)
-- `payment_default_method` (`bank_transfer`)
-- `payment_instructions` (lokalisierter Standardtext)
-- `email_footer_show_website`, `email_footer_show_support_email`, `email_footer_show_business_page` (Booleans)
-
-Nebeneffekte jenseits von Spaltenschreibvorgangen:
-
-- **Initialenlogo** wird aus Unternehmensname + Markenfarbe generiert, aber nur wenn `logo_path` und `logo_svg` beide leer sind. Vollstandig ubersprungen, wenn der Benutzer im Magie-Schritt ein echtes Logo hochgeladen hat.
-- **Dienstleistungen** — bis zu 8 Einfugungen in `company_services`, nur wenn das Unternehmen noch keine hat.
-- **E-Mail-Vorlagen** — pro Typ uber das Vorlagen-Repository gespeichert.
-- **Website-Site-Seed** — beim ersten Abschluss, der null Seiten im Workspace findet, erstellt `apply.service.js` eine Standard-Site mit einer Entwurfs-Startseite (`/`, Vorlage "home", `is_home: true`) und fullt die Design-Tokens mit der im Assistenten erfassten Markenfarbe. Wiederholte Ausfuhrungen uberspringen die Erstellung, wenn bereits eine Seite existiert, sodass der Assistent niemals manuelle Bearbeitungen uberschreibt.
-- **Domain** — `activateSubdomain` fur den Subdomain-Pfad, oder `addDomain` + `quickEnableInbox` (+ optionales personliches Postfach) fur den eigenen-Domain-Pfad.
-
-Wenn die Domainbereitstellung fehlschlagt, wird der Rest des Abschlusses trotzdem angewendet — der Fehler erscheint auf dem Abschlussbildschirm mit einem spezifischen Fehlercode (`subdomain_failed`, `domain_failed`, `inbox_enable_failed`, `personal_mailbox_failed`, `personal_mailbox_remove_failed`, `personal_mailbox_list_failed`), ubersetzt in eine benutzerlesbare Zeile.
-
-## Abschlussbildschirm
-
-Ein grünes Bestatigungspanel, das 4,2 Sekunden (oder 0,9 Sekunden, wenn nichts bereitgestellt wurde) angezeigt wird, bevor es weiterleitet. Es listet jeden vom Assistenten eingerichteten Punkt in einer Übersichtskartenliste auf:
-
-- **Kategorien** — die fur den Workspace angelegten System-Ausgabenkategorien (z. B. "Buro, Reisen, Software").
-- **Dienstleistungen** — Anzahl der zur Unternehmensseite hinzugefugten Dienstleistungen.
-- **Logo** — Bestatigung, wenn ein Initialenlogo generiert wurde.
-- **E-Mail-Vorlagen** — Anzahl der in der Markenstimme des Workspace gespeicherten Vorlagen.
-- **Website** — Bestatigung, dass eine Standard-Site mit Startseite, Navigation und Markenfarbe bereitsteht. Nur sichtbar, wenn die Site gerade neu angelegt wurde.
-- **Domain** — die fertige URL fur Subdomains oder die hinzugefugte Domain fur eigene-Domain-Konfigurationen.
-
-Zwei Schaltflachen erscheinen unter der Übersicht:
-
-- **Zum Dashboard** — bringt den Benutzer sofort zu `/dashboard`, den automatischen Weiterleitungstimer uberspringend.
-- **Website-Baukasten offnen** — nur sichtbar, wenn eine Site angelegt wurde. Bringt den Benutzer direkt zu `/website`, damit er mit der Bearbeitung seiner Startseite beginnen kann.
-
-Danach landet der Benutzer auf `/dashboard` (Standardpfad), `/website` (wenn er auf die Website-Baukasten-CTA geklickt hat) oder `/workspace/organization/company/address` (wenn eine eigene Domain auf DNS-Überprufung wartet).
-
-## Erneutes Durchlaufen des Assistenten
-
-Der Assistent ist vollstandig wiederholbar. Ruckkehrende Benutzer landen auf Schritt 1 mit sichtbaren aktuellen Antworten. Nichts zwingt sie durch jeden Schritt — sie konnen ein Feld in einem Schritt bearbeiten und auf Abschliessen klicken.
-
-Der Diff des Überprüfungsschritts ist das Sicherheitsnetz: Er zeigt dem Benutzer jede bevorstehende Überschreibung. Sinnvolle Standardfelder (Zeitzone, pdf_language, Zahlungsstandards, Footer-Text) sind nicht im Diff enthalten, da Abschliessen dort nur leere Felder fullt — sie stillschweigend zu andern wurde Benutzer uberraschen, die sie bewusst gesetzt haben.
-
-Um einzelne Einstellungen ohne den Assistenten zu uberprufen, gehen Sie zu:
-
-- `/workspace/organization/company/about` — Name, Registrierung, Adresse, USt.
-- `/workspace/organization/company/look` — Markenfarbe, Logo.
-- `/workspace/organization/company/website` — Tagline, Über-Text, Dienstleistungen.
-- `/workspace/organization/company/address` — eigene Domain + DNS.
-- `/workspace/email` — Posteingang, Postfacher, Vorlagen.
-
-Die vollständige Übersicht finden Sie in der [Übersicht der Einstellungen](/de/settings/).
-
-## Randfalle
-
-- **Einen Schritt uberspringen.** Weiter ist pro Schritt durch die mindestens erforderlichen Antworten gesteuert. Der Registerschritt hat keine Hürde; Domain erfordert einen gewahlten Pfad mit nicht-leerem Wert, oder einen abgeschlossenen Kauf im Registrieren-Weg, oder das Ubersprungen-Flag; Magie erfordert, dass Generieren ausgefuhrt wurde; Unternehmen und Überprufung haben ihre eigenen Hürden.
-- **Schliessen mitten im Schritt.** Jede Antwort wird bei Änderung gespeichert, sodass der nachste Besuch dort fortgesetzt wird, wo der Benutzer aufgehort hat. Der Schrittindex wird ebenfalls gespeichert (`answers` und `currentStep` leben in derselben JSONB-Spalte).
-- **Meinungsanderung im Domain-Schritt.** Wechsel von `eigene` zu `subdomain` nach Eingabe einer Domain uberschreibt `answers.domain` auf `null`, bis der Benutzer einen Slug wahlt. Wechsel zum Registrieren-Weg speichert eine Ubersprungen-Antwort, sodass eine neue Anmeldung nicht blockiert wird, wenn der Benutzer Registrieren offnet, aber den Kauf verschiebt. Wechsel zu einer Subdomain, wenn bereits eine eigene Domain angehangt ist, zeigt eine Vorabwarnung.
-- **Logo-Extraktion fehlgeschlagen.** Überwiegend weisse Logos und Nur-SVG-Eingaben, die `sharp` nicht rastern kann, geben `color: null` zuruck. Der Gemini-Markenfarbvorschlag wird dann verwendet.
-- **Domain bereits bei eigene-Domain-Abschluss hinzugefugt.** Ein 409 von `addDomain` fallt auf die bestehende Zeile zuruck, sodass der Posteingang-Aktivierungsschritt trotzdem ausgefuhrt wird.
-- **Personliches Postfach existiert bereits.** Ein 409 von `createMailbox` wird als Erfolg behandelt.
+Jedes Feld, das der Assistent berührt, hat einen Platz in den **Einstellungen**:
+
+- **Unternehmensdaten:** Name, KVK-Nummer, Adresse, USt-Nummer
+- **Logo und Farbe:** Logo und Markenfarbe
+- **Rechnungsdesign:** das Erscheinungsbild Ihrer PDFs
+- **Deine Website und Domain:** Domain und Website
+- **Funktionen:** Teile der App ein- oder ausschalten
+
+Die vollständige Übersicht finden Sie in der [Einstellungsübersicht](/de/settings/).

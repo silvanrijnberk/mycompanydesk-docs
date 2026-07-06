@@ -4,101 +4,106 @@ title: Flux bancaire
 
 # Flux bancaire
 
-Connectez vos comptes bancaires à MyCompanyDesk pour l'importation automatique des transactions, le rapprochement et des alertes en temps réel. Le flux bancaire maintient votre comptabilité à jour sans saisie manuelle.
+Reliez votre compte bancaire à MyCompanyDesk et vos transactions arrivent automatiquement. Les règles et la catégorisation intelligente transforment les paiements sortants en brouillons de dépenses, et vous confirmez chaque brouillon avant qu'il n'entre dans votre comptabilité.
 
-## Connecter un compte bancaire
+## Où le trouver
 
-1. Allez dans **Espace de travail** → **Finances** → **Comptes bancaires**.
-2. Cliquez sur **Connecter une banque** et choisissez votre établissement dans la liste.
-3. Suivez les étapes d'autorisation dans la fenêtre contextuelle.
-4. Une fois connecté, MyCompanyDesk récupère les transactions des 90 derniers jours et maintient le flux à jour avec des synchronisations automatiques périodiques.
+Le flux bancaire se trouve dans la partie Dépenses :
 
-Vous pouvez connecter plusieurs comptes de différentes banques. Chaque compte apparaît comme une connexion distincte avec son propre rythme de synchronisation et sa propre liste de transactions.
+- **Connexions et réglages** : ouvrez **Dépenses** et cliquez sur la roue dentée dans l'en-tête de la page. Vous y reliez vos banques, contrôlez les dépenses importées automatiquement et gérez les règles et notifications.
+- **Flux de transactions** : le bouton **Transactions** dans l'en-tête de la page Dépenses ouvre la liste des transactions bancaires importées.
 
-## Synchronisation des transactions
+## Relier un compte bancaire
 
-MyCompanyDesk synchronise les transactions de vos comptes connectés selon un calendrier automatique. Vous pouvez également déclencher une synchronisation manuelle à tout moment depuis la page des comptes bancaires. Les nouvelles transactions sont automatiquement rapprochées avec vos clients, factures et dépenses existants à l'aide de règles fournisseur et du rapprochement par IA. Les transactions rapprochées alimentent directement votre comptabilité ; les transactions non rapprochées apparaissent dans le flux bancaire pour examen manuel.
+1. Allez dans **Dépenses** et cliquez sur la roue dentée.
+2. Dans la section banque, cliquez sur **Connecter votre première banque**, ou choisissez votre banque directement quand un sélecteur de banques est affiché.
+3. Confirmez la connexion dans l'application ou le site de votre propre banque. C'est un parcours PSD2 sécurisé : MyCompanyDesk peut uniquement lire les transactions que vous autorisez et ne peut jamais déplacer d'argent.
+4. Vous revenez ensuite dans MyCompanyDesk. La première synchronisation importe les transactions des 90 derniers jours ; ensuite le flux reste à jour automatiquement.
 
-### Conversion automatique en dépenses
+Vous pouvez relier jusqu'à 10 comptes de banques différentes. Chaque compte apparaît sur sa propre ligne avec le solde actuel et le moment de la dernière synchronisation. Utilisez **Connecter une autre banque** pour en ajouter. Le consentement bancaire expire périodiquement selon les règles PSD2 (en général tous les 90 jours) ; vous êtes prévenu à l'avance.
 
-Lorsqu'une transaction bancaire est catégorisée (par une règle fournisseur, une catégorie par défaut ou le classificateur IA), MyCompanyDesk crée automatiquement une dépense provisoire dans votre comptabilité. La dépense est remplie avec :
+Pour chaque compte, vous pouvez :
 
-- Le nom de la contrepartie comme fournisseur.
-- Le montant absolu comme coût brut.
-- Le taux de TVA par défaut de la catégorie (ou le taux suggéré par l'IA lorsqu'il est disponible).
-- La clé de catégorie correspondant aux vraies catégories de dépenses de votre espace de travail.
-- La date comptable de la transaction comme date de dépense.
+- Activer ou désactiver l'**import automatique**, pour décider quels comptes alimentent vos dépenses.
+- Lancer une **synchronisation manuelle** à tout moment.
+- Déconnecter le compte.
 
-La transaction est ensuite marquée comme rapprochée afin de ne pas créer de doublon lors de la prochaine synchronisation. La nouvelle dépense apparaît immédiatement dans votre liste de dépenses et alimente vos rapports et récapitulatifs de TVA.
+## Fréquence de synchronisation
 
-La conversion s'effectue en deux passages : d'abord après l'application des règles fournisseur et des catégories par défaut (synchrone, pendant la synchronisation) ; ensuite après que le classificateur IA a terminé (asynchrone). Dans les deux cas, la dépense créée utilise les catégories de dépenses réelles de votre espace de travail et leurs traitements de TVA par défaut, afin que les montants restent cohérents avec vos saisies manuelles.
+La fréquence à laquelle MyCompanyDesk recherche de nouvelles transactions est un réglage unique pour tout l'espace de travail : **Temps réel**, **Toutes les 4 heures** ou **Chaque jour**. La synchronisation manuelle par compte fonctionne toujours en plus.
 
-Seules les transactions sortantes (montant inférieur à zéro) sont converties en dépenses. Les paiements entrants ne sont pas transformés en dépenses. Si votre espace de travail n'a pas encore de catégories de dépenses configurées, cette étape est sautée et les transactions attendent un examen manuel.
+## De la transaction à la dépense
 
-### Examiner les dépenses importées automatiquement
+Les nouvelles transactions passent par vos règles et la catégorisation intelligente :
 
-Lorsque des dépenses provisoires sont créées à partir de transactions bancaires, elles atterrissent d'abord dans la boîte de réception d'examen. Allez dans **Espace de travail** → **Finances** → **Comptes bancaires** et ouvrez l'onglet **Examiner**. Vous verrez une liste de dépenses provisoires, chacune affichant le fournisseur, le montant, la suggestion de catégorie et la source de cette suggestion (règle fournisseur, catégorie par défaut, suggestion IA ou flux bancaire).
+1. Vos propres règles sont vérifiées en premier. Une transaction qui correspond reçoit la catégorie de la règle.
+2. Les transactions sans correspondance reçoivent une suggestion de catégorie de la catégorisation intelligente, ou retombent sur votre catégorie par défaut si vous en avez défini une.
+3. Une transaction sortante catégorisée devient un **brouillon de dépense** : la contrepartie devient le fournisseur, et le montant, la date et le traitement de TVA habituel de la catégorie sont remplis.
+4. Le brouillon arrive dans la file de contrôle : rien n'est comptabilisé sans que vous le voyiez.
 
-Pour chaque dépense, vous pouvez :
+Seules les transactions sortantes deviennent des dépenses ; les paiements entrants ne sont jamais transformés en dépenses. Les dépenses issues de transactions bancaires affichent un petit badge banque dans la liste des dépenses, pour que vous voyiez toujours d'où vient une écriture.
 
-- **Confirmer**: La dépense est directement comptabilisée. Elle apparaît dans votre liste de dépenses actives et alimente les rapports et récapitulatifs de TVA.
-- **Modifier**: Ouvrez le formulaire de dépense pour ajuster la catégorie, le traitement de TVA, la description ou le montant avant de comptabiliser.
-- **Rejeter**: Le brouillon est abandonné. La transaction retourne dans la file d'attente non rapprochée du flux bancaire.
+## Vérifier les dépenses importées automatiquement
 
-L'étape d'examen garantit que vous gardez le contrôle : aucune dépense n'entre dans votre comptabilité sans que quelqu'un ne l'ait vérifiée. Les dépenses confirmées affichent brièvement une notification avec le nom du fournisseur ; les dépenses rejetées montrent le rejet. Si une action échoue, un message apparaît et vous pouvez réessayer.
+La carte **Dépenses importées automatiquement à vérifier** s'affiche en haut des réglages des dépenses dès que des brouillons attendent. Chaque ligne montre le fournisseur, la date, le montant, la catégorie suggérée et l'origine de la suggestion (une de vos règles, votre catégorie par défaut, une suggestion intelligente ou le flux bancaire).
 
-Chaque fiche de dépense affiche une étiquette de source pour que vous sachiez pourquoi MyCompanyDesk a fait cette suggestion particulière. Les sources possibles sont `vendor_rule`, `workspace_default`, `ai_flag` et `feed`, le même pipeline de catégorisation décrit ci-dessus.
+Pour chaque brouillon, vous pouvez :
 
-### Échecs de synchronisation
+- **Confirmer** : comptabiliser la dépense telle quelle. Elle rejoint votre liste de dépenses et compte dans les rapports et la TVA.
+- **Modifier** : ouvrir la dépense pour ajuster la catégorie, la TVA ou le montant avant de comptabiliser.
+- **Rejeter** : écarter le brouillon. La transaction retourne dans le flux pour un traitement manuel.
 
-Si une synchronisation échoue (par exemple parce que l'autorisation bancaire a expiré ou que la connexion a été interrompue), MyCompanyDesk vous envoie un e-mail et une notification in-app avec le nom de la connexion et un lien pour résoudre le problème. Vous pouvez également activer les notifications push pour les erreurs de synchronisation dans les préférences de notification.
+## Réglages du flux
+
+Sur la même page de réglages, vous contrôlez le comportement du flux :
+
+- **Import automatique** : activer ou désactiver la création automatique de brouillons de dépenses pour tout l'espace de travail.
+- **Catégorisation intelligente** : laisser MyCompanyDesk suggérer une catégorie pour les transactions sans règle.
+- **Ignorer les virements internes** : passer les virements entre vos propres comptes reliés.
+- **Demander les justificatifs par e-mail** : un passage quotidien envoie aux fournisseurs une demande groupée pour les justificatifs manquants. Chaque fournisseur n'est sollicité qu'une fois par transaction.
+- **Montant minimum d'import** : les transactions sous ce montant ne deviennent pas des dépenses.
+- **Catégorie par défaut** : la catégorie appliquée quand rien d'autre ne correspond.
+- **Date de comptabilisation** : choisissez si les dépenses utilisent la date de transaction, la date de valeur ou la date du justificatif.
+
+## Règles
+
+Les règles apprennent à MyCompanyDesk comment catégoriser les paiements récurrents. Sur la page de réglages, cliquez sur **Ajouter une règle** et renseignez :
+
+1. Un nom pour la règle (généralement le fournisseur).
+2. Un mot-clé.
+3. La catégorie de dépense associée.
+
+Le mot-clé est comparé à la description et au nom de la contrepartie ; les majuscules n'ont pas d'importance. Les transactions correspondantes reçoivent la catégorie de la règle et deviennent des brouillons de dépenses. Les règles s'appliquent à tous les comptes reliés, chaque règle indique combien de fois elle a correspondu, et vous pouvez modifier ou supprimer une règle à tout moment.
+
+Une règle porte sur un seul mot-clé. Les conditions sur le montant ne sont pas prises en charge, et les règles se créent sur la page de réglages, pas depuis le flux de transactions.
+
+## Le flux de transactions
+
+Ouvrez **Transactions** depuis l'en-tête de la page Dépenses pour voir toutes les transactions importées, avec quelques chiffres rapides en haut (transactions du mois, part comptabilisée automatiquement et nombre de transactions qui demandent encore votre attention). Trois onglets répartissent le flux :
+
+- **À lettrer** : transactions qui ne sont encore associées à rien.
+- **Lettrées** : transactions associées à une facture ou une dépense, avec un lien vers l'enregistrement.
+- **Ignorées** : transactions que vous avez ignorées.
+
+Pour chaque transaction ouverte :
+
+- **Associer** ouvre une fenêtre où vous associez la transaction à une facture ou une dépense existante. L'argent sortant suggère des dépenses, l'argent entrant des factures, et vous pouvez basculer et rechercher.
+- **Ignorer** déplace la transaction vers l'onglet Ignorées.
+
+L'association est toujours une étape manuelle : MyCompanyDesk n'associe pas automatiquement les transactions aux clients, factures ou dépenses existantes.
 
 ## Notifications
 
-Le flux bancaire prend en charge quatre préférences de notification, configurables par espace de travail depuis la page des comptes bancaires :
+En bas de la page de réglages, trois notifications bancaires s'activent indépendamment :
 
-| Préférence | Effet |
-|---|---|
-| **Alertes d'erreur de synchronisation** | E-mail et notification in-app lorsqu'une connexion bancaire ne peut pas se synchroniser. |
-| **Alertes de transactions importantes** | Notification push et in-app lorsqu'une transaction dépasse un seuil que vous définissez (par exemple 5 000 €). |
-| **Résumé hebdomadaire** | Un e-mail le lundi matin récapitulant les transactions importées de la semaine, les éléments non rapprochés et les trois principaux fournisseurs catégorisés automatiquement. |
-| **Demandes de justificatifs** | Un balayage quotidien automatique qui envoie un e-mail à vos fournisseurs pour demander les justificatifs manquants sur les transactions sortantes non rapprochées. |
-
-Toutes les notifications fonctionnent en mode best-effort : elles ne bloquent ni n'interrompent jamais une synchronisation. Vous pouvez activer ou désactiver chaque notification indépendamment.
-
-### Seuil de transactions importantes
-
-Définissez un montant en euros dans les paramètres des comptes bancaires. Toute transaction entrante ou sortante dont le montant absolu atteint ou dépasse ce seuil déclenche une notification push et une alerte in-app. C'est utile pour repérer rapidement les paiements importants ou les débits imprévus.
-
-### Résumé hebdomadaire
-
-Chaque lundi à 08h00 (heure locale de l'espace de travail), MyCompanyDesk vous envoie un court e-mail récapitulant l'activité du flux bancaire des sept derniers jours :
-
-- Nombre de nouvelles transactions importées.
-- Nombre de transactions sortantes non rapprochées en attente de justificatif.
-- Les trois principaux fournisseurs catégorisés automatiquement.
-
-S'il n'y a pas eu d'activité cette semaine-là, le résumé n'est pas envoyé. Le résumé respecte le paramètre de notification de votre espace de travail et n'est envoyé que si `notify_weekly_summary` est activé.
-
-### Demandes de justificatifs aux fournisseurs
-
-Lorsque cette option est activée, MyCompanyDesk effectue un balayage quotidien à 06h00 heure locale. Pour chaque espace de travail avec `ask_receipt_email` activé, le système recherche les transactions sortantes non rapprochées des 30 derniers jours dont la contrepartie correspond à un client ayant une adresse e-mail enregistrée. Il envoie à chaque fournisseur un e-mail regroupé listant toutes les transactions pour lesquelles un justificatif est nécessaire, puis marque ces transactions afin que le même fournisseur ne soit pas sollicité à nouveau.
-
-## Gérer les règles fournisseur
-
-Les règles fournisseur vous permettent d'apprendre à MyCompanyDesk comment catégoriser les transactions récurrentes :
-
-- Créez une règle à partir de n'importe quelle transaction en cliquant sur **Créer une règle** dans le flux bancaire.
-- Les règles correspondent sur le nom de la contrepartie, la description ou les motifs de montant.
-- Les transactions rapprochées sont automatiquement liées au bon client, à la bonne facture ou dépense.
-- Le résumé hebdomadaire met en avant vos règles les plus performantes.
-
-Les règles que vous créez sont propres à l'espace de travail et s'appliquent à tous les comptes bancaires connectés.
+- **Erreurs de synchronisation** : un e-mail et une notification dans l'application quand une connexion bancaire ne parvient pas à synchroniser, avec un lien pour corriger.
+- **Résumé hebdomadaire** : un e-mail le lundi matin résumant l'activité bancaire de la semaine écoulée. Il est sauté quand il n'y a rien à signaler.
+- **Grosses transactions** : une alerte quand une transaction atteint ou dépasse un montant que vous fixez vous-même.
 
 ## Dépannage
 
-**Ma connexion bancaire affiche une erreur.** Ouvrez la page des paramètres des comptes bancaires. Si votre banque nécessite une nouvelle autorisation, vous verrez une invite pour vous reconnecter. Les notifications d'erreur de synchronisation contiennent également un lien direct.
+**Ma connexion bancaire affiche une erreur.** Ouvrez les réglages des dépenses via la roue dentée sur la page Dépenses. Si votre banque demande une nouvelle autorisation, vous le verrez sur la ligne de la connexion ; la notification d'erreur y mène aussi.
 
-**Une transaction n'a pas été rapprochée.** Consultez la transaction dans le flux bancaire sous le filtre « non rapproché ». Vous pouvez la rapprocher manuellement, créer un nouveau client ou une nouvelle dépense à partir de celle-ci, ou créer une règle fournisseur pour qu'elle soit automatiquement rapprochée à l'avenir.
+**Une transaction n'est pas devenue une dépense.** Vérifiez que l'import automatique est activé, que le montant dépasse votre montant minimum et qu'il s'agit d'un paiement sortant. Vous pouvez toujours associer la transaction à la main sur la page Transactions.
 
-**Je ne reçois pas de notifications.** Vérifiez les interrupteurs de notification sur la page des paramètres des comptes bancaires. Pour les notifications push, assurez-vous que les notifications push sont activées dans votre profil de compte. Pour le résumé hebdomadaire, vérifiez que `notify_weekly_summary` est activé et qu'il y a bien eu une activité bancaire cette semaine-là.
+**Je ne reçois pas de notifications.** Vérifiez les interrupteurs en bas de la page de réglages des dépenses.
