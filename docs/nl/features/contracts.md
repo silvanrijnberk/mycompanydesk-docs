@@ -8,31 +8,33 @@ Beheer terugkerende serviceovereenkomsten en huurcontracten met automatische fac
 
 ## Overzicht
 
-Contracten vertegenwoordigen lopende overeenkomsten met klanten — zoals maandelijkse servicecontracten, huurovereenkomsten of onderhoudsplannen. Ze kunnen automatisch facturen genereren volgens een vast schema.
+Contracten vertegenwoordigen lopende overeenkomsten met klanten, zoals maandelijkse servicecontracten, huurovereenkomsten of onderhoudsplannen. Ze kunnen automatisch facturen genereren volgens een vast schema.
 
 ::: info
-De contractenmodule is optioneel. Schakel deze in via **Bedrijf > Functies** als je hem niet in de navigatie ziet.
+De contractenmodule is optioneel. Schakel deze in via **Instellingen > Onderdelen** als je hem niet in de navigatie ziet.
 :::
 
 ## Een contract aanmaken
 
 1. Ga naar **Contracten > Nieuw contract**
 2. Vul in:
-   - **Naam** — Een beschrijvende titel (bijv. "Maandelijkse schoonmaakdienst")
-   - **Klant** — De contractpartij
-   - **Bedrag** — Het terugkerende facturatiebedrag
-   - **Herhaling** — Hoe vaak factureren (wekelijks, maandelijks, per kwartaal, jaarlijks)
-   - **Startdatum** — Wanneer het contract begint
-   - **Einddatum** — Optionele einddatum
-   - **Omschrijving** — Voorwaarden en details
+   - **Naam**: een beschrijvende titel (bijv. "Maandelijkse schoonmaakdienst")
+   - **Klant**: de contractpartij
+   - **Dienst en bedrag**: wat je levert en het terugkerende facturatiebedrag
+   - **Herhaling**: hoe vaak je factureert (wekelijks, maandelijks, per kwartaal, jaarlijks)
+   - **Startdatum**: wanneer het contract begint
 3. Klik op **Opslaan**
+
+Een contract heeft geen einddatumveld; het blijft factureren totdat je het pauzeert. In het formulier kies je ook wanneer de eerste factuur moet worden aangemaakt en of gegenereerde facturen automatisch worden verstuurd.
 
 ## Contractstatussen
 
 | Status | Beschrijving |
 |---|---|
 | **Actief** | Momenteel van kracht, genereert facturen |
-| **Inactief** | Gepauzeerd — er worden geen facturen gegenereerd |
+| **Gepauzeerd** | Staat stil, er worden geen facturen gegenereerd |
+
+Aan het einde van zijn looptijd kan een contract ook de status **Beëindigd**, **Verlopen** of **Opgezegd** hebben.
 
 ## Automatische facturatie
 
@@ -46,7 +48,7 @@ Je kunt gegenereerde facturen handmatig bekijken en versturen, of automatische v
 
 ## Koppelen aan objecten
 
-Contracten kunnen worden gekoppeld aan [objecten/activa](/nl/features/objects) voor verhuurbeheer:
+Contracten kunnen worden gekoppeld aan [objecten/activa](/features/objects) voor verhuurbeheer:
 
 - Koppel een contract aan een pand, voertuig of apparaat
 - Houd bij welke objecten momenteel verhuurd zijn en aan wie
@@ -54,17 +56,18 @@ Contracten kunnen worden gekoppeld aan [objecten/activa](/nl/features/objects) v
 
 ## Statistieken
 
-De contractenlijstpagina toont samenvattende statistieken:
+De contractenlijstpagina toont samenvattende kaarten:
 
-- Totaal aantal actieve contracten
-- Totale contractwaarde
-- Contracten per herhalingstype
+- **Actieve contracten**, met daarnaast het totale aantal
+- **Maandelijkse omzet** uit actieve contracten, genormaliseerd over de verschillende facturatiefrequenties
+- **Totaal contracten**
+- **Volgende factuur**, de datum waarop de volgende contractfactuur wordt gegenereerd
+
+Klik op een kaart om de lijst erop te filteren.
 
 ## Bulkacties
 
-- **Status wijzigen** — Activeer of deactiveer meerdere contracten
-- **Archiveren** — Verplaats naar archief
-- **Herstellen** — Haal gearchiveerde contracten terug
+Selecteer meerdere contracten om ze in één keer te **archiveren** of te **verwijderen**. In de archiefweergave kun je herstellen of naar de prullenbak verplaatsen; in de prullenbakweergave kun je herstellen of definitief verwijderen.
 
 ## Ondertekenen
 
@@ -94,23 +97,23 @@ Oude contracten tonen een streepje in de Tekenstatus-kolom en vallen onder het f
 
 Ondertekenlinks kunnen SMS-verificatie vereisen voordat een partij het document kan bekijken en ondertekenen. Als dit is ingeschakeld, moet de ondertekenaar een mobiel nummer opgeven en een 6-cijferige code bevestigen die per SMS wordt verstuurd.
 
-- **Verstuur code** — Na het invoeren van het mobiele nummer tikt de ondertekenaar op de knop en ontvangt een code
-- **Code bevestigen** — De ondertekenaar voert de 6-cijferige code in om toegang tot het nummer te bewijzen
-- **Geverifieerd-badge** — Na bevestiging verschijnt een "Geverifieerd"-badge met de laatste vier cijfers van het nummer
+- **Verstuur code**: na het invoeren van het mobiele nummer tikt de ondertekenaar op de knop en ontvangt een code
+- **Code bevestigen**: de ondertekenaar voert de 6-cijferige code in om toegang tot het nummer te bewijzen
+- **Geverifieerd-badge**: na bevestiging verschijnt een "Geverifieerd"-badge met de laatste vier cijfers van het nummer
 
-Als een verkeerde code wordt ingevoerd, kan de ondertekenaar een nieuwe aanvragen. SMS-verificatie wordt per ondertekensessie ingesteld en geldt voor alle partijen.
+Als een verkeerde code wordt ingevoerd, kan de ondertekenaar een nieuwe aanvragen. Je zet SMS-verificatie per ondertekenaar aan bij het toevoegen van de partijen aan het contract, dus je kunt het voor de ene partij verplichten en voor de andere niet.
 
 ## Sjabloonversies
 
-Contractsjablonen ondersteunen versiebeheer zodat je wijzigingen in de loop van de tijd kunt volgen. Elke versie is een bevroren momentopname van de sjablooninhoud op een bepaald moment, zodat je je sjablonen kunt blijven ontwikkelen zonder bestaande contracten te beinvloeden.
+Contractsjablonen ondersteunen versiebeheer zodat je wijzigingen in de loop van de tijd kunt volgen. Elke versie is een bevroren momentopname van de sjablooninhoud op een bepaald moment, zodat je je sjablonen kunt blijven ontwikkelen zonder bestaande contracten te beïnvloeden.
 
 ### Een versie publiceren
 
 1. Ga naar **Contracten > Sjablonen**
 2. Zoek je sjabloon en klik op de **Versies**-knop
 3. Vul in het versievenster in:
-   - **Label** :  Een korte aanduiding voor de versie (bijv. "v2"). Laat je het veld leeg, dan kent het systeem automatisch een oplopend label toe.
-   - **Wijzigingsnotitie** :  Een korte beschrijving van wat er in deze versie is gewijzigd
+   - **Label**: een korte aanduiding voor de versie (bijv. "v2"). Laat je het veld leeg, dan kent het systeem automatisch een oplopend label toe.
+   - **Wijzigingsnotitie**: een korte beschrijving van wat er in deze versie is gewijzigd
 4. Klik op **Publiceren**
 
 Het huidige concept wordt vastgelegd als een nieuwe versie. Bestaande contracten blijven aan de versie gekoppeld waarmee ze zijn aangemaakt, dus publiceren herschrijft nooit historische contracttekst.
@@ -124,15 +127,14 @@ De versiegeschiedenis van elk sjabloon toont:
 - Een **Huidige**-badge op de laatst gepubliceerde versie
 - Een **Gearchiveerd**-badge op alle eerdere versies
 
-### Hoe versies contracten beinvloeden
+### Hoe versies contracten beïnvloeden
 
 Wanneer een contract wordt aangemaakt vanuit een sjabloon, wordt het vastgezet op de versie die op dat moment actueel was. Als je later een nieuwe versie van het sjabloon publiceert, blijven bestaande contracten renderen vanaf hun vastgezette versie. Je kunt daardoor veilig sjablonen herzien zonder lopende contracten te wijzigen.
 
 ## Tips
 
-- Gebruik contracten samen met [terugkerende facturen](/nl/features/recurring-invoices) voor verschillende facturatiescenario's
+- Gebruik contracten samen met [terugkerende facturen](/features/recurring-invoices) voor verschillende facturatiescenario's
 - Koppel contracten aan objecten voor volledig verhuurbeheer
-- Stel einddatums in om een melding te ontvangen voordat contracten aflopen
-- Gebruik het contractenfilter om actief vs. inactief in een oogopslag te zien
+- Gebruik het statusfilter om actieve en gepauzeerde contracten in één oogopslag te zien
 - Filter op ondertekenstatus om contracten te vinden die nog ondertekend moeten worden
 - Voeg ondertekenpartijen toe bij het aanmaken van een contract om elektronisch ondertekenen in te schakelen
