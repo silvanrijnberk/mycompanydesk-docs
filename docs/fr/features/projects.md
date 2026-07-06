@@ -4,77 +4,69 @@ title: Projets
 
 # Projets
 
-Organisez votre travail en projets pour suivre le temps, le chiffre d'affaires et la rentabilite par engagement.
+Organisez votre travail en projets pour suivre les revenus, les coûts et le résultat par mission.
 
 ## Vue d'ensemble
 
-Les projets vous aident a regrouper factures, depenses et entrees de temps. Cela vous donne une vision claire de la rentabilite de chaque projet ou engagement client.
+Les projets regroupent les factures, les dépenses et les enregistrements de temps. Vous voyez ainsi clairement où en est chaque projet ou mission client sur le plan financier.
 
-## Creer un projet
+::: info
+Le module projets est optionnel. Activez-le dans **Paramètres > Onderdelen** si vous ne le voyez pas dans la navigation.
+:::
 
-1. Allez dans **Projets > Nouveau projet**
+## Créer un projet
+
+1. Allez dans **Projets** et cliquez sur le bouton de nouveau projet
 2. Remplissez :
-   - **Nom** -- Un nom de projet clair
-   - **Client** -- Le client concerne par ce projet
-   - **Description** -- Ce que le projet implique
-   - **Budget** -- Montant du budget optionnel
-   - **Statut** -- Actif, En pause ou Termine
+   - **Nom** : un nom de projet clair
+   - **Client** : le client concerné par ce projet
+   - **Statut** : Planifié, Actif, En pause, Terminé ou Annulé
+   - **Description** : ce que le projet implique
+   - **Budget** : un montant de budget optionnel, plus un taux horaire optionnel
+   - **Notes** : tout ce que vous voulez retenir sur le projet
 3. Cliquez sur **Enregistrer**
+
+Vous pouvez aussi donner au projet son propre numéro, une date de début et de fin, une couleur, et un format de description personnalisé pour les lignes de facture des heures facturées depuis ce projet.
 
 ## Statuts des projets
 
 | Statut | Description |
 |---|---|
-| **Actif** | En cours de realisation |
+| **Planifié** | Convenu, mais le travail n'a pas encore commencé |
+| **Actif** | En cours de réalisation |
 | **En pause** | Temporairement suspendu |
-| **Termine** | Fini -- plus de travail prevu |
-| **Archive** | Conserve pour reference |
+| **Terminé** | Fini, plus de travail prévu |
+| **Annulé** | Abandonné |
 
-## Page de detail du projet
+L'archivage est indépendant du statut : tout projet peut être archivé depuis la liste ou la page de détail pour garder votre liste active propre, puis restauré plus tard.
 
-La page de detail du projet affiche :
+## Page de détail du projet
 
-- **Vue d'ensemble** -- Nom, client, statut, budget
-- **Factures liees** -- Toutes les factures liees a ce projet
-- **Depenses liees** -- Couts attribues a ce projet
-- **Entrees de temps** -- Heures enregistrees sur ce projet
-- **Rentabilite** -- Ventilation revenus vs. couts
+La page de détail du projet affiche :
 
-## Lier des elements aux projets
+- **Revenus, dépenses et résultat** : les totaux des factures et dépenses liées à ce projet
+- **Factures liées** : toutes les factures rattachées à ce projet, avec un raccourci pour en créer une nouvelle
+- **Dépenses liées** : les coûts attribués à ce projet
+- **Notes** : des notes libres sur le projet
 
-Lors de la creation de factures, depenses ou entrees de temps, selectionnez le projet dans le menu deroulant pour les lier. Cela met automatiquement a jour les donnees financieres du projet.
+## Lier des éléments aux projets
 
-- **Factures** -- Suivez le chiffre d'affaires par projet
-- **Depenses** -- Suivez les couts par projet
-- **Entrees de temps** -- Suivez les heures par projet
+Lors de la création de factures, de dépenses ou d'enregistrements de temps, sélectionnez le projet dans le menu déroulant pour les lier. Les chiffres du projet sont alors mis à jour automatiquement.
 
-## Suivi du budget
+- **Factures** : suivez le chiffre d'affaires par projet
+- **Dépenses** : suivez les coûts par projet
+- **Enregistrements de temps** : suivez les heures par projet
 
-Si vous definissez un budget :
+## Budget
 
-- Voyez quelle part du budget a ete utilisee
-- Suivez le budget restant
-- Comparez les couts reels au budget
-- Recevez des alertes lorsque vous approchez des limites du budget
+Le budget est un simple montant de référence que vous définissez sur le projet. Il apparaît dans l'aperçu rapide du projet dans la liste, pour comparer d'un coup d'œil vos dépenses et votre facturation à ce repère.
 
-## Actions groupees
+## Actions groupées
 
-- **Changer le statut** -- Mettez a jour plusieurs projets a la fois
-- **Archiver** -- Deplacez les projets termines vers les archives
-- **Restaurer** -- Recuperez les projets archives
-
-## Rapports
-
-Consultez la performance des projets dans les [rapports clients](/fr/features/reports) pour voir :
-
-- Chiffre d'affaires par projet
-- Temps passe par projet
-- Marges beneficiaires
-- Comparaison entre projets
+Sélectionnez plusieurs projets pour les **archiver** ou les **supprimer** en une fois. La vue Archive propose la restauration ou le déplacement vers la corbeille ; la vue Corbeille propose la restauration ou la suppression définitive.
 
 ## Conseils
 
-- Utilisez les projets meme pour les petits engagements -- les analyses sont precieuses
-- Liez a la fois les factures et les depenses pour obtenir des marges beneficiaires precises
-- Archivez les projets termines pour garder votre liste active propre
-- Consultez le profil de tableau de bord base sur les projets pour une vue axee sur les projets
+- Utilisez les projets même pour les petites missions : les enseignements sont précieux
+- Liez à la fois les factures et les dépenses pour obtenir un résultat fidèle par projet
+- Archivez les projets terminés pour garder votre liste active propre
