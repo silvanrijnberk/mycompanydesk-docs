@@ -7,38 +7,52 @@ title: "Objects & Assets"
 Track rental properties, vehicles, equipment, and other business assets with full lifecycle management.
 
 ::: info
-The objects module is optional. Enable it in **Company > Features** if you don't see it in the navigation.
+The objects module (Vastgoed) is a legacy module. It remains fully supported for workspaces that already use it, but it can no longer be switched on in new workspaces. If your workspace has it, you find its toggle under **Settings > Onderdelen**.
 :::
 
 ## Overview
 
-The objects module is designed for businesses that manage physical assets — particularly rental companies, property managers, and equipment rental services. Each object represents an asset you own or manage.
+The objects module is designed for businesses that manage physical assets, particularly rental companies, property managers, and equipment rental services. Each object represents an asset you own or manage.
 
 ## Object types
 
 | Type | Use case |
 |---|---|
-| **Property** | Rental apartments, offices, commercial spaces |
+| **Property / Garage** | Houses, garages, storage boxes |
+| **Apartment** | Rental apartments |
+| **Office** | Office spaces |
+| **Retail** | Shops and commercial spaces |
 | **Vehicle** | Cars, trucks, vans, construction vehicles |
-| **Machine** | Industrial equipment, tools, generators |
+| **Machine** | Industrial equipment, generators |
+| **Equipment** | Tools and appliances |
+| **Furniture** | Furniture you rent out |
+| **Electronics** | Computers, AV equipment |
 | **Other** | Any other asset type |
 
 ## Object statuses
 
 | Status | Description |
 |---|---|
+| **Active** | In use |
 | **Available** | Ready to be rented or used |
-| **Rented** | Currently rented to a customer |
-| **Inactive** | Not available (maintenance, retired) |
+| **Occupied** | Currently rented or in use by a customer |
+| **Maintenance** | Temporarily out of service |
+| **Inactive** | Not available |
+| **Sold** | No longer yours; kept for the records |
+| **Disposed** | Written off or scrapped |
+
+The list also offers a **Rented** filter that shows everything currently taken.
 
 ## Creating an object
 
 1. Go to **Objects > New Object**
 2. Fill in:
-   - **Name** — A clear identifier (e.g., "Apartment 3B" or "Excavator CAT 320")
-   - **Type** — Property, Vehicle, Machine, or Other
-   - **Status** — Available, Rented, or Inactive
-   - **Description** — Details about the asset
+   - **Name**: A clear identifier (e.g., "Apartment 3B" or "Excavator CAT 320")
+   - **Type**: One of the ten types above
+   - **Status**: Where the object is in its lifecycle
+   - **Reference**: Your own reference or code
+   - **Default rent price**: The standard rent, per week, month or year, with or without VAT
+   - **Description** and **address**: Details about the asset
 3. Click **Save**
 
 ## Object detail page
@@ -47,9 +61,9 @@ The detail page shows:
 
 - Asset information and type
 - Current status
-- **Total revenue**: real paid-invoice revenue for this object, computed from the financials endpoint
+- **Total revenue**: paid-invoice revenue for this object
 - **Active contracts**: number of currently active contracts linked to this object
-- **WOZ history** (for Properties) — annual WOZ values used in the Box 3 tax calculation
+- **WOZ history** (for Properties): annual WOZ values used in the Box 3 tax calculation
 - Linked contracts
 - Rental history
 - Associated invoices
@@ -85,7 +99,7 @@ For properties where a Kadaster WOZ history was fetched, MyCompanyDesk projects 
 
 ### Contract signing status
 
-Each contract row in the object detail page now shows a signing status badge alongside the active/paused badge. The colour follows the same map used on the contract detail page:
+Each contract row in the object detail page shows a signing status badge alongside the active/paused badge. The colour follows the same map used on the contract detail page:
 
 - **Signed** (green): all parties have signed
 - **Partially signed** (blue): some parties have signed, others pending
@@ -100,23 +114,22 @@ Legacy contracts created before the e-signing feature was added do not show a si
 
 Objects integrate with other MyCompanyDesk features:
 
-- **Contracts** — Create a rental contract for an object, specifying the tenant (customer) and terms
-- **Invoices** — Invoices can be flagged as rental invoices and linked to objects
-- **Recurring invoices** — Set up automatic monthly rent invoicing per object
+- **Contracts**: Create a rental contract for an object, specifying the tenant (customer) and terms
+- **Invoices**: Invoices can be flagged as rental invoices and linked to objects
+- **Recurring invoices**: Set up automatic monthly rent invoicing per object
 
 ## Filtering
 
 Filter your objects by:
 
-- **Type** — Property, Vehicle, Machine, Other
-- **Status** — Available, Rented, Inactive
-- **Search** — Find by name or description
+- **Type**: Any of the ten object types
+- **Status**: Available, Rented, Maintenance, Active, Sold, Disposed or Inactive
+- **Date range** and **search**: Find by name or description
+- **View**: Switch between Active, Archive and Trash
 
 ## Bulk actions
 
-- **Change status** — Update availability in bulk
-- **Archive** — Move to archive
-- **Delete** — Remove objects
+Select multiple objects to **Archive** or **Delete** them at once. The Archive view offers restore to active or move to trash; the Trash view offers restore to archive or permanent deletion.
 
 ## Tips
 

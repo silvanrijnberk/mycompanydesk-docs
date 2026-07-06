@@ -4,45 +4,44 @@ title: Dashboard
 
 # Dashboard
 
-Het dashboard op `/dashboard` is je startpagina. Het toont een vaste briefingindeling die je aandachtspunten, belangrijke financiele indicatoren en recente activiteit samenbrengt in een enkele, scrollbare weergave.
+Het dashboard is je startpagina. Het toont een briefing die je aandachtspunten, belangrijke financiële indicatoren en recente activiteit samenbrengt in een enkele, scrollbare weergave.
 
-## Opbouw
+## Indeling
 
-Het dashboard is een enkele pagina (`BriefingDashboard`) opgebouwd uit vaste redactionele blokken. Er is geen aanpassing per gebruiker mogelijk. Iedereen in de werkruimte ziet dezelfde structuur, gevoed vanuit dezelfde live data.
+Het dashboard heeft een vaste briefingindeling: er zijn geen instellingen om losse kaarten te verplaatsen of te verbergen, en iedereen in de werkruimte ziet dezelfde structuur, gevoed vanuit dezelfde live data. De inhoud past zich wel aan jouw situatie aan: een gloednieuw account ziet een welkomstscherm, de projectmargekaart verschijnt alleen wanneer de projectenfunctie voor je werkruimte is ingeschakeld, en herinneringsbanners kun je per browser wegklikken.
 
 ### Welkomstscherm
 
-Op een gloednieuw account zonder facturen of klanten toont het dashboard een **welkomstscherm** (`BriefingWelcome`) in plaats van de volledige briefing. Het leidt de gebruiker naar drie eerste acties: een factuur maken, een klant toevoegen of een uitgave registreren. Onder de actiekaarten staat een link naar de [introductie](/nl/getting-started/introduction). Zodra er minstens een factuur of klant bestaat, verdwijnt het welkomstscherm permanent en neemt het volledige dashboard het over.
+Op een gloednieuw account zonder facturen of klanten toont het dashboard een welkomstscherm in plaats van de volledige briefing. Het leidt je naar drie eerste acties: een factuur maken, een klant toevoegen of een uitgave registreren. Onder de actiekaarten staat een link naar de [introductie](/nl/getting-started/introduction). Zodra er minstens een factuur of klant bestaat, verdwijnt het welkomstscherm permanent en neemt het volledige dashboard het over.
 
-### Skeleton en eerste laadbeurt
+### Eerste laadbeurt
 
-Terwijl data laadt, toont het dashboard een **skeleton**-placeholder (`BriefingSkeleton`): een shimmer die de exacte vorm van elke kaart spiegelt. Zodra de kerndata binnen is (metrics gecached en liquiditeit opgelost), lost de skeleton op in een gecoordineerde fade-up-animatie. Elk blok op het hoogste niveau komt met een vertraagd effect omhoog, zodat het hele dashboard in een vloeiende beweging verschijnt. Een veiligheidsnet van 2,5 seconden voorkomt dat de gebruiker vast blijft zitten op de skeleton bij een trage verbinding. De media query `prefers-reduced-motion: reduce` schakelt alle entry-animaties uit.
+Terwijl data laadt, toont het dashboard een placeholder die de vorm van elke kaart spiegelt, zodat er niets verspringt. Zodra de data binnen is, komt het dashboard in beeld.
 
-De pagina bestaat uit:
-- Een **hero**-paneel met begroeting, AI-lede en periodecontext
+Het dashboard bestaat uit:
+
+- Een **hero**-paneel met begroeting, de AI-briefing en periodecontext
 - Een **pulse**-rij van vier KPI's: liquiditeit/runway, omzet (maand + jaar), debiteuren + DSO, en btw-saldo + deadline
-- Een **briefingfeed** verdeeld over drie tabs: **Nu** (vraagt om aandacht), **Deze week** (komt eraan), en **Goed nieuws** (bevestigingen)
+- Een **briefingfeed** met vier tabs: **Alle**, **Nu** (vraagt om aandacht), **Deze week** (komt eraan) en **Goed nieuws** (bevestigingen)
 - Een **cash-grafiek** over een venster van 12 maanden met werkelijk + prognose
 - Een **weekkaart**, **projectmarges**-lijst, **top klanten**-lijst, **activiteitenfeed** en een **btw-ring**
-- Een **setup-banner** die blijft staan totdat de wizard op `/setup` is voltooid
-
-Terwijl data laadt, toont het dashboard een **skeleton**-placeholder (`BriefingSkeleton`): een shimmer die de exacte vorm van elke kaart spiegelt. Zodra de kerndata binnen is (metrics gecached en liquiditeit opgelost), lost de skeleton op in een gecoordineerde fade-up-animatie. Elk blok op het hoogste niveau komt met een vertraagd effect omhoog, zodat het hele dashboard in een vloeiende beweging verschijnt. Een veiligheidsnet van 2,5 seconden voorkomt dat de gebruiker vast blijft zitten op de skeleton bij een trage verbinding. De media query `prefers-reduced-motion: reduce` schakelt alle entry-animaties uit.
+- Een **setup-banner** die blijft staan totdat de setup-wizard is voltooid
 
 ## Hero
 
-Bovenaan staat een begroeting op basis van het tijdstip. De AI-lede is het middelpunt van de hero: een korte, persoonlijke, AI-geschreven briefing die het volledige zakelijke plaatje synthetiseert.
+Bovenaan staat een begroeting op basis van het tijdstip. De AI-briefing is het middelpunt van de hero: een korte, persoonlijke, AI-geschreven briefing die het volledige zakelijke plaatje samenvat.
 
-De AI-briefing spreekt in de eerste persoon ("ik") en spreekt de gebruiker informeel aan ("je"). Hij opent met de meest urgente actie voor vandaag, dan hooguit een of twee ondersteunende punten waar die waarde toevoegen. Hij sluit af met een concrete vervolgstap in de app (bijv. "stuur Atelier Norden vandaag een herinnering", "rond je BTW af"). Het model put uit een volledige set live signalen: liquiditeit en runway, omzet en winst (maand + YTD), achterstallige debiteuren (aantal, totaal, slechtste klant), rekeningen (binnenkort + achterstallig), aantal concepten, projectmarges, btw-positie (saldo, deadline, checklistvoortgang, reserve), niet-gefactureerde uren, recente betalingen en nieuwe klanten. Alle bedragen zijn afgerond op hele euro's.
+De AI-briefing spreekt in de eerste persoon en richt zich direct tot jou. Hij opent met de meest urgente actie voor vandaag, dan hooguit een of twee ondersteunende punten waar die waarde toevoegen. Hij sluit af met een concrete vervolgstap in de app (bijvoorbeeld een specifieke klant een herinnering sturen, of je btw-aangifte afronden). Hij put uit een volledige set live signalen: liquiditeit en runway, omzet en winst (maand + jaar), achterstallige debiteuren (aantal, totaal, slechtste klant), rekeningen (binnenkort + achterstallig), aantal concepten, projectmarges, btw-positie (saldo, deadline, checklistvoortgang, reserve), niet-gefactureerde uren, recente betalingen en nieuwe klanten. Alle bedragen zijn afgerond op hele euro's.
 
-Terwijl de AI-briefing nog laadt, toont de hero de gecachte deterministische lede van de vorige dag. De cross-fade naar de AI-versie is een vloeiende opacity-and-slide-overgang (`Transition` met `mode="out-in"`). De AI-briefing verschijnt met een sparkle-icoon en de primaire tekstkleur.
+Terwijl de AI-briefing nog laadt, toont de hero de gecachte standaardsamenvatting van de vorige dag, waarna hij vloeiend overgaat naar de AI-versie. De AI-briefing verschijnt met een sparkle-icoon.
 
-De AI-briefing is beschikbaar in alle vier ondersteunde talen. Hij wordt eenmaal per kalenderdag per bedrijf gegenereerd op Vertex AI `europe-west1` (Gemini 2.5 Flash) en de rest van de dag gecached. Als het model niet beschikbaar is of de werkruimte geen Pro-rechten heeft, wordt alleen de deterministische lede getoond en vindt er geen cross-fade plaats.
+De AI-briefing is beschikbaar op elk abonnement en in alle vier ondersteunde talen. Hij wordt eenmaal per kalenderdag per bedrijf gegenereerd en de rest van de dag gecached. Kan de briefing niet worden gegenereerd, dan wordt de standaardsamenvatting getoond.
 
 De hero toont ook het periodelabel (standaard maand).
 
 ## Pulse-rij
 
-De vier cellen in de pulse-rij vervangen de oude geldtegels en KPI-headline. Elke cel toont een gerichte waarde met context:
+De vier cellen in de pulse-rij tonen gerichte waarden met context:
 
 | Cel | Wat het toont |
 |---|---|
@@ -53,7 +52,7 @@ De vier cellen in de pulse-rij vervangen de oude geldtegels en KPI-headline. Elk
 
 ## Briefingfeed
 
-De feed is de belangrijkste aandachtsplek. Hij stelt echte signalen uit werkruimtedata samen tot een gestructureerde lijst met drie tabweergaven:
+De feed is de belangrijkste aandachtsplek. Hij stelt echte signalen uit werkruimtedata samen tot een gestructureerde lijst met vier tabweergaven, beginnend met **Alle** (alles samen):
 
 - **Nu.** Zaken die vandaag actie vereisen: te late facturen, te late rekeningen, open bonnen, conceptfacturen die klaarstaan, en btw-checklistitems.
 - **Deze week.** Zaken die deze week verlopen: te vervallen facturen, te betalen rekeningen en btw-deadlines.
@@ -67,11 +66,11 @@ Elk feeditem toont de entiteit, het bedrag en contextuele details. De feed opent
 |---|---|
 | **Cash (12 maanden)** | Een lijngrafiek met de werkelijke cashpositie tot vandaag en een prognose tot einde maand. Vereist voldoende historie om de projectie te kunnen maken. |
 | **Weekkaart** | Uren gelogd deze week. |
-| **Projectmarges** | Alle projecten met omzet, gesorteerd op margepercentage, kleurgecodeerd groen/oranje/rood. |
+| **Projectmarges** | Alle projecten met omzet, gesorteerd op margepercentage, kleurgecodeerd groen/oranje/rood. Zichtbaar wanneer de projectenfunctie is ingeschakeld. |
 | **Top klanten** | Top klanten op omzet dit jaar, met percentage van totaal. |
 | **Recente activiteit** | Gebeurtenissen: factuur aangemaakt, factuur betaald, uitgave toegevoegd. |
 | **BTW-ring** | Huidige btw-aangifteperiode, checklistvoortgang en aantal open bonnen. Linkt naar de btw-aangifte. |
 
 ## Setup-banner
 
-Zolang de setup-wizard op `/setup` nog velden te vullen heeft, staat er een `FinishSetupBanner` bovenaan het dashboard met een teller van openstaande velden en een **Verder**-knop. De banner heeft een sluitknop (X-icoon) die de banner per browser verbergt via localStorage, zodat deze over herlaadbeurten verborgen blijft totdat de wizard is voltooid. De wizard is niet-blokkerend: nieuwe aanmeldingen komen direct op `/dashboard` en worden niet geforceerd doorgestuurd.
+Zolang de setup-wizard nog velden te vullen heeft, staat er een banner bovenaan het dashboard met een teller van openstaande velden en een knop om verder te gaan met de setup. De banner heeft een sluitknop die hem in jouw browser verbergt totdat de wizard is voltooid, ook na herladen. De wizard is niet-blokkerend: nieuwe aanmeldingen komen direct op het dashboard en worden niet geforceerd doorgestuurd.

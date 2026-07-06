@@ -20,13 +20,15 @@ Recurring invoices are templates that automatically create new invoices at speci
 
 1. Go to **Recurring Invoices > New**
 2. Fill in the template:
-   - **Customer** — Who to bill
-   - **Line items** — What to bill for (descriptions, amounts, VAT)
-   - **Frequency** — How often (weekly, monthly, quarterly, yearly)
-   - **Start date** — When to start generating
+   - **Customer**: Who to bill
+   - **Line items**: What to bill for (descriptions, amounts, VAT)
+   - **Frequency**: How often (weekly, monthly, quarterly, yearly)
+   - **Start date**: When to start generating
 3. Click **Save**
 
 The recurring invoice is created in **Active** status and will generate its first invoice on the next scheduled date.
+
+The **Auto-send email on creation** option is on by default: each generated invoice is emailed to the customer straight away. Switch it off if you prefer to review and send each invoice yourself.
 
 ## Frequency options
 
@@ -45,7 +47,7 @@ Temporarily stop invoice generation:
 
 1. Open the recurring invoice
 2. Click **Pause**
-3. Status changes to **Paused** — no invoices are generated
+3. Status changes to **Paused**: no invoices are generated
 
 ### Resume
 
@@ -69,17 +71,12 @@ Each time a recurring invoice fires, a new invoice is created:
 
 - It uses the template's line items and customer
 - It follows your current invoice numbering
-- It starts as a **Draft** (review and send) or auto-sends if configured
-- Each generated invoice is independent — you can edit it without affecting the template
+- It is emailed automatically, or kept as a **Draft** to review and send if you switched auto-send off
+- Each generated invoice is independent: you can edit it without affecting the template
 
 ## Viewing history
 
 The recurring invoice detail page shows all previously generated invoices, so you can track the full billing history.
-
-## Bulk actions
-
-- **Pause / Resume** — Toggle multiple recurring invoices
-- **Delete** — Remove multiple templates
 
 ## Tips
 

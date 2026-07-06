@@ -34,7 +34,7 @@ Les clients peuvent payer directement via le portail. Si vous avez connecte Moll
 
 #### Parametres de paiement Mollie
 
-Une fois Mollie connecte, vous obtenez un interrupteur **Betaalknop op facturen** dans votre espace de travail sous **Argent → Paiements → Online betalingen**. Activez-le pour ajouter un bouton de paiement Mollie sur chaque facture envoyee. Desactivez-le et le bouton disparait sans deconnecter Mollie.
+Une fois Mollie connecté, vous obtenez un interrupteur **Betaalknop op facturen** sous **Paramètres > Betalen**, dans la section **Online betalingen**. Activez-le pour ajouter un bouton de paiement Mollie sur chaque facture envoyée. Desactivez-le et le bouton disparait sans deconnecter Mollie.
 
 Sous l'interrupteur se trouve une section **Betaalmethoden** listant chaque methode de paiement activee dans votre tableau de bord Mollie (iDEAL, Bancontact, carte bancaire, et plus). Par defaut, les clients voient toutes les methodes. Cochez des methodes specifiques pour restreindre la selection, seules celles-ci apparaissent sur vos factures. Decochez tout pour revenir a "tout afficher."
 
@@ -42,7 +42,7 @@ Le bouton **Stuur testbetaling** vous permet de parcourir un checkout test gratu
 
 #### Parametres de paiement Stripe
 
-Une fois Stripe connecte, vous obtenez un interrupteur **Betaalknop op facturen** dans votre espace de travail sous **Argent → Paiements → Online betalingen**. Activez-le pour ajouter un bouton de paiement Stripe sur chaque facture envoyee. Desactivez-le et le bouton disparait sans deconnecter Stripe. L'interrupteur n'est disponible qu'une fois l'onboarding Stripe (KYC) termine.
+Une fois Stripe connecté, vous obtenez un interrupteur **Betaalknop op facturen** sous **Paramètres > Betalen**, dans la section **Online betalingen**. Activez-le pour ajouter un bouton de paiement Stripe sur chaque facture envoyée. Desactivez-le et le bouton disparait sans deconnecter Stripe. L'interrupteur n'est disponible qu'une fois l'onboarding Stripe (KYC) termine.
 
 Sous l'interrupteur se trouve une section **Betaalmethoden** listant chaque methode de paiement prise en charge, croisee avec les capacites de votre compte Stripe (carte, iDEAL, Bancontact, prelevement SEPA, PayPal, Klarna et Link by Stripe). Par defaut, Stripe Checkout choisit automatiquement la bonne methode par client. Cochez des methodes specifiques pour restreindre ce que les clients voient, seules celles-ci apparaissent au checkout. Decochez tout pour revenir a la selection automatique.
 

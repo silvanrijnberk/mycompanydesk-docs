@@ -4,7 +4,7 @@ title: Offertes
 
 # Offertes
 
-Verstuur professionele offertes naar potentiele klanten en zet ze om naar facturen wanneer ze geaccepteerd zijn.
+Verstuur professionele offertes naar potentiële klanten en zet ze om naar facturen wanneer ze geaccepteerd zijn.
 
 ## Overzicht
 
@@ -19,7 +19,7 @@ Het offertesgedeelte stelt je in staat om offertes te maken, versturen en bijhou
 5. Voeg optionele **notities** toe
 6. Klik op **Opslaan**
 
-Het offerteformulier lijkt op het factuurformulier — als je weet hoe je een factuur maakt, weet je ook hoe je een offerte maakt.
+Het offerteformulier lijkt op het factuurformulier: als je weet hoe je een factuur maakt, weet je ook hoe je een offerte maakt.
 
 ## Een offerte versturen
 
@@ -37,9 +37,10 @@ De offerte-PDF wordt als bijlage bij de e-mail gevoegd zodat de klant deze kan b
 | **Concept** | Aangemaakt maar niet verstuurd |
 | **Verzonden** | Bezorgd bij de klant |
 | **Geaccepteerd** | Klant heeft de offerte geaccepteerd |
-| **Afgewezen** | Klant heeft de offerte afgewezen |
+| **Geweigerd** | Klant heeft de offerte afgewezen |
 | **Verlopen** | Voorbij de geldig-tot-datum |
-| **Gefactureerd** | Omgezet naar een factuur |
+
+Een offerte die naar een factuur is omgezet houdt de status **Geaccepteerd** en krijgt een markering **Omgezet naar factuur** met een link naar de factuur.
 
 ## Omzetten naar factuur
 
@@ -82,12 +83,11 @@ Elke aanvraag toont:
 
 ## Bulkacties
 
-- **Versturen** — Verstuur meerdere offertes tegelijk
-- **Archiveren** — Verplaats offertes naar het archief
-- **Verwijderen** — Verwijder offertes
+- **Versturen**: markeert de geselecteerde offertes als verzonden. Dit werkt alleen de status bij; er worden geen e-mails verstuurd.
+- **Archiveren**: verplaats offertes naar het archief
+- **Verwijderen**: verwijder offertes
 
 ## Tips
 
 - Statistieken over offerteaanvragen (ontvangen, geoffreerd, gesloten) worden bovenaan de aanvragenpagina getoond
-- Gebruik de snel-toevoegen-functie voor snelle offertecreatie
 - Offertes kunnen aan projecten worden gekoppeld voor beter overzicht

@@ -8,22 +8,22 @@ Manage your complete customer database. Every invoice, quote, and project links 
 
 ## Overview
 
-The customers page lists all your clients with key information at a glance. Use search and filters to find customers quickly.
+The customers page lists all your clients with key information at a glance. The list is ordered by name, with your favorites pinned to the top. Search finds customers by name, customer number, email address, or city. Status tabs switch between All statuses, Active, Prospects, Archive, and Trash, and a date range filter narrows the list down further.
 
 ## Creating a customer
 
-1. Go to **Customers > New Customer**
+1. Go to **Customers** and click **Create**
 2. Fill in the customer details:
-   - **Name** — Company or individual name (required)
-   - **Email** — Contact email for sending invoices
-   - **Phone** — Contact phone number
-   - **Address** — Street, postal code, city, country
-   - **VAT number** — Customer's VAT registration (for B2B)
-   - **Customer number** — Auto-generated or custom
+   - **Name**: company or individual name (required)
+   - **Email**: contact email for sending invoices
+   - **Phone**: contact phone number
+   - **Address**: street, postal code, city, country
+   - **VAT number**: the customer's VAT registration (for B2B)
+   - **Customer number**: auto-generated or custom
 3. Click **Save**
 
 ::: tip
-You can also create customers inline when creating an invoice or quote — no need to navigate away.
+Customer pickers across the app (invoices, quotes, time registration, and more) include an **Add new customer** link that opens the new-customer page, so you can add a missing customer mid-flow.
 :::
 
 ### KVK autofill
@@ -35,51 +35,71 @@ When creating a Dutch customer, MyCompanyDesk can autofill company details from 
 
 A verified badge appears next to the chamber number field on successful lookup. If the KVK number is not found, an error message is shown. Both lookups are available only for Dutch customers.
 
-Each workspace gets 100 free KVK lookups per day (cached results do not count). When 20 or fewer lookups remain, the KVK field hint shows a counter of how many are left. If the daily cap is hit, the form shows a quota-exceeded message, and you can enter the data manually or try again tomorrow.
+## Prospects
+
+A prospect is a potential customer without a customer number. You can create quotes for prospects, but not invoices. Mark a customer as a prospect with the **Prospect** toggle on the customer form; prospects get their own **Prospects** tab on the customers page and a badge on their card. When a prospect becomes a real customer, open their detail page and use **Convert to customer**: you assign a customer number and the record becomes a regular customer.
 
 ## Customer detail page
 
 The customer detail page shows:
 
-- **Contact information** — All stored details
-- **Invoice history** — Every invoice sent to this customer
-- **Expense history** — Expenses linked to this customer
-- **Contracts** - Active and inactive contracts, with signing status badges and a PDF preview icon when e-signing is enabled
-- **Projects** — Active and completed projects
-- **Statistics** — Total revenue, outstanding balance, average payment time
+- **Contact information**: email, phone, and address
+- **Business details**: VAT number, Chamber of Commerce number, IBAN, and payment terms
+- **Billing information**: hourly rate, payment terms, and whether automatic invoicing of logged time is active
+- **Summary**: total invoiced, invoice count, and last invoice date
+- **Recent invoices**: the latest invoices for this customer, with a link to the full list
+- **Recent time registrations**: the latest logged hours for this customer
+- **Contracts**: active and inactive contracts, with signing status badges and a PDF preview icon when e-signing is enabled
+- **Notes**: free-form notes about this customer
+- **Actions**: edit, create invoice, create quote, archive, and delete
 
 ### Email health banner
 
 A warning banner appears at the top of the customer detail page when the customer's email address has recently bounced (permanently undeliverable) or generated a spam complaint. The banner is quiet when the address is healthy.
 
-- **Bounce**, shows a red banner with the last failed delivery date and the rejection reason from the email provider. If no specific reason was given, a generic note is shown instead.
-- **Complaint**, shows a yellow banner warning that the customer marked your email as spam. The message advises against sending more mail to that address without prior contact.
+- **Bounce**: shows a red banner with the last failed delivery date and the rejection reason from the email provider. If no specific reason was given, a generic note is shown instead.
+- **Complaint**: shows a yellow banner warning that the customer marked your email as spam. The message advises against sending more mail to that address without prior contact.
 
 This information comes from provider events and outbound message delivery status, helping you spot delivery problems before sending the next invoice or quote.
 
+## Favorites
+
+Favorites keep your most important customers one click away:
+
+- **Star a customer** on their card in the list, in the quick view panel, or on their detail page. A yellow star marks favorites.
+- **Bulk add or remove**: select multiple customers and use the **Favorite** or **Unfavorite** bulk actions.
+- **Pinned first**: favorites always appear at the top of the customers list and at the top of every customer picker in the app (invoices, quotes, time registration), marked with a star.
+
 ## Actions
 
-- **Edit** — Update customer information
-- **Create invoice** — Start a new invoice pre-filled with this customer
-- **Create quote** — Start a new quote for this customer
-- **Archive** — Move to archive (can be restored later)
-- **Delete** — Permanently remove the customer
+- **Edit**: update customer information
+- **Create invoice**: start a new invoice pre-filled with this customer
+- **Create quote**: start a new quote for this customer
+- **Archive**: move to archive (can be restored later)
+- **Delete**: staged deletion, see below
+
+### Deleting a customer
+
+Deletion is staged, so you never lose data by accident. Deleting an active customer archives them first. Deleting an archived customer moves them to the trash. Deleting from the trash removes the customer permanently. You can restore from the archive or the trash at any time, and empty the whole trash in one go from the Trash tab.
 
 ## Bulk actions
 
 Select multiple customers for:
 
-- **Archive** — Bulk archive inactive customers
-- **Restore** — Bring back archived customers
-- **Delete** — Remove multiple customers
+- **Favorite / Unfavorite**: add or remove the selection as favorites
+- **Archive**: archive active customers in bulk
+- **Restore**: bring archived or trashed customers back
+- **Move to trash**: move archived customers to the trash
+- **Delete**: permanently remove the selected customers
 
 ## Quick view
 
 On desktop, click a customer in the list to open the **quick view** slide panel. This shows key details and actions without leaving the list:
 
-- Customer info summary
-- Recent invoices
-- Edit button to open the full edit page
+- Financial summary: total invoiced, invoice count, and outstanding amount
+- Contact details, address, customer number, VAT number, hourly rate, payment terms, and last invoice date
+- Quick actions: create invoice, create quote, send an email, and toggle favorite
+- An **Edit** button that opens the full edit page
 
 ## Import customers
 
@@ -94,11 +114,11 @@ Import your existing customer database from CSV:
 
 ## Export customers
 
-Export your customer list as CSV from the customers page (Pro plan and above).
+Export your customer list as CSV via **Settings > Gegevens downloaden** (available from the Starter plan). The same page also offers a full backup of all your data.
 
 ## Tips
 
-- Keep customer emails up to date — they're used for invoice delivery
-- Use the search bar for instant fuzzy matching across all customer fields
-- Pin your most important customers as favorites for quick access
+- Keep customer emails up to date; they are used for invoice delivery
+- Search matches name, customer number, email address, and city
+- Star your most important customers as favorites for quick access
 - Assign VAT numbers to enable reverse charge on B2B invoices

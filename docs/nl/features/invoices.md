@@ -8,14 +8,21 @@ Facturen vormen de kern van MyCompanyDesk. Maak professionele facturen, verstuur
 
 ## Overzicht
 
-De facturenpagina toont al je facturen met filter- en zoekmogelijkheden. Gebruik de statustabs om snel te bekijken:
+De facturenpagina toont al je facturen met filter- en zoekmogelijkheden. De tabs bovenaan zijn weergaven, geen statussen:
 
-- **Alles** — Alle facturen
-- **Concept** — Aangemaakt maar niet verstuurd
-- **Verzonden** — Bezorgd bij klanten
-- **Achterstallig** — Vervaldatum verstreken, onbetaald
-- **Betaald** — Betaling ontvangen
-- **Geannuleerd** — Geannuleerde facturen
+- **Actief**: je werklijst met facturen
+- **Archief**: facturen die je hebt gearchiveerd
+- **Prullenbak**: facturen die wachten op permanente verwijdering
+
+Binnen een weergave filter je met de statusdropdown op:
+
+- **Alle statussen**: elke factuur in de weergave
+- **Concept**: aangemaakt maar nog niet definitief
+- **Open**: definitief gemaakt en klaar om te versturen, maar nog niet verstuurd
+- **Verzonden**: bezorgd bij klanten
+- **Betaald**: betaling ontvangen
+- **Te laat**: vervaldatum verstreken, onbetaald
+- **Bevestiging nodig**: de klant heeft de factuur in het klantportaal als betaald gemarkeerd en wacht op jouw bevestiging
 
 ## Een factuur aanmaken
 
@@ -23,26 +30,26 @@ De facturenpagina toont al je facturen met filter- en zoekmogelijkheden. Gebruik
 
 1. Ga naar **Facturen > Nieuwe factuur**
 2. Selecteer of maak een **klant** aan
-3. Voeg **regelitems** toe met omschrijving, aantal, eenheidsprijs en BTW-tarief. Het standaard BTW-tarief voor nieuwe regels komt uit de belastinginstellingen van je werkruimte (Geldzaken → Belasting). Bij klanten met verlegde BTW wordt automatisch 0% gebruikt.
+3. Voeg **regelitems** toe met omschrijving, aantal, eenheidsprijs en BTW-tarief. Het standaard BTW-tarief voor nieuwe regels komt uit je belastinginstellingen (Instellingen > BTW). Bij klanten met verlegde BTW wordt automatisch 0% gebruikt.
 4. Stel de **factuurdatum** en **vervaldatum** in
 5. Voeg optionele **notities** of **interne opmerkingen** toe
-6. Klik op **Opslaan** om een concept aan te maken
+6. Sla op als **concept** om later verder te werken, of maak de factuur **definitief** om hem te vergrendelen en voor te bereiden voor verzending
 
-### Snel toevoegen
+### Concept of definitief
 
-Voor snellere aanmaak:
-
-1. Klik op de snel-toevoegen-knop op de facturenlijst
-2. Selecteer een klant
-3. Voeg items toe of kies een sjabloon
-4. Sla op (en verstuur optioneel direct)
+Opslaan als concept houdt de factuur volledig bewerkbaar. **Definitief maken** vergrendelt de factuur, kent het definitieve factuurnummer toe en zet de status op **Open** (klaar om te versturen). Bij het definitief maken lopen ook de gereedheidscontroles: MyCompanyDesk controleert of je bedrijf een btw-id en IBAN heeft ingevuld (zie [Afronden en versturen](#afronden-en-versturen)).
 
 ### Vanuit een sjabloon
 
-1. Klik bij het aanmaken van een nieuwe factuur op **Sjabloon gebruiken**
-2. Selecteer een opgeslagen sjabloon
-3. Alle regelitems zijn vooraf ingevuld — pas aan waar nodig
-4. Sla op en verstuur
+Sjablonen zitten in de zijbalk: klik op **Sjablonen** onder Snelle acties om het sjablonenvenster te openen. Kies je een factuursjabloon, dan opent een nieuwe factuur met alle sjabloonvelden vooraf ingevuld; pas aan waar nodig en sla op of maak definitief.
+
+Een sjabloon maken doe je door een factuur te openen en op **Opslaan als sjabloon** te klikken.
+
+### Uren factureren
+
+Wanneer je op het factuurformulier een klant selecteert, haalt MyCompanyDesk de nog niet gefactureerde uren van die klant op. Voeg ze los of in een keer toe; elke registratie wordt een regelitem met de uren, het uurtarief en een automatisch ingevulde omschrijving. Heeft de urenregistratie zelf geen omschrijving, dan wordt een leesbare standaard gebruikt op basis van de projectnaam of de periode. Je kunt op de klantkaart ook een omschrijvingssjabloon per klant instellen om te bepalen hoe deze regels worden geformuleerd.
+
+Nog niet gefactureerde uitgaven van de klant kun je op dezelfde manier toevoegen.
 
 ## Factuurdetails
 
@@ -79,7 +86,7 @@ Annuleer een factuur die niet meer betaald hoeft te worden. Geannuleerde facture
 
 ### Dupliceren
 
-Maak een kopie van een bestaande factuur — handig voor terugkerende facturatie aan dezelfde klant.
+Maak een kopie van een bestaande factuur, handig voor terugkerende facturatie aan dezelfde klant.
 
 ### Herinnering sturen
 
@@ -89,10 +96,13 @@ Verstuur een betalingsherinnering voor achterstallige facturen.
 
 Selecteer meerdere facturen uit de lijst om acties in bulk uit te voeren:
 
-- **Versturen** — Verstuur meerdere conceptfacturen tegelijk
-- **Markeer als betaald** — Registreer betalingen voor meerdere facturen
-- **Archiveren** — Verplaats facturen naar het archief
-- **Verwijderen** — Verwijder facturen permanent
+- **Versturen**: markeert de geselecteerde facturen als verzonden. Dit werkt alleen de status bij; er worden geen e-mails verstuurd.
+- **Markeer als betaald**: registreer betalingen voor meerdere facturen
+- **Annuleer**: annuleer meerdere facturen
+- **Archiveren**: verplaats facturen naar het archief
+- **Verwijderen**: verwijder facturen
+
+In de weergaven Archief en Prullenbak veranderen de bulkacties in herstellen, naar prullenbak en permanent verwijderen.
 
 ## Betaallinks
 
@@ -108,8 +118,8 @@ De betaling wordt automatisch geregistreerd en de factuurstatus wordt bijgewerkt
 
 Schakel online factuurbetalingen in door je eigen Mollie- of Stripe-account te koppelen:
 
-1. Ga naar **Geld → Betalingen** in het werkruimtemenu
-2. Koppel onder **Online betalingen** de gewenste verwerker
+1. Ga naar **Instellingen > Betalen**
+2. Koppel onder **Klanten laten betalen met iDEAL** de gewenste verwerker
 3. Mollie ondersteunt iDEAL, Bancontact, creditcard en bankoverboeking
 4. Stripe Connect ondersteunt card, Apple Pay, Google Pay en SEPA-incasso
 
@@ -141,31 +151,26 @@ Om een betaling terug te storten:
 
 De factuurmodule ondersteunt meerdere documenttypen:
 
-- **Factuur** — Standaard factuurtype
-- **Creditnota** — Correctie voor terugbetalingen of aanpassingen
-- **Herinnering** — Betalingsherinnering voor achterstallige facturen
+- **Factuur**: standaard factuurtype
+- **Creditnota**: correctie voor terugbetalingen of aanpassingen
+- **Herinnering**: betalingsherinnering voor achterstallige facturen
 
 ## Filteren en zoeken
 
-Gebruik de filterbalk om je facturen te verfijnen:
+De lijst biedt:
 
-- **Status** — Concept, Verzonden, Achterstallig, Betaald, Geannuleerd
-- **Klant** — Filter op specifieke klant
-- **Project** — Filter op gekoppeld project
-- **Datumbereik** — Filter op factuur- of vervaldatum
-- **Zoeken** — Zoek op factuurnummer, klantnaam of omschrijving
+- **Zoeken**: zoek op factuurnummer, klantnaam of omschrijving
+- **Weergavetabs**: Actief, Archief, Prullenbak
+- **Status**: Alle statussen, Concept, Open, Verzonden, Betaald, Te laat, Bevestiging nodig
+- **Datumbereik**: filter op datum
 
 ## Exporteren
 
-Exporteer je facturen als CSV voor gebruik in Excel, Google Sheets of je boekhoudsoftware.
-
-::: info
-CSV-export vereist het **Pro**-abonnement of hoger.
-:::
+Exporteer je facturen als CSV via **Instellingen > Gegevens downloaden** (beschikbaar vanaf het Starter-abonnement). Op dezelfde pagina kun je ook een volledige back-up van al je gegevens maken.
 
 ## Afronden en versturen
 
-Wanneer je een factuur afrondt of verstuurt, controleert MyCompanyDesk of je bedrijf een btw-id en IBAN op je profiel hebt staan. In Nederland is een btw-id verplicht op je factuur, en je IBAN vertelt je klanten waar ze kunnen betalen.
+Wanneer je een factuur definitief maakt of verstuurt, controleert MyCompanyDesk of je bedrijf een btw-id en IBAN op je profiel hebt staan. In Nederland is een btw-id verplicht op je factuur, en je IBAN vertelt je klanten waar ze kunnen betalen.
 
 Ontbreekt een van de twee, dan opent een dialoog waarin je ze direct kunt invullen. Na opslaan wordt de factuur automatisch afgerond.
 

@@ -8,31 +8,33 @@ Manage recurring service agreements and rental contracts with automatic billing 
 
 ## Overview
 
-Contracts represent ongoing agreements with customers — such as monthly service contracts, rental agreements, or maintenance plans. They can generate invoices automatically on a set schedule.
+Contracts represent ongoing agreements with customers, such as monthly service contracts, rental agreements, or maintenance plans. They can generate invoices automatically on a set schedule.
 
 ::: info
-The contracts module is optional. Enable it in **Company > Features** if you don't see it in the navigation.
+The contracts module is optional. Enable it in **Settings > Onderdelen** if you don't see it in the navigation.
 :::
 
 ## Creating a contract
 
 1. Go to **Contracts > New Contract**
 2. Fill in:
-   - **Name** — A descriptive title (e.g., "Monthly cleaning service")
-   - **Customer** — The client party to the contract
-   - **Amount** — The recurring billing amount
-   - **Recurrence** — How often to bill (weekly, monthly, quarterly, yearly)
-   - **Start date** — When the contract begins
-   - **End date** — Optional end date
-   - **Description** — Terms and details
+   - **Name**: A descriptive title (e.g., "Monthly cleaning service")
+   - **Customer**: The client party to the contract
+   - **Service and amount**: What you deliver and the recurring billing amount
+   - **Recurrence**: How often to bill (weekly, monthly, quarterly, yearly)
+   - **Start date**: When the contract begins
 3. Click **Save**
+
+A contract has no end date field; it keeps billing until you pause it. In the form you can also choose when the first invoice should be created, and whether generated invoices are sent automatically.
 
 ## Contract statuses
 
 | Status | Description |
 |---|---|
 | **Active** | Currently in effect, generates invoices |
-| **Inactive** | Paused — no invoices generated |
+| **Paused** | On hold, no invoices generated |
+
+At the end of its life a contract can also show as **Ended**, **Expired** or **Terminated**.
 
 ## Automatic invoicing
 
@@ -54,17 +56,18 @@ Contracts can be linked to [objects/assets](/features/objects) for rental manage
 
 ## Metrics
 
-The contracts list page shows summary metrics:
+The contracts list page shows summary cards:
 
-- Total active contracts
-- Total contract value
-- Contracts by recurrence type
+- **Active Contracts**, with the total count alongside
+- **Monthly Revenue** from active contracts, normalised across billing frequencies
+- **Total Contracts**
+- **Next invoice**, the date the next contract invoice will be generated
+
+Click a card to filter the list accordingly.
 
 ## Bulk actions
 
-- **Change status** — Activate or deactivate multiple contracts
-- **Archive** — Move to archive
-- **Restore** — Bring back archived contracts
+Select multiple contracts to **Archive** or **Delete** them at once. The Archive view offers restore or move to trash; the Trash view offers restore or permanent deletion.
 
 ## Signing
 
@@ -94,11 +97,11 @@ Legacy contracts show a dash in the Signing column and appear under the "No e-si
 
 Signing links can require SMS verification before a party can view and sign the document. When enabled, the signer must enter a mobile number and confirm a 6-digit code sent by SMS.
 
-- **Send code** — After entering their mobile number, the signer taps the button and receives a code
-- **Verify code** — The signer enters the 6-digit code to prove access to the phone number
-- **Verified badge** — Once confirmed, a "Verified" badge appears with the last four digits of the number
+- **Send code**: After entering their mobile number, the signer taps the button and receives a code
+- **Verify code**: The signer enters the 6-digit code to prove access to the phone number
+- **Verified badge**: Once confirmed, a "Verified" badge appears with the last four digits of the number
 
-If the wrong code is entered, the signer can request a new one. SMS verification is configured per signing session and applies to all parties.
+If the wrong code is entered, the signer can request a new one. You switch SMS verification on per signer when adding the parties to the contract, so you can require it for one party and not for another.
 
 ## Template versions
 
@@ -132,7 +135,6 @@ When a contract is created from a template, it pins to the version that was curr
 
 - Use contracts together with [recurring invoices](/features/recurring-invoices) for different billing scenarios
 - Link contracts to objects for full rental management
-- Set end dates to get notified before contracts expire
-- Review the contracts filter to see active vs. inactive at a glance
+- Review the status filter to see active vs. paused contracts at a glance
 - Filter by signing status to find contracts that still need signatures
 - Add signing parties when creating a contract to enable electronic signing

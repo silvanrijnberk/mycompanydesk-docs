@@ -19,7 +19,7 @@ The quotes section lets you create, send, and track quotations. Quotes follow a 
 5. Add optional **notes**
 6. Click **Save**
 
-The quote form is similar to the invoice form — if you know how to create an invoice, you already know how to create a quote.
+The quote form is similar to the invoice form: if you know how to create an invoice, you already know how to create a quote.
 
 ## Sending a quote
 
@@ -37,9 +37,10 @@ The quote PDF is attached to the email for the customer to review.
 | **Draft** | Created but not sent |
 | **Sent** | Delivered to the customer |
 | **Accepted** | Customer accepted the quote |
-| **Rejected** | Customer declined the quote |
+| **Declined** | Customer declined the quote |
 | **Expired** | Past the valid-until date |
-| **Invoiced** | Converted to an invoice |
+
+A quote that has been converted to an invoice keeps its **Accepted** status and gets a **Converted to invoice** marker linking to the invoice.
 
 ## Convert to invoice
 
@@ -82,12 +83,11 @@ Each request shows:
 
 ## Bulk actions
 
-- **Send** — Send multiple quotes at once
-- **Archive** — Move quotes to archive
-- **Delete** — Remove quotes
+- **Send**: marks the selected quotes as sent. This updates the status only; no emails are sent.
+- **Archive**: move quotes to archive
+- **Delete**: remove quotes
 
 ## Tips
 
 - Quote request metrics (received, quoted, closed) are shown at the top of the requests page
-- Use the quick-add feature for rapid quote creation
 - Quotes can link to projects for better tracking

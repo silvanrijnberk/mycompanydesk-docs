@@ -4,53 +4,65 @@ title: Site Builder
 
 # Site Builder
 
-Build your business website with a drag-and-drop editor. Create multiple pages, compose them with sections and blocks, customize colors and fonts, and publish when you are ready.
+Build your business website with a visual editor. Create multiple pages, compose them with sections and blocks, style everything with complete design themes, and publish when you are ready.
 
 ## Overview
 
-The site builder replaces the old single-page business profile. Every new workspace starts with a 4-page default site (Home, Diensten, Over ons, Contact) so you have a real multi-page foundation from day one. The editor gives you:
+The site builder lives under the top-level **Website** item in the main navigation (`/website`). Every new workspace starts with a 4-page default site (Home, Diensten, Over ons, Contact) so you have a real multi-page foundation from day one.
 
-- **Multi-page support**: Create as many pages as you need, each with its own path and sections. The four default pages are ready to edit, remove, or add to.
-- **Domain switcher**: When your workspace has multiple custom domains (Pro plan), a dropdown in the top bar lets you switch between editing the default site and a per-domain variant. Each domain gets its own pages, navigation, design tokens, and publish snapshot.
-- **Section blocks**: Add hero, text, gallery, spotlight, services, team, testimonials, contact form, and custom HTML sections to any page. Save sections as reusable blocks to build a personal library.
-- **Design tokens**: Set brand colors, fonts, spacing, border radius, motion style, custom CSS, and a site favicon. Changes apply across the whole site.
-- **Navigation editor**: Drag-and-drop reorder of header links, with dropdown groups, external links, and inline navbar styling (brand name, CTA button, phone, call bar, sticky).
-- **Publish snapshots**: Work in draft, preview your changes, then publish. Unpublished changes are tracked in the top bar.
-- **Responsive preview**: Toggle between desktop, tablet, and mobile viewports while editing.
+The Website area has four screens, shown as tabs at the top:
 
-The site builder lives at **Company > Your website** (`/website`).
+- **Editor**: Compose pages by adding, arranging, and styling sections, with a live preview of the real site.
+- **Pagina's** (Pages): Manage pages, their paths, visibility, publish status, and per-page SEO.
+- **Stijl** (Style): Site-wide design: themes, colors, fonts, buttons, navbar, spacing, and animations.
+- **Koppelingen** (Integrations): Connect product features and third-party services to your website.
 
-## AI scaffolding
+The top bar is always visible and shows your public site address, the save indicator, the number of unpublished changes, and the Publish button.
 
-When you open the site builder for the first time on a fresh workspace, the editor shows a quick-start banner at the top. It reads your business register data (legal name, industry code, city) and generates a starter tagline, an about-us paragraph and three service drafts for you. You can edit everything inline before accepting, regenerate if the first suggestion is not quite right, or dismiss the banner. No wizard questions, no upfront friction.
+## The editor
 
-What the banner can do for you:
+The **Editor** tab shows three panes: the section list on the left, the live preview in the middle, and the inspector on the right. The preview renders your actual site, so what you see is what visitors get.
 
-- **Generate**: Click **Generate suggestion** to let the AI read your KVK data and propose copy.
-- **Edit inline**: Adjust the tagline, about text and service names and descriptions right in the banner.
-- **Accept**: Click **Apply** to write the accepted copy to your workspace. Your company description, hero tagline and services are updated in one go.
-- **Regenerate**: Not happy with the result? Click **Regenerate** for a fresh set of suggestions.
-- **Dismiss**: The banner remembers your choice locally. It stays hidden until you reset your workspace data.
+- **Add sections**: Click **Add section** to open the block picker, organized in groups (Basis, Bedrijf, Werk, Conversie, Structuur). Search by name or browse the groups.
+- **Click to edit**: Click any block in the live preview to select it and open its settings in the inspector. On mobile, tapping a block in the preview jumps straight to its settings.
+- **Drag to reorder**: Drag sections up or down in the section list to reorder them. The navigation and footer stay locked in place. Arrow buttons are available as a keyboard-friendly alternative.
+- **Undo and redo**: Press Cmd/Ctrl+Z to undo and Cmd/Ctrl+Shift+Z (or Ctrl+Y) to redo any edit, including deleting a section. Deleting a section also shows a toast with an instant undo action. Toolbar buttons show what the next undo or redo will do.
+- **Duplicate and delete**: Each section row has duplicate and delete actions.
+- **Responsive preview**: Toggle between desktop, tablet, and mobile viewports. The desktop preview always renders at a true desktop width and scales to fit, so you never see a squished layout.
 
-The banner uses the Gemini AI model (lite variant) when available on your workspace. If AI is not configured, the banner still works with a sensible fallback based on your industry code and company name.
+## AI writing help
 
-## Tabs
+Three AI tools help you write your site, all inside the editor.
 
-The site builder has five tabs (six when Style is expanded):
+### Rewrite a text field
 
-- **Editor**: Compose pages by adding and arranging sections. Click any section to inspect its content, layout, style, or animation settings. Drag sections to reorder, duplicate, or delete them.
-- **Pages**: Manage your pages: create new ones from templates, set paths and visibility, and see which pages are live, draft, or scheduled. Click a page to open it in the editor. The locked home page cannot be deleted. Each page shows a Live/Concept badge alongside quick-toggle buttons: click the globe icon to set a draft page live, or use the eye-off icon to hide a live page back to concept.
-- **Style**: Customize your site-wide design tokens. Apply a one-click preset (Editorial), then fine-tune colors (brand, accent, paper, ink), fonts (heading, body, mono from the font library), navbar (layout, background, CTA style), scale (radius, density, max width, section spacing), motion preferences, button styles, and custom CSS. You can also add head snippets for analytics (Plausible, Umami, Matomo) or font preconnects. Click the Style header to open or close the tab strip.
-- **Domain & SEO**: Configure your custom domain and SEO settings. The content here is scoped to the domain selected in the topbar domain switcher. When the default site (listed as the workspace name) is selected, no domain-specific panel appears. See [Domains, Website and Inbox](/features/domains-website-inbox) for the full domain management workflow.
-- **Integrations**: Connect third-party services to your website.
+Text fields in the inspector show four small tone buttons once there is enough text to work with:
 
-## Creating pages
+- **Korter** (Shorter): Cuts the text to about half its length while keeping the meaning.
+- **Kalmer** (Calmer): Makes the text warmer and more reassuring.
+- **Scherper** (Sharper): Tightens the wording with stronger verbs.
+- **Vriendelijker** (Friendlier): Softens the tone to be more approachable.
 
-1. Go to the **Pages** tab.
-2. Click **New page**.
-3. Enter a title and a path (e.g. `/about`).
-4. Choose a template or start blank.
-5. The page opens in the editor, where you can add sections and build it out.
+The rewrite stays in the same language as the original and never invents new information. The result replaces your field content inline; you can click another tone, undo, or keep editing.
+
+### Fill a whole section: Vul met AI
+
+At the top of the content inspector, sections with real text fields show a **Vul met AI** button. One click writes all of that section's copy in a single request, based on your company profile. The result is cached with alternative variants, so clicking again cycles through different versions for free until you find one you like. Sections you already filled by hand are respected: the tool writes copy, you stay in control.
+
+### Regenerate your site draft: Regenereer met AI
+
+The top bar has a **Regenereer met AI** button that opens the AI draft panel for any workspace, not just fresh ones. It reads your business register data (legal name, industry, city) and proposes a tagline, an about-us text, and three service drafts. You can edit everything inline before accepting, regenerate for a fresh set, or dismiss. On a brand-new workspace the same panel appears automatically as a quick-start banner. If AI is unavailable, a sensible fallback based on your industry and company name is used.
+
+## Pages
+
+The **Pagina's** tab lists all your pages with their status, path, and quick actions.
+
+### Creating pages
+
+1. Click **New page**.
+2. Enter a title and a path (e.g. `/about`).
+3. Choose a page template or start blank.
+4. The page opens in the editor, where you can add sections and build it out.
 
 ### Default pages
 
@@ -63,252 +75,221 @@ Every new workspace comes with four pages already created:
 | Over ons | `/over-ons` | Tell visitors who you are. |
 | Contact | `/contact` | Contact form and details. Linked from the footer. |
 
-These pages are wired into the navigation header and footer automatically. You can edit or delete any of them, except the Home page which is always required. The navigation updates its links when you add or remove pages.
+These pages are wired into the navigation header and footer automatically. You can edit or delete any of them, except the Home page which is always required.
 
-### Page status: Live vs Concept
+### Page status: Live, Concept, or Scheduled
 
-Pages have a status that controls whether they appear on your published site:
+- **Live**: Included in the publish snapshot. Visitors see it after you publish.
+- **Concept** (draft): Work in progress. Hidden from visitors even after you publish the site.
+- **Ingepland** (scheduled): Goes live automatically at the date and time you set.
 
-- **Live**: The page is included in the publish snapshot. Visitors see it on your public site after you publish.
-- **Concept** (draft): The page is a work in progress. It stays hidden from visitors even after you publish the site.
+The home page starts as Live; every other new page starts as Concept so nothing goes public before you are ready. Quick-toggle buttons in the pages table switch a page between Live and Concept instantly, and the change lights up the Publish button. A site whose home page is in Concept renders nothing when published; switch it back to Live and publish to restore the site.
 
-The home page starts as **Live** by default. Every other new page starts as **Concept** so it does not go public before you are ready. You can toggle any page between Live and Concept with the quick-action buttons in the Pages table. Changing the status updates immediately and lights up the Publish button in the top bar, so the next publish picks up the change.
+### Per-page SEO
 
-A site whose home page is in Concept renders nothing when published. If you toggle the home page to Concept, switch it back to Live and publish to restore the site.
+Each page row expands to an **SEO & sociaal** panel where you set the page's SEO title, meta description, and canonical URL. Site-wide domain settings live under **Settings > Domains**.
 
-## Building pages with sections
+## Blocks
 
-In the **Editor** tab:
+The block picker offers a broad catalog: hero, text, image, gallery, list, columns, spotlight, services, team, testimonials, logos, social links, locations, timeline, portfolio, before/after, process steps, blog list, stats, quote, CTA, contact form, appointment calendar, pricing, product, newsletter, FAQ, dividers, and a language switcher. There is no free-form HTML block; custom code goes through the Style tab's own CSS and the analytics allowlist instead.
 
-- Click **Add section** to see the available block types (hero, text, gallery, spotlight, services, team, testimonials, contact form, pricing, product, custom HTML, and more).
-- Select a block type to insert it onto the page.
-- Click any section to open the inspector panel, where you can edit its content, layout, style, and animation.
-- Drag sections up or down to reorder. Use the duplicate and delete actions on each section.
+Three conversion-focused blocks are recent additions:
 
-Some sections have system-only variants that are available on the locked home page but not on custom pages.
+- **Lichtkrant** (Marquee): A continuously scrolling band of short messages, e.g. "Gratis kennismakingsgesprek".
+- **Aftelklok** (Countdown): A live countdown to a deadline, with a message once it expires.
+- **Vergelijking** (Comparison): A "we versus others" table that compares features row by row.
 
-## AI assistant tools
-
-Two AI-powered tools help you write and illustrate your pages faster, right inside the editor inspector.
-
-### Text rewrite
-
-Every text and textarea field in the section inspector gets four small tone buttons below it when the field has enough content (more than a few words). The buttons send your current text to the server, which runs a lightweight Gemini model to rewrite it with a specific tone:
-
-- **Shorter**: Cuts the text to about half its length while keeping the meaning.
-- **Calmer**: Makes the text warmer and more reassuring. Less sales pitch, more confidence.
-- **Sharper**: Tightens the wording. Stronger verbs, no hesitation.
-- **Friendlier**: Softens the tone to be warmer and more approachable.
-
-The rewrite always stays in the same language as the original (usually Dutch). The model only rewrites, it does not invent new information. The rewritten text replaces your field content inline. You can click another tone button, undo, or edit further.
-
-The text field is limited to 2000 characters for the rewrite call, so the model returns quickly and stays predictable. If the AI service is temporarily unavailable, you will see an error message and your original text stays untouched.
+Some blocks, like the navigation and footer, are system blocks: they are always present and cannot be added or removed manually.
 
 ### Stock photo search
 
-When you open the image upload field in any section block (hero, spotlight, team, portfolio, logos, product), you now see a **Stockfoto** button next to the upload and URL paste buttons. Clicking it opens an inline search panel connected to Unsplash, the free stock photo library.
+Image fields include a **Stockfoto** button next to the upload and URL options. It opens an inline search panel connected to Unsplash, the free stock photo library:
 
-- Type a search term (e.g. "hair salon", "coffee", "wood") and hit enter.
-- Results appear in a grid. Click any photo to insert it as your section image.
-- The search is proxied through the MyCompanyDesk server, so your Unsplash access key never reaches the browser.
-- Attribution is tracked automatically per Unsplash's API guidelines and rendered on your published site. When your site goes live, a "Foto's: `photographer` · Unsplash" credit line appears in the footer for every page that uses at least one stock photo, so you are always compliant.
-- If Unsplash is not configured on your workspace, the Stockfoto button stays hidden so you never see a broken feature.
+- Type a search term (e.g. "hair salon", "coffee") and hit enter.
+- Click any photo in the results grid to use it as your section image.
+- Attribution is handled automatically: pages that use a stock photo show a photographer credit in the footer of your published site, so you are always compliant.
+- If stock photos are not available on your workspace, the button stays hidden.
 
-## Saved blocks
+### Saved blocks
 
-Save any section as a reusable block and build a personal library of pre-styled building blocks. Saved blocks appear at the top of the section adder, so you can drop a saved layout onto any page without rebuilding it from scratch.
+Save any section as a reusable block and build a personal library:
 
-### Save a section as a block
+1. Click the bookmark icon on a section row and give the block a name.
+2. Your saved blocks appear under **Mijn blokken** at the top of the block picker.
+3. Click a saved block to insert a copy on any page. Editing the inserted section never touches the saved template, and vice versa.
+4. Remove a saved block from the library with the x icon on its card; sections already inserted from it are unaffected.
 
-1. Click the bookmark icon on any section row in the editor.
-2. Give the block a name (the section label or type is pre-filled as a suggestion).
-3. The block is saved to your personal library for this workspace.
+## Section layout variants
 
-### Insert a saved block
+Most block types offer multiple layout variants. Pick one from the **Stijl** dropdown in the inspector's layout panel. The default variant preserves the existing look, so older sections keep rendering as they always did.
 
-1. Click **Add section** on any page.
-2. Your saved blocks appear under **My blocks** at the top of the adder panel.
-3. Click a saved block to insert it as a new section on the current page.
-
-Inserting a saved block copies its template into a fresh section row. Editing or deleting the inserted section does not touch the saved block in your library, and the other way around.
-
-### Manage your library
-
-- **Remove a block** from the library by clicking the x icon on the block in the adder panel. This only removes the saved template; it does not affect sections already inserted from it.
-- The **My blocks** header is hidden when your library is empty, so a first-time editor does not see an empty category.
-
-### Section layout variants
-
-Hero, services, pricing, and testimonials sections support multiple layout variants. Pick one from the **Stijl** (Style) dropdown in the inspector's Layout tab to change how the section renders. The default variant preserves the existing look, so sections you built before this feature keep rendering as they always did.
-
-#### Hero variants
+### Hero variants
 
 | Variant | Effect |
 |---|---|
-| **Standard (split right)** | Default. Image on the right, text on the left. Falls back to centered text when there is no image. |
-| **Split left** | Mirror of the default: image on the left, text on the right. Requires an image. |
-| **Centered** | Text centered, optional image beneath it in a wide 16:9 frame. |
-| **Banner** | Full-bleed background image with a gradient overlay. White text on a dark scrim, tall so the image breathes. Requires an image. |
-| **Minimal** | Text-only in a narrow column. No image. Clean and quiet for documentation-style pages. |
+| **Standaard (split rechts)** | Default. Image on the right, text on the left. |
+| **Split: beeld links** | Mirror of the default: image on the left. |
+| **Portret (ronde foto links)** | Round portrait photo on the left. |
+| **Portret (ronde foto rechts)** | Round portrait photo on the right. |
+| **Gecentreerd** | Text centered, optional image beneath it. |
+| **Banner met overlay** | Full-bleed background image with a gradient overlay. |
+| **Minimaal (alleen tekst)** | Text-only in a narrow column. Clean and quiet. |
 
-#### Services variants
-
-| Variant | Effect |
-|---|---|
-| **Standard (cards)** | Default. Grid of cards in 2, 3, or 4 columns. Icon, title, and description per item. |
-| **Icon grid** | Denser, icon-led layout with larger icons and less card chrome. Best for 4 or more short-label items. |
-| **List** | Vertical rows with an icon on the left and text on the right, separated by thin rules. Good for long read-through lists. |
-| **Accordion** | Vertically stacked clickable rows. Description hidden until the row opens. Uses the same chevron animation as the FAQ block. |
-
-#### Pricing variants
+### Services variants
 
 | Variant | Effect |
 |---|---|
-| **Standard (cards)** | Default. Side-by-side tier cards with name, price, feature list, and buy button or CTA. |
-| **Comparison table** | Feature matrix. Rows are the union of all features across tiers. Columns are the tiers. Each cell shows a check mark or a dash so visitors can scan across columns to compare plans. The highlighted tier column stays tinted. |
+| **Standaard (kaarten)** | Default. Grid of cards with icon, title, and description. |
+| **Icoon-raster** | Denser, icon-led layout. Best for 4 or more short items. |
+| **Lijst** | Vertical rows with icons, separated by thin rules. |
+| **Accordeon** | Clickable rows; the description opens on click. |
 
-#### Testimonials variants
+### Pricing variants
 
 | Variant | Effect |
 |---|---|
-| **Standard (grid)** | Default. Cards in a 2 to 3-column grid. Each card shows the quote, name, and optional role. |
-| **Spotlight (single quote)** | A single large pull-quote in magazine style, centered with serif typography. Extra testimonials appear as small attribution chips below the main quote. |
-| **Marquee** | A horizontally scrolling row of quote cards. Hover pauses the animation; the OS reduced-motion preference stops it entirely. The track loops seamlessly with two copies of the item set. |
+| **Standaard (kaarten)** | Default. Side-by-side tier cards. |
+| **Vergelijkingstabel** | Feature matrix: tiers as columns, features as rows with check marks. |
 
-### Spotlight
+### Testimonials variants
 
-The spotlight block is an alternating media-and-text row. Each instance shows an image on one side and text on the other: eyebrow, title, subtitle, bullets with check marks, and an optional call-to-action link. You control which side the image sits on via the layout panel.
+| Variant | Effect |
+|---|---|
+| **Standaard (raster)** | Default. Quote cards in a grid. |
+| **Spotlight (één quote)** | One large magazine-style pull quote, extra quotes as chips below. |
+| **Lopende band** | A horizontally scrolling row of quote cards. Hover pauses it. |
 
-A few things to know:
+### Other blocks with variants
 
-- **Image side**: The layout variant defaults to image-right. Switch to image-left in the layout panel to flip the row.
-- **Optional pieces**: Eyebrow, subtitle, bullets, CTA, and image are all optional. A spotlight with only a title and image still renders cleanly.
-- **Stacking**: Add several spotlight sections in a row to build the classic feature-list pattern from the MCD landing page.
+Team (grid, cards, or list rows), FAQ (accordion or open two-column), CTA (colored bar, split, or minimal), process (grid or vertical timeline), timeline (left line or centered alternating), stats (grid, cards, or compact bar), logos (strip or bordered grid), locations (two columns or list), newsletter (centered or framed card), and spotlight (image right or left) each have their own variant set in the same dropdown.
 
-### Pricing tiers with buy buttons
+## Section style
 
-The pricing section lets you list your plans or packages. Each tier can optionally include a buy button:
+Every section has a style panel in the inspector with one-click looks and fine-grained controls.
 
-- Set a tier as **purchasable** and provide the **amount in cents** (e.g. 4999 for EUR 49.99).
-- A **Buy now** button replaces the static CTA link. Visitors clicking it go through the MyCompanyDesk checkout, which redirects to Mollie or Stripe Connect for payment.
-- The buy-button label defaults to "Koop nu" but can be customised per tier with the **buyLabel** field.
-- Pricing tiers without buy buttons keep the existing CTA link behaviour.
+### One-click looks: Sfeer
 
-Pricing sections can also render as a feature comparison matrix. Switch the layout variant to **Comparison table** in the inspector. The matrix shows each tier as a column and every feature from all tiers as a row, with check marks where a tier includes the feature. This makes plan-to-plan comparison easy at a glance. See [Section layout variants](#section-layout-variants) for the full options.
+The **Sfeer** picker applies a curated combination of background, shape, and framing in one click, so a section gets a deliberate mood without hand-tuning every knob. Looks that suit the selected block type are listed first as recommended. The nine looks are: **Schoon** (calm and neutral), **Zacht** (tinted band with a subtle shape), **Warm** (tinted with a soft accent shape), **Golfovergang** (flowing wave transition into the next section), **Botanisch** (tinted band with a leaf motif), **Patroon** (light band with a fine dot pattern), **Statement** (dark, dramatic band), **Merk** (band in your brand color), and **Zwevend** (a rounded card floating on the background). Your own background colors, gradients, and images survive switching looks.
 
-### Product block
+### Backgrounds
 
-A standalone single-item buy card, for when a full pricing table is more than you need:
+- **Solid**: White, paper, ink, brand, or any custom color.
+- **Verloop** (gradient): Pick two colors and an angle for a gradient background.
+- **Background image**: Upload or pick an image, set its focal point, and add an overlay scrim in dark, brand, light, or a custom tint so text stays readable.
 
-- One product name, description, optional image, price, and a buy button.
-- Same checkout plumbing as the pricing buy buttons, your visitor pays through Mollie or Stripe Connect.
-- An optional note line under the button for delivery info, disclaimers, or shipping notes.
+### Shapes, cards, and edges
 
-See [Sales](/features/domains-website-inbox#sales) for tracking payments and orders.
+- **Decorative shapes**: Paint a soft accent-colored shape behind the section content. Choose from organic shapes (Blob, Cirkels, Ring, Boog), patterns (Stippen, Raster, Golven, Confetti), and botanical motifs (Blad, Bloem, Rank).
+- **Inset card**: Float the section as a rounded, lifted card on the page background instead of a full-width band.
+- **Shadows and borders**: Four shadow strengths and border options (top, bottom, both, or all around).
+- **Bottom divider**: An organic shape at the section's bottom edge (Golf, Boog, or Schuin) that flows into the next section instead of a hard horizontal cut. Dividers are decorative and invisible to screen readers.
+
+### Per-device layout
+
+The layout panel gives every section separate mobile controls:
+
+- **Mobile padding**: Override the top and bottom padding for small screens, so a spacious desktop section does not tower over phone visitors.
+- **Hide per device**: Hide a section on mobile, tablet, or desktop independently. Build a mobile-only banner or a desktop-only showcase without duplicate pages.
 
 ## Section animations
 
-Every section block has an **Animation** panel in the inspector. It lets you add motion that plays when the section enters the viewport, on page load, or on hover.
+Every section has an **Animation** panel in the inspector.
 
 ### Animation types
 
 | Type | Effect |
 |---|---|
-| **Fade up** | Section fades in while sliding up from 1rem below. |
-| **Fade in** | Section fades in from transparent. |
-| **Slide right** | Section fades in while sliding left by 2rem. |
-| **Reveal** | Section reveals from right to left using a clip mask. |
-| **Stagger** | Children fade up one after another in 80ms steps instead of the section itself moving. |
-
-### Triggers
-
-How the animation starts:
-
-- **In-view** (default): Animation fires when the section scrolls into the viewport. Uses the browser's IntersectionObserver. Once a section has animated in it stays visible.
-- **Load**: Animation fires immediately when the page mounts.
-- **Hover**: Animation fires on mouseenter and reverses on mouseleave.
+| **Fade omhoog** | Fades in while sliding up. |
+| **Fade in** | Fades in from transparent. |
+| **Schuif van rechts** | Fades in while sliding in from the right. |
+| **Inzoomen** | Scales in from slightly smaller. |
+| **Uitvouwen (horizontaal)** | Reveals from a horizontal line outward. |
+| **Stagger** | Children appear one after another. |
+| **Cascade (hero)** | A layered entrance designed for hero sections. |
+| **Mask reveal** | Reveals using a clip mask. |
 
 ### Controls
 
-- **Duration**: How long the animation takes, in milliseconds. Default is 700ms.
-- **Delay**: Wait time before the animation starts, in milliseconds. Default is 0ms.
-- **Easing**: The acceleration curve. Options are **ease-out** (default), **linear**, and **spring**.
-- **Stagger children**: When enabled, the section stays at its resting state and its direct children animate in sequentially. This modifier works on top of any animation type (fade-up + stagger children, fade-in + stagger children, etc.). The section root animation is suppressed so the children carry the motion alone.
+- **Trigger**: When the animation starts: when the section scrolls into view (default), immediately on page load, or on hover.
+- **Snelheid** (speed): Animation duration in milliseconds; default 600ms.
+- **Vertraging** (delay): Wait time before the animation starts.
+- **Easing**: The acceleration curve: **Soepel**, **Vloeiend**, **Gelijkmatig**, or **Lineair**.
+- **Stagger**: When enabled, the section's direct children animate in sequence on top of any animation type.
 
-### Motion reduction
+Visitors with reduced motion enabled at the OS level see every section in its final state immediately; no animations play.
 
-Visitors who have `prefers-reduced-motion: reduce` enabled at the OS level see every section in its final resting state immediately. No animations play. Workspace-level motion tokens can also force reduced motion on a per-site basis. When reduced motion is active the section never receives the hidden start-state class, so the server-rendered HTML is accessible before any JavaScript runs.
+## Styling your site: the Stijl tab
 
-## Section dividers
+The **Stijl** screen controls the look of your entire site through nine sub-tabs: **Kleuren**, **Merk**, **Typografie**, **Knoppen & vormen**, **Navbar**, **Ruimte & layout**, **Animaties**, **Blokken-bibliotheek**, and **Eigen code**. Changes save automatically and apply to all pages.
 
-Each section block has a **Bottom divider** setting in the inspector's style panel. It adds an SVG shape at the section's bottom edge that overflows into the next section, creating an organic visual transition instead of a hard horizontal cut. The divider draws the current section's background color, so it works best between adjacent sections that have different solid backgrounds.
+### Kleuren (colors)
 
-### Divider types
+- **Design gallery**: The **Ontwerpen** section shows 18 complete themes, each with a visual preview card: Editorial, Studio, Tech, Atelier, Bold, Calm, Mono, Vivid, Kust, Luxe, Bloei, Fris, Brut, Zacht, Magazine, Pop, Redactioneel, and Warm vakwerk. One click applies the theme's colors, fonts, and spacing while your own text, photos, logo, and buttons stay untouched.
+- **Save your own themes**: Under **Mijn thema's**, save your current look with a name and re-apply it later with one click. Saved themes get the same visual preview cards as the built-in gallery.
+- **Color tokens**: Every color is a token (brand, accent, paper, ink, surface, and more); everything on the site that uses a token changes with it. Palette presets give quick starting combinations.
+- **Readability check**: The editor warns when a text and background combination has too little contrast to read comfortably, and confirms when all combinations pass. It never blocks saving or publishing.
+- **Dark mode**: Choose **Uit** (no dark mode), **Knop** (visitors get a sun/moon toggle, their choice is remembered), or **Volg systeem** (the site follows the visitor's OS preference). When dark mode is on, a paired dark palette appears; colors you leave empty inherit a sensible default.
 
-| Type | Effect |
-|---|---|
-| **Wave** | A smooth S-curve along the bottom edge. |
-| **Curve** | A concave bowl: the next section intrudes upward in the middle. |
-| **Slant** | A right-rising diagonal cut from left to right. |
-| **None** | No divider. Sections meet at a flat horizontal edge (default). |
+### Merk (brand)
 
-### How it works
+Upload your logo for light backgrounds, an optional variant for dark backgrounds, and a favicon (the small icon in the browser tab; square, preferably 512x512 PNG). Without a favicon, the site falls back to your logo, then your business profile picture.
 
-- The divider SVG sits entirely below the section, in the next section's space. It does not overlap the current section's content.
-- The filled portion of the path draws the current section's background extending downward. The transparent area below the shape lets the next section show through.
-- The divider preserves the section's background color automatically, including custom hex values and CSS variable tokens.
-- Dividers are decorative (`aria-hidden="true"`) and do not affect keyboard or screen-reader navigation.
+### Typografie
 
-## Styling your site
+Choose heading, body, and mono fonts from the built-in font library of around 18 typefaces across serif, sans-serif, script, and mono categories, including Inter, DM Sans, Fraunces, Playfair Display, Space Grotesk, Lora, and handwritten faces like Caveat. Fonts load fast and render identically in the editor preview and on your live domain.
 
-In the **Style** tab, you control the look and feel of your entire site:
+### Knoppen & vormen (buttons and shapes)
 
-- **Presets**: One-click starting points that set colors, fonts, and spacing in one go. Eight presets are available: **Editorial** (navy and gold, serif headlines), **Studio** (warm cream with terracotta), **Tech** (sharp slate with electric blue), **Atelier** (bone-white with deep green), **Bold** (high-contrast black with a bright accent), **Calm** (sage green and soft white), **Mono** (architectural minimalism, no accent color), and **Vivid** (cobalt and coral on cool white). Applying a preset merges the tokens into your workspace, preserving your logo, custom CSS, and head snippets.
-- **Colors**: Pick brand, accent, paper, ink, surface, and muted colors. The palette is applied through CSS custom properties.
-- **Dark mode**: Choose how your site handles dark mode. Three options: **Off** (no dark mode, site stays in its light palette), **Button** (visitors see a sun/moon toggle in the navigation bar and can switch themes, with their choice saved locally), or **System** (the site follows the visitor's OS-level preference automatically via a live media-query listener). When dark mode is on, a paired dark palette appears where you can set night-optimized versions of each color. If you leave the dark palette empty, the site applies a sensible default inversion that keeps your brand and accent colors intact.
-- **Typography**: Choose heading, body, and mono fonts from the built-in font library (Geist, Inter, DM Sans, DM Serif Display, Fraunces, Instrument Serif, Geist Mono).
-- **Scale**: Set border radius, content density (compact, airy, generous), maximum content width, and vertical section spacing.
-- **Motion**: Enable reduced motion or choose a motion style (Off, Subtle fade, Slide up).
-- **Buttons**: Customize button border radius, padding, and hover effects.
-- **Navbar**: Set the layout (standard, centered, split), background style (solid, translucent blur, transparent), and CTA button appearance (filled, outline, text-only). The navbar settings apply to every page.
-- **Phone & call bar**: Add a clickable phone number to your navigation bar. When set, the phone number appears beside the CTA button on desktop and in the mobile navigation drawer. Enable the **Mobile call bar** toggle to pin a fixed "tap to call" button at the bottom of the screen on mobile devices, so visitors can reach you with one tap regardless of where they are on the page. The phone label defaults to "Call us" when left empty.
-- **Custom CSS**: Write your own CSS that gets injected into the site. Useful for fine-tuning or overriding defaults.
-- **Favicon**: Upload a favicon for your site. It is shown in browser tabs and bookmarks. If not set, the site falls back to your light logo, then your business profile picture.
-- **Head snippets**: Add analytics scripts (Plausible, Umami, Matomo) or font preconnects via the snippet picker.
+Set the corner radius and shape language of the site and customize the default button style, with a live sample that updates as you change options.
 
-Changes in the Style tab are saved automatically on edit and apply to all pages.
+### Navbar
+
+- **Layout and background**: Standard, centered, or split layout; solid, translucent blur, or transparent background; optional thin bottom line; sticky on scroll (default on).
+- **Nav buttons**: Add up to three buttons on the right side of the navigation, each with its own label, link, and style (**Effen** or **Ghost**). Use one as a single CTA or pair a quiet secondary button with a solid primary one.
+- **Phone and call bar**: Add a clickable phone number next to the buttons, and enable the **Mobile call bar** to pin a fixed tap-to-call button at the bottom of the screen on phones.
+- **Aankondigingsbalk** (announcement bar): A narrow bar above the navigation on every page, ideal for a promotion or notice. Set the text, an optional link, the color style, and whether visitors can dismiss it. A live mini-preview shows the result.
+- **Zwevende contactknop** (floating contact button): A fixed button in the bottom-right corner of every page that lets visitors reach you in one tap via WhatsApp, phone, or email. Fill in at least one channel.
+
+### Ruimte & layout (spacing)
+
+Set the global density, the maximum page width, and the vertical padding rhythm between sections.
+
+### Animaties
+
+Pick a site-wide motion style with animated preview cards: **Geen** (static), **Subtiel** (soft fade up), **Zacht** (fade only), **Zijwaarts** (slide in from the side), **Onthullen** (reveal left to right), or **Speels** (elements appear one by one). A checkbox keeps the site respecting visitors' reduced-motion preference (recommended). Per-section animations in the editor build on top of this.
+
+### Blokken-bibliotheek
+
+A visual reference of every block you can use in the editor, organized by group, so you can scan what is available before you build.
+
+### Eigen code (custom code)
+
+- **Custom CSS**: Write your own CSS to fine-tune or override anything. Imports and external URLs are not allowed; use uploaded media instead.
+- **Analytics snippets**: Free-form scripts are not supported; instead, toggle vetted snippets for Plausible, Umami, or Matomo, plus font preconnects.
+- **Cookiemelding** (cookie notice): Show a dismissible notice at the bottom of the site with your own text and a link to your privacy policy. Recommended as soon as you embed videos, maps, or other external content.
+
+## Navigation and footer
+
+The navigation editor arranges your site's header and footer:
+
+- Drag pages to reorder the top-level navigation. The home page is always first and locked.
+- Create dropdown groups to nest up to 8 items under a parent label.
+- Add external links that point outside your site.
+- Switch any item between a plain link and a button style (Knop effen or Knop ghost).
+- **Footer columns**: Build the footer as columns, each with a title and its own list of links, plus an optional legal line at the bottom.
+- The navbar style settings (brand name, nav buttons, phone, call bar, sticky) are also editable here, directly above the menu.
+
+Changes save automatically with a short debounce after you stop typing.
 
 ## Publishing
 
-The top bar shows how many unpublished changes exist. Publishing snapshots only the pages marked as Live. Pages in Concept stay hidden from the public site, even after you publish.
-
-When you are ready:
+The top bar shows how many unpublished changes exist. Publishing snapshots only the pages marked as Live; Concept pages stay hidden.
 
 1. Click **Publish** in the top bar.
-2. Your site is published to the public URL (your custom domain, workspace subdomain, or the fallback portal route).
+2. If any block still contains untouched placeholder text, a guard dialog lists them so example copy cannot ship live by accident.
+3. Your site is published to your public URL.
 
-Unpublished changes are tracked per page and per token. The publish button is disabled when there is nothing to publish. Toggling a page between Live and Concept is an immediate save that registers as an unpublished change, so the Publish button lights up the moment you toggle.
-
-## Navigation
-
-The navigation editor lets you arrange your site's header links and control how the navigation bar looks across your entire site:
-
-- Drag pages to reorder the top-level navigation.
-- Create dropdown groups to nest pages under a parent label.
-- Add external links that point outside your site.
-- The logo in the header is clickable and always links back to the home page.
-- The home page is always first and locked in position.
-
-Above the main navigation menu, a **Navbar** panel gives you direct access to the header styling settings that were previously only available in the Style tab. You can set:
-
-- **Brand name**: Text shown in the header when no logo image is uploaded (leave empty to use the logo from Branding).
-- **CTA button**: The label and destination link for the call-to-action button in the top-right corner. Both fields must be filled for the button to appear.
-- **Phone number**: A clickable `tel:` link that appears next to the CTA button on desktop and in the mobile navigation drawer. Leaving it empty hides the call button.
-- **Phone label**: The text shown next to the phone icon on mobile (defaults to the locale-native equivalent of "Call us" when left empty).
-- **Mobile call bar**: When enabled, a fixed "tap to call" button stays pinned at the bottom of the screen on mobile devices.
-- **Sticky navbar**: When enabled (default on), the navigation bar stays visible as the visitor scrolls down the page.
-
-These settings apply to every page on your site, the same way they do in the Style tab. Changes save automatically with a short debounce after you stop typing. For the visual layout, background style, and button appearance controls, see the [Style tab](#styling-your-site).
+A **Revert** action discards unpublished changes and returns the draft to the last published state, after a confirmation. Scheduled pages go live automatically at their set time.
 
 ## Public URL
 
@@ -318,34 +299,39 @@ Your website is served at the highest-priority URL available:
 2. Your workspace subdomain (e.g. `https://acme.mycompanydesk.com`)
 3. The fallback portal route (`/portal/{slug}`)
 
-See [Domains, Website and Inbox](/features/domains-website-inbox) for domain setup and verification.
+One website, one URL: as soon as a custom domain is active, the workspace subdomain steps aside automatically (and comes back if you later remove the domain). Domains are managed under **Settings > Domains**. See [Domains, Website and Inbox](/features/domains-website-inbox) for setup and verification.
 
 ## Contact form
 
-The contact form block (`form` section type) is a live submit handler. When a visitor fills in the fields you configured (name, email, phone, company, message) and hits send, the platform creates a quote request and notifies your workspace. The form shows a success banner on completion and an inline error if something goes wrong. All inputs are disabled during submit to prevent double sends.
+The contact form block is a live submit handler. You choose which fields it shows: **Naam**, **E-mail**, **Telefoon**, **Bedrijf**, **Dienst** (a picker of your services), and **Bericht**. Only the fields you enable are submitted, so hiding a field never breaks the form.
 
 What happens on submit:
 
-1. Only the fields the block actually renders are sent, so hiding the name input does not break the backend.
-2. The platform creates a quote request under the company tied to the site slug.
-3. You receive a workspace notification (same path as the legacy `/portal/quote-request` route).
-4. The request appears in **Quotes > Requests**.
-5. The visitor sees a customizable success message.
+1. The platform creates a quote request under your company, with the selected service stored on the lead.
+2. You receive a workspace notification, and the request appears in **Quotes > Requests**.
+3. The visitor sees your customizable success message, or is forwarded to a page you choose (e.g. `/bedankt`).
 
-Contact-form submissions are rate-limited to 5 per minute per IP address. A Cloudflare Turnstile widget also appears before submit when configured on your workspace, blocking automated bot submissions without slowing real visitors down.
+Extra delivery options per form:
+
+- **Extra email recipients**: Add addresses that receive a copy of every submission, one per line.
+- **Webhook**: Send every submission as JSON to an https URL of your choice (e.g. Zapier or Make).
+
+Contact-form submissions are rate-limited to 5 per minute per IP address, and a bot-protection widget appears before submit when configured on your workspace.
 
 ## Newsletter signup
 
-The newsletter block (`newsletter` section type) captures email signups from your published site. The backend uses a double opt-in flow: after submit, the visitor receives a confirmation email and must click the link to activate their subscription. Suppressed addresses and already-active subscribers are treated the same as new signups from the form's perspective (no data leakage).
+The newsletter block captures email signups from your published site with a double opt-in flow: after submitting, the visitor receives a confirmation email and must click the link to activate the subscription. The visitor always sees a success banner, so subscription state stays private. Once confirmed, the subscriber appears in your newsletter audience. Newsletter submissions share the contact form's rate limit and bot protection.
 
-What happens on submit:
+## Pricing tiers with buy buttons
 
-1. The platform stores the subscription with `source: "site_form"`.
-2. If the address is not already active and not suppressed, a double opt-in email is sent.
-3. The visitor sees a success banner regardless, keeping the subscription state private.
-4. Once confirmed, the subscriber appears in the newsletter audience for that workspace.
+The pricing section lists your plans or packages. Each tier can optionally include a buy button:
 
-Newsletter submissions share the same rate limit as the contact form: 5 per minute per IP address. The Turnstile bot-protection widget is also active on newsletter forms when configured.
+- Set a tier as **purchasable** and provide the amount in cents (e.g. 4999 for EUR 49.99).
+- A **Buy now** button replaces the static CTA link. Visitors go through the MyCompanyDesk checkout, which redirects to Mollie or Stripe Connect for payment.
+- The button label defaults to "Koop nu" and can be customized per tier.
+- Tiers without buy buttons keep the regular CTA link.
+
+The **Product** block is a standalone single-item buy card for when a full pricing table is more than you need: one name, description, optional image, price, buy button, and an optional note line for delivery info. See [Sales](/features/domains-website-inbox#sales) for tracking payments and orders.
 
 ## Managing requests
 
@@ -353,15 +339,13 @@ See [Quotes - Quote Requests](/features/quotes#quote-requests) for details on ma
 
 ## Subscription requirement
 
-The public website (business page and site builder) is a paid feature. It is visible while your workspace is on a Starter or Pro plan. When a workspace lapses to Free, the site stays live for a 7-day grace period, then goes dark.
+The public website is a paid feature, visible while your workspace is on a Starter or Pro plan. When a workspace lapses to Free, the site stays live for a 7-day grace period, then goes dark.
 
 - **Paid or trialing**: The site is always visible.
-- **Lapsed to Free**: The site remains visible for 7 days after your access ends (based on trial end, cancellation date, or paid period end, whichever is most recent). After the grace window, the site returns a 404 page.
+- **Lapsed to Free**: The site remains visible for 7 days after your access ends, then returns a 404 page.
 - **Uncertain state**: If the system cannot determine when your paid access ended, the site stays up rather than risking an accidental takedown.
 
-This gate applies to all public serving paths: the business page, the service-detail route, and the site builder's rendered pages. It is checked on every request, before any caching layer, so it stays accurate even if your subscription changes mid-cache.
-
-Source: `apps/api/src/modules/billing/entitlement.service.js` — `PUBLIC_PAGE_GRACE_DAYS`, `computePublicPageGate`, `getPublicPageVisibility`.
+This gate applies to all public serving paths and is checked on every request, so it stays accurate even if your subscription changes.
 
 ## Related
 
