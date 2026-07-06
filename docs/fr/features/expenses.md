@@ -4,124 +4,112 @@ title: Dépenses
 
 # Dépenses
 
-Suivez toutes vos dépenses professionnelles, numérisez des reçus avec l'IA et catégorisez les coûts pour une comptabilité précise et la déclaration de TVA.
+Suivez vos dépenses professionnelles, numérisez vos reçus et laissez MyCompanyDesk gérer les valeurs de TVA par défaut et l'amortissement des achats plus importants.
 
 ## Vue d'ensemble
 
-La page des dépenses répertorie toutes vos dépenses enregistrées. Filtrez par :
+La page des dépenses répertorie chaque dépense enregistrée. Utilisez le champ de recherche et le menu de filtres pour affiner la liste par catégorie, statut de facturation (facturée ou non facturée) et plage de dates, et basculez entre les vues **Actives**, **Archive** et **Corbeille**. Les cartes au-dessus de la liste servent aussi de filtres rapides : cliquez sur la carte des dépenses impayées pour n'afficher que celles-ci, ou sur la carte des dépenses sans catégorie pour voir celles qui en attendent encore une. Des liens depuis la page TVA et la page des factures peuvent aussi ouvrir la liste préfiltrée, par exemple sur les dépenses sans reçu, sans montant de TVA, ou sur les coûts que vous pouvez encore facturer à un client. Chaque filtre appliqué apparaît sous forme de puce que vous retirez d'un clic.
 
-- **Catégorie** -- Bureau, déplacement, équipement, etc.
-- **Projet** -- Dépenses liées à des projets spécifiques
-- **Plage de dates** -- Filtrer par date de dépense
-- **Statut** -- Active ou archivée
+Les dépenses arrivées par votre [flux bancaire](/fr/features/bank) portent une petite icône banque, pour toujours les distinguer des saisies manuelles.
+
+Cliquez sur une dépense pour ouvrir sa page de détail, ou cliquez sur **Ajouter** pour en enregistrer une manuellement. La roue dentée en haut de la page ouvre les réglages des dépenses.
+
+## Catégories
+
+MyCompanyDesk est livré avec six catégories standard qui correspondent directement à la déclaration fiscale néerlandaise :
+
+- **Algemene kosten**
+- **Kantoorkosten**
+- **Autokosten & reizen**
+- **Telefoon & internet**
+- **Representatiekosten**
+- **Inkoop & materiaal**
+
+Vous pouvez y ajouter vos propres catégories. Ouvrez la roue dentée sur la page des dépenses, allez dans **Catégories de dépenses** et lancez l'assistant de catégories : choisissez votre secteur et il vous propose un jeu adapté, affiné si vous le souhaitez par une courte description de votre activité.
+
+Chaque catégorie porte ses propres valeurs par défaut : un traitement de TVA, un pourcentage déductible pour les coûts partiellement déductibles, un taux de TVA suggéré et, en option, un marquage automatique en investissement avec une durée d'amortissement par défaut. Ces valeurs remplissent le formulaire dès que vous choisissez la catégorie. Vous pouvez modifier ou archiver les catégories à tout moment ; les six catégories standard peuvent être renommées mais pas supprimées.
 
 ## Créer une dépense
 
 ### Saisie manuelle
 
-1. Allez dans **Dépenses > Nouvelle dépense**
-2. Remplissez :
-   - **Description** -- L'objet de la dépense
-   - **Montant** -- Coût total (TTC ou HT)
-   - **Date** -- Date de la dépense
-   - **Catégorie** -- Sélectionnez parmi les catégories prédéfinies. Si vous avez défini une catégorie de dépense par défaut dans les paramètres de l'espace de travail, elle est déjà pré-remplie ici.
-   - **Taux de TVA** -- Pre-rempli avec le taux de TVA par defaut pour les depenses de votre espace de travail (configurable dans les parametres de l'espace de travail). Vous pouvez toujours le modifier par depense.
-   - **Mode de paiement** -- Pre-rempli avec le mode de paiement par defaut pour les depenses de votre espace de travail, s'il est defini.
-3. Joignez optionnellement une image ou un PDF de **reçu**
-4. Liez optionnellement à un **projet** ou un **client**
-5. Cliquez sur **Enregistrer**
+1. Allez dans **Dépenses** et cliquez sur **Ajouter**.
+2. Saisissez le nom du **fournisseur**. L'autocomplétion suggère les fournisseurs que vous avez déjà utilisés.
+3. Choisissez une **catégorie**. Son traitement de TVA, son taux de TVA suggéré et son pourcentage déductible sont remplis pour vous. Si vous avez défini une catégorie par défaut dans les réglages des dépenses, elle est présélectionnée.
+4. Renseignez la **description**, le **montant hors TVA**, le **taux de TVA** et la **date**. Le montant de TVA est calculé automatiquement ; vous pouvez aussi saisir le montant TTC et laisser le formulaire déduire le reste.
+5. Ajustez si besoin le **traitement de TVA**, liez un **client** ou un **projet**, et ajoutez une **référence**, des **notes** ou un autre **mode de paiement**.
+6. Cliquez sur **Enregistrer**.
 
-### Ajout rapide
+Le formulaire n'a pas de champ pour le reçu. Après l'enregistrement, la page de détail vous invite à y téléverser le reçu, en image ou en PDF.
 
-Utilisez le tiroir d'ajout rapide pour une saisie rapide de dépenses :
+### Générer à partir du fournisseur
 
-1. Cliquez sur le bouton d'ajout rapide dans la liste des dépenses
-2. Entrez le montant et la description
-3. Sélectionnez une catégorie rapide
-4. Enregistrez
+Une fois le nom du fournisseur saisi, le bouton **Générer** (icône étincelles, en haut à droite) suggère les champs restants : description, catégorie, traitement de TVA, montant et date. Vérifiez le résultat avant d'enregistrer ; c'est un coup de pouce, pas un pilote automatique.
 
 ### Depuis les transactions bancaires
 
-Lorsque votre [flux bancaire](/fr/features/bank) est connecté, les transactions sortantes catégorisées sont automatiquement converties en dépenses provisoires. Chaque dépense reçoit la contrepartie comme fournisseur, le montant absolu comme brut, le taux de TVA et le traitement par défaut de la catégorie, et la date comptable de la transaction. Les dépenses provisoires apparaissent d'abord dans la boîte de réception d'examen du flux bancaire, où vous pouvez les confirmer, les modifier ou les rejeter avant qu'elles n'entrent dans votre comptabilité. Voir [examiner les dépenses importées automatiquement](/fr/features/bank#examiner-les-depenses-importees-automatiquement) pour le workflow complet.
+Lorsque votre [flux bancaire](/fr/features/bank) est connecté, les transactions sortantes peuvent être transformées en dépenses. Chacune reprend la contrepartie comme fournisseur, le montant et la date comptable, et vous les vérifiez avant qu'elles n'entrent dans votre comptabilité. Voir [vérifier les dépenses importées automatiquement](/fr/features/bank#verifier-les-depenses-importees-automatiquement) pour le parcours complet.
 
 ### Numérisation de reçus
 
-Laissez l'IA extraire automatiquement les détails de vos reçus :
+Pour les reçus en image ou en PDF :
 
-1. Allez dans **Dépenses > Numériser un reçu**
-2. Téléchargez une image de reçu (JPEG, PNG, WebP) ou un PDF
-3. Choisissez le mode d'extraction :
-   - **Simple** -- Une dépense à partir du reçu
-   - **Multiple** -- Plusieurs lignes à partir d'un seul reçu
-4. Vérifiez les données extraites (date, montant, fournisseur, description)
-5. Confirmez pour créer la ou les dépenses
+1. Allez dans **Dépenses > Numériser un reçu**.
+2. Téléversez un fichier JPEG, PNG, WebP ou PDF.
+3. Vérifiez le fournisseur, la date, le montant, la TVA et la catégorie extraits.
+4. Confirmez pour créer la ou les dépenses.
 
-::: info
-La numerisation de recus necessite le plan **Pro** ou superieur. Le taux de TVA d'une nouvelle depense commence par votre reglage d'espace de travail par defaut.
-:::
+Sous les **réglages avancés**, vous pouvez choisir entre **Total unique** (une seule dépense pour tout le reçu) et **Plusieurs lignes** (découper le document en dépenses séparées), limiter un PDF à certaines pages, et joindre le fichier numérisé comme reçu à chaque dépense créée.
 
-## Catégories de dépenses
+La numérisation de reçus est disponible sur tous les plans, avec un quota mensuel par plan : 3 numérisations sur Free, 30 sur Starter et 200 sur Pro.
 
-MyCompanyDesk propose des catégories prédéfinies avec des icônes pour une sélection rapide :
+## Traitement de TVA
 
-- Fournitures de bureau
-- Déplacements et transports
-- Restauration et boissons
-- Logiciels et abonnements
-- Équipement
-- Services professionnels
-- Marketing et publicité
-- Assurance
-- Loyer et charges
-- Et bien d'autres...
+Chaque dépense a un traitement de TVA qui détermine comment elle apparaît sur votre déclaration de TVA :
 
-Les catégories aident à organiser vos dépenses et sont utilisées dans les rapports pour les ventilations de coûts.
+| Traitement | Signification |
+|---|---|
+| **Standard** | Le fournisseur facture la TVA néerlandaise. C'est le réglage par défaut. |
+| **Autoliquidation** | La TVA est reportée sur vous (verleggingsregeling), typique des achats B2B au sein de l'UE. Le fournisseur facture à 0 % et vous déclarez la TVA vous-même. |
+| **Exonéré** | L'achat est exonéré de TVA : rien à déduire. |
+| **TVA étrangère facturée** | Un fournisseur étranger vous a facturé sa TVA locale. Elle n'est pas déductible sur votre déclaration néerlandaise. |
 
-## Gestion de la TVA
+Le traitement est hérité de la catégorie. Modifiez-le sur la dépense elle-même quand la réalité diffère, par exemple un achat de logiciel auprès d'un fournisseur américain qui a facturé de la TVA au lieu d'appliquer l'autoliquidation habituelle.
 
-Chaque dépense peut avoir son propre taux de TVA. Options courantes :
+## Investissements et amortissement
 
-- **21 %** -- Taux normal
-- **9 %** -- Taux réduit
-- **0 %** -- Taux zéro ou exonéré
+Les achats plus importants (un ordinateur portable, des machines, du mobilier) ne sont généralement pas comptabilisés en charge en une fois mais amortis sur plusieurs années. MyCompanyDesk gère cela par dépense :
 
-Le montant de TVA est calculé automatiquement et inclus dans vos [rapports de TVA](/fr/features/vat).
+- Le formulaire comporte un interrupteur **Investissement (amortir)**. Activez-le pour comptabiliser la dépense en investissement.
+- À partir de 450 euros hors TVA, le formulaire vous le suggère de lui-même, avec un bouton **Comptabiliser en investissement** en un clic. Les catégories peuvent aussi marquer les investissements automatiquement.
+- Choisissez la durée d'amortissement dans le champ **Amortir sur (années)**, de 1 à 10 ans. Ce choix prime sur la valeur par défaut de la catégorie ; si la catégorie n'en a pas, 5 ans est utilisé.
+- Un aperçu en direct montre approximativement le montant de l'amortissement mensuel.
+
+Vous récupérez la TVA en totalité dans le trimestre de l'achat ; seul le montant hors TVA est étalé sur la durée choisie. Les lignes d'amortissement mensuelles alimentent automatiquement vos rapports. Si vous modifiez plus tard le montant, la date ou la durée, l'échéancier est recalculé.
 
 ## Lier les dépenses
 
 Liez les dépenses à :
 
-- **Projets** -- Suivez précisément les coûts par projet
-- **Clients** -- Associez les coûts à des clients spécifiques
-- **Fournisseurs** -- Enregistrez à qui vous avez payé
+- des **projets** pour suivre les coûts par projet ;
+- des **clients** pour associer des achats à un client, par exemple des coûts que vous voulez refacturer ;
+- des **fournisseurs** sous forme de nom libre ; les fournisseurs déjà utilisés ressortent dans l'autocomplétion.
 
 ## Actions groupées
 
-Sélectionnez plusieurs dépenses pour :
-
-- **Catégoriser** -- Changer la catégorie en masse
-- **Archiver** -- Déplacer vers les archives
-- **Supprimer** -- Supprimer définitivement
-- **Exporter** -- Télécharger au format CSV
+Sélectionnez plusieurs dépenses pour les traiter en une fois. Dans la liste active, vous pouvez choisir **Marquer comme payées** (quand toutes les dépenses sélectionnées sont impayées), **Archiver** ou **Supprimer**. La vue Archive propose la restauration vers les actives ou le déplacement vers la corbeille ; la vue Corbeille propose la restauration vers l'archive ou la suppression définitive.
 
 ## Dépenses récurrentes
 
-Pour les coûts réguliers (loyer, abonnements, etc.), configurez des [dépenses récurrentes](/fr/features/recurring-expenses) pour automatiser la création.
+Pour les coûts prévisibles (loyer, abonnements, hébergement), configurez des [dépenses récurrentes](/fr/features/recurring-expenses) qui créent les enregistrements au rythme voulu.
 
 ## Import
 
-Importez des dépenses depuis un fichier CSV :
-
-1. Allez dans **Profil > Import**
-2. Sélectionnez **Dépenses** comme type de données
-3. Téléchargez votre fichier CSV
-4. Faites correspondre les colonnes aux champs
-5. Vérifiez et confirmez
+Importez vos dépenses historiques depuis un CSV via **Profil > Import**. Faites correspondre vos colonnes aux champs de dépense, vérifiez l'aperçu et confirmez.
 
 ## Conseils
 
-- Definissez votre taux de TVA, votre categorie de depense et votre mode de paiement par defaut dans **Parametres de l'espace de travail** pour que le formulaire ne commence pas toujours avec des champs vides. Un reglage a 0 % pour la TVA fonctionne correctement; le formulaire le traite comme un choix intentionnel.
-- Activez les [suggestions IA](/fr/advanced/ai-features) pour des recommandations automatiques de catégories
-- Joignez toujours les reçus -- ils sont essentiels pour les contrôles fiscaux
-- Utilisez les projets pour suivre le ratio dépenses/revenus
-- Consultez le [rapport de dépenses](/fr/features/reports) pour les ventilations de coûts
+- Choisissez d'abord la bonne catégorie : le traitement de TVA, le pourcentage déductible et le marquage en investissement en découlent tous.
+- Définissez votre catégorie et votre mode de paiement par défaut via la roue dentée sur la page des dépenses, et votre taux de TVA habituel sous **Réglages > BTW**, pour que le formulaire démarre prérempli.
+- Si vous corrigez le traitement de TVA sur chaque dépense d'une catégorie, modifiez plutôt la valeur par défaut de la catégorie.
+- Joignez toujours les reçus. Les contrôles préalables de la [page TVA](/fr/features/vat) signalent les reçus manquants avant votre déclaration.
