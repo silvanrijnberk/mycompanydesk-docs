@@ -1,5 +1,5 @@
 ---
-title: Invoice status
+title: "Rechnungsstatus"
 last_verified: 2026-05-09
 chatbot:
   triggers: ["invoice status", "invoice statuses", "what do invoice statuses mean", "draft sent paid", "invoice lifecycle", "factuurstatus", "factuur statussen", "rechnungsstatus", "statut facture"]

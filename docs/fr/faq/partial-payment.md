@@ -1,5 +1,5 @@
 ---
-title: "Partial payment"
+title: "Paiement partiel"
 last_verified: 2026-05-09
 chatbot:
   triggers: ["partial payment", "record partial payment", "half payment", "part payment", "deposit received", "gedeeltelijke betaling", "deelbetaling", "aanbetaling ontvangen", "teilzahlung", "paiement partiel", "acompte recu"]

@@ -1,5 +1,5 @@
 ---
-title: "Convert a quote to an invoice"
+title: "Angebot in Rechnung umwandeln"
 last_verified: 2026-05-09
 chatbot:
   triggers:

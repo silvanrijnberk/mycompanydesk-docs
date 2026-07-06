@@ -1,5 +1,5 @@
 ---
-title: Invoice notes
+title: "Notizen auf einer Rechnung"
 last_verified: 2026-05-09
 chatbot:
   triggers: ["invoice notes", "add note", "invoice memo", "add comment", "internal note", "factuur notitie", "opmerking toevoegen", "rechnungsnotiz", "note de facture", "ajouter remarque"]

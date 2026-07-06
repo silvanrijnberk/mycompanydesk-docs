@@ -1,5 +1,5 @@
 ---
-title: "Delete an invoice"
+title: "Rechnung löschen"
 last_verified: 2026-05-09
 chatbot:
   triggers:

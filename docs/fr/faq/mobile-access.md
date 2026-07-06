@@ -1,5 +1,5 @@
 ---
-title: Mobile access
+title: "Accès mobile"
 last_verified: 2026-07-02
 chatbot:
   triggers: ["mobile", "phone", "tablet", "mobile app", "responsive", "on the go", "app store", "google play", "ios app", "android app", "mobiel", "telefoon", "mobil", "handy", "acces mobile", "telephone", "smartphone"]

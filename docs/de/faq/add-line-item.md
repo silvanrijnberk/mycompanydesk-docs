@@ -1,5 +1,5 @@
 ---
-title: Add line item
+title: "Position hinzufügen"
 last_verified: 2026-05-09
 chatbot:
   triggers: ["add line item", "edit line item", "remove line item", "invoice line", "add row", "new line", "factuurregel toevoegen", "regel bewerken", "rechnungsposition", "ligne de facture", "ajouter ligne"]

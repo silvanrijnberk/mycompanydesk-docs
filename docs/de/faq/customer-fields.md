@@ -1,5 +1,5 @@
 ---
-title: "Customer fields"
+title: "Kundenfelder"
 last_verified: 2026-05-09
 chatbot:
   triggers:

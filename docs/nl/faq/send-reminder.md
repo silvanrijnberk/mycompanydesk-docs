@@ -1,5 +1,5 @@
 ---
-title: Send reminder
+title: "Herinnering versturen"
 last_verified: 2026-05-09
 chatbot:
   triggers: ["send reminder", "payment reminder", "remind customer", "follow up", "chase payment", "herinnering sturen", "betaalherinnering", "aanmaning", "zahlungserinnerung", "relance", "rappel paiement"]

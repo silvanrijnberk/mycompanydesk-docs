@@ -1,5 +1,5 @@
 ---
-title: Overdue invoices
+title: "Überfällige Rechnungen"
 last_verified: 2026-05-09
 chatbot:
   triggers: ["overdue invoices", "late invoices", "unpaid invoices", "outstanding invoices", "invoices not paid", "achterstallige facturen", "onbetaalde facturen", "uberfaellige rechnungen", "factures impayees"]

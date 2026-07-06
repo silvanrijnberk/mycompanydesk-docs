@@ -1,5 +1,5 @@
 ---
-title: Edit an expense
+title: "Ausgabe bearbeiten"
 last_verified: 2026-05-09
 chatbot:
   triggers: ["edit expense", "change expense", "modify expense", "update expense", "correct expense", "uitgave bewerken", "uitgave wijzigen", "ausgabe bearbeiten", "modifier depense"]

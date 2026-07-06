@@ -1,5 +1,5 @@
 ---
-title: "Convert a quote to an invoice"
+title: "Offerte omzetten naar factuur"
 last_verified: 2026-05-09
 chatbot:
   triggers:

@@ -1,5 +1,5 @@
 ---
-title: "Automatic recurring expenses"
+title: "Automatisch terugkerende uitgaven"
 last_verified: 2026-05-09
 chatbot:
   triggers:

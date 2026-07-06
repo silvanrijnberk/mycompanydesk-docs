@@ -1,5 +1,5 @@
 ---
-title: "Find page"
+title: "Trouver une page"
 last_verified: 2026-05-09
 chatbot:
   triggers: ["where is", "find page", "navigate to", "how to get to", "menu location", "waar vind ik", "waar is", "wo finde ich", "ou trouver"]

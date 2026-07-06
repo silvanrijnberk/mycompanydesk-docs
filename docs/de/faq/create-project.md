@@ -1,5 +1,5 @@
 ---
-title: "Create a project"
+title: "Projekt erstellen"
 last_verified: 2026-05-09
 chatbot:
   triggers:

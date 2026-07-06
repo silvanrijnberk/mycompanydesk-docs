@@ -1,5 +1,5 @@
 ---
-title: "Send an invoice by email"
+title: "Envoyer une facture par e-mail"
 last_verified: 2026-05-09
 chatbot:
   triggers:

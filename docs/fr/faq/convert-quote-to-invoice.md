@@ -1,5 +1,5 @@
 ---
-title: "Convert a quote to an invoice"
+title: "Convertir un devis en facture"
 last_verified: 2026-05-09
 chatbot:
   triggers:

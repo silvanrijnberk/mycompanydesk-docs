@@ -1,5 +1,5 @@
 ---
-title: "Edit a recurring invoice"
+title: "Wiederkehrende Rechnung bearbeiten"
 last_verified: 2026-05-09
 chatbot:
   triggers:

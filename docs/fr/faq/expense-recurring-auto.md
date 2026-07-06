@@ -1,5 +1,5 @@
 ---
-title: "Automatic recurring expenses"
+title: "Dépenses récurrentes automatiques"
 last_verified: 2026-05-09
 chatbot:
   triggers:

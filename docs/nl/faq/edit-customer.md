@@ -1,5 +1,5 @@
 ---
-title: "Edit a customer"
+title: "Klant bewerken"
 last_verified: 2026-05-09
 chatbot:
   triggers:
