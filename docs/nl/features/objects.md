@@ -7,38 +7,52 @@ title: "Objecten & Activa"
 Houd huurwoningen, voertuigen, apparatuur en andere bedrijfsactiva bij met volledig levenscyclusbeheer.
 
 ::: info
-De objectenmodule is optioneel. Schakel deze in via **Bedrijf > Functies** als je hem niet in de navigatie ziet.
+De objectenmodule (Vastgoed) is een legacymodule. Werkruimtes die hem al gebruiken worden volledig ondersteund, maar in nieuwe werkruimtes kan de module niet meer worden ingeschakeld. Heeft jouw werkruimte hem wel, dan vind je de schakelaar onder **Instellingen > Onderdelen**.
 :::
 
 ## Overzicht
 
-De objectenmodule is ontworpen voor bedrijven die fysieke activa beheren — met name verhuurbedrijven, vastgoedbeheerders en apparatuurverhuurdiensten. Elk object vertegenwoordigt een activum dat je bezit of beheert.
+De objectenmodule is ontworpen voor bedrijven die fysieke activa beheren, met name verhuurbedrijven, vastgoedbeheerders en apparatuurverhuurdiensten. Elk object vertegenwoordigt een activum dat je bezit of beheert.
 
 ## Objecttypen
 
 | Type | Toepassing |
 |---|---|
-| **Vastgoed** | Huurappartementen, kantoren, commerciele ruimten |
+| **Pand / Garage** | Woningen, garages, opslagboxen |
+| **Appartement** | Huurappartementen |
+| **Kantoor** | Kantoorruimten |
+| **Retail** | Winkels en commerciële ruimten |
 | **Voertuig** | Auto's, vrachtwagens, bestelbussen, bouwvoertuigen |
-| **Machine** | Industriele apparatuur, gereedschap, generatoren |
+| **Machine** | Industriële apparatuur, generatoren |
+| **Apparatuur** | Gereedschap en apparaten |
+| **Meubilair** | Meubels die je verhuurt |
+| **Elektronica** | Computers, AV-apparatuur |
 | **Overig** | Elk ander type activum |
 
 ## Objectstatussen
 
 | Status | Beschrijving |
 |---|---|
+| **Actief** | In gebruik |
 | **Beschikbaar** | Klaar om verhuurd of gebruikt te worden |
-| **Verhuurd** | Momenteel verhuurd aan een klant |
-| **Inactief** | Niet beschikbaar (onderhoud, buiten gebruik) |
+| **Bezet** | Momenteel verhuurd aan of in gebruik door een klant |
+| **Onderhoud** | Tijdelijk buiten gebruik |
+| **Inactief** | Niet beschikbaar |
+| **Verkocht** | Niet meer van jou; bewaard voor de administratie |
+| **Afgestoten** | Afgeschreven of weggedaan |
+
+De lijst biedt ook een **Verhuurd**-filter dat alles toont wat momenteel bezet is.
 
 ## Een object aanmaken
 
 1. Ga naar **Objecten > Nieuw object**
 2. Vul in:
-   - **Naam** — Een duidelijke identificatie (bijv. "Appartement 3B" of "Graafmachine CAT 320")
-   - **Type** — Vastgoed, Voertuig, Machine of Overig
-   - **Status** — Beschikbaar, Verhuurd of Inactief
-   - **Omschrijving** — Details over het activum
+   - **Naam**: een duidelijke identificatie (bijv. "Appartement 3B" of "Graafmachine CAT 320")
+   - **Type**: een van de tien typen hierboven
+   - **Status**: waar het object zich in zijn levenscyclus bevindt
+   - **Referentie**: je eigen referentie of code
+   - **Standaard huurprijs**: de gebruikelijke huur, per week, maand of jaar, met of zonder BTW
+   - **Omschrijving** en **adres**: details over het activum
 3. Klik op **Opslaan**
 
 ## Objectdetailpagina
@@ -47,9 +61,9 @@ De detailpagina toont:
 
 - Objectinformatie en type
 - Huidige status
-- **Totale omzet**: echte omzet op basis van betaalde facturen voor dit object, berekend via de financiele gegevens
+- **Totale omzet**: omzet op basis van betaalde facturen voor dit object
 - **Actieve contracten**: aantal actieve contracten dat aan dit object is gekoppeld
-- **WOZ-geschiedenis** (bij Vastgoed) — jaarlijkse WOZ-waarden die de Box 3-berekening gebruikt
+- **WOZ-geschiedenis** (bij woningen): jaarlijkse WOZ-waarden die de Box 3-berekening gebruikt
 - Gekoppelde contracten
 - Verhuurgeschiedenis
 - Bijbehorende facturen
@@ -62,9 +76,9 @@ Boven de contractenlijst geeft een samenvattingsbalk je in een oogopslag inzicht
 - **Getekende contracten**: hoeveel er volledig zijn ondertekend
 - **Maandelijks actief totaal**: de gecombineerde maandwaarde van alle actieve contracten, genormaliseerd uit contracten met verschillende frequenties (wekelijks, per kwartaal, jaarlijks)
 
-### WOZ-geschiedenis (Vastgoed-objecten)
+### WOZ-geschiedenis (woning-objecten)
 
-Bij objecten van het type **Vastgoed** bevat de detailpagina een WOZ-geschiedenissectie. WOZ-waarden (Waardering Onroerende Zaken) zijn de door de gemeente vastgestelde woningwaarden die worden gebruikt in de Nederlandse Box 3-belastingberekening.
+Bij objecten van het type **Pand / Garage** bevat de detailpagina een WOZ-geschiedenissectie. WOZ-waarden (Waardering Onroerende Zaken) zijn de door de gemeente vastgestelde woningwaarden die worden gebruikt in de Nederlandse Box 3-belastingberekening.
 
 - **Bekijk** jaarlijkse WOZ-waarden per jaar.
 - **Voeg** nieuwe waarden toe door het jaar en de WOZ-waarde van de gemeente in te vullen.
@@ -73,7 +87,7 @@ Bij objecten van het type **Vastgoed** bevat de detailpagina een WOZ-geschiedeni
 
 #### Kadaster-koppeling
 
-Wanneer je een Vastgoed-object met een geldig Nederlands adres toevoegt, kan MyCompanyDesk de WOZ-geschiedenis rechtstreeks uit het Kadaster ophalen. Dat scheelt handmatig invoeren en geeft je dezelfde waarden die de gemeente heeft geregistreerd.
+Wanneer je een woning-object met een geldig Nederlands adres toevoegt, kan MyCompanyDesk de WOZ-geschiedenis rechtstreeks uit het Kadaster ophalen. Dat scheelt handmatig invoeren en geeft je dezelfde waarden die de gemeente heeft geregistreerd.
 
 - **Automatisch ophalen**: als de WOZ-geschiedenis nog leeg is, haalt het systeem bij het openen van de detailpagina de beschikbare waarden uit het Kadaster op.
 - **Handmatig vernieuwen**: klik op **Vernieuwen** om op elk moment de nieuwste Kadaster-gegevens op te halen. Opgehaalde waarden krijgen een "Kadaster"-bronbadge.
@@ -85,12 +99,12 @@ Bij woningen waarvan een WOZ-geschiedenis uit het Kadaster is opgehaald, project
 
 ### Ondertekenstatus van contracten
 
-Elke contractregel op de objectdetailpagina toont nu een ondertekenstatusbadge naast de actief/gepauzeerd-badge. De kleur volgt dezelfde indeling als op de contractdetailpagina:
+Elke contractregel op de objectdetailpagina toont een ondertekenstatusbadge naast de actief/gepauzeerd-badge. De kleur volgt dezelfde indeling als op de contractdetailpagina:
 
 - **Getekend** (groen): alle partijen hebben ondertekend
 - **Deels getekend** (blauw): sommige partijen hebben getekend, anderen nog niet
 - **Verzonden** (geel): de ondertekenuitnodiging is verstuurd, nog geen handtekeningen
-- **Verlopen** of **Beeindigd** (rood): het ondertekenverzoek is niet langer geldig
+- **Verlopen** of **Beëindigd** (rood): het ondertekenverzoek is niet langer geldig
 
 Volledig ondertekende contracten tonen een klein oogicoon waarmee je een inline preview van het ondertekende document opent. Zo kun je het afgeronde contract lezen zonder de objectdetailpagina te verlaten.
 
@@ -100,27 +114,26 @@ Legacycontracten die zijn aangemaakt voordat de e-signing-feature werd toegevoeg
 
 Objecten integreren met andere MyCompanyDesk-functies:
 
-- **Contracten** — Maak een huurcontract voor een object, met vermelding van de huurder (klant) en voorwaarden
-- **Facturen** — Facturen kunnen worden gemarkeerd als huurfacturen en gekoppeld aan objecten
-- **Terugkerende facturen** — Stel automatische maandelijkse huurfacturatie per object in
+- **Contracten**: maak een huurcontract voor een object, met vermelding van de huurder (klant) en voorwaarden
+- **Facturen**: facturen kunnen worden gemarkeerd als huurfacturen en gekoppeld aan objecten
+- **Terugkerende facturen**: stel automatische maandelijkse huurfacturatie per object in
 
 ## Filteren
 
 Filter je objecten op:
 
-- **Type** — Vastgoed, Voertuig, Machine, Overig
-- **Status** — Beschikbaar, Verhuurd, Inactief
-- **Zoeken** — Zoek op naam of omschrijving
+- **Type**: een van de tien objecttypen
+- **Status**: Beschikbaar, Verhuurd, Onderhoud, Actief, Verkocht, Afgestoten of Inactief
+- **Periode** en **zoeken**: zoek op naam of omschrijving
+- **Weergave**: wissel tussen Actief, Archief en Prullenbak
 
 ## Bulkacties
 
-- **Status wijzigen** — Werk beschikbaarheid in bulk bij
-- **Archiveren** — Verplaats naar archief
-- **Verwijderen** — Verwijder objecten
+Selecteer meerdere objecten om ze in één keer te **archiveren** of te **verwijderen**. In de archiefweergave kun je herstellen naar actief of naar de prullenbak verplaatsen; in de prullenbakweergave kun je herstellen naar het archief of definitief verwijderen.
 
 ## Tips
 
 - Gebruik het statusfilter om snel te zien welke objecten beschikbaar zijn voor verhuur
-- Koppel elke huurfactuur aan het bijbehorende object voor volledige financiele tracking per activum
+- Koppel elke huurfactuur aan het bijbehorende object voor volledige financiële tracking per activum
 - Stel contracten met herhaling in voor automatische huurfacturatie
 - Bekijk de objectstatistieken bovenaan de pagina voor een beschikbaarheidsoverzicht

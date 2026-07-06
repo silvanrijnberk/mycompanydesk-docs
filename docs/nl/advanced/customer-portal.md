@@ -10,10 +10,10 @@ Het klantportaal stelt je klanten in staat om facturen te bekijken en online te 
 
 Wanneer je een factuur verstuurt, wordt een unieke **betaallink** gegenereerd. Wanneer je klant op deze link klikt, wordt deze naar het klantportaal gebracht waar ze kunnen:
 
-1. **De factuur bekijken** — Alle details, regelitems en totalen zien
-2. **De PDF downloaden** — Een kopie van de factuur krijgen
-3. **Online betalen** — De betaling voltooien via het portaal
-4. **Betaling bevestigen** — Een bankoverschrijving bevestigen
+1. **De factuur bekijken**: Alle details, regelitems en totalen zien
+2. **De PDF downloaden**: Een kopie van de factuur krijgen
+3. **Online betalen**: De betaling voltooien via het portaal
+4. **Betaling bevestigen**: Een bankoverschrijving bevestigen
 
 ## Portaalfuncties
 
@@ -34,7 +34,7 @@ Klanten kunnen direct via het portaal betalen. Als je Mollie of Stripe hebt geko
 
 #### Mollie-betalingsinstellingen
 
-Zodra Mollie is gekoppeld, krijg je een **Betaalknop op facturen**-schakelaar in je werkruimte onder **Geld → Betalingen → Online betalingen**. Zet hem aan om een Mollie-betaalknop op elke uitgaande factuur te tonen. Zet hem uit en de knop verdwijnt zonder Mollie te ontkoppelen.
+Zodra Mollie is gekoppeld, krijg je een **Betaalknop op facturen**-schakelaar onder **Instellingen > Betalen**, in de sectie **Online betalingen**. Zet hem aan om een Mollie-betaalknop op elke uitgaande factuur te tonen. Zet hem uit en de knop verdwijnt zonder Mollie te ontkoppelen.
 
 Onder de schakelaar staat een **Betaalmethoden**-sectie die elke betaalmethode toont die in je Mollie-dashboard actief is (iDEAL, Bancontact, creditcard, en meer). Standaard zien klanten alle methoden. Vink specifieke methoden aan om de selectie te beperken, alleen die verschijnen op je facturen. Haal alle vinkjes weg om terug te gaan naar "alles tonen."
 
@@ -42,7 +42,7 @@ Met de **Stuur testbetaling**-knop loop je een gratis €1-testcheckout door Mol
 
 #### Stripe-betalingsinstellingen
 
-Zodra Stripe is gekoppeld, krijg je een **Betaalknop op facturen**-schakelaar in je werkruimte onder **Geld → Betalingen → Online betalingen**. Zet hem aan om een Stripe-betaalknop op elke uitgaande factuur te tonen. Zet hem uit en de knop verdwijnt zonder Stripe te ontkoppelen. De schakelaar is pas beschikbaar nadat de Stripe-onboarding (KYC) is afgerond.
+Zodra Stripe is gekoppeld, krijg je een **Betaalknop op facturen**-schakelaar onder **Instellingen > Betalen**, in de sectie **Online betalingen**. Zet hem aan om een Stripe-betaalknop op elke uitgaande factuur te tonen. Zet hem uit en de knop verdwijnt zonder Stripe te ontkoppelen. De schakelaar is pas beschikbaar nadat de Stripe-onboarding (KYC) is afgerond.
 
 Onder de schakelaar staat een **Betaalmethoden**-sectie die elke ondersteunde betaalmethode toont, afgestemd op de capabilities van je Stripe-account (card, iDEAL, Bancontact, SEPA Direct Debit, PayPal, Klarna en Link by Stripe). Standaard kiest Stripe Checkout automatisch de juiste methode per klant. Vink specifieke methoden aan om te beperken wat klanten zien, alleen die verschijnen bij het afrekenen. Haal alle vinkjes weg om terug te gaan naar automatische selectie.
 
@@ -62,9 +62,9 @@ Dit creëert een professionele, consistente ervaring voor je klanten.
 
 Elke portaallink is:
 
-- **Uniek** — Gegenereerd per factuur
-- **Tokengebaseerd** — Beveiligd met een uniek toegangstoken
-- **Factuurspecifiek** — Toont alleen de specifieke factuur
+- **Uniek**: Gegenereerd per factuur
+- **Tokengebaseerd**: Beveiligd met een uniek toegangstoken
+- **Factuurspecifiek**: Toont alleen de specifieke factuur
 
 Klanten hebben geen MyCompanyDesk-account nodig om facturen te bekijken en te betalen.
 
@@ -82,6 +82,6 @@ Dit helpt je om klantbetrokkenheid te begrijpen en effectief op te volgen.
 ## Tips
 
 - Voeg een persoonlijke notitie toe aan je factuur-e-mail om portaalgebruik aan te moedigen
-- Het portaal werkt op alle apparaten — mobiel, tablet en desktop
+- Het portaal werkt op alle apparaten: mobiel, tablet en desktop
 - Betalingsbevestigingen worden naar zowel jou als de klant gestuurd
 - Bekijk de klantgebeurtenisgeschiedenis op de factuurdetailpagina om portaalinteracties te zien

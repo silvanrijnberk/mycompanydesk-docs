@@ -20,13 +20,15 @@ Wiederkehrende Rechnungen sind Vorlagen, die automatisch neue Rechnungen in fest
 
 1. Gehen Sie zu **Wiederkehrende Rechnungen > Neu**
 2. Füllen Sie die Vorlage aus:
-   - **Kunde** — Wem abgerechnet wird
-   - **Positionen** — Was abgerechnet wird (Beschreibungen, Beträge, USt.)
-   - **Häufigkeit** — Wie oft (wöchentlich, monatlich, vierteljährlich, jährlich)
-   - **Startdatum** — Wann die Generierung beginnen soll
+   - **Kunde**: Wem abgerechnet wird
+   - **Positionen**: Was abgerechnet wird (Beschreibungen, Beträge, USt.)
+   - **Häufigkeit**: Wie oft (wöchentlich, monatlich, vierteljährlich, jährlich)
+   - **Startdatum**: Wann die Generierung beginnen soll
 3. Klicken Sie auf **Speichern**
 
 Die wiederkehrende Rechnung wird im Status **Aktiv** erstellt und generiert ihre erste Rechnung am nächsten geplanten Datum.
+
+Die Option **E-Mail bei Erstellung automatisch senden** ist standardmäßig eingeschaltet: Jede generierte Rechnung wird sofort per E-Mail an den Kunden geschickt. Schalten Sie sie aus, wenn Sie jede Rechnung lieber selbst prüfen und versenden möchten.
 
 ## Häufigkeitsoptionen
 
@@ -45,7 +47,7 @@ Rechnungsgenerierung vorübergehend stoppen:
 
 1. Öffnen Sie die wiederkehrende Rechnung
 2. Klicken Sie auf **Pausieren**
-3. Der Status ändert sich zu **Pausiert** — es werden keine Rechnungen generiert
+3. Der Status ändert sich zu **Pausiert**: es werden keine Rechnungen generiert
 
 ### Fortsetzen
 
@@ -69,17 +71,12 @@ Jedes Mal, wenn eine wiederkehrende Rechnung ausgelöst wird, wird eine neue Rec
 
 - Sie verwendet die Positionen und den Kunden der Vorlage
 - Sie folgt Ihrer aktuellen Rechnungsnummerierung
-- Sie beginnt als **Entwurf** (überprüfen und versenden) oder wird automatisch versendet, falls konfiguriert
-- Jede generierte Rechnung ist unabhängig — Sie können sie bearbeiten, ohne die Vorlage zu beeinflussen
+- Sie wird automatisch per E-Mail versendet oder bleibt als **Entwurf** zum Prüfen und Versenden liegen, wenn Sie den automatischen Versand ausgeschaltet haben
+- Jede generierte Rechnung ist unabhängig: Sie können sie bearbeiten, ohne die Vorlage zu beeinflussen
 
 ## Verlauf anzeigen
 
 Die Detailseite der wiederkehrenden Rechnung zeigt alle zuvor generierten Rechnungen, sodass Sie den gesamten Abrechnungsverlauf verfolgen können.
-
-## Massenaktionen
-
-- **Pausieren / Fortsetzen** — Mehrere wiederkehrende Rechnungen umschalten
-- **Löschen** — Mehrere Vorlagen entfernen
 
 ## Tipps
 

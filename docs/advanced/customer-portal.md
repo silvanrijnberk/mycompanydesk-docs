@@ -10,10 +10,10 @@ The customer portal lets your clients view and pay invoices online through a sec
 
 When you send an invoice, a unique **payment link** is generated. When your customer clicks this link, they're taken to the customer portal where they can:
 
-1. **View the invoice** — See all details, line items, and totals
-2. **Download the PDF** — Get a copy of the invoice
-3. **Pay online** — Complete payment through the portal
-4. **Confirm payment** — Acknowledge a bank transfer
+1. **View the invoice**: See all details, line items, and totals
+2. **Download the PDF**: Get a copy of the invoice
+3. **Pay online**: Complete payment through the portal
+4. **Confirm payment**: Acknowledge a bank transfer
 
 ## Portal features
 
@@ -34,7 +34,7 @@ Customers can pay directly through the portal. If you have connected Mollie or S
 
 #### Mollie payment controls
 
-Once Mollie is connected, you get a **Betaalknop op facturen** toggle in your workspace under **Money → Payments → Online betalingen**. Turn it on to add a Mollie pay button to every outgoing invoice. Turn it off and the button disappears without disconnecting Mollie.
+Once Mollie is connected, you get a **Betaalknop op facturen** toggle under **Settings > Betalen**, in the **Online betalingen** section. Turn it on to add a Mollie pay button to every outgoing invoice. Turn it off and the button disappears without disconnecting Mollie.
 
 Below the toggle is a **Betaalmethoden** section listing every payment method enabled in your Mollie dashboard (iDEAL, Bancontact, credit card, and more). By default all methods are shown to customers. Tick specific methods to narrow the set, only those appear on your invoices. Clear all ticks to go back to "show everything."
 
@@ -42,7 +42,7 @@ A **Stuur testbetaling** button lets you walk a free €1 test checkout through 
 
 #### Stripe payment controls
 
-Once Stripe is connected, you get a **Betaalknop op facturen** toggle in your workspace under **Money → Payments → Online betalingen**. Turn it on to add a Stripe pay button to every outgoing invoice. Turn it off and the button disappears without disconnecting Stripe. The toggle is only available once Stripe onboarding (KYC) is complete.
+Once Stripe is connected, you get a **Betaalknop op facturen** toggle under **Settings > Betalen**, in the **Online betalingen** section. Turn it on to add a Stripe pay button to every outgoing invoice. Turn it off and the button disappears without disconnecting Stripe. The toggle is only available once Stripe onboarding (KYC) is complete.
 
 Below the toggle is a **Betaalmethoden** section listing every supported payment method cross-referenced with your Stripe account capabilities (card, iDEAL, Bancontact, SEPA Direct Debit, PayPal, Klarna, and Link by Stripe). By default Stripe Checkout automatically picks the right method per customer. Tick specific methods to limit what customers see, only those appear at checkout. Clear all ticks to return to automatic selection.
 
@@ -62,9 +62,9 @@ This creates a professional, consistent experience for your customers.
 
 Each portal link is:
 
-- **Unique** — Generated per invoice
-- **Token-based** — Secured with a unique access token
-- **Invoice-specific** — Only shows the specific invoice
+- **Unique**: Generated per invoice
+- **Token-based**: Secured with a unique access token
+- **Invoice-specific**: Only shows the specific invoice
 
 Customers don't need a MyCompanyDesk account to view and pay invoices.
 
@@ -82,6 +82,6 @@ This helps you understand customer engagement and follow up effectively.
 ## Tips
 
 - Include a personal note in your invoice email to encourage portal use
-- The portal works on all devices — mobile, tablet, and desktop
+- The portal works on all devices: mobile, tablet, and desktop
 - Payment confirmations are sent to both you and the customer
 - Check the customer event history on the invoice detail page to see portal interactions

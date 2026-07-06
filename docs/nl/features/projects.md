@@ -4,77 +4,69 @@ title: Projecten
 
 # Projecten
 
-Organiseer je werk in projecten om tijd, omzet en winstgevendheid per opdracht bij te houden.
+Organiseer je werk in projecten om inkomsten, kosten en resultaat per klus bij te houden.
 
 ## Overzicht
 
-Projecten helpen je facturen, uitgaven en tijdregistraties te groeperen. Dit geeft je een duidelijk beeld van hoe winstgevend elk project of elke klantopdracht is.
+Projecten bundelen facturen, uitgaven en tijdregistraties. Zo zie je in één oogopslag hoe elk project of elke klantopdracht er financieel voor staat.
+
+::: info
+De projectenmodule is optioneel. Zet hem aan via **Instellingen > Onderdelen** als je hem niet in de navigatie ziet.
+:::
 
 ## Een project aanmaken
 
-1. Ga naar **Projecten > Nieuw project**
+1. Ga naar **Projecten** en klik op de knop voor een nieuw project
 2. Vul in:
-   - **Naam** — Een duidelijke projectnaam
-   - **Klant** — De klant waarvoor dit project is
-   - **Omschrijving** — Waar het project over gaat
-   - **Budget** — Optioneel budgetbedrag
-   - **Status** — Actief, In de wacht of Voltooid
+   - **Naam**: Een duidelijke projectnaam
+   - **Klant**: De klant waarvoor dit project is
+   - **Status**: Gepland, Actief, Gepauzeerd, Afgerond of Geannuleerd
+   - **Omschrijving**: Wat het project inhoudt
+   - **Budget**: Een optioneel budgetbedrag, plus een optioneel uurtarief
+   - **Notities**: Alles wat je over het project wilt onthouden
 3. Klik op **Opslaan**
+
+Je kunt een project ook een eigen nummer, start- en einddatum en kleur geven, en een eigen omschrijvingsformaat voor factuurregels met uren uit dit project.
 
 ## Projectstatussen
 
-| Status | Beschrijving |
+| Status | Omschrijving |
 |---|---|
+| **Gepland** | Afgesproken, maar het werk is nog niet gestart |
 | **Actief** | Er wordt momenteel aan gewerkt |
-| **In de wacht** | Tijdelijk gepauzeerd |
-| **Voltooid** | Afgerond — er wordt geen werk meer verwacht |
-| **Gearchiveerd** | Opgeslagen ter referentie |
+| **Gepauzeerd** | Tijdelijk stilgelegd |
+| **Afgerond** | Klaar, er wordt geen werk meer verwacht |
+| **Geannuleerd** | Afgeblazen |
+
+Archiveren staat los van de status: elk project kun je vanaf de lijst of de detailpagina archiveren om je actieve lijst overzichtelijk te houden, en later weer terugzetten.
 
 ## Projectdetailpagina
 
 De projectdetailpagina toont:
 
-- **Overzicht** — Naam, klant, status, budget
-- **Gekoppelde facturen** — Alle facturen gerelateerd aan dit project
-- **Gekoppelde uitgaven** — Kosten toegeschreven aan dit project
-- **Tijdregistraties** — Uren gelogd voor dit project
-- **Winstgevendheid** — Omzet versus kosten specificatie
+- **Inkomsten, uitgaven en resultaat**: Totalen uit de facturen en uitgaven die aan dit project zijn gekoppeld
+- **Gekoppelde facturen**: Alle facturen van dit project, met een snelkoppeling om een nieuwe te maken
+- **Gekoppelde uitgaven**: Kosten die aan dit project zijn toegeschreven
+- **Notities**: Vrije notities bij het project
 
-## Items koppelen aan projecten
+## Items aan projecten koppelen
 
-Bij het aanmaken van facturen, uitgaven of tijdregistraties selecteer je het project uit de dropdown om ze te koppelen. Dit werkt automatisch de financien van het project bij.
+Kies bij het aanmaken van facturen, uitgaven of tijdregistraties het project in de keuzelijst om ze te koppelen. De projectcijfers worden dan automatisch bijgewerkt.
 
-- **Facturen** — Houd omzet per project bij
-- **Uitgaven** — Houd kosten per project bij
-- **Tijdregistraties** — Houd uren per project bij
+- **Facturen**: Omzet per project bijhouden
+- **Uitgaven**: Kosten per project bijhouden
+- **Tijdregistraties**: Uren per project bijhouden
 
-## Budgetopvolging
+## Budget
 
-Als je een budget instelt:
-
-- Zie hoeveel van het budget is verbruikt
-- Houd het resterende budget bij
-- Vergelijk werkelijke kosten met het budget
-- Ontvang waarschuwingen wanneer je het budgetlimiet nadert
+Het budget is een eenvoudig referentiebedrag dat je op het project invult. Het verschijnt in de snelweergave van het project in de lijst, zodat je je uitgaven en facturatie er in één oogopslag tegen kunt afzetten.
 
 ## Bulkacties
 
-- **Status wijzigen** — Werk meerdere projecten tegelijk bij
-- **Archiveren** — Verplaats voltooide projecten naar het archief
-- **Herstellen** — Haal gearchiveerde projecten terug
-
-## Rapportages
-
-Bekijk projectprestaties in de [klantrapportages](/nl/features/reports) om te zien:
-
-- Omzet per project
-- Bestede tijd per project
-- Winstmarges
-- Vergelijking tussen projecten
+Selecteer meerdere projecten om ze in één keer te **archiveren** of te **verwijderen**. In het Archief kun je terugzetten of naar de prullenbak verplaatsen; in de Prullenbak kun je terugzetten of definitief verwijderen.
 
 ## Tips
 
-- Gebruik projecten ook voor kleine opdrachten — de inzichten zijn waardevol
-- Koppel zowel facturen als uitgaven voor nauwkeurige winstmarges
-- Archiveer voltooide projecten om je actieve lijst overzichtelijk te houden
-- Bekijk het projectgerichte dashboardprofiel voor een projectfocusweergave
+- Gebruik projecten ook voor kleine klussen: de inzichten zijn waardevol
+- Koppel zowel facturen als uitgaven voor een zuiver resultaat per project
+- Archiveer afgeronde projecten om je actieve lijst overzichtelijk te houden

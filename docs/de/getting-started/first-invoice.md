@@ -16,42 +16,45 @@ Stellen Sie sicher, dass Sie:
 ## Rechnung erstellen
 
 1. Navigieren Sie zu **Rechnungen** in der Seitenleiste
-2. Klicken Sie auf die Schaltfläche **Neue Rechnung** (oder verwenden Sie den **+**-Schwebenden-Button auf Mobilgeräten)
+2. Klicken Sie auf die Schaltfläche **Neue Rechnung** (oder verwenden Sie die schwebende **+**-Schaltfläche auf Mobilgeräten)
 3. Füllen Sie das Rechnungsformular aus:
 
 ### Kunden auswählen
 
-Beginnen Sie mit der Eingabe des Kundennamens. Wenn der Kunde existiert, wählen Sie ihn aus der Dropdown-Liste aus. Wenn nicht, klicken Sie auf **Neuen Kunden erstellen**, um ihn direkt hinzuzufügen.
+Beginnen Sie mit der Eingabe des Kundennamens. Wenn der Kunde existiert, wählen Sie ihn aus der Dropdown-Liste aus. Wenn nicht, klicken Sie auf **Neuen Kunden hinzufügen**, um die Neuer-Kunde-Seite zu öffnen und ihn dort anzulegen.
 
 ### Positionen hinzufügen
 
 Jede Position enthält:
 
-- **Beschreibung** — Wofür Sie abrechnen
-- **Menge** — Anzahl der Einheiten
-- **Einzelpreis** — Preis pro Einheit
-- **USt.-Satz** — Anwendbarer USt.-Prozentsatz (0 %, 9 %, 21 % usw.)
+- **Beschreibung**: wofür Sie abrechnen
+- **Menge**: Anzahl der Einheiten
+- **Einzelpreis**: Preis pro Einheit
+- **USt.-Satz**: anwendbarer USt.-Prozentsatz (0 %, 9 %, 21 % usw.)
 
 Klicken Sie auf **Position hinzufügen**, um weitere Positionen hinzuzufügen. Die Gesamtsumme wird automatisch inklusive USt. berechnet.
 
 ### Rechnungsdetails festlegen
 
-- **Rechnungsnummer** — Automatisch generiert basierend auf Ihren Nummerierungseinstellungen
-- **Rechnungsdatum** — Standardmäßig heute
-- **Fälligkeitsdatum** — Berechnet aus Ihren Standard-Zahlungsbedingungen (anpassbar)
-- **Anmerkungen** — Optionale Anmerkungen, die auf der Rechnung erscheinen
+- **Rechnungsnummer**: automatisch generiert auf Basis Ihrer Nummerierungseinstellungen
+- **Rechnungsdatum**: standardmäßig heute
+- **Fälligkeitsdatum**: berechnet aus Ihren Standard-Zahlungsbedingungen (anpassbar)
+- **Anmerkungen**: optionale Anmerkungen, die auf der Rechnung erscheinen
 
-### Speichern
+### Als Entwurf speichern oder abschließen
 
-Klicken Sie auf **Speichern**, um die Rechnung als **Entwurf** zu erstellen. Sie können vor dem Versand noch alles bearbeiten.
+Beim Speichern wählen Sie zwischen zwei Optionen:
+
+- **Als Entwurf speichern**: Die Rechnung bleibt vollständig bearbeitbar, und es wird noch keine endgültige Rechnungsnummer vergeben.
+- **Abschließen**: Die Rechnung wird gesperrt, erhält ihre endgültige Rechnungsnummer und wechselt in den Status **Offen**, bereit zum Versand. Beim Abschließen laufen auch die Bereitschaftsprüfungen von MyCompanyDesk: Es wird geprüft, ob Ihre USt-IdNr. und IBAN hinterlegt sind, und falls nicht, öffnet sich ein Dialog, um sie zu ergänzen.
 
 ## Rechnung in der Vorschau anzeigen
 
-Vor dem Versand können Sie eine Vorschau ansehen, wie die PDF aussehen wird:
+Sehen Sie sich vor dem Versand an, wie das PDF aussehen wird:
 
 1. Öffnen Sie die Rechnungsdetailseite
-2. Klicken Sie auf **Vorschau**, um die generierte PDF zu sehen
-3. Überprüfen Sie, ob alle Informationen korrekt sind — Firmendaten, Kundeninformationen, Positionen, Gesamtbeträge
+2. Klicken Sie auf **Vorschau**, um das generierte PDF zu sehen
+3. Prüfen Sie, ob alle Informationen korrekt sind: Firmendaten, Kundeninformationen, Positionen, Gesamtbeträge
 
 ## Rechnung versenden
 
@@ -65,7 +68,7 @@ Wenn Sie bereit sind zum Versenden:
    - Zahlungslink (falls aktiviert)
 3. Klicken Sie auf **Senden**, um die Rechnung zuzustellen
 
-Der Rechnungsstatus ändert sich von **Entwurf** zu **Gesendet**.
+Der Rechnungsstatus ändert sich zu **Gesendet**.
 
 ::: tip
 Sie können Ihre E-Mail-Vorlagen unter **Einstellungen > E-Mail** anpassen. Vorlagen unterstützen Ihr Branding und können pro Sprache eingestellt werden.
@@ -75,37 +78,28 @@ Sie können Ihre E-Mail-Vorlagen unter **Einstellungen > E-Mail** anpassen. Vorl
 
 Nach dem Versand erscheint die Rechnung in Ihren Ansichten **Gesendet** oder **Überfällig**. Wenn der Kunde zahlt:
 
-- Wenn der Kunde über den **Zahlungslink** zahlt, wird die Rechnung automatisch als bezahlt markiert
+- Zahlt der Kunde über den **Zahlungslink**, wird die Rechnung automatisch als bezahlt markiert
 - Bei Banküberweisungen klicken Sie auf **Als bezahlt markieren** auf der Rechnung, um die Zahlung manuell zu erfassen
 
 ## Rechnungsstatus
 
 | Status | Beschreibung |
 |---|---|
-| **Entwurf** | Erstellt, aber noch nicht gesendet. Vollständig bearbeitbar. |
+| **Entwurf** | Erstellt, aber noch nicht abgeschlossen. Vollständig bearbeitbar. |
+| **Offen** | Abgeschlossen und versandbereit, aber noch nicht gesendet. |
 | **Gesendet** | An den Kunden zugestellt. Warten auf Zahlung. |
 | **Überfällig** | Fälligkeitsdatum überschritten und noch unbezahlt. |
 | **Bezahlt** | Zahlung eingegangen und bestätigt. |
+| **Überprüfung erforderlich** | Der Kunde hat die Rechnung im Kundenportal als bezahlt markiert; bestätigen Sie die Zahlung auf Ihrer Seite. |
 | **Storniert** | Rechnung wurde storniert. Keine Zahlung erwartet. |
 
-## Schnellerfassung
+## Schnell anlegen mit Vorlagen
 
-Für eine schnellere Rechnungserstellung verwenden Sie die **Schnellerfassung**:
-
-1. Klicken Sie auf das Schnellerfassungs-Symbol auf der Rechnungsliste
-2. Wählen Sie einen Kunden
-3. Fügen Sie Positionen hinzu (oder verwenden Sie eine gespeicherte Vorlage)
-4. Speichern und optional sofort versenden
-
-Die Schnellerfassung ist ideal für Routinerechnungen, bei denen Sie regelmäßig ähnliche Positionen abrechnen.
-
-## Vorlagen verwenden
-
-Sparen Sie Zeit mit Rechnungsvorlagen:
+Für Routinerechnungen, bei denen Sie regelmäßig ähnliche Positionen abrechnen, verwenden Sie Vorlagen:
 
 1. Erstellen Sie eine Rechnung mit Ihren häufig verwendeten Positionen
 2. Klicken Sie auf **Als Vorlage speichern**
-3. Beim nächsten Mal starten Sie eine neue Rechnung aus der Vorlage — alle Positionen sind vorausgefüllt
+3. Beim nächsten Mal klicken Sie auf **Vorlagen** unter Schnellaktionen in der Seitenleiste. Wählen Sie eine Vorlage, öffnet sich eine neue Rechnung mit allem vorausgefüllt; passen Sie sie bei Bedarf an und speichern Sie oder schließen Sie ab.
 
 ## Nächste Schritte
 

@@ -21,29 +21,32 @@ Make sure you have:
 
 ### Select a customer
 
-Start typing the customer name. If the customer exists, select them from the dropdown. If not, click **Create new customer** to add them inline.
+Start typing the customer name. If the customer exists, select them from the dropdown. If not, click **Add new customer** to open the new-customer page and add them.
 
 ### Add line items
 
 Each line item has:
 
-- **Description** — What you're billing for
-- **Quantity** — Number of units
-- **Unit price** — Price per unit
-- **VAT rate** — Applicable VAT percentage (0%, 9%, 21%, etc.)
+- **Description**: what you're billing for
+- **Quantity**: number of units
+- **Unit price**: price per unit
+- **VAT rate**: applicable VAT percentage (0%, 9%, 21%, etc.)
 
 Click **Add item** to add more line items. The total is calculated automatically including VAT.
 
 ### Set invoice details
 
-- **Invoice number** — Auto-generated based on your numbering settings
-- **Invoice date** — Defaults to today
-- **Due date** — Calculated from your default payment terms (adjustable)
-- **Notes** — Optional notes that appear on the invoice
+- **Invoice number**: auto-generated based on your numbering settings
+- **Invoice date**: defaults to today
+- **Due date**: calculated from your default payment terms (adjustable)
+- **Notes**: optional notes that appear on the invoice
 
-### Save
+### Save as draft or finalize
 
-Click **Save** to create the invoice as a **draft**. You can still edit everything before sending.
+When saving, you choose between two options:
+
+- **Save as draft**: the invoice stays fully editable, and no definitive invoice number is assigned yet.
+- **Finalize**: the invoice is locked, gets its definitive invoice number, and moves to the **Open** status, ready to send. Finalizing is also when MyCompanyDesk runs its readiness checks: it verifies that your BTW-id and IBAN are on file, and opens a dialog to fill them in if not.
 
 ## Preview the invoice
 
@@ -51,7 +54,7 @@ Before sending, preview how the PDF will look:
 
 1. Open the invoice detail page
 2. Click **Preview** to see the generated PDF
-3. Check that all information is correct — company details, customer info, line items, totals
+3. Check that all information is correct: company details, customer info, line items, totals
 
 ## Send the invoice
 
@@ -65,7 +68,7 @@ When you're ready to send:
    - Payment link (if enabled)
 3. Click **Send** to deliver the invoice
 
-The invoice status changes from **Draft** to **Sent**.
+The invoice status changes to **Sent**.
 
 ::: tip
 You can customize your email templates in **Settings > Email**. Templates support your branding and can be set per language.
@@ -82,30 +85,21 @@ Once sent, the invoice appears in your **Sent** or **Overdue** views. When the c
 
 | Status | Description |
 |---|---|
-| **Draft** | Created but not yet sent. Fully editable. |
+| **Draft** | Created but not finalized. Fully editable. |
+| **Open** | Finalized and ready to send, but not yet sent. |
 | **Sent** | Delivered to the customer. Waiting for payment. |
 | **Overdue** | Past the due date and still unpaid. |
 | **Paid** | Payment received and confirmed. |
+| **Needs verification** | The customer marked the invoice as paid in the customer portal; confirm the payment on your side. |
 | **Cancelled** | Invoice was cancelled. No payment expected. |
 
-## Quick add
+## Quick add with templates
 
-For faster invoice creation, use **Quick Add**:
-
-1. Click the quick-add icon on the invoices list page
-2. Select a customer
-3. Add items (or use a saved template)
-4. Save and optionally send immediately
-
-Quick Add is ideal for routine invoices where you bill similar items regularly.
-
-## Using templates
-
-Save time with invoice templates:
+For routine invoices where you bill similar items regularly, use templates:
 
 1. Create an invoice with your commonly used line items
-2. Click **Save as Template** 
-3. Next time, start a new invoice from the template — all items are pre-filled
+2. Click **Save as Template**
+3. Next time, click **Templates** under Quick Actions in the sidebar. Choosing a template opens a new invoice with everything pre-filled; adjust as needed and save or finalize.
 
 ## Next steps
 

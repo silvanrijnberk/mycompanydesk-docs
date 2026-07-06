@@ -10,10 +10,10 @@ Das Kundenportal ermöglicht es Ihren Kunden, Rechnungen online über eine siche
 
 Wenn Sie eine Rechnung versenden, wird ein eindeutiger **Zahlungslink** generiert. Wenn Ihr Kunde auf diesen Link klickt, wird er zum Kundenportal weitergeleitet, wo er:
 
-1. **Die Rechnung ansehen** kann — Alle Details, Positionen und Gesamtbeträge einsehen
-2. **Das PDF herunterladen** kann — Eine Kopie der Rechnung erhalten
-3. **Online bezahlen** kann — Die Zahlung direkt über das Portal abschließen
-4. **Zahlung bestätigen** kann — Eine Banküberweisung bestätigen
+1. **Die Rechnung ansehen** kann: Alle Details, Positionen und Gesamtbeträge einsehen
+2. **Das PDF herunterladen** kann: Eine Kopie der Rechnung erhalten
+3. **Online bezahlen** kann: Die Zahlung direkt über das Portal abschließen
+4. **Zahlung bestätigen** kann: Eine Banküberweisung bestätigen
 
 ## Portal-Funktionen
 
@@ -34,7 +34,7 @@ Kunden können direkt über das Portal bezahlen. Wenn Sie Mollie oder Stripe ver
 
 #### Mollie-Zahlungseinstellungen
 
-Sobald Mollie verbunden ist, erhalten Sie einen **Betaalknop op facturen**-Schalter in Ihrem Arbeitsbereich unter **Geld → Zahlungen → Online betalingen**. Aktivieren Sie ihn, um eine Mollie-Zahlungsschaltfläche auf jeder ausgehenden Rechnung anzuzeigen. Deaktivieren Sie ihn, und die Schaltfläche verschwindet, ohne Mollie zu trennen.
+Sobald Mollie verbunden ist, erhalten Sie einen **Betaalknop op facturen**-Schalter unter **Einstellungen > Betalen**, im Bereich **Online betalingen**. Aktivieren Sie ihn, um eine Mollie-Zahlungsschaltfläche auf jeder ausgehenden Rechnung anzuzeigen. Deaktivieren Sie ihn, und die Schaltfläche verschwindet, ohne Mollie zu trennen.
 
 Unter dem Schalter befindet sich ein **Betaalmethoden**-Bereich, der jede in Ihrem Mollie-Dashboard aktivierte Zahlungsmethode auflistet (iDEAL, Bancontact, Kreditkarte und mehr). Standardmäßig sehen Kunden alle Methoden. Aktivieren Sie bestimmte Methoden, um die Auswahl einzugrenzen, nur diese erscheinen auf Ihren Rechnungen. Entfernen Sie alle Häkchen, um zu "alle anzeigen" zurückzukehren.
 
@@ -42,7 +42,7 @@ Mit der Schaltfläche **Stuur testbetaling** können Sie einen kostenlosen €1-
 
 #### Stripe-Zahlungseinstellungen
 
-Sobald Stripe verbunden ist, erhalten Sie einen **Betaalknop op facturen**-Schalter in Ihrem Arbeitsbereich unter **Geld → Zahlungen → Online betalingen**. Aktivieren Sie ihn, um eine Stripe-Zahlungsschaltfläche auf jeder ausgehenden Rechnung anzuzeigen. Deaktivieren Sie ihn, und die Schaltfläche verschwindet, ohne Stripe zu trennen. Der Schalter ist erst verfügbar, nachdem das Stripe-Onboarding (KYC) abgeschlossen ist.
+Sobald Stripe verbunden ist, erhalten Sie einen **Betaalknop op facturen**-Schalter unter **Einstellungen > Betalen**, im Bereich **Online betalingen**. Aktivieren Sie ihn, um eine Stripe-Zahlungsschaltfläche auf jeder ausgehenden Rechnung anzuzeigen. Deaktivieren Sie ihn, und die Schaltfläche verschwindet, ohne Stripe zu trennen. Der Schalter ist erst verfügbar, nachdem das Stripe-Onboarding (KYC) abgeschlossen ist.
 
 Unter dem Schalter befindet sich ein **Betaalmethoden**-Bereich, der jede unterstützte Zahlungsmethode zeigt, abgeglichen mit den Capabilities Ihres Stripe-Kontos (Karte, iDEAL, Bancontact, SEPA-Lastschrift, PayPal, Klarna und Link by Stripe). Standardmäßig wählt Stripe Checkout automatisch die richtige Methode pro Kunde. Aktivieren Sie bestimmte Methoden, um die Auswahl einzuschränken, nur diese erscheinen im Checkout. Entfernen Sie alle Häkchen, um zur automatischen Auswahl zurückzukehren.
 
@@ -62,9 +62,9 @@ Dies schafft ein professionelles, konsistentes Erlebnis für Ihre Kunden.
 
 Jeder Portal-Link ist:
 
-- **Eindeutig** — Pro Rechnung generiert
-- **Token-basiert** — Mit einem einzigartigen Zugangstoken gesichert
-- **Rechnungsspezifisch** — Zeigt nur die spezifische Rechnung
+- **Eindeutig**: Pro Rechnung generiert
+- **Token-basiert**: Mit einem einzigartigen Zugangstoken gesichert
+- **Rechnungsspezifisch**: Zeigt nur die spezifische Rechnung
 
 Kunden benötigen kein MyCompanyDesk-Konto, um Rechnungen einzusehen und zu bezahlen.
 
@@ -82,6 +82,6 @@ Dies hilft Ihnen, das Kundenengagement zu verstehen und effektiv nachzufassen.
 ## Tipps
 
 - Fügen Sie Ihrer Rechnungs-E-Mail eine persönliche Notiz hinzu, um die Portal-Nutzung zu fördern
-- Das Portal funktioniert auf allen Geräten — Mobiltelefon, Tablet und Desktop
+- Das Portal funktioniert auf allen Geräten: Mobiltelefon, Tablet und Desktop
 - Zahlungsbestätigungen werden sowohl an Sie als auch an den Kunden gesendet
 - Prüfen Sie den Kundenereignisverlauf auf der Rechnungsdetailseite, um Portal-Interaktionen einzusehen

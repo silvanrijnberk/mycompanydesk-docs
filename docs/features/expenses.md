@@ -1,119 +1,104 @@
 ---
 title: Expenses
-last_verified: 2026-05-09
+last_verified: 2026-07-02
 ---
 
 # Expenses
 
-Track business expenses, scan receipts, manage workspace categories with their own VAT defaults, and let depreciation schedules run automatically for investments.
+Track business expenses, scan receipts, and let MyCompanyDesk handle VAT defaults and depreciation for larger purchases.
 
 ## Overview
 
-The expenses page lists every recorded expense. Filter by category, project, date range or status. Click an expense to open the detail page; click **New** to add one manually, or **Scan receipt** to extract one from an image or PDF.
+The expenses page lists every recorded expense. Use the search box and the filter menu to narrow the list by category, invoice status (invoiced or uninvoiced) and date range, and switch between the **Active**, **Archive** and **Trash** views. The cards above the list double as quick filters: click the unpaid card to show only unpaid expenses, or the uncategorized card to show expenses that still need a category. Links from the VAT page and the invoices page can also open the list pre-filtered, for example on expenses with a missing receipt, a missing VAT amount, or costs you can still bill to a customer. Every applied filter shows as a chip you can remove with one click.
+
+Expenses that came in through your [bank feed](/features/bank) carry a small bank icon, so you can always tell them apart from manual entries.
+
+Click an expense to open its detail page, or click **Add** to record one manually. The gear icon at the top opens the expense settings.
 
 ## Categories
 
-Categories are stored per workspace in the `expense_categories` table — they aren't a hardcoded enum. Each category carries:
+MyCompanyDesk ships with six standard categories that map directly onto the Dutch tax return:
 
-- A **key** (slug used by the API and the form).
-- A **VAT treatment** default (see below).
-- A **deduction percentage** for partially-deductible categories.
-- An **auto-flag investment** flag that turns matching expenses into investments automatically.
-- A **default useful-life** in months for the depreciation engine.
+- **Algemene kosten**
+- **Kantoorkosten**
+- **Autokosten & reizen**
+- **Telefoon & internet**
+- **Representatiekosten**
+- **Inkoop & materiaal**
 
-The setup wizard seeds an industry-tailored set on top of the eleven system defaults, so a software-heavy workspace ends up with extra keys like `cloud_services_eu`, while a hospitality workspace might get `food_client_meeting`. New categories from the wizard validate the same way as system defaults — unknown or mistyped keys are rejected with a 400. Edit, archive or add categories from the categories settings page.
+On top of these you can add categories of your own. Open the gear icon on the expenses page and go to **Expense categories**, then run the category wizard: pick your industry and it suggests a tailored set, optionally refined by a short description of your business.
+
+Each category carries its own defaults: a VAT treatment, a deductible percentage for partially deductible costs, a suggested VAT rate, and optionally an automatic investment flag with a default depreciation period. These defaults flow into the form whenever you pick the category. You can edit or archive categories at any time; the six standard ones can be renamed but not removed.
 
 ## Creating an expense
 
 ### Manual entry
 
-1. Go to **Expenses > New**.
-2. Type the **supplier** name. The supplier autocomplete suggests previously-used vendors as you type.
-3. Pick a **category**. The form pulls the category's default VAT treatment, default VAT rate hint and deduction percentage straight into the matching fields. If a workspace-wide default expense category is set under workspace settings, it is pre-filled here.
-4. Fill in the **description**, **amount excl. VAT**, **VAT rate** and **date**. The VAT rate and the **payment method** are pre-filled from your workspace defaults (set under workspace settings as "Standard VAT rate expenses", default expense category and default payment method). The VAT amount is calculated automatically; you can also enter the inclusive amount and let the form back out the components.
-5. Optionally set the **VAT treatment** (overrides the category default), **customer**, **project**, **reference** and **notes**. The pre-filled category and payment method can be overridden on a per-expense basis.
-6. Optionally attach a **receipt**.
-7. Click **Save**.
+1. Go to **Expenses** and click **Add**.
+2. Type the **supplier** name. The autocomplete suggests vendors you have used before.
+3. Pick a **category**. Its VAT treatment, suggested VAT rate and deductible percentage are filled in for you. If you set a default category in the expense settings, it is pre-selected.
+4. Fill in the **description**, **amount excl. VAT**, **VAT rate** and **date**. The VAT amount is calculated automatically; you can also enter the amount incl. VAT and let the form work out the rest.
+5. Optionally adjust the **VAT treatment**, link a **customer** or **project**, and add a **reference**, **notes** or a different **payment method**.
+6. Click **Save**.
+
+The form has no receipt field. After saving, the detail page prompts you to upload the receipt there, as an image or PDF.
 
 ### Generate from supplier
 
-When you're creating a new expense and you've typed a supplier name, the **Generate** button (sparkles icon, top right) runs an LLM prefill. It uses the supplier and any partial inputs to suggest a description, category, VAT treatment, amount and date. If the form's VAT rate still matches your workspace default, the prefill will overwrite it with what it finds on the receipt; otherwise it leaves your override alone. Review the result before saving — the prefill is a draft, not an autopilot.
+Once you have typed a supplier name, the **Generate** button (sparkles icon, top right) suggests the remaining fields for you: description, category, VAT treatment, amount and date. Review the result before saving; it is a head start, not an autopilot.
 
 ### From bank transactions
 
-When your [bank feed](/features/bank) is connected, categorised outgoing transactions are automatically turned into draft expenses. Each one carries the transaction's counterpart as supplier, the absolute amount as gross, the category's default VAT rate and treatment, and the transaction's booking date. Draft expenses first appear in the bank-feed review inbox, where you can confirm, edit, or reject them before they land in your books. See [reviewing auto-imported expenses](/features/bank#reviewing-auto-imported-expenses) for the full workflow.
+When your [bank feed](/features/bank) is connected, outgoing transactions can be turned into expenses. Each one carries the counterparty as supplier, the amount, and the booking date, and you review them before they land in your books. See [reviewing auto-imported expenses](/features/bank#reviewing-auto-imported-expenses) for the full workflow.
 
 ### Receipt scanner
 
 For image or PDF receipts:
 
-1. Go to **Expenses > Scan receipt**.
+1. Go to **Expenses > Scan Receipt**.
 2. Upload a JPEG, PNG, WebP or PDF file.
-3. Choose **Single** (one expense from the receipt) or **Multiple** (split a receipt into separate expenses).
-4. Review the extracted supplier, date, amount, VAT and category.
-5. Confirm to create the expense(s).
+3. Review the extracted supplier, date, amount, VAT and category.
+4. Confirm to create the expense(s).
 
-Receipt scanning is on the Pro plan and above.
+Under **Advanced Settings** you can choose between **Single total** (one expense for the whole receipt) and **Multiple items** (split the document into separate expenses), limit a PDF to certain pages, and have the scanned file attached to each created expense as its receipt.
+
+Receipt scanning is available on every plan, with a monthly allowance per plan: 3 scans on Free, 30 on Starter and 200 on Pro.
 
 ## VAT treatment
 
-Every expense has a `vat_treatment` field that decides how it lands on your VAT return:
+Every expense has a VAT treatment that decides how it lands on your VAT return:
 
-| Value | Meaning |
+| Treatment | Meaning |
 |---|---|
-| `standard` | Domestic VAT charged by the supplier — the default. |
-| `b2b_reverse_charge` | Verleggingsregeling: you self-account for the VAT on an EU B2B purchase. |
-| `vat_exempt` | The supply is exempt from VAT. |
-| `foreign_vat_charged` | A non-EU supplier charged you VAT (typically reclaimable through the EU refund procedure). |
+| **Standard** | The supplier charges Dutch VAT. This is the default. |
+| **Reverse-charge** | The VAT is shifted to you (verleggingsregeling), typical for EU B2B purchases. The supplier invoices 0% and you account for the VAT yourself. |
+| **Exempt** | The purchase is exempt from VAT: nothing to deduct. |
+| **Foreign VAT charged** | A foreign supplier charged you their local VAT. This is not deductible on your Dutch return. |
 
-The treatment is normally inherited from the category default. Override it on a per-expense basis when reality differs — for example, a Software-category expense from a US vendor that did charge VAT instead of applying the EU reverse-charge default.
+The treatment is inherited from the category. Override it on the expense itself when reality differs, for example a software purchase from a US vendor that charged VAT instead of applying the usual reverse charge.
 
-## Multi-rate lines
+## Investments and depreciation
 
-Receipts that mix VAT rates (a supermarket bill with food at 9% and drinks at 21%, say) are recorded on the expense's `lines` column — a JSONB array on the `expenses` table:
+Larger purchases (a laptop, machinery, furniture) are usually not booked as a cost in one go but written off over several years. MyCompanyDesk handles this per expense:
 
-```json
-[
-  { "description": "Food",  "amount_excl_vat": 22.50, "vat_rate": 9,  "vat_amount": 2.03 },
-  { "description": "Drinks", "amount_excl_vat": 12.00, "vat_rate": 21, "vat_amount": 2.52 }
-]
-```
+- The form has an **Investment (depreciate)** switch. Flip it on to book the expense as an investment.
+- From 450 euros excl. VAT the form suggests it for you, with a one-click **Book as investment** button. Categories can also be set to flag investments automatically.
+- Choose the write-off period in the **Depreciate over (years)** field, from 1 to 10 years. This overrides the category default; if the category has none, 5 years is used.
+- A live preview shows roughly what the monthly depreciation will be.
 
-When `lines` is null or empty, the flat fields (`amount_excl_vat`, `vat_rate`, `vat_amount`, `amount_incl_vat`) are the source of truth — the single-rate path is unchanged. When `lines` is present, the line totals drive the flat fields and aggregators iterate the lines for accuracy on the VAT return.
+You reclaim the VAT in full in the quarter of purchase; only the amount excluding VAT is spread over the chosen period. The monthly depreciation lines flow into your reports automatically. If you later change the amount, date or period, the schedule is recalculated.
 
-::: info
-The form UI for adding lines from the screen is a follow-up — at the moment lines are settable through the API. Single-rate entry from the form works exactly as before.
-:::
-
-## Depreciation for investments
-
-Categories with `auto_flag_investment = true` (typically equipment and other capex) turn an expense into an investment automatically:
-
-- The expense is marked `is_investment = true`.
-- A monthly depreciation schedule is generated using the category's `useful_life_months` (default 60 if unset).
-- The schedule uses straight-line depreciation with daily pro-rata for the first and last calendar month, in line with Belastingdienst guidance.
-- Lines live in `expense_depreciation_lines` and feed your reports.
-
-Editing the category, date or amount on an existing expense re-triggers the recompute — old lines are deleted and a fresh schedule is written. Toggling an expense out of an investment-flagged category cleans up the depreciation lines too.
-
-## Linking and filtering
+## Linking
 
 Link expenses to:
 
-- **Projects** — Track project costs.
-- **Customers** — Associate purchases with a client (e.g. for billable expenses).
-- **Suppliers** — Free-form supplier name; reused vendors surface in the autocomplete.
-
-Filters on the list cover category, project, customer, date range and status (active vs archived).
+- **Projects** to track project costs.
+- **Customers** to associate purchases with a client, for example costs you want to rebill.
+- **Suppliers** as a free-form name; reused vendors surface in the autocomplete.
 
 ## Bulk actions
 
-Select multiple expenses for:
-
-- **Categorize** — Re-assign the category (re-runs the depreciation hook for newly-investment-flagged rows).
-- **Archive** — Move to archive.
-- **Delete** — Permanently remove.
-- **Export** — Download as CSV.
+Select multiple expenses to act on them at once. On the active list you can choose **Mark as Paid** (when all selected expenses are unpaid), **Archive** or **Delete**. The Archive view offers restore to active or move to trash; the Trash view offers restore to archive or permanent deletion.
 
 ## Recurring expenses
 
@@ -121,13 +106,11 @@ For predictable costs (rent, subscriptions, hosting), set up [recurring expenses
 
 ## Import
 
-Import historical expenses from CSV via **Profile > Import** > **Expenses**. Map your columns to the expense fields, preview, and confirm.
+Import historical expenses from CSV via **Profile > Import**. Map your columns to the expense fields, preview, and confirm.
 
 ## Tips
 
-- Pick the right category first — VAT treatment, deduction percentage and the investment flag all flow from it.
-- Set your workspace default VAT rate, default expense category and default payment method in **Workspace settings** to stop the form starting with empty fields every time. A 0% VAT setting works correctly; the form treats it as intentional.
-- Use the per-expense VAT treatment override sparingly; if you find yourself overriding every entry in a category, the category default is wrong and should be edited.
+- Pick the right category first: VAT treatment, deductible percentage and the investment flag all flow from it.
+- Set your default category and payment method via the gear icon on the expenses page, and your usual VAT rate under **Settings > BTW**, so the form starts pre-filled.
+- If you find yourself overriding the VAT treatment on every expense in a category, edit the category default instead.
 - Always attach receipts. The pre-filing checks on the [VAT page](/features/vat) flag missing receipts before you file.
-- For mixed-rate receipts, use the lines API path until the form UI ships — single-rate entry is fine for everything else.
-- Investment expenses can take a moment to recompute when you change the date or amount. The depreciation lines refresh in the background.

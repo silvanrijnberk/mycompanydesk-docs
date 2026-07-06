@@ -7,38 +7,52 @@ title: "Objekte & Vermögenswerte"
 Verfolgen Sie Mietobjekte, Fahrzeuge, Ausstattung und andere Geschäftsvermögenswerte mit vollständigem Lebenszyklus-Management.
 
 ::: info
-Das Objektmodul ist optional. Aktivieren Sie es unter **Unternehmen > Funktionen**, wenn Sie es nicht in der Navigation sehen.
+Das Objektmodul (Vastgoed) ist ein Altmodul. Es wird für Arbeitsbereiche, die es bereits nutzen, weiterhin vollständig unterstützt, kann in neuen Arbeitsbereichen aber nicht mehr eingeschaltet werden. Wenn Ihr Arbeitsbereich es hat, finden Sie den Schalter unter **Einstellungen > Onderdelen**.
 :::
 
 ## Übersicht
 
-Das Objektmodul ist für Unternehmen konzipiert, die physische Vermögenswerte verwalten — insbesondere Vermietungsunternehmen, Immobilienverwalter und Geräteverleihdienste. Jedes Objekt repräsentiert einen Vermögenswert, den Sie besitzen oder verwalten.
+Das Objektmodul ist für Unternehmen konzipiert, die physische Vermögenswerte verwalten, insbesondere Vermietungsunternehmen, Immobilienverwalter und Geräteverleihdienste. Jedes Objekt repräsentiert einen Vermögenswert, den Sie besitzen oder verwalten.
 
 ## Objekttypen
 
 | Typ | Anwendungsfall |
 |---|---|
-| **Immobilie** | Mietwohnungen, Büros, Gewerbeflächen |
+| **Immobilie / Garage** | Häuser, Garagen, Lagerboxen |
+| **Wohnung** | Mietwohnungen |
+| **Büro** | Büroflächen |
+| **Einzelhandel** | Läden und Gewerbeflächen |
 | **Fahrzeug** | PKW, LKW, Transporter, Baufahrzeuge |
-| **Maschine** | Industrieausrüstung, Werkzeuge, Generatoren |
+| **Maschine** | Industrieausrüstung, Generatoren |
+| **Ausstattung** | Werkzeuge und Geräte |
+| **Möbel** | Möbel, die Sie vermieten |
+| **Elektronik** | Computer, AV-Ausrüstung |
 | **Sonstiges** | Jeder andere Vermögenswerttyp |
 
 ## Objektstatus
 
 | Status | Beschreibung |
 |---|---|
+| **Aktiv** | In Nutzung |
 | **Verfügbar** | Bereit zur Vermietung oder Nutzung |
-| **Vermietet** | Derzeit an einen Kunden vermietet |
-| **Inaktiv** | Nicht verfügbar (Wartung, ausgemustert) |
+| **Belegt** | Derzeit an einen Kunden vermietet oder von ihm genutzt |
+| **Wartung** | Vorübergehend außer Betrieb |
+| **Inaktiv** | Nicht verfügbar |
+| **Verkauft** | Nicht mehr in Ihrem Besitz; bleibt für die Unterlagen erhalten |
+| **Ausgemustert** | Abgeschrieben oder verschrottet |
+
+Die Liste bietet außerdem einen **Vermietet**-Filter, der alles anzeigt, was derzeit belegt ist.
 
 ## Objekt erstellen
 
 1. Gehen Sie zu **Objekte > Neues Objekt**
 2. Füllen Sie aus:
-   - **Name** — Eine eindeutige Bezeichnung (z. B. „Wohnung 3B" oder „Bagger CAT 320")
-   - **Typ** — Immobilie, Fahrzeug, Maschine oder Sonstiges
-   - **Status** — Verfügbar, Vermietet oder Inaktiv
-   - **Beschreibung** — Details zum Vermögenswert
+   - **Name**: Eine eindeutige Bezeichnung (z. B. „Wohnung 3B" oder „Bagger CAT 320")
+   - **Typ**: Einer der zehn oben genannten Typen
+   - **Status**: Wo das Objekt in seinem Lebenszyklus steht
+   - **Referenz**: Ihre eigene Referenz oder Ihr eigener Code
+   - **Standardmietpreis**: Die Standardmiete, pro Woche, Monat oder Jahr, mit oder ohne USt.
+   - **Beschreibung** und **Adresse**: Details zum Vermögenswert
 3. Klicken Sie auf **Speichern**
 
 ## Objektdetailseite
@@ -47,9 +61,9 @@ Die Detailseite zeigt:
 
 - Vermögenswertinformationen und Typ
 - Aktueller Status
-- **Gesamtumsatz**: tatsächlicher Umsatz aus bezahlten Rechnungen für dieses Objekt, berechnet aus den Finanzdaten
+- **Gesamtumsatz**: Umsatz aus bezahlten Rechnungen für dieses Objekt
 - **Aktive Verträge**: Anzahl der derzeit aktiven Verträge zu diesem Objekt
-- **WOZ-Verlauf** (bei Immobilien) — jährliche WOZ-Werte, die für die Box-3-Berechnung verwendet werden
+- **WOZ-Verlauf** (bei Immobilien): jährliche WOZ-Werte, die für die Box-3-Berechnung verwendet werden
 - Verknüpfte Verträge
 - Mietverlauf
 - Zugehörige Rechnungen
@@ -85,7 +99,7 @@ Bei Immobilien, für die eine WOZ-Historie aus dem Kadaster abgerufen wurde, pro
 
 ### Signierstatus der Verträge
 
-Jede Vertragszeile auf der Objektdetailseite zeigt nun eine Signierstatus-Badge neben der Aktiv/Pausiert-Badge. Die Farbgebung folgt der gleichen Zuordnung wie auf der Vertragsdetailseite:
+Jede Vertragszeile auf der Objektdetailseite zeigt eine Signierstatus-Badge neben der Aktiv/Pausiert-Badge. Die Farbgebung folgt der gleichen Zuordnung wie auf der Vertragsdetailseite:
 
 - **Signiert** (grün): alle Parteien haben unterzeichnet
 - **Teilweise signiert** (blau): einige Parteien haben unterzeichnet, andere noch nicht
@@ -100,23 +114,22 @@ Altverträge, die vor der Einführung der E-Signing-Funktion angelegt wurden, ze
 
 Objekte lassen sich mit anderen MyCompanyDesk-Funktionen integrieren:
 
-- **Verträge** — Erstellen Sie einen Mietvertrag für ein Objekt mit Angabe des Mieters (Kunden) und der Bedingungen
-- **Rechnungen** — Rechnungen können als Mietrechnungen gekennzeichnet und mit Objekten verknüpft werden
-- **Wiederkehrende Rechnungen** — Richten Sie automatische monatliche Mietabrechnungen pro Objekt ein
+- **Verträge**: Erstellen Sie einen Mietvertrag für ein Objekt mit Angabe des Mieters (Kunden) und der Bedingungen
+- **Rechnungen**: Rechnungen können als Mietrechnungen gekennzeichnet und mit Objekten verknüpft werden
+- **Wiederkehrende Rechnungen**: Richten Sie automatische monatliche Mietabrechnungen pro Objekt ein
 
 ## Filtern
 
 Filtern Sie Ihre Objekte nach:
 
-- **Typ** — Immobilie, Fahrzeug, Maschine, Sonstiges
-- **Status** — Verfügbar, Vermietet, Inaktiv
-- **Suche** — Nach Name oder Beschreibung finden
+- **Typ**: Einer der zehn Objekttypen
+- **Status**: Verfügbar, Vermietet, Wartung, Aktiv, Verkauft, Ausgemustert oder Inaktiv
+- **Zeitraum** und **Suche**: Nach Name oder Beschreibung finden
+- **Ansicht**: Wechseln Sie zwischen Aktiv, Archiv und Papierkorb
 
 ## Massenaktionen
 
-- **Status ändern** — Verfügbarkeit in großem Umfang aktualisieren
-- **Archivieren** — Ins Archiv verschieben
-- **Löschen** — Objekte entfernen
+Wählen Sie mehrere Objekte aus, um sie auf einmal zu **archivieren** oder zu **löschen**. Die Archivansicht bietet Wiederherstellen nach Aktiv oder Verschieben in den Papierkorb; die Papierkorbansicht bietet Wiederherstellen ins Archiv oder endgültiges Löschen.
 
 ## Tipps
 

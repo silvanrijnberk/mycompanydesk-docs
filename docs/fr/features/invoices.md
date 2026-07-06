@@ -4,134 +4,144 @@ title: Factures
 
 # Factures
 
-Les factures sont au coeur de MyCompanyDesk. Creez des factures professionnelles, envoyez-les a vos clients avec des liens de paiement et suivez les paiements jusqu'a leur reception.
+Les factures sont au coeur de MyCompanyDesk. Créez des factures professionnelles, envoyez-les à vos clients avec des liens de paiement et suivez les paiements jusqu'à leur réception.
 
 ## Vue d'ensemble
 
-La page des factures affiche toutes vos factures avec des fonctionnalites de filtrage et de recherche. Utilisez les onglets de statut pour consulter rapidement :
+La page des factures affiche toutes vos factures avec des possibilités de filtrage et de recherche. Les onglets en haut sont des vues, pas des statuts :
 
-- **Toutes** -- Toutes les factures
-- **Brouillon** -- Creees mais non envoyees
-- **Envoyees** -- Transmises aux clients
-- **En retard** -- Date d'echeance depassee, impayees
-- **Payees** -- Paiement recu
-- **Annulees** -- Factures annulees
+- **Actives** : votre liste de travail
+- **Archives** : les factures que vous avez archivées
+- **Corbeille** : les factures en attente de suppression définitive
 
-## Creer une facture
+Au sein d'une vue, la liste déroulante de statut filtre par :
+
+- **Tous les statuts** : toutes les factures de la vue
+- **Brouillon** : créée mais non finalisée
+- **Ouverte** : finalisée et prête à envoyer, mais pas encore envoyée
+- **Envoyée** : transmise au client
+- **Payée** : paiement reçu
+- **En retard** : date d'échéance dépassée, impayée
+- **À vérifier** : le client a marqué la facture comme payée dans le portail client, en attente de votre confirmation
+
+## Créer une facture
 
 ### Formulaire complet
 
 1. Allez dans **Factures > Nouvelle facture**
-2. Selectionnez ou creez un **client**
-3. Ajoutez des **lignes de facturation** avec description, quantite, prix unitaire et taux de TVA. Le taux de TVA par defaut pour les nouvelles lignes provient de vos parametres fiscaux (Finances → TVA). Pour les clients en autoliquidation, le taux est automatiquement de 0%.
-4. Definissez la **date de facture** et la **date d'echeance**
+2. Sélectionnez ou créez un **client**
+3. Ajoutez des **lignes** avec description, quantité, prix unitaire et taux de TVA. Le taux de TVA par défaut des nouvelles lignes provient de vos paramètres fiscaux (Paramètres > BTW). Si l'autoliquidation est activée pour un client, la ligne utilise automatiquement 0 %.
+4. Définissez la **date de facture** et la **date d'échéance**
 5. Ajoutez des **notes** ou **remarques internes** optionnelles
-6. Cliquez sur **Enregistrer** pour creer un brouillon
+6. Enregistrez comme **brouillon** pour continuer à modifier plus tard, ou **finalisez** pour verrouiller la facture et la préparer à l'envoi
 
-### Ajout rapide
+### Brouillon ou finalisation
 
-Pour une creation plus rapide :
+Enregistrer comme brouillon garde la facture entièrement modifiable. La finalisation verrouille la facture, attribue le numéro de facture définitif et passe le statut à **Ouverte** (prête à envoyer). C'est aussi au moment de la finalisation que les contrôles de préparation se déclenchent : MyCompanyDesk vérifie que votre entreprise a un BTW-id (numéro de TVA) et un IBAN enregistrés (voir [Finalisation et envoi](#finalisation-et-envoi)).
 
-1. Cliquez sur le bouton d'ajout rapide dans la liste des factures
-2. Selectionnez un client
-3. Ajoutez des elements ou choisissez un modele
-4. Enregistrez (et envoyez immediatement si vous le souhaitez)
+### À partir d'un modèle
 
-### A partir d'un modele
+Les modèles se trouvent dans la barre latérale : cliquez sur **Modèles** sous Actions rapides pour ouvrir la fenêtre des modèles. Choisir un modèle de facture ouvre une nouvelle facture avec tous les champs du modèle pré-remplis ; ajustez si besoin, puis enregistrez ou finalisez.
 
-1. Lors de la creation d'une nouvelle facture, cliquez sur **Utiliser un modele**
-2. Selectionnez un modele enregistre
-3. Toutes les lignes de facturation sont pre-remplies -- ajustez selon vos besoins
-4. Enregistrez et envoyez
+Pour créer un modèle, ouvrez une facture et cliquez sur **Enregistrer comme modèle**.
 
-## Details de la facture
+### Facturer des heures enregistrées
 
-Chaque facture dispose d'une page de detail affichant :
+Quand vous sélectionnez un client sur le formulaire de facture, MyCompanyDesk récupère les heures non facturées de ce client. Ajoutez-les une par une ou en une fois ; chaque enregistrement devient une ligne avec les heures, le taux horaire et une description remplie automatiquement. Si l'enregistrement de temps n'a pas de description propre, une valeur par défaut lisible est utilisée, basée sur le nom du projet ou la période. Vous pouvez aussi définir un modèle de description par client sur la fiche client pour contrôler la formulation de ces lignes.
+
+Les dépenses non facturées du client peuvent être récupérées de la même manière.
+
+## Détails de la facture
+
+Chaque facture dispose d'une page de détail affichant :
 
 - Informations du client
-- Lignes de facturation avec sous-totaux
+- Lignes avec sous-totaux
 - Ventilation de la TVA
 - Montant total
 - Statut et historique
-- Lien de paiement (si envoye)
+- Lien de paiement (si envoyée)
 
 ## Actions
 
 ### Envoyer
 
-Envoyez la facture a votre client par e-mail. L'e-mail comprend :
+Envoyez la facture à votre client par e-mail. L'e-mail comprend :
 
-- Un message personnalisable (base sur votre modele d'e-mail)
-- La facture PDF en piece jointe
+- Un message personnalisable (basé sur votre modèle d'e-mail)
+- La facture PDF en pièce jointe
 - Un lien de paiement pour le paiement en ligne
 
-### Telecharger le PDF
+### Télécharger le PDF
 
-Telechargez la facture sous forme de document PDF mis en forme professionnellement. Le PDF inclut le logo de votre entreprise, les couleurs de votre marque et tous les details de la facture.
+Téléchargez la facture sous forme de document PDF mis en forme professionnellement. Le PDF inclut le logo de votre entreprise, vos couleurs de marque et tous les détails de la facture.
 
-### Marquer comme payee
+### Marquer comme payée
 
-Confirmez manuellement le paiement lorsqu'un client paie par virement bancaire ou autre methode hors ligne.
+Confirmez manuellement le paiement lorsqu'un client paie par virement bancaire ou une autre méthode hors ligne.
 
 ### Annuler
 
-Annulez une facture qui ne doit plus etre payee. Les factures annulees restent dans vos archives a des fins d'audit.
+Annulez une facture qui ne doit plus être payée. Les factures annulées restent dans vos archives à des fins d'audit.
 
 ### Dupliquer
 
-Creez une copie d'une facture existante -- utile pour la facturation recurrente au meme client.
+Créez une copie d'une facture existante, utile pour la facturation récurrente au même client.
 
 ### Envoyer un rappel
 
 Envoyez un rappel de paiement pour les factures en retard.
 
-## Actions groupees
+## Actions groupées
 
-Selectionnez plusieurs factures dans la liste pour effectuer des actions groupees :
+Sélectionnez plusieurs factures dans la liste pour effectuer des actions groupées :
 
-- **Envoyer** -- Envoyez plusieurs factures brouillon en une fois
-- **Marquer comme payees** -- Enregistrez le paiement de plusieurs factures
-- **Archiver** -- Deplacez les factures vers les archives
-- **Supprimer** -- Supprimez definitivement des factures
+- **Envoyer** : marque les factures sélectionnées comme envoyées. Seul le statut est mis à jour ; aucun e-mail n'est envoyé.
+- **Marquer comme payées** : enregistrer le paiement de plusieurs factures
+- **Annuler** : annuler plusieurs factures
+- **Archiver** : déplacer des factures vers les archives
+- **Supprimer** : retirer des factures
+
+Dans les vues Archives et Corbeille, les actions groupées deviennent restaurer, déplacer vers la corbeille et supprimer définitivement.
 
 ## Liens de paiement
 
-Lorsque vous envoyez une facture, un lien de paiement unique est genere. Votre client peut :
+Lorsque vous envoyez une facture, un lien de paiement unique est généré. Votre client peut :
 
 1. Cliquer sur le lien dans l'e-mail
 2. Consulter la facture dans le **portail client**
-3. Payer directement en ligne via votre compte Mollie ou Stripe connecte
+3. Payer directement en ligne via votre compte Mollie ou Stripe connecté
 
-Le paiement est automatiquement enregistre et le statut de la facture passe a **Payee**.
+Le paiement est automatiquement enregistré et le statut de la facture passe à **Payée**.
 
 ## Paiements en ligne
 
 Activez les paiements de factures en ligne en connectant votre propre compte Mollie ou Stripe :
 
-1. Allez dans **Argent → Paiements** dans la barre laterale de votre espace de travail
-2. Sous **Online betalingen**, connectez le prestataire de votre choix
+1. Allez dans **Paramètres > Betalen**
+2. Sous **Klanten laten betalen met iDEAL**, connectez le prestataire de votre choix
 3. Mollie prend en charge iDEAL, Bancontact, la carte bancaire et le virement
-4. Stripe Connect prend en charge la carte, Apple Pay, Google Pay et le prelevement SEPA
+4. Stripe Connect prend en charge la carte, Apple Pay, Google Pay et le prélèvement SEPA
 
-Une fois connecte, chaque facture que vous envoyez inclut un lien de paiement. Vos clients paient via votre propre compte prestataire. Les fonds vous sont verses directement. MyCompanyDesk ne traite ni ne conserve vos paiements.
+Une fois connecté, chaque facture que vous envoyez inclut un lien de paiement. Vos clients paient via votre propre compte prestataire. Les fonds vous sont versés directement. MyCompanyDesk ne traite ni ne conserve vos paiements.
 
 ## Badge du prestataire de paiement
 
-Lorsqu'une facture est integralement payee, l'en-tete de la section des paiements affiche un badge indiquant par quel prestataire le paiement est arrive : "Paye via Mollie" ou "Paye via Stripe". Le prestataire dominant est affiche lorsque plusieurs methodes de paiement ont ete utilisees. Vous voyez ainsi en un coup d'oeil ou l'argent a ete recu, sans faire defiler l'historique des paiements.
+Lorsqu'une facture est intégralement payée, l'en-tête de la section des paiements affiche un badge indiquant par quel prestataire le paiement est arrivé : "Payé via Mollie" ou "Payé via Stripe". Le prestataire dominant est affiché lorsque plusieurs méthodes de paiement ont été utilisées. Vous voyez ainsi en un coup d'oeil où l'argent a été reçu, sans faire défiler l'historique des paiements.
 
 ## Remboursement des paiements
 
-Les paiements en ligne effectues via Mollie ou Stripe peuvent etre rembourses directement depuis MyCompanyDesk. Lorsque vous remboursez un paiement :
+Les paiements en ligne effectués via Mollie ou Stripe peuvent être remboursés directement depuis MyCompanyDesk. Lorsque vous remboursez un paiement :
 
-- Le montant total est retourne au client via le meme prestataire de paiement
-- Le remboursement est traite immediatement par Mollie ou Stripe
-- Le paiement est marque comme rembourse dans vos archives
+- Le montant total est retourné au client via le même prestataire de paiement
+- Le remboursement est traité immédiatement par Mollie ou Stripe
+- Le paiement est marqué comme remboursé dans vos archives
 
-Les methodes de paiement hors ligne (virement bancaire, especes) utilisent le chemin d'annulation existant: le paiement est marque comme annule sans remboursement cote prestataire.
+Les méthodes hors ligne (virement bancaire, espèces) utilisent le chemin d'annulation existant : le paiement est marqué comme annulé sans remboursement côté prestataire.
 
 Pour rembourser un paiement :
 
-1. Ouvrez la page de detail de la facture
+1. Ouvrez la page de détail de la facture
 2. Localisez le paiement dans la liste des paiements
 3. Cliquez sur le bouton **Rembourser** (disponible uniquement pour les paiements Mollie et Stripe)
 4. Ajoutez une raison facultative
@@ -141,39 +151,34 @@ Pour rembourser un paiement :
 
 Le module de facturation prend en charge plusieurs types de documents :
 
-- **Facture** -- Document de facturation standard
-- **Avoir** -- Ajustement pour remboursements ou corrections
-- **Rappel** -- Rappel de paiement pour les factures en retard
+- **Facture** : document de facturation standard
+- **Avoir** : ajustement pour remboursements ou corrections
+- **Rappel** : rappel de paiement pour les factures en retard
 
 ## Filtrage et recherche
 
-Utilisez la barre de filtre pour affiner vos factures :
+La liste propose :
 
-- **Statut** -- Brouillon, Envoyee, En retard, Payee, Annulee
-- **Client** -- Filtrer par client specifique
-- **Projet** -- Filtrer par projet lie
-- **Plage de dates** -- Filtrer par date de facture ou d'echeance
-- **Recherche** -- Rechercher par numero de facture, nom de client ou description
+- **Recherche** : par numéro de facture, nom de client ou description
+- **Onglets de vue** : Actives, Archives, Corbeille
+- **Statut** : Tous les statuts, Brouillon, Ouverte, Envoyée, Payée, En retard, À vérifier
+- **Plage de dates** : filtrer par date
 
 ## Export
 
-Exportez vos factures au format CSV pour les utiliser dans Excel, Google Sheets ou votre logiciel de comptabilite.
-
-::: info
-L'export CSV necessite le plan **Pro** ou superieur.
-:::
+Exportez vos factures au format CSV via **Paramètres > Gegevens downloaden** (disponible à partir du plan Starter). La même page propose aussi une sauvegarde complète de toutes vos données.
 
 ## Finalisation et envoi
 
-Lorsque vous finalisez ou envoyez une facture, MyCompanyDesk verifie que votre entreprise a un numero de TVA et un IBAN dans votre profil. Aux Pays-Bas, un numero de TVA est obligatoire sur la facture, et votre IBAN indique aux clients ou payer.
+Lorsque vous finalisez ou envoyez une facture, MyCompanyDesk vérifie que votre entreprise a un BTW-id (numéro de TVA) et un IBAN enregistrés. Aux Pays-Bas, une facture valide exige votre BTW-id, et votre IBAN indique aux clients où payer.
 
-Si l'un de ces champs est manquant, une fenetre s'ouvre pour que vous puissiez le remplir directement. Une fois enregistre, la facture est automatiquement finalisee.
+Si l'un de ces champs manque, une fenêtre s'ouvre pour que vous puissiez le remplir directement. Une fois enregistré, votre facture est finalisée automatiquement.
 
-Vous attendez encore votre numero de TVA de l'administration fiscale, ou vous beneficiez du regime de la franchise en base (KOR) ? Vous pouvez passer l'alerte et continuer malgre tout. Ajoutez votre numero de TVA des que vous l'avez.
+Si vous attendez encore votre BTW-id de la Belastingdienst, ou si vous êtes exonéré au titre du régime des petites entreprises (KOR), vous pouvez prendre acte du champ manquant et continuer malgré tout. Ajoutez votre BTW-id plus tard, dès que vous l'avez.
 
 ## Conseils
 
-- Configurez vos [modeles d'e-mail](/fr/settings/email) avant d'envoyer votre premiere facture
-- Utilisez les [factures recurrentes](/fr/features/recurring-invoices) pour la facturation reguliere
+- Configurez vos [modèles d'e-mail](/fr/settings/email) avant d'envoyer votre première facture
+- Utilisez les [factures récurrentes](/fr/features/recurring-invoices) pour la facturation régulière
 - Consultez la page des [rapports](/fr/features/reports) pour des analyses de revenus
-- Activez les [suggestions IA](/fr/advanced/ai-features) pour des ameliorations intelligentes des descriptions
+- Activez les [suggestions IA](/fr/advanced/ai-features) pour des améliorations intelligentes des descriptions

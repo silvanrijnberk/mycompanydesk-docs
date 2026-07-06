@@ -4,145 +4,85 @@ title: AI-functies
 
 # AI-functies
 
-MyCompanyDesk bevat AI-gestuurde functies om je sneller en slimmer te laten werken.
+MyCompanyDesk gebruikt AI op verschillende plekken om invoerwerk te versnellen, antwoorden uit je eigen administratie op te halen en je te helpen betere teksten te schrijven. Deze pagina beschrijft elke AI-functie in het product en wat die voor je doet.
 
-## Contextuele gids
+## De assistent in de app
 
-De in-app-assistent helpt je bij het navigeren door MyCompanyDesk:
+Het hulp-icoon in de app opent een chatpaneel dat weet op welke pagina je bent en waar je naar kijkt. De assistent antwoordt dus over jouw situatie, niet in het algemeen.
 
-- Klik op het **hulp-icoon** op elke pagina voor contextgerichte hulp
-- Stel vragen over functies, workflows of instellingen
-- Krijg stapsgewijze begeleiding bij veelvoorkomende taken
-- Beschikbaar in alle vier ondersteunde talen
+De assistent kan echte cijfers uit je eigen werkruimte opzoeken als je erom vraagt:
 
-De gids begrijpt op welke pagina je je bevindt en geeft relevante suggesties.
+- Omzet, uitgaven en winst per periode, inclusief een uitsplitsing per maand
+- Openstaande en achterstallige facturen, en welke klanten het meest bij je open hebben staan
+- Uitgaventotalen per categorie en tijdregistratie per project
+- Je BTW-positie: ontvangen, betaald en netto per periode
+- De Nederlandse BTW-aangifte, ingevuld per rubriek, plus controles die aangeven wat een aangifte nog blokkeert (conceptfacturen, ontbrekende bonnetjes)
+- KOR- en KIA-trackers: hoe dicht je bij de drempel van de kleineondernemersregeling zit en hoe je investeringsaftrek ervoor staat
+- Intra-EU-verkopen voor de ICP-opgaaf en EU-verkopen per land
 
-### Chatlimieten
+Ook "hoe doe ik"-vragen beantwoordt de assistent, op basis van de ingebouwde hulpteksten. Eén vraag kan beide combineren: vraag "hoe doe ik mijn BTW-aangifte voor Q2 en wat is mijn saldo" en je krijgt de stappen én het bedrag in één antwoord. Antwoorden streamen live binnen, zodat je het antwoord ziet ontstaan in plaats van te wachten.
 
-Chatgebruik is afhankelijk van je abonnement:
+De assistent is bewust alleen-lezen: hij kan je gegevens opzoeken, maar maakt, wijzigt of verwijdert nooit iets.
 
-| Abonnement | Chatberichten (maandelijks) |
-|---|---|
-| Gratis | 10 |
-| Starter | 100 |
-| Pro | 1 000 |
+Een kleine "AI"-badge naast de naam van de assistent herinnert je eraan dat je met AI praat, en de lege chat toont een korte melding: antwoorden kunnen fouten bevatten, controleer financiële of fiscale conclusies dus altijd zelf. Op het Pro-abonnement krijgt het assistentpaneel een violet Pro-accent; de mogelijkheden en meldingen zijn op elk abonnement hetzelfde.
 
-AI-limieten zijn maandelijks, niet dagelijks. Ze worden elke eerste van de maand gereset.
+## Hulp in je inbox
 
-### EU AI Act-openbaarmaking (art. 50)
+Zodra je zakelijke inbox e-mail ontvangt, sorteert AI elk gesprek voor je uit:
 
-De contextuele gids valt onder de EU AI Act (Verordening 2024/1689) als een AI-systeem met beperkt risico (artikel 50). Dit betekent dat we duidelijk moeten maken dat je met AI praat. In de gids zijn daar twee dingen voor:
+- **Samenvatting**: een korte samenvatting van waar het gesprek over gaat, in de taal van je werkruimte.
+- **Voorgestelde acties**: concrete vervolgstappen, zoals "stuur de offerte" of "bevestig de afspraak".
+- **Labelsuggesties**: voorgestelde labels die je met één klik accepteert. AI stelt voor, jij beslist; er wordt nooit automatisch gelabeld.
+- **Spamdetectie**: duidelijk ongewenste mail gaat automatisch naar spam. Twijfelt het systeem, dan blijft het gesprek in je inbox staan met een subtiele hint en een snelle knop om het als spam te markeren; twijfelgevallen worden nooit automatisch verplaatst.
 
-- **AI-badge.** Een kleine "AI"-pill naast de assistentnaam. Altijd zichtbaar zolang de gids open is. Een tooltip op de badge noemt de onderliggende provider (Google Gemini).
-- **Openbaarmakingstekst.** Een korte regel onder de welkomstvraag in een leeg gesprek: "Je praat met een AI-assistent. Antwoorden kunnen fouten bevatten; controleer financiële of fiscale conclusies altijd zelf."
+De samenvatting en suggesties kun je voor elk gesprek op verzoek opnieuw laten genereren.
 
-De verplichting geldt vanaf augustus 2026; de openbaarmakingen zijn voor de deadline ingebouwd.
+## Hulp bij websiteteksten
 
-### Pro-uiterlijk
+De [sitebouwer](/advanced/business-page) bevat drie schrijfhulpmiddelen:
 
-Pro-werkruimtes krijgen een premium assistent-uiterlijk dat de generieke styling vervangt door het Pro-violet. Wanneer het facturatieplan Pro is, verandert het assistentpaneel visueel:
+- **Toon herschrijven**: elk tekstveld in de sectie-inspector biedt vier herschrijvingen met één klik: korter, rustiger, scherper of vriendelijker. De herschrijving houdt je eigen taal aan en verzint nooit nieuwe informatie.
+- **Vul met AI**: vul alle tekst van een sectie in één klik, op basis van je bedrijfsprofiel. Klik je nog eens, dan wissel je gratis tussen eerder gegenereerde varianten.
+- **Regenereer met AI**: genereer de startteksten van je site (tagline, over-ons-tekst en conceptteksten voor je diensten) op verzoek opnieuw, voor elke werkruimte. Je bekijkt en bewerkt alles voordat het wordt toegepast.
 
-- De "AI"-pill wordt een violette "Pro"-pill, wat aangeeft dat de assistent op het hoogste model draait met volledige app-context.
-- De paneelrand, avatarring, online-dot en verzendknop veranderen naar violet (`#a855f7`), passend bij de Pro-lint in de app-navigatie.
-- De statusregel toont "Jouw Pro-assistent staat klaar" in plaats van het generieke "Klaar om te helpen."
+Zie [Sitebouwer](/advanced/business-page#ai-writing-help) voor de details.
 
-Het Pro-uiterlijk is puur cosmetisch. De onderliggende modelselector, toolcatalogus en EU AI Act-openbaarmakingen blijven identiek voor alle abonnementen. Achter de schermen geeft `TIER_CHAT_CONFIG` Pro al een zwaarder model en onbeperkte app-context.
+## Bonnenscanner
 
-## AI-suggesties
+Upload een foto of PDF van een bonnetje of inkoopfactuur en de scanner haalt de datum, de leverancier, het bedrag, de regels, het BTW-tarief en een voorgestelde categorie eruit, klaar om als uitgave op te slaan. Lange documenten worden efficiënt verwerkt, en scans tellen mee voor je maandelijkse AI-limiet. Zie [Bonnen scannen](/advanced/receipt-scanning) voor de volledige werkwijze.
 
-Slimme aanbevelingen die je helpen bij het categoriseren en beschrijven van je records:
+## Categoriesuggesties voor uitgaven
 
-### Uitgavecategorisatie
+Wanneer je een uitgave invoert, wordt de leverancier gekoppeld aan de juiste categorie uit je eigen categorielijst, niet uit een vaste ingebouwde lijst. De suggestie kiest ook de juiste BTW-behandeling op basis van het land van de leverancier en markeert mogelijke investeringen (apparatuur boven 450 euro excl. BTW), zodat de afschrijving goed wordt geregeld.
 
-Wanneer je een uitgave aanmaakt, analyseert AI de omschrijving en stelt de meest geschikte categorie voor. Dit bespaart tijd en zorgt voor consistente categorisatie.
+## Slimme suggesties
 
-### Omschrijvingsverbeteringen
+Nadat je een factuur, uitgave of klantnotitie hebt aangemaakt, stelt een controle op de achtergrond verbeteringen voor: een betere categorie voor uitgaven die onder "overig" staan, of een duidelijkere omschrijving voor factuurregels. De suggesties leren van jou: accepteer je er een, dan volgen vergelijkbare suggesties voortaan automatisch jouw stijl. Er verandert niets totdat jij accepteert.
 
-AI kan duidelijkere, professionelere omschrijvingen suggereren voor:
+Het platform herkent daarnaast je branche uit je factuur- en uitgavengeschiedenis, zodat suggesties aansluiten bij hoe bedrijven zoals het jouwe echt boeken.
 
-- Factuurregelitems
-- Uitgavenomschrijvingen
-- Klantnotities
+## Directe formuliersuggesties
 
-### Hoe het werkt
-
-1. Maak een record aan of bewerk er een
-2. Zoek naar de AI-suggestie-indicator
-3. Bekijk de suggestie
-4. Klik op **Toepassen** om deze te gebruiken, of **Negeren** om over te slaan
-
-::: info
-AI-suggesties vereisen het **Starter**-abonnement of hoger. Schakel ze in via **Bedrijf > Functies**.
-:::
-
-## Bonnen scannen
-
-AI-gestuurde OCR extraheert gegevens uit bonafbeeldingen en PDF's:
-
-- **Datum** — Wanneer de aankoop is gedaan
-- **Bedrag** — Totale kosten
-- **Leverancier** — Aan wie je hebt betaald
-- **Omschrijving** — Wat er is gekocht
-
-Zie [Bonnen scannen](/nl/advanced/receipt-scanning) voor gedetailleerde instructies.
+Klant-, project- en uitgaveformulieren tonen tijdens het typen suggesties op basis van wat je eerder hebt ingevuld. Dit draait volledig op je eigen gegevens, zonder AI, en is daardoor direct en altijd beschikbaar.
 
 ## Tekstcontrole
 
-Grammatica- en spellingcontrole voor je documenten:
+Formuliervelden corrigeren typefouten terwijl je typt, in negen formulieren (facturen, offertes, uitgaven, klanten, projecten, contracten, objecten, terugkerende posten en tijdregistraties). Nederlands is de standaard; Engels, Duits en Frans worden ook ondersteund.
 
-- Controleer factuuromschrijvingen voor het versturen
-- Verifieer offerte-inhoud
-- Corrigeer typefouten in klantgerichte tekst
+## Dashboardbriefing
 
-Ondersteunt Engels, Nederlands, Duits en Frans.
+Het dashboard opent met een korte, persoonlijke briefing voor jouw dag: eerst de meest urgente actie, dan een of twee ondersteunende punten, en tot slot een concrete vervolgstap. De briefing wordt één keer per dag gegenereerd in je eigen taal en de volgende dag ververst. Lukt het genereren niet, dan valt het dashboard stilletjes terug op de standaardsamenvatting; je ziet nooit een foutmelding.
 
-::: info
-Tekstcontrole is beschikbaar op alle abonnementen, inclusief Gratis.
-:::
+## Maandelijkse gebruikslimieten
 
-## Accountsamenvattingen
+AI-gebruik heeft een limiet per kalendermaand, niet per dag. Op vrijdagmiddag in één keer 40 bonnetjes scannen is dus geen probleem.
 
-AI genereert periodieke samenvattingen van je bedrijfsactiviteit:
-
-- **Dagelijks** — Snel overzicht van de transacties van de dag
-- **Wekelijks** — Weekoverzicht met trends
-- **Maandelijks** — Uitgebreide maandelijkse analyse
-
-Samenvattingen worden gegenereerd in je voorkeurstaal en zijn beschikbaar vanaf het dashboard.
-
-## Dashboard-briefing inzicht (Pro)
-
-De dashboard-briefing hero toont een korte, persoonlijke AI-geschreven briefing voor Pro-werkruimtes. De server genereert de briefing eenmaal per kalenderdag en cached deze voor de rest van de dag.
-
-- **Stem.** De briefing spreekt in de eerste persoon ("ik") en spreekt de gebruiker informeel aan ("je"). Hij opent met de meest urgente actie, voegt hooguit een of twee ondersteunende punten toe, en sluit af met een concrete vervolgstap (bijv. "stuur Atelier Norden vandaag een herinnering"). Warm, zelfverzekerd, bondig -- de toon van een slimme assistent die de zaak kent.
-- **Model.** Het endpoint `POST /api/dashboard/briefing-insight` draait op Vertex AI `europe-west1` (Gemini 2.5 Flash). Ollama Cloud wordt niet gebruikt voor dit pad.
-- **Input signalen.** De client stuurt een volledig overzicht van de zakelijke data van de dag: liquiditeit en runway, omzet en winst (MTD + YTD), achterstallige debiteuren (aantal, totaal, slechtste klant), rekeningen (binnenkort + achterstallig), aantal concepten, projectmarges, btw-positie (saldo, deadline, checklistvoortgang, reserve), niet-gefactureerde uren, recente betalingen en nieuwe klanten. Alle bedragen worden afgerond op hele euro's voordat ze het model bereiken.
-- **Locales.** Het model genereert de briefing in `nl/de/en/fr` op basis van de taal van de gebruiker. De client stuurt de ISO 639-1-code mee met het verzoek.
-- **Plan-gating.** Het endpoint is gekoppeld aan de `ai_insights` feature flag, die Pro vereist. Als een werkruimte geen recht heeft, toont de client alleen de standaard lede.
-- **Fallback.** Bij een fout (model niet beschikbaar, 403, netwerkfout) gebruikt de client de bestaande standaard lede. De gebruiker ziet geen foutmelding.
-- **Client UX.** Terwijl de AI-briefing laadt, toont de hero de gecachte deterministische lede van de vorige dag. Zodra de AI-versie binnen is, vervangt een cross-fade-overgang (opacity + slide) deze. De AI-briefing verschijnt met een sparkle-icoon en primaire tekstkleur. Een layout-matched skeleton-shimmer (`BriefingSkeleton`) houdt de volledige dashboardvorm vast totdat de kerndata binnen is, waarna deze oplost in een gecoordineerde, gestaffelde entree-animatie. Gebruikers met reduced-motion krijgen geen animaties.
-
-
-## Abonnementsrechten
-
-| Functie | Gratis | Starter | Pro |
+| Onderdeel | Free | Starter | Pro |
 |---|---|---|---|
-| Contextuele gids | Beperkt, alleen FAQ bij overloop | Standaard | Hoogste limiet |
-| AI-suggesties | Uit | Aan | Aan |
-| Leverancierclassificatie | Uit | Aan | Aan |
-| Bonnen scannen | Uit | Aan | Aan |
-| Tekstcontrole | Aan | Aan | Aan |
-| Vertaling | Aan (alleen UI) | Aan | Aan |
-| Dashboard-briefing inzicht | Uit | Uit | Aan |
+| AI-chatberichten | 10 | 100 | 1 000 |
+| AI-bonscans | 3 | 30 | 200 |
+| AI-suggesties | 10 | 200 | 2 000 |
 
-## Privacy en gegevensbescherming
+## Privacy
 
-Alle cloud-AI-functies draaien standaard op Vertex AI in `europe-west1` (EU). MyCompanyDesk heeft een verwerkersovereenkomst met Google Cloud voor Vertex AI. Ollama Cloud (ollama.com, gehost in de VS) staat standaard uit omdat er geen verwerkersovereenkomst met Ollama Inc. is. Je kunt het per workspace inschakelen voor workloads zonder persoonsgegevens, maar het staat uit voor alle abonnementen.
-
-Zet je `ai_processing_mode` op `local_only`, dan blijven bonnen scannen, AI-suggesties, tekstcontrole, leverancierclassificatie en brancheherkenning volledig op je eigen server. De contextuele gids werkt alleen in de cloud en is uitgeschakeld in `local_only`-modus.
-
-## Tips
-
-- Schakel AI-suggesties eenmaal in en ze werken automatisch op de achtergrond
-- Bonnen scannen is vooral handig voor papieren bonnen — maak gewoon een foto
-- De contextuele gids kan de meeste "hoe doe ik..."-vragen over de app beantwoorden
+Cloud-AI-verwerking draait op infrastructuur in de EU. Op het Pro-abonnement kun je daarnaast de privacymodus inschakelen: ondersteunde AI-functies (bonnen scannen, suggesties, tekstcontrole, categoriesuggesties) draaien dan op de eigen servers van MyCompanyDesk, zodat documenten het platform nooit verlaten. De assistent in de app heeft cloudverwerking nodig en is niet beschikbaar zolang de privacymodus aanstaat, in plaats van stilletjes minder goed te werken.

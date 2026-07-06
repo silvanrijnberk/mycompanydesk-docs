@@ -8,14 +8,21 @@ Invoices are at the core of MyCompanyDesk. Create professional invoices, send th
 
 ## Overview
 
-The invoices page shows all your invoices with filtering and search capabilities. Use the status tabs to quickly view:
+The invoices page shows all your invoices with filtering and search capabilities. The tabs at the top are views, not statuses:
 
-- **All** — Every invoice
-- **Draft** — Created but not sent
-- **Sent** — Delivered to customers
-- **Overdue** — Past due date, unpaid
-- **Paid** — Payment received
-- **Cancelled** — Cancelled invoices
+- **Active**: your working list of invoices
+- **Archive**: invoices you have archived
+- **Trash**: invoices waiting for permanent deletion
+
+Within a view, the status dropdown filters by:
+
+- **All statuses**: every invoice in the view
+- **Draft**: created but not finalized
+- **Open**: finalized and ready to send, but not yet sent
+- **Sent**: delivered to customers
+- **Paid**: payment received
+- **Overdue**: past due date, unpaid
+- **Needs verification**: the customer marked the invoice as paid in the customer portal, awaiting your confirmation
 
 ## Creating an invoice
 
@@ -23,26 +30,26 @@ The invoices page shows all your invoices with filtering and search capabilities
 
 1. Go to **Invoices > New Invoice**
 2. Select or create a **customer**
-3. Add **line items** with description, quantity, unit price, and VAT rate. The default VAT rate for new lines comes from your workspace tax settings (Geldzaken → Belasting). If a customer has reverse charge enabled, the line automatically uses 0%.
+3. Add **line items** with description, quantity, unit price, and VAT rate. The default VAT rate for new lines comes from your tax settings (Settings > BTW). If a customer has reverse charge enabled, the line automatically uses 0%.
 4. Set the **invoice date** and **due date**
 5. Add optional **notes** or **internal remarks**
-6. Click **Save** to create a draft
+6. Save as a **draft** to keep editing later, or **finalize** to lock the invoice and prepare it for sending
 
-### Quick Add
+### Draft or finalize
 
-For faster creation:
-
-1. Click the quick-add button on the invoices list
-2. Select a customer
-3. Add items or choose a template
-4. Save (and optionally send immediately)
+Saving as a draft keeps the invoice fully editable. Finalizing locks the invoice, assigns the definitive invoice number, and sets the status to **Open** (ready to send). Finalizing is also the moment the readiness checks fire: MyCompanyDesk verifies that your company has a BTW-id (VAT number) and IBAN on file (see [Finalizing and sending](#finalizing-and-sending)).
 
 ### From a template
 
-1. When creating a new invoice, click **Use Template**
-2. Select a saved template
-3. All line items are pre-filled — adjust as needed
-4. Save and send
+Templates live in the sidebar: click **Templates** under Quick Actions to open the templates modal. Choosing an invoice template opens a new invoice with all template fields pre-filled; adjust as needed, then save or finalize.
+
+To create a template, open an invoice and click **Save as Template**.
+
+### Billing time entries
+
+When you select a customer on the invoice form, MyCompanyDesk pulls in that customer's unbilled time entries. Add them individually or in one go; each entry becomes a line item with the hours, the hourly rate, and an automatically filled description. If the time entry has no description of its own, a readable default is used, based on the project name or the period. You can also set a per-customer description template on the customer record to control how these lines are worded.
+
+Unbilled expenses for the customer can be pulled in the same way.
 
 ## Invoice details
 
@@ -79,7 +86,7 @@ Cancel an invoice that should no longer be paid. Cancelled invoices remain in yo
 
 ### Duplicate
 
-Create a copy of an existing invoice — useful for recurring billing to the same customer.
+Create a copy of an existing invoice, useful for recurring billing to the same customer.
 
 ### Send reminder
 
@@ -89,10 +96,13 @@ Send a payment reminder for overdue invoices.
 
 Select multiple invoices from the list to perform actions in bulk:
 
-- **Send** — Send multiple draft invoices at once
-- **Mark as paid** — Record payment for multiple invoices
-- **Archive** — Move invoices to the archive
-- **Delete** — Permanently remove invoices
+- **Send**: marks the selected invoices as sent. This updates the status only; no emails are sent.
+- **Mark as paid**: record payment for multiple invoices
+- **Cancel**: cancel multiple invoices
+- **Archive**: move invoices to the archive
+- **Delete**: remove invoices
+
+In the Archive and Trash views, the bulk actions change to restore, move to trash, and delete forever.
 
 ## Payment links
 
@@ -108,8 +118,8 @@ Payment is automatically recorded and the invoice status updates to **Paid**.
 
 Enable online invoice payments by connecting your own Mollie or Stripe account:
 
-1. Go to **Money → Payments** in your workspace sidebar
-2. Under **Online betalingen**, connect your processor of choice
+1. Go to **Settings > Betalen**
+2. Under **Klanten laten betalen met iDEAL**, connect your processor of choice
 3. Mollie supports iDEAL, Bancontact, credit card, and bank transfer
 4. Stripe Connect supports card, Apple Pay, Google Pay, and SEPA direct debit
 
@@ -141,27 +151,22 @@ To refund a payment:
 
 The invoice module supports multiple document types:
 
-- **Invoice** — Standard billing document
-- **Credit note** — Adjustment for refunds or corrections
-- **Reminder** — Payment reminder for overdue invoices
+- **Invoice**: standard billing document
+- **Credit note**: adjustment for refunds or corrections
+- **Reminder**: payment reminder for overdue invoices
 
 ## Filtering and search
 
-Use the filter bar to narrow down your invoices:
+The list offers:
 
-- **Status** — Draft, Sent, Overdue, Paid, Cancelled
-- **Customer** — Filter by specific customer
-- **Project** — Filter by linked project
-- **Date range** — Filter by invoice or due date
-- **Search** — Search by invoice number, customer name, or description
+- **Search**: search by invoice number, customer name, or description
+- **View tabs**: Active, Archive, Trash
+- **Status**: All statuses, Draft, Open, Sent, Paid, Overdue, Needs verification
+- **Date range**: filter by date
 
 ## Export
 
-Export your invoices as CSV for use in Excel, Google Sheets, or your accounting software.
-
-::: info
-CSV export requires the **Pro** plan or higher.
-:::
+Export your invoices as CSV via **Settings > Gegevens downloaden** (available from the Starter plan). The same page also offers a full backup of all your data.
 
 ## Finalizing and sending
 

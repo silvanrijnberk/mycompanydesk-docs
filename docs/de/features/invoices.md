@@ -8,14 +8,21 @@ Rechnungen stehen im Mittelpunkt von MyCompanyDesk. Erstellen Sie professionelle
 
 ## Übersicht
 
-Die Rechnungsseite zeigt alle Ihre Rechnungen mit Filter- und Suchfunktionen. Verwenden Sie die Status-Tabs für eine schnelle Ansicht:
+Die Rechnungsseite zeigt alle Ihre Rechnungen mit Filter- und Suchfunktionen. Die Tabs oben sind Ansichten, keine Status:
 
-- **Alle** — Jede Rechnung
-- **Entwurf** — Erstellt, aber nicht gesendet
-- **Gesendet** — An Kunden zugestellt
-- **Überfällig** — Fälligkeitsdatum überschritten, unbezahlt
-- **Bezahlt** — Zahlung eingegangen
-- **Storniert** — Stornierte Rechnungen
+- **Aktiv**: Ihre Arbeitsliste mit Rechnungen
+- **Archiv**: Rechnungen, die Sie archiviert haben
+- **Papierkorb**: Rechnungen, die auf endgültige Löschung warten
+
+Innerhalb einer Ansicht filtern Sie mit dem Status-Dropdown nach:
+
+- **Alle Status**: jede Rechnung in der Ansicht
+- **Entwurf**: erstellt, aber noch nicht abgeschlossen
+- **Offen**: abgeschlossen und versandbereit, aber noch nicht gesendet
+- **Gesendet**: an Kunden zugestellt
+- **Bezahlt**: Zahlung eingegangen
+- **Überfällig**: Fälligkeitsdatum überschritten, unbezahlt
+- **Überprüfung erforderlich**: der Kunde hat die Rechnung im Kundenportal als bezahlt markiert und wartet auf Ihre Bestätigung
 
 ## Rechnung erstellen
 
@@ -23,26 +30,26 @@ Die Rechnungsseite zeigt alle Ihre Rechnungen mit Filter- und Suchfunktionen. Ve
 
 1. Gehen Sie zu **Rechnungen > Neue Rechnung**
 2. Wählen oder erstellen Sie einen **Kunden**
-3. Fügen Sie **Positionen** mit Beschreibung, Menge, Einzelpreis und USt.-Satz hinzu. Der Standard-USt.-Satz für neue Positionen stammt aus Ihren Steuereinstellungen (Finanzen → Steuern). Bei Kunden mit Reverse-Charge wird automatisch 0% verwendet.
+3. Fügen Sie **Positionen** mit Beschreibung, Menge, Einzelpreis und USt.-Satz hinzu. Der Standard-USt.-Satz für neue Positionen stammt aus Ihren Steuereinstellungen (Einstellungen > MwSt.). Bei Kunden mit Reverse-Charge wird automatisch 0% verwendet.
 4. Legen Sie das **Rechnungsdatum** und das **Fälligkeitsdatum** fest
 5. Fügen Sie optionale **Anmerkungen** oder **interne Bemerkungen** hinzu
-6. Klicken Sie auf **Speichern**, um einen Entwurf zu erstellen
+6. Speichern Sie als **Entwurf**, um später weiterzuarbeiten, oder **schließen Sie die Rechnung ab**, um sie zu sperren und für den Versand vorzubereiten
 
-### Schnellerfassung
+### Entwurf oder abschließen
 
-Für eine schnellere Erstellung:
-
-1. Klicken Sie auf die Schnellerfassungs-Schaltfläche auf der Rechnungsliste
-2. Wählen Sie einen Kunden
-3. Fügen Sie Positionen hinzu oder wählen Sie eine Vorlage
-4. Speichern (und optional sofort versenden)
+Als Entwurf gespeichert bleibt die Rechnung vollständig bearbeitbar. **Abschließen** sperrt die Rechnung, vergibt die endgültige Rechnungsnummer und setzt den Status auf **Offen** (versandbereit). Beim Abschließen laufen auch die Bereitschaftsprüfungen: MyCompanyDesk prüft, ob Ihr Unternehmen eine USt-IdNr. und IBAN hinterlegt hat (siehe [Finalisieren und Versenden](#finalisieren-und-versenden)).
 
 ### Aus einer Vorlage
 
-1. Klicken Sie beim Erstellen einer neuen Rechnung auf **Vorlage verwenden**
-2. Wählen Sie eine gespeicherte Vorlage
-3. Alle Positionen sind vorausgefüllt — passen Sie sie nach Bedarf an
-4. Speichern und versenden
+Vorlagen finden Sie in der Seitenleiste: Klicken Sie unter den Schnellaktionen auf **Vorlagen**, um das Vorlagenfenster zu öffnen. Wählen Sie eine Rechnungsvorlage, öffnet sich eine neue Rechnung mit allen Vorlagenfeldern vorausgefüllt; passen Sie sie nach Bedarf an und speichern Sie oder schließen Sie ab.
+
+Eine Vorlage erstellen Sie, indem Sie eine Rechnung öffnen und auf **Als Vorlage speichern** klicken.
+
+### Erfasste Stunden abrechnen
+
+Wenn Sie im Rechnungsformular einen Kunden auswählen, holt MyCompanyDesk die noch nicht abgerechneten Zeiterfassungen dieses Kunden. Fügen Sie sie einzeln oder auf einmal hinzu; jeder Eintrag wird eine Position mit den Stunden, dem Stundensatz und einer automatisch ausgefüllten Beschreibung. Hat die Zeiterfassung selbst keine Beschreibung, wird ein lesbarer Standard verwendet, basierend auf dem Projektnamen oder dem Zeitraum. Sie können auf dem Kundendatensatz auch eine Beschreibungsvorlage pro Kunde festlegen, um zu steuern, wie diese Zeilen formuliert werden.
+
+Nicht abgerechnete Ausgaben des Kunden können Sie auf dieselbe Weise übernehmen.
 
 ## Rechnungsdetails
 
@@ -79,7 +86,7 @@ Stornieren Sie eine Rechnung, die nicht mehr bezahlt werden soll. Stornierte Rec
 
 ### Duplizieren
 
-Erstellen Sie eine Kopie einer bestehenden Rechnung — nützlich für wiederkehrende Abrechnungen an denselben Kunden.
+Erstellen Sie eine Kopie einer bestehenden Rechnung, nützlich für wiederkehrende Abrechnungen an denselben Kunden.
 
 ### Erinnerung senden
 
@@ -87,12 +94,15 @@ Senden Sie eine Zahlungserinnerung für überfällige Rechnungen.
 
 ## Massenaktionen
 
-Wählen Sie mehrere Rechnungen aus der Liste, um Aktionen in großem Umfang durchzuführen:
+Wählen Sie mehrere Rechnungen aus der Liste, um Aktionen in Masse durchzuführen:
 
-- **Senden** — Mehrere Entwurfsrechnungen gleichzeitig versenden
-- **Als bezahlt markieren** — Zahlung für mehrere Rechnungen erfassen
-- **Archivieren** — Rechnungen ins Archiv verschieben
-- **Löschen** — Rechnungen dauerhaft entfernen
+- **Senden**: markiert die ausgewählten Rechnungen als gesendet. Dies aktualisiert nur den Status; es werden keine E-Mails versendet.
+- **Als bezahlt markieren**: Zahlung für mehrere Rechnungen erfassen
+- **Stornieren**: mehrere Rechnungen stornieren
+- **Archivieren**: Rechnungen ins Archiv verschieben
+- **Löschen**: Rechnungen entfernen
+
+In den Ansichten Archiv und Papierkorb wechseln die Massenaktionen zu Wiederherstellen, In Papierkorb verschieben und Endgültig löschen.
 
 ## Zahlungslinks
 
@@ -100,7 +110,7 @@ Wenn Sie eine Rechnung versenden, wird ein eindeutiger Zahlungslink generiert. I
 
 1. Auf den Link in der E-Mail klicken
 2. Die Rechnung im **Kundenportal** ansehen
-3. Direkt online bezahlen, ueber Ihr verbundenes Mollie- oder Stripe-Konto
+3. Direkt online bezahlen, über Ihr verbundenes Mollie- oder Stripe-Konto
 
 Die Zahlung wird automatisch erfasst und der Rechnungsstatus wird auf **Bezahlt** aktualisiert.
 
@@ -108,16 +118,16 @@ Die Zahlung wird automatisch erfasst und der Rechnungsstatus wird auf **Bezahlt*
 
 Aktivieren Sie Online-Rechnungszahlungen, indem Sie Ihr eigenes Mollie- oder Stripe-Konto verbinden:
 
-1. Gehen Sie zu **Geld → Zahlungen** in der Seitenleiste Ihres Arbeitsbereichs
-2. Verbinden Sie unter **Online betalingen** den gewuenschten Anbieter
-3. Mollie unterstuetzt iDEAL, Bancontact, Kreditkarte und Bankueberweisung
-4. Stripe Connect unterstuetzt Karte, Apple Pay, Google Pay und SEPA-Lastschrift
+1. Gehen Sie zu **Einstellungen > Zahlung**
+2. Verbinden Sie unter **Kunden mit iDEAL bezahlen lassen** den gewünschten Anbieter
+3. Mollie unterstützt iDEAL, Bancontact, Kreditkarte und Banküberweisung
+4. Stripe Connect unterstützt Karte, Apple Pay, Google Pay und SEPA-Lastschrift
 
-Nach der Verbindung enthaelt jede von Ihnen versendete Rechnung einen Zahlungslink. Ihre Kunden bezahlen ueber Ihr eigenes Anbieterkonto. Das Geld geht direkt an Sie. MyCompanyDesk verarbeitet oder verwahrt keine Zahlungen fuer Sie.
+Nach der Verbindung enthält jede von Ihnen versendete Rechnung einen Zahlungslink. Ihre Kunden bezahlen über Ihr eigenes Anbieterkonto. Das Geld geht direkt an Sie. MyCompanyDesk verarbeitet oder verwahrt keine Zahlungen für Sie.
 
 ## Zahlungsanbieter-Badge
 
-Wenn eine Rechnung vollstaendig bezahlt ist, zeigt die Kopfzeile des Zahlungsbereichs ein Badge an, das angibt, ueber welchen Anbieter die Zahlung eingegangen ist: "Bezahlt ueber Mollie" oder "Bezahlt ueber Stripe". Der dominante Anbieter wird angezeigt, wenn mehrere Zahlungsmethoden verwendet wurden. So sehen Sie auf einen Blick, wo das Geld eingegangen ist, ohne durch den Zahlungsverlauf scrollen zu muessen.
+Wenn eine Rechnung vollständig bezahlt ist, zeigt die Kopfzeile des Zahlungsbereichs ein Badge an, das angibt, über welchen Anbieter die Zahlung eingegangen ist: "Bezahlt über Mollie" oder "Bezahlt über Stripe". Der dominante Anbieter wird angezeigt, wenn mehrere Zahlungsmethoden verwendet wurden. So sehen Sie auf einen Blick, wo das Geld eingegangen ist, ohne durch den Zahlungsverlauf scrollen zu müssen.
 
 ## Zahlungen rückerstatten
 
@@ -141,35 +151,30 @@ So erstatten Sie eine Zahlung:
 
 Das Rechnungsmodul unterstützt mehrere Dokumenttypen:
 
-- **Rechnung** — Standard-Abrechnungsdokument
-- **Gutschrift** — Anpassung für Rückerstattungen oder Korrekturen
-- **Erinnerung** — Zahlungserinnerung für überfällige Rechnungen
+- **Rechnung**: Standard-Abrechnungsdokument
+- **Gutschrift**: Anpassung für Rückerstattungen oder Korrekturen
+- **Erinnerung**: Zahlungserinnerung für überfällige Rechnungen
 
 ## Filtern und Suchen
 
-Verwenden Sie die Filterleiste, um Ihre Rechnungen einzugrenzen:
+Die Liste bietet:
 
-- **Status** — Entwurf, Gesendet, Überfällig, Bezahlt, Storniert
-- **Kunde** — Nach bestimmtem Kunden filtern
-- **Projekt** — Nach verknüpftem Projekt filtern
-- **Datumsbereich** — Nach Rechnungs- oder Fälligkeitsdatum filtern
-- **Suche** — Nach Rechnungsnummer, Kundenname oder Beschreibung suchen
+- **Suche**: nach Rechnungsnummer, Kundenname oder Beschreibung suchen
+- **Ansichts-Tabs**: Aktiv, Archiv, Papierkorb
+- **Status**: Alle Status, Entwurf, Offen, Gesendet, Bezahlt, Überfällig, Überprüfung erforderlich
+- **Datumsbereich**: nach Datum filtern
 
 ## Export
 
-Exportieren Sie Ihre Rechnungen als CSV zur Verwendung in Excel, Google Sheets oder Ihrer Buchhaltungssoftware.
-
-::: info
-CSV-Export erfordert den **Pro**-Tarif oder höher.
-:::
+Exportieren Sie Ihre Rechnungen als CSV über **Einstellungen > Daten herunterladen** (verfügbar ab dem Starter-Tarif). Auf derselben Seite können Sie auch ein vollständiges Backup all Ihrer Daten erstellen.
 
 ## Finalisieren und Versenden
 
-Wenn Sie eine Rechnung finalisieren oder versenden, prüft MyCompanyDesk, ob Ihre Firma eine USt-IdNr. (Umsatzsteuer-Identifikationsnummer) und eine IBAN hinterlegt hat. In den Niederlanden ist eine USt-IdNr. gesetzlich auf der Rechnung vorgeschrieben, und Ihre IBAN zeigt Kunden, wohin sie zahlen sollen.
+Wenn Sie eine Rechnung abschließen oder versenden, prüft MyCompanyDesk, ob Ihre Firma eine USt-IdNr. (Umsatzsteuer-Identifikationsnummer) und eine IBAN hinterlegt hat. In den Niederlanden ist eine USt-IdNr. gesetzlich auf der Rechnung vorgeschrieben, und Ihre IBAN zeigt Kunden, wohin sie zahlen sollen.
 
-Fehlt eines der Felder, oeffnet sich ein Dialog, in dem Sie die Angaben direkt nachtragen koennen. Nach dem Speichern wird die Rechnung automatisch finalisiert.
+Fehlt eines der Felder, öffnet sich ein Dialog, in dem Sie die Angaben direkt nachtragen können. Nach dem Speichern wird die Rechnung automatisch finalisiert.
 
-Warten Sie noch auf Ihre USt-IdNr. vom Finanzamt, oder sind Sie unter der Kleinunternehmerregelung (KOR) befreit? Sie koennen den Hinweis ueberspringen und trotzdem fortfahren. Tragen Sie Ihre USt-IdNr. spaeter nach, sobald sie vorliegt.
+Warten Sie noch auf Ihre USt-IdNr. vom Finanzamt, oder sind Sie unter der Kleinunternehmerregelung (KOR) befreit? Sie können den Hinweis überspringen und trotzdem fortfahren. Tragen Sie Ihre USt-IdNr. später nach, sobald sie vorliegt.
 
 ## Tipps
 
