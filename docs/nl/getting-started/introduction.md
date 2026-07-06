@@ -4,20 +4,20 @@ title: Introductie
 
 # Introductie
 
-MyCompanyDesk is een alles-in-een boekhoud- en bedrijfsmanagementplatform, ontworpen voor zzp'ers, kleine bedrijven en vastgoedbeheerders. Het helpt je bij het beheren van je volledige financiele workflow — van het maken van facturen en het bijhouden van uitgaven tot het doen van BTW-aangifte en het beheren van klantrelaties.
+MyCompanyDesk is een alles-in-een boekhoud- en bedrijfsmanagementplatform, ontworpen voor zzp'ers, kleine bedrijven en vastgoedbeheerders. Het helpt je bij het beheren van je volledige financiële workflow, van het maken van facturen en het bijhouden van uitgaven tot het doen van BTW-aangifte en het beheren van klantrelaties.
 
 ## Wat kun je doen met MyCompanyDesk?
 
-- **Facturen maken en versturen** — Professionele facturen met betaallinks, PDF-generatie en e-mailverzending
-- **Uitgaven bijhouden** — Registreer uitgaven handmatig of scan bonnen met AI-gestuurde OCR
-- **Klanten beheren** — Onderhoud een complete klantendatabase met contactgegevens en geschiedenis
-- **Offertes maken** — Maak offertes en zet ze om naar facturen wanneer ze geaccepteerd zijn
-- **Projecten beheren** — Organiseer werk in projecten, registreer tijd en monitor winstgevendheid
-- **Contracten beheren** — Stel terugkerende service- of huurcontracten in
-- **Objecten bijhouden** — Beheer huurwoningen, voertuigen en apparatuur
-- **Facturatie automatiseren** — Stel terugkerende facturen en uitgaven in
-- **Rapportages bekijken** — Omzet, winst, cashflow, BTW en klantanalyses
-- **Samenwerken** — Nodig teamleden uit, stel rechten in en deel met je boekhouder
+- **Facturen maken en versturen**: Professionele facturen met betaallinks, PDF-generatie en e-mailverzending
+- **Uitgaven bijhouden**: Registreer uitgaven handmatig of scan bonnen met AI-gestuurde OCR
+- **Klanten beheren**: Onderhoud een complete klantendatabase met contactgegevens en geschiedenis
+- **Offertes maken**: Maak offertes en zet ze om naar facturen wanneer ze geaccepteerd zijn
+- **Projecten beheren**: Organiseer werk in projecten, registreer tijd en monitor winstgevendheid
+- **Contracten beheren**: Stel terugkerende service- of huurcontracten in
+- **Objecten bijhouden**: Beheer huurwoningen, voertuigen en apparatuur
+- **Facturatie automatiseren**: Stel terugkerende facturen en uitgaven in
+- **Rapportages bekijken**: Omzet, winst, cashflow, BTW en klantanalyses
+- **Samenwerken**: Nodig teamleden uit, stel rechten in en deel met je boekhouder
 
 ## Interfacetaal
 

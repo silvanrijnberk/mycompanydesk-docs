@@ -15,7 +15,7 @@ features:
   - icon:
       src: /icons/file-bar-chart.svg
     title: Facturen & Offertes
-    details: Maak professionele facturen en offertes, verstuur ze naar klanten en houd betalingen bij — alles op één plek.
+    details: Maak professionele facturen en offertes, verstuur ze naar klanten en houd betalingen bij, alles op één plek.
   - icon:
       src: /icons/receipt.svg
     title: Uitgaven bijhouden

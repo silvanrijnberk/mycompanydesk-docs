@@ -15,7 +15,7 @@ features:
   - icon:
       src: /icons/file-bar-chart.svg
     title: Factures & Devis
-    details: Créez des factures et devis professionnels, envoyez-les à vos clients et suivez les paiements — tout en un seul endroit.
+    details: Créez des factures et devis professionnels, envoyez-les à vos clients et suivez les paiements, tout en un seul endroit.
   - icon:
       src: /icons/receipt.svg
     title: Suivi des dépenses

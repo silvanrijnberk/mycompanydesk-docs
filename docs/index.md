@@ -15,7 +15,7 @@ features:
   - icon:
       src: /icons/file-bar-chart.svg
     title: Invoices & Quotes
-    details: Create professional invoices and quotes, send them to customers, and track payments — all in one place.
+    details: Create professional invoices and quotes, send them to customers, and track payments, all in one place.
   - icon:
       src: /icons/receipt.svg
     title: Expense Tracking

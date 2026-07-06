@@ -16,9 +16,9 @@ Anstatt jede Ausgabe manuell einzugeben, fotografieren Sie einen Beleg oder lade
 
 ## Unterstützte Formate
 
-- **Bilder** — JPEG, PNG, WebP
-- **PDF** — PDF-Rechnungen und Belege
-- **Maximale Dateigröße** — 50MB
+- **Bilder**: JPEG, PNG, WebP
+- **PDF**: PDF-Rechnungen und Belege
+- **Maximale Dateigröße**: 50MB
 
 ## So scannen Sie einen Beleg
 
@@ -71,11 +71,11 @@ Der Scanner hat ein Panel mit erweiterten Optionen:
 
 ## Tipps für beste Ergebnisse
 
-- **Gute Beleuchtung** — Fotografieren Sie bei guten Lichtverhältnissen
-- **Flache Oberfläche** — Legen Sie den Beleg auf eine flache Oberfläche
-- **Vollständiger Beleg** — Stellen Sie sicher, dass der gesamte Beleg im Bild ist
-- **Klarer Text** — Stellen Sie sicher, dass der Text lesbar und nicht verschwommen ist
-- **Ein Beleg pro Scan** — Scannen Sie Belege einzeln für beste Genauigkeit
+- **Gute Beleuchtung**: Fotografieren Sie bei guten Lichtverhältnissen
+- **Flache Oberfläche**: Legen Sie den Beleg auf eine flache Oberfläche
+- **Vollständiger Beleg**: Stellen Sie sicher, dass der gesamte Beleg im Bild ist
+- **Klarer Text**: Stellen Sie sicher, dass der Text lesbar und nicht verschwommen ist
+- **Ein Beleg pro Scan**: Scannen Sie Belege einzeln für beste Genauigkeit
 
 ## Nach dem Scannen
 
@@ -93,7 +93,7 @@ Der Uploader verarbeitet eine Datei pro Durchgang. Um mehrere Belege zu verarbei
 
 ## Tipps
 
-- Scannen Sie Belege sofort nach Erhalt — lassen Sie sie sich nicht ansammeln
+- Scannen Sie Belege sofort nach Erhalt, damit sie sich nicht ansammeln
 - Überprüfen Sie den extrahierten Betrag sorgfältig, besonders bei Belegen mit mehreren Währungen
 - Aktivieren Sie KI-Vorschläge für automatische Kategorisierung nach dem Scannen
 - Bewahren Sie die Original-Belegdatei als Anhang für Steuerprüfungszwecke auf

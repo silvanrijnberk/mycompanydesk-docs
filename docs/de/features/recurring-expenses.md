@@ -22,11 +22,11 @@ Häufige Anwendungsfälle:
 
 1. Gehen Sie zu **Wiederkehrende Ausgaben > Neu**
 2. Füllen Sie die Vorlage aus:
-   - **Beschreibung** — Wofür die Ausgabe ist
-   - **Betrag** — Die wiederkehrenden Kosten
-   - **Kategorie** — Ausgabenkategorie
-   - **USt.-Satz** — Anwendbare USt.
-   - **Häufigkeit** — Wöchentlich, monatlich, vierteljährlich oder jährlich
+   - **Beschreibung**: Wofür die Ausgabe ist
+   - **Betrag**: Die wiederkehrenden Kosten
+   - **Kategorie**: Ausgabenkategorie
+   - **USt.-Satz**: Anwendbare USt.
+   - **Häufigkeit**: Wöchentlich, monatlich, vierteljährlich oder jährlich
 3. Klicken Sie auf **Speichern**
 
 ## Häufigkeitsoptionen

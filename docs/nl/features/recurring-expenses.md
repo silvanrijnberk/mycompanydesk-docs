@@ -22,11 +22,11 @@ Veelvoorkomende toepassingen:
 
 1. Ga naar **Terugkerende uitgaven > Nieuw**
 2. Vul het sjabloon in:
-   - **Omschrijving** — Waarvoor de uitgave is
-   - **Bedrag** — De terugkerende kosten
-   - **Categorie** — Uitgavecategorie
-   - **BTW-tarief** — Toepasselijk BTW-percentage
-   - **Frequentie** — Wekelijks, maandelijks, per kwartaal of jaarlijks
+   - **Omschrijving**: Waarvoor de uitgave is
+   - **Bedrag**: De terugkerende kosten
+   - **Categorie**: Uitgavecategorie
+   - **BTW-tarief**: Toepasselijk BTW-percentage
+   - **Frequentie**: Wekelijks, maandelijks, per kwartaal of jaarlijks
 3. Klik op **Opslaan**
 
 ## Frequentieopties

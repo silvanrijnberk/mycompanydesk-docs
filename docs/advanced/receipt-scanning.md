@@ -16,9 +16,9 @@ Instead of manually entering every expense, take a photo of a receipt or upload 
 
 ## Supported formats
 
-- **Images** — JPEG, PNG, WebP
-- **PDF** — PDF invoices and receipts
-- **Maximum file size** — 50MB
+- **Images**: JPEG, PNG, WebP
+- **PDF**: PDF invoices and receipts
+- **Maximum file size**: 50MB
 
 ## How to scan a receipt
 
@@ -71,11 +71,11 @@ The scanner has an advanced options panel:
 
 ## Tips for best results
 
-- **Good lighting** — Take photos in well-lit conditions
-- **Flat surface** — Place the receipt on a flat surface
-- **Full receipt** — Make sure the entire receipt is in frame
-- **Clear text** — Ensure text is legible and not blurry
-- **One receipt per scan** — Scan receipts individually for best accuracy
+- **Good lighting**: Take photos in well-lit conditions
+- **Flat surface**: Place the receipt on a flat surface
+- **Full receipt**: Make sure the entire receipt is in frame
+- **Clear text**: Ensure text is legible and not blurry
+- **One receipt per scan**: Scan receipts individually for best accuracy
 
 ## After scanning
 
@@ -93,7 +93,7 @@ The uploader takes one file at a time. To process several receipts, scan them on
 
 ## Tips
 
-- Scan receipts as soon as you receive them — don't let them pile up
+- Scan receipts as soon as you receive them, so they do not pile up
 - Check the extracted amount carefully, especially for receipts with multiple currencies
 - Enable AI suggestions for automatic categorization after scanning
 - Keep the original receipt file attached for tax audit purposes

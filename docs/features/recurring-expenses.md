@@ -22,11 +22,11 @@ Common use cases:
 
 1. Go to **Recurring Expenses > New**
 2. Fill in the template:
-   - **Description** — What the expense is for
-   - **Amount** — The recurring cost
-   - **Category** — Expense category
-   - **VAT rate** — Applicable VAT
-   - **Frequency** — Weekly, monthly, quarterly, or yearly
+   - **Description**: What the expense is for
+   - **Amount**: The recurring cost
+   - **Category**: Expense category
+   - **VAT rate**: Applicable VAT
+   - **Frequency**: Weekly, monthly, quarterly, or yearly
 3. Click **Save**
 
 ## Frequency options

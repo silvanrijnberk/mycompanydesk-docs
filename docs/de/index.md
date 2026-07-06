@@ -15,7 +15,7 @@ features:
   - icon:
       src: /icons/file-bar-chart.svg
     title: Rechnungen & Angebote
-    details: Erstellen Sie professionelle Rechnungen und Angebote, versenden Sie diese an Kunden und verfolgen Sie Zahlungen — alles an einem Ort.
+    details: Erstellen Sie professionelle Rechnungen und Angebote, versenden Sie diese an Kunden und verfolgen Sie Zahlungen, alles an einem Ort.
   - icon:
       src: /icons/receipt.svg
     title: Ausgabenverfolgung

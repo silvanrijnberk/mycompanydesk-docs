@@ -16,9 +16,9 @@ In plaats van elke uitgave handmatig in te voeren, maak je een foto van een bon 
 
 ## Ondersteunde formaten
 
-- **Afbeeldingen** — JPEG, PNG, WebP
-- **PDF** — PDF-facturen en bonnen
-- **Maximale bestandsgrootte** — 50MB
+- **Afbeeldingen**: JPEG, PNG, WebP
+- **PDF**: PDF-facturen en bonnen
+- **Maximale bestandsgrootte**: 50MB
 
 ## Een bon scannen
 
@@ -71,11 +71,11 @@ De scanner heeft een paneel met geavanceerde opties:
 
 ## Tips voor het beste resultaat
 
-- **Goede belichting** — Maak foto's bij goede lichtomstandigheden
-- **Vlak oppervlak** — Leg de bon op een vlak oppervlak
-- **Volledige bon** — Zorg dat de hele bon in beeld is
-- **Leesbare tekst** — Zorg dat tekst leesbaar en niet wazig is
-- **Een bon per scan** — Scan bonnen afzonderlijk voor de beste nauwkeurigheid
+- **Goede belichting**: Maak foto's bij goede lichtomstandigheden
+- **Vlak oppervlak**: Leg de bon op een vlak oppervlak
+- **Volledige bon**: Zorg dat de hele bon in beeld is
+- **Leesbare tekst**: Zorg dat tekst leesbaar en niet wazig is
+- **Een bon per scan**: Scan bonnen afzonderlijk voor de beste nauwkeurigheid
 
 ## Na het scannen
 
@@ -93,7 +93,7 @@ De uploader verwerkt een bestand per keer. Wil je meerdere bonnen verwerken, sca
 
 ## Tips
 
-- Scan bonnen zodra je ze ontvangt — laat ze niet opstapelen
+- Scan bonnen zodra je ze ontvangt, zodat ze zich niet opstapelen
 - Controleer het geextraheerde bedrag zorgvuldig, vooral bij bonnen met meerdere valuta's
 - Schakel AI-suggesties in voor automatische categorisatie na het scannen
 - Bewaar het originele bonbestand als bijlage voor belastingcontroledoeleinden
