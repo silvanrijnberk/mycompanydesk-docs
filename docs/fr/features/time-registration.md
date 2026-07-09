@@ -17,6 +17,8 @@ Passez d'une vue à l'autre avec le sélecteur en haut (balayez entre les pério
 
 Les entrées planifiées portent le badge **Provisoire** ; appuyez sur **Confirmer** une fois le travail réellement effectué pour les transformer en heures enregistrées.
 
+Vous préférez ne pas le faire manuellement ? Activez **Confirmer automatiquement le temps provisoire** dans les paramètres de l'agenda. Les entrées provisoires sont alors confirmées automatiquement une fois leur date prévue passée, même si personne n'ouvre l'agenda.
+
 ## Enregistrer du temps
 
 ### Minuteur
@@ -85,7 +87,7 @@ Les événements provenant d'un calendrier connecté apparaissent dans les vues 
 
 La roue dentée sur la page Agenda ouvre les paramètres de l'agenda. Vous y configurez :
 
-- Le **Mode heures uniquement** et le comportement de saisie
+- Le **Mode heures uniquement**, la **confirmation automatique du temps provisoire**, et le comportement de saisie
 - Le mode de travail : **Heures**, **Postes** ou minuteur
 - Les heures de travail affichées sur la chronologie
 - Les étapes affichées par la saisie rapide (projet, notes, déplacements)
