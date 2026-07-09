@@ -17,6 +17,8 @@ Wechseln Sie mit der Auswahl oben zwischen vier Ansichten (auf Mobilgeräten wis
 
 Geplante Einträge tragen das Label **Vorläufig**; drücken Sie **Bestätigen**, sobald die Arbeit tatsächlich erledigt ist, um sie in erfasste Stunden umzuwandeln.
 
+Möchten Sie das nicht manuell erledigen? Aktivieren Sie **Vorläufige Zeit automatisch bestätigen** in den Zeitplan-Einstellungen. Vorläufige Einträge werden dann automatisch bestätigt, sobald ihr geplanter Termin verstrichen ist, auch wenn niemand den Zeitplan öffnet.
+
 ## Zeit erfassen
 
 ### Timer
@@ -85,7 +87,7 @@ Termine aus einem verbundenen Kalender erscheinen in der Tages- und Wochenansich
 
 Das Zahnrad auf der Zeitplan-Seite öffnet die Zeitplan-Einstellungen. Hier konfigurieren Sie:
 
-- **Nur Stunden Modus** und weiteres Eingabeverhalten
+- **Nur Stunden Modus**, **Vorläufige Zeit automatisch bestätigen**, und weiteres Eingabeverhalten
 - Den Betriebsmodus: **Stunden**, **Schicht** oder **Timer**
 - Die auf der Zeitleiste sichtbaren Arbeitszeiten
 - Welche Schritte die Schnelleingabe zeigt (Projekt, Notizen, Fahrten)

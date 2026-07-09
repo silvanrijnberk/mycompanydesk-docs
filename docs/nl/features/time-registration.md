@@ -17,6 +17,8 @@ Wissel tussen vier weergaven met de kiezer bovenaan (veeg tussen periodes op mob
 
 Geplande registraties dragen het label **Gepland**; druk op **Bevestigen** zodra het werk echt is gedaan om ze om te zetten naar gelogde uren.
 
+Wil je dit niet handmatig doen? Zet **Geplande tijd automatisch bevestigen** aan in de agenda-instellingen. Geplande registraties worden dan automatisch bevestigd zodra de geplande datum is verstreken, ook als je de agenda niet opent.
+
 ## Uren schrijven
 
 ### Timer
@@ -85,7 +87,7 @@ Afspraken uit een gekoppelde agenda verschijnen in de dag- en weekweergave; tik 
 
 Het tandwiel op de pagina Uren & agenda opent de agenda-instellingen. Hier stel je in:
 
-- **Alleen uren modus** en ander invoergedrag
+- **Alleen uren modus**, **Geplande tijd automatisch bevestigen**, en ander invoergedrag
 - De werkmodus: **Uren**, **Diensten** of **Timer**
 - De werktijden die op de tijdlijn zichtbaar zijn
 - Welke stappen de snelle invoer toont (project, notities, reizen)

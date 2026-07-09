@@ -17,6 +17,8 @@ Switch between four views with the selector at the top (swipe between periods on
 
 Planned entries carry a **Tentative** badge; press **Confirm** once the work actually happened to turn them into logged hours.
 
+If you want, enable **Auto-confirm tentative time** in the schedule settings. When this is on, tentative entries are confirmed automatically once their scheduled date has passed, even if nobody opens the Schedule page.
+
 ## Logging time
 
 ### Timer
@@ -85,7 +87,7 @@ Events pulled from a connected calendar show up in the day and week views; tap o
 
 The gear on the Schedule page opens the schedule settings. Here you configure:
 
-- **Hours only mode** and other entry behavior
+- **Hours only mode**, **Auto-confirm tentative time**, and other entry behavior
 - The work mode: **Hours**, **Shifts**, or **Timer**
 - The working hours shown on the timeline
 - Which quick-add steps appear (project, notes, travel)
