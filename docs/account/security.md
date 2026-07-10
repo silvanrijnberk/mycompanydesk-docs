@@ -1,6 +1,6 @@
 ---
 title: Security
-last_verified: 2026-07-02
+last_verified: 2026-07-10
 ---
 
 # Security
@@ -26,11 +26,13 @@ Add an extra layer of security to your account:
 4. Enter the verification code to confirm
 5. Save your **backup codes** in a secure location
 
+If you have the installed MyCompanyDesk app, you can choose to generate your login codes inside the app instead. During setup, choose **Gebruik de MyCompanyDesk-app**, then find your codes under **Instellingen > Inlogcodes** in the app.
+
 With 2FA enabled, you need both your password and a code from your authenticator app to log in.
 
 ### Logging in with 2FA
 
-After entering your password, the login screen asks for the 6-digit code from your authenticator app. No access to the app? Enter one of your backup codes in the same field.
+After entering your password, the login screen asks for the 6-digit code from your authenticator app. If you use the MyCompanyDesk app as your authenticator, open it and use the current code from **Instellingen > Inlogcodes**. No access to the app? Enter one of your backup codes in the same field.
 
 When you log in with your password and a code, you can tick **remember this device for 30 days**, so this device skips the code step for a month.
 

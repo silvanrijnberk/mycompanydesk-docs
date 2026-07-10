@@ -1,6 +1,6 @@
 ---
 title: Two-factor authentication
-last_verified: 2026-07-02
+last_verified: 2026-07-10
 chatbot:
   triggers: ["two factor", "two-factor", "2fa", "two step", "authenticator", "mfa", "tweestapsverificatie", "twee-factor", "zwei faktor", "authentification deux facteurs", "double authentification"]
   actions:
@@ -12,11 +12,11 @@ Two-factor authentication (2FA) adds a 6-digit code from an authenticator app on
 
 To enable 2FA:
 1. Go to Settings ("Instellingen") → "Inloggen"
-2. Click "Enable authenticator app" and scan the QR code with an authenticator app (Google Authenticator, 1Password, Authy)
-3. Enter the 6-digit code from the app and click "Verify & enable"
+2. Click "Enable authenticator app". Scan the QR code with an authenticator app (Google Authenticator, 1Password, Authy), or, if you have the installed MyCompanyDesk app, choose **Gebruik de MyCompanyDesk-app** to generate codes inside the app.
+3. Enter the 6-digit code from the app or from **Instellingen > Inlogcodes** and click "Verify & enable"
 4. Save the backup codes that appear. Each code works once when you don't have your authenticator at hand
 
-From then on, signing in asks for the 6-digit code after your email and password. Check "Remember this device for 30 days" and trusted devices skip the code.
+From then on, signing in asks for the 6-digit code after your email and password. If you use the MyCompanyDesk app as your authenticator, find the current code under **Instellingen > Inlogcodes**. Check "Remember this device for 30 days" and trusted devices skip the code.
 
 On the same page you can also add passkeys (Touch ID, Face ID, Windows Hello or your phone), give each one a name, and remove the ones you no longer use. The login screen then offers passkey sign-in as well.
 

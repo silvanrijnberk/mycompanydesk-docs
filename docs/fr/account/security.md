@@ -1,6 +1,6 @@
 ---
 title: Sécurité
-last_verified: 2026-07-02
+last_verified: 2026-07-10
 ---
 
 # Sécurité
@@ -26,11 +26,13 @@ Ajoutez une couche de sécurité supplémentaire à votre compte :
 4. Saisissez le code de vérification pour confirmer
 5. Conservez vos **codes de secours** en lieu sûr
 
+Si vous utilisez l'application MyCompanyDesk installée, vous pouvez choisir de générer vos codes de connexion dans l'application elle-même. Pendant la configuration, sélectionnez **Gebruik de MyCompanyDesk-app**, puis retrouvez vos codes de connexion sous **Instellingen > Inlogcodes** dans l'application.
+
 Avec la 2FA activée, vous avez besoin de votre mot de passe et d'un code de votre application d'authentification pour vous connecter.
 
 ### Se connecter avec la 2FA
 
-Après avoir saisi votre mot de passe, l'écran de connexion demande le code à 6 chiffres de votre application d'authentification. Plus d'accès à l'application ? Saisissez l'un de vos codes de secours dans le même champ.
+Après avoir saisi votre mot de passe, l'écran de connexion demande le code à 6 chiffres de votre application d'authentification. Si vous utilisez l'application MyCompanyDesk comme authentificateur, ouvrez l'application et utilisez le code actuel sous **Instellingen > Inlogcodes**. Plus d'accès à l'application ? Saisissez l'un de vos codes de secours dans le même champ.
 
 Lorsque vous vous connectez avec votre mot de passe et un code, vous pouvez cocher **mémoriser cet appareil pendant 30 jours** : cet appareil sautera alors l'étape du code pendant un mois.
 
