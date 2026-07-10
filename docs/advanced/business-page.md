@@ -347,6 +347,14 @@ What happens on submit:
 
 Newsletter submissions share the same rate limit as the contact form: 5 per minute per IP address. The Turnstile bot-protection widget is also active on newsletter forms when configured.
 
+## Legal pages
+
+The site builder seeds every new workspace with two standard legal pages: **Privacy Policy** (`/privacy`) and **Terms & Conditions** (`/algemene-voorwaarden`). The content uses placeholder markers for company details. When the page is rendered for visitors, these markers are replaced with the values from your **Company Settings** — business name, address, postal code, city, country, registration number, VAT number, and public email.
+
+You can edit the legal pages in the editor like any other page. The editor preserves the placeholder anchors inside the content, so opening and saving a page without changing it still lets future updates to your company details flow through automatically.
+
+The legal pages are rendered at publish time, just like the rest of your site. They share the same Live/Concept status and the same subscription visibility gate.
+
 ## Managing requests
 
 See [Quotes - Quote Requests](/features/quotes#quote-requests) for details on managing incoming requests.
