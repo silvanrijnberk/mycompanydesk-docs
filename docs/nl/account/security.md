@@ -1,6 +1,6 @@
 ---
 title: Beveiliging
-last_verified: 2026-07-02
+last_verified: 2026-07-10
 ---
 
 # Beveiliging
@@ -26,11 +26,13 @@ Voeg een extra beveiligingslaag toe aan je account:
 4. Vul de verificatiecode in om te bevestigen
 5. Bewaar je **back-upcodes** op een veilige plek
 
+Heb je de geïnstalleerde MyCompanyDesk-app, dan kun je codes ook in de app zelf laten genereren. Kies tijdens het instellen voor **Gebruik de MyCompanyDesk-app**, en vind je inlogcodes daarna onder **Instellingen > Inlogcodes** in de app.
+
 Met 2FA ingeschakeld heb je zowel je wachtwoord als een code uit je authenticator-app nodig om in te loggen.
 
 ### Inloggen met 2FA
 
-Na het invullen van je wachtwoord vraagt het inlogscherm om de 6-cijferige code uit je authenticator-app. Geen toegang tot je app? Vul in hetzelfde veld een van je back-upcodes in.
+Na het invullen van je wachtwoord vraagt het inlogscherm om de 6-cijferige code uit je authenticator-app. Gebruik je de MyCompanyDesk-app als authenticator, open de app en gebruik de huidige code bij **Instellingen > Inlogcodes**. Geen toegang tot je app? Vul in hetzelfde veld een van je back-upcodes in.
 
 Log je in met je wachtwoord en een code, dan kun je **dit apparaat 30 dagen onthouden** aanvinken; dit apparaat slaat de codestap dan een maand over.
 

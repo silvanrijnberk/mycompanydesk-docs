@@ -1,6 +1,6 @@
 ---
 title: Sicherheit
-last_verified: 2026-07-02
+last_verified: 2026-07-10
 ---
 
 # Sicherheit
@@ -26,11 +26,13 @@ Fügen Sie Ihrem Konto eine zusätzliche Sicherheitsebene hinzu:
 4. Geben Sie den Bestätigungscode ein
 5. Bewahren Sie Ihre **Backup-Codes** an einem sicheren Ort auf
 
+Wenn Sie die installierte MyCompanyDesk-App verwenden, können Sie Codes auch direkt in der App erzeugen. Wählen Sie während der Einrichtung **MyCompanyDesk-App verwenden** und finden Sie Ihre Anmeldecodes danach unter **Einstellungen > Anmeldecodes** in der App.
+
 Mit aktivierter 2FA benötigen Sie zum Anmelden sowohl Ihr Passwort als auch einen Code aus Ihrer Authenticator-App.
 
 ### Anmelden mit 2FA
 
-Nach der Eingabe Ihres Passworts fragt der Anmeldebildschirm nach dem 6-stelligen Code aus Ihrer Authenticator-App. Kein Zugriff auf die App? Geben Sie in dasselbe Feld einen Ihrer Backup-Codes ein.
+Nach der Eingabe Ihres Passworts fragt der Anmeldebildschirm nach dem 6-stelligen Code aus Ihrer Authenticator-App. Wenn Sie die MyCompanyDesk-App als Authenticator nutzen, öffnen Sie die App und verwenden Sie den aktuellen Code unter **Einstellungen > Anmeldecodes**. Kein Zugriff auf die App? Geben Sie in dasselbe Feld einen Ihrer Backup-Codes ein.
 
 Wenn Sie sich mit Passwort und Code anmelden, können Sie **dieses Gerät 30 Tage merken** ankreuzen; dieses Gerät überspringt den Code-Schritt dann einen Monat lang.
 
