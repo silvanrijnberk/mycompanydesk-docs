@@ -12,11 +12,11 @@ L'authentification à deux facteurs (2FA) ajoute un code à 6 chiffres issu d'un
 
 Pour activer la 2FA :
 1. Allez dans Paramètres → "Connexion"
-2. Cliquez sur "Activer l'application d'authentification". Scannez le QR code avec une application d'authentification (Google Authenticator, 1Password, Authy), ou, si vous utilisez l'application MyCompanyDesk installée, choisissez "Utiliser l'application MyCompanyDesk" pour générer les codes dans l'application.
-3. Saisissez le code à 6 chiffres de l'application ou de **Paramètres > Codes de connexion** et cliquez sur "Vérifier et activer"
+2. Cliquez sur "Activer l'application d'authentification". Scannez le QR code avec une application d'authentification (Google Authenticator, 1Password, Authy), ou, si vous utilisez l'application MyCompanyDesk installée, choisissez **Gebruik de MyCompanyDesk-app** pour générer les codes dans l'application.
+3. Saisissez le code à 6 chiffres de l'application ou de **Instellingen > Inlogcodes** et cliquez sur "Vérifier et activer"
 4. Conservez les codes de secours affichés. Chaque code fonctionne une seule fois quand vous n'avez pas votre authentificateur sous la main
 
-Dès lors, la connexion demande le code à 6 chiffres après votre e-mail et votre mot de passe. Si vous utilisez l'application MyCompanyDesk comme authentificateur, trouvez le code actuel sous **Paramètres > Codes de connexion**. Activez l'option pour mémoriser cet appareil pendant 30 jours et les appareils de confiance sautent cette étape.
+Dès lors, la connexion demande le code à 6 chiffres après votre e-mail et votre mot de passe. Si vous utilisez l'application MyCompanyDesk comme authentificateur, trouvez le code actuel sous **Instellingen > Inlogcodes**. Activez l'option pour mémoriser cet appareil pendant 30 jours et les appareils de confiance sautent cette étape.
 
 Sur la même page, vous pouvez aussi ajouter des passkeys (Touch ID, Face ID, Windows Hello ou votre téléphone), donner un nom à chaque passkey et supprimer celles que vous n'utilisez plus. L'écran de connexion propose ensuite également la connexion par passkey.
 

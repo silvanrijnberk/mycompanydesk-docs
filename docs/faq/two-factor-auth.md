@@ -12,7 +12,7 @@ Two-factor authentication (2FA) adds a 6-digit code from an authenticator app on
 
 To enable 2FA:
 1. Go to Settings ("Instellingen") → "Inloggen"
-2. Click "Enable authenticator app". Scan the QR code with an authenticator app (Google Authenticator, 1Password, Authy), or, if you have the installed MyCompanyDesk app, choose "Use the MyCompanyDesk app" to generate codes inside the app.
+2. Click "Enable authenticator app". Scan the QR code with an authenticator app (Google Authenticator, 1Password, Authy), or, if you have the installed MyCompanyDesk app, choose **Gebruik de MyCompanyDesk-app** to generate codes inside the app.
 3. Enter the 6-digit code from the app or from **Instellingen > Inlogcodes** and click "Verify & enable"
 4. Save the backup codes that appear. Each code works once when you don't have your authenticator at hand
 

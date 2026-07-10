@@ -12,11 +12,11 @@ Die Zwei-Faktor-Authentifizierung (2FA) ergänzt Ihr Passwort um einen 6-stellig
 
 So aktivieren Sie 2FA:
 1. Gehen Sie zu Einstellungen → "Anmeldung"
-2. Klicken Sie auf "Authenticator-App aktivieren". Scannen Sie den QR-Code mit einer Authenticator-App (Google Authenticator, 1Password, Authy), oder wählen Sie, wenn Sie die installierte MyCompanyDesk-App verwenden, "MyCompanyDesk-App verwenden" aus, um Codes direkt in der App zu erzeugen.
-3. Geben Sie den 6-stelligen Code aus der App oder unter **Einstellungen > Anmeldecodes** ein und klicken Sie auf "Prüfen & aktivieren"
+2. Klicken Sie auf "Authenticator-App aktivieren". Scannen Sie den QR-Code mit einer Authenticator-App (Google Authenticator, 1Password, Authy), oder wählen Sie, wenn Sie die installierte MyCompanyDesk-App verwenden, **Gebruik de MyCompanyDesk-app** aus, um Codes direkt in der App zu erzeugen.
+3. Geben Sie den 6-stelligen Code aus der App oder unter **Instellingen > Inlogcodes** ein und klicken Sie auf "Prüfen & aktivieren"
 4. Bewahren Sie die angezeigten Backup-Codes auf. Jeder Code funktioniert einmal, wenn Sie Ihren Authenticator nicht zur Hand haben
 
-Ab dann fragt die Anmeldung nach E-Mail-Adresse und Passwort zusätzlich nach dem 6-stelligen Code. Wenn Sie die MyCompanyDesk-App als Authenticator nutzen, finden Sie den aktuellen Code unter **Einstellungen > Anmeldecodes**. Aktivieren Sie die Option, dieses Gerät 30 Tage zu merken, und vertrauenswürdige Geräte überspringen den Code.
+Ab dann fragt die Anmeldung nach E-Mail-Adresse und Passwort zusätzlich nach dem 6-stelligen Code. Wenn Sie die MyCompanyDesk-App als Authenticator nutzen, finden Sie den aktuellen Code unter **Instellingen > Inlogcodes**. Aktivieren Sie die Option, dieses Gerät 30 Tage zu merken, und vertrauenswürdige Geräte überspringen den Code.
 
 Auf derselben Seite können Sie außerdem Passkeys hinzufügen (Touch ID, Face ID, Windows Hello oder Ihr Telefon), jedem Passkey einen Namen geben und nicht mehr genutzte Passkeys entfernen. Der Anmeldebildschirm bietet danach auch die Anmeldung per Passkey an.
 
