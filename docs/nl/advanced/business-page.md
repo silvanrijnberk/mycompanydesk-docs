@@ -310,6 +310,30 @@ Boven het hoofdmenu geeft een **Navbar**-paneel je direct toegang tot de headers
 
 Deze instellingen gelden voor elke pagina van je site, net zoals op het Stijl-tabblad. Wijzigingen worden automatisch opgeslagen met een korte wachttijd nadat je stopt met typen. Voor de visuele layout, achtergrondstijl en knopweergave, zie het [Stijl-tabblad](#styling-van-je-site).
 
+## Bedrijfsgegevenstokens
+
+Tekstvelden in de sitebouwer kunnen merge-tokens bevatten die live bedrijfsgegevens uit je werkruimte halen. Bij het renderen van de gepubliceerde site wordt elk token vervangen door de huidige waarde uit **Bedrijfsgegevens** (`/settings/bedrijfsgegevens`). Zo hoef je je bedrijfsnaam, adres of contactgegevens maar op één plek te beheren.
+
+Beschikbare tokens:
+
+| Token | Toont |
+|---|---|
+| `{{bedrijf.naam}}` | Bedrijfsnaam |
+| `{{bedrijf.adres}}` | Volledig adres, samengesteld uit straat, postcode en plaats |
+| `{{bedrijf.kvk}}` | KVK-nummer |
+| `{{bedrijf.btw}}` | BTW-id |
+| `{{bedrijf.email}}` | Publiek e-mailadres |
+
+Zo gebruik je ze:
+
+- Klik in elk tekstveld op het chip dat bij de gewenste waarde hoort. Het token wordt op de cursorpositie ingevoegd.
+- Je kunt een token ook met de hand typen. Alleen de vijf tokens hierboven worden ondersteund.
+- Is een waarde in je bedrijfsgegevens leeg, dan toont de gepubliceerde site een hint tussen rechte haken, bijvoorbeeld `[bedrijfsnaam]`, zodat je ziet wat nog ontbreekt.
+- Tokens worden opgelost ná de publicatiesnapshot, dus latere wijzigingen in je bedrijfsgegevens verschijnen direct op de live site zonder opnieuw te publiceren.
+- Wettelijke pagina's die door het platform worden aangemaakt, gebruiken deze tokens automatisch. Bewerk de tekst eromheen gerust, de koppeling blijft intact.
+
+Bron: `packages/shared/src/site-blocks/company-tokens.ts#COMPANY_TOKENS`.
+
 ## Openbare URL
 
 Je website wordt getoond op de best beschikbare URL:

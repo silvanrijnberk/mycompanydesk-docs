@@ -310,6 +310,30 @@ Au-dessus du menu principal, un panneau **Navbar** vous donne un acces direct au
 
 Ces parametres s'appliquent a chaque page de votre site, comme dans l'onglet Style. Les modifications sont enregistrees automatiquement avec un court delai apres l'arret de la saisie. Pour la mise en page visuelle, le style d'arriere-plan et l'apparence du bouton, consultez l'[onglet Style](#styling-votre-site).
 
+## Tokens de données d'entreprise
+
+Les champs de texte du constructeur de site peuvent contenir des tokens de fusion qui tirent les données d'entreprise actives de vos paramètres d'espace de travail. Lors du rendu du site publié, chaque token est remplacé par la valeur actuelle des **Données de l'entreprise** (`/settings/bedrijfsgegevens`). Vous n'avez ainsi besoin de gérer le nom, l'adresse et les coordonnées de votre entreprise qu'à un seul endroit.
+
+Tokens disponibles :
+
+| Token | Affiche |
+|---|---|
+| `{{bedrijf.naam}}` | Nom de l'entreprise |
+| `{{bedrijf.adres}}` | Adresse complète, composée de la rue, du code postal et de la ville |
+| `{{bedrijf.kvk}}` | Numéro d'immatriculation (KvK) |
+| `{{bedrijf.btw}}` | Numéro de TVA |
+| `{{bedrijf.email}}` | Adresse e-mail publique |
+
+Comment les utiliser :
+
+- Dans n'importe quel champ de texte, cliquez sur la puce correspondant à la valeur souhaitée. Le token est inséré à la position du curseur.
+- Vous pouvez aussi taper un token manuellement. Seuls les cinq tokens ci-dessus sont pris en charge.
+- Si une valeur est vide dans vos données d'entreprise, le site publié affiche une indication entre crochets, par exemple `[nom de l'entreprise]`, pour repérer ce qui manque encore.
+- Les tokens sont résolus après le snapshot de publication, donc les modifications ultérieures de vos données d'entreprise apparaissent directement sur le site en ligne sans nouvelle publication.
+- Les pages légales générées par la plateforme utilisent ces tokens automatiquement. Vous pouvez éditer le texte autour sans casser le lien.
+
+Source : `packages/shared/src/site-blocks/company-tokens.ts#COMPANY_TOKENS`.
+
 ## URL publique
 
 Votre site web est servi a l'URL la plus prioritaire disponible :
