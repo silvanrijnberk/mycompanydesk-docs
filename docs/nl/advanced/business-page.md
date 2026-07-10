@@ -347,6 +347,14 @@ Wat gebeurt er bij verzenden:
 
 Nieuwsbriefinzendingen delen dezelfde snelheidslimiet als het contactformulier: 5 per minuut per IP-adres. De Turnstile-botbescherming is ook actief op nieuwsbriefformulieren wanneer geconfigureerd.
 
+## Juridische pagina's
+
+De sitebouwer voorziet elke nieuwe werkruimte van twee standaard juridische pagina's: **Privacybeleid** (`/privacy`) en **Algemene voorwaarden** (`/algemene-voorwaarden`). De inhoud gebruikt plaatsaanduidingsmarkeringen voor bedrijfsgegevens. Wanneer de pagina wordt gerenderd voor bezoekers, worden die markeringen vervangen door de waarden uit je **Bedrijfsinstellingen** — bedrijfsnaam, adres, postcode, plaats, land, registratienummer, btw-nummer en publieke e-mail.
+
+Je kunt de juridische pagina's net als elke andere pagina bewerken in de editor. De editor behoudt de plaatsaanduidingsankers in de inhoud, zodat ook openen en opslaan zonder wijzigingen ervoor zorgt dat toekomstige updates van je bedrijfsgegevens automatisch doorstromen.
+
+De juridische pagina's worden gerenderd op het moment van publiceren, net als de rest van je site. Ze delen dezelfde Live/Concept-status en dezelfde zichtbaarheidsregels op basis van je abonnement.
+
 ## Aanvragen beheren
 
 Zie [Offertes - Offerteaanvragen](/nl/features/quotes#offerteaanvragen) voor details over het beheren van binnenkomende aanvragen.

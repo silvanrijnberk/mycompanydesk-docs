@@ -347,6 +347,14 @@ Was beim Absenden passiert:
 
 Newsletter-Einreichungen teilen dasselbe Rate-Limit wie das Kontaktformular: 5 pro Minute pro IP-Adresse. Der Turnstile-Bot-Schutz ist auch bei Newsletter-Formularen aktiv, wenn konfiguriert.
 
+## Rechtliche Seiten
+
+Der Website-Builder erstellt für jeden neuen Arbeitsbereich zwei Standard-Rechtsseiten: **Datenschutzerklärung** (`/privacy`) und **Allgemeine Geschäftsbedingungen** (`/algemene-voorwaarden`). Der Inhalt verwendet Platzhalter für Unternehmensdaten. Wenn die Seite für Besucher gerendert wird, werden diese Platzhalter durch die Werte aus deinen **Unternehmenseinstellungen** ersetzt — Unternehmensname, Adresse, Postleitzahl, Stadt, Land, Registrierungsnummer, USt.-ID und öffentliche E-Mail.
+
+Du kannst die rechtlichen Seiten wie jede andere Seite im Editor bearbeiten. Der Editor behält die Platzhalter-Anker im Inhalt, sodass auch das bloße Öffnen und Speichern einer Seite dafür sorgt, dass zukünftige Änderungen an deinen Unternehmensdaten automatisch übernommen werden.
+
+Die rechtlichen Seiten werden zum Zeitpunkt der Veröffentlichung gerendert, wie der Rest deiner Site. Sie teilen sich den gleichen Live/Entwurf-Status und die gleiche Sichtbarkeitsregel auf Grundlage des Abonnements.
+
 ## Anfragen verwalten
 
 Siehe [Angebote - Angebotsanfragen](/de/features/quotes#angebotsanfragen) für Details zur Verwaltung eingehender Anfragen.

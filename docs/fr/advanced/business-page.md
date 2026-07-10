@@ -347,6 +347,14 @@ Ce qui se passe lors de l'envoi :
 
 Les soumissions a la newsletter partagent la meme limite de taux que le formulaire de contact : 5 par minute par adresse IP. La protection anti-bot Turnstile est egalement active sur les formulaires de newsletter lorsque configuree.
 
+## Pages legales
+
+Le constructeur de site cree deux pages legales standard pour chaque nouvel espace de travail : **Politique de confidentialite** (`/privacy`) et **Conditions generales** (`/algemene-voorwaarden`). Le contenu utilise des marqueurs de remplacement pour les donnees de l'entreprise. Lorsque la page est rendue pour les visiteurs, ces marqueurs sont remplaces par les valeurs de tes **Parametres de l'entreprise** — nom de l'entreprise, adresse, code postal, ville, pays, numero d'enregistrement, numero de TVA et e-mail public.
+
+Tu peux modifier les pages legales dans l'editeur comme n'importe quelle autre page. L'editeur conserve les ancres de remplacement dans le contenu, de sorte que l'ouverture et l'enregistrement d'une page sans modification permettent aux futures mises a jour de tes donnees d'entreprise de se propager automatiquement.
+
+Les pages legales sont rendues au moment de la publication, comme le reste de ton site. Elles partagent le meme statut Live/Concept et la meme regle de visibilite liee a l'abonnement.
+
 ## Gerer les demandes
 
 Consultez [Devis -- Demandes de devis](/fr/features/quotes#quote-requests) pour les details sur la gestion des demandes entrantes.
