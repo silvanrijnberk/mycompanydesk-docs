@@ -310,6 +310,30 @@ Above the main navigation menu, a **Navbar** panel gives you direct access to th
 
 These settings apply to every page on your site, the same way they do in the Style tab. Changes save automatically with a short debounce after you stop typing. For the visual layout, background style, and button appearance controls, see the [Style tab](#styling-your-site).
 
+## Company merge tokens
+
+Text fields in the site builder can contain merge tokens that pull live company data from your workspace settings. When the published site renders, each token is replaced with the current value from **Company Settings > Business details** (`/settings/bedrijfsgegevens`). This means you can type your company name, address, or contact details once and keep every page in sync automatically.
+
+Available tokens:
+
+| Token | Shows |
+|---|---|
+| `{{bedrijf.naam}}` | Business name |
+| `{{bedrijf.adres}}` | Full address, joined from street, postal code, and city |
+| `{{bedrijf.kvk}}` | Chamber of Commerce (KvK) number |
+| `{{bedrijf.btw}}` | VAT number |
+| `{{bedrijf.email}}` | Public email address |
+
+How to use them:
+
+- In any text area field, click the chip that matches the value you want. The token is inserted at the cursor.
+- You can also type a token by hand. Only the five keys above are supported.
+- If a value is empty in your company settings, the token renders as a bracketed hint on the public site, for example `[bedrijfsnaam]`, so you can spot what is still missing.
+- Tokens are resolved after the publish snapshot, so later edits to your company details show on the live site without a new publish.
+- Legal pages seeded by the platform use these tokens automatically. Editing the surrounding text does not break the binding.
+
+Source: `packages/shared/src/site-blocks/company-tokens.ts#COMPANY_TOKENS`.
+
 ## Public URL
 
 Your website is served at the highest-priority URL available:

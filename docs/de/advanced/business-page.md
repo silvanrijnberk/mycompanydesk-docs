@@ -310,6 +310,30 @@ Der Navigations-Editor ermöglicht es Ihnen, die Header-Links Ihrer Site zu ordn
 
 Diese Einstellungen gelten für jede Seite Ihrer Site, genau wie im Stil-Tab. Änderungen werden automatisch mit einer kurzen Verzögerung nach dem Ende der Eingabe gespeichert. Für das visuelle Layout, den Hintergrundstil und die Button-Darstellung siehe den [Stil-Tab](#styling-ihrer-site).
 
+## Firmendaten-Tokens
+
+Textfelder im Website-Builder können Merge-Tokens enthalten, die Live-Firmendaten aus Ihren Workspace-Einstellungen beziehen. Beim Rendern der veröffentlichten Site wird jedes Token durch den aktuellen Wert aus **Unternehmensdaten** (`/settings/bedrijfsgegevens`) ersetzt. So pflegen Sie Firmenname, Adresse und Kontaktdaten an einer zentralen Stelle.
+
+Verfügbare Tokens:
+
+| Token | Zeigt |
+|---|---|
+| `{{bedrijf.naam}}` | Firmenname |
+| `{{bedrijf.adres}}` | Vollständige Adresse, zusammengesetzt aus Straße, Postleitzahl und Ort |
+| `{{bedrijf.kvk}}` | Handelsregisternummer (KvK) |
+| `{{bedrijf.btw}}` | USt-IdNr. |
+| `{{bedrijf.email}}` | Öffentliche E-Mail-Adresse |
+
+So verwenden Sie sie:
+
+- Klicken Sie in ein beliebiges Textfeld auf den Chip mit dem gewünschten Wert. Das Token wird an der Cursorposition eingefügt.
+- Sie können ein Token auch manuell eingeben. Nur die fünf oben genannten Tokens werden unterstützt.
+- Ist ein Wert in Ihren Unternehmensdaten leer, zeigt die veröffentlichte Site einen Hinweis in eckigen Klammern, zum Beispiel `[Firmenname]`, damit Sie erkennen, was noch fehlt.
+- Tokens werden nach dem Veröffentlichungs-Snapshot aufgelöst, sodass spätere Änderungen an Ihren Unternehmensdaten direkt auf der Live-Site erscheinen, ohne erneut zu veröffentlichen.
+- Rechtliche Seiten, die von der Plattform erzeugt werden, verwenden diese Tokens automatisch. Das Bearbeiten des umgebenden Texts bricht die Verknüpfung nicht.
+
+Quelle: `packages/shared/src/site-blocks/company-tokens.ts#COMPANY_TOKENS`.
+
 ## Öffentliche URL
 
 Ihre Website wird unter der am besten geeigneten URL bereitgestellt:
