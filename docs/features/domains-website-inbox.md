@@ -300,6 +300,9 @@ This bundle is the **receiving** side. Outgoing email — invoice delivery, remi
 ## Limits and gotchas
 
 - **One website per company.** Adding a custom domain deactivates the workspace subdomain. Removing the domain doesn't auto-revive the slug — re-activate it manually if you want to fall back.
+- **One live inbox per domain.** The platform allows only one workspace at a time to receive mail on a given domain. If another workspace already has an inbox enabled on `acme.nl`, your attempt to enable the inbox on the same name is blocked. Websites and CNAME-only claims are not blocked; only a live inbox is exclusive.
+- **You cannot claim a zone another workspace already holds.** When you add a nameserver-mode domain, the platform checks whether the underlying Cloudflare zone is already live for a different workspace. If it is, the add is refused with a clear error so you cannot "verify" a domain off someone else's DNS.
+- **Re-adding your own removed domain still works.** If your workspace previously removed a domain, the existing zone can be reused for the same workspace; the guard only blocks another workspace from taking it over.
 - **CNAME mode has no email.** Email routing requires a full Cloudflare zone, which only nameserver mode provides.
 - **The wizard refuses to overwrite an existing third-party MX.** If your apex already points at Google Workspace or Microsoft 365, `quickEnableInbox` returns `apexMx.status = 'conflict'` and you have to choose: migrate MX to Cloudflare, or stay on your existing provider and skip the bundled inbox.
 - **Reserved subdomains.** `app`, `admin`, `api`, `www`, `mail`, `support`, `portal`, `dashboard` and a handful of others are blocked at the workspace-slug level.
