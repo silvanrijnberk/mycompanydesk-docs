@@ -80,7 +80,7 @@ La page affiche par defaut une vue allegee avec les onglets les plus couramment 
 
 Ce que la page vous permet de faire :
 
-- **Acheter ou reclamer un domaine** via la carte d'achat de domaine. Saisissez un nom de domaine, verifiez la disponibilite via OpenProvider, et achetez le domaine ou reclamez-le gratuitement si vous êtes eligible en tant que Founding Member.
+- **Acheter ou reclamer un domaine** via la carte d'achat de domaine. Saisissez un nom de domaine, verifiez la disponibilite via OpenProvider, et achetez le domaine ou reclamez-le gratuitement si votre espace de travail est eligible a la reclamation gratuite d'un `.nl`.
 - **Ajouter un domaine** (mode nameserver ou CNAME) via une carte dediee toujours visible.
 - **Verifier** un domaine en attente.
 - **Gerer les enregistrements DNS** pour le domaine selectionne -- A, AAAA, CNAME, MX, TXT, SRV, CAA, NS. Le CRUD passe par Cloudflare via l'API.
@@ -111,14 +111,14 @@ Colonnes notables que l'application lit :
 | `registrar_domain_id` | L'identifiant interne du registrar pour les domaines achetes.
 | `purchase_price_period` | Periode de facturation pour les domaines achetes (`yearly`).
 | `purchase_intent_id` | Renvoie a la ligne `domain_purchase_intents` pour les achats payants.
-| `founder_claim_id` | Renvoie a la ligne `founder_domain_claims` pour les reclamations gratuites Founder.
+| `founder_claim_id` | Renvoie a la ligne `founder_domain_claims` pour les reclamations de domaine gratuites.
 | `transferred_out_at` | Defini lorsque la synchronisation hebdomadaire detecte qu'un domaine a ete transfere hors du compte registrar MCD.
 
 #### Cycle de renouvellement
 
 Le renouvellement de domaine suit trois chemins selon la maniere dont le domaine a ete acquis :
 
-1. **Renouvellement groupe gratuit** (niveau Founder ou niveau Trial converti en Pro) : MCD prend en charge le cout de gros du renouvellement. Le domaine se renouvelle automatiquement tant que l'espace de travail reste sur Pro. Aucun moyen de paiement requis.
+1. **Renouvellement groupe gratuit** (niveau Trial converti en Pro, ou accord antérieur de gratuité à vie) : MCD prend en charge le cout de gros du renouvellement. Le domaine se renouvelle automatiquement tant que l'espace de travail reste sur Pro. Aucun moyen de paiement requis.
 2. **Renouvellement automatique payant** (achat payant ou niveau Trial sans Pro) : Facture annuellement via la carte enregistree. Fonctionne comme tout autre renouvellement d'abonnement.
 3. **Renouvellement manuel** : Si un espace de travail de niveau Trial quitte Pro ET n'a pas de carte enregistree, le chemin de renouvellement automatique le saute. L'utilisateur voit une notification et peut declencher un paiement ponctuel via `POST /api/domains/renew/:domainId`, qui cree une session Stripe Embedded Checkout pour le renouvellement. C'est le seul moyen de garder un domaine actif sans abonnement actif ni carte enregistree.
 
@@ -138,7 +138,7 @@ Tables de base de donnees concernees :
 
 Transferer un domaine enregistre via MyCompanyDesk vers un autre registrar a des consequences permanentes, appliquees par la synchronisation hebdomadaire du statut OpenProvider :
 
-- **Domaines niveau Founder** : La reclamation Founder est supprimee et l'abonnement Pro a vie interne de l'espace de travail est resilie. L'espace de travail devient un client payant normal. C'est irreversible -- le statut Founder ne peut pas etre reclame a nouveau.
+- **Domaines avec accord de gratuité à vie** : La reclamation gratuite est supprimee et l'octroi Pro a vie interne de l'espace de travail est resilie. L'espace de travail devient un client payant normal. C'est irreversible -- l'octroi ne peut pas etre reclame a nouveau.
 - **Domaines niveau Trial / groupes Pro** : Le statut groupe gratuit est perdu. L'espace de travail ne pourra plus jamais reclamer un autre domaine gratuit (deja applique via la liste des reclamations conservees). A noter : le rachat du domaine pendant l'essai (voir section rachat ci-dessus) n'est pas un transfert -- c'est un changement de titulaire qui donne la propriete au client avant tout transfert, preservant ainsi l'avantage du domaine gratuit pour la duree de l'essai.
 - **Domaines payants** : Aucune revocation d'avantage -- le domaine passe simplement a `status = 'transferred_out'`.
 
@@ -149,20 +149,19 @@ Le modal de reclamation avertit de ces consequences avant qu'une reclamation de 
 La carte d'achat de domaine (`DomainPurchaseCard.vue`, `domain-purchase.service.ts`) est la premiere carte sur la page des parametres Domaines. Elle apparait lorsque l'espace de travail n'a pas encore de domaine personnalise actif. La carte permet a l'utilisateur de choisir et d'acquerir un domaine via deux chemins, qui ouvrent tous deux un modal d'achat en deux etapes (`DomainClaimModal.vue`). La premiere etape collecte les donnees du titulaire (requises par le registrar pour le WHOIS). La deuxieme etape gere le paiement ou la soumission :
 
 - **Acheter** -- Achat payant via OpenProvider. L'utilisateur saisit un nom de domaine, la carte appelle `GET /api/domain-purchase/quote` pour verifier la disponibilite et le prix, puis ouvre le modal d'achat. Apres avoir saisi les donnees du titulaire, le modal appelle `POST /api/domain-purchase/checkout-session` pour creer une session de paiement Stripe et affiche Stripe Embedded Checkout pour le paiement. Une fois le paiement termine, `POST /api/domain-purchase/finalize` enregistre le domaine chez OpenProvider et cree la ligne `domains` en mode nameserver, reliee a Cloudflare.
-- **Reclamation gratuite** -- Les espaces de travail eligibles en periode d'essai Pro (y compris les nouveaux Founding Members a partir du 20 mai 2026) peuvent reclamer gratuitement un domaine `.nl` pour la premiere annee. La carte appelle `GET /api/domain-purchase/founder/eligibility` pour verifier le niveau de reclamation (`trial` pour les membres en essai, `founder` pour les Founding Members grandfathered de la cohorte d'origine) et le statut des conditions. Le modal collecte les donnees du titulaire et appelle `POST /api/domain-purchase/founder/claim` a l'envoi. La plateforme prend en charge les frais d'enregistrement de la premiere annee.
+- **Reclamation gratuite** -- Les espaces de travail eligibles en periode d'essai Pro peuvent reclamer gratuitement un domaine `.nl` pour la premiere annee. La carte appelle `GET /api/domain-purchase/free-domain/eligibility` pour verifier le niveau de reclamation et le statut des conditions. Le modal collecte les donnees du titulaire et appelle `POST /api/domain-purchase/free-domain/claim` a l'envoi. La plateforme prend en charge les frais d'enregistrement de la premiere annee.
 
-Les reclamations Founder ont desormais deux niveaux pour le renouvellement, determines par le type de grant Founding Member :
+Les reclamations gratuites ne different que par la maniere dont le domaine est renouvele apres la premiere annee :
 
-- **Niveau Founder** (grandfathered uniquement) -- Les espaces de travail avec le type de grant d'origine `free_for_life` (reclames avant le 20 mai 2026) beneficient du renouvellement gratuit a vie. Aucun moyen de paiement requis. Le renouvellement est gere automatiquement par la plateforme, MCD absorbant le cout de gros. Les nouveaux Founding Members a partir du 20 mai 2026 ne recoivent PAS ce niveau ; ils reclament sous le niveau trial comme tout autre espace de travail en essai.
-- **Niveau Trial** -- Les espaces de travail en periode d'essai (y compris les nouveaux Founding Members avec le type de grant `trial_plus_discount`). La premiere annee est gratuite. A la fin de l'annee gratuite, l'espace de travail doit avoir un abonnement Pro payant ; le domaine se renouvelle alors comme partie de l'abonnement Pro, paye par l'espace de travail. Si l'espace de travail cesse de payer Pro apres l'annee gratuite, le domaine expire et doit etre renouvele manuellement. Pendant l'annee d'essai, l'utilisateur peut optionnellement enregistrer une carte via Stripe SetupIntent dans le modal pour le futur renouvellement automatique.
+- **Niveau Trial** -- Les espaces de travail en periode d'essai Pro. La premiere annee est gratuite. A la fin de l'annee gratuite, l'espace de travail doit avoir un abonnement Pro payant ; le domaine se renouvelle alors comme partie de l'abonnement Pro, paye par l'espace de travail. Si l'espace de travail cesse de payer Pro apres l'annee gratuite, le domaine expire et doit etre renouvele manuellement. Pendant l'annee d'essai, l'utilisateur peut optionnellement enregistrer une carte via Stripe SetupIntent dans le modal pour le futur renouvellement automatique.
 - **Niveau Payant** -- Domaines standard achetes au prix fort. Le renouvellement est facture via le moyen de paiement enregistre sur le cycle annuel. Si le paiement echoue, une notification de renouvellement manuel est envoyee.
+- **Niveau gratuit à vie** -- Un petit nombre d'espaces de travail conservent Pro gratuitement et le renouvellement de domaine gratuit à vie au titre d'accords antérieurs. Aucun moyen de paiement requis ; le renouvellement est gere automatiquement par la plateforme, MCD absorbant le cout de gros. Ce niveau est clos et ne peut pas etre demande.
 
-Le point de terminaison d'eligibilite (`GET /api/domain-purchase/founder/eligibility`) renvoie un champ `tier` (`founder` | `trial` | `paid` | `free`) et `founderSlotsRemaining` en plus des conditions existantes. La limite de 50 places ne s'applique qu'aux reclamations de niveau Founder (cohorte grandfathered) ; les reclamations de niveau Trial ne sont pas comptees dans ce plafond.
+Le point de terminaison d'eligibilite (`GET /api/domain-purchase/free-domain/eligibility`) renvoie un champ `tier` en plus du rapport de conditions. Il n'expose aucun nombre de reclamations restantes.
 
-L'eligibilite Founder est determinee par un ensemble de conditions strictes verifiees cote serveur dans `founder-domain-claim.service.js` :
+L'eligibilite est determinee par un ensemble de conditions strictes verifiees cote serveur :
 
-- **Statut Founding Member** -- l'espace de travail doit avoir le drapeau Founding Member (le type de grant determine le niveau : `free_for_life` correspond a `founder`, `trial_plus_discount` correspond a `trial`).
-- **Places de domaine gratuit** limitees a 50 pour les Founding Members grandfathered (`free_for_life`). Les reclamations Trial ne comptent pas.
+- **Espace de travail Pro actif** -- l'espace de travail doit etre sur Pro (essai ou payant). Les espaces de travail sur Free ne peuvent pas reclamer.
 - **KVK requis** -- l'espace de travail doit avoir un numero KVK lie.
 - **Le domaine doit être `.nl`** -- le programme gratuit ne concerne que l'extension NL.
 - **Le domaine doit correspondre au nom KVK** -- le domaine doit correspondre a la raison sociale ou a un nom commercial.
@@ -177,7 +176,7 @@ Les TLD pris en charge pour l'achat sont `.nl`, `.eu`, `.com`, `.net` et `.org`.
 Nouvelles tables de base de donnees introduites par cette fonctionnalite :
 
 - `domain_purchase_intents` -- suit les intentions d'achat payantes avec les identifiants Stripe PaymentIntent, les donnees du titulaire et le statut d'achat.
-- `founder_domain_claims` -- suit les reclamations gratuites Founder avec des snapshots d'eligibilite, un score d'abus et le statut de la reclamation.
+- `founder_domain_claims` -- suit les reclamations de domaine gratuites avec des snapshots d'eligibilite, un score d'abus et le statut de la reclamation.
 - `domain_buyout_intents` -- suit les intentions de paiement de rachat en cas de depart pendant l'essai avec les identifiants Stripe PaymentIntent et le statut de transfert.
 - La migration `domain_registrar_columns` ajoute des colonnes liees au registrar a la table `domains` existante.
 

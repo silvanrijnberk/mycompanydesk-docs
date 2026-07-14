@@ -316,6 +316,7 @@ Les champs de texte du constructeur de site peuvent contenir des tokens de fusio
 
 Tokens disponibles :
 
+::: v-pre
 | Token | Affiche |
 |---|---|
 | `{{bedrijf.naam}}` | Nom de l'entreprise |
@@ -323,6 +324,7 @@ Tokens disponibles :
 | `{{bedrijf.kvk}}` | Numéro d'immatriculation (KvK) |
 | `{{bedrijf.btw}}` | Numéro de TVA |
 | `{{bedrijf.email}}` | Adresse e-mail publique |
+:::
 
 Comment les utiliser :
 

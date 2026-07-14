@@ -42,7 +42,7 @@ Choose how customers find you online:
 
 - **Gratis subdomein** (free subdomain): a free address ending in `.mycompanydesk.site`, suggested from your company name and checked for availability while you type.
 - **Ik heb al een domein** (I already have a domain): connect a domain you registered elsewhere.
-- **Registreer een domein** (register a domain): search for a new domain, check the price and buy it directly in the wizard. Founding Members get one included.
+- **Registreer een domein** (register a domain): search for a new domain, check the price and buy it directly in the wizard. On a Pro trial you can claim one `.nl` domain free for the first year instead of buying.
 
 You can skip this step and set up a domain later.
 
@@ -50,9 +50,9 @@ You can skip this step and set up a domain later.
 
 Upload your logo if you have one; MyCompanyDesk picks your brand colour from it automatically. No logo? No problem: a clean logo is generated from your initials. The step also previews the brand colour and tagline the wizard proposes, so you see what your invoices and website will look like.
 
-## Step 6: Founding Members and your trial
+## Step 6: Your trial
 
-The final step confirms that your 60-day Pro trial is active, no credit card needed. While spots last, you can also claim a Founding Members spot here for a longer free period and a lasting discount. Click **Setup afronden** (finish setup) and the wizard applies everything, shows a summary of what it set up, and takes you to your dashboard.
+The final step confirms that your 60-day Pro trial is active, no credit card needed. Click **Setup afronden** (finish setup) and the wizard applies everything, shows a summary of what it set up, and takes you to your dashboard.
 
 ## Changing things later
 

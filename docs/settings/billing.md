@@ -13,41 +13,11 @@ Open **Settings**, then **Je abonnement**, or navigate directly to `/settings/ab
 
 The old `/workspace/account/billing` and `/settings/billing` URLs redirect to the new page; bookmarks still work and the `?checkout=success|canceled` query parameter is preserved across the redirect.
 
-## Founding Members
+## Legacy arrangements
 
-MyCompanyDesk offers a Founding Members program for the first 100 workspaces that join during the launch period.
+A small number of legacy workspaces retain free Pro under earlier arrangements. These are honoured for as long as MyCompanyDesk offers the service and the relevant feature. They are closed and cannot be requested; new workspaces start on the 60-day Pro trial described below.
 
-### Current offer (from 2026-05-20)
-
-A Founding Member receives their first year of Pro free, then 50% off the Pro plan for life. The free year starts immediately on claiming. At the end of the free year the workspace can convert to paid Pro at a 50% lifetime discount (applied automatically at checkout); if the workspace does not convert, the Pro trial lapses like any other trial.
-
-The bundled `.nl` domain is free for the first year and from year two onwards renews as part of the paid Pro subscription. A workspace that stops paying after the free year simply lapses, and the domain expires with it. There is no longer an open-ended free-for-life grant for new members.
-
-### Grandfathered original cohort
-
-The first wave of Founding Members who claimed under the original terms (before 2026-05-20) keep Pro free for life and receive lifetime-free domain renewal. These claims are honoured for the lifetime of MyCompanyDesk as long as the service and the relevant feature continue to be offered. Existing grandfathered workspaces are untouched by the new offer.
-
-### How it works
-
-- The program is limited to **100 spots** across all workspaces.
-- Each workspace can claim only one spot. A single IP address may not claim more than one spot (fraud prevention).
-- Claiming is irreversible. There is no second claim or re-claim; once your spot is gone it is gone.
-
-### Claiming a spot
-
-There are two ways to claim a Founding Member spot:
-
-**From the billing page.** If spots remain, the billing page shows a Founding Member claim card. Click **Claim spot** to start your free Pro year. The upgrade takes effect immediately.
-
-**From the landing page.** The landing page CTA links to the registration form with a founding-member intent. When you sign up through that flow:
-
-1. The signup form remembers your intent.
-2. After email verification and login, the system auto-claims your spot in the background.
-3. A confirmation toast tells you whether the claim succeeded. If spots ran out before you completed signup, you still get a 60-day Pro trial.
-
-If the auto-claim fails (spots full, IP already used by another workspace, or a network error), the claim does not retry. You can still check the billing page and claim manually if spots remain.
-
-Founding Member workspaces are regular Pro customers in every respect: same features, same limits. The only difference is the subscription source and the badge in billing.
+Workspaces on such an arrangement are regular Pro customers in every respect: same features, same limits. The only difference is the subscription source shown in billing.
 
 ## Plans
 

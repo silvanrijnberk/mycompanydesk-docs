@@ -13,41 +13,11 @@ Ouvrez **Paramètres**, puis **Je abonnement** (votre abonnement), ou naviguez d
 
 Les anciennes URL `/workspace/account/billing` et `/settings/billing` redirigent vers la nouvelle page ; vos favoris continuent de fonctionner et le paramètre de requête `?checkout=success|canceled` est conservé lors de la redirection.
 
-## Founding Members
+## Accords existants
 
-MyCompanyDesk propose un programme Founding Members pour les 100 premiers espaces de travail qui s'inscrivent pendant la période de lancement.
+Un petit nombre d'espaces de travail conservent Pro gratuitement au titre d'accords antérieurs. Ces accords sont honorés tant que MyCompanyDesk propose le service et la fonctionnalité concernée. Ils sont clos et ne peuvent pas être demandés ; les nouveaux espaces de travail démarrent avec l'essai Pro de 60 jours décrit ci-dessous.
 
-### Offre actuelle (à partir du 20 mai 2026)
-
-Un Founding Member reçoit sa première année de Pro gratuite, puis 50% de réduction sur le plan Pro à vie. L'année gratuite commence immédiatement à la réservation. À la fin de l'année gratuite, l'espace de travail peut passer au plan Pro payant avec une réduction à vie de 50% (appliquée automatiquement lors du paiement). Si l'espace de travail ne convertit pas, la période d'essai Pro expire comme toute autre période d'essai.
-
-Le domaine `.nl` inclus est gratuit la première année et devient ensuite partie intégrante de l'abonnement Pro payant. Un espace de travail qui cesse de payer après l'année gratuite perd Pro et le domaine expire. Il n'y a plus d'engagement gratuit à vie illimité pour les nouveaux membres.
-
-### Cohorte d'origine (droits acquis)
-
-La première vague de Founding Members ayant réservé sous les conditions d'origine (avant le 20 mai 2026) conserve Pro gratuit à vie et bénéficie du renouvellement de domaine gratuit à vie. Ces droits sont maintenus pour la durée de vie de MyCompanyDesk tant que le service et la fonctionnalité concernée continuent d'être proposés. Les espaces de travail existants de cette cohorte ne sont pas affectés par la nouvelle offre.
-
-### Comment ça marche
-
-- Le programme est limité à **100 places** sur l'ensemble des espaces de travail.
-- Chaque espace de travail ne peut réserver qu'une seule place. Une même adresse IP ne peut pas non plus réserver plus d'une place (prévention de la fraude).
-- La réservation est irréversible. Il n'y a pas de deuxième réservation ou de re-réservation ; une fois votre place partie, elle est partie.
-
-### Réserver une place
-
-Vous pouvez réserver une place Founding Member de deux façons :
-
-**Depuis la page d'abonnement.** S'il reste des places, la page d'abonnement affiche une carte de réservation Founding Member. Cliquez sur **Réserver une place** pour démarrer votre année Pro gratuite. La mise à niveau prend effet immédiatement.
-
-**Depuis la page d'accueil.** Le CTA de la page d'accueil renvoie vers le formulaire d'inscription avec une intention founding-member. Lorsque vous vous inscrivez via ce parcours :
-
-1. Le formulaire d'inscription conserve votre intention.
-2. Après vérification de l'e-mail et connexion, le système réserve automatiquement votre place en arrière-plan.
-3. Un toast de confirmation vous indique si la réservation a réussi. Si les places étaient épuisées avant que vous n'ayez terminé l'inscription, vous bénéficiez tout de même d'un essai Pro de 60 jours.
-
-Si la réservation automatique échoue (places épuisées, IP déjà utilisée par un autre espace de travail ou erreur réseau), la réservation n'est pas retentée. Vous pouvez toujours consulter la page d'abonnement et réserver manuellement s'il reste des places.
-
-Les espaces de travail Founding Member sont des clients Pro comme les autres : mêmes fonctionnalités, mêmes limites. La seule différence est la source d'abonnement et le badge sur la page d'abonnement.
+Les espaces de travail bénéficiant d'un tel accord sont des clients Pro comme les autres : mêmes fonctionnalités, mêmes limites. La seule différence est la source d'abonnement affichée sur la page d'abonnement.
 
 ## Plans
 

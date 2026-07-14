@@ -41,7 +41,7 @@ Kies hoe klanten je online vinden:
 
 - **Gratis subdomein**: een gratis adres dat eindigt op `.mycompanydesk.site`, voorgesteld op basis van je bedrijfsnaam en tijdens het typen gecheckt op beschikbaarheid.
 - **Ik heb al een domein**: koppel een domein dat je ergens anders hebt geregistreerd.
-- **Registreer een domein**: zoek een nieuw domein, bekijk de prijs en koop het direct in de wizard. Founding Members krijgen er een cadeau.
+- **Registreer een domein**: zoek een nieuw domein, bekijk de prijs en koop het direct in de wizard. Tijdens je Pro-proefperiode kun je in plaats van kopen ook één `.nl`-domein het eerste jaar gratis claimen.
 
 Je kunt deze stap overslaan en later een domein regelen.
 
@@ -49,9 +49,9 @@ Je kunt deze stap overslaan en later een domein regelen.
 
 Upload je logo als je er een hebt; MyCompanyDesk pikt daar automatisch je merkkleur uit. Geen logo? Geen probleem: er wordt een strak logo van je initialen gemaakt. De stap toont ook alvast de merkkleur en slogan die de wizard voorstelt, zodat je ziet hoe je facturen en website eruit gaan zien.
 
-## Stap 6: Founding Members en je proefperiode
+## Stap 6: Je proefperiode
 
-De laatste stap bevestigt dat je 60 dagen Pro-proefperiode actief is, zonder creditcard. Zolang er plekken zijn, kun je hier ook een Founding Members-plek claimen voor een langere gratis periode en blijvende korting. Klik op **Setup afronden** en de wizard past alles toe, laat een overzicht zien van wat er is ingericht en brengt je naar je dashboard.
+De laatste stap bevestigt dat je 60 dagen Pro-proefperiode actief is, zonder creditcard. Klik op **Setup afronden** en de wizard past alles toe, laat een overzicht zien van wat er is ingericht en brengt je naar je dashboard.
 
 ## Later aanpassen
 

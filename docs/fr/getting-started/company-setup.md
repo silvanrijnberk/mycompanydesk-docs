@@ -41,7 +41,7 @@ Choisissez comment les clients vous trouvent en ligne :
 
 - **Sous-domaine gratuit :** une adresse gratuite se terminant par `.mycompanydesk.site`, suggérée à partir du nom de votre entreprise et vérifiée en direct pendant que vous tapez.
 - **J'ai déjà un domaine :** connectez un domaine enregistré ailleurs.
-- **Enregistrer un domaine :** cherchez un nouveau domaine, vérifiez le prix et achetez-le directement dans l'assistant. Les Founding Members en reçoivent un inclus.
+- **Enregistrer un domaine :** cherchez un nouveau domaine, vérifiez le prix et achetez-le directement dans l'assistant. Pendant votre essai Pro, vous pouvez aussi réclamer gratuitement un domaine `.nl` pour la première année au lieu de l'acheter.
 
 Vous pouvez passer cette étape et configurer un domaine plus tard.
 
@@ -49,9 +49,9 @@ Vous pouvez passer cette étape et configurer un domaine plus tard.
 
 Importez votre logo si vous en avez un ; MyCompanyDesk en tire automatiquement votre couleur de marque. Pas de logo ? Pas de problème : un logo sobre est généré à partir de vos initiales. L'étape affiche aussi un aperçu de la couleur de marque et du slogan proposés, pour que vous voyiez à quoi ressembleront vos factures et votre site.
 
-## Étape 6 : Founding Members et votre essai
+## Étape 6 : Votre essai
 
-La dernière étape confirme que votre essai Pro de 60 jours est actif, sans carte bancaire. Tant qu'il reste des places, vous pouvez aussi y réserver une place de Founding Member, avec une période gratuite plus longue et une remise durable. Terminez la configuration et l'assistant applique tout, affiche un récapitulatif de ce qui a été mis en place et vous amène à votre tableau de bord.
+La dernière étape confirme que votre essai Pro de 60 jours est actif, sans carte bancaire. Terminez la configuration et l'assistant applique tout, affiche un récapitulatif de ce qui a été mis en place et vous amène à votre tableau de bord.
 
 ## Modifier plus tard
 

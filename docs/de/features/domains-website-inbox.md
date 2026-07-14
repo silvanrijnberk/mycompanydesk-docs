@@ -80,7 +80,7 @@ Die Seite zeigt standardmassig eine bereinigte Ansicht mit den am haufigsten ben
 
 Was Sie auf der Seite tun konnen:
 
-- **Domain kaufen oder beanspruchen** über die Domain-Kaufkarte. Geben Sie einen Domainnamen ein, prüfen Sie die Verfügbarkeit über OpenProvider, und kaufen Sie die Domain oder beanspruchen Sie sie kostenlos, wenn Sie als Founding Member berechtigt sind.
+- **Domain kaufen oder beanspruchen** über die Domain-Kaufkarte. Geben Sie einen Domainnamen ein, prüfen Sie die Verfügbarkeit über OpenProvider, und kaufen Sie die Domain oder beanspruchen Sie sie kostenlos, wenn Ihr Workspace für den kostenlosen `.nl`-Claim berechtigt ist.
 - **Domain hinzufügen** (Nameserver- oder CNAME-Modus) über eine eigene Karte, die immer sichtbar ist.
 - **Verifizieren** einer ausstehenden Domain.
 - **DNS-Records verwalten** für die ausgewählte Domain -- A, AAAA, CNAME, MX, TXT, SRV, CAA, NS. CRUD erfolgt über Cloudflare via API.
@@ -111,14 +111,14 @@ Wichtige Spalten, die die App liest:
 | `registrar_domain_id` | Die registrar-interne Kennung für gekaufte Domains.
 | `purchase_price_period` | Abrechnungszeitraum für gekaufte Domains (`yearly`).
 | `purchase_intent_id` | Verweist auf die `domain_purchase_intents`-Zeile für bezahlte Käufe.
-| `founder_claim_id` | Verweist auf die `founder_domain_claims`-Zeile für Founder-Gratis-Claims.
+| `founder_claim_id` | Verweist auf die `founder_domain_claims`-Zeile für Gratis-Domain-Claims.
 | `transferred_out_at` | Wird gesetzt, wenn beim wöchentlichen Sync erkannt wird, dass eine Domain aus dem MCD-Registrar-Konto übertragen wurde.
 
 #### Verlängerungszyklus
 
 Die Domain-Verlängerung folgt drei Pfaden, je nachdem, wie die Domain erworben wurde:
 
-1. **Kostenlose gebündelte Verlängerung** (Founder-Stufe oder auf Pro umgestellte Trial-Stufe): MCD übernimmt die Wholesale-Verlängerungskosten. Die Domain verlängert sich automatisch, solange der Workspace auf Pro bleibt. Keine Zahlungsmethode erforderlich.
+1. **Kostenlose gebündelte Verlängerung** (auf Pro umgestellte Trial-Stufe oder eine bestehende Gratis-auf-Lebenszeit-Vereinbarung): MCD übernimmt die Wholesale-Verlängerungskosten. Die Domain verlängert sich automatisch, solange der Workspace auf Pro bleibt. Keine Zahlungsmethode erforderlich.
 2. **Kostenpflichtige automatische Verlängerung** (bezahlter Kauf oder Trial-Stufe ohne Pro): Wird jährlich über die hinterlegte Karte abgerechnet. Funktioniert wie jede andere Abonnementverlängerung.
 3. **Manuelle Verlängerung**: Wenn ein Trial-Workspace aus Pro herausfällt UND keine Karte hinterlegt hat, überspringt der automatische Verlängerungspfad ihn. Der Benutzer sieht eine Benachrichtigung und kann eine einmalige Zahlung über `POST /api/domains/renew/:domainId` auslösen, die eine Stripe Embedded Checkout-Sitzung für die Verlängerung erstellt. Dies ist der einzige Weg, eine Domain ohne aktives Abonnement oder hinterlegte Karte aktiv zu halten.
 
@@ -138,7 +138,7 @@ Betroffene Datenbanktabellen:
 
 Die Übertragung einer über MyCompanyDesk registrierten Domain zu einem anderen Registrar hat dauerhafte Konsequenzen, die durch den wöchentlichen OpenProvider-Statusabgleich durchgesetzt werden:
 
-- **Founder-Domains**: Der Founder-Claim wird gelöscht und das interne lebenslange Pro-Abonnement des Workspace wird gekündigt. Der Workspace wird zu einem normalen zahlenden Kunden. Dies ist unumkehrbar. Der Founder-Status kann nicht erneut beansprucht werden.
+- **Domains mit Gratis-auf-Lebenszeit-Vereinbarung**: Der Gratis-Claim wird gelöscht und die interne lebenslange Pro-Zusage des Workspace wird gekündigt. Der Workspace wird zu einem normalen zahlenden Kunden. Dies ist unumkehrbar; die Zusage kann nicht erneut beansprucht werden.
 - **Trial- / Pro-gebündelte Domains**: Der gebündelte Gratis-Status geht verloren. Der Workspace kann nie wieder eine andere Gratis-Domain beanspruchen (bereits über die Retained-Claims-Liste durchgesetzt). Hinweis: Die Übernahme der Domain während der Testphase (siehe Übernahme-Abschnitt oben) ist keine Übertragung — es handelt sich um eine Inhaberübergabe, die dem Kunden Eigentum verschafft, bevor eine Übertragung stattfindet, sodass der Gratis-Domain-Vorteil für die Dauer der Testphase erhalten bleibt.
 - **Bezahlte Domains**: Kein Vorteilsentzug. Die Domain wechselt einfach zu `status = 'transferred_out'`.
 
@@ -149,20 +149,19 @@ Das Claim-Modal warnt vor diesen Konsequenzen, bevor ein Gratis-Domain-Claim ein
 Die Domain-Kaufkarte (`DomainPurchaseCard.vue`, `domain-purchase.service.ts`) ist die erste Karte auf der Domains-Einstellungsseite. Sie erscheint, wenn der Workspace noch keine aktive eigene Domain hat. Die Karte erlaubt es, eine Domain auszuwählen und über zwei Wege zu erwerben, die beide ein eigenes Zwei-Schritte-Kaufmodal öffnen (`DomainClaimModal.vue`). Schritt 1 sammelt die Registrantdaten (die vom Registrar für WHOIS benötigten Angaben). Schritt 2 bearbeitet die Zahlung oder Einreichung:
 
 - **Kaufen** -- Bezahlter Kauf über OpenProvider. Der Benutzer gibt einen Domainnamen ein, die Karte ruft `GET /api/domain-purchase/quote` auf, um Verfügbarkeit und Preisgestaltung zu prüfen, und öffnet dann das Kaufmodal. Nach Erfassung der Registrantdaten ruft das Modal `POST /api/domain-purchase/checkout-session` auf, um eine Stripe-Zahlungssitzung zu erstellen, und lädt Stripe Embedded Checkout für die Zahlung. Nach Abschluss registriert `POST /api/domain-purchase/finalize` die Domain bei OpenProvider und legt die `domains`-Zeile im Nameserver-Modus an, verbunden mit Cloudflare.
-- **Gratis-Claim** -- Berechtigte Workspaces in einer Pro-Testphase (einschließlich neuer Founding Members ab dem 20. Mai 2026) konnen eine `.nl`-Domain fur das erste Jahr kostenlos beanspruchen. Die Karte ruft `GET /api/domain-purchase/founder/eligibility` auf, um den Claim-Tier des Workspace (`trial` fur Trial-Mitglieder, `founder` fur grandfathered ursprungliche Founding Members) und den Gate-Status zu prufen. Das Modal sammelt die Registrantdaten und ruft beim Absenden `POST /api/domain-purchase/founder/claim` auf. Die Plattform tragt die Registrierungsgebühr fur das erste Jahr.
+- **Gratis-Claim** -- Berechtigte Workspaces in einer Pro-Testphase konnen eine `.nl`-Domain fur das erste Jahr kostenlos beanspruchen. Die Karte ruft `GET /api/domain-purchase/free-domain/eligibility` auf, um den Claim-Tier des Workspace und den Gate-Status zu prufen. Das Modal sammelt die Registrantdaten und ruft beim Absenden `POST /api/domain-purchase/free-domain/claim` auf. Die Plattform tragt die Registrierungsgebühr fur das erste Jahr.
 
-Founder-Claims haben jetzt zwei Stufen fur die Verlangerung, bestimmt durch den Founding-Member-Grant-Typ:
+Gratis-Claims unterscheiden sich nur darin, wie die Domain nach dem ersten Jahr verlangert wird:
 
-- **Founder-Stufe** (nur grandfathered) -- Workspaces mit dem ursprunglichen Grant-Typ `free_for_life` (vor dem 20. Mai 2026 geclaimed) erhalten lebenslange kostenlose Domain-Verlangerung. Keine Zahlungsmethode erforderlich. Die Verlangerung erfolgt automatisch uber die Plattform, wobei MCD die Wholesale-Kosten tragt. Neue Founding Members ab dem 20. Mai 2026 erhalten diese Stufe NICHT; sie claimen unter der Trial-Stufe wie jeder andere Trial-Workspace.
-- **Trial-Stufe** -- Workspaces in einer Testphase (einschließlich neuer Founding Members mit Grant-Typ `trial_plus_discount`). Das erste Jahr ist kostenlos. Am Ende des Gratis-Jahres muss der Workspace auf einem kostenpflichtigen Pro-Tarif sein; die Domain verlangert sich dann als Teil des Pro-Abonnements, bezahlt vom Workspace. Wenn der Workspace nach dem Gratis-Jahr kein Pro mehr zahlt, verfallt die Domain und muss manuell verlangert werden. Wahrend des Trial-Jahres kann der Benutzer optional eine Karte uber Stripe SetupIntent im Modal fur die zukunftige automatische Verlangerung hinterlegen.
+- **Trial-Stufe** -- Workspaces in einer Pro-Testphase. Das erste Jahr ist kostenlos. Am Ende des Gratis-Jahres muss der Workspace auf einem kostenpflichtigen Pro-Tarif sein; die Domain verlangert sich dann als Teil des Pro-Abonnements, bezahlt vom Workspace. Wenn der Workspace nach dem Gratis-Jahr kein Pro mehr zahlt, verfallt die Domain und muss manuell verlangert werden. Wahrend des Trial-Jahres kann der Benutzer optional eine Karte uber Stripe SetupIntent im Modal fur die zukunftige automatische Verlangerung hinterlegen.
 - **Paid-Stufe** -- Standard-Domains zum vollen Preis gekauft. Die Verlangerung wird jahrlich uber die hinterlegte Zahlungsmethode abgerechnet. Schlagt die Zahlung fehl, wird eine Benachrichtigung zur manuellen Verlangerung gesendet.
+- **Gratis-auf-Lebenszeit-Stufe** -- Eine kleine Zahl von Workspaces behalt Pro kostenlos und die lebenslange kostenlose Domain-Verlangerung aufgrund fruherer Vereinbarungen. Keine Zahlungsmethode erforderlich; die Verlangerung erfolgt automatisch uber die Plattform, wobei MCD die Wholesale-Kosten tragt. Diese Stufe ist geschlossen und kann nicht beantragt werden.
 
-Der Berechtigungs-Endpunkt (`GET /api/domain-purchase/founder/eligibility`) liefert ein `tier`-Feld (`founder` | `trial` | `paid` | `free`) und `founderSlotsRemaining` neben den bestehenden Gates. Die Begrenzung auf 50 Platze gilt nur fur Founder-Claims (grandfathered Kohorte); Trial-Claims zahlen nicht zum Founder-Kontingent.
+Der Berechtigungs-Endpunkt (`GET /api/domain-purchase/free-domain/eligibility`) liefert ein `tier`-Feld neben dem Gate-Bericht. Er gibt keine Anzahl verbleibender Claims aus.
 
-Die Founder-Berechtigung wird durch server-seitig in `founder-domain-claim.service.js` geprüfte harte Bedingungen bestimmt:
+Die Berechtigung wird durch server-seitig geprüfte harte Bedingungen bestimmt:
 
-- **Founding-Member-Status** -- der Workspace muss das Founding-Member-Flag haben (Grant-Typ bestimmt die Stufe: `free_for_life` mappt auf `founder`, `trial_plus_discount` mappt auf `trial`).
-- **Gratis-Domain-Plätze** fur Founder-Claims auf 50 begrenzt bei grandfathered Founding Members (`free_for_life`). Trial-Claims zahlen nicht dazu.
+- **Aktiver Pro-Workspace** -- der Workspace muss auf Pro sein (Testphase oder bezahlt). Workspaces auf Free konnen nicht claimen.
 - **KVK erforderlich** -- der Workspace muss eine KVK-Nummer verknüpft haben.
 - **Domain muss `.nl` sein** -- das Gratisprogramm gilt nur für die NL-Endung.
 - **Domain muss mit dem KVK-Namen übereinstimmen** -- die Domain muss dem registrierten Firmennamen oder einem Handelsnamen entsprechen.
@@ -177,7 +176,7 @@ Die unterstützten TLDs für den Kauf sind `.nl`, `.eu`, `.com`, `.net` und `.or
 Neue Datenbanktabellen, die mit diesem Feature eingeführt wurden:
 
 - `domain_purchase_intents` -- verfolgt bezahlte Kaufabsichten mit Stripe PaymentIntent-IDs, Registrantdaten und Kaufstatus.
-- `founder_domain_claims` -- verfolgt Founder-Gratis-Claims mit Berechtigungs-Snapshots, Abuse-Scoring und Claim-Status.
+- `founder_domain_claims` -- verfolgt Gratis-Domain-Claims mit Berechtigungs-Snapshots, Abuse-Scoring und Claim-Status.
 - `domain_buyout_intents` -- verfolgt Übernahme-Zahlungsabsichten bei vorzeitigem Probezeit-Ende mit Stripe PaymentIntent-IDs und Übergabestatus.
 - `domain_registrar_columns`-Migration fügt registrar-bezogene Spalten zur bestehenden `domains`-Tabelle hinzu.
 

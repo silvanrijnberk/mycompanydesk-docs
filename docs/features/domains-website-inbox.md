@@ -80,7 +80,7 @@ The page defaults to a clean view with the most commonly needed tabs. Six power-
 
 What the page lets you do:
 
-- **Buy or claim a domain** via the domain purchase card. Enter a domain name, check availability against OpenProvider, and either buy it or claim it free if you qualify as a Founding Member.
+- **Buy or claim a domain** via the domain purchase card. Enter a domain name, check availability against OpenProvider, and either buy it or claim it free if your workspace qualifies for the free `.nl` claim.
 - **Add a domain** (nameserver or CNAME mode) via a dedicated card that is always visible.
 - **Verify** a pending domain.
 - **Manage DNS records** for the selected active domain -- A, AAAA, CNAME, MX, TXT, SRV, CAA, NS. CRUD goes through Cloudflare via the API.
@@ -111,14 +111,14 @@ Notable columns the app reads from:
 | `registrar_domain_id` | The registrar-side identifier for purchased domains. |
 | `purchase_price_period` | Billing period for purchased domains (`yearly`). |
 | `purchase_intent_id` | Links to the `domain_purchase_intents` row for paid purchases. |
-| `founder_claim_id` | Links to the `founder_domain_claims` row for Founder free claims. |
+| `founder_claim_id` | Links to the `founder_domain_claims` row for free-domain claims. |
 | `transferred_out_at` | Set when a domain is detected as transferred away from the MCD registrar account during the weekly sync. |
 
 #### Renewal lifecycle
 
 Domain renewal follows three paths depending on how the domain was acquired:
 
-1. **Free bundled renewal** (Founder-tier or Pro-converted trial-tier): MCD absorbs the wholesale renewal cost. The domain auto-renews as long as the workspace stays on Pro. No payment method needed.
+1. **Free bundled renewal** (Pro-converted trial-tier, or a legacy free-for-life arrangement): MCD absorbs the wholesale renewal cost. The domain auto-renews as long as the workspace stays on Pro. No payment method needed.
 2. **Paid auto-renewal** (paid purchase, or trial-tier without Pro): Charged annually via the saved card. Works like any subscription renewal.
 3. **Manual renewal**: If a trial-tier workspace falls off Pro AND has no saved card, the auto-renewal path skips it. The user sees a notification and can trigger a one-off payment via `POST /api/domains/renew/:domainId`, which creates a Stripe Embedded Checkout session for the renewal. This is the only way to keep a domain alive without an active subscription or saved card.
 
@@ -138,7 +138,7 @@ Database tables involved:
 
 Transferring a domain registered through MyCompanyDesk to another registrar has permanent consequences, enforced by the weekly OpenProvider status sync:
 
-- **Founder-tier domains**: The Founder claim is deleted, and the workspace's internal lifetime-Pro subscription is cancelled. The workspace becomes a regular paid customer. This is irreversible. The Founder status cannot be reclaimed.
+- **Legacy free-for-life domains**: The free claim is deleted, and the workspace's internal lifetime-Pro grant is cancelled. The workspace becomes a regular paid customer. This is irreversible; the grant cannot be reclaimed.
 - **Trial-tier / Pro-bundled domains**: The bundled-free status is lost. The workspace can never claim another free domain (already enforced via the retained-claims list). Note that buying out the domain during the trial (see buy-out section above) is not a transfer — it is a holder handover that gives the customer ownership before any transfer happens, so the free-domain perk is preserved for the duration of the trial.
 - **Paid domains**: No perk revocation. The domain simply moves to `status = 'transferred_out'`.
 
@@ -149,20 +149,19 @@ The claim modal warns about these consequences before a free-domain claim is sub
 The domain purchase card (`DomainPurchaseCard.vue`, `domain-purchase.service.ts`) is the first card on the Domains settings page. It appears when the workspace has no active custom domain yet. The card lets the user pick and acquire a domain through two paths, both opening a dedicated two-step purchase modal (`DomainClaimModal.vue`). Step 1 collects registrant details (the data required by the registrar for WHOIS). Step 2 handles payment or claim submission:
 
 - **Buy** -- Paid purchase via OpenProvider. The user enters a domain name, the card calls `GET /api/domain-purchase/quote` to check availability and pricing, and then opens the purchase modal. After collecting the registrant details, the modal calls `POST /api/domain-purchase/checkout-session` to create a Stripe payment session and mounts Stripe Embedded Checkout for the payment. Once complete, `POST /api/domain-purchase/finalize` registers the domain with OpenProvider and creates the `domains` row in nameserver mode, wired to Cloudflare.
-- **Free claim** -- Eligible workspaces on a Pro trial (including new Founding Members from 2026-05-20 onward) can claim one `.nl` domain free of charge for the first year. The card calls `GET /api/domain-purchase/founder/eligibility` to check the workspace's claim tier (`trial` for trial members, `founder` for grandfathered original-cohort Founding Members) and gate status. The modal collects the registrant details, and on submit calls `POST /api/domain-purchase/founder/claim`. The platform pays the first-year registration fee.
+- **Free claim** -- Eligible workspaces on a Pro trial can claim one `.nl` domain free of charge for the first year. The card calls `GET /api/domain-purchase/free-domain/eligibility` to check the workspace's claim tier and gate status. The modal collects the registrant details, and on submit calls `POST /api/domain-purchase/free-domain/claim`. The platform pays the first-year registration fee.
 
-Founder claims now have two tiers for renewal, governed by the Founding Member grant type:
+Free claims differ only in how the domain is renewed after the first year:
 
-- **Founder tier** (grandfathered only) -- Workspaces with the original grant type `free_for_life` (claimed before 2026-05-20) receive lifetime-free domain renewal. No payment method is required. Renewal is handled automatically by the platform, with MCD absorbing the wholesale cost. New Founding Members from 2026-05-20 onward do NOT get this tier; they claim under the trial tier like any other trial workspace.
-- **Trial tier** -- Workspaces on a trial (including new Founding Members with grant type `trial_plus_discount`). The first year is free. At the end of the free year the workspace must be on a paid Pro plan; the domain then renews as part of the Pro subscription, paid by the workspace. If the workspace stops paying Pro after the free year, the domain lapses and must be renewed manually. During the trial year the user can optionally save a card via Stripe SetupIntent in the modal for future automatic renewal.
+- **Trial tier** -- Workspaces on a Pro trial. The first year is free. At the end of the free year the workspace must be on a paid Pro plan; the domain then renews as part of the Pro subscription, paid by the workspace. If the workspace stops paying Pro after the free year, the domain lapses and must be renewed manually. During the trial year the user can optionally save a card via Stripe SetupIntent in the modal for future automatic renewal.
 - **Paid tier** -- Standard domains purchased at full price. Renewal is charged via the saved payment method on the annual cycle. If the charge fails, a manual-renewal notification is sent.
+- **Legacy free-for-life tier** -- A small number of legacy workspaces retain free Pro and lifetime-free domain renewal under earlier arrangements. No payment method is required; renewal is handled automatically by the platform, with MCD absorbing the wholesale cost. This tier is closed and cannot be requested.
 
-The eligibility endpoint (`GET /api/domain-purchase/founder/eligibility`) returns a `tier` field (`founder` | `trial` | `paid` | `free`) and `founderSlotsRemaining` alongside the existing gates. The 50-slot cap applies only to Founder-tier claims (grandfathered cohort); trial-tier claims do not count against the Founder cap.
+The eligibility endpoint (`GET /api/domain-purchase/free-domain/eligibility`) returns a `tier` field alongside the gate report. It does not expose any remaining-claim count.
 
-Founder eligibility is determined by a set of hard gates checked server-side in `founder-domain-claim.service.js`:
+Eligibility is determined by a set of hard gates checked server-side:
 
-- **Founding Member status** -- the workspace must have the Founding Member flag (grant type determines tier: `free_for_life` maps to `founder`, `trial_plus_discount` maps to `trial`).
-- **Free-domain slots** capped at 50 across all grandfathered Founding Members (`free_for_life`) for Founder-tier claims. Trial-tier claims are not counted against this cap.
+- **Active Pro workspace** -- the workspace must be on Pro (trial or paid). Workspaces on Free cannot claim.
 - **KVK required** -- the workspace must have a linked KVK number.
 - **Domain must be `.nl`** -- the free program only covers the NL TLD.
 - **Domain must match the KVK name** -- the domain must correspond to the registered legal name or a trade name.
@@ -177,7 +176,7 @@ The supported TLDs for purchase are `.nl`, `.eu`, `.com`, `.net`, and `.org`. Ot
 New database tables introduced by this feature:
 
 - `domain_purchase_intents` -- tracks paid purchase intents with Stripe PaymentIntent IDs, registrant details, and purchase status.
-- `founder_domain_claims` -- tracks Founder free claims with eligibility snapshots, abuse scoring, and claim status.
+- `founder_domain_claims` -- tracks free-domain claims with eligibility snapshots, abuse scoring, and claim status.
 - `domain_buyout_intents` -- tracks trial-exit buy-out payment intents with Stripe PaymentIntent IDs and handover status.
 - `domain_registrar_columns` migration adds registrar-related columns to the existing `domains` table.
 

@@ -26,7 +26,7 @@ L'assistant affiche une barre de progression avec jusqu'à six étapes :
 3. **KVK :** les informations de votre entreprise
 4. **Adresse web :** seulement si vous avez choisi l'objectif site web
 5. **Marque :** seulement si vous avez choisi l'objectif site web
-6. **Founding Members :** confirmation de l'essai et finalisation
+6. **Votre essai :** confirmation de l'essai et finalisation
 
 **Continuer** avance dès qu'une étape a ce qu'il lui faut ; **Terminer la configuration** sur la dernière étape applique tout.
 
@@ -77,7 +77,7 @@ Visible uniquement avec l'objectif site web. Trois cartes :
 
 - **Sous-domaine gratuit :** choisissez un nom pour une adresse gratuite se terminant par `.mycompanydesk.site`. Le nom est prérempli à partir du nom de votre entreprise et la disponibilité est vérifiée en direct pendant la saisie. Continuer n'est possible qu'une fois le nom confirmé disponible.
 - **J'ai déjà un domaine :** tapez un domaine qui vous appartient. Il est connecté à votre espace de travail à la fin de l'assistant ; s'il ne pointe pas encore vers MyCompanyDesk, vous effectuez ensuite les étapes DNS depuis les paramètres de votre site.
-- **Enregistrer un domaine :** cherchez un domaine, consultez la disponibilité et le prix, et achetez-le directement dans l'assistant. Les Founding Members peuvent en réclamer un gratuitement. Un achat réussi est rattaché immédiatement à votre espace de travail.
+- **Enregistrer un domaine :** cherchez un domaine, consultez la disponibilité et le prix, et achetez-le directement dans l'assistant. Pendant votre essai Pro, vous pouvez aussi réclamer gratuitement un domaine `.nl` pour la première année au lieu de l'acheter. Un achat réussi est rattaché immédiatement à votre espace de travail.
 
 L'étape peut être passée ; un domaine peut toujours être ajouté plus tard depuis les paramètres de votre site.
 
@@ -88,12 +88,11 @@ Visible uniquement avec l'objectif site web, et entièrement facultative :
 - **Import du logo :** PNG, JPG, SVG ou WebP. La couleur dominante de votre logo devient automatiquement votre couleur de marque. Si vous passez l'import, MyCompanyDesk génère un logo sobre à partir de vos initiales, pour que vos factures et votre site n'aient jamais l'air inachevés.
 - **Aperçu :** la couleur de marque et le slogan proposés pour vous, à partir de vos données KVK et de votre description en une ligne. La retouche se fait plus tard dans les paramètres ; rien sur cette étape ne vous empêche de continuer.
 
-## Étape : Founding Members
+## Étape : Votre essai
 
-La dernière étape confirme votre essai et présente le programme Founding Members :
+La dernière étape confirme votre essai :
 
 - **Votre essai :** chaque nouvel espace de travail démarre avec 60 jours de Pro, gratuits, sans carte bancaire.
-- **Founding Members :** tant qu'il reste des places (100 au total, avec un compteur en direct), un clic réserve la vôtre : une année entière de Pro gratuite, puis 50 pour cent de remise sur Pro tant que vous restez. Quand toutes les places sont prises, l'étape indique simplement que votre essai de 60 jours continue normalement.
 
 **Terminer la configuration** applique tout : vos informations d'entreprise, couleur de marque, logo, prestations de départ et modèles d'e-mails, des catégories de dépenses adaptées à votre travail et, avec l'objectif site web, votre site et votre domaine. Un récapitulatif liste ce qui a été mis en place, avec des boutons vers le tableau de bord ou directement vers l'éditeur de site.
 

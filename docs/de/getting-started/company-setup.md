@@ -41,7 +41,7 @@ Wählen Sie, wie Kunden Sie online finden:
 
 - **Kostenlose Subdomain:** eine kostenlose Adresse mit der Endung `.mycompanydesk.site`, vorgeschlagen aus Ihrem Firmennamen und beim Tippen live auf Verfügbarkeit geprüft.
 - **Eigene Domain:** Verbinden Sie eine Domain, die Sie anderswo registriert haben.
-- **Domain registrieren:** Suchen Sie eine neue Domain, prüfen Sie den Preis und kaufen Sie sie direkt im Assistenten. Gründungsmitglieder erhalten eine inklusive.
+- **Domain registrieren:** Suchen Sie eine neue Domain, prüfen Sie den Preis und kaufen Sie sie direkt im Assistenten. Während Ihrer Pro-Testphase können Sie statt zu kaufen auch eine `.nl`-Domain im ersten Jahr kostenlos beanspruchen.
 
 Sie können diesen Schritt überspringen und eine Domain später einrichten.
 
@@ -49,9 +49,9 @@ Sie können diesen Schritt überspringen und eine Domain später einrichten.
 
 Laden Sie Ihr Logo hoch, wenn Sie eines haben; MyCompanyDesk übernimmt daraus automatisch Ihre Markenfarbe. Kein Logo? Kein Problem: Aus Ihren Initialen wird ein sauberes Logo erzeugt. Der Schritt zeigt außerdem eine Vorschau der vorgeschlagenen Markenfarbe und des Slogans, damit Sie sehen, wie Ihre Rechnungen und Ihre Website aussehen werden.
 
-## Schritt 6: Gründungsmitglieder und Ihre Testphase
+## Schritt 6: Ihre Testphase
 
-Der letzte Schritt bestätigt, dass Ihre 60-tägige Pro-Testphase aktiv ist, ohne Kreditkarte. Solange Plätze frei sind, können Sie hier auch einen Gründungsmitglieder-Platz sichern, mit einer längeren Gratisphase und dauerhaftem Rabatt. Mit dem Abschließen der Einrichtung wendet der Assistent alles an, zeigt eine Zusammenfassung dessen, was eingerichtet wurde, und bringt Sie zu Ihrem Dashboard.
+Der letzte Schritt bestätigt, dass Ihre 60-tägige Pro-Testphase aktiv ist, ohne Kreditkarte. Mit dem Abschließen der Einrichtung wendet der Assistent alles an, zeigt eine Zusammenfassung dessen, was eingerichtet wurde, und bringt Sie zu Ihrem Dashboard.
 
 ## Später ändern
 
