@@ -27,6 +27,10 @@ The contracts module is optional. Enable it in **Company > Features** if you don
    - **Description** — Terms and details
 3. Click **Save**
 
+::: tip Meer opties
+The new-contract form keeps optional details tidy: the **More options** section reveals extra fields for service charge amount, VAT rate, and service description. These are not required to create the contract, but you can expand them when you need them.
+:::
+
 ## Contract statuses
 
 | Status | Description |

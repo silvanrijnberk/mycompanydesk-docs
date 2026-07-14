@@ -37,9 +37,11 @@ The objects module is designed for businesses that manage physical assets — pa
 2. Fill in:
    - **Name** — A clear identifier (e.g., "Apartment 3B" or "Excavator CAT 320")
    - **Type** — Property, Vehicle, Machine, or Other
-   - **Status** — Available, Rented, or Inactive
-   - **Description** — Details about the asset
 3. Click **Save**
+
+::: tip More options
+The new-object form only asks for the name by default. Use **More options** to add a description, and **Purchase and status** to set purchase date, price, current value, VAT regime and status. These fields are optional for creating the object; the status defaults to available.
+:::
 
 ## Object detail page
 

@@ -27,6 +27,10 @@ De contractenmodule is optioneel. Schakel deze in via **Bedrijf > Functies** als
    - **Omschrijving** — Voorwaarden en details
 3. Klik op **Opslaan**
 
+::: tip Meer opties
+In het formulier voor een nieuw contract blijven optionele velden netjes opgeborgen: open de sectie **Meer opties** om extra velden voor het servicebedrag, het btw-tarief en de serviceomschrijving te tonen. Ze zijn niet verplicht om een contract aan te maken, maar je kunt ze uitvouwen wanneer je ze nodig hebt.
+:::
+
 ## Contractstatussen
 
 | Status | Beschrijving |

@@ -29,6 +29,10 @@ Veelvoorkomende toepassingen:
    - **Frequentie** — Wekelijks, maandelijks, per kwartaal of jaarlijks
 3. Klik op **Opslaan**
 
+::: tip Meer opties
+In het formulier voor een nieuwe terugkerende uitgave staan optionele velden netjes achter **Meer opties**. De notities zitten daar standaard; vouw de sectie uit als je ze wilt toevoegen.
+:::
+
 ## Frequentieopties
 
 | Frequentie | Beschrijving |

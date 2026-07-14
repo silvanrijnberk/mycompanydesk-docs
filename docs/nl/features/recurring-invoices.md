@@ -26,6 +26,10 @@ Terugkerende facturen zijn sjablonen die automatisch nieuwe facturen aanmaken op
    - **Startdatum** — Wanneer de generatie begint
 3. Klik op **Opslaan**
 
+::: tip Meer opties
+In het formulier voor een nieuwe terugkerende factuur staan optionele velden netjes achter **Meer opties**. De notities zitten daar standaard; vouw de sectie uit als je ze wilt toevoegen.
+:::
+
 De terugkerende factuur wordt aangemaakt met de status **Actief** en genereert de eerste factuur op de volgende geplande datum.
 
 ## Frequentieopties

@@ -26,6 +26,10 @@ Wiederkehrende Rechnungen sind Vorlagen, die automatisch neue Rechnungen in fest
    - **Startdatum** — Wann die Generierung beginnen soll
 3. Klicken Sie auf **Speichern**
 
+::: tip Weitere Optionen
+Im Formular für neue wiederkehrende Rechnungen bleiben optionale Angaben unter **Weitere Optionen** verborgen. Notizen stehen dort standardmäßig; klappen Sie den Abschnitt aus, wenn Sie sie ergänzen möchten.
+:::
+
 Die wiederkehrende Rechnung wird im Status **Aktiv** erstellt und generiert ihre erste Rechnung am nächsten geplanten Datum.
 
 ## Häufigkeitsoptionen

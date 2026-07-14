@@ -37,9 +37,11 @@ De objectenmodule is ontworpen voor bedrijven die fysieke activa beheren — met
 2. Vul in:
    - **Naam** — Een duidelijke identificatie (bijv. "Appartement 3B" of "Graafmachine CAT 320")
    - **Type** — Vastgoed, Voertuig, Machine of Overig
-   - **Status** — Beschikbaar, Verhuurd of Inactief
-   - **Omschrijving** — Details over het activum
 3. Klik op **Opslaan**
+
+::: tip Meer opties
+Het formulier voor een nieuw object vraagt standaard alleen om de naam. Gebruik **Meer opties** om een omschrijving toe te voegen, en **Aanschaf en status** om aanschafdatum, prijs, huidige waarde, btw-regime en status in te stellen. Deze velden zijn niet verplicht om het object aan te maken; de status staat standaard op beschikbaar.
+:::
 
 ## Objectdetailpagina
 

@@ -26,6 +26,10 @@ Les factures recurrentes sont des modeles qui creent automatiquement de nouvelle
    - **Date de debut** -- Quand commencer la generation
 3. Cliquez sur **Enregistrer**
 
+::: tip Plus d'options
+Dans le formulaire de nouvelle facture recurrente, les champs optionnels restent ranges sous **Plus d'options**. Les notes s'y trouvent par defaut; depliez la section pour les ajouter.
+:::
+
 La facture recurrente est creee avec le statut **Active** et generera sa premiere facture a la prochaine date programmee.
 
 ## Options de frequence

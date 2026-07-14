@@ -27,6 +27,10 @@ Das Vertragsmodul ist optional. Aktivieren Sie es unter **Unternehmen > Funktion
    - **Beschreibung** — Bedingungen und Details
 3. Klicken Sie auf **Speichern**
 
+::: tip Weitere Optionen
+Im Formular für neue Verträge bleiben optionale Angaben übersichtlich: der Abschnitt **Weitere Optionen** zeigt zusätzliche Felder für Servicezuschlag, USt.-Satz und Servicebeschreibung. Sie sind für das Erstellen des Vertrags nicht erforderlich, können aber bei Bedarf ausgeklappt werden.
+:::
+
 ## Vertragsstatus
 
 | Status | Beschreibung |
