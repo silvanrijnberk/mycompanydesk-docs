@@ -103,7 +103,7 @@ Features unlocked per plan:
 | Public business page | no | yes | yes |
 | Company subdomain and style presets | no | yes | yes |
 | Team access (unlimited people) | no | no | yes |
-| Remove MyCompanyDesk branding | no | no | yes |
+| Clean invoices and quotes sent to your clients | no | yes | yes |
 | Advanced reports | no | no | yes |
 | Custom domain, domain routing, full website on your domain | no | no | yes |
 | Business inbox | no | no | yes |
@@ -122,9 +122,9 @@ Accountant (boekhouder) access is free on every plan and does not count as team 
 
 The business inbox is a Pro feature. On Pro you can send up to 15 000 and receive up to 20 000 emails per month; there is no cap on the number of mailboxes.
 
-### Public-site grace period
+### Public-site availability
 
-When a paid workspace lapses to Free, its public website and site-builder pages stay online for 7 days before going dark. This prevents a forgotten payment from instantly taking down a live business site and its indexed URLs. The grace window is measured from the most recent access-ending event: trial end, cancellation, or paid period expiry. If the system cannot determine when access ended, the site stays up rather than risking an accidental takedown. The gate runs on every request, before any caching, so subscription changes take effect immediately.
+When a workspace lapses to Free, its public website and site-builder pages remain online. Free sites carry a small MyCompanyDesk badge on the workspace subdomain address; the only way to remove the badge is to move the site to a custom domain (Pro). The gate runs on every request, before any caching, so subscription changes take effect immediately.
 
 ### Team access
 

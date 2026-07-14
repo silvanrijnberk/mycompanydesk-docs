@@ -385,15 +385,15 @@ Consultez [Devis -- Demandes de devis](/fr/features/quotes#quote-requests) pour 
 
 ## Condition d'abonnement
 
-Le site web public (page entreprise et constructeur de site) est une fonction payante. Le site est visible tant que votre espace de travail est sur un plan Starter ou Pro. Lorsqu'un espace de travail retombe en Gratuit, le site reste en ligne pendant un delai de grace de 7 jours, puis passe hors ligne.
+Le site web public (page entreprise et constructeur de site) est une fonction payante. Le site est visible tant que votre espace de travail est sur un plan Starter ou Pro. Un espace de travail Gratuit garde le site en ligne sur le sous-domaine de l'espace avec un petit badge MyCompanyDesk ; le déplacer vers un domaine personnalisé (Pro) supprime le badge.
 
-- **Payant ou en essai**: Le site est toujours visible.
-- **Retombe en Gratuit**: Le site reste visible pendant 7 jours apres la fin de votre acces payant (base sur la fin d'essai, la date de resiliation ou la fin de periode de paiement, selon la plus recente). Apres le delai de grace, le site renvoie une erreur 404.
-- **Etat incertain**: Si le systeme ne peut pas determiner quand votre acces payant a pris fin, le site reste en ligne pour eviter une coupure accidentelle.
+- **Payant ou en essai**: Le site est toujours visible, sans badge MyCompanyDesk sur un domaine personnalisé et avec un petit badge sur le sous-domaine de l'espace de travail.
+- **Retombe en Gratuit**: Le site reste visible sur le sous-domaine de l'espace de travail avec un petit badge MyCompanyDesk.
+- **Etat incertain**: Si le système ne peut pas déterminer votre plan, le site reste en ligne pour éviter une coupure accidentelle.
 
-Ce controle s'applique a tous les chemins publics: la page entreprise, la route de detail des services et les pages du constructeur de site. La verification a lieu a chaque requete, avant toute couche de cache, afin de rester exacte meme si votre abonnement change en cours de cache.
+Ce contrôle s'applique à tous les chemins publics: la page entreprise, la route de détail des services et les pages du constructeur de site. La vérification a lieu à chaque requête, avant toute couche de cache, afin de rester exacte même si votre abonnement change en cours de cache.
 
-Source: `apps/api/src/modules/billing/entitlement.service.js` — `PUBLIC_PAGE_GRACE_DAYS`, `computePublicPageGate`, `getPublicPageVisibility`.
+Source: `apps/api/src/modules/billing/entitlement.service.js` — `computePublicPageGate`, `getPublicPageVisibility`; `renderer.service.js` définit la règle du badge en fonction de l'adresse.
 
 ## Voir aussi
 

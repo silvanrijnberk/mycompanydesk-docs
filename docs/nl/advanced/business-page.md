@@ -385,15 +385,15 @@ Zie [Offertes - Offerteaanvragen](/nl/features/quotes#offerteaanvragen) voor det
 
 ## Abonnementsvereiste
 
-De openbare website (bedrijfspagina en sitebouwer) is een betaalde functie. De site is zichtbaar zolang je werkruimte een Starter- of Pro-abonnement heeft. Als een werkruimte naar Gratis vervalt, blijft de site nog 7 dagen live en gaat daarna op zwart.
+De openbare website (bedrijfspagina en sitebouwer) is een betaalde functie. De site is zichtbaar zolang je werkruimte een Starter- of Pro-abonnement heeft. Een Gratis-werkruimte houdt de site live op het werkruimte-subdomein met een klein MyCompanyDesk-badge; verhuizen naar een eigen domein (Pro) verwijdert de badge.
 
-- **Betaald of in proefperiode**: De site is altijd zichtbaar.
-- **Vervallen naar Gratis**: De site blijft nog 7 dagen zichtbaar nadat je betaalde toegang eindigt (op basis van proefperiode-einde, opzeggingsdatum of einde betaalperiode, welke het meest recent is). Na het respijtvenster geeft de site een 404-fout.
-- **Onzekere toestand**: Als het systeem niet kan bepalen wanneer je betaalde toegang eindigde, blijft de site online om te voorkomen dat een site onterecht offline gaat.
+- **Betaald of in proefperiode**: De site is altijd zichtbaar, zonder MyCompanyDesk-badge op een eigen domein en met een klein badge op het werkruimte-subdomein.
+- **Vervallen naar Gratis**: De site blijft zichtbaar op het werkruimte-subdomein met een klein MyCompanyDesk-badge.
+- **Onzekere toestand**: Als het systeem niet kan bepalen welk abonnement je hebt, blijft de site online om te voorkomen dat een site onterecht offline gaat.
 
 Deze poort geldt voor alle publieke paden: de bedrijfspagina, de servicedetailroute en de pagina's van de sitebouwer. De controle gebeurt bij elk verzoek, voor elke cachinglaag, zodat het klopt ook als je abonnement midden in een cacheperiode verandert.
 
-Bron: `apps/api/src/modules/billing/entitlement.service.js` — `PUBLIC_PAGE_GRACE_DAYS`, `computePublicPageGate`, `getPublicPageVisibility`.
+Bron: `apps/api/src/modules/billing/entitlement.service.js` — `computePublicPageGate`, `getPublicPageVisibility`; `renderer.service.js` bepaalt de badge op basis van het adres.
 
 ## Gerelateerd
 
