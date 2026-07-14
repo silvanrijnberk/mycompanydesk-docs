@@ -63,7 +63,7 @@ Téléchargez vos enregistrements par type :
 - **Dépenses** en CSV, avec catégories et montants
 
 ::: info
-Les exports CSV et la sauvegarde complète sont disponibles à partir du forfait **Starter**. Sur le forfait gratuit, la page affiche une invitation à mettre à niveau.
+Les exports CSV sont disponibles à partir du forfait **Starter**. La sauvegarde complète (JSON) est disponible sur tous les forfaits, y compris Gratuit.
 :::
 
 ### Sauvegarde complète
