@@ -9,11 +9,11 @@ Op deze pagina lees je hoe MyCompanyDesk omgaat met cookies, lokale opslag en an
 
 ## Marketingwebsite
 
-De marketingwebsite toont een cookietoestemmingsbanner bij je eerste bezoek. Die banner vraagt of we analytics-opslag mogen plaatsen. Je kunt je keuze later altijd aanpassen via de banner.
+De marketingwebsite toont een cookietoestemmingsbanner bij je eerste bezoek. Die banner noemt **Analytics-cookies** en legt uit dat ze ons helpen begrijpen hoe bezoekers de site gebruiken. Analytics-opslag wordt alleen geplaatst nadat je akkoord gaat, en nooit als je browser een Do Not Track (DNT)-signaal stuurt. Je kunt je keuze later altijd aanpassen via de banner.
 
 Als je akkoord gaat, slaat de site een anonieme analytics-id op in de `localStorage` van je browser onder de sleutel `mcd_phid`. Deze id wordt alleen gebruikt om te begrijpen hoe bezoekers door de site navigeren. Hij is niet gekoppeld aan je account of e-mailadres.
 
-Als je weigert, of als je browser een Do Not Track (DNT)-signaal stuurt, wordt er geen analytics-id opgeslagen. De banner kan nog steeds verschijnen, omdat hij ook niet-analytics-cookies behandelt.
+Als je weigert, of als je browser een Do Not Track-signaal stuurt, wordt er geen analytics-id opgeslagen. De banner kan nog steeds verschijnen, omdat hij ook niet-analytics-cookies behandelt.
 
 ## Van marketingwebsite naar app
 

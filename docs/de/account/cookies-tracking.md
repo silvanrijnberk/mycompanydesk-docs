@@ -9,7 +9,7 @@ Auf dieser Seite erfährst du, wie MyCompanyDesk Cookies, lokalen Speicher und A
 
 ## Marketing-Website
 
-Die Marketing-Website zeigt beim ersten Besuch ein Cookie-Einwilligungsbanner. Das Banner fragt, ob wir Analytics-Speicher setzen dürfen. Du kannst deine Entscheidung später jederzeit über das Banner ändern.
+Die Marketing-Website zeigt beim ersten Besuch ein Cookie-Einwilligungsbanner. Das Banner listet **Analytics-Cookies** auf und erklärt, dass sie uns helfen zu verstehen, wie Besucher die Website nutzen. Analytics-Speicher wird erst gesetzt, nachdem du zugestimmt hast, und niemals, wenn dein Browser ein Do-Not-Track-Signal sendet. Du kannst deine Entscheidung später jederzeit über das Banner ändern.
 
 Wenn du zustimmst, speichert die Site eine anonyme Analytics-ID im `localStorage` deines Browsers unter dem Schlüssel `mcd_phid`. Diese ID wird nur verwendet, um nachzuvollziehen, wie Besucher durch die Seite navigieren. Sie ist nicht mit deinem Account oder deiner E-Mail-Adresse verknüpft.
 
