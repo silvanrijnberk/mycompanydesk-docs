@@ -27,6 +27,10 @@ Le module contrats est optionnel. Activez-le dans **Entreprise > Fonctionnalites
    - **Description** -- Conditions et details
 3. Cliquez sur **Enregistrer**
 
+::: tip Plus d'options
+Dans le formulaire de nouveau contrat, les details optionnels restent ranges : la section **Plus d'options** devoile des champs supplementaires pour le montant du supplement de service, le taux de TVA et la description du service. Ils ne sont pas requis pour creer le contrat, mais vous pouvez les deployer quand vous en avez besoin.
+:::
+
 ## Statuts des contrats
 
 | Statut | Description |

@@ -37,9 +37,11 @@ Le module objets est concu pour les entreprises qui gerent des actifs physiques 
 2. Remplissez :
    - **Nom** -- Un identifiant clair (par ex., "Appartement 3B" ou "Pelleteuse CAT 320")
    - **Type** -- Propriete, Vehicule, Machine ou Autre
-   - **Statut** -- Disponible, Loue ou Inactif
-   - **Description** -- Details sur l'actif
 3. Cliquez sur **Enregistrer**
+
+::: tip Plus d'options
+Le formulaire de nouvel objet ne demande que le nom par defaut. Utilisez **Plus d'options** pour ajouter une description, et **Achat et statut** pour definir la date d'achat, le prix, la valeur actuelle, le regime de TVA et le statut. Ces champs sont optionnels pour creer l'objet; le statut est disponible par defaut.
+:::
 
 ## Page de detail de l'objet
 

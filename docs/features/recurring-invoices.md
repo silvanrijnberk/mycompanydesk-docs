@@ -26,6 +26,10 @@ Recurring invoices are templates that automatically create new invoices at speci
    - **Start date** — When to start generating
 3. Click **Save**
 
+::: tip More options
+The new recurring-invoice form keeps optional details behind **More options**. Notes sit there by default; expand the section when you want to add them.
+:::
+
 The recurring invoice is created in **Active** status and will generate its first invoice on the next scheduled date.
 
 ## Frequency options

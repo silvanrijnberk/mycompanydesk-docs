@@ -29,6 +29,10 @@ Common use cases:
    - **Frequency** — Weekly, monthly, quarterly, or yearly
 3. Click **Save**
 
+::: tip More options
+The new recurring-expense form keeps optional details behind **More options**. Notes sit there by default; expand the section when you want to add them.
+:::
+
 ## Frequency options
 
 | Frequency | Description |

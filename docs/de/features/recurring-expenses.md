@@ -29,6 +29,10 @@ Häufige Anwendungsfälle:
    - **Häufigkeit** — Wöchentlich, monatlich, vierteljährlich oder jährlich
 3. Klicken Sie auf **Speichern**
 
+::: tip Weitere Optionen
+Im Formular für neue wiederkehrende Ausgaben bleiben optionale Angaben unter **Weitere Optionen** verborgen. Notizen stehen dort standardmäßig; klappen Sie den Abschnitt aus, wenn Sie sie ergänzen möchten.
+:::
+
 ## Häufigkeitsoptionen
 
 | Häufigkeit | Beschreibung |

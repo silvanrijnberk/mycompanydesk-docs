@@ -29,6 +29,10 @@ Cas d'utilisation courants :
    - **Frequence** -- Hebdomadaire, mensuelle, trimestrielle ou annuelle
 3. Cliquez sur **Enregistrer**
 
+::: tip Plus d'options
+Dans le formulaire de nouvelle depense recurrente, les champs optionnels restent ranges sous **Plus d'options**. Les notes s'y trouvent par defaut; depliez la section pour les ajouter.
+:::
+
 ## Options de frequence
 
 | Frequence | Description |

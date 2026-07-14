@@ -37,9 +37,11 @@ Das Objektmodul ist für Unternehmen konzipiert, die physische Vermögenswerte v
 2. Füllen Sie aus:
    - **Name** — Eine eindeutige Bezeichnung (z. B. „Wohnung 3B" oder „Bagger CAT 320")
    - **Typ** — Immobilie, Fahrzeug, Maschine oder Sonstiges
-   - **Status** — Verfügbar, Vermietet oder Inaktiv
-   - **Beschreibung** — Details zum Vermögenswert
 3. Klicken Sie auf **Speichern**
+
+::: tip Weitere Optionen
+Das Formular für neue Objekte fragt standardmäßig nur nach dem Namen. Über **Weitere Optionen** fügen Sie eine Beschreibung hinzu, und über **Anschaffung und Status** legen Sie Anschaffungsdatum, Preis, aktuellen Wert, USt.-Regelung und Status fest. Diese Felder sind für das Erstellen des Objekts nicht erforderlich; der Status ist standardmäßig verfügbar.
+:::
 
 ## Objektdetailseite
 
