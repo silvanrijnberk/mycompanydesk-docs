@@ -13,7 +13,7 @@ Importieren Sie bestehende Daten in MyCompanyDesk und exportieren Sie Ihre Unter
 
 Importieren Sie Daten aus CSV-Dateien für:
 
-- **Kunden** mit Name, E-Mail, Telefon, Adresse, USt-Nummer
+- **Kunden** mit Name, E-Mail, Telefon, Adresse, USt.-Nummer
 - **Rechnungen** mit Rechnungsdetails
 - **Ausgaben** mit Kategorien und Beträgen
 
@@ -47,7 +47,7 @@ Der Import-Assistent zeigt Ihre CSV-Spalten und lässt Sie jede dem passenden My
 | Straße / Adresse | Straßenadresse |
 | PLZ | Postleitzahl |
 | Ort | Ort |
-| VAT / USt | USt-Nummer |
+| VAT / USt | USt.-Nummer |
 | Telefon | Telefonnummer |
 
 ## Export
@@ -63,7 +63,7 @@ Laden Sie Ihre Daten pro Typ herunter:
 - **Ausgaben** als CSV, mit Kategorien und Beträgen
 
 ::: info
-CSV- und Komplettsicherungs-Exporte sind ab dem **Starter**-Abonnement verfügbar. Im kostenlosen Abonnement zeigt die Seite einen Upgrade-Hinweis.
+CSV-Exporte sind ab dem **Starter**-Abonnement verfügbar. Die komplette JSON-Sicherung ist in jedem Abonnement verfügbar, einschließlich Gratis.
 :::
 
 ### Komplette Sicherung
