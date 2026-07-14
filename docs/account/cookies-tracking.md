@@ -9,11 +9,11 @@ This page explains how MyCompanyDesk uses cookies, local storage, and analytics.
 
 ## Marketing site
 
-The marketing site shows a cookie-consent banner when you first visit. The banner asks whether we may place analytics storage. You can change your choice at any time via the banner.
+The marketing site shows a cookie-consent banner when you first visit. The banner lists **Analytics cookies** and explains that they help us understand how visitors use the site. Analytics storage is only placed after you accept, and never when your browser sends a Do Not Track (DNT) signal. You can change your choice at any time via the banner.
 
 If you accept, the site stores an anonymous analytics identifier in your browser's `localStorage` under the key `mcd_phid`. This identifier is only used to understand how visitors move through the site. It is not linked to your account or email address.
 
-If you decline, or if your browser sends a Do Not Track (DNT) signal, no analytics identifier is stored. The banner may still appear because it also covers non-analytics cookies.
+If you decline, or if your browser sends a Do Not Track signal, no analytics identifier is stored. The banner may still appear because it also covers non-analytics cookies.
 
 ## From marketing site to app
 
