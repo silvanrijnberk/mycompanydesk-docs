@@ -96,6 +96,8 @@ MyCompanyDesk neemt gegevensbeveiliging serieus:
 - AVG-conforme gegevensverwerking
 - Regelmatige back-ups houden je gegevens veilig
 
+Zie [Cookies en analytics](/nl/account/cookies-tracking) voor meer informatie over cookies, analytics-identificaties en Do Not Track.
+
 ## Account opzeggen
 
 Wil je stoppen met MyCompanyDesk, ga dan naar **Instellingen > Account opzeggen**. Deze rij is alleen zichtbaar voor beheerders. Lees de pagina rustig door: die legt uit wat er met je abonnement en je gegevens gebeurt voordat je bevestigt.

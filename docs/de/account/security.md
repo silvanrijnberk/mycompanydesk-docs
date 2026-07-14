@@ -96,6 +96,8 @@ MyCompanyDesk nimmt Datensicherheit ernst:
 - DSGVO-konforme Datenverarbeitung
 - Regelmäßige Backups halten Ihre Daten sicher
 
+Details zu Cookies, Analytics-IDs und Do Not Track findest du unter [Cookies und Analytics](/de/account/cookies-tracking).
+
 ## Konto kündigen
 
 Möchten Sie MyCompanyDesk nicht mehr nutzen, gehen Sie zu **Einstellungen > Konto kündigen**. Diese Zeile ist nur für Administratoren sichtbar. Lesen Sie die Seite in Ruhe: Sie erklärt, was mit Ihrem Abonnement und Ihren Daten geschieht, bevor Sie bestätigen.

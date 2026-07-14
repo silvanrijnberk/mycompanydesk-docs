@@ -61,6 +61,7 @@ function sidebarEN() {
         { text: 'Personal settings', link: '/account/profile' },
         { text: 'Security', link: '/account/security' },
         { text: 'Data Import & Export', link: '/account/data' },
+        { text: 'Cookies and analytics', link: '/account/cookies-tracking' },
       ],
     },
     {
@@ -137,6 +138,7 @@ function sidebarNL() {
         { text: 'Persoonlijke instellingen', link: '/nl/account/profile' },
         { text: 'Beveiliging', link: '/nl/account/security' },
         { text: 'Gegevens importeren & exporteren', link: '/nl/account/data' },
+        { text: 'Cookies en analytics', link: '/nl/account/cookies-tracking' },
       ],
     },
     {
@@ -213,6 +215,7 @@ function sidebarDE() {
         { text: 'Persönliche Einstellungen', link: '/de/account/profile' },
         { text: 'Sicherheit', link: '/de/account/security' },
         { text: 'Datenimport & -export', link: '/de/account/data' },
+        { text: 'Cookies und Analytics', link: '/de/account/cookies-tracking' },
       ],
     },
     {
@@ -289,6 +292,7 @@ function sidebarFR() {
         { text: 'Paramètres personnels', link: '/fr/account/profile' },
         { text: 'Sécurité', link: '/fr/account/security' },
         { text: 'Import & Export de données', link: '/fr/account/data' },
+        { text: 'Cookies et analytics', link: '/fr/account/cookies-tracking' },
       ],
     },
     {

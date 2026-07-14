@@ -96,6 +96,8 @@ MyCompanyDesk prend la sécurité des données au sérieux :
 - Traitement des données conforme au RGPD
 - Des sauvegardes régulières protègent vos données
 
+Pour plus de détails sur les cookies, les identifiants analytics et la gestion du Do Not Track, consultez [Cookies et analytics](/fr/account/cookies-tracking).
+
 ## Résilier le compte
 
 Si vous souhaitez arrêter d'utiliser MyCompanyDesk, allez dans **Paramètres > Résilier le compte**. Cette ligne n'est visible que pour les administrateurs. Lisez la page attentivement : elle explique ce qu'il advient de votre abonnement et de vos données avant que vous ne confirmiez.
