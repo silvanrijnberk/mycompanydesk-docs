@@ -63,7 +63,7 @@ Download je gegevens per soort:
 - **Uitgaven** als CSV, met categorieën en bedragen
 
 ::: info
-CSV- en volledige back-upexports zijn beschikbaar vanaf het **Starter**-abonnement. Op het gratis abonnement toont de pagina een upgrademelding.
+CSV-exports zijn beschikbaar vanaf het **Starter**-abonnement. De volledige back-up (JSON) kun je altijd downloaden, op elk abonnement, inclusief Gratis.
 :::
 
 ### Volledige back-up
