@@ -26,7 +26,7 @@ Der Assistent zeigt eine Fortschrittsleiste mit bis zu sechs Schritten:
 3. **KVK:** Ihre Unternehmensdaten
 4. **Web-Adresse:** nur wenn Sie das Website-Ziel gewählt haben
 5. **Marke:** nur wenn Sie das Website-Ziel gewählt haben
-6. **Gründungsmitglieder:** Testbestätigung und Abschluss
+6. **Ihre Testphase:** Testbestätigung und Abschluss
 
 **Weiter** führt fort, sobald ein Schritt hat, was er braucht; **Setup abschließen** auf dem letzten Schritt wendet alles an.
 
@@ -77,7 +77,7 @@ Nur mit Website-Ziel sichtbar. Drei Karten:
 
 - **Kostenlose Subdomain:** Wählen Sie einen Namen für eine kostenlose Adresse mit der Endung `.mycompanydesk.site`. Der Name ist aus Ihrem Firmennamen vorausgefüllt, die Verfügbarkeit wird beim Tippen live geprüft. Weiter geht es erst, wenn der Name als verfügbar bestätigt ist.
 - **Ich habe bereits eine Domain:** Tippen Sie eine Domain ein, die Ihnen gehört. Sie wird beim Abschluss des Assistenten mit Ihrem Arbeitsbereich verbunden; zeigt sie noch nicht auf MyCompanyDesk, erledigen Sie die DNS-Schritte danach in Ihren Website-Einstellungen.
-- **Domain registrieren:** Suchen Sie eine Domain, sehen Sie Verfügbarkeit und Preis und kaufen Sie sie direkt im Assistenten. Gründungsmitglieder können eine kostenlos beanspruchen. Ein erfolgreicher Kauf wird sofort mit Ihrem Arbeitsbereich verknüpft.
+- **Domain registrieren:** Suchen Sie eine Domain, sehen Sie Verfügbarkeit und Preis und kaufen Sie sie direkt im Assistenten. Während Ihrer Pro-Testphase können Sie statt zu kaufen auch eine `.nl`-Domain im ersten Jahr kostenlos beanspruchen. Ein erfolgreicher Kauf wird sofort mit Ihrem Arbeitsbereich verknüpft.
 
 Der Schritt lässt sich überspringen; eine Domain können Sie jederzeit später über Ihre Website-Einstellungen hinzufügen.
 
@@ -88,12 +88,11 @@ Nur mit Website-Ziel sichtbar und völlig optional:
 - **Logo hochladen:** PNG, JPG, SVG oder WebP. Die dominante Farbe Ihres Logos wird automatisch Ihre Markenfarbe. Überspringen Sie den Upload, erzeugt MyCompanyDesk ein sauberes Initialen-Logo aus Ihrem Firmennamen, damit Rechnungen und Website nie unfertig wirken.
 - **Vorschau:** die für Sie vorgeschlagene Markenfarbe und der Slogan, basierend auf Ihren KVK-Daten und Ihrer Ein-Zeilen-Beschreibung. Anpassen können Sie beides später in den Einstellungen; nichts auf diesem Schritt hält Sie vom Fortfahren ab.
 
-## Schritt: Gründungsmitglieder
+## Schritt: Ihre Testphase
 
-Der letzte Schritt bestätigt Ihre Testphase und bietet das Gründungsmitglieder-Programm an:
+Der letzte Schritt bestätigt Ihre Testphase:
 
 - **Ihre Testphase:** Jeder neue Arbeitsbereich startet mit 60 Tagen Pro, kostenlos, ohne Kreditkarte.
-- **Gründungsmitglieder:** Solange Plätze frei sind (100 insgesamt, mit Live-Zähler), sichert ein Klick einen Platz: ein volles Jahr Pro kostenlos, danach 50 Prozent Rabatt auf Pro, solange Sie bleiben. Sind alle Plätze vergeben, weist der Schritt einfach darauf hin, dass Ihre 60-Tage-Testphase normal weiterläuft.
 
 **Setup abschließen** wendet alles an: Ihre Unternehmensdaten, Markenfarbe, Logo, Startdienstleistungen und E-Mail-Vorlagen, zu Ihrer Arbeit passende Ausgabenkategorien und, mit Website-Ziel, Ihre Website und Domain. Eine Zusammenfassung zeigt, was eingerichtet wurde, mit Schaltflächen zum Dashboard oder direkt in den Website-Baukasten.
 

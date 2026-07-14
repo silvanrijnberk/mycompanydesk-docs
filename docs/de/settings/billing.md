@@ -13,41 +13,11 @@ Was Sie uns zahlen, Ihre Rechnungen von uns und Ihre Zahlungskarte.
 
 Die alten URLs `/workspace/account/billing` und `/settings/billing` leiten auf die neue Seite weiter; Lesezeichen funktionieren weiterhin und der Query-Parameter `?checkout=success|canceled` bleibt bei der Weiterleitung erhalten.
 
-## Founding Members
+## Bestehende Vereinbarungen
 
-MyCompanyDesk bietet ein Founding-Members-Programm für die ersten 100 Arbeitsbereiche, die sich während der Startphase anmelden.
+Eine kleine Zahl von Arbeitsbereichen behält Pro kostenlos aufgrund früherer Vereinbarungen. Diese gelten, solange MyCompanyDesk den Dienst und die betreffende Funktion anbietet. Sie sind geschlossen und können nicht beantragt werden; neue Arbeitsbereiche starten mit der unten beschriebenen 60-tägigen Pro-Testphase.
 
-### Aktuelles Angebot (ab 20. Mai 2026)
-
-Ein Founding Member erhält das erste Jahr Pro kostenlos und danach lebenslang 50% Rabatt auf den Pro-Tarif. Das kostenlose Jahr beginnt sofort mit dem Claim. Am Ende des Gratis-Jahres kann der Arbeitsbereich auf kostenpflichtiges Pro umstellen, mit einem lebenslangen 50%-Rabatt (automatisch beim Checkout angewendet). Wenn der Arbeitsbereich nicht umstellt, läuft die Pro-Testphase wie jede andere aus.
-
-Die inkludierte `.nl`-Domain ist im ersten Jahr kostenlos und wird ab Jahr zwei Teil des kostenpflichtigen Pro-Abonnements. Ein Arbeitsbereich, der nach dem Gratis-Jahr nicht mehr zahlt, verliert Pro und die Domain verfällt. Es gibt keine unbefristete Gratis-auf-Lebenszeit-Zusage mehr für neue Mitglieder.
-
-### Ursprüngliche Kohorte (Bestandsschutz)
-
-Die erste Welle von Founding Members, die unter den ursprünglichen Bedingungen vor dem 20. Mai 2026 geclaimt haben, behalten Pro lebenslang kostenlos und erhalten lebenslange kostenlose Domain-Verlängerung. Diese Claims bestehen für die Lebensdauer von MyCompanyDesk, solange der Dienst und die betreffende Funktion angeboten werden. Bestehende Arbeitsbereiche dieser Kohorte bleiben vom neuen Angebot unberührt.
-
-### So funktioniert es
-
-- Das Programm ist auf **100 Plätze** über alle Arbeitsbereiche hinweg begrenzt.
-- Jeder Arbeitsbereich kann nur einen Platz beanspruchen. Von derselben IP-Adresse darf ebenfalls nur ein Platz geclaimt werden (Missbrauchsprävention).
-- Das Claimen ist endgültig. Es gibt keinen zweiten Claim oder Neu-Claim; ist der Platz weg, ist er weg.
-
-### Einen Platz claimen
-
-Sie können auf zwei Arten einen Founding-Member-Platz beanspruchen:
-
-**Über die Abonnementseite.** Wenn noch Plätze verfügbar sind, zeigt die Abonnementseite eine Founding-Member-Claim-Karte. Klicken Sie auf **Platz claimen**, um Ihr kostenloses Pro-Jahr zu starten. Das Upgrade wird sofort wirksam.
-
-**Über die Landingpage.** Der CTA auf der Landingpage verlinkt auf das Registrierungsformular mit einer Founding-Member-Absicht. Wenn Sie sich über diesen Weg anmelden:
-
-1. Das Registrierungsformular merkt sich Ihre Absicht.
-2. Nach der E-Mail-Bestätigung und Anmeldung wird Ihr Platz automatisch im Hintergrund geclaimt.
-3. Ein Bestätigungstoast zeigt an, ob der Claim erfolgreich war. Wenn die Plätze voll waren, bevor Sie die Registrierung abgeschlossen haben, erhalten Sie trotzdem eine 60-tägige Pro-Testphase.
-
-Wenn der automatische Claim fehlschlägt (Plätze voll, IP bereits von einem anderen Arbeitsbereich verwendet oder Netzwerkfehler), wird der Claim nicht erneut versucht. Sie können weiterhin auf der Abonnementseite nachsehen und manuell claimen, falls noch Plätze vorhanden sind.
-
-Founding-Member-Arbeitsbereiche sind in jeder Hinsicht normale Pro-Kunden: dieselben Funktionen, dieselben Limits. Der einzige Unterschied ist die Abonnement-Quelle und das Badge auf der Abonnementseite.
+Arbeitsbereiche mit einer solchen Vereinbarung sind in jeder Hinsicht normale Pro-Kunden: dieselben Funktionen, dieselben Limits. Der einzige Unterschied ist die auf der Abonnementseite angezeigte Abonnement-Quelle.
 
 ## Tarife
 

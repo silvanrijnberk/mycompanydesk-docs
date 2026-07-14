@@ -26,7 +26,7 @@ De wizard toont een voortgangsbalk met maximaal zes stappen:
 3. **KVK**: je bedrijfsgegevens
 4. **Online adres**: alleen als je het websitedoel hebt gekozen
 5. **Merk**: alleen als je het websitedoel hebt gekozen
-6. **Founding Members**: proefbevestiging en afronden
+6. **Je proefperiode**: proefbevestiging en afronden
 
 **Doorgaan** brengt je verder zodra een stap heeft wat hij nodig heeft; **Setup afronden** op de laatste stap past alles toe.
 
@@ -77,7 +77,7 @@ Alleen zichtbaar bij het websitedoel. Drie kaarten:
 
 - **Gratis subdomein**: kies een naam voor een gratis adres dat eindigt op `.mycompanydesk.site`. De naam wordt vooraf ingevuld op basis van je bedrijfsnaam en tijdens het typen live gecheckt op beschikbaarheid. Doorgaan kan pas als de naam beschikbaar blijkt.
 - **Ik heb al een domein**: typ een domein dat je bezit. Het wordt aan je werkruimte gekoppeld als je de wizard afrondt; wijst het nog niet naar MyCompanyDesk, dan doorloop je daarna de DNS-stappen vanuit je website-instellingen.
-- **Registreer een domein**: zoek een domein, bekijk beschikbaarheid en prijs, en koop het direct in de wizard. Founding Members kunnen er gratis een claimen. Een geslaagde aankoop wordt meteen aan je werkruimte gekoppeld.
+- **Registreer een domein**: zoek een domein, bekijk beschikbaarheid en prijs, en koop het direct in de wizard. Tijdens je Pro-proefperiode kun je in plaats van kopen ook één `.nl`-domein het eerste jaar gratis claimen. Een geslaagde aankoop wordt meteen aan je werkruimte gekoppeld.
 
 De stap is over te slaan; een domein kun je altijd later toevoegen via je website-instellingen.
 
@@ -88,12 +88,11 @@ Alleen zichtbaar bij het websitedoel, en volledig optioneel:
 - **Logo uploaden:** PNG, JPG, SVG of WebP. De dominante kleur van je logo wordt automatisch je merkkleur. Sla je de upload over, dan maakt MyCompanyDesk een strak initialenlogo van je bedrijfsnaam, zodat je facturen en website er nooit onaf uitzien.
 - **Voorvertoning:** de merkkleur en slogan die voor je zijn voorgesteld, op basis van je KVK-gegevens en je omschrijving in één zin. Aanpassen doe je later in Instellingen; niets op deze stap houdt je tegen om door te gaan.
 
-## Stap: Founding Members
+## Stap: Je proefperiode
 
-De laatste stap bevestigt je proefperiode en biedt het Founding Members-programma aan:
+De laatste stap bevestigt je proefperiode:
 
 - **Je proefperiode:** elke nieuwe werkruimte start met 60 dagen Pro, gratis, zonder creditcard.
-- **Founding Members:** zolang er plekken zijn (100 in totaal, met een live teller) reserveer je met één klik een plek: een vol jaar Pro gratis, daarna 50 procent korting op Pro zolang je blijft. Zijn alle plekken vergeven, dan meldt de stap simpelweg dat je 60-dagenproef gewoon doorloopt.
 
 **Setup afronden** past alles toe: je bedrijfsgegevens, merkkleur, logo, startdiensten en e-mailsjablonen, uitgavencategorieën die bij je werk passen en, met het websitedoel, je website en domein. Een overzicht laat zien wat er is ingericht, met knoppen naar het dashboard of direct naar de websitebouwer.
 

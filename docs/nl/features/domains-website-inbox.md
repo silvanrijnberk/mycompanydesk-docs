@@ -80,7 +80,7 @@ De pagina toont standaard een opgeschoonde weergave met de meest gebruikte tabbl
 
 Wat je op de pagina kunt doen:
 
-- **Domein kopen of claimen** via de domein-aanschafkaart. Voer een domeinnaam in, controleer de beschikbaarheid via OpenProvider, en koop het domein of claim het gratis als je als Founding Member in aanmerking komt.
+- **Domein kopen of claimen** via de domein-aanschafkaart. Voer een domeinnaam in, controleer de beschikbaarheid via OpenProvider, en koop het domein of claim het gratis als je werkruimte in aanmerking komt voor de gratis `.nl`-claim.
 - **Domein toevoegen** (nameserver- of CNAME-modus) via een eigen kaart die altijd zichtbaar is.
 - **Verifiëren** van een pending domein.
 - **DNS-records beheren** voor het geselecteerde domein -- A, AAAA, CNAME, MX, TXT, SRV, CAA, NS. CRUD gaat via Cloudflare via de API.
@@ -111,14 +111,14 @@ Belangrijke kolommen die de app leest:
 | `registrar_domain_id` | De registrar-interne identifier voor gekochte domeinen.
 | `purchase_price_period` | Facturatieperiode voor gekochte domeinen (`yearly`).
 | `purchase_intent_id` | Verwijst naar de `domain_purchase_intents`-rij voor betaalde aankopen.
-| `founder_claim_id` | Verwijst naar de `founder_domain_claims`-rij voor Founder gratis claims.
+| `founder_claim_id` | Verwijst naar de `founder_domain_claims`-rij voor gratis domeinclaims.
 | `transferred_out_at` | Gezet wanneer tijdens de wekelijkse sync wordt gedetecteerd dat een domein is overgedragen uit het MCD-registraraccount.
 
 #### Verlengingscyclus
 
 Domeinverlenging volgt drie routes, afhankelijk van hoe het domein is verkregen:
 
-1. **Gratis gebundelde verlenging** (Founder-tier of naar Pro geconverteerde trial-tier): MCD neemt de wholesale-verlengkosten voor zijn rekening. Het domein verloopt automatisch zolang de werkruimte op Pro blijft. Geen betaalmiddel nodig.
+1. **Gratis gebundelde verlenging** (naar Pro geconverteerde trial-tier, of een bestaande gratis-voor-het-leven-afspraak): MCD neemt de wholesale-verlengkosten voor zijn rekening. Het domein verloopt automatisch zolang de werkruimte op Pro blijft. Geen betaalmiddel nodig.
 2. **Betaalde automatische verlenging** (betaalde aankoop, of trial-tier zonder Pro): Jaarlijks in rekening gebracht via de opgeslagen kaart. Werkt als elke andere abonnementsverlenging.
 3. **Handmatige verlenging**: Als een trial-tier werkruimte van Pro af valt EN geen opgeslagen kaart heeft, slaat het automatische verlengingspad deze over. De gebruiker ziet een melding en kan een eenmalige betaling starten via `POST /api/domains/renew/:domainId`, wat een Stripe Embedded Checkout-sessie aanmaakt voor de verlenging. Dit is de enige manier om een domein actief te houden zonder actief abonnement of opgeslagen kaart.
 
@@ -138,7 +138,7 @@ Databasetabellen:
 
 Het overdragen van een domein dat via MyCompanyDesk is geregistreerd naar een andere registrar heeft permanente gevolgen, afgedwongen door de wekelijkse OpenProvider-statussynchronisatie:
 
-- **Founder-tier domeinen**: De Founder-claim wordt verwijderd en het interne levenslange-Pro-abonnement van de werkruimte wordt opgezegd. De werkruimte wordt een normale betalende klant. Dit is onomkeerbaar. De Founder-status kan niet opnieuw worden geclaimd.
+- **Domeinen met een gratis-voor-het-leven-afspraak**: De gratis claim wordt verwijderd en de interne levenslange Pro-toekenning van de werkruimte wordt opgezegd. De werkruimte wordt een normale betalende klant. Dit is onomkeerbaar; de toekenning kan niet opnieuw worden geclaimd.
 - **Trial-tier / Pro-gebundelde domeinen**: De gebundelde-gratis-status gaat verloren. De werkruimte kan nooit meer een ander gratis domein claimen (al afgedwongen via de retained-claims-lijst). Let op: het overnemen van het domein tijdens de proef (zie overnamesectie hierboven) is geen overdracht — het is een houderswijziging die de klant eigendom geeft voordat een overdracht plaatsvindt, waardoor het gratis-domeinvoordeel behouden blijft voor de duur van de proef.
 - **Betaalde domeinen**: Geen voordeelintrekking. Het domein gaat simpelweg naar `status = 'transferred_out'`.
 
@@ -149,20 +149,19 @@ De claim-modal waarschuwt voor deze gevolgen voordat een gratis-domein claim wor
 De domein-aanschafkaart (`DomainPurchaseCard.vue`, `domain-purchase.service.ts`) is de eerste kaart op de Domeinen-pagina. De kaart verschijnt wanneer de werkruimte nog geen actief eigen domein heeft. Via de kaart kan de gebruiker een domein uitkiezen en bemachtigen via twee routes, die beide een speciale twee-stappen aanschafmodal openen (`DomainClaimModal.vue`). Stap 1 verzamelt de registrantgegevens (de gegevens die de registrar nodig heeft voor WHOIS). Stap 2 handelt de betaling of claim af:
 
 - **Kopen** -- Betaalde aankoop via OpenProvider. De gebruiker voert een domeinnaam in, de kaart roept `GET /api/domain-purchase/quote` aan om beschikbaarheid en prijs te controleren, en opent daarna de aanschafmodal. Nadat de registrantgegevens zijn ingevuld, roept de modal `POST /api/domain-purchase/checkout-session` aan om een Stripe-betalingssessie aan te maken en toont Stripe Embedded Checkout voor de betaling. Zodra de betaling voltooid is, registreert `POST /api/domain-purchase/finalize` het domein bij OpenProvider en maakt de `domains`-rij aan in nameserver-modus, gekoppeld aan Cloudflare.
-- **Gratis claim** -- Werkruimtes op een Pro-trial (inclusief nieuwe Founding Members vanaf 20 mei 2026) die aan de voorwaarden voldoen kunnen een `.nl`-domein gratis claimen voor het eerste jaar. De kaart roept `GET /api/domain-purchase/founder/eligibility` aan om de claim-tier van de werkruimte (`trial` voor trial-leden, `founder` voor gegrandfatherde oorspronkelijke-lichting Founding Members) en de gate-status te controleren. De modal verzamelt de registrantgegevens en roept bij indienen `POST /api/domain-purchase/founder/claim` aan. Het platform betaalt de eerstejaars registratiekosten.
+- **Gratis claim** -- Werkruimtes op een Pro-trial die aan de voorwaarden voldoen kunnen een `.nl`-domein gratis claimen voor het eerste jaar. De kaart roept `GET /api/domain-purchase/free-domain/eligibility` aan om de claim-tier van de werkruimte en de gate-status te controleren. De modal verzamelt de registrantgegevens en roept bij indienen `POST /api/domain-purchase/free-domain/claim` aan. Het platform betaalt de eerstejaars registratiekosten.
 
-Founder-claims hebben nu twee tiers voor verlenging, bepaald door het Founding Member grant type:
+Gratis claims verschillen alleen in hoe het domein na het eerste jaar wordt verlengd:
 
-- **Founder-tier** (alleen grandfathered) -- Werkruimtes met het oorspronkelijke grant type `free_for_life` (geclaimd voor 20 mei 2026) krijgen levenslange gratis domeinverlenging. Geen betaalmiddel nodig. Verlenging wordt automatisch door het platform afgehandeld, waarbij MCD de wholesale-kosten draagt. Nieuwe Founding Members vanaf 20 mei 2026 krijgen deze tier NIET; zij claimen onder de trial-tier zoals elke andere trial-werkruimte.
-- **Trial-tier** -- Werkruimtes op een trial (inclusief nieuwe Founding Members met grant type `trial_plus_discount`). Het eerste jaar is gratis. Aan het einde van het gratis jaar moet de werkruimte op een betaald Pro-abonnement zitten; het domein verloopt dan als onderdeel van het Pro-abonnement, betaald door de werkruimte. Als de werkruimte stopt met Pro betalen na het gratis jaar, verloopt het domein en moet handmatig verlengd worden. Tijdens het trial-jaar kan de gebruiker optioneel een kaart opslaan via Stripe SetupIntent in de modal voor toekomstige automatische verlenging.
+- **Trial-tier** -- Werkruimtes op een Pro-trial. Het eerste jaar is gratis. Aan het einde van het gratis jaar moet de werkruimte op een betaald Pro-abonnement zitten; het domein verloopt dan als onderdeel van het Pro-abonnement, betaald door de werkruimte. Als de werkruimte stopt met Pro betalen na het gratis jaar, verloopt het domein en moet handmatig verlengd worden. Tijdens het trial-jaar kan de gebruiker optioneel een kaart opslaan via Stripe SetupIntent in de modal voor toekomstige automatische verlenging.
 - **Paid-tier** -- Standaard domeinen gekocht voor de volle prijs. Verlenging wordt via de opgeslagen betaalmethode in rekening gebracht op de jaarlijkse cyclus. Als de betaling mislukt, wordt een handmatige-verlenging-melding verstuurd.
+- **Gratis-voor-het-leven-tier** -- Een klein aantal werkruimtes houdt Pro gratis en levenslange gratis domeinverlenging op basis van eerdere afspraken. Geen betaalmiddel nodig; verlenging wordt automatisch door het platform afgehandeld, waarbij MCD de wholesale-kosten draagt. Deze tier is gesloten en kan niet worden aangevraagd.
 
-Het eligibility-eindpunt (`GET /api/domain-purchase/founder/eligibility`) retourneert een `tier`-veld (`founder` | `trial` | `paid` | `free`) en `founderSlotsRemaining` naast de bestaande gates. De limiet van 50 plekken geldt alleen voor Founder-tier claims (grandfathered cohort); trial-tier claims tellen niet mee voor het Founder-limiet.
+Het eligibility-eindpunt (`GET /api/domain-purchase/free-domain/eligibility`) retourneert een `tier`-veld naast het gate-rapport. Het geeft geen aantal resterende claims terug.
 
-De geschiktheid wordt bepaald door harde voorwaarden die server-side worden gecontroleerd in `founder-domain-claim.service.js`:
+De geschiktheid wordt bepaald door harde voorwaarden die server-side worden gecontroleerd:
 
-- **Founding Member-status** -- de werkruimte moet de Founding Member-vlag hebben (grant type bepaalt de tier: `free_for_life` mapt naar `founder`, `trial_plus_discount` mapt naar `trial`).
-- **Gratis-domein plekken** voor Founder-tier claims beperkt tot 50 bij grandfathered Founding Members (`free_for_life`). Trial-tier claims vallen hier buiten.
+- **Actieve Pro-werkruimte** -- de werkruimte moet op Pro zitten (trial of betaald). Werkruimtes op Free kunnen niet claimen.
 - **KVK vereist** -- de werkruimte moet een KVK-nummer gekoppeld hebben.
 - **Domein moet `.nl` zijn** -- de gratis actie geldt alleen voor de NL-extensie.
 - **Domein moet overeenkomen met de KVK-naam** -- het domein moet corresponderen met de geregistreerde statutaire naam of een handelsnaam.
@@ -177,7 +176,7 @@ De ondersteunde TLD's voor aankoop zijn `.nl`, `.eu`, `.com`, `.net` en `.org`. 
 Nieuwe databasetabellen die door deze feature zijn toegevoegd:
 
 - `domain_purchase_intents` -- volgt betaalde aankoopintents met Stripe PaymentIntent-ID's, registrantgegevens en aankoopstatus.
-- `founder_domain_claims` -- volgt Founder gratis claims met geschiktheidssnapshots, abuse-scoring en claimstatus.
+- `founder_domain_claims` -- volgt gratis domeinclaims met geschiktheidssnapshots, abuse-scoring en claimstatus.
 - `domain_buyout_intents` -- volgt overname-betalingsintents bij vertrek tijdens de proef met Stripe PaymentIntent-ID's en overdrachtsstatus.
 - `domain_registrar_columns`-migratie voegt registrar-gerelateerde kolommen toe aan de bestaande `domains`-tabel.
 

@@ -316,6 +316,7 @@ Text fields in the site builder can contain merge tokens that pull live company 
 
 Available tokens:
 
+::: v-pre
 | Token | Shows |
 |---|---|
 | `{{bedrijf.naam}}` | Business name |
@@ -323,6 +324,7 @@ Available tokens:
 | `{{bedrijf.kvk}}` | Chamber of Commerce (KvK) number |
 | `{{bedrijf.btw}}` | VAT number |
 | `{{bedrijf.email}}` | Public email address |
+:::
 
 How to use them:
 

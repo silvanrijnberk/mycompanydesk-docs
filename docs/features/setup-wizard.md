@@ -26,7 +26,7 @@ The wizard shows a progress bar with up to six steps:
 3. **KVK**: your company details
 4. **Online adres** (web address): only when you picked the website goal
 5. **Merk** (brand): only when you picked the website goal
-6. **Founding Members**: trial confirmation and finish
+6. **Je proefperiode** (your trial): trial confirmation and finish
 
 **Doorgaan** (continue) moves forward once a step has what it needs; **Setup afronden** (finish setup) on the last step applies everything.
 
@@ -77,7 +77,7 @@ Shown only with the website goal. Three cards:
 
 - **Gratis subdomein** (free subdomain): pick a name for a free address ending in `.mycompanydesk.site`. The name is pre-filled from your company name, and availability is checked live while you type. Continue is only enabled once the name is confirmed available.
 - **Ik heb al een domein** (I already have a domain): type a domain you own. It is connected to your workspace when you finish the wizard; if it does not point to MyCompanyDesk yet, you complete the DNS steps afterwards from your website settings.
-- **Registreer een domein** (register a domain): search for a domain, see availability and price, and buy it directly in the wizard. Founding Members can claim one for free. A successful purchase is attached to your workspace immediately.
+- **Registreer een domein** (register a domain): search for a domain, see availability and price, and buy it directly in the wizard. On a Pro trial you can claim one `.nl` domain free for the first year instead of buying. A successful purchase is attached to your workspace immediately.
 
 The step can be skipped; a domain can always be added later from your website settings.
 
@@ -88,12 +88,11 @@ Shown only with the website goal, and fully optional:
 - **Logo upload:** PNG, JPG, SVG or WebP. The dominant colour of your logo is picked up as your brand colour automatically. If you skip the upload, MyCompanyDesk generates a clean initials logo from your business name, so your invoices and website never look unfinished.
 - **Preview:** the brand colour and tagline proposed for you, based on your KVK details and your one-line description. Editing them is a follow-up in Settings; nothing on this step blocks you from continuing.
 
-## Step: Founding Members
+## Step: Je proefperiode
 
-The final step confirms your trial and offers the Founding Members programme:
+The final step confirms your trial:
 
 - **Your trial:** every new workspace starts with 60 days of Pro, free, no credit card needed.
-- **Founding Members:** while spots last (100 in total, with a live counter), one click reserves a spot: a full year of Pro free, then 50 percent off Pro for as long as you stay. When all spots are gone, the step simply notes that your 60-day trial continues as normal.
 
 **Setup afronden** applies everything: your company details, brand colour, logo, starter services and email templates, expense categories that fit your work, and, with the website goal, your website and domain. A summary lists what was set up, with buttons to go to the dashboard or straight into the website builder.
 

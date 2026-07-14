@@ -316,6 +316,7 @@ Textfelder im Website-Builder können Merge-Tokens enthalten, die Live-Firmendat
 
 Verfügbare Tokens:
 
+::: v-pre
 | Token | Zeigt |
 |---|---|
 | `{{bedrijf.naam}}` | Firmenname |
@@ -323,6 +324,7 @@ Verfügbare Tokens:
 | `{{bedrijf.kvk}}` | Handelsregisternummer (KvK) |
 | `{{bedrijf.btw}}` | USt-IdNr. |
 | `{{bedrijf.email}}` | Öffentliche E-Mail-Adresse |
+:::
 
 So verwenden Sie sie:
 

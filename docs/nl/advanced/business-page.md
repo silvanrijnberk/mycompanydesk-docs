@@ -316,6 +316,7 @@ Tekstvelden in de sitebouwer kunnen merge-tokens bevatten die live bedrijfsgegev
 
 Beschikbare tokens:
 
+::: v-pre
 | Token | Toont |
 |---|---|
 | `{{bedrijf.naam}}` | Bedrijfsnaam |
@@ -323,6 +324,7 @@ Beschikbare tokens:
 | `{{bedrijf.kvk}}` | KVK-nummer |
 | `{{bedrijf.btw}}` | BTW-id |
 | `{{bedrijf.email}}` | Publiek e-mailadres |
+:::
 
 Zo gebruik je ze:
 
