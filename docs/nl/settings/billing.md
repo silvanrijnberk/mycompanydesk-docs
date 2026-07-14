@@ -103,7 +103,7 @@ Functies per abonnement:
 | Openbare bedrijfspagina | nee | ja | ja |
 | Bedrijfssubdomein en stijlpresets | nee | ja | ja |
 | Teamtoegang (onbeperkt aantal mensen) | nee | nee | ja |
-| MyCompanyDesk-branding verwijderen | nee | nee | ja |
+| Facturen en offertes zonder MyCompanyDesk-vermelding | nee | ja | ja |
 | Geavanceerde rapporten | nee | nee | ja |
 | Eigen domein, domeinroutering, volledige website op je domein | nee | nee | ja |
 | Zakelijke inbox | nee | nee | ja |
@@ -122,9 +122,9 @@ Toegang voor je boekhouder is gratis op elk abonnement en telt niet mee als team
 
 De zakelijke inbox is een Pro-functie. Op Pro kun je per maand tot 15 000 e-mails versturen en tot 20 000 e-mails ontvangen; er is geen limiet op het aantal mailboxen.
 
-### Openbare site: respijtperiode
+### Openbare site: beschikbaarheid
 
-Wanneer een betaalde werkruimte naar Gratis vervalt, blijft de openbare website en sitebouwer nog 7 dagen online voordat de site op zwart gaat. Zo voorkom je dat een vergeten betaling je live bedrijfssite meteen offline haalt, met alle geindexeerde URL's erbij. Het respijtvenster gaat in op het laatste moment dat je toegang eindigde: einde proefperiode, opzegging of einde betaalperiode. Als het systeem niet kan bepalen wanneer je toegang eindigde, blijft de site online om te voorkomen dat een site onbedoeld verdwijnt. De controle gebeurt bij elk verzoek, voor de cache, zodat abonnementswijzigingen meteen zichtbaar zijn.
+Als een werkruimte naar Gratis vervalt, blijven de openbare website en sitebouwer online. Gratis sites tonen een klein MyCompanyDesk-badge op het werkruimte-subdomeinadres; de enige manier om de badge te verwijderen is de site verhuizen naar een eigen domein (Pro). De controle gebeurt bij elk verzoek, voor de cache, zodat abonnementswijzigingen meteen zichtbaar zijn.
 
 ### Teamtoegang
 

@@ -103,7 +103,7 @@ Fonctionnalités par plan :
 | Page entreprise publique | non | oui | oui |
 | Sous-domaine d'entreprise et préréglages de style | non | oui | oui |
 | Accès équipe (personnes illimitées) | non | non | oui |
-| Suppression de la marque MyCompanyDesk | non | non | oui |
+| Factures et devis sans mention MyCompanyDesk | non | oui | oui |
 | Rapports avancés | non | non | oui |
 | Domaine personnalisé, routage de domaine, site web complet sur votre domaine | non | non | oui |
 | Boîte mail professionnelle | non | non | oui |
@@ -122,9 +122,9 @@ L'accès de votre comptable est gratuit sur tous les plans et ne compte pas comm
 
 La boîte mail professionnelle est une fonctionnalité Pro. Avec Pro, vous pouvez envoyer jusqu'à 15 000 e-mails et en recevoir jusqu'à 20 000 par mois ; le nombre de boîtes mail n'est pas limité.
 
-### Délai de grâce du site public
+### Site public : disponibilité
 
-Lorsqu'un espace de travail payant retombe en Gratuit, son site web public et le constructeur de site restent en ligne pendant 7 jours avant de passer hors ligne. Cela empêche un paiement oublié de faire disparaître instantanément un site professionnel en ligne et ses URL indexées. Le délai de grâce est calculé à partir du dernier événement de fin d'accès : fin d'essai, résiliation ou fin de période de paiement. Si le système ne peut pas déterminer la fin d'accès, le site reste en ligne pour éviter une coupure accidentelle. La vérification a lieu à chaque requête, avant le cache, pour que les changements d'abonnement prennent effet immédiatement.
+Lorsqu'un espace de travail retombe en Gratuit, son site web public et le constructeur de site restent en ligne. Les sites gratuits affichent un petit badge MyCompanyDesk sur l'adresse du sous-domaine de l'espace de travail ; la seule façon de supprimer le badge est de déplacer le site vers un domaine personnalisé (Pro). La vérification a lieu à chaque requête, avant le cache, pour que les changements d'abonnement prennent effet immédiatement.
 
 ### Accès équipe
 

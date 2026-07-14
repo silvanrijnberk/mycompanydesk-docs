@@ -385,15 +385,15 @@ See [Quotes - Quote Requests](/features/quotes#quote-requests) for details on ma
 
 ## Subscription requirement
 
-The public website (business page and site builder) is a paid feature. It is visible while your workspace is on a Starter or Pro plan. When a workspace lapses to Free, the site stays live for a 7-day grace period, then goes dark.
+The public website (business page and site builder) is a paid feature. It is visible while your workspace is on a Starter or Pro plan. A Free workspace keeps the site live on the workspace subdomain with a small MyCompanyDesk badge; moving to a custom domain (Pro) removes the badge.
 
-- **Paid or trialing**: The site is always visible.
-- **Lapsed to Free**: The site remains visible for 7 days after your access ends (based on trial end, cancellation date, or paid period end, whichever is most recent). After the grace window, the site returns a 404 page.
-- **Uncertain state**: If the system cannot determine when your paid access ended, the site stays up rather than risking an accidental takedown.
+- **Paid or trialing**: The site is always visible, with no MyCompanyDesk badge when served on a custom domain and a small badge when served on the workspace subdomain.
+- **Lapsed to Free**: The site remains visible on the workspace subdomain with a small MyCompanyDesk badge.
+- **Uncertain state**: If the system cannot determine your plan, the site stays up rather than risking an accidental takedown.
 
 This gate applies to all public serving paths: the business page, the service-detail route, and the site builder's rendered pages. It is checked on every request, before any caching layer, so it stays accurate even if your subscription changes mid-cache.
 
-Source: `apps/api/src/modules/billing/entitlement.service.js` — `PUBLIC_PAGE_GRACE_DAYS`, `computePublicPageGate`, `getPublicPageVisibility`.
+Source: `apps/api/src/modules/billing/entitlement.service.js` — `computePublicPageGate`, `getPublicPageVisibility`, `renderer.service.js` for the address-based badge rule.
 
 ## Related
 

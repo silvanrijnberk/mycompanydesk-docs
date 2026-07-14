@@ -103,7 +103,7 @@ Funktionen pro Tarif:
 | Öffentliche Unternehmensseite | nein | ja | ja |
 | Firmen-Subdomain und Stilvorlagen | nein | ja | ja |
 | Teamzugang (unbegrenzt viele Personen) | nein | nein | ja |
-| MyCompanyDesk-Branding entfernen | nein | nein | ja |
+| Rechnungen und Angebote ohne MyCompanyDesk-Hinweis | nein | ja | ja |
 | Erweiterte Berichte | nein | nein | ja |
 | Eigene Domain, Domain-Routing, vollständige Website auf Ihrer Domain | nein | nein | ja |
 | Geschäftliche Inbox | nein | nein | ja |
@@ -122,9 +122,9 @@ Der Zugang für Ihren Buchhalter ist in jedem Tarif kostenlos und zählt nicht a
 
 Die geschäftliche Inbox ist eine Pro-Funktion. Mit Pro können Sie pro Monat bis zu 15 000 E-Mails senden und bis zu 20 000 E-Mails empfangen; die Anzahl der Postfächer ist nicht begrenzt.
 
-### Schonfrist für die öffentliche Website
+### Öffentliche Website: Verfügbarkeit
 
-Wenn ein bezahlter Arbeitsbereich auf Gratis zurückfällt, bleibt seine öffentliche Website und der Website-Builder noch 7 Tage online, bevor die Seite offline geht. So verhindern Sie, dass eine vergessene Zahlung Ihre live geschaltete Unternehmenswebsite mit all ihren indexierten URLs sofort vom Netz nimmt. Das Schonfenster beginnt mit dem letzten Zugriffsende: Testende, Kündigung oder Ende des Zahlungszeitraums. Kann das System das Ende des Zugriffs nicht bestimmen, bleibt die Website online, um ein versehentliches Abschalten zu vermeiden. Die Prüfung erfolgt bei jeder Anfrage vor dem Cache, sodass Abonnement-Änderungen sofort wirksam werden.
+Wenn ein Arbeitsbereich auf Gratis zurückfällt, bleiben die öffentliche Website und der Website-Builder online. Gratis-Sites tragen ein kleines MyCompanyDesk-Badge auf der Workspace-Subdomain-Adresse; die einzige Möglichkeit, das Badge zu entfernen, ist die Site auf eine eigene Domain (Pro) umzuziehen. Die Prüfung erfolgt bei jeder Anfrage vor dem Cache, sodass Abonnement-Änderungen sofort wirksam werden.
 
 ### Teamzugang
 
