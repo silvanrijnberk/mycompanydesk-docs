@@ -300,6 +300,9 @@ Deze bundel is de **ontvangstkant**. Uitgaande e-mail -- factuurverzending, heri
 ## Limieten en aandachtspunten
 
 - **Een website per bedrijf.** Het toevoegen van een eigen domein deactiveert het werkruimte-subdomein. Het verwijderen van het domein herstelt de slug niet automatisch -- activeer het handmatig opnieuw als je wilt terugvallen.
+- **Eén live inbox per domein.** Het platform staat maar één werkruimte tegelijk toe om mail te ontvangen op een bepaald domein. Als een andere werkruimte al een inbox ingeschakeld heeft op `acme.nl`, wordt jouw poging om de inbox op dezelfde naam in te schakelen geblokkeerd. Websites en CNAME-claims worden niet geblokkeerd; alleen een live inbox is exclusief.
+- **Je kunt geen zone claimen die een andere werkruimte al heeft.** Wanneer je een domein in nameserver-modus toevoegt, controleert het platform of de onderliggende Cloudflare-zone al live is voor een andere werkruimte. Zo ja, dan wordt het toevoegen geweigerd met een duidelijke foutmelding, zodat je een domein niet kunt "verifiëren" via iemands anders DNS.
+- **Je eigen eerder verwijderde domein opnieuw toevoegen werkt nog steeds.** Als je werkruimte eerder een domein heeft verwijderd, kan de bestaande zone opnieuw worden gebruikt voor dezelfde werkruimte; de controle blokkeert alleen dat een andere werkruimte het overneemt.
 - **CNAME-modus heeft geen e-mail.** E-mailroutering vereist een volledige Cloudflare-zone, wat alleen nameserver-modus biedt.
 - **De wizard weigert een bestaande externe MX te overschrijven.** Als je apex al naar Google Workspace of Microsoft 365 wijst, retourneert `quickEnableInbox` `apexMx.status = 'conflict'` en moet je kiezen: migreer MX naar Cloudflare, of blijf bij je bestaande provider en sla de gebundelde inbox over.
 - **Gereserveerde subdomeinen.** `app`, `admin`, `api`, `www`, `mail`, `support`, `portal`, `dashboard` en een handvol andere zijn geblokkeerd op werkruimte-slug-niveau.
