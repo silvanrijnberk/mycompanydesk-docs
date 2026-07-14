@@ -96,6 +96,8 @@ MyCompanyDesk takes data security seriously:
 - GDPR-compliant data handling
 - Regular backups ensure data safety
 
+For details on cookies, analytics identifiers, and Do Not Track handling, see [Cookies and analytics](/account/cookies-tracking).
+
 ## Account deletion
 
 If you want to stop using MyCompanyDesk, go to **Settings > Account opzeggen** (cancel your account). This row is visible to admins only. Read the page carefully: it explains what happens to your subscription and your data before you confirm.
