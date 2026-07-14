@@ -63,7 +63,7 @@ Download your records per type:
 - **Expenses** as CSV, with categories and amounts
 
 ::: info
-CSV and full-backup exports are available from the **Starter** plan. On the Free plan the page shows an upgrade notice.
+CSV exports are available from the **Starter** plan. The complete JSON backup is available on every plan, including Free.
 :::
 
 ### Complete backup
