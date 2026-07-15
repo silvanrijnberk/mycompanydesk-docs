@@ -221,7 +221,7 @@ Capabilities:
 - **Audit log** — outbound sends, mailbox changes and thread state changes are recorded in an audit table for the workspace. Currently API-only (no UI surface yet) — accessible to support staff for troubleshooting.
 - **HTML email rendering**: HTML emails are rendered with their original styles intact inside a sandboxed iframe. The renderer strips scripts, forms and event handlers during sanitisation, and blocks remote images by default to protect your privacy. A notice bar appears when images are blocked, with a single-click "Show images" action that re-renders the message with images enabled. Text-only fallback displays the plain-text part when no HTML body is present.
 - **Star/unstar**: mark important threads with a star for quick access. A star icon appears next to the status dot on starred threads in the thread list. The toolbar has a star button that toggles the state for the currently open thread. A "Starred" view in the left sidebar next to Open, Snoozed, Closed, Spam and Trash filters to only starred threads, backed by a partial database index for instant results.
-- **Soft-delete**: threads can be moved to Trash instead of being permanently destroyed. A delete button (trash icon) appears in the toolbar for non-deleted threads. Once deleted, the button changes to a restore action that moves the thread back to `open`. If a new inbound message arrives on a trashed thread, the thread is automatically reopened to `open` so the reply is visible in the Inbox; spam threads are left as spam so a spammer replying to itself cannot resurface. The Trash filter appears in the left sidebar alongside Open, Snoozed, Closed and Spam, so you can review deleted threads before they are purged.
+- **Soft-delete**: threads can be moved to Trash instead of being permanently destroyed. A delete button (trash icon) appears in the toolbar for non-deleted threads. Once deleted, the button changes to a restore action that moves the thread back to `open`. The Trash filter appears in the left sidebar alongside Open, Snoozed, Closed and Spam, so you can review deleted threads before they are purged.
 - **Full-text search**: a search bar above the thread list lets you search across all inbox messages by subject, body text, snippet, and sender. The search is powered by Postgres full-text search with weighted field ranking, so subject matches appear before body matches. Results are grouped by thread, with the best-matching message's snippet shown as a preview line. Supports quoted phrases, `OR`, and `-` exclusions. A 250 ms debounce keeps the UI responsive, and the loading spinner gives real-time feedback.
 
 #### Drafts
@@ -269,9 +269,9 @@ The checkout-success and checkout-cancelled pages show the buyer a branded resul
 
 ## Inbox tab visibility
 
-The Inbox tab appears in the sidebar and bottom navigation only when the workspace has an inbox-enabled domain configured. Having plan-level access is not enough on its own -- the workspace must complete the onboarding flow and enable inbox on at least one domain. This prevents the tab from appearing for users who have inbox access through their plan but read email elsewhere and would never want an empty second inbox.
+The Inbox tab is always visible in the sidebar and bottom navigation. On free plans that do not include inbox, it appears as an upgrade hint and opens the plan comparison when selected. On paid plans the tab is always present, even before a domain has been connected, because it is the entry point to the inbox setup wizard.
 
-On free plans that do not include inbox, the tab remains visible as an upgrade hint. But on paid plans, once a domain is wired through the setup wizard and the inbox is ready, the tab appears automatically.
+For a workspace that already has an inbox-enabled domain, the tab shows the real inbox with unread counts and full thread management. For paid workspaces without an inbox-enabled domain yet, selecting the tab redirects to `/inbox/setup` so you can wire the domain and enable the inbox in one flow.
 
 ## Demo website claim
 
