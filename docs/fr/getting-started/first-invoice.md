@@ -21,7 +21,7 @@ Assurez-vous d'avoir :
 
 ### Selectionner un client
 
-Commencez a taper le nom du client. Si le client existe, selectionnez-le dans la liste deroulante. Sinon, cliquez sur **Creer un nouveau client** pour l'ajouter directement.
+Commencez a taper le nom du client. Si le client existe, selectionnez-le dans la liste deroulante. Sinon, tapez le nom complet et cliquez sur **Creer un client** pour l'ajouter directement. Le formulaire en ligne demande un nom de client et une adresse. La recherche KVK peut proposer des entreprises neerlandaises et remplir l'adresse automatiquement ; pour un client particulier, ajoutez-le en saisissant l'adresse a la main. Seul le nom du client est requis ; l'e-mail et l'adresse complete se rajoutent plus tard depuis la page client.
 
 ### Ajouter des lignes de facturation
 

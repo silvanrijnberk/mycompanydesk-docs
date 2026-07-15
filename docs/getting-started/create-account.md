@@ -40,12 +40,12 @@ Returning users land on the same split-screen page. The **Sign In** tab accepts 
 
 ## Complete the setup wizard
 
-A dismissable **Finish setup** banner at the top of the dashboard guides you through the remaining setup. Click **Resume setup** to enter the setup wizard, or dismiss the banner by clicking the X button; it stays dismissed in that browser until you complete the wizard.
+New accounts go straight into the setup wizard at `/setup` after the first login or email verification. The wizard is skippable: click **Leave for now** to continue to your dashboard, or close the tab and come back later. While setup is unfinished, a dismissable **Finish setup** banner at the top of the dashboard lets you resume at any time.
 
-The wizard asks about your trade and your goals, finds your company details via the KVK register, and can optionally set up a website for you. It is covered in full in a later docs page.
+The wizard is built around your first invoice. It asks who you are billing and fills in the sender block, payment details and VAT status while showing a live preview of the invoice. You can also have it look up your company in the Dutch trade register (KVK) to prefill your business details. Website setup is opt-in from the finish screen, not a step in the wizard itself.
 
-The wizard is non-blocking: you can enter it from the banner or navigate to `/setup` at any time, and you can dismiss the banner freely. It does not force a redirect on signup.
+Every answer is saved as you go, so you can skip, resume and re-run the wizard without losing progress. All information can also be changed later in Settings.
 
 ## Next steps
 
-Now that your account is ready, [set up your company information](/getting-started/company-setup).
+Now that your account is ready, [send your first invoice](/getting-started/first-invoice).
