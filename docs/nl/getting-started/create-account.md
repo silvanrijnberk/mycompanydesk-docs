@@ -40,12 +40,12 @@ Terugkerende gebruikers komen op dezelfde gesplitste pagina. De **Inloggen**-tab
 
 ## Voltooi de setup-wizard
 
-Een sluitbare **Setup afronden**-banner bovenaan het dashboard begeleidt je door de resterende setup. Klik op **Verder** om de setup-wizard te openen, of klik op het X-icoon om de banner te verbergen; de banner blijft in die browser verborgen totdat je de wizard afrondt.
+Nieuwe accounts komen na de eerste login of e-mailverificatie direct in de setup-wizard op `/setup`. De wizard is optioneel: klik op **Voor nu overslaan** om verder te gaan naar je dashboard, of sluit het tabblad en kom later terug. Zolang de setup niet af is, toont je dashboard een sluitbare **Setup afronden**-banner waarmee je op elk moment verder kunt.
 
-De wizard vraagt naar je vak en je doelen, zoekt je bedrijfsgegevens op via het KVK-register en kan optioneel een website voor je opzetten. Een latere documentatiepagina behandelt de wizard volledig.
+De wizard draait om je eerste factuur. Hij vraagt voor wie je factureert en vult intussen het afzenderblok, betaalgegevens en btw-status in, met een live voorbeeld van de factuur naast de vragen. Je kunt ook je bedrijf opzoeken in het KVK-register zodat je zakengegevens automatisch worden ingevuld. Een website instellen is optioneel vanaf het afrondscherm, geen stap in de wizard zelf.
 
-De wizard is niet-blokkerend: je kunt hem openen via de banner of op elk moment naar `/setup` navigeren, en je kunt de banner vrijelijk sluiten. Er is geen gedwongen doorverwijzing bij het registreren.
+Elk antwoord wordt direct opgeslagen, dus je kunt de wizard overslaan, later hervatten en opnieuw starten zonder voortgang kwijt te raken. Alle gegevens kun je later ook nog aanpassen in Instellingen.
 
 ## Volgende stappen
 
-Nu je account klaar is, [stel je bedrijfsinformatie in](/nl/getting-started/company-setup).
+Nu je account klaar is, [stuur je eerste factuur](/nl/getting-started/first-invoice).

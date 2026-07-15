@@ -21,7 +21,7 @@ Zorg dat je het volgende hebt gedaan:
 
 ### Selecteer een klant
 
-Begin met het typen van de klantnaam. Als de klant al bestaat, selecteer deze dan uit de dropdown. Zo niet, klik dan op **Nieuwe klant aanmaken** om er direct een toe te voegen.
+Begin met het typen van de klantnaam. Als de klant al bestaat, selecteer deze dan uit de lijst. Zo niet, typ dan de volledige naam en klik op **Klant aanmaken** om er direct een toe te voegen. Het inline formulier vraagt om een klantnaam en adres. De KVK-lookup kan Nederlandse bedrijven voorstellen en het adres automatisch invullen; particuliere klanten voeg je toe door het adres handmatig in te typen. Alleen de klantnaam is verplicht; e-mail en het volledige adres vul je later op de klantpagina aan.
 
 ### Regelitems toevoegen
 

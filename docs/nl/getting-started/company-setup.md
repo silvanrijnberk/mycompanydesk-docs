@@ -1,10 +1,11 @@
 ---
 title: Je bedrijf instellen
+last_verified: 2026-07-15
 ---
 
 # Je bedrijf instellen
 
-De eerste keer dat je inlogt, leidt MyCompanyDesk je door een korte **setupwizard** op `/setup`. Die vraagt wat voor werk je doet en wat je met de app wilt, zoekt je bedrijf op in het Handelsregister (KVK) en vult op basis van je antwoorden je bedrijfsgegevens, huisstijl en standaardinstellingen in. Niets staat vast: elke stap kun je overslaan en alles kun je later aanpassen in Instellingen.
+De eerste keer dat je inlogt, leidt MyCompanyDesk je door een korte **setupwizard** op `/setup`. De wizard draait om je eerste factuur: hij vraagt voor wie je factureert en vult intussen het afzenderblok, betaalgegevens en btw-status in, met een live voorbeeld van de factuur. Je kunt ook je bedrijf opzoeken in het Handelsregister (KVK). Niets staat vast: elke stap kun je overslaan en alles kun je later aanpassen in Instellingen.
 
 ## Waar vind je de wizard
 
@@ -12,46 +13,36 @@ De eerste keer dat je inlogt, leidt MyCompanyDesk je door een korte **setupwizar
 - **Later:** zolang de setup niet af is, staat er bovenaan je dashboard een banner met een knop terug naar de wizard. Je kunt de banner verbergen, of altijd rechtstreeks naar `/setup` gaan.
 - **Overslaan:** op elke stap zit een knop **Voor nu overslaan**. Je antwoorden tot dan toe worden bewaard, dus je gaat later gewoon verder waar je was.
 
-## Stap 1: Wat voor werk je doet
+## Stap 1: Voor wie je factureert
 
-Kies je vak uit een raster met veelvoorkomende beroepen: timmerman, schilder, loodgieter, elektricien, fotograaf, consultant, verhuurder en meer. Staat het jouwe er niet bij? Kies **Iets anders** en omschrijf het in je eigen woorden.
+De wizard opent met een live voorbeeld van de factuur en vraagt om de klant. Begin de klantnaam te typen.
 
-Je vak vinkt op de volgende stap alvast een logische set doelen aan, dus de meeste mensen hoeven alleen te bevestigen.
+- Bestaat de klant al in je werkruimte, selecteer hem dan uit de lijst.
+- Wil je een nieuwe klant direct toevoegen, typ de naam en klik op **Klant aanmaken**. Het inline formulier vraagt om de klantnaam en het adres. De KVK-lookup kan Nederlandse bedrijven voorstellen en het adres automatisch invullen; particuliere klanten voeg je toe door het adres handmatig in te typen.
+- Het e-mailadres van de klant is optioneel en wordt alleen gebruikt als je de factuur verstuurt.
 
-## Stap 2: Je doelen
+Alleen de klantnaam is verplicht om verder te gaan. Je kunt de rest van de klantgegevens later aanvullen op de klantpagina.
 
-Een checklist met wat je met MyCompanyDesk wilt doen: facturen sturen, offertes maken, uitgaven bijhouden, uren schrijven, projecten beheren, verhuur bijhouden, btw en overzichten, en online gevonden worden. Aangevinkte doelen zetten de bijbehorende onderdelen van de app aan; wat je niet aanvinkt, blijft uit de weg.
+## Stap 2: Je bedrijfsgegevens (KVK)
 
-Eén keuze bepaalt het vervolg van de wizard: vink je **Online gevonden worden** aan, dan krijg je twee extra stappen voor je webadres en je merk. Laat je dit uit, dan ga je direct naar de laatste stap.
-
-## Stap 3: Je bedrijfsgegevens (KVK)
-
-Typ je bedrijfsnaam en kies je bedrijf uit de live suggesties uit het Handelsregister. MyCompanyDesk haalt vervolgens je KVK Basisprofiel op en vult je bedrijfsgegevens alvast in: juridische naam, handelsnamen, rechtsvorm, adres en bedrijfsactiviteit. Alleen lege velden worden gevuld; wat je zelf al had ingevuld blijft staan.
+Deze stap vult het afzenderblok van je factuur. Typ je bedrijfsnaam en kies je bedrijf uit de live suggesties uit het Handelsregister. MyCompanyDesk haalt vervolgens je KVK Basisprofiel op en vult je bedrijfsgegevens alvast in: juridische naam, handelsnamen, rechtsvorm, adres en bedrijfsactiviteit. Alleen lege velden worden gevuld; wat je zelf al had ingevuld blijft staan.
 
 Geen treffer, of geen KVK-inschrijving?
 
 - **Vul handmatig in**: vul zelf je bedrijfsnaam, KVK-nummer, adres, postcode en plaats in.
 - **Geen KVK-inschrijving?**: sla het opzoeken helemaal over en vul je gegevens later in via Instellingen.
 
-Deze stap vraagt ook om één zin over wat je bedrijf doet. Als je doorgaat, gebruikt MyCompanyDesk die samen met je bedrijfsgegevens om een merkkleur, slogan en startcontent voor te stellen.
+## Stap 3: Hoe je betaald krijgt
 
-## Stap 4: Je webadres (alleen bij websitedoel)
+De wizard vraagt om het IBAN waar klanten naartoe betalen. Je kunt nu je zakelijke IBAN invullen, of op **IBAN later toevoegen** klikken om deze stap over te slaan. Houd er rekening mee dat een klant je zonder IBAN minder makkelijk kan betalen.
 
-Kies hoe klanten je online vinden:
+Als je nog wacht op je btw-nummer van de Belastingdienst, of onder de kleineondernemersregeling (KOR) valt, kun je gewoon doorgaan en je btw-nummer later toevoegen.
 
-- **Gratis subdomein**: een gratis adres dat eindigt op `.mycompanydesk.site`, voorgesteld op basis van je bedrijfsnaam en tijdens het typen gecheckt op beschikbaarheid.
-- **Ik heb al een domein**: koppel een domein dat je ergens anders hebt geregistreerd.
-- **Registreer een domein**: zoek een nieuw domein, bekijk de prijs en koop het direct in de wizard. Tijdens je Pro-proefperiode kun je in plaats van kopen ook één `.nl`-domein het eerste jaar gratis claimen.
+## Stap 4: Setup afronden
 
-Je kunt deze stap overslaan en later een domein regelen.
+De laatste stap bevestigt dat je 60 dagen Pro-proefperiode actief is, zonder creditcard, en past alles toe. Ook biedt het afrondscherm optionele vervolgstappen, zoals het instellen van een website. Een website instellen is optioneel: er wordt niets aangemaakt tenzij je dat kiest vanaf het afrondscherm of de dashboard-checklist.
 
-## Stap 5: Je merk (alleen bij websitedoel)
-
-Upload je logo als je er een hebt; MyCompanyDesk pikt daar automatisch je merkkleur uit. Geen logo? Geen probleem: er wordt een strak logo van je initialen gemaakt. De stap toont ook alvast de merkkleur en slogan die de wizard voorstelt, zodat je ziet hoe je facturen en website eruit gaan zien.
-
-## Stap 6: Je proefperiode
-
-De laatste stap bevestigt dat je 60 dagen Pro-proefperiode actief is, zonder creditcard. Klik op **Setup afronden** en de wizard past alles toe, laat een overzicht zien van wat er is ingericht en brengt je naar je dashboard.
+Klik op **Setup afronden** en de wizard past je bedrijfsgegevens, btw-status, IBAN en standaardinstellingen toe, waarna je naar je dashboard gaat.
 
 ## Later aanpassen
 

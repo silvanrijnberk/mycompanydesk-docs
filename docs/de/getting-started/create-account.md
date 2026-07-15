@@ -40,12 +40,12 @@ Rückkehrende Benutzer landen auf derselben geteilten Seite. Der **Anmelden**-Ta
 
 ## Einrichtungsassistenten abschließen
 
-Ein schließbares **Setup abschließen**-Banner oben auf dem Dashboard begleitet Sie durch die restliche Einrichtung. Klicken Sie auf **Weiter**, um den Einrichtungsassistenten zu öffnen, oder klicken Sie auf das X-Symbol, um das Banner auszublenden; es bleibt in diesem Browser ausgeblendet, bis Sie den Assistenten abschließen.
+Neue Accounts gelangen nach dem ersten Login oder der E-Mail-Bestätigung direkt in den Einrichtungsassistenten unter `/setup`. Der Assistent ist optional: Klicken Sie auf **Vorerst überspringen**, um zum Dashboard weiterzugehen, oder schließen Sie den Tab und kommen Sie später zurück. Solange die Einrichtung nicht abgeschlossen ist, zeigt das Dashboard einen schließbaren **Setup abschließen**-Banner, über den Sie jederzeit fortfahren können.
 
-Der Assistent fragt nach Ihrem Gewerbe und Ihren Zielen, findet Ihre Unternehmensdaten über das KVK-Register und kann optional eine Website für Sie einrichten. Eine spätere Dokumentationsseite behandelt den Assistenten vollständig.
+Der Assistent dreht sich um Ihre erste Rechnung. Er fragt, wen Sie abrechnen möchten, und füllt währenddessen den Absenderblock, Zahlungsdetails und den USt.-Status aus, mit einer Live-Vorschau der Rechnung neben den Fragen. Sie können Ihr Unternehmen auch im niederländischen Handelsregister (KVK) nachschlagen lassen, damit Ihre Geschäftsdaten automatisch übernommen werden. Eine Website einzurichten ist ab dem Abschlussbildschirm optional, kein Schritt im Assistenten selbst.
 
-Der Assistent ist nicht blockierend: Sie können ihn über das Banner öffnen oder jederzeit zu `/setup` navigieren, und Sie können das Banner frei schließen. Es gibt keine erzwungene Weiterleitung bei der Anmeldung.
+Jede Antwort wird sofort gespeichert, sodass Sie den Assistenten überspringen, später fortsetzen und neu starten können, ohne Fortschritt zu verlieren. Alle Angaben können später auch unter Einstellungen geändert werden.
 
 ## Nächste Schritte
 
-Jetzt, da Ihr Konto bereit ist, [richten Sie Ihre Unternehmensinformationen ein](/de/getting-started/company-setup).
+Jetzt, da Ihr Konto bereit ist, [senden Sie Ihre erste Rechnung](/de/getting-started/first-invoice).

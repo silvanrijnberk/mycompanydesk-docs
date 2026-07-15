@@ -21,7 +21,7 @@ Stellen Sie sicher, dass Sie:
 
 ### Kunden auswählen
 
-Beginnen Sie mit der Eingabe des Kundennamens. Wenn der Kunde existiert, wählen Sie ihn aus der Dropdown-Liste aus. Wenn nicht, klicken Sie auf **Neuen Kunden erstellen**, um ihn direkt hinzuzufügen.
+Beginnen Sie mit der Eingabe des Kundennamens. Wenn der Kunde existiert, wählen Sie ihn aus der Dropdown-Liste aus. Wenn nicht, tippen Sie den vollständigen Namen und klicken Sie auf **Kunde erstellen**, um ihn direkt hinzuzufügen. Das Inline-Formular fragt nach Kundennamen und Adresse. Die KVK-Suche kann niederländische Unternehmen vorschlagen und die Adresse automatisch ausfüllen; private Kunden fügen Sie hinzu, indem Sie die Adresse von Hand eingeben. Nur der Kundenname ist erforderlich; E-Mail und vollständige Adresse ergänzen Sie später auf der Kundenseite.
 
 ### Positionen hinzufügen
 

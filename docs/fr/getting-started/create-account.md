@@ -40,12 +40,12 @@ Les utilisateurs recurrents arrivent sur le meme ecran partage. L'onglet **Conne
 
 ## Terminer l'assistant de configuration
 
-Une bannière **Terminer la configuration** fermable en haut du tableau de bord vous guide dans la fin de la configuration. Cliquez sur **Continuer** pour ouvrir l'assistant de configuration, ou cliquez sur l'icône X pour masquer la bannière ; elle reste masquée dans ce navigateur jusqu'à ce que vous terminiez l'assistant.
+Les nouveaux comptes arrivent directement dans l'assistant de configuration à `/setup` après la première connexion ou la vérification par e-mail. L'assistant est facultatif : cliquez sur **Passer pour l'instant** pour continuer vers votre tableau de bord, ou fermez l'onglet et revenez plus tard. Tant que la configuration n'est pas terminée, un bandeau fermable **Terminer la configuration** en haut du tableau de bord vous permet de reprendre à tout moment.
 
-L'assistant vous interroge sur votre métier et vos objectifs, retrouve les informations de votre entreprise via le registre KVK et peut, en option, créer un site web pour vous. Une page de documentation ultérieure couvre l'assistant en détail.
+L'assistant s'articule autour de votre première facture. Il demande à qui vous facturez et remplit en parallèle le bloc expéditeur, les coordonnées de paiement et le statut de TVA, avec un aperçu en direct de la facture à côté des questions. Vous pouvez aussi faire rechercher votre entreprise dans le registre néerlandais (KVK) pour préremplir vos coordonnées professionnelles. La création d'un site web est optionnelle depuis l'écran de fin, et non une étape de l'assistant.
 
-L'assistant est non bloquant : vous pouvez l'ouvrir via la bannière ou naviguer vers `/setup` à tout moment, et vous pouvez fermer la bannière librement. Il n'y a pas de redirection forcée à l'inscription.
+Chaque réponse est enregistrée au fur et à mesure, vous pouvez donc passer l'assistant, le reprendre plus tard et le relancer sans perdre de progression. Toutes les informations peuvent aussi être modifiées ultérieurement dans les Paramètres.
 
-## Prochaines etapes
+## Prochaines étapes
 
-Maintenant que votre compte est pret, [configurez les informations de votre entreprise](/fr/getting-started/company-setup).
+Maintenant que votre compte est prêt, [envoyez votre première facture](/fr/getting-started/first-invoice).

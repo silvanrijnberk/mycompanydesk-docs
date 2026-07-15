@@ -21,7 +21,7 @@ Make sure you have:
 
 ### Select a customer
 
-Start typing the customer name. If the customer exists, select them from the dropdown. If not, click **Create new customer** to add them inline.
+Start typing the customer name. If the customer exists, select them from the dropdown. If not, type the full name and click **Create customer** to add them inline. The inline form asks for a customer name and address. The KVK lookup can suggest Dutch businesses and fill in the address automatically; private customers can be added by typing the address by hand. Only the customer name is required; you can add the email and full address later on the customer page.
 
 ### Add line items
 
