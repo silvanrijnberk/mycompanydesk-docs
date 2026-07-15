@@ -15,6 +15,8 @@ Les statuts d'un devis :
 • Refusée : le client a décliné le devis
 • Expiré : la date de validité est dépassée ; ce statut s'affiche automatiquement
 
+Sur la page de détail du devis, l'étape actuelle s'affiche sous forme de carte de cycle de vie : Brouillon → Envoyée, puis Acceptée ou Refusée comme branche de décision. Les devis expirés et annulés s'affichent comme résultats terminaux en fin de parcours.
+
 Quand vous convertissez un devis accepté en facture, le devis reste Acceptée et reçoit le marqueur "Converti en facture".
 
 Astuce : utilisez les filtres de la liste des devis pour vérifier d'abord les brouillons et les devis expirés.
