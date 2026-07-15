@@ -15,6 +15,8 @@ Quote statuses explained:
 • Declined: the customer turned the quote down
 • Expired: the valid-until date has passed; this is shown automatically
 
+On the quote detail page, the current stage is shown as a lifecycle card: Draft → Sent, then Accepted or Declined as a decision branch. Expired and canceled quotes are shown as terminal outcomes at the end of the flow.
+
 When you convert an accepted quote to an invoice, the quote stays Accepted and gets a "Converted to invoice" marker.
 
 Tip: Use the quote list filters to check drafts and expired quotes first.

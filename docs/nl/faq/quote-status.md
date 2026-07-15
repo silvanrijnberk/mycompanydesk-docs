@@ -15,6 +15,8 @@ De offertestatussen op een rij:
 • Geweigerd: de klant heeft de offerte afgewezen
 • Verlopen: de geldig-tot-datum is verstreken; dit wordt automatisch getoond
 
+Op de offertedetailpagina zie je de huidige fase als een lifecycle-kaart: Concept → Verzonden, gevolgd door Geaccepteerd of Geweigerd als beslissingsvertakking. Verlopen en geannuleerde offertes worden aan het einde van de flow als eindresultaat getoond.
+
 Zet je een geaccepteerde offerte om naar een factuur, dan blijft de offerte Geaccepteerd en krijgt die de markering "Omgezet naar factuur".
 
 Tip: Gebruik de filters in de offertelijst om eerst naar concepten en verlopen offertes te kijken.

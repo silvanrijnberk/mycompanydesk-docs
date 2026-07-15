@@ -15,6 +15,8 @@ Die Angebotsstatus im Überblick:
 • Zurückgewiesen: der Kunde hat das Angebot abgelehnt
 • Abgelaufen: das Gültig-bis-Datum ist verstrichen; das wird automatisch angezeigt
 
+Auf der Angebotsdetailseite wird die aktuelle Phase als Lifecycle-Karte angezeigt: Entwurf → Gesendet, gefolgt von Angenommen oder Zurückgewiesen als Entscheidungszweig. Abgelaufene und stornierte Angebote werden am Ende des Ablaufs als Endergebnis dargestellt.
+
 Wandeln Sie ein akzeptiertes Angebot in eine Rechnung um, bleibt das Angebot Akzeptiert und erhält die Markierung "In Rechnung umgewandelt".
 
 Tipp: Nutzen Sie die Filter in der Angebotsliste, um zuerst Entwürfe und abgelaufene Angebote zu prüfen.
