@@ -4,7 +4,7 @@ title: Reports
 
 # Reports
 
-Understand how your business is doing with five focused report views and an overview that ties them together. Charts are embedded directly in each view, so every report combines numbers and visuals in one place.
+Understand how your business is doing with focused report views and an overview that ties them together. Charts are embedded directly in each view, so every report combines numbers and visuals in one place.
 
 ## Accessing reports
 
@@ -50,6 +50,18 @@ See where your numbers are heading, based on recurring billings, open invoices, 
 ### Income tax
 
 The **Income tax** view estimates the income tax for the selected year: gross profit, the self-employed deduction and SME profit exemption, taxable income, the tax brackets, estimated tax, profit after tax, and how much to set aside. If your company is a BV, it shows an estimated corporate tax instead. Treat it as a planning aid for reserving money, not as a filing.
+
+### General ledger
+
+The **General ledger** view lists every ledger account for the selected period. Each account shows its account code, name, current balance, and an expandable list of the underlying postings. Accounts are grouped into the standard categories: assets, liabilities, equity, revenue, and expenses. This is the same data that powers the balance sheet and profit-and-loss views, shown at the account level.
+
+### Balance sheet
+
+The **Balance sheet** view shows assets, liabilities, and equity as of the chosen date. It displays the asset accounts on one side and liability + equity accounts on the other, with a status badge that tells you whether the books are still in balance. If the totals do not match, the view flags it so you can reach out to support.
+
+### Profit-and-loss account
+
+The **Profit-and-loss account** view groups revenue and expense accounts for the selected period and shows the resulting profit or loss. Use it when you need the period result broken down by ledger account rather than the simplified P&L chart view.
 
 ### Looking for the VAT report?
 

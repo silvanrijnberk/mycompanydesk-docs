@@ -4,7 +4,7 @@ title: Rapporten
 
 # Rapporten
 
-Krijg inzicht in hoe je bedrijf ervoor staat met vijf gerichte rapportweergaven en een overzicht dat alles samenbrengt. Grafieken zijn direct in elke weergave ingebouwd, dus elk rapport combineert cijfers en beeld op een plek.
+Krijg inzicht in hoe je bedrijf ervoor staat met gerichte rapportweergaven en een overzicht dat alles samenbrengt. Grafieken zijn direct in elke weergave ingebouwd, dus elk rapport combineert cijfers en beeld op een plek.
 
 ## Rapporten openen
 
@@ -50,6 +50,18 @@ Bekijk waar je cijfers naartoe gaan, op basis van terugkerende facturatie, opens
 ### Inkomstenbelasting
 
 De weergave **Inkomstenbelasting** maakt een schatting van de inkomstenbelasting voor het gekozen jaar: brutowinst, zelfstandigenaftrek en mkb-winstvrijstelling, belastbaar inkomen, de belastingschijven, geschatte belasting, winst na belasting en hoeveel je opzij zet. Heb je een BV, dan zie je in plaats daarvan een schatting van de vennootschapsbelasting. Zie het als hulpmiddel om geld te reserveren, niet als aangifte.
+
+### Grootboek
+
+De weergave **Grootboek** toont alle grootboekrekeningen voor de gekozen periode. Elke rekening toont de rekeningcode, naam, huidig saldo en een uitklapbare lijst met onderliggende boekingen. Rekeningen zijn gegroepeerd in de standaardcategorieen: activa, passiva, eigen vermogen, opbrengsten en kosten. Dit is dezelfde data die de balans en de winst-en-verliesrekening voedt, maar dan op rekeningniveau.
+
+### Balans
+
+De weergave **Balans** toont activa, passiva en eigen vermogen op de gekozen datum. Activa staan aan de ene kant, passiva en eigen vermogen aan de andere kant, met een statusbadge die aangeeft of de boekhouding in balans is. Kloppen de totalen niet, dan geeft de weergave dat aan zodat je contact kunt opnemen met support.
+
+### Winst-en-verliesrekening
+
+De weergave **Winst-en-verliesrekening** groepeert opbrengsten- en kostenrekeningen voor de gekozen periode en toont het resulterende resultaat. Gebruik deze weergave als je het perioderesultaat per grootboekrekening wilt zien in plaats van de vereenvoudigde winst-en-verliesgrafiek.
 
 ### Op zoek naar het BTW-rapport?
 

@@ -4,7 +4,7 @@ title: Berichte
 
 # Berichte
 
-Verstehen Sie, wie Ihr Unternehmen dasteht: mit fünf fokussierten Berichtsansichten und einer Übersicht, die alles zusammenführt. Diagramme sind direkt in jede Ansicht eingebettet, jeder Bericht kombiniert also Zahlen und Grafik an einem Ort.
+Verstehen Sie, wie Ihr Unternehmen dasteht: mit fokussierten Berichtsansichten und einer Übersicht, die alles zusammenführt. Diagramme sind direkt in jede Ansicht eingebettet, jeder Bericht kombiniert also Zahlen und Grafik an einem Ort.
 
 ## Berichte aufrufen
 
@@ -50,6 +50,18 @@ Sehen Sie, wohin sich Ihre Zahlen entwickeln, auf Basis wiederkehrender Abrechnu
 ### Einkommensteuer
 
 Die Ansicht **Einkommensteuer** schätzt die Einkommensteuer für das gewählte Jahr: Bruttogewinn, Selbstständigenabzug und KMU-Gewinnfreistellung, zu versteuerndes Einkommen, die Steuerstufen, geschätzte Steuer, Gewinn nach Steuern und den Betrag, den Sie zurücklegen sollten. Führen Sie eine BV, sehen Sie stattdessen eine geschätzte Körperschaftsteuer. Verstehen Sie die Ansicht als Planungshilfe zum Reservieren von Geld, nicht als Steuererklärung.
+
+### Hauptbuch
+
+Die Ansicht **Hauptbuch** listet alle Hauptbuchkonten für den gewählten Zeitraum. Jedes Konto zeigt Kontonummer, Namen, aktuellen Saldo und eine aufklappbare Liste der zugrunde liegenden Buchungen. Konten sind in die Standardkategorien gruppiert: Aktiva, Passiva, Eigenkapital, Erträge und Aufwendungen. Das sind dieselben Daten, die auch die Bilanz und die Gewinn- und Verlustrechnung speisen, hier aber auf Kontenebene dargestellt.
+
+### Bilanz
+
+Die Ansicht **Bilanz** zeigt Aktiva, Passiva und Eigenkapital zum gewählten Stichtag. Aktiva stehen auf einer Seite, Passiva und Eigenkapital auf der anderen; ein Status-Label zeigt an, ob die Bücher noch in Balance sind. Stimmen die Summen nicht überein, weist die Ansicht darauf hin, damit Sie den Support kontaktieren können.
+
+### Ergebnisrechnung
+
+Die Ansicht **Ergebnisrechnung** gruppiert Ertrags- und Aufwandskonten für den gewählten Zeitraum und zeigt das daraus resultierende Ergebnis. Nutzen Sie sie, wenn Sie das Periodenergebnis nach Konten aufgeschlüsselt benötigen, anstatt der vereinfachten GuV-Diagrammansicht.
 
 ### Sie suchen den USt.-Bericht?
 

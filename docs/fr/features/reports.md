@@ -4,7 +4,7 @@ title: Rapports
 
 # Rapports
 
-Comprenez la santé de votre entreprise grâce à cinq vues de rapport ciblées et à une vue d'ensemble qui relie le tout. Les graphiques sont intégrés directement dans chaque vue : chaque rapport combine chiffres et visuels au même endroit.
+Comprenez la santé de votre entreprise grâce à des vues de rapport ciblées et à une vue d'ensemble qui relie le tout. Les graphiques sont intégrés directement dans chaque vue : chaque rapport combine chiffres et visuels au même endroit.
 
 ## Accéder aux rapports
 
@@ -50,6 +50,18 @@ Voyez où vont vos chiffres, sur la base des facturations récurrentes, des fact
 ### Impôt sur le revenu
 
 La vue **Impôt sur le revenu** estime l'impôt sur le revenu pour l'année choisie : bénéfice brut, déduction pour indépendants et exonération de bénéfice PME, revenu imposable, tranches d'imposition, impôt estimé, bénéfice après impôt et montant à mettre de côté. Si votre société est une BV, elle affiche à la place une estimation de l'impôt sur les sociétés. Considérez cette vue comme une aide à la planification pour réserver de l'argent, pas comme une déclaration.
+
+### Grand livre
+
+La vue **Grand livre** liste chaque compte du grand livre pour la période choisie. Chaque compte affiche son numéro, son libellé, son solde actuel et une liste dépliable des écritures sous-jacentes. Les comptes sont regroupés selon les catégories standards : actif, passif, capitaux propres, produits et charges. Ce sont les mêmes données qui alimentent la balance et le compte de résultat, présentées ici au niveau du compte.
+
+### Balance
+
+La vue **Balance** affiche l'actif, le passif et les capitaux propres à la date choisie. Les comptes d'actif sont d'un côté, le passif et les capitaux propres de l'autre, avec un badge d'état indiquant si les écritures sont équilibrées. Si les totaux ne correspondent pas, la vue le signale pour que vous puissiez contacter le support.
+
+### Compte de résultat par compte
+
+La vue **Compte de résultat par compte** regroupe les comptes de produits et de charges pour la période choisie et montre le résultat qui en découle. Utilisez-la quand vous avez besoin du résultat de la période ventilé par compte de grand livre, plutôt que la vue graphique simplifiée du compte de résultat.
 
 ### Vous cherchez le rapport TVA ?
 
