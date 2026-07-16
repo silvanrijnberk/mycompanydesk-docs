@@ -69,6 +69,13 @@ Voor nameserver-modus eigen domeinen voert de wizard `quickEnableInbox` uit na v
 
 ### Eigen domeinen
 
+> **Twee regelingen.** De gratis `.nl`-actie is halverwege de geschiedenis van MCD van vorm veranderd, en beide versies draaien vandaag naast elkaar in productie, aangestuurd door de `DOMAIN_FREE_CLAIM_PAID_ONLY`-flag.
+>
+> - **Nieuwe claims (Pad A).** Het gratis domein is een beloning voor een betaald Pro-abonnement, geen proefperiode-extraatje. Een werkruimte moet op betaald Pro zitten om te claimen. Een Pro-proefperiode ziet het aanbod als een preview en kan claimen zodra hij naar betaald Pro upgradet. Het domein wordt vanaf dag één rechtstreeks op naam van de klant geregistreerd, dus er is geen fase waarin MCD het domein vasthoudt en geen overname-optie voor nieuwe claims.
+> - **Bestaande claims (overgangsregeling).** Domeinen die vóór de omschakeling zijn geclaimd onder het oude `trial_free`-model werken nog op de oude manier: MCD houdt het domein tijdens de proefperiode, draagt het gratis over aan de klant bij conversie naar Pro, of laat de klant het domein voor €15 eenmalig overnemen bij vroegtijdig vertrek. Deze voorwaarden blijven gelden voor die bestaande domeinen totdat ze converteren of vervallen. Er worden geen nieuwe `trial_free`-domeinen meer aangemaakt.
+>
+> De overgangsregeling voor gratis-voor-het-leven (een klein aantal bestaande werkruimtes met levenslang gratis Pro en domeinverlenging) blijft ongewijzigd en wordt verderop apart genoemd.
+
 UI staat op `Bedrijf › Je eigen .com-adres` -- de leaf-pagina is `/workspace/organization/company/address`, gemount vanuit `apps/web/pages/workspace/organization/company/address.vue` en toont de `SettingsDomains`-component. De twee oudere paden `/workspace/organization/domains` en `/workspace/communication/domains` verwijzen hierheen.
 
 De pagina bestaat uit twee delen:
@@ -118,42 +125,46 @@ Belangrijke kolommen die de app leest:
 
 Domeinverlenging volgt drie routes, afhankelijk van hoe het domein is verkregen:
 
-1. **Gratis gebundelde verlenging** (naar Pro geconverteerde trial-tier, of een bestaande gratis-voor-het-leven-afspraak): MCD neemt de wholesale-verlengkosten voor zijn rekening. Het domein verloopt automatisch zolang de werkruimte op Pro blijft. Geen betaalmiddel nodig.
-2. **Betaalde automatische verlenging** (betaalde aankoop, of trial-tier zonder Pro): Jaarlijks in rekening gebracht via de opgeslagen kaart. Werkt als elke andere abonnementsverlenging.
-3. **Handmatige verlenging**: Als een trial-tier werkruimte van Pro af valt EN geen opgeslagen kaart heeft, slaat het automatische verlengingspad deze over. De gebruiker ziet een melding en kan een eenmalige betaling starten via `POST /api/domains/renew/:domainId`, wat een Stripe Embedded Checkout-sessie aanmaakt voor de verlenging. Dit is de enige manier om een domein actief te houden zonder actief abonnement of opgeslagen kaart.
+1. **Gratis gebundelde verlenging** (een nieuwe Pad A-claim zolang de werkruimte op betaald Pro blijft, een bestaande naar Pro geconverteerde trial-tier-domein, of een bestaande gratis-voor-het-leven-afspraak): MCD neemt de wholesale-verlengkosten voor zijn rekening. Het domein verloopt automatisch zolang de werkruimte op Pro blijft. Geen betaalmiddel nodig.
+2. **Betaalde automatische verlenging** (betaalde aankoop, of een bestaand trial-tier-domein waarvan de werkruimte niet op Pro zit): Jaarlijks in rekening gebracht via de opgeslagen kaart. Werkt als elke andere abonnementsverlenging.
+3. **Handmatige verlenging**: Als een bestaande trial-tier werkruimte van Pro af valt EN geen opgeslagen kaart heeft, slaat het automatische verlengingspad deze over. De gebruiker ziet een melding en kan een eenmalige betaling starten via `POST /api/domains/renew/:domainId`, wat een Stripe Embedded Checkout-sessie aanmaakt voor de verlenging. Dit is de enige manier om een domein actief te houden zonder actief abonnement of opgeslagen kaart.
 
-#### Overname bij vertrek tijdens de proef
+#### Overname bij vertrek tijdens de proef (overgangsregeling)
 
 <!-- TODO(source-missing): overnameprijs €15 bevestiging in sources/ -->
 
-Wanneer een klant tijdens de Pro-proefperiode vertrekt zonder Pro-klant te worden, is er een derde optie voor het gratis `.nl`-domein: overnemen voor eenmalig €15 (all-in). De overname-flow (`DomainBuyoutModal.vue`) laat de klant betalen via Stripe Embedded Checkout en krijgt daarmee volledig eigendom. Na betaling wordt de houder overgezet van MCD naar de klant en wordt de verhuiscode (EPP) getoond, waarmee het domein naar elke registrar verhuisd kan worden.
+Deze sectie geldt alleen voor domeinen die vóór de omschakeling naar het betaald-Pro-beloningsmodel zijn geclaimd, onder de oude `trial_free`-regeling. Nieuwe claims worden vanaf dag één rechtstreeks op naam van de klant geregistreerd, dus er is geen fase waarin MCD het domein vasthoudt om uit te stappen, en dus ook geen overname-optie: de klant is al eigenaar.
+
+Voor een bestaand domein geldt: wanneer een klant tijdens de Pro-proefperiode vertrekt zonder Pro-klant te worden, is er een derde optie voor het gratis `.nl`-domein: overnemen voor eenmalig €15 (all-in). De overname-flow (`DomainBuyoutModal.vue`) laat de klant betalen via Stripe Embedded Checkout en krijgt daarmee volledig eigendom. Na betaling wordt de houder overgezet van MCD naar de klant en wordt de verhuiscode (EPP) getoond, waarmee het domein naar elke registrar verhuisd kan worden.
 
 Het overnamebedrag is een productprijs, geen verhuist toeslag. MCD rekent nooit kosten voor de verhuistoken zelf zodra de klant geregistreerd houder is. Het onderscheid is vastgelegd in de interne juridische notitie `docs/legal/gratis-domein-voorwaarden.md` in de RichardTool-repo.
 
 Databasetabellen:
 
-- `domain_buyout_intents` — volgt overname-betalingsintents met Stripe PaymentIntent-ID's en status.
+- `domain_buyout_intents` — volgt overname-betalingsintents (overgangsregeling) met Stripe PaymentIntent-ID's en status.
 
 #### Overdrachtsgevolgen
 
 Het overdragen van een domein dat via MyCompanyDesk is geregistreerd naar een andere registrar heeft permanente gevolgen, afgedwongen door de wekelijkse OpenProvider-statussynchronisatie:
 
-- **Domeinen met een gratis-voor-het-leven-afspraak**: De gratis claim wordt verwijderd en de interne levenslange Pro-toekenning van de werkruimte wordt opgezegd. De werkruimte wordt een normale betalende klant. Dit is onomkeerbaar; de toekenning kan niet opnieuw worden geclaimd.
-- **Trial-tier / Pro-gebundelde domeinen**: De gebundelde-gratis-status gaat verloren. De werkruimte kan nooit meer een ander gratis domein claimen (al afgedwongen via de retained-claims-lijst). Let op: het overnemen van het domein tijdens de proef (zie overnamesectie hierboven) is geen overdracht — het is een houderswijziging die de klant eigendom geeft voordat een overdracht plaatsvindt, waardoor het gratis-domeinvoordeel behouden blijft voor de duur van de proef.
+- **Bestaande domeinen met een gratis-voor-het-leven-afspraak**: De gratis claim wordt verwijderd en de interne levenslange Pro-toekenning van de werkruimte wordt opgezegd. De werkruimte wordt een normale betalende klant. Dit is onomkeerbaar; de toekenning kan niet opnieuw worden geclaimd.
+- **Bestaande trial-tier / Pro-gebundelde domeinen** (geclaimd vóór de omschakeling): De gebundelde-gratis-status gaat verloren. De werkruimte kan nooit meer een ander gratis domein claimen (al afgedwongen via de retained-claims-lijst). Let op: het overnemen van het domein tijdens de proef (zie de overnamesectie voor de overgangsregeling hierboven) is geen overdracht — het is een houderswijziging die de klant eigendom geeft voordat een overdracht plaatsvindt, waardoor het gratis-domeinvoordeel behouden blijft voor de duur van de proef.
+- **Nieuwe Pad A-domeinen** (geclaimd onder het betaald-Pro-beloningsmodel): Er is geen fase waarin MCD het domein vasthoudt om te verliezen, want het domein staat vanaf dag één al op naam van de klant, dus een registrarwissel triggert de bovenstaande overgangsregeling niet. De gratis gebundelde verlenging geldt nog steeds alleen zolang de werkruimte op betaald Pro blijft; valt de werkruimte van Pro af, dan komt het domein op het betaalde of handmatige verlengingspad terecht dat bij de verlengingscyclus staat beschreven.
 - **Betaalde domeinen**: Geen voordeelintrekking. Het domein gaat simpelweg naar `status = 'transferred_out'`.
 
-De claim-modal waarschuwt voor deze gevolgen voordat een gratis-domein claim wordt ingediend, en vereist expliciete bevestiging van de gebruiker. Een "Zo werkt je gratis domein"-uitleg toont dat het domein tijdens de proef op naam van MCD staat, gratis op eigen naam komt bij Pro, en bij vertrek voor €15 overgenomen kan worden. Intrekkingsdetails worden vastgelegd in de `domain_perk_revocations`-audittabel voor supportreferentie.
+De claim-modal waarschuwt voor deze gevolgen voordat een gratis-domein claim wordt ingediend, en vereist expliciete bevestiging van de gebruiker. Bij claims onder de overgangsregeling toont een "Zo werkt je gratis domein"-uitleg dat het domein tijdens de proef op naam van MCD staat, gratis op eigen naam komt bij Pro, en bij vertrek voor €15 overgenomen kan worden. Die uitleg geldt niet voor nieuwe Pad A-claims: omdat die vooraf betaald Pro vereisen en het domein meteen op naam van de klant registreren, is er geen fase waarin MCD het vasthoudt en dus niets om over te nemen. Intrekkingsdetails worden vastgelegd in de `domain_perk_revocations`-audittabel voor supportreferentie.
 
 #### Domein kopen of claimen
 
 De domein-aanschafkaart (`DomainPurchaseCard.vue`, `domain-purchase.service.ts`) is de eerste kaart op de Domeinen-pagina. De kaart verschijnt wanneer de werkruimte nog geen actief eigen domein heeft. Via de kaart kan de gebruiker een domein uitkiezen en bemachtigen via twee routes, die beide een speciale twee-stappen aanschafmodal openen (`DomainClaimModal.vue`). Stap 1 verzamelt de registrantgegevens (de gegevens die de registrar nodig heeft voor WHOIS). Stap 2 handelt de betaling of claim af:
 
 - **Kopen** -- Betaalde aankoop via OpenProvider. De gebruiker voert een domeinnaam in, de kaart roept `GET /api/domain-purchase/quote` aan om beschikbaarheid en prijs te controleren, en opent daarna de aanschafmodal. Nadat de registrantgegevens zijn ingevuld, roept de modal `POST /api/domain-purchase/checkout-session` aan om een Stripe-betalingssessie aan te maken en toont Stripe Embedded Checkout voor de betaling. Zodra de betaling voltooid is, registreert `POST /api/domain-purchase/finalize` het domein bij OpenProvider en maakt de `domains`-rij aan in nameserver-modus, gekoppeld aan Cloudflare.
-- **Gratis claim** -- Werkruimtes op een Pro-trial die aan de voorwaarden voldoen kunnen een `.nl`-domein gratis claimen voor het eerste jaar. De kaart roept `GET /api/domain-purchase/free-domain/eligibility` aan om de claim-tier van de werkruimte en de gate-status te controleren. De modal verzamelt de registrantgegevens en roept bij indienen `POST /api/domain-purchase/free-domain/claim` aan. Het platform betaalt de eerstejaars registratiekosten.
+- **Gratis claim** -- Werkruimtes op betaald Pro die aan de voorwaarden voldoen kunnen een `.nl`-domein gratis claimen voor het eerste jaar, als beloning voor het betaalde abonnement. Een werkruimte die nog op de Pro-proefperiode zit, ziet het aanbod als preview en kan de claim nog niet indienen; dat kan pas na de upgrade naar betaald Pro. De kaart roept `GET /api/domain-purchase/free-domain/eligibility` aan om de claim-tier van de werkruimte en de gate-status te controleren. De modal verzamelt de registrantgegevens en roept bij indienen `POST /api/domain-purchase/free-domain/claim` aan. Het platform betaalt de eerstejaars registratiekosten.
 
-Gratis claims verschillen alleen in hoe het domein na het eerste jaar wordt verlengd:
+Gratis claims verschillen in hoe ze geregistreerd worden en hoe het domein na het eerste jaar wordt verlengd:
 
-- **Trial-tier** -- Werkruimtes op een Pro-trial. Het eerste jaar is gratis. Aan het einde van het gratis jaar moet de werkruimte op een betaald Pro-abonnement zitten; het domein verloopt dan als onderdeel van het Pro-abonnement, betaald door de werkruimte. Als de werkruimte stopt met Pro betalen na het gratis jaar, verloopt het domein en moet handmatig verlengd worden. Tijdens het trial-jaar kan de gebruiker optioneel een kaart opslaan via Stripe SetupIntent in de modal voor toekomstige automatische verlenging.
+- **Pro-tier (nieuwe claims)** -- Werkruimtes op betaald Pro, die claimen onder het huidige `DOMAIN_FREE_CLAIM_PAID_ONLY`-model. Het domein wordt vanaf dag één rechtstreeks op naam van de klant geregistreerd, er is geen fase waarin MCD het vasthoudt. Het eerste jaar is gratis, en het blijft gratis verlengen als onderdeel van het Pro-abonnement zolang de werkruimte op betaald Pro blijft. Stopt de werkruimte met Pro betalen, dan komt het domein op het betaalde of handmatige verlengingspad uit de verlengingscyclus terecht. Er is geen overname-optie nodig, want de klant is al houder.
+- **Trial-tier (overgangsregeling)** -- Werkruimtes die vóór de omschakeling hebben geclaimd, onder het oude Pro-proefperiode-model. Het eerste jaar was gratis met het domein op naam van MCD. Aan het einde van het gratis jaar moet de werkruimte op een betaald Pro-abonnement zitten; het domein wordt dan gratis overgedragen aan de klant en verloopt als onderdeel van het Pro-abonnement, betaald door de werkruimte. Als de werkruimte stopt met Pro betalen na het gratis jaar, verloopt het domein en moet handmatig verlengd worden. Tijdens het trial-jaar kan de gebruiker optioneel een kaart opslaan via Stripe SetupIntent in de modal voor toekomstige automatische verlenging. Er komen geen nieuwe claims meer bij in deze tier; zie de overnamesectie voor de overgangsregeling hierboven.
 - **Paid-tier** -- Standaard domeinen gekocht voor de volle prijs. Verlenging wordt via de opgeslagen betaalmethode in rekening gebracht op de jaarlijkse cyclus. Als de betaling mislukt, wordt een handmatige-verlenging-melding verstuurd.
 - **Gratis-voor-het-leven-tier** -- Een klein aantal werkruimtes houdt Pro gratis en levenslange gratis domeinverlenging op basis van eerdere afspraken. Geen betaalmiddel nodig; verlenging wordt automatisch door het platform afgehandeld, waarbij MCD de wholesale-kosten draagt. Deze tier is gesloten en kan niet worden aangevraagd.
 
@@ -161,7 +172,7 @@ Het eligibility-eindpunt (`GET /api/domain-purchase/free-domain/eligibility`) re
 
 De geschiktheid wordt bepaald door harde voorwaarden die server-side worden gecontroleerd:
 
-- **Actieve Pro-werkruimte** -- de werkruimte moet op Pro zitten (trial of betaald). Werkruimtes op Free kunnen niet claimen.
+- **Betaald Pro-werkruimte** -- de werkruimte moet op *betaald* Pro zitten. Werkruimtes op Free kunnen niet claimen, en een Pro-proefperiode ook niet: die ziet het aanbod als preview en ontgrendelt de claim zodra de werkruimte overstapt naar betaald Pro. (Deze voorwaarde geldt voor nieuwe claims; bestaande claims van vóór de omschakeling vallen onder de overgangsregeling en zijn hier niet aan gebonden.)
 - **KVK vereist** -- de werkruimte moet een KVK-nummer gekoppeld hebben.
 - **Domein moet `.nl` zijn** -- de gratis actie geldt alleen voor de NL-extensie.
 - **Domein moet overeenkomen met de KVK-naam** -- het domein moet corresponderen met de geregistreerde statutaire naam of een handelsnaam.
