@@ -30,6 +30,20 @@ Das Angebotsformular ähnelt dem Rechnungsformular — wenn Sie wissen, wie man 
 
 Das Angebots-PDF wird der E-Mail als Anhang beigefügt, damit der Kunde es überprüfen kann.
 
+## Detailaktionen für Angebote
+
+Die Hauptaktion auf der Angebotsdetailseite richtet sich nach dem Angebotsstatus:
+
+- **Senden** — Verfügbar für Entwurfs- und gesendete Angebote, damit das Angebot den Kunden erreicht.
+- **In Rechnung umwandeln** — Verfügbar, sobald der Kunde das Angebot angenommen hat; damit erstellen Sie mit einem Klick eine Rechnung.
+- **Duplizieren / neue Version erstellen** — Verfügbar für abgelehnte oder abgelaufene Angebote, damit Sie sie schnell neu ausstellen können.
+
+Zusätzliche Aktionen finden sich im Overflow-Menü neben der Hauptaktion:
+
+- **PDF-Vorschau** — Zeigen Sie das Angebots-PDF im Vollbild an, bevor Sie es versenden.
+- **PDF herunterladen** — Laden Sie das Angebot als professionell formatiertes PDF-Dokument mit Ihrem Firmenlogo, Ihren Markenfarben und allen Angebotsdetails herunter.
+- **Angebot kopieren** — Erstellen Sie eine Kopie des bestehenden Angebots.
+
 ## Angebotsstatus
 
 | Status | Beschreibung |

@@ -57,6 +57,19 @@ Chaque facture dispose d'une page de detail affichant :
 
 ## Actions
 
+L'action principale sur la page de detail de la facture depend du statut de la facture :
+
+- **Envoyer** — Disponible pour les factures brouillon, envoyees et en retard. C'est la prochaine etape principale tant que la facture n'a pas encore atteint le client.
+- **Dupliquer** — Affiche pour les factures annulees afin de les recreer rapidement.
+- **Marquer comme payee** — Affiche lorsqu'un client signale un paiement, pour le confirmer au lieu de renvoyer la facture.
+
+Des actions supplementaires se trouvent dans le menu deroulant a cote de l'action principale :
+
+- **Telecharger le PDF** — Telechargez la facture sous forme de document PDF mis en forme professionnellement avec le logo de votre entreprise, les couleurs de votre marque et tous les details de la facture.
+- **Annuler** — Annulez une facture qui ne doit plus etre payee. Les factures annulees restent dans vos archives a des fins d'audit.
+- **Dupliquer** — Creez une copie d'une facture existante, utile pour la facturation recurrente au meme client.
+- **Envoyer un rappel** — Envoyez un rappel de paiement pour les factures en retard.
+
 ### Envoyer
 
 Envoyez la facture a votre client par e-mail. L'e-mail comprend :

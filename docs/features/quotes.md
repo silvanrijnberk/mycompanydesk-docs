@@ -30,6 +30,20 @@ The quote form is similar to the invoice form — if you know how to create an i
 
 The quote PDF is attached to the email for the customer to review.
 
+## Quote detail actions
+
+The top action on the quote detail page depends on the quote status:
+
+- **Send** — Available for draft and sent quotes, so the quote can reach the customer.
+- **Convert to Invoice** — Available once the customer has accepted the quote, turning it into an invoice with one click.
+- **Duplicate / Create new version** — Available for rejected or expired quotes so you can reissue them quickly.
+
+Additional actions live in the overflow menu next to the top action:
+
+- **Preview PDF** — View the quote PDF in full screen before sending.
+- **Download PDF** — Download the quote as a professionally formatted PDF document with your company logo, branding colors, and all quote details.
+- **Copy quote** — Create a copy of the existing quote.
+
 ## Quote statuses
 
 | Status | Description |

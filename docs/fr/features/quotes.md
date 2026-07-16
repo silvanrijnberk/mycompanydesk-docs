@@ -30,6 +30,20 @@ Le formulaire de devis est similaire au formulaire de facture -- si vous savez c
 
 Le PDF du devis est joint a l'e-mail pour que le client puisse l'examiner.
 
+## Actions sur la page de detail du devis
+
+L'action principale sur la page de detail du devis depend du statut du devis :
+
+- **Envoyer** — Disponible pour les devis brouillon et envoyes, pour que le devis puisse atteindre le client.
+- **Convertir en facture** — Disponible des que le client a accepte le devis, le transformant en facture en un clic.
+- **Dupliquer / creer une nouvelle version** — Disponible pour les devis refuses ou expires, pour les reemettre rapidement.
+
+Des actions supplementaires se trouvent dans le menu deroulant a cote de l'action principale :
+
+- **Apercu du PDF** — Consultez le PDF du devis en plein ecran avant de l'envoyer.
+- **Telecharger le PDF** — Telechargez le devis sous forme de document PDF mis en forme professionnellement avec le logo de votre entreprise, les couleurs de votre marque et tous les details du devis.
+- **Copier le devis** — Creez une copie du devis existant.
+
 ## Statuts des devis
 
 | Statut | Description |

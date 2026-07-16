@@ -57,6 +57,19 @@ Elke factuur heeft een detailpagina met:
 
 ## Acties
 
+De hoofdactie op de factuurdetailpagina hangt af van de factuurstatus:
+
+- **Versturen** — Beschikbaar voor concept-, verzonden en achterstallige facturen. Dit is de primaire volgende stap zolang de factuur de klant nog moet bereiken.
+- **Dupliceren** — Getoond bij geannuleerde facturen, zodat je ze snel opnieuw kunt aanmaken.
+- **Markeer als betaald** — Getoond wanneer een klant een betaling meldt, zodat je die kunt bevestigen in plaats van de factuur opnieuw te versturen.
+
+Extra acties zitten in het overflow-menu naast de hoofdactie:
+
+- **PDF downloaden** — Download de factuur als een professioneel opgemaakt PDF-document met je bedrijfslogo, huisstijlkleuren en alle factuurgegevens.
+- **Annuleren** — Annuleer een factuur die niet meer betaald hoeft te worden. Geannuleerde facturen blijven in je administratie voor controledoeleinden.
+- **Dupliceren** — Maak een kopie van een bestaande factuur, handig voor terugkerende facturatie aan dezelfde klant.
+- **Herinnering sturen** — Verstuur een betalingsherinnering voor achterstallige facturen.
+
 ### Versturen
 
 Verstuur de factuur per e-mail naar je klant. De e-mail bevat:
