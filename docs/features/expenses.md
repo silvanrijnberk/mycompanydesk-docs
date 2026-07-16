@@ -39,6 +39,10 @@ The setup wizard seeds an industry-tailored set on top of the eleven system defa
 
 When you're creating a new expense and you've typed a supplier name, the **Generate** button (sparkles icon, top right) runs an LLM prefill. It uses the supplier and any partial inputs to suggest a description, category, VAT treatment, amount and date. If the form's VAT rate still matches your workspace default, the prefill will overwrite it with what it finds on the receipt; otherwise it leaves your override alone. Review the result before saving — the prefill is a draft, not an autopilot.
 
+### From a template
+
+When creating a new expense, click **Start from template** (only shown when you have saved expense templates). Pick a template and the form fills itself in place with the saved supplier, category, amount and other data. Adjust anything you need, then click **Save**.
+
 ### From bank transactions
 
 When your [bank feed](/features/bank) is connected, categorised outgoing transactions are automatically turned into draft expenses. Each one carries the transaction's counterpart as supplier, the absolute amount as gross, the category's default VAT rate and treatment, and the transaction's booking date. Draft expenses first appear in the bank-feed review inbox, where you can confirm, edit, or reject them before they land in your books. See [reviewing auto-imported expenses](/features/bank#reviewing-auto-imported-expenses) for the full workflow.
