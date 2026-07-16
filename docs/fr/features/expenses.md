@@ -40,6 +40,10 @@ Utilisez le tiroir d'ajout rapide pour une saisie rapide de dépenses :
 3. Sélectionnez une catégorie rapide
 4. Enregistrez
 
+### A partir d'un modele
+
+Lors de la creation d'une nouvelle depense, cliquez sur **Demarrer a partir du modele** (affiche uniquement si vous avez des modeles de depense enregistres). Choisissez un modele et le formulaire se remplit directement avec le fournisseur, la categorie, le montant et les autres donnees enregistrees. Ajustez selon vos besoins, puis cliquez sur **Enregistrer**.
+
 ### Depuis les transactions bancaires
 
 Lorsque votre [flux bancaire](/fr/features/bank) est connecté, les transactions sortantes catégorisées sont automatiquement converties en dépenses provisoires. Chaque dépense reçoit la contrepartie comme fournisseur, le montant absolu comme brut, le taux de TVA et le traitement par défaut de la catégorie, et la date comptable de la transaction. Les dépenses provisoires apparaissent d'abord dans la boîte de réception d'examen du flux bancaire, où vous pouvez les confirmer, les modifier ou les rejeter avant qu'elles n'entrent dans votre comptabilité. Voir [examiner les dépenses importées automatiquement](/fr/features/bank#examiner-les-depenses-importees-automatiquement) pour le workflow complet.

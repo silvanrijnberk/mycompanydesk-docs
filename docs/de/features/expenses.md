@@ -40,6 +40,10 @@ Verwenden Sie die Schnellerfassungs-Schublade für schnelle Ausgabenerfassung:
 3. Wählen Sie eine Schnellkategorie
 4. Speichern
 
+### Aus einer Vorlage
+
+Wenn Sie eine neue Ausgabe erstellen, klicken Sie auf **Aus Vorlage starten** (nur sichtbar, wenn gespeicherte Ausgabenvorlagen vorhanden sind). Wählen Sie eine Vorlage aus und das Formular füllt sich direkt mit dem gespeicherten Lieferanten, der Kategorie, dem Betrag und den anderen Daten. Passen Sie nach Bedarf an und klicken Sie auf **Speichern**.
+
 ### Aus Banktransaktionen
 
 Wenn Ihr [Bankfeed](/de/features/bank) verbunden ist, werden kategorisierte ausgehende Transaktionen automatisch in Ausgabenentwürfe umgewandelt. Jede Ausgabe erhält die Gegenpartei als Lieferant, den absoluten Betrag als Brutto, den Standard-USt.-Satz und die Behandlung der Kategorie sowie das Buchungsdatum der Transaktion. Ausgabenentwürfe erscheinen zuerst im Prüf-Posteingang des Bankfeeds, wo Sie sie bestätigen, bearbeiten oder ablehnen können, bevor sie in Ihre Buchhaltung gelangen. Siehe [automatisch importierte Ausgaben prüfen](/de/features/bank#automatisch-importierte-ausgaben-prufen) für den vollständigen Ablauf.

@@ -40,6 +40,10 @@ Gebruik de snel-toevoegen-lade voor snelle uitgaveninvoer:
 3. Selecteer een snelle categorie
 4. Sla op
 
+### Vanuit een sjabloon
+
+Bij het aanmaken van een nieuwe uitgave klik je op **Vanuit sjabloon** (alleen zichtbaar als je opgeslagen uitgavesjablonen hebt). Kies een sjabloon en het formulier vult zich ter plekke met de opgeslagen leverancier, categorie, bedrag en andere gegevens. Pas aan waar nodig en klik op **Opslaan**.
+
 ### Van banktransacties
 
 Wanneer je [bankfeed](/nl/features/bank) is gekoppeld, worden gecategoriseerde uitgaande transacties automatisch omgezet naar conceptuitgaven. Elke uitgave krijgt de tegenpartij als leverancier, het absolute bedrag als bruto, het standaard BTW-tarief en de behandeling van de categorie, en de boekingsdatum van de transactie. Conceptuitgaven verschijnen eerst in de beoordelingsinbox van de bankfeed, waar je ze kunt bevestigen, bewerken of afwijzen voordat ze in je boekhouding komen. Zie [auto-importuitgaven beoordelen](/nl/features/bank#auto-importuitgaven-beoordelen) voor de volledige workflow.

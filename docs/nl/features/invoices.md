@@ -39,10 +39,10 @@ Voor snellere aanmaak:
 
 ### Vanuit een sjabloon
 
-1. Klik bij het aanmaken van een nieuwe factuur op **Sjabloon gebruiken**
-2. Selecteer een opgeslagen sjabloon
-3. Alle regelitems zijn vooraf ingevuld — pas aan waar nodig
-4. Sla op en verstuur
+Je kunt een nieuwe factuur vanuit een opgeslagen sjabloon starten op twee plekken:
+
+- In het **volledige factuurformulier** klik je op **Vanuit sjabloon** (alleen zichtbaar als je opgeslagen factuursjablonen hebt). Kies een sjabloon en het formulier vult zich ter plekke met de regelitems, klant en andere opgeslagen gegevens. Pas aan waar nodig en sla op en verstuur.
+- Vanuit de **snel-toevoegen-lade** klik je op **Sjabloon gebruiken**, selecteer je een opgeslagen sjabloon en worden alle regelitems vooraf ingevuld. Pas aan waar nodig en sla op en verstuur.
 
 ## Factuurdetails
 

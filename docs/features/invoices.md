@@ -39,10 +39,10 @@ For faster creation:
 
 ### From a template
 
-1. When creating a new invoice, click **Use Template**
-2. Select a saved template
-3. All line items are pre-filled — adjust as needed
-4. Save and send
+You can start a new invoice from a saved template in two places:
+
+- In the **full invoice form**, click **Start from template** (only shown when you have saved invoice templates). Pick a template, and the form fills itself in place with its line items, customer and other saved data. Adjust anything you need, then save and send.
+- From the **quick-add drawer**, click **Use Template**, select a saved template, and all line items are pre-filled. Adjust as needed, then save and send.
 
 ## Invoice details
 

@@ -39,10 +39,10 @@ Für eine schnellere Erstellung:
 
 ### Aus einer Vorlage
 
-1. Klicken Sie beim Erstellen einer neuen Rechnung auf **Vorlage verwenden**
-2. Wählen Sie eine gespeicherte Vorlage
-3. Alle Positionen sind vorausgefüllt — passen Sie sie nach Bedarf an
-4. Speichern und versenden
+Sie können eine neue Rechnung an zwei Stellen aus einer gespeicherten Vorlage starten:
+
+- Im **vollständigen Rechnungsformular** klicken Sie auf **Aus Vorlage starten** (nur sichtbar, wenn gespeicherte Rechnungsvorlagen vorhanden sind). Wählen Sie eine Vorlage aus und das Formular füllt sich direkt mit den Positionen, dem Kunden und den anderen gespeicherten Daten. Passen Sie nach Bedarf an und speichern und versenden Sie.
+- Aus der **Schnellerfassungs-Schublade** klicken Sie auf **Vorlage verwenden**, wählen Sie eine gespeicherte Vorlage aus und alle Positionen sind vorausgefüllt. Passen Sie nach Bedarf an und speichern und versenden Sie.
 
 ## Rechnungsdetails
 

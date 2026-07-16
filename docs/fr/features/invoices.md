@@ -39,10 +39,10 @@ Pour une creation plus rapide :
 
 ### A partir d'un modele
 
-1. Lors de la creation d'une nouvelle facture, cliquez sur **Utiliser un modele**
-2. Selectionnez un modele enregistre
-3. Toutes les lignes de facturation sont pre-remplies -- ajustez selon vos besoins
-4. Enregistrez et envoyez
+Vous pouvez commencer une nouvelle facture a partir d'un modele enregistre a deux endroits :
+
+- Dans le **formulaire de facturation complet**, cliquez sur **Demarrer a partir du modele** (affiche uniquement si vous avez des modeles de facture enregistres). Choisissez un modele et le formulaire se remplit directement avec ses lignes, son client et ses autres donnees enregistrees. Ajustez selon vos besoins, puis enregistrez et envoyez.
+- Dans le **tiroir d'ajout rapide**, cliquez sur **Utiliser un modele**, selectionnez un modele enregistre, et toutes les lignes de facturation sont pre-remplies. Ajustez selon vos besoins, puis enregistrez et envoyez.
 
 ## Details de la facture
 
