@@ -57,6 +57,19 @@ Jede Rechnung hat eine Detailseite, die zeigt:
 
 ## Aktionen
 
+Die Hauptaktion auf der Rechnungsdetailseite richtet sich nach dem Rechnungsstatus:
+
+- **Senden** — Verfügbar für Entwurfs-, gesendete und überfällige Rechnungen. Das ist die primäre nächste Schritt, solange die Rechnung den Kunden noch erreichen muss.
+- **Duplizieren** — Wird bei stornierten Rechnungen angezeigt, damit Sie sie schnell neu anlegen können.
+- **Als bezahlt markieren** — Wird angezeigt, wenn ein Kunde eine Zahlung meldet, damit Sie diese bestätigen können, anstatt die Rechnung erneut zu senden.
+
+Zusätzliche Aktionen finden sich im Overflow-Menü neben der Hauptaktion:
+
+- **PDF herunterladen** — Laden Sie die Rechnung als professionell formatiertes PDF-Dokument mit Ihrem Firmenlogo, Ihren Markenfarben und allen Rechnungsdetails herunter.
+- **Stornieren** — Stornieren Sie eine Rechnung, die nicht mehr bezahlt werden soll. Stornierte Rechnungen bleiben für Prüfungszwecke in Ihren Unterlagen.
+- **Duplizieren** — Erstellen Sie eine Kopie einer bestehenden Rechnung, nützlich für wiederkehrende Abrechnungen an denselben Kunden.
+- **Erinnerung senden** — Senden Sie eine Zahlungserinnerung für überfällige Rechnungen.
+
 ### Senden
 
 Senden Sie die Rechnung per E-Mail an Ihren Kunden. Die E-Mail enthält:

@@ -57,6 +57,19 @@ Each invoice has a detail page showing:
 
 ## Actions
 
+The top action on the invoice detail page depends on the invoice status:
+
+- **Send** — Available for draft, sent, and overdue invoices. This is the primary next step when the invoice still needs to reach the customer.
+- **Duplicate** — Shown for cancelled invoices so you can recreate them quickly.
+- **Mark as paid** — Shown when a customer reports a payment, letting you confirm it instead of re-sending the invoice.
+
+Additional actions live in the overflow menu next to the top action:
+
+- **Download PDF** — Download the invoice as a professionally formatted PDF document with your company logo, branding colors, and all invoice details.
+- **Cancel** — Cancel an invoice that should no longer be paid. Cancelled invoices remain in your records for auditing purposes.
+- **Duplicate** — Create a copy of an existing invoice, useful for recurring billing to the same customer.
+- **Send reminder** — Send a payment reminder for overdue invoices.
+
 ### Send
 
 Send the invoice to your customer via email. The email includes:

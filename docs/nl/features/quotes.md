@@ -30,6 +30,20 @@ Het offerteformulier lijkt op het factuurformulier — als je weet hoe je een fa
 
 De offerte-PDF wordt als bijlage bij de e-mail gevoegd zodat de klant deze kan bekijken.
 
+## Acties op de offertedetailpagina
+
+De hoofdactie op de offertedetailpagina hangt af van de offertestatus:
+
+- **Versturen** — Beschikbaar voor concept- en verzonden offertes, zodat de offerte de klant kan bereiken.
+- **Omzetten naar factuur** — Beschikbaar zodra de klant de offerte heeft geaccepteerd; hiermee maak je in één klik een factuur.
+- **Dupliceren / nieuwe versie maken** — Beschikbaar voor afgewezen of verlopen offertes, zodat je ze snel opnieuw kunt uitbrengen.
+
+Extra acties zitten in het overflow-menu naast de hoofdactie:
+
+- **PDF preview** — Bekijk de offerte-PDF op volledig scherm voordat je deze verstuurt.
+- **PDF downloaden** — Download de offerte als een professioneel opgemaakt PDF-document met je bedrijfslogo, huisstijlkleuren en alle offertegegevens.
+- **Offerte kopiëren** — Maak een kopie van de bestaande offerte.
+
 ## Offertestatussen
 
 | Status | Beschrijving |
