@@ -69,12 +69,7 @@ For nameserver-mode custom domains, the wizard runs `quickEnableInbox` after ver
 
 ### Custom domains
 
-> **Two regimes.** The free `.nl` domain program changed shape partway through MCD's history, and both versions are live in production today, gated by the `DOMAIN_FREE_CLAIM_PAID_ONLY` flag.
->
-> - **New claims (Path A).** The free domain is a reward for a paying Pro subscription, not a trial perk. A workspace must be on paid Pro to claim it. A Pro trial sees the offer as a preview and can claim once it upgrades to paid Pro. The domain is registered directly in the customer's name from day one, so there is no MCD-held phase and no buy-out for new claims.
-> - **Legacy claims (grandfathered).** Domains claimed before the cutover under the old `trial_free` model keep working the old way: MCD holds the domain during the trial, transfers it to the customer for free on Pro conversion, or lets the customer buy it out for a flat €15 on early exit. These terms remain valid for those existing domains until they convert or lapse. No new `trial_free` domains are created.
->
-> The grandfathered free-for-life tier (a small number of legacy workspaces with lifetime-free Pro and domain renewal) is unaffected by this change and is referenced separately below.
+The free `.nl` domain is a reward for a paid Pro subscription, not a trial perk. A workspace must be on paid Pro to claim it; a Pro trial sees the offer but can only submit the claim after upgrading to paid Pro. The domain is registered directly in the customer's name from day one, gated by the `DOMAIN_FREE_CLAIM_PAID_ONLY` flag, so there is no MCD-held phase. The first year is included, and the domain keeps renewing free as part of the Pro subscription for as long as the workspace stays on paid Pro.
 
 UI lives at `Website › Domein & SEO` -- the page is `/website?tab=domein`, rendering the `SettingsDomains` component. The older paths `/workspace/organization/company/address`, `/workspace/organization/domains`, and `/workspace/communication/domains` all redirect here.
 
@@ -125,34 +120,19 @@ Notable columns the app reads from:
 
 Domain renewal follows three paths depending on how the domain was acquired:
 
-1. **Free bundled renewal** (a new Path A claim while the workspace stays on paid Pro, a legacy Pro-converted trial-tier domain, or a legacy free-for-life arrangement): MCD absorbs the wholesale renewal cost. The domain auto-renews as long as the workspace stays on Pro. No payment method needed.
-2. **Paid auto-renewal** (paid purchase, or a legacy trial-tier domain whose workspace is not on Pro): Charged annually via the saved card. Works like any subscription renewal.
-3. **Manual renewal**: If a legacy trial-tier workspace falls off Pro AND has no saved card, the auto-renewal path skips it. The user sees a notification and can trigger a one-off payment via `POST /api/domains/renew/:domainId`, which creates a Stripe Embedded Checkout session for the renewal. This is the only way to keep a domain alive without an active subscription or saved card.
-
-#### Legacy trial-exit domain buy-out (grandfathered)
-
-<!-- TODO(source-missing): buy-out price €15 confirmation in sources/ -->
-
-This section applies only to domains claimed before the cutover to the paid-Pro-reward model, under the old `trial_free` regime. New claims are registered directly in the customer's name from day one, so there is no MCD-held phase to exit and no buy-out to offer: the customer already owns the domain.
-
-For a legacy domain, when a customer on a Pro trial decides to leave before converting to paid Pro, they have a third option for their free `.nl` domain: buy it out for a flat €15 (all-in, one-time). The buy-out flow (`DomainBuyoutModal.vue`) lets the customer pay via Stripe Embedded Checkout and receive full ownership. Once paid, the domain holder is transferred from MCD to the customer and the EPP (transfer) code is shown so the domain can be moved to any registrar.
-
-The buy-out price is a product price, not a transfer surcharge. MCD never charges for the transfer token itself once the customer is the registered holder. The distinction is documented in the internal legal memo `docs/legal/gratis-domein-voorwaarden.md` in the RichardTool repo.
-
-Database tables involved:
-
-- `domain_buyout_intents` — tracks legacy buy-out payment intents with Stripe PaymentIntent IDs and status.
+1. **Free bundled renewal** (the free `.nl` claim on paid Pro, or a legacy free-for-life arrangement): MCD absorbs the wholesale renewal cost. The domain auto-renews as long as the workspace stays on paid Pro. No payment method needed.
+2. **Paid auto-renewal** (paid purchase): Charged annually via the saved card. Works like any subscription renewal.
+3. **Manual renewal**: If a workspace with a free-claimed domain falls off paid Pro AND has no saved card, the auto-renewal path skips it. The user sees a notification and can trigger a one-off payment via `POST /api/domains/renew/:domainId`, which creates a Stripe Embedded Checkout session for the renewal. This is the only way to keep a domain alive without an active subscription or saved card.
 
 #### Transfer consequences
 
 Transferring a domain registered through MyCompanyDesk to another registrar has permanent consequences, enforced by the weekly OpenProvider status sync:
 
 - **Legacy free-for-life domains**: The free claim is deleted, and the workspace's internal lifetime-Pro grant is cancelled. The workspace becomes a regular paid customer. This is irreversible; the grant cannot be reclaimed.
-- **Legacy trial-tier / Pro-bundled domains** (claimed before the cutover): The bundled-free status is lost. The workspace can never claim another free domain (already enforced via the retained-claims list). Note that buying out the domain during the trial (see the legacy buy-out section above) is not a transfer — it is a holder handover that gives the customer ownership before any transfer happens, so the free-domain perk is preserved for the duration of the trial.
-- **New Path A domains** (claimed under the paid-Pro-reward model): There is no MCD-held phase to lose, since the domain is registered directly in the customer's name from day one, so a registrar transfer does not trigger the legacy revocation logic above. The free bundled renewal still only applies while the workspace stays on paid Pro; falling off Pro moves the domain onto the paid or manual renewal path described under Renewal lifecycle.
+- **Free `.nl` claim domains**: The domain is registered directly in the customer's name from day one, so there is no MCD-held phase to lose. Transferring away from MCD's registrar account ends the free bundled renewal and permanently blocks the workspace from claiming another free domain (enforced via the retained-claims list).
 - **Paid domains**: No perk revocation. The domain simply moves to `status = 'transferred_out'`.
 
-The claim modal warns about these consequences before a free-domain claim is submitted, and requires explicit acknowledgement from the user. For legacy-style claims, a "Held during trial" notice explains that the domain is registered under MCD during the trial and will be transferred to the customer for free on Pro conversion, or available for buy-out at €15 on early exit. That notice does not apply to new Path A claims: since those require paid Pro up front and register the domain directly in the customer's name, there is no MCD-held phase and nothing to buy out. Revocation details are recorded in the `domain_perk_revocations` audit table for support reference.
+The claim modal warns about these consequences before a free-domain claim is submitted, and requires explicit acknowledgement from the user. Revocation details are recorded in the `domain_perk_revocations` audit table for support reference.
 
 #### Buy or claim a domain
 
@@ -161,10 +141,9 @@ The domain purchase card (`DomainPurchaseCard.vue`, `domain-purchase.service.ts`
 - **Buy** -- Paid purchase via OpenProvider. The user enters a domain name, the card calls `GET /api/domain-purchase/quote` to check availability and pricing, and then opens the purchase modal. After collecting the registrant details, the modal calls `POST /api/domain-purchase/checkout-session` to create a Stripe payment session and mounts Stripe Embedded Checkout for the payment. Once complete, `POST /api/domain-purchase/finalize` registers the domain with OpenProvider and creates the `domains` row in nameserver mode, wired to Cloudflare.
 - **Free claim** -- Eligible workspaces on paid Pro can claim one `.nl` domain free of charge for the first year, as a reward for the paid subscription. A workspace still on the Pro trial sees the offer as a preview and cannot submit the claim yet; it can claim once it upgrades to paid Pro. The card calls `GET /api/domain-purchase/free-domain/eligibility` to check the workspace's claim tier and gate status. The modal collects the registrant details, and on submit calls `POST /api/domain-purchase/free-domain/claim`. The platform pays the first-year registration fee.
 
-Free claims differ in how they are registered and how the domain is renewed after the first year:
+Free claims differ from paid purchases in how they are registered and renewed:
 
-- **Pro tier (new claims)** -- Workspaces on paid Pro, claiming under the current `DOMAIN_FREE_CLAIM_PAID_ONLY` model. The domain is registered directly in the customer's name from day one, there is no MCD-held phase. The first year is free, and it keeps renewing free as part of the Pro subscription for as long as the workspace stays on paid Pro. If the workspace stops paying Pro, the domain falls onto the paid or manual renewal path described under Renewal lifecycle. There is no buy-out to negotiate, since the customer already holds the domain.
-- **Legacy trial tier (grandfathered)** -- Workspaces that claimed before the cutover, under the old Pro-trial model. The first year was free with the domain held by MCD. At the end of the free year the workspace must be on a paid Pro plan; the domain is then transferred to the customer for free and renews as part of the Pro subscription, paid by the workspace. If the workspace stops paying Pro after the free year, the domain lapses and must be renewed manually. During the trial year the user can optionally save a card via Stripe SetupIntent in the modal for future automatic renewal. No new claims are created in this tier; see the legacy buy-out section above.
+- **Free `.nl` claim** -- Workspaces on paid Pro. The domain is registered directly in the customer's name from day one; there is no MCD-held phase. The first year is free, and it keeps renewing free as part of the Pro subscription for as long as the workspace stays on paid Pro. If the workspace stops paying Pro, the domain falls onto the paid or manual renewal path described under Renewal lifecycle.
 - **Paid tier** -- Standard domains purchased at full price. Renewal is charged via the saved payment method on the annual cycle. If the charge fails, a manual-renewal notification is sent.
 - **Legacy free-for-life tier** -- A small number of legacy workspaces retain free Pro and lifetime-free domain renewal under earlier arrangements. No payment method is required; renewal is handled automatically by the platform, with MCD absorbing the wholesale cost. This tier is closed and cannot be requested.
 
@@ -172,7 +151,7 @@ The eligibility endpoint (`GET /api/domain-purchase/free-domain/eligibility`) re
 
 Eligibility is determined by a set of hard gates checked server-side:
 
-- **Paid Pro workspace** -- the workspace must be on *paid* Pro. Workspaces on Free cannot claim, and a Pro trial cannot claim either: it sees the offer as a preview and unlocks the claim once it converts to paid Pro. (This gate applies to new claims; grandfathered legacy claims made before the cutover are unaffected.)
+- **Paid Pro workspace** -- the workspace must be on *paid* Pro. Workspaces on Free cannot claim, and a Pro trial cannot claim either: it sees the offer as a preview and unlocks the claim once it converts to paid Pro.
 - **KVK required** -- the workspace must have a linked KVK number.
 - **Domain must be `.nl`** -- the free program only covers the NL TLD.
 - **Domain must match the KVK name** -- the domain must correspond to the registered legal name or a trade name.
@@ -188,7 +167,6 @@ New database tables introduced by this feature:
 
 - `domain_purchase_intents` -- tracks paid purchase intents with Stripe PaymentIntent IDs, registrant details, and purchase status.
 - `founder_domain_claims` -- tracks free-domain claims with eligibility snapshots, abuse scoring, and claim status.
-- `domain_buyout_intents` -- tracks trial-exit buy-out payment intents with Stripe PaymentIntent IDs and handover status.
 - `domain_registrar_columns` migration adds registrar-related columns to the existing `domains` table.
 
 ### Hosted website
