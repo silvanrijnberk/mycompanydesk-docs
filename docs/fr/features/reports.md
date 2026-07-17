@@ -1,5 +1,6 @@
 ---
 title: Rapports
+last_verified: 2026-07-16
 ---
 
 # Rapports
@@ -54,6 +55,28 @@ La vue **Impôt sur le revenu** estime l'impôt sur le revenu pour l'année choi
 ### Vous cherchez le rapport TVA ?
 
 La TVA dispose de sa propre page avec des synthèses trimestrielles et une aide à la déclaration. Consultez [Gestion de la TVA](/fr/features/vat).
+
+## Le cockpit de comptabilité pour le comptable
+
+Sous **Comptabilité**, le comptable accède à une page de synthèse qui montre la santé de l'exercice comptable en un coup d'œil. S'il y a un point à surveiller, une courte bande **Points d'attention** apparaît sous les chiffres principaux :
+
+- L'exercice comptable est encore provisoire après la fin de l'année civile (pas encore arrêté)
+- Le bilan n'est pas équilibré
+
+S'il n'y a rien à signaler, la bande reste masquée.
+
+## Écritures comptables manuelles (écriture de correction)
+
+Dans la vue du grand livre, utilisez le bouton **Nouvelle écriture** pour ouvrir le tiroir de saisie manuelle. Vous pouvez y ajuster une correction, une écriture mémorandum, un règlement de TVA ou une balance d'ouverture.
+
+Chaque écriture demande :
+
+- Une date
+- Une description
+- Un type d'écriture
+- Deux lignes ou plus, chacune avec un compte de grand livre et un montant au débit ou au crédit
+
+Le pied de page montre le total débit, le total crédit et la différence en cours. L'enregistrement n'est possible que lorsqu'au moins deux lignes complètes sont présentes, les deux totaux sont supérieurs à zéro et les débits et crédits sont équilibrés au centime près. Si une période est déjà clôturée, le serveur refuse l'écriture et affiche un message clair.
 
 ## Filtres
 
