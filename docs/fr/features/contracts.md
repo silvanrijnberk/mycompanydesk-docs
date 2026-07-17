@@ -48,6 +48,18 @@ Les contrats actifs avec un calendrier de recurrence generent automatiquement de
 
 Vous pouvez examiner et envoyer les factures generees manuellement, ou configurer l'envoi automatique.
 
+## Encaissement automatique
+
+Pour les contrats récurrents, vous pouvez encaisser automatiquement le montant facturé à partir du mandat de paiement enregistré du client, au lieu d'envoyer un lien de paiement par e-mail. Cela nécessite un prestataire de paiement connecté (Mollie ou Stripe) et un mandat valide du client.
+
+### Configurer l'encaissement automatique
+
+Sur la page de détail du contrat, ouvrez la carte **Encaissement automatique** et configurez le mandat. Une fois le mandat valide, activez le bouton bascule. Le système prélève alors chaque facture générée automatiquement.
+
+### Encaissement échoué
+
+Si un prélèvement échoue ou que le mandat n'est plus valide, vous recevez une notification « Encaissement automatique échoué ». La notification renvoie directement vers le contrat pour que vous puissiez reconnecter le mandat ou relancer le client.
+
 ## Liaison aux actifs
 
 Les contrats peuvent etre lies aux [objets/actifs](/fr/features/objects) pour la gestion locative :

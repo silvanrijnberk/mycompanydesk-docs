@@ -48,6 +48,18 @@ Actieve contracten met een herhalingsschema genereren automatisch facturen bij e
 
 Je kunt gegenereerde facturen handmatig bekijken en versturen, of automatische verzending instellen.
 
+## Automatische incasso
+
+Voor terugkerende contracten kun je het gefactureerde bedrag automatisch incasseren via het opgeslagen betaalmandaat van de klant, in plaats van een betaallink per e-mail te sturen. Hiervoor is een gekoppelde betaalprovider (Mollie of Stripe) en een geldig mandaat van de klant nodig.
+
+### Automatische incasso instellen
+
+Op de contractdetailpagina open je de kaart **Automatische incasso** en stel je het mandaat in. Zodra het mandaat geldig is, zet je de schakelaar aan. Het systeem incasseert dan elke gegenereerde factuur automatisch.
+
+### Mislukt incasso
+
+Als een incasso mislukt of het mandaat niet meer geldig is, ontvang je een melding 'Automatische incasso mislukt'. De melding linkt rechtstreeks naar het contract, zodat je het mandaat opnieuw kunt koppelen of contact kunt opnemen met de klant.
+
 ## Koppelen aan objecten
 
 Contracten kunnen worden gekoppeld aan [objecten/activa](/nl/features/objects) voor verhuurbeheer:

@@ -48,6 +48,18 @@ Aktive Verträge mit einem Wiederholungsplan generieren automatisch Rechnungen i
 
 Sie können generierte Rechnungen manuell überprüfen und versenden oder den automatischen Versand konfigurieren.
 
+## Automatisches Einziehen
+
+Bei wiederkehrenden Verträgen können Sie den berechneten Betrag automatisch über das hinterlegte Zahlungsmandat des Kunden einziehen, anstatt einen Zahlungslink per E-Mail zu senden. Dafür benötigen Sie einen verbundenen Zahlungsanbieter (Mollie oder Stripe) und ein gültiges Mandat des Kunden.
+
+### Automatisches Einziehen einrichten
+
+Öffnen Sie auf der Vertragsdetailseite die Karte **Automatisches Einziehen** und richten Sie das Mandat ein. Sobald das Mandat gültig ist, schalten Sie den Toggle um. Das System belastet dann jede generierte Rechnung automatisch.
+
+### Fehlgeschlagene Belastung
+
+Wenn eine Belastung fehlschlägt oder das Mandat nicht mehr gültig ist, erhalten Sie eine Benachrichtigung „Automatisches Einziehen fehlgeschlagen“. Die Benachrichtigung verlinkt direkt auf den Vertrag, damit Sie das Mandat erneut verbinden oder den Kunden kontaktieren können.
+
 ## Verknüpfung mit Vermögenswerten
 
 Verträge können mit [Objekten/Vermögenswerten](/de/features/objects) für die Mietverwaltung verknüpft werden:

@@ -48,6 +48,18 @@ Active contracts with a recurrence schedule automatically generate invoices at e
 
 You can review and send generated invoices manually, or configure auto-sending.
 
+## Automatic collection
+
+For recurring contracts you can collect the billed amount automatically from the customer's stored payment mandate instead of sending a payment link by email. This requires a connected payment provider (Mollie or Stripe) and a valid customer mandate.
+
+### Setting up automatic collection
+
+On the contract detail page, open the **Automatic collection** card and set up the mandate. Once the mandate is valid, turn the toggle on. The system then charges each generated invoice automatically.
+
+### Failed collection
+
+If a charge fails or the mandate is no longer valid, you receive an "Automatic collection failed" notification. The notification links directly to the contract so you can reconnect the mandate or follow up with the customer.
+
 ## Linking to assets
 
 Contracts can be linked to [objects/assets](/features/objects) for rental management:
