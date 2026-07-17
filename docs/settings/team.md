@@ -1,6 +1,6 @@
 ---
 title: Access & accountant
-last_verified: 2026-07-02
+last_verified: 2026-07-16
 ---
 
 # Access & accountant
@@ -52,6 +52,14 @@ A separate list for external accountants, free on every plan. Your accountant ca
 | **Revoked** | Access removed (can be restored later) |
 
 Admin actions per row: **Invite accountant**, **Manage access** drawer, **Remove**.
+
+## Acting as accountant
+
+When an accountant accepts an invitation or switches into your workspace from their own account, the app shows a banner at the top of the screen:
+
+> "You are working in [client]'s administration as an accountant."
+
+The banner also contains a **Switch back to own workspace** action. It is visible only to that accountant and is a reminder that their changes happen in your books, not in their own.
 
 ## Roles
 
