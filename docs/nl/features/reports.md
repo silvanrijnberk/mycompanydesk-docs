@@ -1,5 +1,6 @@
 ---
 title: Rapporten
+last_verified: 2026-07-16
 ---
 
 # Rapporten
@@ -54,6 +55,28 @@ De weergave **Inkomstenbelasting** maakt een schatting van de inkomstenbelasting
 ### Op zoek naar het BTW-rapport?
 
 BTW heeft een eigen pagina met kwartaaloverzichten en aangiftehulp. Zie [BTW-beheer](/nl/features/vat).
+
+## Het Boekhouding-overzicht voor de boekhouder
+
+Onder **Boekhouding** krijgt de boekhouder een overzichtspagina die de gezondheid van het boekjaar in een oogopslag toont. Is er iets om op te letten, dan verschijnt er onder de hoofdcijfers een korte rij **Aandachtspunten**:
+
+- Het boekjaar is nog een concept na afloop van het kalenderjaar (nog niet vastgesteld)
+- De balans is niet in evenwicht
+
+Als er niets te melden is, blijft de rij verborgen.
+
+## Handmatige grootboekboekingen (correctieboeking)
+
+In de grootboekweergave maak je met de knop **Nieuwe boeking** een handmatige boeking aan. Je kunt daarmee een correctie, een memoriaalboeking, een BTW-afdracht of een beginbalans invoeren.
+
+Elke boeking vraagt om:
+
+- Een datum
+- Een omschrijving
+- Een boekingssoort
+- Twee of meer regels, elk met een grootboekrekening en een bedrag aan debet- of creditzijde
+
+In de onderste balk zie je het lopende debet-totaal, credit-totaal en het verschil. Opslaan wordt pas mogelijk als er minstens twee complete regels zijn, beide totalen boven nul liggen en debet en credit tot op de cent in evenwicht zijn. Is een periode al afgesloten, dan blokkeert de server de boeking en krijg je een duidelijke melding.
 
 ## Filters
 

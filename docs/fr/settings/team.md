@@ -1,6 +1,6 @@
 ---
 title: "Accès et comptable"
-last_verified: 2026-07-02
+last_verified: 2026-07-16
 ---
 
 # Accès et comptable
@@ -52,6 +52,14 @@ Une liste séparée pour les comptables externes, gratuite sur tous les plans. V
 | **Révoqué** | Accès retiré (peut être restauré plus tard) |
 
 Actions administrateur par ligne : **Inviter le comptable**, le panneau **Gérer l'accès** et **Supprimer**.
+
+## Agir en tant que comptable
+
+Quand un comptable accepte une invitation ou bascule dans votre espace de travail depuis son propre compte, l'application affiche une bannière en haut de l'écran :
+
+> « Vous travaillez dans la comptabilité de [client] en tant que comptable. »
+
+La bannière contient aussi l'action **Retour à mon propre espace de travail**. Seul ce comptable la voit ; elle rappelle que ses modifications s'appliquent à votre comptabilité, pas à la sienne.
 
 ## Rôles
 

@@ -270,19 +270,19 @@ function sidebarFR() {
         { text: 'Suivi du temps', link: '/fr/features/time-registration' },
         { text: 'Rapports', link: '/fr/features/reports' },
         { text: 'Gestion de la TVA', link: '/fr/features/vat' },
-        { text: 'Domaines, site web et boîte de réception', link: '/fr/features/domains-website-inbox' },
+        { text: 'Domaines, site web & boîte mail', link: '/fr/features/domains-website-inbox' },
       ],
     },
     {
       text: 'Paramètres',
       collapsed: false,
       items: [
-        { text: 'Aperçu des paramètres', link: '/fr/settings/' },
-        { text: "Paramètres de l'entreprise", link: '/fr/settings/company' },
+        { text: 'Vue d\'ensemble des paramètres', link: '/fr/settings/' },
+        { text: 'Paramètres de l\'entreprise', link: '/fr/settings/company' },
         { text: 'Intégration e-mail', link: '/fr/settings/email' },
-        { text: 'Conception des PDF', link: '/fr/settings/pdf' },
-        { text: "Accès et comptable", link: '/fr/settings/team' },
-        { text: 'Abonnement & Forfaits', link: '/fr/settings/billing' },
+        { text: 'Design PDF', link: '/fr/settings/pdf' },
+        { text: 'Accès et comptable', link: '/fr/settings/team' },
+        { text: 'Abonnement et forfaits', link: '/fr/settings/billing' },
       ],
     },
     {
@@ -291,7 +291,7 @@ function sidebarFR() {
       items: [
         { text: 'Paramètres personnels', link: '/fr/account/profile' },
         { text: 'Sécurité', link: '/fr/account/security' },
-        { text: 'Import & Export de données', link: '/fr/account/data' },
+        { text: 'Import et export de données', link: '/fr/account/data' },
         { text: 'Cookies et analytics', link: '/fr/account/cookies-tracking' },
       ],
     },
@@ -299,7 +299,7 @@ function sidebarFR() {
       text: 'FAQ',
       collapsed: true,
       items: [
-        { text: 'Toutes les FAQ', link: '/fr/faq/' },
+        { text: 'Toutes les entrées FAQ', link: '/fr/faq/' },
       ],
     },
     {
@@ -308,8 +308,8 @@ function sidebarFR() {
       items: [
         { text: 'Portail client', link: '/fr/advanced/customer-portal' },
         { text: 'Constructeur de site', link: '/fr/advanced/business-page' },
-        { text: 'Fonctions IA', link: '/fr/advanced/ai-features' },
-        { text: 'Numérisation de reçus', link: '/fr/advanced/receipt-scanning' },
+        { text: 'Fonctionnalités IA', link: '/fr/advanced/ai-features' },
+        { text: 'Scan de reçus', link: '/fr/advanced/receipt-scanning' },
         { text: 'Intégration API', link: '/fr/advanced/api' },
         { text: 'Raccourcis clavier', link: '/fr/advanced/keyboard-shortcuts' },
       ],

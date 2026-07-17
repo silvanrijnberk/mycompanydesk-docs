@@ -1,6 +1,6 @@
 ---
 title: Toegang en boekhouder
-last_verified: 2026-07-02
+last_verified: 2026-07-16
 ---
 
 # Toegang en boekhouder
@@ -52,6 +52,14 @@ Een aparte lijst voor externe boekhouders, gratis op elk abonnement. Je boekhoud
 | **Ingetrokken** | Toegang verwijderd (kan later hersteld worden) |
 
 Adminacties per rij: **Boekhouder uitnodigen**, het paneel **Toegang beheren** en **Verwijderen**.
+
+## Handelen als boekhouder
+
+Wanneer een boekhouder je uitnodiging accepteert of in je werkruimte schakelt vanuit zijn eigen account, toont de app bovenaan het scherm een banner:
+
+> "Je werkt in de administratie van [klant] als boekhouder."
+
+De banner bevat ook de actie **Terug naar eigen werkruimte**. Alleen die boekhouder ziet de banner; het is een reminder dat zijn wijzigingen in jouw administratie gebeuren, niet in die van hem of haarzelf.
 
 ## Rollen
 

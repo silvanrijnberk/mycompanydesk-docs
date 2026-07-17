@@ -1,6 +1,6 @@
 ---
 title: Zugang und Steuerberater
-last_verified: 2026-07-02
+last_verified: 2026-07-16
 ---
 
 # Zugang und Steuerberater
@@ -52,6 +52,14 @@ Eine separate Liste für externe Steuerberater, in jedem Tarif kostenlos. Ihr St
 | **Widerrufen** | Zugang entfernt (kann später wiederhergestellt werden) |
 
 Admin-Aktionen pro Zeile: **Steuerberater einladen**, das Panel **Zugang verwalten** und **Entfernen**.
+
+## Als Steuerberater arbeiten
+
+Wenn ein Steuerberater eine Einladung annimmt oder von seinem eigenen Konto in Ihren Arbeitsbereich wechselt, zeigt die App oben am Bildschirm einen Banner:
+
+> "Sie arbeiten in der Buchhaltung von [Kunde] als Steuerberater."
+
+Der Banner enthält auch die Aktion **Zurück zum eigenen Arbeitsbereich**. Nur dieser Steuerberater sieht ihn; er erinnert daran, dass seine Änderungen in Ihrer Buchhaltung geschehen, nicht in seiner eigenen.
 
 ## Rollen
 

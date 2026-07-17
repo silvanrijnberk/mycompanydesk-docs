@@ -1,5 +1,6 @@
 ---
 title: Reports
+last_verified: 2026-07-16
 ---
 
 # Reports
@@ -54,6 +55,28 @@ The **Income tax** view estimates the income tax for the selected year: gross pr
 ### Looking for the VAT report?
 
 VAT has its own dedicated page with quarterly overviews and filing support. See [VAT Management](/features/vat).
+
+## The Boekhouding cockpit (accountant overview)
+
+Under **Boekhouding** the accountant gets an overview page that shows the health of the ledger year at a glance. If there is something to flag, a small **Attention points** strip appears below the headline numbers:
+
+- The year is still a draft past its own calendar year (not yet finalised)
+- The balance sheet is not in balance
+
+The strip is quiet when there is nothing to report.
+
+## Manual ledger entries (correctieboeking)
+
+When you are in the general ledger view, use the **New booking** button to open the manual-entry drawer. You can add a correction, a memorial entry, a VAT settlement, or an opening balance.
+
+Each entry needs:
+
+- A date
+- A description
+- A booking type
+- Two or more lines, each with a ledger account and either a debit or a credit amount
+
+The footer shows the running debit total, credit total, and the difference. Save is only enabled when at least two complete lines are present, the totals are greater than zero, and the debit and credit sides balance to the cent. If a period is already closed, the server returns a clear message and the booking is blocked.
 
 ## Filters
 
