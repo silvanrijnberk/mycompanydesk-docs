@@ -1,5 +1,6 @@
 ---
 title: Berichte
+last_verified: 2026-07-16
 ---
 
 # Berichte
@@ -54,6 +55,28 @@ Die Ansicht **Einkommensteuer** schätzt die Einkommensteuer für das gewählte 
 ### Sie suchen den USt.-Bericht?
 
 Die Umsatzsteuer hat eine eigene Seite mit Quartalsübersichten und Unterstützung bei der Meldung. Siehe [USt.-Verwaltung](/de/features/vat).
+
+## Das Buchhaltung-Cockpit für den Steuerberater
+
+Unter **Buchhaltung** bekommt der Steuerberater eine Übersichtsseite, die die Gesundheit des Geschäftsjahres auf einen Blick zeigt. Gibt es etwas zu beachten, erscheint unter den Hauptzahlen ein kurzer Hinweisblock **Auffälligkeiten**:
+
+- Das Geschäftsjahr ist noch ein Entwurf nach Ablauf des Kalenderjahrs (noch nicht festgeschrieben)
+- Die Bilanz ist nicht ausgeglichen
+
+Ist nichts zu melden, bleibt der Block verborgen.
+
+## Manuelle Hauptbuchbuchungen (Korrekturbuchung)
+
+In der Hauptbuchansicht öffnen Sie mit der Schaltfläche **Neue Buchung** eine Erfassungsmaske. Damit erfassen Sie eine Korrektur, eine Memorialbuchung, eine USt.-Verrechnung oder eine Eröffnungsbilanz.
+
+Jeder Eintrag benötigt:
+
+- Ein Datum
+- Eine Beschreibung
+- Eine Buchungsart
+- Zwei oder mehr Zeilen, jede mit einem Hauptbuchkonto und einem Betrag auf Soll- oder Habenseite
+
+In der Fußzeile sehen Sie die laufenden Soll- und Habensummen sowie die Differenz. Speichern ist erst möglich, wenn mindestens zwei vollständige Zeilen vorhanden sind, beide Summen größer als null sind und Soll und Haben auf den Cent genau ausgeglichen sind. Ist ein Zeitraum bereits abgeschlossen, blockiert der Server den Eintrag und zeigt eine eindeutige Meldung.
 
 ## Filter
 
