@@ -21,24 +21,25 @@ Arbeitsbereiche mit einer solchen Vereinbarung sind in jeder Hinsicht normale Pr
 
 ## Tarife
 
-MyCompanyDesk hat zwei kostenpflichtige Tarife plus einen Gratis-Status, der nur für abgelaufene, gekündigte oder testphasen-abgelaufene Arbeitsbereiche existiert. Gratis wird bei der Anmeldung nicht angeboten; neue Kunden erhalten eine 60-tägige Pro-Testphase.
+MyCompanyDesk hat einen Gratis-Tarif und zwei kostenpflichtige Tarife. Gratis ist ein eigenständiges Produkt, das bei der Anmeldung angeboten wird und dauerhaft verfügbar bleibt. Neue Kunden erhalten eine 60-tägige Pro-Testphase; ein Arbeitsbereich, der nicht umsteigt, landet auf Gratis.
 
 | Tarif | Monatlich | Jährlich | Beschreibung |
 |---|---|---|---|
+| **Gratis** | 0,00 EUR | 0,00 EUR | Beginnen Sie mit der Rechnungsstellung und stellen Sie Ihre Website online, mit einem kleinen MyCompanyDesk-Hinweis auf Ihren Dokumenten |
 | **Starter** | 10,00 EUR | 100,00 EUR | Alles für Ihre Arbeit: Rechnungen, Angebote, Ausgaben, Stunden und Projekte, auf Ihrer eigenen Seite |
 | **Pro** | 25,00 EUR | 250,00 EUR | Lassen Sie Ihr Unternehmen wachsen: eigene Domain und Website, geschäftliche Inbox, Bankverbindung, Teamzugang, API und mehr |
 
 Alle Preise verstehen sich zuzüglich 21% niederländischer Mehrwertsteuer, die beim Checkout hinzugefügt wird. Die App kennzeichnet Preise mit "excl. btw" (exkl. MwSt.); als Unternehmen holen Sie sich diese Steuer als Vorsteuer zurück. Der Jahrespreis entspricht zehn Monatszahlungen, jährliche Zahlung schenkt Ihnen also zwei Monate.
 
-Pro ist der hervorgehobene (empfohlene) Tarif in der Auswahl. Der Gratis-Status existiert als Auffangzone für abgelaufene und historische Konten, ist aber auf der Preisseite und im Anmeldeprozess ausgeblendet.
+Pro ist der hervorgehobene (empfohlene) Tarif in der Auswahl. Gratis erscheint auf der Preisseite und im Anmeldeprozess neben den kostenpflichtigen Tarifen.
 
 ### Was jeder Tarif enthält
 
-Funktionen mit Nutzungslimits (monatliche Limits):
+Funktionen mit Nutzungslimits (monatliche Limits, soweit nicht anders angegeben):
 
 | Metrik | Gratis | Starter | Pro |
 |---|---|---|---|
-| Erstellte Rechnungen | 5 | unbegrenzt | unbegrenzt |
+| Erstellte Rechnungen | 10 für den Start, danach 2/Monat | unbegrenzt | unbegrenzt |
 | Erstellte Ausgaben | 10 | unbegrenzt | unbegrenzt |
 | Erstellte Angebote | 3 | unbegrenzt | unbegrenzt |
 | Speicher | 100 MB | 2 GB | unbegrenzt |
@@ -50,6 +51,8 @@ Funktionen mit Nutzungslimits (monatliche Limits):
 | Bankverbindungen | 0 | 0 | 3 |
 
 Hinweis: KI-Limits gelten monatlich, nicht täglich. Sie werden am Ersten jedes Kalendermonats zurückgesetzt.
+
+Das Gratis-Rechnungskontingent ist kumulativ und nicht monatlich: die ersten 10 Rechnungen sind insgesamt gratis, nicht 10 pro Monat. Danach kann ein Gratis-Arbeitsbereich weiterhin 2 Rechnungen pro Monat erstellen, damit Sie nie komplett blockiert sind, bezahlt zu werden. Bereits erstellte Rechnungen bleiben jederzeit sichtbar und exportierbar; nur das Erstellen neuer Rechnungen ist begrenzt.
 
 Funktionen pro Tarif:
 
@@ -70,8 +73,8 @@ Funktionen pro Tarif:
 | Individuelles Branding | nein | ja | ja |
 | Sprachwerkzeuge | nein | ja | ja |
 | Beschreibungsanreicherung | nein | ja | ja |
-| Öffentliche Unternehmensseite | nein | ja | ja |
-| Firmen-Subdomain und Stilvorlagen | nein | ja | ja |
+| Öffentliche Unternehmensseite | ja | ja | ja |
+| Firmen-Subdomain und Stilvorlagen | ja | ja | ja |
 | Teamzugang (unbegrenzt viele Personen) | nein | nein | ja |
 | Rechnungen und Angebote ohne MyCompanyDesk-Hinweis | nein | ja | ja |
 | Erweiterte Berichte | nein | nein | ja |

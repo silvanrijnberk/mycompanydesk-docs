@@ -21,24 +21,25 @@ Werkruimtes met zo'n afspraak zijn in alle opzichten gewone Pro-klanten: dezelfd
 
 ## Abonnementen
 
-MyCompanyDesk heeft twee betaalde abonnementen plus een Gratis-status die alleen bestaat voor verlopen, opgezegde of proefperiode-verlopen werkruimtes. Gratis wordt niet aangeboden bij aanmelding; nieuwe klanten krijgen een Pro-proefperiode van 60 dagen.
+MyCompanyDesk heeft een Gratis-abonnement en twee betaalde abonnementen. Gratis is een zelfstandig product: je kunt ermee starten en het blijft beschikbaar zolang je wilt. Nieuwe klanten krijgen een Pro-proefperiode van 60 dagen; een werkruimte die niet overstapt, belandt op Gratis.
 
 | Abonnement | Maandelijks | Jaarlijks | Omschrijving |
 |---|---|---|---|
+| **Gratis** | € 0,00 | € 0,00 | Start met factureren en zet je website online, met een kleine MyCompanyDesk-vermelding op je documenten |
 | **Starter** | € 10,00 | € 100,00 | Alles om je werk te doen: facturen, offertes, uitgaven, uren en projecten, op je eigen pagina |
 | **Pro** | € 25,00 | € 250,00 | Laat je bedrijf groeien: eigen domein en website, zakelijke inbox, bankkoppeling, teamtoegang, API en meer |
 
 Alle prijzen zijn exclusief 21% btw, die bij het afrekenen wordt toegevoegd. De app toont prijzen als "excl. btw"; als ondernemer vorder je deze btw terug als voorbelasting. De jaarprijs staat gelijk aan tien maandbetalingen, dus jaarlijks betalen geeft je twee maanden gratis.
 
-Pro is het uitgelichte (aanbevolen) abonnement in de kiezer. De Gratis-status bestaat als landingszone voor verlopen en historische accounts, maar is verborgen op de prijzenpagina en in het aanmeldproces.
+Pro is het uitgelichte (aanbevolen) abonnement in de kiezer. Gratis staat op de prijzenpagina en in het aanmeldproces naast de betaalde abonnementen.
 
 ### Wat elk abonnement bevat
 
-Functies met verbruikslimieten (maandelijkse limieten):
+Functies met verbruikslimieten (maandelijkse limieten, tenzij anders aangegeven):
 
 | Meting | Gratis | Starter | Pro |
 |---|---|---|---|
-| Facturen aangemaakt | 5 | onbeperkt | onbeperkt |
+| Facturen aangemaakt | 10 om te starten, daarna 2/maand | onbeperkt | onbeperkt |
 | Uitgaven aangemaakt | 10 | onbeperkt | onbeperkt |
 | Offertes aangemaakt | 3 | onbeperkt | onbeperkt |
 | Opslag | 100 MB | 2 GB | onbeperkt |
@@ -50,6 +51,8 @@ Functies met verbruikslimieten (maandelijkse limieten):
 | Bankkoppelingen | 0 | 0 | 3 |
 
 Let op: AI-limieten zijn maandelijks, niet dagelijks. Ze worden gereset op de eerste van elke kalendermaand.
+
+De Gratis-factuurlimiet is cumulatief, niet maandelijks: de eerste 10 facturen zijn in totaal gratis, niet 10 per maand. Daarna kun je als Gratis-werkruimte nog steeds 2 facturen per maand maken, zodat je nooit helemaal geblokkeerd raakt om betaald te worden. Facturen die je al hebt aangemaakt, blijven altijd zichtbaar en exporteerbaar; alleen het aanmaken van nieuwe facturen is gelimiteerd.
 
 Functies per abonnement:
 
@@ -70,8 +73,8 @@ Functies per abonnement:
 | Eigen huisstijl | nee | ja | ja |
 | Taalopties | nee | ja | ja |
 | Omschrijvingsverrijking | nee | ja | ja |
-| Openbare bedrijfspagina | nee | ja | ja |
-| Bedrijfssubdomein en stijlpresets | nee | ja | ja |
+| Openbare bedrijfspagina | ja | ja | ja |
+| Bedrijfssubdomein en stijlpresets | ja | ja | ja |
 | Teamtoegang (onbeperkt aantal mensen) | nee | nee | ja |
 | Facturen en offertes zonder MyCompanyDesk-vermelding | nee | ja | ja |
 | Geavanceerde rapporten | nee | nee | ja |

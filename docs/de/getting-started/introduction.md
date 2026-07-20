@@ -27,25 +27,26 @@ Rechnungen, Angebote und E-Mails können ebenfalls auf Niederländisch, Englisch
 
 ## Tarife
 
-MyCompanyDesk hat zwei kostenpflichtige Tarife: Starter und Pro. Neue Kunden erhalten eine 60-tägige Pro-Testphase.
+MyCompanyDesk hat einen Gratis-Tarif und zwei kostenpflichtige Tarife: Starter und Pro. Neue Kunden erhalten eine 60-tägige Pro-Testphase; wer nicht umsteigt, bleibt auf Gratis.
 
-| Funktion | Starter | Pro |
-|---|---|---|
-| Rechnungen, Angebote, Kunden | Unbegrenzt | Unbegrenzt |
-| Ausgabenverfolgung | Vollständig | Vollständig |
-| Belegscanner | Ja (30 Scans/Monat) | Ja (200 Scans/Monat) |
-| KI-Vorschläge | Ja | Ja |
-| Individuelles Branding | Ja | Ja |
-| Zeiterfassung, Sprachwerkzeuge | Ja | Ja |
-| Öffentliche Unternehmensseite | Ja | Ja |
-| Verträge und Projekte | Ja | Ja |
-| Berichte und CSV/Excel-Export | Ja | Ja |
-| Teamzugang | Nur Sie | Unbegrenzt viele Personen |
-| Geschäftliche Mailbox auf Ihrer Domain | - | Ja |
-| Bankverbindungen | - | Bis zu 3 |
-| Multi-Domain, eigene Domain-Routing | - | Ja |
-| Erweiterte Berichte, Prioritäts-Support | - | Ja |
-| API-Zugang, Webhooks | - | Ja |
+| Funktion | Gratis | Starter | Pro |
+|---|---|---|---|
+| Rechnungen | 10 für den Start, danach 2/Monat | Unbegrenzt | Unbegrenzt |
+| Angebote | 3/Monat | Unbegrenzt | Unbegrenzt |
+| Ausgabenverfolgung | 10/Monat | Vollständig | Vollständig |
+| Belegscanner | Ja (3 Scans/Monat) | Ja (30 Scans/Monat) | Ja (200 Scans/Monat) |
+| KI-Vorschläge | Ja | Ja | Ja |
+| Individuelles Branding | - | Ja | Ja |
+| Zeiterfassung, Sprachwerkzeuge | - | Ja | Ja |
+| Öffentliche Unternehmensseite | Ja | Ja | Ja |
+| Verträge und Projekte | - | Ja | Ja |
+| Berichte und CSV/Excel-Export | - | Ja | Ja |
+| Teamzugang | Nur Sie | Nur Sie | Unbegrenzt viele Personen |
+| Geschäftliche Mailbox auf Ihrer Domain | - | - | Ja |
+| Bankverbindungen | - | - | Bis zu 3 |
+| Multi-Domain, eigene Domain-Routing | - | - | Ja |
+| Erweiterte Berichte, Prioritäts-Support | - | - | Ja |
+| API-Zugang, Webhooks | - | - | Ja |
 
 ## Hilfe erhalten
 

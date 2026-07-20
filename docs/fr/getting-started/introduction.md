@@ -27,25 +27,26 @@ Les factures, devis et e-mails peuvent également être envoyés en néerlandais
 
 ## Abonnements
 
-MyCompanyDesk propose deux plans payants : Starter et Pro. Les nouveaux clients bénéficient d'un essai Pro de 60 jours.
+MyCompanyDesk propose un plan Gratuit et deux plans payants : Starter et Pro. Les nouveaux clients bénéficient d'un essai Pro de 60 jours ; ceux qui ne convertissent pas restent sur Gratuit.
 
-| Fonctionnalité | Starter | Pro |
-|---|---|---|
-| Factures, devis, clients | Illimité | Illimité |
-| Suivi des dépenses | Complet | Complet |
-| Numérisation de reçus | Oui (30 scans/mois) | Oui (200 scans/mois) |
-| Suggestions IA | Oui | Oui |
-| Image de marque personnalisée | Oui | Oui |
-| Saisie de temps, outils linguistiques | Oui | Oui |
-| Page entreprise publique | Oui | Oui |
-| Contrats et projets | Oui | Oui |
-| Rapports et export CSV/Excel | Oui | Oui |
-| Accès équipe | Vous seul | Personnes illimitées |
-| Boîte mail professionnelle sur votre domaine | - | Oui |
-| Connexions bancaires | - | Jusqu'à 3 |
-| Multi-domaine, routage de domaine personnalisé | - | Oui |
-| Rapports avancés, support prioritaire | - | Oui |
-| Accès API, webhooks | - | Oui |
+| Fonctionnalité | Gratuit | Starter | Pro |
+|---|---|---|---|
+| Factures | 10 pour démarrer, puis 2/mois | Illimité | Illimité |
+| Devis | 3/mois | Illimité | Illimité |
+| Suivi des dépenses | 10/mois | Complet | Complet |
+| Numérisation de reçus | Oui (3 scans/mois) | Oui (30 scans/mois) | Oui (200 scans/mois) |
+| Suggestions IA | Oui | Oui | Oui |
+| Image de marque personnalisée | - | Oui | Oui |
+| Saisie de temps, outils linguistiques | - | Oui | Oui |
+| Page entreprise publique | Oui | Oui | Oui |
+| Contrats et projets | - | Oui | Oui |
+| Rapports et export CSV/Excel | - | Oui | Oui |
+| Accès équipe | Vous seul | Vous seul | Personnes illimitées |
+| Boîte mail professionnelle sur votre domaine | - | - | Oui |
+| Connexions bancaires | - | - | Jusqu'à 3 |
+| Multi-domaine, routage de domaine personnalisé | - | - | Oui |
+| Rapports avancés, support prioritaire | - | - | Oui |
+| Accès API, webhooks | - | - | Oui |
 
 ## Obtenir de l'aide
 

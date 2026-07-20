@@ -27,25 +27,26 @@ Facturen, offertes en e-mails kunnen ook in het Nederlands, Engels, Duits of Fra
 
 ## Abonnementen
 
-MyCompanyDesk heeft twee betaalde abonnementen: Starter en Pro. Nieuwe klanten krijgen een Pro-proefperiode van 60 dagen.
+MyCompanyDesk heeft een Gratis-abonnement en twee betaalde abonnementen: Starter en Pro. Nieuwe klanten krijgen een Pro-proefperiode van 60 dagen; wie niet overstapt, blijft op Gratis.
 
-| Functie | Starter | Pro |
-|---|---|---|
-| Facturen, offertes, klanten | Onbeperkt | Onbeperkt |
-| Uitgaven bijhouden | Volledig | Volledig |
-| Bonnen scannen | Ja (30 scans/maand) | Ja (200 scans/maand) |
-| AI-suggesties | Ja | Ja |
-| Eigen huisstijl | Ja | Ja |
-| Urenregistratie, taalopties | Ja | Ja |
-| Openbare bedrijfspagina | Ja | Ja |
-| Contracten en projecten | Ja | Ja |
-| Rapportages en CSV/Excel-export | Ja | Ja |
-| Teamtoegang | Alleen jij | Onbeperkt aantal mensen |
-| Zakelijke mailbox op je domein | - | Ja |
-| Bankkoppelingen | - | Maximaal 3 |
-| Multi-domein, eigen domein routering | - | Ja |
-| Geavanceerde rapporten, prioriteitsondersteuning | - | Ja |
-| API-toegang, webhooks | - | Ja |
+| Functie | Gratis | Starter | Pro |
+|---|---|---|---|
+| Facturen | 10 om te starten, daarna 2/maand | Onbeperkt | Onbeperkt |
+| Offertes | 3/maand | Onbeperkt | Onbeperkt |
+| Uitgaven bijhouden | 10/maand | Volledig | Volledig |
+| Bonnen scannen | Ja (3 scans/maand) | Ja (30 scans/maand) | Ja (200 scans/maand) |
+| AI-suggesties | Ja | Ja | Ja |
+| Eigen huisstijl | - | Ja | Ja |
+| Urenregistratie, taalopties | - | Ja | Ja |
+| Openbare bedrijfspagina | Ja | Ja | Ja |
+| Contracten en projecten | - | Ja | Ja |
+| Rapportages en CSV/Excel-export | - | Ja | Ja |
+| Teamtoegang | Alleen jij | Alleen jij | Onbeperkt aantal mensen |
+| Zakelijke mailbox op je domein | - | - | Ja |
+| Bankkoppelingen | - | - | Maximaal 3 |
+| Multi-domein, eigen domein routering | - | - | Ja |
+| Geavanceerde rapporten, prioriteitsondersteuning | - | - | Ja |
+| API-toegang, webhooks | - | - | Ja |
 
 ## Hulp krijgen
 
