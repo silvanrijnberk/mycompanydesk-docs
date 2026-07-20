@@ -165,9 +165,9 @@ The dashboard briefing hero shows a short, personal AI-written briefing for Pro 
 | Surface | Free | Starter | Pro |
 |---|---|---|---|
 | Contextual guide (incl. VAT tools) | Limited messages, FAQ-only on overflow | Standard tier | Highest tier |
-| AI suggestions | Off | On | On |
-| Vendor classifier | Off | On | On |
-| Receipt scanner | Off | On | On |
+| AI suggestions | On | On | On |
+| Vendor classifier | On | On | On |
+| Receipt scanner | On | On | On |
 | Text check | On | On | On |
 | Translation | On (UI strings only) | On | On |
 | Briefing insight | Off | Off | On |
@@ -179,7 +179,7 @@ AI caps are monthly, not daily. A bookkeeper who batches 40 receipts on a Friday
 | Metric | Free | Starter | Pro |
 |---|---|---|---|
 | AI chat messages | 10 | 100 | 1 000 |
-| AI receipt scans | 3 | 50 | 500 |
+| AI receipt scans | 3 | 30 | 200 |
 | AI suggestions | 10 | 200 | 2 000 |
 
 ## Privacy

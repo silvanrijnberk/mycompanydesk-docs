@@ -21,24 +21,25 @@ Workspaces on such an arrangement are regular Pro customers in every respect: sa
 
 ## Plans
 
-MyCompanyDesk has two paid plans plus a Free state that exists only for lapsed, cancelled, or trial-expired workspaces. Free is not offered at signup; new customers get a 60-day Pro trial.
+MyCompanyDesk has a Free plan plus two paid plans. Free is a product in its own right, offered at signup and kept indefinitely. New customers get a 60-day Pro trial, and a workspace that does not convert lands on Free rather than being locked out.
 
 | Plan | Monthly | Yearly | Description |
 |---|---|---|---|
+| **Free** | €0.00 | €0.00 | Start invoicing and put your website online, with a small MyCompanyDesk credit on your documents |
 | **Starter** | €10.00 | €100.00 | Everything to do your work: invoices, quotes, expenses, hours and projects, on your own page |
 | **Pro** | €25.00 | €250.00 | Grow your business: own domain and website, business inbox, bank connection, team access, API and more |
 
 All prices exclude 21% Dutch VAT, which is added at checkout. The app labels prices "excl. btw"; as a business you reclaim this VAT as input tax. The yearly price equals ten monthly payments, so paying yearly gives you two months free.
 
-Pro is the highlighted (recommended) plan in the picker. The Free state exists as a landing zone for lapsed and historical accounts but is hidden from the pricing page and signup flow.
+Pro is the highlighted (recommended) plan in the picker. Free appears on the pricing page and in the signup flow alongside the paid plans.
 
 ### What each plan includes
 
-Quota-limited features (monthly caps):
+Quota-limited features (monthly caps, except where noted):
 
 | Metric | Free | Starter | Pro |
 |---|---|---|---|
-| Invoices created | 5 | unlimited | unlimited |
+| Invoices created | 10 to start, then 2 per month | unlimited | unlimited |
 | Expenses created | 10 | unlimited | unlimited |
 | Quotes created | 3 | unlimited | unlimited |
 | Storage | 100 MB | 2 GB | unlimited |
@@ -50,6 +51,8 @@ Quota-limited features (monthly caps):
 | Bank connections | 0 | 0 | 3 |
 
 Note: AI caps are monthly, not daily. They reset on the first of each calendar month.
+
+The Free invoice allowance is cumulative rather than monthly: the first 10 invoices are free in total, not 10 every month. Once that allowance is used up, a Free workspace can still create 2 invoices per month, so you are never fully blocked from getting paid. Invoices you already created always stay viewable and exportable; only creating new ones is capped.
 
 Features unlocked per plan:
 
@@ -70,8 +73,8 @@ Features unlocked per plan:
 | Custom branding | no | yes | yes |
 | Language tools | no | yes | yes |
 | Description enrichment | no | yes | yes |
-| Public business page | no | yes | yes |
-| Company subdomain and style presets | no | yes | yes |
+| Public business page | yes | yes | yes |
+| Company subdomain and style presets | yes | yes | yes |
 | Team access (unlimited people) | no | no | yes |
 | Clean invoices and quotes sent to your clients | no | yes | yes |
 | Advanced reports | no | no | yes |

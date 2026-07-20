@@ -57,7 +57,7 @@ For image or PDF receipts:
 4. Review the extracted supplier, date, amount, VAT and category.
 5. Confirm to create the expense(s).
 
-Receipt scanning is on the Pro plan and above.
+Receipt scanning is available on every plan, including Free. The number of scans per month depends on your plan.
 
 ## VAT treatment
 
