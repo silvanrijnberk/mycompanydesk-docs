@@ -38,6 +38,7 @@ Een checklist die tegen de actieve periode draait. Elke controle heeft een herst
 - **BTW ontbreekt**: uitgaven zonder BTW-bedrag.
 - **Bonnen ontbreken**: uitgaven zonder bijgevoegde bon.
 - **ICP open**: EU B2B-verkopen die apart op de ICP-opgaaf gemeld moeten worden.
+- **Verlegde-BTW-herkomst**: uitgaven met verlegde BTW waarvan het land of KVK-nummer van de leverancier ontbreekt, zodat rubriek 2a/4b niet te bewijzen is.
 
 Een badge in de kop toont het aantal blokkades, of dat alles in orde is.
 

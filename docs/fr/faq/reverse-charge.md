@@ -16,3 +16,12 @@ Pour créer une facture en autoliquidation (UE) :
 5. Vérifiez la mention d'autoliquidation dans l'aperçu, puis envoyez la facture
 
 Astuce : l'interrupteur est toujours disponible sur le formulaire de facture ; vous n'avez rien à activer au préalable dans vos paramètres.
+
+## Dépenses en autoliquidation
+
+Quand vous recevez une facture en autoliquidation d'un fournisseur, MyCompanyDesk doit connaître l'origine du fournisseur pour ranger la TVA dans la bonne rubrique de la déclaration :
+
+- Un fournisseur néerlandais avec un numéro KVK ou le pays NL va dans la rubrique 2a (autoliquidation nationale).
+- Un fournisseur d'un autre pays de l'UE va dans la rubrique 4b (acquisition intracommunautaire).
+
+Si le pays ou le numéro KVK manque, le contrôle avant dépôt sur la page TVA signale la dépense et bloque le dépôt tant que vous ne l'avez pas complété. Ouvrez la dépense, ajoutez le pays ou le numéro KVK manquant, puis relancez les contrôles.

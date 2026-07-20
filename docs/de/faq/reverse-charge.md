@@ -16,3 +16,12 @@ So erstellen Sie eine Reverse-Charge-Rechnung (EU):
 5. Prüfen Sie in der Vorschau den Reverse-Charge-Hinweis und senden Sie die Rechnung
 
 Tipp: Der Schalter ist im Rechnungsformular immer verfügbar; Sie müssen vorher nichts in Ihren Einstellungen aktivieren.
+
+## Ausgaben mit Reverse Charge
+
+Wenn Sie eine Reverse-Charge-Rechnung von einem Lieferanten erhalten, muss MyCompanyDesk die Herkunft des Lieferanten kennen, um die MwSt. in die richtige Rubrik der Aangifte einzuordnen:
+
+- Ein niederländischer Lieferant mit KVK-Nummer oder Land NL landet in Rubrik 2a (inländische Reverse Charge).
+- Ein Lieferant aus einem anderen EU-Land landet in Rubrik 4b (innergemeinschaftlicher Erwerb).
+
+Fehlt das Land oder die KVK-Nummer, markiert die Prüfung vor der Abgabe auf der USt.-Seite die Ausgabe und blockiert die Abgabe, bis Sie es ergänzt haben. Öffnen Sie die Ausgabe, ergänzen Sie das fehlende Land oder die KVK-Nummer, und führen Sie die Prüfungen erneut aus.

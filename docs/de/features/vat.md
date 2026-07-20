@@ -38,6 +38,7 @@ Eine Checkliste, die gegen den aktiven Zeitraum läuft. Jede Prüfung hat einen 
 - **Fehlende USt.**: Ausgaben ohne USt.-Betrag.
 - **Fehlende Belege**: Ausgaben ohne angehängten Beleg.
 - **ICP offen**: EU-B2B-Verkäufe, die separat in der ICP-Meldung anzugeben sind.
+- **Reverse-Charge-Ursprung**: Ausgaben mit Reverse-Charge-MwSt., bei denen das Land oder die KVK-Nummer des Lieferanten fehlt, sodass die Rubrik 2a/4b nicht belegt werden kann.
 
 Ein Zähler in der Kopfzeile zeigt die Zahl der Blocker oder dass alles in Ordnung ist.
 
