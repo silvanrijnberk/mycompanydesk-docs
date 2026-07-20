@@ -48,6 +48,10 @@ Log je liever alleen een totaal per dag? Zet dan **Alleen uren modus** aan in de
 
 ## Je uren factureren
 
+### Automatisch uren factureren
+
+Automatisch factureren stel je per klant in. Zet op de pagina van de klant **Automatisch factureren** aan om maandelijks automatisch een factuur aan te maken voor de geregistreerde uren van die klant, desgewenst ook automatisch verzonden. De factuur wordt als concept aangemaakt en blijft open staan, zodat je hem nog kunt nakijken voordat hij de deur uit gaat.
+
 ### Een factuur maken vanaf de pagina Uren & agenda
 
 Heb je niet-gefactureerde registraties, klik dan op **Factuur aanmaken**. Er opent een lade waarin je een klant kiest; je ziet alle niet-gefactureerde registraties van die klant met het totaal. Bevestig, en er wordt een conceptfactuur aangemaakt met een regel per registratie. Declarabele reistijd en reiskosten die aan die registraties zijn gekoppeld, komen er als aparte regels bij.
@@ -59,10 +63,6 @@ Wil je maar een deel van de registraties factureren? Maak of bewerk dan direct e
 ### Regelomschrijvingen op de factuur
 
 Factuurregels worden automatisch omschreven: eerst de omschrijving van de registratie zelf, anders de projectnaam, anders de periode. Een omschrijvingssjabloon per klant (ingesteld op de klantpagina) gaat boven dit formaat.
-
-### Automatisch uren factureren
-
-Automatisch factureren stel je per klant in. Zet op de pagina van de klant **Automatisch factureren** aan om maandelijks automatisch een factuur aan te maken voor de geregistreerde uren van die klant, desgewenst ook automatisch verzonden. De factuur wordt als concept aangemaakt en blijft open staan, zodat je hem nog kunt nakijken voordat hij de deur uit gaat.
 
 ## Bulkacties
 

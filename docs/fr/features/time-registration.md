@@ -48,6 +48,10 @@ Vous préférez n'enregistrer qu'un total par jour ? Activez le **Mode heures un
 
 ## Facturer vos heures
 
+### Facturation automatique du temps
+
+La facturation automatique se configure par client. Sur la page du client, activez **Facturation auto** pour créer automatiquement chaque mois une facture pour les heures enregistrées de ce client, avec envoi automatique en option. La facture est créée en brouillon et reste ouverte, afin que vous puissiez la relire avant son envoi.
+
 ### Créer une facture depuis la page Agenda
 
 Lorsque vous avez des entrées non facturées, cliquez sur **Créer une facture**. Un panneau s'ouvre où vous choisissez un client ; il liste toutes les entrées non facturées de ce client avec leur total. Confirmez, et un brouillon de facture est créé avec une ligne par entrée. Le temps de trajet et les frais de déplacement facturables liés à ces entrées sont ajoutés en lignes séparées.
@@ -59,10 +63,6 @@ Vous ne voulez facturer qu'une partie des entrées ? Créez ou modifiez directem
 ### Descriptions de ligne sur la facture
 
 Les lignes de facture sont décrites automatiquement : d'abord la description de l'entrée elle-même, sinon le nom du projet, sinon la période. Un modèle de description par client (défini sur la page du client) remplace ce format.
-
-### Facturation automatique du temps
-
-La facturation automatique se configure par client. Sur la page du client, activez **Facturation auto** pour créer automatiquement chaque mois une facture pour les heures enregistrées de ce client, avec envoi automatique en option. La facture est créée en brouillon et reste ouverte, afin que vous puissiez la relire avant son envoi.
 
 ## Actions groupées
 

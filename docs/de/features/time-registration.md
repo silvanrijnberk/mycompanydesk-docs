@@ -48,6 +48,10 @@ Möchten Sie lieber nur eine Tagessumme erfassen? Aktivieren Sie **Nur Stunden M
 
 ## Ihre Stunden abrechnen
 
+### Automatische Zeitabrechnung
+
+Automatisches Abrechnen konfigurieren Sie pro Kunde. Aktivieren Sie auf der Seite des Kunden **Auto-Rechnung**, um monatlich automatisch eine Rechnung für die erfassten Stunden dieses Kunden zu erstellen, auf Wunsch auch automatisch versendet. Die Rechnung wird als Entwurf erstellt und bleibt offen, damit Sie sie vor dem Versand noch prüfen können.
+
 ### Eine Rechnung von der Zeitplan-Seite erstellen
 
 Wenn nicht abgerechnete Einträge vorliegen, klicken Sie auf **Rechnung erstellen**. Ein Dialog öffnet sich, in dem Sie einen Kunden wählen; er listet alle nicht abgerechneten Einträge dieses Kunden mit ihrer Summe. Bestätigen Sie, und es entsteht ein Rechnungsentwurf mit einer Zeile pro Eintrag. Abrechenbare Reisezeit und Reisekosten, die mit diesen Einträgen verknüpft sind, werden als separate Zeilen hinzugefügt.
@@ -59,10 +63,6 @@ Möchten Sie nur einen Teil der Einträge abrechnen? Erstellen oder bearbeiten S
 ### Zeilenbeschreibungen auf der Rechnung
 
 Rechnungszeilen werden automatisch beschrieben: zuerst die Beschreibung des Eintrags selbst, sonst der Projektname, sonst der Zeitraum. Eine Beschreibungsvorlage pro Kunde (auf der Kundenseite eingestellt) hat Vorrang vor diesem Format.
-
-### Automatische Zeitabrechnung
-
-Automatisches Abrechnen konfigurieren Sie pro Kunde. Aktivieren Sie auf der Seite des Kunden **Auto-Rechnung**, um monatlich automatisch eine Rechnung für die erfassten Stunden dieses Kunden zu erstellen, auf Wunsch auch automatisch versendet. Die Rechnung wird als Entwurf erstellt und bleibt offen, damit Sie sie vor dem Versand noch prüfen können.
 
 ## Massenaktionen
 
