@@ -62,7 +62,7 @@ Invoice lines are described automatically: the entry's own description is used f
 
 ### Automatic time invoicing
 
-Automatic invoicing is configured per customer. On the customer's page, enable **Auto-Invoice** to automatically create a monthly invoice for that customer's registered time, optionally sent automatically.
+Automatic invoicing is configured per customer. On the customer's page, enable **Auto-Invoice** to automatically create a monthly invoice for that customer's registered time, optionally sent automatically. The invoice is created as a draft and stays open so you can review it before it goes out.
 
 ## Bulk actions
 
