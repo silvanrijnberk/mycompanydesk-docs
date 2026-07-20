@@ -21,24 +21,25 @@ Les espaces de travail bénéficiant d'un tel accord sont des clients Pro comme 
 
 ## Plans
 
-MyCompanyDesk propose deux plans payants plus un état Gratuit qui n'existe que pour les espaces de travail expirés, résiliés ou en fin de période d'essai. Gratuit n'est pas proposé à l'inscription ; les nouveaux clients bénéficient d'un essai Pro de 60 jours.
+MyCompanyDesk propose un plan Gratuit et deux plans payants. Le plan Gratuit est un produit à part entière, proposé à l'inscription et conservé indéfiniment. Les nouveaux clients bénéficient d'un essai Pro de 60 jours ; un espace de travail qui ne convertit pas atterrit sur Gratuit.
 
 | Plan | Mensuel | Annuel | Description |
 |---|---|---|---|
+| **Gratuit** | 0,00 EUR | 0,00 EUR | Commencez à facturer et mettez votre site en ligne, avec une petite mention MyCompanyDesk sur vos documents |
 | **Starter** | 10,00 EUR | 100,00 EUR | Tout pour faire votre travail : factures, devis, dépenses, heures et projets, sur votre propre page |
 | **Pro** | 25,00 EUR | 250,00 EUR | Faites grandir votre entreprise : domaine et site web personnels, boîte mail professionnelle, connexion bancaire, accès équipe, API et plus |
 
 Tous les prix s'entendent hors TVA néerlandaise de 21%, ajoutée lors du paiement. L'application affiche les prix avec la mention « excl. btw » (hors TVA) ; en tant qu'entreprise, vous récupérez cette TVA comme taxe déductible. Le prix annuel équivaut à dix paiements mensuels, payer à l'année vous offre donc deux mois gratuits.
 
-Pro est le plan mis en avant (recommandé) dans le sélecteur. L'état Gratuit existe comme zone d'atterrissage pour les comptes expirés et historiques, mais il est masqué sur la page de tarifs et dans le flux d'inscription.
+Pro est le plan mis en avant (recommandé) dans le sélecteur. Le plan Gratuit apparaît sur la page de tarifs et dans le flux d'inscription aux côtés des plans payants.
 
 ### Ce que chaque plan inclut
 
-Fonctionnalités avec limites d'utilisation (limites mensuelles) :
+Fonctionnalités avec limites d'utilisation (limites mensuelles, sauf indication contraire) :
 
 | Métrique | Gratuit | Starter | Pro |
 |---|---|---|---|
-| Factures créées | 5 | illimité | illimité |
+| Factures créées | 10 pour démarrer, puis 2/mois | illimité | illimité |
 | Dépenses créées | 10 | illimité | illimité |
 | Devis créés | 3 | illimité | illimité |
 | Stockage | 100 Mo | 2 Go | illimité |
@@ -50,6 +51,8 @@ Fonctionnalités avec limites d'utilisation (limites mensuelles) :
 | Connexions bancaires | 0 | 0 | 3 |
 
 Remarque : les limites IA sont mensuelles, et non quotidiennes. Elles sont réinitialisées le premier de chaque mois civil.
+
+L'allocation de factures Gratuit est cumulative, pas mensuelle : les 10 premières factures sont gratuites au total, et non 10 par mois. Ensuite, un espace de travail Gratuit peut toujours créer 2 factures par mois, pour que vous ne soyez jamais totalement bloqué pour être payé. Les factures déjà créées restent toujours visibles et exportables ; seule la création de nouvelles factures est plafonnée.
 
 Fonctionnalités par plan :
 
@@ -70,8 +73,8 @@ Fonctionnalités par plan :
 | Image de marque personnalisée | non | oui | oui |
 | Outils linguistiques | non | oui | oui |
 | Enrichissement des descriptions | non | oui | oui |
-| Page entreprise publique | non | oui | oui |
-| Sous-domaine d'entreprise et préréglages de style | non | oui | oui |
+| Page entreprise publique | oui | oui | oui |
+| Sous-domaine d'entreprise et préréglages de style | oui | oui | oui |
 | Accès équipe (personnes illimitées) | non | non | oui |
 | Factures et devis sans mention MyCompanyDesk | non | oui | oui |
 | Rapports avancés | non | non | oui |
