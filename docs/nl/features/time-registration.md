@@ -62,7 +62,7 @@ Factuurregels worden automatisch omschreven: eerst de omschrijving van de regist
 
 ### Automatisch uren factureren
 
-Automatisch factureren stel je per klant in. Zet op de pagina van de klant **Automatisch factureren** aan om maandelijks automatisch een factuur aan te maken voor de geregistreerde uren van die klant, desgewenst ook automatisch verzonden.
+Automatisch factureren stel je per klant in. Zet op de pagina van de klant **Automatisch factureren** aan om maandelijks automatisch een factuur aan te maken voor de geregistreerde uren van die klant, desgewenst ook automatisch verzonden. De factuur wordt als concept aangemaakt en blijft open staan, zodat je hem nog kunt nakijken voordat hij de deur uit gaat.
 
 ## Bulkacties
 

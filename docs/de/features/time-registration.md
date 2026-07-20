@@ -62,7 +62,7 @@ Rechnungszeilen werden automatisch beschrieben: zuerst die Beschreibung des Eint
 
 ### Automatische Zeitabrechnung
 
-Automatisches Abrechnen konfigurieren Sie pro Kunde. Aktivieren Sie auf der Seite des Kunden **Auto-Rechnung**, um monatlich automatisch eine Rechnung für die erfassten Stunden dieses Kunden zu erstellen, auf Wunsch auch automatisch versendet.
+Automatisches Abrechnen konfigurieren Sie pro Kunde. Aktivieren Sie auf der Seite des Kunden **Auto-Rechnung**, um monatlich automatisch eine Rechnung für die erfassten Stunden dieses Kunden zu erstellen, auf Wunsch auch automatisch versendet. Die Rechnung wird als Entwurf erstellt und bleibt offen, damit Sie sie vor dem Versand noch prüfen können.
 
 ## Massenaktionen
 

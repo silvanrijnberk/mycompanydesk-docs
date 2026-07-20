@@ -62,7 +62,7 @@ Les lignes de facture sont décrites automatiquement : d'abord la description de
 
 ### Facturation automatique du temps
 
-La facturation automatique se configure par client. Sur la page du client, activez **Facturation auto** pour créer automatiquement chaque mois une facture pour les heures enregistrées de ce client, avec envoi automatique en option.
+La facturation automatique se configure par client. Sur la page du client, activez **Facturation auto** pour créer automatiquement chaque mois une facture pour les heures enregistrées de ce client, avec envoi automatique en option. La facture est créée en brouillon et reste ouverte, afin que vous puissiez la relire avant son envoi.
 
 ## Actions groupées
 
