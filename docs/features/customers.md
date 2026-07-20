@@ -94,7 +94,7 @@ Import your existing customer database from CSV:
 
 ## Export customers
 
-Export your customer list as CSV from the customers page (Pro plan and above).
+Export your customer list as CSV from the customers page (Starter plan and above).
 
 ## Tips
 
