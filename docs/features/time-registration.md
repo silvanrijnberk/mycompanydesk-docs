@@ -48,6 +48,10 @@ Prefer to log just a total per day? Enable **Hours only mode** in the schedule s
 
 ## Invoicing your hours
 
+### Automatic time invoicing
+
+Automatic invoicing is configured per customer. On the customer's page, enable **Auto-Invoice** to automatically create a monthly invoice for that customer's registered time, optionally sent automatically. The invoice is created as a draft and stays open so you can review it before it goes out.
+
 ### Create an invoice from the Schedule page
 
 When you have uninvoiced entries, click **Create Invoice**. A drawer opens where you pick a customer; it lists all uninvoiced entries for that customer with their total. Confirm, and a draft invoice is created with one line per entry. Billable travel time and travel costs linked to those entries are added as separate lines.
@@ -59,10 +63,6 @@ Want to invoice only some entries? Create or edit an invoice directly: the invoi
 ### Line descriptions on the invoice
 
 Invoice lines are described automatically: the entry's own description is used first, otherwise the project name, otherwise the period. A per-customer description template (set on the customer page) overrides this format.
-
-### Automatic time invoicing
-
-Automatic invoicing is configured per customer. On the customer's page, enable **Auto-Invoice** to automatically create a monthly invoice for that customer's registered time, optionally sent automatically. The invoice is created as a draft and stays open so you can review it before it goes out.
 
 ## Bulk actions
 
