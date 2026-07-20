@@ -38,6 +38,7 @@ Une liste de contrôles exécutée sur la période active. Chaque contrôle a un
 - **TVA manquante** : dépenses sans montant de TVA.
 - **Justificatifs manquants** : dépenses sans justificatif joint.
 - **ICP en attente** : ventes B2B intra-UE à déclarer séparément sur l'ICP-opgaaf.
+- **Origine de l'autoliquidation** : dépenses en autoliquidation dont le pays ou le numéro KVK du fournisseur manque, si bien que la rubrique 2a/4b ne peut pas être justifiée.
 
 Un badge dans l'en-tête indique le nombre de points bloquants, ou que tout est en ordre.
 

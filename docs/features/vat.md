@@ -39,6 +39,7 @@ A checklist that runs against the active period. Every check has a fix link that
 - **Missing VAT**: expenses without a VAT amount.
 - **Missing receipts**: expenses without an attached receipt.
 - **ICP pending**: EU B2B sales that need to be reported separately on the ICP-opgaaf.
+- **Reverse-charge origin**: expenses with reverse-charge VAT whose supplier country or KVK number is missing, so rubriek 2a/4b cannot be proven.
 
 A badge in the header shows the number of blockers, or that everything is clear.
 
