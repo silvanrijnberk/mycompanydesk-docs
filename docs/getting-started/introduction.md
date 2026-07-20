@@ -27,25 +27,26 @@ Invoices, quotes, and emails can also be sent in Dutch, English, German, or Fren
 
 ## Plans
 
-MyCompanyDesk has two paid plans: Starter and Pro. New customers get a 60-day Pro trial.
+MyCompanyDesk has a Free plan and two paid plans: Starter and Pro. New customers get a 60-day Pro trial, and a workspace that does not convert continues on Free.
 
-| Feature | Starter | Pro |
-|---|---|---|
-| Invoices, quotes, customers | Unlimited | Unlimited |
-| Expense tracking | Full | Full |
-| Receipt scanning | Yes (30 scans/month) | Yes (200 scans/month) |
-| AI suggestions | Yes | Yes |
-| Custom branding | Yes | Yes |
-| Time registration, language tools | Yes | Yes |
-| Public business page | Yes | Yes |
-| Contracts and projects | Yes | Yes |
-| Reports and CSV/Excel exports | Yes | Yes |
-| Team access | Just you | Unlimited people |
-| Business mailbox on your domain | - | Yes |
-| Bank connections | - | Up to 3 |
-| Multi-domain, custom domain routing | - | Yes |
-| Advanced reports, priority support | - | Yes |
-| API access, webhooks | - | Yes |
+| Feature | Free | Starter | Pro |
+|---|---|---|---|
+| Invoices | 10 to start, then 2/month | Unlimited | Unlimited |
+| Quotes | 3/month | Unlimited | Unlimited |
+| Expense tracking | 10/month | Full | Full |
+| Receipt scanning | Yes (3 scans/month) | Yes (30 scans/month) | Yes (200 scans/month) |
+| AI suggestions | Yes | Yes | Yes |
+| Custom branding | - | Yes | Yes |
+| Time registration, language tools | - | Yes | Yes |
+| Public business page | Yes | Yes | Yes |
+| Contracts and projects | - | Yes | Yes |
+| Reports and CSV/Excel exports | - | Yes | Yes |
+| Team access | Just you | Just you | Unlimited people |
+| Business mailbox on your domain | - | - | Yes |
+| Bank connections | - | - | Up to 3 |
+| Multi-domain, custom domain routing | - | - | Yes |
+| Advanced reports, priority support | - | - | Yes |
+| API access, webhooks | - | - | Yes |
 
 ## Getting help
 
