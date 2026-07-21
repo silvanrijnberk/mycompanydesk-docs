@@ -19,7 +19,7 @@ chatbot:
 
 So verwalten Sie Ihre Benachrichtigungseinstellungen:
 1. Gehen Sie zu Einstellungen → „Benachrichtigungen"
-2. Schalten Sie die vier Benachrichtigungsthemen ein oder aus: überfällige Rechnungen, eingegangene Zahlungen, MwSt.-Fristen und Tipps. Sie erhalten sie in der App und per E-Mail.
+2. Schalten Sie die vier Benachrichtigungsthemen ein oder aus: überfällige Rechnungen, eingegangene Zahlungen, MwSt.-Fristen und Tipps. Sie erhalten sie in der App und per E-Mail; bei MwSt.-Fristen enthält die E-Mail einen direkten Link zur USt.-Seite, sodass Sie rechtzeitig abgeben können.
 3. Auf derselben Seite aktivieren Sie auch Push-Benachrichtigungen für das Gerät, das Sie gerade nutzen
 4. Änderungen werden automatisch gespeichert
 

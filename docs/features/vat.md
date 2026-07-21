@@ -27,6 +27,8 @@ Two buttons sit under the balance: **Open aangifte** jumps to the Filing tab, an
 
 A banner above the hero warns when your data is incomplete (draft invoices or expenses without VAT), so you can fix it before filing.
 
+MyCompanyDesk also emails you once per VAT period as the filing deadline approaches. The email links straight to the VAT page and follows your VAT deadlines toggle in Settings → Notifications, so you can turn it off there.
+
 ## Overview tab
 
 ### Quarter strip

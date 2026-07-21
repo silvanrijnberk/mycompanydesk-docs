@@ -26,6 +26,8 @@ Deux boutons figurent sous le solde : **Vers la déclaration** mène à l'onglet
 
 Au-dessus de la carte, un bandeau vous avertit quand vos données sont incomplètes (factures en brouillon ou dépenses sans TVA), pour corriger avant de déclarer.
 
+MyCompanyDesk vous envoie aussi un e-mail une fois par période de TVA à l'approche de l'échéance de déclaration. L'e-mail renvoie directement vers la page TVA et suit votre interrupteur d'échéances de TVA dans Paramètres → Notifications; vous pouvez le désactiver dans ce menu.
+
 ## Onglet Aperçu
 
 ### Bande des trimestres
