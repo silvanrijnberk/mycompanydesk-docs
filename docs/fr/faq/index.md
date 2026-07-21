@@ -16,6 +16,7 @@ Réponses rapides aux questions courantes sur MyCompanyDesk. Chaque entrée corr
 - [Automatic Reminders](/fr/faq/automatic-reminders)
 - [Bank details](/fr/faq/bank-details)
 - [Billing and subscription help](/fr/faq/billing-friction)
+- [Faire sa comptabilité sans comptable](/fr/faq/bookkeeping-without-accountant)
 - [Bulk actions](/fr/faq/bulk-actions)
 - [Bulk Delete](/fr/faq/bulk-delete)
 - [Cancel invoice](/fr/faq/cancel-invoice)

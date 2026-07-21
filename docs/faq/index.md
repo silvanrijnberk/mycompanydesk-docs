@@ -16,6 +16,7 @@ Quick answers to common questions about MyCompanyDesk. Each entry mirrors what t
 - [Automatic Reminders](/faq/automatic-reminders)
 - [Bank details](/faq/bank-details)
 - [Billing and subscription help](/faq/billing-friction)
+- [Bookkeeping without an accountant](/faq/bookkeeping-without-accountant)
 - [Bulk actions](/faq/bulk-actions)
 - [Bulk Delete](/faq/bulk-delete)
 - [Cancel invoice](/faq/cancel-invoice)
