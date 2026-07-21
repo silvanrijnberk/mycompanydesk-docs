@@ -107,6 +107,8 @@ Selectionnez plusieurs factures dans la liste pour effectuer des actions groupee
 - **Archiver** -- Deplacez les factures vers les archives
 - **Supprimer** -- Supprimez definitivement des factures
 
+La finalisation groupée applique les mêmes contrôles de TVA et de statut que pour l'envoi d'une seule facture. Les factures qui échouent à un contrôle sont ignorées; l'écran de résultats indique pourquoi.
+
 ## Liens de paiement
 
 Lorsque vous envoyez une facture, un lien de paiement unique est genere. Votre client peut :

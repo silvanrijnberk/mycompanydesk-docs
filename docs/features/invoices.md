@@ -107,6 +107,8 @@ Select multiple invoices from the list to perform actions in bulk:
 - **Archive** — Move invoices to the archive
 - **Delete** — Permanently remove invoices
 
+Bulk finalizing runs the same VAT and status checks as sending a single invoice. Invoices that fail a check are skipped, and the results screen explains why.
+
 ## Payment links
 
 When you send an invoice, a unique payment link is generated. Your customer can:

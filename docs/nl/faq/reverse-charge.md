@@ -15,6 +15,8 @@ Zo maak je een factuur met BTW verlegd (EU):
 4. De BTW op alle factuurregels springt automatisch naar 0%, je hoeft niets handmatig aan te passen
 5. Bekijk het voorbeeld om de vermelding van de verlegde BTW te controleren en verstuur de factuur
 
+Facturen met verlegde BTW worden gecontroleerd voordat ze worden verstuurd: de klant moet een BTW-nummer hebben en de factuur moet op elke regel 0% (sources/vat-rates.yaml#countries.NL.zero) gebruiken. Deze controles worden ook uitgevoerd als je facturen bulksgewijs afrondt of verstuurt.
+
 Tip: De schakelaar staat altijd op het factuurformulier; je hoeft vooraf niets in je instellingen aan te zetten.
 
 ## Uitgaven met verlegde BTW

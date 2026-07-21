@@ -30,6 +30,7 @@ Elk regelitem bevat:
 - **Omschrijving** — Waarvoor je factureert
 - **Aantal** — Aantal eenheden
 - **Eenheidsprijs** — Prijs per eenheid
+<!-- TODO(source-missing): RichardTool 5407b44 widened the valid Dutch invoice/catalog VAT-rate set to include historical rates 6% and 19%. sources/vat-rates.yaml#countries.NL currently only lists 0%, 9% and 21%, so this line must stay unchanged until the source is updated. -->
 - **BTW-tarief** — Toepasselijk BTW-percentage (0%, 9%, 21%, etc.)
 
 Klik op **Item toevoegen** om meer regelitems toe te voegen. Het totaal wordt automatisch berekend inclusief BTW.

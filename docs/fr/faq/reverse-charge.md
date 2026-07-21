@@ -15,6 +15,8 @@ Pour créer une facture en autoliquidation (UE) :
 4. La TVA de toutes les lignes passe automatiquement à 0 %, aucun changement manuel n'est nécessaire
 5. Vérifiez la mention d'autoliquidation dans l'aperçu, puis envoyez la facture
 
+Les factures en autoliquidation sont vérifiées avant l'envoi: le client doit avoir un numéro de TVA et la facture doit indiquer 0% (sources/vat-rates.yaml#countries.NL.zero) sur chaque ligne. Ces contrôles s'appliquent aussi lorsque vous finalisez ou envoyez des factures en groupe.
+
 Astuce : l'interrupteur est toujours disponible sur le formulaire de facture ; vous n'avez rien à activer au préalable dans vos paramètres.
 
 ## Dépenses en autoliquidation

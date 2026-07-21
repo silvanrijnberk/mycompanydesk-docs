@@ -15,6 +15,8 @@ So erstellen Sie eine Reverse-Charge-Rechnung (EU):
 4. Die MwSt. aller Positionen springt automatisch auf 0 %, manuelle Änderungen sind nicht nötig
 5. Prüfen Sie in der Vorschau den Reverse-Charge-Hinweis und senden Sie die Rechnung
 
+Reverse-Charge-Rechnungen werden vor dem Versenden geprüft: der Kunde muss über eine USt-IdNr. verfügen und die Rechnung muss in jeder Position 0% (sources/vat-rates.yaml#countries.NL.zero) ausweisen. Diese Prüfungen laufen auch, wenn Sie Rechnungen massenhaft freigeben oder versenden.
+
 Tipp: Der Schalter ist im Rechnungsformular immer verfügbar; Sie müssen vorher nichts in Ihren Einstellungen aktivieren.
 
 ## Ausgaben mit Reverse Charge
