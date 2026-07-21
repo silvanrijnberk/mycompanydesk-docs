@@ -26,6 +26,8 @@ Onder het saldo staan twee knoppen: **Naar aangifte** springt naar het tabblad A
 
 Boven de herokaart waarschuwt een banner wanneer je gegevens onvolledig zijn (conceptfacturen of uitgaven zonder BTW), zodat je dat kunt oplossen voordat je aangifte doet.
 
+MyCompanyDesk stuurt je ook één keer per BTW-periode een e-mail als de aangiftedeadline nadert. De mail linkt direct naar de BTW-pagina en volgt je BTW-deadlines-schakelaar in Instellingen → Meldingen, dus je zet hem daar uit.
+
 ## Tabblad Overzicht
 
 ### Kwartaalstrook

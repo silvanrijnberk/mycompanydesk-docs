@@ -26,6 +26,8 @@ Unter dem Saldo stehen zwei Schaltflächen: **Erklärung öffnen** springt zum R
 
 Über der Herokarte warnt ein Banner, wenn Ihre Daten unvollständig sind (Rechnungsentwürfe oder Ausgaben ohne USt.), damit Sie das vor der Abgabe beheben können.
 
+MyCompanyDesk sendet Ihnen auch einmal pro USt.-Zeitraum eine E-Mail, wenn die Abgabefrist naht. Die E-Mail verlinkt direkt zur USt.-Seite und folgt Ihrem USt.-Fristen-Schalter unter Einstellungen → Benachrichtigungen, sodass Sie sie dort deaktivieren können.
+
 ## Reiter Übersicht
 
 ### Quartalsleiste
