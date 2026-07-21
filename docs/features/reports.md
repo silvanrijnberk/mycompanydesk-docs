@@ -55,6 +55,10 @@ The **Income tax** view estimates the income tax for the selected year: gross pr
 
 VAT has its own dedicated page with quarterly overviews and filing support. See [VAT Management](/features/vat).
 
+## Accounting view
+
+Reports opens in a simple view by default: income, expenses and the VAT you owe, shown without bookkeeping jargon. Switch to the full accounting view at any time to see the general ledger, balance sheet, profit-and-loss account and annual accounts. The full view is useful when you work with an accountant; you do not need it for your own tax return.
+
 ## Filters
 
 Open the **Filters** panel with the button at the top of the reports page. The filters apply to every report view:

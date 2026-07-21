@@ -55,6 +55,10 @@ De weergave **Inkomstenbelasting** maakt een schatting van de inkomstenbelasting
 
 BTW heeft een eigen pagina met kwartaaloverzichten en aangiftehulp. Zie [BTW-beheer](/nl/features/vat).
 
+## Boekhoudweergave
+
+Rapporten opent standaard in een eenvoudige weergave: inkomsten, uitgaven en de BTW die je moet betalen, zonder boekhoudjargon. Je schakelt met een klik naar de volledige boekhoudersweergave voor grootboek, balans, winst-en-verliesrekening en jaarrekening. Die weergave is handig als je samenwerkt met een boekhouder; voor je eigen aangifte heb je hem niet nodig.
+
 ## Filters
 
 Open het paneel **Filters** met de knop bovenaan de rapportenpagina. De filters gelden voor elke rapportweergave:
