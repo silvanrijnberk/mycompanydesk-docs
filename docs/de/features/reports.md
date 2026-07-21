@@ -55,6 +55,10 @@ Die Ansicht **Einkommensteuer** schätzt die Einkommensteuer für das gewählte 
 
 Die Umsatzsteuer hat eine eigene Seite mit Quartalsübersichten und Unterstützung bei der Meldung. Siehe [USt.-Verwaltung](/de/features/vat).
 
+## Buchhaltungsansicht
+
+Berichte öffnen sich standardmäßig in einer einfachen Ansicht: Einnahmen, Ausgaben und die fällige USt., ohne Buchhalter-Fachjargon. Mit einem Klick wechseln Sie zur vollen Buchhalter-Ansicht für Hauptbuch, Bilanz, Gewinn- und Verlustrechnung sowie Jahresabschluss. Diese Ansicht ist praktisch, wenn Sie mit einem Steuerberater arbeiten; für Ihre eigene Steuererklärung brauchen Sie sie nicht.
+
 ## Filter
 
 Öffnen Sie das Panel **Filter** über die Schaltfläche oben auf der Berichtsseite. Die Filter gelten für jede Berichtsansicht:

@@ -55,6 +55,10 @@ La vue **Impôt sur le revenu** estime l'impôt sur le revenu pour l'année choi
 
 La TVA dispose de sa propre page avec des synthèses trimestrielles et une aide à la déclaration. Consultez [Gestion de la TVA](/fr/features/vat).
 
+## Vue comptable
+
+Les rapports s'ouvrent par défaut sur une vue simple : revenus, dépenses et la TVA à payer, sans jargon comptable. D'un clic, vous passez à la vue comptable complète pour grand livre, bilan, compte de résultat et comptes annuels. Cette vue est utile si vous travaillez avec un comptable ; vous n'en avez pas besoin pour votre propre déclaration fiscale.
+
 ## Filtres
 
 Ouvrez le panneau **Filtres** avec le bouton en haut de la page des rapports. Les filtres s'appliquent à toutes les vues :
