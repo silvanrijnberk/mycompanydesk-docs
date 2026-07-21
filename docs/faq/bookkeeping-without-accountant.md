@@ -24,7 +24,7 @@ chatbot:
 
 # Do your own bookkeeping without an accountant
 
-Most freelancers and one-person businesses can handle their own day-to-day bookkeeping in MyCompanyDesk. The app calculates VAT per invoice and expense, scans receipts with AI, and keeps your records in one place.
+Most freelancers and one-person businesses can handle their own day-to-day bookkeeping in MyCompanyDesk. The app calculates VAT per invoice and expense, scans receipts with AI, and keeps your records in one place. If you later want an accountant to look things over, you can invite them without sharing your password.
 
 ## What MyCompanyDesk does for you
 
@@ -33,9 +33,9 @@ Most freelancers and one-person businesses can handle their own day-to-day bookk
 - **Income and expenses overview**: see open invoices, paid amounts, and expenses in one dashboard.
 - **VAT return preparation**: the VAT report groups transactions so you can file your return yourself or hand it to an accountant later.
 
-## When you can skip the accountant
+## When you can do it yourself
 
-A simple sole proprietorship or freelance business usually does not need an accountant for routine work. If you only send a few invoices per year, track your expenses, and need a clean VAT overview, you can do this yourself on the Free plan.
+A simple sole proprietorship or freelance business can usually manage routine bookkeeping on its own. If you only send a few invoices per year, track your expenses, and need a clean VAT overview, you can do this yourself on the Free plan.
 
 ## When an accountant still makes sense
 

@@ -24,7 +24,7 @@ chatbot:
 
 # Buchhaltung ohne Steuerberater
 
-Die meisten Freiberufler und Einzelunternehmen können ihre tägliche Buchhaltung selbst in MyCompanyDesk erledigen. Die App berechnet die USt. pro Rechnung und Ausgabe, scannt Belege mit KI und hält Ihre Unterlagen an einem Ort zusammen.
+Die meisten Freiberufler und Einzelunternehmen können ihre tägliche Buchhaltung selbst in MyCompanyDesk erledigen. Die App berechnet die USt. pro Rechnung und Ausgabe, scannt Belege mit KI und hält Ihre Unterlagen an einem Ort zusammen. Wenn Sie später einen Steuerberater hinzuziehen möchten, laden Sie ihn einfach ein, ohne Ihr Passwort weiterzugeben.
 
 ## Was MyCompanyDesk für Sie übernimmt
 
@@ -33,9 +33,9 @@ Die meisten Freiberufler und Einzelunternehmen können ihre tägliche Buchhaltun
 - **Einnahmen- und Ausgabenübersicht**: offene Rechnungen, bezahlte Beträge und Ausgaben sehen Sie in einem Dashboard.
 - **USt.-Erklärung vorbereiten**: der USt.-Bericht gruppiert Ihre Transaktionen, sodass Sie die Erklärung selbst abgeben oder später an Ihren Steuerberater übergeben können.
 
-## Wann Sie auf einen Steuerberater verzichten können
+## Wann Sie es selbst erledigen können
 
-Eine einfache Einzelunternehmung oder freiberufliche Tätigkeit benötigt für die Routine meist keinen Steuerberater. Wenn Sie nur wenige Rechnungen pro Jahr schreiben, Ihre Ausgaben erfassen und eine saubere USt.-Übersicht brauchen, erledigen Sie das im kostenlosen Tarif selbst.
+Eine einfache Einzelunternehmung oder freiberufliche Tätigkeit kann die Routine meist selbst erledigen. Wenn Sie nur wenige Rechnungen pro Jahr schreiben, Ihre Ausgaben erfassen und eine saubere USt.-Übersicht brauchen, machen Sie das im kostenlosen Tarif selbst.
 
 ## Wann ein Steuerberater dennoch sinnvoll ist
 

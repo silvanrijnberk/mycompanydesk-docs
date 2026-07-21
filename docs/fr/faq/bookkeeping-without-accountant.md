@@ -24,7 +24,7 @@ chatbot:
 
 # Faire sa comptabilité sans comptable
 
-La plupart des indépendants et entreprises individuelles peuvent gérer leur comptabilité quotidienne seuls dans MyCompanyDesk. L'application calcule la TVA par facture et dépense, scanne les reçus par IA et conserve vos documents en un seul endroit.
+La plupart des indépendants et entreprises individuelles peuvent gérer leur comptabilité quotidienne seuls dans MyCompanyDesk. L'application calcule la TVA par facture et dépense, scanne les reçus par IA et conserve vos documents en un seul endroit. Si vous souhaitez qu'un comptable repasse par-dessus plus tard, vous pouvez l'inviter sans partager votre mot de passe.
 
 ## Ce que MyCompanyDesk fait pour vous
 
@@ -33,9 +33,9 @@ La plupart des indépendants et entreprises individuelles peuvent gérer leur co
 - **Aperçu des revenus et dépenses** : consultez les factures en attente, les montants payés et les dépenses dans un seul tableau de bord.
 - **Préparation de la déclaration de TVA** : le rapport de TVA regroupe vos transactions pour que vous puissiez déposer vous-même ou transmettre à un comptable plus tard.
 
-## Quand vous pouvez vous passer d'un comptable
+## Quand vous pouvez le faire vous-même
 
-Une entreprise individuelle ou une activité indépendante simple n'a généralement pas besoin d'un comptable pour le travail courant. Si vous émettez seulement quelques factures par an, suivez vos dépenses et souhaitez un aperçu clair de la TVA, vous pouvez le faire vous-même avec le plan Gratuit.
+Une entreprise individuelle ou une activité indépendante simple peut généralement gérer le travail courant seule. Si vous émettez seulement quelques factures par an, suivez vos dépenses et souhaitez un aperçu clair de la TVA, vous pouvez le faire vous-même avec le plan Gratuit.
 
 ## Quand un comptable reste utile
 

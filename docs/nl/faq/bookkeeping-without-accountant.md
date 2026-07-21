@@ -24,7 +24,7 @@ chatbot:
 
 # Zelf boekhouden zonder boekhouder
 
-De meeste zzp'ers en eenmanszaken kunnen hun dagelijkse boekhouding prima zelf doen in MyCompanyDesk. De app berekent de btw per factuur en uitgave, scant bonnen met AI en houdt je administratie op één plek.
+De meeste zzp'ers en eenmanszaken kunnen hun dagelijkse boekhouding prima zelf doen in MyCompanyDesk. De app berekent de btw per factuur en uitgave, scant bonnen met AI en houdt je administratie op één plek. Wil je er later een boekhouder bij betrekken, dan nodig je die gewoon uit zonder je wachtwoord te delen.
 
 ## Wat MyCompanyDesk voor je doet
 
@@ -33,9 +33,9 @@ De meeste zzp'ers en eenmanszaken kunnen hun dagelijkse boekhouding prima zelf d
 - **Overzicht inkomsten en uitgaven**: zie openstaande facturen, betaalde bedragen en uitgaven in één dashboard.
 - **BTW-aangifte voorbereiden**: het btw-rapport groepeert je transacties, zodat je de aangifte zelf kunt doen of achteraf aan je boekhouder kunt geven.
 
-## Wanneer je zonder boekhouder kunt
+## Wanneer je het zelf kunt
 
-Een eenvoudige eenmanszaak of zzp-onderneming heeft meestal geen boekhouder nodig voor het dagelijks werk. Als je maar een paar facturen per jaar stuurt, je uitgaven bijhoudt en een net btw-overzicht wilt, doe je dit zelf op het Gratis-abonnement.
+Een eenvoudige eenmanszaak of zzp-onderneming kan het dagelijkse werk meestal prima zelf doen. Als je maar een paar facturen per jaar stuurt, je uitgaven bijhoudt en een net btw-overzicht wilt, doe je dit zelf op het Gratis-abonnement.
 
 ## Wanneer een boekhouder wel zinvol is
 
