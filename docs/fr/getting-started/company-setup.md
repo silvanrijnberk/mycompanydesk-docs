@@ -1,6 +1,6 @@
 ---
 title: Configurer votre entreprise
-last_verified: 2026-07-15
+last_verified: 2026-07-21
 ---
 
 # Configurer votre entreprise
@@ -26,6 +26,8 @@ Seul le nom du client est requis pour continuer. Vous pourrez compléter le rest
 ## Étape 2 : Les informations de votre entreprise (KVK)
 
 Cette étape remplit le bloc expéditeur de votre facture. Si vous vous êtes inscrit via le site marketing et que vous avez sélectionné votre entreprise dans la recherche KVK, votre numéro KVK est déjà transmis à l'assistant et appliqué automatiquement dès que vous atteignez cette étape. MyCompanyDesk récupère alors votre profil de base KVK et préremplit vos informations : dénomination légale, noms commerciaux, forme juridique, adresse et activité. Seuls les champs vides sont remplis ; ce que vous avez déjà saisi reste intact.
+
+L'aperçu sur le site marketing qui vous mène à l'assistant reconnaît désormais un plus large éventail de métiers. Il commence par votre nom d'entreprise. S'il est ambigu, il peut lire la description SBI/branche de votre profil de base KVK et, si nécessaire, faire appel à un classificateur IA léger pour choisir le métier le mieux adapté. Si aucun ne correspond, l'aperçu affiche une persona neutre pour indépendant au lieu d'un exemple générique de bricolage. La ville affichée provient de votre enregistrement KVK lorsqu'elle est disponible.
 
 Aucun résultat, ou pas d'immatriculation KVK ?
 

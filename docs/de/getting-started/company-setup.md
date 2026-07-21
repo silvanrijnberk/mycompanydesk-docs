@@ -1,6 +1,6 @@
 ---
 title: Unternehmen einrichten
-last_verified: 2026-07-15
+last_verified: 2026-07-21
 ---
 
 # Unternehmen einrichten
@@ -26,6 +26,8 @@ Nur der Kundenname ist erforderlich, um fortzufahren. Die restlichen Kundendaten
 ## Schritt 2: Ihre Unternehmensdaten (KVK)
 
 Dieser Schritt füllt den Absenderblock Ihrer Rechnung. Wenn Sie sich über die Marketingseite registriert und Ihr Unternehmen in der KVK-Suche dort ausgewählt haben, wird Ihre KVK-Nummer bereits in den Assistenten übernommen und sobald Sie diesen Schritt erreichen automatisch angewendet. MyCompanyDesk ruft dann Ihr KVK-Basisprofil ab und füllt Ihre Unternehmensdaten vor: juristischer Name, Handelsnamen, Rechtsform, Adresse und Geschäftstätigkeit. Es werden nur leere Felder gefüllt; was Sie bereits eingetragen haben, bleibt unverändert.
+
+Die Vorschau auf der Marketingseite, die Sie in den Assistenten führt, erkennt jetzt ein breiteres Spektrum an Branchen. Sie prüft zuerst, ob Ihr Gewerk aus dem Firmennamen hervorgeht. Ist das unklar, kann sie auch die SBI-Branche aus Ihrem KVK-Basisprofil lesen und, falls es dann immer noch nicht passt, einen leichten AI-Classifier das passendste Gewerk wählen lassen. Passt nichts, zeigt die Vorschau eine neutrale Selbstständigen-Persona anstelle eines generischen Handwerker-Platzhalters. Der angezeigte Ort stammt aus Ihrer KVK-Registrierung, sofern vorhanden.
 
 Kein Treffer oder keine KVK-Registrierung?
 

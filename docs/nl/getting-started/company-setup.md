@@ -1,6 +1,6 @@
 ---
 title: Je bedrijf instellen
-last_verified: 2026-07-15
+last_verified: 2026-07-21
 ---
 
 # Je bedrijf instellen
@@ -26,6 +26,8 @@ Alleen de klantnaam is verplicht om verder te gaan. Je kunt de rest van de klant
 ## Stap 2: Je bedrijfsgegevens (KVK)
 
 Deze stap vult het afzenderblok van je factuur. Als je je hebt aangemeld via de marketingsite en je bedrijf hebt geselecteerd in de KVK-lookup daar, wordt je KVK-nummer al meegenomen naar de wizard en automatisch toegepast zodra je deze stap bereikt. MyCompanyDesk haalt vervolgens je KVK Basisprofiel op en vult je bedrijfsgegevens alvast in: juridische naam, handelsnamen, rechtsvorm, adres en bedrijfsactiviteit. Alleen lege velden worden gevuld; wat je zelf al had ingevuld blijft staan.
+
+De preview op de marketingsite die je naar de wizard leidt, herkent nu een breder scala aan vakgebieden. Hij kijkt eerst of je vak al uit je bedrijfsnaam blijkt. Is dat niet duidelijk, dan kan hij ook het SBI-beroep uit je KVK Basisprofiel lezen en, als het dan nog niet past, een lichte AI-classifier het beste passende vak laten kiezen. Past er helemaal niets, dan valt de preview terug op een neutrale ZZP-persona in plaats van een generiek klusjesman-voorbeeld. De plaats die je ziet, komt uit je KVK-registratie als die beschikbaar is.
 
 Geen treffer, of geen KVK-inschrijving?
 
