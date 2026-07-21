@@ -37,7 +37,7 @@ Quatre interrupteurs déterminent les sujets sur lesquels MyCompanyDesk vous env
 
 Les messages vraiment importants concernant votre compte sont toujours envoyés; ils ne peuvent pas être désactivés.
 
-Sous les interrupteurs, vous pouvez activer les **notifications push sur cet appareil**, pour que les factures en retard, les paiements et les échéances vous parviennent aussi sous forme de notification sur votre téléphone ou ordinateur. Votre navigateur ou téléphone demandera l'autorisation la première fois.
+Sous les interrupteurs, vous pouvez activer les **notifications push sur cet appareil**, pour que les factures en retard, les paiements et les échéances vous parviennent aussi sous forme de notification sur votre téléphone ou ordinateur. Votre navigateur ou téléphone demandera l'autorisation la première fois. Si vous l'ignorez, vous pourrez toujours l'activer plus tard via la cloche de notifications en haut de l'application.
 
 ## Agendas connectés
 
