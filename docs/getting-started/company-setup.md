@@ -1,6 +1,6 @@
 ---
 title: Set up your company
-last_verified: 2026-07-15
+last_verified: 2026-07-21
 ---
 
 # Set up your company
@@ -26,6 +26,8 @@ Only the customer name is required to continue. You can finish the customer's de
 ## Step 2: Your company details (KVK)
 
 This step prefills the sender block of your invoice. If you signed up via the marketing site and selected your business in the KVK lookup there, your KVK number is already carried into the wizard and auto-applied as soon as you reach this step. MyCompanyDesk then pulls your KVK Basisprofiel and prefills your company details: legal name, trade names, legal form, address and business activity. It only fills fields that are still empty, so anything you already entered stays untouched.
+
+The marketing-site preview that brings you into the wizard now recognizes a wider range of trades. It first tries to match your trade from the business name. If the name is ambiguous, it can also read the SBI description from your KVK Basisprofiel and, if still needed, use a lightweight AI classifier to pick the best fit. When nothing matches, the preview falls back to a neutral self-employed persona instead of a generic handyman placeholder, and it uses your registered city when one is available.
 
 No match, or no KVK registration?
 
