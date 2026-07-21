@@ -100,7 +100,7 @@ Een factuur of uitgave in een vergrendelde periode bewerken wordt in het formuli
 
 De kleineondernemersregeling beheer je onder **Instellingen → BTW**: een kaart volgt je jaaromzet ten opzichte van de drempel van €20.000 met een voortgangsbalk, legt uit wat deelname betekent voor je facturen en bevat de aanmeldschakelaar. Zolang je omzet nog onder het KOR-gebied ligt, toont de BTW-pagina een hint die daarheen linkt.
 
-Als je de drempel passeert terwijl je nog aangemeld bent, verschijnt er bovenaan de factuurmaker een waarschuwingsbanner. Die toont je huidige KOR-limiet en linkt door naar **Instellingen → BTW** om je af te melden, zodat je geen factuur met 0% btw meer maakt op het moment dat btw wel verschuldigd is.
+Als je de drempel passeert terwijl je nog aangemeld bent, verschijnt er bovenaan de factuurmaker een waarschuwingsbanner. De titel geeft aan dat je boven de KOR-drempel zit, de tekst legt uit dat deze factuur btw moet bevatten in plaats van 0%, en de knop opent **Instellingen → BTW** zodat je je kunt afmelden bij de Belastingdienst en de KOR uitschakelt.
 
 ## KIA en Box 3
 

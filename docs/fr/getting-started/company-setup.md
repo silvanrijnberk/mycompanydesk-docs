@@ -25,7 +25,7 @@ Seul le nom du client est requis pour continuer. Vous pourrez compléter le rest
 
 ## Étape 2 : Les informations de votre entreprise (KVK)
 
-Cette étape remplit le bloc expéditeur de votre facture. Tapez le nom de votre entreprise et choisissez-la parmi les suggestions en direct issues du registre du commerce. MyCompanyDesk récupère alors votre profil de base KVK et préremplit vos informations : dénomination légale, noms commerciaux, forme juridique, adresse et activité. Seuls les champs vides sont remplis ; ce que vous avez déjà saisi reste intact.
+Cette étape remplit le bloc expéditeur de votre facture. Si vous vous êtes inscrit via le site marketing et que vous avez sélectionné votre entreprise dans la recherche KVK, votre numéro KVK est déjà transmis à l'assistant et appliqué automatiquement dès que vous atteignez cette étape. MyCompanyDesk récupère alors votre profil de base KVK et préremplit vos informations : dénomination légale, noms commerciaux, forme juridique, adresse et activité. Seuls les champs vides sont remplis ; ce que vous avez déjà saisi reste intact.
 
 Aucun résultat, ou pas d'immatriculation KVK ?
 
@@ -40,7 +40,7 @@ Si vous attendez toujours votre numéro de TVA auprès de l'administration fisca
 
 ## Étape 4 : Terminer la configuration
 
-La dernière étape confirme votre essai Pro de 60 jours, sans carte bancaire, et applique tous les réglages. L'écran de fin propose aussi des prochaines étapes optionnelles, comme créer un site web. La création d'un site web est optionnelle : rien n'est créé tant que vous ne le choisissez pas sur l'écran de fin ou dans la checklist du tableau de bord.
+La dernière étape confirme votre essai Pro de 60 jours, sans carte bancaire, et applique tous les réglages. L'écran de fin propose aussi des prochaines étapes optionnelles, comme créer un site web. La création d'un site web est optionnelle, sauf si vous avez commencé via la recherche KVK sur la page d'accueil : dans ce cas, un site thématique a déjà été généré et vous attend dans l'éditeur de site.
 
 Cliquez sur **Terminer la configuration** et l'assistant applique vos informations d'entreprise, votre statut de TVA, votre IBAN et vos paramètres par défaut, puis vous emmène à votre tableau de bord.
 

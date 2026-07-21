@@ -17,7 +17,7 @@ Getting started with MyCompanyDesk takes just a few minutes.
 5. After verification you receive a welcome email and land straight in the app, in your own workspace.
 
 :::tip Partner referral
-If your accountant or boekhouder gave you a referral link (for example, `app.mycompanydesk.com/register?partner=THEIRCODE`), open that link to sign up. Your signup will be attributed to them automatically, which qualifies your workspace for a 12-month free Pro trial instead of the standard 60-day trial.
+You can also start from the marketing site. If you look up your company on the landing page and pick it from the Dutch trade register (KVK), the CTA carries your KVK number to `/register`. After signup and verification, the setup wizard auto-applies that KVK number and auto-generates a themed website for you. The site is ready but not yet live; the first time you open the website editor you can publish it or adjust it first.
 :::
 
 ## Your workspace

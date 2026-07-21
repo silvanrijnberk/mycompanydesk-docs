@@ -16,8 +16,8 @@ Demarrer avec MyCompanyDesk ne prend que quelques minutes.
 4. Si vous vous etes inscrit par e-mail, verifiez votre boite de reception pour trouver un **e-mail de verification** et cliquez sur le lien pour verifier votre compte. Pas recu ? Renvoyez-le depuis l'ecran de verification. Mauvaise adresse utilisee ? Cliquez sur **Wrong email address? Start over** pour revenir a l'inscription.
 5. Après la vérification, vous recevez un e-mail de bienvenue et arrivez directement dans l'application, dans votre propre espace de travail.
 
-:::tip Parrainage comptable
-Votre comptable ou expert-comptable vous a transmis un lien de parrainage (par exemple `app.mycompanydesk.com/register?partner=LEURCODE`) ? Ouvrez ce lien pour vous inscrire. Votre inscription sera automatiquement attribuee, ce qui fait beneficier votre espace de travail d'une periode d'essai Pro gratuite de 12 mois au lieu des 60 jours standard.
+:::tip Commencer depuis la page d'accueil
+Vous pouvez aussi commencer depuis le site marketing. Si vous recherchez votre entreprise sur la page d'accueil et la sélectionnez dans le registre néerlandais (KVK), le CTA emporte votre numéro KVK jusqu'à `/register`. Après inscription et vérification, l'assistant de configuration applique automatiquement ce numéro KVK et génère directement un site web thématique pour vous. Le site est prêt mais n'est pas encore en ligne; la première fois que vous ouvrez l'éditeur de site, vous pouvez le publier ou l'ajuster d'abord.
 :::
 
 ## Votre espace de travail
