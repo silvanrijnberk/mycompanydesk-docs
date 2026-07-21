@@ -100,6 +100,8 @@ Een factuur of uitgave in een vergrendelde periode bewerken wordt in het formuli
 
 De kleineondernemersregeling beheer je onder **Instellingen → BTW**: een kaart volgt je jaaromzet ten opzichte van de drempel van €20.000 met een voortgangsbalk, legt uit wat deelname betekent voor je facturen en bevat de aanmeldschakelaar. Zolang je omzet nog onder het KOR-gebied ligt, toont de BTW-pagina een hint die daarheen linkt.
 
+Als je de drempel passeert terwijl je nog aangemeld bent, verschijnt er bovenaan de factuurmaker een waarschuwingsbanner. Die toont je huidige KOR-limiet en linkt door naar **Instellingen → BTW** om je af te melden, zodat je geen factuur met 0% btw meer maakt op het moment dat btw wel verschuldigd is.
+
 ## KIA en Box 3
 
 KIA (kleinschaligheidsinvesteringsaftrek) en Box 3 zijn inkomstenbelastingonderwerpen en staan onder **Rapportages → Inkomstenbelasting**, niet op de BTW-pagina. De Box 3-kaart verschijnt alleen voor werkruimtes die de vastgoedmodule gebruiken.

@@ -100,6 +100,8 @@ Das Bearbeiten einer Rechnung oder Ausgabe in einem gesperrten Zeitraum wird im 
 
 Die Kleinunternehmerregelung (kleineondernemersregeling) verwalten Sie unter **Einstellungen → MwSt.**: Eine Karte verfolgt Ihren Jahresumsatz gegen die Schwelle von €20.000 mit einem Fortschrittsbalken, erklärt, was die Teilnahme für Ihre Rechnungen bedeutet, und enthält den Anmeldeschalter. Solange Ihr Umsatz noch unter dem KOR-Bereich liegt, zeigt die USt.-Seite einen Hinweis mit Link dorthin.
 
+Überschreiten Sie die Grenze während der Teilnahme, erscheint oben im Rechnungseditor eine Warnung. Sie zeigt Ihr aktuelles KOR-Limit und verlinkt zu **Einstellungen → MwSt.**, damit Sie sich abmelden und keine Rechnung mehr mit 0 % USt. schreiben, sobald USt. fällig ist.
+
 ## KIA und Box 3
 
 KIA (kleinschaligheidsinvesteringsaftrek) und Box 3 sind Einkommensteuerthemen und stehen unter **Berichte → Einkommensteuer**, nicht auf der USt.-Seite. Die Box-3-Karte erscheint nur für Arbeitsbereiche, die das Immobilienmodul nutzen.
