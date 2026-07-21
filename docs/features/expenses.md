@@ -105,7 +105,7 @@ Editing the category, date or amount on an existing expense re-triggers the reco
 Link expenses to:
 
 - **Projects** — Track project costs.
-- **Customers** — Associate purchases with a client (e.g. for billable expenses).
+- **Customers** — Associate purchases with a client (e.g. for rebillable expenses).
 - **Suppliers** — Free-form supplier name; reused vendors surface in the autocomplete.
 
 Filters on the list cover category, project, customer, date range and status (active vs archived).

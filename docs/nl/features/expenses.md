@@ -96,7 +96,7 @@ Het BTW-bedrag wordt automatisch berekend en opgenomen in je [BTW-rapportages](/
 Koppel uitgaven aan:
 
 - **Projecten** — Houd projectkosten nauwkeurig bij
-- **Klanten** — Koppel kosten aan specifieke klanten
+- **Klanten** — Koppel kosten aan specifieke klanten, bijvoorbeeld om ze later door te factureren
 - **Leveranciers** — Registreer aan wie je hebt betaald
 
 ## Bulkacties

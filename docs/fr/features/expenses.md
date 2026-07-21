@@ -96,7 +96,7 @@ Le montant de TVA est calculé automatiquement et inclus dans vos [rapports de T
 Liez les dépenses à :
 
 - **Projets** -- Suivez précisément les coûts par projet
-- **Clients** -- Associez les coûts à des clients spécifiques
+- **Clients** -- Associez les coûts à des clients spécifiques, par exemple pour les refacturer ultérieurement
 - **Fournisseurs** -- Enregistrez à qui vous avez payé
 
 ## Actions groupées
