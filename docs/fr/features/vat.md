@@ -100,7 +100,7 @@ Modifier une facture ou une dépense dans une période verrouillée est bloqué 
 
 Le régime des petites entreprises (kleineondernemersregeling) se gère sous **Paramètres → TVA** : une carte suit votre chiffre d'affaires annuel par rapport au seuil de 20 000 € avec une barre de progression, explique ce que l'adhésion implique pour vos factures et contient l'interrupteur d'adhésion. Tant que votre chiffre d'affaires reste sous la zone KOR, la page TVA affiche un rappel qui y mène.
 
-Si vous dépassez le seuil pendant l'adhésion, une bannière d'avertissement apparaît en haut de l'éditeur de facture. Elle affiche votre limite KOR actuelle et renvoie vers **Paramètres → TVA** pour vous désinscrire, afin que vous ne créiez pas de facture à 0 % de TVA une fois la TVA de nouveau due.
+Si vous dépassez le seuil pendant l'adhésion, une bannière d'avertissement apparaît en haut de l'éditeur de facture. Le titre indique que vous dépassez le seuil KOR, le corps explique que cette facture doit inclure la TVA et non pas 0 %, et le bouton renvoie vers **Paramètres → TVA** pour vous désinscrire auprès du Belastingdienst et désactiver la KOR.
 
 ## KIA et Box 3
 

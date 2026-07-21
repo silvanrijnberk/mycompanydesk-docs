@@ -17,7 +17,7 @@ Aan de slag gaan met MyCompanyDesk duurt maar een paar minuten.
 5. Na verificatie ontvang je een welkomstmail en kom je direct in de app terecht, in je eigen werkruimte.
 
 :::tip Verwijzing via boekhouder
-Heeft je boekhouder of accountant je een verwijzingslink gegeven (bijvoorbeeld `app.mycompanydesk.com/register?partner=HUNCODE`)? Gebruik die link dan om je te registreren. Je aanmelding wordt automatisch aan hen gekoppeld, wat je recht geeft op een gratis Pro-proefperiode van 12 maanden in plaats van de standaard 60 dagen.
+Je kunt ook beginnen via de marketingsite. Als je je bedrijf opzoekt op de landingspagina en selecteert uit het Handelsregister (KVK), neemt de knop je KVK-nummer mee naar `/register`. Na aanmelding en verificatie past de setupwizard dat KVK-nummer automatisch toe en genereert hij direct een thematische website voor je. De site staat klaar maar is nog niet live; de eerste keer dat je de website-editor opent, kun je hem publiceren of eerst aanpassen.
 :::
 
 ## Je werkruimte

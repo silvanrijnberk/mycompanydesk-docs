@@ -25,7 +25,7 @@ Only the customer name is required to continue. You can finish the customer's de
 
 ## Step 2: Your company details (KVK)
 
-This step prefills the sender block of your invoice. Type your company name and pick your business from the live suggestions out of the trade register. MyCompanyDesk then pulls your KVK Basisprofiel and prefills your company details: legal name, trade names, legal form, address and business activity. It only fills fields that are still empty, so anything you already entered stays untouched.
+This step prefills the sender block of your invoice. If you signed up via the marketing site and selected your business in the KVK lookup there, your KVK number is already carried into the wizard and auto-applied as soon as you reach this step. MyCompanyDesk then pulls your KVK Basisprofiel and prefills your company details: legal name, trade names, legal form, address and business activity. It only fills fields that are still empty, so anything you already entered stays untouched.
 
 No match, or no KVK registration?
 
@@ -40,7 +40,7 @@ If you are waiting for your VAT ID from the Tax Authority, or fall under the sma
 
 ## Step 4: Finish setup
 
-The final step confirms your 60-day Pro trial, no credit card needed, and applies everything. It also offers optional next steps from the finish screen, such as setting up a website. Website setup is opt-in: nothing is created unless you choose it from the finish screen or the dashboard checklist.
+The final step confirms your 60-day Pro trial, no credit card needed, and applies everything. It also offers optional next steps from the finish screen, such as setting up a website. Website setup is opt-in, except when you started via the landing-page KVK lookup: in that case a themed site is already generated and simply waits for you in the website editor.
 
 Click **Finish setup** and the wizard applies your company details, VAT status, IBAN and default settings, then takes you to your dashboard.
 

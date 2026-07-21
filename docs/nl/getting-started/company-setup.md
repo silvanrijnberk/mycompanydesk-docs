@@ -25,7 +25,7 @@ Alleen de klantnaam is verplicht om verder te gaan. Je kunt de rest van de klant
 
 ## Stap 2: Je bedrijfsgegevens (KVK)
 
-Deze stap vult het afzenderblok van je factuur. Typ je bedrijfsnaam en kies je bedrijf uit de live suggesties uit het Handelsregister. MyCompanyDesk haalt vervolgens je KVK Basisprofiel op en vult je bedrijfsgegevens alvast in: juridische naam, handelsnamen, rechtsvorm, adres en bedrijfsactiviteit. Alleen lege velden worden gevuld; wat je zelf al had ingevuld blijft staan.
+Deze stap vult het afzenderblok van je factuur. Als je je hebt aangemeld via de marketingsite en je bedrijf hebt geselecteerd in de KVK-lookup daar, wordt je KVK-nummer al meegenomen naar de wizard en automatisch toegepast zodra je deze stap bereikt. MyCompanyDesk haalt vervolgens je KVK Basisprofiel op en vult je bedrijfsgegevens alvast in: juridische naam, handelsnamen, rechtsvorm, adres en bedrijfsactiviteit. Alleen lege velden worden gevuld; wat je zelf al had ingevuld blijft staan.
 
 Geen treffer, of geen KVK-inschrijving?
 
@@ -40,7 +40,7 @@ Als je nog wacht op je btw-nummer van de Belastingdienst, of onder de kleineonde
 
 ## Stap 4: Setup afronden
 
-De laatste stap bevestigt dat je 60 dagen Pro-proefperiode actief is, zonder creditcard, en past alles toe. Ook biedt het afrondscherm optionele vervolgstappen, zoals het instellen van een website. Een website instellen is optioneel: er wordt niets aangemaakt tenzij je dat kiest vanaf het afrondscherm of de dashboard-checklist.
+De laatste stap bevestigt dat je 60 dagen Pro-proefperiode actief is, zonder creditcard, en past alles toe. Ook biedt het afrondscherm optionele vervolgstappen, zoals het instellen van een website. Een website instellen is optioneel, behalve wanneer je bent gestart via de KVK-lookup op de landingspagina: in dat geval is er al een thematische site gegenereerd die op je wacht in de website-editor.
 
 Klik op **Setup afronden** en de wizard past je bedrijfsgegevens, btw-status, IBAN en standaardinstellingen toe, waarna je naar je dashboard gaat.
 

@@ -17,7 +17,7 @@ Der Einstieg in MyCompanyDesk dauert nur wenige Minuten.
 5. Nach der Verifizierung erhalten Sie eine Willkommens-E-Mail und gelangen direkt in die App, in Ihren eigenen Arbeitsbereich.
 
 :::tip Partner-Empfehlung
-Hat Ihr Steuerberater oder Buchhalter Ihnen einen Empfehlungslink gegeben (zum Beispiel `app.mycompanydesk.com/register?partner=DERENCODE`)? Öffnen Sie diesen Link zur Registrierung. Ihre Anmeldung wird automatisch zugeordnet, wodurch Ihr Arbeitsbereich eine 12-monatige kostenlose Pro-Testphase anstelle der standardmäßigen 60 Tage erhält.
+Sie können auch über die Marketingseite beginnen. Wenn Sie Ihr Unternehmen auf der Landing-Page suchen und aus dem niederländischen Handelsregister (KVK) auswählen, trägt der CTA Ihre KVK-Nummer zu `/register`. Nach der Registrierung und Verifizierung wendet der Einrichtungsassistent diese KVK-Nummer automatisch an und erstellt direkt eine thematische Website für Sie. Die Website steht bereit, ist aber noch nicht live; beim ersten Öffnen des Website-Editors können Sie sie veröffentlichen oder zuerst anpassen.
 :::
 
 ## Ihr Arbeitsbereich

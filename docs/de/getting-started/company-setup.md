@@ -25,7 +25,7 @@ Nur der Kundenname ist erforderlich, um fortzufahren. Die restlichen Kundendaten
 
 ## Schritt 2: Ihre Unternehmensdaten (KVK)
 
-Dieser Schritt füllt den Absenderblock Ihrer Rechnung. Tippen Sie Ihren Firmennamen ein und wählen Sie Ihr Unternehmen aus den Live-Vorschlägen aus dem Handelsregister. MyCompanyDesk ruft dann Ihr KVK-Basisprofil ab und füllt Ihre Unternehmensdaten vor: juristischer Name, Handelsnamen, Rechtsform, Adresse und Geschäftstätigkeit. Es werden nur leere Felder gefüllt; was Sie bereits eingetragen haben, bleibt unverändert.
+Dieser Schritt füllt den Absenderblock Ihrer Rechnung. Wenn Sie sich über die Marketingseite registriert und Ihr Unternehmen in der KVK-Suche dort ausgewählt haben, wird Ihre KVK-Nummer bereits in den Assistenten übernommen und sobald Sie diesen Schritt erreichen automatisch angewendet. MyCompanyDesk ruft dann Ihr KVK-Basisprofil ab und füllt Ihre Unternehmensdaten vor: juristischer Name, Handelsnamen, Rechtsform, Adresse und Geschäftstätigkeit. Es werden nur leere Felder gefüllt; was Sie bereits eingetragen haben, bleibt unverändert.
 
 Kein Treffer oder keine KVK-Registrierung?
 
@@ -40,7 +40,7 @@ Wenn Sie noch auf Ihre USt-IdNr. vom Finanzamt warten oder unter die Kleinuntern
 
 ## Schritt 4: Einrichtung abschließen
 
-Der letzte Schritt bestätigt Ihre 60-tägige Pro-Testphase, kostenlos und ohne Kreditkarte, und wendet alles an. Vom Abschlussbildschirm aus werden auch optionale nächste Schritte angeboten, etwa das Einrichten einer Website. Eine Website einzurichten ist optional: es wird nichts erstellt, es sei denn, Sie wählen es auf dem Abschlussbildschirm oder in der Dashboard-Checkliste.
+Der letzte Schritt bestätigt Ihre 60-tägige Pro-Testphase, kostenlos und ohne Kreditkarte, und wendet alles an. Vom Abschlussbildschirm aus werden auch optionale nächste Schritte angeboten, etwa das Einrichten einer Website. Eine Website einzurichten ist optional, außer wenn Sie über die KVK-Suche auf der Landing-Page gestartet sind: In diesem Fall wurde bereits eine thematische Website erstellt, die im Website-Editor auf Sie wartet.
 
 Klicken Sie auf **Einrichtung abschließen** und der Assistent wendet Ihre Unternehmensdaten, USt.-Status, IBAN und Standardeinstellungen an und bringt Sie zu Ihrem Dashboard.
 
