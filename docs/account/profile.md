@@ -37,7 +37,7 @@ Four switches decide what MyCompanyDesk messages you about, in the app and by em
 
 Truly important messages about your account are always sent and cannot be switched off.
 
-Below the switches you can enable **push notifications on this device**, so overdue invoices, payments and deadlines also reach you as notifications on your phone or computer. Your browser or phone will ask for permission the first time.
+Below the switches you can enable **push notifications on this device**, so overdue invoices, payments and deadlines also reach you as notifications on your phone or computer. Your browser or phone will ask for permission the first time. If you skip it, you can always turn it on later from the notification bell at the top of the app.
 
 ## Connected calendars
 

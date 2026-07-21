@@ -37,7 +37,7 @@ Vier schakelaars bepalen waarover MyCompanyDesk je een berichtje stuurt, in de a
 
 Echt belangrijke berichten over je account sturen we altijd; die kun je niet uitzetten.
 
-Onder de schakelaars zet je **pushmeldingen op dit apparaat** aan, zodat achterstallige facturen, betalingen en deadlines je ook als melding op je telefoon of computer bereiken. Je browser of telefoon vraagt de eerste keer om toestemming.
+Onder de schakelaars zet je **pushmeldingen op dit apparaat** aan, zodat achterstallige facturen, betalingen en deadlines je ook als melding op je telefoon of computer bereiken. Je browser of telefoon vraagt de eerste keer om toestemming. Sla je het over, dan kun je het later altijd aanzetten via het belletje voor meldingen bovenaan de app.
 
 ## Gekoppelde agenda's
 

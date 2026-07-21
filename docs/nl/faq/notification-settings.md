@@ -21,6 +21,7 @@ Om je meldingsinstellingen te beheren:
 1. Ga naar Instellingen → "Meldingen"
 2. Zet de vier meldingsonderwerpen aan of uit: te late facturen, ontvangen betalingen, BTW-deadlines en tips. Je krijgt ze in de app en per e-mail; bij BTW-deadlines zit een directe link naar de BTW-pagina in de mail, zodat je op tijd kunt aangifte doen.
 3. Op dezelfde pagina zet je ook pushmeldingen aan voor het apparaat dat je gebruikt
-4. Wijzigingen worden automatisch opgeslagen
+4. Heb je de browservraag weggeklikt? Klik dan op het belletje voor meldingen bovenaan de app en kies **Aanzetten** om pushmeldingen later alsnog in te schakelen
+5. Wijzigingen worden automatisch opgeslagen
 
 Mis je een melding? Controleer dan zowel de meldingsschakelaar als het e-mailadres van je account.

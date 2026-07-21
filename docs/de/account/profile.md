@@ -37,7 +37,7 @@ Vier Schalter legen fest, worüber MyCompanyDesk Ihnen eine Nachricht schickt, i
 
 Wirklich wichtige Nachrichten zu Ihrem Konto senden wir immer; diese lassen sich nicht abschalten.
 
-Unter den Schaltern aktivieren Sie **Push-Benachrichtigungen auf diesem Gerät**, damit überfällige Rechnungen, Zahlungen und Fristen Sie auch als Benachrichtigung auf Ihrem Telefon oder Computer erreichen. Ihr Browser oder Telefon fragt beim ersten Mal um Erlaubnis.
+Unter den Schaltern aktivieren Sie **Push-Benachrichtigungen auf diesem Gerät**, damit überfällige Rechnungen, Zahlungen und Fristen Sie auch als Benachrichtigung auf Ihrem Telefon oder Computer erreichen. Ihr Browser oder Telefon fragt beim ersten Mal um Erlaubnis. Wenn Sie es überspringen, können Sie es später jederzeit über die Benachrichtigungsglocke oben in der App einschalten.
 
 ## Verbundene Kalender
 
