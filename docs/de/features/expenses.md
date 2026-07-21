@@ -96,7 +96,7 @@ Der USt.-Betrag wird automatisch berechnet und in Ihre [USt.-Berichte](/de/featu
 Verknüpfen Sie Ausgaben mit:
 
 - **Projekte** — Projektkosten genau verfolgen
-- **Kunden** — Kosten mit bestimmten Kunden verknüpfen
+- **Kunden** — Kosten mit bestimmten Kunden verknüpfen, zum Beispiel zur späteren Weiterberechnung
 - **Lieferanten** — Erfassen, an wen Sie gezahlt haben
 
 ## Massenaktionen
