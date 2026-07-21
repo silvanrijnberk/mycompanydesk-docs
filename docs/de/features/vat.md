@@ -2,6 +2,8 @@
 title: USt.-Verwaltung
 ---
 
+<!-- TODO(source-missing): RichardTool 5407b44 added historical Dutch VAT rates 6% and 19% to the valid invoice/quote/contract/recurring-invoice/catalog rate set. sources/vat-rates.yaml#countries.NL does not yet list those rates, so do not document the full valid set until the source is updated. -->
+
 # USt.-Verwaltung
 
 Verfolgen Sie vereinnahmte und gezahlte USt., bereiten Sie Ihre Erklärung vor und behalten Sie Fristen im Blick. MyCompanyDesk unterstützt den niederländischen USt.-Ablauf (BTW): Die Seite spiegelt die Aangifte der Belastingdienst, sodass die Zahlen, die Sie sehen, die Zahlen sind, die Sie einreichen.

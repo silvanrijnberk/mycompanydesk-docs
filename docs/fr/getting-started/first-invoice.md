@@ -30,6 +30,7 @@ Chaque ligne contient :
 - **Description** -- Ce que vous facturez
 - **Quantite** -- Nombre d'unites
 - **Prix unitaire** -- Prix par unite
+<!-- TODO(source-missing): RichardTool 5407b44 widened the valid Dutch invoice/catalog VAT-rate set to include historical rates 6% and 19%. sources/vat-rates.yaml#countries.NL currently only lists 0%, 9% and 21%, so this line must stay unchanged until the source is updated. -->
 - **Taux de TVA** -- Pourcentage de TVA applicable (0 %, 9 %, 21 %, etc.)
 
 Cliquez sur **Ajouter un element** pour ajouter d'autres lignes. Le total est calcule automatiquement, TVA incluse.

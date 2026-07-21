@@ -30,6 +30,7 @@ Each line item has:
 - **Description** — What you're billing for
 - **Quantity** — Number of units
 - **Unit price** — Price per unit
+<!-- TODO(source-missing): RichardTool 5407b44 widened the valid Dutch invoice/catalog VAT-rate set to include historical rates 6% and 19%. sources/vat-rates.yaml#countries.NL currently only lists 0%, 9% and 21%, so this line must stay unchanged until the source is updated. -->
 - **VAT rate** — Applicable VAT percentage (0%, 9%, 21%, etc.)
 
 Click **Add item** to add more line items. The total is calculated automatically including VAT.

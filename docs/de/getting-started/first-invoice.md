@@ -30,6 +30,7 @@ Jede Position enthält:
 - **Beschreibung** — Wofür Sie abrechnen
 - **Menge** — Anzahl der Einheiten
 - **Einzelpreis** — Preis pro Einheit
+<!-- TODO(source-missing): RichardTool 5407b44 widened the valid Dutch invoice/catalog VAT-rate set to include historical rates 6% and 19%. sources/vat-rates.yaml#countries.NL currently only lists 0%, 9% and 21%, so this line must stay unchanged until the source is updated. -->
 - **USt.-Satz** — Anwendbarer USt.-Prozentsatz (0 %, 9 %, 21 % usw.)
 
 Klicken Sie auf **Position hinzufügen**, um weitere Positionen hinzuzufügen. Die Gesamtsumme wird automatisch inklusive USt. berechnet.

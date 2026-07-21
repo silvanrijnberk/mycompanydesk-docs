@@ -2,6 +2,8 @@
 title: BTW-beheer
 ---
 
+<!-- TODO(source-missing): RichardTool 5407b44 added historical Dutch VAT rates 6% and 19% to the valid invoice/quote/contract/recurring-invoice/catalog rate set. sources/vat-rates.yaml#countries.NL does not yet list those rates, so do not document the full valid set until the source is updated. -->
+
 # BTW-beheer
 
 Volg ontvangen en betaalde BTW, bereid je aangifte voor en blijf deadlines voor. MyCompanyDesk ondersteunt de Nederlandse BTW-stroom: de pagina spiegelt de aangifte van de Belastingdienst, zodat de cijfers die je ziet de cijfers zijn die je indient.

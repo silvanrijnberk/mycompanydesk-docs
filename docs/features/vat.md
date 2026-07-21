@@ -3,6 +3,8 @@ title: VAT
 last_verified: 2026-07-02
 ---
 
+<!-- TODO(source-missing): RichardTool 5407b44 added historical Dutch VAT rates 6% and 19% to the valid invoice/quote/contract/recurring-invoice/catalog rate set. sources/vat-rates.yaml#countries.NL does not yet list those rates, so do not document the full valid set until the source is updated. -->
+
 # VAT
 
 Track collected and paid VAT, prepare your aangifte, and stay ahead of deadlines. MyCompanyDesk supports the Dutch VAT flow (BTW): the page mirrors the Belastingdienst aangifte, so the numbers you see are the numbers you file.

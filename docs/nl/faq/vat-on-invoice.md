@@ -11,6 +11,7 @@ chatbot:
 
 Zo stel je BTW in op een factuur:
 1. Bewerk of maak een factuur
+<!-- TODO(source-missing): RichardTool 5407b44 widened the valid Dutch invoice/catalog VAT-rate set to include historical rates 6% and 19%. sources/vat-rates.yaml#countries.NL currently only lists 0%, 9% and 21%, so this line must stay unchanged until the source is updated. -->
 2. Kies per factuurregel het BTW-tarief (bijv. 21%, 9%, 0%)
 3. Het systeem berekent de BTW automatisch
 4. De BTW-totalen verschijnen in de samenvatting van de factuur
