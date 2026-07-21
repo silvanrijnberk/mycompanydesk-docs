@@ -100,6 +100,8 @@ Modifier une facture ou une dépense dans une période verrouillée est bloqué 
 
 Le régime des petites entreprises (kleineondernemersregeling) se gère sous **Paramètres → TVA** : une carte suit votre chiffre d'affaires annuel par rapport au seuil de 20 000 € avec une barre de progression, explique ce que l'adhésion implique pour vos factures et contient l'interrupteur d'adhésion. Tant que votre chiffre d'affaires reste sous la zone KOR, la page TVA affiche un rappel qui y mène.
 
+Si vous dépassez le seuil pendant l'adhésion, une bannière d'avertissement apparaît en haut de l'éditeur de facture. Elle affiche votre limite KOR actuelle et renvoie vers **Paramètres → TVA** pour vous désinscrire, afin que vous ne créiez pas de facture à 0 % de TVA une fois la TVA de nouveau due.
+
 ## KIA et Box 3
 
 La KIA (kleinschaligheidsinvesteringsaftrek) et la Box 3 relèvent de l'impôt sur le revenu et se trouvent sous **Rapports → Impôt sur le revenu**, pas sur la page TVA. La carte Box 3 n'apparaît que pour les espaces de travail utilisant le module immobilier.

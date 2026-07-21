@@ -101,6 +101,8 @@ Editing an invoice or expense inside a locked period is blocked at the form: the
 
 The kleineondernemersregeling is managed under **Settings → BTW**: a card tracks your year revenue against the €20,000 threshold with a progress bar, explains what enrolment means for your invoicing, and has the enrolment toggle. While your revenue is still below the KOR range, the VAT page shows a hint linking there.
 
+If you pass the threshold while still enrolled, a warning banner appears at the top of the invoice editor so you do not accidentally issue a 0% invoice once VAT is due again. The banner shows your current KOR limit and links to **Settings → BTW** to deregister.
+
 ## KIA and Box 3
 
 KIA (kleinschaligheidsinvesteringsaftrek) and Box 3 are income tax topics and live under **Reports → Income tax**, not on the VAT page. The Box 3 card only appears for workspaces using the properties module.
