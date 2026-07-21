@@ -18,4 +18,6 @@ So legen Sie die MwSt. auf einer Rechnung fest:
 
 Neue Rechnungspositionen erhalten automatisch Ihren Standard-MwSt.-Satz. Um diesen Standard zu ändern, gehen Sie zu Einstellungen → "MwSt." und passen Sie den Standardsatz an. Der Satz ist immer 0 %, wenn die Rechnung den Reverse-Charge-Schalter verwendet.
 
+MyCompanyDesk akzeptiert die aktuellen niederländischen Sätze 0%, 9% und 21% (sources/vat-rates.yaml#countries.NL.zero/reduced/standard).
+
 Tipp: Stellen Sie einem Geschäftskunden in der EU eine Rechnung? Nutzen Sie den Schalter "Reverse Charge (Steuerschuldnerschaft des Leistungsempfängers)", statt selbst 0 % zu wählen.

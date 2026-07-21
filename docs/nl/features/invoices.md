@@ -107,6 +107,8 @@ Selecteer meerdere facturen uit de lijst om acties in bulk uit te voeren:
 - **Archiveren** — Verplaats facturen naar het archief
 - **Verwijderen** — Verwijder facturen permanent
 
+Bulksgewijs afronden voert dezelfde BTW- en statuscontroles uit als bij het versturen van een enkele factuur. Facturen die een controle niet doorstaan, worden overgeslagen; het resultatenscherm geeft aan waarom.
+
 ## Betaallinks
 
 Wanneer je een factuur verstuurt, wordt een unieke betaallink gegenereerd. Je klant kan:

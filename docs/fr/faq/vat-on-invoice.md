@@ -18,4 +18,6 @@ Pour définir la TVA sur une facture :
 
 Les nouvelles lignes de facture reçoivent par défaut votre taux de TVA standard. Pour modifier ce taux par défaut, allez dans Paramètres → "TVA" et ajustez-le. Le taux est toujours de 0 % quand la facture utilise l'interrupteur d'autoliquidation.
 
+MyCompanyDesk accepte les taux néerlandais actuels de 0%, 9% et 21% (sources/vat-rates.yaml#countries.NL.zero/reduced/standard).
+
 Astuce : vous facturez un client professionnel dans l'UE ? Utilisez l'interrupteur "Autoliquidation de la TVA" plutôt que de choisir 0 % vous-même.

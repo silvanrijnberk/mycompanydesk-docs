@@ -18,4 +18,6 @@ Zo stel je BTW in op een factuur:
 
 Nieuwe factuurregels krijgen automatisch je standaard-BTW-tarief. Wil je dat standaardtarief aanpassen, ga dan naar Instellingen → "BTW". Het tarief is altijd 0% wanneer de factuur de schakelaar BTW verlegd gebruikt.
 
+MyCompanyDesk accepteert de huidige Nederlandse tarieven 0%, 9% en 21% (sources/vat-rates.yaml#countries.NL.zero/reduced/standard).
+
 Tip: Factureer je een zakelijke klant in de EU? Gebruik dan de schakelaar "BTW verlegd" in plaats van zelf 0% te kiezen.

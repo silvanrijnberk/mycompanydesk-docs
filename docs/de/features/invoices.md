@@ -107,6 +107,8 @@ Wählen Sie mehrere Rechnungen aus der Liste, um Aktionen in großem Umfang durc
 - **Archivieren** — Rechnungen ins Archiv verschieben
 - **Löschen** — Rechnungen dauerhaft entfernen
 
+Massenhaftes Freigeben führt dieselben MwSt.- und Statusprüfungen durch wie beim Versenden einer einzelnen Rechnung. Rechnungen, die eine Prüfung nicht bestehen, werden übersprungen; die Ergebnisübersicht zeigt den Grund an.
+
 ## Zahlungslinks
 
 Wenn Sie eine Rechnung versenden, wird ein eindeutiger Zahlungslink generiert. Ihr Kunde kann:

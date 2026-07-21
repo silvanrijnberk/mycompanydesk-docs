@@ -15,6 +15,8 @@ To create a reverse charge (EU) invoice:
 4. The VAT on all line items switches to 0% automatically, no manual changes needed
 5. Preview the invoice to confirm the reverse charge note, then send it
 
+Reverse-charge invoices are checked before sending: the customer must have a VAT number and the invoice must use 0% (sources/vat-rates.yaml#countries.NL.zero) on every line. These checks also run when you finalize or send invoices in bulk.
+
 Tip: The toggle is always available on the invoice form; you do not need to enable anything in your settings first.
 
 ## Reverse-charge expenses
