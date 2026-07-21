@@ -16,6 +16,7 @@ Snelle antwoorden op veelvoorkomende vragen over MyCompanyDesk. Elk antwoord mat
 - [Automatic Reminders](/nl/faq/automatic-reminders)
 - [Bank details](/nl/faq/bank-details)
 - [Billing and subscription help](/nl/faq/billing-friction)
+- [Zelf boekhouden zonder boekhouder](/nl/faq/bookkeeping-without-accountant)
 - [Bulk actions](/nl/faq/bulk-actions)
 - [Bulk Delete](/nl/faq/bulk-delete)
 - [Cancel invoice](/nl/faq/cancel-invoice)
