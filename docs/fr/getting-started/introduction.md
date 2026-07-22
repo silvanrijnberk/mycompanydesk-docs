@@ -31,12 +31,12 @@ MyCompanyDesk propose un plan Gratuit et deux plans payants : Starter et Pro. Le
 
 | Fonctionnalité | Gratuit | Starter | Pro |
 |---|---|---|---|
-| Factures | 10 pour démarrer, puis 2/mois | Illimité | Illimité |
-| Devis | 3/mois | Illimité | Illimité |
-| Suivi des dépenses | 10/mois | Complet | Complet |
+| Factures | Illimité | Illimité | Illimité |
+| Devis | Illimité | Illimité | Illimité |
+| Suivi des dépenses | Illimité | Illimité | Illimité |
 | Numérisation de reçus | Oui (3 scans/mois) | Oui (30 scans/mois) | Oui (200 scans/mois) |
 | Suggestions IA | Oui | Oui | Oui |
-| Image de marque personnalisée | - | Oui | Oui |
+| Image de marque personnalisée | Oui | Oui | Oui |
 | Saisie de temps, outils linguistiques | - | Oui | Oui |
 | Page entreprise publique | Oui | Oui | Oui |
 | Contrats et projets | - | Oui | Oui |

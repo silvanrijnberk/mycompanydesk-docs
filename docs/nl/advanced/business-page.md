@@ -387,11 +387,11 @@ Zie [Offertes - Offerteaanvragen](/nl/features/quotes#offerteaanvragen) voor det
 
 ## Abonnementsvereiste
 
-De openbare website (bedrijfspagina en sitebouwer) is een betaalde functie. De site is zichtbaar zolang je werkruimte een Starter- of Pro-abonnement heeft. Een Gratis-werkruimte houdt de site live op het werkruimte-subdomein met een klein MyCompanyDesk-badge; verhuizen naar een eigen domein (Pro) verwijdert de badge.
+De openbare website (bedrijfspagina en sitebouwer) is beschikbaar op elk abonnement en blijft online. De MyCompanyDesk-badge is adresgebaseerd: hij verschijnt op een werkruimte-subdomein en verdwijnt op een eigen domein (Pro).
 
-- **Betaald of in proefperiode**: De site is altijd zichtbaar, zonder MyCompanyDesk-badge op een eigen domein en met een klein badge op het werkruimte-subdomein.
-- **Vervallen naar Gratis**: De site blijft zichtbaar op het werkruimte-subdomein met een klein MyCompanyDesk-badge.
-- **Onzekere toestand**: Als het systeem niet kan bepalen welk abonnement je hebt, blijft de site online om te voorkomen dat een site onterecht offline gaat.
+- **Gratis**: de site is zichtbaar op het werkruimte-subdomein met een kleine MyCompanyDesk-badge.
+- **Starter en Pro**: de site is altijd zichtbaar; geen badge op een eigen domein, badge op het werkruimte-subdomein.
+- **Onzekere toestand**: als het systeem niet kan bepalen welk abonnement je hebt, blijft de site online om te voorkomen dat een site onterecht offline gaat.
 
 Deze poort geldt voor alle publieke paden: de bedrijfspagina, de servicedetailroute en de pagina's van de sitebouwer. De controle gebeurt bij elk verzoek, voor elke cachinglaag, zodat het klopt ook als je abonnement midden in een cacheperiode verandert.
 

@@ -1,6 +1,6 @@
 ---
 title: "Plan & payments"
-last_verified: 2026-07-02
+last_verified: 2026-07-22
 ---
 
 # Plan & payments
@@ -23,9 +23,11 @@ Workspaces on such an arrangement are regular Pro customers in every respect: sa
 
 MyCompanyDesk has a Free plan plus two paid plans. Free is a product in its own right, offered at signup and kept indefinitely. New customers get a 60-day Pro trial, and a workspace that does not convert lands on Free rather than being locked out.
 
+<!-- TODO(source-missing): new Starter/Pro monthly and yearly prices need a pricing source under sources/; the price table below still shows the previous amounts until the source is added -->
+
 | Plan | Monthly | Yearly | Description |
 |---|---|---|---|
-| **Free** | €0.00 | €0.00 | Start invoicing and put your website online, with a small MyCompanyDesk credit on your documents |
+| **Free** | €0.00 | €0.00 | Unlimited invoicing, quotes and expenses, plus your own website on mycompanydesk.site |
 | **Starter** | €10.00 | €100.00 | Everything to do your work: invoices, quotes, expenses, hours and projects, on your own page |
 | **Pro** | €25.00 | €250.00 | Grow your business: own domain and website, business inbox, bank connection, team access, API and more |
 
@@ -39,9 +41,9 @@ Quota-limited features (monthly caps, except where noted):
 
 | Metric | Free | Starter | Pro |
 |---|---|---|---|
-| Invoices created | 10 to start, then 2 per month | unlimited | unlimited |
-| Expenses created | 10 | unlimited | unlimited |
-| Quotes created | 3 | unlimited | unlimited |
+| Invoices created | unlimited | unlimited | unlimited |
+| Expenses created | unlimited | unlimited | unlimited |
+| Quotes created | unlimited | unlimited | unlimited |
 | Storage | 100 MB | 2 GB | unlimited |
 | People with access | just you | just you | unlimited |
 | Custom domains | 0 | 0 | 5 |
@@ -52,7 +54,7 @@ Quota-limited features (monthly caps, except where noted):
 
 Note: AI caps are monthly, not daily. They reset on the first of each calendar month.
 
-The Free invoice allowance is cumulative rather than monthly: the first 10 invoices are free in total, not 10 every month. Once that allowance is used up, a Free workspace can still create 2 invoices per month, so you are never fully blocked from getting paid. Invoices you already created always stay viewable and exportable; only creating new ones is capped.
+Free invoicing is unlimited: there is no monthly cap and no lifetime allowance. Existing invoices always stay viewable and exportable.
 
 Features unlocked per plan:
 
@@ -70,13 +72,13 @@ Features unlocked per plan:
 | Rental properties * | no | yes | yes |
 | Recurring invoices and expenses | no | yes | yes |
 | Time registration | no | yes | yes |
-| Custom branding | no | yes | yes |
+| Custom branding | yes | yes | yes |
 | Language tools | no | yes | yes |
 | Description enrichment | no | yes | yes |
 | Public business page | yes | yes | yes |
 | Company subdomain and style presets | yes | yes | yes |
 | Team access (unlimited people) | no | no | yes |
-| Clean invoices and quotes sent to your clients | no | yes | yes |
+| Clean invoices and quotes sent to your clients | yes | yes | yes |
 | Advanced reports | no | no | yes |
 | Custom domain, domain routing, full website on your domain | no | no | yes |
 | Business inbox | no | no | yes |

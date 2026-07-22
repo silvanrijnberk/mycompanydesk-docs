@@ -387,11 +387,11 @@ Consultez [Devis -- Demandes de devis](/fr/features/quotes#quote-requests) pour 
 
 ## Condition d'abonnement
 
-Le site web public (page entreprise et constructeur de site) est une fonction payante. Le site est visible tant que votre espace de travail est sur un plan Starter ou Pro. Un espace de travail Gratuit garde le site en ligne sur le sous-domaine de l'espace avec un petit badge MyCompanyDesk ; le déplacer vers un domaine personnalisé (Pro) supprime le badge.
+Le site web public (page entreprise et constructeur de site) est disponible sur tous les plans et reste en ligne. Le badge MyCompanyDesk dépend de l'adresse : il apparaît sur le sous-domaine de l'espace de travail et disparaît sur un domaine personnalisé (Pro).
 
-- **Payant ou en essai**: Le site est toujours visible, sans badge MyCompanyDesk sur un domaine personnalisé et avec un petit badge sur le sous-domaine de l'espace de travail.
-- **Retombe en Gratuit**: Le site reste visible sur le sous-domaine de l'espace de travail avec un petit badge MyCompanyDesk.
-- **Etat incertain**: Si le système ne peut pas déterminer votre plan, le site reste en ligne pour éviter une coupure accidentelle.
+- **Gratuit**: le site est visible sur le sous-domaine de l'espace avec un petit badge MyCompanyDesk.
+- **Starter et Pro**: le site est toujours visible; pas de badge sur un domaine personnalisé, badge sur le sous-domaine de l'espace.
+- **Etat incertain**: si le système ne peut pas déterminer votre plan, le site reste en ligne pour éviter une coupure accidentelle.
 
 Ce contrôle s'applique à tous les chemins publics: la page entreprise, la route de détail des services et les pages du constructeur de site. La vérification a lieu à chaque requête, avant toute couche de cache, afin de rester exacte même si votre abonnement change en cours de cache.
 

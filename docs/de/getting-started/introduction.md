@@ -31,12 +31,12 @@ MyCompanyDesk hat einen Gratis-Tarif und zwei kostenpflichtige Tarife: Starter u
 
 | Funktion | Gratis | Starter | Pro |
 |---|---|---|---|
-| Rechnungen | 10 für den Start, danach 2/Monat | Unbegrenzt | Unbegrenzt |
-| Angebote | 3/Monat | Unbegrenzt | Unbegrenzt |
-| Ausgabenverfolgung | 10/Monat | Vollständig | Vollständig |
+| Rechnungen | Unbegrenzt | Unbegrenzt | Unbegrenzt |
+| Angebote | Unbegrenzt | Unbegrenzt | Unbegrenzt |
+| Ausgabenverfolgung | Unbegrenzt | Unbegrenzt | Unbegrenzt |
 | Belegscanner | Ja (3 Scans/Monat) | Ja (30 Scans/Monat) | Ja (200 Scans/Monat) |
 | KI-Vorschläge | Ja | Ja | Ja |
-| Individuelles Branding | - | Ja | Ja |
+| Individuelles Branding | Ja | Ja | Ja |
 | Zeiterfassung, Sprachwerkzeuge | - | Ja | Ja |
 | Öffentliche Unternehmensseite | Ja | Ja | Ja |
 | Verträge und Projekte | - | Ja | Ja |
