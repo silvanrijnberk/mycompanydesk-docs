@@ -1,6 +1,6 @@
 ---
 title: "Payment methods"
-last_verified: 2026-07-02
+last_verified: 2026-07-22
 chatbot:
   triggers:
     - "payment methods"
@@ -45,7 +45,7 @@ Mollie supports iDEAL, Bancontact, credit card, and bank transfer, ideal for Dut
 
 Online invoice payments carry a small service fee on the Free plan. When a customer pays an invoice online, € 0.50 is collected via your Mollie or Stripe account as an application fee. Online payments on Starter and Pro are not charged. The fee is shown next to **Online betalingen** on `/settings/betalen` while your workspace is on the Free plan.
 
-The exact amount is configured server-side. The in-app hint currently shows € 0.50, matching `config.billing.freeTierSurchargeCents` in `apps/api/src/config/env.js`. A minimum invoice amount can also be configured via `config.billing.freeTierSurchargeMinInvoiceCents`; if that value changes, this page and the in-app hint must be updated together.
+The exact amount and minimum invoice threshold are configured server-side. The in-app hint currently shows € 0.50 per online invoice payment from € 5, matching `config.billing.freeTierSurchargeCents` and `freeTierSurchargeMinInvoiceCents` in `apps/api/src/config/env.js`. If either value changes, this page and the in-app hint must be updated together.
 
 To disconnect, click **Loskoppelen** on the relevant card. If there are payments from the last 24 hours, a warning appears reminding you that pending webhooks may still arrive and that refunds for those payments must be handled manually. After disconnecting, customers can no longer pay via that processor.
 
