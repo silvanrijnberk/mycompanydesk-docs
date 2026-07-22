@@ -387,11 +387,11 @@ See [Quotes - Quote Requests](/features/quotes#quote-requests) for details on ma
 
 ## Subscription requirement
 
-The public website (business page and site builder) is a paid feature. It is visible while your workspace is on a Starter or Pro plan. A Free workspace keeps the site live on the workspace subdomain with a small MyCompanyDesk badge; moving to a custom domain (Pro) removes the badge.
+The public website (business page and site builder) is available on every plan and stays online. MyCompanyDesk branding is address-based: the badge appears when the site is served on a workspace subdomain, and it is removed when the site is served on a custom domain (Pro).
 
-- **Paid or trialing**: The site is always visible, with no MyCompanyDesk badge when served on a custom domain and a small badge when served on the workspace subdomain.
-- **Lapsed to Free**: The site remains visible on the workspace subdomain with a small MyCompanyDesk badge.
-- **Uncertain state**: If the system cannot determine your plan, the site stays up rather than risking an accidental takedown.
+- **Free**: the site is visible on the workspace subdomain with a small MyCompanyDesk badge.
+- **Starter and Pro**: the site is always visible; no badge on a custom domain, badge on the workspace subdomain.
+- **Uncertain state**: if the system cannot determine your plan, the site stays up rather than risking an accidental takedown.
 
 This gate applies to all public serving paths: the business page, the service-detail route, and the site builder's rendered pages. It is checked on every request, before any caching layer, so it stays accurate even if your subscription changes mid-cache.
 

@@ -1,6 +1,6 @@
 ---
 title: "Abonnement & Zahlungen"
-last_verified: 2026-07-02
+last_verified: 2026-07-22
 ---
 
 # Abonnement & Zahlungen
@@ -23,9 +23,11 @@ Arbeitsbereiche mit einer solchen Vereinbarung sind in jeder Hinsicht normale Pr
 
 MyCompanyDesk hat einen Gratis-Tarif und zwei kostenpflichtige Tarife. Gratis ist ein eigenständiges Produkt, das bei der Anmeldung angeboten wird und dauerhaft verfügbar bleibt. Neue Kunden erhalten eine 60-tägige Pro-Testphase; ein Arbeitsbereich, der nicht umsteigt, landet auf Gratis.
 
+<!-- TODO(source-missing): neue Starter/Pro-Monats- und Jahrespreise brauchen eine Quelle unter sources/; die Preistabelle unten zeigt noch die bisherigen Beträge, bis die Quelle hinzugefügt wird -->
+
 | Tarif | Monatlich | Jährlich | Beschreibung |
 |---|---|---|---|
-| **Gratis** | 0,00 EUR | 0,00 EUR | Beginnen Sie mit der Rechnungsstellung und stellen Sie Ihre Website online, mit einem kleinen MyCompanyDesk-Hinweis auf Ihren Dokumenten |
+| **Gratis** | 0,00 EUR | 0,00 EUR | Unbegrenzt Rechnungen, Angebote und Ausgaben, plus Ihre eigene Website auf mycompanydesk.site |
 | **Starter** | 10,00 EUR | 100,00 EUR | Alles für Ihre Arbeit: Rechnungen, Angebote, Ausgaben, Stunden und Projekte, auf Ihrer eigenen Seite |
 | **Pro** | 25,00 EUR | 250,00 EUR | Lassen Sie Ihr Unternehmen wachsen: eigene Domain und Website, geschäftliche Inbox, Bankverbindung, Teamzugang, API und mehr |
 
@@ -39,9 +41,9 @@ Funktionen mit Nutzungslimits (monatliche Limits, soweit nicht anders angegeben)
 
 | Metrik | Gratis | Starter | Pro |
 |---|---|---|---|
-| Erstellte Rechnungen | 10 für den Start, danach 2/Monat | unbegrenzt | unbegrenzt |
-| Erstellte Ausgaben | 10 | unbegrenzt | unbegrenzt |
-| Erstellte Angebote | 3 | unbegrenzt | unbegrenzt |
+| Erstellte Rechnungen | unbegrenzt | unbegrenzt | unbegrenzt |
+| Erstellte Ausgaben | unbegrenzt | unbegrenzt | unbegrenzt |
+| Erstellte Angebote | unbegrenzt | unbegrenzt | unbegrenzt |
 | Speicher | 100 MB | 2 GB | unbegrenzt |
 | Personen mit Zugang | nur Sie | nur Sie | unbegrenzt |
 | Eigene Domains | 0 | 0 | 5 |
@@ -52,7 +54,7 @@ Funktionen mit Nutzungslimits (monatliche Limits, soweit nicht anders angegeben)
 
 Hinweis: KI-Limits gelten monatlich, nicht täglich. Sie werden am Ersten jedes Kalendermonats zurückgesetzt.
 
-Das Gratis-Rechnungskontingent ist kumulativ und nicht monatlich: die ersten 10 Rechnungen sind insgesamt gratis, nicht 10 pro Monat. Danach kann ein Gratis-Arbeitsbereich weiterhin 2 Rechnungen pro Monat erstellen, damit Sie nie komplett blockiert sind, bezahlt zu werden. Bereits erstellte Rechnungen bleiben jederzeit sichtbar und exportierbar; nur das Erstellen neuer Rechnungen ist begrenzt.
+Rechnungen im Gratis-Tarif sind unbegrenzt: kein monatliches Limit und kein lebenslanges Kontingent. Bereits erstellte Rechnungen bleiben jederzeit sichtbar und exportierbar.
 
 Funktionen pro Tarif:
 
@@ -70,13 +72,13 @@ Funktionen pro Tarif:
 | Mietobjekte * | nein | ja | ja |
 | Wiederkehrende Rechnungen und Ausgaben | nein | ja | ja |
 | Zeiterfassung | nein | ja | ja |
-| Individuelles Branding | nein | ja | ja |
+| Individuelles Branding | ja | ja | ja |
 | Sprachwerkzeuge | nein | ja | ja |
 | Beschreibungsanreicherung | nein | ja | ja |
 | Öffentliche Unternehmensseite | ja | ja | ja |
 | Firmen-Subdomain und Stilvorlagen | ja | ja | ja |
 | Teamzugang (unbegrenzt viele Personen) | nein | nein | ja |
-| Rechnungen und Angebote ohne MyCompanyDesk-Hinweis | nein | ja | ja |
+| Rechnungen und Angebote ohne MyCompanyDesk-Hinweis | ja | ja | ja |
 | Erweiterte Berichte | nein | nein | ja |
 | Eigene Domain, Domain-Routing, vollständige Website auf Ihrer Domain | nein | nein | ja |
 | Geschäftliche Inbox | nein | nein | ja |

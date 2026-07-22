@@ -1,6 +1,6 @@
 ---
 title: Abonnement et paiements
-last_verified: 2026-07-02
+last_verified: 2026-07-22
 ---
 
 # Abonnement et paiements
@@ -23,9 +23,11 @@ Les espaces de travail bénéficiant d'un tel accord sont des clients Pro comme 
 
 MyCompanyDesk propose un plan Gratuit et deux plans payants. Le plan Gratuit est un produit à part entière, proposé à l'inscription et conservé indéfiniment. Les nouveaux clients bénéficient d'un essai Pro de 60 jours ; un espace de travail qui ne convertit pas atterrit sur Gratuit.
 
+<!-- TODO(source-missing): nouveaux prix mensuels et annuels Starter/Pro nécessitent une source sous sources/ ; le tableau de prix ci-dessous affiche encore les anciens montants jusqu'à l'ajout de la source -->
+
 | Plan | Mensuel | Annuel | Description |
 |---|---|---|---|
-| **Gratuit** | 0,00 EUR | 0,00 EUR | Commencez à facturer et mettez votre site en ligne, avec une petite mention MyCompanyDesk sur vos documents |
+| **Gratuit** | 0,00 EUR | 0,00 EUR | Facturation, devis et dépenses illimités, plus votre propre site sur mycompanydesk.site |
 | **Starter** | 10,00 EUR | 100,00 EUR | Tout pour faire votre travail : factures, devis, dépenses, heures et projets, sur votre propre page |
 | **Pro** | 25,00 EUR | 250,00 EUR | Faites grandir votre entreprise : domaine et site web personnels, boîte mail professionnelle, connexion bancaire, accès équipe, API et plus |
 
@@ -39,9 +41,9 @@ Fonctionnalités avec limites d'utilisation (limites mensuelles, sauf indication
 
 | Métrique | Gratuit | Starter | Pro |
 |---|---|---|---|
-| Factures créées | 10 pour démarrer, puis 2/mois | illimité | illimité |
-| Dépenses créées | 10 | illimité | illimité |
-| Devis créés | 3 | illimité | illimité |
+| Factures créées | illimité | illimité | illimité |
+| Dépenses créées | illimité | illimité | illimité |
+| Devis créés | illimité | illimité | illimité |
 | Stockage | 100 Mo | 2 Go | illimité |
 | Personnes avec accès | vous seul | vous seul | illimité |
 | Domaines personnalisés | 0 | 0 | 5 |
@@ -52,7 +54,7 @@ Fonctionnalités avec limites d'utilisation (limites mensuelles, sauf indication
 
 Remarque : les limites IA sont mensuelles, et non quotidiennes. Elles sont réinitialisées le premier de chaque mois civil.
 
-L'allocation de factures Gratuit est cumulative, pas mensuelle : les 10 premières factures sont gratuites au total, et non 10 par mois. Ensuite, un espace de travail Gratuit peut toujours créer 2 factures par mois, pour que vous ne soyez jamais totalement bloqué pour être payé. Les factures déjà créées restent toujours visibles et exportables ; seule la création de nouvelles factures est plafonnée.
+La facturation sur le plan Gratuit est illimitée : aucun plafond mensuel ni aucun plafond cumulé. Les factures déjà créées restent toujours visibles et exportables.
 
 Fonctionnalités par plan :
 
@@ -70,13 +72,13 @@ Fonctionnalités par plan :
 | Biens locatifs * | non | oui | oui |
 | Factures et dépenses récurrentes | non | oui | oui |
 | Saisie de temps | non | oui | oui |
-| Image de marque personnalisée | non | oui | oui |
+| Image de marque personnalisée | oui | oui | oui |
 | Outils linguistiques | non | oui | oui |
 | Enrichissement des descriptions | non | oui | oui |
 | Page entreprise publique | oui | oui | oui |
 | Sous-domaine d'entreprise et préréglages de style | oui | oui | oui |
 | Accès équipe (personnes illimitées) | non | non | oui |
-| Factures et devis sans mention MyCompanyDesk | non | oui | oui |
+| Factures et devis sans mention MyCompanyDesk | oui | oui | oui |
 | Rapports avancés | non | non | oui |
 | Domaine personnalisé, routage de domaine, site web complet sur votre domaine | non | non | oui |
 | Boîte mail professionnelle | non | non | oui |

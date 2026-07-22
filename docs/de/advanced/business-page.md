@@ -387,10 +387,10 @@ Siehe [Angebote - Angebotsanfragen](/de/features/quotes#angebotsanfragen) für D
 
 ## Abonnement-Voraussetzung
 
-Die öffentliche Website (Unternehmensseite und Website-Builder) ist eine kostenpflichtige Funktion. Die Website ist sichtbar, solange Ihr Arbeitsbereich einen Starter- oder Pro-Tarif hat. Ein Gratis-Arbeitsbereich hält die Website auf der Workspace-Subdomain-Adresse live mit einem kleinen MyCompanyDesk-Badge; die einzige Möglichkeit, das Badge zu entfernen, ist die Site auf eine eigene Domain (Pro) umzuziehen.
+Die öffentliche Website (Unternehmensseite und Website-Builder) ist in jedem Tarif verfügbar und bleibt online. Das MyCompanyDesk-Badge ist adressbasiert: es erscheint auf der Workspace-Subdomain und entfällt auf einer eigenen Domain (Pro).
 
-- **Bezahlt oder in Testphase**: Die Website ist immer sichtbar, ohne MyCompanyDesk-Badge auf einer eigenen Domain und mit einem kleinen Badge auf der Workspace-Subdomain.
-- **Auf Gratis zurückgefallen**: Die Website bleibt auf der Workspace-Subdomain-Adresse mit einem kleinen MyCompanyDesk-Badge sichtbar.
+- **Gratis**: die Website ist auf der Workspace-Subdomain-Adresse mit einem kleinen MyCompanyDesk-Badge sichtbar.
+- **Starter und Pro**: die Website ist immer sichtbar; kein Badge auf einer eigenen Domain, Badge auf der Workspace-Subdomain.
 - **Ungewisser Zustand**: Wenn das System nicht feststellen kann, welchen Tarif Sie haben, bleibt die Website online, um ein versehentliches Abschalten zu vermeiden.
 
 Diese Sperre gilt für alle öffentlichen Pfade: die Unternehmensseite, die Service-Detail-Route und die Seiten des Website-Builders. Die Prüfung erfolgt bei jeder Anfrage, vor jeder Caching-Schicht, damit sie auch dann korrekt ist, wenn sich Ihr Abonnement während einer Cache-Periode ändert.
