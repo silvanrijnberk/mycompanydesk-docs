@@ -23,10 +23,11 @@ Werkruimtes met zo'n afspraak zijn in alle opzichten gewone Pro-klanten: dezelfd
 
 MyCompanyDesk heeft een Gratis-abonnement en twee betaalde abonnementen. Gratis is een zelfstandig product: je kunt ermee starten en het blijft beschikbaar zolang je wilt. Nieuwe klanten krijgen een Pro-proefperiode van 60 dagen; een werkruimte die niet overstapt, belandt op Gratis.
 
-<!-- TODO(source-missing): nieuwe Starter/Pro-maand- en jaartarieven hebben een bron nodig onder sources/; de prijstabel hieronder toont nog de oude bedragen tot de bron is toegevoegd -->
+<!-- TODO(source-missing): nieuwe Starter/Pro-maand- en jaartarieven én het Gratis-tarief factuurlimiet (10 om te starten, daarna 2 per maand) hebben een bron nodig onder sources/; de tabel toont de nieuwe maand-/jaartarieven maar de Gratis-beschrijving zegt nog onbeperkt factureren tot de bron is toegevoegd -->
 
 | Abonnement | Maandelijks | Jaarlijks | Omschrijving |
 |---|---|---|---|
+<!-- TODO(source-missing): Gratis-tarief factuurlimiet (10 om te starten, daarna 2 per maand) heeft een bron nodig onder sources/; de Gratis-rij hieronder zegt nog onbeperkt factureren tot de bron is toegevoegd -->
 | **Gratis** | € 0,00 | € 0,00 | Onbeperkt factureren, offertes en uitgaven, plus je eigen website op mycompanydesk.site |
 | **Starter** | € 10,00 | € 100,00 | Alles om je werk te doen: facturen, offertes, uitgaven, uren en projecten, op je eigen pagina |
 | **Pro** | € 25,00 | € 250,00 | Laat je bedrijf groeien: eigen domein en website, zakelijke inbox, bankkoppeling, teamtoegang, API en meer |
@@ -54,6 +55,8 @@ Functies met verbruikslimieten (maandelijkse limieten, tenzij anders aangegeven)
 
 Let op: AI-limieten zijn maandelijks, niet dagelijks. Ze worden gereset op de eerste van elke kalendermaand.
 
+
+<!-- TODO(source-missing): Gratis-tarief factuurlimiet (10 om te starten, daarna 2 per maand) heeft een bron nodig onder sources/; de alinea hieronder zegt nog onbeperkt factureren tot de bron is toegevoegd -->
 Factureren op Gratis is onbeperkt: geen maandlimiet en geen levenslang plafond. Facturen die je al hebt aangemaakt, blijven altijd zichtbaar en exporteerbaar.
 
 Functies per abonnement:
