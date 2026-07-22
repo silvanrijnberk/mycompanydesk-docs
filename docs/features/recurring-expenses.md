@@ -64,6 +64,10 @@ Each generated expense:
 - Is dated to the scheduled occurrence date
 - Can be edited independently after creation
 
+## What happens if my plan changes?
+
+Recurring expenses are part of the Office plan. If you upgrade from Desk to Office, scheduled generation starts from the next due date. If you downgrade from Office to Desk, generation pauses automatically. The template and any expenses already created stay in your workspace, and generation resumes when you upgrade again.
+
 ## Tips
 
 - Review your recurring expenses periodically to catch cancelled subscriptions

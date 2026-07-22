@@ -17,6 +17,7 @@ Snelle antwoorden op veelvoorkomende vragen over MyCompanyDesk. Elk antwoord mat
 - [Bank details](/nl/faq/bank-details)
 - [Billing and subscription help](/nl/faq/billing-friction)
 - [Zelf boekhouden zonder boekhouder](/nl/faq/bookkeeping-without-accountant)
+- [Abonnementen en prijzen](/nl/faq/plans)
 - [Bulk actions](/nl/faq/bulk-actions)
 - [Bulk Delete](/nl/faq/bulk-delete)
 - [Cancel invoice](/nl/faq/cancel-invoice)

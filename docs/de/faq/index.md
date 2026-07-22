@@ -17,6 +17,7 @@ Schnelle Antworten auf häufige Fragen zu MyCompanyDesk. Jeder Eintrag entsprich
 - [Bank details](/de/faq/bank-details)
 - [Billing and subscription help](/de/faq/billing-friction)
 - [Buchhaltung ohne Steuerberater](/de/faq/bookkeeping-without-accountant)
+- [Tarife und Preise](/de/faq/plans)
 - [Bulk actions](/de/faq/bulk-actions)
 - [Bulk Delete](/de/faq/bulk-delete)
 - [Cancel invoice](/de/faq/cancel-invoice)
