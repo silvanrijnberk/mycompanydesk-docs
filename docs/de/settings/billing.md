@@ -23,10 +23,11 @@ Arbeitsbereiche mit einer solchen Vereinbarung sind in jeder Hinsicht normale Pr
 
 MyCompanyDesk hat einen Gratis-Tarif und zwei kostenpflichtige Tarife. Gratis ist ein eigenständiges Produkt, das bei der Anmeldung angeboten wird und dauerhaft verfügbar bleibt. Neue Kunden erhalten eine 60-tägige Pro-Testphase; ein Arbeitsbereich, der nicht umsteigt, landet auf Gratis.
 
-<!-- TODO(source-missing): neue Starter/Pro-Monats- und Jahrespreise brauchen eine Quelle unter sources/; die Preistabelle unten zeigt noch die bisherigen Beträge, bis die Quelle hinzugefügt wird -->
+<!-- TODO(source-missing): neue Starter/Pro-Monats- und Jahrespreise sowie das Gratis-Tarif-Rechnungslimit (10 zum Start, danach 2 pro Monat) brauchen eine Quelle unter sources/; die Tabelle zeigt die neuen Monats-/Jahrespreise, aber die Gratis-Beschreibung sagt noch unbegrenzte Rechnungsstellung, bis die Quelle hinzugefügt wird -->
 
 | Tarif | Monatlich | Jährlich | Beschreibung |
 |---|---|---|---|
+<!-- TODO(source-missing): Gratis-Tarif-Rechnungslimit braucht eine Quelle unter sources/; die Gratis-Zeile unten sagt noch unbegrenzte Rechnungsstellung, bis die Quelle hinzugefügt wird -->
 | **Gratis** | 0,00 EUR | 0,00 EUR | Unbegrenzt Rechnungen, Angebote und Ausgaben, plus Ihre eigene Website auf mycompanydesk.site |
 | **Starter** | 10,00 EUR | 100,00 EUR | Alles für Ihre Arbeit: Rechnungen, Angebote, Ausgaben, Stunden und Projekte, auf Ihrer eigenen Seite |
 | **Pro** | 25,00 EUR | 250,00 EUR | Lassen Sie Ihr Unternehmen wachsen: eigene Domain und Website, geschäftliche Inbox, Bankverbindung, Teamzugang, API und mehr |
@@ -54,6 +55,8 @@ Funktionen mit Nutzungslimits (monatliche Limits, soweit nicht anders angegeben)
 
 Hinweis: KI-Limits gelten monatlich, nicht täglich. Sie werden am Ersten jedes Kalendermonats zurückgesetzt.
 
+
+<!-- TODO(source-missing): Gratis-Tarif-Rechnungslimit braucht eine Quelle unter sources/; der Absatz unten sagt noch unbegrenzte Rechnungsstellung, bis die Quelle hinzugefügt wird -->
 Rechnungen im Gratis-Tarif sind unbegrenzt: kein monatliches Limit und kein lebenslanges Kontingent. Bereits erstellte Rechnungen bleiben jederzeit sichtbar und exportierbar.
 
 Funktionen pro Tarif:
