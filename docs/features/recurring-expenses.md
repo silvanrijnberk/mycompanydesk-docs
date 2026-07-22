@@ -66,7 +66,7 @@ Each generated expense:
 
 ## What happens if my plan changes?
 
-Recurring expenses are part of the Office plan. If you upgrade from Desk to Office, scheduled generation starts from the next due date. If you downgrade from Office to Desk, generation pauses automatically. The template and any expenses already created stay in your workspace, and generation resumes when you upgrade again.
+Recurring expenses are part of the Office plan. If you upgrade from Desk to Office, scheduled generation starts from the next due date. If you downgrade from Office to Desk, generation pauses automatically, including any due digitalocean alarms; existing templates and previously generated expenses stay in your workspace, and generation resumes when you upgrade again.
 
 ## Tips
 

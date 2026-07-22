@@ -30,10 +30,12 @@ MyCompanyDesk gibt es in zwei Tarifen: **Desk** und **Office**.
 
 **Office** ist kostenpflichtig. Er ergänzt Automatisierung und Dienste, die MCD echte Kosten verursachen: wiederkehrende Rechnungen und Ausgaben, Verträge, Bankkoppeling, einen geschäftlichen Posteingang auf Ihrer eigenen Domain, digitale USt.-Abgabe, vollständige Buchhaltung, API-Zugang und höhere AI-Limits. Die aktuellen Preise finden Sie auf der [Preisseite](https://mycompanydesk.nl/plans).
 
+Diese Funktionen sind in unserer Billing-Config hinterlegt: [apps/api/src/modules/billing/plans.config.js](https://github.com/silvanrijnberk/RichardTool/blob/development/apps/api/src/modules/billing/plans.config.js).
+
 **Upgrade und Downgrade**
 - Sie können jederzeit zwischen Desk und Office wechseln.
 - Nach einem Upgrade sind die neuen Funktionen sofort verfügbar.
-- Wenn Sie von Office auf Desk herunterstufen, funktionieren Office-only Funktionen nicht mehr: neue wiederkehrende Rechnungen oder Ausgaben werden nicht mehr erstellt, Ihre Bankkoppelung importiert nicht mehr, und Ihre Posteingang auf einer eigenen Domain sendet oder empfängt keine Nachrichten. Bereits erstellte Daten bleiben in Ihrem Arbeitsbereich.
+- Wenn Sie von Office auf Desk herunterstufen, funktionieren Office-only Funktionen nicht mehr: neue wiederkehrende Rechnungen oder Ausgaben werden nicht mehr erstellt, Ihre Bankkoppelung importiert nicht mehr, und Ihre Posteingang auf einer eigenen Domain sendet oder empfängt keine Nachrichten. Vorhandene Vorlagen, bereits erstellte Rechnungen oder Ausgaben und sonstige Daten bleiben in Ihrem Arbeitsbereich.
 - Läuft die kostenlose 60-tägige Office-Testphase ohne Abonnement ab, wechselt Ihr Arbeitsbereich automatisch auf Desk.
 
 **Abrechnung**

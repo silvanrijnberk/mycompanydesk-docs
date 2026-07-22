@@ -31,10 +31,12 @@ MyCompanyDesk propose deux formules : **Desk** et **Office**.
 
 **Office** est payant. Il ajoute l'automatisation et des services qui coûtent réellement à faire tourner : factures et dépenses récurrentes, contrats, connexions bancaires, une boîte mail professionnelle sur votre propre domaine, déclaration de TVA numérique, comptabilité complète, accès API et des limites IA plus élevées. Voir la [page des tarifs](https://mycompanydesk.nl/plans) pour le prix actuel.
 
+Ces fonctionnalités sont définies dans notre configuration de facturation : [apps/api/src/modules/billing/plans.config.js](https://github.com/silvanrijnberk/RichardTool/blob/development/apps/api/src/modules/billing/plans.config.js).
+
 **Changement de formule**
 - Vous pouvez passer de Desk à Office, et inversement, à tout moment.
 - Après une montée de version, les nouvelles fonctionnalités sont disponibles immédiatement.
-- Si vous rétrogradez d'Office vers Desk, les fonctionnalités réservées à Office cessent de fonctionner : plus aucune facture ou dépense récurrente n'est générée, votre connexion bancaire n'importe plus de transactions, et votre boîte mail sur domaine personnalisé n'envoie ni ne reçoit de messages. Les données déjà créées restent dans votre espace de travail.
+- Si vous rétrogradez d'Office vers Desk, les fonctionnalités réservées à Office cessent de fonctionner : plus aucune facture ou dépense récurrente n'est générée, votre connexion bancaire n'importe plus de transactions, et votre boîte mail sur domaine personnalisé n'envoie ni ne reçoit de messages. Les modèles existants, les factures ou dépenses déjà créées et les autres données restent dans votre espace de travail.
 - Si votre période d'essai Office de 60 jours se termine sans abonnement, votre espace de travail passe automatiquement sur Desk.
 
 **Facturation**

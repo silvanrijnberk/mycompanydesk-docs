@@ -28,10 +28,12 @@ MyCompanyDesk heeft twee abonnementen: **Desk** en **Office**.
 
 **Office** is betaald. Daarbij krijg je automatisering en diensten die MCD echt geld kosten: terugkerende facturen en uitgaven, contracten, bankkoppelingen, een zakelijke inbox op je eigen domein, digitale BTW-aangifte, volledige boekhouding, API-toegang en hogere AI-limieten. Zie de [abonnementenpagina](https://mycompanydesk.nl/plans) voor de actuele prijs.
 
+Deze functies staan in onze billing-config: [apps/api/src/modules/billing/plans.config.js](https://github.com/silvanrijnberk/RichardTool/blob/development/apps/api/src/modules/billing/plans.config.js).
+
 **Upgraden en downgraden**
 - Je kunt altijd wisselen tussen Desk en Office.
 - Na een upgrade zijn de nieuwe functies meteen beschikbaar.
-- Als je van Office teruggaat naar Desk, werken Office-only functies niet meer: nieuwe terugkerende facturen of uitgaven worden niet meer aangemaakt, je bankkoppeling importeert niet meer en je inbox op een eigen domein verzendt of ontvangt geen berichten. Data die je al hebt gemaakt blijft in je werkruimte staan.
+- Als je van Office teruggaat naar Desk, werken Office-only functies niet meer: nieuwe terugkerende facturen of uitgaven worden niet meer aangemaakt, je bankkoppeling importeert niet meer en je inbox op een eigen domein verzendt of ontvangt geen berichten. Bestaande sjablonen, eerder aangemaakte facturen of uitgaven en andere data blijven in je werkruimte staan.
 - Als je gratis proefperiode van 60 dagen Office afloopt zonder abonnement, gaat je werkruimte automatisch naar Desk.
 
 **Facturatie**

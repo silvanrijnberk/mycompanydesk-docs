@@ -34,10 +34,12 @@ MyCompanyDesk has two plans: **Desk** and **Office**.
 
 **Office** is a paid plan. It adds automation and services that cost real money to run: recurring invoices and expenses, contracts, bank connections, a business inbox on your own domain, digital VAT filing, full bookkeeping, API access, and higher AI limits. See the [plans page](https://mycompanydesk.nl/plans) for the current price.
 
+These features are defined in our billing config: [apps/api/src/modules/billing/plans.config.js](https://github.com/silvanrijnberk/RichardTool/blob/development/apps/api/src/modules/billing/plans.config.js).
+
 **Upgrading and downgrading**
 - You can switch between Desk and Office at any time.
 - When you upgrade, the new features are available right away.
-- When you downgrade from Office to Desk, Office-only features stop working: new recurring invoices or expenses are no longer generated, your bank connection stops importing, and your custom-domain inbox no longer sends or receives. The data you already created stays in your workspace.
+- When you downgrade from Office to Desk, Office-only features stop working: new recurring invoices or expenses are no longer generated, your bank connection stops importing, and your custom-domain inbox no longer sends or receives. Existing templates, already generated invoices or expenses, and other data stay in your workspace.
 - If a free 60-day Office trial ends and you do not subscribe, your workspace moves to Desk automatically.
 
 **Billing**

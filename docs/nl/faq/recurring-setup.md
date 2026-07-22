@@ -18,4 +18,6 @@ Zo stel je een terugkerende factuur in:
 
 Er is geen einddatumveld. Wil je stoppen, open dan de terugkerende factuur en klik op "Pauzeren"; dezelfde schakelaar toont "Activeren", zodat je later weer kunt starten.
 
+Terugkerende facturen en uitgaven zijn beschikbaar in het Office-abonnement. In Desk kun je bestaande terugkerende items bekijken en pauzeren of bewerken, maar de automatische aanmaak draait alleen zolang je Office hebt.
+
 Tip: Terugkerende uitgaven werken hetzelfde. Open Terugkerende uitgaven en volg daar dezelfde stappen.

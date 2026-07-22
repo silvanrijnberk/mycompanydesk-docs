@@ -82,7 +82,7 @@ Die Detailseite der wiederkehrenden Rechnung zeigt alle zuvor generierten Rechnu
 
 ## Was passiert, wenn sich mein Tarif ändert?
 
-Wiederkehrende Rechnungen sind Teil des Office-Tarifs. Bei einem Upgrade von Desk auf Office startet die automatische Erstellung am nächsten Fälligkeitsdatum. Bei einer Herunterstufung von Office auf Desk wird die Erstellung automatisch pausiert. Die Vorlage und bereits erstellte Rechnungen bleiben in Ihrem Arbeitsbereich, und beim späteren Upgrade wird der Zeitplan fortgesetzt.
+Wiederkehrende Rechnungen sind Teil des Office-Tarifs. Bei einem Upgrade von Desk auf Office startet die automatische Erstellung am nächsten Fälligkeitsdatum. Bei einer Herunterstufung von Office auf Desk wird die Erstellung automatisch pausiert, auch bei fälligen DigitalOcean-Alarmen. Die Vorlage und bereits erstellte Rechnungen bleiben in Ihrem Arbeitsbereich, und beim späteren Upgrade wird der Zeitplan fortgesetzt.
 
 ## Massenaktionen
 

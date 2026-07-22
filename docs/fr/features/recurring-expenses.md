@@ -66,7 +66,7 @@ Chaque depense generee :
 
 ## Que se passe-t-il si ma formule change ?
 
-Les dépenses récurrentes font partie de la formule Office. En montant de version de Desk vers Office, la génération automatique démarre à la prochaine échéance. Si vous rétrogradez d'Office vers Desk, la génération se met en pause automatiquement. Le modèle et les dépenses déjà créées restent dans votre espace de travail, et le planning reprend lors d'une nouvelle montée de version.
+Les dépenses récurrentes font partie de la formule Office. En montant de version de Desk vers Office, la génération automatique démarre à la prochaine échéance. Si vous rétrogradez d'Office vers Desk, la génération se met en pause automatiquement, y compris pour les alarmes DigitalOcean dues. Le modèle et les dépenses déjà créées restent dans votre espace de travail, et le planning reprend lors d'une nouvelle montée de version.
 
 ## Conseils
 
