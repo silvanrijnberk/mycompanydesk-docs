@@ -85,6 +85,10 @@ Die Detailseite der wiederkehrenden Rechnung zeigt alle zuvor generierten Rechnu
 - **Pausieren / Fortsetzen** — Mehrere wiederkehrende Rechnungen umschalten
 - **Löschen** — Mehrere Vorlagen entfernen
 
+## Was passiert, wenn sich mein Tarif ändert?
+
+Wiederkehrende Rechnungen laufen nur weiter, solange die Funktion in Ihrem aktuellen Tarif enthalten ist. Wenn Sie von einem Tarif mit dieser Funktion herunterstufen, pausiert die automatische Generierung, bis Sie wieder upgraden. Ihre Vorlage, Ihr Zeitplan und bereits generierte Rechnungen bleiben unverändert.
+
 ## Tipps
 
 - Kombinieren Sie mit [Verträgen](/de/features/contracts) für vertragsbasierte Abrechnung

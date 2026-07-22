@@ -85,6 +85,10 @@ La page de detail de la facture recurrente affiche toutes les factures precedemm
 - **Mettre en pause / Reprendre** -- Basculez plusieurs factures recurrentes
 - **Supprimer** -- Supprimez plusieurs modeles
 
+## Que se passe-t-il si je change de formule ?
+
+Les factures recurrentes continuent de se generer automatiquement tant que la fonctionnalite est incluse dans votre formule actuelle. Si vous retrogradez depuis une formule qui l'inclut, la generation automatique se met en pause jusqu'a votre prochaine montee de version. Votre modele, votre calendrier et les factures deja generees restent inchanges.
+
 ## Conseils
 
 - Combinez avec les [contrats](/fr/features/contracts) pour la facturation contractuelle

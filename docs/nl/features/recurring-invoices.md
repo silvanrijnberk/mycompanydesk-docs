@@ -85,6 +85,10 @@ De detailpagina van de terugkerende factuur toont alle eerder gegenereerde factu
 - **Pauzeren / Hervatten** — Schakel meerdere terugkerende facturen om
 - **Verwijderen** — Verwijder meerdere sjablonen
 
+## Wat gebeurt er als mijn pakket wijzigt?
+
+Terugkerende facturen blijven alleen automatisch lopen zolang de functie in je huidige pakket zit. Als je downgradet van een pakket waarin ze zitten, pauzeert de automatische generatie tot je weer upgrade. Je sjabloon, schema en eerder gegenereerde facturen blijven ongewijzigd.
+
 ## Tips
 
 - Combineer met [contracten](/nl/features/contracts) voor contractgebaseerde facturatie

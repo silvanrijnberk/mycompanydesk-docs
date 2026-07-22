@@ -17,4 +17,6 @@ Pour arrêter une facture récurrente :
 
 Il n'y a pas de champ de date de fin ; la mise en pause est la façon d'arrêter la planification, et l'historique des factures déjà générées reste intact. Il n'y a pas non plus d'actions groupées dans la liste des factures récurrentes, mettez donc chaque élément en pause individuellement. Les dépenses récurrentes fonctionnent de la même manière, avec leurs propres boutons Mettre en pause et Activer.
 
+Si vous rétrogradez depuis une formule qui inclut les factures ou dépenses récurrentes, la génération automatique se met en pause même si le modèle reste actif. Le calendrier et l'historique sont conservés, et la génération reprend après une nouvelle montée de version.
+
 Astuce : la mise en pause est sans risque. Rien n'est supprimé, et un clic sur "Activer" relance la planification.

@@ -17,4 +17,6 @@ So stoppen Sie eine wiederkehrende Rechnung:
 
 Ein Enddatum-Feld gibt es nicht; Pausieren ist der Weg, den Zeitplan zu stoppen, und die bereits erstellten Rechnungen bleiben erhalten. In der Liste der wiederkehrenden Rechnungen gibt es keine Massenaktionen, pausieren Sie also jeden Eintrag einzeln. Wiederkehrende Ausgaben funktionieren genauso, mit eigenen Schaltflächen Pausieren und Aktivieren.
 
+Wenn Sie von einem Tarif mit wiederkehrenden Rechnungen oder Ausgaben herunterstufen, pausiert die automatische Generierung auch dann, wenn die Vorlage noch aktiv ist. Zeitplan und Verlauf bleiben erhalten, und nach einem erneuten Upgrade wird wieder generiert.
+
 Tipp: Pausieren ist sicher. Es wird nichts gelöscht, und ein Klick auf "Aktivieren" setzt den Zeitplan wieder fort.
