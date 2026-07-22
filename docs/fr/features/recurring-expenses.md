@@ -64,6 +64,10 @@ Chaque depense generee :
 - Est datee a la date d'occurrence programmee
 - Peut etre modifiee independamment apres creation
 
+## Que se passe-t-il si je change de formule ?
+
+Les depenses recurrentes continuent de se generer automatiquement tant que la fonctionnalite est incluse dans votre formule actuelle. Si vous retrogradez depuis une formule qui l'inclut, la generation automatique se met en pause jusqu'a votre prochaine montee de version. Votre modele, votre calendrier et les depenses deja generees restent inchanges.
+
 ## Conseils
 
 - Examinez periodiquement vos depenses recurrentes pour detecter les abonnements annules

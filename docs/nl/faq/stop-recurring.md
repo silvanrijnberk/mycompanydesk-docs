@@ -17,4 +17,6 @@ Zo stop je een terugkerende factuur:
 
 Er is geen einddatumveld; pauzeren is de manier om het schema te stoppen, en de eerder aangemaakte facturen blijven gewoon bewaard. Bulkacties zijn er niet in de lijst met terugkerende facturen, dus pauzeer elk item apart. Terugkerende uitgaven werken op dezelfde manier, met eigen knoppen Pauzeren en Activeren.
 
+Als je downgradet van een pakket waarin terugkerende facturen of uitgaven zitten, pauzeert de automatische generatie ook als het sjabloon nog actief is. Het schema en de geschiedenis blijven behouden en de generatie hervat nadat je weer upgrade.
+
 Tip: Pauzeren is veilig. Er wordt niets verwijderd en met één klik op "Activeren" loopt het schema weer door.

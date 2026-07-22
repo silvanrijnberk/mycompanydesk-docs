@@ -64,6 +64,10 @@ Each generated expense:
 - Is dated to the scheduled occurrence date
 - Can be edited independently after creation
 
+## What happens if my plan changes?
+
+Recurring expenses keep running only while the feature is included in your current plan. If you downgrade from a plan that includes them, automatic generation pauses until you upgrade again. Your template, schedule and previously generated expenses stay untouched.
+
 ## Tips
 
 - Review your recurring expenses periodically to catch cancelled subscriptions

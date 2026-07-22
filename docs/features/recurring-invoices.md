@@ -85,6 +85,10 @@ The recurring invoice detail page shows all previously generated invoices, so yo
 - **Pause / Resume** — Toggle multiple recurring invoices
 - **Delete** — Remove multiple templates
 
+## What happens if my plan changes?
+
+Recurring invoices keep running only while the feature is included in your current plan. If you downgrade from a plan that includes them, automatic generation pauses until you upgrade again. Your template, schedule and previously generated invoices stay untouched.
+
 ## Tips
 
 - Combine with [contracts](/features/contracts) for contract-based billing

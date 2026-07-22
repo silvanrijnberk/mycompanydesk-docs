@@ -64,6 +64,10 @@ Jede generierte Ausgabe:
 - Wird auf das geplante Vorkommensdatum datiert
 - Kann nach der Erstellung unabhängig bearbeitet werden
 
+## Was passiert, wenn sich mein Tarif ändert?
+
+Wiederkehrende Ausgaben laufen nur weiter, solange die Funktion in Ihrem aktuellen Tarif enthalten ist. Wenn Sie von einem Tarif mit dieser Funktion herunterstufen, pausiert die automatische Generierung, bis Sie wieder upgraden. Ihre Vorlage, Ihr Zeitplan und bereits generierte Ausgaben bleiben unverändert.
+
 ## Tipps
 
 - Überprüfen Sie Ihre wiederkehrenden Ausgaben regelmäßig, um gekündigte Abonnements zu erkennen

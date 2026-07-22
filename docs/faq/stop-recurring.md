@@ -17,4 +17,6 @@ To stop a recurring invoice:
 
 There is no end date field; pausing is how you stop the schedule, and it keeps the history of previously generated invoices intact. There are also no bulk actions on the recurring list, so pause each item individually. Recurring expenses work the same way with their own Pause and Activate buttons.
 
+If you downgrade from a plan that includes recurring invoices or expenses, automatic generation pauses even when the template is still active. The schedule and history remain, and generation resumes after you upgrade again.
+
 Tip: Pausing is safe. Nothing is deleted, and one click on "Activate" picks the schedule back up.

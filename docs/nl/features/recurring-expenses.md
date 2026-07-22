@@ -64,6 +64,10 @@ Elke gegenereerde uitgave:
 - Is gedateerd op de geplande uitvoeringsdatum
 - Kan na aanmaak onafhankelijk worden bewerkt
 
+## Wat gebeurt er als mijn pakket wijzigt?
+
+Terugkerende uitgaven blijven alleen automatisch lopen zolang de functie in je huidige pakket zit. Als je downgradet van een pakket waarin ze zitten, pauzeert de automatische generatie tot je weer upgrade. Je sjabloon, schema en eerder gegenereerde uitgaven blijven ongewijzigd.
+
 ## Tips
 
 - Controleer je terugkerende uitgaven periodiek om opgezegde abonnementen te signaleren
