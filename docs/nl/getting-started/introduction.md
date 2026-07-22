@@ -33,7 +33,7 @@ MyCompanyDesk heeft een Gratis-abonnement en twee betaalde abonnementen: Starter
 |---|---|---|---|
 | Facturen | Onbeperkt | Onbeperkt | Onbeperkt |
 | Offertes | Onbeperkt | Onbeperkt | Onbeperkt |
-| Uitgaven bijhouden | Onbeperkt | Volledig | Volledig |
+| Uitgaven bijhouden | Onbeperkt | Onbeperkt | Onbeperkt |
 | Bonnen scannen | Ja (3 scans/maand) | Ja (30 scans/maand) | Ja (200 scans/maand) |
 | AI-suggesties | Ja | Ja | Ja |
 | Eigen huisstijl | Ja | Ja | Ja |

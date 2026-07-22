@@ -33,7 +33,7 @@ MyCompanyDesk has a Free plan and two paid plans: Starter and Pro. New customers
 |---|---|---|---|
 | Invoices | Unlimited | Unlimited | Unlimited |
 | Quotes | Unlimited | Unlimited | Unlimited |
-| Expense tracking | Unlimited | Full | Full |
+| Expense tracking | Unlimited | Unlimited | Unlimited |
 | Receipt scanning | Yes (3 scans/month) | Yes (30 scans/month) | Yes (200 scans/month) |
 | AI suggestions | Yes | Yes | Yes |
 | Custom branding | Yes | Yes | Yes |
