@@ -18,4 +18,6 @@ Pour configurer une facture récurrente :
 
 Il n'y a pas de champ de date de fin. Pour arrêter, ouvrez la facture récurrente et cliquez sur "Mettre en pause" ; le même bouton affiche "Activer" pour reprendre plus tard.
 
+Les factures et dépenses récurrentes sont disponibles avec la formule Office. Avec la formule Desk, vous pouvez consulter les éléments récurrents existants et les mettre en pause ou les modifier, mais la génération automatique ne s'exécute que tant que vous avez Office.
+
 Astuce : les dépenses récurrentes fonctionnent de la même façon. Ouvrez Dépenses récurrentes et suivez les mêmes étapes.

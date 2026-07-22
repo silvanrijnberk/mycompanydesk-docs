@@ -85,6 +85,10 @@ La page de detail de la facture recurrente affiche toutes les factures precedemm
 - **Mettre en pause / Reprendre** -- Basculez plusieurs factures recurrentes
 - **Supprimer** -- Supprimez plusieurs modeles
 
+## Que se passe-t-il si ma formule change ?
+
+Les factures récurrentes font partie de la formule Office. En montant de version de Desk vers Office, la génération automatique démarre à la prochaine échéance. Si vous rétrogradez d'Office vers Desk, la génération se met en pause automatiquement, y compris pour les alarmes DigitalOcean dues. Le modèle et les factures déjà créées restent dans votre espace de travail, et le planning reprend lors d'une nouvelle montée de version.
+
 ## Conseils
 
 - Combinez avec les [contrats](/fr/features/contracts) pour la facturation contractuelle

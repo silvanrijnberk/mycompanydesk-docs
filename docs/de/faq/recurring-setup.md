@@ -18,4 +18,6 @@ So richten Sie eine wiederkehrende Rechnung ein:
 
 Ein Enddatum-Feld gibt es nicht. Möchten Sie stoppen, öffnen Sie die wiederkehrende Rechnung und klicken Sie auf "Pausieren"; derselbe Schalter zeigt "Aktivieren", damit Sie später fortsetzen können.
 
+Wiederkehrende Rechnungen und Ausgaben sind Teil des Office-Tarifs. Im Desk-Tarif können Sie vorhandene wiederkehrende Einträge ansehen und pausieren oder bearbeiten, aber die automatische Erstellung läuft nur, solange Sie Office haben.
+
 Tipp: Wiederkehrende Ausgaben funktionieren genauso. Öffnen Sie Wiederkehrende Ausgaben und folgen Sie dort denselben Schritten.

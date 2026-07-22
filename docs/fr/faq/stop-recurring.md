@@ -18,3 +18,5 @@ Pour arrêter une facture récurrente :
 Il n'y a pas de champ de date de fin ; la mise en pause est la façon d'arrêter la planification, et l'historique des factures déjà générées reste intact. Il n'y a pas non plus d'actions groupées dans la liste des factures récurrentes, mettez donc chaque élément en pause individuellement. Les dépenses récurrentes fonctionnent de la même manière, avec leurs propres boutons Mettre en pause et Activer.
 
 Astuce : la mise en pause est sans risque. Rien n'est supprimé, et un clic sur "Activer" relance la planification.
+
+Si votre formule passe d'Office à Desk, les factures et dépenses récurrentes se mettent automatiquement en pause. Les factures et dépenses déjà créées restent dans vos archives, et les plannings reprennent lors d'une nouvelle montée de version.

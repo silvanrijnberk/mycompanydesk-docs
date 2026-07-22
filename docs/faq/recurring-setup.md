@@ -18,4 +18,6 @@ To set up a recurring invoice:
 
 There is no end date field. When you want to stop, open the recurring invoice and click "Pause"; the same toggle shows "Activate" so you can resume later.
 
+Recurring invoices and expenses are available on the Office plan. On Desk you can view existing recurring items and pause or edit them, but automatic generation only runs while you have Office.
+
 Tip: Recurring expenses work the same way. Open Recurring Expenses and follow the same flow there.

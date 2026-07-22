@@ -80,6 +80,10 @@ Elke keer dat een terugkerende factuur wordt uitgevoerd, wordt een nieuwe factuu
 
 De detailpagina van de terugkerende factuur toont alle eerder gegenereerde facturen, zodat je de volledige facturatiegeschiedenis kunt bijhouden.
 
+## Wat gebeurt er als mijn pakket wijzigt?
+
+Terugkerende facturen horen bij het Office-abonnement. Als je van Desk naar Office upgradet, start de automatische aanmaak vanaf de eerstvolgende vervaldatum. Als je van Office naar Desk downgradet, wordt de aanmaak automatisch gepauzeerd, ook bij eventuele DigitalOcean-alerts. Het sjabloon en de facturen die al zijn aangemaakt blijven in je werkruimte staan, en bij een latere upgrade wordt het schema hervat.
+
 ## Bulkacties
 
 - **Pauzeren / Hervatten** — Schakel meerdere terugkerende facturen om
