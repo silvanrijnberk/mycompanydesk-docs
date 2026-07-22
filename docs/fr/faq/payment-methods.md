@@ -39,9 +39,15 @@ Pour connecter un prestataire :
 3. Suivez le flux OAuth pour autoriser votre compte
 4. Une fois connecté, chaque facture envoyée inclut un lien de paiement pour vos clients
 
-Mollie prend en charge iDEAL, Bancontact, la carte bancaire et le virement, ideal pour les clients neerlandais et belges. Stripe Connect prend en charge la carte, Apple Pay, Google Pay et le prelevement SEPA, adapte aux clients internationaux.
+Mollie prend en charge iDEAL, Bancontact, la carte bancaire et le virement, idéal pour les clients néerlandais et belges. Stripe Connect prend en charge la carte, Apple Pay, Google Pay et le prélèvement SEPA, adapté aux clients internationaux.
 
-Pour deconnecter, cliquez sur **Loskoppelen** sur la carte correspondante. Si des paiements ont eu lieu au cours des 24 dernieres heures, un avertissement vous rappelle que des webhooks en attente peuvent encore arriver et que les remboursements pour ces paiements doivent etre traites manuellement. Apres la deconnexion, les clients ne peuvent plus payer via ce prestataire.
+## Frais de paiement en ligne sur le plan Gratuit
+
+Les paiements de factures en ligne entraînent de petits frais de service sur le plan Gratuit. Quand un client paie une facture en ligne, 0,50 € sont prélevés via votre compte Mollie ou Stripe en tant qu'application fee. Les paiements en ligne sur Starter et Pro sont gratuits. L'indication apparaît à côté de **Online betalingen** sur `/settings/betalen` tant que votre espace de travail est sur le plan Gratuit.
+
+Le montant exact est configuré côté serveur. L'info-bulle de l'application indique actuellement 0,50 €, conformément à `config.billing.freeTierSurchargeCents` dans `apps/api/src/config/env.js`. Un montant minimum de facture peut aussi être configuré via `config.billing.freeTierSurchargeMinInvoiceCents`; si cette valeur change, cette page et l'info-bulle doivent être mises à jour ensemble.
+
+Pour déconnecter, cliquez sur **Loskoppelen** sur la carte correspondante. Si des paiements ont eu lieu au cours des 24 dernières heures, un avertissement vous rappelle que des webhooks en attente peuvent encore arriver et que les remboursements pour ces paiements doivent être traités manuellement. Après la déconnexion, les clients ne peuvent plus payer via ce prestataire.
 
 ### Parametres de paiement Mollie
 
