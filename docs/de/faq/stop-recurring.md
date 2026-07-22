@@ -18,3 +18,5 @@ So stoppen Sie eine wiederkehrende Rechnung:
 Ein Enddatum-Feld gibt es nicht; Pausieren ist der Weg, den Zeitplan zu stoppen, und die bereits erstellten Rechnungen bleiben erhalten. In der Liste der wiederkehrenden Rechnungen gibt es keine Massenaktionen, pausieren Sie also jeden Eintrag einzeln. Wiederkehrende Ausgaben funktionieren genauso, mit eigenen Schaltflächen Pausieren und Aktivieren.
 
 Tipp: Pausieren ist sicher. Es wird nichts gelöscht, und ein Klick auf "Aktivieren" setzt den Zeitplan wieder fort.
+
+Wenn sich Ihr Tarif von Office auf Desk ändert, werden wiederkehrende Rechnungen und Ausgaben automatisch pausiert. Bereits erstellte Rechnungen und Ausgaben bleiben in Ihren Unterlagen, und die Zeitpläne werden beim späteren Upgrade fortgesetzt.

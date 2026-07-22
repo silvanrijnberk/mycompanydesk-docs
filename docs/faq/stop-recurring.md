@@ -18,3 +18,5 @@ To stop a recurring invoice:
 There is no end date field; pausing is how you stop the schedule, and it keeps the history of previously generated invoices intact. There are also no bulk actions on the recurring list, so pause each item individually. Recurring expenses work the same way with their own Pause and Activate buttons.
 
 Tip: Pausing is safe. Nothing is deleted, and one click on "Activate" picks the schedule back up.
+
+If your plan changes from Office to Desk, recurring invoices and expenses will pause automatically. Previously generated invoices and expenses stay in your records, and the schedules resume when you upgrade again.

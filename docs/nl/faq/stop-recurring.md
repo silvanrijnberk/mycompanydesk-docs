@@ -18,3 +18,5 @@ Zo stop je een terugkerende factuur:
 Er is geen einddatumveld; pauzeren is de manier om het schema te stoppen, en de eerder aangemaakte facturen blijven gewoon bewaard. Bulkacties zijn er niet in de lijst met terugkerende facturen, dus pauzeer elk item apart. Terugkerende uitgaven werken op dezelfde manier, met eigen knoppen Pauzeren en Activeren.
 
 Tip: Pauzeren is veilig. Er wordt niets verwijderd en met één klik op "Activeren" loopt het schema weer door.
+
+Als je pakket wijzigt van Office naar Desk, worden terugkerende facturen en uitgaven automatisch gepauzeerd. Eerder aangemaakte facturen en uitgaven blijven in je administratie, en de schema's worden hervat bij een latere upgrade.
