@@ -1,6 +1,6 @@
 ---
 title: "Zahlungsmethoden"
-last_verified: 2026-07-02
+last_verified: 2026-07-22
 chatbot:
   triggers:
     - "payment methods"
@@ -45,7 +45,7 @@ Mollie unterstützt iDEAL, Bancontact, Kreditkarte und Banküberweisung, ideal f
 
 Im kostenlosen Plan fällt für Online-Rechnungszahlungen eine kleine Servicegebühr an. Wenn ein Kunde eine Rechnung online bezahlt, werden 0,50 € über Ihr Mollie- oder Stripe-Konto als Application Fee einbehalten. Online-Zahlungen in Starter und Pro bleiben kostenlos. Der Hinweis wird neben **Online betalingen** auf `/settings/betalen` angezeigt, solange Ihr Arbeitsbereich im kostenlosen Plan ist.
 
-Der genaue Betrag wird serverseitig konfiguriert. Der Hinweis in der App zeigt derzeit 0,50 €, passend zu `config.billing.freeTierSurchargeCents` in `apps/api/src/config/env.js`. Über `config.billing.freeTierSurchargeMinInvoiceCents` lässt sich außerdem ein Mindestrechnungsbetrag konfigurieren; ändert sich dieser Wert, müssen diese Seite und der Hinweis in der App gemeinsam aktualisiert werden.
+Der genaue Betrag und der Mindestrechnungsbetrag werden serverseitig konfiguriert. Der Hinweis in der App zeigt derzeit 0,50 € pro Online-Rechnungszahlung ab 5 €, passend zu `config.billing.freeTierSurchargeCents` und `freeTierSurchargeMinInvoiceCents` in `apps/api/src/config/env.js`. Ändert sich einer dieser Werte, müssen diese Seite und der Hinweis in der App gemeinsam aktualisiert werden.
 
 Zum Trennen klicken Sie auf **Loskoppelen** auf der entsprechenden Karte. Wenn in den letzten 24 Stunden Zahlungen eingegangen sind, erscheint eine Warnung, dass möglicherweise noch ausstehende Webhooks eintreffen und dass Rückzahlungen für diese Zahlungen manuell bearbeitet werden müssen. Nach der Trennung können Kunden nicht mehr über diesen Anbieter bezahlen.
 
