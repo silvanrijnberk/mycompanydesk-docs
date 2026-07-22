@@ -39,7 +39,7 @@ Pour connecter un prestataire :
 3. Suivez le flux OAuth pour autoriser votre compte
 4. Une fois connecté, chaque facture envoyée inclut un lien de paiement pour vos clients
 
-Mollie prend en charge iDEAL, Bancontact, la carte bancaire et le virement, idéal pour les clients néerlandais et belges. Stripe Connect prend en charge la carte, Apple Pay, Google Pay et le prélèvement SEPA, adapté aux clients internationaux.
+Mollie prend en charge iDEAL, Bancontact, la carte bancaire et le virement, ideal pour les clients neerlandais et belges. Stripe Connect prend en charge la carte, Apple Pay, Google Pay et le prelevement SEPA, adapte aux clients internationaux.
 
 ## Frais de paiement en ligne sur le plan Gratuit
 
@@ -47,7 +47,7 @@ Les paiements de factures en ligne entraînent de petits frais de service sur le
 
 Le montant exact et le montant minimum de facture sont configurés côté serveur. L'info-bulle de l'application indique actuellement 0,50 € par paiement de facture en ligne à partir de 5 €, conformément à `config.billing.freeTierSurchargeCents` et `freeTierSurchargeMinInvoiceCents` dans `apps/api/src/config/env.js`. Si l'une de ces valeurs change, cette page et l'info-bulle doivent être mises à jour ensemble.
 
-Pour déconnecter, cliquez sur **Loskoppelen** sur la carte correspondante. Si des paiements ont eu lieu au cours des 24 dernières heures, un avertissement vous rappelle que des webhooks en attente peuvent encore arriver et que les remboursements pour ces paiements doivent être traités manuellement. Après la déconnexion, les clients ne peuvent plus payer via ce prestataire.
+Pour deconnecter, cliquez sur **Loskoppelen** sur la carte correspondante. Si des paiements ont eu lieu au cours des 24 dernieres heures, un avertissement vous rappelle que des webhooks en attente peuvent encore arriver et que les remboursements pour ces paiements doivent etre traites manuellement. Apres la deconnexion, les clients ne peuvent plus payer via ce prestataire.
 
 ### Parametres de paiement Mollie
 
