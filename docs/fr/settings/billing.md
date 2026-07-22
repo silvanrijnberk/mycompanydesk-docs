@@ -23,11 +23,8 @@ Les espaces de travail bénéficiant d'un tel accord sont des clients Pro comme 
 
 MyCompanyDesk propose un plan Gratuit et deux plans payants. Le plan Gratuit est un produit à part entière, proposé à l'inscription et conservé indéfiniment. Les nouveaux clients bénéficient d'un essai Pro de 60 jours ; un espace de travail qui ne convertit pas atterrit sur Gratuit.
 
-<!-- TODO(source-missing): nouveaux prix mensuels et annuels Starter/Pro ainsi que la limite de factures du plan Gratuit (10 pour commencer, puis 2 par mois) nécessitent une source sous sources/ ; le tableau affiche les nouveaux prix mensuels/annuels mais la description du plan Gratuit indique encore une facturation illimitée jusqu'à l'ajout de la source -->
-
 | Plan | Mensuel | Annuel | Description |
 |---|---|---|---|
-<!-- TODO(source-missing): la limite de factures du plan Gratuit nécessite une source sous sources/ ; la ligne Gratuit ci-dessous indique encore une facturation illimitée jusqu'à l'ajout de la source -->
 | **Gratuit** | 0,00 EUR | 0,00 EUR | Facturation, devis et dépenses illimités, plus votre propre site sur mycompanydesk.site |
 | **Starter** | 10,00 EUR | 100,00 EUR | Tout pour faire votre travail : factures, devis, dépenses, heures et projets, sur votre propre page |
 | **Pro** | 25,00 EUR | 250,00 EUR | Faites grandir votre entreprise : domaine et site web personnels, boîte mail professionnelle, connexion bancaire, accès équipe, API et plus |
@@ -55,8 +52,6 @@ Fonctionnalités avec limites d'utilisation (limites mensuelles, sauf indication
 
 Remarque : les limites IA sont mensuelles, et non quotidiennes. Elles sont réinitialisées le premier de chaque mois civil.
 
-
-<!-- TODO(source-missing): la limite de factures du plan Gratuit nécessite une source sous sources/ ; le paragraphe ci-dessous indique encore une facturation illimitée jusqu'à l'ajout de la source -->
 La facturation sur le plan Gratuit est illimitée : aucun plafond mensuel ni aucun plafond cumulé. Les factures déjà créées restent toujours visibles et exportables.
 
 Fonctionnalités par plan :

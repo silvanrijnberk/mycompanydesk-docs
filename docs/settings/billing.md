@@ -23,11 +23,8 @@ Workspaces on such an arrangement are regular Pro customers in every respect: sa
 
 MyCompanyDesk has a Free plan plus two paid plans. Free is a product in its own right, offered at signup and kept indefinitely. New customers get a 60-day Pro trial, and a workspace that does not convert lands on Free rather than being locked out.
 
-<!-- TODO(source-missing): new Starter/Pro monthly/yearly prices and the Free-plan invoice cap (10 to start, 2/month thereafter) need a pricing source under sources/; the table shows the new monthly/yearly prices but the Free-plan description still says unlimited invoicing until the source is added -->
-
 | Plan | Monthly | Yearly | Description |
 |---|---|---|---|
-<!-- TODO(source-missing): Free-plan invoice cap needs a pricing source under sources/; the Free row below still says unlimited invoicing until the source is added -->
 | **Free** | €0.00 | €0.00 | Unlimited invoicing, quotes and expenses, plus your own website on mycompanydesk.site |
 | **Starter** | €10.00 | €100.00 | Everything to do your work: invoices, quotes, expenses, hours and projects, on your own page |
 | **Pro** | €25.00 | €250.00 | Grow your business: own domain and website, business inbox, bank connection, team access, API and more |
@@ -55,8 +52,6 @@ Quota-limited features (monthly caps, except where noted):
 
 Note: AI caps are monthly, not daily. They reset on the first of each calendar month.
 
-
-<!-- TODO(source-missing): Free-plan invoice cap needs a pricing source under sources/; the paragraph below still says unlimited invoicing until the source is added -->
 Free invoicing is unlimited: there is no monthly cap and no lifetime allowance. Existing invoices always stay viewable and exportable.
 
 Features unlocked per plan:
