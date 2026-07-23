@@ -93,11 +93,12 @@ Het tandwiel op de pagina Uren & agenda opent de agenda-instellingen. Hier stel 
 - Welke stappen de snelle invoer toont (project, notities, reizen)
 - Het standaard uurtarief (teambeheerders)
 - Reisstandaarden zoals adressen, voertuig en kilometertarief
+- Gebruik je huidige locatie als startpunt voor een rit, als je apparaat dat toestaat
 - Een link om een externe agenda te koppelen
 
 ## Tips
 
 - Schrijf dagelijks je uren voor nauwkeurige administratie; met de suggesties log je terugkerend werk met een tik opnieuw
 - Plan je week vooruit met geplande registraties en bevestig ze gaandeweg
-- Controleer regelmatig je niet-gefactureerde uren, zodat er geen declarabele uren blijven liggen
+- Controleer regelautomatisch je niet-gefactureerde uren, zodat er geen declarabele uren blijven liggen
 - Koppel je agenda een keer en je afspraken worden automatisch logbare registraties
