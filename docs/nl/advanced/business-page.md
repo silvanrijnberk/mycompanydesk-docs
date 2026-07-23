@@ -44,6 +44,20 @@ De sitebouwer heeft vijf tabs (zes als Stijl is uitgeklapt):
 - **Domein & SEO**: Configureer je eigen domein en SEO-instellingen. De inhoud hier is gekoppeld aan het domein dat in de domeinwisselaar in de bovenbalk is geselecteerd. Wanneer de hoofdsite (weergegeven als je werkruimtenaam) is geselecteerd, verschijnt er geen domeinspecifiek paneel. Zie [Domeinen, website en inbox](/nl/features/domains-website-inbox) voor het volledige domeinbeheer.
 - **Koppelingen**: Verbind diensten van derden met je website.
 
+### Bespoke-ontwerpen
+
+De sitebouwer biedt ook een set kant-en-klare **bespoke ontwerpen** die de standaard stijlpresets vervangen door een samengesteld sjabloon, kleurenpakket en merkaccent. Open het **Bespoke ontwerpen**-paneel vanuit de Stijl-tab om door de galerij te bladeren. Elke kaart is een live voorbeeld gevuld met je eigen werkruimtegegevens (diensten, foto's, reviews, contactgegevens), zodat je precies ziet hoe het ontwerp eruitziet voordat je het toepast.
+
+Als je een ontwerp kiest, worden drie dingen tegelijk ingesteld:
+
+- **Sjabloon**: de layoutfamilie en sectiestructuur (bijvoorbeeld een gecentreerde hero met een marquee van reviews, of een gesplitste spotlight-pagina voor diensten).
+- **Kleurenpakket**: een samengestelde paletvariant voor dat sjabloon. De meeste sjablonen bieden meerdere pakketten, zoals warm, koel, neutraal, fel of gedempt. Het pakket wisselen houdt hetzelfde sjabloon intact maar vervangt de CSS custom-property-tokens, zodat de vorm gelijk blijft terwijl de sfeer verandert.
+- **Merkaccent**: een optionele overschrijving voor het accentkleur van het sjabloon. Laat het leeg om het standaardaccent van het pakket te gebruiken; vul je eigen hex-kleur in om knoppen, highlights en badges op je merk af te stemmen. Je kunt de overschrijving altijd wissen om terug te vallen op de pakketstandaard.
+
+Je bedrijfslogo wordt automatisch gebruikt als je er een hebt geüpload. Sjablonen die een logo ondersteunen tonen het in de navbar of hero. Sjablonen die een tekstwoordmerk verwachten, vallen terug op je bedrijfsnaam als er geen logo is ingesteld, via een conditionele regel zodat het juiste element verschijnt.
+
+Als je een ontwerp vindt dat je bevalt, klik je op **Dit ontwerp gebruiken**. De huidige site wordt meteen gepubliceerd met het nieuwe sjabloon, pakket en accent, en je openbare URL toont direct de wijziging.
+
 ## Pagina's aanmaken
 
 1. Ga naar de **Pagina's**-tab.
