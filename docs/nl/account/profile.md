@@ -1,6 +1,6 @@
 ---
 title: Je persoonlijke instellingen
-last_verified: 2026-07-02
+last_verified: 2026-07-23
 ---
 
 # Je persoonlijke instellingen
@@ -42,6 +42,19 @@ Onder de schakelaars zet je **pushmeldingen op dit apparaat** aan, zodat achters
 ## Gekoppelde agenda's
 
 Je kunt **Google Agenda** of **Outlook** koppelen, zodat afspraken uit je agenda ook in MyCompanyDesk verschijnen. Dit is geen rij op de instellingenpagina: open de agenda in de app en ga naar de agenda-instellingen, daar staat de link naar de pagina met agendakoppelingen. Elke koppeling kun je op dezelfde pagina weer verwijderen.
+
+## Klantlocaties
+
+De kaart **Klantlocaties** op de mobiele instellingenpagina toont hoeveel van je klanten met een adres op de kaart te vinden zijn. Locatiefuncties zoals automatisch inchecken en het vinden van klanten in de buurt werken alleen voor klanten waarvan het adres is omgezet naar coördinaten.
+
+De kaart toont:
+
+- hoeveel klanten met een adres zijn gevonden
+- hoeveel nog opgezocht moeten worden
+- een knop om adressen in één keer bij te werken
+- een korte lijst met klanten waarvan het adres niet gevonden kon worden, zodat je die kunt corrigeren
+
+Als je een klantadres wijzigt, worden de opgeslagen coördinaten automatisch gewist. Bij de volgende zoekopdracht wordt het nieuwe adres opnieuw geprobeerd.
 
 ## Gerelateerde pagina's
 

@@ -1,6 +1,6 @@
 ---
 title: Vos paramètres personnels
-last_verified: 2026-07-02
+last_verified: 2026-07-23
 ---
 
 # Vos paramètres personnels
@@ -42,6 +42,19 @@ Sous les interrupteurs, vous pouvez activer les **notifications push sur cet app
 ## Agendas connectés
 
 Vous pouvez connecter **Google Agenda** ou **Outlook** pour que les rendez-vous de votre agenda apparaissent aussi dans MyCompanyDesk. Ce n'est pas une ligne de la page des paramètres : ouvrez l'agenda dans l'application et allez dans ses réglages, où la page des connexions d'agenda est accessible. Chaque connexion peut être retirée depuis la même page.
+
+## Emplacements clients
+
+La carte **Emplacements clients** dans les paramètres mobiles indique combien de vos clients avec une adresse peuvent être localisés sur une carte. Les fonctions de localisation, comme l'enregistrement automatique et la recherche de clients à proximité, ne fonctionnent que pour les clients dont l'adresse a été convertie en coordonnées.
+
+La carte affiche :
+
+- combien de clients avec une adresse sont localisés
+- combien doivent encore être recherchés
+- un bouton pour mettre à jour les adresses en une fois
+- une courte liste des clients dont l'adresse n'a pas pu être localisée, pour que vous puissiez la corriger
+
+Lorsque vous modifiez l'adresse d'un client, les coordonnées mises en cache sont automatiquement effacées. La recherche suivante tentera de localiser la nouvelle adresse.
 
 ## Pages associées
 
