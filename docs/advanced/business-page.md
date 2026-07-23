@@ -44,6 +44,20 @@ The site builder has five tabs (six when Style is expanded):
 - **Domain & SEO**: Configure your custom domain and SEO settings. The content here is scoped to the domain selected in the topbar domain switcher. When the default site (listed as the workspace name) is selected, no domain-specific panel appears. See [Domains, Website and Inbox](/features/domains-website-inbox) for the full domain management workflow.
 - **Integrations**: Connect third-party services to your website.
 
+### Bespoke designs
+
+The site builder also ships a set of ready-made **bespoke designs** that replace the standard style presets with a curated template, color pack, and brand accent. Open the **Bespoke designs** panel from the Style tab to browse the gallery. Each card is a live preview filled with your own workspace data (services, photos, reviews, contact details), so you see exactly how the design looks before you apply it.
+
+Picking a design sets three things at once:
+
+- **Template**: the layout family and section structure (for example, a centred hero with a marquee of reviews, or a split-spotlight services page).
+- **Color pack**: a curated palette variant for that template. Most templates offer multiple packs such as warm, cool, neutral, bold, or muted. Changing the pack keeps the same template but swaps CSS custom-property tokens, so the layout stays intact while the feel changes.
+- **Brand accent**: an optional override for the template's accent color. Leave it empty to use the pack's default accent; enter your own hex color to make buttons, highlights, and badges match your brand. You can clear the override at any time to fall back to the pack default.
+
+Your business logo is used automatically if you have uploaded one. Templates that support a logo render it in the navbar or hero area. Templates that expect a text wordmark fall back to your business name when no logo is set, controlled by a conditional rule so the right element appears.
+
+When you find a design you like, click **Use this design**. The current site is published straight away with the new template, pack, and accent applied, and your public URL immediately shows the change.
+
 ## Creating pages
 
 1. Go to the **Pages** tab.

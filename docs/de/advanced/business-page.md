@@ -44,6 +44,20 @@ Der Website-Builder hat fünf Tabs (sechs, wenn Stil ausgeklappt ist):
 - **Domain & SEO**: Konfigurieren Sie Ihre eigene Domain und SEO-Einstellungen. Der Inhalt hier bezieht sich auf die Domain, die im Domain-Wechsler in der oberen Leiste ausgewählt ist. Wenn die Hauptwebsite (angezeigt als Ihr Workspace-Name) ausgewählt ist, erscheint kein domain-spezifisches Panel. Siehe [Domains, Website und Posteingang](/de/features/domains-website-inbox) für die vollständige Domain-Verwaltung.
 - **Integrationen**: Binden Sie Drittanbieterdienste in Ihre Website ein.
 
+### Bespoke-Designs
+
+Der Website-Builder bietet außerdem eine Reihe fertiger **Bespoke-Designs**, die die Standardstil-Presets durch eine kuratierte Vorlage, ein Farbpaket und einen Markenakzent ersetzen. Öffnen Sie das Panel **Bespoke-Designs** im Stil-Tab, um die Galerie zu durchsuchen. Jede Karte ist eine Live-Vorschau, die mit Ihren eigenen Workspace-Daten gefüllt ist (Dienstleistungen, Fotos, Bewertungen, Kontaktdaten), sodass Sie genau sehen, wie das Design aussieht, bevor Sie es anwenden.
+
+Bei der Auswahl eines Designs werden drei Dinge gleichzeitig festgelegt:
+
+- **Vorlage**: die Layoutfamilie und Abschnittsstruktur (zum Beispiel eine zentrierte Hero mit einem Review-Marquee oder eine geteilte Spotlight-Dienstleistungsseite).
+- **Farbpaket**: eine kuratierte Palette-Variante für diese Vorlage. Die meisten Vorlagen bieten mehrere Pakete wie warm, kühl, neutral, kräftig oder gedämpft. Das Paket zu wechseln behält dieselbe Vorlage bei, ersetzt aber die CSS-Custom-Property-Tokens, sodass das Layout gleich bleibt, während die Stimmung wechselt.
+- **Markenakzent**: eine optionale Überschreibung für die Akzentfarbe der Vorlage. Lassen Sie sie leer, um die Standardakzentfarbe des Pakets zu verwenden; geben Sie Ihre eigene Hex-Farbe ein, um Schaltflächen, Highlights und Abzeichen an Ihre Marke anzupassen. Sie können die Überschreibung jederzeit löschen, um wieder auf die Paket-Standardfarbe zurückzufallen.
+
+Ihr Geschäftslogo wird automatisch verwendet, wenn Sie eines hochgeladen haben. Vorlagen, die ein Logo unterstützen, zeigen es in der Navigationsleiste oder im Hero an. Vorlagen, die ein Textwortzeichen erwarten, greifen auf Ihren Geschäftsnamen zurück, wenn kein Logo festgelegt ist, gesteuert durch eine bedingte Regel, damit das richtige Element erscheint.
+
+Wenn Sie ein Design gefunden haben, klicken Sie auf **Dieses Design verwenden**. Die aktuelle Site wird sofort mit der neuen Vorlage, dem Paket und dem Akzent veröffentlicht, und Ihre öffentliche URL zeigt die Änderung sofort.
+
 ## Seiten erstellen
 
 1. Gehen Sie zum Tab **Seiten**.

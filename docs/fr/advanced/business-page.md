@@ -44,6 +44,20 @@ Le constructeur de site dispose de cinq onglets (six lorsque Style est deplie) :
 - **Domaine et SEO**: Configurez votre domaine personnalise et vos parametres SEO. Le contenu ici est lie au domaine selectionne dans le selecteur de domaine de la barre superieure. Lorsque le site principal (affiche sous le nom de votre espace de travail) est selectionne, aucun panneau specifique au domaine n'apparait. Consultez [Domaines, site web et boite de reception](/fr/features/domains-website-inbox) pour la gestion complete des domaines.
 - **Integrations**: Connectez des services tiers a votre site web.
 
+### Designs sur mesure
+
+Le constructeur de site propose egalement un ensemble de **designs sur mesure** prets a l'emploi qui remplacent les prereglages de style standard par un modele, un pack de couleurs et un accent de marque. Ouvrez le panneau **Designs sur mesure** depuis l'onglet Style pour parcourir la galerie. Chaque carte est un apercu en direct rempli avec vos propres donnees d'espace de travail (services, photos, avis, coordonnees), pour que vous voyiez exactement ce a quoi ressemble le design avant de l'appliquer.
+
+Choisir un design regle trois choses a la fois :
+
+- **Modele**: la famille de mise en page et la structure des sections (par exemple, un hero centre avec un defile d'avis, ou une page de services en vedette partagee).
+- **Pack de couleurs**: une variante de palette organisee pour ce modele. La plupart des modeles proposent plusieurs packs tels que chaud, froid, neutre, audacieux ou attenue. Changer de pack conserve le meme modele mais echange les proprietes CSS personnalisees, donc la structure reste intacte tandis que l'ambiance change.
+- **Accent de marque**: une substitution facultative pour la couleur d'accent du modele. Laissez-la vide pour utiliser l'accent par defaut du pack ; saisissez votre propre couleur hexadecimale pour harmoniser les boutons, les points forts et les badges avec votre marque. Vous pouvez effacer la substitution a tout moment pour revenir a l'accent par defaut du pack.
+
+Votre logo d'entreprise est utilise automatiquement si vous en avez telecharge un. Les modeles qui prennent en charge un logo l'affichent dans la barre de navigation ou le hero. Les modeles qui attendent un mot-symbole textuel se rabattent sur le nom de votre entreprise lorsqu'aucun logo n'est defini, controle par une regle conditionnelle pour que le bon element apparaisse.
+
+Quand un design vous plait, cliquez sur **Utiliser ce design**. Le site actuel est immediatement publie avec le nouveau modele, le pack et l'accent appliques, et votre URL publique affiche la modification instantanement.
+
 ## Creer des pages
 
 1. Allez dans l'onglet **Pages**.
