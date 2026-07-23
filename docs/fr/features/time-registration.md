@@ -93,6 +93,7 @@ La roue dentée sur la page Agenda ouvre les paramètres de l'agenda. Vous y con
 - Les étapes affichées par la saisie rapide (projet, notes, déplacements)
 - Le tarif horaire par défaut (administrateurs d'équipe)
 - Les valeurs par défaut des déplacements comme les adresses, le véhicule et le tarif kilométrique
+- Utiliser votre localisation actuelle comme point de départ d'un déplacement, quand votre appareil le permet
 - Un lien pour connecter un calendrier externe
 
 ## Conseils

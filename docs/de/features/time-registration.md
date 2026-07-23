@@ -93,6 +93,7 @@ Das Zahnrad auf der Zeitplan-Seite öffnet die Zeitplan-Einstellungen. Hier konf
 - Welche Schritte die Schnelleingabe zeigt (Projekt, Notizen, Fahrten)
 - Den Standard-Stundensatz (Team-Administratoren)
 - Fahrt-Standards wie Adressen, Fahrzeug und Kilometersatz
+- Nutzen Sie Ihren aktuellen Standort als Startpunkt für eine Fahrt, wenn Ihr Gerät das zulässt
 - Einen Link zum Verbinden eines externen Kalenders
 
 ## Tipps

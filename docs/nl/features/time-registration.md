@@ -93,6 +93,7 @@ Het tandwiel op de pagina Uren & agenda opent de agenda-instellingen. Hier stel 
 - Welke stappen de snelle invoer toont (project, notities, reizen)
 - Het standaard uurtarief (teambeheerders)
 - Reisstandaarden zoals adressen, voertuig en kilometertarief
+- Gebruik je huidige locatie als startpunt voor een rit, als je apparaat dat toestaat
 - Een link om een externe agenda te koppelen
 
 ## Tips

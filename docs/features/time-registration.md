@@ -93,6 +93,7 @@ The gear on the Schedule page opens the schedule settings. Here you configure:
 - Which quick-add steps appear (project, notes, travel)
 - The default hourly rate (team admins)
 - Travel defaults such as addresses, vehicle, and mileage rate
+- Use your current location as the starting point for a trip when your device allows it
 - A link to connect an external calendar
 
 ## Tips
