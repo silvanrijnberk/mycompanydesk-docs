@@ -100,5 +100,5 @@ Het tandwiel op de pagina Uren & agenda opent de agenda-instellingen. Hier stel 
 
 - Schrijf dagelijks je uren voor nauwkeurige administratie; met de suggesties log je terugkerend werk met een tik opnieuw
 - Plan je week vooruit met geplande registraties en bevestig ze gaandeweg
-- Controleer regelautomatisch je niet-gefactureerde uren, zodat er geen declarabele uren blijven liggen
+- Controleer regelmatig je niet-gefactureerde uren, zodat er geen declarabele uren blijven liggen
 - Koppel je agenda een keer en je afspraken worden automatisch logbare registraties
