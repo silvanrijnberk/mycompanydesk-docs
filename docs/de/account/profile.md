@@ -1,6 +1,6 @@
 ---
 title: Ihre persönlichen Einstellungen
-last_verified: 2026-07-02
+last_verified: 2026-07-23
 ---
 
 # Ihre persönlichen Einstellungen
@@ -42,6 +42,19 @@ Unter den Schaltern aktivieren Sie **Push-Benachrichtigungen auf diesem Gerät**
 ## Verbundene Kalender
 
 Sie können **Google Kalender** oder **Outlook** verbinden, damit Termine aus Ihrem Kalender auch in MyCompanyDesk erscheinen. Das ist keine Zeile auf der Einstellungsseite: Öffnen Sie den Kalender in der App und gehen Sie in dessen Einstellungen, dort ist die Seite mit den Kalenderverbindungen verlinkt. Jede Verbindung lässt sich auf derselben Seite wieder entfernen.
+
+## Kundenstandorte
+
+Die Karte **Kundenstandorte** auf der mobilen Einstellungsseite zeigt, wie viele Ihrer Kunden mit Adresse auf der Karte lokalisiert werden können. Standortfunktionen wie automatisches Einchecken und die Suche nach Kunden in der Nähe funktionieren nur für Kunden, deren Adresse in Koordinaten aufgelöst wurde.
+
+Die Karte zeigt:
+
+- wie viele Kunden mit Adresse aufgelöst sind
+- wie viele noch nachgeschlagen werden müssen
+- einen Button, um Adressen auf einmal zu aktualisieren
+- eine kurze Liste mit Kunden, deren Adresse nicht aufgelöst werden konnte, damit Sie diese korrigieren können
+
+Wenn Sie eine Kundenadresse bearbeiten, werden die zwischengespeicherten Koordinaten automatisch gelöscht. Beim nächsten Abruf wird die neue Adresse erneut versucht.
 
 ## Verwandte Seiten
 

@@ -1,6 +1,6 @@
 ---
 title: Your personal settings
-last_verified: 2026-07-02
+last_verified: 2026-07-23
 ---
 
 # Your personal settings
@@ -42,6 +42,19 @@ Below the switches you can enable **push notifications on this device**, so over
 ## Connected calendars
 
 You can connect **Google Calendar** or **Outlook** so appointments from your calendar also appear in MyCompanyDesk. This is not a row on the settings page: open the agenda in the app and go to its settings, where the calendar connections page is linked. Each connection can be removed again from the same page.
+
+## Customer locations
+
+The **Customer locations** card on the mobile settings page shows how many of your addressed customers can be placed on a map. Location features, such as automatic check-in and finding nearby customers, only work for customers whose address has been resolved to coordinates.
+
+The card lists:
+
+- how many customers with an address are resolved
+- how many still need to be looked up
+- a button to update addresses in one go
+- a short list of customers whose addresses could not be resolved, so you can fix them
+
+When you edit a customer address, the cached coordinates are cleared automatically. The next lookup will try to resolve the new address.
 
 ## Related pages
 
