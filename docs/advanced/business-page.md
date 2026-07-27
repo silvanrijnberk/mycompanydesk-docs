@@ -220,6 +220,20 @@ A standalone single-item buy card, for when a full pricing table is more than yo
 
 See [Sales](/features/domains-website-inbox#sales) for tracking payments and orders.
 
+### Catalog sections
+
+Some bespoke templates include a live catalog section that pulls items straight from your Aanbod catalog. If the current page structurally repeats over services, products, or subscriptions, the content editor shows a **Catalog** panel for each kind that is actually used on that page.
+
+The panel lives outside the template frame, so it never interferes with the template's own styling. From here you control only the presentation of the catalog on this site:
+
+- **Heading and intro**: set the section title and a short introduction.
+- **Order**: drag items into the order you want, or use the up and down buttons. The natural Aanbod order is used for anything you do not explicitly reorder.
+- **Show or hide**: toggle the eye icon to keep an item in Aanbod but hide it on this website.
+
+The item content itself, title, price, description, and image, is read-only in the editor. It is pulled from the live Aanbod catalog and must be edited there. The price follows the price mode set in Aanbod: a fixed amount, "from" an amount, or "On request" when no price is set.
+
+If the catalog kind has no eligible items yet, the panel shows an empty state with a link to add an item in Aanbod.
+
 ## Section animations
 
 Every section block has an **Animation** panel in the inspector. It lets you add motion that plays when the section enters the viewport, on page load, or on hover.
