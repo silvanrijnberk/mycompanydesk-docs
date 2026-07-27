@@ -87,7 +87,7 @@ Verträge können auch mit [Projekten](/de/features/projects) verknüpft werden.
 
 Das eignet sich für Retainer- oder Zeit-und-Material-Vereinbarungen: der Vertrag legt die Preisbasis fest, die verknüpften Projekte liefern die Stunden.
 
-Sie können ein Projekt jederzeit wieder entknüpfen; bereits auf einer Rechnung erfasste Stunden bleiben erhalten.
+Sie können ein Projekt jederzeit wieder entknüpfen; bereits in Rechnung gestellte Stunden bleiben erhalten.
 
 ## Kennzahlen
 

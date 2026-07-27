@@ -85,7 +85,7 @@ Les contrats peuvent etre lies aux [objets/actifs](/fr/features/objects) pour la
 
 Les contrats peuvent aussi être liés à des [projets](/fr/features/projects). Lorsque vous créez ou modifiez un projet, choisissez le contrat dans le champ **Contrat**. Les heures saisies sur ce projet sont alors incluses sur la facture du contrat.
 
-Cela est utile pour les accords de type retainer ou temps et moyens : le contrat définit la base de tarification, et les projets liés fournissent les heures.
+Cela est utile pour les accords de type retainer ou régie : le contrat définit la base de tarification, et les projets liés fournissent les heures.
 
 Vous pouvez délier un projet à tout moment ; les heures déjà facturées restent sur leur facture.
 
