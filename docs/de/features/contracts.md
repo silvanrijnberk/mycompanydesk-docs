@@ -60,6 +60,22 @@ Bei wiederkehrenden Verträgen können Sie den berechneten Betrag automatisch ü
 
 Wenn eine Belastung fehlschlägt oder das Mandat nicht mehr gültig ist, erhalten Sie eine Benachrichtigung „Automatisches Einziehen fehlgeschlagen“. Die Benachrichtigung verlinkt direkt auf den Vertrag, damit Sie das Mandat erneut verbinden oder den Kunden kontaktieren können.
 
+## Preisanpassung
+
+Wiederkehrende Verträge können für Inflation oder vereinbarte jährliche Erhöhungen angepasst werden. Öffnen Sie die Vertragsliste und klicken Sie auf **Preise erhöhen**, um zu sehen, was eine prozentuale Erhöhung bei allen berechtigten Verträgen bewirken würde. Ein Vertrag ist nur berechtigt, wenn seit Beginn oder seit der letzten Erhöhung mindestens ein Jahr vergangen ist.
+
+Die Vorschau zeigt pro Vertrag:
+
+- Den aktuellen Tarif oder Betrag pro Periode
+- Den neuen Tarif oder Betrag nach der Erhöhung
+- Das Datum der letzten Anpassung des Vertrags
+
+Sie wenden die Erhöhung pro Vertrag an, niemals pauschal, damit Sie Kunden überspringen können, mit denen Sie noch nicht gesprochen haben. Sobald sie angewendet ist, aktualisiert das System die hinterlegten Vertragsbedingungen und zukünftige Rechnungen zeigen den neuen Betrag.
+
+::: tip Zuerst abstimmen
+Besprechen Sie jede Preiserhöhung mit Ihrem Kunden, bevor Sie sie anwenden. Die Vorschau ändert nichts, bis Sie bei einem bestimmten Vertrag auf **Anwenden** klicken.
+:::
+
 ## Verknüpfung mit Vermögenswerten
 
 Verträge können mit [Objekten/Vermögenswerten](/de/features/objects) für die Mietverwaltung verknüpft werden:

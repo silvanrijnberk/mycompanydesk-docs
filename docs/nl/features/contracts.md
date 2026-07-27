@@ -60,6 +60,22 @@ Op de contractdetailpagina open je de kaart **Automatische incasso** en stel je 
 
 Als een incasso mislukt of het mandaat niet meer geldig is, ontvang je een melding 'Automatische incasso mislukt'. De melding linkt rechtstreeks naar het contract, zodat je het mandaat opnieuw kunt koppelen of contact kunt opnemen met de klant.
 
+## Prijsindexatie
+
+Terugkerende contracten kun je aanpassen voor inflatie of afgesproken jaarlijkse verhogingen. Open de contractenlijst en klik op **Prijzen verhogen** om te zien wat een percentageverhoging doet voor alle contracten die in aanmerking komen. Een contract komt pas in aanmerking als er minstens een jaar is verstreken sinds de start of sinds de vorige verhoging.
+
+De voorvertoning toont per contract:
+
+- Het huidige tarief of bedrag per periode
+- Het nieuwe tarief of bedrag na de verhoging
+- De datum waarop het contract voor het laatst is aangepast
+
+Je past de verhoging per contract toe, nooit in bulk, zodat je klanten kunt overslaan met wie je het nog niet hebt besproken. Eenmaal toegepast, werkt het systeem de opgeslagen contractvoorwaarden bij en tonen toekomstige facturen het nieuwe bedrag.
+
+::: tip Eerst afstemmen
+Bespreek elke prijsverhoging met je klant voordat je deze toepast. De voorvertoning verandert pas iets zodra je op **Toepassen** klikt bij een specifiek contract.
+:::
+
 ## Koppelen aan objecten
 
 Contracten kunnen worden gekoppeld aan [objecten/activa](/nl/features/objects) voor verhuurbeheer:
