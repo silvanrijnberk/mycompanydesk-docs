@@ -58,6 +58,10 @@ Votre logo d'entreprise est utilise automatiquement si vous en avez telecharge u
 
 Quand un design vous plait, cliquez sur **Utiliser ce design**. Le site actuel est immediatement publie avec le nouveau modele, le pack et l'accent appliques, et votre URL publique affiche la modification instantanement.
 
+### Reorganiser les sections sur une page sur mesure
+
+Apres avoir applique un design sur mesure, ouvrez une page dans l'editeur de contenu sur mesure. Le panneau **Sections** liste toutes les sections de premier niveau de cette page. Faites glisser une section vers une nouvelle position, ou utilisez les boutons haut et bas. Desactivez l'interrupteur de visibilite pour masquer une section sans la supprimer. La navigation, le hero et le pied de page restent verrouilles; vous ne pouvez ni les deplacer ni les masquer.
+
 ## Creer des pages
 
 1. Allez dans l'onglet **Pages**.

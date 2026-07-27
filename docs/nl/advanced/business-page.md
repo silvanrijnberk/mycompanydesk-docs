@@ -58,6 +58,10 @@ Je bedrijfslogo wordt automatisch gebruikt als je er een hebt geüpload. Sjablon
 
 Als je een ontwerp vindt dat je bevalt, klik je op **Dit ontwerp gebruiken**. De huidige site wordt meteen gepubliceerd met het nieuwe sjabloon, pakket en accent, en je openbare URL toont direct de wijziging.
 
+### Secties herordenen op een bespoke-pagina
+
+Nadat je een bespoke-ontwerp hebt toegepast, open je een pagina in de bespoke-contenteditor. Het paneel **Secties** toont alle top-level secties van die pagina. Sleep een sectie naar een nieuwe plek, of gebruik de knoppen omhoog en omlaag. Zet de zichtbaarheidsschakelaar uit om een sectie te verbergen zonder hem te verwijderen. De navigatie, hero en footer blijven op hun plek staan; je kunt ze niet verplaatsen of verbergen.
+
 ## Pagina's aanmaken
 
 1. Ga naar de **Pagina's**-tab.

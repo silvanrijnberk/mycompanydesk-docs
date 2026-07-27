@@ -58,6 +58,10 @@ Ihr Geschäftslogo wird automatisch verwendet, wenn Sie eines hochgeladen haben.
 
 Wenn Sie ein Design gefunden haben, klicken Sie auf **Dieses Design verwenden**. Die aktuelle Site wird sofort mit der neuen Vorlage, dem Paket und dem Akzent veröffentlicht, und Ihre öffentliche URL zeigt die Änderung sofort.
 
+### Abschnitte auf einer Bespoke-Seite neu anordnen
+
+Nachdem Sie ein Bespoke-Design angewendet haben, öffnen Sie eine Seite im Bespoke-Content-Editor. Das Panel **Abschnitte** listet alle Top-Level-Abschnitte dieser Seite. Ziehen Sie einen Abschnitt an eine neue Position, oder nutzen Sie die Auf- und Ab-Buttons. Schalten Sie die Sichtbarkeit aus, um einen Abschnitt auszublenden, ohne ihn zu löschen. Navigation, Hero und Footer bleiben gesperrt; sie lassen sich weder verschieben noch ausblenden.
+
 ## Seiten erstellen
 
 1. Gehen Sie zum Tab **Seiten**.
