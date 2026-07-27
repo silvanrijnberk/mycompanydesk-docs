@@ -1,6 +1,6 @@
 ---
 title: Your personal settings
-last_verified: 2026-07-23
+last_verified: 2026-07-27
 ---
 
 # Your personal settings
@@ -38,6 +38,8 @@ Four switches decide what MyCompanyDesk messages you about, in the app and by em
 Truly important messages about your account are always sent and cannot be switched off.
 
 Below the switches you can enable **push notifications on this device**, so overdue invoices, payments and deadlines also reach you as notifications on your phone or computer. Your browser or phone will ask for permission the first time. If you skip it, you can always turn it on later from the notification bell at the top of the app.
+
+Push notifications are supported in browsers and in the Android app. On Android the notification uses the app icon and category colour; for inbox messages it also shows the sender's avatar when the app has registered it. Older Android builds without the native messaging service still receive the standard SDK-rendered notification.
 
 ## Connected calendars
 
