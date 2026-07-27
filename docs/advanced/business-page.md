@@ -58,6 +58,10 @@ Your business logo is used automatically if you have uploaded one. Templates tha
 
 When you find a design you like, click **Use this design**. The current site is published straight away with the new template, pack, and accent applied, and your public URL immediately shows the change.
 
+### Reordering sections on a bespoke page
+
+After applying a bespoke design, open any page in the bespoke content editor. The **Sections** panel lists every top-level section on that page. Drag a section to a new position, or use the up and down buttons. Toggle the visibility switch to hide a section without deleting it. The navigation, hero and footer sections stay locked in place; you cannot move or hide them.
+
 ## Creating pages
 
 1. Go to the **Pages** tab.
