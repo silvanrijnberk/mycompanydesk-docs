@@ -31,6 +31,19 @@ Das Vertragsmodul ist optional. Aktivieren Sie es unter **Unternehmen > Funktion
 Im Formular für neue Verträge bleiben optionale Angaben übersichtlich: der Abschnitt **Weitere Optionen** zeigt zusätzliche Felder für Servicezuschlag, USt.-Satz und Servicebeschreibung. Sie sind für das Erstellen des Vertrags nicht erforderlich, können aber bei Bedarf ausgeklappt werden.
 :::
 
+## Preisbasis
+
+Jeder Vertrag hat eine **Preisbasis**, die festlegt, wie der Betrag vereinbart wurde:
+
+- **Fester Betrag** -- jede Periode derselbe Betrag, zum Beispiel Miete oder eine feste Monatsgebühr.
+- **Stundensatz** -- Sie fakturieren die Stunden, die Sie für Projekte erfassen, die mit diesem Vertrag verknüpft sind.
+- **Tagessatz** -- Sie fakturieren die Tage, an denen Sie an Projekten arbeiten, die mit diesem Vertrag verknüpft sind.
+- **Fester Projektpreis** -- ein vereinbarter Gesamtpreis für die gesamte Aufgabe, einmalig fakturiert.
+
+Bei Stunden- und Tagessatzverträgen zeigt die Vertragsdetailseite eine Karte **Arbeit unter diesem Vertrag** mit den vereinbarten, fakturierten und erfassten Summen sowie den verknüpften Projekten. Ein Tag zählt als 8 Stunden.
+
+Ein fester Projektpreis wiederholt sich nicht: der Vertrag erzeugt eine Rechnung und stoppt dann.
+
 ## Vertragsstatus
 
 | Status | Beschreibung |
@@ -46,7 +59,7 @@ Aktive Verträge mit einem Wiederholungsplan generieren automatisch Rechnungen i
 2. Wendet den richtigen Kunden, Betrag und die Beschreibung an
 3. Folgt Ihren Rechnungsnummerierungseinstellungen
 
-Sie können generierte Rechnungen manuell überprüfen und versenden oder den automatischen Versand konfigurieren.
+Sie können generierte Rechnungen manuell überprüfen und versenden oder den automatischen Versand konfigurieren. Wenn ein Vertrag auf einem Stundensatz, Tagessatz oder festen Projektpreis basiert, erhalten Sie auch eine Warnung, wenn das Vertragsbudget überschritten wird oder erfasste Stunden nicht bewertet werden konnten, weil kein Satz hinterlegt war.
 
 ## Automatisches Einziehen
 
@@ -67,6 +80,14 @@ Verträge können mit [Objekten/Vermögenswerten](/de/features/objects) für die
 - Verknüpfen Sie einen Vertrag mit einer Immobilie, einem Fahrzeug oder einem Gerät
 - Verfolgen Sie, welche Vermögenswerte derzeit vermietet sind und an wen
 - Sehen Sie den Vertragsverlauf pro Vermögenswert
+
+## Verknüpfen mit Projekten
+
+Verträge können auch mit [Projekten](/de/features/projects) verknüpft werden. Wenn Sie ein Projekt anlegen oder bearbeiten, wählen Sie den Vertrag im Feld **Vertrag** aus. Erfasste Stunden auf diesem Projekt werden dann auf der Rechnung des Vertrags ausgewiesen.
+
+Das eignet sich für Retainer- oder Zeit-und-Material-Vereinbarungen: der Vertrag legt die Preisbasis fest, die verknüpften Projekte liefern die Stunden.
+
+Sie können ein Projekt jederzeit wieder entknüpfen; bereits in Rechnung gestellte Stunden bleiben erhalten.
 
 ## Kennzahlen
 

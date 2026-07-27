@@ -85,6 +85,17 @@ Quand vous avez de l'activité internationale, des cartes complémentaires appar
 
 Ces cartes restent masquées tant qu'il n'y a pas de données internationales réelles ; la plupart des espaces de travail ne les voient jamais.
 
+### Usage privé du véhicule de société
+
+Lorsque vous déduisez la TVA sur un véhicule de société, vous devez corriger l'usage privé en fin d'année. MyCompanyDesk dispose d'un flux de correction de TVA dédié :
+
+- Choisissez entre une correction forfaitaire basée sur le prix catalogue, ou une correction basée sur l'utilisation réelle avec un registre des déplacements complet.
+- Le taux forfaitaire dépend de l'âge du véhicule ou de la manière dont il a été acheté sans déduction de TVA.
+
+La correction est intégrée aux totaux de la période dans l'onglet **Déclaration**.
+
+<!-- TODO(source-missing): Les taux forfaitaires néerlandais pour la correction de TVA sur l'usage privé d'un véhicule de société et le seuil d'âge ne sont pas encore dans sources/. Ne citez pas ces valeurs dans la documentation tant qu'un humain n'a pas vérifié les règles en vigueur sur belastingdienst.nl. -->
+
 ## Onglet Transactions
 
 Une liste à plat de chaque facture et dépense alimentant la période choisie, utile pour vérifier des enregistrements avant de déposer. Des puces de filtre réduisent la liste : **Tout**, **Sans justificatif**, **Sans TVA**, **Autoliquidation** et **TVA étrangère**, chacune avec un compteur. Chaque ligne renvoie vers la facture ou la dépense concernée.

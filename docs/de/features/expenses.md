@@ -108,6 +108,21 @@ Wählen Sie mehrere Ausgaben für:
 - **Löschen** — Dauerhaft entfernen
 - **Exportieren** — Als CSV herunterladen
 
+## Kilometerpauschale
+
+Wenn Sie mit einem Privatwagen geschäftlich unterwegs sind, können Sie diese Fahrten als eine einzelne Ausgabe mit Kilometerpauschale buchen.
+
+1. Gehen Sie zu **Ausgaben** und öffnen Sie die Kilometerpauschale.
+2. Wählen Sie den Zeitraum, den Sie buchen möchten.
+3. Wählen Sie die Fahrten aus, die Sie übernehmen möchten.
+4. Klicken Sie auf **Als Ausgabe buchen**.
+
+Die Ausgabe wird mit einer Zeile für die gesamten geschäftlichen Kilometer erstellt.
+
+<!-- TODO(source-missing): Der niederländische Kilometerpauschalesatz pro Kilometer ist noch nicht in sources/ hinterlegt. Geben Sie den Satz nicht in der Dokumentation wieder, bis ein Mensch den aktuellen Betrag auf belastingdienst.nl überprüft hat. -->
+
+Wenn Ihr Workspace einen Firmenwagen nutzt, sind die tatsächlichen Autokosten bereits als Ausgabe gebucht; eine separate Kilometerpauschale ist dann nicht nötig.
+
 ## Wiederkehrende Ausgaben
 
 Für regelmäßige Kosten (Miete, Abonnements usw.) richten Sie [wiederkehrende Ausgaben](/de/features/recurring-expenses) ein, um die Erstellung zu automatisieren.

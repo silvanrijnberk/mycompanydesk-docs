@@ -48,6 +48,14 @@ Beim Erstellen von Rechnungen, Ausgaben oder Zeiteinträgen wählen Sie das Proj
 - **Ausgaben** — Kosten pro Projekt verfolgen
 - **Zeiteinträge** — Stunden pro Projekt verfolgen
 
+## Mit einem Vertrag verknüpfen
+
+Wenn Sie ein Projekt anlegen oder bearbeiten, können Sie es im Feld **Vertrag** mit einem Vertrag verknüpfen. Erfasste Stunden auf dem Projekt werden dann auf der Rechnung dieses Vertrags ausgewiesen.
+
+Das ist sinnvoll, wenn der Vertrag den Satz festlegt (Stundensatz, Tagessatz oder fester Projektpreis) und das Projekt die Arbeit liefert. Rechnungen für den Vertrag übernehmen die erfassten Stunden automatisch.
+
+Wenn für einen Vertrag kein Satz hinterlegt ist, bleiben verknüpfte Stunden unverrechnet und Sie erhalten eine Benachrichtigung, dass sie nicht bewertet werden konnten.
+
 ## Budgetverfolgung
 
 Wenn Sie ein Budget festlegen:

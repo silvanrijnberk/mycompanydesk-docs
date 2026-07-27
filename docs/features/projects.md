@@ -48,6 +48,14 @@ When creating invoices, expenses, or time entries, select the project from the d
 - **Expenses** — Track costs per project
 - **Time entries** — Track hours per project
 
+## Linking to a contract
+
+When you create or edit a project, you can link it to a contract in the **Contract** field. Hours you log on the project are included on that contract's invoice.
+
+This is useful when the contract sets the rate (hourly, daily or fixed project price) and the project supplies the work. Invoices for the contract pick up the logged hours automatically.
+
+If a contract has no rate set, hours linked to it stay uninvoiced and you get a notification telling you they could not be priced.
+
 ## Budget tracking
 
 If you set a budget:

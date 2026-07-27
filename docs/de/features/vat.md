@@ -85,6 +85,17 @@ Bei internationaler Aktivität erscheinen unter der Übersicht ergänzende Karte
 
 Diese Karten bleiben verborgen, bis es tatsächlich internationale Daten gibt; die meisten Arbeitsbereiche sehen sie nie.
 
+### Privatnutzung des Firmenwagens
+
+Wenn Sie die Mehrwertsteuer auf einen Firmenwagen abziehen, müssen Sie am Jahresende den Privatanteil korrigieren. MyCompanyDesk hat hierfür einen eigenen MwSt.-Korrektur-Workflow:
+
+- Wählen Sie zwischen einer Pauschalkorrektur auf Basis des Katalogpreises oder einer Korrektur auf Basis des tatsächlichen Nutzens mit einem lückenlosen Fahrtenbuch.
+- Der Pauschalsatz hängt davon ab, ob das Fahrzeug älter als die Altersgrenze ist oder ohne MwSt.-Abzug gekauft wurde.
+
+Die Korrektur fließt in die Periodentotalen auf dem Reiter **Erklärung** ein.
+
+<!-- TODO(source-missing): Die niederländischen Pauschalsätze für die MwSt.-Korrektur bei Privatnutzung eines Firmenwagens und die Altersgrenze sind noch nicht in sources/ hinterlegt. Geben Sie die Werte nicht in der Dokumentation wieder, bis ein Mensch die aktuellen Regeln auf belastingdienst.nl überprüft hat. -->
+
 ## Reiter Transaktionen
 
 Eine flache Liste jeder Rechnung und Ausgabe, die in den gewählten Zeitraum einfließt, nützlich für Stichproben vor der Abgabe. Filterchips grenzen die Liste ein: **Alle**, **Beleg fehlt**, **MwSt. fehlt**, **Reverse Charge** und **Auslands-MwSt.**, jeweils mit Zähler. Jede Zeile verlinkt auf die zugehörige Rechnung oder Ausgabe.

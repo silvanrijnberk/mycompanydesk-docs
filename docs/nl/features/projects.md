@@ -48,6 +48,14 @@ Bij het aanmaken van facturen, uitgaven of tijdregistraties selecteer je het pro
 - **Uitgaven** — Houd kosten per project bij
 - **Tijdregistraties** — Houd uren per project bij
 
+## Koppelen aan een contract
+
+Bij het aanmaken of bewerken van een project kun je het koppelen aan een contract in het veld **Contract**. Geboekte uren op het project komen dan op de factuur van dat contract.
+
+Dit is handig wanneer het contract het tarief bepaalt (uur-, dag- of vaste projectprijs) en het project het werk levert. Facturen voor het contract halen de geboekte uren automatisch op.
+
+Als voor een contract geen tarief is ingesteld, blijven gekoppelde uren ongefactureerd en krijg je een melding dat ze niet konden worden geprijsd.
+
 ## Budgetopvolging
 
 Als je een budget instelt:

@@ -85,6 +85,17 @@ Heb je internationale activiteit, dan verschijnen er extra kaarten onder het ove
 
 Deze kaarten blijven verborgen totdat er echte internationale gegevens zijn, dus de meeste werkruimtes zien ze nooit.
 
+### Privégebruik bedrijfsauto
+
+Heb je de BTW op een bedrijfsauto aftrokken, dan moet je aan het einde van het jaar corrigeren voor privégebruik. MyCompanyDesk heeft hiervoor een aparte BTW-correctieflow:
+
+- Kies tussen een forfaitaire correctie op basis van de catalogusprijs, of een correctie op basis van werkelijk gebruik met een volledig rittenregistratiesysteem.
+- Het forfaitaire percentage hangt af van de leeftijdsgrens of de manier waarop de auto is aangeschaft.
+
+De correctie wordt doorberekend in de periodetotalen op het tabblad Aangifte.
+
+<!-- TODO(source-missing): De Nederlandse forfaitaire percentages voor BTW-correctie privégebruik bedrijfsauto en de leeftijdsgrens staan nog niet in sources/. Quote de waarden niet in de documentatie totdat een mens de huidige regels heeft gecontroleerd op belastingdienst.nl. -->
+
 ## Tabblad Transacties
 
 Een platte lijst van elke factuur en uitgave die in de gekozen periode meetelt, handig om records na te lopen voordat je aangifte doet. Filterchips maken de lijst kleiner: **Alles**, **Geen bon**, **Geen BTW**, **Verlegd** en **Buitenlandse BTW**, elk met een teller. Elke rij linkt naar de onderliggende factuur of uitgave.

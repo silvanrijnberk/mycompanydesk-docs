@@ -108,6 +108,21 @@ Sélectionnez plusieurs dépenses pour :
 - **Supprimer** -- Supprimer définitivement
 - **Exporter** -- Télécharger au format CSV
 
+## Indemnité kilométrique
+
+Si vous utilisez une voiture privée pour des déplacements professionnels, vous pouvez regrouper ces trajets en une seule dépense avec une indemnité kilométrique.
+
+1. Allez dans **Dépenses** et ouvrez l'indemnité kilométrique.
+2. Choisissez la période à comptabiliser.
+3. Sélectionnez les trajets à inclure.
+4. Cliquez sur **Comptabiliser comme dépense**.
+
+La dépense est créée avec une ligne pour le total des kilomètres professionnels.
+
+<!-- TODO(source-missing): Le taux d'indemnité kilométrique néerlandais au kilomètre n'est pas encore dans sources/. Ne citez pas le taux dans la documentation tant qu'un humain n'a pas vérifié le montant actuel sur belastingdienst.nl. -->
+
+Si votre espace de travail utilise un véhicule de société, les frais réels de voiture sont déjà comptabilisés comme dépense ; une indemnité kilométrique séparée n'est alors pas nécessaire.
+
 ## Dépenses récurrentes
 
 Pour les coûts réguliers (loyer, abonnements, etc.), configurez des [dépenses récurrentes](/fr/features/recurring-expenses) pour automatiser la création.

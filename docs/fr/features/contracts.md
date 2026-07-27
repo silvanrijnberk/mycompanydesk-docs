@@ -31,6 +31,19 @@ Le module contrats est optionnel. Activez-le dans **Entreprise > Fonctionnalites
 Dans le formulaire de nouveau contrat, les details optionnels restent ranges : la section **Plus d'options** devoile des champs supplementaires pour le montant du supplement de service, le taux de TVA et la description du service. Ils ne sont pas requis pour creer le contrat, mais vous pouvez les deployer quand vous en avez besoin.
 :::
 
+## Base de tarification
+
+Chaque contrat a une **base de tarification** qui détermine comment le montant a été convenu :
+
+- **Montant fixe** -- le même montant chaque période, par exemple un loyer ou un forfait mensuel fixe.
+- **Taux horaire** -- vous facturez les heures que vous saisissez sur les projets liés à ce contrat.
+- **Taux journalier** -- vous facturez les jours que vous travaillez sur les projets liés à ce contrat.
+- **Prix forfaitaire de projet** -- un montant total convenu pour toute la mission, facturé une seule fois.
+
+Pour les contrats à taux horaire et journalier, la page de détail du contrat affiche une fiche **Travail sous ce contrat** avec les totaux convenus, facturés et saisis, plus les projets liés. Un jour compte comme 8 heures.
+
+Un prix forfaitaire de projet ne se répète pas : le contrat génère une facture, puis s'arrête.
+
 ## Statuts des contrats
 
 | Statut | Description |
@@ -46,7 +59,7 @@ Les contrats actifs avec un calendrier de recurrence generent automatiquement de
 2. Applique le client, le montant et la description corrects
 3. Suit vos parametres de numerotation des factures
 
-Vous pouvez examiner et envoyer les factures generees manuellement, ou configurer l'envoi automatique.
+Vous pouvez examiner et envoyer les factures generees manuellement, ou configurer l'envoi automatique. Lorsqu'un contrat est basé sur un taux horaire, un taux journalier ou un prix forfaitaire de projet, vous recevez aussi une alerte quand le budget du contrat est dépassé ou quand des heures saisies n'ont pas pu être tarifées car aucun taux n'était défini.
 
 ## Encaissement automatique
 
@@ -67,6 +80,14 @@ Les contrats peuvent etre lies aux [objets/actifs](/fr/features/objects) pour la
 - Associez un contrat a une propriete, un vehicule ou un equipement
 - Suivez quels actifs sont actuellement loues et a qui
 - Consultez l'historique des contrats par actif
+
+## Lier à des projets
+
+Les contrats peuvent aussi être liés à des [projets](/fr/features/projects). Lorsque vous créez ou modifiez un projet, choisissez le contrat dans le champ **Contrat**. Les heures saisies sur ce projet sont alors incluses sur la facture du contrat.
+
+Cela est utile pour les accords de type retainer ou régie : le contrat définit la base de tarification, et les projets liés fournissent les heures.
+
+Vous pouvez délier un projet à tout moment ; les heures déjà facturées restent sur leur facture.
 
 ## Indicateurs
 
