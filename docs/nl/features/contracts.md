@@ -31,6 +31,19 @@ De contractenmodule is optioneel. Schakel deze in via **Bedrijf > Functies** als
 In het formulier voor een nieuw contract blijven optionele velden netjes opgeborgen: open de sectie **Meer opties** om extra velden voor het servicebedrag, het btw-tarief en de serviceomschrijving te tonen. Ze zijn niet verplicht om een contract aan te maken, maar je kunt ze uitvouwen wanneer je ze nodig hebt.
 :::
 
+## Tariefsoort
+
+Elk contract heeft een **Tariefsoort** die bepaalt hoe het bedrag is afgesproken:
+
+- **Vast bedrag** -- elk periode hetzelfde bedrag, zoals huur of een vaste maandprijs.
+- **Uurtarief** -- je factureert de uren die je boekt op projecten die aan dit contract zijn gekoppeld.
+- **Dagtarief** -- je factureert de dagen die je werkt aan projecten die aan dit contract zijn gekoppeld.
+- **Vaste projectprijs** -- één afgesproken totaalbedrag voor de hele opdracht, één keer gefactureerd.
+
+Voor uur- en dagcontracten toont de contractdetailpagina een kaart **Werk onder dit contract** met de afgesproken, gefactureerde en geboekte totalen, plus de gekoppelde projecten. Een dag telt als 8 uur.
+
+Een vaste projectprijs herhaalt niet: het contract genereert één factuur en stopt daarna.
+
 ## Contractstatussen
 
 | Status | Beschrijving |
@@ -46,7 +59,7 @@ Actieve contracten met een herhalingsschema genereren automatisch facturen bij e
 2. Past de juiste klant, bedrag en omschrijving toe
 3. Volgt je factuurnummeringsinstellingen
 
-Je kunt gegenereerde facturen handmatig bekijken en versturen, of automatische verzending instellen.
+Je kunt gegenereerde facturen handmatig bekijken en versturen, of automatische verzending instellen. Als een contract gebaseerd is op een uur-, dag- of vaste projectprijs, krijg je een waarschuwing wanneer het contractbudget wordt overschreden of wanneer geboekte uren niet kunnen worden geprijsd omdat geen tarief is ingesteld.
 
 ## Automatische incasso
 
@@ -67,6 +80,14 @@ Contracten kunnen worden gekoppeld aan [objecten/activa](/nl/features/objects) v
 - Koppel een contract aan een pand, voertuig of apparaat
 - Houd bij welke objecten momenteel verhuurd zijn en aan wie
 - Bekijk de contractgeschiedenis per object
+
+## Koppelen aan projecten
+
+Contracten kunnen ook worden gekoppeld aan [projecten](/nl/features/projects). Bij het aanmaken of bewerken van een project kies je het contract in het veld **Contract**. Geboekte uren op dat project komen dan op de factuur van het contract.
+
+Dit werkt goed voor retainer- of urenovereenkomsten: het contract bepaalt het tarief, de gekoppelde projecten leveren de uren.
+
+Je kunt een project op elk moment ontkoppelen; uren die al op een factuur staan, blijven staan.
 
 ## Statistieken
 

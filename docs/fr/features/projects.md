@@ -48,6 +48,14 @@ Lors de la creation de factures, depenses ou entrees de temps, selectionnez le p
 - **Depenses** -- Suivez les couts par projet
 - **Entrees de temps** -- Suivez les heures par projet
 
+## Lier à un contrat
+
+Lorsque vous créez ou modifiez un projet, vous pouvez le lier à un contrat dans le champ **Contrat**. Les heures saisies sur le projet sont incluses sur la facture de ce contrat.
+
+Cela est utile quand le contrat définit le taux (taux horaire, taux journalier ou prix forfaitaire de projet) et que le projet fournit le travail. Les factures du contrat récupèrent automatiquement les heures saisies.
+
+Si aucun taux n'est défini pour un contrat, les heures liées restent non facturées et vous recevez une notification indiquant qu'elles n'ont pas pu être tarifées.
+
 ## Suivi du budget
 
 Si vous definissez un budget :

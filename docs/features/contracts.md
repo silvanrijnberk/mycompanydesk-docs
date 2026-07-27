@@ -31,6 +31,19 @@ The contracts module is optional. Enable it in **Company > Features** if you don
 The new-contract form keeps optional details tidy: the **More options** section reveals extra fields for service charge amount, VAT rate, and service description. These are not required to create the contract, but you can expand them when you need them.
 :::
 
+## Rate basis
+
+Every contract has a **Rate basis** that controls how the amount is agreed:
+
+- **Fixed amount** -- the same amount each period, such as rent or a fixed monthly fee.
+- **Hourly rate** -- you invoice the hours logged on projects linked to this contract.
+- **Daily rate** -- you invoice the days worked on projects linked to this contract.
+- **Fixed project price** -- a single agreed total for the whole assignment, invoiced once.
+
+For hourly and daily contracts, the contract detail page shows a **Work under this contract** card with the agreed, invoiced and logged totals, plus the linked projects. A day is counted as 8 hours.
+
+A fixed project price does not repeat: the contract generates one invoice and then stops.
+
 ## Contract statuses
 
 | Status | Description |
@@ -46,7 +59,7 @@ Active contracts with a recurrence schedule automatically generate invoices at e
 2. Applies the correct customer, amount, and description
 3. Follows your invoice numbering settings
 
-You can review and send generated invoices manually, or configure auto-sending.
+You can review and send generated invoices manually, or configure auto-sending. When a contract is based on an hourly, daily or fixed project price, you also get a warning when the contract budget is exceeded or when logged hours cannot be priced because no rate was set.
 
 ## Automatic collection
 
@@ -67,6 +80,14 @@ Contracts can be linked to [objects/assets](/features/objects) for rental manage
 - Associate a contract with a property, vehicle, or piece of equipment
 - Track which assets are currently rented and to whom
 - View contract history per asset
+
+## Linking to projects
+
+Contracts can also be linked to [projects](/features/projects). When you create or edit a project, choose the contract in the **Contract** field. Hours you log on that project are then included on the contract's invoice.
+
+This is useful for retainer-style or time-and-materials agreements: the contract sets the rate basis, and the linked projects supply the hours.
+
+You can unlink a project at any time; existing hours stay on the invoice they were already added to.
 
 ## Metrics
 

@@ -87,6 +87,17 @@ When you have international activity, companion cards appear under the sheet:
 
 These cards stay hidden until there is actual international data, so most workspaces never see them.
 
+### Company car private use
+
+When you deduct VAT on a company car, you must correct for private use at the end of the year. MyCompanyDesk has a dedicated VAT correction flow for this:
+
+- Choose between a flat-rate correction based on the car's list price, or an actual-use correction based on a complete trip log.
+- The flat-rate percentage depends on whether the car is older than the threshold year or bought without VAT deduction.
+
+The correction is rolled into the period totals on the Filing tab.
+
+<!-- TODO(source-missing): The Dutch flat-rate percentages for company-car private-use VAT correction and the age threshold are not yet in sources/. Do not quote the values in docs until a human verifies the current rules at belastingdienst.nl. -->
+
 ## Transactions tab
 
 A flat list of every invoice and expense feeding the selected period, useful for spot-checking records before you file. Filter chips narrow the list down: **All**, **Missing receipt**, **Missing VAT**, **Reverse charge** and **Foreign VAT**, each with a live count. Every row links to the underlying invoice or expense.

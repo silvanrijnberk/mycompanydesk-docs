@@ -119,6 +119,21 @@ Select multiple expenses for:
 - **Delete** — Permanently remove.
 - **Export** — Download as CSV.
 
+## Mileage allowance
+
+If you drive a private car for business trips, you can book those trips as a single expense with a mileage allowance.
+
+1. Go to **Expenses** and open the mileage allowance flow.
+2. Pick the period you want to book.
+3. Select the trips to include.
+4. Click **Book as expense**.
+
+The expense is created with one line for the total business kilometres.
+
+<!-- TODO(source-missing): The Dutch mileage allowance rate per kilometre is not yet in sources/. Do not quote the rate in docs until a human verifies the current figure at belastingdienst.nl. -->
+
+If your workspace uses a company car, the actual car costs are already booked as expenses, so a separate mileage allowance is not needed.
+
 ## Recurring expenses
 
 For predictable costs (rent, subscriptions, hosting), set up [recurring expenses](/features/recurring-expenses) to generate the records on schedule.

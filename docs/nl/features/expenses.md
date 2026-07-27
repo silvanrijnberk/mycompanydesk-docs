@@ -108,6 +108,21 @@ Selecteer meerdere uitgaven voor:
 - **Verwijderen** — Permanent verwijderen
 - **Exporteren** — Download als CSV
 
+## Kilometervergoeding
+
+Rij je privé zakelijk, dan kun je die ritten bundelen tot één uitgave met een kilometervergoeding.
+
+1. Ga naar **Uitgaven** en open de kilometervergoeding.
+2. Kies de periode die je wilt boeken.
+3. Selecteer de ritten die je meeneemt.
+4. Klik op **Boek als uitgave**.
+
+De uitgave wordt aangemaakt met één regel voor het totaal aan zakelijke kilometers.
+
+<!-- TODO(source-missing): Het Nederlandse kilometervergoedingstarief per kilometer staat nog niet in sources/. Quote het tarief niet in de documentatie totdat een mens het huidige bedrag heeft gecontroleerd op belastingdienst.nl. -->
+
+Als je werkruimte een bedrijfsauto gebruikt, zijn de werkelijke autokosten al als uitgave geboekt; een aparte kilometervergoeding is dan niet nodig.
+
 ## Terugkerende uitgaven
 
 Voor regelmatige kosten (huur, abonnementen, etc.) stel je [terugkerende uitgaven](/nl/features/recurring-expenses) in om het aanmaken te automatiseren.
