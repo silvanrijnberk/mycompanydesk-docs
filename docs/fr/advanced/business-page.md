@@ -220,6 +220,20 @@ Une fiche d'achat autonome pour un seul article, quand un tableau tarifaire comp
 
 Consultez [Ventes](/fr/features/domains-website-inbox#ventes) pour le suivi des paiements et des commandes.
 
+### Sections catalogue
+
+Certains modeles sur mesure incluent une section catalogue en direct qui tire des articles directement de votre catalogue Aanbod. Si la page actuelle repete structurellement des services, des produits ou des abonnements, l'editeur de contenu affiche un panneau **Catalogue** pour chaque type reellement utilise sur cette page.
+
+Le panneau se situe en dehors du cadre du modele, donc il n'interfere jamais avec le style propre au modele. Depuis ce panneau, vous ne controlez que la presentation du catalogue sur ce site :
+
+- **Titre et introduction** : definissez le titre de la section et une courte introduction.
+- **Ordre** : faites glisser les articles dans l'ordre souhaite, ou utilisez les boutons haut et bas. L'ordre naturel d'Aanbod s'applique aux articles que vous ne reordonnez pas explicitement.
+- **Afficher ou masquer** : cliquez sur l'icone oeil pour conserver un article dans Aanbod tout en le masquant sur ce site web.
+
+Le contenu de l'article lui-meme, titre, prix, description et image, est en lecture seule dans l'editeur. Il provient du catalogue Aanbod en direct et doit etre modifie la-bas. Le prix suit le mode de prix defini dans Aanbod : un montant fixe, "a partir de" un montant, ou "Sur demande" lorsqu'aucun prix n'est defini.
+
+Si ce type de catalogue n'a pas encore d'article eligible, le panneau affiche un etat vide avec un lien pour ajouter un article dans Aanbod.
+
 ## Animations de section
 
 Chaque bloc de section dispose d'un panneau **Animation** dans l'inspecteur. Il vous permet d'ajouter du mouvement qui se declenche lorsque la section entre dans le viewport, au chargement de la page ou au survol.

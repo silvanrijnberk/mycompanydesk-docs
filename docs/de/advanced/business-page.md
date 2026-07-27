@@ -220,6 +220,20 @@ Eine eigenständige Einzelprodukt-Kaufkarte, ideal wenn eine vollständige Preis
 
 Siehe [Verkäufe](/de/features/domains-website-inbox#verkaufe) für die Nachverfolgung von Zahlungen und Bestellungen.
 
+### Katalogabschnitte
+
+Einige Bespoke-Vorlagen enthalten einen Live-Katalogabschnitt, der Artikel direkt aus Ihrem Aanbod-Katalog lädt. Wenn die aktuelle Seite strukturell über Dienstleistungen, Produkte oder Abonnements wiederholt, zeigt der Inhalts-Editor für jede verwendete Art ein **Katalog**-Panel an.
+
+Das Panel liegt außerhalb des Vorlagenrahmens, sodass es die Gestaltung der Vorlage selbst nie stört. Hier steuern Sie nur die Präsentation des Katalogs auf dieser Website:
+
+- **Überschrift und Einleitung**: legen Sie den Abschnittstitel und eine kurze Einleitung fest.
+- **Reihenfolge**: ziehen Sie Artikel in die gewünschte Reihenfolge, oder nutzen Sie die Aufwärts- und Abwärts-Buttons. Die natürliche Reihenfolge aus Aanbod gilt für alles, was Sie nicht explizit neu sortieren.
+- **Anzeigen oder ausblenden**: klicken Sie auf das Augen-Symbol, um einen Artikel in Aanbod zu behalten, aber auf dieser Website auszublenden.
+
+Die Artikelinhalte selbst, Titel, Preis, Beschreibung und Bild, sind im Editor schreibgeschützt. Sie stammen aus dem Live-Aanbod und müssen dort bearbeitet werden. Der Preis folgt der im Aanbod hinterlegten Preismodus: ein fester Betrag, "ab" einem Betrag oder "Auf Anfrage", wenn kein Preis hinterlegt ist.
+
+Falls es für diese Katalogart noch keine passenden Artikel gibt, zeigt das Panel einen Leerzustand mit einem Link, um in Aanbod einen Artikel hinzuzufügen.
+
 ## Abschnitts-Animationen
 
 Jeder Abschnittsblock hat ein **Animation**-Panel im Inspector. Damit fügen Sie Bewegung hinzu, die beim Erscheinen im Viewport, beim Seitenaufruf oder bei Hover abgespielt wird.

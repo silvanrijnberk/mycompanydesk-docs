@@ -220,6 +220,20 @@ Een losstaande eenmalige koopkaart, voor als een volledige tarieventabel meer is
 
 Zie [Verkopen](/nl/features/domains-website-inbox#verkopen) voor het bijhouden van betalingen en bestellingen.
 
+### Catalogussecties
+
+Sommige bespoke-sjablonen bevatten een live catalogussectie die items rechtstreeks uit je Aanbod haalt. Als de huidige pagina structureel herhaalt over diensten, producten of abonnementen, toont de Inhoud-editor een **Catalogus**-paneel voor elk soort dat op die pagina wordt gebruikt.
+
+Het paneel staat buiten het sjabloonkader, dus het stoort nooit de styling van het sjabloon zelf. Hier bepaal je alleen de presentatie van de catalogus op deze site:
+
+- **Titel en intro**: stel de sectietitel en een korte introductie in.
+- **Volgorde**: sleep items in de gewenste volgorde, of gebruik de omhoog/omlaag-knoppen. De natuurlijke volgorde uit Aanbod geldt voor alles wat je niet handmatig herschikt.
+- **Zichtbaar of verborgen**: klik op het oog-icoon om een item in Aanbod te houden, maar te verbergen op deze website.
+
+De iteminhoud zelf, titel, prijs, beschrijving en afbeelding, is alleen-lezen in de editor. Die komt uit het live Aanbod en moet daar worden aangepast. De prijs volgt de prijsmodus die in Aanbod staat: een vast bedrag, "vanaf" een bedrag, of "Op aanvraag" als er geen prijs is ingesteld.
+
+Is er voor dit soort catalogus nog geen geschikt item? Dan toont het paneel een lege status met een link om een item toe te voegen in Aanbod.
+
 ## Sectie-animaties
 
 Elk sectieblok heeft een **Animatie**-paneel in de inspector. Hiermee voeg je beweging toe die afspeelt wanneer de sectie in beeld komt, bij het laden van de pagina, of bij hover.
