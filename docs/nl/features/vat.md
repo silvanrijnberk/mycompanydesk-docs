@@ -81,6 +81,8 @@ Heb je internationale activiteit, dan verschijnen er extra kaarten onder het ove
 - **Buitenlandse BTW**: buitenlandse BTW die aan jou is berekend en mogelijk via de EU-teruggaafprocedure terug te vragen is.
 - **Correcties**: privé-onttrekking, suppletie en andere aanpassingen die in de periodetotalen meelopen.
 
+<!-- TODO(source-missing): RichardTool e671fd80 toont in de app een Belastingdienst-drempel van € 1.000 voor suppletiecorrecties (tot en met € 1.000 in de eerstvolgende btw-aangifte; daarboven een formele suppletieaangifte verplicht). sources/ heeft deze drempel niet; verzin de waarde of linkdoel niet totdat een mens de huidige regel heeft gecontroleerd op belastingdienst.nl. -->
+
 Deze kaarten blijven verborgen totdat er echte internationale gegevens zijn, dus de meeste werkruimtes zien ze nooit.
 
 ## Tabblad Transacties

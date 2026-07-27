@@ -82,6 +82,9 @@ When you have international activity, companion cards appear under the sheet:
 - **Foreign VAT**: foreign VAT charged to you that may be reclaimable through the EU refund procedure.
 - **Corrections**: privé-onttrekking, suppletie, and other adjustments rolled into the period totals.
 
+
+<!-- TODO(source-missing): RichardTool e671fd80 surfaces a Belastingdienst €1,000 threshold for suppletie corrections (under = next regular aangifte, over = formal suppletieaangifte required). sources/ has no entry for this threshold; do not invent the value or the link target until a human verifies the current rule at belastingdienst.nl. -->
+
 These cards stay hidden until there is actual international data, so most workspaces never see them.
 
 ## Transactions tab

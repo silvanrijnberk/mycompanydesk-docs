@@ -81,6 +81,8 @@ Quand vous avez de l'activité internationale, des cartes complémentaires appar
 - **TVA étrangère** : TVA étrangère qui vous a été facturée et qui peut être récupérable via la procédure de remboursement de l'UE.
 - **Corrections** : prélèvements privés, suppletie et autres ajustements intégrés aux totaux de la période.
 
+<!-- TODO(source-missing): RichardTool e671fd80 affiche dans l'application un seuil Belastingdienst de 1 000 EUR pour les corrections suppletie (jusqu'à 1 000 EUR inclus dans la prochaine déclaration régulière; au-delà une suppletieaangifte formelle est requise). sources/ ne contient pas ce seuil; ne pas inventer la valeur ou la cible du lien tant qu'un humain n'a pas vérifié la règle en vigueur sur belastingdienst.nl. -->
+
 Ces cartes restent masquées tant qu'il n'y a pas de données internationales réelles ; la plupart des espaces de travail ne les voient jamais.
 
 ## Onglet Transactions
