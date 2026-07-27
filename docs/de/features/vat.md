@@ -81,6 +81,8 @@ Bei internationaler Aktivität erscheinen unter der Übersicht ergänzende Karte
 - **Ausländische USt.**: Ihnen berechnete ausländische USt., die möglicherweise über das EU-Erstattungsverfahren zurückzuholen ist.
 - **Korrekturen**: Privatentnahme, Suppletie und andere Anpassungen, die in die Zeitraumsummen einfließen.
 
+<!-- TODO(source-missing): RichardTool e671fd80 zeigt in der App eine Belastingdienst-Schwelle von 1.000 EUR fuer suppletie-Korrekturen (bis einschliesslich 1.000 EUR in die naechste regulaere Erklaerung; darueber formelle suppletieaangifte erforderlich). sources/ enthaelt diese Schwelle nicht; Wert und Linkziel nicht erfinden, bis ein Mensch die aktuelle Regel auf belastingdienst.nl geprueft hat. -->
+
 Diese Karten bleiben verborgen, bis es tatsächlich internationale Daten gibt; die meisten Arbeitsbereiche sehen sie nie.
 
 ## Reiter Transaktionen
