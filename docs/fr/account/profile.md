@@ -1,6 +1,6 @@
 ---
 title: Vos paramètres personnels
-last_verified: 2026-07-23
+last_verified: 2026-07-27
 ---
 
 # Vos paramètres personnels
@@ -38,6 +38,8 @@ Quatre interrupteurs déterminent les sujets sur lesquels MyCompanyDesk vous env
 Les messages vraiment importants concernant votre compte sont toujours envoyés; ils ne peuvent pas être désactivés.
 
 Sous les interrupteurs, vous pouvez activer les **notifications push sur cet appareil**, pour que les factures en retard, les paiements et les échéances vous parviennent aussi sous forme de notification sur votre téléphone ou ordinateur. Votre navigateur ou téléphone demandera l'autorisation la première fois. Si vous l'ignorez, vous pourrez toujours l'activer plus tard via la cloche de notifications en haut de l'application.
+
+Les notifications push sont prises en charge dans les navigateurs et dans l'application Android. Sur Android, la notification utilise l'icône de l'application et la couleur de la catégorie; pour les messages de la boîte de réception, elle affiche aussi l'avatar de l'expéditeur lorsque l'application l'a enregistré. Les anciennes versions Android sans le service de messagerie natif reçoivent toujours la notification standard rendue par le SDK.
 
 ## Agendas connectés
 

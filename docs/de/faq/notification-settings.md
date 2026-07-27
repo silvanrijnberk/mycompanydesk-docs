@@ -1,6 +1,6 @@
 ---
 title: "Benachrichtigungseinstellungen"
-last_verified: 2026-07-02
+last_verified: 2026-07-27
 chatbot:
   triggers:
     - "notifications"
@@ -18,10 +18,13 @@ chatbot:
 ---
 
 So verwalten Sie Ihre Benachrichtigungseinstellungen:
+
 1. Gehen Sie zu Einstellungen → „Benachrichtigungen"
 2. Schalten Sie die vier Benachrichtigungsthemen ein oder aus: überfällige Rechnungen, eingegangene Zahlungen, MwSt.-Fristen und Tipps. Sie erhalten sie in der App und per E-Mail; bei MwSt.-Fristen enthält die E-Mail einen direkten Link zur USt.-Seite, sodass Sie rechtzeitig abgeben können.
 3. Auf derselben Seite aktivieren Sie auch Push-Benachrichtigungen für das Gerät, das Sie gerade nutzen
 4. Wenn Sie die Browser-Abfrage geschlossen haben, klicken Sie oben in der App auf die Benachrichtigungsglocke und wählen Sie **Aktivieren**, um Push-Benachrichtigungen später nachzuholen
 5. Änderungen werden automatisch gespeichert
+
+Push-Benachrichtigungen funktionieren im Browser und in der Android-App. Auf Android zeigt die Benachrichtigung das App-Symbol, die Farbe der Kategorie und nach Möglichkeit den Avatar des Absenders.
 
 Wenn eine Benachrichtigung ausbleibt, prüfen Sie sowohl den Schalter als auch die E-Mail-Adresse Ihres Kontos.

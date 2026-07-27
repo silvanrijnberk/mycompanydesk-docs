@@ -1,6 +1,6 @@
 ---
 title: Je persoonlijke instellingen
-last_verified: 2026-07-23
+last_verified: 2026-07-27
 ---
 
 # Je persoonlijke instellingen
@@ -38,6 +38,8 @@ Vier schakelaars bepalen waarover MyCompanyDesk je een berichtje stuurt, in de a
 Echt belangrijke berichten over je account sturen we altijd; die kun je niet uitzetten.
 
 Onder de schakelaars zet je **pushmeldingen op dit apparaat** aan, zodat achterstallige facturen, betalingen en deadlines je ook als melding op je telefoon of computer bereiken. Je browser of telefoon vraagt de eerste keer om toestemming. Sla je het over, dan kun je het later altijd aanzetten via het belletje voor meldingen bovenaan de app.
+
+Pushmeldingen werken in browsers en in de Android-app. Op Android gebruikt de melding het app-icoon en de kleur van de categorie; voor inbox-berichten toont hij ook de avatar van de afzender zodra de app die heeft geregistreerd. Oudere Android-builds zonder de native berichtenservice krijgen nog steeds de standaard melding die door het SDK wordt getekend.
 
 ## Gekoppelde agenda's
 
