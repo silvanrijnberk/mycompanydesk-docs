@@ -73,6 +73,22 @@ On the contract detail page, open the **Automatic collection** card and set up t
 
 If a charge fails or the mandate is no longer valid, you receive an "Automatic collection failed" notification. The notification links directly to the contract so you can reconnect the mandate or follow up with the customer.
 
+## Price indexation
+
+Recurring contracts can be adjusted for inflation or agreed yearly rises. Open the contracts list and click **Raise prices** to preview what a percentage increase would do across eligible contracts. A contract is only eligible if at least one year has passed since it started or since its last rise.
+
+The preview shows, per contract:
+
+- The current rate or amount per period
+- The new rate or amount after the increase
+- The date the contract was last adjusted
+
+You apply the rise per contract, never in bulk, so you can skip customers you have not yet spoken to. Once applied, the change updates the stored contract terms and future invoices reflect the new amount.
+
+::: tip Agree first
+Discuss any price rise with your customer before applying it. The preview changes nothing until you click **Apply** on a specific contract.
+:::
+
 ## Linking to assets
 
 Contracts can be linked to [objects/assets](/features/objects) for rental management:

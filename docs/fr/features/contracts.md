@@ -73,6 +73,22 @@ Sur la page de détail du contrat, ouvrez la carte **Encaissement automatique** 
 
 Si un prélèvement échoue ou que le mandat n'est plus valide, vous recevez une notification « Encaissement automatique échoué ». La notification renvoie directement vers le contrat pour que vous puissiez reconnecter le mandat ou relancer le client.
 
+## Révision des prix
+
+Les contrats récurrents peuvent être ajustés pour tenir compte de l'inflation ou de hausses annuelles convenues. Ouvrez la liste des contrats et cliquez sur **Augmenter les prix** pour voir ce qu'une augmentation en pourcentage ferait pour tous les contrats éligibles. Un contrat n'est éligible que si au moins un an s'est écoulé depuis son début ou depuis sa dernière augmentation.
+
+L'aperçu montre, par contrat :
+
+- Le tarif ou le montant actuel par période
+- Le tarif ou le montant après augmentation
+- La date de la dernière ajustement du contrat
+
+Vous appliquez l'augmentation contrat par contrat, jamais en bloc, afin de pouvoir passer les clients avec qui vous n'avez pas encore discuté. Une fois appliquée, le système met à jour les conditions du contrat enregistrées et les futures factures reflètent le nouveau montant.
+
+::: tip D'abord s'entendre
+Discutez de toute augmentation de prix avec votre client avant de l'appliquer. L'aperçu ne change rien tant que vous n'avez pas cliqué sur **Appliquer** pour un contrat spécifique.
+:::
+
 ## Liaison aux actifs
 
 Les contrats peuvent etre lies aux [objets/actifs](/fr/features/objects) pour la gestion locative :
