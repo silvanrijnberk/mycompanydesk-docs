@@ -102,6 +102,24 @@ Erscheint eine Warnung, beheben Sie das, indem Sie den Restwert der Anschaffung 
 
 Diese Regel gilt nur für Gebäude (zum Beispiel Immobilie, Wohnung, Büro oder Laden). Fahrzeuge, Maschinen, Geräte und sonstige Wirtschaftsgüter ohne Gebäudecharakter haben keine Bodemwaarde-Untergrenze.
 
+### Verkauft oder ausgesondert
+
+Wenn Sie ein Wirtschaftsgut verkaufen, verschrotten oder auf andere Weise aus dem Betrieb nehmen, erfassen Sie das im Abschnitt **Anschaffung und Status** des Objektformulars:
+
+- **Veräußerungsdatum:** das Datum, an dem das Wirtschaftsgut den Betrieb verlassen hat.
+- **Erlös (netto):** der erhaltene Betrag. Lassen Sie das Feld leer, wenn der Betrag noch nicht bekannt ist; tragen Sie 0 ein, wenn das Gut verschrottet wurde und kein Erlös erzielt wurde.
+
+Sobald ein Veräußerungsdatum gespeichert ist, zeigt die Objektdetailseite einen Block mit den Veräußerungsangaben:
+
+- das Veräußerungsdatum
+- der Buchwert bei Veräußerung
+- der Erlös, sofern erfasst
+- der Buchgewinn oder der Buchverlust
+
+Lassen Sie den Erlös leer, wird der Buchwert ausgewiesen, der abgeschrieben wurde, mit dem Hinweis, dass Buchgewinn oder Buchverlust erst ermittelt werden können, sobald der Erlös bekannt ist.
+
+Die Vermögensübersicht warnt Sie auch, wenn der Abschreibungsplan noch Beträge nach dem Veräußerungsdatum vorsieht. Abschreibungszeilen werden bei Aktivierung für die gesamte Laufzeit angelegt, sodass sie weiterhin in die Gewinn- und Verlustrechnung gelangen, es sei denn, Sie passen die Abschreibungsdauer der Anschaffung an.
+
 ### Signierstatus der Verträge
 
 Jede Vertragszeile auf der Objektdetailseite zeigt nun eine Signierstatus-Badge neben der Aktiv/Pausiert-Badge. Die Farbgebung folgt der gleichen Zuordnung wie auf der Vertragsdetailseite:

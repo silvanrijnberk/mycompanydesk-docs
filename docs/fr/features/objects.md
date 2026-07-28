@@ -103,6 +103,24 @@ Si un avertissement s'affiche, corrigez-le en fixant la valeur residuelle de l'a
 
 Cette regle ne s'applique qu'aux batiments (par exemple, propriete, appartement, bureau ou commerce). Les vehicules, machines, equipements et autres actifs qui ne sont pas des batiments n'ont pas de plancher de bodemwaarde.
 
+### Vendu ou cede
+
+Si vous vendez, mettez au rebut ou retirez un actif de votre entreprise, enregistrez-le dans la section **Achat et statut** du formulaire objet :
+
+- **Date de cession :** la date a laquelle l'actif a quitte l'entreprise.
+- **Produit de cession (HT) :** le montant percu. Laissez le champ vide si vous ne le connaissez pas encore ; saisissez 0 si l'actif a ete mis au rebut sans produit.
+
+Une fois la date de cession enregistree, la page de detail de l'objet affiche un bloc avec les informations de cession :
+
+- la date de cession
+- la valeur comptable a la cession
+- le produit de cession, s'il est renseigne
+- la plus-value ou la moins-value comptable
+
+Si vous laissez le produit de cession vide, le bloc affiche la valeur comptable qui a ete radiee et precise que la plus-value ou la moins-value ne peut etre determinee qu'une fois le produit connu.
+
+Le resume de l'actif vous avertit egalement lorsque le plan d'amortissement prevoit encore des montants apres la date de cession. Les lignes d'amortissement sont creees en une seule fois lors de l'activation de l'actif; elles continuent donc d'atteindre le compte de resultat, sauf si vous ajustez la duree d'amortissement de l'acquisition.
+
 ### Statut de signature des contrats
 
 Chaque ligne de contrat sur la page de detail de l'objet affiche desormais un badge de statut de signature a cote du badge actif/en pause. Les couleurs suivent la meme correspondance que sur la page de detail du contrat :

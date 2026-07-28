@@ -103,6 +103,24 @@ Als er een waarschuwing verschijnt, los je dat op door de restwaarde van de aank
 
 Deze regel geldt alleen voor gebouwen (bijvoorbeeld vastgoed, appartement, kantoor of winkel). Voertuigen, machines, apparatuur en andere activa die geen gebouw zijn, hebben geen bodemwaarde-ondergrens.
 
+### Verkocht of afgestoten
+
+Als je een activum verkoopt, weggooit of anderszins uit je onderneming haalt, leg je dat vast bij **Aanschaf en status** in het objectformulier:
+
+- **Verkoopdatum:** de datum waarop het activum de onderneming verliet.
+- **Opbrengst (excl. btw):** het ontvangen bedrag. Laat het veld leeg als je het bedrag nog niet weet; vul 0 in als je het activum hebt weggegooid zonder opbrengst.
+
+Zodra een verkoopdatum is opgeslagen, toont de objectdetailpagina een blok "Verkocht of afgestoten" met:
+
+- de verkoopdatum
+- de boekwaarde bij verkoop
+- de opbrengst, als je die hebt ingevuld
+- de boekwinst of het boekverlies
+
+Laat je de opbrengst leeg, dan zie je alleen de boekwaarde die is afgeschreven, met de melding dat de boekwinst of het boekverlies pas kan worden bepaald zodra de opbrengst bekend is.
+
+Het vermogensoverzicht waarschuwt je ook wanneer de afschrijvingstermijn nog bedragen na de verkoopdatum plant. Afschrijvingsregels worden bij activatie in een keer voor de hele looptijd aangemaakt, dus die bedragen blijven in je winst-en-verliesrekening terechtkomen tenzij je de afschrijvingstermijn van de aankoop aanpast.
+
 ### Ondertekenstatus van contracten
 
 Elke contractregel op de objectdetailpagina toont nu een ondertekenstatusbadge naast de actief/gepauzeerd-badge. De kleur volgt dezelfde indeling als op de contractdetailpagina:
