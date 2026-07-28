@@ -103,6 +103,24 @@ If a warning appears, the correction is made by setting the acquisition's residu
 
 This rule applies to buildings only (for example, property, apartment, office or retail). Vehicles, machines, equipment and other non-building asset types do not have a bodemwaarde floor.
 
+### Disposal
+
+If you sell, scrap or otherwise dispose of an asset, record it in the **Purchase and status** section of the object form:
+
+- **Disposal date:** the date the asset left the business.
+- **Proceeds (excl. VAT):** the amount received. Leave the field empty if you do not know it yet; enter 0 if the asset was scrapped and no money changed hands.
+
+Once a disposal date is saved, the object detail page shows a disposal block that lists:
+
+- the disposal date
+- the book value at disposal
+- the proceeds, if recorded
+- the book profit or book loss
+
+If you leave the proceeds empty, the block shows the book value that was written off and explains that the book profit or loss cannot be determined until the proceeds are recorded.
+
+The asset summary also warns you when the depreciation schedule still posts amounts after the disposal date. Depreciation lines are generated in full when the asset is capitalized, so they keep reaching the profit and loss statement unless the depreciation term on the acquisition is adjusted.
+
 ### Contract signing status
 
 Each contract row in the object detail page now shows a signing status badge alongside the active/paused badge. The colour follows the same map used on the contract detail page:
