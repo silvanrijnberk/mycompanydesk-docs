@@ -49,13 +49,22 @@ The detail page shows:
 
 - Asset information and type
 - Current status
-- **Total revenue**: real paid-invoice revenue for this object, computed from the financials endpoint
+- **Total revenue**: real paid-invoice revenue for this object, including rent, service charges, one-off charges and sale invoices attributed to it
 - **Active contracts**: number of currently active contracts linked to this object
 - **WOZ history** (for Properties) — annual WOZ values used in the Box 3 tax calculation
 - **Asset summary** (for Property objects with a recorded WOZ value) - capitalized value, accumulated depreciation, current book value and the legal floor (bodemwaarde) for the building
 - Linked contracts
 - Rental history
-- Associated invoices
+- **Invoices**: every invoice that counts toward total revenue, with status and amount excluding VAT
+
+### Invoices attributed to this object
+
+The Invoices tab on the object detail page lists every invoice that contributes to the total revenue figure:
+
+- Invoices generated from a contract attached to this object
+- Invoices tagged to the object directly, such as service-charge settlements, one-off charges and sale invoices
+
+Each row shows the invoice number, customer, date, status and the amount excluding VAT. A scope hint explains that the total sums paid invoices, while the Box 3 report counts only received rent and uses the cash date, so the two amounts may differ.
 
 ### Contract summary header
 
@@ -139,7 +148,7 @@ Legacy contracts created before the e-signing feature was added do not show a si
 Objects integrate with other MyCompanyDesk features:
 
 - **Contracts** — Create a rental contract for an object, specifying the tenant (customer) and terms
-- **Invoices** — Invoices can be flagged as rental invoices and linked to objects
+- **Invoices**: Invoices can be attributed to an object directly in the invoice form, or linked through a rental contract. Both routes count toward the object's total revenue.
 - **Recurring invoices** — Set up automatic monthly rent invoicing per object
 
 ## Filtering

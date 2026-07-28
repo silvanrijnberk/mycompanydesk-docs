@@ -49,13 +49,22 @@ De detailpagina toont:
 
 - Objectinformatie en type
 - Huidige status
-- **Totale omzet**: echte omzet op basis van betaalde facturen voor dit object, berekend via de financiele gegevens
+- **Totale omzet**: echte omzet op basis van betaalde facturen voor dit object, inclusief huur, servicekosten, losse facturen en verkoopfacturen die eraan zijn gekoppeld
 - **Actieve contracten**: aantal actieve contracten dat aan dit object is gekoppeld
 - **WOZ-geschiedenis** (bij Vastgoed) — jaarlijkse WOZ-waarden die de Box 3-berekening gebruikt
 - **Vermogensoverzicht** (bij Vastgoed-objecten met een geregistreerde WOZ-waarde) - geactiveerde waarde, cumulatieve afschrijving, huidige boekwaarde en de wettelijke ondergrens (bodemwaarde) voor het gebouw
 - Gekoppelde contracten
 - Verhuurgeschiedenis
-- Bijbehorende facturen
+- **Facturen**: elke factuur die meetelt voor de totale omzet, met status en bedrag exclusief btw
+
+### Toegewezen facturen op dit object
+
+Het tabblad Facturen op de objectdetailpagina toont elke factuur die bijdraagt aan het totale omzetbedrag:
+
+- Facturen die zijn gegenereerd uit een contract dat aan dit object hangt
+- Facturen die direct aan het object zijn gekoppeld, zoals servicekostenafrekeningen, losse facturen en verkoopfacturen
+
+Elke regel toont het factuurnummer, de klant, de datum, de status en het bedrag exclusief btw. Een toelichting legt uit dat het totaal alle betaalde facturen sommeert, terwijl het Box 3-rapport alleen ontvangen huur telt en uitgaat van de datum waarop het geld binnenkwam. Die twee bedragen kunnen daarom verschillen.
 
 ### Contractoverzicht
 
@@ -139,7 +148,7 @@ Legacycontracten die zijn aangemaakt voordat de e-signing-feature werd toegevoeg
 Objecten integreren met andere MyCompanyDesk-functies:
 
 - **Contracten** — Maak een huurcontract voor een object, met vermelding van de huurder (klant) en voorwaarden
-- **Facturen** — Facturen kunnen worden gemarkeerd als huurfacturen en gekoppeld aan objecten
+- **Facturen**: Facturen kunnen direct in het factuurformulier aan een object worden gekoppeld, of via een huurcontract worden doorgegeven. Beide routes tellen mee in de totale omzet van het object.
 - **Terugkerende facturen** — Stel automatische maandelijkse huurfacturatie per object in
 
 ## Filteren

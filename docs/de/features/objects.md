@@ -49,12 +49,21 @@ Die Detailseite zeigt:
 
 - Vermögenswertinformationen und Typ
 - Aktueller Status
-- **Gesamtumsatz**: tatsächlicher Umsatz aus bezahlten Rechnungen für dieses Objekt, berechnet aus den Finanzdaten
+- **Gesamtumsatz**: tatsächlicher Umsatz aus bezahlten Rechnungen für dieses Objekt, einschließlich Miete, Servicekosten, Einzelrechnungen und Verkaufsrechnungen, die ihm zugeordnet sind
 - **Aktive Verträge**: Anzahl der derzeit aktiven Verträge zu diesem Objekt
 - **WOZ-Verlauf** (bei Immobilien) — jährliche WOZ-Werte, die für die Box-3-Berechnung verwendet werden
 - Verknüpfte Verträge
 - Mietverlauf
-- Zugehörige Rechnungen
+- **Rechnungen**: jede Rechnung, die in den Gesamtumsatz einfließt, mit Status und Betrag ohne MwSt.
+
+### Diesem Objekt zugeordnete Rechnungen
+
+Die Registerkarte Rechnungen auf der Objektdetailseite listet jede Rechnung auf, die zum Gesamtumsatz beiträgt:
+
+- Rechnungen, die aus einem mit diesem Objekt verknüpften Vertrag erstellt wurden
+- Rechnungen, die direkt dem Objekt zugeordnet sind, zum Beispiel Servicekostenabrechnungen, Einzelrechnungen und Verkaufsrechnungen
+
+Jede Zeile zeigt Rechnungsnummer, Kunde, Datum, Status und den Betrag ohne MwSt. Ein Hinweis erklärt, dass die Summe alle bezahlten Rechnungen erfasst, während der Box-3-Bericht nur erhaltene Miete und das Datum des Geldeingangs verwendet. Die beiden Beträge können daher voneinander abweichen.
 
 ### Vertragszusammenfassung
 
@@ -138,7 +147,7 @@ Altverträge, die vor der Einführung der E-Signing-Funktion angelegt wurden, ze
 Objekte lassen sich mit anderen MyCompanyDesk-Funktionen integrieren:
 
 - **Verträge** — Erstellen Sie einen Mietvertrag für ein Objekt mit Angabe des Mieters (Kunden) und der Bedingungen
-- **Rechnungen** — Rechnungen können als Mietrechnungen gekennzeichnet und mit Objekten verknüpft werden
+- **Rechnungen**: Rechnungen können direkt im Rechnungsformular einem Objekt zugeordnet werden oder über einen Mietvertrag verknüpft werden. Beide Wege fließen in den Gesamtumsatz des Objekts ein.
 - **Wiederkehrende Rechnungen** — Richten Sie automatische monatliche Mietabrechnungen pro Objekt ein
 
 ## Filtern

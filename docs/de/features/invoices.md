@@ -44,6 +44,10 @@ Sie können eine neue Rechnung an zwei Stellen aus einer gespeicherten Vorlage s
 - Im **vollständigen Rechnungsformular** klicken Sie auf **Aus Vorlage starten** (nur sichtbar, wenn gespeicherte Rechnungsvorlagen vorhanden sind). Wählen Sie eine Vorlage aus und das Formular füllt sich direkt mit den Positionen, dem Kunden und den anderen gespeicherten Daten. Passen Sie nach Bedarf an und speichern und versenden Sie.
 - Aus der **Schnellerfassungs-Schublade** klicken Sie auf **Vorlage verwenden**, wählen Sie eine gespeicherte Vorlage aus und alle Positionen sind vorausgefüllt. Passen Sie nach Bedarf an und speichern und versenden Sie.
 
+## Rechnung einem Objekt zuordnen
+
+Wenn der Umsatz zu einer Mietimmobilie, einem Fahrzeug oder einem anderen Vermögensgegenstand gehört, wählen Sie im Rechnungsformular das entsprechende Objekt aus. Die Rechnung wird dann auf der Objektdetailseite aufgeführt und in deren Gesamtumsatz einbezogen. Das gilt sowohl für Rechnungen, die aus einem Mietvertrag erzeugt wurden, als auch für direkte Zuordnungen wie Servicekostenabrechnungen, Einzelrechnungen und Verkaufsrechnungen.
+
 ## Rechnungsdetails
 
 Jede Rechnung hat eine Detailseite, die zeigt:
