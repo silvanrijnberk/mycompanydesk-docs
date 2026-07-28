@@ -68,6 +68,12 @@ Je kunt secties ook direct op de live canvas-voorvertoning herschikken, verberge
 
 Klik op een sectie om hem geselecteerd te houden; de omlijning blijft dan zichtbaar als je de muis wegbeweegt, zodat je posities kunt vergelijken terwijl je scrollt of de inhoud bewerkt. Zowel de canvas als het paneel **Secties** lezen uit dezelfde onderliggende volgorde, dus een wijziging op de ene plek wordt direct op de andere plek doorgevoerd.
 
+### Knoplinks per sectie overschrijven
+
+Sommige bespoke-secties bevatten klikbare knoppen of links die normaal naar een vast pagina in het ontwerp verwijzen, zoals een contactpagina, een boekingslink of een telefoonnummer. De bespoke-contenteditor laat je per pagina de bestemming van elke aanpasbare knop wijzigen.
+
+Open een pagina in de bespoke-contenteditor en selecteer de sectie waarvan je de knop wilt aanpassen. In het paneel **Secties** toont elke sectie met aanpasbare knoppen een lijst **Knoppen**. Kies de knop die je wilt overschrijven en voer de nieuwe bestemming in. Je kunt linken naar een andere pagina op je site, een externe URL, een e-mailadres (`mailto:`) of een telefoonnummer (`tel:`). Links worden om veiligheid gecheckt tegen dezelfde toegestane schemes als navigatielinks. Laat je de overschrijving leeg, dan houdt de knop zijn oorspronkelijke bestemming uit het sjabloon.
+
 ## Pagina's aanmaken
 
 1. Ga naar de **Pagina's**-tab.

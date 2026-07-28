@@ -68,6 +68,12 @@ Sie können Abschnitte auch direkt auf der Live-Canvas-Vorschau neu anordnen, au
 
 Klicken Sie auf einen Abschnitt, um ihn ausgewählt zu halten; der Rahmen bleibt dann sichtbar, auch wenn Sie die Maus wegbewegen, sodass Sie Positionen vergleichen können, während Sie scrollen oder Inhalte bearbeiten. Sowohl die Canvas als auch das Panel **Abschnitte** lesen aus derselben zugrunde liegenden Reihenfolge, sodass eine Änderung an einer Stelle sofort an der anderen Stelle übernommen wird.
 
+### Links von Abschnitts-Buttons überschreiben
+
+Einige Bespoke-Abschnitte enthalten klickbare Buttons oder Links, die normalerweise auf eine fest im Design verankerte Seite zeigen, etwa eine Kontaktseite, eine Buchungs-URL oder eine Telefonnummer. Der Bespoke-Content-Editor erlaubt es Ihnen pro Seite, das Ziel jedes anpassbaren Buttons zu überschreiben.
+
+Öffnen Sie eine Seite im Bespoke-Content-Editor und wählen Sie den Abschnitt aus, dessen Button Sie ändern möchten. Im Panel **Abschnitte** zeigt jeder Abschnitt mit anpassbaren Buttons eine Liste **Buttons**. Wählen Sie den gewünschten Button aus und geben Sie das neue Ziel ein. Sie können auf eine andere Seite Ihrer Site, eine externe URL, eine E-Mail-Adresse (`mailto:`) oder eine Telefonnummer (`tel:`) verlinken. Links werden aus Sicherheitsgründen mit denselben erlaubten Schemes wie Navigationslinks geprüft. Lassen Sie die Überschreibung leer, behält der Button das ursprüngliche Ziel aus der Vorlage bei.
+
 ## Seiten erstellen
 
 1. Gehen Sie zum Tab **Seiten**.

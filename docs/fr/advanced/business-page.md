@@ -68,6 +68,12 @@ Vous pouvez aussi reordonner, masquer et supprimer des sections directement sur 
 
 Cliquez sur une section pour la garder selectionnee; le contour reste alors visible meme lorsque vous eloignez la souris, ce qui vous permet de comparer les positions tout en faisant defiler ou en modifiant le contenu. Le canvas et le panneau **Sections** lisent tous deux le meme ordre sous-jacent, donc une modification d'un cote est immediatement refletee de l'autre.
 
+### Remplacer les liens des boutons de section
+
+Certaines sections sur mesure contiennent des boutons ou des liens cliquables qui pointent normalement vers une page fixe integree au design, comme une page de contact, une URL de reservation ou un numero de telephone. L'editeur de contenu sur mesure vous permet de remplacer la destination de chaque bouton adressable, par page.
+
+Ouvrez une page dans l'editeur de contenu sur mesure et selectionnez la section dont vous voulez modifier le bouton. Dans le panneau **Sections**, chaque section contenant des boutons adressables affiche une liste **Boutons**. Choisissez le bouton a remplacer et saisissez sa nouvelle destination. Vous pouvez creer un lien vers une autre page de votre site, une URL externe, une adresse e-mail (`mailto:`) ou un numero de telephone (`tel:`). Les liens sont verifies avec les memes schemes autorises que les liens de navigation, par securite. Si vous laissez le remplacement vide, le bouton conserve la destination d'origine du modele.
+
 ## Creer des pages
 
 1. Allez dans l'onglet **Pages**.
