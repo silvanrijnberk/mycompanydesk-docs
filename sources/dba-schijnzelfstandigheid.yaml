@@ -1,0 +1,92 @@
+# Wet DBA / schijnzelfstandigheid: verified facts for any surface that makes a
+# claim about a zzp'er's employment-status risk.
+#
+# Why this file exists: the landing page for "modelovereenkomst maken" claimed
+# it "voldoet aan de eisen van de Belastingdienst" and that the contract
+# "werkt weg" that you work at the client's office. Both are false, and both
+# were aimed at exactly the audience that carries the tax risk. Legal claims on
+# this topic must be quoted from here, never written from memory.
+#
+# Curated by hand. The mcd-public-surfaces-sync agent reads but never writes.
+
+last_verified: 2026-07-27
+verified_by: claude-opus-5
+notes: |
+  Assume nothing here is stable. This area moved three times in two years
+  (moratorium end, the 6 Sept 2024 stop on new modelovereenkomsten, the 2026
+  fine regime) and the Vbar/Zelfstandigenwet legislation is still in flight.
+  Re-verify before reusing in new copy.
+
+modelovereenkomst:
+  new_approvals_stopped: 2024-09-06
+  existing_valid_until: 2029-12-31
+  gives_advance_certainty: false
+  sources:
+    - url: https://over-ons.belastingdienst.nl/onderwerpen/schijnzelfstandigheid/
+      quote: "Vanaf 6 september 2024 geen nieuwe modelovereenkomsten meer"
+    - url: https://ondernemersplein.overheid.nl/schijnzelfstandigheid-voorkomen-met-dba-voor-zzpers/
+      quote: "De Belastingdienst beoordeelt geen nieuwe modelovereenkomsten meer"
+    - url: https://ondernemersplein.overheid.nl/schijnzelfstandigheid-voorkomen-met-dba-voor-zzpers/
+      quote: >-
+        U mag die blijven gebruiken tot de einddatum van deze modelovereenkomst.
+        Dit kan tot uiterlijk eind 2029.
+    - url: https://ondernemersplein.overheid.nl/schijnzelfstandigheid-voorkomen-met-dba-voor-zzpers/
+      quote: >-
+        Wel moet u als de opdrachtgever en opdrachtnemer in de praktijk ook echt
+        zo werken als afgesproken.
+    - url: https://www.kvk.nl/wetten-en-regels/wet-dba-voorkom-schijnzelfstandigheid/
+      quote: "kan dus een vals gevoel van zekerheid geven"
+  # The honest framing, and the only one our copy may use:
+  # a still-valid modelovereenkomst helps ONLY where practice matches the paper.
+  # No new one can be obtained, and no contract settles the question by itself.
+  safe_phrasing_nl: >-
+    Een modelovereenkomst legt vast hoe je wilt samenwerken. De Belastingdienst
+    beoordeelt sinds 6 september 2024 geen nieuwe modelovereenkomsten meer, en
+    papier is nooit doorslaggevend: het gaat om hoe je in de praktijk werkt.
+  forbidden_claims_nl:
+    - "Voldoet aan de eisen van de Belastingdienst"
+    - "voorkomt schijnzelfstandigheid"
+    - "maakt vooraf duidelijk dat het zelfstandig werk is"
+    - "werkt dit expliciet weg"
+    - "geeft zekerheid"
+
+beoordeling:
+  # HR 24 maart 2023 (Deliveroo), ECLI:NL:HR:2023:443
+  test: holistic
+  gezichtspunten_count: 9
+  single_criterion_decisive: false
+  substitution_clause_decisive: false
+  sources:
+    - url: https://uitspraken.rechtspraak.nl/details?id=ECLI%3ANL%3AHR%3A2023%3A443
+      note: >-
+        All circumstances of the case in mutual relationship; nine gezichtspunten;
+        no viewpoint carries more weight in advance. The weight of a contractual
+        clause depends on whether it actually has meaning for the worker.
+    - url: https://www.rijksoverheid.nl/documenten/publicaties/2025/02/17/arbeidsrelaties-aantekening-vn-arrest-hr-deliveroo-24-maart-2023
+      note: Belastingdienst's own annotation of the Deliveroo ruling.
+  # Explicitly WRONG framings we have shipped before:
+  #  - "de drie kenmerken die de Belastingdienst toetst"
+  #  - vervangingsvrijheid as "de scherpste toets"
+  # Deliveroo holds a substitution clause is not in itself incompatible with an
+  # employment agreement.
+  ondernemerschap_is_criterion: true
+  ondernemerschap_source: https://www.rijksoverheid.nl/actueel/nieuws/2025/03/27/ondernemerschap-blijft-volwaardig-criterium-bij-beoordelen-schijnzelfstandigheid
+
+handhaving:
+  moratorium_ended: 2025-01-01
+  fines:
+    2025:
+      verzuimboete: false
+      vergrijpboete: false
+    2026:
+      verzuimboete: false
+      vergrijpboete: true
+  correction_reaches_back_to: 2025-01-01
+  correction_reaches_back_years_on_intent: 5
+  sources:
+    - url: https://www.belastingdienst.nl/wps/wcm/connect/nl/arbeidsrelaties/content/handhaving
+      quote: "In 2025 legden we nog geen verzuim- en vergrijpboetes op."
+    - url: https://www.belastingdienst.nl/wps/wcm/connect/nl/arbeidsrelaties/content/handhaving
+      quote: "Vanaf 1 januari 2026 kunnen we wel vergrijpboetes opleggen."
+    - url: https://www.belastingdienst.nl/wps/wcm/connect/nl/arbeidsrelaties/content/handhaving
+      quote: "We leggen in 2026 nog geen verzuimboetes op."
