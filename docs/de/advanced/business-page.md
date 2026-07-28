@@ -1,437 +1,443 @@
 ---
-title: Website-Builder
+title: Site Builder
 ---
 
-# Website-Builder
+# Site Builder
 
-Erstellen Sie Ihre Geschäftswebsite mit einem Drag-and-Drop-Editor. Legen Sie mehrere Seiten an, gestalten Sie sie mit Abschnitten und Blöcken, passen Sie Farben und Schriften an und veröffentlichen Sie, wenn Sie bereit sind.
+Build your business website with a drag-and-drop editor. Create multiple pages, compose them with sections and blocks, customize colors and fonts, and publish when you are ready.
 
-## Übersicht
+## Overview
 
-Der Website-Builder ersetzt das alte einseitige Unternehmensprofil. Jeder neue Workspace startet mit einer 4-seitigen Standard-Site (Home, Diensten, Über uns, Kontakt), damit Sie von Tag eins an eine echte mehrseitige Grundlage haben. Der Editor bietet Ihnen:
+The site builder replaces the old single-page business profile. Every new workspace starts with a 4-page default site (Home, Diensten, Over ons, Contact) so you have a real multi-page foundation from day one. The editor gives you:
 
-- **Mehrere Seiten**: Erstellen Sie so viele Seiten, wie Sie benötigen, jede mit eigenem Pfad und eigenen Abschnitten. Die vier Standardseiten sind bereit zum Bearbeiten, Löschen oder Ergänzen.
-- **Domain-Wechsler**: Wenn Ihr Workspace mehrere eigene Domains hat (Pro-Tarif), können Sie über ein Dropdown in der oberen Leiste zwischen der Bearbeitung der Hauptwebsite und einer Domain-Variante wechseln. Jede Domain erhält ihre eigenen Seiten, Navigation, Design-Tokens und Veröffentlichungs-Snapshots.
-- **Abschnittsblöcke**: Fügen Sie Hero-, Text-, Galerie-, Spotlight-, Dienstleistungs-, Team-, Testimonial-, Kontaktformular- und benutzerdefinierte HTML-Abschnitte zu jeder Seite hinzu. Speichern Sie Abschnitte als wiederverwendbare Blöcke, um Ihre eigene Bibliothek aufzubauen.
-- **Design-Tokens**: Legen Sie Markenfarben, Schriften, Abstände, Eckenradius, Bewegungsstil, benutzerdefiniertes CSS und ein Site-Favicon fest. Änderungen gelten für die gesamte Site.
-- **Navigations-Editor**: Ordnen Sie Header-Links per Drag-and-Drop, mit Dropdown-Gruppen, externen Links und Inline-Navbar-Styling (Markenname, CTA-Button, Telefon, Anruf-Leiste, Sticky).
-- **Veröffentlichungs-Snapshots**: Arbeiten Sie im Entwurf, sehen Sie sich Ihre Änderungen in der Vorschau an und veröffentlichen Sie dann. Unveröffentlichte Änderungen werden in der oberen Leiste angezeigt.
-- **Responsive Vorschau**: Wechseln Sie während der Bearbeitung zwischen Desktop-, Tablet- und Mobilansicht.
+- **Multi-page support**: Create as many pages as you need, each with its own path and sections. The four default pages are ready to edit, remove, or add to.
+- **Domain switcher**: When your workspace has multiple custom domains (Pro plan), a dropdown in the top bar lets you switch between editing the default site and a per-domain variant. Each domain gets its own pages, navigation, design tokens, and publish snapshot.
+- **Section blocks**: Add hero, text, gallery, spotlight, services, team, testimonials, contact form, and custom HTML sections to any page. Save sections as reusable blocks to build a personal library.
+- **Design tokens**: Set brand colors, fonts, spacing, border radius, motion style, custom CSS, and a site favicon. Changes apply across the whole site.
+- **Navigation editor**: Drag-and-drop reorder of header links, with dropdown groups, external links, and inline navbar styling (brand name, CTA button, phone, call bar, sticky).
+- **Publish snapshots**: Work in draft, preview your changes, then publish. Unpublished changes are tracked in the top bar.
+- **Responsive preview**: Toggle between desktop, tablet, and mobile viewports while editing.
 
-Den Website-Builder finden Sie unter **Unternehmen > Ihre Website** (`/website`).
+The site builder lives at **Company > Your website** (`/website`).
 
-## KI-Schnellstart
+## AI scaffolding
 
-Wenn Sie den Website-Builder zum ersten Mal in einem neuen Workspace öffnen, erscheint ein Schnellstart-Banner oben. Es liest Ihre Handelsregisterdaten (Firmenname, Branche, Stadt) und schlägt einen ersten Claim, einen Über-uns-Text und drei Dienstleistungen vor. Sie können alles direkt anpassen bevor Sie übernehmen, neu generieren wenn der erste Vorschlag nicht ganz passt, oder das Banner ausblenden. Keine Wizard-Fragen, keine Hürde vorab.
+When you open the site builder for the first time on a fresh workspace, the editor shows a quick-start banner at the top. It reads your business register data (legal name, industry code, city) and generates a starter tagline, an about-us paragraph and three service drafts for you. You can edit everything inline before accepting, regenerate if the first suggestion is not quite right, or dismiss the banner. No wizard questions, no upfront friction.
 
-Was das Banner für Sie tut:
+What the banner can do for you:
 
-- **Generieren**: Klicken Sie auf **Vorschlag generieren**, um die KI Ihre KVK-Daten lesen und Text vorschlagen zu lassen.
-- **Inline bearbeiten**: Passen Sie Claim, Über-uns-Text und Dienstleistungsnamen und -beschreibungen direkt im Banner an.
-- **Übernehmen**: Klicken Sie auf **Übernehmen**, um den freigegebenen Text in Ihren Workspace zu schreiben. Ihre Unternehmensbeschreibung, der Hero-Claim und die Dienstleistungen werden in einem Schritt aktualisiert.
-- **Neu generieren**: Nicht zufrieden? Klicken Sie auf **Neu generieren** für einen neuen Satz Vorschläge.
-- **Ausblenden**: Das Banner merkt sich Ihre Entscheidung lokal. Es bleibt ausgeblendet, bis Sie Ihre Workspace-Daten zurücksetzen.
+- **Generate**: Click **Generate suggestion** to let the AI read your KVK data and propose copy.
+- **Edit inline**: Adjust the tagline, about text and service names and descriptions right in the banner.
+- **Accept**: Click **Apply** to write the accepted copy to your workspace. Your company description, hero tagline and services are updated in one go.
+- **Regenerate**: Not happy with the result? Click **Regenerate** for a fresh set of suggestions.
+- **Dismiss**: The banner remembers your choice locally. It stays hidden until you reset your workspace data.
 
-Das Banner verwendet das Gemini KI-Modell (Lite-Variante), sofern in Ihrem Workspace verfügbar. Wenn KI nicht konfiguriert ist, arbeitet das Banner trotzdem mit einem sinnvollen Fallback auf Basis Ihrer Branchenkennzahl und Ihres Firmennamens.
+The banner uses the Gemini AI model (lite variant) when available on your workspace. If AI is not configured, the banner still works with a sensible fallback based on your industry code and company name.
 
 ## Tabs
 
-Der Website-Builder hat fünf Tabs (sechs, wenn Stil ausgeklappt ist):
+The site builder has five tabs (six when Style is expanded):
 
-- **Editor**: Erstellen Sie Seiten durch Hinzufügen und Anordnen von Abschnitten. Klicken Sie auf einen Abschnitt, um Inhalt, Layout, Stil oder Animation zu bearbeiten. Ziehen Sie Abschnitte zum Verschieben, Duplizieren oder Löschen.
-- **Seiten**: Verwalten Sie Ihre Seiten: Erstellen Sie neue aus Vorlagen, legen Sie Pfade und Sichtbarkeit fest und sehen Sie, welche Seiten live, Entwurf oder geplant sind. Klicken Sie auf eine Seite, um sie im Editor zu öffnen. Die gesperrte Startseite kann nicht gelöscht werden. Jede Seite zeigt ein Live/Entwurf-Symbol mit Schnellumschaltflächen: Klicken Sie auf das Globus-Icon, um eine Entwurfsseite live zu schalten, oder auf das Ausblenden-Icon, um eine Live-Seite zurück in den Entwurf zu setzen.
-- **Stil**: Passen Sie Ihre site-weiten Design-Tokens an. Wählen Sie ein Ein-Klick-Preset (Editorial) und passen Sie dann Farben (Marke, Akzent, Papier, Tinte), Schriften (Überschrift, Text, Mono aus der Schriftbibliothek), Navigationsleiste (Layout, Hintergrund, CTA-Stil), Skalierung (Radius, Dichte, maximale Breite, Abschnittsabstand), Bewegung, Schaltflächenstile und benutzerdefiniertes CSS an. Sie können auch Head-Snippets für Analytics (Plausible, Umami, Matomo) oder Schrift-Preconnects hinzufügen. Klicken Sie auf die Stil-Überschrift, um die Registerkarte ein- oder auszuklappen.
-- **Domain & SEO**: Konfigurieren Sie Ihre eigene Domain und SEO-Einstellungen. Der Inhalt hier bezieht sich auf die Domain, die im Domain-Wechsler in der oberen Leiste ausgewählt ist. Wenn die Hauptwebsite (angezeigt als Ihr Workspace-Name) ausgewählt ist, erscheint kein domain-spezifisches Panel. Siehe [Domains, Website und Posteingang](/de/features/domains-website-inbox) für die vollständige Domain-Verwaltung.
-- **Integrationen**: Binden Sie Drittanbieterdienste in Ihre Website ein.
+- **Editor**: Compose pages by adding and arranging sections. Click any section to inspect its content, layout, style, or animation settings. Drag sections to reorder, duplicate, or delete them.
+- **Pages**: Manage your pages: create new ones from templates, set paths and visibility, and see which pages are live, draft, or scheduled. Click a page to open it in the editor. The locked home page cannot be deleted. Each page shows a Live/Concept badge alongside quick-toggle buttons: click the globe icon to set a draft page live, or use the eye-off icon to hide a live page back to concept.
+- **Style**: Customize your site-wide design tokens. Apply a one-click preset (Editorial), then fine-tune colors (brand, accent, paper, ink), fonts (heading, body, mono from the font library), navbar (layout, background, CTA style), scale (radius, density, max width, section spacing), motion preferences, button styles, and custom CSS. You can also add head snippets for analytics (Plausible, Umami, Matomo) or font preconnects. Click the Style header to open or close the tab strip.
+- **Domain & SEO**: Configure your custom domain and SEO settings. The content here is scoped to the domain selected in the topbar domain switcher. When the default site (listed as the workspace name) is selected, no domain-specific panel appears. See [Domains, Website and Inbox](/features/domains-website-inbox) for the full domain management workflow.
+- **Integrations**: Connect third-party services to your website.
 
-### Bespoke-Designs
+### Bespoke designs
 
-Der Website-Builder bietet außerdem eine Reihe fertiger **Bespoke-Designs**, die die Standardstil-Presets durch eine kuratierte Vorlage, ein Farbpaket und einen Markenakzent ersetzen. Öffnen Sie das Panel **Bespoke-Designs** im Stil-Tab, um die Galerie zu durchsuchen. Jede Karte ist eine Live-Vorschau, die mit Ihren eigenen Workspace-Daten gefüllt ist (Dienstleistungen, Fotos, Bewertungen, Kontaktdaten), sodass Sie genau sehen, wie das Design aussieht, bevor Sie es anwenden.
+The site builder also ships a set of ready-made **bespoke designs** that replace the standard style presets with a curated template, color pack, and brand accent. Open the **Bespoke designs** panel from the Style tab to browse the gallery. Each card is a live preview filled with your own workspace data (services, photos, reviews, contact details), so you see exactly how the design looks before you apply it.
 
-Bei der Auswahl eines Designs werden drei Dinge gleichzeitig festgelegt:
+Picking a design sets three things at once:
 
-- **Vorlage**: die Layoutfamilie und Abschnittsstruktur (zum Beispiel eine zentrierte Hero mit einem Review-Marquee oder eine geteilte Spotlight-Dienstleistungsseite).
-- **Farbpaket**: eine kuratierte Palette-Variante für diese Vorlage. Die meisten Vorlagen bieten mehrere Pakete wie warm, kühl, neutral, kräftig oder gedämpft. Das Paket zu wechseln behält dieselbe Vorlage bei, ersetzt aber die CSS-Custom-Property-Tokens, sodass das Layout gleich bleibt, während die Stimmung wechselt.
-- **Markenakzent**: eine optionale Überschreibung für die Akzentfarbe der Vorlage. Lassen Sie sie leer, um die Standardakzentfarbe des Pakets zu verwenden; geben Sie Ihre eigene Hex-Farbe ein, um Schaltflächen, Highlights und Abzeichen an Ihre Marke anzupassen. Sie können die Überschreibung jederzeit löschen, um wieder auf die Paket-Standardfarbe zurückzufallen.
+- **Template**: the layout family and section structure (for example, a centred hero with a marquee of reviews, or a split-spotlight services page).
+- **Color pack**: a curated palette variant for that template. Most templates offer multiple packs such as warm, cool, neutral, bold, or muted. Changing the pack keeps the same template but swaps CSS custom-property tokens, so the layout stays intact while the feel changes.
+- **Brand accent**: an optional override for the template's accent color. Leave it empty to use the pack's default accent; enter your own hex color to make buttons, highlights, and badges match your brand. You can clear the override at any time to fall back to the pack default.
 
-Ihr Geschäftslogo wird automatisch verwendet, wenn Sie eines hochgeladen haben. Vorlagen, die ein Logo unterstützen, zeigen es in der Navigationsleiste oder im Hero an. Vorlagen, die ein Textwortzeichen erwarten, greifen auf Ihren Geschäftsnamen zurück, wenn kein Logo festgelegt ist, gesteuert durch eine bedingte Regel, damit das richtige Element erscheint.
+Your business logo is used automatically if you have uploaded one. Templates that support a logo render it in the navbar or hero area. Templates that expect a text wordmark fall back to your business name when no logo is set, controlled by a conditional rule so the right element appears.
 
-Wenn Sie ein Design gefunden haben, klicken Sie auf **Dieses Design verwenden**. Die aktuelle Site wird sofort mit der neuen Vorlage, dem Paket und dem Akzent veröffentlicht, und Ihre öffentliche URL zeigt die Änderung sofort.
+When you find a design you like, click **Use this design**. The current site is published straight away with the new template, pack, and accent applied, and your public URL immediately shows the change.
 
-### Abschnitte auf einer Bespoke-Seite neu anordnen
+### Abschnitte in einer Bespoke-Seite neu anordnen
 
-Nachdem Sie ein Bespoke-Design angewendet haben, öffnen Sie eine Seite im Bespoke-Content-Editor. Das Panel **Abschnitte** listet alle Top-Level-Abschnitte dieser Seite. Ziehen Sie einen Abschnitt an eine neue Position, oder nutzen Sie die Auf- und Ab-Buttons. Schalten Sie die Sichtbarkeit aus, um einen Abschnitt auszublenden, ohne ihn zu löschen. Navigation, Hero und Footer bleiben gesperrt; sie lassen sich weder verschieben noch ausblenden.
+Nachdem Sie ein Bespoke-Design angewendet haben, öffnen Sie eine beliebige Seite im Bespoke-Content-Editor. Das Panel **Abschnitte** listet jeden Top-Level-Abschnitt dieser Seite auf. Ziehen Sie einen Abschnitt per Drag-and-Drop an eine neue Position, oder verwenden Sie die Aufwärts- und Abwärts-Pfeile. Schalten Sie die Sichtbarkeit aus, um einen Abschnitt auszublenden, ohne ihn zu löschen. Navigation, Hero und Footer bleiben gesperrt; Sie können sie weder verschieben noch ausblenden.
 
-## Seiten erstellen
+### Bedienelemente direkt auf der Canvas-Vorschau
 
-1. Gehen Sie zum Tab **Seiten**.
-2. Klicken Sie auf **Neue Seite**.
-3. Geben Sie einen Titel und einen Pfad ein (z. B. `/ueber-uns`).
-4. Wählen Sie eine Vorlage oder beginnen Sie mit einer leeren Seite.
-5. Die Seite öffnet sich im Editor, wo Sie Abschnitte hinzufügen und ausbauen können.
+Sie können Abschnitte auch direkt auf der Live-Canvas-Vorschau neu anordnen, ausblenden und entfernen. Bewegen Sie den Mauszeiger über einen Top-Level-Abschnitt, um seinen Namen und eine kleine Toolbar zu sehen. Verwenden Sie die Pfeile, um den Abschnitt nach oben oder unten zu verschieben, das Augen-Symbol, um ihn auszublenden (oder wieder einzublenden), und das Papierkorb-Symbol, um einen selbst hinzugefügten Abschnitt zu entfernen. Gesperrte Elemente wie Navigation, Hero und Footer zeigen den Namen beim Hover, haben aber keine Aktionen zum Verschieben, Ausblenden oder Entfernen.
 
-### Standardseiten
+Klicken Sie auf einen Abschnitt, um ihn ausgewählt zu halten; der Rahmen bleibt dann sichtbar, auch wenn Sie die Maus wegbewegen, sodass Sie Positionen vergleichen können, während Sie scrollen oder Inhalte bearbeiten. Sowohl die Canvas als auch das Panel **Abschnitte** lesen aus derselben zugrunde liegenden Reihenfolge, sodass eine Änderung an einer Stelle sofort an der anderen Stelle übernommen wird.
 
-Jeder neue Workspace wird mit vier Seiten ausgeliefert:
+## Creating pages
 
-| Seite | Pfad | Beschreibung |
+1. Go to the **Pages** tab.
+2. Click **New page**.
+3. Enter a title and a path (e.g. `/about`).
+4. Choose a template or start blank.
+5. The page opens in the editor, where you can add sections and build it out.
+
+### Default pages
+
+Every new workspace comes with four pages already created:
+
+| Page | Path | Description |
 |---|---|---|
-| Home | `/` | Ihre Haupt-Landingpage. Kann nicht gelöscht werden. |
-| Diensten | `/diensten` | Zeigen Sie, was Sie anbieten. Vorausgefüllt mit einem Dienstleistungsabschnitt. |
-| Über uns | `/over-ons` | Erzählen Sie Besuchern, wer Sie sind. |
-| Kontakt | `/contact` | Kontaktformular und Details. Aus dem Footer verlinkt. |
+| Home | `/` | Your main landing page. Cannot be deleted. |
+| Diensten | `/diensten` | Show what you offer. Pre-filled with a services section. |
+| Over ons | `/over-ons` | Tell visitors who you are. |
+| Contact | `/contact` | Contact form and details. Linked from the footer. |
 
-Diese Seiten werden automatisch mit der Navigationsleiste und dem Footer verknüpft. Sie können jede Seite bearbeiten oder löschen, außer der Home-Seite, die immer erforderlich ist. Die Navigation passt ihre Links an, wenn Sie Seiten hinzufügen oder entfernen.
+These pages are wired into the navigation header and footer automatically. You can edit or delete any of them, except the Home page which is always required. The navigation updates its links when you add or remove pages.
 
-### Seitenstatus: Live vs Entwurf
+### Page status: Live vs Concept
 
-Seiten haben einen Status, der steuert, ob sie auf Ihrer veröffentlichten Site erscheinen:
+Pages have a status that controls whether they appear on your published site:
 
-- **Live**: Die Seite wird in den Veröffentlichungs-Snapshot aufgenommen. Besucher sehen sie nach der Veröffentlichung auf Ihrer öffentlichen Site.
-- **Entwurf**: Die Seite ist in Bearbeitung. Sie bleibt für Besucher unsichtbar, auch nachdem Sie die Site veröffentlichen.
+- **Live**: The page is included in the publish snapshot. Visitors see it on your public site after you publish.
+- **Concept** (draft): The page is a work in progress. It stays hidden from visitors even after you publish the site.
 
-Die Startseite beginnt standardmäßig als **Live**. Jede andere neue Seite beginnt als **Entwurf**, damit sie nicht öffentlich wird, bevor Sie bereit sind. Sie können jede Seite mit den Schnellaktionen in der Seitentabelle zwischen Live und Entwurf umschalten. Die Statusänderung wird sofort gespeichert und aktiviert die Veröffentlichen-Schaltfläche in der oberen Leiste.
+The home page starts as **Live** by default. Every other new page starts as **Concept** so it does not go public before you are ready. You can toggle any page between Live and Concept with the quick-action buttons in the Pages table. Changing the status updates immediately and lights up the Publish button in the top bar, so the next publish picks up the change.
 
-Eine Site, deren Startseite auf Entwurf steht, zeigt bei der Veröffentlichung nichts an. Wenn Sie die Startseite in den Entwurf gesetzt haben, schalten Sie sie zurück auf Live und veröffentlichen Sie erneut, um die Site wiederherzustellen.
+A site whose home page is in Concept renders nothing when published. If you toggle the home page to Concept, switch it back to Live and publish to restore the site.
 
-## Seiten mit Abschnitten aufbauen
+## Building pages with sections
 
-Im **Editor**-Tab:
+In the **Editor** tab:
 
-- Klicken Sie auf **Abschnitt hinzufügen**, um die verfügbaren Blocktypen zu sehen (Hero, Text, Galerie, Spotlight, Dienstleistungen, Team, Testimonials, Kontaktformular, Preise, Produkt, benutzerdefiniertes HTML und mehr).
-- Wählen Sie einen Blocktyp aus, um ihn auf der Seite einzufügen.
-- Klicken Sie auf einen Abschnitt, um das Inspektionspanel zu öffnen, in dem Sie Inhalt, Layout, Stil und Animation bearbeiten können.
-- Ziehen Sie Abschnitte nach oben oder unten, um sie neu anzuordnen. Nutzen Sie die Duplizieren- und Löschen-Aktionen bei jedem Abschnitt.
+- Click **Add section** to see the available block types (hero, text, gallery, spotlight, services, team, testimonials, contact form, pricing, product, custom HTML, and more).
+- Select a block type to insert it onto the page.
+- Click any section to open the inspector panel, where you can edit its content, layout, style, and animation.
+- Drag sections up or down to reorder. Use the duplicate and delete actions on each section.
 
-Einige Abschnitte haben Systemvarianten, die nur auf der gesperrten Startseite verfügbar sind.
+Some sections have system-only variants that are available on the locked home page but not on custom pages.
 
-## KI-Hilfswerkzeuge
+## AI assistant tools
 
-Zwei KI-gestützte Werkzeuge helfen Ihnen, Ihre Seiten schneller zu texten und zu bebildern, direkt im Editor-Inspektor.
+Two AI-powered tools help you write and illustrate your pages faster, right inside the editor inspector.
 
-### Text umschreiben
+### Text rewrite
 
-Jedes Text- und Textarea-Feld im Abschnitts-Inspektor bekommt vier kleine Ton-Buttons darunter, sobald das Feld genug Inhalt hat (mehr als ein paar Wörter). Die Buttons senden Ihren aktuellen Text an den Server, der ein schlankes Gemini-Modell nutzt, um ihn in einem bestimmten Ton umzuschreiben:
+Every text and textarea field in the section inspector gets four small tone buttons below it when the field has enough content (more than a few words). The buttons send your current text to the server, which runs a lightweight Gemini model to rewrite it with a specific tone:
 
-- **Kürzer**: Kürzt den Text auf etwa die Hälfte, behält aber die Bedeutung.
-- **Ruhiger**: Macht den Text ruhiger und beruhigender. Weniger Verkaufsfloskel, mehr Vertrauen.
-- **Schärfer**: Verschärft die Formulierung. Stärkere Verben, kein Zögern.
-- **Freundlicher**: Mildert den Ton, wärmer und zugänglicher.
+- **Shorter**: Cuts the text to about half its length while keeping the meaning.
+- **Calmer**: Makes the text warmer and more reassuring. Less sales pitch, more confidence.
+- **Sharper**: Tightens the wording. Stronger verbs, no hesitation.
+- **Friendlier**: Softens the tone to be warmer and more approachable.
 
-Die Umschreibung bleibt immer in derselben Sprache wie das Original (meist Niederländisch). Das Modell schreibt nur um, es erfindet keine neuen Informationen. Der umgeschriebene Text ersetzt Ihren Feldinhalt direkt. Sie können einen anderen Ton-Button klicken, rückgängig machen oder weiter bearbeiten.
+The rewrite always stays in the same language as the original (usually Dutch). The model only rewrites, it does not invent new information. The rewritten text replaces your field content inline. You can click another tone button, undo, or edit further.
 
-Das Textfeld ist auf 2000 Zeichen für den Umschreib-Aufruf begrenzt, damit das Modell schnell und vorhersehbar bleibt. Wenn der KI-Dienst vorübergehend nicht verfügbar ist, sehen Sie eine Fehlermeldung und Ihr ursprünglicher Text bleibt unberührt.
+The text field is limited to 2000 characters for the rewrite call, so the model returns quickly and stays predictable. If the AI service is temporarily unavailable, you will see an error message and your original text stays untouched.
 
-### Stockfoto-Suche
+### Stock photo search
 
-Wenn Sie das Bild-Upload-Feld in einem beliebigen Abschnittsblock öffnen (Hero, Spotlight, Team, Portfolio, Logos, Produkt), sehen Sie jetzt einen **Stockfoto**-Button neben den Upload- und URL-Buttons. Ein Klick öffnet ein Inline-Suchpanel, das mit Unsplash, der kostenlosen Stockfoto-Bibliothek, verbunden ist.
+When you open the image upload field in any section block (hero, spotlight, team, portfolio, logos, product), you now see a **Stockfoto** button next to the upload and URL paste buttons. Clicking it opens an inline search panel connected to Unsplash, the free stock photo library.
 
-- Geben Sie einen Suchbegriff ein (z. B. "friseursalon", "kaffee", "holz") und drücken Sie Enter.
-- Ergebnisse erscheinen in einem Raster. Klicken Sie auf ein Foto, um es als Abschnittsbild einzufügen.
-- Die Suche läuft über den MyCompanyDesk-Server, sodass Ihr Unsplash-Zugriffsschlüssel niemals den Browser erreicht.
-- Die Namensnennung wird automatisch gemäß den API-Richtlinien von Unsplash verfolgt und auf Ihrer veröffentlichten Website angezeigt. Sobald Ihre Website live geht, erscheint ein "Fotos: `Fotograf` · Unsplash"-Hinweis in der Fußzeile jeder Seite, die mindestens ein Stockfoto enthält, sodass Sie stets richtlinienkonform sind.
-- Wenn Unsplash in Ihrem Workspace nicht konfiguriert ist, bleibt der Stockfoto-Button ausgeblendet, sodass Sie nie ein nicht funktionierendes Feature sehen.
+- Type a search term (e.g. "hair salon", "coffee", "wood") and hit enter.
+- Results appear in a grid. Click any photo to insert it as your section image.
+- The search is proxied through the MyCompanyDesk server, so your Unsplash access key never reaches the browser.
+- Attribution is tracked automatically per Unsplash's API guidelines and rendered on your published site. When your site goes live, a "Foto's: `photographer` · Unsplash" credit line appears in the footer for every page that uses at least one stock photo, so you are always compliant.
+- If Unsplash is not configured on your workspace, the Stockfoto button stays hidden so you never see a broken feature.
 
-## Gespeicherte Blöcke
+## Saved blocks
 
-Speichern Sie jeden Abschnitt als wiederverwendbaren Block und bauen Sie eine persönliche Bibliothek vorgestylter Bausteine auf. Gespeicherte Blöcke erscheinen ganz oben im Abschnitts-Hinzufügen-Panel, sodass Sie ein gespeichertes Layout auf jeder Seite einfügen können, ohne es neu aufbauen zu müssen.
+Save any section as a reusable block and build a personal library of pre-styled building blocks. Saved blocks appear at the top of the section adder, so you can drop a saved layout onto any page without rebuilding it from scratch.
 
-### Abschnitt als Block speichern
+### Save a section as a block
 
-1. Klicken Sie auf das Lesezeichen-Symbol in einer Abschnittszeile im Editor.
-2. Geben Sie dem Block einen Namen (die Abschnittsbezeichnung oder der Typ ist bereits als Vorschlag vorausgefüllt).
-3. Der Block wird in Ihrer persönlichen Bibliothek für diesen Workspace gespeichert.
+1. Click the bookmark icon on any section row in the editor.
+2. Give the block a name (the section label or type is pre-filled as a suggestion).
+3. The block is saved to your personal library for this workspace.
 
-### Gespeicherten Block einfügen
+### Insert a saved block
 
-1. Klicken Sie auf **Abschnitt hinzufügen** auf einer beliebigen Seite.
-2. Ihre gespeicherten Blöcke erscheinen unter **Meine Blöcke** ganz oben im Panel.
-3. Klicken Sie auf einen gespeicherten Block, um ihn als neuen Abschnitt auf der aktuellen Seite einzufügen.
+1. Click **Add section** on any page.
+2. Your saved blocks appear under **My blocks** at the top of the adder panel.
+3. Click a saved block to insert it as a new section on the current page.
 
-Das Einfügen eines gespeicherten Blocks kopiert dessen Vorlage in eine neue Abschnittszeile. Das Bearbeiten oder Löschen des eingefügten Abschnitts wirkt sich nicht auf den gespeicherten Block in Ihrer Bibliothek aus und umgekehrt.
+Inserting a saved block copies its template into a fresh section row. Editing or deleting the inserted section does not touch the saved block in your library, and the other way around.
 
-### Ihre Bibliothek verwalten
+### Manage your library
 
-- **Einen Block löschen** Sie aus der Bibliothek, indem Sie auf das x-Symbol neben dem Block klicken. Dies entfernt nur die gespeicherte Vorlage; bereits eingefügte Abschnitte bleiben erhalten.
-- Der **Meine Blöcke**-Header wird ausgeblendet, wenn Ihre Bibliothek leer ist, sodass ein Erstbenutzer keine leere Kategorie sieht.
+- **Remove a block** from the library by clicking the x icon on the block in the adder panel. This only removes the saved template; it does not affect sections already inserted from it.
+- The **My blocks** header is hidden when your library is empty, so a first-time editor does not see an empty category.
 
-### Abschnitts-Layoutvarianten
+### Section layout variants
 
-Hero-, Dienstleistungs-, Preis- und Kundenstimmen-Abschnitte unterstützen mehrere Layoutvarianten. Wählen Sie eine aus dem **Stil**-Dropdown im Layout-Tab des Inspektionspanels, um das Erscheinungsbild des Abschnitts zu ändern. Die Standardvariante behält das vertraute Aussehen bei, sodass Abschnitte, die Sie vor dieser Funktion gebaut haben, unverändert bleiben.
+Hero, services, pricing, and testimonials sections support multiple layout variants. Pick one from the **Stijl** (Style) dropdown in the inspector's Layout tab to change how the section renders. The default variant preserves the existing look, so sections you built before this feature keep rendering as they always did.
 
-#### Hero-Varianten
+#### Hero variants
 
-| Variante | Effekt |
+| Variant | Effect |
 |---|---|
-| **Standard (geteilt rechts)** | Standard. Bild rechts, Text links. Fällt auf zentrierten Text zurück, wenn kein Bild vorhanden ist. |
-| **Geteilt links** | Spiegelung des Standards: Bild links, Text rechts. Erfordert ein Bild. |
-| **Zentriert** | Text zentriert, optionales Bild darunter in einem breiten 16:9-Rahmen. |
-| **Banner** | Bild über die volle Breite als Hintergrund mit Verlauf-Overlay. Weißer Text auf dunkler Tönung, extra hoch für ausreichend Bildraum. Erfordert ein Bild. |
-| **Minimal** | Nur Text in einer schmalen Spalte. Kein Bild. Sauber und ruhig, geeignet für dokumentationsartige Seiten. |
+| **Standard (split right)** | Default. Image on the right, text on the left. Falls back to centered text when there is no image. |
+| **Split left** | Mirror of the default: image on the left, text on the right. Requires an image. |
+| **Centered** | Text centered, optional image beneath it in a wide 16:9 frame. |
+| **Banner** | Full-bleed background image with a gradient overlay. White text on a dark scrim, tall so the image breathes. Requires an image. |
+| **Minimal** | Text-only in a narrow column. No image. Clean and quiet for documentation-style pages. |
 
-#### Dienstleistungs-Varianten
+#### Services variants
 
-| Variante | Effekt |
+| Variant | Effect |
 |---|---|
-| **Standard (Karten)** | Standard. Raster mit Karten in 2, 3 oder 4 Spalten. Icon, Titel und Beschreibung pro Element. |
-| **Icon-Raster** | Kompakteres, icon-getriebenes Layout mit größeren Icons und weniger Karten-Chrome. Geeignet für 4 oder mehr kurze Elemente. |
-| **Liste** | Vertikale Zeilen mit einem Icon links und Text rechts, getrennt durch dünne Linien. Gut für lange Leselisten. |
-| **Akkordeon** | Vertikal gestapelte klickbare Zeilen. Beschreibung ausgeblendet, bis die Zeile geöffnet wird. Verwendet dieselbe Chevron-Animation wie der FAQ-Block. |
+| **Standard (cards)** | Default. Grid of cards in 2, 3, or 4 columns. Icon, title, and description per item. |
+| **Icon grid** | Denser, icon-led layout with larger icons and less card chrome. Best for 4 or more short-label items. |
+| **List** | Vertical rows with an icon on the left and text on the right, separated by thin rules. Good for long read-through lists. |
+| **Accordion** | Vertically stacked clickable rows. Description hidden until the row opens. Uses the same chevron animation as the FAQ block. |
 
-#### Preis-Varianten
+#### Pricing variants
 
-| Variante | Effekt |
+| Variant | Effect |
 |---|---|
-| **Standard (Karten)** | Standard. Tier-Karten nebeneinander mit Name, Preis, Funktionsliste und Kauf-Button oder CTA. |
-| **Vergleichstabelle** | Feature-Matrix. Zeilen sind alle Funktionen aller Tiers zusammengeführt. Spalten sind die Tiers. Jede Zelle zeigt ein Häkchen oder einen Strich, damit Besucher schnell Spalten scannen und Tarife vergleichen können. Die hervorgehobene Tier-Spalte bleibt eingefärbt. |
+| **Standard (cards)** | Default. Side-by-side tier cards with name, price, feature list, and buy button or CTA. |
+| **Comparison table** | Feature matrix. Rows are the union of all features across tiers. Columns are the tiers. Each cell shows a check mark or a dash so visitors can scan across columns to compare plans. The highlighted tier column stays tinted. |
 
-#### Kundenstimmen-Varianten
+#### Testimonials variants
 
-| Variante | Effekt |
+| Variant | Effect |
 |---|---|
-| **Standard (Raster)** | Standard. Karten in einem 2- bis 3-spaltigen Raster. Jede Karte zeigt das Zitat, den Namen und die optionale Rolle. |
-| **Spotlight (Einzelzitat)** | Ein einzelnes großes Pull-Quote im Magazin-Stil, zentriert mit Serif-Typografie. Weitere Kundenstimmen erscheinen als kleine Namens-Chips unter dem Hauptzitat. |
-| **Laufband** | Eine horizontal scrollende Zeile mit Zitat-Karten. Hover pausiert die Animation; die Reduced-Motion-Einstellung des Betriebssystems stoppt sie komplett. Die Spur läuft nahtlos mit zwei Kopien des Elementsatzes durch. |
+| **Standard (grid)** | Default. Cards in a 2 to 3-column grid. Each card shows the quote, name, and optional role. |
+| **Spotlight (single quote)** | A single large pull-quote in magazine style, centered with serif typography. Extra testimonials appear as small attribution chips below the main quote. |
+| **Marquee** | A horizontally scrolling row of quote cards. Hover pauses the animation; the OS reduced-motion preference stops it entirely. The track loops seamlessly with two copies of the item set. |
 
 ### Spotlight
 
-Der Spotlight-Block ist eine Zeile mit abwechselndem Bild und Text. Jede Zeile zeigt ein Bild auf der einen Seite und Text auf der anderen: eine Eyebrow, einen Titel, einen Untertitel, Aufzählungspunkte mit Häkchen und einen optionalen Call-to-Action-Link. Im Layout-Panel legen Sie fest, auf welcher Seite das Bild erscheint.
+The spotlight block is an alternating media-and-text row. Each instance shows an image on one side and text on the other: eyebrow, title, subtitle, bullets with check marks, and an optional call-to-action link. You control which side the image sits on via the layout panel.
 
-Wichtige Hinweise:
+A few things to know:
 
-- **Bildseite**: Die Layout-Variante steht standardmäßig auf Bild-rechts. Stellen Sie im Layout-Panel auf Bild-links um, um die Zeile zu spiegeln.
-- **Optionale Elemente**: Eyebrow, Untertitel, Aufzählungspunkte, CTA und Bild sind alle optional. Ein Spotlight nur mit Titel und Bild wird trotzdem sauber dargestellt.
-- **Stapeln**: Setzen Sie mehrere Spotlight-Abschnitte untereinander, um das klassische Feature-Listen-Muster der MCD-Landingpage nachzubauen.
+- **Image side**: The layout variant defaults to image-right. Switch to image-left in the layout panel to flip the row.
+- **Optional pieces**: Eyebrow, subtitle, bullets, CTA, and image are all optional. A spotlight with only a title and image still renders cleanly.
+- **Stacking**: Add several spotlight sections in a row to build the classic feature-list pattern from the MCD landing page.
 
-### Preismodelle mit Kauf-Buttons
+### Pricing tiers with buy buttons
 
-Der Preise-Abschnitt zeigt Ihre Pakete oder Pläne. Jede Stufe kann optional einen Kauf-Button erhalten:
+The pricing section lets you list your plans or packages. Each tier can optionally include a buy button:
 
-- Markieren Sie eine Stufe als **purchasable** und geben Sie den **Betrag in Cent** an (z. B. 4999 für EUR 49,99).
-- Ein **Jetzt kaufen**-Button ersetzt den statischen CTA-Link. Besucher, die darauf klicken, werden über den MyCompanyDesk-Checkout zu Mollie oder Stripe Connect zur Zahlung weitergeleitet.
-- Das Kauf-Button-Label ist standardmäßig "Jetzt kaufen", kann aber pro Stufe mit dem **buyLabel**-Feld angepasst werden.
-- Preisstufen ohne Kauf-Button behalten das bestehende CTA-Link-Verhalten.
+- Set a tier as **purchasable** and provide the **amount in cents** (e.g. 4999 for EUR 49.99).
+- A **Buy now** button replaces the static CTA link. Visitors clicking it go through the MyCompanyDesk checkout, which redirects to Mollie or Stripe Connect for payment.
+- The buy-button label defaults to "Koop nu" but can be customised per tier with the **buyLabel** field.
+- Pricing tiers without buy buttons keep the existing CTA link behaviour.
 
-Preisabschnitte können auch als Vergleichsmatrix dargestellt werden. Setzen Sie die Layoutvariante im Inspektionspanel auf **Vergleichstabelle**. Die Matrix zeigt jede Stufe als Spalte und alle Funktionen aller Stufen als Zeilen, mit Häkchen dort, wo eine Stufe die Funktion enthält. So sehen Sie auf einen Blick, wie die Tarife zueinander stehen. Siehe [Abschnitts-Layoutvarianten](#abschnitts-layoutvarianten) für alle Optionen.
+Pricing sections can also render as a feature comparison matrix. Switch the layout variant to **Comparison table** in the inspector. The matrix shows each tier as a column and every feature from all tiers as a row, with check marks where a tier includes the feature. This makes plan-to-plan comparison easy at a glance. See [Section layout variants](#section-layout-variants) for the full options.
 
-### Produktblock
+### Product block
 
-Eine eigenständige Einzelprodukt-Kaufkarte, ideal wenn eine vollständige Preistabelle zu viel wäre:
+A standalone single-item buy card, for when a full pricing table is more than you need:
 
-- Ein Produktname, Beschreibung, optionales Bild, Preis und ein Kauf-Button.
-- Dieselbe Checkout-Anbindung wie die Preisstufen-Kauf-Buttons, Ihr Besucher zahlt über Mollie oder Stripe Connect.
-- Eine optionale Hinweiszeile unter dem Button für Versandinformationen, Hinweise oder AGB-Verweise.
+- One product name, description, optional image, price, and a buy button.
+- Same checkout plumbing as the pricing buy buttons, your visitor pays through Mollie or Stripe Connect.
+- An optional note line under the button for delivery info, disclaimers, or shipping notes.
 
-Siehe [Verkäufe](/de/features/domains-website-inbox#verkaufe) für die Nachverfolgung von Zahlungen und Bestellungen.
+See [Sales](/features/domains-website-inbox#sales) for tracking payments and orders.
 
-### Katalogabschnitte
+### Catalog sections
 
-Einige Bespoke-Vorlagen enthalten einen Live-Katalogabschnitt, der Artikel direkt aus Ihrem Aanbod-Katalog lädt. Wenn die aktuelle Seite strukturell über Dienstleistungen, Produkte oder Abonnements wiederholt, zeigt der Inhalts-Editor für jede verwendete Art ein **Katalog**-Panel an.
+Some bespoke templates include a live catalog section that pulls items straight from your Aanbod catalog. If the current page structurally repeats over services, products, or subscriptions, the content editor shows a **Catalog** panel for each kind that is actually used on that page.
 
-Das Panel liegt außerhalb des Vorlagenrahmens, sodass es die Gestaltung der Vorlage selbst nie stört. Hier steuern Sie nur die Präsentation des Katalogs auf dieser Website:
+The panel lives outside the template frame, so it never interferes with the template's own styling. From here you control only the presentation of the catalog on this site:
 
-- **Überschrift und Einleitung**: legen Sie den Abschnittstitel und eine kurze Einleitung fest.
-- **Reihenfolge**: ziehen Sie Artikel in die gewünschte Reihenfolge, oder nutzen Sie die Aufwärts- und Abwärts-Buttons. Die natürliche Reihenfolge aus Aanbod gilt für alles, was Sie nicht explizit neu sortieren.
-- **Anzeigen oder ausblenden**: klicken Sie auf das Augen-Symbol, um einen Artikel in Aanbod zu behalten, aber auf dieser Website auszublenden.
+- **Heading and intro**: set the section title and a short introduction.
+- **Order**: drag items into the order you want, or use the up and down buttons. The natural Aanbod order is used for anything you do not explicitly reorder.
+- **Show or hide**: toggle the eye icon to keep an item in Aanbod but hide it on this website.
 
-Die Artikelinhalte selbst, Titel, Preis, Beschreibung und Bild, sind im Editor schreibgeschützt. Sie stammen aus dem Live-Aanbod und müssen dort bearbeitet werden. Der Preis folgt der im Aanbod hinterlegten Preismodus: ein fester Betrag, "ab" einem Betrag oder "Auf Anfrage", wenn kein Preis hinterlegt ist.
+The item content itself, title, price, description, and image, is read-only in the editor. It is pulled from the live Aanbod catalog and must be edited there. The price follows the price mode set in Aanbod: a fixed amount, "from" an amount, or "On request" when no price is set.
 
-Falls es für diese Katalogart noch keine passenden Artikel gibt, zeigt das Panel einen Leerzustand mit einem Link, um in Aanbod einen Artikel hinzuzufügen.
+If the catalog kind has no eligible items yet, the panel shows an empty state with a link to add an item in Aanbod.
 
-## Abschnitts-Animationen
+## Section animations
 
-Jeder Abschnittsblock hat ein **Animation**-Panel im Inspector. Damit fügen Sie Bewegung hinzu, die beim Erscheinen im Viewport, beim Seitenaufruf oder bei Hover abgespielt wird.
+Every section block has an **Animation** panel in the inspector. It lets you add motion that plays when the section enters the viewport, on page load, or on hover.
 
-### Animationstypen
+### Animation types
 
-| Typ | Effekt |
+| Type | Effect |
 |---|---|
-| **Fade up** | Der Abschnitt blendet ein und gleitet 1rem nach oben. |
-| **Fade in** | Der Abschnitt blendet aus Transparenz ein. |
-| **Slide right** | Der Abschnitt blendet ein und gleitet 2rem nach rechts. |
-| **Reveal** | Der Abschnitt wird von rechts nach links durch eine Clip-Maske enthüllt. |
-| **Stagger** | Kindelemente erscheinen nacheinander in 80ms-Schritten, anstatt dass der Abschnitt selbst sich bewegt. |
+| **Fade up** | Section fades in while sliding up from 1rem below. |
+| **Fade in** | Section fades in from transparent. |
+| **Slide right** | Section fades in while sliding left by 2rem. |
+| **Reveal** | Section reveals from right to left using a clip mask. |
+| **Stagger** | Children fade up one after another in 80ms steps instead of the section itself moving. |
 
-### Auslöser
+### Triggers
 
-Wie die Animation startet:
+How the animation starts:
 
-- **In-view** (Standard): Die Animation wird ausgelöst, wenn der Abschnitt in den Viewport scrollt. Nutzt die IntersectionObserver des Browsers. Einmal animiert bleibt der Abschnitt sichtbar.
-- **Load**: Die Animation startet sofort beim Laden der Seite.
-- **Hover**: Die Animation startet bei mouseenter und kehrt bei mouseleave zurück.
+- **In-view** (default): Animation fires when the section scrolls into the viewport. Uses the browser's IntersectionObserver. Once a section has animated in it stays visible.
+- **Load**: Animation fires immediately when the page mounts.
+- **Hover**: Animation fires on mouseenter and reverses on mouseleave.
 
-### Einstellungen
+### Controls
 
-- **Duration**: Dauer der Animation in Millisekunden, Standard: 700ms.
-- **Delay**: Wartezeit vor Animationsstart in Millisekunden, Standard: 0ms.
-- **Easing**: Die Beschleunigungskurve. Auswahl: **ease-out** (Standard), **linear** und **spring**.
-- **Stagger children**: Wenn aktiviert, bleibt der Abschnitt selbst in Ruhe und seine direkten Kindelemente animieren nacheinander. Diese Option funktioniert zusätzlich zu jedem Animationstyp (fade-up + stagger children, fade-in + stagger children, etc.). Die Abschnittsanimation wird unterdrückt, sodass nur die Kinder die Bewegung tragen.
+- **Duration**: How long the animation takes, in milliseconds. Default is 700ms.
+- **Delay**: Wait time before the animation starts, in milliseconds. Default is 0ms.
+- **Easing**: The acceleration curve. Options are **ease-out** (default), **linear**, and **spring**.
+- **Stagger children**: When enabled, the section stays at its resting state and its direct children animate in sequentially. This modifier works on top of any animation type (fade-up + stagger children, fade-in + stagger children, etc.). The section root animation is suppressed so the children carry the motion alone.
 
-### Bewegungsreduktion
+### Motion reduction
 
-Besucher, die `prefers-reduced-motion: reduce` auf Betriebssystemebene aktiviert haben, sehen jeden Abschnitt sofort im Endzustand. Es werden keine Animationen abgespielt. Auf Workspace-Ebene können Motion-Tokens die Bewegung auch pro Site deaktivieren. Wenn Bewegungsreduktion aktiv ist, erhält der Abschnitt nie die versteckte Startklasse, sodass das vom Server gerenderte HTML bereits vor der JavaScript-Ausführung zugänglich ist.
+Visitors who have `prefers-reduced-motion: reduce` enabled at the OS level see every section in its final resting state immediately. No animations play. Workspace-level motion tokens can also force reduced motion on a per-site basis. When reduced motion is active the section never receives the hidden start-state class, so the server-rendered HTML is accessible before any JavaScript runs.
 
-## Abschnittstrenner
+## Section dividers
 
-Jeder Abschnittsblock hat eine **Unterkante-Trenner**-Einstellung im Stil-Panel des Inspectors. Sie fügt eine SVG-Form an der Unterkante des Abschnitts hinzu, die in den nächsten Abschnitt überläuft und einen organischen visuellen Übergang statt eines harten Schnitts erzeugt. Der Trenner verwendet die Hintergrundfarbe des aktuellen Abschnitts und funktioniert daher am besten zwischen benachbarten Abschnitten mit unterschiedlichen einfarbigen Hintergründen.
+Each section block has a **Bottom divider** setting in the inspector's style panel. It adds an SVG shape at the section's bottom edge that overflows into the next section, creating an organic visual transition instead of a hard horizontal cut. The divider draws the current section's background color, so it works best between adjacent sections that have different solid backgrounds.
 
-### Trennertypen
+### Divider types
 
-| Typ | Effekt |
+| Type | Effect |
 |---|---|
-| **Welle** | Eine sanfte S-Kurve entlang der Unterkante. |
-| **Bogen** | Eine konkave Wölbung: Der nächste Abschnitt ragt in der Mitte nach oben. |
-| **Schräge** | Eine von links nach rechts ansteigende Diagonale. |
-| **Keine** | Kein Trenner. Abschnitte treffen an einer geraden horizontalen Kante aufeinander (Standard). |
+| **Wave** | A smooth S-curve along the bottom edge. |
+| **Curve** | A concave bowl: the next section intrudes upward in the middle. |
+| **Slant** | A right-rising diagonal cut from left to right. |
+| **None** | No divider. Sections meet at a flat horizontal edge (default). |
 
-### Funktionsweise
+### How it works
 
-- Der SVG-Trenner befindet sich vollständig unterhalb des Abschnitts im Raum des nächsten Abschnitts. Er überlappt den Inhalt des aktuellen Abschnitts nicht.
-- Der gefüllte Teil des Pfads zeichnet den Hintergrund des aktuellen Abschnitts nach unten. Der transparente Bereich unter der Form lässt den nächsten Abschnitt durchscheinen.
-- Der Trenner folgt automatisch der Hintergrundfarbe des Abschnitts, einschließlich benutzerdefinierter Hex-Werte und CSS-Variablen-Tokens.
-- Trenner sind dekorativ (`aria-hidden="true"`) und beeinträchtigen weder die Tastatur- noch die Screenreader-Navigation.
+- The divider SVG sits entirely below the section, in the next section's space. It does not overlap the current section's content.
+- The filled portion of the path draws the current section's background extending downward. The transparent area below the shape lets the next section show through.
+- The divider preserves the section's background color automatically, including custom hex values and CSS variable tokens.
+- Dividers are decorative (`aria-hidden="true"`) and do not affect keyboard or screen-reader navigation.
 
-## Ihre Site gestalten
+## Styling your site
 
-Im **Stil**-Tab steuern Sie das Erscheinungsbild Ihrer gesamten Site:
+In the **Style** tab, you control the look and feel of your entire site:
 
-- **Presets**: Ein-Klick-Startpunkte, die Farben, Schriften und Abstände auf einmal setzen. Acht Presets sind verfügbar: **Editorial** (Navy und Gold, Serif-Überschriften), **Studio** (warmes Cremeweiß mit Terrakotta), **Tech** (klares Slate mit Elektroblau), **Atelier** (Knochenweiß mit Tiefgrün), **Bold** (kontrastreiches Schwarz mit kräftigem Akzent), **Calm** (Salbeigrün und sanftes Weiß), **Mono** (architektonischer Minimalismus, keine Akzentfarbe) und **Vivid** (Kobalt und Koralle auf kühlem Weiß). Beim Anwenden eines Presets werden die Tokens mit Ihrem Workspace zusammengeführt, wobei Logo, benutzerdefiniertes CSS und Head-Snippets erhalten bleiben.
-- **Farben**: Wählen Sie Marken-, Akzent-, Papier-, Tinten-, Oberflächen- und gedämpfte Farben. Die Palette wird über CSS Custom Properties angewendet.
-- **Dunkelmodus**: Legen Sie fest, wie Ihre Site mit dunkler Darstellung umgeht. Drei Optionen: **Aus** (kein Dunkelmodus, die Site bleibt im hellen Farbschema), **Schaltfläche** (Besucher sehen einen Sonne/Mond-Umschalter in der Navigationsleiste und können das Thema wechseln, ihre Wahl wird lokal gespeichert), oder **System folgen** (die Site übernimmt automatisch die Betriebssystem-Einstellung des Besuchers über einen Live-Media-Query-Listener). Wenn der Dunkelmodus aktiviert ist, erscheint eine dunkle Farbpalette, in der Sie für jede Farbe eine nachtoptimierte Variante festlegen können. Lassen Sie die dunkle Palette leer, wendet die Site eine automatische Invertierung an, bei der Ihre Marken- und Akzentfarben erhalten bleiben.
-- **Typografie**: Wählen Sie Überschrift-, Text- und Mono-Schriften aus der integrierten Schriftbibliothek (Geist, Inter, DM Sans, DM Serif Display, Fraunces, Instrument Serif, Geist Mono).
-- **Skalierung**: Legen Sie Eckenradius, Dichte (kompakt, luftig, großzügig), maximale Inhaltsbreite und vertikalen Abschnittsabstand fest.
-- **Bewegung**: Aktivieren Sie reduzierte Bewegung oder wählen Sie einen Bewegungsstil (Aus, Dezente Überblendung, Hereingleiten).
-- **Schaltflächen**: Passen Sie Schaltflächenradius, Innenabstand und Hover-Effekte an.
-- **Navigationsleiste**: Legen Sie das Layout (Standard, zentriert, geteilt), den Hintergrundstil (durchgehend, transparent mit Blur, vollständig transparent) und das Aussehen der CTA-Schaltfläche (ausgefüllt, Umrandung, nur Text) fest. Die Navigationsleisteneinstellungen gelten für jede Seite.
-- **Telefon & Anrufleiste**: Fügen Sie eine anklickbare Telefonnummer zu Ihrer Navigationsleiste hinzu. Die Nummer erscheint neben der CTA-Schaltfläche auf dem Desktop und in der mobilen Navigationsleiste. Aktivieren Sie den **Mobile Anrufleiste**-Schalter, um eine feste Schaltfläche "Zum Anrufen tippen" am unteren Bildschirmrand auf mobilen Geräten anzuzeigen, damit Besucher Sie mit einem Fingertipp erreichen können, egal wo sie sich auf der Seite befinden. Das Telefonlabel lautet standardmäßig "Jetzt anrufen", wenn es leer gelassen wird.
-- **Benutzerdefiniertes CSS**: Schreiben Sie Ihr eigenes CSS, das in die Site eingebunden wird. Nützlich für Feinanpassungen oder zum Überschreiben von Standardwerten.
-- **Favicon**: Laden Sie ein Favicon für Ihre Site hoch. Es erscheint in Browser-Tabs und Lesezeichen. Wenn Sie kein Favicon festlegen, verwendet die Site Ihr helles Logo, dann Ihr Geschäftsprofilbild.
-- **Head-Snippets**: Fügen Sie Analytics-Skripte (Plausible, Umami, Matomo) oder Schrift-Preconnects über die Snippet-Auswahl hinzu.
+- **Presets**: One-click starting points that set colors, fonts, and spacing in one go. Eight presets are available: **Editorial** (navy and gold, serif headlines), **Studio** (warm cream with terracotta), **Tech** (sharp slate with electric blue), **Atelier** (bone-white with deep green), **Bold** (high-contrast black with a bright accent), **Calm** (sage green and soft white), **Mono** (architectural minimalism, no accent color), and **Vivid** (cobalt and coral on cool white). Applying a preset merges the tokens into your workspace, preserving your logo, custom CSS, and head snippets.
+- **Colors**: Pick brand, accent, paper, ink, surface, and muted colors. The palette is applied through CSS custom properties.
+- **Dark mode**: Choose how your site handles dark mode. Three options: **Off** (no dark mode, site stays in its light palette), **Button** (visitors see a sun/moon toggle in the navigation bar and can switch themes, with their choice saved locally), or **System** (the site follows the visitor's OS-level preference automatically via a live media-query listener). When dark mode is on, a paired dark palette appears where you can set night-optimized versions of each color. If you leave the dark palette empty, the site applies a sensible default inversion that keeps your brand and accent colors intact.
+- **Typography**: Choose heading, body, and mono fonts from the built-in font library (Geist, Inter, DM Sans, DM Serif Display, Fraunces, Instrument Serif, Geist Mono).
+- **Scale**: Set border radius, content density (compact, airy, generous), maximum content width, and vertical section spacing.
+- **Motion**: Enable reduced motion or choose a motion style (Off, Subtle fade, Slide up).
+- **Buttons**: Customize button border radius, padding, and hover effects.
+- **Navbar**: Set the layout (standard, centered, split), background style (solid, translucent blur, transparent), and CTA button appearance (filled, outline, text-only). The navbar settings apply to every page.
+- **Phone & call bar**: Add a clickable phone number to your navigation bar. When set, the phone number appears beside the CTA button on desktop and in the mobile navigation drawer. Enable the **Mobile call bar** toggle to pin a fixed "tap to call" button at the bottom of the screen on mobile devices, so visitors can reach you with one tap regardless of where they are on the page. The phone label defaults to "Call us" when left empty.
+- **Custom CSS**: Write your own CSS that gets injected into the site. Useful for fine-tuning or overriding defaults.
+- **Favicon**: Upload a favicon for your site. It is shown in browser tabs and bookmarks. If not set, the site falls back to your light logo, then your business profile picture.
+- **Head snippets**: Add analytics scripts (Plausible, Umami, Matomo) or font preconnects via the snippet picker.
 
-Änderungen im Stil-Tab werden automatisch gespeichert und gelten für alle Seiten.
+Changes in the Style tab are saved automatically on edit and apply to all pages.
 
-## Veröffentlichen
+## Publishing
 
-Die obere Leiste zeigt an, wie viele unveröffentlichte Änderungen vorhanden sind. Bei der Veröffentlichung werden nur Seiten mit dem Status Live in den Snapshot aufgenommen. Seiten im Entwurf bleiben auf der öffentlichen Site unsichtbar, auch nach der Veröffentlichung.
+The top bar shows how many unpublished changes exist. Publishing snapshots only the pages marked as Live. Pages in Concept stay hidden from the public site, even after you publish.
 
-Wenn Sie bereit sind:
+When you are ready:
 
-1. Klicken Sie in der oberen Leiste auf **Veröffentlichen**.
-2. Ihre Site wird unter der öffentlichen URL veröffentlicht (Ihre eigene Domain, Workspace-Subdomain oder die Fallback-Portalroute).
+1. Click **Publish** in the top bar.
+2. Your site is published to the public URL (your custom domain, workspace subdomain, or the fallback portal route).
 
-Unveröffentlichte Änderungen werden pro Seite und pro Token erfasst. Die Veröffentlichen-Schaltfläche ist deaktiviert, wenn nichts zu veröffentlichen ist. Das Umschalten einer Seite zwischen Live und Entwurf wird sofort gespeichert und zählt als unveröffentlichte Änderung, sodass die Veröffentlichen-Schaltfläche beim Umschalten aufleuchtet.
+Unpublished changes are tracked per page and per token. The publish button is disabled when there is nothing to publish. Toggling a page between Live and Concept is an immediate save that registers as an unpublished change, so the Publish button lights up the moment you toggle.
 
 ## Navigation
 
-Der Navigations-Editor ermöglicht es Ihnen, die Header-Links Ihrer Site zu ordnen und das Erscheinungsbild der Navigationsleiste auf Ihrer gesamten Site zu steuern:
+The navigation editor lets you arrange your site's header links and control how the navigation bar looks across your entire site:
 
-- Ziehen Sie Seiten, um die Navigation neu anzuordnen.
-- Erstellen Sie Dropdown-Gruppen, um Seiten unter einem übergeordneten Label zu verschachteln.
-- Fügen Sie externe Links hinzu, die aus Ihrer Site herausführen.
-- Das Logo im Header ist anklickbar und führt immer zurück zur Startseite.
-- Die Startseite steht immer an erster Stelle und ist gesperrt.
+- Drag pages to reorder the top-level navigation.
+- Create dropdown groups to nest pages under a parent label.
+- Add external links that point outside your site.
+- The logo in the header is clickable and always links back to the home page.
+- The home page is always first and locked in position.
 
-Über dem Hauptmenü bietet ein **Navbar**-Panel direkten Zugriff auf die Header-Styling-Einstellungen, die zuvor nur im Stil-Tab verfügbar waren. Sie können Folgendes einstellen:
+Above the main navigation menu, a **Navbar** panel gives you direct access to the header styling settings that were previously only available in the Style tab. You can set:
 
-- **Markenname**: Text, der im Header angezeigt wird, wenn kein Logo-Bild hochgeladen ist (leer lassen, um das Logo aus dem Branding zu verwenden).
-- **CTA-Button**: Die Beschriftung und der Ziellink für den Call-to-Action-Button oben rechts. Beide Felder müssen ausgefüllt sein, damit der Button erscheint.
-- **Telefonnummer**: Ein klickbarer `tel:`-Link, der neben dem CTA-Button auf dem Desktop und in der mobilen Navigationsschublade erscheint. Leer lassen, um die Anruftaste auszublenden.
-- **Anruf-Label**: Der Text neben dem Telefonsymbol auf mobilen Geräten (standardmäßig "Jetzt anrufen", wenn leer gelassen).
-- **Mobile Anruf-Leiste**: Wenn aktiviert, bleibt eine feste Anruftaste unten auf dem Bildschirm auf mobilen Geräten.
-- **Sticky-Navbar**: Wenn aktiviert (standardmäßig an), bleibt die Navigationsleiste beim Scrollen sichtbar.
+- **Brand name**: Text shown in the header when no logo image is uploaded (leave empty to use the logo from Branding).
+- **CTA button**: The label and destination link for the call-to-action button in the top-right corner. Both fields must be filled for the button to appear.
+- **Phone number**: A clickable `tel:` link that appears next to the CTA button on desktop and in the mobile navigation drawer. Leaving it empty hides the call button.
+- **Phone label**: The text shown next to the phone icon on mobile (defaults to the locale-native equivalent of "Call us" when left empty).
+- **Mobile call bar**: When enabled, a fixed "tap to call" button stays pinned at the bottom of the screen on mobile devices.
+- **Sticky navbar**: When enabled (default on), the navigation bar stays visible as the visitor scrolls down the page.
 
-Diese Einstellungen gelten für jede Seite Ihrer Site, genau wie im Stil-Tab. Änderungen werden automatisch mit einer kurzen Verzögerung nach dem Ende der Eingabe gespeichert. Für das visuelle Layout, den Hintergrundstil und die Button-Darstellung siehe den [Stil-Tab](#styling-ihrer-site).
+These settings apply to every page on your site, the same way they do in the Style tab. Changes save automatically with a short debounce after you stop typing. For the visual layout, background style, and button appearance controls, see the [Style tab](#styling-your-site).
 
-## Firmendaten-Tokens
+## Company merge tokens
 
-Textfelder im Website-Builder können Merge-Tokens enthalten, die Live-Firmendaten aus Ihren Workspace-Einstellungen beziehen. Beim Rendern der veröffentlichten Site wird jedes Token durch den aktuellen Wert aus **Unternehmensdaten** (`/settings/bedrijfsgegevens`) ersetzt. So pflegen Sie Firmenname, Adresse und Kontaktdaten an einer zentralen Stelle.
+Text fields in the site builder can contain merge tokens that pull live company data from your workspace settings. When the published site renders, each token is replaced with the current value from **Company Settings > Business details** (`/settings/bedrijfsgegevens`). This means you can type your company name, address, or contact details once and keep every page in sync automatically.
 
-Verfügbare Tokens:
+Available tokens:
 
 ::: v-pre
-| Token | Zeigt |
+| Token | Shows |
 |---|---|
-| `{{bedrijf.naam}}` | Firmenname |
-| `{{bedrijf.adres}}` | Vollständige Adresse, zusammengesetzt aus Straße, Postleitzahl und Ort |
-| `{{bedrijf.kvk}}` | Handelsregisternummer (KvK) |
-| `{{bedrijf.btw}}` | USt-IdNr. |
-| `{{bedrijf.email}}` | Öffentliche E-Mail-Adresse |
+| `{{bedrijf.naam}}` | Business name |
+| `{{bedrijf.adres}}` | Full address, joined from street, postal code, and city |
+| `{{bedrijf.kvk}}` | Chamber of Commerce (KvK) number |
+| `{{bedrijf.btw}}` | VAT number |
+| `{{bedrijf.email}}` | Public email address |
 :::
 
-So verwenden Sie sie:
+How to use them:
 
-- Klicken Sie in ein beliebiges Textfeld auf den Chip mit dem gewünschten Wert. Das Token wird an der Cursorposition eingefügt.
-- Sie können ein Token auch manuell eingeben. Nur die fünf oben genannten Tokens werden unterstützt.
-- Ist ein Wert in Ihren Unternehmensdaten leer, zeigt die veröffentlichte Site einen Hinweis in eckigen Klammern, zum Beispiel `[Firmenname]`, damit Sie erkennen, was noch fehlt.
-- Tokens werden nach dem Veröffentlichungs-Snapshot aufgelöst, sodass spätere Änderungen an Ihren Unternehmensdaten direkt auf der Live-Site erscheinen, ohne erneut zu veröffentlichen.
-- Rechtliche Seiten, die von der Plattform erzeugt werden, verwenden diese Tokens automatisch. Das Bearbeiten des umgebenden Texts bricht die Verknüpfung nicht.
+- In any text area field, click the chip that matches the value you want. The token is inserted at the cursor.
+- You can also type a token by hand. Only the five keys above are supported.
+- If a value is empty in your company settings, the token renders as a bracketed hint on the public site, for example `[bedrijfsnaam]`, so you can spot what is still missing.
+- Tokens are resolved after the publish snapshot, so later edits to your company details show on the live site without a new publish.
+- Legal pages seeded by the platform use these tokens automatically. Editing the surrounding text does not break the binding.
 
-Quelle: `packages/shared/src/site-blocks/company-tokens.ts#COMPANY_TOKENS`.
+Source: `packages/shared/src/site-blocks/company-tokens.ts#COMPANY_TOKENS`.
 
-## Öffentliche URL
+## Public URL
 
-Ihre Website wird unter der am besten geeigneten URL bereitgestellt:
+Your website is served at the highest-priority URL available:
 
-1. Ihre eigene Domain (z. B. `https://acme.de`), wenn verifiziert und aktiviert
-2. Ihre Workspace-Subdomain (z. B. `https://acme.mycompanydesk.com`)
-3. Die Fallback-Portalroute (`/portal/{slug}`)
+1. Your custom domain (e.g. `https://acme.nl`) when verified and enabled
+2. Your workspace subdomain (e.g. `https://acme.mycompanydesk.com`)
+3. The fallback portal route (`/portal/{slug}`)
 
-Siehe [Domains, Website und Posteingang](/de/features/domains-website-inbox) für Domain-Einrichtung und -Verifizierung.
+See [Domains, Website and Inbox](/features/domains-website-inbox) for domain setup and verification.
 
-## Kontaktformular
+## Contact form
 
-Der Kontaktformular-Block (`form` Abschnittstyp) verfügt über einen aktiven Submit-Handler. Wenn ein Besucher die von Ihnen konfigurierten Felder ausfüllt (Name, E-Mail, Telefon, Unternehmen, Nachricht) und auf Senden klickt, erstellt die Plattform eine Angebotsanfrage und benachrichtigt Ihren Workspace. Das Formular zeigt nach Abschluss ein Erfolgsbanner und bei Fehlern eine Inline-Fehlermeldung an. Alle Eingabefelder werden während des Sendens deaktiviert, um Doppelabsendungen zu vermeiden.
+The contact form block (`form` section type) is a live submit handler. When a visitor fills in the fields you configured (name, email, phone, company, message) and hits send, the platform creates a quote request and notifies your workspace. The form shows a success banner on completion and an inline error if something goes wrong. All inputs are disabled during submit to prevent double sends.
 
-Was beim Absenden passiert:
+What happens on submit:
 
-1. Es werden nur die Felder gesendet, die der Block tatsächlich rendert. Wird das Namensfeld ausgeblendet, bricht das Backend nicht ab.
-2. Die Plattform erstellt eine Angebotsanfrage unter dem Unternehmen, das mit dem Site-Slug verknüpft ist.
-3. Sie erhalten eine Workspace-Benachrichtigung (derselbe Pfad wie die alte `/portal/quote-request` Route).
-4. Die Anfrage erscheint unter **Angebote > Anfragen**.
-5. Der Besucher sieht eine anpassbare Erfolgsmeldung.
+1. Only the fields the block actually renders are sent, so hiding the name input does not break the backend.
+2. The platform creates a quote request under the company tied to the site slug.
+3. You receive a workspace notification (same path as the legacy `/portal/quote-request` route).
+4. The request appears in **Quotes > Requests**.
+5. The visitor sees a customizable success message.
 
-Kontaktformular-Einreichungen sind auf 5 pro Minute pro IP-Adresse begrenzt. Ein Cloudflare-Turnstile-Widget erscheint vor dem Absenden, wenn es in Ihrem Workspace konfiguriert ist, und blockiert automatisierte Bot-Einreichungen, ohne echte Besucher zu verlangsamen.
+Contact-form submissions are rate-limited to 5 per minute per IP address. A Cloudflare Turnstile widget also appears before submit when configured on your workspace, blocking automated bot submissions without slowing real visitors down.
 
-## Newsletter-Anmeldung
+## Newsletter signup
 
-Der Newsletter-Block (`newsletter` Abschnittstyp) erfasst E-Mail-Anmeldungen von Ihrer veröffentlichten Website. Das Backend verwendet einen Double-Opt-in-Ablauf: Nach dem Absenden erhält der Besucher eine Bestätigungs-E-Mail und muss auf den Link klicken, um das Abonnement zu aktivieren. Unterdrückte Adressen und bereits aktive Abonnenten werden aus Sicht des Formulars genauso behandelt wie neue Anmeldungen (keine Datenlecks).
+The newsletter block (`newsletter` section type) captures email signups from your published site. The backend uses a double opt-in flow: after submit, the visitor receives a confirmation email and must click the link to activate their subscription. Suppressed addresses and already-active subscribers are treated the same as new signups from the form's perspective (no data leakage).
 
-Was beim Absenden passiert:
+What happens on submit:
 
-1. Die Plattform speichert das Abonnement mit `source: "site_form"`.
-2. Wenn die Adresse nicht bereits aktiv und nicht unterdrückt ist, wird eine Double-Opt-in-E-Mail versendet.
-3. Der Besucher sieht in jedem Fall ein Erfolgsbanner, sodass der Abonnementstatus privat bleibt.
-4. Nach der Bestätigung erscheint der Abonnent in der Newsletter-Zielgruppe dieses Workspaces.
+1. The platform stores the subscription with `source: "site_form"`.
+2. If the address is not already active and not suppressed, a double opt-in email is sent.
+3. The visitor sees a success banner regardless, keeping the subscription state private.
+4. Once confirmed, the subscriber appears in the newsletter audience for that workspace.
 
-Newsletter-Einreichungen teilen dasselbe Rate-Limit wie das Kontaktformular: 5 pro Minute pro IP-Adresse. Der Turnstile-Bot-Schutz ist auch bei Newsletter-Formularen aktiv, wenn konfiguriert.
+Newsletter submissions share the same rate limit as the contact form: 5 per minute per IP address. The Turnstile bot-protection widget is also active on newsletter forms when configured.
 
-## Rechtliche Seiten
+## Legal pages
 
-Der Website-Builder erstellt für jeden neuen Arbeitsbereich zwei Standard-Rechtsseiten: **Datenschutzerklärung** (`/privacy`) und **Allgemeine Geschäftsbedingungen** (`/algemene-voorwaarden`). Der Inhalt verwendet Platzhalter für Unternehmensdaten. Wenn die Seite für Besucher gerendert wird, werden diese Platzhalter durch die Werte aus deinen **Unternehmenseinstellungen** ersetzt — Unternehmensname, Adresse, Postleitzahl, Stadt, Land, Registrierungsnummer, USt.-ID und öffentliche E-Mail.
+The site builder seeds every new workspace with two standard legal pages: **Privacy Policy** (`/privacy`) and **Terms & Conditions** (`/algemene-voorwaarden`). The content uses placeholder markers for company details. When the page is rendered for visitors, these markers are replaced with the values from your **Company Settings** — business name, address, postal code, city, country, registration number, VAT number, and public email.
 
-Du kannst die rechtlichen Seiten wie jede andere Seite im Editor bearbeiten. Der Editor behält die Platzhalter-Anker im Inhalt, sodass auch das bloße Öffnen und Speichern einer Seite dafür sorgt, dass zukünftige Änderungen an deinen Unternehmensdaten automatisch übernommen werden.
+You can edit the legal pages in the editor like any other page. The editor preserves the placeholder anchors inside the content, so opening and saving a page without changing it still lets future updates to your company details flow through automatically.
 
-Die rechtlichen Seiten werden zum Zeitpunkt der Veröffentlichung gerendert, wie der Rest deiner Site. Sie teilen sich den gleichen Live/Entwurf-Status und die gleiche Sichtbarkeitsregel auf Grundlage des Abonnements.
+The legal pages are rendered at publish time, just like the rest of your site. They share the same Live/Concept status and the same subscription visibility gate.
 
-## Anfragen verwalten
+## Managing requests
 
-Siehe [Angebote - Angebotsanfragen](/de/features/quotes#angebotsanfragen) für Details zur Verwaltung eingehender Anfragen.
+See [Quotes - Quote Requests](/features/quotes#quote-requests) for details on managing incoming requests.
 
-## Abonnement-Voraussetzung
+## Subscription requirement
 
-Die öffentliche Website (Unternehmensseite und Website-Builder) ist in jedem Tarif verfügbar und bleibt online. Das MyCompanyDesk-Badge ist adressbasiert: es erscheint auf der Workspace-Subdomain und entfällt auf einer eigenen Domain (Pro).
+The public website (business page and site builder) is available on every plan and stays online. MyCompanyDesk branding is address-based: the badge appears when the site is served on a workspace subdomain, and it is removed when the site is served on a custom domain (Pro).
 
-- **Gratis**: die Website ist auf der Workspace-Subdomain-Adresse mit einem kleinen MyCompanyDesk-Badge sichtbar.
-- **Starter und Pro**: die Website ist immer sichtbar; kein Badge auf einer eigenen Domain, Badge auf der Workspace-Subdomain.
-- **Ungewisser Zustand**: Wenn das System nicht feststellen kann, welchen Tarif Sie haben, bleibt die Website online, um ein versehentliches Abschalten zu vermeiden.
+- **Free**: the site is visible on the workspace subdomain with a small MyCompanyDesk badge.
+- **Starter and Pro**: the site is always visible; no badge on a custom domain, badge on the workspace subdomain.
+- **Uncertain state**: if the system cannot determine your plan, the site stays up rather than risking an accidental takedown.
 
-Diese Sperre gilt für alle öffentlichen Pfade: die Unternehmensseite, die Service-Detail-Route und die Seiten des Website-Builders. Die Prüfung erfolgt bei jeder Anfrage, vor jeder Caching-Schicht, damit sie auch dann korrekt ist, wenn sich Ihr Abonnement während einer Cache-Periode ändert.
+This gate applies to all public serving paths: the business page, the service-detail route, and the site builder's rendered pages. It is checked on every request, before any caching layer, so it stays accurate even if your subscription changes mid-cache.
 
-Quelle: `apps/api/src/modules/billing/entitlement.service.js` — `computePublicPageGate`, `getPublicPageVisibility`; `renderer.service.js` legt die Badge-Regel auf Basis der Adresse fest.
+Source: `apps/api/src/modules/billing/entitlement.service.js` — `computePublicPageGate`, `getPublicPageVisibility`, `renderer.service.js` for the address-based badge rule.
 
-## Verwandt
+## Related
 
-- [Domains, Website und Posteingang](/de/features/domains-website-inbox): Eigene Domain einrichten, Verifizierung, SSL und E-Mail-Posteingang.
-- [Unternehmenseinstellungen](/de/settings/company): Wo Ihre Unternehmensdaten, Ihr Branding und Ihre Adresse hinterlegt sind.
-- [Angebote](/de/features/quotes): Verwalten von Angebotsanfragen, die über Ihre Website eingehen.
-- [Abrechnung & Tarife](/de/settings/billing): Tarifmodelle und Feature-Flags.
+- [Domains, Website and Inbox](/features/domains-website-inbox): Custom domain setup, verification, SSL, and email inbox.
+- [Company Settings](/settings/company): Where your company details, branding, and address live.
+- [Quotes](/features/quotes): Managing quote requests that come in through your website.
+- [Plan & payments](/settings/billing): Subscription plans and feature flags.
