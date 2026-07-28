@@ -35,8 +35,8 @@ Das Objektmodul ist für Unternehmen konzipiert, die physische Vermögenswerte v
 
 1. Gehen Sie zu **Objekte > Neues Objekt**
 2. Füllen Sie aus:
-   - **Name** — Eine eindeutige Bezeichnung (z. B. „Wohnung 3B" oder „Bagger CAT 320")
-   - **Typ** — Immobilie, Fahrzeug, Maschine oder Sonstiges
+   - **Name** - Eine eindeutige Bezeichnung (z. B. „Wohnung 3B" oder „Bagger CAT 320")
+   - **Typ** - Immobilie, Fahrzeug, Maschine oder Sonstiges
 3. Klicken Sie auf **Speichern**
 
 ::: tip Weitere Optionen
@@ -84,6 +84,23 @@ Wenn Sie ein Immobilienobjekt mit einer gültigen niederländischen Adresse anle
 #### Geschätzter aktueller Wert
 
 Bei Immobilien, für die eine WOZ-Historie aus dem Kadaster abgerufen wurde, projiziert MyCompanyDesk einen geschätzten aktuellen Marktwert. Diese Projektion nimmt das jüngste WOZ-Stichtagsdatum und wendet den CBS-PBK-Preisindex für die COROP-Region der Immobilie an. So erhalten Sie einen Wert, der die aktuelle Marktentwicklung widerspiegelt.
+
+### Vermögensübersicht und Bodemwaarde (Gebäude-Mindestwert)
+
+Immobilienobjekte, die als Betriebsvermögen geführt werden, zeigen auf der Detailseite eine Vermögensübersicht:
+
+- **Anschaffungswert**: der Betrag, der für das Wirtschaftsgut gezahlt wurde.
+- **Aktivierter Wert**: der betriebliche Teil des Anschaffungswerts nach Abzug eines etwaigen Privatnutzungsanteils.
+- **Kumulierte Abschreibung**: alles, was bisher abgeschrieben wurde.
+- **Abschreibung dieses Jahres**: der Abschreibungsbetrag für das laufende Kalenderjahr.
+- **Buchwert**: der verbleibende Wert in der Bilanz (aktivierter Wert abzüglich kumulierter Abschreibung).
+- **Bodemwaarde**: die gesetzliche Untergrenze, unter die der Buchwert eines Gebäudes nicht sinken darf. Sie basiert auf dem für die Immobilie erfassten WOZ-Wert.
+
+Die Bodemwaarde steht bewusst neben dem Buchwert, weil die beiden nur zusammen sinnvoll sind. MyCompanyDesk ändert nicht stillschweigend die gebuchte Abschreibungsplanung; stattdessen warnt es, wenn der aktuelle Plan bereits unter die Untergrenze gerutscht ist, oder weist darauf hin, wenn der Buchwert die Untergrenze genau erreicht hat.
+
+Erscheint eine Warnung, beheben Sie das, indem Sie den Restwert der Anschaffung auf die Bodemwaarde setzen. Wenn das Objekt nur eine Anschaffung hat, öffnet ein Link diese direkt, damit Sie oder Ihr Steuerberater die Anpassung vornehmen können.
+
+Diese Regel gilt nur für Gebäude (zum Beispiel Immobilie, Wohnung, Büro oder Laden). Fahrzeuge, Maschinen, Geräte und sonstige Wirtschaftsgüter ohne Gebäudecharakter haben keine Bodemwaarde-Untergrenze.
 
 ### Signierstatus der Verträge
 

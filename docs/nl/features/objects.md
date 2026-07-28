@@ -35,8 +35,8 @@ De objectenmodule is ontworpen voor bedrijven die fysieke activa beheren — met
 
 1. Ga naar **Objecten > Nieuw object**
 2. Vul in:
-   - **Naam** — Een duidelijke identificatie (bijv. "Appartement 3B" of "Graafmachine CAT 320")
-   - **Type** — Vastgoed, Voertuig, Machine of Overig
+   - **Naam** - Een duidelijke identificatie (bijv. "Appartement 3B" of "Graafmachine CAT 320")
+   - **Type** - Vastgoed, Voertuig, Machine of Overig
 3. Klik op **Opslaan**
 
 ::: tip Meer opties
@@ -52,6 +52,7 @@ De detailpagina toont:
 - **Totale omzet**: echte omzet op basis van betaalde facturen voor dit object, berekend via de financiele gegevens
 - **Actieve contracten**: aantal actieve contracten dat aan dit object is gekoppeld
 - **WOZ-geschiedenis** (bij Vastgoed) — jaarlijkse WOZ-waarden die de Box 3-berekening gebruikt
+- **Vermogensoverzicht** (bij Vastgoed-objecten met een geregistreerde WOZ-waarde) - geactiveerde waarde, cumulatieve afschrijving, huidige boekwaarde en de wettelijke ondergrens (bodemwaarde) voor het gebouw
 - Gekoppelde contracten
 - Verhuurgeschiedenis
 - Bijbehorende facturen
@@ -84,6 +85,23 @@ Wanneer je een Vastgoed-object met een geldig Nederlands adres toevoegt, kan MyC
 #### Geschatte huidige waarde
 
 Bij woningen waarvan een WOZ-geschiedenis uit het Kadaster is opgehaald, projecteert MyCompanyDesk een geschatte huidige marktwaarde. Deze projectie neemt de meest recente WOZ-peildatum en past daarop de CBS PBK-prijsindex voor de COROP-regio van de woning toe. Zo krijg je een waarde die de actuele marktontwikkeling weerspiegelt.
+
+### Vermogensoverzicht en bodemwaarde (ondergrens gebouw)
+
+Vastgoed-objecten die als bezitting worden bijgehouden, tonen een vermogensoverzicht op de detailpagina:
+
+- **Aanschafwaarde**: het bedrag dat voor het activum is betaald.
+- **Geactiveerde waarde**: het zakelijke deel van de aanschafwaarde, na aftrek van een eventueel privégebruik-deel.
+- **Cumulatieve afschrijving**: alles wat tot nu toe is afgeschreven.
+- **Afschrijving dit jaar**: het afschrijfbedrag voor het huidige kalenderjaar.
+- **Boekwaarde**: de resterende waarde op de balans (geactiveerde waarde min cumulatieve afschrijving).
+- **Bodemwaarde**: de wettelijke ondergrens waaronder de boekwaarde van een gebouw niet mag zakken. Deze is gebaseerd op de WOZ-waarde die voor het pand is geregistreerd.
+
+De bodemwaarde staat naast de boekwaarde, want de twee zijn pas samen zinvol. MyCompanyDesk herschrijft niet stilletjes de geboekte afschrijvingsregeling; in plaats daarvan waarschuwt het als de huidige regeling al onder de ondergrens is uitgekomen, of geeft een melding wanneer de boekwaarde de ondergrens exact heeft bereikt.
+
+Als er een waarschuwing verschijnt, los je dat op door de restwaarde van de aankoop op de bodemwaarde te zetten. Wanneer het object één aankoop heeft, opent een link die aankoop direct, zodat jij of je boekhouder de aanpassing kunt doen.
+
+Deze regel geldt alleen voor gebouwen (bijvoorbeeld vastgoed, appartement, kantoor of winkel). Voertuigen, machines, apparatuur en andere activa die geen gebouw zijn, hebben geen bodemwaarde-ondergrens.
 
 ### Ondertekenstatus van contracten
 

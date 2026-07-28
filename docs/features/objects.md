@@ -35,8 +35,8 @@ The objects module is designed for businesses that manage physical assets — pa
 
 1. Go to **Objects > New Object**
 2. Fill in:
-   - **Name** — A clear identifier (e.g., "Apartment 3B" or "Excavator CAT 320")
-   - **Type** — Property, Vehicle, Machine, or Other
+   - **Name** - A clear identifier (e.g., "Apartment 3B" or "Excavator CAT 320")
+   - **Type** - Property, Vehicle, Machine, or Other
 3. Click **Save**
 
 ::: tip More options
@@ -52,6 +52,7 @@ The detail page shows:
 - **Total revenue**: real paid-invoice revenue for this object, computed from the financials endpoint
 - **Active contracts**: number of currently active contracts linked to this object
 - **WOZ history** (for Properties) — annual WOZ values used in the Box 3 tax calculation
+- **Asset summary** (for Property objects with a recorded WOZ value) - capitalized value, accumulated depreciation, current book value and the legal floor (bodemwaarde) for the building
 - Linked contracts
 - Rental history
 - Associated invoices
@@ -84,6 +85,23 @@ When you add a Property object with a valid Dutch address, MyCompanyDesk can imp
 #### Estimated current value
 
 For properties where a Kadaster WOZ history was fetched, MyCompanyDesk projects an estimated current market value. This projection takes the most recent WOZ peildatum and applies the CBS PBK price index for the property's COROP region, giving you a value that reflects current market trends.
+
+### Asset summary and bodemwaarde (building floor)
+
+Property objects that are tracked as a bezitting (capital asset) show an asset summary in the detail page:
+
+- **Acquisition value**: what was paid for the asset.
+- **Capitalized value**: the business part of the acquisition value, after deducting any private-use share.
+- **Accumulated depreciation**: everything written off so far.
+- **Depreciation this year**: the current calendar year's write-off.
+- **Book value**: the remaining value on the balance (capitalized value minus accumulated depreciation).
+- **Bodemwaarde**: the legal floor below which the book value of a building may not drop. It is based on the WOZ value recorded for the property.
+
+The bodemwaarde is shown next to the book value because the two are only meaningful together. MyCompanyDesk does not silently rewrite the posted depreciation schedule; instead, it warns you when the current schedule has already gone below the floor, or notes when the book value has exactly reached it.
+
+If a warning appears, the correction is made by setting the acquisition's residual value to the bodemwaarde. When the object has a single acquisition, a link opens the acquisition so you or your accountant can adjust it.
+
+This rule applies to buildings only (for example, property, apartment, office or retail). Vehicles, machines, equipment and other non-building asset types do not have a bodemwaarde floor.
 
 ### Contract signing status
 
