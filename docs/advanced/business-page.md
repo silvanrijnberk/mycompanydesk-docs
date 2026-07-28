@@ -62,6 +62,12 @@ When you find a design you like, click **Use this design**. The current site is 
 
 After applying a bespoke design, open any page in the bespoke content editor. The **Sections** panel lists every top-level section on that page. Drag a section to a new position, or use the up and down buttons. Toggle the visibility switch to hide a section without deleting it. The navigation, hero and footer sections stay locked in place; you cannot move or hide them.
 
+### On-canvas section controls
+
+You can also reorder, hide and remove sections directly on the live preview canvas. Hover over any top-level section to see its name and a small toolbar. Use the arrows to move the section up or down, the eye icon to hide it (or show it again), and the trash icon to remove a section you added yourself. Locked chrome such as the navigation, hero and footer shows the section name on hover but has no move, hide or remove actions.
+
+Click a section to keep it selected; the outline then stays visible even when you move the mouse away, so you can compare positions while you scroll or edit content. Both the canvas and the **Sections** panel read from the same underlying order, so a change in one place is reflected in the other immediately.
+
 ## Creating pages
 
 1. Go to the **Pages** tab.

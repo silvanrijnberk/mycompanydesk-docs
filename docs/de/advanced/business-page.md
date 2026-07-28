@@ -62,6 +62,12 @@ Wenn Sie ein Design gefunden haben, klicken Sie auf **Dieses Design verwenden**.
 
 Nachdem Sie ein Bespoke-Design angewendet haben, öffnen Sie eine Seite im Bespoke-Content-Editor. Das Panel **Abschnitte** listet alle Top-Level-Abschnitte dieser Seite. Ziehen Sie einen Abschnitt an eine neue Position, oder nutzen Sie die Auf- und Ab-Buttons. Schalten Sie die Sichtbarkeit aus, um einen Abschnitt auszublenden, ohne ihn zu löschen. Navigation, Hero und Footer bleiben gesperrt; sie lassen sich weder verschieben noch ausblenden.
 
+### Bedienelemente direkt auf der Canvas-Vorschau
+
+Sie können Abschnitte auch direkt auf der Live-Canvas-Vorschau neu anordnen, ausblenden und entfernen. Bewegen Sie den Mauszeiger über einen Top-Level-Abschnitt, um seinen Namen und eine kleine Toolbar zu sehen. Verwenden Sie die Pfeile, um den Abschnitt nach oben oder unten zu verschieben, das Augen-Symbol, um ihn auszublenden (oder wieder einzublenden), und das Papierkorb-Symbol, um einen selbst hinzugefügten Abschnitt zu entfernen. Gesperrte Elemente wie Navigation, Hero und Footer zeigen den Namen beim Hover, haben aber keine Aktionen zum Verschieben, Ausblenden oder Entfernen.
+
+Klicken Sie auf einen Abschnitt, um ihn ausgewählt zu halten; der Rahmen bleibt dann sichtbar, auch wenn Sie die Maus wegbewegen, sodass Sie Positionen vergleichen können, während Sie scrollen oder Inhalte bearbeiten. Sowohl die Canvas als auch das Panel **Abschnitte** lesen aus derselben zugrunde liegenden Reihenfolge, sodass eine Änderung an einer Stelle sofort an der anderen Stelle übernommen wird.
+
 ## Seiten erstellen
 
 1. Gehen Sie zum Tab **Seiten**.

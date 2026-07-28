@@ -62,6 +62,12 @@ Als je een ontwerp vindt dat je bevalt, klik je op **Dit ontwerp gebruiken**. De
 
 Nadat je een bespoke-ontwerp hebt toegepast, open je een pagina in de bespoke-contenteditor. Het paneel **Secties** toont alle top-level secties van die pagina. Sleep een sectie naar een nieuwe plek, of gebruik de knoppen omhoog en omlaag. Zet de zichtbaarheidsschakelaar uit om een sectie te verbergen zonder hem te verwijderen. De navigatie, hero en footer blijven op hun plek staan; je kunt ze niet verplaatsen of verbergen.
 
+### Bediening op de canvas-voorvertoning
+
+Je kunt secties ook direct op de live canvas-voorvertoning herschikken, verbergen en verwijderen. Beweeg met je muis over een top-level sectie om de naam en een kleine toolbar te zien. Gebruik de pijltjes om de sectie omhoog of omlaag te verplaatsen, het oog-icoon om hem te verbergen (of weer te tonen), en het prullenbak-icoon om een sectie die je zelf hebt toegevoegd te verwijderen. Vergrendelde onderdelen zoals de navigatie, hero en footer tonen de naam bij hover, maar hebben geen opties om te verplaatsen, verbergen of verwijderen.
+
+Klik op een sectie om hem geselecteerd te houden; de omlijning blijft dan zichtbaar als je de muis wegbeweegt, zodat je posities kunt vergelijken terwijl je scrollt of de inhoud bewerkt. Zowel de canvas als het paneel **Secties** lezen uit dezelfde onderliggende volgorde, dus een wijziging op de ene plek wordt direct op de andere plek doorgevoerd.
+
 ## Pagina's aanmaken
 
 1. Ga naar de **Pagina's**-tab.

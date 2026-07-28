@@ -62,6 +62,12 @@ Quand un design vous plait, cliquez sur **Utiliser ce design**. Le site actuel e
 
 Apres avoir applique un design sur mesure, ouvrez une page dans l'editeur de contenu sur mesure. Le panneau **Sections** liste toutes les sections de premier niveau de cette page. Faites glisser une section vers une nouvelle position, ou utilisez les boutons haut et bas. Desactivez l'interrupteur de visibilite pour masquer une section sans la supprimer. La navigation, le hero et le pied de page restent verrouilles; vous ne pouvez ni les deplacer ni les masquer.
 
+### Controles directement sur l'aperçu canvas
+
+Vous pouvez aussi reordonner, masquer et supprimer des sections directement sur l'aperçu canvas en direct. Survolez une section de premier niveau pour voir son nom et une petite barre d'outils. Utilisez les fleches pour deplacer la section vers le haut ou vers le bas, l'icone oeil pour la masquer (ou l'afficher a nouveau), et l'icone corbeille pour supprimer une section que vous avez ajoutee vous-meme. Les elements verrouilles comme la navigation, le hero et le pied de page affichent le nom au survol, mais n'offrent pas d'actions de deplacement, de masquage ou de suppression.
+
+Cliquez sur une section pour la garder selectionnee; le contour reste alors visible meme lorsque vous eloignez la souris, ce qui vous permet de comparer les positions tout en faisant defiler ou en modifiant le contenu. Le canvas et le panneau **Sections** lisent tous deux le meme ordre sous-jacent, donc une modification d'un cote est immediatement refletee de l'autre.
+
 ## Creer des pages
 
 1. Allez dans l'onglet **Pages**.
