@@ -33,6 +33,10 @@ features:
     title: Terugkerende facturering
     details: Stel terugkerende facturen en uitgaven in die automatisch worden gegenereerd volgens je gekozen schema.
   - icon:
+      src: /icons/bar-chart-3.svg
+    title: Activa en afschrijving
+    details: Houd zakelijke activa bij, leg de aanschafwaarde vast en laat afschrijvingen automatisch lopen, zodat je altijd de actuele boekwaarde ziet.
+  - icon:
       src: /icons/house.svg
     title: Contracten & Assets
     details: Beheer huurcontracten, volg vastgoed, voertuigen en apparatuur met volledig levenscyclusbeheer.

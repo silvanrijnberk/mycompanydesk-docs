@@ -33,6 +33,10 @@ features:
     title: Recurring Billing
     details: Set up recurring invoices and expenses that generate automatically on your chosen schedule.
   - icon:
+      src: /icons/bar-chart-3.svg
+    title: Assets and depreciation
+    details: Track business assets, record purchase value, and let depreciation run automatically so you always know the current book value.
+  - icon:
       src: /icons/house.svg
     title: Contracts & Assets
     details: Manage rental contracts, track properties, vehicles, and equipment with full lifecycle management.
