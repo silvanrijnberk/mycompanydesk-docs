@@ -78,7 +78,7 @@ Bei Objekten des Typs **Immobilie** enthält die Detailseite einen Abschnitt zum
 Wenn Sie ein Immobilienobjekt mit einer gültigen niederländischen Adresse anlegen, kann MyCompanyDesk die WOZ-Historie direkt aus dem Kadaster importieren. Das spart manuelle Eingaben und liefert Ihnen dieselben Werte, die die Gemeinde hinterlegt hat.
 
 - **Automatischer Abruf**: ist die WOZ-Historie noch leer, ruft das System beim Öffnen der Detailseite die verfügbaren Werte aus dem Kadaster ab.
-- **Manuelles Aktualisieren**: klicken Sie auf **Aktualisieren**, um jederzeit die neuesten Kadaster-Daten abzurufen. Importierte Werte erhalten eine "Kadaster"-Quellenkennzeichnung.
+- **Manuelles Aktualisieren**: klicken Sie auf **Aktualisieren**, um jesterzeit die neuesten Kadaster-Daten abzurufen. Importierte Werte erhalten eine "Kadaster"-Quellenkennzeichnung.
 - **Fehlende Daten**: wenn das Kadaster für die Adresse keine Daten hat (zum Beispiel bei einem Neubau), erscheint ein Hinweis und Sie können die Werte manuell eingeben.
 
 #### Geschätzter aktueller Wert
@@ -98,7 +98,7 @@ Immobilienobjekte, die als Betriebsvermögen geführt werden, zeigen auf der Det
 
 Die Bodemwaarde steht bewusst neben dem Buchwert, weil die beiden nur zusammen sinnvoll sind. MyCompanyDesk ändert nicht stillschweigend die gebuchte Abschreibungsplanung; stattdessen warnt es, wenn der aktuelle Plan bereits unter die Untergrenze gerutscht ist, oder weist darauf hin, wenn der Buchwert die Untergrenze genau erreicht hat.
 
-Erscheint eine Warnung, beheben Sie das, indem Sie den Restwert der Anschaffung auf die Bodemwaerde setzen. Wenn das Objekt nur eine Anschaffung hat, öffnet ein Link diese direkt, damit Sie oder Ihr Steuerberater die Anpassung vornehmen können.
+Erscheint eine Warnung, beheben Sie das, indem Sie den Restwert der Anschaffung auf die Bodemwaarde setzen. Wenn das Objekt nur eine Anschaffung hat, öffnet ein Link diese direkt, damit Sie oder Ihr Steuerberater die Anpassung vornehmen können.
 
 Diese Regel gilt nur für Gebäude (zum Beispiel Immobilie, Wohnung, Büro oder Laden). Fahrzeuge, Maschinen, Geräte und sonstige Wirtschaftsgüter ohne Gebäudecharakter haben keine Bodemwaarde-Untergrenze.
 
