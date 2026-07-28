@@ -33,6 +33,10 @@ features:
     title: Facturation récurrente
     details: Configurez des factures et dépenses récurrentes qui se génèrent automatiquement selon le calendrier choisi.
   - icon:
+      src: /icons/bar-chart-3.svg
+    title: Actifs et amortissement
+    details: Suivez les actifs professionnels, enregistrez la valeur d'achat et laissez l'amortissement se faire automatiquement pour connaître la valeur comptable actuelle à tout moment.
+  - icon:
       src: /icons/house.svg
     title: Contrats & Actifs
     details: Gérez les contrats de location, suivez les biens immobiliers, véhicules et équipements avec une gestion complète du cycle de vie.

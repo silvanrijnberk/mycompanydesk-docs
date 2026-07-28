@@ -33,6 +33,10 @@ features:
     title: Wiederkehrende Abrechnung
     details: Richten Sie wiederkehrende Rechnungen und Ausgaben ein, die automatisch nach Ihrem gewählten Zeitplan erstellt werden.
   - icon:
+      src: /icons/bar-chart-3.svg
+    title: Anlagen und Abschreibung
+    details: Verfolgen Sie Geschäftsanlagen, erfassen Sie den Anschaffungswert und lassen Sie Abschreibungen automatisch laufen, damit Sie den aktuellen Buchwert immer im Blick haben.
+  - icon:
       src: /icons/house.svg
     title: Verträge & Anlagen
     details: Verwalten Sie Mietverträge, verfolgen Sie Immobilien, Fahrzeuge und Geräte mit vollständigem Lebenszyklus-Management.
