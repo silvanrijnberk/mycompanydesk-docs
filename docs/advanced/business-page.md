@@ -68,6 +68,12 @@ You can also reorder, hide and remove sections directly on the live preview canv
 
 Click a section to keep it selected; the outline then stays visible even when you move the mouse away, so you can compare positions while you scroll or edit content. Both the canvas and the **Sections** panel read from the same underlying order, so a change in one place is reflected in the other immediately.
 
+### Overriding section button links
+
+Some bespoke sections include clickable buttons or links that would normally point to a fixed page baked into the design, such as a contact page, a booking URL or a phone number. The bespoke content editor lets you override the destination of each addressable button per page.
+
+Open a page in the bespoke content editor and select the section whose button you want to change. In the **Sections** panel, each section that contains addressable buttons shows a **Buttons** list. Pick the button you want to override and enter its new destination. You can link to another page on your site, an external URL, an email address (`mailto:`) or a phone number (`tel:`). Links are checked against the same allowed schemes as navigation links for safety. If you leave the override empty, the button keeps the template's original destination.
+
 ## Creating pages
 
 1. Go to the **Pages** tab.
