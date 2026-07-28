@@ -44,6 +44,10 @@ Vous pouvez commencer une nouvelle facture a partir d'un modele enregistre a deu
 - Dans le **formulaire de facturation complet**, cliquez sur **Demarrer a partir du modele** (affiche uniquement si vous avez des modeles de facture enregistres). Choisissez un modele et le formulaire se remplit directement avec ses lignes, son client et ses autres donnees enregistrees. Ajustez selon vos besoins, puis enregistrez et envoyez.
 - Dans le **tiroir d'ajout rapide**, cliquez sur **Utiliser un modele**, selectionnez un modele enregistre, et toutes les lignes de facturation sont pre-remplies. Ajustez selon vos besoins, puis enregistrez et envoyez.
 
+## Attribuer une facture a un objet
+
+Si le revenu concerne une propriete locative, un vehicule ou un autre actif, selectionnez l'objet dans le formulaire de facture. La facture est alors liste sur la page de detail de cet objet et integree a son chiffre d'affaires total. Cela vaut aussi bien pour les factures generees a partir d'un contrat de location que pour les attributions directes, comme les regularisations de charges de copropriete, les factures ponctuelles et les factures de vente.
+
 ## Details de la facture
 
 Chaque facture dispose d'une page de detail affichant :

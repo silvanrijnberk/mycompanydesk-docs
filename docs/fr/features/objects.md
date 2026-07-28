@@ -49,13 +49,22 @@ La page de detail affiche :
 
 - Informations sur l'actif et son type
 - Statut actuel
-- **Chiffre d'affaires total** : revenus reels issus des factures payees pour cet objet, calcules a partir des donnees financieres
+- **Chiffre d'affaires total** : revenus reels issus des factures payees pour cet objet, y compris les loyers, charges de copropriete, factures ponctuelles et factures de vente qui lui sont attribues
 - **Contrats actifs** : nombre de contrats actuellement actifs lies a cet objet
 - **Historique WOZ** (pour les Proprietes) — valeurs WOZ annuelles utilisees par le calcul Box 3
 - **Resume de l'actif** (pour les objets Propriete avec une valeur WOZ enregistree) - valeur activee, amortissements cumules, valeur comptable actuelle et plancher legal (bodemwaarde) pour le batiment
 - Contrats lies
 - Historique de location
-- Factures associees
+- **Factures** : chaque facture prise en compte dans le chiffre d'affaires total, avec statut et montant hors TVA
+
+### Factures attribuees a cet objet
+
+L'onglet Factures de la page de detail de l'objet liste chaque facture qui contribue au chiffre d'affaires total :
+
+- Les factures generees a partir d'un contrat rattache a cet objet
+- Les factures etiquetees directement sur l'objet, comme les regularisations de charges de copropriete, les factures ponctuelles et les factures de vente
+
+Chaque ligne affiche le numero de facture, le client, la date, le statut et le montant hors TVA. Une explication precise que le total additionne les factures payees, tandis que le rapport Box 3 ne compte que les loyers perçus et utilise la date d'encaissement. Les deux montants peuvent donc differer.
 
 ### Resume des contrats
 
@@ -139,7 +148,7 @@ Les contrats herites crees avant l'ajout de la signature electronique n'affichen
 Les objets s'integrent aux autres fonctionnalites de MyCompanyDesk :
 
 - **Contrats** -- Creez un contrat de location pour un objet, en specifiant le locataire (client) et les conditions
-- **Factures** -- Les factures peuvent etre marquees comme factures de location et liees aux objets
+- **Factures**: Les factures peuvent etre attribuees directement a un objet dans le formulaire de facture, ou liees par le biais d'un contrat de location. Les deux modes comptent dans le chiffre d'affaires total de l'objet.
 - **Factures recurrentes** -- Configurez une facturation mensuelle automatique par objet
 
 ## Filtrage

@@ -44,6 +44,10 @@ Je kunt een nieuwe factuur vanuit een opgeslagen sjabloon starten op twee plekke
 - In het **volledige factuurformulier** klik je op **Vanuit sjabloon** (alleen zichtbaar als je opgeslagen factuursjablonen hebt). Kies een sjabloon en het formulier vult zich ter plekke met de regelitems, klant en andere opgeslagen gegevens. Pas aan waar nodig en sla op en verstuur.
 - Vanuit de **snel-toevoegen-lade** klik je op **Sjabloon gebruiken**, selecteer je een opgeslagen sjabloon en worden alle regelitems vooraf ingevuld. Pas aan waar nodig en sla op en verstuur.
 
+## Een factuur toewijzen aan een object
+
+Als de omzet hoort bij een huurpand, voertuig of ander activum, selecteer je het object in het factuurformulier. De factuur verschijnt dan op de objectdetailpagina en wordt meegenomen in de totale omzet van dat object. Dit geldt zowel voor facturen die uit een huurcontract zijn gegenereerd als voor directe toewijzing, zoals servicekostenafrekeningen, losse facturen en verkoopfacturen.
+
 ## Factuurdetails
 
 Elke factuur heeft een detailpagina met:
