@@ -52,6 +52,7 @@ La page de detail affiche :
 - **Chiffre d'affaires total** : revenus reels issus des factures payees pour cet objet, calcules a partir des donnees financieres
 - **Contrats actifs** : nombre de contrats actuellement actifs lies a cet objet
 - **Historique WOZ** (pour les Proprietes) — valeurs WOZ annuelles utilisees par le calcul Box 3
+- **Resume de l'actif** (pour les objets Propriete avec une valeur WOZ enregistree) - valeur activee, amortissements cumules, valeur comptable actuelle et plancher legal (bodemwaarde) pour le batiment
 - Contrats lies
 - Historique de location
 - Factures associees
@@ -84,6 +85,23 @@ Lorsque vous ajoutez un objet de type Propriete avec une adresse neerlandaise va
 #### Valeur actuelle estimee
 
 Pour les biens dont un historique WOZ a ete recupere depuis le Kadaster, MyCompanyDesk projette une valeur de marche actuelle estimee. Cette projection prend la peildatum WOZ la plus recente et y applique l'indice de prix CBS PBK pour la region COROP du bien, vous donnant ainsi une valeur qui reflete les tendances actuelles du marche.
+
+### Resume de l'actif et bodemwaarde (plancher legal du batiment)
+
+Les objets de type Propriete qui sont suivis comme un actif immobilise affichent un resume de l'actif sur la page de detail :
+
+- **Valeur d'acquisition** : le montant paye pour l'actif.
+- **Valeur immobilisee** : la partie professionnelle de la valeur d'acquisition, apres deduction d'une eventuelle part d'usage prive.
+- **Amortissements cumules** : tout ce qui a deja ete amorti.
+- **Amortissement de l'annee** : la dotation aux amortissements pour l'annee civile en cours.
+- **Valeur comptable** : la valeur residuelle au bilan (valeur immobilisee moins amortissements cumules).
+- **Bodemwaarde** : le plancher legal en dessous duquel la valeur comptable d'un batiment ne peut descendre. Elle repose sur la valeur WOZ enregistree pour le bien.
+
+La bodemwaarde est placee a cote de la valeur comptable, car les deux n'ont de sens qu'ensemble. MyCompanyDesk ne reecrit pas silencieusement le plan d'amortissement comptabilise ; a la place, il avertit lorsque le plan actuel a deja franchi le plancher, ou indique lorsque la valeur comptable l'atteint exactement.
+
+Si un avertissement s'affiche, corrigez-le en fixant la valeur residuelle de l'acquisition a la bodemwaarde. Quand l'objet ne comporte qu'une seule acquisition, un lien ouvre celle-ci directement, pour que vous ou votre comptable puissiez effectuer l'ajustement.
+
+Cette regle ne s'applique qu'aux batiments (par exemple, propriete, appartement, bureau ou commerce). Les vehicules, machines, equipements et autres actifs qui ne sont pas des batiments n'ont pas de plancher de bodemwaarde.
 
 ### Statut de signature des contrats
 
