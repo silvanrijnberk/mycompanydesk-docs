@@ -80,6 +80,10 @@ A chaque declenchement d'une facture recurrente, une nouvelle facture est creee 
 
 La page de detail de la facture recurrente affiche toutes les factures precedemment generees, vous permettant de suivre l'historique complet de facturation.
 
+## Lien source
+
+Si une facture a été générée à partir d'un modèle récurrent, la page de détail de la facture affiche un bandeau **Créé automatiquement depuis une facture récurrente** avec un lien vers ce modèle. Vous pouvez ainsi passer d'une facture individuelle au modèle qui l'a produite en un clic.
+
 ## Actions groupees
 
 - **Mettre en pause / Reprendre** -- Basculez plusieurs factures recurrentes
@@ -87,7 +91,7 @@ La page de detail de la facture recurrente affiche toutes les factures precedemm
 
 ## Que se passe-t-il si ma formule change ?
 
-Les factures récurrentes font partie de la formule Office. En montant de version de Desk vers Office, la génération automatique démarre à la prochaine échéance. Si vous rétrogradez d'Office vers Desk, la génération se met en pause automatiquement, y compris pour les alarmes DigitalOcean dues. Le modèle et les factures déjà créées restent dans votre espace de travail, et le planning reprend lors d'une nouvelle montée de version.
+Les factures récurrentes font partie de la formule Office. En montant de version de Desk vers Office, la génération automatique démarre à la prochaine échéance. Si vous rétrogradez d'Office vers Desk, la génération se met en pause automatiquement. Le modèle et les factures déjà créées restent dans votre espace de travail, et le planning reprend lors d'une nouvelle montée de version.
 
 ## Conseils
 
