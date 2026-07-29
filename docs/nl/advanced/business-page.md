@@ -77,11 +77,11 @@ Bespoke-sjablonen met een minimale footer laten je nu je eigen voettekst-inhoud 
 Daar kun je toevoegen:
 
 - **Bedrijfsregel**: je KvK/BTW of andere kleine lettertjes, weergegeven in de stijl van het ontwerp.
-- **Linkkolommen**: gekoppelde kolommen met links, handig voor pagina's als contact, voorwaarden of diensten.
+- **Linkkolommen**: getitelde kolommen met links, handig voor pagina's als contact, voorwaarden of diensten.
 - **Contactgegevens**: schakel in om je e-mail, telefoon en adres uit je bedrijfsgegevens te tonen.
-- **Social links**: schakel in om de sociale links uit je bedrijfsgegevens te tonen.
+- **Sociale links**: schakel in om de sociale links uit je bedrijfsgegevens te tonen.
 
-Het ontwerp bepaalt nog steeds kleur, lettertype en witruimte; jij levert alleen de inhoud. Links mogen interne paden (`/contact`), externe https-URL's, e-mail (`mailto:`) of telefoon (`tel:`) zijn. Als een sjabloon je contactgegevens of social links al in de footer toont, wordt de bijbehorende schakelaar verborgen, zodat niets dubbel verschijnt.
+Het ontwerp bepaalt nog steeds kleur, lettertype en witruimte; jij levert alleen de inhoud. Links mogen interne paden (`/contact`), externe https-URL's, e-mail (`mailto:`) of telefoon (`tel:`) zijn. Als een sjabloon je contactgegevens of sociale links al in de footer toont, wordt de bijbehorende schakelaar verborgen, zodat niets dubbel verschijnt.
 
 ### Knoplinks per sectie overschrijven
 

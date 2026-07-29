@@ -70,13 +70,13 @@ Sie können Abschnitte auch direkt auf der Live-Canvas-Vorschau neu anordnen, au
 
 Klicken Sie auf einen Abschnitt, um ihn ausgewählt zu halten; der Rahmen bleibt dann sichtbar, auch wenn Sie die Maus wegbewegen, sodass Sie Positionen vergleichen können, während Sie scrollen oder Inhalte bearbeiten. Sowohl die Canvas als auch das Panel **Abschnitte** lesen aus derselben zugrunde liegenden Reihenfolge, sodass eine Änderung an einer Stelle sofort an der anderen Stelle übernommen wird.
 
-### Fußzeilen-Inhalt
+### Fußzeileninhalt
 
 Bespoke-Vorlagen mit einer minimalen Fußzeile erlauben es Ihnen jetzt, eigene Fußzeilen-Inhalte hinzuzufügen, ohne das Design zu ändern. Öffnen Sie eine Seite im Bespoke-Content-Editor und scrollen Sie zum Panel **Fußzeile**.
 
 Dort können Sie hinzufügen:
 
-- **Rechtliche Zeile**: Ihre Handelsregister-/USt-Nummer oder anderer Kleingedrucktes, im Stil der Vorlage gerendert.
+- **Rechtliche Zeile**: Ihre Handelsregister-/USt-Nummer oder anderes Kleingedrucktes, im Stil der Vorlage gerendert.
 - **Link-Spalten**: betitelte Link-Spalten, nützlich für Seiten wie Kontakt, AGB oder Dienstleistungen.
 - **Kontaktdaten**: schalten Sie ein, um E-Mail, Telefon und Adresse aus Ihren Unternehmensdaten anzuzeigen.
 - **Social-Media-Links**: schalten Sie ein, um die in Ihren Unternehmensdaten gespeicherten Social-Media-Links anzuzeigen.
