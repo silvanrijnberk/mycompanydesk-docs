@@ -182,20 +182,18 @@ Nieuwe databasetabellen die door deze feature zijn toegevoegd:
 
 ### Gehoste website
 
-De sitebouwer staat op `Bedrijf › Je website` (`/website`). Het is een volwaardige multi-pagina-editor met secties, blokken, ontwerptokens en publicatiesnapshots. Wanneer je werkruimte meerdere actieve eigen domeinen heeft (Pro-abonnement), kun je via een domeinwisselaar in de bovenbalk een per-domein-variant van de site bewerken. Elk domein krijgt zijn eigen pagina's, navigatie, ontwerptokens en publicatiesnapshot. Wisselen van domein zet de actieve tab terug. De openbare website wordt getoond op je eigen domein (of werkruimte-subdomein / terugvalportalroute) zodra gepubliceerd.
+Je website-dashboard staat op **Bedrijf › Je website** (`/website`). Het is een dashboard met zes tabbladen: Overzicht, Bezoekers, Vindbaarheid, Koppelingen, Domein & e-mail en Instellingen. De editor open je via **Bewerk site** als je inhoud of vormgeving wilt wijzigen.
 
-Wat de editor laat zien:
+Wat de tabbladen doen:
 
-- **Domeinwisselaar** (bovenbalk) -- Wanneer er meer dan één actief domein is, kun je via een dropdown kiezen welke sitevariant je wilt bewerken. De hoofdsite-optie toont je werkruimtenaam. Domeinen die nog geen variant hebben tonen een "eigen variant maken"-hint en klonen de hoofdsite bij de eerste selectie.
-<!-- TODO(source-missing): RichardTool 5407b44 widened the valid Dutch invoice/catalog VAT-rate set to include historical rates 6% and 19%. sources/vat-rates.yaml#countries.NL currently only lists 0%, 9% and 21%, so this line must stay unchanged until the source is updated. -->
-- **Editor-tab** -- Stel pagina's samen door secties toe te voegen en te rangschikken (hero, tekst, galerij, diensten, team, testimonials, contactformulier, tarieven, product, aangepaste HTML). Bekijk en bewerk sectie-inhoud, layout, stijl en animatie. Sla secties op als herbruikbare blokken om je eigen bibliotheek van voorgestijlde layouts op te bouwen die je op elke pagina kunt plaatsen. Tarieven kunnen optioneel een koopknop krijgen die doorverwijst naar de Mollie- of Stripe Connect-checkout. Elke tier heeft een instelbaar BTW-tarief (21%, 9% of 0%), waarbij de prijs die de klant ziet de uiteindelijke prijs is, inclusief BTW. Het productblok is een losse koopkaart met dezelfde betalingskoppeling.
-- **Pagina's-tab** -- Pagina's aanmaken, hernoemen, verwijderen en filteren op status (live, concept, ingepland). Kies een sjabloon bij het maken van een nieuwe pagina.
-- **Stijl-tab** -- Ontwerptokens voor kleuren, lettertypes, schaal, beweging, knoppen, aangepaste CSS en head-snippets (analytics, lettertype-preconnects).
-- **Domein & SEO-tab** -- Eigen domeinbeheer. Zie de sectie eigen domeinen hierboven.
-- **Koppelingen-tab** -- Verbind betaalproviders (Mollie, Stripe Connect) met inline setup-kaarten, plus diensten van derden zoals Mailchimp, Plausible en Trustpilot. Dezelfde betaalkoppeling stuurt de betaalknoppen op facturen aan; zie de [FAQ over betaalmethodes](/nl/faq/payment-methods) voor de volledige configuratie.
-- **Navigatie-editor** -- Sleep en zet headerlinks op volgorde, met dropdown-groepen en externe links.
-- **Publiceerknop** -- Toont het aantal ongepubliceerde wijzigingen. Publiceert een snapshot met een klik.
-- **Responsieve preview** -- Schakel tussen desktop-, tablet- en mobiele weergave in de editor.
+- **Overzicht**-tab — Voorvertoning van je site, of deze live is, en hoeveel ongepubliceerde wijzigingen er wachten.
+- **Bezoekers**-tab — Zie waar bezoekers vandaan komen en hoe ze door de site bewegen.
+- **Vindbaarheid**-tab — SEO en paginameta-informatie. Oude `/website/seo`-links verwijzen hierheen.
+- **Koppelingen**-tab — Betaalproviders (Mollie, Stripe Connect) en diensten van derden zoals Mailchimp, Plausible en Trustpilot. Oude `/website/integraties`-links verwijzen hierheen.
+- **Domein & e-mail**-tab — Eigen domein, DNS, SSL, redirects en inbox-instellingen. Zie de sectie eigen domeinen hierboven.
+- **Instellingen**-tab — Kies welke bouwer live staat (sjabloon of op maat) en stel de werkruimteslug en andere site-instellingen in.
+
+Wanneer je werkruimte meerdere actieve eigen domeinen heeft (Pro-abonnement), kun je via een domeinwisselaar een per-domein-variant van de site bewerken. Elk domein krijgt zijn eigen pagina's, navigatie, ontwerptokens en publicatiesnapshot. Wisselen van domein zet de actieve tab terug.
 
 De openbare site wordt getoond op de best beschikbare URL die het bedrijf bezit: eigen domein-root → werkruimte-subdomein → terugval `/portal/<slug>`-route.
 

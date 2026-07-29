@@ -47,7 +47,7 @@ Il y a un seul style et une seule couleur de marque pour tous les types de docum
 
 ## Votre site web
 
-Votre page d'entreprise publique se gère dans la section **Site web** au niveau principal de la navigation, et non dans les Paramètres. Elle a ses propres pages : **Pages**, **Style**, **Domaine & SEO** et **Intégrations**.
+Votre page d'entreprise publique se gère dans la section **Site web** au niveau principal de la navigation, et non dans les Paramètres. C'est un tableau de bord avec six onglets : Apercu, Visiteurs, Visibilite, Connexions, Domaine et e-mail, et Parametres. L'editeur du site s'ouvre via **Modifier le site**.
 
 - Le site web est disponible à partir du plan Starter.
 - Connecter votre propre domaine, à la place du sous-domaine par défaut sur `mycompanydesk.com`, nécessite Pro. Les enregistrements DNS, SPF et DKIM sont gérés pour vous ; ils se trouvent derrière une section avancée que la plupart des utilisateurs n'ont jamais besoin d'ouvrir.

@@ -14,7 +14,7 @@ MyCompanyDesk keeps its set of keyboard shortcuts deliberately small. The shortc
 
 The search palette is the fastest way to move around the app:
 
-- Type at least two characters to search your customers, invoices, and expenses (plus projects, contracts, and properties when those features are enabled).
+- Type at least two characters to search your customers, invoices, expenses, quotes, tasks, recurring invoices, recurring expenses, catalog items, and inbox threads (plus projects, contracts, and properties when those features are enabled).
 - Settings are searchable too: type something like "VAT" or "reminders" to jump straight to the matching settings card.
 - Quick actions let you jump to any section or start a new invoice, quote, expense, or customer.
 - Filter chips under the search box narrow results to a single type.

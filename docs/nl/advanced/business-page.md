@@ -18,7 +18,7 @@ De sitebouwer vervangt het oude bedrijfsprofiel van één pagina. Elke nieuwe we
 - **Publicatiesnapshots**: Werk in concept, bekijk je wijzigingen en publiceer daarna. Ongepubliceerde wijzigingen zie je in de bovenbalk.
 - **Responsieve preview**: Schakel tussen desktop-, tablet- en mobiele weergave tijdens het bewerken.
 
-De sitebouwer vind je onder **Bedrijf > Je website** (`/website`).
+Je website-dashboard vind je onder **Bedrijf > Je website** (`/website`). De editor open je daarvandaan.
 
 Als je `/website` opent, kom je op het sectieoverzicht terecht: je ziet de live site, de publicatiestatus en een duidelijke ingang naar de editor. De editor zelf zit op `/website/editor` en bereik je bewust vanuit het overzicht, in plaats van dat hij direct het hele scherm overneemt.
 
@@ -38,13 +38,13 @@ De banner gebruikt het Gemini AI-model (lite-variant) als dat beschikbaar is in 
 
 ## Tabs
 
-De sitebouwer heeft vijf tabs (zes als Stijl is uitgeklapt):
+De sitebouwer heeft drie tabs: Editor, Pagina's en Stijl. Klik op de Stijl-header om de sub-tabs (waaronder Animatie) uit of in te klappen.
 
 - **Editor**: Stel pagina's samen door secties toe te voegen en te rangschikken. Klik op een sectie om de inhoud, layout, stijl of animatie te bewerken. Sleep secties om ze te verplaatsen, dupliceren of verwijderen.
 - **Pagina's**: Beheer je pagina's: maak nieuwe aan vanuit sjablonen, stel paden en zichtbaarheid in, en bekijk welke pagina's live, concept of ingepland zijn. Klik op een pagina om deze in de editor te openen. De vergrendelde homepage kan niet worden verwijderd. Elke pagina toont een Live/Concept-badge met snelle wisselknoppen: klik op het wereldbol-icoontje om een conceptpagina live te zetten, of op het oog-dicht-icoontje om een live pagina terug naar concept te zetten.
 - **Stijl**: Pas je sitebrede ontwerptokens aan. Kies een klik-en-klaar-preset (Editorial) en stem daarna kleuren (merk, accent, papier, inkt), lettertypes (kop, body, mono uit de lettertypebibliotheek), navbar (layout, achtergrond, knopstijl), schaal (radius, dichtheid, maximale breedte, sectie-afstand), beweging, knopstijlen en aangepaste CSS fijn af. Je kunt ook head-snippets toevoegen voor analytics (Plausible, Umami, Matomo) of lettertype-preconnects. Klik op de Stijl-header om de tab uit of in te klappen.
-- **Domein & SEO**: Configureer je eigen domein en SEO-instellingen. De inhoud hier is gekoppeld aan het domein dat in de domeinwisselaar in de bovenbalk is geselecteerd. Wanneer de hoofdsite (weergegeven als je werkruimtenaam) is geselecteerd, verschijnt er geen domeinspecifiek paneel. Zie [Domeinen, website en inbox](/nl/features/domains-website-inbox) voor het volledige domeinbeheer.
-- **Koppelingen**: Verbind diensten van derden met je website.
+
+Domein, SEO en koppelingen met derden beheer je vanuit de `/website`-thuis-tabbladen, niet in de editor.
 
 ### Bespoke-ontwerpen
 

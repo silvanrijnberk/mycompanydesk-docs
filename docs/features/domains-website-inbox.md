@@ -182,20 +182,18 @@ New database tables introduced by this feature:
 
 ### Hosted website
 
-The site builder lives at `Company › Your website` (`/website`). It is a full multi-page editor with sections, blocks, design tokens, and publish snapshots. When your workspace has multiple active custom domains (Pro plan), a domain switcher in the top bar lets you edit a per-domain variant of the site. Each domain gets its own pages, navigation, design tokens, and publish snapshot. Switching domains resets the active tab. The public face is served from your custom domain (or workspace subdomain / fallback portal route) once published.
+Your website home lives at **Company › Your website** (`/website`). It is a dashboard with six tabs: Overview, Visitors, Findability, Connections, Domain & email, and Settings. The editor opens from **Edit site** when you want to change content or design.
 
-What the editor surfaces:
+What the tabs cover:
 
-- **Domain switcher** (top bar) -- When more than one active domain exists, a dropdown lets you pick which site variant to edit. The default site option is labelled with your workspace name. Domains that have not been initialized yet show an "initialize" hint and clone the default site on first selection.
-<!-- TODO(source-missing): RichardTool 5407b44 widened the valid Dutch invoice/catalog VAT-rate set to include historical rates 6% and 19%. sources/vat-rates.yaml#countries.NL currently only lists 0%, 9% and 21%, so this line must stay unchanged until the source is updated. -->
-- **Editor tab** — Compose pages by adding and arranging sections (hero, text, gallery, services, team, testimonials, contact form, pricing, product, custom HTML). Inspect and edit section content, layout, style, and animation. Save sections as reusable blocks to build a personal library of pre-styled layouts you can drop onto any page. Pricing tiers can optionally carry a buy button that redirects to Mollie or Stripe Connect checkout. Each tier has a configurable VAT rate (21%, 9% or 0%), with the price shown to the customer being the final price, VAT included. The product block is a single-item buy card with the same payment plumbing.
-- **Pages tab** — Create, rename, delete, and filter pages by status (live, draft, scheduled). Pick a template when creating a new page.
-- **Style tab** — Design tokens for colors, fonts, scale, motion, buttons, custom CSS, and head snippets (analytics, font preconnects).
-- **Domain & SEO tab** — Custom domain management. See the custom domains section above.
-- **Integrations tab**: Connect payment processors (Mollie, Stripe Connect) with inline setup cards, plus third-party services like Mailchimp, Plausible and Trustpilot. The same payment connection powers pay buttons on invoices; see the [payment methods FAQ](/faq/payment-methods) for the full configuration.
-- **Navigation editor** — Drag-and-drop reorder of header links, with dropdown groups and external links.
-- **Publish button** — Shows unpublished change count. Pushes a snapshot live with one click.
-- **Responsive preview** — Toggle desktop, tablet, and mobile viewports in the editor.
+- **Overview** tab — Preview your site, see whether it is live, and check how many unpublished changes are waiting.
+- **Visitors** tab — See where visitors come from and how they move through the site.
+- **Findability** tab — SEO and page metadata. Old `/website/seo` links redirect here.
+- **Connections** tab — Payment processors (Mollie, Stripe Connect) and third-party services such as Mailchimp, Plausible, and Trustpilot. Old `/website/integraties` links redirect here.
+- **Domain & email** tab — Custom domain, DNS, SSL, redirects, and inbox setup. See the custom domains section above.
+- **Settings** tab — Choose which builder is live (template or bespoke), and configure the workspace slug and other site-level settings.
+
+When your workspace has multiple active custom domains (Pro plan), a domain switcher lets you edit a per-domain variant of the site. Each domain gets its own pages, navigation, design tokens, and publish snapshot. Switching domains resets the active tab.
 
 The public site is served at the highest-priority URL the company owns: custom domain root → workspace subdomain → fallback `/portal/<slug>` route.
 

@@ -18,7 +18,7 @@ The site builder replaces the old single-page business profile. Every new worksp
 - **Publish snapshots**: Work in draft, preview your changes, then publish. Unpublished changes are tracked in the top bar.
 - **Responsive preview**: Toggle between desktop, tablet, and mobile viewports while editing.
 
-The site builder lives at **Company > Your website** (`/website`).
+Your website dashboard lives at **Company > Your website** (`/website`). The editor opens from there.
 
 Opening `/website` lands on the section overview: it shows your live site, publish status, and a clear entry point to the editor. The editor itself is at `/website/editor`, reached deliberately from the overview rather than taking over the whole screen on arrival.
 
@@ -38,13 +38,13 @@ The banner uses the Gemini AI model (lite variant) when available on your worksp
 
 ## Tabs
 
-The site builder has five tabs (six when Style is expanded):
+The site builder has three tabs: Editor, Pages, and Style. Click the Style header to open or close its sub-tabs, which include Animation.
 
 - **Editor**: Compose pages by adding and arranging sections. Click any section to inspect its content, layout, style, or animation settings. Drag sections to reorder, duplicate, or delete them.
 - **Pages**: Manage your pages: create new ones from templates, set paths and visibility, and see which pages are live, draft, or scheduled. Click a page to open it in the editor. The locked home page cannot be deleted. Each page shows a Live/Concept badge alongside quick-toggle buttons: click the globe icon to set a draft page live, or use the eye-off icon to hide a live page back to concept.
 - **Style**: Customize your site-wide design tokens. Apply a one-click preset (Editorial), then fine-tune colors (brand, accent, paper, ink), fonts (heading, body, mono from the font library), navbar (layout, background, CTA style), scale (radius, density, max width, section spacing), motion preferences, button styles, and custom CSS. You can also add head snippets for analytics (Plausible, Umami, Matomo) or font preconnects. Click the Style header to open or close the tab strip.
-- **Domain & SEO**: Configure your custom domain and SEO settings. The content here is scoped to the domain selected in the topbar domain switcher. When the default site (listed as the workspace name) is selected, no domain-specific panel appears. See [Domains, Website and Inbox](/features/domains-website-inbox) for the full domain management workflow.
-- **Integrations**: Connect third-party services to your website.
+
+Domain, SEO, and third-party integrations are managed from the `/website` home tabs, not inside the editor.
 
 ### Bespoke designs
 
