@@ -70,6 +70,19 @@ You can also reorder, hide and remove sections directly on the live preview canv
 
 Click a section to keep it selected; the outline then stays visible even when you move the mouse away, so you can compare positions while you scroll or edit content. Both the canvas and the **Sections** panel read from the same underlying order, so a change in one place is reflected in the other immediately.
 
+### Footer content
+
+Bespoke templates that ship a minimal footer now let you add your own footer content without changing the design. Open any page in the bespoke content editor and scroll to the **Voettekst** (footer) panel.
+
+From there you can add:
+
+- **Legal line**: your KvK/BTW or other small print, rendered in the template's footer style.
+- **Link columns**: titled columns of links, useful for pages like contact, terms or services.
+- **Contact details**: toggle to show your email, phone and address from your company details.
+- **Social links**: toggle to show the social links saved in your company details.
+
+The design still controls colour, type and spacing; you only supply the content. Links accept internal paths (`/contact`), external HTTPS URLs, email (`mailto:`) or phone (`tel:`). If a template already shows contact or social details in its footer, the matching toggle is hidden so nothing duplicates.
+
 ### Overriding section button links
 
 Some bespoke sections include clickable buttons or links that would normally point to a fixed page baked into the design, such as a contact page, a booking URL or a phone number. The bespoke content editor lets you override the destination of each addressable button per page.

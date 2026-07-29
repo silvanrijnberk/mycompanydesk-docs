@@ -1,6 +1,6 @@
 ---
 title: Aperçu des paramètres
-last_verified: 2026-07-02
+last_verified: 2026-07-29
 ---
 
 # Aperçu des paramètres
@@ -20,7 +20,7 @@ Paramètres personnels. Ils ne concernent que votre propre compte et ne changent
 | **Vos données** | Votre nom, votre adresse e-mail et votre photo |
 | **Connexion** | Mot de passe, vérification en deux étapes, passkeys et déconnexion |
 | **Notifications** | Les sujets sur lesquels nous vous envoyons un message, plus les notifications push sur cet appareil |
-| **Affichage** | Thème clair ou sombre, taille du texte et langue de l'application |
+| **Affichage** | Thème clair ou sombre, taille du texte, langue de l'application et quantité d'informations au-dessus des listes (détaillé ou épuré) |
 
 Voir [Vos paramètres personnels](/fr/account/profile) pour une visite guidée de ces quatre pages.
 
@@ -70,7 +70,7 @@ Quelques pages n'apparaissent que via la recherche, pour garder la liste princip
 | Modifier mon nom ou ma photo | **Vos données** |
 | Changer mon mot de passe ou activer la vérification en deux étapes | **Connexion** |
 | Choisir les notifications que je reçois | **Notifications** |
-| Mode sombre, texte plus grand ou autre langue d'application | **Affichage** |
+| Mode sombre, texte plus grand, autre langue d'application ou masquer les résumés au-dessus des listes | **Affichage** |
 | Corriger mon adresse d'entreprise ou mon numéro de TVA | **Données de l'entreprise** |
 | Téléverser un logo ou changer ma couleur de marque | **Logo et couleur** |
 | Modifier le délai de paiement ou les e-mails de rappel | **Factures et devis** |

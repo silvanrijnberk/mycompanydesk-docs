@@ -1,6 +1,6 @@
 ---
 title: Overzicht van de instellingen
-last_verified: 2026-07-02
+last_verified: 2026-07-29
 ---
 
 # Overzicht van de instellingen
@@ -18,7 +18,7 @@ Persoonlijke instellingen. Ze gelden alleen voor jouw account en veranderen niet
 | **Jouw gegevens** | Je naam, e-mailadres en foto |
 | **Inloggen** | Wachtwoord, verificatie in twee stappen, passkeys en uitloggen |
 | **Meldingen** | Waarover we je een berichtje sturen, plus pushmeldingen op dit apparaat |
-| **Weergave** | Licht of donker, tekstgrootte en de taal van de app |
+| **Weergave** | Licht of donker, tekstgrootte, de taal van de app en hoe veel je boven lijsten ziet (uitgebreid of rustig) |
 
 Zie [Je persoonlijke instellingen](/nl/account/profile) voor een rondleiding langs deze vier pagina's.
 
@@ -68,7 +68,7 @@ Een paar pagina's verschijnen alleen via zoeken, zodat de hoofdlijst rustig blij
 | Mijn naam of foto aanpassen | **Jouw gegevens** |
 | Mijn wachtwoord wijzigen of verificatie in twee stappen instellen | **Inloggen** |
 | Kiezen waarover ik meldingen krijg | **Meldingen** |
-| Donkere modus, grotere letters of een andere app-taal | **Weergave** |
+| Donkere modus, grotere letters, een andere app-taal of samenvattingskaarten boven lijsten verbergen | **Weergave** |
 | Mijn bedrijfsadres of BTW-nummer corrigeren | **Bedrijfsgegevens** |
 | Een logo uploaden of mijn huisstijlkleur wijzigen | **Logo en kleur** |
 | De betaaltermijn of herinneringsmails aanpassen | **Facturen en offertes** |

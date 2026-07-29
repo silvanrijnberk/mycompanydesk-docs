@@ -70,6 +70,19 @@ Je kunt secties ook direct op de live canvas-voorvertoning herschikken, verberge
 
 Klik op een sectie om hem geselecteerd te houden; de omlijning blijft dan zichtbaar als je de muis wegbeweegt, zodat je posities kunt vergelijken terwijl je scrollt of de inhoud bewerkt. Zowel de canvas als het paneel **Secties** lezen uit dezelfde onderliggende volgorde, dus een wijziging op de ene plek wordt direct op de andere plek doorgevoerd.
 
+### Voettekst-inhoud
+
+Bespoke-sjablonen met een minimale footer laten je nu je eigen voettekst-inhoud toevoegen zonder het ontwerp aan te passen. Open een pagina in de bespoke-contenteditor en scroll naar het paneel **Voettekst**.
+
+Daar kun je toevoegen:
+
+- **Bedrijfsregel**: je KvK/BTW of andere kleine lettertjes, weergegeven in de stijl van het ontwerp.
+- **Linkkolommen**: gekoppelde kolommen met links, handig voor pagina's als contact, voorwaarden of diensten.
+- **Contactgegevens**: schakel in om je e-mail, telefoon en adres uit je bedrijfsgegevens te tonen.
+- **Social links**: schakel in om de sociale links uit je bedrijfsgegevens te tonen.
+
+Het ontwerp bepaalt nog steeds kleur, lettertype en witruimte; jij levert alleen de inhoud. Links mogen interne paden (`/contact`), externe https-URL's, e-mail (`mailto:`) of telefoon (`tel:`) zijn. Als een sjabloon je contactgegevens of social links al in de footer toont, wordt de bijbehorende schakelaar verborgen, zodat niets dubbel verschijnt.
+
 ### Knoplinks per sectie overschrijven
 
 Sommige bespoke-secties bevatten klikbare knoppen of links die normaal naar een vast pagina in het ontwerp verwijzen, zoals een contactpagina, een boekingslink of een telefoonnummer. De bespoke-contenteditor laat je per pagina de bestemming van elke aanpasbare knop wijzigen.
