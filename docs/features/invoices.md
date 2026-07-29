@@ -82,6 +82,8 @@ Send the invoice to your customer via email. The email includes:
 - The invoice PDF as an attachment
 - A payment link for online payment
 
+If your workspace has general terms in Documents, the email preview also shows an **Include general terms** toggle. For invoices this toggle is off by default. When enabled, the current terms PDF is attached to the email and the send is recorded as the provision event on the terms document.
+
 ### Download PDF
 
 Download the invoice as a professionally formatted PDF document. The PDF includes your company logo, branding colors, and all invoice details.

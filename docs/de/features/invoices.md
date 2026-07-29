@@ -82,6 +82,8 @@ Senden Sie die Rechnung per E-Mail an Ihren Kunden. Die E-Mail enthält:
 - Die Rechnungs-PDF als Anhang
 - Einen Zahlungslink für die Online-Zahlung
 
+Wenn in Ihrem Arbeitsbereich Allgemeine Geschäftsbedingungen in Dokumenten hinterlegt sind, zeigt der E-Mail-Vorschau-Dialog außerdem den Schalter **Allgemeine Geschäftsbedingungen mitschicken** an. Bei Rechnungen ist er standardmäßig deaktiviert. Wenn Sie ihn einschalten, wird die aktuelle AGB-PDF der E-Mail beigefügt und der Versand als Übergabemoment auf dem AGB-Dokument protokolliert.
+
 ### PDF herunterladen
 
 Laden Sie die Rechnung als professionell formatiertes PDF-Dokument herunter. Das PDF enthält Ihr Firmenlogo, Ihre Markenfarben und alle Rechnungsdetails.

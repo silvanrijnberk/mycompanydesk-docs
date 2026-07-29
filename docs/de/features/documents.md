@@ -33,7 +33,11 @@ Sie können ein Dokument auf Basis einer Vorlage erstellen oder von Grund auf ne
 
 ## AGB übergeben
 
-MyCompanyDesk protokolliert, wann Sie Allgemeine Geschäftsbedingungen an einen Kunden übergeben haben:
+MyCompanyDesk protokolliert, wann Sie Allgemeine Geschäftsbedingungen an einen Kunden übergeben haben.
+
+### Manuelle Übergabe
+
+Möchten Sie selbst ein Datum erfassen:
 
 1. Öffnen Sie die Detailseite des Dokuments
 2. Klicken Sie auf **Als übergeben protokollieren**
@@ -41,9 +45,26 @@ MyCompanyDesk protokolliert, wann Sie Allgemeine Geschäftsbedingungen an einen 
 
 Danach zeigt die Detailseite ein Badge **Übergeben** mit dem Datum. Ist das Dokument mit einem Kunden verknüpft, ist dies auch in der Dokumentenliste sichtbar.
 
+### Beim Angebot oder der Rechnung mitschicken
+
+Wenn in Ihrem Arbeitsbereich Allgemeine Geschäftsbedingungen in Dokumenten hinterlegt sind, bietet der E-Mail-Vorschau-Dialog beim Versenden eines Angebots oder einer Rechnung den Schalter **Allgemeine Geschäftsbedingungen mitschicken** an. Bei Angeboten ist er standardmäßig aktiviert, denn das Mitschicken der AGB mit einem Angebot ist der rechtlich relevante Zeitpunkt für die Überlassung. Bei Rechnungen ist er standardmäßig deaktiviert.
+
+Ist der Schalter aktiviert, wird die aktuelle AGB-PDF der E-Mail beigefügt. Nach erfolgreichem Versand protokolliert MyCompanyDesk diesen Versand als Übergabemoment auf dem AGB-Dokument. Die Detailseite zeigt dann:
+
+- den Empfänger und das Datum der Angebots- oder Rechnungsmail, die die AGB zugestellt hat
+- einen Link zum Angebot oder zur Rechnung, damit Sie die konkrete Zustellung öffnen können
+
+Wurden die AGB bereits manuell als übergeben markiert, bleibt der frühere Eintrag erhalten. Spätere Sendungen überschreiben ihn nicht.
+
 ::: tip
-Senden Sie Allgemeine Geschäftsbedingungen zusammen mit einem Angebot und protokollieren Sie das Datum hier. So haben Sie eine klare Nachweiskette, falls die AGB jemals angefochten werden.
+So wird ein bloßes Datum zu einem nachprüfbaren Nachweis. Statt zu sagen "wir haben die AGB an diesem Tag übergeben", verweist das Dokument auf die tatsächliche E-Mail, die sie transportiert hat.
 :::
+
+## Fehlende Auftragsverarbeitungsvereinbarung auf der Kundenseite
+
+Auf der Kundendetailseite prüft MyCompanyDesk, ob ein Kunde einen Vertrag hat, aber noch keine Auftragsverarbeitungsvereinbarung in Dokumenten hinterlegt ist. Wenn diese Lücke besteht, erscheint in der Dokumenten-Karte ein Hinweis mit einem Link **Auftragsverarbeitungsvereinbarung erstellen**, der eine neue Auftragsverarbeitungsvereinbarung für diesen Kunden anlegt.
+
+Der Hinweis wird nur angezeigt, wenn die Dokumenten- und Vertragsmodule aktiviert sind und die Dokumenten-Karte sonst leer wäre. Es ist eine dezente Aufforderung, eine Compliance-Lücke an der Stelle zu schließen, an der Sie ohnehin handeln.
 
 ## Signieren
 

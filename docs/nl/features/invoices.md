@@ -82,6 +82,8 @@ Verstuur de factuur per e-mail naar je klant. De e-mail bevat:
 - De factuur-PDF als bijlage
 - Een betaallink voor online betaling
 
+Als je werkruimte algemene voorwaarden in Documenten heeft staan, toont de e-mailvoorbeelddialoog ook de schakelaar **Algemene voorwaarden meesturen**. Voor facturen staat deze standaard uit. Als je hem inschakelt, wordt de huidige voorwaarden-PDF bij de e-mail gevoegd en wordt de verzending vastgelegd als het terhandstellingsmoment op het voorwaardendocument.
+
 ### PDF downloaden
 
 Download de factuur als een professioneel opgemaakt PDF-document. De PDF bevat je bedrijfslogo, huisstijlkleuren en alle factuurgegevens.

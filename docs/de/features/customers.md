@@ -56,8 +56,13 @@ Die Kundendetailseite zeigt:
 - **Rechnungsverlauf** — Jede an diesen Kunden gesendete Rechnung
 - **Ausgabenverlauf** — Mit diesem Kunden verknüpfte Ausgaben
 - **Verträge** - Aktive und inaktive Verträge, mit Signaturstatus-Badges und einem PDF-Vorschau-Icon, wenn E-Signing aktiviert ist
+- **Dokumente**: für diesen Kunden hinterlegte Vereinbarungen, wie Allgemeine Geschäftsbedingungen, NDAs und Auftragsverarbeitungsvereinbarungen. Hat der Kunde einen Vertrag, aber keine Auftragsverarbeitungsvereinbarung, erscheint ein Hinweis mit einem Link, um eine zu erstellen.
 - **Projekte** — Aktive und abgeschlossene Projekte
 - **Statistiken** — Gesamtumsatz, ausstehender Saldo, durchschnittliche Zahlungsdauer
+
+### Fehlende Auftragsverarbeitungsvereinbarung
+
+Hat ein Kunde einen Vertrag, aber keine Auftragsverarbeitungsvereinbarung in Dokumenten, zeigt die Dokumenten-Karte auf der Kundendetailseite einen Hinweis und einen Link **Auftragsverarbeitungsvereinbarung erstellen**. Dies weist auf eine Compliance-Lücke an der Stelle hin, an der Sie wahrscheinlich handeln. Der Hinweis erscheint nur, wenn die Dokumenten- und Vertragsmodule aktiviert sind und die Dokumenten-Karte sonst leer wäre.
 
 ### E-Mail-Zustellbarkeitsbanner
 

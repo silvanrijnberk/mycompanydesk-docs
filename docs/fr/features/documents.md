@@ -33,7 +33,11 @@ Vous pouvez créer un document à partir d'un modèle ou de zéro. Les documents
 
 ## Remettre les conditions générales
 
-MyCompanyDesk enregistre la date à laquelle vous avez remis les conditions générales à un client :
+MyCompanyDesk enregistre la date à laquelle vous avez remis les conditions générales à un client.
+
+### Saisie manuelle
+
+Pour enregistrer une date vous-même :
 
 1. Ouvrez la page de détail du document
 2. Cliquez sur **Marquer comme remis**
@@ -41,9 +45,26 @@ MyCompanyDesk enregistre la date à laquelle vous avez remis les conditions gén
 
 La page de détail affiche alors un badge **Remis** avec la date. Si le document est lié à un client, cela est également visible dans la liste des documents.
 
+### Joindre les conditions à un devis ou une facture
+
+Si votre espace de travail a des conditions générales dans Documents, l'aperçu d'e-mail lors de l'envoi d'un devis ou d'une facture propose l'option **Joindre les conditions générales**. Pour les devis, elle est activée par défaut, car l'envoi des conditions avec un devis est le moment juridiquement pertinent pour la remise. Pour les factures, elle est désactivée par défaut.
+
+Quand l'option est activée, le PDF des conditions générales actuelles est joint à l'e-mail. Après l'envoi réussi, MyCompanyDesk enregistre cet envoi comme événement de remise sur le document des conditions. La page de détail montre alors :
+
+- le destinataire et la date de l'e-mail de devis ou de facture qui a livré les conditions
+- un lien vers le devis ou la facture, pour ouvrir l'envoi concret
+
+Si les conditions avaient déjà été marquées comme remises manuellement, l'enregistrement antérieur est conservé. Les envois ultérieurs ne l'écrasent pas.
+
 ::: tip
-Envoyez les conditions générales avec un devis et enregistrez la date ici. Vous aurez ainsi une trace claire en cas de litige.
+Cela transforme une simple date en une preuve vérifiable. Au lieu d'affirmer "nous avons remis les conditions à cette date", le document pointe vers le véritable e-mail qui les a transportées.
 :::
+
+## Manque de contrat de sous-traitance sur la fiche client
+
+Sur la page de détail du client, MyCompanyDesk vérifie si un client a un contrat mais aucun contrat de sous-traitance (DPA) enregistré dans Documents. Quand ce manque existe, un indicateur apparaît dans la carte Documents avec un lien **Rédiger un contrat de sous-traitance** qui crée un nouveau DPA prérempli pour ce client.
+
+L'indicateur n'apparaît que si les modules Documents et Contrats sont activés et que la carte Documents serait sinon vide. C'est un rappel discret pour combler une lacune de conformité à l'endroit même où vous agissez.
 
 ## Signature
 

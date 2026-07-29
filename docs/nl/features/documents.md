@@ -33,7 +33,11 @@ Je kunt een document maken op basis van een sjabloon of helemaal zelf opstellen.
 
 ## Voorwaarden ter hand stellen
 
-MyCompanyDesk legt vast wanneer je algemene voorwaarden aan een klant hebt verstrekt:
+MyCompanyDesk legt vast wanneer je algemene voorwaarden aan een klant hebt verstrekt.
+
+### Zelf een datum vastleggen
+
+Wil je zelf een datum vastleggen:
 
 1. Open de detailpagina van het document
 2. Klik op **Vastleggen als verstrekt**
@@ -41,9 +45,26 @@ MyCompanyDesk legt vast wanneer je algemene voorwaarden aan een klant hebt verst
 
 Daarna toont de detailpagina een badge **Verstrekt** met de datum. Als het document aan een klant is gekoppeld, is dit ook zichtbaar in de documentenlijst.
 
+### Meesturen met een offerte of factuur
+
+Als je werkruimte algemene voorwaarden in Documenten heeft staan, toont de e-mailvoorbeelddialoog bij het versturen van een offerte of factuur de schakelaar **Algemene voorwaarden meesturen**. Bij offertes staat deze standaard aan, want het meesturen van voorwaarden met een offerte is het juridisch relevante moment voor terhandstelling. Bij facturen staat hij standaard uit.
+
+Als de schakelaar aan staat, wordt de huidige voorwaarden-PDF bij de e-mail gevoegd. Zodra de e-mail succesvol is verstuurd, legt MyCompanyDesk die verzending vast als het terhandstellingsmoment op het voorwaardendocument. De detailpagina toont dan:
+
+- de ontvanger en datum van de offerte- of factuurmail die de voorwaarden heeft bezorgd
+- een link naar de offerte of factuur, zodat je de concrete verzending kunt openen
+
+Als de voorwaarden al handmatig als verstrekt zijn gemarkeerd, blijft dat eerdere record bewaard. Latere verzendingen overschrijven het niet.
+
 ::: tip
-Stuur algemene voorwaarden mee met een offerte en leg de datum hier vast. Zo heb je een duidelijk bewijs als de voorwaarden ooit ter discussie staan.
+Zo wordt een kale datum controleerbaar bewijs. In plaats van "we hebben de voorwaarden op deze dag verstrekt" verwijst het document naar de echte e-mail die ze heeft meegenomen.
 :::
+
+## Ontbrekende verwerkersovereenkomst op de klantpagina
+
+Op de klantdetailpagina controleert MyCompanyDesk of een klant een contract heeft maar nog geen verwerkersovereenkomst in Documenten. Als dat tekort bestaat, verschijnt er een hint in de documentenkaart met de link **Verwerkersovereenkomst opstellen** die een nieuwe verwerkersovereenkomst voor die klant start.
+
+De hint verschijnt alleen als de documenten- en contractenmodules aan staan en de documentenkaart verder leeg zou zijn. Het is een stille aanwijzing om een compliance-tekort op de plek waar je er iets aan doet te repareren.
 
 ## Ondertekenen
 

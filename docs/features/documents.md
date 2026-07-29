@@ -33,7 +33,11 @@ You can create a document from a template or from scratch. Documents created fro
 
 ## Providing terms to a customer
 
-MyCompanyDesk lets you record when general terms were provided to a customer:
+MyCompanyDesk lets you record when general terms were provided to a customer.
+
+### Manual provision
+
+If you want to record a date yourself:
 
 1. Open the document detail page
 2. Click **Record as provided**
@@ -41,9 +45,26 @@ MyCompanyDesk lets you record when general terms were provided to a customer:
 
 Once recorded, the document detail page shows a **Provided** badge and the provided date. If the document is linked to a customer, this is also visible in the documents list.
 
+### Attach terms when sending a quote or invoice
+
+If your workspace has general terms stored in Documents, the email preview when sending a quote or invoice shows an **Include general terms** toggle. For quotes this toggle is on by default, because sending terms with a quote is the legally relevant moment for terhandstelling. For invoices it is off by default.
+
+When the toggle is on, the current terms PDF is attached to the outgoing email. After the email is sent successfully, MyCompanyDesk records that send as the provision event on the terms document. The document detail page then shows:
+
+- the recipient and date of the quote or invoice email that delivered the terms
+- a link to the quote or invoice, so you can open the actual send
+
+If the terms were already marked as provided manually, the earlier record is kept. Later sends do not overwrite it.
+
 ::: tip
-Send general terms together with a quote and record the date here. That gives you a clear paper trail if the terms are ever disputed.
+This turns a bare date into verifiable evidence. Instead of saying "we provided the terms on this day", the document points to the real email that carried them.
 :::
+
+## Processing agreement gap on the customer page
+
+On the customer detail page, MyCompanyDesk checks whether a customer has a contract but no processing agreement (DPA) stored in Documents. When that gap exists, a hint appears in the documents card with a **Create processing agreement** link that starts a new DPA pre-filled for that customer.
+
+The hint is only shown when the documents and contracts modules are enabled and the documents card would otherwise be empty. It is a quiet prompt to fix a compliance gap at the place you would act on it.
 
 ## Signing
 

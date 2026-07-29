@@ -30,6 +30,8 @@ The quote form is similar to the invoice form — if you know how to create an i
 
 The quote PDF is attached to the email for the customer to review.
 
+If your workspace has general terms in Documents, the email preview also shows an **Include general terms** toggle. It is on by default for quotes. When enabled, the current terms PDF is attached to the email and the send is recorded as the provision event on the terms document.
+
 ## Quote detail actions
 
 The top action on the quote detail page depends on the quote status:

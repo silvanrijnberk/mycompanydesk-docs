@@ -56,8 +56,13 @@ De klantdetailpagina toont:
 - **Factuurgeschiedenis** — Elke factuur die naar deze klant is gestuurd
 - **Uitgavengeschiedenis** — Uitgaven gekoppeld aan deze klant
 - **Contracten** - Actieve en inactieve contracten, met ondertekeningsstatus-badges en een pdf-voorbeeldicoon wanneer e-signing is ingeschakeld
+- **Documenten**: afspraken die voor deze klant zijn opgeslagen, zoals algemene voorwaarden, NDA's en verwerkersovereenkomsten. Als de klant een contract heeft maar geen verwerkersovereenkomst, verschijnt er een hint met een link om er een op te stellen.
 - **Projecten** — Actieve en voltooide projecten
 - **Statistieken** — Totale omzet, openstaand saldo, gemiddelde betaaltijd
+
+### Ontbrekende verwerkersovereenkomst
+
+Als een klant een contract heeft maar geen verwerkersovereenkomst in Documenten, toont de documentenkaart op de klantdetailpagina een hint en een link **Verwerkersovereenkomst opstellen**. Dit wijst je op een compliance-tekort op de plek waar je er waarschijnlijk iets aan doet. De hint verschijnt alleen als de documenten- en contractenmodules aan staan en de documentenkaart verder leeg zou zijn.
 
 ### E-mailgezondheidsbanner
 

@@ -56,8 +56,13 @@ The customer detail page shows:
 - **Invoice history** — Every invoice sent to this customer
 - **Expense history** — Expenses linked to this customer
 - **Contracts** - Active and inactive contracts, with signing status badges and a PDF preview icon when e-signing is enabled
+- **Documents**: agreements stored for this customer, such as general terms, NDAs and DPAs. If the customer has a contract but no processing agreement, a hint appears with a link to create one.
 - **Projects** — Active and completed projects
 - **Statistics** — Total revenue, outstanding balance, average payment time
+
+### Processing agreement gap
+
+When a customer has a contract but no processing agreement (DPA) in Documents, the documents card on the customer detail page shows a hint and a **Create processing agreement** link. This points out a compliance gap where you are likely to act on it. The hint only appears when the documents and contracts modules are enabled and the documents card is otherwise empty.
 
 ### Email health banner
 
