@@ -44,6 +44,12 @@ Des actions supplementaires se trouvent dans le menu deroulant a cote de l'actio
 - **Telecharger le PDF** — Telechargez le devis sous forme de document PDF mis en forme professionnellement avec le logo de votre entreprise, les couleurs de votre marque et tous les details du devis.
 - **Copier le devis** — Creez une copie du devis existant.
 
+### Conversation source
+
+Si un devis a ete cree a partir d'un e-mail de votre boite de reception, la page de detail affiche une banniere **Créé depuis un e-mail** avec un lien vers la conversation d'origine. Cliquez sur **voir la conversation** pour revenir directement au fil de la boite de reception.
+
+Ce lien n'est stocke que lors de la creation via l'action de conversion de la boite de reception ; le modifier ou le dupliquer par la suite ne le modifie ni ne le supprime.
+
 ## Statuts des devis
 
 | Statut | Description |

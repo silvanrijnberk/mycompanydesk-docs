@@ -58,6 +58,7 @@ Elke factuur heeft een detailpagina met:
 - Totaalbedrag
 - Status en geschiedenis
 - Betaallink (indien verstuurd)
+- Bron-gesprek (indien aangemaakt vanuit een Postvak IN-gesprek)
 
 ## Acties
 
@@ -97,6 +98,12 @@ Annuleer een factuur die niet meer betaald hoeft te worden. Geannuleerde facture
 ### Dupliceren
 
 Maak een kopie van een bestaande factuur — handig voor terugkerende facturatie aan dezelfde klant.
+
+### Bron-gesprek
+
+Als een factuur is aangemaakt vanuit een e-mail in je Postvak IN, toont de detailpagina een banner **Aangemaakt vanuit e-mail** met een link naar het oorspronkelijke gesprek. Klik op **bekijk het gesprek** om in één keer terug te springen naar het Postvak IN-gesprek.
+
+Deze link wordt alleen opgeslagen bij het aanmaken vanuit de inbox-converteeractie; later bewerken of dupliceren wijzigt of verwijdert hem niet.
 
 ### Herinnering sturen
 

@@ -84,6 +84,10 @@ La page de detail de la facture recurrente affiche toutes les factures precedemm
 
 Si une facture a été générée à partir d'un modèle récurrent, la page de détail de la facture affiche un bandeau **Créé automatiquement depuis une facture récurrente** avec un lien vers ce modèle. Vous pouvez ainsi passer d'une facture individuelle au modèle qui l'a produite en un clic.
 
+## Tâches liées
+
+Les modèles de factures récurrentes supportent les liens de tâches. Depuis la page de détail, vous pouvez lier une tâche au modèle ; la tâche affiche alors le nom du modèle avec un lien direct vers celui-ci. Cela permet de suivre le travail de suivi rattaché à la planification de facturation — par exemple la préparation du contenu avant l'envoi de la prochaine facture.
+
 ## Actions groupees
 
 - **Mettre en pause / Reprendre** -- Basculez plusieurs factures recurrentes

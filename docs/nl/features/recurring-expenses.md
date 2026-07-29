@@ -68,6 +68,10 @@ Elke gegenereerde uitgave:
 
 Als een uitgave is aangemaakt vanuit een terugkerend sjabloon, toont de uitgavedetailpagina een banner **Automatisch aangemaakt vanuit terugkerende uitgave** met een link terug naar dat sjabloon. Zo spring je in één klik van een enkele uitgave naar het sjabloon dat hem heeft gegenereerd.
 
+## Gekoppelde taken
+
+Terugkerende-uitgavesjablonen ondersteunen takenkoppelingen. Op de detailpagina koppel je een taak aan het sjabloon; de taak toont de sjabloonnaam met een directe link terug. Handig voor opvolgwerk bij de kostenpost — bijvoorbeeld een herinnering om een abonnement op te zeggen of te verlengen.
+
 ## Wat gebeurt er als mijn pakket wijzigt?
 
 Terugkerende uitgaven horen bij het Office-abonnement. Als je van Desk naar Office upgradet, start de automatische aanmaak vanaf de eerstvolgende vervaldatum. Als je van Office naar Desk downgradet, wordt de aanmaak automatisch gepauzeerd. Het sjabloon en de uitgaven die al zijn aangemaakt blijven in je werkruimte staan, en bij een latere upgrade wordt het schema hervat.

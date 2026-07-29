@@ -68,6 +68,10 @@ Each generated expense:
 
 If an expense was created from a recurring template, the expense detail page shows an **automatically created from recurring expense** banner with a link back to that template. This lets you jump straight from a single expense to the template that generated it.
 
+## Linked tasks
+
+Recurring expense templates support task links. On the detail page you can link a task to the template, and the linked task shows the template name with a direct link back. Use this to track follow-up work tied to the cost — for example a renewal check or cancellation reminder.
+
 ## What happens if my plan changes?
 
 Recurring expenses are part of the Office plan. If you upgrade from Desk to Office, scheduled generation starts from the next due date. If you downgrade from Office to Desk, generation pauses automatically; existing templates and previously generated expenses stay in your workspace, and generation resumes when you upgrade again.
