@@ -1,102 +1,56 @@
 ---
-title: Übersicht der Einstellungen
+title: Einstellungen Übersicht
 last_verified: 2026-07-29
 ---
 
-# Übersicht der Einstellungen
+# Einstellungen Übersicht
 
-Alles, was Sie in MyCompanyDesk konfigurieren können, liegt auf einer einzigen Einstellungsseite. Öffnen Sie **Einstellungen** im Menü oder gehen Sie zu `/settings`. Jedes Thema ist eine Zeile über die volle Breite, sortiert in drei verständliche Gruppen, und jede Einstellung ist höchstens zwei Klicks entfernt.
-
-Es gibt keinen getrennten Baum mehr für Unternehmens- und persönliche Einstellungen. Persönliche Themen und Unternehmensthemen stehen auf derselben Seite; die Gruppenüberschriften machen deutlich, was wozu gehört. Alte gespeicherte Einstellungslinks leiten automatisch auf die passende neue Seite weiter.
-
-Die Zeilennamen unten entsprechen der deutschen Oberfläche der App; nutzen Sie die App auf Niederländisch, sehen Sie die niederländischen Bezeichnungen.
+MyCompanyDesk gruppiert Einstellungen unter **Einstellungen** im Seitenmenü. Jeder Abschnitt ist unten kurz beschrieben.
 
 ## Über dich
 
-Persönliche Einstellungen. Sie gelten nur für Ihr eigenes Konto und ändern nichts für Teamkollegen.
+Diese Einstellungen gelten nur für Ihr Benutzerprofil.
 
-| Zeile | Was Sie dort regeln |
-|---|---|
-| **Deine Daten** | Ihr Name, Ihre E-Mail-Adresse und Ihr Foto |
-| **Anmelden** | Passwort, Bestätigung in zwei Schritten, Passkeys und Abmelden |
-| **Benachrichtigungen** | Worüber wir Ihnen eine Nachricht schicken, plus Push-Benachrichtigungen auf diesem Gerät |
-| **Darstellung** | Hell oder dunkel, Schriftgröße, Sprache der App und wie viel Sie über Listen sehen (ausführlich oder reduziert) |
+| Abschnitt | Was Sie dort einstellen |
+|-----------|-------------------------|
+| **Profiel** | Name, E-Mail, Telefon, Passwort, Zwei-Faktor-Authentifizierung |
+| **Bedrijf** | Ihr Arbeitgeber, Ihre Rolle und verknüpfter Arbeitsbereich |
+| **Darstellung** | Hell oder dunkel, Schriftgröße, Sprache der App und die Dichte-Einstellung **Zahlen über Ihren Listen**: **Erweitert** (mit Zusammenfassungen und Summen) oder **Reduziert** (nur die Liste) |
+| **Notificaties** | Welche E-Mail- und Push-Benachrichtigungen Sie erhalten |
+| **Betaalmethode** | Ihre eigenen Zahlungsmethoden für Käufe in der App |
 
-Siehe [Ihre persönlichen Einstellungen](/de/account/profile) für einen Rundgang durch diese vier Seiten.
+## Arbeitsbereich-Einstellungen
 
-## Dein Unternehmen
+Diese gelten für den Arbeitsbereich, in dem Sie sich gerade befinden. Sie brauchen die richtige Rolle, um sie zu ändern.
 
-Geteilte Einstellungen. Änderungen hier gelten für alle in Ihrem Arbeitsbereich.
-
-| Zeile | Was Sie dort regeln |
-|---|---|
-| **Unternehmensdaten** | Name, Adresse, Handelsregister- und USt-Nummer; diese erscheinen auf Ihren Rechnungen und Angeboten |
-| **Logo und Farbe** | Wie Ihre Rechnungen und Angebote aussehen |
-| **Rechnungen und Angebote** | Zahlungsfrist, automatische Zahlungserinnerungen und Gültigkeitsdauer von Angeboten |
-| **Rechnungsgestaltung** | Layout, Farbe und Schriftart Ihrer Rechnungen, mit Live-Vorschau |
-| **Bezahlung** | Wie Kunden Sie bezahlen können: IBAN, iDEAL und PayPal |
-| **MwSt.** | Ihr üblicher Steuersatz, wie oft Sie die Erklärung abgeben und die KOR-Kleinunternehmerregelung |
-| **E-Mail** | Von welcher Adresse Ihre Rechnungen und Angebote verschickt werden |
-| **Deine Website und Domain** | Ihre eigene Website und Ihr Domainname |
-| **Module** | Teile der App ein- oder ausschalten: Angebote, Belegscan, Verträge, Projekte, Website, Newsletter |
-| **Zugang und Buchhalter** | Geben Sie einem Partner, Mitarbeiter oder Ihrem Buchhalter Zugang zu Ihrer Buchhaltung |
-
-## Abonnement und Daten
-
-| Zeile | Was Sie dort regeln |
-|---|---|
-| **Dein Abonnement** | Was Sie zahlen und was enthalten ist |
-| **Meine Anfragen** | Ihre Supportanfragen anzeigen und verwalten |
-| **Daten herunterladen** | Alles, was Sie gespeichert haben, in einer Datei |
-| **Konto kündigen** | MyCompanyDesk beenden |
-
-## Zeilen nur für Administratoren
-
-Drei Zeilen sind nur für Team-Administratoren sichtbar: **Zugang und Buchhalter**, **Dein Abonnement** und **Konto kündigen**. Wurden Sie als Teammitglied ohne Administratorrechte eingeladen, sehen Sie diese Zeilen nicht; bitten Sie den Administrator des Arbeitsbereichs um diese Änderungen.
-
-## Suche
-
-Drücken Sie **Cmd+K** (Mac) oder **Strg+K** (Windows und Linux), oder klicken Sie in das Suchfeld oben auf der Einstellungsseite. Während Sie tippen, werden die Zeilen gefiltert, und Alltagswörter funktionieren ebenfalls: "iban" findet **Bezahlung**, "dunkel" findet **Darstellung**, "Erklärung" findet **MwSt.**
-
-Einige Seiten erscheinen nur über die Suche, damit die Hauptliste ruhig bleibt:
-
-- **Bankkonto verbinden**: öffnet die Bankverbindung in den Ausgaben-Einstellungen, damit eingehende Transaktionen automatisch als Ausgaben erkannt werden.
-- **API-Schlüssel** und **Webhooks**: Einstellungen für Entwickler, sichtbar, wenn die öffentliche API auf Ihrem Konto verfügbar ist.
+| Abschnitt | Was Sie dort einstellen |
+|-----------|-------------------------|
+| **Algemeen** | Name des Arbeitsbereichs, Adresse, Kontaktdaten, Handelsregisternummer, USt-IdNr. und Logo |
+| **Facturen** | Standard-Rechnungsnummerierung, Zahlungsbedingungen, Mahnungen und Online-Zahlungsmethoden |
+| **Offertes** | Standard-Angebotsnummerierung, Zahlungsbedingungen und Layout |
+| **Projecten** | Projektstatusse, abrechnungsfähige Standardeinstellungen und Aufgabenkategorien |
+| **Uren** | Standardeinstellungen für Zeiterfassung, Einheiten und den Nur-Stunden-Modus |
+| **Reizen** | Standard-Kilometersatz, Fahrzeugeigentum und Reisekategorien |
+| **Objecten** | Objekttypen, Statusse und benutzerdefinierte Felder |
+| **Producten** | Produktkatalog, Kategorien und Standard-MwSt.-Sätze |
+| **Relaties** | Kunden- und Lieferantenstandards, benutzerdefinierte Felder und Adressformatierung |
+| **Gebruikers** | Mitglieder des Arbeitsbereichs, Rollen und Berechtigungen |
+| **Rollen** | Welche Menüpunkte und Aktionen jede Rolle aufrufen darf |
+| **Abonnement** | Abonnement, Abrechnungszeitraum und Zahlungsdetails |
 
 ## Wo finde ich...
 
-| Ich möchte... | Öffnen Sie |
-|---|---|
-| Meinen Namen oder mein Foto ändern | **Deine Daten** |
-| Mein Passwort ändern oder die Bestätigung in zwei Schritten einrichten | **Anmelden** |
-| Auswählen, worüber ich benachrichtigt werde | **Benachrichtigungen** |
-| Dunkelmodus, größere Schrift, eine andere App-Sprache oder Zusammenfassungen über Listen ausblenden | **Darstellung** |
-| Meine Firmenadresse oder USt-Nummer korrigieren | **Unternehmensdaten** |
-| Ein Logo hochladen oder meine Markenfarbe ändern | **Logo und Farbe** |
-| Die Zahlungsfrist oder Erinnerungsmails anpassen | **Rechnungen und Angebote** |
-| Meine Rechnungs-PDF neu gestalten | **Rechnungsgestaltung** |
-| Meine IBAN hinterlegen oder Kunden mit iDEAL zahlen lassen | **Bezahlung** |
-| Meinen Steuersatz oder Erklärungsrhythmus ändern | **MwSt.** |
-| Rechnungen von meiner eigenen E-Mail-Adresse senden | **E-Mail** |
-| Meine Website oder Domain einrichten | **Deine Website und Domain** |
-| Angebote, Projekte oder Newsletter ein- oder ausschalten | **Module** |
-| Meinem Buchhalter Zugang geben | **Zugang und Buchhalter** (Administratoren) |
-| Mein Abonnement upgraden oder einsehen | **Dein Abonnement** (Administratoren) |
-| Meine Bank verbinden | Suchen Sie nach "Bank verbinden" |
-| Eine Kopie meiner Daten herunterladen | **Daten herunterladen** |
-| Mein Konto kündigen | **Konto kündigen** (Administratoren) |
+| Ich möchte... | Gehen Sie zu |
+|---------------|--------------|
+| Meinen Namen, E-Mail oder Passwort ändern | **Profiel** |
+| Dunkelmodus, größere Schrift, eine andere App-Sprache oder Zusammenfassungen über und neben Listen ausblenden | **Darstellung** |
+| Logo und Firmendaten meines Arbeitsbereichs festlegen | **Algemeen** |
+| Rechnungsnummerierung oder Zahlungsbedingungen ändern | **Facturen** |
+| Ein neues Mitglied hinzufügen | **Gebruikers** |
+| Ändern, wer was sehen oder bearbeiten darf | **Rollen** |
 
-Die Kalendersynchronisierung mit Google oder Outlook liegt nicht auf der Einstellungsseite; einen Kalender verbinden Sie aus den Einstellungen des Kalenders selbst. Siehe [Ihre persönlichen Einstellungen](/de/account/profile#verbundene-kalender).
+## Verwandt
 
-## Alte Links
-
-Einstellungs-URLs aus früheren Versionen der App, einschließlich der alten getrennten Bäume für Arbeitsbereichs- und persönliche Einstellungen, leiten auf die passende neue Seite weiter. Lesezeichen und Links in alten E-Mails funktionieren weiterhin.
-
-## Verwandte Seiten
-
-- Der [Einrichtungsassistent](/de/features/setup-wizard) füllt die meisten Unternehmenseinstellungen beim ersten Start aus und kann jederzeit erneut durchlaufen werden.
-- [Ihre persönlichen Einstellungen](/de/account/profile) behandelt die Gruppe Über dich im Detail.
-- [Sicherheit](/de/account/security) behandelt Passwörter, Bestätigung in zwei Schritten und Passkeys.
-- [Datenimport und -export](/de/account/data) behandelt Daten herunterladen und den CSV-Import.
-- [Teamverwaltung](/de/settings/team) behandelt den Zugang für Partner und Buchhalter.
-- [Abonnement und Pläne](/de/settings/billing) behandelt Ihr Abonnement.
+- [Profileinstellungen](/de/account/profile)
+- [Rechnungseinstellungen](/de/settings/invoices)
+- [Angebotseinstellungen](/de/settings/quotes)
