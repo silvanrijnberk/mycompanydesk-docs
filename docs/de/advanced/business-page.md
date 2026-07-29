@@ -20,6 +20,8 @@ Der Website-Builder ersetzt das alte einseitige Unternehmensprofil. Jeder neue W
 
 Den Website-Builder finden Sie unter **Unternehmen > Ihre Website** (`/website`).
 
+Wenn Sie `/website` öffnen, landen Sie auf dem Bereichsüberblick: er zeigt Ihre Live-Site, den Veröffentlichungsstatus und einen klaren Einstieg in den Editor. Der Editor selbst liegt unter `/website/editor` und wird bewusst über die Übersichtsseite aufgerufen, anstatt beim Öffnen gleich den gesamten Bildschirm zu übernehmen.
+
 ## KI-Schnellstart
 
 Wenn Sie den Website-Builder zum ersten Mal in einem neuen Workspace öffnen, erscheint ein Schnellstart-Banner oben. Es liest Ihre Handelsregisterdaten (Firmenname, Branche, Stadt) und schlägt einen ersten Claim, einen Über-uns-Text und drei Dienstleistungen vor. Sie können alles direkt anpassen bevor Sie übernehmen, neu generieren wenn der erste Vorschlag nicht ganz passt, oder das Banner ausblenden. Keine Wizard-Fragen, keine Hürde vorab.
