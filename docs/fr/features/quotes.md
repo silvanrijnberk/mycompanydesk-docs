@@ -30,6 +30,8 @@ Le formulaire de devis est similaire au formulaire de facture -- si vous savez c
 
 Le PDF du devis est joint a l'e-mail pour que le client puisse l'examiner.
 
+Si votre espace de travail a des conditions generales dans Documents, l'apercu d'e-mail propose aussi l'option **Joindre les conditions generales**. Elle est activee par defaut pour les devis. Quand elle est activee, le PDF des conditions actuelles est joint a l'e-mail et l'envoi est enregistre comme evenement de remise sur le document des conditions.
+
 ## Actions sur la page de detail du devis
 
 L'action principale sur la page de detail du devis depend du statut du devis :

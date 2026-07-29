@@ -56,8 +56,13 @@ La page de detail du client affiche :
 - **Historique des factures** -- Chaque facture envoyee a ce client
 - **Historique des depenses** -- Depenses liees a ce client
 - **Contrats** -- Contrats actifs et inactifs, avec badges de statut de signature et une icone d'apercu PDF lorsque la signature electronique est activee
+- **Documents**: accords enregistres pour ce client, comme les conditions generales, les NDAs et les contrats de sous-traitance. Si le client a un contrat mais pas de contrat de sous-traitance, un indicateur apparait avec un lien pour en creer un.
 - **Projets** -- Projets actifs et termines
 - **Statistiques** -- Chiffre d'affaires total, solde en cours, delai de paiement moyen
+
+### Manque de contrat de sous-traitance
+
+Quand un client a un contrat mais aucun contrat de sous-traitance (DPA) dans Documents, la carte Documents sur la fiche client affiche un indicateur et un lien **Rediger un contrat de sous-traitance**. Cela signale une lacune de conformite a l'endroit ou vous etes susceptible d'agir. L'indicateur n'apparait que si les modules Documents et Contrats sont actives et que la carte serait sinon vide.
 
 ### Banniere de sante des e-mails
 

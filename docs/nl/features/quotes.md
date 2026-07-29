@@ -30,6 +30,8 @@ Het offerteformulier lijkt op het factuurformulier — als je weet hoe je een fa
 
 De offerte-PDF wordt als bijlage bij de e-mail gevoegd zodat de klant deze kan bekijken.
 
+Als je werkruimte algemene voorwaarden in Documenten heeft staan, toont de e-mailvoorbeelddialoog ook de schakelaar **Algemene voorwaarden meesturen**. Deze staat standaard aan voor offertes. Als je hem inschakelt, wordt de huidige voorwaarden-PDF bij de e-mail gevoegd en wordt de verzending vastgelegd als het terhandstellingsmoment op het voorwaardendocument.
+
 ## Acties op de offertedetailpagina
 
 De hoofdactie op de offertedetailpagina hangt af van de offertestatus:

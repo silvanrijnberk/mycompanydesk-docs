@@ -30,6 +30,8 @@ Das Angebotsformular ähnelt dem Rechnungsformular — wenn Sie wissen, wie man 
 
 Das Angebots-PDF wird der E-Mail als Anhang beigefügt, damit der Kunde es überprüfen kann.
 
+Wenn in Ihrem Arbeitsbereich Allgemeine Geschäftsbedingungen in Dokumenten hinterlegt sind, zeigt der E-Mail-Vorschau-Dialog außerdem den Schalter **Allgemeine Geschäftsbedingungen mitschicken** an. Er ist für Angebote standardmäßig aktiviert. Wenn Sie ihn einschalten, wird die aktuelle AGB-PDF der E-Mail beigefügt und der Versand als Übergabemoment auf dem AGB-Dokument protokolliert.
+
 ## Detailaktionen für Angebote
 
 Die Hauptaktion auf der Angebotsdetailseite richtet sich nach dem Angebotsstatus:

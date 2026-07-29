@@ -82,6 +82,8 @@ Envoyez la facture a votre client par e-mail. L'e-mail comprend :
 - La facture PDF en piece jointe
 - Un lien de paiement pour le paiement en ligne
 
+Si votre espace de travail a des conditions generales dans Documents, l'apercu d'e-mail comprend aussi l'option **Joindre les conditions generales**. Pour les factures, elle est desactivee par defaut. Quand elle est activee, le PDF des conditions actuelles est joint a l'e-mail et l'envoi est enregistre comme evenement de remise sur le document des conditions.
+
 ### Telecharger le PDF
 
 Telechargez la facture sous forme de document PDF mis en forme professionnellement. Le PDF inclut le logo de votre entreprise, les couleurs de votre marque et tous les details de la facture.
