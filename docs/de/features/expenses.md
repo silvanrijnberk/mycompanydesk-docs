@@ -91,6 +91,26 @@ Jede Ausgabe kann ihren eigenen USt.-Satz haben. Gängige Optionen:
 
 Der USt.-Betrag wird automatisch berechnet und in Ihre [USt.-Berichte](/de/features/vat) aufgenommen.
 
+### USt.-Behandlung
+
+In Sonderfällen legst du die USt.-Behandlung für die Ausgabe fest:
+
+- **Standard**: inländische USt.
+- **Reverse-Charge (EU)**: du bilanzierst die USt. selbst für einen EU-B2B-Einkauf, Rubrik 4b.
+- **Reverse-Charge (außerhalb der EU)**: ein Lieferant außerhalb der EU stellt 0 % USt. in Rechnung, du bilanzierst sie selbst in Rubrik 4a. Verwende dies zum Beispiel für einen US-Lieferanten wie Anthropic oder OpenAI.
+- **Befreit**: die Leistung ist von der USt. befreit.
+- **Ausländische USt. in Rechnung gestellt**: ausländische USt., die eventuell über das EU-Erstattungsverfahren zurückzuholen ist.
+
+Die Behandlung wird normalerweise aus der Kategorie übernommen. Du kannst sie pro Ausgabe überschreiben.
+
+### USt.-Betrag manuell
+
+Normalerweise berechnet MyCompanyDesk den USt.-Betrag aus dem Satz und dem Nettobetrag. Stimmt das nicht mit dem Lieferantendokument überein, zum Beispiel einer Gutschrift mit Netto EUR 0 und nur USt., kannst du den USt.-Betrag manuell eingeben. Der Satz steuert den Betrag dann nicht mehr; das Formular verwendet deine Eingabe.
+
+### Korrekturen in gesperrten Perioden
+
+Sitzt eine Ausgabe in einer gesperrten USt.-Periode, blockiert das Formular Änderungen an den Finanzfeldern und bietet einen Korrekturweg an. Die Korrektur wird in der aktuell offenen Periode erstellt und verweist auf den ursprünglichen gesperrten Beleg, sodass die Nachvollziehbarkeit erhalten bleibt.
+
 ## Ausgaben verknüpfen
 
 Verknüpfen Sie Ausgaben mit:

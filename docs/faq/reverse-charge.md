@@ -27,3 +27,15 @@ When you receive a reverse-charge invoice from a supplier, MyCompanyDesk needs t
 - A supplier from another EU country goes to rubriek 4b (intra-EU acquisition).
 
 If the supplier country or KVK number is missing, the pre-filing check on the VAT page flags the expense and blocks filing until you fix it. Open the expense, add the missing country or KVK number, then run the pre-filing checks again.
+
+## Import reverse charge (non-EU suppliers)
+
+Some suppliers outside the EU do not charge Dutch VAT on their invoices. Instead, you self-account for the VAT on your aangifte. In MyCompanyDesk this is `import_reverse_charge` and it lands in rubriek 4a, not 4b.
+
+Use this treatment when:
+
+- The supplier is outside the EU.
+- The invoice shows 0% VAT and you must report the VAT yourself.
+- Examples include AI platform invoices from US suppliers.
+
+Enter the supplier country and keep the net amount correct; MyCompanyDesk puts the self-charge in the right rubriek.

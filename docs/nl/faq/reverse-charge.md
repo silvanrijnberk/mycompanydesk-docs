@@ -27,3 +27,15 @@ Ontvang je een factuur met verlegde BTW van een leverancier, dan moet MyCompanyD
 - Een leverancier uit een ander EU-land komt in rubriek 4b (intracommunautaire verwerving).
 
 Ontbreekt het land of het KVK-nummer, dan markeert de controle voor het indienen op de BTW-pagina de uitgave en blokkeert het indienen totdat je het aanvult. Open de uitgave, vul het ontbrekende land of KVK-nummer in en voer de controles opnieuw uit.
+
+## Importverleggingsregeling (leveranciers buiten de EU)
+
+Sommige leveranciers buiten de EU rekenen geen Nederlandse BTW op hun factuur. Jij moet de BTW dan zelf aangeven op je aangifte. In MyCompanyDesk heet dit `import_reverse_charge` en komt het in rubriek 4a, niet 4b.
+
+Gebruik deze behandeling als:
+
+- De leverancier buiten de EU zit.
+- De factuur 0% BTW toont en jij de BTW zelf moet aangeven.
+- Voorbeelden zijn facturen van Amerikaanse AI-platformen.
+
+Vul het land van de leverancier in en controleer het nettobedrag; MyCompanyDesk zet de zelfberekende BTW in de juiste rubriek.

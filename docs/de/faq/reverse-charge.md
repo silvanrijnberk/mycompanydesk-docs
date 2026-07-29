@@ -27,3 +27,15 @@ Wenn Sie eine Reverse-Charge-Rechnung von einem Lieferanten erhalten, muss MyCom
 - Ein Lieferant aus einem anderen EU-Land landet in Rubrik 4b (innergemeinschaftlicher Erwerb).
 
 Fehlt das Land oder die KVK-Nummer, markiert die Prüfung vor der Abgabe auf der USt.-Seite die Ausgabe und blockiert die Abgabe, bis Sie es ergänzt haben. Öffnen Sie die Ausgabe, ergänzen Sie das fehlende Land oder die KVK-Nummer, und führen Sie die Prüfungen erneut aus.
+
+## Import-Reverse-Charge (Lieferanten außerhalb der EU)
+
+Manche Lieferanten außerhalb der EU berechnen keine niederländische USt. auf ihrer Rechnung. Dann bilanzieren Sie die USt. selbst in Ihrer Erklärung. In MyCompanyDesk heißt das `import_reverse_charge` und landet in Rubrik 4a, nicht 4b.
+
+Verwenden Sie diese Behandlung, wenn:
+
+- Der Lieferant außerhalb der EU sitzt.
+- Die Rechnung 0 % USt. zeigt und Sie die USt. selbst melden müssen.
+- Beispiele sind Rechnungen von US-amerikanischen AI-Plattformen.
+
+Tragen Sie das Lieferantenland ein und prüfen Sie den Nettobetrag; MyCompanyDesk setzt die selbstberechnete USt. in die richtige Rubrik.

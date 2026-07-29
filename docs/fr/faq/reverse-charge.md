@@ -27,3 +27,15 @@ Quand vous recevez une facture en autoliquidation d'un fournisseur, MyCompanyDes
 - Un fournisseur d'un autre pays de l'UE va dans la rubrique 4b (acquisition intracommunautaire).
 
 Si le pays ou le numéro KVK manque, le contrôle avant dépôt sur la page TVA signale la dépense et bloque le dépôt tant que vous ne l'avez pas complété. Ouvrez la dépense, ajoutez le pays ou le numéro KVK manquant, puis relancez les contrôles.
+
+## Autoliquidation d'importation (fournisseurs hors UE)
+
+Certains fournisseurs hors UE ne facturent pas de TVA néerlandaise. Vous devez alors déclarer vous-même la TVA. Dans MyCompanyDesk, cela s'appelle `import_reverse_charge` et entre dans la rubrique 4a, pas 4b.
+
+Choisissez ce traitement quand :
+
+- Le fournisseur est situé hors UE.
+- La facture affiche 0 % de TVA et vous devez déclarer la TVA vous-même.
+- Les exemples incluent les factures de plateformes d'IA américaines.
+
+Saisissez le pays du fournisseur et vérifiez le montant net; MyCompanyDesk place l'autoliquidation dans la bonne rubrique.
