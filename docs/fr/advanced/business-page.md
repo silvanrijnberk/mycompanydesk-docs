@@ -81,7 +81,7 @@ Vous pouvez y ajouter :
 - **Coordonnées**: activez l'affichage de votre e-mail, téléphone et adresse depuis vos données d'entreprise.
 - **Liens sociaux**: activez l'affichage des liens sociaux enregistrés dans vos données d'entreprise.
 
-La conception contrôle toujours la couleur, la typographie et l'espacement ; vous fournissez uniquement le contenu. Les liens acceptent les chemins internes (`/contact`), les URL HTTPS externes, les e-mails (`mailto:`) ou les téléphones (`tel:`). Si un modèle affiche déjà vos coordonnées ou liens sociaux dans le pied de page, le bouton correspondant est masqué pour éviter les doublons.
+La conception contrôle toujours la couleur, la typographie et l'espacement ; vous fournissez uniquement le contenu. Les liens acceptent les chemins internes (`/contact`), les URL HTTPS externes, les e-mails (`mailto:`) ou les téléphones (`tel:`). Si un modèle affiche déjà vos coordonnées ou liens sociaux dans le pied de page, l'interrupteur correspondant est masqué pour éviter les doublons.
 
 ### Remplacer les liens des boutons de section
 

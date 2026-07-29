@@ -72,7 +72,7 @@ Klicken Sie auf einen Abschnitt, um ihn ausgewählt zu halten; der Rahmen bleibt
 
 ### Fußzeileninhalt
 
-Bespoke-Vorlagen mit einer minimalen Fußzeile erlauben es Ihnen jetzt, eigene Fußzeilen-Inhalte hinzuzufügen, ohne das Design zu ändern. Öffnen Sie eine Seite im Bespoke-Content-Editor und scrollen Sie zum Panel **Fußzeile**.
+Bespoke-Vorlagen mit einer minimalen Fußzeile erlauben es Ihnen jetzt, eigene Fußzeileninhalte hinzuzufügen, ohne das Design zu ändern. Öffnen Sie eine Seite im Bespoke-Content-Editor und scrollen Sie zum Panel **Fußzeile**.
 
 Dort können Sie hinzufügen:
 

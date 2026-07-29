@@ -72,7 +72,7 @@ Click a section to keep it selected; the outline then stays visible even when yo
 
 ### Footer content
 
-Bespoke templates that ship a minimal footer now let you add your own footer content without changing the design. Open any page in the bespoke content editor and scroll to the **Voettekst** (footer) panel.
+Bespoke templates that include a minimal footer now let you add your own footer content without changing the design. Open any page in the bespoke content editor and scroll to the **Voettekst** (footer) panel.
 
 From there you can add:
 
@@ -81,7 +81,7 @@ From there you can add:
 - **Contact details**: toggle to show your email, phone and address from your company details.
 - **Social links**: toggle to show the social links saved in your company details.
 
-The design still controls colour, type and spacing; you only supply the content. Links accept internal paths (`/contact`), external HTTPS URLs, email (`mailto:`) or phone (`tel:`). If a template already shows contact or social details in its footer, the matching toggle is hidden so nothing duplicates.
+The design still controls colour, type and spacing; you only supply the content. Links accept internal paths (`/contact`), external HTTPS URLs, email (`mailto:`) or phone (`tel:`). If a template already shows contact or social details in its footer, the matching toggle is hidden to avoid duplicates.
 
 ### Overriding section button links
 
