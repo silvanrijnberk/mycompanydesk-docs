@@ -64,9 +64,13 @@ Elke gegenereerde uitgave:
 - Is gedateerd op de geplande uitvoeringsdatum
 - Kan na aanmaak onafhankelijk worden bewerkt
 
+## Bronlink
+
+Als een uitgave is aangemaakt vanuit een terugkerend sjabloon, toont de uitgavedetailpagina een banner **Automatisch aangemaakt vanuit terugkerende uitgave** met een link terug naar dat sjabloon. Zo spring je in één klik van een enkele uitgave naar het sjabloon dat hem heeft gegenereerd.
+
 ## Wat gebeurt er als mijn pakket wijzigt?
 
-Terugkerende uitgaven horen bij het Office-abonnement. Als je van Desk naar Office upgradet, start de automatische aanmaak vanaf de eerstvolgende vervaldatum. Als je van Office naar Desk downgradet, wordt de aanmaak automatisch gepauzeerd, ook bij eventuele DigitalOcean-alerts. Het sjabloon en de uitgaven die al zijn aangemaakt blijven in je werkruimte staan, en bij een latere upgrade wordt het schema hervat.
+Terugkerende uitgaven horen bij het Office-abonnement. Als je van Desk naar Office upgradet, start de automatische aanmaak vanaf de eerstvolgende vervaldatum. Als je van Office naar Desk downgradet, wordt de aanmaak automatisch gepauzeerd. Het sjabloon en de uitgaven die al zijn aangemaakt blijven in je werkruimte staan, en bij een latere upgrade wordt het schema hervat.
 
 ## Tips
 

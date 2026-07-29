@@ -64,9 +64,13 @@ Jede generierte Ausgabe:
 - Wird auf das geplante Vorkommensdatum datiert
 - Kann nach der Erstellung unabhängig bearbeitet werden
 
+## Quellenlink
+
+Wurde eine Ausgabe aus einer wiederkehrenden Vorlage erstellt, zeigt die Ausgabendetailseite einen Banner **Automatisch erstellt aus wiederkehrender Ausgabe** mit einem Link zurück zu dieser Vorlage. So springen Sie mit einem Klick von einer einzelnen Ausgabe zu der Vorlage, die sie erzeugt hat.
+
 ## Was passiert, wenn sich mein Tarif ändert?
 
-Wiederkehrende Ausgaben sind Teil des Office-Tarifs. Bei einem Upgrade von Desk auf Office startet die automatische Erstellung am nächsten Fälligkeitsdatum. Bei einer Herunterstufung von Office auf Desk wird die Erstellung automatisch pausiert, auch bei fälligen DigitalOcean-Alarmen. Die Vorlage und bereits erstellte Ausgaben bleiben in Ihrem Arbeitsbereich, und beim späteren Upgrade wird der Zeitplan fortgesetzt.
+Wiederkehrende Ausgaben sind Teil des Office-Tarifs. Bei einem Upgrade von Desk auf Office startet die automatische Erstellung am nächsten Fälligkeitsdatum. Bei einer Herunterstufung von Office auf Desk wird die Erstellung automatisch pausiert. Die Vorlage und bereits erstellte Ausgaben bleiben in Ihrem Arbeitsbereich, und beim späteren Upgrade wird der Zeitplan fortgesetzt.
 
 ## Tipps
 

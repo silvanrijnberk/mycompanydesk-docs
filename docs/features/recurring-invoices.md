@@ -80,9 +80,13 @@ Each time a recurring invoice fires, a new invoice is created:
 
 The recurring invoice detail page shows all previously generated invoices, so you can track the full billing history.
 
+## Source link
+
+If an invoice was generated from a recurring template, the invoice detail page shows a **created from recurring invoice** banner with a link back to that template. This lets you jump straight from a single invoice to the template that produced it.
+
 ## What happens if my plan changes?
 
-Recurring invoices are part of the Office plan. If you upgrade from Desk to Office, scheduled generation starts from the next due date. If you downgrade from Office to Desk, generation pauses automatically, including any due digitalocean alarms; existing templates and previously generated invoices stay in your workspace, and generation resumes when you upgrade again.
+Recurring invoices are part of the Office plan. If you upgrade from Desk to Office, scheduled generation starts from the next due date. If you downgrade from Office to Desk, generation pauses automatically; existing templates and previously generated invoices stay in your workspace, and generation resumes when you upgrade again.
 
 ## Bulk actions
 
