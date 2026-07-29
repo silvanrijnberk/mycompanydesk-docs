@@ -1,65 +1,55 @@
 ---
-title: Je persoonlijke instellingen
-last_verified: 2026-07-27
+title: Profielinstellingen
+last_verified: 2026-07-29
 ---
 
-# Je persoonlijke instellingen
+# Profielinstellingen
 
-Je persoonlijke instellingen staan in hetzelfde Instellingen-gedeelte als al het andere. Open **Instellingen** en kijk bij de groep **Over jou** bovenaan: vier rijen die alleen jouw eigen account raken, nooit je teamgenoten. Wijzigingen op deze pagina's worden automatisch opgeslagen terwijl je typt.
+Op de pagina **Profiel** stel je gegevens in die alleen bij jouw gebruikersaccount horen. Andere leden van dezelfde werkruimte zien deze keuzes niet.
 
-Zie het [overzicht van de instellingen](/nl/settings/) voor de volledige instellingenpagina.
+## Persoonlijke gegevens
 
-## Jouw gegevens
+Pas je naam, e-mailadres en telefoonnummer aan. Het e-mailadres wordt gebruikt voor inloggen, notificaties en het herstellen van je wachtwoord.
 
-Je naam, e-mailadres en profielfoto.
+## Beveiliging
 
-- **Voornaam** en **achternaam**. Je naam komt ook op je facturen te staan.
-- **E-mailadres**. Dit is je login en kun je hier niet wijzigen; het veld is alleen-lezen.
-- **Profielfoto**. Upload een PNG, JPG of WebP van maximaal 5 MB. Klanten zien de foto bij e-mails die je stuurt. Een foto is niet verplicht en je kunt hem altijd weer verwijderen.
+### Wachtwoord
 
-## Weergave
+Kies een sterk wachtwoord. Ben je het vergeten? Gebruik dan **Wachtwoord vergeten** op de inlogpagina om het opnieuw in te stellen.
 
-Hoe de app eruitziet voor jou, op elk apparaat waarop je inlogt.
+### Tweefactorauthenticatie
 
-- **Thema**: Licht, Donker of Vanzelf. Vanzelf volgt je apparaat: overdag licht, 's avonds donker.
-- **Tekstgrootte**: Normaal of Groot, voor iets rustiger lezen.
-- **Taal van de app**: Nederlands, Engels, Duits of Frans. Dit verandert alleen de knoppen en menu's voor jou; de taal van je facturen en offertes is een aparte keuze per document.
-- **Geavanceerde instellingen**: een schakelaar per apparaat die extra technische opties in de app zichtbaar maakt, zoals DNS- en SSL-beheer op de domeinpagina's. Laat hem uit als je die niet nodig hebt.
+Je kunt een extra beveiligingslaag inschakelen met tweefactorauthenticatie. Daarna vraagt elk inloggen ook om een code uit je authenticator-app. Bewaar je herstelcodes op een veilige plek.
 
-## Meldingen
+## Weergave-instellingen
 
-Vier schakelaars bepalen waarover MyCompanyDesk je een berichtje stuurt, in de app en per e-mail:
+Onder **Weergave** bepaal je hoe de app er voor jou op dit apparaat uitziet.
 
-- Als een factuur te laat betaald is, zodat je er meteen achteraan kunt.
-- Als een klant betaald heeft.
-- Als je bijna BTW-aangifte moet doen, ruim van tevoren.
-- Tips en nieuws van MyCompanyDesk, hooguit één mailtje per maand.
+- **Thema**: Licht, Donker of Vanzelf. Vanzelf volgt je apparaat: licht overdag, donker 's avonds.
+- **Tekstgrootte**: Normaal of Groot, voor comfortabeler lezen.
+- **Taal van de app**: Nederlands, Engels, Duits of Frans. Dit verandert alleen menu's en knoppen voor jou; de taal van facturen en offertes kies je per document.
+- **Cijfers boven je lijsten**: kies **Uitgebreid** (met samenvattingen en totalen) of **Rustig** (alleen de lijst). Rustig verbergt de samenvattingskaarten boven en naast lijstpagina's, zoals facturen, uitgaven, offertes en de agenda. Deze instelling geldt per apparaat en synchroniseert tussen tabbladen.
+- **Geavanceerde instellingen**: een schakelaar per apparaat die extra technische opties in de app toont, zoals DNS- en SSL-instellingen op de domeinpagina's. Laat dit uit staan tenzij je deze nodig hebt.
 
-Echt belangrijke berichten over je account sturen we altijd; die kun je niet uitzetten.
+## Notificaties
 
-Onder de schakelaars zet je **pushmeldingen op dit apparaat** aan, zodat achterstallige facturen, betalingen en deadlines je ook als melding op je telefoon of computer bereiken. Je browser of telefoon vraagt de eerste keer om toestemming. Sla je het over, dan kun je het later altijd aanzetten via het belletje voor meldingen bovenaan de app.
+Kies bij welke gebeurtenissen je een e-mail of pushnotificatie ontvangt. Je kunt categorieën in- of uitschakelen zoals herinneringen voor facturen, aflopende contracten en vermeldingen.
 
-Pushmeldingen werken in browsers en in de Android-app. Op Android gebruikt de melding het app-icoon en de kleur van de categorie; voor inbox-berichten toont hij ook de avatar van de afzender zodra de app die heeft geregistreerd. Oudere Android-builds zonder de native berichtenservice krijgen nog steeds de standaard melding die door het SDK wordt getekend.
+## Betaalmethoden
 
-## Gekoppelde agenda's
+Voeg je eigen creditcard of andere betaalmethoden toe. Deze worden gebruikt voor aankopen in de app, zoals abonnementsbetalingen.
 
-Je kunt **Google Agenda** of **Outlook** koppelen, zodat afspraken uit je agenda ook in MyCompanyDesk verschijnen. Dit is geen rij op de instellingenpagina: open de agenda in de app en ga naar de agenda-instellingen, daar staat de link naar de pagina met agendakoppelingen. Elke koppeling kun je op dezelfde pagina weer verwijderen.
+## Bedrijf
 
-## Klantlocaties
+Onder **Bedrijf** zie je de werkruimte waarin je momenteel bent ingelogd en jouw rol daarin. Heb je toegang tot meerdere werkruimtes, dan kun je hier tussen wisselen.
 
-De kaart **Klantlocaties** op de mobiele instellingenpagina toont hoeveel van je klanten met een adres op de kaart te vinden zijn. Locatiefuncties zoals automatisch inchecken en het vinden van klanten in de buurt werken alleen voor klanten waarvan het adres is omgezet naar coördinaten.
+## Waar vind je het
 
-De kaart toont:
+- Klik op je avatar of initialen rechtsboven.
+- Kies **Profiel** in het menu.
 
-- hoeveel klanten met een adres zijn gevonden
-- hoeveel nog opgezocht moeten worden
-- een knop om adressen in één keer bij te werken
-- een korte lijst met klanten waarvan het adres niet gevonden kon worden, zodat je die kunt corrigeren
+## Gerelateerd
 
-Als je een klantadres wijzigt, worden de opgeslagen coördinaten automatisch gewist. Bij de volgende zoekopdracht wordt het nieuwe adres opnieuw geprobeerd.
-
-## Gerelateerde pagina's
-
-- [Overzicht van de instellingen](/nl/settings/) voor al het andere op de instellingenpagina.
-- [Beveiliging](/nl/account/security) voor wachtwoorden, verificatie in twee stappen en passkeys, te vinden onder **Inloggen**.
-- [Gegevens importeren en exporteren](/nl/account/data) voor het downloaden van een kopie van je gegevens.
+- [Instellingen overzicht](/nl/settings)
+- [Gebruikers & rollen](/nl/settings/users)
+- [Tweefactorauthenticatie](/nl/security/2fa)
