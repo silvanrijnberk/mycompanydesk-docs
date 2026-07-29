@@ -5,96 +5,52 @@ last_verified: 2026-07-29
 
 # Settings overview
 
-Everything you can configure in MyCompanyDesk lives on a single settings page. Open **Instellingen** (Settings) from the menu, or go to `/settings`. Every topic is a full-width row, sorted into three plain-language groups, and each setting is at most two clicks away.
-
-There is no longer a separate tree for company settings and personal settings. Personal topics and business topics sit on the same page; the group headers make clear which is which. Old bookmarked settings links redirect to the matching new page automatically.
+MyCompanyDesk groups settings under **Instellingen** (settings) in the side menu. Each section is described briefly below.
 
 ## Over jou (about you)
 
-Personal settings. They apply to your own account and never change anything for teammates.
+These settings apply to your user profile only.
 
-| Row | What it covers |
-|---|---|
-| **Jouw gegevens** (your details) | Your name, email address and photo |
-| **Inloggen** (signing in) | Password, two-step verification, passkeys and logging out |
-| **Meldingen** (notifications) | Which events we message you about, plus push notifications on this device |
-| **Weergave** (display) | Light or dark theme, text size, app language and how much you see above lists (dense or calm) |
+| Section | What you set there |
+|-----------|--------------------|
+| **Profiel** | Name, email, phone, password, two-factor authentication |
+| **Bedrijf** | Your employer, role and linked workspace |
+| **Weergave** (display) | Light or dark theme, text size, app language and the **Numbers above your lists** density setting: **Extended** (with summaries and totals) or **Calm** (just the list) |
+| **Notificaties** | Which email and push notifications you receive |
+| **Betaalmethode** | Your own payment methods for purchases in the app |
 
-See [Your personal settings](/account/profile) for a walkthrough of these four pages.
+## Workspace settings
 
-## Je bedrijf (your business)
+These affect the workspace you are currently in. You need the right role to change them.
 
-Shared settings. Changes here apply to everyone in your workspace.
-
-| Row | What it covers |
-|---|---|
-| **Bedrijfsgegevens** (business details) | Name, address, KvK and VAT number; these appear on your invoices and quotes |
-| **Logo en kleur** (logo and colour) | How your invoices and quotes look |
-| **Facturen en offertes** (invoices and quotes) | Payment term, automatic payment reminders and how long quotes stay valid |
-| **Factuurontwerp** (invoice design) | Layout, colour and font of your invoices, with a live preview |
-| **Betalen** (getting paid) | How customers can pay you: your IBAN, iDEAL and PayPal |
-| **BTW** (VAT) | Your usual VAT rate, how often you file and the KOR small-business scheme |
-| **E-mail** | The address your invoices and quotes are sent from |
-| **Je website en domein** (your website and domain) | Your own site and domain name |
-| **Onderdelen** (features) | Switch parts of the app on or off: quotes, receipt scanning, contracts, projects, website, newsletters |
-| **Toegang en boekhouder** (access and accountant) | Give a partner, employee or your accountant access to your books |
-
-## Abonnement en gegevens (subscription and data)
-
-| Row | What it covers |
-|---|---|
-| **Je abonnement** (your subscription) | What you pay and what is included |
-| **Mijn verzoeken** (my requests) | View and manage your support questions |
-| **Gegevens downloaden** (download your data) | Everything you have stored, in one file |
-| **Account opzeggen** (cancel your account) | Stop using MyCompanyDesk |
-
-## Admin-only rows
-
-Three rows are only visible to team admins: **Toegang en boekhouder**, **Je abonnement** and **Account opzeggen**. If you were invited as a team member without admin rights, these rows are hidden for you; ask the workspace admin to make those changes.
-
-## Search
-
-Press **Cmd+K** (Mac) or **Ctrl+K** (Windows and Linux), or click the search box at the top of the settings page. Typing filters the rows as you type, and everyday words work too: "iban" finds **Betalen**, "donker" (dark) finds **Weergave**, "aangifte" (tax return) finds **BTW**.
-
-A few pages only appear through search, to keep the main list calm:
-
-- **Bankrekening koppelen** (connect your bank account): opens the bank connection settings on the expenses side of the app, so incoming transactions are recognised as expenses automatically.
-- **API-sleutels** (API keys) and **Webhooks**: developer settings, shown when the public API is available on your account.
+| Section | What you set there |
+|-----------|--------------------|
+| **Algemeen** | Workspace name, address, contact details, chamber of commerce number, VAT number and logo |
+| **Facturen** | Default invoice numbering, terms, reminders and online payment methods |
+| **Offertes** | Default quote numbering, terms and layout |
+| **Projecten** | Project statuses, billable defaults and task categories |
+| **Uren** | Time tracking defaults, units and the hours-only mode |
+| **Reizen** | Default kilometre rate, vehicle ownership and travel categories |
+| **Objecten** | Object types, statuses and custom fields |
+| **Producten** | Product catalogue, categories and default VAT rates |
+| **Relaties** | Customer and supplier defaults, custom fields and address formatting |
+| **Gebruikers** | Workspace members, roles and permissions |
+| **Rollen** | Which menu items and actions each role can access |
+| **Abonnement** | Subscription plan, billing period and payment details |
 
 ## Where do I find...
 
-| I want to... | Open |
-|---|---|
-| Change my name or photo | **Jouw gegevens** |
-| Change my password or set up two-step verification | **Inloggen** |
-| Choose what I get notified about | **Meldingen** |
-| Switch to dark mode, larger text, another app language or hide the KPI strips above lists | **Weergave** |
-| Fix my company address or VAT number | **Bedrijfsgegevens** |
-| Upload a logo or change my brand colour | **Logo en kleur** |
-| Change the payment term or reminder emails | **Facturen en offertes** |
-| Restyle my invoice PDF | **Factuurontwerp** |
-| Add my IBAN or let customers pay with iDEAL | **Betalen** |
-| Change my VAT rate or filing frequency | **BTW** |
-| Send invoices from my own email address | **E-mail** |
-| Set up my website or domain | **Je website en domein** |
-| Turn quotes, projects or newsletters on or off | **Onderdelen** |
-| Give my accountant access | **Toegang en boekhouder** (admins) |
-| Upgrade or check my plan | **Je abonnement** (admins) |
-| Connect my bank | Search for "bank koppelen" |
-| Download a copy of my data | **Gegevens downloaden** |
-| Cancel my account | **Account opzeggen** (admins) |
+| I want to... | Go to |
+|--------------|-------|
+| Change my name, email or password | **Profiel** |
+| Switch to dark mode, larger text, another app language, or hide the summary cards above and next to lists | **Weergave** |
+| Set my workspace logo and company details | **Algemeen** |
+| Change invoice numbering or payment terms | **Facturen** |
+| Add a new workspace member | **Gebruikers** |
+| Change who can see or edit what | **Rollen** |
 
-Calendar sync with Google or Outlook is not on the settings page; you connect a calendar from the agenda's own settings. See [Your personal settings](/account/profile#connected-calendars).
+## Related
 
-## Old links
-
-Settings URLs from earlier versions of the app, including the old separate workspace and personal settings trees, redirect to the matching new page. Bookmarks and links in old emails keep working.
-
-## Related pages
-
-- [Setup wizard](/features/setup-wizard) fills most business settings on first run and can be re-run at any time.
-- [Your personal settings](/account/profile) covers the Over jou group in detail.
-- [Security](/account/security) covers passwords, two-step verification and passkeys.
-- [Data import and export](/account/data) covers Gegevens downloaden and CSV import.
-- [Team management](/settings/team) covers access for partners and accountants.
-- [Billing and plans](/settings/billing) covers your subscription.
+- [Profile settings](/account/profile)
+- [Invoice settings](/settings/invoices)
+- [Quote settings](/settings/quotes)

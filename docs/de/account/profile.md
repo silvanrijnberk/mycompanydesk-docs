@@ -1,65 +1,55 @@
 ---
-title: Ihre persönlichen Einstellungen
-last_verified: 2026-07-27
+title: Profileinstellungen
+last_verified: 2026-07-29
 ---
 
-# Ihre persönlichen Einstellungen
+# Profileinstellungen
 
-Ihre persönlichen Einstellungen liegen im selben Einstellungsbereich wie alles andere. Öffnen Sie **Einstellungen** und schauen Sie oben in die Gruppe **Über dich**: vier Zeilen, die nur Ihr eigenes Konto betreffen, nie Ihre Teamkollegen. Änderungen auf diesen Seiten werden automatisch gespeichert, während Sie tippen.
+Auf der Seite **Profiel** stellen Sie Angaben ein, die nur zu Ihrem Benutzerkonto gehören. Andere Mitglieder desselben Arbeitsbereichs sehen diese Einstellungen nicht.
 
-Siehe die [Übersicht der Einstellungen](/de/settings/) für die vollständige Einstellungsseite.
+## Persönliche Angaben
 
-## Deine Daten
+Aktualisieren Sie Ihren Namen, Ihre E-Mail-Adresse und Telefonnummer. Die E-Mail-Adresse wird für Login, Benachrichtigungen und die Passwort-Wiederherstellung verwendet.
 
-Ihr Name, Ihre E-Mail-Adresse und Ihr Profilfoto.
+## Sicherheit
 
-- **Vorname** und **Nachname**. Ihr Name erscheint auch auf Ihren Rechnungen.
-- **E-Mail-Adresse**. Das ist Ihr Login und kann hier nicht geändert werden; das Feld ist schreibgeschützt.
-- **Profilfoto**. Laden Sie ein PNG, JPG oder WebP von maximal 5 MB hoch. Kunden sehen das Foto bei E-Mails, die Sie senden. Ein Foto ist optional, und Sie können es jederzeit wieder entfernen.
+### Passwort
 
-## Darstellung
+Wählen Sie ein starkes Passwort. Falls Sie es vergessen haben, verwenden Sie **Wachtwoord vergeten** auf der Login-Seite, um es zurückzusetzen.
 
-Wie die App für Sie aussieht, auf jedem Gerät, auf dem Sie sich anmelden.
+### Zwei-Faktor-Authentifizierung
 
-- **Design**: Hell, Dunkel oder Automatisch. Automatisch folgt Ihrem Gerät: tagsüber hell, abends dunkel.
-- **Schriftgröße**: Normal oder Groß, für entspannteres Lesen.
-- **Sprache der App**: Niederländisch, Englisch, Deutsch oder Französisch. Das ändert nur die Menüs und Schaltflächen für Sie; die Sprache Ihrer Rechnungen und Angebote ist eine eigene Wahl pro Dokument.
-- **Erweiterte Einstellungen**: ein Schalter pro Gerät, der zusätzliche technische Optionen in der App sichtbar macht, etwa DNS- und SSL-Verwaltung auf den Domain-Seiten. Lassen Sie ihn aus, wenn Sie diese nicht brauchen.
+Sie können eine zusätzliche Sicherheitsebene aktivieren, indem Sie die Zwei-Faktor-Authentifizierung einschalten. Danach fragt jeder Login zusätzlich nach einem Code aus Ihrer Authenticator-App. Bewahren Sie Ihre Wiederherstellungscodes an einem sicheren Ort auf.
+
+## Anzeigeeinstellungen
+
+Unter **Darstellung** legen Sie fest, wie die App für Sie auf diesem Gerät aussieht.
+
+- **Thema**: Licht (hell), Donker (dunkel) oder Vanzelf (automatisch). Automatisch folgt Ihrem Gerät: hell tagsüber, dunkel abends.
+- **Schriftgröße**: Normaal (normal) oder Groot (groß), für komfortableres Lesen.
+- **Sprache der App**: Niederländisch, Englisch, Deutsch oder Französisch. Dies ändert nur Menüs und Schaltflächen für Sie; die Sprache von Rechnungen und Angeboten wählen Sie pro Dokument.
+- **Zahlen über Ihren Listen**: wählen Sie **Erweitert** (mit Zusammenfassungen und Summen) oder **Reduziert** (nur die Liste). Reduziert blendet die KPI-Leisten und Zusammenfassungskarten über und neben Listen aus, etwa bei Rechnungen, Ausgaben, Angeboten und der Agenda. Die Einstellung gilt pro Gerät und synchronisiert sich über Tabs.
+- **Erweiterte Einstellungen**: ein Schalter pro Gerät, der zusätzliche technische Optionen in der App freischaltet, etwa DNS- und SSL-Steuerungen auf den Domain-Seiten. Lassen Sie ihn deaktiviert, es sei denn, Sie brauchen diese.
 
 ## Benachrichtigungen
 
-Vier Schalter legen fest, worüber MyCompanyDesk Ihnen eine Nachricht schickt, in der App und per E-Mail:
+Wählen Sie, bei welchen Ereignissen Sie eine E-Mail oder Push-Benachrichtigung erhalten. Sie können Kategorien wie Rechnungserinnerungen, auslaufende Verträge und Erwähnungen ein- oder ausschalten.
 
-- Wenn eine Rechnung zu spät bezahlt wurde, damit Sie sofort nachfassen können.
-- Wenn ein Kunde bezahlt hat.
-- Wenn Ihre Umsatzsteuererklärung bald fällig ist, mit reichlich Vorlauf.
-- Tipps und Neuigkeiten von MyCompanyDesk, höchstens eine E-Mail pro Monat.
+## Zahlungsmethoden
 
-Wirklich wichtige Nachrichten zu Ihrem Konto senden wir immer; diese lassen sich nicht abschalten.
+Fügen Sie Ihre eigene Kreditkarte oder andere Zahlungsmethoden hinzu. Diese werden für Käufe in der App verwendet, etwa Abonnementzahlungen.
 
-Unter den Schaltern aktivieren Sie **Push-Benachrichtigungen auf diesem Gerät**, damit überfällige Rechnungen, Zahlungen und Fristen Sie auch als Benachrichtigung auf Ihrem Telefon oder Computer erreichen. Ihr Browser oder Telefon fragt beim ersten Mal um Erlaubnis. Wenn Sie es überspringen, können Sie es später jederzeit über die Benachrichtigungsglocke oben in der App einschalten.
+## Unternehmen
 
-Push-Benachrichtigungen werden in Browsern und in der Android-App unterstützt. Auf Android verwendet die Benachrichtigung das App-Symbol und die Kategoriefarbe; bei Inbox-Nachrichten zeigt sie auch den Avatar des Absenders, sobald die App ihn registriert hat. Ältere Android-Builds ohne den nativen Nachrichtendienst erhalten weiterhin die Standardbenachrichtigung, die vom SDK gerendert wird.
+Im Abschnitt **Bedrijf** sehen Sie den Arbeitsbereich, in dem Sie gerade angemeldet sind, und Ihre Rolle darin. Haben Sie Zugriff auf mehrere Arbeitsbereiche, können Sie hier zwischen ihnen wechseln.
 
-## Verbundene Kalender
+## Wo finde ich es
 
-Sie können **Google Kalender** oder **Outlook** verbinden, damit Termine aus Ihrem Kalender auch in MyCompanyDesk erscheinen. Das ist keine Zeile auf der Einstellungsseite: Öffnen Sie den Kalender in der App und gehen Sie in dessen Einstellungen, dort ist die Seite mit den Kalenderverbindungen verlinkt. Jede Verbindung lässt sich auf derselben Seite wieder entfernen.
+- Klicken Sie oben rechts auf Ihren Avatar oder Ihre Initialen.
+- Wählen Sie **Profiel** aus dem Menü.
 
-## Kundenstandorte
+## Verwandt
 
-Die Karte **Kundenstandorte** auf der mobilen Einstellungsseite zeigt, wie viele Ihrer Kunden mit Adresse auf der Karte lokalisiert werden können. Standortfunktionen wie automatisches Einchecken und die Suche nach Kunden in der Nähe funktionieren nur für Kunden, deren Adresse in Koordinaten aufgelöst wurde.
-
-Die Karte zeigt:
-
-- wie viele Kunden mit Adresse aufgelöst sind
-- wie viele noch nachgeschlagen werden müssen
-- einen Button, um Adressen auf einmal zu aktualisieren
-- eine kurze Liste mit Kunden, deren Adresse nicht aufgelöst werden konnte, damit Sie diese korrigieren können
-
-Wenn Sie eine Kundenadresse bearbeiten, werden die zwischengespeicherten Koordinaten automatisch gelöscht. Beim nächsten Abruf wird die neue Adresse erneut versucht.
-
-## Verwandte Seiten
-
-- [Übersicht der Einstellungen](/de/settings/) für alles Weitere auf der Einstellungsseite.
-- [Sicherheit](/de/account/security) für Passwörter, Bestätigung in zwei Schritten und Passkeys, zu finden unter **Anmelden**.
-- [Datenimport und -export](/de/account/data) zum Herunterladen einer Kopie Ihrer Daten.
+- [Einstellungen Übersicht](/de/settings)
+- [Benutzer & Rollen](/de/settings/users)
+- [Zwei-Faktor-Authentifizierung](/de/security/2fa)

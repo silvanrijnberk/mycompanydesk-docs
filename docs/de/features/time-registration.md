@@ -1,104 +1,83 @@
 ---
-title: Zeitplan
+title: Zeiterfassung
+last_verified: 2026-07-27
 ---
 
-# Zeitplan
+# Zeiterfassung
 
-Erfassen Sie Arbeitsstunden, planen Sie Ihre Tage und verwandeln Sie abrechenbare Zeit in Rechnungen. Die Seite **Zeitplan** in der Seitenleiste verbindet Zeiterfassung mit einer Agenda: Sie sehen den Plan für heute, geplante Einträge neben erfassten Stunden und Vorschläge aus Ihren verbundenen Kalendern, alles an einem Ort.
+Erfassen Sie Stunden, Reisen und Projektzeiten in MyCompanyDesk. Einträge fließen direkt in Projektberichte, Rechnungsstellung und Spesenabrechnungen.
 
-## Die Seite im Überblick
-
-Wechseln Sie mit der Auswahl oben zwischen vier Ansichten (auf Mobilgeräten wischen Sie zwischen Zeiträumen):
-
-- **Tag**: der Plan und die erfassten Stunden von heute. Je nach Einstellung sehen Sie eine Zeitleiste oder eine kompakte Liste, mit geplanten Einträgen getrennt von erfassten. Termine aus verbundenen Kalendern erscheinen neben Ihren Einträgen und lassen sich mit einem Tipp in Zeiteinträge umwandeln, und Sie erhalten Vorschläge auf Basis Ihrer letzten Aktivität.
-- **Woche**: auf dem Desktop ein Sieben-Tage-Planer, in dem gefüllte Blöcke erfasste Stunden sind und schraffierte Blöcke geplante; klicken Sie auf ein leeres Feld, um einen Eintrag anzulegen. Auf Mobilgeräten eine Zusammenfassung pro Tag zum Antippen.
-- **Monat**: Summen pro Tag; wählen Sie einen Tag, um dorthin zu springen.
-- **Liste**: eine durchsuchbare Tabelle aller Einträge mit Filtern für Rechnungsstatus, Kunde, Projekt und Fahrten, plus Summen für die aktuelle Auswahl.
-
-Geplante Einträge tragen das Label **Vorläufig**; drücken Sie **Bestätigen**, sobald die Arbeit tatsächlich erledigt ist, um sie in erfasste Stunden umzuwandeln.
-
-Möchten Sie das nicht manuell erledigen? Aktivieren Sie **Vorläufige Zeit automatisch bestätigen** in den Zeitplan-Einstellungen. Vorläufige Einträge werden dann automatisch bestätigt, sobald ihr geplanter Termin verstrichen ist, auch wenn niemand den Zeitplan öffnet.
-
-## Zeit erfassen
+## Zeiten erfassen
 
 ### Timer
 
-Auf Mobilgeräten enthält die Tagesansicht einen Timer: Starten Sie ihn, wenn Sie mit der Arbeit beginnen, und stoppen Sie ihn, um die verstrichene Zeit als Eintrag zu erfassen. Über die Betriebsmodus-Einstellung machen Sie den Timer zu Ihrer Standardarbeitsweise (siehe Einstellungen unten).
+1. Öffnen Sie die Zeiterfassungsseite.
+2. Drücken Sie **Start** am Timer.
+3. Wählen Sie Kunde, Projekt und Aufgabe.
+4. Stoppen Sie den Timer, wenn Sie fertig sind.
+
+Der aufgezeichnete Block erscheint in Ihrer Liste und kann bearbeitet, in eine Rechnung überführt oder in eine Spesenabrechnung umgewandelt werden.
 
 ### Manuelle Einträge
 
-1. Klicken Sie auf **Eintrag hinzufügen** (Tastenkürzel A, oder die + Schaltfläche auf Mobilgeräten)
-2. Der Schnelleingabe-Dialog öffnet sich: Wählen Sie den Kunden und optional ein Projekt, geben Sie Ihre Stunden ein und passen Sie bei Bedarf Beschreibung und Stundensatz an
-3. Geben Sie die Zeit als Gesamtstunden ein oder wechseln Sie zu Start- und Endzeit
-4. Speichern Sie den Eintrag
+Wenn Sie möchten, fügen Sie einen Block manuell hinzu:
 
-### Standard-Zeilenbeschreibung
+1. Klicken Sie auf **Nieuwe tijdregel** (neuer Zeiteintrag).
+2. Geben Sie Datum, Dauer, Kunde, Projekt, Aufgabe und Beschreibung ein.
+3. Speichern.
 
-Beim Hinzufügen eines Zeiteintrags wird das Beschreibungsfeld automatisch aus Ihren Standard-Zeilenbeschreibungen vorausgefüllt. Das System prüft in dieser Reihenfolge:
+Manuelle Einträge verhalten sich wie Timer-Einträge und können später in Rechnung gestellt werden.
 
-1. Die Standard-Zeilenbeschreibung des Projekts
-2. Die Standard-Zeilenbeschreibung des Kunden
-3. Den Arbeitsbereichs-Standard
+### Reisen
 
-Ihre eigene Eingabe wird nie überschrieben. Sobald Sie eine eigene Beschreibung eingeben, ersetzt der vorausgefüllte Wert diese nicht mehr.
+Wenn Sie einen Zeiteintrag für eine Dienstreise erfassen, fragt das Reiseformular nach dem Verkehrsmittel, Start, Ziel und Entfernung.
+
+Bei **Auto**-Reisen erscheint die Auswahl **Fahrzeug**, sobald Ihr Arbeitsbereich Fahrzeug-Objekte hat. Sie können wählen:
+
+- **Privat-PKW** (oder die Auswahl leer lassen) - die Reise folgt der normalen Fahrzeug-Eigentumseinstellung Ihres Arbeitsbereichs und erhält bei Umwandlung in eine Spesenabrechnung den Standard-Kilometersatz.
+- Ein Firmenfahrzeug - die Reise wird mit diesem Fahrzeug verknüpft. Ein Hinweis erklärt, dass die Reise keine Kilometerpauschale erhält, weil die tatsächlichen Kosten (Kraftstoff, Wartung und Abschreibung) bereits als Ausgaben auf dem Objekt erfasst werden.
+
+Nur Auto-Reisen zeigen die Fahrzeugauswahl; öffentliche Verkehrsmittel, Fahrrad und andere Verkehrsmittel nicht.
+
+### Standardbeschreibung
+
+Legen Sie einen Standardtext in Ihren persönlichen Zeiteinstellungen fest. Jeder neue Eintrag beginnt dann mit diesem Text, sodass Sie weniger tippen und Beschreibungen einheitlich halten.
 
 ### Nur-Stunden-Modus
 
-Möchten Sie lieber nur eine Tagessumme erfassen? Aktivieren Sie **Nur Stunden Modus** in den Zeitplan-Einstellungen. Er blendet die Zeitleiste und die Eingaben für Start- und Endzeit aus, sodass Sie nur die Gesamtstunden pro Tag eintragen. Stundensatz und Abrechenbar-Feld bleiben verfügbar.
+Einige Rollen müssen nur Gesamtstunden erfassen, keine Kunden oder Projekte. Wenn Ihr Arbeitsbereich den Nur-Stunden-Modus verwendet, blendet das Formular die Felder Kunde, Projekt und Aufgabe aus. Bitten Sie einen Administrator, dies in den Zeiterfassungseinstellungen des Arbeitsbereichs zu aktivieren.
 
-## Ihre Stunden abrechnen
+## Stunden in Rechnung stellen
 
-### Eine Rechnung von der Zeitplan-Seite erstellen
+Zeiteinträge können in Rechnungspositionen umgewandelt werden:
 
-Wenn nicht abgerechnete Einträge vorliegen, klicken Sie auf **Rechnung erstellen**. Ein Dialog öffnet sich, in dem Sie einen Kunden wählen; er listet alle nicht abgerechneten Einträge dieses Kunden mit ihrer Summe. Bestätigen Sie, und es entsteht ein Rechnungsentwurf mit einer Zeile pro Eintrag. Abrechenbare Reisezeit und Reisekosten, die mit diesen Einträgen verknüpft sind, werden als separate Zeilen hinzugefügt.
+1. Wählen Sie einen oder mehrere Einträge aus der Liste.
+2. Wählen Sie **Factureren** (in Rechnung stellen).
+3. Wählen Sie eine Rechnung oder erstellen Sie einen neuen Entwurf.
+4. MyCompanyDesk fügt pro Eintrag eine Position mit der korrekten Menge und dem Stundensatz hinzu.
 
-### Einzelne Einträge im Rechnungsformular wählen
+Nur abrechnungsfähige Einträge können in Rechnung gestellt werden. Einträge, die als nicht abrechnungsfähig markiert sind, werden vom Rechnungsfluss ausgeschlossen.
 
-Möchten Sie nur einen Teil der Einträge abrechnen? Erstellen oder bearbeiten Sie direkt eine Rechnung: Das Rechnungsformular hat einen Zeitbereich, der die nicht abgerechneten Einträge des gewählten Kunden auflistet, sodass Sie genau auswählen, welche Sie übernehmen.
+## Spesenabrechnungen aus Zeiteinträgen
 
-### Zeilenbeschreibungen auf der Rechnung
+Reiseeinträge können ebenfalls in Ausgaben umgewandelt werden:
 
-Rechnungszeilen werden automatisch beschrieben: zuerst die Beschreibung des Eintrags selbst, sonst der Projektname, sonst der Zeitraum. Eine Beschreibungsvorlage pro Kunde (auf der Kundenseite eingestellt) hat Vorrang vor diesem Format.
+1. Wählen Sie einen Reiseeintrag.
+2. Wählen Sie **Kostennota** (Spesenabrechnung).
+3. MyCompanyDesk erstellt eine Ausgabe auf Basis der Entfernung und des im Arbeitsbereich hinterlegten Kilometersatzes.
 
-### Automatische Zeitabrechnung
+Der Kilometersatz, das Fahrzeugeigentum und eine eventuelle Auswahl eines Firmenfahrzeugs werden aus dem Zeiteintrag und den Arbeitsbereichs-Standards übernommen, sodass die Abrechnung zu dem passt, was tatsächlich gefahren wurde.
 
-Automatisches Abrechnen konfigurieren Sie pro Kunde. Aktivieren Sie auf der Seite des Kunden **Auto-Rechnung**, um monatlich automatisch eine Rechnung für die erfassten Stunden dieses Kunden zu erstellen, auf Wunsch auch automatisch versendet. Die Rechnung wird als Entwurf erstellt und bleibt offen, damit Sie sie vor dem Versand noch prüfen können.
+## Wo finde ich die Zeiterfassung
 
-## Massenaktionen
+- **Menü** > **Zeiterfassung** - Hauptliste der Stunden
+- Projekt-Detailseite - Stunden pro Projekt
+- Kunden-Detailseite - Stunden pro Kunde
+- Rechnungsentwurf - Positionen direkt aus nicht abgerechneten Einträgen hinzufügen
 
-Wählen Sie mehrere Einträge in der Listenansicht aus (langes Drücken auf Mobilgeräten), um sie auf einmal zu bearbeiten:
+## Verwandt
 
-- **Als abrechenbar markieren** oder **Als nicht abrechenbar markieren**
-- **Archivieren**
-- Löschen
-
-## Externen Kalender verbinden
-
-Verbinden Sie Google Kalender oder Outlook Kalender, um Agenda und Stunden zusammenzubringen. Öffnen Sie die Zeitplan-Einstellungen über das Zahnrad und folgen Sie dem Kalender-Link, oder gehen Sie direkt zur Seite mit den verbundenen Kalendern. Dort können Sie:
-
-- **Google Kalender** oder **Outlook Kalender** verbinden
-- Die Synchronisation pro Verbindung mit **Synchronisation aktivieren** einschalten
-- Die **Synchronisationsrichtung** wählen: **Zum Kalender** (Ihre erfassten Stunden erscheinen in Ihrem Kalender), **Vom Kalender** (Ihre Termine erscheinen auf der Zeitplan-Seite, bereit zum Erfassen) oder **Beides**
-- Einen schreibgeschützten **Kalender-Abonnement (iCal)** Feed aktivieren, um Ihre erfassten Stunden aus jeder Kalender-App zu verfolgen
-
-Termine aus einem verbundenen Kalender erscheinen in der Tages- und Wochenansicht; tippen Sie darauf, um daraus einen Zeiteintrag zu machen.
-
-## Einstellungen
-
-Das Zahnrad auf der Zeitplan-Seite öffnet die Zeitplan-Einstellungen. Hier konfigurieren Sie:
-
-- **Nur Stunden Modus**, **Vorläufige Zeit automatisch bestätigen**, und weiteres Eingabeverhalten
-- Den Betriebsmodus: **Stunden**, **Schicht** oder **Timer**
-- Die auf der Zeitleiste sichtbaren Arbeitszeiten
-- Welche Schritte die Schnelleingabe zeigt (Projekt, Notizen, Fahrten)
-- Den Standard-Stundensatz (Team-Administratoren)
-- Fahrt-Standards wie Adressen, Fahrzeug und Kilometersatz
-- Nutzen Sie Ihren aktuellen Standort als Startpunkt für eine Fahrt, wenn Ihr Gerät das zulässt
-- Einen Link zum Verbinden eines externen Kalenders
-
-## Tipps
-
-- Erfassen Sie Ihre Stunden täglich für genaue Aufzeichnungen; mit den Vorschlägen erfassen Sie wiederkehrende Arbeit mit einem Tipp erneut
-- Planen Sie Ihre Woche mit vorläufigen Einträgen im Voraus und bestätigen Sie sie nach und nach
-- Prüfen Sie regelmäßig Ihre nicht abgerechnete Zeit, damit keine abrechenbaren Stunden liegen bleiben
-- Verbinden Sie Ihren Kalender einmal, und Ihre Termine werden automatisch zu erfassbaren Einträgen
+- [Projekte](/de/features/projects)
+- [Rechnungen](/de/features/invoices)
+- [Ausgaben](/de/features/expenses)
+- [Objekte & Vermögenswerte](/de/features/objects)
