@@ -97,7 +97,7 @@ Dans des cas particuliers, vous définissez le traitement de la TVA de la dépen
 
 - **Standard**: TVA nationale.
 - **Autoliquidation (UE)**: vous déclarez vous-même la TVA sur un achat B2B intra-UE, rubrique 4b.
-- **Autoliquidation (hors UE)**: un fournisseur hors UE facture 0 % de TVA, vous la déclarez vous-même en rubrique 4a. Utilisez cela par exemple pour un fournisseur américain comme Anthropic ou OpenAI.
+- **Autoliquidation (hors UE)**: un fournisseur hors UE facture 0 % de TVA (sources/vat-rates.yaml#countries.NL.zero), vous la déclarez vous-même en rubrique 4a. Utilisez cela par exemple pour un fournisseur américain comme Anthropic ou OpenAI.
 - **Exonéré**: la livraison est exonérée de TVA.
 - **TVA étrangère facturée**: TVA étrangère éventuellement récupérable via la procédure de remboursement de l'UE.
 

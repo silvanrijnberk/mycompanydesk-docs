@@ -35,7 +35,7 @@ Sommige leveranciers buiten de EU rekenen geen Nederlandse BTW op hun factuur. J
 Gebruik deze behandeling als:
 
 - De leverancier buiten de EU zit.
-- De factuur 0% BTW toont en jij de BTW zelf moet aangeven.
+- De factuur 0% BTW toont (sources/vat-rates.yaml#countries.NL.zero) en jij de BTW zelf moet aangeven.
 - Voorbeelden zijn facturen van Amerikaanse AI-platformen.
 
 Vul het land van de leverancier in en controleer het nettobedrag; MyCompanyDesk zet de zelfberekende BTW in de juiste rubriek.

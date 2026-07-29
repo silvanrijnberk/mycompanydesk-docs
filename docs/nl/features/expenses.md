@@ -97,7 +97,7 @@ In speciale gevallen stel je de BTW-behandeling van de uitgave in:
 
 - **Standaard**: binnenlandse BTW.
 - **Verlegd (EU)**: je rekent de BTW zelf af voor een zakelijke aankoop uit de EU, rubriek 4b.
-- **Verlegd (buiten de EU)**: leverancier buiten de EU factureert 0% BTW, jij rekent zelf af in rubriek 4a. Gebruik dit bijvoorbeeld voor een Amerikaanse leverancier zoals Anthropic of OpenAI.
+- **Verlegd (buiten de EU)**: leverancier buiten de EU factureert 0% BTW (sources/vat-rates.yaml#countries.NL.zero), jij rekent zelf af in rubriek 4a. Gebruik dit bijvoorbeeld voor een Amerikaanse leverancier zoals Anthropic of OpenAI.
 - **Vrijgesteld**: de levering is BTW-vrij.
 - **Buitenlandse BTW in rekening gebracht**: buitenlandse BTW die mogelijk via de EU-teruggaafprocedure terug te vragen is.
 

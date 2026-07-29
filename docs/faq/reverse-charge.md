@@ -35,7 +35,7 @@ Some suppliers outside the EU do not charge Dutch VAT on their invoices. Instead
 Use this treatment when:
 
 - The supplier is outside the EU.
-- The invoice shows 0% VAT and you must report the VAT yourself.
+- The invoice shows 0% VAT (sources/vat-rates.yaml#countries.NL.zero) and you must report the VAT yourself.
 - Examples include AI platform invoices from US suppliers.
 
 Enter the supplier country and keep the net amount correct; MyCompanyDesk puts the self-charge in the right rubriek.

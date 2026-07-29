@@ -67,7 +67,7 @@ Every expense has a `vat_treatment` field that decides how it lands on your VAT 
 |---|---|
 | `standard` | Domestic VAT charged by the supplier — the default. |
 | `b2b_reverse_charge` | Verleggingsregeling: you self-account for the VAT on an EU B2B purchase. |
-| `import_reverse_charge` | Non-EU supplier invoices 0% VAT; you self-account under rubriek 4a, not 4b. Use this for suppliers such as Anthropic or OpenAI. |
+| `import_reverse_charge` | Non-EU supplier invoices 0% VAT (sources/vat-rates.yaml#countries.NL.zero); you self-account under rubriek 4a, not 4b. Use this for suppliers such as Anthropic or OpenAI. |
 | `vat_exempt` | The supply is exempt from VAT. |
 | `foreign_vat_charged` | A non-EU supplier charged you VAT (typically reclaimable through the EU refund procedure). |
 

@@ -35,7 +35,7 @@ Manche Lieferanten außerhalb der EU berechnen keine niederländische USt. auf i
 Verwenden Sie diese Behandlung, wenn:
 
 - Der Lieferant außerhalb der EU sitzt.
-- Die Rechnung 0 % USt. zeigt und Sie die USt. selbst melden müssen.
+- Die Rechnung 0 % USt. zeigt (sources/vat-rates.yaml#countries.NL.zero) und Sie die USt. selbst melden müssen.
 - Beispiele sind Rechnungen von US-amerikanischen AI-Plattformen.
 
 Tragen Sie das Lieferantenland ein und prüfen Sie den Nettobetrag; MyCompanyDesk setzt die selbstberechnete USt. in die richtige Rubrik.

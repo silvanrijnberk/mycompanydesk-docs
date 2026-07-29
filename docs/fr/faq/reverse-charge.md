@@ -35,7 +35,7 @@ Certains fournisseurs hors UE ne facturent pas de TVA néerlandaise. Vous devez 
 Choisissez ce traitement quand :
 
 - Le fournisseur est situé hors UE.
-- La facture affiche 0 % de TVA et vous devez déclarer la TVA vous-même.
+- La facture affiche 0 % de TVA (sources/vat-rates.yaml#countries.NL.zero) et vous devez déclarer la TVA vous-même.
 - Les exemples incluent les factures de plateformes d'IA américaines.
 
 Saisissez le pays du fournisseur et vérifiez le montant net; MyCompanyDesk place l'autoliquidation dans la bonne rubrique.
