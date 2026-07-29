@@ -70,6 +70,19 @@ Vous pouvez aussi reordonner, masquer et supprimer des sections directement sur 
 
 Cliquez sur une section pour la garder selectionnee; le contour reste alors visible meme lorsque vous eloignez la souris, ce qui vous permet de comparer les positions tout en faisant defiler ou en modifiant le contenu. Le canvas et le panneau **Sections** lisent tous deux le meme ordre sous-jacent, donc une modification d'un cote est immediatement refletee de l'autre.
 
+### Contenu du pied de page
+
+Les modèles sur mesure avec un pied de page minimal vous permettent désormais d'ajouter votre propre contenu de pied de page sans modifier la conception. Ouvrez une page dans l'éditeur de contenu sur mesure et faites défiler jusqu'au panneau **Pied de page**.
+
+Vous pouvez y ajouter :
+
+- **Mention légale**: votre numéro KvK/TVA ou autre texte de précision, rendu dans le style du modèle.
+- **Colonnes de liens**: colonnes titrées de liens, utiles pour les pages comme contact, conditions ou services.
+- **Coordonnées**: activez l'affichage de votre e-mail, téléphone et adresse depuis vos données d'entreprise.
+- **Liens sociaux**: activez l'affichage des liens sociaux enregistrés dans vos données d'entreprise.
+
+La conception contrôle toujours la couleur, la typographie et l'espacement ; vous fournissez uniquement le contenu. Les liens acceptent les chemins internes (`/contact`), les URL HTTPS externes, les e-mails (`mailto:`) ou les téléphones (`tel:`). Si un modèle affiche déjà vos coordonnées ou liens sociaux dans le pied de page, l'interrupteur correspondant est masqué pour éviter les doublons.
+
 ### Remplacer les liens des boutons de section
 
 Certaines sections sur mesure contiennent des boutons ou des liens cliquables qui pointent normalement vers une page fixe integree au design, comme une page de contact, une URL de reservation ou un numero de telephone. L'editeur de contenu sur mesure vous permet de remplacer la destination de chaque bouton adressable, par page.

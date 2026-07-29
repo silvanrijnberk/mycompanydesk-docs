@@ -1,6 +1,6 @@
 ---
 title: Settings overview
-last_verified: 2026-07-02
+last_verified: 2026-07-29
 ---
 
 # Settings overview
@@ -18,7 +18,7 @@ Personal settings. They apply to your own account and never change anything for 
 | **Jouw gegevens** (your details) | Your name, email address and photo |
 | **Inloggen** (signing in) | Password, two-step verification, passkeys and logging out |
 | **Meldingen** (notifications) | Which events we message you about, plus push notifications on this device |
-| **Weergave** (display) | Light or dark theme, text size and the language of the app |
+| **Weergave** (display) | Light or dark theme, text size, app language and how much you see above lists (dense or calm) |
 
 See [Your personal settings](/account/profile) for a walkthrough of these four pages.
 
@@ -68,7 +68,7 @@ A few pages only appear through search, to keep the main list calm:
 | Change my name or photo | **Jouw gegevens** |
 | Change my password or set up two-step verification | **Inloggen** |
 | Choose what I get notified about | **Meldingen** |
-| Switch to dark mode, larger text or another app language | **Weergave** |
+| Switch to dark mode, larger text, another app language or hide the KPI strips above lists | **Weergave** |
 | Fix my company address or VAT number | **Bedrijfsgegevens** |
 | Upload a logo or change my brand colour | **Logo en kleur** |
 | Change the payment term or reminder emails | **Facturen en offertes** |

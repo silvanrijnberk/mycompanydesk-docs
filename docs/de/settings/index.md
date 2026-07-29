@@ -1,6 +1,6 @@
 ---
 title: Übersicht der Einstellungen
-last_verified: 2026-07-02
+last_verified: 2026-07-29
 ---
 
 # Übersicht der Einstellungen
@@ -20,7 +20,7 @@ Persönliche Einstellungen. Sie gelten nur für Ihr eigenes Konto und ändern ni
 | **Deine Daten** | Ihr Name, Ihre E-Mail-Adresse und Ihr Foto |
 | **Anmelden** | Passwort, Bestätigung in zwei Schritten, Passkeys und Abmelden |
 | **Benachrichtigungen** | Worüber wir Ihnen eine Nachricht schicken, plus Push-Benachrichtigungen auf diesem Gerät |
-| **Darstellung** | Hell oder dunkel, Schriftgröße und die Sprache der App |
+| **Darstellung** | Hell oder dunkel, Schriftgröße, Sprache der App und wie viel Sie über Listen sehen (ausführlich oder reduziert) |
 
 Siehe [Ihre persönlichen Einstellungen](/de/account/profile) für einen Rundgang durch diese vier Seiten.
 
@@ -70,7 +70,7 @@ Einige Seiten erscheinen nur über die Suche, damit die Hauptliste ruhig bleibt:
 | Meinen Namen oder mein Foto ändern | **Deine Daten** |
 | Mein Passwort ändern oder die Bestätigung in zwei Schritten einrichten | **Anmelden** |
 | Auswählen, worüber ich benachrichtigt werde | **Benachrichtigungen** |
-| Dunkelmodus, größere Schrift oder eine andere App-Sprache | **Darstellung** |
+| Dunkelmodus, größere Schrift, eine andere App-Sprache oder Zusammenfassungen über Listen ausblenden | **Darstellung** |
 | Meine Firmenadresse oder USt-Nummer korrigieren | **Unternehmensdaten** |
 | Ein Logo hochladen oder meine Markenfarbe ändern | **Logo und Farbe** |
 | Die Zahlungsfrist oder Erinnerungsmails anpassen | **Rechnungen und Angebote** |
