@@ -44,6 +44,12 @@ Extra acties zitten in het overflow-menu naast de hoofdactie:
 - **PDF downloaden** — Download de offerte als een professioneel opgemaakt PDF-document met je bedrijfslogo, huisstijlkleuren en alle offertegegevens.
 - **Offerte kopiëren** — Maak een kopie van de bestaande offerte.
 
+### Bron-gesprek
+
+Als een offerte is aangemaakt vanuit een e-mail in je Postvak IN, toont de detailpagina een banner **Aangemaakt vanuit e-mail** met een link naar het oorspronkelijke gesprek. Klik op **bekijk het gesprek** om in één keer terug te springen naar het Postvak IN-gesprek.
+
+Deze link wordt alleen opgeslagen bij het aanmaken vanuit de inbox-converteeractie; later bewerken of dupliceren wijzigt of verwijdert hem niet.
+
 ## Offertestatussen
 
 | Status | Beschrijving |

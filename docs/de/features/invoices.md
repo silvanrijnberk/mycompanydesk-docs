@@ -58,6 +58,7 @@ Jede Rechnung hat eine Detailseite, die zeigt:
 - Gesamtbetrag
 - Status und Verlauf
 - Zahlungslink (falls gesendet)
+- Quellgespräch (falls aus einem Posteingangsgespräch erstellt)
 
 ## Aktionen
 
@@ -97,6 +98,12 @@ Stornieren Sie eine Rechnung, die nicht mehr bezahlt werden soll. Stornierte Rec
 ### Duplizieren
 
 Erstellen Sie eine Kopie einer bestehenden Rechnung — nützlich für wiederkehrende Abrechnungen an denselben Kunden.
+
+### Quellgespräch
+
+Wenn eine Rechnung aus einer E-Mail in Ihrem Posteingang erstellt wurde, zeigt die Detailseite einen Banner **Aus einer E-Mail erstellt** mit einem Link zum ursprünglichen Gespräch. Klicken Sie auf **Konversation ansehen**, um direkt zurück zum Posteingangsgespräch zu springen.
+
+Dieser Link wird nur beim Erstellen aus der Posteingang-Konvertierungsaktion gespeichert; späteres Bearbeiten oder Duplizieren ändert oder entfernt ihn nicht.
 
 ### Erinnerung senden
 

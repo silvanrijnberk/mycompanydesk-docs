@@ -68,6 +68,10 @@ Jede generierte Ausgabe:
 
 Wurde eine Ausgabe aus einer wiederkehrenden Vorlage erstellt, zeigt die Ausgabendetailseite einen Banner **Automatisch erstellt aus wiederkehrender Ausgabe** mit einem Link zurück zu dieser Vorlage. So springen Sie mit einem Klick von einer einzelnen Ausgabe zu der Vorlage, die sie erzeugt hat.
 
+## Verknüpfte Aufgaben
+
+Wiederkehrende-Ausgaben-Vorlagen unterstützen Aufgaben-Links. Auf der Detailseite können Sie eine Aufgabe mit der Vorlage verknüpfen; die Aufgabe zeigt dann den Vorlagennamen mit einem direkten Link zurück. Praktisch für Folgearbeiten zur Kostenposition — zum Beispiel eine Erinnerung, ein Abonnement zu kündigen oder zu verlängern.
+
 ## Was passiert, wenn sich mein Tarif ändert?
 
 Wiederkehrende Ausgaben sind Teil des Office-Tarifs. Bei einem Upgrade von Desk auf Office startet die automatische Erstellung am nächsten Fälligkeitsdatum. Bei einer Herunterstufung von Office auf Desk wird die Erstellung automatisch pausiert. Die Vorlage und bereits erstellte Ausgaben bleiben in Ihrem Arbeitsbereich, und beim späteren Upgrade wird der Zeitplan fortgesetzt.

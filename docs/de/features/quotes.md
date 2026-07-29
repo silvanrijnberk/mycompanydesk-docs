@@ -44,6 +44,12 @@ Zusätzliche Aktionen finden sich im Overflow-Menü neben der Hauptaktion:
 - **PDF herunterladen** — Laden Sie das Angebot als professionell formatiertes PDF-Dokument mit Ihrem Firmenlogo, Ihren Markenfarben und allen Angebotsdetails herunter.
 - **Angebot kopieren** — Erstellen Sie eine Kopie des bestehenden Angebots.
 
+### Quellgespräch
+
+Wenn ein Angebot aus einer E-Mail in Ihrem Posteingang erstellt wurde, zeigt die Detailseite einen Banner **Aus einer E-Mail erstellt** mit einem Link zum ursprünglichen Gespräch. Klicken Sie auf **Konversation ansehen**, um direkt zurück zum Posteingangsgespräch zu springen.
+
+Dieser Link wird nur beim Erstellen aus der Posteingang-Konvertierungsaktion gespeichert; späteres Bearbeiten oder Duplizieren ändert oder entfernt ihn nicht.
+
 ## Angebotsstatus
 
 | Status | Beschreibung |

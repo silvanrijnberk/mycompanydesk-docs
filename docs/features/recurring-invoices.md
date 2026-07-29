@@ -84,6 +84,10 @@ The recurring invoice detail page shows all previously generated invoices, so yo
 
 If an invoice was generated from a recurring template, the invoice detail page shows a **created from recurring invoice** banner with a link back to that template. This lets you jump straight from a single invoice to the template that produced it.
 
+## Linked tasks
+
+Recurring invoice templates support task links. On the detail page you can link a task to the template, and the linked task shows the template name with a direct link back. Use this to track follow-up work that belongs to the billing schedule — for example preparing content before the next invoice goes out.
+
 ## What happens if my plan changes?
 
 Recurring invoices are part of the Office plan. If you upgrade from Desk to Office, scheduled generation starts from the next due date. If you downgrade from Office to Desk, generation pauses automatically; existing templates and previously generated invoices stay in your workspace, and generation resumes when you upgrade again.

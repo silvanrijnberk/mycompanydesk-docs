@@ -44,6 +44,12 @@ Additional actions live in the overflow menu next to the top action:
 - **Download PDF** — Download the quote as a professionally formatted PDF document with your company logo, branding colors, and all quote details.
 - **Copy quote** — Create a copy of the existing quote.
 
+### Source conversation
+
+If a quote was created from an email in your inbox, the detail page shows a **Created from an email** banner with a link to the original conversation. Click **view the conversation** to jump straight back to the inbox thread.
+
+This link is only stored when the quote is created from the inbox convert action; editing or duplicating the quote later does not change or remove it.
+
 ## Quote statuses
 
 | Status | Description |

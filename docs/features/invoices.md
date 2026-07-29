@@ -58,6 +58,7 @@ Each invoice has a detail page showing:
 - Total amount
 - Status and history
 - Payment link (if sent)
+- Source conversation (if created from an inbox thread)
 
 ## Actions
 
@@ -97,6 +98,12 @@ Cancel an invoice that should no longer be paid. Cancelled invoices remain in yo
 ### Duplicate
 
 Create a copy of an existing invoice — useful for recurring billing to the same customer.
+
+### Source conversation
+
+If an invoice was created from an email in your inbox, the detail page shows a **Created from an email** banner with a link to the original conversation. Click **view the conversation** to jump straight back to the inbox thread.
+
+This link is only stored when the invoice is created from the inbox convert action; editing or duplicating the invoice later does not change or remove it.
 
 ### Send reminder
 

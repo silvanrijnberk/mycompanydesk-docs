@@ -84,6 +84,10 @@ Die Detailseite der wiederkehrenden Rechnung zeigt alle zuvor generierten Rechnu
 
 Wurde eine Rechnung aus einer wiederkehrenden Vorlage erstellt, zeigt die Rechnungsdetailseite einen Banner **Automatisch erstellt aus wiederkehrender Rechnung** mit einem Link zurück zu dieser Vorlage. So springen Sie mit einem Klick von einer einzelnen Rechnung zu der Vorlage, die sie erzeugt hat.
 
+## Verknüpfte Aufgaben
+
+Wiederkehrende-Rechnungs-Vorlagen unterstützen Aufgaben-Links. Auf der Detailseite können Sie eine Aufgabe mit der Vorlage verknüpfen; die Aufgabe zeigt dann den Vorlagennamen mit einem direkten Link zurück. Damit behalten Sie Folgearbeiten im Blick, die zur Abrechnungsplanung gehören — zum Beispiel das Vorbereiten von Inhalten, bevor die nächste Rechnung versendet wird.
+
 ## Was passiert, wenn sich mein Tarif ändert?
 
 Wiederkehrende Rechnungen sind Teil des Office-Tarifs. Bei einem Upgrade von Desk auf Office startet die automatische Erstellung am nächsten Fälligkeitsdatum. Bei einer Herunterstufung von Office auf Desk wird die Erstellung automatisch pausiert. Die Vorlage und bereits erstellte Rechnungen bleiben in Ihrem Arbeitsbereich, und beim späteren Upgrade wird der Zeitplan fortgesetzt.

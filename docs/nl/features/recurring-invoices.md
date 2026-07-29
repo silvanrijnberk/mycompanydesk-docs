@@ -84,6 +84,10 @@ De detailpagina van de terugkerende factuur toont alle eerder gegenereerde factu
 
 Als een factuur is aangemaakt vanuit een terugkerend sjabloon, toont de factuurdetailpagina een banner **Automatisch aangemaakt vanuit terugkerende factuur** met een link terug naar dat sjabloon. Zo spring je in één klik van een enkele factuur naar het sjabloon dat hem heeft geproduceerd.
 
+## Gekoppelde taken
+
+Terugkerende-factuursjablonen ondersteunen takenkoppelingen. Op de detailpagina koppel je een taak aan het sjabloon; de taak toont de sjabloonnaam met een directe link terug. Zo houd je opvolgwerk bij de facturatieplanning — bijvoorbeeld het voorbereiden van content voordat de volgende factuur verstuurd wordt.
+
 ## Wat gebeurt er als mijn pakket wijzigt?
 
 Terugkerende facturen horen bij het Office-abonnement. Als je van Desk naar Office upgradet, start de automatische aanmaak vanaf de eerstvolgende vervaldatum. Als je van Office naar Desk downgradet, wordt de aanmaak automatisch gepauzeerd. Het sjabloon en de facturen die al zijn aangemaakt blijven in je werkruimte staan, en bij een latere upgrade wordt het schema hervat.

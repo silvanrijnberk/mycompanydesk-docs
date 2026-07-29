@@ -58,6 +58,7 @@ Chaque facture dispose d'une page de detail affichant :
 - Montant total
 - Statut et historique
 - Lien de paiement (si envoye)
+- Conversation source (si cree a partir d'une conversation de la boite de reception)
 
 ## Actions
 
@@ -73,6 +74,12 @@ Des actions supplementaires se trouvent dans le menu deroulant a cote de l'actio
 - **Annuler** — Annulez une facture qui ne doit plus etre payee. Les factures annulees restent dans vos archives a des fins d'audit.
 - **Dupliquer** — Creez une copie d'une facture existante, utile pour la facturation recurrente au meme client.
 - **Envoyer un rappel** — Envoyez un rappel de paiement pour les factures en retard.
+
+### Conversation source
+
+Si une facture a ete creee a partir d'un e-mail de votre boite de reception, la page de detail affiche une banniere **Créé depuis un e-mail** avec un lien vers la conversation d'origine. Cliquez sur **voir la conversation** pour revenir directement au fil de la boite de reception.
+
+Ce lien n'est stocke que lors de la creation via l'action de conversion de la boite de reception ; le modifier ou le dupliquer par la suite ne le modifie ni ne le supprime.
 
 ### Envoyer
 

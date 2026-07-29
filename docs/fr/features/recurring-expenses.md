@@ -68,6 +68,10 @@ Chaque depense generee :
 
 Si une depense a ete creee a partir d'un modele recurrent, la page de detail de la depense affiche un bandeau **Cree automatiquement depuis une depense recurrente** avec un lien vers ce modele. Vous pouvez ainsi passer d'une depense individuelle au modele qui l'a generee en un clic.
 
+## Tâches liées
+
+Les modèles de dépenses récurrentes supportent les liens de tâches. Depuis la page de détail, vous pouvez lier une tâche au modèle ; la tâche affiche alors le nom du modèle avec un lien direct vers celui-ci. Pratique pour le suivi lié à la dépense — par exemple un rappel pour résilier ou renouveler un abonnement.
+
 ## Que se passe-t-il si ma formule change ?
 
 Les dépenses récurrentes font partie de la formule Office. En montant de version de Desk vers Office, la génération automatique démarre à la prochaine échéance. Si vous rétrogradez d'Office vers Desk, la génération se met en pause automatiquement. Le modèle et les dépenses déjà créées restent dans votre espace de travail, et le planning reprend lors d'une nouvelle montée de version.
