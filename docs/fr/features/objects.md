@@ -1,173 +1,151 @@
 ---
-title: Objets et actifs
+title: Objets & biens
+last_verified: 2026-07-27
 ---
 
-# Objets et actifs
+# Objets & biens
 
-Suivez les biens locatifs, vehicules, equipements et autres actifs professionnels avec une gestion complete du cycle de vie.
+MyCompanyDesk regroupe tous les biens de l'entreprise en un seul endroit : immobilier, véhicules, machines, inventaire et autres actifs. Par objet, vous suivez la propriété, la valeur, les revenus locatifs, les contrats liés et les factures associées.
 
-::: info
-Le module objets est optionnel. Activez-le dans **Entreprise > Fonctionnalites** si vous ne le voyez pas dans la navigation.
-:::
+## Créer un objet
 
-## Vue d'ensemble
+1. Allez dans **Paramètres** > **Objets**.
+2. Cliquez sur **Nouvel objet** et choisissez un type :
+   - **Immobilier** - bâtiments et terrains
+   - **Véhicule** - voitures, camionnettes, camions et similaires
+   - **Machine / installation** - équipements professionnels
+   - **Inventaire** - mobilier de bureau ou de magasin
+   - **Autre** - tout autre bien
+3. Remplissez les champs obligatoires : au minimum un nom, optionnellement une description, la date/valeur d'achat et le statut.
+4. Enregistrez.
 
-Le module objets est concu pour les entreprises qui gerent des actifs physiques -- en particulier les societes de location, les gestionnaires de biens immobiliers et les services de location d'equipements. Chaque objet represente un actif que vous possedez ou gerez.
+L'objet est maintenant disponible pour être lié à des contrats, factures, dépenses et lignes de temps.
 
-## Types d'objets
+## Page de détail d'un objet
 
-| Type | Cas d'utilisation |
-|---|---|
-| **Propriete** | Appartements locatifs, bureaux, locaux commerciaux |
-| **Vehicule** | Voitures, camions, utilitaires, vehicules de chantier |
-| **Machine** | Equipements industriels, outils, generateurs |
-| **Autre** | Tout autre type d'actif |
+La page de détail affiche toutes les informations d'un objet en un coup d'œil :
 
-## Statuts des objets
-
-| Statut | Description |
-|---|---|
-| **Disponible** | Pret a etre loue ou utilise |
-| **Loue** | Actuellement loue a un client |
-| **Inactif** | Non disponible (maintenance, retire) |
-
-## Creer un objet
-
-1. Allez dans **Objets > Nouvel objet**
-2. Remplissez :
-   - **Nom** -- Un identifiant clair (par ex., "Appartement 3B" ou "Pelleteuse CAT 320")
-   - **Type** -- Propriete, Vehicule, Machine ou Autre
-3. Cliquez sur **Enregistrer**
-
-::: tip Plus d'options
-Le formulaire de nouvel objet ne demande que le nom par defaut. Utilisez **Plus d'options** pour ajouter une description, et **Achat et statut** pour definir la date d'achat, le prix, la valeur actuelle, le regime de TVA et le statut. Ces champs sont optionnels pour creer l'objet; le statut est disponible par defaut.
-:::
-
-## Page de detail de l'objet
-
-La page de detail affiche :
-
-- Informations sur l'actif et son type
+- Informations et type de l'objet
 - Statut actuel
-- **Chiffre d'affaires total** : revenus reels issus des factures payees pour cet objet, y compris les loyers, charges de copropriete, factures ponctuelles et factures de vente qui lui sont attribues
-- **Contrats actifs** : nombre de contrats actuellement actifs lies a cet objet
-- **Historique WOZ** (pour les Proprietes) — valeurs WOZ annuelles utilisees par le calcul Box 3
-- **Resume de l'actif** (pour les objets Propriete avec une valeur WOZ enregistree) - valeur activee, amortissements cumules, valeur comptable actuelle et plancher legal (bodemwaarde) pour le batiment
-- Contrats lies
-- Historique de location
-- **Factures** : chaque facture prise en compte dans le chiffre d'affaires total, avec statut et montant hors TVA
+- **Revenu total** : revenu de factures réellement payées pour cet objet, y compris le loyer, les charges, les frais uniques et les factures de vente qui lui sont attribuées
+- **Contrats actifs** : nombre de contrats actuellement actifs liés à cet objet (affiché uniquement si l'objet a des contrats ou est un bien immobilier)
+- **Historique WOZ** (pour les biens immobiliers) - valeurs WOZ annuelles utilisées pour le calcul de la boîte 3
+- **Résumé de l'actif** (pour les biens immobiliers avec une valeur WOZ enregistrée) - valeur immobilisée, amortissement cumulé, valeur comptable actuelle et le plancher légal (bodemwaarde) du bâtiment
+- Contrats liés et historique locatif (affiché lorsque pertinent)
+- **Factures** : chaque facture comptant pour le revenu total, avec statut et montant hors TVA (affiché uniquement si l'objet a des factures ou est un bien immobilier)
+- **Registre des kilomètres** (pour les véhicules avec des trajets) - les trajets effectués avec ce véhicule, le total de kilomètres, par année et les trajets récents
 
-### Factures attribuees a cet objet
+La page masque les cartes qui ne correspondent pas au type d'objet. Le loyer par défaut, l'historique WOZ et une adresse vide n'apparaissent que pour l'immobilier ou lorsque l'objet contient effectivement ces données. Les cartes de contrats et de factures restent masquées pour les véhicules, machines et autres objets non immobiliers jusqu'à ce qu'il y ait des données à afficher, afin que la page reste centrée sur l'objet consulté.
 
-L'onglet Factures de la page de detail de l'objet liste chaque facture qui contribue au chiffre d'affaires total :
+### Factures attribuées à cet objet
 
-- Les factures generees a partir d'un contrat rattache a cet objet
-- Les factures etiquetees directement sur l'objet, comme les regularisations de charges de copropriete, les factures ponctuelles et les factures de vente
+Chaque ligne de facture attribuée à l'objet est listée ici. Vous voyez ainsi en un coup d'œil quel revenu réellement payé l'objet a généré.
 
-Chaque ligne affiche le numero de facture, le client, la date, le statut et le montant hors TVA. Une explication precise que le total additionne les factures payees, tandis que le rapport Box 3 ne compte que les loyers perçus et utilise la date d'encaissement. Les deux montants peuvent donc differer.
+Le total ne compte que les factures payées, pas les brouillons ou factures ouvertes. Le chiffre d'affaires correspond donc à ce qui a été réellement perçu.
 
-### Resume des contrats
+### Résumé des contrats
 
-Au-dessus de la liste des contrats, une barre de synthese donne un apercu rapide de l'etat contractuel de l'objet :
+En haut de la page, vous voyez un résumé des contrats actifs pour cet objet :
 
-- **Total des contrats** lies a cet objet
-- **Contrats signes**: combien ont ete integralement signes
-- **Total mensuel actif**: valeur mensuelle combinee de tous les contrats actifs, normalisee a partir de contrats a frequences differentes (hebdomadaire, trimestrielle, annuelle)
+- Nombre de contrats actifs
+- Loyer mensuel actuel
+- Date de prochaine indexation
+- Date de fin du contrat qui se termine le plus tôt
 
-### Historique WOZ (objets de type Propriete)
+Cela donne un aperçu financier rapide sans ouvrir chaque contrat séparément.
 
-Pour les objets de type **Propriete**, la page de detail inclut une section d'historique WOZ. Les valeurs WOZ (Waardering Onroerende Zaken) sont les valeurs immobilieres fixees par la municipalite et utilisees dans le calcul de l'impot neerlandais Box 3.
+### Historique WOZ et bodemwaarde
 
-- **Consultez** les valeurs WOZ annuelles par annee.
-- **Ajoutez** de nouvelles valeurs en saisissant l'annee et la valeur WOZ attribuee par la municipalite.
-- Box 3 utilise la valeur WOZ avec date de reference au 1er janvier. Saisissez la valeur applicable au debut de cette annee fiscale.
-- Si aucune valeur n'est encore saisie, la section affiche un etat vide vous invitant a ajouter la premiere.
+Pour les objets de type **Immobilier**, vous pouvez enregistrer la valeur WOZ annuelle. Cette valeur est utilisée pour le calcul de la boîte 3 (impôt sur la fortune) dans votre comptabilité.
 
-#### Integration Kadaster
+La page affiche également le **bodemwaarde** (plancher légal). Pour les bâtiments, la valeur fiscale ne peut pas être inférieure à ce plancher. MyCompanyDesk utilise la valeur WOZ, le bodemwaerde et la date d'achat pour déterminer la valeur correcte pour la déclaration fiscale.
 
-Lorsque vous ajoutez un objet de type Propriete avec une adresse neerlandaise valide, MyCompanyDesk peut importer l'historique WOZ directement depuis le Kadaster. Cela evite la saisie manuelle et vous donne les memes valeurs que celles enregistrees par la municipalite.
+Cela s'applique uniquement aux bâtiments. Les véhicules, machines, inventaire et autres biens n'ont pas de bodemwaarde.
 
-- **Recuperation automatique**: si l'historique WOZ est vide, le systeme recupere les valeurs disponibles depuis le Kadaster a l'ouverture de la page de detail.
-- **Actualisation manuelle**: cliquez sur **Actualiser** pour telecharger a tout moment les dernieres donnees du Kadaster. Les valeurs importees sont marquees d'un badge source "Kadaster".
-- **Donnees manquantes**: si le Kadaster ne dispose d'aucune donnee pour cette adresse (par exemple, un bien neuf), un avis s'affiche et vous pouvez saisir les valeurs manuellement.
+### Registre des kilomètres (véhicules)
 
-#### Valeur actuelle estimee
+Les véhicules utilisés pour les déplacements professionnels affichent une carte **Registre des kilomètres** dès qu'ils ont au moins un trajet lié. C'est le registre des trajets que l'administration fiscale attend pour un véhicule d'entreprise : il liste les trajets effectués avec ce véhicule, pas les coûts d'exploitation du véhicule.
 
-Pour les biens dont un historique WOZ a ete recupere depuis le Kadaster, MyCompanyDesk projette une valeur de marche actuelle estimee. Cette projection prend la peildatum WOZ la plus recente et y applique l'indice de prix CBS PBK pour la region COROP du bien, vous donnant ainsi une valeur qui reflete les tendances actuelles du marche.
+La carte affiche :
 
-### Resume de l'actif et bodemwaarde (plancher legal du batiment)
+- **Total kilomètres** parcourus avec ce véhicule
+- **Année en cours**, si le véhicule a été utilisé cette année civile
+- **Nombre de trajets**
+- **Dernier trajet**
+- Une ventilation **par année** des kilomètres et des trajets
+- Les trajets les plus récents, avec origine, destination, date et client
 
-Les objets de type Propriete qui sont suivis comme un actif immobilise affichent un resume de l'actif sur la page de detail :
+Seuls les trajets les plus récents sont affichés au départ. S'il y en a plus, un bouton **Afficher les trajets plus anciens** révèle le reste, afin que la liste ne soit jamais coupée silencieusement.
 
-- **Valeur d'acquisition** : le montant paye pour l'actif.
-- **Valeur immobilisee** : la partie professionnelle de la valeur d'acquisition, apres deduction d'une eventuelle part d'usage prive.
-- **Amortissements cumules** : tout ce qui a deja ete amorti.
-- **Amortissement de l'annee** : la dotation aux amortissements pour l'annee civile en cours.
-- **Valeur comptable** : la valeur residuelle au bilan (valeur immobilisee moins amortissements cumules).
-- **Bodemwaarde** : le plancher legal en dessous duquel la valeur comptable d'un batiment ne peut descendre. Elle repose sur la valeur WOZ enregistree pour le bien.
+Un trajet est lié au véhicule lorsque la saisie du déplacement le sélectionne comme véhicule d'entreprise. Ce trajet ne reçoit pas d'indemnité kilométrique séparée, car les coûts réels (carburant, entretien et amortissement) sont déjà suivis via les dépenses sur l'objet.
 
-La bodemwaarde est placee a cote de la valeur comptable, car les deux n'ont de sens qu'ensemble. MyCompanyDesk ne reecrit pas silencieusement le plan d'amortissement comptabilise ; a la place, il avertit lorsque le plan actuel a deja franchi le plancher, ou indique lorsque la valeur comptable l'atteint exactement.
+### Résumé de l'actif et bodemwaarde
 
-Si un avertissement s'affiche, corrigez-le en fixant la valeur residuelle de l'acquisition a la bodemwaarde. Quand l'objet ne comporte qu'une seule acquisition, un lien ouvre celle-ci directement, pour que vous ou votre comptable puissiez effectuer l'ajustement.
+Le résumé de l'actif montre la situation financière d'un bien immobilier dans le grand livre :
 
-Cette regle ne s'applique qu'aux batiments (par exemple, propriete, appartement, bureau ou commerce). Les vehicules, machines, equipements et autres actifs qui ne sont pas des batiments n'ont pas de plancher de bodemwaarde.
+- Valeur immobilisée
+- Amortissement cumulé
+- Valeur comptable actuelle
+- Plancher légal (bodemwaarde)
 
-### Vendu ou cede
+Ces chiffres sont nécessaires pour le bilan annuel et la déclaration fiscale.
 
-Si vous vendez, mettez au rebut ou retirez un actif de votre entreprise, enregistrez-le dans la section **Achat et statut** du formulaire objet :
+Cette section n'apparaît que pour les objets de type **Immobilier** avec une valeur WOZ enregistrée. Les véhicules, machines, inventaire et autres biens n'ont pas de bodemwaerde et n'affichent donc pas ce résumé.
 
-- **Date de cession :** la date a laquelle l'actif a quitte l'entreprise.
-- **Produit de cession (HT) :** le montant percu. Laissez le champ vide si vous ne le connaissez pas encore ; saisissez 0 si l'actif a ete mis au rebut sans produit.
+### Cession
 
-Une fois la date de cession enregistree, la page de detail de l'objet affiche un bloc avec les informations de cession :
+Lorsqu'un bien est vendu ou mis au rebut, vous pouvez enregistrer la cession :
 
-- la date de cession
-- la valeur comptable a la cession
-- le produit de cession, s'il est renseigne
-- la plus-value ou la moins-value comptable
+1. Ouvrez l'objet.
+2. Choisissez **Verwijderen / Verkocht** dans la section cession.
+3. Saisissez la date de cession et le produit de la vente.
+4. Enregistrez.
 
-Si vous laissez le produit de cession vide, le bloc affiche la valeur comptable qui a ete radiee et precise que la plus-value ou la moins-value ne peut etre determinee qu'une fois le produit connu.
+MyCompanyDesk calcule ensuite la plus-value ou moins-value comptable et l'intègre dans la gestion financière.
 
-Le resume de l'actif vous avertit egalement lorsque le plan d'amortissement prevoit encore des montants apres la date de cession. Les lignes d'amortissement sont creees en une seule fois lors de l'activation de l'actif; elles continuent donc d'atteindre le compte de resultat, sauf si vous ajustez la duree d'amortissement de l'acquisition.
+### État de signature du contrat
 
-### Statut de signature des contrats
+Pour chaque contrat actif, vous voyez si le processus de signature numérique est terminé. La page de l'objet liste :
 
-Chaque ligne de contrat sur la page de detail de l'objet affiche desormais un badge de statut de signature a cote du badge actif/en pause. Les couleurs suivent la meme correspondance que sur la page de detail du contrat :
+- Parties au contrat
+- Dates de début et de fin
+- État de signature
+- Loyer mensuel
 
-- **Signe** (vert): toutes les parties ont signe
-- **Partiellement signe** (bleu): certaines parties ont signe, d'autres non
-- **Envoye** (jaune): l'invitation a signer a ete envoyee, pas encore de signatures
-- **Expire** ou **Resilie** (rouge): la demande de signature n'est plus valable
+Cliquez sur un contrat pour ouvrir son détail complet.
 
-Les contrats integralement signes affichent une petite icone en forme d'oeil qui ouvre un apercu integre du document signe. Vous pouvez ainsi lire le contrat finalise sans quitter la page de l'objet.
+### Lier des objets
 
-Les contrats herites crees avant l'ajout de la signature electronique n'affichent pas de badge de signature. Le systeme detecte les contrats herites de la meme maniere que sur la page de detail du contrat : un contrat doit avoir des parties signataires, un modele ou du contenu de signature pour afficher un badge.
+Les objets peuvent être liés à :
 
-## Lier les objets aux contrats et factures
+- **Contrats** - baux et contrats de location
+- **Factures** - loyer, charges et vente
+- **Dépenses** - entretien et coûts d'exploitation
+- **Lignes de temps** - déplacements et travaux effectués sur ou avec l'objet
 
-Les objets s'integrent aux autres fonctionnalites de MyCompanyDesk :
+Ouvrez le document concerné et sélectionnez l'objet dans le sélecteur d'objet. Le lien est enregistré des deux côtés, vous pouvez donc naviguer de l'objet vers le document et inversement.
 
-- **Contrats** -- Creez un contrat de location pour un objet, en specifiant le locataire (client) et les conditions
-- **Factures**: Les factures peuvent etre attribuees directement a un objet dans le formulaire de facture, ou liees par le biais d'un contrat de location. Les deux modes comptent dans le chiffre d'affaires total de l'objet.
-- **Factures recurrentes** -- Configurez une facturation mensuelle automatique par objet
+## Types d'objets et leurs champs
 
-## Filtrage
+| Type | Champs typiques |
+|------|-----------------|
+| Immobilier | Adresse, valeur WOZ, bodemwaerde, détails locatifs, valeur d'achat |
+| Véhicule | Plaque d'immatriculation, valeur d'achat, loyer par défaut, statut, registre des kilomètres |
+| Machine / installation | Description, valeur d'achat, statut, amortissement |
+| Inventaire | Description, valeur d'achat, statut |
+| Autre | Description, valeur d'achat, statut |
 
-Filtrez vos objets par :
+Chaque type n'a que les champs pertinents pour ce genre de bien. Par exemple, un véhicule n'a pas de valeur WOZ et une machine n'a pas de plaque d'immatriculation.
 
-- **Type** -- Propriete, Vehicule, Machine, Autre
-- **Statut** -- Disponible, Loue, Inactif
-- **Recherche** -- Trouvez par nom ou description
+## Où trouver les objets
 
-## Actions groupees
+- **Paramètres** > **Objets** - liste de tous les objets et biens
+- **Menu** > **Objets** - accès rapide lorsque cet élément de menu est activé pour votre rôle
+- Liés depuis les contrats, factures, dépenses et lignes de temps
 
-- **Changer le statut** -- Mettez a jour la disponibilite en masse
-- **Archiver** -- Deplacez vers les archives
-- **Supprimer** -- Supprimez des objets
+## Voir aussi
 
-## Conseils
-
-- Utilisez le filtre de statut pour voir rapidement quels actifs sont disponibles a la location
-- Liez chaque facture de location a son objet pour un suivi financier complet par actif
-- Configurez des contrats avec recurrence pour la facturation automatique des loyers
-- Consultez les indicateurs d'objets en haut de la page pour un apercu de la disponibilite
+- [Contrats](/fr/features/contracts)
+- [Factures](/fr/features/invoices)
+- [Dépenses](/fr/features/expenses)
+- [Suivi du temps](/fr/features/time-registration)

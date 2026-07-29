@@ -1,104 +1,83 @@
 ---
-title: Agenda
+title: Suivi du temps
+last_verified: 2026-07-27
 ---
 
-# Agenda
+# Suivi du temps
 
-Enregistrez vos heures de travail, planifiez vos journées et transformez le temps facturable en factures. La page **Agenda** dans la barre latérale combine l'enregistrement du temps avec un agenda : vous voyez le plan du jour, les entrées planifiées à côté des heures enregistrées et des suggestions issues de vos calendriers connectés, le tout au même endroit.
+Suivez les heures, les déplacements et le temps par projet dans MyCompanyDesk. Les lignes alimentent directement les rapports de projet, la facturation et les notes de frais.
 
-## La page en un coup d'œil
-
-Passez d'une vue à l'autre avec le sélecteur en haut (balayez entre les périodes sur mobile) :
-
-- **Jour** : le plan et les heures enregistrées du jour. Selon vos réglages, vous voyez une chronologie ou une liste compacte, avec les entrées planifiées séparées des entrées enregistrées. Les événements de vos calendriers connectés apparaissent à côté de vos entrées et se convertissent en entrées de temps d'un simple appui, et vous recevez des suggestions basées sur votre activité récente.
-- **Semaine** : sur ordinateur, un planning sur sept jours où les blocs pleins sont des heures enregistrées et les blocs hachurés des heures planifiées ; cliquez sur un créneau vide pour ajouter une entrée. Sur mobile, un résumé par jour à explorer d'un appui.
-- **Mois** : les totaux par jour ; sélectionnez un jour pour y accéder.
-- **Liste** : un tableau consultable de toutes les entrées avec des filtres par statut de facturation, client, projet et déplacements, plus les totaux de la sélection en cours.
-
-Les entrées planifiées portent le badge **Provisoire** ; appuyez sur **Confirmer** une fois le travail réellement effectué pour les transformer en heures enregistrées.
-
-Vous préférez ne pas le faire manuellement ? Activez **Confirmer automatiquement le temps provisoire** dans les paramètres de l'agenda. Les entrées provisoires sont alors confirmées automatiquement une fois leur date prévue passée, même si personne n'ouvre l'agenda.
-
-## Enregistrer du temps
+## Saisir du temps
 
 ### Minuteur
 
-Sur mobile, la vue Jour comprend un minuteur : lancez-le quand vous commencez à travailler et arrêtez-le pour enregistrer le temps écoulé comme entrée. Vous pouvez faire du minuteur votre mode de travail par défaut via le réglage du mode de travail (voir Paramètres ci-dessous).
+1. Ouvrez la page de suivi du temps.
+2. Appuyez sur **Start** sur le minuteur.
+3. Choisissez un client, un projet et une tâche.
+4. Arrêtez le minuteur lorsque vous avez terminé.
 
-### Entrées manuelles
+Le bloc enregistré apparaît dans votre liste et peut être modifié, facturé ou converti en note de frais.
 
-1. Cliquez sur **Ajouter une entrée** (raccourci clavier A, ou le bouton + sur mobile)
-2. Le panneau de saisie rapide s'ouvre : choisissez le client et éventuellement un projet, saisissez vos heures et ajustez la description et le tarif si nécessaire
-3. Saisissez le temps en nombre total d'heures, ou passez à une heure de début et de fin
-4. Enregistrez l'entrée
+### Saisie manuelle
 
-### Description de ligne par défaut
+Si vous préférez, ajoutez un bloc manuellement :
 
-Lors de l'ajout d'une entrée de temps, le champ de description est prérempli automatiquement à partir de vos descriptions de ligne par défaut. Le système vérifie dans l'ordre :
+1. Cliquez sur **Nieuwe tijdregel** (nouvelle ligne de temps).
+2. Saisissez la date, la durée, le client, le projet, la tâche et la description.
+3. Enregistrez.
 
-1. La description de ligne par défaut du projet
-2. La description de ligne par défaut du client
-3. La valeur par défaut de l'espace de travail
+Les entrées manuelles se comportent comme les entrées du minuteur et peuvent être facturées plus tard.
 
-Votre propre saisie n'est jamais écrasée. Dès que vous tapez une description personnalisée, la valeur préremplie ne la remplace plus.
+### Déplacements
+
+Lorsque vous ajoutez une ligne de temps pour un déplacement, le formulaire de voyage demande le mode de transport, l'origine, la destination et la distance.
+
+Pour les déplacements en **voiture**, le sélecteur **Véhicule** apparaît dès que votre espace de travail dispose d'objets véhicule. Vous pouvez choisir :
+
+- **Véhicule personnel** (ou laisser le sélecteur vide) - le déplacement suit le paramètre de possession de véhicule normal de votre espace de travail et reçoit l'indemnité kilométrique standard lorsque vous le convertissez en note de frais.
+- Un véhicule d'entreprise - le déplacement est lié à ce véhicule. Une explication indique que ce déplacement ne reçoit pas d'indemnité kilométrique, car les coûts réels (carburant, entretien et amortissement) sont déjà suivis via les dépenses sur l'objet.
+
+Seuls les déplacements en voiture affichent le sélecteur de véhicule ; les transports en commun, le vélo et autres modes n'apparaissent pas.
+
+### Description par défaut
+
+Définissez une description par défaut dans vos paramètres de temps personnels. Chaque nouvelle entrée commence alors par ce texte, vous tapez moins et les descriptions restent cohérentes.
 
 ### Mode heures uniquement
 
-Vous préférez n'enregistrer qu'un total par jour ? Activez le **Mode heures uniquement** dans les paramètres de l'agenda. Il masque la chronologie et les champs d'heure de début et de fin : vous saisissez uniquement le total d'heures par jour. Le tarif et le champ facturable restent disponibles.
+Certains rôles doivent seulement enregistrer le total des heures, pas les clients ou projets. Si votre espace de travail utilise le mode heures uniquement, le formulaire masque les champs client, projet et tâche. Demandez à un administrateur de l'activer dans les paramètres de suivi du temps de l'espace de travail.
 
 ## Facturer vos heures
 
-### Créer une facture depuis la page Agenda
+Les lignes de temps peuvent être transformées en lignes de facture :
 
-Lorsque vous avez des entrées non facturées, cliquez sur **Créer une facture**. Un panneau s'ouvre où vous choisissez un client ; il liste toutes les entrées non facturées de ce client avec leur total. Confirmez, et un brouillon de facture est créé avec une ligne par entrée. Le temps de trajet et les frais de déplacement facturables liés à ces entrées sont ajoutés en lignes séparées.
+1. Sélectionnez une ou plusieurs lignes dans la liste.
+2. Choisissez **Factureren** (facturer).
+3. Choisissez une facture ou créez un nouveau brouillon.
+4. MyCompanyDesk ajoute une ligne par entrée avec la quantité correcte et le taux horaire.
 
-### Choisir des entrées individuelles dans le formulaire de facture
+Seules les lignes facturables peuvent être facturées. Les lignes marquées non facturables sont exclues du flux de facturation.
 
-Vous ne voulez facturer qu'une partie des entrées ? Créez ou modifiez directement une facture : le formulaire de facture comporte une section temps qui liste les entrées non facturées du client sélectionné, pour choisir précisément lesquelles inclure.
+## Notes de frais depuis le suivi du temps
 
-### Descriptions de ligne sur la facture
+Les lignes de déplacement peuvent aussi être converties en dépenses :
 
-Les lignes de facture sont décrites automatiquement : d'abord la description de l'entrée elle-même, sinon le nom du projet, sinon la période. Un modèle de description par client (défini sur la page du client) remplace ce format.
+1. Sélectionnez une ligne de déplacement.
+2. Choisissez **Kostennota** (note de frais).
+3. MyCompanyDesk crée une dépense basée sur la distance et le taux kilométrique défini dans l'espace de travail.
 
-### Facturation automatique du temps
+Le taux kilométrique, la possession du véhicule et toute sélection de véhicule d'entreprise sont repris depuis la ligne de temps et les paramètres par défaut de l'espace de travail, pour que la déclaration corresponde à ce qui a réellement été parcouru.
 
-La facturation automatique se configure par client. Sur la page du client, activez **Facturation auto** pour créer automatiquement chaque mois une facture pour les heures enregistrées de ce client, avec envoi automatique en option. La facture est créée en brouillon et reste ouverte, afin que vous puissiez la relire avant son envoi.
+## Où trouver le suivi du temps
 
-## Actions groupées
+- **Menu** > **Suivi du temps** - liste principale des heures
+- Page de détail d'un projet - heures par projet
+- Page de détail d'un client - heures par client
+- Brouillon de facture - ajoutez des lignes directement depuis les entrées non facturées
 
-Sélectionnez plusieurs entrées dans la vue Liste (appui long sur mobile) pour agir en une fois :
+## Voir aussi
 
-- **Marquer comme facturable** ou **Marquer comme non facturable**
-- **Archiver**
-- Supprimer
-
-## Synchronisation de calendrier externe
-
-Connectez Google Agenda ou le calendrier Outlook pour réunir votre agenda et vos heures. Ouvrez les paramètres de l'agenda via la roue dentée et suivez le lien calendrier, ou rendez-vous directement sur la page des calendriers connectés. Vous pouvez y :
-
-- Connecter **Google Agenda** ou **Calendrier Outlook**
-- Activer la synchronisation par connexion avec **Activer la synchronisation**
-- Choisir la **Direction de synchronisation** : **Vers le calendrier** (vos heures enregistrées apparaissent dans votre calendrier), **Depuis le calendrier** (vos événements apparaissent sur la page Agenda, prêts à être enregistrés) ou **Les deux**
-- Activer un flux en lecture seule **Abonnement calendrier (iCal)** pour suivre vos heures enregistrées depuis n'importe quelle application de calendrier
-
-Les événements provenant d'un calendrier connecté apparaissent dans les vues Jour et Semaine ; appuyez sur l'un d'eux pour le transformer en entrée de temps.
-
-## Paramètres
-
-La roue dentée sur la page Agenda ouvre les paramètres de l'agenda. Vous y configurez :
-
-- Le **Mode heures uniquement**, la **confirmation automatique du temps provisoire**, et le comportement de saisie
-- Le mode de travail : **Heures**, **Postes** ou minuteur
-- Les heures de travail affichées sur la chronologie
-- Les étapes affichées par la saisie rapide (projet, notes, déplacements)
-- Le tarif horaire par défaut (administrateurs d'équipe)
-- Les valeurs par défaut des déplacements comme les adresses, le véhicule et le tarif kilométrique
-- Utiliser votre localisation actuelle comme point de départ d'un déplacement, quand votre appareil le permet
-- Un lien pour connecter un calendrier externe
-
-## Conseils
-
-- Enregistrez vos heures chaque jour pour des données fiables ; grâce aux suggestions, réenregistrer un travail récurrent ne prend qu'un appui
-- Planifiez votre semaine à l'avance avec des entrées provisoires et confirmez-les au fur et à mesure
-- Vérifiez régulièrement le temps non facturé pour ne laisser passer aucune heure facturable
-- Connectez votre calendrier une fois et vos rendez-vous deviennent automatiquement des entrées prêtes à enregistrer
+- [Projets](/fr/features/projects)
+- [Factures](/fr/features/invoices)
+- [Dépenses](/fr/features/expenses)
+- [Objets & biens](/fr/features/objects)
