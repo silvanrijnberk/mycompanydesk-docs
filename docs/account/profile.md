@@ -1,65 +1,55 @@
 ---
-title: Your personal settings
-last_verified: 2026-07-27
+title: Profile settings
+last_verified: 2026-07-29
 ---
 
-# Your personal settings
+# Profile settings
 
-Your personal settings live in the same Settings area as everything else. Open **Instellingen** (Settings) and look at the **Over jou** (about you) group at the top: four rows that only affect your own account, never your teammates. Changes on these pages save automatically while you type.
+The **Profiel** page is where you set the details that belong to your user account only. Other members of the same workspace do not see these choices.
 
-See the [Settings overview](/settings/) for the full settings page.
+## Personal information
 
-## Jouw gegevens (your details)
+Update your name, e-mail address and phone number. The e-mail address is used for login, notifications and password recovery.
 
-Your name, email address and profile photo.
+## Security
 
-- **First name** and **Last name**. Your name also appears on your invoices.
-- **Email address**. This is your login and it cannot be changed here; the field is read only.
-- **Profile photo**. Upload a PNG, JPG or WebP image up to 5 MB. Customers see it on emails you send. A photo is optional, and you can remove it again at any time.
+### Password
 
-## Weergave (display)
+Choose a strong password. If you forgot it, use **Wachtwoord vergeten** on the login page to reset it.
 
-How the app looks for you, on every device you sign in on.
+### Two-factor authentication
+
+You can add an extra layer of security by enabling two-factor authentication. Once enabled, each login also asks for a code from your authenticator app. Keep your recovery codes in a safe place.
+
+## Display settings
+
+Under **Weergave** you set how the app looks for you on this device.
 
 - **Theme**: Licht (light), Donker (dark) or Vanzelf (automatic). Automatic follows your device: light during the day, dark in the evening.
 - **Text size**: Normaal (normal) or Groot (large), for more comfortable reading.
 - **Language of the app**: Dutch, English, German or French. This changes the menus and buttons for you only; the language of your invoices and quotes is a separate choice per document.
+- **Numbers above your lists**: choose **Extended** (with summaries and totals) or **Calm** (just the list). Calm hides the KPI strips and summary cards above and next to list pages, such as invoices, expenses, quotes and the agenda. This setting is stored per device and syncs across tabs.
 - **Advanced settings**: a per-device switch that reveals extra technical options across the app, such as DNS and SSL controls on the domain pages. Leave it off unless you need those.
 
-## Meldingen (notifications)
+## Notifications
 
-Four switches decide what MyCompanyDesk messages you about, in the app and by email:
+Choose which events send you an e-mail or push notification. You can enable or disable categories like invoice reminders, contract expirations and mentions.
 
-- When an invoice is paid late, so you can chase it right away.
-- When a customer has paid.
-- When your VAT return is almost due, warned well in advance.
-- Tips and news from MyCompanyDesk, at most one email per month.
+## Payment methods
 
-Truly important messages about your account are always sent and cannot be switched off.
+Add your own credit card or other payment methods. These are used for purchases inside the app, such as subscription payments.
 
-Below the switches you can enable **push notifications on this device**, so overdue invoices, payments and deadlines also reach you as notifications on your phone or computer. Your browser or phone will ask for permission the first time. If you skip it, you can always turn it on later from the notification bell at the top of the app.
+## Company
 
-Push notifications are supported in browsers and in the Android app. On Android the notification uses the app icon and category colour; for inbox messages it also shows the sender's avatar when the app has registered it. Older Android builds without the native messaging service still receive the standard SDK-rendered notification.
+The **Bedrijf** section shows the workspace you are currently logged in to and your role inside it. If you have access to multiple workspaces, you can switch between them here.
 
-## Connected calendars
+## Where to find it
 
-You can connect **Google Calendar** or **Outlook** so appointments from your calendar also appear in MyCompanyDesk. This is not a row on the settings page: open the agenda in the app and go to its settings, where the calendar connections page is linked. Each connection can be removed again from the same page.
+- Click your avatar or initials in the top right.
+- Choose **Profiel** from the menu.
 
-## Customer locations
+## Related
 
-The **Customer locations** card on the mobile settings page shows how many of your addressed customers can be placed on a map. Location features, such as automatic check-in and finding nearby customers, only work for customers whose address has been resolved to coordinates.
-
-The card lists:
-
-- how many customers with an address are resolved
-- how many still need to be looked up
-- a button to update addresses in one go
-- a short list of customers whose addresses could not be resolved, so you can fix them
-
-When you edit a customer address, the cached coordinates are cleared automatically. The next lookup will try to resolve the new address.
-
-## Related pages
-
-- [Settings overview](/settings/) for everything else on the settings page.
-- [Security](/account/security) for passwords, two-step verification and passkeys, found under **Inloggen**.
-- [Data import and export](/account/data) for downloading a copy of your data.
+- [Settings overview](/settings)
+- [Users & roles](/settings/users)
+- [Two-factor authentication](/security/2fa)
