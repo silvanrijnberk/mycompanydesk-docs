@@ -18,7 +18,7 @@ Der Website-Builder ersetzt das alte einseitige Unternehmensprofil. Jeder neue W
 - **Veröffentlichungs-Snapshots**: Arbeiten Sie im Entwurf, sehen Sie sich Ihre Änderungen in der Vorschau an und veröffentlichen Sie dann. Unveröffentlichte Änderungen werden in der oberen Leiste angezeigt.
 - **Responsive Vorschau**: Wechseln Sie während der Bearbeitung zwischen Desktop-, Tablet- und Mobilansicht.
 
-Den Website-Builder finden Sie unter **Unternehmen > Ihre Website** (`/website`).
+Ihr Website-Dashboard finden Sie unter **Unternehmen > Ihre Website** (`/website`). Der Editor wird von dort geöffnet.
 
 Wenn Sie `/website` öffnen, landen Sie auf dem Bereichsüberblick: er zeigt Ihre Live-Site, den Veröffentlichungsstatus und einen klaren Einstieg in den Editor. Der Editor selbst liegt unter `/website/editor` und wird bewusst über die Übersichtsseite aufgerufen, anstatt beim Öffnen gleich den gesamten Bildschirm zu übernehmen.
 
@@ -38,13 +38,13 @@ Das Banner verwendet das Gemini KI-Modell (Lite-Variante), sofern in Ihrem Works
 
 ## Tabs
 
-Der Website-Builder hat fünf Tabs (sechs, wenn Stil ausgeklappt ist):
+Der Website-Builder hat drei Tabs: Editor, Seiten und Stil. Klicken Sie auf die Stil-Überschrift, um die Unter-Tabs (darunter Animation) ein- oder auszuklappen.
 
 - **Editor**: Erstellen Sie Seiten durch Hinzufügen und Anordnen von Abschnitten. Klicken Sie auf einen Abschnitt, um Inhalt, Layout, Stil oder Animation zu bearbeiten. Ziehen Sie Abschnitte zum Verschieben, Duplizieren oder Löschen.
 - **Seiten**: Verwalten Sie Ihre Seiten: Erstellen Sie neue aus Vorlagen, legen Sie Pfade und Sichtbarkeit fest und sehen Sie, welche Seiten live, Entwurf oder geplant sind. Klicken Sie auf eine Seite, um sie im Editor zu öffnen. Die gesperrte Startseite kann nicht gelöscht werden. Jede Seite zeigt ein Live/Entwurf-Symbol mit Schnellumschaltflächen: Klicken Sie auf das Globus-Icon, um eine Entwurfsseite live zu schalten, oder auf das Ausblenden-Icon, um eine Live-Seite zurück in den Entwurf zu setzen.
 - **Stil**: Passen Sie Ihre site-weiten Design-Tokens an. Wählen Sie ein Ein-Klick-Preset (Editorial) und passen Sie dann Farben (Marke, Akzent, Papier, Tinte), Schriften (Überschrift, Text, Mono aus der Schriftbibliothek), Navigationsleiste (Layout, Hintergrund, CTA-Stil), Skalierung (Radius, Dichte, maximale Breite, Abschnittsabstand), Bewegung, Schaltflächenstile und benutzerdefiniertes CSS an. Sie können auch Head-Snippets für Analytics (Plausible, Umami, Matomo) oder Schrift-Preconnects hinzufügen. Klicken Sie auf die Stil-Überschrift, um die Registerkarte ein- oder auszuklappen.
-- **Domain & SEO**: Konfigurieren Sie Ihre eigene Domain und SEO-Einstellungen. Der Inhalt hier bezieht sich auf die Domain, die im Domain-Wechsler in der oberen Leiste ausgewählt ist. Wenn die Hauptwebsite (angezeigt als Ihr Workspace-Name) ausgewählt ist, erscheint kein domain-spezifisches Panel. Siehe [Domains, Website und Posteingang](/de/features/domains-website-inbox) für die vollständige Domain-Verwaltung.
-- **Integrationen**: Binden Sie Drittanbieterdienste in Ihre Website ein.
+
+Domain, SEO und Drittanbieter-Integrationen verwalten Sie über die `/website`-Startseite, nicht im Editor.
 
 ### Bespoke-Designs
 

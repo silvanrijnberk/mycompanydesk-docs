@@ -47,7 +47,7 @@ Er is een stijl en een huisstijlkleur voor alle documenttypes; een tweede accent
 
 ## Je website
 
-Je publieke bedrijfspagina beheer je in het aparte onderdeel **Website** in de navigatie, niet onder Instellingen. Het heeft eigen pagina's: **Pagina's**, **Stijl**, **Domein & SEO** en **Koppelingen**.
+Je publieke bedrijfspagina beheer je in het aparte onderdeel **Website** in de navigatie, niet onder Instellingen. Het is een dashboard met zes tabbladen: Overzicht, Bezoekers, Vindbaarheid, Koppelingen, Domein & e-mail en Instellingen. De site-editor open je via **Bewerk site**.
 
 - De website is beschikbaar vanaf het Starter-abonnement.
 - Je eigen domein koppelen, in plaats van het standaard `mycompanydesk.com`-subdomein, vereist Pro. DNS-, SPF- en DKIM-records worden voor je beheerd; ze staan achter een geavanceerd-strookje dat de meeste gebruikers nooit hoeven te openen.

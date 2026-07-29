@@ -182,20 +182,18 @@ Neue Datenbanktabellen, die mit diesem Feature eingeführt wurden:
 
 ### Gehostete Website
 
-Der Website-Builder befindet sich unter **Unternehmen > Ihre Website** (`/website`). Es ist ein vollständiger Mehrseiten-Editor mit Abschnitten, Blöcken, Design-Tokens und Veröffentlichungs-Snapshots. Wenn Ihr Workspace mehrere aktive eigene Domains hat (Pro-Tarif), können Sie über einen Domain-Wechsler in der oberen Leiste eine Domain-Variante der Website bearbeiten. Jede Domain erhält ihre eigenen Seiten, Navigation, Design-Tokens und Veröffentlichungs-Snapshots. Ein Domain-Wechsel setzt den aktiven Tab zurück. Die öffentliche Website wird auf Ihrer eigenen Domain (oder Workspace-Subdomain / Fallback-Portalroute) bereitgestellt, sobald sie veröffentlicht wurde.
+Ihr Website-Dashboard befindet sich unter **Unternehmen > Ihre Website** (`/website`). Es ist ein Dashboard mit sechs Tabs: Übersicht, Besucher, Auffindbarkeit, Verknüpfungen, Domain & E-Mail und Einstellungen. Der Editor wird über **Website bearbeiten** geöffnet, wenn Sie Inhalt oder Design ändern möchten.
 
-Was der Editor anzeigt:
+Was die Tabs abdecken:
 
-- **Domain-Wechsler** (obere Leiste) -- Wenn mehr als eine aktive Domain vorhanden ist, können Sie über ein Dropdown auswählen, welche Website-Variante Sie bearbeiten möchten. Die Hauptwebsite-Option zeigt Ihren Workspace-Namen. Domains ohne Variante zeigen einen "eigene Variante erstellen"-Hinweis und klonen die Hauptwebsite bei der ersten Auswahl.
-<!-- TODO(source-missing): RichardTool 5407b44 widened the valid Dutch invoice/catalog VAT-rate set to include historical rates 6% and 19%. sources/vat-rates.yaml#countries.NL currently only lists 0%, 9% and 21%, so this line must stay unchanged until the source is updated. -->
-- **Editor-Tab** -- Erstellen Sie Seiten durch Hinzufügen und Anordnen von Abschnitten (Hero, Text, Galerie, Dienstleistungen, Team, Testimonials, Kontaktformular, Preise, Produkt, benutzerdefiniertes HTML). Überprüfen und bearbeiten Sie Abschnittsinhalte, Layout, Stil und Animation. Speichern Sie Abschnitte als wiederverwendbare Blöcke, um Ihre eigene Bibliothek vorgestylter Layouts aufzubauen, die Sie auf jede Seite einfügen können. Preisstufen können optional einen Kauf-Button erhalten, der zum Mollie- oder Stripe Connect-Checkout weiterleitet. Jede Stufe hat einen konfigurierbaren Mehrwertsteuersatz (21%, 9% oder 0%), wobei der dem Kunden angezeigte Preis der Endpreis inklusive Mehrwertsteuer ist. Der Produktblock ist eine eigenständige Kaufkarte mit derselben Zahlungsanbindung.
-- **Seiten-Tab** -- Seiten erstellen, umbenennen, löschen und nach Status filtern (live, Entwurf, geplant). Wählen Sie eine Vorlage beim Erstellen einer neuen Seite.
-- **Stil-Tab** -- Design-Tokens für Farben, Schriften, Skalierung, Bewegung, Schaltflächen, benutzerdefiniertes CSS und Head-Snippets (Analytics, Schrift-Preconnects).
-- **Domain & SEO-Tab** -- Verwaltung eigener Domains. Siehe den Abschnitt eigene Domains oben.
-- **Integrationen-Tab** -- Verbinden Sie Zahlungsanbieter (Mollie, Stripe Connect) mit Inline-Setup-Karten sowie Drittanbieterdienste wie Mailchimp, Plausible und Trustpilot. Dieselbe Zahlungsverbindung steuert die Bezahl-Buttons auf Rechnungen; siehe die [FAQ zu Zahlungsmethoden](/de/faq/payment-methods) fur die vollstandige Konfiguration.
-- **Navigations-Editor** -- Ordnen Sie Header-Links per Drag-and-Drop, mit Dropdown-Gruppen und externen Links.
-- **Veröffentlichen-Schaltfläche** -- Zeigt die Anzahl unveröffentlichter Änderungen an. Veröffentlicht einen Snapshot mit einem Klick.
-- **Responsive Vorschau** -- Wechseln Sie zwischen Desktop-, Tablet- und Mobilansicht im Editor.
+- **Übersicht**-Tab — Vorschau Ihrer Website, ob diese live ist, und wie viele unveröffentlichte Änderungen ausstehen.
+- **Besucher**-Tab — Sehen Sie, wo Besucher herkommen und wie sie sich durch die Website bewegen.
+- **Auffindbarkeit**-Tab — SEO und Seiten-Metadaten. Alte `/website/seo`-Links leiten hierhin weiter.
+- **Verknüpfungen**-Tab — Zahlungsanbieter (Mollie, Stripe Connect) und Drittanbieterdienste wie Mailchimp, Plausible und Trustpilot. Alte `/website/integraties`-Links leiten hierhin weiter.
+- **Domain & E-Mail**-Tab — Eigene Domain, DNS, SSL, Weiterleitungen und Posteingang-Einrichtung. Siehe den Abschnitt eigene Domains oben.
+- **Einstellungen**-Tab — Wählen Sie, welcher Builder live ist (Vorlage oder Maßanfertigung), und konfigurieren Sie den Workspace-Slug sowie weitere Website-Einstellungen.
+
+Wenn Ihr Workspace mehrere aktive eigene Domains hat (Pro-Tarif), können Sie über einen Domain-Wechsler eine Domain-Variante der Website bearbeiten. Jede Domain erhält ihre eigenen Seiten, Navigation, Design-Tokens und Veröffentlichungs-Snapshots. Ein Domain-Wechsel setzt den aktiven Tab zurück.
 
 Die öffentliche Website wird unter der am besten geeigneten URL des Unternehmens bereitgestellt: eigene Domain-Root → Workspace-Subdomain → Fallback `/portal/<slug>`-Route.
 

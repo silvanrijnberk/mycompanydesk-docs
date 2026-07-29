@@ -182,20 +182,18 @@ Nouvelles tables de base de donnees introduites par cette fonctionnalite :
 
 ### Site web heberge
 
-Le constructeur de site se trouve sous **Entreprise > Votre site web** (`/website`). C'est un editeur multipage complet avec des sections, des blocs, des tokens de design et des snapshots de publication. Lorsque votre espace de travail possede plusieurs domaines personnalises actifs (abonnement Pro), un selecteur de domaine dans la barre superieure vous permet d'editer une variante du site par domaine. Chaque domaine dispose de ses propres pages, navigation, tokens de design et snapshot de publication. Changer de domaine reinitialise l'onglet actif. Le site public est diffuse depuis votre domaine personnalise (ou le sous-domaine de l'espace de travail / la route portail de secours) une fois publie.
+Le tableau de bord de votre site web se trouve sous **Entreprise > Votre site web** (`/website`). C'est un tableau de bord avec six onglets : Apercu, Visiteurs, Visibilite, Connexions, Domaine et e-mail, et Parametres. L'editeur s'ouvre via **Modifier le site** lorsque vous voulez changer le contenu ou le design.
 
-Ce que l'editeur affiche :
+Ce que couvrent les onglets :
 
-- **Selecteur de domaine** (barre superieure) -- Lorsque plus d'un domaine actif existe, un menu deroulant vous permet de choisir quelle variante du site editer. L'option du site principal affiche le nom de votre espace de travail. Les domaines sans variante affichent une indication "creer une variante" et clonent le site principal lors de la premiere selection.
-<!-- TODO(source-missing): RichardTool 5407b44 widened the valid Dutch invoice/catalog VAT-rate set to include historical rates 6% and 19%. sources/vat-rates.yaml#countries.NL currently only lists 0%, 9% and 21%, so this line must stay unchanged until the source is updated. -->
-- **Onglet Editeur** -- Composez des pages en ajoutant et en organisant des sections (hero, texte, galerie, services, equipe, temoignages, formulaire de contact, tarifs, produit, HTML personnalise). Inspectez et modifiez le contenu, la mise en page, le style et l'animation des sections. Sauvegardez des sections comme blocs reutilisables pour constituer votre propre bibliotheque de mises en page pre-concues que vous pouvez inserer sur n'importe quelle page. Les niveaux de tarifs peuvent optionnellement avoir un bouton d'achat qui redirige vers le checkout Mollie ou Stripe Connect. Chaque niveau a un taux de TVA configurable (21%, 9% ou 0%), le prix affiche au client etant le prix final TVA comprise. Le bloc produit est une fiche d'achat autonome avec la meme plomberie de paiement.
-- **Onglet Pages** -- Créer, renommer, supprimer et filtrer les pages par statut (en ligne, brouillon, planifie). Choisir un modele lors de la creation d'une nouvelle page.
-- **Onglet Style** -- Tokens de design pour les couleurs, les polices, l'echelle, le mouvement, les boutons, le CSS personnalise et les snippets d'en-tête (analytique, preconnexions de polices).
-- **Onglet Domaine et SEO** -- Gestion des domaines personnalises. Voir la section domaines personnalises ci-dessus.
-- **Onglet Integrations** -- Connectez des prestataires de paiement (Mollie, Stripe Connect) avec des fiches de configuration integrees, ainsi que des services tiers comme Mailchimp, Plausible et Trustpilot. La meme connexion de paiement alimente les boutons de paiement sur les factures ; voir la [FAQ sur les moyens de paiement](/fr/faq/payment-methods) pour la configuration complete.
-- **Editeur de navigation** -- Reorganiser les liens d'en-tête par glisser-deposer, avec des groupes deroulants et des liens externes.
-- **Bouton Publier** -- Affiche le nombre de modifications non publiees. Publie un snapshot en un clic.
-- **Apercu responsive** -- Basculer entre les vues desktop, tablette et mobile dans l'editeur.
+- **Apercu** — Apercu du site, s'il est en ligne, et le nombre de modifications non publiees en attente.
+- **Visiteurs** — D'ou viennent les visiteurs et comment ils se deplacent sur le site.
+- **Visibilite** — SEO et metadonnees des pages. Les anciens liens `/website/seo` redirigent ici.
+- **Connexions** — Prestataires de paiement (Mollie, Stripe Connect) et services tiers comme Mailchimp, Plausible et Trustpilot. Les anciens liens `/website/integraties` redirigent ici.
+- **Domaine et e-mail** — Domaine personnalise, DNS, SSL, redirections et configuration de la boite de reception. Voir la section domaines personnalises ci-dessus.
+- **Parametres** — Choisissez quel constructeur est actif (modele ou sur mesure) et configurez le slug de l'espace de travail et les autres parametres du site.
+
+Lorsque votre espace de travail possede plusieurs domaines personnalises actifs (abonnement Pro), un selecteur de domaine permet d'editer une variante du site par domaine. Chaque domaine dispose de ses propres pages, navigation, tokens de design et snapshot de publication. Changer de domaine reinitialise l'onglet actif.
 
 Le site public est diffuse a l'URL la plus prioritaire disponible pour l'entreprise : racine du domaine personnalise → sous-domaine de l'espace de travail → route de secours `/portal/<slug>`.
 

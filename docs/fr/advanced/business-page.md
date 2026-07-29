@@ -18,7 +18,7 @@ Le constructeur de site remplace l'ancien profil d'entreprise a page unique. Cha
 - **Snapshots de publication**: Travaillez en brouillon, previsualisez vos modifications, puis publiez. Les modifications non publiees sont affichees dans la barre superieure.
 - **Apercu responsive**: Basculez entre les vues desktop, tablette et mobile pendant l'edition.
 
-Le constructeur de site se trouve sous **Entreprise > Votre site web** (`/website`).
+Le tableau de bord de votre site web se trouve sous **Entreprise > Votre site web** (`/website`). L'editeur s'ouvre depuis celui-ci.
 
 En ouvrant `/website`, vous arrivez sur l’aperçu de la section : il montre votre site en ligne, l’état de publication et un point d’entrée clair vers l’éditeur. L’éditeur proprement dit est à `/website/editor`, accessible volontairement depuis l’aperçu plutôt que de prendre tout l’écran dès l’arrivée.
 
@@ -38,13 +38,13 @@ La bannière utilise le modèle IA Gemini (variante lite) s'il est disponible da
 
 ## Onglets
 
-Le constructeur de site dispose de cinq onglets (six lorsque Style est deplie) :
+Le constructeur de site dispose de trois onglets : Editeur, Pages et Style. Cliquez sur l'en-tete Style pour deplier ou replier ses sous-onglets, dont Animation.
 
 - **Editeur**: Composez des pages en ajoutant et en organisant des sections. Cliquez sur une section pour modifier son contenu, sa mise en page, son style ou son animation. Faites glisser les sections pour les reordonner, les dupliquer ou les supprimer.
 - **Pages**: Gelez vos pages : creez-en de nouvelles a partir de modeles, definissez les chemins et la visibilite, et voyez quelles pages sont en ligne, en brouillon ou planifiees. Cliquez sur une page pour l'ouvrir dans l'editeur. La page d'accueil verrouillee ne peut pas etre supprimee. Chaque page affiche un badge En ligne/Brouillon avec des boutons d'action rapide : cliquez sur l'icone globe pour mettre une page brouillon en ligne, ou sur l'icone masquer pour repasser une page en ligne en brouillon.
 - **Style**: Personnalisez vos tokens de design a l'echelle du site. Choisissez un preset en un clic (Editorial) puis ajustez les couleurs (marque, accent, papier, encre), les polices (titres, corps, mono de la bibliotheque de polices), la barre de navigation (disposition, arriere-plan, style du CTA), l'echelle (rayon, densite, largeur maximale, espacement des sections), le mouvement, les styles de boutons et le CSS personnalise. Vous pouvez egalement ajouter des snippets d'en-tete pour l'analytique (Plausible, Umami, Matomo) ou les preconnexions de polices. Cliquez sur l'en-tete Style pour deplier ou replier l'onglet.
-- **Domaine et SEO**: Configurez votre domaine personnalise et vos parametres SEO. Le contenu ici est lie au domaine selectionne dans le selecteur de domaine de la barre superieure. Lorsque le site principal (affiche sous le nom de votre espace de travail) est selectionne, aucun panneau specifique au domaine n'apparait. Consultez [Domaines, site web et boite de reception](/fr/features/domains-website-inbox) pour la gestion complete des domaines.
-- **Integrations**: Connectez des services tiers a votre site web.
+
+Le domaine, le SEO et les integrations tierces se gerent depuis les onglets de la page d'accueil `/website`, pas dans l'editeur.
 
 ### Designs sur mesure
 

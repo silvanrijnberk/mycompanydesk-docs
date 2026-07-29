@@ -47,7 +47,7 @@ There is one style and one brand colour for all document types; a second accent 
 
 ## Your website
 
-Your public business page is managed in the top-level **Website** area of the app, not under Settings. It has its own pages: **Pagina's** (pages), **Stijl** (style), **Domein & SEO**, and **Koppelingen** (integrations).
+Your public business page is managed in the top-level **Website** area of the app, not under Settings. It is a dashboard with six tabs: Overview, Visitors, Findability, Connections, Domain & email, and Settings. The site editor opens from **Edit site**.
 
 - The website is available from the Starter plan.
 - Connecting your own domain, replacing the default `mycompanydesk.com` subdomain, requires Pro. DNS, SPF, and DKIM records are managed for you, tucked behind an advanced strip most users never need to open.

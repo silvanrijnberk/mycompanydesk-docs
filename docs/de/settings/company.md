@@ -47,7 +47,7 @@ Es gibt einen Stil und eine Markenfarbe für alle Dokumenttypen; eine zweite Akz
 
 ## Ihre Website
 
-Ihre öffentliche Unternehmensseite verwalten Sie im eigenständigen Bereich **Website** in der Navigation, nicht unter Einstellungen. Er hat eigene Seiten: **Seiten**, **Stil**, **Domain & SEO** und **Integrationen**.
+Ihre öffentliche Unternehmensseite verwalten Sie im eigenständigen Bereich **Website** in der Navigation, nicht unter Einstellungen. Es ist ein Dashboard mit sechs Tabs: Übersicht, Besucher, Auffindbarkeit, Verknüpfungen, Domain & E-Mail und Einstellungen. Der Site-Editor wird über **Website bearbeiten** geöffnet.
 
 - Die Website ist ab dem Starter-Tarif verfügbar.
 - Das Verbinden einer eigenen Domain, anstelle der Standard-Subdomain auf `mycompanydesk.com`, erfordert Pro. DNS-, SPF- und DKIM-Einträge werden für Sie verwaltet; sie liegen hinter einem Erweitert-Bereich, den die meisten Nutzer nie öffnen müssen.
