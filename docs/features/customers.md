@@ -10,6 +10,17 @@ Manage your complete customer database. Every invoice, quote, and project links 
 
 The customers page lists all your clients with key information at a glance. Use search and filters to find customers quickly.
 
+## Customer list segments
+
+At the top of the customers page, a strip of tiles gives a quick snapshot of your customer base. The numbers are independent of the search and date filters on the list, so a tile always reflects the whole book.
+
+- **Customers with overdue invoices**: how many customers currently owe you money. Click the tile to open the overdue invoices page.
+- **Dormant customers**: active customers who were invoiced before but have not received an invoice in the last N months. Click the tile to filter the list to dormant customers. The default dormancy window is six months; the tile label shows the exact window the workspace uses.
+- **Prospects**: active customers who have never been invoiced. Click the tile to filter the list to prospects.
+- **Total customers**: the fixed active customer count. Click the tile to clear the list filters.
+
+The status filter above the list also lets you switch between All statuses, Active, Prospects, Dormant, Archived and Trash.
+
 ## Creating a customer
 
 1. Go to **Customers > New Customer**

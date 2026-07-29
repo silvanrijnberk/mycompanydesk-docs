@@ -10,6 +10,17 @@ Gerez votre base de donnees clients complete. Chaque facture, devis et projet es
 
 La page des clients repertorie tous vos clients avec les informations cles en un coup d'oeil. Utilisez la recherche et les filtres pour trouver rapidement des clients.
 
+## Segments dans la liste des clients
+
+En haut de la page des clients, une bande de vignettes donne un apercu rapide de votre portefeuille clients. Les chiffres sont independants des filtres de recherche et de date de la liste, de sorte qu'une vignette reflete toujours l'ensemble du portefeuille.
+
+- **Clients avec des factures en retard**: combien de clients vous doivent de l'argent en ce moment. Cliquez sur la vignette pour ouvrir la page des factures en retard.
+- **Clients inactifs**: clients actifs qui ont deja ete factures, mais qui n'ont recu aucune facture au cours des N derniers mois. Cliquez sur la vignette pour filtrer la liste sur les clients inactifs. La fenetre d'inactivite par defaut est de six mois; le libelle de la vignette indique la fenetre exacte utilisee par l'espace de travail.
+- **Prospects**: clients actifs qui n'ont jamais ete factures. Cliquez sur la vignette pour filtrer la liste sur les prospects.
+- **Total des clients**: le nombre fixe de clients actifs. Cliquez sur la vignette pour effacer les filtres de la liste.
+
+Le filtre de statut au-dessus de la liste permet aussi de basculer entre Tous les statuts, Actif, Prospects, Inactif, Archive et Corbeille.
+
 ## Creer un client
 
 1. Allez dans **Clients > Nouveau client**

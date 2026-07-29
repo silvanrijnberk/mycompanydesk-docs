@@ -10,6 +10,17 @@ Beheer je volledige klantendatabase. Elke factuur, offerte en elk project is gek
 
 De klantenpagina toont al je klanten met belangrijke informatie in een oogopslag. Gebruik zoek- en filterfuncties om snel klanten te vinden.
 
+## Segmenten in de klantenlijst
+
+Bovenaan de klantenpagina toont een rij tegels een snel overzicht van je klantenbestand. De getallen zijn onafhankelijk van de zoek- en datumfilters op de lijst, zodat een tegel altijd het hele klantenbestand weergeeft.
+
+- **Klanten met achterstallige facturen**: hoeveel klanten je op dit moment nog moeten betalen. Klik op de tegel om de pagina met achterstallige facturen te openen.
+- **Stil geworden klanten**: actieve klanten die eerder wel een factuur hebben gehad, maar in de afgelopen N maanden geen factuur meer hebben ontvangen. Klik op de tegel om de lijst te filteren op stil geworden klanten. De standaard periode is zes maanden; het tegellabel toont de exacte periode die de werkruimte gebruikt.
+- **Mogelijke klanten**: actieve klanten die nog nooit een factuur hebben ontvangen. Klik op de tegel om de lijst te filteren op mogelijke klanten.
+- **Totaal klanten**: het vaste aantal actieve klanten. Klik op de tegel om de filters van de lijst te wissen.
+
+Met het statusfilter boven de lijst schakel je ook tussen Alle statussen, Actief, Mogelijke klanten, Stil geworden, Gearchiveerd en Prullenbak.
+
 ## Een klant aanmaken
 
 1. Ga naar **Klanten > Nieuwe klant**

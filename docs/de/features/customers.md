@@ -10,6 +10,17 @@ Verwalten Sie Ihre vollständige Kundendatenbank. Jede Rechnung, jedes Angebot u
 
 Die Kundenseite listet alle Ihre Kunden mit den wichtigsten Informationen auf einen Blick auf. Verwenden Sie Suche und Filter, um Kunden schnell zu finden.
 
+## Segmente in der Kundenliste
+
+Oben auf der Kundenseite zeigt eine Kachelleiste einen schnellen Überblick über Ihre Kundenbasis. Die Zahlen sind unabhängig von den Such- und Datumsfiltern der Liste, sodass eine Kachel immer das gesamte Buch widerspiegelt.
+
+- **Kunden mit überfälligen Rechnungen**: wie viele Kunden Ihnen aktuell Geld schulden. Klicken Sie auf die Kachel, um die Seite mit überfälligen Rechnungen zu öffnen.
+- **Inaktiv gewordene Kunden**: aktive Kunden, die bereits einmal in Rechnung gestellt wurden, aber in den letzten N Monaten keine Rechnung mehr erhalten haben. Klicken Sie auf die Kachel, um die Liste auf inaktiv gewordene Kunden zu filtern. Das Standardfenster beträgt sechs Monate; die Kachelbezeichnung zeigt das genaue Fenster an, das der Arbeitsbereich verwendet.
+- **Interessenten**: aktive Kunden, die noch nie in Rechnung gestellt wurden. Klicken Sie auf die Kachel, um die Liste auf Interessenten zu filtern.
+- **Kunden gesamt**: die feste Anzahl aktiver Kunden. Klicken Sie auf die Kachel, um die Filter der Liste zurückzusetzen.
+
+Mit dem Statusfilter oberhalb der Liste wechseln Sie auch zwischen Allen Status, Aktiv, Interessenten, Inaktiv geworden, Archiviert und Papierkorb.
+
 ## Kunden erstellen
 
 1. Gehen Sie zu **Kunden > Neuer Kunde**
