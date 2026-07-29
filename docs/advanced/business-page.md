@@ -20,6 +20,8 @@ The site builder replaces the old single-page business profile. Every new worksp
 
 The site builder lives at **Company > Your website** (`/website`).
 
+Opening `/website` lands on the section overview: it shows your live site, publish status, and a clear entry point to the editor. The editor itself is at `/website/editor`, reached deliberately from the overview rather than taking over the whole screen on arrival.
+
 ## AI scaffolding
 
 When you open the site builder for the first time on a fresh workspace, the editor shows a quick-start banner at the top. It reads your business register data (legal name, industry code, city) and generates a starter tagline, an about-us paragraph and three service drafts for you. You can edit everything inline before accepting, regenerate if the first suggestion is not quite right, or dismiss the banner. No wizard questions, no upfront friction.

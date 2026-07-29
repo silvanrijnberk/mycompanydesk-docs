@@ -20,6 +20,8 @@ De sitebouwer vervangt het oude bedrijfsprofiel van één pagina. Elke nieuwe we
 
 De sitebouwer vind je onder **Bedrijf > Je website** (`/website`).
 
+Als je `/website` opent, kom je op het sectieoverzicht terecht: je ziet de live site, de publicatiestatus en een duidelijke ingang naar de editor. De editor zelf zit op `/website/editor` en bereik je bewust vanuit het overzicht, in plaats van dat hij direct het hele scherm overneemt.
+
 ## AI-snelstart
 
 Als je voor het eerst de sitebouwer opent op een nieuwe werkruimte, zie je een snelstartbanner bovenaan. Die leest je KVK-gegevens (bedrijfsnaam, branche, plaats) en stelt een eerste tagline, een over-ons-tekst en drie diensten voor. Je kunt alles ter plekke aanpassen voordat je het overneemt, opnieuw genereren als de eerste suggestie niet helemaal klopt, of de banner wegklikken. Geen wizardvragen, geen gedoe vooraf.

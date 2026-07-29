@@ -20,6 +20,8 @@ Le constructeur de site remplace l'ancien profil d'entreprise a page unique. Cha
 
 Le constructeur de site se trouve sous **Entreprise > Votre site web** (`/website`).
 
+En ouvrant `/website`, vous arrivez sur l’aperçu de la section : il montre votre site en ligne, l’état de publication et un point d’entrée clair vers l’éditeur. L’éditeur proprement dit est à `/website/editor`, accessible volontairement depuis l’aperçu plutôt que de prendre tout l’écran dès l’arrivée.
+
 ## Démarrage rapide par IA
 
 Quand vous ouvrez le constructeur de site pour la première fois sur un nouvel espace de travail, une bannière de démarrage rapide apparaît en haut. Elle lit les données de votre registre de commerce (nom légal, code NAF, ville) et génère un premier slogan, un texte de présentation et trois services. Vous pouvez tout modifier sur place avant d'appliquer, régénérer si la première suggestion ne convient pas, ou masquer la bannière. Pas de questions, pas de friction.
