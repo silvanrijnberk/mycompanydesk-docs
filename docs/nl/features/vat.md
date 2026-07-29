@@ -42,7 +42,7 @@ Een checklist die tegen de actieve periode draait. Elke controle heeft een herst
 - **BTW ontbreekt**: uitgaven zonder BTW-bedrag.
 - **Bonnen ontbreken**: uitgaven zonder bijgevoegde bon.
 - **ICP open**: EU B2B-verkopen die apart op de ICP-opgaaf gemeld moeten worden.
-- **Verlegde-BTW-herkomst**: uitgaven met verlegde BTW waarvan het land of KVK-nummer van de leverancier ontbreekt, zodat rubriek 2a/4b niet te bewijzen is.
+- **Verlegde-BTW-herkomst**: uitgaven met verlegde BTW waarvan het land of KVK-nummer van de leverancier ontbreekt, zodat rubriek 2a/4a/4b niet te bewijzen is.
 
 Een badge in de kop toont het aantal blokkades, of dat alles in orde is.
 
@@ -67,6 +67,8 @@ Een tabel die het aangifteformulier van de Belastingdienst spiegelt:
 | 5. Voorbelasting en berekening totaal | 5a, 5b, 5c |
 
 Elke rij toont de omzet (excl.) en het BTW-bedrag. De balk onderaan toont het totaal te betalen of terug te ontvangen. Correcties die buiten het formulier vallen (KOR, suppletie) staan als aparte correctieregel, zodat zichtbaar blijft wat je werkelijk betaalt.
+
+Rubriek 4a is voor verlegde-BTW-aankopen van leveranciers buiten de EU (`import_reverse_charge`); rubriek 4b is voor verlegde aankopen van EU-leveranciers (`b2b_reverse_charge`). MyCompanyDesk bepaalt aan de hand van het leveranciersland de juiste rubriek, zodat het totaal in 5a klopt.
 
 ### Exporteren voor de boekhouder
 

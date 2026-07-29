@@ -91,6 +91,26 @@ Elke uitgave kan een eigen BTW-tarief hebben. Veelgebruikte opties:
 
 Het BTW-bedrag wordt automatisch berekend en opgenomen in je [BTW-rapportages](/nl/features/vat).
 
+### BTW-behandeling
+
+In speciale gevallen stel je de BTW-behandeling van de uitgave in:
+
+- **Standaard**: binnenlandse BTW.
+- **Verlegd (EU)**: je rekent de BTW zelf af voor een zakelijke aankoop uit de EU, rubriek 4b.
+- **Verlegd (buiten de EU)**: leverancier buiten de EU factureert 0% BTW (sources/vat-rates.yaml#countries.NL.zero), jij rekent zelf af in rubriek 4a. Gebruik dit bijvoorbeeld voor een Amerikaanse leverancier zoals Anthropic of OpenAI.
+- **Vrijgesteld**: de levering is BTW-vrij.
+- **Buitenlandse BTW in rekening gebracht**: buitenlandse BTW die mogelijk via de EU-teruggaafprocedure terug te vragen is.
+
+De behandeling wordt meestal overgenomen uit de categorie. Je kunt hem per uitgave overschrijven.
+
+### Handmatig BTW-bedrag
+
+Meestal berekent MyCompanyDesk het BTW-bedrag uit het tarief en het nettobedrag. Komt dat niet overeen met het document van de leverancier, bijvoorbeeld een creditnota met netto EUR 0 en alleen BTW, dan kun je het BTW-bedrag handmatig invoeren. Het tarief bepaalt het bedrag dan niet meer; het formulier gebruikt jouw ingevoerde bedrag.
+
+### Correcties in vergrendelde perioden
+
+Zit een uitgave in een vergrendelde BTW-periode, dan blokkeert het formulier wijzigingen in de financiële velden en biedt een correctiepad. De correctie wordt in de huidige open periode aangemaakt en verwijst naar de oorspronkelijke vergrendelde uitgave, zodat je later nog kunt zien wat er is gewijzigd.
+
 ## Uitgaven koppelen
 
 Koppel uitgaven aan:

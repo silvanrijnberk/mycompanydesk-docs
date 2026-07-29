@@ -91,6 +91,26 @@ Chaque dépense peut avoir son propre taux de TVA. Options courantes :
 
 Le montant de TVA est calculé automatiquement et inclus dans vos [rapports de TVA](/fr/features/vat).
 
+### Traitement de la TVA
+
+Dans des cas particuliers, vous définissez le traitement de la TVA de la dépense :
+
+- **Standard**: TVA nationale.
+- **Autoliquidation (UE)**: vous déclarez vous-même la TVA sur un achat B2B intra-UE, rubrique 4b.
+- **Autoliquidation (hors UE)**: un fournisseur hors UE facture 0 % de TVA (sources/vat-rates.yaml#countries.NL.zero), vous la déclarez vous-même en rubrique 4a. Utilisez cela par exemple pour un fournisseur américain comme Anthropic ou OpenAI.
+- **Exonéré**: la livraison est exonérée de TVA.
+- **TVA étrangère facturée**: TVA étrangère éventuellement récupérable via la procédure de remboursement de l'UE.
+
+Le traitement est normalement hérité de la catégorie. Vous pouvez le remplacer par dépense.
+
+### Montant de TVA manuel
+
+Habituellement, MyCompanyDesk calcule le montant de TVA à partir du taux et du montant net. Si cela ne correspond pas au document du fournisseur, par exemple un avoir avec un montant net de EUR 0 et uniquement de la TVA, vous pouvez saisir le montant de TVA manuellement. Le taux ne pilote plus le montant; le formulaire utilise votre saisie.
+
+### Corrections en période verrouillée
+
+Si une dépense se trouve dans une période de TVA verrouillée, le formulaire bloque les modifications des champs financiers et propose un chemin de correction. La correction est créée dans la période ouverte en cours et renvoie vers la dépense d'origine, afin de conserver la traçabilité.
+
 ## Lier les dépenses
 
 Liez les dépenses à :

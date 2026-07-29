@@ -42,7 +42,7 @@ Eine Checkliste, die gegen den aktiven Zeitraum läuft. Jede Prüfung hat einen 
 - **Fehlende USt.**: Ausgaben ohne USt.-Betrag.
 - **Fehlende Belege**: Ausgaben ohne angehängten Beleg.
 - **ICP offen**: EU-B2B-Verkäufe, die separat in der ICP-Meldung anzugeben sind.
-- **Reverse-Charge-Ursprung**: Ausgaben mit Reverse-Charge-MwSt., bei denen das Land oder die KVK-Nummer des Lieferanten fehlt, sodass die Rubrik 2a/4b nicht belegt werden kann.
+- **Reverse-Charge-Ursprung**: Ausgaben mit Reverse-Charge-MwSt., bei denen das Land oder die KVK-Nummer des Lieferanten fehlt, sodass die Rubrik 2a/4a/4b nicht belegt werden kann.
 
 Ein Zähler in der Kopfzeile zeigt die Zahl der Blocker oder dass alles in Ordnung ist.
 
@@ -67,6 +67,8 @@ Eine Tabelle, die das Erklärungsformular der Belastingdienst spiegelt:
 | 5. Voorbelasting en berekening totaal | 5a, 5b, 5c |
 
 Jede Zeile zeigt den Umsatz (exkl.) und den USt.-Betrag. Die Leiste unten zeigt die Summe, die zu zahlen oder zu erstatten ist. Korrekturen außerhalb des Formulars (KOR, Suppletie) erscheinen als eigene Korrekturzeile, sodass sichtbar bleibt, was Sie tatsächlich zahlen.
+
+Rubrik 4a ist für Reverse-Charge-Einkäufe von Lieferanten außerhalb der EU (`import_reverse_charge`); Rubrik 4b ist für Reverse-Charge-Einkäufe von EU-Lieferanten (`b2b_reverse_charge`). MyCompanyDesk leitet anhand des Lieferantenlands die richtige Rubrik ab, damit die Summe in 5a stimmt.
 
 ### Exporte für die Buchhaltung
 

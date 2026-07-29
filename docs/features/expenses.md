@@ -67,10 +67,19 @@ Every expense has a `vat_treatment` field that decides how it lands on your VAT 
 |---|---|
 | `standard` | Domestic VAT charged by the supplier — the default. |
 | `b2b_reverse_charge` | Verleggingsregeling: you self-account for the VAT on an EU B2B purchase. |
+| `import_reverse_charge` | Non-EU supplier invoices 0% VAT (sources/vat-rates.yaml#countries.NL.zero); you self-account under rubriek 4a, not 4b. Use this for suppliers such as Anthropic or OpenAI. |
 | `vat_exempt` | The supply is exempt from VAT. |
 | `foreign_vat_charged` | A non-EU supplier charged you VAT (typically reclaimable through the EU refund procedure). |
 
 The treatment is normally inherited from the category default. Override it on a per-expense basis when reality differs — for example, a Software-category expense from a US vendor that did charge VAT instead of applying the EU reverse-charge default.
+
+### Manual VAT amount
+
+The VAT amount is normally calculated from the rate and the net amount. If the supplier's document (for example a credit note with net EUR 0 and VAT only) does not match that calculation, click the VAT amount and enter it yourself. The percentage then stops driving the amount, and the form uses your figure.
+
+### Corrections in locked periods
+
+When an expense sits in a locked VAT period, the detail form blocks changes to the financial fields and offers a correction path. The correction is created in the current open period and carries a note that links back to the original locked expense, so the audit trail stays intact.
 
 ## Multi-rate lines
 

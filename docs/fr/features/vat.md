@@ -42,7 +42,7 @@ Une liste de contrôles exécutée sur la période active. Chaque contrôle a un
 - **TVA manquante** : dépenses sans montant de TVA.
 - **Justificatifs manquants** : dépenses sans justificatif joint.
 - **ICP en attente** : ventes B2B intra-UE à déclarer séparément sur l'ICP-opgaaf.
-- **Origine de l'autoliquidation** : dépenses en autoliquidation dont le pays ou le numéro KVK du fournisseur manque, si bien que la rubrique 2a/4b ne peut pas être justifiée.
+- **Origine de l'autoliquidation** : dépenses en autoliquidation dont le pays ou le numéro KVK du fournisseur manque, si bien que la rubrique 2a/4a/4b ne peut pas être justifiée.
 
 Un badge dans l'en-tête indique le nombre de points bloquants, ou que tout est en ordre.
 
@@ -67,6 +67,8 @@ Un tableau qui reflète le formulaire de déclaration du Belastingdienst :
 | 5. Voorbelasting en berekening totaal | 5a, 5b, 5c |
 
 Chaque ligne montre le chiffre d'affaires (HT) et le montant de TVA. La barre du bas affiche le total à payer ou à récupérer. Les corrections hors formulaire (KOR, suppletie) apparaissent sur une ligne d'ajustement distincte, pour que ce que vous payez réellement reste visible.
+
+La rubrique 4a concerne les achats en autoliquidation auprès de fournisseurs hors UE (`import_reverse_charge`); la rubrique 4b concerne les achats en autoliquidation auprès de fournisseurs UE (`b2b_reverse_charge`). MyCompanyDesk déduit la bonne rubrique à partir du pays du fournisseur, pour que le total en 5a soit exact.
 
 ### Exports pour votre comptable
 

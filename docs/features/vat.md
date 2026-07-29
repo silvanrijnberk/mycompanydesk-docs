@@ -43,7 +43,7 @@ A checklist that runs against the active period. Every check has a fix link that
 - **Missing VAT**: expenses without a VAT amount.
 - **Missing receipts**: expenses without an attached receipt.
 - **ICP pending**: EU B2B sales that need to be reported separately on the ICP-opgaaf.
-- **Reverse-charge origin**: expenses with reverse-charge VAT whose supplier country or KVK number is missing, so rubriek 2a/4b cannot be proven.
+- **Reverse-charge origin**: expenses with reverse-charge VAT whose supplier country or KVK number is missing, so rubriek 2a/4a/4b cannot be proven.
 
 A badge in the header shows the number of blockers, or that everything is clear.
 
@@ -68,6 +68,8 @@ A table that mirrors the Belastingdienst aangifteformulier:
 | 5. Voorbelasting en berekening totaal | 5a, 5b, 5c |
 
 Each row shows the omzet (excl.) and the VAT amount. The bottom bar shows the total to pay or receive. Corrections that fall outside the form (KOR, suppletie) appear as a separate adjustment row, so what you actually pay stays visible.
+
+Rubriek 4a captures reverse-charge purchases from suppliers outside the EU (`import_reverse_charge`); rubriek 4b captures reverse-charge purchases from EU suppliers (`b2b_reverse_charge`). MyCompanyDesk derives the correct rubriek from the supplier country so the total in 5a stays accurate.
 
 ### Exports for your accountant
 
