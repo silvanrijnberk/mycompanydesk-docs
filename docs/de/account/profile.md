@@ -43,7 +43,7 @@ Push-Benachrichtigungen werden in Browsern und in der Android-App unterstützt. 
 
 ## Verbundene Kalender
 
-Sie können **Google Kalender** oder **Outlook** verbinden, damit Termine aus Ihrem Kalender auch in MyCompanyDesk erscheinen. Das ist keine Zeile auf der Einstellungsseite: Öffnen Sie den Kalender in der App und gehen Sie in dessen Einstellungen, dort ist die Seite mit den Kalenderverbindungen verlinkt. Jede Verbindung lässt sich auf derselben Seite wieder entfernen.
+Sie können **Google Kalender** oder **Outlook** verbinden, damit Termine aus Ihrem Kalender auch in MyCompanyDesk erscheinen. Die Verbindung finden Sie jetzt auch unter **Einstellungen** > **Zeitplan** und ist weiterhin direkt von der Zeitplan-Seite erreichbar. Jede Verbindung lässt sich auf derselben Seite wieder entfernen.
 
 ## Kundenstandorte
 

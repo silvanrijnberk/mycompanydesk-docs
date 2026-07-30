@@ -20,7 +20,7 @@ La page comporte deux sections :
 
 ### Nom de l'espace de travail
 
-Une carte avec un seul champ. Le nom de l'espace de travail apparaît dans la navigation, sur les invitations et dans le menu du compte dans l'application. Seuls les administrateurs peuvent le modifier. Les modifications sont enregistrées automatiquement.
+Une carte avec un seul champ. Le nom de l'espace de travail apparaît dans la navigation, sur les invitations et dans le menu de l'espace de travail dans la barre latérale. Seuls les administrateurs peuvent le modifier. Les modifications sont enregistrées automatiquement.
 
 ### Membres actuels
 
@@ -86,7 +86,7 @@ Les administrateurs ne peuvent pas gérer les passkeys ni la vérification en de
 
 ## Changer d'espace de travail
 
-Ouvrez le sélecteur d'espace de travail dans la barre supérieure pour passer d'un espace à l'autre ou en créer un nouveau.
+Ouvrez le menu de l'espace de travail dans l'en-tête de la barre latérale pour passer d'un espace à l'autre, voir l'abonnement ou en créer un nouveau.
 
 ## Plans en un coup d'œil
 

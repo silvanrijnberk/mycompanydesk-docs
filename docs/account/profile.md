@@ -43,7 +43,7 @@ Push notifications are supported in browsers and in the Android app. On Android 
 
 ## Connected calendars
 
-You can connect **Google Calendar** or **Outlook** so appointments from your calendar also appear in MyCompanyDesk. This is not a row on the settings page: open the agenda in the app and go to its settings, where the calendar connections page is linked. Each connection can be removed again from the same page.
+You can connect **Google Calendar** or **Outlook** so appointments from your calendar also appear in MyCompanyDesk. This is now also a row on the settings page (**Instellingen** > **Uren & agenda**), and still reachable from the Schedule page. Each connection can be removed again from the same page.
 
 ## Customer locations
 

@@ -81,12 +81,13 @@ Quelques pages n'apparaissent que via la recherche, pour garder la liste princip
 | Configurer mon site web ou mon domaine | **Votre site et domaine** |
 | Activer ou désactiver devis, projets ou newsletters | **Modules** |
 | Donner accès à mon comptable | **Accès et comptable** (administrateurs) |
+| Modifier les paramètres de suivi du temps | **Agenda** |
 | Mettre à niveau ou consulter mon abonnement | **Votre abonnement** (administrateurs) |
 | Connecter ma banque | Recherchez "compte bancaire" |
 | Télécharger une copie de mes données | **Télécharger les données** |
 | Résilier mon compte | **Résilier le compte** (administrateurs) |
 
-La synchronisation d'agenda avec Google ou Outlook ne se trouve pas sur la page des paramètres; vous connectez un agenda depuis les réglages de l'agenda lui-même. Voir [Vos paramètres personnels](/fr/account/profile#agendas-connectes).
+La synchronisation d'agenda avec Google ou Outlook se trouve maintenant aussi sous **Paramètres** > **Agenda**. Vous pouvez toujours l'ouvrir directement depuis la page Agenda.
 
 ## Anciens liens
 

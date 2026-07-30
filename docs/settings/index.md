@@ -79,12 +79,13 @@ A few pages only appear through search, to keep the main list calm:
 | Set up my website or domain | **Je website en domein** |
 | Turn quotes, projects or newsletters on or off | **Onderdelen** |
 | Give my accountant access | **Toegang en boekhouder** (admins) |
+| Change time-registration options | **Uren & agenda** |
 | Upgrade or check my plan | **Je abonnement** (admins) |
 | Connect my bank | Search for "bank koppelen" |
 | Download a copy of my data | **Gegevens downloaden** |
 | Cancel my account | **Account opzeggen** (admins) |
 
-Calendar sync with Google or Outlook is not on the settings page; you connect a calendar from the agenda's own settings. See [Your personal settings](/account/profile#connected-calendars).
+Calendar sync with Google or Outlook is now also listed under **Instellingen** > **Uren & agenda**. You can still open it directly from the Schedule page.
 
 ## Old links
 

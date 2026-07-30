@@ -74,7 +74,7 @@ Sélectionnez plusieurs entrées dans la vue Liste (appui long sur mobile) pour 
 
 ## Synchronisation de calendrier externe
 
-Connectez Google Agenda ou le calendrier Outlook pour réunir votre agenda et vos heures. Ouvrez les paramètres de l'agenda via la roue dentée et suivez le lien calendrier, ou rendez-vous directement sur la page des calendriers connectés. Vous pouvez y :
+Connectez Google Agenda ou le calendrier Outlook pour réunir votre agenda et vos heures. Ouvrez les paramètres de l'agenda via **Paramètres** > **Agenda** ou la roue dentée sur la page Agenda, et suivez le lien calendrier. Vous pouvez aussi aller directement à la page des calendriers connectés. Vous pouvez y :
 
 - Connecter **Google Agenda** ou **Calendrier Outlook**
 - Activer la synchronisation par connexion avec **Activer la synchronisation**
@@ -85,7 +85,7 @@ Les événements provenant d'un calendrier connecté apparaissent dans les vues 
 
 ## Paramètres
 
-La roue dentée sur la page Agenda ouvre les paramètres de l'agenda. Vous y configurez :
+Les paramètres de l'agenda se trouvent sous **Paramètres** > **Agenda** ou via la roue dentée sur la page Agenda. Vous y configurez :
 
 - Le **Mode heures uniquement**, la **confirmation automatique du temps provisoire**, et le comportement de saisie
 - Le mode de travail : **Heures**, **Postes** ou minuteur

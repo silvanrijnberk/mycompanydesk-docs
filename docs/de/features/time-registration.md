@@ -74,7 +74,7 @@ Wählen Sie mehrere Einträge in der Listenansicht aus (langes Drücken auf Mobi
 
 ## Externen Kalender verbinden
 
-Verbinden Sie Google Kalender oder Outlook Kalender, um Agenda und Stunden zusammenzubringen. Öffnen Sie die Zeitplan-Einstellungen über das Zahnrad und folgen Sie dem Kalender-Link, oder gehen Sie direkt zur Seite mit den verbundenen Kalendern. Dort können Sie:
+Verbinden Sie Google Kalender oder Outlook Kalender, um Agenda und Stunden zusammenzubringen. Öffnen Sie die Zeitplan-Einstellungen über **Einstellungen** > **Zeitplan** oder das Zahnrad auf der Zeitplan-Seite, und folgen Sie dem Kalender-Link. Sie können auch direkt zur Seite mit den verbundenen Kalendern gehen. Dort können Sie:
 
 - **Google Kalender** oder **Outlook Kalender** verbinden
 - Die Synchronisation pro Verbindung mit **Synchronisation aktivieren** einschalten
@@ -85,7 +85,7 @@ Termine aus einem verbundenen Kalender erscheinen in der Tages- und Wochenansich
 
 ## Einstellungen
 
-Das Zahnrad auf der Zeitplan-Seite öffnet die Zeitplan-Einstellungen. Hier konfigurieren Sie:
+Die Zeitplan-Einstellungen finden Sie unter **Einstellungen** > **Zeitplan** oder über das Zahnrad auf der Zeitplan-Seite. Hier konfigurieren Sie:
 
 - **Nur Stunden Modus**, **Vorläufige Zeit automatisch bestätigen**, und weiteres Eingabeverhalten
 - Den Betriebsmodus: **Stunden**, **Schicht** oder **Timer**

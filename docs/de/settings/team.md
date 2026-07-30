@@ -20,7 +20,7 @@ Die Seite hat zwei Bereiche:
 
 ### Name des Arbeitsbereichs
 
-Eine Karte mit einem einzigen Feld. Der Name des Arbeitsbereichs erscheint in der Navigation, auf Einladungen und im Kontomenü der App. Nur Team-Admins können ihn bearbeiten. Änderungen werden automatisch gespeichert.
+Eine Karte mit einem einzigen Feld. Der Name des Arbeitsbereichs erscheint in der Navigation, auf Einladungen und im Arbeitsbereich-Menü in der Seitenleiste. Nur Team-Admins können ihn bearbeiten. Änderungen werden automatisch gespeichert.
 
 ### Aktuelle Mitglieder
 
@@ -86,7 +86,7 @@ Admins können die Passkeys oder Zwei-Schritt-Verifizierung eines anderen Mitgli
 
 ## Arbeitsbereiche wechseln
 
-Öffnen Sie den Arbeitsbereich-Umschalter in der oberen Leiste, um zwischen Arbeitsbereichen zu wechseln oder einen neuen anzulegen.
+Öffnen Sie das Arbeitsbereich-Menü im Kopf der Seitenleiste, um zwischen Arbeitsbereichen zu wechseln, das Abonnement anzusehen oder einen neuen anzulegen.
 
 ## Tarife im Überblick
 

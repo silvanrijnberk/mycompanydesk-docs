@@ -32,7 +32,7 @@ Wenn ein Kollege bereits einen Arbeitsbereich eingerichtet hat:
 2. Klicken Sie auf den Einladungslink in Ihrer E-Mail
 3. Nehmen Sie die Einladung an, um dem Arbeitsbereich beizutreten
 
-Sie können Mitglied mehrerer Arbeitsbereiche sein und über Ihr Kontomenü zwischen ihnen wechseln.
+Sie können Mitglied mehrerer Arbeitsbereiche sein und über das Arbeitsbereich-Menü in der Seitenleiste zwischen ihnen wechseln.
 
 ## Anmeldung nach der Registrierung
 

@@ -20,7 +20,7 @@ The page has two sections:
 
 ### Workspace name
 
-A single-field card. The workspace name appears in the navigation, on invitations, and on the in-app account menu. Only team admins can edit it. Changes save automatically.
+A single-field card. The workspace name appears in the navigation, on invitations, and in the workspace menu in the sidebar. Only team admins can edit it. Changes save automatically.
 
 ### Current members
 
@@ -86,7 +86,7 @@ Admins cannot manage another member's passkeys or two-step verification; those a
 
 ## Switching workspaces
 
-Open the workspace switcher in the top bar to jump between workspaces or create a new one.
+Open the workspace menu in the sidebar header to jump between workspaces, open subscription details, or create a new one.
 
 ## Plan gating quick reference
 
