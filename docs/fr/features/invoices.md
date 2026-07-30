@@ -8,14 +8,14 @@ Les factures sont au coeur de MyCompanyDesk. Creez des factures professionnelles
 
 ## Vue d'ensemble
 
-La page des factures affiche toutes vos factures avec des fonctionnalites de filtrage et de recherche. Utilisez les onglets de statut pour consulter rapidement :
+La page des factures affiche toutes vos factures avec des fonctionnalites de filtrage et de recherche. Les onglets de statut dans la barre superieure permettent de basculer rapidement entre :
 
-- **Toutes** -- Toutes les factures
-- **Brouillon** -- Creees mais non envoyees
-- **Envoyees** -- Transmises aux clients
-- **En retard** -- Date d'echeance depassee, impayees
-- **Payees** -- Paiement recu
-- **Annulees** -- Factures annulees
+- **Toutes** : toutes les factures
+- **Brouillons** : creees mais non envoyees
+- **En attente** : factures envoyees, ouvertes ou en retard
+- **Ventes du site** : ventes en ligne, lorsque votre espace de travail a active les ventes de site web
+
+Vous pouvez toujours utiliser le filtre **Statut** pour affiner la liste a n'importe quel statut, y compris envoyee, en retard, payee ou annulee.
 
 ## Creer une facture
 

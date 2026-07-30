@@ -8,12 +8,13 @@ Houd al je zakelijke uitgaven bij, scan bonnen met AI en categoriseer kosten voo
 
 ## Overzicht
 
-De uitgavenpagina toont al je geregistreerde uitgaven. Filter op:
+De uitgavenpagina toont al je geregistreerde uitgaven. De betaalstatus-tabs in de bovenste balk laten je snel wisselen tussen:
 
-- **Categorie** — Kantoor, reizen, apparatuur, etc.
-- **Project** — Uitgaven gekoppeld aan specifieke projecten
-- **Datumbereik** — Filter op uitgavedatum
-- **Status** — Actief of gearchiveerd
+- **Alles**: elke geregistreerde uitgave
+- **Onbetaald**: nog niet betaalde uitgaven
+- **Betaald**: al betaalde uitgaven
+
+Je kunt nog steeds filteren op categorie, project, datumbereik of status. Klik op een uitgave om de detailpagina te openen; klik op **Nieuw** om er handmatig een toe te voegen, of **Scan bon** om er een te extraheren uit een afbeelding of PDF.
 
 ## Een uitgave aanmaken
 

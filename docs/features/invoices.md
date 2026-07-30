@@ -8,14 +8,14 @@ Invoices are at the core of MyCompanyDesk. Create professional invoices, send th
 
 ## Overview
 
-The invoices page shows all your invoices with filtering and search capabilities. Use the status tabs to quickly view:
+The invoices page shows all your invoices with filtering and search capabilities. The status tabs in the top bar let you switch quickly between:
 
-- **All** — Every invoice
-- **Draft** — Created but not sent
-- **Sent** — Delivered to customers
-- **Overdue** — Past due date, unpaid
-- **Paid** — Payment received
-- **Cancelled** — Cancelled invoices
+- **All**: every invoice
+- **Drafts**: created but not sent
+- **Outstanding**: sent, open, or overdue invoices
+- **Website sales**: online sales, when your workspace has website sales enabled
+
+You can still use the **Status** filter to narrow the list to any status, including sent, overdue, paid, or cancelled.
 
 ## Creating an invoice
 

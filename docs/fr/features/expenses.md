@@ -8,12 +8,13 @@ Suivez toutes vos dépenses professionnelles, numérisez des reçus avec l'IA et
 
 ## Vue d'ensemble
 
-La page des dépenses répertorie toutes vos dépenses enregistrées. Filtrez par :
+La page des dépenses répertorie toutes vos dépenses enregistrées. Les onglets de statut de paiement dans la barre supérieure permettent de basculer rapidement entre :
 
-- **Catégorie** -- Bureau, déplacement, équipement, etc.
-- **Projet** -- Dépenses liées à des projets spécifiques
-- **Plage de dates** -- Filtrer par date de dépense
-- **Statut** -- Active ou archivée
+- **Toutes** : toutes les dépenses enregistrées
+- **Impayées** : dépenses non encore payées
+- **Payées** : dépenses déjà payées
+
+Vous pouvez toujours filtrer par catégorie, projet, plage de dates ou statut. Cliquez sur une dépense pour ouvrir la page de détail; cliquez sur **Nouvelle** pour en ajouter une manuellement, ou **Numériser un reçu** pour en extraire une à partir d'une image ou d'un PDF.
 
 ## Créer une dépense
 
