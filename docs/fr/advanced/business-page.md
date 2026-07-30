@@ -89,6 +89,24 @@ Certaines sections sur mesure contiennent des boutons ou des liens cliquables qu
 
 Ouvrez une page dans l'editeur de contenu sur mesure et selectionnez la section dont vous voulez modifier le bouton. Dans le panneau **Sections**, chaque section contenant des boutons adressables affiche une liste **Boutons**. Choisissez le bouton a remplacer et saisissez sa nouvelle destination. Vous pouvez creer un lien vers une autre page de votre site, une URL externe, une adresse e-mail (`mailto:`) ou un numero de telephone (`tel:`). Les liens sont verifies avec les memes schemes autorises que les liens de navigation, par securite. Si vous laissez le remplacement vide, le bouton conserve la destination d'origine du modele.
 
+### Ajouter et modifier des sections
+
+Lorsque vous ouvrez une page sur mesure dans l'editeur, le panneau **Sections** propose maintenant le catalogue complet de sections. Les sections qui appartiennent au design lui-meme apparaissent en premier et utilisent le balisage propre au modele ainsi que vos donnees d'espace de travail, pour un rendu natif. Les sections issues du catalogue plus large sont integrees via un pont avec la meme palette et la meme typographie, mais elles ont leurs propres champs de contenu par section.
+
+Cliquez sur **Ajouter une section** pour ouvrir le selecteur, choisissez le type souhaite, et la section est deposee sur la page avec des valeurs par defaut sensibles. Le panneau d'inspection a droite affiche les champs de la section selectionnee, qu'ils proviennent de vos donnees d'espace de travail ou des props de contenu propres a la section. Les sections ajoutees peuvent etre reordonnees, masquees ou supprimees de la meme maniere que les sections propres au design.
+
+### Renommer les pages
+
+Les pages de modele ont une adresse fixe et une etiquette de menu ancree dans le balisage du design. Au lieu de modifier chaque lien a la main, le panneau **Pages** vous permet de renommer l'etiquette de menu de chaque page de modele. Cliquez sur le crayon a cote d'une page, saisissez la nouvelle etiquette, et chaque lien vers cette page dans la navigation et le pied de page se met a jour automatiquement. L'adresse de la page elle-meme ne change pas, donc aucune redirection n'est necessaire et les liens existants continuent de fonctionner.
+
+Si vous videz le champ ou retapez le nom original du design, le renommage est supprime et l'etiquette d'origine revient.
+
+### Modifier le texte du design
+
+Les designs contiennent de petits morceaux de texte litteral, tels que des sous-titres, des legendes et des mini-titres, qui ne sont pas lies a vos donnees d'espace de travail. En mode edition, ces textes sont editables directement sur le canvas : cliquez sur le texte, tapez la modification, puis appuyez sur Entree ou cliquez ailleurs pour enregistrer. La surcharge est stockee par section et par page, et le site public affiche votre version a la place des mots originaux du design.
+
+Le texte a l'interieur de blocs repetitifs ne peut pas etre edite de cette facon, car un chemin statique modifierait chaque element repete. L'edition est egalement limitee au texte situe a l'interieur d'une section, afin qu'il existe toujours une adresse stable pour la surcharge. Pour annuler une modification, effacez le champ ou retapez le texte original du design.
+
 ## Creer des pages
 
 1. Allez dans l'onglet **Pages**.

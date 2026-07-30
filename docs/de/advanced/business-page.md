@@ -89,6 +89,24 @@ Einige Bespoke-Abschnitte enthalten klickbare Buttons oder Links, die normalerwe
 
 Öffnen Sie eine Seite im Bespoke-Content-Editor und wählen Sie den Abschnitt aus, dessen Button Sie ändern möchten. Im Panel **Abschnitte** zeigt jeder Abschnitt mit anpassbaren Buttons eine Liste **Buttons**. Wählen Sie den gewünschten Button aus und geben Sie das neue Ziel ein. Sie können auf eine andere Seite Ihrer Site, eine externe URL, eine E-Mail-Adresse (`mailto:`) oder eine Telefonnummer (`tel:`) verlinken. Links werden aus Sicherheitsgründen mit denselben erlaubten Schemes wie Navigationslinks geprüft. Lassen Sie die Überschreibung leer, behält der Button das ursprüngliche Ziel aus der Vorlage bei.
 
+### Abschnitte hinzufügen und bearbeiten
+
+Wenn Sie eine Bespoke-Seite im Editor öffnen, bietet das Panel **Abschnitte** nun den vollständigen Abschnittskatalog. Abschnitte, die zum Design selbst gehören, stehen oben und verwenden die eigene Markup der Vorlage sowie Ihre Workspace-Daten, damit sie nativ aussehen. Abschnitte aus dem breiteren Katalog werden auf derselben Palette und Typografie überbrückt, haben aber eigene Inhaltsfelder pro Abschnitt.
+
+Klicken Sie auf **Abschnitt hinzufügen**, um den Picker zu öffnen, wählen Sie die gewünschte Art, und der Abschnitt wird mit sinnvollen Standardwerten auf die Seite platziert. Das Inspektionspanel rechts zeigt die Felder des gewählten Abschnitts, egal ob sie aus Ihren Workspace-Daten oder aus den eigenen Inhalts-Props des Abschnitts stammen. Hinzugefügte Abschnitte können genau wie die eigenen Abschnitte der Vorlage neu angeordnet, ausgeblendet oder entfernt werden.
+
+### Seiten umbenennen
+
+Vorlagenseiten haben eine feste Adresse und ein Menü-Label, das in der Markup der Vorlage verankert ist. Statt jeden Link von Hand zu ändern, können Sie im Panel **Seiten** das Menü-Label jeder Vorlagenseite umbenennen. Klicken Sie auf das Stift-Symbol neben einer Seite, geben Sie das neue Label ein, und jeder Link zu dieser Seite in Navigation und Footer wird automatisch aktualisiert. Die Adresse der Seite selbst ändert sich nicht, daher ist keine Weiterleitung nötig und bestehende Links funktionieren weiter.
+
+Wenn Sie das Feld leeren oder den ursprünglichen Namen der Vorlage zurücktippen, wird die Umbenennung entfernt und das ursprüngliche Label erscheint wieder.
+
+### Design-Text bearbeiten
+
+Designs enthalten kleine Textstellen wie Untertitel, Bildunterschriften und kurze Überschriften, die nicht mit Ihren Workspace-Daten verknüpft sind. Im Bearbeitungsmodus sind diese Texte direkt auf der Canvas editierbar: klicken Sie den Text, tippen Sie die Änderung und drücken Sie Enter oder klicken Sie außerhalb, um zu speichern. Die Überschreibung wird pro Abschnitt und pro Seite gespeichert, und die öffentliche Site zeigt Ihre Version anstelle der ursprünglichen Worte des Designs.
+
+Text innerhalb wiederholender Blöcke kann auf diese Weise nicht bearbeitet werden, da ein statischer Pfad jedes wiederholte Element verändern würde. Die Bearbeitung beschränkt sich außerdem auf Texte, die innerhalb eines Abschnitts liegen, damit es immer eine stabile Adresse für die Überschreibung gibt. Um eine Änderung rückgängig zu machen, löschen Sie den Inhalt oder tippen Sie den ursprünglichen Text des Designs zurück.
+
 ## Seiten erstellen
 
 1. Gehen Sie zum Tab **Seiten**.
