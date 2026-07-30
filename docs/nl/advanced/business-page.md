@@ -89,6 +89,24 @@ Sommige bespoke-secties bevatten klikbare knoppen of links die normaal naar een 
 
 Open een pagina in de bespoke-contenteditor en selecteer de sectie waarvan je de knop wilt aanpassen. In het paneel **Secties** toont elke sectie met aanpasbare knoppen een lijst **Knoppen**. Kies de knop die je wilt overschrijven en voer de nieuwe bestemming in. Je kunt linken naar een andere pagina op je site, een externe URL, een e-mailadres (`mailto:`) of een telefoonnummer (`tel:`). Links worden om veiligheid gecheckt tegen dezelfde toegestane schemes als navigatielinks. Laat je de overschrijving leeg, dan houdt de knop zijn oorspronkelijke bestemming uit het sjabloon.
 
+### Secties toevoegen en bewerken
+
+Als je een bespoke-pagina opent in de editor, biedt het paneel **Secties** nu de volledige sectiecatalogus. Secties die bij het ontwerp zelf horen, staan bovenaan en gebruiken de eigen markup van het sjabloon en je werkruimtegegevens, zodat ze er native uitzien. Secties uit de bredere catalogus worden via een brug ingeladen in hetzelfde kleurenpalet en lettertype, maar hebben hun eigen inhoudsvelden per sectie.
+
+Klik op **Sectie toevoegen** om het venster te openen, kies de soort die je wilt, en de sectie wordt op de pagina geplaatst met logische standaardwaarden. Het inspectiepaneel rechts toont de velden van de geselecteerde sectie, of ze nu uit je werkruimtegegevens komen of uit de eigen inhoudsprops van de sectie. Je kunt toegevoegde secties op dezelfde manier herschikken, verbergen of verwijderen als de secties van het ontwerp zelf.
+
+### Pagina's hernoemen
+
+Sjabloonpagina's hebben een vast adres en een menulabel dat in de markup van het ontwerp zit. In plaats van elke link handmatig te wijzigen, laat het paneel **Pagina's** je het menulabel van elke sjabloonpagina hernoemen. Klik op het potlood naast een pagina, typ het nieuwe label en elke link naar die pagina in de navigatie en footer wordt automatisch bijgewerkt. Het adres van de pagina zelf verandert niet, dus je hebt geen redirect nodig en bestaande links blijven werken.
+
+Als je het veld leegmaakt of de oorspronkelijke naam van het ontwerp terugtypt, wordt de hernoeming verwijderd en komt het oorspronkelijke label terug.
+
+### Ontwerptekst bewerken
+
+Ontwerpen bevatten kleine stukjes letterlijke tekst, zoals kickers, bijschriften en kleine koppen, die niet aan je werkruimtegegevens gekoppeld zijn. In de edit-modus zijn die tekstjes op de canvas bewerkbaar: klik op de tekst, typ de wijziging en druk op Enter of klik ergens anders om op te slaan. De overschrijving wordt per sectie en per pagina opgeslagen, en de openbare site toont jouw versie in plaats van de oorspronkelijke woorden van het ontwerp.
+
+Tekst binnen herhalende blokken kun je op deze manier niet bewerken, want één statisch pad zou elk herhaald item veranderen. Bewerken is ook beperkt tot tekst die binnen een sectie staat, zodat er altijd een stabiel adres voor de overschrijving is. Om een wijziging ongedaan te maken, wis je het veld of typ je de oorspronkelijke tekst van het ontwerp terug.
+
 ## Pagina's aanmaken
 
 1. Ga naar de **Pagina's**-tab.

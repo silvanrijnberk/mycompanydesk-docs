@@ -89,6 +89,24 @@ Some bespoke sections include clickable buttons or links that would normally poi
 
 Open a page in the bespoke content editor and select the section whose button you want to change. In the **Sections** panel, each section that contains addressable buttons shows a **Buttons** list. Pick the button you want to override and enter its new destination. You can link to another page on your site, an external URL, an email address (`mailto:`) or a phone number (`tel:`). Links are checked against the same allowed schemes as navigation links for safety. If you leave the override empty, the button keeps the template's original destination.
 
+### Adding and editing sections
+
+When you open a bespoke page in the editor, the **Sections** panel now offers the full section catalogue. Sections that belong to the design itself appear first and use the template's own markup and your workspace data, so they look native. Sections from the broader catalogue are bridged in on the same palette and typography, but carry their own per-instance content fields.
+
+Click **Add section** to open the picker, choose the kind you want, and the section drops onto the page with sensible defaults. The inspector on the right shows the fields for the selected section, whether they come from your workspace data or from the section's own content props. You can reorder, hide, or remove added sections the same way as the design's own sections.
+
+### Renaming pages
+
+Template pages have a fixed address and a menu label that is baked into the design's markup. Rather than editing every link by hand, the **Pages** panel lets you rename the menu label of any template page. Click the pencil next to a page, type the new label, and every link to that page in the navigation and footer updates automatically. The page address itself does not change, so no redirect is needed and existing links keep working.
+
+If you clear the field or type the design's original name back, the rename is removed and the design's own label returns.
+
+### Editing design copy
+
+Designs contain small pieces of literal text, such as kickers, captions, and micro-headings, that are not connected to your workspace data. In edit mode these text snippets are editable on the canvas: click the text, type the change, and press Enter or click outside to save. The override is stored per section and per page, and the public site shows your version instead of the design's original words.
+
+Text inside repeating blocks is not editable this way, because one static path would change every repeated item. Editing is also limited to text that sits inside a section, so there is always a stable address for the override. To undo a change, clear the field or type the design's original text back.
+
 ## Creating pages
 
 1. Go to the **Pages** tab.
