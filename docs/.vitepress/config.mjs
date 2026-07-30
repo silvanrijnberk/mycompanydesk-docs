@@ -60,7 +60,7 @@ function localeHeadTags(relativePath) {
 
   const tags = [['link', { rel: 'canonical', href: SITE_ORIGIN + routeFor(relativePath) }]]
 
-  // A single variant needs no alternate set — there is nothing to cross-link.
+  // A single variant needs no alternate set: there is nothing to cross-link.
   if (variants.length < 2) return tags
 
   for (const { hreflang, route } of variants) {
