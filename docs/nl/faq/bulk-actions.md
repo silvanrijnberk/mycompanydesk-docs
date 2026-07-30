@@ -9,7 +9,7 @@ chatbot:
 Om bulkacties uit te voeren:
 1. Ga naar de lijstweergave (Facturen, Uitgaven of Klanten)
 2. Selecteer meerdere items met de selectievakjes
-3. Gebruik het bulkactiemenu bovenaan de lijst
+3. De actiebalk verschijnt onderaan de pagina op desktop en onderaan het scherm op mobiel
 4. Kies de actie (bijv. verwijderen, verzenden, exporteren)
 5. Bevestig de bulkbewerking
 
