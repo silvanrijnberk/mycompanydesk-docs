@@ -32,7 +32,7 @@ If a colleague has already set up a workspace:
 2. Click the invitation link in your email
 3. Accept the invitation to join their workspace
 
-You can be a member of multiple workspaces and switch between them from your account menu.
+You can be a member of multiple workspaces and switch between them from the workspace menu in the sidebar.
 
 ## Sign in after registration
 

@@ -74,7 +74,7 @@ Selecteer meerdere registraties in de lijstweergave (lang indrukken op mobiel) o
 
 ## Externe agenda koppelen
 
-Koppel Google Agenda of Outlook Agenda om je agenda en je uren samen te brengen. Open de agenda-instellingen via het tandwiel en volg de agendalink, of ga direct naar de pagina met gekoppelde agenda's. Daar kun je:
+Koppel Google Agenda of Outlook Agenda om je agenda en je uren samen te brengen. Open de agenda-instellingen via **Instellingen** > **Uren & agenda** of via het tandwiel op de pagina Uren & agenda, en volg de agendalink. Je kunt ook direct naar de pagina met gekoppelde agenda's gaan. Daar kun je:
 
 - **Google Agenda** of **Outlook Agenda** koppelen
 - Synchronisatie per koppeling aanzetten met **Synchronisatie inschakelen**
@@ -85,7 +85,7 @@ Afspraken uit een gekoppelde agenda verschijnen in de dag- en weekweergave; tik 
 
 ## Instellingen
 
-Het tandwiel op de pagina Uren & agenda opent de agenda-instellingen. Hier stel je in:
+De agenda-instellingen vind je onder **Instellingen** > **Uren & agenda** of via het tandwiel op de pagina Uren & agenda. Hier stel je in:
 
 - **Alleen uren modus**, **Geplande tijd automatisch bevestigen**, en ander invoergedrag
 - De werkmodus: **Uren**, **Diensten** of **Timer**

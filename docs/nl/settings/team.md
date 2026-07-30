@@ -20,7 +20,7 @@ De pagina heeft twee onderdelen:
 
 ### Naam van de werkruimte
 
-Een kaart met een enkel veld. De naam van de werkruimte verschijnt in de navigatie, op uitnodigingen en in het accountmenu in de app. Alleen teamadmins kunnen de naam wijzigen. Wijzigingen worden automatisch opgeslagen.
+Een kaart met een enkel veld. De naam van de werkruimte verschijnt in de navigatie, op uitnodigingen en in het werkruimtemenu in de zijbalk. Alleen teamadmins kunnen de naam wijzigen. Wijzigingen worden automatisch opgeslagen.
 
 ### Huidige leden
 
@@ -86,7 +86,7 @@ Admins kunnen de passkeys of tweestapsverificatie van een ander lid niet beheren
 
 ## Wisselen tussen werkruimtes
 
-Open de werkruimtewisselaar in de bovenbalk om tussen werkruimtes te springen of een nieuwe aan te maken.
+Open het werkruimtemenu in de zijbalkkop om tussen werkruimtes te springen, je abonnement te bekijken of een nieuwe aan te maken.
 
 ## Abonnementen in het kort
 

@@ -43,7 +43,7 @@ Pushmeldingen werken in browsers en in de Android-app. Op Android gebruikt de me
 
 ## Gekoppelde agenda's
 
-Je kunt **Google Agenda** of **Outlook** koppelen, zodat afspraken uit je agenda ook in MyCompanyDesk verschijnen. Dit is geen rij op de instellingenpagina: open de agenda in de app en ga naar de agenda-instellingen, daar staat de link naar de pagina met agendakoppelingen. Elke koppeling kun je op dezelfde pagina weer verwijderen.
+Je kunt **Google Agenda** of **Outlook** koppelen, zodat afspraken uit je agenda ook in MyCompanyDesk verschijnen. Je vindt de koppeling nu ook onder **Instellingen** > **Uren & agenda**, en hij blijft bereikbaar vanaf de Uren & agenda-pagina. Elke koppeling kun je op dezelfde pagina weer verwijderen.
 
 ## Klantlocaties
 

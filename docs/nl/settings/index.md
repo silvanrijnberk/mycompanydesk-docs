@@ -79,12 +79,13 @@ Een paar pagina's verschijnen alleen via zoeken, zodat de hoofdlijst rustig blij
 | Mijn website of domein regelen | **Je website en domein** |
 | Offertes, projecten of nieuwsbrieven aan- of uitzetten | **Onderdelen** |
 | Mijn boekhouder toegang geven | **Toegang en boekhouder** (beheerders) |
+| Instellingen voor urenregistratie wijzigen | **Uren & agenda** |
 | Mijn abonnement upgraden of bekijken | **Je abonnement** (beheerders) |
 | Mijn bank koppelen | Zoek op "bank koppelen" |
 | Een kopie van mijn gegevens downloaden | **Gegevens downloaden** |
 | Mijn account opzeggen | **Account opzeggen** (beheerders) |
 
-Agenda's synchroniseren met Google of Outlook staat niet op de instellingenpagina; een agenda koppel je vanuit de instellingen van de agenda zelf. Zie [Je persoonlijke instellingen](/nl/account/profile#gekoppelde-agenda-s).
+Agenda's synchroniseren met Google of Outlook vind je nu ook onder **Instellingen** > **Uren & agenda**. Je kunt het nog steeds direct openen vanaf de Uren & agenda-pagina.
 
 ## Oude links
 

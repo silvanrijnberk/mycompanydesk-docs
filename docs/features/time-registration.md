@@ -74,7 +74,7 @@ Select multiple entries in the list view (long-press on mobile) to act on them a
 
 ## External calendar sync
 
-Connect Google Calendar or Outlook Calendar to bring your agenda and your hours together. Open the schedule settings via the gear and follow the calendar link, or go straight to the connected calendars page. There you can:
+Connect Google Calendar or Outlook Calendar to bring your agenda and your hours together. Open the schedule settings from **Instellingen** > **Uren & agenda**, or from the settings gear on the Schedule page, and follow the calendar link. You can also go straight to the connected calendars page. There you can:
 
 - Connect **Google Calendar** or **Outlook Calendar**
 - Turn syncing on per connection with **Enable sync**
@@ -85,7 +85,7 @@ Events pulled from a connected calendar show up in the day and week views; tap o
 
 ## Settings
 
-The gear on the Schedule page opens the schedule settings. Here you configure:
+Schedule settings live under **Instellingen** > **Uren & agenda**. Here you configure:
 
 - **Hours only mode**, **Auto-confirm tentative time**, and other entry behavior
 - The work mode: **Hours**, **Shifts**, or **Timer**

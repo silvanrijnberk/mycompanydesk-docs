@@ -43,7 +43,7 @@ Les notifications push sont prises en charge dans les navigateurs et dans l'appl
 
 ## Agendas connectés
 
-Vous pouvez connecter **Google Agenda** ou **Outlook** pour que les rendez-vous de votre agenda apparaissent aussi dans MyCompanyDesk. Ce n'est pas une ligne de la page des paramètres : ouvrez l'agenda dans l'application et allez dans ses réglages, où la page des connexions d'agenda est accessible. Chaque connexion peut être retirée depuis la même page.
+Vous pouvez connecter **Google Agenda** ou **Outlook** pour que les rendez-vous de votre agenda apparaissent aussi dans MyCompanyDesk. Vous trouverez désormais aussi cette connexion sous **Paramètres** > **Agenda**, et elle reste accessible depuis la page Agenda. Chaque connexion peut être retirée depuis la même page.
 
 ## Emplacements clients
 

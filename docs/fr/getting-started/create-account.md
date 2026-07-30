@@ -32,7 +32,7 @@ Si un collegue a deja configure un espace de travail :
 2. Cliquez sur le lien d'invitation dans votre e-mail
 3. Acceptez l'invitation pour rejoindre leur espace de travail
 
-Vous pouvez etre membre de plusieurs espaces de travail et passer de l'un a l'autre depuis le menu de votre compte.
+Vous pouvez etre membre de plusieurs espaces de travail et passer de l'un a l'autre depuis le menu de l'espace de travail dans la barre laterale.
 
 ## Connexion apres inscription
 

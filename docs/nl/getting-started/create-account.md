@@ -32,7 +32,7 @@ Als een collega al een werkruimte heeft opgezet:
 2. Klik op de uitnodigingslink in je e-mail
 3. Accepteer de uitnodiging om deel te nemen aan hun werkruimte
 
-Je kunt lid zijn van meerdere werkruimten en ertussen wisselen via je accountmenu.
+Je kunt lid zijn van meerdere werkruimten en ertussen wisselen via het werkruimtemenu in de zijbalk.
 
 ## Inloggen na registratie
 

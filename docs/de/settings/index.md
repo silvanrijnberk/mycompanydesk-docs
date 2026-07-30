@@ -81,12 +81,13 @@ Einige Seiten erscheinen nur über die Suche, damit die Hauptliste ruhig bleibt:
 | Meine Website oder Domain einrichten | **Deine Website und Domain** |
 | Angebote, Projekte oder Newsletter ein- oder ausschalten | **Module** |
 | Meinem Buchhalter Zugang geben | **Zugang und Buchhalter** (Administratoren) |
+| Zeiterfassungs-Einstellungen ändern | **Zeitplan** |
 | Mein Abonnement upgraden oder einsehen | **Dein Abonnement** (Administratoren) |
 | Meine Bank verbinden | Suchen Sie nach "Bank verbinden" |
 | Eine Kopie meiner Daten herunterladen | **Daten herunterladen** |
 | Mein Konto kündigen | **Konto kündigen** (Administratoren) |
 
-Die Kalendersynchronisierung mit Google oder Outlook liegt nicht auf der Einstellungsseite; einen Kalender verbinden Sie aus den Einstellungen des Kalenders selbst. Siehe [Ihre persönlichen Einstellungen](/de/account/profile#verbundene-kalender).
+Die Kalendersynchronisierung mit Google oder Outlook finden Sie jetzt auch unter **Einstellungen** > **Zeitplan**. Sie können sie weiterhin direkt von der Zeitplan-Seite aus öffnen.
 
 ## Alte Links
 
