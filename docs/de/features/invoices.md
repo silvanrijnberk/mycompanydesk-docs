@@ -8,14 +8,14 @@ Rechnungen stehen im Mittelpunkt von MyCompanyDesk. Erstellen Sie professionelle
 
 ## Übersicht
 
-Die Rechnungsseite zeigt alle Ihre Rechnungen mit Filter- und Suchfunktionen. Verwenden Sie die Status-Tabs für eine schnelle Ansicht:
+Die Rechnungsseite zeigt alle Ihre Rechnungen mit Filter- und Suchfunktionen. Die Status-Tabs in der oberen Leiste lassen Sie schnell zwischen folgenden Ansichten wechseln:
 
-- **Alle** — Jede Rechnung
-- **Entwurf** — Erstellt, aber nicht gesendet
-- **Gesendet** — An Kunden zugestellt
-- **Überfällig** — Fälligkeitsdatum überschritten, unbezahlt
-- **Bezahlt** — Zahlung eingegangen
-- **Storniert** — Stornierte Rechnungen
+- **Alle**: jede Rechnung
+- **Entwürfe**: erstellt, aber nicht gesendet
+- **Offen**: gesendete, offene oder überfällige Rechnungen
+- **Website-Verkäufe**: Online-Verkäufe, wenn Ihr Workspace Websiteverkäufe aktiviert hat
+
+Sie können weiterhin den **Status**-Filter verwenden, um die Liste auf einen beliebigen Status einzugrenzen, einschließlich gesendet, überfällig, bezahlt oder storniert.
 
 ## Rechnung erstellen
 

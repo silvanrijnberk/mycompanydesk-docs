@@ -8,12 +8,13 @@ Verfolgen Sie alle Ihre Geschäftsausgaben, scannen Sie Belege mit KI und katego
 
 ## Übersicht
 
-Die Ausgabenseite listet alle Ihre erfassten Ausgaben auf. Filtern Sie nach:
+Die Ausgabenseite listet alle Ihre erfassten Ausgaben auf. Die Zahlungsstatus-Tabs in der oberen Leiste lassen Sie schnell zwischen folgenden Ansichten wechseln:
 
-- **Kategorie** — Büro, Reise, Ausstattung usw.
-- **Projekt** — Ausgaben, die mit bestimmten Projekten verknüpft sind
-- **Datumsbereich** — Nach Ausgabendatum filtern
-- **Status** — Aktiv oder archiviert
+- **Alle**: alle erfassten Ausgaben
+- **Unbezahlt**: noch nicht bezahlte Ausgaben
+- **Bezahlt**: bereits bezahlte Ausgaben
+
+Sie können weiterhin nach Kategorie, Projekt, Zeitraum oder Status filtern. Klicken Sie auf eine Ausgabe, um die Detailseite zu öffnen; klicken Sie auf **Neu**, um manuell eine hinzuzufügen, oder **Beleg scannen**, um einen aus einem Bild oder PDF zu extrahieren.
 
 ## Ausgabe erstellen
 

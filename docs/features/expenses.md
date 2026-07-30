@@ -9,7 +9,13 @@ Track business expenses, scan receipts, manage workspace categories with their o
 
 ## Overview
 
-The expenses page lists every recorded expense. Filter by category, project, date range or status. Click an expense to open the detail page; click **New** to add one manually, or **Scan receipt** to extract one from an image or PDF.
+The expenses page lists every recorded expense. The payment status tabs in the top bar let you switch quickly between:
+
+- **All**: every recorded expense
+- **Unpaid**: expenses not yet paid
+- **Paid**: expenses already paid
+
+You can still filter by category, project, date range, or status. Click an expense to open the detail page; click **New** to add one manually, or **Scan receipt** to extract one from an image or PDF.
 
 ## Categories
 

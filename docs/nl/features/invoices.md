@@ -8,14 +8,14 @@ Facturen vormen de kern van MyCompanyDesk. Maak professionele facturen, verstuur
 
 ## Overzicht
 
-De facturenpagina toont al je facturen met filter- en zoekmogelijkheden. Gebruik de statustabs om snel te bekijken:
+De facturenpagina toont al je facturen met filter- en zoekmogelijkheden. De statustabs in de bovenste balk laten je snel wisselen tussen:
 
-- **Alles** — Alle facturen
-- **Concept** — Aangemaakt maar niet verstuurd
-- **Verzonden** — Bezorgd bij klanten
-- **Achterstallig** — Vervaldatum verstreken, onbetaald
-- **Betaald** — Betaling ontvangen
-- **Geannuleerd** — Geannuleerde facturen
+- **Alles**: alle facturen
+- **Concepten**: aangemaakt maar niet verstuurd
+- **Openstaand**: verzonden, openstaande of achterstallige facturen
+- **Websiteverkopen**: online verkopen, als je werkruimte websiteverkopen heeft ingeschakeld
+
+Je kunt nog steeds het **Status**-filter gebruiken om de lijst te verfijnen naar elke status, inclusief verzonden, achterstallig, betaald of geannuleerd.
 
 ## Een factuur aanmaken
 
