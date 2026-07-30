@@ -9,7 +9,7 @@ chatbot:
 Pour effectuer des actions en masse :
 1. Accédez à la vue en liste (Factures, Dépenses ou Clients)
 2. Sélectionnez plusieurs éléments à l'aide des cases à cocher
-3. Utilisez le menu d'actions en masse en haut de la liste
+3. La barre d'actions apparaît en bas de la page sur bureau et en bas de l'écran sur mobile
 4. Choisissez l'action (ex. : supprimer, envoyer, exporter)
 5. Confirmez l'opération en masse
 

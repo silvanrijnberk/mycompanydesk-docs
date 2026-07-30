@@ -9,7 +9,7 @@ chatbot:
 To perform bulk actions:
 1. Go to the list view (Invoices, Expenses, or Customers)
 2. Select multiple items using the checkboxes
-3. Use the bulk action menu at the top of the list
+3. The action bar appears at the bottom of the page on desktop and at the bottom of the screen on mobile
 4. Choose the action (e.g. delete, send, export)
 5. Confirm the bulk operation
 

@@ -9,7 +9,7 @@ chatbot:
 Um Massenaktionen durchzuführen:
 1. Gehe zur Listenansicht (Rechnungen, Ausgaben oder Kunden)
 2. Wähle mehrere Einträge über die Kontrollkästchen aus
-3. Verwende das Massenaktionsmenü oben in der Liste
+3. Die Aktionsleiste erscheint unten auf der Seite am Desktop und unten am Bildschirm auf Mobilgeräten
 4. Wähle die Aktion (z. B. Löschen, Senden, Exportieren)
 5. Bestätige die Massenaktion
 
