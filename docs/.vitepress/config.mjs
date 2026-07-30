@@ -1,4 +1,77 @@
 import { defineConfig } from 'vitepress'
+import fs from 'node:fs'
+import path from 'node:path'
+import { fileURLToPath } from 'node:url'
+
+const SITE_ORIGIN = 'https://docs.mycompanydesk.com'
+const DOCS_DIR = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..')
+
+// Locale subdirectories under docs/. English is the root and has no prefix.
+const LOCALE_DIRS = ['nl', 'de', 'fr']
+
+/**
+ * Public route for a docs-relative markdown path, matching `cleanUrls: true`.
+ *   index.md            -> /
+ *   nl/index.md         -> /nl/
+ *   features/invoices.md-> /features/invoices
+ */
+function routeFor(relativePath) {
+  const p = relativePath.replace(/\.md$/, '')
+  if (p === 'index') return '/'
+  if (p.endsWith('/index')) return `/${p.slice(0, -'index'.length)}`
+  return `/${p}`
+}
+
+/** Split a docs-relative path into its locale and its locale-neutral remainder. */
+function splitLocale(relativePath) {
+  const first = relativePath.split('/')[0]
+  if (LOCALE_DIRS.includes(first)) {
+    return { locale: first, rest: relativePath.slice(first.length + 1) }
+  }
+  return { locale: 'en', rest: relativePath }
+}
+
+/**
+ * Self-referencing canonical + hreflang alternates for every page.
+ *
+ * The docs site ships the same ~138 pages in en/nl/de/fr with no canonical and
+ * no hreflang, so the four language copies competed with each other, and the
+ * English copies competed with mycompanydesk.nl for the same Dutch-market
+ * queries. A self-canonical plus a full alternate set tells Google these are
+ * translations of one page and which one to show per language.
+ *
+ * Alternates are emitted only for locales where the file actually exists on
+ * disk: 8 EN-only FAQ pages have no translation, and pointing hreflang at a
+ * 404 is worse than omitting it. x-default points at the English root, which
+ * is the site's default locale.
+ */
+function localeHeadTags(relativePath) {
+  const { rest } = splitLocale(relativePath)
+
+  const variants = []
+  if (fs.existsSync(path.join(DOCS_DIR, rest))) {
+    variants.push({ hreflang: 'en', route: routeFor(rest) })
+  }
+  for (const locale of LOCALE_DIRS) {
+    if (fs.existsSync(path.join(DOCS_DIR, locale, rest))) {
+      variants.push({ hreflang: locale, route: routeFor(`${locale}/${rest}`) })
+    }
+  }
+
+  const tags = [['link', { rel: 'canonical', href: SITE_ORIGIN + routeFor(relativePath) }]]
+
+  // A single variant needs no alternate set: there is nothing to cross-link.
+  if (variants.length < 2) return tags
+
+  for (const { hreflang, route } of variants) {
+    tags.push(['link', { rel: 'alternate', hreflang, href: SITE_ORIGIN + route }])
+  }
+  const en = variants.find((v) => v.hreflang === 'en')
+  if (en) {
+    tags.push(['link', { rel: 'alternate', hreflang: 'x-default', href: SITE_ORIGIN + en.route }])
+  }
+  return tags
+}
 
 const sharedHead = [
   ['link', { rel: 'icon', type: 'image/svg+xml', href: '/logo.svg' }],
@@ -326,6 +399,13 @@ export default defineConfig({
   description: 'Documentation for MyCompanyDesk — the all-in-one accounting platform for freelancers and small businesses.',
   cleanUrls: true,
   head: sharedHead,
+  sitemap: { hostname: SITE_ORIGIN },
+  transformPageData(pageData) {
+    pageData.frontmatter.head = [
+      ...(pageData.frontmatter.head || []),
+      ...localeHeadTags(pageData.relativePath),
+    ]
+  },
   locales: {
     root: {
       label: 'English',
