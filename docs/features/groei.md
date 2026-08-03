@@ -5,7 +5,7 @@ last_verified: 2026-08-03
 
 # Growth
 
-The Growth page (`/groei`) is a dedicated place for work that brings in the next job. It only shows signals that are live right now: quote requests through your website, quotes that are about to expire or already expired, and customers who used to buy but have gone quiet.
+The Growth page (`/groei`) is a dedicated place for work that wins the next job. It only shows what is waiting right now: quote requests through your website, quotes that are unanswered or about to expire, and customers who used to buy but have gone quiet this year.
 
 ## Why Growth is separate from the dashboard
 
@@ -15,38 +15,44 @@ The two truly time-bound signals, a request waiting for a reply and a quote abou
 
 ## What you see
 
-Cards are only shown when there is something to do. A workspace with no website form, open quotes, or lapsed customers gets a calm empty state instead of three zeros. The page therefore needs no industry-specific settings.
+Content is shown as bands, not cards. Each band states the situation in one sentence, explains why it matters, and then gives the numbers. Bands only appear when there is something to do. A workspace with no website form, open quotes, or lapsed customers gets a calm empty state instead of three zeros. The page therefore needs no industry-specific settings.
 
 ### Quote requests via your website
 
-If you have a website form connected, new quote requests land here. The card shows:
+If you have a website form connected, new quote requests land here. The band shows:
 
-- How many requests via your website are waiting.
-- How long the oldest request has been waiting.
-- A hint that the first to reply usually gets the job.
+- An eyebrow label, **Request**.
+- A headline such as "1 person filled in your contact form and is waiting for an answer" or the plural version with the count.
+- Why it matters: the first to reply usually gets the job.
+- Figures for open requests and the oldest wait time.
 - A link to **Quotes > Requests** so you can respond.
 
 The same count and oldest wait time also appear in the dashboard briefing under **Good news**.
 
-### Expiring and expired quotes
+### Unanswered quotes
 
-Sent quotes without a reply are grouped here. The card shows:
+Sent quotes without a reply are grouped here. The band shows:
 
-- How many quotes are awaiting a reply.
-- How many have already expired.
-- How many expire this week.
+- An eyebrow label, **Quotes · no reply**.
+- A headline with the count, for example "1 quote is with a customer without an answer".
+- Why it matters: a quick follow-up often gets the signature after all. If every quote has expired, the page notes that resending them with a new validity date is one action.
+- Figures for how many were sent and the total amount still open.
+- Badges that mark expired quotes and quotes expiring this week.
 - A link to the quote list so you can follow up.
 
 See [Quotes](/features/quotes) for creating, sending and converting quotes.
 
 ### Customers who stopped buying
 
-Customers who bought before but have not had an invoice this year are listed here. The card shows:
+Customers who bought before but have not had an invoice this year are listed here. The band shows:
 
-- How many customers have lapsed.
-- How much they previously spent in total.
+- An eyebrow label, **Customers · nothing bought this year**.
+- A headline with the count, for example "1 customer used to buy from you, not this year".
+- Why it matters: someone who once said yes says yes again faster than someone you do not know yet.
+- Figures for how many customers have lapsed and how much they previously spent in total.
 - The date of their last invoice.
-- A link to the customer list so you can reach out.
+- Direct actions to **Call** or **Email** the customer, using the contact details on file.
+- A link to the full customer list.
 
 See [Customers](/features/customers) for filtering and managing your customer base.
 

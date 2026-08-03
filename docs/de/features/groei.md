@@ -5,7 +5,7 @@ last_verified: 2026-08-03
 
 # Wachstum
 
-Die Wachstum-Seite (`/groei`) ist ein eigener Bereich für Arbeit, die den nächsten Auftrag bringt. Sie zeigt nur Signale, die gerade relevant sind: Website-Angebotsanfragen, Angebote, die bald ablaufen oder bereits abgelaufen sind, und Kunden, die früher gekauft haben, aber nun still sind.
+Die Wachstum-Seite (`/groei`) ist ein eigener Bereich für Arbeit, die den nächsten Auftrag bringt. Sie zeigt nur das, was gerade liegt: Website-Angebotsanfragen, Angebote, die unbeantwortet sind oder bald ablaufen, und Kunden, die früher gekauft haben, aber dieses Jahr still sind.
 
 ## Warum Wachstum vom Dashboard getrennt ist
 
@@ -15,38 +15,44 @@ Die zwei wirklich zeitkritischen Signale, eine Anfrage, die auf Antwort wartet, 
 
 ## Was Sie sehen
 
-Karten werden nur angezeigt, wenn etwas zu tun ist. Ein Arbeitsbereich ohne Website-Formular, offene Angebote oder abgewanderte Kunden bekommt einen ruhigen Leerzustand statt drei Nullen. Die Seite braucht daher keine branchenspezifischen Einstellungen.
+Inhalt wird als Bänder, nicht als Karten, angezeigt. Jedes Band beschreibt die Lage in einem Satz, erklärt, warum sie wichtig ist, und zeigt dann die Zahlen. Bänder erscheinen nur, wenn etwas zu tun ist. Ein Arbeitsbereich ohne Website-Formular, offene Angebote oder abgewanderte Kunden bekommt einen ruhigen Leerzustand statt drei Nullen. Die Seite braucht daher keine branchenspezifischen Einstellungen.
 
 ### Website-Angebotsanfragen
 
-Wenn Sie ein Website-Formular verbunden haben, landen neue Angebotsanfragen hier. Die Karte zeigt:
+Wenn Sie ein Website-Formular verbunden haben, landen neue Angebotsanfragen hier. Das Band zeigt:
 
-- Wie viele Anfragen über Ihre Website warten.
-- Wie lange die älteste Anfrage bereits wartet.
-- Einen Hinweis darauf, dass derjenige, der zuerst antwortet, meist den Auftrag bekommt.
+- Ein Eyebrow-Label, **Anfrage**.
+- Eine Headline wie "1 Person hat Ihr Kontaktformular ausgefüllt und wartet auf Antwort", bzw. die Mehrzahlversion mit der Anzahl.
+- Warum es wichtig ist: wer zuerst antwortet, bekommt meist den Auftrag.
+- Zahlen zu offenen Anfragen und der längsten Wartezeit.
 - Einen Link zu **Angebote > Anfragen**, damit Sie antworten können.
 
 Dieselbe Anzahl und die längste Wartezeit stehen auch in der Dashboard-Briefing unter **Gute Nachrichten**.
 
-### Ablaufende und abgelaufene Angebote
+### Unbeantwortete Angebote
 
-Gesendete Angebote ohne Antwort werden hier zusammengefasst. Die Karte zeigt:
+Gesendete Angebote ohne Antwort werden hier zusammengefasst. Das Band zeigt:
 
-- Wie viele Angebote auf Antwort warten.
-- Wie viele bereits abgelaufen sind.
-- Wie viele in dieser Woche ablaufen.
+- Ein Eyebrow-Label, **Angebote · keine Antwort**.
+- Eine Headline mit der Anzahl, zum Beispiel "1 Angebot liegt bei einem Kunden ohne Antwort".
+- Warum es wichtig ist: eine kurze Nachfrage führt oft doch noch zur Unterschrift. Wenn alle Angebote inzwischen abgelaufen sind, weist die Seite darauf hin, dass sie mit einem neuen Gültigkeitsdatum erneut zu senden ist.
+- Zahlen zu gesendeten Angeboten und dem noch offenen Gesamtbetrag.
+- Badges, die abgelaufene Angebote und diese Woche ablaufende Angebote markieren.
 - Einen Link zur Angebotsliste, damit Sie nachfassen können.
 
 Siehe [Angebote](/de/features/quotes) für das Erstellen, Senden und Umwandeln von Angeboten.
 
 ### Abgewanderte Kunden
 
-Kunden, die früher gekauft haben, aber dieses Jahr keine Rechnung erhalten haben, werden hier aufgeführt. Die Karte zeigt:
+Kunden, die früher gekauft haben, aber dieses Jahr keine Rechnung erhalten haben, werden hier aufgeführt. Das Band zeigt:
 
-- Wie viele Kunden abgewandert sind.
-- Wie viel sie früher zusammen ausgegeben haben.
+- Ein Eyebrow-Label, **Kunden · dieses Jahr nichts gekauft**.
+- Eine Headline mit der Anzahl, zum Beispiel "1 Kunde hat früher bei Ihnen gekauft, dieses Jahr nicht".
+- Warum es wichtig ist: wer einmal Ja gesagt hat, sagt schneller wieder Ja als jemand, den Sie noch nicht kennen.
+- Zahlen zu abgewanderten Kunden und wie viel sie früher zusammen ausgegeben haben.
 - Das Datum ihrer letzten Rechnung.
-- Einen Link zur Kundenliste, damit Sie Kontakt aufnehmen können.
+- Direkte Aktionen, um den Kunden zu **anrufen** oder per **E-Mail** zu kontaktieren, über die hinterlegten Kontaktdaten.
+- Einen Link zur vollständigen Kundenliste.
 
 Siehe [Kunden](/de/features/customers) für das Filtern und Verwalten Ihrer Kundenstammdaten.
 

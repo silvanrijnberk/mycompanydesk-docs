@@ -64,4 +64,6 @@ Your accountant can click any administration to jump straight into that workspac
 
 If you run more than one business, or your accountant manages multiple administrations, use the workspace switcher in the left sidebar to add and switch between them. You can add your own business from the switcher; each gets its own administration with separate VAT, invoices, and bookkeeping.
 
+When you have more than one administration, the left navigation also shows **Workspaces** as a direct link to the triage desk.
+
 Accountants invited by a client see those managed workspaces alongside their own business. See [Growth](/features/groei) and [Dashboard](/features/dashboard) for how work is shown across administrations.

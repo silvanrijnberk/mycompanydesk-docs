@@ -63,4 +63,6 @@ Je boekhouder klikt op een administratie om direct die werkruimte te openen met 
 
 Als je meer dan één bedrijf runt, of als je boekhouder meerdere administraties beheert, wissel je via de werkruimtekiezer in de linker zijbalk tussen administraties. Je kunt je eigen bedrijf toevoegen vanuit de kiezer; elke krijgt een eigen administratie met aparte btw, facturen en boekhouding.
 
+Als je meer dan één administratie hebt, verschijnt in de linker navigatie ook **Werkruimtes** als directe link naar het triage-overzicht.
+
 Boekhouders die door een klant zijn uitgenodigd, zien die beheerde werkruimtes naast hun eigen bedrijf. Zie [Groei](/nl/features/groei) en [Dashboard](/nl/features/dashboard) voor hoe werk over administraties heen wordt getoond.
