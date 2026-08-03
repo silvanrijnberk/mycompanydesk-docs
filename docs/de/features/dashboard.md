@@ -79,11 +79,11 @@ Solange der Einrichtungsassistent unter `/setup` noch Felder zu fuellen hat, ste
 
 ## Wachstum
 
-Wachstum (`/groei`) ist über die linke Navigation als eigene Seite erreichbar. Hier bleibt kampagnenartige Arbeit sichtbar — Angebotsanfragen über die Website, Angebote auf Antwortwort, ablaufende Angebote und abgewanderte Kunden — ohne die nach Dringlichkeit sortierte Dashboard-Briefing zu verdrängen.
+Wachstum (`/groei`) ist über die linke Navigation als eigene Seite erreichbar. Hier bleibt kampagnenartige Arbeit sichtbar (Angebotsanfragen über die Website, Angebote auf Antwort, ablaufende Angebote und abgewanderte Kunden) ohne die nach Dringlichkeit sortierte Dashboard-Briefing zu verdrängen.
 
 Die zwei Signale, die wirklich heute-Aktionen sind, erscheinen auch im Dashboard-Tab **Gute Nachrichten**:
 
-- **Offene Anfragen** — wie viele Angebotsanfragen über die Website auf Antwort warten, plus die längste Wartezeit.
-- **Ablaufende Angebote** — wie viele Angebote diese Woche ablaufen, und wie viele bereits ohne Antwort abgelaufen sind.
+- **Offene Anfragen**: wie viele Angebotsanfragen über die Website auf Antwort warten, plus die längste Wartezeit.
+- **Ablaufende Angebote**: wie viele Angebote diese Woche ablaufen, und wie viele bereits ohne Antwort abgelaufen sind.
 
 Die anderen Wachstum-Karten, wie abgewanderte Kunden, stehen nur auf der Seite Wachstum. Siehe [Wachstum](/de/features/groei) für Details.
