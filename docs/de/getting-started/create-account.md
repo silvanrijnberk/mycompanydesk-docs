@@ -20,6 +20,18 @@ Der Einstieg in MyCompanyDesk dauert nur wenige Minuten.
 Sie können auch über die Marketingseite beginnen. Wenn Sie Ihr Unternehmen auf der Landing-Page suchen und aus dem niederländischen Handelsregister (KVK) auswählen, trägt der CTA Ihre KVK-Nummer zu `/register`. Nach der Registrierung und Verifizierung wendet der Einrichtungsassistent diese KVK-Nummer automatisch an und erstellt direkt eine thematische Website für Sie. Die Website steht bereit, ist aber noch nicht live; beim ersten Öffnen des Website-Editors können Sie sie veröffentlichen oder zuerst anpassen.
 :::
 
+## Von Ihrem Steuerberater eingeladen
+
+Wenn Ihr Steuerberater bereits MyCompanyDesk nutzt, kann er Sie direkt aus seinem Steuerberater-Portal einladen.
+
+1. Suchen Sie nach einer E-Mail von MyCompanyDesk mit dem Namen der Kanzlei Ihres Steuerberaters
+2. Klicken Sie auf den Einladungslink, der `/register?uitnodiging=TOKEN` öffnet
+3. Die Registrierungsseite zeigt die einladende Kanzlei und trägt die E-Mail-Adresse ein, an die die Einladung gesendet wurde
+4. Erstellen Sie Ihr Konto mit E-Mail und Passwort. Sie bleiben Inhaber Ihres Arbeitsbereichs und Ihrer Daten
+5. Nach der Registrierung erhält Ihr Steuerberater automatisch Zugang, damit er Ihre Abgaben prüfen kann
+
+Sie können diesen Zugang später unter Einstellungen → „Zugang und Steuerberater" widerrufen.
+
 ## Ihr Arbeitsbereich
 
 Ihr Arbeitsbereich wird bei der Registrierung automatisch erstellt, mit einer **60-tägigen kostenlosen Pro-Testphase** (keine Zahlungsmethode erforderlich). Sie können sofort alle Pro-Funktionen erkunden; Ihre Unternehmensdaten füllen Sie später im Einrichtungsassistenten aus.
