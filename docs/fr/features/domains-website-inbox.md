@@ -124,9 +124,9 @@ Le renouvellement de domaine suit trois chemins selon la maniere dont le domaine
 
 #### Rachat du domaine en cas de depart pendant l'essai
 
-<!-- TODO(source-missing): prix de rachat €15 confirmation dans sources/ -->
+Lorsqu'un client en periode d'essai Pro decide de partir avant de devenir client Pro payant, il dispose d'une troisieme option pour son domaine `.nl` gratuit : le racheter pour un montant forfaitaire de €15,00 TTC (paiement unique). Le flux de rachat (`DomainBuyoutModal.vue`) permet au client de payer via Stripe Embedded Checkout et d'obtenir la pleine propriete. Une fois le paiement effectue, le titulaire du domaine est transfere de MCD au client et le code d'authentification (EPP) est affiche, permettant de deplacer le domaine vers n'importe quel registrar.
 
-Lorsqu'un client en periode d'essai Pro decide de partir avant de devenir client Pro payant, il dispose d'une troisieme option pour son domaine `.nl` gratuit : le racheter pour un montant forfaitaire de €15 (tout compris, paiement unique). Le flux de rachat (`DomainBuyoutModal.vue`) permet au client de payer via Stripe Embedded Checkout et d'obtenir la pleine propriete. Une fois le paiement effectue, le titulaire du domaine est transfere de MCD au client et le code d'authentification (EPP) est affiche, permettant de deplacer le domaine vers n'importe quel registrar.
+Le prix de €15,00 est volontairement indique TTC, car le paiement est declenche au moment ou le client quitte MyCompanyDesk. Le montant net transmis a Stripe est de €12,40 ; 21% de TVA neerlandaise sont ajoutes et arrondis au centime pres, de sorte que le total atteint exactement €15,00. Voir `apps/api/src/modules/domains/domain-pricing.config.js` dans le depot RichardTool et `sources/vat-rates.yaml#countries.NL.standard`.
 
 Le prix de rachat est un prix produit, pas un supplement de transfert. MCD ne facture jamais de frais pour le jeton de transfert lui-meme une fois que le client est le titulaire enregistre. Cette distinction est documentee dans la note juridique interne `docs/legal/gratis-domein-voorwaarden.md` du depot RichardTool.
 

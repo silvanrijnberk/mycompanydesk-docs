@@ -124,9 +124,9 @@ Domeinverlenging volgt drie routes, afhankelijk van hoe het domein is verkregen:
 
 #### Overname bij vertrek tijdens de proef
 
-<!-- TODO(source-missing): overnameprijs €15 bevestiging in sources/ -->
+Wanneer een klant tijdens de Pro-proefperiode vertrekt zonder Pro-klant te worden, is er een derde optie voor het gratis `.nl`-domein: overnemen voor eenmalig €15,00 incl. btw (éénmalig). De overname-flow (`DomainBuyoutModal.vue`) laat de klant betalen via Stripe Embedded Checkout en krijgt daarmee volledig eigendom. Na betaling wordt de houder overgezet van MCD naar de klant en wordt de verhuiscode (EPP) getoond, waarmee het domein naar elke registrar verhuisd kan worden.
 
-Wanneer een klant tijdens de Pro-proefperiode vertrekt zonder Pro-klant te worden, is er een derde optie voor het gratis `.nl`-domein: overnemen voor eenmalig €15 (all-in). De overname-flow (`DomainBuyoutModal.vue`) laat de klant betalen via Stripe Embedded Checkout en krijgt daarmee volledig eigendom. Na betaling wordt de houder overgezet van MCD naar de klant en wordt de verhuiscode (EPP) getoond, waarmee het domein naar elke registrar verhuisd kan worden.
+De prijs van €15,00 is bewust incl. btw vermeld, omdat de betaling plaatsvindt op het moment dat de klant vertrekt. Het nettobedrag dat naar Stripe gaat is €12,40; daar wordt 21% Nederlandse btw bovenop geheven en afgerond op hele centen, zodat het totaal precies op €15,00 uitkomt. Zie `apps/api/src/modules/domains/domain-pricing.config.js` in de RichardTool-repo en `sources/vat-rates.yaml#countries.NL.standard`.
 
 Het overnamebedrag is een productprijs, geen verhuist toeslag. MCD rekent nooit kosten voor de verhuistoken zelf zodra de klant geregistreerd houder is. Het onderscheid is vastgelegd in de interne juridische notitie `docs/legal/gratis-domein-voorwaarden.md` in de RichardTool-repo.
 

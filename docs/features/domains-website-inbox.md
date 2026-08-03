@@ -124,9 +124,9 @@ Domain renewal follows three paths depending on how the domain was acquired:
 
 #### Trial-exit domain buy-out
 
-<!-- TODO(source-missing): buy-out price €15 confirmation in sources/ -->
+When a customer on a Pro trial decides to leave before converting to paid Pro, they have a third option for their free `.nl` domain: buy it out for a flat €15,00 incl. VAT (one-time). The buy-out flow (`DomainBuyoutModal.vue`) lets the customer pay via Stripe Embedded Checkout and receive full ownership. Once paid, the domain holder is transferred from MCD to the customer and the EPP (transfer) code is shown so the domain can be moved to any registrar.
 
-When a customer on a Pro trial decides to leave before converting to paid Pro, they have a third option for their free `.nl` domain: buy it out for a flat €15 (all-in, one-time). The buy-out flow (`DomainBuyoutModal.vue`) lets the customer pay via Stripe Embedded Checkout and receive full ownership. Once paid, the domain holder is transferred from MCD to the customer and the EPP (transfer) code is shown so the domain can be moved to any registrar.
+The €15,00 price is deliberately quoted inclusive of Dutch VAT because the charge is triggered at the moment the customer leaves. The net amount handed to Stripe is €12,40; 21% NL VAT is added on top, rounded to the nearest cent, to land exactly on €15,00. See `apps/api/src/modules/domains/domain-pricing.config.js` in the RichardTool repo and `sources/vat-rates.yaml#countries.NL.standard`.
 
 The buy-out price is a product price, not a transfer surcharge. MCD never charges for the transfer token itself once the customer is the registered holder. The distinction is documented in the internal legal memo `docs/legal/gratis-domein-voorwaarden.md` in the RichardTool repo.
 
