@@ -20,6 +20,18 @@ Getting started with MyCompanyDesk takes just a few minutes.
 You can also start from the marketing site. If you look up your company on the landing page and pick it from the Dutch trade register (KVK), the CTA carries your KVK number to `/register`. After signup and verification, the setup wizard auto-applies that KVK number and auto-generates a themed website for you. The site is ready but not yet live; the first time you open the website editor you can publish it or adjust it first.
 :::
 
+## Invited by your accountant
+
+If your accountant already uses MyCompanyDesk, they can invite you directly from their boekhouder portal.
+
+1. Look for an email from MyCompanyDesk naming your accountant's firm
+2. Click the invitation link, which opens `/register?uitnodiging=TOKEN`
+3. The signup page shows the firm that invited you and pre-fills the email address the invite was sent to
+4. Create your account with email and password. You stay the owner of your workspace and data
+5. After signup, your accountant gets access automatically so they can check your returns
+
+You can remove that access later from Settings → "Toegang en boekhouder".
+
 ## Your workspace
 
 Your workspace is created automatically when you sign up, with a **60-day free Pro trial** (no payment method required). You can explore all Pro features right away; your company details are filled in later during the setup wizard.

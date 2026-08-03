@@ -20,6 +20,18 @@ Demarrer avec MyCompanyDesk ne prend que quelques minutes.
 Vous pouvez aussi commencer depuis le site marketing. Si vous recherchez votre entreprise sur la page d'accueil et la sélectionnez dans le registre néerlandais (KVK), le CTA emporte votre numéro KVK jusqu'à `/register`. Après inscription et vérification, l'assistant de configuration applique automatiquement ce numéro KVK et génère directement un site web thématique pour vous. Le site est prêt mais n'est pas encore en ligne; la première fois que vous ouvrez l'éditeur de site, vous pouvez le publier ou l'ajuster d'abord.
 :::
 
+## Invite par votre comptable
+
+Si votre comptable utilise deja MyCompanyDesk, il peut vous inviter directement depuis son portail comptable.
+
+1. Cherchez un e-mail de MyCompanyDesk mentionnant le cabinet de votre comptable
+2. Cliquez sur le lien d'invitation, qui ouvre `/register?uitnodiging=TOKEN`
+3. La page d'inscription affiche le cabinet qui vous invite et preremplit l'adresse e-mail a laquelle l'invitation a ete envoyee
+4. Creez votre compte avec e-mail et mot de passe. Vous restez proprietaire de votre espace de travail et de vos donnees
+5. Après l'inscription, votre comptable obtient automatiquement l'acces pour verifier vos declarations
+
+Vous pouvez supprimer cet acces plus tard dans Parametres → « Accès et comptable ».
+
 ## Votre espace de travail
 
 Votre espace de travail est créé automatiquement lors de votre inscription, avec une **période d'essai Pro gratuite de 60 jours** (aucun moyen de paiement requis). Vous pouvez explorer toutes les fonctionnalités Pro immédiatement ; les informations de votre entreprise seront remplies plus tard dans l'assistant de configuration.

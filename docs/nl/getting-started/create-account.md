@@ -20,6 +20,18 @@ Aan de slag gaan met MyCompanyDesk duurt maar een paar minuten.
 Je kunt ook beginnen via de marketingsite. Als je je bedrijf opzoekt op de landingspagina en selecteert uit het Handelsregister (KVK), neemt de knop je KVK-nummer mee naar `/register`. Na aanmelding en verificatie past de setupwizard dat KVK-nummer automatisch toe en genereert hij direct een thematische website voor je. De site staat klaar maar is nog niet live; de eerste keer dat je de website-editor opent, kun je hem publiceren of eerst aanpassen.
 :::
 
+## Uitgenodigd door je boekhouder
+
+Als je boekhouder al MyCompanyDesk gebruikt, kan hij of zij je rechtstreeks uitnodigen vanuit het boekhoudersportaal.
+
+1. Zoek naar een e-mail van MyCompanyDesk met de naam van het kantoor van je boekhouder
+2. Klik op de uitnodigingslink, die `/register?uitnodiging=TOKEN` opent
+3. De registratiepagina toont het kantoor dat je heeft uitgenodigd en vult het e-mailadres waarnaar de uitnodiging is gestuurd alvast in
+4. Maak je account aan met e-mail en wachtwoord. Jij blijft eigenaar van je werkruimte en gegevens
+5. Na aanmelding krijgt je boekhouder automatisch toegang zodat hij of zij je aangifte kan controleren
+
+Je kunt die toegang later verwijderen via Instellingen → "Toegang en boekhouder".
+
 ## Je werkruimte
 
 Je werkruimte wordt automatisch aangemaakt wanneer je je registreert, met een **gratis Pro-proefperiode van 60 dagen** (geen betaalmethode nodig). Je kunt meteen alle Pro-functies verkennen; je bedrijfsgegevens vul je later in tijdens de setup-wizard.
