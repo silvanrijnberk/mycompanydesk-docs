@@ -79,11 +79,11 @@ Zolang de setup-wizard op `/setup` nog velden te vullen heeft, staat er een `Fin
 
 ## Groei
 
-Groei (`/groei`) is bereikbaar via de linker navigatie als eigen pagina. Hier houd je campagne-achtig werk zichtbaar — offerteaanvragen via de website, offertes die op antwoord wachten, verlopende offertes en weggebleven klanten — zonder dat het de urgentie-gesorteerde dashboardbriefing verdringt.
+Groei (`/groei`) is bereikbaar via de linker navigatie als eigen pagina. Hier houd je campagne-achtig werk zichtbaar (offerteaanvragen via de website, offertes die op antwoord wachten, verlopende offertes en weggebleven klanten) zonder dat het de urgentie-gesorteerde dashboardbriefing verdringt.
 
 De twee signalen die echt vandaag-acties zijn, verschijnen ook in het dashboardtabblad **Goed nieuws**:
 
-- **Openstaande aanvragen** — hoeveel offerteaanvragen via de website op antwoord wachten, plus de oudste wachttijd.
-- **Verlopende offertes** — hoeveel offertes deze week verlopen, en hoeveel al verlopen zijn zonder antwoord.
+- **Openstaande aanvragen**: hoeveel offerteaanvragen via de website op antwoord wachten, plus de oudste wachttijd.
+- **Verlopende offertes**: hoeveel offertes deze week verlopen, en hoeveel al verlopen zijn zonder antwoord.
 
 De andere Groei-kaarten, zoals weggebleven klanten, staan alleen op de Groei-pagina. Zie [Groei](/nl/features/groei) voor meer informatie.
