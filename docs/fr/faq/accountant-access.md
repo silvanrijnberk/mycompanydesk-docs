@@ -48,3 +48,13 @@ Si votre comptable utilise MyCompanyDesk, il peut vous inviter directement depui
 4. Après l'inscription, votre comptable obtient automatiquement l'accès pour vérifier vos déclarations
 
 Vous pouvez révoquer cet accès plus tard dans Paramètres → « Accès et comptable ». Le lien d'invitation est valable 30 jours et votre comptable peut le renvoyer ou le révoquer.
+
+## Ce que votre comptable voit
+
+Une fois que votre comptable a accès, son portail comptable affiche un tableau de triage avec une ligne par client. Le tableau trie par urgence, pour que votre comptable voie d'un coup qui a besoin d'attention aujourd'hui.
+
+- Les clients avec une échéance TVA proche ou dépassée apparaissent en premier.
+- Les factures en retard et les reçus manquants sont comptés par client.
+- Les clients dont la comptabilité est en ordre affichent "Loopt goed".
+
+Votre comptable clique sur un client pour ouvrir directement son espace de travail avec les permissions que vous avez définies. Il ne voit que les pages que vous avez autorisées et peut inviter ou gérer des clients depuis le même écran.

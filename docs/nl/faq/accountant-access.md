@@ -48,3 +48,13 @@ Als je boekhouder MyCompanyDesk gebruikt, kan hij of zij je uitnodigen vanuit he
 4. Na registratie krijgt je boekhouder automatisch toegang zodat hij of zij je aangifte kan controleren
 
 Je kunt die toegang later altijd weer intrekken via Instellingen → "Toegang en boekhouder". De uitnodigingslink is 30 dagen geldig en je boekhouder kan hem opnieuw sturen of intrekken.
+
+## Wat je boekhouder ziet
+
+Als je boekhouder toegang heeft, ziet hij of zij in het boekhoudersportaal een triage-overzicht met één rij per klant. Het overzicht sorteert op urgentie, zodat je boekhouder in één oogopslag ziet wie er aandacht nodig heeft.
+
+- Klanten met een komende of gemiste BTW-aangiftetermijn komen bovenaan.
+- Openstaande facturen en ontbrekende bonnen worden per klant geteld.
+- Klanten die op schema liggen, krijgen het label "Loopt goed".
+
+Je boekhouder klikt op een klant om direct die werkruimte te openen met de rechten die jij hebt ingesteld. De boekhouder ziet alleen de pagina's die jij toegankelijk hebt gemaakt en kan vanuit hetzelfde scherm klanten uitnodigen of beheren.

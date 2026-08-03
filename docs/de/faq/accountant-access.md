@@ -48,3 +48,13 @@ Wenn Ihr Steuerberater MyCompanyDesk nutzt, kann er Sie direkt aus seinem Steuer
 4. Nach der Registrierung erhält Ihr Steuerberater automatisch Zugang, damit er Ihre Abgaben prüfen kann
 
 Sie können diesen Zugang später jederzeit unter Einstellungen → „Zugang und Steuerberater" widerrufen. Der Einladungslink ist 30 Tage gültig und kann von Ihrem Steuerberater erneut gesendet oder widerrufen werden.
+
+## Was Ihr Steuerberater sieht
+
+Hat Ihr Steuerberater Zugang, sieht er in seinem Steuerberater-Portal eine Triage-Übersicht mit einer Zeile pro Mandant. Die Übersicht sortiert nach Dringlichkeit, damit Ihr Steuerberater auf einen Blick erkennt, wer heute Aufmerksamkeit braucht.
+
+- Mandanten mit einer bevorstehenden oder verpassten USt-Erklärfrist werden zuerst angezeigt.
+- Überfällige Rechnungen und fehlende Belege werden pro Mandant gezählt.
+- Mandanten, die im Plan liegen, erhalten den Hinweis "Loopt goed".
+
+Ihr Steuerberater klickt auf einen Mandanten, um direkt in dessen Arbeitsbereich mit den von Ihnen festgelegten Berechtigungen zu springen. Er sieht nur die Seiten, die Sie freigegeben haben, und kann von derselben Maske aus Mandanten einladen oder verwalten.

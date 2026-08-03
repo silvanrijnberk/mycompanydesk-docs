@@ -48,3 +48,13 @@ If your accountant uses MyCompanyDesk, they can send you an invite from their bo
 4. After signup, your accountant automatically gets accountant access to your workspace
 
 You can revoke that access at any time from Settings → "Toegang en boekhouder". The invite link is valid for 30 days and can be resent or revoked by your accountant.
+
+## What your accountant sees
+
+Once your accountant has access, their boekhouder portal shows a triage desk with one row per client. The desk sorts clients by urgency, so your accountant can see at a glance who needs attention today.
+
+- Clients with an upcoming or missed VAT deadline are flagged first.
+- Overdue invoices and missing receipts are counted for each client.
+- Clients whose books are on track show the status "Loopt goed".
+
+Your accountant can click any client to jump straight into that workspace with the permissions you set. They see only the pages you granted, and they can invite or manage client workspaces from the same screen.
