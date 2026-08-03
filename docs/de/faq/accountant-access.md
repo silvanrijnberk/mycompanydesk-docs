@@ -15,7 +15,7 @@ chatbot:
     - "ajouter comptable"
     - "accountant invite"
     - "revoke accountant"
-    - "Kunde invite"
+    - "client invite"
     - "uitnodiging klant"
     - "klant uitnodigen"
   actions:
