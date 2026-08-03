@@ -106,4 +106,9 @@ Elke aanvraag toont:
 
 - Statistieken over offerteaanvragen (ontvangen, geoffreerd, gesloten) worden bovenaan de aanvragenpagina getoond
 - Gebruik de snel-toevoegen-functie voor snelle offertecreatie
-- Offertes kunnen aan projecten worden gekoppeld voor beter overzicht
+
+## Groei-context
+
+De [Groei](/nl/features/groei)-pagina groepeert offertes die opvolging nodig hebben met ander werk dat de volgende opdracht oplevert. Hij toont hoeveel offertes op antwoord wachten, hoeveel al verlopen zijn zonder antwoord en hoeveel deze week verlopen. Dezelfde verlopende en verlopen aantallen staan ook in het dashboardtabblad **Goed nieuws**.
+
+Offerteaanvragen via je sitebouwerformulier verschijnen ook op Groei, met de oudste wachttijd en een link naar **Offertes > Aanvragen**. Zie [Domeinen, website en inbox](/nl/features/domains-website-inbox) voor het instellen van het websiteformulier.

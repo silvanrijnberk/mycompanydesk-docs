@@ -15,7 +15,7 @@ chatbot:
     - "ajouter comptable"
     - "accountant invite"
     - "revoke accountant"
-    - "client invite"
+    - "klant invite"
     - "uitnodiging klant"
     - "klant uitnodigen"
   actions:
@@ -51,10 +51,16 @@ Je kunt die toegang later altijd weer intrekken via Instellingen → "Toegang en
 
 ## Wat je boekhouder ziet
 
-Als je boekhouder toegang heeft, ziet hij of zij in het boekhoudersportaal een triage-overzicht met één rij per klant. Het overzicht sorteert op urgentie, zodat je boekhouder in één oogopslag ziet wie er aandacht nodig heeft.
+Als je boekhouder toegang heeft, ziet hij of zij in het boekhoudersportaal een triage-overzicht met één rij per administratie. Het overzicht sorteert op urgentie, zodat je boekhouder in één oogopslag ziet welke administratie aandacht nodig heeft.
 
-- Klanten met een komende of gemiste BTW-aangiftetermijn komen bovenaan.
-- Openstaande facturen en ontbrekende bonnen worden per klant geteld.
-- Klanten die op schema liggen, krijgen het label "Loopt goed".
+- Administraties met een komende of gemiste BTW-aangiftetermijn komen bovenaan.
+- Openstaande facturen en ontbrekende bonnen worden per administratie geteld.
+- Administraties die op schema liggen, krijgen het label "Loopt goed".
 
-Je boekhouder klikt op een klant om direct die werkruimte te openen met de rechten die jij hebt ingesteld. De boekhouder ziet alleen de pagina's die jij toegankelijk hebt gemaakt en kan vanuit hetzelfde scherm klanten uitnodigen of beheren.
+Je boekhouder klikt op een administratie om direct die werkruimte te openen met de rechten die jij hebt ingesteld. De boekhouder ziet alleen de pagina's die jij toegankelijk hebt gemaakt en kan vanuit hetzelfde scherm administraties uitnodigen of beheren.
+
+## Meerdere bedrijven beheren
+
+Als je meer dan één bedrijf runt, of als je boekhouder meerdere administraties beheert, wissel je via de werkruimtekiezer in de linker zijbalk tussen administraties. Je kunt je eigen bedrijf toevoegen vanuit de kiezer; elke krijgt een eigen administratie met aparte btw, facturen en boekhouding.
+
+Boekhouders die door een klant zijn uitgenodigd, zien die beheerde werkruimtes naast hun eigen bedrijf. Zie [Groei](/nl/features/groei) en [Dashboard](/nl/features/dashboard) voor hoe werk over administraties heen wordt getoond.

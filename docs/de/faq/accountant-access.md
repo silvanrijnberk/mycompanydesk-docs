@@ -15,7 +15,7 @@ chatbot:
     - "ajouter comptable"
     - "accountant invite"
     - "revoke accountant"
-    - "client invite"
+    - "Kunde invite"
     - "uitnodiging klant"
     - "klant uitnodigen"
   actions:
@@ -51,10 +51,16 @@ Sie können diesen Zugang später jederzeit unter Einstellungen → „Zugang un
 
 ## Was Ihr Steuerberater sieht
 
-Hat Ihr Steuerberater Zugang, sieht er in seinem Steuerberater-Portal eine Triage-Übersicht mit einer Zeile pro Mandant. Die Übersicht sortiert nach Dringlichkeit, damit Ihr Steuerberater auf einen Blick erkennt, wer heute Aufmerksamkeit braucht.
+Hat Ihr Steuerberater Zugang, sieht er in seinem Steuerberater-Portal eine Triage-Übersicht mit einer Zeile pro Administration. Die Übersicht sortiert nach Dringlichkeit, damit Ihr Steuerberater auf einen Blick erkennt, welche Administration heute Aufmerksamkeit braucht.
 
-- Mandanten mit einer bevorstehenden oder verpassten USt-Erklärfrist werden zuerst angezeigt.
-- Überfällige Rechnungen und fehlende Belege werden pro Mandant gezählt.
-- Mandanten, die im Plan liegen, erhalten den Hinweis "Loopt goed".
+- Administrationen mit einer bevorstehenden oder verpassten USt-Erklärfrist werden zuerst angezeigt.
+- Überfällige Rechnungen und fehlende Belege werden pro Administration gezählt.
+- Administrationen, die im Plan liegen, erhalten den Hinweis "Loopt goed".
 
-Ihr Steuerberater klickt auf einen Mandanten, um direkt in dessen Arbeitsbereich mit den von Ihnen festgelegten Berechtigungen zu springen. Er sieht nur die Seiten, die Sie freigegeben haben, und kann von derselben Maske aus Mandanten einladen oder verwalten.
+Ihr Steuerberater klickt auf eine Administration, um direkt in deren Arbeitsbereich mit den von Ihnen festgelegten Berechtigungen zu springen. Er sieht nur die Seiten, die Sie freigegeben haben, und kann von derselben Maske aus Administrationen einladen oder verwalten.
+
+## Mehrere Unternehmen verwalten
+
+Wenn Sie mehr als ein Unternehmen führen, oder wenn Ihr Steuerberater mehrere Administrationen verwaltet, wechseln Sie über den Arbeitsbereich-Wechsler in der linken Seitenleiste zwischen ihnen. Sie können ein eigenes Unternehmen über den Wechsler hinzufügen; jedes erhält eine eigene Administration mit separater USt., Rechnungen und Buchhaltung.
+
+Steuerberater, die von einem Kunden eingeladen wurden, sehen diese verwalteten Arbeitsbereiche neben ihrem eigenen Unternehmen. Siehe [Wachstum](/de/features/groei) und [Dashboard](/de/features/dashboard) für die Darstellung von Arbeit über Administrationen hinweg.

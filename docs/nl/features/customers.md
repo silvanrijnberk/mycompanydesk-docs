@@ -117,4 +117,9 @@ Exporteer je klantenlijst als CSV vanaf de klantenpagina (Pro-abonnement en hoge
 - Houd e-mailadressen van klanten up-to-date — ze worden gebruikt voor factuurverzending
 - Gebruik de zoekbalk voor directe fuzzy-matching over alle klantvelden
 - Pin je belangrijkste klanten als favorieten voor snelle toegang
-- Vul BTW-nummers in om verlegde BTW op B2B-facturen in te schakelen
+
+## Groei-context
+
+De [Groei](/nl/features/groei)-pagina toont klanten die eerder kochten maar dit jaar geen factuur hebben gehad. De kaart toont het aantal, wat ze eerder samen besteedden en de datum van hun laatste factuur, met een link terug naar de klantenlijst zodat je kunt opvolgen.
+
+De standaard klantenlijst segmenteert ook zelf inactieve klanten; Groei voegt de campagne-achtige herinnering toe zonder die filter te vervangen.
