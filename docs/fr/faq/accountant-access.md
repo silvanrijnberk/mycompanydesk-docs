@@ -51,10 +51,16 @@ Vous pouvez révoquer cet accès plus tard dans Paramètres → « Accès et com
 
 ## Ce que votre comptable voit
 
-Une fois que votre comptable a accès, son portail comptable affiche un tableau de triage avec une ligne par client. Le tableau trie par urgence, pour que votre comptable voie d'un coup qui a besoin d'attention aujourd'hui.
+Une fois que votre comptable a accès, son portail comptable affiche un tableau de triage avec une ligne par administration. Le tableau trie par urgence, pour que votre comptable voie d'un coup quelle administration a besoin d'attention aujourd'hui.
 
-- Les clients avec une échéance TVA proche ou dépassée apparaissent en premier.
-- Les factures en retard et les reçus manquants sont comptés par client.
-- Les clients dont la comptabilité est en ordre affichent "Loopt goed".
+- Les administrations avec une échéance TVA proche ou dépassée apparaissent en premier.
+- Les factures en retard et les reçus manquants sont comptés par administration.
+- Les administrations dont la comptabilité est en ordre affichent "Loopt goed".
 
-Votre comptable clique sur un client pour ouvrir directement son espace de travail avec les permissions que vous avez définies. Il ne voit que les pages que vous avez autorisées et peut inviter ou gérer des clients depuis le même écran.
+Votre comptable clique sur une administration pour ouvrir directement son espace de travail avec les permissions que vous avez définies. Il ne voit que les pages que vous avez autorisées et peut inviter ou gérer des administrations depuis le même écran.
+
+## Gérer plusieurs entreprises
+
+Si vous gérez plusieurs entreprises, ou si votre comptable gère plusieurs administrations, le sélecteur d'espace de travail dans la barre latérale gauche vous permet d'ajouter et de basculer entre elles. Vous pouvez ajouter votre propre entreprise depuis le sélecteur ; chacune obtient une administration dédiée avec sa propre TVA, factures et comptabilité.
+
+Les comptables invités par un client voient ces espaces de travail administrés à côté de leur propre entreprise. Voir [Croissance](/fr/features/groei) et [Tableau de bord](/fr/features/dashboard) pour savoir comment le travail est présenté entre administrations.

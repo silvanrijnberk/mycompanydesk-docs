@@ -117,4 +117,9 @@ Exportez votre liste de clients au format CSV depuis la page des clients (plan P
 - Gardez les adresses e-mail des clients a jour -- elles sont utilisees pour l'envoi des factures
 - Utilisez la barre de recherche pour une correspondance floue instantanee sur tous les champs clients
 - Epinglez vos clients les plus importants en favoris pour un acces rapide
-- Renseignez les numeros de TVA pour activer l'autoliquidation sur les factures B2B
+
+## Contexte Croissance
+
+La page [Croissance](/fr/features/groei) met en avant les clients qui achetaient avant mais n'ont pas reçu de facture cette année. La carte affiche le nombre, le montant total qu'ils avaient dépensé auparavant et la date de leur dernière facture, avec un lien retour vers la liste des clients pour relancer.
+
+La liste clients standard segmente aussi elle-même les clients inactifs ; Croissance ajoute le rappel de type campagne sans remplacer ce filtre.

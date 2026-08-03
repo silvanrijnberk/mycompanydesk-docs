@@ -75,3 +75,15 @@ Elk feeditem toont de entiteit, het bedrag en contextuele details. De feed opent
 ## Setup-banner
 
 Zolang de setup-wizard op `/setup` nog velden te vullen heeft, staat er een `FinishSetupBanner` bovenaan het dashboard met een teller van openstaande velden en een **Verder**-knop. De banner heeft een sluitknop (X-icoon) die de banner per browser verbergt via localStorage, zodat deze over herlaadbeurten verborgen blijft totdat de wizard is voltooid. De wizard is niet-blokkerend: nieuwe aanmeldingen komen direct op `/dashboard` en worden niet geforceerd doorgestuurd.
+
+
+## Groei
+
+Groei (`/groei`) is bereikbaar via de linker navigatie als eigen pagina. Hier houd je campagne-achtig werk zichtbaar — offerteaanvragen via de website, offertes die op antwoord wachten, verlopende offertes en weggebleven klanten — zonder dat het de urgentie-gesorteerde dashboardbriefing verdringt.
+
+De twee signalen die echt vandaag-acties zijn, verschijnen ook in het dashboardtabblad **Goed nieuws**:
+
+- **Openstaande aanvragen** — hoeveel offerteaanvragen via de website op antwoord wachten, plus de oudste wachttijd.
+- **Verlopende offertes** — hoeveel offertes deze week verlopen, en hoeveel al verlopen zijn zonder antwoord.
+
+De andere Groei-kaarten, zoals weggebleven klanten, staan alleen op de Groei-pagina. Zie [Groei](/nl/features/groei) voor meer informatie.

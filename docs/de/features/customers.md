@@ -117,4 +117,9 @@ Exportieren Sie Ihre Kundenliste als CSV von der Kundenseite (Pro-Tarif und höh
 - Halten Sie Kunden-E-Mails aktuell — sie werden für den Rechnungsversand verwendet
 - Verwenden Sie die Suchleiste für sofortigen unscharfen Abgleich über alle Kundenfelder
 - Setzen Sie Ihre wichtigsten Kunden als Favoriten für schnellen Zugriff
-- Weisen Sie USt.-Nummern zu, um Reverse-Charge bei B2B-Rechnungen zu ermöglichen
+
+## Wachstum-Kontext
+
+Die Seite [Wachstum](/de/features/groei) hebt Kunden hervor, die früher gekauft haben, aber dieses Jahr noch keine Rechnung erhalten haben. Die Karte zeigt die Anzahl, wie viel sie früher zusammen ausgegeben haben und das Datum ihrer letzten Rechnung, mit einem Link zurück zur Kundenliste, damit Sie nachfassen können.
+
+Die Standard-Kundenliste segmentiert ebenfalls inaktive Kunden selbst; Wachstum fügt den kampagnenartigen Hinweis hinzu, ohne diesen Filter zu ersetzen.

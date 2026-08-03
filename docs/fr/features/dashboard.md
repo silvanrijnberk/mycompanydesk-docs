@@ -75,3 +75,15 @@ Chaque element du fil affiche l'entite, le montant et des details contextuels. L
 ## Banniere de configuration
 
 Tant que l'assistant de configuration sous `/setup` a encore des champs a remplir, une `FinishSetupBanner` s'affiche en haut du tableau de bord avec un decompte des champs en attente et un bouton **Continuer**. La banniere a un bouton de fermeture (icone X) qui la masque par navigateur via localStorage, la maintenant masquee d'un rechargement a l'autre jusqu'a ce que l'assistant soit termine. L'assistant est non bloquant : les nouvelles inscriptions arrivent directement sur `/dashboard` et ne sont pas redirigees de force.
+
+
+## Croissance
+
+Croissance (`/groei`) est accessible depuis la navigation de gauche comme page à part. Elle garde visible le travail de type campagne — demandes de devis via le site, devis en attente de réponse, devis à expiration et clients perdus — sans encombrer le briefing du tableau de bord trié par urgence.
+
+Les deux signaux qui sont réellement des actions du jour apparaissent aussi dans l'onglet du tableau de bord **Bonne nouvelle** :
+
+- **Demandes ouvertes** — combien de demandes de devis via le site attendent une réponse, plus l'attente la plus longue.
+- **Devis à expiration** — combien de devis expirent cette semaine, et combien sont déjà expirés sans réponse.
+
+Les autres cartes Croissance, comme les clients perdus, vivent uniquement sur la page Croissance. Voir [Croissance](/fr/features/groei) pour plus de détails.

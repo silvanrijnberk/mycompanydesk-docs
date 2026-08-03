@@ -107,3 +107,10 @@ Each request shows:
 - Quote request metrics (received, quoted, closed) are shown at the top of the requests page
 - Use the quick-add feature for rapid quote creation
 - Quotes can link to projects for better tracking
+
+
+## Growth context
+
+The [Growth](/features/groei) page groups quotes that need follow-up with other work that wins the next job. It shows how many quotes are awaiting a reply, how many have already expired without a reply, and how many expire this week. The same expiring and expired counts also appear in the dashboard **Good news** tab.
+
+Website quote requests appear on Growth too, with the oldest wait time and a link to **Quotes > Requests**. See [Domains, Website & Inbox](/features/domains-website-inbox) for setting up the website form.

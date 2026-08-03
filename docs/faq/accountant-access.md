@@ -51,10 +51,17 @@ You can revoke that access at any time from Settings → "Toegang en boekhouder"
 
 ## What your accountant sees
 
-Once your accountant has access, their boekhouder portal shows a triage desk with one row per client. The desk sorts clients by urgency, so your accountant can see at a glance who needs attention today.
+Once your accountant has access, their boekhouder portal shows a triage desk with one row per administration. The desk sorts administrations by urgency, so your accountant can see at a glance which administration needs attention today.
 
-- Clients with an upcoming or missed VAT deadline are flagged first.
-- Overdue invoices and missing receipts are counted for each client.
-- Clients whose books are on track show the status "Loopt goed".
+- Administrations with an upcoming or missed VAT deadline are flagged first.
+- Overdue invoices and missing receipts are counted for each administration.
+- Administrations whose books are on track show the status "Loopt goed".
 
-Your accountant can click any client to jump straight into that workspace with the permissions you set. They see only the pages you granted, and they can invite or manage client workspaces from the same screen.
+Your accountant can click any administration to jump straight into that workspace with the permissions you set. They see only the pages you granted, and they can invite or manage administrations from the same screen.
+
+
+## Managing multiple businesses
+
+If you run more than one business, or your accountant manages multiple administrations, use the workspace switcher in the left sidebar to add and switch between them. You can add your own business from the switcher; each gets its own administration with separate VAT, invoices, and bookkeeping.
+
+Accountants invited by a client see those managed workspaces alongside their own business. See [Growth](/features/groei) and [Dashboard](/features/dashboard) for how work is shown across administrations.
