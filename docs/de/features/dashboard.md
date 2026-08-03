@@ -74,6 +74,8 @@ Jedes Feed-Element zeigt die Entitaet, den Betrag und kontextuelle Details. Der 
 
 ## Setup-Banner
 
+Solange der Einrichtungsassistent unter `/setup` noch Felder zu fuellen hat, steht ein `FinishSetupBanner` oben auf dem Dashboard mit einer Zaehlung der ausstehenden Felder und einem **Weiter**-Button. Der Banner hat eine Schliessen-Schaltflaeche (X-Symbol), die den Banner pro Browser ueber localStorage ausblendet, sodass er ueber Seitenneuladungen hinweg ausgeblendet bleibt, bis der Assistent abgeschlossen ist. Der Assistent ist nicht blockierend: neue Anmeldungen landen direkt auf `/dashboard` und werden nicht zwangsumgeleitet.
+
 
 ## Wachstum
 

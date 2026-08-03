@@ -71,7 +71,12 @@ Each feed item shows the entity, amount, and contextual detail. The feed opens f
 | **Recent activity** | Invoice created, invoice paid, and expense added events. |
 | **VAT ring** | Current VAT return period, checklist completion, and open receipt count. Links to the VAT return. |
 
-## Growth section
+## Setup banner
+
+While the setup wizard at `/setup` still has fields to fill, a `FinishSetupBanner` pins itself above the dashboard with the count of pending fields and a **Resume setup** button. It includes a dismiss button (X icon) that hides the banner per browser via localStorage, surviving reloads until the wizard is completed. The wizard is non-blocking: new signups land on `/dashboard` directly and are not force-redirected.
+
+
+## Growth
 
 Growth (`/groei`) is reachable from the left navigation as its own page. It keeps campaign-style work visible: website quote requests, quotes waiting for an answer, expiring quotes, and lapsed customers, without pushing the urgency-sorted dashboard briefing aside.
 

@@ -74,6 +74,8 @@ Chaque element du fil affiche l'entite, le montant et des details contextuels. L
 
 ## Banniere de configuration
 
+Tant que l'assistant de configuration sous `/setup` a encore des champs a remplir, une `FinishSetupBanner` s'affiche en haut du tableau de bord avec un decompte des champs en attente et un bouton **Continuer**. La banniere a un bouton de fermeture (icone X) qui la masque par navigateur via localStorage, la maintenant masquee d'un rechargement a l'autre jusqu'a ce que l'assistant soit termine. L'assistant est non bloquant : les nouvelles inscriptions arrivent directement sur `/dashboard` et ne sont pas redirigees de force.
+
 
 ## Croissance
 
