@@ -65,9 +65,3 @@ Your accountant can click any administration to jump straight into that workspac
 If you run more than one business, or your accountant manages multiple administrations, use the workspace switcher in the left sidebar to add and switch between them. You can add your own business from the switcher; each gets its own administration with separate VAT, invoices, and bookkeeping.
 
 Accountants invited by a client see those managed workspaces alongside their own business. See [Growth](/features/groei) and [Dashboard](/features/dashboard) for how work is shown across administrations.
-
-## Source references
-
-- `apps/web/components/app/AppNav.vue`
-- `apps/web/locales/en.json` keys under `workspaceSwitcher` and `boekhouder.index`
-- `apps/web/locales/en.json` key `nav.groei`
