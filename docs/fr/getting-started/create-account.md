@@ -14,7 +14,7 @@ Demarrer avec MyCompanyDesk ne prend que quelques minutes.
    - Ou utilisez un fournisseur social: **S'inscrire avec Google** ou **S'inscrire avec Outlook**.
 3. L'ecran d'inscription montre aussi un apercu en direct : un tableau de bord simule avec un chiffre d'affaires fictif, des elements d'echeance et des puces d'activite, pour que vous puissiez voir l'experience avant de vous engager. L'apercu n'utilise pas de donnees reelles.
 4. Si vous vous etes inscrit par e-mail, verifiez votre boite de reception pour trouver un **e-mail de verification** et cliquez sur le lien pour verifier votre compte. Pas recu ? Renvoyez-le depuis l'ecran de verification. Mauvaise adresse utilisee ? Cliquez sur **Wrong email address? Start over** pour revenir a l'inscription.
-5. Apres la vérification, vous recevez un e-mail de bienvenue et arrivez directement dans l'application, dans votre propre espace de travail.
+5. Après la vérification, vous recevez un e-mail de bienvenue et arrivez directement dans l'application, dans votre propre espace de travail.
 
 :::tip Commencer depuis la page d'accueil
 Vous pouvez aussi commencer depuis le site marketing. Si vous recherchez votre entreprise sur la page d'accueil et la sélectionnez dans le registre néerlandais (KVK), le CTA emporte votre numéro KVK jusqu'à `/register`. Après inscription et vérification, l'assistant de configuration applique automatiquement ce numéro KVK et génère directement un site web thématique pour vous. Le site est prêt mais n'est pas encore en ligne; la première fois que vous ouvrez l'éditeur de site, vous pouvez le publier ou l'ajuster d'abord.
@@ -28,7 +28,7 @@ Si votre comptable utilise deja MyCompanyDesk, il peut vous inviter directement 
 2. Cliquez sur le lien d'invitation, qui ouvre `/register?uitnodiging=TOKEN`
 3. La page d'inscription affiche le cabinet qui vous invite et preremplit l'adresse e-mail a laquelle l'invitation a ete envoyee
 4. Creez votre compte avec e-mail et mot de passe. Vous restez proprietaire de votre espace de travail et de vos donnees
-5. Apres l'inscription, votre comptable obtient automatiquement l'acces pour verifier vos declarations
+5. Après l'inscription, votre comptable obtient automatiquement l'acces pour verifier vos declarations
 
 Vous pouvez supprimer cet acces plus tard dans Parametres → « Accès et comptable ».
 
