@@ -79,11 +79,11 @@ Tant que l'assistant de configuration sous `/setup` a encore des champs a rempli
 
 ## Croissance
 
-Croissance (`/groei`) est accessible depuis la navigation de gauche comme page à part. Elle garde visible le travail de type campagne — demandes de devis via le site, devis en attente de réponse, devis à expiration et clients perdus — sans encombrer le briefing du tableau de bord trié par urgence.
+Croissance (`/groei`) est accessible depuis la navigation de gauche comme page à part. Elle garde visible le travail de type campagne (demandes de devis via le site, devis en attente de réponse, devis à expiration et clients perdus) sans encombrer le briefing du tableau de bord trié par urgence.
 
 Les deux signaux qui sont réellement des actions du jour apparaissent aussi dans l'onglet du tableau de bord **Bonne nouvelle** :
 
-- **Demandes ouvertes** — combien de demandes de devis via le site attendent une réponse, plus l'attente la plus longue.
-- **Devis à expiration** — combien de devis expirent cette semaine, et combien sont déjà expirés sans réponse.
+- **Demandes ouvertes**: combien de demandes de devis via le site attendent une réponse, plus l'attente la plus longue.
+- **Devis à expiration**: combien de devis expirent cette semaine, et combien sont déjà expirés sans réponse.
 
 Les autres cartes Croissance, comme les clients perdus, vivent uniquement sur la page Croissance. Voir [Croissance](/fr/features/groei) pour plus de détails.

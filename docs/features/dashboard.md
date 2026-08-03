@@ -78,11 +78,11 @@ While the setup wizard at `/setup` still has fields to fill, a `FinishSetupBanne
 
 ## Growth
 
-Growth (`/groei`) is reachable from the left navigation as its own page. It keeps campaign-style work visible: website quote requests, quotes waiting for an answer, expiring quotes, and lapsed customers, without pushing the urgency-sorted dashboard briefing aside.
+Growth (`/groei`) is reachable from the left navigation as its own page. It keeps campaign-style work visible (website quote requests, quotes waiting for an answer, expiring quotes, and lapsed customers) without pushing the urgency-sorted dashboard briefing aside.
 
 The two signals that are real today-actions also appear in the dashboard **Good news** tab:
 
-- **Open requests** — how many website quote requests are waiting for an answer, plus the oldest waiting time.
-- **Expiring quotes** — how many quotes expire this week, and how many have already expired without an answer.
+- **Open requests**: how many website quote requests are waiting for an answer, plus the oldest waiting time.
+- **Expiring quotes**: how many quotes expire this week, and how many have already expired without an answer.
 
 The other Growth cards, such as lapsed customers, only live on the Growth page. See [Growth](/features/groei) for more detail.
