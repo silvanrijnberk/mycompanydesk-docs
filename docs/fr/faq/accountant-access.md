@@ -63,4 +63,6 @@ Votre comptable clique sur une administration pour ouvrir directement son espace
 
 Si vous gérez plusieurs entreprises, ou si votre comptable gère plusieurs administrations, le sélecteur d'espace de travail dans la barre latérale gauche vous permet d'ajouter et de basculer entre elles. Vous pouvez ajouter votre propre entreprise depuis le sélecteur ; chacune obtient une administration dédiée avec sa propre TVA, factures et comptabilité.
 
+Lorsque vous avez plus d'une administration, la navigation de gauche affiche aussi **Espaces de travail** comme lien direct vers le tableau de triage.
+
 Les comptables invités par un client voient ces espaces de travail administrés à côté de leur propre entreprise. Voir [Croissance](/fr/features/groei) et [Tableau de bord](/fr/features/dashboard) pour savoir comment le travail est présenté entre administrations.

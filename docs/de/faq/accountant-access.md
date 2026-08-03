@@ -63,4 +63,6 @@ Ihr Steuerberater klickt auf eine Administration, um direkt in deren Arbeitsbere
 
 Wenn Sie mehr als ein Unternehmen führen, oder wenn Ihr Steuerberater mehrere Administrationen verwaltet, wechseln Sie über den Arbeitsbereich-Wechsler in der linken Seitenleiste zwischen ihnen. Sie können ein eigenes Unternehmen über den Wechsler hinzufügen; jedes erhält eine eigene Administration mit separater USt., Rechnungen und Buchhaltung.
 
+Wenn Sie mehr als eine Administration haben, erscheint in der linken Navigation auch **Arbeitsbereiche** als direkter Link zur Triage-Übersicht.
+
 Steuerberater, die von einem Kunden eingeladen wurden, sehen diese verwalteten Arbeitsbereiche neben ihrem eigenen Unternehmen. Siehe [Wachstum](/de/features/groei) und [Dashboard](/de/features/dashboard) für die Darstellung von Arbeit über Administrationen hinweg.
