@@ -124,9 +124,9 @@ Die Domain-Verlängerung folgt drei Pfaden, je nachdem, wie die Domain erworben 
 
 #### Domain-Übernahme bei vorzeitigem Probezeit-Ende
 
-<!-- TODO(source-missing): Übernahmepreis €15 Bestätigung in sources/ -->
+Wenn ein Kunde während der Pro-Testphase abspringt, ohne Pro-Kunde zu werden, gibt es eine dritte Option für die kostenlose `.nl`-Domain: Übernahme für einmalig €15,00 inkl. MwSt. (einmalig). Der Übernahme-Ablauf (`DomainBuyoutModal.vue`) lässt den Kunden über Stripe Embedded Checkout bezahlen und erhält damit das vollständige Eigentum. Nach der Zahlung wird der Domain-Inhaber von MCD auf den Kunden übertragen und der Auth-Code (EPP) wird angezeigt, sodass die Domain zu jedem Registrar umgezogen werden kann.
 
-Wenn ein Kunde während der Pro-Testphase abspringt, ohne Pro-Kunde zu werden, gibt es eine dritte Option für die kostenlose `.nl`-Domain: Übernahme für einmalig €15 (all-in). Der Übernahme-Ablauf (`DomainBuyoutModal.vue`) lässt den Kunden über Stripe Embedded Checkout bezahlen und erhält damit das vollständige Eigentum. Nach der Zahlung wird der Domain-Inhaber von MCD auf den Kunden übertragen und der Auth-Code (EPP) wird angezeigt, sodass die Domain zu jedem Registrar umgezogen werden kann.
+Der Preis von €15,00 wird bewusst inklusive niederländischer MwSt. angegeben, weil die Abbuchung im Moment des Abgangs ausgelöst wird. Der Nettobetrag, der an Stripe übermittelt wird, beträgt €12,40; darauf werden 21% niederländische MwSt. aufaddiert und auf den Cent gerundet, sodass der Gesamtbetrag genau €15,00 ergibt. Siehe `apps/api/src/modules/domains/domain-pricing.config.js` im RichardTool-Repo und `sources/vat-rates.yaml#countries.NL.standard`.
 
 Der Übernahmepreis ist ein Produktpreis, kein Übertragungsaufschlag. MCD berechnet niemals Gebühren für den Transfer-Token selbst, sobald der Kunde registrierter Inhaber ist. Die Unterscheidung ist im internen Rechtsvermerk `docs/legal/gratis-domein-voorwaarden.md` im RichardTool-Repo dokumentiert.
 
