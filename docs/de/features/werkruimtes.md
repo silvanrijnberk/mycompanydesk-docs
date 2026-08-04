@@ -14,6 +14,7 @@ Die Seite "Arbeitsbereiche" unter `/werkruimtes` ist ein zentraler Ort fuer alle
 - Oeffnen Sie den Arbeitsbereich-Wechsler in der Seitenleiste und waehlen Sie **Arbeitsbereiche verwalten**.
 - Sobald Sie mehr als einen Arbeitsbereich haben, erscheint **Arbeitsbereiche** auch direkt in der linken Navigation.
 - Die alte URL `/boekhouder` leitet hierhin weiter.
+- Der Arbeitsbereich-Wechsler zeigt jetzt oben eine Uebersichtszeile. Eigene Unternehmen und Mandanten-Administrationen sind getrennt gruppiert, und sobald Sie mehr als acht Arbeitsbereiche haben, erscheint ein Suchfeld.
 
 ## Wenn Sie einen Arbeitsbereich haben
 
@@ -68,7 +69,7 @@ Wenn Sie Steuerberater sind und Mandanten-Administrationen verwalten, wird die S
 - Eine Headline sagt, wie viele Ihrer Mandanten heute etwas brauchen.
 - Eine Zahlenzeile zeigt die Gesamtzahl der Mandanten, Fristen dieser Woche, Mandanten, die Aufmerksamkeit brauchen, und offene Einladungen.
 - Zeilen sind nach Dringlichkeit sortiert, sodass Administrationen, die heute Aktion erfordern, oben stehen.
-- Ein Suchfeld erscheint ab sechs Mandanten.
+- Ein Suchfeld ist immer sichtbar, damit Sie Mandanten-Administrationen sofort filtern koennen.
 - Offene Einladungen werden in einer eigenen Karte gezeigt; eine eingeladene Person zaehlt noch nicht als aktiver Mandant.
 
 Die Chips funktionieren wie im kombinierten Arbeitsbereich, aber die Zeilen verwenden aggregierte Signale, sodass der Ueberblick auch bei vielen Mandanten skaliert. Mandantengeld wird nicht summiert.
