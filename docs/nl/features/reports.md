@@ -60,6 +60,10 @@ BTW heeft een eigen pagina met kwartaaloverzichten en aangifte-ondersteuning. Zi
 
 Rapporten opent standaard in een eenvoudige weergave: inkomsten, uitgaven en de BTW die je verschuldigd bent, zonder boekhoudjargon. Schakel op elk moment naar de volledige boekhoudersweergave om het grootboek, de balans, de winst-en-verliesrekening en de jaarrekening te zien. De volledige weergave is handig als je met een boekhouder werkt; je hebt hem niet nodig voor je eigen aangifte.
 
+### Auditfile-export (XAF)
+
+In de volledige boekhoudweergave open je de jaarrekening van een jaar en kies je **Auditfile (XAF)** om een Nederlandse XML Auditfile Financieel 4.0 te downloaden. Het bestand bevat dezelfde eindejaarsgegevens als de PDF-jaarrekening, maar in een gestructureerd formaat dat boekhoudpakketten en de Belastingdienst direct kunnen importeren. Handig als je boekhouder de cijfers in XAF-formaat vraagt, of bij een elektronische aangifte.
+
 ## Filters
 
 Open het **Filters**-paneel met de knop bovenaan de rapportenpagina. De filters gelden voor elke rapportweergave:
