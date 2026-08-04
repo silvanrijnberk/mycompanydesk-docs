@@ -107,8 +107,11 @@ Chaque demande affiche :
 - Les indicateurs de demandes de devis (recues, devis envoyes, fermees) sont affiches en haut de la page des demandes
 - Utilisez la fonctionnalite d'ajout rapide pour une creation rapide de devis
 
-## Contexte Croissance
+## Contexte tableau de bord
 
-La page [Croissance](/fr/features/groei) regroupe les devis nécessitant un suivi avec le reste du travail qui décroche la prochaine mission. Elle affiche combien de devis attendent une réponse, combien sont déjà expirés sans réponse et combien expirent cette semaine. Les mêmes nombres de devis à expiration et expirés apparaissent aussi dans l'onglet du tableau de bord **Bonne nouvelle**.
+Les devis nécessitant un suivi apparaissent aussi dans l'onglet du tableau de bord **Bonne nouvelle** :
 
-Les demandes de devis depuis votre formulaire de constructeur de site apparaissent aussi dans Croissance, avec l'attente la plus longue et un lien vers **Devis > Demandes**. Voir [Domaines, site web et boîte de réception](/fr/features/domains-website-inbox) pour configurer le formulaire web.
+- **Demandes ouvertes**: combien de demandes de devis via le site attendent une réponse, plus l'attente la plus longue.
+- **Devis à expiration**: combien de devis expirent cette semaine, et combien sont déjà expirés sans réponse.
+
+Les demandes de devis proviennent du formulaire du constructeur de site. Voir [Domaines, site web et boîte de réception](/fr/features/domains-website-inbox) pour configurer le formulaire.

@@ -38,10 +38,11 @@ Track actual money movement: cash coming in from payments, cash going out to exp
 
 ### Clients
 
-Analyze your customer base in two tabs:
+Analyze your customer base in three tabs:
 
 - **Activity**: revenue per client, client ranking, and invoice patterns
 - **Outstanding**: unpaid invoices per client, how long they have been open, and what is overdue
+- **Lapsed**: customers who bought before but have not had an invoice this year. The view shows the count, their previous total spend, the date of their last invoice, and quick actions to call or email each customer. It is campaign-shaped work, so it lives in a report rather than in the urgency-sorted dashboard briefing.
 
 ### Forecast
 
@@ -72,5 +73,6 @@ Open the **Filters** panel with the button at the top of the reports page. The f
 
 - Use comparison mode to spot trends and seasonal patterns
 - Check the **Outstanding** tab under Clients regularly to follow up on overdue invoices
+- Review the **Lapsed** tab each quarter to see which previous customers you could win back
 - Review the P&L monthly to understand your margins
 - Glance at the **Income tax** view each quarter so the amount to reserve never surprises you

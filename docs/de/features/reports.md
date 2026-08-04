@@ -4,73 +4,75 @@ title: Berichte
 
 # Berichte
 
-Verstehen Sie, wie Ihr Unternehmen dasteht: mit fünf fokussierten Berichtsansichten und einer Übersicht, die alles zusammenführt. Diagramme sind direkt in jede Ansicht eingebettet, jeder Bericht kombiniert also Zahlen und Grafik an einem Ort.
+Verstehen Sie, wie Ihr Unternehmen dasteht, mit fünf fokussierten Berichtsansichten und einer Übersicht, die sie zusammenführt. Diagramme sind direkt in jeder Ansicht eingebettet, sodass jeder Bericht Zahlen und Visualisierungen an einem Ort vereint.
 
-## Berichte aufrufen
+## Navigation
 
-Navigieren Sie zu **Berichte** in der Seitenleiste. Auf dem Desktop wechseln Sie die Ansicht über die Tab-Leiste oben; auf Mobilgeräten nutzen Sie die Ansichtsauswahl oder wischen nach links und rechts zwischen den Ansichten.
+Wählen Sie in der Seitenleiste **Berichte**. Auf dem Desktop wechseln Sie die Ansicht mit der Tab-Leiste oben; auf Mobilgeräten verwenden Sie die Ansichtsauswahl oder wischen Sie links und rechts zwischen den Ansichten.
 
 ## Berichtsansichten
 
 ### Übersicht
 
-Die Startansicht bündelt Ihre wichtigsten Zahlen für den gewählten Zeitraum:
+Die Landing-Übersicht führt Ihre wichtigsten Kennzahlen für die gewählte Periode zusammen:
 
-- Kernzahlen: Umsatz, Gewinn mit Marge, offene Rechnungen, erfasste Stunden und Ausgaben
-- Ein Finanzübersichtsdiagramm (monatlich oder quartalsweise)
-- Eine Fälligkeitsanalyse unbezahlter Rechnungen, mit Direktlink zum Versenden von Erinnerungen
+- Kopfkennzahlen: Umsatz, Gewinn mit Marge, offene Rechnungen, erfasste Stunden und Ausgaben
+- Ein Finanzübersichtsdiagramm (monatlich oder vierteljährlich)
+- Eine Alterungsaufschlüsselung unbezahlter Rechnungen mit einer Verknüpfung, um Erinnerungen zu senden
 - Ihre umsatzstärksten Kunden
 - Hinweis-Karten, die auf Handlungsbedarf aufmerksam machen, etwa überfällige Rechnungen oder eine knappe Gewinnmarge
 
 Jeder Block verlinkt auf den passenden Detailbericht.
 
-### Gewinn und Verlust
+### GuV
 
-Die Ansicht **GuV** zeigt Ihr Ergebnis aus drei Blickwinkeln, zwischen denen Sie oben wechseln:
+Die Ansicht **Gewinn & Verlust** zeigt Ihre Ergebnisse durch drei Linsen, zwischen denen Sie oben wechseln:
 
 - **Gewinn**: Umsatz minus Ausgaben, Margen und deren Entwicklung
-- **Umsatz**: Einnahmen pro Zeitraum, Trends und Vergleiche
-- **Ausgaben**: wohin Ihr Geld fließt, aufgeschlüsselt nach Kategorie
+- **Umsatz**: Einnahmen pro Periode, Trends und Vergleiche
+- **Ausgaben**: wofür Ihr Geld ausgegeben wird, nach Kategorie aufgeschlüsselt
 
 ### Cashflow
 
-Verfolgen Sie die tatsächlichen Geldbewegungen: eingehende Zahlungen, ausgehende Ausgaben, das Nettoergebnis und Ihren laufenden Saldo über die Zeit.
+Verfolgen Sie die tatsächliche Geldentwicklung: hereinkommende Zahlungen, ausgehende Ausgaben, das Nettoergebnis und Ihren laufenden Saldo über die Zeit.
 
 ### Kunden
 
-Analysieren Sie Ihren Kundenstamm in zwei Tabs:
+Analysieren Sie Ihren Kundenstamm in drei Tabs:
 
 - **Aktivität**: Umsatz pro Kunde, Kundenranking und Rechnungsmuster
 - **Offene Posten**: unbezahlte Rechnungen pro Kunde, wie lange sie offen sind und was überfällig ist
+- **Abgewanderte**: Kunden, die früher gekauft haben, aber dieses Jahr noch keine Rechnung erhalten haben. Die Ansicht zeigt die Anzahl, wie viel sie früher zusammen ausgegeben haben, das Datum ihrer letzten Rechnung und Kurzaktionen, um jeden anzurufen oder per E-Mail zu kontaktieren. Es ist kampagnenartige Arbeit, daher lebt sie in einem Bericht und nicht im dringlichkeits-sortierten Dashboard-Briefing.
 
 ### Prognose
 
-Sehen Sie, wohin sich Ihre Zahlen entwickeln, auf Basis wiederkehrender Abrechnungen, offener Rechnungen und Ihres jüngsten Tempos. Wechseln Sie den Horizont zwischen **3 Monate**, **6 Monate** und **12 Monate** und sehen Sie erwarteten Umsatz, Ausgaben, Gewinn und Ihre Liquiditätsreichweite.
+Sehen Sie, wohin Ihre Zahlen gehen, basierend auf wiederkehrenden Rechnungen, offenen Rechnungen und Ihrem jüngsten Trend. Schalten Sie den Horizont zwischen **3 Monaten**, **6 Monaten** und **12 Monaten** um, um erwarteten Umsatz, Ausgaben, Gewinn und Ihre Cash-Runway zu sehen.
 
 ### Einkommensteuer
 
-Die Ansicht **Einkommensteuer** schätzt die Einkommensteuer für das gewählte Jahr: Bruttogewinn, Selbstständigenabzug und KMU-Gewinnfreistellung, zu versteuerndes Einkommen, die Steuerstufen, geschätzte Steuer, Gewinn nach Steuern und den Betrag, den Sie zurücklegen sollten. Führen Sie eine BV, sehen Sie stattdessen eine geschätzte Körperschaftsteuer. Verstehen Sie die Ansicht als Planungshilfe zum Reservieren von Geld, nicht als Steuererklärung.
+Die Ansicht **Einkommensteuer** schätzt die Einkommensteuer für das gewählte Jahr: Bruttogewinn, Selbstständigenabzug und KMU-Freigrenze, steuerpflichtiges Einkommen, Steuerklassen, geschätzte Steuer, Gewinn nach Steuer und die zu reservierende Summe. Bei einer BV wird stattdessen eine geschätzte Körperschaftsteuer gezeigt. Sehen Sie sie als Planungshilfe für Rücklagen, nicht als Abgabe.
 
-### Sie suchen den USt.-Bericht?
+### Suchen Sie den USt.-Bericht?
 
-Die Umsatzsteuer hat eine eigene Seite mit Quartalsübersichten und Unterstützung bei der Meldung. Siehe [USt.-Verwaltung](/de/features/vat).
+USt. hat eine eigene Seite mit Quartalsübersichten und Abgabe-Unterstützung. Siehe [USt.-Verwaltung](/de/features/vat).
 
 ## Buchhaltungsansicht
 
-Berichte öffnen sich standardmäßig in einer einfachen Ansicht: Einnahmen, Ausgaben und die fällige USt., ohne Buchhalter-Fachjargon. Mit einem Klick wechseln Sie zur vollen Buchhalter-Ansicht für Hauptbuch, Bilanz, Gewinn- und Verlustrechnung sowie Jahresabschluss. Diese Ansicht ist praktisch, wenn Sie mit einem Steuerberater arbeiten; für Ihre eigene Steuererklärung brauchen Sie sie nicht.
+Berichte öffnet standardmäßig in einer einfachen Ansicht: Einnahmen, Ausgaben und die geschuldete USt., ohne Buchhaltungsjargon. Schalten Sie jederzeit zur vollständigen Buchhaltungsansicht um, um das Hauptbuch, die Bilanz, die Gewinn- und Verlustrechnung und den Jahresabschluss zu sehen. Die vollständige Ansicht ist nützlich, wenn Sie mit einem Buchhalter arbeiten; für Ihre eigene Steuererklärung brauchen Sie sie nicht.
 
 ## Filter
 
-Öffnen Sie das Panel **Filter** über die Schaltfläche oben auf der Berichtsseite. Die Filter gelten für jede Berichtsansicht:
+Öffnen Sie das **Filter**-Panel mit der Schaltfläche oben auf der Berichtsseite. Die Filter gelten für jede Berichtsansicht:
 
-- **Zeitraum**: wählen Sie die Granularität (**Jahr**, **Quartal**, **Monat**, **Woche** oder **Tag**), mit passender Auswahl für die gewählte Granularität
+- **Periode**: Wählen Sie die Granularität (**Jahr**, **Quartal**, **Monat**, **Woche** oder **Tag**) mit passendem Auswahl-Steuerelement
 - **Jahr**: das Berichtsjahr
-- **Vergleichen mit**: aktivieren Sie den Vergleich und wählen Sie ein **Vergleichsjahr**, um Veränderungen zwischen Zeiträumen zu sehen
-- **Offene Rechnungen einbeziehen**: legen Sie fest, ob unbezahlte Rechnungen zum Umsatz zählen
+- **Vergleichen mit**: Vergleich aktivieren und ein **Vergleichsjahr** wählen, um periodenübergreifende Änderungen zu sehen
+- **Offene Rechnungen einbeziehen**: Schalter, ob unbezahlte Rechnungen in den Umsatz einfließen
 
 ## Tipps
 
-- Nutzen Sie den Vergleichsmodus, um Trends und saisonale Muster zu erkennen
+- Nutzen Sie den Vergleichsmodus, um Trends und Saisonmuster zu erkennen
 - Prüfen Sie den Tab **Offene Posten** unter Kunden regelmäßig, um überfällige Rechnungen nachzufassen
+- Sehen Sie sich jedes Quartal den Tab **Abgewanderte** an, um frühere Kunden zurückzugewinnen
 - Sehen Sie sich die GuV monatlich an, um Ihre Margen zu verstehen
 - Werfen Sie jedes Quartal einen Blick auf die Ansicht **Einkommensteuer**, damit der zurückzulegende Betrag Sie nie überrascht

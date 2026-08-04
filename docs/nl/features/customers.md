@@ -112,14 +112,15 @@ Importeer je bestaande klantendatabase vanuit CSV:
 
 Exporteer je klantenlijst als CSV vanaf de klantenpagina (Pro-abonnement en hoger).
 
+## Weggebleven klanten
+
+Het tabblad [Rapporten > Klanten > Weggebleven](/nl/features/reports) toont klanten die eerder kochten maar dit jaar nog geen factuur hebben gekregen. De weergave toont het aantal, wat ze eerder samen besteedden en de datum van hun laatste factuur, met links om elke klant direct te bellen of te mailen. Het staat in Rapporten omdat oude klanten terugwinnen campagne-werk is, geen item dat past in een op urgentie gesorteerde feed.
+
+De standaard klantenlijst segmenteert ook zelf inactieve klanten; het tabblad Weggebleven voegt de campagne-achtige herinnering toe zonder die filter te vervangen.
+
 ## Tips
 
 - Houd e-mailadressen van klanten up-to-date — ze worden gebruikt voor factuurverzending
 - Gebruik de zoekbalk voor directe fuzzy-matching over alle klantvelden
 - Pin je belangrijkste klanten als favorieten voor snelle toegang
 
-## Groei-context
-
-De [Groei](/nl/features/groei)-pagina toont klanten die eerder kochten maar dit jaar geen factuur hebben gehad. De kaart toont het aantal, wat ze eerder samen besteedden en de datum van hun laatste factuur, met een link terug naar de klantenlijst zodat je kunt opvolgen.
-
-De standaard klantenlijst segmenteert ook zelf inactieve klanten; Groei voegt de campagne-achtige herinnering toe zonder die filter te vervangen.

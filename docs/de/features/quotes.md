@@ -107,8 +107,11 @@ Jede Anfrage zeigt:
 - Angebotsanfragen-Kennzahlen (eingegangen, angeboten, geschlossen) werden oben auf der Anfragenseite angezeigt
 - Nutzen Sie die Schnellerfassungsfunktion für schnelle Angebotserstellung
 
-## Wachstum-Kontext
+## Dashboard-Kontext
 
-Die Seite [Wachstum](/de/features/groei) gruppiert Angebote, die Nachverfolgung brauchen, mit anderer Arbeit, die den nächsten Auftrag bringt. Sie zeigt, wie viele Angebote auf Antwort warten, wie viele bereits ohne Antwort abgelaufen sind und wie viele diese Woche ablaufen. Dieselben ablaufenden und abgelaufenen Zahlen erscheinen auch im Dashboard-Tab **Gute Nachrichten**.
+Angebote, die Nachverfolgung brauchen, erscheinen auch im Dashboard-Tab **Gute Nachrichten**:
 
-Angebotsanfragen über Ihr Website-Builder-Formular erscheinen auch in Wachstum, mit der längsten Wartezeit und einem Link zu **Angebote > Anfragen**. Siehe [Domains, Website & Posteingang](/de/features/domains-website-inbox) für das Einrichten des Website-Formulars.
+- **Offene Anfragen**: wie viele Angebotsanfragen über die Website auf Antwort warten, plus die längste Wartezeit.
+- **Ablaufende Angebote**: wie viele Angebote diese Woche ablaufen, und wie viele bereits ohne Antwort abgelaufen sind.
+
+Angebotsanfragen kommen über Ihr Website-Builder-Formular. Siehe [Domains, Website & Posteingang](/de/features/domains-website-inbox) für das Einrichten des Formulars.
