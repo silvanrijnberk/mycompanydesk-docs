@@ -1,6 +1,6 @@
 ---
 title: Bank Feed
-last_verified: 2026-07-02
+last_verified: 2026-08-05
 ---
 
 # Bank Feed
@@ -35,18 +35,22 @@ How often MyCompanyDesk checks for new transactions is one setting for your whol
 
 ## From transaction to expense
 
-New transactions run through your rules and the smart categoriser:
+Before a transaction is categorised, outgoing lines are checked against expenses that are already in your books. When the match is unambiguous, the bank line is linked to the existing expense automatically. This creates nothing new; it simply records which payment settled the cost.
+
+After the link pass, new transactions run through your rules and the smart categoriser:
 
 1. Your own rules are checked first. A matching transaction gets the rule's category.
 2. Transactions without a rule match get a category suggestion from smart categorisation, or fall back to your default category if you set one.
 3. A categorised outgoing transaction becomes a **draft expense**: the counterpart becomes the supplier, and the amount, date, and the category's usual VAT treatment are filled in.
 4. The draft lands in the review queue, so nothing is booked without you seeing it.
 
+Transactions from the first import, which pulls roughly the past 90 days, never auto-confirm. They always land in the review queue, even when the categorisation is confident. This only applies to the backlog from before the account was connected; new transactions arriving afterwards follow the normal review rules.
+
 Only outgoing transactions become expenses; incoming payments are never turned into expenses. Expenses created from bank transactions show a small bank badge in the expenses list, so you can always see where an entry came from.
 
 ## Reviewing auto-imported expenses
 
-The **Auto-imported expenses to review** card sits at the top of the expense settings page whenever drafts are waiting. Each row shows the supplier, date, amount, the suggested category, and where that suggestion came from (one of your rules, your default category, a smart suggestion, or the bank feed).
+The **Auto-imported expenses to review** card sits at the top of the expense settings page whenever drafts are waiting. This includes the transactions imported during the first sync and any other draft that needs your eyes. Each row shows the supplier, date, amount, the suggested category, and where that suggestion came from (one of your rules, your default category, a smart suggestion, or the bank feed).
 
 For each draft you can:
 
@@ -91,7 +95,7 @@ For each open transaction:
 - **Koppelen** opens a window where you link the transaction to an existing invoice or expense. Money out suggests expenses and money in suggests invoices, and you can flip between the two and search.
 - **Negeren** moves the transaction to the ignored tab.
 
-Linking is always a manual step: MyCompanyDesk does not automatically match transactions to customers, invoices, or existing expenses.
+Most linking is still a manual step. MyCompanyDesk does, however, automatically link an imported bank line to an existing expense when the match is unambiguous. Customers, invoices, and anything unclear still need your confirmation.
 
 ## Notifications
 

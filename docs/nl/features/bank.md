@@ -34,18 +34,22 @@ Hoe vaak MyCompanyDesk nieuwe transacties ophaalt is één instelling voor je he
 
 ## Van transactie naar uitgave
 
-Nieuwe transacties gaan langs je regels en de slimme categorisering:
+Voordat een transactie wordt gecategoriseerd, worden uitgaande regels vergeleken met uitgaven die al in je boekhouding staan. Is de match eenduidig, dan koppelt MyCompanyDesk de bankregel automatisch aan die bestaande uitgave. Er wordt niets nieuws aangemaakt; het legt alleen vast welke betaling de kosten heeft vereffend.
+
+Na de koppelronde doorlopen nieuwe transacties je regels en de slimme categorisering:
 
 1. Eerst worden je eigen regels gecontroleerd. Een transactie die matcht krijgt de categorie van de regel.
 2. Transacties zonder regelmatch krijgen een categoriesuggestie van de slimme categorisering, of vallen terug op je standaardcategorie als je die hebt ingesteld.
 3. Een gecategoriseerde uitgaande transactie wordt een **concept-uitgave**: de tegenpartij wordt de leverancier, en het bedrag, de datum en de gebruikelijke BTW-behandeling van de categorie worden ingevuld.
 4. Het concept belandt in de controlelijst, dus er wordt niets geboekt zonder dat jij het ziet.
 
+Transacties uit de eerste import, die ongeveer de afgelopen 90 dagen ophaalt, worden nooit automatisch bevestigd. Ze komen altijd op de controlelijst, ook als de categorisering zeker is. Dat geldt alleen voor de achterstand van voor de koppeling; nieuwe transacties daarna volgen de normale controle-regels.
+
 Alleen uitgaande transacties worden uitgaven; inkomende betalingen worden nooit omgezet in uitgaven. Uitgaven die uit banktransacties zijn ontstaan tonen een klein bankicoon in de uitgavenlijst, zodat je altijd ziet waar een boeking vandaan komt.
 
 ## Automatisch geïmporteerde uitgaven controleren
 
-De kaart **Automatisch geïmporteerde uitgaven om te controleren** staat bovenaan de uitgaven-instellingen zodra er concepten klaarstaan. Elke rij toont de leverancier, datum, het bedrag, de voorgestelde categorie en waar die suggestie vandaan komt (een van je regels, je standaardcategorie, een slimme suggestie of de bankfeed).
+De kaart **Automatisch geïmporteerde uitgaven om te controleren** staat bovenaan de uitgaven-instellingen zodra er concepten klaarstaan. Daaronder vallen ook de transacties die bij de eerste synchronisatie zijn binnengekomen en elk ander concept dat jouw aandacht nodig heeft. Elke rij toont de leverancier, datum, het bedrag, de voorgestelde categorie en waar die suggestie vandaan komt (een van je regels, je standaardcategorie, een slimme suggestie of de bankfeed).
 
 Per concept kun je:
 
@@ -90,7 +94,7 @@ Per openstaande transactie:
 - **Koppelen** opent een venster waarin je de transactie koppelt aan een bestaande factuur of uitgave. Geld eruit stelt uitgaven voor en geld erin facturen, en je kunt wisselen en zoeken.
 - **Negeren** verplaatst de transactie naar het tabblad Genegeerd.
 
-Koppelen is altijd een handmatige stap: MyCompanyDesk koppelt transacties niet automatisch aan klanten, facturen of bestaande uitgaven.
+Het merendeel van het koppelen blijft een handmatige stap. MyCompanyDesk koppelt wel automatisch een geïmporteerde bankregel aan een bestaande uitgave als de match eenduidig is. Klanten, facturen en alles wat onduidelijk is, hebben nog steeds jouw bevestiging nodig.
 
 ## Meldingen
 
