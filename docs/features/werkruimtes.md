@@ -1,0 +1,107 @@
+---
+title: Workspaces
+last_verified: 2026-08-04
+---
+
+# Workspaces
+
+The Workspaces page at `/werkruimtes` is one central place for everything you manage. It replaces the older boekhouder desk and adapts to your actual role: one workspace, several of your own businesses, or client administrations.
+
+> **Your own money and client money are never mixed.** A combined view over your own companies makes sense because the money is yours. A total over client administrations would be meaningless, so the page keeps those strictly separate.
+
+## Where to find it
+
+- Open the workspace switcher in the left sidebar and choose **Werkruimtes beheren**.
+- When you hold more than one workspace, the left navigation also shows **Workspaces** directly.
+- The old `/boekhouder` URL redirects here.
+
+## If you have one workspace
+
+The page shows three entry points instead of an empty screen:
+
+- **Add a business** if you run a holding, a second company, or a side business. Each new business gets its own administration with separate VAT, invoices, and bookkeeping.
+- **Invite your accountant** if you work with an external accountant.
+- **Join the partner program** if you are an accountant and want to manage multiple client administrations from one place.
+
+## Combined workspace: your own businesses
+
+If you own more than one business, the page opens with a combined overview:
+
+- A single sentence states what your businesses turned over this year, and whether that resulted in a profit or loss.
+- A strip shows combined revenue, profit, outstanding receivables, and VAT set aside.
+- A share bar shows the revenue split across businesses.
+- Below the combined band is one row per business. Rows stay in a fixed order (your home business first, then by creation date) so you always know where to look.
+
+### Signals inside each row
+
+Each business row shows chips for the things that need attention right now. Every chip is a deep link: it switches you into that workspace and lands on the page that matches the signal.
+
+| Chip | Meaning | Deep link |
+|---|---|---|
+| VAT period with a deadline | How many days until the VAT return is due, or how many days late it is | `/belastingen/btw` |
+| Overdue invoices | Invoices that have not been paid on time | `/facturen` |
+| Missing receipts | Expense items without a receipt | `/uitgaven` |
+| Drafts | Invoices still in draft | `/facturen` |
+| VAT filed | The previous return was filed | `/belastingen/btw` |
+| Trial ending | The business is still on an Office trial | `/settings/billing` |
+| Deactivated | The business is set to inactive; you can still view and export | `/werkruimtes` |
+
+Your own businesses use the same KPIs as the dashboard of each individual workspace, so the numbers cannot disagree.
+
+## Kantoor workspace: client administrations
+
+If you are an accountant managing client administrations, the page becomes a triage desk:
+
+- A headline tells you how many of your clients need attention today.
+- A figures strip shows total clients, deadlines this week, clients that need attention, and open invitations.
+- Rows are sorted by urgency so the administrations that need action today appear first.
+- A search field appears once you reach six clients.
+- Open client invitations are shown in their own card; an invited contact is not counted as an active client.
+
+The row chips and deep links work the same as in the combined workspace, but rows use aggregated signal queries so the desk scales to large client lists. The page does not add up client money.
+
+## Adding your own business
+
+Open **Bedrijf toevoegen** and give the new business a name. Each added business starts on its own 60-day Office trial. Clients, invoices, and bookkeeping stay completely separate between businesses.
+
+## Manage or remove a business
+
+For each of your own businesses, open the row menu and choose **Manage**. A drawer opens with two options.
+
+### Set a business to inactive
+
+Choose **Set inactive** when you stop working in a business but still need to keep its records. The administration stays readable and you can still export everything, because you are required to keep the books for the statutory retention period. You cannot add new invoices, expenses or customers, and the business no longer counts toward your subscription.
+
+To resume, open the same drawer and choose **Reactivate**.
+
+### Delete a business
+
+Choose **Delete** only for a business you created by mistake. The workspace checks whether anything has been booked; as soon as an invoice, expense or customer exists, deletion is refused and you must set the business to inactive instead. This guard is server-side, so the refusal wording always matches the actual data.
+
+## Inviting a client
+
+Accountants can invite a client directly from the page:
+
+1. Click **Klant uitnodigen**.
+2. Fill in the client's email address, company name, and optional chamber of commerce number.
+3. Click **Uitnodiging versturen**.
+
+The client creates their own account and remains the owner of their administration. You get access as soon as the invitation is accepted, and the client can revoke it at any time. Pending invitations can be resented or revoked. The invite link is valid for 30 days.
+
+## Navigation follows your role
+
+The left rail now hides items your current workspace role is not allowed to use, so you no longer see links that would return a 403. The API drives this from a deny list: if a new endpoint is restricted for a role, its navigation item hides automatically.
+
+In a client workspace the rail is shorter because parts that belong to the client (inbox, website, subscription, team settings, domains, and AI assistants) are denied to an accountant. The workspace switcher and the Workspaces item remain visible so you can always move between administrations.
+
+## Permissions
+
+- Workspace owners and team admins can add businesses and manage workspace settings.
+- Accountants see only the workspaces and pages their client granted.
+- Team members see the Workspaces entry when they hold more than one workspace and their role allows it.
+
+## Related
+
+- [Access and accountant](/settings/team) for inviting accountants and setting page permissions
+- [Reports](/features/reports) for the lapsed-customers view and other report pages
+- [Dashboard](/features/dashboard) for the day-to-day briefing of one workspace
