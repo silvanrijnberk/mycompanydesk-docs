@@ -14,7 +14,7 @@ La page Espaces de travail (`/werkruimtes`) est un lieu central pour tout ce que
 - Ouvrez le selecteur d'espace de travail dans la barre laterale et choisissez **Gerer les espaces de travail**.
 - Des que vous avez plus d'un espace de travail, **Espaces de travail** apparait aussi directement dans la navigation de gauche.
 - L'ancienne URL `/boekhouder` redirige ici.
-- Le selecteur d'espace de travail affiche maintenant une ligne de synthese en haut. Vos propres entreprises et les administrations clientes sont regroupees separement, et un champ de recherche apparait des que la liste est assez longue pour que taper soit plus rapide que defiler.
+- Le selecteur d'espace de travail affiche maintenant une ligne de synthese en haut. Vos propres entreprises et les administrations clientes sont regroupees separement, et un champ de recherche apparait des que vous avez plus de huit espaces de travail.
 
 ## Si vous avez un seul espace de travail
 
@@ -69,7 +69,7 @@ Si vous etes comptable et gerez des administrations clientes, la page devient un
 - Un titre indique combien de vos clients ont besoin de quelque chose aujourd'hui.
 - Une bande de chiffres montre le nombre total de clients, les echeances cette semaine, les clients necessitant une attention et les invitations ouvertes.
 - Les lignes sont triees par urgence, de sorte que les administrations necessitant une action aujourd'hui apparaissent en premier.
-- Un champ de recherche apparait a partir de six clients.
+- Un champ de recherche est toujours visible, pour que vous puissiez filtrer les administrations clientes sans attendre un seuil.
 - Les invitations ouvertes sont affichees dans leur propre carte ; une personne invitee ne compte pas encore comme client actif.
 
 Les puces fonctionnent comme dans l'espace de travail combine, mais les lignes utilisent des signaux agreges pour que le tableau puisse suivre une grande liste de clients. L'argent des clients n'est jamais additionne.

@@ -14,7 +14,7 @@ The Workspaces page at `/werkruimtes` is one central place for everything you ma
 - Open the workspace switcher in the left sidebar and choose **Werkruimtes beheren**.
 - When you hold more than one workspace, the left navigation also shows **Workspaces** directly.
 - The old `/boekhouder` URL redirects here.
-- The workspace switcher now shows an overview row at the top. Your own businesses and any client administrations are grouped separately, and a search field appears once the list is long enough to make scrolling slower than typing.
+- The workspace switcher now shows an overview row at the top. Your own businesses and any client administrations are grouped separately, and a search field appears once you hold more than eight workspaces.
 
 ## If you have one workspace
 
@@ -69,7 +69,7 @@ If you are an accountant managing client administrations, the page becomes a tri
 - A headline tells you how many of your clients need attention today.
 - A figures strip shows total clients, deadlines this week, clients that need attention, and open invitations.
 - Rows are sorted by urgency so the administrations that need action today appear first.
-- A search field appears once you reach six clients.
+- A search field is always visible, so you can filter client administrations without waiting for a threshold.
 - Open client invitations are shown in their own card; an invited contact is not counted as an active client.
 
 The row chips and deep links work the same as in the combined workspace, but rows use aggregated signal queries so the desk scales to large client lists. The page does not add up client money.

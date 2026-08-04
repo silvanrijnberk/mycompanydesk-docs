@@ -14,7 +14,7 @@ De pagina Werkruimtes (`/werkruimtes`) is één centrale plek voor alles wat je 
 - Open de werkruimtekiezer in de zijbalk en kies **Werkruimtes beheren**.
 - Zodra je meer dan één werkruimte hebt, verschijnt **Werkruimtes** ook direct in de linker navigatie.
 - Het oude `/boekhouder`-adres verwijst hierheen door.
-- De werkruimtekiezer toont nu bovenaan een overzichtsregel. Eigen bedrijven en klantadministraties staan in aparte groepen, en zodra de lijst lang genoeg is om scrollen trager te maken dan typen, verschijnt er een zoekveld.
+- De werkruimtekiezer toont nu bovenaan een overzichtsregel. Eigen bedrijven en klantadministraties staan in aparte groepen, en zodra je meer dan acht werkruimtes hebt, verschijnt er een zoekveld.
 
 ## Als je één werkruimte hebt
 
@@ -69,7 +69,7 @@ Als je boekhouder bent en klantadministraties beheert, wordt de pagina een triag
 - Een headline vertelt hoeveel van je klanten vandaag iets nodig hebben.
 - Een cijferstrip toont het totaal aantal klanten, deadlines deze week, klanten die aandacht vragen, en open uitnodigingen.
 - Rijen staan op urgentie gesorteerd, zodat administraties die vandaag actie nodig hebben bovenaan staan.
-- Een zoekveld verschijnt vanaf zes klanten.
+- Een zoekveld is altijd zichtbaar, zodat je klantadministraties direct kunt filteren.
 - Open uitnodigingen staan in een eigen kaart; een uitgenodigde klant telt nog niet als actieve klant.
 
 De chips en werken hetzelfde als in de gecombineerde werkruimte, maar rijen gebruiken geaggregeerde signalen zodat het overzicht meegroeit met grote klantenbestanden. Het overzicht telt klantgeld niet bij elkaar op.
