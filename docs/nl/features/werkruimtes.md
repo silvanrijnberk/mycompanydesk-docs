@@ -52,9 +52,14 @@ Eigen bedrijven gebruiken dezelfde KPI's als het dashboard van elk afzonderlijk 
 
 Als je eigen bedrijven elkaar factureren, ziet elke werkruimte normaal gesproken alleen de eigen helft. De Werkruimtes-pagina toont nu het nettosaldo tussen elk paar eigen bedrijven, zodat de rekening-courant die je voorheen op papier bijhield, in de app zichtbaar is.
 
+Het blok verschijnt alleen als minstens twee van je eigen bedrijven daadwerkelijk openstaande facturen naar elkaar hebben, dus het blijft uit beeld voor iedereen die het niet nodig heeft. Het staat tussen het gecombineerde overzicht van je bedrijven en het klantendesk, omdat het een relatie tussen je bedrijven beschrijft en geen eigenschap van een enkel bedrijf.
+
 - Koppelingen worden automatisch gemaakt als het btw-nummer van een klant overeenkomt met een van je andere werkruimtes. Die match kijkt alleen naar je eigen bedrijven, dus een klant van iemand anders wordt nooit bereikt.
 - Als de automatische koppeling niet klopt, of als er geen btw-nummer beschikbaar is, kun je een klant handmatig koppelen of ontkoppelen vanaf de klantenpagina. Een handmatige koppeling wint altijd van de automatische.
 - De positie is het nettobedrag over openstaande facturen tussen de twee bedrijven, verminderd met geboekte betalingen. Een positief bedrag betekent dat het ene bedrijf het andere nog moet betalen.
+- Elk paar wordt als zin weergegeven vanuit de kant die nog tegoed heeft, bijvoorbeeld "[crediteur] heeft [bedrag] te ontvangen van [debiteur]". Als de balans de andere kant op loopt, draait de zin crediteur en debiteur om in plaats van het bedrag negatief te tonen.
+- De regel toont ook uit hoeveel openstaande facturen het bedrag bestaat.
+- Als er meer dan een paar een saldo heeft, toont de kaart bovenaan een totaal van alle openstaande onderlinge posities.
 
 ## Kantoor-werkruimte: klanten
 

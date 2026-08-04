@@ -52,9 +52,14 @@ Eigene Unternehmen verwenden dieselben KPIs wie das Dashboard jedes einzelnen Un
 
 Wenn Ihre eigenen Unternehmen sich gegenseitig Rechnungen stellen, sieht jeder Arbeitsbereich normalerweise nur seine eigene Haelfte. Die Seite Arbeitsbereiche zeigt jetzt den Nettosaldo zwischen jedem Paar eigener Unternehmen, sodass das laufende Konto, das Sie bisher auf Papier gefuehrt haben, in der App sichtbar ist.
 
+Der Block erscheint nur, wenn mindestens zwei Ihrer eigenen Unternehmen tatsaechlich offene Rechnungen aneinander haben, und bleibt daher fuer alle anderen unsichtbar. Er steht zwischen der kombinierten Uebersicht Ihrer Unternehmen und dem Mandanten-Desk, weil er eine Beziehung zwischen Ihren Unternehmen beschreibt und keine Eigenschaft eines einzelnen Unternehmens.
+
 - Verknuepfungen werden automatisch erstellt, wenn die USt.-Nummer eines Kunden mit einem Ihrer anderen Arbeitsbereiche uebereinstimmt. Dieser Abgleich sucht nur in Ihren eigenen Unternehmen, sodass ein Kunde eines anderen Unternehmens niemals erreichbar ist.
 - Wenn die automatische Verknuepfung falsch ist oder keine USt.-Nummer vorhanden ist, koennen Sie einen Kunden auf der Kundenseite manuell verknuepfen oder trennen. Eine manuelle Verknuepfung hat immer Vorrang vor der automatischen.
 - Die Position ist der Nettobetrag ueber offene Rechnungen zwischen den beiden Unternehmen, abzueglich gebuchter Zahlungen. Ein positiver Betrag bedeutet, dass das eine Unternehmen dem anderen noch etwas schuldet.
+- Jedes Paar wird als Satz von der Seite aus formuliert, der das Geld noch zugutekommt, zum Beispiel "[Kreditor] hat [Betrag] zu erhalten von [Debitor]". Laeuft die Bilanz in die andere Richtung, dreht sich der Satz Kreditor und Debitor um, anstatt den Betrag negativ anzuzeigen.
+- Die Zeile zeigt auch, aus wie vielen offenen Rechnungen der Betrag besteht.
+- Wenn mehr als ein Paar einen Saldo hat, zeigt die Karte oben eine Summe aller offenen untereinander-Positionen.
 
 ## Kanzlei-Arbeitsbereich: Mandanten
 

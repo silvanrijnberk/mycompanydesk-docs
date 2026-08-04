@@ -52,9 +52,14 @@ Your own businesses use the same KPIs as the dashboard of each individual worksp
 
 If your own businesses invoice each other, each workspace normally only sees its own half. The Workspaces page now shows the net position between every pair of your own businesses, so the rekening-courant you used to keep on paper is visible in the app.
 
+The block appears only when at least two of your own businesses actually have open invoices to each other, so it stays out of the way for everyone else. It sits between the combined overview of your businesses and the client desk, because it is a relationship between your businesses rather than a property of any single one.
+
 - Links are created automatically when a customer's VAT number matches one of your other workspaces. That match only ever looks at your own businesses, so a customer of someone else is never reached.
 - If the automatic match is wrong, or if no VAT number is available, you can link or unlink a customer by hand from the customer page. A manual link always wins over the automatic one.
 - The position is the net balance across open invoices between the two businesses, net of posted payments. A positive number means one business owes the other.
+- Each pair is phrased as a sentence from the side that is owed, for example "[creditor] has [amount] to receive from [debtor]". If the balance runs the other way, the sentence flips creditor and debtor instead of showing a negative number.
+- The line also shows how many open invoices make up the balance.
+- When more than one pair has a balance, the card shows a combined total of all open intercompany positions at the top.
 
 ## Kantoor workspace: client administrations
 

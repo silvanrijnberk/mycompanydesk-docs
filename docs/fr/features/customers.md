@@ -73,6 +73,15 @@ Une banniere d'avertissement apparait en haut de la page de detail du client lor
 
 Ces informations proviennent des evenements de l'operateur et du statut de livraison des messages sortants, vous aidant a reperer les problemes avant d'envoyer la prochaine facture ou le prochain devis.
 
+## Lier un client a l'une de vos propres entreprises
+
+Si vous possedez plus d'une entreprise, une carte **Entreprise propre** peut apparaitre sur la page de detail du client. Elle permet d'indiquer que ce client est l'une de vos propres entreprises, pour que sa position soit prise en compte dans les positions inter-entreprises sur la page Espaces de travail.
+
+- La carte n'apparait que si vous avez au moins deux entreprises propres et que le client n'appartient pas a l'espace de travail que vous consultez actuellement. Une entreprise ne peut pas etre sa propre contrepartie.
+- Choisissez l'une de vos entreprises dans le menu deroulant, ou choisissez **Aucune de mes entreprises** pour supprimer un lien.
+- Le lien se cree automatiquement quand le numero de TVA du client correspond a l'un de vos autres espaces de travail. La carte affiche alors une note pour que vous sachiez que cela s'est fait automatiquement et puissiez le corriger si c'est errone.
+- Un lien manuel prime toujours sur un lien automatique. Le lien automatique n'ecrase jamais un lien que vous avez defini manuellement.
+
 ## Actions
 
 - **Modifier**, mettre a jour les informations du client
