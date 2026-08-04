@@ -34,18 +34,22 @@ La fréquence à laquelle MyCompanyDesk recherche de nouvelles transactions est 
 
 ## De la transaction à la dépense
 
-Les nouvelles transactions passent par vos règles et la catégorisation intelligente :
+Avant qu'une transaction ne soit catégorisée, les lignes sortantes sont comparées aux dépenses déjà présentes dans vos comptes. Si la correspondance est sans ambiguïté, MyCompanyDesk relie automatiquement la ligne bancaire à cette dépense existante. Cela ne crée rien de nouveau ; cela enregistre simplement quel paiement a réglé la dépense.
+
+Après la passe de liaison, les nouvelles transactions passent par vos règles et la catégorisation intelligente :
 
 1. Vos propres règles sont vérifiées en premier. Une transaction qui correspond reçoit la catégorie de la règle.
 2. Les transactions sans correspondance reçoivent une suggestion de catégorie de la catégorisation intelligente, ou retombent sur votre catégorie par défaut si vous en avez défini une.
 3. Une transaction sortante catégorisée devient un **brouillon de dépense** : la contrepartie devient le fournisseur, et le montant, la date et le traitement de TVA habituel de la catégorie sont remplis.
 4. Le brouillon arrive dans la file de contrôle : rien n'est comptabilisé sans que vous le voyiez.
 
+Les transactions issues du premier import, qui récupère environ les 90 derniers jours, ne sont jamais auto-confirmées. Elles atterrissent toujours dans la file de contrôle, même si la catégorisation est sûre. Cela ne vaut que pour l'arriéré d'avant la connexion ; les nouvelles transactions ensuite suivent les règles de contrôle normales.
+
 Seules les transactions sortantes deviennent des dépenses ; les paiements entrants ne sont jamais transformés en dépenses. Les dépenses issues de transactions bancaires affichent un petit badge banque dans la liste des dépenses, pour que vous voyiez toujours d'où vient une écriture.
 
 ## Vérifier les dépenses importées automatiquement
 
-La carte **Dépenses importées automatiquement à vérifier** s'affiche en haut des réglages des dépenses dès que des brouillons attendent. Chaque ligne montre le fournisseur, la date, le montant, la catégorie suggérée et l'origine de la suggestion (une de vos règles, votre catégorie par défaut, une suggestion intelligente ou le flux bancaire).
+La carte **Dépenses importées automatiquement à vérifier** s'affiche en haut des réglages des dépenses dès que des brouillons attendent. Cela inclut les transactions importées lors de la première synchronisation et tout autre brouillon qui a besoin de votre regard. Chaque ligne montre le fournisseur, la date, le montant, la catégorie suggérée et l'origine de la suggestion (une de vos règles, votre catégorie par défaut, une suggestion intelligente ou le flux bancaire).
 
 Pour chaque brouillon, vous pouvez :
 
@@ -90,7 +94,7 @@ Pour chaque transaction ouverte :
 - **Associer** ouvre une fenêtre où vous associez la transaction à une facture ou une dépense existante. L'argent sortant suggère des dépenses, l'argent entrant des factures, et vous pouvez basculer et rechercher.
 - **Ignorer** déplace la transaction vers l'onglet Ignorées.
 
-L'association est toujours une étape manuelle : MyCompanyDesk n'associe pas automatiquement les transactions aux clients, factures ou dépenses existantes.
+L'association reste le plus souvent manuelle. MyCompanyDesk associe toutefois automatiquement une ligne bancaire importée à une dépense existante quand la correspondance est sans ambiguïté. Les clients, les factures et tout ce qui est peu clair nécessitent toujours votre confirmation.
 
 ## Notifications
 

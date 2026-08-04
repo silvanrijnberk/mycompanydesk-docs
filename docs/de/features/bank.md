@@ -34,18 +34,22 @@ Wie oft MyCompanyDesk nach neuen Transaktionen sucht, ist eine Einstellung für 
 
 ## Von der Transaktion zur Ausgabe
 
-Neue Transaktionen durchlaufen Ihre Regeln und die smarte Kategorisierung:
+Bevor eine Transaktion kategorisiert wird, werden abgehende Posten mit Ausgaben abgeglichen, die bereits in Ihrer Buchhaltung stehen. Ist die Zuordnung eindeutig, verknüpft MyCompanyDesk die Bankzeile automatisch mit der bestehenden Ausgabe. Es entsteht nichts Neues; es wird nur festgehalten, welche Zahlung die Kosten beglichen hat.
+
+Nach der Verknüpfungsphase durchlaufen neue Transaktionen Ihre Regeln und die smarte Kategorisierung:
 
 1. Zuerst werden Ihre eigenen Regeln geprüft. Eine passende Transaktion erhält die Kategorie der Regel.
 2. Transaktionen ohne Regeltreffer bekommen einen Kategorievorschlag der smarten Kategorisierung oder fallen auf Ihre Standardkategorie zurück, wenn Sie eine festgelegt haben.
 3. Eine kategorisierte abgehende Transaktion wird ein **Ausgabenentwurf**: Die Gegenpartei wird zum Lieferanten, und Betrag, Datum sowie die übliche USt.-Behandlung der Kategorie werden ausgefüllt.
 4. Der Entwurf landet in der Prüfliste, es wird also nichts gebucht, ohne dass Sie es sehen.
 
+Transaktionen aus dem ersten Import, der ungefähr die letzten 90 Tage abruft, werden nie automatisch bestätigt. Sie landen immer in der Prüfliste, auch wenn die Kategorisierung sicher ist. Das gilt nur für den Rückstand vor der Verbindung; neue Transaktionen danach folgen den normalen Prüfregeln.
+
 Nur abgehende Transaktionen werden zu Ausgaben; eingehende Zahlungen werden nie in Ausgaben umgewandelt. Ausgaben aus Banktransaktionen zeigen in der Ausgabenliste ein kleines Banksymbol, sodass Sie immer sehen, woher eine Buchung stammt.
 
 ## Automatisch importierte Ausgaben prüfen
 
-Die Karte **Automatisch importierte Ausgaben prüfen** steht oben auf der Seite mit den Ausgabeneinstellungen, sobald Entwürfe warten. Jede Zeile zeigt Lieferant, Datum, Betrag, die vorgeschlagene Kategorie und die Herkunft des Vorschlags (eine Ihrer Regeln, Ihre Standardkategorie, ein smarter Vorschlag oder der Bankfeed).
+Die Karte **Automatisch importierte Ausgaben prüfen** steht oben auf der Seite mit den Ausgabeneinstellungen, sobald Entwürfe warten. Dazu gehören auch die Transaktionen, die bei der ersten Synchronisation hereinkamen, und jeder andere Entwurf, der Ihre Aufmerksamkeit braucht. Jede Zeile zeigt Lieferant, Datum, Betrag, die vorgeschlagene Kategorie und die Herkunft des Vorschlags (eine Ihrer Regeln, Ihre Standardkategorie, ein smarter Vorschlag oder der Bankfeed).
 
 Für jeden Entwurf können Sie:
 
@@ -90,7 +94,7 @@ Für jede offene Transaktion:
 - **Zuordnen** öffnet ein Fenster, in dem Sie die Transaktion mit einer bestehenden Rechnung oder Ausgabe verknüpfen. Bei abgehendem Geld werden Ausgaben vorgeschlagen, bei eingehendem Rechnungen, und Sie können umschalten und suchen.
 - **Ignorieren** verschiebt die Transaktion in den Reiter Ignoriert.
 
-Das Verknüpfen ist immer ein manueller Schritt: MyCompanyDesk ordnet Transaktionen nicht automatisch Kunden, Rechnungen oder bestehenden Ausgaben zu.
+Das Verknüpfen bleibt meist ein manueller Schritt. MyCompanyDesk verknüpft jedoch automatisch eine importierte Bankzeile mit einer bestehenden Ausgabe, wenn die Zuordnung eindeutig ist. Kunden, Rechnungen und alles Unklare brauchen weiterhin Ihre Bestätigung.
 
 ## Benachrichtigungen
 
