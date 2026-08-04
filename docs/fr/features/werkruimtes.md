@@ -14,6 +14,7 @@ La page Espaces de travail (`/werkruimtes`) est un lieu central pour tout ce que
 - Ouvrez le selecteur d'espace de travail dans la barre laterale et choisissez **Gerer les espaces de travail**.
 - Des que vous avez plus d'un espace de travail, **Espaces de travail** apparait aussi directement dans la navigation de gauche.
 - L'ancienne URL `/boekhouder` redirige ici.
+- Le selecteur d'espace de travail affiche maintenant une ligne de synthese en haut. Vos propres entreprises et les administrations clientes sont regroupees separement, et un champ de recherche apparait des que la liste est assez longue pour que taper soit plus rapide que defiler.
 
 ## Si vous avez un seul espace de travail
 

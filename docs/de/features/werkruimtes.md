@@ -14,6 +14,7 @@ Die Seite "Arbeitsbereiche" unter `/werkruimtes` ist ein zentraler Ort fuer alle
 - Oeffnen Sie den Arbeitsbereich-Wechsler in der Seitenleiste und waehlen Sie **Arbeitsbereiche verwalten**.
 - Sobald Sie mehr als einen Arbeitsbereich haben, erscheint **Arbeitsbereiche** auch direkt in der linken Navigation.
 - Die alte URL `/boekhouder` leitet hierhin weiter.
+- Der Arbeitsbereich-Wechsler zeigt jetzt oben eine Uebersichtszeile. Eigene Unternehmen und Mandanten-Administrationen sind getrennt gruppiert, und sobald die Liste lang genug ist, erscheint ein Suchfeld, damit Tippen schneller ist als Scrollen.
 
 ## Wenn Sie einen Arbeitsbereich haben
 

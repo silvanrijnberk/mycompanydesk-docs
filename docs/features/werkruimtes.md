@@ -14,6 +14,7 @@ The Workspaces page at `/werkruimtes` is one central place for everything you ma
 - Open the workspace switcher in the left sidebar and choose **Werkruimtes beheren**.
 - When you hold more than one workspace, the left navigation also shows **Workspaces** directly.
 - The old `/boekhouder` URL redirects here.
+- The workspace switcher now shows an overview row at the top. Your own businesses and any client administrations are grouped separately, and a search field appears once the list is long enough to make scrolling slower than typing.
 
 ## If you have one workspace
 

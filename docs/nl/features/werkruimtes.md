@@ -14,6 +14,7 @@ De pagina Werkruimtes (`/werkruimtes`) is één centrale plek voor alles wat je 
 - Open de werkruimtekiezer in de zijbalk en kies **Werkruimtes beheren**.
 - Zodra je meer dan één werkruimte hebt, verschijnt **Werkruimtes** ook direct in de linker navigatie.
 - Het oude `/boekhouder`-adres verwijst hierheen door.
+- De werkruimtekiezer toont nu bovenaan een overzichtsregel. Eigen bedrijven en klantadministraties staan in aparte groepen, en zodra de lijst lang genoeg is om scrollen trager te maken dan typen, verschijnt er een zoekveld.
 
 ## Als je één werkruimte hebt
 
