@@ -60,6 +60,8 @@ La TVA a sa propre page avec des aperçus trimestriels et une assistance pour la
 
 Les rapports s'ouvrent par défaut dans une vue simple : revenus, dépenses et TVA due, sans jargon comptable. Passez à la vue comptable complète à tout moment pour voir le grand livre, le bilan, le compte de résultat et les comptes annuels. La vue complète est utile si vous travaillez avec un comptable ; vous n'en avez pas besoin pour votre propre déclaration.
 
+Le grand livre affiche chaque compte avec son code de référence RGS, le cas échéant. RGS (Referentie Grootboekschema) est le plan comptable standard néerlandais pour les entrepreneurs ; les codes facilitent l'alignement des lignes du grand livre avec un logiciel comptable prenant en charge RGS, pour vous et pour votre comptable.
+
 ### Export de l'auditfile (XAF)
 
 Dans la vue comptable complète, ouvrez les comptes annuels d'une année et choisissez **Auditfile (XAF)** pour télécharger un fichier XML Auditfile Financieel 4.0 néerlandais. Le fichier contient les mêmes données de fin d'exercice que les comptes annuels PDF, mais dans un format structuré que les logiciels comptables et l'administration fiscale néerlandaise (Belastingdienst) peuvent importer directement. Utile lorsque votre comptable demande les chiffres au format XAF, ou pour une déclaration électronique.

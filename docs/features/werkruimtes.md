@@ -76,7 +76,9 @@ The row chips and deep links work the same as in the combined workspace, but row
 
 ## Adding your own business
 
-Open **Bedrijf toevoegen** and give the new business a name. Each added business starts on its own 60-day Office trial. Clients, invoices, and bookkeeping stay completely separate between businesses.
+Open **Bedrijf toevoegen** and give the new business a name. The app shows the extra cost before you confirm, so you know what the new business adds to your subscription.
+
+Each added business gets its own administration with separate clients, invoices, and bookkeeping. During your Pro trial you pay nothing for the extra business; after the trial it is added to your subscription at the price shown in the confirmation.
 
 ## Manage or remove a business
 
@@ -85,6 +87,8 @@ For each of your own businesses, open the row menu and choose **Manage**. A draw
 ### Set a business to inactive
 
 Choose **Set inactive** when you stop working in a business but still need to keep its records. The administration stays readable and you can still export everything, because you are required to keep the books for the statutory retention period. You cannot add new invoices, expenses or customers, and the business no longer counts toward your subscription.
+
+The drawer states how much less you will pay per month or year before you confirm.
 
 To resume, open the same drawer and choose **Reactivate**.
 

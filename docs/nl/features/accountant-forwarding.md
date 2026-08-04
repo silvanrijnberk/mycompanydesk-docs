@@ -49,6 +49,10 @@ Alleen records die klaar zijn voor een boekhouder verlaten de werkruimte:
 
 De engine werkt op basis van een watermerk (`last_delivered_at`), niet op losse status-hooks, dus een record wordt nooit gemist omdat er later een nieuw betaalpad bijkomt.
 
+## Afleverlog en activiteit
+
+De pagina **Toegang en boekhouder** houdt een afleverlog bij met wat is doorgestuurd en wanneer. Daarnaast registreert het een activiteitsoverzicht van de gekoppelde boekhouder: wat deze heeft bekeken of gewijzigd in de werkruimte. Beide logs zijn zichtbaar voor eigenaars en team-admins; de boekhouder ziet het afleverlog maar kan het niet wissen.
+
 ## Gerelateerd
 
 - [Toegang en boekhouder](/nl/settings/team) voor het uitnodigen van je boekhouder en het kiezen van een contact

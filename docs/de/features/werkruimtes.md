@@ -76,7 +76,9 @@ Die Chips funktionieren wie im kombinierten Arbeitsbereich, aber die Zeilen verw
 
 ## Ein eigenes Unternehmen hinzufuegen
 
-Oeffnen Sie **Unternehmen hinzufuegen** und geben Sie dem neuen Unternehmen einen Namen. Jedes hinzugefuegte Unternehmen beginnt mit einer eigenen 60-taegigen Office-Testphase. Kunden, Rechnungen und Buchhaltung bleiben pro Unternehmen vollstaendig getrennt.
+Oeffnen Sie **Unternehmen hinzufuegen** und geben Sie dem neuen Unternehmen einen Namen. Die App zeigt die zusaetzlichen Kosten vor der Bestaetigung an, sodass Sie wissen, was das neue Unternehmen zu Ihrem Abonnement hinzufuegt.
+
+ Jedes hinzugefuegte Unternehmen erhaelt eine eigene Administration mit getrennten Kunden, Rechnungen und Buchhaltung. Waehrend Ihrer Pro-Testphase zahlen Sie nichts fuer das zusaetzliche Unternehmen; danach wird es zum in der Bestaetigung angezeigten Preis Ihrem Abonnement hinzugefuegt.
 
 ## Ein Unternehmen verwalten oder entfernen
 
@@ -85,6 +87,8 @@ Oeffnen Sie fuer jedes eigene Unternehmen das Zeilenmenue und waehlen Sie **Verw
 ### Unternehmen inaktiv setzen
 
 Waehlen Sie **Inaktiv setzen**, wenn Sie in einem Unternehmen nicht mehr arbeiten, aber die Unterlagen aufbewahren muessen. Die Administration bleibt lesbar und Sie koennen weiter alles exportieren, weil Sie die Buecher fuer die gesetzliche Aufbewahrungsfrist aufbewahren muessen. Sie koennen keine neuen Rechnungen, Ausgaben oder Kunden erfassen, und das Unternehmen wird nicht mehr fuer Ihr Abonnement gezaehlt.
+
+Die Schublade zeigt vorab an, wie viel Sie pro Monat oder pro Jahr weniger zahlen.
 
 Um fortzufahren, oeffnen Sie dieselbe Schublade und waehlen Sie **Reaktivieren**.
 

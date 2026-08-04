@@ -76,7 +76,9 @@ De chips en werken hetzelfde als in de gecombineerde werkruimte, maar rijen gebr
 
 ## Een eigen bedrijf toevoegen
 
-Open **Bedrijf toevoegen** en geef het nieuwe bedrijf een naam. Elk toegevoegd bedrijf start met een eigen proefperiode van 60 dagen. Klanten, facturen en boekhouding blijven per bedrijf volledig gescheiden.
+Open **Bedrijf toevoegen** en geef het nieuwe bedrijf een naam. De app toont de extra kosten voordat je bevestigt, zodat je weet wat het extra bedrijf aan je abonnement toevoegt.
+
+ Elk toegevoegd bedrijf krijgt een eigen administratie met aparte klanten, facturen en boekhouding. Tijdens je Pro-proefperiode betaal je niets voor het extra bedrijf; daarna wordt het tegen de prijs in de bevestiging aan je abonnement toegevoegd.
 
 ## Een bedrijf beheren of verwijderen
 
@@ -85,6 +87,8 @@ Open voor elk eigen bedrijf het rijmenu en kies **Beheren**. Er opent een zijpan
 ### Op non-actief zetten
 
 Kies **Op non-actief zetten** als je stopt met werken in een bedrijf maar de administratie moet bewaren. De administratie blijft leesbaar en je kunt alles blijven exporteren, omdat je de boeken voor de wettelijke bewaartermijn moet bewaren. Je kunt geen nieuwe facturen, uitgaven of klanten toevoegen, en het bedrijf telt niet meer mee voor je abonnement.
+
+Het zijpaneel vermeldt vooraf hoeveel je per maand of per jaar minder gaat betalen.
 
 Om verder te gaan, open je hetzelfde zijpaneel en kies je **Weer activeren**.
 

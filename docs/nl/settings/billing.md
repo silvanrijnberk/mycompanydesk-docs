@@ -103,6 +103,10 @@ Als een werkruimte naar Gratis vervalt, blijven de openbare website en sitebouwe
 
 Teamtoegang is inbegrepen in Pro zonder kosten per persoon: nodig zoveel meewerkende gebruikers uit als je wilt. Er zijn geen stoelprijzen en geen add-ons per stoel. Op Gratis en Starter werk je alleen, al kan je boekhouder altijd gratis toegang krijgen.
 
+### Extra bedrijven
+
+Je abonnement dekt je hoofdwerkruimte. Elk extra bedrijf dat je toevoegt, wordt tegen de prijs in rekening gebracht die voor bevestiging wordt getoond, en start met een eigen Pro-proefperiode. Tijdens de proefperiode kost het extra bedrijf niets; daarna wordt het tegen de getoonde prijs aan je abonnement toegevoegd. Je kunt een bedrijf op elk moment op non-actief zetten; het telt dan niet meer mee voor je abonnement, maar blijft leesbaar en exporteerbaar voor de wettelijke bewaartermijn.
+
 ## Stripe-portaal
 
 De knop **Abonnement beheren** (zichtbaar wanneer de werkruimte een actieve periode of niet-Gratis-abonnement heeft) opent een eenmalige Stripe Customer Portal-sessie. Vanuit het portaal kun je:

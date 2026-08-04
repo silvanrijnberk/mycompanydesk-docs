@@ -60,6 +60,8 @@ USt. hat eine eigene Seite mit Quartalsübersichten und Abgabe-Unterstützung. S
 
 Berichte öffnet standardmäßig in einer einfachen Ansicht: Einnahmen, Ausgaben und die geschuldete USt., ohne Buchhaltungsjargon. Schalten Sie jederzeit zur vollständigen Buchhaltungsansicht um, um das Hauptbuch, die Bilanz, die Gewinn- und Verlustrechnung und den Jahresabschluss zu sehen. Die vollständige Ansicht ist nützlich, wenn Sie mit einem Buchhalter arbeiten; für Ihre eigene Steuererklärung brauchen Sie sie nicht.
 
+Das Hauptbuch zeigt jedes Konto mit dem zugehörigen RGS-Referenzcode, soweit zutreffend. RGS (Referentie Grootboekschema) ist das niederländische Standardkontenrahmen für Unternehmer; die Codes erleichtern es Ihnen und Ihrem Buchhalter, Hauptbuchposten mit Buchhaltungssoftware abzugleichen, die RGS unterstützt.
+
 ### Auditfile-Export (XAF)
 
 In der vollständigen Buchhaltungsansicht öffnen Sie den Jahresabschluss eines Jahres und wählen **Auditfile (XAF)**, um eine niederländische XML Auditfile Financieel 4.0 herunterzuladen. Die Datei enthält dieselben Jahresabschlussdaten wie der PDF-Jahresabschluss, aber in einem strukturierten Format, das Buchhaltungsprogramme und das niederländische Finanzamt (Belastingdienst) direkt importieren können. Praktisch, wenn Ihr Buchhalter die Zahlen im XAF-Format benötigt, oder bei einer elektronischen Abgabe.

@@ -49,6 +49,10 @@ Only records that are ready for an accountant leave the workspace:
 
 The engine runs on a watermark (`last_delivered_at`), not on individual status hooks, so a record is never missed because a new payment path was added later.
 
+## Delivery log and activity
+
+The **Access & accountant** page keeps a delivery log showing what was forwarded and when. It also records an activity overview for the connected accountant: what they viewed or changed inside the workspace. Both logs are visible to workspace owners and team admins; the accountant can see the delivery log but cannot erase it.
+
 ## Related
 
 - [Access & accountant](/settings/team) for inviting your accountant and choosing a contact
