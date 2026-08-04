@@ -73,6 +73,15 @@ Er verschijnt een waarschuwingsbanner bovenaan de klantdetailpagina wanneer het 
 
 Deze informatie komt van provider-events en de bezorgstatus van uitgaande berichten, zodat je bezorgproblemen ziet voordat je de volgende factuur of offerte verstuurt.
 
+## Een klant koppelen aan een eigen bedrijf
+
+Als je meer dan een bedrijf hebt, kan op de klantdetailpagina een kaart **Eigen bedrijf** verschijnen. Daarmee geef je aan dat deze klant een van je eigen bedrijven is, zodat zijn positie wordt meegenomen in de onderlinge posities op Werkruimtes.
+
+- De kaart verschijnt alleen als je minstens twee eigen bedrijven hebt en de klant niet in de werkruimte staat die je nu bekijkt. Een bedrijf kan niet zijn eigen tegenpartij zijn.
+- Kies een van je eigen bedrijven in het dropdownmenu, of kies **Geen van mijn eigen bedrijven** om een koppeling te verwijderen.
+- De koppeling wordt automatisch gemaakt als het btw-nummer van de klant overeenkomt met een van je andere werkruimtes. De kaart toont dan een melding zodat je ziet dat het automatisch is gebeurd en het kunt corrigeren als het niet klopt.
+- Een handmatige koppeling wint altijd van een automatische. De automatische koppeling overschrijft nooit een koppeling die je zelf hebt gezet.
+
 ## Acties
 
 - **Bewerken** — Klantinformatie bijwerken

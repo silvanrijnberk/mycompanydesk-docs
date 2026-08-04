@@ -52,9 +52,14 @@ Vos propres entreprises utilisent les memes indicateurs que le tableau de bord d
 
 Si vos propres entreprises se facturent entre elles, chaque espace de travail ne voit normalement que sa propre moitie. La page Espaces de travail affiche maintenant la position nette entre chaque paire de vos propres entreprises, de sorte que le compte courant que vous teniez auparavant sur papier est visible dans l'application.
 
+Le bloc n'apparait que si au moins deux de vos propres entreprises ont effectivement des factures ouvertes l'une envers l'autre, et reste donc cache pour tous les autres. Il se situe entre l'apercu combine de vos entreprises et le bureau clients, car il decrit une relation entre vos entreprises et non une propriete d'une seule.
+
 - Les liens se creent automatiquement quand le numero de TVA d'un client correspond a l'un de vos autres espaces de travail. Cette correspondance ne regarde que vos propres entreprises, donc un client d'une autre entreprise n'est jamais atteint.
 - Si la correspondance automatique est incorrecte, ou si aucun numero de TVA n'est disponible, vous pouvez lier ou delier un client a la main depuis la page client. Un lien manuel prime toujours sur le lien automatique.
 - La position est le solde net des factures ouvertes entre les deux entreprises, deduit des paiements enregistres. Un chiffre positif signifie qu'une entreprise doit de l'argent a l'autre.
+- Chaque paire est formulee comme une phrase du cote qui a encore droit a l'argent, par exemple "[creancier] a [montant] a recevoir de [debiteur]". Si la balance va dans l'autre sens, la phrase inverse creancier et debiteur au lieu d'afficher le montant en negatif.
+- La ligne indique aussi de combien de factures ouvertes le montant est compose.
+- Quand plus d'une paire a un solde, la carte affiche en haut un total de toutes les positions inter-entreprises ouvertes.
 
 ## Espace de travail de cabinet : clients
 

@@ -73,6 +73,15 @@ A warning banner appears at the top of the customer detail page when the custome
 
 This information comes from provider events and outbound message delivery status, helping you spot delivery problems before sending the next invoice or quote.
 
+## Linking a customer to one of your own businesses
+
+If you own more than one business, a card titled **Eigen bedrijf** can appear on the customer detail page. It lets you say that this customer is one of your own companies, which is used to calculate the intercompany positions on the Workspaces page.
+
+- The card only appears when you own at least two businesses and the customer is not in the workspace you are currently viewing. A company cannot be its own counterparty.
+- Pick one of your own businesses from the dropdown, or choose **None of my own businesses** to remove a link.
+- Links are created automatically when the customer's VAT number matches one of your other workspaces. When this happens, the card shows a note so you can tell it was automatic and change it if it is wrong.
+- A manual link always wins over an automatic one. The automatic linker never overwrites a link you set by hand.
+
 ## Actions
 
 - **Edit** — Update customer information

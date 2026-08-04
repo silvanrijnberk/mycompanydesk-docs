@@ -73,6 +73,15 @@ Ein Warnbanner erscheint oben auf der Kundendetailseite, wenn die E-Mail-Adresse
 
 Diese Informationen stammen von Provider-Ereignissen und dem Zustellstatus ausgehender Nachrichten und helfen Ihnen, Zustellprobleme zu erkennen, bevor Sie die nächste Rechnung oder das nächste Angebot versenden.
 
+## Einen Kunden mit einem eigenen Unternehmen verknüpfen
+
+Wenn Sie mehr als ein eigenes Unternehmen haben, kann auf der Kundenseite eine Karte **Eigenes Unternehmen** erscheinen. Damit geben Sie an, dass dieser Kunde eines Ihrer eigenen Unternehmen ist, sodass seine Position in die untereinander-Positionen auf der Seite Arbeitsbereiche einfließt.
+
+- Die Karte erscheint nur, wenn Sie mindestens zwei eigene Unternehmen haben und der Kunde nicht in dem Arbeitsbereich steht, den Sie gerade betrachten. Ein Unternehmen kann nicht seine eigene Gegenpartei sein.
+- Wählen Sie eines Ihrer eigenen Unternehmen aus dem Dropdown, oder wählen Sie **Keines meiner eigenen Unternehmen**, um eine Verknüpfung zu entfernen.
+- Die Verknüpfung wird automatisch erstellt, wenn die USt.-Nummer des Kunden mit einem Ihrer anderen Arbeitsbereiche übereinstimmt. Die Karte zeigt dann einen Hinweis, damit Sie erkennen, dass es automatisch passiert ist, und es korrigieren können, wenn es nicht stimmt.
+- Eine manuelle Verknüpfung hat immer Vorrang vor einer automatischen. Die automatische Verknüpfung überschreibt nie eine Verknüpfung, die Sie selbst gesetzt haben.
+
 ## Aktionen
 
 - **Bearbeiten** — Kundeninformationen aktualisieren
