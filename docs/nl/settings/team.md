@@ -1,6 +1,6 @@
 ---
 title: Toegang en boekhouder
-last_verified: 2026-07-02
+last_verified: 2026-08-04
 ---
 
 # Toegang en boekhouder
@@ -53,6 +53,14 @@ Een aparte lijst voor externe boekhouders, gratis op elk abonnement. Je boekhoud
 
 Adminacties per rij: **Boekhouder uitnodigen**, het paneel **Toegang beheren** en **Verwijderen**.
 
+## Automatisch aanleveren aan je boekhouder
+
+Zodra een boekhouder is gekoppeld, kun je MyCompanyDesk automatisch een kwartaalexport laten aanleveren. De export bundelt verkoopfacturen, uitgaven en een btw-overzicht in een formaat dat het pakket van je boekhouder kan inlezen, zodat de cijfers niet overgetypt hoeven te worden.
+
+Open de rij van de boekhouder in **Instellingen → Toegang en boekhouder**, kies **Automatisch doorsturen**, selecteer de onderdelen die je wilt meesturen (bijvoorbeeld verkoopfacturen, uitgaven en een btw-overzicht), het moment van afleveren en het formaat. Een afleverlog toont wat wanneer is verstuurd.
+
+<!-- TODO(source-missing): bevestig het abonnement dat automatisch doorsturen ontgrendelt en de ondersteunde exportformaten/profielen -->
+
 ## Rollen
 
 | Rol | Beschrijving |
@@ -87,6 +95,8 @@ Admins kunnen de passkeys of tweestapsverificatie van een ander lid niet beheren
 ## Wisselen tussen werkruimtes
 
 Open het werkruimtemenu in de zijbalkkop om tussen werkruimtes te springen, je abonnement te bekijken of een nieuwe aan te maken.
+
+Als je toegang hebt tot meer dan één werkruimte, linkt het menu ook naar het overzicht **Werkruimtes** op `/werkruimtes`. Daar zie je alle werkruimtes die jij bezit of beheert als boekhouder, met deadlines en openstaande zaken per werkruimte, en je opent de juiste werkruimte in één klik.
 
 ## Abonnementen in het kort
 
