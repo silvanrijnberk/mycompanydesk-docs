@@ -1,6 +1,6 @@
 ---
 title: Zugang und Steuerberater
-last_verified: 2026-07-02
+last_verified: 2026-08-04
 ---
 
 # Zugang und Steuerberater
@@ -53,6 +53,14 @@ Eine separate Liste für externe Steuerberater, in jedem Tarif kostenlos. Ihr St
 
 Admin-Aktionen pro Zeile: **Steuerberater einladen**, das Panel **Zugang verwalten** und **Entfernen**.
 
+## Automatische Zustellung an Ihren Steuerberater
+
+Sobald ein Steuerberater verknüpft ist, können Sie MyCompanyDesk automatisch ein Quartalsexport zustellen lassen. Der Export bündelt Verkaufsrechnungen, Ausgaben und eine Mehrwertsteuer-Übersicht in einem Format, das die Software Ihres Steuerberaters einlesen kann, sodass die Zahlen nicht neu eingetippt werden müssen.
+
+Öffnen Sie die Zeile des Steuerberaters unter **Einstellungen → Zugang und Steuerberater**, wählen Sie **Automatisch zustellen**, legen Sie fest, welche Bereiche enthalten sein sollen (zum Beispiel Verkaufsrechnungen, Ausgaben und eine Mehrwertsteuer-Übersicht), den Auslöserzeitpunkt und das Format. Ein Zustellungsprotokoll zeigt, was wann gesendet wurde.
+
+<!-- TODO(source-missing): Bestätigung des Tarifs/Entitlements, das automatisches Zustellen freischaltet, und der unterstützten Exportformate/Profile -->
+
 ## Rollen
 
 | Rolle | Beschreibung |
@@ -87,6 +95,8 @@ Admins können die Passkeys oder Zwei-Schritt-Verifizierung eines anderen Mitgli
 ## Arbeitsbereiche wechseln
 
 Öffnen Sie das Arbeitsbereich-Menü im Kopf der Seitenleiste, um zwischen Arbeitsbereichen zu wechseln, das Abonnement anzusehen oder einen neuen anzulegen.
+
+Wenn Sie Zugriff auf mehr als einen Arbeitsbereich haben, verlinkt das Menü auch zur Übersicht **Arbeitsbereiche** unter `/werkruimtes`. Diese Seite listet alle Arbeitsbereiche, die Sie besitzen oder als Steuerberater verwalten, hebt Fristen und offene Posten pro Arbeitsbereich hervor und lässt Sie den richtigen Arbeitsbereich mit einem Klick öffnen.
 
 ## Tarife im Überblick
 
