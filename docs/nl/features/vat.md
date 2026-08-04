@@ -28,6 +28,8 @@ Boven de herokaart waarschuwt een banner wanneer je gegevens onvolledig zijn (co
 
 MyCompanyDesk stuurt je ook één keer per BTW-periode een e-mail als de aangiftedeadline nadert. De mail linkt direct naar de BTW-pagina en volgt je BTW-deadlines-schakelaar in Instellingen → Meldingen, dus je zet hem daar uit.
 
+Als je bedrijf een Nederlandse BV of NV is, stuurt dezelfde BTW-deadlines-schakelaar ook één keer per jaar een herinnering voor de deadline van de vennootschapsbelastingaangifte. De melding verschijnt in het meldingenpaneel en wordt per e-mail verstuurd.
+
 ## Tabblad Overzicht
 
 ### Kwartaalstrook

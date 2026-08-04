@@ -48,6 +48,14 @@ Each business row shows chips for the things that need attention right now. Ever
 
 Your own businesses use the same KPIs as the dashboard of each individual workspace, so the numbers cannot disagree.
 
+## Intercompany positions (Onderling)
+
+If your own businesses invoice each other, each workspace normally only sees its own half. The Workspaces page now shows the net position between every pair of your own businesses, so the rekening-courant you used to keep on paper is visible in the app.
+
+- Links are created automatically when a customer's VAT number matches one of your other workspaces. That match only ever looks at your own businesses, so a customer of someone else is never reached.
+- If the automatic match is wrong, or if no VAT number is available, you can link or unlink a customer by hand from the customer page. A manual link always wins over the automatic one.
+- The position is the net balance across open invoices between the two businesses, net of posted payments. A positive number means one business owes the other.
+
 ## Kantoor workspace: client administrations
 
 If you are an accountant managing client administrations, the page becomes a triage desk:

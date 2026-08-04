@@ -28,6 +28,8 @@ Au-dessus de la carte, un bandeau vous avertit quand vos données sont incomplè
 
 MyCompanyDesk vous envoie aussi un e-mail une fois par période de TVA à l'approche de l'échéance de déclaration. L'e-mail renvoie directement vers la page TVA et suit votre interrupteur d'échéances de TVA dans Paramètres → Notifications; vous pouvez le désactiver dans ce menu.
 
+Si votre entreprise est une BV ou une NV néerlandaise, le même interrupteur d'échéances de TVA envoie aussi un rappel une fois par an avant l'échéance de déclaration de l'impôt sur les sociétés (vennootschapsbelasting). Le rappel apparaît dans le panneau de notifications et est envoyé par e-mail.
+
 ## Onglet Aperçu
 
 ### Bande des trimestres

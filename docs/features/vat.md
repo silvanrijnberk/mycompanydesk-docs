@@ -29,6 +29,8 @@ A banner above the hero warns when your data is incomplete (draft invoices or ex
 
 MyCompanyDesk also emails you once per VAT period as the filing deadline approaches. The email links straight to the VAT page and follows your VAT deadlines toggle in Settings → Notifications, so you can turn it off there.
 
+If your company is a Dutch BV or NV, the same VAT deadlines toggle also sends a once-per-year reminder ahead of the corporate income tax (vennootschapsbelasting) filing deadline. The reminder appears in the notification panel and is sent by email.
+
 ## Overview tab
 
 ### Quarter strip

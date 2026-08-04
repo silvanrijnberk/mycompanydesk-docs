@@ -28,6 +28,8 @@ Unter dem Saldo stehen zwei Schaltflächen: **Erklärung öffnen** springt zum R
 
 MyCompanyDesk sendet Ihnen auch einmal pro USt.-Zeitraum eine E-Mail, wenn die Abgabefrist naht. Die E-Mail verlinkt direkt zur USt.-Seite und folgt Ihrem USt.-Fristen-Schalter unter Einstellungen → Benachrichtigungen, sodass Sie sie dort deaktivieren können.
 
+Wenn Ihr Unternehmen eine niederländische BV oder NV ist, sendet derselbe USt.-Fristen-Schalter auch einmal pro Jahr eine Erinnerung vor der Abgabefrist für die Körperschaftsteuer (vennootschapsbelasting). Die Benachrichtigung erscheint im Benachrichtigungsbereich und wird per E-Mail versendet.
+
 ## Reiter Übersicht
 
 ### Quartalsleiste
