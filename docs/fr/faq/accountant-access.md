@@ -1,6 +1,6 @@
 ---
 title: "Accès du comptable"
-last_verified: 2026-08-03
+last_verified: 2026-08-04
 chatbot:
   triggers:
     - "accountant access"
@@ -58,6 +58,10 @@ Une fois que votre comptable a accès, son portail comptable affiche un tableau 
 - Les administrations dont la comptabilité est en ordre affichent "Loopt goed".
 
 Votre comptable clique sur une administration pour ouvrir directement son espace de travail avec les permissions que vous avez définies. Il ne voit que les pages que vous avez autorisées et peut inviter ou gérer des administrations depuis le même écran.
+
+## Livraison automatique
+
+Une fois votre comptable connecté, allez dans **Paramètres → Accès et comptable** et activez la livraison automatique. MyCompanyDesk envoie alors chaque trimestre un export avec les factures de vente, les dépenses et un récapitulatif de TVA dans un format compatible, afin que les chiffres n'aient pas à être retranscrits manuellement. Vous choisissez vous-même les flux inclus et consultez un journal des livraisons effectuées.
 
 ## Gérer plusieurs entreprises
 

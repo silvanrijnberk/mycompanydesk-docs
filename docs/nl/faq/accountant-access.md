@@ -1,6 +1,6 @@
 ---
 title: "Boekhouder toegang geven"
-last_verified: 2026-08-03
+last_verified: 2026-08-04
 chatbot:
   triggers:
     - "accountant access"
@@ -37,6 +37,10 @@ Er zijn twee manieren waarop boekhoudertoegang kan beginnen: jij nodigt je boekh
 4. Open "Toegang beheren" om de paginarechten in te stellen
 
 Boekhoudertoegang is gratis op elk abonnement; er is geen Pro of teamplek voor nodig. Veelvoorkomende statussen zijn alleen contact, uitgenodigd, actief en ingetrokken.
+
+## Automatisch aanleveren
+
+Nadat je boekhouder is gekoppeld, ga je naar **Instellingen → Toegang en boekhouder** en zet je automatisch doorsturen aan. MyCompanyDesk levert dan elk kwartaal een export met verkoopfacturen, uitgaven en een btw-overzicht in een formaat dat het pakket van je boekhouder inleest, zodat de cijfers niet handmatig hoeven te worden overgenomen. Je kiest zelf welke onderdelen worden meegestuurd en ziet in een log wat er is afgeleverd.
 
 ## Je boekhouder nodigt jou uit
 

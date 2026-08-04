@@ -1,6 +1,6 @@
 ---
 title: Access & accountant
-last_verified: 2026-07-02
+last_verified: 2026-08-04
 ---
 
 # Access & accountant
@@ -53,6 +53,14 @@ A separate list for external accountants, free on every plan. Your accountant ca
 
 Admin actions per row: **Invite accountant**, **Manage access** drawer, **Remove**.
 
+## Automatic delivery to your accountant
+
+Once an accountant is connected, you can have MyCompanyDesk deliver a quarterly export automatically. The export bundles sales invoices, expenses and a VAT summary in a format your accountant's software can import, so the data does not have to be retyped.
+
+Open the accountant row in **Settings → Toegang en boekhouder**, choose **Automatic delivery**, pick the streams you want to include (for example sales invoices, expenses and a VAT summary), the trigger moment, and the format. A delivery log shows what was sent and when.
+
+<!-- TODO(source-missing): confirm the exact entitlement that gates automatic delivery and the supported export formats/profiles -->
+
 ## Roles
 
 | Role | Description |
@@ -87,6 +95,8 @@ Admins cannot manage another member's passkeys or two-step verification; those a
 ## Switching workspaces
 
 Open the workspace menu in the sidebar header to jump between workspaces, open subscription details, or create a new one.
+
+If you have access to more than one workspace, the menu also links to the **Workspaces** overview at `/werkruimtes`. That page lists every workspace you own or manage as an accountant, highlights deadlines and open items per workspace, and lets you open the right workspace in one click.
 
 ## Plan gating quick reference
 

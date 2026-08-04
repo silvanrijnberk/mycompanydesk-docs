@@ -1,6 +1,6 @@
 ---
 title: "Zugang für den Steuerberater"
-last_verified: 2026-08-03
+last_verified: 2026-08-04
 chatbot:
   triggers:
     - "accountant access"
@@ -27,7 +27,7 @@ chatbot:
     - "What happens when my accountant invites me?"
 ---
 
-Es gibt zwei Wege, wie der Steuerberater-Zugang starten kann: Sie laden Ihren Steuerberater aus Ihrem eigenen Arbeitsbereich ein, oder Ihr Steuerberater ladt Sie ein, um aus seinem Steuerberater-Portal ein Konto zu erstellen.
+Es gibt zwei Wege, wie der Steuerberater-Zugang starten kann: Sie laden Ihren Steuerberater aus Ihrem eigenen Arbeitsbereich ein, oder Ihr Steuerberater lädt Sie ein, um aus seinem Steuerberater-Portal ein Konto zu erstellen.
 
 ## Sie laden Ihren Steuerberater ein
 
@@ -58,6 +58,10 @@ Hat Ihr Steuerberater Zugang, sieht er in seinem Steuerberater-Portal eine Triag
 - Administrationen, die im Plan liegen, erhalten den Hinweis "Loopt goed".
 
 Ihr Steuerberater klickt auf eine Administration, um direkt in deren Arbeitsbereich mit den von Ihnen festgelegten Berechtigungen zu springen. Er sieht nur die Seiten, die Sie freigegeben haben, und kann von derselben Maske aus Administrationen einladen oder verwalten.
+
+## Automatische Zustellung
+
+Sobald Ihr Steuerberater verknüpft ist, gehen Sie zu **Einstellungen → Zugang und Steuerberater** und schalten Sie die automatische Zustellung ein. MyCompanyDesk liefert dann jedes Quartal einen Export mit Verkaufsrechnungen, Ausgaben und einer Mehrwertsteuer-Übersicht in einem kompatiblen Format, sodass die Zahlen nicht manuell übernommen werden müssen. Sie wählen selbst, welche Bereiche enthalten sind, und sehen in einem Protokoll, was zugestellt wurde.
 
 ## Mehrere Unternehmen verwalten
 

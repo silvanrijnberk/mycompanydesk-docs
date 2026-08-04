@@ -1,6 +1,6 @@
 ---
 title: "Accountant access"
-last_verified: 2026-08-03
+last_verified: 2026-08-04
 chatbot:
   triggers:
     - "accountant access"
@@ -37,6 +37,10 @@ There are two ways accountant access can start: either you invite your accountan
 4. Open Manage access to set page permissions
 
 Accountant access is free on every plan; it does not require Pro or a team seat. Common statuses are contact-only, invited, active, and revoked.
+
+## Automatic delivery
+
+After your accountant is connected, go to **Settings → Toegang en boekhouder** and turn on automatic delivery. MyCompanyDesk then sends your accountant a quarterly export with sales invoices, expenses and a VAT summary in a compatible format, so the figures do not have to be entered by hand. You choose which streams to include and can see a log of what was delivered.
 
 ## Your accountant invites you
 
