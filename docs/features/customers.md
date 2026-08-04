@@ -112,16 +112,15 @@ Import your existing customer database from CSV:
 
 Export your customer list as CSV from the customers page (Starter plan and above).
 
+## Lapsed customers
+
+The [Reports > Clients > Lapsed](/features/reports) tab lists customers who bought before but have not had an invoice this year. The view shows the count, their previous total spend, and the date of their last invoice, with links to call or email each customer directly. It lives inside Reports because reactivating old customers is campaign-style work, not an item that fits an urgency-sorted feed.
+
+The standard customer list also segments inactive customers itself; the Lapsed tab adds the campaign-style reminder without replacing that filter.
+
 ## Tips
 
 - Keep customer emails up to date — they're used for invoice delivery
 - Use the search bar for instant fuzzy matching across all customer fields
 - Pin your most important customers as favorites for quick access
 - Assign VAT numbers to enable reverse charge on B2B invoices
-
-
-## Growth context
-
-The [Growth](/features/groei) page surfaces customers who bought before but have not had an invoice this year. The card shows the count, their previous total spend, and the date of their last invoice, with a link back to the customer list so you can follow up.
-
-The standard customer list also segments inactive customers itself; Growth adds the campaign-style reminder without replacing that filter.

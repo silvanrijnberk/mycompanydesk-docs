@@ -69,4 +69,4 @@ Wenn Sie mehr als ein Unternehmen führen, oder wenn Ihr Steuerberater mehrere A
 
 Wenn Sie mehr als eine Administration haben, erscheint in der linken Navigation auch **Arbeitsbereiche** als direkter Link zur Triage-Übersicht.
 
-Steuerberater, die von einem Kunden eingeladen wurden, sehen diese verwalteten Arbeitsbereiche neben ihrem eigenen Unternehmen. Siehe [Wachstum](/de/features/groei) und [Dashboard](/de/features/dashboard) für die Darstellung von Arbeit über Administrationen hinweg.
+Steuerberater, die von einem Kunden eingeladen wurden, sehen diese verwalteten Arbeitsbereiche neben ihrem eigenen Unternehmen. Siehe [Berichte](/de/features/reports) und [Dashboard](/de/features/dashboard) für die Darstellung von Arbeit über Administrationen hinweg.

@@ -70,4 +70,4 @@ If you run more than one business, or your accountant manages multiple administr
 
 When you have more than one administration, the left navigation also shows **Workspaces** as a direct link to the triage desk.
 
-Accountants invited by a client see those managed workspaces alongside their own business. See [Growth](/features/groei) and [Dashboard](/features/dashboard) for how work is shown across administrations.
+Accountants invited by a client see those managed workspaces alongside their own business. See [Reports](/features/reports) and [Dashboard](/features/dashboard) for how work is shown across administrations.

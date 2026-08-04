@@ -69,4 +69,4 @@ Als je meer dan één bedrijf runt, of als je boekhouder meerdere administraties
 
 Als je meer dan één administratie hebt, verschijnt in de linker navigatie ook **Werkruimtes** als directe link naar het triage-overzicht.
 
-Boekhouders die door een klant zijn uitgenodigd, zien die beheerde werkruimtes naast hun eigen bedrijf. Zie [Groei](/nl/features/groei) en [Dashboard](/nl/features/dashboard) voor hoe werk over administraties heen wordt getoond.
+Boekhouders die door een klant zijn uitgenodigd, zien die beheerde werkruimtes naast hun eigen bedrijf. Zie [Rapporten](/nl/features/reports) en [Dashboard](/nl/features/dashboard) voor hoe werk over administraties heen wordt getoond.

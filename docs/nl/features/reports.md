@@ -4,21 +4,21 @@ title: Rapporten
 
 # Rapporten
 
-Krijg inzicht in hoe je bedrijf ervoor staat met vijf gerichte rapportweergaven en een overzicht dat alles samenbrengt. Grafieken zijn direct in elke weergave ingebouwd, dus elk rapport combineert cijfers en beeld op een plek.
+Begrijp hoe je bedrijf ervoor staat met vijf gerichte rapportweergaven en een overzicht dat ze samenbrengt. Grafieken zitten direct in elke weergave, zodat elk rapport cijfers en beelden op één plek combineert.
 
-## Rapporten openen
+## Navigeren
 
-Ga naar **Rapporten** in de zijbalk. Op desktop wissel je van weergave via de tabbladen bovenaan; op mobiel gebruik je de weergavekiezer of veeg je naar links en rechts tussen de weergaven.
+Ga in de zijbalk naar **Rapporten**. Op desktop wissel je van weergave met de tabbalk bovenaan; op mobiel gebruik je de weergavekiezer of veeg je links en rechts tussen weergaven.
 
 ## Rapportweergaven
 
 ### Overzicht
 
-De startweergave brengt je belangrijkste cijfers samen voor de gekozen periode:
+Het landingsoverzicht brengt je belangrijkste cijfers samen voor de geselecteerde periode:
 
-- Kerncijfers: omzet, winst met marge, openstaande facturen, geschreven uren en uitgaven
-- Een financiele overzichtsgrafiek (per maand of per kwartaal)
-- Een ouderdomsoverzicht van onbetaalde facturen, met een snelkoppeling om herinneringen te sturen
+- Kopcijfers: omzet, winst met marge, openstaande facturen, geregistreerde uren en uitgaven
+- Een financieel overzichtsdiagram (per maand of kwartaal)
+- Een verouderingsoverzicht van onbetaalde facturen, met een snelkoppeling om herinneringen te versturen
 - Je grootste klanten op omzet
 - Inzichtkaarten die aandachtspunten signaleren, zoals achterstallige facturen of een krappe winstmarge
 
@@ -26,51 +26,53 @@ Elk blok linkt door naar het bijbehorende gedetailleerde rapport.
 
 ### Winst & verlies
 
-De weergave **Winst & verlies** toont je resultaat via drie invalshoeken die je bovenaan wisselt:
+De weergave **Winst & verlies** toont je resultaat door drie lenzen die je bovenaan wisselt:
 
 - **Winst**: omzet min uitgaven, marges en hoe die zich ontwikkelen
 - **Omzet**: inkomsten per periode, trends en vergelijkingen
-- **Uitgaven**: waar je geld naartoe gaat, uitgesplitst per categorie
+- **Uitgaven**: waar je geld naartoe gaat, opgesplitst per categorie
 
 ### Cashflow
 
-Volg de echte geldstromen: geld dat binnenkomt uit betalingen, geld dat uitgaat aan uitgaven, het nettoresultaat en je lopende saldo over tijd.
+Volg de werkelijke geldstroom: binnenkomende betalingen, uitgaande uitgaven, het nettoresultaat en je lopende saldo over tijd.
 
 ### Klanten
 
-Analyseer je klantenbestand in twee tabbladen:
+Analyseer je klantenbestand in drie tabbladen:
 
 - **Activiteit**: omzet per klant, klantrangschikking en factuurpatronen
 - **Openstaand**: onbetaalde facturen per klant, hoe lang ze openstaan en wat achterstallig is
+- **Weggebleven**: klanten die eerder kochten maar dit jaar nog geen factuur hebben gekregen. De weergave toont het aantal, wat ze eerder samen besteedden, de datum van hun laatste factuur en snelle acties om elke klant te bellen of te mailen. Het is campagne-werk, dus het staat in een rapport in plaats van in de op urgentie gesorteerde dashboard-briefing.
 
 ### Prognose
 
-Bekijk waar je cijfers naartoe gaan, op basis van terugkerende facturatie, openstaande facturen en je recente tempo. Wissel de horizon tussen **3 maanden**, **6 maanden** en **12 maanden** en zie de verwachte omzet, uitgaven, winst en je financiele buffer.
+Zie waar je cijfers naartoe gaan, gebaseerd op terugkerende facturen, openstaande facturen en je recente trend. Schakel de horizon tussen **3 maanden**, **6 maanden** en **12 maanden** om verwachte omzet, uitgaven, winst en je cash-runway te zien.
 
 ### Inkomstenbelasting
 
-De weergave **Inkomstenbelasting** maakt een schatting van de inkomstenbelasting voor het gekozen jaar: brutowinst, zelfstandigenaftrek en mkb-winstvrijstelling, belastbaar inkomen, de belastingschijven, geschatte belasting, winst na belasting en hoeveel je opzij zet. Heb je een BV, dan zie je in plaats daarvan een schatting van de vennootschapsbelasting. Zie het als hulpmiddel om geld te reserveren, niet als aangifte.
+De weergave **Inkomstenbelasting** schat de inkomstenbelasting voor het geselecteerde jaar: brutowinst, de zelfstandigenaftrek en de mkb-winstvrijstelling, belastbaar inkomen, de belastingschijven, geschatte belasting, winst na belasting en het bedrag dat je moet reserveren. Als je bedrijf een BV is, toont hij in plaats daarvan een geschatte vennootschapsbelasting. Zie het als hulpmiddel om geld te reserveren, niet als aangifte.
 
 ### Op zoek naar het BTW-rapport?
 
-BTW heeft een eigen pagina met kwartaaloverzichten en aangiftehulp. Zie [BTW-beheer](/nl/features/vat).
+BTW heeft een eigen pagina met kwartaaloverzichten en aangifte-ondersteuning. Zie [BTW-beheer](/nl/features/vat).
 
 ## Boekhoudweergave
 
-Rapporten opent standaard in een eenvoudige weergave: inkomsten, uitgaven en de BTW die je moet betalen, zonder boekhoudjargon. Je schakelt met een klik naar de volledige boekhoudersweergave voor grootboek, balans, winst-en-verliesrekening en jaarrekening. Die weergave is handig als je samenwerkt met een boekhouder; voor je eigen aangifte heb je hem niet nodig.
+Rapporten opent standaard in een eenvoudige weergave: inkomsten, uitgaven en de BTW die je verschuldigd bent, zonder boekhoudjargon. Schakel op elk moment naar de volledige boekhoudersweergave om het grootboek, de balans, de winst-en-verliesrekening en de jaarrekening te zien. De volledige weergave is handig als je met een boekhouder werkt; je hebt hem niet nodig voor je eigen aangifte.
 
 ## Filters
 
-Open het paneel **Filters** met de knop bovenaan de rapportenpagina. De filters gelden voor elke rapportweergave:
+Open het **Filters**-paneel met de knop bovenaan de rapportenpagina. De filters gelden voor elke rapportweergave:
 
-- **Periode**: kies de granulariteit (**Jaar**, **Kwartaal**, **Maand**, **Week** of **Dag**), met een bijpassende kiezer voor de gekozen granulariteit
+- **Periode**: kies de granulariteit (**Jaar**, **Kwartaal**, **Maand**, **Week** of **Dag**), met een bijbehorende kiezer voor de gekozen granulariteit
 - **Jaar**: het rapportagejaar
-- **Vergelijken met**: zet vergelijken aan en kies een **Vergelijk jaar** om verschillen tussen periodes te zien
-- **Inclusief open facturen**: bepaal of onbetaalde facturen meetellen als omzet
+- **Vergelijk met**: schakel vergelijking in en kies een **Vergelijkingsjaar** om periode-over-periode-wijzigingen te zien
+- **Inclusief openstaande facturen**: schakel in of onbetaalde facturen meetellen voor de omzet
 
 ## Tips
 
-- Gebruik de vergelijkingsmodus om trends en seizoenspatronen te herkennen
+- Gebruik vergelijkingsmodus om trends en seizoenspatronen te zien
 - Controleer het tabblad **Openstaand** onder Klanten regelmatig om achterstallige facturen op te volgen
+- Bekijk het tabblad **Weggebleven** elk kwartaal om te zien welke vroegere klanten je terug zou kunnen winnen
 - Bekijk Winst & verlies maandelijks om je marges te begrijpen
 - Werp elk kwartaal een blik op **Inkomstenbelasting**, zodat het te reserveren bedrag je nooit verrast

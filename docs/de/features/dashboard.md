@@ -77,13 +77,11 @@ Jedes Feed-Element zeigt die Entitaet, den Betrag und kontextuelle Details. Der 
 Solange der Einrichtungsassistent unter `/setup` noch Felder zu fuellen hat, steht ein `FinishSetupBanner` oben auf dem Dashboard mit einer Zaehlung der ausstehenden Felder und einem **Weiter**-Button. Der Banner hat eine Schliessen-Schaltflaeche (X-Symbol), die den Banner pro Browser ueber localStorage ausblendet, sodass er ueber Seitenneuladungen hinweg ausgeblendet bleibt, bis der Assistent abgeschlossen ist. Der Assistent ist nicht blockierend: neue Anmeldungen landen direkt auf `/dashboard` und werden nicht zwangsumgeleitet.
 
 
-## Wachstum
+## Gute Nachrichten
 
-Wachstum (`/groei`) ist über die linke Navigation als eigene Seite erreichbar. Hier bleibt kampagnenartige Arbeit sichtbar (Angebotsanfragen über die Website, Angebote auf Antwort, ablaufende Angebote und abgewanderte Kunden) ohne die nach Dringlichkeit sortierte Dashboard-Briefing zu verdrängen.
-
-Die zwei Signale, die wirklich heute-Aktionen sind, erscheinen auch im Dashboard-Tab **Gute Nachrichten**:
+Im Dashboard-Tab **Gute Nachrichten** werden positive Signale hervorgehoben, auf die es sich heute zu handeln lohnt:
 
 - **Offene Anfragen**: wie viele Angebotsanfragen über die Website auf Antwort warten, plus die längste Wartezeit.
 - **Ablaufende Angebote**: wie viele Angebote diese Woche ablaufen, und wie viele bereits ohne Antwort abgelaufen sind.
 
-Die anderen Wachstum-Karten, wie abgewanderte Kunden, stehen nur auf der Seite Wachstum. Siehe [Wachstum](/de/features/groei) für Details.
+Angebotsanfragen und ablaufende Angebote finden sich auch auf den jeweiligen Detailseiten. Abgewanderte Kunden — Kunden, die früher gekauft haben, aber dieses Jahr noch keine Rechnung erhalten haben — stehen in **Berichte > Kunden > Abgewanderte**. Siehe [Berichte](/de/features/reports) und [Kunden](/de/features/customers).

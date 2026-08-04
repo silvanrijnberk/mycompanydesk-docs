@@ -112,14 +112,15 @@ Importieren Sie Ihre bestehende Kundendatenbank aus CSV:
 
 Exportieren Sie Ihre Kundenliste als CSV von der Kundenseite (Pro-Tarif und höher).
 
+## Abgewanderte Kunden
+
+Die Registerkarte [Berichte > Kunden > Abgewanderte](/de/features/reports) listet Kunden, die früher gekauft haben, aber dieses Jahr noch keine Rechnung erhalten haben. Die Ansicht zeigt die Anzahl, wie viel sie früher zusammen ausgegeben haben, und das Datum ihrer letzten Rechnung, mit Links, um jeden Kunden direkt anzurufen oder per E-Mail zu kontaktieren. Sie lebt in Berichte, weil die Reaktivierung alter Kunden kampagnenartige Arbeit ist, die nicht in einen nach Dringlichkeit sortierten Feed passt.
+
+Die Standard-Kundenliste segmentiert ebenfalls inaktive Kunden selbst; die Registerkarte Abgewanderte fügt den kampagnenartigen Hinweis hinzu, ohne diesen Filter zu ersetzen.
+
 ## Tipps
 
 - Halten Sie Kunden-E-Mails aktuell — sie werden für den Rechnungsversand verwendet
 - Verwenden Sie die Suchleiste für sofortigen unscharfen Abgleich über alle Kundenfelder
 - Setzen Sie Ihre wichtigsten Kunden als Favoriten für schnellen Zugriff
 
-## Wachstum-Kontext
-
-Die Seite [Wachstum](/de/features/groei) hebt Kunden hervor, die früher gekauft haben, aber dieses Jahr noch keine Rechnung erhalten haben. Die Karte zeigt die Anzahl, wie viel sie früher zusammen ausgegeben haben und das Datum ihrer letzten Rechnung, mit einem Link zurück zur Kundenliste, damit Sie nachfassen können.
-
-Die Standard-Kundenliste segmentiert ebenfalls inaktive Kunden selbst; Wachstum fügt den kampagnenartigen Hinweis hinzu, ohne diesen Filter zu ersetzen.

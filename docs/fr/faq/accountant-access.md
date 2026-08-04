@@ -69,4 +69,4 @@ Si vous gérez plusieurs entreprises, ou si votre comptable gère plusieurs admi
 
 Lorsque vous avez plus d'une administration, la navigation de gauche affiche aussi **Espaces de travail** comme lien direct vers le tableau de triage.
 
-Les comptables invités par un client voient ces espaces de travail administrés à côté de leur propre entreprise. Voir [Croissance](/fr/features/groei) et [Tableau de bord](/fr/features/dashboard) pour savoir comment le travail est présenté entre administrations.
+Les comptables invités par un client voient ces espaces de travail administrés à côté de leur propre entreprise. Voir [Rapports](/fr/features/reports) et [Tableau de bord](/fr/features/dashboard) pour savoir comment le travail est présenté entre administrations.
