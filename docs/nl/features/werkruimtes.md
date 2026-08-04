@@ -48,6 +48,14 @@ Elke bedrijfsrij toont chips voor wat er nu aandacht vraagt. Elke chip is een li
 
 Eigen bedrijven gebruiken dezelfde KPI's als het dashboard van elk afzonderlijk bedrijf, dus de cijfers kunnen niet tegenstrijdig zijn.
 
+## Onderlinge posities
+
+Als je eigen bedrijven elkaar factureren, ziet elke werkruimte normaal gesproken alleen de eigen helft. De Werkruimtes-pagina toont nu het nettosaldo tussen elk paar eigen bedrijven, zodat de rekening-courant die je voorheen op papier bijhield, in de app zichtbaar is.
+
+- Koppelingen worden automatisch gemaakt als het btw-nummer van een klant overeenkomt met een van je andere werkruimtes. Die match kijkt alleen naar je eigen bedrijven, dus een klant van iemand anders wordt nooit bereikt.
+- Als de automatische koppeling niet klopt, of als er geen btw-nummer beschikbaar is, kun je een klant handmatig koppelen of ontkoppelen vanaf de klantenpagina. Een handmatige koppeling wint altijd van de automatische.
+- De positie is het nettobedrag over openstaande facturen tussen de twee bedrijven, verminderd met geboekte betalingen. Een positief bedrag betekent dat het ene bedrijf het andere nog moet betalen.
+
 ## Kantoor-werkruimte: klanten
 
 Als je boekhouder bent en klantadministraties beheert, wordt de pagina een triage-overzicht:

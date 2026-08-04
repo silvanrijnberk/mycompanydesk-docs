@@ -48,6 +48,14 @@ Jede Unternehmenszeile zeigt Chips fuer die Dinge, die gerade Aufmerksamkeit bra
 
 Eigene Unternehmen verwenden dieselben KPIs wie das Dashboard jedes einzelnen Unternehmens, sodass die Zahlen nicht widerspruechlich sein koennen.
 
+## Untereinander-Positionen
+
+Wenn Ihre eigenen Unternehmen sich gegenseitig Rechnungen stellen, sieht jeder Arbeitsbereich normalerweise nur seine eigene Haelfte. Die Seite Arbeitsbereiche zeigt jetzt den Nettosaldo zwischen jedem Paar eigener Unternehmen, sodass das laufende Konto, das Sie bisher auf Papier gefuehrt haben, in der App sichtbar ist.
+
+- Verknuepfungen werden automatisch erstellt, wenn die USt.-Nummer eines Kunden mit einem Ihrer anderen Arbeitsbereiche uebereinstimmt. Dieser Abgleich sucht nur in Ihren eigenen Unternehmen, sodass ein Kunde eines anderen Unternehmens niemals erreichbar ist.
+- Wenn die automatische Verknuepfung falsch ist oder keine USt.-Nummer vorhanden ist, koennen Sie einen Kunden auf der Kundenseite manuell verknuepfen oder trennen. Eine manuelle Verknuepfung hat immer Vorrang vor der automatischen.
+- Die Position ist der Nettobetrag ueber offene Rechnungen zwischen den beiden Unternehmen, abzueglich gebuchter Zahlungen. Ein positiver Betrag bedeutet, dass das eine Unternehmen dem anderen noch etwas schuldet.
+
 ## Kanzlei-Arbeitsbereich: Mandanten
 
 Wenn Sie Steuerberater sind und Mandanten-Administrationen verwalten, wird die Seite zu einem Triage-Ueberblick:

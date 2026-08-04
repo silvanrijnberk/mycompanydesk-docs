@@ -48,6 +48,14 @@ Chaque ligne d'entreprise affiche des puces pour les elements qui demandent atte
 
 Vos propres entreprises utilisent les memes indicateurs que le tableau de bord de chaque entreprise, donc les chiffres ne peuvent pas etre contradictoires.
 
+## Positions inter-entreprises (Onderling)
+
+Si vos propres entreprises se facturent entre elles, chaque espace de travail ne voit normalement que sa propre moitie. La page Espaces de travail affiche maintenant la position nette entre chaque paire de vos propres entreprises, de sorte que le compte courant que vous teniez auparavant sur papier est visible dans l'application.
+
+- Les liens se creent automatiquement quand le numero de TVA d'un client correspond a l'un de vos autres espaces de travail. Cette correspondance ne regarde que vos propres entreprises, donc un client d'une autre entreprise n'est jamais atteint.
+- Si la correspondance automatique est incorrecte, ou si aucun numero de TVA n'est disponible, vous pouvez lier ou delier un client a la main depuis la page client. Un lien manuel prime toujours sur le lien automatique.
+- La position est le solde net des factures ouvertes entre les deux entreprises, deduit des paiements enregistres. Un chiffre positif signifie qu'une entreprise doit de l'argent a l'autre.
+
 ## Espace de travail de cabinet : clients
 
 Si vous etes comptable et gerez des administrations clientes, la page devient un tableau de triage :
