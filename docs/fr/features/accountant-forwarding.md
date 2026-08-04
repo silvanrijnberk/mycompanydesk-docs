@@ -49,6 +49,10 @@ Seules les pieces pretes pour un comptable quittent l'espace de travail :
 
 Le moteur fonctionne avec un watermark (`last_delivered_at`), et non avec des declencheurs de statut individuels, donc aucune piece n'est manquee parce qu'un nouveau mode de paiement a ete ajoute plus tard.
 
+## Journal de livraison et activite
+
+La page **Acces et comptable** conserve un journal de livraison indiquant ce qui a ete transmis et quand. Elle enregistre egalement une vue d'ensemble de l'activite du comptable connecte : ce qu'il a consulte ou modifie dans l'espace de travail. Les deux journaux sont visibles par les proprietaires et les administrateurs ; le comptable peut voir le journal de livraison mais ne peut pas l'effacer.
+
 ## Voir aussi
 
 - [Acces et comptable](/fr/settings/team) pour inviter votre comptable et choisir un contact

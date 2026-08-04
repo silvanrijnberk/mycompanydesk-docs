@@ -55,9 +55,13 @@ Admin actions per row: **Invite accountant**, **Manage access** drawer, **Remove
 
 ## Automatic delivery to your accountant
 
-Once an accountant is connected, you can have MyCompanyDesk deliver a quarterly export automatically. The export bundles sales invoices, expenses and a VAT summary in a format your accountant's software can import, so the data does not have to be retyped.
+Once an accountant is connected, you can have MyCompanyDesk deliver records to them automatically. The export bundles sales invoices, expenses and a VAT summary in a format your accountant's software can import, so the data does not have to be retyped.
 
 Open the accountant row in **Settings → Toegang en boekhouder**, choose **Automatic delivery**, pick the streams you want to include (for example sales invoices, expenses and a VAT summary), the trigger moment, and the format. A delivery log shows what was sent and when.
+
+### Accountant activity overview
+
+MyCompanyDesk now keeps an activity overview for each connected accountant. It records what the accountant viewed or changed while in your workspace, so you can always read back what happened. The overview is available in the same accountant row, next to the delivery log.
 
 <!-- TODO(source-missing): confirm the exact entitlement that gates automatic delivery and the supported export formats/profiles -->
 

@@ -76,7 +76,9 @@ Les puces fonctionnent comme dans l'espace de travail combine, mais les lignes u
 
 ## Ajouter votre propre entreprise
 
-Ouvrez **Ajouter une entreprise** et donnez un nom a la nouvelle entreprise. Chaque entreprise ajoutee commence par sa propre periode d'essai Office de 60 jours. Les clients, factures et comptabilite restent completement separes par entreprise.
+Ouvrez **Ajouter une entreprise** et donnez un nom a la nouvelle entreprise. L'application affiche le cout supplementaire avant la confirmation, pour que vous sachiez ce que la nouvelle entreprise ajoute a votre abonnement.
+
+ Chaque entreprise ajoutee obtient sa propre administration avec des clients, des factures et une comptabilite distincts. Pendant votre periode d'essai Pro, vous ne payez rien pour l'entreprise supplementaire; apres l'essai, elle est ajoutee a votre abonnement au prix affiche dans la confirmation.
 
 ## Gerer ou supprimer une entreprise
 
@@ -85,6 +87,8 @@ Ouvrez pour chaque entreprise le menu de ligne et choisissez **Gerer**. Un panne
 ### Desactiver une entreprise
 
 Choisissez **Desactiver** quand vous arretez de travailler dans une entreprise mais devez conserver ses archives. L'administration reste lisible et vous pouvez toujours tout exporter, car vous devez conserver les livres pour la duree legale de conservation. Vous ne pouvez plus ajouter de factures, de depenses ou de clients, et l'entreprise ne compte plus dans votre abonnement.
+
+Le panneau indique avant confirmation de combien votre paiement mensuel ou annuel va diminuer.
 
 Pour reprendre, ouvrez le meme panneau et choisissez **Reactiver**.
 

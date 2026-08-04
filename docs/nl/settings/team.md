@@ -55,9 +55,13 @@ Adminacties per rij: **Boekhouder uitnodigen**, het paneel **Toegang beheren** e
 
 ## Automatisch aanleveren aan je boekhouder
 
-Zodra een boekhouder is gekoppeld, kun je MyCompanyDesk automatisch een kwartaalexport laten aanleveren. De export bundelt verkoopfacturen, uitgaven en een btw-overzicht in een formaat dat het pakket van je boekhouder kan inlezen, zodat de cijfers niet overgetypt hoeven te worden.
+Zodra een boekhouder is gekoppeld, kun je MyCompanyDesk automatisch records laten aanleveren. De export bundelt verkoopfacturen, uitgaven en een btw-overzicht in een formaat dat het pakket van je boekhouder kan inlezen, zodat de cijfers niet overgetypt hoeven te worden.
 
 Open de rij van de boekhouder in **Instellingen → Toegang en boekhouder**, kies **Automatisch doorsturen**, selecteer de onderdelen die je wilt meesturen (bijvoorbeeld verkoopfacturen, uitgaven en een btw-overzicht), het moment van afleveren en het formaat. Een afleverlog toont wat wanneer is verstuurd.
+
+### Activiteitsoverzicht van de boekhouder
+
+MyCompanyDesk houdt voor elke gekoppelde boekhouder een activiteitsoverzicht bij. Daarin staat wat de boekhouder heeft bekeken of gewijzigd in je werkruimte, zodat je altijd kunt teruglezen wat er is gebeurd. Het overzicht vind je in dezelfde boekhouderrij, naast het afleverlog.
 
 <!-- TODO(source-missing): bevestig het abonnement dat automatisch doorsturen ontgrendelt en de ondersteunde exportformaten/profielen -->
 

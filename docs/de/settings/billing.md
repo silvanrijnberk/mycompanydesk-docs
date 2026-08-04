@@ -103,6 +103,10 @@ Wenn ein Arbeitsbereich auf Gratis zurückfällt, bleiben die öffentliche Websi
 
 Der Teamzugang ist in Pro ohne Kosten pro Person enthalten: Laden Sie so viele mitarbeitende Nutzer ein, wie Sie möchten. Es gibt keine Sitzpreise und keine Add-ons pro Sitz. Mit Gratis und Starter arbeiten Sie allein, wobei Ihr Buchhalter jederzeit kostenlosen Zugang erhalten kann.
 
+### Zusätzliche Unternehmen
+
+Ihr Abonnement deckt Ihren Hauptarbeitsbereich ab. Jedes zusätzliche Unternehmen, das Sie hinzufügen, wird zum vor der Bestätigung angezeigten Preis berechnet und beginnt mit einer eigenen Pro-Testphase. Während der Testphase kostet das zusätzliche Unternehmen nichts; danach wird es zum angezeigten Preis Ihrem Abonnement hinzugefügt. Sie können ein Unternehmen jederzeit inaktiv setzen; es wird dann nicht mehr für Ihr Abonnement gezählt, bleibt aber lesbar und exportierbar für die gesetzliche Aufbewahrungsfrist.
+
 ## Stripe-Portal
 
 Die Schaltfläche **Abonnement verwalten** (sichtbar, wenn der Arbeitsbereich eine aktive Periode oder einen Nicht-Gratis-Tarif hat) öffnet eine einmalige Stripe-Customer-Portal-Sitzung. Über das Portal können Sie:

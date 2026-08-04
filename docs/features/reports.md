@@ -60,6 +60,8 @@ VAT has its own dedicated page with quarterly overviews and filing support. See 
 
 Reports opens in a simple view by default: income, expenses and the VAT you owe, shown without bookkeeping jargon. Switch to the full accounting view at any time to see the general ledger, balance sheet, profit-and-loss account and annual accounts. The full view is useful when you work with an accountant; you do not need it for your own tax return.
 
+The general ledger shows each ledger account with its RGS reference code where applicable. RGS (Referentie Grootboekschema) is the Dutch standard chart of accounts for entrepreneurs; the codes make it easier for you and your accountant to line up ledger lines with accounting software that supports RGS.
+
 ### Auditfile export (XAF)
 
 In the full accounting view, open the annual accounts for a year and choose **Auditfile (XAF)** to download a Dutch XML Auditfile Financieel 4.0 file. This file contains the same year-end ledger data as the PDF annual accounts, but in a structured format that accounting packages and the Dutch tax office (Belastingdienst) can import directly. It is useful when your accountant asks for the books in XAF format, or when you file electronically.

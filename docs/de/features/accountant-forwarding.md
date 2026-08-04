@@ -49,6 +49,10 @@ Nur Belege, die fuer einen Steuerberater bereit sind, verlassen den Arbeitsberei
 
 Die Engine arbeitet mit einem Wasserzeichen (`last_delivered_at`), nicht mit einzelnen Status-Hooks, sodass kein Beleg verpasst wird, weil spaeter ein neuer Zahlungsweg hinzukommt.
 
+## Zustellungsprotokoll und Aktivitaet
+
+Die Seite **Zugang und Steuerberater** fuehrt ein Zustellungsprotokoll, das zeigt, was wann weitergeleitet wurde. Ausserdem wird eine Aktivitaetsuebersicht des verknuepften Steuerberaters erfasst: was er in Ihrem Arbeitsbereich angesehen oder geaendert hat. Beide Protokolle sind fuer Eigentuemer und Admins sichtbar; der Steuerberater sieht das Zustellungsprotokoll, kann es aber nicht loeschen.
+
 ## Verwandt
 
 - [Zugriff und Steuerberater](/de/settings/team) fuer das Einladen Ihres Steuerberaters und die Auswahl eines Kontakts

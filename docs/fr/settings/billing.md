@@ -103,6 +103,10 @@ Lorsqu'un espace de travail retombe en Gratuit, son site web public et le constr
 
 L'accès équipe est inclus dans Pro sans frais par personne : invitez autant d'utilisateurs actifs que vous le souhaitez. Il n'y a pas de tarification par siège ni d'add-on par siège. Avec Gratuit et Starter, vous travaillez seul, mais votre comptable peut toujours recevoir un accès gratuit.
 
+### Entreprises supplémentaires
+
+Votre abonnement couvre votre espace de travail principal. Chaque entreprise supplémentaire que vous ajoutez est facturée au prix affiché avant confirmation, et commence par sa propre période d'essai Pro. Pendant l'essai, l'entreprise supplémentaire ne coûte rien ; après l'essai, elle est ajoutée à votre abonnement au prix affiché. Vous pouvez désactiver une entreprise à tout moment ; elle ne compte alors plus dans votre abonnement, tout en restant lisible et exportable pour la durée légale de conservation.
+
 ## Portail Stripe
 
 Le bouton **Gérer l'abonnement** (visible lorsque l'espace de travail a une période active ou un plan non Gratuit) ouvre une session unique du portail client Stripe. Depuis le portail, vous pouvez :

@@ -60,6 +60,8 @@ BTW heeft een eigen pagina met kwartaaloverzichten en aangifte-ondersteuning. Zi
 
 Rapporten opent standaard in een eenvoudige weergave: inkomsten, uitgaven en de BTW die je verschuldigd bent, zonder boekhoudjargon. Schakel op elk moment naar de volledige boekhoudersweergave om het grootboek, de balans, de winst-en-verliesrekening en de jaarrekening te zien. De volledige weergave is handig als je met een boekhouder werkt; je hebt hem niet nodig voor je eigen aangifte.
 
+In het grootboek zie je per rekening de bijbehorende RGS-referentiecode waar van toepassing. RGS (Referentie Grootboekschema) is het standaardrekeningschema voor Nederlandse ondernemers; de codes helpen jou en je boekhouder om grootboekregels eenvoudig af te stemmen op boekhoudsoftware die RGS ondersteunt.
+
 ### Auditfile-export (XAF)
 
 In de volledige boekhoudweergave open je de jaarrekening van een jaar en kies je **Auditfile (XAF)** om een Nederlandse XML Auditfile Financieel 4.0 te downloaden. Het bestand bevat dezelfde eindejaarsgegevens als de PDF-jaarrekening, maar in een gestructureerd formaat dat boekhoudpakketten en de Belastingdienst direct kunnen importeren. Handig als je boekhouder de cijfers in XAF-formaat vraagt, of bij een elektronische aangifte.

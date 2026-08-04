@@ -103,6 +103,10 @@ When a workspace lapses to Free, its public website and site-builder pages remai
 
 Team access is included in Pro with no per-person charge: invite as many working users as you want. There is no seat pricing and no per-seat add-on. On Free and Starter you work alone, though your accountant can always be given free access.
 
+### Extra businesses
+
+Your subscription covers your home workspace. Each additional business you add is billed at the price shown before you confirm, and starts on its own Pro trial. During the trial the extra business costs nothing; after the trial it is added to your subscription at the displayed price. You can deactivate a business at any time; it then stops counting toward your subscription while remaining readable and exportable for the statutory retention period.
+
 ## Stripe portal
 
 The **Manage subscription** button (visible whenever the workspace has an active period or non-Free plan) opens a one-shot Stripe Customer Portal session. From the portal you can:
