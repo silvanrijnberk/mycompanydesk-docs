@@ -1,6 +1,6 @@
 ---
 title: "Accès et comptable"
-last_verified: 2026-07-02
+last_verified: 2026-08-04
 ---
 
 # Accès et comptable
@@ -53,6 +53,14 @@ Une liste séparée pour les comptables externes, gratuite sur tous les plans. V
 
 Actions administrateur par ligne : **Inviter le comptable**, le panneau **Gérer l'accès** et **Supprimer**.
 
+## Livraison automatique à votre comptable
+
+Une fois un comptable connecté, vous pouvez faire en sorte que MyCompanyDesk livre automatiquement un export trimestriel. L'export rassemble les factures de vente, les dépenses et un récapitulatif de TVA dans un format que le logiciel de votre comptable peut importer, afin que les chiffres n'aient pas à être ressaisis.
+
+Ouvrez la ligne du comptable dans **Paramètres → Accès et comptable**, choisissez **Livraison automatique**, sélectionnez les flux à inclure (par exemple factures de vente, dépenses et un récapitulatif de TVA), le moment de déclenchement et le format. Un journal de livraison montre ce qui a été envoyé et quand.
+
+<!-- TODO(source-missing): confirmer l'abonnement/entitlement qui débloque la livraison automatique et les formats/profils d'export supportés -->
+
 ## Rôles
 
 | Rôle | Description |
@@ -87,6 +95,8 @@ Les administrateurs ne peuvent pas gérer les passkeys ni la vérification en de
 ## Changer d'espace de travail
 
 Ouvrez le menu de l'espace de travail dans l'en-tête de la barre latérale pour passer d'un espace à l'autre, voir l'abonnement ou en créer un nouveau.
+
+Si vous avez accès à plus d'un espace de travail, le menu renvoie aussi vers la vue d'ensemble **Espaces de travail** sur `/werkruimtes`. Cette page liste tous les espaces que vous possédez ou gérez en tant que comptable, met en évidence les échéances et les éléments ouverts par espace, et vous permet d'ouvrir le bon espace en un clic.
 
 ## Plans en un coup d'œil
 
