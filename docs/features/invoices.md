@@ -86,7 +86,7 @@ If your workspace has general terms in Documents, the email preview also shows a
 
 ### Send as Peppol e-invoice
 
-If your workspace is on the Pro plan and has [Peppol e-invoicing](/features/peppol) enabled, the send dialog also offers **E-invoice (Peppol)**. This delivers the invoice digitally to your customer's accounting software instead of, or alongside, email. You choose per invoice which channel to use.
+If your workspace is on the Pro plan and has [Peppol e-invoicing](/features/peppol) enabled, the send dialog also offers **E-invoice (Peppol)**. This delivers the invoice digitally to your customer's accounting software instead of sending it by email. You choose per invoice which channel to use.
 
 ### Download PDF
 

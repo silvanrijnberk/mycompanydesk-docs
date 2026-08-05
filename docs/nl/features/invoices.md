@@ -86,7 +86,7 @@ Als je werkruimte algemene voorwaarden in Documenten heeft staan, toont de e-mai
 
 ### Versturen als Peppol e-factuur
 
-Als je werkruimte op het Pro-abonnement zit en [Peppol e-facturatie](/nl/features/peppol) heeft ingeschakeld, biedt het verzenddialoog ook **E-factuur (Peppol)** aan. Hiermee wordt de factuur digitaal afgeleverd in het boekhoudpakket van je klant, in plaats van of naast e-mail. Je kiest per factuur welk kanaal je gebruikt.
+Als je werkruimte op het Pro-abonnement zit en [Peppol e-facturatie](/nl/features/peppol) heeft ingeschakeld, biedt het verzenddialoog ook **E-factuur (Peppol)** aan. Hiermee wordt de factuur digitaal afgeleverd in het boekhoudpakket van je klant, in plaats van per e-mail. Je kiest per factuur welk kanaal je gebruikt.
 
 ### PDF downloaden
 

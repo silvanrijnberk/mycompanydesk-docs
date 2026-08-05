@@ -86,7 +86,7 @@ Wenn in Ihrem Arbeitsbereich Allgemeine Geschäftsbedingungen in Dokumenten hint
 
 ### Als Peppol E-Rechnung senden
 
-Wenn Ihr Workspace im Pro-Tarif ist und [Peppol E-Rechnung](/de/features/peppol) aktiviert hat, bietet der Sende-Dialog außerdem **E-Rechnung (Peppol)** an. Die Rechnung wird dann digital im Buchhaltungssystem Ihres Kunden zugestellt, anstatt oder zusätzlich zur E-Mail. Sie wählen pro Rechnung, welchen Kanal Sie verwenden.
+Wenn Ihr Workspace im Pro-Tarif ist und [Peppol E-Rechnung](/de/features/peppol) aktiviert hat, bietet der Sende-Dialog außerdem **E-Rechnung (Peppol)** an. Die Rechnung wird dann digital im Buchhaltungssystem Ihres Kunden zugestellt, anstatt per E-Mail. Sie wählen pro Rechnung, welchen Kanal Sie verwenden.
 
 ### PDF herunterladen
 

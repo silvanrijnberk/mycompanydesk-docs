@@ -86,7 +86,7 @@ Si votre espace de travail a des conditions generales dans Documents, l'apercu d
 
 ### Envoyer en tant que facture electronique Peppol
 
-Si votre workspace est sur le plan Pro et que la [facturation electronique Peppol](/fr/features/peppol) est activee, la boite d'envoi propose aussi **Facture electronique (Peppol)**. La facture est alors livree numeriquement dans le logiciel comptable de votre client, au lieu de ou en plus de l'e-mail. Vous choisissez par facture quel canal utiliser.
+Si votre workspace est sur le plan Pro et que la [facturation electronique Peppol](/fr/features/peppol) est activee, la boite d'envoi propose aussi **Facture electronique (Peppol)**. La facture est alors livree numeriquement dans le logiciel comptable de votre client, au lieu de l'envoyer par e-mail. Vous choisissez par facture quel canal utiliser.
 
 ### Telecharger le PDF
 
