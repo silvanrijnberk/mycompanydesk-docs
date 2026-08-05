@@ -1,6 +1,6 @@
 ---
 title: Espaces de travail
-last_verified: 2026-08-04
+last_verified: 2026-08-05
 ---
 
 # Espaces de travail
@@ -76,9 +76,11 @@ Les puces fonctionnent comme dans l'espace de travail combine, mais les lignes u
 
 ## Ajouter votre propre entreprise
 
-Ouvrez **Ajouter une entreprise** et donnez un nom a la nouvelle entreprise. L'application affiche le cout supplementaire avant la confirmation, pour que vous sachiez ce que la nouvelle entreprise ajoute a votre abonnement.
+Ouvrez **Ajouter une entreprise** et donnez un nom a la nouvelle entreprise.
 
- Chaque entreprise ajoutee obtient sa propre administration avec des clients, des factures et une comptabilite distincts. Pendant votre periode d'essai Pro, vous ne payez rien pour l'entreprise supplementaire; apres l'essai, elle est ajoutee a votre abonnement au prix affiche dans la confirmation.
+Si vous etes sur un plan payant (Starter ou Pro), l'application affiche le cout supplementaire avant la confirmation. Pendant votre propre periode d'essai Office, vous ne payez rien pour l'entreprise supplementaire; apres l'essai, elle est ajoutee a votre abonnement au tarif affiche.
+
+Si votre espace de travail dispose d'un Office gratuit dans le cadre d'une disposition telle qu'un plan comped ou founding member, votre premiere entreprise reste gratuite et l'application propose maintenant un paiement separe pour une deuxieme entreprise. Le prix est affiche a l'avance; seule la deuxieme entreprise est facturee via un abonnement add-on dedie. Une fois le paiement confirme, vous pouvez nommer la deuxieme entreprise.
 
 ## Gerer ou supprimer une entreprise
 

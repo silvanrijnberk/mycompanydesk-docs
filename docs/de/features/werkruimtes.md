@@ -1,6 +1,6 @@
 ---
 title: Arbeitsbereiche
-last_verified: 2026-08-04
+last_verified: 2026-08-05
 ---
 
 # Arbeitsbereiche
@@ -76,9 +76,11 @@ Die Chips funktionieren wie im kombinierten Arbeitsbereich, aber die Zeilen verw
 
 ## Ein eigenes Unternehmen hinzufuegen
 
-Oeffnen Sie **Unternehmen hinzufuegen** und geben Sie dem neuen Unternehmen einen Namen. Die App zeigt die zusaetzlichen Kosten vor der Bestaetigung an, sodass Sie wissen, was das neue Unternehmen zu Ihrem Abonnement hinzufuegt.
+Oeffnen Sie **Unternehmen hinzufuegen** und geben Sie dem neuen Unternehmen einen Namen.
 
- Jedes hinzugefuegte Unternehmen erhaelt eine eigene Administration mit getrennten Kunden, Rechnungen und Buchhaltung. Waehrend Ihrer Pro-Testphase zahlen Sie nichts fuer das zusaetzliche Unternehmen; danach wird es zum in der Bestaetigung angezeigten Preis Ihrem Abonnement hinzugefuegt.
+Bei einem kostenpflichtigen Plan (Starter oder Pro) zeigt die App die zusaetzlichen Kosten vor der Bestaetigung an. Waehrend Ihrer eigenen Office-Testphase zahlen Sie nichts fuer das zusaetzliche Unternehmen; danach wird es zum angezeigten Preis Ihrem Abonnement hinzugefuegt.
+
+Wenn Ihr Arbeitsbereich ein kostenloses Office aufgrund einer Regelung wie einer Gunst- oder Founding-Member-Regelung hat, bleibt das erste Unternehmen kostenlos und die App bietet jetzt einen separaten Checkout fuer ein zweites Unternehmen. Der Preis wird im Voraus angezeigt; nur das zweite Unternehmen wird ueber ein eigenes Add-on-Abonnement abgerechnet. Nach Bestaetigung der Zahlung koennen Sie das zweite Unternehmen benennen.
 
 ## Ein Unternehmen verwalten oder entfernen
 

@@ -1,6 +1,6 @@
 ---
 title: "Abonnement & betalingen"
-last_verified: 2026-07-22
+last_verified: 2026-08-05
 ---
 
 # Abonnement & betalingen
@@ -105,7 +105,11 @@ Teamtoegang is inbegrepen in Pro zonder kosten per persoon: nodig zoveel meewerk
 
 ### Extra bedrijven
 
-Je abonnement dekt je hoofdwerkruimte. Elk extra bedrijf dat je toevoegt, wordt tegen de prijs in rekening gebracht die voor bevestiging wordt getoond, en start met een eigen Pro-proefperiode. Tijdens de proefperiode kost het extra bedrijf niets; daarna wordt het tegen de getoonde prijs aan je abonnement toegevoegd. Je kunt een bedrijf op elk moment op non-actief zetten; het telt dan niet meer mee voor je abonnement, maar blijft leesbaar en exporteerbaar voor de wettelijke bewaartermijn.
+Je abonnement dekt je hoofdwerkruimte. Elk extra bedrijf dat je toevoegt, wordt tegen de prijs afgerekend die vooraf wordt getoond.
+
+Als je werkruimte een betaald abonnement heeft (Starter of Pro), begint het extra bedrijf met een eigen Pro-proefperiode. Tijdens de proefperiode kost het niets; daarna wordt het tegen het getoonde tarief op je abonnement gezet.
+
+Als je werkruimte gratis Office heeft via een regeling zoals een gunst of founding-member-plan, is er geen abonnement om het extra bedrijf aan vast te maken. Je koopt het daarom via een aparte add-on-only checkout. Je eerste bedrijf blijft gratis; alleen het extra bedrijf wordt gefactureerd. Je kunt een bedrijf op elk moment deactiveren; dan telt het niet meer mee voor je abonnement of add-on, terwijl het leesbaar en exporteerbaar blijft voor de wettelijke bewaartermijn.
 
 ## Stripe-portaal
 

@@ -1,6 +1,6 @@
 ---
 title: Werkruimtes
-last_verified: 2026-08-04
+last_verified: 2026-08-05
 ---
 
 # Werkruimtes
@@ -76,9 +76,11 @@ De chips en werken hetzelfde als in de gecombineerde werkruimte, maar rijen gebr
 
 ## Een eigen bedrijf toevoegen
 
-Open **Bedrijf toevoegen** en geef het nieuwe bedrijf een naam. De app toont de extra kosten voordat je bevestigt, zodat je weet wat het extra bedrijf aan je abonnement toevoegt.
+Open **Bedrijf toevoegen** en geef het nieuwe bedrijf een naam.
 
- Elk toegevoegd bedrijf krijgt een eigen administratie met aparte klanten, facturen en boekhouding. Tijdens je Pro-proefperiode betaal je niets voor het extra bedrijf; daarna wordt het tegen de prijs in de bevestiging aan je abonnement toegevoegd.
+Als je een betaald abonnement hebt (Starter of Pro), toont de app de extra kosten voordat je bevestigt. Tijdens je eigen Office-proefperiode betaal je niets voor het extra bedrijf; daarna wordt het tegen het getoonde tarief op je abonnement gezet.
+
+Als je een gratis Office-werkruimte hebt (bijvoorbeeld via een gunst of founding-member-regeling), blijft je eerste bedrijf gratis en biedt de app nu een aparte checkout voor een tweede bedrijf. De prijs staat vooraf vermeld; alleen het tweede bedrijf wordt op een eigen add-on-abonnement gezet. Nadat de betaling is bevestigd, kun je het tweede bedrijf een naam geven.
 
 ## Een bedrijf beheren of verwijderen
 

@@ -1,6 +1,6 @@
 ---
 title: Workspaces
-last_verified: 2026-08-04
+last_verified: 2026-08-05
 ---
 
 # Workspaces
@@ -76,9 +76,11 @@ The row chips and deep links work the same as in the combined workspace, but row
 
 ## Adding your own business
 
-Open **Bedrijf toevoegen** and give the new business a name. The app shows the extra cost before you confirm, so you know what the new business adds to your subscription.
+Open **Bedrijf toevoegen** and give the new business a name.
 
-Each added business gets its own administration with separate clients, invoices, and bookkeeping. During your Pro trial you pay nothing for the extra business; after the trial it is added to your subscription at the price shown in the confirmation.
+If you are on a paid plan (Starter or Pro), the app shows the extra cost before you confirm. During your own Pro trial you pay nothing for the extra business; after the trial it is added to your subscription at the price shown in the confirmation.
+
+If you are on a free Office workspace (for example a comped or founding-member arrangement), your first business stays free and the app now offers a separate checkout for a second business. The price is shown before you start the checkout, and only the second business is billed on its own add-on subscription. After the payment is confirmed, you can name and create the second business.
 
 ## Manage or remove a business
 
