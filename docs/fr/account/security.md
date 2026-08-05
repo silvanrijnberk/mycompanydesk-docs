@@ -95,6 +95,7 @@ MyCompanyDesk prend la sécurité des données au sérieux :
 - Les mots de passe sont stockés hachés, jamais en clair
 - Traitement des données conforme au RGPD
 - Des sauvegardes régulières protègent vos données
+- Le champ `bsn` (numéro de service citoyen néerlandais) n'est utilisé que pour les flux de location et n'est jamais renvoyé dans les réponses de l'API client
 
 Pour plus de détails sur les cookies, les identifiants analytics et la gestion du Do Not Track, consultez [Cookies et analytics](/fr/account/cookies-tracking).
 

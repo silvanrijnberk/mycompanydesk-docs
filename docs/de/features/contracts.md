@@ -61,6 +61,16 @@ Aktive Verträge mit einem Wiederholungsplan generieren automatisch Rechnungen i
 
 Sie können generierte Rechnungen manuell überprüfen und versenden oder den automatischen Versand konfigurieren. Wenn ein Vertrag auf einem Stundensatz, Tagessatz oder festen Projektpreis basiert, erhalten Sie auch eine Warnung, wenn das Vertragsbudget überschritten wird oder erfasste Stunden nicht bewertet werden konnten, weil kein Satz hinterlegt war.
 
+## Rechnungszeitraum
+
+Verträge berechnen einen Zeitraum relativ zum Rechnungsdatum:
+
+- **Aktuell** — der Zeitraum, der das Rechnungsdatum enthält (Standard)
+- **Vorheriger** — der Zeitraum vor dem Rechnungsdatum
+- **Nächster** — der Zeitraum nach dem Rechnungsdatum; alter Wert, der für ältere Mietverträge mit Vorauszahlung erhalten bleibt
+
+Im Formular kannst du heute nur **aktuell** oder **vorheriger** wählen. Wenn du einen älteren Vertrag hast, der auf **nächster** steht, behält die API diesen Wert beim Speichern bei, damit der Vertrag weiterhin bearbeitbar bleibt.
+
 ## Automatisches Einziehen
 
 Bei wiederkehrenden Verträgen können Sie den berechneten Betrag automatisch über das hinterlegte Zahlungsmandat des Kunden einziehen, anstatt einen Zahlungslink per E-Mail zu senden. Dafür benötigen Sie einen verbundenen Zahlungsanbieter (Mollie oder Stripe) und ein gültiges Mandat des Kunden.

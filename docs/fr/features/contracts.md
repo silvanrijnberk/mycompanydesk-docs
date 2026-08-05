@@ -61,6 +61,16 @@ Les contrats actifs avec un calendrier de recurrence generent automatiquement de
 
 Vous pouvez examiner et envoyer les factures generees manuellement, ou configurer l'envoi automatique. Lorsqu'un contrat est basé sur un taux horaire, un taux journalier ou un prix forfaitaire de projet, vous recevez aussi une alerte quand le budget du contrat est dépassé ou quand des heures saisies n'ont pas pu être tarifées car aucun taux n'était défini.
 
+## Période de facturation
+
+Les contrats facturent une période par rapport à la date de facture :
+
+- **Actuelle** — la période qui contient la date de facture (par défaut)
+- **Précédente** — la période avant la date de facture
+- **Suivante** — la période après la date de facture ; ancienne valeur conservée pour les anciens contrats de location facturés d'avance
+
+Le formulaire ne permet aujourd'hui de choisir qu'entre **actuelle** et **précédente**. Si vous avez un ancien contrat réglé sur **suivante**, l'API conserve cette valeur lors de l'enregistrement pour que le contrat reste modifiable.
+
 ## Encaissement automatique
 
 Pour les contrats récurrents, vous pouvez encaisser automatiquement le montant facturé à partir du mandat de paiement enregistré du client, au lieu d'envoyer un lien de paiement par e-mail. Cela nécessite un prestataire de paiement connecté (Mollie ou Stripe) et un mandat valide du client.

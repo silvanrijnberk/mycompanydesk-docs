@@ -95,6 +95,7 @@ MyCompanyDesk neemt gegevensbeveiliging serieus:
 - Wachtwoorden worden gehasht opgeslagen, nooit als leesbare tekst
 - AVG-conforme gegevensverwerking
 - Regelmatige back-ups houden je gegevens veilig
+- Het veld `bsn` (burgerservicenummer) wordt alleen gebruikt voor verhuurworkflows en nooit teruggegeven in klant-API-reacties
 
 Zie [Cookies en analytics](/nl/account/cookies-tracking) voor meer informatie over cookies, analytics-identificaties en Do Not Track.
 

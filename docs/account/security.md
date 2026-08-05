@@ -95,6 +95,7 @@ MyCompanyDesk takes data security seriously:
 - Passwords are stored hashed, never in plain text
 - GDPR-compliant data handling
 - Regular backups ensure data safety
+- The `bsn` (Dutch citizen service number) field is used only for rental workflows and is never returned in customer API responses
 
 For details on cookies, analytics identifiers, and Do Not Track handling, see [Cookies and analytics](/account/cookies-tracking).
 

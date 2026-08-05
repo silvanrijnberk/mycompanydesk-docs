@@ -61,6 +61,16 @@ Active contracts with a recurrence schedule automatically generate invoices at e
 
 You can review and send generated invoices manually, or configure auto-sending. When a contract is based on an hourly, daily or fixed project price, you also get a warning when the contract budget is exceeded or when logged hours cannot be priced because no rate was set.
 
+## Invoice period
+
+Contracts bill for a period relative to the invoice date:
+
+- **Current** — the period that contains the invoice date (default)
+- **Previous** — the period before the invoice date
+- **Next** — the period after the invoice date; legacy value kept for older rental contracts that bill in advance
+
+The form today only lets you choose **current** or **previous**. If you have an older contract set to **next**, the API keeps that value when you save, so the contract stays editable.
+
 ## Automatic collection
 
 For recurring contracts you can collect the billed amount automatically from the customer's stored payment mandate instead of sending a payment link by email. This requires a connected payment provider (Mollie or Stripe) and a valid customer mandate.

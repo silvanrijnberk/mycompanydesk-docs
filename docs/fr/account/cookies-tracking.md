@@ -11,9 +11,11 @@ Cette page explique comment MyCompanyDesk utilise les cookies, le stockage local
 
 Le site marketing affiche une bannière de consentement aux cookies lors de votre première visite. Cette bannière demande si nous pouvons placer un stockage analytics. Vous pouvez modifier votre choix à tout moment via la bannière.
 
-Si vous acceptez, le site stocke un identifiant analytics anonyme dans le `localStorage` de votre navigateur sous la clé `mcd_phid`. Cet identifiant sert uniquement à comprendre comment les visiteurs naviguent sur le site. Il n'est pas lié à votre compte ou à votre adresse e-mail.
+L'analytics est soumis à consentement (opt-in). Tant que vous n'acceptez pas, le site marketing n'initialise pas d'analytics, n'envoie aucune page vue ou événement et ne stocke aucun identifiant analytics. Choisir "Uniquement essentiel" ne laisse donc aucune trace analytics.
 
-Si vous refusez, ou si votre navigateur envoie un signal Do Not Track (DNT), aucun identifiant analytics n'est stocké. La bannière peut toutefois toujours apparaître, car elle couvre également les cookies non-analytics.
+Si vous acceptez, le site démarre l'analytics et stocke un identifiant analytics anonyme dans le `localStorage` de votre navigateur sous la clé `mcd_phid`. Cet identifiant sert uniquement à comprendre comment les visiteurs naviguent sur le site. Il n'est pas lié à votre compte ou à votre adresse e-mail.
+
+Si vous refusez plus tard via la bannière, ou si votre navigateur envoie un signal Do Not Track (DNT), aucun identifiant analytics n'est stocké et aucun nouvel événement analytics n'est envoyé. La bannière peut toutefois toujours apparaître, car elle couvre également les cookies non-analytics.
 
 ## Du site marketing vers l'application
 
