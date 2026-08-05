@@ -148,6 +148,6 @@ Dans un espace de travail client, la barre laterale est plus courte, car les par
 
 ## Voir aussi
 
-- [Accès et comptable](/fr/settings/team) pour inviter des collègues et des comptables et définir les permissions de page
+- [Acces et comptable](/fr/settings/team) pour inviter des collegues et des comptables et definir les permissions de page
 - [Rapports](/fr/features/reports) pour la vue des clients perdus et les autres rapports
 - [Tableau de bord](/fr/features/dashboard) pour le briefing quotidien d'un espace de travail
