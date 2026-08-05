@@ -110,7 +110,22 @@ Normalerweise berechnet MyCompanyDesk den USt.-Betrag aus dem Satz und dem Netto
 
 ### Korrekturen in gesperrten Perioden
 
-Sitzt eine Ausgabe in einer gesperrten USt.-Periode, blockiert das Formular Änderungen an den Finanzfeldern und bietet einen Korrekturweg an. Die Korrektur wird in der aktuell offenen Periode erstellt und verweist auf den ursprünglichen gesperrten Beleg, sodass die Nachvollziehbarkeit erhalten bleibt.
+Sitzt eine Ausgabe in einer gesperrten USt.-Periode, blockiert das Formular Änderungen an den Finanzfeldern und bietet einen Korrekturweg an. Die Fehlermeldung wird über den Code `PERIOD_LOCKED` ausgegeben, sodass eine deutsche Erklärung statt des rohen Backend-Textes angezeigt wird. Die Korrektur wird in einer späteren, offenen Periode erstellt und verweist auf den ursprünglichen gesperrten Beleg, sodass die Nachvollziehbarkeit erhalten bleibt.
+
+Das Gate vergleicht die Werte, die tatsächlich geschrieben werden sollen, nicht nur die im Formular sichtbaren Felder. Das betrifft auch mehrwertige `lines`, Investitionsmarker und Abschreibungseingaben wie Nutzungsdauer, Restwert und Privatnutzungsanteil. Jede finanziell bedeutsame Änderung in einer eingereichten Periode wird abgelehnt; nicht-finanzielle Anpassungen wie Notizen, Zahlungsstatus oder Beleganhänge bleiben weiterhin möglich.
+
+## Investitionen und Abschreibung
+
+Kategorien mit `auto_flag_investment = true` (in der Regel Ausstattung und andere Anlagegüter) machen aus einer Ausgabe automatisch eine Investition:
+
+- Die Ausgabe wird als `is_investment = true` markiert.
+- Es wird ein monatlicher Abschreibungsplan anhand von `useful_life_months` der Kategorie erstellt (Standard 60 Monate, falls nicht gesetzt).
+- Der Plan verwendet lineare Abschreibung mit Tages-Pro-Rata für den ersten und letzten Kalendermonat, im Einklang mit den Richtlinien der Steuerbehörde.
+- Die Zeilen werden in `expense_depreciation_lines` gespeichert und fließen in die Berichte ein.
+
+Die abschreibungsfähige Basis entspricht den aktivierten Kosten, die die Buchhaltung auf das Anlagekonto bucht (`apps/api/src/modules/ledger/posting-engine.js`), nicht dem Bruttobetrag ohne USt. Damit werden auch nicht abziehbare Vorsteuer (bei Kategorien mit einem Abzugsanteil unter 100 %) und der Geschäftsanteil nach Privatnutzung berücksichtigt, sodass Abschreibungsplan, Anlagenregister und KIA-Berechnung alle von derselben Zahl ausgehen.
+
+Das Bearbeiten von Kategorie, Datum, Betrag, USt.-Behandlung, Privatnutzungsanteil, Nutzungsdauer oder Restwert bei einer bestehenden Ausgabe löst eine Neuberechnung aus. Wenn eine bestehende Abschreibungszeile bereits in eine gesperrte USt.-Periode fällt, wird die Neuberechnung abgelehnt, damit die eingereichte Erklärung nicht stillschweigend geändert wird. Das Zurückstufen einer Investitionsausgabe in eine Nicht-Investitionskategorie löscht die Abschreibungszeilen.
 
 ## Ausgaben verknüpfen
 

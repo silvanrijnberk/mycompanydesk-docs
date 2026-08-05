@@ -99,7 +99,7 @@ Bei Immobilien, für die eine WOZ-Historie aus dem Kadaster abgerufen wurde, pro
 Immobilienobjekte, die als Betriebsvermögen geführt werden, zeigen auf der Detailseite eine Vermögensübersicht:
 
 - **Anschaffungswert**: der Betrag, der für das Wirtschaftsgut gezahlt wurde.
-- **Aktivierter Wert**: der betriebliche Teil des Anschaffungswerts nach Abzug eines etwaigen Privatnutzungsanteils.
+- **Aktivierter Wert**: der betriebliche Teil der aktivierten Kosten nach Anwendung des Abzugsanteils der Kategorie und eines etwaigen Privatnutzungsanteils. Dieser verwendet dieselbe Formel wie die Sollbuchung auf dem Anlagekonto in der Buchhaltung und der Abschreibungsplan (`apps/api/src/modules/ledger/posting-engine.js`), sodass die drei Stellen im Einklang bleiben.
 - **Kumulierte Abschreibung**: alles, was bisher abgeschrieben wurde.
 - **Abschreibung dieses Jahres**: der Abschreibungsbetrag für das laufende Kalenderjahr.
 - **Buchwert**: der verbleibende Wert in der Bilanz (aktivierter Wert abzüglich kumulierter Abschreibung).

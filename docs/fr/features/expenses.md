@@ -110,7 +110,22 @@ Habituellement, MyCompanyDesk calcule le montant de TVA à partir du taux et du 
 
 ### Corrections en période verrouillée
 
-Si une dépense se trouve dans une période de TVA verrouillée, le formulaire bloque les modifications des champs financiers et propose un chemin de correction. La correction est créée dans la période ouverte en cours et renvoie vers la dépense d'origine, afin de conserver la traçabilité.
+Si une dépense se trouve dans une période de TVA verrouillée, le formulaire bloque les modifications des champs financiers et propose un chemin de correction. Le message d'erreur est transmis via le code `PERIOD_LOCKED`, de sorte qu'une explication en français s'affiche au lieu du texte brut du backend. La correction est créée dans une période ultérieure ouverte et renvoie vers la dépense d'origine verrouillée, afin de conserver la traçabilité.
+
+Le contrôle compare les valeurs effectivement destinées à être écrites, et non seulement les champs visibles dans le formulaire. Cela inclut les lignes à plusieurs taux (`lines`), les indicateurs d'investissement et les entrées d'amortissement telles que durée d'utilité, valeur résiduelle et pourcentage d'usage privé. Toute modification financièrement significative dans une période déclarée est refusée ; les ajustements non financiers, comme les notes, le statut de paiement ou les pièces jointes, restent possibles.
+
+## Investissements et amortissement
+
+Les catégories avec `auto_flag_investment = true` (généralement équipement et autres immobilisations) transforment automatiquement une dépense en investissement :
+
+- La dépense est marquée `is_investment = true`.
+- Un plan d'amortissement mensuel est généré à partir de `useful_life_months` de la catégorie (60 mois par défaut si non renseigné).
+- Le plan utilise l'amortissement linéaire avec un pro rata journalier pour le premier et le dernier mois civil, conformément aux directives fiscales.
+- Les lignes sont stockées dans `expense_depreciation_lines` et alimentent les rapports.
+
+La base amortissable correspond au coût capitalisé que la comptabilité enregistre au débit du compte d'immobilisation (`apps/api/src/modules/ledger/posting-engine.js`), et non au montant brut hors TVA. Cela intègre donc la TVA déductible partiellement non récupérable (pour les catégories avec un taux de déduction inférieur à 100 %) et la part professionnelle après application du pourcentage d'usage privé, de sorte que le plan d'amortissement, le registre d'immobilisations et le calcul KIA reposent tous sur le même montant.
+
+La modification de la catégorie, de la date, du montant, du traitement de TVA, du pourcentage d'usage privé, de la durée d'utilité ou de la valeur résiduelle sur une dépense existante déclenche un recalcul. Si une ligne d'amortissement existante tombe déjà dans une période de TVA verrouillée, le recalcul est refusé pour que la déclaration déposée ne soit pas modifiée silencieusement. Le basculement d'une dépense investissement vers une catégorie non investissement supprime les lignes d'amortissement.
 
 ## Lier les dépenses
 

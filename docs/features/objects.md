@@ -100,7 +100,7 @@ For properties where a Kadaster WOZ history was fetched, MyCompanyDesk projects 
 Property objects that are tracked as a bezitting (capital asset) show an asset summary in the detail page:
 
 - **Acquisition value**: what was paid for the asset.
-- **Capitalized value**: the business part of the acquisition value, after deducting any private-use share.
+- **Capitalized value**: the business part of the capitalized cost, after the category's deduction percentage and any private-use share are applied. This uses the same formula as the ledger debit to the asset account and the depreciation schedule (`apps/api/src/modules/ledger/posting-engine.js`), so the three surfaces stay in lockstep.
 - **Accumulated depreciation**: everything written off so far.
 - **Depreciation this year**: the current calendar year's write-off.
 - **Book value**: the remaining value on the balance (capitalized value minus accumulated depreciation).

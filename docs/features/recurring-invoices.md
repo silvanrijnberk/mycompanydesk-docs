@@ -76,6 +76,12 @@ Each time a recurring invoice fires, a new invoice is created:
 - It starts as a **Draft** (review and send) or auto-sends if configured
 - Each generated invoice is independent — you can edit it without affecting the template
 
+### Locked VAT periods
+
+If the scheduled date falls inside a VAT period that has already been filed and locked, MyCompanyDesk does **not** create the invoice. That period is skipped permanently for automatic generation (retrying would never succeed on its own), and the schedule moves on to the next due date. You receive a notification so you can decide what to do next: create a current-dated invoice for the customer, or handle the revenue through a supplementary VAT filing.
+
+A paused or recently resumed template is especially likely to hit this case, because the next scheduled date may lag behind the most recently filed quarter.
+
 ## Viewing history
 
 The recurring invoice detail page shows all previously generated invoices, so you can track the full billing history.

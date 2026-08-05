@@ -1,6 +1,6 @@
 ---
 title: Credit note
-last_verified: 2026-07-02
+last_verified: 2026-08-05
 chatbot:
   triggers: ["credit note", "create credit note", "issue credit", "credit invoice", "creditnota", "creditnota aanmaken", "gutschrift erstellen", "note de credit", "avoir"]
   actions:
@@ -15,5 +15,7 @@ To create a credit note:
 4. Send the credit note to the customer
 
 You cannot adjust the amounts during creation; sent documents are locked, so the credit note always mirrors the original exactly. For a partial correction, create the full credit note first and then issue a new invoice for the correct amount.
+
+A credit note returns money to the customer, so it has no payment due date of its own. In the customer portal the due-date row and the past-invoices table hide the deadline for credit notes. In the outstanding report, the credit note's amount is netted against the original invoice it corrects, so the customer's balance reflects what is actually still owed.
 
 Tip: Because you create the credit note from the original invoice, the two documents match exactly and your records stay consistent.
