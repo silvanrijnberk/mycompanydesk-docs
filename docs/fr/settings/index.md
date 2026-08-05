@@ -42,7 +42,8 @@ Paramètres partagés. Les modifications faites ici s'appliquent à tous les mem
 | **E-mail** | L'adresse depuis laquelle vos factures et devis sont envoyés |
 | **Votre site et domaine** | Votre propre site et votre nom de domaine |
 | **Modules** | Activez ou désactivez des parties de l'application : devis, scan de reçus, contrats, projets, site web, newsletters |
-| **Accès et comptable** | Donnez à un partenaire, un employé ou votre comptable accès à votre administration |
+| **Personnes ayant accès** | Invitez des collègues et définissez ce qu'ils peuvent voir et faire |
+| **Votre comptable** | Invitez votre comptable et gérez son accès |
 
 ## Abonnement et données
 
@@ -51,11 +52,12 @@ Paramètres partagés. Les modifications faites ici s'appliquent à tous les mem
 | **Votre abonnement** | Ce que vous payez et ce qui est inclus |
 | **Mes demandes** | Consultez et gérez vos tickets de support |
 | **Télécharger les données** | Tout ce que vous avez enregistré, en un seul fichier |
+| **Supprimer les données** | Supprimer toutes les données de l'entreprise de votre espace de travail |
 | **Résilier le compte** | Arrêter MyCompanyDesk |
 
 ## Lignes réservées aux administrateurs
 
-Trois lignes ne sont visibles que pour les administrateurs de l'équipe : **Accès et comptable**, **Votre abonnement** et **Résilier le compte**. Si vous avez été invité comme membre sans droits d'administrateur, ces lignes sont masquées pour vous; demandez à l'administrateur de l'espace de travail d'effectuer ces modifications.
+Cinq lignes ne sont visibles que pour les administrateurs de l'équipe : **Personnes ayant accès**, **Votre comptable**, **Votre abonnement**, **Supprimer les données** et **Résilier le compte**. Si vous avez été invité comme membre sans droits d'administrateur, ces lignes sont masquées pour vous; demandez à l'administrateur de l'espace de travail d'effectuer ces modifications.
 
 ## Recherche
 
@@ -83,12 +85,14 @@ Quelques pages n'apparaissent que via la recherche, pour garder la liste princip
 | Envoyer mes factures depuis ma propre adresse e-mail | **E-mail** |
 | Configurer mon site web ou mon domaine | **Votre site et domaine** |
 | Activer ou désactiver devis, projets ou newsletters | **Modules** |
-| Donner accès à mon comptable | **Accès et comptable** (administrateurs) |
+| Inviter un collègue | **Personnes ayant accès** (administrateurs) |
+| Donner accès à mon comptable | **Votre comptable** (administrateurs) |
 | Modifier les paramètres de suivi du temps | **Agenda** |
 | Mettre à niveau ou consulter mon abonnement | **Votre abonnement** (administrateurs) |
 | Connecter ma banque | **Connexion bancaire** |
 | Ajouter ou modifier des catégories de dépense | **Catégories de dépense** |
 | Télécharger une copie de mes données | **Télécharger les données** |
+| Supprimer les données de mon entreprise | **Supprimer les données** (administrateurs) |
 | Résilier mon compte | **Résilier le compte** (administrateurs) |
 
 La synchronisation d'agenda avec Google ou Outlook se trouve maintenant aussi sous **Paramètres** > **Agenda**. Vous pouvez toujours l'ouvrir directement depuis la page Agenda.

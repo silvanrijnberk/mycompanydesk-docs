@@ -5,16 +5,21 @@ last_verified: 2026-08-04
 
 # Toegang en boekhouder
 
-Geef een partner, medewerker of je boekhouder toegang tot je administratie. Iedereen krijgt een eigen login.
+Geef een partner, medewerker of je boekhouder toegang tot je administratie. Iedereen krijgt een eigen login. In de app zijn deze instellingen opgesplitst in twee pagina's: **Mensen met toegang** en **Je boekhouder**.
 
 ## Waar vind je het
 
-Open **Instellingen** via het menu en kies **Toegang en boekhouder**, of ga direct naar `/settings/team`. Oude links naar de teaminstellingen verwijzen hierheen door.
+Open **Instellingen** via het menu en kies een van beide:
 
-De pagina heeft twee onderdelen:
+- **Mensen met toegang** om teamgenoten uit te nodigen en paginarechten in te stellen.
+- **Je boekhouder** om je boekhouder uit te nodigen.
 
-- **Mensen met toegang**: nodig teamgenoten uit en bepaal wat ze kunnen zien en doen. Dit onderdeel vereist het Pro-abonnement; op Free en Starter zie je een upgrade-melding. Op Pro zit er geen limiet op het aantal mensen dat je uitnodigt.
-- **Boekhouder**: nodig je boekhouder uit en beheer diens toegang. Dit onderdeel is gratis op elk abonnement.
+Je kunt ook direct naar `/settings/toegang` of `/settings/boekhouder`. De oude app-route `/settings/team` verwijst door naar `/settings/toegang`. Deze docs-pagina beschrijft beide app-pagina's.
+
+De twee pagina's zijn:
+
+- **Mensen met toegang**: nodig teamgenoten uit en bepaal wat ze kunnen zien en doen. Deze pagina vereist het Pro-abonnement; op Free en Starter zie je een upgrade-melding. Op Pro zit er geen limiet op het aantal mensen dat je uitnodigt.
+- **Je boekhouder**: nodig je boekhouder uit en beheer diens toegang. Deze pagina is gratis op elk abonnement.
 
 ## Wat staat er op de pagina
 
@@ -57,7 +62,7 @@ Adminacties per rij: **Boekhouder uitnodigen**, het paneel **Toegang beheren** e
 
 Zodra een boekhouder is gekoppeld, kun je MyCompanyDesk automatisch records laten aanleveren. De export bundelt verkoopfacturen, uitgaven en een btw-overzicht in een formaat dat het pakket van je boekhouder kan inlezen, zodat de cijfers niet overgetypt hoeven te worden.
 
-Open de rij van de boekhouder in **Instellingen → Toegang en boekhouder**, kies **Automatisch doorsturen**, selecteer de onderdelen die je wilt meesturen (bijvoorbeeld verkoopfacturen, uitgaven en een btw-overzicht), het moment van afleveren en het formaat. Een afleverlog toont wat wanneer is verstuurd.
+Open de rij van de boekhouder in **Instellingen → Je boekhouder**, kies **Automatisch doorsturen**, selecteer de onderdelen die je wilt meesturen (bijvoorbeeld verkoopfacturen, uitgaven en een btw-overzicht), het moment van afleveren en het formaat. Een afleverlog toont wat wanneer is verstuurd.
 
 ### Activiteitsoverzicht van de boekhouder
 

@@ -74,6 +74,17 @@ Als je boekhouder bent en klantadministraties beheert, wordt de pagina een triag
 
 De chips en werken hetzelfde als in de gecombineerde werkruimte, maar rijen gebruiken geaggregeerde signalen zodat het overzicht meegroeit met grote klantenbestanden. Het overzicht telt klantgeld niet bij elkaar op.
 
+### Medewerkers van het kantoor
+
+Werk je in een boekhouderskantoor, dan heeft het kantoor een eigen ledenlijst. Beheerders kunnen collega's uitnodigen via **Kantoorleden beheren**; iedereen krijgt een rol (lid of beheerder). Iemand toevoegen aan het kantoor geeft hem of haar nog geen toegang tot een klant; dat geef je per klant vanaf de Werkruimtes-pagina. In de rij van elk medewerker zie je bij hoeveel klanten diegene is gekoppeld, zodat je weet wie waar mee bezig is.
+
+### Werk aan een klant en verzoeken
+
+Elke klantrij toont een werk-chip zodra er iets wacht. Open deze om te zien wie de klant nu oppakt en wat je aan de klant hebt gevraagd.
+
+- **Ik pak dit op** wijst de klant aan jou toe. **Toch niet, geef terug** geeft het werk weer vrij, zodat een collega het kan oppakken. De status wordt live bijgewerkt voor iedereen in het kantoor, zodat twee mensen niet onwetend dezelfde aangifte starten.
+- **Vraag de klant** maakt een taak aan in de eigen werkruimte van de klant. Kies een soort verzoek (bijvoorbeeld ontbrekende bonnen), voeg een titel en een notitie toe, en de klant ziet het als een gewoon to-do. Zodra de klant de taak afvinkt, is het verzoek opgelost en verdwijnt de werk-chip. Er is geen handmatige status 'wacht op klant' die je moet terugzetten; die volgt gewoon uit een open verzoek.
+
 ## Een eigen bedrijf toevoegen
 
 Open **Bedrijf toevoegen** en geef het nieuwe bedrijf een naam.
@@ -81,6 +92,21 @@ Open **Bedrijf toevoegen** en geef het nieuwe bedrijf een naam.
 Als je een betaald abonnement hebt (Starter of Pro), toont de app de extra kosten voordat je bevestigt. Tijdens je eigen Office-proefperiode betaal je niets voor het extra bedrijf; daarna wordt het tegen het getoonde tarief op je abonnement gezet.
 
 Als je een gratis Office-werkruimte hebt (bijvoorbeeld via een gunst of founding-member-regeling), blijft je eerste bedrijf gratis en biedt de app nu een aparte checkout voor een tweede bedrijf. De prijs staat vooraf vermeld; alleen het tweede bedrijf wordt op een eigen add-on-abonnement gezet. Nadat de betaling is bevestigd, kun je het tweede bedrijf een naam geven.
+
+## Instellingen overnemen van een ander bedrijf
+
+Wanneer je een bedrijf toevoegt, of later via het zijpaneel **Beheren** van een bestaand bedrijf, kun je de inrichting overnemen van een ander bedrijf dat je al hebt. Dat scheelt het opnieuw invoeren van je huisstijl, factuurlayout en standaarden.
+
+Zet **Instellingen overnemen van een bedrijf dat je al hebt** aan en kies de bron. Heb je maar één ander bedrijf, dan wordt de keuze getoond als een schakelaar met de naam. Deze groepen kun je overnemen:
+
+- **Huisstijl** (logo, kleuren en lettertypes).
+- **Facturen en offertes** (layout, betaaltermijn, herinneringen en je eigen e-mailteksten).
+- **Btw** (aangifteperiode en standaardtarief).
+- **Uitgaven en bonnen** (standaardcategorie, kilometervergoeding en je eigen categorieën).
+- **Onderdelen** (welke onderdelen aan staan, plus de opzet van je urenregistratie).
+- **Adres en contact** (adres, telefoon, e-mail en website).
+
+KVK-nummer, btw-nummer, bankrekening en factuurnummering gaan nooit mee: dat hoort bij één bedrijf.
 
 ## Een bedrijf beheren of verwijderen
 
@@ -122,6 +148,6 @@ In een klantwerkruimte is de rail korter, want onderdelen die bij de klant zelf 
 
 ## Gerelateerd
 
-- [Toegang en boekhouder](/nl/settings/team) voor het uitnodigen van boekhouders en instellen van paginarechten
+- [Toegang en boekhouder](/nl/settings/team) voor het uitnodigen van teamgenoten en boekhouders en het instellen van paginarechten
 - [Rapporten](/nl/features/reports) voor de weggebleven-klantenweergave en andere rapporten
 - [Dashboard](/nl/features/dashboard) voor de dagelijkse briefing van één werkruimte

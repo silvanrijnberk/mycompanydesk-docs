@@ -74,6 +74,17 @@ Wenn Sie Steuerberater sind und Mandanten-Administrationen verwalten, wird die S
 
 Die Chips funktionieren wie im kombinierten Arbeitsbereich, aber die Zeilen verwenden aggregierte Signale, sodass der Ueberblick auch bei vielen Mandanten skaliert. Mandantengeld wird nicht summiert.
 
+### Mitglieder der Steuerberaterkanzlei
+
+Arbeiten Sie in einer Steuerberaterkanzlei, hat die Kanzlei eine eigene Mitgliederliste. Admins koennen Kollegen unter **Kanzleimitglieder verwalten** einladen; jedes Mitglied erhaelt eine Rolle (Mitglied oder Admin). Jemanden zur Kanzlei hinzuzufuegen gibt ihm oder ihr noch keinen Zugriff auf einen Mandanten; den gewaehren Sie weiterhin pro Mandant auf der Arbeitsbereiche-Seite. In der Zeile jedes Kollegen sehen Sie, bei wie vielen Mandanten diese Person zugewiesen ist, damit Sie wissen, wer an wem arbeitet.
+
+### Mandantenarbeit und -anfragen
+
+Jede Mandantenzeile zeigt einen Arbeit-Chip, sobald etwas wartet. Oeffnen Sie ihn, um zu sehen, wer den Mandanten gerade bearbeitet und was Sie beim Mandanten angefragt haben.
+
+- **Ich uebernehme das** weist den Mandanten Ihnen zu. **Ich uebernehme doch nicht** gibt die Arbeit frei, damit ein Kollege sie uebernehmen kann. Der Status wird fuer alle in der Kanzlei live aktualisiert, sodass zwei Personen nicht ungewollt dieselbe Abgabe beginnen.
+- **Mandanten fragen** erstellt eine Aufgabe im eigenen Arbeitsbereich des Mandanten. Waehlen Sie eine Anfragenvorlage (zum Beispiel fehlende Belege), fuegen Sie Titel und Notiz hinzu, und der Mandant sieht sie als normale To-do. Sobald der Mandant die Aufgabe erledigt, ist die Anfrage abgeschlossen und der Arbeit-Chip verschwindet. Es gibt keinen manuellen "Wartet auf Mandant"-Status, der zurueckgesetzt werden muss; er ergibt sich einfach aus einer offenen Anfrage.
+
 ## Ein eigenes Unternehmen hinzufuegen
 
 Oeffnen Sie **Unternehmen hinzufuegen** und geben Sie dem neuen Unternehmen einen Namen.
@@ -81,6 +92,21 @@ Oeffnen Sie **Unternehmen hinzufuegen** und geben Sie dem neuen Unternehmen eine
 Bei einem kostenpflichtigen Plan (Starter oder Pro) zeigt die App die zusaetzlichen Kosten vor der Bestaetigung an. Waehrend Ihrer eigenen Office-Testphase zahlen Sie nichts fuer das zusaetzliche Unternehmen; danach wird es zum angezeigten Preis Ihrem Abonnement hinzugefuegt.
 
 Wenn Ihr Arbeitsbereich ein kostenloses Office aufgrund einer Regelung wie einer Gunst- oder Founding-Member-Regelung hat, bleibt das erste Unternehmen kostenlos und die App bietet jetzt einen separaten Checkout fuer ein zweites Unternehmen. Der Preis wird im Voraus angezeigt; nur das zweite Unternehmen wird ueber ein eigenes Add-on-Abonnement abgerechnet. Nach Bestaetigung der Zahlung koennen Sie das zweite Unternehmen benennen.
+
+## Einstellungen von einem anderen Unternehmen uebernehmen
+
+Wenn Sie ein Unternehmen hinzufuegen oder spaeter ueber die Seitenschublade **Verwalten** eines bestehenden Unternehmens, koennen Sie die Einrichtung von einem anderen Unternehmen uebernehmen, das Sie bereits haben. So sparen Sie sich das erneute Eingeben Ihrer Corporate Identity, Rechnungslayouts und Standardeinstellungen.
+
+Schalten Sie **Einstellungen von einem Unternehmen uebernehmen, das Sie bereits haben** ein und waehlen Sie die Quelle. Haben Sie nur ein anderes Unternehmen, wird die Auswahl als Schalter mit dessen Namen angezeigt. Folgende Gruppen koennen uebernommen werden:
+
+- **Erscheinungsbild** (Logo, Farben und Schriften).
+- **Rechnungen und Angebote** (Layout, Zahlungsziel, Mahnungen und Ihre eigenen E-Mail-Texte).
+- **MwSt.** (Abgabezeitraum und Standardsteuersatz).
+- **Ausgaben und Belege** (Standardkategorie, Kilometerpauschale und Ihre eigenen Kategorien).
+- **Funktionen** (welche Funktionen aktiviert sind, plus der Aufbau Ihrer Zeiterfassung).
+- **Adresse und Kontakt** (Adresse, Telefon, E-Mail und Website).
+
+Handelsregisternummer, MwSt.-Nummer, Bankverbindung und Rechnungsnummernkreis werden nie uebernommen: diese gehoeren jeweils nur zu einem Unternehmen.
 
 ## Ein Unternehmen verwalten oder entfernen
 
@@ -122,6 +148,6 @@ In einem Mandanten-Arbeitsbereich ist die Seitenleiste kuerzer, denn Teile, die 
 
 ## Verwandt
 
-- [Zugang und Steuerberater](/de/settings/team) fuer das Einladen von Steuerberatern und das Festlegen von Seitenberechtigungen
+- [Zugang und Steuerberater](/de/settings/team) fuer das Einladen von Teammitgliedern und Steuerberatern sowie das Festlegen von Seitenberechtigungen
 - [Berichte](/de/features/reports) fuer die Ansicht verlorener Kunden und weitere Berichte
 - [Dashboard](/de/features/dashboard) fuer das taegliche Briefing eines Arbeitsbereichs

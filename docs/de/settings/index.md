@@ -42,7 +42,8 @@ Geteilte Einstellungen. Änderungen hier gelten für alle in Ihrem Arbeitsbereic
 | **E-Mail** | Von welcher Adresse Ihre Rechnungen und Angebote verschickt werden |
 | **Deine Website und Domain** | Ihre eigene Website und Ihr Domainname |
 | **Module** | Teile der App ein- oder ausschalten: Angebote, Belegscan, Verträge, Projekte, Website, Newsletter |
-| **Zugang und Buchhalter** | Geben Sie einem Partner, Mitarbeiter oder Ihrem Buchhalter Zugang zu Ihrer Buchhaltung |
+| **Personen mit Zugang** | Teamkollegen einladen und festlegen, was sie sehen und tun können |
+| **Ihr Steuerberater** | Ihren Steuerberater einladen und dessen Zugang verwalten |
 
 ## Abonnement und Daten
 
@@ -51,11 +52,12 @@ Geteilte Einstellungen. Änderungen hier gelten für alle in Ihrem Arbeitsbereic
 | **Dein Abonnement** | Was Sie zahlen und was enthalten ist |
 | **Meine Anfragen** | Ihre Supportanfragen anzeigen und verwalten |
 | **Daten herunterladen** | Alles, was Sie gespeichert haben, in einer Datei |
+| **Daten löschen** | Alle Unternehmensdaten aus Ihrem Arbeitsbereich entfernen |
 | **Konto kündigen** | MyCompanyDesk beenden |
 
 ## Zeilen nur für Administratoren
 
-Drei Zeilen sind nur für Team-Administratoren sichtbar: **Zugang und Buchhalter**, **Dein Abonnement** und **Konto kündigen**. Wurden Sie als Teammitglied ohne Administratorrechte eingeladen, sehen Sie diese Zeilen nicht; bitten Sie den Administrator des Arbeitsbereichs um diese Änderungen.
+Fünf Zeilen sind nur für Team-Administratoren sichtbar: **Personen mit Zugang**, **Ihr Steuerberater**, **Dein Abonnement**, **Daten löschen** und **Konto kündigen**. Wurden Sie als Teammitglied ohne Administratorrechte eingeladen, sehen Sie diese Zeilen nicht; bitten Sie den Administrator des Arbeitsbereichs um diese Änderungen.
 
 ## Suche
 
@@ -83,12 +85,14 @@ Einige Seiten erscheinen nur über die Suche, damit die Hauptliste ruhig bleibt:
 | Rechnungen von meiner eigenen E-Mail-Adresse senden | **E-Mail** |
 | Meine Website oder Domain einrichten | **Deine Website und Domain** |
 | Angebote, Projekte oder Newsletter ein- oder ausschalten | **Module** |
-| Meinem Buchhalter Zugang geben | **Zugang und Buchhalter** (Administratoren) |
+| Einen Teamkollegen einladen | **Personen mit Zugang** (Administratoren) |
+| Meinem Buchhalter Zugang geben | **Ihr Steuerberater** (Administratoren) |
 | Zeiterfassungs-Einstellungen ändern | **Zeitplan** |
 | Mein Abonnement upgraden oder einsehen | **Dein Abonnement** (Administratoren) |
 | Meine Bank verbinden | **Bankverbindung** |
 | Ausgabenkategorien hinzufügen oder bearbeiten | **Ausgabenkategorien** |
 | Eine Kopie meiner Daten herunterladen | **Daten herunterladen** |
+| Meine Unternehmensdaten löschen | **Daten löschen** (Administratoren) |
 | Mein Konto kündigen | **Konto kündigen** (Administratoren) |
 
 Die Kalendersynchronisierung mit Google oder Outlook finden Sie jetzt auch unter **Einstellungen** > **Zeitplan**. Sie können sie weiterhin direkt von der Zeitplan-Seite aus öffnen.

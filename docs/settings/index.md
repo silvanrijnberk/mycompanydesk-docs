@@ -40,7 +40,8 @@ Shared settings. Changes here apply to everyone in your workspace.
 | **E-mail** | The address your invoices and quotes are sent from |
 | **Je website en domein** (your website and domain) | Your own site and domain name |
 | **Onderdelen** (features) | Switch parts of the app on or off: quotes, receipt scanning, contracts, projects, website, newsletters |
-| **Toegang en boekhouder** (access and accountant) | Give a partner, employee or your accountant access to your books |
+| **Mensen met toegang** (people with access) | Invite teammates and set what they can see and do |
+| **Je boekhouder** (your accountant) | Invite your accountant and manage their access |
 
 ## Abonnement en gegevens (subscription and data)
 
@@ -49,11 +50,12 @@ Shared settings. Changes here apply to everyone in your workspace.
 | **Je abonnement** (your subscription) | What you pay and what is included |
 | **Mijn verzoeken** (my requests) | View and manage your support questions |
 | **Gegevens downloaden** (download your data) | Everything you have stored, in one file |
+| **Gegevens wissen** (wipe data) | Remove all business data from your workspace |
 | **Account opzeggen** (cancel your account) | Stop using MyCompanyDesk |
 
 ## Admin-only rows
 
-Three rows are only visible to team admins: **Toegang en boekhouder**, **Je abonnement** and **Account opzeggen**. If you were invited as a team member without admin rights, these rows are hidden for you; ask the workspace admin to make those changes.
+Five rows are only visible to team admins: **Mensen met toegang**, **Je boekhouder**, **Je abonnement**, **Gegevens wissen** and **Account opzeggen**. If you were invited as a team member without admin rights, these rows are hidden for you; ask the workspace admin to make those changes.
 
 ## Search
 
@@ -81,12 +83,14 @@ A few pages only appear through search, to keep the main list calm:
 | Send invoices from my own email address | **E-mail** |
 | Set up my website or domain | **Je website en domein** |
 | Turn quotes, projects or newsletters on or off | **Onderdelen** |
-| Give my accountant access | **Toegang en boekhouder** (admins) |
+| Invite a teammate | **Mensen met toegang** (admins) |
+| Give my accountant access | **Je boekhouder** (admins) |
 | Change time-registration options | **Uren & agenda** |
 | Upgrade or check my plan | **Je abonnement** (admins) |
 | Connect my bank | **Bankkoppeling** |
 | Add or edit expense categories | **Uitgavencategorieën** |
 | Download a copy of my data | **Gegevens downloaden** |
+| Wipe my business data | **Gegevens wissen** (admins) |
 | Cancel my account | **Account opzeggen** (admins) |
 
 Calendar sync with Google or Outlook is now also listed under **Instellingen** > **Uren & agenda**. You can still open it directly from the Schedule page.

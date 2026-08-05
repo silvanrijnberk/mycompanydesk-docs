@@ -40,7 +40,8 @@ Gedeelde instellingen. Wijzigingen hier gelden voor iedereen in je werkruimte.
 | **E-mail** | Vanaf welk adres je facturen en offertes verstuurt |
 | **Je website en domein** | Je eigen site en domeinnaam |
 | **Onderdelen** | Zet delen van de app aan of uit: offertes, bonnetjes scannen, contracten, projecten, website, nieuwsbrieven |
-| **Toegang en boekhouder** | Geef een partner, medewerker of je boekhouder toegang tot je administratie |
+| **Mensen met toegang** | Nodig teamgenoten uit en bepaal wat ze kunnen zien en doen |
+| **Je boekhouder** | Nodig je boekhouder uit en beheer diens toegang |
 
 ## Abonnement en gegevens
 
@@ -49,11 +50,12 @@ Gedeelde instellingen. Wijzigingen hier gelden voor iedereen in je werkruimte.
 | **Je abonnement** | Wat je betaalt en wat erbij zit |
 | **Mijn verzoeken** | Bekijk en beheer je supportvragen |
 | **Gegevens downloaden** | Alles wat je hebt opgeslagen, in één bestand |
+| **Gegevens wissen** | Verwijder alle bedrijfsgegevens uit je werkruimte |
 | **Account opzeggen** | Stoppen met MyCompanyDesk |
 
 ## Rijen alleen voor beheerders
 
-Drie rijen zijn alleen zichtbaar voor teambeheerders: **Toegang en boekhouder**, **Je abonnement** en **Account opzeggen**. Ben je uitgenodigd als teamlid zonder beheerdersrechten, dan zie je deze rijen niet; vraag de beheerder van de werkruimte om die wijzigingen te doen.
+Vijf rijen zijn alleen zichtbaar voor teambeheerders: **Mensen met toegang**, **Je boekhouder**, **Je abonnement**, **Gegevens wissen** en **Account opzeggen**. Ben je uitgenodigd als teamlid zonder beheerdersrechten, dan zie je deze rijen niet; vraag de beheerder van de werkruimte om die wijzigingen te doen.
 
 ## Zoeken
 
@@ -81,12 +83,14 @@ Een paar pagina's verschijnen alleen via zoeken, zodat de hoofdlijst rustig blij
 | Facturen versturen vanaf mijn eigen e-mailadres | **E-mail** |
 | Mijn website of domein regelen | **Je website en domein** |
 | Offertes, projecten of nieuwsbrieven aan- of uitzetten | **Onderdelen** |
-| Mijn boekhouder toegang geven | **Toegang en boekhouder** (beheerders) |
+| Een teamgenoot uitnodigen | **Mensen met toegang** (beheerders) |
+| Mijn boekhouder toegang geven | **Je boekhouder** (beheerders) |
 | Instellingen voor urenregistratie wijzigen | **Uren & agenda** |
 | Mijn abonnement upgraden of bekijken | **Je abonnement** (beheerders) |
 | Mijn bank koppelen | **Bankkoppeling** |
 | Uitgavecategorieën toevoegen of bewerken | **Uitgavencategorieën** |
 | Een kopie van mijn gegevens downloaden | **Gegevens downloaden** |
+| Mijn bedrijfsgegevens wissen | **Gegevens wissen** (beheerders) |
 | Mijn account opzeggen | **Account opzeggen** (beheerders) |
 
 Agenda's synchroniseren met Google of Outlook vind je nu ook onder **Instellingen** > **Uren & agenda**. Je kunt het nog steeds direct openen vanaf de Uren & agenda-pagina.
