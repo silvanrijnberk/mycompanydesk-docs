@@ -100,7 +100,7 @@ Bij woningen waarvan een WOZ-geschiedenis uit het Kadaster is opgehaald, project
 Vastgoed-objecten die als bezitting worden bijgehouden, tonen een vermogensoverzicht op de detailpagina:
 
 - **Aanschafwaarde**: het bedrag dat voor het activum is betaald.
-- **Geactiveerde waarde**: het zakelijke deel van de aanschafwaarde, na aftrek van een eventueel privégebruik-deel.
+- **Geactiveerde waarde**: het zakelijke deel van de geactiveerde kosten, na toepassing van het aftrekpercentage van de categorie en eventueel privégebruikpercentage. Dit gebruikt dezelfde formule als de debetpost op de activarekening in het grootboek en de afschrijvingsregeling (`apps/api/src/modules/ledger/posting-engine.js`), zodat de drie plekken op één lijn blijven.
 - **Cumulatieve afschrijving**: alles wat tot nu toe is afgeschreven.
 - **Afschrijving dit jaar**: het afschrijfbedrag voor het huidige kalenderjaar.
 - **Boekwaarde**: de resterende waarde op de balans (geactiveerde waarde min cumulatieve afschrijving).

@@ -100,7 +100,7 @@ Pour les biens dont un historique WOZ a ete recupere depuis le Kadaster, MyCompa
 Les objets de type Propriete qui sont suivis comme un actif immobilise affichent un resume de l'actif sur la page de detail :
 
 - **Valeur d'acquisition** : le montant paye pour l'actif.
-- **Valeur immobilisee** : la partie professionnelle de la valeur d'acquisition, apres deduction d'une eventuelle part d'usage prive.
+- **Valeur immobilisee** : la part professionnelle des couts immobilises apres application du taux de deduction de la categorie et d'un eventuel pourcentage d'usage prive. Cette valeur utilise la meme formule que l'ecriture au debit du compte d'immobilisation en comptabilite et le plan d'amortissement (`apps/api/src/modules/ledger/posting-engine.js`), de sorte que les trois surfaces restent alignees.
 - **Amortissements cumules** : tout ce qui a deja ete amorti.
 - **Amortissement de l'annee** : la dotation aux amortissements pour l'annee civile en cours.
 - **Valeur comptable** : la valeur residuelle au bilan (valeur immobilisee moins amortissements cumules).

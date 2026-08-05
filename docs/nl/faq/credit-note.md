@@ -1,6 +1,6 @@
 ---
 title: "Creditnota"
-last_verified: 2026-07-02
+last_verified: 2026-08-05
 chatbot:
   triggers: ["credit note", "create credit note", "issue credit", "credit invoice", "creditnota", "creditnota aanmaken", "gutschrift erstellen", "note de credit", "avoir"]
   actions:
@@ -15,5 +15,7 @@ Zo maak je een creditnota:
 4. Verstuur de creditnota naar de klant
 
 Je kunt de bedragen tijdens het aanmaken niet aanpassen; verstuurde documenten zijn vergrendeld, dus de creditnota is altijd een exacte spiegel van het origineel. Wil je maar een deel corrigeren? Maak dan eerst de volledige creditnota en stuur daarna een nieuwe factuur met het juiste bedrag.
+
+Een creditnota brengt geld terug naar de klant, dus heeft deze geen eigen vervaldatum. In het klantenportaal verbergt de vervaldatumrij en de tabel met eerdere facturen de deadline voor creditnota's. In het openstaande-debiteurenoverzicht wordt het bedrag van de creditnota verrekend met de originele factuur waarnaar hij verwijst, zodat het saldo van de klant laat zien wat er écht nog openstaat.
 
 Tip: Doordat je de creditnota vanaf de originele factuur maakt, sluiten beide documenten precies op elkaar aan en blijft je administratie kloppend.

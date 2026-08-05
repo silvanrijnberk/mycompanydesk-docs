@@ -106,7 +106,9 @@ Meestal berekent MyCompanyDesk het BTW-bedrag uit het tarief en het nettobedrag.
 
 ### Correcties in vergrendelde perioden
 
-Zit een uitgave in een vergrendelde BTW-periode, dan blokkeert het formulier wijzigingen in de financiële velden en biedt een correctiepad. De correctie wordt in de huidige open periode aangemaakt en verwijst naar de oorspronkelijke vergrendelde uitgave, zodat je later nog kunt zien wat er is gewijzigd.
+Zit een uitgave in een vergrendelde BTW-periode, dan blokkeert het formulier wijzigingen in de financiële velden en biedt een correctiepad. De foutmelding komt via de code `PERIOD_LOCKED`, zodat je een Nederlandse toelichting ziet in plaats van de ruwe backend-tekst. De correctie wordt in een latere, open periode aangemaakt en verwijst naar de oorspronkelijke vergrendelde uitgave, zodat je later nog kunt zien wat er is gewijzigd.
+
+De poort vergelijkt de waarden die daadwerkelijk weggeschreven zouden worden, niet alleen de velden die zichtbaar zijn in het formulier. Dat geldt ook voor meerregelige `lines`, investeringsvlaggen en afschrijvingsinvoer zoals restwaarde, gebruiksduur en privégebruikpercentage. Elke financieel relevante wijziging in een ingediende periode wordt geweigerd; niet-financiële aanpassingen zoals notities, betaalstatus of bonbijlagen blijven wel mogelijk.
 
 ## Uitgaven koppelen
 
@@ -139,6 +141,19 @@ De uitgave wordt aangemaakt met één regel voor het totaal aan zakelijke kilome
 <!-- TODO(source-missing): Het Nederlandse kilometervergoedingstarief per kilometer staat nog niet in sources/. Quote het tarief niet in de documentatie totdat een mens het huidige bedrag heeft gecontroleerd op belastingdienst.nl. -->
 
 Als je werkruimte een bedrijfsauto gebruikt, zijn de werkelijke autokosten al als uitgave geboekt; een aparte kilometervergoeding is dan niet nodig.
+
+## Investeringen en afschrijving
+
+Categorieën met `auto_flag_investment = true` (doorgaans uitrusting en andere investeringen) zetten een uitgave automatisch om in een investering:
+
+- De uitgave krijgt `is_investment = true`.
+- Er wordt een maandelijkse afschrijvingsregeling aangemaakt op basis van `useful_life_months` van de categorie (standaard 60 maanden als deze niet is ingesteld).
+- De regeling gebruikt lineaire afschrijving met dagpro rata voor de eerste en laatste kalendermaand, conform de richtlijnen van de Belastingdienst.
+- Regels worden bewaard in `expense_depreciation_lines` en doorgegeven aan rapportages.
+
+De afschrijfbare basis is gelijk aan de geactiveerde waarde die de grootboekpost boekt naar de activarekening (`apps/api/src/modules/ledger/posting-engine.js`), niet het bruto-bedrag exclusief BTW. Daarmee worden ook niet-aftrekbare voorbelasting (voor categorieën met een aftrekpercentage onder de 100%) en het zakelijke deel na privégebruikpercentage meegenomen, zodat de afschrijvingsregeling, het objectenregister en de KIA-berekening allemaal van hetzelfde bedrag uitgaan.
+
+Het bewerken van categorie, datum, bedrag, BTW-behandeling, privégebruikpercentage, gebruiksduur of restwaarde op een bestaande uitgave triggert herberekening. Als een bestaande afschrijvingsregel al in een vergrendelde BTW-periode valt, wordt de herberekening geweigerd, zodat de ingediende aangifte niet stilletjes wijzigt. Het terugzetten van een investeringsuitgave naar een niet-investeringscategorie verwijdert de afschrijvingsregels.
 
 ## Terugkerende uitgaven
 

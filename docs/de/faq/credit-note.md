@@ -1,6 +1,6 @@
 ---
 title: "Gutschrift"
-last_verified: 2026-07-02
+last_verified: 2026-08-05
 chatbot:
   triggers: ["credit note", "create credit note", "issue credit", "credit invoice", "creditnota", "creditnota aanmaken", "gutschrift erstellen", "note de credit", "avoir"]
   actions:
@@ -15,5 +15,7 @@ So erstellen Sie eine Gutschrift:
 4. Senden Sie die Gutschrift an den Kunden
 
 Die Beträge lassen sich beim Erstellen nicht anpassen; versendete Dokumente sind gesperrt, die Gutschrift spiegelt das Original daher immer exakt wider. Für eine Teilkorrektur erstellen Sie zuerst die vollständige Gutschrift und stellen anschließend eine neue Rechnung über den richtigen Betrag aus.
+
+Eine Gutschrift erstattet dem Kunden Geld und hat daher kein eigenes Zahlungsziel. Im Kundenportal werden die Fälligkeitszeile und die Tabelle früherer Rechnungen für Gutschriften ausgeblendet. Im offene-Posten-Bericht wird der Betrag der Gutschrift gegen die korrigierte Originalrechnung verrechnet, sodass der Saldo des Kunden widerspiegelt, was tatsächlich noch offen ist.
 
 Tipp: Da Sie die Gutschrift direkt aus der Originalrechnung erstellen, passen beide Dokumente exakt zusammen und Ihre Buchhaltung bleibt stimmig.

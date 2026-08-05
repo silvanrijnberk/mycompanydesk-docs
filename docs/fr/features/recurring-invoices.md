@@ -76,6 +76,12 @@ A chaque declenchement d'une facture recurrente, une nouvelle facture est creee 
 - Elle commence en tant que **Brouillon** (a examiner et envoyer) ou est envoyee automatiquement si configure
 - Chaque facture generee est independante -- vous pouvez la modifier sans affecter le modele
 
+### Periodes de TVA verrouillees
+
+Si la date programmee tombe dans une periode de TVA deja declaree et verrouillee, MyCompanyDesk ne cree **pas** de facture. Cette periode est ignoree de maniere permanente pour la generation automatique (reessayer ne reussirait jamais de lui-meme), et le planning passe a la prochaine echeance. Vous recevez une notification pour decider : creez une facture a date actuelle pour le client, ou declarez le chiffre d'affaires via une declaration rectificative.
+
+Un modele en pause ou recomment relance est particulierement susceptible de rencontrer ce cas, car la prochaine date programmee peut se retrouver en retard sur le dernier trimestre declare.
+
 ## Consulter l'historique
 
 La page de detail de la facture recurrente affiche toutes les factures precedemment generees, vous permettant de suivre l'historique complet de facturation.

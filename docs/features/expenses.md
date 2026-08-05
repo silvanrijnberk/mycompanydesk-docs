@@ -85,7 +85,9 @@ The VAT amount is normally calculated from the rate and the net amount. If the s
 
 ### Corrections in locked periods
 
-When an expense sits in a locked VAT period, the detail form blocks changes to the financial fields and offers a correction path. The correction is created in the current open period and carries a note that links back to the original locked expense, so the audit trail stays intact.
+When an expense sits in a locked VAT period, the detail form blocks changes to the financial fields and offers a correction path. The error is surfaced through the `PERIOD_LOCKED` code, so you see a Dutch explanation instead of the raw backend message. The correction is created in a later, open period and carries a note that links back to the original locked expense, so the audit trail stays intact.
+
+The gate compares the values that are actually about to be written, not just the fields visible in the form. That includes multi-rate `lines`, investment toggles, and depreciation inputs such as useful life, residual value and private-use percentage. Any financially meaningful change on a filed period is refused; inert edits such as notes, payment status or receipt attachments still go through.
 
 ## Multi-rate lines
 
@@ -113,7 +115,9 @@ Categories with `auto_flag_investment = true` (typically equipment and other cap
 - The schedule uses straight-line depreciation with daily pro-rata for the first and last calendar month, in line with Belastingdienst guidance.
 - Lines live in `expense_depreciation_lines` and feed your reports.
 
-Editing the category, date or amount on an existing expense re-triggers the recompute - old lines are deleted and a fresh schedule is written. Toggling an expense out of an investment-flagged category cleans up the depreciation lines too.
+The depreciable basis equals the capitalized cost that the ledger posts to the asset account (`apps/api/src/modules/ledger/posting-engine.js`), not the raw amount excluding VAT. That means it also folds in non-deductible input VAT (for categories with a deduction percentage below 100%) and the business share after private-use percentage, so the schedule, the object register and the KIA calculation all read from the same figure.
+
+Editing the category, date, amount, VAT treatment, private-use percentage, useful life or residual value on an existing expense re-triggers the recompute. If any existing depreciation line already falls inside a locked VAT period, the recompute is refused so the filed return is not restated silently. Toggling an expense out of an investment-flagged category cleans up the depreciation lines too.
 
 ## Linking and filtering
 

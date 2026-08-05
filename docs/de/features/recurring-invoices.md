@@ -76,6 +76,12 @@ Jedes Mal, wenn eine wiederkehrende Rechnung ausgelöst wird, wird eine neue Rec
 - Sie beginnt als **Entwurf** (überprüfen und versenden) oder wird automatisch versendet, falls konfiguriert
 - Jede generierte Rechnung ist unabhängig — Sie können sie bearbeiten, ohne die Vorlage zu beeinflussen
 
+### Gesperrte USt.-Perioden
+
+Falls das geplante Datum in eine bereits eingereichte und gesperrte USt.-Periode fällt, erstellt MyCompanyDesk **keine** Rechnung. Diese Periode wird für die automatische Generierung dauerhaft übersprungen (ein erneuter Versuch würde nie von selbst gelingen), und der Zeitplan läuft mit dem nächsten Fälligkeitsdatum weiter. Sie erhalten eine Benachrichtigung, damit Sie selbst entscheiden können: erstellen Sie eine aktuelle Rechnung für den Kunden, oder erfassen Sie den Umsatz über eine Ergänzungsmeldung.
+
+Eine pausierte oder kürzlich fortgesetzte Vorlage trifft dieses Szenario besonders leicht, weil das nächste geplante Datum hinter dem zuletzt eingereichten Quartal liegen kann.
+
 ## Verlauf anzeigen
 
 Die Detailseite der wiederkehrenden Rechnung zeigt alle zuvor generierten Rechnungen, sodass Sie den gesamten Abrechnungsverlauf verfolgen können.

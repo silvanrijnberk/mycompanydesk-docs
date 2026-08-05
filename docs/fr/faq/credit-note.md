@@ -1,6 +1,6 @@
 ---
 title: "Avoir"
-last_verified: 2026-07-02
+last_verified: 2026-08-05
 chatbot:
   triggers: ["credit note", "create credit note", "issue credit", "credit invoice", "creditnota", "creditnota aanmaken", "gutschrift erstellen", "note de credit", "avoir"]
   actions:
@@ -15,5 +15,7 @@ Pour créer un avoir :
 4. Envoyez l'avoir au client
 
 Vous ne pouvez pas ajuster les montants pendant la création ; les documents envoyés sont verrouillés, l'avoir reflète donc toujours exactement l'original. Pour une correction partielle, créez d'abord l'avoir complet, puis émettez une nouvelle facture avec le bon montant.
+
+Un avoir rembourse le client et n'a donc pas de date d'échéance propre. Dans le portail client, la ligne d'échéance et le tableau des factures antérieures masquent le délai pour les avoirs. Dans le rapport des créances clients, le montant de l'avoir est compensé avec la facture originale qu'il corrige, de sorte que le solde du client reflète ce qui est réellement encore dû.
 
 Astuce : comme vous créez l'avoir depuis la facture d'origine, les deux documents correspondent exactement et votre comptabilité reste cohérente.

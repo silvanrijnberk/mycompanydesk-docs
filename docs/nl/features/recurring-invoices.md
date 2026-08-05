@@ -76,6 +76,12 @@ Elke keer dat een terugkerende factuur wordt uitgevoerd, wordt een nieuwe factuu
 - De factuur begint als **Concept** (beoordelen en versturen) of wordt automatisch verstuurd indien geconfigureerd
 - Elke gegenereerde factuur is onafhankelijk — je kunt deze bewerken zonder het sjabloon te beinvloeden
 
+### Vergrendelde BTW-periodes
+
+Als de geplande datum in een BTW-periode valt die al is ingediend en vergrendeld, maakt MyCompanyDesk **geen** factuur aan. Die periode wordt definitief overgeslagen voor automatische generatie (herhaald proberen zou nooit vanzelf lukken) en het schema loopt door naar de volgende vervaldatum. Je ontvangt een melding zodat je zelf kunt beslissen: maak een huidige factuur voor de klant, of verwerk de omzet via een suppletie-aangifte.
+
+Een gepauzeerd of kort geleden hervat sjabloon loopt extra kans op dit scenario, omdat de eerstvolgende geplande datum kan achterlopen op het laatst ingediende kwartaal.
+
 ## Geschiedenis bekijken
 
 De detailpagina van de terugkerende factuur toont alle eerder gegenereerde facturen, zodat je de volledige facturatiegeschiedenis kunt bijhouden.
