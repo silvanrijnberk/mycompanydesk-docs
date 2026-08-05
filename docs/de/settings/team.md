@@ -5,16 +5,21 @@ last_verified: 2026-08-04
 
 # Zugang und Steuerberater
 
-Geben Sie einem Partner, Mitarbeiter oder Ihrem Steuerberater Zugang zu Ihrer Buchhaltung. Jede Person erhält einen eigenen Login. In der App heißt diese Seite **Toegang en boekhouder** (Zugang und Steuerberater).
+Geben Sie einem Partner, Mitarbeiter oder Ihrem Steuerberater Zugang zu Ihrer Buchhaltung. Jede Person erhält einen eigenen Login. In der App sind diese Einstellungen auf zwei Seiten aufgeteilt: **Personen mit Zugang** und **Ihr Steuerberater**.
 
 ## Wo Sie es finden
 
-Öffnen Sie **Einstellungen** über das Menü und wählen Sie **Zugang und Steuerberater**, oder gehen Sie direkt zu `/settings/team`. Alte Links zu den Teameinstellungen leiten hierher weiter.
+Öffnen Sie **Einstellungen** über das Menü und wählen Sie eine der beiden Seiten:
 
-Die Seite hat zwei Bereiche:
+- **Personen mit Zugang**, um Teamkollegen einzuladen und Seitenberechtigungen festzulegen.
+- **Ihr Steuerberater**, um Ihren Steuerberater einzuladen.
 
-- **Personen mit Zugang**: Laden Sie Teamkollegen ein und legen Sie fest, was sie sehen und tun können. Dieser Bereich erfordert den Pro-Tarif; auf Free und Starter erscheint ein Upgrade-Hinweis. Auf Pro gibt es keine Begrenzung der Anzahl eingeladener Personen.
-- **Steuerberater**: Laden Sie Ihren Steuerberater ein und verwalten Sie dessen Zugang. Dieser Bereich ist in jedem Tarif kostenlos.
+Sie können auch direkt zu `/settings/toegang` oder `/settings/boekhouder` gehen. Die alte App-Route `/settings/team` leitet auf `/settings/toegang` weiter. Diese Docs-Seite beschreibt beide App-Seiten.
+
+Die beiden Seiten sind:
+
+- **Personen mit Zugang**: Laden Sie Teamkollegen ein und legen Sie fest, was sie sehen und tun können. Diese Seite erfordert den Pro-Tarif; auf Free und Starter erscheint ein Upgrade-Hinweis. Auf Pro gibt es keine Begrenzung der Anzahl eingeladener Personen.
+- **Ihr Steuerberater**: Laden Sie Ihren Steuerberater ein und verwalten Sie dessen Zugang. Diese Seite ist in jedem Tarif kostenlos.
 
 ## Was auf der Seite steht
 
@@ -57,7 +62,7 @@ Admin-Aktionen pro Zeile: **Steuerberater einladen**, das Panel **Zugang verwalt
 
 Sobald ein Steuerberater verknüpft ist, können Sie MyCompanyDesk automatisch Datensätze zustellen lassen. Der Export bündelt Verkaufsrechnungen, Ausgaben und eine Mehrwertsteuer-Übersicht in einem Format, das die Software Ihres Steuerberaters einlesen kann, sodass die Zahlen nicht neu eingetippt werden müssen.
 
-Öffnen Sie die Zeile des Steuerberaters unter **Einstellungen → Zugang und Steuerberater**, wählen Sie **Automatisch zustellen**, legen Sie fest, welche Bereiche enthalten sein sollen (zum Beispiel Verkaufsrechnungen, Ausgaben und eine Mehrwertsteuer-Übersicht), den Auslöserzeitpunkt und das Format. Ein Zustellungsprotokoll zeigt, was wann gesendet wurde.
+Öffnen Sie die Zeile des Steuerberaters unter **Einstellungen → Ihr Steuerberater**, wählen Sie **Automatisch zustellen**, legen Sie fest, welche Bereiche enthalten sein sollen (zum Beispiel Verkaufsrechnungen, Ausgaben und eine Mehrwertsteuer-Übersicht), den Auslöserzeitpunkt und das Format. Ein Zustellungsprotokoll zeigt, was wann gesendet wurde.
 
 ### Aktivitätsübersicht des Steuerberaters
 

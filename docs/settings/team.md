@@ -5,16 +5,21 @@ last_verified: 2026-08-04
 
 # Access & accountant
 
-Give a partner, employee, or your accountant access to your books. Each person gets their own login. In the app this page is called **Toegang en boekhouder** (access and accountant).
+Give a partner, employee, or your accountant access to your books. Each person gets their own login. In the app these settings are split into two pages: **Mensen met toegang** (people with access) and **Je boekhouder** (your accountant).
 
 ## Where to find it
 
-Open **Instellingen** (Settings) from the menu and choose **Toegang en boekhouder**, or navigate directly to `/settings/team`. Old team settings links redirect here.
+Open **Instellingen** (Settings) from the menu and choose one of:
 
-The page has two sections:
+- **Mensen met toegang** to invite teammates and set page permissions.
+- **Je boekhouder** to invite your accountant.
 
-- **Mensen met toegang** (people with access): invite teammates and manage what they can see and do. This section requires the Pro plan; Free and Starter workspaces see an upgrade prompt. On Pro there is no limit on the number of people you invite.
-- **Boekhouder** (accountant): invite your accountant and manage their access. This section is free on every plan.
+You can also navigate directly to `/settings/toegang` or `/settings/boekhouder`. The old `/settings/team` app route redirects to `/settings/toegang`. This docs page covers both app pages.
+
+The two pages are:
+
+- **Mensen met toegang** (people with access): invite teammates and manage what they can see and do. This page requires the Pro plan; Free and Starter workspaces see an upgrade prompt. On Pro there is no limit on the number of people you invite.
+- **Je boekhouder** (your accountant): invite your accountant and manage their access. This page is free on every plan.
 
 ## What's on the page
 
@@ -57,7 +62,7 @@ Admin actions per row: **Invite accountant**, **Manage access** drawer, **Remove
 
 Once an accountant is connected, you can have MyCompanyDesk deliver records to them automatically. The export bundles sales invoices, expenses and a VAT summary in a format your accountant's software can import, so the data does not have to be retyped.
 
-Open the accountant row in **Settings → Toegang en boekhouder**, choose **Automatic delivery**, pick the streams you want to include (for example sales invoices, expenses and a VAT summary), the trigger moment, and the format. A delivery log shows what was sent and when.
+Open the accountant row in **Settings → Je boekhouder**, choose **Automatic delivery**, pick the streams you want to include (for example sales invoices, expenses and a VAT summary), the trigger moment, and the format. A delivery log shows what was sent and when.
 
 ### Accountant activity overview
 

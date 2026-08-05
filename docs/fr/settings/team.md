@@ -5,16 +5,21 @@ last_verified: 2026-08-04
 
 # Accès et comptable
 
-Donnez à un associé, un employé ou votre comptable accès à votre comptabilité. Chaque personne reçoit son propre identifiant. Dans l'application, cette page s'appelle **Toegang en boekhouder** (accès et comptable).
+Donnez à un associé, un employé ou votre comptable accès à votre comptabilité. Chaque personne reçoit son propre identifiant. Dans l'application, ces paramètres sont répartis sur deux pages : **Personnes ayant accès** et **Votre comptable**.
 
 ## Où le trouver
 
-Ouvrez **Paramètres** depuis le menu et choisissez **Accès et comptable**, ou allez directement sur `/settings/team`. Les anciens liens vers les paramètres d'équipe redirigent ici.
+Ouvrez **Paramètres** depuis le menu et choisissez l'une des deux pages :
 
-La page comporte deux sections :
+- **Personnes ayant accès** pour inviter des collègues et définir les permissions de page.
+- **Votre comptable** pour inviter votre comptable.
 
-- **Personnes ayant accès** : invitez des collègues et définissez ce qu'ils peuvent voir et faire. Cette section nécessite le plan Pro ; sur Free et Starter, une invitation à mettre à niveau s'affiche. Sur Pro, il n'y a pas de limite au nombre de personnes invitées.
-- **Comptable** : invitez votre comptable et gérez son accès. Cette section est gratuite sur tous les plans.
+Vous pouvez aussi naviguer directement vers `/settings/toegang` ou `/settings/boekhouder`. L'ancienne route d'application `/settings/team` redirige vers `/settings/toegang`. Cette page de documentation couvre les deux pages de l'application.
+
+Les deux pages sont :
+
+- **Personnes ayant accès** : invitez des collègues et définissez ce qu'ils peuvent voir et faire. Cette page nécessite le plan Pro ; sur Free et Starter, une invitation à mettre à niveau s'affiche. Sur Pro, il n'y a pas de limite au nombre de personnes invitées.
+- **Votre comptable** : invitez votre comptable et gérez son accès. Cette page est gratuite sur tous les plans.
 
 ## Ce que contient la page
 
@@ -57,7 +62,7 @@ Actions administrateur par ligne : **Inviter le comptable**, le panneau **Gérer
 
 Une fois un comptable connecté, vous pouvez faire en sorte que MyCompanyDesk livre automatiquement des enregistrements. L'export rassemble les factures de vente, les dépenses et un récapitulatif de TVA dans un format que le logiciel de votre comptable peut importer, afin que les chiffres n'aient pas à être ressaisis.
 
-Ouvrez la ligne du comptable dans **Paramètres → Accès et comptable**, choisissez **Livraison automatique**, sélectionnez les flux à inclure (par exemple factures de vente, dépenses et un récapitulatif de TVA), le moment de déclenchement et le format. Un journal de livraison montre ce qui a été envoyé et quand.
+Ouvrez la ligne du comptable dans **Paramètres → Votre comptable**, choisissez **Livraison automatique**, sélectionnez les flux à inclure (par exemple factures de vente, dépenses et un récapitulatif de TVA), le moment de déclenchement et le format. Un journal de livraison montre ce qui a été envoyé et quand.
 
 ### Vue d'ensemble des activités du comptable
 

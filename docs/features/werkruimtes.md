@@ -74,6 +74,17 @@ If you are an accountant managing client administrations, the page becomes a tri
 
 The row chips and deep links work the same as in the combined workspace, but rows use aggregated signal queries so the desk scales to large client lists. The page does not add up client money.
 
+### Accountant firm members
+
+If you work in an accounting firm, the firm has its own member list. Admins can invite colleagues from **Manage firm members**; each member gets a role (member or admin). Adding someone to the firm does not automatically give them access to any client; you still grant access per client from the Workspaces page. The client row shows how many clients each colleague has been assigned to, so you can see who is working on what.
+
+### Client work and requests
+
+Each client row shows a work chip when something is waiting. Open it to see who is handling the client right now and what you have asked the client for.
+
+- **Take it** assigns the client to you. **Release it** hands the work back so a colleague can pick it up. The status updates live for everyone in the firm, so two people do not start the same tax return unknowingly.
+- **Ask the client** creates a task in the client's own workspace. Choose a request type (for example missing receipts), add a title and a note, and the client sees it as a normal to-do. As soon as the client completes the task, the request is resolved and the work chip disappears. There is no manual "waiting" state to reset; it is simply the presence of an open request.
+
 ## Adding your own business
 
 Open **Bedrijf toevoegen** and give the new business a name.
@@ -81,6 +92,21 @@ Open **Bedrijf toevoegen** and give the new business a name.
 If you are on a paid plan (Starter or Pro), the app shows the extra cost before you confirm. During your own Pro trial you pay nothing for the extra business; after the trial it is added to your subscription at the price shown in the confirmation.
 
 If you are on a free Office workspace (for example a comped or founding-member arrangement), your first business stays free and the app now offers a separate checkout for a second business. The price is shown before you start the checkout, and only the second business is billed on its own add-on subscription. After the payment is confirmed, you can name and create the second business.
+
+## Copy settings from another business
+
+When you add a business, or later from the **Manage** drawer of an existing one, you can copy the setup from another business you already have. This saves you from re-entering your branding, invoice layout and defaults.
+
+Turn on **Copy settings from a business you already have** and pick the source. If you only have one other business, the choice is shown as a switch with its name. The following groups can be copied:
+
+- **Branding** (logo, colours and fonts).
+- **Invoices and quotes** (layout, payment term, reminders and your own email texts).
+- **VAT** (return period and default rate).
+- **Expenses and receipts** (default category, mileage allowance and your own categories).
+- **Features** (which features are turned on, plus your time-registration setup).
+- **Address and contact** (address, phone, email and website).
+
+Your chamber of commerce number, VAT number, bank account and invoice numbering are never copied: those belong to one business only.
 
 ## Manage or remove a business
 
@@ -122,6 +148,6 @@ In a client workspace the rail is shorter because parts that belong to the clien
 
 ## Related
 
-- [Access and accountant](/settings/team) for inviting accountants and setting page permissions
+- [Team access and your accountant](/settings/team) for inviting teammates and accountants and setting page permissions
 - [Reports](/features/reports) for the lapsed-customers view and other report pages
 - [Dashboard](/features/dashboard) for the day-to-day briefing of one workspace

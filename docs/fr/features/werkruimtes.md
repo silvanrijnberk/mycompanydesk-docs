@@ -74,6 +74,17 @@ Si vous etes comptable et gerez des administrations clientes, la page devient un
 
 Les puces fonctionnent comme dans l'espace de travail combine, mais les lignes utilisent des signaux agreges pour que le tableau puisse suivre une grande liste de clients. L'argent des clients n'est jamais additionne.
 
+### Membres du cabinet comptable
+
+Si vous travaillez dans un cabinet comptable, le cabinet a sa propre liste de membres. Les administrateurs peuvent inviter des collegues via **Gerer les membres du cabinet** ; chaque membre recoit un role (membre ou administrateur). Ajouter quelqu'un au cabinet ne lui donne pas automatiquement acces a un client; vous accordez toujours l'acces client par client depuis la page Espaces de travail. La ligne de chaque collegue indique le nombre de clients auxquels il ou elle est associe, pour que vous sachiez qui travaille sur quoi.
+
+### Travail client et demandes
+
+Chaque ligne client affiche une puce de travail des qu'une tache est en attente. Ouvrez-la pour voir qui s'occupe actuellement du client et ce que vous avez demande au client.
+
+- **Je prends en charge** assigne le client a vous. **Je ne prends pas en charge** libere le travail pour qu'un collegue puisse le prendre. Le statut se met a jour en direct pour tout le cabinet, evitant ainsi que deux personnes ne commencent la meme declaration par megarde.
+- **Demander au client** cree une tache dans l'espace de travail du client. Choisissez un type de demande (par exemple pieces manquantes), ajoutez un titre et une note, et le client la voit comme une to-do normale. Des que le client coche la tache, la demande est resolue et la puce de travail disparait. Il n'y a pas d'etat manuel "en attente du client" a reinitialiser; il resulte simplement de la presence d'une demande ouverte.
+
 ## Ajouter votre propre entreprise
 
 Ouvrez **Ajouter une entreprise** et donnez un nom a la nouvelle entreprise.
@@ -81,6 +92,21 @@ Ouvrez **Ajouter une entreprise** et donnez un nom a la nouvelle entreprise.
 Si vous etes sur un plan payant (Starter ou Pro), l'application affiche le cout supplementaire avant la confirmation. Pendant votre propre periode d'essai Office, vous ne payez rien pour l'entreprise supplementaire; apres l'essai, elle est ajoutee a votre abonnement au tarif affiche.
 
 Si votre espace de travail dispose d'un Office gratuit dans le cadre d'une disposition telle qu'un plan comped ou founding member, votre premiere entreprise reste gratuite et l'application propose maintenant un paiement separe pour une deuxieme entreprise. Le prix est affiche a l'avance; seule la deuxieme entreprise est facturee via un abonnement add-on dedie. Une fois le paiement confirme, vous pouvez nommer la deuxieme entreprise.
+
+## Copier les parametres d'une autre entreprise
+
+Lorsque vous ajoutez une entreprise, ou plus tard depuis le panneau **Gerer** d'une entreprise existante, vous pouvez reprendre la configuration d'une autre entreprise que vous possedez deja. Cela vous evite de ressaisir votre identite visuelle, la mise en page des factures et vos valeurs par defaut.
+
+Activez **Copier les parametres d'une entreprise que vous avez deja** et choisissez la source. Si vous n'avez qu'une seule autre entreprise, le choix apparait comme un interrupteur avec son nom. Les groupes suivants peuvent etre copies:
+
+- **Identite visuelle** (logo, couleurs et polices).
+- **Factures et devis** (mise en page, delai de paiement, relances et vos propres textes d'e-mail).
+- **TVA** (periode de declaration et taux par defaut).
+- **Depenses et recus** (categorie par defaut, indemnite kilometrique et vos propres categories).
+- **Fonctionnalites** (les fonctionnalites activees, plus la configuration de votre suivi du temps).
+- **Adresse et contact** (adresse, telephone, e-mail et site web).
+
+Le numero d'immatriculation, le numero de TVA, le compte bancaire et la numerotation des factures ne sont jamais copies : ceux-ci appartiennent a une seule entreprise.
 
 ## Gerer ou supprimer une entreprise
 
@@ -122,6 +148,6 @@ Dans un espace de travail client, la barre laterale est plus courte, car les par
 
 ## Voir aussi
 
-- [Acces et comptable](/fr/settings/team) pour inviter des comptables et definir les permissions de page
+- [Accès et comptable](/fr/settings/team) pour inviter des collègues et des comptables et définir les permissions de page
 - [Rapports](/fr/features/reports) pour la vue des clients perdus et les autres rapports
 - [Tableau de bord](/fr/features/dashboard) pour le briefing quotidien d'un espace de travail
