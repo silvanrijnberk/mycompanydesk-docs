@@ -29,10 +29,8 @@ Offertenummers worden automatisch toegekend:
 
 ## Handmatige nummeringsmodus
 
-Standaard nummert MyCompanyDesk offertes automatisch. Als je werkruimte handmatige nummering gebruikt, krijgt een offerte pas een nummer wanneer je hem verstuurt of als verstuurd markeert.
+Standaard nummert MyCompanyDesk offertes automatisch. Als je werkruimte handmatige nummering gebruikt, krijgt een offerte pas een nummer wanneer je hem afrondt of verstuurt.
 
 Op dat moment opent een dialoog waarin je het offertenummer invult. MyCompanyDesk toont het volgende nummer in je reeks als suggestie, maar je mag elk nummer invoeren dat je wilt. Het nummer is verplicht en moet uniek zijn.
-
-Om te wisselen tussen automatische en handmatige nummering ga je naar **Instellingen > Nummering**.
 
 Tip: Zodra een offerte is verstuurd, is die vergrendeld, inclusief het nummer. Stel een eigen nummer dus in zolang het document nog een concept is.

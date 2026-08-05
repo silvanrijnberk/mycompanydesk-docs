@@ -21,6 +21,4 @@ Standaard nummert MyCompanyDesk facturen automatisch. Als je werkruimte handmati
 
 Op dat moment opent een dialoog waarin je het factuurnummer invult. MyCompanyDesk toont het volgende nummer in je reeks als suggestie, maar je mag elk nummer invoeren dat je wilt. Het nummer is verplicht en moet uniek zijn.
 
-Om te wisselen tussen automatische en handmatige nummering ga je naar **Instellingen > Nummering**.
-
 Tip: Concepten hebben nog geen definitief nummer. Verwijder testconcepten voordat je ze afrondt, dan blijft je reeks zonder gaten.

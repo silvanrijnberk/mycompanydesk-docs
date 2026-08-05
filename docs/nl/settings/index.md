@@ -1,6 +1,6 @@
 ---
 title: Overzicht van de instellingen
-last_verified: 2026-07-29
+last_verified: 2026-08-05
 ---
 
 # Overzicht van de instellingen
@@ -34,6 +34,9 @@ Gedeelde instellingen. Wijzigingen hier gelden voor iedereen in je werkruimte.
 | **Factuurontwerp** | Opmaak, kleur en lettertype van je facturen, met live voorbeeld |
 | **Betalen** | Hoe klanten jou kunnen betalen: je IBAN, iDEAL en PayPal |
 | **BTW** | Je gebruikelijke tarief, hoe vaak je aangifte doet en de KOR |
+| **Uitgaven** | Standaardcategorie en betaalmethode voor nieuwe uitgaven, plus het adres om bonnen per e-mail door te sturen |
+| **Uitgavencategorieën** | Eigen uitgavecategorieën toevoegen, bewerken, archiveren of verwijderen; btw-behandeling en aftrekbare deel instellen |
+| **Bankkoppeling** | Je bank koppelen zodat transacties als conceptuitgaven binnenkomen |
 | **E-mail** | Vanaf welk adres je facturen en offertes verstuurt |
 | **Je website en domein** | Je eigen site en domeinnaam |
 | **Onderdelen** | Zet delen van de app aan of uit: offertes, bonnetjes scannen, contracten, projecten, website, nieuwsbrieven |
@@ -58,7 +61,7 @@ Druk op **Cmd+K** (Mac) of **Ctrl+K** (Windows en Linux), of klik op het zoekvel
 
 Een paar pagina's verschijnen alleen via zoeken, zodat de hoofdlijst rustig blijft:
 
-- **Bankrekening koppelen**: opent de bankkoppeling bij de uitgaven-instellingen, zodat binnenkomende transacties automatisch als uitgaven worden herkend.
+- **Bankkoppeling**: koppelt je bank zodat binnenkomende transacties automatisch als uitgaven worden herkend.
 - **API-sleutels** en **Webhooks**: instellingen voor ontwikkelaars, zichtbaar wanneer de publieke API op je account beschikbaar is.
 
 ## Waar vind ik...
@@ -81,7 +84,8 @@ Een paar pagina's verschijnen alleen via zoeken, zodat de hoofdlijst rustig blij
 | Mijn boekhouder toegang geven | **Toegang en boekhouder** (beheerders) |
 | Instellingen voor urenregistratie wijzigen | **Uren & agenda** |
 | Mijn abonnement upgraden of bekijken | **Je abonnement** (beheerders) |
-| Mijn bank koppelen | Zoek op "bank koppelen" |
+| Mijn bank koppelen | **Bankkoppeling** |
+| Uitgavecategorieën toevoegen of bewerken | **Uitgavencategorieën** |
 | Een kopie van mijn gegevens downloaden | **Gegevens downloaden** |
 | Mijn account opzeggen | **Account opzeggen** (beheerders) |
 

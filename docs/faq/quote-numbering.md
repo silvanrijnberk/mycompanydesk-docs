@@ -29,10 +29,8 @@ Quote numbers are assigned automatically:
 
 ## Manual numbering mode
 
-By default MyCompanyDesk numbers quotes automatically. If your workspace uses manual numbering, the app does not assign a number until you send or mark the quote as sent.
+By default MyCompanyDesk numbers quotes automatically. If your workspace uses manual numbering, the app does not assign a number until you finalize or send the quote.
 
 When that happens, a dialog opens so you can enter the quote number. MyCompanyDesk suggests the next number in your sequence, but you can type any number you like. The number is required and must be unique.
-
-To switch between automatic and manual numbering, go to **Settings > Numbering**.
 
 Tip: Once a quote has been sent it is locked, including its number, so set a custom number while the document is still a draft.
