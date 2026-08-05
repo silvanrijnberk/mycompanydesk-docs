@@ -1,5 +1,6 @@
 ---
 title: Uitgaven
+last_verified: 2026-08-05
 ---
 
 # Uitgaven
@@ -16,18 +17,30 @@ De uitgavenpagina toont al je geregistreerde uitgaven. De betaalstatus-tabs in d
 
 Je kunt nog steeds filteren op categorie, project, datumbereik of status. Klik op een uitgave om de detailpagina te openen; klik op **Nieuw** om er handmatig een toe te voegen, of **Scan bon** om er een te extraheren uit een afbeelding of PDF.
 
+## Uitgavecategorieën
+
+Categorieën worden per werkruimte bewaard in de tabel `expense_categories`; het is geen vaste lijst in de app. Elke categorie heeft:
+
+- Een **sleutel** (slug voor de API en het formulier).
+- Een standaard **BTW-behandeling**.
+- Een **aftrekbar percentage** voor gedeeltelijk aftrekbare categorieën.
+- Een **investeringsvlag** die overeenkomende uitgaven automatisch als investering markeert.
+- Een standaard **afschrijvingstermijn** in maanden voor de afschrijvingsmotor.
+
+De instelwizard plant een op de branche afgestemde set bovenop de elf standaardcategorieën, zodat een software-bedrijf extra sleutels als `cloud_services_eu` krijgt, terwijl een horeca-bedrijf bijvoorbeeld `food_client_meeting` krijgt. Nieuwe categorieën vanuit de wizard worden op dezelfde manier gevalideerd als standaardcategorieën; onbekende of verkeerd getypte sleutels worden geweigerd met een 400. Systeemcategorieën kun je niet bewerken of verwijderen, omdat ze de koppeling met de aangifte bevatten. Je kunt een categorie archiveren om hem uit het formulier te verbergen. Eigen categorieën toevoegen, bewerken en verwijderen doe je via **Instellingen > Uitgavencategorieën**.
+
 ## Een uitgave aanmaken
 
 ### Handmatige invoer
 
 1. Ga naar **Uitgaven > Nieuwe uitgave**
 2. Vul in:
-   - **Omschrijving** — Waarvoor de uitgave is
-   - **Bedrag** — Totale kosten (inclusief of exclusief BTW)
-   - **Datum** — Wanneer de uitgave plaatsvond
-   - **Categorie** — Selecteer uit voorgedefinieerde categorieen. Als je een standaard uitgavecategorie hebt ingesteld onder werkruimte-instellingen, is deze hier al vooringevuld.
-   - **BTW-tarief** — Wordt vooringevuld met het standaard BTW-tarief voor uitgaven van je werkruimte (in te stellen onder werkruimte-instellingen). Je kunt het altijd per uitgave aanpassen.
-   - **Betaalmethode** — Wordt vooringevuld met de standaard betaalmethode voor uitgaven van je werkruimte, indien ingesteld.
+   - **Omschrijving** - Waarvoor de uitgave is
+   - **Bedrag** - Totale kosten (inclusief of exclusief BTW)
+   - **Datum** - Wanneer de uitgave plaatsvond
+   - **Categorie** - Selecteer uit je werkruimtelijst (standaardcategorieën of zelf toegevoegde categorieën). Als je een standaard uitgavecategorie hebt ingesteld onder werkruimte-instellingen, is deze hier al vooringevuld.
+   - **BTW-tarief** - Wordt vooringevuld met het standaard BTW-tarief voor uitgaven van je werkruimte (in te stellen onder werkruimte-instellingen). Je kunt het altijd per uitgave aanpassen.
+   - **Betaalmethode** - Wordt vooringevuld met de standaard betaalmethode voor uitgaven van je werkruimte, indien ingesteld.
 3. Voeg optioneel een **bon**-afbeelding of PDF toe
 4. Koppel optioneel aan een **project** of **klant**
 5. Klik op **Opslaan**
@@ -56,8 +69,8 @@ Laat AI automatisch uitgavegegevens uit bonnen extraheren:
 1. Ga naar **Uitgaven > Bon scannen**
 2. Upload een bonafbeelding (JPEG, PNG, WebP) of PDF
 3. Kies de extractiemodus:
-   - **Enkel** — Een uitgave van de bon
-   - **Meervoudig** — Meerdere regelitems van een bon
+   - **Enkel** - Een uitgave van de bon
+   - **Meervoudig** - Meerdere regelitems van een bon
 4. Controleer de geextraheerde gegevens (datum, bedrag, leverancier, omschrijving)
 5. Bevestig om de uitgave(n) aan te maken
 
@@ -65,30 +78,13 @@ Laat AI automatisch uitgavegegevens uit bonnen extraheren:
 Bonnen scannen vereist het **Pro**-abonnement of hoger. Het BTW-tarief op een nieuwe uitgave begint bij je standaard werkruimte-instelling.
 :::
 
-## Uitgavecategorieen
-
-MyCompanyDesk biedt voorgedefinieerde categorieen met iconen voor snelle selectie:
-
-- Kantoorbenodigdheden
-- Reizen & vervoer
-- Eten & drinken
-- Software & abonnementen
-- Apparatuur
-- Professionele diensten
-- Marketing & reclame
-- Verzekeringen
-- Huur & nutsvoorzieningen
-- En meer...
-
-Categorieen helpen bij het organiseren van je uitgaven en worden gebruikt in rapportages voor kostenspecificaties.
-
 ## BTW-afhandeling
 
 Elke uitgave kan een eigen BTW-tarief hebben. Veelgebruikte opties:
 
-- **21%** — Standaardtarief
-- **9%** — Verlaagd tarief
-- **0%** — Nultarief of vrijgesteld
+- **21%** - Standaardtarief
+- **9%** - Verlaagd tarief
+- **0%** - Nultarief of vrijgesteld
 
 Het BTW-bedrag wordt automatisch berekend en opgenomen in je [BTW-rapportages](/nl/features/vat).
 
@@ -116,18 +112,18 @@ Zit een uitgave in een vergrendelde BTW-periode, dan blokkeert het formulier wij
 
 Koppel uitgaven aan:
 
-- **Projecten** — Houd projectkosten nauwkeurig bij
-- **Klanten** — Koppel kosten aan specifieke klanten, bijvoorbeeld om ze later door te factureren
-- **Leveranciers** — Registreer aan wie je hebt betaald
+- **Projecten** - Houd projectkosten nauwkeurig bij
+- **Klanten** - Koppel kosten aan specifieke klanten, bijvoorbeeld om ze later door te factureren
+- **Leveranciers** - Registreer aan wie je hebt betaald
 
 ## Bulkacties
 
 Selecteer meerdere uitgaven voor:
 
-- **Categoriseren** — Wijzig categorie in bulk
-- **Archiveren** — Verplaats naar archief
-- **Verwijderen** — Permanent verwijderen
-- **Exporteren** — Download als CSV
+- **Categoriseren** - Wijzig categorie in bulk
+- **Archiveren** - Verplaats naar archief
+- **Verwijderen** - Permanent verwijderen
+- **Exporteren** - Download als CSV
 
 ## Kilometervergoeding
 
@@ -160,8 +156,9 @@ Importeer uitgaven vanuit CSV:
 
 ## Tips
 
-- Stel je standaard BTW-tarief, standaard uitgavecategorie en standaard betaalmethode voor uitgaven in onder **Werkruimte-instellingen** zodat het formulier niet steeds leeg begint. Een 0%-BTW-instelling werkt correct; het formulier behandelt die als een bewuste keuze.
+- Stel je standaard BTW-tarief, standaard uitgavecategorie en standaard betaalmethode voor uitgaven in onder **Instellingen > Uitgaven** zodat het formulier niet steeds leeg begint. Een 0%-BTW-instelling werkt correct; het formulier behandelt die als een bewuste keuze.
+- Eigen categorieën beheer je in **Instellingen > Uitgavencategorieën**. Systeemcategorieën kun je niet verwijderen; archiveer ze als je ze niet meer wilt zien.
 - Schakel [AI-suggesties](/nl/advanced/ai-features) in voor automatische categorie-aanbevelingen
-- Voeg altijd bonnen toe — ze zijn essentieel voor belastingcontroles
+- Voeg altijd bonnen toe - ze zijn essentieel voor belastingcontroles
 - Gebruik projecten om de verhouding uitgaven-inkomsten bij te houden
 - Bekijk het [uitgavenrapport](/nl/features/reports) voor bestedingsoverzichten

@@ -29,10 +29,8 @@ Angebotsnummern werden automatisch vergeben:
 
 ## Manuelle Nummerierung
 
-Standardmäßig nummeriert MyCompanyDesk Angebote automatisch. Wenn Ihr Arbeitsbereich die manuelle Nummerierung verwendet, erhält ein Angebot erst eine Nummer, wenn Sie es versenden oder als versendet markieren.
+Standardmäßig nummeriert MyCompanyDesk Angebote automatisch. Wenn Ihr Arbeitsbereich die manuelle Nummerierung verwendet, erhält ein Angebot erst eine Nummer, wenn Sie es finalisieren oder versenden.
 
 Dann öffnet sich ein Dialog, in dem Sie die Angebotsnummer eingeben. MyCompanyDesk schlägt die nächste Nummer in Ihrer Serie vor, aber Sie können auch eine beliebige andere Nummer eingeben. Die Nummer ist Pflicht und muss eindeutig sein.
-
-Um zwischen automatischer und manueller Nummerierung zu wechseln, gehen Sie zu **Einstellungen > Nummerierung**.
 
 Tipp: Sobald ein Angebot versendet wurde, ist es gesperrt, einschließlich der Nummer. Legen Sie eine eigene Nummer daher fest, solange das Dokument noch ein Entwurf ist.

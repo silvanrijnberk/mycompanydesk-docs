@@ -1,6 +1,6 @@
 ---
 title: "Catégorie de dépense"
-last_verified: 2026-05-09
+last_verified: 2026-08-05
 chatbot:
   triggers: ["expense category", "categorize expense", "expense categories", "which category", "change category", "uitgave categorie", "categorie wijzigen", "ausgabe kategorie", "categorie depense"]
   actions:
@@ -11,7 +11,7 @@ chatbot:
 Pour définir ou modifier une catégorie de dépense :
 1. Ouvrez la dépense en mode édition
 2. Trouvez le menu déroulant « Catégorie »
-3. Sélectionnez l'une des six catégories standard : Frais généraux, Frais de bureau, Frais de véhicule et déplacements, Téléphone et internet, Frais de représentation ou Achats et matériaux
+3. Sélectionnez une catégorie dans la liste de votre espace de travail (catégories standard ou catégories que vous avez ajoutées)
 4. Enregistrez la dépense
 
-Les six catégories standard suivent la déclaration fiscale néerlandaise, afin que votre comptabilité corresponde à votre déclaration. Vous pouvez aussi ajouter vos propres catégories via la roue dentée des réglages sur la page Dépenses. Utilisez les catégories de façon cohérente afin que les filtres, listes et rapports restent faciles à vérifier.
+Les catégories standard suivent la déclaration fiscale néerlandaise, afin que votre comptabilité corresponde à votre déclaration. Vous pouvez ajouter vos propres catégories dans **Paramètres > Catégories de dépense**, puis les modifier, les archiver ou les supprimer. Si une catégorie contient déjà des dépenses, vous ne pouvez pas la supprimer; archivez-la pour la masquer dans le formulaire. Utilisez les catégories de façon cohérente afin que les filtres, listes et rapports restent faciles à vérifier.

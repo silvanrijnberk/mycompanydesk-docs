@@ -22,12 +22,12 @@ Sie können weiterhin nach Kategorie, Projekt, Zeitraum oder Status filtern. Kli
 
 1. Gehen Sie zu **Ausgaben > Neue Ausgabe**
 2. Füllen Sie aus:
-   - **Beschreibung** — Wofür die Ausgabe ist
-   - **Betrag** — Gesamtkosten (inklusive oder exklusive USt.)
-   - **Datum** — Wann die Ausgabe angefallen ist
-   - **Kategorie** — Aus vordefinierten Kategorien auswählen. Wenn Sie unter Arbeitsbereichseinstellungen eine Standard-Ausgabenkategorie festgelegt haben, ist diese hier bereits vorausgefüllt.
-   - **USt.-Satz** — Wird mit dem Standard-USt.-Satz fur Ausgaben Ihres Arbeitsbereichs vorausgefullt (einstellbar unter Arbeitsbereichseinstellungen). Sie konnen ihn jederzeit pro Ausgabe uberschreiben.
-   - **Zahlungsmethode** — Wird mit der Standard-Zahlungsmethode fur Ausgaben Ihres Arbeitsbereichs vorausgefullt, falls festgelegt.
+   - **Beschreibung** - Wofür die Ausgabe ist
+   - **Betrag** - Gesamtkosten (inklusive oder exklusive USt.)
+   - **Datum** - Wann die Ausgabe angefallen ist
+   - **Kategorie** - Aus vordefinierten Kategorien auswählen. Wenn Sie unter Arbeitsbereichseinstellungen eine Standard-Ausgabenkategorie festgelegt haben, ist diese hier bereits vorausgefüllt.
+   - **USt.-Satz** - Wird mit dem Standard-USt.-Satz fur Ausgaben Ihres Arbeitsbereichs vorausgefullt (einstellbar unter Arbeitsbereichseinstellungen). Sie konnen ihn jederzeit pro Ausgabe uberschreiben.
+   - **Zahlungsmethode** - Wird mit der Standard-Zahlungsmethode fur Ausgaben Ihres Arbeitsbereichs vorausgefullt, falls festgelegt.
 3. Hängen Sie optional ein **Beleg**-Bild oder PDF an
 4. Verknüpfen Sie optional mit einem **Projekt** oder **Kunden**
 5. Klicken Sie auf **Speichern**
@@ -56,8 +56,8 @@ Lassen Sie die KI Ausgabendetails automatisch aus Belegen extrahieren:
 1. Gehen Sie zu **Ausgaben > Beleg scannen**
 2. Laden Sie ein Belegbild (JPEG, PNG, WebP) oder PDF hoch
 3. Wählen Sie den Extraktionsmodus:
-   - **Einzeln** — Eine Ausgabe aus dem Beleg
-   - **Mehrfach** — Mehrere Positionen aus einem Beleg
+   - **Einzeln** - Eine Ausgabe aus dem Beleg
+   - **Mehrfach** - Mehrere Positionen aus einem Beleg
 4. Überprüfen Sie die extrahierten Daten (Datum, Betrag, Lieferant, Beschreibung)
 5. Bestätigen Sie, um die Ausgabe(n) zu erstellen
 
@@ -86,9 +86,9 @@ Kategorien helfen bei der Organisation Ihrer Ausgaben und werden in Berichten f�
 
 Jede Ausgabe kann ihren eigenen USt.-Satz haben. Gängige Optionen:
 
-- **21 %** — Standardsatz
-- **9 %** — Ermäßigter Satz
-- **0 %** — Nullsatz oder befreit
+- **21 %** - Standardsatz
+- **9 %** - Ermäßigter Satz
+- **0 %** - Nullsatz oder befreit
 
 Der USt.-Betrag wird automatisch berechnet und in Ihre [USt.-Berichte](/de/features/vat) aufgenommen.
 
@@ -116,18 +116,18 @@ Sitzt eine Ausgabe in einer gesperrten USt.-Periode, blockiert das Formular Änd
 
 Verknüpfen Sie Ausgaben mit:
 
-- **Projekte** — Projektkosten genau verfolgen
-- **Kunden** — Kosten mit bestimmten Kunden verknüpfen, zum Beispiel zur späteren Weiterberechnung
-- **Lieferanten** — Erfassen, an wen Sie gezahlt haben
+- **Projekte** - Projektkosten genau verfolgen
+- **Kunden** - Kosten mit bestimmten Kunden verknüpfen, zum Beispiel zur späteren Weiterberechnung
+- **Lieferanten** - Erfassen, an wen Sie gezahlt haben
 
 ## Massenaktionen
 
 Wählen Sie mehrere Ausgaben für:
 
-- **Kategorisieren** — Kategorie in großem Umfang ändern
-- **Archivieren** — Ins Archiv verschieben
-- **Löschen** — Dauerhaft entfernen
-- **Exportieren** — Als CSV herunterladen
+- **Kategorisieren** - Kategorie in großem Umfang ändern
+- **Archivieren** - Ins Archiv verschieben
+- **Löschen** - Dauerhaft entfernen
+- **Exportieren** - Als CSV herunterladen
 
 ## Kilometerpauschale
 
@@ -162,6 +162,6 @@ Importieren Sie Ausgaben aus CSV:
 
 - Legen Sie Ihren Standard-USt.-Satz, Ihre Standard-Ausgabenkategorie und Ihre Standard-Zahlungsmethode fur Ausgaben unter **Arbeitsbereichseinstellungen** fest, damit das Formular nicht jedes Mal leer startet. Eine 0-%-Einstellung funktioniert korrekt; das Formular behandelt sie als bewusste Wahl.
 - Aktivieren Sie [KI-Vorschläge](/de/advanced/ai-features) für automatische Kategorieempfehlungen
-- Hängen Sie immer Belege an — sie sind für Steuerprüfungen unerlässlich
+- Hängen Sie immer Belege an - sie sind für Steuerprüfungen unerlässlich
 - Verwenden Sie Projekte, um das Verhältnis von Ausgaben zu Einnahmen zu verfolgen
 - Prüfen Sie den [Ausgabenbericht](/de/features/reports) für Ausgabenaufschlüsselungen

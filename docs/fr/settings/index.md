@@ -1,6 +1,6 @@
 ---
 title: Aperçu des paramètres
-last_verified: 2026-07-29
+last_verified: 2026-08-05
 ---
 
 # Aperçu des paramètres
@@ -36,6 +36,9 @@ Paramètres partagés. Les modifications faites ici s'appliquent à tous les mem
 | **Mise en page des factures** | Mise en forme, couleur et police de vos factures, avec aperçu en direct |
 | **Paiement** | Comment vos clients peuvent vous payer : IBAN, iDEAL et PayPal |
 | **TVA** | Votre taux habituel, la fréquence de vos déclarations et le régime KOR pour petites entreprises |
+| **Dépenses** | Catégorie et moyen de paiement par défaut pour les nouvelles dépenses, plus l'adresse pour faire suivre les reçus par e-mail |
+| **Catégories de dépense** | Ajouter, modifier, archiver ou supprimer vos propres catégories de dépense; définir le traitement TVA et le pourcentage déductible |
+| **Connexion bancaire** | Connecter votre banque pour que les transactions arrivent comme des dépenses brouillon |
 | **E-mail** | L'adresse depuis laquelle vos factures et devis sont envoyés |
 | **Votre site et domaine** | Votre propre site et votre nom de domaine |
 | **Modules** | Activez ou désactivez des parties de l'application : devis, scan de reçus, contrats, projets, site web, newsletters |
@@ -60,7 +63,7 @@ Appuyez sur **Cmd+K** (Mac) ou **Ctrl+K** (Windows et Linux), ou cliquez dans le
 
 Quelques pages n'apparaissent que via la recherche, pour garder la liste principale sobre :
 
-- **Connecter un compte bancaire** : ouvre la connexion bancaire dans les paramètres des dépenses, afin que les transactions entrantes soient reconnues automatiquement comme des dépenses.
+- **Connexion bancaire** : connecte votre banque afin que les transactions entrantes soient reconnues automatiquement comme des dépenses.
 - **Clés API** et **Webhooks** : paramètres pour développeurs, visibles lorsque l'API publique est disponible sur votre compte.
 
 ## Où trouver...
@@ -83,7 +86,8 @@ Quelques pages n'apparaissent que via la recherche, pour garder la liste princip
 | Donner accès à mon comptable | **Accès et comptable** (administrateurs) |
 | Modifier les paramètres de suivi du temps | **Agenda** |
 | Mettre à niveau ou consulter mon abonnement | **Votre abonnement** (administrateurs) |
-| Connecter ma banque | Recherchez "compte bancaire" |
+| Connecter ma banque | **Connexion bancaire** |
+| Ajouter ou modifier des catégories de dépense | **Catégories de dépense** |
 | Télécharger une copie de mes données | **Télécharger les données** |
 | Résilier mon compte | **Résilier le compte** (administrateurs) |
 

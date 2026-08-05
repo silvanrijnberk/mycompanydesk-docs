@@ -1,6 +1,6 @@
 ---
 title: Übersicht der Einstellungen
-last_verified: 2026-07-29
+last_verified: 2026-08-05
 ---
 
 # Übersicht der Einstellungen
@@ -36,6 +36,9 @@ Geteilte Einstellungen. Änderungen hier gelten für alle in Ihrem Arbeitsbereic
 | **Rechnungsgestaltung** | Layout, Farbe und Schriftart Ihrer Rechnungen, mit Live-Vorschau |
 | **Bezahlung** | Wie Kunden Sie bezahlen können: IBAN, iDEAL und PayPal |
 | **MwSt.** | Ihr üblicher Steuersatz, wie oft Sie die Erklärung abgeben und die KOR-Kleinunternehmerregelung |
+| **Ausgaben** | Standardkategorie und Zahlungsmethode für neue Ausgaben, plus die Adresse zum Weiterleiten von Belegen per E-Mail |
+| **Ausgabenkategorien** | Eigene Ausgabenkategorien hinzufügen, bearbeiten, archivieren oder löschen; MwSt-Behandlung und abzugsfähiger Anteil einstellen |
+| **Bankverbindung** | Ihre Bank verbinden, damit Transaktionen als Entwurfsausgaben eingehen |
 | **E-Mail** | Von welcher Adresse Ihre Rechnungen und Angebote verschickt werden |
 | **Deine Website und Domain** | Ihre eigene Website und Ihr Domainname |
 | **Module** | Teile der App ein- oder ausschalten: Angebote, Belegscan, Verträge, Projekte, Website, Newsletter |
@@ -60,7 +63,7 @@ Drücken Sie **Cmd+K** (Mac) oder **Strg+K** (Windows und Linux), oder klicken S
 
 Einige Seiten erscheinen nur über die Suche, damit die Hauptliste ruhig bleibt:
 
-- **Bankkonto verbinden**: öffnet die Bankverbindung in den Ausgaben-Einstellungen, damit eingehende Transaktionen automatisch als Ausgaben erkannt werden.
+- **Bankverbindung**: verbindet Ihre Bank, damit eingehende Transaktionen automatisch als Ausgaben erkannt werden.
 - **API-Schlüssel** und **Webhooks**: Einstellungen für Entwickler, sichtbar, wenn die öffentliche API auf Ihrem Konto verfügbar ist.
 
 ## Wo finde ich...
@@ -83,7 +86,8 @@ Einige Seiten erscheinen nur über die Suche, damit die Hauptliste ruhig bleibt:
 | Meinem Buchhalter Zugang geben | **Zugang und Buchhalter** (Administratoren) |
 | Zeiterfassungs-Einstellungen ändern | **Zeitplan** |
 | Mein Abonnement upgraden oder einsehen | **Dein Abonnement** (Administratoren) |
-| Meine Bank verbinden | Suchen Sie nach "Bank verbinden" |
+| Meine Bank verbinden | **Bankverbindung** |
+| Ausgabenkategorien hinzufügen oder bearbeiten | **Ausgabenkategorien** |
 | Eine Kopie meiner Daten herunterladen | **Daten herunterladen** |
 | Mein Konto kündigen | **Konto kündigen** (Administratoren) |
 

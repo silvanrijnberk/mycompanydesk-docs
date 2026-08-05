@@ -29,10 +29,8 @@ Les numéros de devis sont attribués automatiquement :
 
 ## Numérotation manuelle
 
-Par défaut, MyCompanyDesk numérote les devis automatiquement. Si votre espace de travail utilise la numérotation manuelle, un devis ne reçoit de numéro que lorsque vous l'envoyez ou le marquez comme envoyé.
+Par défaut, MyCompanyDesk numérote les devis automatiquement. Si votre espace de travail utilise la numérotation manuelle, un devis ne reçoit de numéro que lorsque vous le finalisez ou l'envoyez.
 
 À ce moment, une fenêtre s'ouvre pour que vous saisissiez le numéro de devis. MyCompanyDesk propose le numéro suivant de votre série, mais vous pouvez saisir le numéro de votre choix. Le numéro est obligatoire et doit être unique.
-
-Pour passer de la numérotation automatique à la numérotation manuelle, allez dans **Paramètres > Numérotation**.
 
 Astuce : une fois le devis envoyé, il est verrouillé, y compris son numéro. Définissez donc un numéro personnalisé tant que le document est encore un brouillon.

@@ -21,6 +21,4 @@ Par défaut, MyCompanyDesk numérote les factures automatiquement. Si votre espa
 
 À ce moment, une fenêtre s'ouvre pour que vous saisissiez le numéro de facture. MyCompanyDesk propose le numéro suivant de votre série, mais vous pouvez saisir le numéro de votre choix. Le numéro est obligatoire et doit être unique.
 
-Pour passer de la numérotation automatique à la numérotation manuelle, allez dans **Paramètres > Numérotation**.
-
 Astuce : les brouillons n'ont pas encore de numéro définitif. Supprimez vos brouillons de test avant de les finaliser, votre série reste ainsi sans trous.

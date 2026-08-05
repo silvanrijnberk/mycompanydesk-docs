@@ -21,6 +21,4 @@ By default MyCompanyDesk numbers invoices automatically. If your workspace uses 
 
 When that happens, a dialog opens so you can enter the invoice number. MyCompanyDesk suggests the next number in your sequence, but you can type any number you like. The number is required and must be unique.
 
-To switch between automatic and manual numbering, go to **Settings > Numbering**.
-
 Tip: Drafts do not have a final number yet. Delete test drafts before finalizing and your sequence stays without gaps.

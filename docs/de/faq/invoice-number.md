@@ -21,6 +21,4 @@ Standardmäßig nummeriert MyCompanyDesk Rechnungen automatisch. Wenn Ihr Arbeit
 
 Dann öffnet sich ein Dialog, in dem Sie die Rechnungsnummer eingeben. MyCompanyDesk schlägt die nächste Nummer in Ihrer Serie vor, aber Sie können auch eine beliebige andere Nummer eingeben. Die Nummer ist Pflicht und muss eindeutig sein.
 
-Um zwischen automatischer und manueller Nummerierung zu wechseln, gehen Sie zu **Einstellungen > Nummerierung**.
-
 Tipp: Entwürfe haben noch keine endgültige Nummer. Löschen Sie Testentwürfe, bevor Sie sie abschließen, dann bleibt Ihre Serie lückenlos.

@@ -1,6 +1,6 @@
 ---
 title: Settings overview
-last_verified: 2026-07-29
+last_verified: 2026-08-05
 ---
 
 # Settings overview
@@ -34,6 +34,9 @@ Shared settings. Changes here apply to everyone in your workspace.
 | **Factuurontwerp** (invoice design) | Layout, colour and font of your invoices, with a live preview |
 | **Betalen** (getting paid) | How customers can pay you: your IBAN, iDEAL and PayPal |
 | **BTW** (VAT) | Your usual VAT rate, how often you file and the KOR small-business scheme |
+| **Uitgaven** (expenses) | Default category and payment method for new expenses, plus the address for forwarding receipts by email |
+| **Uitgavencategorieën** (expense categories) | Add, edit, archive or delete custom expense categories; set VAT treatment and deduction percentage |
+| **Bankkoppeling** (bank connection) | Connect your bank so transactions arrive as draft expenses |
 | **E-mail** | The address your invoices and quotes are sent from |
 | **Je website en domein** (your website and domain) | Your own site and domain name |
 | **Onderdelen** (features) | Switch parts of the app on or off: quotes, receipt scanning, contracts, projects, website, newsletters |
@@ -58,7 +61,7 @@ Press **Cmd+K** (Mac) or **Ctrl+K** (Windows and Linux), or click the search box
 
 A few pages only appear through search, to keep the main list calm:
 
-- **Bankrekening koppelen** (connect your bank account): opens the bank connection settings on the expenses side of the app, so incoming transactions are recognised as expenses automatically.
+- **Bankkoppeling** (bank connection): connects your bank so incoming transactions are recognised as expenses automatically.
 - **API-sleutels** (API keys) and **Webhooks**: developer settings, shown when the public API is available on your account.
 
 ## Where do I find...
@@ -81,7 +84,8 @@ A few pages only appear through search, to keep the main list calm:
 | Give my accountant access | **Toegang en boekhouder** (admins) |
 | Change time-registration options | **Uren & agenda** |
 | Upgrade or check my plan | **Je abonnement** (admins) |
-| Connect my bank | Search for "bank koppelen" |
+| Connect my bank | **Bankkoppeling** |
+| Add or edit expense categories | **Uitgavencategorieën** |
 | Download a copy of my data | **Gegevens downloaden** |
 | Cancel my account | **Account opzeggen** (admins) |
 
