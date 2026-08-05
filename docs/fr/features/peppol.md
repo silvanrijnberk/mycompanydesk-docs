@@ -8,13 +8,13 @@ Envoyez des factures et des avoirs sous forme de factures electroniques structur
 
 ## Vue d'ensemble
 
-La facturation electronique Peppol est une methode d'envoi supplementaire a cote de l'e-mail. Quand vous envoyez une facture, vous choisissez par facture de la livrer par e-mail ou en tant que facture electronique via Peppol. La facture reste le meme document dans MyCompanyDesk; seul le canal de livraison change.
+La facturation electronique Peppol vous permet d'envoyer des factures et des avoirs comme factures electroniques structurees via le reseau Peppol, et de recevoir des factures d'achat de vos fournisseurs de la meme maniere. Quand vous envoyez une facture, vous choisissez par facture de la livrer par e-mail ou en tant que facture electronique via Peppol. La facture reste le meme document dans MyCompanyDesk; seul le canal de livraison change.
 
-C'est utile lorsque votre client demande des factures electroniques.
+L'envoi est utile lorsque votre client demande des factures electroniques. La reception place les factures fournisseurs directement dans vos depenses comme brouillons pre-remplis, prets a etre verifies.
 
 ## Disponibilite
 
-La facturation electronique Peppol est disponible avec le plan Pro. Les workspaces sur les plans Free ou Starter ne voient pas l'option d'envoi de factures electroniques.
+La facturation electronique Peppol est disponible avec le plan Pro. Les workspaces sur les plans Free ou Starter ne voient pas les options d'envoi et de reception de factures electroniques.
 
 ## Avant de pouvoir envoyer
 
@@ -43,6 +43,42 @@ La facture est livree numeriquement dans le systeme comptable de votre client. U
 
 L'e-mail et Peppol ne s'excluent pas mutuellement. Vous pouvez envoyer par e-mail aujourd'hui et en facture electronique demain, en choisissant par facture ce qui convient au client.
 
+## Recevoir des factures electroniques
+
+Lorsque la reception est activee, vos fournisseurs peuvent vous envoyer des factures electroniques via Peppol. MyCompanyDesk transforme chaque facture electronique entrante en brouillon de depense pre-rempli avec le fournisseur, le montant, la TVA et la date. Le brouillon apparait dans vos depenses pour verification; vous pouvez l'examiner, le modifier et le comptabiliser comme n'importe quelle autre depense.
+
+### Disponibilite
+
+La reception fait partie de la facturation electronique Peppol et est disponible avec le plan Pro. Vous devez deja avoir active l'envoi de factures electroniques avant de pouvoir activer la reception.
+
+### Avant de pouvoir recevoir
+
+Assurez-vous que votre profil d'entreprise contient les memes informations que pour l'envoi:
+
+- Nom de l'entreprise
+- Numero d'immatriculation au registre du commerce
+- Numero de TVA
+- IBAN
+- Adresse de l'entreprise (rue, code postal, ville)
+
+Quand vous activez la reception, votre numero d'immatriculation et votre numero de TVA sont enregistres comme recepteur Peppol. Une entreprise ne peut recevoir que via un seul logiciel de comptabilite a la fois, car le meme numero d'immatriculation et numero de TVA ne peuvent pas etre enregistres chez plusieurs fournisseurs.
+
+### Activer la reception
+
+1. Ouvrez **Parametres > Factures** (`/settings/facturen`)
+2. Dans la section Peppol, cliquez sur **Activer la reception**
+3. Confirmez que votre numero d'immatriculation et votre numero de TVA peuvent etre enregistres comme recepteur sur le reseau Peppol
+
+Des lors, les factures electroniques entrantes arrivent automatiquement comme brouillons de depenses. Aucune importation manuelle n'est necessaire.
+
+### Verifier les factures electroniques recues
+
+Chaque facture electronique atterrit comme brouillon sous **Depenses**. Le brouillon est pre-rempli avec le fournisseur, la description, le montant, la TVA et la date de facture provenant de la facture electronique entrante. Verifiez les informations, joignez un recu si necessaire et enregistrez-le comme depense reguliere.
+
+### Desactiver la reception
+
+Ouvrez **Parametres > Factures**, allez a la section Peppol et cliquez sur **Desactiver la reception**. Vous ne recevrez plus de nouvelles factures electroniques via Peppol, mais les brouillons et depenses comptabilisees existants restent inchanges. Vous pouvez reactiver la reception a tout moment.
+
 ## Types de documents pris en charge
 
 - **Facture** — document de facturation standard
@@ -59,6 +95,12 @@ Votre client doit etre joignable sur le reseau Peppol. En pratique, cela signifi
 **L'envoi a echoue.** Un echec d'envoi Peppol signifie generalement que le recepteur n'etait pas joignable sur le reseau, ou qu'un champ obligatoire de la facture manquait. Resolvez le probleme et reessayez, ou envoyez par e-mail pour poursuivre le workflow.
 
 **J'ai active la facturation electronique mais je veux la desactiver.** Ouvrez les parametres de facturation et desactivez l'option Peppol. Les factures existantes restent inchangees; vous ne voyez plus l'option d'envoi Peppol.
+
+**La reception ne s'active pas a cause d'un conflit.** Votre numero d'immatriculation ou numero de TVA est deja enregistre comme recepteur Peppol chez un autre logiciel de comptabilite ou fournisseur. Desactivez d'abord la reception la-bas, puis activez-la dans MyCompanyDesk. D'ici la, vous pouvez toujours envoyer des factures electroniques depuis MyCompanyDesk.
+
+**Une facture electronique recue est incorrecte.** Ouvrez le brouillon de depense, corrigez le fournisseur, le montant, la TVA ou la description, puis enregistrez-le. Les donnees originales de la facture electronique restent dans les notes de la depense pour reference.
+
+**J'ai desactive la reception mais des brouillons apparaissent encore.** Les brouillons deja arrives avant la desactivation restent dans vos depenses; la desactivation ne bloque que l'arrivee de nouvelles factures electroniques.
 
 ## Voir aussi
 

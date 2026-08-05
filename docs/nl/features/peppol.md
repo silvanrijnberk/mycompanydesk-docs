@@ -8,13 +8,13 @@ Verstuur facturen en creditnota's als gestructureerde e-factuur via het Peppol-n
 
 ## Overzicht
 
-Peppol e-facturatie is een extra verzendmethode naast e-mail. Wanneer je een factuur verstuurt, kies je per factuur of je hem per e-mail of als e-factuur via Peppol aflevert. De factuur blijft in MyCompanyDesk hetzelfde document; alleen het afleverkanaal verandert.
+Met Peppol e-facturatie verstuur je facturen en creditnota's als gestructureerde e-factuur via het Peppol-netwerk, en je kunt ook inkoopfacturen van leveranciers op dezelfde manier ontvangen. Wanneer je verstuurt, kies je per factuur of je hem per e-mail of als e-factuur via Peppol aflevert. De factuur blijft in MyCompanyDesk hetzelfde document; alleen het afleverkanaal verandert.
 
-Dit is handig als je klant om e-facturen vraagt.
+Versturen is handig als je klant om e-facturen vraagt. Ontvangen zet inkoopfacturen automatisch als conceptuitgave klaar, zodat je ze alleen nog hoeft te controleren.
 
 ## Beschikbaarheid
 
-Peppol e-facturatie is beschikbaar op het Pro-abonnement. Werkruimtes op Free of Starter zien de optie voor e-factuurverzending niet.
+Peppol e-facturatie is beschikbaar op het Pro-abonnement. Werkruimtes op Free of Starter zien de opties voor e-factuurverzending en -ontvangst niet.
 
 ## Voordat je kunt versturen
 
@@ -43,6 +43,42 @@ De factuur wordt digitaal afgeleverd in het boekhoudpakket van je klant. Een suc
 
 E-mail en Peppol sluiten elkaar niet uit. Je kunt vandaag per e-mail versturen en morgen als e-factuur, per factuur kiezend wat bij de klant past.
 
+## E-facturen ontvangen
+
+Als ontvangen is ingeschakeld, kunnen leveranciers je e-facturen sturen via Peppol. MyCompanyDesk zet elke binnenkomende e-factuur om in een conceptuitgave die al is vooringevuld met leverancier, bedrag, btw en datum. De conceptuitgave verschijnt bij je uitgaven ter controle; je kunt hem net als elke andere uitgave controleren, bewerken en boeken.
+
+### Beschikbaarheid
+
+Ontvangen is onderdeel van Peppol e-facturatie en beschikbaar op het Pro-abonnement. Je moet e-factuurverzending al hebben ingeschakeld voordat je ontvangen kunt aanzetten.
+
+### Voordat je kunt ontvangen
+
+Zorg dat je bedrijfsprofiel dezelfde gegevens bevat als voor het versturen:
+
+- Bedrijfsnaam
+- KVK-nummer
+- Btw-nummer
+- IBAN
+- Bedrijfsadres (straat, postcode, plaats)
+
+Als je ontvangen inschakelt, worden je KVK-nummer en btw-nummer geregistreerd als Peppol-ontvanger. Een bedrijf kan maar via één boekhoudpakket tegelijk ontvangen, omdat hetzelfde KVK- en btw-nummer niet bij meerdere providers geregistreerd mag staan.
+
+### Ontvangen inschakelen
+
+1. Open **Instellingen > Facturen** (`/settings/facturen`)
+2. Klik in het Peppol-gedeelte op **Ontvangen inschakelen**
+3. Bevestig dat je KVK- en btw-nummer als ontvanger op het Peppol-netwerk mogen worden geregistreerd
+
+Vanaf dat moment komen inkomende e-facturen automatisch binnen als conceptuitgaven. Je hoeft niets handmatig te importeren.
+
+### Binnenkomende e-facturen controleren
+
+Elke e-factuur landt als conceptuitgave bij **Uitgaven**. De conceptuitgave is vooringevuld met leverancier, omschrijving, bedrag, btw en factuurdatum uit de binnenkomende e-factuur. Controleer de gegevens, voeg eventueel een bon toe en sla hem op als gewone uitgave.
+
+### Ontvangen uitschakelen
+
+Open **Instellingen > Facturen**, ga naar het Peppol-gedeelte en klik op **Ontvangen uitschakelen**. Je ontvangt geen nieuwe e-facturen meer via Peppol, maar bestaande concept- en geboekte uitgaven blijven ongewijzigd. Je kunt ontvangen op elk moment weer aanzetten.
+
 ## Ondersteunde documenttypen
 
 - **Factuur** — standaard factuurtype
@@ -59,6 +95,12 @@ Je klant moet bereikbaar zijn op het Peppol-netwerk. In de praktijk betekent dit
 **Versturen is mislukt.** Een mislukte Peppol-verzending betekent meestal dat de ontvanger niet bereikbaar was op het netwerk, of dat een verplicht factuurveld ontbrak. Los het probleem op en probeer het opnieuw, of verstuur per e-mail om de workflow door te laten gaan.
 
 **Ik heb e-facturatie ingeschakeld maar wil het uitschakelen.** Open de factuurinstellingen en zet de Peppol-optie uit. Bestaande facturen blijven ongewijzigd; je ziet alleen niet langer de keuze om via Peppol te versturen.
+
+**Ontvangen inschakelen lukt niet vanwege een conflict.** Je KVK-nummer of btw-nummer is al geregistreerd als Peppol-ontvanger bij een ander boekhoudpakket of provider. Schakel ontvangen daar eerst uit en zet het daarna in MyCompanyDesk aan. Tot die tijd kun je wel gewoon e-facturen versturen vanuit MyCompanyDesk.
+
+**Een ontvangen e-factuur klopt niet.** Open de conceptuitgave, pas leverancier, bedrag, btw of omschrijving aan en sla hem op. De oorspronkelijke e-factuurgegevens blijven in de notities van de uitgave staan voor de controle.
+
+**Ik heb ontvangen uitgeschakeld, maar er verschijnen nog conceptuitgaven.** Conceptuitgaven die al zijn binnengekomen voordat je ontvangen uitschakelde, blijven in je uitgaven staan; uitschakelen zorgt er alleen voor dat er geen nieuwe e-facturen meer binnenkomen.
 
 ## Zie ook
 
