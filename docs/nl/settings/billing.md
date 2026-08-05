@@ -86,6 +86,7 @@ Functies per abonnement:
 | Geavanceerde rechten | nee | nee | ja |
 | Prioriteitsondersteuning | nee | nee | ja |
 | Bankkoppelingen (maximaal 3) | nee | nee | ja |
+| Peppol e-facturatie | nee | nee | ja |
 
 \* De verhuurpandenmodule wordt momenteel alleen getoond aan werkruimtes die deze al gebruiken.
 

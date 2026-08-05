@@ -86,6 +86,7 @@ Features unlocked per plan:
 | Advanced permissions | no | no | yes |
 | Priority support | no | no | yes |
 | Bank connections (up to 3) | no | no | yes |
+| Peppol e-invoicing | no | no | yes |
 
 \* The rental properties module is currently only shown to workspaces that already use it.
 

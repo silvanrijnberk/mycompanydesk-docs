@@ -86,6 +86,7 @@ Funktionen pro Tarif:
 | Erweiterte Berechtigungen | nein | nein | ja |
 | Prioritäts-Support | nein | nein | ja |
 | Bankverbindungen (bis zu 3) | nein | nein | ja |
+| Peppol E-Rechnung | nein | nein | ja |
 
 \* Das Mietobjekte-Modul wird derzeit nur Arbeitsbereichen angezeigt, die es bereits nutzen.
 
