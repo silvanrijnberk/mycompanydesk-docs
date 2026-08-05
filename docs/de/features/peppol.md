@@ -8,13 +8,13 @@ Senden Sie Rechnungen und Gutschriften als strukturierte E-Rechnung über das Pe
 
 ## Übersicht
 
-Peppol E-Rechnung ist eine zusätzliche Versandmethode neben E-Mail. Wenn Sie eine Rechnung senden, wählen Sie pro Rechnung aus, ob Sie sie per E-Mail oder als E-Rechnung über Peppol zustellen. Die Rechnung bleibt in MyCompanyDesk dasselbe Dokument; nur der Zustellkanal ändert sich.
+Mit Peppol E-Rechnung senden Sie Rechnungen und Gutschriften als strukturierte E-Rechnung über das Peppol-Netzwerk und können auch Eingangsrechnungen von Lieferanten auf dieselbe Weise empfangen. Wenn Sie senden, wählen Sie pro Rechnung aus, ob Sie sie per E-Mail oder als E-Rechnung über Peppol zustellen. Die Rechnung bleibt in MyCompanyDesk dasselbe Dokument; nur der Zustellkanal ändert sich.
 
-Das ist nützlich, wenn Ihr Kunde E-Rechnungen wünscht.
+Senden ist nützlich, wenn Ihr Kunde E-Rechnungen wünscht. Empfangen wandelt Lieferantenrechnungen automatisch in vorausgefüllte Entwürfe um, die Sie nur noch prüfen müssen.
 
 ## Verfügbarkeit
 
-Peppol E-Rechnung ist im Pro-Tarif verfügbar. Workspaces auf Free oder Starter sehen die Option zum E-Rechnungsversand nicht.
+Peppol E-Rechnung ist im Pro-Tarif verfügbar. Workspaces auf Free oder Starter sehen die Optionen zum E-Rechnungsversand und -empfang nicht.
 
 ## Bevor Sie senden können
 
@@ -43,6 +43,42 @@ Die Rechnung wird digital im Buchhaltungssystem Ihres Kunden zugestellt. Eine er
 
 E-Mail und Peppol schließen sich nicht aus. Sie können heute per E-Mail senden und morgen als E-Rechnung, pro Rechnung wählen, was zum Kunden passt.
 
+## E-Rechnungen empfangen
+
+Wenn der Empfang aktiviert ist, können Lieferanten Ihnen E-Rechnungen über Peppol senden. MyCompanyDesk wandelt jede eingehende E-Rechnung in einen vorausgefüllten Ausgabenentwurf um, der bereits Lieferant, Betrag, USt. und Datum enthält. Der Entwurf erscheint unter Ausgaben zur Prüfung; Sie können ihn wie jede andere Ausgabe prüfen, bearbeiten und buchen.
+
+### Verfügbarkeit
+
+Empfangen ist Teil von Peppol E-Rechnung und im Pro-Tarif verfügbar. Sie müssen den E-Rechnungsversand bereits aktiviert haben, bevor Sie den Empfang einschalten können.
+
+### Bevor Sie empfangen können
+
+Stellen Sie sicher, dass Ihr Unternehmensprofil dieselben Angaben enthält wie für den Versand:
+
+- Firmenname
+- Handelsregisternummer
+- USt-IdNr.
+- IBAN
+- Geschäftsadresse (Straße, Postleitzahl, Ort)
+
+Wenn Sie den Empfang aktivieren, werden Handelsregisternummer und USt-IdNr. als Peppol-Empfänger registriert. Ein Unternehmen kann nur über ein Buchhaltungspaket gleichzeitig empfangen, da dieselbe Handelsregisternummer und USt-IdNr. nicht bei mehreren Providern hinterlegt sein darf.
+
+### Empfangen aktivieren
+
+1. Öffnen Sie **Einstellungen > Rechnungen** (`/settings/facturen`)
+2. Klicken Sie im Peppol-Bereich auf **Empfangen aktivieren**
+3. Bestätigen Sie, dass Handelsregisternummer und USt-IdNr. als Empfänger im Peppol-Netzwerk registriert werden dürfen
+
+Ab dann kommen eingehende E-Rechnungen automatisch als Ausgabenentwürfe an. Es gibt keinen manuellen Importschritt.
+
+### Eingehende E-Rechnungen prüfen
+
+Jede E-Rechnung landet als Entwurf unter **Ausgaben**. Der Entwurf ist mit Lieferant, Beschreibung, Betrag, USt. und Rechnungsdatum aus der eingehenden E-Rechnung vorausgefüllt. Prüfen Sie die Angaben, fügen Sie bei Bedarf einen Beleg hinzu und speichern Sie ihn als reguläre Ausgabe.
+
+### Empfangen deaktivieren
+
+Öffnen Sie **Einstellungen > Rechnungen**, gehen Sie zum Peppol-Bereich und klicken Sie auf **Empfangen deaktivieren**. Sie erhalten keine neuen E-Rechnungen mehr über Peppol, aber bestehende Entwürfe und gebuchte Ausgaben bleiben unverändert. Sie können den Empfang jederzeit wieder aktivieren.
+
 ## Unterstützte Dokumenttypen
 
 - **Rechnung** — Standard-Abrechnungsdokument
@@ -59,6 +95,12 @@ Ihr Kunde muss über das Peppol-Netzwerk erreichbar sein. Das bedeutet in der Pr
 **Senden fehlgeschlagen.** Ein fehlgeschlagener Peppol-Versand bedeutet meist, dass der Empfänger im Netzwerk nicht erreichbar war oder ein Pflichtfeld der Rechnung fehlte. Beheben Sie das Problem und versuchen Sie es erneut, oder senden Sie per E-Mail, um den Workflow weiterlaufen zu lassen.
 
 **Ich habe E-Rechnung aktiviert, möchte es aber wieder deaktivieren.** Öffnen Sie die Rechnungseinstellungen und deaktivieren Sie die Peppol-Option. Bestehende Rechnungen bleiben unverändert; Sie sehen nur nicht länger die Wahl, über Peppol zu senden.
+
+**Empfangen lässt sich wegen eines Konflikts nicht aktivieren.** Ihre Handelsregisternummer oder USt-IdNr. ist bereits als Peppol-Empfänger bei einem anderen Buchhaltungspaket oder Provider registriert. Deaktivieren Sie den Empfang dort zuerst und aktivieren Sie ihn dann in MyCompanyDesk. Bis dahin können Sie weiterhin E-Rechnungen aus MyCompanyDesk versenden.
+
+**Eine empfangene E-Rechnung stimmt nicht.** Öffnen Sie den Ausgabenentwurf, korrigieren Sie Lieferant, Betrag, USt. oder Beschreibung und speichern Sie ihn. Die ursprünglichen E-Rechnungsdaten bleiben in den Notizen der Ausgabe zur Kontrolle erhalten.
+
+**Ich habe den Empfang deaktiviert, aber es tauchen noch Entwürfe auf.** Entwürfe, die bereits vor der Deaktivierung eingegangen sind, bleiben in Ihren Ausgaben; die Deaktivierung stoppt nur den Eingang neuer E-Rechnungen.
 
 ## Verwandt
 
