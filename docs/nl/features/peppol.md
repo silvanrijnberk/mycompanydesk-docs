@@ -43,6 +43,14 @@ De factuur wordt digitaal afgeleverd in het boekhoudpakket van je klant. Een suc
 
 E-mail en Peppol sluiten elkaar niet uit. Je kunt vandaag per e-mail versturen en morgen als e-factuur, per factuur kiezend wat bij de klant past.
 
+## Een e-factuur opnieuw versturen
+
+Een Peppol-verzending is een echte, juridisch bindende e-factuur op het netwerk, niet alleen een kopie van een e-mail. Daardoor maakt een tweede verzending van dezelfde factuur twee aparte e-facturen. MyCompanyDesk blokkeert een per ongeluk tweede Peppol-verzending: als de factuur al via Peppol is verstuurd of afgeleverd, verschijnt er een bevestigingsdialoog in plaats van direct opnieuw te versturen.
+
+De dialoog geeft aan wanneer de factuur voor het eerst is verstuurd en vraagt of je zeker weet dat je een tweede e-factuur wilt versturen. Als je bevestigt, wordt een nieuwe Peppol-e-factuur verzonden. Als je annuleert, gebeurt er niets en blijft de bestaande Peppol-aflevering ongewijzigd.
+
+Wil je alleen een herinnering of een verse pdf sturen, gebruik dan e-mail. E-mailherzendingen maken geen dubbele Peppol-e-facturen.
+
 ## E-facturen ontvangen
 
 Als ontvangen is ingeschakeld, kunnen leveranciers je e-facturen sturen via Peppol. MyCompanyDesk zet elke binnenkomende e-factuur om in een conceptuitgave die al is vooringevuld met leverancier, bedrag, btw en datum. De conceptuitgave verschijnt bij je uitgaven ter controle; je kunt hem net als elke andere uitgave controleren, bewerken en boeken.
