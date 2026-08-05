@@ -79,6 +79,18 @@ Elke e-factuur landt als conceptuitgave bij **Uitgaven**. De conceptuitgave is v
 
 Open **Instellingen > Facturen**, ga naar het Peppol-gedeelte en klik op **Ontvangen uitschakelen**. Je ontvangt geen nieuwe e-facturen meer via Peppol, maar bestaande concept- en geboekte uitgaven blijven ongewijzigd. Je kunt ontvangen op elk moment weer aanzetten.
 
+## Peppol e-facturatie uitschakelen
+
+Wil je niet langer e-facturen versturen of ontvangen via MyCompanyDesk, dan kun je Peppol e-facturatie helemaal uitschakelen. Daarmee meld je je bedrijf af bij het Peppol-netwerk en geef je je identificatiegegevens vrij om ergens anders te gebruiken. Facturen die je eerder hebt verstuurd en uitgaven die je al hebt geboekt blijven staan.
+
+Zo schakel je Peppol e-facturatie uit:
+
+1. Open **Instellingen > Facturen** (`/settings/facturen`)
+2. Klik in het Peppol-gedeelte op **E-facturatie uitschakelen**
+3. Bevestig dat je je bedrijf wilt afmelden bij het Peppol-netwerk
+
+Na bevestiging stoppen versturen en ontvangen direct. Wil je later toch weer gebruikmaken van Peppol, dan kun je e-facturatie op dezelfde pagina opnieuw inschakelen. Omdat je eerdere registratie dan is verwijderd, moet je de identiteitsverificatie opnieuw doorlopen.
+
 ## Ondersteunde documenttypen
 
 - **Factuur** — standaard factuurtype
@@ -94,7 +106,7 @@ Je klant moet bereikbaar zijn op het Peppol-netwerk. In de praktijk betekent dit
 
 **Versturen is mislukt.** Een mislukte Peppol-verzending betekent meestal dat de ontvanger niet bereikbaar was op het netwerk, of dat een verplicht factuurveld ontbrak. Los het probleem op en probeer het opnieuw, of verstuur per e-mail om de workflow door te laten gaan.
 
-**Ik heb e-facturatie ingeschakeld maar wil het uitschakelen.** Open de factuurinstellingen en zet de Peppol-optie uit. Bestaande facturen blijven ongewijzigd; je ziet alleen niet langer de keuze om via Peppol te versturen.
+**Ik heb e-facturatie ingeschakeld maar wil het uitschakelen.** Open de factuurinstellingen en klik op **E-facturatie uitschakelen**. Daarmee meld je je af bij Peppol en stoppen zowel versturen als ontvangen. Bestaande facturen en geboekte uitgaven blijven ongewijzigd. Als je het later opnieuw inschakelt, moet je je identiteit opnieuw verifiëren.
 
 **Ontvangen inschakelen lukt niet vanwege een conflict.** Je KVK-nummer of btw-nummer is al geregistreerd als Peppol-ontvanger bij een ander boekhoudpakket of provider. Schakel ontvangen daar eerst uit en zet het daarna in MyCompanyDesk aan. Tot die tijd kun je wel gewoon e-facturen versturen vanuit MyCompanyDesk.
 

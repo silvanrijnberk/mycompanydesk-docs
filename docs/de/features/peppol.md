@@ -79,6 +79,18 @@ Jede E-Rechnung landet als Entwurf unter **Ausgaben**. Der Entwurf ist mit Liefe
 
 Öffnen Sie **Einstellungen > Rechnungen**, gehen Sie zum Peppol-Bereich und klicken Sie auf **Empfangen deaktivieren**. Sie erhalten keine neuen E-Rechnungen mehr über Peppol, aber bestehende Entwürfe und gebuchte Ausgaben bleiben unverändert. Sie können den Empfang jederzeit wieder aktivieren.
 
+## Peppol E-Rechnung deaktivieren
+
+Wenn Sie über MyCompanyDesk keine E-Rechnungen mehr senden oder empfangen möchten, können Sie Peppol E-Rechnung komplett deaktivieren. Dadurch wird Ihre Unternehmensregistrierung aus dem Peppol-Netzwerk entfernt und Ihre Identifikationsmerkmale freigegeben. Bereits gesendete Rechnungen und gebuchte Ausgaben bleiben bestehen.
+
+So deaktivieren Sie Peppol E-Rechnung:
+
+1. Öffnen Sie **Einstellungen > Rechnungen** (`/settings/facturen`)
+2. Klicken Sie im Peppol-Bereich auf **E-Rechnung deaktivieren**
+3. Bestätigen Sie, dass Sie Ihr Unternehmen aus dem Peppol-Netzwerk abmelden möchten
+
+Nach der Bestätigung stoppen Senden und Empfang sofort. Wenn Sie Peppol später erneut nutzen möchten, können Sie E-Rechnung auf derselben Seite wieder aktivieren. Da Ihre frühere Registrierung dann entfernt wurde, müssen Sie die Identitätsprüfung erneut durchlaufen.
+
 ## Unterstützte Dokumenttypen
 
 - **Rechnung** — Standard-Abrechnungsdokument
@@ -94,7 +106,7 @@ Ihr Kunde muss über das Peppol-Netzwerk erreichbar sein. Das bedeutet in der Pr
 
 **Senden fehlgeschlagen.** Ein fehlgeschlagener Peppol-Versand bedeutet meist, dass der Empfänger im Netzwerk nicht erreichbar war oder ein Pflichtfeld der Rechnung fehlte. Beheben Sie das Problem und versuchen Sie es erneut, oder senden Sie per E-Mail, um den Workflow weiterlaufen zu lassen.
 
-**Ich habe E-Rechnung aktiviert, möchte es aber wieder deaktivieren.** Öffnen Sie die Rechnungseinstellungen und deaktivieren Sie die Peppol-Option. Bestehende Rechnungen bleiben unverändert; Sie sehen nur nicht länger die Wahl, über Peppol zu senden.
+**Ich habe E-Rechnung aktiviert, möchte es aber wieder deaktivieren.** Öffnen Sie die Rechnungseinstellungen und klicken Sie auf **E-Rechnung deaktivieren**. Damit wird Ihre Peppol-Registrierung entfernt und Senden und Empfangen stoppen. Bereits gesendete Rechnungen und gebuchte Ausgaben bleiben unverändert. Bei einer späteren Neuaaktivierung müssen Sie Ihre Identität erneut prüfen lassen.
 
 **Empfangen lässt sich wegen eines Konflikts nicht aktivieren.** Ihre Handelsregisternummer oder USt-IdNr. ist bereits als Peppol-Empfänger bei einem anderen Buchhaltungspaket oder Provider registriert. Deaktivieren Sie den Empfang dort zuerst und aktivieren Sie ihn dann in MyCompanyDesk. Bis dahin können Sie weiterhin E-Rechnungen aus MyCompanyDesk versenden.
 

@@ -85,6 +85,8 @@ Nach der Bestätigung wird die Ausgabe erstellt mit:
 - Dem Originalbeleg als Datei angehängt
 - Kategorievorschlägen (wenn KI-Vorschläge aktiviert sind)
 
+Wenn der Scanner ein Lieferantenland ermittelt (zum Beispiel ein ausländischer Lieferant oder eine gematchte niederländische KVK-Nummer), zeigt die Prüfkarte zusätzlich einen Auswahl für die USt-Behandlung. Der Scanner schlägt einen Standardwert auf Basis von Lieferant und Betrag vor, den Sie jedoch vor der Bestätigung ändern können. Das ist wichtig für innergemeinschaftliche Reverse-Charge-Einkäufe und für Importausgaben aus einem Nicht-EU-Land.
+
 Sie können die Ausgabe anschließend wie jede manuell erstellte Ausgabe bearbeiten.
 
 ## Mehrere Belege scannen

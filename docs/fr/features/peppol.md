@@ -79,6 +79,18 @@ Chaque facture electronique atterrit comme brouillon sous **Depenses**. Le broui
 
 Ouvrez **Parametres > Factures**, allez a la section Peppol et cliquez sur **Desactiver la reception**. Vous ne recevrez plus de nouvelles factures electroniques via Peppol, mais les brouillons et depenses comptabilisees existants restent inchanges. Vous pouvez reactiver la reception a tout moment.
 
+## Desactiver la facturation electronique Peppol
+
+Si vous ne souhaitez plus envoyer ou recevoir de factures electroniques via MyCompanyDesk, vous pouvez desactiver entierement la facturation electronique Peppol. Cela supprime l'enregistrement de votre entreprise sur le reseau Peppol et libere vos identifiants pour les utiliser ailleurs. Les factures deja envoyees et les depenses deja comptabilisees restent inchanges.
+
+Pour desactiver la facturation electronique Peppol :
+
+1. Ouvrez **Parametres > Factures** (`/settings/facturen`)
+2. Dans la section Peppol, cliquez sur **Desactiver la facturation electronique**
+3. Confirmez que vous voulez desinscrire votre entreprise du reseau Peppol
+
+Apres confirmation, l'envoi et la reception s'arretent immediatement. Si vous souhaitez reutiliser Peppol plus tard, vous pouvez reactiver la facturation electronique depuis la meme page. Comme votre enregistrement precedent aura ete supprime, vous devrez refaire la verification d'identite.
+
 ## Types de documents pris en charge
 
 - **Facture** — document de facturation standard
@@ -94,7 +106,7 @@ Votre client doit etre joignable sur le reseau Peppol. En pratique, cela signifi
 
 **L'envoi a echoue.** Un echec d'envoi Peppol signifie generalement que le recepteur n'etait pas joignable sur le reseau, ou qu'un champ obligatoire de la facture manquait. Resolvez le probleme et reessayez, ou envoyez par e-mail pour poursuivre le workflow.
 
-**J'ai active la facturation electronique mais je veux la desactiver.** Ouvrez les parametres de facturation et desactivez l'option Peppol. Les factures existantes restent inchangees; vous ne voyez plus l'option d'envoi Peppol.
+**J'ai active la facturation electronique mais je veux la desactiver.** Ouvrez les parametres de facturation et cliquez sur **Desactiver la facturation electronique**. Votre enregistrement Peppol est alors supprime et l'envoi ainsi que la reception s'arretent. Les factures existantes et les depenses comptabilisees restent inchanges. Si vous la reactivez plus tard, vous devrez refaire la verification d'identite.
 
 **La reception ne s'active pas a cause d'un conflit.** Votre numero d'immatriculation ou numero de TVA est deja enregistre comme recepteur Peppol chez un autre logiciel de comptabilite ou fournisseur. Desactivez d'abord la reception la-bas, puis activez-la dans MyCompanyDesk. D'ici la, vous pouvez toujours envoyer des factures electroniques depuis MyCompanyDesk.
 
