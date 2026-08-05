@@ -190,6 +190,8 @@ When you finalize or send an invoice, MyCompanyDesk checks that your company has
 
 If either field is missing, a dialog opens so you can fill them in right there. Once saved, your invoice finalizes automatically.
 
+If your workspace uses manual numbering, the app also asks you to enter the invoice number when you finalize or send. MyCompanyDesk suggests the next number in your sequence, but you can type any number you like. The number is required and must be unique.
+
 If you are still waiting for your BTW-id from the Belastingdienst, or you are exempt under the small business scheme (KOR), you can acknowledge the gap and proceed anyway. You should add your BTW-id later once you have it.
 
 ## Tips

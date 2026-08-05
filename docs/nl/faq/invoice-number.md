@@ -1,6 +1,6 @@
 ---
 title: "Factuurnummer"
-last_verified: 2026-07-02
+last_verified: 2026-08-05
 chatbot:
   triggers: ["invoice number", "change invoice number", "invoice numbering", "set invoice number", "numbering format", "factuurnummer", "factuurnummering", "rechnungsnummer", "numero facture"]
   actions:
@@ -14,5 +14,13 @@ Factuurnummers worden automatisch toegekend:
 2. Er is geen nummeringsformaat om in te stellen
 3. Wil je een eigen nummer op een concept? Open de factuur in het formulier en klik in de zijbalk op "Eigen nummer invoeren"
 4. Wil je de reeks opnieuw laten beginnen? Ga naar Instellingen → "Account opzeggen" en gebruik "Factuurnummering resetten"
+
+## Handmatige nummeringsmodus
+
+Standaard nummert MyCompanyDesk facturen automatisch. Als je werkruimte handmatige nummering gebruikt, krijgt een factuur pas een nummer wanneer je hem afrondt, verstuurt of als verstuurd markeert.
+
+Op dat moment opent een dialoog waarin je het factuurnummer invult. MyCompanyDesk toont het volgende nummer in je reeks als suggestie, maar je mag elk nummer invoeren dat je wilt. Het nummer is verplicht en moet uniek zijn.
+
+Om te wisselen tussen automatische en handmatige nummering ga je naar **Instellingen > Nummering**.
 
 Tip: Concepten hebben nog geen definitief nummer. Verwijder testconcepten voordat je ze afrondt, dan blijft je reeks zonder gaten.

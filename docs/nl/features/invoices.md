@@ -190,6 +190,8 @@ Wanneer je een factuur afrondt of verstuurt, controleert MyCompanyDesk of je bed
 
 Ontbreekt een van de twee, dan opent een dialoog waarin je ze direct kunt invullen. Na opslaan wordt de factuur automatisch afgerond.
 
+Als je werkruimte handmatige nummering gebruikt, vraagt de app ook om het factuurnummer wanneer je afrondt of verstuurt. MyCompanyDesk toont het volgende nummer in je reeks als suggestie, maar je mag elk nummer invoeren dat je wilt. Het nummer is verplicht en moet uniek zijn.
+
 Wacht je nog op je btw-id van de Belastingdienst, of val je onder de KOR (kleineondernemersregeling)? Dan kun je de melding overslaan en toch doorgaan. Vul je btw-id later aan zodra je hem hebt.
 
 ## Tips

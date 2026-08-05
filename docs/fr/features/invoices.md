@@ -190,6 +190,8 @@ Lorsque vous finalisez ou envoyez une facture, MyCompanyDesk verifie que votre e
 
 Si l'un de ces champs est manquant, une fenetre s'ouvre pour que vous puissiez le remplir directement. Une fois enregistre, la facture est automatiquement finalisee.
 
+Si votre espace de travail utilise la numérotation manuelle, l'application vous demande aussi le numéro de facture lors de la finalisation ou de l'envoi. MyCompanyDesk propose le numéro suivant de votre série, mais vous pouvez saisir le numéro de votre choix. Le numéro est obligatoire et doit être unique.
+
 Vous attendez encore votre numero de TVA de l'administration fiscale, ou vous beneficiez du regime de la franchise en base (KOR) ? Vous pouvez passer l'alerte et continuer malgre tout. Ajoutez votre numero de TVA des que vous l'avez.
 
 ## Conseils
