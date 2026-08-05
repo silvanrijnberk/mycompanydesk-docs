@@ -72,7 +72,7 @@ Verwijder het terugkerende sjabloon volledig. Eerder gegenereerde facturen blijv
 Elke keer dat een terugkerende factuur wordt uitgevoerd, wordt een nieuwe factuur aangemaakt:
 
 - Deze gebruikt de regelitems en klant van het sjabloon
-- Deze volgt je huidige factuurnummering
+- Deze krijgt het volgende automatische factuurnummer
 - De factuur begint als **Concept** (beoordelen en versturen) of wordt automatisch verstuurd indien geconfigureerd
 - Elke gegenereerde factuur is onafhankelijk — je kunt deze bewerken zonder het sjabloon te beinvloeden
 

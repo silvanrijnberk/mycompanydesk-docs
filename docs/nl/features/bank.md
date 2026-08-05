@@ -34,7 +34,7 @@ Hoe vaak MyCompanyDesk nieuwe transacties ophaalt is één instelling voor je he
 
 ## Van transactie naar uitgave
 
-Voordat een transactie wordt gecategoriseerd, worden uitgaande regels vergeleken met uitgaven die al in je boekhouding staan. Is de match eenduidig, dan koppelt MyCompanyDesk de bankregel automatisch aan die bestaande uitgave. Er wordt niets nieuws aangemaakt; het legt alleen vast welke betaling de kosten heeft vereffend.
+Voordat een transactie wordt gecategoriseerd, worden uitgaande regels vergeleken met uitgaven die al in je boekhouding staan. Is de match eenduidig, dan koppelt MyCompanyDesk de bankregel automatisch aan die bestaande uitgave. De vergelijking kijkt naar bedrag, datum en de naam van de tegenpartij/leverancier; pas bij een sterke match op al deze signalen koppelt het systeem zonder eerst te vragen. Er wordt niets nieuws aangemaakt; het legt alleen vast welke betaling de kosten heeft vereffend.
 
 Na de koppelronde doorlopen nieuwe transacties je regels en de slimme categorisering:
 

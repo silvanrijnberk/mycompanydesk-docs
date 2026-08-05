@@ -37,7 +37,7 @@ Cliquez sur **Ajouter un element** pour ajouter d'autres lignes. Le total est ca
 
 ### Definir les details de la facture
 
-- **Numero de facture** -- Genere automatiquement selon vos parametres de numerotation
+- **Numero de facture** -- Attribue automatiquement par MyCompanyDesk
 - **Date de facture** -- Par defaut, la date du jour
 - **Date d'echeance** -- Calculee a partir de vos conditions de paiement par defaut (ajustable)
 - **Notes** -- Notes optionnelles qui apparaissent sur la facture

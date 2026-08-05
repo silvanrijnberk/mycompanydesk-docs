@@ -37,7 +37,7 @@ Click **Add item** to add more line items. The total is calculated automatically
 
 ### Set invoice details
 
-- **Invoice number** — Auto-generated based on your numbering settings
+- **Invoice number** — Assigned automatically by MyCompanyDesk
 - **Invoice date** — Defaults to today
 - **Due date** — Calculated from your default payment terms (adjustable)
 - **Notes** — Optional notes that appear on the invoice

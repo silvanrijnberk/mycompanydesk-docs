@@ -34,7 +34,7 @@ Wie oft MyCompanyDesk nach neuen Transaktionen sucht, ist eine Einstellung für 
 
 ## Von der Transaktion zur Ausgabe
 
-Bevor eine Transaktion kategorisiert wird, werden abgehende Posten mit Ausgaben abgeglichen, die bereits in Ihrer Buchhaltung stehen. Ist die Zuordnung eindeutig, verknüpft MyCompanyDesk die Bankzeile automatisch mit der bestehenden Ausgabe. Es entsteht nichts Neues; es wird nur festgehalten, welche Zahlung die Kosten beglichen hat.
+Bevor eine Transaktion kategorisiert wird, werden abgehende Posten mit Ausgaben abgeglichen, die bereits in Ihrer Buchhaltung stehen. Ist die Zuordnung eindeutig, verknüpft MyCompanyDesk die Bankzeile automatisch mit der bestehenden Ausgabe. Dabei werden Betrag, Datum und der Name der Gegenstelle/des Lieferanten verglichen; nur bei einer starken Übereinstimmung auf allen Signalen verknüpft das System eine Transaktion ohne vorherige Rückfrage. Es entsteht nichts Neues; es wird nur festgehalten, welche Zahlung die Kosten beglichen hat.
 
 Nach der Verknüpfungsphase durchlaufen neue Transaktionen Ihre Regeln und die smarte Kategorisierung:
 

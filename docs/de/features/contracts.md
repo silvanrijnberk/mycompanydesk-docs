@@ -57,7 +57,7 @@ Aktive Verträge mit einem Wiederholungsplan generieren automatisch Rechnungen i
 
 1. Erstellt einen Rechnungsentwurf basierend auf den Vertragsbedingungen
 2. Wendet den richtigen Kunden, Betrag und die Beschreibung an
-3. Folgt Ihren Rechnungsnummerierungseinstellungen
+3. Verwendet dieselbe automatische Rechnungsnummerierung
 
 Sie können generierte Rechnungen manuell überprüfen und versenden oder den automatischen Versand konfigurieren. Wenn ein Vertrag auf einem Stundensatz, Tagessatz oder festen Projektpreis basiert, erhalten Sie auch eine Warnung, wenn das Vertragsbudget überschritten wird oder erfasste Stunden nicht bewertet werden konnten, weil kein Satz hinterlegt war.
 

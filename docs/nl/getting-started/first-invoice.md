@@ -37,7 +37,7 @@ Klik op **Item toevoegen** om meer regelitems toe te voegen. Het totaal wordt au
 
 ### Factuurgegevens instellen
 
-- **Factuurnummer** — Automatisch gegenereerd op basis van je nummeringsinstellingen
+- **Factuurnummer** — Automatisch toegekend door MyCompanyDesk
 - **Factuurdatum** — Standaard vandaag
 - **Vervaldatum** — Berekend op basis van je standaard betalingstermijn (aanpasbaar)
 - **Notities** — Optionele notities die op de factuur verschijnen

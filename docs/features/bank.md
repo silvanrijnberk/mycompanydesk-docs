@@ -35,7 +35,7 @@ How often MyCompanyDesk checks for new transactions is one setting for your whol
 
 ## From transaction to expense
 
-Before a transaction is categorised, outgoing lines are checked against expenses that are already in your books. When the match is unambiguous, the bank line is linked to the existing expense automatically. This creates nothing new; it simply records which payment settled the cost.
+Before a transaction is categorised, outgoing lines are checked against expenses that are already in your books. When the match is unambiguous, the bank line is linked to the existing expense automatically. MyCompanyDesk compares amount, date and counterparty/supplier name; only a strong match on all of these links a transaction without asking first. This creates nothing new; it simply records which payment settled the cost.
 
 After the link pass, new transactions run through your rules and the smart categoriser:
 

@@ -37,7 +37,7 @@ Klicken Sie auf **Position hinzufügen**, um weitere Positionen hinzuzufügen. D
 
 ### Rechnungsdetails festlegen
 
-- **Rechnungsnummer** — Automatisch generiert basierend auf Ihren Nummerierungseinstellungen
+- **Rechnungsnummer** — Automatisch von MyCompanyDesk vergeben
 - **Rechnungsdatum** — Standardmäßig heute
 - **Fälligkeitsdatum** — Berechnet aus Ihren Standard-Zahlungsbedingungen (anpassbar)
 - **Anmerkungen** — Optionale Anmerkungen, die auf der Rechnung erscheinen

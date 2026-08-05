@@ -72,7 +72,7 @@ Supprimez le modele recurrent entierement. Les factures precedemment generees re
 A chaque declenchement d'une facture recurrente, une nouvelle facture est creee :
 
 - Elle utilise les lignes et le client du modele
-- Elle suit votre numerotation de factures actuelle
+- Elle recoit le prochain numero de facture automatique
 - Elle commence en tant que **Brouillon** (a examiner et envoyer) ou est envoyee automatiquement si configure
 - Chaque facture generee est independante -- vous pouvez la modifier sans affecter le modele
 

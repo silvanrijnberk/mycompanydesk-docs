@@ -72,7 +72,7 @@ Remove the recurring template entirely. Previously generated invoices remain in 
 Each time a recurring invoice fires, a new invoice is created:
 
 - It uses the template's line items and customer
-- It follows your current invoice numbering
+- It receives the next automatic invoice number
 - It starts as a **Draft** (review and send) or auto-sends if configured
 - Each generated invoice is independent — you can edit it without affecting the template
 
