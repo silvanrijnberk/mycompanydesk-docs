@@ -20,7 +20,14 @@ chatbot:
 So verwalten Sie Ihre Benachrichtigungseinstellungen:
 
 1. Gehen Sie zu Einstellungen → „Benachrichtigungen"
-2. Schalten Sie die vier Benachrichtigungsthemen ein oder aus: überfällige Rechnungen, eingegangene Zahlungen, MwSt.-Fristen und Tipps. Sie erhalten sie in der App und per E-Mail; bei MwSt.-Fristen enthält die E-Mail einen direkten Link zur USt.-Seite, sodass Sie rechtzeitig abgeben können.
+2. Schalten Sie die Benachrichtigungsthemen ein oder aus. Die Kategorien sind:
+   - **Rechnungen, die Ihre Aufmerksamkeit brauchen**: überfällige Rechnungen, Rechnungen, die bald fällig sind, unbearbeitete Entwürfe, fehlgeschlagene Lastschriften und Stunden ohne Tarif.
+   - **Zahlungseingang**: Zahlungen, bestätigte Zahlungen und auffällige Banktransaktionen.
+   - **Anstehende Fristen**: MwSt., Einkommensteuer, Körperschaftsteuer, die Kleinunternehmer-Grenze, und auslaufende Verträge oder Projekte. Sie erhalten sie rechtzeitig vorab, damit Sie nie zu spät sind.
+   - **Neue Chancen**: Angebotsanfragen, unterschriebene Angebote und Verkäufe über Ihre Website.
+   - **Neue Nachricht im Posteingang**: ein Signal auf Ihrem Telefon, sobald ein Kunde oder Lieferant mailt.
+   - **Tipps und Neuigkeiten von MyCompanyDesk**: höchstens eine E-Mail pro Monat.
+   Wirklich wichtige Nachrichten zu Ihrem Konto senden wir immer; die können Sie nicht ausschalten.
 3. Auf derselben Seite aktivieren Sie auch Push-Benachrichtigungen für das Gerät, das Sie gerade nutzen
 4. Wenn Sie die Browser-Abfrage geschlossen haben, klicken Sie oben in der App auf die Benachrichtigungsglocke und wählen Sie **Aktivieren**, um Push-Benachrichtigungen später nachzuholen
 5. Änderungen werden automatisch gespeichert

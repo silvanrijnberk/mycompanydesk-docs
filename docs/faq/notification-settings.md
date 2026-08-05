@@ -20,7 +20,14 @@ chatbot:
 To manage your notification settings:
 
 1. Go to Settings → "Meldingen" (notifications)
-2. Switch the four notification topics on or off: late invoices, payments received, VAT deadlines, and tips. These arrive in the app and by email; VAT deadline emails include a direct link to the VAT page so you can file before the due date.
+2. Switch the notification topics on or off. The categories are:
+   - **Invoice attention**: late invoices, invoices nearing their due date, drafts left untouched, failed direct debits and time entries without a rate.
+   - **Money in**: payments, confirmed payments and unusual bank transactions.
+   - **Upcoming deadlines**: VAT, income tax, corporate tax, the KOR threshold, and contracts or projects that are about to expire. You get these well in advance so you are never late.
+   - **New opportunities**: quote requests, signed quotes and website sales.
+   - **New inbox message**: a ping on your phone whenever a customer or supplier emails.
+   - **Tips and news from MyCompanyDesk**: at most one email per month.
+   Critical messages about your account are always sent and cannot be turned off.
 3. On the same page you can also turn on push notifications for the device you are using
 4. If you dismissed the browser prompt, click the notification bell at the top of the app and choose **Turn on** to enable push notifications later
 5. Changes save automatically
