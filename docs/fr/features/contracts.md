@@ -51,6 +51,16 @@ Un prix forfaitaire de projet ne se répète pas : le contrat génère une factu
 | **Actif** | Actuellement en vigueur, genere des factures |
 | **Inactif** | En pause -- aucune facture generee |
 
+## Dates de fin
+
+Vous pouvez indiquer une **Date de fin** lors de la creation ou de la modification d'un contrat. Laissez le champ vide pour un contrat a duree indeterminee.
+
+Lorsqu'une date de fin est definie :
+
+- La page de detail du contrat affiche la date de fin, ou **Duree indeterminee** si aucune date n'est definie.
+- Aucune facture n'est generee pour les periodes apres la date de fin.
+- La liste des contrats affiche le label **Expire bientot** lorsque la date de fin est dans les 30 jours.
+
 ## Facturation automatique
 
 Les contrats actifs avec un calendrier de recurrence generent automatiquement des factures a chaque periode de facturation. Le systeme :

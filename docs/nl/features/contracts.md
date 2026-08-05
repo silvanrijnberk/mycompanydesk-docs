@@ -51,6 +51,16 @@ Een vaste projectprijs herhaalt niet: het contract genereert één factuur en st
 | **Actief** | Momenteel van kracht, genereert facturen |
 | **Inactief** | Gepauzeerd — er worden geen facturen gegenereerd |
 
+## Einddatums
+
+Je kunt een **Einddatum** invullen bij het aanmaken of bewerken van een contract. Laat het veld leeg voor een contract voor onbepaalde tijd.
+
+Als er een einddatum is ingesteld:
+
+- De contractdetailpagina toont de einddatum, of **Onbepaalde tijd** als er geen einddatum is.
+- Er worden geen facturen meer aangemaakt voor perioden na de einddatum.
+- De contractenlijst toont het label **Verloopt binnenkort** als de einddatum binnen 30 dagen ligt.
+
 ## Automatische facturatie
 
 Actieve contracten met een herhalingsschema genereren automatisch facturen bij elke facturatieperiode. Het systeem:
