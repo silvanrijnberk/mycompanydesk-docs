@@ -1,316 +1,94 @@
 ---
-title: Domains, Website und Posteingang
-last_verified: 2026-05-09
+title: Domains, Website & Inbox
+last_verified: 2026-08-05
 ---
 
-# Domains, Website und Posteingang
+# Domains, Website & Inbox
 
-> **Status: Pre-Launch.** Alle drei Features auf dieser Seite werden zusammen als Bundle ausgerollt. Sie werden durch die `custom_domains`- und `public_business_page`-Feature-Flags gesteuert und befinden sich noch in der Einführung in die öffentlichen Tarife. Das hier beschriebene Verhalten entspricht der Codebasis vom 2026-05-09; falls ein Bildschirm in Ihrem Workspace anders aussieht, wurde das Bundle dort noch nicht aktiviert.
+MyCompanyDesk verwaltet deine öffentliche Identität an einem Ort: eine eigene Domain, eine branded Marketing-Website und eine gemeinsame Inbox, die Nachrichten sammelt.
 
-Eigene Domains, die gehostete Unternehmenswebsite und der gemeinsame E-Mail-Posteingang bilden ein Produkt. Der Grund: Sie teilen sich den Zustand. Dieselbe `domains`-Zeile, die beweist, dass Sie `acme.de` kontrollieren, macht `acme.de` auch zur URL Ihrer Website und sorgt dafür, dass `info@acme.de` E-Mails empfangen kann. Es gibt einen Onboarding-Ablauf, einen Einstellungsbaum und einen Ort in der App, um all das zu verwalten.
+## Eigene Domain
 
-## Der gebündelte Wert
+Du kannst eine eigene Domain auf MyCompanyDesk verweisen. Sobald sie eingerichtet ist, werden die Marketing-Website und alle gehosteten Seiten über deine Domain ausgeliefert.
 
-Fügen Sie eine Domain hinzu und Sie erhalten drei Dinge:
+So verwendest du eine eigene Domain:
 
-- **Eine eigene Adresse.** Ihr Unternehmen ist unter `acme.de` erreichbar statt unter `acme.mycompanydesk.com`.
-- **Eine Live-Website.** Die gehostete Unternehmensseite wird automatisch auf der verifizierten Domain veröffentlicht.
-- **Einen funktionierenden Posteingang.** `info@acme.de`, plus `support@`, `sales@` und ein reiner Sende-Alias `noreply@`, fangen E-Mails auf und versenden Antworten.
+1. Gehe zu **Einstellungen > Domain**.
+2. Gib die gewünschte Domain ein.
+3. Füge die angezeigten DNS-Einträge hinzu (meist ein CNAME- oder A-Record).
+4. Warte, bis sich DNS verbreitet hat. Wir prüfen das automatisch und zeigen den Status in der App an.
 
-Sie können den gebündelten Ablauf über den [Einrichtungsassistenten](/de/getting-started/company-setup) (`/setup`, der Schritt "Ihre Webadresse") starten, oder schrittweise unter `Unternehmen › Ihre eigene .com-Adresse` und dem Posteingang.
+Du kannst auch eine Subdomain verwenden, z. B. `www.deinedomain.de` oder `help.deinedomain.de`.
 
-## Ein Onboarding-Ablauf
+### Von uns gehostete Subdomains
 
-Der Assistentenschritt unter `/setup` ist der empfohlene Einstiegspunkt. Er führt über `apply.service.js → activateSubdomain | addDomain → quickEnableInbox` alle Schritte auf einmal aus, sodass der Benutzer ein paar Fragen beantwortet und die Plattform alles darunter verdrahtet.
+Wenn du keine eigene Domain verwenden möchtest, geben wir dir eine Subdomain auf `mycompanydesk.com`. Dies ist praktisch zum Testen oder für kleinere Accounts, die keine vollständig branded Domain brauchen.
 
-### Schritt 1 -- Domain hinzufügen
+### Domain-Status
 
-Zwei Wege im Assistenten, beide in der `domains`-Tabelle gespeichert:
+Die Domain-Seite zeigt an, ob DNS korrekt konfiguriert ist. Wenn sich etwas bei deinem DNS-Provider ändert, wird der Status beim nächsten Check aktualisiert.
 
-- **Kostenlose Workspace-Subdomain** -- `ihr-slug.mycompanydesk.com` (oder `.nl` für NL-Workspaces). Keine DNS-Arbeit; der Slug wird als Cloudflare Pages Custom Domain registriert und die Website ist innerhalb von Sekunden live. Dies ist der Standard für neue Workspaces.
-- **Ihre eigene Domain** -- geben Sie `acme.de` ein. Zwei Setup-Modi werden unterstützt:
-  - **Nameserver-Modus** (empfohlen) -- es wird eine Cloudflare-Zone für die Domain erstellt. Sie ändern die Nameserver Ihres Registrars auf die beiden `*.ns.cloudflare.com`-Hostnamen, die der Assistent anzeigt. Cloudflare wird zum autoritativen DNS für die Domain, was E-Mail, SSL und DNS-Record-Verwaltung innerhalb von MyCompanyDesk ermöglicht.
-  - **CNAME-Modus** -- nur für Subdomains (z. B. `portal.acme.de`). Sie fügen einen CNAME-Record hinzu, der auf `mycompanydesk-app.pages.dev` zeigt. Keine Nameserver-Änderung. E-Mail-Routing ist in diesem Modus nicht verfügbar.
+## Marketing-Website
 
-Das Hinzufügen einer eigenen Domain deaktiviert automatisch die Workspace-Subdomain -- es gibt eine kanonische Website pro Unternehmen, niemals zwei.
+Die Marketing-Website ist eine öffentliche Landingpage für dein Unternehmen. Sie enthält:
 
-### Schritt 2 -- Verifizierung
+- Firmenname und Tagline
+- Kontaktdaten und Social-Media-Links
+- Eine kurze Beschreibung dessen, was du tust
+- Einen Call-to-Action-Button, der Besucher an die richtige Stelle leitet
 
-Die Verifizierung erfolgt sowohl auf Abruf als auch per Polling. Die Detailseite zeigt eine **Verifizieren**-Schaltfläche (`POST /api/domains/:id/verify`), und ein Hintergrundjob prüft jede ausstehende Domain in Intervallen erneut.
+Du bearbeitest die Inhalte unter **Einstellungen > Website**. Änderungen werden automatisch veröffentlicht.
 
-- **Nameserver-Modus** wird verifiziert, sobald Cloudflare die Zone als `active` meldet. Der Status wechselt `pending_nameservers → pending_verification → active`. Der Benutzer wird über die In-App-Benachrichtigungsglocke informiert.
-- **CNAME-Modus** wird verifiziert, indem der CNAME aufgelöst und geprüft wird, ob er auf das Pages-Ziel zeigt. Status wechselt `pending_cname → active`.
+### Outreach-Sample-Karte
 
-### Schritt 3 -- SSL
+Wir können eine Postkarte mit einem eindeutigen QR-Code drucken und versenden, der auf deine Landingpage führt. Wenn jemand den Code scannt, zählen wir den Scan und leiten den Besucher auf deine Website mit einer kurzen Referenz (`ref`) in der URL weiter, damit die Seite eine spätere Anmeldung der physischen Karte zuordnen kann. Der Scan selbst wird serverseitig gezählt und funktioniert unabhängig von der Cookie-Einwilligung. Die Referenz wird erst gespeichert, nachdem ein Besucher Analytics-Cookies akzeptiert hat, wie unter [Cookies & Tracking](/account/cookies-tracking) beschrieben.
 
-SSL wird automatisch von Cloudflare bereitgestellt, sobald die Zone aktiv ist. Der Standardmodus ist **Full (strict)**; Sie können ihn unter `Domain-Detail › SSL` ändern (`off / flexible / full / strict`). Das Zertifikatsstatusfeld im SSL-Panel spiegelt das Verifizierungsergebnis von Cloudflare wider.
+In der Admin-Prospect-Ansicht siehst du, wie oft die Karte gescannt wurde und wann der erste Scan stattfand. Die Postkarte ist als einmaliges Sample gedacht; sie ist kein Abonnement oder wiederkehrender Dienst.
 
-### Schritt 4 -- Website geht live
+### SEO-Grundlagen
 
-Die gehostete Unternehmensseite (siehe [Website-Builder](/de/advanced/business-page)) wird automatisch unter der Domain-Root veröffentlicht, sobald die Zone aktiv ist. Der `getBusinessPageUrl`-Resolver des Assistenten gibt zurück, in Prioritätsreihenfolge:
+Die Marketing-Website enthält Standard-Meta-Tags für Titel und Beschreibung. Du kannst diese unter **Einstellungen > Website** überschreiben.
 
-1. Eine eigene Domain mit `business_page_enabled = true` → `https://acme.de`
-2. Eine eigene Domain mit `portal_subdomain_enabled = true` → `https://portal.acme.de`
-3. Die Workspace-Subdomain → `https://acme.mycompanydesk.com`
-4. Die Fallback-Portalroute (`/portal/<slug>`), wenn nichts anderes konfiguriert ist.
+### Analytics
 
-### Schritt 5 -- Posteingang empfängt E-Mails
+Die Website verwendet privacy-freundliche Analytics. Siehe [Cookies & Tracking](/account/cookies-tracking) für genaue Informationen zu den erfassten Daten und zur Ablehnung.
 
-Für Nameserver-Modus eigene Domains führt der Assistent `quickEnableInbox` nach der Verifizierung aus. Dieser Aufruf ist idempotent und führt Folgendes aus:
+## Gemeinsame Inbox
 
-- Richtet die CF Email Sending-Identitat auf der reinen Apex-Domain ein (`acme.de` standardmassig) und schreibt die DKIM- und SPF-DNS-Records. Ein explizites Subdomain-Label provisioniert stattdessen `<label>.<domain>` (z. B. `mail.acme.de`).
-- Setzt eine Cloudflare Email Routing Catch-All-Regel auf der Zone, die auf den `inbox-inbound` Worker zeigt.
-- Prüft die Apex-MX-Records. Sind diese leer oder zeigen bereits auf Cloudflare, installiert der Assistent die Cloudflare-MX. Ist ein Drittanbieter (Google Workspace, Microsoft 365) bereits vorhanden, verweigert der Assistent das Überschreiben und zeigt eine `conflict`-Warnung an, damit Sie entscheiden können.
-- Erstellt `info@acme.de` als das standardmäßige gemeinsame Postfach.
-- Richtet `support@` und `sales@` als bidirektionale Aliase von `info@` ein, und `noreply@` als reinen Sende-Alias (erlaubt in From, verworfen bei eingehend).
-- Erstellt optional ein persönliches Postfach (`silvan@acme.de`), wenn Sie das Kästchen im Assistenten angekreuzt haben.
+Jeder MyCompanyDesk-Workspace hat eine gemeinsame Inbox, die Nachrichten sammelt, die an die Workspace-E-Mail-Adresse gesendet oder über das Kontaktformular auf der Website eingereicht wurden.
 
-## Referenz pro Feature
+### Inbox-Adresse
 
-### Eigene Domains
+Deine Inbox-Adresse lautet zum Beispiel `deinefirma@inbox.mycompanydesk.com` oder, wenn du eine eigene Domain verwendest, `hallo@deinedomain.de`. Die genaue Adresse findest du unter **Inbox > Einstellungen**.
 
-Die Benutzeroberfläche befindet sich unter **Unternehmen > Ihre eigene .com-Adresse** -- die Leaf-Seite ist `/workspace/organization/company/address`, gemountet von `apps/web/pages/workspace/organization/company/address.vue` und rendert die `SettingsDomains`-Komponente. Die beiden älteren Pfade `/workspace/organization/domains` und `/workspace/communication/domains` leiten hierher um.
+### Was in der Inbox landet
 
-Die Seite ist in zwei Bereiche unterteilt:
+- Einreichungen über das Kontaktformular auf der Marketing-Website
+- E-Mails an die Workspace-Adresse
+- Automatische Benachrichtigungen, die wir in deinem Namen versenden
 
-- **Ausstehende Domains**: Domains, die noch verifiziert werden müssen, erscheinen immer ganz oben, unabhängig vom Domain-Wechsler in der oberen Leiste. So können Sie die Verifizierungsanweisungen für neu hinzugefügte Domains erreichen, bevor diese aktiv werden.
-- **Aktives Domain-Panel**: DNS, SSL, Weiterleitungen, Analytics, Sicherheit und SEO-Tabs beziehen sich auf die Domain, die im Domain-Wechsler in der oberen Leiste ausgewählt ist (erreichbar über den Website-Builder unter `/website`). Wenn die Hauptwebsite (angezeigt als Ihr Workspace-Name) ausgewählt ist, wird das Domain-Panel vollständig ausgeblendet. Ein Domain-Wechsel setzt den aktiven Tab auf Routing zurück.
+### Zuweisen und Antworten
 
-Die Seite zeigt standardmassig eine bereinigte Ansicht mit den am haufigsten benotigten Registerkarten. Sechs Power-User-Registerkarten sind ausgeblendet, bis Sie den **Erweiterten Modus** aktivieren. Diese Registerkarten sind: DNS, SSL, Weiterleitungen, Analytics, Schnelleinstellungen und Sicherheit. Der erweiterte Modus ist ein Schalter pro Gerät auf der Seite **Darstellung** in den Einstellungen; siehe die [Übersicht der Einstellungen](/de/settings/).
+Teammitglieder können Nachrichten in der Inbox ansehen, zuweisen und beantworten. Antworten werden von der Workspace-Adresse aus gesendet, damit das Gespräch an einem Ort bleibt.
 
-Was Sie auf der Seite tun konnen:
+### Spam und Moderation
 
-- **Domain kaufen oder beanspruchen** über die Domain-Kaufkarte. Geben Sie einen Domainnamen ein, prüfen Sie die Verfügbarkeit über OpenProvider, und kaufen Sie die Domain oder beanspruchen Sie sie kostenlos, wenn Ihr Workspace für den kostenlosen `.nl`-Claim berechtigt ist.
-- **Domain hinzufügen** (Nameserver- oder CNAME-Modus) über eine eigene Karte, die immer sichtbar ist.
-- **Verifizieren** einer ausstehenden Domain.
-- **DNS-Records verwalten** für die ausgewählte Domain -- A, AAAA, CNAME, MX, TXT, SRV, CAA, NS. CRUD erfolgt über Cloudflare via API.
-- **SSL** für die ausgewählte Domain -- Zertifikatsstatus anzeigen, SSL-Modus ändern.
-- **URL-Weiterleitungen** für die ausgewählte Domain -- drei kostenlose Cloudflare Page Rules pro Zone. Quellmuster + Ziel + 301/302.
-- **E-Mail-Sicherheit** für die ausgewählte Domain -- SPF/DMARC/DKIM-Prüfung mit einer Ein-Klick-"Fix"-Option, die sichere Standardwerte schreibt (`v=spf1 ~all`, `v=DMARC1; p=quarantine; …`).
-- **Schnelleinstellungen** für die ausgewählte Domain -- Cloudflare Development Mode ein/aus, "Under Attack"-Sicherheitsstufe ein/aus, Cache leeren.
-- **Analytics** für die ausgewählte Domain -- die letzten 30 Tage mit Anfragen, Bandbreite, Bedrohungen, Besuchern, Seitenaufrufen. Der aktuelle Cloudflare Analytics-Endpunkt ist abgekündigt; die Seite zeigt einen leeren `unavailable`-Zustand, bis die GraphQL-Migration erfolgt.
-- **Entfernen** der ausgewählten Domain -- Soft-Delete der Zeile (`status = 'removed'`) und Abbau der Cloudflare-Zone (oder der Pages-Domain im CNAME-Modus).
+Die Inbox hat einen grundlegenden Spam-Filter. Verdächtige Nachrichten werden zur Prüfung markiert, anstatt in der Hauptliste zu erscheinen.
 
-#### `domains`-Tabelle -- der gemeinsame Zustand
+## Öffentliche Seiten
 
-Wichtige Spalten, die die App liest:
+Einige Funktionen wie Hilfe-Artikel oder Buchungsseiten können als öffentliche Seiten unter deiner Domain veröffentlicht werden. Jede öffentliche Seite übernimmt dein Branding und deine Domain-Einstellungen.
 
-| Spalte | Zweck |
-|---|---|
-| `domain_name` | Der Hostname, z. B. `acme.de`. |
-| `setup_mode` | `nameserver` (vollständige Delegation) oder `cname` (einzelne Subdomain). |
-| `status` | `pending_nameservers`, `pending_verification`, `pending_cname`, `active`, `failed`, `removed`. |
-| `cloudflare_zone_id` | Gesetzt im Nameserver-Modus. Steuert DNS, SSL, Weiterleitungen, Analytics, E-Mail-Routing. |
-| `nameserver_1`, `nameserver_2` | Werden dem Benutzer während der Nameserver-Einrichtung angezeigt. |
-| `cname_hostname`, `cname_target` | Gesetzt im CNAME-Modus. |
-| `email_routing_enabled` | `true`, sobald die Cloudflare Email Routing-Zone aktiviert ist. |
-| `inbox_enabled`, `inbox_subdomain_tag`, `inbox_dkim_ready` | Von `quickEnableInbox` gesetzt. Die CF Email Sending-Identitat (Apex-Domain standardmassig; `mail.acme.de` wenn ein Subdomain-Label angegeben ist) und der DKIM-Bereitstellungsstatus. |
-| `business_page_enabled`, `portal_subdomain_enabled` | Bestimmen, welcher Hostname die öffentliche Website bedient. |
-| `verified_at` | Wird bei erfolgreicher Verifizierung gesetzt.
-| `registrar` | Der Registrar-Dienst, derzeit `openprovider` für Domains, die über den Domain-Kaufflow erworben wurden.
-| `registrar_domain_id` | Die registrar-interne Kennung für gekaufte Domains.
-| `purchase_price_period` | Abrechnungszeitraum für gekaufte Domains (`yearly`).
-| `purchase_intent_id` | Verweist auf die `domain_purchase_intents`-Zeile für bezahlte Käufe.
-| `founder_claim_id` | Verweist auf die `founder_domain_claims`-Zeile für Gratis-Domain-Claims.
-| `transferred_out_at` | Wird gesetzt, wenn beim wöchentlichen Sync erkannt wird, dass eine Domain aus dem MCD-Registrar-Konto übertragen wurde.
+## Cookies, Tracking und Einwilligung
 
-#### Verlängerungszyklus
+Deine Marketing-Website zeigt ein Cookie-Banner. Details zu Analytics und Speicherung findest du unter [Cookies & Tracking](/account/cookies-tracking). Es werden nur dokumentierte Schlüssel verwendet; vor der Einwilligung werden keine Third-Party-Tracker geladen.
 
-Die Domain-Verlängerung folgt drei Pfaden, je nachdem, wie die Domain erworben wurde:
+## Eine Domain entfernen
 
-1. **Kostenlose gebündelte Verlängerung** (auf Pro umgestellte Trial-Stufe oder eine bestehende Gratis-auf-Lebenszeit-Vereinbarung): MCD übernimmt die Wholesale-Verlängerungskosten. Die Domain verlängert sich automatisch, solange der Workspace auf Pro bleibt. Keine Zahlungsmethode erforderlich.
-2. **Kostenpflichtige automatische Verlängerung** (bezahlter Kauf oder Trial-Stufe ohne Pro): Wird jährlich über die hinterlegte Karte abgerechnet. Funktioniert wie jede andere Abonnementverlängerung.
-3. **Manuelle Verlängerung**: Wenn ein Trial-Workspace aus Pro herausfällt UND keine Karte hinterlegt hat, überspringt der automatische Verlängerungspfad ihn. Der Benutzer sieht eine Benachrichtigung und kann eine einmalige Zahlung über `POST /api/domains/renew/:domainId` auslösen, die eine Stripe Embedded Checkout-Sitzung für die Verlängerung erstellt. Dies ist der einzige Weg, eine Domain ohne aktives Abonnement oder hinterlegte Karte aktiv zu halten.
+Wenn du eine eigene Domain nicht mehr verwenden möchtest, kannst du sie unter **Einstellungen > Domain** entfernen. Dein Workspace fällt dann auf die `mycompanydesk.com`-Subdomain zurück, bis du eine neue hinzufügst.
 
-#### Domain-Übernahme bei vorzeitigem Probezeit-Ende
+## Verwandte Themen
 
-Wenn ein Kunde während der Pro-Testphase abspringt, ohne Pro-Kunde zu werden, gibt es eine dritte Option für die kostenlose `.nl`-Domain: Übernahme für einmalig €15,00 inkl. MwSt. (einmalig). Der Übernahme-Ablauf (`DomainBuyoutModal.vue`) lässt den Kunden über Stripe Embedded Checkout bezahlen und erhält damit das vollständige Eigentum. Nach der Zahlung wird der Domain-Inhaber von MCD auf den Kunden übertragen und der Auth-Code (EPP) wird angezeigt, sodass die Domain zu jedem Registrar umgezogen werden kann.
-
-Der Preis von €15,00 wird bewusst inklusive niederländischer MwSt. angegeben, weil die Abbuchung im Moment des Abgangs ausgelöst wird. Der Nettobetrag, der an Stripe übermittelt wird, beträgt €12,40; darauf werden 21% niederländische MwSt. aufaddiert und auf den Cent gerundet, sodass der Gesamtbetrag genau €15,00 ergibt. Siehe `apps/api/src/modules/domains/domain-pricing.config.js` im RichardTool-Repo und `sources/vat-rates.yaml#countries.NL.standard`.
-
-Der Übernahmepreis ist ein Produktpreis, kein Übertragungsaufschlag. MCD berechnet niemals Gebühren für den Transfer-Token selbst, sobald der Kunde registrierter Inhaber ist. Die Unterscheidung ist im internen Rechtsvermerk `docs/legal/gratis-domein-voorwaarden.md` im RichardTool-Repo dokumentiert.
-
-Betroffene Datenbanktabellen:
-
-- `domain_buyout_intents` — verfolgt Übernahme-Zahlungsabsichten mit Stripe PaymentIntent-IDs und Status.
-
-#### Übertragungsfolgen
-
-Die Übertragung einer über MyCompanyDesk registrierten Domain zu einem anderen Registrar hat dauerhafte Konsequenzen, die durch den wöchentlichen OpenProvider-Statusabgleich durchgesetzt werden:
-
-- **Domains mit Gratis-auf-Lebenszeit-Vereinbarung**: Der Gratis-Claim wird gelöscht und die interne lebenslange Pro-Zusage des Workspace wird gekündigt. Der Workspace wird zu einem normalen zahlenden Kunden. Dies ist unumkehrbar; die Zusage kann nicht erneut beansprucht werden.
-- **Trial- / Pro-gebündelte Domains**: Der gebündelte Gratis-Status geht verloren. Der Workspace kann nie wieder eine andere Gratis-Domain beanspruchen (bereits über die Retained-Claims-Liste durchgesetzt). Hinweis: Die Übernahme der Domain während der Testphase (siehe Übernahme-Abschnitt oben) ist keine Übertragung — es handelt sich um eine Inhaberübergabe, die dem Kunden Eigentum verschafft, bevor eine Übertragung stattfindet, sodass der Gratis-Domain-Vorteil für die Dauer der Testphase erhalten bleibt.
-- **Bezahlte Domains**: Kein Vorteilsentzug. Die Domain wechselt einfach zu `status = 'transferred_out'`.
-
-Das Claim-Modal warnt vor diesen Konsequenzen, bevor ein Gratis-Domain-Claim eingereicht wird, und verlangt eine ausdrückliche Bestätigung des Benutzers. Ein "So funktioniert Ihre Gratis-Domain"-Hinweis erklärt, dass die Domain während der Testphase auf MCD registriert ist, bei Pro-Umstellung kostenlos auf den eigenen Namen übertragen wird und bei vorzeitigem Ausstieg für €15 übernommen werden kann. Widerrufsdetails werden in der `domain_perk_revocations`-Audit-Tabelle für Support-Zwecke festgehalten.
-
-#### Domain kaufen oder beanspruchen
-
-Die Domain-Kaufkarte (`DomainPurchaseCard.vue`, `domain-purchase.service.ts`) ist die erste Karte auf der Domains-Einstellungsseite. Sie erscheint, wenn der Workspace noch keine aktive eigene Domain hat. Die Karte erlaubt es, eine Domain auszuwählen und über zwei Wege zu erwerben, die beide ein eigenes Zwei-Schritte-Kaufmodal öffnen (`DomainClaimModal.vue`). Schritt 1 sammelt die Registrantdaten (die vom Registrar für WHOIS benötigten Angaben). Schritt 2 bearbeitet die Zahlung oder Einreichung:
-
-- **Kaufen** -- Bezahlter Kauf über OpenProvider. Der Benutzer gibt einen Domainnamen ein, die Karte ruft `GET /api/domain-purchase/quote` auf, um Verfügbarkeit und Preisgestaltung zu prüfen, und öffnet dann das Kaufmodal. Nach Erfassung der Registrantdaten ruft das Modal `POST /api/domain-purchase/checkout-session` auf, um eine Stripe-Zahlungssitzung zu erstellen, und lädt Stripe Embedded Checkout für die Zahlung. Nach Abschluss registriert `POST /api/domain-purchase/finalize` die Domain bei OpenProvider und legt die `domains`-Zeile im Nameserver-Modus an, verbunden mit Cloudflare.
-- **Gratis-Claim** -- Berechtigte Workspaces in einer Pro-Testphase konnen eine `.nl`-Domain fur das erste Jahr kostenlos beanspruchen. Die Karte ruft `GET /api/domain-purchase/free-domain/eligibility` auf, um den Claim-Tier des Workspace und den Gate-Status zu prufen. Das Modal sammelt die Registrantdaten und ruft beim Absenden `POST /api/domain-purchase/free-domain/claim` auf. Die Plattform tragt die Registrierungsgebühr fur das erste Jahr.
-
-Gratis-Claims unterscheiden sich nur darin, wie die Domain nach dem ersten Jahr verlangert wird:
-
-- **Trial-Stufe** -- Workspaces in einer Pro-Testphase. Das erste Jahr ist kostenlos. Am Ende des Gratis-Jahres muss der Workspace auf einem kostenpflichtigen Pro-Tarif sein; die Domain verlangert sich dann als Teil des Pro-Abonnements, bezahlt vom Workspace. Wenn der Workspace nach dem Gratis-Jahr kein Pro mehr zahlt, verfallt die Domain und muss manuell verlangert werden. Wahrend des Trial-Jahres kann der Benutzer optional eine Karte uber Stripe SetupIntent im Modal fur die zukunftige automatische Verlangerung hinterlegen.
-- **Paid-Stufe** -- Standard-Domains zum vollen Preis gekauft. Die Verlangerung wird jahrlich uber die hinterlegte Zahlungsmethode abgerechnet. Schlagt die Zahlung fehl, wird eine Benachrichtigung zur manuellen Verlangerung gesendet.
-- **Gratis-auf-Lebenszeit-Stufe** -- Eine kleine Zahl von Workspaces behalt Pro kostenlos und die lebenslange kostenlose Domain-Verlangerung aufgrund fruherer Vereinbarungen. Keine Zahlungsmethode erforderlich; die Verlangerung erfolgt automatisch uber die Plattform, wobei MCD die Wholesale-Kosten tragt. Diese Stufe ist geschlossen und kann nicht beantragt werden.
-
-Der Berechtigungs-Endpunkt (`GET /api/domain-purchase/free-domain/eligibility`) liefert ein `tier`-Feld neben dem Gate-Bericht. Er gibt keine Anzahl verbleibender Claims aus.
-
-Die Berechtigung wird durch server-seitig geprüfte harte Bedingungen bestimmt:
-
-- **Aktiver Pro-Workspace** -- der Workspace muss auf Pro sein (Testphase oder bezahlt). Workspaces auf Free konnen nicht claimen.
-- **KVK erforderlich** -- der Workspace muss eine KVK-Nummer verknüpft haben.
-- **Domain muss `.nl` sein** -- das Gratisprogramm gilt nur für die NL-Endung.
-- **Domain muss mit dem KVK-Namen übereinstimmen** -- die Domain muss dem registrierten Firmennamen oder einem Handelsnamen entsprechen.
-- **KVK darf nicht auf der Retained-Claims-Liste stehen** -- eine Gratis-Domain pro KVK-Nummer. Eine KVK, die bereits eine Gratis-Domain beansprucht (und dann übertragen) hat, ist dauerhaft gesperrt.
-
-Kontoalter und Website-Inhalt sind keine harten Bedingungen. Sie würden legitime Onboarding-Tag-Claims blockieren, was dem "Ihr Unternehmen an einem Tag gründen, Domain inklusive"-Versprechen widerspricht. Stattdessen fließen beide als weiche Signale in den Gemini-Abuse-Score ein: ein brandneues Konto mit einer Template-Website erzielt einen niedrigen Score und landet in der manuellen Prüfung; ein echtes Unternehmen mit echtem Inhalt wird unabhängig vom Alter automatisch genehmigt. Die Eligibility-Antwort enthält einen `softSignals`-Block (`ageDays`, `sitePublished`, `paragraphCount`), sodass die UI einen Hinweis anzeigen kann, ohne den Claim zu blockieren.
-
-Wenn eine Bedingung nicht erfüllt ist, listet die Karte die verbleibenden Anforderungen auf, damit der Benutzer sieht, was noch zum Freischalten der Gratis-Claim fehlt.
-
-Die unterstützten TLDs für den Kauf sind `.nl`, `.eu`, `.com`, `.net` und `.org`. Andere TLDs zeigen eine Meldung, dass sie noch nicht unterstützt werden, mit dem Hinweis, die Domain woanders zu kaufen und über den bestehenden BYO-Pfad hinzuzufügen.
-
-Neue Datenbanktabellen, die mit diesem Feature eingeführt wurden:
-
-- `domain_purchase_intents` -- verfolgt bezahlte Kaufabsichten mit Stripe PaymentIntent-IDs, Registrantdaten und Kaufstatus.
-- `founder_domain_claims` -- verfolgt Gratis-Domain-Claims mit Berechtigungs-Snapshots, Abuse-Scoring und Claim-Status.
-- `domain_buyout_intents` -- verfolgt Übernahme-Zahlungsabsichten bei vorzeitigem Probezeit-Ende mit Stripe PaymentIntent-IDs und Übergabestatus.
-- `domain_registrar_columns`-Migration fügt registrar-bezogene Spalten zur bestehenden `domains`-Tabelle hinzu.
-
-### Gehostete Website
-
-Ihr Website-Dashboard befindet sich unter **Unternehmen > Ihre Website** (`/website`). Es ist ein Dashboard mit sechs Tabs: Übersicht, Besucher, Auffindbarkeit, Verknüpfungen, Domain & E-Mail und Einstellungen. Der Editor wird über **Website bearbeiten** geöffnet, wenn Sie Inhalt oder Design ändern möchten.
-
-Was die Tabs abdecken:
-
-- **Übersicht**-Tab — Vorschau Ihrer Website, ob diese live ist, und wie viele unveröffentlichte Änderungen ausstehen.
-- **Besucher**-Tab — Sehen Sie, wo Besucher herkommen und wie sie sich durch die Website bewegen.
-- **Auffindbarkeit**-Tab — SEO und Seiten-Metadaten. Alte `/website/seo`-Links leiten hierhin weiter.
-- **Verknüpfungen**-Tab — Zahlungsanbieter (Mollie, Stripe Connect) und Drittanbieterdienste wie Mailchimp, Plausible und Trustpilot. Alte `/website/integraties`-Links leiten hierhin weiter.
-- **Domain & E-Mail**-Tab — Eigene Domain, DNS, SSL, Weiterleitungen und Posteingang-Einrichtung. Siehe den Abschnitt eigene Domains oben.
-- **Einstellungen**-Tab — Wählen Sie, welcher Builder live ist (Vorlage oder Maßanfertigung), und konfigurieren Sie den Workspace-Slug sowie weitere Website-Einstellungen.
-
-Wenn Ihr Workspace mehrere aktive eigene Domains hat (Pro-Tarif), können Sie über einen Domain-Wechsler eine Domain-Variante der Website bearbeiten. Jede Domain erhält ihre eigenen Seiten, Navigation, Design-Tokens und Veröffentlichungs-Snapshots. Ein Domain-Wechsel setzt den aktiven Tab zurück.
-
-Die öffentliche Website wird unter der am besten geeigneten URL des Unternehmens bereitgestellt: eigene Domain-Root → Workspace-Subdomain → Fallback `/portal/<slug>`-Route.
-
-Siehe [Website-Builder](/de/advanced/business-page) für die vollständige Editor-Anleitung.
-
-### E-Mail-Posteingang
-
-Der Posteingang ist eine Top-Level-Oberfläche unter `/inbox` (`apps/web/pages/inbox/index.vue`). Das Backend befindet sich in `apps/api/src/modules/inbox/*` und schreibt in separate Tabellen (`company_email_domains`, `company_mailboxes`, `email_threads`, `email_messages`, `email_attachments`, `email_events`).
-
-Funktionen:
-
-- **Threading** -- eingehende E-Mails werden in Threads gruppiert, basierend auf RFC 822 `Message-ID` / `In-Reply-To` / `References`. Jeder Thread enthält `last_message_preview`, `participants`, Status (`open / snoozed / closed / spam / deleted`) und Labels. Lange Threads klappen die mittleren Nachrichten hinter einer "{n} ältere Nachrichten anzeigen"-Pille ein, sodass die älteste Nachricht und die neuesten zwei sichtbar bleiben (Gmail/Outlook-Konvention). Klicken Sie auf die Pille, um alles zu erweitern.
-- **Antworten** -- Inline-Antwortfeld im Thread. Intelligentes `From` wählt die Adresse aus, an die die ursprüngliche E-Mail gesendet wurde, sodass ein Kunde, der an `support@acme.de` geschrieben hat, eine Antwort von `support@` erhält, nicht von `info@`.
-- **Allen antworten** -- Antwort mit einem Klick an alle Teilnehmer des Threads. Die Schaltfläche erscheint neben Antworten im Thread-Header und schließt alle Empfänger der ursprünglichen Nachricht ein.
-- **Weiterleiten** -- leiten Sie den gesamten Thread an einen anderen Empfänger weiter. Öffnet ein Verfassen-Drawer, in dem der ursprüngliche Nachrichtentext und die Anhänge vor dem Senden bearbeitet werden können. Der Header der weitergeleiteten Nachricht zeigt den ursprünglichen Absender, das Datum und den Betreff.
-- **CC und BCC** -- CC- und BCC-Felder stehen sowohl beim Verfassen als auch beim Antworten über einen "Cc/Bcc hinzufügen"-Toggle zur Verfügung. Adressen akzeptieren kommagetrennte Listen oder Einfügen aus der Zwischenablage. Die Felder bleiben ausgeblendet, bis sie benötigt werden, entsprechend dem üblichen Posteingangsmuster, bei dem die meisten Nachrichten sie nicht brauchen.
-- **Entwürfe** -- speichern Sie teilweise geschriebene Nachrichten und kommen Sie später darauf zurück. Entwürfe werden serverseitig gespeichert und bleiben über Browser-Sitzungen hinweg erhalten. Jeder Entwurf hat einen Betreff, eine Empfängerliste und einen Nachrichtentext. Entwürfe ohne Betreff zeigen "(kein Betreff)", und Entwürfe ohne Empfänger zeigen "(kein Empfänger)". Ein Antwort-Entwurf wird mit einem "Antwort"-Chip in der Thread-Liste markiert, sodass Sie auf einen Blick sehen, bei welchem Thread Sie mitten in der Antwort waren.
-- **Verfassen** -- Drawer-Formular mit einer einzigen Identitätsauswahl, die Postfach und Absenderadresse in einem Bedienelement festlegt, Kundenauswahl (oder freies `An`), Betreff, Nachricht, CC/BCC-Felder, Anhänge. Warnung vor zurückgewiesenen Empfängern wird vor dem Senden angezeigt.
-- **Send-From-Aliase** -- `info@`, `support@`, `sales@` sind bidirektionale Aliase desselben Postfachs. `noreply@` ist reiner Sende-Alias -- als From wählbar, aber eingehende E-Mails daran werden bei der Aufnahme verworfen.
-- **Anhänge** -- Hochladen vor dem Senden (sowohl Verfassen als auch Antworten). Anhänge eingehender E-Mails sind aus der Nachricht herunterladbar; signierte Download-URLs verfallen nach kurzer TTL.
-- **Alias-Hinweis** -- wenn eine eingehende Nachricht an eine Adresse eingeht, die noch kein deklarierter Alias ist, zeigt der Thread einen sanften Hinweis mit einer "Als Alias hinzufügen"-Aktion.
-- **Verknüpfung** -- Threads können mit einem Kunden, Projekt oder einer Rechnung zur Querverweisung verknüpft werden.
-- **Catch-All-Fallback** -- E-Mails an jeden lokalen Teil der Domain fallen auf das Standardpostfach durch (`is_default = true`, eines pro Domain). Das bedeutet, Tippfehler und nicht deklarierte Aliase verschwinden nicht stillschweigend.
-- **Audit-Log** -- ausgehende Sendungen, Postfachänderungen und Thread-Statusänderungen werden in einer Audit-Tabelle für den Workspace aufgezeichnet. Derzeit nur API (noch keine UI) -- für Support-Mitarbeiter zur Fehlerbehebung zugänglich.
-- **HTML-E-Mail-Darstellung** -- HTML-E-Mails werden mit ihrem ursprünglichen Styling in einem sandboxed iframe dargestellt. Der Renderer entfernt Skripte, Formulare und Event-Handler während der Bereinigung und blockiert externe Bilder standardmäßig, um Ihre Privatsphäre zu schützen. Ein Hinweisfeld erscheint, wenn Bilder blockiert sind, mit einem einzigen Klick auf "Bilder anzeigen", um die Nachricht mit Bildern neu darzustellen. Wenn kein HTML-Body vorhanden ist, wird der Klartext-Teil als Fallback angezeigt.
-- **Stern-Markierung**: Markieren Sie wichtige Threads mit einem Stern für schnellen Zugriff. Ein Stern-Symbol erscheint neben dem Status-Punkt bei markierten Threads in der Thread-Liste. Die Werkzeugleiste hat eine Stern-Schaltfläche, die den Status für den geöffneten Thread umschaltet. Eine "Markiert"-Ansicht in der linken Seitenleiste neben Offen, Zurückgestellt, Geschlossen, Spam und Papierkorb filtert auf markierte Threads, gestützt durch einen partiellen Datenbank-Index für sofortige Ergebnisse.
-- **Soft-Delete** -- Threads können in den Papierkorb verschoben werden, anstatt dauerhaft gelöscht zu werden. Eine Löschen-Schaltfläche (Papierkorb-Symbol) erscheint in der Werkzeugleiste für nicht gelöschte Threads. Nach dem Löschen ändert sich die Schaltfläche in eine Wiederherstellen-Aktion, die den Thread zurück auf `open` setzt. Der Papierkorb-Filter erscheint in der linken Seitenleiste neben Offen, Zurückgestellt, Geschlossen und Spam, sodass Sie gelöschte Threads überprüfen können, bevor sie endgültig bereinigt werden.
-- **Volltextsuche**: eine Suchleiste über der Thread-Liste ermöglicht die Suche in allen Posteingangsnachrichten nach Betreff, Nachrichtentext, Snippet und Absender. Die Suche verwendet die Postgres-Volltextsuche mit gewichteter Feldrangfolge, sodass Betreff-Treffer vor Nachrichtentext-Treffern erscheinen. Ergebnisse werden pro Thread gruppiert, wobei das Snippet der am besten passenden Nachricht als Vorschauzeile angezeigt wird. Unterstützt Phrasen in Anführungszeichen, `OR` und `-` Ausschlüsse. Eine 250-ms-Verzögerung hält die Oberfläche reaktionsschnell, und der Ladeindikator gibt Echtzeit-Feedback.
-
-#### Entwürfe
-
-Der Entwürfe-Tab befindet sich neben der Hauptthread-Liste. Entwürfe werden serverseitig gespeichert, sodass sie Browser-Neustarts überstehen und geräteübergreifend verfügbar sind. Wenn Sie eine neue Nachricht oder Antwort beginnen und das Verfassen-Drawer ohne Senden schließen, wird der Inhalt automatisch als Entwurf gespeichert. Sie können auch explizit mit der Schaltfläche "Entwurf speichern" speichern. Ein Entwurf-Chip zeigt "Antwort", wenn der Entwurf aus einem Thread gestartet wurde, oder "Neu" bei einer neuen Nachricht. Das Bearbeiten eines Entwurfs öffnet das Verfassen-Drawer mit dem gespeicherten Inhalt. Das Löschen eines Entwurfs erfordert einen Bestätigungsschritt.
-
-Der Posteingang verwendet Ihre eigene Domain erst, nachdem `quickEnableInbox` erfolgreich ausgeführt wurde und die Apex-MX-Records auf Cloudflare zeigen. Bis dahin kann der Workspace weiterhin E-Mails über den Standardzustellpfad senden, der unter [E-Mail-Integration](/de/settings/email) beschrieben ist, aber keine E-Mails empfangen.
-
-#### Live-Polling
-
-Der Posteingang aktualisiert sich automatisch, während der Tab geöffnet ist. Die Thread-Liste pollt alle 45 Sekunden auf neue E-Mails, und das Seitenleisten-Badge aktualisiert sich alle 60 Sekunden. Beides pausiert, wenn der Tab im Hintergrund ist -- kein unnötiger Netzwerkverkehr. Das Polling ist lautlos: Ladespinner blinken nicht bei Hintergrundaktualisierungen, und Polls werden während einer aktiven Suche komplett übersprungen, damit Ihre Ergebnisse stabil bleiben. Eine manuelle Aktualisieren-Schaltfläche neben Verfassen holt den neuesten Stand sofort, wenn Sie gerade etwas erwarten; sie ist während des laufenden Aufrufs deaktiviert, um Request-Stapelung zu verhindern.
-
-#### Als ungelesen markieren
-
-Sie können einen geöffneten Thread über die Toolbar als ungelesen markieren. Anders als in früheren Versionen, in denen der Ungelesen-Status nur lokal gespeichert und bei einem Refetch verloren war, wird dieser nun serverseitig persistiert. Das Seitenleisten-Badge zählt ungelesene Nachrichten, nicht Threads mit ungelesenen Nachrichten, und wird entsprechend aktualisiert. Der Thread bleibt bei Seitenaktualisierungen, Browser-Neustarts und geräteübergreifend ungelesen, bis Sie ihn erneut öffnen.
-
-### Verkäufe
-
-Wenn Sie Kauf-Buttons zu Preisstufen oder einem Produktblock auf Ihrer öffentlichen Website hinzufügen, erstellt jede abgeschlossene Zahlung einen Verkaufsdatensatz. Verfolgen Sie diese unter **Geld > Verkäufe** (`/workspace/financial/money/sales`).
-
-Was das Verkaufsprotokoll zeigt:
-
-- Eine chronologisch sortierte Liste aller über Ihre Website getätigten Käufe.
-- Den Zahlungsdienstleister (Mollie oder Stripe Connect) und den Zahlungsstatus (`paid`, `pending`, `failed`, `expired`, `refunded`).
-- Den ursprünglichen Abschnitt (welche Preisstufe oder welcher Produktblock gekauft wurde).
-- Kunden-E-Mail, gezahlter Betrag und Währung.
-
-Verkaufsdatensätze werden vom öffentlichen Checkout-Endpunkt (`POST /public/sites/:slug/checkout`) erstellt, der den Abschnitt validiert, eine Zahlung über den verbundenen Dienstleister anlegt und den Käufer zur gehosteten Checkout-Seite weiterleitet.
-
-Bezahlte Verkäufe zeigen ein Aktionsmenü (drei Punkte) mit zwei Optionen:
-
-- **Rechnung neu erstellen.** Erstellt die verknüpfte Rechnung neu, falls sie verloren gegangen oder beim Kauf nicht generiert wurde. Auch sicher ausführbar, wenn die Rechnung bereits existiert.
-- **Rückerstattung.** Überweist den vollen Betrag über den ursprünglichen Zahlungsdienstleister (Mollie oder Stripe) an den Kunden zurück. Eine Gutschrift wird automatisch gegen die verknüpfte Rechnung für Ihre Buchhaltung erstellt. Nur für bezahlte Verkäufe verfügbar.
-
-### Ablauf nach dem Kauf
-
-Wenn eine Zahlung abgeschlossen ist, führt die Plattform automatisch die folgenden Schritte aus. Alles läuft fire-and-forget: Fehler werden protokolliert und haben keinen Einfluss auf den Zahlungsstatus, den der Käufer sieht.
-
-1. **Rechnung erstellt.** Eine Rechnung wird aus dem Verkauf erstellt, mit Produktname, Preis und der E-Mail des Käufers. Der Preis, den Sie im Editor festlegen, ist der endgültige Kundenpreis inklusive Mehrwertsteuer. Die Rechnungsposition teilt diesen in einen Netto-Betrag und den Mehrwertsteuersatz auf, den Sie in der Preisstufe oder dem Produktblock konfiguriert haben (Standard 21%). Wenn die E-Mail mit einem bestehenden Kunden in Ihrem Workspace übereinstimmt, wird die Rechnung diesem Kunden zugeordnet. Andernfalls wird ein minimaler Kundendatensatz erstellt. Die Rechnung wird sofort finalisiert (Status `sent`), da die Zahlung bereits eingegangen ist.
-2. **Zahlung verbucht.** Ein Zahlungsdatensatz wird auf der Rechnung über den Standard-Zahlungsservice erstellt. Die Zahlungsmethode wird auf den Dienstleister (Mollie oder Stripe) gesetzt und die Referenz enthält die Prozessor-Session-ID für Audit-Trails.
-3. **Kundenbestätigung.** Der Käufer erhält eine Bestätigungs-E-Mail mit Produktname, Betrag und Zahlungsmethode. Wenn eine Rechnung erstellt wurde, enthält die E-Mail einen gesicherten Portal-Link zum Anzeigen und Herunterladen des Rechnungs-PDFs.
-4. **Inhaber benachrichtigt.** Sie erhalten eine In-App-Benachrichtigung und eine E-Mail-Zusammenfassung des Verkaufs: Produkt, Betrag, Kunden-E-Mail und einen direkten Link zur Rechnung.
-
-Die Checkout-Erfolg- und Checkout-Abgebrochen-Seiten zeigen dem Käufer einen gebrandeten Ergebnisbildschirm, der die Design-Tokens (Farben) Ihrer Website verwendet, damit die Seite markenkonform bleibt.
-
-## Sichtbarkeit des Posteingang-Tabs
-
-Der Posteingang-Tab ist in der Seitenleiste und der unteren Navigationsleiste immer sichtbar. Auf kostenlosen Tarifen ohne Posteingang erscheint er als Upgrade-Hinweis und öffnet den Tarifvergleich, wenn er ausgewählt wird. Auf kostenpflichtigen Tarifen bleibt der Tab immer sichtbar, auch bevor eine Domain verbunden wurde, weil er der Einstieg in den Posteingang-Setup-Assistenten ist.
-
-Für einen Workspace, der bereits eine Posteingang-fähige Domain eingerichtet hat, zeigt der Tab den echten Posteingang mit Ungelesen-Zählern und vollständigem Thread-Management. Für bezahlte Workspaces ohne Posteingang-Domain leitet ein Klick auf den Tab zu `/inbox/setup`, damit du Domain und Posteingang in einem Ablauf verbindest und aktivierst.
-
-## Demo-Website beanspruchen
-
-Wenn MyCompanyDesk im Rahmen des Outreach-Programms eine Demo-Website fur einen Interessenten erstellt, erhalt der Interessent einen personlichen Beanspruchungslink (per WhatsApp oder E-Mail). Die Beanspruchungsseite unter `/claim/<slug>` ermoglicht es dem Interessenten, den Demo-Arbeitsbereich mit seiner eigenen E-Mail-Adresse und einem Passwort zu ubernehmen.
-
-### So funktioniert es
-
-1. Sil oder der Outreach-Cron erstellt einen Demo-Arbeitsbereich (`companies.is_demo = true`) mit einer 4-seitigen branchenspezifischen Website (Home, Diensten, Über uns, Kontakt), aufgebaut auf der Standard-Multi-Page-Basis, die jeder neue Workspace erhält. Anschließend werden branchenspezifische Overlays angewandt: der Home-Hero erhält eine Branchen-Tagline, die Diensten-Seite bekommt einen Spotlight-Block mit dem Hauptdienst des Gewerks sowie einen Dienste-Block mit drei branchenspezifischen Servicekarten, und die Kontakt-Seite wird mit der Telefonnummer des Interessenten in der Formular-Einleitung und seiner Adresse im Standorte-Block befüllt.
-2. Der Interessent erhalt einen Link wie `https://app.mycompanydesk.com/claim/dachdecker-berlin`.
-3. Die Beanspruchungsseite ladt die Demo anhand des Slugs und zeigt den Firmennamen an. Wenn der Demo-Arbeitsbereich existiert und beanspruchbar ist, gibt der Interessent seine E-Mail-Adresse und ein Passwort ein (mindestens 8 Zeichen, mit einem Buchstaben und einer Ziffer).
-4. Beim Absenden wird der Arbeitsbereich atomar ubertragen: Der Platzhalter-Benutzer wird mit der E-Mail-Adresse und dem Passwort des Interessenten uberschrieben, `is_demo` wird deaktiviert und die Outreach-Zeile wird mit den Beanspruchungs-Metadaten aktualisiert.
-5. Die E-Mail-Adresse wird bei der Beanspruchung als verifiziert markiert (der Interessent hat bereits nachgewiesen, dass er Inhaber des fur die Kontaktaufnahme genutzten Kommunikationskanals ist). Es wird dennoch eine Willkommens-E-Mail versendet, damit die Adresse in seinem Posteingang erscheint.
-6. Der Interessent wird mit einer Erfolgsmeldung zur Anmeldeseite weitergeleitet und kann sich sofort anmelden, seine Website bearbeiten, Rechnungen versenden und den Posteingang nutzen.
-
-### Sicherheitsgarantien
-
-- Nur Arbeitsbereiche mit `is_demo = true` konnen beansprucht werden. Echte Kundenseiten sind uber diesen Endpunkt niemals beanspruchbar.
-- Die E-Mail-Adresse darf noch keinem anderen Benutzer auf der Plattform gehoren.
-- Die Beanspruchung ist atomar (eine einzelne Datenbanktransaktion), sodass Teilubertragungen keinen inkonsistenten Zustand hinterlassen konnen.
-- Beanspruchungslinks werden nach der Beanspruchung ungultig, wodurch eine Wiederverwendung verhindert wird.
-
-## E-Mails senden vs. E-Mails empfangen
-
-Dieses Bundle ist die **Empfangsseite**. Ausgehende E-Mails -- Rechnungsversand, Erinnerungen, Angebotsversand -- werden von der breiteren E-Mail-Pipeline abgewickelt, die unter [E-Mail-Integration](/de/settings/email) beschrieben ist. Der Posteingang dient dem Empfang von Kunden-E-Mails und dem Verfassen von Antworten; er routet Ihre automatisierten Rechnungssendungen nicht. Die Rechnungszustellung folgt immer Ihrer gewählten Versandmethode unter [E-Mail-Integration](/de/settings/email) (Gmail, Outlook oder der integrierte Versender). Die DKIM-Signierung der Posteingangs-Domain wird für ausgehende Antworten verwendet, die Sie im Posteingang verfassen, nicht für automatisierte Transaktions-E-Mails.
-
-## Grenzen und Fallstricke
-
-- **Eine Website pro Unternehmen.** Das Hinzufügen einer eigenen Domain deaktiviert die Workspace-Subdomain. Das Entfernen der Domain stellt den Slug nicht automatisch wieder her -- aktivieren Sie ihn manuell, wenn Sie zurückfallen möchten.
-- **Nur eine aktiver Posteingang pro Domain.** Die Plattform erlaubt nur einem Workspace gleichzeitig, auf einer Domain E-Mails zu empfangen. Wenn ein anderer Workspace bereits einen Posteingang auf `acme.de` aktiviert hat, wird Ihr Versuch, auf demselben Namen einen Posteingang zu aktivieren, blockiert. Websites und reine CNAME-Claims werden nicht blockiert; nur ein aktiver Posteingang ist exklusiv.
-- **Sie können keine Zone beanspruchen, die ein anderer Workspace bereits hält.** Wenn Sie eine Domain im Nameserver-Modus hinzufügen, prüft die Plattform, ob die zugrundeliegende Cloudflare-Zone bereits für einen anderen Workspace live ist. Falls ja, wird das Hinzufügen mit einer klaren Fehlermeldung abgelehnt, damit Sie eine Domain nicht anhand fremder DNS-Einträge "verifizieren" können.
-- **Das erneute Hinzufügen einer eigenen zuvor entfernten Domain funktioniert weiterhin.** Wenn Ihr Workspace eine Domain zuvor entfernt hat, kann die bestehende Zone für denselben Workspace wiederverwendet werden; die Prüfung blockiert nur, dass ein anderer Workspace sie übernimmt.
-- **CNAME-Modus hat keine E-Mail.** E-Mail-Routing erfordert eine vollständige Cloudflare-Zone, die nur der Nameserver-Modus bietet.
-- **Der Assistent verweigert das Überschreiben eines bestehenden Drittanbieter-MX.** Wenn Ihr Apex bereits auf Google Workspace oder Microsoft 365 zeigt, gibt `quickEnableInbox` `apexMx.status = 'conflict'` zurück und Sie müssen wählen: MX zu Cloudflare migrieren oder bei Ihrem bestehenden Anbieter bleiben und den gebündelten Posteingang überspringen.
-- **Reservierte Subdomains.** `app`, `admin`, `api`, `www`, `mail`, `support`, `portal`, `dashboard` und eine Handvoll anderer sind auf Workspace-Slug-Ebene gesperrt.
-- **Pre-Launch.** Das Bundle wird durch `custom_domains` und `public_business_page` feature-gesteuert. Workspaces ohne diese Flags sehen die Upgrade-Aufforderung anstelle des Editors.
-
-## Verwandt
-
-- [Einrichtungsassistent](/de/getting-started/company-setup) -- die magische Einführung, die den gebündelten Ablauf antreibt.
-- [E-Mail-Integration](/de/settings/email) -- ausgehende E-Mails, Send-From-Identitätsauswahl, Zustellverfolgung.
-- [Website-Builder](/de/advanced/business-page) -- die vollständige Editor-Anleitung.
-- [Unternehmenseinstellungen](/de/settings/company) -- das Dach, das Über / Aussehen / Website / Adresse enthält.
-- [Abrechnung & Tarife](/de/settings/billing) -- Feature-Flags, die das Bundle steuern.
+- [Kontoeinstellungen](/account/settings)
+- [Cookies & Tracking](/account/cookies-tracking)
+- [Teammitglieder & Berechtigungen](/account/team-members)
