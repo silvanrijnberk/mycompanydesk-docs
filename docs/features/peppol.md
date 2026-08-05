@@ -43,6 +43,14 @@ The invoice is delivered digitally to your customer's accounting system. A succe
 
 Email and Peppol are not mutually exclusive. You can send by email today and as an e-invoice tomorrow, choosing per invoice what fits the customer.
 
+## Resending an e-invoice
+
+A Peppol send is a real, legally-binding e-invoice on the network, not just a copy of an email. Because of that, sending the same invoice twice creates two separate e-invoices. MyCompanyDesk blocks an accidental second Peppol send: if the invoice was already sent or delivered via Peppol, clicking **Send e-invoice via Peppol** again shows a confirmation dialog instead of sending immediately.
+
+The dialog tells you when the invoice was first sent and asks you to confirm that you really want to send a second e-invoice. If you confirm, a new Peppol e-invoice is dispatched. If you cancel, nothing is sent and the existing Peppol delivery stays as it is.
+
+If you only want to send a reminder or a fresh PDF, use email instead. Email resends do not create duplicate Peppol e-invoices.
+
 ## Receiving e-invoices
 
 When receiving is enabled, suppliers can send you e-invoices over Peppol. MyCompanyDesk turns each incoming e-invoice into a draft expense prefilled with the supplier, amount, VAT and date. The draft appears in your expenses for review; you can check, edit and book it the same way as any other expense.

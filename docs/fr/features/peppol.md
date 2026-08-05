@@ -43,6 +43,14 @@ La facture est livree numeriquement dans le systeme comptable de votre client. U
 
 L'e-mail et Peppol ne s'excluent pas mutuellement. Vous pouvez envoyer par e-mail aujourd'hui et en facture electronique demain, en choisissant par facture ce qui convient au client.
 
+## Renvoyer une facture electronique
+
+Un envoi Peppol est une veritable facture electronique juridiquement contraignante sur le reseau, pas seulement une copie d'un e-mail. Par consequent, envoyer deux fois la meme facture cree deux factures electroniques distinctes. MyCompanyDesk bloque un second envoi Peppol accidentel : si la facture a deja ete envoyee ou livree via Peppol, cliquer a nouveau sur **Envoyer la facture electronique via Peppol** affiche une boite de confirmation au lieu d'envoyer immediatement.
+
+La boite indique quand la facture a ete envoyee pour la premiere fois et demande de confirmer que vous voulez vraiment envoyer une seconde facture electronique. Si vous confirmez, une nouvelle facture electronique Peppol est expediee. Si vous annulez, rien n'est envoye et la livraison Peppol existante reste inchangee.
+
+Si vous voulez seulement envoyer un rappel ou un PDF a jour, utilisez plutot l'e-mail. Les renvois par e-mail ne creent pas de factures electroniques Peppol en double.
+
 ## Recevoir des factures electroniques
 
 Lorsque la reception est activee, vos fournisseurs peuvent vous envoyer des factures electroniques via Peppol. MyCompanyDesk transforme chaque facture electronique entrante en brouillon de depense pre-rempli avec le fournisseur, le montant, la TVA et la date. Le brouillon apparait dans vos depenses pour verification; vous pouvez l'examiner, le modifier et le comptabiliser comme n'importe quelle autre depense.

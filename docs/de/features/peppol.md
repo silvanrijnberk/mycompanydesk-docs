@@ -43,6 +43,14 @@ Die Rechnung wird digital im Buchhaltungssystem Ihres Kunden zugestellt. Eine er
 
 E-Mail und Peppol schließen sich nicht aus. Sie können heute per E-Mail senden und morgen als E-Rechnung, pro Rechnung wählen, was zum Kunden passt.
 
+## Eine E-Rechnung erneut senden
+
+Eine Peppol-Sendung ist eine echte, rechtsverbindliche E-Rechnung im Netzwerk, nicht nur eine Kopie einer E-Mail. Deshalb erzeugt ein zweiter Versand derselben Rechnung zwei separate E-Rechnungen. MyCompanyDesk blockt einen versehentlichen zweiten Peppol-Versand: wurde die Rechnung bereits über Peppol gesendet oder zugestellt, erscheint beim erneuten Klick auf **E-Rechnung über Peppol senden** ein Bestätigungsdialog statt sofort zu senden.
+
+Der Dialog zeigt an, wann die Rechnung erstmalig gesendet wurde, und fragt, ob Sie wirklich eine zweite E-Rechnung senden möchten. Wenn Sie bestätigen, wird eine neue Peppol-E-Rechnung versandt. Wenn Sie abbrechen, wird nichts gesendet und die bestehende Peppol-Zustellung bleibt unverändert.
+
+Wenn Sie nur eine Erinnerung oder ein aktuelles PDF senden möchten, verwenden Sie stattdessen E-Mail. E-Mail-Neuversendungen erzeugen keine doppelten Peppol-E-Rechnungen.
+
 ## E-Rechnungen empfangen
 
 Wenn der Empfang aktiviert ist, können Lieferanten Ihnen E-Rechnungen über Peppol senden. MyCompanyDesk wandelt jede eingehende E-Rechnung in einen vorausgefüllten Ausgabenentwurf um, der bereits Lieferant, Betrag, USt. und Datum enthält. Der Entwurf erscheint unter Ausgaben zur Prüfung; Sie können ihn wie jede andere Ausgabe prüfen, bearbeiten und buchen.
