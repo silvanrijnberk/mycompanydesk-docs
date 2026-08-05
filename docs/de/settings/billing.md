@@ -1,6 +1,6 @@
 ---
 title: "Abonnement & Zahlungen"
-last_verified: 2026-07-22
+last_verified: 2026-08-05
 ---
 
 # Abonnement & Zahlungen
@@ -105,7 +105,11 @@ Der Teamzugang ist in Pro ohne Kosten pro Person enthalten: Laden Sie so viele m
 
 ### Zusätzliche Unternehmen
 
-Ihr Abonnement deckt Ihren Hauptarbeitsbereich ab. Jedes zusätzliche Unternehmen, das Sie hinzufügen, wird zum vor der Bestätigung angezeigten Preis berechnet und beginnt mit einer eigenen Pro-Testphase. Während der Testphase kostet das zusätzliche Unternehmen nichts; danach wird es zum angezeigten Preis Ihrem Abonnement hinzugefügt. Sie können ein Unternehmen jederzeit inaktiv setzen; es wird dann nicht mehr für Ihr Abonnement gezählt, bleibt aber lesbar und exportierbar für die gesetzliche Aufbewahrungsfrist.
+Ihr Abonnement deckt Ihren Hauptarbeitsbereich ab. Jedes zusätzliche Unternehmen, das Sie hinzufügen, wird zum vorab angezeigten Preis berechnet.
+
+Wenn Ihr Arbeitsbereich einen kostenpflichtigen Plan hat (Starter oder Pro), beginnt das zusätzliche Unternehmen mit einer eigenen Pro-Testphase. Während der Testphase kostet es nichts; danach wird es zum angezeigten Preis Ihrem Abonnement hinzugefügt.
+
+Wenn Ihr Arbeitsbereich kostenloses Office aufgrund einer Regelung wie einer Gunst- oder Founding-Member-Regelung hat, gibt es kein Abonnement, an das das zusätzliche Unternehmen angehängt werden könnte. Sie kaufen es deshalb über einen separaten reinen Add-on-Checkout. Das erste Unternehmen bleibt kostenlos; nur das zusätzliche Unternehmen wird berechnet. Sie können ein Unternehmen jederzeit inaktiv setzen; es wird dann nicht mehr für Ihr Abonnement oder Add-on gezählt, bleibt aber lesbar und exportierbar für die gesetzliche Aufbewahrungsfrist.
 
 ## Stripe-Portal
 

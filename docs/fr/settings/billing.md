@@ -1,6 +1,6 @@
 ---
 title: Abonnement et paiements
-last_verified: 2026-07-22
+last_verified: 2026-08-05
 ---
 
 # Abonnement et paiements
@@ -105,7 +105,11 @@ L'accès équipe est inclus dans Pro sans frais par personne : invitez autant d'
 
 ### Entreprises supplémentaires
 
-Votre abonnement couvre votre espace de travail principal. Chaque entreprise supplémentaire que vous ajoutez est facturée au prix affiché avant confirmation, et commence par sa propre période d'essai Pro. Pendant l'essai, l'entreprise supplémentaire ne coûte rien ; après l'essai, elle est ajoutée à votre abonnement au prix affiché. Vous pouvez désactiver une entreprise à tout moment ; elle ne compte alors plus dans votre abonnement, tout en restant lisible et exportable pour la durée légale de conservation.
+Votre abonnement couvre votre espace de travail principal. Chaque entreprise supplémentaire que vous ajoutez est facturée au prix affiché avant confirmation.
+
+Si votre espace de travail est sur un plan payant (Starter ou Pro), l'entreprise supplémentaire commence par sa propre période d'essai Pro. Pendant l'essai, elle ne coûte rien ; après l'essai, elle est ajoutée à votre abonnement au tarif affiché.
+
+Si votre espace de travail dispose d'un Office gratuit dans le cadre d'une disposition telle qu'un plan comped ou founding member, il n'y a pas d'abonnement auquel rattacher l'entreprise supplémentaire. Vous l'achetez donc via un paiement dédié add-on. La première entreprise reste gratuite ; seule l'entreprise supplémentaire est facturée. Vous pouvez désactiver une entreprise à tout moment ; elle ne compte alors plus dans votre abonnement ou add-on, tout en restant lisible et exportable pour la durée légale de conservation.
 
 ## Portail Stripe
 

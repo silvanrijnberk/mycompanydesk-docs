@@ -1,6 +1,6 @@
 ---
 title: "Plan & payments"
-last_verified: 2026-07-22
+last_verified: 2026-08-05
 ---
 
 # Plan & payments
@@ -105,7 +105,11 @@ Team access is included in Pro with no per-person charge: invite as many working
 
 ### Extra businesses
 
-Your subscription covers your home workspace. Each additional business you add is billed at the price shown before you confirm, and starts on its own Pro trial. During the trial the extra business costs nothing; after the trial it is added to your subscription at the displayed price. You can deactivate a business at any time; it then stops counting toward your subscription while remaining readable and exportable for the statutory retention period.
+Your subscription covers your home workspace. Each additional business you add is billed at the price shown before you confirm.
+
+If your workspace is on a paid plan (Starter or Pro), the extra business starts on its own Pro trial. During the trial it costs nothing; after the trial it is added to your subscription at the displayed price.
+
+If your workspace holds free Office under an arrangement like a comped or founding-member plan, there is no plan subscription to attach the extra business to, so you buy it through a separate add-on-only checkout. The first business stays free; only the extra business is billed. You can deactivate a business at any time; it then stops counting toward your subscription or add-on while remaining readable and exportable for the statutory retention period.
 
 ## Stripe portal
 
