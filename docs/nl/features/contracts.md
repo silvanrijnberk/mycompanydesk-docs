@@ -61,6 +61,16 @@ Actieve contracten met een herhalingsschema genereren automatisch facturen bij e
 
 Je kunt gegenereerde facturen handmatig bekijken en versturen, of automatische verzending instellen. Als een contract gebaseerd is op een uur-, dag- of vaste projectprijs, krijg je een waarschuwing wanneer het contractbudget wordt overschreden of wanneer geboekte uren niet kunnen worden geprijsd omdat geen tarief is ingesteld.
 
+## Factuurperiode
+
+Contracten factureren voor een periode ten opzichte van de factuurdatum:
+
+- **Huidige** — de periode waarin de factuurdatum valt (standaard)
+- **Vorige** — de periode voor de factuurdatum
+- **Volgende** — de periode na de factuurdatum; oude waarde die bewaard blijft voor oudere huurcontracten die vooraf gefactureerd worden
+
+In het formulier kun je vandaag de dag alleen kiezen tussen **huidige** en **vorige**. Als je een ouder contract hebt dat op **volgende** staat, houdt de API die waarde vast bij opslaan, zodat het contract bewerkbaar blijft.
+
 ## Automatische incasso
 
 Voor terugkerende contracten kun je het gefactureerde bedrag automatisch incasseren via het opgeslagen betaalmandaat van de klant, in plaats van een betaallink per e-mail te sturen. Hiervoor is een gekoppelde betaalprovider (Mollie of Stripe) en een geldig mandaat van de klant nodig.
