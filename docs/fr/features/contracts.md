@@ -57,7 +57,7 @@ Les contrats actifs avec un calendrier de recurrence generent automatiquement de
 
 1. Cree un brouillon de facture base sur les termes du contrat
 2. Applique le client, le montant et la description corrects
-3. Suit vos parametres de numerotation des factures
+3. Utilise la meme numerotation automatique des factures
 
 Vous pouvez examiner et envoyer les factures generees manuellement, ou configurer l'envoi automatique. Lorsqu'un contrat est basé sur un taux horaire, un taux journalier ou un prix forfaitaire de projet, vous recevez aussi une alerte quand le budget du contrat est dépassé ou quand des heures saisies n'ont pas pu être tarifées car aucun taux n'était défini.
 

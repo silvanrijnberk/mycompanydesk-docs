@@ -34,7 +34,7 @@ La fréquence à laquelle MyCompanyDesk recherche de nouvelles transactions est 
 
 ## De la transaction à la dépense
 
-Avant qu'une transaction ne soit catégorisée, les lignes sortantes sont comparées aux dépenses déjà présentes dans vos comptes. Si la correspondance est sans ambiguïté, MyCompanyDesk relie automatiquement la ligne bancaire à cette dépense existante. Cela ne crée rien de nouveau ; cela enregistre simplement quel paiement a réglé la dépense.
+Avant qu'une transaction ne soit catégorisée, les lignes sortantes sont comparées aux dépenses déjà présentes dans vos comptes. Si la correspondance est sans ambiguïté, MyCompanyDesk relie automatiquement la ligne bancaire à cette dépense existante. La vérification compare le montant, la date et le nom de la contrepartie/du fournisseur ; seule une correspondance forte sur tous les signaux lie une transaction sans demande préalable. Cela ne crée rien de nouveau ; cela enregistre simplement quel paiement a réglé la dépense.
 
 Après la passe de liaison, les nouvelles transactions passent par vos règles et la catégorisation intelligente :
 

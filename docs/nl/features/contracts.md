@@ -57,7 +57,7 @@ Actieve contracten met een herhalingsschema genereren automatisch facturen bij e
 
 1. Maakt een conceptfactuur aan op basis van de contractvoorwaarden
 2. Past de juiste klant, bedrag en omschrijving toe
-3. Volgt je factuurnummeringsinstellingen
+3. Gebruikt dezelfde automatische factuurnummering
 
 Je kunt gegenereerde facturen handmatig bekijken en versturen, of automatische verzending instellen. Als een contract gebaseerd is op een uur-, dag- of vaste projectprijs, krijg je een waarschuwing wanneer het contractbudget wordt overschreden of wanneer geboekte uren niet kunnen worden geprijsd omdat geen tarief is ingesteld.
 

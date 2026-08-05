@@ -72,7 +72,7 @@ Entfernen Sie die wiederkehrende Vorlage vollständig. Bereits generierte Rechnu
 Jedes Mal, wenn eine wiederkehrende Rechnung ausgelöst wird, wird eine neue Rechnung erstellt:
 
 - Sie verwendet die Positionen und den Kunden der Vorlage
-- Sie folgt Ihrer aktuellen Rechnungsnummerierung
+- Sie erhält die nächste automatische Rechnungsnummer
 - Sie beginnt als **Entwurf** (überprüfen und versenden) oder wird automatisch versendet, falls konfiguriert
 - Jede generierte Rechnung ist unabhängig — Sie können sie bearbeiten, ohne die Vorlage zu beeinflussen
 
