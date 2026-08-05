@@ -85,6 +85,8 @@ Une fois confirme, la depense est creee avec :
 - Le recu original joint en piece jointe
 - Des suggestions de categorie (si les suggestions IA sont activees)
 
+Lorsque le scanner determine le pays d'un fournisseur (par exemple un fournisseur etranger ou un numéro de registre neerlandais reconnu), le panneau de verification affiche egalement un selecteur de traitement de TVA. Le scanner propose une valeur par defaut en fonction du fournisseur et du montant, mais vous pouvez la modifier avant de confirmer. Cela compte pour les achats intracommunautaires en autoliquidation et pour les depenses d'importation en provenance d'un pays hors UE.
+
 Vous pouvez modifier la depense par la suite comme n'importe quelle depense creee manuellement.
 
 ## Numériser plusieurs reçus

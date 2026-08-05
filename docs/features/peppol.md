@@ -79,6 +79,18 @@ Each e-invoice lands as a draft expense under **Expenses**. The draft is prefill
 
 Open **Settings > Invoices**, go to the Peppol section and click **Disable receiving**. You will stop receiving new e-invoices via Peppol, but existing draft and booked expenses stay unchanged. You can re-enable receiving at any time.
 
+## Disabling Peppol e-invoicing
+
+If you no longer want to send or receive e-invoices through MyCompanyDesk, you can disable Peppol e-invoicing entirely. This removes your company's registration from the Peppol network and frees your identifiers for use elsewhere. Invoices you already sent and expenses you already booked stay unchanged.
+
+To disable Peppol e-invoicing:
+
+1. Open **Settings > Invoices** (`/settings/facturen`)
+2. In the Peppol section, click **Disable e-invoicing**
+3. Confirm that you want to deregister from the Peppol network
+
+After you confirm, sending and receiving e-invoices stops immediately. If you later want to use Peppol again, you can re-enable e-invoicing from the same page; you will need to complete identity verification again because your previous registration has been removed.
+
 ## Supported document types
 
 - **Invoice** — standard billing document
@@ -94,7 +106,7 @@ Your customer must be reachable on the Peppol network. In practice this means th
 
 **Sending failed.** A failed Peppol send usually means the receiver could not be reached on the network, or one of the required invoice fields is missing. Fix the issue and retry, or send by email to keep the workflow moving.
 
-**I enabled e-invoicing but want to turn it off.** Open the invoice settings and disable the Peppol option. Existing invoices are unaffected; you simply no longer see the Peppol send choice.
+**I enabled e-invoicing but want to turn it off.** Open the invoice settings and click **Disable e-invoicing**. This removes your Peppol registration and stops both sending and receiving. Existing invoices and booked expenses stay unaffected. If you re-enable later, you will need to verify your identity again.
 
 **Receiving failed to enable with a conflict error.** Your KVK number or VAT number is already registered for Peppol receiving at another accounting package or provider. Disable receiving there first, then enable it in MyCompanyDesk. Until then, you can still send e-invoices from MyCompanyDesk.
 

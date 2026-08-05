@@ -85,6 +85,8 @@ Once confirmed, the expense is created with:
 - The original receipt attached as a file
 - Category suggestions (if AI suggestions are enabled)
 
+When the scanner resolves a supplier country (for example, a foreign supplier or a matched Dutch KVK number), the review card also shows a VAT treatment selector. The scanner proposes a default based on the supplier and amount, but you can change it before confirming. This matters for reverse-charge purchases from another EU country and for non-EU import expenses.
+
 You can edit the expense afterward like any manually created expense.
 
 ## Scanning several receipts

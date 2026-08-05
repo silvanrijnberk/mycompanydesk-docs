@@ -85,6 +85,8 @@ Na bevestiging wordt de uitgave aangemaakt met:
 - De originele bon als bijlage
 - Categoriesuggesties (als AI-suggesties zijn ingeschakeld)
 
+Als de scanner een leveranciersland herleidt (bijvoorbeeld een buitenlandse leverancier of een gematcht Nederlands KVK-nummer), toont de controlekaart ook een BTW-behandeling-kiezer. De scanner stelt een default voor op basis van de leverancier en het bedrag, maar je kunt deze voor bevestiging nog wijzigen. Dit is relevant voor intra-EU reverse-charge-aankopen en importuitgaven van buiten de EU.
+
 Je kunt de uitgave daarna bewerken zoals elke handmatig aangemaakte uitgave.
 
 ## Meerdere bonnen scannen
