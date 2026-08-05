@@ -20,7 +20,14 @@ chatbot:
 Om je meldingsinstellingen te beheren:
 
 1. Ga naar Instellingen → "Meldingen"
-2. Zet de vier meldingsonderwerpen aan of uit: te late facturen, ontvangen betalingen, BTW-deadlines en tips. Je krijgt ze in de app en per e-mail; bij BTW-deadlines zit een directe link naar de BTW-pagina in de mail, zodat je op tijd kunt aangifte doen.
+2. Zet de meldingsonderwerpen aan of uit. De categorieën zijn:
+   - **Aandacht voor facturen**: te late facturen, facturen die bijna vervallen, concepten die blijven liggen, mislukte incasso's en uren zonder tarief.
+   - **Geld binnenkomt**: betalingen, bevestigde betalingen en opvallende banktransacties.
+   - **Deadline in aantocht**: BTW, inkomstenbelasting, vennootschapsbelasting, de KOR-grens, en aflopende contracten of projecten. Je krijgt ze ruim van tevoren, zodat je nooit te laat bent.
+   - **Nieuwe kansen**: offerteaanvragen, ondertekende offertes en verkopen via je website.
+   - **Nieuw bericht in je inbox**: een seintje op je telefoon zodra een klant of leverancier mailt.
+   - **Tips en nieuws van MyCompanyDesk**: hooguit één mailtje per maand.
+   Echt belangrijke berichten over je account sturen we altijd; die kun je niet uitzetten.
 3. Op dezelfde pagina zet je ook pushmeldingen aan voor het apparaat dat je gebruikt
 4. Heb je de browservraag weggeklikt? Klik dan op het belletje voor meldingen bovenaan de app en kies **Aanzetten** om pushmeldingen later alsnog in te schakelen
 5. Wijzigingen worden automatisch opgeslagen

@@ -20,7 +20,14 @@ chatbot:
 Pour gérer vos paramètres de notification :
 
 1. Allez dans Paramètres → « Notifications »
-2. Activez ou désactivez les quatre sujets de notification : factures en retard, paiements reçus, échéances de TVA et conseils. Vous les recevez dans l'application et par e-mail; pour les échéances de TVA, l'e-mail contient un lien direct vers la page TVA, afin de déposer à temps.
+2. Activez ou désactivez les sujets de notification. Les catégories sont :
+   - **Factures qui méritent votre attention** : factures en retard, factures proches de l'échéance, brouillons laissés en suspens, prélèvements échoués et heures sans tarif.
+   - **Argent entrant** : paiements, paiements confirmés et transactions bancaires inhabituelles.
+   - **Échéances à venir** : TVA, impôt sur le revenu, impôt sur les sociétés, seuil micro-entreprise, et contrats ou projets qui arrivent à expiration. Vous les recevez bien à l'avance pour ne jamais être en retard.
+   - **Nouvelles opportunités** : demandes de devis, devis signés et ventes via votre site web.
+   - **Nouveau message dans votre boîte de réception** : une alerte sur votre téléphone dès qu'un client ou fournisseur vous écrit.
+   - **Conseils et actualités de MyCompanyDesk** : au maximum un e-mail par mois.
+   Les messages vraiment importants concernant votre compte sont toujours envoyés; vous ne pouvez pas les désactiver.
 3. Sur la même page, vous pouvez aussi activer les notifications push pour l'appareil que vous utilisez
 4. Si vous avez fermé la demande du navigateur, cliquez sur la cloche de notifications en haut de l'application et choisissez **Activer** pour activer les notifications push plus tard
 5. Les modifications sont enregistrées automatiquement
