@@ -1,6 +1,6 @@
 ---
 title: "Invoice number"
-last_verified: 2026-07-02
+last_verified: 2026-08-05
 chatbot:
   triggers: ["invoice number", "change invoice number", "invoice numbering", "set invoice number", "numbering format", "factuurnummer", "factuurnummering", "rechnungsnummer", "numero facture"]
   actions:
@@ -14,5 +14,13 @@ Invoice numbers are assigned automatically:
 2. There is no numbering format to configure
 3. Need a specific number on a draft? Open the invoice in the form and click "Set custom number" in the sidebar
 4. To start the sequence over, go to Settings → "Account opzeggen" and use "Reset invoice numbering"
+
+## Manual numbering mode
+
+By default MyCompanyDesk numbers invoices automatically. If your workspace uses manual numbering, the app does not assign a number until you finalize, send, or mark the invoice as sent.
+
+When that happens, a dialog opens so you can enter the invoice number. MyCompanyDesk suggests the next number in your sequence, but you can type any number you like. The number is required and must be unique.
+
+To switch between automatic and manual numbering, go to **Settings > Numbering**.
 
 Tip: Drafts do not have a final number yet. Delete test drafts before finalizing and your sequence stays without gaps.
