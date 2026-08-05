@@ -84,6 +84,10 @@ Verstuur de factuur per e-mail naar je klant. De e-mail bevat:
 
 Als je werkruimte algemene voorwaarden in Documenten heeft staan, toont de e-mailvoorbeelddialoog ook de schakelaar **Algemene voorwaarden meesturen**. Voor facturen staat deze standaard uit. Als je hem inschakelt, wordt de huidige voorwaarden-PDF bij de e-mail gevoegd en wordt de verzending vastgelegd als het terhandstellingsmoment op het voorwaardendocument.
 
+### Versturen als Peppol e-factuur
+
+Als je werkruimte op het Pro-abonnement zit en [Peppol e-facturatie](/nl/features/peppol) heeft ingeschakeld, biedt het verzenddialoog ook **E-factuur (Peppol)** aan. Hiermee wordt de factuur digitaal afgeleverd in het boekhoudpakket van je klant, in plaats van of naast e-mail. Je kiest per factuur welk kanaal je gebruikt.
+
 ### PDF downloaden
 
 Download de factuur als een professioneel opgemaakt PDF-document. De PDF bevat je bedrijfslogo, huisstijlkleuren en alle factuurgegevens.
@@ -200,3 +204,4 @@ Wacht je nog op je btw-id van de Belastingdienst, of val je onder de KOR (kleine
 - Gebruik [terugkerende facturen](/nl/features/recurring-invoices) voor regelmatige facturatie
 - Bekijk de [rapportages](/nl/features/reports) pagina voor omzetinzichten
 - Schakel [AI-suggesties](/nl/advanced/ai-features) in voor slimme omschrijvingsverbeteringen
+- Gebruik [Peppol e-facturatie](/nl/features/peppol) als je klant digitale aflevering prefereert

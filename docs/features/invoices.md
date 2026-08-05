@@ -84,6 +84,10 @@ Send the invoice to your customer via email. The email includes:
 
 If your workspace has general terms in Documents, the email preview also shows an **Include general terms** toggle. For invoices this toggle is off by default. When enabled, the current terms PDF is attached to the email and the send is recorded as the provision event on the terms document.
 
+### Send as Peppol e-invoice
+
+If your workspace is on the Pro plan and has [Peppol e-invoicing](/features/peppol) enabled, the send dialog also offers **E-invoice (Peppol)**. This delivers the invoice digitally to your customer's accounting software instead of, or alongside, email. You choose per invoice which channel to use.
+
 ### Download PDF
 
 Download the invoice as a professionally formatted PDF document. The PDF includes your company logo, branding colors, and all invoice details.
@@ -200,3 +204,4 @@ If you are still waiting for your BTW-id from the Belastingdienst, or you are ex
 - Use [recurring invoices](/features/recurring-invoices) for regular billing
 - Check the [reports](/features/reports) page for revenue insights
 - Enable [AI suggestions](/advanced/ai-features) for smart description improvements
+- Use [Peppol e-invoicing](/features/peppol) when your customer prefers digital delivery

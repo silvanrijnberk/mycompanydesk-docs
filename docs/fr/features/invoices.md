@@ -84,6 +84,10 @@ Envoyez la facture a votre client par e-mail. L'e-mail comprend :
 
 Si votre espace de travail a des conditions generales dans Documents, l'apercu d'e-mail comprend aussi l'option **Joindre les conditions generales**. Pour les factures, elle est desactivee par defaut. Quand elle est activee, le PDF des conditions actuelles est joint a l'e-mail et l'envoi est enregistre comme evenement de remise sur le document des conditions.
 
+### Envoyer en tant que facture electronique Peppol
+
+Si votre workspace est sur le plan Pro et que la [facturation electronique Peppol](/fr/features/peppol) est activee, la boite d'envoi propose aussi **Facture electronique (Peppol)**. La facture est alors livree numeriquement dans le logiciel comptable de votre client, au lieu de ou en plus de l'e-mail. Vous choisissez par facture quel canal utiliser.
+
 ### Telecharger le PDF
 
 Telechargez la facture sous forme de document PDF mis en forme professionnellement. Le PDF inclut le logo de votre entreprise, les couleurs de votre marque et tous les details de la facture.
@@ -200,3 +204,4 @@ Vous attendez encore votre numero de TVA de l'administration fiscale, ou vous be
 - Utilisez les [factures recurrentes](/fr/features/recurring-invoices) pour la facturation reguliere
 - Consultez la page des [rapports](/fr/features/reports) pour des analyses de revenus
 - Activez les [suggestions IA](/fr/advanced/ai-features) pour des ameliorations intelligentes des descriptions
+- Utilisez la [facturation electronique Peppol](/fr/features/peppol) lorsque votre client prefere une livraison numerique

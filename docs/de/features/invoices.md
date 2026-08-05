@@ -84,6 +84,10 @@ Senden Sie die Rechnung per E-Mail an Ihren Kunden. Die E-Mail enthält:
 
 Wenn in Ihrem Arbeitsbereich Allgemeine Geschäftsbedingungen in Dokumenten hinterlegt sind, zeigt der E-Mail-Vorschau-Dialog außerdem den Schalter **Allgemeine Geschäftsbedingungen mitschicken** an. Bei Rechnungen ist er standardmäßig deaktiviert. Wenn Sie ihn einschalten, wird die aktuelle AGB-PDF der E-Mail beigefügt und der Versand als Übergabemoment auf dem AGB-Dokument protokolliert.
 
+### Als Peppol E-Rechnung senden
+
+Wenn Ihr Workspace im Pro-Tarif ist und [Peppol E-Rechnung](/de/features/peppol) aktiviert hat, bietet der Sende-Dialog außerdem **E-Rechnung (Peppol)** an. Die Rechnung wird dann digital im Buchhaltungssystem Ihres Kunden zugestellt, anstatt oder zusätzlich zur E-Mail. Sie wählen pro Rechnung, welchen Kanal Sie verwenden.
+
 ### PDF herunterladen
 
 Laden Sie die Rechnung als professionell formatiertes PDF-Dokument herunter. Das PDF enthält Ihr Firmenlogo, Ihre Markenfarben und alle Rechnungsdetails.
@@ -200,3 +204,4 @@ Warten Sie noch auf Ihre USt-IdNr. vom Finanzamt, oder sind Sie unter der Kleinu
 - Verwenden Sie [wiederkehrende Rechnungen](/de/features/recurring-invoices) für regelmäßige Abrechnungen
 - Prüfen Sie die [Berichte](/de/features/reports)-Seite für Umsatzeinblicke
 - Aktivieren Sie [KI-Vorschläge](/de/advanced/ai-features) für intelligente Beschreibungsverbesserungen
+- Nutzen Sie [Peppol E-Rechnung](/de/features/peppol), wenn Ihr Kunde digitale Zustellung bevorzugt
