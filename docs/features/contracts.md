@@ -51,6 +51,16 @@ A fixed project price does not repeat: the contract generates one invoice and th
 | **Active** | Currently in effect, generates invoices |
 | **Inactive** | Paused — no invoices generated |
 
+## End dates
+
+You can set an **End date** when creating or editing a contract. Leave it empty for an open-ended contract.
+
+When an end date is set:
+
+- The contract detail page shows the end date, or **Open-ended** if none is set.
+- No invoices are generated for periods after the end date.
+- The contracts list shows an **Expires soon** label when the end date is within 30 days.
+
 ## Automatic invoicing
 
 Active contracts with a recurrence schedule automatically generate invoices at each billing period. The system:

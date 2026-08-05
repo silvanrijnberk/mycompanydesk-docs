@@ -51,6 +51,16 @@ Ein fester Projektpreis wiederholt sich nicht: der Vertrag erzeugt eine Rechnung
 | **Aktiv** | Derzeit in Kraft, generiert Rechnungen |
 | **Inaktiv** | Pausiert — keine Rechnungen werden generiert |
 
+## Enddaten
+
+Sie können ein **Enddatum** beim Erstellen oder Bearbeiten eines Vertrags angeben. Lassen Sie das Feld leer, um einen unbefristeten Vertrag zu führen.
+
+Wenn ein Enddatum gesetzt ist:
+
+- Die Vertragsdetailseite zeigt das Enddatum an, oder **Unbefristet**, wenn keines gesetzt ist.
+- Nach dem Enddatum werden keine Rechnungen mehr erstellt.
+- In der Vertragsliste erscheint das Label **Läuft bald ab**, wenn das Enddatum innerhalb von 30 Tagen liegt.
+
 ## Automatische Rechnungsstellung
 
 Aktive Verträge mit einem Wiederholungsplan generieren automatisch Rechnungen in jedem Abrechnungszeitraum. Das System:
