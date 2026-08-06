@@ -32,6 +32,12 @@ Das Angebots-PDF wird der E-Mail als Anhang beigefügt, damit der Kunde es über
 
 Wenn in Ihrem Arbeitsbereich Allgemeine Geschäftsbedingungen in Dokumenten hinterlegt sind, zeigt der E-Mail-Vorschau-Dialog außerdem den Schalter **Allgemeine Geschäftsbedingungen mitschicken** an. Er ist für Angebote standardmäßig aktiviert. Wenn Sie ihn einschalten, wird die aktuelle AGB-PDF der E-Mail beigefügt und der Versand als Übergabemoment auf dem AGB-Dokument protokolliert.
 
+## Angebot online unterschreiben lassen
+
+Sie können einen Kunden bitten, ein Angebot online zu unterschreiben, anstatt es nur als PDF zu versenden. Öffnen Sie die Angebotsdetailseite und wählen Sie **Zum Unterschreiben senden**, um eine Unterschriftenanfrage an den Kunden zu senden. Der Angebotsstatus wechselt zu **Gesendet**, damit Sie den Fortschritt verfolgen können.
+
+Wenn die E-Mail zum Unterschreiben aufgrund eines Problems mit Ihren E-Mail-Einstellungen nicht zugestellt werden kann, erscheint eine Fehlermeldung, die Sie auffordert, Ihre E-Mail-Einstellungen zu prüfen und es erneut zu versuchen. Die Unterschriftenanfrage selbst wird auf dem Server erstellt, sodass Sie sie erneut senden können, sobald die E-Mail-Einstellungen korrigiert sind.
+
 ## Detailaktionen für Angebote
 
 Die Hauptaktion auf der Angebotsdetailseite richtet sich nach dem Angebotsstatus:

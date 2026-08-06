@@ -37,3 +37,11 @@ L'aperçu indique aussi combien d'articles sont ignorés parce qu'ils n'ont pas 
 - Seuls les prix de votre **Offre** sont mis à jour.
 - Les factures, devis et contrats existants conservent le prix auquel ils ont été créés.
 - Vous pouvez annuler un changement juste après l'avoir appliqué. Une seule annulation rétablit tout le lot en une fois.
+
+## Imprimer une liste de prix
+
+Vous pouvez aussi imprimer votre offre sous forme de liste de prix destinée aux clients. Ouvrez **Offre** et cliquez sur **Liste de prix** pour ouvrir `/aanbod/prijslijst`.
+
+La page liste vos articles actifs regroupés sous **Services**, **Produits** et **Abonnements**. Les groupes vides sont ignorés. Activez **Uniquement ce qui figure sur mon site** pour imprimer la même sélection que celle affichée dans votre constructeur de site. Cliquez sur **Imprimer ou enregistrer au format PDF** pour utiliser la boîte de dialogue d'impression de votre navigateur.
+
+Les prix sont calculés avec les mêmes aides que partout ailleurs dans l'application, donc la liste montre les mêmes montants qu'un client verrait en ligne. En bas de page, il est indiqué que tous les prix sont hors TVA et qu'aucun droit ne peut être tiré de cette liste.

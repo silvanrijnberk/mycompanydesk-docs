@@ -32,6 +32,12 @@ De offerte-PDF wordt als bijlage bij de e-mail gevoegd zodat de klant deze kan b
 
 Als je werkruimte algemene voorwaarden in Documenten heeft staan, toont de e-mailvoorbeelddialoog ook de schakelaar **Algemene voorwaarden meesturen**. Deze staat standaard aan voor offertes. Als je hem inschakelt, wordt de huidige voorwaarden-PDF bij de e-mail gevoegd en wordt de verzending vastgelegd als het terhandstellingsmoment op het voorwaardendocument.
 
+## Offerte online laten ondertekenen
+
+Je kunt een klant vragen een offerte online te ondertekenen in plaats van hem alleen als PDF te versturen. Open de offertedetailpagina en kies **Naar tekenen versturen** om een tekenverzoek naar de klant te sturen. De status van de offerte wijzigt in **Verzonden**, zodat je het proces kunt volgen.
+
+Als de e-mail voor het tekenen niet kan worden afgeleverd door een probleem met je e-mailinstellingen, verschijnt er een foutmelding met de vraag je e-mailinstellingen te controleren en het opnieuw te proberen. Het tekenverzoek zelf wordt op de server aangemaakt, dus je kunt het opnieuw versturen zodra de e-mailinstellingen in orde zijn.
+
 ## Acties op de offertedetailpagina
 
 De hoofdactie op de offertedetailpagina hangt af van de offertestatus:

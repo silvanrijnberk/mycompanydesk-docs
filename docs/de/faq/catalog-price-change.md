@@ -37,3 +37,11 @@ Die Vorschau zeigt auch, wie viele Artikel übersprungen wurden, weil sie keinen
 - Es werden nur die Preise in Ihrem **Angebot** geändert.
 - Bestehende Rechnungen, Angebote und Verträge behalten die Preise, mit denen sie erstellt wurden.
 - Sie können eine Änderung direkt nach dem Anwenden rückgängig machen. Ein einziger Rückgängig-Schritt macht die gesamte Änderung auf einmal rückgängig.
+
+## Preisliste drucken
+
+Sie können Ihr Angebot auch als kundenorientierte Preisliste ausdrucken. Öffnen Sie **Angebot** und klicken Sie auf **Preisliste**, um `/aanbod/prijslijst` zu öffnen.
+
+Die Seite listet Ihre aktiven Artikel gruppiert nach **Dienstleistungen**, **Produkten** und **Abonnements**. Leere Gruppen werden übersprungen. Schalten Sie **Nur was auf meiner Website steht** ein, um dieselbe Auswahl zu drucken, die in Ihrem Website-Builder angezeigt wird. Klicken Sie auf **Drucken oder als PDF speichern**, um den Druckdialog Ihres Browsers zu nutzen.
+
+Die Preise werden mit denselben Hilfsmitteln berechnet wie an allen anderen Stellen der App, sodass das Blatt dieselben Beträge zeigt, die ein Kunde online sehen würde. Am Fuß steht, dass alle Preise ohne USt. sind und der Liste keine Rechte entnommen werden können.
