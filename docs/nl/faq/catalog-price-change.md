@@ -37,3 +37,11 @@ Het overzicht toont ook hoeveel items zijn overgeslagen omdat ze geen prijs hebb
 - Alleen de prijzen in je **Aanbod** worden gewijzigd.
 - Bestaande facturen, offertes en contracten houden de prijs waarmee ze zijn aangemaakt.
 - Direct na het toepassen kun je de wijziging ongedaan maken. Met één keer ongedaan maken draai je de hele batch in één keer terug.
+
+## Prijslijst printen
+
+Je kunt je aanbod ook afdrukken als klantvriendelijke prijslijst. Open **Aanbod** en klik op **Prijslijst** om `/aanbod/prijslijst` te openen.
+
+De pagina toont je actieve items, gegroepeerd onder **Diensten**, **Producten** en **Abonnementen**. Lege groepen worden weggelaten. Zet **Alleen wat op mijn website staat** aan om dezelfde selectie te printen die in je sitebouwer staat. Klik op **Printen of opslaan als pdf** om het dialoogvenster van je browser te gebruiken.
+
+De prijzen worden berekend met dezelfde hulpmiddelen als elders in de app, dus het blaadje toont dezelfde bedragen die een klant online zou zien. Onderaan staat dat alle prijzen exclusief btw zijn en dat er geen rechten aan de lijst kunnen worden ontleend.

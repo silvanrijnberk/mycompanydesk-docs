@@ -37,3 +37,11 @@ The preview also tells you if any items are skipped because they do not have a p
 - Only the prices in your **Aanbod** are updated.
 - Existing invoices, quotes, and contracts keep the prices they were created with.
 - You can undo a change right after applying it. A single undo reverses the whole batch in one step.
+
+## Print a price list
+
+You can also print your catalog as a customer-facing price list. Open **Aanbod** and click **Price list** to open `/aanbod/prijslijst`.
+
+The page lists your active items grouped into **Services**, **Products**, and **Subscriptions**. Empty groups are skipped. Turn on **Only show what is on my website** to print the same subset that appears on your site builder. Click **Print or save as PDF** to use the browser print dialog.
+
+Prices are rendered with the same helpers used elsewhere in the app, so the sheet shows the same amounts a customer would see online. The list carries a note that all prices are exclusive of VAT and that no rights can be derived from it.
