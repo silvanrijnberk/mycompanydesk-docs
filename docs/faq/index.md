@@ -95,6 +95,7 @@ Quick answers to common questions about MyCompanyDesk. Each entry mirrors what t
 - [Profit Loss](/faq/profit-loss)
 - [Quick search](/faq/quick-search)
 - [Quote numbering](/faq/quote-numbering)
+- [Quote-to-invoice automation](/faq/quote-auto-invoice)
 - [Quote status](/faq/quote-status)
 - [Quote Validity](/faq/quote-validity)
 - [Recurring setup](/faq/recurring-setup)

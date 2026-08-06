@@ -87,6 +87,7 @@ Réponses rapides aux questions courantes sur MyCompanyDesk. Chaque entrée corr
 - [Profit Loss](/fr/faq/profit-loss)
 - [Quick search](/fr/faq/quick-search)
 - [Quote numbering](/fr/faq/quote-numbering)
+- [Facture automatique à partir d'un devis](/fr/faq/quote-auto-invoice)
 - [Quote status](/fr/faq/quote-status)
 - [Quote Validity](/fr/faq/quote-validity)
 - [Recurring setup](/fr/faq/recurring-setup)

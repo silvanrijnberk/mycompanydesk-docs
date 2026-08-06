@@ -97,6 +97,14 @@ Si un prélèvement échoue ou que le mandat n'est plus valide, vous recevez une
 
 Les contrats récurrents peuvent être ajustés pour tenir compte de l'inflation ou de hausses annuelles convenues. Ouvrez la liste des contrats et cliquez sur **Augmenter les prix** pour voir ce qu'une augmentation en pourcentage ferait pour tous les contrats éligibles. Un contrat n'est éligible que si au moins un an s'est écoulé depuis son début ou depuis sa dernière augmentation.
 
+Sous le champ de pourcentage, une indication peut afficher des chiffres d'inflation publiés par le bureau de statistiques néerlandais (CBS). Plusieurs indices apparaissent côte à côte, car ils mesurent des choses différentes et diffèrent souvent de plusieurs points de pourcentage :
+
+- **CPI** — ce que les ménages paient en moyenne. La référence utilisée par la plupart des indexations de salaires et de loyers.
+- **HICP** — les mêmes prix, calculés selon la méthode européenne. Sert à comparer les Pays-Bas aux autres pays de l'UE.
+- **DPI** — ce que les entreprises se facturent mutuellement pour des services commerciaux. Souvent plus proche de vos propres tarifs que les prix à la consommation.
+
+Cliquez sur une ligne pour recopier le pourcentage dans le champ, puis ajustez-le avant d'appliquer. Les chiffres ne sont pas une recommandation; ils servent de repère pour prendre votre propre décision.
+
 L'aperçu montre, par contrat :
 
 - Le tarif ou le montant actuel par période

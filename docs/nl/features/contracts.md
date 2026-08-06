@@ -97,6 +97,14 @@ Als een incasso mislukt of het mandaat niet meer geldig is, ontvang je een meldi
 
 Terugkerende contracten kun je aanpassen voor inflatie of afgesproken jaarlijkse verhogingen. Open de contractenlijst en klik op **Prijzen verhogen** om te zien wat een percentageverhoging doet voor alle contracten die in aanmerking komen. Een contract komt pas in aanmerking als er minstens een jaar is verstreken sinds de start of sinds de vorige verhoging.
 
+Onder het percentageveld kan een hint staan met gepubliceerde inflatiecijfers van het CBS. Meerdere indexen staan naast elkaar, omdat ze verschillende dingen meten en regelmatig enkele procentpunten uit elkaar liggen:
+
+- **CPI** — wat huishoudens gemiddeld betalen. De maatstaf die meestal ten grondslag ligt aan loon- en huurindexatie.
+- **HICP** — dezelfde prijzen, berekend volgens de Europese methode. Wordt gebruikt om Nederland met andere EU-landen te vergelijken.
+- **DPI** — wat bedrijven elkaar meer rekenen voor zakelijke dienstverlening. Vaak dichter bij je eigen tarieven dan de consumentenprijzen.
+
+Klik op een regel om het percentage over te nemen in het veld, pas het daarna nog aan voordat je toepast. De cijfers zijn geen advies; het is een houvast om zelf een keuze te maken.
+
 De voorvertoning toont per contract:
 
 - Het huidige tarief of bedrag per periode

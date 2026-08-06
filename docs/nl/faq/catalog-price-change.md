@@ -32,11 +32,23 @@ Ga naar **Aanbod** en klik op **Prijzen aanpassen** om in één keer meerdere pr
 
 Het overzicht toont ook hoeveel items zijn overgeslagen omdat ze geen prijs hebben (bijvoorbeeld prijs-op-aanvraag items). En je krijgt een waarschuwing als een actieve aanbieding hierdoor stopt, omdat de aanbiedingsprijs dan niet meer onder de normale prijs ligt.
 
+## Gepubliceerde prijsindexcijfers als hint
+
+Onder het percentageveld kan een hint staan met gepubliceerde inflatiecijfers van het CBS. Meerdere indexen staan naast elkaar, omdat ze verschillende dingen meten en regelmatig enkele procentpunten uit elkaar liggen:
+
+- **CPI** — wat huishoudens gemiddeld betalen. De maatstaf die meestal ten grondslag ligt aan loon- en huurindexatie.
+- **HICP** — dezelfde prijzen, berekend volgens de Europese methode. Wordt gebruikt om Nederland met andere EU-landen te vergelijken.
+- **DPI** — wat bedrijven elkaar meer rekenen voor zakelijke dienstverlening. Vaak dichter bij je eigen tarieven dan de consumentenprijzen.
+
+Klik op een regel om het percentage over te nemen in het veld, pas het daarna nog aan voordat je toepast. De cijfers zijn geen advies; het is een houvast om zelf een keuze te maken.
+
 ## Wat verandert er wel en niet
 
 - Alleen de prijzen in je **Aanbod** worden gewijzigd.
 - Bestaande facturen, offertes en contracten houden de prijs waarmee ze zijn aangemaakt.
 - Direct na het toepassen kun je de wijziging ongedaan maken. Met één keer ongedaan maken draai je de hele batch in één keer terug.
+
+Als je ongedaan maakt en er wordt niets teruggezet, zijn de prijzen in de tussentijd opnieuw bewerkt. Dan slaat de app ze over in plaats van de nieuwere wijziging te overschrijven.
 
 ## Prijslijst printen
 
