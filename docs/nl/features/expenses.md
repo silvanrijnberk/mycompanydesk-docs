@@ -155,6 +155,8 @@ De afschrijfbare basis is gelijk aan de geactiveerde waarde die de grootboekpost
 
 Het bewerken van categorie, datum, bedrag, BTW-behandeling, privégebruikpercentage, gebruiksduur of restwaarde op een bestaande uitgave triggert herberekening. Als een bestaande afschrijvingsregel al in een vergrendelde BTW-periode valt, wordt de herberekening geweigerd, zodat de ingediende aangifte niet stilletjes wijzigt. Het terugzetten van een investeringsuitgave naar een niet-investeringscategorie verwijdert de afschrijvingsregels.
 
+Treinkaartjes en andere autokosten kun je ook als gewone uitgave boeken via **Uitgaven > Nieuw** met leverancier, bedrag, datum en categorie.
+
 ## Terugkerende uitgaven
 
 Voor regelmatige kosten (huur, abonnementen, etc.) stel je [terugkerende uitgaven](/nl/features/recurring-expenses) in om het aanmaken te automatiseren.

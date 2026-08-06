@@ -153,6 +153,8 @@ The expense is created with one line for the total business kilometres.
 
 If your workspace uses a company car, the actual car costs are already booked as expenses, so a separate mileage allowance is not needed.
 
+Train tickets and other car costs can also be recorded as regular expenses under **Expenses > New** with the supplier, amount, date and category.
+
 ## Recurring expenses
 
 For predictable costs (rent, subscriptions, hosting), set up [recurring expenses](/features/recurring-expenses) to generate the records on schedule.

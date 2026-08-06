@@ -159,6 +159,8 @@ La dépense est créée avec une ligne pour le total des kilomètres professionn
 
 Si votre espace de travail utilise un véhicule de société, les frais réels de voiture sont déjà comptabilisés comme dépense ; une indemnité kilométrique séparée n'est alors pas nécessaire.
 
+Les billets de train et autres frais de voiture peuvent aussi être enregistrés comme une dépense classique dans **Dépenses > Nouveau** avec le fournisseur, le montant, la date et la catégorie.
+
 ## Dépenses récurrentes
 
 Pour les coûts réguliers (loyer, abonnements, etc.), configurez des [dépenses récurrentes](/fr/features/recurring-expenses) pour automatiser la création.
