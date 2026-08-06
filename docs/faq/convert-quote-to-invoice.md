@@ -1,6 +1,6 @@
 ---
 title: "Convert a quote to an invoice"
-last_verified: 2026-05-09
+last_verified: 2026-08-07
 chatbot:
   triggers:
     - "convert quote to invoice"
@@ -31,3 +31,5 @@ To convert a quote to an invoice:
 5. Save and send the invoice
 
 The original quote stays available, and the invoice opens as a separate draft.
+
+You can also have MyCompanyDesk create the draft invoice automatically when the customer signs the quote. Enable the option in **Settings > Invoices and quotes**.
