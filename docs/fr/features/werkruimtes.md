@@ -1,6 +1,6 @@
 ---
 title: Espaces de travail
-last_verified: 2026-08-05
+last_verified: 2026-08-06
 ---
 
 # Espaces de travail
@@ -12,7 +12,7 @@ La page Espaces de travail (`/werkruimtes`) est un lieu central pour tout ce que
 ## Ou la trouver
 
 - Ouvrez le selecteur d'espace de travail dans la barre laterale et choisissez **Gerer les espaces de travail**.
-- Des que vous avez plus d'un espace de travail, **Espaces de travail** apparait aussi directement dans la navigation de gauche.
+- Le meme selecteur se trouve aussi dans l'en-tete du menu mobile, pour atteindre l'apercu depuis le meme endroit sur tous les ecrans.
 - L'ancienne URL `/boekhouder` redirige ici.
 - Le selecteur d'espace de travail affiche maintenant une ligne de synthese en haut. Vos propres entreprises et les administrations clientes sont regroupees separement, et un champ de recherche apparait des que vous avez plus de huit espaces de travail.
 

@@ -1,6 +1,6 @@
 ---
 title: Workspaces
-last_verified: 2026-08-05
+last_verified: 2026-08-06
 ---
 
 # Workspaces
@@ -12,7 +12,7 @@ The Workspaces page at `/werkruimtes` is one central place for everything you ma
 ## Where to find it
 
 - Open the workspace switcher in the left sidebar and choose **Werkruimtes beheren**.
-- When you hold more than one workspace, the left navigation also shows **Workspaces** directly.
+- The same switcher lives in the mobile menu header, so you reach the workspaces overview from one place on every screen size.
 - The old `/boekhouder` URL redirects here.
 - The workspace switcher now shows an overview row at the top. Your own businesses and any client administrations are grouped separately, and a search field appears once you hold more than eight workspaces.
 
