@@ -1,6 +1,6 @@
 ---
 title: "Zugang für den Steuerberater"
-last_verified: 2026-08-04
+last_verified: 2026-08-06
 chatbot:
   triggers:
     - "accountant access"
@@ -46,6 +46,8 @@ Wenn Ihr Steuerberater MyCompanyDesk nutzt, kann er Sie direkt aus seinem Steuer
 2. Die Registrierungsseite zeigt die einladende Kanzlei und trägt die E-Mail-Adresse ein, an die die Einladung gesendet wurde
 3. Erstellen Sie Ihr Konto mit E-Mail und Passwort. Sie bleiben Inhaber Ihres Arbeitsbereichs und Ihrer Daten
 4. Nach der Registrierung erhält Ihr Steuerberater automatisch Zugang, damit er Ihre Abgaben prüfen kann
+
+Wenn der Arbeitsbereich, für den Sie eingeladen werden, bereits ein eigenes aktives Abonnement hat, kann die Kanzlei die Abrechnung dafür nicht übernehmen, bis dieses Abonnement gekündigt ist. Sie sehen eine Fehlermeldung, wenn die Kanzlei versucht, die Kanzleiabrechnung einzurichten, während Ihr eigenes Abonnement noch aktiv ist.
 
 Sie können diesen Zugang später jederzeit unter Einstellungen → „Zugang und Steuerberater" widerrufen. Der Einladungslink ist 30 Tage gültig und kann von Ihrem Steuerberater erneut gesendet oder widerrufen werden.
 

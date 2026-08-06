@@ -1,6 +1,6 @@
 ---
 title: "Paramètres de notification"
-last_verified: 2026-08-05
+last_verified: 2026-08-06
 chatbot:
   triggers:
     - "notifications"
@@ -31,6 +31,16 @@ Pour gérer vos paramètres de notification :
 3. Sur la même page, vous pouvez aussi activer les notifications push pour l'appareil que vous utilisez
 4. Si vous avez fermé la demande du navigateur, cliquez sur la cloche de notifications en haut de l'application et choisissez **Activer** pour activer les notifications push plus tard
 5. Les modifications sont enregistrées automatiquement
+
+## La liste de notifications
+
+Les notifications sont regroupées par jour pour que la liste se lise comme une chronologie : Aujourd'hui, Hier, le jour de la semaine dans les sept derniers jours, et la date pour les entrées plus anciennes.
+
+Si plusieurs mises à jour informatives similaires arrivent le même jour, par exemple des notes de version ou des astuces produit, elles se replient derrière la plus récente. Un bouton indique combien d'autres il y a ; cliquez pour développer le groupe, cliquez à nouveau pour le replier.
+
+Sur un téléphone ou une tablette, vous pouvez faire glisser une ligne pour agir vite : vers la gauche pour ignorer, vers la droite pour reporter. La ligne montre ce qui se passera au relâchement. Chaque ligne comporte aussi des boutons Ignorer et Reporter.
+
+Vous pouvez parcourir la liste au clavier : les flèches déplacent la sélection, Entrée ou Espace ouvre la notification sélectionnée, et Échap ferme le panneau. Le panneau passe au-dessus des autres éléments flottants pour que le focus reste à l'intérieur tant qu'il est ouvert.
 
 ## Reporter une notification
 

@@ -1,6 +1,6 @@
 ---
 title: "Benachrichtigungseinstellungen"
-last_verified: 2026-08-05
+last_verified: 2026-08-06
 chatbot:
   triggers:
     - "notifications"
@@ -31,6 +31,16 @@ So verwalten Sie Ihre Benachrichtigungseinstellungen:
 3. Auf derselben Seite aktivieren Sie auch Push-Benachrichtigungen für das Gerät, das Sie gerade nutzen
 4. Wenn Sie die Browser-Abfrage geschlossen haben, klicken Sie oben in der App auf die Benachrichtigungsglocke und wählen Sie **Aktivieren**, um Push-Benachrichtigungen später nachzuholen
 5. Änderungen werden automatisch gespeichert
+
+## Die Benachrichtigungsliste
+
+Benachrichtigungen sind nach Tag gruppiert, damit die Liste wie eine Zeitleiste lesbar ist: Heute, Gestern, Wochentag innerhalb der letzten Woche, und das Datum für ältere Einträge.
+
+Werden an einem Tag mehrere ähnliche informative Updates empfangen, etwa Release Notes oder Produkttipps, klappt sie sich hinter der neuesten Meldung zusammen. Ein Button zeigt, wie viele weitere es gibt; ein Klick expandiert die Gruppe, ein weiterer klappt sie wieder ein.
+
+Auf dem Telefon oder Tablet können Sie eine Zeile swipen, um schnell zu handeln: nach links zum Verwerfen, nach rechts zum Snoozen. Die Zeile zeigt an, was beim Loslassen passiert. Auf jeder Zeile sind außerdem Buttons zum Verwerfen und Snoozen verfügbar.
+
+Sie können die Liste mit der Tastatur steuern: Pfeiltasten verschieben die Auswahl, Enter oder Leertaste öffnen die ausgewählte Benachrichtigung, Esc schließt den Bereich. Der Bereich liegt über anderer schwebender UI, damit der Fokus darin bleibt, solange er geöffnet ist.
 
 ## Eine Benachrichtigung snoozen
 

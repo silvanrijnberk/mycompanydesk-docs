@@ -1,6 +1,6 @@
 ---
 title: "Accountant access"
-last_verified: 2026-08-04
+last_verified: 2026-08-06
 chatbot:
   triggers:
     - "accountant access"
@@ -50,6 +50,8 @@ If your accountant uses MyCompanyDesk, they can send you an invite from their bo
 2. The signup page names the inviting firm and pre-fills the email address the invite was sent to
 3. Create your own account. You remain the owner of your workspace and data
 4. After signup, your accountant automatically gets accountant access to your workspace
+
+If the workspace you are invited into already has its own active subscription, the firm cannot take over the billing for it until that subscription is cancelled. You will see an error if the firm tries to set up office billing while your own subscription is still active.
 
 You can revoke that access at any time from Settings → "Toegang en boekhouder". The invite link is valid for 30 days and can be resent or revoked by your accountant.
 

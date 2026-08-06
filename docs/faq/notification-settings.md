@@ -1,6 +1,6 @@
 ---
 title: "Notification settings"
-last_verified: 2026-08-05
+last_verified: 2026-08-06
 chatbot:
   triggers:
     - "notifications"
@@ -31,6 +31,16 @@ To manage your notification settings:
 3. On the same page you can also turn on push notifications for the device you are using
 4. If you dismissed the browser prompt, click the notification bell at the top of the app and choose **Turn on** to enable push notifications later
 5. Changes save automatically
+
+## The notification list
+
+Notifications are grouped by day so the list reads as a timeline: Today, Yesterday, the day name within the last week, and the date for anything older.
+
+If several similar informational updates arrive on the same day, such as release notes or product tips, they collapse behind the newest one. A button shows how many more there are; click it to expand the group, click again to collapse it.
+
+On a phone or tablet you can swipe a row to act quickly: swipe left to dismiss, swipe right to snooze. The row shows what will happen when you release it. Dismiss and snooze buttons are also available on every row.
+
+You can move through the list with the keyboard: arrow keys move the selection, Enter or Space opens the selected notification, and Esc closes the drawer. The drawer sits above other floating UI so focus stays inside it while it is open.
 
 ## Snoozing a notification
 

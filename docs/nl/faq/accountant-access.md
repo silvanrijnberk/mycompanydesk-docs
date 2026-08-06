@@ -1,6 +1,6 @@
 ---
 title: "Boekhouder toegang geven"
-last_verified: 2026-08-04
+last_verified: 2026-08-06
 chatbot:
   triggers:
     - "accountant access"
@@ -50,6 +50,8 @@ Als je boekhouder MyCompanyDesk gebruikt, kan hij of zij je uitnodigen vanuit he
 2. De registratiepagina toont het kantoor dat je heeft uitgenodigd en vult het e-mailadres waarnaar de uitnodiging is gestuurd alvast in
 3. Maak je account aan met e-mail en wachtwoord. Jij blijft eigenaar van je werkruimte en gegevens
 4. Na registratie krijgt je boekhouder automatisch toegang zodat hij of zij je aangifte kan controleren
+
+Als de werkruimte waarvoor je wordt uitgenodigd al een eigen actief abonnement heeft, kan het kantoor de facturatie daarvan niet overnemen totdat dat abonnement is opgezegd. Je ziet een foutmelding als het kantoor kantoorfacturatie probeert in te stellen terwijl je eigen abonnement nog actief is.
 
 Je kunt die toegang later altijd weer intrekken via Instellingen → "Toegang en boekhouder". De uitnodigingslink is 30 dagen geldig en je boekhouder kan hem opnieuw sturen of intrekken.
 
