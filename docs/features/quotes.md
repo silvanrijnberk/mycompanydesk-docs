@@ -19,7 +19,7 @@ The quotes section lets you create, send, and track quotations. Quotes follow a 
 5. Add optional **notes**
 6. Click **Save**
 
-The quote form is similar to the invoice form — if you know how to create an invoice, you already know how to create a quote.
+The quote form is similar to the invoice form. If you know how to create an invoice, you already know how to create a quote.
 
 ## Sending a quote
 
@@ -28,7 +28,7 @@ The quote form is similar to the invoice form — if you know how to create an i
 3. Review the email preview
 4. Click **Send** to deliver it to your customer
 
-The quote PDF is attached to the email for the customer to review.
+The quote PDF is attached to the email for the customer to review. When a quote includes signing, the signing request email contains the quote PDF, the quote items, and a secure signing link. If the email cannot be delivered, the failure is shown on the quote detail page instead of being reported as sent.
 
 If your workspace has general terms in Documents, the email preview also shows an **Include general terms** toggle. It is on by default for quotes. When enabled, the current terms PDF is attached to the email and the send is recorded as the provision event on the terms document.
 
@@ -36,15 +36,15 @@ If your workspace has general terms in Documents, the email preview also shows a
 
 The top action on the quote detail page depends on the quote status:
 
-- **Send** — Available for draft and sent quotes, so the quote can reach the customer.
-- **Convert to Invoice** — Available once the customer has accepted the quote, turning it into an invoice with one click.
-- **Duplicate / Create new version** — Available for rejected or expired quotes so you can reissue them quickly.
+- **Send** -- Available for draft and sent quotes, so the quote can reach the customer.
+- **Convert to Invoice** -- Available once the customer has accepted the quote, turning it into an invoice with one click.
+- **Duplicate / Create new version** -- Available for rejected or expired quotes so you can reissue them quickly.
 
 Additional actions live in the overflow menu next to the top action:
 
-- **Preview PDF** — View the quote PDF in full screen before sending.
-- **Download PDF** — Download the quote as a professionally formatted PDF document with your company logo, branding colors, and all quote details.
-- **Copy quote** — Create a copy of the existing quote.
+- **Preview PDF** -- View the quote PDF in full screen before sending.
+- **Download PDF** -- Download the quote as a professionally formatted PDF document with your company logo, branding colors, and all quote details.
+- **Copy quote** -- Create a copy of the existing quote.
 
 ## Quote statuses
 
@@ -98,9 +98,9 @@ Each request shows:
 
 ## Bulk actions
 
-- **Send** — Send multiple quotes at once
-- **Archive** — Move quotes to archive
-- **Delete** — Remove quotes
+- **Send** -- Send multiple quotes at once
+- **Archive** -- Move quotes to archive
+- **Delete** -- Remove quotes
 
 ## Tips
 
