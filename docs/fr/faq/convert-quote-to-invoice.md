@@ -1,6 +1,6 @@
 ---
 title: "Convert a quote to an invoice"
-last_verified: 2026-05-09
+last_verified: 2026-08-07
 chatbot:
   triggers:
     - "convert quote to invoice"
@@ -29,3 +29,5 @@ Pour convertir un devis en facture :
 3. Une facture brouillon est creee avec client, lignes et notes copies
 4. Verifiez echeance et conditions de paiement
 5. Enregistrez puis envoyez
+
+Vous pouvez aussi faire creer automatiquement le brouillon de facture par MyCompanyDesk quand le client signe le devis. Activez l'option dans **Parametres > Factures**.
