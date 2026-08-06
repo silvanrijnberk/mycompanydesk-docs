@@ -1,6 +1,6 @@
 ---
 title: "Convert a quote to an invoice"
-last_verified: 2026-05-09
+last_verified: 2026-08-07
 chatbot:
   triggers:
     - "convert quote to invoice"
@@ -29,3 +29,5 @@ Om een offerte om te zetten naar een factuur:
 3. Er wordt een nieuwe conceptfactuur gemaakt met gekopieerde klant, regels en notities
 4. Controleer vervaldatum en betaalvoorwaarden
 5. Sla op en verstuur
+
+Je kunt MyCompanyDesk ook automatisch een conceptfactuur laten maken zodra de klant de offerte tekent. Zet de optie aan in **Instellingen > Facturen**.

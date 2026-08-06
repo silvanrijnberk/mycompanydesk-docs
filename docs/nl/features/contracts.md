@@ -105,6 +105,8 @@ De voorvertoning toont per contract:
 
 Je past de verhoging per contract toe, nooit in bulk, zodat je klanten kunt overslaan met wie je het nog niet hebt besproken. Eenmaal toegepast, werkt het systeem de opgeslagen contractvoorwaarden bij en tonen toekomstige facturen het nieuwe bedrag.
 
+Het venster toont ook een inflatiehint met gepubliceerde prijsindexcijfers van het CBS over de afgelopen twaalf maanden. Je ziet verschillende series, zoals CPI, HICP en DPI, elk met het percentage en het meetvenster. Klik op een cijfer om het percentageveld in te vullen, maar je kunt ook zelf een waarde invoeren. De hint toont alleen gepubliceerde gegevens en adviseert geen specifiek percentage.
+
 ::: tip Eerst afstemmen
 Bespreek elke prijsverhoging met je klant voordat je deze toepast. De voorvertoning verandert pas iets zodra je op **Toepassen** klikt bij een specifiek contract.
 :::

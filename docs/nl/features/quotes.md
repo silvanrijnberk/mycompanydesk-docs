@@ -73,6 +73,12 @@ Zodra een klant je offerte accepteert, zet je deze met een klik om naar een fact
 4. Pas indien nodig aan
 5. Sla op en verstuur de factuur
 
+## Automatisch een conceptfactuur klaarzetten na ondertekening
+
+Je kunt MyCompanyDesk ook een conceptfactuur laten klaarzetten zodra een klant een offerte tekent. Zet de schakelaar **Getekend? Automatisch een conceptfactuur klaarzetten** aan in **Instellingen > Facturen**.
+
+Als de optie aan staat, maakt de app een conceptfactuur aan zodra de offerte is getekend. Je blijft het concept zelf nakijken en versturen.
+
 ## Offerteaanvragen
 
 Klanten kunnen offerteaanvragen indienen via je [sitebouwer](/nl/advanced/business-page). Deze verschijnen in **Offertes > Aanvragen**.

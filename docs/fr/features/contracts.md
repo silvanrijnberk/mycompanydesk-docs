@@ -105,6 +105,8 @@ L'aperçu montre, par contrat :
 
 Vous appliquez l'augmentation contrat par contrat, jamais en bloc, afin de pouvoir passer les clients avec qui vous n'avez pas encore discuté. Une fois appliquée, le système met à jour les conditions du contrat enregistrées et les futures factures reflètent le nouveau montant.
 
+La fenêtre affiche aussi une indication d'inflation avec les chiffres d'indices de prix publiés par le CBS sur les douze derniers mois. Elle liste différentes séries, comme CPI, HICP et DPI, avec leur variation en pourcentage et leur fenêtre de mesure. Cliquer sur un chiffre remplit le champ de pourcentage, mais vous pouvez aussi saisir votre propre valeur. L'indication montre des données publiées; elle ne recommande pas de taux spécifique.
+
 ::: tip D'abord s'entendre
 Discutez de toute augmentation de prix avec votre client avant de l'appliquer. L'aperçu ne change rien tant que vous n'avez pas cliqué sur **Appliquer** pour un contrat spécifique.
 :::

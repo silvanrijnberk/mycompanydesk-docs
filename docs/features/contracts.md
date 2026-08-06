@@ -105,6 +105,8 @@ The preview shows, per contract:
 
 You apply the rise per contract, never in bulk, so you can skip customers you have not yet spoken to. Once applied, the change updates the stored contract terms and future invoices reflect the new amount.
 
+The modal also shows an inflation hint with published price-index figures from Statistics Netherlands (CBS) over the last twelve months. It lists different series, such as CPI, HICP, and DPI, each with its percentage change and measurement window. Clicking a figure fills the percentage field, but you can still enter your own value. The hint shows published data; it does not recommend a specific rate.
+
 ::: tip Agree first
 Discuss any price rise with your customer before applying it. The preview changes nothing until you click **Apply** on a specific contract.
 :::

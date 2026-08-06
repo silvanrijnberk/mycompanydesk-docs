@@ -1,6 +1,6 @@
 ---
 title: Alle Preise auf einmal ändern
-last_verified: 2026-08-06
+last_verified: 2026-08-07
 chatbot:
   triggers:
     - "alle preise ändern"
@@ -29,6 +29,8 @@ Gehen Sie zu **Angebot** und klicken Sie auf **Preise ändern**, um viele Preise
    - **Auf ganze Euro** rundet auf ganze Euro.
 3. Klicken Sie auf **Änderungen prüfen**, um eine Vorschau zu öffnen, die jeden Artikel mit altem und neuem Preis auflistet.
 4. Prüfen Sie die Liste und klicken Sie auf **Preise ändern**, um sie anzuwenden.
+
+Während Sie sich für einen Prozentsatz entscheiden, kann ein Inflationshinweis veröffentlichte Preisindexdaten des CBS anzeigen. Er listet verschiedene Reihen mit ihrer prozentualen Veränderung und dem Messzeitraum. Wenn Sie eine Zahl anklicken, wird das Prozentfeld ausgefüllt, oder Sie geben einen eigenen Wert ein.
 
 Die Vorschau zeigt auch, wie viele Artikel übersprungen wurden, weil sie keinen Preis haben (zum Beispiel Artikel mit Preis auf Anfrage). Außerdem warnen wir Sie, wenn eine aktive Aktion dadurch enden würde, weil der Aktionspreis dann nicht mehr unter dem regulären Preis liegt.
 
