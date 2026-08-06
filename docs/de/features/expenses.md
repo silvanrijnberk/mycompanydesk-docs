@@ -159,6 +159,8 @@ Die Ausgabe wird mit einer Zeile für die gesamten geschäftlichen Kilometer ers
 
 Wenn Ihr Workspace einen Firmenwagen nutzt, sind die tatsächlichen Autokosten bereits als Ausgabe gebucht; eine separate Kilometerpauschale ist dann nicht nötig.
 
+Zugtickets und andere Autokosten können Sie auch als reguläre Ausgabe erfassen unter **Ausgaben > Neu** mit Lieferant, Betrag, Datum und Kategorie.
+
 ## Wiederkehrende Ausgaben
 
 Für regelmäßige Kosten (Miete, Abonnements usw.) richten Sie [wiederkehrende Ausgaben](/de/features/recurring-expenses) ein, um die Erstellung zu automatisieren.
