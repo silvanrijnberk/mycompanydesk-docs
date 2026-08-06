@@ -1,6 +1,6 @@
 ---
 title: "Accès du comptable"
-last_verified: 2026-08-04
+last_verified: 2026-08-06
 chatbot:
   triggers:
     - "accountant access"
@@ -46,6 +46,8 @@ Si votre comptable utilise MyCompanyDesk, il peut vous inviter directement depui
 2. La page d'inscription affiche le cabinet qui vous invite et préremplit l'adresse e-mail à laquelle l'invitation a été envoyée
 3. Créez votre compte avec e-mail et mot de passe. Vous restez propriétaire de votre espace de travail et de vos données
 4. Après l'inscription, votre comptable obtient automatiquement l'accès pour vérifier vos déclarations
+
+Si l'espace de travail pour lequel vous êtes invité dispose déjà de son propre abonnement actif, le cabinet ne peut pas prendre en charge sa facturation tant que cet abonnement n'est pas résilié. Vous verrez une erreur si le cabinet tente de configurer la facturation par le cabinet alors que votre propre abonnement est encore actif.
 
 Vous pouvez révoquer cet accès plus tard dans Paramètres → « Accès et comptable ». Le lien d'invitation est valable 30 jours et votre comptable peut le renvoyer ou le révoquer.
 

@@ -1,6 +1,6 @@
 ---
 title: "Meldingsinstellingen"
-last_verified: 2026-08-05
+last_verified: 2026-08-06
 chatbot:
   triggers:
     - "notifications"
@@ -31,6 +31,16 @@ Om je meldingsinstellingen te beheren:
 3. Op dezelfde pagina zet je ook pushmeldingen aan voor het apparaat dat je gebruikt
 4. Heb je de browservraag weggeklikt? Klik dan op het belletje voor meldingen bovenaan de app en kies **Aanzetten** om pushmeldingen later alsnog in te schakelen
 5. Wijzigingen worden automatisch opgeslagen
+
+## De meldingslijst
+
+Meldingen zijn per dag gegroepeerd, zodat de lijst als een tijdlijn leest: Vandaag, Gisteren, de dagnaam binnen de afgelopen week, en de datum voor oudere meldingen.
+
+Als er op een dag meerdere vergelijkbare informatieve updates binnenkomen, bijvoorbeeld release notes of producttips, vouwen ze in tot de nieuwste. Een knop toont hoeveel er nog meer zijn; klik om de groep uit te vouwen, klik nogmaals om hem in te klappen.
+
+Op een telefoon of tablet kun je een rij swipen om snel iets te doen: naar links om af te wijzen, naar rechts om te snoozen. De rij laat zien wat er gebeurt als je loslaat. Op elke rij staan ook knoppen voor Afwijzen en Snooze.
+
+Je kunt door de lijst bewegen met het toetsenbord: pijltjestoetsen verplaatsen de selectie, Enter of Spatie opent de geselecteerde melding, en Esc sluit het paneel. Het paneel staat boven andere zwevende UI, zodat de focus erbinnen blijft zolang het open is.
 
 ## Een melding snoozen
 
