@@ -21,6 +21,7 @@ Snelle antwoorden op veelvoorkomende vragen over MyCompanyDesk. Elk antwoord mat
 - [Bulk actions](/nl/faq/bulk-actions)
 - [Bulk Delete](/nl/faq/bulk-delete)
 - [Cancel invoice](/nl/faq/cancel-invoice)
+- [Alle prijzen tegelijk aanpassen](/nl/faq/catalog-price-change)
 - [Change your address](/nl/faq/change-address)
 - [Change currency](/nl/faq/change-currency)
 - [Change Date Format](/nl/faq/change-date-format)

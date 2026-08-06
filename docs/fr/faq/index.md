@@ -21,6 +21,7 @@ Réponses rapides aux questions courantes sur MyCompanyDesk. Chaque entrée corr
 - [Bulk actions](/fr/faq/bulk-actions)
 - [Bulk Delete](/fr/faq/bulk-delete)
 - [Cancel invoice](/fr/faq/cancel-invoice)
+- [Modifier tous les prix en une fois](/fr/faq/catalog-price-change)
 - [Change your address](/fr/faq/change-address)
 - [Change currency](/fr/faq/change-currency)
 - [Change Date Format](/fr/faq/change-date-format)

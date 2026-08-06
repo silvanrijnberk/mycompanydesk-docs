@@ -21,6 +21,7 @@ Schnelle Antworten auf häufige Fragen zu MyCompanyDesk. Jeder Eintrag entsprich
 - [Bulk actions](/de/faq/bulk-actions)
 - [Bulk Delete](/de/faq/bulk-delete)
 - [Cancel invoice](/de/faq/cancel-invoice)
+- [Alle Preise auf einmal ändern](/de/faq/catalog-price-change)
 - [Change your address](/de/faq/change-address)
 - [Change currency](/de/faq/change-currency)
 - [Change Date Format](/de/faq/change-date-format)
