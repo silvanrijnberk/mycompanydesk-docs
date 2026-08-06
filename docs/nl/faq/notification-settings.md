@@ -52,6 +52,19 @@ Onderaan het meldingenpaneel kun je **Niet storen** instellen voor pushmeldingen
 
 Als Niet storen actief is, worden pushmeldingen tegengehouden, maar de meldingen verschijnen nog wel in de app en je e-mails blijven gewoon doorkomen. Het paneel toont dat Niet storen aan staat en tot hoe laat.
 
+## Het detailpaneel
+
+Als je op een melding klikt, opent er een paneel aan de rechterkant met de volledige context voor die melding. Bij een te late factuur zie je het totaal, het openstaande bedrag, de betaalstatus en de factuurdatum. Bij een BTW-deadline zie je de periode en vervaldatum. Bij opgetelde meldingen zie je in het paneel de afzonderlijke facturen, offertes of records waar de samenvatting voor staat.
+
+Het paneel toont ook de acties die bij die melding passen:
+
+- **Markeer als betaald**: boekt een handmatige betaling voor het resterende bedrag en rondt de factuurmelding af.
+- **Markeer als ingediend**: markeert de BTW-periode als ingediend; alleen zichtbaar bij BTW-deadlines.
+- **Snooze**: stelt de melding tijdelijk uit zonder hem als gelezen te markeren.
+- **Afwijzen**: verwijdert de melding uit je eigen lijst met ongelezen meldingen.
+
+Release notes en tips hebben geen detailpaneel, omdat er geen onderliggend record is waar je op kunt acteren.
+
 Pushmeldingen werken in je browser en in de Android-app. Op Android zie je het app-icoon, de kleur van de meldingscategorie en, als het kan, de avatar van de afzender.
 
 Mis je een melding? Controleer dan zowel de meldingsschakelaar als het e-mailadres van je account.

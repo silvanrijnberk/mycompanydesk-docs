@@ -52,6 +52,19 @@ En bas du panneau de notifications, vous pouvez activer **Ne pas déranger** pou
 
 Tant que Ne pas déranger est actif, les notifications push sont retenues, mais les notifications continuent d'apparaître dans l'application et les e-mails restent envoyés. Le panneau affiche l'état actif et l'heure d'expiration.
 
+## Le panneau de détail
+
+Cliquer sur une notification ouvre un panneau à droite avec le contexte complet de cette notification. Pour une facture en retard, vous voyez le total, le montant restant dû, le statut de paiement et la date de facturation. Pour une échéance de TVA, vous voyez la période et la date d'échéance. Pour les notifications groupées, le panneau liste les factures, devis ou enregistrements individuels derrière le résumé.
+
+Le panneau affiche aussi les actions qui ont du sens pour cette notification :
+
+- **Marquer comme payée**: enregistre un paiement manuel pour le solde restant et clôt la notification de facture.
+- **Marquer comme déclarée**: marque la période de TVA comme déclarée; s'affiche uniquement pour les notifications d'échéance de TVA.
+- **Reporter**: diffère temporairement la notification sans la marquer comme lue.
+- **Ignorer**: supprime la notification de votre propre liste de non-lues.
+
+Les notes de version et les astuces n'ont pas de panneau de détail, car il n'y a aucun enregistrement sous-jacent sur lequel agir.
+
 Les notifications push fonctionnent dans votre navigateur et dans l'application Android. Sur Android, la notification affiche l'icône de l'application, la couleur de la catégorie et, quand c'est possible, l'avatar de l'expéditeur.
 
 Si une alerte vous échappe, vérifiez à la fois l'interrupteur de notification et l'adresse e-mail de votre compte.

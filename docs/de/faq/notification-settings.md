@@ -52,6 +52,19 @@ Unten im Benachrichtigungsbereich können Sie **Nicht stören** für Push-Benach
 
 Solange Nicht stören aktiv ist, werden Push-Benachrichtigungen zurückgehalten, aber die Benachrichtigungen erscheinen weiterhin in der App und E-Mails werden weiterhin zugestellt. Der Bereich zeigt den aktiven Status und die Uhrzeit an, zu der er abläuft.
 
+## Das Detailpanel
+
+Ein Klick auf eine Benachrichtigung öffnet ein rechts angeordnetes Panel mit dem vollständigen Kontext dieses Elements. Bei einer überfälligen Rechnung sehen Sie den Gesamtbetrag, den offenen Betrag, den Zahlungsstatus und das Rechnungsdatum. Bei einer MwSt.-Frist sehen Sie den Zeitraum und das Fälligkeitsdatum. Bei zusammengefassten Benachrichtigungen listet das Panel die einzelnen Rechnungen, Angebote oder Datensätze hinter der Zusammenfassung auf.
+
+Das Panel zeigt auch die Aktionen an, die für dieses Element sinnvoll sind:
+
+- **Als bezahlt markieren**: bucht eine manuelle Zahlung für den Restbetrag und schließt die Rechnungsbenachrichtigung ab.
+- **Als eingereicht markieren**: markiert den MwSt.-Zeitraum als eingereicht; wird nur bei MwSt.-Fristen angezeigt.
+- **Snooze**: verschiebt die Benachrichtigung vorübergehend, ohne sie als gelesen zu markieren.
+- **Verwerfen**: entfernt die Benachrichtigung aus Ihrer eigenen ungelesenen Liste.
+
+Release Notes und Tipps haben kein Detailpanel, weil es keinen zugrunde liegenden Datensatz gibt, an dem Sie etwas ändern können.
+
 Push-Benachrichtigungen funktionieren im Browser und in der Android-App. Auf Android zeigt die Benachrichtigung das App-Symbol, die Farbe der Kategorie und nach Möglichkeit den Avatar des Absenders.
 
 Wenn eine Benachrichtigung ausbleibt, prüfen Sie sowohl den Schalter als auch die E-Mail-Adresse Ihres Kontos.
