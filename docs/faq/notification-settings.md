@@ -52,6 +52,19 @@ At the bottom of the notification drawer you can set **Niet storen** (do not dis
 
 While do-not-disturb is active, push notifications are held back, but the notifications still appear in the app list and emails are not affected. The drawer shows the active state and the time it expires.
 
+## The detail panel
+
+Clicking a notification opens a right-hand panel with the full context for that item. For an overdue invoice you see the total, open amount, payment status and issue date. For a VAT deadline you see the period and due date. For rolled-up notifications the panel lists the individual invoices, quotes or records behind the summary.
+
+The panel also shows the actions that make sense for that item:
+
+- **Mark as paid**: records a manual payment for the remaining balance and resolves the invoice notification.
+- **Mark as filed**: marks the VAT period as filed; shown only for VAT-deadline notifications.
+- **Snooze**: temporarily defers the notification without marking it as read.
+- **Dismiss**: removes the notification from your own unread list.
+
+Release notes and tips have no detail panel because there is no underlying record to act on.
+
 Push notifications work in your browser and in the Android app. On Android the notification shows the app icon, category colour and, where available, the sender's avatar.
 
 If you are troubleshooting a missing alert, check both the notification toggle and the email address on your account.
