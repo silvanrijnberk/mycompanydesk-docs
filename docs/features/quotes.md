@@ -73,6 +73,12 @@ Once a customer accepts your quote, convert it to an invoice with one click:
 4. Make any adjustments if needed
 5. Save and send the invoice
 
+## Automatic draft invoice on signing
+
+You can have MyCompanyDesk prepare a draft invoice as soon as a customer signs a quote. Turn on the option in **Settings > Invoices and quotes** (called **Signed? Automatically prepare a draft invoice** in the English interface).
+
+When the option is enabled, the app creates a draft invoice when the quote is signed. You still review the draft and send it yourself.
+
 ## Quote requests
 
 Customers can submit quote requests through your [site builder](/advanced/business-page). These appear in **Quotes > Requests**.
