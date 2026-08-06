@@ -38,6 +38,12 @@ Vous pouvez demander à un client de signer un devis en ligne au lieu de ne l'en
 
 Si l'e-mail de signature ne peut pas être livré en raison d'un problème avec vos paramètres d'envoi, un message d'erreur apparaît vous demandant de vérifier vos paramètres e-mail et de réessayer. La demande de signature elle-même est créée sur le serveur, vous pouvez donc la renvoyer une fois les paramètres e-mail corrigés.
 
+## Brouillon de facture automatique à la signature
+
+Si votre espace de travail a activé le paramètre optionnel sous **Paramètres > Factures > Devis**, MyCompanyDesk crée automatiquement un brouillon de facture lorsqu'un client signe un devis. Le brouillon reprend les mêmes lignes et totaux que le devis signé.
+
+Vous trouvez le brouillon dans **Factures > Brouillons**. Vérifiez-le, ajoutez un numéro si votre espace utilise la numérotation manuelle, et envoyez-le quand vous êtes prêt. Si le brouillon ne peut pas être créé, par exemple parce qu'aucun numéro n'est disponible, vous recevez une notification pour pouvoir créer la facture vous-même.
+
 ## Actions sur la page de detail du devis
 
 L'action principale sur la page de detail du devis depend du statut du devis :

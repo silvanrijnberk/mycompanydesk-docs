@@ -97,6 +97,14 @@ Wenn eine Belastung fehlschlägt oder das Mandat nicht mehr gültig ist, erhalte
 
 Wiederkehrende Verträge können für Inflation oder vereinbarte jährliche Erhöhungen angepasst werden. Öffnen Sie die Vertragsliste und klicken Sie auf **Preise erhöhen**, um zu sehen, was eine prozentuale Erhöhung bei allen berechtigten Verträgen bewirken würde. Ein Vertrag ist nur berechtigt, wenn seit Beginn oder seit der letzten Erhöhung mindestens ein Jahr vergangen ist.
 
+Unter dem Prozentfeld kann ein Hinweis mit veröffentlichten Inflationszahlen des Statistischen Amts der Niederlande (CBS) stehen. Mehrere Indizes stehen nebeneinander, weil sie unterschiedliche Fragen beantworten und regelmäßig um ganze Prozentpunkte voneinander abweichen:
+
+- **CPI** — was Haushalte im Durchschnitt bezahlen. Die Bezugsgröße, die den meisten Lohn- und Mietindexierungen zugrunde liegt.
+- **HICP** — dieselben Preise, nach der europäischen Methode berechnet. Dient dem Vergleich der Niederlande mit anderen EU-Ländern.
+- **DPI** — was Unternehmen sich gegenseitig für gewerbliche Dienstleistungen berechnen. Oft näher an Ihren eigenen Sätzen als Verbraucherpreise.
+
+Klicken Sie auf eine Zeile, um den Prozentsatz in das Feld zu übernehmen, und passen Sie ihn vor dem Anwenden noch an. Die Zahlen sind keine Empfehlung; sie geben Orientierung für Ihre eigene Entscheidung.
+
 Die Vorschau zeigt pro Vertrag:
 
 - Den aktuellen Tarif oder Betrag pro Periode

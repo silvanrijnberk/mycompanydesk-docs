@@ -97,6 +97,14 @@ If a charge fails or the mandate is no longer valid, you receive an "Automatic c
 
 Recurring contracts can be adjusted for inflation or agreed yearly rises. Open the contracts list and click **Raise prices** to preview what a percentage increase would do across eligible contracts. A contract is only eligible if at least one year has passed since it started or since its last rise.
 
+Below the percentage field you may see a hint with published inflation figures from Statistics Netherlands (CBS). It shows several indices side by side because they answer different questions and routinely differ by whole percentage points:
+
+- **CPI** — what households pay on average. The reference most wage and rent indexation uses.
+- **HICP** — the same prices, calculated by the European method. Used to compare the Netherlands with other EU countries.
+- **DPI** — what businesses charge each other for commercial services. Often closer to your own rates than consumer prices.
+
+Click any row to copy the percentage into the field, then adjust it before you apply. The figures are not recommendations; they are a starting point for your own judgement.
+
 The preview shows, per contract:
 
 - The current rate or amount per period

@@ -38,6 +38,12 @@ You can ask a customer to sign a quote online instead of sending it only as a PD
 
 If the signing e-mail cannot be delivered because of a problem with your sender settings, an error toast appears with the message to check your e-mail settings and try again. The signing request itself is created on the server, so you can resend it once the e-mail settings are fixed.
 
+## Automatic draft invoice on signing
+
+If your workspace has the optional setting enabled in **Settings > Invoices > Quotes**, MyCompanyDesk creates a draft invoice automatically when a customer signs a quote. The draft uses the same line items and totals as the signed quote.
+
+You can find the draft in **Invoices > Drafts**. Review it, add a number if your workspace uses manual numbering, and send it when you are ready. If the draft cannot be created, for example because numbering is unavailable, you get a notification so you can create the invoice yourself.
+
 ## Quote detail actions
 
 The top action on the quote detail page depends on the quote status:
@@ -113,7 +119,6 @@ Each request shows:
 - Quote request metrics (received, quoted, closed) are shown at the top of the requests page
 - Use the quick-add feature for rapid quote creation
 - Quotes can link to projects for better tracking
-
 
 ## Dashboard context
 

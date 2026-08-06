@@ -32,11 +32,23 @@ Rendez-vous dans **Offre** et cliquez sur **Modifier les prix** pour mettre à j
 
 L'aperçu indique aussi combien d'articles sont ignorés parce qu'ils n'ont pas de prix (par exemple, les articles avec prix sur demande). Et il vous avertit si une promotion en cours cesserait d'être active, car le prix promotionnel ne serait alors plus inférieur au prix normal.
 
+## Indices de prix publiés comme indication
+
+Sous le champ de pourcentage, une indication peut afficher des chiffres d'inflation publiés par le bureau de statistiques néerlandais (CBS). Plusieurs indices apparaissent côte à côte, car ils mesurent des choses différentes et diffèrent souvent de plusieurs points de pourcentage :
+
+- **CPI** — ce que les ménages paient en moyenne. La référence utilisée par la plupart des indexations de salaires et de loyers.
+- **HICP** — les mêmes prix, calculés selon la méthode européenne. Sert à comparer les Pays-Bas aux autres pays de l'UE.
+- **DPI** — ce que les entreprises se facturent mutuellement pour des services commerciaux. Souvent plus proche de vos propres tarifs que les prix à la consommation.
+
+Cliquez sur une ligne pour recopier le pourcentage dans le champ, puis ajustez-le avant d'appliquer. Les chiffres ne sont pas une recommandation; ils servent de repère pour prendre votre propre décision.
+
 ## Ce qui change et ce qui ne change pas
 
 - Seuls les prix de votre **Offre** sont mis à jour.
 - Les factures, devis et contrats existants conservent le prix auquel ils ont été créés.
 - Vous pouvez annuler un changement juste après l'avoir appliqué. Une seule annulation rétablit tout le lot en une fois.
+
+Si vous annulez et que rien n'est restauré, les prix ont été modifiés à nouveau entre-temps. Dans ce cas, l'application les ignore au lieu d'écraser la modification plus récente.
 
 ## Imprimer une liste de prix
 

@@ -87,6 +87,7 @@ Schnelle Antworten auf häufige Fragen zu MyCompanyDesk. Jeder Eintrag entsprich
 - [Profit Loss](/de/faq/profit-loss)
 - [Quick search](/de/faq/quick-search)
 - [Quote numbering](/de/faq/quote-numbering)
+- [Automatische Rechnung aus Angebot](/de/faq/quote-auto-invoice)
 - [Quote status](/de/faq/quote-status)
 - [Quote Validity](/de/faq/quote-validity)
 - [Recurring setup](/de/faq/recurring-setup)

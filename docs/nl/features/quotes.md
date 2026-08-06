@@ -38,6 +38,12 @@ Je kunt een klant vragen een offerte online te ondertekenen in plaats van hem al
 
 Als de e-mail voor het tekenen niet kan worden afgeleverd door een probleem met je e-mailinstellingen, verschijnt er een foutmelding met de vraag je e-mailinstellingen te controleren en het opnieuw te proberen. Het tekenverzoek zelf wordt op de server aangemaakt, dus je kunt het opnieuw versturen zodra de e-mailinstellingen in orde zijn.
 
+## Automatisch conceptfactuur bij ondertekening
+
+Als je werkruimte de optionele instelling heeft ingeschakeld in **Instellingen > Facturen > Offertes**, maakt MyCompanyDesk automatisch een conceptfactuur aan zodra een klant een offerte tekent. De conceptfactuur gebruikt dezelfde regelitems en totalen als de ondertekende offerte.
+
+Je vindt de conceptfactuur onder **Facturen > Concepten**. Controleer hem, voeg een nummer toe als je werkruimte handmatige nummering gebruikt, en verstuur hem wanneer je wilt. Als de conceptfactuur niet kan worden aangemaakt, bijvoorbeeld omdat er geen nummer beschikbaar is, krijg je een melding zodat je de factuur zelf kunt aanmaken.
+
 ## Acties op de offertedetailpagina
 
 De hoofdactie op de offertedetailpagina hangt af van de offertestatus:

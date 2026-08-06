@@ -38,6 +38,12 @@ Sie können einen Kunden bitten, ein Angebot online zu unterschreiben, anstatt e
 
 Wenn die E-Mail zum Unterschreiben aufgrund eines Problems mit Ihren E-Mail-Einstellungen nicht zugestellt werden kann, erscheint eine Fehlermeldung, die Sie auffordert, Ihre E-Mail-Einstellungen zu prüfen und es erneut zu versuchen. Die Unterschriftenanfrage selbst wird auf dem Server erstellt, sodass Sie sie erneut senden können, sobald die E-Mail-Einstellungen korrigiert sind.
 
+## Automatischer Rechnungsentwurf bei Unterschrift
+
+Wenn Ihr Arbeitsbereich die optionale Einstellung unter **Einstellungen > Rechnungen > Angebote** aktiviert hat, erstellt MyCompanyDesk automatisch einen Rechnungsentwurf, sobald ein Kunde ein Angebot unterschreibt. Der Entwurf übernimmt die gleichen Positionen und Summen wie das unterschriebene Angebot.
+
+Sie finden den Entwurf unter **Rechnungen > Entwürfe**. Prüfen Sie ihn, fügen Sie bei manueller Nummerierung eine Nummer hinzu und senden Sie ihn, wenn Sie bereit sind. Wenn der Entwurf nicht erstellt werden kann, etwa weil keine Nummer verfügbar ist, erhalten Sie eine Benachrichtigung, damit Sie die Rechnung selbst anlegen können.
+
 ## Detailaktionen für Angebote
 
 Die Hauptaktion auf der Angebotsdetailseite richtet sich nach dem Angebotsstatus:

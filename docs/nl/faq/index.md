@@ -87,6 +87,7 @@ Snelle antwoorden op veelvoorkomende vragen over MyCompanyDesk. Elk antwoord mat
 - [Profit Loss](/nl/faq/profit-loss)
 - [Quick search](/nl/faq/quick-search)
 - [Quote numbering](/nl/faq/quote-numbering)
+- [Automatisch factuur uit offerte](/nl/faq/quote-auto-invoice)
 - [Quote status](/nl/faq/quote-status)
 - [Quote Validity](/nl/faq/quote-validity)
 - [Recurring setup](/nl/faq/recurring-setup)
