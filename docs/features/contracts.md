@@ -27,7 +27,7 @@ The contracts module is optional. Enable it in **Company > Features** if you don
    - **Description** — Terms and details
 3. Click **Save**
 
-::: tip Meer opties
+::: tip More options
 The new-contract form keeps optional details tidy: the **More options** section reveals extra fields for service charge amount, VAT rate, and service description. These are not required to create the contract, but you can expand them when you need them.
 :::
 
@@ -150,6 +150,10 @@ When a contract has been signed, the contract detail page shows a signing card w
 - A download button to save the PDF
 
 The preview page includes a toolbar with print and download actions, and renders the signed contract directly in the browser. The signed PDF and review PDF both include the full contract body text, so every downloaded copy is self-contained.
+
+### Sending a signing request
+
+To send a signing request, open the contract and use the signing card or the **Send signing request** action. The system emails each party a secure signing link. If the email cannot be delivered, the failure is shown on the contract detail page instead of being reported as sent.
 
 ### Signing on the contracts list
 
