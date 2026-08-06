@@ -1,6 +1,6 @@
 ---
 title: Change all prices at once
-last_verified: 2026-08-06
+last_verified: 2026-08-07
 chatbot:
   triggers:
     - "change all prices"
@@ -29,6 +29,8 @@ Go to **Aanbod** (the catalog of products and services you sell) and click **Cha
    - **Whole euros** rounds the result to whole euros.
 3. Click **Check changes** to open a preview that lists every item with its old and new price.
 4. Review the list, then click **Change prices** to apply it.
+
+While you are deciding on a percentage, an inflation hint can show published price-index figures from Statistics Netherlands (CBS) over the last twelve months. It lists different series with their percentage change and measurement window. Clicking a figure fills the percentage field, or you can type your own value.
 
 The preview also tells you if any items are skipped because they do not have a price (for example, price-on-request items), and it warns you when an active promotion would stop being an active promotion after the change.
 

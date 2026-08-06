@@ -105,6 +105,8 @@ Die Vorschau zeigt pro Vertrag:
 
 Sie wenden die Erhöhung pro Vertrag an, niemals pauschal, damit Sie Kunden überspringen können, mit denen Sie noch nicht gesprochen haben. Sobald sie angewendet ist, aktualisiert das System die hinterlegten Vertragsbedingungen und zukünftige Rechnungen zeigen den neuen Betrag.
 
+Das Fenster zeigt zusätzlich einen Inflationshinweis mit veröffentlichten Preisindexdaten des niederländischen Statistikamts CBS für die letzten zwölf Monate. Es listet verschiedene Reihen wie CPI, HICP und DPI mit ihrer prozentualen Veränderung und dem Messzeitraum. Wenn Sie eine Zahl anklicken, wird das Prozentfeld ausgefüllt, aber Sie können auch einen eigenen Wert eingeben. Der Hinweis zeigt veröffentlichte Daten und empfiehlt keinen bestimmten Satz.
+
 ::: tip Zuerst abstimmen
 Besprechen Sie jede Preiserhöhung mit Ihrem Kunden, bevor Sie sie anwenden. Die Vorschau ändert nichts, bis Sie bei einem bestimmten Vertrag auf **Anwenden** klicken.
 :::
