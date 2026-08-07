@@ -38,6 +38,14 @@ Het overzicht toont ook hoeveel items zijn overgeslagen omdat ze geen prijs hebb
 - Bestaande facturen, offertes en contracten houden de prijs waarmee ze zijn aangemaakt.
 - Direct na het toepassen kun je de wijziging ongedaan maken. Met één keer ongedaan maken draai je de hele batch in één keer terug.
 
+## Inflatiehint bij één item wijzigen
+
+Als je één catalogusitem met een vaste prijs bewerkt, kan naast het prijsveld een inflatiehint verschijnen. Hij meet vanaf de datum waarop die prijs voor het laatst is vastgelegd (of vanaf het aanmaken van het item als de prijs nooit is veranderd). Ongedaan-maken telt niet als een nieuwe prijsbeslissing, dus de hint blijft gekoppeld aan een echt moment waarop je de prijs bepaalde.
+
+De hint toont prijsindexwaarden als aanklikbare suggesties. Elke regel toont de periode die hij beslaat, het percentage waarmee de prijs veranderd is en wat je huidige prijs zou worden als je die suggestie toepast. Klik op een suggestie om dat bedrag in het prijsveld in te vullen. Je moet het item zelf nog opslaan, dus je controleert de wijziging altijd voordat hij definitief is.
+
+De hint verschijnt alleen in bewerkmodus en alleen voor items met een vaste prijs. Prijs-op-aanvraag items en gloednieuwe items hebben geen geschiedenis om van te meten, dus die tonen hem niet.
+
 ## Prijslijst printen
 
 Je kunt je aanbod ook afdrukken als klantvriendelijke prijslijst. Open **Aanbod** en klik op **Prijslijst** om `/aanbod/prijslijst` te openen.

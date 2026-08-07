@@ -38,6 +38,14 @@ Die Vorschau zeigt auch, wie viele Artikel übersprungen wurden, weil sie keinen
 - Bestehende Rechnungen, Angebote und Verträge behalten die Preise, mit denen sie erstellt wurden.
 - Sie können eine Änderung direkt nach dem Anwenden rückgängig machen. Ein einziger Rückgängig-Schritt macht die gesamte Änderung auf einmal rückgängig.
 
+## Inflationshinweis beim Bearbeiten eines einzelnen Artikels
+
+Wenn Sie einen einzelnen Katalogartikel mit Festpreis bearbeiten, kann neben dem Preisfeld ein Inflationshinweis erscheinen. Er misst ab dem Datum, an dem der Preis zuletzt festgelegt wurde (oder ab der Erstellung des Artikels, falls der Preis nie geändert wurde). Rückgängig-Machen zählt nicht als neue Preisentscheidung, sodass der Hinweis an einem echten Preismoment verankert bleibt.
+
+Der Hinweis zeigt Preisindexwerte als anklickbare Vorschläge. Jede Zeile zeigt den Zeitraum, den sie abdeckt, die prozentuale Veränderung und den Betrag, den Ihr aktueller Preis bei Anwendung erreichen würde. Klicken Sie einen Vorschlag an, um den Betrag in das Preisfeld zu übernehmen. Sie müssen den Artikel selbst speichern, sodass Sie die Änderung immer prüfen, bevor sie wirksam wird.
+
+Der Hinweis erscheint nur im Bearbeitungsmodus und nur für Artikel mit Festpreis. Artikel mit Preis auf Anfrage und brandneue Artikel haben keine Historie, an der gemessen werden könnte, deshalb zeigen sie ihn nicht.
+
 ## Preisliste drucken
 
 Sie können Ihr Angebot auch als kundenorientierte Preisliste ausdrucken. Öffnen Sie **Angebot** und klicken Sie auf **Preisliste**, um `/aanbod/prijslijst` zu öffnen.

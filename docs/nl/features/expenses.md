@@ -171,6 +171,14 @@ Importeer uitgaven vanuit CSV:
 4. Koppel kolommen aan velden
 5. Controleer en bevestig
 
+## Patroononderbrekingsmeldingen
+
+MyCompanyDesk houdt leveranciers in de gaten die normaal elke maand een factuur sturen, maar nu stil zijn. Als een leverancier uitgaven in drie verschillende maanden had en daarna ongeveer 50 dagen geen bevestigde uitgave meer, krijg je een melding met de vraag of je een factuur mist.
+
+De controle kijkt alleen naar bevestigde uitgaven. Conceptuitgaven of uitgaven die nog moeten worden bevestigd tellen niet mee als "we hebben een factuur gezien", dus een onbevestigde import stopt de melding niet. Het doel is om een ontbrekende terugkerende factuur op te vangen voordat je administratie scheef groeit.
+
+Als je de melding opent, kun je de missende uitgave direct boeken of afwijzen als het stilzijn verwacht is.
+
 ## Tips
 
 - Stel je standaard BTW-tarief, standaard uitgavecategorie en standaard betaalmethode voor uitgaven in onder **Instellingen > Uitgaven** zodat het formulier niet steeds leeg begint. Een 0%-BTW-instelling werkt correct; het formulier behandelt die als een bewuste keuze.

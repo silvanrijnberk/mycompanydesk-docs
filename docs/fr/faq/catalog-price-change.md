@@ -38,6 +38,14 @@ L'aperçu indique aussi combien d'articles sont ignorés parce qu'ils n'ont pas 
 - Les factures, devis et contrats existants conservent le prix auquel ils ont été créés.
 - Vous pouvez annuler un changement juste après l'avoir appliqué. Une seule annulation rétablit tout le lot en une fois.
 
+## Indication d'inflation lors de la modification d'un article
+
+Quand vous modifiez un seul article du catalogue avec un prix fixe, une indication d'inflation peut apparaître à côté du champ de prix. Elle mesure à partir de la date à laquelle ce prix a été fixé pour la dernière fois (ou de la création de l'article si le prix n'a jamais changé). L'annulation ne compte pas comme une nouvelle décision de prix, donc l'indication reste ancrée à un moment de prix réel.
+
+L'indication propose des lectures d'indice de prix sous forme de suggestions cliquables. Chaque ligne affiche la période couverte, le pourcentage de variation et le montant que votre prix actuel atteindrait si vous appliquiez la suggestion. Cliquez sur une suggestion pour remplir ce montant dans le champ de prix. Vous devez toujours enregistrer l'article vous-même, donc vous vérifiez le changement avant qu'il ne soit définitif.
+
+L'indication n'apparaît qu'en mode modification et seulement pour les articles à prix fixe. Les articles avec prix sur demande et les articles tout neufs n'ont pas d'historique à mesurer, elle ne s'affiche donc pas.
+
 ## Imprimer une liste de prix
 
 Vous pouvez aussi imprimer votre offre sous forme de liste de prix destinée aux clients. Ouvrez **Offre** et cliquez sur **Liste de prix** pour ouvrir `/aanbod/prijslijst`.
