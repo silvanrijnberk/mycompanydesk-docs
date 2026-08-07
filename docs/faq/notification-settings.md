@@ -44,6 +44,8 @@ On a phone or tablet you can swipe a row to act quickly: swipe left to dismiss, 
 
 You can move through the list with the keyboard: arrow keys move the selection, Enter or Space opens the selected notification, and Esc closes the drawer. The drawer sits above other floating UI so focus stays inside it while it is open.
 
+While the list is loading for the first time, grey placeholder rows shaped like real notifications appear instead of a spinner, so the layout does not jump when the actual rows arrive. When you dismiss or snooze a row, the remaining rows glide up into the gap rather than snapping to a new position. Expanding a folded group animates its extra rows in place.
+
 ## Snoozing a notification
 
 You can temporarily silence an action notification without marking it as read. Click the notification bell to open the list, then choose **Snooze** on the row you want to defer. You can snooze until:
@@ -67,6 +69,8 @@ While do-not-disturb is active, push notifications are held back, but the notifi
 ## The detail panel
 
 Clicking a notification opens a right-hand panel with the full context for that item. For an overdue invoice you see the total, open amount, payment status and issue date. For a VAT deadline you see the period and due date. For rolled-up notifications the panel lists the individual invoices, quotes or records behind the summary.
+
+The panel waits for the underlying record to load before it switches. Until the record arrives, the previous notification stays visible and its buttons are inactive, so nothing shifts under your cursor. Once the record is ready, the panel cross-fades to the new notification in one smooth step.
 
 The actions for that item are ranked so the most important one comes first and is marked as the primary action. The rest stay on the same row. If more actions fit than the panel has room for, the extra ones move behind a **More** button (three dots). Tap it to see the remaining actions without leaving the drawer.
 

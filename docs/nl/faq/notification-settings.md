@@ -44,6 +44,8 @@ Op een telefoon of tablet kun je een rij swipen om snel iets te doen: naar links
 
 Je kunt door de lijst bewegen met het toetsenbord: pijltjestoetsen verplaatsen de selectie, Enter of Spatie opent de geselecteerde melding, en Esc sluit het paneel. Het paneel staat boven andere zwevende UI, zodat de focus erbinnen blijft zolang het open is.
 
+Als de lijst voor de eerste keer laadt, zie je grijze placeholderrijen die eruitzien als echte meldingen, in plaats van een spinner, zodat de lay-out niet verschuift zodra de echte rijen binnenkomen. Als je een rij afwijst of snoozt, schuiven de rijen eronder omhoog in plaats van meteen te verspringen. Een ingeklapte groep vouwt soepel uit.
+
 ## Een melding snoozen
 
 Je kunt een actiemelding tijdelijk uitstellen zonder hem als gelezen te markeren. Klik op het belletje om de lijst te openen en kies bij de melding die je wilt uitstellen voor **Snooze**. Je kunt snoozen tot:
@@ -67,6 +69,8 @@ Als Niet storen actief is, worden pushmeldingen tegengehouden, maar de meldingen
 ## Het detailpaneel
 
 Als je op een melding klikt, opent er een paneel aan de rechterkant met de volledige context voor die melding. Bij een te late factuur zie je het totaal, het openstaande bedrag, de betaalstatus en de factuurdatum. Bij een BTW-deadline zie je de periode en vervaldatum. Bij opgetelde meldingen zie je in het paneel de afzonderlijke facturen, offertes of records waar de samenvatting voor staat.
+
+Het paneel wacht tot het bijbehorende record is geladen voordat het wisselt. Tot die tijd blijft de vorige melding zichtbaar en staan de knoppen op inactief, zodat er niets onder je cursor verschuift. Zodra het record klaar is, fade het paneel in één keer over naar de nieuwe melding.
 
 De acties voor die melding worden gerangschikt zodat de belangrijkste actie als eerste staat en als hoofdactie wordt gemarkeerd. De rest blijft op dezelfde rij staan. Passen er meer acties dan het paneel ruimte heeft, dan verhuizen de overige acties achter een **Meer**-knop (drie stippen). Tik daarop om de rest te zien zonder de lade te sluiten.
 

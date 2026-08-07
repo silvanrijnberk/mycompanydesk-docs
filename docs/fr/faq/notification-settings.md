@@ -44,6 +44,8 @@ Sur un téléphone ou une tablette, vous pouvez faire glisser une ligne pour agi
 
 Vous pouvez parcourir la liste au clavier : les flèches déplacent la sélection, Entrée ou Espace ouvre la notification sélectionnée, et Échap ferme le panneau. Le panneau passe au-dessus des autres éléments flottants pour que le focus reste à l'intérieur tant qu'il est ouvert.
 
+Pendant le premier chargement de la liste, des lignes de substitution grises, en forme de vraies notifications, apparaissent à la place d’un spinner, pour que la mise en page ne saute pas quand les vraies lignes arrivent. Lorsque vous ignorez ou reportez une ligne, les lignes situées en dessous remontent en douceur plutôt que de sauter. Un groupe replié se déplie avec une animation.
+
 ## Reporter une notification
 
 Vous pouvez reporter temporairement une notification d'action sans la marquer comme lue. Cliquez sur la cloche pour ouvrir la liste, puis choisissez **Snooze** sur la ligne concernée. Vous pouvez reporter jusqu'à :
@@ -67,6 +69,8 @@ Tant que Ne pas déranger est actif, les notifications push sont retenues, mais 
 ## Le panneau de détail
 
 Cliquer sur une notification ouvre un panneau à droite avec le contexte complet de cette notification. Pour une facture en retard, vous voyez le total, le montant restant dû, le statut de paiement et la date de facturation. Pour une échéance de TVA, vous voyez la période et la date d'échéance. Pour les notifications groupées, le panneau liste les factures, devis ou enregistrements individuels derrière le résumé.
+
+Le panneau attend que l’enregistrement sous-jacent soit chargé avant de changer. Jusqu’alors, la notification précédente reste visible et ses boutons sont inactifs, pour que rien ne bouge sous votre curseur. Une fois l’enregistrement prêt, le panneau effectue un fondu enchaîné vers la nouvelle notification en une seule étape.
 
 Les actions pour cette notification sont classées afin que la plus importante apparaisse en premier et soit mise en évidence comme action principale. Les autres restent sur la même ligne. S'il y a plus d'actions que l'espace ne le permet, les actions supplémentaires sont regroupées derrière un bouton **Plus** (trois points). Appuyez dessus pour voir les actions restantes sans fermer le panneau.
 
