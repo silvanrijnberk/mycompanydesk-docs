@@ -1,6 +1,6 @@
 ---
 title: Espaces de travail
-last_verified: 2026-08-06
+last_verified: 2026-08-08
 ---
 
 # Espaces de travail
@@ -15,6 +15,7 @@ La page Espaces de travail (`/werkruimtes`) est un lieu central pour tout ce que
 - Le meme selecteur se trouve aussi dans l'en-tete du menu mobile, pour atteindre l'apercu depuis le meme endroit sur tous les ecrans.
 - L'ancienne URL `/boekhouder` redirige ici.
 - Le selecteur d'espace de travail affiche maintenant une ligne de synthese en haut. Vos propres entreprises et les administrations clientes sont regroupees separement, et un champ de recherche apparait des que vous avez plus de huit espaces de travail.
+- Chaque ligne affiche la propre marque de l'espace de travail : son logo, ou une tuile coloree avec ses initiales. Vos propres entreprises portent leur couleur; les administrations clientes restent neutres. L'espace de travail dans lequel vous vous trouvez actuellement est mis en evidence.
 
 ## Si vous avez un seul espace de travail
 
