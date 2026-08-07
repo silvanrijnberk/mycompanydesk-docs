@@ -198,6 +198,22 @@ Wenn Ihr Arbeitsbereich die manuelle Nummerierung verwendet, fragt die App beim 
 
 Warten Sie noch auf Ihre USt-IdNr. vom Finanzamt, oder sind Sie unter der Kleinunternehmerregelung (KOR) befreit? Sie koennen den Hinweis ueberspringen und trotzdem fortfahren. Tragen Sie Ihre USt-IdNr. spaeter nach, sobald sie vorliegt.
 
+## Rechnungen von anderen MyCompanyDesk-Nutzern empfangen
+
+Wenn Ihnen ein Lieferant, der ebenfalls MyCompanyDesk nutzt, eine Rechnung per E-Mail schickt, können Sie diese direkt als strukturierten Entwurf in Ihre Ausgaben übernehmen lassen. Die Beträge stammen aus der Rechnung selbst, sodass weder Scannen noch Abtippen nötig ist. Der Entwurf wird immer mit dem Status "zur Prüfung" angelegt und erst nach Ihrer Freigabe gebucht.
+
+Die Funktion ist standardmäßig deaktiviert. Schalten Sie sie unter **Einstellungen > Automatisierung** (`/settings/automatisering`) im Abschnitt **Rechnungen von anderen MyCompanyDesk-Nutzern** ein. Sie können sie dort jederzeit wieder ausschalten.
+
+Wenn die Funktion aktiv ist:
+
+- Erscheint jede eingehende Rechnung als Entwurf unter **Ausgaben**, bereits vorausgefüllt mit Lieferantenname und Positionssummen.
+- Zeigt die Beschreibung an, von welchem MyCompanyDesk-Arbeitsbereich die Rechnung stammt, und dass sie über MyCompanyDesk eingegangen ist.
+- Kann eine Regel für vertraute Lieferanten die Kategorie vorausfüllen, der Entwurf bleibt aber auf jeden Fall "zur Prüfung", damit nichts automatisch gebucht wird.
+- Kann dieselbe Rechnung nie zweimal als Entwurf entstehen: ein Datenbank-Index blockiert Duplikate, auch wenn der Absender die E-Mail erneut verschickt.
+- Schützt MyCompanyDesk Ihren Prüfungseingang, indem es jedem Absender maximal zehn Entwürfe in Ihrem Arbeitsbereich pro rollierendem 24-Stunden-Fenster erlaubt. Dieses Limit finden Sie in `apps/api/src/modules/invoices/network-delivery.service.js#NETWORK_DAILY_PAIR_CAP`.
+
+Die Funktion ist auf beiden Seiten kostenlos. Sie funktioniert nur, wenn der Lieferant die Rechnung an eine Mailbox schickt, die MyCompanyDesk für Sie betreibt. Wenn Sie lieber über ein Netzwerk empfangen möchten, können Sie Lieferantenrechnungen auch über [Peppol E-Rechnung](/de/features/peppol) erhalten.
+
 ## Tipps
 
 - Richten Sie Ihre [E-Mail-Vorlagen](/de/settings/email) ein, bevor Sie Ihre erste Rechnung versenden

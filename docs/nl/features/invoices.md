@@ -198,6 +198,22 @@ Als je werkruimte handmatige nummering gebruikt, vraagt de app ook om het factuu
 
 Wacht je nog op je btw-id van de Belastingdienst, of val je onder de KOR (kleineondernemersregeling)? Dan kun je de melding overslaan en toch doorgaan. Vul je btw-id later aan zodra je hem hebt.
 
+## Facturen van andere MyCompanyDesk-gebruikers ontvangen
+
+Als een leverancier die ook MyCompanyDesk gebruikt je een factuur mailt, kun je die direct als gestructureerd concept in je uitgaven laten binnenkomen. De bedragen komen overeen met die van de factuur zelf, dus er is geen scan- of overtyplwerk nodig. De conceptuitgave wordt altijd aangemaakt als "te controleren" en pas geboekt nadat jij akkoord geeft.
+
+Deze functie staat standaard uit. Je zet hem aan via **Instellingen > Automatisering** (`/settings/automatisering`) onder **Facturen van andere MyCompanyDesk-gebruikers**. Je kunt hem daar ook weer uitschakelen.
+
+Als de functie actief is:
+
+- Komt elke inkomende factuur als conceptuitgave binnen bij **Uitgaven**, al vooringevuld met de leveranciersnaam en de regelbedragen.
+- Staat in de omschrijving van welk MyCompanyDesk-werkruimte de factuur afkomstig is en dat hij via MyCompanyDesk is aangeleverd.
+- Kan een vertrouwde-leveranciersregel de categorie alvast invullen, maar het concept blijft in ieder geval "te controleren", zodat er nooit automatisch wordt geboekt.
+- Kan dezelfde factuur nooit twee keer als concept ontstaan: een unieke index in de database blokkeert duplicaten, ook als de verzender de e-mail opnieuw verstuurt.
+- Beperkt MyCompanyDesk het aantal binnengekomen concepten tot maximaal tien per verzender per werkruimte, berekend over een rollend venster van 24 uur. Dat limiet staat in `apps/api/src/modules/invoices/network-delivery.service.js#NETWORK_DAILY_PAIR_CAP`.
+
+De functie is gratis voor beide kanten. Hij werkt alleen als de leverancier de factuur mailt naar een mailbox die MyCompanyDesk voor jou beheert. Wil je via een netwerk koppelen, dan kun je leveranciersfacturen ook ontvangen via [Peppol e-facturatie](/nl/features/peppol).
+
 ## Tips
 
 - Stel je [e-mailsjablonen](/nl/settings/email) in voordat je je eerste factuur verstuurt

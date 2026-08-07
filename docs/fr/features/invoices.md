@@ -198,6 +198,22 @@ Si votre espace de travail utilise la numérotation manuelle, l'application vous
 
 Vous attendez encore votre numero de TVA de l'administration fiscale, ou vous beneficiez du regime de la franchise en base (KOR) ? Vous pouvez passer l'alerte et continuer malgre tout. Ajoutez votre numero de TVA des que vous l'avez.
 
+## Recevoir des factures d'autres utilisateurs MyCompanyDesk
+
+Lorsqu'un fournisseur qui utilise aussi MyCompanyDesk vous envoie une facture par e-mail, vous pouvez la recevoir directement comme dépense en brouillon structuré. Les montants sont tirés de la facture elle-même, donc aucune saisie manuelle n'est nécessaire. Le brouillon est toujours créé avec le statut "à vérifier" et n'est comptabilisé qu'après votre validation.
+
+Cette fonctionnalité est désactivée par défaut. Activez-la dans **Paramètres > Automatisations** (`/settings/automatisering`), rubrique **Factures d'autres utilisateurs MyCompanyDesk**. Vous pouvez la désactiver à tout moment au même endroit.
+
+Quand la fonctionnalité est active :
+
+- Chaque facture entrante apparaît comme dépense en brouillon dans **Dépenses**, déjà pré-remplie avec le nom du fournisseur et les montants des lignes.
+- La description indique l'espace de travail MyCompanyDesk expéditeur et que la facture est arrivée via MyCompanyDesk.
+- Une règle de fournisseur fiable peut pré-remplir la catégorie, mais le brouillon reste "à vérifier" pour éviter toute comptabilisation automatique.
+- La même facture ne peut jamais donner lieu à deux brouillons : un mécanisme dédoublonné dans la base de données bloque les doublons, même si l'expéditeur renvoie l'e-mail.
+- Pour protéger votre file de vérification, MyCompanyDesk limite chaque expéditeur à dix brouillons dans votre espace de travail par fenêtre glissante de 24 heures. Cette limite est définie dans `apps/api/src/modules/invoices/network-delivery.service.js#NETWORK_DAILY_PAIR_CAP`.
+
+La fonctionnalité est gratuite des deux côtés. Elle ne fonctionne que si le fournisseur envoie la facture à une boîte e-mail hébergée par MyCompanyDesk pour vous. Si vous préférez un canal réseau, vous pouvez aussi recevoir les factures fournisseurs via la [facturation électronique Peppol](/fr/features/peppol).
+
 ## Conseils
 
 - Configurez vos [modeles d'e-mail](/fr/settings/email) avant d'envoyer votre premiere facture

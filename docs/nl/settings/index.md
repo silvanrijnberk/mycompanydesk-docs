@@ -38,7 +38,7 @@ Gedeelde instellingen. Wijzigingen hier gelden voor iedereen in je werkruimte.
 | **Uitgavencategorieën** | Eigen uitgavecategorieën toevoegen, bewerken, archiveren of verwijderen; btw-behandeling en aftrekbare deel instellen |
 | **Bankkoppeling** | Je bank koppelen zodat transacties als conceptuitgaven binnenkomen |
 | **E-mail** | Vanaf welk adres je facturen en offertes verstuurt |
-| **Je website en domein** | Je eigen site en domeinnaam |
+| **Je website en domein** | Je eigen site en domeinnaam. Wijzigingen aan domein en DNS vereisen een teamadmin. |
 | **Onderdelen** | Zet delen van de app aan of uit: offertes, bonnetjes scannen, contracten, projecten, website, nieuwsbrieven |
 | **Mensen met toegang** | Nodig teamgenoten uit en bepaal wat ze kunnen zien en doen |
 | **Je boekhouder** | Nodig je boekhouder uit en beheer diens toegang |

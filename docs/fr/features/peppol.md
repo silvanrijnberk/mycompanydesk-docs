@@ -10,7 +10,9 @@ Envoyez des factures et des avoirs sous forme de factures electroniques structur
 
 La facturation electronique Peppol vous permet d'envoyer des factures et des avoirs comme factures electroniques structurees via le reseau Peppol, et de recevoir des factures d'achat de vos fournisseurs de la meme maniere. Quand vous envoyez une facture, vous choisissez par facture de la livrer par e-mail ou en tant que facture electronique via Peppol. La facture reste le meme document dans MyCompanyDesk; seul le canal de livraison change.
 
-L'envoi est utile lorsque votre client demande des factures electroniques. La reception place les factures fournisseurs directement dans vos depenses comme brouillons pre-remplis, prets a etre verifies.
+L'envoi est utile lorsque votre client demande des factures électroniques. La réception place les factures fournisseurs directement dans vos dépenses comme brouillons pré-remplis, prêts à être vérifiés.
+
+Si le fournisseur utilise également MyCompanyDesk, vous pouvez recevoir sa facture structurée directement sans passer par Peppol. Voir [Recevoir des factures d'autres utilisateurs MyCompanyDesk](/fr/features/invoices#recevoir-des-factures-dautres-utilisateurs-mycompanydesk).
 
 ## Disponibilite
 

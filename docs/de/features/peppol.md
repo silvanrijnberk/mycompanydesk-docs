@@ -12,6 +12,8 @@ Mit Peppol E-Rechnung senden Sie Rechnungen und Gutschriften als strukturierte E
 
 Senden ist nützlich, wenn Ihr Kunde E-Rechnungen wünscht. Empfangen wandelt Lieferantenrechnungen automatisch in vorausgefüllte Entwürfe um, die Sie nur noch prüfen müssen.
 
+Wenn der Lieferant ebenfalls MyCompanyDesk nutzt, können Sie seine strukturierte Rechnung auch direkt ohne Peppol empfangen. Siehe [Rechnungen von anderen MyCompanyDesk-Nutzern empfangen](/de/features/invoices#rechnungen-von-anderen-mycompanydesk-nutzern-empfangen).
+
 ## Verfügbarkeit
 
 Peppol E-Rechnung ist im Pro-Tarif verfügbar. Workspaces auf Free oder Starter sehen die Optionen zum E-Rechnungsversand und -empfang nicht.

@@ -12,6 +12,8 @@ Met Peppol e-facturatie verstuur je facturen en creditnota's als gestructureerde
 
 Versturen is handig als je klant om e-facturen vraagt. Ontvangen zet inkoopfacturen automatisch als conceptuitgave klaar, zodat je ze alleen nog hoeft te controleren.
 
+Als de leverancier ook MyCompanyDesk gebruikt, kun je zijn gestructureerde factuur ook direct ontvangen zonder Peppol. Zie [Facturen van andere MyCompanyDesk-gebruikers ontvangen](/nl/features/invoices#facturen-van-andere-mycompanydesk-gebruikers-ontvangen).
+
 ## Beschikbaarheid
 
 Peppol e-facturatie is beschikbaar op het Pro-abonnement. Werkruimtes op Free of Starter zien de opties voor e-factuurverzending en -ontvangst niet.

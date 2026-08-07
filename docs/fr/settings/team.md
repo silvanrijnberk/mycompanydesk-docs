@@ -74,7 +74,7 @@ MyCompanyDesk conserve désormais une vue d'ensemble des activités pour chaque 
 
 | Rôle | Description |
 |---|---|
-| **Administrateur** | Accès complet. Peut inviter et supprimer des membres, changer les rôles, gérer l'abonnement et modifier les paramètres de l'entreprise. |
+| **Administrateur** | Accès complet. Peut inviter et supprimer des membres, changer les rôles, gérer l'abonnement, modifier les paramètres de l'entreprise et gérer les domaines ainsi que le DNS. |
 | **Membre** | Accès à ce que l'administrateur accorde dans le panneau Gérer l'accès. |
 | **Comptable** | Un type de contact distinct. Reçoit l'accès via le parcours comptable plutôt que via l'invitation de membre. |
 

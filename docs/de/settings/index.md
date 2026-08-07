@@ -40,7 +40,7 @@ Geteilte Einstellungen. Änderungen hier gelten für alle in Ihrem Arbeitsbereic
 | **Ausgabenkategorien** | Eigene Ausgabenkategorien hinzufügen, bearbeiten, archivieren oder löschen; MwSt-Behandlung und abzugsfähiger Anteil einstellen |
 | **Bankverbindung** | Ihre Bank verbinden, damit Transaktionen als Entwurfsausgaben eingehen |
 | **E-Mail** | Von welcher Adresse Ihre Rechnungen und Angebote verschickt werden |
-| **Deine Website und Domain** | Ihre eigene Website und Ihr Domainname |
+| **Deine Website und Domain** | Ihre eigene Website und Ihr Domainname. Änderungen an Domain und DNS erfordern einen Team-Admin. |
 | **Module** | Teile der App ein- oder ausschalten: Angebote, Belegscan, Verträge, Projekte, Website, Newsletter |
 | **Personen mit Zugang** | Teamkollegen einladen und festlegen, was sie sehen und tun können |
 | **Ihr Steuerberater** | Ihren Steuerberater einladen und dessen Zugang verwalten |

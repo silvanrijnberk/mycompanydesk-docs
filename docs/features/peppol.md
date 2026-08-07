@@ -12,6 +12,8 @@ Peppol e-invoicing lets you send invoices and credit notes as structured e-invoi
 
 Sending is useful when your customer asks for e-invoices. Receiving puts supplier invoices straight into your expenses as drafts, ready for review.
 
+If the supplier also uses MyCompanyDesk, you can receive their structured invoice directly without using Peppol. See [Receiving invoices from other MyCompanyDesk users](/features/invoices#receiving-invoices-from-other-mycompanydesk-users).
+
 ## Availability
 
 Peppol e-invoicing is available on the Pro plan. Workspaces on Free or Starter do not see the e-invoice sending or receiving options.
