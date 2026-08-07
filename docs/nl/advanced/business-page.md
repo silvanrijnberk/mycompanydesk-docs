@@ -435,7 +435,7 @@ Wat gebeurt er bij verzenden:
 4. De aanvraag verschijnt bij **Offertes > Aanvragen**.
 5. De bezoeker ziet een aanpasbare succesmelding.
 
-Inzendingen via het contactformulier zijn beperkt tot 5 per minuut per IP-adres. Een Cloudflare Turnstile-widget verschijnt ook voordat de bezoeker verzendt, mits geconfigureerd op je werkruimte, en blokkeert geautomatiseerde botinzendingen zonder echte bezoekers te vertragen.
+Inzendingen via het contactformulier worden alleen geaccepteerd als de site is gepubliceerd: inzendingen aan een concept of ongepubliceerde werkruimte worden geweigerd. Ze zijn beperkt tot 5 per minuut per IP-adres en bovendien afgedekt door een per-bedrijf misbruikplafond, zodat één drukke bezoeker je meldingsbudget niet kan uitputten. Een Cloudflare Turnstile-widget verschijnt ook voordat de bezoeker verzendt, mits geconfigureerd op je werkruimte, en blokkeert geautomatiseerde botinzendingen zonder echte bezoekers te vertragen.
 
 ## Nieuwsbrief aanmelden
 

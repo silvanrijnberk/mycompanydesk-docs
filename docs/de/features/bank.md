@@ -64,7 +64,7 @@ Auf derselben Einstellungsseite steuern Sie das Verhalten des Feeds:
 - **Auto-Import**: das automatische Anlegen von Ausgabenentwürfen für den gesamten Arbeitsbereich ein- oder ausschalten.
 - **Smarte Kategorisierung**: MyCompanyDesk eine Kategorie für Transaktionen ohne Regel vorschlagen lassen.
 - **Eigene Überweisungen ignorieren**: Überweisungen zwischen Ihren eigenen verbundenen Konten überspringen.
-- **Belege per E-Mail anfragen**: Ein täglicher Durchlauf schickt Lieferanten eine gebündelte Anfrage für noch fehlende Belege. Jeder Lieferant wird pro Transaktion nur einmal gefragt.
+- **Belege per E-Mail anfragen**: Ein täglicher Durchlauf schickt Lieferanten eine gebündelte Anfrage für noch fehlende Belege. Jeder Lieferant wird pro Transaktion nur einmal gefragt. Mit der Option **Lieferanten automatisch an fehlende Belege erinnern** wird daraus eine wiederholte Erinnerung: nach der ersten Anfrage werden Lieferanten an Tag 7 und Tag 14 erneut kontaktiert, bis ein Beleg hochgeladen wurde. Ein Zähler bei der Einstellung zeigt, wie viele Zahlungen aktuell auf einen Belege warten.
 - **Mindestbetrag für den Import**: Transaktionen unter diesem Betrag werden keine Ausgaben.
 - **Standardkategorie**: die Kategorie, die greift, wenn nichts anderes passt.
 - **Buchungsdatum**: Wählen Sie, ob Ausgaben das Transaktionsdatum, das Wertstellungsdatum oder das Belegdatum verwenden.
@@ -80,6 +80,15 @@ Mit Regeln bringen Sie MyCompanyDesk bei, wiederkehrende Zahlungen zu kategorisi
 Das Stichwort wird mit der Beschreibung und dem Namen der Gegenpartei verglichen; Groß- und Kleinschreibung spielt keine Rolle. Passende Transaktionen erhalten die Kategorie der Regel und werden Ausgabenentwürfe. Regeln gelten für alle verbundenen Konten, jede Regel zeigt, wie oft sie getroffen hat, und Sie können eine Regel jederzeit bearbeiten oder löschen.
 
 Eine Regel prüft genau ein Stichwort. Bedingungen auf den Betrag werden nicht unterstützt, und Regeln legen Sie auf der Einstellungsseite an, nicht aus dem Transaktionsfeed heraus.
+
+## Vertrauensregeln für Lieferanten
+
+Wird derselbe Lieferant regelmäßig bezahlt, kann MyCompanyDesk diesen Lieferanten als vertrauenswürdig einstufen und die Entwurfsprüfung für passende Transaktionen überspringen. Sie steuern das auf der Einstellungsseite:
+
+- **Vertrauenswürdige Lieferanten aus bestätigten Entwürfen lernen**: wenn aktiviert, wird ein Lieferant als "vertrauenswürdiger Lieferant" eingestuft, sobald genügend bestätigte Entwürfe und passende Regelverwendung vorliegen.
+- **Vertrauenswürdige Lieferanten erfordern meine Prüfung**: wählen Sie, ob Transaktionen vertrauenswürdiger Lieferanten weiterhin in der Prüf-Warteschlange erscheinen oder automatisch gebucht werden.
+
+Ein Lieferant wird nur dann als vertrauenswürdig eingestuft, wenn ein starkes, konsistentes Muster bestätigter Zahlungen und eine aktive Kategorisierungsregel vorliegen. Sie können die Funktion jederzeit deaktivieren; dann wird alle bisher gelernte Lieferantenvertrauen gelöscht und jede Transaktion durchläuft wieder den normalen Prüfprozess.
 
 ## Der Transaktionsfeed
 
@@ -98,11 +107,12 @@ Das Verknüpfen bleibt meist ein manueller Schritt. MyCompanyDesk verknüpft jed
 
 ## Benachrichtigungen
 
-Unten auf der Einstellungsseite lassen sich drei Bankbenachrichtigungen unabhängig voneinander einschalten:
+Unten auf der Einstellungsseite lassen sich vier Bankbenachrichtigungen unabhängig voneinander einschalten:
 
 - **Synchronisationsfehler**: eine E-Mail und In-App-Benachrichtigung, wenn eine Bankverbindung nicht synchronisieren kann, mit einem Link zur Behebung.
 - **Wochenübersicht**: eine E-Mail am Montagmorgen mit der Bankaktivität der vergangenen Woche. Sie wird übersprungen, wenn es nichts zu berichten gab.
 - **Große Transaktionen**: eine Meldung, wenn eine Transaktion einen von Ihnen festgelegten Betrag erreicht oder überschreitet.
+- **Lieferantenregel gelernt**: eine In-App-Benachrichtigung, wenn MyCompanyDesk aus Ihren bestätigten Entwürfen eine neue vertrauenswürdige Lieferantenregel gelernt hat.
 
 ## Fehlerbehebung
 

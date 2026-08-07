@@ -64,7 +64,7 @@ Op dezelfde instellingenpagina bepaal je hoe de feed zich gedraagt:
 - **Auto-import naar Uitgaven**: het automatisch aanmaken van concept-uitgaven aan- of uitzetten voor de hele werkruimte.
 - **Slim categoriseren**: laat MyCompanyDesk een categorie voorstellen voor transacties zonder regel.
 - **Negeer eigen overboekingen**: overboekingen tussen je eigen gekoppelde rekeningen overslaan.
-- **Vraag bonnetje op via e-mail**: een dagelijkse ronde mailt leveranciers één gebundeld verzoek voor bonnetjes die nog missen. Elke leverancier wordt per transactie maar één keer gevraagd.
+- **Vraag bonnetje op via e-mail**: een dagelijkse ronde mailt leveranciers één gebundeld verzoek voor bonnetjes die nog missen. Elke leverancier wordt per transactie maar één keer gevraagd. Met **Automatisch herinneren aan bonnetje** zet je dit om in een herhaalde herinnering: na het eerste verzoek worden leveranciers op dag 7 en dag 14 opnieuw benaderd totdat een bonnetje is geüpload. Een teller bij de instelling toont hoeveel betalingen momenteel op een bonnetje wachten.
 - **Minimumbedrag voor import**: transacties onder dit bedrag worden geen uitgaven.
 - **Standaardcategorie**: de categorie die geldt als niets anders matcht.
 - **Boekingsdatum**: kies of uitgaven de transactiedatum, de valutadatum of de bondatum gebruiken.
@@ -80,6 +80,15 @@ Met regels leer je MyCompanyDesk hoe terugkerende betalingen gecategoriseerd moe
 Het trefwoord wordt vergeleken met de omschrijving en de naam van de tegenpartij; hoofdletters maken niet uit. Transacties die matchen krijgen de categorie van de regel en worden concept-uitgaven. Regels gelden voor alle gekoppelde rekeningen, elke regel toont hoe vaak hij heeft gematcht, en je kunt een regel altijd bewerken of verwijderen.
 
 Een regel matcht op één trefwoord. Voorwaarden op bedrag worden niet ondersteund, en regels maak je op de instellingenpagina, niet vanuit de transactiefeed.
+
+## Vertrouwde leveranciersregels
+
+Als je regelmatig dezelfde leverancier betaalt, kan MyCompanyDesk die leverancier leren vertrouwen en het controlestap voor concepten overslaan bij matchende transacties. Je beheert dit op de instellingenpagina:
+
+- **Leer vertrouwde leveranciers vanuit mijn bevestigde concepten**: wanneer ingeschakeld, wordt een leverancier 'vaste leverancier' na voldoende bevestigde concepten en gebruik van de bijbehorende categorisatieregel.
+- **Vertrouwde leveranciers vereisen mijn beoordeling**: kies of transacties van vaste leveranciers alsnog in de review-wachtrij verschijnen, of automatisch worden geboekt.
+
+Een leverancier wordt alleen vertrouwd bij een sterk, consistent patroon van bevestigde betalingen én een actieve categorisatieregel. Je kunt de functie altijd uitschakelen; dan wordt alle eerder opgedane leveranciersvertrouwen gewist en doorloopt elke transactie weer de normale controleflow.
 
 ## De transactiefeed
 
@@ -98,11 +107,12 @@ Het merendeel van het koppelen blijft een handmatige stap. MyCompanyDesk koppelt
 
 ## Meldingen
 
-Onderaan de instellingenpagina kun je drie bankmeldingen los van elkaar aanzetten:
+Onderaan de instellingenpagina kun je vier bankmeldingen los van elkaar aanzetten:
 
 - **E-mail bij sync-fout**: een e-mail en in-app melding wanneer een bankkoppeling niet kan synchroniseren, met een link om het op te lossen.
 - **Wekelijks overzicht**: een e-mail op maandagochtend met de bankactiviteit van de afgelopen week. Deze wordt overgeslagen als er niets te melden was.
 - **Push bij grote transactie**: een melding wanneer een transactie een door jou ingesteld bedrag bereikt of overschrijdt.
+- **Leveranciersregel geleerd**: een in-app melding wanneer MyCompanyDesk een nieuwe vaste-leveranciersregel heeft geleerd vanuit je bevestigde concepten.
 
 ## Problemen oplossen
 

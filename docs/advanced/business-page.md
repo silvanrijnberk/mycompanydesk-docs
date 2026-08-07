@@ -435,7 +435,7 @@ What happens on submit:
 4. The request appears in **Quotes > Requests**.
 5. The visitor sees a customizable success message.
 
-Contact-form submissions are rate-limited to 5 per minute per IP address. A Cloudflare Turnstile widget also appears before submit when configured on your workspace, blocking automated bot submissions without slowing real visitors down.
+Contact-form submissions are only accepted when the site has been published: submissions to a draft or unpublished workspace are rejected. They are rate-limited to 5 per minute per IP address and also guarded by a per-company abuse cap, so one busy visitor cannot exhaust your notification budget. A Cloudflare Turnstile widget also appears before submit when configured on your workspace, blocking automated bot submissions without slowing real visitors down.
 
 ## Newsletter signup
 

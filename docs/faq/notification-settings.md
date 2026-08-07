@@ -26,6 +26,8 @@ To manage your notification settings:
    - **Upcoming deadlines**: VAT, income tax, corporate tax, the KOR threshold, and contracts or projects that are about to expire. You get these well in advance so you are never late.
    - **New opportunities**: quote requests, signed quotes and website sales.
    - **New inbox message**: a ping on your phone whenever a customer or supplier emails.
+   - **Expense due**: upcoming due dates on expenses you created, such as scheduled rent or utility costs, so you can pay or record them on time.
+   - **Vendor rule learned**: an in-app alert when MyCompanyDesk learns a new trusted-vendor bank rule from your confirmed drafts.
    - **Tips and news from MyCompanyDesk**: at most one email per month.
    Critical messages about your account are always sent and cannot be turned off.
 3. On the same page you can also turn on push notifications for the device you are using

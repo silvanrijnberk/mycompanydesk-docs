@@ -65,7 +65,7 @@ On the same settings page you control how the feed behaves:
 - **Auto-import**: turn the automatic creation of draft expenses on or off for the whole workspace.
 - **Smart categorisation**: let MyCompanyDesk suggest a category for transactions without a rule.
 - **Ignore own transfers**: skip transfers between your own linked accounts.
-- **Ask for receipts by email**: a daily sweep emails suppliers one consolidated request for receipts that are still missing. Each supplier is asked only once per transaction.
+- **Ask for receipts by email**: a daily sweep emails suppliers one consolidated request for receipts that are still missing. Each supplier is asked only once per transaction. An **automatically chase suppliers for receipts** option turns this into a repeat reminder: after the first request, suppliers are re-contacted on day 7 and day 14 until a receipt is uploaded. A counter on the setting shows how many payments are currently waiting for a receipt.
 - **Minimum import amount**: transactions below this euro amount are not turned into expenses.
 - **Default category**: the fallback category when nothing else matches.
 - **Booking date**: choose whether expenses use the transaction date, the value date, or the receipt date.
@@ -81,6 +81,15 @@ Rules teach MyCompanyDesk how to categorise recurring payments. On the settings 
 The keyword is matched against the transaction description and the counterpart name; capitalisation does not matter. Matching transactions get the rule's category and become draft expenses. Rules apply to all linked accounts, each rule shows how often it has matched, and you can edit or delete a rule at any time.
 
 A rule matches on a single keyword. Amount conditions are not supported, and rules are created on the settings page, not from the transaction feed.
+
+## Vendor trust rules
+
+When the same supplier is paid regularly, MyCompanyDesk can learn to trust that vendor and skip the draft-review step for matching transactions. You control this on the settings page:
+
+- **Learn trusted suppliers from my confirmed drafts**: when enabled, a supplier becomes a "trusted vendor" after enough confirmed drafts and matching rule usage.
+- **Trusted vendors need my review**: choose whether trusted-vendor transactions still appear in the review queue, or are booked automatically.
+
+A vendor only becomes trusted when there is a strong, consistent pattern of confirmed payments and an active categorisation rule. You can disable the feature at any time; when disabled, all previously learned vendor trust is cleared and every transaction goes back through the normal review flow.
 
 ## The transaction feed
 
@@ -99,11 +108,12 @@ Most linking is still a manual step. MyCompanyDesk does, however, automatically 
 
 ## Notifications
 
-Three bank notifications can be switched on independently at the bottom of the settings page:
+Four bank notifications can be switched on independently at the bottom of the settings page:
 
 - **Sync errors**: an email and in-app notification when a bank connection fails to sync, with a link to fix it.
 - **Weekly digest**: a Monday morning email summarising the past week's bank activity. It is skipped when there was nothing to report.
 - **Large transactions**: an alert when a transaction meets or exceeds a euro threshold you set yourself.
+- **Vendor rule learned**: an in-app notification when MyCompanyDesk has learned a new trusted vendor rule from your confirmed drafts.
 
 ## Troubleshooting
 

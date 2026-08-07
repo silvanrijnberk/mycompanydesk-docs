@@ -26,6 +26,8 @@ Om je meldingsinstellingen te beheren:
    - **Deadline in aantocht**: BTW, inkomstenbelasting, vennootschapsbelasting, de KOR-grens, en aflopende contracten of projecten. Je krijgt ze ruim van tevoren, zodat je nooit te laat bent.
    - **Nieuwe kansen**: offerteaanvragen, ondertekende offertes en verkopen via je website.
    - **Nieuw bericht in je inbox**: een seintje op je telefoon zodra een klant of leverancier mailt.
+   - **Uitgave vervalt**: aankomende vervaldatums van uitgaven die je hebt aangemaakt, zoals geplande huur of nutskosten, zodat je ze op tijd kunt betalen of vastleggen.
+   - **Leveranciersregel geleerd**: een in-app melding wanneer MyCompanyDesk vanuit je bevestigde concepten een nieuwe vaste-leveranciersregel voor de bankfeed heeft geleerd.
    - **Tips en nieuws van MyCompanyDesk**: hooguit één mailtje per maand.
    Echt belangrijke berichten over je account sturen we altijd; die kun je niet uitzetten.
 3. Op dezelfde pagina zet je ook pushmeldingen aan voor het apparaat dat je gebruikt

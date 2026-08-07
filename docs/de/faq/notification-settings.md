@@ -26,6 +26,8 @@ So verwalten Sie Ihre Benachrichtigungseinstellungen:
    - **Anstehende Fristen**: MwSt., Einkommensteuer, Körperschaftsteuer, die Kleinunternehmer-Grenze, und auslaufende Verträge oder Projekte. Sie erhalten sie rechtzeitig vorab, damit Sie nie zu spät sind.
    - **Neue Chancen**: Angebotsanfragen, unterschriebene Angebote und Verkäufe über Ihre Website.
    - **Neue Nachricht im Posteingang**: ein Signal auf Ihrem Telefon, sobald ein Kunde oder Lieferant mailt.
+   - **Ausgabe fällig**: anstehende Fälligkeitstermine von Ausgaben, die Sie angelegt haben, wie z. B. geplante Miete oder Nebenkosten, damit Sie sie rechtzeitig bezahlen oder erfassen können.
+   - **Lieferantenregel gelernt**: eine In-App-Benachrichtigung, wenn MyCompanyDesk aus Ihren bestätigten Entwürfen eine neue vertrauenswürdige Lieferantenregel für den Bank-Feed gelernt hat.
    - **Tipps und Neuigkeiten von MyCompanyDesk**: höchstens eine E-Mail pro Monat.
    Wirklich wichtige Nachrichten zu Ihrem Konto senden wir immer; die können Sie nicht ausschalten.
 3. Auf derselben Seite aktivieren Sie auch Push-Benachrichtigungen für das Gerät, das Sie gerade nutzen
