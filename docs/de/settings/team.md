@@ -74,7 +74,7 @@ MyCompanyDesk führt für jeden verknüpften Steuerberater eine Aktivitätsüber
 
 | Rolle | Beschreibung |
 |---|---|
-| **Admin** | Vollzugriff. Kann Mitglieder einladen und entfernen, Rollen ändern, das Abonnement verwalten und Unternehmenseinstellungen bearbeiten. |
+| **Admin** | Vollzugriff. Kann Mitglieder einladen und entfernen, Rollen ändern, das Abonnement verwalten, Unternehmenseinstellungen bearbeiten und Domains sowie DNS verwalten. |
 | **Mitglied** | Zugriff auf das, was der Admin im Panel Zugang verwalten freigibt. |
 | **Steuerberater** | Ein eigener Kontakttyp. Erhält Zugang über den Steuerberater-Ablauf statt über die Mitgliedereinladung. |
 

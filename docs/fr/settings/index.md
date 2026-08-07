@@ -40,7 +40,7 @@ Paramètres partagés. Les modifications faites ici s'appliquent à tous les mem
 | **Catégories de dépense** | Ajouter, modifier, archiver ou supprimer vos propres catégories de dépense; définir le traitement TVA et le pourcentage déductible |
 | **Connexion bancaire** | Connecter votre banque pour que les transactions arrivent comme des dépenses brouillon |
 | **E-mail** | L'adresse depuis laquelle vos factures et devis sont envoyés |
-| **Votre site et domaine** | Votre propre site et votre nom de domaine |
+| **Votre site et domaine** | Votre propre site et votre nom de domaine. Les modifications du domaine et du DNS nécessitent un administrateur d'équipe. |
 | **Modules** | Activez ou désactivez des parties de l'application : devis, scan de reçus, contrats, projets, site web, newsletters |
 | **Personnes ayant accès** | Invitez des collègues et définissez ce qu'ils peuvent voir et faire |
 | **Votre comptable** | Invitez votre comptable et gérez son accès |

@@ -38,7 +38,7 @@ Shared settings. Changes here apply to everyone in your workspace.
 | **Uitgavencategorieën** (expense categories) | Add, edit, archive or delete custom expense categories; set VAT treatment and deduction percentage |
 | **Bankkoppeling** (bank connection) | Connect your bank so transactions arrive as draft expenses |
 | **E-mail** | The address your invoices and quotes are sent from |
-| **Je website en domein** (your website and domain) | Your own site and domain name |
+| **Je website en domein** (your website and domain) | Your own site and domain name. Domain and DNS changes require team admin. |
 | **Onderdelen** (features) | Switch parts of the app on or off: quotes, receipt scanning, contracts, projects, website, newsletters |
 | **Mensen met toegang** (people with access) | Invite teammates and set what they can see and do |
 | **Je boekhouder** (your accountant) | Invite your accountant and manage their access |

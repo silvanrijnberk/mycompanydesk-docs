@@ -74,7 +74,7 @@ MyCompanyDesk houdt voor elke gekoppelde boekhouder een activiteitsoverzicht bij
 
 | Rol | Beschrijving |
 |---|---|
-| **Admin** | Volledige toegang. Kan leden uitnodigen en verwijderen, rollen wijzigen, het abonnement beheren en bedrijfsinstellingen aanpassen. |
+| **Admin** | Volledige toegang. Kan leden uitnodigen en verwijderen, rollen wijzigen, het abonnement beheren, bedrijfsinstellingen aanpassen en domeinen en DNS beheren. |
 | **Lid** | Toegang tot wat de admin toekent in het paneel Toegang beheren. |
 | **Boekhouder** | Een apart type contact. Krijgt toegang via de boekhouderflow in plaats van de ledenuitnodiging. |
 

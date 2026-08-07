@@ -198,6 +198,22 @@ If your workspace uses manual numbering, the app also asks you to enter the invo
 
 If you are still waiting for your BTW-id from the Belastingdienst, or you are exempt under the small business scheme (KOR), you can acknowledge the gap and proceed anyway. You should add your BTW-id later once you have it.
 
+## Receiving invoices from other MyCompanyDesk users
+
+When a supplier who also uses MyCompanyDesk emails you an invoice, you can have it land straight in your expenses as a structured draft. The amounts come from the invoice itself, so there is no scanning or retyping. The draft is always created in review status and is not booked until you approve it.
+
+This feature is off by default. Turn it on at **Settings > Automations** (`/settings/automatisering`) under **Invoices from other MyCompanyDesk users**. You can switch it off at any time from the same place.
+
+When the feature is active:
+
+- Each incoming invoice appears as a draft expense under **Expenses** with the supplier name and the line totals already filled in.
+- The description shows which MyCompanyDesk workspace sent it and that it arrived via MyCompanyDesk.
+- Trusted-vendor rules may prefill the category, but the draft still stays in review so nothing is booked automatically.
+- The same invoice can never be turned into two drafts: a database-level deduplication guard blocks duplicates, even if the sender resends the email.
+- To protect your review queue, MyCompanyDesk limits each sender to at most ten drafts in your workspace per rolling 24-hour window. The cap is enforced in `apps/api/src/modules/invoices/network-delivery.service.js#NETWORK_DAILY_PAIR_CAP`.
+
+The feature is free on both sides. It only works when the supplier emails the invoice to a mailbox that MyCompanyDesk hosts for you. If you prefer a network-based channel, you can also receive supplier invoices through [Peppol e-invoicing](/features/peppol).
+
 ## Tips
 
 - Set up your [email templates](/settings/email) before sending your first invoice

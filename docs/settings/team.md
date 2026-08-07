@@ -74,7 +74,7 @@ MyCompanyDesk now keeps an activity overview for each connected accountant. It r
 
 | Role | Description |
 |---|---|
-| **Admin** | Full access. Can invite/remove members, change roles, manage billing, edit company settings. |
+| **Admin** | Full access. Can invite/remove members, change roles, manage billing, edit company settings, and manage domains and DNS. |
 | **Member** | Access to whatever the admin grants in the Manage Access drawer. |
 | **Accountant** | A separate type of contact. Granted access via the accountant flow rather than the member invite. |
 
