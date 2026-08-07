@@ -1,6 +1,6 @@
 ---
 title: "Paramètres de notification"
-last_verified: 2026-08-06
+last_verified: 2026-08-07
 chatbot:
   triggers:
     - "notifications"
@@ -68,12 +68,16 @@ Tant que Ne pas déranger est actif, les notifications push sont retenues, mais 
 
 Cliquer sur une notification ouvre un panneau à droite avec le contexte complet de cette notification. Pour une facture en retard, vous voyez le total, le montant restant dû, le statut de paiement et la date de facturation. Pour une échéance de TVA, vous voyez la période et la date d'échéance. Pour les notifications groupées, le panneau liste les factures, devis ou enregistrements individuels derrière le résumé.
 
-Le panneau affiche aussi les actions qui ont du sens pour cette notification :
+Les actions pour cette notification sont classées afin que la plus importante apparaisse en premier et soit mise en évidence comme action principale. Les autres restent sur la même ligne. S'il y a plus d'actions que l'espace ne le permet, les actions supplémentaires sont regroupées derrière un bouton **Plus** (trois points). Appuyez dessus pour voir les actions restantes sans fermer le panneau.
+
+Les actions disponibles dépendent de la notification:
 
 - **Marquer comme payée**: enregistre un paiement manuel pour le solde restant et clôt la notification de facture.
 - **Marquer comme déclarée**: marque la période de TVA comme déclarée; s'affiche uniquement pour les notifications d'échéance de TVA.
-- **Reporter**: diffère temporairement la notification sans la marquer comme lue.
-- **Ignorer**: supprime la notification de votre propre liste de non-lues.
+- **Envoyer un rappel**: envoie un rappel de paiement pour la facture, affiché pour les factures en retard.
+- **Ouvrir**: ouvre l'enregistrement sous-jacent, comme la facture, le devis ou le contrat.
+- **Reporter** (ou **Plus tard**): diffère temporairement la notification sans la marquer comme lue.
+- **Ignorer** (ou l'icône **X**): supprime la notification de votre propre liste de non-lues. Sur un téléphone, la même icône de fermeture se trouve en haut à droite de la superposition de détail, afin qu'elle ne recouvre pas le montant.
 
 Les notes de version et les astuces n'ont pas de panneau de détail, car il n'y a aucun enregistrement sous-jacent sur lequel agir.
 
