@@ -435,7 +435,7 @@ Was beim Absenden passiert:
 4. Die Anfrage erscheint unter **Angebote > Anfragen**.
 5. Der Besucher sieht eine anpassbare Erfolgsmeldung.
 
-Kontaktformular-Einreichungen sind auf 5 pro Minute pro IP-Adresse begrenzt. Ein Cloudflare-Turnstile-Widget erscheint vor dem Absenden, wenn es in Ihrem Workspace konfiguriert ist, und blockiert automatisierte Bot-Einreichungen, ohne echte Besucher zu verlangsamen.
+Kontaktformular-Einreichungen werden nur akzeptiert, wenn die Site veröffentlicht ist: Einreichungen an einen Entwurf oder einen unveröffentlichten Workspace werden abgelehnt. Sie sind auf 5 pro Minute pro IP-Adresse begrenzt und zusätzlich durch ein pro Unternehmen geltendes Missbrauchslimit abgesichert, sodass ein einzelner aktiver Besucher Ihr Benachrichtigungsbudget nicht ausschöpfen kann. Ein Cloudflare-Turnstile-Widget erscheint vor dem Absenden, wenn es in Ihrem Workspace konfiguriert ist, und blockiert automatisierte Bot-Einreichungen, ohne echte Besucher zu verlangsamen.
 
 ## Newsletter-Anmeldung
 

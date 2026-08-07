@@ -64,7 +64,7 @@ Sur la même page de réglages, vous contrôlez le comportement du flux :
 - **Import automatique** : activer ou désactiver la création automatique de brouillons de dépenses pour tout l'espace de travail.
 - **Catégorisation intelligente** : laisser MyCompanyDesk suggérer une catégorie pour les transactions sans règle.
 - **Ignorer les virements internes** : passer les virements entre vos propres comptes reliés.
-- **Demander les justificatifs par e-mail** : un passage quotidien envoie aux fournisseurs une demande groupée pour les justificatifs manquants. Chaque fournisseur n'est sollicité qu'une fois par transaction.
+- **Demander les justificatifs par e-mail** : un passage quotidien envoie aux fournisseurs une demande groupée pour les justificatifs manquants. Chaque fournisseur n'est sollicité qu'une fois par transaction. L'option **Relancer automatiquement les fournisseurs pour les justificatifs** transforme ce premier envoi en relance répétée : après la première demande, les fournisseurs sont recontactés au jour 7 et au jour 14 jusqu'à ce qu'un justificatif soit téléversé. Un compteur à côté du réglage indique combien de paiements attendent actuellement un justificatif.
 - **Montant minimum d'import** : les transactions sous ce montant ne deviennent pas des dépenses.
 - **Catégorie par défaut** : la catégorie appliquée quand rien d'autre ne correspond.
 - **Date de comptabilisation** : choisissez si les dépenses utilisent la date de transaction, la date de valeur ou la date du justificatif.
@@ -80,6 +80,15 @@ Les règles apprennent à MyCompanyDesk comment catégoriser les paiements récu
 Le mot-clé est comparé à la description et au nom de la contrepartie ; les majuscules n'ont pas d'importance. Les transactions correspondantes reçoivent la catégorie de la règle et deviennent des brouillons de dépenses. Les règles s'appliquent à tous les comptes reliés, chaque règle indique combien de fois elle a correspondu, et vous pouvez modifier ou supprimer une règle à tout moment.
 
 Une règle porte sur un seul mot-clé. Les conditions sur le montant ne sont pas prises en charge, et les règles se créent sur la page de réglages, pas depuis le flux de transactions.
+
+## Règles de confiance fournisseurs
+
+Lorsqu'un même fournisseur est payé régulièrement, MyCompanyDesk peut apprendre à lui faire confiance et sauter l'étape de vérification des brouillons pour les transactions correspondantes. Vous contrôlez cela sur la page de réglages :
+
+- **Apprendre les fournisseurs de confiance depuis mes brouillons confirmés** : lorsque cette option est activée, un fournisseur devient un "fournisseur de confiance" après suffisamment de brouillons confirmés et d'utilisation de la règle de catégorisation associée.
+- **Les fournisseurs de confiance nécessitent ma vérification** : choisissez si les transactions de fournisseurs de confiance apparaissent quand même dans la file de vérification, ou si elles sont comptabilisées automatiquement.
+
+Un fournisseur ne devient digne de confiance que s'il présente un motif fort et constant de paiements confirmés et qu'une règle de catégorisation active existe. Vous pouvez désactiver la fonction à tout moment ; dans ce cas, toute la confiance précédemment acquise est effacée et chaque transaction repasse par le flux de vérification normal.
 
 ## Le flux de transactions
 
@@ -98,11 +107,12 @@ L'association reste le plus souvent manuelle. MyCompanyDesk associe toutefois au
 
 ## Notifications
 
-En bas de la page de réglages, trois notifications bancaires s'activent indépendamment :
+En bas de la page de réglages, quatre notifications bancaires s'activent indépendamment :
 
 - **Erreurs de synchronisation** : un e-mail et une notification dans l'application quand une connexion bancaire ne parvient pas à synchroniser, avec un lien pour corriger.
 - **Résumé hebdomadaire** : un e-mail le lundi matin résumant l'activité bancaire de la semaine écoulée. Il est sauté quand il n'y a rien à signaler.
 - **Grosses transactions** : une alerte quand une transaction atteint ou dépasse un montant que vous fixez vous-même.
+- **Règle fournisseur apprise** : une notification dans l'application quand MyCompanyDesk a appris une nouvelle règle de fournisseur de confiance à partir de vos brouillons confirmés.
 
 ## Dépannage
 

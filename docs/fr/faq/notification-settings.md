@@ -26,6 +26,8 @@ Pour gérer vos paramètres de notification :
    - **Échéances à venir** : TVA, impôt sur le revenu, impôt sur les sociétés, seuil micro-entreprise, et contrats ou projets qui arrivent à expiration. Vous les recevez bien à l'avance pour ne jamais être en retard.
    - **Nouvelles opportunités** : demandes de devis, devis signés et ventes via votre site web.
    - **Nouveau message dans votre boîte de réception** : une alerte sur votre téléphone dès qu'un client ou fournisseur vous écrit.
+   - **Dépense à échéance** : échéances à venir des dépenses que vous avez créées, comme un loyer ou des charges planifiés, pour que vous puissiez les payer ou les enregistrer à temps.
+   - **Règle fournisseur apprise** : une alerte dans l'application quand MyCompanyDesk a appris une nouvelle règle de fournisseur de confiance pour le flux bancaire à partir de vos brouillons confirmés.
    - **Conseils et actualités de MyCompanyDesk** : au maximum un e-mail par mois.
    Les messages vraiment importants concernant votre compte sont toujours envoyés; vous ne pouvez pas les désactiver.
 3. Sur la même page, vous pouvez aussi activer les notifications push pour l'appareil que vous utilisez

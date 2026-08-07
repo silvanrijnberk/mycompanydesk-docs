@@ -435,7 +435,7 @@ Ce qui se passe lors de l'envoi :
 4. La demande apparait dans **Devis > Demandes**.
 5. Le visiteur voit un message de succes personnalisable.
 
-Les soumissions du formulaire de contact sont limitees a 5 par minute par adresse IP. Un widget Cloudflare Turnstile apparait egalement avant l'envoi lorsqu'il est configure sur votre espace de travail, bloquant les soumissions automatisees de bots sans ralentir les vrais visiteurs.
+Les soumissions du formulaire de contact ne sont acceptees que si le site a ete publie : les soumissions vers un brouillon ou un espace de travail non publie sont refusees. Elles sont limitees a 5 par minute par adresse IP et protegees par un plafond d'abus par entreprise, de sorte qu'un visiteur tres actif ne peut pas epuiser votre budget de notifications. Un widget Cloudflare Turnstile apparait egalement avant l'envoi lorsqu'il est configure sur votre espace de travail, bloquant les soumissions automatisees de bots sans ralentir les vrais visiteurs.
 
 ## Inscription a la newsletter
 
