@@ -44,6 +44,8 @@ Auf dem Telefon oder Tablet können Sie eine Zeile swipen, um schnell zu handeln
 
 Sie können die Liste mit der Tastatur steuern: Pfeiltasten verschieben die Auswahl, Enter oder Leertaste öffnen die ausgewählte Benachrichtigung, Esc schließt den Bereich. Der Bereich liegt über anderer schwebender UI, damit der Fokus darin bleibt, solange er geöffnet ist.
 
+Während die Liste beim ersten Öffnen lädt, erscheinen graue Platzhalterzeilen in der Form echter Benachrichtigungen statt eines Spinners, damit sich das Layout nicht verschiebt, wenn die echten Zeilen eintreffen. Wenn Sie eine Zeile verwerfen oder snoozen, gleiten die darunter liegenden Zeilen nach oben, anstatt zu schnappen. Eine eingeklappte Gruppe klappt animiert auf.
+
 ## Eine Benachrichtigung snoozen
 
 Sie können eine Handlungsbenachrichtigung vorübergehend verschieben, ohne sie als gelesen zu markieren. Klicken Sie auf die Glocke, um die Liste zu öffnen, und wählen Sie bei der gewünschten Benachrichtigung **Snooze**. Sie können snoozen bis:
@@ -67,6 +69,8 @@ Solange Nicht stören aktiv ist, werden Push-Benachrichtigungen zurückgehalten,
 ## Das Detailpanel
 
 Ein Klick auf eine Benachrichtigung öffnet ein rechts angeordnetes Panel mit dem vollständigen Kontext dieses Elements. Bei einer überfälligen Rechnung sehen Sie den Gesamtbetrag, den offenen Betrag, den Zahlungsstatus und das Rechnungsdatum. Bei einer MwSt.-Frist sehen Sie den Zeitraum und das Fälligkeitsdatum. Bei zusammengefassten Benachrichtigungen listet das Panel die einzelnen Rechnungen, Angebote oder Datensätze hinter der Zusammenfassung auf.
+
+Das Panel wartet, bis der zugrunde liegende Datensatz geladen ist, bevor es wechselt. Bis dahin bleibt die vorherige Benachrichtigung sichtbar und ihre Schaltflächen sind inaktiv, damit sich nichts unter dem Cursor verschiebt. Sobald der Datensatz bereit ist, blendet das Panel in einem Schritt zur neuen Benachrichtigung über.
 
 Die Aktionen für dieses Element werden so sortiert, dass die wichtigste Aktion zuerst steht und als Hauptaktion hervorgehoben wird. Die restlichen Aktionen bleiben in derselben Zeile. Wenn mehr Aktionen vorhanden sind als Platz im Panel, werden die weiteren Aktionen hinter einer **Mehr**-Schaltfläche (drei Punkte) verborgen. Tippen Sie darauf, um die restlichen Aktionen zu sehen, ohne den Bereich zu schließen.
 
