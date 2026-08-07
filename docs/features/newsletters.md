@@ -34,7 +34,7 @@ You can add a single subscriber, paste a batch of email addresses, import from y
 
 ## Creating a campaign
 
-1. Go to the Campaigns tab and click **New issue** (or start from the wizard).
+1. Go to the Campaigns tab and click **New issue**.
 2. Enter a subject and preview text. The preview text appears under the subject in many inboxes.
 3. Build the body with blocks. Use the hero block for a headline, add text, images, and a call-to-action button.
 4. Optionally override the footer text; otherwise the app uses the sender address saved in your newsletter settings.
@@ -60,7 +60,7 @@ Below the totals the page lists every recipient. You can search by name or email
 
 A message marked **Sent** means it left our system. It only becomes **Delivered** when your email provider reports back that the mailbox accepted it. Some providers or sending paths do not return that feedback. In that case the page shows a note explaining that every recipient was handed to the provider, but whether the mailbox accepted it is not yet known.
 
-This distinction matters for older campaigns sent before the feedback tracking was added, and for any path where telemetry is unavailable. The app never reports a message as Delivered without evidence.
+This distinction matters for older campaigns sent before the feedback tracking was added, and for any path where delivery feedback is unavailable. The app never reports a message as Delivered without evidence.
 
 ## Before you can send
 

@@ -34,7 +34,7 @@ Vous pouvez ajouter un seul abonné, coller une liste d'adresses e-mail, importe
 
 ## Créer une campagne
 
-1. Allez dans l'onglet Campagnes et cliquez sur **Nouveau numéro** (ou démarrez avec l'assistant).
+1. Allez dans l'onglet Campagnes et cliquez sur **Nouveau numéro**.
 2. Saisissez un objet et un texte d'aperçu. Le texte d'aperçu apparaît sous l'objet dans de nombreuses boîtes de réception.
 3. Construisez le contenu avec des blocs. Utilisez un bloc hero pour un titre, et ajoutez du texte, des images et un bouton d'appel à l'action.
 4. Remplacez éventuellement le texte du pied de page ; sinon, l'application utilise l'adresse d'expéditeur enregistrée dans vos paramètres newsletter.

@@ -34,7 +34,7 @@ Sie können einen einzelnen Abonnenten hinzufügen, eine Liste mit E-Mail-Adress
 
 ## Eine Kampagne erstellen
 
-1. Gehen Sie zum Tab Kampagnen und klicken Sie auf **Neue Ausgabe** (oder starten Sie den Assistenten).
+1. Gehen Sie zum Tab Kampagnen und klicken Sie auf **Neue Ausgabe**.
 2. Geben Sie einen Betreff und einen Vorschautext ein. Der Vorschautext erscheint unter dem Betreff in vielen Posteingängen.
 3. Bauen Sie den Inhalt mit Blöcken auf. Verwenden Sie einen Hero-Block für eine Überschrift, und fügen Sie Text, Bilder und einen Call-to-Action-Button hinzu.
 4. Überschreiben Sie bei Bedarf den Footer-Text; andernfalls verwendet die App die Absenderadresse aus Ihren Newsletter-Einstellungen.

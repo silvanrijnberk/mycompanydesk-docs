@@ -34,7 +34,7 @@ Je kunt een enkele abonnee toevoegen, een lijst met e-mailadressen plakken, abon
 
 ## Een campagne maken
 
-1. Ga naar het tabblad Campagnes en klik op **Nieuwe brief** (of start met de wizard).
+1. Ga naar het tabblad Campagnes en klik op **Nieuwe brief**.
 2. Vul een onderwerp en voorvertoningstekst in. De voorvertoningstekst verschijnt onder het onderwerp in veel mailboxen.
 3. Bouw de inhoud met blokken. Gebruik een kopblok voor een titel, en voeg tekst, afbeeldingen en een call-to-action knop toe.
 4. Overschrijf desgewenst de footertekst; anders gebruikt de app het adres uit je nieuwsbriefinstellingen.
@@ -60,7 +60,7 @@ Onder de totalen vind je de lijst met alle ontvangers. Je kunt zoeken op naam of
 
 Een bericht dat **Verzonden** staat, is ons systeem uitgegaan. Het wordt pas **Afgeleverd** wanneer je e-mailprovider terugmeldt dat de mailbox het heeft geaccepteerd. Sommige providers of verzendpaden geven die terugkoppeling niet. In dat geval toont de pagina een melding dat de brief voor elke ontvanger is aangeboden, maar dat nog niet bekend is of de mailbox hem heeft aangenomen.
 
-Dit onderscheid is belangrijk voor oudere campagnes die zijn verstuurd voordat de terugkoppeling bestond, en voor paden waar geen telemetry beschikbaar is. De app rapporteert nooit iets als afgeleverd zonder bewijs.
+Dit onderscheid is belangrijk voor oudere campagnes die zijn verstuurd voordat de terugkoppeling bestond, en voor paden waar geen terugkoppeling beschikbaar is. De app rapporteert nooit iets als afgeleverd zonder bewijs.
 
 ## Voordat je kunt versturen
 
