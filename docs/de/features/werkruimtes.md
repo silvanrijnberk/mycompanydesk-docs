@@ -1,6 +1,6 @@
 ---
 title: Arbeitsbereiche
-last_verified: 2026-08-06
+last_verified: 2026-08-08
 ---
 
 # Arbeitsbereiche
@@ -15,6 +15,7 @@ Die Seite "Arbeitsbereiche" unter `/werkruimtes` ist ein zentraler Ort fuer alle
 - Derselbe Wechsler befindet sich auch in der Kopfzeile des mobilen Menüs, sodass Sie die Uebersicht von jedem Bildschirm aus an derselben Stelle erreichen.
 - Die alte URL `/boekhouder` leitet hierhin weiter.
 - Der Arbeitsbereich-Wechsler zeigt jetzt oben eine Uebersichtszeile. Eigene Unternehmen und Mandanten-Administrationen sind getrennt gruppiert, und sobald Sie mehr als acht Arbeitsbereiche haben, erscheint ein Suchfeld.
+- Jede Zeile zeigt das eigene Kennzeichen des Arbeitsbereichs: das Logo oder ein farbiges Initialienfeld. Eigene Unternehmen tragen ihre Farbe; Mandanten-Administrationen bleiben neutral. Der Arbeitsbereich, in dem Sie sich gerade befinden, wird hervorgehoben.
 
 ## Wenn Sie einen Arbeitsbereich haben
 

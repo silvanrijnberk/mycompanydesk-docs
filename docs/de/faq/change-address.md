@@ -1,6 +1,6 @@
 ---
 title: "Firmenadresse ändern"
-last_verified: 2026-07-02
+last_verified: 2026-08-08
 chatbot:
   triggers:
     - "change address"
@@ -24,7 +24,7 @@ chatbot:
 
 So ändern Sie Ihre Firmenadresse:
 1. Gehen Sie zu Einstellungen → „Unternehmensdaten"
-2. Nutzen Sie dort die Adresshilfe, um die neue Adresse zu suchen und zu übernehmen
+2. Nutzen Sie dort die Adresshilfe, um die neue Adresse zu suchen und zu übernehmen. Kann die Hilfe die Adresse nicht vollständig auflösen, geben Sie Postleitzahl und Ort selbst ein.
 3. Neue Dokumente verwenden danach die aktualisierte Adresse
 
 Hinweis: Bereits ausgestellte Dokumente behalten die Adresse, die sie schon hatten.

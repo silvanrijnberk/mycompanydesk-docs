@@ -1,6 +1,6 @@
 ---
 title: Workspaces
-last_verified: 2026-08-06
+last_verified: 2026-08-08
 ---
 
 # Workspaces
@@ -15,6 +15,7 @@ The Workspaces page at `/werkruimtes` is one central place for everything you ma
 - The same switcher lives in the mobile menu header, so you reach the workspaces overview from one place on every screen size.
 - The old `/boekhouder` URL redirects here.
 - The workspace switcher now shows an overview row at the top. Your own businesses and any client administrations are grouped separately, and a search field appears once you hold more than eight workspaces.
+- Each row shows the workspace's own mark: its logo, or a coloured initials tile. Your own businesses carry their colour; client administrations stay neutral. The workspace you are currently in is highlighted.
 
 ## If you have one workspace
 

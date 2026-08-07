@@ -1,6 +1,6 @@
 ---
 title: Werkruimtes
-last_verified: 2026-08-06
+last_verified: 2026-08-08
 ---
 
 # Werkruimtes
@@ -15,6 +15,7 @@ De pagina Werkruimtes (`/werkruimtes`) is één centrale plek voor alles wat je 
 - Dezelfde kiezer zit ook in de header van het mobiele menu, dus je bereikt het overzicht vanaf elk scherm op dezelfde plek.
 - Het oude `/boekhouder`-adres verwijst hierheen door.
 - De werkruimtekiezer toont nu bovenaan een overzichtsregel. Eigen bedrijven en klantadministraties staan in aparte groepen, en zodra je meer dan acht werkruimtes hebt, verschijnt er een zoekveld.
+- Elke rij toont het eigen merkteken van de werkruimte: het logo, of een gekleurde tegel met initialen. Eigen bedrijven krijgen hun kleur; klantadministraties blijven neutraal. De werkruimte waarin je nu zit, wordt uitgelicht.
 
 ## Als je één werkruimte hebt
 

@@ -1,6 +1,6 @@
 ---
 title: "Modifier votre adresse"
-last_verified: 2026-07-02
+last_verified: 2026-08-08
 chatbot:
   triggers:
     - "change address"
@@ -24,7 +24,7 @@ chatbot:
 
 Pour changer l'adresse de votre entreprise :
 1. Allez dans Paramètres → « Données de l'entreprise »
-2. Utilisez l'aide d'adresse pour rechercher puis appliquer la nouvelle adresse
+2. Utilisez l'aide d'adresse pour rechercher puis appliquer la nouvelle adresse. Si l'aide ne peut pas résoudre l'adresse complètement, saisissez le code postal et la ville vous-même.
 3. Les nouveaux documents utiliseront ensuite l'adresse mise à jour
 
 Remarque : les documents déjà émis conservent l'adresse qu'ils avaient.
