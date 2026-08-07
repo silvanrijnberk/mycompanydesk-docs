@@ -22,16 +22,28 @@ Häufige Anwendungsfälle:
 
 1. Gehen Sie zu **Wiederkehrende Ausgaben > Neu**
 2. Füllen Sie die Vorlage aus:
-   - **Beschreibung** — Wofür die Ausgabe ist
-   - **Betrag** — Die wiederkehrenden Kosten
-   - **Kategorie** — Ausgabenkategorie
-   - **USt.-Satz** — Anwendbare USt.
-   - **Häufigkeit** — Wöchentlich, monatlich, vierteljährlich oder jährlich
+   - **Beschreibung**: wofür die Ausgabe ist
+   - **Lieferant**: freier Lieferantenname, mit Autocomplete für bereits verwendete Lieferanten
+   - **Land** und **Handelsregisternummer (KVK)**: optionale Felder für die Lieferantenidentität; wenn ausgefüllt, werden sie in jede aus dieser Vorlage erstellte Ausgabe übernommen
+   - **Betrag**: die wiederkehrenden Kosten
+   - **Kategorie**: Ausgabenkategorie
+   - **USt.-Satz**: anwendbare USt.
+   - **USt.-Behandlung**: wie die Ausgabe in der USt.-Erklärung behandelt wird
+   - **Häufigkeit**: wöchentlich, monatlich, vierteljährlich oder jährlich
 3. Klicken Sie auf **Speichern**
 
 ::: tip Weitere Optionen
-Im Formular für neue wiederkehrende Ausgaben bleiben optionale Angaben unter **Weitere Optionen** verborgen. Notizen stehen dort standardmäßig; klappen Sie den Abschnitt aus, wenn Sie sie ergänzen möchten.
+Im Formular für wiederkehrende Ausgaben bleiben optionale Angaben unter **Weitere Optionen** verborgen. Notizen und die Lieferantenidentität stehen dort standardmäßig; klappen Sie den Abschnitt aus, wenn Sie sie ergänzen möchten.
 :::
+
+### Lieferantenidentität
+
+Wenn Sie Lieferantenname, Land und KVK-Nummer in einer wiederkehrenden Vorlage hinterlegen, hat das zwei Auswirkungen:
+
+- **Lieferantenvorschläge** greifen auf die hinterlegte Identität zurück, sodass Sie denselben Lieferanten nicht jeden Monat erneut auswählen müssen.
+- **Generierte Ausgaben** übernehmen dieselbe Lieferantenidentität wie die Vorlage. Dadurch wird die Regelung für innergemeinschaftliche Lieferungen oder nicht-EU-Lieferanten genauso automatisch angewendet wie bei manuell erfassten Ausgaben.
+
+Wenn Sie den Lieferantennamen später ändern und er passt nicht mehr zum hinterlegten KVK-Eintrag, werden die Felder für KVK-Nummer und Land geleert. So verhindert das Formular, dass veraltete Identitätsdaten weiterhin bestehen.
 
 ## Häufigkeitsoptionen
 
@@ -61,6 +73,7 @@ Entfernen Sie die Vorlage. Bereits generierte Ausgaben bleiben in Ihren Unterlag
 Jede generierte Ausgabe:
 
 - Entspricht dem Betrag, der Kategorie und den USt.-Einstellungen der Vorlage
+- Übernimmt die Lieferantenidentität der Vorlage (Name, Land und KVK-Nummer), sofern diese Felder ausgefüllt sind
 - Wird auf das geplante Vorkommensdatum datiert
 - Kann nach der Erstellung unabhängig bearbeitet werden
 
