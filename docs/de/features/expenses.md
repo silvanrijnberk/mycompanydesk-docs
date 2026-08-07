@@ -175,6 +175,14 @@ Importieren Sie Ausgaben aus CSV:
 4. Ordnen Sie Spalten den Feldern zu
 5. Überprüfen und bestätigen Sie
 
+## Meldungen bei abweichendem Zahlungsmuster
+
+MyCompanyDesk beobachtet Lieferanten, die normalerweise monatlich eine Rechnung stellen, aber jetzt nichts mehr liefern. Wenn ein Lieferant Ausgaben in drei verschiedenen Monaten hatte und danach etwa 50 Tage lang keine bestätigte Ausgabe mehr, erstellt das System eine Benachrichtigung mit der Frage, ob Ihnen eine Rechnung fehlt.
+
+Die Prüfung zählt nur bestätigte Ausgaben. Ausgabenentwürfe oder noch nicht bestätigte Ausgaben gelten nicht als "wir haben eine Rechnung gesehen", sodass ein unbestätigter Import die Meldung nicht stoppt. Das Ziel ist, eine fehlende wiederkehrende Rechnung aufzufangen, bevor sie Ihre Buchhaltung durcheinanderbringt.
+
+Wenn Sie die Meldung öffnen, können Sie die fehlende Ausgabe direkt erfassen oder abweisen, wenn die Stille erwartet war.
+
 ## Tipps
 
 - Legen Sie Ihren Standard-USt.-Satz, Ihre Standard-Ausgabenkategorie und Ihre Standard-Zahlungsmethode fur Ausgaben unter **Arbeitsbereichseinstellungen** fest, damit das Formular nicht jedes Mal leer startet. Eine 0-%-Einstellung funktioniert korrekt; das Formular behandelt sie als bewusste Wahl.

@@ -102,6 +102,17 @@ Each request shows:
 3. Click **Create Quote** to generate a quote for this customer
 4. The quote is pre-filled with the customer's information
 
+### AI concept quote from a request
+
+When a customer submits a quote request through your site builder or contact form, MyCompanyDesk can draft a concept quote automatically. The AI reads the request text and your own catalog, then proposes line items it can match.
+
+- Matched catalog items keep their catalog price, VAT rate and unit. The AI only suggests quantities.
+- Work that does not fit the catalog becomes a description-only line at price 0, so you can price it yourself.
+- The draft is created as a quote in **Draft** status. It is not sent automatically and no customer record is created from the unverified form.
+- A notification tells you a concept quote is ready. Open the request, review the lines, link or create the customer, and send it when you are ready.
+
+This is a best-effort draft, not a finished proposal. Always check the prices and descriptions before sending.
+
 ## Bulk actions
 
 - **Send** — Send multiple quotes at once

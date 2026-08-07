@@ -38,6 +38,14 @@ The preview also tells you if any items are skipped because they do not have a p
 - Existing invoices, quotes, and contracts keep the prices they were created with.
 - You can undo a change right after applying it. A single undo reverses the whole batch in one step.
 
+## Inflation hint when editing one item
+
+When you edit a single catalog item with a fixed price, an inflation hint may appear next to the price field. It measures from the date that price was last set (or from when the item was created, if the price never changed). Undo actions do not count as a new price decision, so the hint stays anchored to a real pricing moment.
+
+The hint shows price-index readings as clickable suggestions. Each row displays the period it covers, the percentage change, and what your current price would become if you applied it. Click a suggestion to fill that new amount into the price field. You still save the item yourself, so you always review the change before it lands.
+
+The hint only appears in edit mode and only for items with a fixed price. Price-on-request items and brand-new items have no history to measure from, so they do not show it.
+
 ## Print a price list
 
 You can also print your catalog as a customer-facing price list. Open **Aanbod** and click **Price list** to open `/aanbod/prijslijst`.

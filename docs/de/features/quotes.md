@@ -102,6 +102,17 @@ Jede Anfrage zeigt:
 3. Klicken Sie auf **Angebot erstellen**, um ein Angebot für diesen Kunden zu generieren
 4. Das Angebot wird mit den Kundeninformationen vorausgefüllt
 
+### KI-Konzeptangebot aus einer Anfrage
+
+Wenn ein Kunde über Ihren Website-Builder oder Ihr Kontaktformular eine Angebotsanfrage einreicht, kann MyCompanyDesk automatisch ein Konzeptangebot entwerfen. Die KI liest den Anfragetext und Ihren eigenen Katalog und schlägt passende Positionen vor.
+
+- Zugeordnete Katalogartikel behalten ihren Katalogpreis, USt.-Satz und Einheit. Die KI schlägt nur Mengen vor.
+- Arbeit, die nicht in den Katalog passt, wird als beschreibende Position mit Preis 0 eingefügt, damit Sie sie selbst bepreisen können.
+- Das Konzept wird als Angebot im Status **Entwurf** angelegt. Es wird nicht automatisch versandt, und es wird kein Kundendatensatz aus dem unverifizierten Formular erstellt.
+- Sie erhalten eine Benachrichtigung, sobald ein Konzept bereitsteht. Öffnen Sie die Anfrage, prüfen Sie die Positionen, verknüpfen oder erstellen Sie den Kunden und senden Sie das Angebot, wenn Sie bereit sind.
+
+Es ist ein best-effort-Entwurf, kein fertiges Angebot. Prüfen Sie immer Preise und Beschreibungen, bevor Sie versenden.
+
 ## Massenaktionen
 
 - **Senden** — Mehrere Angebote gleichzeitig versenden

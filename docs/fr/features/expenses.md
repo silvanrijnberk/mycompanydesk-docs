@@ -175,6 +175,14 @@ Importez des dépenses depuis un fichier CSV :
 4. Faites correspondre les colonnes aux champs
 5. Vérifiez et confirmez
 
+## Notifications d'interruption de cycle
+
+MyCompanyDesk surveille les fournisseurs qui envoient habituellement une facture chaque mois mais qui se sont tus. Si un fournisseur a eu des depenses sur trois mois distincts, puis plus aucune depense confirmee pendant environ 50 jours, il cree une notification vous demandant si une facture manque.
+
+La verification ne porte que sur les depenses confirmees. Les depenses provisoires ou celles en attente de confirmation ne comptent pas comme "nous avons vu une facture", donc une importation non confirmee n'arrete pas la notification. L'objectif est d'attraper une facture recurrente manquante avant qu'elle ne fausse vos comptes.
+
+En ouvrant la notification, vous pouvez enregistrer la depense manquante ou la rejeter si ce silence etait prevu.
+
 ## Conseils
 
 - Definissez votre taux de TVA, votre categorie de depense et votre mode de paiement par defaut dans **Parametres de l'espace de travail** pour que le formulaire ne commence pas toujours avec des champs vides. Un reglage a 0 % pour la TVA fonctionne correctement; le formulaire le traite comme un choix intentionnel.

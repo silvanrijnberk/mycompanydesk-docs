@@ -102,6 +102,17 @@ Chaque demande affiche :
 3. Cliquez sur **Creer un devis** pour generer un devis pour ce client
 4. Le devis est pre-rempli avec les informations du client
 
+### Brouillon de devis IA a partir d'une demande
+
+Quand un client soumet une demande de devis via votre constructeur de site ou votre formulaire de contact, MyCompanyDesk peut automatiquement rediger un brouillon de devis. L'IA lit le texte de la demande et votre propre catalogue, puis propose des lignes qu'elle peut faire correspondre.
+
+- Les articles du catalogue correspondants conservent leur prix catalogue, leur taux de TVA et leur unite. L'IA ne suggere que des quantites.
+- Le travail qui ne correspond pas au catalogue devient une ligne de description au prix de 0, pour que vous puissiez fixer le prix vous-meme.
+- Le brouillon est cree comme un devis au statut **Brouillon**. Il n'est pas envoye automatiquement et aucune fiche client n'est creee a partir du formulaire non verifie.
+- Une notification vous indique qu'un brouillon est pret. Ouvrez la demande, verifiez les lignes, liez ou creez le client, et envoyez le devis quand vous le souhaitez.
+
+C'est un brouillon automatique, pas une proposition finalisee. Verifiez toujours les prix et les descriptions avant d'envoyer.
+
 ## Actions groupees
 
 - **Envoyer** -- Envoyez plusieurs devis en une fois

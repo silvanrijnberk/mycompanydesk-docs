@@ -163,6 +163,14 @@ For predictable costs (rent, subscriptions, hosting), set up [recurring expenses
 
 Import historical expenses from CSV via **Profile > Import** > **Expenses**. Map your columns to the expense fields, preview, and confirm.
 
+## Pattern-break notifications
+
+MyCompanyDesk watches for suppliers that usually send a bill every month but have gone quiet. If a supplier had expenses in three separate months and then no confirmed expense for about 50 days, it creates a notification asking whether you are missing a bill.
+
+The check looks at confirmed expenses only. Pending or draft expenses do not count as "we saw a bill", so an unconfirmed import does not stop the notification. The goal is to catch a missing recurring invoice before it throws off your records.
+
+When you open the notification, you can record the missing expense or dismiss it if the silence is expected.
+
 ## Tips
 
 - Pick the right category first - VAT treatment, deduction percentage and the investment flag all flow from it.

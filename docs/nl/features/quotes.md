@@ -102,6 +102,17 @@ Elke aanvraag toont:
 3. Klik op **Offerte aanmaken** om een offerte te genereren voor deze klant
 4. De offerte wordt vooraf ingevuld met de klantgegevens
 
+### AI-conceptofferte bij een aanvraag
+
+Als een klant een offerteaanvraag via je sitebouwer of contactformulier indient, kan MyCompanyDesk automatisch een conceptofferte opzetten. De AI leest de aanvraagtekst en je eigen catalogus en stelt regels voor die hij kan matchen.
+
+- Gematchte catalogusitems behouden hun catalogusprijs, BTW-tarief en eenheid. De AI suggereert alleen hoeveelheden.
+- Werk dat niet in de catalogus past, wordt een omschrijvingsregel met prijs 0, zodat je zelf een prijs kunt bepalen.
+- Het concept wordt aangemaakt als offerte in status **Concept**. Hij wordt niet automatisch verstuurd en er wordt geen klantrecord aangemaakt op basis van het ongeverifieerde formulier.
+- Je krijgt een melding zodra een concept klaar staat. Open de aanvraag, controleer de regels, koppel of maak de klant aan en verstuur hem wanneer je wilt.
+
+Het is een best-effort concept, geen afgeronde offerte. Controleer altijd prijzen en omschrijvingen voordat je verstuurt.
+
 ## Bulkacties
 
 - **Versturen** — Verstuur meerdere offertes tegelijk
