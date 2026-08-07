@@ -22,16 +22,28 @@ Cas d'utilisation courants :
 
 1. Allez dans **Depenses recurrentes > Nouveau**
 2. Remplissez le modele :
-   - **Description** -- L'objet de la depense
-   - **Montant** -- Le cout recurrent
-   - **Categorie** -- Categorie de depense
-   - **Taux de TVA** -- TVA applicable
-   - **Frequence** -- Hebdomadaire, mensuelle, trimestrielle ou annuelle
+   - **Description** : l'objet de la depense
+   - **Fournisseur**: nom de fournisseur libre, avec autocompletion pour les fournisseurs deja utilises
+   - **Pays** et **Numero d'enregistrement (KVK)**: champs optionnels pour l'identite du fournisseur; lorsqu'ils sont renseignes, ils sont reportes dans chaque depense generee a partir de ce modele
+   - **Montant**: le cout recurrent
+   - **Categorie**: categorie de depense
+   - **Taux de TVA**: TVA applicable
+   - **Traitement de TVA**: comment la depense est traitee pour la declaration de TVA
+   - **Frequence**: hebdomadaire, mensuelle, trimestrielle ou annuelle
 3. Cliquez sur **Enregistrer**
 
 ::: tip Plus d'options
-Dans le formulaire de nouvelle depense recurrente, les champs optionnels restent ranges sous **Plus d'options**. Les notes s'y trouvent par defaut; depliez la section pour les ajouter.
+Dans le formulaire de depense recurrente, les champs optionnels restent ranges sous **Plus d'options**. Les notes et l'identite du fournisseur s'y trouvent par defaut; depliez la section pour les ajouter.
 :::
+
+### Identite du fournisseur
+
+Renseigner le nom du fournisseur, le pays et le numero KVK dans un modele recurrent a deux effets :
+
+- **Les suggestions de fournisseurs** utilisent l'identite enregistree, ce qui evite de reselectionner le meme fournisseur chaque mois.
+- **Les depenses generees** conservent la meme identite de fournisseur que le modele. Ainsi, la logique d'autoliquidation ou de TVA a l'importation (par exemple pour des achats intracommunautaires ou hors UE) est appliquee automatiquement, comme pour une depense saisie manuellement.
+
+Si vous modifiez le nom du fournisseur et qu'il ne correspond plus a l'enregistrement KVK enregistre, les champs KVK et pays sont effaces. Le formulaire evite ainsi qu'une identite de fournisseur obsolete persiste.
 
 ## Options de frequence
 
@@ -61,6 +73,7 @@ Supprimez le modele. Les depenses precedemment generees restent dans vos archive
 Chaque depense generee :
 
 - Correspond au montant, a la categorie et aux parametres de TVA du modele
+- Reporte l'identite du fournisseur du modele (nom, pays et numero KVK) lorsque ces champs sont renseignes
 - Est datee a la date d'occurrence programmee
 - Peut etre modifiee independamment apres creation
 

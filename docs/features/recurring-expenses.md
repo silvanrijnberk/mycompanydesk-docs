@@ -22,16 +22,28 @@ Common use cases:
 
 1. Go to **Recurring Expenses > New**
 2. Fill in the template:
-   - **Description** — What the expense is for
-   - **Amount** — The recurring cost
-   - **Category** — Expense category
-   - **VAT rate** — Applicable VAT
-   - **Frequency** — Weekly, monthly, quarterly, or yearly
+   - **Description**: what the expense is for
+   - **Supplier**: free-form supplier name, with autocomplete for previously used vendors
+   - **Country** and **Registration number (KVK)**: optional supplier identity fields; when filled, they flow into every expense generated from this template
+   - **Amount**: the recurring cost
+   - **Category**: expense category
+   - **VAT rate**: applicable VAT
+   - **VAT treatment**: how the expense is handled for your VAT return
+   - **Frequency**: weekly, monthly, quarterly, or yearly
 3. Click **Save**
 
 ::: tip More options
-The new recurring-expense form keeps optional details behind **More options**. Notes sit there by default; expand the section when you want to add them.
+The recurring-expense form keeps optional details behind **More options**. Notes and the supplier identity fields sit there by default; expand the section when you want to add them.
 :::
+
+### Supplier identity
+
+Filling the supplier name, country, and KVK number on a recurring template has two effects:
+
+- **Supplier suggestions** use the saved identity, so you do not have to reselect the same vendor each month.
+- **Generated expenses** carry the same supplier identity as the template, which means reverse-charge and import-VAT logic (for example EU B2B or non-EU suppliers) is applied automatically, just like on a manually entered expense.
+
+If you edit the supplier name later and it no longer matches the saved KVK record, the KVK and country fields are cleared to prevent stale identity data.
 
 ## Frequency options
 
@@ -61,6 +73,7 @@ Remove the template. Previously generated expenses remain in your records.
 Each generated expense:
 
 - Matches the template's amount, category, and VAT settings
+- Carries the template's supplier identity (name, country, and KVK number) when those fields are filled
 - Is dated to the scheduled occurrence date
 - Can be edited independently after creation
 
