@@ -115,6 +115,7 @@ function sidebarEN() {
         { text: 'Reports', link: '/features/reports' },
         { text: 'VAT Management', link: '/features/vat' },
         { text: 'Domains, Website & Inbox', link: '/features/domains-website-inbox' },
+        { text: 'Newsletters', link: '/features/newsletters' },
       ],
     },
     {
@@ -195,6 +196,7 @@ function sidebarNL() {
         { text: 'Rapporten', link: '/nl/features/reports' },
         { text: 'BTW-beheer', link: '/nl/features/vat' },
         { text: 'Domeinen, website & inbox', link: '/nl/features/domains-website-inbox' },
+        { text: 'Nieuwsbrieven', link: '/nl/features/newsletters' },
       ],
     },
     {
@@ -275,6 +277,7 @@ function sidebarDE() {
         { text: 'Berichte', link: '/de/features/reports' },
         { text: 'USt.-Verwaltung', link: '/de/features/vat' },
         { text: 'Domains, Website & Posteingang', link: '/de/features/domains-website-inbox' },
+        { text: 'Newsletter', link: '/de/features/newsletters' },
       ],
     },
     {
@@ -355,6 +358,7 @@ function sidebarFR() {
         { text: 'Rapports', link: '/fr/features/reports' },
         { text: 'Gestion de la TVA', link: '/fr/features/vat' },
         { text: 'Domaines, site web et boîte de réception', link: '/fr/features/domains-website-inbox' },
+        { text: 'Newsletters', link: '/fr/features/newsletters' },
       ],
     },
     {
