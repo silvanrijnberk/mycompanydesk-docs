@@ -1,6 +1,6 @@
 ---
 title: "Benachrichtigungseinstellungen"
-last_verified: 2026-08-06
+last_verified: 2026-08-07
 chatbot:
   triggers:
     - "notifications"
@@ -68,12 +68,16 @@ Solange Nicht stören aktiv ist, werden Push-Benachrichtigungen zurückgehalten,
 
 Ein Klick auf eine Benachrichtigung öffnet ein rechts angeordnetes Panel mit dem vollständigen Kontext dieses Elements. Bei einer überfälligen Rechnung sehen Sie den Gesamtbetrag, den offenen Betrag, den Zahlungsstatus und das Rechnungsdatum. Bei einer MwSt.-Frist sehen Sie den Zeitraum und das Fälligkeitsdatum. Bei zusammengefassten Benachrichtigungen listet das Panel die einzelnen Rechnungen, Angebote oder Datensätze hinter der Zusammenfassung auf.
 
-Das Panel zeigt auch die Aktionen an, die für dieses Element sinnvoll sind:
+Die Aktionen für dieses Element werden so sortiert, dass die wichtigste Aktion zuerst steht und als Hauptaktion hervorgehoben wird. Die restlichen Aktionen bleiben in derselben Zeile. Wenn mehr Aktionen vorhanden sind als Platz im Panel, werden die weiteren Aktionen hinter einer **Mehr**-Schaltfläche (drei Punkte) verborgen. Tippen Sie darauf, um die restlichen Aktionen zu sehen, ohne den Bereich zu schließen.
+
+Welche Aktionen verfügbar sind, hängt von der Benachrichtigung ab:
 
 - **Als bezahlt markieren**: bucht eine manuelle Zahlung für den Restbetrag und schließt die Rechnungsbenachrichtigung ab.
 - **Als eingereicht markieren**: markiert den MwSt.-Zeitraum als eingereicht; wird nur bei MwSt.-Fristen angezeigt.
-- **Snooze**: verschiebt die Benachrichtigung vorübergehend, ohne sie als gelesen zu markieren.
-- **Verwerfen**: entfernt die Benachrichtigung aus Ihrer eigenen ungelesenen Liste.
+- **Erinnerung senden**: sendet eine Zahlungserinnerung für die Rechnung, angezeigt bei überfälligen Rechnungen.
+- **Öffnen**: öffnet den zugrunde liegenden Datensatz, zum Beispiel die Rechnung, das Angebot oder den Vertrag.
+- **Snooze** (oder **Später**): verschiebt die Benachrichtigung vorübergehend, ohne sie als gelesen zu markieren.
+- **Verwerfen** (oder das **X**-Symbol): entfernt die Benachrichtigung aus Ihrer eigenen ungelesenen Liste. Auf dem Telefon befindet sich dasselbe Schließsymbol oben rechts im Detail-Overlay, damit es den Betrag nicht überlappt.
 
 Release Notes und Tipps haben kein Detailpanel, weil es keinen zugrunde liegenden Datensatz gibt, an dem Sie etwas ändern können.
 

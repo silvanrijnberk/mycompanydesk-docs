@@ -1,6 +1,6 @@
 ---
 title: "Notification settings"
-last_verified: 2026-08-06
+last_verified: 2026-08-07
 chatbot:
   triggers:
     - "notifications"
@@ -68,12 +68,16 @@ While do-not-disturb is active, push notifications are held back, but the notifi
 
 Clicking a notification opens a right-hand panel with the full context for that item. For an overdue invoice you see the total, open amount, payment status and issue date. For a VAT deadline you see the period and due date. For rolled-up notifications the panel lists the individual invoices, quotes or records behind the summary.
 
-The panel also shows the actions that make sense for that item:
+The actions for that item are ranked so the most important one comes first and is marked as the primary action. The rest stay on the same row. If more actions fit than the panel has room for, the extra ones move behind a **More** button (three dots). Tap it to see the remaining actions without leaving the drawer.
+
+The available actions depend on the notification:
 
 - **Mark as paid**: records a manual payment for the remaining balance and resolves the invoice notification.
 - **Mark as filed**: marks the VAT period as filed; shown only for VAT-deadline notifications.
-- **Snooze**: temporarily defers the notification without marking it as read.
-- **Dismiss**: removes the notification from your own unread list.
+- **Send reminder**: sends a payment reminder for the invoice, shown for overdue invoices.
+- **Open**: opens the underlying record, such as the invoice, quote or contract.
+- **Snooze** (or **Later**): temporarily defers the notification without marking it as read.
+- **Dismiss** (or the **X** icon): removes the notification from your own unread list. On a phone the same close icon sits in the top right of the detail overlay, so it does not overlap the amount.
 
 Release notes and tips have no detail panel because there is no underlying record to act on.
 

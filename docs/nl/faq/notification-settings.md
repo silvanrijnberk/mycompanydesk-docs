@@ -1,6 +1,6 @@
 ---
 title: "Meldingsinstellingen"
-last_verified: 2026-08-06
+last_verified: 2026-08-07
 chatbot:
   triggers:
     - "notifications"
@@ -68,12 +68,16 @@ Als Niet storen actief is, worden pushmeldingen tegengehouden, maar de meldingen
 
 Als je op een melding klikt, opent er een paneel aan de rechterkant met de volledige context voor die melding. Bij een te late factuur zie je het totaal, het openstaande bedrag, de betaalstatus en de factuurdatum. Bij een BTW-deadline zie je de periode en vervaldatum. Bij opgetelde meldingen zie je in het paneel de afzonderlijke facturen, offertes of records waar de samenvatting voor staat.
 
-Het paneel toont ook de acties die bij die melding passen:
+De acties voor die melding worden gerangschikt zodat de belangrijkste actie als eerste staat en als hoofdactie wordt gemarkeerd. De rest blijft op dezelfde rij staan. Passen er meer acties dan het paneel ruimte heeft, dan verhuizen de overige acties achter een **Meer**-knop (drie stippen). Tik daarop om de rest te zien zonder de lade te sluiten.
+
+Welke acties beschikbaar zijn, hangt af van de melding:
 
 - **Markeer als betaald**: boekt een handmatige betaling voor het resterende bedrag en rondt de factuurmelding af.
 - **Markeer als ingediend**: markeert de BTW-periode als ingediend; alleen zichtbaar bij BTW-deadlines.
-- **Snooze**: stelt de melding tijdelijk uit zonder hem als gelezen te markeren.
-- **Afwijzen**: verwijdert de melding uit je eigen lijst met ongelezen meldingen.
+- **Verstuur herinnering**: stuurt een betalingsherinnering voor de factuur, zichtbaar bij te late facturen.
+- **Openen**: opent het bijbehorende record, zoals de factuur, offerte of het contract.
+- **Snooze** (of **Later**): stelt de melding tijdelijk uit zonder hem als gelezen te markeren.
+- **Afwijzen** (of het **X**-icoon): verwijdert de melding uit je eigen lijst met ongelezen meldingen. Op een telefoon staat hetzelfde sluiticoon rechtsboven in de detail-overlay, zodat het niet over het bedrag heen valt.
 
 Release notes en tips hebben geen detailpaneel, omdat er geen onderliggend record is waar je op kunt acteren.
 
