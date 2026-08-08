@@ -107,17 +107,20 @@ L'association reste le plus souvent manuelle. MyCompanyDesk associe toutefois au
 
 ## Notifications
 
-En bas de la page de réglages, quatre notifications bancaires s'activent indépendamment :
+En bas de la page de réglages, cinq notifications bancaires s'activent indépendamment :
 
 - **Erreurs de synchronisation** : un e-mail et une notification dans l'application quand une connexion bancaire ne parvient pas à synchroniser, avec un lien pour corriger.
 - **Résumé hebdomadaire** : un e-mail le lundi matin résumant l'activité bancaire de la semaine écoulée. Il est sauté quand il n'y a rien à signaler.
 - **Grosses transactions** : une alerte quand une transaction atteint ou dépasse un montant que vous fixez vous-même.
 - **Règle fournisseur apprise** : une notification dans l'application quand MyCompanyDesk a appris une nouvelle règle de fournisseur de confiance à partir de vos brouillons confirmés.
+- **Période de TVA verrouillée** : une alerte unique quand le flux bancaire tente de comptabiliser une transaction sortante dans une période de TVA déjà déclarée et verrouillée. La ligne est ignorée définitivement pour éviter que la synchronisation ne réessaie indéfiniment, et la notification explique les options : comptabilisez la dépense manuellement avec une date dans la période ouverte en cours, ou déposez une déclaration rectificative.
 
 ## Dépannage
 
 **Ma connexion bancaire affiche une erreur.** Ouvrez les réglages des dépenses via la roue dentée sur la page Dépenses. Si votre banque demande une nouvelle autorisation, vous le verrez sur la ligne de la connexion ; la notification d'erreur y mène aussi.
 
 **Une transaction n'est pas devenue une dépense.** Vérifiez que l'import automatique est activé, que le montant dépasse votre montant minimum et qu'il s'agit d'un paiement sortant. Vous pouvez toujours associer la transaction à la main sur la page Transactions.
+
+**Une transaction bancaire tombe dans une période de TVA verrouillée.** Le flux bancaire ne peut pas comptabiliser automatiquement des dépenses datées dans une période déjà déclarée. Vous recevez l'alerte unique "Banktransactie: BTW-periode vergrendeld", la ligne est marquée comme ignorée définitivement et la prochaine synchronisation ne la réessaie pas. Pour enregistrer le coût malgré tout, comptabilisez la dépense manuellement avec une date dans la période ouverte en cours, ou demandez à votre comptable si une déclaration rectificative est la bonne démarche.
 
 **Je ne reçois pas de notifications.** Vérifiez les interrupteurs en bas de la page de réglages des dépenses.
