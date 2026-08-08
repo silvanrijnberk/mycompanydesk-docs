@@ -16,7 +16,10 @@ The site builder replaces the old single-page business profile. Every new worksp
 - **Design tokens**: Set brand colors, fonts, spacing, border radius, motion style, custom CSS, and a site favicon. Changes apply across the whole site.
 - **Navigation editor**: Drag-and-drop reorder of header links, with dropdown groups, external links, and inline navbar styling (brand name, CTA button, phone, call bar, sticky).
 - **Publish snapshots**: Work in draft, preview your changes, then publish. Unpublished changes are tracked in the top bar.
-- **Responsive preview**: Toggle between desktop, tablet, and mobile viewports while editing.
+- **Responsive preview**: Toggle between desktop, tablet, and mobile viewports while editing. In desktop view you can also pick a real viewport width (1280, 1440, or 1920 pixels), so the site's own media queries answer honestly instead of being simulated.
+- **Resizable panes**: Drag the right edge of the left rail and the left edge of the right inspector to make either pane wider or narrower. Double-click a resize handle to return to the default width. The width is remembered per device in localStorage.
+- **Zoom and fit-to-window**: Zoom the canvas from 25% to 200%, or click the zoom value to jump to fit, 50%, 100%, or 200%. The stage scrolls when the scaled canvas exceeds it.
+- **Keyboard shortcuts**: Undo/redo, move the selected section, zoom, fit to window, close panels, and open the shortcut reference with the standard keys shown in the bottom bar.
 
 Your website dashboard lives at **Company > Your website** (`/website`). The editor opens from there.
 
@@ -53,7 +56,7 @@ The **Site packages** gallery (`Company > Your website > Pakketten`) is the fast
 How it works:
 
 1. Open **Company > Your website** and click **Pakketten** in the top bar.
-2. Browse the cards. Each card shows the package name, trade, page count, a short description, and a color swatch.
+2. Browse the cards. Each card shows a real screenshot of the package when one has been generated, otherwise a color swatch built from the package's own palette. The name, trade, page count, and short description sit below the image.
 3. Click **Preview** to open a live sample of the package in a new tab.
 4. Click **Use this package**. A confirmation explains that your current draft site (pages, sections, and style) will be replaced.
 5. The package is applied to your **draft** only. Nothing is published automatically.

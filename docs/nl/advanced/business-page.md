@@ -16,7 +16,10 @@ De sitebouwer vervangt het oude bedrijfsprofiel van één pagina. Elke nieuwe we
 - **Ontwerptokens**: Stel merkkleuren, lettertypes, witruimte, hoekradius, bewegingsstijl, aangepaste CSS en een site-favicon in. Wijzigingen gelden voor de hele site.
 - **Navigatie-editor**: Sleep en zet headerlinks op volgorde, met dropdown-groepen, externe links en inline navbar-styling (merknaam, CTA-knop, telefoon, belknop, sticky).
 - **Publicatiesnapshots**: Werk in concept, bekijk je wijzigingen en publiceer daarna. Ongepubliceerde wijzigingen zie je in de bovenbalk.
-- **Responsieve preview**: Schakel tussen desktop-, tablet- en mobiele weergave tijdens het bewerken.
+- **Responsieve preview**: Schakel tussen desktop-, tablet- en mobiele weergave tijdens het bewerken. In desktopweergave kun je ook een echte viewportbreedte kiezen (1280, 1440 of 1920 pixels), zodat de media queries van de site zelf eerlijk reageren in plaats van gesimuleerd te worden.
+- **Verstelbare panelen**: Sleep de rechterrand van de linker rail en de linkerrand van de rechter inspector om elk paneel breder of smaller te maken. Dubbelklik op een vergrotingsgreep om terug te gaan naar de standaardbreedte. De breedte wordt per apparaat onthouden in localStorage.
+- **Zoom en passend in venster**: Zoom het canvas van 25% tot 200%, of klik op de zoomwaarde om te kiezen voor passend, 50%, 100% of 200%. Het stage-gebied scrollt wanneer het geschaalde canvas groter wordt.
+- **Sneltoetsen**: Ongedaan maken/opnieuw, de geselecteerde sectie verplaatsen, in- en uitzoomen, passend in het venster, panelen sluiten en het overzicht met sneltoetsen openen via de toetsen die in de onderste balk staan.
 
 Je website-dashboard vind je onder **Bedrijf > Je website** (`/website`). De editor open je daarvandaan.
 
@@ -53,7 +56,7 @@ De galerij **Pakketten** (`Bedrijf > Je website > Pakketten`) is de snelste mani
 Zo werkt het:
 
 1. Open **Bedrijf > Je website** en klik bovenaan op **Pakketten**.
-2. Blader door de kaarten. Elke kaart toont de pakketnaam, het vak, het aantal pagina's, een korte omschrijving en een kleurswatch.
+2. Blader door de kaarten. Elke kaart toont een echte screenshot van het pakket als die al is gegenereerd, anders een kleurswatch op basis van het eigen palet van het pakket. De naam, het vak, het aantal pagina's en de korte omschrijving staan onder de afbeelding.
 3. Klik op **Bekijk voorbeeld** om een live voorbeeld van het pakket in een nieuw tabblad te openen.
 4. Klik op **Gebruik dit pakket**. Er verschijnt een bevestiging die aangeeft dat je huidige conceptsite (pagina's, secties en stijl) wordt vervangen.
 5. Het pakket wordt alleen op je **concept** toegepast. Er wordt niets automatisch gepubliceerd.
