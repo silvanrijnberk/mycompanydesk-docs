@@ -46,6 +46,25 @@ Der Website-Builder hat drei Tabs: Editor, Seiten und Stil. Klicken Sie auf die 
 
 Domain, SEO und Drittanbieter-Integrationen verwalten Sie über die `/website`-Startseite, nicht im Editor.
 
+### Pakete-Galerie
+
+Die Galerie **Pakete** (`Unternehmen > Ihre Website > Pakkete`) ist der schnellste Weg, mit einer kompletten, vorgestylten Site zu starten. Sie listet jedes genehmigte Site-Paket: eine fertige Vorlage mit Farbpaket und Schriftpaarung für einen bestimmten Bereich, dargestellt mit einer kleinen Farb-Swatch-Karte, die die eigene Palette des Pakets zeigt.
+
+So funktioniert es:
+
+1. Öffnen Sie **Unternehmen > Ihre Website** und klicken Sie oben auf **Pakkete**.
+2. Durchstöbern Sie die Karten. Jede Karte zeigt Paketname, Bereich, Seitenanzahl, eine kurze Beschreibung und eine Farbswatch.
+3. Klicken Sie auf **Vorschau ansehen**, um ein Live-Beispiel des Pakets in einem neuen Tab zu öffnen.
+4. Klicken Sie auf **Dieses Paket verwenden**. Eine Bestätigung erklärt, dass Ihre aktuelle Entwurfs-Site (Seiten, Abschnitte und Stil) ersetzt wird.
+5. Das Paket wird nur auf Ihren **Entwurf** angewendet. Es wird nichts automatisch veröffentlicht.
+6. Der Editor öffnet sich, damit Sie das Ergebnis prüfen, Texte und Bilder anpassen und selbst veröffentlichen können.
+
+Dieselbe Galerie finden Sie auch im Editor. Öffnen Sie die Leiste **Ontwerp**, um Pakete direkt auf der Arbeitsfläche zu durchstöbern. Klicken Sie auf einer Karte auf **Vorschau ansehen**, um die öffentliche Vorschau in Originalgröße neben Ihrer eigenen Site zu sehen, und auf **Zurück zu allen Designs**, um weiter zu vergleichen. Wenden Sie ein Paket im Editor an, wird Ihr Entwurf neu geladen und Sie gelangen zurück zur Leiste Abschnitte, um direkt weiterzubearbeiten.
+
+Suchen Sie nach Bereich oder Stil über das Suchfeld. Die Anzahl daneben wird beim Filtern aktualisiert. Sind noch keine Pakete verfügbar, teilt Ihnen die Seite mit, dass sie hier erscheinen, sobald die ersten Designs freigegeben sind.
+
+Quelle: `apps/web/pages/website/pakketten.vue`; `apps/web/components/site-builder/SiteEditorScreen.vue`; `apps/web/components/site-builder/SitePackageGallery.vue`; `apps/web/services/site-packages.service.ts`; `apps/api/src/modules/sites/packages.service.js`.
+
 ### Bespoke-Designs
 
 Der Website-Builder bietet außerdem eine Reihe fertiger **Bespoke-Designs**, die die Standardstil-Presets durch eine kuratierte Vorlage, ein Farbpaket und einen Markenakzent ersetzen. Öffnen Sie das Panel **Bespoke-Designs** im Stil-Tab, um die Galerie zu durchsuchen. Jede Karte ist eine Live-Vorschau, die mit Ihren eigenen Workspace-Daten gefüllt ist (Dienstleistungen, Fotos, Bewertungen, Kontaktdaten), sodass Sie genau sehen, wie das Design aussieht, bevor Sie es anwenden.

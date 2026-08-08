@@ -46,6 +46,25 @@ De sitebouwer heeft drie tabs: Editor, Pagina's en Stijl. Klik op de Stijl-heade
 
 Domein, SEO en koppelingen met derden beheer je vanuit de `/website`-thuis-tabbladen, niet in de editor.
 
+### Pakketten-galerij
+
+De galerij **Pakketten** (`Bedrijf > Je website > Pakketten`) is de snelste manier om te beginnen met een complete, voorgestylede site. Hij toont elk goedgekeurd sitepakket: een afgebouwde sjabloon met kleurenpakket en lettertypecombinatie voor een specifiek vak, weergegeven met een kleine swatchkaart die het eigen palet van het pakket laat zien.
+
+Zo werkt het:
+
+1. Open **Bedrijf > Je website** en klik bovenaan op **Pakketten**.
+2. Blader door de kaarten. Elke kaart toont de pakketnaam, het vak, het aantal pagina's, een korte omschrijving en een kleurswatch.
+3. Klik op **Bekijk voorbeeld** om een live voorbeeld van het pakket in een nieuw tabblad te openen.
+4. Klik op **Gebruik dit pakket**. Er verschijnt een bevestiging die aangeeft dat je huidige conceptsite (pagina's, secties en stijl) wordt vervangen.
+5. Het pakket wordt alleen op je **concept** toegepast. Er wordt niets automatisch gepubliceerd.
+6. De editor opent zodat je het resultaat kunt bekijken, tekst en afbeeldingen kunt aanpassen en zelf kunt publiceren.
+
+Dezelfde galerij zit ook in de editor. Open de rail **Ontwerp** om pakketten te bekijken op het canvas zelf. Klik op **Bekijk voorbeeld** bij een kaart om het publieke voorbeeld op ware grootte te zien, naast je eigen site, en gebruik **Terug naar alle ontwerpen** om verder te vergelijken. Pas je een pakket toe vanuit de editor, dan wordt je concept opnieuw geladen en kom je terug bij de rail Secties, zodat je direct verder kunt bewerken.
+
+Zoek op vak of stijl via het zoekveld. Het aantal ernaast wordt bijgewerkt terwijl je filtert. Zijn er nog geen pakketten beschikbaar, dan meldt de pagina dat ze hier verschijnen zodra de eerste ontwerpen zijn goedgekeurd.
+
+Bron: `apps/web/pages/website/pakketten.vue`; `apps/web/components/site-builder/SiteEditorScreen.vue`; `apps/web/components/site-builder/SitePackageGallery.vue`; `apps/web/services/site-packages.service.ts`; `apps/api/src/modules/sites/packages.service.js`.
+
 ### Bespoke-ontwerpen
 
 De sitebouwer biedt ook een set kant-en-klare **bespoke ontwerpen** die de standaard stijlpresets vervangen door een samengesteld sjabloon, kleurenpakket en merkaccent. Open het **Bespoke ontwerpen**-paneel vanuit de Stijl-tab om door de galerij te bladeren. Elke kaart is een live voorbeeld gevuld met je eigen werkruimtegegevens (diensten, foto's, reviews, contactgegevens), zodat je precies ziet hoe het ontwerp eruitziet voordat je het toepast.
