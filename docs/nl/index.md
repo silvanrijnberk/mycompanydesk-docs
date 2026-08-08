@@ -40,4 +40,10 @@ features:
       src: /icons/house.svg
     title: Contracten & Assets
     details: Beheer huurcontracten, volg vastgoed, voertuigen en apparatuur met volledig levenscyclusbeheer.
+  - icon:
+      src: /icons/house.svg
+    title: Website op je eigen domein
+    details: Bouw een site met meerdere pagina's op je eigen domein, start vanuit een kant-en-klaar site-pakket, of pas een bespoke design toe. Alles vanuit dezelfde app.
+    link: /nl/advanced/business-page
+    linkText: Meer lezen
 ---

@@ -40,4 +40,10 @@ features:
       src: /icons/house.svg
     title: Verträge & Anlagen
     details: Verwalten Sie Mietverträge, verfolgen Sie Immobilien, Fahrzeuge und Geräte mit vollständigem Lebenszyklus-Management.
+  - icon:
+      src: /icons/house.svg
+    title: Website auf Ihrer eigenen Domain
+    details: Erstellen Sie eine mehrseitige Website auf Ihrer eigenen Domain, starten Sie aus einem vorgefertigten Site-Paket, oder wenden Sie ein Bespoke-Design an. Alles aus einer Hand.
+    link: /de/advanced/business-page
+    linkText: Mehr erfahren
 ---
