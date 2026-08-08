@@ -1,6 +1,6 @@
 ---
 title: Domains, Website, and Inbox
-last_verified: 2026-05-09
+last_verified: 2026-08-08
 ---
 
 # Domains, Website, and Inbox
@@ -196,6 +196,10 @@ What the tabs cover:
 When your workspace has multiple active custom domains (Pro plan), a domain switcher lets you edit a per-domain variant of the site. Each domain gets its own pages, navigation, design tokens, and publish snapshot. Switching domains resets the active tab.
 
 The public site is served at the highest-priority URL the company owns: custom domain root → workspace subdomain → fallback `/portal/<slug>` route.
+
+### Site packages
+
+`/website/pakketten` is a gallery of approved, pre-styled site packages. You can search by industry or style. Picking a package replaces your draft site (pages, sections, and theme tokens) but never publishes; you review the result in the site builder and publish when you are ready. Older `/website/ontwerpen` links redirect here.
 
 See [Site Builder](/advanced/business-page) for the full editor guide.
 

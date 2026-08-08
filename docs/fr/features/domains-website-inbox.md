@@ -1,6 +1,6 @@
 ---
 title: Domaines, site web et boite de reception
-last_verified: 2026-05-09
+last_verified: 2026-08-08
 ---
 
 # Domaines, site web et boite de reception
@@ -196,6 +196,10 @@ Ce que couvrent les onglets :
 Lorsque votre espace de travail possede plusieurs domaines personnalises actifs (abonnement Pro), un selecteur de domaine permet d'editer une variante du site par domaine. Chaque domaine dispose de ses propres pages, navigation, tokens de design et snapshot de publication. Changer de domaine reinitialise l'onglet actif.
 
 Le site public est diffuse a l'URL la plus prioritaire disponible pour l'entreprise : racine du domaine personnalise → sous-domaine de l'espace de travail → route de secours `/portal/<slug>`.
+
+### Forfaits site
+
+`/website/pakketten` est une galerie de forfaits site prestyles et approuves. Vous pouvez rechercher par secteur ou par style. Choisir un forfait remplace votre site brouillon (pages, sections et tokens de theme), mais ne publie jamais automatiquement ; vous verifiez le resultat dans le constructeur de site et publiez vous-meme quand vous etes pret. Les anciens liens `/website/ontwerpen` redirigent ici.
 
 Consultez [Constructeur de site](/fr/advanced/business-page) pour le guide complet de l'editeur.
 

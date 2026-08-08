@@ -17,6 +17,8 @@ The Workspaces page at `/werkruimtes` is one central place for everything you ma
 - The workspace switcher now shows an overview row at the top. Your own businesses and any client administrations are grouped separately, and a search field appears once you hold more than eight workspaces.
 - Each row shows the workspace's own mark: its logo, or a coloured initials tile. Your own businesses carry their colour; client administrations stay neutral. The workspace you are currently in is highlighted.
 
+Clicking a workspace in the switcher now swaps you in without a full page reload. The app clears the previous workspace's state from Pinia stores and module caches, throws away any in-flight requests that would arrive after the switch, reloads the shell so the navigation rail and permissions update, and then routes you to the target page.
+
 ## If you have one workspace
 
 The page shows three entry points instead of an empty screen:

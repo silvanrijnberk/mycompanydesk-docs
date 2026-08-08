@@ -17,6 +17,8 @@ Die Seite "Arbeitsbereiche" unter `/werkruimtes` ist ein zentraler Ort fuer alle
 - Der Arbeitsbereich-Wechsler zeigt jetzt oben eine Uebersichtszeile. Eigene Unternehmen und Mandanten-Administrationen sind getrennt gruppiert, und sobald Sie mehr als acht Arbeitsbereiche haben, erscheint ein Suchfeld.
 - Jede Zeile zeigt das eigene Kennzeichen des Arbeitsbereichs: das Logo oder ein farbiges Initialienfeld. Eigene Unternehmen tragen ihre Farbe; Mandanten-Administrationen bleiben neutral. Der Arbeitsbereich, in dem Sie sich gerade befinden, wird hervorgehoben.
 
+Wenn Sie im Wechsler einen Arbeitsbereich auswaehlen, wechselt die App jetzt ohne vollstaendiges Neuladen der Seite. Sie verwirft den Zustand des vorherigen Arbeitsbereichs aus Pinia-Stores und Modul-Caches, bricht laufende Anfragen ab, die nach dem Wechsel eintreffen wuerden, laedt die Shell neu, damit Navigation und Berechtigungen aktualisiert werden, und leitet Sie anschliessend zur Zielseite weiter.
+
 ## Wenn Sie einen Arbeitsbereich haben
 
 Sie sehen drei Einstiege statt einer leeren Seite:

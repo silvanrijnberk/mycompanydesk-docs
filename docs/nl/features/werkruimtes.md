@@ -17,6 +17,8 @@ De pagina Werkruimtes (`/werkruimtes`) is één centrale plek voor alles wat je 
 - De werkruimtekiezer toont nu bovenaan een overzichtsregel. Eigen bedrijven en klantadministraties staan in aparte groepen, en zodra je meer dan acht werkruimtes hebt, verschijnt er een zoekveld.
 - Elke rij toont het eigen merkteken van de werkruimte: het logo, of een gekleurde tegel met initialen. Eigen bedrijven krijgen hun kleur; klantadministraties blijven neutraal. De werkruimte waarin je nu zit, wordt uitgelicht.
 
+Als je in de kiezer een werkruimte kiest, wisselt de app nu zonder volledige paginaherladen. Hij vergeet de staat van de vorige werkruimte in Pinia-stores en modulecaches, gooit requests die nog onderweg zijn en die na de wissel zouden aankomen weg, laadt de shell opnieuw zodat de navigatie en rechten bijwerken, en routeert je daarna naar de doelpagina.
+
 ## Als je één werkruimte hebt
 
 Je krijgt drie ingangen in plaats van een lege pagina:
