@@ -46,6 +46,23 @@ Le constructeur de site dispose de trois onglets : Editeur, Pages et Style. Cliq
 
 Le domaine, le SEO et les integrations tierces se gerent depuis les onglets de la page d'accueil `/website`, pas dans l'editeur.
 
+### Galerie des packs
+
+La galerie **Packs** (`Entreprise > Votre site web > Pakketten`) est le moyen le plus rapide de partir d'un site complet et pret-style. Elle liste chaque pack de site approuve : un modele fini, un pack de couleurs et un duo de polices adaptes a un metier specifique, presentes avec une petite carte d'echantillons qui montre la propre palette du pack.
+
+Comment ca marche :
+
+1. Ouvrez **Entreprise > Votre site web** et cliquez sur **Pakketten** dans la barre superieure.
+2. Parcourez les cartes. Chaque carte affiche le nom du pack, le metier, le nombre de pages, une courte description et un echantillon de couleurs.
+3. Cliquez sur **Voir l'apercu** pour ouvrir un exemple live du pack dans un nouvel onglet.
+4. Cliquez sur **Utiliser ce pack**. Une confirmation explique que votre site brouillon actuel (pages, sections et style) sera remplace.
+5. Le pack est applique uniquement a votre **brouillon**. Rien n'est publie automatiquement.
+6. L'editeur s'ouvre pour que vous puissiez verifier le resultat, modifier les textes et images, et publier quand vous etes pret.
+
+Recherchez par metier ou par style grace au champ de recherche. Le compteur a cote se met a jour au fur et a mesure du filtrage. Si aucun pack n'est encore disponible, la page indique qu'ils apparaitront ici des que les premiers modeles seront approuves.
+
+Source : `apps/web/pages/website/pakketten.vue`; `apps/web/services/site-packages.service.ts`; `apps/api/src/modules/sites/packages.service.js`.
+
 ### Designs sur mesure
 
 Le constructeur de site propose egalement un ensemble de **designs sur mesure** prets a l'emploi qui remplacent les prereglages de style standard par un modele, un pack de couleurs et un accent de marque. Ouvrez le panneau **Designs sur mesure** depuis l'onglet Style pour parcourir la galerie. Chaque carte est un apercu en direct rempli avec vos propres donnees d'espace de travail (services, photos, avis, coordonnees), pour que vous voyiez exactement ce a quoi ressemble le design avant de l'appliquer.

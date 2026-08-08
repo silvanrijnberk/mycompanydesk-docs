@@ -46,6 +46,23 @@ The site builder has three tabs: Editor, Pages, and Style. Click the Style heade
 
 Domain, SEO, and third-party integrations are managed from the `/website` home tabs, not inside the editor.
 
+### Site packages gallery
+
+The **Site packages** gallery (`Company > Your website > Pakketten`) is the fastest way to start from a complete, pre-styled site. It lists every approved site package: a finished template, color pack, and font pairing built for a specific trade, rendered with a small swatch card that shows the package's own palette.
+
+How it works:
+
+1. Open **Company > Your website** and click **Pakketten** in the top bar.
+2. Browse the cards. Each card shows the package name, trade, page count, a short description, and a color swatch.
+3. Click **Preview** to open a live sample of the package in a new tab.
+4. Click **Use this package**. A confirmation explains that your current draft site (pages, sections, and style) will be replaced.
+5. The package is applied to your **draft** only. Nothing is published automatically.
+6. The editor opens so you can review the result, change copy and images, and publish when you are ready.
+
+Search the gallery by trade or style with the search field. The count next to the field updates as you filter. If no packages are available yet, the page tells you they will appear once the first designs are approved.
+
+Source: `apps/web/pages/website/pakketten.vue`; `apps/web/services/site-packages.service.ts`; `apps/api/src/modules/sites/packages.service.js`.
+
 ### Bespoke designs
 
 The site builder also ships a set of ready-made **bespoke designs** that replace the standard style presets with a curated template, color pack, and brand accent. Open the **Bespoke designs** panel from the Style tab to browse the gallery. Each card is a live preview filled with your own workspace data (services, photos, reviews, contact details), so you see exactly how the design looks before you apply it.
