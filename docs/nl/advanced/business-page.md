@@ -59,9 +59,11 @@ Zo werkt het:
 5. Het pakket wordt alleen op je **concept** toegepast. Er wordt niets automatisch gepubliceerd.
 6. De editor opent zodat je het resultaat kunt bekijken, tekst en afbeeldingen kunt aanpassen en zelf kunt publiceren.
 
+Dezelfde galerij zit ook in de editor. Open de rail **Ontwerp** om pakketten te bekijken op het canvas zelf. Klik op **Bekijk voorbeeld** bij een kaart om het publieke voorbeeld op ware grootte te zien, naast je eigen site, en gebruik **Terug naar alle ontwerpen** om verder te vergelijken. Pas je een pakket toe vanuit de editor, dan wordt je concept opnieuw geladen en kom je terug bij de rail Secties, zodat je direct verder kunt bewerken.
+
 Zoek op vak of stijl via het zoekveld. Het aantal ernaast wordt bijgewerkt terwijl je filtert. Zijn er nog geen pakketten beschikbaar, dan meldt de pagina dat ze hier verschijnen zodra de eerste ontwerpen zijn goedgekeurd.
 
-Bron: `apps/web/pages/website/pakketten.vue`; `apps/web/services/site-packages.service.ts`; `apps/api/src/modules/sites/packages.service.js`.
+Bron: `apps/web/pages/website/pakketten.vue`; `apps/web/components/site-builder/SiteEditorScreen.vue`; `apps/web/components/site-builder/SitePackageGallery.vue`; `apps/web/services/site-packages.service.ts`; `apps/api/src/modules/sites/packages.service.js`.
 
 ### Bespoke-ontwerpen
 

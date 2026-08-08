@@ -59,9 +59,11 @@ How it works:
 5. The package is applied to your **draft** only. Nothing is published automatically.
 6. The editor opens so you can review the result, change copy and images, and publish when you are ready.
 
+The same gallery lives inside the editor. Open the **Ontwerp** rail to browse packages on the canvas itself. Click **Preview** on a card to see the package's public preview at full size, alongside your own site, and use **Back to all designs** to keep comparing. Applying a package from the editor reloads your draft and returns you to the Sections rail so you can keep editing.
+
 Search the gallery by trade or style with the search field. The count next to the field updates as you filter. If no packages are available yet, the page tells you they will appear once the first designs are approved.
 
-Source: `apps/web/pages/website/pakketten.vue`; `apps/web/services/site-packages.service.ts`; `apps/api/src/modules/sites/packages.service.js`.
+Source: `apps/web/pages/website/pakketten.vue`; `apps/web/components/site-builder/SiteEditorScreen.vue`; `apps/web/components/site-builder/SitePackageGallery.vue`; `apps/web/services/site-packages.service.ts`; `apps/api/src/modules/sites/packages.service.js`.
 
 ### Bespoke designs
 

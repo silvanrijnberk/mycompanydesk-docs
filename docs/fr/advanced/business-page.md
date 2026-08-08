@@ -59,9 +59,11 @@ Comment ca marche :
 5. Le pack est applique uniquement a votre **brouillon**. Rien n'est publie automatiquement.
 6. L'editeur s'ouvre pour que vous puissiez verifier le resultat, modifier les textes et images, et publier quand vous etes pret.
 
+La meme galerie est accessible depuis l'editeur. Ouvrez le rail **Ontwerp** pour parcourir les packs directement sur le canevas. Cliquez sur **Voir l'apercu** sur une carte pour voir l'apercu public en pleine grandeur, a cote de votre propre site, puis sur **Retour a tous les designs** pour poursuivre la comparaison. Si vous appliquez un pack depuis l'editeur, votre brouillon est recharge et vous revenez au rail Sections pour continuer a modifier.
+
 Recherchez par metier ou par style grace au champ de recherche. Le compteur a cote se met a jour au fur et a mesure du filtrage. Si aucun pack n'est encore disponible, la page indique qu'ils apparaitront ici des que les premiers modeles seront approuves.
 
-Source : `apps/web/pages/website/pakketten.vue`; `apps/web/services/site-packages.service.ts`; `apps/api/src/modules/sites/packages.service.js`.
+Source : `apps/web/pages/website/pakketten.vue`; `apps/web/components/site-builder/SiteEditorScreen.vue`; `apps/web/components/site-builder/SitePackageGallery.vue`; `apps/web/services/site-packages.service.ts`; `apps/api/src/modules/sites/packages.service.js`.
 
 ### Designs sur mesure
 

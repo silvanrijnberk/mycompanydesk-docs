@@ -59,9 +59,11 @@ So funktioniert es:
 5. Das Paket wird nur auf Ihren **Entwurf** angewendet. Es wird nichts automatisch veröffentlicht.
 6. Der Editor öffnet sich, damit Sie das Ergebnis prüfen, Texte und Bilder anpassen und selbst veröffentlichen können.
 
+Dieselbe Galerie finden Sie auch im Editor. Öffnen Sie die Leiste **Ontwerp**, um Pakete direkt auf der Arbeitsfläche zu durchstöbern. Klicken Sie auf einer Karte auf **Vorschau ansehen**, um die öffentliche Vorschau in Originalgröße neben Ihrer eigenen Site zu sehen, und auf **Zurück zu allen Designs**, um weiter zu vergleichen. Wenden Sie ein Paket im Editor an, wird Ihr Entwurf neu geladen und Sie gelangen zurück zur Leiste Abschnitte, um direkt weiterzubearbeiten.
+
 Suchen Sie nach Bereich oder Stil über das Suchfeld. Die Anzahl daneben wird beim Filtern aktualisiert. Sind noch keine Pakete verfügbar, teilt Ihnen die Seite mit, dass sie hier erscheinen, sobald die ersten Designs freigegeben sind.
 
-Quelle: `apps/web/pages/website/pakketten.vue`; `apps/web/services/site-packages.service.ts`; `apps/api/src/modules/sites/packages.service.js`.
+Quelle: `apps/web/pages/website/pakketten.vue`; `apps/web/components/site-builder/SiteEditorScreen.vue`; `apps/web/components/site-builder/SitePackageGallery.vue`; `apps/web/services/site-packages.service.ts`; `apps/api/src/modules/sites/packages.service.js`.
 
 ### Bespoke-Designs
 
