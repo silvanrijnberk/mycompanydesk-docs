@@ -16,7 +16,10 @@ Der Website-Builder ersetzt das alte einseitige Unternehmensprofil. Jeder neue W
 - **Design-Tokens**: Legen Sie Markenfarben, Schriften, Abstände, Eckenradius, Bewegungsstil, benutzerdefiniertes CSS und ein Site-Favicon fest. Änderungen gelten für die gesamte Site.
 - **Navigations-Editor**: Ordnen Sie Header-Links per Drag-and-Drop, mit Dropdown-Gruppen, externen Links und Inline-Navbar-Styling (Markenname, CTA-Button, Telefon, Anruf-Leiste, Sticky).
 - **Veröffentlichungs-Snapshots**: Arbeiten Sie im Entwurf, sehen Sie sich Ihre Änderungen in der Vorschau an und veröffentlichen Sie dann. Unveröffentlichte Änderungen werden in der oberen Leiste angezeigt.
-- **Responsive Vorschau**: Wechseln Sie während der Bearbeitung zwischen Desktop-, Tablet- und Mobilansicht.
+- **Responsive Vorschau**: Wechseln Sie während der Bearbeitung zwischen Desktop-, Tablet- und Mobilansicht. In der Desktopansicht können Sie auch eine echte Viewport-Breite wählen (1280, 1440 oder 1920 Pixel), damit die eigenen Media Queries der Site ehrlich reagieren statt simuliert zu werden.
+- **Größenverstellbare Leisten**: Ziehen Sie den rechten Rand der linken Leiste und den linken Rand des rechten Inspektors, um beide breiter oder schmaler zu machen. Doppelklicken Sie auf einen Ziehgriff, um zur Standardbreite zurückzukehren. Die Breite wird pro Gerät in localStorage gespeichert.
+- **Zoom und Einpassen**: Zoomen Sie die Arbeitsfläche von 25 % bis 200 %, oder klicken Sie auf den Zoomwert, um Einpassen, 50 %, 100 % oder 200 % zu wählen. Der Arbeitsbereich scrollt, wenn die skalierte Arbeitsfläche ihn überragt.
+- **Tastenkürzel**: Rückgängig/Wiederherstellen, ausgewählten Abschnitt verschieben, Ein- und Auszoomen, Einpassen, Panels schließen und die Kurzübersicht über die in der unteren Leiste angezeigten Standardtasten öffnen.
 
 Ihr Website-Dashboard finden Sie unter **Unternehmen > Ihre Website** (`/website`). Der Editor wird von dort geöffnet.
 
@@ -53,7 +56,7 @@ Die Galerie **Pakete** (`Unternehmen > Ihre Website > Pakkete`) ist der schnells
 So funktioniert es:
 
 1. Öffnen Sie **Unternehmen > Ihre Website** und klicken Sie oben auf **Pakkete**.
-2. Durchstöbern Sie die Karten. Jede Karte zeigt Paketname, Bereich, Seitenanzahl, eine kurze Beschreibung und eine Farbswatch.
+2. Durchstöbern Sie die Karten. Jede Karte zeigt einen echten Screenshot des Pakets, wenn einer erstellt wurde, sonst eine Farbswatch aus der eigenen Palette des Pakets. Name, Bereich, Seitenanzahl und kurze Beschreibung stehen unter dem Bild.
 3. Klicken Sie auf **Vorschau ansehen**, um ein Live-Beispiel des Pakets in einem neuen Tab zu öffnen.
 4. Klicken Sie auf **Dieses Paket verwenden**. Eine Bestätigung erklärt, dass Ihre aktuelle Entwurfs-Site (Seiten, Abschnitte und Stil) ersetzt wird.
 5. Das Paket wird nur auf Ihren **Entwurf** angewendet. Es wird nichts automatisch veröffentlicht.
