@@ -40,4 +40,10 @@ features:
       src: /icons/house.svg
     title: Contrats & Actifs
     details: Gérez les contrats de location, suivez les biens immobiliers, véhicules et équipements avec une gestion complète du cycle de vie.
+  - icon:
+      src: /icons/house.svg
+    title: Site web sur votre propre domaine
+    details: Créez un site multi-pages sur votre propre domaine, partez d'un forfait site prêt à l'emploi, ou appliquez un design sur mesure. Tout depuis la même app.
+    link: /fr/advanced/business-page
+    linkText: En savoir plus
 ---

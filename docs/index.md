@@ -40,4 +40,10 @@ features:
       src: /icons/house.svg
     title: Contracts & Assets
     details: Manage rental contracts, track properties, vehicles, and equipment with full lifecycle management.
+  - icon:
+      src: /icons/house.svg
+    title: Website on your own domain
+    details: Build a multi-page site on your own domain, start from a pre-styled site package, or apply a bespoke design. Managed alongside the rest of your business.
+    link: /advanced/business-page
+    linkText: Read more
 ---
