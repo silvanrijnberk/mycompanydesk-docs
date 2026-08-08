@@ -17,6 +17,8 @@ La page Espaces de travail (`/werkruimtes`) est un lieu central pour tout ce que
 - Le selecteur d'espace de travail affiche maintenant une ligne de synthese en haut. Vos propres entreprises et les administrations clientes sont regroupees separement, et un champ de recherche apparait des que vous avez plus de huit espaces de travail.
 - Chaque ligne affiche la propre marque de l'espace de travail : son logo, ou une tuile coloree avec ses initiales. Vos propres entreprises portent leur couleur; les administrations clientes restent neutres. L'espace de travail dans lequel vous vous trouvez actuellement est mis en evidence.
 
+Quand vous choisissez un espace de travail dans le selecteur, l'application bascule maintenant sans rechargement complet de la page. Elle efface l'etat de l'espace de travail precedent des stores Pinia et des caches de modules, annule les requetes en vol qui arriveraient apres le basculement, recharge l'enveloppe pour mettre a jour la navigation et les droits, puis vous redirige vers la page cible.
+
 ## Si vous avez un seul espace de travail
 
 Vous obtenez trois entrees au lieu d'une page vide :

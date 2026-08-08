@@ -1,6 +1,6 @@
 ---
 title: Domains, Website und Posteingang
-last_verified: 2026-05-09
+last_verified: 2026-08-08
 ---
 
 # Domains, Website und Posteingang
@@ -196,6 +196,10 @@ Was die Tabs abdecken:
 Wenn Ihr Workspace mehrere aktive eigene Domains hat (Pro-Tarif), können Sie über einen Domain-Wechsler eine Domain-Variante der Website bearbeiten. Jede Domain erhält ihre eigenen Seiten, Navigation, Design-Tokens und Veröffentlichungs-Snapshots. Ein Domain-Wechsel setzt den aktiven Tab zurück.
 
 Die öffentliche Website wird unter der am besten geeigneten URL des Unternehmens bereitgestellt: eigene Domain-Root → Workspace-Subdomain → Fallback `/portal/<slug>`-Route.
+
+### Site-Pakete
+
+`/website/pakketten` ist eine Galerie genehmigter, vorgestylter Site-Pakete. Sie koennen nach Branche oder Stil suchen. Wenn Sie ein Paket waehlen, wird Ihre Entwurfs-Website ersetzt (Seiten, Abschnitte und Design-Tokens), aber niemals automatisch veroeffentlicht; Sie pruefen das Ergebnis im Website-Builder und veroeffentlichen es selbst, wenn Sie bereit sind. Aeltere `/website/ontwerpen`-Links leiten hierhin weiter.
 
 Siehe [Website-Builder](/de/advanced/business-page) für die vollständige Editor-Anleitung.
 

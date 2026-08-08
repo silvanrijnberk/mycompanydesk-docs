@@ -1,6 +1,6 @@
 ---
 title: Domeinen, website en inbox
-last_verified: 2026-05-09
+last_verified: 2026-08-08
 ---
 
 # Domeinen, website en inbox
@@ -196,6 +196,10 @@ Wat de tabbladen doen:
 Wanneer je werkruimte meerdere actieve eigen domeinen heeft (Pro-abonnement), kun je via een domeinwisselaar een per-domein-variant van de site bewerken. Elk domein krijgt zijn eigen pagina's, navigatie, ontwerptokens en publicatiesnapshot. Wisselen van domein zet de actieve tab terug.
 
 De openbare site wordt getoond op de best beschikbare URL die het bedrijf bezit: eigen domein-root → werkruimte-subdomein → terugval `/portal/<slug>`-route.
+
+### Pakketten
+
+`/website/pakketten` toont goedgekeurde, voorgestylede sitepakketten. Je kunt zoeken op vak of stijl. Een pakket kiezen vervangt je conceptsite (pagina's, secties en ontwerptokens), maar publiceert nooit automatisch; je bekijkt het resultaat in de sitebouwer en publiceert zelf wanneer je tevreden bent. Oude `/website/ontwerpen`-links verwijzen hierheen door.
 
 Zie [Sitebouwer](/nl/advanced/business-page) voor de volledige editorgids.
 
