@@ -107,17 +107,20 @@ Het merendeel van het koppelen blijft een handmatige stap. MyCompanyDesk koppelt
 
 ## Meldingen
 
-Onderaan de instellingenpagina kun je vier bankmeldingen los van elkaar aanzetten:
+Onderaan de instellingenpagina kun je vijf bankmeldingen los van elkaar aanzetten:
 
 - **E-mail bij sync-fout**: een e-mail en in-app melding wanneer een bankkoppeling niet kan synchroniseren, met een link om het op te lossen.
 - **Wekelijks overzicht**: een e-mail op maandagochtend met de bankactiviteit van de afgelopen week. Deze wordt overgeslagen als er niets te melden was.
 - **Push bij grote transactie**: een melding wanneer een transactie een door jou ingesteld bedrag bereikt of overschrijdt.
 - **Leveranciersregel geleerd**: een in-app melding wanneer MyCompanyDesk een nieuwe vaste-leveranciersregel heeft geleerd vanuit je bevestigde concepten.
+- **Vergrendelde BTW-periode**: een eenmalige melding wanneer de bankfeed probeert een uitgaande transactie te boeken in een BTW-periode die al is aangegeven en vergrendeld. De regel wordt definitief overgeslagen zodat de sync niet eindeloos opnieuw probeert, en de melding legt uit wat je kunt doen: boek de uitgave handmatig met een datum in de huidige open periode, of dien een suppletie-aangifte in.
 
 ## Problemen oplossen
 
 **Mijn bankkoppeling toont een fout.** Open de uitgaven-instellingen via het tandwiel op de Uitgaven-pagina. Als je bank een nieuwe autorisatie nodig heeft zie je dat op de rij van de koppeling; de sync-foutmelding linkt er ook naartoe.
 
 **Een transactie is geen uitgave geworden.** Controleer of auto-import aanstaat, of het bedrag boven je minimumbedrag ligt en of het een uitgaande betaling is. Je kunt de transactie altijd handmatig koppelen op de Transacties-pagina.
+
+**Een banktransactie valt in een vergrendelde BTW-periode.** De bankfeed kan geen uitgaven automatisch boeken met een datum in een periode die al is aangegeven. Je krijgt een eenmalige melding "Banktransactie: BTW-periode vergrendeld", de regel wordt gemarkeerd als definitief overgeslagen en de volgende sync probeert hem niet opnieuw. Om de kosten alsnog vast te leggen, boek je de uitgave handmatig met een datum in de huidige open periode, of vraag je je boekhouder of een suppletie-aangifte de juiste route is.
 
 **Ik krijg geen meldingen.** Controleer de meldingsschakelaars onderaan de uitgaven-instellingen.

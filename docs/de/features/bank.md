@@ -107,17 +107,20 @@ Das Verknüpfen bleibt meist ein manueller Schritt. MyCompanyDesk verknüpft jed
 
 ## Benachrichtigungen
 
-Unten auf der Einstellungsseite lassen sich vier Bankbenachrichtigungen unabhängig voneinander einschalten:
+Unten auf der Einstellungsseite lassen sich fünf Bankbenachrichtigungen unabhängig voneinander einschalten:
 
 - **Synchronisationsfehler**: eine E-Mail und In-App-Benachrichtigung, wenn eine Bankverbindung nicht synchronisieren kann, mit einem Link zur Behebung.
 - **Wochenübersicht**: eine E-Mail am Montagmorgen mit der Bankaktivität der vergangenen Woche. Sie wird übersprungen, wenn es nichts zu berichten gab.
 - **Große Transaktionen**: eine Meldung, wenn eine Transaktion einen von Ihnen festgelegten Betrag erreicht oder überschreitet.
 - **Lieferantenregel gelernt**: eine In-App-Benachrichtigung, wenn MyCompanyDesk aus Ihren bestätigten Entwürfen eine neue vertrauenswürdige Lieferantenregel gelernt hat.
+- **Gesperrte USt.-Periode**: eine einmalige Meldung, wenn der Bank-Feed versucht, eine ausgehende Transaktion in eine bereits eingereichte und gesperrte USt.-Periode zu buchen. Die Zeile wird dauerhaft übersprungen, damit der Sync nicht endlos wiederholt, und die Benachrichtigung erklärt die Optionen: buchen Sie die Ausgabe manuell mit Datum in der aktuellen offenen Periode, oder reichen Sie eine Ergänzungsmeldung ein.
 
 ## Fehlerbehebung
 
 **Meine Bankverbindung zeigt einen Fehler.** Öffnen Sie die Ausgabeneinstellungen über das Zahnrad auf der Ausgabenseite. Braucht Ihre Bank eine neue Freigabe, sehen Sie das in der Zeile der Verbindung; die Fehlerbenachrichtigung verlinkt ebenfalls dorthin.
 
 **Eine Transaktion wurde keine Ausgabe.** Prüfen Sie, ob der Auto-Import eingeschaltet ist, der Betrag über Ihrem Mindestbetrag liegt und es eine abgehende Zahlung ist. Sie können die Transaktion jederzeit von Hand auf der Seite Transaktionen zuordnen.
+
+**Eine Banktransaktion fällt in eine gesperrte USt.-Periode.** Der Bank-Feed kann keine Ausgaben automatisch mit Datum in einer bereits eingereichten Periode buchen. Sie erhalten die einmalige Meldung "Banktransaktion: USt.-Periode gesperrt", die Zeile wird als dauerhaft übersprungen markiert und der nächste Sync versucht sie nicht erneut. Um die Kosten dennoch zu erfassen, buchen Sie die Ausgabe manuell mit einem Datum in der aktuellen offenen Periode, oder fragen Sie Ihren Steuerberater, ob eine Ergänzungsmeldung der richtige Weg ist.
 
 **Ich bekomme keine Benachrichtigungen.** Prüfen Sie die Schalter unten auf der Seite mit den Ausgabeneinstellungen.

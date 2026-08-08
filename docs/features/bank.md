@@ -108,17 +108,20 @@ Most linking is still a manual step. MyCompanyDesk does, however, automatically 
 
 ## Notifications
 
-Four bank notifications can be switched on independently at the bottom of the settings page:
+Five bank notifications can be switched on independently at the bottom of the settings page:
 
 - **Sync errors**: an email and in-app notification when a bank connection fails to sync, with a link to fix it.
 - **Weekly digest**: a Monday morning email summarising the past week's bank activity. It is skipped when there was nothing to report.
 - **Large transactions**: an alert when a transaction meets or exceeds a euro threshold you set yourself.
 - **Vendor rule learned**: an in-app notification when MyCompanyDesk has learned a new trusted vendor rule from your confirmed drafts.
+- **Locked VAT period**: a one-time alert when the bank feed tries to book an outgoing transaction inside a VAT period that has already been filed and locked. The row is skipped permanently so the sync does not retry forever, and the notification tells you how to handle it: book the expense manually with a current-period date, or file a supplementary VAT return.
 
 ## Troubleshooting
 
 **My bank connection shows an error.** Open the expense settings via the gear on the Expenses page. If your bank needs a fresh authorisation you will see it on the connection row; the sync-error notification also links you there.
 
 **A transaction did not become an expense.** Check that auto-import is on, that the amount is above your minimum import amount, and that it is an outgoing payment. You can always link the transaction by hand on the Transacties page.
+
+**A bank transaction landed in a locked VAT period.** The bank feed cannot auto-book expenses dated inside a period that has already been filed. You get a one-time "Bank transaction: locked VAT period" notification, the row is marked as permanently skipped, and the next sync does not retry it. To record the cost, either create the expense manually with a date in the current open period, or ask your accountant whether a supplementary VAT filing is the right route.
 
 **I am not getting notifications.** Check the notification toggles at the bottom of the expense settings page.
