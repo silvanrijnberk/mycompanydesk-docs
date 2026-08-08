@@ -53,8 +53,17 @@ De engine werkt op basis van een watermerk (`last_delivered_at`), niet op losse 
 
 De pagina **Toegang en boekhouder** houdt een afleverlog bij met wat is doorgestuurd en wanneer. Daarnaast registreert het een activiteitsoverzicht van de gekoppelde boekhouder: wat deze heeft bekeken of gewijzigd in de werkruimte. Beide logs zijn zichtbaar voor eigenaars en team-admins; de boekhouder ziet het afleverlog maar kan het niet wissen.
 
+## Handmatig doorsturen vanuit een record
+
+Je kunt ook een losse factuur, uitgave of offerte direct vanaf de detailpagina naar je boekhouder sturen. Zoek de knop **Naar boekhouder versturen** bij de e-mailacties. Dit legt een handmatige aflevering vast in hetzelfde log, zodat je het naast automatisch doorsturen ziet. Mislukt een handmatige verzending, dan wordt dat ook gelogd, zodat je hetzelfde stuk niet per ongeluk twee keer verstuurt.
+
+## Verzonden-items
+
+Handmatige verzendingen en andere werkruimte-e-mails verschijnen in het overzicht **Verzonden** in je inbox. Ze staan gegroepeerd onder de boekhouder-categorie, zodat je in een oogopslag ziet welke stukken de werkruimte al hebben verlaten.
+
 ## Gerelateerd
 
 - [Toegang en boekhouder](/nl/settings/team) voor het uitnodigen van je boekhouder en het kiezen van een contact
 - [Facturen](/nl/features/invoices) voor het versturen en beheren van verkoopfacturen
 - [Uitgaven](/nl/features/expenses) voor het toevoegen van bonnen en uitgaven
+- [Offertes](/nl/features/quotes) voor het maken en omzetten van offertes
