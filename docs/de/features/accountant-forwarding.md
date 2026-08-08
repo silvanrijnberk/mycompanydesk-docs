@@ -53,8 +53,17 @@ Die Engine arbeitet mit einem Wasserzeichen (`last_delivered_at`), nicht mit ein
 
 Die Seite **Zugang und Steuerberater** fuehrt ein Zustellungsprotokoll, das zeigt, was wann weitergeleitet wurde. Ausserdem wird eine Aktivitaetsuebersicht des verknuepften Steuerberaters erfasst: was er in Ihrem Arbeitsbereich angesehen oder geaendert hat. Beide Protokolle sind fuer Eigentuemer und Admins sichtbar; der Steuerberater sieht das Zustellungsprotokoll, kann es aber nicht loeschen.
 
+## Manuelle Weiterleitung aus einem Beleg
+
+Sie koennen auch eine einzelne Rechnung, Ausgabe oder ein Angebot direkt von der Detailseite an Ihren Steuerberater uebermitteln. Suchen Sie die Schaltflaeche **An Steuerberater senden** neben den E-Mail-Aktionen. Damit wird eine manuelle Zustellung im selben Protokoll erfasst, sodass Sie sie neben der automatischen Weiterleitung sehen. Auch fehlgeschlagene manuelle Sendungen werden protokolliert, damit Sie denselben Beleg nicht versehentlich zweimal senden.
+
+## Gesendete Elemente
+
+Manuelle Sendungen und andere Arbeitsbereichs-E-Mails erscheinen im Posteingang unter **Gesendet**. Sie sind unter der Steuerberater-Kategorie gruppiert, sodass Sie auf einen Blick erkennen, welche Belege den Arbeitsbereich bereits verlassen haben.
+
 ## Verwandt
 
 - [Zugriff und Steuerberater](/de/settings/team) fuer das Einladen Ihres Steuerberaters und die Auswahl eines Kontakts
 - [Rechnungen](/de/features/invoices) fuer das Versenden und Verwalten von Verkaufsrechnungen
 - [Ausgaben](/de/features/expenses) fuer das Hinzufuegen von Belegen und Ausgaben
+- [Angebote](/de/features/quotes) fuer das Erstellen und Umwandeln von Angeboten

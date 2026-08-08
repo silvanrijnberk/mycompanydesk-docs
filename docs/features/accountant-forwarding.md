@@ -53,8 +53,17 @@ The engine runs on a watermark (`last_delivered_at`), not on individual status h
 
 The **Access & accountant** page keeps a delivery log showing what was forwarded and when. It also records an activity overview for the connected accountant: what they viewed or changed inside the workspace. Both logs are visible to workspace owners and team admins; the accountant can see the delivery log but cannot erase it.
 
+## Manual forwarding from a record
+
+You can also send a single invoice, expense, or quote to your accountant straight from its detail page. Look for the **Send to accountant** button near the email actions. This records a manual delivery in the same log, so you can see it next to automatic forwarding. Failed manual sends are logged too, so you do not resend the same record by accident.
+
+## Sent box
+
+Manual sends and other workspace emails appear in the **Sent** box in your inbox. They are grouped under the accountant category, so you can see at a glance which documents already left the workspace.
+
 ## Related
 
 - [Access & accountant](/settings/team) for inviting your accountant and choosing a contact
 - [Invoices](/features/invoices) for sending and managing sales invoices
 - [Expenses](/features/expenses) for adding receipts and expenses
+- [Quotes](/features/quotes) for creating and converting estimates

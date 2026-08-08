@@ -53,8 +53,17 @@ Le moteur fonctionne avec un watermark (`last_delivered_at`), et non avec des de
 
 La page **Acces et comptable** conserve un journal de livraison indiquant ce qui a ete transmis et quand. Elle enregistre egalement une vue d'ensemble de l'activite du comptable connecte : ce qu'il a consulte ou modifie dans l'espace de travail. Les deux journaux sont visibles par les proprietaires et les administrateurs ; le comptable peut voir le journal de livraison mais ne peut pas l'effacer.
 
+## Transmission manuelle depuis une piece
+
+Vous pouvez aussi envoyer une seule facture, depense ou devis a votre comptable depuis sa page de detail. Cherchez le bouton **Envoyer au comptable** pres des actions e-mail. Cela enregistre une livraison manuelle dans le meme journal, pour que vous la voyiez a cote de la transmission automatique. Les envois manuels echoues sont aussi enregistres, afin que vous ne renvoyiez pas la meme piece par inadvertance.
+
+## Elements envoyes
+
+Les envois manuels et les autres e-mails de l'espace de travail apparaissent dans la boite **Envoye** de votre boite de reception. Ils sont regroupes sous la categorie comptable, pour que vous voyiez d'un coup d'oeil quels documents ont deja quitte l'espace de travail.
+
 ## Voir aussi
 
 - [Acces et comptable](/fr/settings/team) pour inviter votre comptable et choisir un contact
 - [Factures](/fr/features/invoices) pour envoyer et gerer les factures de vente
 - [Depenses](/fr/features/expenses) pour ajouter des justificatifs et des depenses
+- [Devis](/fr/features/quotes) pour creer et convertir des devis
