@@ -32,6 +32,23 @@ The quote PDF is attached to the email for the customer to review.
 
 If your workspace has general terms in Documents, the email preview also shows an **Include general terms** toggle. It is on by default for quotes. When enabled, the current terms PDF is attached to the email and the send is recorded as the provision event on the terms document.
 
+## Customer activity
+
+Once a quote has been emailed, the quote detail page shows a set of engagement pills that mirror the activity log already used for invoices:
+
+- **Sent**: the email left your workspace.
+- **Opened**: the customer opened the email (tracked by a pixel embedded in the quote send).
+- **Viewed**: the customer opened the public quote page.
+- **Downloaded**: the customer downloaded the quote PDF.
+
+A quote never shows a **Paid** pill, because quotes are not paid directly; a signed quote is shown in its own signing card instead.
+
+The pills remain off until the quote is actually emailed. Before that, the activity card stays hidden so it does not clutter the page.
+
+Events are stored in the same `invoice_customer_events` log as invoice events, scoped by an `entity_type` column so quote events are kept separate from invoice events.
+
+Source: `apps/api/src/modules/invoices/customer-events.service.js` - `recordEvent`, `getEventsForQuote`; `apps/api/src/db/migrations/20270302000000_customer_events_entity_type.js` - `entity_type` column; `apps/api/src/modules/quotes/quotes.routes.js` - `GET /:id/customer-events`.
+
 ## Online quote signing
 
 You can ask a customer to sign a quote online instead of sending it only as a PDF. On the quote detail page, choose **Send for signing** to send a signing request to the customer. The quote status changes to **Sent** so you can track it.

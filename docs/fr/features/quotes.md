@@ -32,6 +32,23 @@ Le PDF du devis est joint a l'e-mail pour que le client puisse l'examiner.
 
 Si votre espace de travail a des conditions generales dans Documents, l'apercu d'e-mail propose aussi l'option **Joindre les conditions generales**. Elle est activee par defaut pour les devis. Quand elle est activee, le PDF des conditions actuelles est joint a l'e-mail et l'envoi est enregistre comme evenement de remise sur le document des conditions.
 
+## Activité client
+
+Une fois qu'un devis a été envoyé par e-mail, la page de détail affiche des pastilles d'activité qui fonctionnent comme pour les factures :
+
+- **Envoyé**: l'e-mail a quitté votre espace de travail.
+- **Ouvert**: le client a ouvert l'e-mail (suivi par un pixel intégré à l'envoi du devis).
+- **Consulté**: le client a ouvert la page publique du devis.
+- **Téléchargé**: le client a téléchargé le PDF du devis.
+
+Un devis n'affiche jamais une pastille **Payé**, car les devis ne sont pas payés directement ; un devis signé apparaît dans sa propre carte de signature.
+
+Les pastilles restent inactives tant que le devis n'a pas réellement été envoyé. Avant cela, la carte reste masquée pour ne pas encombrer la page.
+
+Les événements sont stockés dans le même journal `invoice_customer_events` que les activités de facturation, séparés par une colonne `entity_type` afin que les devis et les factures ne se mélangent pas.
+
+Source : `apps/api/src/modules/invoices/customer-events.service.js` - `recordEvent`, `getEventsForQuote` ; `apps/api/src/db/migrations/20270302000000_customer_events_entity_type.js` - colonne `entity_type` ; `apps/api/src/modules/quotes/quotes.routes.js` - `GET /:id/customer-events`.
+
 ## Faire signer un devis en ligne
 
 Vous pouvez demander à un client de signer un devis en ligne au lieu de ne l'envoyer que sous forme de PDF. Ouvrez la page de détail du devis et choisissez **Envoyer pour signature** pour envoyer une demande de signature au client. Le statut du devis passe à **Envoyé** afin que vous puissiez le suivre.

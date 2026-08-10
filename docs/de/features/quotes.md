@@ -32,6 +32,23 @@ Das Angebots-PDF wird der E-Mail als Anhang beigefügt, damit der Kunde es über
 
 Wenn in Ihrem Arbeitsbereich Allgemeine Geschäftsbedingungen in Dokumenten hinterlegt sind, zeigt der E-Mail-Vorschau-Dialog außerdem den Schalter **Allgemeine Geschäftsbedingungen mitschicken** an. Er ist für Angebote standardmäßig aktiviert. Wenn Sie ihn einschalten, wird die aktuelle AGB-PDF der E-Mail beigefügt und der Versand als Übergabemoment auf dem AGB-Dokument protokolliert.
 
+## Kundenaktivität
+
+Sobald ein Angebot per E-Mail versendet wurde, zeigt die Detailseite Aktivitäts-Chips, die genauso funktionieren wie bei Rechnungen:
+
+- **Gesendet**: die E-Mail wurde aus Ihrem Arbeitsbereich versendet.
+- **Geöffnet**: der Kunde hat die E-Mail geöffnet (gemessen über ein Pixel in der Angebots-E-Mail).
+- **Angesehen**: der Kunde hat die öffentliche Angebotsseite aufgerufen.
+- **Heruntergeladen**: der Kunde hat das Angebot als PDF heruntergeladen.
+
+Ein Angebot zeigt nie einen **Bezahlt**-Chip, denn Angebote werden nicht direkt bezahlt; ein unterschriebenes Angebot wird in seiner eigenen Unterschriftenkarte angezeigt.
+
+Die Chips bleiben inaktiv, bis das Angebot tatsächlich per E-Mail versendet wurde. Vorher bleibt die Karte verborgen, damit die Seite nicht unnötig voll wirkt.
+
+Ereignisse werden im selben `invoice_customer_events`-Log wie Rechnungsaktivitäten gespeichert, getrennt durch eine `entity_type`-Spalte, damit Angebote und Rechnungen nicht durcheinandergeraten.
+
+Quelle: `apps/api/src/modules/invoices/customer-events.service.js` - `recordEvent`, `getEventsForQuote`; `apps/api/src/db/migrations/20270302000000_customer_events_entity_type.js` - `entity_type`-Spalte; `apps/api/src/modules/quotes/quotes.routes.js` - `GET /:id/customer-events`.
+
 ## Angebot online unterschreiben lassen
 
 Sie können einen Kunden bitten, ein Angebot online zu unterschreiben, anstatt es nur als PDF zu versenden. Öffnen Sie die Angebotsdetailseite und wählen Sie **Zum Unterschreiben senden**, um eine Unterschriftenanfrage an den Kunden zu senden. Der Angebotsstatus wechselt zu **Gesendet**, damit Sie den Fortschritt verfolgen können.
