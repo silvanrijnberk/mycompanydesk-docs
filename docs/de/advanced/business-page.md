@@ -409,6 +409,7 @@ Der Navigations-Editor ermöglicht es Ihnen, die Header-Links Ihrer Site zu ordn
 - **Anruf-Label**: Der Text neben dem Telefonsymbol auf mobilen Geräten (standardmäßig "Jetzt anrufen", wenn leer gelassen).
 - **Mobile Anruf-Leiste**: Wenn aktiviert, bleibt eine feste Anruftaste unten auf dem Bildschirm auf mobilen Geräten.
 - **Sticky-Navbar**: Wenn aktiviert (standardmäßig an), bleibt die Navigationsleiste beim Scrollen sichtbar.
+- **Lesefortschrittsbalken**: Zeigt einen schmalen Fortschrittsbalken oben auf jeder Seite an, während Besucher scrollen. Die Balkenfarbe entspricht Ihrer Markenfarbe und lässt sich im Stil-Tab ein- oder ausschalten.
 
 Diese Einstellungen gelten für jede Seite Ihrer Site, genau wie im Stil-Tab. Änderungen werden automatisch mit einer kurzen Verzögerung nach dem Ende der Eingabe gespeichert. Für das visuelle Layout, den Hintergrundstil und die Button-Darstellung siehe den [Stil-Tab](#styling-ihrer-site).
 
