@@ -44,7 +44,7 @@ De werkpagina toont open werk in twee blokken: eerst je eigen bedrijven, dan kla
 Als je een accountantskantoor hebt, bevat de sectie Kantoor drie kantoorpagina's:
 
 - **Kantooroverzicht** (`/werkruimtes/kantoor`) - kantoormedewerkers, openstaande klantuitnodigingen, partner-deellink en statistieken, en of gratis Pro is toegekend.
-- **Facturatie** (`/werkruimtes/kantoor/facturatie`) - bied aan om een klantadministratie te betalen. De klant moet accepteren voordat er iets in rekening wordt gebracht; de prijs per overgenomen administratie staat vooraf op het scherm.
+- **Facturatie** (`/werkruimtes/kantoor/facturatie`) - bied aan om een klantadministratie te betalen. De klant moet accepteren voordat er iets in rekening wordt gebracht; de prijs per overgenomen administratie staat vooraf op het scherm. Een openstaand aanbod zie je apart staan, zodat je het kunt intrekken zolang de klant nog niet heeft geantwoord.
 - **Export** (`/werkruimtes/kantoor/export`) - exporteer meerdere klantadministraties tegelijk. Kies jaar, periode en exportformaat, selecteer de administraties en de app downloadt per klant een archief. Eventuele mislukte exports blijven staan zodat je ziet wat niet is voltooid.
 
 ## Laadstatus en fouten

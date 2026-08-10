@@ -44,7 +44,7 @@ La page Travail liste le travail ouvert en deux blocs : vos propres entreprises 
 Si vous dirigez un cabinet comptable, la section Cabinet contient trois pages au niveau du cabinet :
 
 - **Tableau de bord du cabinet** (`/werkruimtes/kantoor`) - membres du cabinet, invitations clientes en attente, lien de partage partenaire et statistiques, ainsi que l'attribution eventuelle de Pro gratuit.
-- **Facturation** (`/werkruimtes/kantoor/facturatie`) - proposez de prendre en charge l'abonnement d'une administration cliente. Le client doit accepter avant que quoi que ce soit soit facture; le prix par administration prise en charge est affiche avant confirmation.
+- **Facturation** (`/werkruimtes/kantoor/facturatie`) - proposez de prendre en charge l'abonnement d'une administration cliente. Le client doit accepter avant que quoi que ce soit soit facture; le prix par administration prise en charge est affiche avant confirmation. Une offre en attente s'affiche separement pour que vous puissiez la retirer tant que le client n'a pas repondu.
 - **Export** (`/werkruimtes/kantoor/export`) - exportez plusieurs administrations clientes a la fois. Choisissez l'annee, la periode et le format d'export, selectionnez les administrations, et l'application telecharge une archive par client. Les exports echoues restent a l'ecran pour que vous voyiez ce qui n'a pas ete termine.
 
 ## Etats de chargement et erreurs
