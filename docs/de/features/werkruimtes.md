@@ -183,6 +183,48 @@ In einem Mandanten-Arbeitsbereich ist die Seitenleiste kuerzer, denn Teile, die 
 - Steuerberater sehen nur die Arbeitsbereiche und Seiten, die ihr Mandant freigegeben hat.
 - Teammitglieder sehen "Arbeitsbereiche" nur, wenn sie mehr als einen Arbeitsbereich haben und ihre Rolle dies erlaubt.
 
+## Einblicke fuer Steuerberater
+
+Die Seite "Einblicke" unter `/werkruimtes/inzicht` vergleicht Mandanten-Administrationen und zeigt die Arbeitslast pro Periode. Sie ist nur in der Kanzlei-Ansicht sichtbar und nur, wenn Sie mehr als eine Mandanten-Administration verwalten.
+
+Die Seite bewusst ueber Anzahlen und Tage, nicht ueber Betraege:
+
+- Mandantengeld wird nicht summiert, denn es gehoert Ihnen nicht.
+- Es gibt keinen Gesamt-"Portfoliowert" oder Umsatz ueber Mandanten.
+
+### Mandanten im Vergleich
+
+Die erste Tabelle listet Ihre Mandanten nebeneinander:
+
+| Spalte | Bedeutung |
+|---|---|
+| Mandant | Name der Mandanten-Administration. |
+| MwSt. | Ob der aktuelle MwSt.-Zeitraum abgegeben wurde, wie viele Tage bis zur Frist, oder wie viele Tage zu spaet. |
+| Einzufordern | Anzahl ueberfaelliger Rechnungen. |
+| Belege | Anzahl fehlender Belege. |
+| Bezahlt | Anzahl bezahlter Rechnungen im gewaehlten Jahr. |
+| Zahlungsziel | Durchschnittliche Tage zu spaet auf bezahlten Rechnungen, falls vorhanden. |
+
+Zeilen sind nach Dringlichkeit sortiert: Mandanten, die heute Aktion brauchen, stehen oben. Das MwSt.-Badge verwendet dieselbe Dringlichkeitslogik wie das Dashboard eines Arbeitsbereichs.
+
+### Arbeitslast pro Periode
+
+Die zweite Tabelle zeigt die Arbeitslast ueber alle Mandanten, aufgeteilt nach Periode:
+
+| Spalte | Bedeutung |
+|---|---|
+| Periode | Der MwSt.-Zeitraum oder "Sonstige Aufgaben" fuer Arbeit, die nicht an eine Periode gebunden ist. |
+| Abgegeben | Administrationen, deren Periode abgegeben wurde. |
+| In Bearbeitung | Administrationen mit aktiver laufender Arbeit. |
+| Offen | Administrationen mit einem offenen Zeitraum, der noch nicht angefasst wurde. |
+| Noch nichts | Administrationen ohne erfasste Aktivitaet fuer die Periode. |
+
+Nutzen Sie diese Tabelle, um einen Stau zu erkennen, bevor er ein Fristproblem wird. Die Perioden sind jahresunabhaengig; die Vergleichstabelle darueber filtert nach Jahr.
+
+### Was hier bewusst NICHT steht
+
+**"Prozent der puenktlichen Abgaben"** stand im urspruenglichen Plan, wird aber nicht angezeigt. In MyCompanyDesk bedeutet "abgegeben", dass ein Zeitraum in `period_locks` geschlossen wurde. Ein Mandant, der anderswo abgibt, bekommt diese Zeile nie. Ein historischer Prozentsatz wuerde solche Mandanten systematisch als zu spaet markieren. Das ist ein Vorwurf aufgrund fehlender Daten, keine Ungenauigkeit. Eine solche Qualitaetszahl braucht zuerst ein explizites Signal pro Administration, dass die Abgabe hier erfolgt.
+
 ## Verwandt
 
 - [Zugang und Steuerberater](/de/settings/team) fuer das Einladen von Teammitgliedern und Steuerberatern sowie das Festlegen von Seitenberechtigungen
