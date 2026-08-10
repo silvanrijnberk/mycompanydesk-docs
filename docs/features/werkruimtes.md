@@ -44,7 +44,7 @@ The work page lists open work in two blocks: your own businesses first, then cli
 If you run an accounting firm, the Firm section holds three firm-level pages:
 
 - **Firm overview** (`/werkruimtes/kantoor`) - firm members, pending client invitations, partner share link and referral stats, and whether free Pro has been granted.
-- **Billing** (`/werkruimtes/kantoor/facturatie`) - offer to take over a client administration's subscription. The client must accept before anything is charged, and the price per administration is shown before you confirm.
+- **Billing** (`/werkruimtes/kantoor/facturatie`) - offer to take over a client administration's subscription. The client must accept before anything is charged, the price per administration is shown before you confirm, and a pending offer is shown separately so you can withdraw it until the client responds.
 - **Export** (`/werkruimtes/kantoor/export`) - export several client administrations at once. Choose the year, period, and export format, select the administrations, and the app downloads one archive per client. Any failed export stays on screen so you can see what did not complete.
 
 ## Loading states and errors
