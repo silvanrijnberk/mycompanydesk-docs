@@ -1,6 +1,6 @@
 ---
 title: Arbeitsbereiche
-last_verified: 2026-08-08
+last_verified: 2026-08-10
 ---
 
 # Arbeitsbereiche
@@ -18,6 +18,34 @@ Die Seite "Arbeitsbereiche" unter `/werkruimtes` ist ein zentraler Ort fuer alle
 - Jede Zeile zeigt das eigene Kennzeichen des Arbeitsbereichs: das Logo oder ein farbiges Initialienfeld. Eigene Unternehmen tragen ihre Farbe; Mandanten-Administrationen bleiben neutral. Der Arbeitsbereich, in dem Sie sich gerade befinden, wird hervorgehoben.
 
 Wenn Sie im Wechsler einen Arbeitsbereich auswaehlen, wechselt die App jetzt ohne vollstaendiges Neuladen der Seite. Sie verwirft den Zustand des vorherigen Arbeitsbereichs aus Pinia-Stores und Modul-Caches, bricht laufende Anfragen ab, die nach dem Wechsel eintreffen wuerden, laedt die Shell neu, damit Navigation und Berechtigungen aktualisiert werden, und leitet Sie anschliessend zur Zielseite weiter.
+
+## Die Arbeitsbereiche-Navigation
+
+Die App-Navigation gruppiert jetzt alle Arbeitsbereich-Seiten unter **Arbeitsbereiche**. Die Uebersichtsseite bleibt erhalten, und drei neue Seiten kommen hinzu:
+
+- **Agenda** (`/werkruimtes/agenda`) - alle Fristen ueber alle Ihre Arbeitsbereiche, nach Datum gruppiert.
+- **Arbeit** (`/werkruimtes/werk`) - Ihre eigenen offenen Aufgaben plus offene Mandantenanfragen.
+- **Kanzlei** (`/werkruimtes/kantoor`) - das Kanzlei-Ueberblick fuer Steuerberater, mit eigenen Seiten fuer Abrechnung und Massenexport.
+
+### Eigentums-Indikator
+
+Jede Arbeitsbereich-Zeile und jedes Element in den neuen Seiten traegt einen kleinen Eigentums-Indikator. Eigene Unternehmen behalten ihre Arbeitsbereich-Farbe; Mandanten-Administrationen bleiben neutral. Sie sehen ihn im Arbeitsbereich-Wechsler, in der Agenda und in der Arbeitsliste, sodass Sie immer wissen, auf welcher Seite der Eigen/Mandant-Grenze eine Zeile steht.
+
+### Agenda (`/werkruimtes/agenda`)
+
+Die Agenda gruppiert alle anstehenden Fristen ueber alle Ihre Arbeitsbereiche nach Datum. Sie schaut 30 Tage zurueck und 90 Tage voraus, sodass eine ueberfaellige Frist aus der letzten Woche noch sichtbar ist. Ueberfaellige Fristen stehen oben. Jede Zeile zeigt den Arbeitsbereich, das Frist-Label und den Eigentums-Indikator. Klicken Sie auf eine Zeile, um in den Arbeitsbereich zu wechseln und die passende Seite zu oeffnen.
+
+### Arbeit (`/werkruimtes/werk`)
+
+Die Arbeit-Seite listet offene Arbeit in zwei Bloecken: zuerst Ihre eigenen Unternehmen, dann Mandanten-Administrationen. Das haelt die beiden Arten von Arbeit getrennt, denn eigene To-dos und Dinge, auf die Sie von einem Mandanten warten, erfordern verschiedene Aktionen. Jede Zeile zeigt den Arbeitsbereich, die Aufgabe und ein Faelligkeits-Badge. Klicken Sie auf eine Zeile, um in den Arbeitsbereich zu wechseln und die passende Seite zu oeffnen; bei einer Mandantenanfrage oeffnet sich die Anfrage selbst.
+
+### Kanzlei-Seiten (`/werkruimtes/kantoor/*`)
+
+Wenn Sie eine Steuerberaterkanzlei betreiben, enthaelt der Bereich Kanzlei drei kanzleieigene Seiten:
+
+- **Kanzlei-Ueberblick** (`/werkruimtes/kantoor`) - Kanzlei-Mitglieder, offene Mandanteneinladungen, Partner-Teilen-Link und Statistiken, sowie ob kostenloses Pro gewaehrt wurde.
+- **Abrechnung** (`/werkruimtes/kantoor/facturatie`) - bieten Sie an, das Abonnement einer Mandanten-Administration zu uebernehmen. Der Mandant muss akzeptieren, bevor etwas berechnet wird; der Preis pro uebernommener Administration wird vor der Bestaetigung angezeigt.
+- **Export** (`/werkruimtes/kantoor/export`) - exportieren Sie mehrere Mandanten-Administrationen auf einmal. Waehlen Sie Jahr, Zeitraum und Exportformat, waehlen Sie die Administrationen aus, und die App laedt pro Mandant ein Archiv herunter. Fehlgeschlagene Exports bleiben sichtbar, damit Sie sehen, was nicht abgeschlossen wurde.
 
 ## Wenn Sie einen Arbeitsbereich haben
 

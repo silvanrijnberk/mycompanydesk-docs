@@ -1,6 +1,6 @@
 ---
 title: Werkruimtes
-last_verified: 2026-08-08
+last_verified: 2026-08-10
 ---
 
 # Werkruimtes
@@ -18,6 +18,34 @@ De pagina Werkruimtes (`/werkruimtes`) is één centrale plek voor alles wat je 
 - Elke rij toont het eigen merkteken van de werkruimte: het logo, of een gekleurde tegel met initialen. Eigen bedrijven krijgen hun kleur; klantadministraties blijven neutraal. De werkruimte waarin je nu zit, wordt uitgelicht.
 
 Als je in de kiezer een werkruimte kiest, wisselt de app nu zonder volledige paginaherladen. Hij vergeet de staat van de vorige werkruimte in Pinia-stores en modulecaches, gooit requests die nog onderweg zijn en die na de wissel zouden aankomen weg, laadt de shell opnieuw zodat de navigatie en rechten bijwerken, en routeert je daarna naar de doelpagina.
+
+## De werkruimte-sectie
+
+De app-navigatie groepeert nu alle werkruimtepagina's onder **Werkruimtes**. De overzichtspagina blijft staan, en er zijn drie nieuwe pagina's bijgekomen:
+
+- **Agenda** (`/werkruimtes/agenda`) - alle deadlines over al je werkruimtes, gegroepeerd op datum.
+- **Werk** (`/werkruimtes/werk`) - je eigen openstaande taken plus openstaande klantverzoeken.
+- **Kantoor** (`/werkruimtes/kantoor`) - het kantooroverzicht voor accountants, met aparte pagina's voor facturatie en bulkexport.
+
+### Eigendomsindicator
+
+Elke werkruimterij en elk item in de nieuwe pagina's krijgt een kleine eigendomsindicator. Eigen bedrijven houden hun werkruimtekleur; klantadministraties blijven neutraal. Je ziet hem in de werkruimtewisselaar, in de agenda en in de werklijst, zodat je altijd weet aan welke kant van de eigen/klant-grens een rij hoort.
+
+### Agenda (`/werkruimtes/agenda`)
+
+De agenda groepeert alle aankomende deadlines over al je werkruimtes op datum. Hij kijkt 30 dagen terug en 90 dagen vooruit, zodat een verlopen deadline van vorige week nog zichtbaar is. Verlopen deadlines staan bovenaan. Elke rij toont de werkruimte, het deadline-label en de eigendomsindicator. Klik op een rij om naar die werkruimte te schakelen en de betreffende pagina te openen.
+
+### Werk (`/werkruimtes/werk`)
+
+De werkpagina toont open werk in twee blokken: eerst je eigen bedrijven, dan klantadministraties. Dat houdt de twee soorten werk gescheiden, want je eigen taken en dingen die je van een klant verwacht vragen verschillende acties. Elke rij toont de werkruimte, de taak en een deadline-badge. Klik op een rij om naar de werkruimte te schakelen en de betreffende pagina te openen; bij een klantverzoek opent het verzoek zelf.
+
+### Kantoorpagina's (`/werkruimtes/kantoor/*`)
+
+Als je een accountantskantoor hebt, bevat de sectie Kantoor drie kantoorpagina's:
+
+- **Kantooroverzicht** (`/werkruimtes/kantoor`) - kantoormedewerkers, openstaande klantuitnodigingen, partner-deellink en statistieken, en of gratis Pro is toegekend.
+- **Facturatie** (`/werkruimtes/kantoor/facturatie`) - bied aan om een klantadministratie te betalen. De klant moet accepteren voordat er iets in rekening wordt gebracht; de prijs per overgenomen administratie staat vooraf op het scherm.
+- **Export** (`/werkruimtes/kantoor/export`) - exporteer meerdere klantadministraties tegelijk. Kies jaar, periode en exportformaat, selecteer de administraties en de app downloadt per klant een archief. Eventuele mislukte exports blijven staan zodat je ziet wat niet is voltooid.
 
 ## Als je één werkruimte hebt
 
