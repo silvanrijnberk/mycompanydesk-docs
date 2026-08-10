@@ -32,6 +32,23 @@ De offerte-PDF wordt als bijlage bij de e-mail gevoegd zodat de klant deze kan b
 
 Als je werkruimte algemene voorwaarden in Documenten heeft staan, toont de e-mailvoorbeelddialoog ook de schakelaar **Algemene voorwaarden meesturen**. Deze staat standaard aan voor offertes. Als je hem inschakelt, wordt de huidige voorwaarden-PDF bij de e-mail gevoegd en wordt de verzending vastgelegd als het terhandstellingsmoment op het voorwaardendocument.
 
+## Klantactiviteit
+
+Zodra een offerte per e-mail is verstuurd, toont de detailpagina een rij signalen die precies hetzelfde werken als bij facturen:
+
+- **Verzonden**: de e-mail is uit je werkruimte verstuurd.
+- **Geopend**: de klant heeft de e-mail geopend (gemeten via een pixel in de offerte-e-mail).
+- **Bekeken**: de klant heeft de publieke offertepagina geopend.
+- **Gedownload**: de klant heeft de offerte-PDF gedownload.
+
+Een offerte toont nooit een **Betaald**-signaal, want offertes worden niet direct betaald; een ondertekende offerte staat in zijn eigen ondertekeningskaart.
+
+De signalen blijven uit tot de offerte daadwerkelijk is gemaild. Daarvoor is de kaart verborgen, zodat de pagina niet onnodig volstaat.
+
+Gebeurtenissen worden opgeslagen in dezelfde `invoice_customer_events`-log als factuuractiviteit, afgescheiden door een `entity_type`-kolom zodat offertes en facturen niet door elkaar lopen.
+
+Bron: `apps/api/src/modules/invoices/customer-events.service.js` - `recordEvent`, `getEventsForQuote`; `apps/api/src/db/migrations/20270302000000_customer_events_entity_type.js` - `entity_type`-kolom; `apps/api/src/modules/quotes/quotes.routes.js` - `GET /:id/customer-events`.
+
 ## Offerte online laten ondertekenen
 
 Je kunt een klant vragen een offerte online te ondertekenen in plaats van hem alleen als PDF te versturen. Open de offertedetailpagina en kies **Naar tekenen versturen** om een tekenverzoek naar de klant te sturen. De status van de offerte wijzigt in **Verzonden**, zodat je het proces kunt volgen.
