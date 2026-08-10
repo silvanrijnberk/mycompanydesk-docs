@@ -200,6 +200,7 @@ Die erste Tabelle listet Ihre Mandanten nebeneinander:
 |---|---|
 | Mandant | Name der Mandanten-Administration. |
 | MwSt. | Ob der aktuelle MwSt.-Zeitraum abgegeben wurde, wie viele Tage bis zur Frist, oder wie viele Tage zu spaet. |
+| Von Ihnen geschlossen | Wie viele der letzten Abgabezeitraeume des Mandanten Sie in dieser Kanzlei geschlossen haben. |
 | Einzufordern | Anzahl ueberfaelliger Rechnungen. |
 | Belege | Anzahl fehlender Belege. |
 | Bezahlt | Anzahl bezahlter Rechnungen im gewaehlten Jahr. |
@@ -224,6 +225,8 @@ Nutzen Sie diese Tabelle, um einen Stau zu erkennen, bevor er ein Fristproblem w
 ### Was hier bewusst NICHT steht
 
 **"Prozent der puenktlichen Abgaben"** stand im urspruenglichen Plan, wird aber nicht angezeigt. In MyCompanyDesk bedeutet "abgegeben", dass ein Zeitraum in `period_locks` geschlossen wurde. Ein Mandant, der anderswo abgibt, bekommt diese Zeile nie. Ein historischer Prozentsatz wuerde solche Mandanten systematisch als zu spaet markieren. Das ist ein Vorwurf aufgrund fehlender Daten, keine Ungenauigkeit. Eine solche Qualitaetszahl braucht zuerst ein explizites Signal pro Administration, dass die Abgabe hier erfolgt.
+
+Stattdessen enthaelt die Vergleichstabelle nun eine Spalte **Von Ihnen geschlossen**. Sie zeigt, wie viele der letzten Perioden des Mandanten in dieser Kanzlei geschlossen wurden, auf Basis derselben `period_locks`-Daten. Ein Mandant, der anderswo abgibt, steht bei 0, weil hier nichts geschlossen wurde. Die Spalte ist bewusst neutral und wird nie rot, weil sie Ihre eigene Arbeit beschreibt, nicht das Verhalten des Mandanten.
 
 ## Verwandt
 
