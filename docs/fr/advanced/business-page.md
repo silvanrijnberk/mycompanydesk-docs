@@ -267,6 +267,7 @@ Quelques points a savoir :
 - **Cote de l'image** : La variante de mise en page est par defaut image-a-droite. Passez a image-a-gauche dans le panneau de mise en page pour inverser la rangee.
 - **Elements optionnels** : L'eyebrow, le sous-titre, les puces, le CTA et l'image sont tous optionnels. Un spotlight avec seulement un titre et une image s'affiche tout aussi proprement.
 - **Empilement** : Ajoutez plusieurs sections spotlight les unes en dessous des autres pour reproduire le schema classique de liste de fonctionnalites de la landing page MCD.
+- **Image fixe** : Activez "L'image reste visible en defilant" dans l'inspecteur spotlight pour maintenir l'image en place pendant que le texte a cote defile. Uniquement sur desktop, et seulement quand il y a assez de texte a cote de l'image. Sur mobile, l'image s'empile normalement.
 
 ### Grille tarifaire avec boutons d'achat
 
@@ -316,6 +317,7 @@ Chaque bloc de section dispose d'un panneau **Animation** dans l'inspecteur. Il 
 | **Slide right** | La section apparait en glissant de 2rem vers la droite. |
 | **Reveal** | La section se devoile de droite a gauche via un masque de decoupage. |
 | **Stagger** | Les elements enfants apparaissent les uns apres les autres par pas de 80ms, au lieu que la section elle-meme bouge. |
+| **Mot par mot** | Uniquement pour les sections hero. Les mots du titre apparaissent chacun a leur rythme; les autres blocs s'estompent normalement. |
 
 ### Declencheurs
 

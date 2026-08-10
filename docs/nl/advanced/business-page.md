@@ -270,6 +270,7 @@ Een paar dingen om te weten:
 - **Beeldzijde**: De layout-variant staat standaard op afbeelding-rechts. Zet hem op afbeelding-links in het layout-paneel om de rij te spiegelen.
 - **Optionele onderdelen**: Eyebrow, ondertitel, bullets, CTA en afbeelding zijn allemaal optioneel. Een spotlight met alleen een titel en afbeelding toont nog steeds een strak resultaat.
 - **Stapelen**: Zet meerdere spotlight-secties onder elkaar om het klassieke feature-lijstpatroon van de MCD-landingspagina te bouwen.
+- **Vastzittend beeld**: Schakel "Beeld blijft staan bij scrollen" in de spotlight-inspector in om de afbeelding vast te houden terwijl de tekst ernaast doorscrollt. Alleen op desktop, en alleen zichtbaar als er genoeg tekst naast de afbeelding staat. Op mobiel staat het beeld gewoon gestapeld.
 
 ### Tarieven met koopknoppen
 
@@ -319,6 +320,7 @@ Elk sectieblok heeft een **Animatie**-paneel in de inspector. Hiermee voeg je be
 | **Slide right** | Sectie verschijnt terwijl deze 2rem naar rechts beweegt. |
 | **Reveal** | Sectie onthult van rechts naar links via een clipmasker. |
 | **Stagger** | Onderliggende elementen verschijnen na elkaar in stappen van 80ms, in plaats van dat de sectie zelf beweegt. |
+| **Woord voor woord** | Alleen voor hero-secties. De woorden van de titel verschijnen elk op hun eigen moment; andere blokken faden gewoon in. |
 
 ### Triggers
 

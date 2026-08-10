@@ -270,6 +270,7 @@ A few things to know:
 - **Image side**: The layout variant defaults to image-right. Switch to image-left in the layout panel to flip the row.
 - **Optional pieces**: Eyebrow, subtitle, bullets, CTA, and image are all optional. A spotlight with only a title and image still renders cleanly.
 - **Stacking**: Add several spotlight sections in a row to build the classic feature-list pattern from the MCD landing page.
+- **Sticky media**: Enable "Image stays while scrolling" in the spotlight inspector to pin the image while the text beside it scrolls. Desktop only; it only shows when there is enough text next to the image to make it meaningful. On mobile the image stacks normally.
 
 ### Pricing tiers with buy buttons
 
@@ -319,6 +320,7 @@ Every section block has an **Animation** panel in the inspector. It lets you add
 | **Slide right** | Section fades in while sliding left by 2rem. |
 | **Reveal** | Section reveals from right to left using a clip mask. |
 | **Stagger** | Children fade up one after another in 80ms steps instead of the section itself moving. |
+| **Word by word** | Hero title only. Each word of the hero title appears on its own beat; non-hero blocks fade in normally. |
 
 ### Triggers
 
