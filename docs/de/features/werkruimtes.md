@@ -47,6 +47,12 @@ Wenn Sie eine Steuerberaterkanzlei betreiben, enthaelt der Bereich Kanzlei drei 
 - **Abrechnung** (`/werkruimtes/kantoor/facturatie`) - bieten Sie an, das Abonnement einer Mandanten-Administration zu uebernehmen. Der Mandant muss akzeptieren, bevor etwas berechnet wird; der Preis pro uebernommener Administration wird vor der Bestaetigung angezeigt.
 - **Export** (`/werkruimtes/kantoor/export`) - exportieren Sie mehrere Mandanten-Administrationen auf einmal. Waehlen Sie Jahr, Zeitraum und Exportformat, waehlen Sie die Administrationen aus, und die App laedt pro Mandant ein Archiv herunter. Fehlgeschlagene Exports bleiben sichtbar, damit Sie sehen, was nicht abgeschlossen wurde.
 
+## Ladezustaende und Fehler
+
+Wenn Sie eine Seite innerhalb des Arbeitsbereichs-Rahmens oeffnen, wartet die App zunaechst, bis die Shell-Daten (Arbeitsbereichsliste, Token, Berechtigungen) bereitstehen, und holt danach erst die Seitendaten. So verhindert die App, dass ein kalter Aufruf einen leeren "nichts zu tun"-Zustand anzeigt, waehrend die Anfrage noch unterwegs ist.
+
+Falls der Abruf fehlschlaegt, zeigt die Seite einen eigenen Fehlerzustand mit einem Button **Erneut versuchen** anstatt so zu tun, als gaebe es nichts zu zeigen. Der Arbeitsbereichswechsler in der Seitenleiste bleibt nutzbar, sodass Sie ohne Warten in einen anderen Arbeitsbereich wechseln koennen. Auf der Abrechnungsseite laden die Mandantenliste und die Abrechnungsbetrags unabhaengig: wenn die Betrags nicht verfuegbar sind, bleibt die Mandantenliste sichtbar und die Preisspalte bleibt leer, anstatt eine falsche Null zu zeigen.
+
 ## Wenn Sie einen Arbeitsbereich haben
 
 Sie sehen drei Einstiege statt einer leeren Seite:

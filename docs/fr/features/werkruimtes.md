@@ -47,6 +47,12 @@ Si vous dirigez un cabinet comptable, la section Cabinet contient trois pages au
 - **Facturation** (`/werkruimtes/kantoor/facturatie`) - proposez de prendre en charge l'abonnement d'une administration cliente. Le client doit accepter avant que quoi que ce soit soit facture; le prix par administration prise en charge est affiche avant confirmation.
 - **Export** (`/werkruimtes/kantoor/export`) - exportez plusieurs administrations clientes a la fois. Choisissez l'annee, la periode et le format d'export, selectionnez les administrations, et l'application telecharge une archive par client. Les exports echoues restent a l'ecran pour que vous voyiez ce qui n'a pas ete termine.
 
+## Etats de chargement et erreurs
+
+Quand vous ouvrez une page du cadre Espaces de travail, l'application attend d'abord que les donnees de coquille (liste des espaces, jeton, permissions) soient pretes, puis elle recupere les donnees de la page. Cela empeche une navigation a froid d'afficher un etat vide "rien a faire" pendant que la requete est encore en cours.
+
+Si la recuperation echoue, la page affiche un etat d'erreur explicite avec un bouton **Reessayer** au lieu de faire comme s'il n'y avait rien a afficher. Le selecteur d'espace dans le rail reste utilisable, vous pouvez donc passer a un autre espace sans attendre que la page defectueuse se remette. Sur la page de facturation, la liste des clients et les montants de facturation se chargent separement : si les montants echouent, la liste des clients reste disponible et la colonne de prix reste vide plutot que d'afficher un faux zero.
+
 ## Si vous avez un seul espace de travail
 
 Vous obtenez trois entrees au lieu d'une page vide :
