@@ -47,6 +47,12 @@ Als je een accountantskantoor hebt, bevat de sectie Kantoor drie kantoorpagina's
 - **Facturatie** (`/werkruimtes/kantoor/facturatie`) - bied aan om een klantadministratie te betalen. De klant moet accepteren voordat er iets in rekening wordt gebracht; de prijs per overgenomen administratie staat vooraf op het scherm.
 - **Export** (`/werkruimtes/kantoor/export`) - exporteer meerdere klantadministraties tegelijk. Kies jaar, periode en exportformaat, selecteer de administraties en de app downloadt per klant een archief. Eventuele mislukte exports blijven staan zodat je ziet wat niet is voltooid.
 
+## Laadstatus en fouten
+
+Als je een pagina binnen het werkruimte-frame opent, wacht de app eerst tot de schilgegevens (lijst met werkruimtes, token, rechten) klaar staan, en haalt daarna pas de paginagegevens op. Zo voorkomt de app dat een koude navigatie een lege "niks te doen"-staat toont terwijl het verzoek nog onderweg is.
+
+Als het ophalen mislukt, toont de pagina een aparte foutstaat met een knop **Opnieuw proberen** in plaats van te doen alsof er niets te tonen is. De werkruimtekiezer in de zijbalk blijft bruikbaar, dus je kunt zonder te wachten naar een andere werkruimte schakelen. Op de facturatiepagina laden de klantenlijst en de facturatiebedragen onafhankelijk: als de bedragen niet beschikbaar zijn, blijft de klantenlijst gewoon zichtbaar en blijft de prijskolom leeg, zodat er geen valse nul verschijnt.
+
 ## Als je één werkruimte hebt
 
 Je krijgt drie ingangen in plaats van een lege pagina:

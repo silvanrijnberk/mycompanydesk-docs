@@ -47,6 +47,12 @@ If you run an accounting firm, the Firm section holds three firm-level pages:
 - **Billing** (`/werkruimtes/kantoor/facturatie`) - offer to take over a client administration's subscription. The client must accept before anything is charged, and the price per administration is shown before you confirm.
 - **Export** (`/werkruimtes/kantoor/export`) - export several client administrations at once. Choose the year, period, and export format, select the administrations, and the app downloads one archive per client. Any failed export stays on screen so you can see what did not complete.
 
+## Loading states and errors
+
+When you open a Workspaces frame page, the app first waits for the shell data (workspace list, token, permissions) to be ready, then fetches the page data. This prevents a cold navigation from showing an empty "nothing to do" state while the request is still in flight.
+
+If the data call fails, the page shows an explicit error state with a **Retry** button instead of pretending there is nothing to show. The workspace switcher in the rail is still usable, so you can move to another workspace without waiting for the failing page to recover. On the billing page, the client list and the billing totals load separately: if the totals fail, the client list remains available and the price column is simply empty, rather than showing a false zero.
+
 ## If you have one workspace
 
 The page shows three entry points instead of an empty screen:
