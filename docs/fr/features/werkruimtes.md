@@ -1,6 +1,6 @@
 ---
 title: Espaces de travail
-last_verified: 2026-08-08
+last_verified: 2026-08-10
 ---
 
 # Espaces de travail
@@ -18,6 +18,34 @@ La page Espaces de travail (`/werkruimtes`) est un lieu central pour tout ce que
 - Chaque ligne affiche la propre marque de l'espace de travail : son logo, ou une tuile coloree avec ses initiales. Vos propres entreprises portent leur couleur; les administrations clientes restent neutres. L'espace de travail dans lequel vous vous trouvez actuellement est mis en evidence.
 
 Quand vous choisissez un espace de travail dans le selecteur, l'application bascule maintenant sans rechargement complet de la page. Elle efface l'etat de l'espace de travail precedent des stores Pinia et des caches de modules, annule les requetes en vol qui arriveraient apres le basculement, recharge l'enveloppe pour mettre a jour la navigation et les droits, puis vous redirige vers la page cible.
+
+## La section Espaces de travail
+
+La navigation de l'application regroupe maintenant toutes les pages d'espace de travail sous **Espaces de travail**. La page de synthese reste en place, et trois nouvelles pages l'accompagnent :
+
+- **Agenda** (`/werkruimtes/agenda`) - toutes les echeances de tous vos espaces de travail, groupees par date.
+- **Travail** (`/werkruimtes/werk`) - vos propres taches ouvertes plus les demandes clients ouvertes.
+- **Cabinet** (`/werkruimtes/kantoor`) - le tableau de bord du cabinet pour les comptables, avec des pages dediees pour la facturation et l'export en masse.
+
+### Indicateur de propriete
+
+Chaque ligne d'espace de travail et chaque element des nouvelles pages porte un petit indicateur de propriete. Vos propres entreprises conservent la couleur de leur espace de travail; les administrations clientes restent neutres. Vous le voyez dans le selecteur d'espace de travail, dans l'agenda et dans la liste de travail, pour toujours savoir de quel cote de la frontiere propre/client se situe une ligne.
+
+### Agenda (`/werkruimtes/agenda`)
+
+L'agenda groupe toutes les echeances a venir de tous vos espaces de travail par date. Il regarde 30 jours en arriere et 90 jours en avant, de sorte qu'une echeance depassee de la semaine passee reste visible. Les echeances depassees apparaissent en premier. Chaque ligne montre l'espace de travail, le libelle de l'echeance et l'indicateur de propriete. Cliquez sur une ligne pour basculer dans cet espace de travail et ouvrir la page correspondante.
+
+### Travail (`/werkruimtes/werk`)
+
+La page Travail liste le travail ouvert en deux blocs : vos propres entreprises d'abord, puis les administrations clientes. Cela separe les deux types de travail, car vos propres taches et les elements que vous attendez d'un client demandent des actions differentes. Chaque ligne montre l'espace de travail, la tache et un badge d'echeance. Cliquez sur une ligne pour basculer dans l'espace de travail et ouvrir la page correspondante; pour une demande client, c'est la demande elle-meme qui s'ouvre.
+
+### Pages du cabinet (`/werkruimtes/kantoor/*`)
+
+Si vous dirigez un cabinet comptable, la section Cabinet contient trois pages au niveau du cabinet :
+
+- **Tableau de bord du cabinet** (`/werkruimtes/kantoor`) - membres du cabinet, invitations clientes en attente, lien de partage partenaire et statistiques, ainsi que l'attribution eventuelle de Pro gratuit.
+- **Facturation** (`/werkruimtes/kantoor/facturatie`) - proposez de prendre en charge l'abonnement d'une administration cliente. Le client doit accepter avant que quoi que ce soit soit facture; le prix par administration prise en charge est affiche avant confirmation.
+- **Export** (`/werkruimtes/kantoor/export`) - exportez plusieurs administrations clientes a la fois. Choisissez l'annee, la periode et le format d'export, selectionnez les administrations, et l'application telecharge une archive par client. Les exports echoues restent a l'ecran pour que vous voyiez ce qui n'a pas ete termine.
 
 ## Si vous avez un seul espace de travail
 

@@ -1,6 +1,6 @@
 ---
 title: Workspaces
-last_verified: 2026-08-08
+last_verified: 2026-08-10
 ---
 
 # Workspaces
@@ -18,6 +18,34 @@ The Workspaces page at `/werkruimtes` is one central place for everything you ma
 - Each row shows the workspace's own mark: its logo, or a coloured initials tile. Your own businesses carry their colour; client administrations stay neutral. The workspace you are currently in is highlighted.
 
 Clicking a workspace in the switcher now swaps you in without a full page reload. The app clears the previous workspace's state from Pinia stores and module caches, throws away any in-flight requests that would arrive after the switch, reloads the shell so the navigation rail and permissions update, and then routes you to the target page.
+
+## The workspace frame
+
+The app navigation now groups all workspace pages under **Workspaces**. The overview page stays where it is, and three new pages sit next to it:
+
+- **Agenda** (`/werkruimtes/agenda`) - every deadline across all workspaces, grouped by date.
+- **Work** (`/werkruimtes/werk`) - your own open tasks plus outstanding client requests.
+- **Firm** (`/werkruimtes/kantoor`) - the firm overview for accountants, with dedicated billing and bulk-export pages.
+
+### Ownership indicator
+
+Each workspace row and each item in the new frame pages carries a small ownership indicator. Your own businesses keep their workspace colour; client administrations stay neutral. You will see it in the workspace switcher, in the agenda, and in the work list, so you always know which side of the own/client boundary a row belongs to.
+
+### Agenda (`/werkruimtes/agenda`)
+
+The agenda groups every upcoming deadline across all your workspaces by date. It looks 30 days back and 90 days forward, so an overdue deadline from last week is still visible. Overdue deadlines appear first. Each row shows the workspace name, the deadline label, and an ownership indicator. Click a row to switch into that workspace and open the relevant page.
+
+### Work (`/werkruimtes/werk`)
+
+The work page lists open work in two blocks: your own businesses first, then client administrations. This keeps the two kinds of work apart, because your own to-dos and things you are waiting for from a client need different actions. Each row shows the workspace, the task label, and a due badge. Clicking a row switches to the workspace and opens the relevant page; for a client request, the request itself opens.
+
+### Firm pages (`/werkruimtes/kantoor/*`)
+
+If you run an accounting firm, the Firm section holds three firm-level pages:
+
+- **Firm overview** (`/werkruimtes/kantoor`) - firm members, pending client invitations, partner share link and referral stats, and whether free Pro has been granted.
+- **Billing** (`/werkruimtes/kantoor/facturatie`) - offer to take over a client administration's subscription. The client must accept before anything is charged, and the price per administration is shown before you confirm.
+- **Export** (`/werkruimtes/kantoor/export`) - export several client administrations at once. Choose the year, period, and export format, select the administrations, and the app downloads one archive per client. Any failed export stays on screen so you can see what did not complete.
 
 ## If you have one workspace
 
