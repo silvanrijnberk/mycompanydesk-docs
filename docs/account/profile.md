@@ -1,6 +1,6 @@
 ---
 title: Your personal settings
-last_verified: 2026-07-27
+last_verified: 2026-08-10
 ---
 
 # Your personal settings
@@ -22,7 +22,7 @@ Your name, email address and profile photo.
 How the app looks for you, on every device you sign in on.
 
 - **Theme**: Licht (light), Donker (dark) or Vanzelf (automatic). Automatic follows your device: light during the day, dark in the evening.
-- **Text size**: Normaal (normal) or Groot (large), for more comfortable reading.
+- **Text size**: Normal, Large or Extra Large, for more comfortable reading. The choice is saved per device, so your phone can use a larger size than your laptop. The app also follows your phone's system text-size setting up to the Extra Large step; at that size the mobile bottom tab bar switches to icons-only to keep all tabs reachable.
 - **Language of the app**: Dutch, English, German or French. This changes the menus and buttons for you only; the language of your invoices and quotes is a separate choice per document.
 - **Advanced settings**: a per-device switch that reveals extra technical options across the app, such as DNS and SSL controls on the domain pages. Leave it off unless you need those.
 

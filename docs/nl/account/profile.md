@@ -1,6 +1,6 @@
 ---
 title: Je persoonlijke instellingen
-last_verified: 2026-07-27
+last_verified: 2026-08-10
 ---
 
 # Je persoonlijke instellingen
@@ -22,7 +22,7 @@ Je naam, e-mailadres en profielfoto.
 Hoe de app eruitziet voor jou, op elk apparaat waarop je inlogt.
 
 - **Thema**: Licht, Donker of Vanzelf. Vanzelf volgt je apparaat: overdag licht, 's avonds donker.
-- **Tekstgrootte**: Normaal of Groot, voor iets rustiger lezen.
+- **Tekstgrootte**: Normaal, Groot of Extra groot, voor rustiger lezen. De keuze wordt per apparaat onthouden, zodat je telefoon een groter formaat kan gebruiken dan je laptop. De app volgt ook de systeemtekstgrootte van je telefoon tot en met de Extra-groot-stap; bij die grootte schakelt de onderste tabbalk op mobiel over naar alleen iconen, zodat alle tabbladen bereikbaar blijven.
 - **Taal van de app**: Nederlands, Engels, Duits of Frans. Dit verandert alleen de knoppen en menu's voor jou; de taal van je facturen en offertes is een aparte keuze per document.
 - **Geavanceerde instellingen**: een schakelaar per apparaat die extra technische opties in de app zichtbaar maakt, zoals DNS- en SSL-beheer op de domeinpagina's. Laat hem uit als je die niet nodig hebt.
 
