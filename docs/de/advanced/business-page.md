@@ -1,5 +1,6 @@
 ---
 title: Website-Builder
+last_verified: 2026-08-10
 ---
 
 # Website-Builder
@@ -366,7 +367,7 @@ Im **Stil**-Tab steuern Sie das Erscheinungsbild Ihrer gesamten Site:
 - **Farben**: Wählen Sie Marken-, Akzent-, Papier-, Tinten-, Oberflächen- und gedämpfte Farben. Die Palette wird über CSS Custom Properties angewendet.
 - **Dunkelmodus**: Legen Sie fest, wie Ihre Site mit dunkler Darstellung umgeht. Drei Optionen: **Aus** (kein Dunkelmodus, die Site bleibt im hellen Farbschema), **Schaltfläche** (Besucher sehen einen Sonne/Mond-Umschalter in der Navigationsleiste und können das Thema wechseln, ihre Wahl wird lokal gespeichert), oder **System folgen** (die Site übernimmt automatisch die Betriebssystem-Einstellung des Besuchers über einen Live-Media-Query-Listener). Wenn der Dunkelmodus aktiviert ist, erscheint eine dunkle Farbpalette, in der Sie für jede Farbe eine nachtoptimierte Variante festlegen können. Lassen Sie die dunkle Palette leer, wendet die Site eine automatische Invertierung an, bei der Ihre Marken- und Akzentfarben erhalten bleiben.
 - **Typografie**: Wählen Sie Überschrift-, Text- und Mono-Schriften aus der integrierten Schriftbibliothek (Geist, Inter, DM Sans, DM Serif Display, Fraunces, Instrument Serif, Geist Mono).
-- **Skalierung**: Legen Sie Eckenradius, Dichte (kompakt, luftig, großzügig), maximale Inhaltsbreite und vertikalen Abschnittsabstand fest.
+- **Skalierung**: Legen Sie Eckenradius, Dichte (kompakt, luftig, großzügig), maximale Inhaltsbreite, vertikalen Abschnittsabstand und Kartenstil fest. Der Kartenstil steuert, wie Inhaltskarten über die Abschnitte hinweg gerendert werden: **Flach** (kein Rand), **Umrandet** (Standard, dünne Linie), **Schattiert** (weicher Schatten), **Schwebend** (starker Schatten), **Brut** (harte Linie mit versetztem Schatten), **Linie** (nur Kontur, keine Füllung) oder **Glas** (durchscheinende, mattierte Karte mit Hintergrund-Blur). Glas wirkt am besten über einem Foto, Farbverlauf oder dekorativen Streifen; auf einfachem Hintergrund fällt es auf eine sanft getönte Karte zurück.
 - **Bewegung**: Aktivieren Sie reduzierte Bewegung oder wählen Sie einen Bewegungsstil (Aus, Dezente Überblendung, Hereingleiten).
 - **Schaltflächen**: Passen Sie Schaltflächenradius, Innenabstand und Hover-Effekte an.
 - **Navigationsleiste**: Legen Sie das Layout (Standard, zentriert, geteilt), den Hintergrundstil (durchgehend, transparent mit Blur, vollständig transparent) und das Aussehen der CTA-Schaltfläche (ausgefüllt, Umrandung, nur Text) fest. Die Navigationsleisteneinstellungen gelten für jede Seite.
