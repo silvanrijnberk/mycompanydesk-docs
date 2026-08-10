@@ -1,6 +1,6 @@
 ---
 title: Vos paramètres personnels
-last_verified: 2026-07-27
+last_verified: 2026-08-10
 ---
 
 # Vos paramètres personnels
@@ -22,7 +22,7 @@ Votre nom, votre adresse e-mail et votre photo de profil.
 L'apparence de l'application pour vous, sur chaque appareil où vous vous connectez.
 
 - **Thème** : clair, sombre ou automatique. Le mode automatique suit votre appareil : clair en journée, sombre le soir.
-- **Taille du texte** : normale ou grande, pour une lecture plus confortable.
+- **Taille du texte** : normale, grande ou très grande, pour une lecture plus confortable. Le choix est mémorisé par appareil, donc votre téléphone peut utiliser une taille plus grande que votre ordinateur. L'application suit aussi la taille de texte système de votre téléphone jusqu'à l'étape très grande ; à cette taille, la barre d'onglets inférieure sur mobile passe aux seuls icônes pour que tous les onglets restent accessibles.
 - **Langue de l'application** : néerlandais, anglais, allemand ou français. Cela ne change que les menus et boutons pour vous; la langue de vos factures et devis est un choix séparé, par document.
 - **Paramètres avancés** : un interrupteur par appareil qui révèle des options techniques supplémentaires dans l'application, comme la gestion DNS et SSL sur les pages de domaine. Laissez-le désactivé si vous n'en avez pas besoin.
 

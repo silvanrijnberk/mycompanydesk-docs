@@ -1,6 +1,6 @@
 ---
 title: Ihre persönlichen Einstellungen
-last_verified: 2026-07-27
+last_verified: 2026-08-10
 ---
 
 # Ihre persönlichen Einstellungen
@@ -22,7 +22,7 @@ Ihr Name, Ihre E-Mail-Adresse und Ihr Profilfoto.
 Wie die App für Sie aussieht, auf jedem Gerät, auf dem Sie sich anmelden.
 
 - **Design**: Hell, Dunkel oder Automatisch. Automatisch folgt Ihrem Gerät: tagsüber hell, abends dunkel.
-- **Schriftgröße**: Normal oder Groß, für entspannteres Lesen.
+- **Schriftgröße**: Normal, Groß oder Extra groß, für entspannteres Lesen. Die Auswahl wird pro Gerät gespeichert, sodass Ihr Telefon eine größere Schrift verwenden kann als Ihr Laptop. Die App folgt auch der System-Schriftgröße Ihres Telefons bis zur Extra-groß-Stufe; bei dieser Größe wechselt die untere Tab-Leiste auf dem Handy auf reine Symbole, damit alle Tabs erreichbar bleiben.
 - **Sprache der App**: Niederländisch, Englisch, Deutsch oder Französisch. Das ändert nur die Menüs und Schaltflächen für Sie; die Sprache Ihrer Rechnungen und Angebote ist eine eigene Wahl pro Dokument.
 - **Erweiterte Einstellungen**: ein Schalter pro Gerät, der zusätzliche technische Optionen in der App sichtbar macht, etwa DNS- und SSL-Verwaltung auf den Domain-Seiten. Lassen Sie ihn aus, wenn Sie diese nicht brauchen.
 
