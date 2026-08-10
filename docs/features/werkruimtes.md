@@ -200,6 +200,7 @@ The first table lists your clients side by side:
 |---|---|
 | Client | The client administration name. |
 | VAT | Whether the current VAT period is filed, how many days until it is due, or how many days late it is. |
+| Closed by you | How many of the client's recent filing periods were closed in this office. |
 | To collect | Number of overdue invoices. |
 | Receipts | Number of missing receipts. |
 | Paid | Number of paid invoices in the selected year. |
@@ -224,6 +225,8 @@ Use this table to spot a pile-up before it becomes a deadline problem. Periods a
 ### What is NOT on this page
 
 **"Percentage of VAT returns on time"** was in the original plan but is not shown. In MyCompanyDesk, "filed" means a period was closed in `period_locks`. A client who files elsewhere will never have that row, so a historical percentage would systematically mark them late. That would be an accusation based on missing data, not an accuracy issue. A quality metric like this first needs an explicit signal per administration that filing happens here.
+
+Instead, the comparison table now includes a **Closed by you** column. It shows how many of the client's recent periods were closed in this office, using the same `period_locks` data. A client who files elsewhere simply shows 0, because nothing was closed here. The column is intentionally neutral and is never red, because it describes your own work, not the client's behavior.
 
 ## Related
 

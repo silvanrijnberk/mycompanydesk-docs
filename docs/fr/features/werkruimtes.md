@@ -200,6 +200,7 @@ Le premier tableau liste vos clients cote a cote :
 |---|---|
 | Client | Nom de l'administration cliente. |
 | TVA | Si la periode TVA en cours est declaree, combien de jours avant l'echeance, ou combien de jours de retard. |
+| Cloture par vous | Combien des dernieres periodes de declaration du client vous avez cloturees dans ce cabinet. |
 | A recouvrer | Nombre de factures en retard. |
 | Recus | Nombre de justificatifs manquants. |
 | Paye | Nombre de factures payees dans l'annee selectionnee. |
@@ -224,6 +225,8 @@ Utilisez ce tableau pour repere un empilement avant qu'il ne devienne un problem
 ### Ce qui ne figure pas ici
 
 **"Pourcentage de declarations a temps"** figurait dans le plan initial, mais n'est pas affiche. Dans MyCompanyDesk, "declare" signifie qu'une periode est fermee dans `period_locks`. Un client qui declare ailleurs n'aura jamais cette ligne. Un pourcentage historique marquerait systematiquement ce client comme en retard. C'est une accusation fondee sur des donnees manquantes, pas une imprecision. Une telle mesure de qualite necessite d'abord un signal explicite par administration indiquant que la declaration se fait ici.
+
+A la place, le tableau de comparaison inclut maintenant une colonne **Cloture par vous**. Elle indique combien des dernieres periodes du client ont ete cloturees dans ce cabinet, en utilisant les memes donnees `period_locks`. Un client qui declare ailleurs affiche simplement 0, car rien n'a ete cloture ici. La colonne est deliberement neutre et ne devient jamais rouge, car elle decrit votre propre travail, pas le comportement du client.
 
 ## Voir aussi
 

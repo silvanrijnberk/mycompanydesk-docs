@@ -200,6 +200,7 @@ De eerste tabel zet je klanten naast elkaar:
 |---|---|
 | Klant | De naam van de klantadministratie. |
 | Btw | Of de huidige btw-periode is afgesloten, hoeveel dagen tot de deadline, of hoeveel dagen te laat. |
+| Door jou afgesloten | Hoeveel van de laatste aangifteperioden van de klant jij in dit kantoor hebt afgesloten. |
 | Te innen | Aantal openstaande facturen. |
 | Bonnen | Aantal ontbrekende bonnen. |
 | Betaald | Aantal betaalde facturen in het geselecteerde jaar. |
@@ -224,6 +225,8 @@ Gebruik deze tabel om een opstapeling te zien voordat hij een deadlineprobleem w
 ### Wat er bewust NIET op staat
 
 **"Percentage aangiftes op tijd"** stond in het oorspronkelijke plan maar staat er niet. In MyCompanyDesk betekent "ingediend" dat een periode wordt afgesloten in `period_locks`. Een klant die ergens anders aangifte doet, krijgt die rij nooit. Een historisch percentage zou zo'n klant stelselmatig te laat noemen. Dat is een beschuldiging op basis van ontbrekende data, geen onnauwkeurigheid. Een kwaliteitscijfer als dit heeft eerst een expliciet signaal per administratie nodig dat de aangifte hier gebeurt.
+
+In plaats daarvan bevat de vergelijkingstabel nu een kolom **Door jou afgesloten**. Die toont hoeveel van de laatste perioden van de klant hier zijn afgesloten, op basis van dezelfde `period_locks`-data. Een klant die ergens anders aangifte doet, komt op 0 uit, want hier is niets afgesloten. De kolom is bewust neutraal en wordt nooit rood, omdat hij over jouw eigen administratie gaat, niet over het gedrag van de klant.
 
 ## Gerelateerd
 
