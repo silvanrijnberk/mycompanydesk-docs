@@ -270,6 +270,7 @@ Wichtige Hinweise:
 - **Bildseite**: Die Layout-Variante steht standardmäßig auf Bild-rechts. Stellen Sie im Layout-Panel auf Bild-links um, um die Zeile zu spiegeln.
 - **Optionale Elemente**: Eyebrow, Untertitel, Aufzählungspunkte, CTA und Bild sind alle optional. Ein Spotlight nur mit Titel und Bild wird trotzdem sauber dargestellt.
 - **Stapeln**: Setzen Sie mehrere Spotlight-Abschnitte untereinander, um das klassische Feature-Listen-Muster der MCD-Landingpage nachzubauen.
+- **Haftendes Bild**: Aktivieren Sie "Bild bleibt beim Scrollen stehen" im Spotlight-Inspector, um das Bild zu fixieren, während der Text daneben scrollt. Nur auf dem Desktop und nur sinnvoll, wenn genug Text neben dem Bild steht. Auf Mobilgeräten wird das Bild normal gestapelt.
 
 ### Preismodelle mit Kauf-Buttons
 
@@ -319,6 +320,7 @@ Jeder Abschnittsblock hat ein **Animation**-Panel im Inspector. Damit fügen Sie
 | **Slide right** | Der Abschnitt blendet ein und gleitet 2rem nach rechts. |
 | **Reveal** | Der Abschnitt wird von rechts nach links durch eine Clip-Maske enthüllt. |
 | **Stagger** | Kindelemente erscheinen nacheinander in 80ms-Schritten, anstatt dass der Abschnitt selbst sich bewegt. |
+| **Wort für Wort** | Nur für Hero-Abschnitte. Die Wörter des Titels erscheinen nacheinander; andere Abschnitte blenden normal ein. |
 
 ### Auslöser
 
