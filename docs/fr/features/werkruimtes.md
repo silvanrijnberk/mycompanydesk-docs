@@ -183,6 +183,48 @@ Dans un espace de travail client, la barre laterale est plus courte, car les par
 - Les comptables ne voient que les espaces de travail et les pages que leur client a autorises.
 - Les membres de l'equipe ne voient Espaces de travail que s'ils ont plus d'un espace de travail et que leur role le leur permet.
 
+## Apercu pour comptables
+
+La page Apercu, `/werkruimtes/inzicht`, compare les administrations clientes et montre la charge de travail par periode. Elle n'est visible que dans l'espace de travail de cabinet et seulement si vous gerez plus d'une administration cliente.
+
+La page traite deliberement de nombres et de jours, pas de montants :
+
+- L'argent des clients n'est jamais additionne, car il ne vous appartient pas.
+- Aucune "valeur de portefeuille" totale ou chiffre d'affaires par client n'apparait.
+
+### Comparaison des clients
+
+Le premier tableau liste vos clients cote a cote :
+
+| Colonne | Signification |
+|---|---|
+| Client | Nom de l'administration cliente. |
+| TVA | Si la periode TVA en cours est declaree, combien de jours avant l'echeance, ou combien de jours de retard. |
+| A recouvrer | Nombre de factures en retard. |
+| Recus | Nombre de justificatifs manquants. |
+| Paye | Nombre de factures payees dans l'annee selectionnee. |
+| Delai de paiement | Moyenne de jours de retard sur les factures payees, s'il y en a. |
+
+Les lignes sont triees par urgence : les clients qui ont besoin d'une action aujourd'hui apparaissent en premier. Le badge TVA utilise la meme logique d'urgence que le tableau de bord d'un espace de travail.
+
+### Charge de travail par periode
+
+Le deuxieme tableau montre la charge de travail sur tous vos clients, repartie par periode :
+
+| Colonne | Signification |
+|---|---|
+| Periode | La periode TVA ou "Autres taches" pour le travail non lie a une periode. |
+| Cloture | Administrations dont la periode est cloturee. |
+| En cours | Administrations avec un travail actif en cours. |
+| Ouvert | Administrations avec une periode ouverte qui n'a pas encore ete touchee. |
+| Rien encore | Administrations sans activite enregistree pour cette periode. |
+
+Utilisez ce tableau pour repere un empilement avant qu'il ne devienne un probleme d'echeance. Les periodes sont independantes de l'annee ; le tableau de comparaison ci-dessus filtre par annee.
+
+### Ce qui ne figure pas ici
+
+**"Pourcentage de declarations a temps"** figurait dans le plan initial, mais n'est pas affiche. Dans MyCompanyDesk, "declare" signifie qu'une periode est fermee dans `period_locks`. Un client qui declare ailleurs n'aura jamais cette ligne. Un pourcentage historique marquerait systematiquement ce client comme en retard. C'est une accusation fondee sur des donnees manquantes, pas une imprecision. Une telle mesure de qualite necessite d'abord un signal explicite par administration indiquant que la declaration se fait ici.
+
 ## Voir aussi
 
 - [Acces et comptable](/fr/settings/team) pour inviter des collegues et des comptables et definir les permissions de page

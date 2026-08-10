@@ -183,6 +183,48 @@ In een klantwerkruimte is de rail korter, want onderdelen die bij de klant zelf 
 - Boekhouders zien alleen de werkruimtes en pagina's die hun klant toegankelijk heeft gemaakt.
 - Teamleden zien Werkruimtes alleen als ze meer dan één werkruimte hebben en hun rol dat toestaat.
 
+## Inzicht voor accountants
+
+De pagina Inzicht, `/werkruimtes/inzicht`, zet klantadministraties naast elkaar en toont de werkdruk per periode. Hij is alleen zichtbaar in de kantoor-werkruimte en alleen als je meer dan één klantadministratie beheert.
+
+De pagina bewust over aantallen en dagen, niet over bedragen:
+
+- Klantgeld wordt niet opgeteld, want het is niet van jou.
+- Er komt geen totaal "portefeuillewaarde" of omzet over klanten te staan.
+
+### Klanten vergeleken
+
+De eerste tabel zet je klanten naast elkaar:
+
+| Kolom | Betekenis |
+|---|---|
+| Klant | De naam van de klantadministratie. |
+| Btw | Of de huidige btw-periode is afgesloten, hoeveel dagen tot de deadline, of hoeveel dagen te laat. |
+| Te innen | Aantal openstaande facturen. |
+| Bonnen | Aantal ontbrekende bonnen. |
+| Betaald | Aantal betaalde facturen in het geselecteerde jaar. |
+| Betaaltermijn | Gemiddeld aantal dagen te laat op betaalde facturen, als er tenminste zijn. |
+
+Rijen staan op urgentie: klanten die vandaag actie nodig hebben staan bovenaan. Het btw-badge gebruikt dezelfde urgentielogica als het dashboard van een werkruimte.
+
+### Werkdruk per periode
+
+De tweede tabel toont de werkdruk over al je klanten, opgesplitst per periode:
+
+| Kolom | Betekenis |
+|---|---|
+| Periode | De btw-periode of "Losse taken" voor werk dat niet aan een periode vastzit. |
+| Afgesloten | Administraties waarvan de periode is afgesloten. |
+| Bezig | Administraties met actief werk in uitvoering. |
+| Open | Administraties met een open periode die nog niet is aangeraakt. |
+| Nog niets | Administraties zonder geregistreerde activiteit voor die periode. |
+
+Gebruik deze tabel om een opstapeling te zien voordat hij een deadlineprobleem wordt. De periodes zijn jaarloos; de vergelijkingstabel erboven filtert wel op jaar.
+
+### Wat er bewust NIET op staat
+
+**"Percentage aangiftes op tijd"** stond in het oorspronkelijke plan maar staat er niet. In MyCompanyDesk betekent "ingediend" dat een periode wordt afgesloten in `period_locks`. Een klant die ergens anders aangifte doet, krijgt die rij nooit. Een historisch percentage zou zo'n klant stelselmatig te laat noemen. Dat is een beschuldiging op basis van ontbrekende data, geen onnauwkeurigheid. Een kwaliteitscijfer als dit heeft eerst een expliciet signaal per administratie nodig dat de aangifte hier gebeurt.
+
 ## Gerelateerd
 
 - [Toegang en boekhouder](/nl/settings/team) voor het uitnodigen van teamgenoten en boekhouders en het instellen van paginarechten

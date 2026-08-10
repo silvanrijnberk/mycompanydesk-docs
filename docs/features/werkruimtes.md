@@ -183,6 +183,48 @@ In a client workspace the rail is shorter because parts that belong to the clien
 - Accountants see only the workspaces and pages their client granted.
 - Team members see the Workspaces entry when they hold more than one workspace and their role allows it.
 
+## Insights for accountants (Inzicht)
+
+The Insights page, `/werkruimtes/inzicht`, compares client administrations and shows workload per period. It is only visible in the office workspace and only when you manage more than one client administration.
+
+The page is deliberately about counts and dates, not amounts:
+
+- It does not add up client money, because client money is not yours.
+- It does not show a total "portfolio value" or revenue across clients.
+
+### Client comparison
+
+The first table lists your clients side by side:
+
+| Column | Meaning |
+|---|---|
+| Client | The client administration name. |
+| VAT | Whether the current VAT period is filed, how many days until it is due, or how many days late it is. |
+| To collect | Number of overdue invoices. |
+| Receipts | Number of missing receipts. |
+| Paid | Number of paid invoices in the selected year. |
+| Payment term | Average days late on paid invoices, if any. |
+
+Rows are sorted by urgency: clients that need action today appear first. The VAT badge uses the same severity logic as the workspace dashboard.
+
+### Workload per period
+
+The second table shows workload across all your clients, split by period:
+
+| Column | Meaning |
+|---|---|
+| Period | The VAT period or "Other tasks" for work that is not tied to a period. |
+| Closed | Administrations whose period is filed. |
+| Busy | Administrations with active work in progress. |
+| Open | Administrations with an open period that has not been touched yet. |
+| Nothing yet | Administrations with no registered activity for the period. |
+
+Use this table to spot a pile-up before it becomes a deadline problem. Periods are year-agnostic; the comparison table above filters by year.
+
+### What is NOT on this page
+
+**"Percentage of VAT returns on time"** was in the original plan but is not shown. In MyCompanyDesk, "filed" means a period was closed in `period_locks`. A client who files elsewhere will never have that row, so a historical percentage would systematically mark them late. That would be an accusation based on missing data, not an accuracy issue. A quality metric like this first needs an explicit signal per administration that filing happens here.
+
 ## Related
 
 - [Team access and your accountant](/settings/team) for inviting teammates and accountants and setting page permissions
