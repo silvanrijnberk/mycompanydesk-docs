@@ -12,7 +12,7 @@ To create a reverse charge (EU) invoice:
 1. Go to Invoices → New Invoice
 2. Select your EU customer and check that their VAT number is filled in on the customer record
 3. Turn on the "VAT Reverse Charge (BTW verlegd)" toggle on the invoice form; MyCompanyDesk suggests it automatically for EU business customers
-4. The VAT on all line items switches to 0% automatically, no manual changes needed
+4. The VAT on all line items switches to 0% automatically when the toggle is on, and returns to the previous rate if you switch it off again; no manual changes needed.
 5. Preview the invoice to confirm the reverse charge note, then send it
 
 Reverse-charge invoices are checked before sending: the customer must have a VAT number and the invoice must use 0% (sources/vat-rates.yaml#countries.NL.zero) on every line. These checks also run when you finalize or send invoices in bulk.

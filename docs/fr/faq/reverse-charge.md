@@ -12,7 +12,7 @@ Pour créer une facture en autoliquidation (UE) :
 1. Allez dans Factures → Nouvelle facture
 2. Sélectionnez votre client de l'UE et vérifiez que son numéro de TVA figure sur sa fiche
 3. Activez l'interrupteur "Autoliquidation de la TVA" sur le formulaire de facture ; MyCompanyDesk le propose automatiquement pour les clients professionnels de l'UE
-4. La TVA de toutes les lignes passe automatiquement à 0 %, aucun changement manuel n'est nécessaire
+4. La TVA de toutes les lignes passe automatiquement à 0 % lorsque l'interrupteur est activé, et revient à son taux d'origine si vous le désactivez ; aucun changement manuel n'est nécessaire.
 5. Vérifiez la mention d'autoliquidation dans l'aperçu, puis envoyez la facture
 
 Les factures en autoliquidation sont vérifiées avant l'envoi: le client doit avoir un numéro de TVA et la facture doit indiquer 0% (sources/vat-rates.yaml#countries.NL.zero) sur chaque ligne. Ces contrôles s'appliquent aussi lorsque vous finalisez ou envoyez des factures en groupe.

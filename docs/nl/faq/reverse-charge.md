@@ -12,7 +12,7 @@ Zo maak je een factuur met BTW verlegd (EU):
 1. Ga naar Facturen → Nieuwe factuur
 2. Kies je EU-klant en controleer of het BTW-nummer bij de klant is ingevuld
 3. Zet de schakelaar "BTW verlegd" aan op het factuurformulier; MyCompanyDesk stelt dit automatisch voor bij zakelijke EU-klanten
-4. De BTW op alle factuurregels springt automatisch naar 0%, je hoeft niets handmatig aan te passen
+4. De BTW op alle factuurregels springt automatisch naar 0% als de schakelaar aan staat, en terug naar het vorige tarief als je hem weer uitzet; je hoeft niets handmatig aan te passen.
 5. Bekijk het voorbeeld om de vermelding van de verlegde BTW te controleren en verstuur de factuur
 
 Facturen met verlegde BTW worden gecontroleerd voordat ze worden verstuurd: de klant moet een BTW-nummer hebben en de factuur moet op elke regel 0% (sources/vat-rates.yaml#countries.NL.zero) gebruiken. Deze controles worden ook uitgevoerd als je facturen bulksgewijs afrondt of verstuurt.

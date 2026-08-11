@@ -12,7 +12,7 @@ So erstellen Sie eine Reverse-Charge-Rechnung (EU):
 1. Gehen Sie zu Rechnungen → Neue Rechnung
 2. Wählen Sie Ihren EU-Kunden und prüfen Sie, ob die USt-IdNr. beim Kunden hinterlegt ist
 3. Aktivieren Sie im Rechnungsformular den Schalter "Reverse Charge (Steuerschuldnerschaft des Leistungsempfängers)"; MyCompanyDesk schlägt ihn bei EU-Geschäftskunden automatisch vor
-4. Die MwSt. aller Positionen springt automatisch auf 0 %, manuelle Änderungen sind nicht nötig
+4. Die MwSt. aller Positionen springt automatisch auf 0 %, wenn der Schalter eingeschaltet ist, und zurück auf ihren vorherigen Satz, wenn Sie ihn wieder ausschalten; manuelle Änderungen sind nicht nötig.
 5. Prüfen Sie in der Vorschau den Reverse-Charge-Hinweis und senden Sie die Rechnung
 
 Reverse-Charge-Rechnungen werden vor dem Versenden geprüft: der Kunde muss über eine USt-IdNr. verfügen und die Rechnung muss in jeder Position 0% (sources/vat-rates.yaml#countries.NL.zero) ausweisen. Diese Prüfungen laufen auch, wenn Sie Rechnungen massenhaft freigeben oder versenden.
