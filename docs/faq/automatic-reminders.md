@@ -13,6 +13,8 @@ To set up automatic payment reminders:
 2. Turn on the reminder toggle ("Te laat? Automatisch een herinnering sturen")
 3. Changes save automatically
 
-When an invoice is a few days past its due date, MyCompanyDesk automatically sends a friendly reminder, and repeats it every week until the invoice is paid. The reminder emails use fixed system templates; the text cannot be edited.
+When an invoice is a few days past its due date, MyCompanyDesk automatically sends a friendly reminder, and repeats it every week until the invoice is paid. The reminder states the remaining outstanding amount, which is the invoice total minus payments already received. If a customer has paid a deposit or an instalment, the reminder asks for the rest, not the full amount.
+
+The reminder emails use fixed system templates; the text cannot be edited.
 
 Tip: Need to nudge a customer right now? You can also send a manual reminder from the invoice.

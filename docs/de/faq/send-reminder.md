@@ -13,4 +13,6 @@ So sendest du eine Erinnerung fuer eine unbezahlte Rechnung:
 2. Nutze die Aktion „Erinnerung senden"
 3. Pruefe die Nachricht und sende sie ab
 
+Die Erinnerung nennt den noch offenen Restbetrag (Rechnungsbetrag abzüglich der bereits eingegangenen Zahlungen). Hat der Kunde bereits eine Anzahlung oder Ratenzahlung geleistet, mahnt die Erinnerung den Rest an, nicht den vollen Rechnungsbetrag.
+
 Die Erinnerungsvorlage kannst du auch unter Einstellungen → E-Mails anpassen.

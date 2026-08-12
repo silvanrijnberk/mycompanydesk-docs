@@ -13,4 +13,6 @@ To follow up on unpaid invoices:
 2. Use the "Send Reminder" action
 3. The system generates a professional reminder email
 
+The reminder states the remaining outstanding amount (invoice total minus payments already received). If the customer has paid a deposit or an instalment, the reminder asks for the rest, not the full invoice amount.
+
 Best practice: Send reminders at 1 day before due date (friendly), 3 days after (firm), and 10 days after (final notice). Escalate to a phone call after that.

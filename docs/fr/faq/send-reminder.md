@@ -13,4 +13,6 @@ Pour envoyer un rappel pour une facture impayee :
 2. Utilisez l action « Envoyer un rappel »
 3. Verifiez le message puis envoyez-le
 
+Le rappel indique le montant restant dû (montant total de la facture moins les paiements déjà reçus). Si le client a déjà versé un acompte ou un paiement partiel, le rappel demande le solde, pas le montant total de la facture.
+
 Vous pouvez aussi modifier le modele de rappel dans Parametres → E-mails.
