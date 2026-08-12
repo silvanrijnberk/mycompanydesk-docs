@@ -13,4 +13,6 @@ Om een herinnering te versturen voor een onbetaalde factuur:
 2. Gebruik de actie "Herinnering versturen"
 3. Controleer het bericht en verstuur het
 
+De herinnering vermeldt het resterende openstaande bedrag (factuurbedrag minus de al ontvangen betalingen). Heeft de klant een aanbetaling of termijnbetaling gedaan, dan vraagt de herinnering om het restant, niet om het volledige factuurbedrag.
+
 Je kunt het herinneringssjabloon ook aanpassen via Instellingen → E-mails.

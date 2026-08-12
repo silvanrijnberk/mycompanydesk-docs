@@ -13,6 +13,8 @@ Pour configurer les rappels de paiement automatiques :
 2. Activez l'interrupteur "En retard ? Envoyer automatiquement un rappel"
 3. Les modifications sont enregistrées automatiquement
 
-Quand une facture dépasse de quelques jours sa date d'échéance, MyCompanyDesk envoie automatiquement un rappel courtois, puis le répète chaque semaine jusqu'au paiement. Les e-mails de rappel utilisent des modèles système fixes ; le texte ne peut pas être modifié.
+Quand une facture dépasse de quelques jours sa date d'échéance, MyCompanyDesk envoie automatiquement un rappel courtois, puis le répète chaque semaine jusqu'au paiement. Le rappel indique le montant restant dû : le montant total de la facture moins les paiements déjà reçus. Si un client a déjà versé un acompte ou un paiement partiel, le rappel demande le solde, pas la totalité.
+
+Les e-mails de rappel utilisent des modèles système fixes ; le texte ne peut pas être modifié.
 
 Astuce : besoin de relancer un client tout de suite ? Vous pouvez aussi envoyer un rappel manuel depuis la facture.
