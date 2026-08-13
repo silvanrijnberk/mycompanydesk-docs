@@ -13,7 +13,7 @@ Wenn Sie eine Rechnung versenden, wird ein eindeutiger **Zahlungslink** generier
 1. **Die Rechnung ansehen** kann — Alle Details, Positionen und Gesamtbeträge einsehen
 2. **Das PDF herunterladen** kann — Eine Kopie der Rechnung erhalten
 3. **Online bezahlen** kann — Die Zahlung direkt über das Portal abschließen
-4. **Zahlung bestätigen** kann — Eine Banküberweisung bestätigen
+4. **Zahlung bestätigen** kann — Eine Banküberweisung bestätigen (bei Gutschriften nicht verfügbar, da eine Gutschrift dem Kunden Geld erstattet und keine Zahlung anfordert)
 
 ## Portal-Funktionen
 

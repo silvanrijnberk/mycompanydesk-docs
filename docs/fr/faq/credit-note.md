@@ -16,7 +16,9 @@ Pour créer un avoir :
 
 Vous ne pouvez pas ajuster les montants pendant la création ; les documents envoyés sont verrouillés, l'avoir reflète donc toujours exactement l'original. Pour une correction partielle, créez d'abord l'avoir complet, puis émettez une nouvelle facture avec le bon montant.
 
-Un avoir rembourse le client et n'a donc pas de date d'échéance propre. Dans le portail client, la ligne d'échéance et le tableau des factures antérieures masquent le délai pour les avoirs. Dans le rapport des créances clients, le montant de l'avoir est compensé avec la facture originale qu'il corrige, de sorte que le solde du client reflète ce qui est réellement encore dû.
+Un avoir rembourse le client et n'a donc pas de date d'échéance propre. Dans le portail client, la ligne d'échéance et le tableau des factures antérieures masquent le délai pour les avoirs. Le bouton Confirmer le paiement est également masqué, car un avoir rembourse le client au lieu de lui demander de payer.
+
+Dans le rapport des créances clients, le montant de l'avoir est compensé avec la facture originale qu'il corrige, de sorte que le solde du client reflète ce qui est réellement encore dû.
 
 Dans le back-office, la page de détail de l'avoir indique si le montant reste à compenser ou a déjà été compensé. Vous voyez ainsi d'un seul coup d'œil si vous devez encore rembourser ou compenser le client.
 

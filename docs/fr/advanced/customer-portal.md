@@ -13,7 +13,7 @@ Lorsque vous envoyez une facture, un **lien de paiement** unique est genere. Lor
 1. **Consulter la facture** -- Voir tous les details, lignes et totaux
 2. **Telecharger le PDF** -- Obtenir une copie de la facture
 3. **Payer en ligne** -- Effectuer le paiement via le portail
-4. **Confirmer le paiement** -- Attester d'un virement bancaire
+4. **Confirmer le paiement** -- Attester d'un virement bancaire (non disponible pour les avoirs, car un avoir rembourse le client au lieu de demander un paiement)
 
 ## Fonctionnalites du portail
 
