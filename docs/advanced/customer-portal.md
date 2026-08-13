@@ -13,7 +13,7 @@ When you send an invoice, a unique **payment link** is generated. When your cust
 1. **View the invoice** — See all details, line items, and totals
 2. **Download the PDF** — Get a copy of the invoice
 3. **Pay online** — Complete payment through the portal
-4. **Confirm payment** — Acknowledge a bank transfer
+4. **Confirm payment** — Acknowledge a bank transfer (not shown for credit notes, because a credit note refunds the customer rather than asking for payment)
 
 ## Portal features
 

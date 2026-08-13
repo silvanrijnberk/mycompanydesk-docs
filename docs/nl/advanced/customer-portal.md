@@ -13,7 +13,7 @@ Wanneer je een factuur verstuurt, wordt een unieke **betaallink** gegenereerd. W
 1. **De factuur bekijken** — Alle details, regelitems en totalen zien
 2. **De PDF downloaden** — Een kopie van de factuur krijgen
 3. **Online betalen** — De betaling voltooien via het portaal
-4. **Betaling bevestigen** — Een bankoverschrijving bevestigen
+4. **Betaling bevestigen** — Een bankoverschrijving bevestigen (niet zichtbaar voor creditnota's, want een creditnota betaalt de klant terug in plaats van betaling te vragen)
 
 ## Portaalfuncties
 
