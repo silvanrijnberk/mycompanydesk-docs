@@ -18,4 +18,6 @@ Je kunt de bedragen tijdens het aanmaken niet aanpassen; verstuurde documenten z
 
 Een creditnota brengt geld terug naar de klant, dus heeft deze geen eigen vervaldatum. In het klantenportaal verbergt de vervaldatumrij en de tabel met eerdere facturen de deadline voor creditnota's. In het openstaande-debiteurenoverzicht wordt het bedrag van de creditnota verrekend met de originele factuur waarnaar hij verwijst, zodat het saldo van de klant laat zien wat er écht nog openstaat.
 
+In de backoffice toont de detailpagina van de creditnota of het creditbedrag nog openstaat of al is verrekend. Zo zie je in één oogopslag of je de klant nog moet terugbetalen of verrekenen.
+
 Tip: Doordat je de creditnota vanaf de originele factuur maakt, sluiten beide documenten precies op elkaar aan en blijft je administratie kloppend.

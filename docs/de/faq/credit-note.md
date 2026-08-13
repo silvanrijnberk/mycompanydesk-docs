@@ -18,4 +18,6 @@ Die Beträge lassen sich beim Erstellen nicht anpassen; versendete Dokumente sin
 
 Eine Gutschrift erstattet dem Kunden Geld und hat daher kein eigenes Zahlungsziel. Im Kundenportal werden die Fälligkeitszeile und die Tabelle früherer Rechnungen für Gutschriften ausgeblendet. Im offene-Posten-Bericht wird der Betrag der Gutschrift gegen die korrigierte Originalrechnung verrechnet, sodass der Saldo des Kunden widerspiegelt, was tatsächlich noch offen ist.
 
+Im Backoffice zeigt die Detailseite der Gutschrift an, ob der Gutschriftbetrag noch offen oder bereits verrechnet ist. So sehen Sie auf einen Blick, ob Sie den Kunden noch erstatten oder verrechnen müssen.
+
 Tipp: Da Sie die Gutschrift direkt aus der Originalrechnung erstellen, passen beide Dokumente exakt zusammen und Ihre Buchhaltung bleibt stimmig.
