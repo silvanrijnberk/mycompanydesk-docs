@@ -18,4 +18,6 @@ You cannot adjust the amounts during creation; sent documents are locked, so the
 
 A credit note returns money to the customer, so it has no payment due date of its own. In the customer portal the due-date row and the past-invoices table hide the deadline for credit notes. In the outstanding report, the credit note's amount is netted against the original invoice it corrects, so the customer's balance reflects what is actually still owed.
 
+In the back office, the credit note detail page shows whether the credit amount is still open or already settled, so you can see at a glance whether you still need to refund or offset it.
+
 Tip: Because you create the credit note from the original invoice, the two documents match exactly and your records stay consistent.
