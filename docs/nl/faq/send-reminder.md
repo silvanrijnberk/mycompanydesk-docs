@@ -1,6 +1,6 @@
 ---
 title: Send reminder
-last_verified: 2026-05-09
+last_verified: 2026-08-14
 chatbot:
   triggers: ["send reminder", "payment reminder", "remind customer", "follow up", "chase payment", "herinnering sturen", "betaalherinnering", "aanmaning", "zahlungserinnerung", "relance", "rappel paiement"]
   actions:
@@ -14,5 +14,12 @@ Om een herinnering te versturen voor een onbetaalde factuur:
 3. Controleer het bericht en verstuur het
 
 De herinnering vermeldt het resterende openstaande bedrag (factuurbedrag minus de al ontvangen betalingen). Heeft de klant een aanbetaling of termijnbetaling gedaan, dan vraagt de herinnering om het restant, niet om het volledige factuurbedrag.
+
+Je kunt geen herinnering versturen als:
+- de factuur nog een concept is
+- de factuur is geannuleerd
+- de factuur al als betaald staat aangemerkt
+- het een creditnota of refundnota betreft
+- er niets meer openstaat (bijvoorbeeld omdat de klant betaalde terwijl de pagina openstond)
 
 Je kunt het herinneringssjabloon ook aanpassen via Instellingen → E-mails.
