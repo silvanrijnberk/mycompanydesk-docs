@@ -1,6 +1,6 @@
 ---
 title: "Automatische herinneringen"
-last_verified: 2026-07-02
+last_verified: 2026-08-14
 chatbot:
   triggers: ["automatic reminders", "auto reminder", "scheduled reminders", "reminder automation", "automatische herinnering", "herinneringen instellen", "automatische erinnerung", "rappels automatiques"]
   actions:
@@ -14,6 +14,12 @@ Zo stel je automatische betalingsherinneringen in:
 3. Wijzigingen worden automatisch opgeslagen
 
 Is een factuur een paar dagen over de vervaldatum, dan stuurt MyCompanyDesk vanzelf een vriendelijke herinnering, en daarna elke week opnieuw tot er betaald is. In de herinnering staat het resterende openstaande bedrag: het factuurbedrag minus de betalingen die al zijn ontvangen. Heeft een klant een aanbetaling of termijnbetaling gedaan, dan vraagt de herinnering om het restant, niet om het hele bedrag.
+
+Automatische herinneringen worden niet verstuurd als:
+- de factuur is geannuleerd
+- de factuur al betaald is
+- het een creditnota of refundnota betreft
+- er niets meer openstaat
 
 De herinneringsmails gebruiken vaste systeemsjablonen; de tekst kun je niet aanpassen.
 
