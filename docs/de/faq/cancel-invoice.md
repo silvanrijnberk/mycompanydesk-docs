@@ -1,6 +1,6 @@
 ---
 title: "Rechnung stornieren"
-last_verified: 2026-07-02
+last_verified: 2026-08-14
 chatbot:
   triggers: ["cancel invoice", "void invoice", "annul invoice", "reverse invoice", "credit note", "undo invoice", "factuur annuleren", "factuur ongedaan", "hoe annuleer ik een factuur", "rechnung stornieren", "wie storniere ich eine rechnung", "annuler facture"]
   actions:
@@ -13,6 +13,8 @@ So stornieren Sie eine versendete Rechnung:
 2. Scrollen Sie in der Seitenleiste zum Bereich "Gefahrenzone"
 3. Klicken Sie auf "Als storniert markieren"
 4. Der Status der Rechnung wechselt zu Storniert
+
+Auch zugehörige Benachrichtigungen für die Rechnung, wie überfällig, Termin oder Entwurf, werden aufgelöst, sodass die Aktion "Erinnerung senden" in der Glocke nicht mehr erscheint. Das gilt auch, wenn Sie mehrere Rechnungen auf einmal aus der Rechnungsliste stornieren.
 
 Ist die Rechnung bereits ganz oder teilweise bezahlt, öffnen Sie die Originalrechnung und nutzen Sie stattdessen "Gutschrift / Korrektur erstellen".
 

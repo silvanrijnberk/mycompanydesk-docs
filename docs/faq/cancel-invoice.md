@@ -1,6 +1,6 @@
 ---
 title: Cancel an invoice
-last_verified: 2026-07-02
+last_verified: 2026-08-14
 chatbot:
   triggers: ["cancel invoice", "void invoice", "annul invoice", "reverse invoice", "credit note", "undo invoice", "factuur annuleren", "factuur ongedaan", "hoe annuleer ik een factuur", "rechnung stornieren", "wie storniere ich eine rechnung", "annuler facture"]
   actions:
@@ -13,6 +13,8 @@ To cancel a sent invoice:
 2. In the sidebar, scroll to the "Danger Zone" section
 3. Click "Mark as Canceled"
 4. The invoice status changes to Canceled
+
+Any overdue, deadline, or draft notifications tied to the invoice are also resolved, so you will no longer see a "Send reminder" action for it in the bell. This also applies when you cancel multiple invoices at once from the invoice list.
 
 If the invoice is already paid or partially paid, open the original invoice and use "Create credit note / correction" instead.
 

@@ -1,13 +1,15 @@
 ---
 title: E-Mail-Vorlagen
-last_verified: 2026-07-02
+last_verified: 2026-08-14
 chatbot:
   triggers: ["email template", "customize email", "invoice email message", "email text", "change email message", "email sjabloon", "email aanpassen", "e-mail vorlage", "modele email", "personnaliser email"]
   actions:
     - { label: "Open email settings", to: "/settings/email" }
   follow_up: ["How do I send an invoice by email?", "How do I change the PDF style?"]
 ---
-E-Mail-Vorlagen können nicht mehr bearbeitet werden. MyCompanyDesk verwendet standardmäßige, gut erprobte Texte für Rechnungs-, Angebots- und Erinnerungs-E-Mails, in Ihrer Dokumentsprache.
+E-Mail-Vorlagen können nicht mehr bearbeitet werden. MyCompanyDesk verwendet standardmäßige, gut erprobte Texte für Rechnungs-, Gutschrifts-, Angebots- und Erinnerungs-E-Mails, in Ihrer Dokumentsprache.
+
+Gutschrifts-E-Mails verwenden eine eigene Vorlage, die das Dokument als Gutschrift benennt, den gutgeschriebenen Betrag als positiven Betrag angibt und nicht um Zahlung bittet oder ein Zahlungsziel enthält.
 
 Was Sie anpassen können:
 1. Den Absender: Gehen Sie zu Einstellungen → E-Mail und wählen Sie Ihre eigene Domain (Pro), Gmail oder Outlook

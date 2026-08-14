@@ -1,6 +1,6 @@
 ---
 title: "Factuur annuleren"
-last_verified: 2026-07-02
+last_verified: 2026-08-14
 chatbot:
   triggers: ["cancel invoice", "void invoice", "annul invoice", "reverse invoice", "credit note", "undo invoice", "factuur annuleren", "factuur ongedaan", "hoe annuleer ik een factuur", "rechnung stornieren", "wie storniere ich eine rechnung", "annuler facture"]
   actions:
@@ -13,6 +13,8 @@ Zo annuleer je een verstuurde factuur:
 2. Scrol in de zijbalk naar de sectie "Gevarenzone"
 3. Klik op "Markeer als geannuleerd"
 4. De status van de factuur verandert naar Geannuleerd
+
+Ook worden meldingen over deze factuur, zoals achterstallig, deadline of concept, opgelost, zodat je geen actie "Herinnering versturen" meer voor hem ziet in de bel. Dit geldt ook wanneer je meerdere facturen tegelijk annuleert vanuit de factuurlijst.
 
 Is de factuur al (deels) betaald? Open dan de originele factuur en gebruik "Creditnota / correctie maken".
 
