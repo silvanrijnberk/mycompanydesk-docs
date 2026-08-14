@@ -13,7 +13,7 @@ Wanneer je een factuur verstuurt, wordt een unieke **betaallink** gegenereerd. W
 1. **De factuur bekijken** — Alle details, regelitems en totalen zien
 2. **De PDF downloaden** — Een kopie van de factuur krijgen
 3. **Online betalen** — De betaling voltooien via het portaal
-4. **Betaling bevestigen** — Een bankoverschrijving bevestigen (niet zichtbaar voor creditnota's, want een creditnota betaalt de klant terug in plaats van betaling te vragen)
+4. **Betaling bevestigen** — Een bankoverschrijving bevestigen (niet zichtbaar voor creditnota's of ingetrokken facturen, omdat de klant in beide gevallen niets meer hoeft te betalen)
 
 ## Portaalfuncties
 
@@ -30,7 +30,7 @@ Het portaal toont een overzichtelijke, huisstijl-conforme weergave van de factuu
 
 ### Betaling
 
-Klanten kunnen direct via het portaal betalen. Als je Mollie of Stripe hebt gekoppeld, verschijnen er betaalknoppen op de factuurweergave zodat je klant met één klik kan betalen. Als een klant een autopay-link volgt (bijvoorbeeld vanuit een betaalherinnering), scrolt het portaal naar de juiste betaalknop en markeert deze met een pulserende animatie in plaats van automatisch door te verwijzen naar het betaalproces. Zo kan de klant de factuur eerst bekijken voordat deze betaalt. Wanneer de betaling is bevestigd, wordt de factuurstatus in je dashboard automatisch bijgewerkt naar **Betaald**.
+Klanten kunnen direct via het portaal betalen. Als je Mollie of Stripe hebt gekoppeld, verschijnen er betaalknoppen op de factuurweergave zodat je klant met één klik kan betalen. Betaalknoppen en het totaal verschuldigde bedrag worden verborgen voor creditnota's en ingetrokken facturen, omdat de klant in beide gevallen geen geld meer hoeft over te maken. Als een klant een autopay-link volgt (bijvoorbeeld vanuit een betaalherinnering), scrolt het portaal naar de juiste betaalknop en markeert deze met een pulserende animatie in plaats van automatisch door te verwijzen naar het betaalproces. Zo kan de klant de factuur eerst bekijken voordat deze betaalt. Wanneer de betaling is bevestigd, wordt de factuurstatus in je dashboard automatisch bijgewerkt naar **Betaald**.
 
 #### Mollie-betalingsinstellingen
 

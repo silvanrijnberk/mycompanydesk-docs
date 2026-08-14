@@ -13,7 +13,7 @@ Lorsque vous envoyez une facture, un **lien de paiement** unique est genere. Lor
 1. **Consulter la facture** -- Voir tous les details, lignes et totaux
 2. **Telecharger le PDF** -- Obtenir une copie de la facture
 3. **Payer en ligne** -- Effectuer le paiement via le portail
-4. **Confirmer le paiement** -- Attester d'un virement bancaire (non disponible pour les avoirs, car un avoir rembourse le client au lieu de demander un paiement)
+4. **Confirmer le paiement** -- Attester d'un virement bancaire (non visible pour les avoirs et les factures annulées, car le client n'a dans aucun des deux cas rien à payer)
 
 ## Fonctionnalites du portail
 
@@ -25,12 +25,12 @@ Le portail affiche une vue claire et personnalisee de la facture comprenant :
 - Le numero et la date de la facture
 - Les lignes avec descriptions et montants
 - La ventilation de la TVA
-- Le montant total du
+- Le montant total dû
 - La date d'echeance
 
 ### Paiement
 
-Les clients peuvent payer directement via le portail. Si vous avez connecte Mollie ou Stripe, des boutons de paiement apparaissent sur la vue de la facture pour que votre client puisse payer en un clic. Lorsqu un client suit un lien autopay (par exemple depuis un rappel de paiement), le portail fait defiler jusqu au bon bouton de paiement et le met en evidence avec une animation pulsante au lieu de rediriger automatiquement vers le processus de paiement. Ainsi, le client peut consulter la facture avant de payer. Lorsque le paiement est confirme, le statut de la facture dans votre tableau de bord est automatiquement mis a jour a **Payee**.
+Les clients peuvent payer directement via le portail. Si vous avez connecte Mollie ou Stripe, des boutons de paiement apparaissent sur la vue de la facture pour que votre client puisse payer en un clic. Les boutons de paiement et le montant total dû sont masqués pour les avoirs et les factures annulées, car le client n'a dans aucun des deux cas d'argent à transférer. Lorsqu un client suit un lien autopay (par exemple depuis un rappel de paiement), le portail fait defiler jusqu au bon bouton de paiement et le met en evidence avec une animation pulsante au lieu de rediriger automatiquement vers le processus de paiement. Ainsi, le client peut consulter la facture avant de payer. Lorsque le paiement est confirme, le statut de la facture dans votre tableau de bord est automatiquement mis a jour a **Payee**.
 
 #### Parametres de paiement Mollie
 
