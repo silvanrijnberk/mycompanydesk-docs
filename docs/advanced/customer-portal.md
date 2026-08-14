@@ -13,7 +13,7 @@ When you send an invoice, a unique **payment link** is generated. When your cust
 1. **View the invoice** — See all details, line items, and totals
 2. **Download the PDF** — Get a copy of the invoice
 3. **Pay online** — Complete payment through the portal
-4. **Confirm payment** — Acknowledge a bank transfer (not shown for credit notes, because a credit note refunds the customer rather than asking for payment)
+4. **Confirm payment** — Acknowledge a bank transfer (not shown for credit notes or canceled invoices, because neither asks the customer for payment)
 
 ## Portal features
 
@@ -30,7 +30,7 @@ The portal shows a clean, branded view of the invoice including:
 
 ### Payment
 
-Customers can pay directly through the portal. If you have connected Mollie or Stripe, pay buttons appear on the invoice view so customers can complete payment in one click. When a customer follows an autopay link (for example from a payment reminder email), the portal scrolls to the correct pay button and highlights it with a pulsing animation instead of automatically redirecting to the payment flow. This gives the customer a chance to review the invoice before paying. When payment is confirmed, the invoice status in your dashboard automatically updates to **Paid**.
+Customers can pay directly through the portal. If you have connected Mollie or Stripe, pay buttons appear on the invoice view so customers can complete payment in one click. Pay buttons and the total amount due are hidden for credit notes and canceled invoices, because neither asks the customer for money. When a customer follows an autopay link (for example from a payment reminder email), the portal scrolls to the correct pay button and highlights it with a pulsing animation instead of automatically redirecting to the payment flow. This gives the customer a chance to review the invoice before paying. When payment is confirmed, the invoice status in your dashboard automatically updates to **Paid**.
 
 #### Mollie payment controls
 

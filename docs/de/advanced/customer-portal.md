@@ -13,7 +13,7 @@ Wenn Sie eine Rechnung versenden, wird ein eindeutiger **Zahlungslink** generier
 1. **Die Rechnung ansehen** kann — Alle Details, Positionen und Gesamtbeträge einsehen
 2. **Das PDF herunterladen** kann — Eine Kopie der Rechnung erhalten
 3. **Online bezahlen** kann — Die Zahlung direkt über das Portal abschließen
-4. **Zahlung bestätigen** kann — Eine Banküberweisung bestätigen (bei Gutschriften nicht verfügbar, da eine Gutschrift dem Kunden Geld erstattet und keine Zahlung anfordert)
+4. **Zahlung bestätigen** kann — Eine Banküberweisung bestätigen (nicht sichtbar für Gutschriften oder stornierte Rechnungen, da der Kunde in beiden Fällen nichts mehr zu zahlen hat)
 
 ## Portal-Funktionen
 
@@ -30,7 +30,7 @@ Das Portal zeigt eine übersichtliche, gebrandete Ansicht der Rechnung, einschli
 
 ### Zahlung
 
-Kunden können direkt über das Portal bezahlen. Wenn Sie Mollie oder Stripe verbunden haben, erscheinen Zahlungsschaltflächen auf der Rechnungsansicht, sodass Ihr Kunde mit einem Klick bezahlen kann. Wenn ein Kunde einem Autopay-Link folgt (zum Beispiel aus einer Zahlungserinnerung), scrollt das Portal zur richtigen Zahlungsschaltfläche und hebt sie mit einer pulsierenden Animation hervor, anstatt automatisch zum Zahlungsvorgang weiterzuleiten. So kann der Kunde die Rechnung vor der Zahlung prüfen. Wenn die Zahlung bestätigt wird, aktualisiert sich der Rechnungsstatus in Ihrem Dashboard automatisch auf **Bezahlt**.
+Kunden können direkt über das Portal bezahlen. Wenn Sie Mollie oder Stripe verbunden haben, erscheinen Zahlungsschaltflächen auf der Rechnungsansicht, sodass Ihr Kunde mit einem Klick bezahlen kann. Zahlungsschaltflächen und der fällige Gesamtbetrag werden für Gutschriften und stornierte Rechnungen ausgeblendet, da der Kunde in beiden Fällen kein Geld mehr überweisen muss. Wenn ein Kunde einem Autopay-Link folgt (zum Beispiel aus einer Zahlungserinnerung), scrollt das Portal zur richtigen Zahlungsschaltfläche und hebt sie mit einer pulsierenden Animation hervor, anstatt automatisch zum Zahlungsvorgang weiterzuleiten. So kann der Kunde die Rechnung vor der Zahlung prüfen. Wenn die Zahlung bestätigt wird, aktualisiert sich der Rechnungsstatus in Ihrem Dashboard automatisch auf **Bezahlt**.
 
 #### Mollie-Zahlungseinstellungen
 
