@@ -1,6 +1,6 @@
 ---
 title: "Avoir"
-last_verified: 2026-08-05
+last_verified: 2026-08-14
 chatbot:
   triggers: ["credit note", "create credit note", "issue credit", "credit invoice", "creditnota", "creditnota aanmaken", "gutschrift erstellen", "note de credit", "avoir"]
   actions:
@@ -21,5 +21,7 @@ Un avoir rembourse le client et n'a donc pas de date d'échéance propre. Dans l
 Dans le rapport des créances clients, le montant de l'avoir est compensé avec la facture originale qu'il corrige, de sorte que le solde du client reflète ce qui est réellement encore dû.
 
 Dans le back-office, la page de détail de l'avoir indique si le montant reste à compenser ou a déjà été compensé. Vous voyez ainsi d'un seul coup d'œil si vous devez encore rembourser ou compenser le client.
+
+Quand vous envoyez un avoir par e-mail, il utilise un modèle dédié. L'objet le présente comme un avoir, le corps mentionne le montant crédité comme un nombre positif et il ne demande pas de paiement ni n'affiche de date d'échéance. Tant que l'avoir est encore un brouillon, la carte d'action propose seulement de l'envoyer; une fois envoyé, aucune action de rappel ou d'encaissement n'apparaît, car un avoir rembourse le client au lieu de lui demander de l'argent.
 
 Astuce : comme vous créez l'avoir depuis la facture d'origine, les deux documents correspondent exactement et votre comptabilité reste cohérente.

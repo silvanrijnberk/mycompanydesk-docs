@@ -1,13 +1,15 @@
 ---
 title: Modèles d'e-mail
-last_verified: 2026-07-02
+last_verified: 2026-08-14
 chatbot:
   triggers: ["email template", "customize email", "invoice email message", "email text", "change email message", "email sjabloon", "email aanpassen", "e-mail vorlage", "modele email", "personnaliser email"]
   actions:
     - { label: "Open email settings", to: "/settings/email" }
   follow_up: ["How do I send an invoice by email?", "How do I change the PDF style?"]
 ---
-Les modèles d'e-mail ne peuvent plus être modifiés. MyCompanyDesk utilise des textes standard et éprouvés pour les e-mails de facture, de devis et de rappel, dans la langue de vos documents.
+Les modèles d'e-mail ne peuvent plus être modifiés. MyCompanyDesk utilise des textes standard et éprouvés pour les e-mails de facture, d'avoir, de devis et de rappel, dans la langue de vos documents.
+
+Les e-mails d'avoir utilisent un modèle dédié qui présente le document comme un avoir, indique le montant crédité comme un nombre positif et ne demande pas de paiement ni n'inclut de date d'échéance.
 
 Ce que vous pouvez ajuster :
 1. L'expéditeur : accédez à Paramètres → E-mail et choisissez votre propre domaine (Pro), Gmail ou Outlook

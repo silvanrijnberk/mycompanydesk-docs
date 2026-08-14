@@ -1,13 +1,15 @@
 ---
 title: Email templates
-last_verified: 2026-07-02
+last_verified: 2026-08-14
 chatbot:
   triggers: ["email template", "customize email", "invoice email message", "email text", "change email message", "email sjabloon", "email aanpassen", "e-mail vorlage", "modele email", "personnaliser email"]
   actions:
     - { label: "Open email settings", to: "/settings/email" }
   follow_up: ["How do I send an invoice by email?", "How do I change the PDF style?"]
 ---
-Email templates can no longer be edited. MyCompanyDesk uses standard, well-tested texts for invoice, quote, and reminder emails, in your document language.
+Email templates can no longer be edited. MyCompanyDesk uses standard, well-tested texts for invoice, credit note, quote, and reminder emails, in your document language.
+
+Credit note emails use a dedicated template that names the document as a credit note, states the credited amount as a positive number, and does not ask for payment or include a due date.
 
 What you can change:
 1. The sender: go to Settings → Email and choose your own domain (Pro), Gmail, or Outlook

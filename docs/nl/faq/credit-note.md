@@ -1,6 +1,6 @@
 ---
 title: "Creditnota"
-last_verified: 2026-08-05
+last_verified: 2026-08-14
 chatbot:
   triggers: ["credit note", "create credit note", "issue credit", "credit invoice", "creditnota", "creditnota aanmaken", "gutschrift erstellen", "note de credit", "avoir"]
   actions:
@@ -21,5 +21,7 @@ Een creditnota brengt geld terug naar de klant, dus heeft deze geen eigen verval
 In het openstaande-debiteurenoverzicht wordt het bedrag van de creditnota verrekend met de originele factuur waarnaar hij verwijst, zodat het saldo van de klant laat zien wat er écht nog openstaat.
 
 In de backoffice toont de detailpagina van de creditnota of het creditbedrag nog openstaat of al is verrekend. Zo zie je in één oogopslag of je de klant nog moet terugbetalen of verrekenen.
+
+Als je een creditnota per e-mail verstuurt, gebruikt hij een eigen sjabloon. Het onderwerp noemt hem als creditnota, de tekst vermeldt het gecrediteerde bedrag als positief bedrag en er wordt niet gevraagd om te betalen of een vervaldatum getoond. Zolang de creditnota nog een concept is, biedt de actiekaart alleen de optie om hem te versturen; na verzending verschijnen er geen herinnerings- of incassoacties, omdat een creditnota de klant betaalt in plaats van geld te vragen.
 
 Tip: Doordat je de creditnota vanaf de originele factuur maakt, sluiten beide documenten precies op elkaar aan en blijft je administratie kloppend.

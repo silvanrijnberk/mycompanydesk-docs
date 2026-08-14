@@ -1,6 +1,6 @@
 ---
 title: Credit note
-last_verified: 2026-08-05
+last_verified: 2026-08-14
 chatbot:
   triggers: ["credit note", "create credit note", "issue credit", "credit invoice", "creditnota", "creditnota aanmaken", "gutschrift erstellen", "note de credit", "avoir"]
   actions:
@@ -21,5 +21,7 @@ A credit note returns money to the customer, so it has no payment due date of it
 In the outstanding report, the credit note's amount is netted against the original invoice it corrects, so the customer's balance reflects what is actually still owed.
 
 In the back office, the credit note detail page shows whether the credit amount is still open or already settled, so you can see at a glance whether you still need to refund or offset it.
+
+When you send a credit note by email, it uses a dedicated credit-note template. The subject line names it as a credit note, the body states the credited amount as a positive number, and it does not ask for payment or show a due date. While the credit note is still a draft, the suggested action card only offers to send it; once sent, no reminder or collection actions appear, because a credit note pays the customer rather than asking for money.
 
 Tip: Because you create the credit note from the original invoice, the two documents match exactly and your records stay consistent.

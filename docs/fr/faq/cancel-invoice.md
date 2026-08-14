@@ -1,6 +1,6 @@
 ---
 title: "Annuler une facture"
-last_verified: 2026-07-02
+last_verified: 2026-08-14
 chatbot:
   triggers: ["cancel invoice", "void invoice", "annul invoice", "reverse invoice", "credit note", "undo invoice", "factuur annuleren", "factuur ongedaan", "hoe annuleer ik een factuur", "rechnung stornieren", "wie storniere ich eine rechnung", "annuler facture"]
   actions:
@@ -13,6 +13,8 @@ Pour annuler une facture envoyée :
 2. Dans la barre latérale, faites défiler jusqu'à la section "Zone de danger"
 3. Cliquez sur "Marquer comme annulée"
 4. Le statut de la facture passe à Annulée
+
+Les notifications liées à la facture, telles que en retard, échéance ou brouillon, sont également résolues, de sorte que l'action "Envoyer un rappel" n'apparaît plus pour elle dans la cloche. Cela s'applique aussi lorsque vous annulez plusieurs factures à la fois depuis la liste des factures.
 
 Si la facture est déjà payée, en tout ou en partie, ouvrez la facture d'origine et utilisez plutôt "Créer un avoir / une correction".
 
