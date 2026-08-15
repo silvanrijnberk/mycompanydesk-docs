@@ -18,4 +18,6 @@ Any overdue, deadline, or draft notifications tied to the invoice are also resol
 
 If the invoice is already paid or partially paid, open the original invoice and use "Create credit note / correction" instead.
 
+Canceling is different from deleting: canceling changes the status to Canceled while keeping the invoice in the list; deleting moves it through Archived and Trash stages before it is permanently removed. Deleting is only possible in one step while a document is still a draft without a number.
+
 Tip: Canceling keeps the invoice number in your records; deleting is only possible while a document is still a draft without a number.

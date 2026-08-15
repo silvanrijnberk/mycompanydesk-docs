@@ -18,4 +18,6 @@ Ook worden meldingen over deze factuur, zoals achterstallig, deadline of concept
 
 Is de factuur al (deels) betaald? Open dan de originele factuur en gebruik "Creditnota / correctie maken".
 
+Annuleren is iets anders dan verwijderen: annuleren zet de status op Geannuleerd, maar de factuur blijft in de lijst staan; verwijderen loopt via Gearchiveerd en Prullenbak voordat hij definitief weg is. Definitief verwijderen in één keer kan alleen zolang een document nog een concept zonder nummer is.
+
 Tip: Annuleren houdt het factuurnummer in je administratie; verwijderen kan alleen zolang een document nog een concept zonder nummer is.
