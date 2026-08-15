@@ -113,6 +113,8 @@ Eine Übersichtsleiste oben auf der USt.-Seite zeigt, wie viele Zeiträume gespe
 - **Als eingereicht markieren**: Kennzeichnen Sie einen gesperrten Zeitraum als eingereicht, sobald Sie die Erklärung abgegeben haben. Eingereichte Quartale zeigen das auch in der Quartalsleiste.
 - **Vorübergehend entsperren**: Müssen Sie etwas korrigieren? Entsperren Sie einen Zeitraum vorübergehend (72 Stunden); danach sperrt er sich von selbst wieder, oder Sie sperren früher manuell. Eine Sperre ganz entfernen geht nur, solange die Abgabefrist noch nicht verstrichen ist.
 
+Der Einreichungsstatus wird für den genauen Zeitraum erfasst, nicht für enthaltene Unterzeiträume. Ein eingereichtes Jahr markiert nicht automatisch die einzelnen Quartale als eingereicht, und ein eingereichtes Quartal markiert nicht automatisch die darin enthaltenen Monate. Die Sperre gilt jedoch für den gesamten Zeitraum, sodass eine Jahressperre jedes Quartal schützt.
+
 Das Bearbeiten einer Rechnung oder Ausgabe in einem gesperrten Zeitraum wird im Formular blockiert: Die Finanzfelder werden schreibgeschützt (Notizen bleiben bearbeitbar) und das Formular bietet stattdessen einen Korrekturweg an, etwa eine Korrektur im aktuell offenen Zeitraum oder eine Korrekturrechnung.
 
 ## KOR

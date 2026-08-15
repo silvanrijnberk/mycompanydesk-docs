@@ -113,6 +113,8 @@ Een samenvattingsbalk bovenaan de BTW-pagina toont hoeveel periodes vergrendeld 
 - **Markeren als ingediend**: markeer een vergrendelde periode als ingediend zodra je de aangifte hebt gedaan. Ingediende kwartalen tonen dit ook in de kwartaalstrook.
 - **Tijdelijk ontgrendelen**: moet je iets herstellen? Ontgrendel een periode tijdelijk (72 uur); daarna vergrendelt hij vanzelf weer, of vergrendel zelf eerder opnieuw. Een vergrendeling helemaal verwijderen kan alleen zolang de aangiftedeadline nog niet is verstreken.
 
+De indienstatus wordt per exact tijdvak bijgehouden, niet op basis van overlap. Een ingediend jaar maakt de vier kwartalen niet automatisch ingediend, en een ingediend kwartaal maakt de maanden daarin niet automatisch ingediend. Vergrendeling geldt wel voor de hele periode, dus een jaarslot beschermt nog steeds elk kwartaal.
+
 Een factuur of uitgave in een vergrendelde periode bewerken wordt in het formulier geblokkeerd: de financiële velden worden alleen-lezen (notities blijven bewerkbaar) en het formulier biedt een correctiepad, zoals een correctie in de huidige open periode of een correctiefactuur.
 
 ## KOR

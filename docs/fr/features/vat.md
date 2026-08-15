@@ -113,6 +113,8 @@ Une barre de synthèse en haut de la page TVA indique combien de périodes sont 
 - **Marquer comme déposée** : signalez une période verrouillée comme déposée dès que la déclaration est faite. Les trimestres déposés l'affichent aussi dans la bande des trimestres.
 - **Déverrouillage temporaire** : besoin de corriger quelque chose ? Déverrouillez une période temporairement (72 heures) ; elle se reverrouille d'elle-même, ou reverrouillez plus tôt à la main. Supprimer entièrement un verrou n'est possible que tant que l'échéance de dépôt n'est pas passée.
 
+Le statut de déclaration est suivi par période exacte, pas par inclusion. Une année déclarée ne marque pas automatiquement les quatre trimestres comme déclarés, et un trimestre déclaré ne marque pas automatiquement les mois qu'il contient. Le verrouillage couvre toutefois toute la période, donc un verrou annuel protège chaque trimestre.
+
 Modifier une facture ou une dépense dans une période verrouillée est bloqué dans le formulaire : les champs financiers passent en lecture seule (les notes restent modifiables) et le formulaire propose un chemin de correction, comme une correction dans la période ouverte en cours ou une facture rectificative.
 
 ## KOR

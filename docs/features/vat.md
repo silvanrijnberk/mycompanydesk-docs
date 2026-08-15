@@ -115,6 +115,8 @@ A summary bar at the top of the VAT page shows how many periods are locked; expa
 - **Mark as filed**: flag a locked period as filed once you have submitted the aangifte. Filed quarters show this in the quarter strip too.
 - **Temporary unlock**: need to fix something? Unlock a period temporarily (72 hours) and it relocks by itself, or relock it manually when you are done. Removing a lock entirely is only possible while the filing deadline has not yet passed.
 
+Filing status is tracked per exact tijdvak, not by range containment. A filed year return does not mark the four quarters as filed, and a filed quarter does not mark the months inside it as filed. Locking still covers the whole range, so a year lock still protects every quarter.
+
 Editing an invoice or expense inside a locked period is blocked at the form: the financial fields turn read-only (notes stay editable) and the form offers a correction path instead, such as creating a correction in the current open period or a credit invoice.
 
 ## KOR
