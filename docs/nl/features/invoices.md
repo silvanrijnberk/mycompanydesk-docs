@@ -152,6 +152,8 @@ Online betalingen via Mollie of Stripe kunnen direct vanuit MyCompanyDesk worden
 - Wordt de terugbetaling direct verwerkt door Mollie of Stripe
 - Wordt de betaling gemarkeerd als teruggestort in je administratie
 
+Gedeeltelijke terugbetalingen die je bij Mollie of Stripe start (bijvoorbeeld als je daar alleen een deel van het bedrag terugstort) verschijnen nu in de betalingslijst met de datum van de terugbetaling en het bedrag dat nog geboekt staat.
+
 Offline betaalmethoden (bankoverschrijving, contant) gebruiken de bestaande ongeldig-route: de betaling wordt gemarkeerd als ongeldig zonder terugstorting via de provider.
 
 Om een betaling terug te storten:

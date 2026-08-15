@@ -152,6 +152,8 @@ Online-Zahlungen über Mollie oder Stripe können direkt aus MyCompanyDesk rück
 - Wird die Rückerstattung sofort von Mollie oder Stripe verarbeitet
 - Wird die Zahlung in Ihrer Verwaltung als rückerstattet markiert
 
+Teilrückerstattungen, die Sie bei Mollie oder Stripe auslösen (zum Beispiel, wenn Sie dort nur einen Teil des Betrags zurückerstatten), erscheinen jetzt in der Zahlungsliste mit dem Rückerstattungsdatum und dem noch gebuchten Restbetrag.
+
 Offline-Zahlungsmethoden (Banküberweisung, Bargeld) nutzen den bestehenden Stornierungsweg: die Zahlung wird ohne anbieterseitige Rückerstattung als storniert markiert.
 
 So erstatten Sie eine Zahlung:

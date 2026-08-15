@@ -152,6 +152,8 @@ Les paiements en ligne effectues via Mollie ou Stripe peuvent etre rembourses di
 - Le remboursement est traite immediatement par Mollie ou Stripe
 - Le paiement est marque comme rembourse dans vos archives
 
+Les remboursements partiels inites chez Mollie ou Stripe (par exemple, lorsque vous ne remboursez qu'une partie du montant la-bas) apparaissent desormais dans la liste des paiements avec la date du remboursement et le montant restant comptabilise.
+
 Les methodes de paiement hors ligne (virement bancaire, especes) utilisent le chemin d'annulation existant: le paiement est marque comme annule sans remboursement cote prestataire.
 
 Pour rembourser un paiement :
