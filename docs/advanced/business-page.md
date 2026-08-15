@@ -383,7 +383,9 @@ Changes in the Style tab are saved automatically on edit and apply to all pages.
 
 ## Publishing
 
-The top bar shows how many unpublished changes exist. Publishing snapshots only the pages marked as Live. Pages in Concept stay hidden from the public site, even after you publish.
+The top bar shows a dot when unpublished changes are waiting. Publishing snapshots only the pages marked as Live. Pages in Concept stay hidden from the public site, even after you publish.
+
+Until you publish, your public URL sends a `noindex` robots tag. That keeps the auto-provisioned workspace subdomain out of search engines while you are still building.
 
 When you are ready:
 

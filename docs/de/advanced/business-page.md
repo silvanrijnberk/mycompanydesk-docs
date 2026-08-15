@@ -382,7 +382,9 @@ Im **Stil**-Tab steuern Sie das Erscheinungsbild Ihrer gesamten Site:
 
 ## Veröffentlichen
 
-Die obere Leiste zeigt an, wie viele unveröffentlichte Änderungen vorhanden sind. Bei der Veröffentlichung werden nur Seiten mit dem Status Live in den Snapshot aufgenommen. Seiten im Entwurf bleiben auf der öffentlichen Site unsichtbar, auch nach der Veröffentlichung.
+Die obere Leiste zeigt einen Punkt an, solange unveröffentlichte Änderungen warten. Bei der Veröffentlichung werden nur Seiten mit dem Status Live in den Snapshot aufgenommen. Seiten im Entwurf bleiben auf der öffentlichen Site unsichtbar, auch nach der Veröffentlichung.
+
+Bis Sie veröffentlichen, sendet Ihre öffentliche URL ein `noindex`-Robots-Tag. So bleibt die automatisch bereitgestellte Workspace-Subdomain außerhalb der Suchmaschinen, während Sie noch aufbauen.
 
 Wenn Sie bereit sind:
 
