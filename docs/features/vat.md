@@ -69,7 +69,7 @@ A table that mirrors the Belastingdienst aangifteformulier:
 | 4. Prestaties vanuit het buitenland aan u verricht | 4a, 4b |
 | 5. Voorbelasting en berekening totaal | 5a, 5b, 5c |
 
-Each row shows the omzet (excl.) and the VAT amount. The bottom bar shows the total to pay or receive. Corrections that fall outside the form (KOR, suppletie) appear as a separate adjustment row, so what you actually pay stays visible.
+Each row shows the omzet (excl.) and the VAT amount. The bottom bar shows the total to pay or receive. Corrections that fall outside the form appear on their own rows: a generic booking correction is shown as **Correctie**, while a reduction under the old KOR scheme is shown as **Vermindering volgens de oude KOR**. The CSV summary adds a matching corrections line when these are nonzero, so the balance, collected and paid figures add up. The year-overview BTW-saldo column uses the same net-VAT total as the rubrieken sheet, so its rows total to the same figure.
 
 Rubriek 4a captures reverse-charge purchases from suppliers outside the EU (`import_reverse_charge`); rubriek 4b captures reverse-charge purchases from EU suppliers (`b2b_reverse_charge`). MyCompanyDesk derives the correct rubriek from the supplier country so the total in 5a stays accurate.
 
@@ -81,7 +81,7 @@ A download card next to the sheet offers CSV exports: a full export for your boe
 
 When you have international activity, companion cards appear under the sheet:
 
-- **ICP-opgaaf**: EU B2B sales grouped per customer. Required when you sold goods or services to VAT-registered customers in other EU countries.
+- **ICP-opgaaf**: EU B2B sales grouped per customer. Required when you sold goods or services to VAT-registered customers in other EU countries. The card follows the page-wide period selector, so a quarterly export lists only that quarter's EU customers.
 - **OSS breakdown**: per-country B2C sales for the One Stop Shop scheme.
 - **Foreign VAT**: foreign VAT charged to you that may be reclaimable through the EU refund procedure.
 - **Corrections**: privé-onttrekking, suppletie, and other adjustments rolled into the period totals.
@@ -119,9 +119,9 @@ Editing an invoice or expense inside a locked period is blocked at the form: the
 
 ## KOR
 
-The kleineondernemersregeling is managed under **Settings → BTW**: a card tracks your year revenue against the €20,000 threshold with a progress bar, explains what enrolment means for your invoicing, and has the enrolment toggle. While your revenue is still below the KOR range, the VAT page shows a hint linking there.
+The kleineondernemersregeling is managed under **Settings → BTW**: a card tracks your year revenue against the €20,000 threshold ([`sources/vat-rates.yaml#countries.NL.small_business_threshold_eur`](../../sources/vat-rates.yaml)) with a progress bar, explains what enrolment means for your invoicing, and has the enrolment toggle. You remain eligible up to and including exactly €20,000 of year revenue; only revenue above that ends KOR eligibility. While your revenue is still in the KOR range, the VAT page shows a hint linking there.
 
-If you pass the threshold while still enrolled, a warning banner appears at the top of the invoice editor. The banner title says you are above the KOR threshold, the body explains that the invoice must include VAT rather than 0%, and the CTA opens **Settings → BTW** so you can deregister with the Belastingdienst and turn KOR off.
+If you go above €20,000 while still enrolled, a warning banner appears at the top of the invoice editor. The banner title says you are above the KOR threshold, the body explains that the invoice must include VAT rather than 0%, and the CTA opens **Settings → BTW** so you can deregister with the Belastingdienst and turn KOR off.
 
 ## KIA and Box 3
 
@@ -139,3 +139,4 @@ The built-in assistant can answer questions about your aangifte using your own w
 - The deadline ring goes red at three days. Treat that as a hard cue to file.
 - Selling B2B in the EU? Open the ICP-opgaaf card before filing; it is a separate submission that is easy to forget.
 - Mark a period as filed right after submitting, then let the automatic lock protect it.
+- Zeroing an expense amount clears the derived VAT immediately, so a corrected expense cannot leave stale VAT on the aangifte.

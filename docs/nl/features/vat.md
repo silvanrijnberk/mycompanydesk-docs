@@ -68,7 +68,7 @@ Een tabel die het aangifteformulier van de Belastingdienst spiegelt:
 | 4. Prestaties vanuit het buitenland aan u verricht | 4a, 4b |
 | 5. Voorbelasting en berekening totaal | 5a, 5b, 5c |
 
-Elke rij toont de omzet (excl.) en het BTW-bedrag. De balk onderaan toont het totaal te betalen of terug te ontvangen. Correcties die buiten het formulier vallen (KOR, suppletie) staan als aparte correctieregel, zodat zichtbaar blijft wat je werkelijk betaalt.
+Elke rij toont de omzet (excl.) en het BTW-bedrag. De balk onderaan toont het totaal te betalen of terug te ontvangen. Correcties die buiten het formulier vallen krijgen eigen regels: een gewone boekingscorrectie staat als **Correctie**, terwijl een vermindering onder de oude KOR-regeling staat als **Vermindering volgens de oude KOR**. De BTW-samenvattings-CSV toont een bijpassende correctieregel wanneer deze bedragen niet nul zijn, zodat saldo, ontvangen en betaalde BTW op elkaar aansluiten. De BTW-saldokolom in het jaaroverzicht gebruikt hetzelfde netto-BTW-totaal als het rubriekenoverzicht, zodat de regels optellen tot datzelfde totaal.
 
 Rubriek 4a is voor verlegde-BTW-aankopen van leveranciers buiten de EU (`import_reverse_charge`); rubriek 4b is voor verlegde aankopen van EU-leveranciers (`b2b_reverse_charge`). MyCompanyDesk bepaalt aan de hand van het leveranciersland de juiste rubriek, zodat het totaal in 5a klopt.
 
@@ -80,7 +80,7 @@ Een downloadkaart naast het overzicht biedt CSV-exports: een volledige boekhoude
 
 Heb je internationale activiteit, dan verschijnen er extra kaarten onder het overzicht:
 
-- **ICP-opgaaf**: EU B2B-verkopen gegroepeerd per klant. Verplicht wanneer je aan BTW-geregistreerde klanten in andere EU-landen hebt verkocht.
+- **ICP-opgaaf**: EU B2B-verkopen gegroepeerd per klant. Verplicht wanneer je aan BTW-geregistreerde klanten in andere EU-landen hebt verkocht. De kaart volgt de paginabrede periodekiezer, zodat een kwartaalexport alleen de EU-klanten van dat kwartaal bevat.
 - **OSS-uitsplitsing**: B2C-verkopen per land voor de One Stop Shop-regeling.
 - **Buitenlandse BTW**: buitenlandse BTW die aan jou is berekend en mogelijk via de EU-teruggaafprocedure terug te vragen is.
 - **Correcties**: privé-onttrekking, suppletie en andere aanpassingen die in de periodetotalen meelopen.
@@ -117,9 +117,9 @@ Een factuur of uitgave in een vergrendelde periode bewerken wordt in het formuli
 
 ## KOR
 
-De kleineondernemersregeling beheer je onder **Instellingen → BTW**: een kaart volgt je jaaromzet ten opzichte van de drempel van €20.000 met een voortgangsbalk, legt uit wat deelname betekent voor je facturen en bevat de aanmeldschakelaar. Zolang je omzet nog onder het KOR-gebied ligt, toont de BTW-pagina een hint die daarheen linkt.
+De kleineondernemersregeling beheer je onder **Instellingen → BTW**: een kaart volgt je jaaromzet ten opzichte van de drempel van €20.000 ([`sources/vat-rates.yaml#countries.NL.small_business_threshold_eur`](../../../sources/vat-rates.yaml)) met een voortgangsbalk, legt uit wat deelname betekent voor je facturen en bevat de aanmeldschakelaar. Je blijft tot en met precies €20.000 omzet per jaar gerechtigd; pas daarboven vervalt de KOR-rechtiging. Zolang je omzet niet hoger is dan €20.000, toont de BTW-pagina een hint die daarheen linkt.
 
-Als je de drempel passeert terwijl je nog aangemeld bent, verschijnt er bovenaan de factuurmaker een waarschuwingsbanner. De titel geeft aan dat je boven de KOR-drempel zit, de tekst legt uit dat deze factuur btw moet bevatten in plaats van 0%, en de knop opent **Instellingen → BTW** zodat je je kunt afmelden bij de Belastingdienst en de KOR uitschakelt.
+Als je boven de €20.000 uitkomt terwijl je nog aangemeld bent, verschijnt er bovenaan de factuurmaker een waarschuwingsbanner. De titel geeft aan dat je boven de KOR-drempel zit, de tekst legt uit dat deze factuur btw moet bevatten in plaats van 0%, en de knop opent **Instellingen → BTW** zodat je je kunt afmelden bij de Belastingdienst en de KOR uitschakelt.
 
 ## KIA en Box 3
 
@@ -137,3 +137,4 @@ De ingebouwde assistent beantwoordt vragen over je aangifte met je eigen werkrui
 - De deadlinering wordt rood bij drie dagen. Zie dat als een hard signaal om aangifte te doen.
 - Verkoop je B2B in de EU? Open de ICP-opgaafkaart voordat je indient; het is een aparte opgave die je makkelijk vergeet.
 - Markeer een periode direct na het indienen als ingediend en laat de automatische vergrendeling hem daarna beschermen.
+- Een uitgavebedrag op nul zetten wist de afgeleide BTW meteen, zodat een gecorrigeerde uitgave geen verouderde BTW op de aangifte achterlaat.
