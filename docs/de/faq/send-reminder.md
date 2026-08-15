@@ -1,6 +1,6 @@
 ---
 title: Send reminder
-last_verified: 2026-08-14
+last_verified: 2026-08-15
 chatbot:
   triggers: ["send reminder", "payment reminder", "remind customer", "follow up", "chase payment", "herinnering sturen", "betaalherinnering", "aanmaning", "zahlungserinnerung", "relance", "rappel paiement"]
   actions:
@@ -19,6 +19,7 @@ Eine Erinnerung kann nicht gesendet werden, wenn:
 - die Rechnung noch ein Entwurf ist
 - die Rechnung storniert wurde
 - die Rechnung bereits als bezahlt markiert ist
+- der Kunde im Portal angegeben hat, dass er bereits bezahlt hat, und der Status "Überprüfung erforderlich" ist
 - es sich um eine Gutschrift oder Rückerstattungsnotiz handelt
 - nichts mehr offen steht (zum Beispiel weil der Kunde bezahlt hat, während die Seite geöffnet war)
 

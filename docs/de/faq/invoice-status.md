@@ -10,8 +10,9 @@ chatbot:
 Rechnungsstatus erklärt:
 • Entwurf - noch nicht gesendet, frei bearbeitbar
 • Gesendet - an den Kunden zugestellt, wartet auf Zahlung
-• Bezahlt - Zahlung erhalten und bestätigt
 • Überfällig - Fälligkeitsdatum überschritten, noch nicht bezahlt
+• Überprüfung erforderlich - der Kunde hat im Portal angegeben, dass er bezahlt hat; bestätigen oder lehnen Sie die Zahlung ab, bevor die Rechnung auf Bezahlt wechselt
+• Bezahlt - Zahlung erhalten und bestätigt
 • Storniert - ungültig, nicht mehr aktiv
 
 Löschen erfolgt in Stufen: aus aktiv wird Archiviert, aus Archiviert wird Papierkorb, und aus dem Papierkorb wird endgültig gelöscht. Sie können die Rechnung aus dem Archiv oder dem Papierkorb wiederherstellen, solange sie nicht endgültig gelöscht ist. Stornieren ist anders: damit markieren Sie eine gesendete oder bezahlte Rechnung als storniert, sie bleibt aber in der Liste sichtbar.
