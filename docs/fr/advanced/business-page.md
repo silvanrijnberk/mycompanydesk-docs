@@ -377,6 +377,10 @@ Dans l'onglet **Style**, vous controlez l'apparence de l'ensemble de votre site 
 - **Favicon**: Telechargez un favicon pour votre site. Il apparait dans les onglets du navigateur et les favoris. Si vous n'en definissez pas, le site utilise votre logo clair, puis votre photo de profil d'entreprise.
 - **Snippets d'en-tete**: Ajoutez des scripts d'analytique (Plausible, Umami, Matomo) ou des preconnexions de polices via le selecteur de snippets.
 
+### Import de logo
+
+Si vous avez déjà un logo sur votre site web, vous pouvez l'importer directement dans MyCompanyDesk. Dans l'onglet **Style**, recherchez l'option d'import de logo et saisissez l'URL de la page qui contient votre logo. MyCompanyDesk récupère la page, extrait le meilleur logo disponible et crée une version claire et une version sombre pour votre site. Après l'import, vous pouvez toujours remplacer ou ajuster chaque version séparément dans les paramètres de style.
+
 Les modifications dans l'onglet Style sont enregistrees automatiquement et s'appliquent a toutes les pages.
 
 ## Publier

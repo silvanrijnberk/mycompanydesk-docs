@@ -379,6 +379,10 @@ Im **Stil**-Tab steuern Sie das Erscheinungsbild Ihrer gesamten Site:
 - **Favicon**: Laden Sie ein Favicon für Ihre Site hoch. Es erscheint in Browser-Tabs und Lesezeichen. Wenn Sie kein Favicon festlegen, verwendet die Site Ihr helles Logo, dann Ihr Geschäftsprofilbild.
 - **Head-Snippets**: Fügen Sie Analytics-Skripte (Plausible, Umami, Matomo) oder Schrift-Preconnects über die Snippet-Auswahl hinzu.
 
+### Logo-Import
+
+Wenn Sie bereits ein Logo auf Ihrer Website haben, können Sie es direkt in MyCompanyDesk importieren. Im **Stil**-Tab finden Sie die Logo-Import-Option: geben Sie die URL der Seite ein, auf der sich Ihr Logo befindet. MyCompanyDesk ruft die Seite ab, extrahiert das bestmögliche Logo und erstellt sowohl eine helle als auch eine dunkle Version für Ihre Site. Nach dem Import können Sie die beiden Versionen weiterhin einzeln in den Stil-Einstellungen ersetzen oder anpassen.
+
 Änderungen im Stil-Tab werden automatisch gespeichert und gelten für alle Seiten.
 
 ## Veröffentlichen
