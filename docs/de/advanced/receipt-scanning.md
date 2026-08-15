@@ -18,6 +18,7 @@ Anstatt jede Ausgabe manuell einzugeben, fotografieren Sie einen Beleg oder lade
 
 - **Bilder** — JPEG, PNG, WebP
 - **PDF** — PDF-Rechnungen und Belege
+<!-- TODO(source-missing): die effektive PDF-Grenze für den Inline-Scan-Pfad liegt im Scannercode und in den Locale-Strings jetzt bei 15 MB, während diese Seite noch 50 MB angibt. Vor einer Aktualisierung in sources/ prüfen. -->
 - **Maximale Dateigröße** — 50MB
 
 ## So scannen Sie einen Beleg

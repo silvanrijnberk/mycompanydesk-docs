@@ -1,6 +1,6 @@
 ---
 title: "Uitgavecategorie"
-last_verified: 2026-08-05
+last_verified: 2026-08-15
 chatbot:
   triggers: ["expense category", "categorize expense", "expense categories", "which category", "change category", "uitgave categorie", "categorie wijzigen", "ausgabe kategorie", "categorie depense"]
   actions:
@@ -14,4 +14,4 @@ Om een uitgavecategorie in te stellen of te wijzigen:
 3. Kies een categorie uit je werkruimtelijst (standaardcategorieën of zelf toegevoegde categorieën)
 4. Sla de uitgave op
 
-De standaardcategorieën volgen de Nederlandse belastingaangifte, zodat je administratie aansluit op je aangifte. Eigen categorieën voeg je toe in **Instellingen > Uitgavencategorieën**, waar je ze ook kunt bewerken, archiveren of verwijderen. Zitten er al uitgaven in een categorie, dan kun je hem niet verwijderen; archiveer hem om hem uit het formulier te verbergen. Gebruik categorieën consistent zodat filters, lijsten en rapporten makkelijk te controleren blijven.
+De standaardcategorieën volgen de Nederlandse belastingaangifte, zodat je administratie aansluit op je aangifte. Eigen categorieën voeg je toe in **Instellingen > Uitgavencategorieën**, waar je ze ook kunt bewerken, archiveren of verwijderen. Zitten er al uitgaven of terugkerende uitgaven in een categorie, dan kun je hem niet verwijderen; archiveer hem om hem uit het formulier te verbergen. Gebruik categorieën consistent zodat filters, lijsten en rapporten makkelijk te controleren blijven.

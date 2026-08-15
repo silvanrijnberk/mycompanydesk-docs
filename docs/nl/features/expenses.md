@@ -1,6 +1,6 @@
 ---
 title: Uitgaven
-last_verified: 2026-08-05
+last_verified: 2026-08-15
 ---
 
 # Uitgaven
@@ -27,7 +27,7 @@ Categorieën worden per werkruimte bewaard in de tabel `expense_categories`; het
 - Een **investeringsvlag** die overeenkomende uitgaven automatisch als investering markeert.
 - Een standaard **afschrijvingstermijn** in maanden voor de afschrijvingsmotor.
 
-De instelwizard plant een op de branche afgestemde set bovenop de elf standaardcategorieën, zodat een software-bedrijf extra sleutels als `cloud_services_eu` krijgt, terwijl een horeca-bedrijf bijvoorbeeld `food_client_meeting` krijgt. Nieuwe categorieën vanuit de wizard worden op dezelfde manier gevalideerd als standaardcategorieën; onbekende of verkeerd getypte sleutels worden geweigerd met een 400. Systeemcategorieën kun je niet bewerken of verwijderen, omdat ze de koppeling met de aangifte bevatten. Je kunt een categorie archiveren om hem uit het formulier te verbergen. Eigen categorieën toevoegen, bewerken en verwijderen doe je via **Instellingen > Uitgavencategorieën**.
+De instelwizard plant een op de branche afgestemde set bovenop de elf standaardcategorieën, zodat een software-bedrijf extra sleutels als `cloud_services_eu` krijgt, terwijl een horeca-bedrijf bijvoorbeeld `food_client_meeting` krijgt. Nieuwe categorieën vanuit de wizard worden op dezelfde manier gevalideerd als standaardcategorieën; onbekende of verkeerd getypte sleutels worden geweigerd met een 400. Systeemcategorieën kun je niet bewerken of verwijderen, omdat ze de koppeling met de aangifte bevatten. Je kunt een categorie archiveren om hem uit het formulier te verbergen. Eigen categorieën toevoegen, bewerken en verwijderen doe je via **Instellingen > Uitgavencategorieën**. Verwijderen is geblokkeerd zolang een categorie nog gebruikt wordt door uitgaven of terugkerende uitgaven; archiveer hem dan in plaats daarvan.
 
 ## Een uitgave aanmaken
 

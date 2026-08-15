@@ -1,6 +1,6 @@
 ---
 title: Expenses
-last_verified: 2026-08-05
+last_verified: 2026-08-15
 ---
 
 # Expenses
@@ -27,7 +27,7 @@ Categories are stored per workspace in the `expense_categories` table - they are
 - An **auto-flag investment** flag that turns matching expenses into investments automatically.
 - A **default useful-life** in months for the depreciation engine.
 
-The setup wizard seeds an industry-tailored set on top of the eleven system defaults, so a software-heavy workspace ends up with extra keys like `cloud_services_eu`, while a hospitality workspace might get `food_client_meeting`. New categories from the wizard validate the same way as system defaults - unknown or mistyped keys are rejected with a 400. System categories cannot be edited or deleted, because they carry the tax-return mapping. You can archive a category to hide it from the form. Create, edit and delete your own categories from **Settings > Expense categories**.
+The setup wizard seeds an industry-tailored set on top of the eleven system defaults, so a software-heavy workspace ends up with extra keys like `cloud_services_eu`, while a hospitality workspace might get `food_client_meeting`. New categories from the wizard validate the same way as system defaults - unknown or mistyped keys are rejected with a 400. System categories cannot be edited or deleted, because they carry the tax-return mapping. You can archive a category to hide it from the form. Create, edit and delete your own categories from **Settings > Expense categories**. Deleting a category is blocked while it is still used by expenses or recurring expenses; archive it instead.
 
 ## Creating an expense
 
