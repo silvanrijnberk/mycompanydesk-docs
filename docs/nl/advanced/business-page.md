@@ -383,7 +383,9 @@ Wijzigingen in de Stijl-tab worden automatisch opgeslagen bij bewerken en gelden
 
 ## Publiceren
 
-De bovenbalk toont hoeveel ongepubliceerde wijzigingen er zijn. Bij publiceren worden alleen pagina's op Live meegenomen in de snapshot. Concept-pagina's blijven onzichtbaar op de openbare site, ook na publicatie.
+De bovenbalk toont een stippeltje zolang er ongepubliceerde wijzigingen wachten. Bij publiceren worden alleen pagina's op Live meegenomen in de snapshot. Concept-pagina's blijven onzichtbaar op de openbare site, ook na publicatie.
+
+Totdat je publiceert, geeft je openbare URL een `noindex` robots-tag mee. Zo blijft het automatisch aangemaakte werkruimte-subdomein buiten zoekmachines terwijl je nog aan het bouwen bent.
 
 Wanneer je klaar bent:
 
