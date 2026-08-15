@@ -18,6 +18,7 @@ In plaats van elke uitgave handmatig in te voeren, maak je een foto van een bon 
 
 - **Afbeeldingen** — JPEG, PNG, WebP
 - **PDF** — PDF-facturen en bonnen
+<!-- TODO(source-missing): de effectieve PDF-limiet voor het inline scanpad is nu 15 MB in de scannercode en locale strings, terwijl deze pagina nog 50 MB vermeldt. Controleer in sources/ voor een update. -->
 - **Maximale bestandsgrootte** — 50MB
 
 ## Een bon scannen

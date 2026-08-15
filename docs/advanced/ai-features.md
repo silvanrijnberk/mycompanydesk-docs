@@ -172,6 +172,7 @@ The dashboard briefing hero shows a short, personal AI-written briefing for Pro 
 | Translation | On (UI strings only) | On | On |
 | Briefing insight | Off | Off | On |
 
+<!-- TODO(source-missing): AI_USAGE_LIMIT locale string implies a daily AI usage cap; this page states monthly caps only. Needs a sources/ entry before documenting the daily limit. -->
 ## AI usage caps (monthly)
 
 AI caps are monthly, not daily. A bookkeeper who batches 40 receipts on a Friday does not blow through a daily quota that resets at midnight. Cap tracking uses `ai_usage.date` with the first-of-month date. Monthly caps:

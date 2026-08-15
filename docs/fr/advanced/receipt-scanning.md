@@ -18,6 +18,7 @@ Au lieu de saisir manuellement chaque depense, prenez une photo d'un recu ou tel
 
 - **Images** -- JPEG, PNG, WebP
 - **PDF** -- Factures et recus PDF
+<!-- TODO(source-missing): la limite effective des PDF pour le scan en ligne est maintenant de 15 MB dans le code du scanner et les chaînes de locale, tandis que cette page indique encore 50 Mo. Vérifier dans sources/ avant de mettre à jour. -->
 - **Taille maximale de fichier** -- 50 Mo
 
 ## Comment numeriser un recu

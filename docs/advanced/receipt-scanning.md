@@ -18,6 +18,7 @@ Instead of manually entering every expense, take a photo of a receipt or upload 
 
 - **Images** — JPEG, PNG, WebP
 - **PDF** — PDF invoices and receipts
+<!-- TODO(source-missing): the effective PDF limit for the LLM inline scan path is now 15 MB in the scanner code and locale strings, while this page still says 50 MB. Verify in sources/ before updating. -->
 - **Maximum file size** — 50MB
 
 ## How to scan a receipt
