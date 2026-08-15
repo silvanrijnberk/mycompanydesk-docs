@@ -1,6 +1,6 @@
 ---
 title: Domaines, site web et boite de reception
-last_verified: 2026-08-08
+last_verified: 2026-08-15
 ---
 
 # Domaines, site web et boite de reception
@@ -206,6 +206,8 @@ Consultez [Constructeur de site](/fr/advanced/business-page) pour le guide compl
 ### Boite de reception e-mail
 
 La boite de reception est une interface de premier niveau sur `/inbox` (`apps/web/pages/inbox/index.vue`). Le backend se trouve dans `apps/api/src/modules/inbox/*` et ecrit dans des tables distinctes (`company_email_domains`, `company_mailboxes`, `email_threads`, `email_messages`, `email_attachments`, `email_events`).
+
+Lorsqu'une facture fournisseur transmise depuis une piece jointe est convertie en brouillon de depense, la depense n'est comptabilisee qu'apres votre confirmation. Si la date de facturation tombe dans une periode de TVA deja declaree, la comptabilisation automatique est refusee et, au lieu de faire disparaitre silencieusement la facture, une notification `inbox_expense_period_locked` est creee ; elle atterrit dans la liste de la boite de reception et indique le fournisseur et la date de facturation concernes, pour que vous puissiez la comptabiliser manuellement dans la periode en cours ou deposer une declaration TVA complementaire.
 
 Fonctionnalites :
 

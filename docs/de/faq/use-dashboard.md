@@ -1,6 +1,6 @@
 ---
 title: "Use the dashboard"
-last_verified: 2026-05-09
+last_verified: 2026-08-15
 chatbot:
   triggers:
     - "use dashboard"
@@ -25,3 +25,5 @@ So nutzt du das Dashboard:
 4. Nutze die verknuepften Aktionen, um zu Rechnungen, Ausgaben oder Berichten zu wechseln
 
 Diese Antwort beschraenkt sich darauf, was du im Dashboard siehst und wohin du von dort navigieren kannst.
+
+Gewinn- und Steuerruecklagenkarten verwenden eine GuV-Sicht: Ausgaben sind ohne Mehrwertsteuer, Investitionen werden ueber ihren Abschreibungsplan verteilt, und Bank-/Posteingangs-Entwuerfe, die noch in Ueberpruefung stehen, werden ausgeschlossen. Die Umsatz- und Ausgabentotale in der Pulse-Zeile zeigen die Kassenbewegung inklusive Mehrwertsteuer und noch nicht bestaetigter Entwuerfe. Verwende den GuV-Bericht, wenn du dieselbe Gewinnzahl in einem detaillierten Bericht sehen moechtest.

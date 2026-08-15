@@ -1,6 +1,6 @@
 ---
 title: Dashboard
-last_verified: 2026-05-20
+last_verified: 2026-08-15
 ---
 
 # Dashboard
@@ -49,6 +49,15 @@ The four-cell pulse row replaces the old money tiles and KPI headline. Each cell
 | **Revenue** | Current month revenue with percentage vs previous month, plus year-to-date |
 | **Receivables** | Total outstanding, overdue count, and days sales outstanding |
 | **VAT** | Balance (refund or pay), deadline date, and tax reserve |
+
+## Profit and tax reserve
+
+The dashboard keeps two different views of expenses apart on purpose:
+
+- The **Revenue** and **expense totals** in the pulse row show the cash movement for the period: amounts include VAT and include expenses that are still pending review.
+- The **Net profit** and **Estimated tax reserve** cards use a profit-and-loss view instead. Here expenses are counted without VAT, investments are spread through their depreciation schedule instead of recognised in one go, and pending-review bank or inbox drafts are excluded because they are not in the books yet.
+
+This means the profit card and the tax-reserve card will differ from the simple "revenue minus cash-out" figure. The split makes the dashboard profit match the P&L report, so a large investment in one month does not turn a profitable month into a loss, and the tax reserve is estimated over real profit rather than over cash flow.
 
 ## Briefing feed
 

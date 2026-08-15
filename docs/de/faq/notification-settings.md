@@ -1,6 +1,6 @@
 ---
 title: "Benachrichtigungseinstellungen"
-last_verified: 2026-08-07
+last_verified: 2026-08-15
 chatbot:
   triggers:
     - "notifications"

@@ -1,6 +1,6 @@
 ---
 title: Weiterleitung an Steuerberater
-last_verified: 2026-08-04
+last_verified: 2026-08-15
 ---
 
 # Weiterleitung an Steuerberater

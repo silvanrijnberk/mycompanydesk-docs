@@ -1,6 +1,6 @@
 ---
 title: Domeinen, website en inbox
-last_verified: 2026-08-08
+last_verified: 2026-08-15
 ---
 
 # Domeinen, website en inbox
@@ -206,6 +206,8 @@ Zie [Sitebouwer](/nl/advanced/business-page) voor de volledige editorgids.
 ### E-mailinbox
 
 De inbox is een top-level weergave op `/inbox` (`apps/web/pages/inbox/index.vue`). De backend bevindt zich in `apps/api/src/modules/inbox/*` en schrijft naar aparte tabellen (`company_email_domains`, `company_mailboxes`, `email_threads`, `email_messages`, `email_attachments`, `email_events`).
+
+Als een doorgestuurde leveranciersfactuur vanuit een bijlage wordt omgezet naar een conceptuitgave, wordt de uitgave pas geboekt nadat je hem bevestigt. Als de factuurdatum in een BTW-periode valt die al is aangegeven, wordt de automatische boeking geweigerd en wordt er een `inbox_expense_period_locked`-melding aangemaakt in plaats van de factuur stilzwijgend te laten verdwijnen. De melding belandt op de inboxlijst en noemt de leverancier en factuurdatum, zodat je de factuur handmatig in de huidige periode kunt boeken of een suppletieaangifte kunt indienen.
 
 Mogelijkheden:
 

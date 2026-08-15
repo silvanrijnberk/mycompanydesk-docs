@@ -1,6 +1,6 @@
 ---
 title: "Gewinn und Verlust"
-last_verified: 2026-05-09
+last_verified: 2026-08-15
 chatbot:
   triggers: ["profit and loss", "profit loss", "income statement", "p&l", "winst en verlies", "resultatenrekening", "gewinn und verlust", "compte de resultat", "resultat net"]
   actions:

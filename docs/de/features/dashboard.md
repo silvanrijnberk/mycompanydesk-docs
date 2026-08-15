@@ -51,6 +51,24 @@ Die vier Zellen der Pulse-Zeile ersetzen die alten Geldkacheln und den KPI-Heade
 | **Forderungen** | Gesamtsumme ausstehend, Anzahl ueberfaellig, und durchschnittliche Zahlungsfrist |
 | **USt.** | Saldo (Rueckerstattung oder Zahlung), Frist und Steuerreserve |
 
+## Gewinn und Steuerruecklage
+
+Das Dashboard haelt zwei unterschiedliche Betrachtungen von Ausgaben bewusst auseinander:
+
+- Die **Umsatz**- und **Ausgabentotale** in der Pulse-Zeile zeigen die Geldbewegung fuer den Zeitraum: Betraege inklusive Mehrwertsteuer und inklusive Ausgaben, die noch in Ueberpruefung stehen.
+- Die Karten **Nettogewinn** und **Geschaetzte Steuerruecklage** verwenden stattdessen eine GuV-Sicht. Hier werden Ausgaben ohne Mehrwertsteuer gezaehlt, Investitionen ueber ihren Abschreibungsplan verteilt anstatt sofort als Kosten erfasst, und Bank- oder Posteingangs-Entwuerfe, die noch in Ueberpruefung stehen, ausgeschlossen, weil sie noch nicht in der Buchhaltung stehen.
+
+Dadurch weichen die Gewinnkarte und die Steuerruecklage vom einfachen Umsatz minus Geld heraus-Zahl ab. Die Aufteilung sorgt dafuer, dass der Dashboard-Gewinn mit dem GuV-Bericht uebereinstimmt, sodass eine grosse Investition in einem Monat einen gewinnbringenden Monat nicht als Verlust erscheinen laesst und die Steuerruecklage ueber den realen Gewinn statt ueber den Cashflow geschaetzt wird.
+
+## Gewinn und Steuerrücklage
+
+Das Dashboard hält zwei verschiedene Ausgabensichten bewusst auseinander:
+
+- Die **Umsatz**- und **Ausgabetotalen** in der Pulse-Zeile zeigen die Zahlungsmittelbewegung für den Zeitraum: Beträge inklusive MwSt. und einschließlich Ausgaben, die noch in Prüfung sind.
+- Die Karten **Nettogewinn** und **Geschätzte Steuerrücklage** verwenden stattdessen eine Gewinn-und-Verlust-Sicht. Hier werden Ausgaben ohne MwSt. gezählt, Investitionen über ihren Abschreibungsplan verteilt statt auf einen Schlag erfasst, und Bank- oder Posteingangs-Entwürfe, die noch in Prüfung sind, ausgeschlossen, weil sie noch nicht in den Büchern stehen.
+
+Das bedeutet, dass Gewinnkarte und Steuerrücklage-Karte von der einfachen "Umsatz minus Zahlungsausgang"-Zahl abweichen. Die Trennung stellt sicher, dass der Dashboard-Gewinn mit dem GuV-Bericht übereinstimmt, sodass eine große Investition in einem Monat einen gewinnbringenden Monat nicht in einen Verlust verwandelt, und die Steuerrücklage über den realen Gewinn statt über den Zahlungsmittelverkehr geschätzt wird.
+
 ## Briefing-Feed
 
 Der Feed ist die Hauptflaeche fuer Aufmerksamkeit erfordernde Elemente. Er setzt echte Signale aus Arbeitsbereichsdaten zu einer strukturierten Liste mit drei Tab-Ansichten zusammen:

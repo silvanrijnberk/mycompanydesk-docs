@@ -1,6 +1,6 @@
 ---
 title: "Meldingsinstellingen"
-last_verified: 2026-08-07
+last_verified: 2026-08-15
 chatbot:
   triggers:
     - "notifications"
@@ -23,7 +23,7 @@ Om je meldingsinstellingen te beheren:
 2. Zet de meldingsonderwerpen aan of uit. De categorieën zijn:
    - **Aandacht voor facturen**: te late facturen, facturen die bijna vervallen, concepten die blijven liggen, mislukte incasso's en uren zonder tarief.
    - **Geld binnenkomt**: betalingen, bevestigde betalingen en opvallende banktransacties.
-   - **Deadline in aantocht**: BTW, inkomstenbelasting, vennootschapsbelasting, de KOR-grens, en aflopende contracten of projecten. Je krijgt ze ruim van tevoren, zodat je nooit te laat bent.
+   - **Deadline in aantocht**: BTW, inkomstenbelasting, vennootschapsbelasting, de KOR-grens, en aflopende contracten of projecten. Je krijgt ze ruim van tevoren, zodat je nooit te laat bent. Deze categorie bevat ook automatische boekingen die niet konden worden gemaakt omdat de datum valt in een BTW-periode die al is aangegeven en vergrendeld, zoals een doorgestuurde inboxfactuur of een banktransactie. De melding noemt de leverancier en factuurdatum en wijst je naar de inbox of bankfeed, zodat je het in de huidige periode kunt boeken of een suppletieaangifte kunt indienen.
    - **Nieuwe kansen**: offerteaanvragen, ondertekende offertes en verkopen via je website.
    - **Nieuw bericht in je inbox**: een seintje op je telefoon zodra een klant of leverancier mailt.
    - **Uitgave vervalt**: aankomende vervaldatums van uitgaven die je hebt aangemaakt, zoals geplande huur of nutskosten, zodat je ze op tijd kunt betalen of vastleggen.

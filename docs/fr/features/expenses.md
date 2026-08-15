@@ -66,6 +66,10 @@ La numerisation de recus necessite le plan **Pro** ou superieur. Le taux de TVA 
 :::
 
 Si un e-mail transféré ou un scan crée une dépense mais que le reçu ne peut pas être joint (par exemple un type de fichier non pris en charge ou un fichier trop volumineux), la dépense est quand même créée et un message indique que la pièce jointe est manquante. Ajoutez ensuite le reçu manuellement sur la page de détail de la dépense.
+### Périodes de TVA verrouillées
+
+Si un message de la boîte de réception est converti en une dépense dont la date tombe dans une période de TVA déjà déclarée, l'enregistrement automatique est refusé pour protéger la déclaration déposée. Au lieu de supprimer silencieusement la facture, MyCompanyDesk crée une notification `inbox_expense_period_locked` qui indique le fournisseur et la date de la facture, et précise que la période de TVA est verrouillée. La notification renvoie vers la liste de la boîte de réception, afin que vous puissiez y retrouver la facture transmise. Vous avez ensuite les deux mêmes options que pour les autres cas de période verrouillée : enregistrer la dépense manuellement avec une date dans la période ouverte en cours, ou déposer une déclaration complémentaire pour la période verrouillée.
+
 
 ## Catégories de dépenses
 

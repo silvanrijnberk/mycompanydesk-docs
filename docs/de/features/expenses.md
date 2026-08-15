@@ -67,6 +67,10 @@ Belegscanner erfordert den **Pro**-Tarif oder hoher. Der USt.-Satz einer neuen A
 
 Wenn eine weitergeleitete E-Mail oder ein Scan zwar eine Ausgabe erzeugt, der Beleg selbst aber nicht angehängt werden kann (zum Beispiel ein nicht unterstützter Dateityp oder eine zu große Datei), wird die Ausgabe dennoch erstellt und mit einem Hinweis versehen, dass der Anhang fehlt. Laden Sie den Beleg anschließend manuell auf der Detailseite der Ausgabe hoch.
 
+### Gesperrte MwSt.-Perioden
+
+Wenn eine Posteingangsnachricht in eine Ausgabe mit einem Datum innerhalb einer bereits angegebenen MwSt.-Periode umgewandelt wird, wird die automatische Buchung abgelehnt, um die eingereichte Voranmeldung zu schützen. Statt die Rechnung stillschweigend zu verwerfen, erstellt MyCompanyDesk eine `inbox_expense_period_locked`-Benachrichtigung, die Lieferanten und Rechnungsdatum nennt und darauf hinweist, dass die MwSt.-Periode gesperrt ist. Die Benachrichtigung führt Sie zur Posteingangsliste, damit Sie die weitergeleitete Rechnung dort finden. Sie haben dann dieselben zwei Optionen wie bei anderen gesperrten Perioden: buchen Sie die Ausgabe manuell mit einem Datum in der aktuell offenen Periode, oder reichen Sie eine ergänzende MwSt.-Voranmeldung für die gesperrte Periode ein.
+
 ## Ausgabenkategorien
 
 MyCompanyDesk bietet vordefinierte Kategorien mit Symbolen zur schnellen Auswahl:

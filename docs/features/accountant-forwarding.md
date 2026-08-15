@@ -1,6 +1,6 @@
 ---
 title: Accountant forwarding
-last_verified: 2026-08-04
+last_verified: 2026-08-15
 ---
 
 # Accountant forwarding
@@ -28,6 +28,10 @@ The card reads from and writes to `/api/team/accountant-delivery`. Any workspace
 | **Enabled** | Master switch for automatic forwarding |
 
 The default cadence for most offices is weekly on Monday, because one bundled email is easier to process than a separate message for every record.
+
+### Deductibility in the export
+
+The expense detail in the forwarded export carries the category name and the actual deductibility used by the VAT return: the category's deduction percentage and the deductible VAT amount. This replaces the older "Deductible" yes/no column, so the per-line detail and the VAT summary in the same export now agree.
 
 ### Receipt requirement
 

@@ -1,6 +1,6 @@
 ---
 title: Transmission au comptable
-last_verified: 2026-08-04
+last_verified: 2026-08-15
 ---
 
 # Transmission au comptable

@@ -51,6 +51,15 @@ De vier cellen in de pulse-rij vervangen de oude geldtegels en KPI-headline. Elk
 | **Debiteuren** | Totaal openstaand, aantal te laat, en gemiddelde betaaltermijn |
 | **BTW** | Saldo (terug te vorderen of te betalen), deadline en belastingreserve |
 
+## Winst en belastingreserve
+
+Het dashboard houdt twee verschillende uitgaveweergaves expres uit elkaar:
+
+- De **Omzet**- en **uitgavetotalen** in de pulse-rij tonen de kasbeweging voor de periode: bedragen inclusief BTW en inclusief uitgaven die nog in beoordeling zijn.
+- De **Nettowinst**- en **Geschatte belastingreserve**-kaarten gebruiken in plaats daarvan een winst-en-verliesweergave. Hier worden uitgaven zonder BTW geteld, worden investeringen via hun afschrijvingschema verdeeld in plaats van in één keer te worden verwerkt, en worden bank- of inboxconcepten die nog in beoordeling zijn uitgesloten omdat ze nog niet in de boeken staan.
+
+Dit betekent dat de winstkaart en de belastingreservekaart afwijken van het eenvoudige 'omzet min kasuitgave'-cijfer. De splitsing zorgt ervoor dat de dashboardwinst overeenkomt met het W&V-rapport, zodat een grote investering in een maand een winstgevende maand niet in een verlies maakt, en de belastingreserve wordt geschat op basis van werkelijke winst in plaats van kasstroom.
+
 ## Briefingfeed
 
 De feed is de belangrijkste aandachtsplek. Hij stelt echte signalen uit werkruimtedata samen tot een gestructureerde lijst met drie tabweergaven:

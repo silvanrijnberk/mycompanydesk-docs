@@ -1,6 +1,6 @@
 ---
 title: Domains, Website, and Inbox
-last_verified: 2026-08-08
+last_verified: 2026-08-15
 ---
 
 # Domains, Website, and Inbox
@@ -206,6 +206,8 @@ See [Site Builder](/advanced/business-page) for the full editor guide.
 ### Email inbox
 
 The inbox is a top-level surface at `/inbox` (`apps/web/pages/inbox/index.vue`). Backend lives in `apps/api/src/modules/inbox/*` and writes to a separate set of tables (`company_email_domains`, `company_mailboxes`, `email_threads`, `email_messages`, `email_attachments`, `email_events`).
+
+When a forwarded supplier invoice is converted into a draft expense from an attachment, the expense is only booked after you confirm it. If the invoice date falls in a VAT period that has already been filed, the automated booking is refused and an `inbox_expense_period_locked` notification is created instead of silently dropping the invoice; the notification lands on the inbox list and tells you which supplier and invoice date are involved, so you can book it manually in the current period or file a supplementary return.
 
 Capabilities:
 
