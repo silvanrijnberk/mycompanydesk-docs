@@ -69,7 +69,9 @@ Les contrats actifs avec un calendrier de recurrence generent automatiquement de
 2. Applique le client, le montant et la description corrects
 3. Utilise la meme numerotation automatique des factures
 
-Vous pouvez examiner et envoyer les factures generees manuellement, ou configurer l'envoi automatique. Lorsqu'un contrat est basé sur un taux horaire, un taux journalier ou un prix forfaitaire de projet, vous recevez aussi une alerte quand le budget du contrat est dépassé ou quand des heures saisies n'ont pas pu être tarifées car aucun taux n'était défini.
+Les factures generees ne sont marquees comme factures de location que lorsque le contrat est un contrat de location. Les contrats de services et de collaboration produisent des factures ordinaires. Cela influe sur le badge affiche sur la facture, le modele d'e-mail utilise a l'envoi et sur l'attribution du chiffre d'affaires a un objet lie.
+
+Vous pouvez examiner et envoyer les factures generees manuellement, ou configurer l'envoi automatique. Lorsqu'un contrat est base sur un taux horaire, un taux journalier ou un prix forfaitaire de projet, vous recevez aussi une alerte quand le budget du contrat est depasse ou quand des heures saisies n'ont pas pu etre tarifees car aucun taux n'etait defini.
 
 ## Période de facturation
 
