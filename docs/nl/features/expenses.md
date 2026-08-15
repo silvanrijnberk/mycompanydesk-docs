@@ -78,6 +78,8 @@ Laat AI automatisch uitgavegegevens uit bonnen extraheren:
 Bonnen scannen vereist het **Pro**-abonnement of hoger. Het BTW-tarief op een nieuwe uitgave begint bij je standaard werkruimte-instelling.
 :::
 
+Als een doorgestuurde e-mail of een scan wel een uitgave oplevert, maar de bijbehorende bon niet meegevoegd kan worden (bijvoorbeeld een niet-ondersteund bestandstype of een te groot bestand), wordt de uitgave toch aangemaakt en krijgt hij een notitie dat de bijlage ontbreekt. Upload de bon daarna handmatig op de detailpagina van de uitgave.
+
 ## BTW-afhandeling
 
 Elke uitgave kan een eigen BTW-tarief hebben. Veelgebruikte opties:
@@ -126,6 +128,7 @@ Selecteer meerdere uitgaven voor:
 - **Archiveren** - Verplaats naar archief
 - **Verwijderen** - Permanent verwijderen
 - **Exporteren** - Download als CSV
+- **Markeer als betaald** - Markeer geselecteerde uitgaven als betaald. Als je een bank- of inbox-concept als betaald markeert, wordt de vlag "Te controleren" tegelijkertijd verwijderd, zodat de rij zichtbaar wordt in je rapportages, BTW-aangifte en boekhoudersexport in plaats van verborgen te blijven. Dit gebeurt alleen als je de status op betaald zet, niet als je hem terugzet naar onbetaald.
 
 ## Kilometervergoeding
 
