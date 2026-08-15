@@ -19,3 +19,5 @@ Om dit in te stellen:
 4. Sla de wijzigingen op
 
 Opmerking: Lezen is nodig voordat Schrijven of Aanmaken werkt.
+
+Het recht Aanmaken geldt alleen voor nieuwe gegevens. Een teamlid met Aanmaken maar zonder Schrijven kan via de gewone knop nieuwe records toevoegen, maar mag bestaande records niet bewerken, de status niet wijzigen, geen bulkacties gebruiken en geen gescande bonnen bevestigen als nieuwe uitgave.

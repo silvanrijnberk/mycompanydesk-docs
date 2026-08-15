@@ -94,6 +94,10 @@ Wenn der Scanner ein Lieferantenland ermittelt (zum Beispiel ein ausländischer 
 
 Sie können die Ausgabe anschließend wie jede manuell erstellte Ausgabe bearbeiten.
 
+## Berechtigungen
+
+Der Belegscanner unterliegt derselben Seitenberechtigung wie die Seite Ausgaben. Ein Teammitglied braucht **Lesen**-Zugriff auf Ausgaben, um den Scanner zu öffnen, und **Erstellen**-Zugriff, um einen gescannten Beleg als neue Ausgabe zu bestätigen. Mitglieder ohne Erstellen-Berechtigung sehen den Scanner weiterhin, können die Bestätigung aber nicht abschließen. Das gilt sowohl für Uploads über die Seite Ausgaben als auch für geteilte Fotoflows.
+
 ## Mehrere Belege scannen
 
 Der Uploader verarbeitet eine Datei pro Durchgang. Um mehrere Belege zu verarbeiten, scannen Sie sie nacheinander; jeder Scan zählt einmal für Ihr monatliches Limit. Für einen Beleg oder eine Rechnung mit mehreren Positionen verwenden Sie den Extraktionsmodus **Mehrfach**, um mit einem Scan mehrere Ausgaben zu erstellen.

@@ -8,7 +8,7 @@ chatbot:
   follow_up: ["How do I mark an invoice as paid?", "How do I send a reminder?", "How do I cancel an invoice?"]
 ---
 Factuurstatussen uitgelegd:
-• Concept - nog niet verstuurd, vrij te bewerken
+• Concept - nog niet verstuurd, vrij te bewerken. Je kunt een concept pas als betaald markeren of er een betaling op registreren nadat je hem definitief hebt gemaakt; een betaling op een concept maakte eerder een nummerloze factuur met status Betaald, wat nu niet meer mag.
 • Verstuurd - bezorgd bij de klant, wacht op betaling
 • Betaald - betaling ontvangen en bevestigd
 • Achterstallig - vervaldatum verstreken, nog niet betaald

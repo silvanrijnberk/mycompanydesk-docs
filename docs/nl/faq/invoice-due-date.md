@@ -17,3 +17,5 @@ Zo pas je de vervaldatum van één factuur aan:
 Wil je dat toekomstige facturen met een andere termijn starten, pas dan de betaaltermijn van de klant aan of de standaard via Instellingen → "Facturen en offertes" onder "Hoeveel dagen krijgt een klant om te betalen?".
 
 Tip: Automatische herinneringen volgen de vervaldatum, dus met een juiste termijn gaan ook de herinneringen op het goede moment de deur uit.
+
+Als een klant geen eigen betaaltermijn heeft, geldt eerst de werkruimtestandaard via **Instellingen → Facturen en offertes**, pas daarna de platformstandaard (14 dagen). Die volgorde werd eerder overgeslagen bij het kiezen van een klant, waardoor de vervaldatum te vroeg kon uitvallen.

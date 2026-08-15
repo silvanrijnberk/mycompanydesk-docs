@@ -19,3 +19,5 @@ To configure:
 4. Save the permission changes
 
 Note: Read is required before Write or Create works.
+
+Create permission is scoped to new records only. A member with Create but no Write can add new records through the collection root, but cannot edit existing records, change status, use bulk actions, or confirm scanned receipts into new expenses.

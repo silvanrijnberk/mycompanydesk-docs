@@ -94,6 +94,10 @@ Lorsque le scanner determine le pays d'un fournisseur (par exemple un fournisseu
 
 Vous pouvez modifier la depense par la suite comme n'importe quelle depense creee manuellement.
 
+## Droits d'accès
+
+Le scanner de reçus est soumis à la même permission de page que la page Dépenses. Un membre de l'équipe a besoin de l'accès Lecture à Dépenses pour ouvrir le scanner, et de l'accès Création pour confirmer un reçu scanné en une nouvelle dépense. Les membres sans permission Création voient toujours le scanner, mais ne peuvent pas finaliser la confirmation. Cela s'applique aussi bien aux téléversements depuis la page Dépenses qu'aux flux de photos partagés.
+
 ## Numériser plusieurs reçus
 
 L'outil de téléchargement traite un fichier à la fois. Pour traiter plusieurs reçus, numérisez-les l'un après l'autre ; chaque scan compte une fois dans votre limite mensuelle. Pour un reçu ou une facture contenant plusieurs éléments, utilisez le mode d'extraction **Multiple** afin de créer plusieurs dépenses avec un seul scan.
