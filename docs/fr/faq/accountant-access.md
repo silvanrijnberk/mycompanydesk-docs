@@ -1,6 +1,6 @@
 ---
 title: "Accès du comptable"
-last_verified: 2026-08-06
+last_verified: 2026-08-15
 chatbot:
   triggers:
     - "accountant access"
@@ -63,7 +63,7 @@ Votre comptable clique sur une administration pour ouvrir directement son espace
 
 ## Livraison automatique
 
-Une fois votre comptable connecté, allez dans **Paramètres → Accès et comptable** et activez la livraison automatique. MyCompanyDesk envoie alors chaque trimestre un export avec les factures de vente, les dépenses et un récapitulatif de TVA dans un format compatible, afin que les chiffres n'aient pas à être retranscrits manuellement. Vous choisissez vous-même les flux inclus et consultez un journal des livraisons effectuées.
+Une fois votre comptable connecté, allez dans **Paramètres → Accès et comptable** et activez la livraison automatique. MyCompanyDesk peut alors envoyer un export à votre comptable avec les factures de vente, les dépenses et les devis acceptés dans un format compatible, afin que les chiffres n'aient pas à être retranscrits manuellement. Les chiffres de la déclaration de TVA ne sont pas inclus ; téléchargez-les en CSV depuis **Taxes → Déclaration de TVA**. Vous choisissez vous-même les flux inclus et consultez un journal des livraisons effectuées.
 
 ## Gérer plusieurs entreprises
 

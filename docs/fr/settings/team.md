@@ -60,9 +60,9 @@ Actions administrateur par ligne : **Inviter le comptable**, le panneau **Gérer
 
 ## Livraison automatique à votre comptable
 
-Une fois un comptable connecté, vous pouvez faire en sorte que MyCompanyDesk livre automatiquement des enregistrements. L'export rassemble les factures de vente, les dépenses et un récapitulatif de TVA dans un format que le logiciel de votre comptable peut importer, afin que les chiffres n'aient pas à être ressaisis.
+Une fois un comptable connecté, vous pouvez faire en sorte que MyCompanyDesk livre automatiquement des enregistrements. L'export rassemble les factures de vente, les dépenses et les devis acceptés dans un format que le logiciel de votre comptable peut importer, afin que les chiffres n'aient pas à être ressaisis. Les chiffres de la déclaration de TVA ne sont pas inclus ; téléchargez-les en CSV depuis **Taxes → Déclaration de TVA**.
 
-Ouvrez la ligne du comptable dans **Paramètres → Votre comptable**, choisissez **Livraison automatique**, sélectionnez les flux à inclure (par exemple factures de vente, dépenses et un récapitulatif de TVA), le moment de déclenchement et le format. Un journal de livraison montre ce qui a été envoyé et quand.
+Ouvrez la ligne du comptable dans **Paramètres → Votre comptable**, choisissez **Livraison automatique**, sélectionnez les flux à inclure (par exemple factures de vente, dépenses et les devis acceptés), le moment de déclenchement et le format. Un journal de livraison montre ce qui a été envoyé et quand.
 
 ### Vue d'ensemble des activités du comptable
 

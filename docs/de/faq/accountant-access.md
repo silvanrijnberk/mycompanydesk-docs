@@ -1,6 +1,6 @@
 ---
 title: "Zugang für den Steuerberater"
-last_verified: 2026-08-06
+last_verified: 2026-08-15
 chatbot:
   triggers:
     - "accountant access"
@@ -63,7 +63,7 @@ Ihr Steuerberater klickt auf eine Administration, um direkt in deren Arbeitsbere
 
 ## Automatische Zustellung
 
-Sobald Ihr Steuerberater verknüpft ist, gehen Sie zu **Einstellungen → Zugang und Steuerberater** und schalten Sie die automatische Zustellung ein. MyCompanyDesk liefert dann jedes Quartal einen Export mit Verkaufsrechnungen, Ausgaben und einer Mehrwertsteuer-Übersicht in einem kompatiblen Format, sodass die Zahlen nicht manuell übernommen werden müssen. Sie wählen selbst, welche Bereiche enthalten sind, und sehen in einem Protokoll, was zugestellt wurde.
+Sobald Ihr Steuerberater verknüpft ist, gehen Sie zu **Einstellungen → Zugang und Steuerberater** und schalten Sie die automatische Zustellung ein. MyCompanyDesk kann dann einen Export mit Verkaufsrechnungen, Ausgaben und akzeptierten Angeboten an Ihren Steuerberater liefern, in einem kompatiblen Format, sodass die Zahlen nicht manuell übernommen werden müssen. USt.-Erklärungszahlen sind nicht enthalten; laden Sie diese als CSV unter **Steuern → USt.-Erklärung** herunter. Sie wählen selbst, welche Bereiche enthalten sind, und sehen in einem Protokoll, was zugestellt wurde.
 
 ## Mehrere Unternehmen verwalten
 
