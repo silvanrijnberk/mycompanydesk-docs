@@ -115,7 +115,9 @@ Eine Übersichtsleiste oben auf der USt.-Seite zeigt, wie viele Zeiträume gespe
 
 Der Einreichungsstatus wird für den genauen Zeitraum erfasst, nicht für enthaltene Unterzeiträume. Ein eingereichtes Jahr markiert nicht automatisch die einzelnen Quartale als eingereicht, und ein eingereichtes Quartal markiert nicht automatisch die darin enthaltenen Monate. Die Sperre gilt jedoch für den gesamten Zeitraum, sodass eine Jahressperre jedes Quartal schützt.
 
-Das Bearbeiten einer Rechnung oder Ausgabe in einem gesperrten Zeitraum wird im Formular blockiert: Die Finanzfelder werden schreibgeschützt (Notizen bleiben bearbeitbar) und das Formular bietet stattdessen einen Korrekturweg an, etwa eine Korrektur im aktuell offenen Zeitraum oder eine Korrekturrechnung.
+**Abgabetiming und Korrekturen.** Einen Zeitraum können Sie erst abgeben, nachdem er beendet ist. Wenn Sie vor dem letzten Tag des Zeitraums abgeben möchten, zeigt die App einen Fehler und bittet Sie zu warten, bis der Zeitraum vorbei ist. Ein Zeitraum kann nur einmal als eingereicht markiert werden; ist er bereits eingereicht, können Sie ihn von der USt.-Seite nicht erneut abgeben. Korrigieren Sie eine eingereichte Periode stattdessen mit einer Korrektur oder Suppletie in einem offenen Zeitraum. Im Reiter Erklärung sehen Sie, welche Zeiträume noch offen und welche bereits eingereicht sind.
+
+Das Bearbeiten einer Rechnung oder Ausgabe in einem gesperrten Zeitraum wird im Formular blockiert: Die Finanzfelder werden schreibgeschützt (Notizen bleiben bearbeitbar) und das Formular bietet stattdessen einen Korrekturweg an, etwa eine Korrektur im aktuell offenen Zeitraum oder eine Korrekturrechnung. Derselbe Schutz greift auch beim Buchen eines Bank-Abgleichs oder Markieren einer Ausgabe als bezahlt: fällt die Transaktion in einen gesperrten Zeitraum, blockiert die App die Aktion und verweist auf eine Korrektur im aktuell offenen Zeitraum.
 
 ## KOR
 

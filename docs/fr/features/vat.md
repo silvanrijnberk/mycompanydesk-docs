@@ -115,7 +115,9 @@ Une barre de synthèse en haut de la page TVA indique combien de périodes sont 
 
 Le statut de déclaration est suivi par période exacte, pas par inclusion. Une année déclarée ne marque pas automatiquement les quatre trimestres comme déclarés, et un trimestre déclaré ne marque pas automatiquement les mois qu'il contient. Le verrouillage couvre toutefois toute la période, donc un verrou annuel protège chaque trimestre.
 
-Modifier une facture ou une dépense dans une période verrouillée est bloqué dans le formulaire : les champs financiers passent en lecture seule (les notes restent modifiables) et le formulaire propose un chemin de correction, comme une correction dans la période ouverte en cours ou une facture rectificative.
+**Calendrier de dépôt et corrections.** Vous ne pouvez déclarer une période qu'une fois qu'elle est terminée. Si vous tentez de déclarer avant le dernier jour de la période, l'application affiche une erreur vous demandant d'attendre la fin de la période. Une période ne peut être marquée comme déposée qu'une seule fois ; si elle l'est déjà, vous ne pouvez plus la déclarer à nouveau depuis la page TVA. Corrigez une période déjà déposée en créant une correction ou suppletie dans une période ouverte. L'onglet Déclaration indique quelles périodes sont encore ouvertes et lesquelles sont déjà déposées.
+
+Modifier une facture ou une dépense dans une période verrouillée est bloqué dans le formulaire : les champs financiers passent en lecture seule (les notes restent modifiables) et le formulaire propose un chemin de correction, comme une correction dans la période ouverte en cours ou une facture rectificative. La même protection s'applique lorsque vous rapprochez une transaction bancaire ou marquez une dépense comme payée : si la transaction tombe dans une période verrouillée, l'application bloque l'action et vous oriente vers une correction dans la période ouverte en cours.
 
 ## KOR
 

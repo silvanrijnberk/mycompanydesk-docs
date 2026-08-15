@@ -1,5 +1,6 @@
 ---
 title: Peppol E-Rechnung
+last_verified: 2026-08-15
 ---
 
 # Peppol E-Rechnung
@@ -83,7 +84,7 @@ Ab dann kommen eingehende E-Rechnungen automatisch als Ausgabenentwürfe an. Es 
 
 ### Eingehende E-Rechnungen prüfen
 
-Jede E-Rechnung landet als Entwurf unter **Ausgaben**. Der Entwurf ist mit Lieferant, Beschreibung, Betrag, USt. und Rechnungsdatum aus der eingehenden E-Rechnung vorausgefüllt. Prüfen Sie die Angaben, fügen Sie bei Bedarf einen Beleg hinzu und speichern Sie ihn als reguläre Ausgabe.
+Jede E-Rechnung landet als Entwurf unter **Ausgaben**. Der Entwurf ist mit Lieferant, Beschreibung, Betrag, USt. und Rechnungsdatum aus der eingehenden E-Rechnung vorausgefüllt. Wenn der Lieferant Reverse Charge angewendet hat, klassifiziert MyCompanyDesk dies als Reverse-Charge und belässt den USt.-Satz bei 0 %, sodass er in die richtige Rubrik Ihrer USt.-Erklärung fällt. Prüfen Sie die Angaben, fügen Sie bei Bedarf einen Beleg hinzu und speichern Sie ihn als reguläre Ausgabe.
 
 ### Empfangen deaktivieren
 

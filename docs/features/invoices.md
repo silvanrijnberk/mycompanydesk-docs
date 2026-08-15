@@ -194,9 +194,13 @@ When you finalize or send an invoice, MyCompanyDesk checks that your company has
 
 If either field is missing, a dialog opens so you can fill them in right there. Once saved, your invoice finalizes automatically.
 
+The app also blocks finalization if your company details are incomplete (for example a missing business name or address) or if the invoice has no line items. The error message points to exactly what is missing, so you can fix it before the invoice goes to the customer.
+
 If your workspace uses manual numbering, the app also asks you to enter the invoice number when you finalize or send. MyCompanyDesk suggests the next number in your sequence, but you can type any number you like. The number is required and must be unique.
 
 If you are still waiting for your BTW-id from the Belastingdienst, or you are exempt under the small business scheme (KOR), you can acknowledge the gap and proceed anyway. You should add your BTW-id later once you have it.
+
+Once an invoice has been finalized, it cannot be archived or deleted in one step, because the invoice number has already been used. Use the cancel or credit-note flow to handle a finalized invoice that should no longer be paid.
 
 ## Receiving invoices from other MyCompanyDesk users
 
