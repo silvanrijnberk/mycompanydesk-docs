@@ -69,6 +69,8 @@ Actieve contracten met een herhalingsschema genereren automatisch facturen bij e
 2. Past de juiste klant, bedrag en omschrijving toe
 3. Gebruikt dezelfde automatische factuurnummering
 
+Gegenereerde facturen krijgen alleen het label huurfactuur als het contract een huurcontract is. Dienstencontracten en samenwerkingcontracten leveren gewone facturen op. Dat bepaalt het badge op de factuur, het e-mailsjabloon dat wordt gebruikt bij verzending, en of de omzet wordt toegerekend aan een gekoppeld object.
+
 Je kunt gegenereerde facturen handmatig bekijken en versturen, of automatische verzending instellen. Als een contract gebaseerd is op een uur-, dag- of vaste projectprijs, krijg je een waarschuwing wanneer het contractbudget wordt overschreden of wanneer geboekte uren niet kunnen worden geprijsd omdat geen tarief is ingesteld.
 
 ## Factuurperiode

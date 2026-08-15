@@ -69,6 +69,8 @@ Active contracts with a recurrence schedule automatically generate invoices at e
 2. Applies the correct customer, amount, and description
 3. Uses the same automatic invoice numbering
 
+Generated invoices are tagged as rental invoices only when the contract is a rental contract. Service and collaboration contracts produce ordinary invoices. This affects the badge shown on the invoice, the email template used when the invoice is sent, and whether the revenue is attributed to a linked object.
+
 You can review and send generated invoices manually, or configure auto-sending. When a contract is based on an hourly, daily or fixed project price, you also get a warning when the contract budget is exceeded or when logged hours cannot be priced because no rate was set.
 
 ## Invoice period

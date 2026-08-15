@@ -69,6 +69,8 @@ Aktive Verträge mit einem Wiederholungsplan generieren automatisch Rechnungen i
 2. Wendet den richtigen Kunden, Betrag und die Beschreibung an
 3. Verwendet dieselbe automatische Rechnungsnummerierung
 
+Generierte Rechnungen werden nur dann als Mietrechnungen gekennzeichnet, wenn es sich um einen Mietvertrag handelt. Dienstleistungs- und Kooperationsverträge erzeugen gewöhnliche Rechnungen. Das beeinflusst das Badge auf der Rechnung, die beim Versand verwendete E-Mail-Vorlage und ob der Umsatz einem verknüpften Vermögenswert zugeordnet wird.
+
 Sie können generierte Rechnungen manuell überprüfen und versenden oder den automatischen Versand konfigurieren. Wenn ein Vertrag auf einem Stundensatz, Tagessatz oder festen Projektpreis basiert, erhalten Sie auch eine Warnung, wenn das Vertragsbudget überschritten wird oder erfasste Stunden nicht bewertet werden konnten, weil kein Satz hinterlegt war.
 
 ## Rechnungszeitraum
