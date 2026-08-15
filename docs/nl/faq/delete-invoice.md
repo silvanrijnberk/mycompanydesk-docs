@@ -1,6 +1,6 @@
 ---
-title: "Delete an invoice"
-last_verified: 2026-05-09
+title: "Factuur verwijderen"
+last_verified: 2026-08-15
 chatbot:
   triggers:
     - "delete invoice"
@@ -22,10 +22,12 @@ chatbot:
     - "Can I undo a deleted invoice?"
 ---
 
-Om een factuur te verwijderen:
+Zo verwijder je een factuur:
 1. Open de factuur die je wilt verwijderen
 2. Scroll in de zijbalk naar de sectie "Gevarenzone"
 3. Klik op "Verwijderen"
 4. Bevestig de verwijdering
 
-Alleen conceptfacturen kunnen worden verwijderd. Gebruik bij verstuurde of betaalde facturen Annuleren zodat het record zichtbaar blijft in de factuurlijst.
+Alleen conceptfacturen kunnen in één keer definitief worden verwijderd. Bij verstuurde of betaalde facturen zet elke verwijderactie de factuur één stap verder: actief wordt Gearchiveerd, gearchiveerd wordt Prullenbak, en prullenbak wordt definitief weg. Gebruik Annuleren als je het record wel in de factuurlijst wilt houden.
+
+Heb je per ongeluk verwijderd? Kijk dan in het Archief of de Prullenbak en zet de factuur terug voordat hij de laatste stap bereikt.

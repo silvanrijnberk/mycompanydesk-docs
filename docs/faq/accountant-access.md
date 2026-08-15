@@ -1,6 +1,6 @@
 ---
 title: "Accountant access"
-last_verified: 2026-08-06
+last_verified: 2026-08-15
 chatbot:
   triggers:
     - "accountant access"
@@ -40,7 +40,7 @@ Accountant access is free on every plan; it does not require Pro or a team seat.
 
 ## Automatic delivery
 
-After your accountant is connected, go to **Settings → Toegang en boekhouder** and turn on automatic delivery. MyCompanyDesk then sends your accountant a quarterly export with sales invoices, expenses and a VAT summary in a compatible format, so the figures do not have to be entered by hand. You choose which streams to include and can see a log of what was delivered.
+After your accountant is connected, go to **Settings → Toegang en boekhouder** and turn on automatic delivery. MyCompanyDesk can then send your accountant an export with sales invoices, expenses and accepted quotes in a compatible format, so the figures do not have to be entered by hand. VAT return figures are not included; download those as CSV from **Taxes → VAT return**. You choose which streams to include and can see a log of what was delivered.
 
 ## Your accountant invites you
 

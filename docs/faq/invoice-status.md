@@ -1,6 +1,6 @@
 ---
 title: Invoice status
-last_verified: 2026-05-09
+last_verified: 2026-08-15
 chatbot:
   triggers: ["invoice status", "invoice statuses", "what do invoice statuses mean", "draft sent paid", "invoice lifecycle", "factuurstatus", "factuur statussen", "rechnungsstatus", "statut facture"]
   actions:
@@ -14,5 +14,7 @@ Invoice statuses explained:
 • Overdue - due date passed and still unpaid
 • Paid - payment recorded
 • Canceled - voided and no longer collectible
+
+Deleting an invoice is a staged action: from active it goes to Archived, then to Trash, and only then is permanently removed. You can restore it from Archive or Trash while it is still in either stage. Canceling is different: it marks a sent or paid invoice as Canceled but keeps it in the list.
 
 Tip: Use invoice filters to focus on Open and Overdue first.

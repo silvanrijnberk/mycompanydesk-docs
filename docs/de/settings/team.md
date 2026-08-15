@@ -60,9 +60,9 @@ Admin-Aktionen pro Zeile: **Steuerberater einladen**, das Panel **Zugang verwalt
 
 ## Automatische Zustellung an Ihren Steuerberater
 
-Sobald ein Steuerberater verknüpft ist, können Sie MyCompanyDesk automatisch Datensätze zustellen lassen. Der Export bündelt Verkaufsrechnungen, Ausgaben und eine Mehrwertsteuer-Übersicht in einem Format, das die Software Ihres Steuerberaters einlesen kann, sodass die Zahlen nicht neu eingetippt werden müssen.
+Sobald ein Steuerberater verknüpft ist, können Sie MyCompanyDesk automatisch Datensätze zustellen lassen. Der Export bündelt Verkaufsrechnungen, Ausgaben und akzeptierte Angebote in einem Format, das die Software Ihres Steuerberaters einlesen kann, sodass die Zahlen nicht neu eingetippt werden müssen. USt.-Erklärungszahlen sind nicht enthalten; laden Sie diese als CSV unter **Steuern → USt.-Erklärung** herunter.
 
-Öffnen Sie die Zeile des Steuerberaters unter **Einstellungen → Ihr Steuerberater**, wählen Sie **Automatisch zustellen**, legen Sie fest, welche Bereiche enthalten sein sollen (zum Beispiel Verkaufsrechnungen, Ausgaben und eine Mehrwertsteuer-Übersicht), den Auslöserzeitpunkt und das Format. Ein Zustellungsprotokoll zeigt, was wann gesendet wurde.
+Öffnen Sie die Zeile des Steuerberaters unter **Einstellungen → Ihr Steuerberater**, wählen Sie **Automatisch zustellen**, legen Sie fest, welche Bereiche enthalten sein sollen (zum Beispiel Verkaufsrechnungen, Ausgaben und akzeptierte Angebote), den Auslöserzeitpunkt und das Format. Ein Zustellungsprotokoll zeigt, was wann gesendet wurde.
 
 ### Aktivitätsübersicht des Steuerberaters
 

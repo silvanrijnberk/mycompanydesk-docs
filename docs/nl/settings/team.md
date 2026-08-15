@@ -60,9 +60,9 @@ Adminacties per rij: **Boekhouder uitnodigen**, het paneel **Toegang beheren** e
 
 ## Automatisch aanleveren aan je boekhouder
 
-Zodra een boekhouder is gekoppeld, kun je MyCompanyDesk automatisch records laten aanleveren. De export bundelt verkoopfacturen, uitgaven en een btw-overzicht in een formaat dat het pakket van je boekhouder kan inlezen, zodat de cijfers niet overgetypt hoeven te worden.
+Zodra een boekhouder is gekoppeld, kun je MyCompanyDesk automatisch records laten aanleveren. De export bundelt verkoopfacturen, uitgaven en geaccepteerde offertes in een formaat dat het pakket van je boekhouder kan inlezen, zodat de cijfers niet overgetypt hoeven te worden. BTW-aangiftecijfers zitten niet in deze export; download die als CSV via **Belastingen → BTW-aangifte**.
 
-Open de rij van de boekhouder in **Instellingen → Je boekhouder**, kies **Automatisch doorsturen**, selecteer de onderdelen die je wilt meesturen (bijvoorbeeld verkoopfacturen, uitgaven en een btw-overzicht), het moment van afleveren en het formaat. Een afleverlog toont wat wanneer is verstuurd.
+Open de rij van de boekhouder in **Instellingen → Je boekhouder**, kies **Automatisch doorsturen**, selecteer de onderdelen die je wilt meesturen (bijvoorbeeld verkoopfacturen, uitgaven en geaccepteerde offertes), het moment van afleveren en het formaat. Een afleverlog toont wat wanneer is verstuurd.
 
 ### Activiteitsoverzicht van de boekhouder
 

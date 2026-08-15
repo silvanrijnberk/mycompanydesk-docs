@@ -18,4 +18,6 @@ Les notifications liées à la facture, telles que en retard, échéance ou brou
 
 Si la facture est déjà payée, en tout ou en partie, ouvrez la facture d'origine et utilisez plutôt "Créer un avoir / une correction".
 
+L'annulation est différente de la suppression : l'annulation change le statut en Annulée, mais la facture reste visible dans la liste ; la suppression passe par les paliers Archivé et Corbeille avant d'être définitive. La suppression définitive en une seule étape n'est possible que tant qu'un document est encore un brouillon sans numéro.
+
 Astuce : l'annulation conserve le numéro de facture dans votre comptabilité ; la suppression n'est possible que tant qu'un document est encore un brouillon sans numéro.

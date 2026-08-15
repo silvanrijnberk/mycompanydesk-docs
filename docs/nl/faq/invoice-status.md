@@ -1,6 +1,6 @@
 ---
 title: Invoice status
-last_verified: 2026-05-09
+last_verified: 2026-08-15
 chatbot:
   triggers: ["invoice status", "invoice statuses", "what do invoice statuses mean", "draft sent paid", "invoice lifecycle", "factuurstatus", "factuur statussen", "rechnungsstatus", "statut facture"]
   actions:
@@ -13,3 +13,7 @@ Factuurstatussen uitgelegd:
 • Betaald - betaling ontvangen en bevestigd
 • Achterstallig - vervaldatum verstreken, nog niet betaald
 • Geannuleerd - ongeldig, niet meer actief
+
+Verwijderen gaat in stappen: van actief naar Gearchiveerd, dan naar Prullenbak, en pas daarna definitief weg. Je kunt hem uit het Archief of de Prullenbak terughalen zolang hij nog niet definitief verwijderd is. Annuleren werkt anders: daarmee markeer je een verstuurde of betaalde factuur als Geannuleerd, maar hij blijft in de lijst staan.
+
+Tip: Gebruik de statusfilters om eerst Open en Achterstallig te zien.
