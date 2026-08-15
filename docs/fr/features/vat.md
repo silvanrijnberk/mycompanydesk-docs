@@ -68,7 +68,7 @@ Un tableau qui reflète le formulaire de déclaration du Belastingdienst :
 | 4. Prestaties vanuit het buitenland aan u verricht | 4a, 4b |
 | 5. Voorbelasting en berekening totaal | 5a, 5b, 5c |
 
-Chaque ligne montre le chiffre d'affaires (HT) et le montant de TVA. La barre du bas affiche le total à payer ou à récupérer. Les corrections hors formulaire (KOR, suppletie) apparaissent sur une ligne d'ajustement distincte, pour que ce que vous payez réellement reste visible.
+Chaque ligne montre le chiffre d'affaires (HT) et le montant de TVA. La barre du bas affiche le total à payer ou à récupérer. Les corrections hors formulaire apparaissent sur des lignes distinctes : une correction de réservation ordinaire est affichée comme **Correctie**, tandis qu'une réduction selon l'ancien régime KOR apparaît comme **Vermindering volgens de oude KOR**. Le récapitulatif CSV de TVA ajoute une ligne de correction correspondante lorsque ces montants sont non nuls, de sorte que le solde, la TVA collectée et la TVA payée concordent. La colonne Solde TVA de la vue annuelle utilise le même total de TVA nette que la feuille des rubriques, donc les lignes s'additionnent au même montant.
 
 La rubrique 4a concerne les achats en autoliquidation auprès de fournisseurs hors UE (`import_reverse_charge`); la rubrique 4b concerne les achats en autoliquidation auprès de fournisseurs UE (`b2b_reverse_charge`). MyCompanyDesk déduit la bonne rubrique à partir du pays du fournisseur, pour que le total en 5a soit exact.
 
@@ -80,7 +80,7 @@ Une carte de téléchargement à côté de la feuille propose des exports CSV : 
 
 Quand vous avez de l'activité internationale, des cartes complémentaires apparaissent sous la feuille :
 
-- **ICP-opgaaf** : ventes B2B intra-UE groupées par client. Obligatoire quand vous avez vendu à des clients assujettis à la TVA dans d'autres pays de l'UE.
+- **ICP-opgaaf** : ventes B2B intra-UE groupées par client. Obligatoire quand vous avez vendu à des clients assujettis à la TVA dans d'autres pays de l'UE. La carte suit le sélecteur de période de toute la page, donc une exportation trimestrielle ne liste que les clients UE de ce trimestre.
 - **Ventilation OSS** : ventes B2C par pays pour le guichet unique (One Stop Shop).
 - **TVA étrangère** : TVA étrangère qui vous a été facturée et qui peut être récupérable via la procédure de remboursement de l'UE.
 - **Corrections** : prélèvements privés, suppletie et autres ajustements intégrés aux totaux de la période.
@@ -117,9 +117,9 @@ Modifier une facture ou une dépense dans une période verrouillée est bloqué 
 
 ## KOR
 
-Le régime des petites entreprises (kleineondernemersregeling) se gère sous **Paramètres → TVA** : une carte suit votre chiffre d'affaires annuel par rapport au seuil de 20 000 € avec une barre de progression, explique ce que l'adhésion implique pour vos factures et contient l'interrupteur d'adhésion. Tant que votre chiffre d'affaires reste sous la zone KOR, la page TVA affiche un rappel qui y mène.
+Le régime des petites entreprises (kleineondernemersregeling) se gère sous **Paramètres → TVA** : une carte suit votre chiffre d'affaires annuel par rapport au seuil de 20 000 EUR ([`sources/vat-rates.yaml#countries.NL.small_business_threshold_eur`](../../../sources/vat-rates.yaml)) avec une barre de progression, explique ce que l'adhésion implique pour vos factures et contient l'interrupteur d'adhésion. Vous restez éligible jusqu'à 20 000 EUR inclus par an ; seul un chiffre d'affaires supérieur met fin à l'éligibilité KOR. Tant que votre chiffre d'affaires ne dépasse pas 20 000 EUR, la page TVA affiche un rappel qui y mène.
 
-Si vous dépassez le seuil pendant l'adhésion, une bannière d'avertissement apparaît en haut de l'éditeur de facture. Le titre indique que vous dépassez le seuil KOR, le corps explique que cette facture doit inclure la TVA et non pas 0 %, et le bouton renvoie vers **Paramètres → TVA** pour vous désinscrire auprès du Belastingdienst et désactiver la KOR.
+Si vous dépassez 20 000 EUR pendant l'adhésion, une bannière d'avertissement apparaît en haut de l'éditeur de facture. Le titre indique que vous dépassez le seuil KOR, le corps explique que cette facture doit inclure la TVA et non pas 0 %, et le bouton renvoie vers **Paramètres → TVA** pour vous désinscrire auprès du Belastingdienst et désactiver la KOR.
 
 ## KIA et Box 3
 
@@ -137,3 +137,4 @@ L'assistant intégré répond aux questions sur votre déclaration avec les chif
 - L'anneau d'échéance passe au rouge à trois jours. Prenez-le comme un signal ferme de déposer.
 - Vous vendez en B2B dans l'UE ? Ouvrez la carte ICP-opgaaf avant de déposer ; c'est une déclaration séparée qu'on oublie facilement.
 - Marquez une période comme déposée juste après le dépôt, puis laissez le verrouillage automatique la protéger.
+- Ramener un montant de dépense à zéro efface immédiatement la TVA dérivée, pour qu'une dépense corrigée ne laisse pas de TVA périmée sur la déclaration.

@@ -68,7 +68,7 @@ Eine Tabelle, die das Erklärungsformular der Belastingdienst spiegelt:
 | 4. Prestaties vanuit het buitenland aan u verricht | 4a, 4b |
 | 5. Voorbelasting en berekening totaal | 5a, 5b, 5c |
 
-Jede Zeile zeigt den Umsatz (exkl.) und den USt.-Betrag. Die Leiste unten zeigt die Summe, die zu zahlen oder zu erstatten ist. Korrekturen außerhalb des Formulars (KOR, Suppletie) erscheinen als eigene Korrekturzeile, sodass sichtbar bleibt, was Sie tatsächlich zahlen.
+Jede Zeile zeigt den Umsatz (exkl.) und den USt.-Betrag. Die Leiste unten zeigt die Summe, die zu zahlen oder zu erstatten ist. Korrekturen außerhalb des Formulars erscheinen auf eigenen Zeilen: eine allgemeine Buchungskorrektur wird als **Correctie** angezeigt, eine Minderung nach dem alten KOR-Schema als **Vermindering volgens de oude KOR**. Die USt.-Zusammenfassungs-CSV fügt eine passende Korrekturzeile hinzu, wenn diese Beträge ungleich null sind, sodass Saldo, vereinnahmte und gezahlte USt. zusammenpassen. Die USt.-Saldo-Spalte in der Jahresübersicht verwendet denselben Netto-USt.-Gesamtbetrag wie die Rubrieken-Übersicht, sodass die Zeilen auf denselben Wert summieren.
 
 Rubrik 4a ist für Reverse-Charge-Einkäufe von Lieferanten außerhalb der EU (`import_reverse_charge`); Rubrik 4b ist für Reverse-Charge-Einkäufe von EU-Lieferanten (`b2b_reverse_charge`). MyCompanyDesk leitet anhand des Lieferantenlands die richtige Rubrik ab, damit die Summe in 5a stimmt.
 
@@ -80,7 +80,7 @@ Eine Downloadkarte neben der Übersicht bietet CSV-Exporte: einen vollständigen
 
 Bei internationaler Aktivität erscheinen unter der Übersicht ergänzende Karten:
 
-- **ICP-Meldung**: EU-B2B-Verkäufe je Kunde gruppiert. Erforderlich, wenn Sie an USt.-registrierte Kunden in anderen EU-Ländern verkauft haben.
+- **ICP-Meldung**: EU-B2B-Verkäufe je Kunde gruppiert. Erforderlich, wenn Sie an USt.-registrierte Kunden in anderen EU-Ländern verkauft haben. Die Karte folgt der seitenweiten Zeitraumauswahl, sodass ein Quartalsexport nur die EU-Kunden dieses Quartals enthält.
 - **OSS-Aufschlüsselung**: B2C-Verkäufe je Land für das One-Stop-Shop-Verfahren.
 - **Ausländische USt.**: Ihnen berechnete ausländische USt., die möglicherweise über das EU-Erstattungsverfahren zurückzuholen ist.
 - **Korrekturen**: Privatentnahme, Suppletie und andere Anpassungen, die in die Zeitraumsummen einfließen.
@@ -117,9 +117,9 @@ Das Bearbeiten einer Rechnung oder Ausgabe in einem gesperrten Zeitraum wird im 
 
 ## KOR
 
-Die Kleinunternehmerregelung (kleineondernemersregeling) verwalten Sie unter **Einstellungen → MwSt.**: Eine Karte verfolgt Ihren Jahresumsatz gegen die Schwelle von €20.000 mit einem Fortschrittsbalken, erklärt, was die Teilnahme für Ihre Rechnungen bedeutet, und enthält den Anmeldeschalter. Solange Ihr Umsatz noch unter dem KOR-Bereich liegt, zeigt die USt.-Seite einen Hinweis mit Link dorthin.
+Die Kleinunternehmerregelung (kleineondernemersregeling) verwalten Sie unter **Einstellungen → MwSt.**: Eine Karte verfolgt Ihren Jahresumsatz gegen die Schwelle von 20.000 EUR ([`sources/vat-rates.yaml#countries.NL.small_business_threshold_eur`](../../../sources/vat-rates.yaml)) mit einem Fortschrittsbalken, erklärt, was die Teilnahme für Ihre Rechnungen bedeutet, und enthält den Anmeldeschalter. Sie bleiben bis einschließlich genau 20.000 EUR Jahresumsatz teilnahmeberechtigt; erst darüber endet die KOR-Berechtigung. Solange Ihr Umsatz 20.000 EUR nicht übersteigt, zeigt die USt.-Seite einen Hinweis mit Link dorthin.
 
-Überschreiten Sie die Grenze während der Teilnahme, erscheint oben im Rechnungseditor eine Warnung. Der Titel zeigt an, dass Sie über der KOR-Grenze liegen, der Text erklärt, dass diese Rechnung USt. enthalten muss und nicht 0 %, und der Button verlinkt zu **Einstellungen → MwSt.**, damit Sie sich beim Belastingdienst abmelden und die KOR ausschalten können.
+Überschreiten Sie die 20.000 EUR während der Teilnahme, erscheint oben im Rechnungseditor eine Warnung. Der Titel zeigt an, dass Sie über der KOR-Grenze liegen, der Text erklärt, dass diese Rechnung USt. enthalten muss und nicht 0 %, und der Button verlinkt zu **Einstellungen → MwSt.**, damit Sie sich beim Belastingdienst abmelden und die KOR ausschalten können.
 
 ## KIA und Box 3
 
@@ -137,3 +137,4 @@ Der eingebaute Assistent beantwortet Fragen zu Ihrer Erklärung mit den Zahlen I
 - Der Fristenring wird bei drei Tagen rot. Nehmen Sie das als hartes Signal zur Abgabe.
 - Verkaufen Sie B2B in der EU? Öffnen Sie vor der Abgabe die ICP-Karte; das ist eine separate Meldung, die leicht vergessen wird.
 - Markieren Sie einen Zeitraum direkt nach der Abgabe als eingereicht und lassen Sie die automatische Sperre ihn danach schützen.
+- Wenn Sie einen Ausgabenbetrag auf null setzen, wird die abgeleitete USt. sofort gelöscht, sodass eine korrigierte Ausgabe keine veraltete USt. auf der Erklärung hinterlässt.
