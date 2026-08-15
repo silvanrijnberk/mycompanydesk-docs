@@ -1,5 +1,6 @@
 ---
 title: Facturation electronique Peppol
+last_verified: 2026-08-15
 ---
 
 # Facturation electronique Peppol
@@ -83,7 +84,7 @@ Des lors, les factures electroniques entrantes arrivent automatiquement comme br
 
 ### Verifier les factures electroniques recues
 
-Chaque facture electronique atterrit comme brouillon sous **Depenses**. Le brouillon est pre-rempli avec le fournisseur, la description, le montant, la TVA et la date de facture provenant de la facture electronique entrante. Verifiez les informations, joignez un recu si necessaire et enregistrez-le comme depense reguliere.
+Chaque facture electronique atterrit comme brouillon sous **Depenses**. Le brouillon est pre-rempli avec le fournisseur, la description, le montant, la TVA et la date de facture provenant de la facture electronique entrante. Lorsque le fournisseur a applique la TVA d'autoliquidation, MyCompanyDesk la classe comme autoliquidation et maintient le taux de TVA a 0 % afin qu'elle se place dans la bonne rubrique de votre declaration TVA. Verifiez les informations, joignez un recu si necessaire et enregistrez-le comme depense reguliere.
 
 ### Desactiver la reception
 

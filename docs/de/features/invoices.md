@@ -194,9 +194,13 @@ Wenn Sie eine Rechnung finalisieren oder versenden, prüft MyCompanyDesk, ob Ihr
 
 Fehlt eines der Felder, oeffnet sich ein Dialog, in dem Sie die Angaben direkt nachtragen koennen. Nach dem Speichern wird die Rechnung automatisch finalisiert.
 
+Die App blockiert die Finalisierung auch, wenn Ihre Firmendaten unvollstaendig sind (z. B. ein fehlender Firmenname oder eine fehlende Adresse) oder wenn die Rechnung keine Positionen enthaelt. Die Fehlermeldung zeigt genau, was fehlt, damit Sie es korrigieren koennen, bevor die Rechnung beim Kunden landet.
+
 Wenn Ihr Arbeitsbereich die manuelle Nummerierung verwendet, fragt die App beim Finalisieren oder Versenden auch nach der Rechnungsnummer. MyCompanyDesk schlägt die nächste Nummer in Ihrer Serie vor, aber Sie können auch eine beliebige andere Nummer eingeben. Die Nummer ist Pflicht und muss eindeutig sein.
 
 Warten Sie noch auf Ihre USt-IdNr. vom Finanzamt, oder sind Sie unter der Kleinunternehmerregelung (KOR) befreit? Sie koennen den Hinweis ueberspringen und trotzdem fortfahren. Tragen Sie Ihre USt-IdNr. spaeter nach, sobald sie vorliegt.
+
+Sobald eine Rechnung finalisiert wurde, koennen Sie sie nicht mehr in einem Schritt archivieren oder loeschen, da die Rechnungsnummer bereits verwendet wurde. Nutzen Sie stattdessen die Stornierungs- oder Gutschrifts-Flow, wenn eine finalisierte Rechnung nicht mehr bezahlt werden soll.
 
 ## Rechnungen von anderen MyCompanyDesk-Nutzern empfangen
 

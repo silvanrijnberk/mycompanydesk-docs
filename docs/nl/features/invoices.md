@@ -194,9 +194,13 @@ Wanneer je een factuur afrondt of verstuurt, controleert MyCompanyDesk of je bed
 
 Ontbreekt een van de twee, dan opent een dialoog waarin je ze direct kunt invullen. Na opslaan wordt de factuur automatisch afgerond.
 
+De app blokkeert het afronden ook als je bedrijfsgegevens incompleet zijn (bijvoorbeeld een ontbrekende bedrijfsnaam of adres) of als de factuur geen regelitems heeft. De foutmelding wijst precies naar wat ontbreekt, zodat je het eerst kunt oplossen voordat de factuur de klant bereikt.
+
 Als je werkruimte handmatige nummering gebruikt, vraagt de app ook om het factuurnummer wanneer je afrondt of verstuurt. MyCompanyDesk toont het volgende nummer in je reeks als suggestie, maar je mag elk nummer invoeren dat je wilt. Het nummer is verplicht en moet uniek zijn.
 
 Wacht je nog op je btw-id van de Belastingdienst, of val je onder de KOR (kleineondernemersregeling)? Dan kun je de melding overslaan en toch doorgaan. Vul je btw-id later aan zodra je hem hebt.
+
+Zodra een factuur definitief is, kun je hem niet meer in één stap archiveren of verwijderen, omdat het factuurnummer dan al is gebruikt. Gebruik de annulerings- of creditnotaflow voor een definitieve factuur die niet meer betaald hoeft te worden.
 
 ## Facturen van andere MyCompanyDesk-gebruikers ontvangen
 

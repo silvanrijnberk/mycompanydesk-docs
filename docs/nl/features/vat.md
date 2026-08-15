@@ -115,7 +115,9 @@ Een samenvattingsbalk bovenaan de BTW-pagina toont hoeveel periodes vergrendeld 
 
 De indienstatus wordt per exact tijdvak bijgehouden, niet op basis van overlap. Een ingediend jaar maakt de vier kwartalen niet automatisch ingediend, en een ingediend kwartaal maakt de maanden daarin niet automatisch ingediend. Vergrendeling geldt wel voor de hele periode, dus een jaarslot beschermt nog steeds elk kwartaal.
 
-Een factuur of uitgave in een vergrendelde periode bewerken wordt in het formulier geblokkeerd: de financiële velden worden alleen-lezen (notities blijven bewerkbaar) en het formulier biedt een correctiepad, zoals een correctie in de huidige open periode of een correctiefactuur.
+**Indientiming en correcties.** Je kunt een periode pas aangeven nadat hij is afgelopen. Als je toch probeert in te dienen terwijl de laatste dag van de periode nog niet is verstreken, toont de app een foutmelding met de vraag te wachten tot de periode voorbij is. Een periode kan maar één keer als ingediend worden gemarkeerd; als hij al als ingediend staat, kun je niet opnieuw indienen vanuit de BTW-pagina. Corrigeer een ingediende periode via een correctie of suppletie in een open periode. Op het tabblad Aangifte zie je welke periodes nog open zijn en welke al ingediend.
+
+Een factuur of uitgave in een vergrendelde periode bewerken wordt in het formulier geblokkeerd: de financiële velden worden alleen-lezen (notities blijven bewerkbaar) en het formulier biedt een correctiepad, zoals een correctie in de huidige open periode of een correctiefactuur. Dezelfde beveiliging geldt bij het boeken van een banktransactie of het markeren van een uitgave als betaald: als de transactie in een vergrendelde periode valt, blokkeert de app het en wijst je naar een correctie in de huidige open periode.
 
 ## KOR
 

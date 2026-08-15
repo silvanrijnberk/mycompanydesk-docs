@@ -1,5 +1,6 @@
 ---
 title: Peppol e-invoicing
+last_verified: 2026-08-15
 ---
 
 # Peppol e-invoicing
@@ -83,7 +84,7 @@ Once enabled, incoming e-invoices arrive automatically as draft expenses. There 
 
 ### Reviewing received e-invoices
 
-Each e-invoice lands as a draft expense under **Expenses**. The draft is prefilled with the supplier, description, amount, VAT and invoice date from the incoming e-invoice. Review the details, attach a receipt if needed, and save it as a regular expense.
+Each e-invoice lands as a draft expense under **Expenses**. The draft is prefilled with the supplier, description, amount, VAT and invoice date from the incoming e-invoice. When the supplier applied reverse-charge VAT, MyCompanyDesk classifies it as reverse-charge and leaves the VAT rate at 0 % so it lands in the correct rubriek of your VAT return. Review the details, attach a receipt if needed, and save it as a regular expense.
 
 ### Disabling receiving
 
