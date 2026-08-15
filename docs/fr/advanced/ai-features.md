@@ -70,6 +70,7 @@ L'IA peut suggerer des descriptions plus claires et plus professionnelles pour :
 2. Surveillez l'indicateur de suggestion IA
 3. Examinez la suggestion
 4. Cliquez sur **Appliquer** pour l'utiliser, ou sur **Ignorer** pour passer
+5. Si la categorie suggeree a ete archivee ou supprimee entre-temps, MyCompanyDesk affiche le message *"Deze suggestie wijst naar een categorie die niet meer actief is."* (neerlandais, car les codes backend sont actuellement renvoyes en neerlandais). Vous pouvez choisir la categorie vous-meme dans le formulaire ou la reactiver sous **Parametres > Categories de depenses**.
 
 ::: info
 Les suggestions IA necessitent le plan **Starter** ou superieur. Activez-les via **Entreprise > Fonctionnalites**.

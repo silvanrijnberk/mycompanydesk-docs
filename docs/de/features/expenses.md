@@ -68,6 +68,8 @@ Belegscanner erfordert den **Pro**-Tarif oder hoher. Der USt.-Satz einer neuen A
 
 Wenn eine weitergeleitete E-Mail oder ein Scan zwar eine Ausgabe erzeugt, der Beleg selbst aber nicht angehängt werden kann (zum Beispiel ein nicht unterstützter Dateityp oder eine zu große Datei), wird die Ausgabe dennoch erstellt und mit einem Hinweis versehen, dass der Anhang fehlt. Laden Sie den Beleg anschließend manuell auf der Detailseite der Ausgabe hoch.
 
+Wenn Sie einen gescannten Beleg als Ausgabe in einer gesperrten MwSt.-Periode bestätigen, zeigt der Scanner eine niederländische `PERIOD_LOCKED`-Meldung anstelle eines rohen Backend-Fehlers. Der Scan-Dialog behält die extrahierten Daten bei, damit Sie die Ausgabe mit einem Datum in einer offenen Periode neu buchen oder zuerst eine ergänzende Abgabe einreichen können.
+
 ### Gesperrte MwSt.-Perioden
 
 Wenn eine Posteingangsnachricht in eine Ausgabe mit einem Datum innerhalb einer bereits angegebenen MwSt.-Periode umgewandelt wird, wird die automatische Buchung abgelehnt, um die eingereichte Voranmeldung zu schützen. Statt die Rechnung stillschweigend zu verwerfen, erstellt MyCompanyDesk eine `inbox_expense_period_locked`-Benachrichtigung, die Lieferanten und Rechnungsdatum nennt und darauf hinweist, dass die MwSt.-Periode gesperrt ist. Die Benachrichtigung führt Sie zur Posteingangsliste, damit Sie die weitergeleitete Rechnung dort finden. Sie haben dann dieselben zwei Optionen wie bei anderen gesperrten Perioden: buchen Sie die Ausgabe manuell mit einem Datum in der aktuell offenen Periode, oder reichen Sie eine ergänzende MwSt.-Voranmeldung für die gesperrte Periode ein.
@@ -109,7 +111,7 @@ In Sonderfällen legst du die USt.-Behandlung für die Ausgabe fest:
 - **Befreit**: die Leistung ist von der USt. befreit.
 - **Ausländische USt. in Rechnung gestellt**: ausländische USt., die eventuell über das EU-Erstattungsverfahren zurückzuholen ist.
 
-Die Behandlung wird normalerweise aus der Kategorie übernommen. Du kannst sie pro Ausgabe überschreiben.
+Die Behandlung wird normalerweise aus der Kategorie übernommen. Du kannst sie pro Ausgabe überschreiben. Für gescannte Belege prüft MyCompanyDesk zusätzliche Signale aus dem Dokument (zum Beispiel, warum es 0 % USt. trug und ob es sich um eine Dienstleistung oder Ware handelte) und kombiniert diese mit dem Lieferantenland und dem Satz, um die richtige Behandlung vorzuschlagen. Wenn du bereits einen Lieferanten oder einen Betrag manuell eingegeben hast, haben diese Werte Vorrang.
 
 ### USt.-Betrag manuell
 

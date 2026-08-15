@@ -84,6 +84,8 @@ Als een inboxbericht wordt omgezet naar een uitgave met een datum in een BTW-per
 
 Als een doorgestuurde e-mail of een scan wel een uitgave oplevert, maar de bijbehorende bon niet meegevoegd kan worden (bijvoorbeeld een niet-ondersteund bestandstype of een te groot bestand), wordt de uitgave toch aangemaakt en krijgt hij een notitie dat de bijlage ontbreekt. Upload de bon daarna handmatig op de detailpagina van de uitgave.
 
+Als je een gescande bon bevestigt terwijl de uitgave in een vergrendelde BTW-periode valt, toont de scanner een Nederlandse `PERIOD_LOCKED`-melding in plaats van een ruwe backend-fout. De bonlade bewaart de geextraheerde gegevens, zodat je de uitgave opnieuw kunt boeken met een datum in een open periode of eerst een suppletieaangifte kunt indienen.
+
 ## BTW-afhandeling
 
 Elke uitgave kan een eigen BTW-tarief hebben. Veelgebruikte opties:
@@ -104,7 +106,7 @@ In speciale gevallen stel je de BTW-behandeling van de uitgave in:
 - **Vrijgesteld**: de levering is BTW-vrij.
 - **Buitenlandse BTW in rekening gebracht**: buitenlandse BTW die mogelijk via de EU-teruggaafprocedure terug te vragen is.
 
-De behandeling wordt meestal overgenomen uit de categorie. Je kunt hem per uitgave overschrijven.
+De behandeling wordt meestal overgenomen uit de categorie. Je kunt hem per uitgave overschrijven. Voor gescande bonnen controleert MyCompanyDesk extra signalen — bijvoorbeeld waarom het document 0% BTW droeg en of het om een dienst of goederen gaat — en gebruikt die samen met het leveranciersland en het tarief om de juiste behandeling voor te stellen. Wanneer je zelf al een leverancier of bedrag hebt ingevuld, blijven die handmatige waarden leidend.
 
 ### Handmatig BTW-bedrag
 
