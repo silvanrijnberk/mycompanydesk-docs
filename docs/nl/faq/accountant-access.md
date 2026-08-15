@@ -1,6 +1,6 @@
 ---
 title: "Boekhouder toegang geven"
-last_verified: 2026-08-06
+last_verified: 2026-08-15
 chatbot:
   triggers:
     - "accountant access"
@@ -40,7 +40,7 @@ Boekhoudertoegang is gratis op elk abonnement; er is geen Pro of teamplek voor n
 
 ## Automatisch aanleveren
 
-Nadat je boekhouder is gekoppeld, ga je naar **Instellingen → Toegang en boekhouder** en zet je automatisch doorsturen aan. MyCompanyDesk levert dan elk kwartaal een export met verkoopfacturen, uitgaven en een btw-overzicht in een formaat dat het pakket van je boekhouder inleest, zodat de cijfers niet handmatig hoeven te worden overgenomen. Je kiest zelf welke onderdelen worden meegestuurd en ziet in een log wat er is afgeleverd.
+Nadat je boekhouder is gekoppeld, ga je naar **Instellingen → Toegang en boekhouder** en zet je automatisch doorsturen aan. MyCompanyDesk kan dan een export aan je boekhouder leveren met verkoopfacturen, uitgaven en geaccepteerde offertes in een formaat dat het pakket van je boekhouder inleest, zodat de cijfers niet handmatig hoeven te worden overgenomen. BTW-aangiftecijfers zitten niet in deze export; download die als CSV via **Belastingen → BTW-aangifte**. Je kiest zelf welke onderdelen worden meegestuurd en ziet in een log wat er is afgeleverd.
 
 ## Je boekhouder nodigt jou uit
 
