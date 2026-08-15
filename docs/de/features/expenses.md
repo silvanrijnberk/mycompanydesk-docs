@@ -1,5 +1,6 @@
 ---
 title: Ausgaben
+last_verified: 2026-08-15
 ---
 
 # Ausgaben

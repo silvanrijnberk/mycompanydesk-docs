@@ -29,6 +29,10 @@ La carte lit et ecrit sur `/api/team/accountant-delivery`. Chaque membre de l'es
 
 Le rythme par defaut pour la plupart des cabinets est hebdomadaire le lundi, car un seul e-mail regroupe est plus facile a traiter qu'un message par piece.
 
+### Déductibilité dans l'export
+
+Le détail des dépenses dans l'export transféré contient le nom de la catégorie et la déductibilité réelle utilisée par la déclaration de TVA : le pourcentage de déduction de la catégorie et le montant de TVA déductible. Cela remplace l'ancienne colonne « Déductible » Oui/Non, de sorte que le détail par ligne et le récapitulatif TVA dans le même export s'accordent.
+
 ### Obligation de justificatif
 
 Quand **Uniquement les depenses avec justificatif** est active, les depenses sans justificatif ne sont pas transmises. Elles restent dans l'espace de travail et le nombre est indique dans l'e-mail de transmission, pour que vous sachiez ce qui manque encore. Votre comptable a besoin du justificatif pour recuperer la TVA, donc ce commutateur empeche les pieces incompletes de quitter l'espace de travail.

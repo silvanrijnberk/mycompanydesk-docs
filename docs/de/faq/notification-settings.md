@@ -23,7 +23,7 @@ So verwalten Sie Ihre Benachrichtigungseinstellungen:
 2. Schalten Sie die Benachrichtigungsthemen ein oder aus. Die Kategorien sind:
    - **Rechnungen, die Ihre Aufmerksamkeit brauchen**: überfällige Rechnungen, Rechnungen, die bald fällig sind, unbearbeitete Entwürfe, fehlgeschlagene Lastschriften und Stunden ohne Tarif.
    - **Zahlungseingang**: Zahlungen, bestätigte Zahlungen und auffällige Banktransaktionen.
-   - **Anstehende Fristen**: MwSt., Einkommensteuer, Körperschaftsteuer, die Kleinunternehmer-Grenze, und auslaufende Verträge oder Projekte. Sie erhalten sie rechtzeitig vorab, damit Sie nie zu spät sind.
+   - **Anstehende Fristen**: MwSt., Einkommensteuer, Körperschaftsteuer, die Kleinunternehmer-Grenze, und auslaufende Verträge oder Projekte. Sie erhalten sie rechtzeitig vorab, damit Sie nie zu spät sind. Diese Kategorie umfasst auch automatische Buchungen, die nicht vorgenommen werden konnten, weil das Datum in einen bereits abgegebenen und gesperrten Mehrwertsteuerzeitraum fällt, zum Beispiel eine weitergeleitete Posteingangsrechnung oder eine Banktransaktion. Die Benachrichtigung nennt den Lieferanten und das Rechnungsdatum und verweist Sie auf den Posteingang oder den Bank-Feed, damit Sie die Ausgabe im aktuellen Zeitraum buchen oder eine ergänzende Erklärung einreichen können.
    - **Neue Chancen**: Angebotsanfragen, unterschriebene Angebote und Verkäufe über Ihre Website.
    - **Neue Nachricht im Posteingang**: ein Signal auf Ihrem Telefon, sobald ein Kunde oder Lieferant mailt.
    - **Ausgabe fällig**: anstehende Fälligkeitstermine von Ausgaben, die Sie angelegt haben, wie z. B. geplante Miete oder Nebenkosten, damit Sie sie rechtzeitig bezahlen oder erfassen können.

@@ -1,5 +1,6 @@
 ---
 title: Tableau de bord
+last_verified: 2026-08-15
 ---
 
 # Tableau de bord

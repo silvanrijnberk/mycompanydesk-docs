@@ -29,6 +29,10 @@ Die Karte liest aus und schreibt auf `/api/team/accountant-delivery`. Jedes Arbe
 
 Der Standardrhythmus fuer die meisten Bueros ist woechentlich am Montag, weil eine gebundelte E-Mail einfacher zu verarbeiten ist als einzelne Nachrichten pro Beleg.
 
+### Abzugsfaehigkeit im Export
+
+Die Ausgabendetails in der weitergeleiteten Exportdatei enthalten den Kategorienamen und die tatsaechliche Abzugsfaehigkeit, die die MwSt.-Voranmeldung anwendet: den Abzugsprozentsatz der Kategorie und den abzugsfaehigen MwSt.-Betrag. Dies ersetzt die aeltere Spalte "Abzugsfaehig" mit Ja/Nein, sodass Zeilendetails und MwSt.-Zusammenfassung im selben Export uebereinstimmen.
+
 ### Belegpflicht
 
 Wenn **Nur Ausgaben mit Beleg** aktiv ist, werden Ausgaben ohne Beleg nicht weitergeleitet. Sie bleiben im Arbeitsbereich, und die Anzahl wird in der Weiterleitungs-E-Mail ausgewiesen, damit Sie wissen, was noch fehlt. Ihr Steuerberater braucht den Beleg, um die USt. zurueckzufordern, sodass mit diesem Schalter keine unvollstaendigen Unterlagen den Arbeitsbereich verlassen.

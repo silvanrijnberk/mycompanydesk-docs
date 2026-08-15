@@ -1,5 +1,6 @@
 ---
 title: Dashboard
+last_verified: 2026-08-15
 ---
 
 # Dashboard
@@ -50,15 +51,6 @@ Die vier Zellen der Pulse-Zeile ersetzen die alten Geldkacheln und den KPI-Heade
 | **Umsatz** | Umsatz dieses Monats mit Prozent gegenueber Vormonat, plus Jahr-bis-Datum |
 | **Forderungen** | Gesamtsumme ausstehend, Anzahl ueberfaellig, und durchschnittliche Zahlungsfrist |
 | **USt.** | Saldo (Rueckerstattung oder Zahlung), Frist und Steuerreserve |
-
-## Gewinn und Steuerruecklage
-
-Das Dashboard haelt zwei unterschiedliche Betrachtungen von Ausgaben bewusst auseinander:
-
-- Die **Umsatz**- und **Ausgabentotale** in der Pulse-Zeile zeigen die Geldbewegung fuer den Zeitraum: Betraege inklusive Mehrwertsteuer und inklusive Ausgaben, die noch in Ueberpruefung stehen.
-- Die Karten **Nettogewinn** und **Geschaetzte Steuerruecklage** verwenden stattdessen eine GuV-Sicht. Hier werden Ausgaben ohne Mehrwertsteuer gezaehlt, Investitionen ueber ihren Abschreibungsplan verteilt anstatt sofort als Kosten erfasst, und Bank- oder Posteingangs-Entwuerfe, die noch in Ueberpruefung stehen, ausgeschlossen, weil sie noch nicht in der Buchhaltung stehen.
-
-Dadurch weichen die Gewinnkarte und die Steuerruecklage vom einfachen Umsatz minus Geld heraus-Zahl ab. Die Aufteilung sorgt dafuer, dass der Dashboard-Gewinn mit dem GuV-Bericht uebereinstimmt, sodass eine grosse Investition in einem Monat einen gewinnbringenden Monat nicht als Verlust erscheinen laesst und die Steuerruecklage ueber den realen Gewinn statt ueber den Cashflow geschaetzt wird.
 
 ## Gewinn und Steuerrücklage
 
