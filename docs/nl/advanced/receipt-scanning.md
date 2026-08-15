@@ -21,6 +21,10 @@ In plaats van elke uitgave handmatig in te voeren, maak je een foto van een bon 
 <!-- TODO(source-missing): de effectieve PDF-limiet voor het inline scanpad is nu 15 MB in de scannercode en locale strings, terwijl deze pagina nog 50 MB vermeldt. Controleer in sources/ voor een update. -->
 - **Maximale bestandsgrootte** — 50MB
 
+::: tip Bestandsgrootte
+De scanner accepteert bestanden tot 50 MB, maar de bon die aan de aangemaakte uitgave wordt gekoppeld mag maximaal 10 MB zijn. Als je een groter bestand scant, wordt de uitgave wel aangemaakt, maar de bon wordt niet meegevoegd en er verschijnt een waarschuwing. Je kunt de bon daarna handmatig aan de uitgave toevoegen, of voor het scannen een kleiner bestand gebruiken.
+:::
+
 ## Een bon scannen
 
 1. Ga naar **Uitgaven > Bon scannen**

@@ -58,6 +58,10 @@ Het klantportaal gebruikt je bedrijfshuisstijl:
 
 Dit creëert een professionele, consistente ervaring voor je klanten.
 
+## Bevroren factuurkopie
+
+De factuurweergave en PDF-download worden weergegeven op basis van een momentopname die bij het versturen wordt gemaakt. Die momentopname bevriest je bedrijfsgegevens, klantgegevens, documenttaal en huisstijl zoals die op dat moment waren. Klanten zien de factuur daarom precies zoals hij verstuurd is, ook als je later instellingen of het klantrecord wijzigt. Conceptfacturen hebben nog geen momentopname en worden met actuele gegevens weergegeven.
+
 ## Toegangsbeveiliging
 
 Elke portaallink is:

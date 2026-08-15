@@ -21,6 +21,10 @@ Anstatt jede Ausgabe manuell einzugeben, fotografieren Sie einen Beleg oder lade
 <!-- TODO(source-missing): die effektive PDF-Grenze für den Inline-Scan-Pfad liegt im Scannercode und in den Locale-Strings jetzt bei 15 MB, während diese Seite noch 50 MB angibt. Vor einer Aktualisierung in sources/ prüfen. -->
 - **Maximale Dateigröße** — 50MB
 
+::: tip Hinweis zur Dateigröße
+Der Scanner akzeptiert Dateien bis 50 MB, aber der an die erstellte Ausgabe angehängte Beleg ist auf 10 MB begrenzt. Wenn Sie eine größere Datei scannen, wird die Ausgabe dennoch erstellt, der Beleg aber nicht angehängt; eine Warnung weist Sie darauf hin. Laden Sie anschließend eine kleinere Datei auf der Ausgabe hoch, oder verkleinern Sie das Original vor dem Scan.
+:::
+
 ## So scannen Sie einen Beleg
 
 1. Gehen Sie zu **Ausgaben > Beleg scannen**

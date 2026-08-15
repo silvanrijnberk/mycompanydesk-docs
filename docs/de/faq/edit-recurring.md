@@ -1,6 +1,6 @@
 ---
 title: "Edit a recurring invoice"
-last_verified: 2026-05-09
+last_verified: 2026-08-15
 chatbot:
   triggers:
     - "edit recurring"
@@ -25,3 +25,7 @@ So bearbeitest du ein wiederkehrendes Element:
 3. Klicke auf „Bearbeiten"
 4. Ändere Betrag, Frequenz, Kunde oder Positionen
 5. Speichere - zukünftige Generierungen verwenden die aktualisierte Vorlage
+
+Hinweis: Änderungen wirken sich nur auf zukünftige Rechnungen/Ausgaben aus. Bereits erzeugte Einträge bleiben unverändert.
+
+Hinweis: Wenn Sie das Startdatum ändern, bevor der erste Eintrag erzeugt wurde, verschiebt sich das nächste geplante Datum mit. Sobald der erste Eintrag erzeugt wurde, verschiebt eine Änderung des Startdatums den Zeitplan nicht mehr.

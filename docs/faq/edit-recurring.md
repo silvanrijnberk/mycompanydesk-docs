@@ -1,6 +1,6 @@
 ---
 title: "Edit a recurring invoice"
-last_verified: 2026-05-09
+last_verified: 2026-08-15
 chatbot:
   triggers:
     - "edit recurring"
@@ -27,3 +27,5 @@ To edit a recurring invoice or expense:
 5. Save - future generations will use the updated template
 
 Note: Changes only affect future invoices/expenses. Previously generated items remain unchanged.
+
+Note: If you change the start date before the first item has been generated, the next scheduled date moves with it. Once the first item has been generated, the start date no longer shifts the schedule.

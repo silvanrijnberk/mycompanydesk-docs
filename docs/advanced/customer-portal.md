@@ -58,6 +58,10 @@ The customer portal uses your company branding:
 
 This creates a professional, consistent experience for your customers.
 
+## Frozen invoice copy
+
+The invoice view and PDF download are rendered from a snapshot taken when the invoice is sent. That snapshot freezes your company details, customer details, document language, and branding as they were at send time. Customers therefore see the invoice exactly as it was sent, even if you later update your workspace settings or the customer record. Drafts do not have a snapshot yet, so they render with live details.
+
 ## Access security
 
 Each portal link is:
