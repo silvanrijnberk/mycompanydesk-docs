@@ -62,7 +62,7 @@ Les lignes de facture sont décrites automatiquement : d'abord la description de
 
 ### Facturation automatique du temps
 
-La facturation automatique se configure par client. Sur la page du client, activez **Facturation auto** pour créer automatiquement chaque mois une facture pour les heures enregistrées de ce client, avec envoi automatique en option. La facture est créée en brouillon et reste ouverte, afin que vous puissiez la relire avant son envoi.
+La facturation automatique se configure par client. Sur la page du client, activez **Facturation auto** pour créer automatiquement chaque mois une facture pour les heures enregistrées de ce client, avec envoi automatique en option. La facture est créée en brouillon et reste ouverte, afin que vous puissiez la relire avant son envoi. Elle utilise le taux de TVA par défaut de votre espace de travail et respecte vos paramètres KOR ou d'exemption de TVA, comme les factures créées manuellement.
 
 ## Actions groupées
 
