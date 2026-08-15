@@ -70,6 +70,7 @@ KI kann klarere, professionellere Beschreibungen vorschlagen fur:
 2. Achten Sie auf die KI-Vorschlagsanzeige
 3. Prufen Sie den Vorschlag
 4. Klicken Sie auf **Ubernehmen**, um ihn zu verwenden, oder auf **Ignorieren**, um ihn zu uberspringen
+5. Wurde die vorgeschlagene Kategorie inzwischen archiviert oder geloscht, zeigt MyCompanyDesk die Meldung *"Deze suggestie wijst naar een categorie die niet meer actief is."* (Niederlandisch, weil Backend-Codes derzeit auf Niederlandisch zuruckgegeben werden). Sie konnen die Kategorie im Formular selbst wahlen oder unter **Einstellungen > Ausgabenkategorien** wieder aktivieren.
 
 ::: info
 KI-Vorschlage erfordern den **Starter**-Tarif oder hoher. Aktivieren Sie sie unter **Unternehmen > Funktionen**.

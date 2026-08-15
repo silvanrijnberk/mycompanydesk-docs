@@ -71,6 +71,8 @@ If an inbox message is converted into an expense with a date inside a VAT period
 
 When a forwarded email or a scan produces an expense but the receipt file itself cannot be attached (for example, an unsupported file type or a file over the limit), the expense is still created and a note is added to it telling you that the attachment is missing. Upload the receipt manually on the expense detail page when that happens.
 
+When you confirm a scanned receipt into an expense dated in a locked VAT period, the scanner shows a Dutch `PERIOD_LOCKED` message instead of a raw backend error. The scan drawer keeps the extracted details, so you can rebook the expense with a date in an open period or file a supplementary return first.
+
 ## VAT treatment
 
 Every expense has a `vat_treatment` field that decides how it lands on your VAT return:
@@ -83,7 +85,7 @@ Every expense has a `vat_treatment` field that decides how it lands on your VAT 
 | `vat_exempt` | The supply is exempt from VAT. |
 | `foreign_vat_charged` | A non-EU supplier charged you VAT (typically reclaimable through the EU refund procedure). |
 
-The treatment is normally inherited from the category default. Override it on a per-expense basis when reality differs - for example, a Software-category expense from a US vendor that did charge VAT instead of applying the EU reverse-charge default.
+The treatment is normally inherited from the category default. Override it on a per-expense basis when reality differs - for example, a Software-category expense from a US vendor that did charge VAT instead of applying the EU reverse-charge default. For scanned receipts, MyCompanyDesk checks extra signals from the document (such as why it carried 0% VAT and whether it was a service or goods) and combines those with the supplier country and rate to propose the right treatment. If you already entered a supplier or amount manually, those values take precedence.
 
 ### Manual VAT amount
 

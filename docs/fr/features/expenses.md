@@ -68,6 +68,8 @@ La numerisation de recus necessite le plan **Pro** ou superieur. Le taux de TVA 
 
 Si un e-mail transféré ou un scan crée une dépense mais que le reçu ne peut pas être joint (par exemple un type de fichier non pris en charge ou un fichier trop volumineux), la dépense est quand même créée et un message indique que la pièce jointe est manquante. Ajoutez ensuite le reçu manuellement sur la page de détail de la dépense.
 
+Si vous confirmez un reçu scanné en une dépense dont la date tombe dans une période de TVA verrouillée, le scanner affiche un message `PERIOD_LOCKED` en néerlandais au lieu d'une erreur brute du backend. Le tiroir de numérisation conserve les données extraites, pour que vous puissiez enregistrer la dépense avec une date dans une période ouverte ou déposer une déclaration complémentaire au préalable.
+
 ### Périodes de TVA verrouillées
 
 Si un message de la boîte de réception est converti en une dépense dont la date tombe dans une période de TVA déjà déclarée, l'enregistrement automatique est refusé pour protéger la déclaration déposée. Au lieu de supprimer silencieusement la facture, MyCompanyDesk crée une notification `inbox_expense_period_locked` qui indique le fournisseur et la date de la facture, et précise que la période de TVA est verrouillée. La notification renvoie vers la liste de la boîte de réception, afin que vous puissiez y retrouver la facture transmise. Vous avez ensuite les deux mêmes options que pour les autres cas de période verrouillée : enregistrer la dépense manuellement avec une date dans la période ouverte en cours, ou déposer une déclaration complémentaire pour la période verrouillée.
@@ -109,7 +111,7 @@ Dans des cas particuliers, vous définissez le traitement de la TVA de la dépen
 - **Exonéré**: la livraison est exonérée de TVA.
 - **TVA étrangère facturée**: TVA étrangère éventuellement récupérable via la procédure de remboursement de l'UE.
 
-Le traitement est normalement hérité de la catégorie. Vous pouvez le remplacer par dépense.
+Le traitement est normalement hérité de la catégorie. Vous pouvez le remplacer par dépense. Pour les reçus numérisés, MyCompanyDesk vérifie des signaux supplémentaires extraits du document (par exemple pourquoi il portait 0 % de TVA et s'il s'agissait d'un service ou de biens) et les combine avec le pays fournisseur et le taux pour proposer le bon traitement. Si vous avez déjà saisi un fournisseur ou un montant manuellement, ces valeurs ont la priorité.
 
 ### Montant de TVA manuel
 

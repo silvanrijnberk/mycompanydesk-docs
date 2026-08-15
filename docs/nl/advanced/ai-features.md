@@ -70,6 +70,7 @@ AI kan duidelijkere, professionelere omschrijvingen suggereren voor:
 2. Zoek naar de AI-suggestie-indicator
 3. Bekijk de suggestie
 4. Klik op **Toepassen** om deze te gebruiken, of **Negeren** om over te slaan
+5. Is de voorgestelde categorie ondertussen gearchiveerd of verwijderd, dan toont MyCompanyDesk de melding *"Deze suggestie wijst naar een categorie die niet meer actief is. Kies de categorie zelf of maak hem opnieuw aan bij Instellingen."* Je kunt de categorie zelf kiezen in het formulier of de categorie opnieuw activeren onder **Instellingen > Uitgavencategorieën**.
 
 ::: info
 AI-suggesties vereisen het **Starter**-abonnement of hoger. Schakel ze in via **Bedrijf > Functies**.
