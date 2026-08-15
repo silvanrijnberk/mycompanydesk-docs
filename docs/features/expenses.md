@@ -37,7 +37,7 @@ The setup wizard seeds an industry-tailored set on top of the eleven system defa
 2. Type the **supplier** name. The supplier autocomplete suggests previously-used vendors as you type.
 3. Pick a **category**. The form pulls the category's default VAT treatment, default VAT rate hint and deduction percentage straight into the matching fields. If a workspace-wide default expense category is set under workspace settings, it is pre-filled here.
 4. Fill in the **description**, **amount excl. VAT**, **VAT rate** and **date**. The VAT rate and the **payment method** are pre-filled from your workspace defaults (set under workspace settings as "Standard VAT rate expenses", default expense category and default payment method). The VAT amount is calculated automatically; you can also enter the inclusive amount and let the form back out the components.
-5. Optionally set the **VAT treatment** (overrides the category default), **customer**, **project**, **reference** and **notes**. The pre-filled category and payment method can be overridden on a per-expense basis.
+5. Optionally set the **VAT treatment** (overrides the category default), **customer**, **project** and **notes**. The pre-filled category and payment method can be overridden on a per-expense basis.
 6. Optionally attach a **receipt**.
 7. Click **Save**.
 

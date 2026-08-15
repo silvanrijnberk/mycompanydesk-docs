@@ -380,6 +380,10 @@ In de **Stijl**-tab bepaal je de look-and-feel van je hele site:
 - **Favicon**: Upload een favicon voor je site. Deze verschijnt in browsertabs en bladwijzers. Als je geen favicon instelt, gebruikt de site je lichte logo, en daarna je bedrijfsprofielfoto.
 - **Head-snippets**: Voeg analytics-scripts toe (Plausible, Umami, Matomo) of lettertype-preconnects via de snippetkiezer.
 
+### Logo importeren
+
+Als je al een logo op je website hebt staan, kun je dat direct in MyCompanyDesk importeren. In de **Stijl**-tab vind je de optie om een logo te importeren: voer de URL in van de pagina waar je logo op staat. MyCompanyDesk haalt de pagina op, selecteert het beste beschikbare logo en maakt zowel een lichte als een donkere versie voor je site. Na het importeren kun je beide versies nog steeds apart vervangen of aanpassen in de stijlinstellingen.
+
 Wijzigingen in de Stijl-tab worden automatisch opgeslagen bij bewerken en gelden voor alle pagina's.
 
 ## Publiceren

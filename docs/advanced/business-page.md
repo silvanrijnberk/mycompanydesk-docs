@@ -380,6 +380,10 @@ In the **Style** tab, you control the look and feel of your entire site:
 - **Favicon**: Upload a favicon for your site. It is shown in browser tabs and bookmarks. If not set, the site falls back to your light logo, then your business profile picture.
 - **Head snippets**: Add analytics scripts (Plausible, Umami, Matomo) or font preconnects via the snippet picker.
 
+### Logo import
+
+If you already have a logo on your website, you can import it directly into MyCompanyDesk. In the **Style** tab, look for the logo import option and enter the URL of the page that contains your logo. MyCompanyDesk fetches the page, extracts the best available logo, and creates both a light and a dark version for your site. After import you can still replace or adjust each version separately in the style settings.
+
 Changes in the Style tab are saved automatically on edit and apply to all pages.
 
 ## Publishing
