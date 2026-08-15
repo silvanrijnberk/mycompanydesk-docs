@@ -70,6 +70,8 @@ Een tabel die het aangifteformulier van de Belastingdienst spiegelt:
 
 Elke rij toont de omzet (excl.) en het BTW-bedrag. De balk onderaan toont het totaal te betalen of terug te ontvangen. Correcties die buiten het formulier vallen krijgen eigen regels: een gewone boekingscorrectie staat als **Correctie**, terwijl een vermindering onder de oude KOR-regeling staat als **Vermindering volgens de oude KOR**. De BTW-samenvattings-CSV toont een bijpassende correctieregel wanneer deze bedragen niet nul zijn, zodat saldo, ontvangen en betaalde BTW op elkaar aansluiten. De BTW-saldokolom in het jaaroverzicht gebruikt hetzelfde netto-BTW-totaal als het rubriekenoverzicht, zodat de regels optellen tot datzelfde totaal.
 
+Bij een handmatige correctie vul je een positief bedrag in en kies je een richting (BTW af te dragen of BTW terug te vorderen). Negatieve bedragen worden geweigerd en het formulier toont een foutmelding die je vraagt de richting te kiezen; de richting bepaalt of de correctie het periodetotaal verhoogt of verlaagt.
+
 Rubriek 4a is voor verlegde-BTW-aankopen van leveranciers buiten de EU (`import_reverse_charge`); rubriek 4b is voor verlegde aankopen van EU-leveranciers (`b2b_reverse_charge`). MyCompanyDesk bepaalt aan de hand van het leveranciersland de juiste rubriek, zodat het totaal in 5a klopt.
 
 ### Exporteren voor de boekhouder
@@ -110,7 +112,7 @@ Een samenvattingsbalk bovenaan de BTW-pagina toont hoeveel periodes vergrendeld 
 
 - **Automatisch vergrendelen**: zodra de aangiftedeadline van een periode is verstreken, vergrendelt MyCompanyDesk die periode automatisch, zodat je boekhouding gelijk blijft aan de aangifte die je hebt ingediend.
 - **Handmatig vergrendelen**: met periodechips vergrendel je zelf elke afgelopen periode van het gekozen jaar, bijvoorbeeld direct na vroeg indienen. Bij een periode die nog loopt krijg je eerst een extra waarschuwing.
-- **Markeren als ingediend**: markeer een vergrendelde periode als ingediend zodra je de aangifte hebt gedaan. Ingediende kwartalen tonen dit ook in de kwartaalstrook.
+- **Markeren als ingediend**: markeer een vergrendelde periode als ingediend zodra je de aangifte hebt gedaan. Wanneer je een BTW-deadlineherinnering opent in het notificatiepaneel, gebruikt de actie **Markeren als ingediend** de periode die in die herinnering staat, niet de datum van vandaag, zodat het juiste kwartaal of de juiste maand wordt bijgewerkt. Ingediende kwartalen tonen dit ook in de kwartaalstrook.
 - **Tijdelijk ontgrendelen**: moet je iets herstellen? Ontgrendel een periode tijdelijk (72 uur); daarna vergrendelt hij vanzelf weer, of vergrendel zelf eerder opnieuw. Een vergrendeling helemaal verwijderen kan alleen zolang de aangiftedeadline nog niet is verstreken.
 
 De indienstatus wordt per exact tijdvak bijgehouden, niet op basis van overlap. Een ingediend jaar maakt de vier kwartalen niet automatisch ingediend, en een ingediend kwartaal maakt de maanden daarin niet automatisch ingediend. Vergrendeling geldt wel voor de hele periode, dus een jaarslot beschermt nog steeds elk kwartaal.

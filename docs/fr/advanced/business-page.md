@@ -1,6 +1,6 @@
 ---
 title: Constructeur de site
-last_verified: 2026-08-10
+last_verified: 2026-08-15
 ---
 
 # Constructeur de site
@@ -366,6 +366,7 @@ Dans l'onglet **Style**, vous controlez l'apparence de l'ensemble de votre site 
 - **Couleurs**: Choisissez les couleurs de marque, d'accent, de papier, d'encre, de surface et attenuees. La palette est appliquee via des proprietes CSS personnalisees.
 - **Mode sombre**: Definit le comportement du site en affichage sombre. Trois options : **Desactive** (pas de mode sombre, le site reste sur le theme clair), **Bouton** (les visiteurs voient un bouton soleil/lune dans la navigation et peuvent changer de theme, leur choix est enregistre localement), ou **Suivre le systeme** (le site suit automatiquement la preference du visiteur au niveau du systeme d'exploitation via un ecouteur media-query en direct). Lorsque le mode sombre est actif, une palette sombre apparait, vous permettant de definir une version nocturne de chaque couleur. Si vous laissez la palette sombre vide, le site applique une inversion par defaut qui preserve vos couleurs de marque et d'accent.
 - **Typographie**: Choisissez les polices de titre, de corps et mono dans la bibliotheque integree (Geist, Inter, DM Sans, DM Serif Display, Fraunces, Instrument Serif, Geist Mono).
+- **Polices auto-hebergees**: Toutes les polices sont servies par MyCompanyDesk lui-meme, et non par Google Fonts ou un autre CDN tiers. Les memes fichiers de police sont utilises dans l'apercu de l'editeur et sur votre site publie, pour que la typographie soit identique partout et que les adresses IP des visiteurs restent sur votre domaine.
 - **Echelle**: Definissez le rayon des coins, la densite (compact, aere, genereux), la largeur maximale du contenu, l'espacement vertical des sections et le style des cartes. Le style des cartes determine comment les cartes de contenu s'affichent dans toutes les sections: **Plat** (pas de bordure), **Bordure** (par defaut, fine ligne), **Ombre** (ombre douce), **Eleve** (ombre forte), **Brut** (bordure epaisse avec ombre decaltee), **Ligne** (contour seul, sans remplissage) ou **Verre** (carte translucide givreee avec flou d'arriere-plan). Le verre est le plus efficace sur une photo, un degrade ou une bande decorative; sur un fond uni, il se degrade en une carte legerement teintee.
 - **Mouvement**: Activez le mouvement reduit ou choisissez un style de mouvement (Desactive, Fondu subtil, Glissement).
 - **Boutons**: Personnalisez le rayon, le remplissage et les effets de survol des boutons.

@@ -70,6 +70,8 @@ Eine Tabelle, die das Erklärungsformular der Belastingdienst spiegelt:
 
 Jede Zeile zeigt den Umsatz (exkl.) und den USt.-Betrag. Die Leiste unten zeigt die Summe, die zu zahlen oder zu erstatten ist. Korrekturen außerhalb des Formulars erscheinen auf eigenen Zeilen: eine allgemeine Buchungskorrektur wird als **Correctie** angezeigt, eine Minderung nach dem alten KOR-Schema als **Vermindering volgens de oude KOR**. Die USt.-Zusammenfassungs-CSV fügt eine passende Korrekturzeile hinzu, wenn diese Beträge ungleich null sind, sodass Saldo, vereinnahmte und gezahlte USt. zusammenpassen. Die USt.-Saldo-Spalte in der Jahresübersicht verwendet denselben Netto-USt.-Gesamtbetrag wie die Rubrieken-Übersicht, sodass die Zeilen auf denselben Wert summieren.
 
+Geben Sie bei einer manuellen Korrektur einen positiven Betrag ein und wählen Sie eine Richtung (USt. zu zahlen oder USt. zu erstatten). Negative Beträge werden abgelehnt und das Formular zeigt einen Fehler, der Sie auffordert, stattdessen die Richtung zu wählen; die Richtung bestimmt, ob die Korrektur den Zeitraumsaldo erhöht oder verringert.
+
 Rubrik 4a ist für Reverse-Charge-Einkäufe von Lieferanten außerhalb der EU (`import_reverse_charge`); Rubrik 4b ist für Reverse-Charge-Einkäufe von EU-Lieferanten (`b2b_reverse_charge`). MyCompanyDesk leitet anhand des Lieferantenlands die richtige Rubrik ab, damit die Summe in 5a stimmt.
 
 ### Exporte für die Buchhaltung
@@ -110,7 +112,7 @@ Eine Übersichtsleiste oben auf der USt.-Seite zeigt, wie viele Zeiträume gespe
 
 - **Automatisches Sperren**: Sobald die Abgabefrist eines Zeitraums verstrichen ist, sperrt MyCompanyDesk ihn automatisch, damit Ihre Buchhaltung zu der eingereichten Erklärung passt.
 - **Manuelles Sperren**: Über Zeitraumchips sperren Sie jeden vergangenen Zeitraum des gewählten Jahres selbst, etwa direkt nach einer frühen Abgabe. Bei einem noch laufenden Zeitraum erscheint zuerst eine zusätzliche Warnung.
-- **Als eingereicht markieren**: Kennzeichnen Sie einen gesperrten Zeitraum als eingereicht, sobald Sie die Erklärung abgegeben haben. Eingereichte Quartale zeigen das auch in der Quartalsleiste.
+- **Als eingereicht markieren**: Kennzeichnen Sie einen gesperrten Zeitraum als eingereicht, sobald Sie die Erklärung abgegeben haben. Wenn Sie eine USt.-Abgabe-Deadline-Erinnerung im Benachrichtigungsbereich öffnen, verwendet die Aktion **Als eingereicht markieren** den in dieser Erinnerung genannten Zeitraum statt des heutigen Datums, damit das richtige Quartal oder der richtige Monat aktualisiert wird. Eingereichte Quartale zeigen das auch in der Quartalsleiste.
 - **Vorübergehend entsperren**: Müssen Sie etwas korrigieren? Entsperren Sie einen Zeitraum vorübergehend (72 Stunden); danach sperrt er sich von selbst wieder, oder Sie sperren früher manuell. Eine Sperre ganz entfernen geht nur, solange die Abgabefrist noch nicht verstrichen ist.
 
 Der Einreichungsstatus wird für den genauen Zeitraum erfasst, nicht für enthaltene Unterzeiträume. Ein eingereichtes Jahr markiert nicht automatisch die einzelnen Quartale als eingereicht, und ein eingereichtes Quartal markiert nicht automatisch die darin enthaltenen Monate. Die Sperre gilt jedoch für den gesamten Zeitraum, sodass eine Jahressperre jedes Quartal schützt.
