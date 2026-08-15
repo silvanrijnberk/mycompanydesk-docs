@@ -18,4 +18,6 @@ Auch zugehörige Benachrichtigungen für die Rechnung, wie überfällig, Termin 
 
 Ist die Rechnung bereits ganz oder teilweise bezahlt, öffnen Sie die Originalrechnung und nutzen Sie stattdessen "Gutschrift / Korrektur erstellen".
 
+Stornieren ist etwas anderes als Löschen: beim Stornieren wechselt der Status zu Storniert, die Rechnung bleibt aber in der Liste sichtbar; beim Löschen durchläuft sie die Stufen Archiviert und Papierkorb, bevor sie endgültig gelöscht ist. Endgültiges Löschen in einem Schritt ist nur möglich, solange ein Dokument noch ein Entwurf ohne Nummer ist.
+
 Tipp: Beim Stornieren bleibt die Rechnungsnummer in Ihren Unterlagen erhalten; löschen können Sie ein Dokument nur, solange es noch ein Entwurf ohne Nummer ist.

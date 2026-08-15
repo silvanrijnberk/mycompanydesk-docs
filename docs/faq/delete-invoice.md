@@ -1,6 +1,6 @@
 ---
 title: "Delete an invoice"
-last_verified: 2026-05-09
+last_verified: 2026-08-15
 chatbot:
   triggers:
     - "delete invoice"
@@ -28,4 +28,6 @@ To delete an invoice:
 3. Click "Delete"
 4. Confirm the deletion
 
-Only draft invoices can be deleted. For sent or paid invoices, use Cancel so the record stays available in the invoice list.
+Only draft invoices can be deleted permanently in one step. For sent or paid invoices, each delete action moves the invoice one stage down: active becomes Archived, archived becomes Trash, and trash becomes permanently gone. Use Cancel if you want to keep the record visible in the invoice list.
+
+If you delete by mistake, check the Archive or Trash views and restore the invoice before it reaches the last stage.

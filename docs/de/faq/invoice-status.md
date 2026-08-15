@@ -1,6 +1,6 @@
 ---
 title: Invoice status
-last_verified: 2026-05-09
+last_verified: 2026-08-15
 chatbot:
   triggers: ["invoice status", "invoice statuses", "what do invoice statuses mean", "draft sent paid", "invoice lifecycle", "factuurstatus", "factuur statussen", "rechnungsstatus", "statut facture"]
   actions:
@@ -13,3 +13,7 @@ Rechnungsstatus erklärt:
 • Bezahlt - Zahlung erhalten und bestätigt
 • Überfällig - Fälligkeitsdatum überschritten, noch nicht bezahlt
 • Storniert - ungültig, nicht mehr aktiv
+
+Löschen erfolgt in Stufen: aus aktiv wird Archiviert, aus Archiviert wird Papierkorb, und aus dem Papierkorb wird endgültig gelöscht. Sie können die Rechnung aus dem Archiv oder dem Papierkorb wiederherstellen, solange sie nicht endgültig gelöscht ist. Stornieren ist anders: damit markieren Sie eine gesendete oder bezahlte Rechnung als storniert, sie bleibt aber in der Liste sichtbar.
+
+Tipp: Nutzen Sie die Statusfilter, um zuerst Offen und Überfällig zu sehen.
