@@ -1,6 +1,6 @@
 ---
 title: "Import data"
-last_verified: 2026-07-02
+last_verified: 2026-08-15
 chatbot:
   triggers:
     - "import data"
@@ -29,5 +29,7 @@ The import page lives at `/profile/import`. There is no menu entry for it, so op
 3. Match the columns of your file to the right fields and confirm the preview
 
 There is no template CSV to download; the import works with the columns of your own file and lets you map them during the upload.
+
+For expenses, CSV files written in Dutch formats are parsed the way a Dutch bookkeeper writes them. Amount cells such as 100,50 or 1.234,56 are recognized, and dates in dd-mm-yyyy order are read as day-month-year. This matches the number fields in the web app, so what you type and what you import use the same rules.
 
 Tip: Start with a small test import to verify the mapping before importing large datasets.

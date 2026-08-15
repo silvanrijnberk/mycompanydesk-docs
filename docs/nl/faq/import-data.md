@@ -1,6 +1,6 @@
 ---
 title: "Gegevens importeren"
-last_verified: 2026-07-02
+last_verified: 2026-08-15
 chatbot:
   triggers:
     - "import data"
@@ -29,5 +29,7 @@ De importpagina staat op `/profile/import`. Er is geen menu-ingang voor, dus ope
 3. Koppel de kolommen van je bestand aan de juiste velden en bevestig de preview
 
 Er is geen CSV-sjabloon om te downloaden; de import werkt met de kolommen van je eigen bestand en laat je die tijdens het uploaden koppelen.
+
+Voor uitgaven worden CSV-bestanden in Nederlandse notatie herkend. Bedragen als 100,50 of 1.234,56 en datums in dd-mm-jjjj-volgorde worden als dag-maand-jaar gelezen. Dat werkt net zoals de bedragsvelden in de web-app, dus typen en importeren volgen dezelfde regels.
 
 Tip: begin met een kleine testimport om de koppeling te controleren voordat je grotere datasets importeert.

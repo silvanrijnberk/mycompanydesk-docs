@@ -12,6 +12,7 @@ Invoice statuses explained:
 • Open - finalized but not sent/paid yet
 • Sent - delivered to the customer, awaiting payment
 • Overdue - due date passed and still unpaid
+• Needs verification - the customer reported payment through the portal; confirm or reject it before the status moves to Paid
 • Paid - payment recorded
 • Canceled - voided and no longer collectible
 

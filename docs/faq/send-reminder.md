@@ -1,6 +1,6 @@
 ---
 title: Send reminder
-last_verified: 2026-08-14
+last_verified: 2026-08-15
 chatbot:
   triggers: ["send reminder", "payment reminder", "remind customer", "follow up", "chase payment", "herinnering sturen", "betaalherinnering", "aanmaning", "zahlungserinnerung", "relance", "rappel paiement"]
   actions:
@@ -19,6 +19,7 @@ You cannot send a reminder when:
 - the invoice is still a draft
 - the invoice has been canceled
 - the invoice is already marked as paid
+- the invoice is waiting for payment verification because the customer reported it as paid through the portal
 - the invoice is a credit note or refund note
 - nothing is left outstanding (for example, the customer paid while the page was open)
 

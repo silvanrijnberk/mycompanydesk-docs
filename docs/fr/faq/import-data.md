@@ -1,6 +1,6 @@
 ---
 title: "Importer des données"
-last_verified: 2026-07-02
+last_verified: 2026-08-15
 chatbot:
   triggers:
     - "import data"
@@ -29,5 +29,7 @@ La page d'import se trouve sur `/profile/import`. Il n'y a pas d'entrée de menu
 3. Associez les colonnes de votre fichier aux bons champs et confirmez l'aperçu
 
 Il n'y a pas de modèle CSV à télécharger ; l'import fonctionne avec les colonnes de votre propre fichier et vous permet de les associer pendant le téléversement.
+
+Pour les dépenses, les fichiers CSV rédigés au format néerlandais sont reconnus. Les montants comme 100,50 ou 1.234,56 et les dates au format jj-mm-aaaa sont lus en jour-mois-année. Cela correspond aux champs de montant de l'application web, donc la saisie et l'importation suivent les mêmes règles.
 
 Conseil : commencez par un petit import de test pour vérifier l'association avant d'importer de gros volumes.

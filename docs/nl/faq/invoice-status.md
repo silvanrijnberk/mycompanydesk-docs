@@ -10,8 +10,9 @@ chatbot:
 Factuurstatussen uitgelegd:
 • Concept - nog niet verstuurd, vrij te bewerken
 • Verstuurd - bezorgd bij de klant, wacht op betaling
-• Betaald - betaling ontvangen en bevestigd
 • Achterstallig - vervaldatum verstreken, nog niet betaald
+• Klant zegt: betaald - de klant heeft via het portaal aangegeven te hebben betaald; bevestig of weiger de betaling voordat de factuur op Betaald komt
+• Betaald - betaling ontvangen en bevestigd
 • Geannuleerd - ongeldig, niet meer actief
 
 Verwijderen gaat in stappen: van actief naar Gearchiveerd, dan naar Prullenbak, en pas daarna definitief weg. Je kunt hem uit het Archief of de Prullenbak terughalen zolang hij nog niet definitief verwijderd is. Annuleren werkt anders: daarmee markeer je een verstuurde of betaalde factuur als Geannuleerd, maar hij blijft in de lijst staan.

@@ -1,6 +1,6 @@
 ---
 title: "Daten importieren"
-last_verified: 2026-07-02
+last_verified: 2026-08-15
 chatbot:
   triggers:
     - "import data"
@@ -29,5 +29,7 @@ Die Importseite liegt unter `/profile/import`. Es gibt keinen Menüeintrag dafü
 3. Ordnen Sie die Spalten Ihrer Datei den richtigen Feldern zu und bestätigen Sie die Vorschau
 
 Es gibt keine CSV-Vorlage zum Herunterladen; der Import arbeitet mit den Spalten Ihrer eigenen Datei und lässt Sie diese beim Hochladen zuordnen.
+
+Für Ausgaben werden CSV-Dateien in niederländischer Schreibweise erkannt. Beträge wie 100,50 oder 1.234,56 und Daten im Format tt-mm-jjjj werden als Tag-Monat-Jahr gelesen. Das entspricht den Betragsfeldern in der Web-App, sodass Tippen und Importieren nach denselben Regeln funktionieren.
 
 Tipp: Beginnen Sie mit einem kleinen Testimport, um die Zuordnung zu prüfen, bevor Sie größere Datensätze importieren.
