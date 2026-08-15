@@ -1,5 +1,6 @@
 ---
 title: Tableau de bord
+last_verified: 2026-08-15
 ---
 
 # Tableau de bord
@@ -50,6 +51,15 @@ Les quatre cellules de la rangee pulse remplacent les anciennes tuiles financier
 | **Chiffre d'affaires** | CA du mois en cours avec pourcentage par rapport au mois precedent, plus cumul annuel |
 | **Creances** | Total des encours, nombre en retard, et delai moyen de paiement |
 | **TVA** | Solde (a recuperer ou a payer), date d'echeance et reserve fiscale |
+
+## Benefice et reserve fiscale
+
+Le tableau de bord maintient deliberement deux visions differentes des depenses :
+
+- Les **totaux de chiffre d'affaires** et de **depenses** dans la rangee pulse montrent le mouvement de tresorerie pour la periode : montants TTC et depenses encore en attente de revision incluses.
+- Les cartes **Benefice net** et **Reserve fiscale estimee** utilisent a la place une vue compte de resultat. Les depenses y sont comptees hors TVA, les investissements immobilises sont etales selon leur plan d'amortissement plutot que comptes en une fois, et les brouillons bancaires ou de la boite de reception encore en attente de revision sont exclus, car ils ne sont pas encore comptabilises.
+
+Cela signifie que la carte de benefice et la carte de reserve fiscale different du simple calcul "chiffre d'affaires moins sorties de tresorerie". La separation fait correspondre le benefice du tableau de bord avec le compte de resultat, de sorte qu'un gros investissement sur un mois ne transforme pas un mois rentable en perte, et que la reserve fiscale est estimee sur le benefice reel plutot que sur la tresorerie.
 
 ## Fil de briefing
 

@@ -65,6 +65,10 @@ For image or PDF receipts:
 
 Receipt scanning is available on every plan, including Free. The number of scans per month depends on your plan.
 
+### Locked VAT periods
+
+If an inbox message is converted into an expense with a date inside a VAT period that has already been filed, the automated booking is refused to protect the filed return. Instead of silently dropping the invoice, MyCompanyDesk creates an `inbox_expense_period_locked` notification that names the supplier and invoice date and tells you the VAT period is locked. The notification routes to the inbox list, so you can find the original forwarded invoice there. You then have the same two options as other locked-period cases: book the expense manually with a date in the current open period, or file a supplementary VAT return for the locked period.
+
 When a forwarded email or a scan produces an expense but the receipt file itself cannot be attached (for example, an unsupported file type or a file over the limit), the expense is still created and a note is added to it telling you that the attachment is missing. Upload the receipt manually on the expense detail page when that happens.
 
 ## VAT treatment

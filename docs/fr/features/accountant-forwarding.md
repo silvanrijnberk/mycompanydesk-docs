@@ -1,6 +1,6 @@
 ---
 title: Transmission au comptable
-last_verified: 2026-08-04
+last_verified: 2026-08-15
 ---
 
 # Transmission au comptable
@@ -28,6 +28,10 @@ La carte lit et ecrit sur `/api/team/accountant-delivery`. Chaque membre de l'es
 | **Transmission automatique activee** | Interrupteur principal |
 
 Le rythme par defaut pour la plupart des cabinets est hebdomadaire le lundi, car un seul e-mail regroupe est plus facile a traiter qu'un message par piece.
+
+### Déductibilité dans l'export
+
+Le détail des dépenses dans l'export transféré contient le nom de la catégorie et la déductibilité réelle utilisée par la déclaration de TVA : le pourcentage de déduction de la catégorie et le montant de TVA déductible. Cela remplace l'ancienne colonne « Déductible » Oui/Non, de sorte que le détail par ligne et le récapitulatif TVA dans le même export s'accordent.
 
 ### Obligation de justificatif
 

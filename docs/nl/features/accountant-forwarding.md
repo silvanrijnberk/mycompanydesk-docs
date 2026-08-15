@@ -1,6 +1,6 @@
 ---
 title: Doorsturen naar boekhouder
-last_verified: 2026-08-04
+last_verified: 2026-08-15
 ---
 
 # Doorsturen naar boekhouder
@@ -28,6 +28,10 @@ De kaart leest uit en schrijft naar `/api/team/accountant-delivery`. Elk werkrui
 | **Automatisch doorsturen staat aan** | Hoofdschakelaar |
 
 De standaardcadans voor de meeste kantoren is wekelijks op maandag, omdat één gebundelde mail makkelijker te verwerken is dan een los bericht per record.
+
+### Aftrekbaarheid in de export
+
+De uitgavedetails in de doorgestuurde export bevatten de categorienaam en de werkelijke aftrekbaarheid die de BTW-aangifte toepast: het aftrekspercentage van de categorie en het aftrekbare BTW-bedrag. Dit vervangt de oudere kolom "Aftrekbaar" met ja/nee, zodat de regeldetails en het BTW-overzicht in dezelfde export met elkaar overeenstemmen.
 
 ### Bonplicht
 

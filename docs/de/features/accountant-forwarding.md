@@ -1,6 +1,6 @@
 ---
 title: Weiterleitung an Steuerberater
-last_verified: 2026-08-04
+last_verified: 2026-08-15
 ---
 
 # Weiterleitung an Steuerberater
@@ -28,6 +28,10 @@ Die Karte liest aus und schreibt auf `/api/team/accountant-delivery`. Jedes Arbe
 | **Automatische Weiterleitung aktiv** | Hauptschalter |
 
 Der Standardrhythmus fuer die meisten Bueros ist woechentlich am Montag, weil eine gebundelte E-Mail einfacher zu verarbeiten ist als einzelne Nachrichten pro Beleg.
+
+### Abzugsfaehigkeit im Export
+
+Die Ausgabendetails in der weitergeleiteten Exportdatei enthalten den Kategorienamen und die tatsaechliche Abzugsfaehigkeit, die die MwSt.-Voranmeldung anwendet: den Abzugsprozentsatz der Kategorie und den abzugsfaehigen MwSt.-Betrag. Dies ersetzt die aeltere Spalte "Abzugsfaehig" mit Ja/Nein, sodass Zeilendetails und MwSt.-Zusammenfassung im selben Export uebereinstimmen.
 
 ### Belegpflicht
 

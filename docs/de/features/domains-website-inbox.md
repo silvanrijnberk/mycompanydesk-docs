@@ -1,6 +1,6 @@
 ---
 title: Domains, Website und Posteingang
-last_verified: 2026-08-08
+last_verified: 2026-08-15
 ---
 
 # Domains, Website und Posteingang
@@ -206,6 +206,8 @@ Siehe [Website-Builder](/de/advanced/business-page) für die vollständige Edito
 ### E-Mail-Posteingang
 
 Der Posteingang ist eine Top-Level-Oberfläche unter `/inbox` (`apps/web/pages/inbox/index.vue`). Das Backend befindet sich in `apps/api/src/modules/inbox/*` und schreibt in separate Tabellen (`company_email_domains`, `company_mailboxes`, `email_threads`, `email_messages`, `email_attachments`, `email_events`).
+
+Wenn eine weitergeleitete Lieferantenrechnung aus einem Anhang in einen Ausgabenentwurf umgewandelt wird, wird die Ausgabe erst nach Ihrer Bestätigung gebucht. Fällt das Rechnungsdatum in eine bereits angegebene MwSt.-Periode, wird die automatische Buchung abgelehnt und statt der Rechnung stillschweigend zu verwerfen eine `inbox_expense_period_locked`-Benachrichtigung erstellt; die Benachrichtigung landet in der Posteingangsliste und nennt Lieferanten sowie Rechnungsdatum, sodass Sie die Ausgabe manuell in der aktuellen Periode buchen oder einen ergänzenden MwSt.-Voranmeldung einreichen können.
 
 Funktionen:
 

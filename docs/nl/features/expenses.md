@@ -78,6 +78,10 @@ Laat AI automatisch uitgavegegevens uit bonnen extraheren:
 Bonnen scannen vereist het **Pro**-abonnement of hoger. Het BTW-tarief op een nieuwe uitgave begint bij je standaard werkruimte-instelling.
 :::
 
+### Vergrendelde BTW-periodes
+
+Als een inboxbericht wordt omgezet naar een uitgave met een datum in een BTW-periode die al is aangegeven, wordt de automatische boeking geweigerd om de ingediende aangifte te beschermen. In plaats van de factuur stilzwijgend te laten verdwijnen, maakt MyCompanyDesk een `inbox_expense_period_locked`-melding aan die de leverancier en factuurdatum noemt en aangeeft dat de BTW-periode vergrendeld is. De melding brengt je naar de inboxlijst, zodat je de doorgestuurde factuur daar kunt terugvinden. Je hebt vervolgens dezelfde twee opties als bij andere gevallen van een vergrendelde periode: boek de uitgave handmatig met een datum in de huidige open periode, of dien een suppletieaangifte in voor de vergrendelde periode.
+
 Als een doorgestuurde e-mail of een scan wel een uitgave oplevert, maar de bijbehorende bon niet meegevoegd kan worden (bijvoorbeeld een niet-ondersteund bestandstype of een te groot bestand), wordt de uitgave toch aangemaakt en krijgt hij een notitie dat de bijlage ontbreekt. Upload de bon daarna handmatig op de detailpagina van de uitgave.
 
 ## BTW-afhandeling

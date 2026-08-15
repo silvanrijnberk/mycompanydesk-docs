@@ -1,6 +1,6 @@
 ---
 title: "Paramètres de notification"
-last_verified: 2026-08-07
+last_verified: 2026-08-15
 chatbot:
   triggers:
     - "notifications"
@@ -23,7 +23,7 @@ Pour gérer vos paramètres de notification :
 2. Activez ou désactivez les sujets de notification. Les catégories sont :
    - **Factures qui méritent votre attention** : factures en retard, factures proches de l'échéance, brouillons laissés en suspens, prélèvements échoués et heures sans tarif.
    - **Argent entrant** : paiements, paiements confirmés et transactions bancaires inhabituelles.
-   - **Échéances à venir** : TVA, impôt sur le revenu, impôt sur les sociétés, seuil micro-entreprise, et contrats ou projets qui arrivent à expiration. Vous les recevez bien à l'avance pour ne jamais être en retard.
+   - **Échéances à venir** : TVA, impôt sur le revenu, impôt sur les sociétés, seuil micro-entreprise, et contrats ou projets qui arrivent à expiration. Vous les recevez bien à l'avance pour ne jamais être en retard. Cette catégorie comprend également les enregistrements automatiques qui n'ont pas pu être effectués parce que la date tombe dans une période de TVA déjà déclarée et verrouillée, par exemple une facture transférée depuis la boîte de réception ou une transaction bancaire. La notification indique le fournisseur et la date de la facture, et vous renvoie vers la boîte de réception ou le flux bancaire pour que vous puissiez enregistrer la dépense dans la période en cours ou déposer une déclaration complémentaire.
    - **Nouvelles opportunités** : demandes de devis, devis signés et ventes via votre site web.
    - **Nouveau message dans votre boîte de réception** : une alerte sur votre téléphone dès qu'un client ou fournisseur vous écrit.
    - **Dépense à échéance** : échéances à venir des dépenses que vous avez créées, comme un loyer ou des charges planifiés, pour que vous puissiez les payer ou les enregistrer à temps.
