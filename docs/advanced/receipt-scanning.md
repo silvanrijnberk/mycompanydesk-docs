@@ -94,6 +94,10 @@ When the scanner resolves a supplier country (for example, a foreign supplier or
 
 You can edit the expense afterward like any manually created expense.
 
+## Permissions
+
+The receipt scanner is gated by the same page permission as the Expenses page. A team member needs **Read** access to Expenses to open the scanner, and **Create** access to confirm a scanned receipt into a new expense. Members without the Create permission still see the scanner, but cannot finish the confirmation. This applies whether the receipt is uploaded from the Expenses page or created through a shared photo flow.
+
 ## Scanning several receipts
 
 The uploader takes one file at a time. To process several receipts, scan them one after another; each scan counts once towards your monthly cap. For a receipt or invoice that contains multiple items, use the **Multiple** extraction mode to create several expenses from a single scan.

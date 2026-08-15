@@ -17,3 +17,5 @@ To change the deadline for one invoice:
 If you want future invoices to start with a different deadline, update the customer's payment terms or the default at Settings → "Facturen en offertes" under "Hoeveel dagen krijgt een klant om te betalen?" (how many days does a customer get to pay?).
 
 Tip: Automatic payment reminders follow the due date, so a correct deadline also means reminders go out at the right moment.
+
+If a customer has no payment terms of their own, the workspace default at **Settings → Facturen en offertes** is used before falling back to the platform default (14 days). That order used to be skipped when selecting a customer, which could produce an earlier due date than intended.

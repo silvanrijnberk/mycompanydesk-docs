@@ -94,6 +94,10 @@ Als de scanner een leveranciersland herleidt (bijvoorbeeld een buitenlandse leve
 
 Je kunt de uitgave daarna bewerken zoals elke handmatig aangemaakte uitgave.
 
+## Rechten
+
+De bonscanner valt onder dezelfde paginarechten als de pagina Uitgaven. Een teamlid heeft **Lezen**-toegang tot Uitgaven nodig om de scanner te openen, en **Aanmaken**-toegang om een gescande bon te bevestigen als nieuwe uitgave. Leden zonder het recht Aanmaken zien de scanner wel, maar kunnen de bevestiging niet afronden. Dit geldt zowel bij uploaden vanaf de pagina Uitgaven als via een gedeelde fotoflow.
+
 ## Meerdere bonnen scannen
 
 De uploader verwerkt een bestand per keer. Wil je meerdere bonnen verwerken, scan ze dan een voor een; elke scan telt een keer mee voor je maandelijkse limiet. Voor een bon of factuur met meerdere items gebruik je de extractiemodus **Meervoudig** om met een scan meerdere uitgaven aan te maken.

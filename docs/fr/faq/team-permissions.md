@@ -19,3 +19,5 @@ Pour les configurer :
 4. Enregistrez les modifications
 
 Remarque : l'accès Lecture est nécessaire avant Écriture ou Création.
+
+La permission Création ne s'applique qu'aux nouveaux enregistrements. Un membre disposant de Création mais pas d'Écriture peut ajouter de nouveaux enregistrements via le bouton normal, mais il ne peut pas modifier des enregistrements existants, changer un statut, utiliser des actions en masse ni confirmer des reçus scannés en une nouvelle dépense.

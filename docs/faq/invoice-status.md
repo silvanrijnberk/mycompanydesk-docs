@@ -8,7 +8,7 @@ chatbot:
   follow_up: ["How do I mark an invoice as paid?", "How do I send a reminder?", "How do I cancel an invoice?"]
 ---
 Invoice statuses explained:
-• Draft - not finalized yet, fully editable
+• Draft - not finalized yet, fully editable. It cannot be marked paid or recorded as paid until you finalize it; recording a payment on a draft used to create a numberless invoice with status Paid, which is no longer allowed.
 • Open - finalized but not sent/paid yet
 • Sent - delivered to the customer, awaiting payment
 • Overdue - due date passed and still unpaid

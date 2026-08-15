@@ -13,4 +13,6 @@ So markieren Sie eine Rechnung als bezahlt:
 2. Klicken Sie im Kopf der Rechnung auf "Als bezahlt markieren"; ein Klick genügt und der Status wechselt zu Bezahlt
 3. Möchten Sie Zahlungsdatum, Zahlungsart oder eine Referenz erfassen? Nutzen Sie stattdessen "Zahlung erfassen" im Bereich Zahlung
 
+Hinweis: Ein Entwurf muss zuerst fertiggestellt werden, bevor er als bezahlt markiert oder eine Zahlung erfasst werden kann. Eine Zahlung auf einem Entwurf erzeugte früher eine Rechnung mit Status Bezahlt ohne Nummer, was jetzt nicht mehr erlaubt ist. Um eine Zahlung auf einem Entwurf zu erfassen, senden oder finalisieren Sie die Rechnung zuerst, damit sie eine Nummer erhält, und erfassen Sie dann die Zahlung.
+
 Tipp: Aktualisiert sich der Status nicht, laden Sie die Liste neu und prüfen Sie auf der Detailseite, ob die Zahlung gespeichert wurde.

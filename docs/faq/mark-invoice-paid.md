@@ -13,4 +13,6 @@ To mark an invoice as paid:
 2. Click "Mark as paid" in the invoice header; one click and the status updates to Paid
 3. Want to record the payment date, method, or a reference? Use "Record Payment" in the Payment section instead
 
+Note: A draft invoice must be finalized before it can be marked paid or a payment can be recorded. Recording a payment on a draft used to create a numberless invoice with status Paid, which is no longer allowed. To record a payment on a draft, first send or finalize the invoice so it receives a number, then record the payment.
+
 Tip: If the status does not update, refresh the list and verify the payment was saved on the detail page.
