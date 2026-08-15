@@ -52,7 +52,7 @@ Les quatre cellules de la rangee pulse remplacent les anciennes tuiles financier
 | **Creances** | Total des encours, nombre en retard, et delai moyen de paiement |
 | **TVA** | Solde (a recuperer ou a payer), date d'echeance et reserve fiscale |
 
-## Benefice et reserve fiscale
+## Bénéfice et réserve fiscale
 
 Le tableau de bord maintient deliberement deux visions differentes des depenses :
 
