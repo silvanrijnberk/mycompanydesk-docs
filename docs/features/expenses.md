@@ -65,6 +65,8 @@ For image or PDF receipts:
 
 Receipt scanning is available on every plan, including Free. The number of scans per month depends on your plan.
 
+When a forwarded email or a scan produces an expense but the receipt file itself cannot be attached (for example, an unsupported file type or a file over the limit), the expense is still created and a note is added to it telling you that the attachment is missing. Upload the receipt manually on the expense detail page when that happens.
+
 ## VAT treatment
 
 Every expense has a `vat_treatment` field that decides how it lands on your VAT return:
@@ -137,6 +139,7 @@ Select multiple expenses for:
 - **Archive** - Move to archive.
 - **Delete** - Permanently remove.
 - **Export** - Download as CSV.
+- **Mark as paid** - Mark selected expenses as paid. Marking a bank or inbox draft as paid clears its "To review" flag at the same time, so the row shows up in your reports, VAT return and accountant export instead of staying hidden. This only happens when you set the status to paid, not when you move it back to unpaid.
 
 ## Mileage allowance
 

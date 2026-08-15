@@ -65,6 +65,8 @@ Lassen Sie die KI Ausgabendetails automatisch aus Belegen extrahieren:
 Belegscanner erfordert den **Pro**-Tarif oder hoher. Der USt.-Satz einer neuen Ausgabe beginnt mit Ihrer Standard-Arbeitsbereichseinstellung.
 :::
 
+Wenn eine weitergeleitete E-Mail oder ein Scan zwar eine Ausgabe erzeugt, der Beleg selbst aber nicht angehängt werden kann (zum Beispiel ein nicht unterstützter Dateityp oder eine zu große Datei), wird die Ausgabe dennoch erstellt und mit einem Hinweis versehen, dass der Anhang fehlt. Laden Sie den Beleg anschließend manuell auf der Detailseite der Ausgabe hoch.
+
 ## Ausgabenkategorien
 
 MyCompanyDesk bietet vordefinierte Kategorien mit Symbolen zur schnellen Auswahl:
@@ -143,6 +145,7 @@ Wählen Sie mehrere Ausgaben für:
 - **Archivieren** - Ins Archiv verschieben
 - **Löschen** - Dauerhaft entfernen
 - **Exportieren** - Als CSV herunterladen
+- **Als bezahlt markieren** - Markiert ausgewählte Ausgaben als bezahlt. Wenn Sie einen Bank- oder Inbox-Entwurf als bezahlt markieren, wird gleichzeitig die Markierung "Zu prüfen" entfernt, sodass die Zeile in Ihren Berichten, der USt.-Erklärung und dem Buchhalterexport sichtbar ist, anstatt verborgen zu bleiben. Das passiert nur beim Setzen auf bezahlt, nicht beim Zurücksetzen auf unbezahlt.
 
 ## Kilometerpauschale
 

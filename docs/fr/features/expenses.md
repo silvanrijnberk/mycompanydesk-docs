@@ -65,6 +65,8 @@ Laissez l'IA extraire automatiquement les détails de vos reçus :
 La numerisation de recus necessite le plan **Pro** ou superieur. Le taux de TVA d'une nouvelle depense commence par votre reglage d'espace de travail par defaut.
 :::
 
+Si un e-mail transféré ou un scan crée une dépense mais que le reçu ne peut pas être joint (par exemple un type de fichier non pris en charge ou un fichier trop volumineux), la dépense est quand même créée et un message indique que la pièce jointe est manquante. Ajoutez ensuite le reçu manuellement sur la page de détail de la dépense.
+
 ## Catégories de dépenses
 
 MyCompanyDesk propose des catégories prédéfinies avec des icônes pour une sélection rapide :
@@ -143,6 +145,7 @@ Sélectionnez plusieurs dépenses pour :
 - **Archiver** -- Déplacer vers les archives
 - **Supprimer** -- Supprimer définitivement
 - **Exporter** -- Télécharger au format CSV
+- **Marquer comme payé** -- Marque les dépenses sélectionnées comme payées. Si vous marquez un brouillon bancaire ou un brouillon de la boîte de réception comme payé, le statut "À vérifier" est enlevé en même temps, de sorte que la ligne apparaisse dans vos rapports, votre déclaration de TVA et votre export comptable au lieu de rester cachée. Cela ne se produit que lorsque vous passez le statut à payé, pas lorsque vous revenez à non payé.
 
 ## Indemnité kilométrique
 
