@@ -58,7 +58,7 @@ Das Kundenportal verwendet Ihr Unternehmensbranding:
 
 Dies schafft ein professionelles, konsistentes Erlebnis für Ihre Kunden.
 
-## Gefrorene Rechnungskopie
+## Eingefrorene Rechnungskopie
 
 Rechnungsansicht und PDF-Download werden aus einer Momentaufnahme gerendert, die beim Senden erstellt wird. Diese Momentaufnahme friert Ihre Unternehmensdaten, Kundendaten, Dokumentensprache und Ihr Branding zum Zeitpunkt des Versands ein. Kunden sehen die Rechnung daher genau so, wie sie gesendet wurde, auch wenn Sie später Einstellungen oder den Kundendatensatz ändern. Entwürfe haben noch keine Momentaufnahme und werden mit aktuellen Daten gerendert.
 
