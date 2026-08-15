@@ -21,6 +21,10 @@ Au lieu de saisir manuellement chaque depense, prenez une photo d'un recu ou tel
 <!-- TODO(source-missing): la limite effective des PDF pour le scan en ligne est maintenant de 15 MB dans le code du scanner et les chaînes de locale, tandis que cette page indique encore 50 Mo. Vérifier dans sources/ avant de mettre à jour. -->
 - **Taille maximale de fichier** -- 50 Mo
 
+::: tip Taille de fichier
+Le scanner accepte les fichiers jusqu'à 50 Mo, mais le reçu joint à la dépense créée est limité à 10 Mo. Si vous numérisez un fichier plus grand, la dépense est quand même créée, mais le reçu n'est pas joint et un avertissement s'affiche. Vous pourrez ensuite ajouter le reçu manuellement sur la dépense, ou utiliser un fichier plus petit avant le scan.
+:::
+
 ## Comment numeriser un recu
 
 1. Allez dans **Depenses > Numeriser un recu**

@@ -58,6 +58,10 @@ Le portail client utilise l'image de marque de votre entreprise :
 
 Cela cree une experience professionnelle et coherente pour vos clients.
 
+## Copie figée de la facture
+
+La vue de la facture et le téléchargement du PDF sont rendus à partir d'un instantané pris lors de l'envoi. Cet instantané fige les informations de votre entreprise, les informations client, la langue du document et l'image de marque telles qu'elles étaient à l'envoi. Les clients voient donc la facture exactement comme elle a été envoyée, même si vous modifiez ensuite les paramètres de l'espace de travail ou la fiche client. Les brouillons n'ont pas encore d'instantané et sont rendus avec les données actuelles.
+
 ## Securite d'acces
 
 Chaque lien du portail est :

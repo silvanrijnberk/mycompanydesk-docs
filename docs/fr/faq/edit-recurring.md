@@ -1,6 +1,6 @@
 ---
 title: "Edit a recurring invoice"
-last_verified: 2026-05-09
+last_verified: 2026-08-15
 chatbot:
   triggers:
     - "edit recurring"
@@ -25,3 +25,7 @@ Pour modifier un élément récurrent :
 3. Cliquez sur « Modifier »
 4. Modifiez le montant, la fréquence, le client ou les lignes
 5. Enregistrez - les futures générations utiliseront le modèle mis à jour
+
+Remarque : les modifications ne concernent que les factures/dépenses futures. Les éléments déjà créés restent inchangés.
+
+Remarque : si vous modifiez la date de début avant la création du premier élément, la prochaine date planifiée est déplacée en conséquence. Une fois le premier élément créé, la date de début ne modifie plus le calendrier.

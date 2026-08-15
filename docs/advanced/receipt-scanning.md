@@ -21,6 +21,10 @@ Instead of manually entering every expense, take a photo of a receipt or upload 
 <!-- TODO(source-missing): the effective PDF limit for the LLM inline scan path is now 15 MB in the scanner code and locale strings, while this page still says 50 MB. Verify in sources/ before updating. -->
 - **Maximum file size** — 50MB
 
+::: tip File size note
+The scanner accepts files up to 50 MB, but the receipt attached to the created expense is capped at 10 MB. If you scan a file larger than 10 MB, the expense is still created, but the receipt is not attached and a warning tells you to upload it manually on the expense. Reducing the file size before scanning also prevents this.
+:::
+
 ## How to scan a receipt
 
 1. Go to **Expenses > Scan Receipt**
