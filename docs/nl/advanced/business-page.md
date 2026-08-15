@@ -1,6 +1,6 @@
 ---
 title: Sitebouwer
-last_verified: 2026-08-10
+last_verified: 2026-08-15
 ---
 
 # Sitebouwer
@@ -369,6 +369,7 @@ In de **Stijl**-tab bepaal je de look-and-feel van je hele site:
 - **Kleuren**: Kies merk-, accent-, papier-, inkt-, oppervlakte- en gedempte kleuren. Het palet wordt toegepast via CSS custom properties.
 - **Donkere modus**: Bepaal hoe je site omgaat met donkere weergave. Drie opties: **Uit** (geen donkere modus, de site blijft in het lichte palet), **Knop** (bezoekers zien een zon/maan-knop in de navigatiebalk en kunnen wisselen, hun keuze wordt lokaal opgeslagen), of **Volg systeem** (de site volgt automatisch de OS-voorkeur van de bezoeker via een live media-query). Wanneer donkere modus aan staat, verschijnt er een donker palet waarin je per kleur een nachtversie kunt instellen. Laat je het donkere palet leeg, dan past de site een automatische inversie toe waarbij je merk- en accentkleuren behouden blijven.
 - **Typografie**: Kies kop-, body- en mono-lettertypes uit de ingebouwde lettertypebibliotheek (Geist, Inter, DM Sans, DM Serif Display, Fraunces, Instrument Serif, Geist Mono).
+- **Zelfgehoste lettertypes**: Alle lettertypes worden vanaf MyCompanyDesk zelf geserveerd, niet van Google Fonts of een andere externe CDN. Dezelfde fontbestanden worden gebruikt in de editor-preview en op je gepubliceerde site, dus de tekst ziet er overal identiek uit en het IP-adres van bezoekers blijft op je eigen domein.
 - **Schaal**: Stel hoekradius, dichtheid (compact, ruim, royaal), maximale inhoudsbreedte, verticale sectie-afstand en kaartstijl in. De kaartstijl bepaalt hoe inhoudskaarten over de secties heen worden weergegeven: **Plat** (geen rand), **Omlijnd** (standaard, dunne lijn), **Schaduw** (zachte schaduw), **Zwevend** (sterke schaduw), **Brut** (harde rand met blokschaduw), **Lijn** (alleen contour, geen vulling) of **Glas** (doorzichtige, matgeglazuurde kaart met een achtergrondblur). Glas komt het best tot zijn recht over een foto, verloop of decoratieve band; op een effen achtergrond valt hij terug op een zacht getinte kaart.
 - **Beweging**: Schakel verminderde beweging in of kies een bewegingsstijl (Uit, Subtiele fade, Slide-up).
 - **Knoppen**: Pas knopradius, padding en hover-effecten aan.

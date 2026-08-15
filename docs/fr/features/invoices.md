@@ -179,6 +179,7 @@ Utilisez la barre de filtre pour affiner vos factures :
 - **Projet** -- Filtrer par projet lie
 - **Plage de dates** -- Filtrer par date de facture ou d'echeance
 - **Recherche** -- Rechercher par numero de facture, nom de client ou description
+- **Liens profonds** -- Les notifications et e-mails pointant directement vers une facture effacent toute plage de dates active a l'ouverture de la page, pour que la facture ne soit pas masquee par un filtre existant
 
 ## Export
 

@@ -179,6 +179,7 @@ Verwenden Sie die Filterleiste, um Ihre Rechnungen einzugrenzen:
 - **Projekt** — Nach verknüpftem Projekt filtern
 - **Datumsbereich** — Nach Rechnungs- oder Fälligkeitsdatum filtern
 - **Suche** — Nach Rechnungsnummer, Kundenname oder Beschreibung suchen
+- **Direktlinks**: Benachrichtigungen und E-Mails, die direkt zu einer Rechnung verlinken, löschen beim Öffnen der Seite alle aktiven Datumsbereichsfilter, damit die Rechnung nicht von einem vorhandenen Filter ausgeblendet wird
 
 ## Export
 

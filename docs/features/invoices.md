@@ -179,6 +179,7 @@ Use the filter bar to narrow down your invoices:
 - **Project** — Filter by linked project
 - **Date range** — Filter by invoice or due date
 - **Search** — Search by invoice number, customer name, or description
+- **Deep links**: Notifications and emails that link straight to an invoice clear any active date-range filter when they open the page, so the invoice is not hidden by an existing filter
 
 ## Export
 

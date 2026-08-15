@@ -70,6 +70,8 @@ Un tableau qui reflète le formulaire de déclaration du Belastingdienst :
 
 Chaque ligne montre le chiffre d'affaires (HT) et le montant de TVA. La barre du bas affiche le total à payer ou à récupérer. Les corrections hors formulaire apparaissent sur des lignes distinctes : une correction de réservation ordinaire est affichée comme **Correctie**, tandis qu'une réduction selon l'ancien régime KOR apparaît comme **Vermindering volgens de oude KOR**. Le récapitulatif CSV de TVA ajoute une ligne de correction correspondante lorsque ces montants sont non nuls, de sorte que le solde, la TVA collectée et la TVA payée concordent. La colonne Solde TVA de la vue annuelle utilise le même total de TVA nette que la feuille des rubriques, donc les lignes s'additionnent au même montant.
 
+Lorsque vous ajoutez une correction manuelle, saisissez un montant positif et choisissez une direction (TVA à payer ou TVA à rembourser). Les montants négatifs sont rejetés et le formulaire affiche une erreur vous demandant de choisir la direction à la place ; la direction détermine si la correction augmente ou diminue le total de la période.
+
 La rubrique 4a concerne les achats en autoliquidation auprès de fournisseurs hors UE (`import_reverse_charge`); la rubrique 4b concerne les achats en autoliquidation auprès de fournisseurs UE (`b2b_reverse_charge`). MyCompanyDesk déduit la bonne rubrique à partir du pays du fournisseur, pour que le total en 5a soit exact.
 
 ### Exports pour votre comptable
@@ -110,7 +112,7 @@ Une barre de synthèse en haut de la page TVA indique combien de périodes sont 
 
 - **Verrouillage automatique** : dès que l'échéance de dépôt d'une période est passée, MyCompanyDesk la verrouille automatiquement, pour que votre comptabilité reste conforme à la déclaration déposée.
 - **Verrouillage manuel** : des puces de période vous permettent de verrouiller vous-même toute période écoulée de l'année choisie, par exemple juste après un dépôt anticipé. Verrouiller une période encore en cours déclenche d'abord un avertissement.
-- **Marquer comme déposée** : signalez une période verrouillée comme déposée dès que la déclaration est faite. Les trimestres déposés l'affichent aussi dans la bande des trimestres.
+- **Marquer comme déposée** : signalez une période verrouillée comme déposée dès que la déclaration est faite. Lorsque vous ouvrez un rappel d'échéance de TVA dans le panneau de notifications, l'action **Marquer comme déposée** utilise la période indiquée dans ce rappel plutôt que la date du jour, afin de mettre à jour le bon trimestre ou le bon mois. Les trimestres déposés l'affichent aussi dans la bande des trimestres.
 - **Déverrouillage temporaire** : besoin de corriger quelque chose ? Déverrouillez une période temporairement (72 heures) ; elle se reverrouille d'elle-même, ou reverrouillez plus tôt à la main. Supprimer entièrement un verrou n'est possible que tant que l'échéance de dépôt n'est pas passée.
 
 Le statut de déclaration est suivi par période exacte, pas par inclusion. Une année déclarée ne marque pas automatiquement les quatre trimestres comme déclarés, et un trimestre déclaré ne marque pas automatiquement les mois qu'il contient. Le verrouillage couvre toutefois toute la période, donc un verrou annuel protège chaque trimestre.
