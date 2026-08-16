@@ -13,4 +13,4 @@ Om snel te zoeken in de applicatie:
 3. Resultaten worden in realtime gefilterd terwijl je typt
 4. Klik op een resultaat om het direct te openen
 
-Tip: Zoeken werkt in de meeste velden - probeer klantnamen, bedragen of datums.
+Tip: Zoektermen worden automatisch getrimd. Geplakte tekst met een spatie ervoor of erna geeft dezelfde resultaten, dus je hoeft hem niet eerst schoon te maken.

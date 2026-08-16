@@ -24,4 +24,13 @@ Vous ne pouvez pas envoyer de rappel lorsque :
 - la facture a été entièrement créditée par un avoir
 - il ne reste plus rien à payer (par exemple, le client a payé pendant que la page était ouverte)
 
+Quand une facture est en retard, la page de detail propose la prochaine etape a suivre :
+
+- **Envoyer un rappel** — pour les factures legerement en retard
+- **Envoyer un rappel plus ferme** — pour les factures deja relancees une fois
+- **Envoyer une relance urgente** — pour les factures de plus de quelques jours de retard. Le bouton ouvre la boite de dialogue du rappel; la ligne de detail suggere aussi d appeler le client ou de proposer un echeancier.
+- **Creer un avoir ou une correction** — si le client conteste la facture ou si les montants ont change
+
+Dans la plupart des cas, envoyez des rappels 1 jour avant l echeance (courtois), 3 jours apres (plus ferme) et 10 jours apres (dernier avis). Passez ensuite a un appel telephonique.
+
 Vous pouvez aussi modifier le modele de rappel dans Parametres → E-mails.

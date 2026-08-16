@@ -24,4 +24,13 @@ Je kunt geen herinnering versturen als:
 - de factuur volledig is gecrediteerd via een creditnota
 - er niets meer openstaat (bijvoorbeeld omdat de klant betaalde terwijl de pagina openstond)
 
+Wanneer een factuur te laat is, toont de factuurdetailpagina een voorgestelde volgende stap:
+
+- **Herinnering versturen** — voor facturen die net over de vervaldatum zitten
+- **Strengere herinnering versturen** — voor facturen die al een keer zijn herinnerd
+- **Dringende herinnering sturen** — voor facturen die meer dan een paar dagen te laat zijn. De knop opent de herinneringsdialoog; de detailregel adviseert ook om de klant te bellen of een betaalregeling voor te stellen.
+- **Creditnota of correctie aanmaken** — als de klant de factuur betwist of de bedragen zijn gewijzigd
+
+Voor de meeste gevallen stuur je herinneringen op 1 dag voor de vervaldatum (vriendelijk), 3 dagen erna (strenger) en 10 dagen erna (laatste waarschuwing). Bel daarna na.
+
 Je kunt het herinneringssjabloon ook aanpassen via Instellingen → E-mails.

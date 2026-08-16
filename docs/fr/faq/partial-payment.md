@@ -15,4 +15,4 @@ Pour enregistrer un paiement partiel sur une facture :
 4. Enregistrez - le statut de la facture passe à Partiellement payée
 5. Répétez lorsque des paiements supplémentaires arrivent
 
-Astuce : Le solde restant est suivi automatiquement et apparaît sur la page de détail de la facture. Dans le portail client, les factures partiellement payées affichent également le montant déjà reçu et le solde restant avant que le client ne règle.
+Astuce : Le solde restant est suivi automatiquement et apparaît sur la page de détail de la facture. Les factures partiellement payées reçoivent aussi leur propre suggestion de rappel pour demander le solde restant. Dans le portail client, les factures partiellement payées affichent également le montant déjà reçu et le solde restant avant que le client ne règle.

@@ -12,4 +12,4 @@ To quickly search across everything:
 2. Type a keyword - results filter in real-time
 3. Search works on names, numbers, amounts, and descriptions
 
-Tip: Use specific terms for better results. For example, search by invoice number ("2024-001"), customer name, or amount.
+Tip: Search terms are trimmed automatically. Pasted text with a leading or trailing space still matches the same records, so you do not need to clean it up first.
