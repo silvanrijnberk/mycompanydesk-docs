@@ -1,6 +1,6 @@
 ---
 title: Send reminder
-last_verified: 2026-08-15
+last_verified: 2026-08-16
 chatbot:
   triggers: ["send reminder", "payment reminder", "remind customer", "follow up", "chase payment", "herinnering sturen", "betaalherinnering", "aanmaning", "zahlungserinnerung", "relance", "rappel paiement"]
   actions:
@@ -21,6 +21,7 @@ Eine Erinnerung kann nicht gesendet werden, wenn:
 - die Rechnung bereits als bezahlt markiert ist
 - der Kunde im Portal angegeben hat, dass er bereits bezahlt hat, und der Status "Überprüfung erforderlich" ist
 - es sich um eine Gutschrift oder Rückerstattungsnotiz handelt
+- die Rechnung vollständig durch eine Gutschrift ausgeglichen wurde
 - nichts mehr offen steht (zum Beispiel weil der Kunde bezahlt hat, während die Seite geöffnet war)
 
 Die Erinnerungsvorlage kannst du auch unter Einstellungen → E-Mails anpassen.

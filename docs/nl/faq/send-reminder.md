@@ -1,6 +1,6 @@
 ---
 title: Send reminder
-last_verified: 2026-08-15
+last_verified: 2026-08-16
 chatbot:
   triggers: ["send reminder", "payment reminder", "remind customer", "follow up", "chase payment", "herinnering sturen", "betaalherinnering", "aanmaning", "zahlungserinnerung", "relance", "rappel paiement"]
   actions:
@@ -21,6 +21,7 @@ Je kunt geen herinnering versturen als:
 - de factuur al als betaald staat aangemerkt
 - de klant via het portaal heeft aangegeven dat hij al betaald heeft en de factuur op 'Klant zegt: betaald' staat
 - het een creditnota of refundnota betreft
+- de factuur volledig is gecrediteerd via een creditnota
 - er niets meer openstaat (bijvoorbeeld omdat de klant betaalde terwijl de pagina openstond)
 
 Je kunt het herinneringssjabloon ook aanpassen via Instellingen → E-mails.

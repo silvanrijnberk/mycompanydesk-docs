@@ -13,7 +13,7 @@ Wanneer je een factuur verstuurt, wordt een unieke **betaallink** gegenereerd. W
 1. **De factuur bekijken** — Alle details, regelitems en totalen zien
 2. **De PDF downloaden** — Een kopie van de factuur krijgen
 3. **Online betalen** — De betaling voltooien via het portaal
-4. **Betaling bevestigen** — Een bankoverschrijving bevestigen (niet zichtbaar voor creditnota's of ingetrokken facturen, omdat de klant in beide gevallen niets meer hoeft te betalen)
+4. **Betaling bevestigen**: Een bankoverschrijving bevestigen (niet zichtbaar voor creditnota's, ingetrokken facturen of originele facturen die volledig zijn gecrediteerd, omdat de klant in geen van deze gevallen nog iets hoeft te betalen)
 
 ## Portaalfuncties
 
@@ -26,12 +26,12 @@ Het portaal toont een overzichtelijke, huisstijl-conforme weergave van de factuu
 - Regelitems met omschrijvingen en bedragen
 - BTW-specificatie
 - Totaal verschuldigd bedrag
-- Al ontvangen bedrag en het restant (voor gedeeltelijk betaalde facturen)
+- Al ontvangen bedrag, toegepaste creditnota en het restant (voor gedeeltelijk betaalde of gecrediteerde facturen)
 - Vervaldatum
 
 ### Betaling
 
-Klanten kunnen direct via het portaal betalen. Als je Mollie of Stripe hebt gekoppeld, verschijnen er betaalknoppen op de factuurweergave zodat je klant met één klik kan betalen. Betaalknoppen en het totaal verschuldigde bedrag worden verborgen voor creditnota's en ingetrokken facturen, omdat de klant in beide gevallen geen geld meer hoeft over te maken. Voor gedeeltelijk betaalde facturen toont het portaal het al ontvangen bedrag en het openstaande restant voordat de klant betaalt, zodat het bedrag op de betaalknop overeenkomt met het factuurbedrag. Als een klant een autopay-link volgt (bijvoorbeeld vanuit een betaalherinnering), scrolt het portaal naar de juiste betaalknop en markeert deze met een pulserende animatie in plaats van automatisch door te verwijzen naar het betaalproces. Zo kan de klant de factuur eerst bekijken voordat deze betaalt. Wanneer de betaling is bevestigd, wordt de factuurstatus in je dashboard automatisch bijgewerkt naar **Betaald**.
+Klanten kunnen direct via het portaal betalen. Als je Mollie of Stripe hebt gekoppeld, verschijnen er betaalknoppen op de factuurweergave zodat je klant met één klik kan betalen. Betaalknoppen en het totaal verschuldigde bedrag worden verborgen voor creditnota's, ingetrokken facturen en originele facturen die volledig zijn gecrediteerd, omdat de klant in geen van deze gevallen nog geld hoeft over te maken. Voor facturen met deelsbetalingen of creditnota's toont het portaal het al ontvangen bedrag, de toegepaste credit en het openstaande restant voordat de klant betaalt, zodat het bedrag op de betaalknop overeenkomt met het resterende openstaande bedrag. Als een klant een autopay-link volgt (bijvoorbeeld vanuit een betaalherinnering), scrolt het portaal naar de juiste betaalknop en markeert deze met een pulserende animatie in plaats van automatisch door te verwijzen naar het betaalproces. Zo kan de klant de factuur eerst bekijken voordat deze betaalt. Wanneer de betaling is bevestigd, wordt de factuurstatus in je dashboard automatisch bijgewerkt naar **Betaald**.
 
 #### Mollie-betalingsinstellingen
 

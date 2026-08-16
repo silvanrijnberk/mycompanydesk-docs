@@ -1,6 +1,6 @@
 ---
 title: Automatic reminders
-last_verified: 2026-08-14
+last_verified: 2026-08-16
 chatbot:
   triggers: ["automatic reminders", "auto reminder", "scheduled reminders", "reminder automation", "automatische herinnering", "herinneringen instellen", "automatische erinnerung", "rappels automatiques"]
   actions:
@@ -19,6 +19,7 @@ Automatic reminders are not sent when:
 - the invoice has been canceled
 - the invoice is already paid
 - the invoice is a credit note or refund note
+- the invoice has been fully credited by a credit note
 - nothing is left outstanding
 
 The reminder emails use fixed system templates; the text cannot be edited.

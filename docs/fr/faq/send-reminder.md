@@ -1,6 +1,6 @@
 ---
 title: Send reminder
-last_verified: 2026-08-15
+last_verified: 2026-08-16
 chatbot:
   triggers: ["send reminder", "payment reminder", "remind customer", "follow up", "chase payment", "herinnering sturen", "betaalherinnering", "aanmaning", "zahlungserinnerung", "relance", "rappel paiement"]
   actions:
@@ -21,6 +21,7 @@ Vous ne pouvez pas envoyer de rappel lorsque :
 - la facture est déjà marquée comme payée
 - le client a indiqué dans le portail qu'il a déjà payé et que le statut est "Vérification requise"
 - il s'agit d'un avoir ou d'une note de remboursement
+- la facture a été entièrement créditée par un avoir
 - il ne reste plus rien à payer (par exemple, le client a payé pendant que la page était ouverte)
 
 Vous pouvez aussi modifier le modele de rappel dans Parametres → E-mails.

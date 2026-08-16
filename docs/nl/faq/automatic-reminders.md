@@ -1,6 +1,6 @@
 ---
 title: "Automatische herinneringen"
-last_verified: 2026-08-14
+last_verified: 2026-08-16
 chatbot:
   triggers: ["automatic reminders", "auto reminder", "scheduled reminders", "reminder automation", "automatische herinnering", "herinneringen instellen", "automatische erinnerung", "rappels automatiques"]
   actions:
@@ -19,6 +19,7 @@ Automatische herinneringen worden niet verstuurd als:
 - de factuur is geannuleerd
 - de factuur al betaald is
 - het een creditnota of refundnota betreft
+- de factuur volledig is gecrediteerd via een creditnota
 - er niets meer openstaat
 
 De herinneringsmails gebruiken vaste systeemsjablonen; de tekst kun je niet aanpassen.

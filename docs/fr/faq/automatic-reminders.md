@@ -1,6 +1,6 @@
 ---
 title: "Rappels automatiques"
-last_verified: 2026-08-14
+last_verified: 2026-08-16
 chatbot:
   triggers: ["automatic reminders", "auto reminder", "scheduled reminders", "reminder automation", "automatische herinnering", "herinneringen instellen", "automatische erinnerung", "rappels automatiques"]
   actions:
@@ -19,6 +19,7 @@ Les rappels automatiques ne sont pas envoyés si :
 - la facture est annulée
 - la facture est déjà payée
 - il s'agit d'un avoir ou d'une note de remboursement
+- la facture a été entièrement créditée par un avoir
 - il ne reste plus rien à payer
 
 Les e-mails de rappel utilisent des modèles système fixes ; le texte ne peut pas être modifié.

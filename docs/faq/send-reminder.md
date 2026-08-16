@@ -1,6 +1,6 @@
 ---
 title: Send reminder
-last_verified: 2026-08-15
+last_verified: 2026-08-16
 chatbot:
   triggers: ["send reminder", "payment reminder", "remind customer", "follow up", "chase payment", "herinnering sturen", "betaalherinnering", "aanmaning", "zahlungserinnerung", "relance", "rappel paiement"]
   actions:
@@ -21,6 +21,7 @@ You cannot send a reminder when:
 - the invoice is already marked as paid
 - the invoice is waiting for payment verification because the customer reported it as paid through the portal
 - the invoice is a credit note or refund note
+- the invoice has been fully credited by a credit note
 - nothing is left outstanding (for example, the customer paid while the page was open)
 
 Best practice: Send reminders at 1 day before due date (friendly), 3 days after (firm), and 10 days after (final notice). Escalate to a phone call after that.
