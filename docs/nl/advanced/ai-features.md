@@ -71,6 +71,8 @@ AI kan duidelijkere, professionelere omschrijvingen suggereren voor:
 3. Bekijk de suggestie
 4. Klik op **Toepassen** om deze te gebruiken, of **Negeren** om over te slaan
 
+Toepassen werkt via hetzelfde schrijfpad als een handmatige bewerking. Een uitgave in de prullenbak, een vergrendelde BTW-periode of een gearchiveerde/ongeldige categorie blokkeert de actie met dezelfde foutcodes die je ook ziet bij handmatig bewerken. Bij een succesvolle toepassing schrijft MyCompanyDesk een auditlogregel voor de gewijzigde velden, net als bij een normale update.
+
 ::: info
 AI-suggesties vereisen het **Starter**-abonnement of hoger. Schakel ze in via **Bedrijf > Functies**.
 :::

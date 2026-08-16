@@ -58,6 +58,8 @@ For each draft you can:
 - **Edit**: open the expense to adjust the category, VAT, or amount before booking.
 - **Reject**: discard the draft. The transaction returns to the feed for manual handling.
 
+If the category chip you picked has been archived since the page loaded, the confirm or edit action is refused with an `EXPENSE_CATEGORY_UNKNOWN` error instead of silently booking the expense under a different category. Refresh the page to load the current category list and pick again.
+
 ## Feed settings
 
 On the same settings page you control how the feed behaves:
