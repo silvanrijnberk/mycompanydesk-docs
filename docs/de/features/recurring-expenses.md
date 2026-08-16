@@ -79,7 +79,7 @@ Jede generierte Ausgabe:
 
 ## Quellenlink
 
-Wurde eine Ausgabe aus einer wiederkehrenden Vorlage erstellt, zeigt die Ausgabendetailseite einen Banner **Automatisch erstellt aus wiederkehrender Ausgabe** mit einem Link zurück zu dieser Vorlage. So springen Sie mit einem Klick von einer einzelnen Ausgabe zu der Vorlage, die sie erzeugt hat.
+Wurde eine Ausgabe aus einer wiederkehrenden Vorlage erstellt, zeigt die Ausgabendetailseite einen Banner **Automatisch erstellt aus wiederkehrender Ausgabe**. Solange die Vorlage noch existiert, führt der Link zurück zu ihr, sodass Sie mit einem Klick von der Ausgabe zur Vorlage springen. Wurde die Vorlage inzwischen gelöscht, erscheint nur noch Text statt eines toten Links.
 
 ## Was passiert, wenn sich mein Tarif ändert?
 

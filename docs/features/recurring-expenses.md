@@ -79,7 +79,7 @@ Each generated expense:
 
 ## Source link
 
-If an expense was created from a recurring template, the expense detail page shows an **automatically created from recurring expense** banner with a link back to that template. This lets you jump straight from a single expense to the template that generated it.
+If an expense was created from a recurring template, the expense detail page shows an **automatically created from recurring expense** banner. When the template still exists, the banner links back to it so you can jump straight from the expense to the template that generated it. If the template has since been deleted, the banner shows plain text instead of a dead link.
 
 ## What happens if my plan changes?
 

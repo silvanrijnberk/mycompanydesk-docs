@@ -79,7 +79,7 @@ Elke gegenereerde uitgave:
 
 ## Bronlink
 
-Als een uitgave is aangemaakt vanuit een terugkerend sjabloon, toont de uitgavedetailpagina een banner **Automatisch aangemaakt vanuit terugkerende uitgave** met een link terug naar dat sjabloon. Zo spring je in één klik van een enkele uitgave naar het sjabloon dat hem heeft gegenereerd.
+Als een uitgave is aangemaakt vanuit een terugkerend sjabloon, toont de uitgavedetailpagina een banner **Automatisch aangemaakt vanuit terugkerende uitgave**. Zolang het sjabloon bestaat, klik je op de banner om in één keer naar het sjabloon te springen dat de uitgave heeft gegenereerd. Is het sjabloon inmiddels verwijderd, dan staat er alleen tekst in plaats van een dode link.
 
 ## Wat gebeurt er als mijn pakket wijzigt?
 
