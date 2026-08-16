@@ -180,7 +180,7 @@ Gebruik de filterbalk om je facturen te verfijnen:
 - **Klant** — Filter op specifieke klant
 - **Project** — Filter op gekoppeld project
 - **Datumbereik** — Filter op factuur- of vervaldatum
-- **Zoeken** — Zoek op factuurnummer, klantnaam of omschrijving
+- **Zoeken**: Zoek op factuurnummer, klantnaam, referentie of notities
 - **Deeplinks**: Notificaties en e-mails die direct naar een factuur linken, wissen het actieve datumbereik wanneer ze de pagina openen, zodat de factuur niet verborgen raakt achter een bestaand filter
 
 ## Exporteren
