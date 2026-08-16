@@ -13,7 +13,7 @@ Wenn Sie eine Rechnung versenden, wird ein eindeutiger **Zahlungslink** generier
 1. **Die Rechnung ansehen** kann — Alle Details, Positionen und Gesamtbeträge einsehen
 2. **Das PDF herunterladen** kann — Eine Kopie der Rechnung erhalten
 3. **Online bezahlen** kann — Die Zahlung direkt über das Portal abschließen
-4. **Zahlung bestätigen** kann — Eine Banküberweisung bestätigen (nicht sichtbar für Gutschriften oder stornierte Rechnungen, da der Kunde in beiden Fällen nichts mehr zu zahlen hat)
+4. **Zahlung bestätigen** kann: Eine Banküberweisung bestätigen (nicht sichtbar für Gutschriften, stornierte Rechnungen oder Originalrechnungen, die vollständig gutgeschrieben wurden, da der Kunde in keinem dieser Fälle noch etwas zu zahlen hat)
 
 ## Portal-Funktionen
 
@@ -26,12 +26,12 @@ Das Portal zeigt eine übersichtliche, gebrandete Ansicht der Rechnung, einschli
 - Positionen mit Beschreibungen und Beträgen
 - USt.-Aufschlüsselung
 - Fälliger Gesamtbetrag
-- Bereits erhaltener Betrag und Restbetrag (bei teilweise bezahlten Rechnungen)
+- Bereits erhaltener Betrag, angewandte Gutschrift und Restbetrag (bei teilweise bezahlten oder gutgeschriebenen Rechnungen)
 - Fälligkeitsdatum
 
 ### Zahlung
 
-Kunden können direkt über das Portal bezahlen. Wenn Sie Mollie oder Stripe verbunden haben, erscheinen Zahlungsschaltflächen auf der Rechnungsansicht, sodass Ihr Kunde mit einem Klick bezahlen kann. Zahlungsschaltflächen und der fällige Gesamtbetrag werden für Gutschriften und stornierte Rechnungen ausgeblendet, da der Kunde in beiden Fällen kein Geld mehr überweisen muss. Bei teilweise bezahlten Rechnungen zeigt das Portal den bereits erhaltenen Betrag und die noch offene Restsumme an, bevor der Kunde zahlt, damit der Betrag auf der Zahlungsschaltfläche mit dem Rechnungsbetrag übereinstimmt. Wenn ein Kunde einem Autopay-Link folgt (zum Beispiel aus einer Zahlungserinnerung), scrollt das Portal zur richtigen Zahlungsschaltfläche und hebt sie mit einer pulsierenden Animation hervor, anstatt automatisch zum Zahlungsvorgang weiterzuleiten. So kann der Kunde die Rechnung vor der Zahlung prüfen. Wenn die Zahlung bestätigt wird, aktualisiert sich der Rechnungsstatus in Ihrem Dashboard automatisch auf **Bezahlt**.
+Kunden können direkt über das Portal bezahlen. Wenn Sie Mollie oder Stripe verbunden haben, erscheinen Zahlungsschaltflächen auf der Rechnungsansicht, sodass Ihr Kunde mit einem Klick bezahlen kann. Zahlungsschaltflächen und der fällige Gesamtbetrag werden für Gutschriften, stornierte Rechnungen und Originalrechnungen, die vollständig gutgeschrieben wurden, ausgeblendet, da der Kunde in keinem dieser Fälle noch Geld überweisen muss. Bei Rechnungen mit Teilzahlungen oder Gutschriften zeigt das Portal den bereits erhaltenen Betrag, die angewandte Gutschrift und die noch offene Restsumme an, bevor der Kunde zahlt, sodass der Betrag auf der Zahlungsschaltfläche mit dem verbleibenden offenen Betrag übereinstimmt. Wenn ein Kunde einem Autopay-Link folgt (zum Beispiel aus einer Zahlungserinnerung), scrollt das Portal zur richtigen Zahlungsschaltfläche und hebt sie mit einer pulsierenden Animation hervor, anstatt automatisch zum Zahlungsvorgang weiterzuleiten. So kann der Kunde die Rechnung vor der Zahlung prüfen. Wenn die Zahlung bestätigt wird, aktualisiert sich der Rechnungsstatus in Ihrem Dashboard automatisch auf **Bezahlt**.
 
 #### Mollie-Zahlungseinstellungen
 

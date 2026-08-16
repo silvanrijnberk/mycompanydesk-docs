@@ -1,6 +1,6 @@
 ---
 title: "Automatische Erinnerungen"
-last_verified: 2026-08-14
+last_verified: 2026-08-16
 chatbot:
   triggers: ["automatic reminders", "auto reminder", "scheduled reminders", "reminder automation", "automatische herinnering", "herinneringen instellen", "automatische erinnerung", "rappels automatiques"]
   actions:
@@ -19,6 +19,7 @@ Automatische Erinnerungen werden nicht gesendet, wenn:
 - die Rechnung storniert wurde
 - die Rechnung bereits bezahlt ist
 - es sich um eine Gutschrift oder Rückerstattungsnotiz handelt
+- die Rechnung vollständig durch eine Gutschrift ausgeglichen wurde
 - nichts mehr offen steht
 
 Die Erinnerungs-E-Mails verwenden feste Systemvorlagen; der Text lässt sich nicht bearbeiten.

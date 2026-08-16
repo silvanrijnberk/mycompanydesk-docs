@@ -13,7 +13,7 @@ Lorsque vous envoyez une facture, un **lien de paiement** unique est genere. Lor
 1. **Consulter la facture** -- Voir tous les details, lignes et totaux
 2. **Telecharger le PDF** -- Obtenir une copie de la facture
 3. **Payer en ligne** -- Effectuer le paiement via le portail
-4. **Confirmer le paiement** -- Attester d'un virement bancaire (non visible pour les avoirs et les factures annulées, car le client n'a dans aucun des deux cas rien à payer)
+4. **Confirmer le paiement** -- Attester d'un virement bancaire (non visible pour les avoirs, les factures annulées ou les factures d'origine entièrement créditées, car le client n'a dans aucun de ces cas rien à payer)
 
 ## Fonctionnalites du portail
 
@@ -26,12 +26,12 @@ Le portail affiche une vue claire et personnalisee de la facture comprenant :
 - Les lignes avec descriptions et montants
 - La ventilation de la TVA
 - Le montant total dû
-- Le montant déjà reçu et le solde restant (pour les factures partiellement payées)
+- Le montant déjà reçu, l'avoir appliqué et le solde restant (pour les factures partiellement payées ou créditées)
 - La date d'échéance
 
 ### Paiement
 
-Les clients peuvent payer directement via le portail. Si vous avez connecte Mollie ou Stripe, des boutons de paiement apparaissent sur la vue de la facture pour que votre client puisse payer en un clic. Les boutons de paiement et le montant total dû sont masqués pour les avoirs et les factures annulées, car le client n'a dans aucun des deux cas d'argent à transférer. Pour les factures partiellement payées, le portail affiche le montant déjà reçu et le solde restant avant le paiement, afin que le montant sur le bouton de paiement corresponde au montant de la facture. Lorsqu un client suit un lien autopay (par exemple depuis un rappel de paiement), le portail fait defiler jusqu au bon bouton de paiement et le met en evidence avec une animation pulsante au lieu de rediriger automatiquement vers le processus de paiement. Ainsi, le client peut consulter la facture avant de payer. Lorsque le paiement est confirme, le statut de la facture dans votre tableau de bord est automatiquement mis a jour a **Payee**.
+Les clients peuvent payer directement via le portail. Si vous avez connecte Mollie ou Stripe, des boutons de paiement apparaissent sur la vue de la facture pour que votre client puisse payer en un clic. Les boutons de paiement et le montant total dû sont masqués pour les avoirs, les factures annulées et les factures d'origine entièrement créditées, car le client n'a dans aucun de ces cas d'argent à transférer. Pour les factures avec paiements partiels ou avoirs, le portail affiche le montant déjà reçu, l'avoir appliqué et le solde restant dû avant le paiement, de sorte que le montant sur le bouton de paiement corresponde au montant restant dû. Lorsqu un client suit un lien autopay (par exemple depuis un rappel de paiement), le portail fait defiler jusqu au bon bouton de paiement et le met en evidence avec une animation pulsante au lieu de rediriger automatiquement vers le processus de paiement. Ainsi, le client peut consulter la facture avant de payer. Lorsque le paiement est confirme, le statut de la facture dans votre tableau de bord est automatiquement mis a jour a **Payee**.
 
 #### Parametres de paiement Mollie
 
