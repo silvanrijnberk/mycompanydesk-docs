@@ -82,6 +82,8 @@ Senden Sie die Rechnung per E-Mail an Ihren Kunden. Die E-Mail enthält:
 - Die Rechnungs-PDF als Anhang
 - Einen Zahlungslink für die Online-Zahlung
 
+Vor dem Versenden zeigt die E-Mail-Vorschau die Nachricht genau so, wie der Kunde sie erhält. Im Sende-Dialog schalten Sie die **Ansehen-Schaltfläche**, **Download-Schaltfläche**, **PDF-Anhang**, **Rechnungspositionen** und, falls Online-Zahlungen aktiviert sind, die Schaltfläche **Zahlung bestätigen** ein oder aus. Diese Schalter werden direkt in der Vorschau übernommen, sodass Sie genau sehen, was der Kunde bekommt.
+
 Wenn in Ihrem Arbeitsbereich Allgemeine Geschäftsbedingungen in Dokumenten hinterlegt sind, zeigt der E-Mail-Vorschau-Dialog außerdem den Schalter **Allgemeine Geschäftsbedingungen mitschicken** an. Bei Rechnungen ist er standardmäßig deaktiviert. Wenn Sie ihn einschalten, wird die aktuelle AGB-PDF der E-Mail beigefügt und der Versand als Übergabemoment auf dem AGB-Dokument protokolliert.
 
 ### Als Peppol E-Rechnung senden
@@ -154,7 +156,7 @@ Online-Zahlungen über Mollie oder Stripe können direkt aus MyCompanyDesk rück
 
 Teilrückerstattungen, die Sie bei Mollie oder Stripe auslösen (zum Beispiel, wenn Sie dort nur einen Teil des Betrags zurückerstatten), erscheinen jetzt in der Zahlungsliste mit dem Rückerstattungsdatum und dem noch gebuchten Restbetrag.
 
-Offline-Zahlungsmethoden (Banküberweisung, Bargeld) nutzen den bestehenden Stornierungsweg: die Zahlung wird ohne anbieterseitige Rückerstattung als storniert markiert.
+Offline-Zahlungsmethoden (Banküberweisung, Bargeld) nutzen den bestehenden Stornierungsweg: die Zahlung wird ohne anbieterseitige Rückerstattung als storniert markiert. Wenn Sie eine Zahlung stornieren, wird der Rechnungsstatus auf den Zustand zurückgesetzt, der zur Rechnungshistorie passt. War die Rechnung bereits per E-Mail an den Kunden versendet, springt sie zurück auf **Gesendet**; war sie noch nie versendet, springt sie zurück auf **Offen**. Der ursprüngliche Versandverlauf bleibt erhalten.
 
 So erstatten Sie eine Zahlung:
 

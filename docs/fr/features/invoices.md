@@ -82,6 +82,8 @@ Envoyez la facture a votre client par e-mail. L'e-mail comprend :
 - La facture PDF en piece jointe
 - Un lien de paiement pour le paiement en ligne
 
+Avant l'envoi, l'apercu d'e-mail montre le message exactement comme le client le recevra. La boite d'envoi propose des options pour le bouton **Voir**, le bouton **Telecharger**, la **piece jointe PDF**, les **lignes de facturation** et, si les paiements en ligne sont actives, le bouton **Confirmer le paiement**. Ces options sont immediatement refletees dans l'apercu, donc ce que vous voyez est ce que le client recevra.
+
 Si votre espace de travail a des conditions generales dans Documents, l'apercu d'e-mail comprend aussi l'option **Joindre les conditions generales**. Pour les factures, elle est desactivee par defaut. Quand elle est activee, le PDF des conditions actuelles est joint a l'e-mail et l'envoi est enregistre comme evenement de remise sur le document des conditions.
 
 ### Envoyer en tant que facture electronique Peppol
@@ -154,7 +156,7 @@ Les paiements en ligne effectues via Mollie ou Stripe peuvent etre rembourses di
 
 Les remboursements partiels inities chez Mollie ou Stripe (par exemple, lorsque vous ne remboursez qu'une partie du montant la-bas) apparaissent desormais dans la liste des paiements avec la date du remboursement et le montant restant comptabilise.
 
-Les methodes de paiement hors ligne (virement bancaire, especes) utilisent le chemin d'annulation existant: le paiement est marque comme annule sans remboursement cote prestataire.
+Les methodes de paiement hors ligne (virement bancaire, especes) utilisent le chemin d'annulation existant : le paiement est marque comme annule sans remboursement cote prestataire. Quand vous annulez un paiement, le statut de la facture revient a l'etat qui correspond a son historique. Si la facture avait deja ete envoyee par e-mail au client, elle repasse a **Envoyee** ; si elle n'avait jamais ete envoyee, elle repasse a **En attente**. L'historique d'envoi original est conserve.
 
 Pour rembourser un paiement :
 
