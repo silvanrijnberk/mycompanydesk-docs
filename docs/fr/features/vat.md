@@ -6,7 +6,7 @@ title: Gestion de la TVA
 
 # Gestion de la TVA
 
-Suivez la TVA collectée et payée, préparez votre déclaration et gardez une longueur d'avance sur les échéances. MyCompanyDesk prend en charge le parcours de TVA néerlandais (BTW) : la page reflète la déclaration du Belastingdienst, si bien que les chiffres que vous voyez sont ceux que vous déposez.
+Suivez la TVA collectée et payée, préparez votre déclaration et gardez une longueur d'avance sur les échéances. MyCompanyDesk prend en charge des flux TVA spécifiques à chaque pays : pour les entreprises aux Pays-Bas, la page reflète le formulaire Aangifte du Belastingdienst ; pour les autres pays pris en charge, elle applique les règles et échéances locales. Les chiffres que vous voyez sont donc ceux que vous déposez.
 
 ## Structure de la page
 
@@ -19,7 +19,9 @@ La page TVA compte trois onglets : **Aperçu**, **Déclaration** et **Transactio
 La carte principale résume la période choisie :
 
 - **Solde** : TVA nette (collectée moins payée) avec la mention "te betalen" ou "terug te ontvangen". Le solde suit le sélecteur de période.
-- **Anneau d'échéance** : un compte à rebours circulaire jusqu'à la prochaine échéance de dépôt. Rouge à 3 jours ou moins, orange jusqu'à 14 jours, vert sinon.
+- **Anneau d'échéance** : un compte à rebours circulaire jusqu'à la prochaine échéance de dépôt, calculé selon le pays de votre espace de travail. Rouge à 3 jours ou moins, orange jusqu'à 14 jours, vert sinon.
+
+<!-- TODO(source-missing): RichardTool 8bd35ae1 a introduit des échéances de dépôt de TVA spécifiques par pays (NL, GB, DE et autres). Les règles exactes d'échéance par pays ne sont pas encore dans sources/. Ne listez pas de dates spécifiques par pays tant qu'un humain ne les a pas ajoutées à sources/. -->
 - **Provision TVA (BTW-spaarpotje)** : une réserve suggérée égale au solde de la période plus une marge de 10 %, affichée quand vous devez de la TVA. Si un remboursement vous est dû, la tuile devient une tuile verte de remboursement.
 
 Deux boutons figurent sous le solde : **Vers la déclaration** mène à l'onglet Déclaration, et **Comment est-ce calculé ?** détaille le calcul du solde.

@@ -6,7 +6,7 @@ title: BTW-beheer
 
 # BTW-beheer
 
-Volg ontvangen en betaalde BTW, bereid je aangifte voor en blijf deadlines voor. MyCompanyDesk ondersteunt de Nederlandse BTW-stroom: de pagina spiegelt de aangifte van de Belastingdienst, zodat de cijfers die je ziet de cijfers zijn die je indient.
+Volg ontvangen en betaalde BTW, bereid je aangifte voor en blijf deadlines voor. MyCompanyDesk ondersteunt landsspecifieke BTW-stromen: voor Nederlandse bedrijven spiegelt de pagina het aangifteformulier van de Belastingdienst, en voor andere ondersteunde landen gebruikt hij de aangifteregels en deadlines van dat land. Zo zijn de cijfers die je ziet de cijfers die je indient.
 
 ## Pagina-indeling
 
@@ -19,7 +19,9 @@ Naast de tabbladen staat een paginabrede periodekiezer (Q1 tot en met Q4 plus he
 De herokaart vat de gekozen periode samen:
 
 - **Saldo**: netto BTW (ontvangen minus betaald) met het label "te betalen" of "terug te ontvangen". Het volgt de periodekiezer.
-- **Deadlinering**: een ronde aftelring naar de volgende aangiftedeadline. Rood bij 3 dagen of minder, oranje tot 14 dagen, anders groen.
+- **Deadlinering**: een ronde aftelring naar de volgende aangiftedeadline, berekend op basis van het land van je werkruimte. Rood bij 3 dagen of minder, oranje tot 14 dagen, anders groen.
+
+<!-- TODO(source-missing): RichardTool 8bd35ae1 introduceerde landsspecifieke BTW-aangiftedeadlines (NL, GB, DE en andere). De exacte deadline-regels per land staan nog niet in sources/. Vermeld geen specifieke deadlines per land totdat een mens ze aan sources/ heeft toegevoegd. -->
 - **BTW-spaarpotje**: een voorgestelde reservering van het periodesaldo plus een buffer van 10%, zichtbaar wanneer je BTW moet betalen. Krijg je geld terug, dan verandert de tegel in een groene teruggavetegel.
 
 Onder het saldo staan twee knoppen: **Naar aangifte** springt naar het tabblad Aangifte, en **Hoe wordt dit berekend?** loopt de rekensom achter het saldo door.
