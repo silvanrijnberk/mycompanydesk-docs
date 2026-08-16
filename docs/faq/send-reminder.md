@@ -24,4 +24,11 @@ You cannot send a reminder when:
 - the invoice has been fully credited by a credit note
 - nothing is left outstanding (for example, the customer paid while the page was open)
 
-Best practice: Send reminders at 1 day before due date (friendly), 3 days after (firm), and 10 days after (final notice). Escalate to a phone call after that.
+When an invoice becomes overdue, the invoice detail page shows a suggested next step:
+
+- **Send reminder** — for invoices that are slightly past due
+- **Send firmer reminder** — for invoices that have already been reminded once
+- **Send an urgent reminder** — for invoices more than a few days late. The button opens the reminder dialog; the detail line also suggests calling the customer or offering a payment plan.
+- **Create a credit note or correction** — if the customer disputes the invoice or the amounts have changed
+
+For straightforward cases, send reminders at 1 day before due date (friendly), 3 days after (firm), and 10 days after (final notice). Escalate to a phone call after that.

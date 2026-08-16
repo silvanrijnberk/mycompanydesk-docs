@@ -48,6 +48,8 @@ Prefer to log just a total per day? Enable **Hours only mode** in the schedule s
 
 ## Invoicing your hours
 
+The rate shown for each time entry is the **effective hourly rate** for that entry. If the entry has its own hourly rate, that rate is used; otherwise it falls back to the project rate, then to the customer rate, and finally to your workspace default rate. This means the line amount on an invoice always reflects the actual rate stored with the entry.
+
 ### Create an invoice from the Schedule page
 
 When you have uninvoiced entries, click **Create Invoice**. A drawer opens where you pick a customer; it lists all uninvoiced entries for that customer with their total. Confirm, and a draft invoice is created with one line per entry. Billable travel time and travel costs linked to those entries are added as separate lines.

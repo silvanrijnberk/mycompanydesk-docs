@@ -13,4 +13,4 @@ Pour effectuer une recherche rapide dans l'application :
 3. Les résultats se filtrent en temps réel pendant la saisie
 4. Cliquez sur un résultat pour l'ouvrir directement
 
-Astuce : La recherche fonctionne sur la plupart des champs - essayez les noms de clients, les montants ou les dates.
+Astuce : les termes de recherche sont automatiquement nettoyés des espaces au début ou à la fin. Un texte collé avec une espace en marge renvoie les mêmes résultats, vous n'avez donc pas besoin de le corriger d'abord.

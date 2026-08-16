@@ -24,4 +24,13 @@ Eine Erinnerung kann nicht gesendet werden, wenn:
 - die Rechnung vollständig durch eine Gutschrift ausgeglichen wurde
 - nichts mehr offen steht (zum Beispiel weil der Kunde bezahlt hat, während die Seite geöffnet war)
 
+Wenn eine Rechnung ueberfaellig ist, schlaegt die Rechnungsdetailseite einen naechsten Schritt vor:
+
+- **Erinnerung senden** — fuer Rechnungen, die knapp ueber dem Fälligkeitsdatum liegen
+- **Schaerfere Erinnerung senden** — fuer bereits einmal erinnerte Rechnungen
+- **Dringende Erinnerung senden** — fuer Rechnungen, die mehr als ein paar Tage ueberfaellig sind. Der Knopf oeffnet den Erinnerungsdialog; die Detailzeile schlaegt zusaetzlich vor, den Kunden anzurufen oder eine Ratenzahlung anzubieten.
+- **Gutschrift oder Korrektur erstellen** — wenn der Kunde die Rechnung bestreitet oder sich Betraege geaendert haben
+
+Fuer die meisten Faelle senden Sie Erinnerungen 1 Tag vor dem Fälligkeitsdatum (freundlich), 3 Tage danach (fester) und 10 Tage danach (letzte Mahnung). Danach folgt ein Telefonat.
+
 Die Erinnerungsvorlage kannst du auch unter Einstellungen → E-Mails anpassen.

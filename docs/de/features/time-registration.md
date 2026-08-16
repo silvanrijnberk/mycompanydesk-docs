@@ -48,6 +48,8 @@ Möchten Sie lieber nur eine Tagessumme erfassen? Aktivieren Sie **Nur Stunden M
 
 ## Ihre Stunden abrechnen
 
+Der fuer jeden Zeiteintrag angezeigte Satz ist der **effektive Stundensatz** dieses Eintrags. Hat der Eintrag einen eigenen Stundensatz, wird dieser verwendet; andernfalls faellt er auf den Projektsatz zurueck, dann auf den Kundensatz und schliesslich auf den Arbeitsbereichs-Standard. Der Betrag einer Rechnungszeile spiegelt also immer den tatsaechlichen mit dem Eintrag gespeicherten Satz wider.
+
 ### Eine Rechnung von der Zeitplan-Seite erstellen
 
 Wenn nicht abgerechnete Einträge vorliegen, klicken Sie auf **Rechnung erstellen**. Ein Dialog öffnet sich, in dem Sie einen Kunden wählen; er listet alle nicht abgerechneten Einträge dieses Kunden mit ihrer Summe. Bestätigen Sie, und es entsteht ein Rechnungsentwurf mit einer Zeile pro Eintrag. Abrechenbare Reisezeit und Reisekosten, die mit diesen Einträgen verknüpft sind, werden als separate Zeilen hinzugefügt.

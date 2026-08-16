@@ -13,4 +13,4 @@ Um schnell in der Anwendung zu suchen:
 3. Ergebnisse werden in Echtzeit gefiltert, während du tippst
 4. Klicke auf ein Ergebnis, um es direkt zu öffnen
 
-Tipp: Die Suche funktioniert über die meisten Felder - probiere Kundennamen, Beträge oder Daten.
+Tipp: Suchbegriffe werden automatisch getrimmt. Eingefügter Text mit einem Leerzeichen davor oder danach liefert dieselben Treffer, du musst ihn also nicht erst bereinigen.
