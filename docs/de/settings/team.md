@@ -82,7 +82,7 @@ Rollen werden direkt in der Mitgliederzeile über ein Menü umgeschaltet (nur Ad
 
 ## Berechtigungen
 
-Das Panel **Zugang verwalten** öffnet eine Berechtigungstabelle pro Seite. Jede Zeile ist ein Bereich der App: Dashboard, Rechnungen, Ausgaben, Kunden, Projekte, Objekte, Verträge, Angebote, Vermietung, Berichte und Einstellungen.
+Das Panel **Zugang verwalten** öffnet eine Berechtigungstabelle pro Seite. Jede Zeile ist ein Bereich der App: Dashboard, Rechnungen, Ausgaben, Kunden, Projekte, Objekte, Verträge, Angebote, Vermietung, Berichte, Zeiterfassung, Steuern (USt) und Einstellungen.
 
 Für jede Seite gibt es drei unabhängige Schalter:
 

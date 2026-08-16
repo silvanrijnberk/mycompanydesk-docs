@@ -82,7 +82,7 @@ Les rôles se changent directement sur la ligne du membre via un menu (administr
 
 ## Permissions
 
-Le panneau **Gérer l'accès** ouvre un tableau de permissions par page. Chaque ligne correspond à une section de l'application : Tableau de bord, Factures, Dépenses, Clients, Projets, Objets, Contrats, Devis, Locations, Rapports et Paramètres.
+Le panneau **Gérer l'accès** ouvre un tableau de permissions par page. Chaque ligne correspond à une section de l'application : Tableau de bord, Factures, Dépenses, Clients, Projets, Objets, Contrats, Devis, Locations, Rapports, Suivi du temps, Taxes (TVA) et Paramètres.
 
 Pour chaque page, trois interrupteurs indépendants :
 

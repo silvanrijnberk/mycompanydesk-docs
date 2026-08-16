@@ -82,7 +82,7 @@ Roles are toggled inline on the member row via a dropdown (admin only). You can'
 
 ## Permissions
 
-The **Manage access** drawer opens a per-page permission table. Each row is one section of the app: Dashboard, Invoices, Expenses, Customers, Projects, Objects, Contracts, Quotes, Rentals, Reports, and Settings.
+The **Manage access** drawer opens a per-page permission table. Each row is one section of the app: Dashboard, Invoices, Expenses, Customers, Projects, Objects, Contracts, Quotes, Rentals, Reports, Time registration, Taxes (VAT), and Settings.
 
 For each page, three independent toggles:
 
