@@ -79,7 +79,7 @@ Chaque depense generee :
 
 ## Lien source
 
-Si une depense a ete creee a partir d'un modele recurrent, la page de detail de la depense affiche un bandeau **Cree automatiquement depuis une depense recurrente** avec un lien vers ce modele. Vous pouvez ainsi passer d'une depense individuelle au modele qui l'a generee en un clic.
+Si une depense a ete creee a partir d'un modele recurrent, la page de detail de la depense affiche un bandeau **Cree automatiquement depuis une depense recurrente**. Tant que le modele existe encore, le bandeau renvoie vers celui-ci et vous pouvez passer en un clic de la depense au modele qui l'a generee. S'il a ete supprime entre-temps, le bandeau affiche un simple texte au lieu d'un lien mort.
 
 ## Que se passe-t-il si ma formule change ?
 
