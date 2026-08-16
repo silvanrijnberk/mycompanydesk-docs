@@ -20,4 +20,6 @@ To configure:
 
 Note: Read is required before Write or Create works.
 
+The Payments page also requires Read access on the Invoices page, because payments can update invoice status (including marking invoices as paid) and process refunds.
+
 Create permission is scoped to new records only. A member with Create but no Write can add new records through the collection root, but cannot edit existing records, change status, use bulk actions, or confirm scanned receipts into new expenses.

@@ -20,4 +20,6 @@ Pour les configurer :
 
 Remarque : l'accès Lecture est nécessaire avant Écriture ou Création.
 
+La page Paiements nécessite aussi l'accès Lecture à la page Factures, car les paiements peuvent modifier le statut d'une facture (y compris marquer des factures comme payées) et traiter des remboursements.
+
 La permission Création ne s'applique qu'aux nouveaux enregistrements. Un membre disposant de Création mais pas d'Écriture peut ajouter de nouveaux enregistrements via le bouton normal, mais il ne peut pas modifier des enregistrements existants, changer un statut, utiliser des actions en masse ni confirmer des reçus scannés en une nouvelle dépense.

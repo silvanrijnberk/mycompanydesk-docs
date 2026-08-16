@@ -20,4 +20,6 @@ So richten Sie das ein:
 
 Hinweis: Lesen ist erforderlich, bevor Schreiben oder Erstellen funktioniert.
 
+Die Seite Zahlungen erfordert außerdem Lesezugriff auf die Seite Rechnungen, da Zahlungen den Rechnungsstatus ändern (einschließlich Rechnungen als bezahlt markieren) und Erstattungen verarbeiten können.
+
 Die Berechtigung Erstellen gilt nur für neue Einträge. Ein Teammitglied mit Erstellen, aber ohne Schreiben, kann über die reguläre Schaltfläche neue Einträge hinzufügen, aber bestehende Einträge nicht bearbeiten, den Status nicht ändern, keine Massenaktionen verwenden und keine gescannten Belege als neue Ausgabe bestätigen.

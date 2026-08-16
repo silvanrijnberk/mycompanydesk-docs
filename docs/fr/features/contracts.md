@@ -73,6 +73,12 @@ Les factures generees ne sont marquees comme factures de location que lorsque le
 
 Vous pouvez examiner et envoyer les factures generees manuellement, ou configurer l'envoi automatique. Lorsqu'un contrat est base sur un taux horaire, un taux journalier ou un prix forfaitaire de projet, vous recevez aussi une alerte quand le budget du contrat est depasse ou quand des heures saisies n'ont pas pu etre tarifees car aucun taux n'etait defini.
 
+### Notifications d'envoi et de facturation automatique
+
+Si une facture generee ne peut pas etre envoyee par e-mail au client, l'application cree une notification **Facture non envoyee**. Cela se produit par exemple lorsque le client n'a pas d'adresse e-mail, votre envoi d'e-mails n'est pas configure, l'adresse est bloquee apres un rebond ou un signalement de spam, ou que l'envoi echoue pour une autre raison. La notification ouvre la facture pour que vous puissiez resoudre le probleme et renvoyer.
+
+Si votre forfait n'inclut plus la facturation automatique des contrats, l'application cree une notification **Facturation automatique suspendue** des que des factures de contrat sont pretes mais ne partent pas. La notification indique combien de factures de contrat attendent et depuis quand, et vous renvoie vers la page d'abonnement pour changer de forfait.
+
 ## Période de facturation
 
 Les contrats facturent une période par rapport à la date de facture :

@@ -21,7 +21,7 @@ Om je meldingsinstellingen te beheren:
 
 1. Ga naar Instellingen → "Meldingen"
 2. Zet de meldingsonderwerpen aan of uit. De categorieën zijn:
-   - **Aandacht voor facturen**: te late facturen, facturen die bijna vervallen, concepten die blijven liggen, mislukte incasso's en uren zonder tarief.
+   - **Aandacht voor facturen**: te late facturen, facturen die bijna vervallen, concepten die blijven liggen, mislukte incasso's, facturen die niet bij de klant zijn aangekomen, stilgevallen automatische contractfacturatie en uren zonder tarief.
    - **Geld binnenkomt**: betalingen, bevestigde betalingen en opvallende banktransacties.
    - **Deadline in aantocht**: BTW, inkomstenbelasting, vennootschapsbelasting, de KOR-grens, en aflopende contracten of projecten. Je krijgt ze ruim van tevoren, zodat je nooit te laat bent. Deze categorie bevat ook automatische boekingen die niet konden worden gemaakt omdat de datum valt in een BTW-periode die al is aangegeven en vergrendeld, zoals een doorgestuurde inboxfactuur of een banktransactie. De melding noemt de leverancier en factuurdatum en wijst je naar de inbox of bankfeed, zodat je het in de huidige periode kunt boeken of een suppletieaangifte kunt indienen.
    - **Nieuwe kansen**: offerteaanvragen, ondertekende offertes en verkopen via je website.
