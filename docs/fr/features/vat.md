@@ -45,7 +45,7 @@ Une liste de contrôles exécutée sur la période active. Chaque contrôle a un
 - **Brouillons** : factures encore en brouillon qui ne compteront pas dans la déclaration.
 - **TVA manquante** : dépenses sans montant de TVA.
 - **Justificatifs manquants** : dépenses sans justificatif joint.
-- **ICP en attente** : ventes B2B intra-UE à déclarer séparément sur l'ICP-opgaaf.
+- **ICP en attente** : ventes B2B intra-UE à déclarer séparément sur l'ICP-opgaaf. Le montant et le compteur utilisent les mêmes règles de classification que l'ICP-opgaaf, afin de correspondre aux lignes qui apparaîtront réellement sur la déclaration.
 - **Origine de l'autoliquidation** : dépenses en autoliquidation dont le pays ou le numéro KVK du fournisseur manque, si bien que la rubrique 2a/4a/4b ne peut pas être justifiée.
 
 Un badge dans l'en-tête indique le nombre de points bloquants, ou que tout est en ordre.
@@ -79,6 +79,14 @@ La rubrique 4a concerne les achats en autoliquidation auprès de fournisseurs ho
 ### Exports pour votre comptable
 
 Une carte de téléchargement à côté de la feuille propose des exports CSV : un export complet pour votre comptable, un récapitulatif de TVA du trimestre choisi et une vue annuelle.
+
+Le nom du fichier ZIP inclut le nom de l'entreprise, la période et le profil d'export, et le fichier README à l'intérieur mentionne également l'entreprise. Ainsi, un comptable qui télécharge des exports pour plusieurs clients peut facilement différencier les fichiers.
+
+<!-- TODO(source-missing): RichardTool 4ffca446 affiche dans l'application un rappel de déclaration nulle mentionnant une invitation de la Belastingdienst et une verzuimboete. sources/ ne contient aucune source pour l'obligation de déclaration nulle néerlandaise ou les verzuimboetes ; ne citez pas cette affirmation tant qu'un humain n'a pas vérifié la règle sur belastingdienst.nl. -->
+
+### Rappel de déclaration nulle
+
+Lorsque la période sélectionnée est terminée et que les rubriques 5a et 5b sont toutes deux nulles, une carte d'information apparaît dans l'onglet Déclaration pour rappeler qu'une déclaration nulle peut encore devoir être déposée lorsque votre administration fiscale vous y a invité. La carte ne s'affiche pas pour les périodes terminées avant la création de l'espace de travail, car MyCompanyDesk ne détient aucune donnée pour ces périodes.
 
 ### Cartes internationales
 

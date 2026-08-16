@@ -45,7 +45,7 @@ Eine Checkliste, die gegen den aktiven Zeitraum läuft. Jede Prüfung hat einen 
 - **Entwürfe**: Rechnungen im Entwurfsstatus, die nicht in die Erklärung einfließen.
 - **Fehlende USt.**: Ausgaben ohne USt.-Betrag.
 - **Fehlende Belege**: Ausgaben ohne angehängten Beleg.
-- **ICP offen**: EU-B2B-Verkäufe, die separat in der ICP-Meldung anzugeben sind.
+- **ICP offen**: EU-B2B-Verkäufe, die separat in der ICP-Meldung anzugeben sind. Betrag und Anzahl verwenden dieselben Klassifizierungsregeln wie die ICP-Meldung, sodass sie zu den Zeilen passen, die tatsächlich übermittelt werden.
 - **Reverse-Charge-Ursprung**: Ausgaben mit Reverse-Charge-MwSt., bei denen das Land oder die KVK-Nummer des Lieferanten fehlt, sodass die Rubrik 2a/4a/4b nicht belegt werden kann.
 
 Ein Zähler in der Kopfzeile zeigt die Zahl der Blocker oder dass alles in Ordnung ist.
@@ -79,6 +79,14 @@ Rubrik 4a ist für Reverse-Charge-Einkäufe von Lieferanten außerhalb der EU (`
 ### Exporte für die Buchhaltung
 
 Eine Downloadkarte neben der Übersicht bietet CSV-Exporte: einen vollständigen Export für die Buchhaltung, eine USt.-Übersicht des gewählten Quartals und eine Jahresübersicht.
+
+Der ZIP-Dateiname enthält den Firmennamen, den Zeitraum und das Exportprofil, und auch die README nennt das Unternehmen. So kann eine Buchhaltung, die Exporte für mehrere Mandanten herunterlädt, die Dateien leicht unterscheiden.
+
+<!-- TODO(source-missing): RichardTool 4ffca446 zeigt in der App einen Hinweis auf Nullmeldungen mit Verweis auf eine Einladung der Belastingdienst und ein Verzuimboete. sources/ enthält keine Quelle für die niederländische Nullmeldungspflicht oder Verzuimboetes; gib diese Behauptung nicht wieder, bis ein Mensch die Regel auf belastingdienst.nl geprüft hat. -->
+
+### Hinweis auf Nullmeldung
+
+Ist der gewählte Zeitraum beendet und sind sowohl Rubrik 5a als auch 5b gleich null, erscheint auf dem Reiter Erklärung eine Infokarte, die daran erinnert, dass eine Nullmeldung möglicherweise trotzdem abgegeben werden muss, wenn das Finanzamt dich aufgefordert hat. Die Karte wird für Zeiträume nicht angezeigt, die vor der Erstellung des Arbeitsbereichs endeten, weil MyCompanyDesk für diese Zeiträume keine Daten hält.
 
 ### Internationale Karten
 
