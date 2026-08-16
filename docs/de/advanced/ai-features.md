@@ -69,7 +69,9 @@ KI kann klarere, professionellere Beschreibungen vorschlagen fur:
 1. Erstellen oder bearbeiten Sie einen Eintrag
 2. Achten Sie auf die KI-Vorschlagsanzeige
 3. Prufen Sie den Vorschlag
-4. Klicken Sie auf **Ubernehmen**, um ihn zu verwenden, oder auf **Ignorieren**, um ihn zu uberspringen
+4. Klicken Sie auf **Übernehmen**, um ihn zu verwenden, oder auf **Ignorieren**, um ihn zu überspringen
+
+Die Übernahme schreibt über denselben Pfad wie eine manuelle Bearbeitung. Eine Ausgabe im Papierkorb, eine gesperrte MwSt.-Periode oder eine archivierte/ungültige Kategorie blockiert die Übernahme mit denselben Fehlercodes, die Sie auch bei manueller Bearbeitung sehen. Bei erfolgreicher Übernahme schreibt MyCompanyDesk einen Audit-Log-Eintrag für die geänderten Felder, genau wie bei einer normalen Aktualisierung.
 
 ::: info
 KI-Vorschlage erfordern den **Starter**-Tarif oder hoher. Aktivieren Sie sie unter **Unternehmen > Funktionen**.

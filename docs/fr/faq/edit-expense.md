@@ -14,3 +14,5 @@ Pour modifier une dépense :
 4. Enregistrez vos modifications
 
 Une dépense dans la corbeille ne peut pas être modifiée. Restaurez-la depuis la corbeille d'abord, puis modifiez-la.
+
+Les mêmes restrictions s'appliquent lorsque vous acceptez une suggestion IA. Une dépense dans la corbeille ou une période de TVA verrouillée bloque le bouton Appliquer, et la suggestion n'est pas écrite.

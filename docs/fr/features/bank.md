@@ -57,6 +57,8 @@ Pour chaque brouillon, vous pouvez :
 - **Modifier** : ouvrir la dépense pour ajuster la catégorie, la TVA ou le montant avant de comptabiliser.
 - **Rejeter** : écarter le brouillon. La transaction retourne dans le flux pour un traitement manuel.
 
+Si la puce de catégorie choisie a été archivée depuis le chargement de la page, l'action Confirmer ou Modifier est refusée avec l'erreur `EXPENSE_CATEGORY_UNKNOWN` au lieu de comptabiliser silencieusement la dépense sous une autre catégorie. Actualisez la page pour charger la liste des catégories actuelles et choisissez à nouveau.
+
 ## Réglages du flux
 
 Sur la même page de réglages, vous contrôlez le comportement du flux :

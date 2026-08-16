@@ -71,6 +71,8 @@ L'IA peut suggerer des descriptions plus claires et plus professionnelles pour :
 3. Examinez la suggestion
 4. Cliquez sur **Appliquer** pour l'utiliser, ou sur **Ignorer** pour passer
 
+Appliquer passe par le même chemin d'écriture qu'une modification manuelle. Une dépense à la corbeille, une période de TVA verrouillée ou une catégorie archivée/invalide bloque l'action avec les mêmes codes d'erreur que lors d'une modification manuelle. En cas de succès, MyCompanyDesk écrit une entrée de journal d'audit pour les champs modifiés, comme pour une modification normale.
+
 ::: info
 Les suggestions IA necessitent le plan **Starter** ou superieur. Activez-les via **Entreprise > Fonctionnalites**.
 :::

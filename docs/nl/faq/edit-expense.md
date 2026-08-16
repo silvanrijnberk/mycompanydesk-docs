@@ -14,3 +14,5 @@ Om een uitgave te bewerken:
 4. Sla je wijzigingen op
 
 Een uitgave in de prullenbak kun je niet bewerken. Zet hem eerst terug uit de prullenbak en maak dan je wijzigingen.
+
+Dezelfde beperkingen gelden als je een AI-suggestie toepast. Een uitgave in de prullenbak of een vergrendelde BTW-periode blokkeert de knop Toepassen, en de suggestie wordt niet weggeschreven.

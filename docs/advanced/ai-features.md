@@ -94,6 +94,8 @@ The classifier is invoked from `expense-categories.service.classifyVendor(compan
 
 After an entity is created, the AI-suggestions service queues a low-priority LLM analysis and writes results into `ai_suggestions`. Surfaces include category fixes for expenses set to `other` and description-quality improvements for invoice line items, expenses, and customer notes.
 
+Applying a suggestion writes through the same expense update path as a manual edit. A trashed expense, a locked VAT period, or an archived/invalid category blocks the apply action with the same error codes you see when editing manually. When the update succeeds, MyCompanyDesk records an audit log entry for the changed fields, just like a regular edit.
+
 The interesting bit is the **feedback loop**:
 
 1. When you accept a suggestion, the input text is embedded (Workers AI `bge-m3` primary, Gemini fallback) and stored in `suggestion_examples` with the accepted value.

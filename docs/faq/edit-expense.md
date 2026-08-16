@@ -16,3 +16,5 @@ To edit an expense:
 Open the attachment section on the same record if you also need to replace or add the receipt file.
 
 A trashed expense cannot be edited. Restore it from Trash first, then make your changes.
+
+The same restrictions apply when you accept an AI suggestion. A trashed expense or a locked VAT period blocks the Apply button, and the suggestion is not written.

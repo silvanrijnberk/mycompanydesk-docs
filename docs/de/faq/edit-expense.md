@@ -14,3 +14,5 @@ So bearbeitest du eine Ausgabe:
 4. Speichere deine Änderungen
 
 Eine Ausgabe im Papierkorb kann nicht bearbeitet werden. Stelle sie zuerst aus dem Papierkorb wieder her und bearbeite sie dann.
+
+Die gleichen Einschränkungen gelten, wenn Sie einen KI-Vorschlag übernehmen. Eine Ausgabe im Papierkorb oder eine gesperrte MwSt.-Periode blockiert die Übernahme, und der Vorschlag wird nicht geschrieben.

@@ -57,6 +57,8 @@ Für jeden Entwurf können Sie:
 - **Bearbeiten**: die Ausgabe öffnen, um Kategorie, USt. oder Betrag vor dem Buchen anzupassen.
 - **Ablehnen**: den Entwurf verwerfen. Die Transaktion geht zur manuellen Bearbeitung zurück in den Feed.
 
+Wenn die von Ihnen gewählte Kategorie seit dem Laden der Seite archiviert wurde, wird die Aktion Bestätigen oder Bearbeiten mit dem Fehler `EXPENSE_CATEGORY_UNKNOWN` abgelehnt, anstatt die Ausgabe stumm unter einer anderen Kategorie zu buchen. Laden Sie die Seite neu, um die aktuelle Kategorieliste zu laden, und wählen Sie erneut.
+
 ## Feedeinstellungen
 
 Auf derselben Einstellungsseite steuern Sie das Verhalten des Feeds:

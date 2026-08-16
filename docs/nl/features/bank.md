@@ -57,6 +57,8 @@ Per concept kun je:
 - **Bewerken**: de uitgave openen om categorie, BTW of bedrag aan te passen voordat je boekt.
 - **Afwijzen**: het concept verwijderen. De transactie gaat terug naar de feed voor handmatige afhandeling.
 
+Als de categoriechip die je hebt gekozen sinds het laden van de pagina is gearchiveerd, wordt de actie Bevestigen of Bewerken geweigerd met de fout `EXPENSE_CATEGORY_UNKNOWN` in plaats van stilzwijgend een andere categorie te kiezen. Ververs de pagina om de huidige categorielijst te laden en kies opnieuw.
+
 ## Feedinstellingen
 
 Op dezelfde instellingenpagina bepaal je hoe de feed zich gedraagt:
