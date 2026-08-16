@@ -1,6 +1,6 @@
 ---
 title: "Supprimer une dépense"
-last_verified: 2026-05-09
+last_verified: 2026-08-16
 chatbot:
   triggers: ["delete expense", "remove expense", "trash expense", "erase expense", "uitgave verwijderen", "uitgave wissen", "hoe verwijder ik een uitgave", "ausgabe loschen", "wie losche ich eine ausgabe", "supprimer depense"]
   actions:
@@ -15,3 +15,5 @@ Pour supprimer une dépense :
 4. Confirmez la suppression
 
 La suppression se fait par étapes. Supprimer une dépense active l'archive d'abord, la supprimer à nouveau depuis les Archives la déplace vers la Corbeille, et la supprimer depuis la Corbeille est définitif. Jusqu'à cette dernière étape, vous pouvez toujours restaurer la dépense depuis la vue Archives ou Corbeille. Attention : sélectionner des dépenses dans la liste et y utiliser l'action groupée Supprimer les supprime définitivement tout de suite.
+
+Les dépenses dans la Corbeille ne peuvent pas être modifiées. Restaurez la dépense d'abord si vous devez la modifier.

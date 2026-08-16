@@ -1,6 +1,6 @@
 ---
 title: "Uitgave verwijderen"
-last_verified: 2026-05-09
+last_verified: 2026-08-16
 chatbot:
   triggers: ["delete expense", "remove expense", "trash expense", "erase expense", "uitgave verwijderen", "uitgave wissen", "hoe verwijder ik een uitgave", "ausgabe loschen", "wie losche ich eine ausgabe", "supprimer depense"]
   actions:
@@ -15,3 +15,5 @@ Om een uitgave te verwijderen:
 4. Bevestig de verwijdering
 
 Verwijderen gaat in stappen. Een actieve uitgave verwijderen archiveert deze eerst, nog een keer verwijderen vanuit het Archief verplaatst de uitgave naar de Prullenbak, en verwijderen vanuit de Prullenbak is definitief. Tot die laatste stap kun je de uitgave altijd terugzetten vanuit de weergave Archief of Prullenbak. Let op: uitgaven selecteren in de lijst en daar de bulkactie Verwijderen gebruiken verwijdert ze meteen definitief.
+
+Een uitgave in de Prullenbak kun je niet bewerken. Wil je toch iets wijzigen, zet hem dan eerst terug.

@@ -1,5 +1,5 @@
 ---
-title: "Find deleted expenses"
+title: "Gelöschte Ausgaben finden"
 last_verified: 2026-08-16
 chatbot:
   triggers:
@@ -26,8 +26,8 @@ chatbot:
     - "How do I restore an expense?"
 ---
 
-Deleted expenses are in Expenses -> Trash. If you are already in the expense list, switch to the Trash view.
+Gelöschte Ausgaben finden Sie unter Ausgaben -> Papierkorb. Wenn Sie bereits in der Ausgabenliste sind, wechseln Sie zur Ansicht Papierkorb.
 
-Keep in mind that deletion is staged: the first delete on an active expense archives it, so if an expense is not in the Trash, check the Archive view. Deleting an archived expense moves it to the Trash, and deleting it from the Trash removes it permanently.
+Beachten Sie, dass das Löschen mehrstufig ist: Der erste Löschvorgang bei einer aktiven Ausgabe archiviert sie. Wenn eine Ausgabe also nicht im Papierkorb ist, prüfen Sie die Ansicht Archiv. Das Löschen einer archivierten Ausgabe verschiebt sie in den Papierkorb, und das Löschen aus dem Papierkorb entfernt sie endgültig.
 
-Trashed expenses cannot be edited. If you need to change a trashed expense, restore it from Trash first.
+Ausgaben im Papierkorb können nicht bearbeitet werden. Stellen Sie die Ausgabe zuerst aus dem Papierkorb wieder her, wenn Sie etwas ändern möchten.
