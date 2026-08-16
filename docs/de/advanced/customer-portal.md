@@ -26,11 +26,12 @@ Das Portal zeigt eine übersichtliche, gebrandete Ansicht der Rechnung, einschli
 - Positionen mit Beschreibungen und Beträgen
 - USt.-Aufschlüsselung
 - Fälliger Gesamtbetrag
+- Bereits erhaltener Betrag und Restbetrag (bei teilweise bezahlten Rechnungen)
 - Fälligkeitsdatum
 
 ### Zahlung
 
-Kunden können direkt über das Portal bezahlen. Wenn Sie Mollie oder Stripe verbunden haben, erscheinen Zahlungsschaltflächen auf der Rechnungsansicht, sodass Ihr Kunde mit einem Klick bezahlen kann. Zahlungsschaltflächen und der fällige Gesamtbetrag werden für Gutschriften und stornierte Rechnungen ausgeblendet, da der Kunde in beiden Fällen kein Geld mehr überweisen muss. Wenn ein Kunde einem Autopay-Link folgt (zum Beispiel aus einer Zahlungserinnerung), scrollt das Portal zur richtigen Zahlungsschaltfläche und hebt sie mit einer pulsierenden Animation hervor, anstatt automatisch zum Zahlungsvorgang weiterzuleiten. So kann der Kunde die Rechnung vor der Zahlung prüfen. Wenn die Zahlung bestätigt wird, aktualisiert sich der Rechnungsstatus in Ihrem Dashboard automatisch auf **Bezahlt**.
+Kunden können direkt über das Portal bezahlen. Wenn Sie Mollie oder Stripe verbunden haben, erscheinen Zahlungsschaltflächen auf der Rechnungsansicht, sodass Ihr Kunde mit einem Klick bezahlen kann. Zahlungsschaltflächen und der fällige Gesamtbetrag werden für Gutschriften und stornierte Rechnungen ausgeblendet, da der Kunde in beiden Fällen kein Geld mehr überweisen muss. Bei teilweise bezahlten Rechnungen zeigt das Portal den bereits erhaltenen Betrag und die noch offene Restsumme an, bevor der Kunde zahlt, damit der Betrag auf der Zahlungsschaltfläche mit dem Rechnungsbetrag übereinstimmt. Wenn ein Kunde einem Autopay-Link folgt (zum Beispiel aus einer Zahlungserinnerung), scrollt das Portal zur richtigen Zahlungsschaltfläche und hebt sie mit einer pulsierenden Animation hervor, anstatt automatisch zum Zahlungsvorgang weiterzuleiten. So kann der Kunde die Rechnung vor der Zahlung prüfen. Wenn die Zahlung bestätigt wird, aktualisiert sich der Rechnungsstatus in Ihrem Dashboard automatisch auf **Bezahlt**.
 
 #### Mollie-Zahlungseinstellungen
 

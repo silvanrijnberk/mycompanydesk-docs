@@ -15,4 +15,4 @@ Om een gedeeltelijke betaling op een factuur vast te leggen:
 4. Sla op - de factuurstatus verandert naar Gedeeltelijk betaald
 5. Herhaal wanneer er aanvullende betalingen binnenkomen
 
-Tip: Het resterende saldo wordt automatisch bijgehouden en verschijnt op de factuurdetailpagina.
+Tip: Het resterende saldo wordt automatisch bijgehouden en verschijnt op de factuurdetailpagina. In het klantportaal zien klanten bij gedeeltelijk betaalde facturen ook het al ontvangen bedrag en het openstaande restant voordat ze afrekenen.
