@@ -73,6 +73,12 @@ Gegenereerde facturen krijgen alleen het label huurfactuur als het contract een 
 
 Je kunt gegenereerde facturen handmatig bekijken en versturen, of automatische verzending instellen. Als een contract gebaseerd is op een uur-, dag- of vaste projectprijs, krijg je een waarschuwing wanneer het contractbudget wordt overschreden of wanneer geboekte uren niet kunnen worden geprijsd omdat geen tarief is ingesteld.
 
+### Meldingen bij verzenden en automatisch factureren
+
+Als een gegenereerde factuur niet per e-mail naar de klant kan worden verstuurd, maakt de app een melding **Factuur niet verstuurd**. Dat gebeurt bijvoorbeeld als de klant geen e-mailadres heeft, je eigen e-mailkoppeling niet is ingericht, het adres is geblokkeerd na een bounce of spammelding, of het versturen om een andere reden mislukt. De melding opent de factuur zodat je het probleem kunt oplossen en opnieuw kunt versturen.
+
+Als je huidige pakket automatisch factureren niet meer dekt, maakt de app een melding **Automatisch factureren staat stil** zodra er contractfacturen klaarstaan die niet de deur uit gaan. De melding vertelt hoeveel contractfacturen er wachten en sinds wanneer, en wijst je naar de abonnementspagina om te upgraden.
+
 ## Factuurperiode
 
 Contracten factureren voor een periode ten opzichte van de factuurdatum:

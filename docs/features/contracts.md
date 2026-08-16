@@ -73,6 +73,12 @@ Generated invoices are tagged as rental invoices only when the contract is a ren
 
 You can review and send generated invoices manually, or configure auto-sending. When a contract is based on an hourly, daily or fixed project price, you also get a warning when the contract budget is exceeded or when logged hours cannot be priced because no rate was set.
 
+### Invoice delivery and auto-invoicing notifications
+
+If a generated invoice cannot be emailed to the customer, the app creates an **Invoice not sent** notification. This happens when the customer has no email address, your sender email is not configured, the address is blocked after a bounce or spam report, or the send fails for another reason. The notification opens the invoice so you can fix the cause and resend.
+
+If your plan no longer includes automatic contract invoicing, the app creates an **Auto-invoicing paused** notification when contract invoices are ready but not being sent. The notification tells you how many contract invoices are waiting and since when, and points you to the subscription page to upgrade.
+
 ## Invoice period
 
 Contracts bill for a period relative to the invoice date:

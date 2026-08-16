@@ -20,4 +20,6 @@ Om dit in te stellen:
 
 Opmerking: Lezen is nodig voordat Schrijven of Aanmaken werkt.
 
+De pagina Betalen vereist ook leestoegang op de pagina Facturen, omdat betalingen de factuurstatus kunnen wijzigen (onder andere facturen als betaald markeren) en terugbetalingen kunnen verwerken.
+
 Het recht Aanmaken geldt alleen voor nieuwe gegevens. Een teamlid met Aanmaken maar zonder Schrijven kan via de gewone knop nieuwe records toevoegen, maar mag bestaande records niet bewerken, de status niet wijzigen, geen bulkacties gebruiken en geen gescande bonnen bevestigen als nieuwe uitgave.

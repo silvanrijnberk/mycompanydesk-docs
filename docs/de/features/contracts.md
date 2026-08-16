@@ -73,6 +73,12 @@ Generierte Rechnungen werden nur dann als Mietrechnungen gekennzeichnet, wenn es
 
 Sie können generierte Rechnungen manuell überprüfen und versenden oder den automatischen Versand konfigurieren. Wenn ein Vertrag auf einem Stundensatz, Tagessatz oder festen Projektpreis basiert, erhalten Sie auch eine Warnung, wenn das Vertragsbudget überschritten wird oder erfasste Stunden nicht bewertet werden konnten, weil kein Satz hinterlegt war.
 
+### Benachrichtigungen zu Versand und automatischer Rechnungsstellung
+
+Wenn eine erstellte Rechnung nicht per E-Mail an den Kunden versendet werden kann, erstellt die App eine Benachrichtigung **Rechnung nicht versendet**. Das passiert zum Beispiel, wenn der Kunde keine E-Mail-Adresse hat, Ihr E-Mail-Versand nicht eingerichtet ist, die Adresse nach einem Bounce oder Spam-Hinweis blockiert ist oder das Versenden aus einem anderen Grund fehlschlägt. Die Benachrichtigung öffnet die Rechnung, damit Sie die Ursache beheben und erneut senden können.
+
+Wenn Ihr Paket die automatische Vertragsrechnungsstellung nicht mehr umfasst, erstellt die App eine Benachrichtigung **Automatische Rechnungsstellung pausiert**, sobald Vertragsrechnungen bereitstehen, aber nicht versendet werden. Die Benachrichtigung nennt die Anzahl wartender Vertragsrechnungen und seit wann, und verweist Sie auf die Abonnementseite, um zu upgraden.
+
 ## Rechnungszeitraum
 
 Verträge berechnen einen Zeitraum relativ zum Rechnungsdatum:
