@@ -1,6 +1,6 @@
 ---
 title: Uitgaven
-last_verified: 2026-08-15
+last_verified: 2026-08-16
 ---
 
 # Uitgaven
@@ -16,6 +16,8 @@ De uitgavenpagina toont al je geregistreerde uitgaven. De betaalstatus-tabs in d
 - **Betaald**: al betaalde uitgaven
 
 Je kunt nog steeds filteren op categorie, project, datumbereik of status. Klik op een uitgave om de detailpagina te openen; klik op **Nieuw** om er handmatig een toe te voegen, of **Scan bon** om er een te extraheren uit een afbeelding of PDF.
+
+Uitgaven in de prullenbak zijn zichtbaar via de weergave Prullenbak, maar je kunt ze niet bewerken, als betaald markeren of hun bon vervangen. Zet de uitgave eerst terug als je iets wilt wijzigen.
 
 ## Uitgavecategorieën
 

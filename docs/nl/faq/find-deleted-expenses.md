@@ -1,5 +1,5 @@
 ---
-title: "Find deleted expenses"
+title: "Verwijderde uitgaven vinden"
 last_verified: 2026-08-16
 chatbot:
   triggers:
@@ -26,8 +26,8 @@ chatbot:
     - "How do I restore an expense?"
 ---
 
-Deleted expenses are in Expenses -> Trash. If you are already in the expense list, switch to the Trash view.
+Verwijderde uitgaven vind je onder Uitgaven -> Prullenbak. Sta je al in de uitgavenlijst, schakel dan over naar de weergave Prullenbak.
 
-Keep in mind that deletion is staged: the first delete on an active expense archives it, so if an expense is not in the Trash, check the Archive view. Deleting an archived expense moves it to the Trash, and deleting it from the Trash removes it permanently.
+Houd er rekening mee dat verwijderen in stappen gaat: de eerste keer verwijderen archiveert een actieve uitgave, dus als een uitgave niet in de Prullenbak staat, kijk dan in de weergave Archief. Een gearchiveerde uitgave verwijderen verplaatst deze naar de Prullenbak, en verwijderen vanuit de Prullenbak is definitief.
 
-Trashed expenses cannot be edited. If you need to change a trashed expense, restore it from Trash first.
+Een uitgave in de prullenbak kun je niet bewerken. Wil je iets wijzigen? Zet de uitgave eerst terug uit de Prullenbak.

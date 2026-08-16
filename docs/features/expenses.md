@@ -1,6 +1,6 @@
 ---
 title: Expenses
-last_verified: 2026-08-15
+last_verified: 2026-08-16
 ---
 
 # Expenses
@@ -16,6 +16,8 @@ The expenses page lists every recorded expense. The payment status tabs in the t
 - **Paid**: expenses already paid
 
 You can still filter by category, project, date range, or status. Click an expense to open the detail page; click **New** to add one manually, or **Scan receipt** to extract one from an image or PDF.
+
+Trashed expenses can be viewed in the Trash view, but they cannot be edited, marked as paid, or have their receipt replaced. Restore the expense first if you need to change it.
 
 ## Categories
 

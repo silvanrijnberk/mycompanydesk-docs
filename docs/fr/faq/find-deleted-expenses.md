@@ -1,5 +1,5 @@
 ---
-title: "Find deleted expenses"
+title: "Trouver les dépenses supprimées"
 last_verified: 2026-08-16
 chatbot:
   triggers:
@@ -26,8 +26,8 @@ chatbot:
     - "How do I restore an expense?"
 ---
 
-Deleted expenses are in Expenses -> Trash. If you are already in the expense list, switch to the Trash view.
+Les dépenses supprimées se trouvent dans Dépenses -> Corbeille. Si vous êtes déjà dans la liste des dépenses, passez à la vue Corbeille.
 
-Keep in mind that deletion is staged: the first delete on an active expense archives it, so if an expense is not in the Trash, check the Archive view. Deleting an archived expense moves it to the Trash, and deleting it from the Trash removes it permanently.
+Gardez à l'esprit que la suppression se fait par étapes : la première suppression d'une dépense active l'archive. Donc si une dépense n'est pas dans la Corbeille, regardez la vue Archives. Supprimer une dépense archivée la déplace vers la Corbeille, et la supprimer depuis la Corbeille la retire définitivement.
 
-Trashed expenses cannot be edited. If you need to change a trashed expense, restore it from Trash first.
+Les dépenses dans la corbeille ne peuvent pas être modifiées. Si vous devez modifier une dépense supprimée, restaurez-la depuis la Corbeille d'abord.

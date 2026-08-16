@@ -1,6 +1,6 @@
 ---
 title: Delete an expense
-last_verified: 2026-05-09
+last_verified: 2026-08-16
 chatbot:
   triggers: ["delete expense", "remove expense", "trash expense", "erase expense", "uitgave verwijderen", "uitgave wissen", "hoe verwijder ik een uitgave", "ausgabe loschen", "wie losche ich eine ausgabe", "supprimer depense"]
   actions:
@@ -15,3 +15,5 @@ To delete an expense:
 4. Confirm the deletion
 
 Deletion happens in stages. Deleting an active expense archives it first, deleting it again from the Archive moves it to the Trash, and deleting it from the Trash removes it permanently. You can restore an expense from the Archive or Trash view at any point before the final step. Note: selecting expenses in the list and using the bulk Delete action removes them permanently right away.
+
+While an expense is in the Trash, it cannot be edited. Restore it first if you need to make any changes.
