@@ -45,7 +45,7 @@ Een checklist die tegen de actieve periode draait. Elke controle heeft een herst
 - **Concepten**: facturen die nog concept zijn en niet meetellen in de aangifte.
 - **BTW ontbreekt**: uitgaven zonder BTW-bedrag.
 - **Bonnen ontbreken**: uitgaven zonder bijgevoegde bon.
-- **ICP open**: EU B2B-verkopen die apart op de ICP-opgaaf gemeld moeten worden.
+- **ICP open**: EU B2B-verkopen die apart op de ICP-opgaaf gemeld moeten worden. Het bedrag en het aantal gebruiken dezelfde classificatieregels als de ICP-opgaaf zelf, zodat ze overeenkomen met wat daadwerkelijk op de opgave komt.
 - **Verlegde-BTW-herkomst**: uitgaven met verlegde BTW waarvan het land of KVK-nummer van de leverancier ontbreekt, zodat rubriek 2a/4a/4b niet te bewijzen is.
 
 Een badge in de kop toont het aantal blokkades, of dat alles in orde is.
@@ -79,6 +79,14 @@ Rubriek 4a is voor verlegde-BTW-aankopen van leveranciers buiten de EU (`import_
 ### Exporteren voor de boekhouder
 
 Een downloadkaart naast het overzicht biedt CSV-exports: een volledige boekhouder-export, een BTW-overzicht van het gekozen kwartaal en een jaaroverzicht.
+
+De bestandsnaam van de ZIP bevat de bedrijfsnaam, de periode en het exportprofiel, en ook de README noemt het bedrijf. Zo kan een boekhouder die exports voor meerdere klanten downloadt de bestanden makkelijk uit elkaar houden.
+
+<!-- TODO(source-missing): RichardTool 4ffca446 toonde een infokaart voor nul-aangiften met een verwijzing naar een uitnodiging van de Belastingdienst en een verzuimboete. sources/ heeft geen bron voor de Nederlandse nul-aangifteplicht of verzuimboetes; vermeld die claim niet totdat een mens de regel op belastingdienst.nl heeft gecontroleerd. -->
+
+### Herinnering nul-aangifte
+
+Als het geselecteerde tijdvak is afgelopen en zowel rubriek 5a als 5b nul zijn, verschijnt er op het tabblad Aangifte een infokaart die eraan herinnert dat een nul-aangifte mogelijk toch moet worden ingediend als je een uitnodiging van je belastingdienst hebt ontvangen. De kaart wordt niet getoond voor tijdvakken die zijn afgelopen vóór de werkruimte werd aangemaakt, omdat MyCompanyDesk dan geen gegevens heeft.
 
 ### Internationale kaarten
 

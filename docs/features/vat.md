@@ -46,7 +46,7 @@ A checklist that runs against the active period. Every check has a fix link that
 - **Drafts**: invoices still in draft that will not count in the aangifte.
 - **Missing VAT**: expenses without a VAT amount.
 - **Missing receipts**: expenses without an attached receipt.
-- **ICP pending**: EU B2B sales that need to be reported separately on the ICP-opgaaf.
+- **ICP pending**: EU B2B sales that need to be reported separately on the ICP-opgaaf. The amount and count use the same classification rules as the ICP return, so they match the lines that will actually appear on the submission.
 - **Reverse-charge origin**: expenses with reverse-charge VAT whose supplier country or KVK number is missing, so rubriek 2a/4a/4b cannot be proven.
 
 A badge in the header shows the number of blockers, or that everything is clear.
@@ -80,6 +80,14 @@ Rubriek 4a captures reverse-charge purchases from suppliers outside the EU (`imp
 ### Exports for your accountant
 
 A download card next to the sheet offers CSV exports: a full export for your boekhouder, a BTW summary for the selected quarter, and a year overview.
+
+The ZIP filename includes the company name, the period and the export profile, and the README inside also names the company. This makes it easier for an accountant who downloads exports for several clients to tell the files apart.
+
+<!-- TODO(source-missing): RichardTool 4ffca446 surfaced a nil-return reminder that mentions a Belastingdienst invitation and a verzuimboete. sources/ has no entry for Dutch nil-VAT-return obligations or fines; do not quote the invitation requirement or the fine in docs until a human verifies the current rule at belastingdienst.nl. -->
+
+### Nil-return reminder
+
+If the selected period has ended and both rubriek 5a and 5b are zero, an info card appears on the Filing tab to remind you that a nil return may still need to be filed when your tax authority invited you to do so. The card is not shown for periods that ended before the workspace was created, because MyCompanyDesk holds no data for those periods.
 
 ### International cards
 
