@@ -1,13 +1,13 @@
 ---
 title: VAT
-last_verified: 2026-08-15
+last_verified: 2026-08-16
 ---
 
 <!-- TODO(source-missing): RichardTool 5407b44 added historical Dutch VAT rates 6% and 19% to the valid invoice/quote/contract/recurring-invoice/catalog rate set. sources/vat-rates.yaml#countries.NL does not yet list those rates, so do not document the full valid set until the source is updated. -->
 
 # VAT
 
-Track collected and paid VAT, prepare your aangifte, and stay ahead of deadlines. MyCompanyDesk supports the Dutch VAT flow (BTW): the page mirrors the Belastingdienst aangifte, so the numbers you see are the numbers you file.
+Track collected and paid VAT, prepare your return, and stay ahead of deadlines. MyCompanyDesk supports country-specific VAT flows: the page mirrors the Dutch BTW form for companies in the Netherlands, and uses each workspace country's filing deadlines and rules for other supported countries, so the numbers you see are the numbers you file.
 
 ## Page layout
 
@@ -20,7 +20,9 @@ A page-wide period selector (Q1 to Q4 plus full year) sits next to the tab bar; 
 The hero summarises the selected period:
 
 - **Balance**: net VAT (collected minus paid) with a "te betalen" or "terug te ontvangen" label. It follows the period selector.
-- **Deadline ring**: a circular countdown to the next filing deadline. Red when 3 days or fewer remain, amber up to 14 days, green otherwise.
+- **Deadline ring**: a circular countdown to the next filing deadline, computed from your workspace country's schedule. Red when 3 days or fewer remain, amber up to 14 days, green otherwise.
+
+<!-- TODO(source-missing): RichardTool 8bd35ae1 introduced country-specific VAT filing deadlines (NL, GB, DE, and others). The exact deadline rules per country are not yet in sources/. Do not list specific per-country due dates until a human adds them to sources/. -->
 - **VAT savings pot (BTW-spaarpotje)**: a suggested reserve of the period balance plus a 10% buffer, shown when you owe VAT. When you are due money back, the tile flips to a green refund tile instead.
 
 Two buttons sit under the balance: **Open aangifte** jumps to the Filing tab, and **How is this calculated?** walks through the math behind the balance.

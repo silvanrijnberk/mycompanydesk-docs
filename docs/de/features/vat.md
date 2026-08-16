@@ -6,7 +6,7 @@ title: USt.-Verwaltung
 
 # USt.-Verwaltung
 
-Verfolgen Sie vereinnahmte und gezahlte USt., bereiten Sie Ihre Erklärung vor und behalten Sie Fristen im Blick. MyCompanyDesk unterstützt den niederländischen USt.-Ablauf (BTW): Die Seite spiegelt die Aangifte der Belastingdienst, sodass die Zahlen, die Sie sehen, die Zahlen sind, die Sie einreichen.
+Verfolgen Sie vereinnahmte und gezahlte USt., bereiten Sie Ihre Erklärung vor und behalten Sie Fristen im Blick. MyCompanyDesk unterstützt länderspezifische USt.-Abläufe: Für Unternehmen in den Niederlanden spiegelt die Seite das Aangifte-Formular der Belastingdienst, für andere unterstützte Länder verwendet sie die jeweiligen nationalen Abgabefristen und Regeln. So sind die Zahlen, die Sie sehen, die Zahlen, die Sie einreichen.
 
 ## Seitenaufbau
 
@@ -19,7 +19,9 @@ Neben der Reiterleiste sitzt eine seitenweite Zeitraumauswahl (Q1 bis Q4 plus Ge
 Die Herokarte fasst den gewählten Zeitraum zusammen:
 
 - **Saldo**: Netto-USt. (vereinnahmt minus gezahlt) mit dem Hinweis "te betalen" oder "terug te ontvangen". Der Saldo folgt der Zeitraumauswahl.
-- **Fristenring**: ein runder Countdown zur nächsten Abgabefrist. Rot bei 3 Tagen oder weniger, gelb bis 14 Tage, sonst grün.
+- **Fristenring**: ein runder Countdown zur nächsten Abgabefrist, basierend auf dem Land Ihres Arbeitsbereichs. Rot bei 3 Tagen oder weniger, gelb bis 14 Tage, sonst grün.
+
+<!-- TODO(source-missing): RichardTool 8bd35ae1 führte länderspezifische USt.-Abgabefristen ein (NL, GB, DE und andere). Die genauen Fristregeln pro Land sind noch nicht in sources/ hinterlegt. Vermerken Sie keine konkreten Fristen pro Land, bis ein Mensch sie in sources/ ergänzt hat. -->
 - **MwSt.-Rücklage (BTW-spaarpotje)**: eine vorgeschlagene Rücklage aus dem Zeitraumsaldo plus 10% Puffer, sichtbar, wenn Sie USt. schulden. Steht Ihnen eine Erstattung zu, wird die Kachel zu einer grünen Erstattungskachel.
 
 Unter dem Saldo stehen zwei Schaltflächen: **Erklärung öffnen** springt zum Reiter Erklärung, und **Wie wird das berechnet?** erklärt die Rechnung hinter dem Saldo.
