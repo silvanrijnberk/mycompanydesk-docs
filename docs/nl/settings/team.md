@@ -82,7 +82,7 @@ Rollen wissel je direct op de ledenrij via een menu (alleen admin). Je eigen rol
 
 ## Rechten
 
-Het paneel **Toegang beheren** opent een rechtentabel per pagina. Elke rij is een onderdeel van de app: Dashboard, Facturen, Uitgaven, Klanten, Projecten, Objecten, Contracten, Offertes, Verhuur, Rapportages en Instellingen.
+Het paneel **Toegang beheren** opent een rechtentabel per pagina. Elke rij is een onderdeel van de app: Dashboard, Facturen, Uitgaven, Klanten, Projecten, Objecten, Contracten, Offertes, Verhuur, Rapportages, Urenregistratie, Belastingen (btw) en Instellingen.
 
 Per pagina zijn er drie losse schakelaars:
 
