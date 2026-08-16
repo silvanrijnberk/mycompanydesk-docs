@@ -82,6 +82,8 @@ Verstuur de factuur per e-mail naar je klant. De e-mail bevat:
 - De factuur-PDF als bijlage
 - Een betaallink voor online betaling
 
+Voordat je verstuurt, toont de e-mailvoorbeeldweergave het bericht precies zoals de klant hem ontvangt. In het verzendvenster zet je de **Bekijk-knop**, **Download-knop**, **PDF-bijlage**, **Factuurregels** en, als je online betalingen hebt ingeschakeld, de knop **Betaling bevestigen** aan of uit. Deze schakelaars worden direct verwerkt in het voorbeeld, dus wat je ziet is wat de klant krijgt.
+
 Als je werkruimte algemene voorwaarden in Documenten heeft staan, toont de e-mailvoorbeelddialoog ook de schakelaar **Algemene voorwaarden meesturen**. Voor facturen staat deze standaard uit. Als je hem inschakelt, wordt de huidige voorwaarden-PDF bij de e-mail gevoegd en wordt de verzending vastgelegd als het terhandstellingsmoment op het voorwaardendocument.
 
 ### Versturen als Peppol e-factuur
@@ -154,7 +156,7 @@ Online betalingen via Mollie of Stripe kunnen direct vanuit MyCompanyDesk worden
 
 Gedeeltelijke terugbetalingen die je bij Mollie of Stripe start (bijvoorbeeld als je daar alleen een deel van het bedrag terugstort) verschijnen nu in de betalingslijst met de datum van de terugbetaling en het bedrag dat nog geboekt staat.
 
-Offline betaalmethoden (bankoverschrijving, contant) gebruiken de bestaande ongeldig-route: de betaling wordt gemarkeerd als ongeldig zonder terugstorting via de provider.
+Offline betaalmethoden (bankoverschrijving, contant) gebruiken de bestaande ongeldig-route: de betaling wordt gemarkeerd als ongeldig zonder terugstorting via de provider. Wanneer je een betaling terugdraait, herstelt de factuurstatus naar de toestand die bij de geschiedenis van de factuur hoort. Was de factuur al per e-mail naar de klant verstuurd, dan komt hij terug op **Verstuurd**; was hij nog nooit verstuurd, dan komt hij terug op **Open**. De oorspronkelijke verzendgeschiedenis blijft bewaard.
 
 Om een betaling terug te storten:
 

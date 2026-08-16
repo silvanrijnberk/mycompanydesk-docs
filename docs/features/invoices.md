@@ -82,6 +82,8 @@ Send the invoice to your customer via email. The email includes:
 - The invoice PDF as an attachment
 - A payment link for online payment
 
+Before sending, the email preview shows the message exactly as your customer will receive it. The send dialog has toggles for the **View button**, **Download button**, **PDF attachment**, **Invoice lines**, and, if you have online payments enabled, the **Confirm payment** button. These toggles are reflected in the live preview, so what you see is what your customer gets.
+
 If your workspace has general terms in Documents, the email preview also shows an **Include general terms** toggle. For invoices this toggle is off by default. When enabled, the current terms PDF is attached to the email and the send is recorded as the provision event on the terms document.
 
 ### Send as Peppol e-invoice
@@ -154,7 +156,7 @@ Online payments made via Mollie or Stripe can be refunded directly from MyCompan
 
 Partial refunds initiated at Mollie or Stripe (for example, when you refund only part of the amount there) now appear in the payment list with the refund date and the remaining booked amount.
 
-Non-online methods (bank transfer, cash) use the existing void path: the payment is marked voided without a processor-side refund.
+Non-online methods (bank transfer, cash) use the existing void path: the payment is marked voided without a processor-side refund. When you void a payment, the invoice status is restored to the state that matches the invoice history. If the invoice had already been emailed to the customer, it returns to **Sent**; if it had never been sent, it returns to **Open**. The original sending history is preserved.
 
 To refund a payment:
 
