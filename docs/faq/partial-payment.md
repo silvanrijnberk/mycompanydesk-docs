@@ -15,4 +15,4 @@ To record a partial payment on an invoice:
 4. Save - the invoice status changes to Partially Paid
 5. Repeat when additional payments arrive
 
-Tip: The remaining balance is tracked automatically and appears on the invoice detail page.
+Tip: The remaining balance is tracked automatically and appears on the invoice detail page. In the customer portal, partially paid invoices also show the amount already paid and the remaining balance before the customer completes payment.

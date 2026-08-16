@@ -15,4 +15,4 @@ Um eine Teilzahlung auf einer Rechnung zu erfassen:
 4. Speichern - der Rechnungsstatus ändert sich zu Teilweise bezahlt
 5. Wiederhole den Vorgang, wenn weitere Zahlungen eingehen
 
-Tipp: Der Restbetrag wird automatisch verfolgt und auf der Rechnungsdetailseite angezeigt.
+Tipp: Der Restbetrag wird automatisch verfolgt und auf der Rechnungsdetailseite angezeigt. Im Kundenportal sehen Kunden bei teilweise bezahlten Rechnungen auch den bereits erhaltenen Betrag und die noch offene Restsumme, bevor sie bezahlen.

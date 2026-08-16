@@ -26,11 +26,12 @@ Le portail affiche une vue claire et personnalisee de la facture comprenant :
 - Les lignes avec descriptions et montants
 - La ventilation de la TVA
 - Le montant total dû
-- La date d'echeance
+- Le montant déjà reçu et le solde restant (pour les factures partiellement payées)
+- La date d'échéance
 
 ### Paiement
 
-Les clients peuvent payer directement via le portail. Si vous avez connecte Mollie ou Stripe, des boutons de paiement apparaissent sur la vue de la facture pour que votre client puisse payer en un clic. Les boutons de paiement et le montant total dû sont masqués pour les avoirs et les factures annulées, car le client n'a dans aucun des deux cas d'argent à transférer. Lorsqu un client suit un lien autopay (par exemple depuis un rappel de paiement), le portail fait defiler jusqu au bon bouton de paiement et le met en evidence avec une animation pulsante au lieu de rediriger automatiquement vers le processus de paiement. Ainsi, le client peut consulter la facture avant de payer. Lorsque le paiement est confirme, le statut de la facture dans votre tableau de bord est automatiquement mis a jour a **Payee**.
+Les clients peuvent payer directement via le portail. Si vous avez connecte Mollie ou Stripe, des boutons de paiement apparaissent sur la vue de la facture pour que votre client puisse payer en un clic. Les boutons de paiement et le montant total dû sont masqués pour les avoirs et les factures annulées, car le client n'a dans aucun des deux cas d'argent à transférer. Pour les factures partiellement payées, le portail affiche le montant déjà reçu et le solde restant avant le paiement, afin que le montant sur le bouton de paiement corresponde au montant de la facture. Lorsqu un client suit un lien autopay (par exemple depuis un rappel de paiement), le portail fait defiler jusqu au bon bouton de paiement et le met en evidence avec une animation pulsante au lieu de rediriger automatiquement vers le processus de paiement. Ainsi, le client peut consulter la facture avant de payer. Lorsque le paiement est confirme, le statut de la facture dans votre tableau de bord est automatiquement mis a jour a **Payee**.
 
 #### Parametres de paiement Mollie
 

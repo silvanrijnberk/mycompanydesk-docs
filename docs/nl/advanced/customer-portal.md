@@ -26,11 +26,12 @@ Het portaal toont een overzichtelijke, huisstijl-conforme weergave van de factuu
 - Regelitems met omschrijvingen en bedragen
 - BTW-specificatie
 - Totaal verschuldigd bedrag
+- Al ontvangen bedrag en het restant (voor gedeeltelijk betaalde facturen)
 - Vervaldatum
 
 ### Betaling
 
-Klanten kunnen direct via het portaal betalen. Als je Mollie of Stripe hebt gekoppeld, verschijnen er betaalknoppen op de factuurweergave zodat je klant met één klik kan betalen. Betaalknoppen en het totaal verschuldigde bedrag worden verborgen voor creditnota's en ingetrokken facturen, omdat de klant in beide gevallen geen geld meer hoeft over te maken. Als een klant een autopay-link volgt (bijvoorbeeld vanuit een betaalherinnering), scrolt het portaal naar de juiste betaalknop en markeert deze met een pulserende animatie in plaats van automatisch door te verwijzen naar het betaalproces. Zo kan de klant de factuur eerst bekijken voordat deze betaalt. Wanneer de betaling is bevestigd, wordt de factuurstatus in je dashboard automatisch bijgewerkt naar **Betaald**.
+Klanten kunnen direct via het portaal betalen. Als je Mollie of Stripe hebt gekoppeld, verschijnen er betaalknoppen op de factuurweergave zodat je klant met één klik kan betalen. Betaalknoppen en het totaal verschuldigde bedrag worden verborgen voor creditnota's en ingetrokken facturen, omdat de klant in beide gevallen geen geld meer hoeft over te maken. Voor gedeeltelijk betaalde facturen toont het portaal het al ontvangen bedrag en het openstaande restant voordat de klant betaalt, zodat het bedrag op de betaalknop overeenkomt met het factuurbedrag. Als een klant een autopay-link volgt (bijvoorbeeld vanuit een betaalherinnering), scrolt het portaal naar de juiste betaalknop en markeert deze met een pulserende animatie in plaats van automatisch door te verwijzen naar het betaalproces. Zo kan de klant de factuur eerst bekijken voordat deze betaalt. Wanneer de betaling is bevestigd, wordt de factuurstatus in je dashboard automatisch bijgewerkt naar **Betaald**.
 
 #### Mollie-betalingsinstellingen
 
