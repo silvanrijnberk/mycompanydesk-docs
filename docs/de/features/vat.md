@@ -47,6 +47,7 @@ Eine Checkliste, die gegen den aktiven Zeitraum läuft. Jede Prüfung hat einen 
 - **Fehlende Belege**: Ausgaben ohne angehängten Beleg.
 - **ICP offen**: EU-B2B-Verkäufe, die separat in der ICP-Meldung anzugeben sind. Betrag und Anzahl verwenden dieselben Klassifizierungsregeln wie die ICP-Meldung, sodass sie zu den Zeilen passen, die tatsächlich übermittelt werden.
 - **Reverse-Charge-Ursprung**: Ausgaben mit Reverse-Charge-MwSt., bei denen das Land oder die KVK-Nummer des Lieferanten fehlt, sodass die Rubrik 2a/4a/4b nicht belegt werden kann.
+- **Abzugsdifferenz**: Ausgaben, deren abzugsfähige MwSt. nicht ihrer Gesamt-MwSt. entspricht, weil die Kategorie nicht vollständig abzugsfähig ist oder Privatgebrauch vorliegt. Dies spiegelt die Kennzeichen auf dem Reiter Transaktionen wider.
 
 Ein Zähler in der Kopfzeile zeigt die Zahl der Blocker oder dass alles in Ordnung ist.
 
@@ -120,13 +121,15 @@ Die Korrektur fließt in die Periodentotalen auf dem Reiter **Erklärung** ein.
 
 Eine flache Liste jeder Rechnung und Ausgabe, die in den gewählten Zeitraum einfließt, nützlich für Stichproben vor der Abgabe. Filterchips grenzen die Liste ein: **Alle**, **Beleg fehlt**, **MwSt. fehlt**, **Reverse Charge** und **Auslands-MwSt.**, jeweils mit Zähler. Jede Zeile verlinkt auf die zugehörige Rechnung oder Ausgabe.
 
+Ausgaben, die nicht vollständig abzugsfähig sind, erhalten ein Kennzeichen wie **MwSt. nicht abzugsfähig** oder **MwSt. teilweise abzugsfähig**. Halten Sie die Maus darauf (oder fokussieren Sie es), um einen Tooltip zu sehen, der angibt, wie viel der MwSt. auf die Ausgabe als Vorsteuer in Rubrik 5b zählt. Wenn Sie an der KOR teilnehmen, erklärt der Tooltip, dass keine Vorsteuer abgezogen wird, weil Rubrik 5b für den ganzen Zeitraum null ist; das Kennzeichen bezieht sich dann auf die Erklärung, nicht auf die Ausgabe selbst.
+
 ## Periodensperren
 
 Eine Übersichtsleiste oben auf der USt.-Seite zeigt, wie viele Zeiträume gesperrt sind; klappen Sie sie auf, um sie zu verwalten.
 
 - **Automatisches Sperren**: Sobald die Abgabefrist eines Zeitraums verstrichen ist, sperrt MyCompanyDesk ihn automatisch, damit Ihre Buchhaltung zu der eingereichten Erklärung passt.
-- **Manuelles Sperren**: Über Zeitraumchips sperren Sie jeden vergangenen Zeitraum des gewählten Jahres selbst, etwa direkt nach einer frühen Abgabe. Bei einem noch laufenden Zeitraum erscheint zuerst eine zusätzliche Warnung.
-- **Als eingereicht markieren**: Kennzeichnen Sie einen gesperrten Zeitraum als eingereicht, sobald Sie die Erklärung abgegeben haben. Wenn Sie eine USt.-Abgabe-Deadline-Erinnerung im Benachrichtigungsbereich öffnen, verwendet die Aktion **Als eingereicht markieren** den in dieser Erinnerung genannten Zeitraum statt des heutigen Datums, damit das richtige Quartal oder der richtige Monat aktualisiert wird. Eingereichte Quartale zeigen das auch in der Quartalsleiste.
+- **Manuelles Sperren**: Über Zeitraumchips sperren Sie jeden vergangenen Zeitraum des gewählten Jahres selbst, etwa direkt nach einer frühen Abgabe. Bei einem noch laufenden Zeitraum erscheint zuerst eine zusätzliche Warnung. Zeiträume, die vor der Erstellung des Arbeitsbereichs endeten, können nicht gesperrt werden, weil MyCompanyDesk für sie keine Daten hält und keine Erklärung in Ihrem Namen abgegeben hat.
+- **Als eingereicht markieren**: Kennzeichnen Sie einen gesperrten Zeitraum als eingereicht, sobald Sie die Erklärung abgegeben haben. Wenn Sie eine USt.-Abgabe-Deadline-Erinnerung im Benachrichtigungsbereich öffnen, verwendet die Aktion **Als eingereicht markieren** den in dieser Erinnerung genannten Zeitraum statt des heutigen Datums, damit das richtige Quartal oder der richtige Monat aktualisiert wird. Sie löst darüber hinaus nur die Erinnerungen für diesen Zeitraum, nicht jede ausstehende USt.-Erinnerung im Arbeitsbereich. Eingereichte Quartale zeigen das auch in der Quartalsleiste.
 - **Vorübergehend entsperren**: Müssen Sie etwas korrigieren? Entsperren Sie einen Zeitraum vorübergehend (72 Stunden); danach sperrt er sich von selbst wieder, oder Sie sperren früher manuell. Eine Sperre ganz entfernen geht nur, solange die Abgabefrist noch nicht verstrichen ist.
 
 Der Einreichungsstatus wird für den genauen Zeitraum erfasst, nicht für enthaltene Unterzeiträume. Ein eingereichtes Jahr markiert nicht automatisch die einzelnen Quartale als eingereicht, und ein eingereichtes Quartal markiert nicht automatisch die darin enthaltenen Monate. Die Sperre gilt jedoch für den gesamten Zeitraum, sodass eine Jahressperre jedes Quartal schützt.

@@ -47,6 +47,7 @@ Een checklist die tegen de actieve periode draait. Elke controle heeft een herst
 - **Bonnen ontbreken**: uitgaven zonder bijgevoegde bon.
 - **ICP open**: EU B2B-verkopen die apart op de ICP-opgaaf gemeld moeten worden. Het bedrag en het aantal gebruiken dezelfde classificatieregels als de ICP-opgaaf zelf, zodat ze overeenkomen met wat daadwerkelijk op de opgave komt.
 - **Verlegde-BTW-herkomst**: uitgaven met verlegde BTW waarvan het land of KVK-nummer van de leverancier ontbreekt, zodat rubriek 2a/4a/4b niet te bewijzen is.
+- **Aftrekverschil**: uitgaven waarvan de aftrekbare BTW niet gelijk is aan de totale BTW, bijvoorbeeld omdat de categorie niet volledig aftrekbaar is of omdat privégebruik geldt. Dit loopt gelijk met de badges op het tabblad Transacties.
 
 Een badge in de kop toont het aantal blokkades, of dat alles in orde is.
 
@@ -120,13 +121,15 @@ De correctie wordt doorberekend in de periodetotalen op het tabblad Aangifte.
 
 Een platte lijst van elke factuur en uitgave die in de gekozen periode meetelt, handig om records na te lopen voordat je aangifte doet. Filterchips maken de lijst kleiner: **Alles**, **Geen bon**, **Geen BTW**, **Verlegd** en **Buitenlandse BTW**, elk met een teller. Elke rij linkt naar de onderliggende factuur of uitgave.
 
+Uitgaven die niet volledig aftrekbaar zijn, krijgen een badge zoals **BTW niet aftrekbaar** of **BTW deels aftrekbaar**. Houd je muis op de badge (of focus hem) om een tooltip te zien met daarin hoeveel van de BTW op de uitgave meetelt als voorbelasting in rubriek 5b. Doe je mee met de KOR, dan legt de tooltip uit dat er geen voorbelasting wordt afgetrokken omdat rubriek 5b voor de hele periode nul is; de badge verwijst dan naar de aangifte, niet naar de uitgave zelf.
+
 ## Periodevergrendeling
 
 Een samenvattingsbalk bovenaan de BTW-pagina toont hoeveel periodes vergrendeld zijn; klap hem uit om ze te beheren.
 
 - **Automatisch vergrendelen**: zodra de aangiftedeadline van een periode is verstreken, vergrendelt MyCompanyDesk die periode automatisch, zodat je boekhouding gelijk blijft aan de aangifte die je hebt ingediend.
-- **Handmatig vergrendelen**: met periodechips vergrendel je zelf elke afgelopen periode van het gekozen jaar, bijvoorbeeld direct na vroeg indienen. Bij een periode die nog loopt krijg je eerst een extra waarschuwing.
-- **Markeren als ingediend**: markeer een vergrendelde periode als ingediend zodra je de aangifte hebt gedaan. Wanneer je een BTW-deadlineherinnering opent in het notificatiepaneel, gebruikt de actie **Markeren als ingediend** de periode die in die herinnering staat, niet de datum van vandaag, zodat het juiste kwartaal of de juiste maand wordt bijgewerkt. Ingediende kwartalen tonen dit ook in de kwartaalstrook.
+- **Handmatig vergrendelen**: met periodechips vergrendel je zelf elke afgelopen periode van het gekozen jaar, bijvoorbeeld direct na vroeg indienen. Bij een periode die nog loopt krijg je eerst een extra waarschuwing. Periodes die zijn afgelopen vóór de werkruimte werd aangemaakt, kun je niet vergrendelen, omdat MyCompanyDesk dan geen gegevens heeft en ook geen aangifte voor je heeft gedaan.
+- **Markeren als ingediend**: markeer een vergrendelde periode als ingediend zodra je de aangifte hebt gedaan. Wanneer je een BTW-deadlineherinnering opent in het notificatiepaneel, gebruikt de actie **Markeren als ingediend** de periode die in die herinnering staat, niet de datum van vandaag, zodat het juiste kwartaal of de juiste maand wordt bijgewerkt. Hij markeert daarnaast alleen de herinneringen voor die periode als opgelost, niet elke openstaande BTW-herinnering in de werkruimte. Ingediende kwartalen tonen dit ook in de kwartaalstrook.
 - **Tijdelijk ontgrendelen**: moet je iets herstellen? Ontgrendel een periode tijdelijk (72 uur); daarna vergrendelt hij vanzelf weer, of vergrendel zelf eerder opnieuw. Een vergrendeling helemaal verwijderen kan alleen zolang de aangiftedeadline nog niet is verstreken.
 
 De indienstatus wordt per exact tijdvak bijgehouden, niet op basis van overlap. Een ingediend jaar maakt de vier kwartalen niet automatisch ingediend, en een ingediend kwartaal maakt de maanden daarin niet automatisch ingediend. Vergrendeling geldt wel voor de hele periode, dus een jaarslot beschermt nog steeds elk kwartaal.
