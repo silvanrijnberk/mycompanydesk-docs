@@ -19,7 +19,7 @@ Lorsque vous envoyez une facture, un **lien de paiement** unique est genere. Lor
 
 ### Liste des factures
 
-Lorsqu'un client a plusieurs factures, le portail affiche egalement une liste avec chaque facture, avoir et leur statut actuel. Les cartes de resume "Ouvert" et "En retard" au-dessus du tableau additionnent le **solde restant par document**, pas le total brut. Ainsi, une facture de 1 000 € avec un paiement partiel de 400 € contribue a hauteur de 600 € au montant ouvert, et un avoir deja applique a sa facture source contribue a 0 € pour ne pas etre deduit deux fois.
+Lorsqu'un client a plusieurs factures, le portail affiche egalement une liste avec chaque facture, avoir et leur statut actuel. Les cartes de resume "Ouvert" et "En retard" au-dessus du tableau additionnent le **solde restant par document**, pas le total brut. Ainsi, une facture de 1 000 € avec un paiement partiel de 400 € contribue a hauteur de 600 € au montant ouvert, et un avoir deja applique a sa facture source contribue a 0 € pour ne pas etre deduit deux fois. "En retard" se deduit de la date d'echeance : toute facture envoyee ou ouverte avec une date d'echeance anterieure a aujourd'hui y est comptee, pour que la carte reste a jour meme lorsque les factures ne portent plus que rarement le statut herite `overdue`.
 
 ### Vue de la facture
 
