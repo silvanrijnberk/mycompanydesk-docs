@@ -32,6 +32,14 @@ In het formulier voor een nieuwe terugkerende factuur staan optionele velden net
 
 De terugkerende factuur wordt aangemaakt met de status **Actief** en genereert de eerste factuur op de volgende geplande datum.
 
+## Regelitems
+
+Regelitems van terugkerende facturen werken op dezelfde manier als reguliere factuurregels:
+- Elke regel moet een omschrijving hebben. Is de omschrijving te lang, dan toont het formulier een validatiefout.
+- Elke regel kan een percentage- of vast bedrag-korting krijgen.
+- Een kortingspercentage kan niet hoger zijn dan 100%.
+- Een kortingswaarde mag niet negatief zijn.
+
 ## Frequentieopties
 
 | Frequentie | Beschrijving |

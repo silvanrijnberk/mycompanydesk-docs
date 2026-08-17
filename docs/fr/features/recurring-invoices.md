@@ -32,6 +32,14 @@ Dans le formulaire de nouvelle facture recurrente, les champs optionnels restent
 
 La facture recurrente est creee avec le statut **Active** et generera sa premiere facture a la prochaine date programmee.
 
+## Lignes de facturation
+
+Les lignes des factures recurrentes fonctionnent comme les lignes des factures normales :
+- Chaque ligne doit avoir une description. Si la description est trop longue, le formulaire affiche une erreur de validation.
+- Chaque ligne peut beneficier d'une remise en pourcentage ou d'un montant fixe.
+- Une remise en pourcentage ne peut pas depasser 100 %.
+- Une valeur de remise ne peut pas etre negative.
+
 ## Options de frequence
 
 | Frequence | Description |

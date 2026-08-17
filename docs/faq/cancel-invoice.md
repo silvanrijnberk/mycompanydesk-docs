@@ -20,4 +20,6 @@ If the invoice is already paid or partially paid, open the original invoice and 
 
 Canceling is different from deleting: canceling changes the status to Canceled while keeping the invoice in the list; deleting moves it through Archived and Trash stages before it is permanently removed. Deleting is only possible in one step while a document is still a draft without a number.
 
+Once an invoice is canceled, it is no longer collectible. The invoice detail page, the invoice list quick view, and the customer portal all stop showing a remaining balance, even if there are still recorded payments on the invoice. Payments that were already booked remain visible in the payment history.
+
 Tip: Canceling keeps the invoice number in your records; deleting is only possible while a document is still a draft without a number.

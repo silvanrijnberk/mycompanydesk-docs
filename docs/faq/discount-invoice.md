@@ -17,3 +17,12 @@ To add a discount to an invoice:
 There is no separate discount field; a negative line item is how you apply a discount in MyCompanyDesk.
 
 Tip: Clearly label the discount line (e.g. "Early payment discount -5%") so the customer understands the deduction.
+
+## Line-level discount
+
+Each line item can also carry its own discount:
+1. Add or edit a line item
+2. Choose the discount type: **percentage** or **fixed amount**
+3. Enter the discount value
+
+A percentage discount cannot be higher than 100%. The discount value cannot be negative. If you want to give the line away entirely, set the percentage discount to 100%.

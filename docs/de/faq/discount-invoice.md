@@ -17,3 +17,12 @@ So fügen Sie einer Rechnung einen Rabatt hinzu:
 Ein separates Rabattfeld gibt es nicht; eine negative Position ist der Weg, in MyCompanyDesk einen Rabatt zu gewähren.
 
 Tipp: Beschriften Sie die Rabattposition eindeutig (z. B. "Skonto -5 %"), damit der Kunde den Abzug versteht.
+
+## Positionsbezogener Rabatt
+
+Jede Rechnungsposition kann auch einen eigenen Rabatt erhalten:
+1. Fügen Sie eine Position hinzu oder bearbeiten Sie eine Position
+2. Wählen Sie den Rabatttyp: **Prozentsatz** oder **fester Betrag**
+3. Geben Sie den Rabattwert ein
+
+Ein Prozentrabatt kann nicht höher als 100 % sein. Der Rabattwert darf nicht negativ sein. Wenn Sie die gesamte Position kostenlos abgeben möchten, setzen Sie den Prozentsatz auf 100 %.

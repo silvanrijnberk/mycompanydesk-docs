@@ -20,4 +20,6 @@ Is de factuur al (deels) betaald? Open dan de originele factuur en gebruik "Cred
 
 Annuleren is iets anders dan verwijderen: annuleren zet de status op Geannuleerd, maar de factuur blijft in de lijst staan; verwijderen loopt via Gearchiveerd en Prullenbak voordat hij definitief weg is. Definitief verwijderen in één keer kan alleen zolang een document nog een concept zonder nummer is.
 
+Zodra een factuur is geannuleerd, is hij niet meer vorderbaar. De factuurdetailpagina, het snelweergavepaneel in de facturenlijst en het klantportaal tonen geen resterend bedrag meer, ook al staan er nog geboekte betalingen op de factuur. Reeds geboekte betalingen blijven zichtbaar in het betalingsoverzicht.
+
 Tip: Annuleren houdt het factuurnummer in je administratie; verwijderen kan alleen zolang een document nog een concept zonder nummer is.

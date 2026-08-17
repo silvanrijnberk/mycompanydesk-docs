@@ -17,3 +17,12 @@ Zo geef je korting op een factuur:
 Er is geen apart kortingsveld; een negatieve factuurregel is de manier om korting te geven in MyCompanyDesk.
 
 Tip: Geef de kortingsregel een duidelijke omschrijving (bijv. "Betalingskorting -5%"), zodat de klant de aftrek begrijpt.
+
+## Korting per regel
+
+Elke factuurregel kan ook een eigen korting krijgen:
+1. Voeg een regel toe of bewerk een regel
+2. Kies het kortingstype: **percentage** of **vast bedrag**
+3. Vul de kortingswaarde in
+
+Een kortingspercentage kan niet hoger zijn dan 100%. De kortingswaarde mag niet negatief zijn. Wil je de hele regel weggeven, zet het percentage dan op 100%.

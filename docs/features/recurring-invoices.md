@@ -32,6 +32,14 @@ The new recurring-invoice form keeps optional details behind **More options**. N
 
 The recurring invoice is created in **Active** status and will generate its first invoice on the next scheduled date.
 
+## Line items
+
+Recurring invoice line items work the same way as regular invoice lines:
+- Each line must have a description. If the description is too long the form will show a validation error.
+- Each line can carry a percentage or fixed discount.
+- A percentage discount cannot be higher than 100%.
+- A discount value cannot be negative.
+
 ## Frequency options
 
 | Frequency | Description |
