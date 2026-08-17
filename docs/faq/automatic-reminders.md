@@ -15,6 +15,8 @@ To set up automatic payment reminders:
 
 When an invoice is a few days past its due date, MyCompanyDesk automatically sends a friendly reminder, and repeats it every week until the invoice is paid. The reminder states the remaining outstanding amount, which is the invoice total minus payments already received. If a customer has paid a deposit or an instalment, the reminder asks for the rest, not the full amount.
 
+If your workspace has online payments enabled, the reminder email gives the customer the same payment options as the original invoice: a **View & pay** button, a **Confirm payment** button, and a scan-and-pay QR code on the PDF.
+
 Automatic reminders are not sent when:
 - the invoice has been canceled
 - the invoice is already paid

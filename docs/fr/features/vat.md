@@ -24,7 +24,7 @@ La carte principale résume la période choisie :
 <!-- TODO(source-missing): RichardTool 8bd35ae1 a introduit des échéances de dépôt de TVA spécifiques par pays (NL, GB, DE et autres). Les règles exactes d'échéance par pays ne sont pas encore dans sources/. Ne listez pas de dates spécifiques par pays tant qu'un humain ne les a pas ajoutées à sources/. -->
 - **Provision TVA (BTW-spaarpotje)** : une réserve suggérée égale au solde de la période plus une marge de 10 %, affichée quand vous devez de la TVA. Si un remboursement vous est dû, la tuile devient une tuile verte de remboursement.
 
-Deux boutons figurent sous le solde : **Vers la déclaration** mène à l'onglet Déclaration, et **Comment est-ce calculé ?** détaille le calcul du solde.
+Trois boutons figurent sous le solde : **Vers la déclaration** mène à l'onglet Déclaration, **Comment est-ce calculé ?** détaille le calcul du solde, et **Ouvrir Mijn Belastingdienst Zakelijk** ouvre le portail professionnel sur `mijn.belastingdienst.nl/mbo-portaal/` pour déposer la déclaration sans page intermédiaire.
 
 Au-dessus de la carte, un bandeau vous avertit quand vos données sont incomplètes (factures en brouillon ou dépenses sans TVA), pour corriger avant de déclarer.
 

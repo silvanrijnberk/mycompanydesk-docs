@@ -15,6 +15,8 @@ So sendest du eine Erinnerung fuer eine unbezahlte Rechnung:
 
 Die Erinnerung nennt den noch offenen Restbetrag (Rechnungsbetrag abzüglich der bereits eingegangenen Zahlungen). Hat der Kunde bereits eine Anzahlung oder Ratenzahlung geleistet, mahnt die Erinnerung den Rest an, nicht den vollen Rechnungsbetrag.
 
+Wenn Ihr Arbeitsbereich Online-Zahlungen aktiviert hat, bietet die Erinnerungsmail dem Kunden dieselben Zahlungsoptionen wie die ursprüngliche Rechnung: einen Button **Ansehen \u0026 bezahlen**, einen Button **Zahlung bestätigen** und einen QR-Code auf der PDF zum Scannen und Bezahlen. Das gilt für manuelle und automatische Erinnerungen.
+
 Eine Erinnerung kann nicht gesendet werden, wenn:
 - die Rechnung noch ein Entwurf ist
 - die Rechnung storniert wurde

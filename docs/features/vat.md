@@ -25,7 +25,7 @@ The hero summarises the selected period:
 <!-- TODO(source-missing): RichardTool 8bd35ae1 introduced country-specific VAT filing deadlines (NL, GB, DE, and others). The exact deadline rules per country are not yet in sources/. Do not list specific per-country due dates until a human adds them to sources/. -->
 - **VAT savings pot (BTW-spaarpotje)**: a suggested reserve of the period balance plus a 10% buffer, shown when you owe VAT. When you are due money back, the tile flips to a green refund tile instead.
 
-Two buttons sit under the balance: **Open aangifte** jumps to the Filing tab, and **How is this calculated?** walks through the math behind the balance.
+Three buttons sit under the balance: **Open aangifte** jumps to the Filing tab, **How is this calculated?** walks through the math behind the balance, and **Open Mijn Belastingdienst Zakelijk** opens the business portal at `mijn.belastingdienst.nl/mbo-portaal/` so you can finish the submission without an extra chooser step.
 
 A banner above the hero warns when your data is incomplete (draft invoices or expenses without VAT), so you can fix it before filing.
 

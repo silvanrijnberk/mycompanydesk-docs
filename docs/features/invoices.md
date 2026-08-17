@@ -108,7 +108,7 @@ Create a copy of an existing invoice — useful for recurring billing to the sam
 
 ### Send reminder
 
-Send a payment reminder for overdue invoices.
+Send a payment reminder for overdue invoices. If your workspace has online payments enabled, the reminder email gives the customer the same payment options as the original invoice: a **View & pay** button, a **Confirm payment** button, and a scan-and-pay QR code on the PDF.
 
 ## Bulk actions
 

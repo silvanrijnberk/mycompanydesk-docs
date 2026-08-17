@@ -108,7 +108,7 @@ Maak een kopie van een bestaande factuur — handig voor terugkerende facturatie
 
 ### Herinnering sturen
 
-Verstuur een betalingsherinnering voor achterstallige facturen.
+Verstuur een betalingsherinnering voor achterstallige facturen. Als je werkruimte online betalingen heeft ingeschakeld, biedt de herinneringsmail de klant dezelfde betaalopties als de originele factuur: een knop **Bekijk \u0026 betaal**, een knop **Betaling bevestigen** en een QR-code op de PDF om te scannen en te betalen.
 
 ## Bulkacties
 

@@ -24,7 +24,7 @@ De herokaart vat de gekozen periode samen:
 <!-- TODO(source-missing): RichardTool 8bd35ae1 introduceerde landsspecifieke BTW-aangiftedeadlines (NL, GB, DE en andere). De exacte deadline-regels per land staan nog niet in sources/. Vermeld geen specifieke deadlines per land totdat een mens ze aan sources/ heeft toegevoegd. -->
 - **BTW-spaarpotje**: een voorgestelde reservering van het periodesaldo plus een buffer van 10%, zichtbaar wanneer je BTW moet betalen. Krijg je geld terug, dan verandert de tegel in een groene teruggavetegel.
 
-Onder het saldo staan twee knoppen: **Naar aangifte** springt naar het tabblad Aangifte, en **Hoe wordt dit berekend?** loopt de rekensom achter het saldo door.
+Onder het saldo staan drie knoppen: **Naar aangifte** springt naar het tabblad Aangifte, **Hoe wordt dit berekend?** loopt de rekensom achter het saldo door, en **Open Mijn Belastingdienst Zakelijk** opent het zakelijke portaal op `mijn.belastingdienst.nl/mbo-portaal/` zodat je de aangifte kunt indienen zonder een extra kiespagina.
 
 Boven de herokaart waarschuwt een banner wanneer je gegevens onvolledig zijn (conceptfacturen of uitgaven zonder BTW), zodat je dat kunt oplossen voordat je aangifte doet.
 
