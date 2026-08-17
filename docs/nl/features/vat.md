@@ -74,6 +74,8 @@ Elke rij toont de omzet (excl.) en het BTW-bedrag. De balk onderaan toont het to
 
 Bij een handmatige correctie vul je een positief bedrag in en kies je een richting (BTW af te dragen of BTW terug te vorderen). Negatieve bedragen worden geweigerd en het formulier toont een foutmelding die je vraagt de richting te kiezen; de richting bepaalt of de correctie het periodetotaal verhoogt of verlaagt.
 
+Een correctie wordt alleen in een aangifte meegenomen als de periode overeenkomt met de aangiftefrequentie van je werkruimte. Een correctie opgeslagen als Q1 komt bijvoorbeeld niet in een maand- of jaaraangifte terecht, en een correctie opgeslagen als M03 komt niet in een kwartaalaangifte terecht. De correctiekaart toont een oranje waarschuwingsbadge en een toelichting wanneer de periode van een correctie in geen enkele aangifte terechtkomt, zodat je hem kunt aanpassen voordat je indient.
+
 Rubriek 4a is voor verlegde-BTW-aankopen van leveranciers buiten de EU (`import_reverse_charge`); rubriek 4b is voor verlegde aankopen van EU-leveranciers (`b2b_reverse_charge`). MyCompanyDesk bepaalt aan de hand van het leveranciersland de juiste rubriek, zodat het totaal in 5a klopt.
 
 Bij het boeken of verwijderen van een correctie verversen het rubriekenoverzicht, de herokaart, de kwartaalstrook en de aangifte-actiekaart direct; je hoeft niet te verversen of van periode te wisselen. Ook de kaart voor privégebruik van de bedrijfsauto wordt live bijgewerkt als de correctie is geboekt.

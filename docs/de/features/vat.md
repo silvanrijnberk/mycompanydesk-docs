@@ -74,6 +74,8 @@ Jede Zeile zeigt den Umsatz (exkl.) und den USt.-Betrag. Die Leiste unten zeigt 
 
 Geben Sie bei einer manuellen Korrektur einen positiven Betrag ein und wählen Sie eine Richtung (USt. zu zahlen oder USt. zu erstatten). Negative Beträge werden abgelehnt und das Formular zeigt einen Fehler, der Sie auffordert, stattdessen die Richtung zu wählen; die Richtung bestimmt, ob die Korrektur den Zeitraumsaldo erhöht oder verringert.
 
+Eine Korrektur wird nur in eine Erklärung übernommen, wenn ihr Zeitraum zu Ihrer USt.-Abgabefrequenz passt. Eine als Q1 gespeicherte Korrektur fließt beispielsweise weder in eine monatliche noch in eine jährliche Erklärung ein, und eine als M03 gespeicherte Korrektur fließt nicht in eine vierteljährliche Erklärung ein. Die Korrekturkarte zeigt ein oranges Warn-Badge und einen Hinweis, wenn der Zeitraum einer Korrektur in keine Erklärung übernommen wird, damit Sie ihn vor der Abgabe anpassen können.
+
 Rubrik 4a ist für Reverse-Charge-Einkäufe von Lieferanten außerhalb der EU (`import_reverse_charge`); Rubrik 4b ist für Reverse-Charge-Einkäufe von EU-Lieferanten (`b2b_reverse_charge`). MyCompanyDesk leitet anhand des Lieferantenlands die richtige Rubrik ab, damit die Summe in 5a stimmt.
 
 Wenn Sie eine Korrektur speichern oder löschen, aktualisieren sich die Rubrieken-Übersicht, die Herokarte, die Quartalsleiste und die Abgabe-Aktionskarte sofort; Sie müssen nicht neu laden oder den Zeitraum wechseln. Auch die Karte für Privatnutzung des Firmenwagens wird live aktualisiert, sobald die dazugehörige Korrektur gebucht ist.

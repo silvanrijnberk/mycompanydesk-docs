@@ -14,7 +14,7 @@ MyCompanyDesk hält die Zahl der Tastenkombinationen bewusst klein. Unten stehen
 
 Das Suchfenster ist der schnellste Weg durch die App:
 
-- Geben Sie mindestens zwei Zeichen ein, um Ihre Kunden, Rechnungen, Ausgaben, Angebote, Aufgaben, wiederkehrende Rechnungen, wiederkehrende Ausgaben, Katalogartikel und Posteingangs-Threads zu durchsuchen (plus Projekte, Verträge und Objekte, wenn diese Bereiche aktiviert sind).
+- Geben Sie mindestens zwei Zeichen ein, um Ihre Kunden, Rechnungen, Ausgaben, Angebote, Aufgaben, wiederkehrende Rechnungen, wiederkehrende Ausgaben, Katalogartikel, Dokumente und Posteingangs-Threads zu durchsuchen (plus Projekte, Verträge und Objekte, wenn diese Bereiche aktiviert sind).
 - Auch Einstellungen sind durchsuchbar: Tippen Sie zum Beispiel "USt" oder "Erinnerungen", um direkt zur passenden Einstellungskarte zu springen.
 - Mit Schnellaktionen springen Sie zu jedem Bereich oder starten eine neue Rechnung, ein Angebot, eine Ausgabe oder einen Kunden.
 - Mit den Filter-Chips unter dem Suchfeld begrenzen Sie die Ergebnisse auf einen einzelnen Typ.
