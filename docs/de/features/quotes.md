@@ -28,7 +28,9 @@ Das Angebotsformular ähnelt dem Rechnungsformular — wenn Sie wissen, wie man 
 3. Überprüfen Sie die E-Mail-Vorschau
 4. Klicken Sie auf **Senden**, um es an Ihren Kunden zuzustellen
 
-Das Angebots-PDF wird der E-Mail als Anhang beigefügt, damit der Kunde es überprüfen kann.
+Im Versanddialog findest du Schalter für **Ansehen-Button**, **Download-Button** und **PDF-Anhang**. Standardmäßig ist der PDF-Anhang aktiviert, damit der Kunde das Angebot überprüfen kann.
+
+Für ein Angebot muss mindestens einer dieser Schalter aktiviert sein; sonst hat der Kunde keine Möglichkeit, das Angebot zu öffnen, und der Button **Senden** wird deaktiviert. Rechnungen behalten immer einen Kundenportal-Button als Rückfalllösung, Angebote nicht.
 
 Wenn in Ihrem Arbeitsbereich Allgemeine Geschäftsbedingungen in Dokumenten hinterlegt sind, zeigt der E-Mail-Vorschau-Dialog außerdem den Schalter **Allgemeine Geschäftsbedingungen mitschicken** an. Er ist für Angebote standardmäßig aktiviert. Wenn Sie ihn einschalten, wird die aktuelle AGB-PDF der E-Mail beigefügt und der Versand als Übergabemoment auf dem AGB-Dokument protokolliert.
 

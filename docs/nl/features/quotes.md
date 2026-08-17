@@ -28,7 +28,9 @@ Het offerteformulier lijkt op het factuurformulier — als je weet hoe je een fa
 3. Bekijk het e-mailvoorbeeld
 4. Klik op **Versturen** om het naar je klant te bezorgen
 
-De offerte-PDF wordt als bijlage bij de e-mail gevoegd zodat de klant deze kan bekijken.
+In de verzenddialoog vind je schakelaars voor de **Bekijkknop**, **Downloadknop** en **PDF-bijlage**. Standaard wordt de PDF meegestuurd, zodat de klant de offerte kan bekijken.
+
+Voor een offerte moet er minstens één van deze schakelaars aan staan; anders kan de klant de offerte nergens openen en wordt de knop **Versturen** uitgeschakeld. Facturen vallen altijd terug op een klantenportaalknop, maar offertes niet.
 
 Als je werkruimte algemene voorwaarden in Documenten heeft staan, toont de e-mailvoorbeelddialoog ook de schakelaar **Algemene voorwaarden meesturen**. Deze staat standaard aan voor offertes. Als je hem inschakelt, wordt de huidige voorwaarden-PDF bij de e-mail gevoegd en wordt de verzending vastgelegd als het terhandstellingsmoment op het voorwaardendocument.
 
