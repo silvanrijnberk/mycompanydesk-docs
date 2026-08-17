@@ -16,6 +16,8 @@ Pour créer un avoir :
 
 Vous ne pouvez pas ajuster les montants pendant la création ; les documents envoyés sont verrouillés, l'avoir reflète donc toujours exactement l'original. Pour une correction partielle, créez d'abord l'avoir complet, puis émettez une nouvelle facture avec le bon montant.
 
+MyCompanyDesk empêche également de créditer plus que le montant de la facture d'origine. Vous pouvez émettre plusieurs avoirs partiels sur la même facture, mais une fois que le total des avoirs atteint le montant de la facture, aucun nouvel avoir ne peut être créé pour cette facture.
+
 Un avoir rembourse le client et n'a donc pas de date d'échéance propre. Dans le portail client, la ligne d'échéance et le tableau des factures antérieures masquent le délai pour les avoirs. Le bouton Confirmer le paiement est également masqué, car un avoir rembourse le client au lieu de lui demander de payer. Quand la facture d'origine est entièrement créditée, le portail masque aussi les boutons de paiement sur cette facture, affiche le résumé de paiement comme Crédité et indique le montant de l'avoir dans le détail du solde.
 
 Dans le rapport des créances clients, le montant de l'avoir est compensé avec la facture originale qu'il corrige, de sorte que le solde du client reflète ce qui est réellement encore dû.

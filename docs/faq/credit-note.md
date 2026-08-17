@@ -16,6 +16,8 @@ To create a credit note:
 
 You cannot adjust the amounts during creation; sent documents are locked, so the credit note always mirrors the original exactly. For a partial correction, create the full credit note first and then issue a new invoice for the correct amount.
 
+MyCompanyDesk also prevents you from crediting more than the original invoice amount. You can issue several partial credit notes against the same invoice, but once the combined credit total reaches the invoice total, no further credit note can be created for that invoice.
+
 A credit note returns money to the customer, so it has no payment due date of its own. In the customer portal the due-date row and the past-invoices table hide the deadline for credit notes. The Confirm payment button is also hidden, because a credit note pays the customer instead of asking the customer to pay. When the original invoice has been fully credited, the portal hides the payment buttons on that invoice too, labels the payment summary as Credited, and shows the credit note amount as part of the balance breakdown.
 
 In the outstanding report, the credit note's amount is netted against the original invoice it corrects, so the customer's balance reflects what is actually still owed.

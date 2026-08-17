@@ -1,6 +1,6 @@
 ---
 title: "Rechnung duplizieren"
-last_verified: 2026-07-02
+last_verified: 2026-08-17
 chatbot:
   triggers: ["duplicate invoice", "copy invoice", "clone invoice", "reuse invoice", "invoice template", "factuur kopieren", "factuur dupliceren", "rechnung kopieren", "dupliquer facture"]
   actions:
@@ -14,5 +14,7 @@ So duplizieren Sie eine Rechnung:
 3. Klicken Sie auf "Duplizieren"
 4. Es wird ein neuer Entwurf mit denselben Positionen und demselben Kunden erstellt
 5. Passen Sie Datum, Beträge oder Details an und speichern Sie
+
+Die Kopie übernimmt die Referenznummer und das verknüpfte Objekt aus der Originalrechnung, sodass Sie keine Bestellnummer oder Zuordnung zu einem Mietobjekt verlieren.
 
 Tipp: Praktisch für ähnliche Rechnungen an denselben Kunden, so müssen Sie nicht alle Positionen neu eingeben.

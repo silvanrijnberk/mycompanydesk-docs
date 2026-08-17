@@ -16,6 +16,8 @@ Zo maak je een creditnota:
 
 Je kunt de bedragen tijdens het aanmaken niet aanpassen; verstuurde documenten zijn vergrendeld, dus de creditnota is altijd een exacte spiegel van het origineel. Wil je maar een deel corrigeren? Maak dan eerst de volledige creditnota en stuur daarna een nieuwe factuur met het juiste bedrag.
 
+MyCompanyDesk voorkomt ook dat je meer crediteert dan het bedrag van de originele factuur. Je kunt meerdere deelcreditnota's op dezelfde factuur maken, maar zodra het totaal van de creditnota's het factuurbedrag bereikt, is er geen nieuwe creditnota meer mogelijk voor die factuur.
+
 Een creditnota brengt geld terug naar de klant, dus heeft deze geen eigen vervaldatum. In het klantenportaal verbergt de vervaldatumrij en de tabel met eerdere facturen de deadline voor creditnota's. De knop Betaling bevestigen is ook verborgen, omdat een creditnota de klant betaalt in plaats van de klant te vragen te betalen. Wanneer de originele factuur volledig is gecrediteerd, verbergt het portaal ook de betaalknoppen op die factuur, toont het de betalingsstatus als Gecrediteerd en vermeldt het creditbedrag in de opbouw van het saldo.
 
 In het openstaande-debiteurenoverzicht wordt het bedrag van de creditnota verrekend met de originele factuur waarnaar hij verwijst, zodat het saldo van de klant laat zien wat er écht nog openstaat.
