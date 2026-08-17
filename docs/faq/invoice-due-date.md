@@ -19,3 +19,5 @@ If you want future invoices to start with a different deadline, update the custo
 Tip: Automatic payment reminders follow the due date, so a correct deadline also means reminders go out at the right moment.
 
 If a customer has no payment terms of their own, the workspace default at **Settings → Facturen en offertes** is used before falling back to the platform default (14 days). That order used to be skipped when selecting a customer, which could produce an earlier due date than intended.
+
+Generated invoices from contracts and recurring invoices also receive a due date. They use the contract's or recurring invoice's own payment-term field when one is set; otherwise they fall back to the platform default, just like manually created invoices.

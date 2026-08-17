@@ -19,3 +19,5 @@ Wil je dat toekomstige facturen met een andere termijn starten, pas dan de betaa
 Tip: Automatische herinneringen volgen de vervaldatum, dus met een juiste termijn gaan ook de herinneringen op het goede moment de deur uit.
 
 Als een klant geen eigen betaaltermijn heeft, geldt eerst de werkruimtestandaard via **Instellingen → Facturen en offertes**, pas daarna de platformstandaard (14 dagen). Die volgorde werd eerder overgeslagen bij het kiezen van een klant, waardoor de vervaldatum te vroeg kon uitvallen.
+
+Facturen die uit contracten of terugkerende facturen worden gegenereerd, krijgen ook een vervaldatum. Ze gebruiken de eigen betaaltermijn van het contract of de terugkerende factuur als die is ingesteld; anders vallen ze net als handmatige facturen terug op de platformstandaard.
