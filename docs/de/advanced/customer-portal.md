@@ -17,6 +17,10 @@ Wenn Sie eine Rechnung versenden, wird ein eindeutiger **Zahlungslink** generier
 
 ## Portal-Funktionen
 
+### Rechnungsliste
+
+Wenn ein Kunde mehrere Rechnungen hat, zeigt das Portal auch eine Liste mit jeder Rechnung, Gutschrift und dem aktuellen Status. Die Zusammenfassungskarten "Offen" und "Überfällig" über der Tabelle addieren den **Restbetrag pro Beleg**, nicht den Bruttobetrag. Eine Rechnung über 1.000 € mit einer Teilzahlung von 400 € trägt also 600 € zum offenen Betrag bei, und eine Gutschrift, die bereits mit ihrer Ursprungsrechnung verrechnet wurde, trägt 0 € bei, damit sie nicht zweimal abgezogen wird.
+
 ### Rechnungsansicht
 
 Das Portal zeigt eine übersichtliche, gebrandete Ansicht der Rechnung, einschließlich:
