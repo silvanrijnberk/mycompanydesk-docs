@@ -17,3 +17,12 @@ Pour appliquer une remise sur une facture :
 Il n'y a pas de champ de remise dédié ; une ligne négative est la façon d'accorder une remise dans MyCompanyDesk.
 
 Astuce : libellez clairement la ligne de remise (par ex. "Remise pour paiement anticipé -5 %") pour que le client comprenne la déduction.
+
+## Remise au niveau de la ligne
+
+Chaque ligne de facture peut également avoir sa propre remise :
+1. Ajoutez ou modifiez une ligne
+2. Choisissez le type de remise : **pourcentage** ou **montant fixe**
+3. Saisissez la valeur de la remise
+
+Une remise en pourcentage ne peut pas dépasser 100 %. La valeur de la remise ne peut pas être négative. Si vous souhaitez offrir la ligne entièrement, réglez le pourcentage de remise sur 100 %.

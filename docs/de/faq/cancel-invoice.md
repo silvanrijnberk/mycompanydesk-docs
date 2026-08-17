@@ -20,4 +20,6 @@ Ist die Rechnung bereits ganz oder teilweise bezahlt, öffnen Sie die Originalre
 
 Stornieren ist etwas anderes als Löschen: beim Stornieren wechselt der Status zu Storniert, die Rechnung bleibt aber in der Liste sichtbar; beim Löschen durchläuft sie die Stufen Archiviert und Papierkorb, bevor sie endgültig gelöscht ist. Endgültiges Löschen in einem Schritt ist nur möglich, solange ein Dokument noch ein Entwurf ohne Nummer ist.
 
+Sobald eine Rechnung storniert ist, ist sie nicht mehr einziehbar. Die Rechnungsdetailseite, die Vorschau in der Rechnungsliste und das Kundenportal zeigen keinen Restbetrag mehr an, auch wenn bereits gebuchte Zahlungen auf der Rechnung vorhanden sind. Bereits gebuchte Zahlungen bleiben im Zahlungsverlauf sichtbar.
+
 Tipp: Beim Stornieren bleibt die Rechnungsnummer in Ihren Unterlagen erhalten; löschen können Sie ein Dokument nur, solange es noch ein Entwurf ohne Nummer ist.

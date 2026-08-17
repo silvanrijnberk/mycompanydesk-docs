@@ -32,6 +32,14 @@ Im Formular für neue wiederkehrende Rechnungen bleiben optionale Angaben unter 
 
 Die wiederkehrende Rechnung wird im Status **Aktiv** erstellt und generiert ihre erste Rechnung am nächsten geplanten Datum.
 
+## Positionen
+
+Positionen wiederkehrender Rechnungen funktionieren wie bei regulären Rechnungen:
+- Jede Position benötigt eine Beschreibung. Ist die Beschreibung zu lang, zeigt das Formular einen Validierungsfehler an.
+- Jede Position kann einen Prozent- oder Festbetrag-Rabatt erhalten.
+- Ein Prozentrabatt kann nicht höher als 100 % sein.
+- Ein Rabattwert darf nicht negativ sein.
+
 ## Häufigkeitsoptionen
 
 | Häufigkeit | Beschreibung |
