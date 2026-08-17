@@ -28,7 +28,9 @@ Le formulaire de devis est similaire au formulaire de facture -- si vous savez c
 3. Verifiez l'apercu de l'e-mail
 4. Cliquez sur **Envoyer** pour le transmettre a votre client
 
-Le PDF du devis est joint a l'e-mail pour que le client puisse l'examiner.
+Dans la boite d'envoi, vous trouverez des options pour le bouton **Consulter**, le bouton **Telecharger** et la **piece jointe PDF**. Par defaut, le PDF est joint pour que le client puisse examiner le devis.
+
+Pour un devis, au moins l'une de ces options doit etre activee ; sinon le client ne peut pas ouvrir le devis et le bouton **Envoyer** est desactive. Les factures conservent toujours un bouton vers le portail client en secours, mais pas les devis.
 
 Si votre espace de travail a des conditions generales dans Documents, l'apercu d'e-mail propose aussi l'option **Joindre les conditions generales**. Elle est activee par defaut pour les devis. Quand elle est activee, le PDF des conditions actuelles est joint a l'e-mail et l'envoi est enregistre comme evenement de remise sur le document des conditions.
 

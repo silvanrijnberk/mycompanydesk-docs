@@ -28,7 +28,9 @@ The quote form is similar to the invoice form — if you know how to create an i
 3. Review the email preview
 4. Click **Send** to deliver it to your customer
 
-The quote PDF is attached to the email for the customer to review.
+The send dialog has toggles for the **View button**, **Download button**, and **PDF attachment**. By default the PDF is attached so the customer can review it.
+
+At least one of these must be turned on for a quote, otherwise the customer has no way to open the quote and the **Send** button is disabled. Invoices always keep a customer portal button as a fallback, but quotes do not.
 
 If your workspace has general terms in Documents, the email preview also shows an **Include general terms** toggle. It is on by default for quotes. When enabled, the current terms PDF is attached to the email and the send is recorded as the provision event on the terms document.
 
