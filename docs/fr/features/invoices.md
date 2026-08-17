@@ -108,7 +108,7 @@ Creez une copie d'une facture existante -- utile pour la facturation recurrente 
 
 ### Envoyer un rappel
 
-Envoyez un rappel de paiement pour les factures en retard.
+Envoyez un rappel de paiement pour les factures en retard. Si votre espace de travail a activé les paiements en ligne, le courriel de rappel offre au client les mêmes options de paiement que la facture d'origine : un bouton **Voir \u0026 payer**, un bouton **Confirmer le paiement** et un QR-code sur le PDF pour scanner et payer.
 
 ## Actions groupees
 

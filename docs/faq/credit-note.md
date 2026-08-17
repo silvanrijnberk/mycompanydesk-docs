@@ -22,6 +22,8 @@ In the outstanding report, the credit note's amount is netted against the origin
 
 In the back office, the credit note detail page shows whether the credit amount is still open or already settled, so you can see at a glance whether you still need to refund or offset it.
 
+When the original invoice has been fully credited, the invoice detail page no longer labels it as fully paid. Instead it shows that the invoice is credited and nothing more is due. If the customer had already paid before the credit was issued and that payment now exceeds the remaining amount, the page also shows the refund amount the customer is owed.
+
 When you send a credit note by email, it uses a dedicated credit-note template. The subject line names it as a credit note, the body states the credited amount as a positive number, and it does not ask for payment or show a due date. The PDF itself uses Credit note to, Credit note details, and Credit note No. in place of the invoice labels, so a credit note is never mislabeled as an invoice. While the credit note is still a draft, the suggested action card only offers to send it; once sent, no reminder or collection actions appear, because a credit note pays the customer rather than asking for money.
 
 Tip: Because you create the credit note from the original invoice, the two documents match exactly and your records stay consistent.

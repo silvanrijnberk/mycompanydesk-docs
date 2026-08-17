@@ -22,6 +22,8 @@ In het openstaande-debiteurenoverzicht wordt het bedrag van de creditnota verrek
 
 In de backoffice toont de detailpagina van de creditnota of het creditbedrag nog openstaat of al is verrekend. Zo zie je in één oogopslag of je de klant nog moet terugbetalen of verrekenen.
 
+Wanneer de originele factuur volledig is gecrediteerd, toont de detailpagina van de factuur niet langer de status volledig betaald. In plaats daarvan staat dat de factuur is gecrediteerd en dat er niets meer openstaat. Heeft de klant al betaald voordat de creditnota werd aangemaakt en is die betaling nu hoger dan het resterende bedrag, dan toont de pagina ook het terug te betalen bedrag dat je de klant verschuldigd bent.
+
 Als je een creditnota per e-mail verstuurt, gebruikt hij een eigen sjabloon. Het onderwerp noemt hem als creditnota, de tekst vermeldt het gecrediteerde bedrag als positief bedrag en er wordt niet gevraagd om te betalen of een vervaldatum getoond. De PDF zelf gebruikt 'Creditfactuur aan', 'Creditfactuurgegevens' en 'Creditfactuurnr.' in plaats van de factuurvarianten, zodat een creditnota nooit per ongeluk als factuur wordt aangeduid. Zolang de creditnota nog een concept is, biedt de actiekaart alleen de optie om hem te versturen; na verzending verschijnen er geen herinnerings- of incassoacties, omdat een creditnota de klant betaalt in plaats van geld te vragen.
 
 Tip: Doordat je de creditnota vanaf de originele factuur maakt, sluiten beide documenten precies op elkaar aan en blijft je administratie kloppend.

@@ -108,7 +108,7 @@ Erstellen Sie eine Kopie einer bestehenden Rechnung — nützlich für wiederkeh
 
 ### Erinnerung senden
 
-Senden Sie eine Zahlungserinnerung für überfällige Rechnungen.
+Senden Sie eine Zahlungserinnerung für überfällige Rechnungen. Wenn Ihr Arbeitsbereich Online-Zahlungen aktiviert hat, bietet die Erinnerungsmail dem Kunden dieselben Zahlungsoptionen wie die ursprüngliche Rechnung: einen Button **Ansehen \u0026 bezahlen**, einen Button **Zahlung bestätigen** und einen QR-Code auf der PDF zum Scannen und Bezahlen.
 
 ## Massenaktionen
 

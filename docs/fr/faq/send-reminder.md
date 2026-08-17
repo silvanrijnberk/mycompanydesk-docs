@@ -15,6 +15,8 @@ Pour envoyer un rappel pour une facture impayee :
 
 Le rappel indique le montant restant dû (montant total de la facture moins les paiements déjà reçus). Si le client a déjà versé un acompte ou un paiement partiel, le rappel demande le solde, pas le montant total de la facture.
 
+Si votre espace de travail a activé les paiements en ligne, le courriel de rappel offre au client les mêmes options de paiement que la facture d'origine : un bouton **Voir \u0026 payer**, un bouton **Confirmer le paiement** et un QR-code sur le PDF pour scanner et payer. Cela vaut pour les rappels manuels et automatiques.
+
 Vous ne pouvez pas envoyer de rappel lorsque :
 - la facture est encore un brouillon
 - la facture est annulée

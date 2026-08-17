@@ -24,7 +24,7 @@ Die Herokarte fasst den gewählten Zeitraum zusammen:
 <!-- TODO(source-missing): RichardTool 8bd35ae1 führte länderspezifische USt.-Abgabefristen ein (NL, GB, DE und andere). Die genauen Fristregeln pro Land sind noch nicht in sources/ hinterlegt. Vermerken Sie keine konkreten Fristen pro Land, bis ein Mensch sie in sources/ ergänzt hat. -->
 - **MwSt.-Rücklage (BTW-spaarpotje)**: eine vorgeschlagene Rücklage aus dem Zeitraumsaldo plus 10% Puffer, sichtbar, wenn Sie USt. schulden. Steht Ihnen eine Erstattung zu, wird die Kachel zu einer grünen Erstattungskachel.
 
-Unter dem Saldo stehen zwei Schaltflächen: **Erklärung öffnen** springt zum Reiter Erklärung, und **Wie wird das berechnet?** erklärt die Rechnung hinter dem Saldo.
+Unter dem Saldo stehen drei Schaltflächen: **Erklärung öffnen** springt zum Reiter Erklärung, **Wie wird das berechnet?** erklärt die Rechnung hinter dem Saldo, und **Mijn Belastingdienst Zakelijk öffnen** öffnet das Geschäftsportal unter `mijn.belastingdienst.nl/mbo-portaal/`, damit Sie die Erklärung ohne zusätzliche Auswahlseite abgeben können.
 
 Über der Herokarte warnt ein Banner, wenn Ihre Daten unvollständig sind (Rechnungsentwürfe oder Ausgaben ohne USt.), damit Sie das vor der Abgabe beheben können.
 

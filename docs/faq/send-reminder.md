@@ -15,6 +15,8 @@ To follow up on unpaid invoices:
 
 The reminder states the remaining outstanding amount (invoice total minus payments already received). If the customer has paid a deposit or an instalment, the reminder asks for the rest, not the full invoice amount.
 
+If your workspace has online payments enabled, the reminder email gives the customer the same payment options as the original invoice: a **View & pay** button, a **Confirm payment** button, and a scan-and-pay QR code on the PDF. This applies to both manual reminders and automatic reminders.
+
 You cannot send a reminder when:
 - the invoice is still a draft
 - the invoice has been canceled
