@@ -15,6 +15,8 @@ The VAT page has three tabs: **Overview**, **Filing** and **Transactions** (Over
 
 A page-wide period selector (Q1 to Q4 plus full year) sits next to the tab bar; switching it updates every card on every tab. If your workspace files monthly, the selector shows the twelve months instead of quarters, matching the filing frequency in your tax settings. The same filing frequency drives the period labels when you book a manual correction, so monthly filers see M01 to M12, quarterly filers see Q1 to Q4, and yearly filers keep the full-year option. A year switcher at the top of the page moves everything to another year.
 
+The active tab and period are both in the URL, so links from the VAT deadline reminder in your notification panel, the agenda-deadline chip, the push notification, and the VAT-period card in Expenses all open the exact period the message refers to instead of defaulting to the current quarter.
+
 ## Hero card
 
 The hero summarises the selected period:

@@ -10,10 +10,10 @@ Le portail client permet a vos clients de consulter et payer leurs factures en l
 
 Lorsque vous envoyez une facture, un **lien de paiement** unique est genere. Lorsque votre client clique sur ce lien, il accede au portail client ou il peut :
 
-1. **Consulter la facture** -- Voir tous les details, lignes et totaux
-2. **Telecharger le PDF** -- Obtenir une copie de la facture
-3. **Payer en ligne** -- Effectuer le paiement via le portail
-4. **Confirmer le paiement** -- Attester d'un virement bancaire (non visible pour les avoirs, les factures annulées ou les factures d'origine entièrement créditées, car le client n'a dans aucun de ces cas rien à payer)
+1. **Consulter la facture** - Voir tous les details, lignes et totaux
+2. **Telecharger le PDF** - Obtenir une copie de la facture
+3. **Payer en ligne** - Effectuer le paiement via le portail
+4. **Confirmer le paiement** - Attester d'un virement bancaire (non visible pour les avoirs, les factures annulées ou les factures d'origine entièrement créditées, car le client n'a dans aucun de ces cas rien à payer)
 
 ## Fonctionnalites du portail
 
@@ -35,7 +35,7 @@ Le portail affiche une vue claire et personnalisee de la facture comprenant :
 
 ### Paiement
 
-Les clients peuvent payer directement via le portail. Si vous avez connecte Mollie ou Stripe, des boutons de paiement apparaissent sur la vue de la facture pour que votre client puisse payer en un clic. Les boutons de paiement et le montant total dû sont masqués pour les avoirs, les factures annulées et les factures d'origine entièrement créditées, car le client n'a dans aucun de ces cas d'argent à transférer. Pour les factures avec paiements partiels ou avoirs, le portail affiche le montant déjà reçu, l'avoir appliqué et le solde restant dû avant le paiement, de sorte que le montant sur le bouton de paiement corresponde au montant restant dû. Lorsqu un client suit un lien autopay (par exemple depuis un rappel de paiement), le portail fait defiler jusqu au bon bouton de paiement et le met en evidence avec une animation pulsante au lieu de rediriger automatiquement vers le processus de paiement. Ainsi, le client peut consulter la facture avant de payer. Lorsque le paiement est confirme, le statut de la facture dans votre tableau de bord est automatiquement mis a jour a **Payee**.
+Les clients peuvent payer directement via le portail. Si vous avez connecte Mollie ou Stripe, des boutons de paiement apparaissent sur la vue de la facture pour que votre client puisse payer en un clic. Les boutons de paiement et le montant total dû sont masqués pour les avoirs, les factures annulées et les factures d'origine entièrement créditées, car le client n'a dans aucun de ces cas d'argent à transférer. Pour les factures avec paiements partiels ou avoirs, le portail affiche le montant déjà reçu, l'avoir appliqué et le solde restant dû avant le paiement, de sorte que le montant sur le bouton de paiement corresponde au montant restant dû. Lorsqu un client suit un lien autopay (par exemple depuis un rappel de paiement), le portail fait defiler jusqu au bon bouton de paiement et le met en evidence avec une animation pulsante au lieu de rediriger automatiquement vers le processus de paiement. Ainsi, le client peut consulter la facture avant de payer. Lorsque le paiement est confirmé, le statut de la facture dans votre tableau de bord est automatiquement mis a jour a **Payee**. Le portail dit aussi au client la verite apres un retour Mollie ou iDEAL : si le prestataire de paiement n'a pas encore confirme le paiement, la page le dit au lieu de pretendre que le paiement est en cours de traitement, et le client peut reessayer ci-dessous.
 
 #### Parametres de paiement Mollie
 
@@ -71,9 +71,9 @@ La vue de la facture et le téléchargement du PDF sont rendus à partir d'un in
 
 Chaque lien du portail est :
 
-- **Unique** -- Genere par facture
-- **Base sur un jeton** -- Securise avec un jeton d'acces unique
-- **Specifique a la facture** -- N'affiche que la facture concernee
+- **Unique** - Genere par facture
+- **Base sur un jeton** - Securise avec un jeton d'acces unique
+- **Specifique a la facture** - N'affiche que la facture concernee
 
 Les clients n'ont pas besoin d'un compte MyCompanyDesk pour consulter et payer leurs factures.
 
@@ -91,6 +91,6 @@ Cela vous aide a comprendre l'engagement de vos clients et a effectuer des relan
 ## Conseils
 
 - Incluez une note personnelle dans votre e-mail de facture pour encourager l'utilisation du portail
-- Le portail fonctionne sur tous les appareils -- mobile, tablette et ordinateur
+- Le portail fonctionne sur tous les appareils - mobile, tablette et ordinateur
 - Les confirmations de paiement sont envoyees a vous et au client
 - Consultez l'historique des evenements client sur la page de detail de la facture pour voir les interactions avec le portail

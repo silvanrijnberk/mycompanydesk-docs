@@ -14,6 +14,8 @@ La page TVA compte trois onglets : **Aperçu**, **Déclaration** et **Transactio
 
 À côté des onglets se trouve un sélecteur de période valable pour toute la page (Q1 à Q4 plus année complète) ; le changer met à jour chaque carte de chaque onglet. Si votre espace de travail déclare mensuellement, le sélecteur affiche les douze mois au lieu des trimestres, en cohérence avec la fréquence de déclaration de vos réglages fiscaux. La même fréquence détermine les libellés de période lors d'une correction manuelle : les déclarants mensuels voient M01 à M12, les trimestriels Q1 à Q4, et les déclarants annuels conservent l'option année complète. Le sélecteur d'année en haut de la page fait basculer l'ensemble vers une autre année.
 
+L'onglet actif et la période active figurent tous deux dans l'URL, donc les liens du rappel d'échéance de TVA dans le panneau de notifications, de la puce d'échéance de l'agenda, de la notification push et de la carte de période TVA dans Dépenses ouvrent tous la période exacte mentionnée par le message, au lieu de revenir au trimestre en cours.
+
 ## Carte principale
 
 La carte principale résume la période choisie :

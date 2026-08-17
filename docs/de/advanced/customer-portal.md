@@ -10,9 +10,9 @@ Das Kundenportal ermöglicht es Ihren Kunden, Rechnungen online über eine siche
 
 Wenn Sie eine Rechnung versenden, wird ein eindeutiger **Zahlungslink** generiert. Wenn Ihr Kunde auf diesen Link klickt, wird er zum Kundenportal weitergeleitet, wo er:
 
-1. **Die Rechnung ansehen** kann — Alle Details, Positionen und Gesamtbeträge einsehen
-2. **Das PDF herunterladen** kann — Eine Kopie der Rechnung erhalten
-3. **Online bezahlen** kann — Die Zahlung direkt über das Portal abschließen
+1. **Die Rechnung ansehen** kann - Alle Details, Positionen und Gesamtbeträge einsehen
+2. **Das PDF herunterladen** kann - Eine Kopie der Rechnung erhalten
+3. **Online bezahlen** kann - Die Zahlung direkt über das Portal abschließen
 4. **Zahlung bestätigen** kann: Eine Banküberweisung bestätigen (nicht sichtbar für Gutschriften, stornierte Rechnungen oder Originalrechnungen, die vollständig gutgeschrieben wurden, da der Kunde in keinem dieser Fälle noch etwas zu zahlen hat)
 
 ## Portal-Funktionen
@@ -35,7 +35,7 @@ Das Portal zeigt eine übersichtliche, gebrandete Ansicht der Rechnung, einschli
 
 ### Zahlung
 
-Kunden können direkt über das Portal bezahlen. Wenn Sie Mollie oder Stripe verbunden haben, erscheinen Zahlungsschaltflächen auf der Rechnungsansicht, sodass Ihr Kunde mit einem Klick bezahlen kann. Zahlungsschaltflächen und der fällige Gesamtbetrag werden für Gutschriften, stornierte Rechnungen und Originalrechnungen, die vollständig gutgeschrieben wurden, ausgeblendet, da der Kunde in keinem dieser Fälle noch Geld überweisen muss. Bei Rechnungen mit Teilzahlungen oder Gutschriften zeigt das Portal den bereits erhaltenen Betrag, die angewandte Gutschrift und die noch offene Restsumme an, bevor der Kunde zahlt, sodass der Betrag auf der Zahlungsschaltfläche mit dem verbleibenden offenen Betrag übereinstimmt. Wenn ein Kunde einem Autopay-Link folgt (zum Beispiel aus einer Zahlungserinnerung), scrollt das Portal zur richtigen Zahlungsschaltfläche und hebt sie mit einer pulsierenden Animation hervor, anstatt automatisch zum Zahlungsvorgang weiterzuleiten. So kann der Kunde die Rechnung vor der Zahlung prüfen. Wenn die Zahlung bestätigt wird, aktualisiert sich der Rechnungsstatus in Ihrem Dashboard automatisch auf **Bezahlt**.
+Kunden können direkt über das Portal bezahlen. Wenn Sie Mollie oder Stripe verbunden haben, erscheinen Zahlungsschaltflächen auf der Rechnungsansicht, sodass Ihr Kunde mit einem Klick bezahlen kann. Zahlungsschaltflächen und der fällige Gesamtbetrag werden für Gutschriften, stornierte Rechnungen und Originalrechnungen, die vollständig gutgeschrieben wurden, ausgeblendet, da der Kunde in keinem dieser Fälle noch Geld überweisen muss. Bei Rechnungen mit Teilzahlungen oder Gutschriften zeigt das Portal den bereits erhaltenen Betrag, die angewandte Gutschrift und die noch offene Restsumme an, bevor der Kunde zahlt, sodass der Betrag auf der Zahlungsschaltfläche mit dem verbleibenden offenen Betrag übereinstimmt. Wenn ein Kunde einem Autopay-Link folgt (zum Beispiel aus einer Zahlungserinnerung), scrollt das Portal zur richtigen Zahlungsschaltfläche und hebt sie mit einer pulsierenden Animation hervor, anstatt automatisch zum Zahlungsvorgang weiterzuleiten. So kann der Kunde die Rechnung vor der Zahlung prüfen. Wenn die Zahlung bestätigt wird, aktualisiert sich der Rechnungsstatus in Ihrem Dashboard automatisch auf **Bezahlt**. Das Portal zeigt dem Kunden nach einer Rückkehr aus Mollie oder iDEAL auch die Wahrheit an: wenn der Zahlungsanbieter die Zahlung noch nicht bestätigt hat, sagt die Seite das ehrlich, anstatt vorzugeben, dass die Zahlung in Bearbeitung ist, und der Kunde kann es unten erneut versuchen.
 
 #### Mollie-Zahlungseinstellungen
 
@@ -71,9 +71,9 @@ Rechnungsansicht und PDF-Download werden aus einer Momentaufnahme gerendert, die
 
 Jeder Portal-Link ist:
 
-- **Eindeutig** — Pro Rechnung generiert
-- **Token-basiert** — Mit einem einzigartigen Zugangstoken gesichert
-- **Rechnungsspezifisch** — Zeigt nur die spezifische Rechnung
+- **Eindeutig** - Pro Rechnung generiert
+- **Token-basiert** - Mit einem einzigartigen Zugangstoken gesichert
+- **Rechnungsspezifisch** - Zeigt nur die spezifische Rechnung
 
 Kunden benötigen kein MyCompanyDesk-Konto, um Rechnungen einzusehen und zu bezahlen.
 
@@ -91,6 +91,6 @@ Dies hilft Ihnen, das Kundenengagement zu verstehen und effektiv nachzufassen.
 ## Tipps
 
 - Fügen Sie Ihrer Rechnungs-E-Mail eine persönliche Notiz hinzu, um die Portal-Nutzung zu fördern
-- Das Portal funktioniert auf allen Geräten — Mobiltelefon, Tablet und Desktop
+- Das Portal funktioniert auf allen Geräten - Mobiltelefon, Tablet und Desktop
 - Zahlungsbestätigungen werden sowohl an Sie als auch an den Kunden gesendet
 - Prüfen Sie den Kundenereignisverlauf auf der Rechnungsdetailseite, um Portal-Interaktionen einzusehen
