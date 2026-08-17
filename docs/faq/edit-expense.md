@@ -10,7 +10,7 @@ chatbot:
 To edit an expense:
 1. Open the expense from the list
 2. Click "Edit"
-3. Update the vendor, amount, category, date, or notes
+3. Update the vendor, amount, category, date, or notes. Saving an amount of EUR 0.00 is blocked unless the record is a genuine zero-value entry such as a VAT-only credit note.
 4. Save your changes
 
 Open the attachment section on the same record if you also need to replace or add the receipt file.

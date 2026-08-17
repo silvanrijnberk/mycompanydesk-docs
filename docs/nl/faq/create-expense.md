@@ -10,7 +10,7 @@ chatbot:
 
 Zo voeg je een uitgave toe:
 1. Ga naar Uitgaven en klik op "Nieuwe uitgave"
-2. Vul leverancier, categorie, omschrijving, bedrag en datum in
+2. Vul leverancier, categorie, omschrijving, bedrag en datum in. Een bedrag is verplicht; het formulier slaat geen uitgave van EUR 0,00 op, tenzij het een echt nulrecord is zoals een creditnota met alleen BTW.
 3. Sla de uitgave op zodat het record wordt aangemaakt
 4. Open daarna de opgeslagen uitgave als je "Bon uploaden" wilt gebruiken
 

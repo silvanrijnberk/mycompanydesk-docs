@@ -10,7 +10,7 @@ chatbot:
 
 Voici comment ajouter une dépense :
 1. Allez dans Dépenses et cliquez sur « Ajouter »
-2. Saisissez le fournisseur, la catégorie, la description, le montant et la date
+2. Saisissez le fournisseur, la catégorie, la description, le montant et la date. Un montant est obligatoire; le formulaire n'enregistre pas une dépense de 0,00 EUR, sauf s'il s'agit d'un enregistrement réellement nul comme une note de crédit avec seulement de la TVA.
 3. Enregistrez la dépense pour créer l'enregistrement
 4. Ouvrez ensuite la dépense enregistrée si vous voulez utiliser « Téléverser le reçu »
 
