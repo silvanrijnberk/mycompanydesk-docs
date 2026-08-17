@@ -10,7 +10,7 @@ chatbot:
 Pour modifier une dépense :
 1. Ouvrez la dépense depuis la liste
 2. Cliquez sur « Modifier »
-3. Mettez à jour le fournisseur, montant, catégorie, date ou notes
+3. Mettez à jour le fournisseur, le montant, la catégorie, la date ou les notes. L'enregistrement avec un montant de 0,00 EUR est bloqué, sauf s'il s'agit d'un enregistrement réellement nul comme une note de crédit avec seulement de la TVA.
 4. Enregistrez vos modifications
 
 Une dépense dans la corbeille ne peut pas être modifiée. Restaurez-la depuis la corbeille d'abord, puis modifiez-la.

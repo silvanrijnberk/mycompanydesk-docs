@@ -10,7 +10,7 @@ chatbot:
 So bearbeitest du eine Ausgabe:
 1. Öffne die Ausgabe aus der Liste
 2. Klicke auf „Bearbeiten"
-3. Aktualisiere Lieferant, Betrag, Kategorie, Datum oder Notizen
+3. Aktualisiere Lieferant, Betrag, Kategorie, Datum oder Notizen. Das Speichern mit einem Betrag von 0,00 EUR wird verhindert, es sei denn, es handelt sich um einen echten Nullwert wie eine rein MwSt.-haltige Gutschrift.
 4. Speichere deine Änderungen
 
 Eine Ausgabe im Papierkorb kann nicht bearbeitet werden. Stelle sie zuerst aus dem Papierkorb wieder her und bearbeite sie dann.
