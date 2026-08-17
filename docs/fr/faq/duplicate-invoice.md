@@ -1,6 +1,6 @@
 ---
 title: "Dupliquer une facture"
-last_verified: 2026-07-02
+last_verified: 2026-08-17
 chatbot:
   triggers: ["duplicate invoice", "copy invoice", "clone invoice", "reuse invoice", "invoice template", "factuur kopieren", "factuur dupliceren", "rechnung kopieren", "dupliquer facture"]
   actions:
@@ -14,5 +14,7 @@ Pour dupliquer une facture :
 3. Cliquez sur "Dupliquer"
 4. Un nouveau brouillon est créé avec les mêmes lignes et le même client
 5. Ajustez la date, les montants ou les détails, puis enregistrez
+
+Le duplicata conserve le numéro de référence et l'objet lié de la facture d'origine, vous ne perdez donc pas un numéro de bon de commande ni l'attribution à un objet locatif.
 
 Astuce : idéal pour des factures similaires au même client, cela évite de ressaisir toutes les lignes.

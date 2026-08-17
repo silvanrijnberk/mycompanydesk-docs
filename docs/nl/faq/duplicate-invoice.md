@@ -1,6 +1,6 @@
 ---
 title: "Factuur dupliceren"
-last_verified: 2026-07-02
+last_verified: 2026-08-17
 chatbot:
   triggers: ["duplicate invoice", "copy invoice", "clone invoice", "reuse invoice", "invoice template", "factuur kopieren", "factuur dupliceren", "rechnung kopieren", "dupliquer facture"]
   actions:
@@ -14,5 +14,7 @@ Zo dupliceer je een factuur:
 3. Klik op "Dupliceren"
 4. Er wordt een nieuw concept aangemaakt met dezelfde factuurregels en klant
 5. Pas de datum, bedragen of details aan en sla op
+
+Het duplicaat neemt het referentienummer en de gekoppelde bezitting uit de originele factuur over, dus je verliest geen inkoopordernummer of toewijzing aan een huurobject.
 
 Tip: Handig voor vergelijkbare facturen aan dezelfde klant, zo hoef je niet alle regels opnieuw in te voeren.
