@@ -19,3 +19,5 @@ Sollen künftige Rechnungen mit einer anderen Frist starten, passen Sie die Zahl
 Tipp: Automatische Erinnerungen richten sich nach dem Fälligkeitsdatum; mit der richtigen Frist gehen auch die Erinnerungen zum passenden Zeitpunkt raus.
 
 Hat ein Kunde keine eigenen Zahlungsfristen, gilt zuerst der Arbeitsbereich-Standard unter **Einstellungen → Rechnungen und Angebote**, erst danach der Plattform-Standard (14 Tage). Diese Reihenfolge wurde früher beim Auswählen eines Kunden übersprungen, sodass das Fälligkeitsdatum früher ausfallen konnte als beabsichtigt.
+
+Aus Verträgen und wiederkehrenden Rechnungen generierte Rechnungen erhalten ebenfalls ein Fälligkeitsdatum. Sie verwenden die eigene Zahlungsfrist des Vertrags oder der wiederkehrenden Rechnung, sofern gesetzt; andernfalls greift wie bei manuell erstellten Rechnungen der Plattform-Standard.
