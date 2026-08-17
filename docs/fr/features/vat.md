@@ -12,7 +12,7 @@ Suivez la TVA collectée et payée, préparez votre déclaration et gardez une l
 
 La page TVA compte trois onglets : **Aperçu**, **Déclaration** et **Transactions**. L'onglet actif et la période active figurent dans l'URL : l'actualisation et le bouton retour conservent votre position.
 
-À côté des onglets se trouve un sélecteur de période valable pour toute la page (Q1 à Q4 plus année complète) ; le changer met à jour chaque carte de chaque onglet. Si votre espace de travail déclare mensuellement, le sélecteur affiche les douze mois au lieu des trimestres, en cohérence avec la fréquence de déclaration de vos réglages fiscaux. Le sélecteur d'année en haut de la page fait basculer l'ensemble vers une autre année.
+À côté des onglets se trouve un sélecteur de période valable pour toute la page (Q1 à Q4 plus année complète) ; le changer met à jour chaque carte de chaque onglet. Si votre espace de travail déclare mensuellement, le sélecteur affiche les douze mois au lieu des trimestres, en cohérence avec la fréquence de déclaration de vos réglages fiscaux. La même fréquence détermine les libellés de période lors d'une correction manuelle : les déclarants mensuels voient M01 à M12, les trimestriels Q1 à Q4, et les déclarants annuels conservent l'option année complète. Le sélecteur d'année en haut de la page fait basculer l'ensemble vers une autre année.
 
 ## Carte principale
 
@@ -76,6 +76,8 @@ Lorsque vous ajoutez une correction manuelle, saisissez un montant positif et ch
 
 La rubrique 4a concerne les achats en autoliquidation auprès de fournisseurs hors UE (`import_reverse_charge`); la rubrique 4b concerne les achats en autoliquidation auprès de fournisseurs UE (`b2b_reverse_charge`). MyCompanyDesk déduit la bonne rubrique à partir du pays du fournisseur, pour que le total en 5a soit exact.
 
+Lorsque vous enregistrez ou supprimez une correction, la feuille des rubriques, la carte principale, la bande des trimestres et la carte d'action de déclaration se mettent à jour immédiatement; il n'est pas nécessaire d'actualiser la page ou de changer de période. La carte d'usage privé du véhicule de société se rafraîchit également en direct quand sa correction est enregistrée.
+
 ### Exports pour votre comptable
 
 Une carte de téléchargement à côté de la feuille propose des exports CSV : un export complet pour votre comptable, un récapitulatif de TVA du trimestre choisi et une vue annuelle.
@@ -130,6 +132,8 @@ Le statut de déclaration est suivi par période exacte, pas par inclusion. Une 
 **Calendrier de dépôt et corrections.** Vous ne pouvez déclarer une période qu'une fois qu'elle est terminée. Si vous tentez de déclarer avant le dernier jour de la période, l'application affiche une erreur vous demandant d'attendre la fin de la période. Une période ne peut être marquée comme déposée qu'une seule fois ; si elle l'est déjà, vous ne pouvez plus la déclarer à nouveau depuis la page TVA. Corrigez une période déjà déposée en créant une correction ou suppletie dans une période ouverte. L'onglet Déclaration indique quelles périodes sont encore ouvertes et lesquelles sont déjà déposées.
 
 Modifier une facture ou une dépense dans une période verrouillée est bloqué dans le formulaire : les champs financiers passent en lecture seule (les notes restent modifiables) et le formulaire propose un chemin de correction, comme une correction dans la période ouverte en cours ou une facture rectificative. La même protection s'applique lorsque vous rapprochez une transaction bancaire ou marquez une dépense comme payée : si la transaction tombe dans une période verrouillée, l'application bloque l'action et vous oriente vers une correction dans la période ouverte en cours.
+
+Les tentatives simultanées de déclarer la même période sont sérialisées. Si deux déclarations se font concurrence, par exemple par un double clic ou deux onglets ouverts, la seconde est rejetée avec un message clair au lieu d'échouer sur une erreur de base de données.
 
 ## KOR
 

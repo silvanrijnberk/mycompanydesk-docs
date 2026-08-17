@@ -73,6 +73,8 @@ AI kan duidelijkere, professionelere omschrijvingen suggereren voor:
 
 Toepassen werkt via hetzelfde schrijfpad als een handmatige bewerking. Een uitgave in de prullenbak, een vergrendelde BTW-periode of een gearchiveerde/ongeldige categorie blokkeert de actie met dezelfde foutcodes die je ook ziet bij handmatig bewerken. Bij een succesvolle toepassing schrijft MyCompanyDesk een auditlogregel voor de gewijzigde velden, net als bij een normale update.
 
+Wanneer je een suggestie toepast, worden de gecachede financiële totalen die van het gewijzigde record afhangen direct ongeldig gemaakt. BTW, rapportages en het dashboard verversen meteen en tonen de nieuwe categorie, btw-behandeling of omschrijving.
+
 ::: info
 AI-suggesties vereisen het **Starter**-abonnement of hoger. Schakel ze in via **Bedrijf > Functies**.
 :::

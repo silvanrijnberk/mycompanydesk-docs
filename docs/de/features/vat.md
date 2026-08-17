@@ -12,7 +12,7 @@ Verfolgen Sie vereinnahmte und gezahlte USt., bereiten Sie Ihre Erklärung vor u
 
 Die USt.-Seite hat drei Reiter: **Übersicht**, **Erklärung** und **Transaktionen**. Der aktive Reiter und der aktive Zeitraum stehen in der URL, sodass Aktualisieren und die Zurücktaste Ihre Position bewahren.
 
-Neben der Reiterleiste sitzt eine seitenweite Zeitraumauswahl (Q1 bis Q4 plus Gesamtjahr); ein Wechsel wirkt auf jede Karte in jedem Reiter. Gibt Ihr Arbeitsbereich monatlich ab, zeigt die Auswahl die zwölf Monate statt Quartale, passend zur Abgabefrequenz in Ihren Steuereinstellungen. Mit dem Jahresumschalter oben auf der Seite wechseln Sie das Jahr.
+Neben der Reiterleiste sitzt eine seitenweite Zeitraumauswahl (Q1 bis Q4 plus Gesamtjahr); ein Wechsel wirkt auf jede Karte in jedem Reiter. Gibt Ihr Arbeitsbereich monatlich ab, zeigt die Auswahl die zwölf Monate statt Quartale, passend zur Abgabefrequenz in Ihren Steuereinstellungen. Dieselbe Frequenz bestimmt die Zeitraumbezeichnungen bei einer manuellen Korrektur: bei monatlicher Abgabe zeigt sie M01 bis M12, bei vierteljährlicher Abgabe Q1 bis Q4, und bei jährlicher Abgabe bleibt es bei der Jahresoption. Mit dem Jahresumschalter oben auf der Seite wechseln Sie das Jahr.
 
 ## Herokarte
 
@@ -76,6 +76,8 @@ Geben Sie bei einer manuellen Korrektur einen positiven Betrag ein und wählen S
 
 Rubrik 4a ist für Reverse-Charge-Einkäufe von Lieferanten außerhalb der EU (`import_reverse_charge`); Rubrik 4b ist für Reverse-Charge-Einkäufe von EU-Lieferanten (`b2b_reverse_charge`). MyCompanyDesk leitet anhand des Lieferantenlands die richtige Rubrik ab, damit die Summe in 5a stimmt.
 
+Wenn Sie eine Korrektur speichern oder löschen, aktualisieren sich die Rubrieken-Übersicht, die Herokarte, die Quartalsleiste und die Abgabe-Aktionskarte sofort; Sie müssen nicht neu laden oder den Zeitraum wechseln. Auch die Karte für Privatnutzung des Firmenwagens wird live aktualisiert, sobald die dazugehörige Korrektur gebucht ist.
+
 ### Exporte für die Buchhaltung
 
 Eine Downloadkarte neben der Übersicht bietet CSV-Exporte: einen vollständigen Export für die Buchhaltung, eine USt.-Übersicht des gewählten Quartals und eine Jahresübersicht.
@@ -130,6 +132,8 @@ Der Einreichungsstatus wird für den genauen Zeitraum erfasst, nicht für enthal
 **Abgabetiming und Korrekturen.** Einen Zeitraum können Sie erst abgeben, nachdem er beendet ist. Wenn Sie vor dem letzten Tag des Zeitraums abgeben möchten, zeigt die App einen Fehler und bittet Sie zu warten, bis der Zeitraum vorbei ist. Ein Zeitraum kann nur einmal als eingereicht markiert werden; ist er bereits eingereicht, können Sie ihn von der USt.-Seite nicht erneut abgeben. Korrigieren Sie eine eingereichte Periode stattdessen mit einer Korrektur oder Suppletie in einem offenen Zeitraum. Im Reiter Erklärung sehen Sie, welche Zeiträume noch offen und welche bereits eingereicht sind.
 
 Das Bearbeiten einer Rechnung oder Ausgabe in einem gesperrten Zeitraum wird im Formular blockiert: Die Finanzfelder werden schreibgeschützt (Notizen bleiben bearbeitbar) und das Formular bietet stattdessen einen Korrekturweg an, etwa eine Korrektur im aktuell offenen Zeitraum oder eine Korrekturrechnung. Derselbe Schutz greift auch beim Buchen eines Bank-Abgleichs oder Markieren einer Ausgabe als bezahlt: fällt die Transaktion in einen gesperrten Zeitraum, blockiert die App die Aktion und verweist auf eine Korrektur im aktuell offenen Zeitraum.
+
+Gleichzeitige Versuche, denselben Zeitraum abzugeben, werden serialisiert. Wenn zwei Abgaben gleichzeitig eintreffen, etwa durch einen Doppelklick oder zwei geöffnete Tabs, wird die zweite Anfrage mit einer klaren Meldung abgelehnt statt mit einem Datenbankfehler zu scheitern.
 
 ## KOR
 
