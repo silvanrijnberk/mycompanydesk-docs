@@ -10,9 +10,9 @@ The customer portal lets your clients view and pay invoices online through a sec
 
 When you send an invoice, a unique **payment link** is generated. When your customer clicks this link, they're taken to the customer portal where they can:
 
-1. **View the invoice** — See all details, line items, and totals
-2. **Download the PDF** — Get a copy of the invoice
-3. **Pay online** — Complete payment through the portal
+1. **View the invoice** - See all details, line items, and totals
+2. **Download the PDF** - Get a copy of the invoice
+3. **Pay online** - Complete payment through the portal
 4. **Confirm payment**: Acknowledge a bank transfer (not shown for credit notes, canceled invoices, or original invoices that have been fully credited, because none of these asks the customer for payment)
 
 ## Portal features
@@ -35,7 +35,7 @@ The portal shows a clean, branded view of the invoice including:
 
 ### Payment
 
-Customers can pay directly through the portal. If you have connected Mollie or Stripe, pay buttons appear on the invoice view so customers can complete payment in one click. Pay buttons and the total amount due are hidden for credit notes, canceled invoices, and original invoices that have been fully credited, because none of these asks the customer for money. For invoices with partial payments or credit notes, the portal shows the amount already received, any credit applied, and the balance still due before the customer pays, so the pay button amount matches the remaining outstanding amount. When a customer follows an autopay link (for example from a payment reminder email), the portal scrolls to the correct pay button and highlights it with a pulsing animation instead of automatically redirecting to the payment flow. This gives the customer a chance to review the invoice before paying. When payment is confirmed, the invoice status in your dashboard automatically updates to **Paid**.
+Customers can pay directly through the portal. If you have connected Mollie or Stripe, pay buttons appear on the invoice view so customers can complete payment in one click. Pay buttons and the total amount due are hidden for credit notes, canceled invoices, and original invoices that have been fully credited, because none of these asks the customer for money. For invoices with partial payments or credit notes, the portal shows the amount already received, any credit applied, and the balance still due before the customer pays, so the pay button amount matches the remaining outstanding amount. When a customer follows an autopay link (for example from a payment reminder email), the portal scrolls to the correct pay button and highlights it with a pulsing animation instead of automatically redirecting to the payment flow. This gives the customer a chance to review the invoice before paying. When payment is confirmed, the invoice status in your dashboard automatically updates to **Paid**. The portal also tells the customer the truth after a Mollie or iDEAL return: if the payment provider has not yet confirmed the payment, the page says so instead of pretending the payment is being processed, and the customer can try again.
 
 #### Mollie payment controls
 
@@ -71,9 +71,9 @@ The invoice view and PDF download are rendered from a snapshot taken when the in
 
 Each portal link is:
 
-- **Unique** — Generated per invoice
-- **Token-based** — Secured with a unique access token
-- **Invoice-specific** — Only shows the specific invoice
+- **Unique** - Generated per invoice
+- **Token-based** - Secured with a unique access token
+- **Invoice-specific** - Only shows the specific invoice
 
 Customers don't need a MyCompanyDesk account to view and pay invoices.
 
@@ -91,6 +91,6 @@ This helps you understand customer engagement and follow up effectively.
 ## Tips
 
 - Include a personal note in your invoice email to encourage portal use
-- The portal works on all devices — mobile, tablet, and desktop
+- The portal works on all devices - mobile, tablet, and desktop
 - Payment confirmations are sent to both you and the customer
 - Check the customer event history on the invoice detail page to see portal interactions

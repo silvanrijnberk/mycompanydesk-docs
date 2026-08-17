@@ -14,6 +14,8 @@ De BTW-pagina heeft drie tabbladen: **Overzicht**, **Aangifte** en **Transacties
 
 Naast de tabbladen staat een paginabrede periodekiezer (Q1 tot en met Q4 plus heel jaar); wisselen werkt door in elke kaart op elk tabblad. Doet je werkruimte maandaangifte, dan toont de kiezer de twaalf maanden in plaats van kwartalen, passend bij de aangiftefrequentie in je belastinginstellingen. Dezelfde frequentie bepaalt de periodelabels bij een handmatige correctie: maandaangevers zien M01 tot en met M12, kwartaalaangevers Q1 tot en met Q4, en jaaraangevers blijven bij de jaarsoptie. Met de jaarwisselaar bovenaan de pagina zet je alles naar een ander jaar.
 
+Het actieve tabblad en de periode staan beide in de URL, dus links van de BTW-deadlineherinnering in je meldingenpaneel, de agendachip, de pushmelding en de BTW-tijdvak-kaart in Uitgaven openen allemaal het tijdvak dat de melding noemt, in plaats van terug te vallen op het huidige kwartaal.
+
 ## Herokaart
 
 De herokaart vat de gekozen periode samen:

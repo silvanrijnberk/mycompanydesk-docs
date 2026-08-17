@@ -14,6 +14,8 @@ Die USt.-Seite hat drei Reiter: **Übersicht**, **Erklärung** und **Transaktion
 
 Neben der Reiterleiste sitzt eine seitenweite Zeitraumauswahl (Q1 bis Q4 plus Gesamtjahr); ein Wechsel wirkt auf jede Karte in jedem Reiter. Gibt Ihr Arbeitsbereich monatlich ab, zeigt die Auswahl die zwölf Monate statt Quartale, passend zur Abgabefrequenz in Ihren Steuereinstellungen. Dieselbe Frequenz bestimmt die Zeitraumbezeichnungen bei einer manuellen Korrektur: bei monatlicher Abgabe zeigt sie M01 bis M12, bei vierteljährlicher Abgabe Q1 bis Q4, und bei jährlicher Abgabe bleibt es bei der Jahresoption. Mit dem Jahresumschalter oben auf der Seite wechseln Sie das Jahr.
 
+Aktiver Reiter und Zeitraum stehen beide in der URL, sodass Links aus der USt.-Fristen-Erinnerung im Benachrichtigungsbereich, dem Agenda-Fristen-Chip, der Push-Benachrichtigung und der USt.-Zeitraum-Karte in Ausgaben genau den Zeitraum öffnen, auf den die Nachricht sich bezieht, anstatt auf das aktuelle Quartal zurückzufallen.
+
 ## Herokarte
 
 Die Herokarte fasst den gewählten Zeitraum zusammen:
