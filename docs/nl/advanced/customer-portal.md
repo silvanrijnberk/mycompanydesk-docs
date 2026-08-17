@@ -19,7 +19,7 @@ Wanneer je een factuur verstuurt, wordt een unieke **betaallink** gegenereerd. W
 
 ### Facturenlijst
 
-Als een klant meerdere facturen heeft, toont het portaal ook een lijst met elke factuur, creditnota en de huidige status. De kaartjes "Openstaand" en "Achterstallig" boven de tabel tellen het **restant per document** op, niet het bruto totaal. Een factuur van € 1.000 met een deelbetaling van € 400 telt dus € 600 mee in het openstaande bedrag, en een creditnota die al is verrekend met zijn bronfactuur telt € 0 mee zodat hij niet twee keer wordt afgetrokken.
+Als een klant meerdere facturen heeft, toont het portaal ook een lijst met elke factuur, creditnota en de huidige status. De kaartjes "Openstaand" en "Achterstallig" boven de tabel tellen het **restant per document** op, niet het bruto totaal. Een factuur van € 1.000 met een deelbetaling van € 400 telt dus € 600 mee in het openstaande bedrag, en een creditnota die al is verrekend met zijn bronfactuur telt € 0 mee zodat hij niet twee keer wordt afgetrokken. "Achterstallig" wordt afgeleid uit de vervaldatum: elke verzonden of openstaande factuur met een vervaldatum vóór vandaag telt daarin mee, zodat het kaartje altijd actueel blijft, ook al hebben facturen zelden nog de legacy-status `overdue`.
 
 ### Factuurweergave
 
