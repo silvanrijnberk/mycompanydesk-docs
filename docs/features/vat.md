@@ -13,7 +13,7 @@ Track collected and paid VAT, prepare your return, and stay ahead of deadlines. 
 
 The VAT page has three tabs: **Overview**, **Filing** and **Transactions** (Overzicht, Aangifte and Transacties when your app language is Dutch). Both the active tab and the active period are kept in the URL, so refresh and the back button preserve your place.
 
-A page-wide period selector (Q1 to Q4 plus full year) sits next to the tab bar; switching it updates every card on every tab. If your workspace files monthly, the selector shows the twelve months instead of quarters, matching the filing frequency in your tax settings. A year switcher at the top of the page moves everything to another year.
+A page-wide period selector (Q1 to Q4 plus full year) sits next to the tab bar; switching it updates every card on every tab. If your workspace files monthly, the selector shows the twelve months instead of quarters, matching the filing frequency in your tax settings. The same filing frequency drives the period labels when you book a manual correction, so monthly filers see M01 to M12, quarterly filers see Q1 to Q4, and yearly filers keep the full-year option. A year switcher at the top of the page moves everything to another year.
 
 ## Hero card
 
@@ -77,6 +77,8 @@ When you add a manual correction, enter a positive amount and choose a direction
 
 Rubriek 4a captures reverse-charge purchases from suppliers outside the EU (`import_reverse_charge`); rubriek 4b captures reverse-charge purchases from EU suppliers (`b2b_reverse_charge`). MyCompanyDesk derives the correct rubriek from the supplier country so the total in 5a stays accurate.
 
+When you save or delete a correction, the rubrieken sheet, hero card, quarter strip and filing-action card update immediately; there is no need to refresh or switch periods. The company-car private-use card also refreshes live when its correction is booked.
+
 ### Exports for your accountant
 
 A download card next to the sheet offers CSV exports: a full export for your boekhouder, a BTW summary for the selected quarter, and a year overview.
@@ -132,6 +134,8 @@ Filing status is tracked per exact tijdvak, not by range containment. A filed ye
 **Filing timing and corrections.** You can only file a period after it ends. If you try to file before the last day of the period has passed, the app shows an error telling you to wait until the period is over. You can mark a period as filed only once; if it is already marked as filed, you cannot file it again from the VAT page. To correct a filed period, add a correction/suppletie in an open period instead. The Filing tab shows which periods are still open and which are already filed.
 
 Editing an invoice or expense inside a locked period is blocked at the form: the financial fields turn read-only (notes stay editable) and the form offers a correction path instead, such as creating a correction in the current open period or a credit invoice. The same guard also applies when you confirm a bank-transaction match or mark an expense as paid: if the transaction falls in a locked period, the action is blocked and the app tells you to use a correction in the current open period instead.
+
+Concurrent filing attempts for the same period are serialized. If two submissions race, for example from a double click or two open tabs, the second request is rejected with a clear message instead of failing with a database error.
 
 ## KOR
 

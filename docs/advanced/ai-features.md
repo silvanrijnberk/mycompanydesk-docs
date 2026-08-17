@@ -104,6 +104,8 @@ The interesting bit is the **feedback loop**:
 
 A FIFO cap of 50 examples per `(company_id, task)` keeps lookup at microseconds without `pgvector`. Embeddings are stamped with provider + dimension so a provider swap doesn't poison the lookup; mismatched rows are skipped, not crashed on.
 
+Applying a suggestion invalidates the cached financial totals that depend on the changed record, so VAT, reports and the dashboard refresh straight away and reflect the new category, VAT treatment or description.
+
 ## Industry detection
 
 The local **E2B** model (Gemini Flash-Lite primary, Workers AI fallback for both processing modes; Ollama Cloud as an additional fallback in Optimise mode only) classifies your workspace's industry from invoice and expense history. It re-evaluates progressively:

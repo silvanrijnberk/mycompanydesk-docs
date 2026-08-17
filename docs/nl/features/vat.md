@@ -12,7 +12,7 @@ Volg ontvangen en betaalde BTW, bereid je aangifte voor en blijf deadlines voor.
 
 De BTW-pagina heeft drie tabbladen: **Overzicht**, **Aangifte** en **Transacties**. Zowel het actieve tabblad als de actieve periode staan in de URL, dus verversen en de terugknop bewaren je plek.
 
-Naast de tabbladen staat een paginabrede periodekiezer (Q1 tot en met Q4 plus heel jaar); wisselen werkt door in elke kaart op elk tabblad. Doet je werkruimte maandaangifte, dan toont de kiezer de twaalf maanden in plaats van kwartalen, passend bij de aangiftefrequentie in je belastinginstellingen. Met de jaarwisselaar bovenaan de pagina zet je alles naar een ander jaar.
+Naast de tabbladen staat een paginabrede periodekiezer (Q1 tot en met Q4 plus heel jaar); wisselen werkt door in elke kaart op elk tabblad. Doet je werkruimte maandaangifte, dan toont de kiezer de twaalf maanden in plaats van kwartalen, passend bij de aangiftefrequentie in je belastinginstellingen. Dezelfde frequentie bepaalt de periodelabels bij een handmatige correctie: maandaangevers zien M01 tot en met M12, kwartaalaangevers Q1 tot en met Q4, en jaaraangevers blijven bij de jaarsoptie. Met de jaarwisselaar bovenaan de pagina zet je alles naar een ander jaar.
 
 ## Herokaart
 
@@ -76,6 +76,8 @@ Bij een handmatige correctie vul je een positief bedrag in en kies je een richti
 
 Rubriek 4a is voor verlegde-BTW-aankopen van leveranciers buiten de EU (`import_reverse_charge`); rubriek 4b is voor verlegde aankopen van EU-leveranciers (`b2b_reverse_charge`). MyCompanyDesk bepaalt aan de hand van het leveranciersland de juiste rubriek, zodat het totaal in 5a klopt.
 
+Bij het boeken of verwijderen van een correctie verversen het rubriekenoverzicht, de herokaart, de kwartaalstrook en de aangifte-actiekaart direct; je hoeft niet te verversen of van periode te wisselen. Ook de kaart voor privégebruik van de bedrijfsauto wordt live bijgewerkt als de correctie is geboekt.
+
 ### Exporteren voor de boekhouder
 
 Een downloadkaart naast het overzicht biedt CSV-exports: een volledige boekhouder-export, een BTW-overzicht van het gekozen kwartaal en een jaaroverzicht.
@@ -130,6 +132,8 @@ De indienstatus wordt per exact tijdvak bijgehouden, niet op basis van overlap. 
 **Indientiming en correcties.** Je kunt een periode pas aangeven nadat hij is afgelopen. Als je toch probeert in te dienen terwijl de laatste dag van de periode nog niet is verstreken, toont de app een foutmelding met de vraag te wachten tot de periode voorbij is. Een periode kan maar één keer als ingediend worden gemarkeerd; als hij al als ingediend staat, kun je niet opnieuw indienen vanuit de BTW-pagina. Corrigeer een ingediende periode via een correctie of suppletie in een open periode. Op het tabblad Aangifte zie je welke periodes nog open zijn en welke al ingediend.
 
 Een factuur of uitgave in een vergrendelde periode bewerken wordt in het formulier geblokkeerd: de financiële velden worden alleen-lezen (notities blijven bewerkbaar) en het formulier biedt een correctiepad, zoals een correctie in de huidige open periode of een correctiefactuur. Dezelfde beveiliging geldt bij het boeken van een banktransactie of het markeren van een uitgave als betaald: als de transactie in een vergrendelde periode valt, blokkeert de app het en wijst je naar een correctie in de huidige open periode.
+
+Gelijktijdige pogingen om dezelfde periode in te dienen worden geserialiseerd. Als twee indieningen elkaar overlappen, bijvoorbeeld door een dubbele klik of twee open tabbladen, wordt de tweede afgewezen met een duidelijke melding in plaats van een databasefout.
 
 ## KOR
 
