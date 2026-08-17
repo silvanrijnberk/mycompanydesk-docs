@@ -47,6 +47,7 @@ Une liste de contrôles exécutée sur la période active. Chaque contrôle a un
 - **Justificatifs manquants** : dépenses sans justificatif joint.
 - **ICP en attente** : ventes B2B intra-UE à déclarer séparément sur l'ICP-opgaaf. Le montant et le compteur utilisent les mêmes règles de classification que l'ICP-opgaaf, afin de correspondre aux lignes qui apparaîtront réellement sur la déclaration.
 - **Origine de l'autoliquidation** : dépenses en autoliquidation dont le pays ou le numéro KVK du fournisseur manque, si bien que la rubrique 2a/4a/4b ne peut pas être justifiée.
+- **Écart de déductibilité** : dépenses dont la TVA déductible n'est pas égale à la TVA totale, parce que la catégorie n'est pas entièrement déductible ou que l'usage privé s'applique. Cela fait écho aux indicateurs de l'onglet Transactions.
 
 Un badge dans l'en-tête indique le nombre de points bloquants, ou que tout est en ordre.
 
@@ -120,13 +121,15 @@ La correction est intégrée aux totaux de la période dans l'onglet **Déclarat
 
 Une liste à plat de chaque facture et dépense alimentant la période choisie, utile pour vérifier des enregistrements avant de déposer. Des puces de filtre réduisent la liste : **Tout**, **Sans justificatif**, **Sans TVA**, **Autoliquidation** et **TVA étrangère**, chacune avec un compteur. Chaque ligne renvoie vers la facture ou la dépense concernée.
 
+Les dépenses qui ne sont pas entièrement déductibles affichent un indicateur comme **TVA non déductible** ou **TVA partiellement déductible**. Survolez l'indicateur (ou mettez-le au focus) pour voir une infobulle indiquant combien de la TVA sur la dépense compte comme TVA déductible dans la rubrique 5b. Si vous relevez du KOR, l'infobulle explique qu'aucune TVA déductible n'est retenue, car la rubrique 5b est nulle pour toute la période; l'indicateur renvoie alors à la déclaration, pas à la dépense elle-même.
+
 ## Verrouillage des périodes
 
 Une barre de synthèse en haut de la page TVA indique combien de périodes sont verrouillées ; dépliez-la pour les gérer.
 
 - **Verrouillage automatique** : dès que l'échéance de dépôt d'une période est passée, MyCompanyDesk la verrouille automatiquement, pour que votre comptabilité reste conforme à la déclaration déposée.
-- **Verrouillage manuel** : des puces de période vous permettent de verrouiller vous-même toute période écoulée de l'année choisie, par exemple juste après un dépôt anticipé. Verrouiller une période encore en cours déclenche d'abord un avertissement.
-- **Marquer comme déposée** : signalez une période verrouillée comme déposée dès que la déclaration est faite. Lorsque vous ouvrez un rappel d'échéance de TVA dans le panneau de notifications, l'action **Marquer comme déposée** utilise la période indiquée dans ce rappel plutôt que la date du jour, afin de mettre à jour le bon trimestre ou le bon mois. Les trimestres déposés l'affichent aussi dans la bande des trimestres.
+- **Verrouillage manuel** : des puces de période vous permettent de verrouiller vous-même toute période écoulée de l'année choisie, par exemple juste après un dépôt anticipé. Verrouiller une période encore en cours déclenche d'abord un avertissement. Les périodes terminées avant la création de l'espace de travail ne peuvent pas être verrouillées, car MyCompanyDesk ne détient aucune donnée pour elles et n'a pas déposé de déclaration en votre nom.
+- **Marquer comme déposée** : signalez une période verrouillée comme déposée dès que la déclaration est faite. Lorsque vous ouvrez un rappel d'échéance de TVA dans le panneau de notifications, l'action **Marquer comme déposée** utilise la période indiquée dans ce rappel plutôt que la date du jour, afin de mettre à jour le bon trimestre ou le bon mois. Elle ne résout en outre que les rappels pour cette période, et pas chaque rappel TVA en attente de l'espace de travail. Les trimestres déposés l'affichent aussi dans la bande des trimestres.
 - **Déverrouillage temporaire** : besoin de corriger quelque chose ? Déverrouillez une période temporairement (72 heures) ; elle se reverrouille d'elle-même, ou reverrouillez plus tôt à la main. Supprimer entièrement un verrou n'est possible que tant que l'échéance de dépôt n'est pas passée.
 
 Le statut de déclaration est suivi par période exacte, pas par inclusion. Une année déclarée ne marque pas automatiquement les quatre trimestres comme déclarés, et un trimestre déclaré ne marque pas automatiquement les mois qu'il contient. Le verrouillage couvre toutefois toute la période, donc un verrou annuel protège chaque trimestre.

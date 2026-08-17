@@ -48,6 +48,7 @@ A checklist that runs against the active period. Every check has a fix link that
 - **Missing receipts**: expenses without an attached receipt.
 - **ICP pending**: EU B2B sales that need to be reported separately on the ICP-opgaaf. The amount and count use the same classification rules as the ICP return, so they match the lines that will actually appear on the submission.
 - **Reverse-charge origin**: expenses with reverse-charge VAT whose supplier country or KVK number is missing, so rubriek 2a/4a/4b cannot be proven.
+- **Deductible mismatch**: expenses whose deductible VAT does not equal their total VAT, for example because the category is not fully deductible or private use applies. This mirrors the flags shown on the Transactions tab.
 
 A badge in the header shows the number of blockers, or that everything is clear.
 
@@ -122,13 +123,15 @@ The correction is rolled into the period totals on the Filing tab.
 
 A flat list of every invoice and expense feeding the selected period, useful for spot-checking records before you file. Filter chips narrow the list down: **All**, **Missing receipt**, **Missing VAT**, **Reverse charge** and **Foreign VAT**, each with a live count. Every row links to the underlying invoice or expense.
 
+Expense rows that are not fully deductible show a flag such as **VAT not deductible** or **VAT partly deductible**. Hover the flag (or focus it) to see a tooltip explaining how much of the expense VAT counts as input VAT in rubriek 5b. If you use the KOR, the tooltip explains that no input VAT is deducted because rubriek 5b is zero for the whole period; the flag is then about the period, not the individual expense.
+
 ## Period locking
 
 A summary bar at the top of the VAT page shows how many periods are locked; expand it to manage them.
 
 - **Automatic locking**: once a period's filing deadline has passed, MyCompanyDesk locks it automatically, so your books keep matching the aangifte you filed.
-- **Manual locking**: period chips let you lock any past period of the selected year yourself, for example right after filing early. Locking a period that is still running triggers an extra warning.
-- **Mark as filed**: flag a locked period as filed once you have submitted the aangifte. When you open a BTW-deadline reminder in the notification panel, the **Mark as filed** action uses the period named in that reminder rather than today's date, so it updates the correct quarter or month. Filed quarters show this in the quarter strip too.
+- **Manual locking**: period chips let you lock any past period of the selected year yourself, for example right after filing early. Locking a period that is still running triggers an extra warning. Periods that ended before the workspace was created cannot be locked, because MyCompanyDesk holds no data for them and cannot have filed a return on your behalf.
+- **Mark as filed**: flag a locked period as filed once you have submitted the aangifte. When you open a BTW-deadline reminder in the notification panel, the **Mark as filed** action uses the period named in that reminder rather than today's date, so it updates the correct quarter or month. It also resolves only the reminders for that period, not every outstanding VAT reminder in the workspace. Filed quarters show this in the quarter strip too.
 - **Temporary unlock**: need to fix something? Unlock a period temporarily (72 hours) and it relocks by itself, or relock it manually when you are done. Removing a lock entirely is only possible while the filing deadline has not yet passed.
 
 Filing status is tracked per exact tijdvak, not by range containment. A filed year return does not mark the four quarters as filed, and a filed quarter does not mark the months inside it as filed. Locking still covers the whole range, so a year lock still protects every quarter.
