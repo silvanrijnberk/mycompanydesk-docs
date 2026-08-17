@@ -17,6 +17,10 @@ Wanneer je een factuur verstuurt, wordt een unieke **betaallink** gegenereerd. W
 
 ## Portaalfuncties
 
+### Facturenlijst
+
+Als een klant meerdere facturen heeft, toont het portaal ook een lijst met elke factuur, creditnota en de huidige status. De kaartjes "Openstaand" en "Achterstallig" boven de tabel tellen het **restant per document** op, niet het bruto totaal. Een factuur van € 1.000 met een deelbetaling van € 400 telt dus € 600 mee in het openstaande bedrag, en een creditnota die al is verrekend met zijn bronfactuur telt € 0 mee zodat hij niet twee keer wordt afgetrokken.
+
 ### Factuurweergave
 
 Het portaal toont een overzichtelijke, huisstijl-conforme weergave van de factuur inclusief:

@@ -17,6 +17,10 @@ Lorsque vous envoyez une facture, un **lien de paiement** unique est genere. Lor
 
 ## Fonctionnalites du portail
 
+### Liste des factures
+
+Lorsqu'un client a plusieurs factures, le portail affiche egalement une liste avec chaque facture, avoir et leur statut actuel. Les cartes de resume "Ouvert" et "En retard" au-dessus du tableau additionnent le **solde restant par document**, pas le total brut. Ainsi, une facture de 1 000 € avec un paiement partiel de 400 € contribue a hauteur de 600 € au montant ouvert, et un avoir deja applique a sa facture source contribue a 0 € pour ne pas etre deduit deux fois.
+
 ### Vue de la facture
 
 Le portail affiche une vue claire et personnalisee de la facture comprenant :
