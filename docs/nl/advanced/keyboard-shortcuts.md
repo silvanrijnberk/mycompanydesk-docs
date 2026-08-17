@@ -14,7 +14,7 @@ MyCompanyDesk houdt het aantal sneltoetsen bewust klein. Hieronder staan de snel
 
 Het zoekvenster is de snelste manier om door de app te bewegen:
 
-- Typ minimaal twee tekens om te zoeken in je klanten, facturen, uitgaven, offertes, taken, terugkerende facturen, terugkerende uitgaven, catalogusitems en inbox-threads (plus projecten, contracten en objecten als die onderdelen aanstaan).
+- Typ minimaal twee tekens om te zoeken in je klanten, facturen, uitgaven, offertes, taken, terugkerende facturen, terugkerende uitgaven, catalogusitems, documenten en inbox-threads (plus projecten, contracten en objecten als die onderdelen aanstaan).
 - Ook instellingen zijn doorzoekbaar: typ bijvoorbeeld "btw" of "herinneringen" om direct naar de juiste instellingenkaart te springen.
 - Met snelle acties spring je naar elk onderdeel of start je een nieuwe factuur, offerte, uitgave of klant.
 - Met de filterchips onder het zoekveld beperk je de resultaten tot een enkel type.

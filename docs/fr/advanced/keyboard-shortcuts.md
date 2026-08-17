@@ -14,7 +14,7 @@ MyCompanyDesk garde volontairement un nombre réduit de raccourcis clavier. Voic
 
 La fenêtre de recherche est le moyen le plus rapide de naviguer dans l'application :
 
-- Tapez au moins deux caractères pour rechercher parmi vos clients, factures, dépenses, devis, tâches, factures récurrentes, dépenses récurrentes, articles du catalogue et fils de discussion de la boîte de réception (ainsi que les projets, contrats et biens si ces modules sont activés).
+- Tapez au moins deux caractères pour rechercher parmi vos clients, factures, dépenses, devis, tâches, factures récurrentes, dépenses récurrentes, articles du catalogue, documents et fils de discussion de la boîte de réception (ainsi que les projets, contrats et biens si ces modules sont activés).
 - Les paramètres sont également consultables : tapez par exemple "TVA" ou "rappels" pour accéder directement à la carte de paramètres correspondante.
 - Les actions rapides vous permettent d'accéder à n'importe quelle section ou de créer une nouvelle facture, un devis, une dépense ou un client.
 - Les puces de filtre sous le champ de recherche limitent les résultats à un seul type.
