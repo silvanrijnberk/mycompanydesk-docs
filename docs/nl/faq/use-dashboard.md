@@ -1,6 +1,6 @@
 ---
-title: "Use the dashboard"
-last_verified: 2026-08-15
+title: "Dashboard gebruiken"
+last_verified: 2026-08-18
 chatbot:
   triggers:
     - "use dashboard"
@@ -18,12 +18,15 @@ chatbot:
     - "How do I create an invoice?"
 ---
 
-Om het dashboard te gebruiken:
-1. Bekijk waarschuwingen, kaarten en lijsten bovenaan de pagina
-2. Klik op een kaart of lijstitem om de onderliggende records te openen
-3. Controleer of actieve filters of de geselecteerde periode het getoonde cijfer beïnvloeden
-4. Gebruik de gekoppelde acties om door te gaan naar Facturen, Uitgaven of Rapporten
+Je dashboard geeft je een snel overzicht van:
 
-Dit antwoord blijft beperkt tot wat je op het dashboard ziet en waar je kunt doorklikken.
+- een periodekiezer voor maand, kwartaal of jaar
+- vijf vaste KPI-tegels: kas, te ontvangen, omzet, te betalen en winst
+- een aandacht-widget met maximaal vier taken die actie vragen
+- ondersteunende blokken zoals trend, ageing, omzetbronnen, offertes, uitgaven, cash, activiteit en btw
 
-Winst- en belastingreservekaarten gebruiken een winst-en-verliesweergave: uitgaven zijn zonder BTW, investeringen worden over hun afschrijvingschema verdeeld en bank-/inboxconcepten die nog in beoordeling zijn, worden uitgesloten. De omzet- en uitgavetotalen in de pulse-rij tonen de kasbeweging, inclusief BTW en openstaande concepten. Gebruik het W&V-rapport als je hetzelfde winstcijfer in een gedetailleerd rapport wilt zien.
+Schakel met de periodekiezer om alle getallen in de KPI-rij in een ander kader te zetten. De trendgrafiek blijft altijd 12 maanden breed.
+
+Elke KPI-tegel linkt door naar het bijbehorende rapport of de bijbehorende lijst. Klik door om zaken direct daar op te lossen.
+
+Het dashboard houdt twee weergaven eerlijk naast elkaar: de KPI-rij toont kasbewegingscijfers, terwijl de winsttegel en het trendblok een winst-en-verliesweergave gebruiken. In die W&V-weergave zijn uitgaven zonder BTW, investeringen verdeeld over hun afschrijvingsschema en concepten die nog in beoordeling zijn uitgesloten. Gebruik het W&V-rapport als je hetzelfde winstcijfer in een gedetailleerd rapport wilt zien.

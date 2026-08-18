@@ -1,95 +1,82 @@
 ---
 title: Dashboard
-last_verified: 2026-08-15
+last_verified: 2026-08-18
 ---
 
 # Dashboard
 
-The dashboard at `/dashboard` is your home base. It presents a fixed briefing layout that surfaces what needs your attention, key financial indicators, and recent activity in a single scrollable view.
+The dashboard at `/dashboard` is the home screen of your workspace. It answers one question: how is the business doing right now? The page shows a period switcher, a KPI summary row, a short attention widget, and a set of data-driven blocks that appear only when your workspace data says they are useful.
 
-## Architecture
+## Layout
 
-The dashboard is a single page (`BriefingDashboard`) composed of editorial blocks. There is no per-user customization. Every user in the workspace sees the same structure, fed from the same live data.
+The page is a single scrollable view built from a fixed catalogue of blocks. The order never changes, but a block only renders if your workspace data satisfies the test for it. A simple business therefore sees a shorter page, not empty placeholders.
 
-### Welcome screen
+At the top sits a period switcher and the KPI row. Below that comes the attention widget, then supporting blocks such as the trend chart, ageing, revenue sources, quote pipeline, expense mix, cash chart, VAT card, and recent activity.
 
-On a brand-new account with no invoices or customers, the dashboard shows a **welcome screen** (`BriefingWelcome`) instead of the full briefing. It guides the user to three core first actions: create an invoice, add a customer, or log an expense. A link to the [Getting Started](/getting-started/introduction) docs sits below the action cards. Once at least one invoice or customer exists, the welcome screen disappears permanently and the full dashboard takes its place.
+## Period switcher
 
-### Skeleton and first load
+Every figure in the KPI row and the pace calculations follows the selected period. Choose between **month**, **quarter**, and **year**. The trend chart always stays at 12 months so the comparison stays honest.
 
-While data loads, the dashboard shows a **skeleton** placeholder (`BriefingSkeleton`): a layout-matched shimmer that mirrors the final shape of each card. Once the core data is settled (metrics cached and liquidity resolved), the skeleton dissolves into a coordinated fade-up entrance. Every top-level block rises with a staggered delay so the whole dashboard appears in one smooth motion. A safety net of 2.5 seconds ensures the skeleton never traps the user on slow connections. The `prefers-reduced-motion: reduce` media query disables all entry animations.
+## KPI row
 
-The shell loads:
-- A **hero** panel with greeting, AI-lede, and period context
-- A **pulse** row of four KPIs: liquidity/runway, revenue (month + YTD), receivables + DSO, and VAT balance + deadline
-- A **briefing feed** split into three tabs: **Now** (requires attention), **This Week** (upcoming), and **Good News** (confirmations)
-- A **cash chart** spanning a 12-month window with actual + forecast
-- A **week card**, **project margins** list, **top clients** list, **activity feed**, and a **VAT ring**
-- A **setup banner** that persists until the wizard at `/setup` is completed
+The KPI row always shows five tiles. Each tile shows one headline figure, a comparison with the previous comparable period where an honest comparison exists, and a small sparkline for trend. Tiles link to the relevant report or list.
 
-## Hero
-
-The top-of-page greets with a time-of-day greeting. The AI-lede is the hero's centerpiece: a short, personal, AI-written briefing that synthesizes the full picture of the business.
-
-The AI briefing speaks in the first person ("ik") and addresses the user informally ("je"). It opens with the single most urgent action for today, then at most one or two supporting points where they add value. It closes with a suggested in-app next step (e.g. "stuur Atelier Norden vandaag een herinnering", "rond je BTW af"). The model draws on a full digest of live signals: liquidity and runway, revenue and profit (MTD + YTD), overdue receivables (count, total, worst customer), bills (due soon + overdue), draft counts, project margins, VAT position (balance, deadline, checklist progress, reserve), unbilled hours, recent payments, and new customers. All amounts are rounded to whole euros.
-
-When the AI briefing is still loading, the hero shows the previous day's cached deterministic lede. The cross-fade to the AI version is a smooth opacity-and-slide transition (`Transition` with `mode="out-in"`). The AI briefing appears with a sparkle icon and the primary text color.
-
-The AI briefing is available in all four supported languages. It is generated once per calendar day per company on Vertex AI `europe-west1` (Gemini 2.5 Flash) and cached for the rest of the day. When the model is unavailable or the workspace is not entitled (Pro only), the deterministic lede is shown alone and no cross-fade occurs.
-
-The hero also carries the period label (month is default).
-
-## Pulse row
-
-The four-cell pulse row replaces the old money tiles and KPI headline. Each cell presents a focused metric with context:
-
-| Cell | What it shows |
+| Tile | What it shows |
 |---|---|
-| **Liquidity** | Current balance (actual when a bank connection is active, estimated otherwise), plus runway in weeks |
-| **Revenue** | Current month revenue with percentage vs previous month, plus year-to-date |
-| **Receivables** | Total outstanding, overdue count, and days sales outstanding |
-| **VAT** | Balance (refund or pay), deadline date, and tax reserve |
+| **Cash** | Current cash position, either from a connected bank account or an estimated balance, plus runway in weeks |
+| **Receivables** | Outstanding invoices, with the overdue slice called out |
+| **Revenue** | Revenue for the selected period and the pace for the full period, with change vs the previous comparable period |
+| **Payables** | Money you still need to pay out, with the overdue slice called out |
+| **Profit** | Net profit for the selected period, with margin when it can be computed |
 
-## Profit and tax reserve
+A tile that has no honest history renders without a sparkline rather than invent a flat line. The colour of a delta badge follows meaning, not just direction: receivables rising is bad news even though the arrow points up.
 
-The dashboard keeps two different views of expenses apart on purpose:
+## Attention widget
 
-- The **Revenue** and **expense totals** in the pulse row show the cash movement for the period: amounts include VAT and include expenses that are still pending review.
-- The **Net profit** and **Estimated tax reserve** cards use a profit-and-loss view instead. Here expenses are counted without VAT, investments are spread through their depreciation schedule instead of recognised in one go, and pending-review bank or inbox drafts are excluded because they are not in the books yet.
+The attention widget is fed by the Vandaag signal engine. It shows up to four tasks that need action today or this week. Each row shows a severity dot, a short title, and a link to the record. The widget only surfaces tasks; it does not contain the full ranked list, the explanation chips, or the action buttons. The full list lives in the bell panel.
 
-This means the profit card and the tax-reserve card will differ from the simple "revenue minus cash-out" figure. The split makes the dashboard profit match the P&L report, so a large investment in one month does not turn a profitable month into a loss, and the tax reserve is estimated over real profit rather than over cash flow.
+The Vandaag engine ranks signals into four severity levels:
 
-## Briefing feed
+- **critical**: money leaking or a hard deadline closing
+- **attention**: a real task, today or this week
+- **upcoming**: dated, but not yet urgent
+- **good**: earned positive news
 
-The feed is the main attention surface. It assembles real signals from workspace data into a structured list with three tab views:
+The engine is deterministic. No model is involved in producing the signals, so the page stays useful when the AI layer is down.
 
-- **Now.** Items that require action today: overdue invoices, overdue bills, open receipts, draft invoices waiting for send, and VAT checklist items.
-- **This week.** Items due in the coming week: invoices due, bills to pay, and VAT deadlines.
-- **Good news.** Confirmations: recently paid invoices, revenue growth, and new customers this month.
+## Supporting blocks
 
-Each feed item shows the entity, amount, and contextual detail. The feed opens from a tab bar anchored to the top of the list.
+The blocks below the KPI row appear only when they earn their place. The catalogue decides both whether to show a block and which form to use.
 
-## Right rail and bottom row
-
-| Card | Content |
+| Block | Content |
 |---|---|
-| **Cash (12-month)** | A line chart with actual cash position through today and a forecast forward to month-end. Requires enough history to generate the projection. |
-| **Week card** | Hours logged this week. |
-| **Project margins** | All projects with revenue, sorted by margin percentage, colour-coded green/amber/red. |
-| **Top clients** | Top clients by revenue this year, with percentage of total. |
-| **Recent activity** | Invoice created, invoice paid, and expense added events. |
-| **VAT ring** | Current VAT return period, checklist completion, and open receipt count. Links to the VAT return. |
+| **Trend** | 12-month dual-bar chart of revenue and costs, with the profit line |
+| **Ageing** | Receivables aged by bucket |
+| **Revenue sources** | Largest customers by year-to-date revenue |
+| **Quotes** | Open quote pipeline and expiring quotes |
+| **Expense mix** | Cost breakdown by category, shown as bars or treemap depending on space |
+| **Cash chart** | Cash position over 12 months with forecast |
+| **Activity** | Recent invoice, payment, and expense events |
+| **VAT card** | Current VAT period, checklist progress, and next deadline |
 
-## Setup banner
+On phones, large visual forms such as treemaps or funnels fall back to simpler forms so the numbers remain readable.
 
-While the setup wizard at `/setup` still has fields to fill, a `FinishSetupBanner` pins itself above the dashboard with the count of pending fields and a **Resume setup** button. It includes a dismiss button (X icon) that hides the banner per browser via localStorage, surviving reloads until the wizard is completed. The wizard is non-blocking: new signups land on `/dashboard` directly and are not force-redirected.
+## First-run state
 
+A brand-new workspace with no invoices or customers lands on a calm first-run screen instead of the full dashboard. It offers one focal action: create your first invoice. A small discovery panel also invites you to personalise invoice styling, the website, or account security. Dismissing the panel hides only the panel; sending your first invoice exits first-run mode. You can also skip the first-run screen with the **Show my dashboard** option.
 
-## Good news
+## Getting started card
 
-The dashboard **Good news** tab highlights positive signals that are worth acting on today:
+While the setup checklist still has open steps, a pinned card appears above the dashboard. It lists the remaining steps and a link back to the setup wizard. Dismissing the card is stored server-side, so it stays hidden across devices. The wizard is non-blocking: new signups land on `/dashboard` directly.
 
-- **Open requests**: how many website quote requests are waiting for an answer, plus the oldest waiting time.
-- **Expiring quotes**: how many quotes expire this week, and how many have already expired without an answer.
+## Loading and error states
 
-Quote requests and expiring quotes also live on the relevant detail pages. Lapsed customers — people who bought before but have not been invoiced this year — live in **Reports > Clients > Lapsed**. See [Reports](/features/reports) and [Customers](/features/customers).
+While the dashboard decides whether this is a first-run workspace and loads the briefing, a skeleton mirrors the final shape of the page. If the Vandaag fetch fails, the page shows an explicit error with a retry button instead of an all-clear built from empty data. If a period switch fails while older numbers are still on screen, a stale notice appears with an inline retry.
+
+## See also
+
+- [Use the dashboard](/faq/use-dashboard)
+- [Reports](/features/reports)
+- [Customers](/features/customers)
+- [Invoices](/features/invoices)
+- [VAT](/features/vat)

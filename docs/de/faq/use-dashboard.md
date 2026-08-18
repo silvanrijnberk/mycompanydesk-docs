@@ -1,6 +1,6 @@
 ---
-title: "Use the dashboard"
-last_verified: 2026-08-15
+title: "Dashboard nutzen"
+last_verified: 2026-08-18
 chatbot:
   triggers:
     - "use dashboard"
@@ -18,12 +18,15 @@ chatbot:
     - "How do I create an invoice?"
 ---
 
-So nutzt du das Dashboard:
-1. Pruefe Warnungen, Karten und Listen oben auf der Seite
-2. Klicke auf eine Karte oder einen Listeneintrag, um die zugrunde liegenden Datensaetze zu oeffnen
-3. Pruefe, ob aktive Filter oder der gewaehlte Zeitraum die angezeigte Zahl beeinflussen
-4. Nutze die verknuepften Aktionen, um zu Rechnungen, Ausgaben oder Berichten zu wechseln
+Ihr Dashboard bietet einen schnellen Überblick über:
 
-Diese Antwort beschraenkt sich darauf, was du im Dashboard siehst und wohin du von dort navigieren kannst.
+- eine Periodenauswahl für Monat, Quartal oder Jahr
+- fünf feste KPI-Kacheln: Liquidität, Forderungen, Umsatz, Verbindlichkeiten und Gewinn
+- ein Aufmerksamkeits-Widget mit bis zu vier Aufgaben, die bearbeitet werden müssen
+- unterstützende Blöcke wie Trend, Ageing, Umsatzquellen, Angebote, Ausgaben, Cash, Aktivität und Mehrwertsteuer
 
-Gewinn- und Steuerruecklagenkarten verwenden eine GuV-Sicht: Ausgaben sind ohne Mehrwertsteuer, Investitionen werden ueber ihren Abschreibungsplan verteilt, und Bank-/Posteingangs-Entwuerfe, die noch in Ueberpruefung stehen, werden ausgeschlossen. Die Umsatz- und Ausgabentotale in der Pulse-Zeile zeigen die Kassenbewegung inklusive Mehrwertsteuer und noch nicht bestaetigter Entwuerfe. Verwende den GuV-Bericht, wenn du dieselbe Gewinnzahl in einem detaillierten Bericht sehen moechtest.
+Wechseln Sie mit der Periodenauswahl, um alle Zahlen der KPI-Reihe neu einzurahmen. Der Trendchart bleibt immer bei 12 Monaten.
+
+Jede KPI-Kachel verlinkt zum passenden Bericht oder zur passenden Liste. Klicken Sie durch, um Dinge direkt dort zu erledigen.
+
+Das Dashboard hält zwei Sichten ehrlich nebeneinander: Die KPI-Reihe zeigt Kassenbewegungszahlen, während die Gewinnkachel und der Trendblock eine GuV-Sicht verwenden. In der GuV-Sicht sind Ausgaben ohne Mehrwertsteuer, Investitionen über ihren Abschreibungsplan verteilt und Entwürfe, die noch in Überprüfung stehen, ausgeschlossen. Verwenden Sie den GuV-Bericht, wenn Sie dieselbe Gewinnzahl in einem detaillierten Bericht sehen möchten.

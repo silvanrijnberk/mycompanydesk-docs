@@ -1,97 +1,82 @@
 ---
 title: Tableau de bord
-last_verified: 2026-08-15
+last_verified: 2026-08-18
 ---
 
 # Tableau de bord
 
-Le tableau de bord sur `/dashboard` est votre page d'accueil. Il presente une mise en page fixe de briefing qui rassemble les points demandant votre attention, les indicateurs financiers cles et l'activite recente dans une seule vue deroulante.
+Le tableau de bord sur `/dashboard` est l'écran d'accueil de votre espace de travail. Il répond à une question : comment va votre entreprise en ce moment ? Vous y voyez un sélecteur de période, une rangée de cinq tuiles d'indicateurs, un court widget d'attention et plusieurs blocs de données qui n'apparaissent que si vos données indiquent qu'ils sont utiles.
 
-## Architecture
+## Structure
 
-Le tableau de bord est une page unique (`BriefingDashboard`) composee de blocs editoriaux fixes. Il n'y a pas de personnalisation par utilisateur. Tout le monde dans l'espace de travail voit la meme structure, alimentee par les memes donnees en direct.
+La page est constituée d'un catalogue fixe de blocs dans une vue scrollable unique. L'ordre ne change jamais, mais un bloc ne s'affiche que si vos données franchissent le seuil. Une entreprise simple voit donc une page plus courte, et non des espaces vides.
 
-### Ecran d'accueil
+En haut se trouvent le sélecteur de période et la rangée d'indicateurs. Sous celle-ci vient le widget d'attention, puis des blocs d'appoint comme la tendance, l'âge des créances, les sources de revenus, le pipeline de devis, le mix de dépenses, le graphique de trésorerie, la carte TVA et l'activité récente.
 
-Sur un compte tout neuf sans factures ni clients, le tableau de bord affiche un **ecran d'accueil** (`BriefingWelcome`) a la place du briefing complet. Il guide l'utilisateur vers trois premieres actions : creer une facture, ajouter un client ou enregistrer une depense. Un lien vers l'[introduction](/fr/getting-started/introduction) se trouve sous les cartes d'action. Des qu'au moins une facture ou un client existe, l'ecran d'accueil disparait definitivement et le tableau de bord complet prend le relais.
+## Sélecteur de période
 
-### Skeleton et premier chargement
+Tous les chiffres de la rangée d'indicateurs et les calculs de rythme suivent la période choisie. Vous choisissez entre **mois**, **trimestre** et **année**. Le graphique de tendance reste toujours sur 12 mois, pour que la comparaison reste honnête.
 
-Pendant le chargement des donnees, le tableau de bord affiche un placeholder **skeleton** (`BriefingSkeleton`) : un shimmer qui reflete la forme exacte de chaque carte. Une fois les donnees principales stabilisees (metriques en cache et liquidite resolue), le skeleton se dissout dans une animation d'apparition coordonnee. Chaque bloc de premier niveau apparait avec un decalage progressif, de sorte que l'ensemble du tableau de bord emerge en un seul mouvement fluide. Un filet de securite de 2,5 secondes empeche l'utilisateur de rester bloque sur le skeleton en cas de connexion lente. La media query `prefers-reduced-motion: reduce` desactive toutes les animations d'entree.
+## Rangée d'indicateurs
 
-La page se compose de :
-- Un panneau **hero** avec salutation, AI-lede et contexte de periode
-- Une rangee **pulse** de quatre KPI : liquidite/autonomie, CA (mois + annee), creances + DSO, et solde TVA + echeance
-- Un **fil de briefing** divise en trois onglets : **Maintenant** (demande votre attention), **Cette semaine** (a venir), et **Bonnes nouvelles** (confirmations)
-- Un **graphique de tresorerie** sur une fenetre de 12 mois avec reel + prevision
-- Une **carte semaine**, une liste de **marges par projet**, une liste des **meilleurs clients**, un **fil d'activite** et un **anneau TVA**
-- Une **banniere de configuration** qui reste visible tant que l'assistant sous `/setup` n'est pas termine
+La rangée d'indicateurs affiche toujours cinq tuiles. Chaque tuile montre un chiffre principal, une comparaison avec la période comparable précédente lorsqu'une comparaison honnête est possible, et une petite courbe de tendance. Les tuiles renvoient vers le rapport ou la liste correspondant.
 
-Pendant le chargement des donnees, le tableau de bord affiche un placeholder **skeleton** (`BriefingSkeleton`) : un shimmer qui reflete la forme exacte de chaque carte. Une fois les donnees principales stabilisees (metriques en cache et liquidite resolue), le skeleton se dissout dans une animation d'apparition coordonnee. Chaque bloc de premier niveau apparait avec un decalage progressif, de sorte que l'ensemble du tableau de bord emerge en un seul mouvement fluide. Un filet de securite de 2,5 secondes empeche l'utilisateur de rester bloque sur le skeleton en cas de connexion lente. La media query `prefers-reduced-motion: reduce` desactive toutes les animations d'entree.
-
-## Hero
-
-En haut de la page, une salutation basee sur l'heure de la journee. L'AI-lede est la piece maitresse du hero : un briefing court, personnel, redige par IA qui synthetise la situation complete de l'entreprise.
-
-Le briefing IA parle a la premiere personne ("je") et s'adresse a l'utilisateur avec le vouvoiement ("vous"). Il s'ouvre sur l'action la plus urgente du jour, puis au plus un ou deux points supplementaires la ou ils apportent de la valeur. Il se termine par une prochaine etape concrete dans l'app (ex. "envoyez un rappel a Atelier Norden aujourd'hui", "terminez votre TVA"). Le modele puise dans un ensemble complet de signaux en direct : liquidite et autonomie, CA et benefice (mois + annee), creances en retard (nombre, total, pire client), depenses (a venir + en retard), nombre de brouillons, marges par projet, position TVA (solde, echeance, progression checklist, reserve), heures non facturees, paiements recents et nouveaux clients. Tous les montants sont arrondis a l'euro entier.
-
-Pendant le chargement du briefing IA, le hero affiche le texte standard mis en cache de la veille. Le fondu enchaine vers la version IA est une transition fluide en opacite et glissement (`Transition` avec `mode="out-in"`). Le briefing IA apparait avec une icone sparkle et la couleur de texte principale.
-
-Le briefing IA est disponible dans les quatre langues prises en charge. Il est genere une fois par jour calendaire par entreprise sur Vertex AI `europe-west1` (Gemini 2.5 Flash) et mis en cache pour le reste de la journee. Si le modele est indisponible ou que l'espace de travail n'a pas de droit Pro, seul le texte standard est affiche et aucun fondu enchaine n'a lieu.
-
-La hero affiche egalement le libelle de periode (mois par defaut).
-
-## Rangee pulse
-
-Les quatre cellules de la rangee pulse remplacent les anciennes tuiles financieres et le bandeau KPI. Chaque cellule presente un indicateur cible avec son contexte :
-
-| Cellule | Ce qu'elle affiche |
+| Tuile | Ce que vous voyez |
 |---|---|
-| **Liquidite** | Solde actuel (reel si une connexion bancaire est active, estime sinon), plus autonomie en semaines |
-| **Chiffre d'affaires** | CA du mois en cours avec pourcentage par rapport au mois precedent, plus cumul annuel |
-| **Creances** | Total des encours, nombre en retard, et delai moyen de paiement |
-| **TVA** | Solde (a recuperer ou a payer), date d'echeance et reserve fiscale |
+| **Trésorerie** | Position de trésorerie actuelle, issue d'un compte bancaire connecté ou d'un solde estimé, plus le runway en semaines |
+| **Créances** | Factures en cours, avec la part en retard explicitement indiquée |
+| **Chiffre d'affaires** | Chiffre d'affaires de la période choisie et le rythme prévisionnel pour la période complète, avec l'évolution par rapport à la période comparable précédente |
+| **Dettes à payer** | Argent que vous devez encore payer, avec la part en retard explicitement indiquée |
+| **Bénéfice** | Bénéfice net de la période choisie, avec la marge lorsqu'elle peut être calculée |
 
-## Bénéfice et réserve fiscale
+Une tuile sans historique honnête s'affiche sans courbe de tendance plutôt qu'avec une ligne plate inventée. La couleur du badge d'évolution suit le sens, pas seulement la direction : des créances qui augmentent sont une mauvaise nouvelle même si la flèche pointe vers le haut.
 
-Le tableau de bord maintient deliberement deux visions differentes des depenses :
+## Widget d'attention
 
-- Les **totaux de chiffre d'affaires** et de **depenses** dans la rangee pulse montrent le mouvement de tresorerie pour la periode : montants TTC et depenses encore en attente de revision incluses.
-- Les cartes **Benefice net** et **Reserve fiscale estimee** utilisent a la place une vue compte de resultat. Les depenses y sont comptees hors TVA, les investissements immobilises sont etales selon leur plan d'amortissement plutot que comptes en une fois, et les brouillons bancaires ou de la boite de reception encore en attente de revision sont exclus, car ils ne sont pas encore comptabilises.
+Le widget d'attention est alimenté par le moteur de signaux Vandaag. Il affiche jusqu'à quatre tâches qui demandent une action aujourd'hui ou cette semaine. Chaque ligne montre un point de sévérité, un titre court et un lien vers l'enregistrement. Le widget ne montre que des tâches ; il ne contient pas la liste complète classée, les preuves chiffrées ni les boutons d'action. La liste complète se trouve dans le panneau de notifications.
 
-Cela signifie que la carte de benefice et la carte de reserve fiscale different du simple calcul "chiffre d'affaires moins sorties de tresorerie". La separation fait correspondre le benefice du tableau de bord avec le compte de resultat, de sorte qu'un gros investissement sur un mois ne transforme pas un mois rentable en perte, et que la reserve fiscale est estimee sur le benefice reel plutot que sur la tresorerie.
+Le moteur Vandaag classe les signaux en quatre niveaux de sévérité :
 
-## Fil de briefing
+- **critical** : de l'argent s'échappe ou une échéance ferme approche
+- **attention** : une tâche concrète, aujourd'hui ou cette semaine
+- **upcoming** : daté, mais pas encore urgent
+- **good** : une bonne nouvelle que vous avez méritée
 
-Le fil est la surface d'attention principale. Il assemble des signaux reels provenant des donnees de l'espace de travail en une liste structuree avec trois vues par onglet :
+Le moteur est déterministe. Aucun modèle n'intervient dans la production des signaux, donc la page reste utile lorsque la couche IA est indisponible.
 
-- **Maintenant.** Elements necessitant une action aujourd'hui : factures en retard, depenses en retard, recus ouverts, brouillons de factures prets a etre envoyes, et elements de la checklist TVA.
-- **Cette semaine.** Elements arrivant a echeance cette semaine : factures a echeoir, depenses a payer et echeances TVA.
-- **Bonnes nouvelles.** Confirmations : factures recemment payees, croissance du CA et nouveaux clients ce mois-ci.
+## Blocs d'appoint
 
-Chaque element du fil affiche l'entite, le montant et des details contextuels. Le fil s'ouvre depuis une barre d'onglets ancree en haut de la liste.
+Les blocs sous la rangée d'indicateurs n'apparaissent que s'ils méritent leur place. Le catalogue décide à la fois si un bloc s'affiche et quelle forme il prend.
 
-## Colonne de droite et rangee du bas
-
-| Carte | Contenu |
+| Bloc | Contenu |
 |---|---|
-| **Tresorerie (12 mois)** | Un graphique lineaire avec la position de tresorerie reelle jusqu'a aujourd'hui et une prevision jusqu'a la fin du mois. Necessite suffisamment d'historique pour generer la projection. |
-| **Carte semaine** | Heures enregistrees cette semaine. |
-| **Marges par projet** | Tous les projets avec chiffre d'affaires, tries par pourcentage de marge, codes couleur vert/orange/rouge. |
-| **Meilleurs clients** | Meilleurs clients par CA cette annee, avec pourcentage du total. |
-| **Activite recente** | Evenements : facture creee, facture payee, depense ajoutee. |
-| **Anneau TVA** | Periode de declaration TVA en cours, progression de la checklist et nombre de recus ouverts. Lie vers la declaration TVA. |
+| **Tendance** | Graphique 12 mois avec chiffre d'affaires et coûts côte à côte, plus la ligne de bénéfice |
+| **Âge des créances** | Créances réparties par tranche d'âge |
+| **Sources de revenus** | Plus grands clients par chiffre d'affaires depuis le début de l'année |
+| **Devis** | Pipeline de devis ouverts et devis à expiration |
+| **Mix de dépenses** | Répartition des coûts par catégorie, sous forme de barres ou de treemap selon l'espace |
+| **Graphique de trésorerie** | Position de trésorerie sur 12 mois avec prévision |
+| **Activité** | Événements récents de facturation, paiement et dépense |
+| **Carte TVA** | Période TVA en cours, progression de la checklist et prochaine échéance |
 
-## Banniere de configuration
+Sur téléphone, les formes visuelles larges comme les treemaps ou les entonnoirs basculent vers des formes plus simples pour que les chiffres restent lisibles.
 
-Tant que l'assistant de configuration sous `/setup` a encore des champs a remplir, une `FinishSetupBanner` s'affiche en haut du tableau de bord avec un decompte des champs en attente et un bouton **Continuer**. La banniere a un bouton de fermeture (icone X) qui la masque par navigateur via localStorage, la maintenant masquee d'un rechargement a l'autre jusqu'a ce que l'assistant soit termine. L'assistant est non bloquant : les nouvelles inscriptions arrivent directement sur `/dashboard` et ne sont pas redirigees de force.
+## Écran de première utilisation
 
+Un tout nouvel espace de travail sans factures ni clients atterrit sur un écran de première utilisation calme au lieu du tableau de bord complet. Il propose une action claire : créer votre première facture. Un petit panneau de découverte vous invite aussi à personnaliser le style des factures, le site web ou la sécurité du compte. Fermer le panneau ne cache que le panneau ; envoyer votre première facture quitte l'écran de première utilisation. Vous pouvez aussi sauter l'écran avec l'option **Afficher mon tableau de bord**.
 
-## Bonne nouvelle
+## Carte de prise en main
 
-L'onglet du tableau de bord **Bonne nouvelle** met en avant les signaux positifs qui méritent une action aujourd'hui :
+Tant que la checklist de configuration a des étapes ouvertes, une carte épinglée apparaît au-dessus du tableau de bord. Elle liste les étapes restantes et offre un lien vers l'assistant de configuration. La fermeture est mémorisée côté serveur, donc la carte reste masquée sur tous vos appareils. L'assistant n'est pas bloquant : les nouveaux utilisateurs arrivent directement sur `/dashboard`.
 
-- **Demandes ouvertes**: combien de demandes de devis via le site attendent une réponse, plus l'attente la plus longue.
-- **Devis à expiration**: combien de devis expirent cette semaine, et combien sont déjà expirés sans réponse.
+## Chargement et états d'erreur
 
-Les demandes de devis et les devis à expiration se trouvent aussi sur les pages de détail correspondantes. Les clients perdus — ceux qui ont acheté avant mais n'ont pas reçu de facture cette année — sont dans **Rapports > Clients > Perdus**. Voir [Rapports](/fr/features/reports) et [Clients](/fr/features/customers).
+Pendant que le tableau de bord détermine s'il s'agit d'un espace de première utilisation et charge le briefing, un squelette reflète la forme finale de la page. Si la récupération de Vandaag échoue, la page affiche une erreur explicite avec un bouton réessayer au lieu d'un tout va bien construit à partir de données vides. Si un changement de période échoue alors que d'anciens chiffres sont encore à l'écran, un avis de données obsolètes apparaît avec un bouton réessayer en ligne.
+
+## Voir aussi
+
+- [Utiliser le tableau de bord](/fr/faq/use-dashboard)
+- [Rapports](/fr/features/reports)
+- [Clients](/fr/features/customers)
+- [Factures](/fr/features/invoices)
+- [TVA](/fr/features/vat)
