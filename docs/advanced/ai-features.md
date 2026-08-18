@@ -11,7 +11,7 @@ Provider routing is intentional and changes per surface. The default chain is EU
 
 ## Contextual guide (in-app chatbot)
 
-The help icon in the app shell opens a chat panel that knows which page you are on, what records you are looking at, and what your workspace data looks like. It is built as a tool-using agent: instead of guessing at numbers, it asks for them.
+The assistant icon in the topbar opens a chat panel that knows which page you are on, what records you are looking at, and what your workspace data looks like. It is built as a tool-using agent: instead of guessing at numbers, it asks for them. On desktop the panel opens as a drawer pinned to the right edge of the screen; on mobile it opens as a bottom sheet from the sparkles button in the mobile header.
 
 - **Model.** Default chat model is Gemini on Vertex AI `europe-west1`, served over Cloudflare AI Gateway. When Ollama Cloud is explicitly enabled at the workspace level, `deepseek-v4-pro:cloud` takes over as the primary tier. Both paths fall back to the next tier on rate-limit or outage; the swap is transparent to the conversation.
 - **Streaming.** Replies stream over `POST /api/contextual-guide/stream` (Server-Sent Events). The web client renders incoming tokens as a typewriter effect so first tokens appear in well under a second.
@@ -24,7 +24,7 @@ The help icon in the app shell opens a chat panel that knows which page you are 
 
 The EU AI Act (Regulation 2024/1689) classifies the contextual guide as a limited-risk AI system under article 50. Limited-risk systems must transparently disclose to end users that they are interacting with AI. Two disclosure mechanisms ship in the guide:
 
-- **AI badge.** A small "AI" pill sits next to the assistant name in the header. It is always visible while the guide is open, satisfying the continuous-disclosure requirement. A tooltip on the badge names the underlying provider (Google Gemini).
+- **AI badge.** A small "AI" pill sits next to the assistant name in the drawer header. It is always visible while the guide is open, satisfying the continuous-disclosure requirement. A tooltip on the badge names the underlying provider (Google Gemini).
 - **Intro disclosure text.** A short line appears under the welcome prompt in the empty chat state: "You are talking to an AI assistant. Answers may contain errors; always verify financial or tax conclusions yourself."
 
 These disclosures also appear in Dutch, German, and French in their respective locale builds. The obligation takes effect in August 2026; the disclosures shipped ahead of the deadline.

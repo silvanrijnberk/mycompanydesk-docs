@@ -8,14 +8,7 @@ MyCompanyDesk inclut des fonctionnalites basees sur l'IA pour vous aider a trava
 
 ## Guide contextuel
 
-L'assistant integre vous aide a naviguer dans MyCompanyDesk :
-
-- Cliquez sur l'**icone d'aide** sur chaque page pour obtenir une aide contextuelle
-- Posez des questions sur les fonctionnalites, les workflows ou les parametres
-- Obtenez des instructions etape par etape pour les taches courantes
-- Disponible dans les quatre langues prises en charge
-
-Le guide comprend sur quelle page vous vous trouvez et donne des suggestions pertinentes.
+L'icone d'assistant dans la topbar ouvre un panneau de chat qui sait sur quelle page vous vous trouvez, quels enregistrements vous regardez et a quoi ressemblent les donnees de votre espace de travail. Il est construit comme un agent utilisant des outils : au lieu de deviner les nombres, il les demande. Sur bureau, le panneau s'ouvre comme un drawer ancre au bord droit de l'ecran ; sur mobile, il s'ouvre comme une bottom sheet depuis le bouton sparkles dans l'en-tete mobile.
 
 ### Limites de chat
 
@@ -33,7 +26,7 @@ Les limites IA sont mensuelles, et non quotidiennes. Elles sont reinitialisees l
 
 Le guide contextuel est classe comme un systeme d'IA a risque limite en vertu de l'article 50 du reglement europeen sur l'IA (Reglement 2024/1689). Cela signifie que nous devons indiquer clairement que vous interagissez avec une IA. Le guide contient deux elements a cet effet :
 
-- **Badge IA.** Une petite pastille "IA" a cote du nom de l'assistant. Toujours visible lorsque le guide est ouvert. Une info-bulle sur le badge indique le fournisseur sous-jacent (Google Gemini).
+- **Badge IA.** Une petite pastille "IA" a cote du nom de l'assistant dans l'en-tete du drawer. Toujours visible lorsque le guide est ouvert. Une info-bulle sur le badge indique le fournisseur sous-jacent (Google Gemini).
 - **Texte de divulgation.** Une courte ligne sous la question de bienvenue dans un etat de chat vide : "Vous parlez a un assistant IA. Les reponses peuvent contenir des erreurs ; verifiez toujours vous-meme les conclusions financieres ou fiscales."
 
 L'obligation entre en vigueur en aout 2026 ; les divulgations ont ete mises en place avant la date limite.

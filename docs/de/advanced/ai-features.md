@@ -8,14 +8,7 @@ MyCompanyDesk enthalt KI-gestutzte Funktionen, die Ihnen helfen, schneller und i
 
 ## Kontextbezogener Leitfaden
 
-Der In-App-Assistent hilft Ihnen bei der Navigation durch MyCompanyDesk:
-
-- Klicken Sie auf das **Hilfe-Symbol** auf jeder Seite fur kontextbezogene Hilfe
-- Stellen Sie Fragen zu Funktionen, Workflows oder Einstellungen
-- Erhalten Sie Schritt-fur-Schritt-Anleitungen fur haufige Aufgaben
-- Verfugbar in allen vier unterstutzten Sprachen
-
-Der Leitfaden versteht, auf welcher Seite Sie sich befinden, und gibt relevante Vorschlage.
+Das Assistenten-Symbol in der Topbar offnet ein Chat-Panel, das weiss, auf welcher Seite Sie sich befinden, welche Datensatze Sie betrachten und wie Ihre Workspace-Daten aussehen. Es ist als Tool-using Agent aufgebaut: Statt Zahlen zu erraten, fragt sie danach. Auf dem Desktop offnet sich das Panel als Drawer, der rechts an den Bildschirmrand angeheftet ist; auf Mobilgeraten offnet es sich als Bottom Sheet uber die Sparkles-Schaltflache im mobilen Header.
 
 ### Chat-Limits
 
@@ -33,7 +26,7 @@ KI-Limits gelten monatlich, nicht taglich. Sie werden am Ersten jedes Monats zur
 
 Der kontextbezogene Leitfaden fallt unter das EU-KI-Gesetz (Verordnung 2024/1689) als KI-System mit begrenztem Risiko (Artikel 50). Das bedeutet, wir mussen klarstellen, dass Sie mit einer KI sprechen. Der Leitfaden enthalt dafur zwei Elemente:
 
-- **KI-Badge.** Eine kleine "KI"-Pille neben dem Assistentennamen. Immer sichtbar, solange der Leitfaden geoffnet ist. Ein Tooltip auf dem Badge nennt den zugrunde liegenden Anbieter (Google Gemini).
+- **KI-Badge.** Eine kleine "KI"-Pille neben dem Assistentennamen in der Drawer-Header. Immer sichtbar, solange der Leitfaden geoffnet ist. Ein Tooltip auf dem Badge nennt den zugrunde liegenden Anbieter (Google Gemini).
 - **Offenlegungstext.** Eine kurze Zeile unter der Begrussungsfrage im leeren Chat: "Sie sprechen mit einem KI-Assistenten. Antworten konnen Fehler enthalten; uberprufen Sie finanzielle oder steuerliche Schlussfolgerungen immer selbst."
 
 Die Verpflichtung tritt im August 2026 in Kraft; die Offenlegungen wurden vor der Frist implementiert.
