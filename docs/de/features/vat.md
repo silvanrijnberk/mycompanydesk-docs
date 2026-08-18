@@ -102,11 +102,19 @@ Bei internationaler Aktivität erscheinen unter der Übersicht ergänzende Karte
 - **ICP-Meldung**: EU-B2B-Verkäufe je Kunde gruppiert. Erforderlich, wenn Sie an USt.-registrierte Kunden in anderen EU-Ländern verkauft haben. Die Karte folgt der seitenweiten Zeitraumauswahl, sodass ein Quartalsexport nur die EU-Kunden dieses Quartals enthält.
 - **OSS-Aufschlüsselung**: B2C-Verkäufe je Land für das One-Stop-Shop-Verfahren.
 - **Ausländische USt.**: Ihnen berechnete ausländische USt., die möglicherweise über das EU-Erstattungsverfahren zurückzuholen ist.
-- **Korrekturen**: Privatentnahme, Suppletie und andere Anpassungen, die in die Zeitraumsummen einfließen.
+- **Korrekturen**: manuelle MwSt.-Korrekturen, jede mit einem Hinweis, der erklärt, wo sie in der Erklärung landet. Eine Privatentnahme fließt in Rubrik 1d ein. Eine Suppletie wird gegen Rubrik 5a oder 5b verrechnet (bei Teilnahme an der KOR wirkt sie sich nicht auf die Vorsteuer aus, sodass Rubrik 5b bei null bleibt). Eine allgemeine Anpassung erhält kein eigenes Kästchen; sie verschiebt nur den zu zahlenden oder erstattungsfähigen Betrag, den MyCompanyDesk anzeigt, nicht aber eine Rubrik, die Sie übernehmen.
 
 <!-- TODO(source-missing): RichardTool e671fd80 zeigt in der App eine Belastingdienst-Schwelle von 1.000 EUR fuer suppletie-Korrekturen (bis einschliesslich 1.000 EUR in die naechste regulaere Erklaerung; darueber formelle suppletieaangifte erforderlich). sources/ enthaelt diese Schwelle nicht; Wert und Linkziel nicht erfinden, bis ein Mensch die aktuelle Regel auf belastingdienst.nl geprueft hat. -->
 
 Diese Karten bleiben verborgen, bis es tatsächlich internationale Daten gibt; die meisten Arbeitsbereiche sehen sie nie.
+
+### Hinweis bei Abweichung einer eingereichten Erklärung
+
+<!-- TODO(source-missing): RichardTool 28c9641 fügte eine Warnung bei Abweichung einer eingereichten Erklärung hinzu, die eine Belastingdienst-Schwelle nutzt, um zwischen "in die nächste reguläre Erklärung einbeziehen" und "formelle suppletieaangifte erforderlich" zu wählen. sources/ enthält diese Schwelle nicht; Wert und Linkziel nicht erfinden, bis ein Mensch die Regel auf belastingdienst.nl geprüft hat. -->
+
+Für die niederländische MwSt. berechnet der Reiter **Erklärung** nach dem Einreichen bei jedem Öffnen die Erklärung aus Ihren Live-Daten neu. Stimmt diese Berechnung nicht mehr mit Ihrer eingereichten Erklärung überein, erscheint ein Warnbanner über der Rubrieken-Übersicht. Es vergleicht die eingereichten und aktuellen Beträge für Rubrik 5a, 5b und das Nettototal in 5g und zeigt pro Zeile die Differenz.
+
+Das Banner sagt Ihnen, wie es weitergeht. Es teilt Ihnen mit, ob Sie die Differenz in Ihre nächste reguläre Erklärung einbeziehen, eine formelle suppletieaangifte einreichen oder feststellen, dass die Rubriken sich verschoben haben, während der zu zahlende oder erstattungsfähige Betrag gleich geblieben ist.
 
 ### Privatnutzung des Firmenwagens
 

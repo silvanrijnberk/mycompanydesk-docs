@@ -102,11 +102,19 @@ Quand vous avez de l'activité internationale, des cartes complémentaires appar
 - **ICP-opgaaf** : ventes B2B intra-UE groupées par client. Obligatoire quand vous avez vendu à des clients assujettis à la TVA dans d'autres pays de l'UE. La carte suit le sélecteur de période de toute la page, donc une exportation trimestrielle ne liste que les clients UE de ce trimestre.
 - **Ventilation OSS** : ventes B2C par pays pour le guichet unique (One Stop Shop).
 - **TVA étrangère** : TVA étrangère qui vous a été facturée et qui peut être récupérable via la procédure de remboursement de l'UE.
-- **Corrections** : prélèvements privés, suppletie et autres ajustements intégrés aux totaux de la période.
+- **Corrections** : corrections de TVA manuelles, chacune avec une infobulle indiquant où elle se situe sur la déclaration. Un prélèvement privé compte dans la rubrique 1d. Une suppletie est compensée avec les rubriques 5a ou 5b (en régime KOR, cela n'affecte pas la TVA déductible, donc la rubrique 5b reste nulle). Un ajustement générique n'a pas sa propre case ; il ne déplace que le montant à payer ou à rembourser affiché par MyCompanyDesk, pas une rubrique que vous recopiez.
 
 <!-- TODO(source-missing): RichardTool e671fd80 affiche dans l'application un seuil Belastingdienst de 1 000 EUR pour les corrections suppletie (jusqu'à 1 000 EUR inclus dans la prochaine déclaration régulière; au-delà une suppletieaangifte formelle est requise). sources/ ne contient pas ce seuil; ne pas inventer la valeur ou la cible du lien tant qu'un humain n'a pas vérifié la règle en vigueur sur belastingdienst.nl. -->
 
 Ces cartes restent masquées tant qu'il n'y a pas de données internationales réelles ; la plupart des espaces de travail ne les voient jamais.
+
+### Alerte en cas d'écart avec la déclaration déposée
+
+<!-- TODO(source-missing): RichardTool 28c9641 a ajouté une alerte en cas d'écart avec une déclaration déposée, qui utilise un seuil Belastingdienst pour choisir entre "intégrer à la prochaine déclaration régulière" et "suppletieaangifte formelle requise". sources/ ne contient pas ce seuil; ne pas inventer la valeur ou la cible du lien tant qu'un humain n'a pas vérifié la règle en vigueur sur belastingdienst.nl. -->
+
+Pour la TVA néerlandaise, l'onglet **Déclaration** recalcule la déclaration à chaque ouverture à partir de vos données en direct, même après un dépôt. Si le calcul actuel ne correspond plus à ce que vous avez déposé, une bannière d'avertissement apparaît au-dessus de la feuille des rubriques. Elle compare les montants déposés et actuels pour les rubriques 5a, 5b et le total net en 5g, et montre l'écart pour chaque ligne.
+
+La bannière indique la marche à suivre. Elle vous dit soit d'intégrer l'écart à votre prochaine déclaration régulière, soit de déposer une suppletieaangifte formelle, soit de constater que les rubriques ont changé alors que le montant à payer ou à rembourser est resté le même.
 
 ### Usage privé du véhicule de société
 

@@ -32,4 +32,6 @@ Il n'y a pas de modèle CSV à télécharger ; l'import fonctionne avec les colo
 
 Pour les dépenses, les fichiers CSV rédigés au format néerlandais sont reconnus. Les montants comme 100,50 ou 1.234,56 et les dates au format jj-mm-aaaa sont lus en jour-mois-année. Cela correspond aux champs de montant de l'application web, donc la saisie et l'importation suivent les mêmes règles.
 
+Si votre fichier comporte une colonne avec le montant de la TVA, MyCompanyDesk en déduit également le taux de TVA. Si le montant et le taux de TVA sont tous deux absents, le taux reste à 0, au lieu de se caler silencieusement sur le taux standard. La dépense apparaît alors dans le contrôle "TVA manquante" avant le dépôt.
+
 Conseil : commencez par un petit import de test pour vérifier l'association avant d'importer de gros volumes.
