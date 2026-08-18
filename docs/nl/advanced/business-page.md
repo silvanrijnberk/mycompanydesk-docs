@@ -40,6 +40,19 @@ Wat de banner voor je doet:
 
 De banner gebruikt het Gemini AI-model (lite-variant) als dat beschikbaar is in je werkruimte. Als AI niet is geconfigureerd, werkt de banner alsnog met een verstandige terugval op basis van je branchecode en bedrijfsnaam.
 
+## Website-opzetwizard
+
+Voordat je ooit de editor opent, kan de website-opzetwizard je eerste concept voor je bouwen. Hij opent automatisch de eerste keer dat een nieuwe werkruimte `/website` bezoekt, en je kunt hem later opnieuw starten via **Bedrijf > Je website > Stijl** met **Opnieuw opzetten**. De wizard stelt vier vragen:
+
+1. **Wat je doet** (alvast ingevuld uit je KVK-gegevens) - je werk, diensten en toon.
+2. **Wat je wilt** - of je site vooral klanten moet binnenhalen, je werk moet tonen, betrouwbaar moet overkomen of beter vindbaar moet zijn.
+3. **Logo** - houd het AI-gegenereerde logo, of upload je eigen PNG/SVG.
+4. **Merkkleur** - kies een van de voorgestelde kleuren of geef je eigen hex-kleur op.
+
+Je antwoorden worden opgeslagen als sitebriefing. Als je afsluit, schrijft de AI nieuwe teksten voor je hele conceptsite op basis van de briefing en je werkruimtegegevens, past je gekozen logo en merkkleur toe, en laat alles als concept staan. Er wordt niets automatisch gepubliceerd. Je bekijkt het resultaat in de editor en publiceert pas wanneer je tevreden bent.
+
+Dezelfde wizard kan een bestaande site ook helemaal opnieuw schrijven. Als je hem vanuit de Stijl-tab herstart, vraagt hij eerst om bevestiging, want afsluiten vervangt tekst die je zelf hebt aangepast. De site blijft concept tot je zelf publiceert.
+
 ## Tabs
 
 De sitebouwer heeft drie tabs: Editor, Pagina's en Stijl. Klik op de Stijl-header om de sub-tabs (waaronder Animatie) uit of in te klappen.
