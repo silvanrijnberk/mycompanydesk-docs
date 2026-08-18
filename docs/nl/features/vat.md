@@ -102,11 +102,19 @@ Heb je internationale activiteit, dan verschijnen er extra kaarten onder het ove
 - **ICP-opgaaf**: EU B2B-verkopen gegroepeerd per klant. Verplicht wanneer je aan BTW-geregistreerde klanten in andere EU-landen hebt verkocht. De kaart volgt de paginabrede periodekiezer, zodat een kwartaalexport alleen de EU-klanten van dat kwartaal bevat.
 - **OSS-uitsplitsing**: B2C-verkopen per land voor de One Stop Shop-regeling.
 - **Buitenlandse BTW**: buitenlandse BTW die aan jou is berekend en mogelijk via de EU-teruggaafprocedure terug te vragen is.
-- **Correcties**: privé-onttrekking, suppletie en andere aanpassingen die in de periodetotalen meelopen.
+- **Correcties**: handmatige BTW-correcties, met per soort een hint die uitlegt waar hij op de aangifte terechtkomt. Een privé-onttrekking telt mee in rubriek 1d. Een suppletie wordt verrekend met rubriek 5a of 5b (doe je mee met de KOR, dan heeft dit geen effect op voorbelasting en blijft rubriek 5b nul). Een generieke aanpassing krijgt geen eigen vakje; hij verschuift alleen het te betalen of terug te vragen bedrag dat MyCompanyDesk toont, niet een rubriek die je overneemt.
 
 <!-- TODO(source-missing): RichardTool e671fd80 toont in de app een Belastingdienst-drempel van € 1.000 voor suppletiecorrecties (tot en met € 1.000 in de eerstvolgende btw-aangifte; daarboven een formele suppletieaangifte verplicht). sources/ heeft deze drempel niet; verzin de waarde of linkdoel niet totdat een mens de huidige regel heeft gecontroleerd op belastingdienst.nl. -->
 
 Deze kaarten blijven verborgen totdat er echte internationale gegevens zijn, dus de meeste werkruimtes zien ze nooit.
+
+### Waarschuwing bij afwijking ingediende aangifte
+
+<!-- TODO(source-missing): RichardTool 28c9641 voegde een waarschuwing toe bij afwijking van een ingediende aangifte, die een Belastingdienst-drempel gebruikt om te kiezen tussen "verwerken in eerstvolgende reguliere aangifte" en "formele suppletieaangifte verplicht". sources/ heeft deze drempel niet; verzin de waarde of linkdoel niet totdat een mens de regel op belastingdienst.nl heeft gecontroleerd. -->
+
+Voor de Nederlandse BTW herberekent het tabblad Aangifte na het indienen telkens opnieuw de aangifte uit je live boekingen. Komt die berekening niet meer overeen met wat je hebt ingediend, dan verschijnt er een waarschuwingsbanner boven het rubriekenoverzicht. Hij vergelijkt de ingediende en huidige bedragen van rubriek 5a, 5b en het nettototaal in 5g, en toont per regel het verschil.
+
+De banner vertelt wat je vervolgens doet. Je krijgt de keuze om het verschil in je eerstvolgende reguliere aangifte te verwerken, een formele suppletieaangifte in te dienen, of te zien dat de rubrieken zijn verschoven terwijl het te betalen of terug te vragen bedrag gelijk is gebleven.
 
 ### Privégebruik bedrijfsauto
 

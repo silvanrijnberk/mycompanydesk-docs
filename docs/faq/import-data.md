@@ -32,4 +32,6 @@ There is no template CSV to download; the import works with the columns of your 
 
 For expenses, CSV files written in Dutch formats are parsed the way a Dutch bookkeeper writes them. Amount cells such as 100,50 or 1.234,56 are recognized, and dates in dd-mm-yyyy order are read as day-month-year. This matches the number fields in the web app, so what you type and what you import use the same rules.
 
+If a VAT amount column is present, MyCompanyDesk also derives the VAT rate from it. If both VAT amount and VAT rate are missing, the VAT rate is set to 0 instead of defaulting to the standard rate, so the expense appears in the pre-filing "Missing VAT" check.
+
 Tip: Start with a small test import to verify the mapping before importing large datasets.
