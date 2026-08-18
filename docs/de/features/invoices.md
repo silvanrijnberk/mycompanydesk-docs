@@ -44,6 +44,8 @@ Sie können eine neue Rechnung an zwei Stellen aus einer gespeicherten Vorlage s
 - Im **vollständigen Rechnungsformular** klicken Sie auf **Aus Vorlage starten** (nur sichtbar, wenn gespeicherte Rechnungsvorlagen vorhanden sind). Wählen Sie eine Vorlage aus und das Formular füllt sich direkt mit den Positionen, dem Kunden und den anderen gespeicherten Daten. Passen Sie nach Bedarf an und speichern und versenden Sie.
 - Aus der **Schnellerfassungs-Schublade** klicken Sie auf **Vorlage verwenden**, wählen Sie eine gespeicherte Vorlage aus und alle Positionen sind vorausgefüllt. Passen Sie nach Bedarf an und speichern und versenden Sie.
 
+Gespeicherte Vorlagen behalten die vollständige Position: Beschreibung, Menge, Einheit, Preis, USt.-Satz, Rabatt und ob die Position von der USt. befreit ist. Die Verknüpfung mit einem Katalogartikel wird bewusst nicht übernommen, da dieser Artikel später gelöscht werden kann und die Vorlage dann beim nächsten Gebrauch fehlschlagen würde.
+
 ## Rechnung einem Objekt zuordnen
 
 Wenn der Umsatz zu einer Mietimmobilie, einem Fahrzeug oder einem anderen Vermögensgegenstand gehört, wählen Sie im Rechnungsformular das entsprechende Objekt aus. Die Rechnung wird dann auf der Objektdetailseite aufgeführt und in deren Gesamtumsatz einbezogen. Das gilt sowohl für Rechnungen, die aus einem Mietvertrag erzeugt wurden, als auch für direkte Zuordnungen wie Servicekostenabrechnungen, Einzelrechnungen und Verkaufsrechnungen.
@@ -104,7 +106,9 @@ Stornieren Sie eine Rechnung, die nicht mehr bezahlt werden soll. Stornierte Rec
 
 ### Duplizieren
 
-Erstellen Sie eine Kopie einer bestehenden Rechnung — nützlich für wiederkehrende Abrechnungen an denselben Kunden.
+Erstellen Sie eine Kopie einer bestehenden Rechnung, nützlich für wiederkehrende Abrechnungen an denselben Kunden.
+
+Gutschriften können nicht dupliziert werden. Ein Duplikat würde auf keine Rechnung verweisen und dennoch als negative Umsatz in der USt.-Erklärung zählen. Erstellen Sie stattdessen eine neue Korrektur über “Gutschrift erstellen” auf der Rechnung, die Sie korrigieren möchten.
 
 ### Erinnerung senden
 
