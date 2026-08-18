@@ -114,7 +114,7 @@ Verstuur een betalingsherinnering voor achterstallige facturen. Als je werkruimt
 
 Selecteer meerdere facturen uit de lijst om acties in bulk uit te voeren:
 
-- **Versturen** — Verstuur meerdere conceptfacturen tegelijk
+- **Markeer als verzonden** — Markeer meerdere conceptfacturen tegelijk als verzonden
 - **Markeer als betaald** — Registreer betalingen voor meerdere facturen
 - **Archiveren** — Verplaats facturen naar het archief
 - **Verwijderen** — Verwijder facturen permanent

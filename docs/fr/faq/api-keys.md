@@ -11,4 +11,5 @@ Pour gérer les clés API :
 1. Allez dans Paramètres de l'espace de travail → Clés API
 2. Cliquez sur « Créer une clé API » et donnez-lui un nom explicite
 3. Copiez la clé immédiatement, car elle ne sera plus affichée
-4. Vérifiez les portées et révoquez les clés dont vous n'avez plus besoin
+4. Choisissez les portées : **Lecture**, **Écriture** ou **Admin**
+5. Vérifiez les portées et révoquez les clés dont vous n'avez plus besoin

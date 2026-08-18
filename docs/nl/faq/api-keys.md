@@ -11,4 +11,5 @@ Om API-sleutels te beheren:
 1. Ga naar Workspace-instellingen → API-sleutels
 2. Klik op "API-sleutel aanmaken" en geef hem een duidelijke naam
 3. Kopieer de sleutel direct, want hij wordt niet opnieuw getoond
-4. Controleer de scopes en trek sleutels in die je niet meer nodig hebt
+4. Kies scopes: **Lezen**, **Schrijven** of **Beheer**
+5. Controleer de scopes en trek sleutels in die je niet meer nodig hebt

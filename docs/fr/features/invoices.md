@@ -114,7 +114,7 @@ Envoyez un rappel de paiement pour les factures en retard. Si votre espace de tr
 
 Selectionnez plusieurs factures dans la liste pour effectuer des actions groupees :
 
-- **Envoyer** -- Envoyez plusieurs factures brouillon en une fois
+- **Marquer comme envoyee** -- Marquez plusieurs factures brouillon en une fois comme envoyees
 - **Marquer comme payees** -- Enregistrez le paiement de plusieurs factures
 - **Archiver** -- Deplacez les factures vers les archives
 - **Supprimer** -- Supprimez definitivement des factures
