@@ -125,6 +125,8 @@ Je klant moet bereikbaar zijn op het Peppol-netwerk. In de praktijk betekent dit
 
 **Ontvangen inschakelen lukt niet vanwege een conflict.** Je KVK-nummer of btw-nummer is al geregistreerd als Peppol-ontvanger bij een ander boekhoudpakket of provider. Schakel ontvangen daar eerst uit en zet het daarna in MyCompanyDesk aan. Tot die tijd kun je wel gewoon e-facturen versturen vanuit MyCompanyDesk.
 
+**Ontvangen inschakelen lukt niet: bedrijfsgegevens ontbreken.** Als Peppol-ontvangst niet kan worden ingeschakeld omdat je bedrijfsprofiel geen KVK-nummer of btw-nummer heeft, geeft MyCompanyDesk een duidelijke 422-fout. Voeg het ontbrekende nummer toe in je bedrijfsprofiel en schakel ontvangen daarna opnieuw in.
+
 **Een ontvangen e-factuur klopt niet.** Open de conceptuitgave, pas leverancier, bedrag, btw of omschrijving aan en sla hem op. De oorspronkelijke e-factuurgegevens blijven in de notities van de uitgave staan voor de controle.
 
 **Ik heb ontvangen uitgeschakeld, maar er verschijnen nog conceptuitgaven.** Conceptuitgaven die al zijn binnengekomen voordat je ontvangen uitschakelde, blijven in je uitgaven staan; uitschakelen zorgt er alleen voor dat er geen nieuwe e-facturen meer binnenkomen.

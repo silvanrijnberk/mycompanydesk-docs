@@ -125,6 +125,8 @@ Votre client doit etre joignable sur le reseau Peppol. En pratique, cela signifi
 
 **La reception ne s'active pas a cause d'un conflit.** Votre numero d'immatriculation ou numero de TVA est deja enregistre comme recepteur Peppol chez un autre logiciel de comptabilite ou fournisseur. Desactivez d'abord la reception la-bas, puis activez-la dans MyCompanyDesk. D'ici la, vous pouvez toujours envoyer des factures electroniques depuis MyCompanyDesk.
 
+**La reception ne peut pas s'activer : details de l'entreprise manquants.** Si la reception Peppol ne peut pas etre activee parce que votre profil d'entreprise ne contient pas de numero d'immatriculation ou de numero de TVA, MyCompanyDesk renvoie une erreur 422 explicite. Ajoutez le numero manquant dans votre profil d'entreprise, puis re-activez la reception.
+
 **Une facture electronique recue est incorrecte.** Ouvrez le brouillon de depense, corrigez le fournisseur, le montant, la TVA ou la description, puis enregistrez-le. Les donnees originales de la facture electronique restent dans les notes de la depense pour reference.
 
 **J'ai desactive la reception mais des brouillons apparaissent encore.** Les brouillons deja arrives avant la desactivation restent dans vos depenses; la desactivation ne bloque que l'arrivee de nouvelles factures electroniques.

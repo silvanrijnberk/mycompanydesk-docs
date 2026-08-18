@@ -203,6 +203,8 @@ Fehlt eines der Felder, oeffnet sich ein Dialog, in dem Sie die Angaben direkt n
 
 Die App blockiert die Finalisierung auch, wenn Ihre Firmendaten unvollstaendig sind (z. B. ein fehlender Firmenname oder eine fehlende Adresse) oder wenn die Rechnung keine Positionen enthaelt. Die Fehlermeldung zeigt genau, was fehlt, damit Sie es korrigieren koennen, bevor die Rechnung beim Kunden landet.
 
+Mengenangaben in der PDF werden in derselben Sprache formatiert wie der Rest des Dokuments, sodass eine englische Rechnung die englische Zahlenformatierung und eine niederlaendische Rechnung die niederlaendische Formatierung verwendet.
+
 Wenn Ihr Arbeitsbereich die manuelle Nummerierung verwendet, fragt die App beim Finalisieren oder Versenden auch nach der Rechnungsnummer. MyCompanyDesk schlägt die nächste Nummer in Ihrer Serie vor, aber Sie können auch eine beliebige andere Nummer eingeben. Die Nummer ist Pflicht und muss eindeutig sein.
 
 Warten Sie noch auf Ihre USt-IdNr. vom Finanzamt, oder sind Sie unter der Kleinunternehmerregelung (KOR) befreit? Sie koennen den Hinweis ueberspringen und trotzdem fortfahren. Tragen Sie Ihre USt-IdNr. spaeter nach, sobald sie vorliegt.

@@ -125,6 +125,8 @@ Ihr Kunde muss über das Peppol-Netzwerk erreichbar sein. Das bedeutet in der Pr
 
 **Empfangen lässt sich wegen eines Konflikts nicht aktivieren.** Ihre Handelsregisternummer oder USt-IdNr. ist bereits als Peppol-Empfänger bei einem anderen Buchhaltungspaket oder Provider registriert. Deaktivieren Sie den Empfang dort zuerst und aktivieren Sie ihn dann in MyCompanyDesk. Bis dahin können Sie weiterhin E-Rechnungen aus MyCompanyDesk versenden.
 
+**Empfangen lässt sich nicht aktivieren: Unternehmensdaten fehlen.** Wenn der Peppol-Empfang nicht aktiviert werden kann, weil Ihr Unternehmensprofil keine Handelsregisternummer oder USt-IdNr. enthält, gibt MyCompanyDesk einen klaren 422-Fehler zurück. Ergänzen Sie die fehlende Nummer in Ihrem Unternehmensprofil und aktivieren Sie den Empfang danach erneut.
+
 **Eine empfangene E-Rechnung stimmt nicht.** Öffnen Sie den Ausgabenentwurf, korrigieren Sie Lieferant, Betrag, USt. oder Beschreibung und speichern Sie ihn. Die ursprünglichen E-Rechnungsdaten bleiben in den Notizen der Ausgabe zur Kontrolle erhalten.
 
 **Ich habe den Empfang deaktiviert, aber es tauchen noch Entwürfe auf.** Entwürfe, die bereits vor der Deaktivierung eingegangen sind, bleiben in Ihren Ausgaben; die Deaktivierung stoppt nur den Eingang neuer E-Rechnungen.

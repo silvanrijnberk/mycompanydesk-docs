@@ -14,6 +14,8 @@ So erstellen Sie eine Gutschrift:
 3. MyCompanyDesk erstellt in einem Schritt eine vollständige, endgültige Gutschrift: jede Position des Originals wird negativ übernommen und die Gutschrift erhält die nächste Nummer in Ihrer Serie
 4. Senden Sie die Gutschrift an den Kunden
 
+Stornierte Rechnungen können nicht gutgeschrieben werden. Wenn Sie eine bereits stornierte Rechnung korrigieren möchten, duplizieren Sie die stornierte Rechnung und nehmen Sie dort die Änderungen vor.
+
 Die Beträge lassen sich beim Erstellen nicht anpassen; versendete Dokumente sind gesperrt, die Gutschrift spiegelt das Original daher immer exakt wider. Für eine Teilkorrektur erstellen Sie zuerst die vollständige Gutschrift und stellen anschließend eine neue Rechnung über den richtigen Betrag aus.
 
 MyCompanyDesk verhindert außerdem, dass Sie mehr gutschreiben als der Betrag der Originalrechnung. Sie können mehrere Teilgutschriften für dieselbe Rechnung ausstellen, aber sobald die Summe der Gutschriften den Rechnungsbetrag erreicht, lässt sich für diese Rechnung keine weitere Gutschrift erstellen.

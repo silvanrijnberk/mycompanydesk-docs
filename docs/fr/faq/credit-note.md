@@ -14,6 +14,8 @@ Pour créer un avoir :
 3. MyCompanyDesk crée en une seule étape un avoir complet et finalisé : chaque ligne de l'original est reprise en négatif et l'avoir reçoit le numéro suivant de votre série
 4. Envoyez l'avoir au client
 
+Les factures annulées ne peuvent pas faire l'objet d'un avoir. Si vous devez corriger une facture déjà annulée, dupliquez la facture annulée et apportez-y les modifications.
+
 Vous ne pouvez pas ajuster les montants pendant la création ; les documents envoyés sont verrouillés, l'avoir reflète donc toujours exactement l'original. Pour une correction partielle, créez d'abord l'avoir complet, puis émettez une nouvelle facture avec le bon montant.
 
 MyCompanyDesk empêche également de créditer plus que le montant de la facture d'origine. Vous pouvez émettre plusieurs avoirs partiels sur la même facture, mais une fois que le total des avoirs atteint le montant de la facture, aucun nouvel avoir ne peut être créé pour cette facture.

@@ -203,6 +203,8 @@ Si l'un de ces champs est manquant, une fenetre s'ouvre pour que vous puissiez l
 
 L'application bloque aussi la finalisation si les informations de votre entreprise sont incompletes (par exemple un nom ou une adresse manquants) ou si la facture ne contient aucune ligne. Le message d'erreur indique exactement ce qui manque, afin que vous puissiez le corriger avant que la facture n'atteigne le client.
 
+Les quantites sur le PDF sont formatees dans la meme langue que le reste du document, donc une facture en anglais utilise la presentation anglaise des nombres et une facture neerlandaise utilise la presentation neerlandaise.
+
 Si votre espace de travail utilise la numerotation manuelle, l'application vous demande aussi le numero de facture lors de la finalisation ou de l'envoi. MyCompanyDesk propose le numero suivant de votre serie, mais vous pouvez saisir le numero de votre choix. Le numero est obligatoire et doit etre unique.
 
 Vous attendez encore votre numero de TVA de l'administration fiscale, ou vous beneficiez du regime de la franchise en base (KOR) ? Vous pouvez passer l'alerte et continuer malgre tout. Ajoutez votre numero de TVA des que vous l'avez.

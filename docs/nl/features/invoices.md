@@ -203,6 +203,8 @@ Ontbreekt een van de twee, dan opent een dialoog waarin je ze direct kunt invull
 
 De app blokkeert het afronden ook als je bedrijfsgegevens incompleet zijn (bijvoorbeeld een ontbrekende bedrijfsnaam of adres) of als de factuur geen regelitems heeft. De foutmelding wijst precies naar wat ontbreekt, zodat je het eerst kunt oplossen voordat de factuur de klant bereikt.
 
+Hoeveelheden in de PDF worden opgemaakt in dezelfde taal als de rest van het document, zodat een Engelse factuur Engelse getalnotatie gebruikt en een Nederlandse factuur Nederlandse notatie.
+
 Als je werkruimte handmatige nummering gebruikt, vraagt de app ook om het factuurnummer wanneer je afrondt of verstuurt. MyCompanyDesk toont het volgende nummer in je reeks als suggestie, maar je mag elk nummer invoeren dat je wilt. Het nummer is verplicht en moet uniek zijn.
 
 Wacht je nog op je btw-id van de Belastingdienst, of val je onder de KOR (kleineondernemersregeling)? Dan kun je de melding overslaan en toch doorgaan. Vul je btw-id later aan zodra je hem hebt.
