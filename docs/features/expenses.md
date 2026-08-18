@@ -146,7 +146,7 @@ Filters on the list cover category, project, customer, date range and status (ac
 Select multiple expenses for:
 
 - **Categorize** - Re-assign the category (re-runs the depreciation hook for newly-investment-flagged rows).
-- **Archive** - Move to archive.
+- **Archive** - Move to archive. Archiving unpaid expenses that have a due date pauses their open payment reminders. The bulk bar asks for confirmation first when any selected expense is unpaid and has a due date, so you know how many of the selected expenses lose a reminder. The reminder stays paused while the expenses are archived. If you restore an archived expense later, the daily sweep recreates the reminder, but not immediately; it returns the next night at the earliest.
 - **Delete** - Permanently remove.
 - **Export** - Download as CSV.
 - **Mark as paid** - Mark selected expenses as paid. Marking a bank or inbox draft as paid clears its "To review" flag at the same time, so the row shows up in your reports, VAT return and accountant export instead of staying hidden. This only happens when you set the status to paid, not when you move it back to unpaid.

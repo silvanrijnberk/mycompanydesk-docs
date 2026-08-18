@@ -18,4 +18,4 @@ La suppression se fait par étapes. Supprimer une dépense active l'archive d'ab
 
 Les dépenses dans la Corbeille ne peuvent pas être modifiées. Restaurez la dépense d'abord si vous devez la modifier.
 
-Si vous archivez une dépense non payée avec une date d'échéance, le rappel de paiement ouvert est annulé et ne sera pas envoyé. Vous pouvez toujours restaurer la dépense depuis les Archives, mais le rappel ne revient pas.
+Si vous archivez une dépense non payée avec une date d'échéance, le rappel de paiement ouvert est annulé et n'est pas envoyé tant qu'elle reste dans les archives. Vous pouvez toujours restaurer la dépense depuis les Archives. Si vous le faites, le passage quotidien recrée le rappel, mais au plus tôt la nuit suivante.
