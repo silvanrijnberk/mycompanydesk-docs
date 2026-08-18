@@ -18,4 +18,4 @@ Verwijderen gaat in stappen. Een actieve uitgave verwijderen archiveert deze eer
 
 Een uitgave in de Prullenbak kun je niet bewerken. Wil je toch iets wijzigen, zet hem dan eerst terug.
 
-Als je een onbetaalde uitgave met een vervaldatum archiveert, wordt de openstaande betaalherinnering ingetrokken en niet verstuurd. Je kunt de uitgave later nog uit het Archief terugzetten, maar de herinnering komt niet terug.
+Als je een onbetaalde uitgave met een vervaldatum archiveert, krijg je daarna geen betaalherinnering meer voor. Je kunt de uitgave later nog uit het Archief terugzetten, maar de herinnering komt niet terug.
