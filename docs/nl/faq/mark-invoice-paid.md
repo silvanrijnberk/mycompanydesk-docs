@@ -10,9 +10,9 @@ chatbot:
 
 Zo markeer je een factuur als betaald:
 1. Open de factuur vanuit de lijst
-2. Klik op "Markeer als betaald" in de kop van de factuur; met één klik springt de status op Betaald
+2. Klik op "Markeer als betaald" in de kop van de factuur; met één klik springt de status op Betaald en wordt er een betaalregel voor het volledige bedrag aangemaakt
 3. Wil je de betaaldatum, betaalmethode of een kenmerk vastleggen? Gebruik dan "Betaling registreren" in de sectie Betaling
 
 Let op: een conceptfactuur moet eerst definitief worden gemaakt voordat je hem als betaald kunt markeren of een betaling kunt registreren. Een betaling op een concept maakte eerder een factuur met status Betaald zonder nummer, wat nu niet meer mag. Om een betaling op een concept vast te leggen, verstuur of maak de factuur eerst definitief zodat hij een nummer krijgt, en registreer dan de betaling.
 
-Tip: Springt de status niet bij? Ververs de lijst en controleer op de detailpagina of de betaling is opgeslagen.
+Als een oudere factuur wel Betaald toont, maar de betaalkaart meldt dat er geen betaling is geregistreerd, dan is hij waarschijnlijk via een import of een ouder pad als betaald gemarkeerd zonder dat er een betaalregel werd aangemaakt. Gebruik "Eerste betaling registreren" om de betaling alsnog vast te leggen en de melding op te heffen.

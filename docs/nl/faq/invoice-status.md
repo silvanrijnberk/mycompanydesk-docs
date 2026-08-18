@@ -12,7 +12,7 @@ Factuurstatussen uitgelegd:
 • Verstuurd - bezorgd bij de klant, wacht op betaling
 • Achterstallig - vervaldatum verstreken, nog niet betaald
 • Klant zegt: betaald - de klant heeft via het portaal aangegeven te hebben betaald; bevestig of weiger de betaling voordat de factuur op Betaald komt
-• Betaald - betaling ontvangen en bevestigd
+• Betaald - betaling ontvangen en bevestigd. In een uitzonderingsgeval kan een factuur Betaald tonen terwijl er nog geen betaling is geregistreerd, bijvoorbeeld na een import of een oudere "markeer als betaald"-actie die geen betaalregel aanmaakte. De betaalkaart toont dan "Deze factuur staat op betaald, maar {amount} is niet als betaling geregistreerd" en biedt de optie om de betaling alsnog vast te leggen.
 • Geannuleerd - ongeldig, niet meer actief
 
 Verwijderen gaat in stappen: van actief naar Gearchiveerd, dan naar Prullenbak, en pas daarna definitief weg. Je kunt hem uit het Archief of de Prullenbak terughalen zolang hij nog niet definitief verwijderd is. Annuleren werkt anders: daarmee markeer je een verstuurde of betaalde factuur als Geannuleerd, maar hij blijft in de lijst staan.

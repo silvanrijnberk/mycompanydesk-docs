@@ -12,7 +12,7 @@ Rechnungsstatus erklärt:
 • Gesendet - an den Kunden zugestellt, wartet auf Zahlung
 • Überfällig - Fälligkeitsdatum überschritten, noch nicht bezahlt
 • Überprüfung erforderlich - der Kunde hat im Portal angegeben, dass er bezahlt hat; bestätigen oder lehnen Sie die Zahlung ab, bevor die Rechnung auf Bezahlt wechselt
-• Bezahlt - Zahlung erhalten und bestätigt
+• Bezahlt - Zahlung erhalten und bestätigt. In seltenen Fällen kann eine Rechnung als Bezahlt angezeigt werden, obwohl noch keine Zahlung erfasst wurde, etwa nach einem Import oder einer älteren "Als bezahlt markieren"-Aktion ohne Zahlungsbuchung. Die Zahlungskarte zeigt dann "Diese Rechnung ist als bezahlt markiert, aber {amount} ist nicht als Zahlung erfasst" und bietet an, die Zahlung nachzutragen.
 • Storniert - ungültig, nicht mehr aktiv
 
 Löschen erfolgt in Stufen: aus aktiv wird Archiviert, aus Archiviert wird Papierkorb, und aus dem Papierkorb wird endgültig gelöscht. Sie können die Rechnung aus dem Archiv oder dem Papierkorb wiederherstellen, solange sie nicht endgültig gelöscht ist. Stornieren ist anders: damit markieren Sie eine gesendete oder bezahlte Rechnung als storniert, sie bleibt aber in der Liste sichtbar.
