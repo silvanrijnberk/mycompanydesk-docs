@@ -17,3 +17,5 @@ So löschen Sie eine Ausgabe:
 Das Löschen erfolgt in Stufen. Das Löschen einer aktiven Ausgabe archiviert sie zunächst, erneutes Löschen aus dem Archiv verschiebt sie in den Papierkorb, und das Löschen aus dem Papierkorb entfernt sie endgültig. Bis zu diesem letzten Schritt können Sie die Ausgabe jederzeit aus der Ansicht Archiv oder Papierkorb wiederherstellen. Hinweis: Wenn Sie Ausgaben in der Liste auswählen und dort die Sammelaktion Löschen verwenden, werden sie sofort endgültig entfernt.
 
 Ausgaben im Papierkorb können nicht bearbeitet werden. Stellen Sie die Ausgabe zuerst wieder her, wenn Sie etwas ändern müssen.
+
+Wenn Sie eine unbezahlte Ausgabe mit Fälligkeitsdatum archivieren, wird die offene Zahlungserinnerung zurückgezogen und nicht versendet. Sie können die Ausgabe später aus dem Archiv wiederherstellen, die Erinnerung kommt jedoch nicht zurück.

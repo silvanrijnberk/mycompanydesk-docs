@@ -17,3 +17,5 @@ Pour supprimer une dépense :
 La suppression se fait par étapes. Supprimer une dépense active l'archive d'abord, la supprimer à nouveau depuis les Archives la déplace vers la Corbeille, et la supprimer depuis la Corbeille est définitif. Jusqu'à cette dernière étape, vous pouvez toujours restaurer la dépense depuis la vue Archives ou Corbeille. Attention : sélectionner des dépenses dans la liste et y utiliser l'action groupée Supprimer les supprime définitivement tout de suite.
 
 Les dépenses dans la Corbeille ne peuvent pas être modifiées. Restaurez la dépense d'abord si vous devez la modifier.
+
+Si vous archivez une dépense non payée avec une date d'échéance, le rappel de paiement ouvert est annulé et ne sera pas envoyé. Vous pouvez toujours restaurer la dépense depuis les Archives, mais le rappel ne revient pas.
