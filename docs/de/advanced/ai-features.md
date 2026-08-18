@@ -66,6 +66,8 @@ KI kann klarere, professionellere Beschreibungen vorschlagen fur:
 
 Die Übernahme schreibt über denselben Pfad wie eine manuelle Bearbeitung. Eine Ausgabe im Papierkorb, eine gesperrte MwSt.-Periode oder eine archivierte/ungültige Kategorie blockiert die Übernahme mit denselben Fehlercodes, die Sie auch bei manueller Bearbeitung sehen. Bei erfolgreicher Übernahme schreibt MyCompanyDesk einen Audit-Log-Eintrag für die geänderten Felder, genau wie bei einer normalen Aktualisierung.
 
+Endpoints, die auf einen bestimmten Vorschlag oder eine bestimmte Ausgabe wirken, validieren ihre Pfadparameter als UUID. Anfragen mit einer ungültigen `entityId` oder Vorschlags-`id` geben `400 VALIDATION_ERROR` zurück, bevor die Service-Ebene erreicht wird, damit ungültige URLs keine unerwarteten 500-Fehler auslösen.
+
 Wenn Sie einen Vorschlag übernehmen, werden die zwischengespeicherten Finanzsummen, die vom geänderten Eintrag abhängen, sofort ungültig gemacht. USt., Berichte und das Dashboard aktualisieren sich direkt und zeigen die neue Kategorie, USt.-Behandlung oder Beschreibung.
 
 ::: info
