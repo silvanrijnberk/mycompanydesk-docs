@@ -1,6 +1,6 @@
 ---
 title: "Meldingsinstellingen"
-last_verified: 2026-08-15
+last_verified: 2026-08-19
 chatbot:
   triggers:
     - "notifications"
@@ -31,12 +31,14 @@ Om je meldingsinstellingen te beheren:
    - **Tips en nieuws van MyCompanyDesk**: hooguit één mailtje per maand.
    Echt belangrijke berichten over je account sturen we altijd; die kun je niet uitzetten.
 3. Op dezelfde pagina zet je ook pushmeldingen aan voor het apparaat dat je gebruikt
-4. Heb je de browservraag weggeklikt? Klik dan op het belletje voor meldingen bovenaan de app en kies **Aanzetten** om pushmeldingen later alsnog in te schakelen
+4. Heb je de browservraag weggeklikt? Klik dan op het belletje voor meldingen bovenaan de app, kies **Meer opties** (drie stippen) en tik op **Aanzetten** om pushmeldingen later alsnog in te schakelen
 5. Wijzigingen worden automatisch opgeslagen
 
 ## De meldingslijst
 
-Meldingen zijn per dag gegroepeerd, zodat de lijst als een tijdlijn leest: Vandaag, Gisteren, de dagnaam binnen de afgelopen week, en de datum voor oudere meldingen.
+Meldingen zijn ingedeeld in drie groepen, zodat de lijst als een tijdlijn leest: **Vandaag**, **Gisteren** en **Eerder**.
+
+Als je de lijst opent, worden alle meldingen daarin als gezien gemarkeerd: het getal op de bel springt terug naar nul, maar elke rij houdt zijn eigen ongelezen stipje tot je hem opent.
 
 Als er op een dag meerdere vergelijkbare informatieve updates binnenkomen, bijvoorbeeld release notes of producttips, vouwen ze in tot de nieuwste. Een knop toont hoeveel er nog meer zijn; klik om de groep uit te vouwen, klik nogmaals om hem in te klappen.
 
@@ -58,13 +60,13 @@ Na de volgende keer ophalen verdwijnt de melding uit de ongelezen lijst, maar de
 
 ## Niet storen
 
-Onderaan het meldingenpaneel kun je **Niet storen** instellen voor pushmeldingen. Je kunt kiezen uit:
+Open de meldingslijst en tik in de kop op **Meer opties** (drie stippen) om **Niet storen** in te stellen voor pushmeldingen. Je kunt kiezen uit:
 
 - **Uit**
 - **1 uur**
 - **Tot morgen** om 09:00
 
-Als Niet storen actief is, worden pushmeldingen tegengehouden, maar de meldingen verschijnen nog wel in de app en je e-mails blijven gewoon doorkomen. Het paneel toont dat Niet storen aan staat en tot hoe laat.
+Als Niet storen actief is, worden pushmeldingen tegengehouden, maar de meldingen verschijnen nog wel in de app en je e-mails blijven gewoon doorkomen. Een chip in de kop van het paneel toont aan dat Niet storen aan staat en tot hoe laat.
 
 ## Het detailpaneel
 
@@ -72,7 +74,7 @@ Als je op een melding klikt, opent er een paneel aan de rechterkant met de volle
 
 Het paneel wacht tot het bijbehorende record is geladen voordat het wisselt. Tot die tijd blijft de vorige melding zichtbaar en staan de knoppen op inactief, zodat er niets onder je cursor verschuift. Zodra het record klaar is, fade het paneel in één keer over naar de nieuwe melding.
 
-De acties voor die melding worden gerangschikt zodat de belangrijkste actie als eerste staat en als hoofdactie wordt gemarkeerd. De rest blijft op dezelfde rij staan. Passen er meer acties dan het paneel ruimte heeft, dan verhuizen de overige acties achter een **Meer**-knop (drie stippen). Tik daarop om de rest te zien zonder de lade te sluiten.
+De acties voor die melding worden gerangschikt zodat de belangrijkste actie als eerste staat en als hoofdactie wordt gemarkeerd. De rest blijft op dezelfde rij staan. Passen er meer acties dan het paneel ruimte heeft, dan verhuizen de overige acties achter de knop **Acties tonen** (drie stippen). Tik daarop om de rest te zien zonder de lade te sluiten.
 
 Welke acties beschikbaar zijn, hangt af van de melding:
 

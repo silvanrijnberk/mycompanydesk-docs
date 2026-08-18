@@ -1,6 +1,6 @@
 ---
 title: "Paramètres de notification"
-last_verified: 2026-08-15
+last_verified: 2026-08-19
 chatbot:
   triggers:
     - "notifications"
@@ -31,12 +31,14 @@ Pour gérer vos paramètres de notification :
    - **Conseils et actualités de MyCompanyDesk** : au maximum un e-mail par mois.
    Les messages vraiment importants concernant votre compte sont toujours envoyés; vous ne pouvez pas les désactiver.
 3. Sur la même page, vous pouvez aussi activer les notifications push pour l'appareil que vous utilisez
-4. Si vous avez fermé la demande du navigateur, cliquez sur la cloche de notifications en haut de l'application et choisissez **Activer** pour activer les notifications push plus tard
+4. Si vous avez fermé la demande du navigateur, cliquez sur la cloche de notifications en haut de l'application, choisissez **Plus d'options** (trois points), puis sélectionnez **Activer** pour activer les notifications push plus tard
 5. Les modifications sont enregistrées automatiquement
 
 ## La liste de notifications
 
-Les notifications sont regroupées par jour pour que la liste se lise comme une chronologie : Aujourd'hui, Hier, le jour de la semaine dans les sept derniers jours, et la date pour les entrées plus anciennes.
+Les notifications sont regroupées en trois volets pour que la liste se lise comme une chronologie : **Aujourd'hui**, **Hier** et **Plus ancien**.
+
+Ouvrir la liste marque tout ce qu'elle contient comme vu : le compteur sur la cloche retombe à zéro, mais chaque ligne garde son propre point non lu jusqu'à ce que vous l'ouvriez.
 
 Si plusieurs mises à jour informatives similaires arrivent le même jour, par exemple des notes de version ou des astuces produit, elles se replient derrière la plus récente. Un bouton indique combien d'autres il y a ; cliquez pour développer le groupe, cliquez à nouveau pour le replier.
 
@@ -58,13 +60,13 @@ Après le prochain rafraîchissement, la notification disparaît de la liste des
 
 ## Ne pas déranger
 
-En bas du panneau de notifications, vous pouvez activer **Ne pas déranger** pour les notifications push. Choisissez entre :
+Ouvrez la liste de notifications et cliquez sur **Plus d'options** (trois points) dans l'en-tête pour activer **Ne pas déranger** pour les notifications push. Choisissez entre :
 
 - **Désactivé**
 - **1 heure**
 - **Jusqu'à demain** à 09:00
 
-Tant que Ne pas déranger est actif, les notifications push sont retenues, mais les notifications continuent d'apparaître dans l'application et les e-mails restent envoyés. Le panneau affiche l'état actif et l'heure d'expiration.
+Tant que Ne pas déranger est actif, les notifications push sont retenues, mais les notifications continuent d'apparaître dans l'application et les e-mails restent envoyés. Une puce dans l'en-tête du panneau affiche l'état actif et l'heure d'expiration.
 
 ## Le panneau de détail
 
@@ -72,7 +74,7 @@ Cliquer sur une notification ouvre un panneau à droite avec le contexte complet
 
 Le panneau attend que l’enregistrement sous-jacent soit chargé avant de changer. Jusqu’alors, la notification précédente reste visible et ses boutons sont inactifs, pour que rien ne bouge sous votre curseur. Une fois l’enregistrement prêt, le panneau effectue un fondu enchaîné vers la nouvelle notification en une seule étape.
 
-Les actions pour cette notification sont classées afin que la plus importante apparaisse en premier et soit mise en évidence comme action principale. Les autres restent sur la même ligne. S'il y a plus d'actions que l'espace ne le permet, les actions supplémentaires sont regroupées derrière un bouton **Plus** (trois points). Appuyez dessus pour voir les actions restantes sans fermer le panneau.
+Les actions pour cette notification sont classées afin que la plus importante apparaisse en premier et soit mise en évidence comme action principale. Les autres restent sur la même ligne. S'il y a plus d'actions que l'espace ne le permet, les actions supplémentaires sont regroupées derrière le bouton **Plus d'actions** (trois points). Appuyez dessus pour voir les actions restantes sans fermer le panneau.
 
 Les actions disponibles dépendent de la notification:
 

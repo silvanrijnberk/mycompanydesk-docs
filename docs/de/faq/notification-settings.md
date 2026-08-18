@@ -1,6 +1,6 @@
 ---
 title: "Benachrichtigungseinstellungen"
-last_verified: 2026-08-15
+last_verified: 2026-08-19
 chatbot:
   triggers:
     - "notifications"
@@ -31,12 +31,14 @@ So verwalten Sie Ihre Benachrichtigungseinstellungen:
    - **Tipps und Neuigkeiten von MyCompanyDesk**: höchstens eine E-Mail pro Monat.
    Wirklich wichtige Nachrichten zu Ihrem Konto senden wir immer; die können Sie nicht ausschalten.
 3. Auf derselben Seite aktivieren Sie auch Push-Benachrichtigungen für das Gerät, das Sie gerade nutzen
-4. Wenn Sie die Browser-Abfrage geschlossen haben, klicken Sie oben in der App auf die Benachrichtigungsglocke und wählen Sie **Aktivieren**, um Push-Benachrichtigungen später nachzuholen
+4. Wenn Sie die Browser-Abfrage geschlossen haben, klicken Sie oben in der App auf die Benachrichtigungsglocke, wählen Sie **Weitere Optionen** (drei Punkte) und klicken Sie dann auf **Aktivieren**, um Push-Benachrichtigungen später nachzuholen
 5. Änderungen werden automatisch gespeichert
 
 ## Die Benachrichtigungsliste
 
-Benachrichtigungen sind nach Tag gruppiert, damit die Liste wie eine Zeitleiste lesbar ist: Heute, Gestern, Wochentag innerhalb der letzten Woche, und das Datum für ältere Einträge.
+Benachrichtigungen sind in drei Gruppen unterteilt, damit die Liste wie eine Zeitleiste lesbar ist: **Heute**, **Gestern** und **Älter**.
+
+Wenn Sie die Liste öffnen, werden alle darin enthaltenen Benachrichtigungen als gesehen markiert: die Zahl auf der Glocke geht auf null zurück, aber jede Zeile behält ihren eigenen ungelesenen Punkt, bis Sie sie öffnen.
 
 Werden an einem Tag mehrere ähnliche informative Updates empfangen, etwa Release Notes oder Produkttipps, klappt sie sich hinter der neuesten Meldung zusammen. Ein Button zeigt, wie viele weitere es gibt; ein Klick expandiert die Gruppe, ein weiterer klappt sie wieder ein.
 
@@ -58,13 +60,13 @@ Nach dem nächsten Abruf verschwindet die Benachrichtigung aus der ungelesenen L
 
 ## Nicht stören
 
-Unten im Benachrichtigungsbereich können Sie **Nicht stören** für Push-Benachrichtigungen einstellen. Die Auswahl ist:
+Öffnen Sie die Benachrichtigungsliste und klicken Sie oben auf **Weitere Optionen** (drei Punkte), um **Nicht stören** für Push-Benachrichtigungen einzustellen. Die Auswahl ist:
 
 - **Aus**
 - **1 Stunde**
 - **Bis morgen** um 09:00 Uhr
 
-Solange Nicht stören aktiv ist, werden Push-Benachrichtigungen zurückgehalten, aber die Benachrichtigungen erscheinen weiterhin in der App und E-Mails werden weiterhin zugestellt. Der Bereich zeigt den aktiven Status und die Uhrzeit an, zu der er abläuft.
+Solange Nicht stören aktiv ist, werden Push-Benachrichtigungen zurückgehalten, aber die Benachrichtigungen erscheinen weiterhin in der App und E-Mails werden weiterhin zugestellt. Ein Chip im Kopfbereich zeigt den aktiven Status und die Uhrzeit an, zu der er abläuft.
 
 ## Das Detailpanel
 
@@ -72,7 +74,7 @@ Ein Klick auf eine Benachrichtigung öffnet ein rechts angeordnetes Panel mit de
 
 Das Panel wartet, bis der zugrunde liegende Datensatz geladen ist, bevor es wechselt. Bis dahin bleibt die vorherige Benachrichtigung sichtbar und ihre Schaltflächen sind inaktiv, damit sich nichts unter dem Cursor verschiebt. Sobald der Datensatz bereit ist, blendet das Panel in einem Schritt zur neuen Benachrichtigung über.
 
-Die Aktionen für dieses Element werden so sortiert, dass die wichtigste Aktion zuerst steht und als Hauptaktion hervorgehoben wird. Die restlichen Aktionen bleiben in derselben Zeile. Wenn mehr Aktionen vorhanden sind als Platz im Panel, werden die weiteren Aktionen hinter einer **Mehr**-Schaltfläche (drei Punkte) verborgen. Tippen Sie darauf, um die restlichen Aktionen zu sehen, ohne den Bereich zu schließen.
+Die Aktionen für dieses Element werden so sortiert, dass die wichtigste Aktion zuerst steht und als Hauptaktion hervorgehoben wird. Die restlichen Aktionen bleiben in derselben Zeile. Wenn mehr Aktionen vorhanden sind als Platz im Panel, werden die weiteren Aktionen hinter der Schaltfläche **Weitere Aktionen** (drei Punkte) verborgen. Tippen Sie darauf, um die restlichen Aktionen zu sehen, ohne den Bereich zu schließen.
 
 Welche Aktionen verfügbar sind, hängt von der Benachrichtigung ab:
 

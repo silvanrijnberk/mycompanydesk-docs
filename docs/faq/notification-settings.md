@@ -1,6 +1,6 @@
 ---
 title: "Notification settings"
-last_verified: 2026-08-15
+last_verified: 2026-08-19
 chatbot:
   triggers:
     - "notifications"
@@ -31,12 +31,14 @@ To manage your notification settings:
    - **Tips and news from MyCompanyDesk**: at most one email per month.
    Critical messages about your account are always sent and cannot be turned off.
 3. On the same page you can also turn on push notifications for the device you are using
-4. If you dismissed the browser prompt, click the notification bell at the top of the app and choose **Turn on** to enable push notifications later
+4. If you dismissed the browser prompt, click the notification bell at the top of the app, choose **More options** (three dots), and select **Turn on** to enable push notifications later
 5. Changes save automatically
 
 ## The notification list
 
-Notifications are grouped by day so the list reads as a timeline: Today, Yesterday, the day name within the last week, and the date for anything older.
+Notifications are grouped into three buckets so the list reads as a timeline: **Today**, **Yesterday**, and **Older**.
+
+Opening the list marks everything inside it as seen, so the bell count goes back to zero. Each row keeps its own unread dot until you open it.
 
 If several similar informational updates arrive on the same day, such as release notes or product tips, they collapse behind the newest one. A button shows how many more there are; click it to expand the group, click again to collapse it.
 
@@ -58,13 +60,13 @@ The notification disappears from the unread list after the next refresh, but the
 
 ## Do not disturb
 
-At the bottom of the notification drawer you can set **Niet storen** (do not disturb) for push notifications. Choose between:
+Open the notification list and click **More options** (three dots) in the header to set **Do not disturb** for push notifications. Choose between:
 
 - **Off**
 - **1 hour**
 - **Until tomorrow** at 09:00
 
-While do-not-disturb is active, push notifications are held back, but the notifications still appear in the app list and emails are not affected. The drawer shows the active state and the time it expires.
+While do-not-disturb is active, push notifications are held back, but the notifications still appear in the app list and emails are not affected. A chip in the panel header shows the active state and the time it expires.
 
 ## The detail panel
 
@@ -72,7 +74,7 @@ Clicking a notification opens a right-hand panel with the full context for that 
 
 The panel waits for the underlying record to load before it switches. Until the record arrives, the previous notification stays visible and its buttons are inactive, so nothing shifts under your cursor. Once the record is ready, the panel cross-fades to the new notification in one smooth step.
 
-The actions for that item are ranked so the most important one comes first and is marked as the primary action. The rest stay on the same row. If more actions fit than the panel has room for, the extra ones move behind a **More** button (three dots). Tap it to see the remaining actions without leaving the drawer.
+The actions for that item are ranked so the most important one comes first and is marked as the primary action. The rest stay on the same row. If more actions fit than the panel has room for, the extra ones move behind a **More actions** button (three dots). Tap it to see the remaining actions without leaving the drawer.
 
 The available actions depend on the notification:
 
