@@ -134,6 +134,8 @@ La base amortissable correspond au coût capitalisé que la comptabilité enregi
 
 La modification de la catégorie, de la date, du montant, du traitement de TVA, du pourcentage d'usage privé, de la durée d'utilité ou de la valeur résiduelle sur une dépense existante déclenche un recalcul. Si une ligne d'amortissement existante tombe déjà dans une période de TVA verrouillée, le recalcul est refusé pour que la déclaration déposée ne soit pas modifiée silencieusement. Le basculement d'une dépense investissement vers une catégorie non investissement supprime les lignes d'amortissement.
 
+Un investissement dont la propre date se trouve encore dans une période ouverte peut tout de même rencontrer un plan verrouillé si ses lignes d'amortissement s'étendent dans une période de TVA verrouillée ultérieure. Dans ce cas, le formulaire affiche le code `DEPRECIATION_SCHEDULE_LOCKED` au lieu de `PERIOD_LOCKED`. Utilisez l'action **Déverrouiller temporairement** pour cette période sur la [page TVA](/fr/features/vat) et réessayez la modification.
+
 ## Lier les dépenses
 
 Liez les dépenses à :
