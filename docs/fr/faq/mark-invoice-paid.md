@@ -10,9 +10,9 @@ chatbot:
 
 Pour marquer une facture comme payée :
 1. Ouvrez la facture depuis la liste
-2. Cliquez sur "Marquer comme payée" dans l'en-tête de la facture ; un seul clic et le statut passe à Payée
+2. Cliquez sur "Marquer comme payée" dans l'en-tête de la facture ; un seul clic et le statut passe à Payée, et une écriture de paiement est créée pour le montant total
 3. Vous voulez enregistrer la date, le mode de paiement ou une référence ? Utilisez plutôt "Enregistrer un paiement" dans la section Paiement
 
 Remarque : une facture en brouillon doit d'abord être finalisée avant de pouvoir être marquée comme payée ou avant qu'un paiement puisse être enregistré. Auparavant, un paiement sur un brouillon créait une facture sans numéro avec le statut Payée, ce qui n'est plus autorisé. Pour enregistrer un paiement sur un brouillon, envoyez ou finalisez d'abord la facture pour qu'elle reçoive un numéro, puis enregistrez le paiement.
 
-Astuce : si le statut ne change pas, actualisez la liste et vérifiez sur la page de détail que le paiement a bien été enregistré.
+Si une facture plus ancienne s'affiche comme Payée, mais que le bloc de paiement indique qu'aucun paiement n'est enregistré, elle a probablement été marquée comme payée via une importation ou un ancien parcours sans qu'une écriture de paiement soit créée. Utilisez "Enregistrer le premier paiement" pour ajouter le paiement et faire disparaître le message.
