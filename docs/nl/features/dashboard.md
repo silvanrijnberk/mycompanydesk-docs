@@ -1,97 +1,98 @@
 ---
 title: Dashboard
-last_verified: 2026-08-15
+last_verified: 2026-08-18
 ---
 
 # Dashboard
 
-Het dashboard op `/dashboard` is je startpagina. Het toont een vaste briefingindeling die je aandachtspunten, belangrijke financiele indicatoren en recente activiteit samenbrengt in een enkele, scrollbare weergave.
+Het dashboard op `/dashboard` is het startscherm van je werkruimte. Je ziet hier hoe je bedrijf ervoor staat: een korte samenvatting, een gerangschikte lijst van aandachtspunten en een aantal datablokken die alleen verschijnen als ze echt iets toe te voegen hebben.
 
 ## Opbouw
 
-Het dashboard is een enkele pagina (`BriefingDashboard`) opgebouwd uit vaste redactionele blokken. Er is geen aanpassing per gebruiker mogelijk. Iedereen in de werkruimte ziet dezelfde structuur, gevoed vanuit dezelfde live data.
+De pagina bestaat uit een vaste set blokken in een enkele scrollbare weergave. De volgorde verandert niet, maar een blok wordt alleen getoond als je bedrijfsdata de drempel haalt. Een eenvoudig bedrijf krijgt dus een kortere pagina, geen lege plekken.
 
-### Welkomstscherm
+Bovenaan staat een korte **lede**, gevolgd door een periodekiezer en de KPI-rij. Daaronder komen de gerangschikte **Vandaag**-signalen, gevolgd door ondersteunende blokken zoals de trendgrafiek, ageing, omzetbronnen, offertepijplijn, uitgavenmix, cash-grafiek, btw-kaart en recente activiteit.
 
-Op een gloednieuw account zonder facturen of klanten toont het dashboard een **welkomstscherm** (`BriefingWelcome`) in plaats van de volledige briefing. Het leidt de gebruiker naar drie eerste acties: een factuur maken, een klant toevoegen of een uitgave registreren. Onder de actiekaarten staat een link naar de [introductie](/nl/getting-started/introduction). Zodra er minstens een factuur of klant bestaat, verdwijnt het welkomstscherm permanent en neemt het volledige dashboard het over.
+## Periodekiezer
 
-### Skeleton en eerste laadbeurt
+Alle getallen in de samenvattingsrij en in de tempo-berekeningen volgen de gekozen periode. Je kiest tussen **maand**, **kwartaal** en **jaar**. De trendgrafiek blijft altijd 12 maanden breed, zodat de vergelijking eerlijk blijft.
 
-Terwijl data laadt, toont het dashboard een **skeleton**-placeholder (`BriefingSkeleton`): een shimmer die de exacte vorm van elke kaart spiegelt. Zodra de kerndata binnen is (metrics gecached en liquiditeit opgelost), lost de skeleton op in een gecoordineerde fade-up-animatie. Elk blok op het hoogste niveau komt met een vertraagd effect omhoog, zodat het hele dashboard in een vloeiende beweging verschijnt. Een veiligheidsnet van 2,5 seconden voorkomt dat de gebruiker vast blijft zitten op de skeleton bij een trage verbinding. De media query `prefers-reduced-motion: reduce` schakelt alle entry-animaties uit.
+## Lede
 
-De pagina bestaat uit:
-- Een **hero**-paneel met begroeting, AI-lede en periodecontext
-- Een **pulse**-rij van vier KPI's: liquiditeit/runway, omzet (maand + jaar), debiteuren + DSO, en btw-saldo + deadline
-- Een **briefingfeed** verdeeld over drie tabs: **Nu** (vraagt om aandacht), **Deze week** (komt eraan), en **Goed nieuws** (bevestigingen)
-- Een **cash-grafiek** over een venster van 12 maanden met werkelijk + prognose
-- Een **weekkaart**, **projectmarges**-lijst, **top klanten**-lijst, **activiteitenfeed** en een **btw-ring**
-- Een **setup-banner** die blijft staan totdat de wizard op `/setup` is voltooid
+De lede is een korte alinea die het huidige bedrijfsbeeld samenvat. Hij wordt gemaakt uit dezelfde live data als de rest van de pagina en is gekoppeld aan de onderliggende signalen, zodat namen, bedragen en routes niet uit elkaar kunnen lopen.
 
-Terwijl data laadt, toont het dashboard een **skeleton**-placeholder (`BriefingSkeleton`): een shimmer die de exacte vorm van elke kaart spiegelt. Zodra de kerndata binnen is (metrics gecached en liquiditeit opgelost), lost de skeleton op in een gecoordineerde fade-up-animatie. Elk blok op het hoogste niveau komt met een vertraagd effect omhoog, zodat het hele dashboard in een vloeiende beweging verschijnt. Een veiligheidsnet van 2,5 seconden voorkomt dat de gebruiker vast blijft zitten op de skeleton bij een trage verbinding. De media query `prefers-reduced-motion: reduce` schakelt alle entry-animaties uit.
+Standaard is de lede deterministisch. Bij Pro-werkruimtes kan een AI-laag hem anders verwoorden, maar het model herformuleert alleen feiten die de deterministische motor al had gevonden. Is het model niet beschikbaar, dan blijft de deterministische lede staan.
 
-## Hero
+## KPI-rij
 
-Bovenaan staat een begroeting op basis van het tijdstip. De AI-lede is het middelpunt van de hero: een korte, persoonlijke, AI-geschreven briefing die het volledige zakelijke plaatje synthetiseert.
+De KPI-rij bevat maximaal vijf tegels. Elke tegel toont een hoofdgetal, een vergelijking met de vorige vergelijkbare periode en een kleine trendlijn. Tegels linken door naar het bijbehorende rapport of de bijbehorende lijst.
 
-De AI-briefing spreekt in de eerste persoon ("ik") en spreekt de gebruiker informeel aan ("je"). Hij opent met de meest urgente actie voor vandaag, dan hooguit een of twee ondersteunende punten waar die waarde toevoegen. Hij sluit af met een concrete vervolgstap in de app (bijv. "stuur Atelier Norden vandaag een herinnering", "rond je BTW af"). Het model put uit een volledige set live signalen: liquiditeit en runway, omzet en winst (maand + YTD), achterstallige debiteuren (aantal, totaal, slechtste klant), rekeningen (binnenkort + achterstallig), aantal concepten, projectmarges, btw-positie (saldo, deadline, checklistvoortgang, reserve), niet-gefactureerde uren, recente betalingen en nieuwe klanten. Alle bedragen zijn afgerond op hele euro's.
-
-Terwijl de AI-briefing nog laadt, toont de hero de gecachte deterministische lede van de vorige dag. De cross-fade naar de AI-versie is een vloeiende opacity-and-slide-overgang (`Transition` met `mode="out-in"`). De AI-briefing verschijnt met een sparkle-icoon en de primaire tekstkleur.
-
-De AI-briefing is beschikbaar in alle vier ondersteunde talen. Hij wordt eenmaal per kalenderdag per bedrijf gegenereerd op Vertex AI `europe-west1` (Gemini 2.5 Flash) en de rest van de dag gecached. Als het model niet beschikbaar is of de werkruimte geen Pro-rechten heeft, wordt alleen de deterministische lede getoond en vindt er geen cross-fade plaats.
-
-De hero toont ook het periodelabel (standaard maand).
-
-## Pulse-rij
-
-De vier cellen in de pulse-rij vervangen de oude geldtegels en KPI-headline. Elke cel toont een gerichte waarde met context:
-
-| Cel | Wat het toont |
+| Tegel | Wat je ziet |
 |---|---|
-| **Liquiditeit** | Huidig saldo (werkelijk bij actieve bankkoppeling, anders geschat), plus runway in weken |
-| **Omzet** | Omzet deze maand met percentage ten opzichte van vorige maand, plus jaar-tot-datum |
-| **Debiteuren** | Totaal openstaand, aantal te laat, en gemiddelde betaaltermijn |
-| **BTW** | Saldo (terug te vorderen of te betalen), deadline en belastingreserve |
+| **Omzet** | Omzet over de gekozen periode, met mutatie ten opzichte van de vorige periode |
+| **Kosten** | Kosten over de gekozen periode, met mutatie ten opzichte van de vorige periode |
+| **Winst** | Nettowinst over de gekozen periode, met mutatie ten opzichte van de vorige periode |
+| **Debiteuren** | Openstaande facturen en DSO (days sales outstanding) |
+| **Liquiditeit / runway** | Huidige kaspositie en geschatte runway |
 
-## Winst en belastingreserve
+Een tegel zonder eerlijke historie toont geen trendlijn in plaats van een verzonnen vlakke lijn. Stijgende debiteuren krijgen bijvoorbeeld een pijl omhoog in waarschuwingskleur, omdat richting en betekenis los van elkaar worden beoordeeld.
 
-Het dashboard houdt twee verschillende uitgaveweergaves expres uit elkaar:
+## Vandaag-signalen
 
-- De **Omzet**- en **uitgavetotalen** in de pulse-rij tonen de kasbeweging voor de periode: bedragen inclusief BTW en inclusief uitgaven die nog in beoordeling zijn.
-- De **Nettowinst**- en **Geschatte belastingreserve**-kaarten gebruiken in plaats daarvan een winst-en-verliesweergave. Hier worden uitgaven zonder BTW geteld, worden investeringen via hun afschrijvingschema verdeeld in plaats van in één keer te worden verwerkt, en worden bank- of inboxconcepten die nog in beoordeling zijn uitgesloten omdat ze nog niet in de boeken staan.
+De Vandaag-motor is de beslissingslaag achter het dashboard. Hij rangschikt wat er vandaag aandacht vraagt in vier ernstniveaus:
 
-Dit betekent dat de winstkaart en de belastingreservekaart afwijken van het eenvoudige 'omzet min kasuitgave'-cijfer. De splitsing zorgt ervoor dat de dashboardwinst overeenkomt met het W&V-rapport, zodat een grote investering in een maand een winstgevende maand niet in een verlies maakt, en de belastingreserve wordt geschat op basis van werkelijke winst in plaats van kasstroom.
+- **critical**: geld loopt weg of een harde deadline komt dichtbij
+- **attention**: een concrete taak, vandaag of deze week
+- **upcoming**: gedateerd, maar nog niet urgent
+- **good**: positief nieuws dat je verdient
 
-## Briefingfeed
+Elk signaal is een kaartje met een bevinding, een regel uitleg waarom het ertoe doet, bewijskerngetallen en een actie. Mogelijke acties zijn:
 
-De feed is de belangrijkste aandachtsplek. Hij stelt echte signalen uit werkruimtedata samen tot een gestructureerde lijst met drie tabweergaven:
+- een link naar de juiste pagina
+- automatische herinneringen aanzetten
+- een herinnering sturen voor een specifieke factuur
+- het signaal sluiten
 
-- **Nu.** Zaken die vandaag actie vereisen: te late facturen, te late rekeningen, open bonnen, conceptfacturen die klaarstaan, en btw-checklistitems.
-- **Deze week.** Zaken die deze week verlopen: te vervallen facturen, te betalen rekeningen en btw-deadlines.
-- **Goed nieuws.** Bevestigingen: recent betaalde facturen, omzetgroei en nieuwe klanten deze maand.
+Signalen kun je snoozen. Het kaartje verdwijnt meteen; als de server-call mislukt komt hij terug en krijg je uitleg waarom. Na elke gelukte actie wordt de lijst opnieuw geladen, zodat de rangschikking klopt.
 
-Elk feeditem toont de entiteit, het bedrag en contextuele details. De feed opent vanuit een tabbalk die bovenaan de lijst vastzit.
+De motor is deterministisch. Er is geen model betrokken bij het maken van de signalen, dus de pagina blijft volledig bruikbaar als de AI-laag offline is.
 
-## Rechterkolom en onderste rij
+## Ondersteunende blokken
 
-| Kaart | Inhoud |
+De blokken onder de KPI-rij verschijnen alleen als ze hun plek verdienen. De catalogus bepaalt zowel of een blok getoond wordt als welke vorm hij krijgt.
+
+| Blok | Inhoud |
 |---|---|
-| **Cash (12 maanden)** | Een lijngrafiek met de werkelijke cashpositie tot vandaag en een prognose tot einde maand. Vereist voldoende historie om de projectie te kunnen maken. |
-| **Weekkaart** | Uren gelogd deze week. |
-| **Projectmarges** | Alle projecten met omzet, gesorteerd op margepercentage, kleurgecodeerd groen/oranje/rood. |
-| **Top klanten** | Top klanten op omzet dit jaar, met percentage van totaal. |
-| **Recente activiteit** | Gebeurtenissen: factuur aangemaakt, factuur betaald, uitgave toegevoegd. |
-| **BTW-ring** | Huidige btw-aangifteperiode, checklistvoortgang en aantal open bonnen. Linkt naar de btw-aangifte. |
+| **Trend** | 12-maands grafiek met omzet en kosten naast elkaar, plus de winstlijn |
+| **Aandacht** | Belangrijkste open punten die actie vragen, uit de signaalmotor |
+| **Ageing** | Debiteuren opgedeeld naar leeftijdsbakken |
+| **Omzetbronnen** | Grootste klanten naar omzet dit jaar |
+| **Offertes** | Open offertepijplijn en verlopende offertes |
+| **Uitgavenmix** | Kostenverdeling per categorie, weergegeven als staafjes of treemap afhankelijk van de ruimte |
+| **Cash-grafiek** | Kaspositie over 12 maanden met prognose |
+| **Activiteit** | Recente factuur-, betalings- en uitgave-gebeurtenissen |
+| **BTW-kaart** | Huidige btw-periode, checklistvoortgang en volgende deadline |
+
+Op telefoons vallen visuele vormen zoals treemaps of funnels terug op eenvoudiger vormen, zodat de getallen leesbaar blijven.
+
+## Welkomstscherm
+
+Op een gloednieuw account zonder facturen of klanten toont het dashboard een welkomstscherm in plaats van het volledige overzicht. Het wijst naar drie eerste acties: maak een factuur, voeg een klant toe of registreer een uitgave. Zodra er minstens een factuur of klant bestaat, verdwijnt het welkomstscherm en neemt het volledige dashboard het over.
+
+## Laden en foutmeldingen
+
+Terwijl data laadt, toont een skeleton-placeholder de vorm van elk blok. Een verborgen timeout van 2,5 seconden voorkomt dat de skeleton een gebruiker met een trage verbinding vastzet. De media query `prefers-reduced-motion: reduce` schakelt alle animaties uit.
+
+Als het ophalen van Vandaag mislukt, toont de pagina een duidelijke fout met een opnieuw-knop in plaats van een alles-goed gebouwd uit lege data. Lukt een periode-switch niet terwijl er nog oudere getallen op het scherm staan, dan verschijnt een verouderd-melding met inline opnieuw-knop.
 
 ## Setup-banner
 
-Zolang de setup-wizard op `/setup` nog velden te vullen heeft, staat er een `FinishSetupBanner` bovenaan het dashboard met een teller van openstaande velden en een **Verder**-knop. De banner heeft een sluitknop (X-icoon) die de banner per browser verbergt via localStorage, zodat deze over herlaadbeurten verborgen blijft totdat de wizard is voltooid. De wizard is niet-blokkerend: nieuwe aanmeldingen komen direct op `/dashboard` en worden niet geforceerd doorgestuurd.
+Zolang de setup-wizard op `/setup` nog velden open heeft staan, toont een banner boven het dashboard hoeveel velden er nog wachten en een knop **Setup voltooien**. Je kunt de banner per browser wegklikken via localStorage; hij blijft verborgen totdat de wizard is afgerond. De wizard is niet-blokkerend: nieuwe gebruikers landen direct op `/dashboard`.
 
+## Zie ook
 
-## Goed nieuws
-
-Het dashboardtabblad **Goed nieuws** belicht positieve signalen die vandaag actie waard zijn:
-
-- **Openstaande aanvragen**: hoeveel offerteaanvragen via de website op antwoord wachten, plus de oudste wachttijd.
-- **Verlopende offertes**: hoeveel offertes deze week verlopen, en hoeveel al verlopen zijn zonder antwoord.
-
-Offerteaanvragen en verlopende offertes staan ook op de bijbehorende detailpagina's. Weggebleven klanten — klanten die eerder kochten maar dit jaar nog geen factuur hebben gekregen — vind je in **Rapporten > Klanten > Weggebleven**. Zie [Rapporten](/nl/features/reports) en [Klanten](/nl/features/customers).
+- [Dashboard gebruiken](/nl/faq/use-dashboard)
+- [Rapportages](/nl/features/reports)
+- [Klanten](/nl/features/customers)
+- [Facturen](/nl/features/invoices)
+- [BTW](/nl/features/vat)

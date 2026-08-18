@@ -1,6 +1,6 @@
 ---
 title: "Use the dashboard"
-last_verified: 2026-08-15
+last_verified: 2026-08-18
 chatbot:
   triggers:
     - "use dashboard"
@@ -19,11 +19,14 @@ chatbot:
 ---
 
 Your dashboard gives you a quick overview of:
-• Items that need attention
-• Recent records and status changes
-• Overdue or pending items
-• Key activity metrics
 
-Profit and tax-reserve cards use a profit-and-loss view: expenses are without VAT, investments are spread through their depreciation schedule, and bank/inbox drafts still pending review are excluded. The revenue and expense totals in the pulse row show the cash movement, including VAT and pending drafts. Use the P&L report if you want the same profit figure in a detailed report.
+- A short lede summarising the current business picture
+- KPI tiles for revenue, costs, profit, receivables, and liquidity
+- Ranked Vandaag signals that require attention or confirm good news
+- Supporting blocks such as trend, ageing, revenue sources, quotes, expenses, cash, and VAT
 
-Tip: Open each card to inspect the underlying list and resolve issues directly from there.
+Switch the period selector to month, quarter, or year to reframe every figure in the KPI row. The trend chart always stays at 12 months.
+
+Each KPI tile and most signal cards link to the underlying report or list. Click through to resolve issues directly from there.
+
+The profit and tax cards on the dashboard use a profit-and-loss view: expenses are without VAT, investments are spread through their depreciation schedule, and drafts still pending review are excluded. The revenue and cost totals in the KPI row show the cash movement, including VAT and pending drafts. Use the P&L report if you want the same profit figure in a detailed report.

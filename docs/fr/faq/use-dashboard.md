@@ -1,6 +1,6 @@
 ---
 title: "Use the dashboard"
-last_verified: 2026-08-15
+last_verified: 2026-08-18
 chatbot:
   triggers:
     - "use dashboard"
@@ -18,12 +18,15 @@ chatbot:
     - "How do I create an invoice?"
 ---
 
-Pour utiliser le tableau de bord :
-1. Consultez les alertes, cartes et listes en haut de la page
-2. Cliquez sur une carte ou un element de liste pour ouvrir les enregistrements sources
-3. Verifiez si des filtres actifs ou la periode selectionnee influencent le chiffre affiche
-4. Utilisez les actions associees pour aller vers Factures, Depenses ou Rapports
+Votre tableau de bord vous donne un aperçu rapide de :
 
-Cette reponse se limite a ce que vous voyez sur le tableau de bord et aux emplacements vers lesquels vous pouvez naviguer.
+- un bref résumé introductif qui synthétise l'image actuelle de l'entreprise
+- des tuiles d'indicateurs pour le chiffre d'affaires, les coûts, le bénéfice, les créances et la liquidité
+- des signaux Vandaag priorisés qui demandent attention ou confirment une bonne nouvelle
+- des blocs d'appoint comme la tendance, l'ageing, les sources de revenus, les devis, les dépenses, la trésorerie et la TVA
 
-Les cartes de benefice et de reserve fiscale utilisent une vue de compte de resultat : les depenses sont hors TVA, les investissements sont repartis sur leur plan d'amortissement, et les brouillons bancaires ou de la boite de reception encore en attente de revision sont exclus. Les totaux de revenus et de depenses dans la ligne de pulse montrent le mouvement de tresorerie, TTC et avec les brouillons non encore confirmes. Utilisez le rapport de compte de resultat pour voir le meme chiffre de benefice dans un rapport detaille.
+Passez d'une période à l'autre via le sélecteur pour reframer tous les chiffres de la ligne d'indicateurs. Le graphique de tendance reste toujours sur 12 mois.
+
+Chaque tuile d'indicateur et la plupart des cartes de signaux renvoient vers le rapport ou la liste correspondante. Cliquez pour régler les choses directement à la source.
+
+Les cartes de bénéfice et de réserve fiscale du tableau de bord utilisent une vue de compte de résultat : les dépenses sont hors TVA, les investissements sont répartis sur leur plan d'amortissement, et les brouillons encore en attente de révision sont exclus. Les totaux de revenus et de coûts dans la ligne d'indicateurs montrent le mouvement de trésorerie, TTC et avec les brouillons non encore confirmés. Utilisez le rapport de compte de résultat pour voir le même chiffre de bénéfice dans un rapport détaillé.

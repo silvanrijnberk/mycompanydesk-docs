@@ -1,97 +1,98 @@
 ---
 title: Dashboard
-last_verified: 2026-08-15
+last_verified: 2026-08-18
 ---
 
 # Dashboard
 
-Das Dashboard unter `/dashboard` ist Ihre Startseite. Es zeigt ein festes Briefing-Layout, das Ihre Aufmerksamkeit erfordernde Punkte, wichtige Finanzkennzahlen und aktuelle Aktivitaeten in einer einzigen scrollbaren Ansicht zusammenfuehrt.
+Das Dashboard unter `/dashboard` ist die Startseite Ihres Arbeitsbereichs. Es zeigt, wie es Ihrem Unternehmen gerade geht: eine kurze Übersichtszeile, eine priorisierte Liste von Aufmerksamkeitspunkten und mehrere Datenblöcke, die nur erscheinen, wenn sie wirklich etwas Beitragwertes zu sagen haben.
 
 ## Aufbau
 
-Das Dashboard ist eine einzelne Seite (`BriefingDashboard`), die aus festen redaktionellen Bloecken aufgebaut ist. Es gibt keine individuelle Anpassung pro Benutzer. Jeder im Arbeitsbereich sieht dieselbe Struktur, gespeist aus denselben Live-Daten.
+Die Seite besteht aus einer festen Menge von Blöcken in einer einzigen scrollbaren Ansicht. Die Reihenfolge ändert sich nie, aber ein Block wird nur gerendert, wenn Ihre Unternehmensdaten die dafür nötige Schwelle erreichen. Ein einfacheres Unternehmen sieht also eine kürzere Seite, keine leeren Platzhalter.
 
-### Willkommensbildschirm
+Ganz oben stehen eine kurze **Lede**, gefolgt von einer Periodenauswahl und der KPI-Zeile. Darunter folgen die priorisierten **Vandaag**-Signale, dann unterstützende Blöcke wie der Trendchart, das Ageing, die Umsatzquellen, die Angebotspipeline, die Ausgabenmix, der Cash-Chart, die MwSt.-Karte und die jüngste Aktivität.
 
-Bei einem brandneuen Konto ohne Rechnungen oder Kunden zeigt das Dashboard einen **Willkommensbildschirm** (`BriefingWelcome`) anstelle des vollstaendigen Briefings. Er fuehrt den Benutzer zu drei ersten Aktionen: eine Rechnung erstellen, einen Kunden hinzufuegen oder eine Ausgabe erfassen. Unter den Aktionskarten befindet sich ein Link zur [Einfuehrung](/de/getting-started/introduction). Sobald mindestens eine Rechnung oder ein Kunde existiert, verschwindet der Willkommensbildschirm dauerhaft und das vollstaendige Dashboard uebernimmt.
+## Periodenauswahl
 
-### Skeleton und erster Ladevorgang
+Alle Zahlen der Übersichtszeile und der Tempoberechnungen folgen der gewählten Periode. Sie wählen zwischen **Monat**, **Quartal** und **Jahr**. Der Trendchart bleibt immer bei 12 Monaten, damit der Vergleich fair bleibt.
 
-Waehrend Daten geladen werden, zeigt das Dashboard einen **Skeleton**-Platzhalter (`BriefingSkeleton`): einen Shimmer, der die exakte Form jeder Karte spiegelt. Sobald die Kerndaten verfuegbar sind (Metriken gecached und Liquiditaet aufgeloest), loest sich der Skeleton in einer koordinierten Fade-Up-Animation auf. Jeder Block auf oberster Ebene erscheint mit einer gestaffelten Verzoegerung, sodass das gesamte Dashboard in einer fliessenden Bewegung sichtbar wird. Ein Sicherheitsnetz von 2,5 Sekunden verhindert, dass der Benutzer bei langsamen Verbindungen am Skeleton haengen bleibt. Die Media Query `prefers-reduced-motion: reduce` deaktiviert alle Eintrittsanimationen.
+## Lede
 
-Die Seite besteht aus:
-- Einem **Hero**-Panel mit Begruessung, AI-Lede und Periodenkontext
-- Einer **Pulse**-Zeile mit vier KPIs: Liquiditaet/Runway, Umsatz (Monat + Jahr), Forderungen + DSO und USt.-Saldo + Frist
-- Einem **Briefing-Feed**, aufgeteilt in drei Tabs: **Jetzt** (erfordert Aufmerksamkeit), **Diese Woche** (steht bevor) und **Gute Nachrichten** (Bestaetigungen)
-- Einem **Cash-Diagramm** ueber ein 12-Monats-Fenster mit Ist + Prognose
-- Einer **Wochenkarte**, **Projektmargen**-Liste, **Top-Kunden**-Liste, **Aktivitaets-Feed** und einem **USt.-Ring**
-- Einem **Setup-Banner**, der stehen bleibt, bis der Assistent unter `/setup` abgeschlossen ist
+Die Lede ist ein kurzer Absatz, der das aktuelle Unternehmensbild zusammenfasst. Sie wird aus denselben Live-Daten erstellt wie der Rest der Seite und an die zugrunde liegenden Signale gekoppelt, damit Namen, Beträge und Routen nicht auseinanderlaufen.
 
-Waehrend Daten geladen werden, zeigt das Dashboard einen **Skeleton**-Platzhalter (`BriefingSkeleton`): einen Shimmer, der die exakte Form jeder Karte spiegelt. Sobald die Kerndaten verfuegbar sind (Metriken gecached und Liquiditaet aufgeloest), loest sich der Skeleton in einer koordinierten Fade-Up-Animation auf. Jeder Block auf oberster Ebene erscheint mit einer gestaffelten Verzoegerung, sodass das gesamte Dashboard in einer fliessenden Bewegung sichtbar wird. Ein Sicherheitsnetz von 2,5 Sekunden verhindert, dass der Benutzer bei langsamen Verbindungen am Skeleton haengen bleibt. Die Media Query `prefers-reduced-motion: reduce` deaktiviert alle Eintrittsanimationen.
+Standardmäßig ist die Lede deterministisch. Bei Pro-Arbeitsbereichen kann eine KI-Ebene sie neu formulieren, aber das Modell paraphrasiert nur Fakten, die die deterministische Engine bereits ermittelt hat. Ist das Modell nicht verfügbar, bleibt die deterministische Lede stehen.
 
-## Hero
+## KPI-Zeile
 
-Oben wird eine tageszeitabhaengige Begruessung angezeigt. Der AI-Lede ist das Herzstueck des Hero-Bereichs: ein kurzes, persoenliches, KI-geschriebenes Briefing, das das gesamte Geschaeftsbild synthetisiert.
+Die KPI-Zeile enthält bis zu fünf Kacheln. Jede Kachel zeigt eine Hauptzahl, einen Vergleich mit der vorherigen vergleichbaren Periode und eine kleine Sparkline als Trend. Kacheln verlinken zum zugehörigen Bericht oder zur passenden Liste.
 
-Das AI-Briefing spricht in der ersten Person ("ich") und adressiert den Nutzer formell ("Sie"). Es oeffnet mit der dringendsten Handlung fuer heute, dann hoechstens ein oder zwei unterstuetzende Punkte, wo sie Mehrwert bieten. Es schliesst mit einem konkreten naechsten Schritt in der App (z.B. "senden Sie Atelier Norden heute eine Zahlungserinnerung", "schliessen Sie Ihre USt. ab"). Das Modell greift auf einen vollstaendigen Satz von Live-Signalen zurueck: Liquiditaet und Runway, Umsatz und Gewinn (MTD + YTD), ueberfaellige Forderungen (Anzahl, Summe, groesster Kunde), Ausgaben (bald faellig + ueberfaellig), Entwurfsanzahl, Projektmargen, USt.-Position (Saldo, Frist, Checklistenfortschritt, Reserve), nicht abgerechnete Stunden, aktuelle Zahlungen und neue Kunden. Alle Betraege sind auf ganze Euro gerundet.
-
-Solange das AI-Briefing noch laedt, zeigt der Hero den gecachten deterministischen Lede des Vortages. Der Cross-Fade zur AI-Version ist ein sanfter Opacity-and-Slide-Uebergang (`Transition` mit `mode="out-in"`). Das AI-Briefing erscheint mit einem Sparkle-Symbol und der primaeren Textfarbe.
-
-Das AI-Briefing ist in allen vier unterstuetzten Sprachen verfuegbar. Es wird einmal pro Kalendertag pro Unternehmen auf Vertex AI `europe-west1` (Gemini 2.5 Flash) generiert und fuer den Rest des Tages gecached. Wenn das Modell nicht verfuegbar ist oder der Workspace keine Pro-Berechtigung hat, wird nur der deterministische Lede angezeigt und es findet kein Cross-Fade statt.
-
-Der Hero zeigt auch die Periodenbezeichnung (Standard ist Monat).
-
-## Pulse-Zeile
-
-Die vier Zellen der Pulse-Zeile ersetzen die alten Geldkacheln und den KPI-Header. Jede Zelle zeigt eine fokussierte Kennzahl mit Kontext:
-
-| Zelle | Was sie zeigt |
+| Kachel | Inhalt |
 |---|---|
-| **Liquiditaet** | Aktueller Saldo (tatsaechlich bei aktiver Bankverbindung, sonst geschaetzt), plus Runway in Wochen |
-| **Umsatz** | Umsatz dieses Monats mit Prozent gegenueber Vormonat, plus Jahr-bis-Datum |
-| **Forderungen** | Gesamtsumme ausstehend, Anzahl ueberfaellig, und durchschnittliche Zahlungsfrist |
-| **USt.** | Saldo (Rueckerstattung oder Zahlung), Frist und Steuerreserve |
+| **Umsatz** | Umsatz in der gewählten Periode, mit Veränderung zur Vorperiode |
+| **Kosten** | Kosten in der gewählten Periode, mit Veränderung zur Vorperiode |
+| **Gewinn** | Nettogewinn in der gewählten Periode, mit Veränderung zur Vorperiode |
+| **Forderungen** | Offene Rechnungen und Days Sales Outstanding |
+| **Liquidität / Runway** | Aktuelle Kassenposition und geschätzte Runway |
 
-## Gewinn und Steuerrücklage
+Eine Kachel ohne ehrliche Historie zeigt keine Sparkline, statt eine erfundene flache Linie zu zeichnen. Steigende Forderungen erhalten beispielsweise einen nach oben zeigenden Pfeil in Warnfarbe, weil Richtung und Bedeutung getrennt bewertet werden.
 
-Das Dashboard hält zwei verschiedene Ausgabensichten bewusst auseinander:
+## Vandaag-Signale
 
-- Die **Umsatz**- und **Ausgabetotalen** in der Pulse-Zeile zeigen die Zahlungsmittelbewegung für den Zeitraum: Beträge inklusive MwSt. und einschließlich Ausgaben, die noch in Prüfung sind.
-- Die Karten **Nettogewinn** und **Geschätzte Steuerrücklage** verwenden stattdessen eine Gewinn-und-Verlust-Sicht. Hier werden Ausgaben ohne MwSt. gezählt, Investitionen über ihren Abschreibungsplan verteilt statt auf einen Schlag erfasst, und Bank- oder Posteingangs-Entwürfe, die noch in Prüfung sind, ausgeschlossen, weil sie noch nicht in den Büchern stehen.
+Die Vandaag-Engine ist die Entscheidungsschicht hinter dem Dashboard. Sie ordnet das, was heute Aufmerksamkeit braucht, nach vier Schweregraden:
 
-Das bedeutet, dass Gewinnkarte und Steuerrücklage-Karte von der einfachen "Umsatz minus Zahlungsausgang"-Zahl abweichen. Die Trennung stellt sicher, dass der Dashboard-Gewinn mit dem GuV-Bericht übereinstimmt, sodass eine große Investition in einem Monat einen gewinnbringenden Monat nicht in einen Verlust verwandelt, und die Steuerrücklage über den realen Gewinn statt über den Zahlungsmittelverkehr geschätzt wird.
+- **critical**: Geld läuft ab oder eine harte Deadline rückt näher
+- **attention**: eine konkrete Aufgabe, heute oder diese Woche
+- **upcoming**: datiert, aber noch nicht dringend
+- **good**: verdiente positive Nachrichten
 
-## Briefing-Feed
+Jedes Signal ist eine Karte mit einem Befund, einer Zeile Erklärung, warum es wichtig ist, Belegkennzahlen und einer Aktion. Mögliche Aktionen sind:
 
-Der Feed ist die Hauptflaeche fuer Aufmerksamkeit erfordernde Elemente. Er setzt echte Signale aus Arbeitsbereichsdaten zu einer strukturierten Liste mit drei Tab-Ansichten zusammen:
+- ein Link zur passenden Seite
+- automatische Mahnungen aktivieren
+- eine Mahnung zu einer bestimmten Rechnung senden
+- das Signal schließen
 
-- **Jetzt.** Elemente, die heute Handlung erfordern: ueberfaellige Rechnungen, ueberfaellige Ausgaben, offene Belege, versandbereite Entwurfsrechnungen und USt.-Checklisteneintraege.
-- **Diese Woche.** Elemente, die diese Woche faellig sind: faellige Rechnungen, zu zahlende Ausgaben und USt.-Fristen.
-- **Gute Nachrichten.** Bestaetigungen: kuerzlich bezahlte Rechnungen, Umsatzwachstum und neue Kunden diesen Monat.
+Signale können snoozed werden. Die Karte verschwindet sofort; schlägt der Server-Call fehl, kommt sie zurück und Sie erhalten eine Erklärung. Nach jeder erfolgreichen Aktion wird die Liste neu geladen, damit die Reihenfolge stimmt.
 
-Jedes Feed-Element zeigt die Entitaet, den Betrag und kontextuelle Details. Der Feed oeffnet sich ueber eine Tableiste, die oben an der Liste verankert ist.
+Die Engine ist deterministisch. Kein Modell ist an der Erzeugung der Signale beteiligt, sodass die Seite auch bei ausgefallener KI-Ebene voll nutzbar bleibt.
 
-## Rechte Spalte und untere Zeile
+## Unterstützende Blöcke
 
-| Karte | Inhalt |
+Die Blöcke unter der KPI-Zeile erscheinen nur, wenn sie ihre Stelle verdient haben. Der Katalog entscheidet sowohl, ob ein Block angezeigt wird, als auch welche Form er annimmt.
+
+| Block | Inhalt |
 |---|---|
-| **Cash (12 Monate)** | Ein Liniendiagramm mit der tatsaechlichen Cash-Position bis heute und einer Prognose bis zum Monatsende. Erfordert ausreichend Historie, um die Projektion zu erstellen. |
-| **Wochenkarte** | Diese Woche erfasste Stunden. |
-| **Projektmargen** | Alle Projekte mit Umsatz, sortiert nach Margenprozentsatz, farbcodiert gruen/orange/rot. |
-| **Top-Kunden** | Top-Kunden nach Umsatz dieses Jahr, mit Prozentsatz vom Gesamtumsatz. |
-| **Letzte Aktivitaeten** | Ereignisse: Rechnung erstellt, Rechnung bezahlt, Ausgabe hinzugefuegt. |
-| **USt.-Ring** | Aktueller USt.-Voranmeldungszeitraum, Checklistenfortschritt und Anzahl offener Belege. Verlinkt zur USt.-Voranmeldung. |
+| **Trend** | 12-Monats-Chart mit Umsatz und Kosten nebeneinander plus Gewinnlinie |
+| **Aufmerksamkeit** | Wichtigste offene Punkte, die Aktion erfordern, aus der Signalmotor |
+| **Ageing** | Forderungen nach Altersgruppen aufgeteilt |
+| **Umsatzquellen** | Größte Kunden nach Umsatz in diesem Jahr |
+| **Angebote** | Offene Angebotspipeline und ablaufende Angebote |
+| **Ausgabenmix** | Kostenaufschlüsselung nach Kategorie, als Balken oder Treemap je nach Platz |
+| **Cash-Chart** | Kassenposition über 12 Monate mit Prognose |
+| **Aktivität** | Kürzlich erstellte oder bezahlte Rechnungen und hinzugefügte Ausgaben |
+| **MwSt.-Karte** | Aktueller MwSt.-Zeitraum, Checklist-Fortschritt und nächste Deadline |
+
+Auf Telefonen fallen visuelle Formen wie Treemaps oder Funnels auf einfachere Darstellungen zurück, damit die Zahlen lesbar bleiben.
+
+## Willkommensbildschirm
+
+Bei einem brandneuen Account ohne Rechnungen oder Kunden zeigt das Dashboard einen Willkommensbildschirm statt der vollständigen Übersicht. Er weist auf drei erste Schritte hin: Rechnung erstellen, Kunde hinzufügen oder Ausgabe erfassen. Sobald mindestens eine Rechnung oder ein Kunde existiert, verschwindet der Willkommensbildschirm und das vollständige Dashboard nimmt seinen Platz ein.
+
+## Lade- und Fehlerzustände
+
+Während Daten geladen werden, zeigt ein Skeleton-Placeholder die Form jedes Blocks. Ein verborgener Timeout von 2,5 Sekunden verhindert, dass der Skeleton einen Benutzer bei langsamer Verbindung festschreibt. Die Media Query `prefers-reduced-motion: reduce` schaltet alle Eintrittsanimationen aus.
+
+Schlägt der Abruf von Vandaag fehl, zeigt die Seite einen klaren Fehler mit einem Wiederholen-Button, statt ein All-Clear aus leeren Daten zu konstruieren. Misslingt ein Periodenwechsel, während ältere Zahlen noch auf dem Bildschirm stehen, erscheint ein Hinweis auf veraltete Daten mit inline Wiederholen-Button.
 
 ## Setup-Banner
 
-Solange der Einrichtungsassistent unter `/setup` noch Felder zu fuellen hat, steht ein `FinishSetupBanner` oben auf dem Dashboard mit einer Zaehlung der ausstehenden Felder und einem **Weiter**-Button. Der Banner hat eine Schliessen-Schaltflaeche (X-Symbol), die den Banner pro Browser ueber localStorage ausblendet, sodass er ueber Seitenneuladungen hinweg ausgeblendet bleibt, bis der Assistent abgeschlossen ist. Der Assistent ist nicht blockierend: neue Anmeldungen landen direkt auf `/dashboard` und werden nicht zwangsumgeleitet.
+Solange der Setup-Assistent unter `/setup` noch auszufüllende Felder hat, zeigt ein Banner über dem Dashboard die Anzahl ausstehender Felder und einen Button **Setup fortsetzen**. Das Banner lässt sich pro Browser über localStorage schließen und bleibt verborgen, bis der Assistent abgeschlossen ist. Der Assistent ist nicht blockierend: neue Registrierungen landen direkt auf `/dashboard`.
 
+## Siehe auch
 
-## Gute Nachrichten
-
-Im Dashboard-Tab **Gute Nachrichten** werden positive Signale hervorgehoben, auf die es sich heute zu handeln lohnt:
-
-- **Offene Anfragen**: wie viele Angebotsanfragen über die Website auf Antwort warten, plus die längste Wartezeit.
-- **Ablaufende Angebote**: wie viele Angebote diese Woche ablaufen, und wie viele bereits ohne Antwort abgelaufen sind.
-
-Angebotsanfragen und ablaufende Angebote finden sich auch auf den jeweiligen Detailseiten. Abgewanderte Kunden — Kunden, die früher gekauft haben, aber dieses Jahr noch keine Rechnung erhalten haben — stehen in **Berichte > Kunden > Abgewanderte**. Siehe [Berichte](/de/features/reports) und [Kunden](/de/features/customers).
+- [Dashboard nutzen](/de/faq/use-dashboard)
+- [Berichte](/de/features/reports)
+- [Kunden](/de/features/customers)
+- [Rechnungen](/de/features/invoices)
+- [MwSt.](/de/features/vat)
