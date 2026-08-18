@@ -8,14 +8,7 @@ MyCompanyDesk bevat AI-gestuurde functies om je sneller en slimmer te laten werk
 
 ## Contextuele gids
 
-De in-app-assistent helpt je bij het navigeren door MyCompanyDesk:
-
-- Klik op het **hulp-icoon** op elke pagina voor contextgerichte hulp
-- Stel vragen over functies, workflows of instellingen
-- Krijg stapsgewijze begeleiding bij veelvoorkomende taken
-- Beschikbaar in alle vier ondersteunde talen
-
-De gids begrijpt op welke pagina je je bevindt en geeft relevante suggesties.
+De assistent-icoon in de topbar opent een chatpaneel dat weet op welke pagina je bent, welke records je bekijkt en hoe je werkruimtegegevens eruitzien. Het is gebouwd als een tool-using agent: in plaats van getallen te gokken, vraagt ze ernaar. Op desktop opent het paneel als een drawer die rechts tegen de rand van het scherm zit; op mobiel opent het als een bottom sheet via de sparkles-knop in de mobiele header.
 
 ### Chatlimieten
 
@@ -33,7 +26,7 @@ AI-limieten zijn maandelijks, niet dagelijks. Ze worden elke eerste van de maand
 
 De contextuele gids valt onder de EU AI Act (Verordening 2024/1689) als een AI-systeem met beperkt risico (artikel 50). Dit betekent dat we duidelijk moeten maken dat je met AI praat. In de gids zijn daar twee dingen voor:
 
-- **AI-badge.** Een kleine "AI"-pill naast de assistentnaam. Altijd zichtbaar zolang de gids open is. Een tooltip op de badge noemt de onderliggende provider (Google Gemini).
+- **AI-badge.** Een kleine "AI"-pill naast de assistentnaam in de header van de drawer. Altijd zichtbaar zolang de gids open is. Een tooltip op de badge noemt de onderliggende provider (Google Gemini).
 - **Openbaarmakingstekst.** Een korte regel onder de welkomstvraag in een leeg gesprek: "Je praat met een AI-assistent. Antwoorden kunnen fouten bevatten; controleer financiële of fiscale conclusies altijd zelf."
 
 De verplichting geldt vanaf augustus 2026; de openbaarmakingen zijn voor de deadline ingebouwd.
