@@ -159,6 +159,16 @@ Wanneer een contract is ondertekend, toont de contractdetailpagina een onderteke
 
 De voorbeeldpagina bevat een werkbalk met print- en downloadacties, en toont het ondertekende contract direct in de browser. Zowel de ondertekende PDF als de beoordelings-PDF bevatten de volledige contracttekst, zodat elke gedownloade kopie op zichzelf staat.
 
+### Huisstijl van de afzender op de ondertekenpagina
+
+Wanneer een ontvanger een contract opent om te ondertekenen, weerspiegelt de ondertekenpagina de huisstijl van de afzender:
+
+- Het logo van de afzender staat bovenaan de pagina
+- De pagina gebruikt de accentkleur van het merk van de afzender
+- Tekst en knoppen passen zich automatisch aan zodat ze goed leesbaar blijven tegen die kleur
+
+Dit geeft ondertekenaars een ervaring die lijkt alsof deze afkomstig is van het bedrijf dat hen heeft uitgenodigd, en niet van een generieke derde partij.
+
 ### Ondertekenen op de contractenlijst
 
 De contractenlijst heeft een **Tekenstatus**-kolom die de ondertekenstatus toont voor elk contract met e-handtekening. De statussen verschijnen als gekleurde badges: concept (neutraal), verstuurd (waarschuwing), deels getekend (info) en actief (succes).
