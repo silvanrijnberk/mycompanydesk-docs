@@ -5,57 +5,44 @@ last_verified: 2026-08-18
 
 # Dashboard
 
-The dashboard at `/dashboard` is the home screen of your workspace. It shows how the business is doing right now: a short summary row, a ranked list of signals that need attention, and a set of data-driven blocks that appear only when they have something useful to say.
+The dashboard at `/dashboard` is the home screen of your workspace. It answers one question: how is the business doing right now? The page shows a period switcher, a KPI summary row, a short attention widget, and a set of data-driven blocks that appear only when your workspace data says they are useful.
 
 ## Layout
 
-The page is a single scrollable view built from a fixed set of blocks. The order never changes, but a block is only rendered if your workspace data satisfies the test for it. A simple business therefore sees a shorter page, not empty placeholders.
+The page is a single scrollable view built from a fixed catalogue of blocks. The order never changes, but a block only renders if your workspace data satisfies the test for it. A simple business therefore sees a shorter page, not empty placeholders.
 
-At the top sits a short **lede** followed by a period switcher and the KPI row. Below that come the ranked **Vandaag** signals, then supporting blocks such as the trend chart, ageing, revenue sources, quote pipeline, expense mix, cash chart, VAT card, and recent activity.
+At the top sits a period switcher and the KPI row. Below that comes the attention widget, then supporting blocks such as the trend chart, ageing, revenue sources, quote pipeline, expense mix, cash chart, VAT card, and recent activity.
 
 ## Period switcher
 
-Every figure in the summary row and the pace calculations follows the selected period. Choose between **month**, **quarter**, and **year**. The trend chart always stays at 12 months so the comparison stays honest.
-
-## Lede
-
-The lede is a one-paragraph summary of the current business picture. It is generated from the same live data as the rest of the page and is keyed to the underlying signals, so names, amounts, and routes cannot drift.
-
-By default the lede is deterministic. On Pro workspaces it can be rephrased by an AI layer, but the model only reformulates the facts the deterministic engine already produced. If the model is unavailable, the deterministic lede remains.
+Every figure in the KPI row and the pace calculations follows the selected period. Choose between **month**, **quarter**, and **year**. The trend chart always stays at 12 months so the comparison stays honest.
 
 ## KPI row
 
-The KPI row contains up to five tiles. Each tile shows one headline figure, a comparison with the previous comparable period, and a small sparkline for trend. Tiles link to the relevant report or list.
+The KPI row always shows five tiles. Each tile shows one headline figure, a comparison with the previous comparable period where an honest comparison exists, and a small sparkline for trend. Tiles link to the relevant report or list.
 
 | Tile | What it shows |
 |---|---|
-| **Revenue** | Revenue for the selected period, with change vs the previous period |
-| **Costs** | Costs for the selected period, with change vs the previous period |
-| **Profit** | Net profit for the selected period, with change vs the previous period |
-| **Receivables** | Outstanding invoices and days sales outstanding |
-| **Liquidity / runway** | Current cash position and estimated runway |
+| **Cash** | Current cash position, either from a connected bank account or an estimated balance, plus runway in weeks |
+| **Receivables** | Outstanding invoices, with the overdue slice called out |
+| **Revenue** | Revenue for the selected period and the pace for the full period, with change vs the previous comparable period |
+| **Payables** | Money you still need to pay out, with the overdue slice called out |
+| **Profit** | Net profit for the selected period, with margin when it can be computed |
 
-A tile that has no honest history renders without a sparkline rather than inventing a flat line. Receivables rising, for example, is shown as an upward arrow marked in warning colour because the direction and the meaning are kept separate.
+A tile that has no honest history renders without a sparkline rather than invent a flat line. The colour of a delta badge follows meaning, not just direction: receivables rising is bad news even though the arrow points up.
 
-## Vandaag signals
+## Attention widget
 
-The Vandaag engine is the decision layer behind the dashboard. It ranks what needs attention today into four severity levels:
+The attention widget is fed by the Vandaag signal engine. It shows up to four tasks that need action today or this week. Each row shows a severity dot, a short title, and a link to the record. The widget only surfaces tasks; it does not contain the full ranked list, the explanation chips, or the action buttons. The full list lives in the bell panel.
+
+The Vandaag engine ranks signals into four severity levels:
 
 - **critical**: money leaking or a hard deadline closing
 - **attention**: a real task, today or this week
-- **upcoming**: dated, not yet urgent
+- **upcoming**: dated, but not yet urgent
 - **good**: earned positive news
 
-Each signal is a single card with a finding, a one-line explanation of why it matters, evidence chips, and an action. Actions can be:
-
-- a link to the relevant page
-- enabling auto-reminders
-- sending a reminder for a specific invoice
-- dismissing the signal
-
-Signals can be snoozed. A snooze removes the card immediately; if the server call fails, the card comes back and the workspace is told why. After any action succeeds, the list reloads so the ranking stays correct.
-
-The engine is deterministic. No model is involved in producing the signals, so the page is fully useful when the AI layer is down.
+The engine is deterministic. No model is involved in producing the signals, so the page stays useful when the AI layer is down.
 
 ## Supporting blocks
 
@@ -63,31 +50,28 @@ The blocks below the KPI row appear only when they earn their place. The catalog
 
 | Block | Content |
 |---|---|
-| **Trend** | 12-month dual-bar chart of revenue and costs, with profit line |
-| **Attention** | Top open items requiring action, surfaced from the signal engine |
+| **Trend** | 12-month dual-bar chart of revenue and costs, with the profit line |
 | **Ageing** | Receivables aged by bucket |
 | **Revenue sources** | Largest customers by year-to-date revenue |
 | **Quotes** | Open quote pipeline and expiring quotes |
 | **Expense mix** | Cost breakdown by category, shown as bars or treemap depending on space |
-| **Cash chart** | 12-month cash position with forecast |
+| **Cash chart** | Cash position over 12 months with forecast |
 | **Activity** | Recent invoice, payment, and expense events |
 | **VAT card** | Current VAT period, checklist progress, and next deadline |
 
 On phones, large visual forms such as treemaps or funnels fall back to simpler forms so the numbers remain readable.
 
-## Welcome screen
+## First-run state
 
-On a brand-new account with no invoices or customers, the dashboard shows a welcome screen instead of the full overview. It points to three first actions: create an invoice, add a customer, or log an expense. Once at least one invoice or customer exists, the welcome screen disappears and the full dashboard takes its place.
+A brand-new workspace with no invoices or customers lands on a calm first-run screen instead of the full dashboard. It offers one focal action: create your first invoice. A small discovery panel also invites you to personalise invoice styling, the website, or account security. Dismissing the panel hides only the panel; sending your first invoice exits first-run mode. You can also skip the first-run screen with the **Show my dashboard** option.
+
+## Getting started card
+
+While the setup checklist still has open steps, a pinned card appears above the dashboard. It lists the remaining steps and a link back to the setup wizard. Dismissing the card is stored server-side, so it stays hidden across devices. The wizard is non-blocking: new signups land on `/dashboard` directly.
 
 ## Loading and error states
 
-While data loads, a skeleton placeholder mirrors the final shape of each block. A hidden timeout of 2.5 seconds guarantees the skeleton never traps a user on a slow connection. The `prefers-reduced-motion: reduce` media query disables all entry animations.
-
-If the Vandaag fetch fails, the page shows an explicit error with a retry button instead of an all-clear built from empty data. If a period switch fails while older numbers are still on screen, a stale notice appears with an inline retry.
-
-## Setup banner
-
-While the setup wizard at `/setup` still has fields to fill, a banner pins itself above the dashboard with the count of pending fields and a **Resume setup** button. It can be dismissed per browser via localStorage and stays hidden until the wizard is completed. The wizard is non-blocking: new signups land on `/dashboard` directly.
+While the dashboard decides whether this is a first-run workspace and loads the briefing, a skeleton mirrors the final shape of the page. If the Vandaag fetch fails, the page shows an explicit error with a retry button instead of an all-clear built from empty data. If a period switch fails while older numbers are still on screen, a stale notice appears with an inline retry.
 
 ## See also
 

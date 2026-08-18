@@ -1,5 +1,5 @@
 ---
-title: "Use the dashboard"
+title: "Dashboard gebruiken"
 last_verified: 2026-08-18
 chatbot:
   triggers:
@@ -20,13 +20,13 @@ chatbot:
 
 Je dashboard geeft je een snel overzicht van:
 
-- een korte lede die het huidige bedrijfsbeeld samenvat
-- KPI-tegels voor omzet, kosten, winst, debiteuren en liquiditeit
-- gerangschikte Vandaag-signalen die aandacht vragen of goed nieuws bevestigen
-- ondersteunende blokken zoals trend, ageing, omzetbronnen, offertes, uitgaven, cash en btw
+- een periodekiezer voor maand, kwartaal of jaar
+- vijf vaste KPI-tegels: kas, te ontvangen, omzet, te betalen en winst
+- een aandacht-widget met maximaal vier taken die actie vragen
+- ondersteunende blokken zoals trend, ageing, omzetbronnen, offertes, uitgaven, cash, activiteit en btw
 
-Schakel met de periodekiezer tussen maand, kwartaal en jaar om alle getallen in de KPI-rij in een ander kader te zetten. De trendgrafiek blijft altijd 12 maanden breed.
+Schakel met de periodekiezer om alle getallen in de KPI-rij in een ander kader te zetten. De trendgrafiek blijft altijd 12 maanden breed.
 
-Elke KPI-tegel en de meeste signaalkaarten linken door naar het bijbehorende rapport of de bijbehorende lijst. Klik door om zaken direct daar op te lossen.
+Elke KPI-tegel linkt door naar het bijbehorende rapport of de bijbehorende lijst. Klik door om zaken direct daar op te lossen.
 
-De winst- en belastingreservekaarten op het dashboard gebruiken een winst-en-verliesweergave: uitgaven zijn zonder BTW, investeringen worden over hun afschrijvingschema verdeeld en concepten die nog in beoordeling zijn, worden uitgesloten. De omzet- en kostentotalen in de KPI-rij tonen de kasbeweging, inclusief BTW en openstaande concepten. Gebruik het W&V-rapport als je hetzelfde winstcijfer in een gedetailleerd rapport wilt zien.
+Het dashboard houdt twee weergaven eerlijk naast elkaar: de KPI-rij toont kasbewegingscijfers, terwijl de winsttegel en het trendblok een winst-en-verliesweergave gebruiken. In die W&V-weergave zijn uitgaven zonder BTW, investeringen verdeeld over hun afschrijvingsschema en concepten die nog in beoordeling zijn uitgesloten. Gebruik het W&V-rapport als je hetzelfde winstcijfer in een gedetailleerd rapport wilt zien.

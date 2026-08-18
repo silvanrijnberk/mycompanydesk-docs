@@ -20,13 +20,13 @@ chatbot:
 
 Your dashboard gives you a quick overview of:
 
-- A short lede summarising the current business picture
-- KPI tiles for revenue, costs, profit, receivables, and liquidity
-- Ranked Vandaag signals that require attention or confirm good news
-- Supporting blocks such as trend, ageing, revenue sources, quotes, expenses, cash, and VAT
+- A period switcher for month, quarter, or year
+- Five fixed KPI tiles: cash, receivables, revenue, payables, and profit
+- An attention widget with up to four tasks that need action
+- Supporting blocks such as trend, ageing, revenue sources, quotes, expenses, cash, activity, and VAT
 
-Switch the period selector to month, quarter, or year to reframe every figure in the KPI row. The trend chart always stays at 12 months.
+Switch the period selector to reframe every figure in the KPI row. The trend chart always stays at 12 months.
 
-Each KPI tile and most signal cards link to the underlying report or list. Click through to resolve issues directly from there.
+Each KPI tile links to the report or list behind it. Click through to resolve issues directly from there.
 
-The profit and tax cards on the dashboard use a profit-and-loss view: expenses are without VAT, investments are spread through their depreciation schedule, and drafts still pending review are excluded. The revenue and cost totals in the KPI row show the cash movement, including VAT and pending drafts. Use the P&L report if you want the same profit figure in a detailed report.
+The dashboard keeps two views honest: the KPI row shows cash-movement figures, while the profit tile and the trend block use a profit-and-loss view. In the P&L view, expenses are without VAT, investments are spread through their depreciation schedule, and drafts still pending review are excluded. Use the P&L report if you want the same profit figure in a detailed report.
