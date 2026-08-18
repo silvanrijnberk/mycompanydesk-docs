@@ -72,6 +72,8 @@ Si un e-mail transféré ou un scan crée une dépense mais que le reçu ne peut
 
 Si un message de la boîte de réception est converti en une dépense dont la date tombe dans une période de TVA déjà déclarée, l'enregistrement automatique est refusé pour protéger la déclaration déposée. Au lieu de supprimer silencieusement la facture, MyCompanyDesk crée une notification `inbox_expense_period_locked` qui indique le fournisseur et la date de la facture, et précise que la période de TVA est verrouillée. La notification renvoie vers la liste de la boîte de réception, afin que vous puissiez y retrouver la facture transmise. Vous avez ensuite les deux mêmes options que pour les autres cas de période verrouillée : enregistrer la dépense manuellement avec une date dans la période ouverte en cours, ou déposer une déclaration complémentaire pour la période verrouillée.
 
+Le tiroir de saisie rapide affiche le meme indicateur de periode de TVA a cote du champ de date avant l'enregistrement, afin qu'une periode verrouillee ou en tolerance soit visible avant que le serveur refuse l'ecriture.
+
 ## Catégories de dépenses
 
 MyCompanyDesk propose des catégories prédéfinies avec des icônes pour une sélection rapide :
@@ -190,6 +192,10 @@ Importez des dépenses depuis un fichier CSV :
 MyCompanyDesk surveille les fournisseurs qui envoient habituellement une facture chaque mois mais qui se sont tus. Si un fournisseur a eu des depenses sur trois mois distincts, puis plus aucune depense confirmee pendant environ 50 jours, il cree une notification vous demandant si une facture manque.
 
 La verification ne porte que sur les depenses confirmees. Les depenses provisoires ou celles en attente de confirmation ne comptent pas comme "nous avons vu une facture", donc une importation non confirmee n'arrete pas la notification. L'objectif est d'attraper une facture recurrente manquante avant qu'elle ne fausse vos comptes.
+
+## Piste d'audit
+
+La creation d'une depense ecrit desormais une entree de piste d'audit pour chaque chemin de creation, pas seulement pour le formulaire web manuel. Cela concerne les recus scannes depuis l'application, les brouillons issus du flux bancaire, les imports CSV, les depenses recurrentes, les brouillons de la boite de reception et des e-mails transferes, les factures electroniques Peppol et les trajets. L'entree indique le fournisseur et la date, ou le numero de depense s'il est deja attribue, pour retrouver l'origine de chaque depense dans l'historique.
 
 En ouvrant la notification, vous pouvez enregistrer la depense manquante ou la rejeter si ce silence etait prevu.
 

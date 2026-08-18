@@ -119,6 +119,8 @@ Selectionnez plusieurs factures dans la liste pour effectuer des actions groupee
 - **Archiver** -- Deplacez les factures vers les archives
 - **Supprimer** -- Supprimez definitivement des factures
 
+La suppression definitive d'une facture (suppression individuelle, action groupee, vidage de la corbeille ou suppression totale) efface le lien avec les depenses associees. Ces depenses reviennent dans la liste des depenses non facturees et peuvent etre ajoutees a une autre facture.
+
 La finalisation groupée applique les mêmes contrôles de TVA et de statut que pour l'envoi d'une seule facture. Les factures qui échouent à un contrôle sont ignorées; l'écran de résultats indique pourquoi.
 
 ## Liens de paiement

@@ -119,6 +119,8 @@ Wählen Sie mehrere Rechnungen aus der Liste, um Aktionen in großem Umfang durc
 - **Archivieren** — Rechnungen ins Archiv verschieben
 - **Löschen** — Rechnungen dauerhaft entfernen
 
+Das endgültige Löschen einer Rechnung (einzeln, als Massenaktion, beim Leeren des Papierkorbs oder beim Löschen aller Rechnungen) hebt die Verknüpfung mit verbundenen Ausgaben auf. Diese Ausgaben erscheinen wieder in der Liste nicht-fakturierter Ausgaben und können einer anderen Rechnung zugeordnet werden.
+
 Massenhaftes Freigeben führt dieselben MwSt.- und Statusprüfungen durch wie beim Versenden einer einzelnen Rechnung. Rechnungen, die eine Prüfung nicht bestehen, werden übersprungen; die Ergebnisübersicht zeigt den Grund an.
 
 ## Zahlungslinks

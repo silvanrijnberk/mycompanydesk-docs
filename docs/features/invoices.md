@@ -119,6 +119,8 @@ Select multiple invoices from the list to perform actions in bulk:
 - **Archive** — Move invoices to the archive
 - **Delete** — Permanently remove invoices
 
+Permanently deleting an invoice (single delete, bulk delete, empty trash, or delete all) releases any attached expenses. They return to the uninvoiced list and can be added to another invoice.
+
 Bulk finalizing runs the same VAT and status checks as sending a single invoice. Invoices that fail a check are skipped, and the results screen explains why.
 
 ## Payment links
