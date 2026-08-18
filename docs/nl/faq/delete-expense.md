@@ -17,3 +17,5 @@ Om een uitgave te verwijderen:
 Verwijderen gaat in stappen. Een actieve uitgave verwijderen archiveert deze eerst, nog een keer verwijderen vanuit het Archief verplaatst de uitgave naar de Prullenbak, en verwijderen vanuit de Prullenbak is definitief. Tot die laatste stap kun je de uitgave altijd terugzetten vanuit de weergave Archief of Prullenbak. Let op: uitgaven selecteren in de lijst en daar de bulkactie Verwijderen gebruiken verwijdert ze meteen definitief.
 
 Een uitgave in de Prullenbak kun je niet bewerken. Wil je toch iets wijzigen, zet hem dan eerst terug.
+
+Als je een onbetaalde uitgave met een vervaldatum archiveert, wordt de openstaande betaalherinnering ingetrokken en niet verstuurd. Je kunt de uitgave later nog uit het Archief terugzetten, maar de herinnering komt niet terug.

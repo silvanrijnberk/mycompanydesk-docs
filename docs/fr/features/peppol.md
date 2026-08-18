@@ -82,6 +82,10 @@ Quand vous activez la reception, votre numero d'immatriculation et votre numero 
 
 Des lors, les factures electroniques entrantes arrivent automatiquement comme brouillons de depenses. Aucune importation manuelle n'est necessaire.
 
+### Devises prises en charge
+
+MyCompanyDesk n'accepte que les factures electroniques Peppol entrantes en euros (EUR). Les factures electroniques reçues dans une autre devise sont rejetées.
+
 ### Verifier les factures electroniques recues
 
 Chaque facture electronique atterrit comme brouillon sous **Depenses**. Le brouillon est pre-rempli avec le fournisseur, la description, le montant, la TVA et la date de facture provenant de la facture electronique entrante. Lorsque le fournisseur a applique la TVA d'autoliquidation, MyCompanyDesk la classe comme autoliquidation et maintient le taux de TVA a 0 % afin qu'elle se place dans la bonne rubrique de votre declaration TVA. Verifiez les informations, joignez un recu si necessaire et enregistrez-le comme depense reguliere.

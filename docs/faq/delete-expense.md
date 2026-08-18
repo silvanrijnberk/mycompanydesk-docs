@@ -17,3 +17,5 @@ To delete an expense:
 Deletion happens in stages. Deleting an active expense archives it first, deleting it again from the Archive moves it to the Trash, and deleting it from the Trash removes it permanently. You can restore an expense from the Archive or Trash view at any point before the final step. Note: selecting expenses in the list and using the bulk Delete action removes them permanently right away.
 
 While an expense is in the Trash, it cannot be edited. Restore it first if you need to make any changes.
+
+If you archive an unpaid expense that has a due date, the open payment reminder is cancelled and will not be sent. You can still restore the expense from the Archive, but the reminder does not come back.

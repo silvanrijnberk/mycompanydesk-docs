@@ -82,6 +82,10 @@ When you enable receiving, your KVK number and VAT number are registered as a Pe
 
 Once enabled, incoming e-invoices arrive automatically as draft expenses. There is no manual import step.
 
+### Supported currencies
+
+MyCompanyDesk only accepts incoming Peppol e-invoices in euros (EUR). E-invoices received in any other currency are rejected.
+
 ### Reviewing received e-invoices
 
 Each e-invoice lands as a draft expense under **Expenses**. The draft is prefilled with the supplier, description, amount, VAT and invoice date from the incoming e-invoice. When the supplier applied reverse-charge VAT, MyCompanyDesk classifies it as reverse-charge and leaves the VAT rate at 0 % so it lands in the correct rubriek of your VAT return. Review the details, attach a receipt if needed, and save it as a regular expense.
