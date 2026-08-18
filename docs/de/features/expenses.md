@@ -72,6 +72,8 @@ Wenn eine weitergeleitete E-Mail oder ein Scan zwar eine Ausgabe erzeugt, der Be
 
 Wenn eine Posteingangsnachricht in eine Ausgabe mit einem Datum innerhalb einer bereits angegebenen MwSt.-Periode umgewandelt wird, wird die automatische Buchung abgelehnt, um die eingereichte Voranmeldung zu schützen. Statt die Rechnung stillschweigend zu verwerfen, erstellt MyCompanyDesk eine `inbox_expense_period_locked`-Benachrichtigung, die Lieferanten und Rechnungsdatum nennt und darauf hinweist, dass die MwSt.-Periode gesperrt ist. Die Benachrichtigung führt Sie zur Posteingangsliste, damit Sie die weitergeleitete Rechnung dort finden. Sie haben dann dieselben zwei Optionen wie bei anderen gesperrten Perioden: buchen Sie die Ausgabe manuell mit einem Datum in der aktuell offenen Periode, oder reichen Sie eine ergänzende MwSt.-Voranmeldung für die gesperrte Periode ein.
 
+Die Schnellerfassungs-Schublade zeigt denselben MwSt.-Perioden-Status neben dem Datumsfeld vor dem Speichern an, damit eine gesperrte oder Toleranzperiode sichtbar ist, bevor der Server die Buchung ablehnt.
+
 ## Ausgabenkategorien
 
 MyCompanyDesk bietet vordefinierte Kategorien mit Symbolen zur schnellen Auswahl:
@@ -192,6 +194,10 @@ MyCompanyDesk beobachtet Lieferanten, die normalerweise monatlich eine Rechnung 
 Die Prüfung zählt nur bestätigte Ausgaben. Ausgabenentwürfe oder noch nicht bestätigte Ausgaben gelten nicht als "wir haben eine Rechnung gesehen", sodass ein unbestätigter Import die Meldung nicht stoppt. Das Ziel ist, eine fehlende wiederkehrende Rechnung aufzufangen, bevor sie Ihre Buchhaltung durcheinanderbringt.
 
 Wenn Sie die Meldung öffnen, können Sie die fehlende Ausgabe direkt erfassen oder abweisen, wenn die Stille erwartet war.
+
+## Prüfprotokoll
+
+Beim Anlegen einer Ausgabe wird jetzt für jeden Entstehungspfad ein Prüfprotokoll-Eintrag geschrieben, nicht nur für das manuelle Webformular. Das gilt für gescannte Belege aus der App, Entwürfe aus dem Bankfeed, CSV-Importe, wiederkehrende Ausgaben, Posteingangs- und weitergeleitete E-Mail-Entwürfe, Peppol-E-Rechnungen und Fahrten. Der Eintrag nennt Lieferant und Datum bzw. die Ausgabennummer, falls bereits vergeben, sodass im Verlauf nachvollziehbar ist, woher eine Ausgabe stammt.
 
 ## Tipps
 

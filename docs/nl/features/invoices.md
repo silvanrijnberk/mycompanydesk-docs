@@ -119,6 +119,8 @@ Selecteer meerdere facturen uit de lijst om acties in bulk uit te voeren:
 - **Archiveren** — Verplaats facturen naar het archief
 - **Verwijderen** — Verwijder facturen permanent
 
+Een factuur definitief verwijderen (enkelvoudig, via bulkacties, prullenbak legen of alles verwijderen) maakt de koppeling met eventuele gekoppelde uitgaven leeg. Die uitgaven komen terug in de lijst met niet-gefactureerde uitgaven en kunnen opnieuw aan een factuur worden toegevoegd.
+
 Bulksgewijs afronden voert dezelfde BTW- en statuscontroles uit als bij het versturen van een enkele factuur. Facturen die een controle niet doorstaan, worden overgeslagen; het resultatenscherm geeft aan waarom.
 
 ## Betaallinks

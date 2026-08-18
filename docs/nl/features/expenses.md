@@ -84,6 +84,8 @@ Bonnen scannen vereist het **Pro**-abonnement of hoger. Het BTW-tarief op een ni
 
 Als een inboxbericht wordt omgezet naar een uitgave met een datum in een BTW-periode die al is aangegeven, wordt de automatische boeking geweigerd om de ingediende aangifte te beschermen. In plaats van de factuur stilzwijgend te laten verdwijnen, maakt MyCompanyDesk een `inbox_expense_period_locked`-melding aan die de leverancier en factuurdatum noemt en aangeeft dat de BTW-periode vergrendeld is. De melding brengt je naar de inboxlijst, zodat je de doorgestuurde factuur daar kunt terugvinden. Je hebt vervolgens dezelfde twee opties als bij andere gevallen van een vergrendelde periode: boek de uitgave handmatig met een datum in de huidige open periode, of dien een suppletieaangifte in voor de vergrendelde periode.
 
+De snelle invoerlade toont dezelfde btw-periodestatus naast het datumveld voordat je opslaat, zodat een vergrendelde of coulanceperiode zichtbaar is voordat de server de boeking weigert.
+
 Als een doorgestuurde e-mail of een scan wel een uitgave oplevert, maar de bijbehorende bon niet meegevoegd kan worden (bijvoorbeeld een niet-ondersteund bestandstype of een te groot bestand), wordt de uitgave toch aangemaakt en krijgt hij een notitie dat de bijlage ontbreekt. Upload de bon daarna handmatig op de detailpagina van de uitgave.
 
 ## BTW-afhandeling
@@ -189,6 +191,10 @@ MyCompanyDesk houdt leveranciers in de gaten die normaal elke maand een factuur 
 De controle kijkt alleen naar bevestigde uitgaven. Conceptuitgaven of uitgaven die nog moeten worden bevestigd tellen niet mee als "we hebben een factuur gezien", dus een onbevestigde import stopt de melding niet. Het doel is om een ontbrekende terugkerende factuur op te vangen voordat je administratie scheef groeit.
 
 Als je de melding opent, kun je de missende uitgave direct boeken of afwijzen als het stilzijn verwacht is.
+
+## Controlespoor
+
+Het aanmaken van een uitgave schrijft voortaan voor elk ontstaanspad een regel in het controlespoor, niet alleen voor het handmatige webformulier. Dat geldt voor bonnen die je scant via de app, concepten uit de bankkoppeling, CSV-imports, terugkerende uitgaven, inbox- en doorgestuurde-e-mailconcepten, Peppol-e-facturen en ritten. De regel noemt de leverancier en datum, of het uitgavennummer als er al een is toegekend, zodat je in de geschiedenis kunt zien waar een uitgave vandaan komt.
 
 ## Tips
 

@@ -71,6 +71,8 @@ Receipt scanning is available on every plan, including Free. The number of scans
 
 If an inbox message is converted into an expense with a date inside a VAT period that has already been filed, the automated booking is refused to protect the filed return. Instead of silently dropping the invoice, MyCompanyDesk creates an `inbox_expense_period_locked` notification that names the supplier and invoice date and tells you the VAT period is locked. The notification routes to the inbox list, so you can find the original forwarded invoice there. You then have the same two options as other locked-period cases: book the expense manually with a date in the current open period, or file a supplementary VAT return for the locked period.
 
+The capture drawer shows the same VAT-period chip next to the date field before you save, so a locked or grace-period date is visible before the server refuses it.
+
 When a forwarded email or a scan produces an expense but the receipt file itself cannot be attached (for example, an unsupported file type or a file over the limit), the expense is still created and a note is added to it telling you that the attachment is missing. Upload the receipt manually on the expense detail page when that happens.
 
 ## VAT treatment
@@ -181,6 +183,10 @@ MyCompanyDesk watches for suppliers that usually send a bill every month but hav
 The check looks at confirmed expenses only. Pending or draft expenses do not count as "we saw a bill", so an unconfirmed import does not stop the notification. The goal is to catch a missing recurring invoice before it throws off your records.
 
 When you open the notification, you can record the missing expense or dismiss it if the silence is expected.
+
+## Audit trail
+
+Creating an expense now writes an audit-trail entry for every creation path, not only for the manual web form. This covers receipts scanned from the app, bank-feed drafts, CSV imports, recurring expenses, inbox and forwarded-email drafts, Peppol e-invoices and mileage trips. The entry names the supplier and date, or the expense number when one is assigned, so the history shows where each expense originated.
 
 ## Tips
 
