@@ -71,6 +71,12 @@ Zusätzliche Aktionen finden sich im Overflow-Menü neben der Hauptaktion:
 - **PDF herunterladen** — Laden Sie das Angebot als professionell formatiertes PDF-Dokument mit Ihrem Firmenlogo, Ihren Markenfarben und allen Angebotsdetails herunter.
 - **Angebot kopieren** — Erstellen Sie eine Kopie des bestehenden Angebots.
 
+## Dokumentvorschau
+
+Jedes gespeicherte Angebot hat auf der Detailseite eine live PDF-Vorschau, genau wie eine Rechnung. Die Vorschau zeigt das Angebot so, wie es Ihr Kunde sieht.
+
+Im Kopf der Vorschau finden Sie Schaltflächen für **PDF herunterladen**, **Drucken** und **Design anpassen**. Klicken Sie auf **Design anpassen**, um direkt zum Rechnungsdesign zu springen und das Erscheinungsbild aller Ihrer Rechnungen, Angebote und Erinnerungen anzupassen. Nach dem Bearbeiten kehren Sie zu dem Angebot zurück, von dem Sie gekommen sind. Auf Mobilgeräten befindet sich dieselbe Aktion im Overflow-Menü, damit der Kopf der Vorschau übersichtlich bleibt.
+
 ## Angebotsstatus
 
 | Status | Beschreibung |

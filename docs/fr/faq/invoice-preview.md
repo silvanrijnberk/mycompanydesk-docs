@@ -1,6 +1,6 @@
 ---
 title: "Invoice preview"
-last_verified: 2026-05-09
+last_verified: 2026-08-18
 chatbot:
   triggers:
     - "preview invoice"
@@ -27,5 +27,7 @@ Pour prévisualiser une facture avant l'envoi :
 3. Un aperçu du PDF de la facture s'affiche
 4. Vérifiez la mise en page, les montants et les coordonnées du client
 5. Fermez l'aperçu et effectuez des modifications si nécessaire, ou procédez à l'envoi
+
+Pendant que l'aperçu est ouvert, cliquez sur **Modifier le design** dans l'en-tête pour aller directement à la mise en page des factures. Vous pouvez y ajuster l'apparence de toutes vos factures et devis, puis revenir à la facture en cours.
 
 Astuce : Prévisualisez toujours avant d'envoyer pour détecter les erreurs de mise en forme ou les fautes de frappe.

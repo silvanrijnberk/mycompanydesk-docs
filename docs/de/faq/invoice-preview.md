@@ -1,6 +1,6 @@
 ---
 title: "Invoice preview"
-last_verified: 2026-05-09
+last_verified: 2026-08-18
 chatbot:
   triggers:
     - "preview invoice"
@@ -27,5 +27,7 @@ Um eine Rechnung vor dem Versand in der Vorschau anzuzeigen:
 3. Eine Vorschau der Rechnungs-PDF wird angezeigt
 4. Prüfe Layout, Beträge und Kundendaten
 5. Schließe die Vorschau und nimm Änderungen vor, oder fahre mit dem Versand fort
+
+Während die Vorschau geöffnet ist, klicken Sie im Kopf auf **Design anpassen**, um direkt zum Rechnungsdesign zu springen. Dort passen Sie das Erscheinungsbild aller Ihrer Rechnungen und Angebote an; danach kehren Sie zu der Rechnung zurück, mit der Sie gerade arbeiten.
 
 Tipp: Überprüfe immer die Vorschau vor dem Versand, um Formatierungsfehler oder Tippfehler zu erkennen.

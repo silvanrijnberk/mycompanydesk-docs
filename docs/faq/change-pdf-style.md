@@ -1,6 +1,6 @@
 ---
 title: Change PDF style
-last_verified: 2026-07-02
+last_verified: 2026-08-18
 chatbot:
   triggers: ["change pdf style", "customize pdf", "pdf template", "invoice design", "invoice layout", "change invoice look", "pdf editor", "edit pdf template", "pdf stijl wijzigen", "factuur uiterlijk", "pdf sjabloon", "pdf-vorlage andern", "style pdf"]
   actions:
@@ -15,3 +15,5 @@ To change the style of your PDF invoices:
 4. Changes save automatically and apply to all new invoices, quotes and reminders
 
 Tip: your logo and brand colour live under Settings → "Logo en kleur"; the design studio builds on them.
+
+Tip: when you are viewing an invoice or quote, click **Change design** in the document preview header (or in the overflow menu on mobile) to jump straight to Factuurontwerp. After you finish editing, you return to the document you came from.

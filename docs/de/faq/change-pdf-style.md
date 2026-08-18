@@ -1,6 +1,6 @@
 ---
 title: PDF-Stil ändern
-last_verified: 2026-07-02
+last_verified: 2026-08-18
 chatbot:
   triggers: ["change pdf style", "customize pdf", "pdf template", "invoice design", "invoice layout", "change invoice look", "pdf editor", "edit pdf template", "pdf stijl wijzigen", "factuur uiterlijk", "pdf sjabloon", "pdf-vorlage andern", "style pdf"]
   actions:
@@ -15,3 +15,5 @@ So ändern Sie den Stil Ihrer PDF-Rechnungen:
 4. Änderungen werden automatisch gespeichert und gelten für alle neuen Rechnungen, Angebote und Erinnerungen
 
 Tipp: Ihr Logo und Ihre Markenfarbe finden Sie unter Einstellungen → "Logo und Farbe"; das Designstudio baut darauf auf.
+
+Tipp: Wenn Sie eine Rechnung oder ein Angebot betrachten, klicken Sie im Kopf der Dokumentvorschau (oder im Overflow-Menü auf Mobilgeräten) auf **Design anpassen**, um direkt zum Rechnungsdesign zu springen. Nach dem Bearbeiten kehren Sie zu dem Dokument zurück, von dem Sie gekommen sind.

@@ -61,6 +61,12 @@ Jede Rechnung hat eine Detailseite, die zeigt:
 - Status und Verlauf
 - Zahlungslink (falls gesendet)
 
+## Dokumentvorschau
+
+Jede gespeicherte Rechnung hat auf der Detailseite eine live PDF-Vorschau. Die Vorschau zeigt die Rechnung genau so, wie sie Ihr Kunde sieht: Layout, Positionen, Summen, Markenauftritt und Logo.
+
+Im Kopf der Vorschau finden Sie Schaltflächen für **PDF herunterladen**, **Drucken** und **Design anpassen**. Klicken Sie auf **Design anpassen**, um direkt zum Rechnungsdesign zu springen und das Erscheinungsbild aller Ihrer Rechnungen, Angebote und Erinnerungen anzupassen. Nach dem Bearbeiten kehren Sie zu der Rechnung zurück, von der Sie gekommen sind. Auf Mobilgeräten befindet sich dieselbe Aktion im Overflow-Menü, damit der Kopf der Vorschau übersichtlich bleibt.
+
 ## Aktionen
 
 Die Hauptaktion auf der Rechnungsdetailseite richtet sich nach dem Rechnungsstatus:
