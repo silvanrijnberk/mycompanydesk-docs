@@ -5,7 +5,7 @@ last_verified: 2026-08-18
 
 # Tableau de bord
 
-Le tableau de bord sur `/dashboard` est l'écran d'accueil de votre espace de travail. Il répond à une question: comment va votre entreprise en ce moment? Vous y voyez un sélecteur de période, une rangée de cinq tuiles d'indicateurs, un court widget d'attention et plusieurs blocs de données qui n'apparaissent que si vos données indiquent qu'ils sont utiles.
+Le tableau de bord sur `/dashboard` est l'écran d'accueil de votre espace de travail. Il répond à une question : comment va votre entreprise en ce moment ? Vous y voyez un sélecteur de période, une rangée de cinq tuiles d'indicateurs, un court widget d'attention et plusieurs blocs de données qui n'apparaissent que si vos données indiquent qu'ils sont utiles.
 
 ## Structure
 
@@ -29,18 +29,18 @@ La rangée d'indicateurs affiche toujours cinq tuiles. Chaque tuile montre un ch
 | **Dettes à payer** | Argent que vous devez encore payer, avec la part en retard explicitement indiquée |
 | **Bénéfice** | Bénéfice net de la période choisie, avec la marge lorsqu'elle peut être calculée |
 
-Une tuile sans historique honnête s'affiche sans courbe de tendance plutôt qu'avec une ligne plate inventée. La couleur du badge d'évolution suit le sens, pas seulement la direction: des créances qui augmentent sont une mauvaise nouvelle même si la flèche pointe vers le haut.
+Une tuile sans historique honnête s'affiche sans courbe de tendance plutôt qu'avec une ligne plate inventée. La couleur du badge d'évolution suit le sens, pas seulement la direction : des créances qui augmentent sont une mauvaise nouvelle même si la flèche pointe vers le haut.
 
 ## Widget d'attention
 
-Le widget d'attention est alimenté par le moteur de signaux Vandaag. Il affiche jusqu'à quatre tâches qui demandent une action aujourd'hui ou cette semaine. Chaque ligne montre un point de sévérité, un titre court et un lien vers l'enregistrement. Le widget ne montre que des tâches; il ne contient pas la liste complète classée, les preuves chiffrées ni les boutons d'action. La liste complète se trouve dans le panneau de notifications.
+Le widget d'attention est alimenté par le moteur de signaux Vandaag. Il affiche jusqu'à quatre tâches qui demandent une action aujourd'hui ou cette semaine. Chaque ligne montre un point de sévérité, un titre court et un lien vers l'enregistrement. Le widget ne montre que des tâches ; il ne contient pas la liste complète classée, les preuves chiffrées ni les boutons d'action. La liste complète se trouve dans le panneau de notifications.
 
-Le moteur Vandaag classe les signaux en quatre niveaux de sévérité:
+Le moteur Vandaag classe les signaux en quatre niveaux de sévérité :
 
-- **critical**: de l'argent s'échappe ou une échéance dure approche
-- **attention**: une tâche concrète, aujourd'hui ou cette semaine
-- **upcoming**: daté, mais pas encore urgent
-- **good**: une bonne nouvelle que vous avez méritée
+- **critical** : de l'argent s'échappe ou une échéance ferme approche
+- **attention** : une tâche concrète, aujourd'hui ou cette semaine
+- **upcoming** : daté, mais pas encore urgent
+- **good** : une bonne nouvelle que vous avez méritée
 
 Le moteur est déterministe. Aucun modèle n'intervient dans la production des signaux, donc la page reste utile lorsque la couche IA est indisponible.
 
@@ -63,11 +63,11 @@ Sur téléphone, les formes visuelles larges comme les treemaps ou les entonnoir
 
 ## Écran de première utilisation
 
-Un tout nouvel espace de travail sans factures ni clients atterrit sur un écran de première utilisation calme au lieu du tableau de bord complet. Il propose une action claire: créer votre première facture. Un petit panneau de découverte vous invite aussi à personnaliser le style des factures, le site web ou la sécurité du compte. Fermer le panneau ne cache que le panneau; envoyer votre première facture quitte l'écran de première utilisation. Vous pouvez aussi sauter l'écran avec l'option **Afficher mon tableau de bord**.
+Un tout nouvel espace de travail sans factures ni clients atterrit sur un écran de première utilisation calme au lieu du tableau de bord complet. Il propose une action claire : créer votre première facture. Un petit panneau de découverte vous invite aussi à personnaliser le style des factures, le site web ou la sécurité du compte. Fermer le panneau ne cache que le panneau ; envoyer votre première facture quitte l'écran de première utilisation. Vous pouvez aussi sauter l'écran avec l'option **Afficher mon tableau de bord**.
 
 ## Carte de prise en main
 
-Tant que la checklist de configuration a des étapes ouvertes, une carte épinglée apparaît au-dessus du tableau de bord. Elle liste les étapes restantes et offre un lien vers l'assistant de configuration. La fermeture est mémorisée côté serveur, donc la carte reste masquée sur tous vos appareils. L'assistant n'est pas bloquant: les nouveaux utilisateurs arrivent directement sur `/dashboard`.
+Tant que la checklist de configuration a des étapes ouvertes, une carte épinglée apparaît au-dessus du tableau de bord. Elle liste les étapes restantes et offre un lien vers l'assistant de configuration. La fermeture est mémorisée côté serveur, donc la carte reste masquée sur tous vos appareils. L'assistant n'est pas bloquant : les nouveaux utilisateurs arrivent directement sur `/dashboard`.
 
 ## Chargement et états d'erreur
 

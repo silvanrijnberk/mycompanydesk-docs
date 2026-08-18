@@ -35,14 +35,14 @@ Eine Kachel ohne ehrliche Historie zeigt keinen Trendverlauf anstelle einer erfu
 
 Das Aufmerksamkeits-Widget wird von der Vandaag-Signalmotor gespeist. Es zeigt bis zu vier Aufgaben, die jetzt oder in dieser Woche bearbeitet werden müssen. Jede Zeile zeigt einen Schweregrad-Punkt, einen kurzen Titel und einen Link zum Datensatz. Das Widget zeigt nur Aufgaben; es enthält nicht die vollständige priorisierte Liste, die Beweiszahlen oder die Aktionsknöpfe. Die vollständige Liste befindet sich im Benachrichtigungsbereich.
 
-Die Vandaag-Motor ordnet Signale in vier Schweregrad-Stufen:
+Der Vandaag-Motor ordnet Signale in vier Schweregrad-Stufen:
 
 - **critical**: Geld entweicht oder eine harte Frist rückt näher
 - **attention**: eine konkrete Aufgabe, heute oder diese Woche
 - **upcoming**: terminiert, aber noch nicht dringend
 - **good**: positive Nachrichten, die Sie verdient haben
 
-Die Motor ist deterministisch. Kein Modell ist an der Erzeugung der Signale beteiligt, sodass die Seite nützlich bleibt, wenn die KI-Schicht ausfällt.
+Der Motor ist deterministisch. Kein Modell ist an der Erzeugung der Signale beteiligt, sodass die Seite nützlich bleibt, wenn die KI-Schicht ausfällt.
 
 ## Unterstützende Blöcke
 

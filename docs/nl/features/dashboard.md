@@ -9,7 +9,7 @@ Het dashboard op `/dashboard` is het startscherm van je werkruimte. Het beantwoo
 
 ## Opbouw
 
-De pagina bestaat uit een vaste catalogus blokken in een enkele scrollbare weergave. De volgorde verandert nooit, maar een blok wordt alleen getoond als je data de drempel haalt. Een eenvoudig bedrijf krijgt dus een kortere pagina, geen lege plekken.
+De pagina bestaat uit een vaste catalogus van blokken in een enkele scrollbare weergave. De volgorde verandert nooit, maar een blok wordt alleen getoond als je data de drempel haalt. Een eenvoudig bedrijf krijgt dus een kortere pagina, geen lege plekken.
 
 Bovenaan staan de periodekiezer en de KPI-rij. Daaronder komt het aandacht-widget, gevolgd door ondersteunende blokken zoals de trendgrafiek, ageing, omzetbronnen, offertepijplijn, uitgavenmix, cash-grafiek, btw-kaart en recente activiteit.
 
