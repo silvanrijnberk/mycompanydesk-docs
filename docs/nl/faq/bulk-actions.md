@@ -17,4 +17,8 @@ Om bulkacties uit te voeren:
 
 Als je facturen bulksgewijs afrondt of verstuurt, voert MyCompanyDesk dezelfde BTW- en statuscontroles uit als bij een enkele factuur. Zo kan een factuur met verlegde BTW bijvoorbeeld niet worden afgerond als de klant geen BTW-nummer heeft, en moet een regel met 0% BTW (sources/vat-rates.yaml#countries.NL.zero) een duidelijke grondslag hebben (verlegde BTW of een goedgekeurde nultariefreden). Facturen die een controle niet doorstaan, worden overgeslagen; in het resultatenscherm zie je welke facturen het betreft en waarom.
 
+## Uitgaven bulksgewijs archiveren
+
+Als je meerdere onbetaalde uitgaven tegelijk archiveert, vallen hun openstaande betaalherinneringen stil. De bulkbalk toont eerst een bevestiging zodra een van de geselecteerde uitgaven onbetaald is én een vervaldatum heeft, zodat je weet hoeveel van de geselecteerde uitgaven hun herinnering kwijtraken. Zolang de uitgaven gearchiveerd zijn, blijft de herinnering uit. Zet je een gearchiveerde uitgave later terug, dan maakt de dagelijkse sweep de herinnering opnieuw aan, maar pas de volgende nacht op zijn vroegst.
+
 Tip: Gebruik eerst filters om de lijst te beperken en selecteer vervolgens alle zichtbare items voor efficiënte batchverwerking.

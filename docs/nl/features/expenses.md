@@ -133,7 +133,7 @@ Koppel uitgaven aan:
 Selecteer meerdere uitgaven voor:
 
 - **Categoriseren** - Wijzig categorie in bulk
-- **Archiveren** - Verplaats naar archief
+- **Archiveren** - Verplaats naar archief. Als je meerdere onbetaalde uitgaven met een vervaldatum tegelijk archiveert, vallen hun openstaande betaalherinneringen stil. De bulkbalk toont eerst een bevestiging zodra een van de geselecteerde uitgaven onbetaald is én een vervaldatum heeft, zodat je weet hoeveel van de geselecteerde uitgaven hun herinnering kwijtraken. Zolang de uitgaven gearchiveerd zijn, blijft de herinnering uit. Zet je een gearchiveerde uitgave later terug, dan maakt de dagelijkse sweep de herinnering opnieuw aan, maar pas de volgende nacht op zijn vroegst.
 - **Verwijderen** - Permanent verwijderen
 - **Exporteren** - Download als CSV
 - **Markeer als betaald** - Markeer geselecteerde uitgaven als betaald. Als je een bank- of inbox-concept als betaald markeert, wordt de vlag "Te controleren" tegelijkertijd verwijderd, zodat de rij zichtbaar wordt in je rapportages, BTW-aangifte en boekhoudersexport in plaats van verborgen te blijven. Dit gebeurt alleen als je de status op betaald zet, niet als je hem terugzet naar onbetaald.

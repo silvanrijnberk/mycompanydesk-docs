@@ -18,4 +18,4 @@ Deletion happens in stages. Deleting an active expense archives it first, deleti
 
 While an expense is in the Trash, it cannot be edited. Restore it first if you need to make any changes.
 
-If you archive an unpaid expense that has a due date, you will stop getting payment reminders for it. You can still restore the expense from the Archive, but the reminder does not come back.
+If you archive an unpaid expense that has a due date, you will stop getting payment reminders for it while it is archived. You can still restore the expense from the Archive. If you do, the daily sweep recreates the reminder, but not immediately; it returns the next night at the earliest.

@@ -18,4 +18,4 @@ Das Löschen erfolgt in Stufen. Das Löschen einer aktiven Ausgabe archiviert si
 
 Ausgaben im Papierkorb können nicht bearbeitet werden. Stellen Sie die Ausgabe zuerst wieder her, wenn Sie etwas ändern müssen.
 
-Wenn Sie eine unbezahlte Ausgabe mit Fälligkeitsdatum archivieren, wird die offene Zahlungserinnerung zurückgezogen und nicht versendet. Sie können die Ausgabe später aus dem Archiv wiederherstellen, die Erinnerung kommt jedoch nicht zurück.
+Wenn Sie eine unbezahlte Ausgabe mit Fälligkeitsdatum archivieren, wird die offene Zahlungserinnerung zurückgezogen und nicht versendet, solange sie im Archiv liegt. Sie können die Ausgabe später aus dem Archiv wiederherstellen. Dann wird die Erinnerung beim nächsten täglichen Lauf neu angelegt, aber frühestens in der folgenden Nacht.

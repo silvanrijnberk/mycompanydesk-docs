@@ -77,6 +77,8 @@ Jede Zeile zeigt den Umsatz (exkl.) und den USt.-Betrag. Die Leiste unten zeigt 
 
 Geben Sie bei einer manuellen Korrektur einen positiven Betrag ein und wählen Sie eine Richtung (USt. zu zahlen oder USt. zu erstatten). Negative Beträge werden abgelehnt und das Formular zeigt einen Fehler, der Sie auffordert, stattdessen die Richtung zu wählen; die Richtung bestimmt, ob die Korrektur den Zeitraumsaldo erhöht oder verringert.
 
+Das Steuerjahrfeld akzeptiert Jahre zwischen 2000 und dem aktuellen Kalenderjahr plus eins. Jahre darüber werden mit einer Inline-Meldung abgelehnt, denn eine Korrektur für ein späteres Jahr wäre auf der USt.-Seite nicht mehr auffindbar. Auch das Feld "Ursprungsjahr" für Korrekturen verwendet diesen Bereich; ein Referenzjahr außerhalb des Bereichs oder in der Zukunft wird blockiert, damit die Korrektur immer auf einen erreichbaren Zeitraum verweist.
+
 Eine Korrektur wird nur in eine Erklärung übernommen, wenn ihr Zeitraum zu Ihrer USt.-Abgabefrequenz passt. Eine als Q1 gespeicherte Korrektur fließt beispielsweise weder in eine monatliche noch in eine jährliche Erklärung ein, und eine als M03 gespeicherte Korrektur fließt nicht in eine vierteljährliche Erklärung ein. Die Korrekturkarte zeigt ein oranges Warn-Badge und einen Hinweis, wenn der Zeitraum einer Korrektur in keine Erklärung übernommen wird, damit Sie ihn vor der Abgabe anpassen können.
 
 Rubrik 4a ist für Reverse-Charge-Einkäufe von Lieferanten außerhalb der EU (`import_reverse_charge`); Rubrik 4b ist für Reverse-Charge-Einkäufe von EU-Lieferanten (`b2b_reverse_charge`). MyCompanyDesk leitet anhand des Lieferantenlands die richtige Rubrik ab, damit die Summe in 5a stimmt.

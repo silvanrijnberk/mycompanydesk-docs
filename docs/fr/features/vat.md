@@ -77,6 +77,8 @@ Chaque ligne montre le chiffre d'affaires (HT) et le montant de TVA. La barre du
 
 Lorsque vous ajoutez une correction manuelle, saisissez un montant positif et choisissez une direction (TVA à payer ou TVA à rembourser). Les montants négatifs sont rejetés et le formulaire affiche une erreur vous demandant de choisir la direction à la place ; la direction détermine si la correction augmente ou diminue le total de la période.
 
+Le champ d'année d'imposition accepte les années entre 2000 et l'année civile en cours plus une. Les années au-delà sont rejetées avec un message en ligne, car une correction enregistrée pour une année future deviendrait impossible à retrouver sur la page TVA. Le champ "Année de référence" des corrections utilise la même plage ; une année de référence hors de la plage ou dans le futur est bloquée, afin que la correction pointe toujours vers une période accessible.
+
 Une correction n'est comptabilisée dans une déclaration que si sa période correspond à la fréquence de déclaration de TVA de votre espace de travail. Par exemple, une correction enregistrée en T1 ne figure dans aucune déclaration mensuelle ou annuelle, et une correction enregistrée en M03 ne figure dans aucune déclaration trimestrielle. La carte des corrections affiche un badge d'avertissement orange et une explication lorsque la période d'une correction ne figure dans aucune déclaration, afin que vous puissiez la modifier avant de déclarer.
 
 La rubrique 4a concerne les achats en autoliquidation auprès de fournisseurs hors UE (`import_reverse_charge`); la rubrique 4b concerne les achats en autoliquidation auprès de fournisseurs UE (`b2b_reverse_charge`). MyCompanyDesk déduit la bonne rubrique à partir du pays du fournisseur, pour que le total en 5a soit exact.
