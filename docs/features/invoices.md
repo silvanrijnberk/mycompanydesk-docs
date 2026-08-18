@@ -44,6 +44,8 @@ You can start a new invoice from a saved template in two places:
 - In the **full invoice form**, click **Start from template** (only shown when you have saved invoice templates). Pick a template, and the form fills itself in place with its line items, customer and other saved data. Adjust anything you need, then save and send.
 - From the **quick-add drawer**, click **Use Template**, select a saved template, and all line items are pre-filled. Adjust as needed, then save and send.
 
+Saved templates keep the full line: description, quantity, unit, unit price, VAT rate, discount, and whether the line is VAT exempt. They deliberately do not keep the link to a catalog item, because catalog items can be deleted later and the template would then fail when used.
+
 ## Attributing an invoice to an object
 
 If the revenue belongs to a rental property, vehicle or other asset, select the object in the invoice form. The invoice is then listed on that object's detail page and included in its total revenue. This works both for invoices generated from a rental contract and for direct attribution, such as service-charge settlements, one-off charges and sale invoices.
@@ -104,7 +106,9 @@ Cancel an invoice that should no longer be paid. Cancelled invoices remain in yo
 
 ### Duplicate
 
-Create a copy of an existing invoice — useful for recurring billing to the same customer.
+Create a copy of an existing invoice, useful for recurring billing to the same customer.
+
+Credit notes cannot be duplicated. A duplicate would not reference any invoice and would still count as negative revenue in the VAT return, so create a new correction from the invoice you want to correct instead.
 
 ### Send reminder
 
