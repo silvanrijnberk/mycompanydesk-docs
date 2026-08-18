@@ -44,6 +44,8 @@ Vous pouvez commencer une nouvelle facture a partir d'un modele enregistre a deu
 - Dans le **formulaire de facturation complet**, cliquez sur **Demarrer a partir du modele** (affiche uniquement si vous avez des modeles de facture enregistres). Choisissez un modele et le formulaire se remplit directement avec ses lignes, son client et ses autres donnees enregistrees. Ajustez selon vos besoins, puis enregistrez et envoyez.
 - Dans le **tiroir d'ajout rapide**, cliquez sur **Utiliser un modele**, selectionnez un modele enregistre, et toutes les lignes de facturation sont pre-remplies. Ajustez selon vos besoins, puis enregistrez et envoyez.
 
+Les modeles enregistres conservent la ligne complete : description, quantite, unite, prix, taux de TVA, remise et si la ligne est exoneree de TVA. Ils ne conservent deliberement pas le lien vers un article du catalogue, car cet article peut etre supprime plus tard et le modele echouerait alors a l'utilisation.
+
 ## Attribuer une facture a un objet
 
 Si le revenu concerne une propriete locative, un vehicule ou un autre actif, selectionnez l'objet dans le formulaire de facture. La facture est alors liste sur la page de detail de cet objet et integree a son chiffre d'affaires total. Cela vaut aussi bien pour les factures generees a partir d'un contrat de location que pour les attributions directes, comme les regularisations de charges de copropriete, les factures ponctuelles et les factures de vente.
@@ -104,11 +106,13 @@ Annulez une facture qui ne doit plus etre payee. Les factures annulees restent d
 
 ### Dupliquer
 
-Creez une copie d'une facture existante -- utile pour la facturation recurrente au meme client.
+Creez une copie d'une facture existante, utile pour la facturation recurrente au meme client.
+
+Les avoirs ne peuvent pas etre dupliques. Un duplicat ne se refererait a aucune facture et compterait quand meme comme un chiffre d'affaires negatif dans la declaration de TVA. Creez plutot une nouvelle correction via “Creer un avoir” sur la facture que vous souhaitez corriger.
 
 ### Envoyer un rappel
 
-Envoyez un rappel de paiement pour les factures en retard. Si votre espace de travail a activé les paiements en ligne, le courriel de rappel offre au client les mêmes options de paiement que la facture d'origine : un bouton **Voir \u0026 payer**, un bouton **Confirmer le paiement** et un QR-code sur le PDF pour scanner et payer.
+Envoyez un rappel de paiement pour les factures en retard. Si votre espace de travail a active les paiements en ligne, le courriel de rappel offre au client les memes options de paiement que la facture d'origine : un bouton **Voir \u0026 payer**, un bouton **Confirmer le paiement** et un QR-code sur le PDF pour scanner et payer.
 
 ## Actions groupees
 
@@ -121,7 +125,7 @@ Selectionnez plusieurs factures dans la liste pour effectuer des actions groupee
 
 La suppression definitive d'une facture (suppression individuelle, action groupee, vidage de la corbeille ou suppression totale) efface le lien avec les depenses associees. Ces depenses reviennent dans la liste des depenses non facturees et peuvent etre ajoutees a une autre facture.
 
-La finalisation groupée applique les mêmes contrôles de TVA et de statut que pour l'envoi d'une seule facture. Les factures qui échouent à un contrôle sont ignorées; l'écran de résultats indique pourquoi.
+La finalisation groupée applique les memes controles de TVA et de statut que pour l'envoi d'une seule facture. Les factures qui echouent a un controle sont ignorees; l'ecran de resultats indique pourquoi.
 
 ## Liens de paiement
 

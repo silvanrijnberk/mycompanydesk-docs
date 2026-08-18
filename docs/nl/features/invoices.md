@@ -44,6 +44,8 @@ Je kunt een nieuwe factuur vanuit een opgeslagen sjabloon starten op twee plekke
 - In het **volledige factuurformulier** klik je op **Vanuit sjabloon** (alleen zichtbaar als je opgeslagen factuursjablonen hebt). Kies een sjabloon en het formulier vult zich ter plekke met de regelitems, klant en andere opgeslagen gegevens. Pas aan waar nodig en sla op en verstuur.
 - Vanuit de **snel-toevoegen-lade** klik je op **Sjabloon gebruiken**, selecteer je een opgeslagen sjabloon en worden alle regelitems vooraf ingevuld. Pas aan waar nodig en sla op en verstuur.
 
+Opgeslagen sjablonen bewaren de volledige regel: omschrijving, aantal, eenheid, prijs, BTW-tarief, korting en of de regel BTW-vrij is. Ze bewaren de koppeling met een aanboditem expres niet, want die items kunnen later worden verwijderd waardoor het sjabloon vervolgens vastloopt bij gebruik.
+
 ## Een factuur toewijzen aan een object
 
 Als de omzet hoort bij een huurpand, voertuig of ander activum, selecteer je het object in het factuurformulier. De factuur verschijnt dan op de objectdetailpagina en wordt meegenomen in de totale omzet van dat object. Dit geldt zowel voor facturen die uit een huurcontract zijn gegenereerd als voor directe toewijzing, zoals servicekostenafrekeningen, losse facturen en verkoopfacturen.
@@ -104,7 +106,9 @@ Annuleer een factuur die niet meer betaald hoeft te worden. Geannuleerde facture
 
 ### Dupliceren
 
-Maak een kopie van een bestaande factuur — handig voor terugkerende facturatie aan dezelfde klant.
+Maak een kopie van een bestaande factuur, handig voor terugkerende facturatie aan dezelfde klant.
+
+Creditnota’s kunnen niet worden gedupliceerd. Een duplicaat zou naar geen enkele factuur verwijzen en toch als negatieve omzet in de btw-aangifte meetellen. Maak daarom een nieuwe correctie via “Creditnota maken” op de factuur die je wilt corrigeren.
 
 ### Herinnering sturen
 
