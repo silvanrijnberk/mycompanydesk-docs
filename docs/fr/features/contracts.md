@@ -159,6 +159,16 @@ Lorsqu'un contrat est signe, la page de detail du contrat affiche une carte de s
 
 La page d'apercu comprend une barre d'outils avec des actions d'impression et de telechargement, et affiche le contrat signe directement dans le navigateur. Le PDF signe et le PDF de revision contiennent tous les deux le texte integral du contrat, de sorte que chaque copie telechargee soit autonome.
 
+### Image de marque de l'expediteur sur la page de signature
+
+Lorsqu'un destinataire ouvre un contrat pour le signer, la page de signature reflete l'image de marque de l'expediteur :
+
+- Le logo de l'expediteur apparait en haut de la page
+- La page utilise la couleur d'accent de la marque de l'expediteur
+- Le texte et les boutons s'adaptent automatiquement pour rester lisibles sur cette couleur
+
+Cela offre aux signataires une experience qui semble provenir de l'entreprise qui les a invites, et non d'une page generique tierce.
+
 ### Signature sur la liste des contrats
 
 La liste des contrats inclut une colonne **Signature** affichant le statut de signature pour chaque contrat avec signature electronique. Les statuts apparaissent sous forme de badges colores : brouillon (neutre), envoye (avertissement), partiellement signe (info) et actif (succes).

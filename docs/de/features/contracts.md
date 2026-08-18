@@ -159,6 +159,16 @@ Sobald ein Vertrag signiert wurde, zeigt die Vertragsdetailseite eine Signierkar
 
 Die Vorschauseite enthält eine Werkzeugleiste mit Druck- und Download-Aktionen und zeigt den signierten Vertrag direkt im Browser an. Sowohl das signierte PDF als auch das Prüfungs-PDF enthalten den vollständigen Vertragstext, sodass jede heruntergeladene Kopie eigenständig ist.
 
+### Absender-Branding auf der Signierseite
+
+Wenn ein Empfänger einen Vertrag zur Signierung öffnet, spiegelt die Signierseite das Branding des Absenders wider:
+
+- Das Logo des Absenders erscheint oben auf der Seite
+- Die Seite verwendet die Akzentfarbe der Marke des Absenders
+- Text und Schaltflächen passen sich automatisch an, damit sie auf dieser Farbe lesbar bleiben
+
+So erhalten Unterzeichner eine Erfahrung, die wie vom einladenden Unternehmen selbst stammt, und nicht wie eine generische Seite eines Drittanbieters.
+
 ### Signieren in der Vertragsliste
 
 Die Vertragsliste enthält eine **Signatur**-Spalte, die den Signaturstatus für jeden Vertrag mit E-Signatur anzeigt. Die Status erscheinen als farbige Badges: Entwurf (neutral), gesendet (Warnung), teilweise signiert (Info) und aktiv (Erfolg).

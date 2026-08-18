@@ -159,6 +159,16 @@ When a contract has been signed, the contract detail page shows a signing card w
 
 The preview page includes a toolbar with print and download actions, and renders the signed contract directly in the browser. The signed PDF and review PDF both include the full contract body text, so every downloaded copy is self-contained.
 
+### Sender branding on the signing page
+
+When a recipient opens a contract to sign, the signing page carries the sender's brand:
+
+- The sender's logo appears at the top of the page
+- The page uses the sender's brand accent color
+- Text and buttons automatically adjust so they stay readable against that color
+
+This gives signers an experience that looks like it comes from the company that invited them, rather than a generic third-party page.
+
 ### Signing on the contracts list
 
 The contracts list includes a **Signing** column showing the signing status for each contract that has e-signing enabled. Statuses appear as colored badges: draft (neutral), sent (warning), partially signed (info), and active (success).
