@@ -61,6 +61,12 @@ Each invoice has a detail page showing:
 - Status and history
 - Payment link (if sent)
 
+## Document preview
+
+Every saved invoice has a live PDF preview on its detail page. The preview shows the invoice exactly as your customer will see it: layout, line items, totals, branding and logo.
+
+The preview header has a **Download PDF** button, a **Print** button, and a **Change design** button. Click **Change design** to jump straight to the invoice design settings and adjust the look of all your invoices, quotes and reminders. When you are done, you return to the invoice you came from. On mobile the same action lives in the page's overflow menu so the preview header stays uncluttered.
+
 ## Actions
 
 The top action on the invoice detail page depends on the invoice status:

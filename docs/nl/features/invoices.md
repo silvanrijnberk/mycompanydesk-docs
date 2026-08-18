@@ -61,6 +61,12 @@ Elke factuur heeft een detailpagina met:
 - Status en geschiedenis
 - Betaallink (indien verstuurd)
 
+## Documentvoorbeeld
+
+Elke opgeslagen factuur heeft een live PDF-voorbeeld op de detailpagina. Het voorbeeld toont de factuur precies zoals je klant hem ziet: lay-out, regelitems, totalen, huisstijl en logo.
+
+In de kop van het voorbeeld staan knoppen voor **PDF downloaden**, **Printen** en **Ontwerp aanpassen**. Klik op **Ontwerp aanpassen** om direct naar Factuurontwerp te gaan en de uitstraling van al je facturen, offertes en herinneringen aan te passen. Wanneer je klaar bent, kom je terug bij de factuur waar je vandaan kwam. Op mobiel staat dezelfde actie in het overflow-menu, zodat de kop van het voorbeeld overzichtelijk blijft.
+
 ## Acties
 
 De hoofdactie op de factuurdetailpagina hangt af van de factuurstatus:

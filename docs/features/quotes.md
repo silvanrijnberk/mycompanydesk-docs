@@ -71,6 +71,12 @@ Additional actions live in the overflow menu next to the top action:
 - **Download PDF** — Download the quote as a professionally formatted PDF document with your company logo, branding colors, and all quote details.
 - **Copy quote** — Create a copy of the existing quote.
 
+## Document preview
+
+Every saved quote has a live PDF preview on its detail page, just like an invoice. The preview shows the quote exactly as your customer will see it.
+
+The preview header has a **Download PDF** button, a **Print** button, and a **Change design** button. Click **Change design** to jump straight to the invoice design settings and adjust the look of all your invoices, quotes and reminders. When you are done, you return to the quote you came from. On mobile the same action lives in the page's overflow menu so the preview header stays uncluttered.
+
 ## Quote statuses
 
 | Status | Description |

@@ -71,6 +71,12 @@ Extra acties zitten in het overflow-menu naast de hoofdactie:
 - **PDF downloaden** — Download de offerte als een professioneel opgemaakt PDF-document met je bedrijfslogo, huisstijlkleuren en alle offertegegevens.
 - **Offerte kopiëren** — Maak een kopie van de bestaande offerte.
 
+## Documentvoorbeeld
+
+Elke opgeslagen offerte heeft een live PDF-voorbeeld op de detailpagina, net als een factuur. Het voorbeeld toont de offerte precies zoals je klant hem ziet.
+
+In de kop van het voorbeeld staan knoppen voor **PDF downloaden**, **Printen** en **Ontwerp aanpassen**. Klik op **Ontwerp aanpassen** om direct naar Factuurontwerp te gaan en de uitstraling van al je facturen, offertes en herinneringen aan te passen. Wanneer je klaar bent, kom je terug bij de offerte waar je vandaan kwam. Op mobiel staat dezelfde actie in het overflow-menu, zodat de kop van het voorbeeld overzichtelijk blijft.
+
 ## Offertestatussen
 
 | Status | Beschrijving |

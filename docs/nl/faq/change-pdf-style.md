@@ -1,6 +1,6 @@
 ---
 title: PDF-stijl wijzigen
-last_verified: 2026-07-02
+last_verified: 2026-08-18
 chatbot:
   triggers: ["change pdf style", "customize pdf", "pdf template", "invoice design", "invoice layout", "change invoice look", "pdf editor", "edit pdf template", "pdf stijl wijzigen", "factuur uiterlijk", "pdf sjabloon", "pdf-vorlage andern", "style pdf"]
   actions:
@@ -15,3 +15,5 @@ Zo wijzig je de stijl van je PDF-facturen:
 4. Wijzigingen worden automatisch opgeslagen en gelden voor alle nieuwe facturen, offertes en herinneringen
 
 Tip: je logo en merkkleur staan onder Instellingen → "Logo en kleur"; de ontwerpstudio bouwt daarop voort.
+
+Tip: als je een factuur of offerte bekijkt, klik dan op **Ontwerp aanpassen** in de kop van het documentvoorbeeld (of in het overflow-menu op mobiel) om direct naar Factuurontwerp te gaan. Wanneer je klaar bent met bewerken, kom je terug bij het document waar je vandaan kwam.

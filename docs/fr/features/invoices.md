@@ -61,6 +61,12 @@ Chaque facture dispose d'une page de detail affichant :
 - Statut et historique
 - Lien de paiement (si envoye)
 
+## Apercu du document
+
+Chaque facture enregistree dispose d'un apercu PDF en direct sur sa page de detail. L'apercu montre la facture exactement comme votre client la verra : mise en page, lignes de facturation, totaux, marque et logo.
+
+L'en-tete de l'apercu comporte des boutons **Telecharger le PDF**, **Imprimer** et **Modifier le design**. Cliquez sur **Modifier le design** pour acceder directement a la mise en page des factures et ajuster l'apparence de toutes vos factures, devis et relances. Une fois vos modifications terminees, vous revenez a la facture d'origine. Sur mobile, la meme action se trouve dans le menu deroulant pour garder l'en-tete de l'apercu degage.
+
 ## Actions
 
 L'action principale sur la page de detail de la facture depend du statut de la facture :

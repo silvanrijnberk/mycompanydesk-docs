@@ -71,6 +71,12 @@ Des actions supplementaires se trouvent dans le menu deroulant a cote de l'actio
 - **Telecharger le PDF** — Telechargez le devis sous forme de document PDF mis en forme professionnellement avec le logo de votre entreprise, les couleurs de votre marque et tous les details du devis.
 - **Copier le devis** — Creez une copie du devis existant.
 
+## Apercu du document
+
+Chaque devis enregistre dispose d'un apercu PDF en direct sur sa page de detail, comme pour une facture. L'apercu montre le devis exactement comme votre client le verra.
+
+L'en-tete de l'apercu comporte des boutons **Telecharger le PDF**, **Imprimer** et **Modifier le design**. Cliquez sur **Modifier le design** pour acceder directement a la mise en page des factures et ajuster l'apparence de toutes vos factures, devis et relances. Une fois vos modifications terminees, vous revenez au devis d'origine. Sur mobile, la meme action se trouve dans le menu deroulant pour garder l'en-tete de l'apercu degage.
+
 ## Statuts des devis
 
 | Statut | Description |
