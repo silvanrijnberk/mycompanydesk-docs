@@ -420,6 +420,24 @@ Der Navigations-Editor ermöglicht es Ihnen, die Header-Links Ihrer Site zu ordn
 
 Diese Einstellungen gelten für jede Seite Ihrer Site, genau wie im Stil-Tab. Änderungen werden automatisch mit einer kurzen Verzögerung nach dem Ende der Eingabe gespeichert. Für das visuelle Layout, den Hintergrundstil und die Button-Darstellung siehe den [Stil-Tab](#styling-ihrer-site).
 
+## Footer-Links
+
+Die Footer-Bearbeitung befindet sich im Tab **Footer** des Navigations-Editors. Sie setzt den unteren Bereich jeder veröffentlichten Seite aus zwei Quellen zusammen: automatischen Blöcken, die aus Ihren Seiten und Unternehmensdaten generiert werden, und manuellen Linkspalten, die Sie selbst hinzufügen.
+
+### Automatische Footer-Blöcke
+
+Drei Schalter steuern Inhalte, die automatisch für Sie erstellt werden:
+
+- **Seitenlinks automatisch anzeigen** ("Seiten"): eine Sitemap-Spalte mit Links zu allen live, indexierbaren Seiten Ihrer Site. Standardmäßig für neue Sites aktiviert, weil es Suchmaschinen hilft, jede Seite zu finden, und verhindert, dass Seiten isoliert werden. Startseite, Blogposts, Entwürfe, passwortgeschützte Seiten und als "noindex" markierte oder aus der Sitemap ausgeblendete Seiten werden automatisch ausgeschlossen. Verbergen Sie eine einzelne Seite in dieser Spalte, indem Sie in den SEO-Einstellungen dieser Seite **In Sitemap anzeigen** deaktivieren.
+- **Kontaktdaten anzeigen** ("Kontakt"): Ihre öffentliche E-Mail-Adresse, Telefonnummer und Adresse aus den Unternehmensdaten.
+- **Social Links anzeigen** ("Social Media"): die in Ihren Unternehmensdaten gespeicherten Social-Media-Links.
+
+Diese Blöcke erscheinen im Footer-Stil Ihrer Site unterhalb der manuellen Spalten. Wenn Ihr Design bereits Kontakt- oder Social-Media-Daten anzeigt, wird der passende Schalter ausgeblendet, damit nichts doppelt erscheint.
+
+### Manuelle Linkspalten
+
+Unter den automatischen Schaltern können Sie bis zu sechs kuratierte Footer-Spalten hinzufügen. Jede Spalte hat einen Titel und eine Liste von Links. Verwenden Sie sie für rechtliche Seiten, Produktkategorien oder externe Ressourcen. Links akzeptieren interne Pfade, externe HTTPS-URLs, E-Mail (`mailto:`) oder Telefon (`tel:`).
+
 ## Firmendaten-Tokens
 
 Textfelder im Website-Builder können Merge-Tokens enthalten, die Live-Firmendaten aus Ihren Workspace-Einstellungen beziehen. Beim Rendern der veröffentlichten Site wird jedes Token durch den aktuellen Wert aus **Unternehmensdaten** (`/settings/bedrijfsgegevens`) ersetzt. So pflegen Sie Firmenname, Adresse und Kontaktdaten an einer zentralen Stelle.

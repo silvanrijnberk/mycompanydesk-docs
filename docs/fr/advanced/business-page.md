@@ -415,7 +415,25 @@ Au-dessus du menu principal, un panneau **Navbar** vous donne un acces direct au
 - **Barre d'appel mobile** : Lorsqu'elle est activee, un bouton d'appel fixe reste epingle en bas de l'ecran sur les appareils mobiles.
 - **Navbar collante** : Lorsqu'elle est activee (activee par defaut), la barre de navigation reste visible lors du defilement.
 
-Ces parametres s'appliquent a chaque page de votre site, comme dans l'onglet Style. Les modifications sont enregistrees automatiquement avec un court delai apres l'arret de la saisie. Pour la mise en page visuelle, le style d'arriere-plan et l'apparence du bouton, consultez l'[onglet Style](#styling-votre-site).
+Ces paramètres s'appliquent à chaque page de votre site, comme dans l'onglet Style. Les modifications sont enregistrées automatiquement avec un court délai après l'arrêt de la saisie. Pour la mise en page visuelle, le style d'arrière-plan et l'apparence du bouton, consultez l'[onglet Style](#styling-votre-site).
+
+## Liens de pied de page
+
+L'éditeur de pied de page se trouve dans l'onglet **Footer** de l'éditeur de navigation. Il compose le bas de chaque page publiée à partir de deux sources : des blocs automatiques construits à partir de vos pages et de vos coordonnées d'entreprise, et des colonnes de liens manuelles que vous ajoutez vous-même.
+
+### Blocs de pied de page automatiques
+
+Trois commutateurs contrôlent le contenu généré pour vous :
+
+- **Afficher automatiquement les liens de page** ("Pages") : une colonne de plan du site contenant un lien vers chaque page en ligne et indexable de votre site. Activée par défaut pour les nouveaux sites, car elle aide les moteurs de recherche à trouver chaque page et empêche qu'une page reste isolée. La page d'accueil, les articles de blog, les pages en brouillon, les pages protégées par mot de passe et les pages marquées "noindex" ou masquées du sitemap sont automatiquement exclues. Masquez une page individuelle de cette colonne en désactivant **Afficher dans le sitemap** dans les paramètres SEO de cette page.
+- **Afficher les coordonnées** ("Contact") : votre e-mail public, votre numéro de téléphone et votre adresse, tirés des coordonnées de l'entreprise.
+- **Afficher les liens sociaux** ("Réseaux sociaux") : les URL sociales enregistrées dans les coordonnées de votre entreprise.
+
+Ces blocs apparaissent dans le style de pied de page de votre site, sous les colonnes manuelles. Si votre design affiche déjà des coordonnées ou des liens sociaux, le commutateur correspondant est masqué pour éviter les doublons.
+
+### Colonnes de liens manuelles
+
+Sous les commutateurs automatiques, vous pouvez ajouter jusqu'à six colonnes de liens personnalisées. Chaque colonne a un titre et une liste de liens. Utilisez-les pour les pages légales, les catégories de produits ou les ressources externes. Les liens acceptent les chemins internes, les URL HTTPS externes, les e-mails (`mailto:`) ou les téléphones (`tel:`).
 
 ## Tokens de données d'entreprise
 

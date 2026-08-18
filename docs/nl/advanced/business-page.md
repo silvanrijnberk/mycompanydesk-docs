@@ -420,6 +420,24 @@ Boven het hoofdmenu geeft een **Navbar**-paneel je direct toegang tot de headers
 
 Deze instellingen gelden voor elke pagina van je site, net zoals op het Stijl-tabblad. Wijzigingen worden automatisch opgeslagen met een korte wachttijd nadat je stopt met typen. Voor de visuele layout, achtergrondstijl en knopweergave, zie het [Stijl-tabblad](#styling-van-je-site).
 
+## Footerlinks
+
+De footer-editor vind je op het tabblad **Footer** van de navigatie-editor. Die bouwt de onderkant van elke gepubliceerde pagina uit twee bronnen: automatische blokken die uit je pagina's en bedrijfsgegevens worden samengesteld, en handmatige linkkolommen die je zelf toevoegt.
+
+### Automatische footerblokken
+
+Drie schakelaars bepalen inhoud die voor je wordt gegenereerd:
+
+- **Paginalinks automatisch tonen** ("Pagina's"): een sitemap-kolom met een link naar elke live, indexeerbare pagina op je site. Standaard aan voor nieuwe sites, omdat het zoekmachines helpt elke pagina te vinden en verhindert dat pagina's geïsoleerd raken. De homepage, blogposts, conceptpagina's, met een wachtwoord beveiligde pagina's en pagina's die als "noindex" zijn gemarkeerd of uit de sitemap zijn verborgen, worden automatisch uitgesloten. Verberg een losse pagina uit deze kolom door bij de SEO-instellingen van die pagina **Tonen in sitemap** uit te zetten.
+- **Contactgegevens tonen** ("Contact"): je openbare e-mailadres, telefoonnummer en adres uit je bedrijfsgegevens.
+- **Social links tonen** ("Social"): de sociale links die je bij je bedrijfsgegevens hebt opgeslagen.
+
+Deze blokken verschijnen in de eigen footerstijl van je site, onder de handmatige kolommen. Als je ontwerp al contact- of sociale gegevens toont, wordt de bijbehorende schakelaar verborgen zodat niets dubbel opvalt.
+
+### Handmatige linkkolommen
+
+Onder de automatische schakelaars kun je tot zes eigen footerkolommen toevoegen. Elke kolom heeft een titel en een lijst links. Gebruik ze bijvoorbeeld voor juridische pagina's, productcategorieën of externe bronnen. Links mogen interne paden, externe HTTPS-URL's, e-mail (`mailto:`) of telefoon (`tel:`) bevatten.
+
 ## Bedrijfsgegevenstokens
 
 Tekstvelden in de sitebouwer kunnen merge-tokens bevatten die live bedrijfsgegevens uit je werkruimte halen. Bij het renderen van de gepubliceerde site wordt elk token vervangen door de huidige waarde uit **Bedrijfsgegevens** (`/settings/bedrijfsgegevens`). Zo hoef je je bedrijfsnaam, adres of contactgegevens maar op één plek te beheren.
