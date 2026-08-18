@@ -125,6 +125,8 @@ Your customer must be reachable on the Peppol network. In practice this means th
 
 **Receiving failed to enable with a conflict error.** Your KVK number or VAT number is already registered for Peppol receiving at another accounting package or provider. Disable receiving there first, then enable it in MyCompanyDesk. Until then, you can still send e-invoices from MyCompanyDesk.
 
+**Receiving cannot be enabled: company details are missing.** If Peppol receiving cannot be enabled because your company profile is missing a KVK number or VAT number, MyCompanyDesk returns a clear 422 error. Add the missing number in your company profile, then enable receiving again.
+
 **A received e-invoice looks wrong.** Open the draft expense, correct the supplier, amount, VAT or description, and save it. The original e-invoice data is kept in the expense notes for reference.
 
 **I disabled receiving but drafts still appear.** Drafts that arrived before you disabled receiving remain in your expenses; disabling only stops new e-invoices from coming in.

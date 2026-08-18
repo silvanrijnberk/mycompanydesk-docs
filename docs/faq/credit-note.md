@@ -14,6 +14,8 @@ To create a credit note:
 3. MyCompanyDesk creates a complete, finalized credit note in one step: every line from the original is negated and the credit note gets the next number in your sequence
 4. Send the credit note to the customer
 
+Canceled invoices cannot be credited. If you need to correct an invoice that was already canceled, duplicate the canceled invoice and make the changes there.
+
 You cannot adjust the amounts during creation; sent documents are locked, so the credit note always mirrors the original exactly. For a partial correction, create the full credit note first and then issue a new invoice for the correct amount.
 
 MyCompanyDesk also prevents you from crediting more than the original invoice amount. You can issue several partial credit notes against the same invoice, but once the combined credit total reaches the invoice total, no further credit note can be created for that invoice.

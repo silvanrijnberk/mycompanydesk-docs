@@ -14,6 +14,8 @@ Zo maak je een creditnota:
 3. MyCompanyDesk maakt in één stap een complete, definitieve creditnota: elke regel van het origineel wordt negatief overgenomen en de creditnota krijgt het volgende nummer in je reeks
 4. Verstuur de creditnota naar de klant
 
+Geannuleerde facturen kun je niet crediteren. Wil je een al geannuleerde factuur alsnog corrigeren? Dupliceer de geannuleerde factuur en pas daar de wijzigingen aan.
+
 Je kunt de bedragen tijdens het aanmaken niet aanpassen; verstuurde documenten zijn vergrendeld, dus de creditnota is altijd een exacte spiegel van het origineel. Wil je maar een deel corrigeren? Maak dan eerst de volledige creditnota en stuur daarna een nieuwe factuur met het juiste bedrag.
 
 MyCompanyDesk voorkomt ook dat je meer crediteert dan het bedrag van de originele factuur. Je kunt meerdere deelcreditnota's op dezelfde factuur maken, maar zodra het totaal van de creditnota's het factuurbedrag bereikt, is er geen nieuwe creditnota meer mogelijk voor die factuur.
