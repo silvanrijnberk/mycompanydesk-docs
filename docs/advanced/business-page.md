@@ -40,6 +40,19 @@ What the banner can do for you:
 
 The banner uses the Gemini AI model (lite variant) when available on your workspace. If AI is not configured, the banner still works with a sensible fallback based on your industry code and company name.
 
+## Website setup wizard
+
+Before you ever open the editor, the website setup wizard can build your first draft for you. It opens automatically the first time a new workspace visits `/website`, and you can restart it later from **Company > Your website > Style** by clicking **Set up again**. The wizard asks four questions:
+
+1. **What you do** (pre-filled from your KVK data) - your work, services and tone.
+2. **What you want** - whether the site should bring in leads, showcase your work, build credibility or get found online.
+3. **Logo** - keep the AI-generated logo or upload your own PNG/SVG.
+4. **Brand colour** - pick one of the suggested swatches or enter your own hex colour.
+
+Your answers are saved as the site brief. When you finish, the AI writes fresh copy for your whole draft site based on the brief and your workspace data, applies your chosen logo and brand colour, and leaves everything as a draft. Nothing is published automatically. You review the result in the editor and publish when you are happy with it.
+
+The same wizard can also rewrite an existing site from scratch. Restarting it from the Style tab confirms first, because finishing replaces copy you may have edited yourself. The site stays a draft until you publish it yourself.
+
 ## Tabs
 
 The site builder has three tabs: Editor, Pages, and Style. Click the Style header to open or close its sub-tabs, which include Animation.

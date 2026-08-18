@@ -40,6 +40,19 @@ Was das Banner für Sie tut:
 
 Das Banner verwendet das Gemini KI-Modell (Lite-Variante), sofern in Ihrem Workspace verfügbar. Wenn KI nicht konfiguriert ist, arbeitet das Banner trotzdem mit einem sinnvollen Fallback auf Basis Ihrer Branchenkennzahl und Ihres Firmennamens.
 
+## Website-Einrichtungsassistent
+
+Bevor Sie überhaupt den Editor öffnen, kann der Website-Einrichtungsassistent Ihren ersten Entwurf für Sie erstellen. Er öffnet sich automatisch beim ersten Besuch von `/website` in einem neuen Workspace und lässt sich später unter **Unternehmen > Ihre Website > Stil** mit **Erneut einrichten** neu starten. Der Assistent stellt vier Fragen:
+
+1. **Was Sie tun** (aus Ihren KVK-Daten vorausgefüllt) - Ihre Arbeit, Dienstleistungen und Tonalität.
+2. **Was Sie wollen** - ob die Site vor allem Kunden gewinnen, Ihre Arbeit zeigen, vertrauenswürdig wirken oder online gefunden werden soll.
+3. **Logo** - das KI-generierte Logo behalten, oder Ihr eigenes PNG/SVG hochladen.
+4. **Markenfarbe** - eine der vorgeschlagenen Farben wählen oder Ihre eigene Hex-Farbe eingeben.
+
+Ihre Antworten werden als Site-Briefing gespeichert. Wenn Sie abschliessen, schreibt die KI auf Basis des Briefings und Ihrer Workspace-Daten neuen Text für Ihren gesamten Entwurf, wendet Ihr gewähltes Logo und Ihre Markenfarbe an und lässt alles als Entwurf stehen. Es wird nichts automatisch veröffentlicht. Sie prüfen das Ergebnis im Editor und veröffentlichen es, sobald Sie zufrieden sind.
+
+Derselbe Assistent kann eine bestehende Site auch komplett neu schreiben. Wenn Sie ihn über den Stil-Tab neu starten, fragt er zuerst nach Bestätigung, denn Abschliessen ersetzt Text, den Sie selbst bearbeitet haben. Die Site bleibt Entwurf, bis Sie selbst veröffentlichen.
+
 ## Tabs
 
 Der Website-Builder hat drei Tabs: Editor, Seiten und Stil. Klicken Sie auf die Stil-Überschrift, um die Unter-Tabs (darunter Animation) ein- oder auszuklappen.
