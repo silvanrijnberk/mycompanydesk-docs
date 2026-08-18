@@ -96,6 +96,8 @@ After an entity is created, the AI-suggestions service queues a low-priority LLM
 
 Applying a suggestion writes through the same expense update path as a manual edit. A trashed expense, a locked VAT period, or an archived/invalid category blocks the apply action with the same error codes you see when editing manually. When the update succeeds, MyCompanyDesk records an audit log entry for the changed fields, just like a regular edit.
 
+Endpoints that act on a specific suggestion or expense now validate their path parameters as UUIDs. Requests with an invalid `entityId` or suggestion `id` return `400 VALIDATION_ERROR` before the service layer is reached, so malformed URLs do not produce unexpected 500 responses.
+
 The interesting bit is the **feedback loop**:
 
 1. When you accept a suggestion, the input text is embedded (Workers AI `bge-m3` primary, Gemini fallback) and stored in `suggestion_examples` with the accepted value.

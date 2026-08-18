@@ -66,6 +66,8 @@ AI kan duidelijkere, professionelere omschrijvingen suggereren voor:
 
 Toepassen werkt via hetzelfde schrijfpad als een handmatige bewerking. Een uitgave in de prullenbak, een vergrendelde BTW-periode of een gearchiveerde/ongeldige categorie blokkeert de actie met dezelfde foutcodes die je ook ziet bij handmatig bewerken. Bij een succesvolle toepassing schrijft MyCompanyDesk een auditlogregel voor de gewijzigde velden, net als bij een normale update.
 
+Endpoints die op een specifieke suggestie of uitgave acteren, valideren hun padparameters als UUID. Verzoeken met een ongeldige `entityId` of suggestie-`id` geven `400 VALIDATION_ERROR` terug voordat de servicelaag wordt bereikt, zodat ongeldige URL's geen onverwachte 500-fouten veroorzaken.
+
 Wanneer je een suggestie toepast, worden de gecachede financiële totalen die van het gewijzigde record afhangen direct ongeldig gemaakt. BTW, rapportages en het dashboard verversen meteen en tonen de nieuwe categorie, btw-behandeling of omschrijving.
 
 ::: info
