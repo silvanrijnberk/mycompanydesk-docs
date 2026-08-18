@@ -118,14 +118,14 @@ Envoyez un rappel de paiement pour les factures en retard. Si votre espace de tr
 
 Selectionnez plusieurs factures dans la liste pour effectuer des actions groupees :
 
-- **Marquer comme envoyee** — Marquez plusieurs factures brouillon en une fois comme envoyees
-- **Marquer comme payees** — Enregistrez le paiement de plusieurs factures
-- **Archiver** — Deplacez les factures vers les archives
-- **Supprimer** — Supprimez definitivement des factures
+- **Marquer comme envoyee** -- Marquez plusieurs factures brouillon en une fois comme envoyees
+- **Marquer comme payees** -- Enregistrez le paiement de plusieurs factures
+- **Archiver** -- Deplacez les factures vers les archives
+- **Supprimer** -- Supprimez definitivement des factures
 
 La suppression definitive d'une facture (suppression individuelle, action groupee, vidage de la corbeille ou suppression totale) efface le lien avec les depenses associees. Ces depenses reviennent dans la liste des depenses non facturees et peuvent etre ajoutees a une autre facture.
 
-La finalisation groupee applique les memes controles de TVA et de statut que pour l'envoi d'une seule facture. Les factures qui echouent a un controle sont ignorees; l'ecran de resultats indique pourquoi.
+La finalisation groupée applique les memes controles de TVA et de statut que pour l'envoi d'une seule facture. Les factures qui echouent a un controle sont ignorees; l'ecran de resultats indique pourquoi.
 
 ## Liens de paiement
 
@@ -176,20 +176,20 @@ Pour rembourser un paiement :
 
 Le module de facturation prend en charge plusieurs types de documents :
 
-- **Facture** — Document de facturation standard
-- **Avoir** — Ajustement pour remboursements ou corrections
-- **Rappel** — Rappel de paiement pour les factures en retard
+- **Facture** -- Document de facturation standard
+- **Avoir** -- Ajustement pour remboursements ou corrections
+- **Rappel** -- Rappel de paiement pour les factures en retard
 
 ## Filtrage et recherche
 
 Utilisez la barre de filtre pour affiner vos factures :
 
-- **Statut** — Brouillon, Envoyee, En retard, Payee, Annulee
-- **Client** — Filtrer par client specifique
-- **Projet** — Filtrer par projet lie
-- **Plage de dates** — Filtrer par date de facture ou d'echeance
-- **Recherche** — Rechercher par numero de facture, nom de client, reference ou notes
-- **Liens profonds** — Les notifications et e-mails pointant directement vers une facture effacent toute plage de dates active a l'ouverture de la page, pour que la facture ne soit pas masquee par un filtre existant
+- **Statut** -- Brouillon, Envoyee, En retard, Payee, Annulee
+- **Client** -- Filtrer par client specifique
+- **Projet** -- Filtrer par projet lie
+- **Plage de dates** -- Filtrer par date de facture ou d'echeance
+- **Recherche** -- Rechercher par numero de facture, nom de client, reference ou notes
+- **Liens profonds** -- Les notifications et e-mails pointant directement vers une facture effacent toute plage de dates active a l'ouverture de la page, pour que la facture ne soit pas masquee par un filtre existant
 
 ## Export
 
