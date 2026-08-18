@@ -127,6 +127,8 @@ The depreciable basis equals the capitalized cost that the ledger posts to the a
 
 Editing the category, date, amount, VAT treatment, private-use percentage, useful life or residual value on an existing expense re-triggers the recompute. If any existing depreciation line already falls inside a locked VAT period, the recompute is refused so the filed return is not restated silently. Toggling an expense out of an investment-flagged category cleans up the depreciation lines too.
 
+An investment whose own date is still in an open period can still hit a locked schedule if its depreciation lines run into a later, locked VAT period. In that case the form shows the `DEPRECIATION_SCHEDULE_LOCKED` error instead of `PERIOD_LOCKED`. Use the **Temporary unlock** action for that period on the [VAT page](/features/vat) and retry the edit.
+
 ## Linking and filtering
 
 Link expenses to:

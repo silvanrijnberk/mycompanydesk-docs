@@ -21,6 +21,8 @@ Wanneer je een factuur verstuurt, wordt een unieke **betaallink** gegenereerd. W
 
 Als een klant meerdere facturen heeft, toont het portaal ook een lijst met elke factuur, creditnota en de huidige status. De kaartjes "Openstaand" en "Achterstallig" boven de tabel tellen het **restant per document** op, niet het bruto totaal. Een factuur van € 1.000 met een deelbetaling van € 400 telt dus € 600 mee in het openstaande bedrag, en een creditnota die al is verrekend met zijn bronfactuur telt € 0 mee zodat hij niet twee keer wordt afgetrokken. "Achterstallig" wordt afgeleid uit de vervaldatum: elke verzonden of openstaande factuur met een vervaldatum vóór vandaag telt daarin mee, zodat het kaartje altijd actueel blijft, ook al hebben facturen zelden nog de legacy-status `overdue`.
 
+Conceptfacturen verschijnen nooit in de portaallijst. Een portaal-link wordt alleen aangemaakt wanneer een factuur wordt verstuurd, dus onverstuurde concepten hebben geen klantzijde link en zijn niet via het portaal te bekijken.
+
 ### Factuurweergave
 
 Het portaal toont een overzichtelijke, huisstijl-conforme weergave van de factuur inclusief:
@@ -65,7 +67,7 @@ Dit creëert een professionele, consistente ervaring voor je klanten.
 
 ## Bevroren factuurkopie
 
-De factuurweergave en PDF-download worden weergegeven op basis van een momentopname die bij het versturen wordt gemaakt. Die momentopname bevriest je bedrijfsgegevens, klantgegevens, documenttaal en huisstijl zoals die op dat moment waren. Klanten zien de factuur daarom precies zoals hij verstuurd is, ook als je later instellingen of het klantrecord wijzigt. Conceptfacturen hebben nog geen momentopname en worden met actuele gegevens weergegeven.
+De factuurweergave en PDF-download worden weergegeven op basis van een momentopname die bij het versturen wordt gemaakt. Die momentopname bevriest je bedrijfsgegevens, klantgegevens, documenttaal en huisstijl zoals die op dat moment waren. Klanten zien de factuur daarom precies zoals hij verstuurd is, ook als je later instellingen of het klantrecord wijzigt. Conceptfacturen hebben nog geen momentopname en zijn niet via het portaal te bekijken, omdat een portaal-link pas wordt aangemaakt bij het versturen.
 
 ## Toegangsbeveiliging
 

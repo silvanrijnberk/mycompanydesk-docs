@@ -134,6 +134,8 @@ Die abschreibungsfähige Basis entspricht den aktivierten Kosten, die die Buchha
 
 Das Bearbeiten von Kategorie, Datum, Betrag, USt.-Behandlung, Privatnutzungsanteil, Nutzungsdauer oder Restwert bei einer bestehenden Ausgabe löst eine Neuberechnung aus. Wenn eine bestehende Abschreibungszeile bereits in eine gesperrte USt.-Periode fällt, wird die Neuberechnung abgelehnt, damit die eingereichte Erklärung nicht stillschweigend geändert wird. Das Zurückstufen einer Investitionsausgabe in eine Nicht-Investitionskategorie löscht die Abschreibungszeilen.
 
+Eine Investition, deren eigenes Datum noch in einer offenen Periode liegt, kann trotzdem auf einen gesperrten Plan stoßen, wenn ihre Abschreibungszeilen in eine spätere, gesperrte MwSt.-Periode reichen. In diesem Fall zeigt das Formular den Code `DEPRECIATION_SCHEDULE_LOCKED` statt `PERIOD_LOCKED`. Verwenden Sie die Aktion **Temporär entsperren** für diesen Zeitraum auf der [MwSt.-Seite](/de/features/vat) und wiederholen Sie die Bearbeitung.
+
 ## Ausgaben verknüpfen
 
 Verknüpfen Sie Ausgaben mit:

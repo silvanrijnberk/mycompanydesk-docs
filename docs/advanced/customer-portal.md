@@ -21,6 +21,8 @@ When you send an invoice, a unique **payment link** is generated. When your cust
 
 When a customer has several invoices, the portal also shows a list with every invoice, credit note, and their current status. The "Open" and "Overdue" summary cards above the table add up the **remaining balance** per document, not the gross total. So a €1,000 invoice with a €400 partial payment contributes €600 to the open amount, and a credit note that has already been applied to its parent invoice contributes €0 so it is not subtracted twice. "Overdue" is derived from the due date: any sent or open invoice with a due date before today is counted there, so the card stays current even when invoices rarely carry the legacy `overdue` status.
 
+Draft invoices never appear in the portal list. A portal link is only generated when an invoice is sent, so unsent drafts have no customer-facing link and cannot be viewed in the portal.
+
 ### Invoice view
 
 The portal shows a clean, branded view of the invoice including:
@@ -65,7 +67,7 @@ This creates a professional, consistent experience for your customers.
 
 ## Frozen invoice copy
 
-The invoice view and PDF download are rendered from a snapshot taken when the invoice is sent. That snapshot freezes your company details, customer details, document language, and branding as they were at send time. Customers therefore see the invoice exactly as it was sent, even if you later update your workspace settings or the customer record. Drafts do not have a snapshot yet, so they render with live details.
+The invoice view and PDF download are rendered from a snapshot taken when the invoice is sent. That snapshot freezes your company details, customer details, document language, and branding as they were at send time. Customers therefore see the invoice exactly as it was sent, even if you later update your workspace settings or the customer record. Drafts do not have a snapshot yet and cannot be viewed in the portal, because a portal link is only generated when the invoice is sent.
 
 ## Access security
 

@@ -21,6 +21,8 @@ Wenn Sie eine Rechnung versenden, wird ein eindeutiger **Zahlungslink** generier
 
 Wenn ein Kunde mehrere Rechnungen hat, zeigt das Portal auch eine Liste mit jeder Rechnung, Gutschrift und dem aktuellen Status. Die Zusammenfassungskarten "Offen" und "Überfällig" über der Tabelle addieren den **Restbetrag pro Beleg**, nicht den Bruttobetrag. Eine Rechnung über 1.000 € mit einer Teilzahlung von 400 € trägt also 600 € zum offenen Betrag bei, und eine Gutschrift, die bereits mit ihrer Ursprungsrechnung verrechnet wurde, trägt 0 € bei, damit sie nicht zweimal abgezogen wird. "Überfällig" leitet sich aus dem Fälligkeitsdatum ab: jede versendete oder offene Rechnung mit einem Fälligkeitsdatum vor heute wird dort gezählt, damit die Karte auch dann aktuell bleibt, wenn Rechnungen nur noch selten den Legacy-Status `overdue` tragen.
 
+Entwürfe erscheinen nie in der Rechnungsliste. Ein Portal-Link wird erst erzeugt, wenn eine Rechnung versendet wird; unversendete Entwürfe haben daher keine kundenseitige Ansicht und können nicht über das Portal eingesehen werden.
+
 ### Rechnungsansicht
 
 Das Portal zeigt eine übersichtliche, gebrandete Ansicht der Rechnung, einschließlich:
@@ -65,7 +67,7 @@ Dies schafft ein professionelles, konsistentes Erlebnis für Ihre Kunden.
 
 ## Eingefrorene Rechnungskopie
 
-Rechnungsansicht und PDF-Download werden aus einer Momentaufnahme gerendert, die beim Senden erstellt wird. Diese Momentaufnahme friert Ihre Unternehmensdaten, Kundendaten, Dokumentensprache und Ihr Branding zum Zeitpunkt des Versands ein. Kunden sehen die Rechnung daher genau so, wie sie gesendet wurde, auch wenn Sie später Einstellungen oder den Kundendatensatz ändern. Entwürfe haben noch keine Momentaufnahme und werden mit aktuellen Daten gerendert.
+Rechnungsansicht und PDF-Download werden aus einer Momentaufnahme gerendert, die beim Senden erstellt wird. Diese Momentaufnahme friert Ihre Unternehmensdaten, Kundendaten, Dokumentensprache und Ihr Branding zum Zeitpunkt des Versands ein. Kunden sehen die Rechnung daher genau so, wie sie gesendet wurde, auch wenn Sie später Einstellungen oder den Kundendatensatz ändern. Entwürfe haben noch keine Momentaufnahme und können nicht über das Portal eingesehen werden, weil ein Portal-Link erst beim Versenden erzeugt wird.
 
 ## Zugangssicherheit
 

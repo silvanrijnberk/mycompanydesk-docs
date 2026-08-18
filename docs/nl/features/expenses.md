@@ -164,6 +164,8 @@ De afschrijfbare basis is gelijk aan de geactiveerde waarde die de grootboekpost
 
 Het bewerken van categorie, datum, bedrag, BTW-behandeling, privégebruikpercentage, gebruiksduur of restwaarde op een bestaande uitgave triggert herberekening. Als een bestaande afschrijvingsregel al in een vergrendelde BTW-periode valt, wordt de herberekening geweigerd, zodat de ingediende aangifte niet stilletjes wijzigt. Het terugzetten van een investeringsuitgave naar een niet-investeringscategorie verwijdert de afschrijvingsregels.
 
+Een investering waarvan de eigen datum nog in een open periode valt, kan toch tegen een vergrendeld schema aanlopen als de afschrijvingsregels in een latere, vergrendelde BTW-periode vallen. Dan toont het formulier de foutcode `DEPRECIATION_SCHEDULE_LOCKED` in plaats van `PERIOD_LOCKED`. Gebruik de actie **Tijdelijk ontgrendelen** voor dat tijdvak op de [BTW-pagina](/nl/features/vat) en probeer de wijziging opnieuw.
+
 Treinkaartjes en andere autokosten kun je ook als gewone uitgave boeken via **Uitgaven > Nieuw** met leverancier, bedrag, datum en categorie.
 
 ## Terugkerende uitgaven
