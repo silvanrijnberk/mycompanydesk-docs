@@ -114,7 +114,7 @@ Send a payment reminder for overdue invoices. If your workspace has online payme
 
 Select multiple invoices from the list to perform actions in bulk:
 
-- **Send** — Send multiple draft invoices at once
+- **Mark as sent** — Mark multiple draft invoices as sent at once
 - **Mark as paid** — Record payment for multiple invoices
 - **Archive** — Move invoices to the archive
 - **Delete** — Permanently remove invoices

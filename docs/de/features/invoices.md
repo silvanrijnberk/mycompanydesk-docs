@@ -114,7 +114,7 @@ Senden Sie eine Zahlungserinnerung für überfällige Rechnungen. Wenn Ihr Arbei
 
 Wählen Sie mehrere Rechnungen aus der Liste, um Aktionen in großem Umfang durchzuführen:
 
-- **Senden** — Mehrere Entwurfsrechnungen gleichzeitig versenden
+- **Als versendet markieren** — Mehrere Entwurfsrechnungen gleichzeitig als versendet markieren
 - **Als bezahlt markieren** — Zahlung für mehrere Rechnungen erfassen
 - **Archivieren** — Rechnungen ins Archiv verschieben
 - **Löschen** — Rechnungen dauerhaft entfernen

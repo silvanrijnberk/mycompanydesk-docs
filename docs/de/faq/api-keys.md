@@ -11,4 +11,5 @@ So verwaltest du API-Schlüssel:
 1. Gehe zu Workspace-Einstellungen → API-Schlüssel
 2. Klicke auf „API-Schlüssel erstellen" und gib ihm einen aussagekräftigen Namen
 3. Kopiere den Schlüssel sofort, da er nicht erneut angezeigt wird
-4. Prüfe die Scopes und widerrufe Schlüssel, die du nicht mehr brauchst
+4. Wähle Scopes: **Lesen**, **Schreiben** oder **Admin**
+5. Prüfe die Scopes und widerrufe Schlüssel, die du nicht mehr brauchst
