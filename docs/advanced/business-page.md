@@ -420,6 +420,24 @@ Above the main navigation menu, a **Navbar** panel gives you direct access to th
 
 These settings apply to every page on your site, the same way they do in the Style tab. Changes save automatically with a short debounce after you stop typing. For the visual layout, background style, and button appearance controls, see the [Style tab](#styling-your-site).
 
+## Footer links
+
+The footer editor lives on the **Footer** tab of the navigation editor. It composes the bottom of every published page from two sources: automatic blocks that pull from your pages and company settings, and manual link columns you add yourself.
+
+### Automatic footer blocks
+
+Three switches control content that is generated for you:
+
+- **Show page links automatically** ("Pagina's"): a sitemap column with a link to every live, indexable page on your site. It is on by default for new sites because it helps search engines find every page and prevents orphaned pages. The home page, blog posts, draft pages, password-protected pages, and pages marked "noindex" or hidden from the sitemap are excluded automatically. Hide an individual page from this column by turning off **Show in sitemap** in that page's SEO settings.
+- **Show contact details** ("Contact"): your public email, phone number, and address from your company details.
+- **Show social links** ("Social"): the social URLs saved in your company details.
+
+These blocks appear in your site's own footer styling, below any manual columns. If your design already shows contact or social details, the matching toggle is hidden so nothing appears twice.
+
+### Manual link columns
+
+Below the automatic switches you can add up to six curated footer columns. Each column has a title and a list of links. Use them for legal pages, product categories, or external resources. Links accept internal paths, external HTTPS URLs, email (`mailto:`), or phone (`tel:`).
+
 ## Company merge tokens
 
 Text fields in the site builder can contain merge tokens that pull live company data from your workspace settings. When the published site renders, each token is replaced with the current value from **Company Settings > Business details** (`/settings/bedrijfsgegevens`). This means you can type your company name, address, or contact details once and keep every page in sync automatically.
