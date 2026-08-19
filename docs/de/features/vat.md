@@ -12,7 +12,7 @@ Verfolgen Sie vereinnahmte und gezahlte USt., bereiten Sie Ihre Erklärung vor u
 
 Die USt.-Seite hat drei Reiter: **Übersicht**, **Erklärung** und **Transaktionen**. Der aktive Reiter und der aktive Zeitraum stehen in der URL, sodass Aktualisieren und die Zurücktaste Ihre Position bewahren.
 
-Neben der Reiterleiste sitzt eine seitenweite Zeitraumauswahl (Q1 bis Q4 plus Gesamtjahr); ein Wechsel wirkt auf jede Karte in jedem Reiter. Gibt Ihr Arbeitsbereich monatlich ab, zeigt die Auswahl die zwölf Monate statt Quartale, passend zur Abgabefrequenz in Ihren Steuereinstellungen. Dieselbe Frequenz bestimmt die Zeitraumbezeichnungen bei einer manuellen Korrektur: bei monatlicher Abgabe zeigt sie M01 bis M12, bei vierteljährlicher Abgabe Q1 bis Q4, und bei jährlicher Abgabe bleibt es bei der Jahresoption. Mit dem Jahresumschalter oben auf der Seite wechseln Sie das Jahr.
+Neben der Reiterleiste sitzt eine seitenweite Zeitraumauswahl, die Ihrer Abgabefrequenz folgt. Bei vierteljährlicher Abgabe zeigt sie Q1 bis Q4 plus Gesamtjahr, bei monatlicher Abgabe die zwölf Monate plus Gesamtjahr, und bei jährlicher Abgabe nur die Jahresoption. Ein Wechsel wirkt auf jede Karte in jedem Reiter. Dieselbe Frequenz bestimmt die Zeitraumbezeichnungen bei einer manuellen Korrektur. Mit dem Jahresumschalter oben auf der Seite wechseln Sie das Jahr.
 
 Aktiver Reiter und Zeitraum stehen beide in der URL, sodass Links aus der USt.-Fristen-Erinnerung im Benachrichtigungsbereich, dem Agenda-Fristen-Chip, der Push-Benachrichtigung und der USt.-Zeitraum-Karte in Ausgaben genau den Zeitraum öffnen, auf den die Nachricht sich bezieht, anstatt auf das aktuelle Quartal zurückzufallen.
 
@@ -21,7 +21,7 @@ Aktiver Reiter und Zeitraum stehen beide in der URL, sodass Links aus der USt.-F
 Die Herokarte fasst den gewählten Zeitraum zusammen:
 
 - **Saldo**: Netto-USt. (vereinnahmt minus gezahlt) mit dem Hinweis "te betalen" oder "terug te ontvangen". Der Saldo folgt der Zeitraumauswahl.
-- **Fristenring**: ein runder Countdown zur nächsten Abgabefrist, basierend auf dem Land Ihres Arbeitsbereichs. Rot bei 3 Tagen oder weniger, gelb bis 14 Tage, sonst grün.
+- **Fristenring**: ein runder Countdown zur nächsten Abgabefrist, basierend auf dem Land Ihres Arbeitsbereichs und Ihrer Abgabefrequenz. Rot bei 3 Tagen oder weniger, gelb bis 14 Tage, sonst grün.
 
 <!-- TODO(source-missing): RichardTool 8bd35ae1 führte länderspezifische USt.-Abgabefristen ein (NL, GB, DE und andere). Die genauen Fristregeln pro Land sind noch nicht in sources/ hinterlegt. Vermerken Sie keine konkreten Fristen pro Land, bis ein Mensch sie in sources/ ergänzt hat. -->
 - **MwSt.-Rücklage (BTW-spaarpotje)**: eine vorgeschlagene Rücklage aus dem Zeitraumsaldo plus 10% Puffer, sichtbar, wenn Sie USt. schulden. Steht Ihnen eine Erstattung zu, wird die Kachel zu einer grünen Erstattungskachel.
@@ -38,7 +38,7 @@ Wenn Ihr Unternehmen eine niederländische BV oder NV ist, sendet derselbe USt.-
 
 ### Quartalsleiste
 
-Vier Karten (Q1 bis Q4) mit Umsatz, vereinnahmter USt., gezahlter USt. und Saldo pro Quartal, dazu die Abgabefrist und ein Schlosssymbol auf eingereichten oder gesperrten Quartalen. Ein Klick auf eine Karte wechselt den seitenweiten Zeitraum.
+Vier Karten (Q1 bis Q4) mit Umsatz, vereinnahmter USt., gezahlter USt. und Saldo pro Quartal, dazu die Abgabefrist und ein Schlosssymbol auf eingereichten oder gesperrten Quartalen. Ein Klick auf eine Karte wechselt den seitenweiten Zeitraum. Zukünftige Quartale bleiben leer, bis tatsächliche Daten vorhanden sind; danach zeigen sie wie frühere Quartale den Saldo und ein Status-Badge.
 
 ### Prüfungen vor der Abgabe
 
@@ -172,7 +172,8 @@ Der eingebaute Assistent beantwortet Fragen zu Ihrer Erklärung mit den Zahlen I
 - Stellen Sie den Seitenzeitraum auf den Zeitraum, für den Sie abgeben; jede Karte und jede Kennzahl zieht mit.
 - Gehen Sie die Prüfungen durch, bevor Sie den Reiter Erklärung öffnen; eine saubere Checkliste bedeutet meist, dass die Rubrieken-Übersicht zum Formular der Belastingdienst passt.
 - Nutzen Sie die MwSt.-Rücklage als Ziel für das, was Sie zurücklegen; der Puffer von 10% ist bereits enthalten.
-- Der Fristenring wird bei drei Tagen rot. Nehmen Sie das als hartes Signal zur Abgabe.
+- Der Fristenring folgt Ihrer Abgabefrequenz und wird bei drei Tagen rot. Nehmen Sie das als hartes Signal zur Abgabe.
+- Die USt.-Kachel im Dashboard verwendet dieselbe Abgabefrequenz wie die USt.-Seite, sodass angezeigte Frist und Zeitraum immer zu Ihrem tatsächlichen Abgabetakt passen.
 - Verkaufen Sie B2B in der EU? Öffnen Sie vor der Abgabe die ICP-Karte; das ist eine separate Meldung, die leicht vergessen wird.
 - Markieren Sie einen Zeitraum direkt nach der Abgabe als eingereicht und lassen Sie die automatische Sperre ihn danach schützen.
 - Wenn Sie einen Ausgabenbetrag auf null setzen, wird die abgeleitete USt. sofort gelöscht, sodass eine korrigierte Ausgabe keine veraltete USt. auf der Erklärung hinterlässt.

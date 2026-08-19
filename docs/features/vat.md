@@ -13,7 +13,7 @@ Track collected and paid VAT, prepare your return, and stay ahead of deadlines. 
 
 The VAT page has three tabs: **Overview**, **Filing** and **Transactions** (Overzicht, Aangifte and Transacties when your app language is Dutch). Both the active tab and the active period are kept in the URL, so refresh and the back button preserve your place.
 
-A page-wide period selector (Q1 to Q4 plus full year) sits next to the tab bar; switching it updates every card on every tab. If your workspace files monthly, the selector shows the twelve months instead of quarters, matching the filing frequency in your tax settings. The same filing frequency drives the period labels when you book a manual correction, so monthly filers see M01 to M12, quarterly filers see Q1 to Q4, and yearly filers keep the full-year option. A year switcher at the top of the page moves everything to another year.
+A page-wide period selector sits next to the tab bar and follows the filing frequency in your tax settings. Quarterly filers see Q1 to Q4 plus full year, monthly filers see M01 to M12 plus full year, and yearly filers see the full-year option. Switching it updates every card on every tab. The same filing frequency drives the period labels when you book a manual correction, so monthly filers see M01 to M12, quarterly filers see Q1 to Q4, and yearly filers keep the full-year option. A year switcher at the top of the page moves everything to another year.
 
 The active tab and period are both in the URL, so links from the VAT deadline reminder in your notification panel, the agenda-deadline chip, the push notification, and the VAT-period card in Expenses all open the exact period the message refers to instead of defaulting to the current quarter.
 
@@ -22,7 +22,7 @@ The active tab and period are both in the URL, so links from the VAT deadline re
 The hero summarises the selected period:
 
 - **Balance**: net VAT (collected minus paid) with a "te betalen" or "terug te ontvangen" label. It follows the period selector.
-- **Deadline ring**: a circular countdown to the next filing deadline, computed from your workspace country's schedule. Red when 3 days or fewer remain, amber up to 14 days, green otherwise.
+- **Deadline ring**: a circular countdown to the next filing deadline, computed from your workspace country's schedule and your filing frequency. Red when 3 days or fewer remain, amber up to 14 days, green otherwise.
 
 <!-- TODO(source-missing): RichardTool 8bd35ae1 introduced country-specific VAT filing deadlines (NL, GB, DE, and others). The exact deadline rules per country are not yet in sources/. Do not list specific per-country due dates until a human adds them to sources/. -->
 - **VAT savings pot (BTW-spaarpotje)**: a suggested reserve of the period balance plus a 10% buffer, shown when you owe VAT. When you are due money back, the tile flips to a green refund tile instead.
@@ -39,7 +39,7 @@ If your company is a Dutch BV or NV, the same VAT deadlines toggle also sends a 
 
 ### Quarter strip
 
-Four cards (Q1 to Q4) summarising revenue, VAT collected, VAT paid, and the balance per quarter, along with the filing deadline and a lock badge on filed or locked quarters. Click a card to switch the page-wide period.
+Four cards (Q1 to Q4) summarising revenue, VAT collected, VAT paid, and the balance per quarter, along with the filing deadline and a lock badge on filed or locked quarters. Click a card to switch the page-wide period. Upcoming quarters stay empty until they contain actual data, then they show the balance and a status badge just like past quarters.
 
 ### Pre-filing checks
 
@@ -176,7 +176,8 @@ The built-in assistant can answer questions about your aangifte using your own w
 - Set the page period to the tijdvak you are filing; every card and metric updates together.
 - Run through the pre-filing checks before opening the Filing tab; a clean checklist usually means the rubrieken sheet matches the Belastingdienst form.
 - Use the savings pot as a target for what to set aside; it already includes a 10% buffer.
-- The deadline ring goes red at three days. Treat that as a hard cue to file.
+- The deadline ring follows your filing frequency and goes red at three days. Treat that as a hard cue to file.
+- The dashboard VAT tile uses the same filing frequency as the VAT page, so the upcoming deadline and period it shows always match your actual aangifte rhythm.
 - Selling B2B in the EU? Open the ICP-opgaaf card before filing; it is a separate submission that is easy to forget.
 - Mark a period as filed right after submitting, then let the automatic lock protect it.
 - Zeroing an expense amount clears the derived VAT immediately, so a corrected expense cannot leave stale VAT on the aangifte.

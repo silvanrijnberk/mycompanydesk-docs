@@ -12,7 +12,7 @@ Suivez la TVA collectée et payée, préparez votre déclaration et gardez une l
 
 La page TVA compte trois onglets : **Aperçu**, **Déclaration** et **Transactions**. L'onglet actif et la période active figurent dans l'URL : l'actualisation et le bouton retour conservent votre position.
 
-À côté des onglets se trouve un sélecteur de période valable pour toute la page (Q1 à Q4 plus année complète) ; le changer met à jour chaque carte de chaque onglet. Si votre espace de travail déclare mensuellement, le sélecteur affiche les douze mois au lieu des trimestres, en cohérence avec la fréquence de déclaration de vos réglages fiscaux. La même fréquence détermine les libellés de période lors d'une correction manuelle : les déclarants mensuels voient M01 à M12, les trimestriels Q1 à Q4, et les déclarants annuels conservent l'option année complète. Le sélecteur d'année en haut de la page fait basculer l'ensemble vers une autre année.
+À côté des onglets se trouve un sélecteur de période valable pour toute la page, qui suit la fréquence de déclaration de vos réglages fiscaux. Les déclarants trimestriels voient Q1 à Q4 plus année complète, les déclarants mensuels les douze mois plus année complète, et les déclarants annuels seulement l'option année complète. Le changer met à jour chaque carte de chaque onglet. La même fréquence détermine les libellés de période lors d'une correction manuelle. Le sélecteur d'année en haut de la page fait basculer l'ensemble vers une autre année.
 
 L'onglet actif et la période active figurent tous deux dans l'URL, donc les liens du rappel d'échéance de TVA dans le panneau de notifications, de la puce d'échéance de l'agenda, de la notification push et de la carte de période TVA dans Dépenses ouvrent tous la période exacte mentionnée par le message, au lieu de revenir au trimestre en cours.
 
@@ -21,7 +21,7 @@ L'onglet actif et la période active figurent tous deux dans l'URL, donc les lie
 La carte principale résume la période choisie :
 
 - **Solde** : TVA nette (collectée moins payée) avec la mention "te betalen" ou "terug te ontvangen". Le solde suit le sélecteur de période.
-- **Anneau d'échéance** : un compte à rebours circulaire jusqu'à la prochaine échéance de dépôt, calculé selon le pays de votre espace de travail. Rouge à 3 jours ou moins, orange jusqu'à 14 jours, vert sinon.
+- **Anneau d'échéance** : un compte à rebours circulaire jusqu'à la prochaine échéance de dépôt, calculé selon le pays de votre espace de travail et la fréquence de déclaration. Rouge à 3 jours ou moins, orange jusqu'à 14 jours, vert sinon.
 
 <!-- TODO(source-missing): RichardTool 8bd35ae1 a introduit des échéances de dépôt de TVA spécifiques par pays (NL, GB, DE et autres). Les règles exactes d'échéance par pays ne sont pas encore dans sources/. Ne listez pas de dates spécifiques par pays tant qu'un humain ne les a pas ajoutées à sources/. -->
 - **Provision TVA (BTW-spaarpotje)** : une réserve suggérée égale au solde de la période plus une marge de 10 %, affichée quand vous devez de la TVA. Si un remboursement vous est dû, la tuile devient une tuile verte de remboursement.
@@ -38,7 +38,7 @@ Si votre entreprise est une BV ou une NV néerlandaise, le même interrupteur d'
 
 ### Bande des trimestres
 
-Quatre cartes (Q1 à Q4) résumant par trimestre le chiffre d'affaires, la TVA collectée, la TVA payée et le solde, avec l'échéance de dépôt et un badge de verrouillage sur les trimestres déposés ou verrouillés. Cliquez sur une carte pour changer la période de toute la page.
+Quatre cartes (Q1 à Q4) résumant par trimestre le chiffre d'affaires, la TVA collectée, la TVA payée et le solde, avec l'échéance de dépôt et un badge de verrouillage sur les trimestres déposés ou verrouillés. Cliquez sur une carte pour changer la période de toute la page. Les trimestres à venir restent vides jusqu'à ce qu'ils contiennent de vraies données ; ensuite, ils affichent comme les trimestres passés le solde et un badge d'état.
 
 ### Contrôles avant dépôt
 
@@ -172,7 +172,8 @@ L'assistant intégré répond aux questions sur votre déclaration avec les chif
 - Réglez la période de la page sur celle que vous déclarez ; chaque carte et chaque chiffre suivent.
 - Passez les contrôles en revue avant d'ouvrir l'onglet Déclaration ; une liste propre signifie généralement que la feuille des rubriques correspond au formulaire du Belastingdienst.
 - Utilisez la provision comme objectif de mise de côté ; la marge de 10 % y est déjà incluse.
-- L'anneau d'échéance passe au rouge à trois jours. Prenez-le comme un signal ferme de déposer.
+- L'anneau d'échéance suit la fréquence de déclaration et passe au rouge à trois jours. Prenez-le comme un signal ferme de déposer.
+- La tuile TVA du tableau de bord utilise la même fréquence de déclaration que la page TVA, donc la prochaine échéance et la période affichées correspondent toujours à votre rythme réel de dépôt.
 - Vous vendez en B2B dans l'UE ? Ouvrez la carte ICP-opgaaf avant de déposer ; c'est une déclaration séparée qu'on oublie facilement.
 - Marquez une période comme déposée juste après le dépôt, puis laissez le verrouillage automatique la protéger.
 - Ramener un montant de dépense à zéro efface immédiatement la TVA dérivée, pour qu'une dépense corrigée ne laisse pas de TVA périmée sur la déclaration.
