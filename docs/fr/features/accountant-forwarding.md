@@ -1,6 +1,6 @@
 ---
 title: Transmission au comptable
-last_verified: 2026-08-15
+last_verified: 2026-08-19
 ---
 
 # Transmission au comptable
@@ -31,7 +31,9 @@ Le rythme par defaut pour la plupart des cabinets est hebdomadaire le lundi, car
 
 ### Déductibilité dans l'export
 
-Le détail des dépenses dans l'export transféré contient le nom de la catégorie et la déductibilité réelle utilisée par la déclaration de TVA : le pourcentage de déduction de la catégorie et le montant de TVA déductible. Cela remplace l'ancienne colonne « Déductible » Oui/Non, de sorte que le détail par ligne et le récapitulatif TVA dans le même export s'accordent.
+Le fichier `uitgaven.csv` de l'export transfere se termine par une colonne indiquant le pourcentage de déduction de la catégorie. Cela remplace l'ancienne colonne « Déductible » Oui/Non : le pourcentage indique exactement au comptable quelle part de la TVA est déductible, et le montant de TVA déductible figure toujours sur la même ligne, de sorte que le détail par ligne correspond au récapitulatif TVA.
+
+Le fichier `leesmij.txt` inclus explique que ce pourcentage ne couvre qu'une partie de l'écart entre la TVA sur le justificatif et le montant récupéré sur la déclaration. D'autres facteurs, comme la TVA d'autoliquidation, la TVA étrangère ou l'usage privé, peuvent aussi modifier le montant déductible. Si le comptable veut vérifier une ligne, il peut ouvrir la dépense dans l'application pour voir le traitement de TVA.
 
 ### Obligation de justificatif
 

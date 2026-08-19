@@ -1,6 +1,6 @@
 ---
 title: Doorsturen naar boekhouder
-last_verified: 2026-08-15
+last_verified: 2026-08-19
 ---
 
 # Doorsturen naar boekhouder
@@ -31,7 +31,9 @@ De standaardcadans voor de meeste kantoren is wekelijks op maandag, omdat één 
 
 ### Aftrekbaarheid in de export
 
-De uitgavedetails in de doorgestuurde export bevatten de categorienaam en de werkelijke aftrekbaarheid die de BTW-aangifte toepast: het aftrekspercentage van de categorie en het aftrekbare BTW-bedrag. Dit vervangt de oudere kolom "Aftrekbaar" met ja/nee, zodat de regeldetails en het BTW-overzicht in dezelfde export met elkaar overeenstemmen.
+Het bestand `uitgaven.csv` in de doorgestuurde export eindigt met een kolom waarin het aftrekspercentage van de categorie staat. Dat vervangt de oudere kolom "Aftrekbaar" met ja/nee: het percentage geeft de boekhouder precies aan welk deel van de btw aftrekbaar is, en op dezelfde regel staat nog steeds het aftrekbare btw-bedrag zodat de detailregel overeenkomt met het btw-overzicht.
+
+De bijgevoegde `leesmij.txt` legt uit dat dit percentage maar een deel van het verschil verklaart tussen de btw op de bon en het bedrag dat in de aangifte wordt teruggevraagd. Andere factoren, zoals verlegde btw, buitenlandse btw of privégebruik, kunnen het aftrekbare bedrag ook beïnvloeden. Wil de boekhouder een regel controleren, dan kan hij die in de app openen om de btw-behandeling te zien.
 
 ### Bonplicht
 
