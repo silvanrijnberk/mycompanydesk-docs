@@ -143,6 +143,8 @@ Wanneer je een factuur verstuurt, wordt een unieke betaallink gegenereerd. Je kl
 
 De betaling wordt automatisch geregistreerd en de factuurstatus wordt bijgewerkt naar **Betaald**.
 
+Als een factuur is geannuleerd nadat hij is verstuurd, werkt de betaallink niet meer. Klikt een klant op de link in de oude e-mail of PDF, dan ziet hij een melding dat de factuur is geannuleerd en niet meer online betaald kan worden.
+
 ## Online betalingen
 
 Schakel online factuurbetalingen in door je eigen Mollie- of Stripe-account te koppelen:
