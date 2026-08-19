@@ -12,7 +12,7 @@ Volg ontvangen en betaalde BTW, bereid je aangifte voor en blijf deadlines voor.
 
 De BTW-pagina heeft drie tabbladen: **Overzicht**, **Aangifte** en **Transacties**. Zowel het actieve tabblad als de actieve periode staan in de URL, dus verversen en de terugknop bewaren je plek.
 
-Naast de tabbladen staat een paginabrede periodekiezer (Q1 tot en met Q4 plus heel jaar); wisselen werkt door in elke kaart op elk tabblad. Doet je werkruimte maandaangifte, dan toont de kiezer de twaalf maanden in plaats van kwartalen, passend bij de aangiftefrequentie in je belastinginstellingen. Dezelfde frequentie bepaalt de periodelabels bij een handmatige correctie: maandaangevers zien M01 tot en met M12, kwartaalaangevers Q1 tot en met Q4, en jaaraangevers blijven bij de jaarsoptie. Met de jaarwisselaar bovenaan de pagina zet je alles naar een ander jaar.
+Naast de tabbladen staat een paginabrede periodekiezer die meebeweegt met je aangiftefrequentie. Kwartaalaangevers zien Q1 tot en met Q4 plus heel jaar, maandaangevers zien M01 tot en met M12 plus heel jaar, en jaaraangevers zien alleen de jaarsoptie. Wisselen van periode werkt door in elke kaart op elk tabblad. Dezelfde frequentie bepaalt de periodelabels bij een handmatige correctie. Met de jaarwisselaar bovenaan de pagina zet je alles naar een ander jaar.
 
 Het actieve tabblad en de periode staan beide in de URL, dus links van de BTW-deadlineherinnering in je meldingenpaneel, de agendachip, de pushmelding en de BTW-tijdvak-kaart in Uitgaven openen allemaal het tijdvak dat de melding noemt, in plaats van terug te vallen op het huidige kwartaal.
 
@@ -21,7 +21,7 @@ Het actieve tabblad en de periode staan beide in de URL, dus links van de BTW-de
 De herokaart vat de gekozen periode samen:
 
 - **Saldo**: netto BTW (ontvangen minus betaald) met het label "te betalen" of "terug te ontvangen". Het volgt de periodekiezer.
-- **Deadlinering**: een ronde aftelring naar de volgende aangiftedeadline, berekend op basis van het land van je werkruimte. Rood bij 3 dagen of minder, oranje tot 14 dagen, anders groen.
+- **Deadlinering**: een ronde aftelring naar de volgende aangiftedeadline, berekend op basis van het land van je werkruimte en je aangiftefrequentie. Rood bij 3 dagen of minder, oranje tot 14 dagen, anders groen.
 
 <!-- TODO(source-missing): RichardTool 8bd35ae1 introduceerde landsspecifieke BTW-aangiftedeadlines (NL, GB, DE en andere). De exacte deadline-regels per land staan nog niet in sources/. Vermeld geen specifieke deadlines per land totdat een mens ze aan sources/ heeft toegevoegd. -->
 - **BTW-spaarpotje**: een voorgestelde reservering van het periodesaldo plus een buffer van 10%, zichtbaar wanneer je BTW moet betalen. Krijg je geld terug, dan verandert de tegel in een groene teruggavetegel.
@@ -38,7 +38,7 @@ Als je bedrijf een Nederlandse BV of NV is, stuurt dezelfde BTW-deadlines-schake
 
 ### Kwartaalstrook
 
-Vier kaarten (Q1 tot en met Q4) met per kwartaal de omzet, ontvangen BTW, betaalde BTW en het saldo, plus de aangiftedeadline en een slotbadge op ingediende of vergrendelde kwartalen. Klik op een kaart om de paginabrede periode te wisselen.
+Vier kaarten (Q1 tot en met Q4) met per kwartaal de omzet, ontvangen BTW, betaalde BTW en het saldo, plus de aangiftedeadline en een slotbadge op ingediende of vergrendelde kwartalen. Klik op een kaart om de paginabrede periode te wisselen. Toekomstige kwartalen blijven leeg totdat er daadwerkelijk gegevens in staan; daarna tonen ze net als eerdere kwartalen het saldo en een statusbadge.
 
 ### Controles voor het indienen
 
@@ -172,7 +172,8 @@ De ingebouwde assistent beantwoordt vragen over je aangifte met je eigen werkrui
 - Zet de paginaperiode op het tijdvak waarvoor je aangifte doet; elke kaart en elk cijfer beweegt mee.
 - Loop de controles langs voordat je het tabblad Aangifte opent; een schone checklist betekent meestal dat het rubriekenoverzicht klopt met het formulier van de Belastingdienst.
 - Gebruik het spaarpotje als doel voor wat je opzijzet; de buffer van 10% zit er al in.
-- De deadlinering wordt rood bij drie dagen. Zie dat als een hard signaal om aangifte te doen.
+- De deadlinering volgt je aangiftefrequentie en wordt rood bij drie dagen. Zie dat als een hard signaal om aangifte te doen.
+- De BTW-tegel op het dashboard gebruikt dezelfde aangiftefrequentie als de BTW-pagina, zodat de getoonde deadline en periode altijd aansluiten bij je werkelijke aangifteritme.
 - Verkoop je B2B in de EU? Open de ICP-opgaafkaart voordat je indient; het is een aparte opgave die je makkelijk vergeet.
 - Markeer een periode direct na het indienen als ingediend en laat de automatische vergrendeling hem daarna beschermen.
 - Een uitgavebedrag op nul zetten wist de afgeleide BTW meteen, zodat een gecorrigeerde uitgave geen verouderde BTW op de aangifte achterlaat.
