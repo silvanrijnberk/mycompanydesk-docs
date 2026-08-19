@@ -72,6 +72,15 @@ La même page propose une **sauvegarde complète** : toutes vos données dans un
 
 Les exports ne contiennent que les données auxquelles vous avez accès. Les versions PDF des factures se téléchargent séparément, depuis la page de chaque facture.
 
+## Données de localisation
+
+Certains parcours mobiles peuvent utiliser votre position GPS lorsque vous le choisissez explicitement :
+
+- Rechercher des **clients à proximité** depuis la liste des clients.
+- Utiliser la **position actuelle** lors du remplissage d'un champ d'adresse.
+
+Nous ne lisons votre position que dans ces deux cas et uniquement dans l'application. Nous la convertissons en adresse ou en liste de clients filtrée, et nous ne stockons pas les coordonnées brutes. Vous pouvez refuser ou retirer l'autorisation à tout moment dans les paramètres de votre appareil.
+
 ## Conseils
 
 - Exportez régulièrement vos données comme sauvegarde
