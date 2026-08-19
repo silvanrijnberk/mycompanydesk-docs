@@ -143,6 +143,8 @@ Wenn Sie eine Rechnung versenden, wird ein eindeutiger Zahlungslink generiert. I
 
 Die Zahlung wird automatisch erfasst und der Rechnungsstatus wird auf **Bezahlt** aktualisiert.
 
+Wird eine Rechnung nach dem Versand storniert, funktioniert der Zahlungslink nicht mehr. Wenn ein Kunde auf den Link in der alten E-Mail oder PDF klickt, sieht er eine Nachricht, dass die Rechnung storniert wurde und nicht mehr online bezahlt werden kann.
+
 ## Online-Zahlungen
 
 Aktivieren Sie Online-Rechnungszahlungen, indem Sie Ihr eigenes Mollie- oder Stripe-Konto verbinden:

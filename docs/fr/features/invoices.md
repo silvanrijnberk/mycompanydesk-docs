@@ -143,6 +143,8 @@ Lorsque vous envoyez une facture, un lien de paiement unique est genere. Votre c
 
 Le paiement est automatiquement enregistre et le statut de la facture passe a **Payee**.
 
+Si une facture est annulee apres avoir ete envoyee, le lien de paiement cesse de fonctionner. Si un client clique sur le lien dans l'ancien e-mail ou le PDF, il voit un message indiquant que la facture a ete annulee et ne peut plus etre payee en ligne.
+
 ## Paiements en ligne
 
 Activez les paiements de factures en ligne en connectant votre propre compte Mollie ou Stripe :
