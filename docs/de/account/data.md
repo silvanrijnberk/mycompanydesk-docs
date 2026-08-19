@@ -72,6 +72,15 @@ Dieselbe Seite bietet eine **komplette Sicherung**: alle Ihre Daten in einer JSO
 
 Exporte enthalten nur die Daten, auf die Sie Zugriff haben. PDF-Versionen von Rechnungen laden Sie separat herunter, auf der Seite der jeweiligen Rechnung.
 
+## Standortdaten
+
+Einige mobile Abläufe können Ihren GPS-Standort verwenden, wenn Sie dies ausdrücklich wählen:
+
+- In der Kundenliste **Kunden in der Nähe** suchen.
+- Beim Ausfüllen eines Adressfeldes den **aktuellen Standort** verwenden.
+
+Wir lesen Ihren Standort nur in diesen beiden Fällen und nur in der App. Wir wandeln ihn in eine Adresse oder eine gefilterte Kundenliste um und speichern die Rohkoordinaten nicht. Sie können die Berechtigung jederzeit in den Einstellungen Ihres Geräts verweigern oder widerrufen.
+
 ## Tipps
 
 - Exportieren Sie Ihre Daten regelmäßig als Sicherung

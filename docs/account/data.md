@@ -72,6 +72,15 @@ The same page offers a **complete backup**: all your data in one JSON file. Use 
 
 Exports contain only the data you have access to. PDF versions of invoices are downloaded separately, from each invoice's own page.
 
+## Location data
+
+Some mobile flows can use your GPS location when you explicitly choose to:
+
+- Find **customers nearby** from the customer list.
+- Use **current location** when completing an address field.
+
+We only read your location in those two cases and only inside the app. We turn it into an address or a filtered customer list, and we do not store the raw coordinates. You can refuse or revoke the permission at any time in your device settings.
+
 ## Tips
 
 - Export your data regularly as a backup

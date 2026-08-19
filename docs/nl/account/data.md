@@ -72,6 +72,15 @@ Dezelfde pagina biedt een **volledige back-up**: al je gegevens in één JSON-be
 
 Exports bevatten alleen gegevens waar jij toegang toe hebt. PDF-versies van facturen download je apart, op de pagina van elke factuur.
 
+## Locatiegegevens
+
+Sommige mobiele stromingen kunnen je GPS-locatie gebruiken als je daar zelf voor kiest:
+
+- **Klanten in de buurt** zoeken vanuit de klantenlijst.
+- **Huidige locatie** gebruiken bij het invullen van een adresveld.
+
+We lezen je locatie alleen in die twee gevallen en alleen in de app. We zetten die om naar een adres of een gefilterde klantenlijst, en we slaan de ruwe coördinaten niet op. Je kunt de toestemming altijd weigeren of intrekken in de instellingen van je apparaat.
+
 ## Tips
 
 - Exporteer je gegevens regelmatig als back-up
