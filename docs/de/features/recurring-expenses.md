@@ -81,6 +81,10 @@ Jede generierte Ausgabe:
 
 Wurde eine Ausgabe aus einer wiederkehrenden Vorlage erstellt, zeigt die Ausgabendetailseite einen Banner **Automatisch erstellt aus wiederkehrender Ausgabe**. Solange die Vorlage noch existiert, führt der Link zurück zu ihr, sodass Sie mit einem Klick von der Ausgabe zur Vorlage springen. Wurde die Vorlage inzwischen gelöscht, erscheint nur noch Text statt eines toten Links.
 
+## Wiederholte Versuche bei gesperrter Periode
+
+Ist eine Periode beim Laufen des Zeitplans vorübergehend gesperrt, versucht MyCompanyDesk die Erstellung später erneut, anstatt die Periode dauerhaft zu überspringen. Sie erhalten eine Benachrichtigung, wenn die Periode nach den Wiederholungen weiterhin gesperrt ist.
+
 ## Was passiert, wenn sich mein Tarif ändert?
 
 Wiederkehrende Ausgaben sind Teil des Office-Tarifs. Bei einem Upgrade von Desk auf Office startet die automatische Erstellung am nächsten Fälligkeitsdatum. Bei einer Herunterstufung von Office auf Desk wird die Erstellung automatisch pausiert. Die Vorlage und bereits erstellte Ausgaben bleiben in Ihrem Arbeitsbereich, und beim späteren Upgrade wird der Zeitplan fortgesetzt.

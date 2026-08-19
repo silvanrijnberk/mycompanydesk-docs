@@ -1,6 +1,6 @@
 ---
 title: "Convert a quote to an invoice"
-last_verified: 2026-05-09
+last_verified: 2026-08-07
 chatbot:
   triggers:
     - "convert quote to invoice"
@@ -29,3 +29,5 @@ So wandelst du ein Angebot in eine Rechnung um:
 3. Es wird ein neuer Rechnungsentwurf mit kopierten Daten erstellt
 4. Faelligkeit und Zahlungsbedingungen pruefen
 5. Speichern und senden
+
+Sie koennen MyCompanyDesk auch automatisch eine Entwurfsrechnung erstellen lassen, sobald der Kunde das Angebot annimmt. Aktivieren Sie die Option in **Einstellungen > Rechnungen**.

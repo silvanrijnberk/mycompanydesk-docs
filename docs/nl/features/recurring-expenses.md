@@ -81,6 +81,10 @@ Elke gegenereerde uitgave:
 
 Als een uitgave is aangemaakt vanuit een terugkerend sjabloon, toont de uitgavedetailpagina een banner **Automatisch aangemaakt vanuit terugkerende uitgave**. Zolang het sjabloon bestaat, klik je op de banner om in één keer naar het sjabloon te springen dat de uitgave heeft gegenereerd. Is het sjabloon inmiddels verwijderd, dan staat er alleen tekst in plaats van een dode link.
 
+## Opnieuw proberen bij een vergrendelde periode
+
+Als een periode tijdelijk vergrendeld is op het moment dat het schema loopt, probeert MyCompanyDesk het later opnieuw in plaats van die periode definitief over te slaan. Je krijgt een melding als de periode na de pogingen nog steeds geblokkeerd is.
+
 ## Wat gebeurt er als mijn pakket wijzigt?
 
 Terugkerende uitgaven horen bij het Office-abonnement. Als je van Desk naar Office upgradet, start de automatische aanmaak vanaf de eerstvolgende vervaldatum. Als je van Office naar Desk downgradet, wordt de aanmaak automatisch gepauzeerd. Het sjabloon en de uitgaven die al zijn aangemaakt blijven in je werkruimte staan, en bij een latere upgrade wordt het schema hervat.

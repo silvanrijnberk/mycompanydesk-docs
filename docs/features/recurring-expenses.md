@@ -81,6 +81,10 @@ Each generated expense:
 
 If an expense was created from a recurring template, the expense detail page shows an **automatically created from recurring expense** banner. When the template still exists, the banner links back to it so you can jump straight from the expense to the template that generated it. If the template has since been deleted, the banner shows plain text instead of a dead link.
 
+## Retries when a period is locked
+
+If a period is temporarily locked when the scheduler runs, MyCompanyDesk retries the generation later instead of permanently skipping that period. You receive a notification if the period stays blocked after the retries.
+
 ## What happens if my plan changes?
 
 Recurring expenses are part of the Office plan. If you upgrade from Desk to Office, scheduled generation starts from the next due date. If you downgrade from Office to Desk, generation pauses automatically; existing templates and previously generated expenses stay in your workspace, and generation resumes when you upgrade again.

@@ -98,6 +98,12 @@ Sobald ein Kunde Ihr Angebot annimmt, wandeln Sie es mit einem Klick in eine Rec
 4. Nehmen Sie bei Bedarf Anpassungen vor
 5. Speichern und versenden Sie die Rechnung
 
+## Entwurfsrechnung automatisch nach Annahme vorbereiten
+
+Sie können MyCompanyDesk auch eine Entwurfsrechnung automatisch vorbereiten lassen, sobald ein Kunde ein Angebot annimmt. Aktivieren Sie die Option in **Einstellungen > Rechnungen**.
+
+Wenn die Option aktiv ist, erstellt die App eine Entwurfsrechnung, sobald das Angebot angenommen wird. Sie prüfen den Entwurf weiterhin selbst und senden ihn ab.
+
 ## Angebotsanfragen
 
 Kunden können Angebotsanfragen über Ihren [Website-Builder](/de/advanced/business-page) einreichen. Diese erscheinen unter **Angebote > Anfragen**.

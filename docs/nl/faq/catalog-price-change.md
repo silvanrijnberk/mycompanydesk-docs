@@ -1,6 +1,6 @@
 ---
 title: Alle prijzen tegelijk aanpassen
-last_verified: 2026-08-06
+last_verified: 2026-08-07
 chatbot:
   triggers:
     - "alle prijzen aanpassen"
@@ -29,6 +29,8 @@ Ga naar **Aanbod** en klik op **Prijzen aanpassen** om in één keer meerdere pr
    - **Op hele euro's** rondt af op hele euro's.
 3. Klik op **Bekijk wat er verandert** om een overzicht te zien met per item de oude en nieuwe prijs.
 4. Controleer het overzicht en klik op **Prijzen aanpassen** om toe te passen.
+
+Terwijl je een percentage kiest, kan een inflatiehint gepubliceerde prijsindexcijfers van het CBS tonen. Je ziet verschillende series met hun percentage en meetvenster. Klik op een cijfer om het veld in te vullen, of voer zelf een waarde in.
 
 Het overzicht toont ook hoeveel items zijn overgeslagen omdat ze geen prijs hebben (bijvoorbeeld prijs-op-aanvraag items). En je krijgt een waarschuwing als een actieve aanbieding hierdoor stopt, omdat de aanbiedingsprijs dan niet meer onder de normale prijs ligt.
 

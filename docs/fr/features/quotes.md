@@ -98,6 +98,12 @@ Une fois que votre client accepte votre devis, convertissez-le en facture en un 
 4. Effectuez les ajustements necessaires
 5. Enregistrez et envoyez la facture
 
+## Brouillon de facture automatique apres signature
+
+Vous pouvez aussi demander a MyCompanyDesk de preparer un brouillon de facture des qu'un client signe un devis. Activez l'option dans **Parametres > Factures**.
+
+Quand l'option est activee, l'application cree un brouillon de facture a la signature du devis. Vous conservez le controle: vous verifiez le brouillon et l'envoyez vous-meme.
+
 ## Demandes de devis
 
 Les clients peuvent soumettre des demandes de devis via votre [constructeur de site](/fr/advanced/business-page). Celles-ci apparaissent dans **Devis > Demandes**.

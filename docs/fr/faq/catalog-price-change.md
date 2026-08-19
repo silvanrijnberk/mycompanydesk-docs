@@ -1,6 +1,6 @@
 ---
 title: Modifier tous les prix en une fois
-last_verified: 2026-08-06
+last_verified: 2026-08-07
 chatbot:
   triggers:
     - "modifier tous les prix"
@@ -29,6 +29,8 @@ Rendez-vous dans **Offre** et cliquez sur **Modifier les prix** pour mettre à j
    - **À l'euro près** arrondit à l'euro entier.
 3. Cliquez sur **Voir les changements** pour ouvrir un aperçu qui liste chaque article avec son ancien et son nouveau prix.
 4. Vérifiez la liste, puis cliquez sur **Modifier les prix** pour appliquer.
+
+Pendant que vous choisissez un pourcentage, une aide sur l'inflation peut afficher les chiffres d'indices de prix publiés par le CBS. Elle liste différentes séries avec leur variation en pourcentage et leur fenêtre de mesure. Cliquer sur un chiffre remplit le champ de pourcentage, ou vous pouvez saisir votre propre valeur.
 
 L'aperçu indique aussi combien d'articles sont ignorés parce qu'ils n'ont pas de prix (par exemple, les articles avec prix sur demande). Et il vous avertit si une promotion en cours cesserait d'être active, car le prix promotionnel ne serait alors plus inférieur au prix normal.
 

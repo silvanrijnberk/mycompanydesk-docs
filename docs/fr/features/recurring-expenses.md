@@ -81,6 +81,10 @@ Chaque depense generee :
 
 Si une depense a ete creee a partir d'un modele recurrent, la page de detail de la depense affiche un bandeau **Cree automatiquement depuis une depense recurrente**. Tant que le modele existe encore, le bandeau renvoie vers celui-ci et vous pouvez passer en un clic de la depense au modele qui l'a generee. S'il a ete supprime entre-temps, le bandeau affiche un simple texte au lieu d'un lien mort.
 
+## Reessai en cas de periode bloquee
+
+Si une periode est temporairement bloquee au moment ou la planification s'execute, MyCompanyDesk reessaie la creation plus tard au lieu de sauter definitivement cette periode. Vous recevez une notification si la periode reste bloquee apres les reessais.
+
 ## Que se passe-t-il si ma formule change ?
 
 Les dépenses récurrentes font partie de la formule Office. En montant de version de Desk vers Office, la génération automatique démarre à la prochaine échéance. Si vous rétrogradez d'Office vers Desk, la génération se met en pause automatiquement. Le modèle et les dépenses déjà créées restent dans votre espace de travail, et le planning reprend lors d'une nouvelle montée de version.
