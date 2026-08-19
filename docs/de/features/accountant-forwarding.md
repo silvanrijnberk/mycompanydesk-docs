@@ -33,7 +33,7 @@ Der Standardrhythmus fuer die meisten Bueros ist woechentlich am Montag, weil ei
 
 Die Datei `uitgaven.csv` in der weitergeleiteten Exportdatei enthaelt am Ende eine Spalte mit dem Abzugsprozentsatz der Kategorie. Damit wird die aeltere Spalte "Abzugsfaehig" mit Ja/Nein ersetzt: der Prozentsatz zeigt dem Steuerberater genau, welcher Teil der MwSt. abzugsfaehig ist, und in derselben Zeile steht weiterhin der abzugsfaehige MwSt.-Betrag, sodass Zeilendetails und MwSt.-Zusammenfassung uebereinstimmen.
 
-Die beigefuegte `leesmij.txt` erklaert, dass dieser Prozentsatz nur einen Teil der Differenz erklaert zwischen der MwSt. auf dem Beleg und dem in der Voranmeldung zurueckgeforderten Betrag. Weitere Faktoren wie Steuerschuldumkehr, auslaendische MwSt. oder private Nutzung koennen den abzugsfaehigen Betrag ebenfalls aendern. Moechte der Steuerberater eine Zeile pruefen, oeffnet er die Ausgabe in der App und sieht dort die MwSt.-Behandlung.
+Die beigefuegte `leesmij.txt` erklaert, dass dieser Prozentsatz nur einen Teil der Differenz erklaert zwischen der MwSt. auf dem Beleg und dem in der Voranmeldung zurueckgeforderten Betrag. Weitere Faktoren wie umgekehrte Steuerschuld (Reverse-Charge), auslaendische MwSt. oder private Nutzung koennen den abzugsfaehigen Betrag ebenfalls aendern. Moechte der Steuerberater eine Zeile pruefen, oeffnet er die Ausgabe in der App und sieht dort die MwSt.-Behandlung.
 
 ### Belegpflicht
 

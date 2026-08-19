@@ -33,7 +33,7 @@ The default cadence for most offices is weekly on Monday, because one bundled em
 
 The `uitgaven.csv` file in the forwarded export now ends with a column that shows the category's deduction percentage for each expense. This replaces the older "Deductible" yes/no column: the percentage tells the accountant exactly how much of the VAT is deductible, and the same row still shows the deductible VAT amount so the line detail matches the VAT summary.
 
-The included `leesmij.txt` explains that this percentage accounts for part of the difference between the VAT on the invoice and the amount reclaimed in the VAT return. Other factors, such as reverse-charge VAT, foreign supplier VAT, or private-use splits, can also change the deductible amount. If an accountant wants to verify a line, they can open the expense in the app to see the VAT treatment.
+The included `leesmij.txt` explains that this percentage accounts for part of the difference between the VAT on the invoice and the amount reclaimed in the VAT return. Other factors, such as reverse-charge VAT, foreign supplier VAT, or private use on an expense, can also change the deductible amount. If an accountant wants to verify a line, they can open the expense in the app to see the VAT treatment.
 
 ### Receipt requirement
 

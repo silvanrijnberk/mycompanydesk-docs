@@ -31,9 +31,9 @@ Le rythme par defaut pour la plupart des cabinets est hebdomadaire le lundi, car
 
 ### Déductibilité dans l'export
 
-Le fichier `uitgaven.csv` de l'export transfere se termine par une colonne indiquant le pourcentage de deduction de la categorie. Cela remplace l'ancienne colonne « Déductible » Oui/Non : le pourcentage indique exactement au comptable quelle part de la TVA est deductible, et le montant de TVA deductible figure toujours sur la meme ligne, de sorte que le detail par ligne corresponde au recapitulatif TVA.
+Le fichier `uitgaven.csv` de l'export transfere se termine par une colonne indiquant le pourcentage de déduction de la catégorie. Cela remplace l'ancienne colonne « Déductible » Oui/Non : le pourcentage indique exactement au comptable quelle part de la TVA est déductible, et le montant de TVA déductible figure toujours sur la même ligne, de sorte que le détail par ligne correspond au récapitulatif TVA.
 
-Le fichier `leesmij.txt` inclus explique que ce pourcentage ne couvre qu'une partie de l'ecart entre la TVA sur le justificatif et le montant recupere sur la declaration. D'autres facteurs, comme la TVA d'autoliquidation, la TVA etrangere ou l'usage prive, peuvent aussi modifier le montant deductible. Si le comptable veut verifier une ligne, il peut ouvrir la depense dans l'application pour voir le traitement de TVA.
+Le fichier `leesmij.txt` inclus explique que ce pourcentage ne couvre qu'une partie de l'écart entre la TVA sur le justificatif et le montant récupéré sur la déclaration. D'autres facteurs, comme la TVA d'autoliquidation, la TVA étrangère ou l'usage privé, peuvent aussi modifier le montant déductible. Si le comptable veut vérifier une ligne, il peut ouvrir la dépense dans l'application pour voir le traitement de TVA.
 
 ### Obligation de justificatif
 
