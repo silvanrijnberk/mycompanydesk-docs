@@ -199,6 +199,12 @@ Use the filter bar to narrow down your invoices:
 - **Search**: Search by invoice number, customer name, reference, or notes
 - **Deep links**: Notifications and emails that link straight to an invoice clear any active date-range filter when they open the page, so the invoice is not hidden by an existing filter
 
+## Receivables ageing card
+
+The **Outstanding** tab shows a receivables ageing card that groups open invoices by how many days they are past their due date. The amounts shown are the remaining collectible balance: the invoice total minus posted payments, with any credit notes already issued against the invoice taken into account.
+
+Because the card only sees the invoices loaded in the current list view, its bucket totals are a snapshot of that page, not a full workspace-lifetime figure. A fully credited invoice no longer appears as money still to collect, so the totals match what your customer sees in the portal and what the invoice detail page shows.
+
 ## Export
 
 Export your invoices as CSV for use in Excel, Google Sheets, or your accounting software.

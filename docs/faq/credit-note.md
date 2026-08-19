@@ -22,7 +22,7 @@ MyCompanyDesk also prevents you from crediting more than the original invoice am
 
 A credit note returns money to the customer, so it has no payment due date of its own. In the customer portal the due-date row and the past-invoices table hide the deadline for credit notes. The Confirm payment button is also hidden, because a credit note pays the customer instead of asking the customer to pay. When the original invoice has been fully credited, the portal hides the payment buttons on that invoice too, labels the payment summary as Credited, and shows the credit note amount as part of the balance breakdown.
 
-In the outstanding report, the credit note's amount is netted against the original invoice it corrects, so the customer's balance reflects what is actually still owed.
+In the invoice list, the credit note amount is already deducted from the original invoice. The outstanding report and the receivables ageing card also net the credit against the invoice, so the customer's balance reflects what is actually still owed.
 
 In the back office, the credit note detail page shows whether the credit amount is still open or already settled, so you can see at a glance whether you still need to refund or offset it.
 

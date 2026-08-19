@@ -22,7 +22,7 @@ MyCompanyDesk voorkomt ook dat je meer crediteert dan het bedrag van de originel
 
 Een creditnota brengt geld terug naar de klant, dus heeft deze geen eigen vervaldatum. In het klantenportaal verbergt de vervaldatumrij en de tabel met eerdere facturen de deadline voor creditnota's. De knop Betaling bevestigen is ook verborgen, omdat een creditnota de klant betaalt in plaats van de klant te vragen te betalen. Wanneer de originele factuur volledig is gecrediteerd, verbergt het portaal ook de betaalknoppen op die factuur, toont het de betalingsstatus als Gecrediteerd en vermeldt het creditbedrag in de opbouw van het saldo.
 
-In het openstaande-debiteurenoverzicht wordt het bedrag van de creditnota verrekend met de originele factuur waarnaar hij verwijst, zodat het saldo van de klant laat zien wat er écht nog openstaat.
+In de facturenlijst wordt het bedrag van de creditnota al van de originele factuur afgetrokken. Het openstaande-debiteurenoverzicht en de ouderdomsanalysekaart verrekenen de creditnota ook met de factuur, zodat het saldo van de klant laat zien wat er écht nog openstaat.
 
 In de backoffice toont de detailpagina van de creditnota of het creditbedrag nog openstaat of al is verrekend. Zo zie je in één oogopslag of je de klant nog moet terugbetalen of verrekenen.
 

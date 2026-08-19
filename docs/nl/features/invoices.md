@@ -199,6 +199,12 @@ Gebruik de filterbalk om je facturen te verfijnen:
 - **Zoeken**: Zoek op factuurnummer, klantnaam, referentie of notities
 - **Deeplinks**: Notificaties en e-mails die direct naar een factuur linken, wissen het actieve datumbereik wanneer ze de pagina openen, zodat de factuur niet verborgen raakt achter een bestaand filter
 
+## Ouderdomsanalysekaart
+
+Het tabblad **Openstaand** toont een ouderdomsanalysekaart die openstaande facturen indeelt naar het aantal dagen dat ze over de vervaldatum heen zijn. De getoonde bedragen zijn het resterende te innen saldo: het factuurbedrag minus de geboekte betalingen, met inbegrip van eventuele creditnota’s die al op deze factuur zijn uitgegeven.
+
+Omdat de kaart alleen de facturen ziet die in de huidige lijstweergave zijn geladen, zijn de emmerbedragen een momentopname van die pagina, geen volledig werkruimte-overzicht. Een volledig gecrediteerde factuur verschijnt niet langer als nog te innen geld, zodat de totalen aansluiten bij wat je klant in het portaal ziet en wat de factuurdetailpagina toont.
+
 ## Exporteren
 
 Exporteer je facturen als CSV voor gebruik in Excel, Google Sheets of je boekhoudsoftware.
