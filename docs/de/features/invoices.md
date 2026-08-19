@@ -199,6 +199,12 @@ Verwenden Sie die Filterleiste, um Ihre Rechnungen einzugrenzen:
 - **Suche**: Nach Rechnungsnummer, Kundenname, Referenz oder Notizen suchen
 - **Direktlinks**: Benachrichtigungen und E-Mails, die direkt zu einer Rechnung verlinken, löschen beim Öffnen der Seite alle aktiven Datumsbereichsfilter, damit die Rechnung nicht von einem vorhandenen Filter ausgeblendet wird
 
+## Fälligkeitsübersicht
+
+Die Registerkarte **Offen** zeigt eine Fälligkeitsübersicht, die offene Rechnungen nach der Anzahl Tage über dem Fälligkeitsdatum gruppiert. Die angezeigten Beträge sind die verbleibende einziehbare Restsumme: der Rechnungsbetrag abzüglich der gebuchten Zahlungen, einschließlich aller Gutschriften, die bereits für diese Rechnung ausgestellt wurden.
+
+Da die Karte nur die Rechnungen sieht, die in der aktuellen Listenansicht geladen sind, sind die Betragssummen eine Momentaufnahme dieser Seite, keine vollständige Lebenszeitbilanz des Arbeitsbereichs. Eine vollständig gutgeschriebene Rechnung erscheint nicht mehr als noch einzuziehendes Geld, sodass die Summen mit dem übereinstimmen, was Ihr Kunde im Portal sieht und was die Rechnungsdetailseite zeigt.
+
 ## Export
 
 Exportieren Sie Ihre Rechnungen als CSV zur Verwendung in Excel, Google Sheets oder Ihrer Buchhaltungssoftware.

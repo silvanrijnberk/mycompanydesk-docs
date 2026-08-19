@@ -199,6 +199,12 @@ Utilisez la barre de filtre pour affiner vos factures :
 - **Recherche** -- Rechercher par numero de facture, nom de client, reference ou notes
 - **Liens profonds** -- Les notifications et e-mails pointant directement vers une facture effacent toute plage de dates active a l'ouverture de la page, pour que la facture ne soit pas masquee par un filtre existant
 
+## Carte d'age des creances
+
+L'onglet **En attente** affiche une carte d'age des creances qui groupe les factures ouvertes selon le nombre de jours ecoules apres leur date d'echeance. Les montants affiches correspondent au solde restant a recouvrer : le montant total de la facture moins les paiements deja enregistres, en tenant compte des avoirs deja emis sur cette facture.
+
+Comme la carte ne voit que les factures chargees dans la vue de liste actuelle, les totaux par periode sont un instantane de cette page, pas un cumul sur toute la duree de vie de l'espace de travail. Une facture entierement creditee n'apparait plus comme de l'argent encore a recouvrer, donc les totaux correspondent a ce que votre client voit dans le portail et a ce que la page de detail de la facture indique.
+
 ## Export
 
 Exportez vos factures au format CSV pour les utiliser dans Excel, Google Sheets ou votre logiciel de comptabilite.
