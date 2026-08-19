@@ -16,6 +16,8 @@ Naast de tabbladen staat een paginabrede periodekiezer die meebeweegt met je aan
 
 Het actieve tabblad en de periode staan beide in de URL, dus links van de BTW-deadlineherinnering in je meldingenpaneel, de agendachip, de pushmelding en de BTW-tijdvak-kaart in Uitgaven openen allemaal het tijdvak dat de melding noemt, in plaats van terug te vallen op het huidige kwartaal.
 
+Het actieve tabblad en de periode staan beide in de URL, dus links van de BTW-deadlineherinnering in je meldingenpaneel, de agendachip, de pushmelding en de BTW-tijdvak-kaart in Uitgaven openen allemaal het tijdvak dat de melding noemt, in plaats van terug te vallen op het huidige kwartaal.
+
 ## Herokaart
 
 De herokaart vat de gekozen periode samen:

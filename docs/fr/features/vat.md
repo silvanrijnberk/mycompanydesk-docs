@@ -16,6 +16,8 @@ La page TVA compte trois onglets : **Aperçu**, **Déclaration** et **Transactio
 
 L'onglet actif et la période active figurent tous deux dans l'URL, donc les liens du rappel d'échéance de TVA dans le panneau de notifications, de la puce d'échéance de l'agenda, de la notification push et de la carte de période TVA dans Dépenses ouvrent tous la période exacte mentionnée par le message, au lieu de revenir au trimestre en cours.
 
+L'onglet actif et la période active figurent tous deux dans l'URL, donc les liens du rappel d'échéance de TVA dans le panneau de notifications, de la puce d'échéance de l'agenda, de la notification push et de la carte de période TVA dans Dépenses ouvrent tous la période exacte mentionnée par le message, au lieu de revenir au trimestre en cours.
+
 ## Carte principale
 
 La carte principale résume la période choisie :

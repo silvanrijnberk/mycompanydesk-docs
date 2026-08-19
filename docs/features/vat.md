@@ -17,6 +17,8 @@ A page-wide period selector sits next to the tab bar and follows the filing freq
 
 The active tab and period are both in the URL, so links from the VAT deadline reminder in your notification panel, the agenda-deadline chip, the push notification, and the VAT-period card in Expenses all open the exact period the message refers to instead of defaulting to the current quarter.
 
+The active tab and period are both in the URL, so links from the VAT deadline reminder in your notification panel, the agenda-deadline chip, the push notification, and the VAT-period card in Expenses all open the exact period the message refers to instead of defaulting to the current quarter.
+
 ## Hero card
 
 The hero summarises the selected period:

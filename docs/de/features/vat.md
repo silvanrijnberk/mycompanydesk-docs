@@ -16,6 +16,8 @@ Neben der Reiterleiste sitzt eine seitenweite Zeitraumauswahl, die Ihrer Abgabef
 
 Aktiver Reiter und Zeitraum stehen beide in der URL, sodass Links aus der USt.-Fristen-Erinnerung im Benachrichtigungsbereich, dem Agenda-Fristen-Chip, der Push-Benachrichtigung und der USt.-Zeitraum-Karte in Ausgaben genau den Zeitraum öffnen, auf den die Nachricht sich bezieht, anstatt auf das aktuelle Quartal zurückzufallen.
 
+Aktiver Reiter und Zeitraum stehen beide in der URL, sodass Links aus der USt.-Fristen-Erinnerung im Benachrichtigungsbereich, dem Agenda-Fristen-Chip, der Push-Benachrichtigung und der USt.-Zeitraum-Karte in Ausgaben genau den Zeitraum öffnen, auf den die Nachricht sich bezieht, anstatt auf das aktuelle Quartal zurückzufallen.
+
 ## Herokarte
 
 Die Herokarte fasst den gewählten Zeitraum zusammen:
