@@ -1,6 +1,6 @@
 ---
 title: "Accès du comptable"
-description: "L'accès comptable peut commencer de deux façons : vous invitez votre comptable depuis votre propre espace de travail, ou votre comptable vous invite à."
+description: "L'accès comptable commence de deux façons : vous invitez votre comptable depuis votre espace, ou votre comptable vous invite depuis son portail."
 last_verified: 2026-08-15
 chatbot:
   triggers:

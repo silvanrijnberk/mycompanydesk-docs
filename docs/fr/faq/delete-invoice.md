@@ -1,6 +1,6 @@
 ---
 title: "Supprimer une facture"
-description: "Pour supprimer une facture : ouvrez la facture à supprimer, dans la barre latérale, faites défiler jusqu'à la section Zone de danger, cliquez sur."
+description: "Pour supprimer une facture : ouvrez-la, faites défiler jusqu'à la section Zone de danger dans la barre latérale, puis cliquez sur Supprimer."
 last_verified: 2026-08-15
 chatbot:
   triggers:

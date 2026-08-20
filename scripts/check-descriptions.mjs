@@ -90,6 +90,23 @@ for (const p of pages) {
   if (/[—–]/.test(description)) errors.push(`${rel}: description contains an em-dash or en-dash`)
   if (description.includes('"')) errors.push(`${rel}: description contains a double quote, which the chatbot frontmatter parser does not unescape`)
 
+  // A description assembled from a page body can end up clipped mid-phrase
+  // ("...payment terms for the."). Dutch and German sentences legitimately end
+  // on a separable-verb particle, so only words that cannot close a sentence in
+  // their own language count here.
+  const DANGLING = {
+    nl: ['de', 'het', 'een', 'en', 'of', 'van', 'voor', 'om', 'dan'],
+    en: ['a', 'an', 'the', 'to', 'of', 'for', 'and', 'or', 'with', 'in', 'on', 'your'],
+    // 'ein' is missing on purpose: "geben Sie den Betrag ein" ends on the
+    // particle of a separable verb, not on an article.
+    de: ['der', 'die', 'das', 'den', 'dem', 'eine', 'und', 'oder', 'für', 'von', 'im'],
+    fr: ['à', 'de', 'du', 'des', 'le', 'la', 'les', 'un', 'une', 'sur', 'pour', 'dans', 'et', 'ou'],
+  }
+  const lastWord = description.replace(/[^\p{L}\s]/gu, '').trim().split(/\s+/).pop()?.toLowerCase()
+  if (lastWord && DANGLING[locale].includes(lastWord)) {
+    errors.push(`${rel}: description ends on "${lastWord}", so it was clipped mid-phrase: rewrite it as a whole sentence`)
+  }
+
   if (!seen.has(locale)) seen.set(locale, new Map())
   const bucket = seen.get(locale)
   if (bucket.has(description)) errors.push(`${rel}: description is identical to ${bucket.get(description)}`)

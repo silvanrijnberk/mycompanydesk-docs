@@ -1,6 +1,6 @@
 ---
 title: "Uitgave dupliceren"
-description: "Om een uitgave te dupliceren: open de betaalde uitgave die je wilt kopiëren. Dupliceren is alleen beschikbaar bij betaalde uitgaven; bij een onbetaalde."
+description: "Om een uitgave te dupliceren: open de betaalde uitgave die je wilt kopiëren. Dupliceren kan alleen bij betaalde uitgaven."
 last_verified: 2026-08-16
 chatbot:
   triggers: ["duplicate expense", "copy expense", "clone expense", "reuse expense", "uitgave kopieren", "uitgave dupliceren", "ausgabe kopieren", "dupliquer depense"]

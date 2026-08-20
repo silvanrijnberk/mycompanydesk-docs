@@ -1,6 +1,6 @@
 ---
 title: "Factuurstatus"
-description: "Factuurstatussen uitgelegd: concept - nog niet verstuurd, vrij te bewerken. Je kunt een concept pas als betaald markeren of er een betaling op."
+description: "Factuurstatussen uitgelegd: een concept is nog niet verstuurd en vrij te bewerken, en je kunt het pas als betaald markeren als het definitief is."
 last_verified: 2026-08-15
 chatbot:
   triggers: ["invoice status", "invoice statuses", "what do invoice statuses mean", "draft sent paid", "invoice lifecycle", "factuurstatus", "factuur statussen", "rechnungsstatus", "statut facture"]
