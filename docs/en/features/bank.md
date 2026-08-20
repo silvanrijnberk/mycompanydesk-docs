@@ -28,6 +28,7 @@ You can link up to 10 accounts across different banks. Each account appears as i
 Per account you can:
 
 - Toggle **auto-import** on or off, so you decide which accounts feed your expenses.
+- Set an **import-from date**. This date controls from when transactions appear in your actual task list. We still fetch transactions before that date (for linking, reconciling and balance), but they do not ask for your action. Leave it empty and every imported transaction lands in the list.
 - Trigger a **manual sync** at any time.
 - Disconnect the account.
 
@@ -46,7 +47,7 @@ After the link pass, new transactions run through your rules and the smart categ
 3. A categorised outgoing transaction becomes a **draft expense**: the counterpart becomes the supplier, and the amount, date, and the category's usual VAT treatment are filled in.
 4. The draft lands in the review queue, so nothing is booked without you seeing it.
 
-Transactions from the first import, which pulls roughly the past 90 days, never auto-confirm. They always land in the review queue, even when the categorisation is confident. This only applies to the backlog from before the account was connected; new transactions arriving afterwards follow the normal review rules.
+Transactions from the first import, which pulls roughly the past 90 days, never auto-confirm. They always land in the review queue, even when the categorisation is confident. This only applies to the backlog from before the account was connected; new transactions arriving afterwards follow the normal review rules. The import-from date per account determines from which point that backlog appears in your task list; anything before it remains available for linking and reconciling, but does not request review.
 
 Only outgoing transactions become expenses; incoming payments are never turned into expenses. Expenses created from bank transactions show a small bank badge in the expenses list, so you can always see where an entry came from.
 
