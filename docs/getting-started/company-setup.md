@@ -1,66 +1,66 @@
 ---
-title: Set up your company
+title: Je bedrijf instellen
 last_verified: 2026-07-21
 ---
 
-# Set up your company
+# Je bedrijf instellen
 
-The first time you sign in, MyCompanyDesk walks you through a short **setup wizard** at `/setup`. The wizard is built around your first invoice: it asks who you are billing and fills in your sender block, payment details and VAT status while showing a live preview of the invoice. You can also have it look up your company in the Dutch trade register (KVK). Nothing is locked in: every step can be skipped and everything can be changed later in Settings.
+De eerste keer dat je inlogt, leidt MyCompanyDesk je door een korte **setupwizard** op `/setup`. De wizard draait om je eerste factuur: hij vraagt voor wie je factureert en vult intussen het afzenderblok, betaalgegevens en btw-status in, met een live voorbeeld van de factuur. Je kunt ook je bedrijf opzoeken in het Handelsregister (KVK). Niets staat vast: elke stap kun je overslaan en alles kun je later aanpassen in Instellingen.
 
-## Where to find it
+## Waar vind je de wizard
 
-- **First sign-in:** the wizard opens automatically.
-- **Later:** as long as setup is unfinished, a banner sits at the top of your dashboard with a button back into the wizard. You can hide the banner, or go to `/setup` directly at any time.
-- **Skipping:** the wizard has a **Leave for now** button on every step. Your answers so far are saved, so you continue where you left off.
+- **Eerste keer inloggen:** de wizard opent automatisch.
+- **Later:** zolang de setup niet af is, staat er bovenaan je dashboard een banner met een knop terug naar de wizard. Je kunt de banner verbergen, of altijd rechtstreeks naar `/setup` gaan.
+- **Overslaan:** op elke stap zit een knop **Voor nu overslaan**. Je antwoorden tot dan toe worden bewaard, dus je gaat later gewoon verder waar je was.
 
-## Step 1: Who you are billing
+## Stap 1: Voor wie je factureert
 
-The wizard opens with a live invoice preview and asks for the customer. Start typing the customer name.
+De wizard opent met een live voorbeeld van de factuur en vraagt om de klant. Begin de klantnaam te typen.
 
-- If the customer already exists in your workspace, select them from the dropdown.
-- To create a new customer inline, type the name and click **Create customer**. The inline form asks for the customer name and address. The KVK lookup can suggest Dutch businesses and fill in the address automatically; private customers can be added by typing the address by hand.
-- The customer email is optional and only used when you send the invoice.
+- Bestaat de klant al in je werkruimte, selecteer hem dan uit de lijst.
+- Wil je een nieuwe klant direct toevoegen, typ de naam en klik op **Klant aanmaken**. Het inline formulier vraagt om de klantnaam en het adres. De KVK-lookup kan Nederlandse bedrijven voorstellen en het adres automatisch invullen; particuliere klanten voeg je toe door het adres handmatig in te typen.
+- Het e-mailadres van de klant is optioneel en wordt alleen gebruikt als je de factuur verstuurt.
 
-Only the customer name is required to continue. You can finish the customer's details later from the customer page.
+Alleen de klantnaam is verplicht om verder te gaan. Je kunt de rest van de klantgegevens later aanvullen op de klantpagina.
 
-## Step 2: Your company details (KVK)
+## Stap 2: Je bedrijfsgegevens (KVK)
 
-This step prefills the sender block of your invoice. If you signed up via the marketing site and selected your business in the KVK lookup there, your KVK number is already carried into the wizard and auto-applied as soon as you reach this step. MyCompanyDesk then pulls your KVK Basisprofiel and prefills your company details: legal name, trade names, legal form, address and business activity. It only fills fields that are still empty, so anything you already entered stays untouched.
+Deze stap vult het afzenderblok van je factuur. Als je je hebt aangemeld via de marketingsite en je bedrijf hebt geselecteerd in de KVK-lookup daar, wordt je KVK-nummer al meegenomen naar de wizard en automatisch toegepast zodra je deze stap bereikt. MyCompanyDesk haalt vervolgens je KVK Basisprofiel op en vult je bedrijfsgegevens alvast in: juridische naam, handelsnamen, rechtsvorm, adres en bedrijfsactiviteit. Alleen lege velden worden gevuld; wat je zelf al had ingevuld blijft staan.
 
-The marketing-site preview that brings you into the wizard now recognizes a wider range of trades. It first tries to match your trade from the business name. If the name is ambiguous, it can also read the SBI description from your KVK Basisprofiel and, if still needed, use a lightweight AI classifier to pick the best fit. When nothing matches, the preview falls back to a neutral self-employed persona instead of a generic handyman placeholder, and it uses your registered city when one is available.
+De preview op de marketingsite die je naar de wizard leidt, herkent nu een breder scala aan vakgebieden. Hij kijkt eerst of je vak al uit je bedrijfsnaam blijkt. Is dat niet duidelijk, dan kan hij ook het SBI-beroep uit je KVK Basisprofiel lezen en, als het dan nog niet past, een lichte AI-classifier het beste passende vak laten kiezen. Past er helemaal niets, dan valt de preview terug op een neutrale ZZP-persona in plaats van een generiek klusjesman-voorbeeld. De plaats die je ziet, komt uit je KVK-registratie als die beschikbaar is.
 
-No match, or no KVK registration?
+Geen treffer, of geen KVK-inschrijving?
 
-- **Fill in manually**: enter your company name, KVK number, address, postal code and city yourself.
-- **No KVK registration?**: skip the lookup entirely and add your details later in Settings.
+- **Vul handmatig in**: vul zelf je bedrijfsnaam, KVK-nummer, adres, postcode en plaats in.
+- **Geen KVK-inschrijving?**: sla het opzoeken helemaal over en vul je gegevens later in via Instellingen.
 
-## Step 3: How you get paid
+## Stap 3: Hoe je betaald krijgt
 
-The wizard asks for the IBAN that customers pay to. You can enter your business IBAN now, or click **I'll add my IBAN later** to skip it. Keep in mind that your customer cannot easily pay you without an IBAN.
+De wizard vraagt om het IBAN waar klanten naartoe betalen. Je kunt nu je zakelijke IBAN invullen, of op **IBAN later toevoegen** klikken om deze stap over te slaan. Houd er rekening mee dat een klant je zonder IBAN minder makkelijk kan betalen.
 
-If you are waiting for your VAT ID from the Tax Authority, or fall under the small business scheme (KOR), you can continue anyway and add your VAT ID later.
+Als je nog wacht op je btw-nummer van de Belastingdienst, of onder de kleineondernemersregeling (KOR) valt, kun je gewoon doorgaan en je btw-nummer later toevoegen.
 
-## Step 4: Finish setup
+## Stap 4: Setup afronden
 
-The final step confirms your 60-day Pro trial, no credit card needed, and applies everything. It also offers optional next steps from the finish screen, such as setting up a website. Website setup is opt-in, except when you started via the landing-page KVK lookup: in that case a themed site is already generated and simply waits for you in the website editor.
+De laatste stap bevestigt dat je 60 dagen Pro-proefperiode actief is, zonder creditcard, en past alles toe. Ook biedt het afrondscherm optionele vervolgstappen, zoals het instellen van een website. Een website instellen is optioneel, behalve wanneer je bent gestart via de KVK-lookup op de landingspagina: in dat geval is er al een thematische site gegenereerd die op je wacht in de website-editor.
 
-Click **Finish setup** and the wizard applies your company details, VAT status, IBAN and default settings, then takes you to your dashboard.
+Klik op **Setup afronden** en de wizard past je bedrijfsgegevens, btw-status, IBAN en standaardinstellingen toe, waarna je naar je dashboard gaat.
 
-## Changing things later
+## Later aanpassen
 
-Everything the wizard sets can be edited in **Settings**:
+Alles wat de wizard instelt, pas je aan via **Instellingen**:
 
-| I want to change... | Open |
+| Ik wil aanpassen... | Open |
 |---|---|
-| Company name, address, KVK or VAT number | **Business details** |
-| Logo and brand colour | **Logo and colour** |
-| How customers pay you: IBAN, iDEAL, PayPal | **Getting paid** |
-| Payment terms, reminders, quote validity | **Invoices and quotes** |
-| The look of your invoice PDFs | **Invoice design** |
-| Your website and domain | **Your website and domain** |
+| Bedrijfsnaam, adres, KVK- of btw-nummer | **Bedrijfsgegevens** |
+| Logo en merkkleur | **Logo en kleur** |
+| Hoe klanten je betalen: IBAN, iDEAL, PayPal | **Betalen** |
+| Betaaltermijn, herinneringen, geldigheid van offertes | **Facturen en offertes** |
+| Het uiterlijk van je factuur-PDF's | **Factuurontwerp** |
+| Je website en domein | **Je website en domein** |
 
-See the [settings overview](/settings/) for the full map. You can also re-run the wizard from `/setup` whenever you like; it fills in blanks rather than overwriting what you set yourself.
+Zie het [instellingenoverzicht](/settings/) voor de volledige kaart. Je kunt de wizard ook altijd opnieuw doorlopen via `/setup`; die vult lege velden aan en overschrijft niet wat je zelf hebt ingesteld.
 
-## Next steps
+## Volgende stappen
 
-Your company is set up. Time to [create your first invoice](/getting-started/first-invoice).
+Je bedrijf staat. Tijd om [je eerste factuur te maken](/getting-started/first-invoice).

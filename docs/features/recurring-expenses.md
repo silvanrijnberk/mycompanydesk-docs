@@ -1,92 +1,92 @@
 ---
-title: Recurring Expenses
+title: Terugkerende uitgaven
 ---
 
-# Recurring Expenses
+# Terugkerende uitgaven
 
-Automate tracking of regular business costs like rent, subscriptions, and utilities.
+Automatiseer het bijhouden van regelmatige bedrijfskosten zoals huur, abonnementen en nutsvoorzieningen.
 
-## Overview
+## Overzicht
 
-Recurring expenses work like recurring invoices but for costs. Set up a template and let MyCompanyDesk create expense records automatically.
+Terugkerende uitgaven werken net als terugkerende facturen, maar dan voor kosten. Stel een sjabloon in en laat MyCompanyDesk automatisch uitgavenrecords aanmaken.
 
-Common use cases:
+Veelvoorkomende toepassingen:
 
-- Office rent
-- Software subscriptions
-- Insurance premiums
-- Utility bills
-- Lease payments
+- Kantoorhuur
+- Software-abonnementen
+- Verzekeringspremies
+- Energierekeningen
+- Leasebetalingen
 
-## Creating a recurring expense
+## Een terugkerende uitgave aanmaken
 
-1. Go to **Recurring Expenses > New**
-2. Fill in the template:
-   - **Description**: what the expense is for
-   - **Supplier**: free-form supplier name, with autocomplete for previously used vendors
-   - **Country** and **Registration number (KVK)**: optional supplier identity fields; when filled, they flow into every expense generated from this template
-   - **Amount**: the recurring cost
-   - **Category**: expense category
-   - **VAT rate**: applicable VAT
-   - **VAT treatment**: how the expense is handled for your VAT return
-   - **Frequency**: weekly, monthly, quarterly, or yearly
-3. Click **Save**
+1. Ga naar **Terugkerende uitgaven > Nieuw**
+2. Vul het sjabloon in:
+   - **Omschrijving**: waarvoor de uitgave is
+   - **Leverancier**: vrije leveranciersnaam, met autocomplete voor eerder gebruikte leveranciers
+   - **Land** en **KVK-nummer**: optionele velden voor de leveranciersidentiteit; wanneer ingevuld, worden ze overgenomen in elke uitgave die uit dit sjabloon wordt gegenereerd
+   - **Bedrag**: de terugkerende kosten
+   - **Categorie**: uitgavecategorie
+   - **BTW-tarief**: toepasselijk BTW-percentage
+   - **BTW-behandeling**: hoe de uitgave op de BTW-aangifte wordt verwerkt
+   - **Frequentie**: wekelijks, maandelijks, per kwartaal of jaarlijks
+3. Klik op **Opslaan**
 
-::: tip More options
-The recurring-expense form keeps optional details behind **More options**. Notes and the supplier identity fields sit there by default; expand the section when you want to add them.
+::: tip Meer opties
+In het formulier voor een terugkerende uitgave staan optionele velden netjes achter **Meer opties**. De notities en de leveranciersidentiteit zitten daar standaard; vouw de sectie uit als je ze wilt toevoegen.
 :::
 
-### Supplier identity
+### Leveranciersidentiteit
 
-Filling the supplier name, country, and KVK number on a recurring template has two effects:
+Het invullen van leveranciersnaam, land en KVK-nummer op een terugkerend sjabloon heeft twee effecten:
 
-- **Supplier suggestions** use the saved identity, so you do not have to reselect the same vendor each month.
-- **Generated expenses** carry the same supplier identity as the template, which means reverse-charge and import-VAT logic (for example EU B2B or non-EU suppliers) is applied automatically, just like on a manually entered expense.
+- **Leverancierssuggesties** gebruiken de opgeslagen identiteit, zodat je dezelfde leverancier niet elke maand opnieuw hoeft te selecteren.
+- **Gegenereerde uitgaven** krijgen dezelfde leveranciersidentiteit mee als het sjabloon. Daardoor wordt verleggingsregeling- en import-BTW-logica (bijvoorbeeld voor EU B2B of niet-EU-leveranciers) automatisch toegepast, net als bij handmatig ingevoerde uitgaven.
 
-If you edit the supplier name later and it no longer matches the saved KVK record, the KVK and country fields are cleared to prevent stale identity data.
+Als je de leveranciersnaam later wijzigt en die naam komt niet meer overeen met het opgeslagen KVK-record, dan worden het KVK-nummer en het land gewist. Zo voorkomt het formulier dat verouderde identiteitsgegevens blijven staan.
 
-## Frequency options
+## Frequentieopties
 
-| Frequency | Description |
+| Frequentie | Beschrijving |
 |---|---|
-| **Weekly** | Every 7 days |
-| **Monthly** | Same day each month |
-| **Quarterly** | Every 3 months |
-| **Yearly** | Once per year |
+| **Wekelijks** | Elke 7 dagen |
+| **Maandelijks** | Dezelfde dag elke maand |
+| **Per kwartaal** | Elke 3 maanden |
+| **Jaarlijks** | Eenmaal per jaar |
 
-## Managing recurring expenses
+## Terugkerende uitgaven beheren
 
-### Pause / Resume
+### Pauzeren / Hervatten
 
-Toggle automatic generation on or off. Pausing stops new expense creation; resuming continues from the next scheduled date.
+Schakel automatische generatie aan of uit. Pauzeren stopt het aanmaken van nieuwe uitgaven; hervatten gaat verder vanaf de volgende geplande datum.
 
-### Edit
+### Bewerken
 
-Changes to the template affect future expenses only. Existing expenses are not modified.
+Wijzigingen aan het sjabloon hebben alleen effect op toekomstige uitgaven. Bestaande uitgaven worden niet aangepast.
 
-### Delete
+### Verwijderen
 
-Remove the template. Previously generated expenses remain in your records.
+Verwijder het sjabloon. Eerder gegenereerde uitgaven blijven in je administratie.
 
-## Generated expenses
+## Gegenereerde uitgaven
 
-Each generated expense:
+Elke gegenereerde uitgave:
 
-- Matches the template's amount, category, and VAT settings
-- Carries the template's supplier identity (name, country, and KVK number) when those fields are filled
-- Is dated to the scheduled occurrence date
-- Can be edited independently after creation
+- Komt overeen met het bedrag, de categorie en de BTW-instellingen van het sjabloon
+- Neemt de leveranciersidentiteit van het sjabloon over (naam, land en KVK-nummer) als die velden zijn ingevuld
+- Is gedateerd op de geplande uitvoeringsdatum
+- Kan na aanmaak onafhankelijk worden bewerkt
 
-## Source link
+## Bronlink
 
-If an expense was created from a recurring template, the expense detail page shows an **automatically created from recurring expense** banner. When the template still exists, the banner links back to it so you can jump straight from the expense to the template that generated it. If the template has since been deleted, the banner shows plain text instead of a dead link.
+Als een uitgave is aangemaakt vanuit een terugkerend sjabloon, toont de uitgavedetailpagina een banner **Automatisch aangemaakt vanuit terugkerende uitgave**. Zolang het sjabloon bestaat, klik je op de banner om in één keer naar het sjabloon te springen dat de uitgave heeft gegenereerd. Is het sjabloon inmiddels verwijderd, dan staat er alleen tekst in plaats van een dode link.
 
-## What happens if my plan changes?
+## Wat gebeurt er als mijn pakket wijzigt?
 
-Recurring expenses are part of the Office plan. If you upgrade from Desk to Office, scheduled generation starts from the next due date. If you downgrade from Office to Desk, generation pauses automatically; existing templates and previously generated expenses stay in your workspace, and generation resumes when you upgrade again.
+Terugkerende uitgaven horen bij het Office-abonnement. Als je van Desk naar Office upgradet, start de automatische aanmaak vanaf de eerstvolgende vervaldatum. Als je van Office naar Desk downgradet, wordt de aanmaak automatisch gepauzeerd. Het sjabloon en de uitgaven die al zijn aangemaakt blijven in je werkruimte staan, en bij een latere upgrade wordt het schema hervat.
 
 ## Tips
 
-- Review your recurring expenses periodically to catch cancelled subscriptions
-- Link recurring expenses to projects for accurate project costing
-- Use categories consistently for meaningful reports
+- Controleer je terugkerende uitgaven periodiek om opgezegde abonnementen te signaleren
+- Koppel terugkerende uitgaven aan projecten voor nauwkeurige projectkosten
+- Gebruik categorieen consequent voor zinvolle rapportages

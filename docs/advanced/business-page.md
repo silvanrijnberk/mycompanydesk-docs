@@ -1,546 +1,546 @@
 ---
-title: Site Builder
+title: Sitebouwer
 last_verified: 2026-08-15
 ---
 
-# Site Builder
+# Sitebouwer
 
-Build your business website with a drag-and-drop editor. Create multiple pages, compose them with sections and blocks, customize colors and fonts, and publish when you are ready.
+Bouw je zakelijke website met een drag-and-drop-editor. Maak meerdere pagina's, stel ze samen met secties en blokken, pas kleuren en lettertypes aan, en publiceer wanneer je klaar bent.
 
-## Overview
+## Overzicht
 
-The site builder replaces the old single-page business profile. Every new workspace starts with a 4-page default site (Home, Diensten, Over ons, Contact) so you have a real multi-page foundation from day one. The editor gives you:
+De sitebouwer vervangt het oude bedrijfsprofiel van één pagina. Elke nieuwe werkruimte begint met een standaardsite van 4 pagina's (Home, Diensten, Over ons, Contact), zodat je vanaf dag één een echte multi-page basis hebt. De editor biedt je:
 
-- **Multi-page support**: Create as many pages as you need, each with its own path and sections. The four default pages are ready to edit, remove, or add to.
-- **Domain switcher**: When your workspace has multiple custom domains (Pro plan), a dropdown in the top bar lets you switch between editing the default site and a per-domain variant. Each domain gets its own pages, navigation, design tokens, and publish snapshot.
-- **Section blocks**: Add hero, text, gallery, spotlight, services, team, testimonials, contact form, and custom HTML sections to any page. Save sections as reusable blocks to build a personal library.
-- **Design tokens**: Set brand colors, fonts, spacing, border radius, motion style, custom CSS, and a site favicon. Changes apply across the whole site.
-- **Navigation editor**: Drag-and-drop reorder of header links, with dropdown groups, external links, and inline navbar styling (brand name, CTA button, phone, call bar, sticky).
-- **Publish snapshots**: Work in draft, preview your changes, then publish. Unpublished changes are tracked in the top bar.
-- **Responsive preview**: Toggle between desktop, tablet, and mobile viewports while editing. In desktop view you can also pick a real viewport width (1280, 1440, or 1920 pixels), so the site's own media queries answer honestly instead of being simulated.
-- **Resizable panes**: Drag the right edge of the left rail and the left edge of the right inspector to make either pane wider or narrower. Double-click a resize handle to return to the default width. The width is remembered per device in localStorage.
-- **Zoom and fit-to-window**: Zoom the canvas from 25% to 200%, or click the zoom value to jump to fit, 50%, 100%, or 200%. The stage scrolls when the scaled canvas exceeds it.
-- **Keyboard shortcuts**: Undo/redo, move the selected section, zoom, fit to window, close panels, and open the shortcut reference with the standard keys shown in the bottom bar.
+- **Meerdere pagina's**: Maak zoveel pagina's als je nodig hebt, elk met een eigen pad en secties. De vier standaardpagina's zijn klaar om te bewerken, te verwijderen of aan te vullen.
+- **Domeinwisselaar**: Wanneer je werkruimte meerdere eigen domeinen heeft (Pro-abonnement), kun je via een dropdown in de bovenbalk wisselen tussen het bewerken van de hoofdsite en een per-domein-variant. Elk domein krijgt zijn eigen pagina's, navigatie, ontwerptokens en publicatiesnapshot.
+- **Sectieblokken**: Voeg hero-, tekst-, galerij-, spotlight-, diensten-, team-, testimonial-, contactformulier- en aangepaste HTML-secties toe aan elke pagina. Sla secties op als herbruikbare blokken en bouw je eigen bibliotheek op.
+- **Ontwerptokens**: Stel merkkleuren, lettertypes, witruimte, hoekradius, bewegingsstijl, aangepaste CSS en een site-favicon in. Wijzigingen gelden voor de hele site.
+- **Navigatie-editor**: Sleep en zet headerlinks op volgorde, met dropdown-groepen, externe links en inline navbar-styling (merknaam, CTA-knop, telefoon, belknop, sticky).
+- **Publicatiesnapshots**: Werk in concept, bekijk je wijzigingen en publiceer daarna. Ongepubliceerde wijzigingen zie je in de bovenbalk.
+- **Responsieve preview**: Schakel tussen desktop-, tablet- en mobiele weergave tijdens het bewerken. In desktopweergave kun je ook een echte viewportbreedte kiezen (1280, 1440 of 1920 pixels), zodat de media queries van de site zelf eerlijk reageren in plaats van gesimuleerd te worden.
+- **Verstelbare panelen**: Sleep de rechterrand van de linker rail en de linkerrand van de rechter inspector om elk paneel breder of smaller te maken. Dubbelklik op een vergrotingsgreep om terug te gaan naar de standaardbreedte. De breedte wordt per apparaat onthouden in localStorage.
+- **Zoom en passend in venster**: Zoom het canvas van 25% tot 200%, of klik op de zoomwaarde om te kiezen voor passend, 50%, 100% of 200%. Het stage-gebied scrollt wanneer het geschaalde canvas groter wordt.
+- **Sneltoetsen**: Ongedaan maken/opnieuw, de geselecteerde sectie verplaatsen, in- en uitzoomen, passend in het venster, panelen sluiten en het overzicht met sneltoetsen openen via de toetsen die in de onderste balk staan.
 
-Your website dashboard lives at **Company > Your website** (`/website`). The editor opens from there.
+Je website-dashboard vind je onder **Bedrijf > Je website** (`/website`). De editor open je daarvandaan.
 
-Opening `/website` lands on the section overview: it shows your live site, publish status, and a clear entry point to the editor. The editor itself is at `/website/editor`, reached deliberately from the overview rather than taking over the whole screen on arrival.
+Als je `/website` opent, kom je op het sectieoverzicht terecht: je ziet de live site, de publicatiestatus en een duidelijke ingang naar de editor. De editor zelf zit op `/website/editor` en bereik je bewust vanuit het overzicht, in plaats van dat hij direct het hele scherm overneemt.
 
-## AI scaffolding
+## AI-snelstart
 
-When you open the site builder for the first time on a fresh workspace, the editor shows a quick-start banner at the top. It reads your business register data (legal name, industry code, city) and generates a starter tagline, an about-us paragraph and three service drafts for you. You can edit everything inline before accepting, regenerate if the first suggestion is not quite right, or dismiss the banner. No wizard questions, no upfront friction.
+Als je voor het eerst de sitebouwer opent op een nieuwe werkruimte, zie je een snelstartbanner bovenaan. Die leest je KVK-gegevens (bedrijfsnaam, branche, plaats) en stelt een eerste tagline, een over-ons-tekst en drie diensten voor. Je kunt alles ter plekke aanpassen voordat je het overneemt, opnieuw genereren als de eerste suggestie niet helemaal klopt, of de banner wegklikken. Geen wizardvragen, geen gedoe vooraf.
 
-What the banner can do for you:
+Wat de banner voor je doet:
 
-- **Generate**: Click **Generate suggestion** to let the AI read your KVK data and propose copy.
-- **Edit inline**: Adjust the tagline, about text and service names and descriptions right in the banner.
-- **Accept**: Click **Apply** to write the accepted copy to your workspace. Your company description, hero tagline and services are updated in one go.
-- **Regenerate**: Not happy with the result? Click **Regenerate** for a fresh set of suggestions.
-- **Dismiss**: The banner remembers your choice locally. It stays hidden until you reset your workspace data.
+- **Genereren**: Klik op **Genereer voorstel** om de AI je KVK-data te laten lezen en kopij voor te stellen.
+- **Inline bewerken**: Pas de tagline, over-tekst en dienstnamen en omschrijvingen direct in de banner aan.
+- **Overnemen**: Klik op **Overnemen** om de goedgekeurde kopij naar je werkruimte te schrijven. Je bedrijfsomschrijving, hero-tagline en diensten worden in een keer bijgewerkt.
+- **Opnieuw genereren**: Niet tevreden? Klik op **Opnieuw genereren** voor een nieuwe set suggesties.
+- **Wegklikken**: De banner onthoudt je keuze lokaal. Hij blijft verborgen totdat je je werkruimtegegevens opnieuw instelt.
 
-The banner uses the Gemini AI model (lite variant) when available on your workspace. If AI is not configured, the banner still works with a sensible fallback based on your industry code and company name.
+De banner gebruikt het Gemini AI-model (lite-variant) als dat beschikbaar is in je werkruimte. Als AI niet is geconfigureerd, werkt de banner alsnog met een verstandige terugval op basis van je branchecode en bedrijfsnaam.
 
-## Website setup wizard
+## Website-opzetwizard
 
-Before you ever open the editor, the website setup wizard can build your first draft for you. It opens automatically the first time a new workspace visits `/website`, and you can restart it later from **Company > Your website > Style** by clicking **Set up again**. The wizard asks four questions:
+Voordat je ooit de editor opent, kan de website-opzetwizard je eerste concept voor je bouwen. Hij opent automatisch de eerste keer dat een nieuwe werkruimte `/website` bezoekt, en je kunt hem later opnieuw starten via **Bedrijf > Je website > Stijl** met **Opnieuw opzetten**. De wizard stelt vier vragen:
 
-1. **What you do** (pre-filled from your KVK data) - your work, services and tone.
-2. **What you want** - whether the site should bring in leads, showcase your work, build credibility or get found online.
-3. **Logo** - keep the AI-generated logo or upload your own PNG/SVG.
-4. **Brand colour** - pick one of the suggested swatches or enter your own hex colour.
+1. **Wat je doet** (alvast ingevuld uit je KVK-gegevens) - je werk, diensten en toon.
+2. **Wat je wilt** - of je site vooral klanten moet binnenhalen, je werk moet tonen, betrouwbaar moet overkomen of beter vindbaar moet zijn.
+3. **Logo** - houd het AI-gegenereerde logo, of upload je eigen PNG/SVG.
+4. **Merkkleur** - kies een van de voorgestelde kleuren of geef je eigen hex-kleur op.
 
-Your answers are saved as the site brief. When you finish, the AI writes fresh copy for your whole draft site based on the brief and your workspace data, applies your chosen logo and brand colour, and leaves everything as a draft. Nothing is published automatically. You review the result in the editor and publish when you are happy with it.
+Je antwoorden worden opgeslagen als sitebriefing. Als je afsluit, schrijft de AI nieuwe teksten voor je hele conceptsite op basis van de briefing en je werkruimtegegevens, past je gekozen logo en merkkleur toe, en laat alles als concept staan. Er wordt niets automatisch gepubliceerd. Je bekijkt het resultaat in de editor en publiceert pas wanneer je tevreden bent.
 
-The same wizard can also rewrite an existing site from scratch. Restarting it from the Style tab confirms first, because finishing replaces copy you may have edited yourself. The site stays a draft until you publish it yourself.
+Dezelfde wizard kan een bestaande site ook helemaal opnieuw schrijven. Als je hem vanuit de Stijl-tab herstart, vraagt hij eerst om bevestiging, want afsluiten vervangt tekst die je zelf hebt aangepast. De site blijft concept tot je zelf publiceert.
 
 ## Tabs
 
-The site builder has three tabs: Editor, Pages, and Style. Click the Style header to open or close its sub-tabs, which include Animation.
+De sitebouwer heeft drie tabs: Editor, Pagina's en Stijl. Klik op de Stijl-header om de sub-tabs (waaronder Animatie) uit of in te klappen.
 
-- **Editor**: Compose pages by adding and arranging sections. Click any section to inspect its content, layout, style, or animation settings. Drag sections to reorder, duplicate, or delete them.
-- **Pages**: Manage your pages: create new ones from templates, set paths and visibility, and see which pages are live, draft, or scheduled. Click a page to open it in the editor. The locked home page cannot be deleted. Each page shows a Live/Concept badge alongside quick-toggle buttons: click the globe icon to set a draft page live, or use the eye-off icon to hide a live page back to concept.
-- **Style**: Customize your site-wide design tokens. Apply a one-click preset (Editorial), then fine-tune colors (brand, accent, paper, ink), fonts (heading, body, mono from the font library), navbar (layout, background, CTA style), scale (radius, density, max width, section spacing), motion preferences, button styles, and custom CSS. You can also add head snippets for analytics (Plausible, Umami, Matomo) or font preconnects. Click the Style header to open or close the tab strip.
+- **Editor**: Stel pagina's samen door secties toe te voegen en te rangschikken. Klik op een sectie om de inhoud, layout, stijl of animatie te bewerken. Sleep secties om ze te verplaatsen, dupliceren of verwijderen.
+- **Pagina's**: Beheer je pagina's: maak nieuwe aan vanuit sjablonen, stel paden en zichtbaarheid in, en bekijk welke pagina's live, concept of ingepland zijn. Klik op een pagina om deze in de editor te openen. De vergrendelde homepage kan niet worden verwijderd. Elke pagina toont een Live/Concept-badge met snelle wisselknoppen: klik op het wereldbol-icoontje om een conceptpagina live te zetten, of op het oog-dicht-icoontje om een live pagina terug naar concept te zetten.
+- **Stijl**: Pas je sitebrede ontwerptokens aan. Kies een klik-en-klaar-preset (Editorial) en stem daarna kleuren (merk, accent, papier, inkt), lettertypes (kop, body, mono uit de lettertypebibliotheek), navbar (layout, achtergrond, knopstijl), schaal (radius, dichtheid, maximale breedte, sectie-afstand), beweging, knopstijlen en aangepaste CSS fijn af. Je kunt ook head-snippets toevoegen voor analytics (Plausible, Umami, Matomo) of lettertype-preconnects. Klik op de Stijl-header om de tab uit of in te klappen.
 
-Domain, SEO, and third-party integrations are managed from the `/website` home tabs, not inside the editor.
+Domein, SEO en koppelingen met derden beheer je vanuit de `/website`-thuis-tabbladen, niet in de editor.
 
-### Site packages gallery
+### Pakketten-galerij
 
-The **Site packages** gallery (`Company > Your website > Pakketten`) is the fastest way to start from a complete, pre-styled site. It lists every approved site package: a finished template, color pack, and font pairing built for a specific trade, rendered with a small swatch card that shows the package's own palette.
+De galerij **Pakketten** (`Bedrijf > Je website > Pakketten`) is de snelste manier om te beginnen met een complete, voorgestylede site. Hij toont elk goedgekeurd sitepakket: een afgebouwde sjabloon met kleurenpakket en lettertypecombinatie voor een specifiek vak, weergegeven met een kleine swatchkaart die het eigen palet van het pakket laat zien.
 
-How it works:
+Zo werkt het:
 
-1. Open **Company > Your website** and click **Pakketten** in the top bar.
-2. Browse the cards. Each card shows a real screenshot of the package when one has been generated, otherwise a color swatch built from the package's own palette. The name, trade, page count, and short description sit below the image.
-3. Click **Preview** to open a live sample of the package in a new tab.
-4. Click **Use this package**. A confirmation explains that your current draft site (pages, sections, and style) will be replaced.
-5. The package is applied to your **draft** only. Nothing is published automatically.
-6. The editor opens so you can review the result, change copy and images, and publish when you are ready.
+1. Open **Bedrijf > Je website** en klik bovenaan op **Pakketten**.
+2. Blader door de kaarten. Elke kaart toont een echte screenshot van het pakket als die al is gegenereerd, anders een kleurswatch op basis van het eigen palet van het pakket. De naam, het vak, het aantal pagina's en de korte omschrijving staan onder de afbeelding.
+3. Klik op **Bekijk voorbeeld** om een live voorbeeld van het pakket in een nieuw tabblad te openen.
+4. Klik op **Gebruik dit pakket**. Er verschijnt een bevestiging die aangeeft dat je huidige conceptsite (pagina's, secties en stijl) wordt vervangen.
+5. Het pakket wordt alleen op je **concept** toegepast. Er wordt niets automatisch gepubliceerd.
+6. De editor opent zodat je het resultaat kunt bekijken, tekst en afbeeldingen kunt aanpassen en zelf kunt publiceren.
 
-The same gallery lives inside the editor. Open the **Ontwerp** rail to browse packages on the canvas itself. Click **Preview** on a card to see the package's public preview at full size, alongside your own site, and use **Back to all designs** to keep comparing. Applying a package from the editor reloads your draft and returns you to the Sections rail so you can keep editing.
+Dezelfde galerij zit ook in de editor. Open de rail **Ontwerp** om pakketten te bekijken op het canvas zelf. Klik op **Bekijk voorbeeld** bij een kaart om het publieke voorbeeld op ware grootte te zien, naast je eigen site, en gebruik **Terug naar alle ontwerpen** om verder te vergelijken. Pas je een pakket toe vanuit de editor, dan wordt je concept opnieuw geladen en kom je terug bij de rail Secties, zodat je direct verder kunt bewerken.
 
-Search the gallery by trade or style with the search field. The count next to the field updates as you filter. If no packages are available yet, the page tells you they will appear once the first designs are approved.
+Zoek op vak of stijl via het zoekveld. Het aantal ernaast wordt bijgewerkt terwijl je filtert. Zijn er nog geen pakketten beschikbaar, dan meldt de pagina dat ze hier verschijnen zodra de eerste ontwerpen zijn goedgekeurd.
 
-Source: `apps/web/pages/website/pakketten.vue`; `apps/web/components/site-builder/SiteEditorScreen.vue`; `apps/web/components/site-builder/SitePackageGallery.vue`; `apps/web/services/site-packages.service.ts`; `apps/api/src/modules/sites/packages.service.js`.
+Bron: `apps/web/pages/website/pakketten.vue`; `apps/web/components/site-builder/SiteEditorScreen.vue`; `apps/web/components/site-builder/SitePackageGallery.vue`; `apps/web/services/site-packages.service.ts`; `apps/api/src/modules/sites/packages.service.js`.
 
-### Bespoke designs
+### Bespoke-ontwerpen
 
-The site builder also ships a set of ready-made **bespoke designs** that replace the standard style presets with a curated template, color pack, and brand accent. Open the **Bespoke designs** panel from the Style tab to browse the gallery. Each card is a live preview filled with your own workspace data (services, photos, reviews, contact details), so you see exactly how the design looks before you apply it.
+De sitebouwer biedt ook een set kant-en-klare **bespoke ontwerpen** die de standaard stijlpresets vervangen door een samengesteld sjabloon, kleurenpakket en merkaccent. Open het **Bespoke ontwerpen**-paneel vanuit de Stijl-tab om door de galerij te bladeren. Elke kaart is een live voorbeeld gevuld met je eigen werkruimtegegevens (diensten, foto's, reviews, contactgegevens), zodat je precies ziet hoe het ontwerp eruitziet voordat je het toepast.
 
-Picking a design sets three things at once:
+Als je een ontwerp kiest, worden drie dingen tegelijk ingesteld:
 
-- **Template**: the layout family and section structure (for example, a centred hero with a marquee of reviews, or a split-spotlight services page).
-- **Color pack**: a curated palette variant for that template. Most templates offer multiple packs such as warm, cool, neutral, bold, or muted. Changing the pack keeps the same template but swaps CSS custom-property tokens, so the layout stays intact while the feel changes.
-- **Brand accent**: an optional override for the template's accent color. Leave it empty to use the pack's default accent; enter your own hex color to make buttons, highlights, and badges match your brand. You can clear the override at any time to fall back to the pack default.
+- **Sjabloon**: de layoutfamilie en sectiestructuur (bijvoorbeeld een gecentreerde hero met een marquee van reviews, of een gesplitste spotlight-pagina voor diensten).
+- **Kleurenpakket**: een samengestelde paletvariant voor dat sjabloon. De meeste sjablonen bieden meerdere pakketten, zoals warm, koel, neutraal, fel of gedempt. Het pakket wisselen houdt hetzelfde sjabloon intact maar vervangt de CSS custom-property-tokens, zodat de vorm gelijk blijft terwijl de sfeer verandert.
+- **Merkaccent**: een optionele overschrijving voor het accentkleur van het sjabloon. Laat het leeg om het standaardaccent van het pakket te gebruiken; vul je eigen hex-kleur in om knoppen, highlights en badges op je merk af te stemmen. Je kunt de overschrijving altijd wissen om terug te vallen op de pakketstandaard.
 
-Your business logo is used automatically if you have uploaded one. Templates that support a logo render it in the navbar or hero area. Templates that expect a text wordmark fall back to your business name when no logo is set, controlled by a conditional rule so the right element appears.
+Je bedrijfslogo wordt automatisch gebruikt als je er een hebt geüpload. Sjablonen die een logo ondersteunen tonen het in de navbar of hero. Sjablonen die een tekstwoordmerk verwachten, vallen terug op je bedrijfsnaam als er geen logo is ingesteld, via een conditionele regel zodat het juiste element verschijnt.
 
-When you find a design you like, click **Use this design**. The current site is published straight away with the new template, pack, and accent applied, and your public URL immediately shows the change.
+Als je een ontwerp vindt dat je bevalt, klik je op **Dit ontwerp gebruiken**. De huidige site wordt meteen gepubliceerd met het nieuwe sjabloon, pakket en accent, en je openbare URL toont direct de wijziging.
 
-### Reordering sections on a bespoke page
+### Secties herordenen op een bespoke-pagina
 
-After applying a bespoke design, open any page in the bespoke content editor. The **Sections** panel lists every top-level section on that page. Drag a section to a new position, or use the up and down buttons. Toggle the visibility switch to hide a section without deleting it. The navigation, hero and footer sections stay locked in place; you cannot move or hide them.
+Nadat je een bespoke-ontwerp hebt toegepast, open je een pagina in de bespoke-contenteditor. Het paneel **Secties** toont alle top-level secties van die pagina. Sleep een sectie naar een nieuwe plek, of gebruik de knoppen omhoog en omlaag. Zet de zichtbaarheidsschakelaar uit om een sectie te verbergen zonder hem te verwijderen. De navigatie, hero en footer blijven op hun plek staan; je kunt ze niet verplaatsen of verbergen.
 
-### On-canvas section controls
+### Bediening op de canvas-voorvertoning
 
-You can also reorder, hide and remove sections directly on the live preview canvas. Hover over any top-level section to see its name and a small toolbar. Use the arrows to move the section up or down, the eye icon to hide it (or show it again), and the trash icon to remove a section you added yourself. Locked chrome such as the navigation, hero and footer shows the section name on hover but has no move, hide or remove actions.
+Je kunt secties ook direct op de live canvas-voorvertoning herschikken, verbergen en verwijderen. Beweeg met je muis over een top-level sectie om de naam en een kleine toolbar te zien. Gebruik de pijltjes om de sectie omhoog of omlaag te verplaatsen, het oog-icoon om hem te verbergen (of weer te tonen), en het prullenbak-icoon om een sectie die je zelf hebt toegevoegd te verwijderen. Vergrendelde onderdelen zoals de navigatie, hero en footer tonen de naam bij hover, maar hebben geen opties om te verplaatsen, verbergen of verwijderen.
 
-Click a section to keep it selected; the outline then stays visible even when you move the mouse away, so you can compare positions while you scroll or edit content. Both the canvas and the **Sections** panel read from the same underlying order, so a change in one place is reflected in the other immediately.
+Klik op een sectie om hem geselecteerd te houden; de omlijning blijft dan zichtbaar als je de muis wegbeweegt, zodat je posities kunt vergelijken terwijl je scrollt of de inhoud bewerkt. Zowel de canvas als het paneel **Secties** lezen uit dezelfde onderliggende volgorde, dus een wijziging op de ene plek wordt direct op de andere plek doorgevoerd.
 
-### Footer content
+### Voettekst-inhoud
 
-Bespoke templates that include a minimal footer now let you add your own footer content without changing the design. Open any page in the bespoke content editor and scroll to the **Voettekst** (footer) panel.
+Bespoke-sjablonen met een minimale footer laten je nu je eigen voettekst-inhoud toevoegen zonder het ontwerp aan te passen. Open een pagina in de bespoke-contenteditor en scroll naar het paneel **Voettekst**.
 
-From there you can add:
+Daar kun je toevoegen:
 
-- **Legal line**: your KvK/BTW or other small print, rendered in the template's footer style.
-- **Link columns**: titled columns of links, useful for pages like contact, terms or services.
-- **Contact details**: toggle to show your email, phone and address from your company details.
-- **Social links**: toggle to show the social links saved in your company details.
+- **Juridische regel**: je KvK/BTW of andere kleine lettertjes, weergegeven in de stijl van het ontwerp.
+- **Linkkolommen**: getitelde kolommen met links, handig voor pagina's als contact, voorwaarden of diensten.
+- **Contactgegevens**: schakel in om je e-mail, telefoon en adres uit je bedrijfsgegevens te tonen.
+- **Sociale links**: schakel in om de sociale links uit je bedrijfsgegevens te tonen.
 
-The design still controls colour, type and spacing; you only supply the content. Links accept internal paths (`/contact`), external HTTPS URLs, email (`mailto:`) or phone (`tel:`). If a template already shows contact or social details in its footer, the matching toggle is hidden to avoid duplicates.
+Het ontwerp bepaalt nog steeds kleur, lettertype en witruimte; jij levert alleen de inhoud. Links mogen interne paden (`/contact`), externe https-URL's, e-mail (`mailto:`) of telefoon (`tel:`) zijn. Als een sjabloon je contactgegevens of sociale links al in de footer toont, wordt de bijbehorende schakelaar verborgen, zodat niets dubbel verschijnt.
 
-### Overriding section button links
+### Knoplinks per sectie overschrijven
 
-Some bespoke sections include clickable buttons or links that would normally point to a fixed page baked into the design, such as a contact page, a booking URL or a phone number. The bespoke content editor lets you override the destination of each addressable button per page.
+Sommige bespoke-secties bevatten klikbare knoppen of links die normaal naar een vast pagina in het ontwerp verwijzen, zoals een contactpagina, een boekingslink of een telefoonnummer. De bespoke-contenteditor laat je per pagina de bestemming van elke aanpasbare knop wijzigen.
 
-Open a page in the bespoke content editor and select the section whose button you want to change. In the **Sections** panel, each section that contains addressable buttons shows a **Buttons** list. Pick the button you want to override and enter its new destination. You can link to another page on your site, an external URL, an email address (`mailto:`) or a phone number (`tel:`). Links are checked against the same allowed schemes as navigation links for safety. If you leave the override empty, the button keeps the template's original destination.
+Open een pagina in de bespoke-contenteditor en selecteer de sectie waarvan je de knop wilt aanpassen. In het paneel **Secties** toont elke sectie met aanpasbare knoppen een lijst **Knoppen**. Kies de knop die je wilt overschrijven en voer de nieuwe bestemming in. Je kunt linken naar een andere pagina op je site, een externe URL, een e-mailadres (`mailto:`) of een telefoonnummer (`tel:`). Links worden om veiligheid gecheckt tegen dezelfde toegestane schemes als navigatielinks. Laat je de overschrijving leeg, dan houdt de knop zijn oorspronkelijke bestemming uit het sjabloon.
 
-### Adding and editing sections
+### Secties toevoegen en bewerken
 
-When you open a bespoke page in the editor, the **Sections** panel now offers the full section catalogue. Sections that belong to the design itself appear first and use the template's own markup and your workspace data, so they look native. Sections from the broader catalogue are bridged in on the same palette and typography, but carry their own per-instance content fields.
+Als je een bespoke-pagina opent in de editor, biedt het paneel **Secties** nu de volledige sectiecatalogus. Secties die bij het ontwerp zelf horen, staan bovenaan en gebruiken de eigen markup van het sjabloon en je werkruimtegegevens, zodat ze er native uitzien. Secties uit de bredere catalogus worden via een brug ingeladen in hetzelfde kleurenpalet en lettertype, maar hebben hun eigen inhoudsvelden per sectie.
 
-Click **Add section** to open the picker, choose the kind you want, and the section drops onto the page with sensible defaults. The inspector on the right shows the fields for the selected section, whether they come from your workspace data or from the section's own content props. You can reorder, hide, or remove added sections the same way as the design's own sections.
+Klik op **Sectie toevoegen** om het venster te openen, kies de soort die je wilt, en de sectie wordt op de pagina geplaatst met logische standaardwaarden. Het inspectiepaneel rechts toont de velden van de geselecteerde sectie, of ze nu uit je werkruimtegegevens komen of uit de eigen inhoudsprops van de sectie. Je kunt toegevoegde secties op dezelfde manier herschikken, verbergen of verwijderen als de secties van het ontwerp zelf.
 
-### Renaming pages
+### Pagina's hernoemen
 
-Template pages have a fixed address and a menu label that is baked into the design's markup. Rather than editing every link by hand, the **Pages** panel lets you rename the menu label of any template page. Click the pencil next to a page, type the new label, and every link to that page in the navigation and footer updates automatically. The page address itself does not change, so no redirect is needed and existing links keep working.
+Sjabloonpagina's hebben een vast adres en een menulabel dat in de markup van het ontwerp zit. In plaats van elke link handmatig te wijzigen, laat het paneel **Pagina's** je het menulabel van elke sjabloonpagina hernoemen. Klik op het potlood naast een pagina, typ het nieuwe label en elke link naar die pagina in de navigatie en footer wordt automatisch bijgewerkt. Het adres van de pagina zelf verandert niet, dus je hebt geen redirect nodig en bestaande links blijven werken.
 
-If you clear the field or type the design's original name back, the rename is removed and the design's own label returns.
+Als je het veld leegmaakt of de oorspronkelijke naam van het ontwerp terugtypt, wordt de hernoeming verwijderd en komt het oorspronkelijke label terug.
 
-### Editing design copy
+### Ontwerptekst bewerken
 
-Designs contain small pieces of literal text, such as kickers, captions, and micro-headings, that are not connected to your workspace data. In edit mode these text snippets are editable on the canvas: click the text, type the change, and press Enter or click outside to save. The override is stored per section and per page, and the public site shows your version instead of the design's original words.
+Ontwerpen bevatten kleine stukjes letterlijke tekst, zoals kickers, bijschriften en kleine koppen, die niet aan je werkruimtegegevens gekoppeld zijn. In de edit-modus zijn die tekstjes op de canvas bewerkbaar: klik op de tekst, typ de wijziging en druk op Enter of klik ergens anders om op te slaan. De overschrijving wordt per sectie en per pagina opgeslagen, en de openbare site toont jouw versie in plaats van de oorspronkelijke woorden van het ontwerp.
 
-Text inside repeating blocks is not editable this way, because one static path would change every repeated item. Editing is also limited to text that sits inside a section, so there is always a stable address for the override. To undo a change, clear the field or type the design's original text back.
+Tekst binnen herhalende blokken kun je op deze manier niet bewerken, want één statisch pad zou elk herhaald item veranderen. Bewerken is ook beperkt tot tekst die binnen een sectie staat, zodat er altijd een stabiel adres voor de overschrijving is. Om een wijziging ongedaan te maken, wis je het veld of typ je de oorspronkelijke tekst van het ontwerp terug.
 
-## Creating pages
+## Pagina's aanmaken
 
-1. Go to the **Pages** tab.
-2. Click **New page**.
-3. Enter a title and a path (e.g. `/about`).
-4. Choose a template or start blank.
-5. The page opens in the editor, where you can add sections and build it out.
+1. Ga naar de **Pagina's**-tab.
+2. Klik op **Nieuwe pagina**.
+3. Geef een titel en een pad op (bijv. `/over-ons`).
+4. Kies een sjabloon of begin leeg.
+5. De pagina opent in de editor, waar je secties kunt toevoegen en uitbouwen.
 
-### Default pages
+### Standaardpagina's
 
-Every new workspace comes with four pages already created:
+Elke nieuwe werkruimte krijgt vier pagina's mee:
 
-| Page | Path | Description |
+| Pagina | Pad | Beschrijving |
 |---|---|---|
-| Home | `/` | Your main landing page. Cannot be deleted. |
-| Diensten | `/diensten` | Show what you offer. Pre-filled with a services section. |
-| Over ons | `/over-ons` | Tell visitors who you are. |
-| Contact | `/contact` | Contact form and details. Linked from the footer. |
+| Home | `/` | Je hoofdpagina. Kan niet worden verwijderd. |
+| Diensten | `/diensten` | Laat zien wat je aanbiedt. Vooraf gevuld met een dienstensectie. |
+| Over ons | `/over-ons` | Vertel bezoekers wie je bent. |
+| Contact | `/contact` | Contactformulier en gegevens. Gekoppeld vanuit de footer. |
 
-These pages are wired into the navigation header and footer automatically. You can edit or delete any of them, except the Home page which is always required. The navigation updates its links when you add or remove pages.
+Deze pagina's zijn automatisch verbonden met de navigatie-header en footer. Je kunt ze allemaal bewerken of verwijderen, behalve de Home-pagina die altijd verplicht is. De navigatie past zijn links aan als je pagina's toevoegt of verwijdert.
 
-### Page status: Live vs Concept
+### Paginastatus: Live vs Concept
 
-Pages have a status that controls whether they appear on your published site:
+Pagina's hebben een status die bepaalt of ze op je gepubliceerde site verschijnen:
 
-- **Live**: The page is included in the publish snapshot. Visitors see it on your public site after you publish.
-- **Concept** (draft): The page is a work in progress. It stays hidden from visitors even after you publish the site.
+- **Live**: De pagina wordt meegenomen in de publicatie. Bezoekers zien hem op je openbare site na publicatie.
+- **Concept**: De pagina is nog in bewerking. Hij blijft onzichtbaar voor bezoekers, ook nadat je de site publiceert.
 
-The home page starts as **Live** by default. Every other new page starts as **Concept** so it does not go public before you are ready. You can toggle any page between Live and Concept with the quick-action buttons in the Pages table. Changing the status updates immediately and lights up the Publish button in the top bar, so the next publish picks up the change.
+De homepage start standaard als **Live**. Elke andere nieuwe pagina start als **Concept**, zodat die niet in de openbaarheid komt voordat jij er klaar voor bent. Je kunt elke pagina wisselen tussen Live en Concept met de snelle actieknoppen in de Pagina's-tabel. De statuswijziging wordt meteen opgeslagen en zet de Publiceerknop in de bovenbalk aan, zodat de volgende publicatie de wijziging oppikt.
 
-A site whose home page is in Concept renders nothing when published. If you toggle the home page to Concept, switch it back to Live and publish to restore the site.
+Een site waarvan de homepage op Concept staat, toont niets bij publicatie. Als je de homepage naar Concept hebt gezet, zet je hem terug naar Live en publiceer je om je site te herstellen.
 
-## Building pages with sections
+## Pagina's bouwen met secties
 
-In the **Editor** tab:
+In de **Editor**-tab:
 
-- Click **Add section** to see the available block types (hero, text, gallery, spotlight, services, team, testimonials, contact form, pricing, product, custom HTML, and more).
-- Select a block type to insert it onto the page.
-- Click any section to open the inspector panel, where you can edit its content, layout, style, and animation.
-- Drag sections up or down to reorder. Use the duplicate and delete actions on each section.
+- Klik op **Sectie toevoegen** om de beschikbare bloktypes te zien (hero, tekst, galerij, spotlight, diensten, team, testimonials, contactformulier, tarieven, product, aangepaste HTML, en meer).
+- Kies een bloktype om het op de pagina te plaatsen.
+- Klik op een sectie om het inspectiepaneel te openen, waar je inhoud, layout, stijl en animatie kunt bewerken.
+- Sleep secties omhoog of omlaag om ze te verplaatsen. Gebruik de dupliceer- en verwijderacties op elke sectie.
 
-Some sections have system-only variants that are available on the locked home page but not on custom pages.
+Sommige secties hebben alleen-systeemvarianten die beschikbaar zijn op de vergrendelde homepage maar niet op aangepaste pagina's.
 
-## AI assistant tools
+## AI-hulptools
 
-Two AI-powered tools help you write and illustrate your pages faster, right inside the editor inspector.
+Twee AI-gestuurde tools helpen je sneller pagina's te schrijven en te illustreren, direct in het editor-inspectiepaneel.
 
-### Text rewrite
+### Tekst herschrijven
 
-Every text and textarea field in the section inspector gets four small tone buttons below it when the field has enough content (more than a few words). The buttons send your current text to the server, which runs a lightweight Gemini model to rewrite it with a specific tone:
+Elk tekst- en tekstvlakveld in de sectie-inspector krijgt vier kleine toonknopjes eronder zodra het veld genoeg inhoud heeft (meer dan een paar woorden). De knoppen sturen je huidige tekst naar de server, die een lichtgewicht Gemini-model gebruikt om het in een specifieke toon te herschrijven:
 
-- **Shorter**: Cuts the text to about half its length while keeping the meaning.
-- **Calmer**: Makes the text warmer and more reassuring. Less sales pitch, more confidence.
-- **Sharper**: Tightens the wording. Stronger verbs, no hesitation.
-- **Friendlier**: Softens the tone to be warmer and more approachable.
+- **Korter**: Halveert de tekst ongeveer, met behoud van de betekenis.
+- **Kalmer**: Maakt de tekst rustiger en geruststellend. Minder verkooppraatje, meer vertrouwen.
+- **Scherper**: Verscherpt de formulering. Sterkere werkwoorden, geen aarzeling.
+- **Vriendelijker**: Verzacht de toon, warmer en toegankelijker.
 
-The rewrite always stays in the same language as the original (usually Dutch). The model only rewrites, it does not invent new information. The rewritten text replaces your field content inline. You can click another tone button, undo, or edit further.
+De herschrijving blijft altijd in dezelfde taal als het origineel (meestal Nederlands). Het model herschrijft alleen, het verzint geen nieuwe informatie. De herschreven tekst vervangt je veldinhoud direct. Je kunt op een andere toonknop klikken, ongedaan maken of verder bewerken.
 
-The text field is limited to 2000 characters for the rewrite call, so the model returns quickly and stays predictable. If the AI service is temporarily unavailable, you will see an error message and your original text stays untouched.
+Het tekstveld is beperkt tot 2000 tekens voor de herschrijf-aanroep, zodat het model snel en voorspelbaar blijft. Als de AI-service tijdelijk niet beschikbaar is, zie je een foutmelding en blijft je oorspronkelijke tekst onaangeroerd.
 
-### Stock photo search
+### Stockfoto zoeken
 
-When you open the image upload field in any section block (hero, spotlight, team, portfolio, logos, product), you now see a **Stockfoto** button next to the upload and URL paste buttons. Clicking it opens an inline search panel connected to Unsplash, the free stock photo library.
+Wanneer je het afbeelding-uploadveld opent in een willekeurig sectieblok (hero, spotlight, team, portfolio, logo's, product), zie je nu een **Stockfoto**-knop naast de upload- en URL-plak-knoppen. Als je erop klikt, opent zich een inline zoekpaneel dat is verbonden met Unsplash, de gratis stockfotobibliotheek.
 
-- Type a search term (e.g. "hair salon", "coffee", "wood") and hit enter.
-- Results appear in a grid. Click any photo to insert it as your section image.
-- The search is proxied through the MyCompanyDesk server, so your Unsplash access key never reaches the browser.
-- Attribution is tracked automatically per Unsplash's API guidelines and rendered on your published site. When your site goes live, a "Foto's: `photographer` · Unsplash" credit line appears in the footer for every page that uses at least one stock photo, so you are always compliant.
-- If Unsplash is not configured on your workspace, the Stockfoto button stays hidden so you never see a broken feature.
+- Typ een zoekterm (bijv. "kapsalon", "koffie", "hout") en druk op enter.
+- Resultaten verschijnen in een raster. Klik op een foto om deze als sectie-afbeelding in te voegen.
+- De zoekopdracht loopt via de MyCompanyDesk-server, dus je Unsplash-toegangssleutel komt nooit in de browser.
+- Naamsvermelding wordt automatisch bijgehouden volgens de API-richtlijnen van Unsplash en getoond op je gepubliceerde site. Zodra je site live staat, verschijnt er een "Foto's: `fotograaf` · Unsplash"-vermelding in de footer van elke pagina die minstens één stockfoto bevat, zodat je altijd aan de richtlijnen voldoet.
+- Als Unsplash niet is geconfigureerd op je werkruimte, blijft de Stockfoto-knop verborgen, zodat je nooit een niet-werkende functie ziet.
 
-## Saved blocks
+## Opgeslagen blokken
 
-Save any section as a reusable block and build a personal library of pre-styled building blocks. Saved blocks appear at the top of the section adder, so you can drop a saved layout onto any page without rebuilding it from scratch.
+Sla elke sectie op als herbruikbaar blok en bouw een persoonlijke bibliotheek van voorgestijlde bouwstenen. Opgeslagen blokken verschijnen bovenaan de sectie-toevoeger, zodat je een bewaarde layout op elke pagina kunt plaatsen zonder hem opnieuw op te bouwen.
 
-### Save a section as a block
+### Sectie opslaan als blok
 
-1. Click the bookmark icon on any section row in the editor.
-2. Give the block a name (the section label or type is pre-filled as a suggestion).
-3. The block is saved to your personal library for this workspace.
+1. Klik op het bladwijzer-icoon op een sectierij in de editor.
+2. Geef het blok een naam (het sectielabel of -type is alvast ingevuld als suggestie).
+3. Het blok wordt opgeslagen in je persoonlijke bibliotheek voor deze werkruimte.
 
-### Insert a saved block
+### Opgeslagen blok invoegen
 
-1. Click **Add section** on any page.
-2. Your saved blocks appear under **My blocks** at the top of the adder panel.
-3. Click a saved block to insert it as a new section on the current page.
+1. Klik op **Sectie toevoegen** op een pagina.
+2. Je opgeslagen blokken staan onder **Mijn blokken** bovenaan het paneel.
+3. Klik op een blok om het als nieuwe sectie op de huidige pagina te plaatsen.
 
-Inserting a saved block copies its template into a fresh section row. Editing or deleting the inserted section does not touch the saved block in your library, and the other way around.
+Het invoegen van een blok kopieert de template naar een nieuwe sectierij. Het bewerken of verwijderen van de ingevoegde sectie heeft geen invloed op het opgeslagen blok in je bibliotheek, en andersom.
 
-### Manage your library
+### Je bibliotheek beheren
 
-- **Remove a block** from the library by clicking the x icon on the block in the adder panel. This only removes the saved template; it does not affect sections already inserted from it.
-- The **My blocks** header is hidden when your library is empty, so a first-time editor does not see an empty category.
+- **Verwijder een blok** uit de bibliotheek door op het x-icoon naast het blok te klikken. Dit verwijdert alleen het opgeslagen sjabloon; secties die al vanuit dat blok zijn ingevoegd blijven staan.
+- De **Mijn blokken**-kop is verborgen als je bibliotheek leeg is, zodat een eerste editor geen lege categorie ziet.
 
-### Section layout variants
+### Sectie-layoutvarianten
 
-Hero, services, pricing, and testimonials sections support multiple layout variants. Pick one from the **Stijl** (Style) dropdown in the inspector's Layout tab to change how the section renders. The default variant preserves the existing look, so sections you built before this feature keep rendering as they always did.
+Hero-, diensten-, tarieven- en testimonialsecties ondersteunen meerdere layoutvarianten. Kies er een uit de **Stijl**-dropdown in het Layout-tabblad van de inspector om te bepalen hoe de sectie eruitziet. De standaardvariant behoudt het vertrouwde uiterlijk, dus secties die je vóór deze functie hebt gebouwd blijven hetzelfde tonen.
 
-#### Hero variants
-
-| Variant | Effect |
-|---|---|
-| **Standard (split right)** | Default. Image on the right, text on the left. Falls back to centered text when there is no image. |
-| **Split left** | Mirror of the default: image on the left, text on the right. Requires an image. |
-| **Centered** | Text centered, optional image beneath it in a wide 16:9 frame. |
-| **Banner** | Full-bleed background image with a gradient overlay. White text on a dark scrim, tall so the image breathes. Requires an image. |
-| **Minimal** | Text-only in a narrow column. No image. Clean and quiet for documentation-style pages. |
-
-#### Services variants
+#### Hero-varianten
 
 | Variant | Effect |
 |---|---|
-| **Standard (cards)** | Default. Grid of cards in 2, 3, or 4 columns. Icon, title, and description per item. |
-| **Icon grid** | Denser, icon-led layout with larger icons and less card chrome. Best for 4 or more short-label items. |
-| **List** | Vertical rows with an icon on the left and text on the right, separated by thin rules. Good for long read-through lists. |
-| **Accordion** | Vertically stacked clickable rows. Description hidden until the row opens. Uses the same chevron animation as the FAQ block. |
+| **Standaard (split rechts)** | Standaard. Afbeelding rechts, tekst links. Valt terug op gecentreerde tekst als er geen afbeelding is. |
+| **Split links** | Spiegel van de standaard: afbeelding links, tekst rechts. Vereist een afbeelding. |
+| **Gecentreerd** | Tekst gecentreerd, optionele afbeelding eronder in een breed 16:9-kader. |
+| **Banner** | Afbeelding over de volle breedte als achtergrond met een verloopoverlay. Witte tekst op een donkere scherm, extra hoog zodat de afbeelding ruimte krijgt. Vereist een afbeelding. |
+| **Minimaal** | Alleen tekst in een smalle kolom. Geen afbeelding. Strak en rustig, geschikt voor documentatie-achtige pagina's. |
 
-#### Pricing variants
-
-| Variant | Effect |
-|---|---|
-| **Standard (cards)** | Default. Side-by-side tier cards with name, price, feature list, and buy button or CTA. |
-| **Comparison table** | Feature matrix. Rows are the union of all features across tiers. Columns are the tiers. Each cell shows a check mark or a dash so visitors can scan across columns to compare plans. The highlighted tier column stays tinted. |
-
-#### Testimonials variants
+#### Diensten-varianten
 
 | Variant | Effect |
 |---|---|
-| **Standard (grid)** | Default. Cards in a 2 to 3-column grid. Each card shows the quote, name, and optional role. |
-| **Spotlight (single quote)** | A single large pull-quote in magazine style, centered with serif typography. Extra testimonials appear as small attribution chips below the main quote. |
-| **Marquee** | A horizontally scrolling row of quote cards. Hover pauses the animation; the OS reduced-motion preference stops it entirely. The track loops seamlessly with two copies of the item set. |
+| **Standaard (kaarten)** | Standaard. Grid van kaarten in 2, 3 of 4 kolommen. Icoon, titel en omschrijving per item. |
+| **Icoon-raster** | Compactere, icoon-gedreven layout met grotere iconen en minder kaartchroom. Geschikt voor 4 of meer korte items. |
+| **Lijst** | Verticale rijen met een icoon links en tekst rechts, gescheiden door dunne lijnen. Goed voor lange doorleeslijsten. |
+| **Accordeon** | Verticaal gestapelde klikbare rijen. Omschrijving verborgen tot de rij wordt uitgeklapt. Gebruikt dezelfde chevron-animatie als het FAQ-blok. |
+
+#### Tarieven-varianten
+
+| Variant | Effect |
+|---|---|
+| **Standaard (kaarten)** | Standaard. Tier-kaarten naast elkaar met naam, prijs, functielijst en koopknop of CTA. |
+| **Vergelijkingstabel** | Feature-matrix. Rijen zijn alle functies uit alle tiers samengevoegd. Kolommen zijn de tiers. Elke cel toont een vinkje of een streepje, zodat bezoekers snel kolommen kunnen scannen om abonnementen te vergelijken. De uitgelichte tier-kolom blijft getint. |
+
+#### Testimonial-varianten
+
+| Variant | Effect |
+|---|---|
+| **Standaard (raster)** | Standaard. Kaarten in een raster van 2 tot 3 kolommen. Elke kaart toont de quote, naam en optionele rol. |
+| **Spotlight (enkele quote)** | Een enkele grote pull-quote in magazine-stijl, gecentreerd met serif-typografie. Extra getuigenissen verschijnen als kleine naambadges onder de hoofdquote. |
+| **Lopende band** | Een horizontaal scrollende rij met quote-kaarten. Hoveren pauzeert de animatie; de reduced-motion-voorkeur van het besturingssysteem stopt hem volledig. De track loopt naadloos door met twee kopieën van de itemset. |
 
 ### Spotlight
 
-The spotlight block is an alternating media-and-text row. Each instance shows an image on one side and text on the other: eyebrow, title, subtitle, bullets with check marks, and an optional call-to-action link. You control which side the image sits on via the layout panel.
+Het spotlight-blok is een rij waarin beeld en tekst elkaar afwisselen. Elke rij toont een afbeelding aan de ene kant en tekst aan de andere: een eyebrow, titel, ondertitel, bullets met vinkjes en een optionele call-to-action-link. In het layout-paneel bepaal je aan welke kant de afbeelding staat.
 
-A few things to know:
+Een paar dingen om te weten:
 
-- **Image side**: The layout variant defaults to image-right. Switch to image-left in the layout panel to flip the row.
-- **Optional pieces**: Eyebrow, subtitle, bullets, CTA, and image are all optional. A spotlight with only a title and image still renders cleanly.
-- **Stacking**: Add several spotlight sections in a row to build the classic feature-list pattern from the MCD landing page.
-- **Sticky media**: Enable "Image stays while scrolling" in the spotlight inspector to pin the image while the text beside it scrolls. Desktop only; it only shows when there is enough text next to the image to make it meaningful. On mobile the image stacks normally.
+- **Beeldzijde**: De layout-variant staat standaard op afbeelding-rechts. Zet hem op afbeelding-links in het layout-paneel om de rij te spiegelen.
+- **Optionele onderdelen**: Eyebrow, ondertitel, bullets, CTA en afbeelding zijn allemaal optioneel. Een spotlight met alleen een titel en afbeelding toont nog steeds een strak resultaat.
+- **Stapelen**: Zet meerdere spotlight-secties onder elkaar om het klassieke feature-lijstpatroon van de MCD-landingspagina te bouwen.
+- **Vastzittend beeld**: Schakel "Beeld blijft staan bij scrollen" in de spotlight-inspector in om de afbeelding vast te houden terwijl de tekst ernaast doorscrollt. Alleen op desktop, en alleen zichtbaar als er genoeg tekst naast de afbeelding staat. Op mobiel staat het beeld gewoon gestapeld.
 
-### Pricing tiers with buy buttons
+### Tarieven met koopknoppen
 
-The pricing section lets you list your plans or packages. Each tier can optionally include a buy button:
+Bij de tarievensectie kun je pakketten of abonnementen laten zien. Elke tier kan optioneel een koopknop krijgen:
 
-- Set a tier as **purchasable** and provide the **amount in cents** (e.g. 4999 for EUR 49.99).
-- A **Buy now** button replaces the static CTA link. Visitors clicking it go through the MyCompanyDesk checkout, which redirects to Mollie or Stripe Connect for payment.
-- The buy-button label defaults to "Koop nu" but can be customised per tier with the **buyLabel** field.
-- Pricing tiers without buy buttons keep the existing CTA link behaviour.
+- Zet een tier op **purchasable** en geef het **bedrag in centen** op (bijv. 4999 voor EUR 49,99).
+- Een **Koop nu**-knop vervangt de statische CTA-link. Bezoekers die erop klikken gaan via de MyCompanyDesk-checkout naar Mollie of Stripe Connect om te betalen.
+- Het koopknop-label is standaard "Koop nu" maar kan per tier worden aangepast met het **buyLabel**-veld.
+- Tarieven zonder koopknop houden het bestaande CTA-linkgedrag.
 
-Pricing sections can also render as a feature comparison matrix. Switch the layout variant to **Comparison table** in the inspector. The matrix shows each tier as a column and every feature from all tiers as a row, with check marks where a tier includes the feature. This makes plan-to-plan comparison easy at a glance. See [Section layout variants](#section-layout-variants) for the full options.
+Tarievensecties kunnen ook als vergelijkingsmatrix worden getoond. Zet de layoutvariant op **Vergelijkingstabel** in de inspector. De matrix toont elke tier als kolom en alle functies uit alle tiers als rijen, met vinkjes waar een tier de functie heeft. Zo zie je in een oogopslag hoe abonnementen zich tot elkaar verhouden. Zie [Sectie-layoutvarianten](#sectie-layoutvarianten) voor de volledige opties.
 
-### Product block
+### Productblok
 
-A standalone single-item buy card, for when a full pricing table is more than you need:
+Een losstaande eenmalige koopkaart, voor als een volledige tarieventabel meer is dan je nodig hebt:
 
-- One product name, description, optional image, price, and a buy button.
-- Same checkout plumbing as the pricing buy buttons, your visitor pays through Mollie or Stripe Connect.
-- An optional note line under the button for delivery info, disclaimers, or shipping notes.
+- Een productnaam, beschrijving, optionele afbeelding, prijs en een koopknop.
+- Dezelfde checkout-koppeling als de tarief-koopknoppen, je bezoeker betaalt via Mollie of Stripe Connect.
+- Een optionele notitieregel onder de knop voor verzendinformatie, disclaimers of opmerkingen.
 
-See [Sales](/features/domains-website-inbox#sales) for tracking payments and orders.
+Zie [Verkopen](/features/domains-website-inbox#verkopen) voor het bijhouden van betalingen en bestellingen.
 
-### Catalog sections
+### Catalogussecties
 
-Some bespoke templates include a live catalog section that pulls items straight from your Aanbod catalog. If the current page structurally repeats over services, products, or subscriptions, the content editor shows a **Catalog** panel for each kind that is actually used on that page.
+Sommige bespoke-sjablonen bevatten een live catalogussectie die items rechtstreeks uit je Aanbod haalt. Als de huidige pagina structureel herhaalt over diensten, producten of abonnementen, toont de Inhoud-editor een **Catalogus**-paneel voor elk soort dat op die pagina wordt gebruikt.
 
-The panel lives outside the template frame, so it never interferes with the template's own styling. From here you control only the presentation of the catalog on this site:
+Het paneel staat buiten het sjabloonkader, dus het stoort nooit de styling van het sjabloon zelf. Hier bepaal je alleen de presentatie van de catalogus op deze site:
 
-- **Heading and intro**: set the section title and a short introduction.
-- **Order**: drag items into the order you want, or use the up and down buttons. The natural Aanbod order is used for anything you do not explicitly reorder.
-- **Show or hide**: toggle the eye icon to keep an item in Aanbod but hide it on this website.
+- **Titel en intro**: stel de sectietitel en een korte introductie in.
+- **Volgorde**: sleep items in de gewenste volgorde, of gebruik de omhoog/omlaag-knoppen. De natuurlijke volgorde uit Aanbod geldt voor alles wat je niet handmatig herschikt.
+- **Zichtbaar of verborgen**: klik op het oog-icoon om een item in Aanbod te houden, maar te verbergen op deze website.
 
-The item content itself, title, price, description, and image, is read-only in the editor. It is pulled from the live Aanbod catalog and must be edited there. The price follows the price mode set in Aanbod: a fixed amount, "from" an amount, or "On request" when no price is set.
+De iteminhoud zelf, titel, prijs, beschrijving en afbeelding, is alleen-lezen in de editor. Die komt uit het live Aanbod en moet daar worden aangepast. De prijs volgt de prijsmodus die in Aanbod staat: een vast bedrag, "vanaf" een bedrag, of "Op aanvraag" als er geen prijs is ingesteld.
 
-If the catalog kind has no eligible items yet, the panel shows an empty state with a link to add an item in Aanbod.
+Is er voor dit soort catalogus nog geen geschikt item? Dan toont het paneel een lege status met een link om een item toe te voegen in Aanbod.
 
-## Section animations
+## Sectie-animaties
 
-Every section block has an **Animation** panel in the inspector. It lets you add motion that plays when the section enters the viewport, on page load, or on hover.
+Elk sectieblok heeft een **Animatie**-paneel in de inspector. Hiermee voeg je beweging toe die afspeelt wanneer de sectie in beeld komt, bij het laden van de pagina, of bij hover.
 
-### Animation types
+### Animatetypes
 
 | Type | Effect |
 |---|---|
-| **Fade up** | Section fades in while sliding up from 1rem below. |
-| **Fade in** | Section fades in from transparent. |
-| **Slide right** | Section fades in while sliding left by 2rem. |
-| **Reveal** | Section reveals from right to left using a clip mask. |
-| **Stagger** | Children fade up one after another in 80ms steps instead of the section itself moving. |
-| **Word by word** | Hero title only. Each word of the hero title appears on its own beat; non-hero blocks fade in normally. |
+| **Fade up** | Sectie verschijnt terwijl deze 1rem omhoog schuift. |
+| **Fade in** | Sectie verschijnt vanuit transparant. |
+| **Slide right** | Sectie verschijnt terwijl deze 2rem naar rechts beweegt. |
+| **Reveal** | Sectie onthult van rechts naar links via een clipmasker. |
+| **Stagger** | Onderliggende elementen verschijnen na elkaar in stappen van 80ms, in plaats van dat de sectie zelf beweegt. |
+| **Woord voor woord** | Alleen voor hero-secties. De woorden van de titel verschijnen elk op hun eigen moment; andere blokken faden gewoon in. |
 
 ### Triggers
 
-How the animation starts:
+Hoe de animatie start:
 
-- **In-view** (default): Animation fires when the section scrolls into the viewport. Uses the browser's IntersectionObserver. Once a section has animated in it stays visible.
-- **Load**: Animation fires immediately when the page mounts.
-- **Hover**: Animation fires on mouseenter and reverses on mouseleave.
+- **In-view** (standaard): De animatie wordt afgespeeld wanneer de sectie in de viewport verschijnt. Maakt gebruik van de IntersectionObserver van de browser. Eenmaal geanimeerd blijft de sectie zichtbaar.
+- **Load**: De animatie start direct zodra de pagina is geladen.
+- **Hover**: De animatie start bij mouseenter en keert terug bij mouseleave.
 
-### Controls
+### Instellingen
 
-- **Duration**: How long the animation takes, in milliseconds. Default is 700ms.
-- **Delay**: Wait time before the animation starts, in milliseconds. Default is 0ms.
-- **Easing**: The acceleration curve. Options are **ease-out** (default), **linear**, and **spring**.
-- **Stagger children**: When enabled, the section stays at its resting state and its direct children animate in sequentially. This modifier works on top of any animation type (fade-up + stagger children, fade-in + stagger children, etc.). The section root animation is suppressed so the children carry the motion alone.
+- **Duration**: Hoe lang de animatie duurt, in milliseconden. Standaard 700ms.
+- **Delay**: Wachttijd voordat de animatie start, in milliseconden. Standaard 0ms.
+- **Easing**: De versnellingscurve. Keuze uit **ease-out** (standaard), **linear** en **spring**.
+- **Stagger children**: Wanneer ingeschakeld blijft de sectie zelf in rust en bewegen de directe onderliggende elementen na elkaar. Deze optie werkt bovenop elk animatietype (fade-up + stagger children, fade-in + stagger children, etc.). De animatie van de sectie zelf wordt onderdrukt zodat alleen de kinderen bewegen.
 
-### Motion reduction
+### Bewegingsreductie
 
-Visitors who have `prefers-reduced-motion: reduce` enabled at the OS level see every section in its final resting state immediately. No animations play. Workspace-level motion tokens can also force reduced motion on a per-site basis. When reduced motion is active the section never receives the hidden start-state class, so the server-rendered HTML is accessible before any JavaScript runs.
+Bezoekers die `prefers-reduced-motion: reduce` op OS-niveau hebben ingeschakeld, zien elke sectie direct in de eindpositie. Er worden geen animaties afgespeeld. Op werkruimteniveau kunnen motion-tokens beweging ook per site uitschakelen. Wanneer bewegingsreductie actief is, krijgt de sectie nooit de verborgen startklasse, zodat de server-gerenderde HTML ook toegankelijk is voordat JavaScript wordt uitgevoerd.
 
-## Section dividers
+## Sectiescheidingen
 
-Each section block has a **Bottom divider** setting in the inspector's style panel. It adds an SVG shape at the section's bottom edge that overflows into the next section, creating an organic visual transition instead of a hard horizontal cut. The divider draws the current section's background color, so it works best between adjacent sections that have different solid backgrounds.
+Elk sectieblok heeft een **Onderkant scheiding**-instelling in het stijlpaneel van de inspector. Het voegt een SVG-vorm toe aan de onderrand van de sectie die overlapt met de volgende sectie, voor een organische visuele overgang in plaats van een harde knip. De scheiding gebruikt de achtergrondkleur van de huidige sectie, dus het werkt het best tussen aangrenzende secties met verschillende egale achtergronden.
 
-### Divider types
+### Scheidingstypes
 
 | Type | Effect |
 |---|---|
-| **Wave** | A smooth S-curve along the bottom edge. |
-| **Curve** | A concave bowl: the next section intrudes upward in the middle. |
-| **Slant** | A right-rising diagonal cut from left to right. |
-| **None** | No divider. Sections meet at a flat horizontal edge (default). |
+| **Golf** | Een vloeiende S-curve langs de onderrand. |
+| **Boog** | Een holle welving: de volgende sectie komt omhoog in het midden. |
+| **Schuin** | Een diagonaal die van links naar rechts omhoog loopt. |
+| **Geen** | Geen scheiding. Secties sluiten aan op een rechte horizontale rand (standaard). |
 
-### How it works
+### Zo werkt het
 
-- The divider SVG sits entirely below the section, in the next section's space. It does not overlap the current section's content.
-- The filled portion of the path draws the current section's background extending downward. The transparent area below the shape lets the next section show through.
-- The divider preserves the section's background color automatically, including custom hex values and CSS variable tokens.
-- Dividers are decorative (`aria-hidden="true"`) and do not affect keyboard or screen-reader navigation.
+- De SVG-scheiding bevindt zich volledig onder de sectie, in de ruimte van de volgende sectie. Het overlapt de inhoud van de huidige sectie niet.
+- Het gevulde deel van het pad tekent de achtergrond van de huidige sectie naar beneden toe. Het transparante gedeelte onder de vorm laat de volgende sectie doorschijnen.
+- De scheiding volgt automatisch de achtergrondkleur van de sectie, inclusief aangepaste hex-waarden en CSS-variabele-tokens.
+- Scheidingen zijn decoratief (`aria-hidden="true"`) en beïnvloeden toetsenbord- of schermlezernavigatie niet.
 
-## Styling your site
+## Je site vormgeven
 
-In the **Style** tab, you control the look and feel of your entire site:
+In de **Stijl**-tab bepaal je de look-and-feel van je hele site:
 
-- **Presets**: One-click starting points that set colors, fonts, and spacing in one go. Eight presets are available: **Editorial** (navy and gold, serif headlines), **Studio** (warm cream with terracotta), **Tech** (sharp slate with electric blue), **Atelier** (bone-white with deep green), **Bold** (high-contrast black with a bright accent), **Calm** (sage green and soft white), **Mono** (architectural minimalism, no accent color), and **Vivid** (cobalt and coral on cool white). Applying a preset merges the tokens into your workspace, preserving your logo, custom CSS, and head snippets.
-- **Colors**: Pick brand, accent, paper, ink, surface, and muted colors. The palette is applied through CSS custom properties.
-- **Dark mode**: Choose how your site handles dark mode. Three options: **Off** (no dark mode, site stays in its light palette), **Button** (visitors see a sun/moon toggle in the navigation bar and can switch themes, with their choice saved locally), or **System** (the site follows the visitor's OS-level preference automatically via a live media-query listener). When dark mode is on, a paired dark palette appears where you can set night-optimized versions of each color. If you leave the dark palette empty, the site applies a sensible default inversion that keeps your brand and accent colors intact.
-- **Typography**: Choose heading, body, and mono fonts from the built-in font library (Geist, Inter, DM Sans, DM Serif Display, Fraunces, Instrument Serif, Geist Mono).
-- **Self-hosted fonts**: All fonts are served from MyCompanyDesk itself, not from Google Fonts or another third-party CDN. The same font files are used in the editor preview and on your published site, so the typeface looks identical everywhere and visitor IP addresses stay on your domain.
-- **Scale**: Set border radius, content density (compact, airy, generous), maximum content width, vertical section spacing, and card style. The card style controls how content cards render across sections: **Flat** (no border), **Bordered** (default, thin outline), **Shadowed** (soft shadow), **Elevated** (strong shadow), **Brut** (hard outline with offset shadow), **Lijn** (outline only, no fill), or **Glass** (translucent frosted card with a backdrop blur). Glass looks best over a photo, gradient, or decorative band; on a plain background it falls back to a softly tinted card.
-- **Motion**: Enable reduced motion or choose a motion style (Off, Subtle fade, Slide up).
-- **Buttons**: Customize button border radius, padding, and hover effects.
-- **Navbar**: Set the layout (standard, centered, split), background style (solid, translucent blur, transparent), and CTA button appearance (filled, outline, text-only). The navbar settings apply to every page.
-- **Phone & call bar**: Add a clickable phone number to your navigation bar. When set, the phone number appears beside the CTA button on desktop and in the mobile navigation drawer. Enable the **Mobile call bar** toggle to pin a fixed "tap to call" button at the bottom of the screen on mobile devices, so visitors can reach you with one tap regardless of where they are on the page. The phone label defaults to "Call us" when left empty.
-- **Reading progress bar**: Show a thin progress indicator at the top of every page as visitors scroll. The bar uses your brand color and can be turned on or off from the Style tab.
-- **Custom CSS**: Write your own CSS that gets injected into the site. Useful for fine-tuning or overriding defaults.
-- **Favicon**: Upload a favicon for your site. It is shown in browser tabs and bookmarks. If not set, the site falls back to your light logo, then your business profile picture.
-- **Head snippets**: Add analytics scripts (Plausible, Umami, Matomo) or font preconnects via the snippet picker.
+- **Presets**: Klik-en-klaar-startpunten die kleuren, lettertypes en witruimte in een keer instellen. Er zijn acht presets: **Editorial** (navy en goud, serif-koppen), **Studio** (warme roomkleur met terracotta), **Tech** (strak slate met elektrisch blauw), **Atelier** (bone-wit met diepgroen), **Bold** (hoog contrast zwart met fel accent), **Calm** (saliegroen en zacht wit), **Mono** (architectonisch minimalisme, geen accentkleur) en **Vivid** (kobalt en koraal op koel wit). Een preset toepassen voegt de tokens samen met je werkruimte, waarbij je logo, custom CSS en head-snippets behouden blijven.
+- **Kleuren**: Kies merk-, accent-, papier-, inkt-, oppervlakte- en gedempte kleuren. Het palet wordt toegepast via CSS custom properties.
+- **Donkere modus**: Bepaal hoe je site omgaat met donkere weergave. Drie opties: **Uit** (geen donkere modus, de site blijft in het lichte palet), **Knop** (bezoekers zien een zon/maan-knop in de navigatiebalk en kunnen wisselen, hun keuze wordt lokaal opgeslagen), of **Volg systeem** (de site volgt automatisch de OS-voorkeur van de bezoeker via een live media-query). Wanneer donkere modus aan staat, verschijnt er een donker palet waarin je per kleur een nachtversie kunt instellen. Laat je het donkere palet leeg, dan past de site een automatische inversie toe waarbij je merk- en accentkleuren behouden blijven.
+- **Typografie**: Kies kop-, body- en mono-lettertypes uit de ingebouwde lettertypebibliotheek (Geist, Inter, DM Sans, DM Serif Display, Fraunces, Instrument Serif, Geist Mono).
+- **Zelfgehoste lettertypes**: Alle lettertypes worden vanaf MyCompanyDesk zelf geserveerd, niet van Google Fonts of een andere externe CDN. Dezelfde fontbestanden worden gebruikt in de editor-preview en op je gepubliceerde site, dus de tekst ziet er overal identiek uit en het IP-adres van bezoekers blijft op je eigen domein.
+- **Schaal**: Stel hoekradius, dichtheid (compact, ruim, royaal), maximale inhoudsbreedte, verticale sectie-afstand en kaartstijl in. De kaartstijl bepaalt hoe inhoudskaarten over de secties heen worden weergegeven: **Plat** (geen rand), **Omlijnd** (standaard, dunne lijn), **Schaduw** (zachte schaduw), **Zwevend** (sterke schaduw), **Brut** (harde rand met blokschaduw), **Lijn** (alleen contour, geen vulling) of **Glas** (doorzichtige, matgeglazuurde kaart met een achtergrondblur). Glas komt het best tot zijn recht over een foto, verloop of decoratieve band; op een effen achtergrond valt hij terug op een zacht getinte kaart.
+- **Beweging**: Schakel verminderde beweging in of kies een bewegingsstijl (Uit, Subtiele fade, Slide-up).
+- **Knoppen**: Pas knopradius, padding en hover-effecten aan.
+- **Navbar**: Stel de layout in (standaard, gecentreerd, split), de achtergrondstijl (vast, transparant met blur, volledig transparant) en hoe de CTA-knop eruitziet (vol, lijn, alleen tekst). De navbar-instellingen gelden voor elke pagina.
+- **Telefoon & belbalk**: Voeg een klikbaar telefoonnummer toe aan je navigatiebalk. Het nummer verschijnt naast de CTA-knop op desktop en in de mobiele navigatielade. Zet de **Mobiele belbalk**-toggle aan om een vaste "tik om te bellen"-knop onderaan het scherm te plaatsen op mobiele apparaten, zodat bezoekers je met één tik kunnen bereiken, waar ze ook zijn op de pagina. Het telefoonlabel is standaard "Bel direct" als je het leeg laat.
+- **Leesvoortgangsbalk**: Toon een dunne voortgangsindicator bovenaan elke pagina terwijl bezoekers scrollen. De balk gebruikt je merkkleur en kun je aan- of uitzetten in de Stijl-tab.
+- **Aangepaste CSS**: Schrijf je eigen CSS die in de site wordt geïnjecteerd. Handig voor fijnafstemming of het overschrijven van standaardwaarden.
+- **Favicon**: Upload een favicon voor je site. Deze verschijnt in browsertabs en bladwijzers. Als je geen favicon instelt, gebruikt de site je lichte logo, en daarna je bedrijfsprofielfoto.
+- **Head-snippets**: Voeg analytics-scripts toe (Plausible, Umami, Matomo) of lettertype-preconnects via de snippetkiezer.
 
-### Logo import
+### Logo importeren
 
-If you already have a logo on your website, you can import it directly into MyCompanyDesk. In the **Style** tab, look for the logo import option and enter the URL of the page that contains your logo. MyCompanyDesk fetches the page, extracts the best available logo, and creates both a light and a dark version for your site. After import you can still replace or adjust each version separately in the style settings.
+Als je al een logo op je website hebt staan, kun je dat direct in MyCompanyDesk importeren. In de **Stijl**-tab vind je de optie om een logo te importeren: voer de URL in van de pagina waar je logo op staat. MyCompanyDesk haalt de pagina op, selecteert het beste beschikbare logo en maakt zowel een lichte als een donkere versie voor je site. Na het importeren kun je beide versies nog steeds apart vervangen of aanpassen in de stijlinstellingen.
 
-Changes in the Style tab are saved automatically on edit and apply to all pages.
+Wijzigingen in de Stijl-tab worden automatisch opgeslagen bij bewerken en gelden voor alle pagina's.
 
-## Publishing
+## Publiceren
 
-The top bar shows a dot when unpublished changes are waiting. Publishing snapshots only the pages marked as Live. Pages in Concept stay hidden from the public site, even after you publish.
+De bovenbalk toont een stippeltje zolang er ongepubliceerde wijzigingen wachten. Bij publiceren worden alleen pagina's op Live meegenomen in de snapshot. Concept-pagina's blijven onzichtbaar op de openbare site, ook na publicatie.
 
-Until you publish, your public URL sends a `noindex` robots tag. That keeps the auto-provisioned workspace subdomain out of search engines while you are still building.
+Totdat je publiceert, geeft je openbare URL een `noindex` robots-tag mee. Zo blijft het automatisch aangemaakte werkruimte-subdomein buiten zoekmachines terwijl je nog aan het bouwen bent.
 
-When you are ready:
+Wanneer je klaar bent:
 
-1. Click **Publish** in the top bar.
-2. Your site is published to the public URL (your custom domain, workspace subdomain, or the fallback portal route).
+1. Klik op **Publiceer** in de bovenbalk.
+2. Je site wordt gepubliceerd naar de openbare URL (je eigen domein, werkruimte-subdomein of de terugvalportalroute).
 
-Unpublished changes are tracked per page and per token. The publish button is disabled when there is nothing to publish. Toggling a page between Live and Concept is an immediate save that registers as an unpublished change, so the Publish button lights up the moment you toggle.
+Ongepubliceerde wijzigingen worden per pagina en per token bijgehouden. De publiceerknop is uitgeschakeld als er niets te publiceren is. Een pagina wisselen tussen Live en Concept wordt meteen opgeslagen en telt als ongepubliceerde wijziging, dus de Publiceerknop licht op zodra je wisselt.
 
-## Navigation
+## Navigatie
 
-The navigation editor lets you arrange your site's header links and control how the navigation bar looks across your entire site:
+De navigatie-editor laat je de headerlinks van je site indelen en bepaalt hoe de navigatiebalk er op je hele site uitziet:
 
-- Drag pages to reorder the top-level navigation.
-- Create dropdown groups to nest pages under a parent label.
-- Add external links that point outside your site.
-- The logo in the header is clickable and always links back to the home page.
-- The home page is always first and locked in position.
+- Sleep pagina's om de navigatie op volgorde te zetten.
+- Maak dropdown-groepen om pagina's onder een bovenliggend label te nesten.
+- Voeg externe links toe die buiten je site verwijzen.
+- Het logo in de header is klikbaar en linkt altijd terug naar de homepage.
+- De homepage staat altijd vooraan en is vergrendeld.
 
-Above the main navigation menu, a **Navbar** panel gives you direct access to the header styling settings that were previously only available in the Style tab. You can set:
+Boven het hoofdmenu geeft een **Navbar**-paneel je direct toegang tot de headerstyling die voorheen alleen op het Stijl-tabblad te vinden was. Je kunt instellen:
 
-- **Brand name**: Text shown in the header when no logo image is uploaded (leave empty to use the logo from Branding).
-- **CTA button**: The label and destination link for the call-to-action button in the top-right corner. Both fields must be filled for the button to appear.
-- **Phone number**: A clickable `tel:` link that appears next to the CTA button on desktop and in the mobile navigation drawer. Leaving it empty hides the call button.
-- **Phone label**: The text shown next to the phone icon on mobile (defaults to the locale-native equivalent of "Call us" when left empty).
-- **Mobile call bar**: When enabled, a fixed "tap to call" button stays pinned at the bottom of the screen on mobile devices.
-- **Sticky navbar**: When enabled (default on), the navigation bar stays visible as the visitor scrolls down the page.
+- **Merknaam**: De tekst die in de header wordt getoond wanneer er geen logo is geupload (laat leeg om het logo van Branding te gebruiken).
+- **CTA-knop**: Het label en de bestemmingslink voor de call-to-actionknop rechtsboven. Beide velden moeten ingevuld zijn om de knop zichtbaar te maken.
+- **Telefoonnummer**: Een klikbare `tel:`-link die naast de CTA-knop op desktop verschijnt en in de mobiele navigatielade. Laat leeg om de belknop te verbergen.
+- **Bel-label**: De tekst naast het telefoonicoon op mobiel (standaard is dit "Bel direct" wanneer leeg gelaten).
+- **Belknop op mobiel**: Wanneer ingeschakeld blijft er onderaan het scherm een vaste belknop staan op mobiele apparaten.
+- **Sticky navigatiebalk**: Wanneer ingeschakeld (standaard aan), blijft de navigatiebalk zichtbaar terwijl de bezoeker naar beneden scrollt.
 
-These settings apply to every page on your site, the same way they do in the Style tab. Changes save automatically with a short debounce after you stop typing. For the visual layout, background style, and button appearance controls, see the [Style tab](#styling-your-site).
+Deze instellingen gelden voor elke pagina van je site, net zoals op het Stijl-tabblad. Wijzigingen worden automatisch opgeslagen met een korte wachttijd nadat je stopt met typen. Voor de visuele layout, achtergrondstijl en knopweergave, zie het [Stijl-tabblad](#styling-van-je-site).
 
-## Footer links
+## Footerlinks
 
-The footer editor lives on the **Footer** tab of the navigation editor. It composes the bottom of every published page from two sources: automatic blocks that pull from your pages and company settings, and manual link columns you add yourself.
+De footer-editor vind je op het tabblad **Footer** van de navigatie-editor. Die bouwt de onderkant van elke gepubliceerde pagina uit twee bronnen: automatische blokken die uit je pagina's en bedrijfsgegevens worden samengesteld, en handmatige linkkolommen die je zelf toevoegt.
 
-### Automatic footer blocks
+### Automatische footerblokken
 
-Three switches control content that is generated for you:
+Drie schakelaars bepalen inhoud die voor je wordt gegenereerd:
 
-- **Show page links automatically** ("Pagina's"): a sitemap column with a link to every live, indexable page on your site. It is on by default for new sites because it helps search engines find every page and prevents orphaned pages. The home page, blog posts, draft pages, password-protected pages, and pages marked "noindex" or hidden from the sitemap are excluded automatically. Hide an individual page from this column by turning off **Show in sitemap** in that page's SEO settings.
-- **Show contact details** ("Contact"): your public email, phone number, and address from your company details.
-- **Show social links** ("Social"): the social URLs saved in your company details.
+- **Paginalinks automatisch tonen** ("Pagina's"): een sitemap-kolom met een link naar elke live, indexeerbare pagina op je site. Standaard aan voor nieuwe sites, omdat het zoekmachines helpt elke pagina te vinden en verhindert dat pagina's geïsoleerd raken. De homepage, blogposts, conceptpagina's, met een wachtwoord beveiligde pagina's en pagina's die als "noindex" zijn gemarkeerd of uit de sitemap zijn verborgen, worden automatisch uitgesloten. Verberg een losse pagina uit deze kolom door bij de SEO-instellingen van die pagina **Tonen in sitemap** uit te zetten.
+- **Contactgegevens tonen** ("Contact"): je openbare e-mailadres, telefoonnummer en adres uit je bedrijfsgegevens.
+- **Social links tonen** ("Social"): de sociale links die je bij je bedrijfsgegevens hebt opgeslagen.
 
-These blocks appear in your site's own footer styling, below any manual columns. If your design already shows contact or social details, the matching toggle is hidden so nothing appears twice.
+Deze blokken verschijnen in de eigen footerstijl van je site, onder de handmatige kolommen. Als je ontwerp al contact- of sociale gegevens toont, wordt de bijbehorende schakelaar verborgen zodat niets dubbel opvalt.
 
-### Manual link columns
+### Handmatige linkkolommen
 
-Below the automatic switches you can add up to six curated footer columns. Each column has a title and a list of links. Use them for legal pages, product categories, or external resources. Links accept internal paths, external HTTPS URLs, email (`mailto:`), or phone (`tel:`).
+Onder de automatische schakelaars kun je tot zes eigen footerkolommen toevoegen. Elke kolom heeft een titel en een lijst links. Gebruik ze bijvoorbeeld voor juridische pagina's, productcategorieën of externe bronnen. Links mogen interne paden, externe HTTPS-URL's, e-mail (`mailto:`) of telefoon (`tel:`) bevatten.
 
-## Company merge tokens
+## Bedrijfsgegevenstokens
 
-Text fields in the site builder can contain merge tokens that pull live company data from your workspace settings. When the published site renders, each token is replaced with the current value from **Company Settings > Business details** (`/settings/bedrijfsgegevens`). This means you can type your company name, address, or contact details once and keep every page in sync automatically.
+Tekstvelden in de sitebouwer kunnen merge-tokens bevatten die live bedrijfsgegevens uit je werkruimte halen. Bij het renderen van de gepubliceerde site wordt elk token vervangen door de huidige waarde uit **Bedrijfsgegevens** (`/settings/bedrijfsgegevens`). Zo hoef je je bedrijfsnaam, adres of contactgegevens maar op één plek te beheren.
 
-Available tokens:
+Beschikbare tokens:
 
 ::: v-pre
-| Token | Shows |
+| Token | Toont |
 |---|---|
-| `{{bedrijf.naam}}` | Business name |
-| `{{bedrijf.adres}}` | Full address, joined from street, postal code, and city |
-| `{{bedrijf.kvk}}` | Chamber of Commerce (KvK) number |
-| `{{bedrijf.btw}}` | VAT number |
-| `{{bedrijf.email}}` | Public email address |
+| `{{bedrijf.naam}}` | Bedrijfsnaam |
+| `{{bedrijf.adres}}` | Volledig adres, samengesteld uit straat, postcode en plaats |
+| `{{bedrijf.kvk}}` | KVK-nummer |
+| `{{bedrijf.btw}}` | BTW-id |
+| `{{bedrijf.email}}` | Publiek e-mailadres |
 :::
 
-How to use them:
+Zo gebruik je ze:
 
-- In any text area field, click the chip that matches the value you want. The token is inserted at the cursor.
-- You can also type a token by hand. Only the five keys above are supported.
-- If a value is empty in your company settings, the token renders as a bracketed hint on the public site, for example `[bedrijfsnaam]`, so you can spot what is still missing.
-- Tokens are resolved after the publish snapshot, so later edits to your company details show on the live site without a new publish.
-- Legal pages seeded by the platform use these tokens automatically. Editing the surrounding text does not break the binding.
+- Klik in elk tekstveld op het chip dat bij de gewenste waarde hoort. Het token wordt op de cursorpositie ingevoegd.
+- Je kunt een token ook met de hand typen. Alleen de vijf tokens hierboven worden ondersteund.
+- Is een waarde in je bedrijfsgegevens leeg, dan toont de gepubliceerde site een hint tussen rechte haken, bijvoorbeeld `[bedrijfsnaam]`, zodat je ziet wat nog ontbreekt.
+- Tokens worden opgelost ná de publicatiesnapshot, dus latere wijzigingen in je bedrijfsgegevens verschijnen direct op de live site zonder opnieuw te publiceren.
+- Wettelijke pagina's die door het platform worden aangemaakt, gebruiken deze tokens automatisch. Bewerk de tekst eromheen gerust, de koppeling blijft intact.
 
-Source: `packages/shared/src/site-blocks/company-tokens.ts#COMPANY_TOKENS`.
+Bron: `packages/shared/src/site-blocks/company-tokens.ts#COMPANY_TOKENS`.
 
-## Public URL
+## Openbare URL
 
-Your website is served at the highest-priority URL available:
+Je website wordt getoond op de best beschikbare URL:
 
-1. Your custom domain (e.g. `https://acme.nl`) when verified and enabled
-2. Your workspace subdomain (e.g. `https://acme.mycompanydesk.com`)
-3. The fallback portal route (`/portal/{slug}`)
+1. Je eigen domein (bijv. `https://acme.nl`) wanneer geverifieerd en ingeschakeld
+2. Je werkruimte-subdomein (bijv. `https://acme.mycompanydesk.com`)
+3. De terugvalportalroute (`/portal/{slug}`)
 
-See [Domains, Website and Inbox](/features/domains-website-inbox) for domain setup and verification.
+Zie [Domeinen, website en inbox](/features/domains-website-inbox) voor domeininstelling en -verificatie.
 
-## Contact form
+## Contactformulier
 
-The contact form block (`form` section type) is a live submit handler. When a visitor fills in the fields you configured (name, email, phone, company, message) and hits send, the platform creates a quote request and notifies your workspace. The form shows a success banner on completion and an inline error if something goes wrong. All inputs are disabled during submit to prevent double sends.
+Het contactformulierblok (`form` sectietype) heeft een live verzendfunctionaliteit. Wanneer een bezoeker de velden invult die jij hebt ingesteld (naam, e-mail, telefoon, bedrijf, bericht) en op verzenden klikt, maakt het platform een offerteaanvraag aan en stuurt het een melding naar je werkruimte. Het formulier toont een succesbanner bij afronding en een foutmelding als er iets misgaat. Alle invoervelden worden tijdens het verzenden uitgeschakeld om dubbel verzenden te voorkomen.
 
-What happens on submit:
+Wat gebeurt er bij verzenden:
 
-1. Only the fields the block actually renders are sent, so hiding the name input does not break the backend.
-2. The platform creates a quote request under the company tied to the site slug.
-3. You receive a workspace notification (same path as the legacy `/portal/quote-request` route).
-4. The request appears in **Quotes > Requests**.
-5. The visitor sees a customizable success message.
+1. Alleen de velden die het blok daadwerkelijk toont worden meegestuurd, dus het verbergen van het naamveld breekt de backend niet.
+2. Het platform maakt een offerteaanvraag aan onder het bedrijf dat aan de site-slug is gekoppeld.
+3. Je ontvangt een werkruimtemelding (dezelfde route als de oude `/portal/quote-request`).
+4. De aanvraag verschijnt bij **Offertes > Aanvragen**.
+5. De bezoeker ziet een aanpasbare succesmelding.
 
-Contact-form submissions are only accepted when the site has been published: submissions to a draft or unpublished workspace are rejected. They are rate-limited to 5 per minute per IP address and also guarded by a per-company abuse cap, so one busy visitor cannot exhaust your notification budget. A Cloudflare Turnstile widget also appears before submit when configured on your workspace, blocking automated bot submissions without slowing real visitors down.
+Inzendingen via het contactformulier worden alleen geaccepteerd als de site is gepubliceerd: inzendingen aan een concept of ongepubliceerde werkruimte worden geweigerd. Ze zijn beperkt tot 5 per minuut per IP-adres en bovendien afgedekt door een per-bedrijf misbruikplafond, zodat één drukke bezoeker je meldingsbudget niet kan uitputten. Een Cloudflare Turnstile-widget verschijnt ook voordat de bezoeker verzendt, mits geconfigureerd op je werkruimte, en blokkeert geautomatiseerde botinzendingen zonder echte bezoekers te vertragen.
 
-## Newsletter signup
+## Nieuwsbrief aanmelden
 
-The newsletter block (`newsletter` section type) captures email signups from your published site. The backend uses a double opt-in flow: after submit, the visitor receives a confirmation email and must click the link to activate their subscription. Suppressed addresses and already-active subscribers are treated the same as new signups from the form's perspective (no data leakage).
+Het nieuwsbriefblok (`newsletter` sectietype) vangt e-mailaanmeldingen van je gepubliceerde site op. De backend gebruikt een double opt-in stroom: na het verzenden ontvangt de bezoeker een bevestigingsmail en moet op de link klikken om het abonnement te activeren. Onderdrukte adressen en al actieve abonnees worden vanuit het formulier op dezelfde manier behandeld als nieuwe aanmeldingen (geen datalek).
 
-What happens on submit:
+Wat gebeurt er bij verzenden:
 
-1. The platform stores the subscription with `source: "site_form"`.
-2. If the address is not already active and not suppressed, a double opt-in email is sent.
-3. The visitor sees a success banner regardless, keeping the subscription state private.
-4. Once confirmed, the subscriber appears in the newsletter audience for that workspace.
+1. Het platform slaat het abonnement op met `source: "site_form"`.
+2. Als het adres niet al actief is en niet onderdrukt, wordt een double opt-in e-mail verstuurd.
+3. De bezoeker ziet hoe dan ook een succesbanner, zodat de abonnementsstatus privé blijft.
+4. Na bevestiging verschijnt de abonnee in het nieuwsbriefpubliek van die werkruimte.
 
-Newsletter submissions share the same rate limit as the contact form: 5 per minute per IP address. The Turnstile bot-protection widget is also active on newsletter forms when configured.
+Nieuwsbriefinzendingen delen dezelfde snelheidslimiet als het contactformulier: 5 per minuut per IP-adres. De Turnstile-botbescherming is ook actief op nieuwsbriefformulieren wanneer geconfigureerd.
 
-## Legal pages
+## Juridische pagina's
 
-The site builder seeds every new workspace with two standard legal pages: **Privacy Policy** (`/privacy`) and **Terms & Conditions** (`/algemene-voorwaarden`). The content uses placeholder markers for company details. When the page is rendered for visitors, these markers are replaced with the values from your **Company Settings** — business name, address, postal code, city, country, registration number, VAT number, and public email.
+De sitebouwer voorziet elke nieuwe werkruimte van twee standaard juridische pagina's: **Privacybeleid** (`/privacy`) en **Algemene voorwaarden** (`/algemene-voorwaarden`). De inhoud gebruikt plaatsaanduidingsmarkeringen voor bedrijfsgegevens. Wanneer de pagina wordt gerenderd voor bezoekers, worden die markeringen vervangen door de waarden uit je **Bedrijfsinstellingen** — bedrijfsnaam, adres, postcode, plaats, land, registratienummer, btw-nummer en publieke e-mail.
 
-You can edit the legal pages in the editor like any other page. The editor preserves the placeholder anchors inside the content, so opening and saving a page without changing it still lets future updates to your company details flow through automatically.
+Je kunt de juridische pagina's net als elke andere pagina bewerken in de editor. De editor behoudt de plaatsaanduidingsankers in de inhoud, zodat ook openen en opslaan zonder wijzigingen ervoor zorgt dat toekomstige updates van je bedrijfsgegevens automatisch doorstromen.
 
-The legal pages are rendered at publish time, just like the rest of your site. They share the same Live/Concept status and the same subscription visibility gate.
+De juridische pagina's worden gerenderd op het moment van publiceren, net als de rest van je site. Ze delen dezelfde Live/Concept-status en dezelfde zichtbaarheidsregels op basis van je abonnement.
 
-## Managing requests
+## Aanvragen beheren
 
-See [Quotes - Quote Requests](/features/quotes#quote-requests) for details on managing incoming requests.
+Zie [Offertes - Offerteaanvragen](/features/quotes#offerteaanvragen) voor details over het beheren van binnenkomende aanvragen.
 
-## Subscription requirement
+## Abonnementsvereiste
 
-The public website (business page and site builder) is available on every plan and stays online. MyCompanyDesk branding is address-based: the badge appears when the site is served on a workspace subdomain, and it is removed when the site is served on a custom domain (Pro).
+De openbare website (bedrijfspagina en sitebouwer) is beschikbaar op elk abonnement en blijft online. De MyCompanyDesk-badge is adresgebaseerd: hij verschijnt op een werkruimte-subdomein en verdwijnt op een eigen domein (Pro).
 
-- **Free**: the site is visible on the workspace subdomain with a small MyCompanyDesk badge.
-- **Starter and Pro**: the site is always visible; no badge on a custom domain, badge on the workspace subdomain.
-- **Uncertain state**: if the system cannot determine your plan, the site stays up rather than risking an accidental takedown.
+- **Gratis**: de site is zichtbaar op het werkruimte-subdomein met een kleine MyCompanyDesk-badge.
+- **Starter en Pro**: de site is altijd zichtbaar; geen badge op een eigen domein, badge op het werkruimte-subdomein.
+- **Onzekere toestand**: als het systeem niet kan bepalen welk abonnement je hebt, blijft de site online om te voorkomen dat een site onterecht offline gaat.
 
-This gate applies to all public serving paths: the business page, the service-detail route, and the site builder's rendered pages. It is checked on every request, before any caching layer, so it stays accurate even if your subscription changes mid-cache.
+Deze poort geldt voor alle publieke paden: de bedrijfspagina, de servicedetailroute en de pagina's van de sitebouwer. De controle gebeurt bij elk verzoek, voor elke cachinglaag, zodat het klopt ook als je abonnement midden in een cacheperiode verandert.
 
-Source: `apps/api/src/modules/billing/entitlement.service.js` — `computePublicPageGate`, `getPublicPageVisibility`, `renderer.service.js` for the address-based badge rule.
+Bron: `apps/api/src/modules/billing/entitlement.service.js` — `computePublicPageGate`, `getPublicPageVisibility`; `renderer.service.js` bepaalt de badge op basis van het adres.
 
-## Related
+## Gerelateerd
 
-- [Domains, Website and Inbox](/features/domains-website-inbox): Custom domain setup, verification, SSL, and email inbox.
-- [Company Settings](/settings/company): Where your company details, branding, and address live.
-- [Quotes](/features/quotes): Managing quote requests that come in through your website.
-- [Plan & payments](/settings/billing): Subscription plans and feature flags.
+- [Domeinen, website en inbox](/features/domains-website-inbox): Eigen domein instellen, verificatie, SSL en e-mailinbox.
+- [Bedrijfsinstellingen](/settings/company): Waar je bedrijfsgegevens, huisstijl en adres staan.
+- [Offertes](/features/quotes): Beheren van offerteaanvragen die via je website binnenkomen.
+- [Abonnementen & betalingen](/settings/billing): Abonnementsvormen en functievlaggen.

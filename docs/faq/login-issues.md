@@ -7,10 +7,10 @@ chatbot:
   follow_up: ["How do I reset my password?", "How do I change my password?"]
 ---
 
-If you're having trouble logging in:
-1. Try "Forgot Password" on the login page to reset
-2. Check your spam/junk folder for verification emails
-3. Make sure you're using the correct email address
-4. Clear your browser cache and cookies
+Als je problemen hebt met inloggen:
+1. Probeer "Wachtwoord vergeten" op de inlogpagina
+2. Controleer je spam-/ongewenste e-mail map
+3. Zorg dat je het juiste e-mailadres gebruikt
+4. Wis je browsercache en cookies
 
-If it still fails, share what step fails and any error message so I can guide the next troubleshooting step.
+Als het probleem aanhoudt, maak dan hieronder een supportticket aan.

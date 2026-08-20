@@ -19,11 +19,9 @@ chatbot:
     - "How do I view customer payment history?"
 ---
 
-To edit a customer:
-1. Go to Customers and find the customer
-2. Click on the customer to open their profile
-3. Click "Edit"
-4. Update name, address, email, VAT number, or payment terms
-5. Save your changes
-
-Updated customer details are reused the next time you create or resend documents for that customer.
+Om een klant te bewerken:
+1. Ga naar Klanten en zoek de klant
+2. Klik op de klant om het profiel te openen
+3. Klik op "Bewerken"
+4. Pas naam, adres, e-mail, BTW-nummer of betaalvoorwaarden aan
+5. Sla je wijzigingen op

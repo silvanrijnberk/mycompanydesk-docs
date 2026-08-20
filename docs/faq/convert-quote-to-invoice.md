@@ -23,11 +23,9 @@ chatbot:
     - "How do I send the invoice?"
 ---
 
-To convert a quote to an invoice:
-1. Open the quote detail page
-2. Click "Create invoice from quote"
-3. The app creates a new draft invoice with copied customer, lines, VAT mode, and notes
-4. Review payment terms and due date
-5. Save and send the invoice
-
-The original quote stays available, and the invoice opens as a separate draft.
+Om een offerte om te zetten naar een factuur:
+1. Open de offerte-detailpagina
+2. Klik op "Factuur maken vanuit offerte"
+3. Er wordt een nieuwe conceptfactuur gemaakt met gekopieerde klant, regels en notities
+4. Controleer vervaldatum en betaalvoorwaarden
+5. Sla op en verstuur

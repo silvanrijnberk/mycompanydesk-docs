@@ -1,198 +1,206 @@
 ---
-title: Expenses
+title: Uitgaven
 last_verified: 2026-08-16
 ---
 
-# Expenses
+# Uitgaven
 
-Track business expenses, scan receipts, manage workspace categories with their own VAT defaults, and let depreciation schedules run automatically for investments. Manage categories, defaults and bank feeds under **Settings > Expenses**, **Settings > Expense categories** and **Settings > Bank connection**.
+Houd al je zakelijke uitgaven bij, scan bonnen met AI en categoriseer kosten voor nauwkeurige boekhouding en BTW-aangifte.
 
-## Overview
+## Overzicht
 
-The expenses page lists every recorded expense. The payment status tabs in the top bar let you switch quickly between:
+De uitgavenpagina toont al je geregistreerde uitgaven. De betaalstatus-tabs in de bovenste balk laten je snel wisselen tussen:
 
-- **All**: every recorded expense
-- **Unpaid**: expenses not yet paid
-- **Paid**: expenses already paid
+- **Alles**: elke geregistreerde uitgave
+- **Onbetaald**: nog niet betaalde uitgaven
+- **Betaald**: al betaalde uitgaven
 
-You can still filter by category, project, date range, or status. Click an expense to open the detail page; click **New** to add one manually, or **Scan receipt** to extract one from an image or PDF.
+Je kunt nog steeds filteren op categorie, project, datumbereik of status. Klik op een uitgave om de detailpagina te openen; klik op **Nieuw** om er handmatig een toe te voegen, of **Scan bon** om er een te extraheren uit een afbeelding of PDF.
 
-Trashed expenses can be viewed in the Trash view, but they cannot be edited, marked as paid, or have their receipt replaced. Restore the expense first if you need to change it.
+Uitgaven in de prullenbak zijn zichtbaar via de weergave Prullenbak, maar je kunt ze niet bewerken, als betaald markeren of hun bon vervangen. Zet de uitgave eerst terug als je iets wilt wijzigen.
 
-## Categories
+## Uitgavecategorieën
 
-Categories are stored per workspace in the `expense_categories` table - they aren't a hardcoded enum. Each category carries:
+Categorieën worden per werkruimte bewaard in de tabel `expense_categories`; het is geen vaste lijst in de app. Elke categorie heeft:
 
-- A **key** (slug used by the API and the form).
-- A **VAT treatment** default (see below).
-- A **deduction percentage** for partially-deductible categories.
-- An **auto-flag investment** flag that turns matching expenses into investments automatically.
-- A **default useful-life** in months for the depreciation engine.
+- Een **sleutel** (slug voor de API en het formulier).
+- Een standaard **BTW-behandeling**.
+- Een **aftrekbar percentage** voor gedeeltelijk aftrekbare categorieën.
+- Een **investeringsvlag** die overeenkomende uitgaven automatisch als investering markeert.
+- Een standaard **afschrijvingstermijn** in maanden voor de afschrijvingsmotor.
 
-The setup wizard seeds an industry-tailored set on top of the eleven system defaults, so a software-heavy workspace ends up with extra keys like `cloud_services_eu`, while a hospitality workspace might get `food_client_meeting`. New categories from the wizard validate the same way as system defaults - unknown or mistyped keys are rejected with a 400. System categories cannot be edited or deleted, because they carry the tax-return mapping. You can archive a category to hide it from the form. An archived category still appears in the dropdown for expenses that already use it, marked as "(archived)", so you can keep editing those expenses. Create, edit and delete your own categories from **Settings > Expense categories**. Deleting a category is blocked while it is still used by expenses or recurring expenses; archive it instead.
+De instelwizard plant een op de branche afgestemde set bovenop de elf standaardcategorieën, zodat een software-bedrijf extra sleutels als `cloud_services_eu` krijgt, terwijl een horeca-bedrijf bijvoorbeeld `food_client_meeting` krijgt. Nieuwe categorieën vanuit de wizard worden op dezelfde manier gevalideerd als standaardcategorieën; onbekende of verkeerd getypte sleutels worden geweigerd met een 400. Systeemcategorieën kun je niet bewerken of verwijderen, omdat ze de koppeling met de aangifte bevatten. Je kunt een categorie archiveren om hem uit het formulier te verbergen. Eigen categorieën toevoegen, bewerken en verwijderen doe je via **Instellingen > Uitgavencategorieën**. Verwijderen is geblokkeerd zolang een categorie nog gebruikt wordt door uitgaven of terugkerende uitgaven; archiveer hem dan in plaats daarvan.
 
-## Creating an expense
+## Een uitgave aanmaken
 
-### Manual entry
+### Handmatige invoer
 
-1. Go to **Expenses > New**.
-2. Type the **supplier** name. The supplier autocomplete suggests previously-used vendors as you type.
-3. Pick a **category**. The form pulls the category's default VAT treatment, default VAT rate hint and deduction percentage straight into the matching fields. If a workspace-wide default expense category is set under workspace settings, it is pre-filled here.
-4. Fill in the **description**, **amount excl. VAT**, **VAT rate** and **date**. The VAT rate and the **payment method** are pre-filled from your workspace defaults (set under workspace settings as "Standard VAT rate expenses", default expense category and default payment method). The VAT amount is calculated automatically; you can also enter the inclusive amount and let the form back out the components.
-5. Optionally set the **VAT treatment** (overrides the category default), **customer**, **project** and **notes**. The pre-filled category and payment method can be overridden on a per-expense basis.
-6. Optionally attach a **receipt**.
-7. Click **Save**.
+1. Ga naar **Uitgaven > Nieuwe uitgave**
+2. Vul in:
+   - **Omschrijving** - Waarvoor de uitgave is
+   - **Bedrag** - Totale kosten (inclusief of exclusief BTW)
+   - **Datum** - Wanneer de uitgave plaatsvond
+   - **Categorie** - Selecteer uit je werkruimtelijst (standaardcategorieën of zelf toegevoegde categorieën). Als je een standaard uitgavecategorie hebt ingesteld onder werkruimte-instellingen, is deze hier al vooringevuld.
+   - **BTW-tarief** - Wordt vooringevuld met het standaard BTW-tarief voor uitgaven van je werkruimte (in te stellen onder werkruimte-instellingen). Je kunt het altijd per uitgave aanpassen.
+   - **Betaalmethode** - Wordt vooringevuld met de standaard betaalmethode voor uitgaven van je werkruimte, indien ingesteld.
+3. Voeg optioneel een **bon**-afbeelding of PDF toe
+4. Koppel optioneel aan een **project** of **klant**
+5. Klik op **Opslaan**
 
-### Generate from supplier
+### Snel toevoegen
 
-When you're creating a new expense and you've typed a supplier name, the **Generate** button (sparkles icon, top right) runs an LLM prefill. It uses the supplier and any partial inputs to suggest a description, category, VAT treatment, amount and date. If the form's VAT rate still matches your workspace default, the prefill will overwrite it with what it finds on the receipt; otherwise it leaves your override alone. Review the result before saving - the prefill is a draft, not an autopilot.
+Gebruik de snel-toevoegen-lade voor snelle uitgaveninvoer:
 
-### From a template
+1. Klik op de snel-toevoegen-knop op de uitgavenlijst
+2. Vul het bedrag en de omschrijving in
+3. Selecteer een snelle categorie
+4. Sla op
 
-When creating a new expense, click **Start from template** (only shown when you have saved expense templates). Pick a template and the form fills itself in place with the saved supplier, category, amount and other data. Adjust anything you need, then click **Save**.
+### Vanuit een sjabloon
 
-### From bank transactions
+Bij het aanmaken van een nieuwe uitgave klik je op **Vanuit sjabloon** (alleen zichtbaar als je opgeslagen uitgavesjablonen hebt). Kies een sjabloon en het formulier vult zich ter plekke met de opgeslagen leverancier, categorie, bedrag en andere gegevens. Pas aan waar nodig en klik op **Opslaan**.
 
-When your [bank feed](/features/bank) is connected, categorised outgoing transactions are automatically turned into draft expenses. Each one carries the transaction's counterpart as supplier, the absolute amount as gross, the category's default VAT rate and treatment, and the transaction's booking date. Draft expenses first appear in the bank-feed review inbox, where you can confirm, edit, or reject them before they land in your books. See [reviewing auto-imported expenses](/features/bank#reviewing-auto-imported-expenses) for the full workflow.
+### Van banktransacties
 
-### Receipt scanner
+Wanneer je [bankfeed](/features/bank) is gekoppeld, worden gecategoriseerde uitgaande transacties automatisch omgezet naar conceptuitgaven. Elke uitgave krijgt de tegenpartij als leverancier, het absolute bedrag als bruto, het standaard BTW-tarief en de behandeling van de categorie, en de boekingsdatum van de transactie. Conceptuitgaven verschijnen eerst in de beoordelingsinbox van de bankfeed, waar je ze kunt bevestigen, bewerken of afwijzen voordat ze in je boekhouding komen. Zie [auto-importuitgaven beoordelen](/features/bank#auto-importuitgaven-beoordelen) voor de volledige workflow.
 
-For image or PDF receipts:
+### Bonnen scannen
 
-1. Go to **Expenses > Scan receipt**.
-2. Upload a JPEG, PNG, WebP or PDF file.
-3. Choose **Single** (one expense from the receipt) or **Multiple** (split a receipt into separate expenses).
-4. Review the extracted supplier, date, amount, VAT and category.
-5. Confirm to create the expense(s).
+Laat AI automatisch uitgavegegevens uit bonnen extraheren:
 
-Receipt scanning is available on every plan, including Free. The number of scans per month depends on your plan.
-
-### Locked VAT periods
-
-If an inbox message is converted into an expense with a date inside a VAT period that has already been filed, the automated booking is refused to protect the filed return. Instead of silently dropping the invoice, MyCompanyDesk creates an `inbox_expense_period_locked` notification that names the supplier and invoice date and tells you the VAT period is locked. The notification routes to the inbox list, so you can find the original forwarded invoice there. You then have the same two options as other locked-period cases: book the expense manually with a date in the current open period, or file a supplementary VAT return for the locked period.
-
-The capture drawer shows the same VAT-period chip next to the date field before you save, so a locked or grace-period date is visible before the server refuses it.
-
-When a forwarded email or a scan produces an expense but the receipt file itself cannot be attached (for example, an unsupported file type or a file over the limit), the expense is still created and a note is added to it telling you that the attachment is missing. Upload the receipt manually on the expense detail page when that happens.
-
-## VAT treatment
-
-Every expense has a `vat_treatment` field that decides how it lands on your VAT return:
-
-| Value | Meaning |
-|---|---|
-| `standard` | Domestic VAT charged by the supplier - the default. |
-| `b2b_reverse_charge` | Verleggingsregeling: you self-account for the VAT on an EU B2B purchase. |
-| `import_reverse_charge` | Non-EU supplier invoices 0% VAT (sources/vat-rates.yaml#countries.NL.zero); you self-account under rubriek 4a, not 4b. Use this for suppliers such as Anthropic or OpenAI. |
-| `vat_exempt` | The supply is exempt from VAT. |
-| `foreign_vat_charged` | A non-EU supplier charged you VAT (typically reclaimable through the EU refund procedure). |
-
-The treatment is normally inherited from the category default. Override it on a per-expense basis when reality differs - for example, a Software-category expense from a US vendor that did charge VAT instead of applying the EU reverse-charge default.
-
-### Manual VAT amount
-
-The VAT amount is normally calculated from the rate and the net amount. If the supplier's document (for example a credit note with net EUR 0 and VAT only) does not match that calculation, click the VAT amount and enter it yourself. The percentage then stops driving the amount, and the form uses your figure.
-
-### Corrections in locked periods
-
-When an expense sits in a locked VAT period, the detail form blocks changes to the financial fields and offers a correction path. The error is surfaced through the `PERIOD_LOCKED` code, so you see a Dutch explanation instead of the raw backend message. The correction is created in a later, open period and carries a note that links back to the original locked expense, so the audit trail stays intact.
-
-The gate compares the values that are actually about to be written, not just the fields visible in the form. That includes multi-rate `lines`, investment toggles, and depreciation inputs such as useful life, residual value and private-use percentage. Any financially meaningful change on a filed period is refused; inert edits such as notes, payment status or receipt attachments still go through.
-
-## Multi-rate lines
-
-Receipts that mix VAT rates (a supermarket bill with food at 9% and drinks at 21%, say) are recorded on the expense's `lines` column - a JSONB array on the `expenses` table:
-
-```json
-[
-  { "description": "Food",  "amount_excl_vat": 22.50, "vat_rate": 9,  "vat_amount": 2.03 },
-  { "description": "Drinks", "amount_excl_vat": 12.00, "vat_rate": 21, "vat_amount": 2.52 }
-]
-```
-
-When `lines` is null or empty, the flat fields (`amount_excl_vat`, `vat_rate`, `vat_amount`, `amount_incl_vat`) are the source of truth - the single-rate path is unchanged. When `lines` is present, the line totals drive the flat fields and aggregators iterate the lines for accuracy on the VAT return.
+1. Ga naar **Uitgaven > Bon scannen**
+2. Upload een bonafbeelding (JPEG, PNG, WebP) of PDF
+3. Kies de extractiemodus:
+   - **Enkel** - Een uitgave van de bon
+   - **Meervoudig** - Meerdere regelitems van een bon
+4. Controleer de geextraheerde gegevens (datum, bedrag, leverancier, omschrijving)
+5. Bevestig om de uitgave(n) aan te maken
 
 ::: info
-The form UI for adding lines from the screen is a follow-up - at the moment lines are settable through the API. Single-rate entry from the form works exactly as before.
+Bonnen scannen vereist het **Pro**-abonnement of hoger. Het BTW-tarief op een nieuwe uitgave begint bij je standaard werkruimte-instelling.
 :::
 
-## Depreciation for investments
+### Vergrendelde BTW-periodes
 
-Categories with `auto_flag_investment = true` (typically equipment and other capex) turn an expense into an investment automatically:
+Als een inboxbericht wordt omgezet naar een uitgave met een datum in een BTW-periode die al is aangegeven, wordt de automatische boeking geweigerd om de ingediende aangifte te beschermen. In plaats van de factuur stilzwijgend te laten verdwijnen, maakt MyCompanyDesk een `inbox_expense_period_locked`-melding aan die de leverancier en factuurdatum noemt en aangeeft dat de BTW-periode vergrendeld is. De melding brengt je naar de inboxlijst, zodat je de doorgestuurde factuur daar kunt terugvinden. Je hebt vervolgens dezelfde twee opties als bij andere gevallen van een vergrendelde periode: boek de uitgave handmatig met een datum in de huidige open periode, of dien een suppletieaangifte in voor de vergrendelde periode.
 
-- The expense is marked `is_investment = true`.
-- A monthly depreciation schedule is generated using the category's `useful_life_months` (default 60 if unset).
-- The schedule uses straight-line depreciation with daily pro-rata for the first and last calendar month, in line with Belastingdienst guidance.
-- Lines live in `expense_depreciation_lines` and feed your reports.
+De snelle invoerlade toont dezelfde btw-periodestatus naast het datumveld voordat je opslaat, zodat een vergrendelde of coulanceperiode zichtbaar is voordat de server de boeking weigert.
 
-The depreciable basis equals the capitalized cost that the ledger posts to the asset account (`apps/api/src/modules/ledger/posting-engine.js`), not the raw amount excluding VAT. That means it also folds in non-deductible input VAT (for categories with a deduction percentage below 100%) and the business share after private-use percentage, so the schedule, the object register and the KIA calculation all read from the same figure.
+Als een doorgestuurde e-mail of een scan wel een uitgave oplevert, maar de bijbehorende bon niet meegevoegd kan worden (bijvoorbeeld een niet-ondersteund bestandstype of een te groot bestand), wordt de uitgave toch aangemaakt en krijgt hij een notitie dat de bijlage ontbreekt. Upload de bon daarna handmatig op de detailpagina van de uitgave.
 
-Editing the category, date, amount, VAT treatment, private-use percentage, useful life or residual value on an existing expense re-triggers the recompute. If any existing depreciation line already falls inside a locked VAT period, the recompute is refused so the filed return is not restated silently. Toggling an expense out of an investment-flagged category cleans up the depreciation lines too.
+## BTW-afhandeling
 
-An investment whose own date is still in an open period can still hit a locked schedule if its depreciation lines run into a later, locked VAT period. In that case the form shows the `DEPRECIATION_SCHEDULE_LOCKED` error instead of `PERIOD_LOCKED`. Use the **Temporary unlock** action for that period on the [VAT page](/features/vat) and retry the edit.
+Elke uitgave kan een eigen BTW-tarief hebben. Veelgebruikte opties:
 
-## Linking and filtering
+- **21%** - Standaardtarief
+- **9%** - Verlaagd tarief
+- **0%** - Nultarief of vrijgesteld
 
-Link expenses to:
+Het BTW-bedrag wordt automatisch berekend en opgenomen in je [BTW-rapportages](/features/vat).
 
-- **Projects** - Track project costs.
-- **Customers** - Associate purchases with a client (e.g. for rebillable expenses).
-- **Suppliers** - Free-form supplier name; reused vendors surface in the autocomplete.
+### BTW-behandeling
 
-Filters on the list cover category, project, customer, date range and status (active vs archived).
+In speciale gevallen stel je de BTW-behandeling van de uitgave in:
 
-## Bulk actions
+- **Standaard**: binnenlandse BTW.
+- **Verlegd (EU)**: je rekent de BTW zelf af voor een zakelijke aankoop uit de EU, rubriek 4b.
+- **Verlegd (buiten de EU)**: leverancier buiten de EU factureert 0% BTW (sources/vat-rates.yaml#countries.NL.zero), jij rekent zelf af in rubriek 4a. Gebruik dit bijvoorbeeld voor een Amerikaanse leverancier zoals Anthropic of OpenAI.
+- **Vrijgesteld**: de levering is BTW-vrij.
+- **Buitenlandse BTW in rekening gebracht**: buitenlandse BTW die mogelijk via de EU-teruggaafprocedure terug te vragen is.
 
-Select multiple expenses for:
+De behandeling wordt meestal overgenomen uit de categorie. Je kunt hem per uitgave overschrijven.
 
-- **Categorize** - Re-assign the category (re-runs the depreciation hook for newly-investment-flagged rows).
-- **Archive** - Move to archive. Archiving unpaid expenses that have a due date pauses their open payment reminders. The bulk bar asks for confirmation first when any selected expense is unpaid and has a due date, so you know how many of the selected expenses lose a reminder. The reminder stays paused while the expenses are archived. If you restore an archived expense later, the daily sweep recreates the reminder, but not immediately; it returns the next night at the earliest.
-- **Delete** - Permanently remove.
-- **Export** - Download as CSV.
-- **Mark as paid** - Mark selected expenses as paid. Marking a bank or inbox draft as paid clears its "To review" flag at the same time, so the row shows up in your reports, VAT return and accountant export instead of staying hidden. This only happens when you set the status to paid, not when you move it back to unpaid.
+### Handmatig BTW-bedrag
 
-## Mileage allowance
+Meestal berekent MyCompanyDesk het BTW-bedrag uit het tarief en het nettobedrag. Komt dat niet overeen met het document van de leverancier, bijvoorbeeld een creditnota met netto EUR 0 en alleen BTW, dan kun je het BTW-bedrag handmatig invoeren. Het tarief bepaalt het bedrag dan niet meer; het formulier gebruikt jouw ingevoerde bedrag.
 
-If you drive a private car for business trips, you can book those trips as a single expense with a mileage allowance.
+### Correcties in vergrendelde perioden
 
-1. Go to **Expenses** and open the mileage allowance flow.
-2. Pick the period you want to book.
-3. Select the trips to include.
-4. Click **Book as expense**.
+Zit een uitgave in een vergrendelde BTW-periode, dan blokkeert het formulier wijzigingen in de financiële velden en biedt een correctiepad. De foutmelding komt via de code `PERIOD_LOCKED`, zodat je een Nederlandse toelichting ziet in plaats van de ruwe backend-tekst. De correctie wordt in een latere, open periode aangemaakt en verwijst naar de oorspronkelijke vergrendelde uitgave, zodat je later nog kunt zien wat er is gewijzigd.
 
-The expense is created with one line for the total business kilometres.
+De poort vergelijkt de waarden die daadwerkelijk weggeschreven zouden worden, niet alleen de velden die zichtbaar zijn in het formulier. Dat geldt ook voor meerregelige `lines`, investeringsvlaggen en afschrijvingsinvoer zoals restwaarde, gebruiksduur en privégebruikpercentage. Elke financieel relevante wijziging in een ingediende periode wordt geweigerd; niet-financiële aanpassingen zoals notities, betaalstatus of bonbijlagen blijven wel mogelijk.
 
-<!-- TODO(source-missing): The Dutch mileage allowance rate per kilometre is not yet in sources/. Do not quote the rate in docs until a human verifies the current figure at belastingdienst.nl. -->
+## Uitgaven koppelen
 
-If your workspace uses a company car, the actual car costs are already booked as expenses, so a separate mileage allowance is not needed.
+Koppel uitgaven aan:
 
-Train tickets and other car costs can also be recorded as regular expenses under **Expenses > New** with the supplier, amount, date and category.
+- **Projecten** - Houd projectkosten nauwkeurig bij
+- **Klanten** - Koppel kosten aan specifieke klanten, bijvoorbeeld om ze later door te factureren
+- **Leveranciers** - Registreer aan wie je hebt betaald
 
-## Recurring expenses
+## Bulkacties
 
-For predictable costs (rent, subscriptions, hosting), set up [recurring expenses](/features/recurring-expenses) to generate the records on schedule.
+Selecteer meerdere uitgaven voor:
 
-## Import
+- **Categoriseren** - Wijzig categorie in bulk
+- **Archiveren** - Verplaats naar archief. Als je meerdere onbetaalde uitgaven met een vervaldatum tegelijk archiveert, vallen hun openstaande betaalherinneringen stil. De bulkbalk toont eerst een bevestiging zodra een van de geselecteerde uitgaven onbetaald is én een vervaldatum heeft, zodat je weet hoeveel van de geselecteerde uitgaven hun herinnering kwijtraken. Zolang de uitgaven gearchiveerd zijn, blijft de herinnering uit. Zet je een gearchiveerde uitgave later terug, dan maakt de dagelijkse sweep de herinnering opnieuw aan, maar pas de volgende nacht op zijn vroegst.
+- **Verwijderen** - Permanent verwijderen
+- **Exporteren** - Download als CSV
+- **Markeer als betaald** - Markeer geselecteerde uitgaven als betaald. Als je een bank- of inbox-concept als betaald markeert, wordt de vlag "Te controleren" tegelijkertijd verwijderd, zodat de rij zichtbaar wordt in je rapportages, BTW-aangifte en boekhoudersexport in plaats van verborgen te blijven. Dit gebeurt alleen als je de status op betaald zet, niet als je hem terugzet naar onbetaald.
 
-Import historical expenses from CSV via **Profile > Import** > **Expenses**. Map your columns to the expense fields, preview, and confirm.
+## Kilometervergoeding
 
-## Pattern-break notifications
+Rij je privé zakelijk, dan kun je die ritten bundelen tot één uitgave met een kilometervergoeding.
 
-MyCompanyDesk watches for suppliers that usually send a bill every month but have gone quiet. If a supplier had expenses in three separate months and then no confirmed expense for about 50 days, it creates a notification asking whether you are missing a bill.
+1. Ga naar **Uitgaven** en open de kilometervergoeding.
+2. Kies de periode die je wilt boeken.
+3. Selecteer de ritten die je meeneemt.
+4. Klik op **Boek als uitgave**.
 
-The check looks at confirmed expenses only. Pending or draft expenses do not count as "we saw a bill", so an unconfirmed import does not stop the notification. The goal is to catch a missing recurring invoice before it throws off your records.
+De uitgave wordt aangemaakt met één regel voor het totaal aan zakelijke kilometers.
 
-When you open the notification, you can record the missing expense or dismiss it if the silence is expected.
+<!-- TODO(source-missing): Het Nederlandse kilometervergoedingstarief per kilometer staat nog niet in sources/. Quote het tarief niet in de documentatie totdat een mens het huidige bedrag heeft gecontroleerd op belastingdienst.nl. -->
 
-## Audit trail
+Als je werkruimte een bedrijfsauto gebruikt, zijn de werkelijke autokosten al als uitgave geboekt; een aparte kilometervergoeding is dan niet nodig.
 
-Creating an expense now writes an audit-trail entry for every creation path, not only for the manual web form. This covers receipts scanned from the app, bank-feed drafts, CSV imports, recurring expenses, inbox and forwarded-email drafts, Peppol e-invoices and mileage trips. The entry names the supplier and date, or the expense number when one is assigned, so the history shows where each expense originated.
+## Investeringen en afschrijving
+
+Categorieën met `auto_flag_investment = true` (doorgaans uitrusting en andere investeringen) zetten een uitgave automatisch om in een investering:
+
+- De uitgave krijgt `is_investment = true`.
+- Er wordt een maandelijkse afschrijvingsregeling aangemaakt op basis van `useful_life_months` van de categorie (standaard 60 maanden als deze niet is ingesteld).
+- De regeling gebruikt lineaire afschrijving met dagpro rata voor de eerste en laatste kalendermaand, conform de richtlijnen van de Belastingdienst.
+- Regels worden bewaard in `expense_depreciation_lines` en doorgegeven aan rapportages.
+
+De afschrijfbare basis is gelijk aan de geactiveerde waarde die de grootboekpost boekt naar de activarekening (`apps/api/src/modules/ledger/posting-engine.js`), niet het bruto-bedrag exclusief BTW. Daarmee worden ook niet-aftrekbare voorbelasting (voor categorieën met een aftrekpercentage onder de 100%) en het zakelijke deel na privégebruikpercentage meegenomen, zodat de afschrijvingsregeling, het objectenregister en de KIA-berekening allemaal van hetzelfde bedrag uitgaan.
+
+Het bewerken van categorie, datum, bedrag, BTW-behandeling, privégebruikpercentage, gebruiksduur of restwaarde op een bestaande uitgave triggert herberekening. Als een bestaande afschrijvingsregel al in een vergrendelde BTW-periode valt, wordt de herberekening geweigerd, zodat de ingediende aangifte niet stilletjes wijzigt. Het terugzetten van een investeringsuitgave naar een niet-investeringscategorie verwijdert de afschrijvingsregels.
+
+Een investering waarvan de eigen datum nog in een open periode valt, kan toch tegen een vergrendeld schema aanlopen als de afschrijvingsregels in een latere, vergrendelde BTW-periode vallen. Dan toont het formulier de foutcode `DEPRECIATION_SCHEDULE_LOCKED` in plaats van `PERIOD_LOCKED`. Gebruik de actie **Tijdelijk ontgrendelen** voor dat tijdvak op de [BTW-pagina](/features/vat) en probeer de wijziging opnieuw.
+
+Treinkaartjes en andere autokosten kun je ook als gewone uitgave boeken via **Uitgaven > Nieuw** met leverancier, bedrag, datum en categorie.
+
+## Terugkerende uitgaven
+
+Voor regelmatige kosten (huur, abonnementen, etc.) stel je [terugkerende uitgaven](/features/recurring-expenses) in om het aanmaken te automatiseren.
+
+## Importeren
+
+Importeer uitgaven vanuit CSV:
+
+1. Ga naar **Profiel > Importeren**
+2. Selecteer **Uitgaven** als gegevenstype
+3. Upload je CSV-bestand
+4. Koppel kolommen aan velden
+5. Controleer en bevestig
+
+## Patroononderbrekingsmeldingen
+
+MyCompanyDesk houdt leveranciers in de gaten die normaal elke maand een factuur sturen, maar nu stil zijn. Als een leverancier uitgaven in drie verschillende maanden had en daarna ongeveer 50 dagen geen bevestigde uitgave meer, krijg je een melding met de vraag of je een factuur mist.
+
+De controle kijkt alleen naar bevestigde uitgaven. Conceptuitgaven of uitgaven die nog moeten worden bevestigd tellen niet mee als "we hebben een factuur gezien", dus een onbevestigde import stopt de melding niet. Het doel is om een ontbrekende terugkerende factuur op te vangen voordat je administratie scheef groeit.
+
+Als je de melding opent, kun je de missende uitgave direct boeken of afwijzen als het stilzijn verwacht is.
+
+## Controlespoor
+
+Het aanmaken van een uitgave schrijft voortaan voor elk ontstaanspad een regel in het controlespoor, niet alleen voor het handmatige webformulier. Dat geldt voor bonnen die je scant via de app, concepten uit de bankkoppeling, CSV-imports, terugkerende uitgaven, inbox- en doorgestuurde-e-mailconcepten, Peppol-e-facturen en ritten. De regel noemt de leverancier en datum, of het uitgavennummer als er al een is toegekend, zodat je in de geschiedenis kunt zien waar een uitgave vandaan komt.
 
 ## Tips
 
-- Pick the right category first - VAT treatment, deduction percentage and the investment flag all flow from it.
-- Set your workspace default VAT rate, default expense category and default payment method in **Workspace settings** to stop the form starting with empty fields every time. A 0% VAT setting works correctly; the form treats it as intentional.
-- Use the per-expense VAT treatment override sparingly; if you find yourself overriding every entry in a category, the category default is wrong and should be edited.
-- Always attach receipts. The pre-filing checks on the [VAT page](/features/vat) flag missing receipts before you file.
-- For mixed-rate receipts, use the lines API path until the form UI ships - single-rate entry is fine for everything else.
-- Investment expenses can take a moment to recompute when you change the date or amount. The depreciation lines refresh in the background.
+- Stel je standaard BTW-tarief, standaard uitgavecategorie en standaard betaalmethode voor uitgaven in onder **Instellingen > Uitgaven** zodat het formulier niet steeds leeg begint. Een 0%-BTW-instelling werkt correct; het formulier behandelt die als een bewuste keuze.
+- Eigen categorieën beheer je in **Instellingen > Uitgavencategorieën**. Systeemcategorieën kun je niet verwijderen; archiveer ze als je ze niet meer wilt zien.
+- Schakel [AI-suggesties](/advanced/ai-features) in voor automatische categorie-aanbevelingen
+- Voeg altijd bonnen toe - ze zijn essentieel voor belastingcontroles
+- Gebruik projecten om de verhouding uitgaven-inkomsten bij te houden
+- Bekijk het [uitgavenrapport](/features/reports) voor bestedingsoverzichten

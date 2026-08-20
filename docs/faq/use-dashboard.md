@@ -1,5 +1,5 @@
 ---
-title: "Use the dashboard"
+title: "Dashboard gebruiken"
 last_verified: 2026-08-18
 chatbot:
   triggers:
@@ -18,15 +18,15 @@ chatbot:
     - "How do I create an invoice?"
 ---
 
-Your dashboard gives you a quick overview of:
+Je dashboard geeft je een snel overzicht van:
 
-- A period switcher for month, quarter, or year
-- Five fixed KPI tiles: cash, receivables, revenue, payables, and profit
-- An attention widget with up to four tasks that need action
-- Supporting blocks such as trend, ageing, revenue sources, quotes, expenses, cash, activity, and VAT
+- een periodekiezer voor maand, kwartaal of jaar
+- vijf vaste KPI-tegels: kas, te ontvangen, omzet, te betalen en winst
+- een aandacht-widget met maximaal vier taken die actie vragen
+- ondersteunende blokken zoals trend, ageing, omzetbronnen, offertes, uitgaven, cash, activiteit en btw
 
-Switch the period selector to reframe every figure in the KPI row. The trend chart always stays at 12 months.
+Schakel met de periodekiezer om alle getallen in de KPI-rij in een ander kader te zetten. De trendgrafiek blijft altijd 12 maanden breed.
 
-Each KPI tile links to the report or list behind it. Click through to resolve issues directly from there.
+Elke KPI-tegel linkt door naar het bijbehorende rapport of de bijbehorende lijst. Klik door om zaken direct daar op te lossen.
 
-The dashboard keeps two views honest: the KPI row shows cash-movement figures, while the profit tile and the trend block use a profit-and-loss view. In the P&L view, expenses are without VAT, investments are spread through their depreciation schedule, and drafts still pending review are excluded. Use the P&L report if you want the same profit figure in a detailed report.
+Het dashboard houdt twee weergaven eerlijk naast elkaar: de KPI-rij toont kasbewegingscijfers, terwijl de winsttegel en het trendblok een winst-en-verliesweergave gebruiken. In die W&V-weergave zijn uitgaven zonder BTW, investeringen verdeeld over hun afschrijvingsschema en concepten die nog in beoordeling zijn uitgesloten. Gebruik het W&V-rapport als je hetzelfde winstcijfer in een gedetailleerd rapport wilt zien.

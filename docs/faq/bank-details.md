@@ -1,5 +1,5 @@
 ---
-title: "Bank details"
+title: "Bankgegevens"
 last_verified: 2026-07-02
 chatbot:
   triggers: ["bank details", "add bank account", "bank information", "where do i add my bank details", "iban", "payment details", "bankgegevens", "waar voeg ik mijn bankgegevens toe", "bankrekening toevoegen", "bankdaten", "wo trage ich meine bankdaten ein", "coordonnees bancaires", "ou ajouter mes coordonnees bancaires"]
@@ -8,9 +8,9 @@ chatbot:
   follow_up: ["How do I add payment methods to invoices?", "How do I set up my company settings?"]
 ---
 
-To add or update bank details:
-1. Go to Settings and open "Betalen"
-2. Enter your IBAN and the name on the account in the bank account card
-3. Changes save automatically
+Om je bankgegevens toe te voegen of bij te werken:
+1. Ga naar Instellingen en open "Betalen"
+2. Vul je IBAN en de naam op de rekening in bij de kaart met je bankrekening
+3. Wijzigingen worden automatisch opgeslagen
 
-Filling in an IBAN automatically enables bank transfer on your invoices, and a payment QR code is added to your invoices so customers can scan and pay the exact amount. There is no BIC field; it is not needed.
+Zodra je een IBAN invult, wordt bankoverschrijving automatisch ingeschakeld op je facturen en komt er een betaal-QR-code op je factuur, zodat klanten scannen en meteen het juiste bedrag betalen. Een BIC-veld is er niet; dat is ook niet nodig.

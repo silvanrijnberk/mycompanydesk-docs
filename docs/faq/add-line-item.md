@@ -8,11 +8,12 @@ chatbot:
   follow_up: ["How do I add a discount to an invoice?", "How do I change the VAT rate on a line?", "How do I reorder line items?"]
 ---
 
-To add, edit, or remove line items on an invoice:
-1. Open the invoice in edit mode (or create a new one)
-2. Click "Add Line" or the + button to add a new row
-3. Enter description, quantity, unit price, and VAT rate
-4. To remove a line, click the trash icon next to it
-5. Save the invoice when done
+Om regelitems toe te voegen, te bewerken of te verwijderen op een factuur:
+1. Open de factuur in bewerkingsmodus
+2. Klik op "Regel toevoegen" of de +-knop om een nieuwe rij toe te voegen
+3. Voer omschrijving, aantal, eenheidsprijs en BTW-tarief in
+4. Om een regel te verwijderen, klik op het verwijdericoon (×) op die rij
+5. Om de volgorde te wijzigen, sleep de rijen
+6. Sla op wanneer je klaar bent
 
-Tip: Use clear, specific descriptions for each line item to avoid customer questions.
+Tip: Gebruik duidelijke, beschrijvende regelomschrijvingen voor professionele facturen.

@@ -1,5 +1,5 @@
 ---
-title: Delete customer
+title: "Klant verwijderen"
 last_verified: 2026-05-09
 chatbot:
   triggers: ["delete customer", "remove customer", "trash customer", "klant verwijderen", "klant wissen", "kunde loschen", "supprimer client"]
@@ -8,11 +8,11 @@ chatbot:
   follow_up: ["How do I archive a customer instead?", "How do I edit customer details?"]
 ---
 
-To delete a customer:
-1. Go to Customers and find the customer
-2. Open their profile
-3. In the sidebar, scroll to the "Danger Zone" section
-4. Click "Delete"
-5. Confirm the deletion
+Om een klant te verwijderen:
+1. Ga naar Klanten en zoek de klant
+2. Open het profiel
+3. Scroll in de zijbalk naar de sectie "Gevarenzone"
+4. Klik op "Verwijderen"
+5. Bevestig de verwijdering
 
-Deleting is never blocked, even for customers with linked invoices. It happens in stages: deleting an active customer archives them first, deleting again moves them to the Trash, and deleting from the Trash removes them permanently. You can restore the customer from the Archive or Trash view at any point before that final step.
+Verwijderen wordt nooit geblokkeerd, ook niet bij klanten met gekoppelde facturen. Het gaat in stappen: een actieve klant verwijderen archiveert deze eerst, nog een keer verwijderen verplaatst de klant naar de Prullenbak, en verwijderen vanuit de Prullenbak is definitief. Tot die laatste stap kun je de klant altijd terugzetten vanuit de weergave Archief of Prullenbak.

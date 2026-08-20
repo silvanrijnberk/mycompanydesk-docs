@@ -1,106 +1,106 @@
 ---
-title: Schedule
+title: Uren & agenda
 ---
 
-# Schedule
+# Uren & agenda
 
-Log working hours, plan your days, and turn billable time into invoices. The **Schedule** page in the sidebar combines time registration with an agenda: you see today's plan, planned entries next to logged ones, and suggestions from your connected calendars, all in one place.
+Schrijf je uren, plan je dagen en zet declarabele tijd om in facturen. De pagina **Uren & agenda** in de zijbalk combineert urenregistratie met een agenda: je ziet het plan voor vandaag, geplande registraties naast gelogde uren en suggesties uit je gekoppelde agenda's, alles op een plek.
 
-## The page at a glance
+## De pagina in het kort
 
-Switch between four views with the selector at the top (swipe between periods on mobile):
+Wissel tussen vier weergaven met de kiezer bovenaan (veeg tussen periodes op mobiel):
 
-- **Day**: today's plan and logged hours. Depending on your settings you get a timeline or a compact list, with planned entries shown separately from logged ones. Events from connected calendars appear alongside your entries and can be converted into time entries with one tap, and you get suggestions based on your recent activity.
-- **Week**: on desktop, a seven-day planner where solid blocks are logged hours and hatched blocks are planned; click an empty slot to add an entry. On mobile, a per-day summary you can tap to drill down.
-- **Month**: totals per day; select a day to jump to it.
-- **List**: a searchable table of all entries with filters for invoice status, customer, project, and travel, plus totals for the current selection.
+- **Dag**: het plan en de gelogde uren van vandaag. Afhankelijk van je instellingen zie je een tijdlijn of een compacte lijst, met geplande registraties apart van gelogde. Afspraken uit gekoppelde agenda's verschijnen naast je registraties en zijn met een tik om te zetten naar een urenregistratie, en je krijgt suggesties op basis van je recente activiteit.
+- **Week**: op desktop een planner van zeven dagen waarin gevulde blokken gelogde uren zijn en gearceerde blokken gepland; klik op een leeg vak om een registratie toe te voegen. Op mobiel een samenvatting per dag waar je op kunt tikken.
+- **Maand**: totalen per dag; selecteer een dag om ernaartoe te springen.
+- **Lijst**: een doorzoekbare tabel van alle registraties met filters voor factuurstatus, klant, project en reizen, plus totalen voor de huidige selectie.
 
-Planned entries carry a **Tentative** badge; press **Confirm** once the work actually happened to turn them into logged hours.
+Geplande registraties dragen het label **Gepland**; druk op **Bevestigen** zodra het werk echt is gedaan om ze om te zetten naar gelogde uren.
 
-If you want, enable **Auto-confirm tentative time** in the schedule settings. When this is on, tentative entries are confirmed automatically once their scheduled date has passed, even if nobody opens the Schedule page.
+Wil je dit niet handmatig doen? Zet **Geplande tijd automatisch bevestigen** aan in de agenda-instellingen. Geplande registraties worden dan automatisch bevestigd zodra de geplande datum is verstreken, ook als je de agenda niet opent.
 
-## Logging time
+## Uren schrijven
 
 ### Timer
 
-On mobile, the day view includes a timer: start it when you begin working and stop it to log the elapsed time as an entry. You can make the timer your default way of working via the work mode setting (see Settings below).
+Op mobiel bevat de dagweergave een timer: start hem als je begint met werken en stop hem om de verstreken tijd als registratie te loggen. Via de werkmodus-instelling maak je de timer je standaardmanier van werken (zie Instellingen hieronder).
 
-### Manual entries
+### Handmatige registraties
 
-1. Click **Add Entry** (keyboard shortcut A, or the + button on mobile)
-2. The quick-add drawer opens: pick the customer and optionally a project, enter your hours, and adjust the description and rate where needed
-3. Enter time as a total number of hours, or switch to a start and end time
-4. Save the entry
+1. Klik op **Uren toevoegen** (sneltoets A, of de + knop op mobiel)
+2. De snelle invoerlade opent: kies de klant en eventueel een project, vul je uren in en pas waar nodig de omschrijving en het tarief aan
+3. Voer tijd in als totaal aantal uren, of schakel naar een begin- en eindtijd
+4. Sla de registratie op
 
-### Default line description
+### Standaard regelomschrijving
 
-When adding a time entry, the description field is automatically pre-filled from your default line descriptions. The system checks in order:
+Wanneer je een urenregistratie toevoegt, wordt het omschrijvingsveld automatisch vooraf ingevuld vanuit je standaard regelomschrijvingen. Het systeem controleert in volgorde:
 
-1. The project's default line description
-2. The customer's default line description
-3. The workspace default
+1. De standaard regelomschrijving van het project
+2. De standaard regelomschrijving van de klant
+3. De standaard regelomschrijving van de werkruimte
 
-Your own input is never overwritten. Once you type a custom description, the pre-filled value will not replace it.
+Je eigen invoer wordt nooit overschreven. Zodra je een eigen omschrijving typt, wordt de vooraf ingevulde waarde niet meer vervangen.
 
-### Hours-only mode
+### Alleen-uren-modus
 
-Prefer to log just a total per day? Enable **Hours only mode** in the schedule settings. It hides the timeline and the start and end time inputs, so you enter only the total hours per day. The rate and billable fields stay available.
+Log je liever alleen een totaal per dag? Zet dan **Alleen uren modus** aan in de agenda-instellingen. Dit verbergt de tijdlijn en de invoer voor begin- en eindtijd, zodat je alleen het totaal aantal uren per dag invult. Het tarief en het declarabel-veld blijven beschikbaar.
 
-## Invoicing your hours
+## Je uren factureren
 
-The rate shown for each time entry is the **effective hourly rate** for that entry. If the entry has its own hourly rate, that rate is used; otherwise it falls back to the project rate, then to the customer rate, and finally to your workspace default rate. This means the line amount on an invoice always reflects the actual rate stored with the entry.
+Het tarief dat bij elke urenregistratie wordt getoond, is het **effectieve uurtarief** van die registratie. Heeft de registratie een eigen uurtarief, dan wordt dat gebruikt; anders valt het terug op het projecttarief, dan het klanttarief, en uiteindelijk op het standaard uurtarief van de werkruimte. De regelprijs op een factuur sluit dus altijd aan bij het daadwerkelijke tarief dat bij de registratie is opgeslagen.
 
-### Create an invoice from the Schedule page
+### Een factuur maken vanaf de pagina Uren & agenda
 
-When you have uninvoiced entries, click **Create Invoice**. A drawer opens where you pick a customer; it lists all uninvoiced entries for that customer with their total. Confirm, and a draft invoice is created with one line per entry. Billable travel time and travel costs linked to those entries are added as separate lines.
+Heb je niet-gefactureerde registraties, klik dan op **Factuur aanmaken**. Er opent een lade waarin je een klant kiest; je ziet alle niet-gefactureerde registraties van die klant met het totaal. Bevestig, en er wordt een conceptfactuur aangemaakt met een regel per registratie. Declarabele reistijd en reiskosten die aan die registraties zijn gekoppeld, komen er als aparte regels bij.
 
-### Pick individual entries on the invoice form
+### Losse registraties kiezen op het factuurformulier
 
-Want to invoice only some entries? Create or edit an invoice directly: the invoice form has a time section that lists the uninvoiced entries for the selected customer, so you choose exactly which ones to include.
+Wil je maar een deel van de registraties factureren? Maak of bewerk dan direct een factuur: het factuurformulier heeft een urensectie die de niet-gefactureerde registraties van de gekozen klant toont, zodat je precies kiest welke je meeneemt.
 
-### Line descriptions on the invoice
+### Regelomschrijvingen op de factuur
 
-Invoice lines are described automatically: the entry's own description is used first, otherwise the project name, otherwise the period. A per-customer description template (set on the customer page) overrides this format.
+Factuurregels worden automatisch omschreven: eerst de omschrijving van de registratie zelf, anders de projectnaam, anders de periode. Een omschrijvingssjabloon per klant (ingesteld op de klantpagina) gaat boven dit formaat.
 
-### Automatic time invoicing
+### Automatisch uren factureren
 
-Automatic invoicing is configured per customer. On the customer's page, enable **Auto-Invoice** to automatically create a monthly invoice for that customer's registered time, optionally sent automatically. The invoice is created as a draft and stays open so you can review it before it goes out. It uses your workspace's default VAT rate and respects your KOR or VAT-exemption settings, matching the VAT treatment of invoices you create manually.
+Automatisch factureren stel je per klant in. Zet op de pagina van de klant **Automatisch factureren** aan om maandelijks automatisch een factuur aan te maken voor de geregistreerde uren van die klant, desgewenst ook automatisch verzonden. De factuur wordt als concept aangemaakt en blijft open staan, zodat je hem nog kunt nakijken voordat hij de deur uit gaat. Hij gebruikt het standaard BTW-tarief van je werkruimte en respecteert je KOR- of vrijgesteld-instellingen, net als facturen die je handmatig aanmaakt.
 
-## Bulk actions
+## Bulkacties
 
-Select multiple entries in the list view (long-press on mobile) to act on them at once:
+Selecteer meerdere registraties in de lijstweergave (lang indrukken op mobiel) om ze in een keer te bewerken:
 
-- **Mark billable** or **Mark not billable**
-- **Archive**
-- Delete
+- **Markeer als factureerbaar** of **Markeer als niet factureerbaar**
+- **Archiveren**
+- Verwijderen
 
-## External calendar sync
+## Externe agenda koppelen
 
-Connect Google Calendar or Outlook Calendar to bring your agenda and your hours together. Open the schedule settings from **Instellingen** > **Uren & agenda**, or from the settings gear on the Schedule page, and follow the calendar link. You can also go straight to the connected calendars page. There you can:
+Koppel Google Agenda of Outlook Agenda om je agenda en je uren samen te brengen. Open de agenda-instellingen via **Instellingen** > **Uren & agenda** of via het tandwiel op de pagina Uren & agenda, en volg de agendalink. Je kunt ook direct naar de pagina met gekoppelde agenda's gaan. Daar kun je:
 
-- Connect **Google Calendar** or **Outlook Calendar**
-- Turn syncing on per connection with **Enable sync**
-- Choose the **Sync direction**: **Push to calendar** (your logged hours appear in your calendar), **Pull from calendar** (your events appear on the Schedule page, ready to log), or **Both**
-- Enable a read-only **Calendar Subscription (iCal)** feed to follow your logged hours from any calendar app
+- **Google Agenda** of **Outlook Agenda** koppelen
+- Synchronisatie per koppeling aanzetten met **Synchronisatie inschakelen**
+- De **Synchronisatierichting** kiezen: **Naar agenda** (je gelogde uren verschijnen in je agenda), **Uit agenda** (je afspraken verschijnen op de pagina Uren & agenda, klaar om te loggen) of **Beide**
+- Een alleen-lezen feed **Agenda abonnement (iCal)** aanzetten om je gelogde uren te volgen vanuit elke agenda-app
 
-Events pulled from a connected calendar show up in the day and week views; tap one to turn it into a time entry.
+Afspraken uit een gekoppelde agenda verschijnen in de dag- en weekweergave; tik erop om er een urenregistratie van te maken.
 
-## Settings
+## Instellingen
 
-Schedule settings live under **Instellingen** > **Uren & agenda**. Here you configure:
+De agenda-instellingen vind je onder **Instellingen** > **Uren & agenda** of via het tandwiel op de pagina Uren & agenda. Hier stel je in:
 
-- **Hours only mode**, **Auto-confirm tentative time**, and other entry behavior
-- The work mode: **Hours**, **Shifts**, or **Timer**
-- The working hours shown on the timeline
-- Which quick-add steps appear (project, notes, travel)
-- The default hourly rate (team admins)
-- Travel defaults such as addresses, vehicle, and mileage rate
-- Use your current location as the starting point for a trip when your device allows it
-- A link to connect an external calendar
+- **Alleen uren modus**, **Geplande tijd automatisch bevestigen**, en ander invoergedrag
+- De werkmodus: **Uren**, **Diensten** of **Timer**
+- De werktijden die op de tijdlijn zichtbaar zijn
+- Welke stappen de snelle invoer toont (project, notities, reizen)
+- Het standaard uurtarief (teambeheerders)
+- Reisstandaarden zoals adressen, voertuig en kilometertarief
+- Gebruik je huidige locatie als startpunt voor een rit, als je apparaat dat toestaat
+- Een link om een externe agenda te koppelen
 
 ## Tips
 
-- Log time daily for accurate records; the suggestions make re-logging recurring work a one-tap action
-- Plan your week ahead with tentative entries and confirm them as you go
-- Check uninvoiced time regularly so no billable hours slip through
-- Connect your calendar once and your meetings become loggable entries automatically
+- Schrijf dagelijks je uren voor nauwkeurige administratie; met de suggesties log je terugkerend werk met een tik opnieuw
+- Plan je week vooruit met geplande registraties en bevestig ze gaandeweg
+- Controleer regelmatig je niet-gefactureerde uren, zodat er geen declarabele uren blijven liggen
+- Koppel je agenda een keer en je afspraken worden automatisch logbare registraties

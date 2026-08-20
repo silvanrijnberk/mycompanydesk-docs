@@ -1,5 +1,5 @@
 ---
-title: "Do your own bookkeeping without an accountant"
+title: "Zelf boekhouden zonder boekhouder"
 last_verified: 2026-07-21
 chatbot:
   triggers:
@@ -15,32 +15,32 @@ chatbot:
     - "comptable pas necessaire"
     - "faire sa comptabilite"
   actions:
-    - { label: "Open access settings", to: "/settings/team" }
+    - { label: "Open toegangsinstellingen", to: "/nl/settings/team" }
   follow_up:
     - "How do I invite my accountant?"
     - "What does the Free plan include?"
     - "How do VAT calculations work?"
 ---
 
-# Do your own bookkeeping without an accountant
+# Zelf boekhouden zonder boekhouder
 
-Most freelancers and one-person businesses can handle their own day-to-day bookkeeping in MyCompanyDesk. The app calculates VAT per invoice and expense, scans receipts with AI, and keeps your records in one place. If you later want an accountant to look things over, you can invite them without sharing your password.
+De meeste zzp'ers en eenmanszaken kunnen hun dagelijkse boekhouding prima zelf doen in MyCompanyDesk. De app berekent de btw per factuur en uitgave, scant bonnen met AI en houdt je administratie op één plek. Wil je er later een boekhouder bij betrekken, dan nodig je die gewoon uit zonder je wachtwoord te delen.
 
-## What MyCompanyDesk does for you
+## Wat MyCompanyDesk voor je doet
 
-- **VAT calculation**: the correct VAT amount is calculated for every invoice and expense. See [VAT Management](/features/vat) for details.
-- **Receipt scanning**: take a photo of a receipt and AI extracts the amount, VAT, supplier and date. See [Receipt Scanning](/advanced/receipt-scanning).
-- **Income and expenses overview**: see open invoices, paid amounts, and expenses in one dashboard.
-- **VAT return preparation**: the VAT report groups transactions so you can file your return yourself or hand it to an accountant later.
+- **BTW-berekening**: per factuur en bon wordt het juiste btw-bedrag berekend. Zie [BTW-beheer](/features/vat) voor meer informatie.
+- **Bonnen scannen**: maak een foto van je bon en AI leest het bedrag, de btw, de leverancier en de datum uit. Zie [Bonnen scannen](/advanced/receipt-scanning).
+- **Overzicht inkomsten en uitgaven**: zie openstaande facturen, betaalde bedragen en uitgaven in één dashboard.
+- **BTW-aangifte voorbereiden**: het btw-rapport groepeert je transacties, zodat je de aangifte zelf kunt doen of achteraf aan je boekhouder kunt geven.
 
-## When you can do it yourself
+## Wanneer je het zelf kunt
 
-A simple sole proprietorship or freelance business can usually manage routine bookkeeping on its own. If you only send a few invoices per year, track your expenses, and need a clean VAT overview, you can do this yourself on the Free plan.
+Een eenvoudige eenmanszaak of zzp-onderneming kan het dagelijkse werk meestal prima zelf doen. Als je maar een paar facturen per jaar stuurt, je uitgaven bijhoudt en een net btw-overzicht wilt, doe je dit zelf op het Gratis-abonnement.
 
-## When an accountant still makes sense
+## Wanneer een boekhouder wel zinvol is
 
-Consider an accountant for complex situations such as a private limited company (bv), employees, or a return you are unsure about. You can still give your accountant read-only or full access at any time without sharing your password. See [Accountant access](/faq/accountant-access).
+Overweeg een boekhouder bij ingewikkelde situaties, zoals een bv, personeel in dienst of een aangifte waar je niet zeker van bent. Je kunt je boekhouder altijd nog read-only of volledige toegang geven, zonder je wachtwoord te delen. Zie [Boekhouder toegang geven](/faq/accountant-access).
 
-## Cost
+## Kosten
 
-You can start and stay on the Free plan. New workspaces get a 60-day Pro trial. Paid plans are listed in [Plan & payments](/settings/billing).
+Je kunt starten en blijven op het Gratis-abonnement. Nieuwe werkruimtes krijgen 60 dagen Pro. Betaalde abonnementen staan in [Abonnement & betalingen](/settings/billing).

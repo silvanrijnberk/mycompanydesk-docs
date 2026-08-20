@@ -1,48 +1,42 @@
 ---
-title: "Plans and pricing"
+title: "Abonnementen en prijzen"
 last_verified: 2026-07-22
 chatbot:
   triggers:
-    - "plans"
-    - "pricing"
-    - "subscription"
-    - "upgrade"
-    - "downgrade"
-    - "Office"
-    - "Desk"
     - "abonnementen"
     - "prijzen"
     - "abonnement"
     - "upgraden"
     - "downgraden"
-    - "tarife"
-    - "preise"
-    - "formules"
-    - "prix"
-    - "plan"
-    - "tarif"
+    - "Office"
+    - "Desk"
+    - "plans"
+    - "pricing"
+    - "subscription"
+    - "upgrade"
+    - "downgrade"
   actions:
-    - { label: "Open settings", to: "/settings/billing" }
+    - { label: "Open instellingen", to: "/settings/billing" }
   follow_up:
-    - "How do recurring invoices work?"
-    - "What happens when I downgrade?"
+    - "Hoe werken terugkerende facturen?"
+    - "Wat gebeurt er als ik downgrade?"
 ---
 
-MyCompanyDesk has two plans: **Desk** and **Office**.
+MyCompanyDesk heeft twee abonnementen: **Desk** en **Office**.
 
-**Desk** is free and stays free. It covers the work you do yourself: unlimited invoices, quotes and expenses, projects and time registration, your own website on `.mycompanydesk.site`, receipt scanning with AI, and basic AI chat.
+**Desk** is gratis en blijft gratis. Je krijgt onbeperkt facturen, offertes en uitgaven, projecten en urenregistratie, je eigen website op `.mycompanydesk.site`, bonnetjes scannen met AI en een basale AI-chat.
 
-**Office** is a paid plan. It adds automation and services that cost real money to run: recurring invoices and expenses, contracts, bank connections, a business inbox on your own domain, digital VAT filing, full bookkeeping, API access, and higher AI limits. See the [plans page](https://mycompanydesk.nl/plans) for the current price.
+**Office** is betaald. Daarbij krijg je automatisering en diensten die MCD echt geld kosten: terugkerende facturen en uitgaven, contracten, bankkoppelingen, een zakelijke inbox op je eigen domein, digitale BTW-aangifte, volledige boekhouding, API-toegang en hogere AI-limieten. Zie de [abonnementenpagina](https://mycompanydesk.nl/plans) voor de actuele prijs.
 
-These features are defined in our billing config: [apps/api/src/modules/billing/plans.config.js](https://github.com/silvanrijnberk/RichardTool/blob/development/apps/api/src/modules/billing/plans.config.js).
+Deze functies staan in onze billing-config: [apps/api/src/modules/billing/plans.config.js](https://github.com/silvanrijnberk/RichardTool/blob/development/apps/api/src/modules/billing/plans.config.js).
 
-**Upgrading and downgrading**
-- You can switch between Desk and Office at any time.
-- When you upgrade, the new features are available right away.
-- When you downgrade from Office to Desk, Office-only features stop working: new recurring invoices or expenses are no longer generated, your bank connection stops importing, and your custom-domain inbox no longer sends or receives. Existing templates, already generated invoices or expenses, and other data stay in your workspace.
-- If a free 60-day Office trial ends and you do not subscribe, your workspace moves to Desk automatically.
+**Upgraden en downgraden**
+- Je kunt altijd wisselen tussen Desk en Office.
+- Na een upgrade zijn de nieuwe functies meteen beschikbaar.
+- Als je van Office teruggaat naar Desk, werken Office-only functies niet meer: nieuwe terugkerende facturen of uitgaven worden niet meer aangemaakt, je bankkoppeling importeert niet meer en je inbox op een eigen domein verzendt of ontvangt geen berichten. Bestaande sjablonen, eerder aangemaakte facturen of uitgaven en andere data blijven in je werkruimte staan.
+- Als je gratis proefperiode van 60 dagen Office afloopt zonder abonnement, gaat je werkruimte automatisch naar Desk.
 
-**Billing**
-- All prices are shown excluding 21% VAT. The amount you pay at checkout includes VAT, which you can reclaim as voorbelasting.
-- There is no per-user charge. Desk allows one working user plus free accountant access. Office allows unlimited working users and free accountant access.
-- You can cancel or downgrade whenever you want. If you are not satisfied, you can get your money back within 14 days.
+**Facturatie**
+- Alle prijzen zijn exclusief 21% BTW. Het bedrag dat je betaalt bij checkout is inclusief BTW; je kunt die terugvragen als voorbelasting.
+- Er is geen kosten per gebruiker. Desk biedt plek voor één gebruiker plus gratis boekhouder-toegang. Office biedt onbeperkt gebruikers plus gratis boekhouder-toegang.
+- Je kunt op elk moment opzeggen of downgraden. Niet tevreden? Binnen 14 dagen krijg je je geld terug.

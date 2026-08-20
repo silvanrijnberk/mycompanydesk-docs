@@ -1,5 +1,5 @@
 ---
-title: Edit invoice
+title: "Factuur bewerken"
 last_verified: 2026-07-02
 chatbot:
   triggers: ["edit invoice", "change invoice", "modify invoice", "update invoice", "correct invoice", "fix invoice", "factuur bewerken", "factuur wijzigen", "factuur aanpassen", "hoe bewerk ik een factuur", "rechnung bearbeiten", "wie bearbeite ich eine rechnung", "modifier facture"]
@@ -8,12 +8,12 @@ chatbot:
   follow_up: ["How do I cancel a sent invoice?", "How do I duplicate an invoice?", "How do I change the invoice date?"]
 ---
 
-To edit an invoice:
-1. Open the invoice from the list
-2. Click "Edit"; this is available while the invoice is a draft or finalized but not yet sent
-3. Make your changes to line items, customer, dates, or terms
-4. Save the updated invoice
+Zo bewerk je een factuur:
+1. Open de factuur vanuit de lijst
+2. Klik op "Bewerken"; dit kan zolang de factuur een concept is of wel definitief maar nog niet verstuurd
+3. Pas de factuurregels, klant, datums of voorwaarden aan
+4. Sla de bijgewerkte factuur op
 
-Once an invoice has been sent or emailed, or is paid or overdue, it is locked and can no longer be edited. Cancel it and create a new one, or use "Create credit note / correction" for corrections.
+Is een factuur eenmaal verstuurd of gemaild, of staat die op betaald of te laat, dan is die vergrendeld en kun je die niet meer bewerken. Annuleer de factuur en maak een nieuwe, of gebruik "Creditnota / correctie maken" voor correcties.
 
-Tip: Need to fix a mistake on a sent invoice? A credit note plus a new invoice keeps your numbering and VAT records clean.
+Tip: Fout op een verstuurde factuur? Met een creditnota plus een nieuwe factuur blijven je nummering en BTW-administratie kloppend.

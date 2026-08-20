@@ -7,10 +7,11 @@ chatbot:
     - { label: "Create expense", to: "/expenses/new" }
   follow_up: ["How do I categorize expenses?", "Which expenses are tax deductible?", "How do I upload a receipt?"]
 ---
-To split an expense between categories or projects:
-1. Create separate expense entries for each portion
-2. Assign each entry to the appropriate category or project
-3. Reference the original receipt in all entries
-4. Add a note explaining the split
+Om een uitgave over meerdere categorieën te verdelen:
+1. Open de uitgave in bewerkingsmodus
+2. Gebruik, als het formulier dat ondersteunt, regelitems om het bedrag te splitsen
+3. Wijs verschillende categorieën toe aan elke regel
+4. Controleer of het totaal overeenkomt met het bonbedrag
+5. Sla op
 
-Use matching notes or receipt references so the related entries stay easy to trace in the app.
+Als splitsen in één record niet beschikbaar is, maak dan aparte uitgaven aan met een verwijzing naar dezelfde bon.

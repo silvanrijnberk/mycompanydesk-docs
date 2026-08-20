@@ -1,11 +1,11 @@
 ---
-title: FAQ
+title: Veelgestelde vragen
 last_verified: 2026-05-09
 ---
 
-# FAQ
+# Veelgestelde vragen
 
-Quick answers to common questions about MyCompanyDesk. Each entry mirrors what the in-app chatbot answers.
+Snelle antwoorden op veelvoorkomende vragen over MyCompanyDesk. Elk antwoord matcht wat de chatbot in de app geeft.
 
 - [Accountant access](/faq/accountant-access)
 - [Add customer](/faq/add-customer)
@@ -16,12 +16,12 @@ Quick answers to common questions about MyCompanyDesk. Each entry mirrors what t
 - [Automatic Reminders](/faq/automatic-reminders)
 - [Bank details](/faq/bank-details)
 - [Billing and subscription help](/faq/billing-friction)
-- [Bookkeeping without an accountant](/faq/bookkeeping-without-accountant)
-- [Plans and pricing](/faq/plans)
+- [Zelf boekhouden zonder boekhouder](/faq/bookkeeping-without-accountant)
+- [Abonnementen en prijzen](/faq/plans)
 - [Bulk actions](/faq/bulk-actions)
 - [Bulk Delete](/faq/bulk-delete)
 - [Cancel invoice](/faq/cancel-invoice)
-- [Change all prices at once](/faq/catalog-price-change)
+- [Alle prijzen tegelijk aanpassen](/faq/catalog-price-change)
 - [Change your address](/faq/change-address)
 - [Change currency](/faq/change-currency)
 - [Change Date Format](/faq/change-date-format)
@@ -64,15 +64,15 @@ Quick answers to common questions about MyCompanyDesk. Each entry mirrors what t
 - [Export data](/faq/export-data)
 - [Export to PDF](/faq/export-pdf)
 - [Failed invoice email](/faq/failed-invoice-email)
-- [Find Archived Customers](/faq/find-archived-customers)
-- [Find archived expenses](/faq/find-archived-expenses)
-- [Find archived invoices](/faq/find-archived-invoices)
-- [Find archived quotes](/faq/find-archived-quotes)
+- [Gearchiveerde klanten vinden](/faq/find-archived-customers)
+- [Gearchiveerde uitgaven vinden](/faq/find-archived-expenses)
+- [Gearchiveerde facturen vinden](/faq/find-archived-invoices)
+- [Gearchiveerde offertes vinden](/faq/find-archived-quotes)
 - [Find Customer](/faq/find-customer)
-- [Find deleted customers](/faq/find-deleted-customers)
-- [Find deleted expenses](/faq/find-deleted-expenses)
-- [Find deleted invoices](/faq/find-deleted-invoices)
-- [Find Deleted Quotes](/faq/find-deleted-quotes)
+- [Verwijderde klanten vinden](/faq/find-deleted-customers)
+- [Verwijderde uitgaven vinden](/faq/find-deleted-expenses)
+- [Verwijderde facturen vinden](/faq/find-deleted-invoices)
+- [Verwijderde offertes vinden](/faq/find-deleted-quotes)
 - [Find page](/faq/find-page)
 - [Import data](/faq/import-data)
 - [Invoice due date](/faq/invoice-due-date)

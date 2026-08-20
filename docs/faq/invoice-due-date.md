@@ -1,5 +1,5 @@
 ---
-title: Invoice due date
+title: "Vervaldatum van een factuur"
 last_verified: 2026-07-02
 chatbot:
   triggers: ["set due date", "change due date", "payment terms", "payment deadline", "when invoice due", "net 30", "net 14", "vervaldatum", "betaaltermijn", "zahlungsfrist", "echeance", "date d echeance", "conditions de paiement", "modifier conditions de paiement", "changer conditions de paiement", "comment modifier les conditions de paiement", "comment changer les conditions de paiement"]
@@ -9,15 +9,15 @@ chatbot:
   follow_up: ["How do I set default payment terms?", "How do I send reminders?", "How do I view overdue invoices?"]
 ---
 
-To change the deadline for one invoice:
-1. Open the invoice in edit mode
-2. In the Invoice Details card, update the "Due date" field
-3. Save the invoice
+Zo pas je de vervaldatum van één factuur aan:
+1. Open de factuur in bewerkmodus
+2. Werk in de kaart met factuurdetails het veld "Vervaldatum" bij
+3. Sla de factuur op
 
-If you want future invoices to start with a different deadline, update the customer's payment terms or the default at Settings → "Facturen en offertes" under "Hoeveel dagen krijgt een klant om te betalen?" (how many days does a customer get to pay?).
+Wil je dat toekomstige facturen met een andere termijn starten, pas dan de betaaltermijn van de klant aan of de standaard via Instellingen → "Facturen en offertes" onder "Hoeveel dagen krijgt een klant om te betalen?".
 
-Tip: Automatic payment reminders follow the due date, so a correct deadline also means reminders go out at the right moment.
+Tip: Automatische herinneringen volgen de vervaldatum, dus met een juiste termijn gaan ook de herinneringen op het goede moment de deur uit.
 
-If a customer has no payment terms of their own, the workspace default at **Settings → Facturen en offertes** is used before falling back to the platform default (14 days). That order used to be skipped when selecting a customer, which could produce an earlier due date than intended.
+Als een klant geen eigen betaaltermijn heeft, geldt eerst de werkruimtestandaard via **Instellingen → Facturen en offertes**, pas daarna de platformstandaard (14 dagen). Die volgorde werd eerder overgeslagen bij het kiezen van een klant, waardoor de vervaldatum te vroeg kon uitvallen.
 
-Generated invoices from contracts and recurring invoices also receive a due date. They use the contract's or recurring invoice's own payment-term field when one is set; otherwise they fall back to the platform default, just like manually created invoices.
+Facturen die uit contracten of terugkerende facturen worden gegenereerd, krijgen ook een vervaldatum. Ze gebruiken de eigen betaaltermijn van het contract of de terugkerende factuur als die is ingesteld; anders vallen ze net als handmatige facturen terug op de platformstandaard.

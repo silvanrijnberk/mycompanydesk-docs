@@ -1,235 +1,235 @@
 ---
-title: Workspaces
+title: Werkruimtes
 last_verified: 2026-08-10
 ---
 
-# Workspaces
+# Werkruimtes
 
-The Workspaces page at `/werkruimtes` is one central place for everything you manage. It replaces the older boekhouder desk and adapts to your actual role: one workspace, several of your own businesses, or client administrations.
+De pagina Werkruimtes (`/werkruimtes`) is één centrale plek voor alles wat je beheert. Hij vervangt het oude boekhoudersportaal en past zich aan je daadwerkelijke rol aan: één werkruimte, meerdere eigen bedrijven, of klantadministraties.
 
-> **Your own money and client money are never mixed.** A combined view over your own companies makes sense because the money is yours. A total over client administrations would be meaningless, so the page keeps those strictly separate.
+> **Eigen geld en klantgeld worden nooit door elkaar gehaald.** Eigen bedrijven optellen heeft zin, want het geld is van jou. Een totaal over klantenadministraties zegt niets, dus die houdt de pagina strikt gescheiden.
 
-## Where to find it
+## Waar vind je het
 
-- Open the workspace switcher in the left sidebar and choose **Werkruimtes beheren**.
-- The same switcher lives in the mobile menu header, so you reach the workspaces overview from one place on every screen size.
-- The old `/boekhouder` URL redirects here.
-- The workspace switcher now shows an overview row at the top. Your own businesses and any client administrations are grouped separately, and a search field appears once you hold more than eight workspaces.
-- Each row shows the workspace's own mark: its logo, or a coloured initials tile. Your own businesses carry their colour; client administrations stay neutral. The workspace you are currently in is highlighted.
+- Open de werkruimtekiezer in de zijbalk en kies **Werkruimtes beheren**.
+- Dezelfde kiezer zit ook in de header van het mobiele menu, dus je bereikt het overzicht vanaf elk scherm op dezelfde plek.
+- Het oude `/boekhouder`-adres verwijst hierheen door.
+- De werkruimtekiezer toont nu bovenaan een overzichtsregel. Eigen bedrijven en klantadministraties staan in aparte groepen, en zodra je meer dan acht werkruimtes hebt, verschijnt er een zoekveld.
+- Elke rij toont het eigen merkteken van de werkruimte: het logo, of een gekleurde tegel met initialen. Eigen bedrijven krijgen hun kleur; klantadministraties blijven neutraal. De werkruimte waarin je nu zit, wordt uitgelicht.
 
-Clicking a workspace in the switcher now swaps you in without a full page reload. The app clears the previous workspace's state from Pinia stores and module caches, throws away any in-flight requests that would arrive after the switch, reloads the shell so the navigation rail and permissions update, and then routes you to the target page.
+Als je in de kiezer een werkruimte kiest, wisselt de app nu zonder volledige paginaherladen. Hij vergeet de staat van de vorige werkruimte in Pinia-stores en modulecaches, gooit requests die nog onderweg zijn en die na de wissel zouden aankomen weg, laadt de shell opnieuw zodat de navigatie en rechten bijwerken, en routeert je daarna naar de doelpagina.
 
-## The workspace frame
+## De werkruimte-sectie
 
-The app navigation now groups all workspace pages under **Workspaces**. The overview page stays where it is, and three new pages sit next to it:
+De app-navigatie groepeert nu alle werkruimtepagina's onder **Werkruimtes**. De overzichtspagina blijft staan, en er zijn drie nieuwe pagina's bijgekomen:
 
-- **Agenda** (`/werkruimtes/agenda`) - every deadline across all workspaces, grouped by date.
-- **Work** (`/werkruimtes/werk`) - your own open tasks plus outstanding client requests.
-- **Firm** (`/werkruimtes/kantoor`) - the firm overview for accountants, with dedicated billing and bulk-export pages.
+- **Agenda** (`/werkruimtes/agenda`) - alle deadlines over al je werkruimtes, gegroepeerd op datum.
+- **Werk** (`/werkruimtes/werk`) - je eigen openstaande taken plus openstaande klantverzoeken.
+- **Kantoor** (`/werkruimtes/kantoor`) - het kantooroverzicht voor accountants, met aparte pagina's voor facturatie en bulkexport.
 
-### Ownership indicator
+### Eigendomsindicator
 
-Each workspace row and each item in the new frame pages carries a small ownership indicator. Your own businesses keep their workspace colour; client administrations stay neutral. You will see it in the workspace switcher, in the agenda, and in the work list, so you always know which side of the own/client boundary a row belongs to.
+Elke werkruimterij en elk item in de nieuwe pagina's krijgt een kleine eigendomsindicator. Eigen bedrijven houden hun werkruimtekleur; klantadministraties blijven neutraal. Je ziet hem in de werkruimtewisselaar, in de agenda en in de werklijst, zodat je altijd weet aan welke kant van de eigen/klant-grens een rij hoort.
 
 ### Agenda (`/werkruimtes/agenda`)
 
-The agenda groups every upcoming deadline across all your workspaces by date. It looks 30 days back and 90 days forward, so an overdue deadline from last week is still visible. Overdue deadlines appear first. Each row shows the workspace name, the deadline label, and an ownership indicator. Click a row to switch into that workspace and open the relevant page.
+De agenda groepeert alle aankomende deadlines over al je werkruimtes op datum. Hij kijkt 30 dagen terug en 90 dagen vooruit, zodat een verlopen deadline van vorige week nog zichtbaar is. Verlopen deadlines staan bovenaan. Elke rij toont de werkruimte, het deadline-label en de eigendomsindicator. Klik op een rij om naar die werkruimte te schakelen en de betreffende pagina te openen.
 
-### Work (`/werkruimtes/werk`)
+### Werk (`/werkruimtes/werk`)
 
-The work page lists open work in two blocks: your own businesses first, then client administrations. This keeps the two kinds of work apart, because your own to-dos and things you are waiting for from a client need different actions. Each row shows the workspace, the task label, and a due badge. Clicking a row switches to the workspace and opens the relevant page; for a client request, the request itself opens.
+De werkpagina toont open werk in twee blokken: eerst je eigen bedrijven, dan klantadministraties. Dat houdt de twee soorten werk gescheiden, want je eigen taken en dingen die je van een klant verwacht vragen verschillende acties. Elke rij toont de werkruimte, de taak en een deadline-badge. Klik op een rij om naar de werkruimte te schakelen en de betreffende pagina te openen; bij een klantverzoek opent het verzoek zelf.
 
-### Firm pages (`/werkruimtes/kantoor/*`)
+### Kantoorpagina's (`/werkruimtes/kantoor/*`)
 
-If you run an accounting firm, the Firm section holds three firm-level pages:
+Als je een accountantskantoor hebt, bevat de sectie Kantoor drie kantoorpagina's:
 
-- **Firm overview** (`/werkruimtes/kantoor`) - firm members, pending client invitations, partner share link and referral stats, and whether free Pro has been granted.
-- **Billing** (`/werkruimtes/kantoor/facturatie`) - offer to take over a client administration's subscription. The client must accept before anything is charged, the price per administration is shown before you confirm, and a pending offer is shown separately so you can withdraw it until the client responds.
-- **Export** (`/werkruimtes/kantoor/export`) - export several client administrations at once. Choose the year, period, and export format, select the administrations, and the app downloads one archive per client. Any failed export stays on screen so you can see what did not complete.
+- **Kantooroverzicht** (`/werkruimtes/kantoor`) - kantoormedewerkers, openstaande klantuitnodigingen, partner-deellink en statistieken, en of gratis Pro is toegekend.
+- **Facturatie** (`/werkruimtes/kantoor/facturatie`) - bied aan om een klantadministratie te betalen. De klant moet accepteren voordat er iets in rekening wordt gebracht; de prijs per overgenomen administratie staat vooraf op het scherm. Een openstaand aanbod zie je apart staan, zodat je het kunt intrekken zolang de klant nog niet heeft geantwoord.
+- **Export** (`/werkruimtes/kantoor/export`) - exporteer meerdere klantadministraties tegelijk. Kies jaar, periode en exportformaat, selecteer de administraties en de app downloadt per klant een archief. Eventuele mislukte exports blijven staan zodat je ziet wat niet is voltooid.
 
-## Loading states and errors
+## Laadstatus en fouten
 
-When you open a Workspaces frame page, the app first waits for the shell data (workspace list, token, permissions) to be ready, then fetches the page data. This prevents a cold navigation from showing an empty "nothing to do" state while the request is still in flight.
+Als je een pagina binnen het werkruimte-frame opent, wacht de app eerst tot de schilgegevens (lijst met werkruimtes, token, rechten) klaar staan, en haalt daarna pas de paginagegevens op. Zo voorkomt de app dat een koude navigatie een lege "niks te doen"-staat toont terwijl het verzoek nog onderweg is.
 
-If the data call fails, the page shows an explicit error state with a **Retry** button instead of pretending there is nothing to show. The workspace switcher in the rail is still usable, so you can move to another workspace without waiting for the failing page to recover. On the billing page, the client list and the billing totals load separately: if the totals fail, the client list remains available and the price column is simply empty, rather than showing a false zero.
+Als het ophalen mislukt, toont de pagina een aparte foutstaat met een knop **Opnieuw proberen** in plaats van te doen alsof er niets te tonen is. De werkruimtekiezer in de zijbalk blijft bruikbaar, dus je kunt zonder te wachten naar een andere werkruimte schakelen. Op de facturatiepagina laden de klantenlijst en de facturatiebedragen onafhankelijk: als de bedragen niet beschikbaar zijn, blijft de klantenlijst gewoon zichtbaar en blijft de prijskolom leeg, zodat er geen valse nul verschijnt.
 
-## If you have one workspace
+## Als je één werkruimte hebt
 
-The page shows three entry points instead of an empty screen:
+Je krijgt drie ingangen in plaats van een lege pagina:
 
-- **Add a business** if you run a holding, a second company, or a side business. Each new business gets its own administration with separate VAT, invoices, and bookkeeping.
-- **Invite your accountant** if you work with an external accountant.
-- **Join the partner program** if you are an accountant and want to manage multiple client administrations from one place.
+- **Bedrijf toevoegen** voor een holding, tweede BV of zaak ernaast. Elk bedrijf krijgt een eigen administratie met aparte btw, facturen en boekhouding.
+- **Boekhouder uitnodigen** als je samenwerkt met een externe boekhouder.
+- **Aanmelden als partner** als je zelf boekhouder bent en meerdere klantadministraties vanuit één plek wilt beheren.
 
-## Combined workspace: your own businesses
+## Gecombineerde werkruimte: je eigen bedrijven
 
-If you own more than one business, the page opens with a combined overview:
+Als je meer dan één eigen bedrijf hebt, opent de pagina met een gecombineerd overzicht:
 
-- A single sentence states what your businesses turned over this year, and whether that resulted in a profit or loss.
-- A strip shows combined revenue, profit, outstanding receivables, and VAT set aside.
-- A share bar shows the revenue split across businesses.
-- Below the combined band is one row per business. Rows stay in a fixed order (your home business first, then by creation date) so you always know where to look.
+- Eén zin vertelt wat je bedrijven dit jaar samen omzetten, en of dat een winst of verlies oplevert.
+- Een strip toont gezamenlijke omzet, resultaat, te innen en btw opzij.
+- Een aandeelbalk toont de omzetverdeling per bedrijf.
+- Onder de band staat één rij per bedrijf. De volgorde is vast (thuisbedrijf eerst, dan aanmaakdatum), zodat je altijd weet waar je moet zoeken.
 
-### Signals inside each row
+### Signalen in elke rij
 
-Each business row shows chips for the things that need attention right now. Every chip is a deep link: it switches you into that workspace and lands on the page that matches the signal.
+Elke bedrijfsrij toont chips voor wat er nu aandacht vraagt. Elke chip is een link: die schakelt naar het juiste bedrijf en brengt je op de pagina die bij het signaal hoort.
 
-| Chip | Meaning | Deep link |
+| Chip | Betekenis | Link |
 |---|---|---|
-| VAT period with a deadline | How many days until the VAT return is due, or how many days late it is | `/belastingen/btw` |
-| Overdue invoices | Invoices that have not been paid on time | `/facturen` |
-| Missing receipts | Expense items without a receipt | `/uitgaven` |
-| Drafts | Invoices still in draft | `/facturen` |
-| VAT filed | The previous return was filed | `/belastingen/btw` |
-| Trial ending | The business is still on an Office trial | `/settings/billing` |
-| Deactivated | The business is set to inactive; you can still view and export | `/werkruimtes` |
+| Btw-periode met deadline | Hoeveel dagen tot de aangifte, of hoe laat je bent | `/belastingen/btw` |
+| Openstaande facturen | Facturen die niet op tijd betaald zijn | `/facturen` |
+| Bonnetjes ontbreken | Kostenposten zonder bon | `/uitgaven` |
+| Concepten | Facturen die nog concept zijn | `/facturen` |
+| Btw ingediend | De vorige aangifte is ingediend | `/belastingen/btw` |
+| Proefperiode loopt af | Het bedrijf zit nog in een Office-proefperiode | `/settings/billing` |
+| Op non-actief | Het bedrijf is op non-actief gezet; je kunt nog inzien en exporteren | `/werkruimtes` |
 
-Your own businesses use the same KPIs as the dashboard of each individual workspace, so the numbers cannot disagree.
+Eigen bedrijven gebruiken dezelfde KPI's als het dashboard van elk afzonderlijk bedrijf, dus de cijfers kunnen niet tegenstrijdig zijn.
 
-## Intercompany positions (Onderling)
+## Onderlinge posities
 
-If your own businesses invoice each other, each workspace normally only sees its own half. The Workspaces page now shows the net position between every pair of your own businesses, so the rekening-courant you used to keep on paper is visible in the app.
+Als je eigen bedrijven elkaar factureren, ziet elke werkruimte normaal gesproken alleen de eigen helft. De Werkruimtes-pagina toont nu het nettosaldo tussen elk paar eigen bedrijven, zodat de rekening-courant die je voorheen op papier bijhield, in de app zichtbaar is.
 
-The block appears only when at least two of your own businesses actually have open invoices to each other, so it stays out of the way for everyone else. It sits between the combined overview of your businesses and the client desk, because it is a relationship between your businesses rather than a property of any single one.
+Het blok verschijnt alleen als minstens twee van je eigen bedrijven daadwerkelijk openstaande facturen naar elkaar hebben, dus het blijft uit beeld voor iedereen die het niet nodig heeft. Het staat tussen het gecombineerde overzicht van je bedrijven en het klantendesk, omdat het een relatie tussen je bedrijven beschrijft en geen eigenschap van een enkel bedrijf.
 
-- Links are created automatically when a customer's VAT number matches one of your other workspaces. That match only ever looks at your own businesses, so a customer of someone else is never reached.
-- If the automatic match is wrong, or if no VAT number is available, you can link or unlink a customer by hand from the customer page. A manual link always wins over the automatic one.
-- The position is the net balance across open invoices between the two businesses, net of posted payments. A positive number means one business owes the other.
-- Each pair is phrased as a sentence from the side that is owed, for example "[creditor] has [amount] to receive from [debtor]". If the balance runs the other way, the sentence flips creditor and debtor instead of showing a negative number.
-- The line also shows how many open invoices make up the balance.
-- When more than one pair has a balance, the card shows a combined total of all open intercompany positions at the top.
+- Koppelingen worden automatisch gemaakt als het btw-nummer van een klant overeenkomt met een van je andere werkruimtes. Die match kijkt alleen naar je eigen bedrijven, dus een klant van iemand anders wordt nooit bereikt.
+- Als de automatische koppeling niet klopt, of als er geen btw-nummer beschikbaar is, kun je een klant handmatig koppelen of ontkoppelen vanaf de klantenpagina. Een handmatige koppeling wint altijd van de automatische.
+- De positie is het nettobedrag over openstaande facturen tussen de twee bedrijven, verminderd met geboekte betalingen. Een positief bedrag betekent dat het ene bedrijf het andere nog moet betalen.
+- Elk paar wordt als zin weergegeven vanuit de kant die nog tegoed heeft, bijvoorbeeld "[crediteur] heeft [bedrag] te ontvangen van [debiteur]". Als de balans de andere kant op loopt, draait de zin crediteur en debiteur om in plaats van het bedrag negatief te tonen.
+- De regel toont ook uit hoeveel openstaande facturen het bedrag bestaat.
+- Als er meer dan een paar een saldo heeft, toont de kaart bovenaan een totaal van alle openstaande onderlinge posities.
 
-## Kantoor workspace: client administrations
+## Kantoor-werkruimte: klanten
 
-If you are an accountant managing client administrations, the page becomes a triage desk:
+Als je boekhouder bent en klantadministraties beheert, wordt de pagina een triage-overzicht:
 
-- A headline tells you how many of your clients need attention today.
-- A figures strip shows total clients, deadlines this week, clients that need attention, and open invitations.
-- Rows are sorted by urgency so the administrations that need action today appear first.
-- A search field is always visible, so you can filter client administrations without waiting for a threshold.
-- Open client invitations are shown in their own card; an invited contact is not counted as an active client.
+- Een headline vertelt hoeveel van je klanten vandaag iets nodig hebben.
+- Een cijferstrip toont het totaal aantal klanten, deadlines deze week, klanten die aandacht vragen, en open uitnodigingen.
+- Rijen staan op urgentie gesorteerd, zodat administraties die vandaag actie nodig hebben bovenaan staan.
+- Een zoekveld is altijd zichtbaar, zodat je klantadministraties direct kunt filteren.
+- Open uitnodigingen staan in een eigen kaart; een uitgenodigde klant telt nog niet als actieve klant.
 
-The row chips and deep links work the same as in the combined workspace, but rows use aggregated signal queries so the desk scales to large client lists. The page does not add up client money.
+De chips en werken hetzelfde als in de gecombineerde werkruimte, maar rijen gebruiken geaggregeerde signalen zodat het overzicht meegroeit met grote klantenbestanden. Het overzicht telt klantgeld niet bij elkaar op.
 
-### Accountant firm members
+### Medewerkers van het kantoor
 
-If you work in an accounting firm, the firm has its own member list. Admins can invite colleagues from **Manage firm members**; each member gets a role (member or admin). Adding someone to the firm does not automatically give them access to any client; you still grant access per client from the Workspaces page. The client row shows how many clients each colleague has been assigned to, so you can see who is working on what.
+Werk je in een boekhouderskantoor, dan heeft het kantoor een eigen ledenlijst. Beheerders kunnen collega's uitnodigen via **Kantoorleden beheren**; iedereen krijgt een rol (lid of beheerder). Iemand toevoegen aan het kantoor geeft hem of haar nog geen toegang tot een klant; dat geef je per klant vanaf de Werkruimtes-pagina. In de rij van elk medewerker zie je bij hoeveel klanten diegene is gekoppeld, zodat je weet wie waar mee bezig is.
 
-### Client work and requests
+### Werk aan een klant en verzoeken
 
-Each client row shows a work chip when something is waiting. Open it to see who is handling the client right now and what you have asked the client for.
+Elke klantrij toont een werk-chip zodra er iets wacht. Open deze om te zien wie de klant nu oppakt en wat je aan de klant hebt gevraagd.
 
-- **Take it** assigns the client to you. **Release it** hands the work back so a colleague can pick it up. The status updates live for everyone in the firm, so two people do not start the same tax return unknowingly.
-- **Ask the client** creates a task in the client's own workspace. Choose a request type (for example missing receipts), add a title and a note, and the client sees it as a normal to-do. As soon as the client completes the task, the request is resolved and the work chip disappears. There is no manual "waiting" state to reset; it is simply the presence of an open request.
+- **Ik pak dit op** wijst de klant aan jou toe. **Toch niet, geef terug** geeft het werk weer vrij, zodat een collega het kan oppakken. De status wordt live bijgewerkt voor iedereen in het kantoor, zodat twee mensen niet onwetend dezelfde aangifte starten.
+- **Vraag de klant** maakt een taak aan in de eigen werkruimte van de klant. Kies een soort verzoek (bijvoorbeeld ontbrekende bonnen), voeg een titel en een notitie toe, en de klant ziet het als een gewoon to-do. Zodra de klant de taak afvinkt, is het verzoek opgelost en verdwijnt de werk-chip. Er is geen handmatige status 'wacht op klant' die je moet terugzetten; die volgt gewoon uit een open verzoek.
 
-## Adding your own business
+## Een eigen bedrijf toevoegen
 
-Open **Bedrijf toevoegen** and give the new business a name.
+Open **Bedrijf toevoegen** en geef het nieuwe bedrijf een naam.
 
-If you are on a paid plan (Starter or Pro), the app shows the extra cost before you confirm. During your own Pro trial you pay nothing for the extra business; after the trial it is added to your subscription at the price shown in the confirmation.
+Als je een betaald abonnement hebt (Starter of Pro), toont de app de extra kosten voordat je bevestigt. Tijdens je eigen Office-proefperiode betaal je niets voor het extra bedrijf; daarna wordt het tegen het getoonde tarief op je abonnement gezet.
 
-If you are on a free Office workspace (for example a comped or founding-member arrangement), your first business stays free and the app now offers a separate checkout for a second business. The price is shown before you start the checkout, and only the second business is billed on its own add-on subscription. After the payment is confirmed, you can name and create the second business.
+Als je een gratis Office-werkruimte hebt (bijvoorbeeld via een gunst of founding-member-regeling), blijft je eerste bedrijf gratis en biedt de app nu een aparte checkout voor een tweede bedrijf. De prijs staat vooraf vermeld; alleen het tweede bedrijf wordt op een eigen add-on-abonnement gezet. Nadat de betaling is bevestigd, kun je het tweede bedrijf een naam geven.
 
-## Copy settings from another business
+## Instellingen overnemen van een ander bedrijf
 
-When you add a business, or later from the **Manage** drawer of an existing one, you can copy the setup from another business you already have. This saves you from re-entering your branding, invoice layout and defaults.
+Wanneer je een bedrijf toevoegt, of later via het zijpaneel **Beheren** van een bestaand bedrijf, kun je de inrichting overnemen van een ander bedrijf dat je al hebt. Dat scheelt het opnieuw invoeren van je huisstijl, factuurlayout en standaarden.
 
-Turn on **Copy settings from a business you already have** and pick the source. If you only have one other business, the choice is shown as a switch with its name. The following groups can be copied:
+Zet **Instellingen overnemen van een bedrijf dat je al hebt** aan en kies de bron. Heb je maar één ander bedrijf, dan wordt de keuze getoond als een schakelaar met de naam. Deze groepen kun je overnemen:
 
-- **Branding** (logo, colours and fonts).
-- **Invoices and quotes** (layout, payment term, reminders and your own email texts).
-- **VAT** (return period and default rate).
-- **Expenses and receipts** (default category, mileage allowance and your own categories).
-- **Features** (which features are turned on, plus your time-registration setup).
-- **Address and contact** (address, phone, email and website).
+- **Huisstijl** (logo, kleuren en lettertypes).
+- **Facturen en offertes** (layout, betaaltermijn, herinneringen en je eigen e-mailteksten).
+- **Btw** (aangifteperiode en standaardtarief).
+- **Uitgaven en bonnen** (standaardcategorie, kilometervergoeding en je eigen categorieën).
+- **Onderdelen** (welke onderdelen aan staan, plus de opzet van je urenregistratie).
+- **Adres en contact** (adres, telefoon, e-mail en website).
 
-Your chamber of commerce number, VAT number, bank account and invoice numbering are never copied: those belong to one business only.
+KVK-nummer, btw-nummer, bankrekening en factuurnummering gaan nooit mee: dat hoort bij één bedrijf.
 
-## Manage or remove a business
+## Een bedrijf beheren of verwijderen
 
-For each of your own businesses, open the row menu and choose **Manage**. A drawer opens with two options.
+Open voor elk eigen bedrijf het rijmenu en kies **Beheren**. Er opent een zijpaneel met twee opties.
 
-### Set a business to inactive
+### Op non-actief zetten
 
-Choose **Set inactive** when you stop working in a business but still need to keep its records. The administration stays readable and you can still export everything, because you are required to keep the books for the statutory retention period. You cannot add new invoices, expenses or customers, and the business no longer counts toward your subscription.
+Kies **Op non-actief zetten** als je stopt met werken in een bedrijf maar de administratie moet bewaren. De administratie blijft leesbaar en je kunt alles blijven exporteren, omdat je de boeken voor de wettelijke bewaartermijn moet bewaren. Je kunt geen nieuwe facturen, uitgaven of klanten toevoegen, en het bedrijf telt niet meer mee voor je abonnement.
 
-The drawer states how much less you will pay per month or year before you confirm.
+Het zijpaneel vermeldt vooraf hoeveel je per maand of per jaar minder gaat betalen.
 
-To resume, open the same drawer and choose **Reactivate**.
+Om verder te gaan, open je hetzelfde zijpaneel en kies je **Weer activeren**.
 
-### Delete a business
+### Een bedrijf verwijderen
 
-Choose **Delete** only for a business you created by mistake. The workspace checks whether anything has been booked; as soon as an invoice, expense or customer exists, deletion is refused and you must set the business to inactive instead. This guard is server-side, so the refusal wording always matches the actual data.
+Kies **Verwijderen** alleen voor een bedrijf dat je per ongeluk hebt aangemaakt. De werkruimte controleert of er al iets is geboekt; zodra er een factuur, uitgave of klant bestaat, wordt verwijderen geweigerd en moet je het bedrijf op non-actief zetten. Deze controle gebeurt aan de serverkant, zodat de melding altijd klopt met de werkelijke data.
 
-## Inviting a client
+## Een klant uitnodigen
 
-Accountants can invite a client directly from the page:
+Boekhouders kunnen hier direct een klant uitnodigen:
 
-1. Click **Klant uitnodigen**.
-2. Fill in the client's email address, company name, and optional chamber of commerce number.
-3. Click **Uitnodiging versturen**.
+1. Klik op **Klant uitnodigen**.
+2. Vul het e-mailadres, de bedrijfsnaam en optioneel het KVK-nummer in.
+3. Klik op **Uitnodiging versturen**.
 
-The client creates their own account and remains the owner of their administration. You get access as soon as the invitation is accepted, and the client can revoke it at any time. Pending invitations can be resented or revoked. The invite link is valid for 30 days.
+De klant maakt zelf een account en blijft eigenaar van de administratie. Jij krijgt toegang zodra de uitnodiging is geaccepteerd, en de klant kan die toegang op elk moment weer intrekken. Openstaande uitnodigingen kun je opnieuw sturen of intrekken. De link is 30 dagen geldig.
 
-## Navigation follows your role
+## Navigatie volgt je rol
 
-The left rail now hides items your current workspace role is not allowed to use, so you no longer see links that would return a 403. The API drives this from a deny list: if a new endpoint is restricted for a role, its navigation item hides automatically.
+De linker zijbalk verbergt nu items die je huidige werkruimterol niet mag gebruiken, zodat je geen links meer ziet die een 403 geven. De API stuurt dit aan via een deny-lijst: als een nieuw endpoint voor een rol wordt afgeschermd, verdwijnt het navigatie-item automatisch.
 
-In a client workspace the rail is shorter because parts that belong to the client (inbox, website, subscription, team settings, domains, and AI assistants) are denied to an accountant. The workspace switcher and the Workspaces item remain visible so you can always move between administrations.
+In een klantwerkruimte is de rail korter, want onderdelen die bij de klant zelf horen (inbox, website, abonnement, teaminstellingen, domeinen en AI-hulp) zijn voor een boekhouder niet beschikbaar. De werkruimtekiezer en het item Werkruimtes blijven altijd zichtbaar, zodat je altijd tussen administraties kunt schakelen.
 
-## Permissions
+## Rechten
 
-- Workspace owners and team admins can add businesses and manage workspace settings.
-- Accountants see only the workspaces and pages their client granted.
-- Team members see the Workspaces entry when they hold more than one workspace and their role allows it.
+- Workspace-eigenaren en team-admins kunnen bedrijven toevoegen en werkruimte-instellingen beheren.
+- Boekhouders zien alleen de werkruimtes en pagina's die hun klant toegankelijk heeft gemaakt.
+- Teamleden zien Werkruimtes alleen als ze meer dan één werkruimte hebben en hun rol dat toestaat.
 
-## Insights for accountants (Inzicht)
+## Inzicht voor accountants
 
-The Insights page, `/werkruimtes/inzicht`, compares client administrations and shows workload per period. It is only visible in the office workspace and only when you manage more than one client administration.
+De pagina Inzicht, `/werkruimtes/inzicht`, zet klantadministraties naast elkaar en toont de werkdruk per periode. Hij is alleen zichtbaar in de kantoor-werkruimte en alleen als je meer dan één klantadministratie beheert.
 
-The page is deliberately about counts and dates, not amounts:
+De pagina bewust over aantallen en dagen, niet over bedragen:
 
-- It does not add up client money, because client money is not yours.
-- It does not show a total "portfolio value" or revenue across clients.
+- Klantgeld wordt niet opgeteld, want het is niet van jou.
+- Er komt geen totaal "portefeuillewaarde" of omzet over klanten te staan.
 
-### Client comparison
+### Klanten vergeleken
 
-The first table lists your clients side by side:
+De eerste tabel zet je klanten naast elkaar:
 
-| Column | Meaning |
+| Kolom | Betekenis |
 |---|---|
-| Client | The client administration name. |
-| VAT | Whether the current VAT period is filed, how many days until it is due, or how many days late it is. |
-| Closed by you | How many of the client's recent filing periods were closed in this office. |
-| To collect | Number of overdue invoices. |
-| Receipts | Number of missing receipts. |
-| Paid | Number of paid invoices in the selected year. |
-| Payment term | Average days late on paid invoices, if any. |
+| Klant | De naam van de klantadministratie. |
+| Btw | Of de huidige btw-periode is afgesloten, hoeveel dagen tot de deadline, of hoeveel dagen te laat. |
+| Door jou afgesloten | Hoeveel van de laatste aangifteperioden van de klant jij in dit kantoor hebt afgesloten. |
+| Te innen | Aantal openstaande facturen. |
+| Bonnen | Aantal ontbrekende bonnen. |
+| Betaald | Aantal betaalde facturen in het geselecteerde jaar. |
+| Betaaltermijn | Gemiddeld aantal dagen te laat op betaalde facturen, als er tenminste zijn. |
 
-Rows are sorted by urgency: clients that need action today appear first. The VAT badge uses the same severity logic as the workspace dashboard.
+Rijen staan op urgentie: klanten die vandaag actie nodig hebben staan bovenaan. Het btw-badge gebruikt dezelfde urgentielogica als het dashboard van een werkruimte.
 
-### Workload per period
+### Werkdruk per periode
 
-The second table shows workload across all your clients, split by period:
+De tweede tabel toont de werkdruk over al je klanten, opgesplitst per periode:
 
-| Column | Meaning |
+| Kolom | Betekenis |
 |---|---|
-| Period | The VAT period or "Other tasks" for work that is not tied to a period. |
-| Closed | Administrations whose period is filed. |
-| Busy | Administrations with active work in progress. |
-| Open | Administrations with an open period that has not been touched yet. |
-| Nothing yet | Administrations with no registered activity for the period. |
+| Periode | De btw-periode of "Losse taken" voor werk dat niet aan een periode vastzit. |
+| Afgesloten | Administraties waarvan de periode is afgesloten. |
+| Bezig | Administraties met actief werk in uitvoering. |
+| Open | Administraties met een open periode die nog niet is aangeraakt. |
+| Nog niets | Administraties zonder geregistreerde activiteit voor die periode. |
 
-Use this table to spot a pile-up before it becomes a deadline problem. Periods are year-agnostic; the comparison table above filters by year.
+Gebruik deze tabel om een opstapeling te zien voordat hij een deadlineprobleem wordt. De periodes zijn jaarloos; de vergelijkingstabel erboven filtert wel op jaar.
 
-### What is NOT on this page
+### Wat er bewust NIET op staat
 
-**"Percentage of VAT returns on time"** was in the original plan but is not shown. In MyCompanyDesk, "filed" means a period was closed in `period_locks`. A client who files elsewhere will never have that row, so a historical percentage would systematically mark them late. That would be an accusation based on missing data, not an accuracy issue. A quality metric like this first needs an explicit signal per administration that filing happens here.
+**"Percentage aangiftes op tijd"** stond in het oorspronkelijke plan maar staat er niet. In MyCompanyDesk betekent "ingediend" dat een periode wordt afgesloten in `period_locks`. Een klant die ergens anders aangifte doet, krijgt die rij nooit. Een historisch percentage zou zo'n klant stelselmatig te laat noemen. Dat is een beschuldiging op basis van ontbrekende data, geen onnauwkeurigheid. Een kwaliteitscijfer als dit heeft eerst een expliciet signaal per administratie nodig dat de aangifte hier gebeurt.
 
-Instead, the comparison table now includes a **Closed by you** column. It shows how many of the client's recent periods were closed in this office, using the same `period_locks` data. A client who files elsewhere simply shows 0, because nothing was closed here. The column is intentionally neutral and is never red, because it describes your own work, not the client's behavior.
+In plaats daarvan bevat de vergelijkingstabel nu een kolom **Door jou afgesloten**. Die toont hoeveel van de laatste perioden van de klant hier zijn afgesloten, op basis van dezelfde `period_locks`-data. Een klant die ergens anders aangifte doet, komt op 0 uit, want hier is niets afgesloten. De kolom is bewust neutraal en wordt nooit rood, omdat hij over jouw eigen administratie gaat, niet over het gedrag van de klant.
 
-## Related
+## Gerelateerd
 
-- [Team access and your accountant](/settings/team) for inviting teammates and accountants and setting page permissions
-- [Reports](/features/reports) for the lapsed-customers view and other report pages
-- [Dashboard](/features/dashboard) for the day-to-day briefing of one workspace
+- [Toegang en boekhouder](/settings/team) voor het uitnodigen van teamgenoten en boekhouders en het instellen van paginarechten
+- [Rapporten](/features/reports) voor de weggebleven-klantenweergave en andere rapporten
+- [Dashboard](/features/dashboard) voor de dagelijkse briefing van één werkruimte

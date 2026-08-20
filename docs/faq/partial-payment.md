@@ -8,11 +8,11 @@ chatbot:
   follow_up: ["How do I mark an invoice as fully paid?", "How do I send a reminder for the remaining balance?", "How do I view all partially paid invoices?"]
 ---
 
-To record a partial payment on an invoice:
-1. Open the invoice from the list
-2. Click "Record Payment" or the payment action
-3. Enter the amount received (less than the total)
-4. Save - the invoice status changes to Partially Paid
-5. Repeat when additional payments arrive
+Om een gedeeltelijke betaling op een factuur vast te leggen:
+1. Open de factuur vanuit de lijst
+2. Klik op "Betaling vastleggen" of de betalingsactie
+3. Voer het ontvangen bedrag in (minder dan het totaal)
+4. Sla op - de factuurstatus verandert naar Gedeeltelijk betaald
+5. Herhaal wanneer er aanvullende betalingen binnenkomen
 
-Tip: The remaining balance is tracked automatically and appears on the invoice detail page. Partially paid invoices also get their own reminder suggestion that asks for the remaining balance. In the customer portal, partially paid invoices show the amount already paid and the remaining balance before the customer completes payment.
+Tip: Het resterende saldo wordt automatisch bijgehouden en verschijnt op de factuurdetailpagina. Gedeeltelijk betaalde facturen krijgen ook hun eigen herinneringsadvies voor het openstaande bedrag. In het klantportaal zien klanten bij gedeeltelijk betaalde facturen ook het al ontvangen bedrag en het openstaande restant voordat ze afrekenen.

@@ -1,88 +1,88 @@
 ---
-title: "Data Import & Export"
+title: "Gegevens importeren & exporteren"
 last_verified: 2026-07-02
 ---
 
-# Data Import & Export
+# Gegevens importeren & exporteren
 
-Import existing data into MyCompanyDesk and export your records for backup or use in other tools.
+Importeer bestaande gegevens in MyCompanyDesk en exporteer je administratie als back-up of voor gebruik in andere tools.
 
-## Import
+## Importeren
 
-### CSV import
+### CSV-import
 
-Import data from CSV files for:
+Importeer gegevens uit CSV-bestanden voor:
 
-- **Customers** with name, email, phone, address, VAT number
-- **Invoices** with invoice details
-- **Expenses** with categories and amounts
+- **Klanten** met naam, e-mail, telefoon, adres, BTW-nummer
+- **Facturen** met factuurgegevens
+- **Uitgaven** met categorieën en bedragen
 
-Other record types (such as projects or objects) cannot be imported from CSV; you create those in the app itself.
+Andere soorten gegevens (zoals projecten of objecten) kun je niet uit CSV importeren; die maak je in de app zelf aan.
 
-### How to import
+### Zo importeer je
 
-The import wizard lives on its own page in the app: open `/profile/import` directly, useful when you are moving over from another tool right after signing up.
+De importwizard heeft een eigen pagina in de app: open `/profile/import` rechtstreeks, handig als je net na het aanmelden overstapt vanuit een andere tool.
 
-1. Select the **data type** you want to import (customers, invoices, or expenses)
-2. Upload your **CSV file**
-3. **Map columns** by matching your CSV column headers to MyCompanyDesk fields
-4. **Import** to create the records; the result shows how many rows were imported and how many failed
+1. Kies het **gegevenstype** dat je wilt importeren (klanten, facturen of uitgaven)
+2. Upload je **CSV-bestand**
+3. **Koppel kolommen** door je CSV-kolomkoppen aan MyCompanyDesk-velden te koppelen
+4. **Importeer** om de records aan te maken; het resultaat toont hoeveel rijen zijn geïmporteerd en hoeveel er zijn mislukt
 
-### Import tips
+### Importtips
 
-- Use UTF-8 encoding for your CSV files
-- Include a header row with column names
-- Date formats should be consistent (YYYY-MM-DD recommended)
-- Amount fields should use dot (.) as decimal separator
-- Empty fields are skipped (existing defaults are used)
+- Gebruik UTF-8-codering voor je CSV-bestanden
+- Neem een koprij met kolomnamen op
+- Houd datumnotaties consistent (JJJJ-MM-DD aanbevolen)
+- Gebruik een punt (.) als decimaalteken in bedragvelden
+- Lege velden worden overgeslagen (bestaande standaardwaarden worden gebruikt)
 
-### Column mapping
+### Kolommen koppelen
 
-The import wizard shows your CSV columns and lets you map each to the corresponding MyCompanyDesk field. Common mappings:
+De importwizard toont je CSV-kolommen en laat je elke kolom aan het bijbehorende MyCompanyDesk-veld koppelen. Veelvoorkomende koppelingen:
 
-| CSV column | Maps to |
+| CSV-kolom | Wordt |
 |---|---|
-| Company Name / Name | Customer name |
-| Email | Customer email |
-| Street / Address | Street address |
-| ZIP / Postal Code | Postal code |
-| City | City |
-| VAT / BTW | VAT number |
-| Phone | Phone number |
+| Bedrijfsnaam / Naam | Klantnaam |
+| E-mail | E-mail van de klant |
+| Straat / Adres | Straatadres |
+| Postcode | Postcode |
+| Plaats | Plaats |
+| VAT / BTW | BTW-nummer |
+| Telefoon | Telefoonnummer |
 
-## Export
+## Exporteren
 
-Exports live in one place: open **Instellingen** (Settings) and pick **Gegevens downloaden** (download your data).
+Exports vind je op één plek: open **Instellingen** en kies **Gegevens downloaden**.
 
-### CSV export
+### CSV-export
 
-Download your records per type:
+Download je gegevens per soort:
 
-- **Invoices** as CSV, with amounts, dates, and statuses
-- **Customers** as CSV, your full customer list
-- **Expenses** as CSV, with categories and amounts
+- **Facturen** als CSV, met bedragen, datums en statussen
+- **Klanten** als CSV, je volledige klantenlijst
+- **Uitgaven** als CSV, met categorieën en bedragen
 
 ::: info
-CSV exports are available from the **Starter** plan. The complete JSON backup is available on every plan, including Free.
+CSV-exports zijn beschikbaar vanaf het **Starter**-abonnement. De volledige back-up (JSON) kun je altijd downloaden, op elk abonnement, inclusief Gratis.
 :::
 
-### Complete backup
+### Volledige back-up
 
-The same page offers a **complete backup**: all your data in one JSON file. Use it as a periodic backup or as a full snapshot of your records, for example for a GDPR data request.
+Dezelfde pagina biedt een **volledige back-up**: al je gegevens in één JSON-bestand. Gebruik hem als periodieke back-up of als compleet overzicht van je administratie, bijvoorbeeld voor een AVG-inzageverzoek.
 
-Exports contain only the data you have access to. PDF versions of invoices are downloaded separately, from each invoice's own page.
+Exports bevatten alleen gegevens waar jij toegang toe hebt. PDF-versies van facturen download je apart, op de pagina van elke factuur.
 
-## Location data
+## Locatiegegevens
 
-Some mobile flows can use your GPS location when you explicitly choose to:
+Sommige mobiele stromingen kunnen je GPS-locatie gebruiken als je daar zelf voor kiest:
 
-- Find **customers nearby** from the customer list.
-- Use **current location** when completing an address field.
+- **Klanten in de buurt** zoeken vanuit de klantenlijst.
+- **Huidige locatie** gebruiken bij het invullen van een adresveld.
 
-We only read your location in those two cases and only inside the app. We turn it into an address or a filtered customer list, and we do not store the raw coordinates. You can refuse or revoke the permission at any time in your device settings.
+We lezen je locatie alleen in die twee gevallen en alleen in de app. We zetten die om naar een adres of een gefilterde klantenlijst, en we slaan de ruwe coördinaten niet op. Je kunt de toestemming altijd weigeren of intrekken in de instellingen van je apparaat.
 
 ## Tips
 
-- Export your data regularly as a backup
-- Rather than emailing files to your accountant, give them direct access via **Settings > Toegang en boekhouder**; they always see your latest figures
-- When switching from another tool, use the import wizard to migrate your customer list
+- Exporteer je gegevens regelmatig als back-up
+- Mail geen bestanden naar je boekhouder, maar geef diegene direct toegang via **Instellingen > Toegang en boekhouder**; dan kijkt je boekhouder altijd naar de nieuwste cijfers
+- Stap je over van een andere tool, gebruik dan de importwizard om je klantenlijst mee te nemen

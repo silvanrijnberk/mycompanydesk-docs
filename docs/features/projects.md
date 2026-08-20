@@ -1,88 +1,88 @@
 ---
-title: Projects
+title: Projecten
 ---
 
-# Projects
+# Projecten
 
-Organize your work into projects to track time, revenue, and profitability per engagement.
+Organiseer je werk in projecten om tijd, omzet en winstgevendheid per opdracht bij te houden.
 
-## Overview
+## Overzicht
 
-Projects help you group invoices, expenses, and time entries together. This gives you a clear picture of how profitable each project or client engagement is.
+Projecten helpen je facturen, uitgaven en tijdregistraties te groeperen. Dit geeft je een duidelijk beeld van hoe winstgevend elk project of elke klantopdracht is.
 
-## Creating a project
+## Een project aanmaken
 
-1. Go to **Projects > New Project**
-2. Fill in:
-   - **Name** — A clear project name
-   - **Customer** — The client this project is for
-   - **Description** — What the project involves
-   - **Budget** — Optional budget amount
-   - **Status** — Active, On Hold, or Completed
-3. Click **Save**
+1. Ga naar **Projecten > Nieuw project**
+2. Vul in:
+   - **Naam** — Een duidelijke projectnaam
+   - **Klant** — De klant waarvoor dit project is
+   - **Omschrijving** — Waar het project over gaat
+   - **Budget** — Optioneel budgetbedrag
+   - **Status** — Actief, In de wacht of Voltooid
+3. Klik op **Opslaan**
 
-## Project statuses
+## Projectstatussen
 
-| Status | Description |
+| Status | Beschrijving |
 |---|---|
-| **Active** | Currently being worked on |
-| **On Hold** | Temporarily paused |
-| **Completed** | Finished — no more work expected |
-| **Archived** | Stored for reference |
+| **Actief** | Er wordt momenteel aan gewerkt |
+| **In de wacht** | Tijdelijk gepauzeerd |
+| **Voltooid** | Afgerond — er wordt geen werk meer verwacht |
+| **Gearchiveerd** | Opgeslagen ter referentie |
 
-## Project detail page
+## Projectdetailpagina
 
-The project detail page shows:
+De projectdetailpagina toont:
 
-- **Overview** — Name, customer, status, budget
-- **Linked invoices** — All invoices related to this project
-- **Linked expenses** — Costs attributed to this project
-- **Time entries** — Hours logged against this project
-- **Profitability** — Revenue vs. costs breakdown
+- **Overzicht** — Naam, klant, status, budget
+- **Gekoppelde facturen** — Alle facturen gerelateerd aan dit project
+- **Gekoppelde uitgaven** — Kosten toegeschreven aan dit project
+- **Tijdregistraties** — Uren gelogd voor dit project
+- **Winstgevendheid** — Omzet versus kosten specificatie
 
-## Linking items to projects
+## Items koppelen aan projecten
 
-When creating invoices, expenses, or time entries, select the project from the dropdown to link them. This automatically updates the project's financials.
+Bij het aanmaken van facturen, uitgaven of tijdregistraties selecteer je het project uit de dropdown om ze te koppelen. Dit werkt automatisch de financien van het project bij.
 
-- **Invoices** — Track revenue per project
-- **Expenses** — Track costs per project
-- **Time entries** — Track hours per project
+- **Facturen** — Houd omzet per project bij
+- **Uitgaven** — Houd kosten per project bij
+- **Tijdregistraties** — Houd uren per project bij
 
-## Linking to a contract
+## Koppelen aan een contract
 
-When you create or edit a project, you can link it to a contract in the **Contract** field. Hours you log on the project are included on that contract's invoice.
+Bij het aanmaken of bewerken van een project kun je het koppelen aan een contract in het veld **Contract**. Geboekte uren op het project komen dan op de factuur van dat contract.
 
-This is useful when the contract sets the rate (hourly, daily or fixed project price) and the project supplies the work. Invoices for the contract pick up the logged hours automatically.
+Dit is handig wanneer het contract het tarief bepaalt (uur-, dag- of vaste projectprijs) en het project het werk levert. Facturen voor het contract halen de geboekte uren automatisch op.
 
-If a contract has no rate set, hours linked to it stay uninvoiced and you get a notification telling you they could not be priced.
+Als voor een contract geen tarief is ingesteld, blijven gekoppelde uren ongefactureerd en krijg je een melding dat ze niet konden worden geprijsd.
 
-## Budget tracking
+## Budgetopvolging
 
-If you set a budget:
+Als je een budget instelt:
 
-- See how much of the budget has been used
-- Track remaining budget
-- Compare actual costs against budget
-- Get warnings when approaching budget limits
+- Zie hoeveel van het budget is verbruikt
+- Houd het resterende budget bij
+- Vergelijk werkelijke kosten met het budget
+- Ontvang waarschuwingen wanneer je het budgetlimiet nadert
 
-## Bulk actions
+## Bulkacties
 
-- **Change status** — Update multiple projects at once
-- **Archive** — Move completed projects to archive
-- **Restore** — Bring back archived projects
+- **Status wijzigen** — Werk meerdere projecten tegelijk bij
+- **Archiveren** — Verplaats voltooide projecten naar het archief
+- **Herstellen** — Haal gearchiveerde projecten terug
 
-## Reports
+## Rapportages
 
-View project performance in the [client reports](/features/reports) to see:
+Bekijk projectprestaties in de [klantrapportages](/features/reports) om te zien:
 
-- Revenue per project
-- Time spent per project
-- Profit margins
-- Comparison across projects
+- Omzet per project
+- Bestede tijd per project
+- Winstmarges
+- Vergelijking tussen projecten
 
 ## Tips
 
-- Use projects even for small engagements — the insights are valuable
-- Link both invoices and expenses to get accurate profit margins
-- Archive completed projects to keep your active list clean
-- Check the project-based dashboard profile for a project-focused view
+- Gebruik projecten ook voor kleine opdrachten — de inzichten zijn waardevol
+- Koppel zowel facturen als uitgaven voor nauwkeurige winstmarges
+- Archiveer voltooide projecten om je actieve lijst overzichtelijk te houden
+- Bekijk het projectgerichte dashboardprofiel voor een projectfocusweergave

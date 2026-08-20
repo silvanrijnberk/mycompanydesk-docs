@@ -1,5 +1,5 @@
 ---
-title: "Add logo"
+title: "Logo toevoegen"
 last_verified: 2026-07-02
 chatbot:
   triggers: ["add logo", "upload logo", "change logo", "company logo", "logo on invoice", "logo toevoegen", "logo wijzigen", "logo uploaden", "logo hochladen", "ajouter logo"]
@@ -8,10 +8,10 @@ chatbot:
   follow_up: ["How do I change the PDF template?", "How do I set up my company settings?"]
 ---
 
-To add or change your company logo:
-1. Go to Settings → "Logo en kleur" (logo and colour)
-2. Look for the "Logo" section
-3. Click "Upload" and select your logo file (PNG or JPG recommended)
-4. Your logo will appear on all invoices and documents; the live preview shows the result right away
+Om je bedrijfslogo toe te voegen of te wijzigen:
+1. Ga naar Instellingen → "Logo en kleur"
+2. Zoek de sectie "Logo"
+3. Klik op "Uploaden" en selecteer je logobestand (PNG of JPG aanbevolen)
+4. Je logo verschijnt op alle facturen en documenten; het livevoorbeeld toont meteen het resultaat
 
-Tip: Use a high-resolution logo (at least 300px wide) for crisp PDF output.
+Tip: gebruik een logo met hoge resolutie (minstens 300px breed) voor scherpe PDF's.

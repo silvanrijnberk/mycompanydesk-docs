@@ -1,5 +1,5 @@
 ---
-title: "Customer collections"
+title: "Klantgegevens en incasso"
 last_verified: 2026-05-09
 chatbot:
   triggers: ["customer data collections", "improve collections", "data improve collections", "collections", "incasso", "klantgegevens incasso", "forderungsmanagement", "recouvrement"]
@@ -8,10 +8,10 @@ chatbot:
   follow_up: ["How do I send payment reminders?", "How do I view overdue invoices?"]
 ---
 
-To view customer data that affects invoice follow-up in the app:
-1. Open Customers and select the customer
-2. Check the saved billing email, address, VAT number, and payment terms on the customer profile
-3. Check the "Recent invoices" card for each invoice's status and total, and open an invoice for its payment details
-4. Update the customer record if the contact or billing details are outdated
+Om klantgegevens te bekijken die in de app invloed hebben op factuuropvolging:
+1. Open Klanten en selecteer de klant
+2. Controleer in het klantprofiel het opgeslagen factuur-e-mailadres, adres, BTW-nummer en de betaalvoorwaarden
+3. Bekijk de kaart "Recente facturen" voor de status en het totaal per factuur, en open een factuur voor de betaalgegevens
+4. Werk het klantrecord bij als de contact- of factuurgegevens verouderd zijn
 
-Up-to-date contact and billing details make reminders land at the right address, which is the biggest lever for getting invoices paid on time.
+Actuele contact- en factuurgegevens zorgen dat herinneringen op het juiste adres aankomen, en dat is de grootste hefboom om facturen op tijd betaald te krijgen.

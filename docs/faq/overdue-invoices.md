@@ -8,10 +8,10 @@ chatbot:
   follow_up: ["How do I send payment reminders?", "How do I see total outstanding amounts?", "How do I mark an invoice as paid?"]
 ---
 
-To view and manage overdue invoices:
-1. Go to Invoices
-2. Filter by status "Overdue" to see all past-due invoices
-3. Sort by due date to bring the oldest records to the top
-4. Open an invoice to send a reminder or review its detail page
+Om achterstallige facturen te bekijken en beheren:
+1. Ga naar Facturen
+2. Filter op status "Achterstallig"
+3. Sorteer op vervaldatum
+4. Open een factuur om een herinnering te versturen of details te bekijken
 
-The dashboard can also link you back to overdue totals and related invoice lists.
+Het dashboard kan je ook terugleiden naar achterstallige totalen en bijbehorende lijsten.

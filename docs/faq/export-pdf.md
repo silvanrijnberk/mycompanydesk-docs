@@ -1,5 +1,5 @@
 ---
-title: "Export to PDF"
+title: "Exporteren naar PDF"
 last_verified: 2026-07-02
 chatbot:
   triggers:
@@ -23,9 +23,9 @@ chatbot:
     - "How do I send an invoice by email?"
 ---
 
-To export or download a PDF:
-1. Open the invoice from the list
-2. Click the PDF preview or download button
-3. The PDF uses your logo, colour, and layout from Settings → "Logo en kleur" and Settings → "Factuurontwerp"
+Zo exporteer of download je een PDF:
+1. Open de factuur vanuit de lijst
+2. Klik op de PDF-voorbeeld- of downloadknop
+3. De PDF gebruikt je logo, kleur en opmaak uit Instellingen → "Logo en kleur" en Instellingen → "Factuurontwerp"
 
-Tip: Set your logo and brand colour at Settings → "Logo en kleur", and pick the layout, colours, and font of your invoices at Settings → "Factuurontwerp".
+Tip: Stel je logo en huisstijlkleur in via Instellingen → "Logo en kleur", en kies de opmaak, kleuren en het lettertype van je facturen via Instellingen → "Factuurontwerp".

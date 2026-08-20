@@ -1,5 +1,5 @@
 ---
-title: Create an invoice
+title: "Factuur maken"
 last_verified: 2026-07-02
 chatbot:
   triggers: ["create invoice", "new invoice", "make invoice", "add invoice", "write invoice", "send invoice", "first invoice", "how to invoice", "maak factuur", "nieuwe factuur", "factuur maken", "factuur aanmaken", "hoe maak ik een factuur", "rechnung erstellen", "wie erstelle ich eine rechnung", "neue rechnung", "creer facture", "comment creer une facture"]
@@ -8,14 +8,14 @@ chatbot:
   follow_up: ["How do I add a customer first?", "How do I change the PDF style?", "How do I set payment terms?"]
 ---
 
-Here's how to create an invoice:
-1. Go to Invoices and open "New Invoice"
-2. Select a customer or add one from the customer picker
-3. Add the line items with description, quantity, price, and VAT
-4. In the Invoice Details card, set the invoice date and due date
-5. Use "Save as Draft" if it is not ready yet, or "Finalize" when the invoice is ready (MyCompanyDesk checks your BTW-id and IBAN first, you can fill them in on the spot if needed)
-6. After saving, open the invoice detail page to preview or send it
+Zo maak je een factuur:
+1. Ga naar Facturen en open "Nieuwe factuur"
+2. Kies een klant of voeg er een toe via de klantkiezer
+3. Voeg regels toe met omschrijving, aantal, prijs en BTW
+4. Stel in de kaart met factuurdetails de factuurdatum en vervaldatum in
+5. Gebruik "Opslaan als concept" als de factuur nog niet klaar is, of "Afronden" wanneer die gereed is (MyCompanyDesk controleert eerst je BTW-id en IBAN, je kunt ze meteen invullen als het nodig is)
+6. Open na het opslaan de factuurdetailpagina om te bekijken of te versturen
 
-If the customer has unbilled time entries, the form pulls them in as line items and fills in missing descriptions automatically.
+Heeft de klant nog niet-gefactureerde uren, dan haalt het formulier die binnen als factuurregels en vult het ontbrekende omschrijvingen automatisch in.
 
-Tip: Defaults like payment terms and quote validity live at Settings → "Facturen en offertes"; invoice numbering is automatic, so there is nothing to configure there. Make sure your BTW-id and IBAN are filled in so you can finalize without interruption.
+Tip: Standaardinstellingen zoals betaaltermijn en offertegeldigheid staan onder Instellingen → "Facturen en offertes"; factuurnummering gaat automatisch, daar hoef je niets voor in te stellen. Zorg dat je BTW-id en IBAN zijn ingevuld, dan rond je facturen zonder onderbreking af.

@@ -19,13 +19,13 @@ chatbot:
     - "How do I create a new recurring invoice?"
 ---
 
-To edit a recurring invoice or expense:
-1. Go to Recurring Invoices (or Recurring Expenses)
-2. Open the recurring item
-3. Click "Edit"
-4. Change the amount, frequency, customer, or line items
-5. Save - future generations will use the updated template
+Om een terugkerend item te bewerken:
+1. Ga naar Terugkerende facturen (of Uitgaven)
+2. Open het terugkerende item
+3. Klik op "Bewerken"
+4. Wijzig bedrag, frequentie, klant of regels
+5. Sla op - toekomstige generaties gebruiken het bijgewerkte sjabloon
 
-Note: Changes only affect future invoices/expenses. Previously generated items remain unchanged.
+Let op: wijzigingen gelden alleen voor toekomstige facturen/uitgaven. Eerder aangemaakte items blijven ongewijzigd.
 
-Note: If you change the start date before the first item has been generated, the next scheduled date moves with it. Once the first item has been generated, the start date no longer shifts the schedule.
+Let op: als je de startdatum wijzigt voordat het eerste item is aangemaakt, verhuist de eerstvolgende geplande datum mee. Zodra het eerste item is aangemaakt, heeft een wijziging van de startdatum geen invloed meer op de planning.

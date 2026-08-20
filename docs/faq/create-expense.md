@@ -1,5 +1,5 @@
 ---
-title: Create expense
+title: "Uitgave aanmaken"
 last_verified: 2026-05-09
 chatbot:
   triggers: ["create expense", "new expense", "add expense", "log expense", "record expense", "track expense", "uitgave toevoegen", "nieuwe uitgave", "uitgave aanmaken", "ausgabe hinzufugen", "wie erstelle ich eine ausgabe", "ajouter depense", "comment creer une depense"]
@@ -8,10 +8,10 @@ chatbot:
   follow_up: ["How do I upload a receipt?", "How do I categorize expenses?", "How do I mark an expense as paid?"]
 ---
 
-Here's how to add an expense:
-1. Go to Expenses and click "Add"
-2. Enter the supplier, category, description, amount, and date. An amount is required; the form will not save an expense of EUR 0.00 unless it is a genuine zero-value record such as a VAT-only credit note.
-3. Save the expense so the record is created
-4. If you want to attach a receipt, open the saved expense and use "Upload Receipt" on the detail page
+Zo voeg je een uitgave toe:
+1. Ga naar Uitgaven en klik op "Nieuwe uitgave"
+2. Vul leverancier, categorie, omschrijving, bedrag en datum in. Een bedrag is verplicht; het formulier slaat geen uitgave van EUR 0,00 op, tenzij het een echt nulrecord is zoals een creditnota met alleen BTW.
+3. Sla de uitgave op zodat het record wordt aangemaakt
+4. Open daarna de opgeslagen uitgave als je "Bon uploaden" wilt gebruiken
 
-Tip: Receipt upload happens after the expense is saved, not on the new-expense form itself.
+Tip: Het uploaden van een bon gebeurt op de detailpagina nadat de uitgave is opgeslagen.

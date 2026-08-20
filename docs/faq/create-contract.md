@@ -6,12 +6,11 @@ chatbot:
   actions: []
   follow_up: ["How do I create a project?", "How do I link invoices to a contract?"]
 ---
-To create a contract:
-1. Go to Contracts and open "New Contract"
-2. For rental contracts, select the property, then choose the customer. For other contract types (service, NDA, project), only a customer is needed.
-3. Enter the contract name, amount, VAT rate, and recurrence
-4. Set the start date and first invoice date
-5. Add optional service details or auto-send settings if needed
-6. Save the contract
+Om een contract aan te maken:
+1. Ga naar Contracten en open "Nieuw contract"
+2. Selecteer bij een huurcontract het object en de klant. Bij andere typen (service, NDA, project) is alleen een klant nodig.
+3. Vul de contractnaam, het bedrag, het BTW-tarief en de herhaling in
+4. Stel de startdatum en datum van de eerste factuur in
+5. Voeg zo nodig servicegegevens of automatisch verzenden toe en sla op
 
-You can open the saved contract later to review or adjust the billing setup.
+Tip: Je kunt het opgeslagen contract later opnieuw openen om de facturatie-instelling aan te passen.

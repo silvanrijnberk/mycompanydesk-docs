@@ -1,5 +1,5 @@
 ---
-title: "Stop recurring"
+title: "Terugkerende factuur stoppen"
 last_verified: 2026-07-02
 chatbot:
   triggers: ["stop recurring", "cancel recurring", "pause recurring", "disable recurring", "end recurring", "terugkerend stoppen", "terugkerend annuleren", "wiederkehrend stoppen", "arreter recurrent"]
@@ -9,14 +9,14 @@ chatbot:
   follow_up: ["How do I edit a recurring item?", "How do I create a new recurring invoice?"]
 ---
 
-To stop a recurring invoice:
-1. Go to Recurring Invoices
-2. Open the recurring invoice
-3. Click "Pause" on the detail page; the same button then shows "Activate" so you can resume later
-4. While it is paused, no further invoices are generated
+Zo stop je een terugkerende factuur:
+1. Ga naar Terugkerende facturen
+2. Open de terugkerende factuur
+3. Klik op "Pauzeren" op de detailpagina; dezelfde knop toont daarna "Activeren", zodat je later weer kunt starten
+4. Zolang die gepauzeerd is, worden er geen nieuwe facturen aangemaakt
 
-There is no end date field; pausing is how you stop the schedule, and it keeps the history of previously generated invoices intact. There are also no bulk actions on the recurring list, so pause each item individually. Recurring expenses work the same way with their own Pause and Activate buttons.
+Er is geen einddatumveld; pauzeren is de manier om het schema te stoppen, en de eerder aangemaakte facturen blijven gewoon bewaard. Bulkacties zijn er niet in de lijst met terugkerende facturen, dus pauzeer elk item apart. Terugkerende uitgaven werken op dezelfde manier, met eigen knoppen Pauzeren en Activeren.
 
-Tip: Pausing is safe. Nothing is deleted, and one click on "Activate" picks the schedule back up.
+Tip: Pauzeren is veilig. Er wordt niets verwijderd en met één klik op "Activeren" loopt het schema weer door.
 
-If your plan changes from Office to Desk, recurring invoices and expenses will pause automatically. Previously generated invoices and expenses stay in your records, and the schedules resume when you upgrade again.
+Als je pakket wijzigt van Office naar Desk, worden terugkerende facturen en uitgaven automatisch gepauzeerd. Eerder aangemaakte facturen en uitgaven blijven in je administratie, en de schema's worden hervat bij een latere upgrade.

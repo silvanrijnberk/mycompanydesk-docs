@@ -1,6 +1,6 @@
 # Agent guide — mycompanydesk-docs
 
-Vitepress source for the public MyCompanyDesk documentation. English content lives under `docs/`. Locale mirrors live under `docs/nl/`, `docs/de/`, `docs/fr/` with identical file trees. The agent that runs against this repo is also responsible for the public landing in `RichardTool/sites/landing/` — see that repo's `sites/landing/AGENTS.md` for landing-specific rules.
+Vitepress source for the public MyCompanyDesk documentation. **Dutch is the root locale**: Dutch content lives under `docs/` with no prefix and is what `docs.mycompanydesk.com/` serves. Locale mirrors live under `docs/en/`, `docs/de/`, `docs/fr/` with identical file trees. English stays the authoring source of truth (write it first, mirror out), it is just no longer the URL default. The agent that runs against this repo is also responsible for the public landing in `RichardTool/sites/landing/` — see that repo's `sites/landing/AGENTS.md` for landing-specific rules.
 
 ## Trigger
 
@@ -10,7 +10,7 @@ The `mcd-public-surfaces-sync` agent runs as an openclaw cron job on the service
 
 1. **No em-dashes (`—`) or en-dashes (`–`) in any new prose.** Use commas, periods, parentheses, or restructure. Untouched passages keep what is there; rewritten ones strip them.
 2. **Native voice in every language.** Read existing nl/de/fr files for tone and vocabulary first, then write the way a fluent speaker writes. NL `je`-form, DE `Sie`-form, FR `vous`-form. Never machine-translate then ship.
-3. **Mirror the file tree across locales.** Adding `docs/features/foo.md` adds `docs/nl/features/foo.md`, `docs/de/features/foo.md`, `docs/fr/features/foo.md` in the same change. Same for renames and deletes. Localized hero links include the locale prefix.
+3. **Mirror the file tree across locales.** Adding `docs/en/features/foo.md` adds `docs/features/foo.md` (Dutch, root, no prefix), `docs/de/features/foo.md` and `docs/fr/features/foo.md` in the same change. Same for renames and deletes. Never leave a page English-only: an English-only page has no Dutch URL, and the Dutch URL is the default one. Links inside `en/`, `de/`, `fr/` pages carry their locale prefix; links inside the Dutch root pages carry none.
 4. **Preserve frontmatter and Vitepress syntax verbatim** unless the change is the point of the edit. YAML keys, asset paths, container directives (`:::tip`), `<script setup>` blocks stay byte-identical.
 5. **Never touch** `node_modules/`, `package-lock.json`, `.vitepress/dist/`, `docs/public/icons/`. `.vitepress/config.*` changes only if the EN content forced it.
 6. **Stay surgical.** Update what the source merge requires. Do not refactor surrounding pages, do not "improve" untouched copy, do not add page sections the source diff did not introduce.
@@ -29,7 +29,7 @@ For any country-specific number, rate, threshold, deadline, or legal-status clai
 After opening the PR, the agent runs through this checklist against the PR diff:
 
 1. Any em-dash or en-dash in added lines → fail.
-2. Any new file under `docs/<en-path>.md` without sibling `nl/de/fr` mirrors → fail.
+2. Any new file under `docs/en/<path>.md` without sibling Dutch-root, `de/` and `fr/` mirrors → fail.
 3. Any new number/percentage/€-value/date deadline in any locale not citing a `sources/` path → fail.
 4. Any `<script>` block, hero block, CTA copy, or top-level nav entry changed without the source merge explicitly justifying it → fail.
 5. NL/DE/FR text that reads like a literal translation (matches EN word order, uses calques) → fail.
@@ -44,7 +44,7 @@ On all-clean: squash-merge to `main`.
 
 1. Read this file. Read `/home/node/.openclaw/repos/RichardTool/sites/landing/AGENTS.md`.
 2. Read the merge: `git log -1 development` in `/home/node/.openclaw/repos/RichardTool`. Decide whether anything is user-facing (new feature, changed label, new setting, new flow, new locale key, landing-relevant). If not: message MCD ops `no public-surface change required for <sha>` and exit.
-3. If user-facing: branch `docs/sync-<sha>-<slug>` in docs repo, branch `landing-sync-<sha>-<slug>` in RichardTool. Edit EN first, mirror to nl/de/fr.
+3. If user-facing: branch `docs/sync-<sha>-<slug>` in docs repo, branch `landing-sync-<sha>-<slug>` in RichardTool. Edit EN (`docs/en/`) first, mirror to the Dutch root, `de/` and `fr/`.
 4. If `src/locales/en.json` (or equivalent) gained user-facing keys: fill nl/de/fr same PR. Commit those to the RichardTool branch.
 5. Open PRs: docs against `main`, RichardTool landing branch against `development`. Body: link to source merge, list source citations, list any TODO(source-missing) items.
 6. Run the strict self-review loop above. Fix + re-review until clean or cap hit.

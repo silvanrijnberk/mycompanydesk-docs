@@ -1,161 +1,159 @@
 ---
-title: Quotes
+title: Offertes
 ---
 
-# Quotes
+# Offertes
 
-Send professional quotations to potential customers and convert them to invoices when accepted.
+Verstuur professionele offertes naar potentiele klanten en zet ze om naar facturen wanneer ze geaccepteerd zijn.
 
-## Overview
+## Overzicht
 
-The quotes section lets you create, send, and track quotations. Quotes follow a similar workflow to invoices but are non-binding estimates.
+Het offertesgedeelte stelt je in staat om offertes te maken, versturen en bijhouden. Offertes volgen een vergelijkbare workflow als facturen, maar zijn vrijblijvende prijsopgaven.
 
-## Creating a quote
+## Een offerte aanmaken
 
-1. Go to **Quotes > New Quote**
-2. Select or create a **customer**
-3. Add **line items** with descriptions, quantities, prices, and VAT rates
-4. Set a **valid until** date (how long the quote is valid)
-5. Add optional **notes**
-6. Click **Save**
+1. Ga naar **Offertes > Nieuwe offerte**
+2. Selecteer of maak een **klant** aan
+3. Voeg **regelitems** toe met omschrijvingen, aantallen, prijzen en BTW-tarieven
+4. Stel een **geldig tot**-datum in (hoe lang de offerte geldig is)
+5. Voeg optionele **notities** toe
+6. Klik op **Opslaan**
 
-The quote form is similar to the invoice form — if you know how to create an invoice, you already know how to create a quote.
+Het offerteformulier lijkt op het factuurformulier — als je weet hoe je een factuur maakt, weet je ook hoe je een offerte maakt.
 
-## Sending a quote
+## Een offerte versturen
 
-1. Open the quote detail page
-2. Click **Send**
-3. Review the email preview
-4. Click **Send** to deliver it to your customer
+1. Open de offertedetailpagina
+2. Klik op **Versturen**
+3. Bekijk het e-mailvoorbeeld
+4. Klik op **Versturen** om het naar je klant te bezorgen
 
-The send dialog has toggles for the **View button**, **Download button**, and **PDF attachment**. By default the PDF is attached so the customer can review it.
+In de verzenddialoog vind je schakelaars voor de **Bekijkknop**, **Downloadknop** en **PDF-bijlage**. Standaard wordt de PDF meegestuurd, zodat de klant de offerte kan bekijken.
 
-At least one of these must be turned on for a quote, otherwise the customer has no way to open the quote and the **Send** button is disabled. Invoices always keep a customer portal button as a fallback, but quotes do not.
+Voor een offerte moet er minstens één van deze schakelaars aan staan; anders kan de klant de offerte nergens openen en wordt de knop **Versturen** uitgeschakeld. Facturen vallen altijd terug op een klantenportaalknop, maar offertes niet.
 
-If your workspace has general terms in Documents, the email preview also shows an **Include general terms** toggle. It is on by default for quotes. When enabled, the current terms PDF is attached to the email and the send is recorded as the provision event on the terms document.
+Als je werkruimte algemene voorwaarden in Documenten heeft staan, toont de e-mailvoorbeelddialoog ook de schakelaar **Algemene voorwaarden meesturen**. Deze staat standaard aan voor offertes. Als je hem inschakelt, wordt de huidige voorwaarden-PDF bij de e-mail gevoegd en wordt de verzending vastgelegd als het terhandstellingsmoment op het voorwaardendocument.
 
-## Customer activity
+## Klantactiviteit
 
-Once a quote has been emailed, the quote detail page shows a set of engagement pills that mirror the activity log already used for invoices:
+Zodra een offerte per e-mail is verstuurd, toont de detailpagina een rij signalen die precies hetzelfde werken als bij facturen:
 
-- **Sent**: the email left your workspace.
-- **Opened**: the customer opened the email (tracked by a pixel embedded in the quote send).
-- **Viewed**: the customer opened the public quote page.
-- **Downloaded**: the customer downloaded the quote PDF.
+- **Verzonden**: de e-mail is uit je werkruimte verstuurd.
+- **Geopend**: de klant heeft de e-mail geopend (gemeten via een pixel in de offerte-e-mail).
+- **Bekeken**: de klant heeft de publieke offertepagina geopend.
+- **Gedownload**: de klant heeft de offerte-PDF gedownload.
 
-A quote never shows a **Paid** pill, because quotes are not paid directly; a signed quote is shown in its own signing card instead.
+Een offerte toont nooit een **Betaald**-signaal, want offertes worden niet direct betaald; een ondertekende offerte staat in zijn eigen ondertekeningskaart.
 
-The pills remain off until the quote is actually emailed. Before that, the activity card stays hidden so it does not clutter the page.
+De signalen blijven uit tot de offerte daadwerkelijk is gemaild. Daarvoor is de kaart verborgen, zodat de pagina niet onnodig volstaat.
 
-Events are stored in the same `invoice_customer_events` log as invoice events, scoped by an `entity_type` column so quote events are kept separate from invoice events.
+Gebeurtenissen worden opgeslagen in dezelfde `invoice_customer_events`-log als factuuractiviteit, afgescheiden door een `entity_type`-kolom zodat offertes en facturen niet door elkaar lopen.
 
-Source: `apps/api/src/modules/invoices/customer-events.service.js` - `recordEvent`, `getEventsForQuote`; `apps/api/src/db/migrations/20270302000000_customer_events_entity_type.js` - `entity_type` column; `apps/api/src/modules/quotes/quotes.routes.js` - `GET /:id/customer-events`.
+Bron: `apps/api/src/modules/invoices/customer-events.service.js` - `recordEvent`, `getEventsForQuote`; `apps/api/src/db/migrations/20270302000000_customer_events_entity_type.js` - `entity_type`-kolom; `apps/api/src/modules/quotes/quotes.routes.js` - `GET /:id/customer-events`.
 
-## Online quote signing
+## Offerte online laten ondertekenen
 
-You can ask a customer to sign a quote online instead of sending it only as a PDF. On the quote detail page, choose **Send for signing** to send a signing request to the customer. The quote status changes to **Sent** so you can track it.
+Je kunt een klant vragen een offerte online te ondertekenen in plaats van hem alleen als PDF te versturen. Open de offertedetailpagina en kies **Naar tekenen versturen** om een tekenverzoek naar de klant te sturen. De status van de offerte wijzigt in **Verzonden**, zodat je het proces kunt volgen.
 
-If the signing e-mail cannot be delivered because of a problem with your sender settings, an error toast appears with the message to check your e-mail settings and try again. The signing request itself is created on the server, so you can resend it once the e-mail settings are fixed.
+Als de e-mail voor het tekenen niet kan worden afgeleverd door een probleem met je e-mailinstellingen, verschijnt er een foutmelding met de vraag je e-mailinstellingen te controleren en het opnieuw te proberen. Het tekenverzoek zelf wordt op de server aangemaakt, dus je kunt het opnieuw versturen zodra de e-mailinstellingen in orde zijn.
 
-## Quote detail actions
+## Acties op de offertedetailpagina
 
-The top action on the quote detail page depends on the quote status:
+De hoofdactie op de offertedetailpagina hangt af van de offertestatus:
 
-- **Send** — Available for draft and sent quotes, so the quote can reach the customer.
-- **Convert to Invoice** — Available once the customer has accepted the quote, turning it into an invoice with one click.
-- **Duplicate / Create new version** — Available for rejected or expired quotes so you can reissue them quickly.
+- **Versturen** — Beschikbaar voor concept- en verzonden offertes, zodat de offerte de klant kan bereiken.
+- **Omzetten naar factuur** — Beschikbaar zodra de klant de offerte heeft geaccepteerd; hiermee maak je in één klik een factuur.
+- **Dupliceren / nieuwe versie maken** — Beschikbaar voor afgewezen of verlopen offertes, zodat je ze snel opnieuw kunt uitbrengen.
 
-Additional actions live in the overflow menu next to the top action:
+Extra acties zitten in het overflow-menu naast de hoofdactie:
 
-- **Preview PDF** — View the quote PDF in full screen before sending.
-- **Download PDF** — Download the quote as a professionally formatted PDF document with your company logo, branding colors, and all quote details.
-- **Copy quote** — Create a copy of the existing quote.
+- **PDF preview** — Bekijk de offerte-PDF op volledig scherm voordat je deze verstuurt.
+- **PDF downloaden** — Download de offerte als een professioneel opgemaakt PDF-document met je bedrijfslogo, huisstijlkleuren en alle offertegegevens.
+- **Offerte kopiëren** — Maak een kopie van de bestaande offerte.
 
-## Document preview
+## Documentvoorbeeld
 
-Every saved quote has a live PDF preview on its detail page, just like an invoice. The preview shows the quote exactly as your customer will see it.
+Elke opgeslagen offerte heeft een live PDF-voorbeeld op de detailpagina, net als een factuur. Het voorbeeld toont de offerte precies zoals je klant hem ziet.
 
-The preview header has a **Download PDF** button, a **Print** button, and a **Change design** button. Click **Change design** to jump straight to the invoice design settings and adjust the look of all your invoices, quotes and reminders. When you are done, you return to the quote you came from. On mobile the same action lives in the page's overflow menu so the preview header stays uncluttered.
+In de kop van het voorbeeld staan knoppen voor **PDF downloaden**, **Printen** en **Ontwerp aanpassen**. Klik op **Ontwerp aanpassen** om direct naar Factuurontwerp te gaan en de uitstraling van al je facturen, offertes en herinneringen aan te passen. Wanneer je klaar bent, kom je terug bij de offerte waar je vandaan kwam. Op mobiel staat dezelfde actie in het overflow-menu, zodat de kop van het voorbeeld overzichtelijk blijft.
 
-## Quote statuses
+## Offertestatussen
 
-| Status | Description |
+| Status | Beschrijving |
 |---|---|
-| **Draft** | Created but not sent |
-| **Sent** | Delivered to the customer |
-| **Accepted** | Customer accepted the quote |
-| **Rejected** | Customer declined the quote |
-| **Expired** | Past the valid-until date |
-| **Invoiced** | Converted to an invoice |
+| **Concept** | Aangemaakt maar niet verstuurd |
+| **Verzonden** | Bezorgd bij de klant |
+| **Geaccepteerd** | Klant heeft de offerte geaccepteerd |
+| **Afgewezen** | Klant heeft de offerte afgewezen |
+| **Verlopen** | Voorbij de geldig-tot-datum |
+| **Gefactureerd** | Omgezet naar een factuur |
 
-## Convert to invoice
+## Omzetten naar factuur
 
-Once a customer accepts your quote, convert it to an invoice with one click:
+Zodra een klant je offerte accepteert, zet je deze met een klik om naar een factuur:
 
-1. Open the accepted quote
-2. Click **Convert to Invoice**
-3. Review the pre-filled invoice (all line items carry over)
-4. Make any adjustments if needed
-5. Save and send the invoice
+1. Open de geaccepteerde offerte
+2. Klik op **Omzetten naar factuur**
+3. Bekijk de vooraf ingevulde factuur (alle regelitems worden overgenomen)
+4. Pas indien nodig aan
+5. Sla op en verstuur de factuur
 
-## Quote requests
+## Offerteaanvragen
 
-Customers can submit quote requests through your [site builder](/advanced/business-page). These appear in **Quotes > Requests**.
+Klanten kunnen offerteaanvragen indienen via je [sitebouwer](/advanced/business-page). Deze verschijnen in **Offertes > Aanvragen**.
 
-### Managing requests
+### Aanvragen beheren
 
-Each request shows:
+Elke aanvraag toont:
 
-- Customer name and email
-- Requested service or description
-- Date submitted
+- Klantnaam en e-mailadres
+- Gevraagde dienst of omschrijving
+- Datum ingediend
 - Status
 
-### Request statuses
+### Aanvraagstatussen
 
-| Status | Description |
+| Status | Beschrijving |
 |---|---|
-| **New** | Just received, unreviewed |
-| **Reviewed** | You've read the request |
-| **Quoted** | You've sent a quote in response |
-| **Closed** | Request resolved (accepted or declined) |
+| **Nieuw** | Zojuist ontvangen, nog niet bekeken |
+| **Bekeken** | Je hebt de aanvraag gelezen |
+| **Geoffreerd** | Je hebt een offerte verstuurd als reactie |
+| **Gesloten** | Aanvraag afgehandeld (geaccepteerd of afgewezen) |
 
-### Responding to a request
+### Reageren op een aanvraag
 
-1. Open the request
-2. Click **Mark as Reviewed** after reading
-3. Click **Create Quote** to generate a quote for this customer
-4. The quote is pre-filled with the customer's information
+1. Open de aanvraag
+2. Klik op **Markeer als bekeken** na het lezen
+3. Klik op **Offerte aanmaken** om een offerte te genereren voor deze klant
+4. De offerte wordt vooraf ingevuld met de klantgegevens
 
-### AI concept quote from a request
+### AI-conceptofferte bij een aanvraag
 
-When a customer submits a quote request through your site builder or contact form, MyCompanyDesk can draft a concept quote automatically. The AI reads the request text and your own catalog, then proposes line items it can match.
+Als een klant een offerteaanvraag via je sitebouwer of contactformulier indient, kan MyCompanyDesk automatisch een conceptofferte opzetten. De AI leest de aanvraagtekst en je eigen catalogus en stelt regels voor die hij kan matchen.
 
-- Matched catalog items keep their catalog price, VAT rate and unit. The AI only suggests quantities.
-- Work that does not fit the catalog becomes a description-only line at price 0, so you can price it yourself.
-- The draft is created as a quote in **Draft** status. It is not sent automatically and no customer record is created from the unverified form.
-- A notification tells you a concept quote is ready. Open the request, review the lines, link or create the customer, and send it when you are ready.
+- Gematchte catalogusitems behouden hun catalogusprijs, BTW-tarief en eenheid. De AI suggereert alleen hoeveelheden.
+- Werk dat niet in de catalogus past, wordt een omschrijvingsregel met prijs 0, zodat je zelf een prijs kunt bepalen.
+- Het concept wordt aangemaakt als offerte in status **Concept**. Hij wordt niet automatisch verstuurd en er wordt geen klantrecord aangemaakt op basis van het ongeverifieerde formulier.
+- Je krijgt een melding zodra een concept klaar staat. Open de aanvraag, controleer de regels, koppel of maak de klant aan en verstuur hem wanneer je wilt.
 
-This is a best-effort draft, not a finished proposal. Always check the prices and descriptions before sending.
+Het is een best-effort concept, geen afgeronde offerte. Controleer altijd prijzen en omschrijvingen voordat je verstuurt.
 
-## Bulk actions
+## Bulkacties
 
-- **Send** — Send multiple quotes at once
-- **Archive** — Move quotes to archive
-- **Delete** — Remove quotes
+- **Versturen** — Verstuur meerdere offertes tegelijk
+- **Archiveren** — Verplaats offertes naar het archief
+- **Verwijderen** — Verwijder offertes
 
 ## Tips
 
-- Quote request metrics (received, quoted, closed) are shown at the top of the requests page
-- Use the quick-add feature for rapid quote creation
-- Quotes can link to projects for better tracking
+- Statistieken over offerteaanvragen (ontvangen, geoffreerd, gesloten) worden bovenaan de aanvragenpagina getoond
+- Gebruik de snel-toevoegen-functie voor snelle offertecreatie
 
+## Dashboard-context
 
-## Dashboard context
+Offertes die opvolging nodig hebben, verschijnen ook in het dashboardtabblad **Goed nieuws**:
 
-Quote follow-ups also appear in the dashboard **Good news** tab:
+- **Openstaande aanvragen**: hoeveel offerteaanvragen via de website op antwoord wachten, plus de oudste wachttijd.
+- **Verlopende offertes**: hoeveel offertes deze week verlopen, en hoeveel al verlopen zijn zonder antwoord.
 
-- **Open requests**: how many website quote requests are waiting for an answer, plus the oldest waiting time.
-- **Expiring quotes**: how many quotes expire this week, and how many have already expired without an answer.
-
-Website quote requests come from the site-builder form. See [Domains, Website & Inbox](/features/domains-website-inbox) for setting up the form.
+Offerteaanvragen via je sitebouwerformulier komen binnen via [Domeinen, website en inbox](/features/domains-website-inbox).

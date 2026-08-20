@@ -1,60 +1,60 @@
 ---
-title: Company Settings
+title: Bedrijfsinstellingen
 last_verified: 2026-07-02
 ---
 
-# Company Settings
+# Bedrijfsinstellingen
 
-Everything that defines how your business looks to the outside world: the name on your invoices, your logo and brand colour, and your public website.
+Alles wat bepaalt hoe je bedrijf er naar buiten toe uitziet: de naam op je facturen, je logo en huisstijlkleur, en je publieke website.
 
-## Where to find it
+## Waar vind je het
 
-Open **Instellingen** (Settings) from the menu, or go to `/settings`. Company topics are rows in the **Je bedrijf** (your business) group:
+Open **Instellingen** via het menu, of ga naar `/settings`. Bedrijfsonderwerpen zijn rijen in de groep **Je bedrijf**:
 
-- **Bedrijfsgegevens** (business details) at `/settings/bedrijfsgegevens`: company info, address, KvK number, VAT number
-- **Logo en kleur** (logo and colour) at `/settings/uiterlijk`: logo, brand colour, document styling
-- **Factuurontwerp** (invoice design) at `/settings/factuurontwerp`: the invoice design studio, covered on [PDF Customization](/settings/pdf)
+- **Bedrijfsgegevens** op `/settings/bedrijfsgegevens`: bedrijfsinformatie, adres, KVK-nummer, BTW-nummer
+- **Logo en kleur** op `/settings/uiterlijk`: logo, huisstijlkleur, documentstijl
+- **Factuurontwerp** op `/settings/factuurontwerp`: de ontwerpstudio voor je facturen, beschreven op [PDF-aanpassing](/settings/pdf)
 
-Old links to the previous workspace settings pages redirect to the new locations automatically.
+Oude links naar de vroegere werkruimte-instellingen verwijzen automatisch door naar de nieuwe plek.
 
-## Business details (Bedrijfsgegevens)
+## Bedrijfsgegevens
 
-Path: `/settings/bedrijfsgegevens`
+Pad: `/settings/bedrijfsgegevens`
 
-The identity form. What every invoice, quote, and email shows.
+Het identiteitsformulier. Wat elke factuur, offerte en e-mail toont.
 
-- **Business name**: appears on every document
-- **Address**: street, postal code, city, country (with address autocomplete)
-- **Registration**: KvK or other registration number. The **Refresh from KVK** button pulls the latest data from the Dutch Chamber of Commerce registry and fills any blank fields (business name, address, postal code, city, country). It never overwrites values you already set. Each workspace gets 100 free KVK lookups per day (cached results do not count toward the limit). When 20 or fewer lookups remain, the field hint switches to a counter showing how many are left. If the daily cap is reached, you can enter the data manually or try again tomorrow.
-- **Tax ID**: VAT number (e.g. `NL123456789B01`)
-- **Contact**: public email, phone, support email
-- **Website + social**: used by the email signature, business page, and footers
+- **Bedrijfsnaam**: verschijnt op elk document
+- **Adres**: straat, postcode, plaats, land (met adresaanvulling)
+- **Registratie**: KVK-nummer of ander registratienummer. De knop **Ophalen uit KVK** haalt de laatste gegevens uit het Handelsregister en vult lege velden in (bedrijfsnaam, adres, postcode, plaats, land). Velden die je zelf al hebt ingevuld blijven staan. Elke werkruimte heeft 100 gratis KVK-zoekopdrachten per dag (resultaten uit de cache tellen niet mee). Bij 20 of minder resterende zoekopdrachten toont de veldhint een teller met het aantal dat je nog over hebt. Is de daglimiet bereikt, dan kun je de gegevens handmatig invullen of het morgen opnieuw proberen.
+- **BTW-nummer**: je BTW-id (bijv. `NL123456789B01`)
+- **Contact**: publiek e-mailadres, telefoon, support-e-mailadres
+- **Website + social media**: gebruikt in de e-mailhandtekening, op je bedrijfspagina en in footers
 
-Changes save automatically.
+Wijzigingen worden automatisch opgeslagen.
 
-## Logo and colour (Logo en kleur)
+## Logo en kleur
 
-Path: `/settings/uiterlijk`
+Pad: `/settings/uiterlijk`
 
-Branding for invoices, quotes, and outgoing email, with a live preview of the result.
+De huisstijl voor facturen, offertes en uitgaande e-mail, met een livevoorbeeld van het resultaat.
 
-- **Logo upload**: used on every PDF and email header
-- **Brand colour**: one accent colour across your documents and public business page
-- **Style presets**: pick a document style, available on Starter and up
-- **PDF footer**: the footer text at the bottom of your documents
+- **Logo uploaden**: gebruikt op elke PDF en in de e-mailheader
+- **Huisstijlkleur**: een accentkleur voor al je documenten en je publieke bedrijfspagina
+- **Stijlen**: kies een documentstijl, beschikbaar vanaf Starter
+- **PDF-voettekst**: de voettekst onderaan je documenten
 
-There is one style and one brand colour for all document types; a second accent colour no longer exists. For full control over the layout, colours, and font of your invoices and quotes, open the **Factuurontwerp** row (the invoice design studio); see [PDF Customization](/settings/pdf).
+Er is een stijl en een huisstijlkleur voor alle documenttypes; een tweede accentkleur bestaat niet meer. Wil je de opmaak, kleuren en het lettertype van je facturen en offertes helemaal zelf bepalen? Open dan de rij **Factuurontwerp** (de ontwerpstudio); zie [PDF-aanpassing](/settings/pdf).
 
-## Your website
+## Je website
 
-Your public business page is managed in the top-level **Website** area of the app, not under Settings. It is a dashboard with six tabs: Overview, Visitors, Findability, Connections, Domain & email, and Settings. The site editor opens from **Edit site**.
+Je publieke bedrijfspagina beheer je in het aparte onderdeel **Website** in de navigatie, niet onder Instellingen. Het is een dashboard met zes tabbladen: Overzicht, Bezoekers, Vindbaarheid, Koppelingen, Domein & e-mail en Instellingen. De site-editor open je via **Bewerk site**.
 
-- The website is available from the Starter plan.
-- Connecting your own domain, replacing the default `mycompanydesk.com` subdomain, requires Pro. DNS, SPF, and DKIM records are managed for you, tucked behind an advanced strip most users never need to open.
+- De website is beschikbaar vanaf het Starter-abonnement.
+- Je eigen domein koppelen, in plaats van het standaard `mycompanydesk.com`-subdomein, vereist Pro. DNS-, SPF- en DKIM-records worden voor je beheerd; ze staan achter een geavanceerd-strookje dat de meeste gebruikers nooit hoeven te openen.
 
-## Related
+## Gerelateerd
 
-- [PDF Customization](/settings/pdf) for the Factuurontwerp design studio
-- [Plan & payments](/settings/billing) to unlock the custom domain
-- [Email setup](/settings/email) for sending from your own domain
-- The setup wizard at `/setup` walks new workspaces through these settings in one flow
+- [PDF-aanpassing](/settings/pdf) voor de ontwerpstudio Factuurontwerp
+- [Abonnement en betalingen](/settings/billing) om een eigen domein te ontgrendelen
+- [E-mailinstellingen](/settings/email) om vanaf je eigen domein te versturen
+- De installatiewizard op `/setup` loopt met nieuwe werkruimtes in een keer door deze instellingen heen

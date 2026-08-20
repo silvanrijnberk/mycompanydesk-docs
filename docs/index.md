@@ -2,11 +2,11 @@
 layout: home
 hero:
   name: MyCompanyDesk
-  text: Accounting made simple
-  tagline: The all-in-one platform for freelancers and small businesses to manage invoices, expenses, customers, and more.
+  text: Boekhouding eenvoudig gemaakt
+  tagline: Het alles-in-één platform voor zzp'ers en kleine bedrijven om facturen, uitgaven, klanten en meer te beheren.
   actions:
     - theme: brand
-      text: Get Started
+      text: Aan de slag
       link: /getting-started/introduction
     - theme: alt
       text: Open App
@@ -14,36 +14,36 @@ hero:
 features:
   - icon:
       src: /icons/file-bar-chart.svg
-    title: Invoices & Quotes
-    details: Create professional invoices and quotes, send them to customers, and track payments — all in one place.
+    title: Facturen & Offertes
+    details: Maak professionele facturen en offertes, verstuur ze naar klanten en houd betalingen bij — alles op één plek.
   - icon:
       src: /icons/receipt.svg
-    title: Expense Tracking
-    details: Log expenses manually or scan receipts with AI-powered OCR. Categorize and link them to projects.
+    title: Uitgaven bijhouden
+    details: Registreer uitgaven handmatig of scan bonnen met AI-gestuurde OCR. Categoriseer en koppel ze aan projecten.
   - icon:
       src: /icons/bar-chart-3.svg
-    title: Reports & VAT
-    details: Get insights into revenue, profit, cash flow, and VAT. Lock periods after filing for compliance.
+    title: Rapporten & BTW
+    details: Krijg inzicht in omzet, winst, cashflow en BTW. Vergrendel periodes na aangifte voor compliance.
   - icon:
       src: /icons/users.svg
-    title: Customers & Projects
-    details: Manage your customer database, organize work into projects, and track profitability per client.
+    title: Klanten & Projecten
+    details: Beheer je klantendatabase, organiseer werk in projecten en volg winstgevendheid per klant.
   - icon:
       src: /icons/refresh-cw.svg
-    title: Recurring Billing
-    details: Set up recurring invoices and expenses that generate automatically on your chosen schedule.
+    title: Terugkerende facturering
+    details: Stel terugkerende facturen en uitgaven in die automatisch worden gegenereerd volgens je gekozen schema.
   - icon:
       src: /icons/bar-chart-3.svg
-    title: Assets and depreciation
-    details: Track business assets, record purchase value, and let depreciation run automatically so you always know the current book value.
+    title: Activa en afschrijving
+    details: Houd zakelijke activa bij, leg de aanschafwaarde vast en laat afschrijvingen automatisch lopen, zodat je altijd de actuele boekwaarde ziet.
   - icon:
       src: /icons/house.svg
-    title: Contracts & Assets
-    details: Manage rental contracts, track properties, vehicles, and equipment with full lifecycle management.
+    title: Contracten & Assets
+    details: Beheer huurcontracten, volg vastgoed, voertuigen en apparatuur met volledig levenscyclusbeheer.
   - icon:
       src: /icons/house.svg
-    title: Website on your own domain
-    details: Build a multi-page site on your own domain, start from a pre-styled site package, or apply a bespoke design. Managed alongside the rest of your business.
+    title: Website op je eigen domein
+    details: Bouw een site met meerdere pagina's op je eigen domein, start vanuit een kant-en-klaar site-pakket, of pas een bespoke design toe. Alles vanuit dezelfde app.
     link: /advanced/business-page
-    linkText: Read more
+    linkText: Meer lezen
 ---

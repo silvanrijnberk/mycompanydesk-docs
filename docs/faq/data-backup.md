@@ -1,5 +1,5 @@
 ---
-title: "Data backup"
+title: "Back-up van je gegevens"
 last_verified: 2026-07-02
 chatbot:
   triggers:
@@ -20,13 +20,13 @@ chatbot:
     - "How do I import data?"
 ---
 
-To back up your data:
-1. Go to Settings -> "Gegevens downloaden" (download your data)
-2. Download CSV exports for invoices, customers, and expenses, or the full backup available there
-3. Confirm the downloaded files contain the records you need
+Om een back-up van je gegevens te maken:
+1. Ga naar Instellingen -> "Gegevens downloaden"
+2. Download CSV-exports voor facturen, klanten en uitgaven, of de volledige back-up die daar beschikbaar is
+3. Controleer of de gedownloade bestanden de gegevens bevatten die je nodig hebt
 
-CSV exports are available from the Starter plan. If you back up regularly, pick a fixed moment, for example after closing each quarter.
+CSV-exports zijn beschikbaar vanaf het Starter-abonnement. Maak je regelmatig een back-up, kies dan een vast moment, bijvoorbeeld na het afsluiten van elk kwartaal.
 
 :::tip
-For MyCompanyDesk support staff, the admin panel also has a **Create backup** action and a **Download data** action for workspaces. The admin panel's **Clear cache** action flushes the shared cache service (and any module-level KPI cache), and **Invalidate sessions** bumps a global cutoff that rejects every session token issued before it. These tools are not part of the customer-facing settings pages.
+Voor supportmedewerkers van MyCompanyDesk bevat het adminpanel ook acties voor **Back-up maken** en **Gegevens downloaden** per werkruimte. De actie **Cache wissen** in het adminpanel maakt de gedeelde cache-service (en de module-eigen KPI-cache) leeg, en **Sessies ongeldig maken** verhoogt een globale drempel waardoor alle sessietokens die daarvoor zijn uitgegeven, worden geweigerd. Deze tools horen niet bij de klantinstellingen.
 :::

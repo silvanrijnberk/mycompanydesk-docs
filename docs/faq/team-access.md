@@ -1,5 +1,5 @@
 ---
-title: "Team access"
+title: "Teamtoegang"
 last_verified: 2026-07-02
 chatbot:
   triggers:
@@ -30,10 +30,10 @@ chatbot:
     - "How do I remove a team member?"
 ---
 
-To manage who has access to your workspace:
-1. Go to Settings → "Toegang en boekhouder" (access and accountant)
-2. Review current members and roles in the "Mensen met toegang" (people with access) section
-3. Use "Iemand toegang geven" (give someone access) to invite a teammate by email
-4. Open the Manage access button or gear icon on a member to set page access
+Om te beheren wie toegang heeft tot je werkruimte:
+1. Ga naar Instellingen → "Toegang en boekhouder"
+2. Bekijk de huidige leden en rollen in het onderdeel "Mensen met toegang"
+3. Gebruik "Iemand toegang geven" om een teamgenoot per e-mail uit te nodigen
+4. Open "Toegang beheren" of het tandwielicoon bij een lid om paginatoegang in te stellen
 
-Permissions are managed per page with Read, Write, and Create options. Inviting team members requires the Pro plan; the accountant section on the same page is free on every plan.
+Rechten beheer je per pagina met de opties Lezen, Schrijven en Aanmaken. Teamleden uitnodigen vereist het Pro-abonnement; het boekhoudergedeelte op dezelfde pagina is gratis op elk abonnement.

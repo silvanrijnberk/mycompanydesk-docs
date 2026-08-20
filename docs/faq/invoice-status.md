@@ -7,15 +7,14 @@ chatbot:
     - { label: "Open invoices", to: "/invoices" }
   follow_up: ["How do I mark an invoice as paid?", "How do I send a reminder?", "How do I cancel an invoice?"]
 ---
-Invoice statuses explained:
-• Draft - not finalized yet, fully editable. It cannot be marked paid or recorded as paid until you finalize it; recording a payment on a draft used to create a numberless invoice with status Paid, which is no longer allowed.
-• Open - finalized but not sent/paid yet
-• Sent - delivered to the customer, awaiting payment
-• Overdue - due date passed and still unpaid
-• Needs verification - the customer reported payment through the portal; confirm or reject it before the status moves to Paid
-• Paid - payment recorded. In a small edge case an invoice can show Paid while no payment is registered yet, for example after an import or an older "mark as paid" action that did not create a payment record. The payment card then shows "This invoice is marked paid, but {amount} is not registered as a payment" and offers to record the payment.
-• Canceled - voided and no longer collectible
+Factuurstatussen uitgelegd:
+• Concept - nog niet verstuurd, vrij te bewerken. Je kunt een concept pas als betaald markeren of er een betaling op registreren nadat je hem definitief hebt gemaakt; een betaling op een concept maakte eerder een nummerloze factuur met status Betaald, wat nu niet meer mag.
+• Verstuurd - bezorgd bij de klant, wacht op betaling
+• Achterstallig - vervaldatum verstreken, nog niet betaald
+• Klant zegt: betaald - de klant heeft via het portaal aangegeven te hebben betaald; bevestig of weiger de betaling voordat de factuur op Betaald komt
+• Betaald - betaling ontvangen en bevestigd. In een uitzonderingsgeval kan een factuur Betaald tonen terwijl er nog geen betaling is geregistreerd, bijvoorbeeld na een import of een oudere "markeer als betaald"-actie die geen betaalregel aanmaakte. De betaalkaart toont dan "Deze factuur staat op betaald, maar {amount} is niet als betaling geregistreerd" en biedt de optie om de betaling alsnog vast te leggen.
+• Geannuleerd - ongeldig, niet meer actief
 
-Deleting an invoice is a staged action: from active it goes to Archived, then to Trash, and only then is permanently removed. You can restore it from Archive or Trash while it is still in either stage. Canceling is different: it marks a sent or paid invoice as Canceled but keeps it in the list.
+Verwijderen gaat in stappen: van actief naar Gearchiveerd, dan naar Prullenbak, en pas daarna definitief weg. Je kunt hem uit het Archief of de Prullenbak terughalen zolang hij nog niet definitief verwijderd is. Annuleren werkt anders: daarmee markeer je een verstuurde of betaalde factuur als Geannuleerd, maar hij blijft in de lijst staan.
 
-Tip: Use invoice filters to focus on Open and Overdue first.
+Tip: Gebruik de statusfilters om eerst Open en Achterstallig te zien.

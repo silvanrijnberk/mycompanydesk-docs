@@ -1,5 +1,5 @@
 ---
-title: "Find archived invoices"
+title: "Gearchiveerde facturen vinden"
 last_verified: 2026-05-09
 chatbot:
   triggers:
@@ -28,4 +28,4 @@ chatbot:
     - "How do I cancel an invoice?"
 ---
 
-Archived invoices are in Invoices -> Archive. If you are already in the invoice list, switch to the Archive view. Deleted invoices are in Trash.
+Gearchiveerde facturen vind je onder Facturen -> Archief. Sta je al in de facturenlijst, schakel dan over naar de weergave Archief. Verwijderde facturen staan in de Prullenbak.

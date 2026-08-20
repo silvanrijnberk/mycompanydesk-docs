@@ -1,5 +1,5 @@
 ---
-title: "Expense category"
+title: "Uitgavecategorie"
 last_verified: 2026-08-15
 chatbot:
   triggers: ["expense category", "categorize expense", "expense categories", "which category", "change category", "uitgave categorie", "categorie wijzigen", "ausgabe kategorie", "categorie depense"]
@@ -8,10 +8,10 @@ chatbot:
   follow_up: ["Which expenses are tax deductible?", "How do I create a new expense?", "How do I view expenses by category?"]
 ---
 
-To set or change an expense category:
-1. Open the expense in edit mode
-2. Find the "Category" dropdown
-3. Select a category from your workspace list (system defaults or a custom category you added)
-4. Save the expense
+Om een uitgavecategorie in te stellen of te wijzigen:
+1. Open de uitgave in bewerkingsmodus
+2. Zoek het dropdownmenu "Categorie"
+3. Kies een categorie uit je werkruimtelijst (standaardcategorieën of zelf toegevoegde categorieën)
+4. Sla de uitgave op
 
-The standard categories follow the Dutch tax return, so your bookkeeping lines up with your aangifte. You can add your own categories in **Settings > Expense categories**, then archive or delete them there if they are no longer needed. Categories with expenses or recurring expenses already linked to them cannot be deleted; archive them to hide them from the form. An archived category still appears in the dropdown for expenses that already use it, marked as "(archived)", so you can keep editing those expenses. Use categories consistently so filters, lists, and reports stay easy to review.
+De standaardcategorieën volgen de Nederlandse belastingaangifte, zodat je administratie aansluit op je aangifte. Eigen categorieën voeg je toe in **Instellingen > Uitgavencategorieën**, waar je ze ook kunt bewerken, archiveren of verwijderen. Zitten er al uitgaven of terugkerende uitgaven in een categorie, dan kun je hem niet verwijderen; archiveer hem om hem uit het formulier te verbergen. Een gearchiveerde categorie blijft zichtbaar in de keuzelijst voor uitgaven die hem al gebruiken, met "(gearchiveerd)" erachter, zodat je die uitgaven gewoon kunt blijven bewerken. Gebruik categorieën consistent zodat filters, lijsten en rapporten makkelijk te controleren blijven.

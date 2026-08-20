@@ -19,11 +19,11 @@ chatbot:
     - "How do I categorize expenses?"
 ---
 
-To automatically create recurring expenses:
-1. Go to Recurring Expenses → click "New"
-2. Enter the vendor, amount, and category
-3. Set the frequency and start date
-4. Save the recurring expense
-5. Review the recurring list to confirm when entries will be generated
+Om automatisch terugkerende uitgaven in te stellen:
+1. Ga naar Terugkerende uitgaven
+2. Klik op "Nieuwe terugkerende uitgave"
+3. Voer de leverancier, het bedrag en de categorie in
+4. Stel de frequentie en startdatum in
+5. Sla op en controleer wanneer records worden aangemaakt
 
-This answer is limited to how the recurring-expense feature works in the app.
+Dit antwoord blijft beperkt tot hoe de functie voor terugkerende uitgaven in de app werkt.

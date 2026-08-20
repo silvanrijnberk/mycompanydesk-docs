@@ -1,58 +1,58 @@
 ---
-title: PDF design
+title: PDF-ontwerp
 ---
 
-# PDF design
+# PDF-ontwerp
 
-Make your invoice, quote and reminder PDFs match your brand. Two settings pages control the look, and one style applies to all your documents.
+Laat je factuur-, offerte- en herinnerings-PDF's aansluiten op je huisstijl. Twee instellingenpagina's bepalen het uiterlijk, en één stijl geldt voor al je documenten.
 
-- **Logo en kleur** (logo and colour): your logo and brand colour, the basis of everything.
-- **Factuurontwerp** (invoice design): the design studio where you style the document itself, with a live preview.
+- **Logo en kleur**: je logo en merkkleur, de basis van alles.
+- **Factuurontwerp**: de ontwerpstudio waar je het document zelf vormgeeft, met een livevoorbeeld.
 
-Both live under **Instellingen** (Settings). See the [settings overview](/settings/) for the full map.
+Beide vind je onder **Instellingen**. Zie het [instellingenoverzicht](/settings/) voor de volledige kaart.
 
 ## Logo en kleur
 
-Go to **Instellingen** and open **Logo en kleur**. This page sets your brand identity:
+Ga naar **Instellingen** en open **Logo en kleur**. Deze pagina bepaalt je merkidentiteit:
 
-- **Display name:** the name customers see, if it differs from your registered company name.
-- **Brand colour:** pick any colour, or start from one of the presets. This colour is used on your invoices, quotes, emails and website. A warning appears when a colour is too light to stay readable.
-- **Logo:** upload a PNG, JPG or SVG. For photo-style logos there is a one-click background remover. No logo yet? Generate a simple one from your initials and a background colour, right on this page.
-- **Live preview:** a sample header shows your logo and colour together, so you see the result before it reaches a customer.
+- **Weergavenaam:** de naam die klanten zien, als die afwijkt van je geregistreerde bedrijfsnaam.
+- **Merkkleur:** kies elke kleur, of begin met een van de voorinstellingen. Deze kleur wordt gebruikt op je facturen, offertes, e-mails en website. Er verschijnt een waarschuwing als een kleur te licht is om leesbaar te blijven.
+- **Logo:** upload een PNG, JPG of SVG. Voor fotologo's is er een achtergrondverwijderaar met één klik. Nog geen logo? Genereer er direct op deze pagina een uit je initialen en een achtergrondkleur.
+- **Livevoorbeeld:** een voorbeeldkop toont je logo en kleur samen, zodat je het resultaat ziet voordat een klant het ziet.
 
-Changes save automatically.
+Wijzigingen worden automatisch opgeslagen.
 
 ## Factuurontwerp
 
-Go to **Instellingen** and open **Factuurontwerp**. This is the design studio for your documents: every control on the left, a live A4 preview on the right that updates as you click.
+Ga naar **Instellingen** en open **Factuurontwerp**. Dit is de ontwerpstudio voor je documenten: alle knoppen links, een live A4-voorbeeld rechts dat meebeweegt terwijl je klikt.
 
-The quickest route is the **Genereer uit mijn huisstijl** (generate from my brand) button: it builds a complete design around the brand colour you chose under Logo en kleur. Not happy? **Probeer andere** (try another) cycles through different looks. Everything stays editable afterwards:
+De snelste route is de knop **Genereer uit mijn huisstijl**: die bouwt een compleet ontwerp rond de merkkleur die je onder Logo en kleur hebt gekozen. Niet tevreden? **Probeer andere** wisselt naar een andere look. Alles blijft daarna aanpasbaar:
 
-- **Startpunt** (starting point): six style presets: Klassiek, Modern, Botanisch, Atelier, Editorial and Blanco. Changing any option afterwards turns the design into your own custom variant.
-- **Accentkleur** (accent colour): your brand colour is offered first. When you have a logo, colours sampled from it appear as ready-made swatches. There is also a set of curated shades, and a custom picker for any colour.
-- **Papiertint** (paper tint): white or one of the soft off-white tones (Crème, Greige, Zand, Mist).
-- **Lettertype** (typography): a heading font (Marcellus, Playfair Display, Fraunces or Cormorant) and a text font (Inter, Lato or EB Garamond).
-- **Thema / indeling** (theme and layout): the overall arrangement of the document, plus the density (Compact, Normaal, Ruim). The Botanisch layout has optional decorative artwork you can switch off.
-- **Voettekst** (footer text): the line at the bottom of every document, for example your KVK number or a thank-you note.
+- **Startpunt**: zes stijlvoorinstellingen: Klassiek, Modern, Botanisch, Atelier, Editorial en Blanco. Zodra je daarna iets aanpast, wordt het ontwerp je eigen variant.
+- **Accentkleur**: je merkkleur staat vooraan. Heb je een logo, dan verschijnen kleuren uit je logo als kant-en-klare stalen. Er is ook een set uitgekozen tinten, plus een eigen kiezer voor elke kleur.
+- **Papiertint**: wit of een van de zachte gebroken-witte tinten (Crème, Greige, Zand, Mist).
+- **Lettertype**: een koplettertype (Marcellus, Playfair Display, Fraunces of Cormorant) en een tekstlettertype (Inter, Lato of EB Garamond).
+- **Thema / indeling**: de algemene opbouw van het document, plus de dichtheid (Compact, Normaal, Ruim). De indeling Botanisch heeft optioneel decoratief artwork dat je kunt uitzetten.
+- **Voettekst**: de regel onderaan elk document, bijvoorbeeld je KVK-nummer of een bedankje.
 
-Changes save automatically and show in the preview within a moment. Want the standard look back? **Thema uitschakelen** returns your documents to the default design.
+Wijzigingen worden automatisch opgeslagen en zijn binnen een moment zichtbaar in het voorbeeld. Wil je terug naar de standaardlook? **Thema uitschakelen** zet je documenten terug op het standaardontwerp.
 
-## One style for all documents
+## Eén stijl voor alle documenten
 
-The design applies to every PDF MyCompanyDesk creates for you: invoices, quotes and payment reminders. You style it once; every document type stays consistent.
+Het ontwerp geldt voor elke PDF die MyCompanyDesk voor je maakt: facturen, offertes en betalingsherinneringen. Je stelt het één keer in; elk documenttype blijft consistent.
 
-## Language
+## Taal
 
-Document PDFs are available in Dutch, English, German and French. Documents from a Dutch workspace are produced in Dutch by default, so the labels on your invoices (like "Factuur" and "Vervaldatum") match what your customers expect.
+Document-PDF's zijn beschikbaar in het Nederlands, Engels, Duits en Frans. Documenten uit een Nederlandse werkruimte worden standaard in het Nederlands gemaakt, zodat de labels op je facturen (zoals "Factuur" en "Vervaldatum") kloppen voor je klanten.
 
-## Logo tips
+## Logotips
 
-For the best result on PDFs:
+Voor het beste resultaat op PDF's:
 
-- **Format:** PNG with a transparent background works best; JPG and SVG are also accepted
-- **Resolution:** at least 300 pixels wide
-- **Shape:** landscape or square logos fit the layouts best
+- **Formaat:** PNG met transparante achtergrond werkt het best; JPG en SVG kunnen ook
+- **Resolutie:** minstens 300 pixels breed
+- **Vorm:** liggende of vierkante logo's passen het best in de indelingen
 
 ::: info
-Invoice design and style presets are included from the **Starter** plan.
+Factuurontwerp en stijlvoorinstellingen zijn inbegrepen vanaf het **Starter**-abonnement.
 :::

@@ -1,119 +1,119 @@
 ---
-title: Documents
+title: Documenten
 ---
 
-# Documents
+# Documenten
 
-Store, track and digitally sign agreements that do not have a price attached — such as general terms, NDAs and data-processing agreements.
+Bewaar, volg en onderteken digitaal afspraken zonder prijs — zoals algemene voorwaarden, geheimhoudingsverklaringen en verwerkersovereenkomsten.
 
-## Overview
+## Overzicht
 
-Documents are for paper-trail agreements with customers or partners that are not invoices, quotes or recurring contracts. Typical uses:
+Documenten zijn voor papierwerk dat je met klanten of partners afsluit, maar dat geen factuur, offerte of terugkerend contract is. Veelvoorkomende toepassingen:
 
-- **General terms** — keep a record that your customer received them before an agreement was closed.
-- **Processing agreement (DPA)** — document GDPR/AVG processor arrangements.
-- **NDA** — capture a signed confidentiality agreement.
-- **Other** — any other agreement you want to store, send and optionally sign.
+- **Algemene voorwaarden** — leg vast dat je klant ze heeft ontvangen vóór het sluiten van een overeenkomst.
+- **Verwerkersovereenkomst** — leg GDPR/AVG-verwerkersafspraken vast.
+- **Geheimhouding (NDA)** — leg een ondertekende geheimhoudingsverklaring vast.
+- **Overig** — elk ander document dat je wilt bewaren, versturen en eventueel laten ondertekenen.
 
 ::: info
-The documents module is optional. Enable it in **Company > Features** if you do not see it in the navigation.
+De documentenmodule is optioneel. Schakel hem in via **Bedrijf > Functies** als je hem niet in het menu ziet.
 :::
 
-## Creating a document
+## Een document maken
 
-1. Go to **Documents > New Document**
-2. Pick a kind: **General terms**, **Processing agreement**, **NDA** or **Other**
-3. Fill in:
-   - **Title** — a descriptive name
-   - **Customer** — optional; link the document to a customer record
-   - **Content** — the agreement text that will be shown to the signer
-4. Click **Save**
+1. Ga naar **Documenten > Nieuw document**
+2. Kies een soort: **Algemene voorwaarden**, **Verwerkersovereenkomst**, **Geheimhouding** of **Overig**
+3. Vul in:
+   - **Titel** — een beschrijvende naam
+   - **Klant** — optioneel; koppel het document aan een klant
+   - **Inhoud** — de tekst die de ondertekenaar te zien krijgt
+4. Klik op **Opslaan**
 
-You can create a document from a template or from scratch. Documents created from a template render the template text at the time they are created, so later template edits do not change already-created documents.
+Je kunt een document maken op basis van een sjabloon of helemaal zelf opstellen. Documenten die vanuit een sjabloon zijn gemaakt, renderen de sjabloontekst op het moment van aanmaken. Latere wijzigingen in de sjabloon hebben dus geen invloed op bestaande documenten.
 
-## Providing terms to a customer
+## Voorwaarden ter hand stellen
 
-MyCompanyDesk lets you record when general terms were provided to a customer.
+MyCompanyDesk legt vast wanneer je algemene voorwaarden aan een klant hebt verstrekt.
 
-### Manual provision
+### Zelf een datum vastleggen
 
-If you want to record a date yourself:
+Wil je zelf een datum vastleggen:
 
-1. Open the document detail page
-2. Click **Record as provided**
-3. Choose the date the terms were handed to the customer
+1. Open de detailpagina van het document
+2. Klik op **Vastleggen als verstrekt**
+3. Kies de datum waarop je de voorwaarden aan de klant gaf
 
-Once recorded, the document detail page shows a **Provided** badge and the provided date. If the document is linked to a customer, this is also visible in the documents list.
+Daarna toont de detailpagina een badge **Verstrekt** met de datum. Als het document aan een klant is gekoppeld, is dit ook zichtbaar in de documentenlijst.
 
-### Attach terms when sending a quote or invoice
+### Meesturen met een offerte of factuur
 
-If your workspace has general terms stored in Documents, the email preview when sending a quote or invoice shows an **Include general terms** toggle. For quotes this toggle is on by default, because sending terms with a quote is the legally relevant moment for terhandstelling. For invoices it is off by default.
+Als je werkruimte algemene voorwaarden in Documenten heeft staan, toont de e-mailvoorbeelddialoog bij het versturen van een offerte of factuur de schakelaar **Algemene voorwaarden meesturen**. Bij offertes staat deze standaard aan, want het meesturen van voorwaarden met een offerte is het juridisch relevante moment voor terhandstelling. Bij facturen staat hij standaard uit.
 
-When the toggle is on, the current terms PDF is attached to the outgoing email. After the email is sent successfully, MyCompanyDesk records that send as the provision event on the terms document. The document detail page then shows:
+Als de schakelaar aan staat, wordt de huidige voorwaarden-PDF bij de e-mail gevoegd. Zodra de e-mail succesvol is verstuurd, legt MyCompanyDesk die verzending vast als het terhandstellingsmoment op het voorwaardendocument. De detailpagina toont dan:
 
-- the recipient and date of the quote or invoice email that delivered the terms
-- a link to the quote or invoice, so you can open the actual send
+- de ontvanger en datum van de offerte- of factuurmail die de voorwaarden heeft bezorgd
+- een link naar de offerte of factuur, zodat je de concrete verzending kunt openen
 
-If the terms were already marked as provided manually, the earlier record is kept. Later sends do not overwrite it.
+Als de voorwaarden al handmatig als verstrekt zijn gemarkeerd, blijft dat eerdere record bewaard. Latere verzendingen overschrijven het niet.
 
 ::: tip
-This turns a bare date into verifiable evidence. Instead of saying "we provided the terms on this day", the document points to the real email that carried them.
+Zo wordt een kale datum controleerbaar bewijs. In plaats van "we hebben de voorwaarden op deze dag verstrekt" verwijst het document naar de echte e-mail die ze heeft meegenomen.
 :::
 
-## Processing agreement gap on the customer page
+## Ontbrekende verwerkersovereenkomst op de klantpagina
 
-On the customer detail page, MyCompanyDesk checks whether a customer has a contract but no processing agreement (DPA) stored in Documents. When that gap exists, a hint appears in the documents card with a **Create processing agreement** link that starts a new DPA pre-filled for that customer.
+Op de klantdetailpagina controleert MyCompanyDesk of een klant een contract heeft maar nog geen verwerkersovereenkomst in Documenten. Als dat tekort bestaat, verschijnt er een hint in de documentenkaart met de link **Verwerkersovereenkomst opstellen** die een nieuwe verwerkersovereenkomst voor die klant start.
 
-The hint is only shown when the documents and contracts modules are enabled and the documents card would otherwise be empty. It is a quiet prompt to fix a compliance gap at the place you would act on it.
+De hint verschijnt alleen als de documenten- en contractenmodules aan staan en de documentenkaart verder leeg zou zijn. Het is een stille aanwijzing om een compliance-tekort op de plek waar je er iets aan doet te repareren.
 
-## Signing
+## Ondertekenen
 
-Documents support the same digital signing flow as contracts. You can add one or more signing parties through the document form. Each party receives a signing link by email.
+Documenten gebruiken dezelfde digitale ondertekenflow als contracten. Je voegt één of meer partijen toe via het documentformulier. Elke partij ontvangt een ondertekenlink per e-mail.
 
-When a document has signing enabled, the detail page shows a signing card with:
+Als een document ondertekening ondersteunt, toont de detailpagina een ondertekenkaart met:
 
-- The status of each party (draft, sent, partially signed, signed, expired or terminated)
-- A **View** button that opens an inline preview of the signed document
-- A download button to save the PDF
+- De status van elke partij (concept, verstuurd, deels getekend, getekend, verlopen of beëindigd)
+- Een knop **Bekijken** die een inline voorbeeld van het ondertekende document opent
+- Een downloadknop om de PDF op te slaan
 
-### Multi-party signing
+### Onderling ondertekenen
 
-Documents use mutual signing: the counterparty signs first via a secure link, then you (the owner) counter-sign to finalize the document. After both signatures are recorded, the document status becomes **Signed**.
+Documenten worden onderling ondertekend: de tegenpartij tekent eerst via een beveiligde link, daarna jij als eigenaar. Pas na beide handtekeningen wordt de status **Getekend**.
 
-### Signing on the documents list
+### Ondertekening in de documentenlijst
 
-The documents list includes a **Signing** column showing the signing status for each document that has signing enabled. Statuses appear as colored badges: draft, sent, partially signed and signed.
+De documentenlijst toont een kolom **Ondertekening** met de status van elk document waarvoor digitale ondertekening is ingeschakeld. Statussen verschijnen als gekleurde badges: concept, verstuurd, deels getekend en getekend.
 
-A signing filter dropdown above the list lets you narrow the view by signing status, or filter to documents without digital signing.
+Boven de lijst staat een filter waarmee je kunt filteren op ondertekenstatus, of kunt zoeken naar documenten zonder digitale ondertekening.
 
-### SMS verification
+### SMS-verificatie
 
-Signing links can require SMS verification before a party can view and sign the document. When enabled, the signer must enter a mobile number and confirm a 6-digit code sent by SMS.
+Ondertekenlinks kunnen SMS-verificatie vereisen voordat een partij het document kan bekijken en ondertekenen. Als dit is ingeschakeld, moet de ondertekenaar een mobiel nummer opgeven en een 6-cijferige code bevestigen die per SMS wordt verstuurd.
 
-- **Send code** — after entering their mobile number, the signer taps the button and receives a code
-- **Verify code** — the signer enters the 6-digit code to prove access to the phone number
-- **Verified badge** — once confirmed, a "Verified" badge appears with the last four digits of the number
+- **Code versturen** — na het opgeven van een mobiel nummer ontvangt de ondertekenaar een code
+- **Code verifiëren** — de ondertekenaar voert de 6-cijferige code in om toegang tot het nummer te bewijzen
+- **Geverifieerd-badge** — daarna verschijnt een badge met de laatste vier cijfers van het nummer
 
-If the wrong code is entered, the signer can request a new one. SMS verification is configured per signing session and applies to all parties.
+Als een verkeerde code wordt ingevoerd, kan de ondertekenaar een nieuwe aanvragen. SMS-verificatie wordt per ondertekensessie ingesteld en geldt voor alle partijen.
 
-### Signed PDF and audit trail
+### Getekende PDF en audit trail
 
-After the document is fully signed, both parties receive a signed PDF by email. The signed PDF includes the document body plus a signature page with an audit trail (IP address and timestamp). You can also download the PDF at any time from the document detail page.
+Nadat het document volledig is ondertekend, ontvangen beide partijen een getekende PDF per e-mail. De PDF bevat de documenttekst plus een ondertekenpagina met een audit trail (IP-adres en tijdstip). Je kunt de PDF ook altijd downloaden vanaf de detailpagina.
 
-## Document statuses
+## Documentstatussen
 
-| Status | Description |
+| Status | Omschrijving |
 |---|---|
-| **Draft** | Created but not yet sent |
-| **Sent** | Signing invitation sent to one or more parties |
-| **Partially signed** | At least one party has signed, final counter-signature still pending |
-| **Signed** | All required signatures are recorded |
-| **Expired** | The signing link expired before all parties signed |
-| **Terminated** | No longer active |
+| **Concept** | Aangemaakt maar nog niet verstuurd |
+| **Verstuurd** | Uitnodiging verstuurd naar één of meer partijen |
+| **Deels getekend** | Minstens één partij heeft getekend; laatste tegenhandtekening ontbreekt nog |
+| **Getekend** | Alle vereiste handtekeningen zijn vastgelegd |
+| **Verlopen** | De ondertekenlink is verlopen voordat alle partijen tekenden |
+| **Beëindigd** | Niet meer actief |
 
 ## Tips
 
-- Link each document to a customer so you can find it again quickly
-- Record when you provided general terms — this matters if a dispute arises
-- Add signing parties when creating a document to enable digital signing
-- Use the signing status filter to see which documents still need signatures
+- Koppel een document aan een klant zodat je het later snel terugvindt
+- Leg vast wanneer je algemene voorwaarden hebt verstrekt — dit is belangrijk bij geschillen
+- Voeg ondertekenpartijen toe bij het aanmaken van een document om digitale ondertekening in te schakelen
+- Gebruik het ondertekenstatusfilter om te zien welke documenten nog een handtekening nodig hebben

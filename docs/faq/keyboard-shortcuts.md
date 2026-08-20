@@ -1,5 +1,5 @@
 ---
-title: Keyboard shortcuts
+title: Sneltoetsen
 last_verified: 2026-07-02
 chatbot:
   triggers: ["keyboard shortcuts", "shortcuts", "hotkeys", "quick navigation", "sneltoetsen", "tastaturkurzel", "raccourcis clavier"]
@@ -7,10 +7,10 @@ chatbot:
   follow_up: ["How do I find a specific page?", "How do I search for invoices?"]
 ---
 
-The application has a small set of keyboard shortcuts:
-• Press Cmd+K (Mac) or Ctrl+K (Windows/Linux) to open the search palette: search customers, invoices, expenses, and settings, or jump to any section
-• Press Esc to close a dialog or step back from a detail page to its list
-• In the site builder, Cmd/Ctrl+Z undoes and Cmd/Ctrl+Shift+Z (or Ctrl+Y) redoes
-• Use Tab and Enter to move through forms efficiently
+De applicatie heeft een kleine set sneltoetsen:
+• Druk op Cmd+K (Mac) of Ctrl+K (Windows/Linux) om het zoekvenster te openen: zoek in klanten, facturen, uitgaven en instellingen, of spring naar elk onderdeel
+• Druk op Esc om een dialoogvenster te sluiten of vanaf een detailpagina terug te gaan naar de lijst
+• In de sitebouwer maak je met Cmd/Ctrl+Z ongedaan en voer je met Cmd/Ctrl+Shift+Z (of Ctrl+Y) opnieuw uit
+• Gebruik Tab en Enter om efficiënt door formulieren te navigeren
 
-See [Keyboard Shortcuts](/advanced/keyboard-shortcuts) for the full overview.
+Zie [Sneltoetsen](/advanced/keyboard-shortcuts) voor het volledige overzicht.

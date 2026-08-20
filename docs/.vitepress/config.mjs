@@ -6,13 +6,15 @@ import { fileURLToPath } from 'node:url'
 const SITE_ORIGIN = 'https://docs.mycompanydesk.com'
 const DOCS_DIR = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..')
 
-// Locale subdirectories under docs/. English is the root and has no prefix.
-const LOCALE_DIRS = ['nl', 'de', 'fr']
+// Locale subdirectories under docs/. Dutch is the root and has no prefix:
+// MyCompanyDesk sells to Dutch businesses, so the default a visitor (and
+// Google's x-default) lands on is Dutch, not English.
+const LOCALE_DIRS = ['en', 'de', 'fr']
 
 /**
  * Public route for a docs-relative markdown path, matching `cleanUrls: true`.
  *   index.md            -> /
- *   nl/index.md         -> /nl/
+ *   en/index.md         -> /en/
  *   features/invoices.md-> /features/invoices
  */
 function routeFor(relativePath) {
@@ -28,7 +30,7 @@ function splitLocale(relativePath) {
   if (LOCALE_DIRS.includes(first)) {
     return { locale: first, rest: relativePath.slice(first.length + 1) }
   }
-  return { locale: 'en', rest: relativePath }
+  return { locale: 'nl', rest: relativePath }
 }
 
 /**
@@ -41,16 +43,15 @@ function splitLocale(relativePath) {
  * translations of one page and which one to show per language.
  *
  * Alternates are emitted only for locales where the file actually exists on
- * disk: 8 EN-only FAQ pages have no translation, and pointing hreflang at a
- * 404 is worse than omitting it. x-default points at the English root, which
- * is the site's default locale.
+ * disk: pointing hreflang at a 404 is worse than omitting it. x-default points
+ * at the Dutch root, which is the site's default locale.
  */
 function localeHeadTags(relativePath) {
   const { rest } = splitLocale(relativePath)
 
   const variants = []
   if (fs.existsSync(path.join(DOCS_DIR, rest))) {
-    variants.push({ hreflang: 'en', route: routeFor(rest) })
+    variants.push({ hreflang: 'nl', route: routeFor(rest) })
   }
   for (const locale of LOCALE_DIRS) {
     if (fs.existsSync(path.join(DOCS_DIR, locale, rest))) {
@@ -66,9 +67,9 @@ function localeHeadTags(relativePath) {
   for (const { hreflang, route } of variants) {
     tags.push(['link', { rel: 'alternate', hreflang, href: SITE_ORIGIN + route }])
   }
-  const en = variants.find((v) => v.hreflang === 'en')
-  if (en) {
-    tags.push(['link', { rel: 'alternate', hreflang: 'x-default', href: SITE_ORIGIN + en.route }])
+  const nl = variants.find((v) => v.hreflang === 'nl')
+  if (nl) {
+    tags.push(['link', { rel: 'alternate', hreflang: 'x-default', href: SITE_ORIGIN + nl.route }])
   }
   return tags
 }
@@ -77,9 +78,42 @@ const sharedHead = [
   ['link', { rel: 'icon', type: 'image/svg+xml', href: '/logo.svg' }],
   ['meta', { name: 'theme-color', content: '#4f6ef7' }],
   ['meta', { property: 'og:type', content: 'website' }],
-  ['meta', { property: 'og:title', content: 'MyCompanyDesk Docs' }],
-  ['meta', { property: 'og:description', content: 'Learn how to use MyCompanyDesk to manage invoices, expenses, customers, and more.' }],
 ]
+
+/**
+ * Per-locale site title and social preview text. These used to be one English
+ * string for all four locales, so a Dutch page shared an English preview.
+ * Emitted per page in `transformPageData` rather than in a locale `head`,
+ * because locale head entries are appended to the shared head and would leave
+ * two competing og:description tags on the page.
+ */
+const LOCALE_META = {
+  nl: {
+    title: 'MyCompanyDesk Docs',
+    description: 'Leer hoe je met MyCompanyDesk je facturen, uitgaven, klanten en meer beheert.',
+  },
+  en: {
+    title: 'MyCompanyDesk Docs',
+    description: 'Learn how to use MyCompanyDesk to manage invoices, expenses, customers, and more.',
+  },
+  de: {
+    title: 'MyCompanyDesk Docs',
+    description: 'Erfahren Sie, wie Sie mit MyCompanyDesk Rechnungen, Ausgaben, Kunden und mehr verwalten.',
+  },
+  fr: {
+    title: 'MyCompanyDesk Docs',
+    description: 'Apprenez à gérer vos factures, dépenses, clients et plus encore avec MyCompanyDesk.',
+  },
+}
+
+function socialTags(relativePath) {
+  const { locale } = splitLocale(relativePath)
+  const meta = LOCALE_META[locale]
+  return [
+    ['meta', { property: 'og:title', content: meta.title }],
+    ['meta', { property: 'og:description', content: meta.description }],
+  ]
+}
 
 function sidebarEN() {
   return [
@@ -87,78 +121,78 @@ function sidebarEN() {
       text: 'Getting Started',
       collapsed: false,
       items: [
-        { text: 'Introduction', link: '/getting-started/introduction' },
-        { text: 'Create Your Account', link: '/getting-started/create-account' },
-        { text: 'Set up your company', link: '/getting-started/company-setup' },
-        { text: 'Your First Invoice', link: '/getting-started/first-invoice' },
+        { text: 'Introduction', link: '/en/getting-started/introduction' },
+        { text: 'Create Your Account', link: '/en/getting-started/create-account' },
+        { text: 'Set up your company', link: '/en/getting-started/company-setup' },
+        { text: 'Your First Invoice', link: '/en/getting-started/first-invoice' },
       ],
     },
     {
       text: 'Features',
       collapsed: false,
       items: [
-        { text: 'Dashboard', link: '/features/dashboard' },
-        { text: 'Bank Feed', link: '/features/bank' },
-        { text: 'Setup wizard', link: '/features/setup-wizard' },
-        { text: 'Invoices', link: '/features/invoices' },
-        { text: 'Peppol e-invoicing', link: '/features/peppol' },
-        { text: 'Quotes', link: '/features/quotes' },
-        { text: 'Expenses', link: '/features/expenses' },
-        { text: 'Customers', link: '/features/customers' },
-        { text: 'Projects', link: '/features/projects' },
-        { text: 'Tasks', link: '/features/tasks' },
-        { text: 'Documents', link: '/features/documents' },
-        { text: 'Contracts', link: '/features/contracts' },
-        { text: 'Objects & Assets', link: '/features/objects' },
-        { text: 'Recurring Invoices', link: '/features/recurring-invoices' },
-        { text: 'Recurring Expenses', link: '/features/recurring-expenses' },
-        { text: 'Time Registration', link: '/features/time-registration' },
-        { text: 'Reports', link: '/features/reports' },
-        { text: 'VAT Management', link: '/features/vat' },
-        { text: 'Domains, Website & Inbox', link: '/features/domains-website-inbox' },
-        { text: 'Newsletters', link: '/features/newsletters' },
+        { text: 'Dashboard', link: '/en/features/dashboard' },
+        { text: 'Bank Feed', link: '/en/features/bank' },
+        { text: 'Setup wizard', link: '/en/features/setup-wizard' },
+        { text: 'Invoices', link: '/en/features/invoices' },
+        { text: 'Peppol e-invoicing', link: '/en/features/peppol' },
+        { text: 'Quotes', link: '/en/features/quotes' },
+        { text: 'Expenses', link: '/en/features/expenses' },
+        { text: 'Customers', link: '/en/features/customers' },
+        { text: 'Projects', link: '/en/features/projects' },
+        { text: 'Tasks', link: '/en/features/tasks' },
+        { text: 'Documents', link: '/en/features/documents' },
+        { text: 'Contracts', link: '/en/features/contracts' },
+        { text: 'Objects & Assets', link: '/en/features/objects' },
+        { text: 'Recurring Invoices', link: '/en/features/recurring-invoices' },
+        { text: 'Recurring Expenses', link: '/en/features/recurring-expenses' },
+        { text: 'Time Registration', link: '/en/features/time-registration' },
+        { text: 'Reports', link: '/en/features/reports' },
+        { text: 'VAT Management', link: '/en/features/vat' },
+        { text: 'Domains, Website & Inbox', link: '/en/features/domains-website-inbox' },
+        { text: 'Newsletters', link: '/en/features/newsletters' },
       ],
     },
     {
       text: 'Settings',
       collapsed: false,
       items: [
-        { text: 'Settings overview', link: '/settings/' },
-        { text: 'Company Settings', link: '/settings/company' },
-        { text: 'Email Integration', link: '/settings/email' },
-        { text: 'PDF design', link: '/settings/pdf' },
-        { text: 'Access & accountant', link: '/settings/team' },
-        { text: 'Billing & Plans', link: '/settings/billing' },
+        { text: 'Settings overview', link: '/en/settings/' },
+        { text: 'Company Settings', link: '/en/settings/company' },
+        { text: 'Email Integration', link: '/en/settings/email' },
+        { text: 'PDF design', link: '/en/settings/pdf' },
+        { text: 'Access & accountant', link: '/en/settings/team' },
+        { text: 'Billing & Plans', link: '/en/settings/billing' },
       ],
     },
     {
       text: 'Account',
       collapsed: true,
       items: [
-        { text: 'Personal settings', link: '/account/profile' },
-        { text: 'Security', link: '/account/security' },
-        { text: 'Data Import & Export', link: '/account/data' },
-        { text: 'Cookies and analytics', link: '/account/cookies-tracking' },
+        { text: 'Personal settings', link: '/en/account/profile' },
+        { text: 'Security', link: '/en/account/security' },
+        { text: 'Data Import & Export', link: '/en/account/data' },
+        { text: 'Cookies and analytics', link: '/en/account/cookies-tracking' },
       ],
     },
     {
       text: 'FAQ',
       collapsed: true,
       items: [
-        { text: 'All FAQ entries', link: '/faq/' },
+        { text: 'All FAQ entries', link: '/en/faq/' },
       ],
     },
     {
       text: 'Advanced',
       collapsed: true,
       items: [
-        { text: 'Customer Portal', link: '/advanced/customer-portal' },
-        { text: 'Site Builder', link: '/advanced/business-page' },
-        { text: 'AI Features', link: '/advanced/ai-features' },
-        { text: 'Receipt Scanning', link: '/advanced/receipt-scanning' },
-        { text: 'API Integration', link: '/advanced/api' },
-        { text: 'Affiliate Program', link: '/advanced/affiliate-program' },
-        { text: 'Keyboard Shortcuts', link: '/advanced/keyboard-shortcuts' },
+        { text: 'Customer Portal', link: '/en/advanced/customer-portal' },
+        { text: 'Site Builder', link: '/en/advanced/business-page' },
+        { text: 'AI Features', link: '/en/advanced/ai-features' },
+        { text: 'Receipt Scanning', link: '/en/advanced/receipt-scanning' },
+        { text: 'API Integration', link: '/en/advanced/api' },
+        { text: 'Affiliate Program', link: '/en/advanced/affiliate-program' },
+        { text: 'Keyboard Shortcuts', link: '/en/advanced/keyboard-shortcuts' },
       ],
     },
   ]
@@ -170,77 +204,77 @@ function sidebarNL() {
       text: 'Aan de slag',
       collapsed: false,
       items: [
-        { text: 'Introductie', link: '/nl/getting-started/introduction' },
-        { text: 'Account aanmaken', link: '/nl/getting-started/create-account' },
-        { text: 'Bedrijf instellen', link: '/nl/getting-started/company-setup' },
-        { text: 'Je eerste factuur', link: '/nl/getting-started/first-invoice' },
+        { text: 'Introductie', link: '/getting-started/introduction' },
+        { text: 'Account aanmaken', link: '/getting-started/create-account' },
+        { text: 'Bedrijf instellen', link: '/getting-started/company-setup' },
+        { text: 'Je eerste factuur', link: '/getting-started/first-invoice' },
       ],
     },
     {
       text: 'Functies',
       collapsed: false,
       items: [
-        { text: 'Dashboard', link: '/nl/features/dashboard' },
-        { text: 'Bankfeed', link: '/nl/features/bank' },
-        { text: 'Facturen', link: '/nl/features/invoices' },
-        { text: 'Peppol e-facturatie', link: '/nl/features/peppol' },
-        { text: 'Offertes', link: '/nl/features/quotes' },
-        { text: 'Uitgaven', link: '/nl/features/expenses' },
-        { text: 'Klanten', link: '/nl/features/customers' },
-        { text: 'Projecten', link: '/nl/features/projects' },
-        { text: 'Taken', link: '/nl/features/tasks' },
-        { text: 'Documenten', link: '/nl/features/documents' },
-        { text: 'Contracten', link: '/nl/features/contracts' },
-        { text: 'Objecten & Assets', link: '/nl/features/objects' },
-        { text: 'Terugkerende facturen', link: '/nl/features/recurring-invoices' },
-        { text: 'Terugkerende uitgaven', link: '/nl/features/recurring-expenses' },
-        { text: 'Tijdregistratie', link: '/nl/features/time-registration' },
-        { text: 'Rapporten', link: '/nl/features/reports' },
-        { text: 'BTW-beheer', link: '/nl/features/vat' },
-        { text: 'Domeinen, website & inbox', link: '/nl/features/domains-website-inbox' },
-        { text: 'Nieuwsbrieven', link: '/nl/features/newsletters' },
+        { text: 'Dashboard', link: '/features/dashboard' },
+        { text: 'Bankfeed', link: '/features/bank' },
+        { text: 'Facturen', link: '/features/invoices' },
+        { text: 'Peppol e-facturatie', link: '/features/peppol' },
+        { text: 'Offertes', link: '/features/quotes' },
+        { text: 'Uitgaven', link: '/features/expenses' },
+        { text: 'Klanten', link: '/features/customers' },
+        { text: 'Projecten', link: '/features/projects' },
+        { text: 'Taken', link: '/features/tasks' },
+        { text: 'Documenten', link: '/features/documents' },
+        { text: 'Contracten', link: '/features/contracts' },
+        { text: 'Objecten & Assets', link: '/features/objects' },
+        { text: 'Terugkerende facturen', link: '/features/recurring-invoices' },
+        { text: 'Terugkerende uitgaven', link: '/features/recurring-expenses' },
+        { text: 'Tijdregistratie', link: '/features/time-registration' },
+        { text: 'Rapporten', link: '/features/reports' },
+        { text: 'BTW-beheer', link: '/features/vat' },
+        { text: 'Domeinen, website & inbox', link: '/features/domains-website-inbox' },
+        { text: 'Nieuwsbrieven', link: '/features/newsletters' },
       ],
     },
     {
       text: 'Instellingen',
       collapsed: false,
       items: [
-        { text: 'Overzicht instellingen', link: '/nl/settings/' },
-        { text: 'Bedrijfsinstellingen', link: '/nl/settings/company' },
-        { text: 'E-mailintegratie', link: '/nl/settings/email' },
-        { text: 'PDF-ontwerp', link: '/nl/settings/pdf' },
-        { text: 'Toegang en boekhouder', link: '/nl/settings/team' },
-        { text: 'Abonnement & Plannen', link: '/nl/settings/billing' },
+        { text: 'Overzicht instellingen', link: '/settings/' },
+        { text: 'Bedrijfsinstellingen', link: '/settings/company' },
+        { text: 'E-mailintegratie', link: '/settings/email' },
+        { text: 'PDF-ontwerp', link: '/settings/pdf' },
+        { text: 'Toegang en boekhouder', link: '/settings/team' },
+        { text: 'Abonnement & Plannen', link: '/settings/billing' },
       ],
     },
     {
       text: 'Account',
       collapsed: true,
       items: [
-        { text: 'Persoonlijke instellingen', link: '/nl/account/profile' },
-        { text: 'Beveiliging', link: '/nl/account/security' },
-        { text: 'Gegevens importeren & exporteren', link: '/nl/account/data' },
-        { text: 'Cookies en analytics', link: '/nl/account/cookies-tracking' },
+        { text: 'Persoonlijke instellingen', link: '/account/profile' },
+        { text: 'Beveiliging', link: '/account/security' },
+        { text: 'Gegevens importeren & exporteren', link: '/account/data' },
+        { text: 'Cookies en analytics', link: '/account/cookies-tracking' },
       ],
     },
     {
       text: 'Veelgestelde vragen',
       collapsed: true,
       items: [
-        { text: 'Alle FAQ-onderwerpen', link: '/nl/faq/' },
+        { text: 'Alle FAQ-onderwerpen', link: '/faq/' },
       ],
     },
     {
       text: 'Geavanceerd',
       collapsed: true,
       items: [
-        { text: 'Klantenportaal', link: '/nl/advanced/customer-portal' },
-        { text: 'Sitebouwer', link: '/nl/advanced/business-page' },
-        { text: 'AI-functies', link: '/nl/advanced/ai-features' },
-        { text: 'Bonnen scannen', link: '/nl/advanced/receipt-scanning' },
-        { text: 'API-integratie', link: '/nl/advanced/api' },
-        { text: 'Affiliateprogramma', link: '/nl/advanced/affiliate-program' },
-        { text: 'Sneltoetsen', link: '/nl/advanced/keyboard-shortcuts' },
+        { text: 'Klantenportaal', link: '/advanced/customer-portal' },
+        { text: 'Sitebouwer', link: '/advanced/business-page' },
+        { text: 'AI-functies', link: '/advanced/ai-features' },
+        { text: 'Bonnen scannen', link: '/advanced/receipt-scanning' },
+        { text: 'API-integratie', link: '/advanced/api' },
+        { text: 'Affiliateprogramma', link: '/advanced/affiliate-program' },
+        { text: 'Sneltoetsen', link: '/advanced/keyboard-shortcuts' },
       ],
     },
   ]
@@ -412,38 +446,29 @@ function sidebarFR() {
 
 export default defineConfig({
   title: 'MyCompanyDesk',
-  description: 'Documentation for MyCompanyDesk — the all-in-one accounting platform for freelancers and small businesses.',
+  description: LOCALE_META.nl.description,
   cleanUrls: true,
   head: sharedHead,
   sitemap: { hostname: SITE_ORIGIN },
   transformPageData(pageData) {
     pageData.frontmatter.head = [
       ...(pageData.frontmatter.head || []),
+      ...socialTags(pageData.relativePath),
       ...localeHeadTags(pageData.relativePath),
     ]
   },
   locales: {
+    // Dutch is the root locale: the market is Dutch businesses, so an
+    // unprefixed URL and Google's x-default both resolve to Dutch.
     root: {
-      label: 'English',
-      lang: 'en',
-      themeConfig: {
-        nav: [
-          { text: 'Guide', link: '/getting-started/introduction' },
-          { text: 'Features', link: '/features/dashboard' },
-          { text: 'Settings', link: '/settings/company' },
-          { text: 'App', link: 'https://app.mycompanydesk.com' },
-        ],
-        sidebar: sidebarEN(),
-      },
-    },
-    nl: {
       label: 'Nederlands',
       lang: 'nl',
+      description: LOCALE_META.nl.description,
       themeConfig: {
         nav: [
-          { text: 'Handleiding', link: '/nl/getting-started/introduction' },
-          { text: 'Functies', link: '/nl/features/dashboard' },
-          { text: 'Instellingen', link: '/nl/settings/company' },
+          { text: 'Handleiding', link: '/getting-started/introduction' },
+          { text: 'Functies', link: '/features/dashboard' },
+          { text: 'Instellingen', link: '/settings/company' },
           { text: 'App', link: 'https://app.mycompanydesk.com' },
         ],
         sidebar: sidebarNL(),
@@ -456,9 +481,31 @@ export default defineConfig({
         },
       },
     },
+    en: {
+      label: 'English',
+      lang: 'en',
+      description: LOCALE_META.en.description,
+      themeConfig: {
+        nav: [
+          { text: 'Guide', link: '/en/getting-started/introduction' },
+          { text: 'Features', link: '/en/features/dashboard' },
+          { text: 'Settings', link: '/en/settings/company' },
+          { text: 'App', link: 'https://app.mycompanydesk.com' },
+        ],
+        sidebar: sidebarEN(),
+        outlineTitle: 'On this page',
+        lastUpdatedText: 'Last updated',
+        docFooter: { prev: 'Previous', next: 'Next' },
+        editLink: {
+          pattern: 'https://github.com/silvanrijnberk/mycompanydesk-docs/edit/main/docs/:path',
+          text: 'Edit this page',
+        },
+      },
+    },
     de: {
       label: 'Deutsch',
       lang: 'de',
+      description: LOCALE_META.de.description,
       themeConfig: {
         nav: [
           { text: 'Anleitung', link: '/de/getting-started/introduction' },
@@ -479,6 +526,7 @@ export default defineConfig({
     fr: {
       label: 'Français',
       lang: 'fr',
+      description: LOCALE_META.fr.description,
       themeConfig: {
         nav: [
           { text: 'Guide', link: '/fr/getting-started/introduction' },
@@ -507,12 +555,12 @@ export default defineConfig({
       provider: 'local',
     },
     footer: {
-      message: 'MyCompanyDesk — Accounting made simple.',
+      message: 'MyCompanyDesk, boekhouding eenvoudig gemaakt.',
       copyright: 'Copyright © 2024-present MyCompanyDesk',
     },
     editLink: {
       pattern: 'https://github.com/silvanrijnberk/mycompanydesk-docs/edit/main/docs/:path',
-      text: 'Edit this page',
+      text: 'Bewerk deze pagina',
     },
   },
 })

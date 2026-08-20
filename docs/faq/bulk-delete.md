@@ -9,11 +9,11 @@ chatbot:
   follow_up: ["How do I cancel a sent invoice?", "How do I filter items before bulk actions?", "How do I export items before deleting?"]
 ---
 
-To delete multiple invoices or expenses at once:
-1. Go to the list view (Invoices or Expenses)
-2. Select multiple items using the checkboxes
-3. Click the bulk action button at the top
-4. Choose "Delete" from the dropdown
-5. Confirm the bulk deletion
+Om meerdere items tegelijk te verwijderen:
+1. Ga naar de betreffende lijstweergave (Facturen, Uitgaven, etc.)
+2. Gebruik de selectievakjes om de items te selecteren die je wilt verwijderen
+3. Klik op het bulkactiemenu bovenaan
+4. Selecteer "Geselecteerde verwijderen"
+5. Bevestig de verwijdering
 
-Note: Only draft items can typically be bulk deleted. Sent or paid items should be cancelled individually.
+Waarschuwing: Verwijderde items kunnen mogelijk niet worden hersteld. Overweeg archivering voor belangrijke gegevens.

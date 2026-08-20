@@ -1,5 +1,5 @@
 ---
-title: Email templates
+title: E-mailsjablonen
 last_verified: 2026-08-14
 chatbot:
   triggers: ["email template", "customize email", "invoice email message", "email text", "change email message", "email sjabloon", "email aanpassen", "e-mail vorlage", "modele email", "personnaliser email"]
@@ -7,13 +7,13 @@ chatbot:
     - { label: "Open email settings", to: "/settings/email" }
   follow_up: ["How do I send an invoice by email?", "How do I change the PDF style?"]
 ---
-Email templates can no longer be edited. MyCompanyDesk uses standard, well-tested texts for invoice, credit note, quote, and reminder emails, in your document language.
+E-mailsjablonen kun je niet meer bewerken. MyCompanyDesk gebruikt standaard, goed geteste teksten voor factuur-, creditnota-, offerte- en herinneringsmails, in je documenttaal.
 
-Credit note emails use a dedicated template that names the document as a credit note, states the credited amount as a positive number, and does not ask for payment or include a due date.
+Creditnotamails gebruiken een eigen sjabloon dat het document als creditnota benoemt, het gecrediteerde bedrag als positief bedrag vermeldt en niet vraagt om te betalen of een vervaldatum toont.
 
-What you can change:
-1. The sender: go to Settings → Email and choose your own domain (Pro), Gmail, or Outlook
-2. Your sign-off: on the same page, fill in your support email, website, and social links; they appear under every email
-3. A single email: in the send window you can adjust the recipient, subject, and message before the email goes out
+Wat je wel kunt aanpassen:
+1. De afzender: ga naar Instellingen → E-mail en kies je eigen domein (Pro), Gmail of Outlook
+2. Je afsluiter: vul op dezelfde pagina je support-e-mail, website en social links in; die verschijnen onder elke e-mail
+3. Een losse e-mail: in het verzendvenster pas je de ontvanger, het onderwerp en het bericht aan voordat de e-mail de deur uit gaat
 
-Tip: The details in your sign-off are shared with your company details, so filling them in once keeps every email complete.
+Tip: De gegevens in je afsluiter deel je met je bedrijfsgegevens, dus één keer invullen houdt elke e-mail compleet.

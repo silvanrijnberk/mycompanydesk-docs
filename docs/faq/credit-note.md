@@ -1,5 +1,5 @@
 ---
-title: Credit note
+title: "Creditnota"
 last_verified: 2026-08-16
 chatbot:
   triggers: ["credit note", "create credit note", "issue credit", "credit invoice", "creditnota", "creditnota aanmaken", "gutschrift erstellen", "note de credit", "avoir"]
@@ -8,26 +8,26 @@ chatbot:
   follow_up: ["How do I cancel an invoice instead?", "How does a credit note affect my VAT?", "How do I find the original invoice?"]
 ---
 
-To create a credit note:
-1. Open the original invoice you want to credit
-2. Click "Create credit note / correction" on the detail page
-3. MyCompanyDesk creates a complete, finalized credit note in one step: every line from the original is negated and the credit note gets the next number in your sequence
-4. Send the credit note to the customer
+Zo maak je een creditnota:
+1. Open de originele factuur die je wilt crediteren
+2. Klik op "Creditnota / correctie maken" op de detailpagina
+3. MyCompanyDesk maakt in één stap een complete, definitieve creditnota: elke regel van het origineel wordt negatief overgenomen en de creditnota krijgt het volgende nummer in je reeks
+4. Verstuur de creditnota naar de klant
 
-Canceled invoices cannot be credited. If you need to correct an invoice that was already canceled, duplicate the canceled invoice and make the changes there.
+Geannuleerde facturen kun je niet crediteren. Wil je een al geannuleerde factuur alsnog corrigeren? Dupliceer de geannuleerde factuur en pas daar de wijzigingen aan.
 
-You cannot adjust the amounts during creation; sent documents are locked, so the credit note always mirrors the original exactly. For a partial correction, create the full credit note first and then issue a new invoice for the correct amount.
+Je kunt de bedragen tijdens het aanmaken niet aanpassen; verstuurde documenten zijn vergrendeld, dus de creditnota is altijd een exacte spiegel van het origineel. Wil je maar een deel corrigeren? Maak dan eerst de volledige creditnota en stuur daarna een nieuwe factuur met het juiste bedrag.
 
-MyCompanyDesk also prevents you from crediting more than the original invoice amount. You can issue several partial credit notes against the same invoice, but once the combined credit total reaches the invoice total, no further credit note can be created for that invoice.
+MyCompanyDesk voorkomt ook dat je meer crediteert dan het bedrag van de originele factuur. Je kunt meerdere deelcreditnota's op dezelfde factuur maken, maar zodra het totaal van de creditnota's het factuurbedrag bereikt, is er geen nieuwe creditnota meer mogelijk voor die factuur.
 
-A credit note returns money to the customer, so it has no payment due date of its own. In the customer portal the due-date row and the past-invoices table hide the deadline for credit notes. The Confirm payment button is also hidden, because a credit note pays the customer instead of asking the customer to pay. When the original invoice has been fully credited, the portal hides the payment buttons on that invoice too, labels the payment summary as Credited, and shows the credit note amount as part of the balance breakdown.
+Een creditnota brengt geld terug naar de klant, dus heeft deze geen eigen vervaldatum. In het klantenportaal verbergt de vervaldatumrij en de tabel met eerdere facturen de deadline voor creditnota's. De knop Betaling bevestigen is ook verborgen, omdat een creditnota de klant betaalt in plaats van de klant te vragen te betalen. Wanneer de originele factuur volledig is gecrediteerd, verbergt het portaal ook de betaalknoppen op die factuur, toont het de betalingsstatus als Gecrediteerd en vermeldt het creditbedrag in de opbouw van het saldo.
 
-In the invoice list, the credit note amount is already deducted from the original invoice. The outstanding report and the receivables ageing card also net the credit against the invoice, so the customer's balance reflects what is actually still owed.
+In de facturenlijst wordt het bedrag van de creditnota al van de originele factuur afgetrokken. Het openstaande-debiteurenoverzicht en de ouderdomsanalysekaart verrekenen de creditnota ook met de factuur, zodat het saldo van de klant laat zien wat er écht nog openstaat.
 
-In the back office, the credit note detail page shows whether the credit amount is still open or already settled, so you can see at a glance whether you still need to refund or offset it.
+In de backoffice toont de detailpagina van de creditnota of het creditbedrag nog openstaat of al is verrekend. Zo zie je in één oogopslag of je de klant nog moet terugbetalen of verrekenen.
 
-When the original invoice has been fully credited, the invoice detail page no longer labels it as fully paid. Instead it shows that the invoice is credited and nothing more is due. If the customer had already paid before the credit was issued and that payment now exceeds the remaining amount, the page also shows the refund amount the customer is owed.
+Wanneer de originele factuur volledig is gecrediteerd, toont de detailpagina van de factuur niet langer de status volledig betaald. In plaats daarvan staat dat de factuur is gecrediteerd en dat er niets meer openstaat. Heeft de klant al betaald voordat de creditnota werd aangemaakt en is die betaling nu hoger dan het resterende bedrag, dan toont de pagina ook het terug te betalen bedrag dat je de klant verschuldigd bent.
 
-When you send a credit note by email, it uses a dedicated credit-note template. The subject line names it as a credit note, the body states the credited amount as a positive number, and it does not ask for payment or show a due date. The PDF itself uses Credit note to, Credit note details, and Credit note No. in place of the invoice labels, so a credit note is never mislabeled as an invoice. While the credit note is still a draft, the suggested action card only offers to send it; once sent, no reminder or collection actions appear, because a credit note pays the customer rather than asking for money.
+Als je een creditnota per e-mail verstuurt, gebruikt hij een eigen sjabloon. Het onderwerp noemt hem als creditnota, de tekst vermeldt het gecrediteerde bedrag als positief bedrag en er wordt niet gevraagd om te betalen of een vervaldatum getoond. De PDF zelf gebruikt 'Creditfactuur aan', 'Creditfactuurgegevens' en 'Creditfactuurnr.' in plaats van de factuurvarianten, zodat een creditnota nooit per ongeluk als factuur wordt aangeduid. Zolang de creditnota nog een concept is, biedt de actiekaart alleen de optie om hem te versturen; na verzending verschijnen er geen herinnerings- of incassoacties, omdat een creditnota de klant betaalt in plaats van geld te vragen.
 
-Tip: Because you create the credit note from the original invoice, the two documents match exactly and your records stay consistent.
+Tip: Doordat je de creditnota vanaf de originele factuur maakt, sluiten beide documenten precies op elkaar aan en blijft je administratie kloppend.

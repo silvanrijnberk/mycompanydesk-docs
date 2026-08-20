@@ -1,5 +1,5 @@
 ---
-title: "Year overview"
+title: "Jaaroverzicht"
 last_verified: 2026-05-09
 chatbot:
   triggers:
@@ -21,10 +21,10 @@ chatbot:
     - "How do I prepare my VAT return?"
 ---
 
-To review a full year in the app:
-1. Open Reports
-2. Set the period filter to Year and pick the year you want to inspect
-3. The Overview shows the headline figures; switch to the P&L, Cash Flow, Clients, or Forecast view for more detail
-4. Turn on the comparison filter to see the year next to a previous year
+Om een volledig jaar in de app te bekijken:
+1. Open Rapporten
+2. Zet de periodefilter op Jaar en kies het jaar dat je wilt bekijken
+3. Het overzicht toont de hoofdcijfers; ga naar de weergave Winst & verlies, Cashflow, Klanten of Prognose voor meer detail
+4. Zet de vergelijkingsfilter aan om het jaar naast een eerder jaar te zien
 
-Tip: The include open invoices filter controls whether unpaid invoices count toward the totals.
+Tip: Met de filter "Inclusief open facturen" bepaal je of onbetaalde facturen meetellen in de totalen.

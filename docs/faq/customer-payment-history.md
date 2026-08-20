@@ -1,5 +1,5 @@
 ---
-title: Customer payment history
+title: "Betalingsgeschiedenis van een klant"
 last_verified: 2026-05-09
 chatbot:
   triggers: ["customer payment history", "payment history", "customer invoices", "customer payments", "betalingsgeschiedenis", "klant facturen bekijken", "zahlungshistorie", "historique paiements client"]
@@ -8,9 +8,9 @@ chatbot:
   follow_up: ["How do I send a payment reminder?", "How do I view overdue invoices?", "How do I edit customer details?"]
 ---
 
-To view a customer's payment history:
-1. Open Customers and select the customer
-2. Check the "Recent invoices" card on the customer profile; it shows each invoice's number, date, total, and status
-3. Open an invoice from that card for the payment details, such as when and how it was paid
+Om de betalingsgeschiedenis van een klant te bekijken:
+1. Open Klanten en selecteer de klant
+2. Bekijk de kaart "Recente facturen" op het klantprofiel; daar zie je per factuur het nummer, de datum, het totaal en de status
+3. Open een factuur vanuit die kaart voor de betaalgegevens, zoals wanneer en hoe er is betaald
 
-The invoice detail page is where the full payment information lives; the customer profile gives you the quick status overview.
+De volledige betaalinformatie vind je op de detailpagina van de factuur; het klantprofiel geeft je het snelle statusoverzicht.

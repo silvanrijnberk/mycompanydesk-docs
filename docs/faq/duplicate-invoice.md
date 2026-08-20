@@ -1,5 +1,5 @@
 ---
-title: Duplicate an invoice
+title: "Factuur dupliceren"
 last_verified: 2026-08-17
 chatbot:
   triggers: ["duplicate invoice", "copy invoice", "clone invoice", "reuse invoice", "invoice template", "factuur kopieren", "factuur dupliceren", "rechnung kopieren", "dupliquer facture"]
@@ -8,13 +8,13 @@ chatbot:
   follow_up: ["How do I set up recurring invoices?", "How do I edit an invoice?", "How do I change the PDF template?"]
 ---
 
-To duplicate an invoice:
-1. Open the invoice you want to copy
-2. In the sidebar, find the "Actions" section
-3. Click "Duplicate"
-4. A new draft is created with the same line items and customer
-5. Adjust the date, amounts, or details as needed and save
+Zo dupliceer je een factuur:
+1. Open de factuur die je wilt kopiëren
+2. Zoek in de zijbalk de sectie "Acties"
+3. Klik op "Dupliceren"
+4. Er wordt een nieuw concept aangemaakt met dezelfde factuurregels en klant
+5. Pas de datum, bedragen of details aan en sla op
 
-The duplicate keeps the reference number and the linked property from the original invoice, so you do not lose a purchase-order number or a rental object assignment.
+Het duplicaat neemt het referentienummer en de gekoppelde bezitting uit de originele factuur over, dus je verliest geen inkoopordernummer of toewijzing aan een huurobject.
 
-Tip: This is great for similar invoices to the same customer, it saves re-entering all line items.
+Tip: Handig voor vergelijkbare facturen aan dezelfde klant, zo hoef je niet alle regels opnieuw in te voeren.

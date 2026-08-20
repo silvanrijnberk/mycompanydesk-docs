@@ -1,196 +1,147 @@
 ---
-title: AI Features
-last_verified: 2026-05-18
+title: AI-functies
 ---
 
-# AI Features
+# AI-functies
 
-MyCompanyDesk uses AI in several places to speed up data entry, surface answers from your own books, and lower the cost of writing copy in four languages. This page lists every AI surface that ships in the product today and how it behaves.
+MyCompanyDesk bevat AI-gestuurde functies om je sneller en slimmer te laten werken.
 
-Provider routing is intentional and changes per surface. The default chain is EU-only: Gemini (free quota) on Vertex AI `europe-west1` first, local Ollama as last resort. Ollama Cloud (US-hosted) is disabled by default because MyCompanyDesk does not have a signed Data Processing Agreement with Ollama Inc. It can be re-enabled for workloads that demonstrably carry no customer personal data, but the LLM router falls through to Vertex EU otherwise. Plan gating, where it applies, is enforced at the API layer through entitlements.
+## Contextuele gids
 
-## Contextual guide (in-app chatbot)
+De assistent-icoon in de topbar opent een chatpaneel dat weet op welke pagina je bent, welke records je bekijkt en hoe je werkruimtegegevens eruitzien. Het is gebouwd als een tool-using agent: in plaats van getallen te gokken, vraagt ze ernaar. Op desktop opent het paneel als een drawer die rechts tegen de rand van het scherm zit; op mobiel opent het als een bottom sheet via de sparkles-knop in de mobiele header.
 
-The assistant icon in the topbar opens a chat panel that knows which page you are on, what records you are looking at, and what your workspace data looks like. It is built as a tool-using agent: instead of guessing at numbers, it asks for them. On desktop the panel opens as a drawer pinned to the right edge of the screen; on mobile it opens as a bottom sheet from the sparkles button in the mobile header.
+### Chatlimieten
 
-- **Model.** Default chat model is Gemini on Vertex AI `europe-west1`, served over Cloudflare AI Gateway. When Ollama Cloud is explicitly enabled at the workspace level, `deepseek-v4-pro:cloud` takes over as the primary tier. Both paths fall back to the next tier on rate-limit or outage; the swap is transparent to the conversation.
-- **Streaming.** Replies stream over `POST /api/contextual-guide/stream` (Server-Sent Events). The web client renders incoming tokens as a typewriter effect so first tokens appear in well under a second.
-- **FAQ short-circuit.** Before the model is called, the query is matched against the workspace FAQ corpus using SymSpell-corrected keyword search and a vector cosine fallback (Workers AI `bge-m3` primary, Gemini embeddings fallback). A confident match returns the curated FAQ answer with no LLM round-trip -- fast and free.
-- **Page context.** The current route, the visible entity, and a compact app-state summary are injected into the system prompt. The guide answers about what you are seeing, not in the abstract.
-- **Conversation memory.** The last 6 turns are kept verbatim; older turns are summarised into a rolling memory.
-- **Pre-filter, no router.** A small deterministic filter catches forbidden topics, casual messages, and empty input before the model is called. Beyond that there is **no DATA/FAQ/GENERAL classifier in front of the agent** -- the model sees the full tool catalog and picks tools itself, including a tool that searches the help knowledge base. One question can naturally use multiple tools (e.g. "how do I file my Q2 VAT and what's my saldo" calls `search_help` and `vat_aangifte_rubrieken` in the same loop).
+Chatgebruik is afhankelijk van je abonnement:
 
-### EU AI Act disclosure (art. 50)
-
-The EU AI Act (Regulation 2024/1689) classifies the contextual guide as a limited-risk AI system under article 50. Limited-risk systems must transparently disclose to end users that they are interacting with AI. Two disclosure mechanisms ship in the guide:
-
-- **AI badge.** A small "AI" pill sits next to the assistant name in the drawer header. It is always visible while the guide is open, satisfying the continuous-disclosure requirement. A tooltip on the badge names the underlying provider (Google Gemini).
-- **Intro disclosure text.** A short line appears under the welcome prompt in the empty chat state: "You are talking to an AI assistant. Answers may contain errors; always verify financial or tax conclusions yourself."
-
-These disclosures also appear in Dutch, German, and French in their respective locale builds. The obligation takes effect in August 2026; the disclosures shipped ahead of the deadline.
-
-### Pro visual skin
-
-Pro-tier workspaces get a premium assistant skin that replaces the generic styling with the Pro violet accent. When the billing plan is Pro, the assistant panel changes visually:
-
-- The "AI" pill becomes a violet "Pro" pill, signalling that the assistant runs on the highest-tier model with full app context.
-- The panel border, avatar ring, online-dot, and send button shift to violet (`#a855f7`), matching the Pro ribbon in the app navigation.
-- The status line reads "Your Pro assistant is ready" instead of the generic "Ready to help."
-
-The Pro skin is purely cosmetic. The underlying model selector, tool catalog, and EU AI Act disclosures remain identical across tiers. Backed by `TIER_CHAT_CONFIG` which already gives Pro a heavier model variant and unlimited app context.
-
-### Tool catalog
-
-When the question needs a number, page-help, or a VAT-specific aggregate, the model calls one of approximately 18 parameterised tools. Each handler is a hand-written, RLS-protected `SELECT` (or a wrapper around an existing aggregate service) -- the model picks the tool name and arguments, it cannot author SQL. Read-only by design. The same catalog is exposed to Gemini (function declarations) and to Ollama Cloud (OpenAI-compatible `tools` array), so a fallback between providers keeps capabilities identical.
-
-**Data tools** -- accept `period` of `this_month` / `last_month` / `this_quarter` / `this_year` / `last_year`:
-
-| Tool | Returns |
+| Abonnement | Chatberichten (maandelijks) |
 |---|---|
-| `revenue_summary` | Revenue, expenses, profit for a period |
-| `top_customers` | Top customers by revenue or outstanding |
-| `overdue_invoices` | List of currently overdue invoices |
-| `vat_summary` | VAT collected, paid, and net for a period |
-| `monthly_breakdown` | Per-month totals across the year |
-| `expense_summary` | Expense totals grouped by category |
-| `time_summary` | Time-registration totals per project |
-| `invoice_list` | Invoices filtered by status/date/customer |
-| `customer_aging` | Receivables aging buckets per customer |
-| `tax_summary` | Country-aware tax position for the period |
+| Gratis | 10 |
+| Starter | 100 |
+| Pro | 1 000 |
 
-**VAT tools** -- accept `year` plus `period` of `Q1`/`Q2`/`Q3`/`Q4`/`year`:
+AI-limieten zijn maandelijks, niet dagelijks. Ze worden elke eerste van de maand gereset.
 
-| Tool | Returns |
-|---|---|
-| `vat_aangifte_rubrieken` | Unified NL aangifte sheet (sections 1-5, codes 1a-5g) |
-| `vat_pre_filing_checks` | Concrete blockers before filing (drafts, missing receipts, ICP pending) |
-| `vat_kor_status` | KOR threshold tracker -- YTD revenue versus EUR 20 000 limit |
-| `vat_kia_status` | KIA bracket tracker -- investments and deduction amount |
-| `vat_icp_opgaaf` | Per-customer intra-EU B2B sales |
-| `vat_oss_breakdown` | Per-country EU OSS B2C sales |
-| `vat_foreign_refundables` | Foreign VAT refundables, EU procedure deadline |
+### EU AI Act-openbaarmaking (art. 50)
 
-**Help tool**:
+De contextuele gids valt onder de EU AI Act (Verordening 2024/1689) als een AI-systeem met beperkt risico (artikel 50). Dit betekent dat we duidelijk moeten maken dat je met AI praat. In de gids zijn daar twee dingen voor:
 
-| Tool | Returns |
-|---|---|
-| `search_help` | Best-matching FAQ entry (semantic-search wrapper). Used for "how do I X" questions. |
+- **AI-badge.** Een kleine "AI"-pill naast de assistentnaam in de header van de drawer. Altijd zichtbaar zolang de gids open is. Een tooltip op de badge noemt de onderliggende provider (Google Gemini).
+- **Openbaarmakingstekst.** Een korte regel onder de welkomstvraag in een leeg gesprek: "Je praat met een AI-assistent. Antwoorden kunnen fouten bevatten; controleer financiële of fiscale conclusies altijd zelf."
 
-The chat defaults to Gemini on Vertex AI `europe-west1`. When a workspace explicitly enables Ollama Cloud, the chat is pinned to `deepseek-v4-pro:cloud` -- empirical bench showed deepseek lands a 2-tool plan + synthesis in approximately 3 seconds, faster than `qwen3-coder-next:cloud` and `gpt-oss:120b-cloud` on this workload. Gemini is the fallback path when Ollama Cloud is unavailable or disabled.
+De verplichting geldt vanaf augustus 2026; de openbaarmakingen zijn voor de deadline ingebouwd.
 
-The standalone `/api/vat-assistant/*` route is **gone** as of May 2026 -- VAT questions go through the same unified contextual-guide endpoint and the `vat_*` tools above. There is no separate model or panel.
+### Pro-uiterlijk
 
-## Vendor classifier (expenses)
+Pro-werkruimtes krijgen een premium assistent-uiterlijk dat de generieke styling vervangt door het Pro-violet. Wanneer het facturatieplan Pro is, verandert het assistentpaneel visueel:
 
-When you enter an expense, the **vendor classifier** suggests the right category from your workspace's `expense_categories` table -- not a fixed built-in list. It runs through Gemini Flash-Lite with a Dutch SME bookkeeping prompt that:
+- De "AI"-pill wordt een violette "Pro"-pill, wat aangeeft dat de assistent op het hoogste model draait met volledige app-context.
+- De paneelrand, avatarring, online-dot en verzendknop veranderen naar violet (`#a855f7`), passend bij de Pro-lint in de app-navigatie.
+- De statusregel toont "Jouw Pro-assistent staat klaar" in plaats van het generieke "Klaar om te helpen."
 
-- Matches the vendor against existing category keys before creating new ones.
-- Picks a `vat_treatment` (`standard` / `b2b_reverse_charge` / `foreign_vat_charged` / `import` / `kor`) based on the vendor's domain and country.
-- Auto-flags potential investments (hardware/equipment over EUR 450 ex-VAT) so depreciation kicks in.
+Het Pro-uiterlijk is puur cosmetisch. De onderliggende modelselector, toolcatalogus en EU AI Act-openbaarmakingen blijven identiek voor alle abonnementen. Achter de schermen geeft `TIER_CHAT_CONFIG` Pro al een zwaarder model en onbeperkte app-context.
 
-The classifier is invoked from `expense-categories.service.classifyVendor(companyId, { vendor, domain })` and is wired to the expense form's category field.
+## AI-suggesties
 
-## AI suggestions (with RLHF-lite feedback loop)
+Slimme aanbevelingen die je helpen bij het categoriseren en beschrijven van je records:
 
-After an entity is created, the AI-suggestions service queues a low-priority LLM analysis and writes results into `ai_suggestions`. Surfaces include category fixes for expenses set to `other` and description-quality improvements for invoice line items, expenses, and customer notes.
+### Uitgavecategorisatie
 
-Applying a suggestion writes through the same expense update path as a manual edit. A trashed expense, a locked VAT period, or an archived/invalid category blocks the apply action with the same error codes you see when editing manually. When the update succeeds, MyCompanyDesk records an audit log entry for the changed fields, just like a regular edit.
+Wanneer je een uitgave aanmaakt, analyseert AI de omschrijving en stelt de meest geschikte categorie voor. Dit bespaart tijd en zorgt voor consistente categorisatie.
 
-Endpoints that act on a specific suggestion or expense now validate their path parameters as UUIDs. Requests with an invalid `entityId` or suggestion `id` return `400 VALIDATION_ERROR` before the service layer is reached, so malformed URLs do not produce unexpected 500 responses.
+### Omschrijvingsverbeteringen
 
-The interesting bit is the **feedback loop**:
+AI kan duidelijkere, professionelere omschrijvingen suggereren voor:
 
-1. When you accept a suggestion, the input text is embedded (Workers AI `bge-m3` primary, Gemini fallback) and stored in `suggestion_examples` with the accepted value.
-2. The next time the same task fires for your workspace, the new input is embedded and the top-K nearest neighbours are pulled in as few-shot examples.
-3. The prompt picks up your house style automatically -- "prior examples this user accepted" becomes part of the system message.
+- Factuurregelitems
+- Uitgavenomschrijvingen
+- Klantnotities
 
-A FIFO cap of 50 examples per `(company_id, task)` keeps lookup at microseconds without `pgvector`. Embeddings are stamped with provider + dimension so a provider swap doesn't poison the lookup; mismatched rows are skipped, not crashed on.
+### Hoe het werkt
 
-Applying a suggestion invalidates the cached financial totals that depend on the changed record, so VAT, reports and the dashboard refresh straight away and reflect the new category, VAT treatment or description.
+1. Maak een record aan of bewerk er een
+2. Zoek naar de AI-suggestie-indicator
+3. Bekijk de suggestie
+4. Klik op **Toepassen** om deze te gebruiken, of **Negeren** om over te slaan
 
-## Industry detection
+Toepassen werkt via hetzelfde schrijfpad als een handmatige bewerking. Een uitgave in de prullenbak, een vergrendelde BTW-periode of een gearchiveerde/ongeldige categorie blokkeert de actie met dezelfde foutcodes die je ook ziet bij handmatig bewerken. Bij een succesvolle toepassing schrijft MyCompanyDesk een auditlogregel voor de gewijzigde velden, net als bij een normale update.
 
-The local **E2B** model (Gemini Flash-Lite primary, Workers AI fallback for both processing modes; Ollama Cloud as an additional fallback in Optimise mode only) classifies your workspace's industry from invoice and expense history. It re-evaluates progressively:
+Endpoints die op een specifieke suggestie of uitgave acteren, valideren hun padparameters als UUID. Verzoeken met een ongeldige `entityId` of suggestie-`id` geven `400 VALIDATION_ERROR` terug voordat de servicelaag wordt bereikt, zodat ongeldige URL's geen onverwachte 500-fouten veroorzaken.
 
-| Workspace state | Behaviour |
-|---|---|
-| 0-2 entities | Skip -- not enough signal |
-| 3+ entities, no profile | First detection |
-| Confidence < 0.6 and entity count doubled | Re-evaluate |
-| Confidence >= 0.6 and doubled again | Re-evaluate |
-| Confidence >= 0.8 | Stop |
+Wanneer je een suggestie toepast, worden de gecachede financiële totalen die van het gewijzigde record afhangen direct ongeldig gemaakt. BTW, rapportages en het dashboard verversen meteen en tonen de nieuwe categorie, btw-behandeling of omschrijving.
 
-The detected industry feeds back into the AI-suggestion prompts so categorisation matches how shops in your industry actually book things.
+::: info
+AI-suggesties vereisen het **Starter**-abonnement of hoger. Schakel ze in via **Bedrijf > Functies**.
+:::
 
-## Receipt scanner
+## Bonnen scannen
 
-Receipts and supplier invoices are extracted to structured expense data via `POST /api/receipt-scanner`.
+AI-gestuurde OCR extraheert gegevens uit bonafbeeldingen en PDF's:
 
-- **Primary path.** PDFs and images go straight to Gemini multimodal as `inlineData`. No `tesseract.js`, no `unpdf`, no preprocessing -- Gemini reads the document.
-- **Fallback path.** When AI privacy mode is on, the file is over 15 MB, or Gemini is rate-limited, the scanner falls back to local Ollama: PDFs through `unpdf` for text, images through `tesseract.js`, parsing by Gemma 4 E2B.
-- **Output.** Date, supplier, amount, line items, suggested category, VAT rate. Pre-LLM page filtering (keywords) keeps long PDFs cheap; a post-LLM exact-match filter is the safety net.
+- **Datum** — Wanneer de aankoop is gedaan
+- **Bedrag** — Totale kosten
+- **Leverancier** — Aan wie je hebt betaald
+- **Omschrijving** — Wat er is gekocht
 
-See [Receipt Scanning](/advanced/receipt-scanning) for the user-facing flow.
+Zie [Bonnen scannen](/advanced/receipt-scanning) voor gedetailleerde instructies.
 
-## Entity suggestions
+## Tekstcontrole
 
-The entity-suggestions service powers autocomplete-style inline hints on customer, project, and expense forms. It runs purely on database queries -- no LLM -- so it is instant and works offline. It complements the AI-suggestions service rather than competing with it: entity-suggestions is "remember what you typed last time", AI-suggestions is "what should this look like".
+Grammatica- en spellingcontrole voor je documenten:
 
-## Text check (typo correction)
+- Controleer factuuromschrijvingen voor het versturen
+- Verifieer offerte-inhoud
+- Corrigeer typefouten in klantgerichte tekst
 
-Form fields run an in-process **SymSpell** typo correction on debounce as you type. It is wired into nine entity forms (invoices, quotes, expenses, customers, projects, contracts, objects, recurring entries, time entries).
+Ondersteunt Engels, Nederlands, Duits en Frans.
 
-- **Endpoint.** `POST /api/text-check` returns `{ corrected, hasCorrections, grammarAvailable: false }`.
-- **Languages.** Dutch is the dictionary default; English, German, and French are supported.
-- **No grammar.** Sentence-level grammar checking via LanguageTool was removed -- keystroke-grade grammar was a continuous tax for marginal value. A button-triggered "Improve" action may return as a separate feature.
+::: info
+Tekstcontrole is beschikbaar op alle abonnementen, inclusief Gratis.
+:::
 
-## Translation (Gemini Flash-Lite)
+## Accountsamenvattingen
 
-Runtime translation of short snippets goes through `translate.service` which wraps Gemini Flash-Lite. Three call sites use it today:
+AI genereert periodieke samenvattingen van je bedrijfsactiviteit:
 
-- **Chatbot.** Pre-processing translates non-English questions to English before the model call, then translates the reply back to the company language.
-- **Support / feedback.** Inbound messages are normalised to English for the operations team.
-- **AI suggestions.** Description prompts run in English, output is translated back.
+- **Dagelijks** — Snel overzicht van de transacties van de dag
+- **Wekelijks** — Weekoverzicht met trends
+- **Maandelijks** — Uitgebreide maandelijkse analyse
 
-Bulk locale-file sync (filling missing keys, re-translating drift across `nl/de/fr`) is **not** in this service -- it lives in the Huisbot weekly cron which opens PRs against `development` autonomously. The in-app UI never blocks on translation drift.
+Samenvattingen worden gegenereerd in je voorkeurstaal en zijn beschikbaar vanaf het dashboard.
 
-## Dashboard briefing insight (Pro)
+## Dashboard-briefing inzicht (Pro)
 
-The dashboard briefing hero shows a short, personal AI-written briefing for Pro workspaces. The server generates it once per calendar day and caches it for the rest of the day.
+De dashboard-briefing hero toont een korte, persoonlijke AI-geschreven briefing voor Pro-werkruimtes. De server genereert de briefing eenmaal per kalenderdag en cached deze voor de rest van de dag.
 
-- **Voice.** The briefing speaks in the first person ("ik") and addresses the user informally ("je"). It opens with the single most urgent action, adds at most one or two supporting points, and closes with a concrete suggested next step (e.g. "stuur Atelier Norden vandaag een herinnering"). Warm, confident, concise — the tone of a smart assistant who knows the business.
-- **Model.** The endpoint `POST /api/dashboard/briefing-insight` runs on Vertex AI `europe-west1` (Gemini 2.5 Flash). Ollama Cloud is not used for this path.
-- **Input signals.** The client sends a full digest of the day's business data: liquidity and runway, revenue and profit (MTD + YTD), overdue receivables (count, total, worst customer), bills (due soon + overdue), draft counts, project margins, VAT position (balance, deadline, checklist progress, reserve), unbilled hours, recent payments, and new customers. All amounts are rounded to whole euros before reaching the model.
-- **Locales.** The model generates the briefing in `nl/de/en/fr` based on the user's locale. The client includes the ISO 639-1 code with the request.
-- **Plan gating.** The endpoint is gated on the `ai_insights` feature flag, which requires Pro. When a workspace is not entitled, the client keeps the deterministic lede alone.
-- **Fallback.** On any failure (model unavailable, 403, network error) the client uses the existing deterministic lede. No error is shown to the user.
-- **Client UX.** While the AI briefing loads, the hero shows the previous day's cached deterministic lede. When the AI version arrives, a cross-fade transition (opacity + slide) replaces it. The AI briefing appears with a sparkle icon and primary text color. A layout-matched skeleton shimmer (`BriefingSkeleton`) holds the entire dashboard shape until core data settles, then dissolves into a coordinated staggered entrance animation. Reduced-motion users get no animations.
+- **Stem.** De briefing spreekt in de eerste persoon ("ik") en spreekt de gebruiker informeel aan ("je"). Hij opent met de meest urgente actie, voegt hooguit een of twee ondersteunende punten toe, en sluit af met een concrete vervolgstap (bijv. "stuur Atelier Norden vandaag een herinnering"). Warm, zelfverzekerd, bondig -- de toon van een slimme assistent die de zaak kent.
+- **Model.** Het endpoint `POST /api/dashboard/briefing-insight` draait op Vertex AI `europe-west1` (Gemini 2.5 Flash). Ollama Cloud wordt niet gebruikt voor dit pad.
+- **Input signalen.** De client stuurt een volledig overzicht van de zakelijke data van de dag: liquiditeit en runway, omzet en winst (MTD + YTD), achterstallige debiteuren (aantal, totaal, slechtste klant), rekeningen (binnenkort + achterstallig), aantal concepten, projectmarges, btw-positie (saldo, deadline, checklistvoortgang, reserve), niet-gefactureerde uren, recente betalingen en nieuwe klanten. Alle bedragen worden afgerond op hele euro's voordat ze het model bereiken.
+- **Locales.** Het model genereert de briefing in `nl/de/en/fr` op basis van de taal van de gebruiker. De client stuurt de ISO 639-1-code mee met het verzoek.
+- **Plan-gating.** Het endpoint is gekoppeld aan de `ai_insights` feature flag, die Pro vereist. Als een werkruimte geen recht heeft, toont de client alleen de standaard lede.
+- **Fallback.** Bij een fout (model niet beschikbaar, 403, netwerkfout) gebruikt de client de bestaande standaard lede. De gebruiker ziet geen foutmelding.
+- **Client UX.** Terwijl de AI-briefing laadt, toont de hero de gecachte deterministische lede van de vorige dag. Zodra de AI-versie binnen is, vervangt een cross-fade-overgang (opacity + slide) deze. De AI-briefing verschijnt met een sparkle-icoon en primaire tekstkleur. Een layout-matched skeleton-shimmer (`BriefingSkeleton`) houdt de volledige dashboardvorm vast totdat de kerndata binnen is, waarna deze oplost in een gecoordineerde, gestaffelde entree-animatie. Gebruikers met reduced-motion krijgen geen animaties.
 
-## Plan gating
 
-| Surface | Free | Starter | Pro |
+## Abonnementsrechten
+
+| Functie | Gratis | Starter | Pro |
 |---|---|---|---|
-| Contextual guide (incl. VAT tools) | Limited messages, FAQ-only on overflow | Standard tier | Highest tier |
-| AI suggestions | On | On | On |
-| Vendor classifier | On | On | On |
-| Receipt scanner | On | On | On |
-| Text check | On | On | On |
-| Translation | On (UI strings only) | On | On |
-| Briefing insight | Off | Off | On |
+| Contextuele gids | Beperkt, alleen FAQ bij overloop | Standaard | Hoogste limiet |
+| AI-suggesties | Uit | Aan | Aan |
+| Leverancierclassificatie | Uit | Aan | Aan |
+| Bonnen scannen | Uit | Aan | Aan |
+| Tekstcontrole | Aan | Aan | Aan |
+| Vertaling | Aan (alleen UI) | Aan | Aan |
+| Dashboard-briefing inzicht | Uit | Uit | Aan |
 
-<!-- TODO(source-missing): AI_USAGE_LIMIT locale string implies a daily AI usage cap; this page states monthly caps only. Needs a sources/ entry before documenting the daily limit. -->
-## AI usage caps (monthly)
+## Privacy en gegevensbescherming
 
-AI caps are monthly, not daily. A bookkeeper who batches 40 receipts on a Friday does not blow through a daily quota that resets at midnight. Cap tracking uses `ai_usage.date` with the first-of-month date. Monthly caps:
+Alle cloud-AI-functies draaien standaard op Vertex AI in `europe-west1` (EU). MyCompanyDesk heeft een verwerkersovereenkomst met Google Cloud voor Vertex AI. Ollama Cloud (ollama.com, gehost in de VS) staat standaard uit omdat er geen verwerkersovereenkomst met Ollama Inc. is. Je kunt het per workspace inschakelen voor workloads zonder persoonsgegevens, maar het staat uit voor alle abonnementen.
 
-| Metric | Free | Starter | Pro |
-|---|---|---|---|
-| AI chat messages | 10 | 100 | 1 000 |
-| AI receipt scans | 3 | 30 | 200 |
-| AI suggestions | 10 | 200 | 2 000 |
+Zet je `ai_processing_mode` op `local_only`, dan blijven bonnen scannen, AI-suggesties, tekstcontrole, leverancierclassificatie en brancheherkenning volledig op je eigen server. De contextuele gids werkt alleen in de cloud en is uitgeschakeld in `local_only`-modus.
 
-## Privacy
+## Tips
 
-All cloud AI paths route through Vertex AI in `europe-west1` (EU) by default. MyCompanyDesk has a signed DPA with Google Cloud for Vertex AI usage. Ollama Cloud (ollama.com, US-hosted) is disabled by default because no DPA or Standard Contractual Clauses exist with Ollama Inc. Workspaces can enable it explicitly, but it is off by default for all plans.
-
-When `ai_processing_mode` is set to `local_only` on the workspace, every AI path that supports it (receipt scanner, AI suggestions, text check, vendor classifier, industry detection) routes through the local Ollama instance and never leaves the server. The contextual guide is cloud-only by design -- it requires the chat-tier model and is disabled in `local_only` mode rather than degraded.
+- Schakel AI-suggesties eenmaal in en ze werken automatisch op de achtergrond
+- Bonnen scannen is vooral handig voor papieren bonnen — maak gewoon een foto
+- De contextuele gids kan de meeste "hoe doe ik..."-vragen over de app beantwoorden

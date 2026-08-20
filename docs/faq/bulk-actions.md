@@ -6,19 +6,19 @@ chatbot:
   actions: []
   follow_up: ["How do I delete multiple invoices?", "How do I export selected items?"]
 ---
-To perform bulk actions:
-1. Go to the list view (Invoices, Expenses, or Customers)
-2. Select multiple items using the checkboxes
-3. The action bar appears at the bottom of the page on desktop and at the bottom of the screen on mobile
-4. Choose the action (e.g. delete, send, export)
-5. Confirm the bulk operation
+Om bulkacties uit te voeren:
+1. Ga naar de lijstweergave (Facturen, Uitgaven of Klanten)
+2. Selecteer meerdere items met de selectievakjes
+3. De actiebalk verschijnt onderaan de pagina op desktop en onderaan het scherm op mobiel
+4. Kies de actie (bijv. verwijderen, verzenden, exporteren)
+5. Bevestig de bulkbewerking
 
-## Bulk finalizing checks
+## Controles bij bulksgewijs afronden
 
-When you finalize or send invoices in bulk, MyCompanyDesk runs the same VAT and status checks as when you send one invoice. For example, a reverse-charge invoice cannot be finalized unless the customer has a VAT number, and a 0% VAT line (sources/vat-rates.yaml#countries.NL.zero) must have a clear basis (reverse charge or an approved zero-rate reason). Invoices that fail a check are skipped, and the results screen lists the affected invoices with the reason so you can fix them.
+Als je facturen bulksgewijs afrondt of verstuurt, voert MyCompanyDesk dezelfde BTW- en statuscontroles uit als bij een enkele factuur. Zo kan een factuur met verlegde BTW bijvoorbeeld niet worden afgerond als de klant geen BTW-nummer heeft, en moet een regel met 0% BTW (sources/vat-rates.yaml#countries.NL.zero) een duidelijke grondslag hebben (verlegde BTW of een goedgekeurde nultariefreden). Facturen die een controle niet doorstaan, worden overgeslagen; in het resultatenscherm zie je welke facturen het betreft en waarom.
 
-## Bulk archiving expenses
+## Uitgaven bulksgewijs archiveren
 
-Archiving several unpaid expenses at once can stop their open payment reminders. The bulk bar shows a confirmation first when any selected expense is unpaid and has a due date, so you know how many of the selected expenses lose a reminder. The reminder stays paused while the expenses are archived. If you restore an archived expense later, the daily sweep recreates the reminder, but not immediately; it returns the next night at the earliest.
+Als je meerdere onbetaalde uitgaven tegelijk archiveert, vallen hun openstaande betaalherinneringen stil. De bulkbalk toont eerst een bevestiging zodra een van de geselecteerde uitgaven onbetaald is én een vervaldatum heeft, zodat je weet hoeveel van de geselecteerde uitgaven hun herinnering kwijtraken. Zolang de uitgaven gearchiveerd zijn, blijft de herinnering uit. Zet je een gearchiveerde uitgave later terug, dan maakt de dagelijkse sweep de herinnering opnieuw aan, maar pas de volgende nacht op zijn vroegst.
 
-Tip: Use filters first to narrow down the list, then select all visible items for efficient batch processing.
+Tip: Gebruik eerst filters om de lijst te beperken en selecteer vervolgens alle zichtbare items voor efficiënte batchverwerking.

@@ -1,5 +1,5 @@
 ---
-title: "Accountant access"
+title: "Boekhouder toegang geven"
 last_verified: 2026-08-15
 chatbot:
   triggers:
@@ -27,49 +27,48 @@ chatbot:
     - "What happens when my accountant invites me?"
 ---
 
-There are two ways accountant access can start: either you invite your accountant from your own workspace, or your accountant invites you to create a workspace from their boekhouder portal.
+Er zijn twee manieren waarop boekhoudertoegang kan beginnen: jij nodigt je boekhouder uit vanuit je eigen werkruimte, of je boekhouder nodigt jou uit om een werkruimte aan te maken vanuit het boekhoudersportaal.
 
-## You invite your accountant
+## Jij nodigt je boekhouder uit
 
-1. Go to Settings → "Toegang en boekhouder" (access and accountant)
-2. In the Boekhouder (accountant) section, use "Add accountant" to add the contact details
-3. Send the invite when you want them to create an account
-4. Open Manage access to set page permissions
+1. Ga naar Instellingen → "Toegang en boekhouder"
+2. Klik in het onderdeel Boekhouder op "Boekhouder toevoegen" en vul de contactgegevens in
+3. Verstuur de uitnodiging wanneer je wilt dat je boekhouder een account aanmaakt
+4. Open "Toegang beheren" om de paginarechten in te stellen
 
-Accountant access is free on every plan; it does not require Pro or a team seat. Common statuses are contact-only, invited, active, and revoked.
+Boekhoudertoegang is gratis op elk abonnement; er is geen Pro of teamplek voor nodig. Veelvoorkomende statussen zijn alleen contact, uitgenodigd, actief en ingetrokken.
 
-## Automatic delivery
+## Automatisch aanleveren
 
-After your accountant is connected, go to **Settings → Toegang en boekhouder** and turn on automatic delivery. MyCompanyDesk can then send your accountant an export with sales invoices, expenses and accepted quotes in a compatible format, so the figures do not have to be entered by hand. VAT return figures are not included; download those as CSV from **Taxes → VAT return**. You choose which streams to include and can see a log of what was delivered.
+Nadat je boekhouder is gekoppeld, ga je naar **Instellingen → Toegang en boekhouder** en zet je automatisch doorsturen aan. MyCompanyDesk kan dan een export aan je boekhouder leveren met verkoopfacturen, uitgaven en geaccepteerde offertes in een formaat dat het pakket van je boekhouder inleest, zodat de cijfers niet handmatig hoeven te worden overgenomen. BTW-aangiftecijfers zitten niet in deze export; download die als CSV via **Belastingen → BTW-aangifte**. Je kiest zelf welke onderdelen worden meegestuurd en ziet in een log wat er is afgeleverd.
 
-## Your accountant invites you
+## Je boekhouder nodigt jou uit
 
-If your accountant uses MyCompanyDesk, they can send you an invite from their boekhouder portal. You receive an email with a link to `/register?uitnodiging=TOKEN`.
+Als je boekhouder MyCompanyDesk gebruikt, kan hij of zij je uitnodigen vanuit het boekhoudersportaal. Je ontvangt dan een e-mail met een link naar `/register?uitnodiging=TOKEN`.
 
-1. Click the link in the email
-2. The signup page names the inviting firm and pre-fills the email address the invite was sent to
-3. Create your own account. You remain the owner of your workspace and data
-4. After signup, your accountant automatically gets accountant access to your workspace
+1. Klik op de link in de e-mail
+2. De registratiepagina toont het kantoor dat je heeft uitgenodigd en vult het e-mailadres waarnaar de uitnodiging is gestuurd alvast in
+3. Maak je account aan met e-mail en wachtwoord. Jij blijft eigenaar van je werkruimte en gegevens
+4. Na registratie krijgt je boekhouder automatisch toegang zodat hij of zij je aangifte kan controleren
 
-If the workspace you are invited into already has its own active subscription, the firm cannot take over the billing for it until that subscription is cancelled. You will see an error if the firm tries to set up office billing while your own subscription is still active.
+Als de werkruimte waarvoor je wordt uitgenodigd al een eigen actief abonnement heeft, kan het kantoor de facturatie daarvan niet overnemen totdat dat abonnement is opgezegd. Je ziet een foutmelding als het kantoor kantoorfacturatie probeert in te stellen terwijl je eigen abonnement nog actief is.
 
-You can revoke that access at any time from Settings → "Toegang en boekhouder". The invite link is valid for 30 days and can be resent or revoked by your accountant.
+Je kunt die toegang later altijd weer intrekken via Instellingen → "Toegang en boekhouder". De uitnodigingslink is 30 dagen geldig en je boekhouder kan hem opnieuw sturen of intrekken.
 
-## What your accountant sees
+## Wat je boekhouder ziet
 
-Once your accountant has access, their boekhouder portal shows a triage desk with one row per administration. The desk sorts administrations by urgency, so your accountant can see at a glance which administration needs attention today.
+Als je boekhouder toegang heeft, ziet hij of zij in het boekhoudersportaal een triage-overzicht met één rij per administratie. Het overzicht sorteert op urgentie, zodat je boekhouder in één oogopslag ziet welke administratie aandacht nodig heeft.
 
-- Administrations with an upcoming or missed VAT deadline are flagged first.
-- Overdue invoices and missing receipts are counted for each administration.
-- Administrations whose books are on track show the status "Loopt goed".
+- Administraties met een komende of gemiste BTW-aangiftetermijn komen bovenaan.
+- Openstaande facturen en ontbrekende bonnen worden per administratie geteld.
+- Administraties die op schema liggen, krijgen het label "Loopt goed".
 
-Your accountant can click any administration to jump straight into that workspace with the permissions you set. They see only the pages you granted, and they can invite or manage administrations from the same screen.
+Je boekhouder klikt op een administratie om direct die werkruimte te openen met de rechten die jij hebt ingesteld. De boekhouder ziet alleen de pagina's die jij toegankelijk hebt gemaakt en kan vanuit hetzelfde scherm administraties uitnodigen of beheren.
 
+## Meerdere bedrijven beheren
 
-## Managing multiple businesses
+Als je meer dan één bedrijf runt, of als je boekhouder meerdere administraties beheert, wissel je via de werkruimtekiezer in de linker zijbalk tussen administraties. Je kunt je eigen bedrijf toevoegen vanuit de kiezer; elke krijgt een eigen administratie met aparte btw, facturen en boekhouding.
 
-If you run more than one business, or your accountant manages multiple administrations, use the workspace switcher in the left sidebar to add and switch between them. You can add your own business from the switcher; each gets its own administration with separate VAT, invoices, and bookkeeping.
+Als je meer dan één administratie hebt, verschijnt in de linker navigatie ook **Werkruimtes** als directe link naar het triage-overzicht.
 
-When you have more than one administration, the left navigation also shows **Workspaces** as a direct link to the triage desk.
-
-Accountants invited by a client see those managed workspaces alongside their own business. See [Reports](/features/reports) and [Dashboard](/features/dashboard) for how work is shown across administrations.
+Boekhouders die door een klant zijn uitgenodigd, zien die beheerde werkruimtes naast hun eigen bedrijf. Zie [Rapporten](/features/reports) en [Dashboard](/features/dashboard) voor hoe werk over administraties heen wordt getoond.

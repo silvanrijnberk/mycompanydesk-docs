@@ -8,10 +8,10 @@ chatbot:
   follow_up: ["How do I add line items?", "How do I preview the invoice?", "How do I change the PDF style?"]
 ---
 
-To add notes to an invoice:
-1. Edit or create an invoice
-2. Use the "Notes" section below the line items
-3. Enter the text you want saved with that invoice
-4. Save the invoice
+Om notities toe te voegen aan een factuur:
+1. Open de factuur in bewerkingsmodus
+2. Gebruik de sectie "Notities" onder de factuurregels
+3. Voeg de tekst toe die je bij deze factuur wilt bewaren
+4. Sla de factuur op
 
-Tip: Use notes for payment instructions, project references, or terms that belong on that specific invoice.
+Tip: Gebruik notities voor betaalinstructies, projectverwijzingen of voorwaarden die alleen voor deze factuur gelden.

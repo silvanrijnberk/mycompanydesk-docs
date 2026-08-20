@@ -1,44 +1,44 @@
 ---
-title: Tasks
+title: Taken
 ---
 
-# Tasks
+# Taken
 
-Tasks keep track of things you need to do in MyCompanyDesk. Some tasks you create yourself; others appear automatically when something needs attention, such as an unpaid invoice, an expiring quote, or an onboarding step in a new workspace.
+Taken houden bij wat je in MyCompanyDesk moet doen. Sommige taken maak je zelf aan; anderen verschijnen automatisch wanneer ergens aandacht voor nodig is, bijvoorbeeld bij een openstaande factuur, een verlopende offerte of een onboardingstap in een nieuwe werkruimte.
 
-## Task list
+## Takenlijst
 
-The tasks page lists your open and completed tasks. Each row shows the title, due date, status, priority, and the record the task is linked to. Tasks that come from a quote, expense, project, contract, or getting-started checklist show a source chip so you can see where they came from.
+De takenpagina toont je openstaande en voltooide taken. Elke rij toont de titel, vervaldatum, status, prioriteit en het gekoppelde record. Taken die uit een offerte, uitgave, project, contract of aan-de-slag-checklist komen, tonen een bron-chip zodat je meteen ziet waar ze vandaan komen.
 
-Clicking a task opens the detail drawer.
+Klik op een taak om de detaildrawer te openen.
 
-## Task detail
+## Taakdetails
 
-The detail drawer is a read-only view that shows the full picture before you decide what to do:
+De detaildrawer is een alleen-lezen weergave die het hele plaatje toont voordat je actie onderneemt:
 
-- The due date, status, and priority
-- The full description
-- The linked record
-- The task's source, for example a quote, expense, project, contract, or getting-started checklist
-- The project, if the task belongs to one
+- Vervaldatum, status en prioriteit
+- De volledige omschrijving
+- Het gekoppelde record
+- De bron van de taak, bijvoorbeeld een offerte, uitgave, project, contract of aan-de-slag-checklist
+- Het project, als de taak erbij hoort
 - Tags
-- When the task was created
-- When it was completed, if it is already done
+- Wanneer de taak is aangemaakt
+- Wanneer de taak is afgerond, als deze al klaar is
 
-You can mark the task as done or reopen it directly from the detail drawer. To change or delete a task, click **Edit** in the drawer footer.
+Je kunt de taak direct vanuit de detaildrawer afronden of heropenen. Wil je de taak wijzigen of verwijderen, klik dan op **Bewerken** onderaan de drawer.
 
-## Task sources
+## Bronnen van taken
 
-Tasks can come from several places:
+Taken kunnen uit verschillende bronnen komen:
 
-- **Manual**: tasks you create yourself
-- **Quote**: generated from a quote
-- **Expense**: generated from an expense
-- **Project**: generated from a project
-- **Contract**: generated from a contract
-- **Getting started**: onboarding checklist items for a new workspace
+- **Handmatig**: taken die je zelf aanmaakt
+- **Offerte**: gegenereerd vanuit een offerte
+- **Uitgave**: gegenereerd vanuit een uitgave
+- **Project**: gegenereerd vanuit een project
+- **Contract**: gegenereerd vanuit een contract
+- **Aan de slag**: onboardingstappen voor een nieuwe werkruimte
 
 ## Tips
 
-- Use the source chip to jump to the record a task is about.
-- The [dashboard attention widget](/features/dashboard) shows up to four tasks that need action today or this week.
+- Gebruik de bron-chip om naar het record te springen waar een taak over gaat.
+- Het [aandacht-widget](/features/dashboard) toont tot vier taken die vandaag of deze week aandacht nodig hebben.

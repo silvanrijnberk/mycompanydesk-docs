@@ -1,5 +1,5 @@
 ---
-title: "Delete an invoice"
+title: "Factuur verwijderen"
 last_verified: 2026-08-15
 chatbot:
   triggers:
@@ -22,12 +22,12 @@ chatbot:
     - "Can I undo a deleted invoice?"
 ---
 
-To delete an invoice:
-1. Open the invoice you want to remove
-2. In the sidebar, scroll to the "Danger Zone" section
-3. Click "Delete"
-4. Confirm the deletion
+Zo verwijder je een factuur:
+1. Open de factuur die je wilt verwijderen
+2. Scroll in de zijbalk naar de sectie "Gevarenzone"
+3. Klik op "Verwijderen"
+4. Bevestig de verwijdering
 
-Only draft invoices can be deleted permanently in one step. For sent or paid invoices, each delete action moves the invoice one stage down: active becomes Archived, archived becomes Trash, and trash becomes permanently gone. Use Cancel if you want to keep the record visible in the invoice list.
+Alleen conceptfacturen kunnen in één keer definitief worden verwijderd. Bij verstuurde of betaalde facturen zet elke verwijderactie de factuur één stap verder: actief wordt Gearchiveerd, gearchiveerd wordt Prullenbak, en prullenbak wordt definitief weg. Gebruik Annuleren als je het record wel in de factuurlijst wilt houden.
 
-If you delete by mistake, check the Archive or Trash views and restore the invoice before it reaches the last stage.
+Heb je per ongeluk verwijderd? Kijk dan in het Archief of de Prullenbak en zet de factuur terug voordat hij de laatste stap bereikt.

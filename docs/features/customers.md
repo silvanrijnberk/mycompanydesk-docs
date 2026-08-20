@@ -1,135 +1,135 @@
 ---
-title: Customers
+title: Klanten
 ---
 
-# Customers
+# Klanten
 
-Manage your complete customer database. Every invoice, quote, and project links back to a customer record.
+Beheer je volledige klantendatabase. Elke factuur, offerte en elk project is gekoppeld aan een klantrecord.
 
-## Overview
+## Overzicht
 
-The customers page lists all your clients with key information at a glance. Use search and filters to find customers quickly.
+De klantenpagina toont al je klanten met belangrijke informatie in een oogopslag. Gebruik zoek- en filterfuncties om snel klanten te vinden.
 
-## Customer list segments
+## Segmenten in de klantenlijst
 
-At the top of the customers page, a strip of tiles gives a quick snapshot of your customer base. The numbers are independent of the search and date filters on the list, so a tile always reflects the whole book.
+Bovenaan de klantenpagina toont een rij tegels een snel overzicht van je klantenbestand. De getallen zijn onafhankelijk van de zoek- en datumfilters op de lijst, zodat een tegel altijd het hele klantenbestand weergeeft.
 
-- **Customers with overdue invoices**: how many customers currently owe you money. Click the tile to open the overdue invoices page.
-- **Dormant customers**: active customers who were invoiced before but have not received an invoice in the last N months. Click the tile to filter the list to dormant customers. The default dormancy window is six months; the tile label shows the exact window the workspace uses.
-- **Prospects**: active customers who have never been invoiced. Click the tile to filter the list to prospects.
-- **Total customers**: the fixed active customer count. Click the tile to clear the list filters.
+- **Klanten met achterstallige facturen**: hoeveel klanten je op dit moment nog moeten betalen. Klik op de tegel om de pagina met achterstallige facturen te openen.
+- **Stil geworden klanten**: actieve klanten die eerder wel een factuur hebben gehad, maar in de afgelopen N maanden geen factuur meer hebben ontvangen. Klik op de tegel om de lijst te filteren op stil geworden klanten. De standaard periode is zes maanden; het tegellabel toont de exacte periode die de werkruimte gebruikt.
+- **Mogelijke klanten**: actieve klanten die nog nooit een factuur hebben ontvangen. Klik op de tegel om de lijst te filteren op mogelijke klanten.
+- **Totaal klanten**: het vaste aantal actieve klanten. Klik op de tegel om de filters van de lijst te wissen.
 
-The status filter above the list also lets you switch between All statuses, Active, Prospects, Dormant, Archived and Trash.
+Met het statusfilter boven de lijst schakel je ook tussen Alle statussen, Actief, Mogelijke klanten, Stil geworden, Gearchiveerd en Prullenbak.
 
-## Creating a customer
+## Een klant aanmaken
 
-1. Go to **Customers > New Customer**
-2. Fill in the customer details:
-   - **Name** — Company or individual name (required)
-   - **Email** — Contact email for sending invoices
-   - **Phone** — Contact phone number
-   - **Address** — Street, postal code, city, country
-   - **VAT number** — Customer's VAT registration (for B2B)
-   - **Customer number** — Auto-generated or custom
-3. Click **Save**
+1. Ga naar **Klanten > Nieuwe klant**
+2. Vul de klantgegevens in:
+   - **Naam** — Bedrijfs- of persoonsnaam (verplicht)
+   - **E-mail** — Contacte-mail voor het versturen van facturen
+   - **Telefoon** — Contacttelefoonnummer
+   - **Adres** — Straat, postcode, plaats, land
+   - **BTW-nummer** — BTW-registratie van de klant (voor B2B)
+   - **Klantnummer** — Automatisch gegenereerd of aangepast
+3. Klik op **Opslaan**
 
 ::: tip
-You can also create customers inline when creating an invoice or quote — no need to navigate away.
+Je kunt ook klanten inline aanmaken bij het maken van een factuur of offerte — je hoeft niet weg te navigeren.
 :::
 
-### KVK autofill
+### KVK-autofill
 
-When creating a Dutch customer, MyCompanyDesk can autofill company details from the KVK (Kamer van Koophandel) register. Two lookup methods are available:
+Bij het aanmaken van een Nederlandse klant kan MyCompanyDesk bedrijfsgegevens automatisch invullen vanuit het KVK-register. Er zijn twee manieren om gegevens op te zoeken:
 
-- **Name search**: Start typing the company name in the **Name** field. A dropdown shows matching KVK entries with city and KVK number. Select one to autofill the name and KVK number fields.
-- **Chamber number lookup**: Enter an 8-digit KVK number in the **Chamber of Commerce** field. On blur, MyCompanyDesk looks up the number and fills in any empty fields (name, address, postal code, city, country).
+- **Zoeken op naam**: Begin de bedrijfsnaam te typen in het **Naam**-veld. Er verschijnt een dropdown met overeenkomende KVK-vermeldingen, inclusief plaats en KVK-nummer. Kies een vermelding om de naam en het KVK-nummer automatisch in te vullen.
+- **KVK-nummer opzoeken**: Voer een 8-cijferig KVK-nummer in bij het **Kamer van Koophandel**-veld. Bij het verlaten van het veld zoekt MyCompanyDesk het nummer op en vult lege velden in (naam, adres, postcode, plaats, land).
 
-A verified badge appears next to the chamber number field on successful lookup. If the KVK number is not found, an error message is shown. Both lookups are available only for Dutch customers.
+Bij een geslaagde opzoeking verschijnt een geverifieerd-badge naast het KVK-nummerveld. Als het nummer niet wordt gevonden, krijg je een foutmelding te zien. Beide opzoekingen zijn alleen beschikbaar voor Nederlandse klanten.
 
-Each workspace gets 100 free KVK lookups per day (cached results do not count). When 20 or fewer lookups remain, the KVK field hint shows a counter of how many are left. If the daily cap is hit, the form shows a quota-exceeded message, and you can enter the data manually or try again tomorrow.
+Elke werkruimte heeft 100 gratis KVK-zoekopdrachten per dag (resultaten uit de cache tellen niet mee). Bij 20 of minder resterende zoekopdrachten toont de hint bij het KVK-veld hoeveel je er nog over hebt. Is het daglimiet bereikt, dan zie je een foutmelding en kun je de gegevens handmatig invullen of het morgen opnieuw proberen.
 
-## Customer detail page
+## Klantdetailpagina
 
-The customer detail page shows:
+De klantdetailpagina toont:
 
-- **Contact information** — All stored details
-- **Invoice history** — Every invoice sent to this customer
-- **Expense history** — Expenses linked to this customer
-- **Contracts** - Active and inactive contracts, with signing status badges and a PDF preview icon when e-signing is enabled
-- **Documents**: agreements stored for this customer, such as general terms, NDAs and DPAs. If the customer has a contract but no processing agreement, a hint appears with a link to create one.
-- **Projects** — Active and completed projects
-- **Statistics** — Total revenue, outstanding balance, average payment time
+- **Contactgegevens** — Alle opgeslagen gegevens
+- **Factuurgeschiedenis** — Elke factuur die naar deze klant is gestuurd
+- **Uitgavengeschiedenis** — Uitgaven gekoppeld aan deze klant
+- **Contracten** - Actieve en inactieve contracten, met ondertekeningsstatus-badges en een pdf-voorbeeldicoon wanneer e-signing is ingeschakeld
+- **Documenten**: afspraken die voor deze klant zijn opgeslagen, zoals algemene voorwaarden, NDA's en verwerkersovereenkomsten. Als de klant een contract heeft maar geen verwerkersovereenkomst, verschijnt er een hint met een link om er een op te stellen.
+- **Projecten** — Actieve en voltooide projecten
+- **Statistieken** — Totale omzet, openstaand saldo, gemiddelde betaaltijd
 
-### Processing agreement gap
+### Ontbrekende verwerkersovereenkomst
 
-When a customer has a contract but no processing agreement (DPA) in Documents, the documents card on the customer detail page shows a hint and a **Create processing agreement** link. This points out a compliance gap where you are likely to act on it. The hint only appears when the documents and contracts modules are enabled and the documents card is otherwise empty.
+Als een klant een contract heeft maar geen verwerkersovereenkomst in Documenten, toont de documentenkaart op de klantdetailpagina een hint en een link **Verwerkersovereenkomst opstellen**. Dit wijst je op een compliance-tekort op de plek waar je er waarschijnlijk iets aan doet. De hint verschijnt alleen als de documenten- en contractenmodules aan staan en de documentenkaart verder leeg zou zijn.
 
-### Email health banner
+### E-mailgezondheidsbanner
 
-A warning banner appears at the top of the customer detail page when the customer's email address has recently bounced (permanently undeliverable) or generated a spam complaint. The banner is quiet when the address is healthy.
+Er verschijnt een waarschuwingsbanner bovenaan de klantdetailpagina wanneer het e-mailadres van de klant recent is gebounced (permanent onbestelbaar) of een spamklacht heeft gegenereerd. De banner blijft stil wanneer het adres gezond is.
 
-- **Bounce**, shows a red banner with the last failed delivery date and the rejection reason from the email provider. If no specific reason was given, a generic note is shown instead.
-- **Complaint**, shows a yellow banner warning that the customer marked your email as spam. The message advises against sending more mail to that address without prior contact.
+- **Bounce**, toont een rode banner met de datum van de laatste mislukte verzending en de afwijsreden van de e-mailprovider. Als er geen specifieke reden is opgegeven, wordt er een algemene melding getoond.
+- **Klacht**, toont een gele banner die waarschuwt dat de klant je e-mail als spam heeft gemarkeerd. Het bericht raadt af om nog meer mail naar dat adres te sturen zonder eerst contact op te nemen.
 
-This information comes from provider events and outbound message delivery status, helping you spot delivery problems before sending the next invoice or quote.
+Deze informatie komt van provider-events en de bezorgstatus van uitgaande berichten, zodat je bezorgproblemen ziet voordat je de volgende factuur of offerte verstuurt.
 
-## Linking a customer to one of your own businesses
+## Een klant koppelen aan een eigen bedrijf
 
-If you own more than one business, a card titled **Eigen bedrijf** can appear on the customer detail page. It lets you say that this customer is one of your own companies, which is used to calculate the intercompany positions on the Workspaces page.
+Als je meer dan een bedrijf hebt, kan op de klantdetailpagina een kaart **Eigen bedrijf** verschijnen. Daarmee geef je aan dat deze klant een van je eigen bedrijven is, zodat zijn positie wordt meegenomen in de onderlinge posities op Werkruimtes.
 
-- The card only appears when you own at least two businesses and the customer is not in the workspace you are currently viewing. A company cannot be its own counterparty.
-- Pick one of your own businesses from the dropdown, or choose **None of my own businesses** to remove a link.
-- Links are created automatically when the customer's VAT number matches one of your other workspaces. When this happens, the card shows a note so you can tell it was automatic and change it if it is wrong.
-- A manual link always wins over an automatic one. The automatic linker never overwrites a link you set by hand.
+- De kaart verschijnt alleen als je minstens twee eigen bedrijven hebt en de klant niet in de werkruimte staat die je nu bekijkt. Een bedrijf kan niet zijn eigen tegenpartij zijn.
+- Kies een van je eigen bedrijven in het dropdownmenu, of kies **Geen van mijn eigen bedrijven** om een koppeling te verwijderen.
+- De koppeling wordt automatisch gemaakt als het btw-nummer van de klant overeenkomt met een van je andere werkruimtes. De kaart toont dan een melding zodat je ziet dat het automatisch is gebeurd en het kunt corrigeren als het niet klopt.
+- Een handmatige koppeling wint altijd van een automatische. De automatische koppeling overschrijft nooit een koppeling die je zelf hebt gezet.
 
-## Actions
+## Acties
 
-- **Edit** — Update customer information
-- **Create invoice** — Start a new invoice pre-filled with this customer
-- **Create quote** — Start a new quote for this customer
-- **Archive** — Move to archive (can be restored later)
-- **Delete** — Permanently remove the customer
+- **Bewerken** — Klantinformatie bijwerken
+- **Factuur aanmaken** — Start een nieuwe factuur vooraf ingevuld met deze klant
+- **Offerte aanmaken** — Start een nieuwe offerte voor deze klant
+- **Archiveren** — Verplaats naar archief (kan later worden hersteld)
+- **Verwijderen** — Verwijder de klant permanent
 
-## Bulk actions
+## Bulkacties
 
-Select multiple customers for:
+Selecteer meerdere klanten voor:
 
-- **Archive** — Bulk archive inactive customers
-- **Restore** — Bring back archived customers
-- **Delete** — Remove multiple customers
+- **Archiveren** — Inactieve klanten in bulk archiveren
+- **Herstellen** — Gearchiveerde klanten terughalen
+- **Verwijderen** — Meerdere klanten verwijderen
 
-## Quick view
+## Snelle weergave
 
-On desktop, click a customer in the list to open the **quick view** slide panel. This shows key details and actions without leaving the list:
+Op desktop kun je op een klant in de lijst klikken om het **snelle weergave** schuifpaneel te openen. Dit toont belangrijke details en acties zonder de lijst te verlaten:
 
-- Customer info summary
-- Recent invoices
-- Edit button to open the full edit page
+- Samenvatting klantinfo
+- Recente facturen
+- Bewerkknop om de volledige bewerkpagina te openen
 
-## Import customers
+## Klanten importeren
 
-Import your existing customer database from CSV:
+Importeer je bestaande klantendatabase vanuit CSV:
 
-1. Go to **Profile > Import**
-2. Select **Customers** as the data type
-3. Upload your CSV file
-4. Map your CSV columns to MyCompanyDesk fields (name, email, address, etc.)
-5. Review the preview
-6. Confirm to import
+1. Ga naar **Profiel > Importeren**
+2. Selecteer **Klanten** als gegevenstype
+3. Upload je CSV-bestand
+4. Koppel je CSV-kolommen aan MyCompanyDesk-velden (naam, e-mail, adres, etc.)
+5. Bekijk het voorbeeld
+6. Bevestig om te importeren
 
-## Export customers
+## Klanten exporteren
 
-Export your customer list as CSV from the customers page (Starter plan and above).
+Exporteer je klantenlijst als CSV vanaf de klantenpagina (Pro-abonnement en hoger).
 
-## Lapsed customers
+## Weggebleven klanten
 
-The [Reports > Clients > Lapsed](/features/reports) tab lists customers who bought before but have not had an invoice this year. The view shows the count, their previous total spend, and the date of their last invoice, with links to call or email each customer directly. It lives inside Reports because reactivating old customers is campaign-style work, not an item that fits an urgency-sorted feed.
+Het tabblad [Rapporten > Klanten > Weggebleven](/features/reports) toont klanten die eerder kochten maar dit jaar nog geen factuur hebben gekregen. De weergave toont het aantal, wat ze eerder samen besteedden en de datum van hun laatste factuur, met links om elke klant direct te bellen of te mailen. Het staat in Rapporten omdat oude klanten terugwinnen campagne-werk is, geen item dat past in een op urgentie gesorteerde feed.
 
-The standard customer list also segments inactive customers itself; the Lapsed tab adds the campaign-style reminder without replacing that filter.
+De standaard klantenlijst segmenteert ook zelf inactieve klanten; het tabblad Weggebleven voegt de campagne-achtige herinnering toe zonder die filter te vervangen.
 
 ## Tips
 
-- Keep customer emails up to date — they're used for invoice delivery
-- Use the search bar for instant fuzzy matching across all customer fields
-- Pin your most important customers as favorites for quick access
-- Assign VAT numbers to enable reverse charge on B2B invoices
+- Houd e-mailadressen van klanten up-to-date — ze worden gebruikt voor factuurverzending
+- Gebruik de zoekbalk voor directe fuzzy-matching over alle klantvelden
+- Pin je belangrijkste klanten als favorieten voor snelle toegang
+

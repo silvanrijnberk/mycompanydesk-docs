@@ -1,72 +1,71 @@
 ---
-title: VAT
-last_verified: 2026-08-16
+title: BTW-beheer
 ---
 
 <!-- TODO(source-missing): RichardTool 5407b44 added historical Dutch VAT rates 6% and 19% to the valid invoice/quote/contract/recurring-invoice/catalog rate set. sources/vat-rates.yaml#countries.NL does not yet list those rates, so do not document the full valid set until the source is updated. -->
 
-# VAT
+# BTW-beheer
 
-Track collected and paid VAT, prepare your return, and stay ahead of deadlines. MyCompanyDesk supports country-specific VAT flows: the page mirrors the Dutch BTW form for companies in the Netherlands, and uses each workspace country's filing deadlines and rules for other supported countries, so the numbers you see are the numbers you file.
+Volg ontvangen en betaalde BTW, bereid je aangifte voor en blijf deadlines voor. MyCompanyDesk ondersteunt landsspecifieke BTW-stromen: voor Nederlandse bedrijven spiegelt de pagina het aangifteformulier van de Belastingdienst, en voor andere ondersteunde landen gebruikt hij de aangifteregels en deadlines van dat land. Zo zijn de cijfers die je ziet de cijfers die je indient.
 
-## Page layout
+## Pagina-indeling
 
-The VAT page has three tabs: **Overview**, **Filing** and **Transactions** (Overzicht, Aangifte and Transacties when your app language is Dutch). Both the active tab and the active period are kept in the URL, so refresh and the back button preserve your place.
+De BTW-pagina heeft drie tabbladen: **Overzicht**, **Aangifte** en **Transacties**. Zowel het actieve tabblad als de actieve periode staan in de URL, dus verversen en de terugknop bewaren je plek.
 
-A page-wide period selector sits next to the tab bar and follows the filing frequency in your tax settings. Quarterly filers see Q1 to Q4 plus full year, monthly filers see M01 to M12 plus full year, and yearly filers see the full-year option. Switching it updates every card on every tab. The same filing frequency drives the period labels when you book a manual correction, so monthly filers see M01 to M12, quarterly filers see Q1 to Q4, and yearly filers keep the full-year option. A year switcher at the top of the page moves everything to another year.
+Naast de tabbladen staat een paginabrede periodekiezer die meebeweegt met je aangiftefrequentie. Kwartaalaangevers zien Q1 tot en met Q4 plus heel jaar, maandaangevers zien M01 tot en met M12 plus heel jaar, en jaaraangevers zien alleen de jaarsoptie. Wisselen van periode werkt door in elke kaart op elk tabblad. Dezelfde frequentie bepaalt de periodelabels bij een handmatige correctie. Met de jaarwisselaar bovenaan de pagina zet je alles naar een ander jaar.
 
-The active tab and period are both in the URL, so links from the VAT deadline reminder in your notification panel, the agenda-deadline chip, the push notification, and the VAT-period card in Expenses all open the exact period the message refers to instead of defaulting to the current quarter.
+Het actieve tabblad en de periode staan beide in de URL, dus links van de BTW-deadlineherinnering in je meldingenpaneel, de agendachip, de pushmelding en de BTW-tijdvak-kaart in Uitgaven openen allemaal het tijdvak dat de melding noemt, in plaats van terug te vallen op het huidige kwartaal.
 
-## Hero card
+## Herokaart
 
-The hero summarises the selected period:
+De herokaart vat de gekozen periode samen:
 
-- **Balance**: net VAT (collected minus paid) with a "te betalen" or "terug te ontvangen" label. It follows the period selector.
-- **Deadline ring**: a circular countdown to the next filing deadline, computed from your workspace country's schedule and your filing frequency. Red when 3 days or fewer remain, amber up to 14 days, green otherwise.
+- **Saldo**: netto BTW (ontvangen minus betaald) met het label "te betalen" of "terug te ontvangen". Het volgt de periodekiezer.
+- **Deadlinering**: een ronde aftelring naar de volgende aangiftedeadline, berekend op basis van het land van je werkruimte en je aangiftefrequentie. Rood bij 3 dagen of minder, oranje tot 14 dagen, anders groen.
 
-<!-- TODO(source-missing): RichardTool 8bd35ae1 introduced country-specific VAT filing deadlines (NL, GB, DE, and others). The exact deadline rules per country are not yet in sources/. Do not list specific per-country due dates until a human adds them to sources/. -->
-- **VAT savings pot (BTW-spaarpotje)**: a suggested reserve of the period balance plus a 10% buffer, shown when you owe VAT. When you are due money back, the tile flips to a green refund tile instead.
+<!-- TODO(source-missing): RichardTool 8bd35ae1 introduceerde landsspecifieke BTW-aangiftedeadlines (NL, GB, DE en andere). De exacte deadline-regels per land staan nog niet in sources/. Vermeld geen specifieke deadlines per land totdat een mens ze aan sources/ heeft toegevoegd. -->
+- **BTW-spaarpotje**: een voorgestelde reservering van het periodesaldo plus een buffer van 10%, zichtbaar wanneer je BTW moet betalen. Krijg je geld terug, dan verandert de tegel in een groene teruggavetegel.
 
-Three buttons sit under the balance: **Open aangifte** jumps to the Filing tab, **How is this calculated?** walks through the math behind the balance, and **Open Mijn Belastingdienst Zakelijk** opens the business portal at `mijn.belastingdienst.nl/mbo-portaal/` so you can finish the submission without an extra chooser step.
+Onder het saldo staan drie knoppen: **Naar aangifte** springt naar het tabblad Aangifte, **Hoe wordt dit berekend?** loopt de rekensom achter het saldo door, en **Open Mijn Belastingdienst Zakelijk** opent het zakelijke portaal op `mijn.belastingdienst.nl/mbo-portaal/` zodat je de aangifte kunt indienen zonder een extra kiespagina.
 
-A banner above the hero warns when your data is incomplete (draft invoices or expenses without VAT), so you can fix it before filing.
+Boven de herokaart waarschuwt een banner wanneer je gegevens onvolledig zijn (conceptfacturen of uitgaven zonder BTW), zodat je dat kunt oplossen voordat je aangifte doet.
 
-MyCompanyDesk also emails you once per VAT period as the filing deadline approaches. The email links straight to the VAT page and follows your VAT deadlines toggle in Settings → Notifications, so you can turn it off there.
+MyCompanyDesk stuurt je ook één keer per BTW-periode een e-mail als de aangiftedeadline nadert. De mail linkt direct naar de BTW-pagina en volgt je BTW-deadlines-schakelaar in Instellingen → Meldingen, dus je zet hem daar uit.
 
-If your company is a Dutch BV or NV, the same VAT deadlines toggle also sends a once-per-year reminder ahead of the corporate income tax (vennootschapsbelasting) filing deadline. The reminder appears in the notification panel and is sent by email.
+Als je bedrijf een Nederlandse BV of NV is, stuurt dezelfde BTW-deadlines-schakelaar ook één keer per jaar een herinnering voor de deadline van de vennootschapsbelastingaangifte. De melding verschijnt in het meldingenpaneel en wordt per e-mail verstuurd.
 
-## Overview tab
+## Tabblad Overzicht
 
-### Quarter strip
+### Kwartaalstrook
 
-Four cards (Q1 to Q4) summarising revenue, VAT collected, VAT paid, and the balance per quarter, along with the filing deadline and a lock badge on filed or locked quarters. Click a card to switch the page-wide period. Upcoming quarters stay empty until they contain actual data, then they show the balance and a status badge just like past quarters.
+Vier kaarten (Q1 tot en met Q4) met per kwartaal de omzet, ontvangen BTW, betaalde BTW en het saldo, plus de aangiftedeadline en een slotbadge op ingediende of vergrendelde kwartalen. Klik op een kaart om de paginabrede periode te wisselen. Toekomstige kwartalen blijven leeg totdat er daadwerkelijk gegevens in staan; daarna tonen ze net als eerdere kwartalen het saldo en een statusbadge.
 
-### Pre-filing checks
+### Controles voor het indienen
 
-A checklist that runs against the active period. Every check has a fix link that takes you straight to the affected records:
+Een checklist die tegen de actieve periode draait. Elke controle heeft een herstellink die je direct naar de betreffende records brengt:
 
-- **Drafts**: invoices still in draft that will not count in the aangifte.
-- **Missing VAT**: expenses without a VAT amount.
-- **Missing receipts**: expenses without an attached receipt.
-- **ICP pending**: EU B2B sales that need to be reported separately on the ICP-opgaaf. The amount and count use the same classification rules as the ICP return, so they match the lines that will actually appear on the submission.
-- **Reverse-charge origin**: expenses with reverse-charge VAT whose supplier country or KVK number is missing, so rubriek 2a/4a/4b cannot be proven.
-- **Deductible mismatch**: expenses whose deductible VAT does not equal their total VAT, for example because the category is not fully deductible or private use applies. This mirrors the flags shown on the Transactions tab.
+- **Concepten**: facturen die nog concept zijn en niet meetellen in de aangifte.
+- **BTW ontbreekt**: uitgaven zonder BTW-bedrag.
+- **Bonnen ontbreken**: uitgaven zonder bijgevoegde bon.
+- **ICP open**: EU B2B-verkopen die apart op de ICP-opgaaf gemeld moeten worden. Het bedrag en het aantal gebruiken dezelfde classificatieregels als de ICP-opgaaf zelf, zodat ze overeenkomen met wat daadwerkelijk op de opgave komt.
+- **Verlegde-BTW-herkomst**: uitgaven met verlegde BTW waarvan het land of KVK-nummer van de leverancier ontbreekt, zodat rubriek 2a/4a/4b niet te bewijzen is.
+- **Aftrekverschil**: uitgaven waarvan de aftrekbare BTW niet gelijk is aan de totale BTW, bijvoorbeeld omdat de categorie niet volledig aftrekbaar is of omdat privégebruik geldt. Dit loopt gelijk met de badges op het tabblad Transacties.
 
-A badge in the header shows the number of blockers, or that everything is clear.
+Een badge in de kop toont het aantal blokkades, of dat alles in orde is.
 
-### Summary and year totals
+### Samenvatting en jaartotalen
 
-Below the checks you see the year's key figures (revenue, expenses, profit, VAT collected and paid, an estimated tax burden, and a recommended reserve), plus a one-line total across the quarters.
+Onder de controles zie je de kerncijfers van het jaar (omzet, uitgaven, winst, ontvangen en betaalde BTW, een geschatte belastingdruk en een aanbevolen reservering), plus een jaartotaal over de kwartalen in één regel.
 
-While your revenue is still in KOR territory, this tab also shows a hint pointing to the KOR settings (see below).
+Zolang je omzet nog in KOR-gebied zit, toont dit tabblad ook een hint die naar de KOR-instellingen wijst (zie verderop).
 
-## Filing tab
+## Tabblad Aangifte
 
-### Rubrieken sheet
+### Rubriekenoverzicht
 
-A table that mirrors the Belastingdienst aangifteformulier:
+Een tabel die het aangifteformulier van de Belastingdienst spiegelt:
 
-| Section | Codes |
+| Sectie | Codes |
 |---|---|
 | 1. Prestaties binnenland | 1a, 1b, 1c, 1d, 1e |
 | 2. Verleggingsregelingen binnenland | 2a |
@@ -74,110 +73,107 @@ A table that mirrors the Belastingdienst aangifteformulier:
 | 4. Prestaties vanuit het buitenland aan u verricht | 4a, 4b |
 | 5. Voorbelasting en berekening totaal | 5a, 5b, 5c |
 
-Each row shows the omzet (excl.) and the VAT amount. The bottom bar shows the total to pay or receive. Corrections that fall outside the form appear on their own rows: a generic booking correction is shown as **Correctie**, while a reduction under the old KOR scheme is shown as **Vermindering volgens de oude KOR**. The CSV summary adds a matching corrections line when these are nonzero, so the balance, collected and paid figures add up. The year-overview BTW-saldo column uses the same net-VAT total as the rubrieken sheet, so its rows total to the same figure.
+Elke rij toont de omzet (excl.) en het BTW-bedrag. De balk onderaan toont het totaal te betalen of terug te ontvangen. Correcties die buiten het formulier vallen krijgen eigen regels: een gewone boekingscorrectie staat als **Correctie**, terwijl een vermindering onder de oude KOR-regeling staat als **Vermindering volgens de oude KOR**. De BTW-samenvattings-CSV toont een bijpassende correctieregel wanneer deze bedragen niet nul zijn, zodat saldo, ontvangen en betaalde BTW op elkaar aansluiten. De BTW-saldokolom in het jaaroverzicht gebruikt hetzelfde netto-BTW-totaal als het rubriekenoverzicht, zodat de regels optellen tot datzelfde totaal.
 
-When you add a manual correction, enter a positive amount and choose a direction (VAT due or VAT refund). Negative amounts are rejected and the form shows an error asking you to pick the direction instead; the direction determines whether the correction increases VAT payable or decreases it.
+Bij een handmatige correctie vul je een positief bedrag in en kies je een richting (BTW af te dragen of BTW terug te vorderen). Negatieve bedragen worden geweigerd en het formulier toont een foutmelding die je vraagt de richting te kiezen; de richting bepaalt of de correctie het periodetotaal verhoogt of verlaagt.
 
-The year field accepts tax years between 2000 and the current calendar year plus one. Years above that range are rejected with an inline message, because a correction saved for a future year would become unreachable on the VAT page.
+Het belastingjaarveld accepteert jaren tussen 2000 en het huidige kalenderjaar plus één. Jaren daarboven worden geweigerd met een inline-melding, want een correctie voor een verder jaar zou nergens meer terug te vinden zijn op de BTW-pagina. Ook het veld "Oorspronkelijk jaar" voor correcties gebruikt dit bereik; een referentiejaar buiten de range of in de toekomst wordt geblokkeerd, zodat de correctie altijd naar een periode verwijst die bereikbaar is.
 
-The reference year field for VAT corrections uses the same 2000-to-current-plus-one range. The reference year must be the tax year the original entry belongs to; choosing a year outside the range or a future reference year is blocked, because the correction would otherwise point to a period that cannot be reached from the VAT page.
+Een correctie wordt alleen in een aangifte meegenomen als de periode overeenkomt met de aangiftefrequentie van je werkruimte. Een correctie opgeslagen als Q1 komt bijvoorbeeld niet in een maand- of jaaraangifte terecht, en een correctie opgeslagen als M03 komt niet in een kwartaalaangifte terecht. De correctiekaart toont een oranje waarschuwingsbadge en een toelichting wanneer de periode van een correctie in geen enkele aangifte terechtkomt, zodat je hem kunt aanpassen voordat je indient.
 
-A correction is only counted in a return when its period matches your workspace's VAT filing frequency. For example, a correction saved as Q1 will not be included in any monthly or yearly return, and a correction saved as M03 will not be included in any quarterly return. The corrections card shows an orange warning badge and a hint when a correction's period does not appear in any return, so you can edit its period before filing.
+Rubriek 4a is voor verlegde-BTW-aankopen van leveranciers buiten de EU (`import_reverse_charge`); rubriek 4b is voor verlegde aankopen van EU-leveranciers (`b2b_reverse_charge`). MyCompanyDesk bepaalt aan de hand van het leveranciersland de juiste rubriek, zodat het totaal in 5a klopt.
 
-Rubriek 4a captures reverse-charge purchases from suppliers outside the EU (`import_reverse_charge`); rubriek 4b captures reverse-charge purchases from EU suppliers (`b2b_reverse_charge`). MyCompanyDesk derives the correct rubriek from the supplier country so the total in 5a stays accurate.
+Bij het boeken of verwijderen van een correctie verversen het rubriekenoverzicht, de herokaart, de kwartaalstrook en de aangifte-actiekaart direct; je hoeft niet te verversen of van periode te wisselen. Ook de kaart voor privégebruik van de bedrijfsauto wordt live bijgewerkt als de correctie is geboekt.
 
-When you save or delete a correction, the rubrieken sheet, hero card, quarter strip and filing-action card update immediately; there is no need to refresh or switch periods. The company-car private-use card also refreshes live when its correction is booked.
+### Exporteren voor de boekhouder
 
-### Exports for your accountant
+Een downloadkaart naast het overzicht biedt CSV-exports: een volledige boekhouder-export, een BTW-overzicht van het gekozen kwartaal en een jaaroverzicht.
 
-A download card next to the sheet offers CSV exports: a full export for your boekhouder, a BTW summary for the selected quarter, and a year overview.
+De bestandsnaam van de ZIP bevat de bedrijfsnaam, de periode en het exportprofiel, en ook de README noemt het bedrijf. Zo kan een boekhouder die exports voor meerdere klanten downloadt de bestanden makkelijk uit elkaar houden.
 
-The ZIP filename includes the company name, the period and the export profile, and the README inside also names the company. This makes it easier for an accountant who downloads exports for several clients to tell the files apart.
+<!-- TODO(source-missing): RichardTool 4ffca446 toonde een infokaart voor nul-aangiften met een verwijzing naar een uitnodiging van de Belastingdienst en een verzuimboete. sources/ heeft geen bron voor de Nederlandse nul-aangifteplicht of verzuimboetes; vermeld die claim niet totdat een mens de regel op belastingdienst.nl heeft gecontroleerd. -->
 
-<!-- TODO(source-missing): RichardTool 4ffca446 surfaced a nil-return reminder that mentions a Belastingdienst invitation and a verzuimboete. sources/ has no entry for Dutch nil-VAT-return obligations or fines; do not quote the invitation requirement or the fine in docs until a human verifies the current rule at belastingdienst.nl. -->
+### Herinnering nul-aangifte
 
-### Nil-return reminder
+Als het geselecteerde tijdvak is afgelopen en zowel rubriek 5a als 5b nul zijn, verschijnt er op het tabblad Aangifte een infokaart die eraan herinnert dat een nul-aangifte mogelijk toch moet worden ingediend als je een uitnodiging van je belastingdienst hebt ontvangen. De kaart wordt niet getoond voor tijdvakken die zijn afgelopen vóór de werkruimte werd aangemaakt, omdat MyCompanyDesk dan geen gegevens heeft.
 
-If the selected period has ended and both rubriek 5a and 5b are zero, an info card appears on the Filing tab to remind you that a nil return may still need to be filed when your tax authority invited you to do so. The card is not shown for periods that ended before the workspace was created, because MyCompanyDesk holds no data for those periods.
+### Internationale kaarten
 
-### Filed-return drift warning
+Heb je internationale activiteit, dan verschijnen er extra kaarten onder het overzicht:
 
-<!-- TODO(source-missing): RichardTool 28c9641 added a filed-return drift warning that uses a Belastingdienst threshold to choose between "include in the next regular return" and "formal suppletieaangifte required". sources/ has no entry for this threshold; do not quote the value or link target in docs until a human verifies the rule at belastingdienst.nl. -->
+- **ICP-opgaaf**: EU B2B-verkopen gegroepeerd per klant. Verplicht wanneer je aan BTW-geregistreerde klanten in andere EU-landen hebt verkocht. De kaart volgt de paginabrede periodekiezer, zodat een kwartaalexport alleen de EU-klanten van dat kwartaal bevat.
+- **OSS-uitsplitsing**: B2C-verkopen per land voor de One Stop Shop-regeling.
+- **Buitenlandse BTW**: buitenlandse BTW die aan jou is berekend en mogelijk via de EU-teruggaafprocedure terug te vragen is.
+- **Correcties**: handmatige BTW-correcties, met per soort een hint die uitlegt waar hij op de aangifte terechtkomt. Een privé-onttrekking telt mee in rubriek 1d. Een suppletie wordt verrekend met rubriek 5a of 5b (doe je mee met de KOR, dan heeft dit geen effect op voorbelasting en blijft rubriek 5b nul). Een generieke aanpassing krijgt geen eigen vakje; hij verschuift alleen het te betalen of terug te vragen bedrag dat MyCompanyDesk toont, niet een rubriek die je overneemt.
 
-For Dutch VAT, once a period is marked as filed the Filing tab keeps recalculating the return from your live records. If the current calculation no longer matches what you submitted, a warning banner appears above the rubrieken sheet. It compares the filed and current amounts for rubriek 5a, 5b and the net total in 5g, and shows the difference for each row.
+<!-- TODO(source-missing): RichardTool e671fd80 toont in de app een Belastingdienst-drempel van € 1.000 voor suppletiecorrecties (tot en met € 1.000 in de eerstvolgende btw-aangifte; daarboven een formele suppletieaangifte verplicht). sources/ heeft deze drempel niet; verzin de waarde of linkdoel niet totdat een mens de huidige regel heeft gecontroleerd op belastingdienst.nl. -->
 
-The banner tells you what to do next. It either tells you to include the difference in your next regular return, to file a formal suppletieaangifte, or to note that the rows shifted while the net payable or refundable amount stayed the same.
+Deze kaarten blijven verborgen totdat er echte internationale gegevens zijn, dus de meeste werkruimtes zien ze nooit.
 
-### International cards
+### Waarschuwing bij afwijking ingediende aangifte
 
-When you have international activity, companion cards appear under the sheet:
+<!-- TODO(source-missing): RichardTool 28c9641 voegde een waarschuwing toe bij afwijking van een ingediende aangifte, die een Belastingdienst-drempel gebruikt om te kiezen tussen "verwerken in eerstvolgende reguliere aangifte" en "formele suppletieaangifte verplicht". sources/ heeft deze drempel niet; verzin de waarde of linkdoel niet totdat een mens de regel op belastingdienst.nl heeft gecontroleerd. -->
 
-- **ICP-opgaaf**: EU B2B sales grouped per customer. Required when you sold goods or services to VAT-registered customers in other EU countries. The card follows the page-wide period selector, so a quarterly export lists only that quarter's EU customers.
-- **OSS breakdown**: per-country B2C sales for the One Stop Shop scheme.
-- **Foreign VAT**: foreign VAT charged to you that may be reclaimable through the EU refund procedure.
-- **Corrections**: manual VAT corrections, each with a hint that explains where it lands on the return. A private withdrawal counts in rubriek 1d. A suppletie is offset against rubriek 5a or 5b (under the KOR it does not affect input VAT, so rubriek 5b stays zero). A generic adjustment does not get its own box; it only shifts the payable or refundable total shown by MyCompanyDesk, not a rubriek you copy across.
+Voor de Nederlandse BTW herberekent het tabblad Aangifte na het indienen telkens opnieuw de aangifte uit je live boekingen. Komt die berekening niet meer overeen met wat je hebt ingediend, dan verschijnt er een waarschuwingsbanner boven het rubriekenoverzicht. Hij vergelijkt de ingediende en huidige bedragen van rubriek 5a, 5b en het nettototaal in 5g, en toont per regel het verschil.
 
+De banner vertelt wat je vervolgens doet. Je krijgt de keuze om het verschil in je eerstvolgende reguliere aangifte te verwerken, een formele suppletieaangifte in te dienen, of te zien dat de rubrieken zijn verschoven terwijl het te betalen of terug te vragen bedrag gelijk is gebleven.
 
-<!-- TODO(source-missing): RichardTool e671fd80 surfaces a Belastingdienst €1,000 threshold for suppletie corrections (under = next regular aangifte, over = formal suppletieaangifte required). sources/ has no entry for this threshold; do not invent the value or the link target until a human verifies the current rule at belastingdienst.nl. -->
+### Privégebruik bedrijfsauto
 
-These cards stay hidden until there is actual international data, so most workspaces never see them.
+Heb je de BTW op een bedrijfsauto aftrokken, dan moet je aan het einde van het jaar corrigeren voor privégebruik. MyCompanyDesk heeft hiervoor een aparte BTW-correctieflow:
 
-### Company car private use
+- Kies tussen een forfaitaire correctie op basis van de catalogusprijs, of een correctie op basis van werkelijk gebruik met een volledig rittenregistratiesysteem.
+- Het forfaitaire percentage hangt af van de leeftijdsgrens of de manier waarop de auto is aangeschaft.
 
-When you deduct VAT on a company car, you must correct for private use at the end of the year. MyCompanyDesk has a dedicated VAT correction flow for this:
+De correctie wordt doorberekend in de periodetotalen op het tabblad Aangifte.
 
-- Choose between a flat-rate correction based on the car's list price, or an actual-use correction based on a complete trip log.
-- The flat-rate percentage depends on whether the car is older than the threshold year or bought without VAT deduction.
+<!-- TODO(source-missing): De Nederlandse forfaitaire percentages voor BTW-correctie privégebruik bedrijfsauto en de leeftijdsgrens staan nog niet in sources/. Quote de waarden niet in de documentatie totdat een mens de huidige regels heeft gecontroleerd op belastingdienst.nl. -->
 
-The correction is rolled into the period totals on the Filing tab.
+## Tabblad Transacties
 
-<!-- TODO(source-missing): The Dutch flat-rate percentages for company-car private-use VAT correction and the age threshold are not yet in sources/. Do not quote the values in docs until a human verifies the current rules at belastingdienst.nl. -->
+Een platte lijst van elke factuur en uitgave die in de gekozen periode meetelt, handig om records na te lopen voordat je aangifte doet. Filterchips maken de lijst kleiner: **Alles**, **Geen bon**, **Geen BTW**, **Verlegd** en **Buitenlandse BTW**, elk met een teller. Elke rij linkt naar de onderliggende factuur of uitgave.
 
-## Transactions tab
+Uitgaven die niet volledig aftrekbaar zijn, krijgen een badge zoals **BTW niet aftrekbaar** of **BTW deels aftrekbaar**. Houd je muis op de badge (of focus hem) om een tooltip te zien met daarin hoeveel van de BTW op de uitgave meetelt als voorbelasting in rubriek 5b. Doe je mee met de KOR, dan legt de tooltip uit dat er geen voorbelasting wordt afgetrokken omdat rubriek 5b voor de hele periode nul is; de badge verwijst dan naar de aangifte, niet naar de uitgave zelf.
 
-A flat list of every invoice and expense feeding the selected period, useful for spot-checking records before you file. Filter chips narrow the list down: **All**, **Missing receipt**, **Missing VAT**, **Reverse charge** and **Foreign VAT**, each with a live count. Every row links to the underlying invoice or expense.
+## Periodevergrendeling
 
-Expense rows that are not fully deductible show a flag such as **VAT not deductible** or **VAT partly deductible**. Hover the flag (or focus it) to see a tooltip explaining how much of the expense VAT counts as input VAT in rubriek 5b. If you use the KOR, the tooltip explains that no input VAT is deducted because rubriek 5b is zero for the whole period; the flag is then about the period, not the individual expense.
+Een samenvattingsbalk bovenaan de BTW-pagina toont hoeveel periodes vergrendeld zijn; klap hem uit om ze te beheren.
 
-## Period locking
+- **Automatisch vergrendelen**: zodra de aangiftedeadline van een periode is verstreken, vergrendelt MyCompanyDesk die periode automatisch, zodat je boekhouding gelijk blijft aan de aangifte die je hebt ingediend.
+- **Handmatig vergrendelen**: met periodechips vergrendel je zelf elke afgelopen periode van het gekozen jaar, bijvoorbeeld direct na vroeg indienen. Bij een periode die nog loopt krijg je eerst een extra waarschuwing. Periodes die zijn afgelopen vóór de werkruimte werd aangemaakt, kun je niet vergrendelen, omdat MyCompanyDesk dan geen gegevens heeft en ook geen aangifte voor je heeft gedaan.
+- **Markeren als ingediend**: markeer een vergrendelde periode als ingediend zodra je de aangifte hebt gedaan. Wanneer je een BTW-deadlineherinnering opent in het notificatiepaneel, gebruikt de actie **Markeren als ingediend** de periode die in die herinnering staat, niet de datum van vandaag, zodat het juiste kwartaal of de juiste maand wordt bijgewerkt. Hij markeert daarnaast alleen de herinneringen voor die periode als opgelost, niet elke openstaande BTW-herinnering in de werkruimte. Ingediende kwartalen tonen dit ook in de kwartaalstrook.
+- **Markering ongedaan maken**: als je een periode per ongeluk als ingediend hebt gemarkeerd, kun je die vastlegging verwijderen. MyCompanyDesk vraagt eerst om bevestiging, want hiermee vervalt de vastlegging dat je over dit tijdvak aangifte hebt gedaan. De periode blijft vergrendeld, de aangiftetaak en de deadline komen terug, en bij de Belastingdienst verandert er niets. Je ingediende aangifte blijft ingediend.
+- **Tijdelijk ontgrendelen**: moet je iets herstellen? Ontgrendel een periode tijdelijk (72 uur); daarna vergrendelt hij vanzelf weer, of vergrendel zelf eerder opnieuw. Een vergrendeling helemaal verwijderen kan alleen zolang de aangiftedeadline nog niet is verstreken.
 
-A summary bar at the top of the VAT page shows how many periods are locked; expand it to manage them.
+De indienstatus wordt per exact tijdvak bijgehouden, niet op basis van overlap. Een ingediend jaar maakt de vier kwartalen niet automatisch ingediend, en een ingediend kwartaal maakt de maanden daarin niet automatisch ingediend. Vergrendeling geldt wel voor de hele periode, dus een jaarslot beschermt nog steeds elk kwartaal.
 
-- **Automatic locking**: once a period's filing deadline has passed, MyCompanyDesk locks it automatically, so your books keep matching the aangifte you filed.
-- **Manual locking**: period chips let you lock any past period of the selected year yourself, for example right after filing early. Locking a period that is still running triggers an extra warning. Periods that ended before the workspace was created cannot be locked, because MyCompanyDesk holds no data for them and cannot have filed a return on your behalf.
-- **Mark as filed**: flag a locked period as filed once you have submitted the aangifte. When you open a BTW-deadline reminder in the notification panel, the **Mark as filed** action uses the period named in that reminder rather than today's date, so it updates the correct quarter or month. It also resolves only the reminders for that period, not every outstanding VAT reminder in the workspace. Filed quarters show this in the quarter strip too.
-- **Unmark as filed**: if you marked a period as filed by mistake, you can remove that filing record. MyCompanyDesk asks for confirmation first, because the action removes the record that you filed for this period. The period stays locked, the filing task and deadline return, and nothing changes at the tax authority. Your submitted return remains submitted.
-- **Temporary unlock**: need to fix something? Unlock a period temporarily (72 hours) and it relocks by itself, or relock it manually when you are done. Removing a lock entirely is only possible while the filing deadline has not yet passed.
+**Indientiming en correcties.** Je kunt een periode pas aangeven nadat hij is afgelopen. Als je toch probeert in te dienen terwijl de laatste dag van de periode nog niet is verstreken, toont de app een foutmelding met de vraag te wachten tot de periode voorbij is. Een periode kan maar één keer als ingediend worden gemarkeerd; als hij al als ingediend staat, kun je niet opnieuw indienen vanuit de BTW-pagina. Corrigeer een ingediende periode via een correctie of suppletie in een open periode. Op het tabblad Aangifte zie je welke periodes nog open zijn en welke al ingediend.
 
-Filing status is tracked per exact tijdvak, not by range containment. A filed year return does not mark the four quarters as filed, and a filed quarter does not mark the months inside it as filed. Locking still covers the whole range, so a year lock still protects every quarter.
+Een factuur of uitgave in een vergrendelde periode bewerken wordt in het formulier geblokkeerd: de financiële velden worden alleen-lezen (notities blijven bewerkbaar) en het formulier biedt een correctiepad, zoals een correctie in de huidige open periode of een correctiefactuur. Dezelfde beveiliging geldt bij het boeken van een banktransactie of het markeren van een uitgave als betaald: als de transactie in een vergrendelde periode valt, blokkeert de app het en wijst je naar een correctie in de huidige open periode.
 
-**Filing timing and corrections.** You can only file a period after it ends. If you try to file before the last day of the period has passed, the app shows an error telling you to wait until the period is over. You can mark a period as filed only once; if it is already marked as filed, you cannot file it again from the VAT page. To correct a filed period, add a correction/suppletie in an open period instead. The Filing tab shows which periods are still open and which are already filed.
-
-Editing an invoice or expense inside a locked period is blocked at the form: the financial fields turn read-only (notes stay editable) and the form offers a correction path instead, such as creating a correction in the current open period or a credit invoice. The same guard also applies when you confirm a bank-transaction match or mark an expense as paid: if the transaction falls in a locked period, the action is blocked and the app tells you to use a correction in the current open period instead.
-
-Concurrent filing attempts for the same period are serialized. If two submissions race, for example from a double click or two open tabs, the second request is rejected with a clear message instead of failing with a database error.
+Gelijktijdige pogingen om dezelfde periode in te dienen worden geserialiseerd. Als twee indieningen elkaar overlappen, bijvoorbeeld door een dubbele klik of twee open tabbladen, wordt de tweede afgewezen met een duidelijke melding in plaats van een databasefout.
 
 ## KOR
 
-The kleineondernemersregeling is managed under **Settings → BTW**: a card tracks your year revenue against the €20,000 threshold ([`sources/vat-rates.yaml#countries.NL.small_business_threshold_eur`](../../sources/vat-rates.yaml)) with a progress bar, explains what enrolment means for your invoicing, and has the enrolment toggle. You remain eligible up to and including exactly €20,000 of year revenue; only revenue above that ends KOR eligibility. While your revenue is still in the KOR range, the VAT page shows a hint linking there.
+De kleineondernemersregeling beheer je onder **Instellingen → BTW**: een kaart volgt je jaaromzet ten opzichte van de drempel van €20.000 ([`sources/vat-rates.yaml#countries.NL.small_business_threshold_eur`](../../../sources/vat-rates.yaml)) met een voortgangsbalk, legt uit wat deelname betekent voor je facturen en bevat de aanmeldschakelaar. Je blijft tot en met precies €20.000 omzet per jaar gerechtigd; pas daarboven vervalt de KOR-rechtiging. Zolang je omzet niet hoger is dan €20.000, toont de BTW-pagina een hint die daarheen linkt.
 
-If you go above €20,000 while still enrolled, a warning banner appears at the top of the invoice editor. The banner title says you are above the KOR threshold, the body explains that the invoice must include VAT rather than 0%, and the CTA opens **Settings → BTW** so you can deregister with the Belastingdienst and turn KOR off.
+Als je boven de €20.000 uitkomt terwijl je nog aangemeld bent, verschijnt er bovenaan de factuurmaker een waarschuwingsbanner. De titel geeft aan dat je boven de KOR-drempel zit, de tekst legt uit dat deze factuur btw moet bevatten in plaats van 0%, en de knop opent **Instellingen → BTW** zodat je je kunt afmelden bij de Belastingdienst en de KOR uitschakelt.
 
-## KIA and Box 3
+## KIA en Box 3
 
-KIA (kleinschaligheidsinvesteringsaftrek) and Box 3 are income tax topics and live under **Reports → Income tax**, not on the VAT page. The Box 3 card only appears for workspaces using the properties module.
+KIA (kleinschaligheidsinvesteringsaftrek) en Box 3 zijn inkomstenbelastingonderwerpen en staan onder **Rapportages → Inkomstenbelasting**, niet op de BTW-pagina. De Box 3-kaart verschijnt alleen voor werkruimtes die de vastgoedmodule gebruiken.
 
-## VAT assistant
+## BTW-assistent
 
-The built-in assistant can answer questions about your aangifte using your own workspace numbers, and its replies can jump straight to the matching tab or record.
+De ingebouwde assistent beantwoordt vragen over je aangifte met je eigen werkruimtecijfers, en zijn antwoorden kunnen direct naar het juiste tabblad of record springen.
 
 ## Tips
 
-- Set the page period to the tijdvak you are filing; every card and metric updates together.
-- Run through the pre-filing checks before opening the Filing tab; a clean checklist usually means the rubrieken sheet matches the Belastingdienst form.
-- Use the savings pot as a target for what to set aside; it already includes a 10% buffer.
-- The deadline ring follows your filing frequency and goes red at three days. Treat that as a hard cue to file.
-- The dashboard VAT tile uses the same filing frequency as the VAT page, so the upcoming deadline and period it shows always match your actual aangifte rhythm.
-- Selling B2B in the EU? Open the ICP-opgaaf card before filing; it is a separate submission that is easy to forget.
-- Mark a period as filed right after submitting, then let the automatic lock protect it.
-- Zeroing an expense amount clears the derived VAT immediately, so a corrected expense cannot leave stale VAT on the aangifte.
+- Zet de paginaperiode op het tijdvak waarvoor je aangifte doet; elke kaart en elk cijfer beweegt mee.
+- Loop de controles langs voordat je het tabblad Aangifte opent; een schone checklist betekent meestal dat het rubriekenoverzicht klopt met het formulier van de Belastingdienst.
+- Gebruik het spaarpotje als doel voor wat je opzijzet; de buffer van 10% zit er al in.
+- De deadlinering volgt je aangiftefrequentie en wordt rood bij drie dagen. Zie dat als een hard signaal om aangifte te doen.
+- De BTW-tegel op het dashboard gebruikt dezelfde aangiftefrequentie als de BTW-pagina, zodat de getoonde deadline en periode altijd aansluiten bij je werkelijke aangifteritme.
+- Verkoop je B2B in de EU? Open de ICP-opgaafkaart voordat je indient; het is een aparte opgave die je makkelijk vergeet.
+- Markeer een periode direct na het indienen als ingediend en laat de automatische vergrendeling hem daarna beschermen.
+- Een uitgavebedrag op nul zetten wist de afgeleide BTW meteen, zodat een gecorrigeerde uitgave geen verouderde BTW op de aangifte achterlaat.
