@@ -68,6 +68,14 @@ Per concept kun je:
 
 Als de categoriechip die je hebt gekozen sinds het laden van de pagina is gearchiveerd, wordt de actie Bevestigen of Bewerken geweigerd met de fout `EXPENSE_CATEGORY_UNKNOWN` in plaats van stilzwijgend een andere categorie te kiezen. Ververs de pagina om de huidige categorielijst te laden en kies opnieuw.
 
+### Achterstand in één keer afschrijven
+
+Wanneer je een bank koppelt, haalt de eerste import transacties op van vóór je MyCompanyDesk gebruikte. Veel van die oudere regels komen uit een periode die al is ingediend, dus er valt niets meer over te beslissen. Zodra de wachtrij een blok verouderde regels ziet, biedt hij **Bijwerken tot daar** aan.
+
+Als je op de knop klikt, worden alle wachtrijregels vóór de voorgestelde datum afgesloten, ook regels die nu niet in beeld staan. Er wordt niets verwijderd: de transacties verhuizen naar **Genegeerd**, en je kunt de actie in één klik terugdraaien. Vanaf dat moment vraagt MyCompanyDesk alleen nog naar transacties vanaf de voorgestelde datum.
+
+Het aanbod verschijnt alleen zolang er verouderde regels staan. Zodra ze zijn opgeruimd, verdwijnt de banner vanzelf.
+
 ## Feedinstellingen
 
 Op dezelfde instellingenpagina bepaal je hoe de feed zich gedraagt:

@@ -68,6 +68,14 @@ Pour chaque brouillon, vous pouvez :
 
 Si la puce de catégorie choisie a été archivée depuis le chargement de la page, l'action Confirmer ou Modifier est refusée avec l'erreur `EXPENSE_CATEGORY_UNKNOWN` au lieu de comptabiliser silencieusement la dépense sous une autre catégorie. Actualisez la page pour charger la liste des catégories actuelles et choisissez à nouveau.
 
+### Rattraper les anciennes lignes en une fois
+
+Quand vous reliez un compte bancaire, la première importation peut récupérer des transactions d'avant MyCompanyDesk. Beaucoup de ces lignes anciennes appartiennent à une période déjà déclarée, donc il n'y a plus rien à décider. Dès que la file détecte un bloc de lignes périmées, elle propose **Mettre à jour jusqu'ici**.
+
+Cliquer ferme toutes les lignes de la file avant la date suggérée, y compris celles qui ne sont pas visibles actuellement. Rien n'est supprimé : les transactions passent dans **Ignorées**, et vous pouvez annuler l'action en un clic. Dès lors, MyCompanyDesk ne vous demande que les transactions à partir de la date suggérée.
+
+L'offre n'apparaît que tant qu'il reste des lignes périmées. Une fois le bloc traité, la bannière disparaît d'elle-même.
+
 ## Réglages du flux
 
 Sur la même page de réglages, vous contrôlez le comportement du flux :
