@@ -1,7 +1,7 @@
 ---
 title: Sitebouwer
 description: "Bouw een website met meerdere pagina's in de drag-and-drop-editor: secties en blokken, je eigen kleuren en lettertypes, en publiceren wanneer jij wilt."
-last_verified: 2026-08-15
+last_verified: 2026-08-20
 ---
 
 # Sitebouwer
@@ -43,12 +43,13 @@ De banner gebruikt het Gemini AI-model (lite-variant) als dat beschikbaar is in 
 
 ## Website-opzetwizard
 
-Voordat je ooit de editor opent, kan de website-opzetwizard je eerste concept voor je bouwen. Hij opent automatisch de eerste keer dat een nieuwe werkruimte `/website` bezoekt, en je kunt hem later opnieuw starten via **Bedrijf > Je website > Stijl** met **Opnieuw opzetten**. De wizard stelt vier vragen:
+Voordat je ooit de editor opent, kan de website-opzetwizard je eerste concept voor je bouwen. Hij opent automatisch de eerste keer dat een nieuwe werkruimte `/website` bezoekt, en je kunt hem later opnieuw starten via **Bedrijf > Je website > Stijl** met **Opnieuw opzetten**. De wizard stelt vier vragen en toont daarna optioneel een stap voor een webadres:
 
 1. **Wat je doet** (alvast ingevuld uit je KVK-gegevens) - je werk, diensten en toon.
 2. **Wat je wilt** - of je site vooral klanten moet binnenhalen, je werk moet tonen, betrouwbaar moet overkomen of beter vindbaar moet zijn.
 3. **Logo** - houd het AI-gegenereerde logo, of upload je eigen PNG/SVG.
 4. **Merkkleur** - kies een van de voorgestelde kleuren of geef je eigen hex-kleur op.
+5. **Webadres** (alleen als je werkruimte nog geen actief domein of CNAME heeft die de site bedient) — voeg een domein toe of koppel een bestaand domein. Je kunt deze stap overslaan en later een adres toevoegen.
 
 Je antwoorden worden opgeslagen als sitebriefing. Als je afsluit, schrijft de AI nieuwe teksten voor je hele conceptsite op basis van de briefing en je werkruimtegegevens, past je gekozen logo en merkkleur toe, en laat alles als concept staan. Er wordt niets automatisch gepubliceerd. Je bekijkt het resultaat in de editor en publiceert pas wanneer je tevreden bent.
 

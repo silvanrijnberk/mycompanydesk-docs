@@ -1,7 +1,7 @@
 ---
 title: Website-Builder
 description: "Bauen Sie eine mehrseitige Unternehmenswebsite im Drag-and-drop-Editor: Abschnitte und Blöcke, eigene Farben und Schriften, und veröffentlichen."
-last_verified: 2026-08-15
+last_verified: 2026-08-20
 ---
 
 # Website-Builder
@@ -43,12 +43,13 @@ Das Banner verwendet das Gemini KI-Modell (Lite-Variante), sofern in Ihrem Works
 
 ## Website-Einrichtungsassistent
 
-Bevor Sie überhaupt den Editor öffnen, kann der Website-Einrichtungsassistent Ihren ersten Entwurf für Sie erstellen. Er öffnet sich automatisch beim ersten Besuch von `/website` in einem neuen Workspace und lässt sich später unter **Unternehmen > Ihre Website > Stil** mit **Erneut einrichten** neu starten. Der Assistent stellt vier Fragen:
+Bevor Sie überhaupt den Editor öffnen, kann der Website-Einrichtungsassistent Ihren ersten Entwurf für Sie erstellen. Er öffnet sich automatisch beim ersten Besuch von `/website` in einem neuen Workspace und lässt sich später unter **Unternehmen > Ihre Website > Stil** mit **Erneut einrichten** neu starten. Der Assistent stellt vier Fragen und zeigt dann optional einen Schritt für eine Webadresse an:
 
 1. **Was Sie tun** (aus Ihren KVK-Daten vorausgefüllt) - Ihre Arbeit, Dienstleistungen und Tonalität.
 2. **Was Sie wollen** - ob die Site vor allem Kunden gewinnen, Ihre Arbeit zeigen, vertrauenswürdig wirken oder online gefunden werden soll.
 3. **Logo** - das KI-generierte Logo behalten, oder Ihr eigenes PNG/SVG hochladen.
 4. **Markenfarbe** - eine der vorgeschlagenen Farben wählen oder Ihre eigene Hex-Farbe eingeben.
+5. **Webadresse** (nur wenn Ihr Workspace noch keine aktive Domain oder CNAME hat, die die Site bedient) — fügen Sie eine Domain hinzu oder verbinden Sie eine bestehende. Sie können diesen Schritt überspringen und später eine Adresse hinzufügen.
 
 Ihre Antworten werden als Site-Briefing gespeichert. Wenn Sie abschliessen, schreibt die KI auf Basis des Briefings und Ihrer Workspace-Daten neuen Text für Ihren gesamten Entwurf, wendet Ihr gewähltes Logo und Ihre Markenfarbe an und lässt alles als Entwurf stehen. Es wird nichts automatisch veröffentlicht. Sie prüfen das Ergebnis im Editor und veröffentlichen es, sobald Sie zufrieden sind.
 
