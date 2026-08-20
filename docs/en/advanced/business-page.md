@@ -1,6 +1,6 @@
 ---
 title: Site Builder
-last_verified: 2026-08-15
+last_verified: 2026-08-20
 ---
 
 # Site Builder
@@ -42,12 +42,13 @@ The banner uses the Gemini AI model (lite variant) when available on your worksp
 
 ## Website setup wizard
 
-Before you ever open the editor, the website setup wizard can build your first draft for you. It opens automatically the first time a new workspace visits `/website`, and you can restart it later from **Company > Your website > Style** by clicking **Set up again**. The wizard asks four questions:
+Before you ever open the editor, the website setup wizard can build your first draft for you. It opens automatically the first time a new workspace visits `/website`, and you can restart it later from **Company > Your website > Style** by clicking **Set up again**. The wizard asks four questions and then may show an optional web-address step:
 
 1. **What you do** (pre-filled from your KVK data) - your work, services and tone.
 2. **What you want** - whether the site should bring in leads, showcase your work, build credibility or get found online.
 3. **Logo** - keep the AI-generated logo or upload your own PNG/SVG.
 4. **Brand colour** - pick one of the suggested swatches or enter your own hex colour.
+5. **Web address** (only when your workspace does not already have an active domain or CNAME serving the site) — add or connect the domain where your site will live. You can skip this step and set up an address later.
 
 Your answers are saved as the site brief. When you finish, the AI writes fresh copy for your whole draft site based on the brief and your workspace data, applies your chosen logo and brand colour, and leaves everything as a draft. Nothing is published automatically. You review the result in the editor and publish when you are happy with it.
 
