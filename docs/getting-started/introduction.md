@@ -1,59 +1,59 @@
 ---
-title: Introduction
+title: Introductie
 ---
 
-# Introduction
+# Introductie
 
-MyCompanyDesk is an all-in-one accounting and business management platform designed for freelancers, small businesses, and rental property managers. It helps you manage your entire financial workflow — from creating invoices and tracking expenses to filing VAT and managing customer relationships.
+MyCompanyDesk is een alles-in-een boekhoud- en bedrijfsmanagementplatform, ontworpen voor zzp'ers, kleine bedrijven en vastgoedbeheerders. Het helpt je bij het beheren van je volledige financiele workflow — van het maken van facturen en het bijhouden van uitgaven tot het doen van BTW-aangifte en het beheren van klantrelaties.
 
-## What can you do with MyCompanyDesk?
+## Wat kun je doen met MyCompanyDesk?
 
-- **Create and send invoices** — Professional invoices with payment links, PDF generation, and email delivery
-- **Track expenses** — Log expenses manually or scan receipts with AI-powered OCR
-- **Manage customers** — Maintain a complete customer database with contact details and history
-- **Generate quotes** — Create quotes and convert them to invoices when accepted
-- **Manage projects** — Organize work into projects, track time, and monitor profitability
-- **Handle contracts** — Set up recurring service or rental contracts
-- **Track assets** — Manage rental properties, vehicles, and equipment
-- **Automate billing** — Set up recurring invoices and expenses
-- **View reports** — Revenue, profit, cash flow, VAT, and client analytics
-- **Collaborate** — Invite team members, set permissions, and share with your accountant
+- **Facturen maken en versturen** — Professionele facturen met betaallinks, PDF-generatie en e-mailverzending
+- **Uitgaven bijhouden** — Registreer uitgaven handmatig of scan bonnen met AI-gestuurde OCR
+- **Klanten beheren** — Onderhoud een complete klantendatabase met contactgegevens en geschiedenis
+- **Offertes maken** — Maak offertes en zet ze om naar facturen wanneer ze geaccepteerd zijn
+- **Projecten beheren** — Organiseer werk in projecten, registreer tijd en monitor winstgevendheid
+- **Contracten beheren** — Stel terugkerende service- of huurcontracten in
+- **Objecten bijhouden** — Beheer huurwoningen, voertuigen en apparatuur
+- **Facturatie automatiseren** — Stel terugkerende facturen en uitgaven in
+- **Rapportages bekijken** — Omzet, winst, cashflow, BTW en klantanalyses
+- **Samenwerken** — Nodig teamleden uit, stel rechten in en deel met je boekhouder
 
-## Interface language
+## Interfacetaal
 
-You can use the MyCompanyDesk interface in Dutch, English, German, or French, and switch language at any time.
+Je kunt de interface van MyCompanyDesk gebruiken in het Nederlands, Engels, Duits of Frans, en je kunt op elk moment van taal wisselen.
 
-Invoices, quotes, and emails can also be sent in Dutch, English, German, or French. The document language is set per invoice and does not depend on the interface language.
+Facturen, offertes en e-mails kunnen ook in het Nederlands, Engels, Duits of Frans worden verstuurd. De documenttaal stel je per factuur in en is onafhankelijk van de interfacetaal.
 
-## Plans
+## Abonnementen
 
-MyCompanyDesk has a Free plan and two paid plans: Starter and Pro. New customers get a 60-day Pro trial, and a workspace that does not convert continues on Free.
+MyCompanyDesk heeft een Gratis-abonnement en twee betaalde abonnementen: Starter en Pro. Nieuwe klanten krijgen een Pro-proefperiode van 60 dagen; wie niet overstapt, blijft op Gratis.
 
-| Feature | Free | Starter | Pro |
+| Functie | Gratis | Starter | Pro |
 |---|---|---|---|
-| Invoices | Unlimited | Unlimited | Unlimited |
-| Quotes | Unlimited | Unlimited | Unlimited |
-| Expense tracking | Unlimited | Unlimited | Unlimited |
-| Receipt scanning | Yes (3 scans/month) | Yes (30 scans/month) | Yes (200 scans/month) |
-| AI suggestions | Yes | Yes | Yes |
-| Custom branding | Yes | Yes | Yes |
-| Time registration, language tools | - | Yes | Yes |
-| Public business page | Yes | Yes | Yes |
-| Contracts and projects | - | Yes | Yes |
-| Reports and CSV/Excel exports | - | Yes | Yes |
-| Team access | Just you | Just you | Unlimited people |
-| Business mailbox on your domain | - | - | Yes |
-| Bank connections | - | - | Up to 3 |
-| Multi-domain, custom domain routing | - | - | Yes |
-| Advanced reports, priority support | - | - | Yes |
-| API access, webhooks | - | - | Yes |
+| Facturen | Onbeperkt | Onbeperkt | Onbeperkt |
+| Offertes | Onbeperkt | Onbeperkt | Onbeperkt |
+| Uitgaven bijhouden | Onbeperkt | Onbeperkt | Onbeperkt |
+| Bonnen scannen | Ja (3 scans/maand) | Ja (30 scans/maand) | Ja (200 scans/maand) |
+| AI-suggesties | Ja | Ja | Ja |
+| Eigen huisstijl | Ja | Ja | Ja |
+| Urenregistratie, taalopties | - | Ja | Ja |
+| Openbare bedrijfspagina | Ja | Ja | Ja |
+| Contracten en projecten | - | Ja | Ja |
+| Rapportages en CSV/Excel-export | - | Ja | Ja |
+| Teamtoegang | Alleen jij | Alleen jij | Onbeperkt aantal mensen |
+| Zakelijke mailbox op je domein | - | - | Ja |
+| Bankkoppelingen | - | - | Maximaal 3 |
+| Multi-domein, eigen domein routering | - | - | Ja |
+| Geavanceerde rapporten, prioriteitsondersteuning | - | - | Ja |
+| API-toegang, webhooks | - | - | Ja |
 
-## Getting help
+## Hulp krijgen
 
-- Use the **contextual guide** (the help icon in the app) for context-aware assistance
-- Browse this documentation for detailed feature guides
-- Contact support via the in-app support ticket system
+- Gebruik de **contextuele gids** (het hulp-icoon in de app) voor contextgerichte assistentie
+- Blader door deze documentatie voor gedetailleerde functiegidsen
+- Neem contact op met support via het in-app supportticketsysteem
 
-## Next steps
+## Volgende stappen
 
-Ready to get started? Head to [Create Your Account](/getting-started/create-account) to set up your workspace.
+Klaar om te beginnen? Ga naar [Account aanmaken](/getting-started/create-account) om je werkruimte in te richten.

@@ -1,109 +1,109 @@
 ---
-title: Settings overview
+title: Overzicht van de instellingen
 last_verified: 2026-08-05
 ---
 
-# Settings overview
+# Overzicht van de instellingen
 
-Everything you can configure in MyCompanyDesk lives on a single settings page. Open **Instellingen** (Settings) from the menu, or go to `/settings`. Every topic is a full-width row, sorted into three plain-language groups, and each setting is at most two clicks away.
+Alles wat je in MyCompanyDesk kunt instellen staat op één instellingenpagina. Open **Instellingen** in het menu, of ga naar `/settings`. Elk onderwerp is een rij over de volle breedte, verdeeld over drie groepen in gewone taal, en elke instelling is maximaal twee klikken diep.
 
-There is no longer a separate tree for company settings and personal settings. Personal topics and business topics sit on the same page; the group headers make clear which is which. Old bookmarked settings links redirect to the matching new page automatically.
+Er is geen aparte boom meer voor bedrijfsinstellingen en persoonlijke instellingen. Persoonlijke onderwerpen en bedrijfsonderwerpen staan op dezelfde pagina; de groepskoppen maken duidelijk wat waarbij hoort. Oude opgeslagen instellingenlinks sturen je automatisch door naar de juiste nieuwe pagina.
 
-## Over jou (about you)
+## Over jou
 
-Personal settings. They apply to your own account and never change anything for teammates.
+Persoonlijke instellingen. Ze gelden alleen voor jouw account en veranderen niets voor teamgenoten.
 
-| Row | What it covers |
+| Rij | Wat je er regelt |
 |---|---|
-| **Jouw gegevens** (your details) | Your name, email address and photo |
-| **Inloggen** (signing in) | Password, two-step verification, passkeys and logging out |
-| **Meldingen** (notifications) | Which events we message you about, plus push notifications on this device |
-| **Weergave** (display) | Light or dark theme, text size, app language and how much you see above lists (dense or calm) |
+| **Jouw gegevens** | Je naam, e-mailadres en foto |
+| **Inloggen** | Wachtwoord, verificatie in twee stappen, passkeys en uitloggen |
+| **Meldingen** | Waarover we je een berichtje sturen, plus pushmeldingen op dit apparaat |
+| **Weergave** | Licht of donker, tekstgrootte, de taal van de app en hoe veel je boven lijsten ziet (uitgebreid of rustig) |
 
-See [Your personal settings](/account/profile) for a walkthrough of these four pages.
+Zie [Je persoonlijke instellingen](/account/profile) voor een rondleiding langs deze vier pagina's.
 
-## Je bedrijf (your business)
+## Je bedrijf
 
-Shared settings. Changes here apply to everyone in your workspace.
+Gedeelde instellingen. Wijzigingen hier gelden voor iedereen in je werkruimte.
 
-| Row | What it covers |
+| Rij | Wat je er regelt |
 |---|---|
-| **Bedrijfsgegevens** (business details) | Name, address, KvK and VAT number; these appear on your invoices and quotes |
-| **Logo en kleur** (logo and colour) | How your invoices and quotes look |
-| **Facturen en offertes** (invoices and quotes) | Payment term, automatic payment reminders and how long quotes stay valid |
-| **Factuurontwerp** (invoice design) | Layout, colour and font of your invoices, with a live preview |
-| **Betalen** (getting paid) | How customers can pay you: your IBAN, iDEAL and PayPal |
-| **BTW** (VAT) | Your usual VAT rate, how often you file and the KOR small-business scheme |
-| **Uitgaven** (expenses) | Default category and payment method for new expenses, plus the address for forwarding receipts by email |
-| **Uitgavencategorieën** (expense categories) | Add, edit, archive or delete custom expense categories; set VAT treatment and deduction percentage |
-| **Bankkoppeling** (bank connection) | Connect your bank so transactions arrive as draft expenses |
-| **E-mail** | The address your invoices and quotes are sent from |
-| **Je website en domein** (your website and domain) | Your own site and domain name. Domain and DNS changes require team admin. |
-| **Onderdelen** (features) | Switch parts of the app on or off: quotes, receipt scanning, contracts, projects, website, newsletters |
-| **Mensen met toegang** (people with access) | Invite teammates and set what they can see and do |
-| **Je boekhouder** (your accountant) | Invite your accountant and manage their access |
+| **Bedrijfsgegevens** | Naam, adres, KvK- en BTW-nummer; deze komen op je facturen en offertes |
+| **Logo en kleur** | Hoe je facturen en offertes eruitzien |
+| **Facturen en offertes** | Betaaltermijn, automatische herinneringen en hoe lang offertes geldig blijven |
+| **Factuurontwerp** | Opmaak, kleur en lettertype van je facturen, met live voorbeeld |
+| **Betalen** | Hoe klanten jou kunnen betalen: je IBAN, iDEAL en PayPal |
+| **BTW** | Je gebruikelijke tarief, hoe vaak je aangifte doet en de KOR |
+| **Uitgaven** | Standaardcategorie en betaalmethode voor nieuwe uitgaven, plus het adres om bonnen per e-mail door te sturen |
+| **Uitgavencategorieën** | Eigen uitgavecategorieën toevoegen, bewerken, archiveren of verwijderen; btw-behandeling en aftrekbare deel instellen |
+| **Bankkoppeling** | Je bank koppelen zodat transacties als conceptuitgaven binnenkomen |
+| **E-mail** | Vanaf welk adres je facturen en offertes verstuurt |
+| **Je website en domein** | Je eigen site en domeinnaam. Wijzigingen aan domein en DNS vereisen een teamadmin. |
+| **Onderdelen** | Zet delen van de app aan of uit: offertes, bonnetjes scannen, contracten, projecten, website, nieuwsbrieven |
+| **Mensen met toegang** | Nodig teamgenoten uit en bepaal wat ze kunnen zien en doen |
+| **Je boekhouder** | Nodig je boekhouder uit en beheer diens toegang |
 
-## Abonnement en gegevens (subscription and data)
+## Abonnement en gegevens
 
-| Row | What it covers |
+| Rij | Wat je er regelt |
 |---|---|
-| **Je abonnement** (your subscription) | What you pay and what is included |
-| **Mijn verzoeken** (my requests) | View and manage your support questions |
-| **Gegevens downloaden** (download your data) | Everything you have stored, in one file |
-| **Gegevens wissen** (wipe data) | Remove all business data from your workspace |
-| **Account opzeggen** (cancel your account) | Stop using MyCompanyDesk |
+| **Je abonnement** | Wat je betaalt en wat erbij zit |
+| **Mijn verzoeken** | Bekijk en beheer je supportvragen |
+| **Gegevens downloaden** | Alles wat je hebt opgeslagen, in één bestand |
+| **Gegevens wissen** | Verwijder alle bedrijfsgegevens uit je werkruimte |
+| **Account opzeggen** | Stoppen met MyCompanyDesk |
 
-## Admin-only rows
+## Rijen alleen voor beheerders
 
-Five rows are only visible to team admins: **Mensen met toegang**, **Je boekhouder**, **Je abonnement**, **Gegevens wissen** and **Account opzeggen**. If you were invited as a team member without admin rights, these rows are hidden for you; ask the workspace admin to make those changes.
+Vijf rijen zijn alleen zichtbaar voor teambeheerders: **Mensen met toegang**, **Je boekhouder**, **Je abonnement**, **Gegevens wissen** en **Account opzeggen**. Ben je uitgenodigd als teamlid zonder beheerdersrechten, dan zie je deze rijen niet; vraag de beheerder van de werkruimte om die wijzigingen te doen.
 
-## Search
+## Zoeken
 
-Press **Cmd+K** (Mac) or **Ctrl+K** (Windows and Linux), or click the search box at the top of the settings page. Typing filters the rows as you type, and everyday words work too: "iban" finds **Betalen**, "donker" (dark) finds **Weergave**, "aangifte" (tax return) finds **BTW**.
+Druk op **Cmd+K** (Mac) of **Ctrl+K** (Windows en Linux), of klik op het zoekveld bovenaan de instellingenpagina. Terwijl je typt worden de rijen gefilterd, en alledaagse woorden werken ook: "iban" vindt **Betalen**, "donker" vindt **Weergave**, "aangifte" vindt **BTW**.
 
-A few pages only appear through search, to keep the main list calm:
+Een paar pagina's verschijnen alleen via zoeken, zodat de hoofdlijst rustig blijft:
 
-- **Bankkoppeling** (bank connection): connects your bank so incoming transactions are recognised as expenses automatically.
-- **API-sleutels** (API keys) and **Webhooks**: developer settings, shown when the public API is available on your account.
+- **Bankkoppeling**: koppelt je bank zodat binnenkomende transacties automatisch als uitgaven worden herkend.
+- **API-sleutels** en **Webhooks**: instellingen voor ontwikkelaars, zichtbaar wanneer de publieke API op je account beschikbaar is.
 
-## Where do I find...
+## Waar vind ik...
 
-| I want to... | Open |
+| Ik wil... | Open |
 |---|---|
-| Change my name or photo | **Jouw gegevens** |
-| Change my password or set up two-step verification | **Inloggen** |
-| Choose what I get notified about | **Meldingen** |
-| Switch to dark mode, larger text, another app language or hide the KPI strips above lists | **Weergave** |
-| Fix my company address or VAT number | **Bedrijfsgegevens** |
-| Upload a logo or change my brand colour | **Logo en kleur** |
-| Change the payment term or reminder emails | **Facturen en offertes** |
-| Restyle my invoice PDF | **Factuurontwerp** |
-| Add my IBAN or let customers pay with iDEAL | **Betalen** |
-| Change my VAT rate or filing frequency | **BTW** |
-| Send invoices from my own email address | **E-mail** |
-| Set up my website or domain | **Je website en domein** |
-| Turn quotes, projects or newsletters on or off | **Onderdelen** |
-| Invite a teammate | **Mensen met toegang** (admins) |
-| Give my accountant access | **Je boekhouder** (admins) |
-| Change time-registration options | **Uren & agenda** |
-| Upgrade or check my plan | **Je abonnement** (admins) |
-| Connect my bank | **Bankkoppeling** |
-| Add or edit expense categories | **Uitgavencategorieën** |
-| Download a copy of my data | **Gegevens downloaden** |
-| Wipe my business data | **Gegevens wissen** (admins) |
-| Cancel my account | **Account opzeggen** (admins) |
+| Mijn naam of foto aanpassen | **Jouw gegevens** |
+| Mijn wachtwoord wijzigen of verificatie in twee stappen instellen | **Inloggen** |
+| Kiezen waarover ik meldingen krijg | **Meldingen** |
+| Donkere modus, grotere letters, een andere app-taal of samenvattingskaarten boven lijsten verbergen | **Weergave** |
+| Mijn bedrijfsadres of BTW-nummer corrigeren | **Bedrijfsgegevens** |
+| Een logo uploaden of mijn huisstijlkleur wijzigen | **Logo en kleur** |
+| De betaaltermijn of herinneringsmails aanpassen | **Facturen en offertes** |
+| Mijn factuur-pdf een andere stijl geven | **Factuurontwerp** |
+| Mijn IBAN toevoegen of klanten met iDEAL laten betalen | **Betalen** |
+| Mijn BTW-tarief of aangiftefrequentie wijzigen | **BTW** |
+| Facturen versturen vanaf mijn eigen e-mailadres | **E-mail** |
+| Mijn website of domein regelen | **Je website en domein** |
+| Offertes, projecten of nieuwsbrieven aan- of uitzetten | **Onderdelen** |
+| Een teamgenoot uitnodigen | **Mensen met toegang** (beheerders) |
+| Mijn boekhouder toegang geven | **Je boekhouder** (beheerders) |
+| Instellingen voor urenregistratie wijzigen | **Uren & agenda** |
+| Mijn abonnement upgraden of bekijken | **Je abonnement** (beheerders) |
+| Mijn bank koppelen | **Bankkoppeling** |
+| Uitgavecategorieën toevoegen of bewerken | **Uitgavencategorieën** |
+| Een kopie van mijn gegevens downloaden | **Gegevens downloaden** |
+| Mijn bedrijfsgegevens wissen | **Gegevens wissen** (beheerders) |
+| Mijn account opzeggen | **Account opzeggen** (beheerders) |
 
-Calendar sync with Google or Outlook is now also listed under **Instellingen** > **Uren & agenda**. You can still open it directly from the Schedule page.
+Agenda's synchroniseren met Google of Outlook vind je nu ook onder **Instellingen** > **Uren & agenda**. Je kunt het nog steeds direct openen vanaf de Uren & agenda-pagina.
 
-## Old links
+## Oude links
 
-Settings URLs from earlier versions of the app, including the old separate workspace and personal settings trees, redirect to the matching new page. Bookmarks and links in old emails keep working.
+Instellingen-URL's uit eerdere versies van de app, inclusief de oude gescheiden bomen voor werkruimte- en persoonlijke instellingen, sturen je door naar de juiste nieuwe pagina. Bladwijzers en links in oude e-mails blijven werken.
 
-## Related pages
+## Gerelateerde pagina's
 
-- [Setup wizard](/features/setup-wizard) fills most business settings on first run and can be re-run at any time.
-- [Your personal settings](/account/profile) covers the Over jou group in detail.
-- [Security](/account/security) covers passwords, two-step verification and passkeys.
-- [Data import and export](/account/data) covers Gegevens downloaden and CSV import.
-- [Team management](/settings/team) covers access for partners and accountants.
-- [Billing and plans](/settings/billing) covers your subscription.
+- De [instelwizard](/features/setup-wizard) vult de meeste bedrijfsinstellingen bij de eerste start en kun je altijd opnieuw doorlopen.
+- [Je persoonlijke instellingen](/account/profile) behandelt de groep Over jou in detail.
+- [Beveiliging](/account/security) behandelt wachtwoorden, verificatie in twee stappen en passkeys.
+- [Gegevens importeren en exporteren](/account/data) behandelt Gegevens downloaden en CSV-import.
+- [Teambeheer](/settings/team) behandelt toegang voor partners en boekhouders.
+- [Abonnement en plannen](/settings/billing) behandelt je abonnement.

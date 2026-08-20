@@ -8,10 +8,10 @@ chatbot:
   follow_up: ["How do I filter by status?", "How do I find a customer?"]
 ---
 
-To search and filter invoices:
-1. Go to Invoices
-2. Use the search bar to search by invoice number, customer name, or amount
-3. Use filters to narrow by status (Draft, Sent, Paid, Overdue, Cancelled)
-4. Sort by date, amount, or customer name
+Om een specifieke factuur te zoeken:
+1. Ga naar Facturen
+2. Gebruik de zoekbalk om het factuurnummer, de klantnaam of het bedrag te typen
+3. Gebruik filters voor status (Concept, Verzonden, Betaald, Achterstallig)
+4. Klik op de factuur om deze te openen
 
-Tip: Combine search with status filters to quickly find specific invoices.
+Tip: Combineer zoeken met statusfilters voor de snelste resultaten.

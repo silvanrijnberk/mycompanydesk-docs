@@ -1,5 +1,5 @@
 ---
-title: "Change your address"
+title: "Adres wijzigen"
 last_verified: 2026-08-08
 chatbot:
   triggers:
@@ -22,9 +22,9 @@ chatbot:
     - "How do I change the PDF template?"
 ---
 
-To change your company address:
-1. Go to Settings → "Bedrijfsgegevens" (business details)
-2. Use the address helper to search for and apply the updated address. If the helper cannot resolve the full address, fill in the postcode and city yourself.
-3. New documents will use that updated address
+Om je bedrijfsadres te wijzigen:
+1. Ga naar Instellingen → "Bedrijfsgegevens"
+2. Gebruik daar de adreshelper om het nieuwe adres te zoeken en toe te passen. Kan de helper het adres niet volledig invullen, dan vul je postcode en plaats zelf in.
+3. Nieuwe documenten gebruiken daarna het bijgewerkte adres
 
-Note: Previously issued documents keep the address they already had.
+Let op: eerder verstuurde documenten behouden het adres dat ze al hadden.

@@ -1,5 +1,5 @@
 ---
-title: "Payment methods"
+title: "Betaalmethoden"
 last_verified: 2026-07-22
 chatbot:
   triggers:
@@ -20,39 +20,39 @@ chatbot:
     - "How do I change the PDF template?"
 ---
 
-To configure payment methods on documents:
-1. Go to Settings and open "Betalen"
-2. Enter your IBAN to offer bank transfer; filling in an IBAN enables it automatically and adds a payment QR code to your invoices
-3. Toggle PayPal on and enter your PayPal email address if you want to offer it
-4. Connect Mollie or Stripe if you want customers to pay online, for example with iDEAL
-5. Changes on this page save automatically
+Om betaalmethoden op documenten te beheren:
+1. Ga naar Instellingen en open "Betalen"
+2. Vul je IBAN in om bankoverschrijving aan te bieden; een ingevulde IBAN schakelt die automatisch in en zet een betaal-QR-code op je facturen
+3. Zet PayPal aan en vul je PayPal-e-mailadres in als je dat wilt aanbieden
+4. Koppel Mollie of Stripe als je klanten online wilt laten betalen, bijvoorbeeld met iDEAL
+5. Wijzigingen op deze pagina worden automatisch opgeslagen
 
-The enabled methods appear at the bottom of your invoices.
+De ingeschakelde methoden verschijnen onderaan je factuur.
 
-## Online payment processors
+## Online betaalverwerkers
 
-You can connect your own Mollie or Stripe account so customers can pay invoices directly online. Funds go straight to your own account. MyCompanyDesk only handles the integration.
+Je kunt je eigen Mollie- of Stripe-account koppelen zodat klanten facturen direct online kunnen betalen. Het geld komt rechtstreeks op jouw rekening. MyCompanyDesk regelt alleen de koppeling.
 
-To connect a processor:
-1. Go to **Settings → Betalen**
-2. Under **Online betalingen**, click **Verbind Mollie** or **Verbind Stripe**
-3. Follow the OAuth flow to authorize your account
-4. Once connected, sent invoices include a payment link your customers can use
+Zo koppel je een verwerker:
+1. Ga naar **Instellingen → Betalen**
+2. Klik onder **Online betalingen** op **Verbind Mollie** of **Verbind Stripe**
+3. Volg de OAuth-stappen om je account te autoriseren
+4. Na het koppelen bevat elke verstuurde factuur een betaallink voor je klanten
 
-Mollie supports iDEAL, Bancontact, credit card, and bank transfer, ideal for Dutch and Belgian customers. Stripe Connect supports card, Apple Pay, Google Pay, and SEPA direct debit, suitable for international customers.
+Mollie ondersteunt iDEAL, Bancontact, creditcard en bankoverboeking, ideaal voor Nederlandse en Belgische klanten. Stripe Connect ondersteunt card, Apple Pay, Google Pay en SEPA-incasso, geschikt voor internationale klanten.
 
-## Online payment fees on the Free plan
+## Online-betalingstarief op het gratis plan
 
-Online invoice payments carry a small service fee on the Free plan. When a customer pays an invoice online, € 0.50 is collected via your Mollie or Stripe account as an application fee. Online payments on Starter and Pro are not charged. The fee is shown next to **Online betalingen** on `/settings/betalen` while your workspace is on the Free plan.
+Op het gratis plan geldt een klein servicekostenbedrag voor online factuurbetalingen. Wanneer een klant een factuur online betaalt, wordt € 0,50 via je Mollie- of Stripe-account geïnd als application fee. Online betalingen op Starter en Pro zijn kosteloos. Het tarief staat naast **Online betalingen** op `/settings/betalen` zolang je werkruimte op het gratis plan zit.
 
-The exact amount and minimum invoice threshold are configured server-side. The in-app hint currently shows € 0.50 per online invoice payment from € 5, matching `config.billing.freeTierSurchargeCents` and `freeTierSurchargeMinInvoiceCents` in `apps/api/src/config/env.js`. If either value changes, this page and the in-app hint must be updated together.
+Het precieze bedrag en de minimale factuurwaarde staan server-side ingesteld. De hint in de app toont op dit moment € 0,50 per online factuurbetaling vanaf € 5, overeenkomstig `config.billing.freeTierSurchargeCents` en `freeTierSurchargeMinInvoiceCents` in `apps/api/src/config/env.js`. Als een van deze waarden wijzigt, moeten deze pagina en de hint in de app samen worden bijgewerkt.
 
-To disconnect, click **Loskoppelen** on the relevant card. If there are payments from the last 24 hours, a warning appears reminding you that pending webhooks may still arrive and that refunds for those payments must be handled manually. After disconnecting, customers can no longer pay via that processor.
+Loskoppelen doe je met **Loskoppelen** op de betreffende kaart. Als er in de afgelopen 24 uur betalingen zijn geweest, krijg je een waarschuwing dat er mogelijk nog openstaande webhooks binnenkomen en dat je terugbetalingen voor die betalingen handmatig moet verwerken. Na het loskoppelen kunnen klanten niet meer via die verwerker betalen.
 
-### Mollie payment settings
+### Mollie-betalingsinstellingen
 
-Once Mollie is connected, a **Betaalknop op facturen** toggle and **Betaalmethoden** section appear on the Mollie card. The toggle turns the pay button on or off across all invoices without disconnecting. The method list, fetched live from your Mollie dashboard, lets you limit which payment methods customers see. A **Stuur testbetaling** button runs a free €1 test checkout through Mollie so you can confirm everything works end-to-end.
+Zodra Mollie is gekoppeld, verschijnen een **Betaalknop op facturen**-schakelaar en **Betaalmethoden**-sectie op de Mollie-kaart. Met de schakelaar zet je de betaalknop op alle facturen aan of uit zonder Mollie te ontkoppelen. De methodenlijst, live uit je Mollie-dashboard, laat je kiezen welke betaalmethoden je klanten te zien krijgen. Met **Stuur testbetaling** loop je een gratis €1-testcheckout door Mollie om te bevestigen dat alles van begin tot eind werkt.
 
-### Stripe payment settings
+### Stripe-betalingsinstellingen
 
-Once Stripe is connected and onboarding (KYC) is complete, a **Betaalknop op facturen** toggle and **Betaalmethoden** section appear on the Stripe card. The toggle turns the Stripe pay button on or off across all invoices without disconnecting. The method list, cross-referenced with your Stripe account capabilities, lets you limit which payment methods customers see at checkout (card, iDEAL, Bancontact, SEPA Direct Debit, PayPal, Klarna, Link by Stripe). Clearing all ticks returns to automatic method selection by Stripe Checkout. An **Open Stripe Dashboard** button deep-links you to your Stripe payment-method settings so you can verify your integration and test payments.
+Zodra Stripe is gekoppeld en de onboarding (KYC) is afgerond, verschijnen een **Betaalknop op facturen**-schakelaar en **Betaalmethoden**-sectie op de Stripe-kaart. Met de schakelaar zet je de Stripe-betaalknop op alle facturen aan of uit zonder Stripe te ontkoppelen. De methodenlijst, afgestemd op de capabilities van je Stripe-account, laat je kiezen welke betaalmethoden klanten bij het afrekenen zien (card, iDEAL, Bancontact, SEPA-incasso, PayPal, Klarna, Link by Stripe). Haal alle vinkjes weg om terug te gaan naar automatische methodeselectie door Stripe Checkout. Met **Open Stripe Dashboard** word je doorgelinkt naar je Stripe-betaalmethode-instellingen om je integratie te verifieren en betalingen te testen.

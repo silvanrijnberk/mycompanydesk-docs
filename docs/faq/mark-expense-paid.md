@@ -1,5 +1,5 @@
 ---
-title: "Mark an expense as paid"
+title: "Uitgave als betaald markeren"
 last_verified: 2026-05-09
 chatbot:
   triggers:
@@ -19,9 +19,9 @@ chatbot:
     - "How do I export expense data?"
 ---
 
-To mark an expense as paid:
-1. Open the expense from the list
-2. Click "Mark as Paid"
-3. The status updates to Paid right away
+Om een uitgave als betaald te markeren:
+1. Open de uitgave vanuit de lijst
+2. Klik op "Markeer als betaald"
+3. De status wordt direct bijgewerkt naar Betaald
 
-That single click is all it takes: there is no payment date prompt and no separate save step.
+Die ene klik is genoeg: er verschijnt geen venster voor de betaaldatum en je hoeft niets apart op te slaan.

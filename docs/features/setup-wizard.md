@@ -1,82 +1,82 @@
 ---
-title: Setup wizard
+title: Setupwizard
 last_verified: 2026-07-15
 ---
 
-# Setup wizard
+# Setupwizard
 
-The setup wizard at `/setup` gets a new workspace ready in a few minutes. It is built around your first invoice: it asks who you are billing, pulls your company details from the Dutch trade register (KVK), fills in your payment details and VAT status, and shows a live preview of the invoice while you work. Nothing is locked in: every step can be skipped and everything can be changed later in Settings.
+De setupwizard op `/setup` maakt een nieuwe werkruimte in een paar minuten gebruiksklaar. De wizard draait om je eerste factuur: hij vraagt voor wie je factureert, haalt je bedrijfsgegevens op uit het Handelsregister (KVK), vult je betaalgegevens en btw-status in en toont een live voorbeeld van de factuur terwijl je bezig bent. Niets staat vast: elke stap kun je overslaan en alles kun je later aanpassen in Instellingen.
 
-If you came here for the basic walkthrough, start at [Set up your company](/getting-started/company-setup). This page is the reference for every step and option.
+Kom je voor de basisuitleg, begin dan bij [Je bedrijf instellen](/getting-started/company-setup). Deze pagina is de referentie voor elke stap en optie.
 
-## When the wizard is offered
+## Wanneer je de wizard ziet
 
-- **First sign-in:** new accounts land in the wizard automatically.
-- **Dashboard banner:** while setup is unfinished, a banner at the top of the dashboard offers to finish it. The banner can be hidden with the close button; hiding it is per browser, and `/setup` stays reachable directly.
-- **Any time:** navigate to `/setup` to run or re-run the wizard.
+- **Eerste keer inloggen:** nieuwe accounts komen automatisch in de wizard terecht.
+- **Dashboardbanner:** zolang de setup niet af is, biedt een banner bovenaan het dashboard aan om hem af te maken. De banner is te verbergen met het kruisje; dat verbergen geldt per browser, en `/setup` blijft rechtstreeks bereikbaar.
+- **Altijd:** ga naar `/setup` om de wizard te starten of opnieuw te doorlopen.
 
-The wizard is skippable. **Leave for now** takes you to the dashboard without finishing; nothing is lost, because every answer is saved the moment you give it. Come back later and you continue exactly where you stopped.
+De wizard is optioneel. **Voor nu overslaan** brengt je naar het dashboard zonder af te ronden; er gaat niets verloren, want elk antwoord wordt meteen opgeslagen. Kom je later terug, dan ga je verder waar je stopte.
 
-## The steps
+## De stappen
 
-The wizard shows a progress bar with up to four steps:
+De wizard toont een voortgangsbalk met maximaal vier stappen:
 
-1. **Customer:** who you are billing
-2. **KVK:** your company details
-3. **Get paid:** your IBAN and VAT status
-4. **Finish:** trial confirmation and optional next steps
+1. **Klant**: voor wie je factureert
+2. **KVK**: je bedrijfsgegevens
+3. **Betaald krijgen**: je IBAN en btw-status
+4. **Afronden**: proefbevestiging en optionele vervolgstappen
 
-**Continue** moves forward once a step has what it needs; **Finish setup** on the last step applies everything.
+**Doorgaan** brengt je verder zodra een stap heeft wat hij nodig heeft; **Setup afronden** op de laatste stap past alles toe.
 
-## Step: Customer
+## Stap: Klant
 
-The wizard opens with a live invoice preview and asks for the customer. Start typing the customer name.
+De wizard opent met een live voorbeeld van de factuur en vraagt om de klant. Begin de klantnaam te typen.
 
-- If the customer already exists in your workspace, select them from the dropdown.
-- To create a new customer inline, type the name and click **Create customer**. The inline form asks for the customer name and address. The KVK lookup can suggest Dutch businesses and fill in the address automatically; private customers can be added by typing the address by hand.
-- The customer email is optional and only used when you send the invoice.
+- Bestaat de klant al in je werkruimte, selecteer hem dan uit de lijst.
+- Wil je een nieuwe klant direct toevoegen, typ de naam en klik op **Klant aanmaken**. Het inline formulier vraagt om de klantnaam en het adres. De KVK-lookup kan Nederlandse bedrijven voorstellen en het adres automatisch invullen; particuliere klanten voeg je toe door het adres handmatig in te typen.
+- Het e-mailadres van de klant is optioneel en wordt alleen gebruikt als je de factuur verstuurt.
 
-Only the customer name is required to continue. You can finish the customer's details later from the customer page.
+Alleen de klantnaam is verplicht om verder te gaan. Je kunt de rest van de klantgegevens later aanvullen op de klantpagina.
 
-## Step: KVK
+## Stap: KVK
 
-Two ways through:
+Twee routes:
 
-1. **Search:** type your company name (two characters or more) and pick your business from the live suggestions. MyCompanyDesk then retrieves your KVK Basisprofiel and prefills your company details: legal name, trade names, legal form, address and business activity. Prefill only fills empty fields; anything you already entered by hand is preserved.
-2. **Fill in manually**: a short form for company name, KVK number, address, postal code and city. Use it when your business is too new to appear in the search results, or when your trade name does not match what you searched for. Your entries are saved to your company details right away. A link takes you back to search at any time.
+1. **Zoeken:** typ je bedrijfsnaam (twee tekens of meer) en kies je bedrijf uit de live suggesties. MyCompanyDesk haalt vervolgens je KVK Basisprofiel op en vult je bedrijfsgegevens alvast in: juridische naam, handelsnamen, rechtsvorm, adres en bedrijfsactiviteit. Er worden alleen lege velden gevuld; wat je zelf al had ingevuld blijft staan.
+2. **Vul handmatig in**: een kort formulier voor bedrijfsnaam, KVK-nummer, adres, postcode en plaats. Handig als je bedrijf te nieuw is om in de zoekresultaten te staan, of als je handelsnaam niet overeenkomt met wat je zocht. Je invoer wordt direct bij je bedrijfsgegevens opgeslagen. Via een link kun je altijd terug naar zoeken.
 
-No KVK registration? Continue without company data and fill it in later under **Business details** in Settings.
+Geen KVK-inschrijving? Ga verder zonder bedrijfsgegevens en vul ze later in onder **Bedrijfsgegevens** in Instellingen.
 
-When a search finds nothing, the wizard says so and offers to switch to manual entry with the name you typed already filled in.
+Levert een zoekopdracht niets op, dan zegt de wizard dat en biedt hij aan om over te schakelen naar handmatig invullen, met de naam die je typte alvast ingevuld.
 
-## Step: Get paid
+## Stap: Betaald krijgen
 
-The wizard asks for the IBAN that customers pay to. You can enter your business IBAN now, or click **I'll add my IBAN later** to skip it. Keep in mind that your customer cannot easily pay you without an IBAN.
+De wizard vraagt om het IBAN waar klanten naartoe betalen. Je kunt nu je zakelijke IBAN invullen, of op **IBAN later toevoegen** klikken om deze stap over te slaan. Houd er rekening mee dat een klant je zonder IBAN minder makkelijk kan betalen.
 
-If you are waiting for your VAT ID from the Tax Authority, or fall under the small business scheme (KOR), you can continue anyway and add your VAT ID later.
+Als je nog wacht op je btw-nummer van de Belastingdienst, of onder de kleineondernemersregeling (KOR) valt, kun je gewoon doorgaan en je btw-nummer later toevoegen.
 
-## Step: Finish
+## Stap: Afronden
 
-The final step confirms your trial:
+De laatste stap bevestigt je proefperiode:
 
-- **Your trial:** every new workspace starts with 60 days of Pro, free, no credit card needed.
+- **Je proefperiode:** elke nieuwe werkruimte start met 60 dagen Pro, gratis, zonder creditcard.
 
-**Finish setup** applies your company details, VAT status, IBAN and default settings. The finish screen also offers optional next steps, such as setting up a website. Website setup is opt-in: nothing is created unless you choose it from the finish screen or the dashboard checklist.
+**Setup afronden** past je bedrijfsgegevens, btw-status, IBAN en standaardinstellingen toe. Het afrondscherm biedt ook optionele vervolgstappen, zoals het instellen van een website. Een website instellen is optioneel: er wordt niets aangemaakt tenzij je dat kiest vanaf het afrondscherm of de dashboard-checklist.
 
-## Skipping, resuming and re-running
+## Overslaan, hervatten en opnieuw doorlopen
 
-- **Skip:** **Leave for now** exits to the dashboard at any point. The dashboard banner keeps a way back until setup is finished.
-- **Resume:** answers are saved on every change. Closing the tab mid-step loses nothing; the next visit continues on the same step.
-- **Re-run:** after finishing, `/setup` starts the flow again from the first step with your saved answers. The wizard fills blanks rather than overwriting: a services list you built, a logo you uploaded or settings you chose by hand are not replaced.
+- **Overslaan:** **Voor nu overslaan** brengt je op elk moment naar het dashboard. De dashboardbanner houdt een weg terug open tot de setup af is.
+- **Hervatten:** antwoorden worden bij elke wijziging opgeslagen. Het tabblad halverwege sluiten kost niets; bij het volgende bezoek ga je verder op dezelfde stap.
+- **Opnieuw doorlopen:** na het afronden start `/setup` de flow opnieuw vanaf de eerste stap, met je bewaarde antwoorden. De wizard vult lege velden aan in plaats van te overschrijven: een dienstenlijst die je hebt opgebouwd, een logo dat je hebt geüpload of instellingen die je zelf koos worden niet vervangen.
 
-## Editing without the wizard
+## Aanpassen zonder de wizard
 
-Every field the wizard touches has a home in **Settings**:
+Elk veld dat de wizard aanraakt heeft een plek in **Instellingen**:
 
-- **Business details**: name, KVK number, address, VAT number
-- **Logo and colour**: logo and brand colour
-- **Invoice design**: the look of your PDFs
-- **Your website and domain**: domain and website
-- **Features**: switch app parts on or off
+- **Bedrijfsgegevens**: naam, KVK-nummer, adres, btw-nummer
+- **Logo en kleur**: logo en merkkleur
+- **Factuurontwerp**: het uiterlijk van je PDF's
+- **Je website en domein**: domein en website
+- **Onderdelen**: onderdelen van de app aan- of uitzetten
 
-See the [settings overview](/settings/) for the full map.
+Zie het [instellingenoverzicht](/settings/) voor de volledige kaart.

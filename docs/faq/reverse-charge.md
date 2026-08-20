@@ -1,5 +1,5 @@
 ---
-title: Reverse charge
+title: "BTW verlegd"
 last_verified: 2026-07-02
 chatbot:
   triggers: ["reverse charge", "reverse charge invoice", "eu invoice", "intracommunautair", "intracommunity", "btw verlegd", "reverse charge rechnung", "autoliquidation", "intra-community"]
@@ -8,34 +8,34 @@ chatbot:
   follow_up: ["How do I add a customer VAT number?", "How does reverse charge affect my VAT return?", "How do I preview an invoice?"]
 ---
 
-To create a reverse charge (EU) invoice:
-1. Go to Invoices → New Invoice
-2. Select your EU customer and check that their VAT number is filled in on the customer record
-3. Turn on the "VAT Reverse Charge (BTW verlegd)" toggle on the invoice form; MyCompanyDesk suggests it automatically for EU business customers
-4. The VAT on all line items switches to 0% automatically when the toggle is on, and returns to the previous rate if you switch it off again; no manual changes needed.
-5. Preview the invoice to confirm the reverse charge note, then send it
+Zo maak je een factuur met BTW verlegd (EU):
+1. Ga naar Facturen → Nieuwe factuur
+2. Kies je EU-klant en controleer of het BTW-nummer bij de klant is ingevuld
+3. Zet de schakelaar "BTW verlegd" aan op het factuurformulier; MyCompanyDesk stelt dit automatisch voor bij zakelijke EU-klanten
+4. De BTW op alle factuurregels springt automatisch naar 0% als de schakelaar aan staat, en terug naar het vorige tarief als je hem weer uitzet; je hoeft niets handmatig aan te passen.
+5. Bekijk het voorbeeld om de vermelding van de verlegde BTW te controleren en verstuur de factuur
 
-Reverse-charge invoices are checked before sending: the customer must have a VAT number and the invoice must use 0% (sources/vat-rates.yaml#countries.NL.zero) on every line. These checks also run when you finalize or send invoices in bulk.
+Facturen met verlegde BTW worden gecontroleerd voordat ze worden verstuurd: de klant moet een BTW-nummer hebben en de factuur moet op elke regel 0% (sources/vat-rates.yaml#countries.NL.zero) gebruiken. Deze controles worden ook uitgevoerd als je facturen bulksgewijs afrondt of verstuurt.
 
-Tip: The toggle is always available on the invoice form; you do not need to enable anything in your settings first.
+Tip: De schakelaar staat altijd op het factuurformulier; je hoeft vooraf niets in je instellingen aan te zetten.
 
-## Reverse-charge expenses
+## Uitgaven met verlegde BTW
 
-When you receive a reverse-charge invoice from a supplier, MyCompanyDesk needs to know the supplier's origin to put the VAT in the right aangifte rubriek:
+Ontvang je een factuur met verlegde BTW van een leverancier, dan moet MyCompanyDesk weten waar de leverancier vandaan komt om de BTW in de juiste rubriek van de aangifte te zetten:
 
-- A Dutch supplier with a KVK number or country set to NL goes to rubriek 2a (domestic reverse charge).
-- A supplier from another EU country goes to rubriek 4b (intra-EU acquisition).
+- Een Nederlandse leverancier met KVK-nummer of land NL komt in rubriek 2a (binnenlandse verleggingsregeling).
+- Een leverancier uit een ander EU-land komt in rubriek 4b (intracommunautaire verwerving).
 
-If the supplier country or KVK number is missing, the pre-filing check on the VAT page flags the expense and blocks filing until you fix it. Open the expense, add the missing country or KVK number, then run the pre-filing checks again.
+Ontbreekt het land of het KVK-nummer, dan markeert de controle voor het indienen op de BTW-pagina de uitgave en blokkeert het indienen totdat je het aanvult. Open de uitgave, vul het ontbrekende land of KVK-nummer in en voer de controles opnieuw uit.
 
-## Import reverse charge (non-EU suppliers)
+## Importverleggingsregeling (leveranciers buiten de EU)
 
-Some suppliers outside the EU do not charge Dutch VAT on their invoices. Instead, you self-account for the VAT on your aangifte. In MyCompanyDesk this is `import_reverse_charge` and it lands in rubriek 4a, not 4b.
+Sommige leveranciers buiten de EU rekenen geen Nederlandse BTW op hun factuur. Jij moet de BTW dan zelf aangeven op je aangifte. In MyCompanyDesk heet dit `import_reverse_charge` en komt het in rubriek 4a, niet 4b.
 
-Use this treatment when:
+Gebruik deze behandeling als:
 
-- The supplier is outside the EU.
-- The invoice shows 0% VAT (sources/vat-rates.yaml#countries.NL.zero) and you must report the VAT yourself.
-- Examples include AI platform invoices from US suppliers.
+- De leverancier buiten de EU zit.
+- De factuur 0% BTW toont (sources/vat-rates.yaml#countries.NL.zero) en jij de BTW zelf moet aangeven.
+- Voorbeelden zijn facturen van Amerikaanse AI-platformen.
 
-Enter the supplier country and keep the net amount correct; MyCompanyDesk puts the self-charge in the right rubriek.
+Vul het land van de leverancier in en controleer het nettobedrag; MyCompanyDesk zet de zelfberekende BTW in de juiste rubriek.

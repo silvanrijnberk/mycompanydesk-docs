@@ -8,10 +8,10 @@ chatbot:
   follow_up: ["How do I categorize expenses?", "How do I upload a receipt?", "How do I prepare my VAT return?"]
 ---
 
-To track deductibility in the app:
-1. Open the expense
-2. Use the deductible/non-deductible toggle for that record
-3. Check the category and VAT settings on the same expense
-4. Save the expense and use report filters to review the recorded totals
+Om aftrekbaarheid in de app vast te leggen:
+1. Open de uitgave
+2. Stel voor dat record de optie aftrekbaar of niet-aftrekbaar in
+3. Controleer in dezelfde uitgave ook de categorie en de BTW-instellingen
+4. Sla de uitgave op en gebruik rapportfilters om de vastgelegde totalen te bekijken
 
-The app can record this setting, but it does not decide whether an expense is legally deductible.
+De app kan deze instelling registreren, maar bepaalt niet of een uitgave juridisch aftrekbaar is.

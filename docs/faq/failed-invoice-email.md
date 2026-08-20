@@ -1,5 +1,5 @@
 ---
-title: Failed invoice email
+title: "Mislukte factuur-e-mail"
 last_verified: 2026-07-02
 chatbot:
   triggers: ["failed invoice email", "invoice email failed", "failed send invoice", "invoice not sending", "invoice email issue", "fix failed invoice email", "mislukte factuur-e-mail", "factuurmail mislukt", "factuur e-mail mislukt", "factuur versturen mislukt", "hoe los ik een mislukte factuur-e-mail op", "fehlgeschlagene rechnungs-e-mail", "rechnungs-e-mail fehlgeschlagen", "rechnung senden fehlgeschlagen", "wie behebe ich eine fehlgeschlagene rechnungs-e-mail", "e-mail de facture echoue", "email facture echoue", "envoi facture echec", "comment corriger un e-mail de facture echoue"]
@@ -9,11 +9,11 @@ chatbot:
   follow_up: ["How do I change the customer email?", "How do I preview the invoice first?", "Where do I check email delivery settings?"]
 ---
 
-To fix a failed invoice email:
-1. Check that the customer record has the correct email address
-2. Open the invoice detail page and review the delivery status or any error shown there
-3. Verify your email setup at Settings → "Email"
-4. Send the invoice again; drafts can be emailed too, Send is the primary action and finalizes the draft in the same step
-5. If the customer still does not receive it, ask them to check their spam or junk folder
+Zo los je een mislukte factuur-e-mail op:
+1. Controleer of het juiste e-mailadres bij de klant staat
+2. Open de detailpagina van de factuur en bekijk de bezorgstatus of eventuele foutmelding
+3. Controleer je e-mailinstellingen via Instellingen → "E-mail"
+4. Verstuur de factuur opnieuw; ook een concept kun je gewoon mailen, Versturen is de hoofdactie en rondt het concept in dezelfde stap af
+5. Komt de mail nog steeds niet aan? Vraag de klant dan de spam- of ongewenste-mailmap te checken
 
-Tip: Preview the invoice first if you want to confirm the correct customer and document before resending.
+Tip: Bekijk eerst het voorbeeld van de factuur als je zeker wilt weten dat je de juiste klant en het juiste document opnieuw verstuurt.

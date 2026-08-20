@@ -21,13 +21,13 @@ chatbot:
     - "How do I edit the invoice?"
 ---
 
-To preview an invoice before sending:
-1. Open the invoice (it must be saved first)
-2. Click the "Preview" or PDF icon button
-3. Review the layout, amounts, customer details, and branding
-4. If changes are needed, go back and edit
-5. When satisfied, send or download the final version
+Om een factuur te bekijken vóór verzending:
+1. Open de factuur
+2. Klik op het "Voorbeeld" of PDF-icoon
+3. Een voorbeeld van de factuur-PDF wordt weergegeven
+4. Controleer de lay-out, bedragen en klantgegevens
+5. Sluit het voorbeeld en maak eventueel aanpassingen, of ga verder met verzenden
 
-While the preview is open, click **Change design** in the preview header to jump straight to the invoice design settings. You can adjust the look of all your invoices and quotes, then return to the document you started from.
+Terwijl het voorbeeld open is, kun je in de kop op **Ontwerp aanpassen** klikken om direct naar Factuurontwerp te gaan. Daar pas je de uitstraling van al je facturen en offertes aan; daarna kom je terug bij de factuur waar je mee bezig was.
 
-Tip: Always preview before sending - it catches formatting issues, missing details, and incorrect amounts.
+Tip: Bekijk altijd een voorbeeld vóór verzending om opmaakfouten of tikfouten te ontdekken.

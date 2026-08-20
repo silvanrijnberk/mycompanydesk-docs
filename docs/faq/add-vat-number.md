@@ -1,5 +1,5 @@
 ---
-title: "Add VAT number"
+title: "BTW-nummer toevoegen"
 last_verified: 2026-07-02
 chatbot:
   triggers:
@@ -17,9 +17,9 @@ chatbot:
     - "How do I set VAT on an invoice?"
 ---
 
-To add or change your company VAT number:
-1. Go to Settings → "Bedrijfsgegevens" (business details)
-2. Fill in the "VAT number" field there
-3. Changes save automatically
+Om je BTW-nummer toe te voegen of te wijzigen:
+1. Ga naar Instellingen → "Bedrijfsgegevens"
+2. Vul daar het veld "BTW-nummer" in
+3. Wijzigingen worden automatisch opgeslagen
 
-Your VAT number is then available on generated documents. For customer VAT numbers, open the customer profile and set their VAT field there.
+Je BTW-nummer wordt daarna gebruikt op gegenereerde documenten. Voor klant-BTW-nummers open je het klantprofiel en vul je daar het BTW-veld in.

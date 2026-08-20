@@ -1,5 +1,5 @@
 ---
-title: Automatic reminders
+title: "Automatische herinneringen"
 last_verified: 2026-08-16
 chatbot:
   triggers: ["automatic reminders", "auto reminder", "scheduled reminders", "reminder automation", "automatische herinnering", "herinneringen instellen", "automatische erinnerung", "rappels automatiques"]
@@ -8,22 +8,22 @@ chatbot:
   follow_up: ["How do I send a manual reminder?", "How do I view overdue invoices?", "How do I set payment terms?"]
 ---
 
-To set up automatic payment reminders:
-1. Go to Settings → "Facturen en offertes"
-2. Turn on the reminder toggle ("Te laat? Automatisch een herinnering sturen")
-3. Changes save automatically
+Zo stel je automatische betalingsherinneringen in:
+1. Ga naar Instellingen → "Facturen en offertes"
+2. Zet de schakelaar "Te laat? Automatisch een herinnering sturen" aan
+3. Wijzigingen worden automatisch opgeslagen
 
-When an invoice is a few days past its due date, MyCompanyDesk automatically sends a friendly reminder, and repeats it every week until the invoice is paid. The reminder states the remaining outstanding amount, which is the invoice total minus payments already received. If a customer has paid a deposit or an instalment, the reminder asks for the rest, not the full amount.
+Is een factuur een paar dagen over de vervaldatum, dan stuurt MyCompanyDesk vanzelf een vriendelijke herinnering, en daarna elke week opnieuw tot er betaald is. In de herinnering staat het resterende openstaande bedrag: het factuurbedrag minus de betalingen die al zijn ontvangen. Heeft een klant een aanbetaling of termijnbetaling gedaan, dan vraagt de herinnering om het restant, niet om het hele bedrag.
 
-If your workspace has online payments enabled, the reminder email gives the customer the same payment options as the original invoice: a **View & pay** button, a **Confirm payment** button, and a scan-and-pay QR code on the PDF.
+Als je werkruimte online betalingen heeft ingeschakeld, biedt de herinneringsmail de klant dezelfde betaalopties als de originele factuur: een knop **Bekijk & betaal**, een knop **Betaling bevestigen** en een QR-code op de PDF om te scannen en te betalen.
 
-Automatic reminders are not sent when:
-- the invoice has been canceled
-- the invoice is already paid
-- the invoice is a credit note or refund note
-- the invoice has been fully credited by a credit note
-- nothing is left outstanding
+Automatische herinneringen worden niet verstuurd als:
+- de factuur is geannuleerd
+- de factuur al betaald is
+- het een creditnota of refundnota betreft
+- de factuur volledig is gecrediteerd via een creditnota
+- er niets meer openstaat
 
-The reminder emails use fixed system templates; the text cannot be edited.
+De herinneringsmails gebruiken vaste systeemsjablonen; de tekst kun je niet aanpassen.
 
-Tip: Need to nudge a customer right now? You can also send a manual reminder from the invoice.
+Tip: Wil je een klant nu meteen een duwtje geven? Je kunt ook handmatig een herinnering sturen vanaf de factuur.

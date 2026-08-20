@@ -1,5 +1,5 @@
 ---
-title: "Dark mode"
+title: "Donkere modus"
 last_verified: 2026-07-02
 chatbot:
   triggers: ["dark mode", "light mode", "switch theme", "change theme", "night mode", "donkere modus", "thema wijzigen", "dunkler modus", "mode sombre"]
@@ -7,25 +7,25 @@ chatbot:
   follow_up: ["How do I change my language?", "How do I update my profile?"]
 ---
 
-## App dark mode
+## Donkere modus in de app
 
-To switch your app theme:
-1. Go to Settings → "Weergave" (display)
-2. Choose Licht (light), Donker (dark), or Vanzelf (automatic, follows your device)
-3. The change is applied immediately and saved automatically
+Om je thema te wisselen:
+1. Ga naar Instellingen → "Weergave"
+2. Kies Licht, Donker of Vanzelf (volgt je apparaat)
+3. De wijziging wordt direct toegepast en automatisch opgeslagen
 
-Tip: You can also use the theme toggle from the navigation menu for a quick switch.
+Tip: je kunt ook de thema-schakelaar in het navigatiemenu gebruiken voor een snelle wissel.
 
-## Website dark mode
+## Donkere modus voor je website
 
-If you have a hosted business website, you can also set a dark mode for your visitors. Open the **Website** area of the app, go to the **Stijl** (style) page, and find the dark-mode control in the **Kleuren** (colours) section.
+Heb je een gehoste zakelijke website? Dan kun je ook voor je bezoekers een donkere modus instellen. Open het onderdeel **Website** in de app, ga naar de pagina **Stijl** en zoek de donkere-modusinstelling in de sectie **Kleuren**.
 
-Three modes are available:
+Drie opties:
 
-- **Off** (default): No dark mode. Your site stays in its light color palette.
-- **Button**: Visitors see a sun/moon toggle in the navigation bar. The default is always light, so visitors who prefer dark must toggle it on. Once chosen, the preference is saved in their browser for the next visit.
-- **System**: The site follows the visitor's OS-level preference automatically. Changes when the visitor flips their system setting.
+- **Uit** (standaard): Geen donkere modus. Je site blijft in het lichte palet.
+- **Knop**: Bezoekers zien een zon/maan-knop in de navigatiebalk. De standaard is altijd licht, dus bezoekers die donker willen moeten de knop zelf aanzetten. Eenmaal gekozen, wordt de voorkeur opgeslagen in hun browser voor een volgend bezoek.
+- **Volg systeem**: De site volgt automatisch de OS-voorkeur van de bezoeker. Past zich aan zodra de bezoeker zijn systeeminstelling wijzigt.
 
-When you enable dark mode, a dark palette panel appears so you can pick night-optimized versions of each brand color. Leaving the dark palette empty is fine; the site applies a sensible default inversion that keeps your brand and accent colors intact.
+Zet je donkere modus aan, dan verschijnt er een donker palet waarin je per merkkleur een nachtversie kunt instellen. Het palet leeg laten is prima; de site gebruikt dan een automatische inversie waarbij je merk- en accentkleuren behouden blijven.
 
-See [Site Builder](/advanced/business-page) for more on styling your website.
+Zie [Sitebouwer](/advanced/business-page) voor meer over het vormgeven van je website.

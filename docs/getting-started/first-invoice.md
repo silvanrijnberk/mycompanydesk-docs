@@ -1,118 +1,118 @@
 ---
-title: Your First Invoice
+title: Je eerste factuur
 ---
 
-# Your First Invoice
+# Je eerste factuur
 
-This guide walks you through creating and sending your first invoice in MyCompanyDesk.
+Deze gids helpt je stap voor stap bij het maken en versturen van je eerste factuur in MyCompanyDesk.
 
-## Before you start
+## Voordat je begint
 
-Make sure you have:
+Zorg dat je het volgende hebt gedaan:
 
-- [Set up your company information](/getting-started/company-setup) (name, address, BTW-id, IBAN)
-- At least one customer to invoice (you can create one during the process)
+- [Je bedrijfsinformatie ingesteld](/getting-started/company-setup) (naam, adres, btw-id, IBAN)
+- Ten minste een klant om te factureren (je kunt er een aanmaken tijdens het proces)
 
-## Create an invoice
+## Een factuur maken
 
-1. Navigate to **Invoices** in the sidebar
-2. Click the **New Invoice** button (or use the **+** floating button on mobile)
-3. Fill in the invoice form:
+1. Navigeer naar **Facturen** in de zijbalk
+2. Klik op de knop **Nieuwe factuur** (of gebruik de **+** zwevende knop op mobiel)
+3. Vul het factuurformulier in:
 
-### Select a customer
+### Selecteer een klant
 
-Start typing the customer name. If the customer exists, select them from the dropdown. If not, type the full name and click **Create customer** to add them inline. The inline form asks for a customer name and address. The KVK lookup can suggest Dutch businesses and fill in the address automatically; private customers can be added by typing the address by hand. Only the customer name is required; you can add the email and full address later on the customer page.
+Begin met het typen van de klantnaam. Als de klant al bestaat, selecteer deze dan uit de lijst. Zo niet, typ dan de volledige naam en klik op **Klant aanmaken** om er direct een toe te voegen. Het inline formulier vraagt om een klantnaam en adres. De KVK-lookup kan Nederlandse bedrijven voorstellen en het adres automatisch invullen; particuliere klanten voeg je toe door het adres handmatig in te typen. Alleen de klantnaam is verplicht; e-mail en het volledige adres vul je later op de klantpagina aan.
 
-### Add line items
+### Regelitems toevoegen
 
-Each line item has:
+Elk regelitem bevat:
 
-- **Description** — What you're billing for
-- **Quantity** — Number of units
-- **Unit price** — Price per unit
+- **Omschrijving** — Waarvoor je factureert
+- **Aantal** — Aantal eenheden
+- **Eenheidsprijs** — Prijs per eenheid
 <!-- TODO(source-missing): RichardTool 5407b44 widened the valid Dutch invoice/catalog VAT-rate set to include historical rates 6% and 19%. sources/vat-rates.yaml#countries.NL currently only lists 0%, 9% and 21%, so this line must stay unchanged until the source is updated. -->
-- **VAT rate** — Applicable VAT percentage (0%, 9%, 21%, etc.)
+- **BTW-tarief** — Toepasselijk BTW-percentage (0%, 9%, 21%, etc.)
 
-Click **Add item** to add more line items. The total is calculated automatically including VAT.
+Klik op **Item toevoegen** om meer regelitems toe te voegen. Het totaal wordt automatisch berekend inclusief BTW.
 
-### Set invoice details
+### Factuurgegevens instellen
 
-- **Invoice number** — Assigned automatically by MyCompanyDesk
-- **Invoice date** — Defaults to today
-- **Due date** — Calculated from your default payment terms (adjustable)
-- **Notes** — Optional notes that appear on the invoice
+- **Factuurnummer** — Automatisch toegekend door MyCompanyDesk
+- **Factuurdatum** — Standaard vandaag
+- **Vervaldatum** — Berekend op basis van je standaard betalingstermijn (aanpasbaar)
+- **Notities** — Optionele notities die op de factuur verschijnen
 
-### Save
+### Opslaan
 
-Click **Save** to create the invoice as a **draft**. You can still edit everything before sending.
+Klik op **Opslaan** om de factuur aan te maken als **concept**. Je kunt alles nog bewerken voor het versturen.
 
-## Preview the invoice
+## Factuur bekijken
 
-Before sending, preview how the PDF will look:
+Bekijk voor het versturen hoe de PDF eruitziet:
 
-1. Open the invoice detail page
-2. Click **Preview** to see the generated PDF
-3. Check that all information is correct — company details, customer info, line items, totals
+1. Open de factuurdetailpagina
+2. Klik op **Voorbeeld** om de gegenereerde PDF te bekijken
+3. Controleer of alle informatie klopt — bedrijfsgegevens, klantinfo, regelitems, totalen
 
-## Send the invoice
+## Factuur versturen
 
-When you're ready to send:
+Wanneer je klaar bent om te versturen:
 
-1. Click **Send** on the invoice detail page
-2. Review the email that will be sent to your customer:
-   - Subject line (customizable)
-   - Email body (based on your email template)
-   - PDF attachment
-   - Payment link (if enabled)
-3. Click **Send** to deliver the invoice
+1. Klik op **Versturen** op de factuurdetailpagina
+2. Bekijk de e-mail die naar je klant wordt gestuurd:
+   - Onderwerpregel (aanpasbaar)
+   - E-mailtekst (gebaseerd op je e-mailsjabloon)
+   - PDF-bijlage
+   - Betaallink (indien ingeschakeld)
+3. Klik op **Versturen** om de factuur te bezorgen
 
-The invoice status changes from **Draft** to **Sent**.
+De factuurstatus verandert van **Concept** naar **Verzonden**.
 
 ::: tip
-You can customize your email templates in **Settings > Email**. Templates support your branding and can be set per language.
+Je kunt je e-mailsjablonen aanpassen in **Instellingen > E-mail**. Sjablonen ondersteunen je huisstijl en kunnen per taal worden ingesteld.
 :::
 
-## Track payment
+## Betaling bijhouden
 
-Once sent, the invoice appears in your **Sent** or **Overdue** views. When the customer pays:
+Na het versturen verschijnt de factuur in je **Verzonden** of **Achterstallig** overzichten. Wanneer de klant betaalt:
 
-- If the customer pays via the **payment link**, the invoice is marked as paid automatically
-- For bank transfers, click **Mark as Paid** on the invoice to record the payment manually
+- Als de klant via de **betaallink** betaalt, wordt de factuur automatisch als betaald gemarkeerd
+- Voor bankoverschrijvingen klik je op **Markeer als betaald** op de factuur om de betaling handmatig te registreren
 
-## Invoice statuses
+## Factuurstatussen
 
-| Status | Description |
+| Status | Beschrijving |
 |---|---|
-| **Draft** | Created but not yet sent. Fully editable. |
-| **Sent** | Delivered to the customer. Waiting for payment. |
-| **Overdue** | Past the due date and still unpaid. |
-| **Paid** | Payment received and confirmed. |
-| **Cancelled** | Invoice was cancelled. No payment expected. |
+| **Concept** | Aangemaakt maar nog niet verstuurd. Volledig bewerkbaar. |
+| **Verzonden** | Bezorgd bij de klant. Wacht op betaling. |
+| **Achterstallig** | Voorbij de vervaldatum en nog niet betaald. |
+| **Betaald** | Betaling ontvangen en bevestigd. |
+| **Geannuleerd** | Factuur is geannuleerd. Geen betaling verwacht. |
 
-## Quick add
+## Snel toevoegen
 
-For faster invoice creation, use **Quick Add**:
+Voor snellere factuuraanmaak gebruik je **Snel toevoegen**:
 
-1. Click the quick-add icon on the invoices list page
-2. Select a customer
-3. Add items (or use a saved template)
-4. Save and optionally send immediately
+1. Klik op het snel-toevoegen-icoon op de facturenlijstpagina
+2. Selecteer een klant
+3. Voeg items toe (of gebruik een opgeslagen sjabloon)
+4. Sla op en verstuur optioneel direct
 
-Quick Add is ideal for routine invoices where you bill similar items regularly.
+Snel toevoegen is ideaal voor routinefacturen waarbij je regelmatig vergelijkbare items factureert.
 
-## Using templates
+## Sjablonen gebruiken
 
-Save time with invoice templates:
+Bespaar tijd met factuursjablonen:
 
-1. Create an invoice with your commonly used line items
-2. Click **Save as Template** 
-3. Next time, start a new invoice from the template — all items are pre-filled
+1. Maak een factuur met je meestgebruikte regelitems
+2. Klik op **Opslaan als sjabloon**
+3. De volgende keer begin je een nieuwe factuur vanuit het sjabloon — alle items zijn vooraf ingevuld
 
-## Next steps
+## Volgende stappen
 
-Congratulations on sending your first invoice! Explore more features:
+Gefeliciteerd met het versturen van je eerste factuur! Ontdek meer functies:
 
-- [Track your expenses](/features/expenses)
-- [Create quotes](/features/quotes) for potential work
-- [Set up recurring invoices](/features/recurring-invoices) for regular billing
-- [View reports](/features/reports) to understand your finances
+- [Uitgaven bijhouden](/features/expenses)
+- [Offertes maken](/features/quotes) voor potentieel werk
+- [Terugkerende facturen instellen](/features/recurring-invoices) voor regelmatige facturatie
+- [Rapportages bekijken](/features/reports) om je financien te begrijpen

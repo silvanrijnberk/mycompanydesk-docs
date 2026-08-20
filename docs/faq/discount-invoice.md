@@ -1,5 +1,5 @@
 ---
-title: Apply a discount to an invoice
+title: "Korting op een factuur"
 last_verified: 2026-07-02
 chatbot:
   triggers: ["discount", "add discount", "invoice discount", "percentage discount", "reduce price", "korting", "korting toevoegen", "rabatt", "rabatt gewahren", "remise", "reduction"]
@@ -8,21 +8,21 @@ chatbot:
   follow_up: ["How do I set payment terms?", "How do I create a credit note?", "How do I preview the invoice PDF?"]
 ---
 
-To add a discount to an invoice:
-1. Edit or create an invoice
-2. Add a separate line item with a negative amount for the discount
-3. The total reflects the reduced amount
-4. Save the invoice
+Zo geef je korting op een factuur:
+1. Bewerk of maak een factuur
+2. Voeg een aparte factuurregel toe met een negatief bedrag voor de korting
+3. Het totaal toont het verlaagde bedrag
+4. Sla de factuur op
 
-There is no separate discount field; a negative line item is how you apply a discount in MyCompanyDesk.
+Er is geen apart kortingsveld; een negatieve factuurregel is de manier om korting te geven in MyCompanyDesk.
 
-Tip: Clearly label the discount line (e.g. "Early payment discount -5%") so the customer understands the deduction.
+Tip: Geef de kortingsregel een duidelijke omschrijving (bijv. "Betalingskorting -5%"), zodat de klant de aftrek begrijpt.
 
-## Line-level discount
+## Korting per regel
 
-Each line item can also carry its own discount:
-1. Add or edit a line item
-2. Choose the discount type: **percentage** or **fixed amount**
-3. Enter the discount value
+Elke factuurregel kan ook een eigen korting krijgen:
+1. Voeg een regel toe of bewerk een regel
+2. Kies het kortingstype: **percentage** of **vast bedrag**
+3. Vul de kortingswaarde in
 
-A percentage discount cannot be higher than 100%. The discount value cannot be negative. If you want to give the line away entirely, set the percentage discount to 100%.
+Een kortingspercentage kan niet hoger zijn dan 100%. De kortingswaarde mag niet negatief zijn. Wil je de hele regel weggeven, zet het percentage dan op 100%.

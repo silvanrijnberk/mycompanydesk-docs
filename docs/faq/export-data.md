@@ -1,5 +1,5 @@
 ---
-title: "Export data"
+title: "Gegevens exporteren"
 last_verified: 2026-07-02
 chatbot:
   triggers: ["export data", "download data", "export csv", "export excel", "download report", "data exporteren", "gegevens downloaden", "daten exportieren", "exporter donnees"]
@@ -8,9 +8,9 @@ chatbot:
   follow_up: ["How do I view reports?", "How do I prepare my VAT return?"]
 ---
 
-To export data:
-1. Go to Settings → "Gegevens downloaden" (download your data) for the quick export buttons
-2. Download CSV exports for invoices, customers, and expenses, or the full backup available there
-3. Use section-level exports in Invoices, Expenses, or Reports when you only need one dataset
+Om gegevens te exporteren:
+1. Ga naar Instellingen → "Gegevens downloaden" voor de snelle exportknoppen
+2. Download daar CSV-exports voor facturen, klanten en uitgaven, of de volledige back-up
+3. Gebruik exports op sectieniveau in Facturen, Uitgaven of Rapportages als je maar één dataset nodig hebt
 
-CSV exports are available from the Starter plan. Choose the export that matches the page or record set you need.
+CSV-exports zijn beschikbaar vanaf het Starter-abonnement. Kies de export die past bij de pagina of set gegevens die je nodig hebt.

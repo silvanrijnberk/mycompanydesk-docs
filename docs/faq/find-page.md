@@ -7,11 +7,11 @@ chatbot:
   follow_up: ["How do I use the dashboard?", "How do I search for invoices?"]
 ---
 
-To find pages in the app:
-• Use the main navigation menu
-• Main sections are Dashboard, Invoices, Quotes, Expenses, Customers, Recurring, Projects, Contracts, Properties, Reports, Overview, VAT, Company, Workspace Settings, and My Account
-• Company-related setup is under Company
-• API keys, team access, and feature toggles are under Workspace Settings
-• Personal language, display, notifications, security, and data tools are under My Account
+Om pagina's in de app te vinden:
+• Gebruik het hoofdmenu in de navigatie
+• Hoofdsecties zijn Dashboard, Facturen, Offertes, Uitgaven, Klanten, Terugkerend, Projecten, Contracten, Vastgoed, Rapporten, Overzicht, BTW, Bedrijf, Workspace-instellingen en Mijn account
+• Bedrijfsinstellingen staan onder Bedrijf
+• API-sleutels, teamtoegang en functietoggles staan onder Workspace-instellingen
+• Taal, weergave, meldingen, beveiliging en datahulpmiddelen staan onder Mijn account
 
-Tip: If a menu item is missing, first check Workspace Settings → Features and your page permissions.
+Tip: Ontbreekt een menu-item, controleer dan eerst Workspace-instellingen → Functies en je paginarechten.

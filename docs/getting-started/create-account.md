@@ -1,63 +1,63 @@
 ---
-title: Create Your Account
+title: Account aanmaken
 ---
 
-# Create Your Account
+# Account aanmaken
 
-Getting started with MyCompanyDesk takes just a few minutes.
+Aan de slag gaan met MyCompanyDesk duurt maar een paar minuten.
 
-## Sign up
+## Registreren
 
-1. Go to [app.mycompanydesk.com](https://app.mycompanydesk.com). The signup page is a split-screen layout with a **Sign Up** tab and a **Sign In** tab so you can switch between the two without leaving the page.
-2. On the **Sign Up** tab:
-   - **Create account** with email and a password (minimum 8 characters).
-   - Or use a social provider: **Sign up with Google** or **Sign up with Outlook**.
-3. The signup screen also shows a live staging area: a simulated dashboard with sample revenue, due items, and activity chips so you can preview the experience before you commit. The staging does not use real data.
-4. If you signed up with email, check your inbox for a **verification email** and click the link to verify your account. If you don't see it, you can resend it from the verification screen. Entered the wrong address? Click **Wrong email address? Start over** to return to registration.
-5. After verification you receive a welcome email and land straight in the app, in your own workspace.
+1. Ga naar [app.mycompanydesk.com](https://app.mycompanydesk.com). De registratiepagina is een gesplitst scherm met een **Registreren**-tab en een **Inloggen**-tab, zodat je kunt wisselen zonder de pagina te verlaten.
+2. Op de **Registreren**-tab:
+   - **Account aanmaken** met e-mail en een wachtwoord (minimaal 8 tekens).
+   - Of gebruik een sociale provider: **Aanmelden met Google** of **Aanmelden met Outlook**.
+3. Het registratiescherm toont ook een live voorbeeldweergave: een gesimuleerd dashboard met voorbeeldinkomsten, openstaande items en activiteitschips, zodat je de ervaring kunt bekijken voordat je je vastlegt. De voorbeeldweergave gebruikt geen echte data.
+4. Als je je met e-mail hebt geregistreerd, controleer dan je inbox op een **verificatie-e-mail** en klik op de link om je account te bevestigen. Geen mail ontvangen? Stuur hem opnieuw via het verificatiescherm. Verkeerde e-mailadres gebruikt? Klik op **Verkeerd e-mailadres? Begin opnieuw** om terug te keren naar het registratiescherm.
+5. Na verificatie ontvang je een welkomstmail en kom je direct in de app terecht, in je eigen werkruimte.
 
-:::tip Partner referral
-You can also start from the marketing site. If you look up your company on the landing page and pick it from the Dutch trade register (KVK), the CTA carries your KVK number to `/register`. After signup and verification, the setup wizard auto-applies that KVK number and auto-generates a themed website for you. The site is ready but not yet live; the first time you open the website editor you can publish it or adjust it first.
+:::tip Verwijzing via boekhouder
+Je kunt ook beginnen via de marketingsite. Als je je bedrijf opzoekt op de landingspagina en selecteert uit het Handelsregister (KVK), neemt de knop je KVK-nummer mee naar `/register`. Na aanmelding en verificatie past de setupwizard dat KVK-nummer automatisch toe en genereert hij direct een thematische website voor je. De site staat klaar maar is nog niet live; de eerste keer dat je de website-editor opent, kun je hem publiceren of eerst aanpassen.
 :::
 
-## Invited by your accountant
+## Uitgenodigd door je boekhouder
 
-If your accountant already uses MyCompanyDesk, they can invite you directly from their boekhouder portal.
+Als je boekhouder al MyCompanyDesk gebruikt, kan hij of zij je rechtstreeks uitnodigen vanuit het boekhoudersportaal.
 
-1. Look for an email from MyCompanyDesk naming your accountant's firm
-2. Click the invitation link, which opens `/register?uitnodiging=TOKEN`
-3. The signup page shows the firm that invited you and pre-fills the email address the invite was sent to
-4. Create your account with email and password. You stay the owner of your workspace and data
-5. After signup, your accountant gets access automatically so they can check your returns
+1. Zoek naar een e-mail van MyCompanyDesk met de naam van het kantoor van je boekhouder
+2. Klik op de uitnodigingslink, die `/register?uitnodiging=TOKEN` opent
+3. De registratiepagina toont het kantoor dat je heeft uitgenodigd en vult het e-mailadres waarnaar de uitnodiging is gestuurd alvast in
+4. Maak je account aan met e-mail en wachtwoord. Jij blijft eigenaar van je werkruimte en gegevens
+5. Na aanmelding krijgt je boekhouder automatisch toegang zodat hij of zij je aangifte kan controleren
 
-You can remove that access later from Settings → "Toegang en boekhouder".
+Je kunt die toegang later verwijderen via Instellingen → "Toegang en boekhouder".
 
-## Your workspace
+## Je werkruimte
 
-Your workspace is created automatically when you sign up, with a **60-day free Pro trial** (no payment method required). You can explore all Pro features right away; your company details are filled in later during the setup wizard.
+Je werkruimte wordt automatisch aangemaakt wanneer je je registreert, met een **gratis Pro-proefperiode van 60 dagen** (geen betaalmethode nodig). Je kunt meteen alle Pro-functies verkennen; je bedrijfsgegevens vul je later in tijdens de setup-wizard.
 
-### Join an existing workspace
+### Deelnemen aan een bestaande werkruimte
 
-If a colleague has already set up a workspace:
+Als een collega al een werkruimte heeft opgezet:
 
-1. Ask them to send you an **invitation** from Settings > Team
-2. Click the invitation link in your email
-3. Accept the invitation to join their workspace
+1. Vraag hen om je een **uitnodiging** te sturen via Instellingen > Team
+2. Klik op de uitnodigingslink in je e-mail
+3. Accepteer de uitnodiging om deel te nemen aan hun werkruimte
 
-You can be a member of multiple workspaces and switch between them from the workspace menu in the sidebar.
+Je kunt lid zijn van meerdere werkruimten en ertussen wisselen via het werkruimtemenu in de zijbalk.
 
-## Sign in after registration
+## Inloggen na registratie
 
-Returning users land on the same split-screen page. The **Sign In** tab accepts your email and password and includes a **Forgot password** link. You can also sign in without a password, using a magic link sent to your email or a passkey.
+Terugkerende gebruikers komen op dezelfde gesplitste pagina. De **Inloggen**-tab accepteert je e-mail en wachtwoord en bevat een **Wachtwoord vergeten**-link. Je kunt ook zonder wachtwoord inloggen, met een magic link via je e-mail of met een passkey.
 
-## Complete the setup wizard
+## Voltooi de setup-wizard
 
-New accounts go straight into the setup wizard at `/setup` after the first login or email verification. The wizard is skippable: click **Leave for now** to continue to your dashboard, or close the tab and come back later. While setup is unfinished, a dismissable **Finish setup** banner at the top of the dashboard lets you resume at any time.
+Nieuwe accounts komen na de eerste login of e-mailverificatie direct in de setup-wizard op `/setup`. De wizard is optioneel: klik op **Voor nu overslaan** om verder te gaan naar je dashboard, of sluit het tabblad en kom later terug. Zolang de setup niet af is, toont je dashboard een sluitbare **Setup afronden**-banner waarmee je op elk moment verder kunt.
 
-The wizard is built around your first invoice. It asks who you are billing and fills in the sender block, payment details and VAT status while showing a live preview of the invoice. You can also have it look up your company in the Dutch trade register (KVK) to prefill your business details. Website setup is opt-in from the finish screen, not a step in the wizard itself.
+De wizard draait om je eerste factuur. Hij vraagt voor wie je factureert en vult intussen het afzenderblok, betaalgegevens en btw-status in, met een live voorbeeld van de factuur naast de vragen. Je kunt ook je bedrijf opzoeken in het KVK-register zodat je zakengegevens automatisch worden ingevuld. Een website instellen is optioneel vanaf het afrondscherm, geen stap in de wizard zelf.
 
-Every answer is saved as you go, so you can skip, resume and re-run the wizard without losing progress. All information can also be changed later in Settings.
+Elk antwoord wordt direct opgeslagen, dus je kunt de wizard overslaan, later hervatten en opnieuw starten zonder voortgang kwijt te raken. Alle gegevens kun je later ook nog aanpassen in Instellingen.
 
-## Next steps
+## Volgende stappen
 
-Now that your account is ready, [send your first invoice](/getting-started/first-invoice).
+Nu je account klaar is, [stuur je eerste factuur](/getting-started/first-invoice).

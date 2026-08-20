@@ -22,11 +22,9 @@ chatbot:
     - "How do I change the customer email?"
 ---
 
-To send an invoice by email:
-1. Open the invoice (it should be saved first)
-2. Click "Send" or the email button
-3. The system uses the customer's email address
-4. You can preview and customize the email message
-5. Click "Send" to deliver
-
-Tip: Make sure the customer's email is correct in their profile to avoid delivery issues.
+Om een factuur per e-mail te versturen:
+1. Open de factuur (moet eerst opgeslagen zijn)
+2. Klik op "Versturen" of de e-mailknop
+3. Het systeem gebruikt het e-mailadres van de klant
+4. Je kunt het bericht bekijken en aanpassen
+5. Klik op "Versturen" om te bezorgen

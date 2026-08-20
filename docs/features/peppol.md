@@ -1,137 +1,137 @@
 ---
-title: Peppol e-invoicing
+title: Peppol e-facturatie
 last_verified: 2026-08-15
 ---
 
-# Peppol e-invoicing
+# Peppol e-facturatie
 
-Send invoices and credit notes as structured e-invoices over the Peppol network. Your customer receives them directly in their accounting software, without you having to rely on PDFs or email alone.
+Verstuur facturen en creditnota's als gestructureerde e-factuur via het Peppol-netwerk. Je klant ontvangt ze rechtstreeks in de boekhouding, zonder dat je alleen afhankelijk bent van pdf's of e-mail.
 
-## Overview
+## Overzicht
 
-Peppol e-invoicing lets you send invoices and credit notes as structured e-invoices over the Peppol network, and receive purchase invoices from suppliers the same way. When you send, you choose per invoice whether to deliver it by email or as an e-invoice via Peppol. The invoice stays the same document in MyCompanyDesk; only the delivery channel changes.
+Met Peppol e-facturatie verstuur je facturen en creditnota's als gestructureerde e-factuur via het Peppol-netwerk, en je kunt ook inkoopfacturen van leveranciers op dezelfde manier ontvangen. Wanneer je verstuurt, kies je per factuur of je hem per e-mail of als e-factuur via Peppol aflevert. De factuur blijft in MyCompanyDesk hetzelfde document; alleen het afleverkanaal verandert.
 
-Sending is useful when your customer asks for e-invoices. Receiving puts supplier invoices straight into your expenses as drafts, ready for review.
+Versturen is handig als je klant om e-facturen vraagt. Ontvangen zet inkoopfacturen automatisch als conceptuitgave klaar, zodat je ze alleen nog hoeft te controleren.
 
-If the supplier also uses MyCompanyDesk, you can receive their structured invoice directly without using Peppol. See [Receiving invoices from other MyCompanyDesk users](/features/invoices#receiving-invoices-from-other-mycompanydesk-users).
+Als de leverancier ook MyCompanyDesk gebruikt, kun je zijn gestructureerde factuur ook direct ontvangen zonder Peppol. Zie [Facturen van andere MyCompanyDesk-gebruikers ontvangen](/features/invoices#facturen-van-andere-mycompanydesk-gebruikers-ontvangen).
 
-## Availability
+## Beschikbaarheid
 
-Peppol e-invoicing is available on the Pro plan. Workspaces on Free or Starter do not see the e-invoice sending or receiving options.
+Peppol e-facturatie is beschikbaar op het Pro-abonnement. Werkruimtes op Free of Starter zien de opties voor e-factuurverzending en -ontvangst niet.
 
-## Before you can send
+## Voordat je kunt versturen
 
-Before the first Peppol send, MyCompanyDesk needs your company details. These are used to register you on the Peppol network via the connected access point:
+Voordat je voor het eerst via Peppol verstuurt, heeft MyCompanyDesk je bedrijfsgegevens nodig. Deze worden gebruikt om je op het Peppol-netwerk te registreren via het gekoppelde toegangspunt:
 
-- Company name
-- Chamber of Commerce number (KVK)
-- VAT number
+- Bedrijfsnaam
+- KVK-nummer
+- Btw-nummer
 - IBAN
-- Business address (street, postal code, city)
+- Bedrijfsadres (straat, postcode, plaats)
 
-If any of these are missing, the invoice settings page will ask you to complete them before you can enable e-invoicing. Your existing company profile fields are reused, so you do not enter them twice.
+Ontbreekt er een gegeven, dan vraagt de factuurinstellingenpagina je om deze aan te vullen voordat je e-facturatie kunt inschakelen. Je bestaande bedrijfsprofielvelden worden hergebruikt, dus je hoeft ze niet twee keer in te voeren.
 
-When you enable e-invoicing, you consent to registering your KVK number, VAT number and business address with the Peppol access point. MyCompanyDesk uses a Recommand access point to connect to the network.
+Als je e-facturatie inschakelt, geef je toestemming om je KVK-nummer, btw-nummer en bedrijfsadres te registreren bij het Peppol-toegangspunt. MyCompanyDesk maakt verbinding met het netwerk via een Recommand-toegangspunt.
 
-## Sending an e-invoice
+## Een e-factuur versturen
 
-1. Create an invoice or credit note as usual
-2. Open the detail page
-3. Click **Send**
-4. Choose **E-invoice (Peppol)** as the delivery method
-5. Review the preview
-6. Click **Send e-invoice via Peppol**
+1. Maak een factuur of creditnota zoals je gewend bent
+2. Open de detailpagina
+3. Klik op **Versturen**
+4. Kies **E-factuur (Peppol)** als aflevermethode
+5. Bekijk de voorvertoning
+6. Klik op **E-factuur via Peppol versturen**
 
-The invoice is delivered digitally to your customer's accounting system. A successful delivery is confirmed in MyCompanyDesk; if delivery fails, you will see an error and you can retry or send by email instead.
+De factuur wordt digitaal afgeleverd in het boekhoudpakket van je klant. Een succesvolle aflevering wordt bevestigd in MyCompanyDesk; als de aflevering mislukt, zie je een foutmelding en kun je het opnieuw proberen of per e-mail versturen.
 
-Email and Peppol are not mutually exclusive. You can send by email today and as an e-invoice tomorrow, choosing per invoice what fits the customer.
+E-mail en Peppol sluiten elkaar niet uit. Je kunt vandaag per e-mail versturen en morgen als e-factuur, per factuur kiezend wat bij de klant past.
 
-## Resending an e-invoice
+## Een e-factuur opnieuw versturen
 
-A Peppol send is a real, legally-binding e-invoice on the network, not just a copy of an email. Because of that, sending the same invoice twice creates two separate e-invoices. MyCompanyDesk blocks an accidental second Peppol send: if the invoice was already sent or delivered via Peppol, clicking **Send e-invoice via Peppol** again shows a confirmation dialog instead of sending immediately.
+Een Peppol-verzending is een echte, juridisch bindende e-factuur op het netwerk, niet alleen een kopie van een e-mail. Daardoor maakt een tweede verzending van dezelfde factuur twee aparte e-facturen. MyCompanyDesk blokkeert een per ongeluk tweede Peppol-verzending: als de factuur al via Peppol is verstuurd of afgeleverd, verschijnt er een bevestigingsdialoog in plaats van direct opnieuw te versturen.
 
-The dialog tells you when the invoice was first sent and asks you to confirm that you really want to send a second e-invoice. If you confirm, a new Peppol e-invoice is dispatched. If you cancel, nothing is sent and the existing Peppol delivery stays as it is.
+De dialoog geeft aan wanneer de factuur voor het eerst is verstuurd en vraagt of je zeker weet dat je een tweede e-factuur wilt versturen. Als je bevestigt, wordt een nieuwe Peppol-e-factuur verzonden. Als je annuleert, gebeurt er niets en blijft de bestaande Peppol-aflevering ongewijzigd.
 
-If you only want to send a reminder or a fresh PDF, use email instead. Email resends do not create duplicate Peppol e-invoices.
+Wil je alleen een herinnering of een verse pdf sturen, gebruik dan e-mail. E-mailherzendingen maken geen dubbele Peppol-e-facturen.
 
-## Receiving e-invoices
+## E-facturen ontvangen
 
-When receiving is enabled, suppliers can send you e-invoices over Peppol. MyCompanyDesk turns each incoming e-invoice into a draft expense prefilled with the supplier, amount, VAT and date. The draft appears in your expenses for review; you can check, edit and book it the same way as any other expense.
+Als ontvangen is ingeschakeld, kunnen leveranciers je e-facturen sturen via Peppol. MyCompanyDesk zet elke binnenkomende e-factuur om in een conceptuitgave die al is vooringevuld met leverancier, bedrag, btw en datum. De conceptuitgave verschijnt bij je uitgaven ter controle; je kunt hem net als elke andere uitgave controleren, bewerken en boeken.
 
-### Availability
+### Beschikbaarheid
 
-Receiving is part of Peppol e-invoicing and is available on the Pro plan. You must already have e-invoicing sending enabled before you can turn receiving on.
+Ontvangen is onderdeel van Peppol e-facturatie en beschikbaar op het Pro-abonnement. Je moet e-factuurverzending al hebben ingeschakeld voordat je ontvangen kunt aanzetten.
 
-### Before you can receive
+### Voordat je kunt ontvangen
 
-Make sure your company profile has the same details required for sending:
+Zorg dat je bedrijfsprofiel dezelfde gegevens bevat als voor het versturen:
 
-- Company name
-- Chamber of Commerce number (KVK)
-- VAT number
+- Bedrijfsnaam
+- KVK-nummer
+- Btw-nummer
 - IBAN
-- Business address (street, postal code, city)
+- Bedrijfsadres (straat, postcode, plaats)
 
-When you enable receiving, your KVK number and VAT number are registered as a Peppol receiver. A company can only receive through one accounting package at a time, because the same KVK/VAT cannot be registered at multiple providers.
+Als je ontvangen inschakelt, worden je KVK-nummer en btw-nummer geregistreerd als Peppol-ontvanger. Een bedrijf kan maar via één boekhoudpakket tegelijk ontvangen, omdat hetzelfde KVK- en btw-nummer niet bij meerdere providers geregistreerd mag staan.
 
-### Enabling receiving
+### Ontvangen inschakelen
 
-1. Open **Settings > Invoices** (`/settings/facturen`)
-2. In the Peppol section, click **Enable receiving**
-3. Confirm that your KVK/VAT may be registered as a receiver on the Peppol network
+1. Open **Instellingen > Facturen** (`/settings/facturen`)
+2. Klik in het Peppol-gedeelte op **Ontvangen inschakelen**
+3. Bevestig dat je KVK- en btw-nummer als ontvanger op het Peppol-netwerk mogen worden geregistreerd
 
-Once enabled, incoming e-invoices arrive automatically as draft expenses. There is no manual import step.
+Vanaf dat moment komen inkomende e-facturen automatisch binnen als conceptuitgaven. Je hoeft niets handmatig te importeren.
 
-### Supported currencies
+### Ondersteunde valuta
 
-MyCompanyDesk only accepts incoming Peppol e-invoices in euros (EUR). E-invoices received in any other currency are rejected.
+MyCompanyDesk accepteert alleen inkomende Peppol e-facturen in euro's (EUR). E-facturen die in een andere valuta binnenkomen, worden geweigerd.
 
-### Reviewing received e-invoices
+### Binnenkomende e-facturen controleren
 
-Each e-invoice lands as a draft expense under **Expenses**. The draft is prefilled with the supplier, description, amount, VAT and invoice date from the incoming e-invoice. When the supplier applied reverse-charge VAT, MyCompanyDesk classifies it as reverse-charge and leaves the VAT rate at 0 % so it lands in the correct rubriek of your VAT return. Review the details, attach a receipt if needed, and save it as a regular expense.
+Elke e-factuur landt als conceptuitgave bij **Uitgaven**. De conceptuitgave is vooringevuld met leverancier, omschrijving, bedrag, btw en factuurdatum uit de binnenkomende e-factuur. Wanneer de leverancier verlegde BTW heeft toegepast, classificeert MyCompanyDesk deze als verlegd en laat hij het btw-tarief op 0 % staan, zodat het in de juiste rubriek van je btw-aangifte valt. Controleer de gegevens, voeg eventueel een bon toe en sla hem op als gewone uitgave.
 
-### Disabling receiving
+### Ontvangen uitschakelen
 
-Open **Settings > Invoices**, go to the Peppol section and click **Disable receiving**. You will stop receiving new e-invoices via Peppol, but existing draft and booked expenses stay unchanged. You can re-enable receiving at any time.
+Open **Instellingen > Facturen**, ga naar het Peppol-gedeelte en klik op **Ontvangen uitschakelen**. Je ontvangt geen nieuwe e-facturen meer via Peppol, maar bestaande concept- en geboekte uitgaven blijven ongewijzigd. Je kunt ontvangen op elk moment weer aanzetten.
 
-## Disabling Peppol e-invoicing
+## Peppol e-facturatie uitschakelen
 
-If you no longer want to send or receive e-invoices through MyCompanyDesk, you can disable Peppol e-invoicing entirely. This removes your company's registration from the Peppol network and frees your identifiers for use elsewhere. Invoices you already sent and expenses you already booked stay unchanged.
+Wil je niet langer e-facturen versturen of ontvangen via MyCompanyDesk, dan kun je Peppol e-facturatie helemaal uitschakelen. Daarmee meld je je bedrijf af bij het Peppol-netwerk en geef je je identificatiegegevens vrij om ergens anders te gebruiken. Facturen die je eerder hebt verstuurd en uitgaven die je al hebt geboekt blijven staan.
 
-To disable Peppol e-invoicing:
+Zo schakel je Peppol e-facturatie uit:
 
-1. Open **Settings > Invoices** (`/settings/facturen`)
-2. In the Peppol section, click **Disable e-invoicing**
-3. Confirm that you want to deregister from the Peppol network
+1. Open **Instellingen > Facturen** (`/settings/facturen`)
+2. Klik in het Peppol-gedeelte op **E-facturatie uitschakelen**
+3. Bevestig dat je je bedrijf wilt afmelden bij het Peppol-netwerk
 
-After you confirm, sending and receiving e-invoices stops immediately. If you later want to use Peppol again, you can re-enable e-invoicing from the same page; you will need to complete identity verification again because your previous registration has been removed.
+Na bevestiging stoppen versturen en ontvangen direct. Wil je later toch weer gebruikmaken van Peppol, dan kun je e-facturatie op dezelfde pagina opnieuw inschakelen. Omdat je eerdere registratie dan is verwijderd, moet je de identiteitsverificatie opnieuw doorlopen.
 
-## Supported document types
+## Ondersteunde documenttypen
 
-- **Invoice** — standard billing document
-- **Credit note** — adjustment for refunds or corrections
+- **Factuur** — standaard factuurtype
+- **Creditnota** — correctie voor terugbetalingen of aanpassingen
 
-## What your customer needs
+## Wat je klant nodig heeft
 
-Your customer must be reachable on the Peppol network. In practice this means their accounting software is connected to Peppol and they have shared their Peppol receiver identifier with you. MyCompanyDesk validates the receiver before sending; if the customer cannot be reached, the send fails and you can fall back to email.
+Je klant moet bereikbaar zijn op het Peppol-netwerk. In de praktijk betekent dit dat hun boekhoudsoftware aan Peppol is gekoppeld en zij hun Peppol-ontvangeridentificatie met je hebben gedeeld. MyCompanyDesk controleert de ontvanger voor het versturen; als de klant niet bereikbaar is, mislukt de verzending en kun je terugvallen op e-mail.
 
-## Troubleshooting
+## Problemen oplossen
 
-**The Peppol option does not show.** Check that your workspace is on the Pro plan and that e-invoicing is enabled in the invoice settings. Also verify that your company profile has all required fields listed above.
+**De Peppol-optie verschijnt niet.** Controleer of je werkruimte op het Pro-abonnement zit en of e-facturatie is ingeschakeld in de factuurinstellingen. Controleer ook of je bedrijfsprofiel alle vereiste velden bevat.
 
-**Sending failed.** A failed Peppol send usually means the receiver could not be reached on the network, or one of the required invoice fields is missing. Fix the issue and retry, or send by email to keep the workflow moving.
+**Versturen is mislukt.** Een mislukte Peppol-verzending betekent meestal dat de ontvanger niet bereikbaar was op het netwerk, of dat een verplicht factuurveld ontbrak. Los het probleem op en probeer het opnieuw, of verstuur per e-mail om de workflow door te laten gaan.
 
-**I enabled e-invoicing but want to turn it off.** Open the invoice settings and click **Disable e-invoicing**. This removes your Peppol registration and stops both sending and receiving. Existing invoices and booked expenses stay unaffected. If you re-enable later, you will need to verify your identity again.
+**Ik heb e-facturatie ingeschakeld maar wil het uitschakelen.** Open de factuurinstellingen en klik op **E-facturatie uitschakelen**. Daarmee meld je je af bij Peppol en stoppen zowel versturen als ontvangen. Bestaande facturen en geboekte uitgaven blijven ongewijzigd. Als je het later opnieuw inschakelt, moet je je identiteit opnieuw verifiëren.
 
-**Receiving failed to enable with a conflict error.** Your KVK number or VAT number is already registered for Peppol receiving at another accounting package or provider. Disable receiving there first, then enable it in MyCompanyDesk. Until then, you can still send e-invoices from MyCompanyDesk.
+**Ontvangen inschakelen lukt niet vanwege een conflict.** Je KVK-nummer of btw-nummer is al geregistreerd als Peppol-ontvanger bij een ander boekhoudpakket of provider. Schakel ontvangen daar eerst uit en zet het daarna in MyCompanyDesk aan. Tot die tijd kun je wel gewoon e-facturen versturen vanuit MyCompanyDesk.
 
-**Receiving cannot be enabled: company details are missing.** If Peppol receiving cannot be enabled because your company profile is missing a KVK number or VAT number, MyCompanyDesk returns a clear 422 error. Add the missing number in your company profile, then enable receiving again.
+**Ontvangen inschakelen lukt niet: bedrijfsgegevens ontbreken.** Als Peppol-ontvangst niet kan worden ingeschakeld omdat je bedrijfsprofiel geen KVK-nummer of btw-nummer heeft, geeft MyCompanyDesk een duidelijke 422-fout. Voeg het ontbrekende nummer toe in je bedrijfsprofiel en schakel ontvangen daarna opnieuw in.
 
-**A received e-invoice looks wrong.** Open the draft expense, correct the supplier, amount, VAT or description, and save it. The original e-invoice data is kept in the expense notes for reference.
+**Een ontvangen e-factuur klopt niet.** Open de conceptuitgave, pas leverancier, bedrag, btw of omschrijving aan en sla hem op. De oorspronkelijke e-factuurgegevens blijven in de notities van de uitgave staan voor de controle.
 
-**I disabled receiving but drafts still appear.** Drafts that arrived before you disabled receiving remain in your expenses; disabling only stops new e-invoices from coming in.
+**Ik heb ontvangen uitgeschakeld, maar er verschijnen nog conceptuitgaven.** Conceptuitgaven die al zijn binnengekomen voordat je ontvangen uitschakelde, blijven in je uitgaven staan; uitschakelen zorgt er alleen voor dat er geen nieuwe e-facturen meer binnenkomen.
 
-## Related
+## Zie ook
 
-- [Invoices](/features/invoices) — creating and sending invoices
-- [Settings: Plan & payments](/settings/billing) — which plans include Peppol e-invoicing
+- [Facturen](/features/invoices) — facturen aanmaken en versturen
+- [Instellingen: abonnement en betalingen](/settings/billing) — welke abonnementen Peppol e-facturatie bevatten

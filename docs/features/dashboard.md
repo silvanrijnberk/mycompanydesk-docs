@@ -5,78 +5,78 @@ last_verified: 2026-08-18
 
 # Dashboard
 
-The dashboard at `/dashboard` is the home screen of your workspace. It answers one question: how is the business doing right now? The page shows a period switcher, a KPI summary row, a short attention widget, and a set of data-driven blocks that appear only when your workspace data says they are useful.
+Het dashboard op `/dashboard` is het startscherm van je werkruimte. Het beantwoordt een vraag: hoe staat je bedrijf er nu voor? Je ziet een periodekiezer, een rij met vijf KPI-tegels, een kort aandacht-widget en een aantal datablokken die alleen verschijnen als je bedrijfsdata aangeeft dat ze nuttig zijn.
 
-## Layout
+## Opbouw
 
-The page is a single scrollable view built from a fixed catalogue of blocks. The order never changes, but a block only renders if your workspace data satisfies the test for it. A simple business therefore sees a shorter page, not empty placeholders.
+De pagina bestaat uit een vaste catalogus van blokken in een enkele scrollbare weergave. De volgorde verandert nooit, maar een blok wordt alleen getoond als je data de drempel haalt. Een eenvoudig bedrijf krijgt dus een kortere pagina, geen lege plekken.
 
-At the top sits a period switcher and the KPI row. Below that comes the attention widget, then supporting blocks such as the trend chart, ageing, revenue sources, quote pipeline, expense mix, cash chart, VAT card, and recent activity.
+Bovenaan staan de periodekiezer en de KPI-rij. Daaronder komt het aandacht-widget, gevolgd door ondersteunende blokken zoals de trendgrafiek, ageing, omzetbronnen, offertepijplijn, uitgavenmix, cash-grafiek, btw-kaart en recente activiteit.
 
-## Period switcher
+## Periodekiezer
 
-Every figure in the KPI row and the pace calculations follows the selected period. Choose between **month**, **quarter**, and **year**. The trend chart always stays at 12 months so the comparison stays honest.
+Alle getallen in de KPI-rij en in de tempo-berekeningen volgen de gekozen periode. Je kiest tussen **maand**, **kwartaal** en **jaar**. De trendgrafiek blijft altijd 12 maanden breed, zodat de vergelijking eerlijk blijft.
 
-## KPI row
+## KPI-rij
 
-The KPI row always shows five tiles. Each tile shows one headline figure, a comparison with the previous comparable period where an honest comparison exists, and a small sparkline for trend. Tiles link to the relevant report or list.
+De KPI-rij toont altijd vijf tegels. Elke tegel toont een hoofdgetal, een vergelijking met de vorige vergelijkbare periode als een eerlijke vergelijking mogelijk is, en een kleine trendlijn. Tegels linken door naar het bijbehorende rapport of de bijbehorende lijst.
 
-| Tile | What it shows |
+| Tegel | Wat je ziet |
 |---|---|
-| **Cash** | Current cash position, either from a connected bank account or an estimated balance, plus runway in weeks |
-| **Receivables** | Outstanding invoices, with the overdue slice called out |
-| **Revenue** | Revenue for the selected period and the pace for the full period, with change vs the previous comparable period |
-| **Payables** | Money you still need to pay out, with the overdue slice called out |
-| **Profit** | Net profit for the selected period, with margin when it can be computed |
+| **Kas** | Huidige kaspositie, afkomstig van een gekoppelde bankrekening of een geschat saldo, plus runway in weken |
+| **Te ontvangen** | Openstaande facturen, met de achterstallige helft apart genoemd |
+| **Omzet** | Omzet over de gekozen periode en het tempo voor de hele periode, met mutatie ten opzichte van de vorige vergelijkbare periode |
+| **Te betalen** | Geld dat je nog moet uitbetalen, met de achterstallige helft apart genoemd |
+| **Winst** | Nettowinst over de gekozen periode, met marge als die te berekenen is |
 
-A tile that has no honest history renders without a sparkline rather than invent a flat line. The colour of a delta badge follows meaning, not just direction: receivables rising is bad news even though the arrow points up.
+Een tegel zonder eerlijke historie toont geen trendlijn in plaats van een verzonnen vlakke lijn. De kleur van een deltabadge volgt betekenis, niet alleen richting: stijgende debiteuren zijn slecht nieuws, ook al wijst de pijl omhoog.
 
-## Attention widget
+## Aandacht-widget
 
-The attention widget is fed by the Vandaag signal engine. It shows up to four tasks that need action today or this week. Each row shows a severity dot, a short title, and a link to the record. The widget only surfaces tasks; it does not contain the full ranked list, the explanation chips, or the action buttons. The full list lives in the bell panel.
+Het aandacht-widget wordt gevoed door de Vandaag-signaalmotor. Het toont maximaal vier taken die nu of deze week actie vragen. Elke regel toont een ernst-indicator, een korte titel en een link naar het bijbehorende record. Het widget toont alleen taken; het bevat niet de volledige gerangschikte lijst, de bewijskerngetallen of de actieknoppen. Die volledige lijst staat in het belpaneel.
 
-The Vandaag engine ranks signals into four severity levels:
+De Vandaag-motor rangschikt signalen in vier ernstniveaus:
 
-- **critical**: money leaking or a hard deadline closing
-- **attention**: a real task, today or this week
-- **upcoming**: dated, but not yet urgent
-- **good**: earned positive news
+- **critical**: geld loopt weg of een harde deadline komt dichtbij
+- **attention**: een concrete taak, vandaag of deze week
+- **upcoming**: gedateerd, maar nog niet urgent
+- **good**: positief nieuws dat je verdient
 
-The engine is deterministic. No model is involved in producing the signals, so the page stays useful when the AI layer is down.
+De motor is deterministisch. Er is geen model betrokken bij het maken van de signalen, dus de pagina blijft bruikbaar als de AI-laag offline is.
 
-## Supporting blocks
+## Ondersteunende blokken
 
-The blocks below the KPI row appear only when they earn their place. The catalogue decides both whether to show a block and which form to use.
+De blokken onder de KPI-rij verschijnen alleen als ze hun plek verdienen. De catalogus bepaalt zowel of een blok getoond wordt als welke vorm hij krijgt.
 
-| Block | Content |
+| Blok | Inhoud |
 |---|---|
-| **Trend** | 12-month dual-bar chart of revenue and costs, with the profit line |
-| **Ageing** | Receivables aged by bucket |
-| **Revenue sources** | Largest customers by year-to-date revenue |
-| **Quotes** | Open quote pipeline and expiring quotes |
-| **Expense mix** | Cost breakdown by category, shown as bars or treemap depending on space |
-| **Cash chart** | Cash position over 12 months with forecast |
-| **Activity** | Recent invoice, payment, and expense events |
-| **VAT card** | Current VAT period, checklist progress, and next deadline |
+| **Trend** | 12-maands grafiek met omzet en kosten naast elkaar, plus de winstlijn |
+| **Ageing** | Debiteuren opgedeeld naar leeftijdsbakken |
+| **Omzetbronnen** | Grootste klanten naar omzet dit jaar |
+| **Offertes** | Open offertepijplijn en verlopende offertes |
+| **Uitgavenmix** | Kostenverdeling per categorie, weergegeven als staafjes of treemap afhankelijk van de ruimte |
+| **Cash-grafiek** | Kaspositie over 12 maanden met prognose |
+| **Activiteit** | Recente factuur-, betalings- en uitgave-gebeurtenissen |
+| **BTW-kaart** | Huidige btw-periode, checklistvoortgang en volgende deadline |
 
-On phones, large visual forms such as treemaps or funnels fall back to simpler forms so the numbers remain readable.
+Op telefoons vallen visuele vormen zoals treemaps of funnels terug op eenvoudiger vormen, zodat de getallen leesbaar blijven.
 
-## First-run state
+## Eerste-keer-scherm
 
-A brand-new workspace with no invoices or customers lands on a calm first-run screen instead of the full dashboard. It offers one focal action: create your first invoice. A small discovery panel also invites you to personalise invoice styling, the website, or account security. Dismissing the panel hides only the panel; sending your first invoice exits first-run mode. You can also skip the first-run screen with the **Show my dashboard** option.
+Een gloednieuwe werkruimte zonder facturen of klanten landt op een rustig eerste-keer-scherm in plaats van het volledige dashboard. Het biedt een duidelijke actie: maak je eerste factuur. Een klein ontdekkingspaneel nodigt je ook uit om factuurstyling, de website of accountbeveiliging te personaliseren. Het wegklikken van dat paneel verbergt alleen het paneel; het versturen van je eerste factuur sluit het eerste-keer-scherm af. Je kunt het scherm ook overslaan met de optie **Toon mijn dashboard**.
 
-## Getting started card
+## Aan-de-slag-kaart
 
-While the setup checklist still has open steps, a pinned card appears above the dashboard. It lists the remaining steps and a link back to the setup wizard. Dismissing the card is stored server-side, so it stays hidden across devices. The wizard is non-blocking: new signups land on `/dashboard` directly.
+Zolang de setup-checklist nog openstaande stappen heeft, verschijnt er een vaste kaart boven het dashboard. Die somt de openstaande stappen op en biedt een link terug naar de setup-wizard. Wegklikken wordt server-side bewaard, dus de kaart blijft verborgen op al je apparaten. De wizard is niet blokkerend: nieuwe gebruikers landen direct op `/dashboard`.
 
-## Loading and error states
+## Laden en foutmeldingen
 
-While the dashboard decides whether this is a first-run workspace and loads the briefing, a skeleton mirrors the final shape of the page. If the Vandaag fetch fails, the page shows an explicit error with a retry button instead of an all-clear built from empty data. If a period switch fails while older numbers are still on screen, a stale notice appears with an inline retry.
+Terwijl het dashboard bepaalt of dit een eerste-keer-werkruimte is en de briefing laadt, toont een skeleton de uiteindelijke vorm van de pagina. Als het ophalen van Vandaag mislukt, toont de pagina een duidelijke fout met een opnieuw-knop in plaats van een alles-goed gebouwd uit lege data. Lukt een periode-switch niet terwijl er nog oudere getallen op het scherm staan, dan verschijnt een verouderd-melding met inline opnieuw-knop.
 
-## See also
+## Zie ook
 
-- [Use the dashboard](/faq/use-dashboard)
-- [Reports](/features/reports)
-- [Customers](/features/customers)
-- [Invoices](/features/invoices)
-- [VAT](/features/vat)
+- [Dashboard gebruiken](/faq/use-dashboard)
+- [Rapportages](/features/reports)
+- [Klanten](/features/customers)
+- [Facturen](/features/invoices)
+- [BTW](/features/vat)

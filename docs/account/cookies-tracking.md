@@ -1,49 +1,49 @@
 ---
-title: Cookies and analytics
+title: Cookies en analytics
 last_verified: 2026-07-14
 ---
 
-# Cookies and analytics
+# Cookies en analytics
 
-This page explains how MyCompanyDesk uses cookies, local storage, and analytics. It covers both the public marketing site (mycompanydesk.nl / mycompanydesk.com) and the web app.
+Op deze pagina lees je hoe MyCompanyDesk omgaat met cookies, lokale opslag en analytics. Het geldt zowel voor de publieke marketingwebsite (mycompanydesk.nl / mycompanydesk.com) als voor de webapp.
 
-## Marketing site
+## Marketingwebsite
 
-The marketing site shows a cookie-consent banner when you first visit. The banner asks whether we may place analytics storage. You can change your choice at any time via the banner.
+De marketingwebsite toont een cookietoestemmingsbanner bij je eerste bezoek. Die banner vraagt of we analytics-opslag mogen plaatsen. Je kunt je keuze later altijd aanpassen via de banner.
 
-Analytics is opt-in. Until you accept, the marketing site does not initialize analytics, does not send any pageview or event, and does not store an analytics identifier. This means choosing "Alleen essentieel" (essential only) leaves no analytics trail.
+Analytics is opt-in. Totdat je akkoord gaat, initialiseert de marketingwebsite geen analytics, stuurt hij geen pageview of event en slaat hij geen analytics-id op. Als je dus kiest voor "Alleen essentieel", blijft er geen analytics-spoor achter.
 
-If you accept, the site starts analytics and stores an anonymous analytics identifier in your browser's `localStorage` under the key `mcd_phid`. This identifier is only used to understand how visitors move through the site. It is not linked to your account or email address.
+Als je akkoord gaat, start de site analytics en slaat hij een anonieme analytics-id op in de `localStorage` van je browser onder de sleutel `mcd_phid`. Deze id wordt alleen gebruikt om te begrijpen hoe bezoekers door de site navigeren. Hij is niet gekoppeld aan je account of e-mailadres.
 
-If you later decline via the banner, or if your browser sends a Do Not Track (DNT) signal, no analytics identifier is stored and no new analytics events are sent. The banner may still appear because it also covers non-analytics cookies.
+Als je later via de banner weigert, of als je browser een Do Not Track (DNT)-signaal stuurt, wordt er geen analytics-id opgeslagen en worden er geen nieuwe analytics-events verstuurd. De banner kan nog steeds verschijnen, omdat hij ook niet-analytics-cookies behandelt.
 
-## From marketing site to app
+## Van marketingwebsite naar app
 
-When you click a link from the marketing site into the app, the marketing site may append a short-lived `phid` parameter. The app strips this parameter immediately and never keeps it in the URL after you land. It is only used to connect the same anonymous visit to the app session, so we can see whether the site is helping people sign up.
+Als je vanuit de marketingwebsite naar de app klikt, kan de marketingwebsite een kortstondige `phid`-parameter toevoegen. De app verwijdert deze parameter meteen na het laden en houdt hem niet in de URL. Hij wordt alleen gebruikt om hetzelfde anonieme bezoek te koppelen aan de appsessie, zodat we kunnen zien of de site mensen helpt zich aan te melden.
 
-The parameter is only trusted when you actually come from our own marketing site. Forged or forwarded links are ignored.
+De parameter wordt alleen vertrouwd als je daadwerkelijk vanaf onze eigen marketingwebsite komt. Vervalselde of doorgestuurde links worden genegeerd.
 
-## Inside the app
+## Binnen de app
 
-The app does **not** show a cookie banner. Instead, it is designed to avoid analytics cookies and cross-session tracking for anonymous visitors:
+De app toont **geen** cookiebanner. In plaats daarvan is hij zo ingericht dat er geen analytics-cookies of cross-session tracking voor anonieme bezoekers ontstaat:
 
-- Analytics state lives in `sessionStorage`, not cookies. It survives reloads within the same tab, but is deleted when you close the tab.
-- The app respects the browser's Do Not Track signal.
-- No session recordings are made.
-- Once you log in, the app identifies you by your real user id so later events are tied to the same account.
+- Analytics-state staat in `sessionStorage`, niet in cookies. Het overleeft herladen binnen hetzelfde tabblad, maar wordt verwijderd zodra je het tabblad sluit.
+- De app respecteert het Do Not Track-signaal van je browser.
+- Er worden geen sessie-opnames gemaakt.
+- Zodra je inlogt, identificeert de app je op basis van je echte gebruikers-id, zodat latere gebeurtenissen aan hetzelfde account gekoppeld worden.
 
-This means anonymous page views in the app are not linked across visits. The signup to paid funnel is primarily measured with server-side events keyed to your user id, not with browser storage.
+Dit betekent dat anonieme paginaweergaven in de app niet over meerdere bezoeken aan elkaar worden gekoppeld. De funnel van aanmelding naar betalende gebruiker wordt vooral gemeten met server-side events gekoppeld aan je gebruikers-id, niet aan browseropslag.
 
-## What we do not do
+## Wat we niet doen
 
-- We do not sell or share analytics data with third parties for advertising.
-- We do not track you across unrelated websites.
-- We do not use analytics data to build individual advertising profiles.
+- We verkopen of delen geen analytics-gegevens met derden voor advertenties.
+- We volgen je niet over niet-gerelateerde websites heen.
+- We gebruiken analytics-gegevens niet om individuele advertentieprofielen op te bouwen.
 
-## Your choices
+## Je keuzes
 
-- Use the cookie banner on the marketing site to accept or decline analytics storage.
-- Enable Do Not Track in your browser to stop analytics identifiers from being stored.
-- Clear your browser's cookies and local storage for mycompanydesk.nl / mycompanydesk.com to remove stored identifiers.
+- Gebruik de cookiebanner op de marketingwebsite om analytics-opslag toe te staan of te weigeren.
+- Schakel Do Not Track in in je browser om opslag van analytics-ids te voorkomen.
+- Wis de cookies en lokale opslag voor mycompanydesk.nl / mycompanydesk.com in je browser om opgeslagen ids te verwijderen.
 
-For questions, contact [support@mycompanydesk.com](mailto:support@mycompanydesk.com).
+Voor vragen kun je contact opnemen met [support@mycompanydesk.com](mailto:support@mycompanydesk.com).

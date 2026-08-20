@@ -1,84 +1,84 @@
 ---
-title: Reports
+title: Rapporten
 ---
 
-# Reports
+# Rapporten
 
-Understand how your business is doing with five focused report views and an overview that ties them together. Charts are embedded directly in each view, so every report combines numbers and visuals in one place.
+Begrijp hoe je bedrijf ervoor staat met vijf gerichte rapportweergaven en een overzicht dat ze samenbrengt. Grafieken zitten direct in elke weergave, zodat elk rapport cijfers en beelden op één plek combineert.
 
-## Accessing reports
+## Navigeren
 
-Navigate to **Reports** in the sidebar. On desktop, switch views with the tab bar at the top; on mobile, use the view selector or swipe left and right between views.
+Ga in de zijbalk naar **Rapporten**. Op desktop wissel je van weergave met de tabbalk bovenaan; op mobiel gebruik je de weergavekiezer of veeg je links en rechts tussen weergaven.
 
-## Report views
+## Rapportweergaven
 
-### Overview
+### Overzicht
 
-The landing view brings your key numbers together for the selected period:
+Het landingsoverzicht brengt je belangrijkste cijfers samen voor de geselecteerde periode:
 
-- Headline stats: revenue, profit with margin, outstanding invoices, tracked hours, and expenses
-- A financial overview chart (monthly or quarterly)
-- An aging breakdown of unpaid invoices, with a shortcut to send reminders
-- Your top clients by revenue
-- Insight cards that flag things worth acting on, such as overdue invoices or a slim profit margin
+- Kopcijfers: omzet, winst met marge, openstaande facturen, geregistreerde uren en uitgaven
+- Een financieel overzichtsdiagram (per maand of kwartaal)
+- Een verouderingsoverzicht van onbetaalde facturen, met een snelkoppeling om herinneringen te versturen
+- Je grootste klanten op omzet
+- Inzichtkaarten die aandachtspunten signaleren, zoals achterstallige facturen of een krappe winstmarge
 
-Each block links through to the matching detailed report.
+Elk blok linkt door naar het bijbehorende gedetailleerde rapport.
 
-### Profit & Loss
+### Winst & verlies
 
-The **P&L** view covers your results through three lenses you switch between at the top:
+De weergave **Winst & verlies** toont je resultaat door drie lenzen die je bovenaan wisselt:
 
-- **Profit**: revenue minus expenses, margins, and how they develop over time
-- **Revenue**: income per period, trends, and comparisons
-- **Expenses**: where your money goes, broken down by category
+- **Winst**: omzet min uitgaven, marges en hoe die zich ontwikkelen
+- **Omzet**: inkomsten per periode, trends en vergelijkingen
+- **Uitgaven**: waar je geld naartoe gaat, opgesplitst per categorie
 
-### Cash Flow
+### Cashflow
 
-Track actual money movement: cash coming in from payments, cash going out to expenses, the net result, and your running balance over time.
+Volg de werkelijke geldstroom: binnenkomende betalingen, uitgaande uitgaven, het nettoresultaat en je lopende saldo over tijd.
 
-### Clients
+### Klanten
 
-Analyze your customer base in three tabs:
+Analyseer je klantenbestand in drie tabbladen:
 
-- **Activity**: revenue per client, client ranking, and invoice patterns
-- **Outstanding**: unpaid invoices per client, how long they have been open, and what is overdue
-- **Lapsed**: customers who bought before but have not had an invoice this year. The view shows the count, their previous total spend, the date of their last invoice, and quick actions to call or email each customer. It is campaign-shaped work, so it lives in a report rather than in the urgency-sorted dashboard briefing.
+- **Activiteit**: omzet per klant, klantrangschikking en factuurpatronen
+- **Openstaand**: onbetaalde facturen per klant, hoe lang ze openstaan en wat achterstallig is
+- **Weggebleven**: klanten die eerder kochten maar dit jaar nog geen factuur hebben gekregen. De weergave toont het aantal, wat ze eerder samen besteedden, de datum van hun laatste factuur en snelle acties om elke klant te bellen of te mailen. Het is campagne-werk, dus het staat in een rapport in plaats van in de op urgentie gesorteerde dashboard-briefing.
 
-### Forecast
+### Prognose
 
-See where your numbers are heading, based on recurring billings, open invoices, and your recent run rate. Switch the horizon between **3 months**, **6 months**, and **12 months** to see expected revenue, expenses, profit, and your cash runway.
+Zie waar je cijfers naartoe gaan, gebaseerd op terugkerende facturen, openstaande facturen en je recente trend. Schakel de horizon tussen **3 maanden**, **6 maanden** en **12 maanden** om verwachte omzet, uitgaven, winst en je cash-runway te zien.
 
-### Income tax
+### Inkomstenbelasting
 
-The **Income tax** view estimates the income tax for the selected year: gross profit, the self-employed deduction and SME profit exemption, taxable income, the tax brackets, estimated tax, profit after tax, and how much to set aside. If your company is a BV, it shows an estimated corporate tax instead. Treat it as a planning aid for reserving money, not as a filing.
+De weergave **Inkomstenbelasting** schat de inkomstenbelasting voor het geselecteerde jaar: brutowinst, de zelfstandigenaftrek en de mkb-winstvrijstelling, belastbaar inkomen, de belastingschijven, geschatte belasting, winst na belasting en het bedrag dat je moet reserveren. Als je bedrijf een BV is, toont hij in plaats daarvan een geschatte vennootschapsbelasting. Zie het als hulpmiddel om geld te reserveren, niet als aangifte.
 
-### Looking for the VAT report?
+### Op zoek naar het BTW-rapport?
 
-VAT has its own dedicated page with quarterly overviews and filing support. See [VAT Management](/features/vat).
+BTW heeft een eigen pagina met kwartaaloverzichten en aangifte-ondersteuning. Zie [BTW-beheer](/features/vat).
 
-## Accounting view
+## Boekhoudweergave
 
-Reports opens in a simple view by default: income, expenses and the VAT you owe, shown without bookkeeping jargon. Switch to the full accounting view at any time to see the general ledger, balance sheet, profit-and-loss account and annual accounts. The full view is useful when you work with an accountant; you do not need it for your own tax return.
+Rapporten opent standaard in een eenvoudige weergave: inkomsten, uitgaven en de BTW die je verschuldigd bent, zonder boekhoudjargon. Schakel op elk moment naar de volledige boekhoudersweergave om het grootboek, de balans, de winst-en-verliesrekening en de jaarrekening te zien. De volledige weergave is handig als je met een boekhouder werkt; je hebt hem niet nodig voor je eigen aangifte.
 
-The general ledger shows each ledger account with its RGS reference code where applicable. RGS (Referentie Grootboekschema) is the Dutch standard chart of accounts for entrepreneurs; the codes make it easier for you and your accountant to line up ledger lines with accounting software that supports RGS.
+In het grootboek zie je per rekening de bijbehorende RGS-referentiecode waar van toepassing. RGS (Referentie Grootboekschema) is het standaardrekeningschema voor Nederlandse ondernemers; de codes helpen jou en je boekhouder om grootboekregels eenvoudig af te stemmen op boekhoudsoftware die RGS ondersteunt.
 
-### Auditfile export (XAF)
+### Auditfile-export (XAF)
 
-In the full accounting view, open the annual accounts for a year and choose **Auditfile (XAF)** to download a Dutch XML Auditfile Financieel 4.0 file. This file contains the same year-end ledger data as the PDF annual accounts, but in a structured format that accounting packages and the Dutch tax office (Belastingdienst) can import directly. It is useful when your accountant asks for the books in XAF format, or when you file electronically.
+In de volledige boekhoudweergave open je de jaarrekening van een jaar en kies je **Auditfile (XAF)** om een Nederlandse XML Auditfile Financieel 4.0 te downloaden. Het bestand bevat dezelfde eindejaarsgegevens als de PDF-jaarrekening, maar in een gestructureerd formaat dat boekhoudpakketten en de Belastingdienst direct kunnen importeren. Handig als je boekhouder de cijfers in XAF-formaat vraagt, of bij een elektronische aangifte.
 
 ## Filters
 
-Open the **Filters** panel with the button at the top of the reports page. The filters apply to every report view:
+Open het **Filters**-paneel met de knop bovenaan de rapportenpagina. De filters gelden voor elke rapportweergave:
 
-- **Period**: choose the granularity (**Year**, **Quarter**, **Month**, **Week**, or **Day**), with a matching picker for the chosen granularity
-- **Year**: the reporting year
-- **Compare with**: enable comparison and pick a **Compare year** to see period-over-period changes
-- **Include open invoices**: toggle whether unpaid invoices count toward revenue
+- **Periode**: kies de granulariteit (**Jaar**, **Kwartaal**, **Maand**, **Week** of **Dag**), met een bijbehorende kiezer voor de gekozen granulariteit
+- **Jaar**: het rapportagejaar
+- **Vergelijk met**: schakel vergelijking in en kies een **Vergelijkingsjaar** om periode-over-periode-wijzigingen te zien
+- **Inclusief openstaande facturen**: schakel in of onbetaalde facturen meetellen voor de omzet
 
 ## Tips
 
-- Use comparison mode to spot trends and seasonal patterns
-- Check the **Outstanding** tab under Clients regularly to follow up on overdue invoices
-- Review the **Lapsed** tab each quarter to see which previous customers you could win back
-- Review the P&L monthly to understand your margins
-- Glance at the **Income tax** view each quarter so the amount to reserve never surprises you
+- Gebruik vergelijkingsmodus om trends en seizoenspatronen te zien
+- Controleer het tabblad **Openstaand** onder Klanten regelmatig om achterstallige facturen op te volgen
+- Bekijk het tabblad **Weggebleven** elk kwartaal om te zien welke vroegere klanten je terug zou kunnen winnen
+- Bekijk Winst & verlies maandelijks om je marges te begrijpen
+- Werp elk kwartaal een blik op **Inkomstenbelasting**, zodat het te reserveren bedrag je nooit verrast

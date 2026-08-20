@@ -7,9 +7,10 @@ chatbot:
   follow_up: ["How do I filter invoices by status?", "How do I find a customer?", "How do I search expenses?"]
 ---
 
-To quickly search across everything:
-1. Use the search functionality in each section (Invoices, Expenses, Customers)
-2. Type a keyword - results filter in real-time
-3. Search works on names, numbers, amounts, and descriptions
+Om snel te zoeken in de applicatie:
+1. Gebruik de zoekbalk bovenaan de lijstweergaven
+2. Typ klantnamen, factuurnummers of bedragen
+3. Resultaten worden in realtime gefilterd terwijl je typt
+4. Klik op een resultaat om het direct te openen
 
-Tip: Search terms are trimmed automatically. Pasted text with a leading or trailing space still matches the same records, so you do not need to clean it up first.
+Tip: Zoektermen worden automatisch getrimd. Geplakte tekst met een spatie ervoor of erna geeft dezelfde resultaten, dus je hoeft hem niet eerst schoon te maken.

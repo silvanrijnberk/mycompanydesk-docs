@@ -1,5 +1,5 @@
 ---
-title: "Multi currency"
+title: "Meerdere valuta"
 last_verified: 2026-07-02
 chatbot:
   triggers: ["multi currency", "different currency", "foreign currency", "invoice in dollars", "invoice in pounds", "andere valuta", "vreemde valuta", "andere wahrung", "devise etrangere", "dollar invoice", "pound invoice"]
@@ -8,8 +8,8 @@ chatbot:
   follow_up: ["How do I set up my company settings?", "How do I change my language?"]
 ---
 
-MyCompanyDesk works in euros only. All invoices, quotes, expenses, and reports are in EUR. There is no currency setting and no per-document currency picker; this is a deliberate product choice, not a missing preference.
+MyCompanyDesk werkt uitsluitend in euro's. Alle facturen, offertes, uitgaven en rapportages staan in EUR. Er is geen valuta-instelling en geen valutakeuze per document; dit is een bewuste productkeuze, geen ontbrekende voorkeur.
 
-If you bill a customer abroad, the invoice is still in euros.
+Factureer je een klant in het buitenland, dan blijft de factuur gewoon in euro's.
 
-Tip: Agree with foreign clients up front that you invoice in EUR. They pay the euro amount, and any conversion happens on their side.
+Tip: Spreek vooraf met buitenlandse klanten af dat je in euro's factureert. Zij betalen het eurobedrag en een eventuele omrekening gebeurt aan hun kant.

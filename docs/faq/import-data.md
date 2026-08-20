@@ -1,5 +1,5 @@
 ---
-title: "Import data"
+title: "Gegevens importeren"
 last_verified: 2026-08-15
 chatbot:
   triggers:
@@ -20,18 +20,18 @@ chatbot:
     - "How do I add customers manually?"
 ---
 
-MyCompanyDesk can import customers, invoices, and expenses from a CSV file. Other data types cannot be imported.
+MyCompanyDesk kan klanten, facturen en uitgaven importeren uit een CSV-bestand. Andere gegevenstypes kun je niet importeren.
 
-The import page lives at `/profile/import`. There is no menu entry for it, so open it via the button above or by entering the address directly. Then:
+De importpagina staat op `/profile/import`. Er is geen menu-ingang voor, dus open de pagina via de knop hierboven of door het adres direct in te voeren. Daarna:
 
-1. Choose the data type: customers, invoices, or expenses
-2. Upload your CSV file
-3. Match the columns of your file to the right fields and confirm the preview
+1. Kies het gegevenstype: klanten, facturen of uitgaven
+2. Upload je CSV-bestand
+3. Koppel de kolommen van je bestand aan de juiste velden en bevestig de preview
 
-There is no template CSV to download; the import works with the columns of your own file and lets you map them during the upload.
+Er is geen CSV-sjabloon om te downloaden; de import werkt met de kolommen van je eigen bestand en laat je die tijdens het uploaden koppelen.
 
-For expenses, CSV files written in Dutch formats are parsed the way a Dutch bookkeeper writes them. Amount cells such as 100,50 or 1.234,56 are recognized, and dates in dd-mm-yyyy order are read as day-month-year. This matches the number fields in the web app, so what you type and what you import use the same rules.
+Voor uitgaven worden CSV-bestanden in Nederlandse notatie herkend. Bedragen als 100,50 of 1.234,56 en datums in dd-mm-jjjj-volgorde worden als dag-maand-jaar gelezen. Dat werkt net zoals de bedragsvelden in de web-app, dus typen en importeren volgen dezelfde regels.
 
-If a VAT amount column is present, MyCompanyDesk also derives the VAT rate from it. If both VAT amount and VAT rate are missing, the VAT rate is set to 0 instead of defaulting to the standard rate, so the expense appears in the pre-filing "Missing VAT" check.
+Is er een kolom met BTW-bedrag, dan leidt MyCompanyDesk daar het BTW-tarief uit af. Ontbreken zowel BTW-bedrag als tarief, dan blijft het tarief op 0 staan in plaats van op het standaardtarief te vallen. De uitgave komt dan in de controle "BTW ontbreekt" voor de aangifte.
 
-Tip: Start with a small test import to verify the mapping before importing large datasets.
+Tip: begin met een kleine testimport om de koppeling te controleren voordat je grotere datasets importeert.

@@ -1,108 +1,108 @@
 ---
-title: Security
+title: Beveiliging
 last_verified: 2026-07-10
 ---
 
-# Security
+# Beveiliging
 
-Protect your account with strong authentication. Everything below lives in the Settings area: open **Instellingen** (Settings) and pick **Inloggen** (signing in), unless noted otherwise.
+Bescherm je account met sterke authenticatie. Alles hieronder vind je in het Instellingen-gedeelte: open **Instellingen** en kies **Inloggen**, tenzij anders vermeld.
 
-## Password
+## Wachtwoord
 
-Use a strong, unique password for your MyCompanyDesk account. Change it on **Settings > Inloggen**.
+Gebruik een sterk, uniek wachtwoord voor je MyCompanyDesk-account. Wijzig het via **Instellingen > Inloggen**.
 
-### Password requirements
+### Wachtwoordvereisten
 
-- At least 8 characters
-- Mix of letters, numbers, and symbols recommended
+- Minimaal 8 tekens
+- Mix van letters, cijfers en symbolen aanbevolen
 
-## Two-factor authentication
+## Tweefactorauthenticatie
 
-Add an extra layer of security to your account:
+Voeg een extra beveiligingslaag toe aan je account:
 
-1. Go to **Settings > Inloggen**
-2. Start the two-step verification setup
-3. Scan the QR code with your authenticator app (Google Authenticator, 1Password, Authy, and similar)
-4. Enter the verification code to confirm
-5. Save your **backup codes** in a secure location
+1. Ga naar **Instellingen > Inloggen**
+2. Start het instellen van verificatie in twee stappen
+3. Scan de QR-code met je authenticator-app (Google Authenticator, 1Password, Authy en vergelijkbare apps)
+4. Vul de verificatiecode in om te bevestigen
+5. Bewaar je **back-upcodes** op een veilige plek
 
-If you have the installed MyCompanyDesk app, you can choose to generate your login codes inside the app instead. During setup, choose **Gebruik de MyCompanyDesk-app**, then find your codes under **Instellingen > Inlogcodes** in the app.
+Heb je de geïnstalleerde MyCompanyDesk-app, dan kun je codes ook in de app zelf laten genereren. Kies tijdens het instellen voor **Gebruik de MyCompanyDesk-app**, en vind je inlogcodes daarna onder **Instellingen > Inlogcodes** in de app.
 
-With 2FA enabled, you need both your password and a code from your authenticator app to log in.
+Met 2FA ingeschakeld heb je zowel je wachtwoord als een code uit je authenticator-app nodig om in te loggen.
 
-### Logging in with 2FA
+### Inloggen met 2FA
 
-After entering your password, the login screen asks for the 6-digit code from your authenticator app. If you use the MyCompanyDesk app as your authenticator, open it and use the current code from **Instellingen > Inlogcodes**. No access to the app? Enter one of your backup codes in the same field.
+Na het invullen van je wachtwoord vraagt het inlogscherm om de 6-cijferige code uit je authenticator-app. Gebruik je de MyCompanyDesk-app als authenticator, open de app en gebruik de huidige code bij **Instellingen > Inlogcodes**. Geen toegang tot je app? Vul in hetzelfde veld een van je back-upcodes in.
 
-When you log in with your password and a code, you can tick **remember this device for 30 days**, so this device skips the code step for a month.
+Log je in met je wachtwoord en een code, dan kun je **dit apparaat 30 dagen onthouden** aanvinken; dit apparaat slaat de codestap dan een maand over.
 
-### Lost your second factor?
+### Tweede factor kwijt?
 
-If you no longer have your authenticator app or passkey, use the recovery link on the code screen:
+Heb je geen toegang meer tot je authenticator-app of passkey, gebruik dan de herstellink op het codescherm:
 
-1. Enter your email address; we send a confirmation link.
-2. Opening the link starts a 24-hour security waiting period.
-3. After the waiting period, log in with just your password. Your passkeys, authenticator app and backup codes are cleared automatically, so you can set them up fresh.
+1. Vul je e-mailadres in; we sturen een bevestigingslink.
+2. Het openen van de link start een veiligheidswachttijd van 24 uur.
+3. Na de wachttijd log je in met alleen je wachtwoord. Je passkeys, authenticator-app en back-upcodes worden automatisch gewist, zodat je ze opnieuw kunt instellen.
 
-The waiting period exists so that an attacker with only your password cannot instantly strip your account's protection.
+De wachttijd bestaat zodat een aanvaller met alleen je wachtwoord niet meteen de beveiliging van je account kan strippen.
 
-### Disabling 2FA
+### 2FA uitschakelen
 
-1. Go to **Settings > Inloggen**
-2. Choose to disable two-step verification
-3. Confirm with a current code from your authenticator app, a backup code, or your password
+1. Ga naar **Instellingen > Inloggen**
+2. Kies voor het uitschakelen van verificatie in twee stappen
+3. Bevestig met een actuele code uit je authenticator-app, een back-upcode of je wachtwoord
 
-## Passwordless sign-in (magic link)
+## Inloggen zonder wachtwoord (magic link)
 
-You can sign in without a password using a one-time link sent to your email:
+Je kunt inloggen zonder wachtwoord met een eenmalige link die naar je e-mail wordt gestuurd:
 
-1. Go to the login page
-2. Click **Send me a sign-in link**
-3. Enter your email address
-4. Check your inbox and click the link
+1. Ga naar de inlogpagina
+2. Klik op **Stuur mij een inloglink**
+3. Vul je e-mailadres in
+4. Open je inbox en klik op de link
 
-The link is valid for 15 minutes and can only be used once. For security, requesting a new link invalidates any outstanding ones.
+De link is 15 minuten geldig en kan maar één keer worden gebruikt. Uit veiligheidsoogpunt maakt het aanvragen van een nieuwe link eerdere links ongeldig.
 
 ::: tip
-If you verify your email after signing up, you are signed in automatically. No extra login step is needed.
+Bevestig je je e-mailadres na het aanmelden, dan word je automatisch ingelogd. Er is geen extra inlogstap nodig.
 :::
 
 ## Passkeys
 
-Passkeys let you sign in with biometrics or a security key instead of a password. They are available to every user: manage your own passkeys on **Settings > Inloggen**.
+Met passkeys log je in met biometrie of een beveiligingssleutel in plaats van een wachtwoord. Ze zijn beschikbaar voor elke gebruiker: beheer je eigen passkeys via **Instellingen > Inloggen**.
 
-- Register multiple passkeys (Face ID, Touch ID, Windows Hello, hardware keys)
-- Name each passkey so you can revoke individual devices
-- On the login screen, once you enter your email address, a passkey sign-in button is offered if your account has one
+- Registreer meerdere passkeys (Face ID, Touch ID, Windows Hello, hardwaresleutels)
+- Geef elke passkey een naam, zodat je apparaten afzonderlijk kunt intrekken
+- Op het inlogscherm verschijnt na het invullen van je e-mailadres een passkey-knop als je account er een heeft
 
-## Sessions
+## Sessies
 
-The sessions card on **Settings > Inloggen** has a single **Log out** action that ends your current session. There is no list of other devices or per-session revoking. If you suspect someone else has access to your account, change your password.
+De sessiekaart op **Instellingen > Inloggen** heeft één actie: **Uitloggen**, die je huidige sessie beëindigt. Er is geen lijst met andere apparaten en geen intrekken per sessie. Vermoed je dat iemand anders toegang heeft tot je account, wijzig dan je wachtwoord.
 
-## Social login
+## Inloggen via Google of Microsoft
 
-If you use Google or Microsoft to sign in:
+Log je in met Google of Microsoft:
 
-- Your authentication is handled by the provider
-- MyCompanyDesk never sees or stores your Google or Microsoft password
-- You can also set a password on **Settings > Inloggen** to enable email login alongside it
+- De authenticatie wordt afgehandeld door de aanbieder
+- MyCompanyDesk ziet of bewaart je Google- of Microsoft-wachtwoord nooit
+- Je kunt daarnaast een wachtwoord instellen via **Instellingen > Inloggen** om ook met e-mail te kunnen inloggen
 
-## Data protection
+## Gegevensbescherming
 
-MyCompanyDesk takes data security seriously:
+MyCompanyDesk neemt gegevensbeveiliging serieus:
 
-- All data is transmitted over HTTPS
-- Passwords are stored hashed, never in plain text
-- GDPR-compliant data handling
-- Regular backups ensure data safety
-- The `bsn` (Dutch citizen service number) field is used only for rental workflows and is never returned in customer API responses
+- Alle gegevens worden verzonden via HTTPS
+- Wachtwoorden worden gehasht opgeslagen, nooit als leesbare tekst
+- AVG-conforme gegevensverwerking
+- Regelmatige back-ups houden je gegevens veilig
+- Het veld `bsn` (burgerservicenummer) wordt alleen gebruikt voor verhuurworkflows en nooit teruggegeven in klant-API-reacties
 
-For details on cookies, analytics identifiers, and Do Not Track handling, see [Cookies and analytics](/account/cookies-tracking).
+Zie [Cookies en analytics](/account/cookies-tracking) voor meer informatie over cookies, analytics-identificaties en Do Not Track.
 
-## Account deletion
+## Account opzeggen
 
-If you want to stop using MyCompanyDesk, go to **Settings > Account opzeggen** (cancel your account). This row is visible to admins only. Read the page carefully: it explains what happens to your subscription and your data before you confirm.
+Wil je stoppen met MyCompanyDesk, ga dan naar **Instellingen > Account opzeggen**. Deze rij is alleen zichtbaar voor beheerders. Lees de pagina rustig door: die legt uit wat er met je abonnement en je gegevens gebeurt voordat je bevestigt.
 
 ::: warning
-Ending your account is a big step. Download a copy of your records first via **Settings > Gegevens downloaden**; Dutch tax rules require you to be able to show your administration for 7 years.
+Je account opzeggen is een grote stap. Download eerst een kopie van je administratie via **Instellingen > Gegevens downloaden**; de Belastingdienst wil dat je je administratie 7 jaar kunt laten zien.
 :::

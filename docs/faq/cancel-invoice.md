@@ -1,5 +1,5 @@
 ---
-title: Cancel an invoice
+title: "Factuur annuleren"
 last_verified: 2026-08-14
 chatbot:
   triggers: ["cancel invoice", "void invoice", "annul invoice", "reverse invoice", "credit note", "undo invoice", "factuur annuleren", "factuur ongedaan", "hoe annuleer ik een factuur", "rechnung stornieren", "wie storniere ich eine rechnung", "annuler facture"]
@@ -8,20 +8,20 @@ chatbot:
   follow_up: ["How do I create a credit note?", "How do I delete a draft invoice?", "How do I view cancelled invoices?"]
 ---
 
-To cancel a sent invoice:
-1. Open the invoice from your invoice list
-2. In the sidebar, scroll to the "Danger Zone" section
-3. Click "Mark as Canceled"
-4. The invoice status changes to Canceled
+Zo annuleer je een verstuurde factuur:
+1. Open de factuur vanuit je factuurlijst
+2. Scrol in de zijbalk naar de sectie "Gevarenzone"
+3. Klik op "Markeer als geannuleerd"
+4. De status van de factuur verandert naar Geannuleerd
 
-Any overdue, deadline, or draft notifications tied to the invoice are also resolved, so you will no longer see a "Send reminder" action for it in the bell. This also applies when you cancel multiple invoices at once from the invoice list.
+Ook worden meldingen over deze factuur, zoals achterstallig, deadline of concept, opgelost, zodat je geen actie "Herinnering versturen" meer voor hem ziet in de bel. Dit geldt ook wanneer je meerdere facturen tegelijk annuleert vanuit de factuurlijst.
 
-If the invoice is already paid or partially paid, open the original invoice and use "Create credit note / correction" instead.
+Is de factuur al (deels) betaald? Open dan de originele factuur en gebruik "Creditnota / correctie maken".
 
-Canceled invoices cannot be corrected with a credit note. If you need to issue a correction for an invoice that was already canceled, duplicate the canceled invoice, make the corrections, and send it again.
+Geannuleerde facturen kun je niet corrigeren met een creditnota. Wil je toch een correctie doorvoeren voor een al geannuleerde factuur? Dupliceer de geannuleerde factuur, pas de correctie toe en stuur hem opnieuw.
 
-Canceling is different from deleting: canceling changes the status to Canceled while keeping the invoice in the list; deleting moves it through Archived and Trash stages before it is permanently removed. Deleting is only possible in one step while a document is still a draft without a number.
+Annuleren is iets anders dan verwijderen: annuleren zet de status op Geannuleerd, maar de factuur blijft in de lijst staan; verwijderen loopt via Gearchiveerd en Prullenbak voordat hij definitief weg is. Definitief verwijderen in één keer kan alleen zolang een document nog een concept zonder nummer is.
 
-Once an invoice is canceled, it is no longer collectible. The invoice detail page, the invoice list quick view, and the customer portal all stop showing a remaining balance, even if there are still recorded payments on the invoice. Payments that were already booked remain visible in the payment history.
+Zodra een factuur is geannuleerd, is hij niet meer vorderbaar. De factuurdetailpagina, het snelweergavepaneel in de facturenlijst en het klantportaal tonen geen resterend bedrag meer, ook al staan er nog geboekte betalingen op de factuur. Reeds geboekte betalingen blijven zichtbaar in het betalingsoverzicht.
 
-Tip: Canceling keeps the invoice number in your records; deleting is only possible while a document is still a draft without a number.
+Tip: Annuleren houdt het factuurnummer in je administratie; verwijderen kan alleen zolang een document nog een concept zonder nummer is.

@@ -20,8 +20,8 @@ chatbot:
     - "How do I preview invoices before sending?"
 ---
 
-To reduce invoice entry mistakes in the app:
-1. Open Customers and complete the billing email, address, VAT number, and default payment terms for the customer
-2. Reuse that saved customer record when creating the invoice instead of retyping the details
-3. Preview the invoice before sending so you can verify the saved customer data, line items, and PDF layout
-4. If the wrong data keeps appearing, update the customer record or company settings first, then create or refresh the draft invoice
+Om factuurfouten in de app te beperken:
+1. Open Klanten en vul het factuur-e-mailadres, adres, BTW-nummer en standaard betaalvoorwaarden van de klant in
+2. Gebruik daarna die opgeslagen klant bij het aanmaken van de factuur in plaats van alles opnieuw te typen
+3. Bekijk eerst de factuurpreview zodat je klantgegevens, factuurregels en PDF-opmaak kunt controleren
+4. Verschijnt er nog steeds verkeerde informatie, werk dan eerst het klantrecord of de bedrijfsinstellingen bij en vernieuw daarna het concept

@@ -1,5 +1,5 @@
 ---
-title: "Reports overview"
+title: "Rapportenoverzicht"
 last_verified: 2026-05-09
 chatbot:
   triggers:
@@ -22,11 +22,11 @@ chatbot:
     - "How do I see profit and loss?"
 ---
 
-To view your reports:
-1. Go to Reports
-2. Switch between the six views: Overview, P&L, Cash Flow, Clients, Forecast, and Income tax
-3. Use the filters to set the period granularity (year, quarter, month, week, or day), pick the year, include open invoices, or compare with another year
+Om je rapporten te bekijken:
+1. Ga naar Rapporten
+2. Wissel tussen de zes weergaven: het overzicht, Winst & verlies, Cashflow, Klanten, Prognose en Inkomstenbelasting
+3. Gebruik de filters om de periode-indeling te kiezen (jaar, kwartaal, maand, week of dag), het jaar te selecteren, open facturen mee te tellen of te vergelijken met een ander jaar
 
-There are no status or category filters on reports; the period and comparison filters apply across all views.
+Rapporten hebben geen status- of categoriefilters; de periode- en vergelijkingsfilters gelden voor alle weergaven.
 
-Tip: If a number looks wrong, verify the active period and comparison settings first.
+Tip: Als een cijfer niet klopt, controleer dan eerst de actieve periode- en vergelijkingsinstellingen.

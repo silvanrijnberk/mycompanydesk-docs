@@ -1,5 +1,5 @@
 ---
-title: "Invoice number"
+title: "Factuurnummer"
 last_verified: 2026-08-05
 chatbot:
   triggers: ["invoice number", "change invoice number", "invoice numbering", "set invoice number", "numbering format", "factuurnummer", "factuurnummering", "rechnungsnummer", "numero facture"]
@@ -9,16 +9,16 @@ chatbot:
   follow_up: ["How do I set up my company settings?", "How do I change the PDF style?", "How do I create my first invoice?"]
 ---
 
-Invoice numbers are assigned automatically:
-1. Create an invoice; MyCompanyDesk numbers it sequentially, the way the Dutch tax authority expects
-2. There is no numbering format to configure
-3. Need a specific number on a draft? Open the invoice in the form and click "Set custom number" in the sidebar
-4. To start the sequence over, go to Settings → "Account opzeggen" and use "Reset invoice numbering"
+Factuurnummers worden automatisch toegekend:
+1. Maak een factuur; MyCompanyDesk nummert die netjes op volgorde, zoals de Belastingdienst het wil
+2. Er is geen nummeringsformaat om in te stellen
+3. Wil je een eigen nummer op een concept? Open de factuur in het formulier en klik in de zijbalk op "Eigen nummer invoeren"
+4. Wil je de reeks opnieuw laten beginnen? Ga naar Instellingen → "Account opzeggen" en gebruik "Factuurnummering resetten"
 
-## Manual numbering mode
+## Handmatige nummeringsmodus
 
-By default MyCompanyDesk numbers invoices automatically. If your workspace uses manual numbering, the app does not assign a number until you finalize, send, or mark the invoice as sent.
+Standaard nummert MyCompanyDesk facturen automatisch. Als je werkruimte handmatige nummering gebruikt, krijgt een factuur pas een nummer wanneer je hem afrondt, verstuurt of als verstuurd markeert.
 
-When that happens, a dialog opens so you can enter the invoice number. MyCompanyDesk suggests the next number in your sequence, but you can type any number you like. The number is required and must be unique.
+Op dat moment opent een dialoog waarin je het factuurnummer invult. MyCompanyDesk toont het volgende nummer in je reeks als suggestie, maar je mag elk nummer invoeren dat je wilt. Het nummer is verplicht en moet uniek zijn.
 
-Tip: Drafts do not have a final number yet. Delete test drafts before finalizing and your sequence stays without gaps.
+Tip: Concepten hebben nog geen definitief nummer. Verwijder testconcepten voordat je ze afrondt, dan blijft je reeks zonder gaten.

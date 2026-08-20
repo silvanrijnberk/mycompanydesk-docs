@@ -1,55 +1,55 @@
 ---
-title: Change all prices at once
+title: Alle prijzen tegelijk aanpassen
 last_verified: 2026-08-06
 chatbot:
   triggers:
+    - "alle prijzen aanpassen"
+    - "prijzen aanpassen"
+    - "bulk prijswijziging"
+    - "prijzen verhogen"
+    - "prijzen verlagen"
     - "change all prices"
     - "bulk price change"
-    - "update prices"
-    - "prijzen aanpassen"
-    - "alle prijzen veranderen"
-    - "massenpreisänderung"
-    - "modifier tous les prix"
   actions: []
   follow_up:
-    - "Will this change prices on invoices I already sent?"
-    - "How do I undo a price change?"
+    - "Worden prijzen op bestaande facturen ook aangepast?"
+    - "Kan ik een prijswijziging ongedaan maken?"
 ---
 
-Go to **Aanbod** (the catalog of products and services you sell) and click **Change prices** (**Prijzen aanpassen** in the Dutch interface) to update many prices in one go.
+Ga naar **Aanbod** en klik op **Prijzen aanpassen** om in één keer meerdere prijzen te wijzigen.
 
-## How it works
+## Hoe het werkt
 
-1. Choose how you want to change prices:
-   - **Percentage** — raise or lower every price by a percentage.
-   - **Fixed amount** — add or subtract the same amount from every price.
-   - Use a negative value to lower prices.
-2. Choose rounding:
-   - **Exact cents** keeps the normal decimal price.
-   - **Whole euros** rounds the result to whole euros.
-3. Click **Check changes** to open a preview that lists every item with its old and new price.
-4. Review the list, then click **Change prices** to apply it.
+1. Kies hoe je de prijzen wilt wijzigen:
+   - **Percentage** — verhoog of verlaag elke prijs met een percentage.
+   - **Vast bedrag** — tel hetzelfde bedrag bij elke prijs op of trek het af.
+   - Gebruik een min-teken om prijzen te verlagen.
+2. Kies afronding:
+   - **Op centen** houdt de prijs zoals deze uit de berekening komt.
+   - **Op hele euro's** rondt af op hele euro's.
+3. Klik op **Bekijk wat er verandert** om een overzicht te zien met per item de oude en nieuwe prijs.
+4. Controleer het overzicht en klik op **Prijzen aanpassen** om toe te passen.
 
-The preview also tells you if any items are skipped because they do not have a price (for example, price-on-request items), and it warns you when an active promotion would stop being an active promotion after the change.
+Het overzicht toont ook hoeveel items zijn overgeslagen omdat ze geen prijs hebben (bijvoorbeeld prijs-op-aanvraag items). En je krijgt een waarschuwing als een actieve aanbieding hierdoor stopt, omdat de aanbiedingsprijs dan niet meer onder de normale prijs ligt.
 
-## What changes and what does not
+## Wat verandert er wel en niet
 
-- Only the prices in your **Aanbod** are updated.
-- Existing invoices, quotes, and contracts keep the prices they were created with.
-- You can undo a change right after applying it. A single undo reverses the whole batch in one step.
+- Alleen de prijzen in je **Aanbod** worden gewijzigd.
+- Bestaande facturen, offertes en contracten houden de prijs waarmee ze zijn aangemaakt.
+- Direct na het toepassen kun je de wijziging ongedaan maken. Met één keer ongedaan maken draai je de hele batch in één keer terug.
 
-## Inflation hint when editing one item
+## Inflatiehint bij één item wijzigen
 
-When you edit a single catalog item with a fixed price, an inflation hint may appear next to the price field. It measures from the date that price was last set (or from when the item was created, if the price never changed). Undo actions do not count as a new price decision, so the hint stays anchored to a real pricing moment.
+Als je één catalogusitem met een vaste prijs bewerkt, kan naast het prijsveld een inflatiehint verschijnen. Hij meet vanaf de datum waarop die prijs voor het laatst is vastgelegd (of vanaf het aanmaken van het item als de prijs nooit is veranderd). Ongedaan-maken telt niet als een nieuwe prijsbeslissing, dus de hint blijft gekoppeld aan een echt moment waarop je de prijs bepaalde.
 
-The hint shows price-index readings as clickable suggestions. Each row displays the period it covers, the percentage change, and what your current price would become if you applied it. Click a suggestion to fill that new amount into the price field. You still save the item yourself, so you always review the change before it lands.
+De hint toont prijsindexwaarden als aanklikbare suggesties. Elke regel toont de periode die hij beslaat, het percentage waarmee de prijs veranderd is en wat je huidige prijs zou worden als je die suggestie toepast. Klik op een suggestie om dat bedrag in het prijsveld in te vullen. Je moet het item zelf nog opslaan, dus je controleert de wijziging altijd voordat hij definitief is.
 
-The hint only appears in edit mode and only for items with a fixed price. Price-on-request items and brand-new items have no history to measure from, so they do not show it.
+De hint verschijnt alleen in bewerkmodus en alleen voor items met een vaste prijs. Prijs-op-aanvraag items en gloednieuwe items hebben geen geschiedenis om van te meten, dus die tonen hem niet.
 
-## Print a price list
+## Prijslijst printen
 
-You can also print your catalog as a customer-facing price list. Open **Aanbod** and click **Price list** to open `/aanbod/prijslijst`.
+Je kunt je aanbod ook afdrukken als klantvriendelijke prijslijst. Open **Aanbod** en klik op **Prijslijst** om `/aanbod/prijslijst` te openen.
 
-The page lists your active items grouped into **Services**, **Products**, and **Subscriptions**. Empty groups are skipped. Turn on **Only show what is on my website** to print the same subset that appears on your site builder. Click **Print or save as PDF** to use the browser print dialog.
+De pagina toont je actieve items, gegroepeerd onder **Diensten**, **Producten** en **Abonnementen**. Lege groepen worden weggelaten. Zet **Alleen wat op mijn website staat** aan om dezelfde selectie te printen die in je sitebouwer staat. Klik op **Printen of opslaan als pdf** om het dialoogvenster van je browser te gebruiken.
 
-Prices are rendered with the same helpers used elsewhere in the app, so the sheet shows the same amounts a customer would see online. The list carries a note that all prices are exclusive of VAT and that no rights can be derived from it.
+De prijzen worden berekend met dezelfde hulpmiddelen als elders in de app, dus het blaadje toont dezelfde bedragen die een klant online zou zien. Onderaan staat dat alle prijzen exclusief btw zijn en dat er geen rechten aan de lijst kunnen worden ontleend.

@@ -17,11 +17,11 @@ chatbot:
     - "How do I link expenses to a project?"
 ---
 
-To create a project:
-1. Go to Projects and open "New Project"
-2. Enter the project name, number, and description
-3. Link a customer if the project belongs to one
-4. Set status, dates, budget, and hourly rate as needed
-5. Save the project
+Om een project aan te maken:
+1. Ga naar Projecten en open "Nieuw project"
+2. Vul de projectnaam, het nummer en de omschrijving in
+3. Koppel zo nodig de klant
+4. Stel status, datums, budget en uurtarief in als die van toepassing zijn
+5. Sla het project op
 
-After saving, you can open related invoices, expenses, or contracts and link them back to this project.
+Na het opslaan kun je gerelateerde facturen, uitgaven of contracten openen en aan dit project koppelen.

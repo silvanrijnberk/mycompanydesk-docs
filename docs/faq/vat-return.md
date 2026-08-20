@@ -9,10 +9,10 @@ chatbot:
   follow_up: ["How do I add my VAT number?", "How do I view financial reports?", "How do I export data for my accountant?"]
 ---
 
-To review VAT figures in the app:
-1. Go to VAT
-2. Select the period you want to inspect
-3. Check the calculated VAT totals and open related invoices or expenses if you need to inspect the source records
-4. Use the export option if you need the visible figures outside the app
+Om BTW-cijfers in de app te bekijken:
+1. Open BTW
+2. Kies de periode die je wilt controleren
+3. Bekijk de berekende BTW-totalen en open gekoppelde facturen of uitgaven als je de bronrecords wilt controleren
+4. Gebruik de exportoptie als je de zichtbare cijfers buiten de app nodig hebt
 
-The app shows VAT calculations for your recorded data, but it does not file or submit the return for you.
+De app toont BTW-berekeningen voor je geregistreerde gegevens, maar dient de aangifte niet voor je in.

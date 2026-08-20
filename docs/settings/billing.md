@@ -1,143 +1,143 @@
 ---
-title: "Plan & payments"
+title: "Abonnement & betalingen"
 last_verified: 2026-08-05
 ---
 
-# Plan & payments
+# Abonnement & betalingen
 
-What you pay us, your invoices from us, and your payment card.
+Wat je ons betaalt, je facturen van ons en je betaalkaart.
 
-## Where to find it
+## Waar vind je het
 
-Open **Settings**, then **Je abonnement**, or navigate directly to `/settings/abonnement`.
+Open **Instellingen** en dan **Je abonnement**, of ga direct naar `/settings/abonnement`.
 
-The old `/workspace/account/billing` and `/settings/billing` URLs redirect to the new page; bookmarks still work and the `?checkout=success|canceled` query parameter is preserved across the redirect.
+De oude URL's `/workspace/account/billing` en `/settings/billing` verwijzen door naar de nieuwe pagina; bladwijzers blijven werken en de queryparameter `?checkout=success|canceled` blijft behouden tijdens de doorverwijzing.
 
-## Legacy arrangements
+## Bestaande afspraken
 
-A small number of legacy workspaces retain free Pro under earlier arrangements. These are honoured for as long as MyCompanyDesk offers the service and the relevant feature. They are closed and cannot be requested; new workspaces start on the 60-day Pro trial described below.
+Een klein aantal werkruimtes houdt Pro gratis op basis van eerdere afspraken. Die afspraken blijven gelden zolang MyCompanyDesk de dienst en de betreffende functionaliteit aanbiedt. Ze zijn gesloten en kunnen niet worden aangevraagd; nieuwe werkruimtes starten met de Pro-proefperiode van 60 dagen die hieronder staat beschreven.
 
-Workspaces on such an arrangement are regular Pro customers in every respect: same features, same limits. The only difference is the subscription source shown in billing.
+Werkruimtes met zo'n afspraak zijn in alle opzichten gewone Pro-klanten: dezelfde functies, dezelfde limieten. Het enige verschil is de abonnementsbron die op de abonnementspagina staat.
 
-## Plans
+## Abonnementen
 
-MyCompanyDesk has a Free plan plus two paid plans. Free is a product in its own right, offered at signup and kept indefinitely. New customers get a 60-day Pro trial, and a workspace that does not convert lands on Free rather than being locked out.
+MyCompanyDesk heeft een Gratis-abonnement en twee betaalde abonnementen. Gratis is een zelfstandig product: je kunt ermee starten en het blijft beschikbaar zolang je wilt. Nieuwe klanten krijgen een Pro-proefperiode van 60 dagen; een werkruimte die niet overstapt, belandt op Gratis.
 
-| Plan | Monthly | Yearly | Description |
+| Abonnement | Maandelijks | Jaarlijks | Omschrijving |
 |---|---|---|---|
-| **Free** | €0.00 | €0.00 | Unlimited invoicing, quotes and expenses, plus your own website on mycompanydesk.site |
-| **Starter** | €10.00 | €100.00 | Everything to do your work: invoices, quotes, expenses, hours and projects, on your own page |
-| **Pro** | €25.00 | €250.00 | Grow your business: own domain and website, business inbox, bank connection, team access, API and more |
+| **Gratis** | € 0,00 | € 0,00 | Onbeperkt factureren, offertes en uitgaven, plus je eigen website op mycompanydesk.site |
+| **Starter** | € 10,00 | € 100,00 | Alles om je werk te doen: facturen, offertes, uitgaven, uren en projecten, op je eigen pagina |
+| **Pro** | € 25,00 | € 250,00 | Laat je bedrijf groeien: eigen domein en website, zakelijke inbox, bankkoppeling, teamtoegang, API en meer |
 
-All prices exclude 21% Dutch VAT, which is added at checkout. The app labels prices "excl. btw"; as a business you reclaim this VAT as input tax. The yearly price equals ten monthly payments, so paying yearly gives you two months free.
+Alle prijzen zijn exclusief 21% btw, die bij het afrekenen wordt toegevoegd. De app toont prijzen als "excl. btw"; als ondernemer vorder je deze btw terug als voorbelasting. De jaarprijs staat gelijk aan tien maandbetalingen, dus jaarlijks betalen geeft je twee maanden gratis.
 
-Pro is the highlighted (recommended) plan in the picker. Free appears on the pricing page and in the signup flow alongside the paid plans.
+Pro is het uitgelichte (aanbevolen) abonnement in de kiezer. Gratis staat op de prijzenpagina en in het aanmeldproces naast de betaalde abonnementen.
 
-### What each plan includes
+### Wat elk abonnement bevat
 
-Quota-limited features (monthly caps, except where noted):
+Functies met verbruikslimieten (maandelijkse limieten, tenzij anders aangegeven):
 
-| Metric | Free | Starter | Pro |
+| Meting | Gratis | Starter | Pro |
 |---|---|---|---|
-| Invoices created | unlimited | unlimited | unlimited |
-| Expenses created | unlimited | unlimited | unlimited |
-| Quotes created | unlimited | unlimited | unlimited |
-| Storage | 100 MB | 2 GB | unlimited |
-| People with access | just you | just you | unlimited |
-| Custom domains | 0 | 0 | 5 |
-| AI chat messages (monthly) | 10 | 100 | 1 000 |
-| AI receipt scans (monthly) | 3 | 30 | 200 |
-| AI suggestions (monthly) | 10 | 200 | 2 000 |
-| Bank connections | 0 | 0 | 3 |
+| Facturen aangemaakt | onbeperkt | onbeperkt | onbeperkt |
+| Uitgaven aangemaakt | onbeperkt | onbeperkt | onbeperkt |
+| Offertes aangemaakt | onbeperkt | onbeperkt | onbeperkt |
+| Opslag | 100 MB | 2 GB | onbeperkt |
+| Mensen met toegang | alleen jij | alleen jij | onbeperkt |
+| Eigen domeinen | 0 | 0 | 5 |
+| AI-chatberichten (maandelijks) | 10 | 100 | 1 000 |
+| AI-bonscans (maandelijks) | 3 | 30 | 200 |
+| AI-suggesties (maandelijks) | 10 | 200 | 2 000 |
+| Bankkoppelingen | 0 | 0 | 3 |
 
-Note: AI caps are monthly, not daily. They reset on the first of each calendar month.
+Let op: AI-limieten zijn maandelijks, niet dagelijks. Ze worden gereset op de eerste van elke kalendermaand.
 
-Free invoicing is unlimited: there is no monthly cap and no lifetime allowance. Existing invoices always stay viewable and exportable.
+Factureren op Gratis is onbeperkt: geen maandlimiet en geen levenslang plafond. Facturen die je al hebt aangemaakt, blijven altijd zichtbaar en exporteerbaar.
 
-Features unlocked per plan:
+Functies per abonnement:
 
-| Feature | Free | Starter | Pro |
+| Functie | Gratis | Starter | Pro |
 |---|---|---|---|
-| Invoices, expenses, quotes, attachments | yes | yes | yes |
-| PDF exports | yes | yes | yes |
-| CSV/Excel exports | no | yes | yes |
-| Receipt scanning (with the monthly caps above) | yes | yes | yes |
-| Assistant chat | yes | yes | yes |
-| AI insights | yes | yes | yes |
-| Real-time expense classification | yes | yes | yes |
-| Contracts | no | yes | yes |
-| Projects | no | yes | yes |
-| Rental properties * | no | yes | yes |
-| Recurring invoices and expenses | no | yes | yes |
-| Time registration | no | yes | yes |
-| Custom branding | yes | yes | yes |
-| Language tools | no | yes | yes |
-| Description enrichment | no | yes | yes |
-| Public business page | yes | yes | yes |
-| Company subdomain and style presets | yes | yes | yes |
-| Team access (unlimited people) | no | no | yes |
-| Clean invoices and quotes sent to your clients | yes | yes | yes |
-| Advanced reports | no | no | yes |
-| Custom domain, domain routing, full website on your domain | no | no | yes |
-| Business inbox | no | no | yes |
-| Newsletter | no | no | yes |
-| Privacy mode | no | no | yes |
-| API access and webhooks | no | no | yes |
-| Advanced permissions | no | no | yes |
-| Priority support | no | no | yes |
-| Bank connections (up to 3) | no | no | yes |
-| Peppol e-invoicing | no | no | yes |
+| Facturen, uitgaven, offertes, bijlagen | ja | ja | ja |
+| PDF-export | ja | ja | ja |
+| CSV/Excel-export | nee | ja | ja |
+| Bonnen scannen (met bovenstaande maandlimieten) | ja | ja | ja |
+| Assistent-chat | ja | ja | ja |
+| AI-inzichten | ja | ja | ja |
+| Realtime uitgavenclassificatie | ja | ja | ja |
+| Contracten | nee | ja | ja |
+| Projecten | nee | ja | ja |
+| Verhuurpanden * | nee | ja | ja |
+| Terugkerende facturen en uitgaven | nee | ja | ja |
+| Urenregistratie | nee | ja | ja |
+| Eigen huisstijl | ja | ja | ja |
+| Taalopties | nee | ja | ja |
+| Omschrijvingsverrijking | nee | ja | ja |
+| Openbare bedrijfspagina | ja | ja | ja |
+| Bedrijfssubdomein en stijlpresets | ja | ja | ja |
+| Teamtoegang (onbeperkt aantal mensen) | nee | nee | ja |
+| Facturen en offertes zonder MyCompanyDesk-vermelding | ja | ja | ja |
+| Geavanceerde rapporten | nee | nee | ja |
+| Eigen domein, domeinroutering, volledige website op je domein | nee | nee | ja |
+| Zakelijke inbox | nee | nee | ja |
+| Nieuwsbrief | nee | nee | ja |
+| Privacymodus | nee | nee | ja |
+| API-toegang en webhooks | nee | nee | ja |
+| Geavanceerde rechten | nee | nee | ja |
+| Prioriteitsondersteuning | nee | nee | ja |
+| Bankkoppelingen (maximaal 3) | nee | nee | ja |
+| Peppol e-facturatie | nee | nee | ja |
 
-\* The rental properties module is currently only shown to workspaces that already use it.
+\* De verhuurpandenmodule wordt momenteel alleen getoond aan werkruimtes die deze al gebruiken.
 
-Accountant (boekhouder) access is free on every plan and does not count as team access.
+Toegang voor je boekhouder is gratis op elk abonnement en telt niet mee als teamtoegang.
 
-### Business inbox limits
+### Limieten zakelijke inbox
 
-The business inbox is a Pro feature. On Pro you can send up to 15 000 and receive up to 20 000 emails per month; there is no cap on the number of mailboxes.
+De zakelijke inbox is een Pro-functie. Op Pro kun je per maand tot 15 000 e-mails versturen en tot 20 000 e-mails ontvangen; er is geen limiet op het aantal mailboxen.
 
-### Public-site availability
+### Openbare site: beschikbaarheid
 
-When a workspace lapses to Free, its public website and site-builder pages remain online. Free sites carry a small MyCompanyDesk badge on the workspace subdomain address; the only way to remove the badge is to move the site to a custom domain (Pro). The gate runs on every request, before any caching, so subscription changes take effect immediately.
+Als een werkruimte naar Gratis vervalt, blijven de openbare website en sitebouwer online. Gratis sites tonen een klein MyCompanyDesk-badge op het werkruimte-subdomeinadres; de enige manier om de badge te verwijderen is de site verhuizen naar een eigen domein (Pro). De controle gebeurt bij elk verzoek, voor de cache, zodat abonnementswijzigingen meteen zichtbaar zijn.
 
-### Team access
+### Teamtoegang
 
-Team access is included in Pro with no per-person charge: invite as many working users as you want. There is no seat pricing and no per-seat add-on. On Free and Starter you work alone, though your accountant can always be given free access.
+Teamtoegang is inbegrepen in Pro zonder kosten per persoon: nodig zoveel meewerkende gebruikers uit als je wilt. Er zijn geen stoelprijzen en geen add-ons per stoel. Op Gratis en Starter werk je alleen, al kan je boekhouder altijd gratis toegang krijgen.
 
-### Extra businesses
+### Extra bedrijven
 
-Your subscription covers your home workspace. Each additional business you add is billed at the price shown before you confirm.
+Je abonnement dekt je hoofdwerkruimte. Elk extra bedrijf dat je toevoegt, wordt tegen de prijs afgerekend die vooraf wordt getoond.
 
-If your workspace is on a paid plan (Starter or Pro), the extra business starts on its own Pro trial. During the trial it costs nothing; after the trial it is added to your subscription at the displayed price.
+Als je werkruimte een betaald abonnement heeft (Starter of Pro), begint het extra bedrijf met een eigen Pro-proefperiode. Tijdens de proefperiode kost het niets; daarna wordt het tegen het getoonde tarief op je abonnement gezet.
 
-If your workspace holds free Office under an arrangement like a comped or founding-member plan, there is no plan subscription to attach the extra business to, so you buy it through a separate add-on-only checkout. The first business stays free; only the extra business is billed. You can deactivate a business at any time; it then stops counting toward your subscription or add-on while remaining readable and exportable for the statutory retention period.
+Als je werkruimte gratis Office heeft via een regeling zoals een gunst of founding-member-plan, is er geen abonnement om het extra bedrijf aan vast te maken. Je koopt het daarom via een aparte add-on-only checkout. Je eerste bedrijf blijft gratis; alleen het extra bedrijf wordt gefactureerd. Je kunt een bedrijf op elk moment deactiveren; dan telt het niet meer mee voor je abonnement of add-on, terwijl het leesbaar en exporteerbaar blijft voor de wettelijke bewaartermijn.
 
-## Stripe portal
+## Stripe-portaal
 
-The **Manage subscription** button (visible whenever the workspace has an active period or non-Free plan) opens a one-shot Stripe Customer Portal session. From the portal you can:
+De knop **Abonnement beheren** (zichtbaar wanneer de werkruimte een actieve periode of niet-Gratis-abonnement heeft) opent een eenmalige Stripe Customer Portal-sessie. Vanuit het portaal kun je:
 
-- Update payment method
-- Download invoices and receipts
-- Change billing address
-- Cancel the subscription
+- Betaalmethode bijwerken
+- Facturen en bonnetjes downloaden
+- Factureringsadres wijzigen
+- Abonnement opzeggen
 
-Cancellation takes effect at the end of the current paid period; access remains until then.
+Opzeggen gaat in aan het einde van de huidige betaalde periode; je behoudt toegang tot die tijd.
 
-## Checkout flow
+## Betaalflow
 
-1. Click **Upgrade** on a plan tile
-2. You are taken to a Stripe Checkout page
-3. Stripe redirects back with `?checkout=success` or `?checkout=canceled`
-4. The page shows a success or cancel banner; gated UI unlocks immediately
+1. Klik op **Upgraden** op een abonnementstegel
+2. Je komt op een Stripe Checkout-pagina
+3. Stripe stuurt je terug met `?checkout=success` of `?checkout=canceled`
+4. De pagina toont een succes- of annuleringsbanner; vergrendelde UI wordt meteen ontgrendeld
 
-When upgrading to Pro, the success banner uses the Pro violet accent and a crown icon ("Welcome to Pro") instead of the standard green confirmation. The same Pro styling appears throughout the app: a violet ring around the user avatar, a crown icon in the plan badge ribbon, and "Pro feature" pills on gated settings pages like API Keys and Inbox. Additionally, the contextual guide assistant gets a premium violet skin: the "AI" pill becomes a "Pro" pill, the panel border and send button adopt the Pro accent, and the status line changes to "Your Pro assistant is ready."
+Bij een upgrade naar Pro krijgt de succesbanner het violette Pro-accent en een kroonicoontje ("Welkom bij Pro") in plaats van de standaard groene bevestiging. Dezelfde Pro-styling zie je op meer plekken in de app: een violette ring om je avatar, een kroonicoontje in de planbadge en "Pro feature"-pills op Pro-instellingen zoals API-sleutels en Inbox. Daarnaast krijgt de contextuele gids-assistent een premium violet uiterlijk: de "AI"-pill wordt een "Pro"-pill, de paneelrand en verzendknop krijgen het Pro-accent en de statusregel verandert naar "Jouw Pro-assistent staat klaar."
 
-## Contextual upgrade banner
+## Contextuele upgrade-banner
 
-When you land on the billing page from a gated feature, the page shows a "you came here for X, here's what unlocks it" banner above the plan grid instead of a generic plans pitch.
+Wanneer je vanuit een vergrendelde functie op de abonnementspagina terechtkomt, toont de pagina een banner met "je kwam hier voor X, dit is wat het ontgrendelt" in plaats van een generieke abonnementenpitch.
 
-## Related
+## Zie ook
 
-- [Company Settings](/settings/company) -- the public business page and custom domains are managed here
-- [Email](/settings/email) -- the business inbox requires Pro
-- [Team](/settings/team) -- team access requires Pro
+- [Bedrijfsgegevens](/settings/company) -- de openbare bedrijfspagina en eigen domeinen beheer je hier
+- [E-mail](/settings/email) -- de zakelijke inbox vereist Pro
+- [Team](/settings/team) -- teamtoegang vereist Pro

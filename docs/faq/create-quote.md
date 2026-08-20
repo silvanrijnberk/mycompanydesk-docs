@@ -8,12 +8,12 @@ chatbot:
     - { label: "Open quotes", to: "/quotes" }
   follow_up: ["How do I preview the quote PDF?", "How do I send a quote by email?", "How do I convert a quote to an invoice?"]
 ---
-Here's how to create a quote:
-1. Go to Quotes and open "Create quote"
-2. Select a customer and, if useful, link a project
-3. Add the quote lines with description, quantity, price, and VAT
-4. In the Quote Details card, set the quote date and "Valid until" date
-5. Use "Save as Draft" if you still need to review it, or "Finalize" when the quote is ready
-6. After saving, open the quote detail page to preview or send it
+Zo maak je een offerte:
+1. Ga naar Offertes en open "Offerte aanmaken"
+2. Selecteer een klant en koppel eventueel een project
+3. Voeg offerteregels toe met omschrijving, aantal, prijs en BTW
+4. Stel in de kaart met offertedetails de offertedatum en "Geldig tot" in
+5. Gebruik "Opslaan als concept" als de offerte nog niet klaar is, of "Afronden" wanneer die gereed is
+6. Open na het opslaan de offertedetailpagina om te bekijken of te versturen
 
-Tip: Quotes stay separate from invoices until you convert one.
+Tip: Een offerte blijft los van facturen totdat je die omzet.

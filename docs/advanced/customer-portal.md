@@ -1,98 +1,98 @@
 ---
-title: Customer Portal
+title: Klantportaal
 ---
 
-# Customer Portal
+# Klantportaal
 
-The customer portal lets your clients view and pay invoices online through a secure, branded interface.
+Het klantportaal stelt je klanten in staat om facturen te bekijken en online te betalen via een beveiligde, huisstijl-conforme interface.
 
-## How it works
+## Hoe het werkt
 
-When you send an invoice, a unique **payment link** is generated. When your customer clicks this link, they're taken to the customer portal where they can:
+Wanneer je een factuur verstuurt, wordt een unieke **betaallink** gegenereerd. Wanneer je klant op deze link klikt, wordt deze naar het klantportaal gebracht waar ze kunnen:
 
-1. **View the invoice** - See all details, line items, and totals
-2. **Download the PDF** - Get a copy of the invoice
-3. **Pay online** - Complete payment through the portal
-4. **Confirm payment**: Acknowledge a bank transfer (not shown for credit notes, canceled invoices, or original invoices that have been fully credited, because none of these asks the customer for payment)
+1. **De factuur bekijken** - Alle details, regelitems en totalen zien
+2. **De PDF downloaden** - Een kopie van de factuur krijgen
+3. **Online betalen** - De betaling voltooien via het portaal
+4. **Betaling bevestigen**: Een bankoverschrijving bevestigen (niet zichtbaar voor creditnota's, ingetrokken facturen of originele facturen die volledig zijn gecrediteerd, omdat de klant in geen van deze gevallen nog iets hoeft te betalen)
 
-## Portal features
+## Portaalfuncties
 
-### Invoice list
+### Facturenlijst
 
-When a customer has several invoices, the portal also shows a list with every invoice, credit note, and their current status. The "Open" and "Overdue" summary cards above the table add up the **remaining balance** per document, not the gross total. So a €1,000 invoice with a €400 partial payment contributes €600 to the open amount, and a credit note that has already been applied to its parent invoice contributes €0 so it is not subtracted twice. "Overdue" is derived from the due date: any sent or open invoice with a due date before today is counted there, so the card stays current even when invoices rarely carry the legacy `overdue` status.
+Als een klant meerdere facturen heeft, toont het portaal ook een lijst met elke factuur, creditnota en de huidige status. De kaartjes "Openstaand" en "Achterstallig" boven de tabel tellen het **restant per document** op, niet het bruto totaal. Een factuur van € 1.000 met een deelbetaling van € 400 telt dus € 600 mee in het openstaande bedrag, en een creditnota die al is verrekend met zijn bronfactuur telt € 0 mee zodat hij niet twee keer wordt afgetrokken. "Achterstallig" wordt afgeleid uit de vervaldatum: elke verzonden of openstaande factuur met een vervaldatum vóór vandaag telt daarin mee, zodat het kaartje altijd actueel blijft, ook al hebben facturen zelden nog de legacy-status `overdue`.
 
-Draft invoices never appear in the portal list. A portal link is only generated when an invoice is sent, so unsent drafts have no customer-facing link and cannot be viewed in the portal.
+Conceptfacturen verschijnen nooit in de portaallijst. Een portaal-link wordt alleen aangemaakt wanneer een factuur wordt verstuurd, dus onverstuurde concepten hebben geen klantzijde link en zijn niet via het portaal te bekijken.
 
-### Invoice view
+### Factuurweergave
 
-The portal shows a clean, branded view of the invoice including:
+Het portaal toont een overzichtelijke, huisstijl-conforme weergave van de factuur inclusief:
 
-- Your company logo and branding
-- Invoice number and date
-- Line items with descriptions and amounts
-- VAT breakdown
-- Total amount due
-- Any amount already paid, any credit note applied, and the remaining balance (for partially paid or partially credited invoices)
-- Due date
+- Je bedrijfslogo en huisstijl
+- Factuurnummer en datum
+- Regelitems met omschrijvingen en bedragen
+- BTW-specificatie
+- Totaal verschuldigd bedrag
+- Al ontvangen bedrag, toegepaste creditnota en het restant (voor gedeeltelijk betaalde of gecrediteerde facturen)
+- Vervaldatum
 
-### Payment
+### Betaling
 
-Customers can pay directly through the portal. If you have connected Mollie or Stripe, pay buttons appear on the invoice view so customers can complete payment in one click. Pay buttons and the total amount due are hidden for credit notes, canceled invoices, and original invoices that have been fully credited, because none of these asks the customer for money. For invoices with partial payments or credit notes, the portal shows the amount already received, any credit applied, and the balance still due before the customer pays, so the pay button amount matches the remaining outstanding amount. When a customer follows an autopay link (for example from a payment reminder email), the portal scrolls to the correct pay button and highlights it with a pulsing animation instead of automatically redirecting to the payment flow. This gives the customer a chance to review the invoice before paying. When payment is confirmed, the invoice status in your dashboard automatically updates to **Paid**. The portal also tells the customer the truth after a Mollie or iDEAL return: if the payment provider has not yet confirmed the payment, the page says so instead of pretending the payment is being processed, and the customer can try again.
+Klanten kunnen direct via het portaal betalen. Als je Mollie of Stripe hebt gekoppeld, verschijnen er betaalknoppen op de factuurweergave zodat je klant met één klik kan betalen. Betaalknoppen en het totaal verschuldigde bedrag worden verborgen voor creditnota's, ingetrokken facturen en originele facturen die volledig zijn gecrediteerd, omdat de klant in geen van deze gevallen nog geld hoeft over te maken. Voor facturen met deelsbetalingen of creditnota's toont het portaal het al ontvangen bedrag, de toegepaste credit en het openstaande restant voordat de klant betaalt, zodat het bedrag op de betaalknop overeenkomt met het resterende openstaande bedrag. Als een klant een autopay-link volgt (bijvoorbeeld vanuit een betaalherinnering), scrolt het portaal naar de juiste betaalknop en markeert deze met een pulserende animatie in plaats van automatisch door te verwijzen naar het betaalproces. Zo kan de klant de factuur eerst bekijken voordat deze betaalt. Wanneer de betaling is bevestigd, wordt de factuurstatus in je dashboard automatisch bijgewerkt naar **Betaald**. Het portaal vertelt de klant ook na een Mollie- of iDEAL-retour eerlijk wat er aan de hand is: als de betaalprovider de betaling nog niet heeft bevestigd, zegt de pagina dat in plaats van voor te wijzen dat de betaling in behandeling is, en de klant kan het hieronder opnieuw proberen.
 
-#### Mollie payment controls
+#### Mollie-betalingsinstellingen
 
-Once Mollie is connected, you get a **Betaalknop op facturen** toggle in your workspace under **Money → Payments → Online betalingen**. Turn it on to add a Mollie pay button to every outgoing invoice. Turn it off and the button disappears without disconnecting Mollie.
+Zodra Mollie is gekoppeld, krijg je een **Betaalknop op facturen**-schakelaar in je werkruimte onder **Geld → Betalingen → Online betalingen**. Zet hem aan om een Mollie-betaalknop op elke uitgaande factuur te tonen. Zet hem uit en de knop verdwijnt zonder Mollie te ontkoppelen.
 
-Below the toggle is a **Betaalmethoden** section listing every payment method enabled in your Mollie dashboard (iDEAL, Bancontact, credit card, and more). By default all methods are shown to customers. Tick specific methods to narrow the set, only those appear on your invoices. Clear all ticks to go back to "show everything."
+Onder de schakelaar staat een **Betaalmethoden**-sectie die elke betaalmethode toont die in je Mollie-dashboard actief is (iDEAL, Bancontact, creditcard, en meer). Standaard zien klanten alle methoden. Vink specifieke methoden aan om de selectie te beperken, alleen die verschijnen op je facturen. Haal alle vinkjes weg om terug te gaan naar "alles tonen."
 
-A **Stuur testbetaling** button lets you walk a free €1 test checkout through Mollie, so you can confirm everything works before your customers see it. No real money moves.
+Met de **Stuur testbetaling**-knop loop je een gratis €1-testcheckout door Mollie, zodat je zeker weet dat alles werkt voordat je klanten het zien. Er gaat geen echt geld over de toonbank.
 
-#### Stripe payment controls
+#### Stripe-betalingsinstellingen
 
-Once Stripe is connected, you get a **Betaalknop op facturen** toggle in your workspace under **Money → Payments → Online betalingen**. Turn it on to add a Stripe pay button to every outgoing invoice. Turn it off and the button disappears without disconnecting Stripe. The toggle is only available once Stripe onboarding (KYC) is complete.
+Zodra Stripe is gekoppeld, krijg je een **Betaalknop op facturen**-schakelaar in je werkruimte onder **Geld → Betalingen → Online betalingen**. Zet hem aan om een Stripe-betaalknop op elke uitgaande factuur te tonen. Zet hem uit en de knop verdwijnt zonder Stripe te ontkoppelen. De schakelaar is pas beschikbaar nadat de Stripe-onboarding (KYC) is afgerond.
 
-Below the toggle is a **Betaalmethoden** section listing every supported payment method cross-referenced with your Stripe account capabilities (card, iDEAL, Bancontact, SEPA Direct Debit, PayPal, Klarna, and Link by Stripe). By default Stripe Checkout automatically picks the right method per customer. Tick specific methods to limit what customers see, only those appear at checkout. Clear all ticks to return to automatic selection.
+Onder de schakelaar staat een **Betaalmethoden**-sectie die elke ondersteunde betaalmethode toont, afgestemd op de capabilities van je Stripe-account (card, iDEAL, Bancontact, SEPA Direct Debit, PayPal, Klarna en Link by Stripe). Standaard kiest Stripe Checkout automatisch de juiste methode per klant. Vink specifieke methoden aan om te beperken wat klanten zien, alleen die verschijnen bij het afrekenen. Haal alle vinkjes weg om terug te gaan naar automatische selectie.
 
-An **Open Stripe Dashboard** button deep-links you to your Stripe payment-method settings so you can verify your integration and test payments directly in Stripe.
+Met de **Open Stripe Dashboard**-knop word je doorgelinkt naar je Stripe-betaalmethode-instellingen, zodat je je integratie kunt verifieren en betalingen rechtstreeks in Stripe kunt testen.
 
-### Branding
+### Huisstijl
 
-The customer portal uses your company branding:
+Het klantportaal gebruikt je bedrijfshuisstijl:
 
-- Company logo
-- Accent color
-- Company information
+- Bedrijfslogo
+- Accentkleur
+- Bedrijfsinformatie
 
-This creates a professional, consistent experience for your customers.
+Dit creëert een professionele, consistente ervaring voor je klanten.
 
-## Frozen invoice copy
+## Bevroren factuurkopie
 
-The invoice view and PDF download are rendered from a snapshot taken when the invoice is sent. That snapshot freezes your company details, customer details, document language, and branding as they were at send time. Customers therefore see the invoice exactly as it was sent, even if you later update your workspace settings or the customer record. Drafts do not have a snapshot yet and cannot be viewed in the portal, because a portal link is only generated when the invoice is sent.
+De factuurweergave en PDF-download worden weergegeven op basis van een momentopname die bij het versturen wordt gemaakt. Die momentopname bevriest je bedrijfsgegevens, klantgegevens, documenttaal en huisstijl zoals die op dat moment waren. Klanten zien de factuur daarom precies zoals hij verstuurd is, ook als je later instellingen of het klantrecord wijzigt. Conceptfacturen hebben nog geen momentopname en zijn niet via het portaal te bekijken, omdat een portaal-link pas wordt aangemaakt bij het versturen.
 
-## Access security
+## Toegangsbeveiliging
 
-Each portal link is:
+Elke portaallink is:
 
-- **Unique** - Generated per invoice
-- **Token-based** - Secured with a unique access token
-- **Invoice-specific** - Only shows the specific invoice
+- **Uniek** - Gegenereerd per factuur
+- **Tokengebaseerd** - Beveiligd met een uniek toegangstoken
+- **Factuurspecifiek** - Toont alleen de specifieke factuur
 
-Customers don't need a MyCompanyDesk account to view and pay invoices.
+Klanten hebben geen MyCompanyDesk-account nodig om facturen te bekijken en te betalen.
 
-## Customer event tracking
+## Klantgebeurtenissen bijhouden
 
-MyCompanyDesk tracks customer interactions with the portal:
+MyCompanyDesk houdt klantinteracties met het portaal bij:
 
-- When the customer opens the invoice
-- When they download the PDF
-- When they initiate payment
-- When payment is confirmed
+- Wanneer de klant de factuur opent
+- Wanneer ze de PDF downloaden
+- Wanneer ze een betaling initieren
+- Wanneer de betaling is bevestigd
 
-This helps you understand customer engagement and follow up effectively.
+Dit helpt je om klantbetrokkenheid te begrijpen en effectief op te volgen.
 
 ## Tips
 
-- Include a personal note in your invoice email to encourage portal use
-- The portal works on all devices - mobile, tablet, and desktop
-- Payment confirmations are sent to both you and the customer
-- Check the customer event history on the invoice detail page to see portal interactions
+- Voeg een persoonlijke notitie toe aan je factuur-e-mail om portaalgebruik aan te moedigen
+- Het portaal werkt op alle apparaten - mobiel, tablet en desktop
+- Betalingsbevestigingen worden naar zowel jou als de klant gestuurd
+- Bekijk de klantgebeurtenisgeschiedenis op de factuurdetailpagina om portaalinteracties te zien

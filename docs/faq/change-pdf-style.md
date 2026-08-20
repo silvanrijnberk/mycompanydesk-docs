@@ -1,5 +1,5 @@
 ---
-title: Change PDF style
+title: PDF-stijl wijzigen
 last_verified: 2026-08-18
 chatbot:
   triggers: ["change pdf style", "customize pdf", "pdf template", "invoice design", "invoice layout", "change invoice look", "pdf editor", "edit pdf template", "pdf stijl wijzigen", "factuur uiterlijk", "pdf sjabloon", "pdf-vorlage andern", "style pdf"]
@@ -8,12 +8,12 @@ chatbot:
   follow_up: ["How do I add my logo?", "How do I preview an invoice?", "How do I export a PDF?"]
 ---
 
-To change the style of your PDF invoices:
-1. Go to Settings → "Factuurontwerp" (invoice design)
-2. Click "Genereer uit huisstijl" for a design in your own brand colour, or pick one of the style presets
-3. Fine-tune the accent colour, paper tint, fonts, layout and footer text; the A4 preview updates live
-4. Changes save automatically and apply to all new invoices, quotes and reminders
+Zo wijzig je de stijl van je PDF-facturen:
+1. Ga naar Instellingen → "Factuurontwerp"
+2. Klik op "Genereer uit huisstijl" voor een ontwerp in je eigen merkkleur, of kies een van de stijlvoorinstellingen
+3. Stel accentkleur, papiertint, lettertypen, indeling en voettekst bij; het A4-voorbeeld beweegt live mee
+4. Wijzigingen worden automatisch opgeslagen en gelden voor alle nieuwe facturen, offertes en herinneringen
 
-Tip: your logo and brand colour live under Settings → "Logo en kleur"; the design studio builds on them.
+Tip: je logo en merkkleur staan onder Instellingen → "Logo en kleur"; de ontwerpstudio bouwt daarop voort.
 
-Tip: when you are viewing an invoice or quote, click **Change design** in the document preview header (or in the overflow menu on mobile) to jump straight to Factuurontwerp. After you finish editing, you return to the document you came from.
+Tip: als je een factuur of offerte bekijkt, klik dan op **Ontwerp aanpassen** in de kop van het documentvoorbeeld (of in het overflow-menu op mobiel) om direct naar Factuurontwerp te gaan. Wanneer je klaar bent met bewerken, kom je terug bij het document waar je vandaan kwam.

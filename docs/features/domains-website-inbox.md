@@ -1,322 +1,322 @@
 ---
-title: Domains, Website, and Inbox
+title: Domeinen, website en inbox
 last_verified: 2026-08-15
 ---
 
-# Domains, Website, and Inbox
+# Domeinen, website en inbox
 
-> **Status: pre-launch.** All three features in this page roll out together as a single bundle. They are gated by the `custom_domains` and `public_business_page` feature flags and are still being onboarded onto the public plans. Behaviour described here matches the codebase as of 2026-05-09; if a screen looks different in your workspace, the bundle has not been enabled there yet.
+> **Status: pre-launch.** Alle drie de features op deze pagina rollen samen uit als een bundel. Ze worden beheerd door de `custom_domains` en `public_business_page` feature flags en worden nog uitgerold naar de openbare abonnementen. Het gedrag dat hier beschreven staat komt overeen met de codebase per 2026-05-09; als een scherm er in jouw werkruimte anders uitziet, is de bundel daar nog niet ingeschakeld.
 
-Custom domains, the hosted business website, and the shared email inbox ship as one product. The reason: they share state. The same `domains` row that proves you control `acme.nl` also makes `acme.nl` your website's URL and lets `info@acme.nl` start receiving mail. There is one onboarding flow, one settings tree, and one place in the app to manage all of it.
+Eigen domeinen, de gehoste bedrijfswebsite en de gedeelde e-mailinbox vormen samen een product. De reden: ze delen status. Dezelfde `domains`-rij die bewijst dat jij `acme.nl` beheert, maakt `acme.nl` ook de URL van je website en zorgt dat `info@acme.nl` mail kan ontvangen. Er is een onboarding-flow, een instellingenstructuur en een plek in de app om het allemaal te beheren.
 
-## The bundled value
+## De gebundelde waarde
 
-Add a domain once and you get three things:
+Voeg een domein toe en je krijgt drie dingen:
 
-- **A custom address.** Your business lives at `acme.nl` instead of `acme.mycompanydesk.com`.
-- **A live website.** The hosted business page is automatically published on the verified domain.
-- **A working inbox.** `info@acme.nl`, plus `support@`, `sales@` and a send-only `noreply@` alias, start catching mail and sending replies.
+- **Een eigen adres.** Je bedrijf draait op `acme.nl` in plaats van `acme.mycompanydesk.com`.
+- **Een live website.** De gehoste bedrijfspagina wordt automatisch gepubliceerd op het geverifieerde domein.
+- **Een werkende inbox.** `info@acme.nl`, plus `support@`, `sales@` en een alleen-verzend `noreply@`-alias, vangen mail op en versturen antwoorden.
 
-You can run the bundled flow from the [Setup wizard](/getting-started/company-setup) (`/setup`, the "Your web address" step), or piece-by-piece from `Company › Your own .com address` and the Inbox.
+Je kunt de gebundelde flow starten vanuit de [Setup-wizard](/getting-started/company-setup) (`/setup`, de stap "Jouw webadres"), of stap voor stap vanuit `Bedrijf › Je eigen .com-adres` en de Inbox.
 
-## One onboarding flow
+## Een onboarding-flow
 
-The wizard step at `/setup` is the recommended entry point. It applies through `apply.service.js → activateSubdomain | addDomain → quickEnableInbox` in a single submit, so the user answers a few questions and the platform wires everything underneath.
+De wizardstap op `/setup` is de aanbevolen start. Het voert via `apply.service.js → activateSubdomain | addDomain → quickEnableInbox` alle stappen in een keer uit, dus de gebruiker beantwoordt een paar vragen en het platform regelt alles eronder.
 
-### Step 1 — Add a domain
+### Stap 1 -- Domein toevoegen
 
-Two paths in the wizard, both stored on the `domains` table:
+Twee routes in de wizard, beide opgeslagen in de `domains`-tabel:
 
-- **Free workspace subdomain** — `your-slug.mycompanydesk.com` (or `.nl` for NL workspaces). No DNS work; the slug is registered as a Cloudflare Pages custom domain and the website is live within seconds. This is the default for new workspaces.
-- **Your own domain** — paste `acme.nl`. Two setup modes are supported:
-  - **Nameserver mode** (recommended) — a Cloudflare zone is created for the domain. You change your registrar's nameservers to the two `*.ns.cloudflare.com` hostnames the wizard shows. Cloudflare becomes authoritative DNS for the domain, which is what unlocks email, SSL and DNS-record management inside MyCompanyDesk.
-  - **CNAME mode** — for subdomains only (e.g. `portal.acme.nl`). You add a single CNAME record pointing at `mycompanydesk-app.pages.dev`. No nameserver change. Email routing is not available in this mode.
+- **Gratis werkruimte-subdomein** -- `jouw-slug.mycompanydesk.com` (of `.nl` voor NL-werkruimtes). Geen DNS-werk; de slug wordt geregistreerd als Cloudflare Pages custom domain en de website is binnen enkele seconden live. Dit is de standaard voor nieuwe werkruimtes.
+- **Je eigen domein** -- voer `acme.nl` in. Twee setup-modi worden ondersteund:
+  - **Nameserver-modus** (aanbevolen) -- er wordt een Cloudflare-zone aangemaakt voor het domein. Je wijzigt de nameservers van je registrar naar de twee `*.ns.cloudflare.com`-hostnamen die de wizard toont. Cloudflare wordt de gezaghebbende DNS voor het domein, wat e-mail, SSL en DNS-beheer binnen MyCompanyDesk mogelijk maakt.
+  - **CNAME-modus** -- alleen voor subdomeinen (bijv. `portal.acme.nl`). Je voegt een CNAME-record toe die naar `mycompanydesk-app.pages.dev` wijst. Geen nameserverwijziging. E-mailroutering is niet beschikbaar in deze modus.
 
-Adding a custom domain automatically deactivates the workspace subdomain — there is one canonical website per company, never two.
+Het toevoegen van een eigen domein deactiveert automatisch het werkruimte-subdomein -- er is een canonieke website per bedrijf, nooit twee.
 
-### Step 2 — Verify
+### Stap 2 -- Verificatie
 
-Verification runs both on demand and on a poll. The detail page exposes a **Verify** button (`POST /api/domains/:id/verify`), and a background job re-checks every pending domain at intervals.
+Verificatie vindt zowel op aanvraag als via een poll plaats. De detailpagina heeft een **Verifiëren**-knop (`POST /api/domains/:id/verify`), en een achtergrondjob controleert elk pending domein met tussenpozen opnieuw.
 
-- **Nameserver mode** is verified once Cloudflare reports the zone as `active`. The status moves `pending_nameservers → pending_verification → active`. The user is notified via the in-app notification bell when the flip happens.
-- **CNAME mode** is verified by resolving the CNAME and confirming it points at the Pages target. Status moves `pending_cname → active`.
+- **Nameserver-modus** wordt geverifieerd zodra Cloudflare de zone als `active` meldt. De status gaat `pending_nameservers → pending_verification → active`. De gebruiker krijgt een melding via de in-app notificatiebel zodra de overgang plaatsvindt.
+- **CNAME-modus** wordt geverifieerd door de CNAME op te lossen en te controleren of die naar het Pages-doel wijst. Status gaat `pending_cname → active`.
 
-### Step 3 — SSL
+### Stap 3 -- SSL
 
-SSL is provisioned by Cloudflare automatically once the zone is active. The default mode is **Full (strict)**; you can change it from `Domain detail › SSL` (`off / flexible / full / strict`). The certificate-status field on the SSL panel mirrors Cloudflare's verification result.
+SSL wordt automatisch door Cloudflare geregeld zodra de zone actief is. De standaardmodus is **Full (strict)**; je kunt dit wijzigen via `Domeindetail › SSL` (`off / flexible / full / strict`). Het certificaatstatusveld op het SSL-paneel weerspiegelt Cloudflare's verificatieresultaat.
 
-### Step 4 — Website goes live
+### Stap 4 -- Website gaat live
 
-The hosted business page (see [Site Builder](/advanced/business-page)) is automatically published at the domain root once the zone is active. The wizard's `getBusinessPageUrl` resolver returns, in priority:
+De gehoste bedrijfspagina (zie [Sitebouwer](/advanced/business-page)) wordt automatisch gepubliceerd op de domein-root zodra de zone actief is. De `getBusinessPageUrl`-resolver van de wizard retourneert, in volgorde van prioriteit:
 
-1. A custom domain with `business_page_enabled = true` → `https://acme.nl`
-2. A custom domain with `portal_subdomain_enabled = true` → `https://portal.acme.nl`
-3. The workspace subdomain → `https://acme.mycompanydesk.com`
-4. The fallback portal route (`/portal/<slug>`) when nothing else is configured.
+1. Een eigen domein met `business_page_enabled = true` → `https://acme.nl`
+2. Een eigen domein met `portal_subdomain_enabled = true` → `https://portal.acme.nl`
+3. Het werkruimte-subdomein → `https://acme.mycompanydesk.com`
+4. De terugvalportalroute (`/portal/<slug>`) wanneer er niets anders is geconfigureerd.
 
-### Step 5 — Inbox catches mail
+### Stap 5 -- Inbox ontvangt mail
 
-For nameserver-mode custom domains, the wizard runs `quickEnableInbox` after verification. That call is idempotent and does the following:
+Voor nameserver-modus eigen domeinen voert de wizard `quickEnableInbox` uit na verificatie. Die aanroep is idempotent en doet het volgende:
 
-- Provisions the CF Email Sending identity on the bare apex domain (`acme.nl` by default) and writes the DKIM and SPF DNS records. Passing an explicit subdomain label provisions `<label>.<domain>` instead (e.g. `mail.acme.nl`).
-- Sets a Cloudflare Email Routing catch-all rule on the zone, pointed at the `inbox-inbound` Worker.
-- Inspects the apex MX records. If they are empty or already point at Cloudflare, the wizard installs the Cloudflare MX. If a third-party provider (Google Workspace, Microsoft 365) is already there, the wizard refuses to overwrite and surfaces a `conflict` warning so you can decide.
-- Creates `info@acme.nl` as the default shared mailbox.
-- Provisions `support@` and `sales@` as bidirectional aliases of `info@`, and `noreply@` as a send-only alias (allowed in From, dropped on inbound).
-- Optionally creates a personal mailbox (`silvan@acme.nl`) when you ticked the box in the wizard.
+- Richt de CF Email Sending-identiteit in op het kale apex-domein (`acme.nl` standaard) en schrijft de DKIM- en SPF DNS-records. Een expliciet subdomeinlabel provisioneert `<label>.<domein>` in plaats daarvan (bijv. `mail.acme.nl`).
+- Stelt een Cloudflare Email Routing catch-all-regel in op de zone, gericht naar de `inbox-inbound` Worker.
+- Inspecteert de apex MX-records. Als deze leeg zijn of al naar Cloudflare wijzen, installeert de wizard de Cloudflare MX. Als er al een externe provider (Google Workspace, Microsoft 365) staat, weigert de wizard te overschrijven en meldt een `conflict`-waarschuwing zodat je kunt beslissen.
+- Maakt `info@acme.nl` aan als de standaard gedeelde mailbox.
+- Richt `support@` en `sales@` in als bidirectionele aliassen van `info@`, en `noreply@` als alleen-verzend-alias (toegestaan in From, weggegooid bij inkomend).
+- Maakt optioneel een persoonlijke mailbox (`silvan@acme.nl`) aan als je het vakje in de wizard hebt aangevinkt.
 
-## Per-feature reference
+## Per-feature referentie
 
-### Custom domains
+### Eigen domeinen
 
-UI lives at `Website › Domein & SEO` -- the page is `/website?tab=domein`, rendering the `SettingsDomains` component. The older paths `/workspace/organization/company/address`, `/workspace/organization/domains`, and `/workspace/communication/domains` all redirect here.
+UI staat op `Bedrijf › Je eigen .com-adres` -- de leaf-pagina is `/workspace/organization/company/address`, gemount vanuit `apps/web/pages/workspace/organization/company/address.vue` en toont de `SettingsDomains`-component. De twee oudere paden `/workspace/organization/domains` en `/workspace/communication/domains` verwijzen hierheen.
 
-The page splits into two sections:
+De pagina bestaat uit twee delen:
 
-- **Pending domains**: Domains still being verified always appear at the top, regardless of the topbar domain switcher state. This lets you reach verification instructions for newly added domains before they become active.
-- **Active domain panel**: DNS, SSL, redirects, analytics, security, and SEO tabs are scoped to the domain selected in the topbar domain switcher (accessible from the site builder at `/website`). Selecting the default site (shown as your workspace name in the switcher) hides the per-domain panel entirely. Switching domains resets the active tab to Routing.
+- **Domeinen in afwachting**: Domeinen die nog geverifieerd moeten worden staan altijd bovenaan, los van de domeinwisselaar in de bovenbalk. Zo kun je de verificatie-instructies bereiken van nieuw toegevoegde domeinen voordat ze actief worden.
+- **Actief domeinpaneel**: DNS, SSL, doorverwijzingen, analytics, beveiliging en SEO-tabs zijn gekoppeld aan het domein dat in de domeinwisselaar in de bovenbalk is geselecteerd (bereikbaar vanuit de sitebouwer op `/website`). Wanneer de hoofdsite (weergegeven als je werkruimtenaam) is geselecteerd, wordt het domeinpaneel volledig verborgen. Wisselen van domein zet de actieve tab terug op Routering.
 
-The page defaults to a clean view with the most commonly needed tabs. Six power-user tabs are hidden unless you turn on **Advanced Mode**. Those tabs are: DNS, SSL, Redirects, Analytics, Quick Settings, and Security. Advanced mode is a per-device switch on the **Weergave** (display) page in settings; see the [Settings overview](/settings/).
+De pagina toont standaard een opgeschoonde weergave met de meest gebruikte tabbladen. Zes power-user tabbladen zijn verborgen totdat je **Geavanceerde modus** inschakelt. Die tabbladen zijn: DNS, SSL, Doorverwijzingen, Analytics, Snelle instellingen en Beveiliging. Geavanceerde modus is een schakelaar per apparaat op de pagina **Weergave** in de instellingen; zie het [overzicht van de instellingen](/settings/).
 
-What the page lets you do:
+Wat je op de pagina kunt doen:
 
-- **Buy or claim a domain** via the domain purchase card. Enter a domain name, check availability against OpenProvider, and either buy it or claim it free if your workspace qualifies for the free `.nl` claim.
-- **Add a domain** (nameserver or CNAME mode) via a dedicated card that is always visible.
-- **Verify** a pending domain.
-- **Manage DNS records** for the selected active domain -- A, AAAA, CNAME, MX, TXT, SRV, CAA, NS. CRUD goes through Cloudflare via the API.
-- **SSL** for the selected domain -- view certificate status, change SSL mode.
-- **URL redirects** for the selected domain -- three free Cloudflare Page Rules per zone. Source pattern + destination + 301/302.
-- **Email security** for the selected domain -- SPF/DMARC/DKIM check with a one-click "fix" that writes safe defaults (`v=spf1 ~all`, `v=DMARC1; p=quarantine; …`).
-- **Quick settings** for the selected domain -- toggle Cloudflare Development Mode, toggle "Under attack" security level, purge cache.
-- **Analytics** for the selected domain -- last 30 days of requests, bandwidth, threats, visitors, pageviews. The current Cloudflare Analytics endpoint is sunset; the page renders an empty `unavailable` state until the GraphQL migration lands.
-- **Remove** the selected domain -- soft-deletes the row (`status = 'removed'`) and tears down the Cloudflare zone (or the Pages domain in CNAME mode).
+- **Domein kopen of claimen** via de domein-aanschafkaart. Voer een domeinnaam in, controleer de beschikbaarheid via OpenProvider, en koop het domein of claim het gratis als je werkruimte in aanmerking komt voor de gratis `.nl`-claim.
+- **Domein toevoegen** (nameserver- of CNAME-modus) via een eigen kaart die altijd zichtbaar is.
+- **Verifiëren** van een pending domein.
+- **DNS-records beheren** voor het geselecteerde domein -- A, AAAA, CNAME, MX, TXT, SRV, CAA, NS. CRUD gaat via Cloudflare via de API.
+- **SSL** voor het geselecteerde domein -- certificaatstatus bekijken, SSL-modus wijzigen.
+- **URL-doorverwijzingen** voor het geselecteerde domein -- drie gratis Cloudflare Page Rules per zone. Bronpatroon + bestemming + 301/302.
+- **E-mailbeveiliging** voor het geselecteerde domein -- SPF/DMARC/DKIM-controle met een een-klik "fix" die veilige standaardwaarden schrijft (`v=spf1 ~all`, `v=DMARC1; p=quarantine; …`).
+- **Snelle instellingen** voor het geselecteerde domein -- Cloudflare Development Mode aan/uit, "Under attack"-beveiligingsniveau aan/uit, cache legen.
+- **Analytics** voor het geselecteerde domein -- laatste 30 dagen van verzoeken, bandbreedte, dreigingen, bezoekers, paginaweergaven. Het huidige Cloudflare Analytics-eindpunt is uitgefaseerd; de pagina toont een lege `unavailable`-status tot de GraphQL-migratie landt.
+- **Verwijderen** van het geselecteerde domein -- soft-delete van de rij (`status = 'removed'`) en afbreken van de Cloudflare-zone (of het Pages-domein in CNAME-modus).
 
-#### `domains` table — the shared state
+#### `domains`-tabel -- de gedeelde status
 
-Notable columns the app reads from:
+Belangrijke kolommen die de app leest:
 
-| Column | Purpose |
+| Kolom | Doel |
 |---|---|
-| `domain_name` | The hostname, e.g. `acme.nl`. |
-| `setup_mode` | `nameserver` (full delegation) or `cname` (single subdomain). |
+| `domain_name` | De hostnaam, bijv. `acme.nl`. |
+| `setup_mode` | `nameserver` (volledige delegatie) of `cname` (enkel subdomein). |
 | `status` | `pending_nameservers`, `pending_verification`, `pending_cname`, `active`, `failed`, `removed`. |
-| `cloudflare_zone_id` | Set in nameserver mode. Drives DNS, SSL, redirects, analytics, email-routing. |
-| `nameserver_1`, `nameserver_2` | Shown to the user during nameserver setup. |
-| `cname_hostname`, `cname_target` | Set in CNAME mode. |
-| `email_routing_enabled` | `true` once the Cloudflare Email Routing zone is enabled. |
-| `inbox_enabled`, `inbox_subdomain_tag`, `inbox_dkim_ready` | Flipped by `quickEnableInbox`. The CF Email Sending identity (apex domain by default; `mail.acme.nl` when a subdomain label is given) and DKIM provisioning state. |
-| `business_page_enabled`, `portal_subdomain_enabled` | Determine which hostname serves the public website. |
-| `verified_at` | Set when verification succeeds. |
-| `registrar` | The registrar service, currently `openprovider` for domains purchased through the buy-a-domain flow. |
-| `registrar_domain_id` | The registrar-side identifier for purchased domains. |
-| `purchase_price_period` | Billing period for purchased domains (`yearly`). |
-| `purchase_intent_id` | Links to the `domain_purchase_intents` row for paid purchases. |
-| `founder_claim_id` | Links to the `founder_domain_claims` row for free-domain claims. |
-| `transferred_out_at` | Set when a domain is detected as transferred away from the MCD registrar account during the weekly sync. |
+| `cloudflare_zone_id` | Gezet in nameserver-modus. Stuurt DNS, SSL, redirects, analytics, e-mailrouting. |
+| `nameserver_1`, `nameserver_2` | Getoond aan de gebruiker tijdens nameserver-setup. |
+| `cname_hostname`, `cname_target` | Gezet in CNAME-modus. |
+| `email_routing_enabled` | `true` zodra de Cloudflare Email Routing-zone is ingeschakeld. |
+| `inbox_enabled`, `inbox_subdomain_tag`, `inbox_dkim_ready` | Gezet door `quickEnableInbox`. De CF Email Sending-identiteit (apex-domein standaard; `mail.acme.nl` wanneer een subdomeinlabel is opgegeven) en DKIM-voorzieningsstatus. |
+| `business_page_enabled`, `portal_subdomain_enabled` | Bepalen welke hostnaam de openbare website bedient. |
+| `verified_at` | Gezet wanneer verificatie slaagt.
+| `registrar` | De registrar-dienst, momenteel `openprovider` voor domeinen gekocht via de domein-aanschafflow.
+| `registrar_domain_id` | De registrar-interne identifier voor gekochte domeinen.
+| `purchase_price_period` | Facturatieperiode voor gekochte domeinen (`yearly`).
+| `purchase_intent_id` | Verwijst naar de `domain_purchase_intents`-rij voor betaalde aankopen.
+| `founder_claim_id` | Verwijst naar de `founder_domain_claims`-rij voor gratis domeinclaims.
+| `transferred_out_at` | Gezet wanneer tijdens de wekelijkse sync wordt gedetecteerd dat een domein is overgedragen uit het MCD-registraraccount.
 
-#### Renewal lifecycle
+#### Verlengingscyclus
 
-Domain renewal follows three paths depending on how the domain was acquired:
+Domeinverlenging volgt drie routes, afhankelijk van hoe het domein is verkregen:
 
-1. **Free bundled renewal** (Pro-converted trial-tier, or a legacy free-for-life arrangement): MCD absorbs the wholesale renewal cost. The domain auto-renews as long as the workspace stays on Pro. No payment method needed.
-2. **Paid auto-renewal** (paid purchase, or trial-tier without Pro): Charged annually via the saved card. Works like any subscription renewal.
-3. **Manual renewal**: If a trial-tier workspace falls off Pro AND has no saved card, the auto-renewal path skips it. The user sees a notification and can trigger a one-off payment via `POST /api/domains/renew/:domainId`, which creates a Stripe Embedded Checkout session for the renewal. This is the only way to keep a domain alive without an active subscription or saved card.
+1. **Gratis gebundelde verlenging** (naar Pro geconverteerde trial-tier, of een bestaande gratis-voor-het-leven-afspraak): MCD neemt de wholesale-verlengkosten voor zijn rekening. Het domein verloopt automatisch zolang de werkruimte op Pro blijft. Geen betaalmiddel nodig.
+2. **Betaalde automatische verlenging** (betaalde aankoop, of trial-tier zonder Pro): Jaarlijks in rekening gebracht via de opgeslagen kaart. Werkt als elke andere abonnementsverlenging.
+3. **Handmatige verlenging**: Als een trial-tier werkruimte van Pro af valt EN geen opgeslagen kaart heeft, slaat het automatische verlengingspad deze over. De gebruiker ziet een melding en kan een eenmalige betaling starten via `POST /api/domains/renew/:domainId`, wat een Stripe Embedded Checkout-sessie aanmaakt voor de verlenging. Dit is de enige manier om een domein actief te houden zonder actief abonnement of opgeslagen kaart.
 
-#### Trial-exit domain buy-out
+#### Overname bij vertrek tijdens de proef
 
-When a customer on a Pro trial decides to leave before converting to paid Pro, they have a third option for their free `.nl` domain: buy it out for a flat €15,00 incl. VAT (one-time). The buy-out flow (`DomainBuyoutModal.vue`) lets the customer pay via Stripe Embedded Checkout and receive full ownership. Once paid, the domain holder is transferred from MCD to the customer and the EPP (transfer) code is shown so the domain can be moved to any registrar.
+Wanneer een klant tijdens de Pro-proefperiode vertrekt zonder Pro-klant te worden, is er een derde optie voor het gratis `.nl`-domein: overnemen voor eenmalig €15,00 incl. btw (éénmalig). De overname-flow (`DomainBuyoutModal.vue`) laat de klant betalen via Stripe Embedded Checkout en krijgt daarmee volledig eigendom. Na betaling wordt de houder overgezet van MCD naar de klant en wordt de verhuiscode (EPP) getoond, waarmee het domein naar elke registrar verhuisd kan worden.
 
-The €15,00 price is deliberately quoted inclusive of Dutch VAT because the charge is triggered at the moment the customer leaves. The net amount handed to Stripe is €12,40; 21% NL VAT is added on top, rounded to the nearest cent, to land exactly on €15,00. See `apps/api/src/modules/domains/domain-pricing.config.js` in the RichardTool repo and `sources/vat-rates.yaml#countries.NL.standard`.
+De prijs van €15,00 is bewust incl. btw vermeld, omdat de betaling plaatsvindt op het moment dat de klant vertrekt. Het nettobedrag dat naar Stripe gaat is €12,40; daar wordt 21% Nederlandse btw bovenop geheven en afgerond op hele centen, zodat het totaal precies op €15,00 uitkomt. Zie `apps/api/src/modules/domains/domain-pricing.config.js` in de RichardTool-repo en `sources/vat-rates.yaml#countries.NL.standard`.
 
-The buy-out price is a product price, not a transfer surcharge. MCD never charges for the transfer token itself once the customer is the registered holder. The distinction is documented in the internal legal memo `docs/legal/gratis-domein-voorwaarden.md` in the RichardTool repo.
+Het overnamebedrag is een productprijs, geen verhuist toeslag. MCD rekent nooit kosten voor de verhuistoken zelf zodra de klant geregistreerd houder is. Het onderscheid is vastgelegd in de interne juridische notitie `docs/legal/gratis-domein-voorwaarden.md` in de RichardTool-repo.
 
-Database tables involved:
+Databasetabellen:
 
-- `domain_buyout_intents` — tracks buy-out payment intents with Stripe PaymentIntent IDs and status.
+- `domain_buyout_intents` — volgt overname-betalingsintents met Stripe PaymentIntent-ID's en status.
 
-#### Transfer consequences
+#### Overdrachtsgevolgen
 
-Transferring a domain registered through MyCompanyDesk to another registrar has permanent consequences, enforced by the weekly OpenProvider status sync:
+Het overdragen van een domein dat via MyCompanyDesk is geregistreerd naar een andere registrar heeft permanente gevolgen, afgedwongen door de wekelijkse OpenProvider-statussynchronisatie:
 
-- **Legacy free-for-life domains**: The free claim is deleted, and the workspace's internal lifetime-Pro grant is cancelled. The workspace becomes a regular paid customer. This is irreversible; the grant cannot be reclaimed.
-- **Trial-tier / Pro-bundled domains**: The bundled-free status is lost. The workspace can never claim another free domain (already enforced via the retained-claims list). Note that buying out the domain during the trial (see buy-out section above) is not a transfer — it is a holder handover that gives the customer ownership before any transfer happens, so the free-domain perk is preserved for the duration of the trial.
-- **Paid domains**: No perk revocation. The domain simply moves to `status = 'transferred_out'`.
+- **Domeinen met een gratis-voor-het-leven-afspraak**: De gratis claim wordt verwijderd en de interne levenslange Pro-toekenning van de werkruimte wordt opgezegd. De werkruimte wordt een normale betalende klant. Dit is onomkeerbaar; de toekenning kan niet opnieuw worden geclaimd.
+- **Trial-tier / Pro-gebundelde domeinen**: De gebundelde-gratis-status gaat verloren. De werkruimte kan nooit meer een ander gratis domein claimen (al afgedwongen via de retained-claims-lijst). Let op: het overnemen van het domein tijdens de proef (zie overnamesectie hierboven) is geen overdracht — het is een houderswijziging die de klant eigendom geeft voordat een overdracht plaatsvindt, waardoor het gratis-domeinvoordeel behouden blijft voor de duur van de proef.
+- **Betaalde domeinen**: Geen voordeelintrekking. Het domein gaat simpelweg naar `status = 'transferred_out'`.
 
-The claim modal warns about these consequences before a free-domain claim is submitted, and requires explicit acknowledgement from the user. A "Held during trial" notice explains that the domain is registered under MCD during the trial and will be transferred to the customer for free on Pro conversion, or available for buy-out at €15 on early exit. Revocation details are recorded in the `domain_perk_revocations` audit table for support reference.
+De claim-modal waarschuwt voor deze gevolgen voordat een gratis-domein claim wordt ingediend, en vereist expliciete bevestiging van de gebruiker. Een "Zo werkt je gratis domein"-uitleg toont dat het domein tijdens de proef op naam van MCD staat, gratis op eigen naam komt bij Pro, en bij vertrek voor €15 overgenomen kan worden. Intrekkingsdetails worden vastgelegd in de `domain_perk_revocations`-audittabel voor supportreferentie.
 
-#### Buy or claim a domain
+#### Domein kopen of claimen
 
-The domain purchase card (`DomainPurchaseCard.vue`, `domain-purchase.service.ts`) is the first card on the Domains settings page. It appears when the workspace has no active custom domain yet. The card lets the user pick and acquire a domain through two paths, both opening a dedicated two-step purchase modal (`DomainClaimModal.vue`). Step 1 collects registrant details (the data required by the registrar for WHOIS). Step 2 handles payment or claim submission:
+De domein-aanschafkaart (`DomainPurchaseCard.vue`, `domain-purchase.service.ts`) is de eerste kaart op de Domeinen-pagina. De kaart verschijnt wanneer de werkruimte nog geen actief eigen domein heeft. Via de kaart kan de gebruiker een domein uitkiezen en bemachtigen via twee routes, die beide een speciale twee-stappen aanschafmodal openen (`DomainClaimModal.vue`). Stap 1 verzamelt de registrantgegevens (de gegevens die de registrar nodig heeft voor WHOIS). Stap 2 handelt de betaling of claim af:
 
-- **Buy** -- Paid purchase via OpenProvider. The user enters a domain name, the card calls `GET /api/domain-purchase/quote` to check availability and pricing, and then opens the purchase modal. After collecting the registrant details, the modal calls `POST /api/domain-purchase/checkout-session` to create a Stripe payment session and mounts Stripe Embedded Checkout for the payment. Once complete, `POST /api/domain-purchase/finalize` registers the domain with OpenProvider and creates the `domains` row in nameserver mode, wired to Cloudflare.
-- **Free claim** -- Eligible workspaces on a Pro trial can claim one `.nl` domain free of charge for the first year. The card calls `GET /api/domain-purchase/free-domain/eligibility` to check the workspace's claim tier and gate status. The modal collects the registrant details, and on submit calls `POST /api/domain-purchase/free-domain/claim`. The platform pays the first-year registration fee.
+- **Kopen** -- Betaalde aankoop via OpenProvider. De gebruiker voert een domeinnaam in, de kaart roept `GET /api/domain-purchase/quote` aan om beschikbaarheid en prijs te controleren, en opent daarna de aanschafmodal. Nadat de registrantgegevens zijn ingevuld, roept de modal `POST /api/domain-purchase/checkout-session` aan om een Stripe-betalingssessie aan te maken en toont Stripe Embedded Checkout voor de betaling. Zodra de betaling voltooid is, registreert `POST /api/domain-purchase/finalize` het domein bij OpenProvider en maakt de `domains`-rij aan in nameserver-modus, gekoppeld aan Cloudflare.
+- **Gratis claim** -- Werkruimtes op een Pro-trial die aan de voorwaarden voldoen kunnen een `.nl`-domein gratis claimen voor het eerste jaar. De kaart roept `GET /api/domain-purchase/free-domain/eligibility` aan om de claim-tier van de werkruimte en de gate-status te controleren. De modal verzamelt de registrantgegevens en roept bij indienen `POST /api/domain-purchase/free-domain/claim` aan. Het platform betaalt de eerstejaars registratiekosten.
 
-Free claims differ only in how the domain is renewed after the first year:
+Gratis claims verschillen alleen in hoe het domein na het eerste jaar wordt verlengd:
 
-- **Trial tier** -- Workspaces on a Pro trial. The first year is free. At the end of the free year the workspace must be on a paid Pro plan; the domain then renews as part of the Pro subscription, paid by the workspace. If the workspace stops paying Pro after the free year, the domain lapses and must be renewed manually. During the trial year the user can optionally save a card via Stripe SetupIntent in the modal for future automatic renewal.
-- **Paid tier** -- Standard domains purchased at full price. Renewal is charged via the saved payment method on the annual cycle. If the charge fails, a manual-renewal notification is sent.
-- **Legacy free-for-life tier** -- A small number of legacy workspaces retain free Pro and lifetime-free domain renewal under earlier arrangements. No payment method is required; renewal is handled automatically by the platform, with MCD absorbing the wholesale cost. This tier is closed and cannot be requested.
+- **Trial-tier** -- Werkruimtes op een Pro-trial. Het eerste jaar is gratis. Aan het einde van het gratis jaar moet de werkruimte op een betaald Pro-abonnement zitten; het domein verloopt dan als onderdeel van het Pro-abonnement, betaald door de werkruimte. Als de werkruimte stopt met Pro betalen na het gratis jaar, verloopt het domein en moet handmatig verlengd worden. Tijdens het trial-jaar kan de gebruiker optioneel een kaart opslaan via Stripe SetupIntent in de modal voor toekomstige automatische verlenging.
+- **Paid-tier** -- Standaard domeinen gekocht voor de volle prijs. Verlenging wordt via de opgeslagen betaalmethode in rekening gebracht op de jaarlijkse cyclus. Als de betaling mislukt, wordt een handmatige-verlenging-melding verstuurd.
+- **Gratis-voor-het-leven-tier** -- Een klein aantal werkruimtes houdt Pro gratis en levenslange gratis domeinverlenging op basis van eerdere afspraken. Geen betaalmiddel nodig; verlenging wordt automatisch door het platform afgehandeld, waarbij MCD de wholesale-kosten draagt. Deze tier is gesloten en kan niet worden aangevraagd.
 
-The eligibility endpoint (`GET /api/domain-purchase/free-domain/eligibility`) returns a `tier` field alongside the gate report. It does not expose any remaining-claim count.
+Het eligibility-eindpunt (`GET /api/domain-purchase/free-domain/eligibility`) retourneert een `tier`-veld naast het gate-rapport. Het geeft geen aantal resterende claims terug.
 
-Eligibility is determined by a set of hard gates checked server-side:
+De geschiktheid wordt bepaald door harde voorwaarden die server-side worden gecontroleerd:
 
-- **Active Pro workspace** -- the workspace must be on Pro (trial or paid). Workspaces on Free cannot claim.
-- **KVK required** -- the workspace must have a linked KVK number.
-- **Domain must be `.nl`** -- the free program only covers the NL TLD.
-- **Domain must match the KVK name** -- the domain must correspond to the registered legal name or a trade name.
-- **KVK must not be on the retained-claims list** -- one free domain per KVK number. A KVK that has already claimed (and then transferred away) a free domain is blocked permanently.
+- **Actieve Pro-werkruimte** -- de werkruimte moet op Pro zitten (trial of betaald). Werkruimtes op Free kunnen niet claimen.
+- **KVK vereist** -- de werkruimte moet een KVK-nummer gekoppeld hebben.
+- **Domein moet `.nl` zijn** -- de gratis actie geldt alleen voor de NL-extensie.
+- **Domein moet overeenkomen met de KVK-naam** -- het domein moet corresponderen met de geregistreerde statutaire naam of een handelsnaam.
+- **KVK mag niet op de retained-claims-lijst staan** -- een gratis domein per KVK-nummer. Een KVK die al eerder een gratis domein heeft geclaimd (en daarna overgedragen) is permanent geblokkeerd.
 
-Account age and site-content quality are not hard gates. They would block legitimate onboarding-day claims, which contradicts the "set up your business in a day, domain included" pitch. Instead, both flow into the Gemini abuse score as soft signals: a brand-new account with a template site scores low and lands in manual review; a real business with real content auto-approves regardless of age. The eligibility response carries a `softSignals` block (`ageDays`, `sitePublished`, `paragraphCount`) so the UI can surface a hint without blocking the claim.
+Account-leeftijd en site-inhoud zijn geen harde voorwaarden. Die zouden legitieme claims op de dag van onboarding blokkeren, wat in strijd is met de belofte "je bedrijf in een dag opzetten, domein inbegrepen". In plaats daarvan stromen beide in de Gemini-abuse-score als zachte signalen: een gloednieuw account met een template-site scoort laag en komt in handmatige beoordeling; een echt bedrijf met echte inhoud wordt automatisch goedgekeurd, ongeacht de leeftijd. Het eligibility-antwoord bevat een `softSignals`-blok (`ageDays`, `sitePublished`, `paragraphCount`) zodat de UI een hint kan tonen zonder de claim te blokkeren.
 
-When a gate fails, the card lists the remaining requirements so the user can see what is left to unlock before the free claim becomes available.
+Wanneer een voorwaarde niet wordt gehaald, toont de kaart de resterende vereisten zodat de gebruiker kan zien wat er nog nodig is voordat de gratis claim beschikbaar komt.
 
-The supported TLDs for purchase are `.nl`, `.eu`, `.com`, `.net`, and `.org`. Other TLDs show an unsupported message with a suggestion to buy the domain elsewhere and add it via the existing BYO flow.
+De ondersteunde TLD's voor aankoop zijn `.nl`, `.eu`, `.com`, `.net` en `.org`. Andere TLD's tonen een melding dat ze nog niet worden ondersteund, met de suggestie het domein elders te kopen en via de bestaande BYO-route toe te voegen.
 
-New database tables introduced by this feature:
+Nieuwe databasetabellen die door deze feature zijn toegevoegd:
 
-- `domain_purchase_intents` -- tracks paid purchase intents with Stripe PaymentIntent IDs, registrant details, and purchase status.
-- `founder_domain_claims` -- tracks free-domain claims with eligibility snapshots, abuse scoring, and claim status.
-- `domain_buyout_intents` -- tracks trial-exit buy-out payment intents with Stripe PaymentIntent IDs and handover status.
-- `domain_registrar_columns` migration adds registrar-related columns to the existing `domains` table.
+- `domain_purchase_intents` -- volgt betaalde aankoopintents met Stripe PaymentIntent-ID's, registrantgegevens en aankoopstatus.
+- `founder_domain_claims` -- volgt gratis domeinclaims met geschiktheidssnapshots, abuse-scoring en claimstatus.
+- `domain_buyout_intents` -- volgt overname-betalingsintents bij vertrek tijdens de proef met Stripe PaymentIntent-ID's en overdrachtsstatus.
+- `domain_registrar_columns`-migratie voegt registrar-gerelateerde kolommen toe aan de bestaande `domains`-tabel.
 
-### Hosted website
+### Gehoste website
 
-Your website home lives at **Company › Your website** (`/website`). It is a dashboard with six tabs: Overview, Visitors, Findability, Connections, Domain & email, and Settings. The editor opens from **Edit site** when you want to change content or design.
+Je website-dashboard staat op **Bedrijf › Je website** (`/website`). Het is een dashboard met zes tabbladen: Overzicht, Bezoekers, Vindbaarheid, Koppelingen, Domein & e-mail en Instellingen. De editor open je via **Bewerk site** als je inhoud of vormgeving wilt wijzigen.
 
-What the tabs cover:
+Wat de tabbladen doen:
 
-- **Overview** tab — Preview your site, see whether it is live, and check how many unpublished changes are waiting.
-- **Visitors** tab — See where visitors come from and how they move through the site.
-- **Findability** tab — SEO and page metadata. Old `/website/seo` links redirect here.
-- **Connections** tab — Payment processors (Mollie, Stripe Connect) and third-party services such as Mailchimp, Plausible, and Trustpilot. Old `/website/integraties` links redirect here.
-- **Domain & email** tab — Custom domain, DNS, SSL, redirects, and inbox setup. See the custom domains section above.
-- **Settings** tab — Choose which builder is live (template or bespoke), and configure the workspace slug and other site-level settings.
+- **Overzicht**-tab — Voorvertoning van je site, of deze live is, en hoeveel ongepubliceerde wijzigingen er wachten.
+- **Bezoekers**-tab — Zie waar bezoekers vandaan komen en hoe ze door de site bewegen.
+- **Vindbaarheid**-tab — SEO en paginameta-informatie. Oude `/website/seo`-links verwijzen hierheen.
+- **Koppelingen**-tab — Betaalproviders (Mollie, Stripe Connect) en diensten van derden zoals Mailchimp, Plausible en Trustpilot. Oude `/website/integraties`-links verwijzen hierheen.
+- **Domein & e-mail**-tab — Eigen domein, DNS, SSL, redirects en inbox-instellingen. Zie de sectie eigen domeinen hierboven.
+- **Instellingen**-tab — Kies welke bouwer live staat (sjabloon of op maat) en stel de werkruimteslug en andere site-instellingen in.
 
-When your workspace has multiple active custom domains (Pro plan), a domain switcher lets you edit a per-domain variant of the site. Each domain gets its own pages, navigation, design tokens, and publish snapshot. Switching domains resets the active tab.
+Wanneer je werkruimte meerdere actieve eigen domeinen heeft (Pro-abonnement), kun je via een domeinwisselaar een per-domein-variant van de site bewerken. Elk domein krijgt zijn eigen pagina's, navigatie, ontwerptokens en publicatiesnapshot. Wisselen van domein zet de actieve tab terug.
 
-The public site is served at the highest-priority URL the company owns: custom domain root → workspace subdomain → fallback `/portal/<slug>` route.
+De openbare site wordt getoond op de best beschikbare URL die het bedrijf bezit: eigen domein-root → werkruimte-subdomein → terugval `/portal/<slug>`-route.
 
-### Site packages
+### Pakketten
 
-`/website/pakketten` is a gallery of approved, pre-styled site packages. You can search by industry or style. Picking a package replaces your draft site (pages, sections, and theme tokens) but never publishes; you review the result in the site builder and publish when you are ready. Older `/website/ontwerpen` links redirect here.
+`/website/pakketten` toont goedgekeurde, voorgestylede sitepakketten. Je kunt zoeken op vak of stijl. Een pakket kiezen vervangt je conceptsite (pagina's, secties en ontwerptokens), maar publiceert nooit automatisch; je bekijkt het resultaat in de sitebouwer en publiceert zelf wanneer je tevreden bent. Oude `/website/ontwerpen`-links verwijzen hierheen door.
 
-See [Site Builder](/advanced/business-page) for the full editor guide.
+Zie [Sitebouwer](/advanced/business-page) voor de volledige editorgids.
 
-### Email inbox
+### E-mailinbox
 
-The inbox is a top-level surface at `/inbox` (`apps/web/pages/inbox/index.vue`). Backend lives in `apps/api/src/modules/inbox/*` and writes to a separate set of tables (`company_email_domains`, `company_mailboxes`, `email_threads`, `email_messages`, `email_attachments`, `email_events`).
+De inbox is een top-level weergave op `/inbox` (`apps/web/pages/inbox/index.vue`). De backend bevindt zich in `apps/api/src/modules/inbox/*` en schrijft naar aparte tabellen (`company_email_domains`, `company_mailboxes`, `email_threads`, `email_messages`, `email_attachments`, `email_events`).
 
-When a forwarded supplier invoice is converted into a draft expense from an attachment, the expense is only booked after you confirm it. If the invoice date falls in a VAT period that has already been filed, the automated booking is refused and an `inbox_expense_period_locked` notification is created instead of silently dropping the invoice; the notification lands on the inbox list and tells you which supplier and invoice date are involved, so you can book it manually in the current period or file a supplementary return.
+Als een doorgestuurde leveranciersfactuur vanuit een bijlage wordt omgezet naar een conceptuitgave, wordt de uitgave pas geboekt nadat je hem bevestigt. Als de factuurdatum in een BTW-periode valt die al is aangegeven, wordt de automatische boeking geweigerd en wordt er een `inbox_expense_period_locked`-melding aangemaakt in plaats van de factuur stilzwijgend te laten verdwijnen. De melding belandt op de inboxlijst en noemt de leverancier en factuurdatum, zodat je de factuur handmatig in de huidige periode kunt boeken of een suppletieaangifte kunt indienen.
 
-Capabilities:
+Mogelijkheden:
 
-- **Threading**: inbound mail is grouped into threads keyed by RFC 822 `Message-ID` / `In-Reply-To` / `References`. Each thread carries `last_message_preview`, `participants`, status (`open / snoozed / closed / spam / deleted`) and labels. Long threads collapse the middle messages behind a "Show {n} earlier messages" pill, keeping the oldest message and the newest two visible (Gmail/Outlook convention). Click the pill to expand everything.
-- **Reply** — inline reply box on the thread. Smart `From` picks the address the original mail was sent to, so a customer who emailed `support@acme.nl` gets a reply from `support@`, not `info@`.
-- **Reply all**: reply to all participants on the thread with one click. The action appears next to reply in the thread header and includes every recipient from the original message.
-- **Forward**: forward the entire thread to another recipient. Opens a compose drawer with the original message body and attachments preserved for editing before sending. The forwarded message header shows the original sender, date and subject.
-- **CC and BCC**: CC and BCC fields are available on both compose and reply through an "Add Cc/Bcc" toggle. Addresses accept comma-separated lists or paste from clipboard. The inputs stay hidden until needed, matching the standard inbox pattern where most messages do not need them.
-- **Drafts**: save partially written messages and come back to them later. Drafts are stored server-side and persist across browser sessions. Each draft carries a subject, recipient list and body. Drafts that are missing a subject show "(no subject)", and drafts without a recipient show "(no recipient)". A reply draft is indicated with a "Reply" chip in the thread list, so you can tell at a glance which thread you were mid-response on.
-- **Compose**: drawer form with a unified identity picker that sets both mailbox and sender address in one control, customer picker (or freeform `To`), subject, body, CC/BCC fields and attachments. Bounced-recipient warning is shown before send.
-- **Send-from aliases** — `info@`, `support@`, `sales@` are bidirectional aliases on the same mailbox. `noreply@` is send-only — selectable as From, but inbound mail to it is dropped on ingest.
-- **Attachments** — upload before send (compose and reply both). Attachments on inbound mail are downloadable from the message; signed download URLs expire after a short TTL.
-- **Alias notice** — when an inbound message arrives at an address that isn't yet a declared alias, the thread shows a soft notice with an "Add as alias" action.
-- **Linking** — threads can be linked to a customer, project or invoice for cross-referencing.
-- **Catch-all fallback** — mail to any local-part on the domain falls through to the default mailbox (`is_default = true`, one per domain). This means typos and undeclared aliases don't vanish silently.
-- **Audit log** — outbound sends, mailbox changes and thread state changes are recorded in an audit table for the workspace. Currently API-only (no UI surface yet) — accessible to support staff for troubleshooting.
-- **HTML email rendering**: HTML emails are rendered with their original styles intact inside a sandboxed iframe. The renderer strips scripts, forms and event handlers during sanitisation, and blocks remote images by default to protect your privacy. A notice bar appears when images are blocked, with a single-click "Show images" action that re-renders the message with images enabled. Text-only fallback displays the plain-text part when no HTML body is present.
-- **Star/unstar**: mark important threads with a star for quick access. A star icon appears next to the status dot on starred threads in the thread list. The toolbar has a star button that toggles the state for the currently open thread. A "Starred" view in the left sidebar next to Open, Snoozed, Closed, Spam and Trash filters to only starred threads, backed by a partial database index for instant results.
-- **Soft-delete**: threads can be moved to Trash instead of being permanently destroyed. A delete button (trash icon) appears in the toolbar for non-deleted threads. Once deleted, the button changes to a restore action that moves the thread back to `open`. The Trash filter appears in the left sidebar alongside Open, Snoozed, Closed and Spam, so you can review deleted threads before they are purged.
-- **Full-text search**: a search bar above the thread list lets you search across all inbox messages by subject, body text, snippet, and sender. The search is powered by Postgres full-text search with weighted field ranking, so subject matches appear before body matches. Results are grouped by thread, with the best-matching message's snippet shown as a preview line. Supports quoted phrases, `OR`, and `-` exclusions. A 250 ms debounce keeps the UI responsive, and the loading spinner gives real-time feedback.
+- **Threading** -- inkomende mail wordt gegroepeerd in threads op basis van RFC 822 `Message-ID` / `In-Reply-To` / `References`. Elke thread bevat `last_message_preview`, `participants`, status (`open / snoozed / closed / spam / deleted`) en labels. Lange threads vouwen de middelste berichten samen achter een "Toon {n} eerdere berichten"-pil, zodat het oudste bericht en de nieuwste twee zichtbaar blijven (Gmail/Outlook-conventie). Klik op de pil om alles uit te vouwen.
+- **Beantwoorden** -- inline antwoordveld op de thread. Slimme `From` kiest het adres waarnaar de oorspronkelijke mail was gestuurd, zodat een klant die naar `support@acme.nl` mailde antwoord krijgt van `support@`, niet `info@`.
+- **Allen beantwoorden** -- antwoord in een klik naar alle deelnemers van de thread. De knop staat naast Beantwoorden in de thread-header en neemt elke ontvanger uit het oorspronkelijke bericht mee.
+- **Doorsturen** -- stuur de hele thread door naar een andere ontvanger. Opent een opstellade met het oorspronkelijke bericht en de bijlagen, klaar om te bewerken voor verzending. De header van het doorgestuurde bericht toont de oorspronkelijke afzender, datum en onderwerp.
+- **CC en BCC** -- CC- en BCC-velden zijn beschikbaar bij zowel opstellen als beantwoorden via een "Cc/Bcc toevoegen"-toggle. Adressen accepteren kommagescheiden lijsten of plakken vanuit het klembord. De velden blijven verborgen tot je ze nodig hebt, volgens het standaard inbox-patroon waarbij de meeste berichten ze niet nodig hebben.
+- **Concepten** -- bewaar deels geschreven berichten en kom er later op terug. Concepten worden server-side opgeslagen en blijven bewaard tussen browsersessies. Elk concept heeft een onderwerp, ontvangerlijst en berichttekst. Concepten zonder onderwerp tonen "(geen onderwerp)", en concepten zonder ontvanger tonen "(geen ontvanger)". Een antwoord-concept krijgt een "Antwoord"-chip in de threadlijst, zodat je in een oogopslag ziet op welke thread je bezig was met antwoorden.
+- **Opstellen** -- ladeformulier met een enkele identiteitskiezer die mailbox en afzenderadres in één bediening instelt, klantkiezer (of vrij `Aan`), onderwerp, bericht, CC/BCC-velden, bijlagen. Waarschuwing voor bounced ontvanger wordt getoond voor verzending.
+- **Send-from aliassen** -- `info@`, `support@`, `sales@` zijn bidirectionele aliassen op dezelfde mailbox. `noreply@` is alleen-verzend -- selecteerbaar als From, maar inkomende mail erop wordt weggegooid bij opname.
+- **Bijlagen** -- uploaden voor verzending (zowel opstellen als beantwoorden). Bijlagen op inkomende mail zijn downloadbaar vanuit het bericht; ondertekende download-URL's verlopen na een korte TTL.
+- **Alias-melding** -- wanneer een inkomend bericht binnenkomt op een adres dat nog geen geregistreerd alias is, toont de thread een zachte melding met een "Toevoegen als alias"-actie.
+- **Koppelen** -- threads kunnen worden gekoppeld aan een klant, project of factuur voor kruisverwijzing.
+- **Catch-all terugval** -- mail naar elk lokaal deel op het domein valt door naar de standaardmailbox (`is_default = true`, een per domein). Dit betekent dat typefouten en niet-gedeclareerde aliassen niet stil verdwijnen.
+- **Auditlog** -- uitgaande verzendingen, mailboxwijzigingen en threadstatuswijzigingen worden vastgelegd in een audittabel voor de werkruimte. Momenteel alleen API (nog geen UI) -- toegankelijk voor supportmedewerkers voor troubleshooting.
+- **HTML-e-mailweergave** -- HTML-e-mails worden met hun originele opmaak getoond in een sandboxed iframe. De renderer verwijdert scripts, formulieren en event handlers tijdens de opschoning, en blokkeert standaard externe afbeeldingen om je privacy te beschermen. Een meldingsbalk verschijnt wanneer afbeeldingen geblokkeerd zijn, met een enkele klik op "Toon afbeeldingen" om het bericht opnieuw te tonen met afbeeldingen. Als er geen HTML-body is, toont de fallback het platte-tekstdeel.
+- **Markeren met ster**: markeer belangrijke threads met een ster voor snelle toegang. Een ster-icoon verschijnt naast de statuspunt op threads met een ster in de threadlijst. De werkbalk heeft een ster-knop die de status wisselt voor de geopende thread. Een "Met ster gemarkeerd"-weergave in de linkerzijbalk naast Open, Gesluimd, Gesloten, Spam en Prullenbak filtert op threads met ster, ondersteund door een gedeeltelijke database-index voor directe resultaten.
+- **Zacht verwijderen** -- threads kunnen naar de Prullenbak worden verplaatst in plaats van permanent te worden vernietigd. Een verwijderknop (prullenbakicoon) verschijnt in de werkbalk voor niet-verwijderde threads. Eenmaal verwijderd, verandert de knop in een herstelactie die de thread terugzet naar `open`. Het Prullenbak-filter verschijnt in de linkerzijbalk naast Open, Gesluimd, Gesloten en Spam, zodat je verwijderde threads kunt bekijken voordat ze definitief worden opgeschoond.
+- **Volledige tekst zoeken**: een zoekbalk boven de threadlijst laat je alle inboxberichten doorzoeken op onderwerp, berichttekst, snippet en afzender. De zoekopdracht maakt gebruik van Postgres full-text search met gewogen veldrangschikking, zodat treffers in het onderwerp boven treffers in de berichttekst verschijnen. Resultaten worden gegroepeerd per thread, met de snippet van het best overeenkomende bericht als voorbeeldregel. Ondersteunt zinnen tussen aanhalingstekens, `OR` en `-` uitsluitingen. Een vertraging van 250 ms houdt de interface responsief, en de laadindicator geeft realtime feedback.
 
-#### Drafts
+#### Concepten
 
-The Drafts tab sits alongside the main thread list. Drafts are saved server-side, so they survive browser restarts and follow you across devices. When you start a new message or reply and close the compose drawer without sending, the content is automatically saved as a draft. You can also explicitly save a draft with the "Save draft" button. A draft chip shows "Reply" if the draft was started from a thread, or "New" if it is a fresh compose. Editing a draft opens the compose drawer pre-filled with the saved content. Deleting a draft requires a confirmation step.
+De Concepten-tab staat naast de hoofdthreadlijst. Concepten worden server-side opgeslagen, dus ze overleven het herstarten van de browser en gaan mee naar andere apparaten. Wanneer je een nieuw bericht of antwoord begint en de opstellade sluit zonder te verzenden, wordt de inhoud automatisch als concept opgeslagen. Je kunt ook expliciet opslaan met de knop "Concept opslaan". Een concept-chip toont "Antwoord" als het concept vanuit een thread is gestart, of "Nieuw" bij een nieuw bericht. Een concept bewerken opent de opstellade met de opgeslagen inhoud. Een concept verwijderen vraagt om een bevestiging.
 
-The inbox uses your custom domain only after `quickEnableInbox` has run successfully and the apex MX records point at Cloudflare. Until then, the workspace can still send mail through the default delivery path described in [Email Integration](/settings/email), but it can't receive mail.
+De inbox gebruikt je eigen domein pas nadat `quickEnableInbox` succesvol is uitgevoerd en de apex MX-records naar Cloudflare wijzen. Tot die tijd kan de werkruimte wel mail versturen via het standaard afleverpad beschreven in [E-mailintegratie](/settings/email), maar geen mail ontvangen.
 
 #### Live polling
 
-The inbox refreshes automatically while the tab is open. The thread list polls every 45 seconds for new mail, and the sidebar badge refreshes every 60 seconds. Both pauses when the tab is hidden, so no unnecessary network traffic in the background. The polling is silent: no loading spinners flash on background refreshes, and polls are skipped entirely during an active search to keep your results stable. A manual refresh button next to Compose lets you pull the latest state instantly when you are expecting something right now; it is disabled during the in-flight call to prevent request stacking.
+De inbox ververst automatisch zolang de tab open staat. De threadlijst pollt elke 45 seconden op nieuwe mail, en de sidebar-badge ververst elke 60 seconden. Beide pauzeren zodra de tab op de achtergrond staat, dus geen onnodig netwerkverkeer. Het pollen is stil: laadspinners knipperen niet bij achtergrondverversingen, en polls worden overgeslagen tijdens een actieve zoekopdracht zodat je resultaten stabiel blijven. Een handmatige vernieuw-knop naast Opstellen haalt meteen de laatste stand op als je iets direct verwacht; de knop is uitgeschakeld tijdens de lopende aanroep om request-stapeling te voorkomen.
 
-#### Mark as unread
+#### Markeren als ongelezen
 
-You can mark any open thread as unread from the toolbar. Unlike earlier versions where the unread state was a local-only toggle that a refetch would discard, this is now persisted server-side. The sidebar badge counts unread messages, not threads with unread, and updates accordingly. The thread stays unread across page reloads, browser restarts, and devices until you open it again.
+Je kunt een geopende thread vanuit de toolbar als ongelezen markeren. Waar de ongelezen-status eerder alleen lokaal werd bijgehouden en bij een refetch verdween, wordt dit nu server-side opgeslagen. De sidebar-badge telt ongelezen berichten, niet threads met ongelezen berichten, en wordt dienovereenkomstig bijgewerkt. De thread blijft ongelezen bij paginaherladingen, browserherstart en op andere apparaten totdat je hem opnieuw opent.
 
-### Sales
+### Verkopen
 
-When you add buy buttons to pricing tiers or a product block on your public site, every completed payment creates a sale record. Track them at **Money > Sales** (`/workspace/financial/money/sales`).
+Wanneer je koopknoppen toevoegt aan tarieven of een productblok op je openbare site, creëert elke voltooide betaling een verkooprecord. Volg ze via **Geld > Verkopen** (`/workspace/financial/money/sales`).
 
-What the sales log shows:
+Wat het verkooplogboek laat zien:
 
-- A chronologically ordered list of all purchases made through your site.
-- The payment processor (Mollie or Stripe Connect) and the payment status (`paid`, `pending`, `failed`, `expired`, `refunded`).
-- The originating section (which pricing tier or product block was purchased).
-- Customer email, amount paid, and currency.
+- Een chronologisch gesorteerde lijst van alle aankopen via je site.
+- De betalingsprovider (Mollie of Stripe Connect) en de betalingsstatus (`paid`, `pending`, `failed`, `expired`, `refunded`).
+- De oorspronkelijke sectie (welke tarief-tier of productblok is gekocht).
+- E-mailadres van de klant, betaald bedrag en valuta.
 
-Sales records are created by the public checkout endpoint (`POST /public/sites/:slug/checkout`), which validates the section, creates a payment through the connected processor, and redirects the buyer to the hosted checkout page.
+Verkooprecords worden aangemaakt door het openbare checkout-eindpunt (`POST /public/sites/:slug/checkout`), dat de sectie valideert, een betaling aanmaakt via de gekoppelde provider en de koper doorstuurt naar de gehoste checkout-pagina.
 
-Paid sales show an action menu (three dots) with two options:
+Betaalde verkopen tonen een actiemenu (drie puntjes) met twee opties:
 
-- **Regenerate invoice.** Re-creates the linked invoice if it was lost or not generated during the purchase. Safe to run even if the invoice already exists.
-- **Refund.** Returns the full amount to the customer through the original payment processor (Mollie or Stripe). A credit note is automatically created against the linked invoice for your bookkeeping. Only available for paid sales.
+- **Factuur opnieuw genereren.** Maakt de gekoppelde factuur opnieuw aan als deze zoek is geraakt of niet is gegenereerd tijdens de aankoop. Veilig om uit te voeren ook als de factuur al bestaat.
+- **Terugbetalen.** Stort het volledige bedrag terug naar de klant via de oorspronkelijke betaalprovider (Mollie of Stripe). Er wordt automatisch een creditnota aangemaakt tegen de gekoppelde factuur voor je boekhouding. Alleen beschikbaar voor betaalde verkopen.
 
-### Post-purchase flow
+### Verwerkingsflow na aankoop
 
-When a payment completes, the platform automatically runs the following steps. Everything runs fire-and-forget: failures are logged and do not affect the payment status the buyer sees.
+Wanneer een betaling voltooid is, voert het platform automatisch de volgende stappen uit. Alles draait fire-and-forget: fouten worden gelogd en hebben geen effect op de betalingsstatus die de koper ziet.
 
-1. **Invoice generated.** An invoice is created from the sale, with the product name, price and the buyer's email. The price you set in the editor is the final customer price, VAT included. The invoice line splits this into an ex-VAT amount and the VAT rate you configured on the pricing tier or product block (default 21%). If the buyer's email matches an existing customer in your workspace, the invoice is linked to that customer. Otherwise a minimal customer record is created. The invoice is finalised immediately (status `sent`) since payment was already received.
-2. **Payment recorded.** A payment record is created on the invoice through the standard payment service. The payment method is set to the processor (Mollie or Stripe), and the reference includes the processor session ID for audit trails.
-3. **Customer receipt.** The buyer receives a confirmation email with the product name, amount and payment method. If an invoice was generated, the email includes a secure portal link to view and download the invoice PDF.
-4. **Owner notified.** You get an in-app notification and an email summary of the sale: product, amount, customer email, and a direct link to the invoice.
+1. **Factuur aangemaakt.** Er wordt een factuur aangemaakt op basis van de verkoop, met de productnaam, prijs en het e-mailadres van de koper. De prijs die je in de editor instelt is de uiteindelijke klantprijs, inclusief BTW. De factuurregel splitst dit in een ex-BTW bedrag en het BTW-tarief dat je op de tarief-tier of het productblok hebt ingesteld (standaard 21%). Als het e-mailadres overeenkomt met een bestaande klant in je werkruimte, wordt de factuur daaraan gekoppeld. Anders wordt een minimaal klantrecord aangemaakt. De factuur wordt direct afgerond (status `sent`) omdat de betaling al ontvangen is.
+2. **Betaling geregistreerd.** Er wordt een betalingsrecord aangemaakt op de factuur via de standaard betalingsservice. De betalingsmethode wordt ingesteld op de provider (Mollie of Stripe) en de referentie bevat het processor-sessie-ID voor audittrails.
+3. **Klantbevestiging.** De koper ontvangt een bevestigingsmail met de productnaam, het bedrag en de betalingsmethode. Als er een factuur is gegenereerd, bevat de mail een beveiligde portaal-link om de factuur-PDF te bekijken en te downloaden.
+4. **Eigenaar op de hoogte gesteld.** Je ontvangt een in-app notificatie en een e-mailsamenvatting van de verkoop: product, bedrag, e-mail van de klant, en een directe link naar de factuur.
 
-The checkout-success and checkout-cancelled pages show the buyer a branded result screen that uses your site's design tokens (colors) so the page stays on-brand.
+De checkout-succes- en checkout-geannuleerd-pagina's tonen de koper een branded resultaatscherm dat de ontwerptokens (kleuren) van je site gebruikt zodat de pagina bij je branding past.
 
-## Inbox tab visibility
+## Zichtbaarheid van de Inbox-tab
 
-The Inbox tab is always visible in the sidebar and bottom navigation. On free plans that do not include inbox, it appears as an upgrade hint and opens the plan comparison when selected. On paid plans the tab is always present, even before a domain has been connected, because it is the entry point to the inbox setup wizard.
+De Inbox-tab is altijd zichtbaar in de zijbalk en onderste navigatiebalk. Op gratis abonnementen zonder inbox verschijnt hij als upgrade-hint en opent hij de abonnementsvergelijking als je erop klikt. Op betaalde abonnementen blijft de tab altijd zichtbaar, ook voordat er een domein is gekoppeld, omdat hij het startpunt is van de inbox-setup-wizard.
 
-For a workspace that already has an inbox-enabled domain, the tab shows the real inbox with unread counts and full thread management. For paid workspaces without an inbox-enabled domain yet, selecting the tab redirects to `/inbox/setup` so you can wire the domain and enable the inbox in one flow.
+Voor een werkruimte die al een inbox-domein heeft ingericht, toont de tab de echte inbox met ongelezen-tellers en volledige threadbeheer. Voor betaalde werkruimtes zonder inbox-domein leidt een klik op de tab door naar `/inbox/setup`, zodat je in één flow het domein koppelt en de inbox inschakelt.
 
-## Demo website claim
+## Demo-website claimen
 
-When MyCompanyDesk builds a demo website for a prospect as part of the outreach program, the prospect receives a personalised claim link (via WhatsApp or email). The claim page at `/claim/<slug>` lets the prospect take ownership of the demo workspace with their own email address and password.
+Wanneer MyCompanyDesk een demo-website bouwt voor een prospect als onderdeel van het outreach-programma, ontvangt de prospect een persoonlijke claimlink (via WhatsApp of e-mail). De claimpagina op `/claim/<slug>` laat de prospect het demo-werkruimte overnemen met een eigen e-mailadres en wachtwoord.
 
-### How it works
+### Zo werkt het
 
-1. Sil or the outreach cron generates a demo workspace (`companies.is_demo = true`) with a 4-page trade-specific website (Home, Diensten, Over ons, Contact) built on top of every new workspace's default site foundation. Trade-aware overlays are then applied: the Home hero gets a trade tagline, the Diensten page receives a spotlight block with the trade's primary service and a services block with three trade-specific service cards, and the Contact page is populated with the prospect's phone number in the form intro and their address in the locations block.
-2. The prospect receives a link like `https://app.mycompanydesk.com/claim/roofer-amsterdam`.
-3. The claim page loads the demo by slug and shows the business name. If the demo workspace exists and is claimable, the prospect fills in their email and a password (minimum 8 characters, at least one letter and one digit).
-4. On submit, the workspace is atomically transferred: the placeholder user is rewritten with the prospect's email and password, `is_demo` is flipped off, and the outreach row is updated with claim metadata.
-5. The email is marked as verified on claim (the prospect already proved ownership of the contact method used for outreach). A welcome email is still sent so the address is in their inbox.
-6. The prospect is redirected to the login page with a success message and can immediately sign in, edit their website, send invoices, and use the inbox.
+1. Sil of de outreach-cron maakt een demo-werkruimte aan (`companies.is_demo = true`) met een branchespecifieke website van 4 pagina's (Home, Diensten, Over ons, Contact), gebouwd op de standaard multi-page basis die elke nieuwe werkruimte krijgt. Daarna worden branchespecifieke overlays toegepast: de Home-hero krijgt een branche-tagline, de Diensten-pagina krijgt een spotlight-blok met de hoofddienst van het vak en een dienstenblok met drie branchespecifieke servicekaarten, en de Contact-pagina wordt gevuld met het telefoonnummer van de prospect in de formulier-intro en hun adres in het locatieblok.
+2. De prospect ontvangt een link zoals `https://app.mycompanydesk.com/claim/dakdekker-amsterdam`.
+3. De claimpagina laadt de demo op basis van de slug en toont de bedrijfsnaam. Als de demo-werkruimte bestaat en claimable is, vult de prospect zijn e-mailadres en een wachtwoord in (minimaal 8 tekens, met een letter en een cijfer).
+4. Bij verzending wordt de werkruimte atomisch overgedragen: de placeholder-gebruiker wordt herschreven met het e-mailadres en wachtwoord van de prospect, `is_demo` wordt uitgezet en de outreach-rij wordt bijgewerkt met claim-metadata.
+5. Het e-mailadres wordt bij de claim als geverifieerd gemarkeerd (de prospect heeft al aangetoond eigenaar te zijn van het contactkanaal dat voor outreach is gebruikt). Er wordt nog steeds een welkomstmail verstuurd, zodat het adres in hun inbox staat.
+6. De prospect wordt doorgestuurd naar de inlogpagina met een succesmelding en kan meteen inloggen, de website bewerken, facturen versturen en de inbox gebruiken.
 
-### Safety guarantees
+### Veiligheidsgaranties
 
-- Only `is_demo = true` workspaces can be claimed. Real customer sites are never claimable through this endpoint.
-- The email must not already belong to another user on the platform.
-- The claim is atomic (single database transaction), so partial transfers cannot leave a workspace in an inconsistent state.
-- Claim links are invalidated once the demo is claimed, preventing reuse.
+- Alleen werkruimtes met `is_demo = true` kunnen worden geclaimd. Echte klantsites zijn nooit via dit endpoint te claimen.
+- Het e-mailadres mag nog niet bij een andere gebruiker op het platform horen.
+- De claim is atomisch (een enkele databasetransactie), dus gedeeltelijke overdrachten kunnen geen inconsistente staat achterlaten.
+- Claimlinks worden ongeldig zodra de demo is geclaimd, waardoor hergebruik wordt voorkomen.
 
-## Sending mail vs receiving mail
+## Mail verzenden vs mail ontvangen
 
-This bundle is the **receiving** side. Outgoing email — invoice delivery, reminders, quote sends — is handled by the broader email pipeline described in [Email Integration](/settings/email). The inbox is for receiving customer mail and composing replies; it does not route your automated invoice sends. Invoice delivery always respects your chosen delivery method under [Email Integration](/settings/email) (Gmail, Outlook, or the built-in sender). The inbox domain's DKIM is used for outbound replies composed in the inbox, not for automated transactional mail.
+Deze bundel is de **ontvangstkant**. Uitgaande e-mail -- factuurverzending, herinneringen, offerteverzending -- wordt afgehandeld door de bredere e-mailpipeline beschreven in [E-mailintegratie](/settings/email). De inbox is voor het ontvangen van klantmail en het opstellen van antwoorden; hij routeert je geautomatiseerde factuurverzendingen niet. Factuurbezorging volgt altijd je gekozen verzendmethode onder [E-mailintegratie](/settings/email) (Gmail, Outlook of de ingebouwde verzender). De DKIM van het inboxdomein wordt gebruikt voor uitgaande antwoorden die je in de inbox opstelt, niet voor geautomatiseerde transactionele mail.
 
-## Limits and gotchas
+## Limieten en aandachtspunten
 
-- **One website per company.** Adding a custom domain deactivates the workspace subdomain. Removing the domain doesn't auto-revive the slug — re-activate it manually if you want to fall back.
-- **One live inbox per domain.** The platform allows only one workspace at a time to receive mail on a given domain. If another workspace already has an inbox enabled on `acme.nl`, your attempt to enable the inbox on the same name is blocked. Websites and CNAME-only claims are not blocked; only a live inbox is exclusive.
-- **You cannot claim a zone another workspace already holds.** When you add a nameserver-mode domain, the platform checks whether the underlying Cloudflare zone is already live for a different workspace. If it is, the add is refused with a clear error so you cannot "verify" a domain off someone else's DNS.
-- **Re-adding your own removed domain still works.** If your workspace previously removed a domain, the existing zone can be reused for the same workspace; the guard only blocks another workspace from taking it over.
-- **CNAME mode has no email.** Email routing requires a full Cloudflare zone, which only nameserver mode provides.
-- **The wizard refuses to overwrite an existing third-party MX.** If your apex already points at Google Workspace or Microsoft 365, `quickEnableInbox` returns `apexMx.status = 'conflict'` and you have to choose: migrate MX to Cloudflare, or stay on your existing provider and skip the bundled inbox.
-- **Reserved subdomains.** `app`, `admin`, `api`, `www`, `mail`, `support`, `portal`, `dashboard` and a handful of others are blocked at the workspace-slug level.
-- **Pre-launch.** The bundle is feature-gated by `custom_domains` and `public_business_page`. Workspaces without those flags see the upgrade prompt instead of the editor.
+- **Een website per bedrijf.** Het toevoegen van een eigen domein deactiveert het werkruimte-subdomein. Het verwijderen van het domein herstelt de slug niet automatisch -- activeer het handmatig opnieuw als je wilt terugvallen.
+- **Eén live inbox per domein.** Het platform staat maar één werkruimte tegelijk toe om mail te ontvangen op een bepaald domein. Als een andere werkruimte al een inbox ingeschakeld heeft op `acme.nl`, wordt jouw poging om de inbox op dezelfde naam in te schakelen geblokkeerd. Websites en CNAME-claims worden niet geblokkeerd; alleen een live inbox is exclusief.
+- **Je kunt geen zone claimen die een andere werkruimte al heeft.** Wanneer je een domein in nameserver-modus toevoegt, controleert het platform of de onderliggende Cloudflare-zone al live is voor een andere werkruimte. Zo ja, dan wordt het toevoegen geweigerd met een duidelijke foutmelding, zodat je een domein niet kunt "verifiëren" via iemands anders DNS.
+- **Je eigen eerder verwijderde domein opnieuw toevoegen werkt nog steeds.** Als je werkruimte eerder een domein heeft verwijderd, kan de bestaande zone opnieuw worden gebruikt voor dezelfde werkruimte; de controle blokkeert alleen dat een andere werkruimte het overneemt.
+- **CNAME-modus heeft geen e-mail.** E-mailroutering vereist een volledige Cloudflare-zone, wat alleen nameserver-modus biedt.
+- **De wizard weigert een bestaande externe MX te overschrijven.** Als je apex al naar Google Workspace of Microsoft 365 wijst, retourneert `quickEnableInbox` `apexMx.status = 'conflict'` en moet je kiezen: migreer MX naar Cloudflare, of blijf bij je bestaande provider en sla de gebundelde inbox over.
+- **Gereserveerde subdomeinen.** `app`, `admin`, `api`, `www`, `mail`, `support`, `portal`, `dashboard` en een handvol andere zijn geblokkeerd op werkruimte-slug-niveau.
+- **Pre-launch.** De bundel is feature-gated door `custom_domains` en `public_business_page`. Werkruimtes zonder deze flags zien de upgrade-prompt in plaats van de editor.
 
-## Related
+## Gerelateerd
 
-- [Setup wizard](/getting-started/company-setup) — the magical onboarding that drives the bundled flow.
-- [Email Integration](/settings/email) — outgoing email, send-from identity picker, delivery tracking.
-- [Site Builder](/advanced/business-page) — the full editor guide.
-- [Company Settings](/settings/company) — the umbrella that hosts About / Look / Website / Address.
-- [Billing & Plans](/settings/billing) — feature flags that gate the bundle.
+- [Setup-wizard](/getting-started/company-setup) -- de magische onboarding die de gebundelde flow aandrijft.
+- [E-mailintegratie](/settings/email) -- uitgaande e-mail, send-from identiteitskiezer, afleveringsregistratie.
+- [Sitebouwer](/advanced/business-page) -- de volledige editorgids.
+- [Bedrijfsinstellingen](/settings/company) -- de paraplu die Over / Look / Website / Adres bevat.
+- [Facturering & Abonnementen](/settings/billing) -- feature flags die de bundel beheren.

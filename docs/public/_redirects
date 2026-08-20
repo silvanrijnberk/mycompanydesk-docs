@@ -1,3 +1,8 @@
+# Dutch is the root locale, so the old /nl/* URLs fold onto the unprefixed ones.
+/nl / 301
+/nl/* /:splat 301
+
+# App-style shortcuts land on the Dutch feature pages.
 /contracts /features/contracts 301
 /projects /features/projects 301
 /properties /features/objects 301
@@ -13,3 +18,4 @@
 /time-registration /features/time-registration 301
 /dashboard /features/dashboard 301
 /getting-started /getting-started/introduction 301
+/en/getting-started /en/getting-started/introduction 301

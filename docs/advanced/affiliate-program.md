@@ -1,61 +1,61 @@
 ---
-title: Affiliate Program
+title: Affiliateprogramma
 ---
 
-# Affiliate Program
+# Affiliateprogramma
 
-The MyCompanyDesk affiliate program is for independent publishers, comparison sites, blogs, newsletters, and other websites that want to earn a commission by referring visitors who start a paid MyCompanyDesk subscription.
+Het MyCompanyDesk-affiliateprogramma is voor onafhankelijke uitgevers, vergelijkingssites, blogs, nieuwsbrieven en andere websites die een vergoeding willen verdienen door bezoekers door te verwijzen die een betaald MyCompanyDesk-abonnement starten.
 
-## Who can join
+## Voor wie
 
-The program is open to external publishers that send relevant traffic to MyCompanyDesk. You do not need a MyCompanyDesk account to take part.
+Het programma staat open voor externe uitgevers die relevant verkeer naar MyCompanyDesk sturen. Je hebt geen MyCompanyDesk-account nodig om mee te doen.
 
-## How to apply
+## Aanmelden
 
-Apply through the public affiliate page at [mycompanydesk.nl/affiliate](https://mycompanydesk.nl/affiliate). After approval you receive a personal referral code and a private stats page where you can track performance.
+Meld je aan via de publieke affiliatepagina op [mycompanydesk.nl/affiliate](https://mycompanydesk.nl/affiliate). Na goedkeuring ontvang je een persoonlijke verwijzingscode en een privéstatistiekenpagina waar je je resultaten kunt volgen.
 
-<!-- TODO(source-missing): confirm the public application URL and approval process -->
+<!-- TODO(source-missing): bevestig de publieke aanmeld-URL en het goedkeuringsproces -->
 
-## How it works
+## Hoe het werkt
 
-1. Share your referral link with your audience.
-2. A visitor who reaches MyCompanyDesk through your link is attributed to your code for that browser session.
-3. If the visitor starts a paid subscription and stays past the hold period, the conversion is credited to your affiliate account.
+1. Deel je verwijzingslink met je publiek.
+2. Een bezoeker die via jouw link op MyCompanyDesk terechtkomt, wordt voor die browsersessie aan jouw code gekoppeld.
+3. Als de bezoeker een betaald abonnement start en blijft na de wachtperiode, wordt de conversie aan jouw affiliateaccount toegekend.
 
-<!-- TODO(source-missing): confirm the exact attribution window and hold-period wording -->
+<!-- TODO(source-missing): bevestig de exacte attributieperiode en de formulering van de wachtperiode -->
 
-## Commission and payouts
+## Vergoeding en uitbetaling
 
-Each affiliate has a fixed commission amount agreed during onboarding. The commission is paid out for each workspace that converts to a paying subscription and remains paying through the hold period.
+Elke affiliate heeft een vast bedrag per conversie dat tijdens de onboarding wordt afgesproken. De vergoeding wordt uitbetaald voor elke werkruimte die converteert naar een betaald abonnement en blijft betalen gedurende de wachtperiode.
 
-Payouts are sent to the bank account (IBAN) you provide during setup. The payout schedule and any minimum threshold are confirmed when your application is approved.
+Uitbetalingen worden overgemaakt naar het bankrekeningnummer (IBAN) dat je bij de instellingen hebt opgegeven. De uitbetalingsfrequentie en eventuele drempel worden bevestigd bij goedkeuring van je aanvraag.
 
-<!-- TODO(source-missing): payout schedule and minimum threshold -->
+<!-- TODO(source-missing): uitbetalingsfrequentie en minimumdrempel -->
 
-## Affiliate dashboard
+## Affiliate-dashboard
 
-Your private stats page shows:
+Je privéstatistiekenpagina toont:
 
-- **Referrals** — workspaces that signed up through your link
-- **Conversions** — workspaces that started a paid subscription
-- **Pending, approved, paid, and clawed back** commission totals
-- **Recent conversions** and their status
+- **Aanmeldingen** — werkruimten die zich via jouw link hebben aangemeld
+- **Conversies** — werkruimten die een betaald abonnement zijn gestart
+- **Openstaand, goedgekeurd, uitbetaald en vervallen** vergoedingen
+- **Recente conversies** en hun status
 
-No personally identifiable information about the referred workspaces is shown.
+Er worden geen persoonlijk identificeerbare gegevens van de verwezen werkruimten getoond.
 
-## Commission lifecycle
+## Levenscyclus van een vergoeding
 
-A conversion moves through the following statuses:
+Een conversie doorloopt de volgende statussen:
 
-- **Pending** — the referral converted and is still inside the hold window
-- **Approved** — the hold period passed and the workspace is still paying
-- **Paid** — the commission has been transferred to your bank account
-- **Clawed back** — the subscription was canceled or refunded before the commission was paid
+- **Openstaand** — de verwijzing is geconverteerd en zit nog in de wachtperiode
+- **Goedgekeurd** — de wachtperiode is verstreken en de werkruimte betaalt nog steeds
+- **Uitbetaald** — de vergoeding is overgeboekt naar je bankrekening
+- **Vervallen** — het abonnement is opgezegd of terugbetaald voordat de vergoeding werd uitbetaald
 
-## Privacy and tracking
+## Privacy en tracking
 
-Affiliate tracking uses only the referral code in the URL and a per-browser-session counter. The click beacon sends only the affiliate code; it does not identify the visitor or store personal data.
+De affiliate-tracking gebruikt alleen de verwijzingscode in de URL en een teller per browsersessie. De click-beacon stuurt alleen de affiliatecode; hij identificeert de bezoeker niet en slaat geen persoonlijke gegevens op.
 
-## Questions?
+## Vragen?
 
-For questions about the affiliate program, use the contact options on the [affiliate page](https://mycompanydesk.nl/affiliate) or reach out to the MyCompanyDesk team.
+Voor vragen over het affiliateprogramma kun je de contactopties op de [affiliatepagina](https://mycompanydesk.nl/affiliate) gebruiken of contact opnemen met het MyCompanyDesk-team.

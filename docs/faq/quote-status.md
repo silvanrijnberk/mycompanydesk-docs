@@ -1,5 +1,5 @@
 ---
-title: Quote status
+title: "Offertestatus"
 last_verified: 2026-07-02
 chatbot:
   triggers: ["quote status", "quote statuses", "quote lifecycle", "draft open sent canceled", "offerte status", "angebotsstatus", "statut devis", "estado cotizacion", "status proposta"]
@@ -8,15 +8,15 @@ chatbot:
   follow_up: ["How do I mark a quote as finalized?", "How do I mark as sent?", "How do I convert to invoice?"]
 ---
 
-Quote statuses explained:
-• Draft: still editable, not sent to the customer yet
-• Sent: delivered to the customer
-• Accepted: the customer agreed to the quote
-• Declined: the customer turned the quote down
-• Expired: the valid-until date has passed; this is shown automatically
+De offertestatussen op een rij:
+• Concept: nog te bewerken, nog niet naar de klant verstuurd
+• Verzonden: bij de klant afgeleverd
+• Geaccepteerd: de klant is akkoord met de offerte
+• Geweigerd: de klant heeft de offerte afgewezen
+• Verlopen: de geldig-tot-datum is verstreken; dit wordt automatisch getoond
 
-On the quote detail page, the current stage is shown as a lifecycle card: Draft → Sent, then Accepted or Declined as a decision branch. Expired and canceled quotes are shown as terminal outcomes at the end of the flow.
+Op de offertedetailpagina zie je de huidige fase als een lifecycle-kaart: Concept → Verzonden, gevolgd door Geaccepteerd of Geweigerd als beslissingsvertakking. Verlopen en geannuleerde offertes worden aan het einde van de flow als eindresultaat getoond.
 
-When you convert an accepted quote to an invoice, the quote stays Accepted and gets a "Converted to invoice" marker.
+Zet je een geaccepteerde offerte om naar een factuur, dan blijft de offerte Geaccepteerd en krijgt die de markering "Omgezet naar factuur".
 
-Tip: Use the quote list filters to check drafts and expired quotes first.
+Tip: Gebruik de filters in de offertelijst om eerst naar concepten en verlopen offertes te kijken.

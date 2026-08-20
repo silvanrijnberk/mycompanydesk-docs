@@ -8,29 +8,31 @@ chatbot:
   follow_up: ["How do I set up automatic reminders?", "How do I view overdue invoices?", "How do I mark an invoice as paid?"]
 ---
 
-To follow up on unpaid invoices:
-1. Open the overdue invoice
-2. Use the "Send Reminder" action
-3. The system generates a professional reminder email
+Om een herinnering te versturen voor een onbetaalde factuur:
+1. Open de factuur
+2. Gebruik de actie "Herinnering versturen"
+3. Controleer het bericht en verstuur het
 
-The reminder states the remaining outstanding amount (invoice total minus payments already received). If the customer has paid a deposit or an instalment, the reminder asks for the rest, not the full invoice amount.
+De herinnering vermeldt het resterende openstaande bedrag (factuurbedrag minus de al ontvangen betalingen). Heeft de klant een aanbetaling of termijnbetaling gedaan, dan vraagt de herinnering om het restant, niet om het volledige factuurbedrag.
 
-If your workspace has online payments enabled, the reminder email gives the customer the same payment options as the original invoice: a **View & pay** button, a **Confirm payment** button, and a scan-and-pay QR code on the PDF. This applies to both manual reminders and automatic reminders.
+Als je werkruimte online betalingen heeft ingeschakeld, biedt de herinneringsmail de klant dezelfde betaalopties als de originele factuur: een knop **Bekijk & betaal**, een knop **Betaling bevestigen** en een QR-code op de PDF om te scannen en te betalen. Dit geldt voor zowel handmatige als automatische herinneringen.
 
-You cannot send a reminder when:
-- the invoice is still a draft
-- the invoice has been canceled
-- the invoice is already marked as paid
-- the invoice is waiting for payment verification because the customer reported it as paid through the portal
-- the invoice is a credit note or refund note
-- the invoice has been fully credited by a credit note
-- nothing is left outstanding (for example, the customer paid while the page was open)
+Je kunt geen herinnering versturen als:
+- de factuur nog een concept is
+- de factuur is geannuleerd
+- de factuur al als betaald staat aangemerkt
+- de klant via het portaal heeft aangegeven dat hij al betaald heeft en de factuur op 'Klant zegt: betaald' staat
+- het een creditnota of refundnota betreft
+- de factuur volledig is gecrediteerd via een creditnota
+- er niets meer openstaat (bijvoorbeeld omdat de klant betaalde terwijl de pagina openstond)
 
-When an invoice becomes overdue, the invoice detail page shows a suggested next step:
+Wanneer een factuur te laat is, toont de factuurdetailpagina een voorgestelde volgende stap:
 
-- **Send reminder** — for invoices that are slightly past due
-- **Send firmer reminder** — for invoices that have already been reminded once
-- **Send an urgent reminder** — for invoices more than a few days late. The button opens the reminder dialog; the detail line also suggests calling the customer or offering a payment plan.
-- **Create a credit note or correction** — if the customer disputes the invoice or the amounts have changed
+- **Herinnering versturen** — voor facturen die net over de vervaldatum zitten
+- **Strengere herinnering versturen** — voor facturen die al een keer zijn herinnerd
+- **Dringende herinnering sturen** — voor facturen die meer dan een paar dagen te laat zijn. De knop opent de herinneringsdialoog; de detailregel adviseert ook om de klant te bellen of een betaalregeling voor te stellen.
+- **Creditnota of correctie aanmaken** — als de klant de factuur betwist of de bedragen zijn gewijzigd
 
-For straightforward cases, send reminders at 1 day before due date (friendly), 3 days after (firm), and 10 days after (final notice). Escalate to a phone call after that.
+Voor de meeste gevallen stuur je herinneringen op 1 dag voor de vervaldatum (vriendelijk), 3 dagen erna (strenger) en 10 dagen erna (laatste waarschuwing). Bel daarna na.
+
+Je kunt het herinneringssjabloon ook aanpassen via Instellingen → E-mails.

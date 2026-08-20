@@ -1,65 +1,65 @@
 ---
-title: Your personal settings
+title: Je persoonlijke instellingen
 last_verified: 2026-08-10
 ---
 
-# Your personal settings
+# Je persoonlijke instellingen
 
-Your personal settings live in the same Settings area as everything else. Open **Instellingen** (Settings) and look at the **Over jou** (about you) group at the top: four rows that only affect your own account, never your teammates. Changes on these pages save automatically while you type.
+Je persoonlijke instellingen staan in hetzelfde Instellingen-gedeelte als al het andere. Open **Instellingen** en kijk bij de groep **Over jou** bovenaan: vier rijen die alleen jouw eigen account raken, nooit je teamgenoten. Wijzigingen op deze pagina's worden automatisch opgeslagen terwijl je typt.
 
-See the [Settings overview](/settings/) for the full settings page.
+Zie het [overzicht van de instellingen](/settings/) voor de volledige instellingenpagina.
 
-## Jouw gegevens (your details)
+## Jouw gegevens
 
-Your name, email address and profile photo.
+Je naam, e-mailadres en profielfoto.
 
-- **First name** and **Last name**. Your name also appears on your invoices.
-- **Email address**. This is your login and it cannot be changed here; the field is read only.
-- **Profile photo**. Upload a PNG, JPG or WebP image up to 5 MB. Customers see it on emails you send. A photo is optional, and you can remove it again at any time.
+- **Voornaam** en **achternaam**. Je naam komt ook op je facturen te staan.
+- **E-mailadres**. Dit is je login en kun je hier niet wijzigen; het veld is alleen-lezen.
+- **Profielfoto**. Upload een PNG, JPG of WebP van maximaal 5 MB. Klanten zien de foto bij e-mails die je stuurt. Een foto is niet verplicht en je kunt hem altijd weer verwijderen.
 
-## Weergave (display)
+## Weergave
 
-How the app looks for you, on every device you sign in on.
+Hoe de app eruitziet voor jou, op elk apparaat waarop je inlogt.
 
-- **Theme**: Licht (light), Donker (dark) or Vanzelf (automatic). Automatic follows your device: light during the day, dark in the evening.
-- **Text size**: Normal, Large or Extra Large, for more comfortable reading. The choice is saved per device, so your phone can use a larger size than your laptop. The app also follows your phone's system text-size setting up to the Extra Large step; at that size the mobile bottom tab bar switches to icons-only to keep all tabs reachable.
-- **Language of the app**: Dutch, English, German or French. This changes the menus and buttons for you only; the language of your invoices and quotes is a separate choice per document.
-- **Advanced settings**: a per-device switch that reveals extra technical options across the app, such as DNS and SSL controls on the domain pages. Leave it off unless you need those.
+- **Thema**: Licht, Donker of Vanzelf. Vanzelf volgt je apparaat: overdag licht, 's avonds donker.
+- **Tekstgrootte**: Normaal, Groot of Extra groot, voor rustiger lezen. De keuze wordt per apparaat onthouden, zodat je telefoon een groter formaat kan gebruiken dan je laptop. De app volgt ook de systeemtekstgrootte van je telefoon tot en met de Extra-groot-stap; bij die grootte schakelt de onderste tabbalk op mobiel over naar alleen iconen, zodat alle tabbladen bereikbaar blijven.
+- **Taal van de app**: Nederlands, Engels, Duits of Frans. Dit verandert alleen de knoppen en menu's voor jou; de taal van je facturen en offertes is een aparte keuze per document.
+- **Geavanceerde instellingen**: een schakelaar per apparaat die extra technische opties in de app zichtbaar maakt, zoals DNS- en SSL-beheer op de domeinpagina's. Laat hem uit als je die niet nodig hebt.
 
-## Meldingen (notifications)
+## Meldingen
 
-Four switches decide what MyCompanyDesk messages you about, in the app and by email:
+Vier schakelaars bepalen waarover MyCompanyDesk je een berichtje stuurt, in de app en per e-mail:
 
-- When an invoice is paid late, so you can chase it right away.
-- When a customer has paid.
-- When your VAT return is almost due, warned well in advance.
-- Tips and news from MyCompanyDesk, at most one email per month.
+- Als een factuur te laat betaald is, zodat je er meteen achteraan kunt.
+- Als een klant betaald heeft.
+- Als je bijna BTW-aangifte moet doen, ruim van tevoren.
+- Tips en nieuws van MyCompanyDesk, hooguit één mailtje per maand.
 
-Truly important messages about your account are always sent and cannot be switched off.
+Echt belangrijke berichten over je account sturen we altijd; die kun je niet uitzetten.
 
-Below the switches you can enable **push notifications on this device**, so overdue invoices, payments and deadlines also reach you as notifications on your phone or computer. Your browser or phone will ask for permission the first time. If you skip it, you can always turn it on later from the notification bell at the top of the app.
+Onder de schakelaars zet je **pushmeldingen op dit apparaat** aan, zodat achterstallige facturen, betalingen en deadlines je ook als melding op je telefoon of computer bereiken. Je browser of telefoon vraagt de eerste keer om toestemming. Sla je het over, dan kun je het later altijd aanzetten via het belletje voor meldingen bovenaan de app.
 
-Push notifications are supported in browsers and in the Android app. On Android the notification uses the app icon and category colour; for inbox messages it also shows the sender's avatar when the app has registered it. Older Android builds without the native messaging service still receive the standard SDK-rendered notification.
+Pushmeldingen werken in browsers en in de Android-app. Op Android gebruikt de melding het app-icoon en de kleur van de categorie; voor inbox-berichten toont hij ook de avatar van de afzender zodra de app die heeft geregistreerd. Oudere Android-builds zonder de native berichtenservice krijgen nog steeds de standaard melding die door het SDK wordt getekend.
 
-## Connected calendars
+## Gekoppelde agenda's
 
-You can connect **Google Calendar** or **Outlook** so appointments from your calendar also appear in MyCompanyDesk. This is now also a row on the settings page (**Instellingen** > **Uren & agenda**), and still reachable from the Schedule page. Each connection can be removed again from the same page.
+Je kunt **Google Agenda** of **Outlook** koppelen, zodat afspraken uit je agenda ook in MyCompanyDesk verschijnen. Je vindt de koppeling nu ook onder **Instellingen** > **Uren & agenda**, en hij blijft bereikbaar vanaf de Uren & agenda-pagina. Elke koppeling kun je op dezelfde pagina weer verwijderen.
 
-## Customer locations
+## Klantlocaties
 
-The **Customer locations** card on the mobile settings page shows how many of your addressed customers can be placed on a map. Location features, such as automatic check-in and finding nearby customers, only work for customers whose address has been resolved to coordinates.
+De kaart **Klantlocaties** op de mobiele instellingenpagina toont hoeveel van je klanten met een adres op de kaart te vinden zijn. Locatiefuncties zoals automatisch inchecken en het vinden van klanten in de buurt werken alleen voor klanten waarvan het adres is omgezet naar coördinaten.
 
-The card lists:
+De kaart toont:
 
-- how many customers with an address are resolved
-- how many still need to be looked up
-- a button to update addresses in one go
-- a short list of customers whose addresses could not be resolved, so you can fix them
+- hoeveel klanten met een adres zijn gevonden
+- hoeveel nog opgezocht moeten worden
+- een knop om adressen in één keer bij te werken
+- een korte lijst met klanten waarvan het adres niet gevonden kon worden, zodat je die kunt corrigeren
 
-When you edit a customer address, the cached coordinates are cleared automatically. The next lookup will try to resolve the new address.
+Als je een klantadres wijzigt, worden de opgeslagen coördinaten automatisch gewist. Bij de volgende zoekopdracht wordt het nieuwe adres opnieuw geprobeerd.
 
-## Related pages
+## Gerelateerde pagina's
 
-- [Settings overview](/settings/) for everything else on the settings page.
-- [Security](/account/security) for passwords, two-step verification and passkeys, found under **Inloggen**.
-- [Data import and export](/account/data) for downloading a copy of your data.
+- [Overzicht van de instellingen](/settings/) voor al het andere op de instellingenpagina.
+- [Beveiliging](/account/security) voor wachtwoorden, verificatie in twee stappen en passkeys, te vinden onder **Inloggen**.
+- [Gegevens importeren en exporteren](/account/data) voor het downloaden van een kopie van je gegevens.

@@ -23,7 +23,9 @@ The site is published via Cloudflare Pages. Any merge to `main` should trigger a
 
 ### Page structure
 
-Pages live under `docs/`, organized into top-level folders that mirror the app's IA:
+Dutch is the root locale: `docs/` holds the Dutch pages and they are served unprefixed (`/features/invoices`). The other locales live under `docs/en/`, `docs/de/`, `docs/fr/` and are served under their prefix (`/en/features/invoices`).
+
+Within each locale the pages are organized into top-level folders that mirror the app's IA:
 
 - `docs/getting-started/` — onboarding flows, first-run setup
 - `docs/features/` — per-feature reference (vat, expenses, invoices, dashboard, ...)
@@ -32,7 +34,7 @@ Pages live under `docs/`, organized into top-level folders that mirror the app's
 - `docs/advanced/` — power-user features, integrations, API
 - `docs/api/` — REST endpoint reference
 
-Sidebar config is in `docs/.vitepress/config.mjs` — every locale (en/nl/de/fr) has its own sidebar tree. When you add a page, register it in **all four** locales.
+Sidebar config is in `docs/.vitepress/config.mjs` — every locale (nl/en/de/fr) has its own sidebar tree. When you add a page, register it in **all four** locales. Dutch sidebar links have no prefix; the other three do.
 
 ### Frontmatter
 
@@ -91,7 +93,7 @@ All three are optional; the chatbot still indexes the page body for semantic sea
 
 ## i18n
 
-English is the source of truth. Translations to `nl`, `de`, `fr` live next to each English file (e.g. `docs/features/vat.md` → `docs/nl/features/vat.md`).
+Dutch is the **default** locale: it sits at the root of `docs/`, `<html lang>` is `nl`, and `hreflang="x-default"` points at the Dutch page, because MyCompanyDesk sells to Dutch businesses. English is still the **authoring** source of truth: write `docs/en/features/vat.md`, then mirror it to `docs/features/vat.md` (Dutch), `docs/de/features/vat.md` and `docs/fr/features/vat.md`.
 
 Bulk locale-file sync (filling missing keys, re-translating drift) is owned by Huisbot's `auto-improve.translations_reeval` weekly cron — it spawns Claude Code workers, opens PRs to `main` autonomously. There is no in-repo sync command; just write English and the cron handles the rest within a week.
 

@@ -7,11 +7,11 @@ chatbot:
     - { label: "Create customer", to: "/customers/new" }
   follow_up: ["How do I create an invoice for this customer?", "Which customer fields are most important?", "How do I import customers in bulk?"]
 ---
-Here's how to add a customer:
-1. Go to Customers and open "New Customer"
-2. Enter the customer or company name and contact details
-3. Add the email, phone number, and address fields you want to keep on file
-4. Fill in VAT number, IBAN, and payment terms if those apply
-5. Save the customer
+Zo voeg je een klant toe:
+1. Ga naar Klanten en open "Nieuwe klant"
+2. Vul de klant- of bedrijfsnaam en contactgegevens in
+3. Voeg e-mailadres, telefoonnummer en adres toe
+4. Vul indien nodig BTW-nummer, IBAN en betaaltermijn in
+5. Sla de klant op
 
-Tip: The customer form does not have a separate preferred-language field right now, so focus on the billing and payment fields the app reuses later.
+Tip: Het klantformulier heeft nu geen apart veld voor voorkeurstaal, dus focus op de factuur- en betaalgegevens die later opnieuw worden gebruikt.

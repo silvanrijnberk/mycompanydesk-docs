@@ -1,112 +1,112 @@
 ---
-title: Receipt Scanning
+title: Bonnen scannen
 ---
 
-# Receipt Scanning
+# Bonnen scannen
 
-Automatically extract expense data from receipt images and PDF invoices using AI-powered OCR.
+Extraheer automatisch uitgavegegevens uit bonafbeeldingen en PDF-facturen met behulp van AI-gestuurde OCR.
 
 ::: info
-Receipt scanning is available on every plan, with a monthly cap on the number of scans: 3 on Free, 30 on Starter, and 200 on Pro. The cap resets on the first of each calendar month.
+Bonnen scannen is beschikbaar op elk abonnement, met een maandelijkse limiet op het aantal scans: 3 op Gratis, 30 op Starter en 200 op Pro. De limiet wordt gereset op de eerste van elke kalendermaand.
 :::
 
-## Overview
+## Overzicht
 
-Instead of manually entering every expense, take a photo of a receipt or upload a PDF and let MyCompanyDesk extract the details automatically.
+In plaats van elke uitgave handmatig in te voeren, maak je een foto van een bon of upload je een PDF en laat je MyCompanyDesk de details automatisch extraheren.
 
-## Supported formats
+## Ondersteunde formaten
 
-- **Images** — JPEG, PNG, WebP
-- **PDF** — PDF invoices and receipts
-<!-- TODO(source-missing): the effective PDF limit for the LLM inline scan path is now 15 MB in the scanner code and locale strings, while this page still says 50 MB. Verify in sources/ before updating. -->
-- **Maximum file size** — 50MB
+- **Afbeeldingen** — JPEG, PNG, WebP
+- **PDF** — PDF-facturen en bonnen
+<!-- TODO(source-missing): de effectieve PDF-limiet voor het inline scanpad is nu 15 MB in de scannercode en locale strings, terwijl deze pagina nog 50 MB vermeldt. Controleer in sources/ voor een update. -->
+- **Maximale bestandsgrootte** — 50MB
 
-The scanner only handles receipts with positive amounts. Credit notes, return receipts and other documents with a negative total are rejected with a message; add those manually as an expense with a negative amount.
+De scanner verwerkt alleen bonnen met positieve bedragen. Creditfacturen, retourbonnen en andere documenten met een negatief totaal worden geweigerd; voeg die handmatig toe als uitgave met een negatief bedrag.
 
-::: tip File size note
-The scanner accepts files up to 50 MB, but the receipt attached to the created expense is capped at 10 MB. If you scan a file larger than 10 MB, the expense is still created, but the receipt is not attached and a warning tells you to upload it manually on the expense. Reducing the file size before scanning also prevents this.
+::: tip Bestandsgrootte
+De scanner accepteert bestanden tot 50 MB, maar de bon die aan de aangemaakte uitgave wordt gekoppeld mag maximaal 10 MB zijn. Als je een groter bestand scant, wordt de uitgave wel aangemaakt, maar de bon wordt niet meegevoegd en er verschijnt een waarschuwing. Je kunt de bon daarna handmatig aan de uitgave toevoegen, of voor het scannen een kleiner bestand gebruiken.
 :::
 
-## How to scan a receipt
+## Een bon scannen
 
-1. Go to **Expenses > Scan Receipt**
-2. Upload your receipt file (drag and drop or click to browse). The scanner takes one file at a time.
-3. Optionally open the advanced options and choose the extraction mode:
-   - **Single**: extract one expense from the receipt
-   - **Multiple**: extract multiple line items from the same receipt (the default)
-4. Wait for processing (a few seconds)
-5. Review the extracted data:
-   - Date
-   - Amount
-   - Supplier name
-   - Description / items
-6. Edit any fields that need correction
-7. Click **Confirm** to create the expense(s)
+1. Ga naar **Uitgaven > Bon scannen**
+2. Upload je bonbestand (slepen en neerzetten of klik om te bladeren). De scanner verwerkt een bestand per keer.
+3. Open eventueel de geavanceerde opties en kies de extractiemodus:
+   - **Enkel**: extraheer een uitgave van de bon
+   - **Meervoudig**: extraheer meerdere regelitems van dezelfde bon (de standaard)
+4. Wacht op verwerking (enkele seconden)
+5. Controleer de geextraheerde gegevens:
+   - Datum
+   - Bedrag
+   - Leveranciersnaam
+   - Omschrijving / artikelen
+6. Bewerk velden die correctie nodig hebben
+7. Klik op **Bevestigen** om de uitgave(n) aan te maken
 
-## Extraction modes
+## Extractiemodi
 
-### Single mode
+### Enkelmodus
 
-Best for simple receipts with one total:
+Het beste voor eenvoudige bonnen met een totaal:
 
-- Restaurant bills
-- Gas station receipts
-- Single-item purchases
+- Restaurantrekeningen
+- Tankstationbonnen
+- Aankopen van een enkel artikel
 
-Extracts: date, total amount, supplier, description.
+Extraheert: datum, totaalbedrag, leverancier, omschrijving.
 
-### Multiple mode
+### Meervoudigemodus
 
-Best for itemized receipts or invoices:
+Het beste voor gespecificeerde bonnen of facturen:
 
-- Office supply orders with multiple items
-- Supplier invoices with line items
-- Shopping lists
+- Kantoorbenodigdhedenbestellingen met meerdere artikelen
+- Leveranciersfacturen met regelitems
+- Boodschappenlijsten
 
-Extracts: individual line items with descriptions and amounts.
+Extraheert: individuele regelitems met omschrijvingen en bedragen.
 
-## Advanced settings
+## Geavanceerde instellingen
 
-The scanner has an advanced options panel:
+De scanner heeft een paneel met geavanceerde opties:
 
-- **Instructions**: add free-text context to help the AI (e.g., "This is a Dutch receipt from Albert Heijn")
-- **Extraction mode**: single expense or multiple line items (default: multiple)
-- **Category**: limit extraction to one expense category, or leave it on any category
-- **Filter tags**: keyword tags; only items matching the tags are extracted
-- **Price range**: a minimum and maximum amount; items outside the range are skipped
-- **Attach receipt**: whether the original file is attached to the created expense (on by default)
+- **Instructies**: voeg vrije tekst toe om de AI te helpen (bijv. "Dit is een Nederlandse bon van Albert Heijn")
+- **Extractiemodus**: een enkele uitgave of meerdere regelitems (standaard: meervoudig)
+- **Categorie**: beperk de extractie tot een uitgavencategorie, of laat alle categorieën toe
+- **Filtertags**: trefwoordtags; alleen items die bij de tags passen worden geëxtraheerd
+- **Prijsbereik**: een minimum- en maximumbedrag; items buiten het bereik worden overgeslagen
+- **Bon bijvoegen**: of het originele bestand als bijlage aan de aangemaakte uitgave wordt gekoppeld (standaard aan)
 
-## Tips for best results
+## Tips voor het beste resultaat
 
-- **Good lighting** — Take photos in well-lit conditions
-- **Flat surface** — Place the receipt on a flat surface
-- **Full receipt** — Make sure the entire receipt is in frame
-- **Clear text** — Ensure text is legible and not blurry
-- **One receipt per scan** — Scan receipts individually for best accuracy
+- **Goede belichting** — Maak foto's bij goede lichtomstandigheden
+- **Vlak oppervlak** — Leg de bon op een vlak oppervlak
+- **Volledige bon** — Zorg dat de hele bon in beeld is
+- **Leesbare tekst** — Zorg dat tekst leesbaar en niet wazig is
+- **Een bon per scan** — Scan bonnen afzonderlijk voor de beste nauwkeurigheid
 
-## After scanning
+## Na het scannen
 
-Once confirmed, the expense is created with:
+Na bevestiging wordt de uitgave aangemaakt met:
 
-- All extracted data pre-filled
-- The original receipt attached as a file
-- Category suggestions (if AI suggestions are enabled)
+- Alle geextraheerde gegevens vooraf ingevuld
+- De originele bon als bijlage
+- Categoriesuggesties (als AI-suggesties zijn ingeschakeld)
 
-When the scanner resolves a supplier country (for example, a foreign supplier or a matched Dutch KVK number), the review card also shows a VAT treatment selector. The scanner proposes a default based on the supplier and amount, but you can change it before confirming. This matters for reverse-charge purchases from another EU country and for non-EU import expenses.
+Als de scanner een leveranciersland herleidt (bijvoorbeeld een buitenlandse leverancier of een gematcht Nederlands KVK-nummer), toont de controlekaart ook een BTW-behandeling-kiezer. De scanner stelt een default voor op basis van de leverancier en het bedrag, maar je kunt deze voor bevestiging nog wijzigen. Dit is relevant voor intra-EU reverse-charge-aankopen en importuitgaven van buiten de EU.
 
-You can edit the expense afterward like any manually created expense.
+Je kunt de uitgave daarna bewerken zoals elke handmatig aangemaakte uitgave.
 
-## Permissions
+## Rechten
 
-The receipt scanner is gated by the same page permission as the Expenses page. A team member needs **Read** access to Expenses to open the scanner, and **Create** access to confirm a scanned receipt into a new expense. Members without the Create permission still see the scanner, but cannot finish the confirmation. This applies whether the receipt is uploaded from the Expenses page or created through a shared photo flow.
+De bonscanner valt onder dezelfde paginarechten als de pagina Uitgaven. Een teamlid heeft **Lezen**-toegang tot Uitgaven nodig om de scanner te openen, en **Aanmaken**-toegang om een gescande bon te bevestigen als nieuwe uitgave. Leden zonder het recht Aanmaken zien de scanner wel, maar kunnen de bevestiging niet afronden. Dit geldt zowel bij uploaden vanaf de pagina Uitgaven als via een gedeelde fotoflow.
 
-## Scanning several receipts
+## Meerdere bonnen scannen
 
-The uploader takes one file at a time. To process several receipts, scan them one after another; each scan counts once towards your monthly cap. For a receipt or invoice that contains multiple items, use the **Multiple** extraction mode to create several expenses from a single scan.
+De uploader verwerkt een bestand per keer. Wil je meerdere bonnen verwerken, scan ze dan een voor een; elke scan telt een keer mee voor je maandelijkse limiet. Voor een bon of factuur met meerdere items gebruik je de extractiemodus **Meervoudig** om met een scan meerdere uitgaven aan te maken.
 
 ## Tips
 
-- Scan receipts as soon as you receive them — don't let them pile up
-- Check the extracted amount carefully, especially for receipts with multiple currencies
-- Enable AI suggestions for automatic categorization after scanning
-- Keep the original receipt file attached for tax audit purposes
+- Scan bonnen zodra je ze ontvangt — laat ze niet opstapelen
+- Controleer het geextraheerde bedrag zorgvuldig, vooral bij bonnen met meerdere valuta's
+- Schakel AI-suggesties in voor automatische categorisatie na het scannen
+- Bewaar het originele bonbestand als bijlage voor belastingcontroledoeleinden

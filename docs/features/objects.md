@@ -1,173 +1,173 @@
 ---
-title: "Objects & Assets"
+title: "Objecten & Activa"
 ---
 
-# Objects & Assets
+# Objecten & Activa
 
-Track rental properties, vehicles, equipment, and other business assets with full lifecycle management.
+Houd huurwoningen, voertuigen, apparatuur en andere bedrijfsactiva bij met volledig levenscyclusbeheer.
 
 ::: info
-The objects module is optional. Enable it in **Company > Features** if you don't see it in the navigation.
+De objectenmodule is optioneel. Schakel deze in via **Bedrijf > Functies** als je hem niet in de navigatie ziet.
 :::
 
-## Overview
+## Overzicht
 
-The objects module is designed for businesses that manage physical assets — particularly rental companies, property managers, and equipment rental services. Each object represents an asset you own or manage.
+De objectenmodule is ontworpen voor bedrijven die fysieke activa beheren — met name verhuurbedrijven, vastgoedbeheerders en apparatuurverhuurdiensten. Elk object vertegenwoordigt een activum dat je bezit of beheert.
 
-## Object types
+## Objecttypen
 
-| Type | Use case |
+| Type | Toepassing |
 |---|---|
-| **Property** | Rental apartments, offices, commercial spaces |
-| **Vehicle** | Cars, trucks, vans, construction vehicles |
-| **Machine** | Industrial equipment, tools, generators |
-| **Other** | Any other asset type |
+| **Vastgoed** | Huurappartementen, kantoren, commerciele ruimten |
+| **Voertuig** | Auto's, vrachtwagens, bestelbussen, bouwvoertuigen |
+| **Machine** | Industriele apparatuur, gereedschap, generatoren |
+| **Overig** | Elk ander type activum |
 
-## Object statuses
+## Objectstatussen
 
-| Status | Description |
+| Status | Beschrijving |
 |---|---|
-| **Available** | Ready to be rented or used |
-| **Rented** | Currently rented to a customer |
-| **Inactive** | Not available (maintenance, retired) |
+| **Beschikbaar** | Klaar om verhuurd of gebruikt te worden |
+| **Verhuurd** | Momenteel verhuurd aan een klant |
+| **Inactief** | Niet beschikbaar (onderhoud, buiten gebruik) |
 
-## Creating an object
+## Een object aanmaken
 
-1. Go to **Objects > New Object**
-2. Fill in:
-   - **Name** - A clear identifier (e.g., "Apartment 3B" or "Excavator CAT 320")
-   - **Type** - Property, Vehicle, Machine, or Other
-3. Click **Save**
+1. Ga naar **Objecten > Nieuw object**
+2. Vul in:
+   - **Naam** - Een duidelijke identificatie (bijv. "Appartement 3B" of "Graafmachine CAT 320")
+   - **Type** - Vastgoed, Voertuig, Machine of Overig
+3. Klik op **Opslaan**
 
-::: tip More options
-The new-object form only asks for the name by default. Use **More options** to add a description, and **Purchase and status** to set purchase date, price, current value, VAT regime and status. These fields are optional for creating the object; the status defaults to available.
+::: tip Meer opties
+Het formulier voor een nieuw object vraagt standaard alleen om de naam. Gebruik **Meer opties** om een omschrijving toe te voegen, en **Aanschaf en status** om aanschafdatum, prijs, huidige waarde, btw-regime en status in te stellen. Deze velden zijn niet verplicht om het object aan te maken; de status staat standaard op beschikbaar.
 :::
 
-## Object detail page
+## Objectdetailpagina
 
-The detail page shows:
+De detailpagina toont:
 
-- Asset information and type
-- Current status
-- **Total revenue**: real paid-invoice revenue for this object, including rent, service charges, one-off charges and sale invoices attributed to it
-- **Active contracts**: number of currently active contracts linked to this object
-- **WOZ history** (for Properties) — annual WOZ values used in the Box 3 tax calculation
-- **Asset summary** (for Property objects with a recorded WOZ value) - capitalized value, accumulated depreciation, current book value and the legal floor (bodemwaarde) for the building
-- Linked contracts
-- Rental history
-- **Invoices**: every invoice that counts toward total revenue, with status and amount excluding VAT
+- Objectinformatie en type
+- Huidige status
+- **Totale omzet**: echte omzet op basis van betaalde facturen voor dit object, inclusief huur, servicekosten, losse facturen en verkoopfacturen die eraan zijn gekoppeld
+- **Actieve contracten**: aantal actieve contracten dat aan dit object is gekoppeld
+- **WOZ-geschiedenis** (bij Vastgoed) — jaarlijkse WOZ-waarden die de Box 3-berekening gebruikt
+- **Vermogensoverzicht** (bij Vastgoed-objecten met een geregistreerde WOZ-waarde) - geactiveerde waarde, cumulatieve afschrijving, huidige boekwaarde en de wettelijke ondergrens (bodemwaarde) voor het gebouw
+- Gekoppelde contracten
+- Verhuurgeschiedenis
+- **Facturen**: elke factuur die meetelt voor de totale omzet, met status en bedrag exclusief btw
 
-### Invoices attributed to this object
+### Toegewezen facturen op dit object
 
-The Invoices tab on the object detail page lists every invoice that contributes to the total revenue figure:
+Het tabblad Facturen op de objectdetailpagina toont elke factuur die bijdraagt aan het totale omzetbedrag:
 
-- Invoices generated from a contract attached to this object
-- Invoices tagged to the object directly, such as service-charge settlements, one-off charges and sale invoices
+- Facturen die zijn gegenereerd uit een contract dat aan dit object hangt
+- Facturen die direct aan het object zijn gekoppeld, zoals servicekostenafrekeningen, losse facturen en verkoopfacturen
 
-Each row shows the invoice number, customer, date, status and the amount excluding VAT. A scope hint explains that the total sums paid invoices, while the Box 3 report counts only received rent and uses the cash date, so the two amounts may differ.
+Elke regel toont het factuurnummer, de klant, de datum, de status en het bedrag exclusief btw. Een toelichting legt uit dat het totaal alle betaalde facturen sommeert, terwijl het Box 3-rapport alleen ontvangen huur telt en uitgaat van de datum waarop het geld binnenkwam. Die twee bedragen kunnen daarom verschillen.
 
-### Contract summary header
+### Contractoverzicht
 
-Above the contracts list, a summary header gives you a quick read on the object's contractual state:
+Boven de contractenlijst geeft een samenvattingsbalk je in een oogopslag inzicht in de contractuele staat van het object:
 
-- **Total contracts** linked to this object
-- **Signed contracts**: how many have been fully signed
-- **Monthly active total**: combined monthly value of all active contracts, normalised from mixed-frequency agreements (weekly, quarterly, yearly)
+- **Totaal aantal contracten** gekoppeld aan dit object
+- **Getekende contracten**: hoeveel er volledig zijn ondertekend
+- **Maandelijks actief totaal**: de gecombineerde maandwaarde van alle actieve contracten, genormaliseerd uit contracten met verschillende frequenties (wekelijks, per kwartaal, jaarlijks)
 
-### WOZ history (Property objects)
+### WOZ-geschiedenis (Vastgoed-objecten)
 
-For objects with type **Property**, the detail page includes a WOZ history section. WOZ values (Waardering Onroerende Zaken) are the municipality-assessed property values used in Dutch Box 3 tax calculations.
+Bij objecten van het type **Vastgoed** bevat de detailpagina een WOZ-geschiedenissectie. WOZ-waarden (Waardering Onroerende Zaken) zijn de door de gemeente vastgestelde woningwaarden die worden gebruikt in de Nederlandse Box 3-belastingberekening.
 
-- **View** annual WOZ values per year.
-- **Add** new values by entering the year and the WOZ value assigned by the municipality.
-- Box 3 uses the WOZ value with peildatum 1 January. Enter the value that applies to the start of the tax year.
-- If no values are entered yet, the section shows an empty state prompting you to add the first one.
+- **Bekijk** jaarlijkse WOZ-waarden per jaar.
+- **Voeg** nieuwe waarden toe door het jaar en de WOZ-waarde van de gemeente in te vullen.
+- Box 3 hanteert de WOZ-waarde met peildatum 1 januari. Vul de waarde in die geldt voor de start van dat belastingjaar.
+- Als er nog geen waarden zijn ingevoerd, toont de sectie een lege staat met de vraag om de eerste toe te voegen.
 
-#### Kadaster integration
+#### Kadaster-koppeling
 
-When you add a Property object with a valid Dutch address, MyCompanyDesk can import the WOZ history directly from the Kadaster. This saves manual entry and gives you the same values the municipality filed.
+Wanneer je een Vastgoed-object met een geldig Nederlands adres toevoegt, kan MyCompanyDesk de WOZ-geschiedenis rechtstreeks uit het Kadaster ophalen. Dat scheelt handmatig invoeren en geeft je dezelfde waarden die de gemeente heeft geregistreerd.
 
-- **Automatic lookup**: if the WOZ history is empty, the system fetches available values from the Kadaster when you open the detail page.
-- **Manual refresh**: click **Refresh** to re-pull the latest Kadaster data at any time. Imported values are marked with a "Kadaster" source badge.
-- **Missing data**: if the Kadaster has no records for the address (for example, a newly built property), a notice appears and you can enter values manually.
+- **Automatisch ophalen**: als de WOZ-geschiedenis nog leeg is, haalt het systeem bij het openen van de detailpagina de beschikbare waarden uit het Kadaster op.
+- **Handmatig vernieuwen**: klik op **Vernieuwen** om op elk moment de nieuwste Kadaster-gegevens op te halen. Opgehaalde waarden krijgen een "Kadaster"-bronbadge.
+- **Ontbrekende gegevens**: als het Kadaster geen gegevens heeft voor het adres (bijvoorbeeld bij een nieuwbouwwoning), verschijnt er een melding en kun je de waarden handmatig invoeren.
 
-#### Estimated current value
+#### Geschatte huidige waarde
 
-For properties where a Kadaster WOZ history was fetched, MyCompanyDesk projects an estimated current market value. This projection takes the most recent WOZ peildatum and applies the CBS PBK price index for the property's COROP region, giving you a value that reflects current market trends.
+Bij woningen waarvan een WOZ-geschiedenis uit het Kadaster is opgehaald, projecteert MyCompanyDesk een geschatte huidige marktwaarde. Deze projectie neemt de meest recente WOZ-peildatum en past daarop de CBS PBK-prijsindex voor de COROP-regio van de woning toe. Zo krijg je een waarde die de actuele marktontwikkeling weerspiegelt.
 
-### Asset summary and bodemwaarde (building floor)
+### Vermogensoverzicht en bodemwaarde (ondergrens gebouw)
 
-Property objects that are tracked as a bezitting (capital asset) show an asset summary in the detail page:
+Vastgoed-objecten die als bezitting worden bijgehouden, tonen een vermogensoverzicht op de detailpagina:
 
-- **Acquisition value**: what was paid for the asset.
-- **Capitalized value**: the business part of the capitalized cost, after the category's deduction percentage and any private-use share are applied. This uses the same formula as the ledger debit to the asset account and the depreciation schedule (`apps/api/src/modules/ledger/posting-engine.js`), so the three surfaces stay in lockstep.
-- **Accumulated depreciation**: everything written off so far.
-- **Depreciation this year**: the current calendar year's write-off.
-- **Book value**: the remaining value on the balance (capitalized value minus accumulated depreciation).
-- **Bodemwaarde**: the legal floor below which the book value of a building may not drop. It is based on the WOZ value recorded for the property.
+- **Aanschafwaarde**: het bedrag dat voor het activum is betaald.
+- **Geactiveerde waarde**: het zakelijke deel van de geactiveerde kosten, na toepassing van het aftrekpercentage van de categorie en eventueel privégebruikpercentage. Dit gebruikt dezelfde formule als de debetpost op de activarekening in het grootboek en de afschrijvingsregeling (`apps/api/src/modules/ledger/posting-engine.js`), zodat de drie plekken op één lijn blijven.
+- **Cumulatieve afschrijving**: alles wat tot nu toe is afgeschreven.
+- **Afschrijving dit jaar**: het afschrijfbedrag voor het huidige kalenderjaar.
+- **Boekwaarde**: de resterende waarde op de balans (geactiveerde waarde min cumulatieve afschrijving).
+- **Bodemwaarde**: de wettelijke ondergrens waaronder de boekwaarde van een gebouw niet mag zakken. Deze is gebaseerd op de WOZ-waarde die voor het pand is geregistreerd.
 
-The bodemwaarde is shown next to the book value because the two are only meaningful together. MyCompanyDesk does not silently rewrite the posted depreciation schedule; instead, it warns you when the current schedule has already gone below the floor, or notes when the book value has exactly reached it.
+De bodemwaarde staat naast de boekwaarde, want de twee zijn pas samen zinvol. MyCompanyDesk herschrijft niet stilletjes de geboekte afschrijvingsregeling; in plaats daarvan waarschuwt het als de huidige regeling al onder de ondergrens is uitgekomen, of geeft een melding wanneer de boekwaarde de ondergrens exact heeft bereikt.
 
-If a warning appears, the correction is made by setting the acquisition's residual value to the bodemwaarde. When the object has a single acquisition, a link opens the acquisition so you or your accountant can adjust it.
+Als er een waarschuwing verschijnt, los je dat op door de restwaarde van de aankoop op de bodemwaarde te zetten. Wanneer het object één aankoop heeft, opent een link die aankoop direct, zodat jij of je boekhouder de aanpassing kunt doen.
 
-This rule applies to buildings only (for example, property, apartment, office or retail). Vehicles, machines, equipment and other non-building asset types do not have a bodemwaarde floor.
+Deze regel geldt alleen voor gebouwen (bijvoorbeeld vastgoed, appartement, kantoor of winkel). Voertuigen, machines, apparatuur en andere activa die geen gebouw zijn, hebben geen bodemwaarde-ondergrens.
 
-### Disposal
+### Verkocht of afgestoten
 
-If you sell, scrap or otherwise dispose of an asset, record it in the **Purchase and status** section of the object form:
+Als je een activum verkoopt, weggooit of anderszins uit je onderneming haalt, leg je dat vast bij **Aanschaf en status** in het objectformulier:
 
-- **Disposal date:** the date the asset left the business.
-- **Proceeds (excl. VAT):** the amount received. Leave the field empty if you do not know it yet; enter 0 if the asset was scrapped and no money changed hands.
+- **Verkoopdatum:** de datum waarop het activum de onderneming verliet.
+- **Opbrengst (excl. btw):** het ontvangen bedrag. Laat het veld leeg als je het bedrag nog niet weet; vul 0 in als je het activum hebt weggegooid zonder opbrengst.
 
-Once a disposal date is saved, the object detail page shows a disposal block that lists:
+Zodra een verkoopdatum is opgeslagen, toont de objectdetailpagina een blok "Verkocht of afgestoten" met:
 
-- the disposal date
-- the book value at disposal
-- the proceeds, if recorded
-- the book profit or book loss
+- de verkoopdatum
+- de boekwaarde bij verkoop
+- de opbrengst, als je die hebt ingevuld
+- de boekwinst of het boekverlies
 
-If you leave the proceeds empty, the block shows the book value that was written off and explains that the book profit or loss cannot be determined until the proceeds are recorded.
+Laat je de opbrengst leeg, dan zie je alleen de boekwaarde die is afgeschreven, met de melding dat de boekwinst of het boekverlies pas kan worden bepaald zodra de opbrengst bekend is.
 
-The asset summary also warns you when the depreciation schedule still posts amounts after the disposal date. Depreciation lines are generated in full when the asset is capitalized, so they keep reaching the profit and loss statement unless the depreciation term on the acquisition is adjusted.
+Het vermogensoverzicht waarschuwt je ook wanneer de afschrijvingstermijn nog bedragen na de verkoopdatum plant. Afschrijvingsregels worden bij activatie in een keer voor de hele looptijd aangemaakt, dus die bedragen blijven in je winst-en-verliesrekening terechtkomen tenzij je de afschrijvingstermijn van de aankoop aanpast.
 
-### Contract signing status
+### Ondertekenstatus van contracten
 
-Each contract row in the object detail page now shows a signing status badge alongside the active/paused badge. The colour follows the same map used on the contract detail page:
+Elke contractregel op de objectdetailpagina toont nu een ondertekenstatusbadge naast de actief/gepauzeerd-badge. De kleur volgt dezelfde indeling als op de contractdetailpagina:
 
-- **Signed** (green): all parties have signed
-- **Partially signed** (blue): some parties have signed, others pending
-- **Sent** (yellow): the signing invite has been sent, no signatures yet
-- **Expired** or **Terminated** (red): the signing request is no longer valid
+- **Getekend** (groen): alle partijen hebben ondertekend
+- **Deels getekend** (blauw): sommige partijen hebben getekend, anderen nog niet
+- **Verzonden** (geel): de ondertekenuitnodiging is verstuurd, nog geen handtekeningen
+- **Verlopen** of **Beeindigd** (rood): het ondertekenverzoek is niet langer geldig
 
-Fully signed contracts show a small eye icon that opens an inline preview of the signed document, so you can read the completed contract without leaving the property page.
+Volledig ondertekende contracten tonen een klein oogicoon waarmee je een inline preview van het ondertekende document opent. Zo kun je het afgeronde contract lezen zonder de objectdetailpagina te verlaten.
 
-Legacy contracts created before the e-signing feature was added do not show a signing badge. The system detects legacy contracts the same way as on the contract detail page: contracts must have signing parties, a template, or signing content to show a badge.
+Legacycontracten die zijn aangemaakt voordat de e-signing-feature werd toegevoegd, tonen geen ondertekenbadge. Het systeem detecteert legacycontracten op dezelfde manier als op de contractdetailpagina: een contract moet ondertekenpartijen, een template of ondertekencontent hebben om een badge te tonen.
 
-## Linking objects to contracts and invoices
+## Objecten koppelen aan contracten en facturen
 
-Objects integrate with other MyCompanyDesk features:
+Objecten integreren met andere MyCompanyDesk-functies:
 
-- **Contracts** — Create a rental contract for an object, specifying the tenant (customer) and terms
-- **Invoices**: Invoices can be attributed to an object directly in the invoice form, or linked through a rental contract. Both routes count toward the object's total revenue.
-- **Recurring invoices** — Set up automatic monthly rent invoicing per object
+- **Contracten** — Maak een huurcontract voor een object, met vermelding van de huurder (klant) en voorwaarden
+- **Facturen**: Facturen kunnen direct in het factuurformulier aan een object worden gekoppeld, of via een huurcontract worden doorgegeven. Beide routes tellen mee in de totale omzet van het object.
+- **Terugkerende facturen** — Stel automatische maandelijkse huurfacturatie per object in
 
-## Filtering
+## Filteren
 
-Filter your objects by:
+Filter je objecten op:
 
-- **Type** — Property, Vehicle, Machine, Other
-- **Status** — Available, Rented, Inactive
-- **Search** — Find by name or description
+- **Type** — Vastgoed, Voertuig, Machine, Overig
+- **Status** — Beschikbaar, Verhuurd, Inactief
+- **Zoeken** — Zoek op naam of omschrijving
 
-## Bulk actions
+## Bulkacties
 
-- **Change status** — Update availability in bulk
-- **Archive** — Move to archive
-- **Delete** — Remove objects
+- **Status wijzigen** — Werk beschikbaarheid in bulk bij
+- **Archiveren** — Verplaats naar archief
+- **Verwijderen** — Verwijder objecten
 
 ## Tips
 
-- Use the status filter to quickly see which assets are available for rent
-- Link every rental invoice to its object for complete financial tracking per asset
-- Set up contracts with recurrence for automatic rent invoicing
-- Check the object metrics at the top of the page for availability overview
+- Gebruik het statusfilter om snel te zien welke objecten beschikbaar zijn voor verhuur
+- Koppel elke huurfactuur aan het bijbehorende object voor volledige financiele tracking per activum
+- Stel contracten met herhaling in voor automatische huurfacturatie
+- Bekijk de objectstatistieken bovenaan de pagina voor een beschikbaarheidsoverzicht

@@ -1,115 +1,115 @@
 ---
-title: Recurring Invoices
+title: Terugkerende facturen
 ---
 
-# Recurring Invoices
+# Terugkerende facturen
 
-Automate your regular billing by setting up invoices that generate on a schedule.
+Automatiseer je regelmatige facturatie door facturen in te stellen die volgens een schema worden gegenereerd.
 
-## Overview
+## Overzicht
 
-Recurring invoices are templates that automatically create new invoices at specified intervals. Ideal for:
+Terugkerende facturen zijn sjablonen die automatisch nieuwe facturen aanmaken op vastgestelde intervallen. Ideaal voor:
 
-- Monthly retainers
-- Subscription billing
-- Rent collection
-- Maintenance contracts
-- Regular consulting fees
+- Maandelijkse retainers
+- Abonnementsfacturatie
+- Huurincasso
+- Onderhoudscontracten
+- Regelmatige advieskosten
 
-## Creating a recurring invoice
+## Een terugkerende factuur aanmaken
 
-1. Go to **Recurring Invoices > New**
-2. Fill in the template:
-   - **Customer** — Who to bill
-   - **Line items** — What to bill for (descriptions, amounts, VAT)
-   - **Frequency** — How often (weekly, monthly, quarterly, yearly)
-   - **Start date** — When to start generating
-3. Click **Save**
+1. Ga naar **Terugkerende facturen > Nieuw**
+2. Vul het sjabloon in:
+   - **Klant** — Aan wie je factureert
+   - **Regelitems** — Wat je factureert (omschrijvingen, bedragen, BTW)
+   - **Frequentie** — Hoe vaak (wekelijks, maandelijks, per kwartaal, jaarlijks)
+   - **Startdatum** — Wanneer de generatie begint
+3. Klik op **Opslaan**
 
-::: tip More options
-The new recurring-invoice form keeps optional details behind **More options**. Notes sit there by default; expand the section when you want to add them.
+::: tip Meer opties
+In het formulier voor een nieuwe terugkerende factuur staan optionele velden netjes achter **Meer opties**. De notities zitten daar standaard; vouw de sectie uit als je ze wilt toevoegen.
 :::
 
-The recurring invoice is created in **Active** status and will generate its first invoice on the next scheduled date.
+De terugkerende factuur wordt aangemaakt met de status **Actief** en genereert de eerste factuur op de volgende geplande datum.
 
-## Line items
+## Regelitems
 
-Recurring invoice line items work the same way as regular invoice lines:
-- Each line must have a description. If the description is too long the form will show a validation error.
-- Each line can carry a percentage or fixed discount.
-- A percentage discount cannot be higher than 100%.
-- A discount value cannot be negative.
+Regelitems van terugkerende facturen werken op dezelfde manier als reguliere factuurregels:
+- Elke regel moet een omschrijving hebben. Is de omschrijving te lang, dan toont het formulier een validatiefout.
+- Elke regel kan een percentage- of vast bedrag-korting krijgen.
+- Een kortingspercentage kan niet hoger zijn dan 100%.
+- Een kortingswaarde mag niet negatief zijn.
 
-## Frequency options
+## Frequentieopties
 
-| Frequency | Description |
+| Frequentie | Beschrijving |
 |---|---|
-| **Weekly** | Every 7 days |
-| **Monthly** | Same day each month |
-| **Quarterly** | Every 3 months |
-| **Yearly** | Once per year |
+| **Wekelijks** | Elke 7 dagen |
+| **Maandelijks** | Dezelfde dag elke maand |
+| **Per kwartaal** | Elke 3 maanden |
+| **Jaarlijks** | Eenmaal per jaar |
 
-## Managing recurring invoices
+## Terugkerende facturen beheren
 
-### Pause
+### Pauzeren
 
-Temporarily stop invoice generation:
+Tijdelijk stoppen met het genereren van facturen:
 
-1. Open the recurring invoice
-2. Click **Pause**
-3. Status changes to **Paused** — no invoices are generated
+1. Open de terugkerende factuur
+2. Klik op **Pauzeren**
+3. Status verandert naar **Gepauzeerd** — er worden geen facturen gegenereerd
 
-### Resume
+### Hervatten
 
-Restart a paused recurring invoice:
+Een gepauzeerde terugkerende factuur opnieuw starten:
 
-1. Open the paused recurring invoice
-2. Click **Resume**
-3. Generation continues from the next scheduled date
+1. Open de gepauzeerde terugkerende factuur
+2. Klik op **Hervatten**
+3. De generatie gaat verder vanaf de volgende geplande datum
 
-### Edit
+### Bewerken
 
-Editing a recurring invoice affects **future** invoices only. Previously generated invoices are not changed.
+Het bewerken van een terugkerende factuur heeft alleen effect op **toekomstige** facturen. Eerder gegenereerde facturen worden niet gewijzigd.
 
-### Delete
+### Verwijderen
 
-Remove the recurring template entirely. Previously generated invoices remain in your records.
+Verwijder het terugkerende sjabloon volledig. Eerder gegenereerde facturen blijven in je administratie.
 
-## Generated invoices
+## Gegenereerde facturen
 
-Each time a recurring invoice fires, a new invoice is created:
+Elke keer dat een terugkerende factuur wordt uitgevoerd, wordt een nieuwe factuur aangemaakt:
 
-- It uses the template's line items and customer
-- It receives the next automatic invoice number
-- It starts as a **Draft** (review and send) or auto-sends if configured
-- Each generated invoice is independent — you can edit it without affecting the template
+- Deze gebruikt de regelitems en klant van het sjabloon
+- Deze krijgt het volgende automatische factuurnummer
+- De factuur begint als **Concept** (beoordelen en versturen) of wordt automatisch verstuurd indien geconfigureerd
+- Elke gegenereerde factuur is onafhankelijk — je kunt deze bewerken zonder het sjabloon te beinvloeden
 
-### Locked VAT periods
+### Vergrendelde BTW-periodes
 
-If the scheduled date falls inside a VAT period that has already been filed and locked, MyCompanyDesk does **not** create the invoice. That period is skipped permanently for automatic generation (retrying would never succeed on its own), and the schedule moves on to the next due date. You receive a notification so you can decide what to do next: create a current-dated invoice for the customer, or handle the revenue through a supplementary VAT filing.
+Als de geplande datum in een BTW-periode valt die al is ingediend en vergrendeld, maakt MyCompanyDesk **geen** factuur aan. Die periode wordt definitief overgeslagen voor automatische generatie (herhaald proberen zou nooit vanzelf lukken) en het schema loopt door naar de volgende vervaldatum. Je ontvangt een melding zodat je zelf kunt beslissen: maak een huidige factuur voor de klant, of verwerk de omzet via een suppletie-aangifte.
 
-A paused or recently resumed template is especially likely to hit this case, because the next scheduled date may lag behind the most recently filed quarter.
+Een gepauzeerd of kort geleden hervat sjabloon loopt extra kans op dit scenario, omdat de eerstvolgende geplande datum kan achterlopen op het laatst ingediende kwartaal.
 
-## Viewing history
+## Geschiedenis bekijken
 
-The recurring invoice detail page shows all previously generated invoices, so you can track the full billing history.
+De detailpagina van de terugkerende factuur toont alle eerder gegenereerde facturen, zodat je de volledige facturatiegeschiedenis kunt bijhouden.
 
-## Source link
+## Bronlink
 
-If an invoice was generated from a recurring template, the invoice detail page shows a **created from recurring invoice** banner with a link back to that template. This lets you jump straight from a single invoice to the template that produced it.
+Als een factuur is aangemaakt vanuit een terugkerend sjabloon, toont de factuurdetailpagina een banner **Automatisch aangemaakt vanuit terugkerende factuur** met een link terug naar dat sjabloon. Zo spring je in één klik van een enkele factuur naar het sjabloon dat hem heeft geproduceerd.
 
-## What happens if my plan changes?
+## Wat gebeurt er als mijn pakket wijzigt?
 
-Recurring invoices are part of the Office plan. If you upgrade from Desk to Office, scheduled generation starts from the next due date. If you downgrade from Office to Desk, generation pauses automatically; existing templates and previously generated invoices stay in your workspace, and generation resumes when you upgrade again.
+Terugkerende facturen horen bij het Office-abonnement. Als je van Desk naar Office upgradet, start de automatische aanmaak vanaf de eerstvolgende vervaldatum. Als je van Office naar Desk downgradet, wordt de aanmaak automatisch gepauzeerd. Het sjabloon en de facturen die al zijn aangemaakt blijven in je werkruimte staan, en bij een latere upgrade wordt het schema hervat.
 
-## Bulk actions
+## Bulkacties
 
-- **Pause / Resume** — Toggle multiple recurring invoices
-- **Delete** — Remove multiple templates
+- **Pauzeren / Hervatten** — Schakel meerdere terugkerende facturen om
+- **Verwijderen** — Verwijder meerdere sjablonen
 
 ## Tips
 
-- Combine with [contracts](/features/contracts) for contract-based billing
-- Review generated invoices before the first auto-send to make sure everything looks right
-- Use the next occurrence preview to see when the next invoice will be created
-- Check the active count and metrics at the top of the page
+- Combineer met [contracten](/features/contracts) voor contractgebaseerde facturatie
+- Controleer gegenereerde facturen voor de eerste automatische verzending om te zorgen dat alles er goed uitziet
+- Gebruik het voorbeeld van de volgende uitvoering om te zien wanneer de volgende factuur wordt aangemaakt
+- Bekijk het actieve aantal en de statistieken bovenaan de pagina

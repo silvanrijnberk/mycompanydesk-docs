@@ -7,10 +7,10 @@ chatbot:
   follow_up: ["How do I upload receipts from my phone?", "How do I create an invoice on mobile?"]
 ---
 
-To access the app on mobile:
-1. Open your mobile browser (Safari, Chrome, etc.)
-2. Navigate to the same URL you use on desktop
-3. The app is responsive and adapts to your screen size
-4. You can add it to your home screen for quick access
+Om de applicatie op je mobiel te gebruiken:
+1. Open je mobiele browser (Chrome, Safari, etc.)
+2. Navigeer naar de applicatie-URL
+3. De interface past zich automatisch aan je schermformaat aan
+4. Je kunt het toevoegen aan je startscherm voor snelle toegang
 
-Tip: For the best mobile experience, use a modern browser and add the app to your home screen - it works like a native app.
+Tip: Alle functies zijn beschikbaar op mobiel - maak facturen, registreer uitgaven en beheer klanten onderweg.

@@ -1,51 +1,51 @@
 ---
-title: Keyboard Shortcuts
+title: Sneltoetsen
 ---
 
-# Keyboard Shortcuts
+# Sneltoetsen
 
-MyCompanyDesk keeps its set of keyboard shortcuts deliberately small. The shortcuts below are the ones that work today.
+MyCompanyDesk houdt het aantal sneltoetsen bewust klein. Hieronder staan de sneltoetsen die echt werken.
 
-## Search palette
+## Zoekvenster
 
-| Shortcut | Action |
+| Sneltoets | Actie |
 |---|---|
-| `Cmd+K` (Mac) / `Ctrl+K` (Windows/Linux) | Open or close the search palette |
+| `Cmd+K` (Mac) / `Ctrl+K` (Windows/Linux) | Zoekvenster openen of sluiten |
 
-The search palette is the fastest way to move around the app:
+Het zoekvenster is de snelste manier om door de app te bewegen:
 
-- Type at least two characters to search your customers, invoices, expenses, quotes, tasks, recurring invoices, recurring expenses, catalog items, documents, and inbox threads (plus projects, contracts, and properties when those features are enabled).
-- Settings are searchable too: type something like "VAT" or "reminders" to jump straight to the matching settings card.
-- Quick actions let you jump to any section or start a new invoice, quote, expense, or customer.
-- Filter chips under the search box narrow results to a single type.
+- Typ minimaal twee tekens om te zoeken in je klanten, facturen, uitgaven, offertes, taken, terugkerende facturen, terugkerende uitgaven, catalogusitems, documenten en inbox-threads (plus projecten, contracten en objecten als die onderdelen aanstaan).
+- Ook instellingen zijn doorzoekbaar: typ bijvoorbeeld "btw" of "herinneringen" om direct naar de juiste instellingenkaart te springen.
+- Met snelle acties spring je naar elk onderdeel of start je een nieuwe factuur, offerte, uitgave of klant.
+- Met de filterchips onder het zoekveld beperk je de resultaten tot een enkel type.
 
-Inside the palette:
+Binnen het zoekvenster:
 
-| Shortcut | Action |
+| Sneltoets | Actie |
 |---|---|
-| `Up` / `Down` | Move through the results |
-| `Enter` | Open the highlighted result |
-| `Esc` | Close the palette |
+| `Omhoog` / `Omlaag` | Door de resultaten bewegen |
+| `Enter` | Het geselecteerde resultaat openen |
+| `Esc` | Zoekvenster sluiten |
 
 ## Escape
 
-`Esc` steps back one level at a time:
+Met `Esc` ga je steeds een niveau terug:
 
-- While typing in a field, it removes focus from that field.
-- With a dialog open, it closes the dialog.
-- On a detail page, it takes you back to the list (the same as the back button).
+- Tijdens het typen in een veld haal je de focus van dat veld.
+- Bij een geopend dialoogvenster sluit je het dialoogvenster.
+- Op een detailpagina ga je terug naar de lijst (hetzelfde als de terugknop).
 
-## Site builder
+## Sitebouwer
 
-While editing your website in the site builder:
+Tijdens het bewerken van je website in de sitebouwer:
 
-| Shortcut | Action |
+| Sneltoets | Actie |
 |---|---|
-| `Cmd+Z` / `Ctrl+Z` | Undo |
-| `Cmd+Shift+Z` / `Ctrl+Shift+Z` or `Ctrl+Y` | Redo |
+| `Cmd+Z` / `Ctrl+Z` | Ongedaan maken |
+| `Cmd+Shift+Z` / `Ctrl+Shift+Z` of `Ctrl+Y` | Opnieuw uitvoeren |
 
-While a text field is focused, undo and redo apply to the text you are typing. Click outside the field first to undo a whole editing step.
+Zolang een tekstveld actief is, werken ongedaan maken en opnieuw uitvoeren op de tekst die je typt. Klik eerst buiten het veld om een hele bewerkingsstap terug te draaien.
 
-## Forms
+## Formulieren
 
-Standard browser keys work everywhere: `Tab` and `Shift+Tab` move between fields, and `Enter` submits most forms.
+De standaard browsertoetsen werken overal: met `Tab` en `Shift+Tab` spring je tussen velden en met `Enter` verstuur je de meeste formulieren.

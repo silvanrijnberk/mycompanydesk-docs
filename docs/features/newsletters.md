@@ -1,58 +1,58 @@
 ---
-title: Newsletters
-description: Design, send and track newsletters in MyCompanyDesk.
+title: Nieuwsbrieven
+description: Ontwerp, verstuur en volg nieuwsbrieven in MyCompanyDesk.
 last_verified: 2026-08-18
 ---
 
-# Newsletters
+# Nieuwsbrieven
 
-> **Status: in active development.** Newsletters ship behind the `newsletters` feature flag. Enable them in Settings > Components.
+> **Status: in actieve ontwikkeling.** Nieuwsbrieven zitten achter de `newsletters`-feature flag. Schakel ze in via Instellingen > Onderdelen.
 
-The newsletter editor helps you write, schedule and send mailings to your customers. It is linked to your customer list, so recipients stay in sync without importing CSV files.
+De nieuwsbriefeditor helpt je om mailings te schrijven, in te plannen en te versturen naar je klanten. Deze koppelt aan je klantenlijst, dus je hoeft geen CSV-bestanden te importeren.
 
-## Where to find it
+## Waar je het vindt
 
-Enable the feature from **Settings > Components**, then open **Newsletters** from the main navigation.
+Schakel de functie in via **Instellingen > Onderdelen**, en open daarna **Nieuwsbrieven** in het hoofdmenu.
 
-The page has three tabs:
+De pagina heeft drie tabbladen:
 
-- **Campaigns** - drafts, scheduled mailings and sent campaigns.
-- **Overview** - key numbers for recent campaigns.
-- **Subscribers** - the audience that receives your newsletters.
+- **Campagnes** - concepten, ingeplande mailings en verstuurde campagnes.
+- **Overzicht** - belangrijke cijfers van recente campagnes.
+- **Abonnees** - het publiek dat je nieuwsbrieven ontvangt.
 
-You need workspace admin rights to turn the feature on or off.
+Je hebt beheerdersrechten nodig om de functie aan of uit te zetten.
 
-## Campaign list
+## Campagneoverzicht
 
-Each campaign appears as a single row that shows:
+Elke campagne staat op een eigen rij met:
 
-- a coloured icon that reflects the campaign status
-- the subject line, or *no subject* when the draft is still empty
-- one line of metadata with the relevant timestamp
-- a status pill (draft, scheduled, sending, sent, cancelled or failed)
-- a small meter showing the open rate once a campaign has been sent
-- one primary action: **Edit** for drafts, **View** for sent or scheduled mailings
-- extra actions behind the overflow menu, including **Results**, **Resend** and **Delete**
+- een gekleurd icoon dat de status weergeeft
+- het onderwerp, of *geen onderwerp* als het concept nog leeg is
+- een regel metadata met het relevante tijdstip
+- een statuspill (concept, ingepland, versturend, verstuurd, geannuleerd of mislukt)
+- een kleine meter met het openpercentage zodra een campagne is verstuurd
+- een primaire actie: **Bewerk** voor concepten, **Bekijk** voor verstuurde of ingeplande mailings
+- extra acties achter het overflow-menu, zoals **Resultaten**, **Opnieuw versturen** en **Verwijderen**
 
-Hover the row to reveal the overflow menu on desktop. On mobile the menu is always visible.
+Beweeg met je muis over de rij om het overflow-menu op desktop te zien. Op mobiel is het menu altijd zichtbaar.
 
-## Creating a campaign
+## Een campagne maken
 
-There are two entry points:
+Er zijn twee startpunten:
 
-- **New newsletter** in the page header starts a blank draft.
-- **Create with AI** starts the AI wizard, which turns a short prompt into a first version of your mailing.
+- **Nieuwe nieuwsbrief** in de paginakop start een leeg concept.
+- **Maak met AI** start de AI-wizard, die van een korte opdracht een eerste versie van je mailing maakt.
 
-Both end up on the campaign editor, where you can edit the subject, preheader, body, sender and audience before sending or scheduling.
+Beide eindigen in de campagne-editor, waar je onderwerp, preheader, inhoud, afzender en publiek kunt aanpassen voor je verstuurt of inplant.
 
-## Sending and scheduling
+## Versturen en inplannen
 
-- **Send now** queues the campaign immediately.
-- **Schedule** lets you pick a date and time in the future.
-- **Save draft** stores the campaign without sending it.
+- **Nu versturen** zet de campagne direct in de wachtrij.
+- **Inplannen** laat je een datum en tijd in de toekomst kiezen.
+- **Concept opslaan** slaat de campagne op zonder te versturen.
 
-Once a campaign is queued or sent it can no longer be deleted; you can resend a failed campaign from the overflow menu.
+Zodra een campagne in de wachtrij staat of verstuurd is, kan deze niet meer worden verwijderd; een mislukte campagne kun je opnieuw versturen via het overflow-menu.
 
-## Results
+## Resultaten
 
-Open the **Results** action on a sent, sending or failed campaign to see per-recipient delivery and open data. The overview tab also rolls these numbers up into workspace-level totals.
+Open de actie **Resultaten** bij een verstuurde, versturende of mislukte campagne om per ontvanger bezorg- en opendata te zien. Het tabblad Overzicht vat deze cijfers samen op werkruimteniveau.

@@ -7,11 +7,12 @@ chatbot:
     - { label: "Open customers", to: "/customers" }
   follow_up: ["How do I edit a customer?", "How do I find a customer?", "How do I delete a customer?"]
 ---
-To handle duplicate customers:
-1. Identify the duplicate entries in your customer list
-2. Decide which record to keep (the one with the most complete data)
-3. Update the keeper record with any missing information from the duplicate
-4. Re-assign invoices from the duplicate to the keeper if needed
-5. Delete the duplicate record
+Om dubbele klantgegevens samen te voegen:
+1. Ga naar Klanten
+2. Identificeer de dubbele vermeldingen
+3. Open een van de duplicaten
+4. Gebruik de samenvoeg- of combineeroptie indien beschikbaar
+5. Selecteer welk record je als primair wilt behouden
+6. Bevestig - alle facturen en geschiedenis worden samengevoegd
 
-Tip: Prevent duplicates by searching for existing customers before creating new ones.
+Opmerking: Als er geen samenvoegoptie beschikbaar is, verplaats facturen handmatig en verwijder vervolgens het duplicaat.

@@ -1,5 +1,5 @@
 ---
-title: Change date format
+title: Datumnotatie wijzigen
 last_verified: 2026-08-14
 chatbot:
   triggers: ["date format", "change date format", "number format", "decimal format", "datumformaat", "datumformaat wijzigen", "datumsformat", "format date", "format nombre"]
@@ -8,8 +8,8 @@ chatbot:
   follow_up: ["How do I change my language?", "How do I change my currency?"]
 ---
 
-Date, time, and number formatting in MyCompanyDesk follows Dutch conventions and cannot be changed. There is no date or number format setting.
+Datums, tijden en getallen volgen in MyCompanyDesk de Nederlandse notatie en zijn niet aan te passen. Er is geen instelling voor datum- of getalnotatie.
 
-Number input fields, such as price and payment amount fields, accept both a comma and a period as the decimal separator, no matter which language your browser uses.
+Invoervelden voor getallen, zoals prijs- en betalingsbedragen, accepteren zowel een komma als een punt als decimaalteken, ongeacht welke taal je browser gebruikt.
 
-What you can change is the language of the app itself: go to Settings → "Weergave" (display) and pick Dutch, English, German, or French for the interface.
+Wat je wel kunt aanpassen is de taal van de app zelf: ga naar Instellingen → "Weergave" en kies Nederlands, Engels, Duits of Frans voor de interface.
