@@ -20,11 +20,11 @@ chatbot:
     - "How do I categorize expenses?"
 ---
 
-Pour configurer des depenses recurrentes automatiques :
-1. Accedez a Depenses recurrentes
-2. Cliquez sur « Nouvelle depense recurrente »
-3. Saisissez le fournisseur, le montant et la categorie
-4. Definissez la frequence et la date de debut
-5. Enregistrez puis verifiez quand les enregistrements seront crees
+Pour configurer des dépenses récurrentes automatiques :
+1. Accédez à Dépenses récurrentes
+2. Cliquez sur « Nouvelle dépense récurrente »
+3. Saisissez le fournisseur, le montant et la catégorie
+4. Définissez la fréquence et la date de début
+5. Enregistrez, puis vérifiez quand les enregistrements seront créés
 
-Cette reponse se limite au fonctionnement de la fonction de depenses recurrentes dans l application.
+Cette réponse se limite au fonctionnement de la fonction de dépenses récurrentes dans l'application.

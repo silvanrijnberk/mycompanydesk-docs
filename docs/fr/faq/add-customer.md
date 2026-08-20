@@ -10,9 +10,9 @@ chatbot:
 ---
 Voici comment ajouter un client :
 1. Allez dans Clients et ouvrez « Nouveau client »
-2. Saisissez le nom du client ou de l entreprise ainsi que les coordonnees
-3. Ajoutez l e-mail, le numero de telephone et l adresse
-4. Renseignez si besoin le numero de TVA, l IBAN et le delai de paiement
+2. Saisissez le nom du client ou de l'entreprise ainsi que les coordonnées
+3. Ajoutez l'e-mail, le numéro de téléphone et l'adresse
+4. Renseignez si besoin le numéro de TVA, l'IBAN et le délai de paiement
 5. Enregistrez le client
 
-Astuce : le formulaire client n a pas de champ separe pour la langue preferee pour le moment, alors concentrez-vous sur les donnees de facturation et de paiement reutilisees plus tard.
+Astuce : le formulaire client n'a pas de champ séparé pour la langue préférée pour le moment, concentrez-vous donc sur les données de facturation et de paiement réutilisées plus tard.

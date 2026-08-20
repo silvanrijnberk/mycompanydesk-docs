@@ -24,12 +24,12 @@ chatbot:
     - "How do I set default payment terms?"
 ---
 
-Die Kundenfelder, die die App am haeufigsten verwendet, sind:
+Die Kundenfelder, die die App am häufigsten verwendet, sind:
 1. Kunden- oder Firmenname - sichtbar auf Rechnungen und Angeboten
 2. E-Mail-Adresse - wird beim Versand von Dokumenten per E-Mail verwendet
 3. Adressfelder - werden auf Dokumentlayouts mit Adressangaben wiederverwendet
-4. USt-IdNr. - erscheint auf Dokumenten, wenn das Feld ausgefuellt ist
+4. USt-IdNr. - erscheint auf Dokumenten, wenn das Feld ausgefüllt ist
 5. IBAN und Zahlungsfrist - werden dort wiederverwendet, wo Rechnungsstandards sie brauchen
 6. Ansprechpartner und Telefonnummer - im Kundenprofil als Referenz sichtbar
 
-Fuelle die Felder aus, die die App auf neuen Rechnungen, Angeboten und Versandansichten wiederverwenden soll.
+Füllen Sie die Felder aus, die die App auf neuen Rechnungen, Angeboten und Versandansichten wiederverwenden soll.

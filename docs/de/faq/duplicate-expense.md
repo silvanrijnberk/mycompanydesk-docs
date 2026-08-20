@@ -10,8 +10,8 @@ chatbot:
 ---
 
 So duplizieren Sie eine Ausgabe:
-1. Öffnen Sie die bezahlte Ausgabe, die Sie kopieren möchten. Duplizieren ist nur bei bezahlten Ausgaben verfügbar; bei einer unbezahlten Ausgabe sehen Sie stattdessen „Als bezahlt markieren"
-2. Klicken Sie oben auf „Duplizieren" oder nutzen Sie die Karte „Aktionen" in der Seitenleiste
+1. Öffnen Sie die bezahlte Ausgabe, die Sie kopieren möchten. Duplizieren ist nur bei bezahlten Ausgaben verfügbar; bei einer unbezahlten Ausgabe sehen Sie stattdessen „Als bezahlt markieren“
+2. Klicken Sie oben auf „Duplizieren“ oder nutzen Sie die Karte „Aktionen“ in der Seitenleiste
 3. Es wird eine neue unbezahlte Kopie mit denselben Angaben erstellt, datiert auf heute. Die Kopie behält denselben Lieferanten, dieselbe Kategorie, dieselbe USt.-Behandlung, dasselbe Projekt, denselben Kunden, das Objekt und den Investitionsstatus. Wenn das Original eine Investition ist, wird die Kopie ebenfalls als Investition mit derselben Nutzungsdauer und demselben Restwert erstellt
 4. Passen Sie Betrag oder andere Details bei Bedarf an
 

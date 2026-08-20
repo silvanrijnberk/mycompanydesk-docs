@@ -31,7 +31,7 @@ Wenn Ihr Steuerberater bereits MyCompanyDesk nutzt, kann er Sie direkt aus seine
 4. Erstellen Sie Ihr Konto mit E-Mail und Passwort. Sie bleiben Inhaber Ihres Arbeitsbereichs und Ihrer Daten
 5. Nach der Registrierung erhält Ihr Steuerberater automatisch Zugang, damit er Ihre Abgaben prüfen kann
 
-Sie können diesen Zugang später unter Einstellungen → „Zugang und Steuerberater" widerrufen.
+Sie können diesen Zugang später unter Einstellungen → „Zugang und Steuerberater“ widerrufen.
 
 ## Ihr Arbeitsbereich
 

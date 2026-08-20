@@ -22,7 +22,7 @@ chatbot:
 ---
 
 So verwalten Sie Zahlungsmethoden auf Dokumenten:
-1. Gehen Sie zu Einstellungen und öffnen Sie „Zahlung"
+1. Gehen Sie zu Einstellungen und öffnen Sie „Zahlung“
 2. Tragen Sie Ihre IBAN ein, um die Banküberweisung anzubieten; eine eingetragene IBAN aktiviert sie automatisch und setzt einen Zahlungs-QR-Code auf Ihre Rechnungen
 3. Aktivieren Sie PayPal und geben Sie Ihre PayPal-E-Mail-Adresse ein, wenn Sie das anbieten möchten
 4. Verbinden Sie Mollie oder Stripe, wenn Kunden online bezahlen sollen, zum Beispiel mit iDEAL

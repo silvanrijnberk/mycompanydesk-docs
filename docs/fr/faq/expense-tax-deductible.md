@@ -9,10 +9,10 @@ chatbot:
   follow_up: ["How do I categorize expenses?", "How do I upload a receipt?", "How do I prepare my VAT return?"]
 ---
 
-Pour enregistrer la deductibilite dans l application :
-1. Ouvrez la depense
-2. Definissez l option deductible ou non deductible pour cet enregistrement
-3. Verifiez aussi la categorie et les reglages TVA sur cette meme depense
-4. Enregistrez la depense puis utilisez les filtres de rapport pour consulter les totaux enregistres
+Pour enregistrer la déductibilité dans l'application :
+1. Ouvrez la dépense
+2. Définissez l'option déductible ou non déductible pour cet enregistrement
+3. Vérifiez aussi la catégorie et les réglages TVA sur cette même dépense
+4. Enregistrez la dépense, puis utilisez les filtres de rapport pour consulter les totaux enregistrés
 
-L application peut enregistrer ce reglage, mais elle ne decide pas si une depense est legalement deductible.
+L'application peut enregistrer ce réglage, mais elle ne décide pas si une dépense est légalement déductible.

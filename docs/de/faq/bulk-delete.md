@@ -11,10 +11,10 @@ chatbot:
 ---
 
 Um mehrere Einträge gleichzeitig zu löschen:
-1. Gehe zur entsprechenden Listenansicht (Rechnungen, Ausgaben usw.)
-2. Verwende die Kontrollkästchen, um die zu löschenden Einträge auszuwählen
-3. Klicke auf das Massenaktionsmenü oben
-4. Wähle "Ausgewählte löschen"
-5. Bestätige die Löschung
+1. Gehen Sie zur entsprechenden Listenansicht (Rechnungen, Ausgaben usw.)
+2. Verwenden Sie die Kontrollkästchen, um die zu löschenden Einträge auszuwählen
+3. Klicken Sie auf das Massenaktionsmenü oben
+4. Wählen Sie „Ausgewählte löschen“
+5. Bestätigen Sie die Löschung
 
-Warnung: Gelöschte Einträge können möglicherweise nicht wiederhergestellt werden. Erwäge stattdessen die Archivierung wichtiger Datensätze.
+Warnung: Gelöschte Einträge können möglicherweise nicht wiederhergestellt werden. Erwägen Sie stattdessen die Archivierung wichtiger Datensätze.

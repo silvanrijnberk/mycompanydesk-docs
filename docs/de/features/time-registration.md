@@ -49,7 +49,7 @@ Möchten Sie lieber nur eine Tagessumme erfassen? Aktivieren Sie **Nur Stunden M
 
 ## Ihre Stunden abrechnen
 
-Der fuer jeden Zeiteintrag angezeigte Satz ist der **effektive Stundensatz** dieses Eintrags. Hat der Eintrag einen eigenen Stundensatz, wird dieser verwendet; andernfalls faellt er auf den Projektsatz zurueck, dann auf den Kundensatz und schliesslich auf den Arbeitsbereichs-Standard. Der Betrag einer Rechnungszeile spiegelt also immer den tatsaechlichen mit dem Eintrag gespeicherten Satz wider.
+Der für jeden Zeiteintrag angezeigte Satz ist der **effektive Stundensatz** dieses Eintrags. Hat der Eintrag einen eigenen Stundensatz, wird dieser verwendet; andernfalls fällt er auf den Projektsatz zurück, dann auf den Kundensatz und schließlich auf den Arbeitsbereichs-Standard. Der Betrag einer Rechnungszeile spiegelt also immer den tatsächlichen mit dem Eintrag gespeicherten Satz wider.
 
 ### Eine Rechnung von der Zeitplan-Seite erstellen
 

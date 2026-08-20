@@ -70,7 +70,7 @@ Extrahiert: Einzelne Positionen mit Beschreibungen und Beträgen.
 
 Der Scanner hat ein Panel mit erweiterten Optionen:
 
-- **Anweisungen**: Fügen Sie Freitext-Kontext hinzu, um der KI zu helfen (z. B. „Dies ist ein niederländischer Beleg von Albert Heijn")
+- **Anweisungen**: Fügen Sie Freitext-Kontext hinzu, um der KI zu helfen (z. B. „Dies ist ein niederländischer Beleg von Albert Heijn“)
 - **Extraktionsmodus**: eine einzelne Ausgabe oder mehrere Positionen (Voreinstellung: Mehrfach)
 - **Kategorie**: Beschränken Sie die Extraktion auf eine Ausgabenkategorie, oder lassen Sie alle Kategorien zu
 - **Filter-Tags**: Stichwort-Tags; nur Positionen, die zu den Tags passen, werden extrahiert

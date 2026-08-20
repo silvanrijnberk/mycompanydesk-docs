@@ -8,12 +8,12 @@ chatbot:
     - { label: "Open expenses", to: "/expenses" }
   follow_up: ["How do I change the expense category?", "How do I upload a receipt?", "How do I restore a trashed expense?"]
 ---
-So bearbeitest du eine Ausgabe:
-1. Öffne die Ausgabe aus der Liste
-2. Klicke auf „Bearbeiten"
-3. Aktualisiere Lieferant, Betrag, Kategorie, Datum oder Notizen. Das Speichern mit einem Betrag von 0,00 EUR wird verhindert, es sei denn, es handelt sich um einen echten Nullwert wie eine rein MwSt.-haltige Gutschrift.
-4. Speichere deine Änderungen
+So bearbeiten Sie eine Ausgabe:
+1. Öffnen Sie die Ausgabe aus der Liste
+2. Klicken Sie auf „Bearbeiten“
+3. Aktualisieren Sie Lieferant, Betrag, Kategorie, Datum oder Notizen. Das Speichern mit einem Betrag von 0,00 EUR wird verhindert, es sei denn, es handelt sich um einen echten Nullwert wie eine rein MwSt.-haltige Gutschrift.
+4. Speichern Sie Ihre Änderungen
 
-Eine Ausgabe im Papierkorb kann nicht bearbeitet werden. Stelle sie zuerst aus dem Papierkorb wieder her und bearbeite sie dann.
+Eine Ausgabe im Papierkorb kann nicht bearbeitet werden. Stellen Sie sie zuerst aus dem Papierkorb wieder her und bearbeiten Sie sie dann.
 
 Die gleichen Einschränkungen gelten, wenn Sie einen KI-Vorschlag übernehmen. Eine Ausgabe im Papierkorb oder eine gesperrte MwSt.-Periode blockiert die Übernahme, und der Vorschlag wird nicht geschrieben.

@@ -9,10 +9,10 @@ chatbot:
   follow_up: ["How do I add line items?", "How do I preview the invoice?", "How do I change the PDF style?"]
 ---
 
-Pour ajouter des notes a une facture :
-1. Ouvrez la facture en mode edition
+Pour ajouter des notes à une facture :
+1. Ouvrez la facture en mode édition
 2. Utilisez la section « Notes » sous les lignes de facture
 3. Ajoutez le texte que vous voulez conserver avec cette facture
 4. Enregistrez la facture
 
-Astuce : utilisez les notes pour les instructions de paiement, les references de projet ou les conditions qui concernent seulement cette facture.
+Astuce : utilisez les notes pour les instructions de paiement, les références de projet ou les conditions qui ne concernent que cette facture.

@@ -9,9 +9,9 @@ chatbot:
 ---
 
 Um schnell in der Anwendung zu suchen:
-1. Verwende die Suchleiste oben in den Listenansichten
-2. Gib Kundennamen, Rechnungsnummern oder Beträge ein
-3. Ergebnisse werden in Echtzeit gefiltert, während du tippst
-4. Klicke auf ein Ergebnis, um es direkt zu öffnen
+1. Verwenden Sie die Suchleiste oben in den Listenansichten
+2. Geben Sie Kundennamen, Rechnungsnummern oder Beträge ein
+3. Ergebnisse werden in Echtzeit gefiltert, während Sie tippen
+4. Klicken Sie auf ein Ergebnis, um es direkt zu öffnen
 
-Tipp: Suchbegriffe werden automatisch getrimmt. Eingefügter Text mit einem Leerzeichen davor oder danach liefert dieselben Treffer, du musst ihn also nicht erst bereinigen.
+Tipp: Suchbegriffe werden automatisch getrimmt. Eingefügter Text mit einem Leerzeichen davor oder danach liefert dieselben Treffer, Sie müssen ihn also nicht erst bereinigen.

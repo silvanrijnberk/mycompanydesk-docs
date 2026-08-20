@@ -25,8 +25,8 @@ chatbot:
 
 So löschen Sie eine Rechnung:
 1. Öffnen Sie die Rechnung, die Sie löschen möchten
-2. Scrollen Sie in der Seitenleiste zum Bereich „Gefahrenzone"
-3. Klicken Sie auf „Löschen"
+2. Scrollen Sie in der Seitenleiste zum Bereich „Gefahrenzone“
+3. Klicken Sie auf „Löschen“
 4. Bestätigen Sie die Löschung
 
 Nur Entwurfsrechnungen können in einem Schritt endgültig gelöscht werden. Bei gesendeten oder bezahlten Rechnungen führt jeder Löschvorgang eine Stufe weiter: aktiv wird archiviert, archiviert wird in den Papierkorb verschoben, und im Papierkorb wird endgültig gelöscht. Verwenden Sie Stornieren, wenn der Datensatz in der Rechnungsliste sichtbar bleiben soll.

@@ -9,8 +9,8 @@ chatbot:
     - { label: "Open invoice design", to: "/settings/factuurontwerp" }
   follow_up: ["How do I change quote branding?", "How do I send the quote after preview?", "How do I edit the quote?"]
 ---
-Pour previsualiser, imprimer ou telecharger un devis PDF :
-1. Ouvrez la page detail du devis
-2. Cliquez sur « Apercu »
-3. Utilisez Imprimer ou Telecharger PDF
-4. Revenez pour modifier si necessaire
+Pour prévisualiser, imprimer ou télécharger un devis en PDF :
+1. Ouvrez la page détail du devis
+2. Cliquez sur « Aperçu »
+3. Utilisez Imprimer ou Télécharger PDF
+4. Revenez pour modifier si nécessaire

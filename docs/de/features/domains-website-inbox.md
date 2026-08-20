@@ -200,7 +200,7 @@ Die öffentliche Website wird unter der am besten geeigneten URL des Unternehmen
 
 ### Site-Pakete
 
-`/website/pakketten` ist eine Galerie genehmigter, vorgestylter Site-Pakete. Sie koennen nach Branche oder Stil suchen. Wenn Sie ein Paket waehlen, wird Ihre Entwurfs-Website ersetzt (Seiten, Abschnitte und Design-Tokens), aber niemals automatisch veroeffentlicht; Sie pruefen das Ergebnis im Website-Builder und veroeffentlichen es selbst, wenn Sie bereit sind. Aeltere `/website/ontwerpen`-Links leiten hierhin weiter.
+`/website/pakketten` ist eine Galerie genehmigter, vorgestylter Site-Pakete. Sie können nach Branche oder Stil suchen. Wenn Sie ein Paket wählen, wird Ihre Entwurfs-Website ersetzt (Seiten, Abschnitte und Design-Tokens), aber niemals automatisch veröffentlicht; Sie prüfen das Ergebnis im Website-Builder und veröffentlichen es selbst, wenn Sie bereit sind. Ältere `/website/ontwerpen`-Links leiten hierhin weiter.
 
 Siehe [Website-Builder](/de/advanced/business-page) für die vollständige Editor-Anleitung.
 
@@ -277,7 +277,7 @@ Die Checkout-Erfolg- und Checkout-Abgebrochen-Seiten zeigen dem Käufer einen ge
 
 Der Posteingang-Tab ist in der Seitenleiste und der unteren Navigationsleiste immer sichtbar. Auf kostenlosen Tarifen ohne Posteingang erscheint er als Upgrade-Hinweis und öffnet den Tarifvergleich, wenn er ausgewählt wird. Auf kostenpflichtigen Tarifen bleibt der Tab immer sichtbar, auch bevor eine Domain verbunden wurde, weil er der Einstieg in den Posteingang-Setup-Assistenten ist.
 
-Für einen Workspace, der bereits eine Posteingang-fähige Domain eingerichtet hat, zeigt der Tab den echten Posteingang mit Ungelesen-Zählern und vollständigem Thread-Management. Für bezahlte Workspaces ohne Posteingang-Domain leitet ein Klick auf den Tab zu `/inbox/setup`, damit du Domain und Posteingang in einem Ablauf verbindest und aktivierst.
+Für einen Workspace, der bereits eine Posteingang-fähige Domain eingerichtet hat, zeigt der Tab den echten Posteingang mit Ungelesen-Zählern und vollständigem Thread-Management. Für bezahlte Workspaces ohne Posteingang-Domain leitet ein Klick auf den Tab zu `/inbox/setup`, damit Sie Domain und Posteingang in einem Ablauf verbinden und aktivieren.
 
 ## Demo-Website beanspruchen
 

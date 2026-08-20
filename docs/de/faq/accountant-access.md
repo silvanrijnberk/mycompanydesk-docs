@@ -32,10 +32,10 @@ Es gibt zwei Wege, wie der Steuerberater-Zugang starten kann: Sie laden Ihren St
 
 ## Sie laden Ihren Steuerberater ein
 
-1. Gehen Sie zu Einstellungen → „Zugang und Steuerberater"
-2. Klicken Sie im Bereich Steuerberater auf „Steuerberater hinzufügen" und tragen Sie die Kontaktdaten ein
+1. Gehen Sie zu Einstellungen → „Zugang und Steuerberater“
+2. Klicken Sie im Bereich Steuerberater auf „Steuerberater hinzufügen“ und tragen Sie die Kontaktdaten ein
 3. Senden Sie die Einladung, wenn Ihr Steuerberater ein Konto erstellen soll
-4. Öffnen Sie „Zugang verwalten", um die Seitenberechtigungen festzulegen
+4. Öffnen Sie „Zugang verwalten“, um die Seitenberechtigungen festzulegen
 
 Der Steuerberater-Zugang ist in jedem Tarif kostenlos; er erfordert weder Pro noch einen Teamplatz. Häufige Statuswerte sind nur Kontakt, eingeladen, aktiv und widerrufen.
 
@@ -50,7 +50,7 @@ Wenn Ihr Steuerberater MyCompanyDesk nutzt, kann er Sie direkt aus seinem Steuer
 
 Wenn der Arbeitsbereich, für den Sie eingeladen werden, bereits ein eigenes aktives Abonnement hat, kann die Kanzlei die Abrechnung dafür nicht übernehmen, bis dieses Abonnement gekündigt ist. Sie sehen eine Fehlermeldung, wenn die Kanzlei versucht, die Kanzleiabrechnung einzurichten, während Ihr eigenes Abonnement noch aktiv ist.
 
-Sie können diesen Zugang später jederzeit unter Einstellungen → „Zugang und Steuerberater" widerrufen. Der Einladungslink ist 30 Tage gültig und kann von Ihrem Steuerberater erneut gesendet oder widerrufen werden.
+Sie können diesen Zugang später jederzeit unter Einstellungen → „Zugang und Steuerberater“ widerrufen. Der Einladungslink ist 30 Tage gültig und kann von Ihrem Steuerberater erneut gesendet oder widerrufen werden.
 
 ## Was Ihr Steuerberater sieht
 

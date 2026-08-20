@@ -9,7 +9,7 @@ The same content also feeds the in-app **MyCompanyDesk chatbot** via the `search
 ```bash
 npm install
 npm run docs:dev             # http://localhost:5173
-npm run check:descriptions   # titles and meta descriptions, all 612 pages
+npm run check                # descriptions + language, all 612 pages
 ```
 
 ## Build & deploy
@@ -99,6 +99,17 @@ All three are optional; the chatbot still indexes the page body for semantic sea
 ```bash
 # (run by Huisbot's docs_freshness_check cron, weekly)
 ```
+
+## Language quality
+
+German is written with real umlauts and eszett and in the Sie-form; French with its accents and apostrophes. `npm run check:language` rejects the ASCII stand-ins (`oeffnen`, `ueberfaellig`, `einschliesslich`, `creer`, `l entreprise`) that an earlier translation pipeline produced in bulk.
+
+Two carve-outs are deliberate:
+
+- `chatbot.triggers` in frontmatter stay ASCII. They are search terms matching what a user types, not prose, so the checker only reads the body.
+- The **German app UI is itself in the du-form** (`Über dich`, `Deine Daten`, `Dein Abonnement`). Those labels are quoted verbatim; the prose around them stays Sie-form.
+
+`FR_BACKLOG` in the checker lists 20 French pages that an earlier run wrote entirely without accents. It is a ratchet: a listed page may shrink or be cleared, never grow, and any page not listed fails outright. Clearing that backlog is a French writing pass, not a find-and-replace, because it needs `à` vs `a`, `où` vs `ou` and every past participle decided in context.
 
 ## i18n
 

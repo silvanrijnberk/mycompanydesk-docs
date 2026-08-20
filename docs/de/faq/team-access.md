@@ -32,9 +32,9 @@ chatbot:
 ---
 
 So verwalten Sie, wer Zugang zu Ihrem Arbeitsbereich hat:
-1. Gehen Sie zu Einstellungen → „Zugang und Steuerberater"
-2. Prüfen Sie die aktuellen Mitglieder und Rollen im Bereich „Personen mit Zugang"
-3. Nutzen Sie „Jemandem Zugang geben", um einen Teamkollegen per E-Mail einzuladen
-4. Öffnen Sie „Zugang verwalten" oder das Zahnradsymbol bei einem Mitglied, um den Seitenzugriff festzulegen
+1. Gehen Sie zu Einstellungen → „Zugang und Steuerberater“
+2. Prüfen Sie die aktuellen Mitglieder und Rollen im Bereich „Personen mit Zugang“
+3. Nutzen Sie „Jemandem Zugang geben“, um einen Teamkollegen per E-Mail einzuladen
+4. Öffnen Sie „Zugang verwalten“ oder das Zahnradsymbol bei einem Mitglied, um den Seitenzugriff festzulegen
 
 Berechtigungen werden pro Seite mit den Optionen Lesen, Schreiben und Erstellen verwaltet. Das Einladen von Teammitgliedern erfordert den Pro-Tarif; der Steuerberater-Bereich auf derselben Seite ist in jedem Tarif kostenlos.

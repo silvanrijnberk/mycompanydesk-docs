@@ -22,7 +22,7 @@ chatbot:
 
 So markieren Sie eine Ausgabe als bezahlt:
 1. Öffnen Sie die Ausgabe aus der Liste
-2. Klicken Sie auf „Als bezahlt markieren"
+2. Klicken Sie auf „Als bezahlt markieren“
 3. Der Status wird sofort auf Bezahlt aktualisiert
 
 Dieser eine Klick genügt: Es erscheint kein Dialog für das Zahlungsdatum, und ein separates Speichern ist nicht nötig.

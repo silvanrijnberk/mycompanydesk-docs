@@ -7,11 +7,11 @@ chatbot:
   actions: []
   follow_up: ["How do I create a project?", "How do I link invoices to a contract?"]
 ---
-Pour creer un contrat :
+Pour créer un contrat :
 1. Ouvrez Contrats puis « Nouveau contrat »
-2. Pour les contrats de location, selectionnez le bien puis le client. Pour les autres types (service, NDA, projet), seul un client est necessaire.
-3. Saisissez le nom du contrat, le montant, le taux de TVA et la recurrence
-4. Definissez la date de debut et la date de la premiere facture
-5. Ajoutez si besoin les details de service ou l envoi automatique puis enregistrez
+2. Pour les contrats de location, sélectionnez le bien puis le client. Pour les autres types (service, NDA, projet), seul un client est nécessaire.
+3. Saisissez le nom du contrat, le montant, le taux de TVA et la récurrence
+4. Définissez la date de début et la date de la première facture
+5. Ajoutez si besoin les détails de service ou l'envoi automatique, puis enregistrez
 
 Astuce : vous pouvez rouvrir le contrat plus tard pour ajuster la configuration de facturation.

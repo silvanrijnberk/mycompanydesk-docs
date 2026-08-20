@@ -9,8 +9,8 @@ chatbot:
   follow_up: ["How do I duplicate a quote?", "How do I preview the updated quote?", "How do I change quote validity?"]
 ---
 
-So bearbeitest du ein Angebot:
-1. Oeffne das Angebot aus der Liste
-2. Klicke auf „Bearbeiten" (oder /quotes/{id}/edit)
-3. Aktualisiere Kundendaten, Positionen, Notizen oder Daten
-4. Speichere
+So bearbeiten Sie ein Angebot:
+1. Öffnen Sie das Angebot aus der Liste
+2. Klicken Sie auf „Bearbeiten“ (oder /quotes/{id}/edit)
+3. Aktualisieren Sie Kundendaten, Positionen, Notizen oder Daten
+4. Speichern Sie

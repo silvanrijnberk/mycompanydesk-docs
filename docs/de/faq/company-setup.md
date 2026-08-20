@@ -12,10 +12,10 @@ chatbot:
 
 Checkliste für die Ersteinrichtung. Alles liegt unter Einstellungen:
 
-1. Gehen Sie zu Einstellungen → „Unternehmensdaten" und ergänzen Sie offiziellen Firmennamen, Adresse, KVK-Nummer und USt.-Nummer
-2. Gehen Sie zu Einstellungen → „Logo und Farbe", um Ihr Logo hochzuladen und Ihre Markenfarbe zu wählen
-3. Gehen Sie zu Einstellungen → „Zahlung", um Ihre IBAN einzutragen; sobald das Feld ausgefüllt ist, erscheinen die Überweisungsdaten automatisch auf Ihren Rechnungen
-4. Gehen Sie zu Einstellungen → „Rechnungen und Angebote" für Zahlungsfrist, automatische Erinnerungen und die Gültigkeitsdauer von Angeboten
-5. Gehen Sie zu Einstellungen → „Darstellung" für Ihr persönliches Theme, die Textgröße und die App-Sprache
+1. Gehen Sie zu Einstellungen → „Unternehmensdaten“ und ergänzen Sie offiziellen Firmennamen, Adresse, KVK-Nummer und USt.-Nummer
+2. Gehen Sie zu Einstellungen → „Logo und Farbe“, um Ihr Logo hochzuladen und Ihre Markenfarbe zu wählen
+3. Gehen Sie zu Einstellungen → „Zahlung“, um Ihre IBAN einzutragen; sobald das Feld ausgefüllt ist, erscheinen die Überweisungsdaten automatisch auf Ihren Rechnungen
+4. Gehen Sie zu Einstellungen → „Rechnungen und Angebote“ für Zahlungsfrist, automatische Erinnerungen und die Gültigkeitsdauer von Angeboten
+5. Gehen Sie zu Einstellungen → „Darstellung“ für Ihr persönliches Theme, die Textgröße und die App-Sprache
 
 Nächster Schritt: Erstellen Sie Ihren ersten Kunden und senden Sie eine Testrechnung!

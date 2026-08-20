@@ -11,7 +11,7 @@ chatbot:
 
 So sehen Sie die Zahlungshistorie eines Kunden:
 1. Öffnen Sie Kunden und wählen Sie den Kunden aus
-2. Prüfen Sie die Karte „Aktuelle Rechnungen" im Kundenprofil; dort sehen Sie pro Rechnung Nummer, Datum, Gesamtbetrag und Status
+2. Prüfen Sie die Karte „Aktuelle Rechnungen“ im Kundenprofil; dort sehen Sie pro Rechnung Nummer, Datum, Gesamtbetrag und Status
 3. Öffnen Sie eine Rechnung aus dieser Karte für die Zahlungsdetails, etwa wann und wie bezahlt wurde
 
 Die vollständigen Zahlungsinformationen finden Sie auf der Detailseite der Rechnung; das Kundenprofil liefert die schnelle Statusübersicht.

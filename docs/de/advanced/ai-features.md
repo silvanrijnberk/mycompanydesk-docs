@@ -9,7 +9,7 @@ MyCompanyDesk enthalt KI-gestutzte Funktionen, die Ihnen helfen, schneller und i
 
 ## Kontextbezogener Leitfaden
 
-Das Assistenten-Symbol in der Topbar offnet ein Chat-Panel, das weiss, auf welcher Seite Sie sich befinden, welche Datensatze Sie betrachten und wie Ihre Workspace-Daten aussehen. Es ist als Tool-using Agent aufgebaut: Statt Zahlen zu erraten, fragt sie danach. Auf dem Desktop offnet sich das Panel als Drawer, der rechts an den Bildschirmrand angeheftet ist; auf Mobilgeraten offnet es sich als Bottom Sheet uber die Sparkles-Schaltflache im mobilen Header.
+Das Assistenten-Symbol in der Topbar offnet ein Chat-Panel, das weiß, auf welcher Seite Sie sich befinden, welche Datensatze Sie betrachten und wie Ihre Workspace-Daten aussehen. Es ist als Tool-using Agent aufgebaut: Statt Zahlen zu erraten, fragt sie danach. Auf dem Desktop offnet sich das Panel als Drawer, der rechts an den Bildschirmrand angeheftet ist; auf Mobilgeraten offnet es sich als Bottom Sheet uber die Sparkles-Schaltflache im mobilen Header.
 
 ### Chat-Limits
 
@@ -97,7 +97,7 @@ Grammatik- und Rechtschreibprufung fur Ihre Dokumente:
 Unterstutzt Englisch, Niederlandisch, Deutsch und Franzosisch.
 
 ::: info
-Textprufung ist in allen Tarifen verfugbar, einschliesslich Gratis.
+Textprufung ist in allen Tarifen verfugbar, einschließlich Gratis.
 :::
 
 ## Kontozusammenfassungen
@@ -108,19 +108,19 @@ KI generiert regelmaassige Zusammenfassungen Ihrer Geschaftsaktivitat:
 - **Wochentlich** -- Wochenubersicht mit Trends
 - **Monatlich** -- Umfassende monatliche Analyse
 
-Zusammenfassungen werden in Ihrer bevorzugten Sprache generiert und sind ueber das Dashboard verfuegbar.
+Zusammenfassungen werden in Ihrer bevorzugten Sprache generiert und sind über das Dashboard verfügbar.
 
 ## Dashboard-Briefing Insight (Pro)
 
-Der Dashboard-Briefing-Hero zeigt ein kurzes, persoenliches KI-generiertes Briefing fuer Pro-Workspaces. Der Server generiert das Briefing einmal pro Kalendertag und cached es fuer den Rest des Tages.
+Der Dashboard-Briefing-Hero zeigt ein kurzes, persönliches KI-generiertes Briefing für Pro-Workspaces. Der Server generiert das Briefing einmal pro Kalendertag und cached es für den Rest des Tages.
 
-- **Stimme.** Das Briefing spricht in der ersten Person ("ich") und adressiert den Nutzer formell ("Sie"). Es oeffnet mit der dringendsten Handlung, fuegt hoechstens ein oder zwei unterstuetzende Punkte hinzu und schliesst mit einem konkreten naechsten Schritt (z.B. "senden Sie Atelier Norden heute eine Zahlungserinnerung"). Warm, selbstbewusst, praegnant -- der Ton einer klugen Assistenz, die das Geschaeft kennt.
-- **Modell.** Der Endpunkt `POST /api/dashboard/briefing-insight` laeuft auf Vertex AI `europe-west1` (Gemini 2.5 Flash). Ollama Cloud wird fuer diesen Pfad nicht verwendet.
-- **Input-Signale.** Der Client sendet eine vollstaendige Uebersicht der Geschaeftsdaten des Tages: Liquiditaet und Runway, Umsatz und Gewinn (MTD + YTD), ueberfaellige Forderungen (Anzahl, Summe, groesster Kunde), Ausgaben (bald faellig + ueberfaellig), Entwurfsanzahl, Projektmargen, USt.-Position (Saldo, Frist, Checklistenfortschritt, Reserve), nicht abgerechnete Stunden, aktuelle Zahlungen und neue Kunden. Alle Betraege werden vor dem Erreichen des Modells auf ganze Euro gerundet.
+- **Stimme.** Das Briefing spricht in der ersten Person ("ich") und adressiert den Nutzer formell ("Sie"). Es öffnet mit der dringendsten Handlung, fügt höchstens ein oder zwei unterstützende Punkte hinzu und schließt mit einem konkreten nächsten Schritt (z.B. "senden Sie Atelier Norden heute eine Zahlungserinnerung"). Warm, selbstbewusst, prägnant -- der Ton einer klugen Assistenz, die das Geschäft kennt.
+- **Modell.** Der Endpunkt `POST /api/dashboard/briefing-insight` läuft auf Vertex AI `europe-west1` (Gemini 2.5 Flash). Ollama Cloud wird für diesen Pfad nicht verwendet.
+- **Input-Signale.** Der Client sendet eine vollständige Übersicht der Geschäftsdaten des Tages: Liquidität und Runway, Umsatz und Gewinn (MTD + YTD), überfällige Forderungen (Anzahl, Summe, größter Kunde), Ausgaben (bald fällig + überfällig), Entwurfsanzahl, Projektmargen, USt.-Position (Saldo, Frist, Checklistenfortschritt, Reserve), nicht abgerechnete Stunden, aktuelle Zahlungen und neue Kunden. Alle Beträge werden vor dem Erreichen des Modells auf ganze Euro gerundet.
 - **Sprachen.** Das Modell generiert das Briefing in `nl/de/en/fr` basierend auf der Sprache des Benutzers. Der Client sendet den ISO-639-1-Code mit der Anfrage.
 - **Tarif-Gating.** Der Endpunkt ist an das `ai_insights` Feature-Flag gebunden, das Pro erfordert. Wenn ein Workspace nicht berechtigt ist, zeigt der Client nur den Standard-Lede an.
-- **Fallback.** Bei einem Fehler (Modell nicht verfuegbar, 403, Netzwerkfehler) verwendet der Client den bestehenden Standard-Lede. Dem Benutzer wird keine Fehlermeldung angezeigt.
-- **Client UX.** Waehrend das AI-Briefing laedt, zeigt der Hero den gecachten deterministischen Lede des Vortages. Sobald die AI-Version eintrifft, ersetzt ein Cross-Fade-Uebergang (Opacity + Slide) diesen. Das AI-Briefing erscheint mit einem Sparkle-Symbol und primaerer Textfarbe. Ein layout-getreuer Skeleton-Shimmer (`BriefingSkeleton`) haelt die gesamte Dashboard-Form, bis die Kerndaten da sind, und loest sich dann in eine koordinierte, gestaffelte Eintrittsanimation auf. Nutzer mit reduced-motion erhalten keine Animationen.
+- **Fallback.** Bei einem Fehler (Modell nicht verfügbar, 403, Netzwerkfehler) verwendet der Client den bestehenden Standard-Lede. Dem Benutzer wird keine Fehlermeldung angezeigt.
+- **Client UX.** Während das AI-Briefing lädt, zeigt der Hero den gecachten deterministischen Lede des Vortages. Sobald die AI-Version eintrifft, ersetzt ein Cross-Fade-Übergang (Opacity + Slide) diesen. Das AI-Briefing erscheint mit einem Sparkle-Symbol und primärer Textfarbe. Ein layout-getreuer Skeleton-Shimmer (`BriefingSkeleton`) hält die gesamte Dashboard-Form, bis die Kerndaten da sind, und löst sich dann in eine koordinierte, gestaffelte Eintrittsanimation auf. Nutzer mit reduced-motion erhalten keine Animationen.
 
 
 ## Tarifberechtigungen

@@ -12,5 +12,5 @@ chatbot:
 Pour modifier un devis :
 1. Ouvrez le devis depuis la liste
 2. Cliquez sur « Modifier » (ou /quotes/{id}/edit)
-3. Mettez a jour client, lignes, notes ou dates
+3. Mettez à jour le client, les lignes, les notes ou les dates
 4. Enregistrez

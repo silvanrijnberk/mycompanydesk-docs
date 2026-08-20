@@ -10,10 +10,10 @@ chatbot:
 ---
 
 Um eine Teilzahlung auf einer Rechnung zu erfassen:
-1. Öffne die Rechnung aus der Liste
-2. Klicke auf "Zahlung erfassen" oder die Zahlungsaktion
-3. Gib den erhaltenen Betrag ein (weniger als der Gesamtbetrag)
-4. Speichern - der Rechnungsstatus ändert sich zu Teilweise bezahlt
-5. Wiederhole den Vorgang, wenn weitere Zahlungen eingehen
+1. Öffnen Sie die Rechnung aus der Liste
+2. Klicken Sie auf „Zahlung erfassen“ oder die Zahlungsaktion
+3. Geben Sie den erhaltenen Betrag ein (weniger als der Gesamtbetrag)
+4. Speichern Sie: der Rechnungsstatus ändert sich zu Teilweise bezahlt
+5. Wiederholen Sie den Vorgang, wenn weitere Zahlungen eingehen
 
-Tipp: Der Restbetrag wird automatisch verfolgt und auf der Rechnungsdetailseite angezeigt. Teilweise bezahlte Rechnungen erhalten auch ihren eigenen Erinnerungsvorschlag fuer den offenen Restbetrag. Im Kundenportal sehen Kunden bei teilweise bezahlten Rechnungen auch den bereits erhaltenen Betrag und die noch offene Restsumme, bevor sie bezahlen.
+Tipp: Der Restbetrag wird automatisch verfolgt und auf der Rechnungsdetailseite angezeigt. Teilweise bezahlte Rechnungen erhalten auch ihren eigenen Erinnerungsvorschlag für den offenen Restbetrag. Im Kundenportal sehen Kunden bei teilweise bezahlten Rechnungen auch den bereits erhaltenen Betrag und die noch offene Restsumme, bevor sie bezahlen.

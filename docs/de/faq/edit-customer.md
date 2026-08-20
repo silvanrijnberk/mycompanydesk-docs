@@ -20,9 +20,9 @@ chatbot:
     - "How do I view customer payment history?"
 ---
 
-So bearbeitest du einen Kunden:
-1. Gehe zu Kunden und finde den Kunden
-2. Klicke auf den Kunden, um das Profil zu öffnen
-3. Klicke auf „Bearbeiten"
-4. Aktualisiere Name, Adresse, E-Mail, Ust-IdNr. oder Zahlungsbedingungen
-5. Speichere deine Änderungen
+So bearbeiten Sie einen Kunden:
+1. Gehen Sie zu Kunden und suchen Sie den Kunden
+2. Klicken Sie auf den Kunden, um das Profil zu öffnen
+3. Klicken Sie auf „Bearbeiten“
+4. Aktualisieren Sie Name, Adresse, E-Mail, USt-IdNr. oder Zahlungsbedingungen
+5. Speichern Sie Ihre Änderungen

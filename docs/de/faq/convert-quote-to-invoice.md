@@ -24,9 +24,9 @@ chatbot:
     - "How do I send the invoice?"
 ---
 
-So wandelst du ein Angebot in eine Rechnung um:
-1. Oeffne die Angebotsdetailseite
-2. Klicke auf „Rechnung aus Angebot erstellen"
+So wandeln Sie ein Angebot in eine Rechnung um:
+1. Öffnen Sie die Angebotsdetailseite
+2. Klicken Sie auf „Rechnung aus Angebot erstellen“
 3. Es wird ein neuer Rechnungsentwurf mit kopierten Daten erstellt
-4. Faelligkeit und Zahlungsbedingungen pruefen
-5. Speichern und senden
+4. Prüfen Sie Fälligkeit und Zahlungsbedingungen
+5. Speichern und senden Sie die Rechnung

@@ -8,11 +8,11 @@ chatbot:
   follow_up: ["How do I use the dashboard?", "How do I search for invoices?"]
 ---
 
-So findest du Seiten in der App:
-• Nutze das Hauptmenü in der Navigation
+So finden Sie Seiten in der App:
+• Nutzen Sie das Hauptmenü in der Navigation
 • Hauptbereiche sind Dashboard, Rechnungen, Angebote, Ausgaben, Kunden, Wiederkehrend, Projekte, Verträge, Objekte, Berichte, Übersicht, USt, Unternehmen, Workspace-Einstellungen und Mein Konto
-• Unternehmenseinstellungen findest du unter Unternehmen
-• API-Schlüssel, Teamzugang und Funktionstoggles findest du unter Workspace-Einstellungen
-• Sprache, Anzeige, Benachrichtigungen, Sicherheit und Datentools findest du unter Mein Konto
+• Unternehmenseinstellungen finden Sie unter Unternehmen
+• API-Schlüssel, Teamzugang und Funktionstoggles finden Sie unter Workspace-Einstellungen
+• Sprache, Anzeige, Benachrichtigungen, Sicherheit und Datentools finden Sie unter Mein Konto
 
-Tipp: Wenn ein Menüpunkt fehlt, prüfe zuerst Workspace-Einstellungen → Funktionen und deine Seitenrechte.
+Tipp: Wenn ein Menüpunkt fehlt, prüfen Sie zuerst Workspace-Einstellungen → Funktionen und Ihre Seitenrechte.

@@ -49,7 +49,7 @@ Vous préférez n'enregistrer qu'un total par jour ? Activez le **Mode heures un
 
 ## Facturer vos heures
 
-Le tarif affiche pour chaque entree de temps est le **tarif horaire effectif** de cette entree. Si l'entree a son propre tarif horaire, c'est celui-ci qui est utilise; sinon on revient au tarif du projet, puis au tarif du client, et enfin au tarif par defaut de l'espace de travail. Le montant de la ligne sur une facture reflete donc toujours le tarif reel stocke avec l'entree.
+Le tarif affiché pour chaque entrée de temps est le **tarif horaire effectif** de cette entrée. Si l'entrée a son propre tarif horaire, c'est celui-ci qui est utilisé ; sinon on revient au tarif du projet, puis au tarif du client, et enfin au tarif par défaut de l'espace de travail. Le montant de la ligne sur une facture reflète donc toujours le tarif réel stocké avec l'entrée.
 
 ### Créer une facture depuis la page Agenda
 

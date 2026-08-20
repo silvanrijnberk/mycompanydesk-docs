@@ -18,11 +18,11 @@ chatbot:
     - "How do I link expenses to a project?"
 ---
 
-So erstellst du ein Projekt:
-1. Gehe zu Projekte und oeffne „Neues Projekt"
-2. Gib Projektname, Nummer und Beschreibung ein
-3. Verknuepfe bei Bedarf den Kunden
-4. Setze Status, Daten, Budget und Stundensatz, soweit sie relevant sind
-5. Speichere das Projekt
+So erstellen Sie ein Projekt:
+1. Gehen Sie zu Projekte und öffnen Sie „Neues Projekt“
+2. Geben Sie Projektname, Nummer und Beschreibung ein
+3. Verknüpfen Sie bei Bedarf den Kunden
+4. Setzen Sie Status, Daten, Budget und Stundensatz, soweit sie relevant sind
+5. Speichern Sie das Projekt
 
-Nach dem Speichern kannst du zugehoerige Rechnungen, Ausgaben oder Vertraege oeffnen und mit diesem Projekt verknuepfen.
+Nach dem Speichern können Sie zugehörige Rechnungen, Ausgaben oder Verträge öffnen und mit diesem Projekt verknüpfen.

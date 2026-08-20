@@ -9,10 +9,10 @@ chatbot:
   follow_up: ["How do I set up automatic reminders?", "How do I view overdue invoices?", "How do I mark an invoice as paid?"]
 ---
 
-So sendest du eine Erinnerung fuer eine unbezahlte Rechnung:
-1. Oeffne die Rechnung
-2. Nutze die Aktion „Erinnerung senden"
-3. Pruefe die Nachricht und sende sie ab
+So senden Sie eine Erinnerung für eine unbezahlte Rechnung:
+1. Öffnen Sie die Rechnung
+2. Nutzen Sie die Aktion „Erinnerung senden“
+3. Prüfen Sie die Nachricht und senden Sie sie ab
 
 Die Erinnerung nennt den noch offenen Restbetrag (Rechnungsbetrag abzüglich der bereits eingegangenen Zahlungen). Hat der Kunde bereits eine Anzahlung oder Ratenzahlung geleistet, mahnt die Erinnerung den Rest an, nicht den vollen Rechnungsbetrag.
 
@@ -27,13 +27,13 @@ Eine Erinnerung kann nicht gesendet werden, wenn:
 - die Rechnung vollständig durch eine Gutschrift ausgeglichen wurde
 - nichts mehr offen steht (zum Beispiel weil der Kunde bezahlt hat, während die Seite geöffnet war)
 
-Wenn eine Rechnung ueberfaellig ist, schlaegt die Rechnungsdetailseite einen naechsten Schritt vor:
+Wenn eine Rechnung überfällig ist, schlägt die Rechnungsdetailseite einen nächsten Schritt vor:
 
-- **Erinnerung senden** — fuer Rechnungen, die knapp ueber dem Fälligkeitsdatum liegen
-- **Schaerfere Erinnerung senden** — fuer bereits einmal erinnerte Rechnungen
-- **Dringende Erinnerung senden** — fuer Rechnungen, die mehr als ein paar Tage ueberfaellig sind. Der Knopf oeffnet den Erinnerungsdialog; die Detailzeile schlaegt zusaetzlich vor, den Kunden anzurufen oder eine Ratenzahlung anzubieten.
-- **Gutschrift oder Korrektur erstellen** — wenn der Kunde die Rechnung bestreitet oder sich Betraege geaendert haben
+- **Erinnerung senden** — für Rechnungen, die knapp über dem Fälligkeitsdatum liegen
+- **Schärfere Erinnerung senden** — für bereits einmal erinnerte Rechnungen
+- **Dringende Erinnerung senden** — für Rechnungen, die mehr als ein paar Tage überfällig sind. Der Knopf öffnet den Erinnerungsdialog; die Detailzeile schlägt zusätzlich vor, den Kunden anzurufen oder eine Ratenzahlung anzubieten.
+- **Gutschrift oder Korrektur erstellen** — wenn der Kunde die Rechnung bestreitet oder sich Beträge geändert haben
 
-Fuer die meisten Faelle senden Sie Erinnerungen 1 Tag vor dem Fälligkeitsdatum (freundlich), 3 Tage danach (fester) und 10 Tage danach (letzte Mahnung). Danach folgt ein Telefonat.
+Für die meisten Fälle senden Sie Erinnerungen 1 Tag vor dem Fälligkeitsdatum (freundlich), 3 Tage danach (fester) und 10 Tage danach (letzte Mahnung). Danach folgt ein Telefonat.
 
-Die Erinnerungsvorlage kannst du auch unter Einstellungen → E-Mails anpassen.
+Die Erinnerungsvorlage können Sie auch unter Einstellungen → E-Mails anpassen.

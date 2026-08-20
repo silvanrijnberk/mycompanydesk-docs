@@ -24,12 +24,12 @@ chatbot:
     - "How do I set default payment terms?"
 ---
 
-Les champs client que l application reutilise le plus souvent sont :
-1. Nom du client ou de l entreprise - visible sur les factures et devis
-2. Adresse e-mail - utilisee lorsque vous envoyez des documents par e-mail
-3. Champs d adresse - reutilises sur les modeles qui affichent l adresse
-4. Numero de TVA - affiche sur les documents lorsque ce champ est renseigne
-5. IBAN et delai de paiement - reutilises la ou les reglages de facturation en ont besoin
-6. Personne de contact et numero de telephone - visibles dans la fiche client comme reference
+Les champs client que l'application réutilise le plus souvent sont :
+1. Nom du client ou de l'entreprise : visible sur les factures et devis
+2. Adresse e-mail : utilisée lorsque vous envoyez des documents par e-mail
+3. Champs d'adresse : réutilisés sur les modèles qui affichent l'adresse
+4. Numéro de TVA : affiché sur les documents lorsque ce champ est renseigné
+5. IBAN et délai de paiement : réutilisés là où les réglages de facturation en ont besoin
+6. Personne de contact et numéro de téléphone : visibles dans la fiche client comme référence
 
-Renseignez les champs que vous voulez voir reutilises sur les nouvelles factures, devis et ecrans d envoi.
+Renseignez les champs que vous voulez voir réutilisés sur les nouvelles factures, devis et écrans d'envoi.

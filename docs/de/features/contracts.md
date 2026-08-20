@@ -19,7 +19,7 @@ Das Vertragsmodul ist optional. Aktivieren Sie es unter **Unternehmen > Funktion
 
 1. Gehen Sie zu **Verträge > Neuer Vertrag**
 2. Füllen Sie aus:
-   - **Name** — Ein aussagekräftiger Titel (z. B. „Monatlicher Reinigungsservice")
+   - **Name** — Ein aussagekräftiger Titel (z. B. „Monatlicher Reinigungsservice“)
    - **Kunde** — Die Vertragspartei
    - **Betrag** — Der wiederkehrende Abrechnungsbetrag
    - **Wiederholung** — Wie oft abgerechnet wird (wöchentlich, monatlich, vierteljährlich, jährlich)
@@ -88,7 +88,7 @@ Verträge berechnen einen Zeitraum relativ zum Rechnungsdatum:
 - **Vorheriger** — der Zeitraum vor dem Rechnungsdatum
 - **Nächster** — der Zeitraum nach dem Rechnungsdatum; alter Wert, der für ältere Mietverträge mit Vorauszahlung erhalten bleibt
 
-Im Formular kannst du heute nur **aktuell** oder **vorheriger** wählen. Wenn du einen älteren Vertrag hast, der auf **nächster** steht, behält die API diesen Wert beim Speichern bei, damit der Vertrag weiterhin bearbeitbar bleibt.
+Im Formular können Sie heute nur **aktuell** oder **vorheriger** wählen. Wenn Sie einen älteren Vertrag haben, der auf **nächster** steht, behält die API diesen Wert beim Speichern bei, damit der Vertrag weiterhin bearbeitbar bleibt.
 
 ## Automatisches Einziehen
 

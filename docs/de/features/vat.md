@@ -96,7 +96,7 @@ Der ZIP-Dateiname enthält den Firmennamen, den Zeitraum und das Exportprofil, u
 
 ### Hinweis auf Nullmeldung
 
-Ist der gewählte Zeitraum beendet und sind sowohl Rubrik 5a als auch 5b gleich null, erscheint auf dem Reiter Erklärung eine Infokarte, die daran erinnert, dass eine Nullmeldung möglicherweise trotzdem abgegeben werden muss, wenn das Finanzamt dich aufgefordert hat. Die Karte wird für Zeiträume nicht angezeigt, die vor der Erstellung des Arbeitsbereichs endeten, weil MyCompanyDesk für diese Zeiträume keine Daten hält.
+Ist der gewählte Zeitraum beendet und sind sowohl Rubrik 5a als auch 5b gleich null, erscheint auf dem Reiter Erklärung eine Infokarte, die daran erinnert, dass eine Nullmeldung möglicherweise trotzdem abgegeben werden muss, wenn das Finanzamt Sie aufgefordert hat. Die Karte wird für Zeiträume nicht angezeigt, die vor der Erstellung des Arbeitsbereichs endeten, weil MyCompanyDesk für diese Zeiträume keine Daten hält.
 
 ### Internationale Karten
 
@@ -107,7 +107,7 @@ Bei internationaler Aktivität erscheinen unter der Übersicht ergänzende Karte
 - **Ausländische USt.**: Ihnen berechnete ausländische USt., die möglicherweise über das EU-Erstattungsverfahren zurückzuholen ist.
 - **Korrekturen**: manuelle MwSt.-Korrekturen, jede mit einem Hinweis, der erklärt, wo sie in der Erklärung landet. Eine Privatentnahme fließt in Rubrik 1d ein. Eine Suppletie wird gegen Rubrik 5a oder 5b verrechnet (bei Teilnahme an der KOR wirkt sie sich nicht auf die Vorsteuer aus, sodass Rubrik 5b bei null bleibt). Eine allgemeine Anpassung erhält kein eigenes Kästchen; sie verschiebt nur den zu zahlenden oder erstattungsfähigen Betrag, den MyCompanyDesk anzeigt, nicht aber eine Rubrik, die Sie übernehmen.
 
-<!-- TODO(source-missing): RichardTool e671fd80 zeigt in der App eine Belastingdienst-Schwelle von 1.000 EUR fuer suppletie-Korrekturen (bis einschliesslich 1.000 EUR in die naechste regulaere Erklaerung; darueber formelle suppletieaangifte erforderlich). sources/ enthaelt diese Schwelle nicht; Wert und Linkziel nicht erfinden, bis ein Mensch die aktuelle Regel auf belastingdienst.nl geprueft hat. -->
+<!-- TODO(source-missing): RichardTool e671fd80 zeigt in der App eine Belastingdienst-Schwelle von 1.000 EUR für suppletie-Korrekturen (bis einschließlich 1.000 EUR in die nächste reguläre Erklärung; darüber formelle suppletieaangifte erforderlich). sources/ enthält diese Schwelle nicht; Wert und Linkziel nicht erfinden, bis ein Mensch die aktuelle Regel auf belastingdienst.nl geprüft hat. -->
 
 Diese Karten bleiben verborgen, bis es tatsächlich internationale Daten gibt; die meisten Arbeitsbereiche sehen sie nie.
 

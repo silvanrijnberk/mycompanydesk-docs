@@ -9,12 +9,12 @@ chatbot:
     - { label: "Open quotes", to: "/quotes" }
   follow_up: ["How do I preview the quote PDF?", "How do I send a quote by email?", "How do I convert a quote to an invoice?"]
 ---
-So erstellst du ein Angebot:
-1. Gehe zu Angebote und oeffne „Angebot erstellen"
-2. Waehle einen Kunden und verknuepfe bei Bedarf ein Projekt
-3. Fuege Angebotspositionen mit Beschreibung, Menge, Preis und MwSt hinzu
-4. Setze in der Karte mit den Angebotsdetails Angebotsdatum und „Gueltig bis"
-5. Nutze „Als Entwurf speichern", wenn das Angebot noch nicht fertig ist, oder „Finalisieren", wenn es bereit ist
-6. Oeffne nach dem Speichern die Angebotsdetailseite, um es zu pruefen oder zu senden
+So erstellen Sie ein Angebot:
+1. Gehen Sie zu Angebote und öffnen Sie „Angebot erstellen“
+2. Wählen Sie einen Kunden und verknüpfen Sie bei Bedarf ein Projekt
+3. Fügen Sie Angebotspositionen mit Beschreibung, Menge, Preis und MwSt hinzu
+4. Setzen Sie in der Karte mit den Angebotsdetails Angebotsdatum und „Gültig bis“
+5. Nutzen Sie „Als Entwurf speichern“, wenn das Angebot noch nicht fertig ist, oder „Finalisieren“, wenn es bereit ist
+6. Öffnen Sie nach dem Speichern die Angebotsdetailseite, um es zu prüfen oder zu senden
 
-Tipp: Ein Angebot bleibt getrennt von Rechnungen, bis du es umwandelst.
+Tipp: Ein Angebot bleibt getrennt von Rechnungen, bis Sie es umwandeln.

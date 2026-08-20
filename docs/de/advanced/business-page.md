@@ -51,9 +51,9 @@ Bevor Sie überhaupt den Editor öffnen, kann der Website-Einrichtungsassistent 
 4. **Markenfarbe** - eine der vorgeschlagenen Farben wählen oder Ihre eigene Hex-Farbe eingeben.
 5. **Webadresse** (nur wenn Ihr Workspace noch keine aktive Domain oder CNAME hat, die die Site bedient) — fügen Sie eine Domain hinzu oder verbinden Sie eine bestehende. Sie können diesen Schritt überspringen und später eine Adresse hinzufügen.
 
-Ihre Antworten werden als Site-Briefing gespeichert. Wenn Sie abschliessen, schreibt die KI auf Basis des Briefings und Ihrer Workspace-Daten neuen Text für Ihren gesamten Entwurf, wendet Ihr gewähltes Logo und Ihre Markenfarbe an und lässt alles als Entwurf stehen. Es wird nichts automatisch veröffentlicht. Sie prüfen das Ergebnis im Editor und veröffentlichen es, sobald Sie zufrieden sind.
+Ihre Antworten werden als Site-Briefing gespeichert. Wenn Sie abschließen, schreibt die KI auf Basis des Briefings und Ihrer Workspace-Daten neuen Text für Ihren gesamten Entwurf, wendet Ihr gewähltes Logo und Ihre Markenfarbe an und lässt alles als Entwurf stehen. Es wird nichts automatisch veröffentlicht. Sie prüfen das Ergebnis im Editor und veröffentlichen es, sobald Sie zufrieden sind.
 
-Derselbe Assistent kann eine bestehende Site auch komplett neu schreiben. Wenn Sie ihn über den Stil-Tab neu starten, fragt er zuerst nach Bestätigung, denn Abschliessen ersetzt Text, den Sie selbst bearbeitet haben. Die Site bleibt Entwurf, bis Sie selbst veröffentlichen.
+Derselbe Assistent kann eine bestehende Site auch komplett neu schreiben. Wenn Sie ihn über den Stil-Tab neu starten, fragt er zuerst nach Bestätigung, denn Abschließen ersetzt Text, den Sie selbst bearbeitet haben. Die Site bleibt Entwurf, bis Sie selbst veröffentlichen.
 
 ## Tabs
 
@@ -518,11 +518,11 @@ Newsletter-Einreichungen teilen dasselbe Rate-Limit wie das Kontaktformular: 5 p
 
 ## Rechtliche Seiten
 
-Der Website-Builder erstellt für jeden neuen Arbeitsbereich zwei Standard-Rechtsseiten: **Datenschutzerklärung** (`/privacy`) und **Allgemeine Geschäftsbedingungen** (`/algemene-voorwaarden`). Der Inhalt verwendet Platzhalter für Unternehmensdaten. Wenn die Seite für Besucher gerendert wird, werden diese Platzhalter durch die Werte aus deinen **Unternehmenseinstellungen** ersetzt — Unternehmensname, Adresse, Postleitzahl, Stadt, Land, Registrierungsnummer, USt.-ID und öffentliche E-Mail.
+Der Website-Builder erstellt für jeden neuen Arbeitsbereich zwei Standard-Rechtsseiten: **Datenschutzerklärung** (`/privacy`) und **Allgemeine Geschäftsbedingungen** (`/algemene-voorwaarden`). Der Inhalt verwendet Platzhalter für Unternehmensdaten. Wenn die Seite für Besucher gerendert wird, werden diese Platzhalter durch die Werte aus Ihren **Unternehmenseinstellungen** ersetzt: Unternehmensname, Adresse, Postleitzahl, Stadt, Land, Registrierungsnummer, USt.-ID und öffentliche E-Mail.
 
-Du kannst die rechtlichen Seiten wie jede andere Seite im Editor bearbeiten. Der Editor behält die Platzhalter-Anker im Inhalt, sodass auch das bloße Öffnen und Speichern einer Seite dafür sorgt, dass zukünftige Änderungen an deinen Unternehmensdaten automatisch übernommen werden.
+Sie können die rechtlichen Seiten wie jede andere Seite im Editor bearbeiten. Der Editor behält die Platzhalter-Anker im Inhalt, sodass auch das bloße Öffnen und Speichern einer Seite dafür sorgt, dass zukünftige Änderungen an Ihren Unternehmensdaten automatisch übernommen werden.
 
-Die rechtlichen Seiten werden zum Zeitpunkt der Veröffentlichung gerendert, wie der Rest deiner Site. Sie teilen sich den gleichen Live/Entwurf-Status und die gleiche Sichtbarkeitsregel auf Grundlage des Abonnements.
+Die rechtlichen Seiten werden zum Zeitpunkt der Veröffentlichung gerendert, wie der Rest Ihrer Site. Sie teilen sich den gleichen Live/Entwurf-Status und die gleiche Sichtbarkeitsregel auf Grundlage des Abonnements.
 
 ## Anfragen verwalten
 
