@@ -27,6 +27,7 @@ Vous pouvez relier jusqu'à 10 comptes de banques différentes. Chaque compte ap
 Pour chaque compte, vous pouvez :
 
 - Activer ou désactiver l'**import automatique**, pour décider quels comptes alimentent vos dépenses.
+- Définir une **date d'import**. Cette date détermine à partir de quand les transactions apparaissent dans votre liste de tâches réelle. Nous récupérons tout de même les transactions antérieures (pour l'association, le rapprochement et le solde), mais elles ne demandent pas d'action de votre part. Laissez vide et chaque transaction importée apparaît dans la liste.
 - Lancer une **synchronisation manuelle** à tout moment.
 - Déconnecter le compte.
 
@@ -45,7 +46,7 @@ Après la passe de liaison, les nouvelles transactions passent par vos règles e
 3. Une transaction sortante catégorisée devient un **brouillon de dépense** : la contrepartie devient le fournisseur, et le montant, la date et le traitement de TVA habituel de la catégorie sont remplis.
 4. Le brouillon arrive dans la file de contrôle : rien n'est comptabilisé sans que vous le voyiez.
 
-Les transactions issues du premier import, qui récupère environ les 90 derniers jours, ne sont jamais auto-confirmées. Elles atterrissent toujours dans la file de contrôle, même si la catégorisation est sûre. Cela ne vaut que pour l'arriéré d'avant la connexion ; les nouvelles transactions ensuite suivent les règles de contrôle normales.
+Les transactions issues du premier import, qui récupère environ les 90 derniers jours, ne sont jamais auto-confirmées. Elles atterrissent toujours dans la file de contrôle, même si la catégorisation est sûre. Cela ne vaut que pour l'arriéré d'avant la connexion ; les nouvelles transactions ensuite suivent les règles de contrôle normales. La date d'import par compte détermine à partir de quel moment cet arriéré apparaît dans votre liste de tâches ; tout ce qui est antérieur reste disponible pour l'association et le rapprochement, mais ne demande pas de contrôle.
 
 Seules les transactions sortantes deviennent des dépenses ; les paiements entrants ne sont jamais transformés en dépenses. Les dépenses issues de transactions bancaires affichent un petit badge banque dans la liste des dépenses, pour que vous voyiez toujours d'où vient une écriture.
 

@@ -27,6 +27,7 @@ Sie können bis zu 10 Konten verschiedener Banken verbinden. Jedes Konto erschei
 Pro Konto können Sie:
 
 - Den **Auto-Import** ein- oder ausschalten, sodass Sie bestimmen, welche Konten Ihre Ausgaben speisen.
+- Ein **Import-von-Datum** festlegen. Dieses Datum bestimmt, ab wann Transaktionen in Ihrer eigentlichen Aufgabenliste erscheinen. Transaktionen vor diesem Datum rufen wir trotzdem ab (für Verknüpfen, Abgleichen und Saldo), aber sie erfordern keine Aktion von Ihnen. Lassen Sie das Feld leer, landet jede importierte Transaktion in der Liste.
 - Jederzeit eine **manuelle Synchronisation** starten.
 - Das Konto trennen.
 
@@ -45,7 +46,7 @@ Nach der Verknüpfungsphase durchlaufen neue Transaktionen Ihre Regeln und die s
 3. Eine kategorisierte abgehende Transaktion wird ein **Ausgabenentwurf**: Die Gegenpartei wird zum Lieferanten, und Betrag, Datum sowie die übliche USt.-Behandlung der Kategorie werden ausgefüllt.
 4. Der Entwurf landet in der Prüfliste, es wird also nichts gebucht, ohne dass Sie es sehen.
 
-Transaktionen aus dem ersten Import, der ungefähr die letzten 90 Tage abruft, werden nie automatisch bestätigt. Sie landen immer in der Prüfliste, auch wenn die Kategorisierung sicher ist. Das gilt nur für den Rückstand vor der Verbindung; neue Transaktionen danach folgen den normalen Prüfregeln.
+Transaktionen aus dem ersten Import, der ungefähr die letzten 90 Tage abruft, werden nie automatisch bestätigt. Sie landen immer in der Prüfliste, auch wenn die Kategorisierung sicher ist. Das gilt nur für den Rückstand vor der Verbindung; neue Transaktionen danach folgen den normalen Prüfregeln. Das Import-von-Datum pro Konto legt fest, ab welchem Zeitpunkt dieser Rückstand in Ihrer Aufgabenliste erscheint; alles davor bleibt für Verknüpfen und Abgleichen verfügbar, fordert aber keine Prüfung.
 
 Nur abgehende Transaktionen werden zu Ausgaben; eingehende Zahlungen werden nie in Ausgaben umgewandelt. Ausgaben aus Banktransaktionen zeigen in der Ausgabenliste ein kleines Banksymbol, sodass Sie immer sehen, woher eine Buchung stammt.
 

@@ -1,7 +1,7 @@
 ---
 title: Cookies und Analytics
-description: "Wie MyCompanyDesk Cookies, lokalen Speicher und Analytics auf der Marketingseite und in der App nutzt, und wie Sie Ihre Auswahl jederzeit ändern."
-last_verified: 2026-07-14
+description: "Wie MyCompanyDesk Cookies, lokalen Speicher, Analytics und Session-Aufzeichnungen nutzt, und wie Sie Ihre Auswahl ändern."
+last_verified: 2026-08-20
 ---
 
 # Cookies und Analytics
@@ -15,6 +15,8 @@ Die Marketing-Website zeigt beim ersten Besuch ein Cookie-Einwilligungsbanner. D
 Analytics ist opt-in. Bis Sie zustimmen, initialisiert die Marketing-Website kein Analytics, sendet keine Pageviews oder Events und speichert keine Analytics-ID. Wenn Sie also „Nur essenziell“ wählen, hinterlassen Sie keine Analytics-Spur.
 
 Wenn Sie zustimmen, startet die Site Analytics und speichert eine anonyme Analytics-ID im `localStorage` Ihres Browsers unter dem Schlüssel `mcd_phid`. Diese ID wird nur verwendet, um nachzuvollziehen, wie Besucher durch die Seite navigieren. Sie ist nicht mit Ihrem Account oder Ihrer E-Mail-Adresse verknüpft.
+
+Mit Ihrer Zustimmung können wir außerdem Sessions Ihres Besuchs auf der Marketing-Website aufzeichnen. Diese Aufzeichnungen helfen uns zu erkennen, wo die Seite besser werden kann. Alles, was Sie in Eingabefelder tippen, wird in diesen Aufnahmen maskiert und für uns nicht lesbar. Die Daten sind pseudonymisiert.
 
 Wenn Sie später über das Banner ablehnen oder Ihr Browser ein Do-Not-Track-Signal (DNT) sendet, wird keine Analytics-ID gespeichert und keine neuen Analytics-Events gesendet. Das Banner kann dennoch erscheinen, da es auch Nicht-Analytics-Cookies abdeckt.
 

@@ -27,6 +27,7 @@ Je kunt tot 10 rekeningen van verschillende banken koppelen. Elke rekening staat
 Per rekening kun je:
 
 - **Auto-import** aan- of uitzetten, zodat jij bepaalt welke rekeningen je uitgaven voeden.
+- Een **import-vanaf-datum** instellen. Deze datum bepaalt vanaf wanneer transacties in je werkelijke takenlijst verschijnen. Transacties van vóór die datum halen we nog steeds op (voor koppelen, afletteren en saldo), maar ze vragen geen actie van je. Laat je het veld leeg, dan komt elke geïmporteerde transactie in de lijst.
 - Op elk moment een **handmatige sync** starten.
 - De rekening ontkoppelen.
 
@@ -45,7 +46,7 @@ Na de koppelronde doorlopen nieuwe transacties je regels en de slimme categorise
 3. Een gecategoriseerde uitgaande transactie wordt een **concept-uitgave**: de tegenpartij wordt de leverancier, en het bedrag, de datum en de gebruikelijke BTW-behandeling van de categorie worden ingevuld.
 4. Het concept belandt in de controlelijst, dus er wordt niets geboekt zonder dat jij het ziet.
 
-Transacties uit de eerste import, die ongeveer de afgelopen 90 dagen ophaalt, worden nooit automatisch bevestigd. Ze komen altijd op de controlelijst, ook als de categorisering zeker is. Dat geldt alleen voor de achterstand van voor de koppeling; nieuwe transacties daarna volgen de normale controle-regels.
+Transacties uit de eerste import, die ongeveer de afgelopen 90 dagen ophaalt, worden nooit automatisch bevestigd. Ze komen altijd op de controlelijst, ook als de categorisering zeker is. Dat geldt alleen voor de achterstand van voor de koppeling; nieuwe transacties daarna volgen de normale controle-regels. Met de import-vanaf-datum per rekening bepaal je vanaf welk moment die achterstand in je takenlijst verschijnt; alles wat ervoor ligt blijft beschikbaar voor koppelen en afletteren, maar vraagt geen review.
 
 Alleen uitgaande transacties worden uitgaven; inkomende betalingen worden nooit omgezet in uitgaven. Uitgaven die uit banktransacties zijn ontstaan tonen een klein bankicoon in de uitgavenlijst, zodat je altijd ziet waar een boeking vandaan komt.
 

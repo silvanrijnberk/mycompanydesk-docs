@@ -1,7 +1,7 @@
 ---
 title: Cookies and analytics
-description: "How MyCompanyDesk uses cookies, local storage and analytics on the marketing site and in the app, and how to change your consent at any time."
-last_verified: 2026-07-14
+description: "How MyCompanyDesk handles cookies, local storage, analytics and session recordings, and how to manage your consent."
+last_verified: 2026-08-20
 ---
 
 # Cookies and analytics
@@ -15,6 +15,8 @@ The marketing site shows a cookie-consent banner when you first visit. The banne
 Analytics is opt-in. Until you accept, the marketing site does not initialize analytics, does not send any pageview or event, and does not store an analytics identifier. This means choosing "Alleen essentieel" (essential only) leaves no analytics trail.
 
 If you accept, the site starts analytics and stores an anonymous analytics identifier in your browser's `localStorage` under the key `mcd_phid`. This identifier is only used to understand how visitors move through the site. It is not linked to your account or email address.
+
+With your consent we may also record sessions of your visit to the marketing site. These recordings help us see where the site can improve. Anything you type into input fields is masked in those recordings and is not readable to us. The data is pseudonymised.
 
 If you later decline via the banner, or if your browser sends a Do Not Track (DNT) signal, no analytics identifier is stored and no new analytics events are sent. The banner may still appear because it also covers non-analytics cookies.
 

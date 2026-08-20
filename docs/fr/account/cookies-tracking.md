@@ -1,7 +1,7 @@
 ---
 title: Cookies et analytics
-description: "Comment MyCompanyDesk utilise les cookies, le stockage local et les analytics sur le site vitrine et dans l'app, et comment changer votre choix."
-last_verified: 2026-07-14
+description: "Comment MyCompanyDesk utilise les cookies, le stockage local, les analytics et les enregistrements de session, et comment changer votre choix."
+last_verified: 2026-08-20
 ---
 
 # Cookies et analytics
@@ -15,6 +15,8 @@ Le site marketing affiche une bannière de consentement aux cookies lors de votr
 L'analytics est soumis à consentement (opt-in). Tant que vous n'acceptez pas, le site marketing n'initialise pas d'analytics, n'envoie aucune page vue ou événement et ne stocke aucun identifiant analytics. Choisir "Uniquement essentiel" ne laisse donc aucune trace analytics.
 
 Si vous acceptez, le site démarre l'analytics et stocke un identifiant analytics anonyme dans le `localStorage` de votre navigateur sous la clé `mcd_phid`. Cet identifiant sert uniquement à comprendre comment les visiteurs naviguent sur le site. Il n'est pas lié à votre compte ou à votre adresse e-mail.
+
+Avec votre consentement, nous pouvons également enregistrer des sessions de votre visite sur le site marketing. Ces enregistrements nous aident à voir où le site peut s'améliorer. Tout ce que vous tapez dans les champs de saisie est masqué dans ces enregistrements et n'est pas lisible pour nous. Les données sont pseudonymisées.
 
 Si vous refusez plus tard via la bannière, ou si votre navigateur envoie un signal Do Not Track (DNT), aucun identifiant analytics n'est stocké et aucun nouvel événement analytics n'est envoyé. La bannière peut toutefois toujours apparaître, car elle couvre également les cookies non-analytics.
 

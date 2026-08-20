@@ -1,7 +1,7 @@
 ---
 title: Cookies en analytics
-description: "Hoe MyCompanyDesk omgaat met cookies, lokale opslag en analytics op de marketingsite en in de app, en hoe je je keuze altijd kunt wijzigen."
-last_verified: 2026-07-14
+description: "Hoe MyCompanyDesk omgaat met cookies, lokale opslag, analytics en sessie-opnames, en hoe je je keuze wijzigt."
+last_verified: 2026-08-20
 ---
 
 # Cookies en analytics
@@ -15,6 +15,8 @@ De marketingwebsite toont een cookietoestemmingsbanner bij je eerste bezoek. Die
 Analytics is opt-in. Totdat je akkoord gaat, initialiseert de marketingwebsite geen analytics, stuurt hij geen pageview of event en slaat hij geen analytics-id op. Als je dus kiest voor "Alleen essentieel", blijft er geen analytics-spoor achter.
 
 Als je akkoord gaat, start de site analytics en slaat hij een anonieme analytics-id op in de `localStorage` van je browser onder de sleutel `mcd_phid`. Deze id wordt alleen gebruikt om te begrijpen hoe bezoekers door de site navigeren. Hij is niet gekoppeld aan je account of e-mailadres.
+
+Daarnaast kunnen we, als je toestemming geeft, sessie-opnames maken van je bezoek aan de marketingwebsite. Die helpen ons zien waar de site beter kan. Alles wat je in invoervelden typt, wordt in die opnames gemaskeerd en is voor ons niet leesbaar. De gegevens zijn gepseudonimiseerd.
 
 Als je later via de banner weigert, of als je browser een Do Not Track (DNT)-signaal stuurt, wordt er geen analytics-id opgeslagen en worden er geen nieuwe analytics-events verstuurd. De banner kan nog steeds verschijnen, omdat hij ook niet-analytics-cookies behandelt.
 
