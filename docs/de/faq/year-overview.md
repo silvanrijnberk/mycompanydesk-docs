@@ -28,4 +28,4 @@ So prüfen Sie ein ganzes Jahr in der App:
 3. Die Übersicht zeigt die Kernzahlen; wechseln Sie zur Ansicht GuV, Cashflow, Kunden oder Prognose für mehr Detail
 4. Aktivieren Sie den Vergleichsfilter, um das Jahr neben einem früheren Jahr zu sehen
 
-Tipp: Mit dem Filter „Offene Rechnungen einbeziehen" steuern Sie, ob unbezahlte Rechnungen in die Summen einfließen.
+Tipp: Mit dem Filter „Offene Rechnungen einbeziehen“ steuern Sie, ob unbezahlte Rechnungen in die Summen einfließen.

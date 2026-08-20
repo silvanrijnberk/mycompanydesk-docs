@@ -87,7 +87,7 @@ Fonctionnalités par plan :
 | Permissions avancées | non | non | oui |
 | Support prioritaire | non | non | oui |
 | Connexions bancaires (jusqu'à 3) | non | non | oui |
-| Facturation electronique Peppol | non | non | oui |
+| Facturation électronique Peppol | non | non | oui |
 
 \* Le module de biens locatifs n'est actuellement affiché qu'aux espaces de travail qui l'utilisent déjà.
 

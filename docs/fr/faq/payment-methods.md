@@ -32,7 +32,7 @@ Les méthodes activées apparaissent en bas de vos factures.
 
 ## Prestataires de paiement en ligne
 
-Vous pouvez connecter votre propre compte Mollie ou Stripe pour que les clients puissent payer leurs factures directement en ligne. Les fonds sont verses directement sur votre compte. MyCompanyDesk ne gere que la connexion.
+Vous pouvez connecter votre propre compte Mollie ou Stripe pour que les clients puissent payer leurs factures directement en ligne. Les fonds sont versés directement sur votre compte. MyCompanyDesk ne gère que la connexion.
 
 Pour connecter un prestataire :
 1. Allez dans **Paramètres → Paiement**
@@ -40,7 +40,7 @@ Pour connecter un prestataire :
 3. Suivez le flux OAuth pour autoriser votre compte
 4. Une fois connecté, chaque facture envoyée inclut un lien de paiement pour vos clients
 
-Mollie prend en charge iDEAL, Bancontact, la carte bancaire et le virement, ideal pour les clients neerlandais et belges. Stripe Connect prend en charge la carte, Apple Pay, Google Pay et le prelevement SEPA, adapte aux clients internationaux.
+Mollie prend en charge iDEAL, Bancontact, la carte bancaire et le virement, idéal pour les clients néerlandais et belges. Stripe Connect prend en charge la carte, Apple Pay, Google Pay et le prélèvement SEPA, adapté aux clients internationaux.
 
 ## Frais de paiement en ligne sur le plan Gratuit
 
@@ -48,12 +48,12 @@ Les paiements de factures en ligne entraînent de petits frais de service sur le
 
 Le montant exact et le montant minimum de facture sont configurés côté serveur. L'info-bulle de l'application indique actuellement 0,50 € par paiement de facture en ligne à partir de 5 €, conformément à `config.billing.freeTierSurchargeCents` et `freeTierSurchargeMinInvoiceCents` dans `apps/api/src/config/env.js`. Si l'une de ces valeurs change, cette page et l'info-bulle doivent être mises à jour ensemble.
 
-Pour deconnecter, cliquez sur **Loskoppelen** sur la carte correspondante. Si des paiements ont eu lieu au cours des 24 dernieres heures, un avertissement vous rappelle que des webhooks en attente peuvent encore arriver et que les remboursements pour ces paiements doivent etre traites manuellement. Apres la deconnexion, les clients ne peuvent plus payer via ce prestataire.
+Pour déconnecter, cliquez sur **Loskoppelen** sur la carte correspondante. Si des paiements ont eu lieu au cours des 24 dernières heures, un avertissement vous rappelle que des webhooks en attente peuvent encore arriver et que les remboursements pour ces paiements doivent être traités manuellement. Après la déconnexion, les clients ne peuvent plus payer via ce prestataire.
 
-### Parametres de paiement Mollie
+### Paramètres de paiement Mollie
 
-Une fois Mollie connecte, un interrupteur **Betaalknop op facturen** et une section **Betaalmethoden** apparaissent sur la carte Mollie. L'interrupteur active ou desactive le bouton de paiement sur toutes les factures sans deconnecter Mollie. La liste des methodes, recuperee en direct de votre tableau de bord Mollie, vous permet de choisir les methodes de paiement que vos clients verront. Avec **Stuur testbetaling**, vous parcourez un checkout test gratuit de €1 via Mollie pour confirmer que tout fonctionne de bout en bout.
+Une fois Mollie connecté, un interrupteur **Betaalknop op facturen** et une section **Betaalmethoden** apparaissent sur la carte Mollie. L'interrupteur active ou désactive le bouton de paiement sur toutes les factures sans déconnecter Mollie. La liste des méthodes, récupérée en direct depuis votre tableau de bord Mollie, vous permet de choisir les méthodes de paiement que vos clients verront. Avec **Stuur testbetaling**, vous parcourez un checkout test gratuit de 1 € via Mollie pour confirmer que tout fonctionne de bout en bout.
 
-### Parametres de paiement Stripe
+### Paramètres de paiement Stripe
 
-Une fois Stripe connecte et l'onboarding (KYC) termine, un interrupteur **Betaalknop op facturen** et une section **Betaalmethoden** apparaissent sur la carte Stripe. L'interrupteur active ou desactive le bouton de paiement Stripe sur toutes les factures sans deconnecter Stripe. La liste des methodes, croisee avec les capacites de votre compte Stripe, vous permet de choisir les methodes de paiement que vos clients verront au checkout (carte, iDEAL, Bancontact, prelevement SEPA, PayPal, Klarna, Link by Stripe). Decochez tout pour revenir a la selection automatique des methodes par Stripe Checkout. Avec **Open Stripe Dashboard**, vous etes redirige vers vos parametres de methodes de paiement Stripe pour verifier votre integration et tester les paiements.
+Une fois Stripe connecté et l'onboarding (KYC) terminé, un interrupteur **Betaalknop op facturen** et une section **Betaalmethoden** apparaissent sur la carte Stripe. L'interrupteur active ou désactive le bouton de paiement Stripe sur toutes les factures sans déconnecter Stripe. La liste des méthodes, croisée avec les capacités de votre compte Stripe, vous permet de choisir les méthodes de paiement que vos clients verront au checkout (carte, iDEAL, Bancontact, prélèvement SEPA, PayPal, Klarna, Link by Stripe). Décochez tout pour revenir à la sélection automatique des méthodes par Stripe Checkout. Avec **Open Stripe Dashboard**, vous êtes redirigé vers vos paramètres de méthodes de paiement Stripe pour vérifier votre intégration et tester les paiements.

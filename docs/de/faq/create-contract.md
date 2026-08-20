@@ -7,11 +7,11 @@ chatbot:
   actions: []
   follow_up: ["How do I create a project?", "How do I link invoices to a contract?"]
 ---
-So erstellst du einen Vertrag:
-1. Gehe zu Vertraege und oeffne „Neuer Vertrag"
-2. Waehle bei Mietvertraegen das Objekt und den Kunden aus. Bei anderen Typen (Service, NDA, Projekt) ist nur ein Kunde erforderlich.
-3. Gib Vertragsname, Betrag, MwSt-Satz und Wiederholung ein
-4. Setze Startdatum und Datum der ersten Rechnung
-5. Fuege bei Bedarf Serviceangaben oder Auto-Senden hinzu und speichere
+So erstellen Sie einen Vertrag:
+1. Gehen Sie zu Verträge und öffnen Sie „Neuer Vertrag“
+2. Wählen Sie bei Mietverträgen das Objekt und den Kunden aus. Bei anderen Typen (Service, NDA, Projekt) ist nur ein Kunde erforderlich.
+3. Geben Sie Vertragsname, Betrag, MwSt-Satz und Wiederholung ein
+4. Setzen Sie Startdatum und Datum der ersten Rechnung
+5. Fügen Sie bei Bedarf Serviceangaben oder Auto-Senden hinzu und speichern Sie
 
-Tipp: Du kannst den gespeicherten Vertrag spaeter erneut oeffnen, um die Abrechnung anzupassen.
+Tipp: Sie können den gespeicherten Vertrag später erneut öffnen, um die Abrechnung anzupassen.

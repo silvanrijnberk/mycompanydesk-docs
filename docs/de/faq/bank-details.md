@@ -10,7 +10,7 @@ chatbot:
 ---
 
 So fügen Sie Bankdaten hinzu oder aktualisieren sie:
-1. Gehen Sie zu Einstellungen und öffnen Sie „Zahlung"
+1. Gehen Sie zu Einstellungen und öffnen Sie „Zahlung“
 2. Tragen Sie Ihre IBAN und den Namen auf dem Konto in der Bankkonto-Karte ein
 3. Änderungen werden automatisch gespeichert
 

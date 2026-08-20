@@ -21,7 +21,7 @@ chatbot:
 ---
 
 Pour modifier un client :
-1. Allez dans Clients et trouvez le client
+1. Allez dans Clients et cherchez le client
 2. Cliquez sur le client pour ouvrir son profil
 3. Cliquez sur « Modifier »
 4. Mettez à jour le nom, l'adresse, l'e-mail, le numéro de TVA ou les conditions de paiement

@@ -8,6 +8,6 @@ chatbot:
   follow_up: ["How do I change my password?", "How do I update my profile?"]
 ---
 
-Ihre Login-E-Mail-Adresse steht unter Einstellungen → „Deine Daten", aber das Feld „E-Mail-Adresse" ist schreibgeschützt. Sie können die Login-E-Mail-Adresse nicht selbst ändern.
+Ihre Login-E-Mail-Adresse steht unter Einstellungen → „Deine Daten“, aber das Feld „E-Mail-Adresse“ ist schreibgeschützt. Sie können die Login-E-Mail-Adresse nicht selbst ändern.
 
 Wenn sie geändert werden muss, nutzen Sie das Support-Ticket-Formular unter dem Chat.

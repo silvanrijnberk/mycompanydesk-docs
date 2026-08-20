@@ -21,8 +21,8 @@ chatbot:
     - "How do I preview invoices before sending?"
 ---
 
-So verringerst du Rechnungsfehler in der App:
-1. Oeffne Kunden und ergaenze Rechnungs-E-Mail, Adresse, USt-Nummer und Standard-Zahlungsbedingungen beim Kunden
-2. Verwende danach diesen gespeicherten Kunden beim Erstellen der Rechnung statt alles neu einzutippen
-3. Oeffne vor dem Senden die Vorschau, um Kundendaten, Positionen und PDF-Layout zu pruefen
-4. Wenn weiter falsche Informationen erscheinen, aktualisiere zuerst den Kundendatensatz oder die Firmeneinstellungen und lade dann den Entwurf neu
+So verringern Sie Rechnungsfehler in der App:
+1. Öffnen Sie Kunden und ergänzen Sie Rechnungs-E-Mail, Adresse, USt-Nummer und Standard-Zahlungsbedingungen beim Kunden
+2. Verwenden Sie danach diesen gespeicherten Kunden beim Erstellen der Rechnung, statt alles neu einzutippen
+3. Öffnen Sie vor dem Senden die Vorschau, um Kundendaten, Positionen und PDF-Layout zu prüfen
+4. Wenn weiter falsche Informationen erscheinen, aktualisieren Sie zuerst den Kundendatensatz oder die Firmeneinstellungen und laden Sie dann den Entwurf neu

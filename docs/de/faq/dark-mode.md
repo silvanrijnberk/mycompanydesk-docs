@@ -11,7 +11,7 @@ chatbot:
 ## Dunkelmodus in der App
 
 So wechseln Sie Ihr Theme:
-1. Gehen Sie zu Einstellungen → „Darstellung"
+1. Gehen Sie zu Einstellungen → „Darstellung“
 2. Wählen Sie Hell, Dunkel oder Automatisch (folgt Ihrem Gerät)
 3. Die Änderung wird sofort angewendet und automatisch gespeichert
 

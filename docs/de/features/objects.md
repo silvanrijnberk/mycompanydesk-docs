@@ -36,7 +36,7 @@ Das Objektmodul ist für Unternehmen konzipiert, die physische Vermögenswerte v
 
 1. Gehen Sie zu **Objekte > Neues Objekt**
 2. Füllen Sie aus:
-   - **Name** - Eine eindeutige Bezeichnung (z. B. „Wohnung 3B" oder „Bagger CAT 320")
+   - **Name** - Eine eindeutige Bezeichnung (z. B. „Wohnung 3B“ oder „Bagger CAT 320“)
    - **Typ** - Immobilie, Fahrzeug, Maschine oder Sonstiges
 3. Klicken Sie auf **Speichern**
 

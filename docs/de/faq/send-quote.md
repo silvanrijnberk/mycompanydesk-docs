@@ -9,10 +9,10 @@ chatbot:
     - { label: "Open customers", to: "/customers" }
   follow_up: ["How do I preview before sending?", "How do I fix a failed send?", "How do I update the customer email?"]
 ---
-So sendest du ein Angebot per E-Mail:
-1. Oeffne die Angebotsdetailseite
-2. Klicke auf „Senden"
-3. Pruefe Vorschau und Empfaengeradresse
-4. Versand bestaetigen
+So senden Sie ein Angebot per E-Mail:
+1. Öffnen Sie die Angebotsdetailseite
+2. Klicken Sie auf „Senden“
+3. Prüfen Sie Vorschau und Empfängeradresse
+4. Bestätigen Sie den Versand
 
-Tipp: Bei Fehlern Kunden-E-Mail pruefen.
+Tipp: Prüfen Sie bei Fehlern die E-Mail-Adresse des Kunden.

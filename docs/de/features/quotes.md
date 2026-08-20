@@ -29,7 +29,7 @@ Das Angebotsformular ähnelt dem Rechnungsformular — wenn Sie wissen, wie man 
 3. Überprüfen Sie die E-Mail-Vorschau
 4. Klicken Sie auf **Senden**, um es an Ihren Kunden zuzustellen
 
-Im Versanddialog findest du Schalter für **Ansehen-Button**, **Download-Button** und **PDF-Anhang**. Standardmäßig ist der PDF-Anhang aktiviert, damit der Kunde das Angebot überprüfen kann.
+Im Versanddialog finden Sie Schalter für **Ansehen-Button**, **Download-Button** und **PDF-Anhang**. Standardmäßig ist der PDF-Anhang aktiviert, damit der Kunde das Angebot überprüfen kann.
 
 Für ein Angebot muss mindestens einer dieser Schalter aktiviert sein; sonst hat der Kunde keine Möglichkeit, das Angebot zu öffnen, und der Button **Senden** wird deaktiviert. Rechnungen behalten immer einen Kundenportal-Button als Rückfalllösung, Angebote nicht.
 

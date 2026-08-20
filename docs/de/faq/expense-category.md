@@ -11,7 +11,7 @@ chatbot:
 
 So legen Sie eine Ausgabenkategorie fest oder ändern sie:
 1. Öffnen Sie die Ausgabe im Bearbeitungsmodus
-2. Suchen Sie das Dropdown „Kategorie"
+2. Suchen Sie das Dropdown „Kategorie“
 3. Wählen Sie eine Kategorie aus Ihrer Arbeitsbereichsliste (Systemstandards oder selbst hinzugefügte Kategorien)
 4. Speichern Sie die Ausgabe
 

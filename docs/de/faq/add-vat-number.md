@@ -19,8 +19,8 @@ chatbot:
 ---
 
 So fügen Sie Ihre USt-IdNr. hinzu oder ändern sie:
-1. Gehen Sie zu Einstellungen → „Unternehmensdaten"
-2. Füllen Sie dort das Feld „USt-IdNr." aus
+1. Gehen Sie zu Einstellungen → „Unternehmensdaten“
+2. Füllen Sie dort das Feld „USt-IdNr.“ aus
 3. Änderungen werden automatisch gespeichert
 
 Ihre USt-IdNr. wird danach auf erzeugten Dokumenten verwendet. Für Kunden-USt-Nummern öffnen Sie das Kundenprofil und pflegen dort das Feld ein.

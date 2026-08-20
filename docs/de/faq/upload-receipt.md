@@ -9,12 +9,12 @@ chatbot:
   follow_up: ["How do I create an expense?", "How do I categorize an expense?"]
 ---
 
-So ersetzt oder laedst du einen Beleg zu einer Ausgabe hoch:
-1. Oeffne eine bestehende Ausgabe oder speichere eine neue Ausgabe zuerst.
-2. Klicke im Seitenpanel auf das Bueroklammer-Symbol, oder nutze auf der Detailseite der Ausgabe die Aktion „Beleg hochladen".
-3. Waehle die Bild- oder PDF-Datei aus, die du anhaengen willst.
-4. Warte, bis der Upload abgeschlossen ist, und pruefe, ob der Beleg bei der Ausgabe erscheint.
+So laden Sie einen Beleg zu einer Ausgabe hoch oder ersetzen ihn:
+1. Öffnen Sie eine bestehende Ausgabe oder speichern Sie zuerst eine neue Ausgabe.
+2. Klicken Sie im Seitenpanel auf das Büroklammer-Symbol, oder nutzen Sie auf der Detailseite der Ausgabe die Aktion „Beleg hochladen“.
+3. Wählen Sie die Bild- oder PDF-Datei aus, die Sie anhängen wollen.
+4. Warten Sie, bis der Upload abgeschlossen ist, und prüfen Sie, ob der Beleg bei der Ausgabe erscheint.
 
 Hinweis: Belegdateien dürfen maximal 10 MB groß sein. Wenn Sie über **Beleg scannen** eine größere Datei hochladen, wird die Ausgabe ohne Beleg erstellt und eine Warnung angezeigt. Laden Sie anschließend eine kleinere Datei auf der Detailseite der Ausgabe hoch.
 
-Tipp: Wenn du noch auf dem Formular fuer eine neue Ausgabe bist, speichere sie zuerst. Sobald die Ausgabe gespeichert ist, kannst du den Beleg im Seitenpanel oder auf der Detailseite hinzufuegen oder ersetzen.
+Tipp: Wenn Sie noch auf dem Formular für eine neue Ausgabe sind, speichern Sie sie zuerst. Sobald die Ausgabe gespeichert ist, können Sie den Beleg im Seitenpanel oder auf der Detailseite hinzufügen oder ersetzen.

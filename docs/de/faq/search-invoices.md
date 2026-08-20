@@ -10,9 +10,9 @@ chatbot:
 ---
 
 Um eine bestimmte Rechnung zu suchen:
-1. Gehe zu Rechnungen
-2. Verwende die Suchleiste, um Rechnungsnummer, Kundenname oder Betrag einzugeben
-3. Verwende Filter für den Status (Entwurf, Gesendet, Bezahlt, Überfällig)
-4. Klicke auf die Rechnung, um sie zu öffnen
+1. Gehen Sie zu Rechnungen
+2. Verwenden Sie die Suchleiste, um Rechnungsnummer, Kundenname oder Betrag einzugeben
+3. Verwenden Sie Filter für den Status (Entwurf, Gesendet, Bezahlt, Überfällig)
+4. Klicken Sie auf die Rechnung, um sie zu öffnen
 
-Tipp: Kombiniere die Suche mit Statusfiltern für die schnellsten Ergebnisse.
+Tipp: Kombinieren Sie die Suche mit Statusfiltern für die schnellsten Ergebnisse.

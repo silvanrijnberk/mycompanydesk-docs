@@ -14,8 +14,8 @@ Seitenberechtigungen steuern, was jedes Teammitglied oder jeder Steuerberater tu
 • Erstellen - neue Einträge anlegen
 
 So richten Sie das ein:
-1. Gehen Sie zu Einstellungen → „Zugang und Steuerberater"
-2. Öffnen Sie „Zugang verwalten" beim Teammitglied oder Steuerberater
+1. Gehen Sie zu Einstellungen → „Zugang und Steuerberater“
+2. Öffnen Sie „Zugang verwalten“ beim Teammitglied oder Steuerberater
 3. Schalten Sie Lesen, Schreiben und Erstellen pro Seite ein oder aus
 4. Speichern Sie die Änderungen
 

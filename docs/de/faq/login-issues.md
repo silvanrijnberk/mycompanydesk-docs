@@ -8,10 +8,10 @@ chatbot:
   follow_up: ["How do I reset my password?", "How do I change my password?"]
 ---
 
-Wenn du Probleme beim Anmelden hast:
-1. Versuche „Passwort vergessen" auf der Anmeldeseite
-2. Prüfe deinen Spam-/Junk-Ordner
-3. Stelle sicher, dass du die richtige E-Mail verwendest
-4. Lösche Browser-Cache und Cookies
+Wenn Sie Probleme beim Anmelden haben:
+1. Versuchen Sie „Passwort vergessen“ auf der Anmeldeseite
+2. Prüfen Sie Ihren Spam-/Junk-Ordner
+3. Stellen Sie sicher, dass Sie die richtige E-Mail verwenden
+4. Löschen Sie Browser-Cache und Cookies
 
-Wenn das Problem weiterhin besteht, erstelle ein Support-Ticket.
+Wenn das Problem weiterhin besteht, erstellen Sie ein Support-Ticket.

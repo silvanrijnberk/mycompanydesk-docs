@@ -9,9 +9,9 @@ chatbot:
 ---
 
 Um die Anwendung auf dem Handy zu nutzen:
-1. Öffne deinen mobilen Browser (Chrome, Safari usw.)
-2. Navigiere zur Anwendungs-URL
-3. Die Oberfläche passt sich automatisch an deine Bildschirmgröße an
-4. Du kannst sie für schnellen Zugriff zum Startbildschirm hinzufügen
+1. Öffnen Sie Ihren mobilen Browser (Chrome, Safari usw.)
+2. Navigieren Sie zur Anwendungs-URL
+3. Die Oberfläche passt sich automatisch an Ihre Bildschirmgröße an
+4. Sie können sie für schnellen Zugriff zum Startbildschirm hinzufügen
 
-Tipp: Alle Funktionen sind mobil verfügbar - erstelle Rechnungen, erfasse Ausgaben und verwalte Kunden unterwegs.
+Tipp: Alle Funktionen sind mobil verfügbar: erstellen Sie Rechnungen, erfassen Sie Ausgaben und verwalten Sie Kunden unterwegs.

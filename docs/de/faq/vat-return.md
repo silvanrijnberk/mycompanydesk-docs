@@ -10,10 +10,10 @@ chatbot:
   follow_up: ["How do I add my VAT number?", "How do I view financial reports?", "How do I export data for my accountant?"]
 ---
 
-So pruefst du MwSt-Zahlen in der App:
-1. Oeffne MwSt
-2. Waehle den Zeitraum, den du kontrollieren willst
-3. Pruefe die berechneten MwSt-Summen und oeffne die zugehoerigen Rechnungen oder Ausgaben, wenn du die Quelldaten sehen willst
-4. Nutze die Exportfunktion, wenn du die sichtbaren Zahlen ausserhalb der App brauchst
+So prüfen Sie MwSt-Zahlen in der App:
+1. Öffnen Sie MwSt
+2. Wählen Sie den Zeitraum, den Sie kontrollieren wollen
+3. Prüfen Sie die berechneten MwSt-Summen und öffnen Sie die zugehörigen Rechnungen oder Ausgaben, wenn Sie die Quelldaten sehen wollen
+4. Nutzen Sie die Exportfunktion, wenn Sie die sichtbaren Zahlen außerhalb der App brauchen
 
-Die App zeigt MwSt-Berechnungen fuer deine erfassten Daten an, reicht die Meldung aber nicht fuer dich ein.
+Die App zeigt MwSt-Berechnungen für Ihre erfassten Daten an, reicht die Meldung aber nicht für Sie ein.

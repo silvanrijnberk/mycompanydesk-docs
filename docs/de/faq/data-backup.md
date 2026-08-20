@@ -22,7 +22,7 @@ chatbot:
 ---
 
 So sichern Sie Ihre Daten:
-1. Gehen Sie zu Einstellungen -> „Daten herunterladen"
+1. Gehen Sie zu Einstellungen -> „Daten herunterladen“
 2. Laden Sie CSV-Exporte für Rechnungen, Kunden und Ausgaben oder das dort verfügbare Vollbackup herunter
 3. Prüfen Sie, ob die heruntergeladenen Dateien die benötigten Datensätze enthalten
 

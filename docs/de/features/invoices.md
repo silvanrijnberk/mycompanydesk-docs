@@ -140,7 +140,7 @@ Wenn Sie eine Rechnung versenden, wird ein eindeutiger Zahlungslink generiert. I
 
 1. Auf den Link in der E-Mail klicken
 2. Die Rechnung im **Kundenportal** ansehen
-3. Direkt online bezahlen, ueber Ihr verbundenes Mollie- oder Stripe-Konto
+3. Direkt online bezahlen, über Ihr verbundenes Mollie- oder Stripe-Konto
 
 Die Zahlung wird automatisch erfasst und der Rechnungsstatus wird auf **Bezahlt** aktualisiert.
 
@@ -151,15 +151,15 @@ Wird eine Rechnung nach dem Versand storniert, funktioniert der Zahlungslink nic
 Aktivieren Sie Online-Rechnungszahlungen, indem Sie Ihr eigenes Mollie- oder Stripe-Konto verbinden:
 
 1. Gehen Sie zu **Geld → Zahlungen** in der Seitenleiste Ihres Arbeitsbereichs
-2. Verbinden Sie unter **Online betalingen** den gewuenschten Anbieter
-3. Mollie unterstuetzt iDEAL, Bancontact, Kreditkarte und Bankueberweisung
-4. Stripe Connect unterstuetzt Karte, Apple Pay, Google Pay und SEPA-Lastschrift
+2. Verbinden Sie unter **Online betalingen** den gewünschten Anbieter
+3. Mollie unterstützt iDEAL, Bancontact, Kreditkarte und Banküberweisung
+4. Stripe Connect unterstützt Karte, Apple Pay, Google Pay und SEPA-Lastschrift
 
-Nach der Verbindung enthaelt jede von Ihnen versendete Rechnung einen Zahlungslink. Ihre Kunden bezahlen ueber Ihr eigenes Anbieterkonto. Das Geld geht direkt an Sie. MyCompanyDesk verarbeitet oder verwahrt keine Zahlungen fuer Sie.
+Nach der Verbindung enthält jede von Ihnen versendete Rechnung einen Zahlungslink. Ihre Kunden bezahlen über Ihr eigenes Anbieterkonto. Das Geld geht direkt an Sie. MyCompanyDesk verarbeitet oder verwahrt keine Zahlungen für Sie.
 
 ## Zahlungsanbieter-Badge
 
-Wenn eine Rechnung vollstaendig bezahlt ist, zeigt die Kopfzeile des Zahlungsbereichs ein Badge an, das angibt, ueber welchen Anbieter die Zahlung eingegangen ist: "Bezahlt ueber Mollie" oder "Bezahlt ueber Stripe". Der dominante Anbieter wird angezeigt, wenn mehrere Zahlungsmethoden verwendet wurden. So sehen Sie auf einen Blick, wo das Geld eingegangen ist, ohne durch den Zahlungsverlauf scrollen zu muessen.
+Wenn eine Rechnung vollständig bezahlt ist, zeigt die Kopfzeile des Zahlungsbereichs ein Badge an, das angibt, über welchen Anbieter die Zahlung eingegangen ist: "Bezahlt über Mollie" oder "Bezahlt über Stripe". Der dominante Anbieter wird angezeigt, wenn mehrere Zahlungsmethoden verwendet wurden. So sehen Sie auf einen Blick, wo das Geld eingegangen ist, ohne durch den Zahlungsverlauf scrollen zu müssen.
 
 ## Zahlungen rückerstatten
 
@@ -218,17 +218,17 @@ CSV-Export erfordert den **Pro**-Tarif oder höher.
 
 Wenn Sie eine Rechnung finalisieren oder versenden, prüft MyCompanyDesk, ob Ihre Firma eine USt-IdNr. (Umsatzsteuer-Identifikationsnummer) und eine IBAN hinterlegt hat. In den Niederlanden ist eine USt-IdNr. gesetzlich auf der Rechnung vorgeschrieben, und Ihre IBAN zeigt Kunden, wohin sie zahlen sollen.
 
-Fehlt eines der Felder, oeffnet sich ein Dialog, in dem Sie die Angaben direkt nachtragen koennen. Nach dem Speichern wird die Rechnung automatisch finalisiert.
+Fehlt eines der Felder, öffnet sich ein Dialog, in dem Sie die Angaben direkt nachtragen können. Nach dem Speichern wird die Rechnung automatisch finalisiert.
 
-Die App blockiert die Finalisierung auch, wenn Ihre Firmendaten unvollstaendig sind (z. B. ein fehlender Firmenname oder eine fehlende Adresse) oder wenn die Rechnung keine Positionen enthaelt. Die Fehlermeldung zeigt genau, was fehlt, damit Sie es korrigieren koennen, bevor die Rechnung beim Kunden landet.
+Die App blockiert die Finalisierung auch, wenn Ihre Firmendaten unvollständig sind (z. B. ein fehlender Firmenname oder eine fehlende Adresse) oder wenn die Rechnung keine Positionen enthält. Die Fehlermeldung zeigt genau, was fehlt, damit Sie es korrigieren können, bevor die Rechnung beim Kunden landet.
 
-Mengenangaben in der PDF werden in derselben Sprache formatiert wie der Rest des Dokuments, sodass eine englische Rechnung die englische Zahlenformatierung und eine niederlaendische Rechnung die niederlaendische Formatierung verwendet.
+Mengenangaben in der PDF werden in derselben Sprache formatiert wie der Rest des Dokuments, sodass eine englische Rechnung die englische Zahlenformatierung und eine niederländische Rechnung die niederländische Formatierung verwendet.
 
 Wenn Ihr Arbeitsbereich die manuelle Nummerierung verwendet, fragt die App beim Finalisieren oder Versenden auch nach der Rechnungsnummer. MyCompanyDesk schlägt die nächste Nummer in Ihrer Serie vor, aber Sie können auch eine beliebige andere Nummer eingeben. Die Nummer ist Pflicht und muss eindeutig sein.
 
-Warten Sie noch auf Ihre USt-IdNr. vom Finanzamt, oder sind Sie unter der Kleinunternehmerregelung (KOR) befreit? Sie koennen den Hinweis ueberspringen und trotzdem fortfahren. Tragen Sie Ihre USt-IdNr. spaeter nach, sobald sie vorliegt.
+Warten Sie noch auf Ihre USt-IdNr. vom Finanzamt, oder sind Sie unter der Kleinunternehmerregelung (KOR) befreit? Sie können den Hinweis überspringen und trotzdem fortfahren. Tragen Sie Ihre USt-IdNr. später nach, sobald sie vorliegt.
 
-Sobald eine Rechnung finalisiert wurde, koennen Sie sie nicht mehr in einem Schritt archivieren oder loeschen, da die Rechnungsnummer bereits verwendet wurde. Nutzen Sie stattdessen die Stornierungs- oder Gutschrifts-Flow, wenn eine finalisierte Rechnung nicht mehr bezahlt werden soll.
+Sobald eine Rechnung finalisiert wurde, können Sie sie nicht mehr in einem Schritt archivieren oder löschen, da die Rechnungsnummer bereits verwendet wurde. Nutzen Sie stattdessen die Stornierungs- oder Gutschrifts-Flow, wenn eine finalisierte Rechnung nicht mehr bezahlt werden soll.
 
 ## Rechnungen von anderen MyCompanyDesk-Nutzern empfangen
 

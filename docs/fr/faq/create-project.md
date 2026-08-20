@@ -18,11 +18,11 @@ chatbot:
     - "How do I link expenses to a project?"
 ---
 
-Pour creer un projet :
+Pour créer un projet :
 1. Ouvrez Projets puis « Nouveau projet »
-2. Saisissez le nom, le numero et la description du projet
-3. Associez le client si necessaire
-4. Definissez le statut, les dates, le budget et le taux horaire utiles
+2. Saisissez le nom, le numéro et la description du projet
+3. Associez le client si nécessaire
+4. Définissez le statut, les dates, le budget et le taux horaire utiles
 5. Enregistrez le projet
 
-Apres l enregistrement, vous pouvez ouvrir les factures, depenses ou contrats associes et les relier a ce projet.
+Après l'enregistrement, vous pouvez ouvrir les factures, dépenses ou contrats associés et les relier à ce projet.

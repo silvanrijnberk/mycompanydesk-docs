@@ -10,9 +10,9 @@ chatbot:
 ---
 
 So fügen Sie eine Ausgabe hinzu:
-1. Gehen Sie zu Ausgaben und klicken Sie auf „Hinzufügen"
+1. Gehen Sie zu Ausgaben und klicken Sie auf „Hinzufügen“
 2. Geben Sie Lieferant, Kategorie, Beschreibung, Betrag und Datum ein. Ein Betrag ist erforderlich; das Formular speichert keine Ausgabe von 0,00 EUR, es sei denn, es handelt sich um einen echten Nullwert wie eine rein MwSt.-haltige Gutschrift.
 3. Speichern Sie die Ausgabe, damit der Datensatz angelegt wird
-4. Öffnen Sie danach die gespeicherte Ausgabe, wenn Sie „Beleg hochladen" nutzen möchten
+4. Öffnen Sie danach die gespeicherte Ausgabe, wenn Sie „Beleg hochladen“ nutzen möchten
 
 Tipp: Der Beleg-Upload befindet sich auf der Detailseite, nachdem die Ausgabe gespeichert wurde, nicht im Formular für neue Ausgaben.

@@ -20,11 +20,11 @@ chatbot:
     - "How do I categorize expenses?"
 ---
 
-So richtest du automatisch wiederkehrende Ausgaben ein:
-1. Gehe zu Wiederkehrende Ausgaben
-2. Klicke auf "Neue wiederkehrende Ausgabe"
-3. Gib Lieferant, Betrag und Kategorie ein
-4. Lege Haeufigkeit und Startdatum fest
-5. Speichere und pruefe, wann Datensaetze erzeugt werden
+So richten Sie automatisch wiederkehrende Ausgaben ein:
+1. Gehen Sie zu Wiederkehrende Ausgaben
+2. Klicken Sie auf „Neue wiederkehrende Ausgabe“
+3. Geben Sie Lieferant, Betrag und Kategorie ein
+4. Legen Sie Häufigkeit und Startdatum fest
+5. Speichern Sie und prüfen Sie, wann Datensätze erzeugt werden
 
-Diese Antwort beschraenkt sich darauf, wie die Funktion fuer wiederkehrende Ausgaben in der App arbeitet.
+Diese Antwort beschränkt sich darauf, wie die Funktion für wiederkehrende Ausgaben in der App arbeitet.

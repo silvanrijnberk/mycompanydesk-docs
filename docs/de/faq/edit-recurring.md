@@ -20,12 +20,12 @@ chatbot:
     - "How do I create a new recurring invoice?"
 ---
 
-So bearbeitest du ein wiederkehrendes Element:
-1. Gehe zu Wiederkehrende Rechnungen (oder Ausgaben)
-2. Öffne das wiederkehrende Element
-3. Klicke auf „Bearbeiten"
-4. Ändere Betrag, Frequenz, Kunde oder Positionen
-5. Speichere - zukünftige Generierungen verwenden die aktualisierte Vorlage
+So bearbeiten Sie ein wiederkehrendes Element:
+1. Gehen Sie zu Wiederkehrende Rechnungen (oder Ausgaben)
+2. Öffnen Sie das wiederkehrende Element
+3. Klicken Sie auf „Bearbeiten“
+4. Ändern Sie Betrag, Frequenz, Kunde oder Positionen
+5. Speichern Sie: zukünftige Generierungen verwenden die aktualisierte Vorlage
 
 Hinweis: Änderungen wirken sich nur auf zukünftige Rechnungen/Ausgaben aus. Bereits erzeugte Einträge bleiben unverändert.
 

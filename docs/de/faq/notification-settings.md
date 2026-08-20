@@ -20,7 +20,7 @@ chatbot:
 
 So verwalten Sie Ihre Benachrichtigungseinstellungen:
 
-1. Gehen Sie zu Einstellungen → „Benachrichtigungen"
+1. Gehen Sie zu Einstellungen → „Benachrichtigungen“
 2. Schalten Sie die Benachrichtigungsthemen ein oder aus. Die Kategorien sind:
    - **Rechnungen, die Ihre Aufmerksamkeit brauchen**: überfällige Rechnungen, Rechnungen, die bald fällig sind, unbearbeitete Entwürfe, fehlgeschlagene Lastschriften, fehlgeschlagene Rechnungszustellungen, pausierte automatische Vertragsabrechnung und Stunden ohne Tarif.
    - **Zahlungseingang**: Zahlungen, bestätigte Zahlungen und auffällige Banktransaktionen.

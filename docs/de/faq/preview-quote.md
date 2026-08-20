@@ -9,8 +9,8 @@ chatbot:
     - { label: "Open invoice design", to: "/settings/factuurontwerp" }
   follow_up: ["How do I change quote branding?", "How do I send the quote after preview?", "How do I edit the quote?"]
 ---
-So pruefst, druckst oder laedst du ein Angebot als PDF herunter:
-1. Oeffne die Angebotsdetailseite
-2. Klicke auf „Vorschau"
-3. Nutze Drucken oder PDF-Download
-4. Gehe zurueck fuer Anpassungen
+So prüfen, drucken oder laden Sie ein Angebot als PDF herunter:
+1. Öffnen Sie die Angebotsdetailseite
+2. Klicken Sie auf „Vorschau“
+3. Nutzen Sie Drucken oder PDF-Download
+4. Gehen Sie für Anpassungen zurück

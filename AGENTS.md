@@ -9,7 +9,11 @@ The `mcd-public-surfaces-sync` agent runs as an openclaw cron job on the service
 ## Hard rules (apply to all locales and to the landing)
 
 1. **No em-dashes (`—`) or en-dashes (`–`) in any new prose.** Use commas, periods, parentheses, or restructure. Untouched passages keep what is there; rewritten ones strip them.
-2. **Native voice in every language.** Read existing nl/de/fr files for tone and vocabulary first, then write the way a fluent speaker writes. NL `je`-form, DE `Sie`-form, FR `vous`-form. Never machine-translate then ship.
+2. **Native voice in every language, in that language's own characters.** Read existing nl/de/fr files for tone and vocabulary first, then write the way a fluent speaker writes. NL `je`-form, DE `Sie`-form, FR `vous`-form. Never machine-translate then ship.
+   - **German is written with real umlauts and eszett.** `öffnen`, not `oeffnen`; `überfällig`, not `ueberfaellig`; `einschließlich`, not `einschliesslich`. Quotes are `„…“`.
+   - **French is written with its accents and apostrophes.** `créer`, not `creer`; `l'entreprise`, not `l entreprise`; `reçu`, not `recu`.
+   - **The German app UI is itself in the du-form** (`Über dich`, `Deine Daten`, `Dein Abonnement`). Quote those labels exactly as the app shows them; the surrounding prose still uses the Sie-form.
+   - If your pipeline cannot emit non-ASCII, stop and fix the pipeline. A page that arrives stripped is worse than a page that arrives late, and `npm run check:language` will reject it.
 3. **Mirror the file tree across locales.** Adding `docs/en/features/foo.md` adds `docs/features/foo.md` (Dutch, root, no prefix), `docs/de/features/foo.md` and `docs/fr/features/foo.md` in the same change. Same for renames and deletes. Never leave a page English-only: an English-only page has no Dutch URL, and the Dutch URL is the default one. Links inside `en/`, `de/`, `fr/` pages carry their locale prefix; links inside the Dutch root pages carry none.
 4. **Every page carries its own `title` and `description` in frontmatter, in its own language.** The description is what Google prints under the result and what the answer engines quote, so it says what the page actually does, in 40 to 155 characters, and no two pages in the same locale share one. A new page without a description, a description copied across locales, or a Dutch/German/French page still carrying the English title fails `npm run check:descriptions`. No em-dashes and no double quotes in it (the chatbot's frontmatter parser does not unescape `\"`).
 5. **Preserve frontmatter and Vitepress syntax verbatim** unless the change is the point of the edit. YAML keys, asset paths, container directives (`:::tip`), `<script setup>` blocks stay byte-identical.
@@ -29,7 +33,7 @@ For any country-specific number, rate, threshold, deadline, or legal-status clai
 
 After opening the PR, the agent runs through this checklist against the PR diff:
 
-0. `npm run check:descriptions` exits non-zero → fail. Run it before anything else; it is cheaper than reading the diff.
+0. `npm run check` exits non-zero (descriptions plus language) → fail. Run it before anything else; it is cheaper than reading the diff.
 1. Any em-dash or en-dash in added lines → fail.
 2. Any new file under `docs/en/<path>.md` without sibling Dutch-root, `de/` and `fr/` mirrors → fail.
 3. Any new number/percentage/€-value/date deadline in any locale not citing a `sources/` path → fail.

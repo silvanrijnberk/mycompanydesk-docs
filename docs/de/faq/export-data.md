@@ -10,7 +10,7 @@ chatbot:
 ---
 
 So exportieren Sie Daten:
-1. Gehen Sie zu Einstellungen → „Daten herunterladen" für die schnellen Exportaktionen
+1. Gehen Sie zu Einstellungen → „Daten herunterladen“ für die schnellen Exportaktionen
 2. Laden Sie dort CSV-Exporte für Rechnungen, Kunden und Ausgaben oder das Vollbackup herunter
 3. Nutzen Sie Exporte auf Bereichsebene in Rechnungen, Ausgaben oder Berichten, wenn Sie nur einen Datensatz brauchen
 

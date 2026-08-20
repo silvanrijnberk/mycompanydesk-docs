@@ -9,12 +9,12 @@ chatbot:
     - { label: "Open quotes", to: "/quotes" }
   follow_up: ["How do I preview the quote PDF?", "How do I send a quote by email?", "How do I convert a quote to an invoice?"]
 ---
-Voici comment creer un devis :
-1. Allez dans Devis et ouvrez « Creer un devis »
-2. Selectionnez un client et liez un projet si besoin
-3. Ajoutez des lignes avec description, quantite, prix et TVA
-4. Definissez dans la carte des details la date du devis et « Valide jusqu au »
-5. Utilisez « Enregistrer comme brouillon » si le devis n est pas encore pret, ou « Finaliser » quand il est pret
-6. Apres l enregistrement, ouvrez la page detail du devis pour le previsualiser ou l envoyer
+Voici comment créer un devis :
+1. Allez dans Devis et ouvrez « Créer un devis »
+2. Sélectionnez un client et liez un projet si besoin
+3. Ajoutez des lignes avec description, quantité, prix et TVA
+4. Définissez dans la carte des détails la date du devis et « Valide jusqu'au »
+5. Utilisez « Enregistrer comme brouillon » si le devis n'est pas encore prêt, ou « Finaliser » quand il est prêt
+6. Après l'enregistrement, ouvrez la page détail du devis pour le prévisualiser ou l'envoyer
 
-Astuce : Un devis reste distinct d une facture tant qu il n est pas converti.
+Astuce : un devis reste distinct d'une facture tant qu'il n'est pas converti.

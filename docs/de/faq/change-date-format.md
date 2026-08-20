@@ -13,4 +13,4 @@ Datums-, Zeit- und Zahlenformate folgen in MyCompanyDesk den niederländischen K
 
 Zahleneingabefelder, zum Beispiel für Preise und Zahlungsbeträge, akzeptieren sowohl das Komma als auch den Punkt als Dezimaltrennzeichen, unabhängig davon, welche Sprache Ihr Browser verwendet.
 
-Was Sie ändern können, ist die Sprache der App selbst: Gehen Sie zu Einstellungen → „Darstellung" und wählen Sie Niederländisch, Englisch, Deutsch oder Französisch für die Oberfläche.
+Was Sie ändern können, ist die Sprache der App selbst: Gehen Sie zu Einstellungen → „Darstellung“ und wählen Sie Niederländisch, Englisch, Deutsch oder Französisch für die Oberfläche.

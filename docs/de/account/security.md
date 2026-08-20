@@ -98,7 +98,7 @@ MyCompanyDesk nimmt Datensicherheit ernst:
 - Regelmäßige Backups halten Ihre Daten sicher
 - Das Feld `bsn` (niederländische Bürgernummer) wird nur für Vermietungs-Workflows verwendet und niemals in Kunden-API-Antworten zurückgegeben
 
-Details zu Cookies, Analytics-IDs und Do Not Track findest du unter [Cookies und Analytics](/de/account/cookies-tracking).
+Details zu Cookies, Analytics-IDs und Do Not Track finden Sie unter [Cookies und Analytics](/de/account/cookies-tracking).
 
 ## Konto kündigen
 

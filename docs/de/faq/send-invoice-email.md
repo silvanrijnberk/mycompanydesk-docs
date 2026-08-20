@@ -23,9 +23,9 @@ chatbot:
     - "How do I change the customer email?"
 ---
 
-So sendest du eine Rechnung per E-Mail:
-1. Öffne die Rechnung (muss zuerst gespeichert sein)
-2. Klicke auf „Senden" oder den E-Mail-Button
+So senden Sie eine Rechnung per E-Mail:
+1. Öffnen Sie die Rechnung (muss zuerst gespeichert sein)
+2. Klicken Sie auf „Senden“ oder den E-Mail-Button
 3. Das System verwendet die E-Mail-Adresse des Kunden
-4. Du kannst die Nachricht vorschauen und anpassen
-5. Klicke auf „Senden" zum Zustellen
+4. Sie können die Nachricht in der Vorschau ansehen und anpassen
+5. Klicken Sie auf „Senden“ zum Zustellen

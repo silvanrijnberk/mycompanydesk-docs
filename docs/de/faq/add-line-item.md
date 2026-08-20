@@ -10,11 +10,11 @@ chatbot:
 ---
 
 Um Positionen auf einer Rechnung hinzuzufügen, zu bearbeiten oder zu entfernen:
-1. Öffne die Rechnung im Bearbeitungsmodus
-2. Klicke auf "Position hinzufügen" oder die +-Schaltfläche, um eine neue Zeile hinzuzufügen
-3. Gib Beschreibung, Menge, Einzelpreis und MwSt-Satz ein
-4. Um eine Position zu entfernen, klicke auf das Lösch-Symbol (×) in der Zeile
-5. Zum Umsortieren ziehe die Zeilen per Drag & Drop
-6. Speichere, wenn du fertig bist
+1. Öffnen Sie die Rechnung im Bearbeitungsmodus
+2. Klicken Sie auf „Position hinzufügen“ oder die +-Schaltfläche, um eine neue Zeile hinzuzufügen
+3. Geben Sie Beschreibung, Menge, Einzelpreis und MwSt-Satz ein
+4. Um eine Position zu entfernen, klicken Sie auf das Lösch-Symbol (×) in der Zeile
+5. Zum Umsortieren ziehen Sie die Zeilen per Drag & Drop
+6. Speichern Sie, wenn Sie fertig sind
 
-Tipp: Verwende klare, aussagekräftige Positionsbeschreibungen für professionelle Rechnungen.
+Tipp: Verwenden Sie klare, aussagekräftige Positionsbeschreibungen für professionelle Rechnungen.

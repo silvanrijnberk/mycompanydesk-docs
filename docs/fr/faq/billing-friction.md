@@ -21,8 +21,8 @@ chatbot:
     - "How do I preview invoices before sending?"
 ---
 
-Pour reduire les erreurs de facture dans l application :
-1. Ouvrez Clients et completez l e-mail de facturation, l adresse, le numero de TVA et les conditions de paiement par defaut du client
-2. Reutilisez ensuite cette fiche client lors de la creation de la facture au lieu de retaper les informations
-3. Ouvrez l apercu avant l envoi pour verifier les donnees client, les lignes et la mise en page PDF
-4. Si de mauvaises informations apparaissent encore, mettez d abord a jour la fiche client ou les reglages entreprise puis rechargez le brouillon
+Pour réduire les erreurs de facture dans l'application :
+1. Ouvrez Clients et complétez l'e-mail de facturation, l'adresse, le numéro de TVA et les conditions de paiement par défaut du client
+2. Réutilisez ensuite cette fiche client lors de la création de la facture au lieu de retaper les informations
+3. Ouvrez l'aperçu avant l'envoi pour vérifier les données client, les lignes et la mise en page PDF
+4. Si de mauvaises informations apparaissent encore, mettez d'abord à jour la fiche client ou les réglages entreprise, puis rechargez le brouillon
