@@ -1,6 +1,6 @@
 ---
 title: Constructeur de site
-last_verified: 2026-08-15
+last_verified: 2026-08-20
 ---
 
 # Constructeur de site
@@ -39,12 +39,13 @@ La bannière utilise le modèle IA Gemini (variante lite) s'il est disponible da
 
 ## Assistant de configuration du site web
 
-Avant même d'ouvrir l'éditeur, l'assistant de configuration du site web peut créer votre premier brouillon. Il s'ouvre automatiquement la première fois qu'un nouvel espace visite `/website`, et vous pouvez le relancer plus tard via **Entreprise > Votre site web > Style** en cliquant sur **Reconfigurer**. L'assistant pose quatre questions :
+Avant même d'ouvrir l'éditeur, l'assistant de configuration du site web peut créer votre premier brouillon. Il s'ouvre automatiquement la première fois qu'un nouvel espace visite `/website`, et vous pouvez le relancer plus tard via **Entreprise > Votre site web > Style** en cliquant sur **Reconfigurer**. L'assistant pose quatre questions et affiche ensuite éventuellement une étape pour une adresse web :
 
 1. **Ce que vous faites** (pré-rempli à partir de vos données d'entreprise) - votre activité, vos services et votre ton.
 2. **Ce que vous voulez** - si le site doit surtout attirer des clients, présenter votre travail, rassurer ou être mieux référencé.
 3. **Logo** - conservez le logo généré par l'IA, ou téléchargez votre propre PNG/SVG.
 4. **Couleur de marque** - choisissez l'un des échantillons proposés ou saisissez votre propre couleur hexadécimale.
+5. **Adresse web** (uniquement si votre espace de travail n'a pas déjà de domaine actif ou de CNAME desservant le site) — ajoutez un domaine ou connectez-en un existant. Vous pouvez ignorer cette étape et ajouter une adresse plus tard.
 
 Vos réponses sont enregistrées comme brief du site. En terminant, l'IA rédige un nouveau texte pour l'ensemble de votre brouillon à partir du brief et de vos données d'espace, applique votre logo et votre couleur de marque, et laisse tout en brouillon. Rien n'est publié automatiquement. Vous vérifiez le résultat dans l'éditeur et publiez quand vous êtes satisfait.
 
