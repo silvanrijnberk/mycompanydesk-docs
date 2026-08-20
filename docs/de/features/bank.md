@@ -12,6 +12,7 @@ Verbinden Sie Ihr Bankkonto mit MyCompanyDesk und Ihre Transaktionen fließen au
 Der Bankfeed gehört zum Bereich Ausgaben:
 
 - **Verbindungen und Einstellungen**: Öffnen Sie **Ausgaben** und klicken Sie auf das Zahnrad in der Seitenkopfzeile. Dort verbinden Sie Banken, prüfen automatisch importierte Ausgaben und verwalten Regeln und Benachrichtigungen.
+- **Bankwarteschlange**: Oben auf der Ausgabenseite sehen Sie die Zeilen, die noch geprüft werden müssen.
 - **Transaktionsfeed**: Die Schaltfläche **Transaktionen** in der Kopfzeile der Ausgabenseite öffnet die Liste der importierten Banktransaktionen.
 
 ## Ein Bankkonto verbinden
@@ -48,9 +49,15 @@ Transaktionen aus dem ersten Import, der ungefähr die letzten 90 Tage abruft, w
 
 Nur abgehende Transaktionen werden zu Ausgaben; eingehende Zahlungen werden nie in Ausgaben umgewandelt. Ausgaben aus Banktransaktionen zeigen in der Ausgabenliste ein kleines Banksymbol, sodass Sie immer sehen, woher eine Buchung stammt.
 
-## Automatisch importierte Ausgaben prüfen
+## Die Bankwarteschlange
 
-Die Karte **Automatisch importierte Ausgaben prüfen** steht oben auf der Seite mit den Ausgabeneinstellungen, sobald Entwürfe warten. Dazu gehören auch die Transaktionen, die bei der ersten Synchronisation hereinkamen, und jeder andere Entwurf, der Ihre Aufmerksamkeit braucht. Jede Zeile zeigt Lieferant, Datum, Betrag, die vorgeschlagene Kategorie und die Herkunft des Vorschlags (eine Ihrer Regeln, Ihre Standardkategorie, ein smarter Vorschlag oder der Bankfeed).
+Die Bankwarteschlange steht oben auf der Ausgabenseite. Sie zeigt Transaktionen, die noch nicht als Ausgabe gebucht wurden: Prüfzeilen, die der Feed vorbereitet hat, plus Ausgabenkandidaten aus dem Bankfeed. Jede Zeile zeigt Lieferant, Datum, Betrag, die vorgeschlagene Kategorie und die Herkunft des Vorschlags (eine Ihrer Regeln, Ihre Standardkategorie, ein smarter Vorschlag oder der Bankfeed).
+
+Die Warteschlange wird innerhalb Ihrer Sitzung zwischengespeichert. Wenn Sie zu Ausgaben zurückkehren, erscheinen die Zeilen im ersten Frame, und der Hintergrund aktualisiert sie an Ort und Stelle. Dadurch verschiebt sich die darunter liegende Liste nicht mehr nach unten, während Sie bereits lesen. Der Cache gehört zu Ihrem aktuellen Arbeitsbereich: Bei einem Arbeitsbereichswechsel wird er neu aufgebaut.
+
+::: info
+Die Warteschlange lädt maximal 100 Prüfzeilen und 100 Ausgabenkandidaten pro Abruf. Hat der Server mehr Zeilen, zeigt die Warteschlange das an und lädt nach einer Aktion automatisch den nächsten Batch, sodass nichts hinter einer vollen Seite stecken bleibt.
+:::
 
 Für jeden Entwurf können Sie:
 

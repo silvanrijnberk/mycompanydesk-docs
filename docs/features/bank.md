@@ -12,6 +12,7 @@ Koppel je bankrekening aan MyCompanyDesk en je transacties stromen automatisch b
 De bankfeed zit in het Uitgaven-gedeelte:
 
 - **Koppelingen en instellingen**: open **Uitgaven** en klik op het tandwiel in de paginakop. Daar koppel je banken, controleer je automatisch geïmporteerde uitgaven en beheer je regels en meldingen.
+- **Bankwachtrij**: bovenaan de uitgavenpagina zie je de rijen die nog moeten worden beoordeeld.
 - **Transactiefeed**: de knop **Transacties** in de paginakop van Uitgaven opent de lijst met geïmporteerde banktransacties.
 
 ## Een bankrekening koppelen
@@ -48,9 +49,15 @@ Transacties uit de eerste import, die ongeveer de afgelopen 90 dagen ophaalt, wo
 
 Alleen uitgaande transacties worden uitgaven; inkomende betalingen worden nooit omgezet in uitgaven. Uitgaven die uit banktransacties zijn ontstaan tonen een klein bankicoon in de uitgavenlijst, zodat je altijd ziet waar een boeking vandaan komt.
 
-## Automatisch geïmporteerde uitgaven controleren
+## De bankwachtrij
 
-De kaart **Automatisch geïmporteerde uitgaven om te controleren** staat bovenaan de uitgaven-instellingen zodra er concepten klaarstaan. Daaronder vallen ook de transacties die bij de eerste synchronisatie zijn binnengekomen en elk ander concept dat jouw aandacht nodig heeft. Elke rij toont de leverancier, datum, het bedrag, de voorgestelde categorie en waar die suggestie vandaan komt (een van je regels, je standaardcategorie, een slimme suggestie of de bankfeed).
+De bankwachtrij staat bovenaan de uitgavenpagina. Hij toont transacties die nog niet als uitgave zijn geboekt: review-rijen die de feed heeft voorbereid, plus uitgavekandidaten uit de bankfeed. Elke rij toont de leverancier, datum, het bedrag, de voorgestelde categorie en waar die suggestie vandaan komt (een van je regels, je standaardcategorie, een slimme suggestie of de bankfeed).
+
+De wachtrij is gecached binnen je sessie. Als je terugkeert naar Uitgaven, staan de rijen er meteen in het eerste frame en ververst de achtergrond ze op hun plek. Zo schuift de lijst eronder niet meer weg terwijl je al aan het lezen bent. De cache hoort bij je huidige werkruimte: bij een werkruimtewissel wordt hij opnieuw opgebouwd.
+
+::: info
+De wachtrij laadt maximaal 100 review-rijen en 100 uitgavekandidaten per ophaalronde. Heeft de server meer rijen, dan geeft de wachtrij dat aan en haalt hij na een actie automatisch de volgende batch op. Op die manier komt niets meer vast te zitten achter een volle pagina.
+:::
 
 Per concept kun je:
 
