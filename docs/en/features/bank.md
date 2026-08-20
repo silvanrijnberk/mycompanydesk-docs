@@ -13,6 +13,7 @@ Link your bank account to MyCompanyDesk and your transactions flow in automatica
 The bank feed lives in the Expenses area:
 
 - **Connections and settings**: open **Expenses** and click the gear icon in the page header. This opens the expense settings, where you link banks, review auto-imported expenses, and manage rules and notifications.
+- **Bank queue**: at the top of the Expenses page you see the rows that still need review.
 - **Transaction feed**: the **Transacties** button in the Expenses page header opens the list of imported bank transactions.
 
 ## Linking a bank account
@@ -49,9 +50,15 @@ Transactions from the first import, which pulls roughly the past 90 days, never 
 
 Only outgoing transactions become expenses; incoming payments are never turned into expenses. Expenses created from bank transactions show a small bank badge in the expenses list, so you can always see where an entry came from.
 
-## Reviewing auto-imported expenses
+## The bank queue
 
-The **Auto-imported expenses to review** card sits at the top of the expense settings page whenever drafts are waiting. This includes the transactions imported during the first sync and any other draft that needs your eyes. Each row shows the supplier, date, amount, the suggested category, and where that suggestion came from (one of your rules, your default category, a smart suggestion, or the bank feed).
+The bank queue sits at the top of the Expenses page. It shows transactions that have not yet been booked as expenses: review rows prepared by the feed, plus expense candidates from the bank feed. Each row shows the supplier, date, amount, the suggested category, and where that suggestion came from (one of your rules, your default category, a smart suggestion, or the bank feed).
+
+The queue is cached within your session. When you return to Expenses, the rows appear in the first frame and the background refreshes them in place. That prevents the list underneath from shifting down while you are already reading it. The cache belongs to your current workspace: switching workspaces rebuilds it from scratch.
+
+::: info
+The queue loads up to 100 review rows and 100 expense candidates per fetch. When the server has more rows, the queue indicates this and automatically pulls the next batch after an action, so nothing gets stuck behind a full page.
+:::
 
 For each draft you can:
 

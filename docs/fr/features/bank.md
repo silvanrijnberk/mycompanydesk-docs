@@ -12,6 +12,7 @@ Reliez votre compte bancaire à MyCompanyDesk et vos transactions arrivent autom
 Le flux bancaire se trouve dans la partie Dépenses :
 
 - **Connexions et réglages** : ouvrez **Dépenses** et cliquez sur la roue dentée dans l'en-tête de la page. Vous y reliez vos banques, contrôlez les dépenses importées automatiquement et gérez les règles et notifications.
+- **File d'attente bancaire** : en haut de la page Dépenses, vous voyez les lignes qui doivent encore être vérifiées.
 - **Flux de transactions** : le bouton **Transactions** dans l'en-tête de la page Dépenses ouvre la liste des transactions bancaires importées.
 
 ## Relier un compte bancaire
@@ -48,9 +49,15 @@ Les transactions issues du premier import, qui récupère environ les 90 dernier
 
 Seules les transactions sortantes deviennent des dépenses ; les paiements entrants ne sont jamais transformés en dépenses. Les dépenses issues de transactions bancaires affichent un petit badge banque dans la liste des dépenses, pour que vous voyiez toujours d'où vient une écriture.
 
-## Vérifier les dépenses importées automatiquement
+## La file d'attente bancaire
 
-La carte **Dépenses importées automatiquement à vérifier** s'affiche en haut des réglages des dépenses dès que des brouillons attendent. Cela inclut les transactions importées lors de la première synchronisation et tout autre brouillon qui a besoin de votre regard. Chaque ligne montre le fournisseur, la date, le montant, la catégorie suggérée et l'origine de la suggestion (une de vos règles, votre catégorie par défaut, une suggestion intelligente ou le flux bancaire).
+La file d'attente bancaire se trouve en haut de la page Dépenses. Elle affiche les transactions qui ne sont pas encore comptabilisées en tant que dépenses : les lignes de vérification préparées par le flux, ainsi que les candidats-dépenses issus du flux bancaire. Chaque ligne montre le fournisseur, la date, le montant, la catégorie suggérée et l'origine de la suggestion (une de vos règles, votre catégorie par défaut, une suggestion intelligente ou le flux bancaire).
+
+La file est mise en cache dans votre session. Lorsque vous revenez dans Dépenses, les lignes apparaissent dans la première image et l'arrière-plan les actualise à leur place. Ainsi, la liste située en dessous ne descend plus pendant que vous êtes déjà en train de lire. Le cache appartient à votre espace de travail actuel : changer d'espace de travail le reconstruit à partir de zéro.
+
+::: info
+La file charge jusqu'à 100 lignes de vérification et 100 candidats-dépenses par récupération. Lorsque le serveur a plus de lignes, la file l'indique et tire automatiquement le lot suivant après une action, pour que rien ne reste bloqué derrière une page pleine.
+:::
 
 Pour chaque brouillon, vous pouvez :
 
