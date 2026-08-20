@@ -1,4 +1,5 @@
 ---
+description: "Documentatie van MyCompanyDesk: uitleg over facturen, offertes, uitgaven, BTW, de bankkoppeling, je website en elke instelling in de app."
 layout: home
 hero:
   name: MyCompanyDesk

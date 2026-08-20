@@ -1,5 +1,6 @@
 ---
 title: Projekte
+description: "Bündeln Sie Rechnungen, Ausgaben und Zeiteinträge in Projekten, um Zeit, Umsatz und Rentabilität pro Auftrag zu sehen."
 ---
 
 # Projekte

@@ -1,5 +1,6 @@
 ---
 title: "Teamtoegang"
+description: "Om te beheren wie toegang heeft tot je werkruimte: ga naar Instellingen > Toegang en boekhouder."
 last_verified: 2026-07-02
 chatbot:
   triggers:

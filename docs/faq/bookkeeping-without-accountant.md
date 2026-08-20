@@ -1,5 +1,6 @@
 ---
 title: "Zelf boekhouden zonder boekhouder"
+description: "De meeste zzp'ers en eenmanszaken kunnen hun dagelijkse boekhouding prima zelf doen in MyCompanyDesk."
 last_verified: 2026-07-21
 chatbot:
   triggers:

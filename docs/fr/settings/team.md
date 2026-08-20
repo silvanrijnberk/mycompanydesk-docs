@@ -1,5 +1,6 @@
 ---
 title: "Accès et comptable"
+description: "Donnez à un associé, un salarié ou votre comptable son propre accès, avec des droits par page et une page dédiée à votre comptable."
 last_verified: 2026-08-04
 ---
 

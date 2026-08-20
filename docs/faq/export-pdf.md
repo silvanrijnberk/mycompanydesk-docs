@@ -1,5 +1,6 @@
 ---
 title: "Exporteren naar PDF"
+description: "Zo exporteer of download je een PDF: open de factuur vanuit de lijst, klik op de PDF-voorbeeld- of downloadknop."
 last_verified: 2026-07-02
 chatbot:
   triggers:

@@ -1,5 +1,6 @@
 ---
 title: "Fehlgeschlagene Rechnungs-E-Mail"
+description: "So beheben Sie eine fehlgeschlagene Rechnungs-E-Mail: prüfen Sie, ob beim Kunden die richtige E-Mail-Adresse hinterlegt ist."
 last_verified: 2026-07-02
 chatbot:
   triggers: ["failed invoice email", "invoice email failed", "failed send invoice", "invoice not sending", "invoice email issue", "fix failed invoice email", "mislukte factuur-e-mail", "factuurmail mislukt", "factuur e-mail mislukt", "factuur versturen mislukt", "hoe los ik een mislukte factuur-e-mail op", "fehlgeschlagene rechnungs-e-mail", "rechnungs-e-mail fehlgeschlagen", "rechnung senden fehlgeschlagen", "wie behebe ich eine fehlgeschlagene rechnungs-e-mail", "e-mail de facture echoue", "email facture echoue", "envoi facture echec", "comment corriger un e-mail de facture echoue"]

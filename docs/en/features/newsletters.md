@@ -1,6 +1,6 @@
 ---
 title: Newsletters
-description: Design, send and track newsletters in MyCompanyDesk.
+description: "Write, schedule and send mailings to your customers. The editor is linked to your customer list, so recipients stay in sync without CSV imports."
 last_verified: 2026-08-18
 ---
 

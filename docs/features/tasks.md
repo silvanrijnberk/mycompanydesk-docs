@@ -1,5 +1,6 @@
 ---
 title: Taken
+description: "Taken die je zelf aanmaakt, plus taken die vanzelf verschijnen bij een onbetaalde factuur, een verlopende offerte of een openstaande setupstap."
 ---
 
 # Taken

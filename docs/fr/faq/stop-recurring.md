@@ -1,5 +1,6 @@
 ---
 title: "Arrêter une facture récurrente"
+description: "Pour arrêter une facture récurrente : allez dans Factures récurrentes, ouvrez la facture récurrente."
 last_verified: 2026-07-02
 chatbot:
   triggers: ["stop recurring", "cancel recurring", "pause recurring", "disable recurring", "end recurring", "terugkerend stoppen", "terugkerend annuleren", "wiederkehrend stoppen", "arreter recurrent"]

@@ -1,5 +1,6 @@
 ---
 title: "Objects & Assets"
+description: "Track rental properties, vehicles, equipment and other business assets over their full lifecycle. Enable the objects module under Company, Features."
 ---
 
 # Objects & Assets

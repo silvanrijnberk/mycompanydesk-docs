@@ -1,5 +1,6 @@
 ---
 title: "Consulter les graphiques"
+description: "Pour consulter les graphiques : allez dans Rapports dans la barre latérale."
 last_verified: 2026-05-09
 chatbot:
   triggers: ["view charts", "see graphs", "financial charts", "revenue chart", "expense chart", "grafieken bekijken", "diagramme anzeigen", "voir graphiques"]

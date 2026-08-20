@@ -1,5 +1,6 @@
 ---
-title: Create a quote
+title: "Angebot erstellen"
+description: "So erstellen Sie ein Angebot: Gehen Sie zu Angebote, Angebot erstellen, wählen Sie einen Kunden und ergänzen Sie Positionen und ein Gültig-bis-Datum."
 last_verified: 2026-05-09
 chatbot:
   triggers: ["create quote", "new quote", "make quote", "create proposal", "new proposal", "sales quote", "estimate", "offerte maken", "offerte aanmaken", "nieuwe offerte", "angebot erstellen", "neues angebot", "wie erstelle ich ein angebot", "devis creer", "comment creer un devis", "nouveau devis", "crear cotizacion", "crear presupuesto", "criar proposta", "nuovo preventivo"]

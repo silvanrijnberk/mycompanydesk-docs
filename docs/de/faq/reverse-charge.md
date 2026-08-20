@@ -1,5 +1,6 @@
 ---
-title: "Reverse Charge"
+title: "Reverse-Charge-Rechnung"
+description: "Reverse-Charge-Rechnung (EU) erstellen: Wählen Sie unter Rechnungen, Neue Rechnung Ihren EU-Kunden mit hinterlegter USt-IdNr. und setzen Sie den Schalter."
 last_verified: 2026-07-02
 chatbot:
   triggers: ["reverse charge", "reverse charge invoice", "eu invoice", "intracommunautair", "intracommunity", "btw verlegd", "reverse charge rechnung", "autoliquidation", "intra-community"]

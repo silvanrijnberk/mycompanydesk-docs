@@ -1,5 +1,6 @@
 ---
 title: "BTW verlegd"
+description: "Zo maak je een factuur met BTW verlegd (EU): ga naar Facturen > Nieuwe factuur, kies je EU-klant en controleer of het BTW-nummer bij de klant is ingevuld."
 last_verified: 2026-07-02
 chatbot:
   triggers: ["reverse charge", "reverse charge invoice", "eu invoice", "intracommunautair", "intracommunity", "btw verlegd", "reverse charge rechnung", "autoliquidation", "intra-community"]

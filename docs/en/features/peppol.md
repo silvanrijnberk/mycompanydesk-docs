@@ -1,5 +1,6 @@
 ---
 title: Peppol e-invoicing
+description: "Send invoices and credit notes as structured e-invoices over the Peppol network, straight into your customer's accounting software, and receive them too."
 last_verified: 2026-08-15
 ---
 

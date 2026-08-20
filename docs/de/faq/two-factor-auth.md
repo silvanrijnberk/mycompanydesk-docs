@@ -1,5 +1,6 @@
 ---
 title: Zwei-Faktor-Authentifizierung
+description: "Die Zwei-Faktor-Authentifizierung (2FA) ergänzt Ihr Passwort um einen 6-stelligen Code aus einer Authenticator-App, gehen Sie zu Einstellungen > Anmeldung."
 last_verified: 2026-07-10
 chatbot:
   triggers: ["two factor", "two-factor", "2fa", "two step", "authenticator", "mfa", "tweestapsverificatie", "twee-factor", "zwei faktor", "authentification deux facteurs", "double authentification"]

@@ -1,5 +1,6 @@
 ---
 title: "Datensicherung"
+description: "So sichern Sie Ihre Daten: gehen Sie zu Einstellungen > Daten herunterladen."
 last_verified: 2026-07-02
 chatbot:
   triggers:

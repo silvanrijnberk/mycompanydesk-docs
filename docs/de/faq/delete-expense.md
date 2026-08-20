@@ -1,5 +1,6 @@
 ---
 title: "Ausgabe löschen"
+description: "So löschen Sie eine Ausgabe: öffnen Sie die Ausgabe aus Ihrer Ausgabenliste, scrollen Sie in der Seitenleiste zum Abschnitt Gefahrenzone."
 last_verified: 2026-08-16
 chatbot:
   triggers: ["delete expense", "remove expense", "trash expense", "erase expense", "uitgave verwijderen", "uitgave wissen", "hoe verwijder ik een uitgave", "ausgabe loschen", "wie losche ich eine ausgabe", "supprimer depense"]

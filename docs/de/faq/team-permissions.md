@@ -1,5 +1,6 @@
 ---
 title: Teamberechtigungen
+description: "Seitenberechtigungen steuern, was jedes Teammitglied oder jeder Steuerberater tun darf: lesen - Daten ansehen, schreiben - bestehende Einträge bearbeiten."
 last_verified: 2026-07-02
 chatbot:
   triggers: ["team permissions", "manage team permissions", "page permissions", "read write create", "permission settings", "access control", "granular permissions", "read only", "write access", "create access", "pagina rechten", "teamrechten", "lezen schrijven", "toegang instellen", "seitenberechtigungen", "teamberechtigungen", "lese schreibzugriff", "permissions page", "permissions de l'equipe", "droits acces"]

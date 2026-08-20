@@ -1,5 +1,6 @@
 ---
-title: Merge customers
+title: "Kunden zusammenführen"
+description: "Doppelte Kundendatensätze zusammenführen: Öffnen Sie eines der Duplikate, nutzen Sie die Zusammenführen-Option und wählen Sie den Hauptdatensatz."
 last_verified: 2026-05-09
 chatbot:
   triggers: ["merge customers", "duplicate customer", "combine customers", "customer duplicate", "klanten samenvoegen", "dubbele klant", "kunden zusammenfuhren", "fusionner clients", "doublons clients"]

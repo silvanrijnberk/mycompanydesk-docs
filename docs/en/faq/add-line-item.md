@@ -1,5 +1,6 @@
 ---
 title: Add line item
+description: "To add, edit, or remove line items on an invoice: open the invoice in edit mode (or create a new one), click Add Line or the + button to add a new row."
 last_verified: 2026-05-09
 chatbot:
   triggers: ["add line item", "edit line item", "remove line item", "invoice line", "add row", "new line", "factuurregel toevoegen", "regel bewerken", "rechnungsposition", "ligne de facture", "ajouter ligne"]

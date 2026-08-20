@@ -1,5 +1,6 @@
 ---
 title: Enable quotes
+description: "If Quotes are missing from navigation: go to Settings > Onderdelen (features), turn on the Offertes (quotes) toggle, the menu updates immediately."
 last_verified: 2026-07-02
 chatbot:
   triggers: ["quotes not visible", "where are quotes", "enable quotes", "turn on quotes", "show quotes in menu", "qoutes not visible", "qoutes missing", "where are qoutes", "offertes niet zichtbaar", "quotes activeren", "angebote nicht sichtbar", "devis non visible", "activar cotizaciones", "ativar propostas"]

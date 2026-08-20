@@ -1,5 +1,6 @@
 ---
 title: Sneltoetsen
+description: "De sneltoetsen die in MyCompanyDesk echt werken, te beginnen met Cmd+K of Ctrl+K voor het zoekpalet."
 ---
 
 # Sneltoetsen

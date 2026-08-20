@@ -1,5 +1,6 @@
 ---
 title: "Notification settings"
+description: "To manage your notification settings: go to Settings > Meldingen (notifications), switch the notification topics on or off. The categories are: invoice."
 last_verified: 2026-08-19
 chatbot:
   triggers:

@@ -1,5 +1,6 @@
 ---
 title: "Terugkerende facturen instellen"
+description: "Zo stel je een terugkerende factuur in: ga naar Terugkerende facturen en klik op Terugkerende factuur toevoegen, kies de klant en voeg factuurregels toe."
 last_verified: 2026-07-02
 chatbot:
   triggers: ["set up recurring", "recurring invoice", "recurring expense", "automate invoice", "automatic invoice", "monthly invoice", "terugkerende factuur", "terugkerende uitgave", "wiederkehrende rechnung", "facture recurrente"]

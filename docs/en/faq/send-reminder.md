@@ -1,5 +1,6 @@
 ---
 title: Send reminder
+description: "To follow up on unpaid invoices: open the overdue invoice, use the Send Reminder action, the system generates a professional reminder email."
 last_verified: 2026-08-16
 chatbot:
   triggers: ["send reminder", "payment reminder", "remind customer", "follow up", "chase payment", "herinnering sturen", "betaalherinnering", "aanmaning", "zahlungserinnerung", "relance", "rappel paiement"]

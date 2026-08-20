@@ -1,5 +1,6 @@
 ---
 title: Tastenkombinationen
+description: "Die Anwendung bietet eine kleine Auswahl an Tastenkombinationen: drücken Sie Cmd+K (Mac) oder Strg+K (Windows/Linux), um das Suchfenster zu öffnen."
 last_verified: 2026-07-02
 chatbot:
   triggers: ["keyboard shortcuts", "shortcuts", "hotkeys", "quick navigation", "sneltoetsen", "tastaturkurzel", "raccourcis clavier"]

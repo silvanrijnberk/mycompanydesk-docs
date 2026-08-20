@@ -1,5 +1,6 @@
 ---
 title: Invoice notes
+description: "To add notes to an invoice: edit or create an invoice, use the Notes section below the line items, enter the text you want saved with that invoice."
 last_verified: 2026-05-09
 chatbot:
   triggers: ["invoice notes", "add note", "invoice memo", "add comment", "internal note", "factuur notitie", "opmerking toevoegen", "rechnungsnotiz", "note de facture", "ajouter remarque"]

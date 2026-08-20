@@ -1,5 +1,6 @@
 ---
 title: Tableau de bord
+description: "L'écran d'accueil de votre espace : sélecteur de période, résumé des indicateurs, un widget d'alerte et des blocs qui n'apparaissent que si utiles."
 last_verified: 2026-08-18
 ---
 

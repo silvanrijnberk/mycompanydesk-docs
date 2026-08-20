@@ -1,5 +1,6 @@
 ---
 title: Kunden
+description: "Verwalten Sie Ihre Kundendatenbank, mit Segmentkacheln, Suche und Filtern, und jeder Rechnung, jedem Angebot und Projekt am Kundendatensatz."
 ---
 
 # Kunden

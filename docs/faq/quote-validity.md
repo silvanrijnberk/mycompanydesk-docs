@@ -1,5 +1,6 @@
 ---
 title: "Geldigheid van offertes"
+description: "De geldigheid van offertes is één instelling: ga naar Instellingen > Facturen en offertes."
 last_verified: 2026-07-02
 chatbot:
   triggers: ["quote validity", "valid until quote", "quote expiry", "quote expiration", "how long quote valid", "quote valid days", "geldigheid offerte", "offerte geldig", "angebotsgultigkeit", "devis validite", "validez devis", "validez cotizacion", "validade proposta"]

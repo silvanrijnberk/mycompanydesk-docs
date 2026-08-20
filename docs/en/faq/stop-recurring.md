@@ -1,5 +1,6 @@
 ---
 title: "Stop recurring"
+description: "To stop a recurring invoice: go to Recurring Invoices, open the recurring invoice."
 last_verified: 2026-07-02
 chatbot:
   triggers: ["stop recurring", "cancel recurring", "pause recurring", "disable recurring", "end recurring", "terugkerend stoppen", "terugkerend annuleren", "wiederkehrend stoppen", "arreter recurrent"]

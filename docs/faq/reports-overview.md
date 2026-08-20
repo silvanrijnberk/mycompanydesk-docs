@@ -1,5 +1,6 @@
 ---
 title: "Rapportenoverzicht"
+description: "Om je rapporten te bekijken: ga naar Rapporten en wissel tussen het overzicht, Winst & verlies, Cashflow, Klanten, Prognose en Inkomstenbelasting."
 last_verified: 2026-05-09
 chatbot:
   triggers:

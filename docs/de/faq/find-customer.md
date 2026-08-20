@@ -1,5 +1,6 @@
 ---
 title: "Kunden finden"
+description: "So finden Sie einen Kunden: gehen Sie zu Kunden, nutzen Sie die Suchleiste oben; sie durchsucht Kundenname, Kundennummer, E-Mail-Adresse und Ort."
 last_verified: 2026-05-09
 chatbot:
   triggers: ["find customer", "search customer", "look up customer", "filter customers", "klant zoeken", "klant vinden", "kunde suchen", "chercher client"]

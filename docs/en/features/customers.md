@@ -1,5 +1,6 @@
 ---
 title: Customers
+description: "Manage your customer database, with segment tiles, search and filters, and every invoice, quote and project linked back to a customer record."
 ---
 
 # Customers

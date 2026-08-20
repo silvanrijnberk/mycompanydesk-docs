@@ -1,5 +1,6 @@
 ---
 title: Reverse charge
+description: "To create a reverse charge (EU) invoice: go to Invoices > New Invoice."
 last_verified: 2026-07-02
 chatbot:
   triggers: ["reverse charge", "reverse charge invoice", "eu invoice", "intracommunautair", "intracommunity", "btw verlegd", "reverse charge rechnung", "autoliquidation", "intra-community"]

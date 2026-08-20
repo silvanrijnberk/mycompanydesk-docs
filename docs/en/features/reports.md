@@ -1,5 +1,6 @@
 ---
 title: Reports
+description: "Five focused report views plus an overview that ties them together, each combining the numbers with charts in one place."
 ---
 
 # Reports

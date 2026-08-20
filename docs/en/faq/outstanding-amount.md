@@ -1,5 +1,6 @@
 ---
 title: Outstanding amount
+description: "To see total outstanding/unpaid amounts: go to Invoices and filter by Open/Sent/Overdue, check totals in the list/KPI header."
 last_verified: 2026-07-02
 chatbot:
   triggers: ["outstanding amount", "total unpaid", "money owed", "total outstanding", "how much owed", "openstaand bedrag", "totaal onbetaald", "offener betrag", "montant impaye", "somme due"]

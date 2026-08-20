@@ -1,5 +1,6 @@
 ---
 title: Einrichtungsassistent
+description: "Der Assistent unter /setup baut Ihre erste Rechnung: Er holt Ihre Daten aus dem KVK-Register, füllt Zahlung und Steuer und zeigt eine Live-Vorschau."
 last_verified: 2026-07-15
 ---
 

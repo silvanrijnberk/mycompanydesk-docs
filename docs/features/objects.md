@@ -1,5 +1,6 @@
 ---
 title: "Objecten & Activa"
+description: "Houd huurwoningen, voertuigen, apparatuur en andere bedrijfsactiva bij over hun hele levensduur. Zet de objectenmodule aan via Bedrijf, Functies."
 ---
 
 # Objecten & Activa

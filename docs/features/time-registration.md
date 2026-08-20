@@ -1,5 +1,6 @@
 ---
 title: Uren & agenda
+description: "Schrijf uren, plan je dagen en zet declarabele tijd om in facturen. Uren & agenda zet urenregistratie, je agenda en agendasuggesties op een plek."
 ---
 
 # Uren & agenda

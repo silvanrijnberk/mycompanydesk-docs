@@ -1,5 +1,6 @@
 ---
 title: Offertes
+description: "Maak en verstuur offertes, volg of ze geaccepteerd worden en zet een geaccepteerde offerte in een stap om naar een factuur."
 ---
 
 # Offertes

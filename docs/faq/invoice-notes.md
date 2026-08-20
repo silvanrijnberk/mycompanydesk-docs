@@ -1,5 +1,6 @@
 ---
-title: Invoice notes
+title: "Notities op een factuur"
+description: "Om notities toe te voegen aan een factuur: open de factuur in bewerkingsmodus, gebruik de sectie Notities onder de factuurregels."
 last_verified: 2026-05-09
 chatbot:
   triggers: ["invoice notes", "add note", "invoice memo", "add comment", "internal note", "factuur notitie", "opmerking toevoegen", "rechnungsnotiz", "note de facture", "ajouter remarque"]

@@ -1,5 +1,6 @@
 ---
-title: Send reminder
+title: "Erinnerung senden"
+description: "Erinnerung zu einer unbezahlten Rechnung senden: Öffnen Sie die Rechnung und nutzen Sie Erinnerung senden, sie nennt den offenen Restbetrag."
 last_verified: 2026-08-16
 chatbot:
   triggers: ["send reminder", "payment reminder", "remind customer", "follow up", "chase payment", "herinnering sturen", "betaalherinnering", "aanmaning", "zahlungserinnerung", "relance", "rappel paiement"]

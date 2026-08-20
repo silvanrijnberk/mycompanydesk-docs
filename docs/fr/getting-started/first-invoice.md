@@ -1,5 +1,6 @@
 ---
 title: Votre premiere facture
+description: "Pas à pas pour créer et envoyer votre première facture, de vos données d'entreprise au client, jusqu'au bouton d'envoi."
 ---
 
 # Votre premiere facture

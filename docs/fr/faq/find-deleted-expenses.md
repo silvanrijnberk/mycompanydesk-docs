@@ -1,5 +1,6 @@
 ---
 title: "Trouver les dépenses supprimées"
+description: "Les dépenses supprimées se trouvent dans Dépenses > Corbeille. Si vous êtes déjà dans la liste des dépenses, passez à la vue Corbeille."
 last_verified: 2026-08-16
 chatbot:
   triggers:

@@ -1,5 +1,6 @@
 ---
 title: "Rabatt auf einer Rechnung"
+description: "So fügen Sie einer Rechnung einen Rabatt hinzu: bearbeiten oder erstellen Sie eine Rechnung."
 last_verified: 2026-07-02
 chatbot:
   triggers: ["discount", "add discount", "invoice discount", "percentage discount", "reduce price", "korting", "korting toevoegen", "rabatt", "rabatt gewahren", "remise", "reduction"]

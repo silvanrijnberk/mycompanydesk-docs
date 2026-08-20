@@ -1,5 +1,6 @@
 ---
 title: Valuta wijzigen
+description: "Er is geen valuta-instelling om te wijzigen. MyCompanyDesk werkt bewust alleen in euro's: alle facturen, offertes, uitgaven en rapportages staan in EUR."
 last_verified: 2026-07-02
 chatbot:
   triggers: ["change currency", "set currency", "currency settings", "euro dollar", "valuta wijzigen", "valuta instellen", "wahrung andern", "changer devise"]

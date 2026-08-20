@@ -1,5 +1,6 @@
 ---
 title: Tweestapsverificatie
+description: "Tweestapsverificatie (2FA) voegt een 6-cijferige code uit een authenticator-app toe bovenop je wachtwoord, ga naar Instellingen > Inloggen."
 last_verified: 2026-07-10
 chatbot:
   triggers: ["two factor", "two-factor", "2fa", "two step", "authenticator", "mfa", "tweestapsverificatie", "twee-factor", "zwei faktor", "authentification deux facteurs", "double authentification"]

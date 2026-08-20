@@ -1,5 +1,6 @@
 ---
 title: "Exporter en PDF"
+description: "Pour exporter ou télécharger un PDF : ouvrez la facture depuis la liste, cliquez sur le bouton d'aperçu ou de téléchargement du PDF."
 last_verified: 2026-07-02
 chatbot:
   triggers:

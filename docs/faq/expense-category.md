@@ -1,5 +1,6 @@
 ---
 title: "Uitgavecategorie"
+description: "Om een uitgavecategorie in te stellen of te wijzigen: open de uitgave in bewerkingsmodus, zoek het dropdownmenu Categorie."
 last_verified: 2026-08-15
 chatbot:
   triggers: ["expense category", "categorize expense", "expense categories", "which category", "change category", "uitgave categorie", "categorie wijzigen", "ausgabe kategorie", "categorie depense"]

@@ -1,4 +1,5 @@
 ---
+description: "Dokumentation zu MyCompanyDesk: Anleitungen zu Rechnungen, Angeboten, Ausgaben, Umsatzsteuer, Bankanbindung, Ihrer Website und jeder Einstellung."
 layout: home
 hero:
   name: MyCompanyDesk

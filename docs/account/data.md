@@ -1,5 +1,6 @@
 ---
 title: "Gegevens importeren & exporteren"
+description: "Importeer klanten, facturen en uitgaven uit CSV, en exporteer je administratie als back-up of voor gebruik in een ander programma."
 last_verified: 2026-07-02
 ---
 

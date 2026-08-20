@@ -1,5 +1,6 @@
 ---
 title: Übersicht der Einstellungen
+description: "Alles Einstellbare liegt auf einer Seite, sortiert in drei Gruppen in klarer Sprache, und jede Einstellung ist höchstens zwei Klicks entfernt."
 last_verified: 2026-08-05
 ---
 

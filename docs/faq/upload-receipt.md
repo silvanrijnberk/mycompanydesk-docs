@@ -1,5 +1,6 @@
 ---
-title: "Upload receipt"
+title: "Bon uploaden"
+description: "Om een bon te uploaden of te vervangen bij een uitgave: open een bestaande uitgave, of sla eerst een nieuwe uitgave op."
 last_verified: 2026-08-15
 chatbot:
   triggers: ["upload receipt", "attach receipt", "add receipt", "receipt photo", "scan receipt", "expense receipt", "bon uploaden", "bon toevoegen", "beleg hochladen", "telecharger recu"]

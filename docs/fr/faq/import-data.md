@@ -1,5 +1,6 @@
 ---
 title: "Importer des données"
+description: "MyCompanyDesk peut importer des clients, des factures et des dépenses depuis un fichier CSV. Les autres types de données ne peuvent pas être importés."
 last_verified: 2026-08-15
 chatbot:
   triggers:

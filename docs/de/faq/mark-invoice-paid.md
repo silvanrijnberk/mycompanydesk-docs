@@ -1,5 +1,6 @@
 ---
 title: "Rechnung als bezahlt markieren"
+description: "So markieren Sie eine Rechnung als bezahlt: öffnen Sie die Rechnung aus der Liste."
 last_verified: 2026-07-02
 chatbot:
   triggers: ["mark invoice paid", "invoice paid", "mark as paid", "record payment", "received payment", "payment received", "factuur betaald", "betaald markeren", "factuur als betaald", "rechnung als bezahlt", "marquer payee"]

@@ -1,5 +1,6 @@
 ---
 title: Receipt Scanning
+description: "Photograph a receipt or upload a PDF and AI-powered OCR fills in the expense. Monthly caps: 3 scans on Free, 30 on Starter, 200 on Pro."
 ---
 
 # Receipt Scanning

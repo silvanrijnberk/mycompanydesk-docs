@@ -1,5 +1,6 @@
 ---
 title: KI-Funktionen
+description: "Jede KI-Funktion in MyCompanyDesk, was sie tut und welcher Anbieter sie betreibt. Die Standardkette ist EU-only: Gemini auf Vertex AI europe-west1."
 ---
 
 # KI-Funktionen

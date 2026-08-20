@@ -1,5 +1,6 @@
 ---
 title: API keys
+description: "To manage API keys: go to Workspace Settings > API Keys, click Create API Key and give it a descriptive name."
 last_verified: 2026-05-09
 chatbot:
   triggers: ["api key", "api keys", "api access", "integration", "api token", "connect api", "api instellen", "api schlussel", "cle api"]

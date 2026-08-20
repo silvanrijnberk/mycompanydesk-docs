@@ -1,5 +1,6 @@
 ---
 title: PDF design
+description: "Match your invoice, quote and reminder PDFs to your brand with Logo en kleur for your logo and colour and Factuurontwerp for the design studio."
 ---
 
 # PDF design

@@ -1,5 +1,6 @@
 ---
 title: Zeitplan
+description: "Erfassen Sie Stunden, planen Sie Ihre Tage und machen Sie abrechenbare Zeit zu Rechnungen. Zeitplan verbindet Zeiterfassung mit Ihrem Kalender."
 ---
 
 # Zeitplan

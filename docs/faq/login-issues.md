@@ -1,5 +1,6 @@
 ---
-title: "Login issues"
+title: "Problemen met inloggen"
+description: "Als je problemen hebt met inloggen: probeer Wachtwoord vergeten op de inlogpagina, controleer je spam-/ongewenste e-mail map."
 last_verified: 2026-05-09
 chatbot:
   triggers: ["cannot login", "cant login", "login problem", "forgot password", "reset password", "locked out", "verification email", "email not received", "kan niet inloggen", "wachtwoord vergeten", "passwort vergessen", "mot de passe oublie"]

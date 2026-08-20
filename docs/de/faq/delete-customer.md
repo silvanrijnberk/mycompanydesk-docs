@@ -1,5 +1,6 @@
 ---
 title: "Kunden löschen"
+description: "So löschen Sie einen Kunden: gehen Sie zu Kunden und suchen Sie den Kunden, öffnen Sie das Profil."
 last_verified: 2026-05-09
 chatbot:
   triggers: ["delete customer", "remove customer", "trash customer", "klant verwijderen", "klant wissen", "kunde loschen", "supprimer client"]

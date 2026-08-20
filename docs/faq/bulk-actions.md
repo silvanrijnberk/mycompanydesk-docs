@@ -1,5 +1,6 @@
 ---
-title: Bulk actions
+title: "Bulkacties"
+description: "Om bulkacties uit te voeren: ga naar de lijstweergave (Facturen, Uitgaven of Klanten), selecteer meerdere items met de selectievakjes."
 last_verified: 2026-05-09
 chatbot:
   triggers: ["bulk action", "bulk delete", "bulk send", "select multiple", "batch operation", "meerdere selecteren", "bulk verwijderen", "massenbearbeitung", "action en masse"]

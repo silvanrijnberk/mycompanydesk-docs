@@ -1,5 +1,6 @@
 ---
 title: Documenten
+description: "Bewaar, volg en onderteken digitaal afspraken zonder prijs, zoals algemene voorwaarden, geheimhoudingsverklaringen en verwerkersovereenkomsten."
 ---
 
 # Documenten

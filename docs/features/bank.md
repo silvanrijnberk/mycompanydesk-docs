@@ -1,5 +1,6 @@
 ---
 title: Bankfeed
+description: "Koppel je bankrekening zodat transacties binnenstromen. Regels maken van uitgaande betalingen concept-uitgaven, die jij bevestigt voordat ze boeken."
 ---
 
 # Bankfeed

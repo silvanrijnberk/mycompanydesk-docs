@@ -1,5 +1,6 @@
 ---
 title: Quote status
+description: "Quote statuses explained: draft: still editable, not sent to the customer yet, sent: delivered to the customer, accepted: the customer agreed to the quote."
 last_verified: 2026-07-02
 chatbot:
   triggers: ["quote status", "quote statuses", "quote lifecycle", "draft open sent canceled", "offerte status", "angebotsstatus", "statut devis", "estado cotizacion", "status proposta"]

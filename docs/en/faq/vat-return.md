@@ -1,5 +1,6 @@
 ---
 title: VAT return
+description: "To review VAT figures in the app: go to VAT, select the period you want to inspect."
 last_verified: 2026-05-09
 chatbot:
   triggers: ["vat return", "vat filing", "file vat", "prepare vat", "vat report", "btw aangifte", "btw indienen", "btw berekening", "mwst meldung", "declaration tva"]

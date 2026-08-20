@@ -1,5 +1,6 @@
 ---
 title: Credit note
+description: "To create a credit note: open the original invoice you want to credit, click Create credit note / correction on the detail page."
 last_verified: 2026-08-16
 chatbot:
   triggers: ["credit note", "create credit note", "issue credit", "credit invoice", "creditnota", "creditnota aanmaken", "gutschrift erstellen", "note de credit", "avoir"]

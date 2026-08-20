@@ -1,5 +1,6 @@
 ---
 title: "Reports overview"
+description: "To view your reports: go to Reports, switch between the six views: Overview, P&L, Cash Flow, Clients, Forecast, and Income tax."
 last_verified: 2026-05-09
 chatbot:
   triggers:

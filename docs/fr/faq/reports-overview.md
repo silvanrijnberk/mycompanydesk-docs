@@ -1,5 +1,6 @@
 ---
 title: "Aperçu des rapports"
+description: "Pour consulter vos rapports : allez dans Rapports dans la barre latérale, puis choisissez la vue et la période à afficher."
 last_verified: 2026-05-09
 chatbot:
   triggers:

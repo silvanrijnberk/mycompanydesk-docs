@@ -1,5 +1,6 @@
 ---
 title: "Payment methods"
+description: "To configure payment methods on documents: go to Settings and open Betalen."
 last_verified: 2026-07-22
 chatbot:
   triggers:

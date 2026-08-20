@@ -1,5 +1,6 @@
 ---
 title: Alle prijzen tegelijk aanpassen
+description: "Ga naar Aanbod en klik op Prijzen aanpassen om in één keer meerdere prijzen te wijzigen."
 last_verified: 2026-08-06
 chatbot:
   triggers:

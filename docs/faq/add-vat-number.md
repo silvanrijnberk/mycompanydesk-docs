@@ -1,5 +1,6 @@
 ---
 title: "BTW-nummer toevoegen"
+description: "Om je BTW-nummer toe te voegen of te wijzigen: ga naar Instellingen > Bedrijfsgegevens, vul daar het veld BTW-nummer in."
 last_verified: 2026-07-02
 chatbot:
   triggers:

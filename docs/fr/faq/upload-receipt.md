@@ -1,5 +1,6 @@
 ---
-title: "Upload receipt"
+title: "Ajouter un reçu"
+description: "Pour ajouter ou remplacer un reçu : ouvrez la dépense, puis cliquez sur l'icône trombone dans le panneau latéral ou utilisez l'action dédiée."
 last_verified: 2026-08-15
 chatbot:
   triggers: ["upload receipt", "attach receipt", "add receipt", "receipt photo", "scan receipt", "expense receipt", "bon uploaden", "bon toevoegen", "beleg hochladen", "telecharger recu"]

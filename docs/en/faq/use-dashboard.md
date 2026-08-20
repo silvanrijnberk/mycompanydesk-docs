@@ -1,5 +1,6 @@
 ---
 title: "Use the dashboard"
+description: "Your dashboard gives you a quick overview of: A period switcher for month, quarter, or year."
 last_verified: 2026-08-18
 chatbot:
   triggers:

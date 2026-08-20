@@ -1,5 +1,6 @@
 ---
 title: Je eerste factuur
+description: "Stap voor stap je eerste factuur maken en versturen, van je bedrijfsgegevens en je klant tot aan de verstuurknop."
 ---
 
 # Je eerste factuur

@@ -1,5 +1,6 @@
 ---
 title: Edit a quote
+description: "To edit a quote: open the quote from the Quotes list, click Edit (or open /quotes/{id}/edit), update customer details, quote lines, notes, or dates."
 last_verified: 2026-05-09
 chatbot:
   triggers: ["edit quote", "change quote", "update quote", "modify quote", "correct quote", "offerte bewerken", "offerte wijzigen", "angebot bearbeiten", "devis modifier", "editar cotizacion", "editar proposta", "modificare preventivo"]

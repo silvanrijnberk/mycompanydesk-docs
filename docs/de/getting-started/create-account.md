@@ -1,5 +1,6 @@
 ---
 title: Konto erstellen
+description: "Melden Sie sich in wenigen Minuten auf app.mycompanydesk.com mit E-Mail und Passwort an, oder über Google oder Outlook."
 ---
 
 # Konto erstellen

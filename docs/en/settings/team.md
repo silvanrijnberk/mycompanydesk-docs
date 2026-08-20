@@ -1,5 +1,6 @@
 ---
 title: Access & accountant
+description: "Give a partner, employee or your accountant their own login, with page permissions under Mensen met toegang and Je boekhouder for your accountant."
 last_verified: 2026-08-04
 ---
 

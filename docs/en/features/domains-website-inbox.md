@@ -1,5 +1,6 @@
 ---
 title: Domains, Website, and Inbox
+description: "Custom domains, the hosted business website and the shared inbox ship as one pre-launch bundle behind the custom_domains and public_business_page flags."
 last_verified: 2026-08-15
 ---
 

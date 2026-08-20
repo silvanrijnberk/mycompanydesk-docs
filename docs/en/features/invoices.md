@@ -1,5 +1,6 @@
 ---
 title: Invoices
+description: "Create professional invoices, send them with payment links, and track them from draft through outstanding to paid, with filters on every status."
 ---
 
 # Invoices

@@ -1,5 +1,6 @@
 ---
 title: Bulk actions
+description: "To perform bulk actions: go to the list view (Invoices, Expenses, or Customers), select multiple items using the checkboxes."
 last_verified: 2026-05-09
 chatbot:
   triggers: ["bulk action", "bulk delete", "bulk send", "select multiple", "batch operation", "meerdere selecteren", "bulk verwijderen", "massenbearbeitung", "action en masse"]

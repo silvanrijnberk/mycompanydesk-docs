@@ -1,5 +1,6 @@
 ---
 title: "Trouver les factures archivées"
+description: "Les factures archivées se trouvent dans Factures > Archives. Si vous êtes déjà dans la liste des factures, passez à la vue Archives."
 last_verified: 2026-05-09
 chatbot:
   triggers:

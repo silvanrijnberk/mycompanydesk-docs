@@ -1,5 +1,6 @@
 ---
 title: "Datenimport & -export"
+description: "Importieren Sie Kunden, Rechnungen und Ausgaben aus CSV, und exportieren Sie Ihre Daten als Sicherung oder für die Nutzung in anderen Programmen."
 last_verified: 2026-07-02
 ---
 

@@ -8,7 +8,8 @@ The same content also feeds the in-app **MyCompanyDesk chatbot** via the `search
 
 ```bash
 npm install
-npm run docs:dev      # http://localhost:5173
+npm run docs:dev             # http://localhost:5173
+npm run check:descriptions   # titles and meta descriptions, all 612 pages
 ```
 
 ## Build & deploy
@@ -55,6 +56,14 @@ chatbot:
 #### `title` (required)
 
 Displayed in the sidebar and used as the chatbot's page title when citing the page.
+
+#### `description` (required)
+
+One sentence, 40 to 155 characters, in the page's own language, saying what the page actually lets you do. It becomes the page's `<meta name="description">` and `og:description`, which is the text Google prints under the search result and the text answer engines quote. It must be unique within its locale: `.vitepress/config.mjs` only falls back to a generic per-locale string for a page that has none, and 612 pages sharing one description is what this replaced.
+
+Avoid em-dashes, and avoid double quotes (the in-app chatbot parses frontmatter with its own reader that does not unescape `\"`).
+
+`npm run check:descriptions` enforces all of the above, plus that a nl/de/fr page is not still carrying the English `title`.
 
 #### `last_verified` (recommended)
 

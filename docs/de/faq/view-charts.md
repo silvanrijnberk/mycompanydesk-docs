@@ -1,5 +1,6 @@
 ---
 title: "Diagramme anzeigen"
+description: "So sehen Sie Diagramme und Grafiken: gehen Sie zu Berichte in der Seitenleiste."
 last_verified: 2026-05-09
 chatbot:
   triggers: ["view charts", "see graphs", "financial charts", "revenue chart", "expense chart", "grafieken bekijken", "diagramme anzeigen", "voir graphiques"]

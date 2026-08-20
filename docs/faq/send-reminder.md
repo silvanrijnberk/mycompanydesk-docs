@@ -1,5 +1,6 @@
 ---
-title: Send reminder
+title: "Herinnering versturen"
+description: "Om een herinnering te versturen voor een onbetaalde factuur: open de factuur, gebruik de actie Herinnering versturen."
 last_verified: 2026-08-16
 chatbot:
   triggers: ["send reminder", "payment reminder", "remind customer", "follow up", "chase payment", "herinnering sturen", "betaalherinnering", "aanmaning", "zahlungserinnerung", "relance", "rappel paiement"]

@@ -1,5 +1,6 @@
 ---
 title: Unternehmen einrichten
+description: "Der Einrichtungsassistent füllt Absenderblock, Zahlungsdaten und Steuerstatus rund um Ihre erste Rechnung, mit KVK-Abfrage und Live-Vorschau."
 last_verified: 2026-07-21
 ---
 

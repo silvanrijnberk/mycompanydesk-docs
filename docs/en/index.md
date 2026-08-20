@@ -1,4 +1,5 @@
 ---
+description: "Documentation for MyCompanyDesk: guides for invoices, quotes, expenses, VAT, the bank feed, your website and every setting in the app."
 layout: home
 hero:
   name: MyCompanyDesk

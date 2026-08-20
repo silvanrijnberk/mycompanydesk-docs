@@ -1,5 +1,6 @@
 ---
 title: Aperçu des paramètres
+description: "Tout ce qui se configure tient sur une seule page, réparti en trois groupes en langage clair, chaque réglage à deux clics au maximum."
 last_verified: 2026-08-05
 ---
 

@@ -1,5 +1,6 @@
 ---
-title: "Login issues"
+title: "Probleme beim Anmelden"
+description: "Probleme beim Anmelden: Nutzen Sie Passwort vergessen, prüfen Sie den Spam-Ordner, kontrollieren Sie die E-Mail-Adresse und leeren Sie den Cache."
 last_verified: 2026-05-09
 chatbot:
   triggers: ["cannot login", "cant login", "login problem", "forgot password", "reset password", "locked out", "verification email", "email not received", "kan niet inloggen", "wachtwoord vergeten", "passwort vergessen", "mot de passe oublie"]

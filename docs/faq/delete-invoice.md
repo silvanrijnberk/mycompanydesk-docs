@@ -1,5 +1,6 @@
 ---
 title: "Factuur verwijderen"
+description: "Zo verwijder je een factuur: open de factuur die je wilt verwijderen, scroll in de zijbalk naar de sectie Gevarenzone, klik op Verwijderen."
 last_verified: 2026-08-15
 chatbot:
   triggers:

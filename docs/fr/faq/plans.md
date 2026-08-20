@@ -1,5 +1,6 @@
 ---
 title: "Formules et tarifs"
+description: "MyCompanyDesk propose deux formules : Desk et Office. Desk est gratuit et reste gratuit."
 last_verified: 2026-07-22
 chatbot:
   triggers:

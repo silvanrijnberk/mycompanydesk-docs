@@ -1,5 +1,6 @@
 ---
 title: "Gearchiveerde uitgaven vinden"
+description: "Gearchiveerde uitgaven vind je onder Uitgaven > Archief. Sta je al in de uitgavenlijst, schakel dan over naar de weergave Archief."
 last_verified: 2026-05-09
 chatbot:
   triggers: ["where are archived expenses", "where can i find archived expenses", "where do i find archived expenses", "expense archive", "archived expenses", "gearchiveerde uitgaven", "uitgaven archief", "archivierte ausgaben", "archivierten ausgaben", "ausgaben archiv", "depenses archivees", "mes depenses archivees", "archives depenses"]

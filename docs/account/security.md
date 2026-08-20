@@ -1,5 +1,6 @@
 ---
 title: Beveiliging
+description: "Beveilig je account met een sterk wachtwoord, tweestapsverificatie en zicht op je actieve sessies, allemaal onder Instellingen, Inloggen."
 last_verified: 2026-07-10
 ---
 

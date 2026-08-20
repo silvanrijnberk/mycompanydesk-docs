@@ -1,5 +1,6 @@
 ---
 title: Berichte
+description: "Fünf gezielte Berichtsansichten plus eine Übersicht, die sie zusammenführt, jede mit Zahlen und Diagrammen an einer Stelle."
 ---
 
 # Berichte

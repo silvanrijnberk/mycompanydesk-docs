@@ -1,5 +1,6 @@
 ---
 title: "Dupliquer une dépense"
+description: "Pour dupliquer une dépense : ouvrez la dépense payée à copier. La duplication n'est disponible que pour les dépenses payées ; une dépense impayée affiche."
 last_verified: 2026-08-16
 chatbot:
   triggers: ["duplicate expense", "copy expense", "clone expense", "reuse expense", "uitgave kopieren", "uitgave dupliceren", "ausgabe kopieren", "dupliquer depense"]

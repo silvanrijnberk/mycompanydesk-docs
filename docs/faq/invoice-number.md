@@ -1,5 +1,6 @@
 ---
 title: "Factuurnummer"
+description: "Factuurnummers worden automatisch toegekend: maak een factuur; MyCompanyDesk nummert die netjes op volgorde, zoals de Belastingdienst het wil."
 last_verified: 2026-08-05
 chatbot:
   triggers: ["invoice number", "change invoice number", "invoice numbering", "set invoice number", "numbering format", "factuurnummer", "factuurnummering", "rechnungsnummer", "numero facture"]

@@ -1,5 +1,6 @@
 ---
 title: "Multi currency"
+description: "MyCompanyDesk works in euros only. All invoices, quotes, expenses, and reports are in EUR."
 last_verified: 2026-07-02
 chatbot:
   triggers: ["multi currency", "different currency", "foreign currency", "invoice in dollars", "invoice in pounds", "andere valuta", "vreemde valuta", "andere wahrung", "devise etrangere", "dollar invoice", "pound invoice"]

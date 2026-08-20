@@ -1,5 +1,6 @@
 ---
 title: "Do your own bookkeeping without an accountant"
+description: "Most freelancers and one-person businesses can handle their own day-to-day bookkeeping in MyCompanyDesk."
 last_verified: 2026-07-21
 chatbot:
   triggers:

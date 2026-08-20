@@ -1,5 +1,6 @@
 ---
 title: "Données client et recouvrement"
+description: "Pour voir les données client qui influencent le suivi des factures dans l'application : ouvrez Clients et sélectionnez le client."
 last_verified: 2026-05-09
 chatbot:
   triggers: ["customer data collections", "improve collections", "data improve collections", "collections", "incasso", "klantgegevens incasso", "forderungsmanagement", "recouvrement"]

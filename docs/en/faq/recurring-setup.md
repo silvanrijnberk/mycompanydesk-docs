@@ -1,5 +1,6 @@
 ---
 title: "Recurring setup"
+description: "To set up a recurring invoice: go to Recurring Invoices and click Add recurring invoice, select the customer and add line items."
 last_verified: 2026-07-02
 chatbot:
   triggers: ["set up recurring", "recurring invoice", "recurring expense", "automate invoice", "automatic invoice", "monthly invoice", "terugkerende factuur", "terugkerende uitgave", "wiederkehrende rechnung", "facture recurrente"]

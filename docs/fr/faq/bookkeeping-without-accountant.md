@@ -1,5 +1,6 @@
 ---
 title: "Faire sa comptabilité sans comptable"
+description: "La plupart des indépendants et entreprises individuelles peuvent gérer leur comptabilité quotidienne seuls dans MyCompanyDesk."
 last_verified: 2026-07-21
 chatbot:
   triggers:

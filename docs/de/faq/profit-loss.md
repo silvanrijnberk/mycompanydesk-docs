@@ -1,5 +1,6 @@
 ---
 title: "Gewinn und Verlust"
+description: "So öffnen Sie die Gewinn-und-Verlust-Ansicht in der App: öffnen Sie Berichte, wechseln Sie zur Ansicht GuV."
 last_verified: 2026-08-15
 chatbot:
   triggers: ["profit and loss", "profit loss", "income statement", "p&l", "winst en verlies", "resultatenrekening", "gewinn und verlust", "compte de resultat", "resultat net"]

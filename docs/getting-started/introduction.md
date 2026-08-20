@@ -1,5 +1,6 @@
 ---
 title: Introductie
+description: "MyCompanyDesk is een alles-in-een boekhoudplatform voor zzp'ers, kleine bedrijven en vastgoedbeheerders, van factuur tot BTW-aangifte."
 ---
 
 # Introductie

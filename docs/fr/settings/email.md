@@ -1,5 +1,6 @@
 ---
 title: E-mail
+description: "Choisissez l'adresse d'envoi de vos factures et devis, et réglez la signature au bas de chaque message. Disponible dans tous les abonnements."
 ---
 
 # E-mail

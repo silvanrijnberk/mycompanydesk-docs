@@ -1,5 +1,6 @@
 ---
 title: Devis
+description: "Créez et envoyez des devis, suivez leur acceptation et convertissez un devis accepté en facture en une seule étape."
 ---
 
 # Devis

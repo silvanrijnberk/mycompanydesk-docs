@@ -1,5 +1,6 @@
 ---
-title: "Automatic recurring expenses"
+title: "Automatisch wiederkehrende Ausgaben"
+description: "Automatisch wiederkehrende Ausgaben einrichten: Gehen Sie zu Wiederkehrende Ausgaben und tragen Sie Lieferant, Betrag, Kategorie und Häufigkeit ein."
 last_verified: 2026-05-09
 chatbot:
   triggers:

@@ -1,5 +1,6 @@
 ---
 title: Projecten
+description: "Bundel facturen, uitgaven en urenregistraties in projecten, zodat je tijd, omzet en winstgevendheid per opdracht ziet."
 ---
 
 # Projecten

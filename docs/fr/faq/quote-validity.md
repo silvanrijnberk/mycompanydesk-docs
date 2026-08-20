@@ -1,5 +1,6 @@
 ---
 title: "Validité des devis"
+description: "La validité des devis se règle à un seul endroit : allez dans Paramètres > Factures et devis."
 last_verified: 2026-07-02
 chatbot:
   triggers: ["quote validity", "valid until quote", "quote expiry", "quote expiration", "how long quote valid", "quote valid days", "geldigheid offerte", "offerte geldig", "angebotsgultigkeit", "devis validite", "validez devis", "validez cotizacion", "validade proposta"]

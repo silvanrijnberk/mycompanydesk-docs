@@ -1,5 +1,6 @@
 ---
 title: "Vervaldatum van een factuur"
+description: "Zo pas je de vervaldatum van één factuur aan: open de factuur in bewerkmodus, werk in de kaart met factuurdetails het veld Vervaldatum bij."
 last_verified: 2026-07-02
 chatbot:
   triggers: ["set due date", "change due date", "payment terms", "payment deadline", "when invoice due", "net 30", "net 14", "vervaldatum", "betaaltermijn", "zahlungsfrist", "echeance", "date d echeance", "conditions de paiement", "modifier conditions de paiement", "changer conditions de paiement", "comment modifier les conditions de paiement", "comment changer les conditions de paiement"]

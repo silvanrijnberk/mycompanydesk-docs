@@ -1,5 +1,6 @@
 ---
 title: Toegang en boekhouder
+description: "Geef een partner, medewerker of je boekhouder een eigen login, met paginarechten onder Mensen met toegang en Je boekhouder voor je boekhouder."
 last_verified: 2026-08-04
 ---
 

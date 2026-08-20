@@ -1,5 +1,6 @@
 ---
-title: Edit an expense
+title: "Uitgave bewerken"
+description: "Om een uitgave te bewerken: open de uitgave vanuit de lijst, klik op Bewerken."
 last_verified: 2026-08-16
 chatbot:
   triggers: ["edit expense", "change expense", "modify expense", "update expense", "correct expense", "uitgave bewerken", "uitgave wijzigen", "ausgabe bearbeiten", "modifier depense"]

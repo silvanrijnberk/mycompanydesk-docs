@@ -1,5 +1,6 @@
 ---
 title: "Compte de résultat"
+description: "Pour ouvrir la vue du compte de résultat dans l'application : ouvrez Rapports, passez à la vue Compte de résultat."
 last_verified: 2026-08-15
 chatbot:
   triggers: ["profit and loss", "profit loss", "income statement", "p&l", "winst en verlies", "resultatenrekening", "gewinn und verlust", "compte de resultat", "resultat net"]

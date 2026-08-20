@@ -1,5 +1,6 @@
 ---
-title: "Billing and subscription help"
+title: "Aide facturation et abonnement"
+description: "Pour réduire les erreurs de facturation : complétez sur la fiche client l'e-mail, l'adresse, le numéro de TVA et les conditions de paiement."
 last_verified: 2026-05-09
 chatbot:
   triggers:

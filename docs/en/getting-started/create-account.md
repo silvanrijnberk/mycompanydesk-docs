@@ -1,5 +1,6 @@
 ---
 title: Create Your Account
+description: "Sign up at app.mycompanydesk.com with an email address and password, or with Google or Outlook, in a few minutes."
 ---
 
 # Create Your Account

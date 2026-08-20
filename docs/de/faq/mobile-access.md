@@ -1,5 +1,6 @@
 ---
-title: Mobile access
+title: "Nutzung auf dem Handy"
+description: "MyCompanyDesk am Handy nutzen: Öffnen Sie die Anwendungs-URL im mobilen Browser, die Oberfläche passt sich Ihrer Bildschirmgröße automatisch an."
 last_verified: 2026-05-09
 chatbot:
   triggers: ["mobile", "phone", "tablet", "mobile app", "responsive", "on the go", "mobiel", "telefoon", "mobil", "handy", "acces mobile", "telephone", "smartphone"]

@@ -1,5 +1,6 @@
 ---
 title: Dashboard
+description: "Your workspace home screen: period switcher, KPI summary, an attention widget and blocks that appear only when your data makes them useful."
 last_verified: 2026-08-18
 ---
 

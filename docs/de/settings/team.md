@@ -1,5 +1,6 @@
 ---
 title: Zugang und Steuerberater
+description: "Geben Sie Partner, Mitarbeitenden oder Ihrem Steuerberater einen eigenen Zugang, mit Seitenrechten pro Person und einer eigenen Steuerberater-Seite."
 last_verified: 2026-08-04
 ---
 

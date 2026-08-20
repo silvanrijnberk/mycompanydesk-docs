@@ -1,5 +1,6 @@
 ---
-title: Split an expense
+title: "Uitgave splitsen"
+description: "Om een uitgave over meerdere categorieën te verdelen: open de uitgave in bewerkingsmodus."
 last_verified: 2026-05-09
 chatbot:
   triggers: ["split expense", "divide expense", "expense between categories", "allocate expense", "expense allocation", "uitgave splitsen", "uitgave verdelen", "ausgabe aufteilen", "repartir depense"]

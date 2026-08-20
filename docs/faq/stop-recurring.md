@@ -1,5 +1,6 @@
 ---
 title: "Terugkerende factuur stoppen"
+description: "Zo stop je een terugkerende factuur: ga naar Terugkerende facturen, open de terugkerende factuur."
 last_verified: 2026-07-02
 chatbot:
   triggers: ["stop recurring", "cancel recurring", "pause recurring", "disable recurring", "end recurring", "terugkerend stoppen", "terugkerend annuleren", "wiederkehrend stoppen", "arreter recurrent"]

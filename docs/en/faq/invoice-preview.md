@@ -1,5 +1,6 @@
 ---
 title: "Invoice preview"
+description: "To preview an invoice before sending: open the invoice (it must be saved first), click the Preview or PDF icon button."
 last_verified: 2026-08-18
 chatbot:
   triggers:

@@ -1,5 +1,6 @@
 ---
 title: "Supprimer un client"
+description: "Pour supprimer un client : ouvrez son profil, faites défiler jusqu'à la Zone de danger dans la barre latérale, cliquez sur Supprimer et confirmez."
 last_verified: 2026-05-09
 chatbot:
   triggers: ["delete customer", "remove customer", "trash customer", "klant verwijderen", "klant wissen", "kunde loschen", "supprimer client"]

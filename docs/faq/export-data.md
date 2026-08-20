@@ -1,5 +1,6 @@
 ---
 title: "Gegevens exporteren"
+description: "Om gegevens te exporteren: ga naar Instellingen > Gegevens downloaden voor de snelle exportknoppen."
 last_verified: 2026-07-02
 chatbot:
   triggers: ["export data", "download data", "export csv", "export excel", "download report", "data exporteren", "gegevens downloaden", "daten exportieren", "exporter donnees"]

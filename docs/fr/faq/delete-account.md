@@ -1,5 +1,6 @@
 ---
 title: Supprimer le compte
+description: "Pour supprimer votre compte : téléchargez d'abord vos données via Paramètres > Télécharger les données si vous souhaitez en garder une copie."
 last_verified: 2026-07-02
 chatbot:
   triggers: ["delete account", "close account", "remove account", "cancel subscription", "account verwijderen", "account opzeggen", "konto loschen", "supprimer compte", "resilier abonnement"]

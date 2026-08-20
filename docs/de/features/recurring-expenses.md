@@ -1,5 +1,6 @@
 ---
 title: Wiederkehrende Ausgaben
+description: "Automatisieren Sie feste Kosten wie Miete, Abos, Versicherungen und Nebenkosten mit Vorlagen, die planmäßig Ausgaben anlegen."
 ---
 
 # Wiederkehrende Ausgaben

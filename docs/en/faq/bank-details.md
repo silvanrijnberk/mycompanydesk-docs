@@ -1,5 +1,6 @@
 ---
 title: "Bank details"
+description: "To add or update bank details: go to Settings and open Betalen, enter your IBAN and the name on the account in the bank account card."
 last_verified: 2026-07-02
 chatbot:
   triggers: ["bank details", "add bank account", "bank information", "where do i add my bank details", "iban", "payment details", "bankgegevens", "waar voeg ik mijn bankgegevens toe", "bankrekening toevoegen", "bankdaten", "wo trage ich meine bankdaten ein", "coordonnees bancaires", "ou ajouter mes coordonnees bancaires"]

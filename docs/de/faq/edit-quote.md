@@ -1,5 +1,6 @@
 ---
-title: Edit a quote
+title: "Angebot bearbeiten"
+description: "So bearbeiten Sie ein Angebot: Öffnen Sie es aus der Liste, klicken Sie auf Bearbeiten und aktualisieren Sie Kundendaten, Positionen, Notizen oder Daten."
 last_verified: 2026-05-09
 chatbot:
   triggers: ["edit quote", "change quote", "update quote", "modify quote", "correct quote", "offerte bewerken", "offerte wijzigen", "angebot bearbeiten", "devis modifier", "editar cotizacion", "editar proposta", "modificare preventivo"]

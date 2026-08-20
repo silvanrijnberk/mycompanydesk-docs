@@ -1,5 +1,6 @@
 ---
 title: "Factuur annuleren"
+description: "Zo annuleer je een verstuurde factuur: open de factuur vanuit je factuurlijst, scrol in de zijbalk naar de sectie Gevarenzone."
 last_verified: 2026-08-14
 chatbot:
   triggers: ["cancel invoice", "void invoice", "annul invoice", "reverse invoice", "credit note", "undo invoice", "factuur annuleren", "factuur ongedaan", "hoe annuleer ik een factuur", "rechnung stornieren", "wie storniere ich eine rechnung", "annuler facture"]

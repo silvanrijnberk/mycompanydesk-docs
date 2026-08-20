@@ -1,5 +1,6 @@
 ---
 title: "Objekte & Vermögenswerte"
+description: "Verwalten Sie Mietobjekte, Fahrzeuge, Ausrüstung und andere Anlagen über den gesamten Lebenszyklus. Aktivieren unter Unternehmen, Funktionen."
 ---
 
 # Objekte & Vermögenswerte

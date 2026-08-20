@@ -1,5 +1,6 @@
 ---
 title: "Partial payment"
+description: "To record a partial payment on an invoice: open the invoice from the list, click Record Payment or the payment action."
 last_verified: 2026-05-09
 chatbot:
   triggers: ["partial payment", "record partial payment", "half payment", "part payment", "deposit received", "gedeeltelijke betaling", "deelbetaling", "aanbetaling ontvangen", "teilzahlung", "paiement partiel", "acompte recu"]

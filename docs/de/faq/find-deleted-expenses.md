@@ -1,5 +1,6 @@
 ---
 title: "Gelöschte Ausgaben finden"
+description: "Gelöschte Ausgaben finden Sie unter Ausgaben > Papierkorb. Wenn Sie bereits in der Ausgabenliste sind, wechseln Sie zur Ansicht Papierkorb."
 last_verified: 2026-08-16
 chatbot:
   triggers:

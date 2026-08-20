@@ -1,5 +1,6 @@
 ---
 title: "Winst en verlies"
+description: "Om het winst-en-verliesoverzicht in de app te openen: open Rapporten, ga naar de weergave Winst & verlies."
 last_verified: 2026-08-15
 chatbot:
   triggers: ["profit and loss", "profit loss", "income statement", "p&l", "winst en verlies", "resultatenrekening", "gewinn und verlust", "compte de resultat", "resultat net"]

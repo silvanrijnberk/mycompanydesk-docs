@@ -1,5 +1,6 @@
 ---
 title: PDF-Stil ändern
+description: "So ändern Sie den Stil Ihrer PDF-Rechnungen: gehen Sie zu Einstellungen > Rechnungsdesign."
 last_verified: 2026-08-18
 chatbot:
   triggers: ["change pdf style", "customize pdf", "pdf template", "invoice design", "invoice layout", "change invoice look", "pdf editor", "edit pdf template", "pdf stijl wijzigen", "factuur uiterlijk", "pdf sjabloon", "pdf-vorlage andern", "style pdf"]

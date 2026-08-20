@@ -1,5 +1,6 @@
 ---
 title: "Team access"
+description: "To manage who has access to your workspace: go to Settings > Toegang en boekhouder (access and accountant)."
 last_verified: 2026-07-02
 chatbot:
   triggers:

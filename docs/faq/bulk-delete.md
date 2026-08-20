@@ -1,5 +1,6 @@
 ---
-title: Bulk delete
+title: "Meerdere items verwijderen"
+description: "Om meerdere items tegelijk te verwijderen: ga naar de betreffende lijstweergave (Facturen, Uitgaven, etc.)."
 last_verified: 2026-05-09
 chatbot:
   triggers: ["bulk delete", "delete multiple", "mass delete", "delete all", "remove multiple", "meerdere verwijderen", "alles verwijderen", "mehrere loschen", "supprimer plusieurs", "suppression en masse"]

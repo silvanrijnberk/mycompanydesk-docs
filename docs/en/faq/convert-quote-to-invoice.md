@@ -1,5 +1,6 @@
 ---
 title: "Convert a quote to an invoice"
+description: "To convert a quote to an invoice: open the quote detail page, click Create invoice from quote."
 last_verified: 2026-05-09
 chatbot:
   triggers:

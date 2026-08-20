@@ -1,5 +1,6 @@
 ---
-title: "Search invoices"
+title: "Facturen zoeken"
+description: "Om een specifieke factuur te zoeken: ga naar Facturen, gebruik de zoekbalk om het factuurnummer, de klantnaam of het bedrag te typen."
 last_verified: 2026-05-09
 chatbot:
   triggers: ["search invoices", "find invoice", "filter invoices", "sort invoices", "search invoice", "look up invoice", "factuur zoeken", "facturen filteren", "rechnung suchen", "chercher facture"]

@@ -1,5 +1,6 @@
 ---
 title: "Find archived invoices"
+description: "Archived invoices are in Invoices > Archive. If you are already in the invoice list, switch to the Archive view. Deleted invoices are in Trash."
 last_verified: 2026-05-09
 chatbot:
   triggers:

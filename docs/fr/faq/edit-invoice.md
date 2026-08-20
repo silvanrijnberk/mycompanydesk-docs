@@ -1,5 +1,6 @@
 ---
 title: "Modifier une facture"
+description: "Pour modifier une facture : ouvrez la facture depuis la liste."
 last_verified: 2026-07-02
 chatbot:
   triggers: ["edit invoice", "change invoice", "modify invoice", "update invoice", "correct invoice", "fix invoice", "factuur bewerken", "factuur wijzigen", "factuur aanpassen", "hoe bewerk ik een factuur", "rechnung bearbeiten", "wie bearbeite ich eine rechnung", "modifier facture"]

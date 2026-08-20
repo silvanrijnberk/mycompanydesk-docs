@@ -1,5 +1,6 @@
 ---
-title: "Convert a quote to an invoice"
+title: "Convertir un devis en facture"
+description: "Pour convertir un devis en facture : ouvrez la page du devis et cliquez sur Créer une facture depuis le devis, un brouillon reprend les lignes."
 last_verified: 2026-05-09
 chatbot:
   triggers:

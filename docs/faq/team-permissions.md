@@ -1,5 +1,6 @@
 ---
 title: Teamrechten
+description: "Paginarechten bepalen wat elk teamlid of elke boekhouder mag doen: lezen - gegevens bekijken, schrijven - bestaande gegevens bewerken."
 last_verified: 2026-07-02
 chatbot:
   triggers: ["team permissions", "manage team permissions", "page permissions", "read write create", "permission settings", "access control", "granular permissions", "read only", "write access", "create access", "pagina rechten", "teamrechten", "lezen schrijven", "toegang instellen", "seitenberechtigungen", "teamberechtigungen", "lese schreibzugriff", "permissions page", "permissions de l'equipe", "droits acces"]

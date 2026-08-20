@@ -1,5 +1,6 @@
 ---
 title: Verträge
+description: "Verwalten Sie wiederkehrende Serviceverträge und Mietverträge und lassen Sie sie planmäßig Rechnungen erzeugen. Aktivieren unter Unternehmen, Funktionen."
 ---
 
 # Verträge

@@ -1,5 +1,6 @@
 ---
 title: Change password
+description: "To change your password: go to Settings > Inloggen (signing in), enter your current password, enter and confirm your new password, click Change password."
 last_verified: 2026-07-02
 chatbot:
   triggers: ["change password", "update password", "new password", "password security", "wachtwoord wijzigen", "nieuw wachtwoord", "passwort andern", "wie aendere ich mein passwort", "changer mot de passe"]

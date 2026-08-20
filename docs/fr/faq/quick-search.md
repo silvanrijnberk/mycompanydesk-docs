@@ -1,5 +1,6 @@
 ---
-title: "Quick search"
+title: "Recherche rapide"
+description: "Pour une recherche rapide : utilisez la barre de recherche en haut des vues en liste et tapez un nom de client, un numéro de facture ou un montant."
 last_verified: 2026-05-09
 chatbot:
   triggers: ["quick search", "search everything", "global search", "find anything", "search bar", "snel zoeken", "overal zoeken", "schnellsuche", "recherche rapide", "recherche globale"]

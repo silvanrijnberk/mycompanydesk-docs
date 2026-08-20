@@ -1,5 +1,6 @@
 ---
 title: Factures recurrentes
+description: "Créez des modèles de facture qui se génèrent selon un calendrier : forfaits mensuels, abonnements, loyers et contrats de maintenance."
 ---
 
 # Factures recurrentes

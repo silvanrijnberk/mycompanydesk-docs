@@ -1,5 +1,6 @@
 ---
 title: "Moyens de paiement"
+description: "Pour gérer les méthodes de paiement sur les documents : allez dans Paramètres et ouvrez Paiement."
 last_verified: 2026-07-22
 chatbot:
   triggers:

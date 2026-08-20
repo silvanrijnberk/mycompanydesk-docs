@@ -1,5 +1,6 @@
 ---
 title: Two-factor authentication
+description: "Two-factor authentication (2FA) adds a 6-digit code from an authenticator app on top of your password, go to Settings (Instellingen) > Inloggen."
 last_verified: 2026-07-10
 chatbot:
   triggers: ["two factor", "two-factor", "2fa", "two step", "authenticator", "mfa", "tweestapsverificatie", "twee-factor", "zwei faktor", "authentification deux facteurs", "double authentification"]

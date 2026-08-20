@@ -1,5 +1,6 @@
 ---
 title: "Donkere modus"
+description: "Om je thema te wisselen: ga naar Instellingen > Weergave, kies Licht, Donker of Vanzelf (volgt je apparaat)."
 last_verified: 2026-07-02
 chatbot:
   triggers: ["dark mode", "light mode", "switch theme", "change theme", "night mode", "donkere modus", "thema wijzigen", "dunkler modus", "mode sombre"]

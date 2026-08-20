@@ -1,5 +1,6 @@
 ---
 title: "Wiederkehrende Rechnung stoppen"
+description: "So stoppen Sie eine wiederkehrende Rechnung: gehen Sie zu Wiederkehrende Rechnungen, öffnen Sie die wiederkehrende Rechnung."
 last_verified: 2026-07-02
 chatbot:
   triggers: ["stop recurring", "cancel recurring", "pause recurring", "disable recurring", "end recurring", "terugkerend stoppen", "terugkerend annuleren", "wiederkehrend stoppen", "arreter recurrent"]

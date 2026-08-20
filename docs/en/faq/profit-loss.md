@@ -1,5 +1,6 @@
 ---
 title: Profit and loss
+description: "To open the profit and loss view in the app: open Reports, switch to the P&L view, select the period you want to inspect with the period and year filters."
 last_verified: 2026-08-15
 chatbot:
   triggers: ["profit and loss", "profit loss", "income statement", "p&l", "winst en verlies", "resultatenrekening", "gewinn und verlust", "compte de resultat", "resultat net"]

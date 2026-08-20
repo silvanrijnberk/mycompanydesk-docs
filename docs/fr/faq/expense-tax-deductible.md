@@ -1,5 +1,6 @@
 ---
-title: Expense tax-deductible
+title: "Dépense déductible"
+description: "Pour enregistrer la déductibilité : ouvrez la dépense, choisissez déductible ou non déductible, puis vérifiez la catégorie et les réglages TVA."
 last_verified: 2026-05-09
 chatbot:
   triggers: ["tax deductible", "deductible expenses", "which expenses deductible", "tax write off", "aftrekbare kosten", "welke kosten aftrekbaar", "absetzbare ausgaben", "depenses deductibles", "charges deductibles"]

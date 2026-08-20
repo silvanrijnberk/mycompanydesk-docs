@@ -1,5 +1,6 @@
 ---
 title: "Kundendaten und Forderungsmanagement"
+description: "So sehen Sie Kundendaten, die in der App für die Rechnungsnachverfolgung relevant sind: öffnen Sie Kunden und wählen Sie den Kunden aus."
 last_verified: 2026-05-09
 chatbot:
   triggers: ["customer data collections", "improve collections", "data improve collections", "collections", "incasso", "klantgegevens incasso", "forderungsmanagement", "recouvrement"]

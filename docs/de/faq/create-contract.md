@@ -1,5 +1,6 @@
 ---
-title: Create a contract
+title: "Vertrag erstellen"
+description: "So erstellen Sie einen Vertrag: Gehen Sie zu Verträge, Neuer Vertrag, und tragen Sie Kunde, Name, Betrag, MwSt-Satz und Wiederholung ein."
 last_verified: 2026-05-09
 chatbot:
   triggers: ["create contract", "new contract", "add contract", "contract aanmaken", "nieuw contract", "vertrag erstellen", "creer contrat", "comment creer un contrat"]

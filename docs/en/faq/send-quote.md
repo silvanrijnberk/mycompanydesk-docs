@@ -1,5 +1,6 @@
 ---
 title: Send a quote
+description: "To send a quote by email: open the quote detail page, click Send, review the email preview and recipient address, confirm send."
 last_verified: 2026-05-09
 chatbot:
   triggers: ["send quote", "email quote", "send proposal", "deliver quote", "quote email", "offerte versturen", "devis envoyer", "angebot senden", "enviar cotizacion", "enviar proposta", "inviare preventivo"]

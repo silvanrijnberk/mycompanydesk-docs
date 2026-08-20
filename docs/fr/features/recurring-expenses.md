@@ -1,5 +1,6 @@
 ---
 title: Depenses recurrentes
+description: "Automatisez les charges régulières comme le loyer, les abonnements, les assurances et les services avec des modèles qui créent les dépenses."
 ---
 
 # Depenses recurrentes

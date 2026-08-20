@@ -1,5 +1,6 @@
 ---
 title: "Configurer des factures récurrentes"
+description: "Pour configurer une facture récurrente : allez dans Factures récurrentes et cliquez sur Ajouter une facture récurrente."
 last_verified: 2026-07-02
 chatbot:
   triggers: ["set up recurring", "recurring invoice", "recurring expense", "automate invoice", "automatic invoice", "monthly invoice", "terugkerende factuur", "terugkerende uitgave", "wiederkehrende rechnung", "facture recurrente"]

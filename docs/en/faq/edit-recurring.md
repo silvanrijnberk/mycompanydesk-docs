@@ -1,5 +1,6 @@
 ---
 title: "Edit a recurring invoice"
+description: "To edit a recurring invoice or expense: go to Recurring Invoices (or Recurring Expenses), open the recurring item, click Edit."
 last_verified: 2026-08-15
 chatbot:
   triggers:

@@ -1,5 +1,6 @@
 ---
 title: "Utiliser le tableau de bord"
+description: "Votre tableau de bord vous donne un aperçu rapide de : un sélecteur de période pour mois, trimestre ou année."
 last_verified: 2026-08-18
 chatbot:
   triggers:

@@ -1,5 +1,6 @@
 ---
 title: "Login issues"
+description: "If you're having trouble logging in: try Forgot Password on the login page to reset, check your spam/junk folder for verification emails."
 last_verified: 2026-05-09
 chatbot:
   triggers: ["cannot login", "cant login", "login problem", "forgot password", "reset password", "locked out", "verification email", "email not received", "kan niet inloggen", "wachtwoord vergeten", "passwort vergessen", "mot de passe oublie"]

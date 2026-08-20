@@ -1,5 +1,6 @@
 ---
-title: Bulk delete
+title: "Mehrere Einträge löschen"
+description: "Mehrere Einträge auf einmal löschen: Wählen Sie sie per Kontrollkästchen aus, öffnen Sie das Massenaktionsmenü, wählen Sie Löschen und bestätigen Sie."
 last_verified: 2026-05-09
 chatbot:
   triggers: ["bulk delete", "delete multiple", "mass delete", "delete all", "remove multiple", "meerdere verwijderen", "alles verwijderen", "mehrere loschen", "supprimer plusieurs", "suppression en masse"]

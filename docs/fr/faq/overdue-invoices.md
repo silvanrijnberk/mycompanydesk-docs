@@ -1,5 +1,6 @@
 ---
-title: Overdue invoices
+title: "Factures en retard"
+description: "Pour gérer les factures en retard : allez dans Factures, filtrez par statut En retard, triez par échéance et ouvrez-en une pour relancer."
 last_verified: 2026-05-09
 chatbot:
   triggers: ["overdue invoices", "late invoices", "unpaid invoices", "outstanding invoices", "invoices not paid", "achterstallige facturen", "onbetaalde facturen", "uberfaellige rechnungen", "factures impayees"]

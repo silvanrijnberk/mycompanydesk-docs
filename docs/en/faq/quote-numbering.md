@@ -1,5 +1,6 @@
 ---
 title: "Quote numbering"
+description: "Quote numbers are assigned automatically: create a quote; MyCompanyDesk gives it the next number in your sequence."
 last_verified: 2026-08-05
 chatbot:
   triggers:

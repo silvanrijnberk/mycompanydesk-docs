@@ -1,5 +1,6 @@
 ---
 title: Accountant forwarding
+description: "Send invoices and expenses to your accountant's own package, such as Exact, SnelStart, Twinfield or Yuki, automatically instead of one by one."
 last_verified: 2026-08-19
 ---
 

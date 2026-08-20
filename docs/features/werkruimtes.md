@@ -1,5 +1,6 @@
 ---
 title: Werkruimtes
+description: "Een centrale pagina voor alles wat je beheert, je eigen bedrijven en klantadministraties, zonder dat eigen geld en klantgeld ooit door elkaar lopen."
 last_verified: 2026-08-10
 ---
 

@@ -1,5 +1,6 @@
 ---
 title: "Uitgaven zoeken"
+description: "Om uitgaven te zoeken en te filteren: ga naar Uitgaven, gebruik de zoekbalk om te zoeken op leverancier, omschrijving of categorie."
 last_verified: 2026-05-09
 chatbot:
   triggers: ["search expenses", "find expense", "filter expenses", "sort expenses", "uitgave zoeken", "uitgaven filteren", "ausgabe suchen", "chercher depense"]

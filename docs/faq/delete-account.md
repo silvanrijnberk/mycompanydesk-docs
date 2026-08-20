@@ -1,5 +1,6 @@
 ---
 title: Account verwijderen
+description: "Zo verwijder je je account: download eerst je gegevens via Instellingen > Gegevens downloaden als je een kopie wilt bewaren."
 last_verified: 2026-07-02
 chatbot:
   triggers: ["delete account", "close account", "remove account", "cancel subscription", "account verwijderen", "account opzeggen", "konto loschen", "supprimer compte", "resilier abonnement"]

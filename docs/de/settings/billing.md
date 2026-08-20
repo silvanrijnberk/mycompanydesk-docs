@@ -1,5 +1,6 @@
 ---
 title: "Abonnement & Zahlungen"
+description: "Was Sie uns zahlen, Ihre Rechnungen von uns und Ihre Zahlungskarte, unter Einstellungen, Abonnement und Zahlungen."
 last_verified: 2026-08-05
 ---
 

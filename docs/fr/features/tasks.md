@@ -1,5 +1,6 @@
 ---
 title: Tâches
+description: "Les tâches que vous créez, et celles qui apparaissent seules : facture impayée, devis qui expire ou étape de configuration encore ouverte."
 ---
 
 # Tâches

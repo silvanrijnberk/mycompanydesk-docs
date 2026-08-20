@@ -1,5 +1,6 @@
 ---
 title: "Ausgabe erstellen"
+description: "So fügen Sie eine Ausgabe hinzu: gehen Sie zu Ausgaben und klicken Sie auf Hinzufügen."
 last_verified: 2026-05-09
 chatbot:
   triggers: ["create expense", "new expense", "add expense", "log expense", "record expense", "track expense", "uitgave toevoegen", "nieuwe uitgave", "uitgave aanmaken", "ausgabe hinzufugen", "wie erstelle ich eine ausgabe", "ajouter depense", "comment creer une depense"]

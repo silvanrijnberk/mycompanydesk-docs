@@ -1,5 +1,6 @@
 ---
 title: "Rechnungsnummer"
+description: "Rechnungsnummern werden automatisch vergeben: erstellen Sie eine Rechnung; MyCompanyDesk nummeriert sie fortlaufend, so wie es das Finanzamt erwartet."
 last_verified: 2026-08-05
 chatbot:
   triggers: ["invoice number", "change invoice number", "invoice numbering", "set invoice number", "numbering format", "factuurnummer", "factuurnummering", "rechnungsnummer", "numero facture"]

@@ -1,5 +1,6 @@
 ---
 title: FAQ
+description: "Quick answers to common questions about MyCompanyDesk. Each entry mirrors what the in-app chatbot answers, accountant access, add customer, add Line Item."
 last_verified: 2026-05-09
 ---
 

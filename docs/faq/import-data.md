@@ -1,5 +1,6 @@
 ---
 title: "Gegevens importeren"
+description: "MyCompanyDesk kan klanten, facturen en uitgaven importeren uit een CSV-bestand. Andere gegevenstypes kun je niet importeren."
 last_verified: 2026-08-15
 chatbot:
   triggers:

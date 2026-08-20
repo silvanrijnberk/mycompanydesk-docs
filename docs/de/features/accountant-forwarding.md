@@ -1,5 +1,6 @@
 ---
 title: Weiterleitung an Steuerberater
+description: "Senden Sie Rechnungen und Ausgaben automatisch an das Programm Ihres Steuerberaters, etwa Exact, SnelStart, Twinfield oder Yuki, statt einzeln."
 last_verified: 2026-08-19
 ---
 

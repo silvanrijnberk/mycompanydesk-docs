@@ -1,5 +1,6 @@
 ---
 title: Peppol e-facturatie
+description: "Verstuur facturen en creditnota's als gestructureerde e-factuur via Peppol, rechtstreeks in de boekhouding van je klant, en ontvang ze net zo goed."
 last_verified: 2026-08-15
 ---
 

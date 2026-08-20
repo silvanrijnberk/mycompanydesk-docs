@@ -1,5 +1,6 @@
 ---
 title: "Dunkelmodus"
+description: "So wechseln Sie Ihr Theme: gehen Sie zu Einstellungen > Darstellung, wählen Sie Hell, Dunkel oder Automatisch (folgt Ihrem Gerät)."
 last_verified: 2026-07-02
 chatbot:
   triggers: ["dark mode", "light mode", "switch theme", "change theme", "night mode", "donkere modus", "thema wijzigen", "dunkler modus", "mode sombre"]

@@ -1,5 +1,6 @@
 ---
-title: Overdue invoices
+title: "Achterstallige facturen"
+description: "Om achterstallige facturen te bekijken en beheren: ga naar Facturen, filter op status Achterstallig, sorteer op vervaldatum."
 last_verified: 2026-05-09
 chatbot:
   triggers: ["overdue invoices", "late invoices", "unpaid invoices", "outstanding invoices", "invoices not paid", "achterstallige facturen", "onbetaalde facturen", "uberfaellige rechnungen", "factures impayees"]

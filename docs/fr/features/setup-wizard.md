@@ -1,5 +1,6 @@
 ---
 title: Assistant de configuration
+description: "L'assistant sur /setup construit votre première facture : il récupère vos données au registre KVK, remplit paiement et TVA et affiche un aperçu."
 last_verified: 2026-07-15
 ---
 

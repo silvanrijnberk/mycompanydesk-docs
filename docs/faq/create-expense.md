@@ -1,5 +1,6 @@
 ---
 title: "Uitgave aanmaken"
+description: "Zo voeg je een uitgave toe: ga naar Uitgaven en klik op Nieuwe uitgave."
 last_verified: 2026-05-09
 chatbot:
   triggers: ["create expense", "new expense", "add expense", "log expense", "record expense", "track expense", "uitgave toevoegen", "nieuwe uitgave", "uitgave aanmaken", "ausgabe hinzufugen", "wie erstelle ich eine ausgabe", "ajouter depense", "comment creer une depense"]

@@ -1,5 +1,6 @@
 ---
-title: "Edit a recurring invoice"
+title: "Modifier une facture récurrente"
+description: "Pour modifier un élément récurrent : allez dans Factures récurrentes (ou Dépenses), ouvrez l'élément récurrent, cliquez sur Modifier."
 last_verified: 2026-08-15
 chatbot:
   triggers:

@@ -1,5 +1,6 @@
 ---
-title: "Edit a customer"
+title: "Klant bewerken"
+description: "Om een klant te bewerken: ga naar Klanten en zoek de klant, klik op de klant om het profiel te openen, klik op Bewerken."
 last_verified: 2026-05-09
 chatbot:
   triggers:

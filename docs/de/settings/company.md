@@ -1,5 +1,6 @@
 ---
 title: Unternehmenseinstellungen
+description: "Der Name auf Ihren Rechnungen, Adresse und Handelsregisternummer, Logo und Markenfarbe sowie Ihre öffentliche Website, gebündelt in den Einstellungen."
 last_verified: 2026-07-02
 ---
 

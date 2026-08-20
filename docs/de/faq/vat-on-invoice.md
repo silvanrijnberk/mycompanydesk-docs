@@ -1,5 +1,6 @@
 ---
 title: "MwSt. auf einer Rechnung"
+description: "So legen Sie die MwSt. auf einer Rechnung fest: bearbeiten oder erstellen Sie eine Rechnung."
 last_verified: 2026-07-02
 chatbot:
   triggers: ["vat on invoice", "add vat to invoice", "tax rate invoice", "change vat rate", "btw op factuur", "btw tarief", "mwst auf rechnung", "tva sur facture"]

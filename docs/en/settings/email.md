@@ -1,5 +1,6 @@
 ---
 title: Email
+description: "Choose which address your invoices and quotes go out from and set the sign-off under every message. Available on every plan."
 last_verified: 2026-07-02
 ---
 

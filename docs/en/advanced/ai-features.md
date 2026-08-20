@@ -1,5 +1,6 @@
 ---
 title: AI Features
+description: "Every AI surface in MyCompanyDesk, what it does and which provider handles it. The default chain is EU-only: Gemini on Vertex AI europe-west1 first."
 last_verified: 2026-05-18
 ---
 

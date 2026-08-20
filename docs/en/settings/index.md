@@ -1,5 +1,6 @@
 ---
 title: Settings overview
+description: "Everything you can configure lives on one settings page, sorted into three plain-language groups, with every setting at most two clicks away."
 last_verified: 2026-08-05
 ---
 

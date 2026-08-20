@@ -1,5 +1,6 @@
 ---
 title: "Firmenadresse ändern"
+description: "So ändern Sie Ihre Firmenadresse: gehen Sie zu Einstellungen > Unternehmensdaten."
 last_verified: 2026-08-08
 chatbot:
   triggers:

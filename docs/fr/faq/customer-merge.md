@@ -1,5 +1,6 @@
 ---
-title: Merge customers
+title: "Fusionner des clients"
+description: "Pour fusionner des fiches clients en double : accédez à Clients, identifiez les doublons, ouvrez l'un des doublons."
 last_verified: 2026-05-09
 chatbot:
   triggers: ["merge customers", "duplicate customer", "combine customers", "customer duplicate", "klanten samenvoegen", "dubbele klant", "kunden zusammenfuhren", "fusionner clients", "doublons clients"]

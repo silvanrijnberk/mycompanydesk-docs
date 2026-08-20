@@ -1,5 +1,6 @@
 ---
 title: "Jahresübersicht"
+description: "So prüfen Sie ein ganzes Jahr in der App: öffnen Sie Berichte, stellen Sie den Zeitraumfilter auf Jahr und wählen Sie das gewünschte Jahr."
 last_verified: 2026-05-09
 chatbot:
   triggers:

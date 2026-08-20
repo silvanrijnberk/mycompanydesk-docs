@@ -1,5 +1,6 @@
 ---
 title: Tastenkombinationen
+description: "Die Tastenkürzel, die in MyCompanyDesk wirklich funktionieren, allen voran Cmd+K oder Strg+K für die Suchpalette."
 ---
 
 # Tastenkombinationen

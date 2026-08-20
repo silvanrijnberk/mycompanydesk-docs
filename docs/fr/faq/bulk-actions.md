@@ -1,5 +1,6 @@
 ---
-title: Bulk actions
+title: "Actions groupées"
+description: "Pour effectuer des actions en masse : accédez à la vue en liste (Factures, Dépenses ou Clients)."
 last_verified: 2026-05-09
 chatbot:
   triggers: ["bulk action", "bulk delete", "bulk send", "select multiple", "batch operation", "meerdere selecteren", "bulk verwijderen", "massenbearbeitung", "action en masse"]

@@ -1,5 +1,6 @@
 ---
 title: Invoice status
+description: "Invoice statuses explained: draft - not finalized yet, fully editable. It cannot be marked paid or recorded as paid until you finalize it; recording a."
 last_verified: 2026-08-15
 chatbot:
   triggers: ["invoice status", "invoice statuses", "what do invoice statuses mean", "draft sent paid", "invoice lifecycle", "factuurstatus", "factuur statussen", "rechnungsstatus", "statut facture"]

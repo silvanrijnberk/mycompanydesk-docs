@@ -1,5 +1,6 @@
 ---
-title: Edit a quote
+title: "Offerte bewerken"
+description: "Om een offerte te bewerken: open de offerte vanuit de lijst, klik op Bewerken (of ga naar /quotes/{id}/edit)."
 last_verified: 2026-05-09
 chatbot:
   triggers: ["edit quote", "change quote", "update quote", "modify quote", "correct quote", "offerte bewerken", "offerte wijzigen", "angebot bearbeiten", "devis modifier", "editar cotizacion", "editar proposta", "modificare preventivo"]

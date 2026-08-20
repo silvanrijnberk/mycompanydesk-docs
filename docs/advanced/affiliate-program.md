@@ -1,5 +1,6 @@
 ---
 title: Affiliateprogramma
+description: "Verdien commissie door bezoekers aan te brengen die een betaald abonnement nemen. Open voor uitgevers, vergelijkingssites, blogs en nieuwsbrieven."
 ---
 
 # Affiliateprogramma

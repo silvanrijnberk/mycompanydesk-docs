@@ -1,5 +1,6 @@
 ---
 title: Conception des PDF
+description: "Alignez vos PDF de facture, devis et rappel sur votre marque : une page pour le logo et la couleur, une autre pour le design avec aperçu en direct."
 ---
 
 # Conception des PDF

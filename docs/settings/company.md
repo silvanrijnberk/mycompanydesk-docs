@@ -1,5 +1,6 @@
 ---
 title: Bedrijfsinstellingen
+description: "De naam op je facturen, je adres en KvK-nummer, je logo en huisstijlkleur en je publieke website, gebundeld onder Je bedrijf in Instellingen."
 last_verified: 2026-07-02
 ---
 

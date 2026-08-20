@@ -1,5 +1,6 @@
 ---
 title: Duplicate expense
+description: "To duplicate an expense: open the paid expense you want to copy. Duplicate is only available on paid expenses; an unpaid expense shows Mark as Paid."
 last_verified: 2026-08-16
 chatbot:
   triggers: ["duplicate expense", "copy expense", "clone expense", "reuse expense", "uitgave kopieren", "uitgave dupliceren", "ausgabe kopieren", "dupliquer depense"]

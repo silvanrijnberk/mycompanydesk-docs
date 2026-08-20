@@ -1,5 +1,6 @@
 ---
 title: "Exporter des données"
+description: "Pour exporter des données : allez dans Paramètres > Télécharger les données pour les boutons d'export rapide."
 last_verified: 2026-07-02
 chatbot:
   triggers: ["export data", "download data", "export csv", "export excel", "download report", "data exporteren", "gegevens downloaden", "daten exportieren", "exporter donnees"]

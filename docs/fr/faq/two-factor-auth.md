@@ -1,5 +1,6 @@
 ---
 title: Authentification à deux facteurs
+description: "L'authentification à deux facteurs (2FA) ajoute un code à 6 chiffres issu d'une application d'authentification en plus de votre mot de passe."
 last_verified: 2026-07-10
 chatbot:
   triggers: ["two factor", "two-factor", "2fa", "two step", "authenticator", "mfa", "tweestapsverificatie", "twee-factor", "zwei faktor", "authentification deux facteurs", "double authentification"]

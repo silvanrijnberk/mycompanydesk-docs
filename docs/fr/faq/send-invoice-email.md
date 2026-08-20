@@ -1,5 +1,6 @@
 ---
-title: "Send an invoice by email"
+title: "Envoyer une facture par e-mail"
+description: "Pour envoyer une facture par e-mail : ouvrez la facture (elle doit être enregistrée), cliquez sur Envoyer ou le bouton e-mail."
 last_verified: 2026-05-09
 chatbot:
   triggers:

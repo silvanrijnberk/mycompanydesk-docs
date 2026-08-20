@@ -1,5 +1,6 @@
 ---
 title: "Ajouter un numéro de TVA"
+description: "Pour ajouter ou modifier le numéro de TVA de votre entreprise : allez dans Paramètres > Données de l'entreprise, remplissez-y le champ Numéro de TVA."
 last_verified: 2026-07-02
 chatbot:
   triggers:

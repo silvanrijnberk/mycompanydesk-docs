@@ -1,5 +1,6 @@
 ---
-title: "Quick search"
+title: "Snel zoeken"
+description: "Om snel te zoeken in de applicatie: gebruik de zoekbalk bovenaan de lijstweergaven, typ klantnamen, factuurnummers of bedragen."
 last_verified: 2026-05-09
 chatbot:
   triggers: ["quick search", "search everything", "global search", "find anything", "search bar", "snel zoeken", "overal zoeken", "schnellsuche", "recherche rapide", "recherche globale"]

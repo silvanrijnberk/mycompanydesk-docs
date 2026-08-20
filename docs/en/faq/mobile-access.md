@@ -1,5 +1,6 @@
 ---
 title: Mobile access
+description: "To access the app on mobile: open your mobile browser (Safari, Chrome, etc.), navigate to the same URL you use on desktop."
 last_verified: 2026-05-09
 chatbot:
   triggers: ["mobile", "phone", "tablet", "mobile app", "responsive", "on the go", "mobiel", "telefoon", "mobil", "handy", "acces mobile", "telephone", "smartphone"]

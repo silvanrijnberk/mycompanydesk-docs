@@ -1,5 +1,6 @@
 ---
 title: Numerisation de recus
+description: "Photographiez un reçu ou déposez un PDF, l'OCR assistée par IA remplit la dépense. Par mois : 3 scans en Gratuit, 30 en Starter, 200 en Pro."
 ---
 
 # Numerisation de recus

@@ -1,5 +1,6 @@
 ---
 title: "Mode sombre"
+description: "Pour changer de thème : allez dans Paramètres > Affichage, choisissez Clair, Sombre ou Automatique (suit votre appareil)."
 last_verified: 2026-07-02
 chatbot:
   triggers: ["dark mode", "light mode", "switch theme", "change theme", "night mode", "donkere modus", "thema wijzigen", "dunkler modus", "mode sombre"]

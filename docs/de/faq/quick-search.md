@@ -1,5 +1,6 @@
 ---
-title: "Quick search"
+title: "Schnellsuche"
+description: "Schnell suchen: Nutzen Sie die Suchleiste oben in den Listenansichten und geben Sie Kundennamen, Rechnungsnummern oder Beträge ein."
 last_verified: 2026-05-09
 chatbot:
   triggers: ["quick search", "search everything", "global search", "find anything", "search bar", "snel zoeken", "overal zoeken", "schnellsuche", "recherche rapide", "recherche globale"]

@@ -1,5 +1,6 @@
 ---
 title: "Billing and subscription help"
+description: "To reduce invoice entry mistakes in the app: open Customers and complete the billing email, address, VAT number, and default payment terms for the."
 last_verified: 2026-05-09
 chatbot:
   triggers:

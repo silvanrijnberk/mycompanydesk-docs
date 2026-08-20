@@ -1,5 +1,6 @@
 ---
 title: Change all prices at once
+description: "Go to Aanbod (the catalog of products and services you sell) and click Change prices (Prijzen aanpassen in the Dutch interface) to update many prices in."
 last_verified: 2026-08-06
 chatbot:
   triggers:

@@ -1,5 +1,6 @@
 ---
 title: Delete customer
+description: "To delete a customer: go to Customers and find the customer, open their profile, in the sidebar, scroll to the Danger Zone section, click Delete."
 last_verified: 2026-05-09
 chatbot:
   triggers: ["delete customer", "remove customer", "trash customer", "klant verwijderen", "klant wissen", "kunde loschen", "supprimer client"]

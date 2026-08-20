@@ -1,5 +1,6 @@
 ---
 title: Domains, Website und Posteingang
+description: "Eigene Domains, die gehostete Unternehmenswebsite und das gemeinsame Postfach kommen als ein Bündel, hinter custom_domains und public_business_page."
 last_verified: 2026-08-15
 ---
 

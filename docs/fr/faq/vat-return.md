@@ -1,5 +1,6 @@
 ---
-title: VAT return
+title: "Déclaration de TVA"
+description: "Pour consulter vos chiffres de TVA : ouvrez TVA, sélectionnez la période et consultez les totaux calculés et les factures ou dépenses liées."
 last_verified: 2026-05-09
 chatbot:
   triggers: ["vat return", "vat filing", "file vat", "prepare vat", "vat report", "btw aangifte", "btw indienen", "btw berekening", "mwst meldung", "declaration tva"]

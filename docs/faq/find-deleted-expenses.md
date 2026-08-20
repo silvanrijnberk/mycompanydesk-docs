@@ -1,5 +1,6 @@
 ---
 title: "Verwijderde uitgaven vinden"
+description: "Verwijderde uitgaven vind je onder Uitgaven > Prullenbak. Sta je al in de uitgavenlijst, schakel dan over naar de weergave Prullenbak."
 last_verified: 2026-08-16
 chatbot:
   triggers:

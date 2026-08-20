@@ -1,5 +1,6 @@
 ---
 title: "Dashboard nutzen"
+description: "Ihr Dashboard bietet einen schnellen Überblick über: eine Periodenauswahl für Monat, Quartal oder Jahr."
 last_verified: 2026-08-18
 chatbot:
   triggers:

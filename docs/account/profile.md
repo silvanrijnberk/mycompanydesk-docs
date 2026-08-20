@@ -1,5 +1,6 @@
 ---
 title: Je persoonlijke instellingen
+description: "Je naam, e-mailadres, wachtwoord en persoonlijke voorkeuren staan in de groep Over jou bovenaan Instellingen en bewaren zichzelf terwijl je typt."
 last_verified: 2026-08-10
 ---
 

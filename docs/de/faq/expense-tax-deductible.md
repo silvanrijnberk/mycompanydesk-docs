@@ -1,5 +1,6 @@
 ---
-title: Expense tax-deductible
+title: "Ausgabe abzugsfähig"
+description: "Abzugsfähigkeit erfassen: Öffnen Sie die Ausgabe, setzen Sie abzugsfähig oder nicht abzugsfähig und prüfen Sie Kategorie und MwSt-Einstellungen."
 last_verified: 2026-05-09
 chatbot:
   triggers: ["tax deductible", "deductible expenses", "which expenses deductible", "tax write off", "aftrekbare kosten", "welke kosten aftrekbaar", "absetzbare ausgaben", "depenses deductibles", "charges deductibles"]

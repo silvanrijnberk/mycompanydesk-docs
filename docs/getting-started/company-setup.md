@@ -1,5 +1,6 @@
 ---
 title: Je bedrijf instellen
+description: "De setupwizard vult je afzenderblok, betaalgegevens en BTW-status in rond je eerste factuur, met een KVK-opzoeking en een live voorbeeld."
 last_verified: 2026-07-21
 ---
 

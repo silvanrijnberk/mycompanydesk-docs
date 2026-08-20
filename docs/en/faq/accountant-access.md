@@ -1,5 +1,6 @@
 ---
 title: "Accountant access"
+description: "There are two ways accountant access can start: either you invite your accountant from your own workspace, or your accountant invites you to create a."
 last_verified: 2026-08-15
 chatbot:
   triggers:

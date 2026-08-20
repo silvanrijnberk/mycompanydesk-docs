@@ -1,5 +1,6 @@
 ---
-title: "Create a project"
+title: "Projekt erstellen"
+description: "So erstellen Sie ein Projekt: Gehen Sie zu Projekte, Neues Projekt, und tragen Sie Name, Nummer, Kunde, Status, Budget und Stundensatz ein."
 last_verified: 2026-05-09
 chatbot:
   triggers:

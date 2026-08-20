@@ -1,5 +1,6 @@
 ---
 title: Company Settings
+description: "The name on your invoices, your address and KvK number, your logo and brand colour, and your public website, grouped under Je bedrijf in Settings."
 last_verified: 2026-07-02
 ---
 

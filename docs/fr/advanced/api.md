@@ -1,5 +1,6 @@
 ---
 title: Intégration API
+description: "Accédez à vos factures, dépenses et clients par l'API REST avec un en-tête X-API-Key. L'accès API fait partie de l'abonnement Pro."
 ---
 
 # Intégration API

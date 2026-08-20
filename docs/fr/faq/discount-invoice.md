@@ -1,5 +1,6 @@
 ---
 title: "Remise sur une facture"
+description: "Pour appliquer une remise sur une facture : modifiez ou créez une facture, ajoutez une ligne séparée avec un montant négatif pour la remise."
 last_verified: 2026-07-02
 chatbot:
   triggers: ["discount", "add discount", "invoice discount", "percentage discount", "reduce price", "korting", "korting toevoegen", "rabatt", "rabatt gewahren", "remise", "reduction"]

@@ -1,5 +1,6 @@
 ---
 title: "Zugang für den Steuerberater"
+description: "Steuerberater-Zugang startet auf zwei Wegen: Sie laden Ihren Steuerberater aus Ihrem Arbeitsbereich ein, oder er lädt Sie aus seinem Portal ein."
 last_verified: 2026-08-15
 chatbot:
   triggers:

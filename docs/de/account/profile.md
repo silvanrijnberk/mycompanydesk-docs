@@ -1,5 +1,6 @@
 ---
 title: Ihre persönlichen Einstellungen
+description: "Name, E-Mail-Adresse, Passwort und persönliche Einstellungen stehen in der obersten Gruppe der Einstellungen und speichern sich beim Tippen selbst."
 last_verified: 2026-08-10
 ---
 

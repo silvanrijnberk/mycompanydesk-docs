@@ -1,5 +1,6 @@
 ---
-title: "Search invoices"
+title: "Rechnungen suchen"
+description: "Eine bestimmte Rechnung finden: Gehen Sie zu Rechnungen, suchen Sie nach Rechnungsnummer, Kundenname oder Betrag und filtern Sie nach Status."
 last_verified: 2026-05-09
 chatbot:
   triggers: ["search invoices", "find invoice", "filter invoices", "sort invoices", "search invoice", "look up invoice", "factuur zoeken", "facturen filteren", "rechnung suchen", "chercher facture"]

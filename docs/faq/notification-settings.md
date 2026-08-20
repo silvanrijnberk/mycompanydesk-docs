@@ -1,5 +1,6 @@
 ---
 title: "Meldingsinstellingen"
+description: "Om je meldingsinstellingen te beheren: ga naar Instellingen > Meldingen, zet de meldingsonderwerpen aan of uit. De categorieën zijn: aandacht voor."
 last_verified: 2026-08-19
 chatbot:
   triggers:

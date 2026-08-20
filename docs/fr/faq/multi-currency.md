@@ -1,5 +1,6 @@
 ---
 title: "Plusieurs devises"
+description: "MyCompanyDesk fonctionne uniquement en euros. Toutes les factures, tous les devis, toutes les dépenses et tous les rapports sont en EUR."
 last_verified: 2026-07-02
 chatbot:
   triggers: ["multi currency", "different currency", "foreign currency", "invoice in dollars", "invoice in pounds", "andere valuta", "vreemde valuta", "andere wahrung", "devise etrangere", "dollar invoice", "pound invoice"]

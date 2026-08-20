@@ -1,5 +1,6 @@
 ---
 title: Documents
+description: "Store, track and digitally sign agreements without a price attached, such as general terms, NDAs and data-processing agreements."
 ---
 
 # Documents

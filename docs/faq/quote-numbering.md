@@ -1,5 +1,6 @@
 ---
 title: "Offertenummering"
+description: "Offertenummers worden automatisch toegekend: maak een offerte; MyCompanyDesk geeft die het volgende nummer in je reeks."
 last_verified: 2026-08-05
 chatbot:
   triggers:

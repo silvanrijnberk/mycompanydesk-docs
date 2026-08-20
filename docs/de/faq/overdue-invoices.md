@@ -1,5 +1,6 @@
 ---
-title: Overdue invoices
+title: "Überfällige Rechnungen"
+description: "Überfällige Rechnungen verwalten: Gehen Sie zu Rechnungen, filtern Sie nach Status Überfällig, sortieren Sie nach Fälligkeitsdatum und mahnen Sie."
 last_verified: 2026-05-09
 chatbot:
   triggers: ["overdue invoices", "late invoices", "unpaid invoices", "outstanding invoices", "invoices not paid", "achterstallige facturen", "onbetaalde facturen", "uberfaellige rechnungen", "factures impayees"]

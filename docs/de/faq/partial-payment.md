@@ -1,5 +1,6 @@
 ---
-title: "Partial payment"
+title: "Teilzahlung"
+description: "Teilzahlung erfassen: Öffnen Sie die Rechnung aus der Liste, klicken Sie auf Zahlung erfassen und geben Sie den erhaltenen Betrag ein."
 last_verified: 2026-05-09
 chatbot:
   triggers: ["partial payment", "record partial payment", "half payment", "part payment", "deposit received", "gedeeltelijke betaling", "deelbetaling", "aanbetaling ontvangen", "teilzahlung", "paiement partiel", "acompte recu"]

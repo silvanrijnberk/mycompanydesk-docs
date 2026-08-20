@@ -1,5 +1,6 @@
 ---
 title: Setup wizard
+description: "The wizard at /setup builds your first invoice: it pulls your details from the KVK register, fills in payment and VAT, and previews the invoice live."
 last_verified: 2026-07-15
 ---
 

@@ -1,5 +1,6 @@
 ---
 title: Terugkerende uitgaven
+description: "Automatiseer vaste kosten zoals huur, abonnementen, verzekeringen en nutsvoorzieningen met sjablonen die volgens schema uitgaven aanmaken."
 ---
 
 # Terugkerende uitgaven

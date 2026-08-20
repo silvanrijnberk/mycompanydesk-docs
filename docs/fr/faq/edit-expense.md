@@ -1,5 +1,6 @@
 ---
-title: Edit an expense
+title: "Modifier une dépense"
+description: "Pour modifier une dépense : ouvrez la dépense depuis la liste, cliquez sur Modifier."
 last_verified: 2026-08-16
 chatbot:
   triggers: ["edit expense", "change expense", "modify expense", "update expense", "correct expense", "uitgave bewerken", "uitgave wijzigen", "ausgabe bearbeiten", "modifier depense"]

@@ -1,5 +1,6 @@
 ---
 title: "Add VAT number"
+description: "To add or change your company VAT number: go to Settings > Bedrijfsgegevens (business details), fill in the VAT number field there."
 last_verified: 2026-07-02
 chatbot:
   triggers:

@@ -1,5 +1,6 @@
 ---
 title: Security
+description: "Protect your account with a strong password, two-factor authentication and an eye on active sessions, all under Settings, Inloggen."
 last_verified: 2026-07-10
 ---
 

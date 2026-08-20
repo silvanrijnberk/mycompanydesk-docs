@@ -1,5 +1,6 @@
 ---
 title: "Logo hinzufügen"
+description: "So fügen Sie Ihr Firmenlogo hinzu oder ändern es: gehen Sie zu Einstellungen > Logo und Farbe, suchen Sie den Bereich Logo."
 last_verified: 2026-07-02
 chatbot:
   triggers: ["add logo", "upload logo", "change logo", "company logo", "logo on invoice", "logo toevoegen", "logo wijzigen", "logo uploaden", "logo hochladen", "ajouter logo"]

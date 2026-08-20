@@ -1,5 +1,6 @@
 ---
-title: API keys
+title: "API-Schlüssel"
+description: "API-Schlüssel verwalten: Gehen Sie zu Arbeitsbereich-Einstellungen, API-Schlüssel, erstellen Sie einen Schlüssel und kopieren Sie ihn sofort."
 last_verified: 2026-05-09
 chatbot:
   triggers: ["api key", "api keys", "api access", "integration", "api token", "connect api", "api instellen", "api schlussel", "cle api"]

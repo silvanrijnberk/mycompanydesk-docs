@@ -1,5 +1,6 @@
 ---
 title: "Rechnung bearbeiten"
+description: "So bearbeiten Sie eine Rechnung: öffnen Sie die Rechnung aus der Liste."
 last_verified: 2026-07-02
 chatbot:
   triggers: ["edit invoice", "change invoice", "modify invoice", "update invoice", "correct invoice", "fix invoice", "factuur bewerken", "factuur wijzigen", "factuur aanpassen", "hoe bewerk ik een factuur", "rechnung bearbeiten", "wie bearbeite ich eine rechnung", "modifier facture"]

@@ -1,5 +1,6 @@
 ---
-title: Send a quote
+title: "Offerte versturen"
+description: "Om een offerte per e-mail te versturen: open de offerte-detailpagina, klik op Versturen, controleer e-mailpreview en ontvanger, bevestig verzending."
 last_verified: 2026-05-09
 chatbot:
   triggers: ["send quote", "email quote", "send proposal", "deliver quote", "quote email", "offerte versturen", "devis envoyer", "angebot senden", "enviar cotizacion", "enviar proposta", "inviare preventivo"]

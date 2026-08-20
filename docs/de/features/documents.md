@@ -1,5 +1,6 @@
 ---
 title: Dokumente
+description: "Speichern, verfolgen und digital unterschreiben Sie Vereinbarungen ohne Preis, etwa AGB, Geheimhaltungs- und Auftragsverarbeitungsvereinbarungen."
 ---
 
 # Dokumente

@@ -1,5 +1,6 @@
 ---
 title: "Échec d'envoi d'une facture"
+description: "Pour résoudre l'échec d'envoi d'une facture par e-mail : vérifiez que la fiche client contient la bonne adresse e-mail."
 last_verified: 2026-07-02
 chatbot:
   triggers: ["failed invoice email", "invoice email failed", "failed send invoice", "invoice not sending", "invoice email issue", "fix failed invoice email", "mislukte factuur-e-mail", "factuurmail mislukt", "factuur e-mail mislukt", "factuur versturen mislukt", "hoe los ik een mislukte factuur-e-mail op", "fehlgeschlagene rechnungs-e-mail", "rechnungs-e-mail fehlgeschlagen", "rechnung senden fehlgeschlagen", "wie behebe ich eine fehlgeschlagene rechnungs-e-mail", "e-mail de facture echoue", "email facture echoue", "envoi facture echec", "comment corriger un e-mail de facture echoue"]

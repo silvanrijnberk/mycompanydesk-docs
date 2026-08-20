@@ -1,5 +1,6 @@
 ---
 title: Belegscanner
+description: "Fotografieren Sie einen Beleg oder laden Sie ein PDF hoch, KI-gestützte OCR füllt die Ausgabe aus. Pro Monat: 3 Scans mit Gratis, 30 Starter, 200 Pro."
 ---
 
 # Belegscanner

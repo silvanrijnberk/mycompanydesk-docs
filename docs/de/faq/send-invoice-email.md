@@ -1,5 +1,6 @@
 ---
-title: "Send an invoice by email"
+title: "Rechnung per E-Mail senden"
+description: "Rechnung per E-Mail senden: Öffnen Sie die gespeicherte Rechnung, klicken Sie auf Senden, prüfen Sie die Nachricht an die Kunden-E-Mail und senden Sie."
 last_verified: 2026-05-09
 chatbot:
   triggers:

@@ -1,5 +1,6 @@
 ---
 title: Gestion de la TVA
+description: "Suivez la TVA collectée et payée, préparez votre déclaration et gardez une longueur d'avance sur les échéances, selon les règles de votre pays."
 ---
 
 <!-- TODO(source-missing): RichardTool 5407b44 added historical Dutch VAT rates 6% and 19% to the valid invoice/quote/contract/recurring-invoice/catalog rate set. sources/vat-rates.yaml#countries.NL does not yet list those rates, so do not document the full valid set until the source is updated. -->

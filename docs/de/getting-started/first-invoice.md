@@ -1,5 +1,6 @@
 ---
 title: Ihre erste Rechnung
+description: "Schritt für Schritt zur ersten Rechnung: von Ihren Unternehmensdaten über den Kunden bis zum Versand."
 ---
 
 # Ihre erste Rechnung

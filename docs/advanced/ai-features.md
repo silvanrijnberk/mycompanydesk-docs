@@ -1,5 +1,6 @@
 ---
 title: AI-functies
+description: "Elke AI-functie in MyCompanyDesk, wat hij doet en welke aanbieder hem draait. De standaardketen is EU-only: eerst Gemini op Vertex AI europe-west1."
 ---
 
 # AI-functies

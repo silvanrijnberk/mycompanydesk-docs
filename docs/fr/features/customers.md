@@ -1,5 +1,6 @@
 ---
 title: Clients
+description: "Gérez votre base clients, avec tuiles de segments, recherche et filtres, et chaque facture, devis et projet rattaché à une fiche client."
 ---
 
 # Clients

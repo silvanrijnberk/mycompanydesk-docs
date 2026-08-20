@@ -1,5 +1,6 @@
 ---
 title: Doorsturen naar boekhouder
+description: "Stuur facturen en uitgaven automatisch door naar het pakket van je boekhouder, zoals Exact, SnelStart, Twinfield of Yuki, in plaats van stuk voor stuk."
 last_verified: 2026-08-19
 ---
 

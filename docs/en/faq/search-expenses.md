@@ -1,5 +1,6 @@
 ---
 title: Search expenses
+description: "To search and filter expenses: go to Expenses, use the search bar to find by supplier, description, or category."
 last_verified: 2026-05-09
 chatbot:
   triggers: ["search expenses", "find expense", "filter expenses", "sort expenses", "uitgave zoeken", "uitgaven filteren", "ausgabe suchen", "chercher depense"]

@@ -1,5 +1,6 @@
 ---
 title: "Company setup"
+description: "Here's a first-time setup checklist. Everything lives under Settings (Instellingen): go to Settings > Bedrijfsgegevens (business details) and add your."
 last_verified: 2026-07-02
 chatbot:
   triggers: ["set up company", "company setup", "company settings", "first setup", "getting started", "initial setup", "how to start", "where to begin", "bedrijf instellen", "aan de slag", "unternehmen einrichten", "configurer entreprise"]

@@ -1,5 +1,6 @@
 ---
 title: "Sauvegarde des données"
+description: "Pour sauvegarder vos données : allez dans Paramètres > Télécharger les données."
 last_verified: 2026-07-02
 chatbot:
   triggers:

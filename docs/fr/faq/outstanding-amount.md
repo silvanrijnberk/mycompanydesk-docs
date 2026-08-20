@@ -1,5 +1,6 @@
 ---
 title: "Montant impayé"
+description: "Pour voir le total des montants impayés : allez dans Factures et filtrez sur Ouvert, Envoyée ou En retard."
 last_verified: 2026-07-02
 chatbot:
   triggers: ["outstanding amount", "total unpaid", "money owed", "total outstanding", "how much owed", "openstaand bedrag", "totaal onbetaald", "offener betrag", "montant impaye", "somme due"]

@@ -1,5 +1,6 @@
 ---
 title: Mark an invoice as paid
+description: "To mark an invoice as paid: open it from the list and click Mark as paid in the header. The status flips to Paid and a full payment is recorded."
 last_verified: 2026-07-02
 chatbot:
   triggers: ["mark invoice paid", "invoice paid", "mark as paid", "record payment", "received payment", "payment received", "factuur betaald", "betaald markeren", "factuur als betaald", "rechnung als bezahlt", "marquer payee"]

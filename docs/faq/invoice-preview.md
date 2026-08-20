@@ -1,5 +1,6 @@
 ---
-title: "Invoice preview"
+title: "Factuurvoorbeeld"
+description: "Om een factuur te bekijken vóór verzending: open de factuur, klik op het Voorbeeld of PDF-icoon, een voorbeeld van de factuur-PDF wordt weergegeven."
 last_verified: 2026-08-18
 chatbot:
   triggers:

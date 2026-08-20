@@ -1,5 +1,6 @@
 ---
 title: Datumnotatie wijzigen
+description: "Datums, tijden en getallen volgen in MyCompanyDesk de Nederlandse notatie en zijn niet aan te passen. Er is geen instelling voor datum- of getalnotatie."
 last_verified: 2026-08-14
 chatbot:
   triggers: ["date format", "change date format", "number format", "decimal format", "datumformaat", "datumformaat wijzigen", "datumsformat", "format date", "format nombre"]

@@ -1,5 +1,6 @@
 ---
 title: "Klant verwijderen"
+description: "Om een klant te verwijderen: ga naar Klanten en zoek de klant, open het profiel, scroll in de zijbalk naar de sectie Gevarenzone, klik op Verwijderen."
 last_verified: 2026-05-09
 chatbot:
   triggers: ["delete customer", "remove customer", "trash customer", "klant verwijderen", "klant wissen", "kunde loschen", "supprimer client"]

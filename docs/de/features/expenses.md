@@ -1,5 +1,6 @@
 ---
 title: Ausgaben
+description: "Erfassen Sie Ausgaben, scannen Sie Belege, verwalten Sie Kategorien mit eigenen Steuersätzen und lassen Sie Abschreibungen automatisch laufen."
 last_verified: 2026-08-15
 ---
 

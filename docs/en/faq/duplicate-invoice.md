@@ -1,5 +1,6 @@
 ---
 title: Duplicate an invoice
+description: "To duplicate an invoice: open the invoice you want to copy, in the sidebar, find the Actions section, click Duplicate."
 last_verified: 2026-08-17
 chatbot:
   triggers: ["duplicate invoice", "copy invoice", "clone invoice", "reuse invoice", "invoice template", "factuur kopieren", "factuur dupliceren", "rechnung kopieren", "dupliquer facture"]

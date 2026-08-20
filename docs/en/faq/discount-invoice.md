@@ -1,5 +1,6 @@
 ---
 title: Apply a discount to an invoice
+description: "To add a discount to an invoice: edit or create an invoice, add a separate line item with a negative amount for the discount."
 last_verified: 2026-07-02
 chatbot:
   triggers: ["discount", "add discount", "invoice discount", "percentage discount", "reduce price", "korting", "korting toevoegen", "rabatt", "rabatt gewahren", "remise", "reduction"]

@@ -1,5 +1,6 @@
 ---
 title: "Trouver les devis archivés"
+description: "Les devis archivés se trouvent dans Devis > Archives. Si vous êtes déjà dans la liste des devis, passez à la vue Archives."
 last_verified: 2026-05-09
 chatbot:
   triggers: ["where are archived quotes", "where can i find archived quotes", "where do i find archived quotes", "quote archive", "archived quotes", "gearchiveerde offertes", "offertes archief", "archivierte angebote", "archivierten angebote", "angebote archiv", "devis archives", "mes devis archives", "archives devis"]

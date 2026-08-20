@@ -1,5 +1,6 @@
 ---
 title: "BTW op een factuur"
+description: "Zo stel je BTW in op een factuur: bewerk of maak een factuur."
 last_verified: 2026-07-02
 chatbot:
   triggers: ["vat on invoice", "add vat to invoice", "tax rate invoice", "change vat rate", "btw op factuur", "btw tarief", "mwst auf rechnung", "tva sur facture"]

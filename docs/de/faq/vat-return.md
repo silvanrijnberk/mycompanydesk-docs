@@ -1,5 +1,6 @@
 ---
-title: VAT return
+title: "Umsatzsteuererklärung"
+description: "MwSt-Zahlen prüfen: Öffnen Sie MwSt, wählen Sie den Zeitraum und kontrollieren Sie die berechneten Summen samt der zugrunde liegenden Belege."
 last_verified: 2026-05-09
 chatbot:
   triggers: ["vat return", "vat filing", "file vat", "prepare vat", "vat report", "btw aangifte", "btw indienen", "btw berekening", "mwst meldung", "declaration tva"]
