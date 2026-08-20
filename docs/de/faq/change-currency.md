@@ -1,5 +1,6 @@
 ---
 title: Währung ändern
+description: "Es gibt keine Währungseinstellung. MyCompanyDesk arbeitet bewusst nur in Euro: Rechnungen, Angebote, Ausgaben und Berichte laufen alle in EUR."
 last_verified: 2026-07-02
 chatbot:
   triggers: ["change currency", "set currency", "currency settings", "euro dollar", "valuta wijzigen", "valuta instellen", "wahrung andern", "changer devise"]

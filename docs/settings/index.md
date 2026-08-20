@@ -1,5 +1,6 @@
 ---
 title: Overzicht van de instellingen
+description: "Alles wat je kunt instellen staat op een instellingenpagina, verdeeld over drie groepen in gewone taal, en elke instelling is hooguit twee klikken weg."
 last_verified: 2026-08-05
 ---
 

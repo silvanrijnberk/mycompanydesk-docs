@@ -1,5 +1,6 @@
 ---
 title: "Rechnung erstellen"
+description: "So erstellen Sie eine Rechnung: gehen Sie zu Rechnungen und öffnen Sie Neue Rechnung."
 last_verified: 2026-07-02
 chatbot:
   triggers: ["create invoice", "new invoice", "make invoice", "add invoice", "write invoice", "send invoice", "first invoice", "how to invoice", "maak factuur", "nieuwe factuur", "factuur maken", "factuur aanmaken", "hoe maak ik een factuur", "rechnung erstellen", "wie erstelle ich eine rechnung", "neue rechnung", "creer facture", "comment creer une facture"]

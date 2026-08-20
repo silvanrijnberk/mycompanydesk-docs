@@ -1,5 +1,6 @@
 ---
-title: Split an expense
+title: "Répartir une dépense"
+description: "Pour répartir une dépense sur plusieurs catégories : ouvrez la dépense en mode édition et attribuez une catégorie différente à chaque ligne."
 last_verified: 2026-05-09
 chatbot:
   triggers: ["split expense", "divide expense", "expense between categories", "allocate expense", "expense allocation", "uitgave splitsen", "uitgave verdelen", "ausgabe aufteilen", "repartir depense"]

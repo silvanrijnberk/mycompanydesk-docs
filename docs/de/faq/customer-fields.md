@@ -1,5 +1,6 @@
 ---
-title: "Customer fields"
+title: "Kundenfelder"
+description: "Die Kundenfelder, die die App am häufigsten nutzt: Name auf Rechnungen und Angeboten, E-Mail für den Versand, Adressfelder und die USt-IdNr."
 last_verified: 2026-05-09
 chatbot:
   triggers:

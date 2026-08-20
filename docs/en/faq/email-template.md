@@ -1,5 +1,6 @@
 ---
 title: Email templates
+description: "Email templates cannot be edited. MyCompanyDesk uses fixed, well-tested texts for invoice, credit note, quote and reminder emails."
 last_verified: 2026-08-14
 chatbot:
   triggers: ["email template", "customize email", "invoice email message", "email text", "change email message", "email sjabloon", "email aanpassen", "e-mail vorlage", "modele email", "personnaliser email"]

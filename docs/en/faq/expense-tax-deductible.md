@@ -1,5 +1,6 @@
 ---
 title: Expense tax-deductible
+description: "To track deductibility in the app: open the expense, use the deductible/non-deductible toggle for that record."
 last_verified: 2026-05-09
 chatbot:
   triggers: ["tax deductible", "deductible expenses", "which expenses deductible", "tax write off", "aftrekbare kosten", "welke kosten aftrekbaar", "absetzbare ausgaben", "depenses deductibles", "charges deductibles"]

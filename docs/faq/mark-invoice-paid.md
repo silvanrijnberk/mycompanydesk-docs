@@ -1,5 +1,6 @@
 ---
 title: "Factuur als betaald markeren"
+description: "Zo markeer je een factuur als betaald: open de factuur vanuit de lijst."
 last_verified: 2026-07-02
 chatbot:
   triggers: ["mark invoice paid", "invoice paid", "mark as paid", "record payment", "received payment", "payment received", "factuur betaald", "betaald markeren", "factuur als betaald", "rechnung als bezahlt", "marquer payee"]

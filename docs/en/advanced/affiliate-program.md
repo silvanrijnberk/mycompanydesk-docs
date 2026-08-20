@@ -1,5 +1,6 @@
 ---
 title: Affiliate Program
+description: "Earn commission by referring paying MyCompanyDesk subscribers. Open to publishers, comparison sites, blogs and newsletters, no account needed."
 ---
 
 # Affiliate Program

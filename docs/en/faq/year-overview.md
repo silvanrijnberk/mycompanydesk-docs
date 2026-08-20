@@ -1,5 +1,6 @@
 ---
 title: "Year overview"
+description: "To review a full year in the app: open Reports, set the period filter to Year and pick the year you want to inspect."
 last_verified: 2026-05-09
 chatbot:
   triggers:

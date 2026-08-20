@@ -1,5 +1,6 @@
 ---
 title: E-Mail
+description: "Legen Sie fest, von welcher Adresse Rechnungen und Angebote ausgehen, und setzen Sie die Grußformel unter jeder Nachricht. In jedem Abo enthalten."
 ---
 
 # E-Mail

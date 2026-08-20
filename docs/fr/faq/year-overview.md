@@ -1,5 +1,6 @@
 ---
 title: "Aperçu annuel"
+description: "Pour examiner une année complète dans l'application : ouvrez Rapports, réglez le filtre de période sur Année et choisissez l'année à examiner."
 last_verified: 2026-05-09
 chatbot:
   triggers:

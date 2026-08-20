@@ -1,5 +1,6 @@
 ---
-title: "Customer fields"
+title: "Klantvelden"
+description: "De klantvelden die de app het vaakst gebruikt zijn: klant- of bedrijfsnaam - zichtbaar op facturen en offertes."
 last_verified: 2026-05-09
 chatbot:
   triggers:

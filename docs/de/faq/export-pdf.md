@@ -1,5 +1,6 @@
 ---
 title: "Als PDF exportieren"
+description: "So exportieren oder laden Sie ein PDF herunter: öffnen Sie die Rechnung aus der Liste, klicken Sie auf die PDF-Vorschau- oder Download-Schaltfläche."
 last_verified: 2026-07-02
 chatbot:
   triggers:

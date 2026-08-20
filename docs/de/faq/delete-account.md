@@ -1,5 +1,6 @@
 ---
 title: Konto löschen
+description: "So löschen Sie Ihr Konto: laden Sie zuerst Ihre Daten über Einstellungen > Daten herunterladen herunter, wenn Sie eine Kopie behalten möchten."
 last_verified: 2026-07-02
 chatbot:
   triggers: ["delete account", "close account", "remove account", "cancel subscription", "account verwijderen", "account opzeggen", "konto loschen", "supprimer compte", "resilier abonnement"]

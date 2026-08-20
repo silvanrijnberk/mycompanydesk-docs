@@ -1,5 +1,6 @@
 ---
 title: "Gearchiveerde offertes vinden"
+description: "Gearchiveerde offertes vind je onder Offertes > Archief. Sta je al in de offertelijst, schakel dan over naar de weergave Archief."
 last_verified: 2026-05-09
 chatbot:
   triggers: ["where are archived quotes", "where can i find archived quotes", "where do i find archived quotes", "quote archive", "archived quotes", "gearchiveerde offertes", "offertes archief", "archivierte angebote", "archivierten angebote", "angebote archiv", "devis archives", "mes devis archives", "archives devis"]

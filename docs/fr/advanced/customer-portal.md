@@ -1,5 +1,6 @@
 ---
 title: Portail client
+description: "Chaque facture envoyée porte un lien de paiement vers un portail sécurisé à vos couleurs, où votre client consulte, télécharge et paie en ligne."
 ---
 
 # Portail client

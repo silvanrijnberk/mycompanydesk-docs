@@ -1,5 +1,6 @@
 ---
 title: Einführung
+description: "MyCompanyDesk ist eine All-in-one-Plattform für Buchhaltung und Unternehmensführung für Selbstständige, kleine Firmen und Immobilienverwalter."
 ---
 
 # Einführung

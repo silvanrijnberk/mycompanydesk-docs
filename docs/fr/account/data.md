@@ -1,5 +1,6 @@
 ---
 title: Import et export de données
+description: "Importez clients, factures et dépenses depuis un CSV, et exportez vos données pour les sauvegarder ou les utiliser dans un autre outil."
 last_verified: 2026-07-02
 ---
 

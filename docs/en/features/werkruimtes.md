@@ -1,5 +1,6 @@
 ---
 title: Workspaces
+description: "One central page for every workspace you manage, your own businesses and client administrations, without ever mixing your own money with client money."
 last_verified: 2026-08-10
 ---
 

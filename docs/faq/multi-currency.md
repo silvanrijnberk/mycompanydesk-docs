@@ -1,5 +1,6 @@
 ---
 title: "Meerdere valuta"
+description: "MyCompanyDesk werkt uitsluitend in euro's. Alle facturen, offertes, uitgaven en rapportages staan in EUR."
 last_verified: 2026-07-02
 chatbot:
   triggers: ["multi currency", "different currency", "foreign currency", "invoice in dollars", "invoice in pounds", "andere valuta", "vreemde valuta", "andere wahrung", "devise etrangere", "dollar invoice", "pound invoice"]

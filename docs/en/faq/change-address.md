@@ -1,5 +1,6 @@
 ---
 title: "Change your address"
+description: "To change your company address: go to Settings > Bedrijfsgegevens (business details)."
 last_verified: 2026-08-08
 chatbot:
   triggers:

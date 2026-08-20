@@ -1,5 +1,6 @@
 ---
 title: "Changer la langue"
+description: "Vous pouvez changer la langue de l'interface dans vos paramètres d'affichage : néerlandais, anglais, allemand ou français."
 last_verified: 2026-07-02
 chatbot:
   triggers:

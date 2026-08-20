@@ -1,5 +1,6 @@
 ---
-title: "Automatic recurring expenses"
+title: "Automatisch terugkerende uitgaven"
+description: "Om automatisch terugkerende uitgaven in te stellen: ga naar Terugkerende uitgaven, klik op Nieuwe terugkerende uitgave."
 last_verified: 2026-05-09
 chatbot:
   triggers:

@@ -1,5 +1,6 @@
 ---
 title: Facturen
+description: "Maak professionele facturen, verstuur ze met betaallinks en volg ze van concept via openstaand tot betaald, met filters op elke status."
 ---
 
 # Facturen

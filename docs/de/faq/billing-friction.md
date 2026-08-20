@@ -1,5 +1,6 @@
 ---
-title: "Billing and subscription help"
+title: "Hilfe zu Rechnung und Abonnement"
+description: "Weniger Rechnungsfehler: Ergänzen Sie beim Kunden Rechnungs-E-Mail, Adresse, USt-Nummer und Zahlungsbedingungen und nutzen Sie ihn beim Erstellen."
 last_verified: 2026-05-09
 chatbot:
   triggers:

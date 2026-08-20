@@ -1,5 +1,6 @@
 ---
-title: "Edit a recurring invoice"
+title: "Wiederkehrende Rechnung bearbeiten"
+description: "Wiederkehrende Rechnung oder Ausgabe ändern: Öffnen Sie den Eintrag und klicken Sie auf Bearbeiten, künftige Erzeugungen nutzen die neue Vorlage."
 last_verified: 2026-08-15
 chatbot:
   triggers:

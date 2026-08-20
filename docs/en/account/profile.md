@@ -1,5 +1,6 @@
 ---
 title: Your personal settings
+description: "Your name, email address, password and personal preferences live in the Over jou group at the top of Settings and save while you type."
 last_verified: 2026-08-10
 ---
 

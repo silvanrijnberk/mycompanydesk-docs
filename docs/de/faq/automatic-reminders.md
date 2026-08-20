@@ -1,5 +1,6 @@
 ---
 title: "Automatische Erinnerungen"
+description: "So richten Sie automatische Zahlungserinnerungen ein: gehen Sie zu Einstellungen > Rechnungen und Angebote."
 last_verified: 2026-08-16
 chatbot:
   triggers: ["automatic reminders", "auto reminder", "scheduled reminders", "reminder automation", "automatische herinnering", "herinneringen instellen", "automatische erinnerung", "rappels automatiques"]

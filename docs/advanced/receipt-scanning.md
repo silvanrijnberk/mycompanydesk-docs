@@ -1,5 +1,6 @@
 ---
 title: Bonnen scannen
+description: "Fotografeer een bon of upload een PDF en AI-gestuurde OCR vult de uitgave in. Per maand: 3 scans op Gratis, 30 op Starter en 200 op Pro."
 ---
 
 # Bonnen scannen

@@ -1,5 +1,6 @@
 ---
-title: Send reminder
+title: "Envoyer un rappel"
+description: "Pour relancer une facture impayée : ouvrez-la et utilisez l'action Envoyer un rappel. Le rappel indique le montant restant dû."
 last_verified: 2026-08-16
 chatbot:
   triggers: ["send reminder", "payment reminder", "remind customer", "follow up", "chase payment", "herinnering sturen", "betaalherinnering", "aanmaning", "zahlungserinnerung", "relance", "rappel paiement"]

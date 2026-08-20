@@ -1,5 +1,6 @@
 ---
 title: Cookies et analytics
+description: "Comment MyCompanyDesk utilise les cookies, le stockage local et les analytics sur le site vitrine et dans l'app, et comment changer votre choix."
 last_verified: 2026-07-14
 ---
 

@@ -1,5 +1,6 @@
 ---
 title: Domeinen, website en inbox
+description: "Eigen domeinen, de gehoste bedrijfswebsite en de gedeelde inbox komen als een bundel, achter de vlaggen custom_domains en public_business_page."
 last_verified: 2026-08-15
 ---
 

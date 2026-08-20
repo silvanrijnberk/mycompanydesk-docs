@@ -1,5 +1,6 @@
 ---
 title: "Trouver les clients supprimés"
+description: "Les clients supprimés se trouvent dans Clients > Corbeille. Si vous êtes déjà dans la liste des clients, passez à la vue Corbeille."
 last_verified: 2026-05-09
 chatbot:
   triggers: ["where are deleted customers", "where can i find deleted customers", "where do i find deleted customers", "customer trash", "trashed customers", "deleted customers", "verwijderde klanten", "klanten prullenbak", "geloschte kunden", "geloeschte kunden", "geloeschten kunden", "kunden papierkorb", "clients supprimes", "mes clients supprimes", "corbeille clients"]

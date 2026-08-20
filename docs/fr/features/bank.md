@@ -1,5 +1,6 @@
 ---
 title: Flux bancaire
+description: "Reliez votre compte bancaire pour que les transactions arrivent seules. Des règles créent des brouillons de dépense que vous validez avant écriture."
 ---
 
 # Flux bancaire

@@ -1,5 +1,6 @@
 ---
 title: "Date d'échéance d'une facture"
+description: "Pour modifier l'échéance d'une seule facture : ouvrez la facture en mode édition."
 last_verified: 2026-07-02
 chatbot:
   triggers: ["set due date", "change due date", "payment terms", "payment deadline", "when invoice due", "net 30", "net 14", "vervaldatum", "betaaltermijn", "zahlungsfrist", "echeance", "date d echeance", "conditions de paiement", "modifier conditions de paiement", "changer conditions de paiement", "comment modifier les conditions de paiement", "comment changer les conditions de paiement"]

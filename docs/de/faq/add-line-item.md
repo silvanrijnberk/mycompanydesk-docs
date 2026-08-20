@@ -1,5 +1,6 @@
 ---
-title: Add line item
+title: "Position hinzufügen"
+description: "Positionen einer Rechnung ändern: Öffnen Sie die Rechnung im Bearbeitungsmodus und pflegen Sie Beschreibung, Menge, Einzelpreis und MwSt-Satz."
 last_verified: 2026-05-09
 chatbot:
   triggers: ["add line item", "edit line item", "remove line item", "invoice line", "add row", "new line", "factuurregel toevoegen", "regel bewerken", "rechnungsposition", "ligne de facture", "ajouter ligne"]

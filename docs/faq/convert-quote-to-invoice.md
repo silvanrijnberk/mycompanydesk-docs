@@ -1,5 +1,6 @@
 ---
-title: "Convert a quote to an invoice"
+title: "Offerte omzetten naar factuur"
+description: "Om een offerte om te zetten naar een factuur: open de offerte-detailpagina, klik op Factuur maken vanuit offerte."
 last_verified: 2026-05-09
 chatbot:
   triggers:

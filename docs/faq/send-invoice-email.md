@@ -1,5 +1,6 @@
 ---
-title: "Send an invoice by email"
+title: "Factuur per e-mail versturen"
+description: "Om een factuur per e-mail te versturen: open de factuur (moet eerst opgeslagen zijn), klik op Versturen of de e-mailknop."
 last_verified: 2026-05-09
 chatbot:
   triggers:

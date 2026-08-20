@@ -1,5 +1,6 @@
 ---
 title: "Quick search"
+description: "To quickly search across everything: use the search functionality in each section (Invoices, Expenses, Customers)."
 last_verified: 2026-05-09
 chatbot:
   triggers: ["quick search", "search everything", "global search", "find anything", "search bar", "snel zoeken", "overal zoeken", "schnellsuche", "recherche rapide", "recherche globale"]

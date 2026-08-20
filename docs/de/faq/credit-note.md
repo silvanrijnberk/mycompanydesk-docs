@@ -1,5 +1,6 @@
 ---
 title: "Gutschrift"
+description: "So erstellen Sie eine Gutschrift: öffnen Sie die Originalrechnung, die Sie gutschreiben möchten."
 last_verified: 2026-08-16
 chatbot:
   triggers: ["credit note", "create credit note", "issue credit", "credit invoice", "creditnota", "creditnota aanmaken", "gutschrift erstellen", "note de credit", "avoir"]

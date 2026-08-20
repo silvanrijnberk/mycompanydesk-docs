@@ -1,5 +1,6 @@
 ---
 title: Cookies en analytics
+description: "Hoe MyCompanyDesk omgaat met cookies, lokale opslag en analytics op de marketingsite en in de app, en hoe je je keuze altijd kunt wijzigen."
 last_verified: 2026-07-14
 ---
 

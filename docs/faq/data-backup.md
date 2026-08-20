@@ -1,5 +1,6 @@
 ---
 title: "Back-up van je gegevens"
+description: "Om een back-up van je gegevens te maken: ga naar Instellingen > Gegevens downloaden."
 last_verified: 2026-07-02
 chatbot:
   triggers:

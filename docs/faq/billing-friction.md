@@ -1,5 +1,6 @@
 ---
-title: "Billing and subscription help"
+title: "Hulp bij facturatie en abonnement"
+description: "Om factuurfouten in de app te beperken: open Klanten en vul het factuur-e-mailadres, adres, BTW-nummer en standaard betaalvoorwaarden van de klant in."
 last_verified: 2026-05-09
 chatbot:
   triggers:

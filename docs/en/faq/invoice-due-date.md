@@ -1,5 +1,6 @@
 ---
 title: Invoice due date
+description: "To change the deadline for one invoice: open the invoice in edit mode, in the Invoice Details card, update the Due date field, save the invoice."
 last_verified: 2026-07-02
 chatbot:
   triggers: ["set due date", "change due date", "payment terms", "payment deadline", "when invoice due", "net 30", "net 14", "vervaldatum", "betaaltermijn", "zahlungsfrist", "echeance", "date d echeance", "conditions de paiement", "modifier conditions de paiement", "changer conditions de paiement", "comment modifier les conditions de paiement", "comment changer les conditions de paiement"]

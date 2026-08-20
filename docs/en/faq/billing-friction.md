@@ -1,5 +1,6 @@
 ---
 title: "Billing and subscription help"
+description: "To reduce invoice mistakes: complete the billing email, address, VAT number and default payment terms on the customer, then reuse that customer."
 last_verified: 2026-05-09
 chatbot:
   triggers:

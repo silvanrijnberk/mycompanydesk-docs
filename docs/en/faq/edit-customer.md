@@ -1,5 +1,6 @@
 ---
 title: "Edit a customer"
+description: "To edit a customer: go to Customers and find the customer, click on the customer to open their profile, click Edit."
 last_verified: 2026-05-09
 chatbot:
   triggers:

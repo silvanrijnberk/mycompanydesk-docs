@@ -1,5 +1,6 @@
 ---
 title: PDF-Design
+description: "Bringen Sie Rechnungs-, Angebots- und Mahnungs-PDFs auf Ihre Marke: eine Seite für Logo und Farbe, eine für das Rechnungsdesign mit Live-Vorschau."
 ---
 
 # PDF-Design

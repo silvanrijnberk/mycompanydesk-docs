@@ -1,5 +1,6 @@
 ---
 title: "Unternehmen einrichten"
+description: "Checkliste für die Ersteinrichtung. Alles liegt unter Einstellungen: gehen Sie zu Einstellungen > Unternehmensdaten und ergänzen Sie offiziellen."
 last_verified: 2026-07-02
 chatbot:
   triggers: ["set up company", "company setup", "company settings", "first setup", "getting started", "initial setup", "how to start", "where to begin", "bedrijf instellen", "aan de slag", "unternehmen einrichten", "configurer entreprise"]

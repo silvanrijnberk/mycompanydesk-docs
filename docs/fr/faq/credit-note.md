@@ -1,5 +1,6 @@
 ---
 title: "Avoir"
+description: "Pour créer un avoir : ouvrez la facture d'origine que vous souhaitez créditer, cliquez sur Créer un avoir / une correction sur la page de détail."
 last_verified: 2026-08-16
 chatbot:
   triggers: ["credit note", "create credit note", "issue credit", "credit invoice", "creditnota", "creditnota aanmaken", "gutschrift erstellen", "note de credit", "avoir"]

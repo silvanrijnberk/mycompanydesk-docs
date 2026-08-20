@@ -1,5 +1,6 @@
 ---
 title: "Numérotation des devis"
+description: "Les numéros de devis sont attribués automatiquement : créez un devis ; MyCompanyDesk lui attribue le numéro suivant de votre série."
 last_verified: 2026-08-05
 chatbot:
   triggers:

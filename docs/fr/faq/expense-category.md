@@ -1,5 +1,6 @@
 ---
 title: "Catégorie de dépense"
+description: "Pour définir ou modifier une catégorie de dépense : ouvrez la dépense en mode édition, trouvez le menu déroulant Catégorie."
 last_verified: 2026-08-15
 chatbot:
   triggers: ["expense category", "categorize expense", "expense categories", "which category", "change category", "uitgave categorie", "categorie wijzigen", "ausgabe kategorie", "categorie depense"]

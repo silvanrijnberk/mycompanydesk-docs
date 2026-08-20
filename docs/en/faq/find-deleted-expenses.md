@@ -1,5 +1,6 @@
 ---
 title: "Find deleted expenses"
+description: "Deleted expenses are in Expenses > Trash. If you are already in the expense list, switch to the Trash view."
 last_verified: 2026-08-16
 chatbot:
   triggers:

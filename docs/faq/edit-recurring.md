@@ -1,5 +1,6 @@
 ---
-title: "Edit a recurring invoice"
+title: "Terugkerende factuur bewerken"
+description: "Om een terugkerend item te bewerken: ga naar Terugkerende facturen (of Uitgaven), open het terugkerende item, klik op Bewerken."
 last_verified: 2026-08-15
 chatbot:
   triggers:

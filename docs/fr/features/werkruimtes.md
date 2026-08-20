@@ -1,5 +1,6 @@
 ---
 title: Espaces de travail
+description: "Une page centrale pour tout ce que vous gérez, vos propres sociétés et les dossiers clients, sans jamais mélanger votre argent et le leur."
 last_verified: 2026-08-10
 ---
 

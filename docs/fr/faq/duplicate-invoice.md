@@ -1,5 +1,6 @@
 ---
 title: "Dupliquer une facture"
+description: "Pour dupliquer une facture : ouvrez la facture que vous souhaitez copier, dans la barre latérale, repérez la section Actions, cliquez sur Dupliquer."
 last_verified: 2026-08-17
 chatbot:
   triggers: ["duplicate invoice", "copy invoice", "clone invoice", "reuse invoice", "invoice template", "factuur kopieren", "factuur dupliceren", "rechnung kopieren", "dupliquer facture"]

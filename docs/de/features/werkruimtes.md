@@ -1,5 +1,6 @@
 ---
 title: Arbeitsbereiche
+description: "Eine zentrale Seite für alles, was Sie verwalten, eigene Unternehmen und Mandantenbuchhaltungen, ohne eigenes Geld und Mandantengeld zu vermischen."
 last_verified: 2026-08-10
 ---
 

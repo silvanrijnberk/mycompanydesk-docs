@@ -1,5 +1,6 @@
 ---
 title: Datumsformat ändern
+description: "Datums-, Zeit- und Zahlenformate folgen in MyCompanyDesk den niederländischen Konventionen und können nicht geändert werden."
 last_verified: 2026-08-14
 chatbot:
   triggers: ["date format", "change date format", "number format", "decimal format", "datumformaat", "datumformaat wijzigen", "datumsformat", "format date", "format nombre"]

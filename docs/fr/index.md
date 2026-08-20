@@ -1,4 +1,5 @@
 ---
+description: "Documentation de MyCompanyDesk : guides sur les factures, devis, dépenses, TVA, la connexion bancaire, votre site web et chaque paramètre."
 layout: home
 hero:
   name: MyCompanyDesk

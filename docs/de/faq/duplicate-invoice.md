@@ -1,5 +1,6 @@
 ---
 title: "Rechnung duplizieren"
+description: "So duplizieren Sie eine Rechnung: öffnen Sie die Rechnung, die Sie kopieren möchten, suchen Sie in der Seitenleiste den Bereich Aktionen."
 last_verified: 2026-08-17
 chatbot:
   triggers: ["duplicate invoice", "copy invoice", "clone invoice", "reuse invoice", "invoice template", "factuur kopieren", "factuur dupliceren", "rechnung kopieren", "dupliquer facture"]

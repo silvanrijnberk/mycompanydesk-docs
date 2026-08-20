@@ -1,5 +1,6 @@
 ---
 title: "Ausgabe duplizieren"
+description: "So duplizieren Sie eine Ausgabe: Öffnen Sie die bezahlte Ausgabe, die Sie kopieren möchten. Duplizieren gibt es nur bei bezahlten Ausgaben."
 last_verified: 2026-08-16
 chatbot:
   triggers: ["duplicate expense", "copy expense", "clone expense", "reuse expense", "uitgave kopieren", "uitgave dupliceren", "ausgabe kopieren", "dupliquer depense"]

@@ -1,5 +1,6 @@
 ---
 title: "Offertes aanzetten"
+description: "Staan Offertes niet in het menu?, ga naar Instellingen > Onderdelen, zet de schakelaar Offertes aan, het menu wordt direct bijgewerkt."
 last_verified: 2026-07-02
 chatbot:
   triggers: ["quotes not visible", "where are quotes", "enable quotes", "turn on quotes", "show quotes in menu", "qoutes not visible", "qoutes missing", "where are qoutes", "offertes niet zichtbaar", "quotes activeren", "angebote nicht sichtbar", "devis non visible", "activar cotizaciones", "ativar propostas"]

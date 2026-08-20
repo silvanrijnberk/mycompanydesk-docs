@@ -1,5 +1,6 @@
 ---
 title: Changer de devise
+description: "Il n'y a aucun réglage de devise. MyCompanyDesk fonctionne uniquement en euros : factures, devis, dépenses et rapports sont tous en EUR."
 last_verified: 2026-07-02
 chatbot:
   triggers: ["change currency", "set currency", "currency settings", "euro dollar", "valuta wijzigen", "valuta instellen", "wahrung andern", "changer devise"]

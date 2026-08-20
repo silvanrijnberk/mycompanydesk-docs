@@ -1,5 +1,6 @@
 ---
 title: Passwort ändern
+description: "So ändern Sie Ihr Passwort: gehen Sie zu Einstellungen > Anmeldung, geben Sie Ihr aktuelles Passwort ein."
 last_verified: 2026-07-02
 chatbot:
   triggers: ["change password", "update password", "new password", "password security", "wachtwoord wijzigen", "nieuw wachtwoord", "passwort andern", "wie aendere ich mein passwort", "changer mot de passe"]

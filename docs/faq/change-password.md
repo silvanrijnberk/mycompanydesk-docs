@@ -1,5 +1,6 @@
 ---
 title: Wachtwoord wijzigen
+description: "Om je wachtwoord te wijzigen: ga naar Instellingen > Inloggen, voer je huidige wachtwoord in, voer en bevestig je nieuwe wachtwoord."
 last_verified: 2026-07-02
 chatbot:
   triggers: ["change password", "update password", "new password", "password security", "wachtwoord wijzigen", "nieuw wachtwoord", "passwort andern", "wie aendere ich mein passwort", "changer mot de passe"]

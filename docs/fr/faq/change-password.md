@@ -1,5 +1,6 @@
 ---
 title: Changer le mot de passe
+description: "Pour changer votre mot de passe : allez dans Paramètres > Connexion, entrez votre mot de passe actuel, entrez puis confirmez votre nouveau mot de passe."
 last_verified: 2026-07-02
 chatbot:
   triggers: ["change password", "update password", "new password", "password security", "wachtwoord wijzigen", "nieuw wachtwoord", "passwort andern", "wie aendere ich mein passwort", "changer mot de passe"]

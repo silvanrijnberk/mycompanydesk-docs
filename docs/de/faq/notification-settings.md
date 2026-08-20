@@ -1,5 +1,6 @@
 ---
 title: "Benachrichtigungseinstellungen"
+description: "So verwalten Sie Ihre Benachrichtigungseinstellungen: gehen Sie zu Einstellungen > Benachrichtigungen."
 last_verified: 2026-08-19
 chatbot:
   triggers:

@@ -1,5 +1,6 @@
 ---
 title: Overdue invoices
+description: "To view and manage overdue invoices: go to Invoices, filter by status Overdue to see all past-due invoices."
 last_verified: 2026-05-09
 chatbot:
   triggers: ["overdue invoices", "late invoices", "unpaid invoices", "outstanding invoices", "invoices not paid", "achterstallige facturen", "onbetaalde facturen", "uberfaellige rechnungen", "factures impayees"]

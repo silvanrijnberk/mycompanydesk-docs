@@ -1,5 +1,6 @@
 ---
 title: E-mail
+description: "Bepaal vanaf welk adres je facturen en offertes vertrekken en stel de ondertekening onder elk bericht in. Beschikbaar op elk abonnement."
 ---
 
 # E-mail

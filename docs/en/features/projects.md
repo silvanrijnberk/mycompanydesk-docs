@@ -1,5 +1,6 @@
 ---
 title: Projects
+description: "Group invoices, expenses and time entries into projects so you can see time, revenue and profitability per engagement."
 ---
 
 # Projects

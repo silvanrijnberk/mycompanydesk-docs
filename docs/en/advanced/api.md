@@ -1,5 +1,6 @@
 ---
 title: API Integration
+description: "Access invoices, expenses and customers programmatically over the REST API with an X-API-Key header. API access is part of the Pro plan."
 ---
 
 # API Integration

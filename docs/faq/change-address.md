@@ -1,5 +1,6 @@
 ---
 title: "Adres wijzigen"
+description: "Om je bedrijfsadres te wijzigen: ga naar Instellingen > Bedrijfsgegevens."
 last_verified: 2026-08-08
 chatbot:
   triggers:

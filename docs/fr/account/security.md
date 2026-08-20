@@ -1,5 +1,6 @@
 ---
 title: Sécurité
+description: "Protégez votre compte avec un mot de passe solide, l'authentification à deux facteurs et un oeil sur vos sessions actives."
 last_verified: 2026-07-10
 ---
 

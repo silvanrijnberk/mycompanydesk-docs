@@ -1,5 +1,6 @@
 ---
 title: PDF-ontwerp
+description: "Laat je factuur-, offerte- en herinnerings-PDF's aansluiten op je huisstijl met Logo en kleur voor je logo en kleur en Factuurontwerp voor het ontwerp."
 ---
 
 # PDF-ontwerp

@@ -1,5 +1,6 @@
 ---
 title: Klantportaal
+description: "Elke factuur die je verstuurt bevat een betaallink naar een beveiligd portaal in je huisstijl, waar je klant de factuur bekijkt, downloadt en betaalt."
 ---
 
 # Klantportaal

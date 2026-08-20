@@ -1,5 +1,6 @@
 ---
 title: "Angebotsnummerierung"
+description: "Angebotsnummern werden automatisch vergeben: erstellen Sie ein Angebot; MyCompanyDesk vergibt automatisch die nächste Nummer in Ihrer Serie."
 last_verified: 2026-08-05
 chatbot:
   triggers:

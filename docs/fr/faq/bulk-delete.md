@@ -1,5 +1,6 @@
 ---
-title: Bulk delete
+title: "Supprimer plusieurs éléments"
+description: "Pour supprimer plusieurs éléments à la fois : accédez à la vue en liste concernée (Factures, Dépenses, etc.)."
 last_verified: 2026-05-09
 chatbot:
   triggers: ["bulk delete", "delete multiple", "mass delete", "delete all", "remove multiple", "meerdere verwijderen", "alles verwijderen", "mehrere loschen", "supprimer plusieurs", "suppression en masse"]

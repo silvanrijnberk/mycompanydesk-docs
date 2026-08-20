@@ -1,5 +1,6 @@
 ---
-title: Preview a quote
+title: "Angebotsvorschau"
+description: "Angebot prüfen, drucken oder als PDF laden: Öffnen Sie die Angebotsdetailseite, klicken Sie auf Vorschau und nutzen Sie Drucken oder PDF-Download."
 last_verified: 2026-05-09
 chatbot:
   triggers: ["preview quote", "quote preview", "preview proposal", "view quote pdf", "print quote", "offerte voorbeeld", "offerte preview", "angebot vorschau", "apercu devis", "previsualizar cotizacion", "visualizar proposta"]

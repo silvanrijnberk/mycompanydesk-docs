@@ -1,5 +1,6 @@
 ---
 title: "Offertestatus"
+description: "De offertestatussen op een rij: concept: nog te bewerken, nog niet naar de klant verstuurd, verzonden: bij de klant afgeleverd."
 last_verified: 2026-07-02
 chatbot:
   triggers: ["quote status", "quote statuses", "quote lifecycle", "draft open sent canceled", "offerte status", "angebotsstatus", "statut devis", "estado cotizacion", "status proposta"]

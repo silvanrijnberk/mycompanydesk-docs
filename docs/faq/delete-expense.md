@@ -1,5 +1,6 @@
 ---
 title: "Uitgave verwijderen"
+description: "Om een uitgave te verwijderen: open de uitgave vanuit je uitgavenlijst, scroll in de zijbalk naar de sectie Gevarenzone, klik op Verwijderen."
 last_verified: 2026-08-16
 chatbot:
   triggers: ["delete expense", "remove expense", "trash expense", "erase expense", "uitgave verwijderen", "uitgave wissen", "hoe verwijder ik een uitgave", "ausgabe loschen", "wie losche ich eine ausgabe", "supprimer depense"]

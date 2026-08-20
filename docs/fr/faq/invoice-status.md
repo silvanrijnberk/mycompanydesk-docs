@@ -1,5 +1,6 @@
 ---
-title: Invoice status
+title: "Statut de facture"
+description: "Statuts de facture expliqués : brouillon - pas encore envoyée, modifiable librement. Un brouillon ne peut être marqué comme payé ou faire l'objet d'un."
 last_verified: 2026-08-15
 chatbot:
   triggers: ["invoice status", "invoice statuses", "what do invoice statuses mean", "draft sent paid", "invoice lifecycle", "factuurstatus", "factuur statussen", "rechnungsstatus", "statut facture"]

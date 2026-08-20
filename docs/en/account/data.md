@@ -1,5 +1,6 @@
 ---
 title: "Data Import & Export"
+description: "Import customers, invoices and expenses from CSV, and export your records for backup or for use in another tool."
 last_verified: 2026-07-02
 ---
 

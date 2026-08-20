@@ -1,5 +1,6 @@
 ---
 title: "Archivierte Rechnungen finden"
+description: "Archivierte Rechnungen finden Sie unter Rechnungen > Archiv. Wenn Sie bereits in der Rechnungsliste sind, wechseln Sie zur Ansicht Archiv."
 last_verified: 2026-05-09
 chatbot:
   triggers:

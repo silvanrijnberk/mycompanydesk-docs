@@ -1,5 +1,6 @@
 ---
 title: "Coordonnées bancaires"
+description: "Pour ajouter ou mettre à jour vos coordonnées bancaires : allez dans Paramètres et ouvrez Paiement."
 last_verified: 2026-07-02
 chatbot:
   triggers: ["bank details", "add bank account", "bank information", "where do i add my bank details", "iban", "payment details", "bankgegevens", "waar voeg ik mijn bankgegevens toe", "bankrekening toevoegen", "bankdaten", "wo trage ich meine bankdaten ein", "coordonnees bancaires", "ou ajouter mes coordonnees bancaires"]

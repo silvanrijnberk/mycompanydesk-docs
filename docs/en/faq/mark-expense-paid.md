@@ -1,5 +1,6 @@
 ---
 title: "Mark an expense as paid"
+description: "To mark an expense as paid: open the expense from the list, click Mark as Paid, the status updates to Paid right away."
 last_verified: 2026-05-09
 chatbot:
   triggers:

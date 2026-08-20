@@ -1,5 +1,6 @@
 ---
 title: Schedule
+description: "Log hours, plan your days and turn billable time into invoices. Schedule puts time registration, your agenda and calendar suggestions in one place."
 ---
 
 # Schedule

@@ -1,5 +1,6 @@
 ---
 title: Tasks
+description: "Tasks you create yourself, plus ones that appear automatically for an unpaid invoice, an expiring quote or an unfinished onboarding step."
 ---
 
 # Tasks

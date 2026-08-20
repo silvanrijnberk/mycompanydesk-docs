@@ -1,5 +1,6 @@
 ---
 title: Automatic reminders
+description: "To set up automatic payment reminders: go to Settings > Facturen en offertes, turn on the reminder toggle (Te laat? Automatisch een herinnering sturen)."
 last_verified: 2026-08-16
 chatbot:
   triggers: ["automatic reminders", "auto reminder", "scheduled reminders", "reminder automation", "automatische herinnering", "herinneringen instellen", "automatische erinnerung", "rappels automatiques"]

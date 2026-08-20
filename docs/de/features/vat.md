@@ -1,5 +1,6 @@
 ---
 title: USt.-Verwaltung
+description: "Verfolgen Sie erhaltene und gezahlte Umsatzsteuer, bereiten Sie die Erklärung vor und halten Sie Fristen ein, mit landesspezifischen Regeln."
 ---
 
 <!-- TODO(source-missing): RichardTool 5407b44 added historical Dutch VAT rates 6% and 19% to the valid invoice/quote/contract/recurring-invoice/catalog rate set. sources/vat-rates.yaml#countries.NL does not yet list those rates, so do not document the full valid set until the source is updated. -->

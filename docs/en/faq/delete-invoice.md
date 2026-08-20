@@ -1,5 +1,6 @@
 ---
 title: "Delete an invoice"
+description: "To delete an invoice: open the invoice you want to remove, in the sidebar, scroll to the Danger Zone section, click Delete, confirm the deletion."
 last_verified: 2026-08-15
 chatbot:
   triggers:

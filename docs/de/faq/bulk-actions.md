@@ -1,5 +1,6 @@
 ---
-title: Bulk actions
+title: "Massenaktionen"
+description: "Massenaktionen ausführen: Wählen Sie in der Listenansicht von Rechnungen, Ausgaben oder Kunden mehrere Einträge aus, die Aktionsleiste erscheint unten."
 last_verified: 2026-05-09
 chatbot:
   triggers: ["bulk action", "bulk delete", "bulk send", "select multiple", "batch operation", "meerdere selecteren", "bulk verwijderen", "massenbearbeitung", "action en masse"]

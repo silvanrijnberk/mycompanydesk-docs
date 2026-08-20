@@ -1,5 +1,6 @@
 ---
 title: Rapports
+description: "Cinq vues de rapport ciblées et une synthèse qui les relie, chacune réunissant les chiffres et les graphiques au même endroit."
 ---
 
 # Rapports

@@ -1,5 +1,6 @@
 ---
 title: "Meldingsinstellingen"
+description: "Om je meldingsinstellingen te beheren: ga naar Instellingen > Meldingen en zet de meldingsonderwerpen per categorie aan of uit."
 last_verified: 2026-08-19
 chatbot:
   triggers:

@@ -1,5 +1,6 @@
 ---
-title: API keys
+title: "Clés API"
+description: "Pour gérer les clés API : allez dans Paramètres de l'espace de travail > Clés API, cliquez sur Créer une clé API et donnez-lui un nom explicite."
 last_verified: 2026-05-09
 chatbot:
   triggers: ["api key", "api keys", "api access", "integration", "api token", "connect api", "api instellen", "api schlussel", "cle api"]

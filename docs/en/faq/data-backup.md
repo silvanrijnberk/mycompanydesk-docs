@@ -1,5 +1,6 @@
 ---
 title: "Data backup"
+description: "To back up your data: go to Settings > Gegevens downloaden (download your data)."
 last_verified: 2026-07-02
 chatbot:
   triggers:

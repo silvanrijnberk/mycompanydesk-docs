@@ -1,5 +1,6 @@
 ---
 title: Contrats
+description: "Gérez les contrats de service récurrents et les baux, et laissez-les générer des factures selon un calendrier. À activer dans Entreprise, Fonctionnalités."
 ---
 
 # Contrats

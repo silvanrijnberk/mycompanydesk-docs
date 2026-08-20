@@ -1,5 +1,6 @@
 ---
 title: "Ausgabenkategorie"
+description: "So legen Sie eine Ausgabenkategorie fest oder ändern sie: öffnen Sie die Ausgabe im Bearbeitungsmodus, suchen Sie das Dropdown Kategorie."
 last_verified: 2026-08-15
 chatbot:
   triggers: ["expense category", "categorize expense", "expense categories", "which category", "change category", "uitgave categorie", "categorie wijzigen", "ausgabe kategorie", "categorie depense"]

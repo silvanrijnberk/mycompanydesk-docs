@@ -1,5 +1,6 @@
 ---
 title: Site Builder
+description: "Build a multi-page business website with the drag-and-drop editor: sections and blocks, your own colours and fonts, and publish when you are ready."
 last_verified: 2026-08-20
 ---
 

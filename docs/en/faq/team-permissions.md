@@ -1,5 +1,6 @@
 ---
 title: Team permissions
+description: "Page permissions control what each team member or accountant can do: read - view data, write - edit existing records, create - add new records."
 last_verified: 2026-07-02
 chatbot:
   triggers: ["team permissions", "manage team permissions", "page permissions", "read write create", "permission settings", "access control", "granular permissions", "read only", "write access", "create access", "pagina rechten", "teamrechten", "lezen schrijven", "toegang instellen", "seitenberechtigungen", "teamberechtigungen", "lese schreibzugriff", "permissions page", "permissions de l'equipe", "droits acces"]

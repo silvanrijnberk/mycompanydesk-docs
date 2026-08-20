@@ -1,5 +1,6 @@
 ---
 title: "Gearchiveerde klanten vinden"
+description: "Gearchiveerde klanten vind je onder Klanten > Archief. Sta je al in de klantenlijst, schakel dan over naar de weergave Archief."
 last_verified: 2026-05-09
 chatbot:
   triggers: ["where are archived customers", "where can i find archived customers", "where do i find archived customers", "customer archive", "archived customers", "gearchiveerde klanten", "klanten archief", "archivierte kunden", "archivierten kunden", "kunden archiv", "clients archives", "mes clients archives", "archives clients"]

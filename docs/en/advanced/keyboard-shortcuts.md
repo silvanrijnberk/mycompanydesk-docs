@@ -1,5 +1,6 @@
 ---
 title: Keyboard Shortcuts
+description: "The keyboard shortcuts that actually work in MyCompanyDesk, starting with Cmd+K or Ctrl+K for the search palette."
 ---
 
 # Keyboard Shortcuts

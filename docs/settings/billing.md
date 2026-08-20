@@ -1,5 +1,6 @@
 ---
 title: "Abonnement & betalingen"
+description: "Wat je ons betaalt, je facturen van ons en je betaalkaart, onder Instellingen, Je abonnement op /settings/abonnement."
 last_verified: 2026-08-05
 ---
 

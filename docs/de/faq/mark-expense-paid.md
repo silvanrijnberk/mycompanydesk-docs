@@ -1,5 +1,6 @@
 ---
 title: "Ausgabe als bezahlt markieren"
+description: "So markieren Sie eine Ausgabe als bezahlt: öffnen Sie die Ausgabe aus der Liste, klicken Sie auf Als bezahlt markieren."
 last_verified: 2026-05-09
 chatbot:
   triggers:

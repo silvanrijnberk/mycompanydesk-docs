@@ -1,5 +1,6 @@
 ---
 title: Objets et actifs
+description: "Suivez biens locatifs, véhicules, équipements et autres actifs sur tout leur cycle de vie. À activer dans Entreprise, Fonctionnalités."
 ---
 
 # Objets et actifs

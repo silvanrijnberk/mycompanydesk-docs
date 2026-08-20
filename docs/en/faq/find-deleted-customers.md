@@ -1,5 +1,6 @@
 ---
 title: "Find deleted customers"
+description: "Deleted customers are in Customers > Trash. If you are already in the customer list, switch to the Trash view."
 last_verified: 2026-05-09
 chatbot:
   triggers: ["where are deleted customers", "where can i find deleted customers", "where do i find deleted customers", "customer trash", "trashed customers", "deleted customers", "verwijderde klanten", "klanten prullenbak", "geloschte kunden", "geloeschte kunden", "geloeschten kunden", "kunden papierkorb", "clients supprimes", "mes clients supprimes", "corbeille clients"]

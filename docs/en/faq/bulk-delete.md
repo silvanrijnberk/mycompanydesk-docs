@@ -1,5 +1,6 @@
 ---
 title: Bulk delete
+description: "To delete multiple invoices or expenses at once: go to the list view (Invoices or Expenses), select multiple items using the checkboxes."
 last_verified: 2026-05-09
 chatbot:
   triggers: ["bulk delete", "delete multiple", "mass delete", "delete all", "remove multiple", "meerdere verwijderen", "alles verwijderen", "mehrere loschen", "supprimer plusieurs", "suppression en masse"]

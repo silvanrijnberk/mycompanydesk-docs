@@ -1,5 +1,6 @@
 ---
-title: Add line item
+title: "Factuurregel toevoegen"
+description: "Om regelitems toe te voegen, te bewerken of te verwijderen op een factuur: open de factuur in bewerkingsmodus."
 last_verified: 2026-05-09
 chatbot:
   triggers: ["add line item", "edit line item", "remove line item", "invoice line", "add row", "new line", "factuurregel toevoegen", "regel bewerken", "rechnungsposition", "ligne de facture", "ajouter ligne"]

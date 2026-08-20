@@ -1,5 +1,6 @@
 ---
 title: "Zahlungsmethoden"
+description: "So verwalten Sie Zahlungsmethoden auf Dokumenten: gehen Sie zu Einstellungen und öffnen Sie Zahlung."
 last_verified: 2026-07-22
 chatbot:
   triggers:

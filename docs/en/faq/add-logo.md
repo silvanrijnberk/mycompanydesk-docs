@@ -1,5 +1,6 @@
 ---
 title: "Add logo"
+description: "To add or change your company logo: go to Settings > Logo en kleur (logo and colour), look for the Logo section."
 last_verified: 2026-07-02
 chatbot:
   triggers: ["add logo", "upload logo", "change logo", "company logo", "logo on invoice", "logo toevoegen", "logo wijzigen", "logo uploaden", "logo hochladen", "ajouter logo"]

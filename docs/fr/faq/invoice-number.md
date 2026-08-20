@@ -1,5 +1,6 @@
 ---
 title: "Numéro de facture"
+description: "Les numéros de facture sont attribués automatiquement : créez une facture ; MyCompanyDesk la numérote de façon séquentielle, comme l'exige."
 last_verified: 2026-08-05
 chatbot:
   triggers: ["invoice number", "change invoice number", "invoice numbering", "set invoice number", "numbering format", "factuurnummer", "factuurnummering", "rechnungsnummer", "numero facture"]

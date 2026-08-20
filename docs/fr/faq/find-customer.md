@@ -1,5 +1,6 @@
 ---
 title: "Trouver un client"
+description: "Pour trouver un client : allez dans Clients et utilisez la barre de recherche, qui cherche le nom, le numéro client, l'e-mail et la ville."
 last_verified: 2026-05-09
 chatbot:
   triggers: ["find customer", "search customer", "look up customer", "filter customers", "klant zoeken", "klant vinden", "kunde suchen", "chercher client"]

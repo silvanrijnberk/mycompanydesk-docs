@@ -1,5 +1,6 @@
 ---
 title: "Factuur bewerken"
+description: "Zo bewerk je een factuur: open hem vanuit de lijst en klik op Bewerken, wat kan zolang de factuur concept is of definitief maar nog niet verstuurd."
 last_verified: 2026-07-02
 chatbot:
   triggers: ["edit invoice", "change invoice", "modify invoice", "update invoice", "correct invoice", "fix invoice", "factuur bewerken", "factuur wijzigen", "factuur aanpassen", "hoe bewerk ik een factuur", "rechnung bearbeiten", "wie bearbeite ich eine rechnung", "modifier facture"]

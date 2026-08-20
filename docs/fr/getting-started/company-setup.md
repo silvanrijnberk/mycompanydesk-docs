@@ -1,5 +1,6 @@
 ---
 title: Configurer votre entreprise
+description: "L'assistant de configuration remplit votre bloc expéditeur, vos coordonnées de paiement et votre statut TVA autour de votre première facture."
 last_verified: 2026-07-21
 ---
 

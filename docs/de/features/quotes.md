@@ -1,5 +1,6 @@
 ---
 title: Angebote
+description: "Erstellen und versenden Sie Angebote, verfolgen Sie die Annahme und wandeln Sie ein angenommenes Angebot in einem Schritt in eine Rechnung um."
 ---
 
 # Angebote

@@ -1,6 +1,6 @@
 ---
 title: Nieuwsbrieven
-description: Ontwerp, verstuur en volg nieuwsbrieven in MyCompanyDesk.
+description: "Schrijf, plan en verstuur mailings naar je klanten. De editor koppelt aan je klantenlijst, dus je ontvangers blijven synchroon zonder CSV-import."
 last_verified: 2026-08-18
 ---
 

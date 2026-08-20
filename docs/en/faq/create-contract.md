@@ -1,5 +1,6 @@
 ---
 title: Create a contract
+description: "To create a contract: go to Contracts and open New Contract."
 last_verified: 2026-05-09
 chatbot:
   triggers: ["create contract", "new contract", "add contract", "contract aanmaken", "nieuw contract", "vertrag erstellen", "creer contrat", "comment creer un contrat"]

@@ -1,5 +1,6 @@
 ---
 title: Change currency
+description: "There is no currency setting to change. MyCompanyDesk is euro-only by design: invoices, quotes, expenses and reports all use EUR."
 last_verified: 2026-07-02
 chatbot:
   triggers: ["change currency", "set currency", "currency settings", "euro dollar", "valuta wijzigen", "valuta instellen", "wahrung andern", "changer devise"]

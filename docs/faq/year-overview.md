@@ -1,5 +1,6 @@
 ---
 title: "Jaaroverzicht"
+description: "Om een volledig jaar in de app te bekijken: open Rapporten, zet de periodefilter op Jaar en kies het jaar dat je wilt bekijken."
 last_verified: 2026-05-09
 chatbot:
   triggers:

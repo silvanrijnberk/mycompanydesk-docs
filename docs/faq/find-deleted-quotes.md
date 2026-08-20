@@ -1,5 +1,6 @@
 ---
 title: "Verwijderde offertes vinden"
+description: "Verwijderde offertes vind je onder Offertes > Prullenbak. Sta je al in de offertelijst, schakel dan over naar de weergave Prullenbak."
 last_verified: 2026-05-09
 chatbot:
   triggers: ["where are deleted quotes", "where can i find deleted quotes", "where do i find deleted quotes", "quote trash", "trashed quotes", "deleted quotes", "verwijderde offertes", "offertes prullenbak", "geloschte angebote", "geloeschte angebote", "geloeschten angebote", "angebote papierkorb", "devis supprimes", "mes devis supprimes", "corbeille devis"]

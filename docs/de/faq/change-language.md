@@ -1,5 +1,6 @@
 ---
 title: "Sprache ändern"
+description: "Sie können die Sprache der Oberfläche unter Einstellungen, Darstellung, App-Sprache auf Niederländisch, Englisch, Deutsch oder Französisch stellen."
 last_verified: 2026-07-02
 chatbot:
   triggers:

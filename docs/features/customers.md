@@ -1,5 +1,6 @@
 ---
 title: Klanten
+description: "Beheer je klantendatabase, met segmenttegels, zoeken en filters, en elke factuur, offerte en elk project gekoppeld aan een klantrecord."
 ---
 
 # Klanten

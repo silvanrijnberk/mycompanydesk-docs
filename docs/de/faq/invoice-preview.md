@@ -1,5 +1,6 @@
 ---
-title: "Invoice preview"
+title: "Rechnungsvorschau"
+description: "Rechnung vor dem Versand prüfen: Öffnen Sie die Rechnung, klicken Sie auf das Vorschau- oder PDF-Symbol und prüfen Sie Layout, Beträge und Kundendaten."
 last_verified: 2026-08-18
 chatbot:
   triggers:

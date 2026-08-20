@@ -1,5 +1,6 @@
 ---
 title: "Modifier votre adresse"
+description: "Pour changer l'adresse de votre entreprise : allez dans Paramètres > Données de l'entreprise."
 last_verified: 2026-08-08
 chatbot:
   triggers:

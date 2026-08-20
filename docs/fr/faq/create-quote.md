@@ -1,5 +1,6 @@
 ---
-title: Create a quote
+title: "Créer un devis"
+description: "Pour créer un devis : allez dans Devis, ouvrez Créer un devis, choisissez un client et ajoutez des lignes avec quantité, prix et TVA."
 last_verified: 2026-05-09
 chatbot:
   triggers: ["create quote", "new quote", "make quote", "create proposal", "new proposal", "sales quote", "estimate", "offerte maken", "offerte aanmaken", "nieuwe offerte", "angebot erstellen", "neues angebot", "wie erstelle ich ein angebot", "devis creer", "comment creer un devis", "nouveau devis", "crear cotizacion", "crear presupuesto", "criar proposta", "nuovo preventivo"]

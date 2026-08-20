@@ -1,5 +1,6 @@
 ---
 title: Programme d'affiliation
+description: "Gagnez une commission en amenant des visiteurs qui prennent un abonnement payant. Ouvert aux éditeurs, comparateurs, blogs et infolettres."
 ---
 
 # Programme d'affiliation

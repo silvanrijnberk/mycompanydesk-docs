@@ -1,5 +1,6 @@
 ---
-title: Add a customer
+title: "Klant toevoegen"
+description: "Zo voeg je een klant toe: ga naar Klanten en open Nieuwe klant, vul de klant- of bedrijfsnaam en contactgegevens in."
 last_verified: 2026-05-09
 chatbot:
   triggers: ["create customer", "new customer", "add customer", "add client", "new client", "klant toevoegen", "nieuwe klant", "klant aanmaken", "kunde hinzufugen", "wie fuege ich einen kunden hinzu", "neuer kunde", "ajouter client", "comment ajouter un nouveau client"]

@@ -1,5 +1,6 @@
 ---
 title: E-mailsjablonen
+description: "E-mailsjablonen kun je niet bewerken. MyCompanyDesk gebruikt vaste, geteste teksten voor factuur-, creditnota-, offerte- en herinneringsmails."
 last_verified: 2026-08-14
 chatbot:
   triggers: ["email template", "customize email", "invoice email message", "email text", "change email message", "email sjabloon", "email aanpassen", "e-mail vorlage", "modele email", "personnaliser email"]

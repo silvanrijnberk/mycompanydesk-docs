@@ -1,5 +1,6 @@
 ---
 title: API-Integration
+description: "Greifen Sie über die REST API mit einem X-API-Key-Header programmatisch auf Rechnungen, Ausgaben und Kunden zu. API-Zugang gehört zum Pro-Abo."
 ---
 
 # API-Integration

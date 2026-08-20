@@ -1,5 +1,6 @@
 ---
-title: "Find page"
+title: "Seite finden"
+description: "Seiten in der App finden: Nutzen Sie das Hauptmenü. Die Hauptbereiche sind Dashboard, Rechnungen, Angebote, Ausgaben, Kunden, Berichte und USt."
 last_verified: 2026-05-09
 chatbot:
   triggers: ["where is", "find page", "navigate to", "how to get to", "menu location", "waar vind ik", "waar is", "wo finde ich", "ou trouver"]

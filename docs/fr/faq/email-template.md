@@ -1,5 +1,6 @@
 ---
 title: Modèles d'e-mail
+description: "Les modèles d'e-mail ne sont pas modifiables. MyCompanyDesk utilise des textes fixes et éprouvés pour les factures, avoirs, devis et rappels."
 last_verified: 2026-08-14
 chatbot:
   triggers: ["email template", "customize email", "invoice email message", "email text", "change email message", "email sjabloon", "email aanpassen", "e-mail vorlage", "modele email", "personnaliser email"]

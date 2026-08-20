@@ -1,5 +1,6 @@
 ---
 title: Delete an expense
+description: "To delete an expense: open the expense from your expense list, in the sidebar, scroll to the Danger Zone section, click Delete, confirm the deletion."
 last_verified: 2026-08-16
 chatbot:
   triggers: ["delete expense", "remove expense", "trash expense", "erase expense", "uitgave verwijderen", "uitgave wissen", "hoe verwijder ik een uitgave", "ausgabe loschen", "wie losche ich eine ausgabe", "supprimer depense"]

@@ -1,5 +1,6 @@
 ---
 title: "Buchhaltung ohne Steuerberater"
+description: "Die meisten Freiberufler und Einzelunternehmen können ihre tägliche Buchhaltung selbst in MyCompanyDesk erledigen. Die App berechnet die USt."
 last_verified: 2026-07-21
 chatbot:
   triggers:

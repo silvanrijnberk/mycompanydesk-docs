@@ -1,5 +1,6 @@
 ---
-title: "Find page"
+title: "Trouver une page"
+description: "Pour trouver une page : utilisez le menu principal. Les sections sont Tableau de bord, Factures, Devis, Dépenses, Clients, Projets et Rapports."
 last_verified: 2026-05-09
 chatbot:
   triggers: ["where is", "find page", "navigate to", "how to get to", "menu location", "waar vind ik", "waar is", "wo finde ich", "ou trouver"]

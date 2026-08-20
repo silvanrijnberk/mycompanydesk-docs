@@ -1,5 +1,6 @@
 ---
 title: Contracts
+description: "Manage recurring service agreements and rental contracts, and let them generate invoices on a set schedule. Enable contracts under Company, Features."
 ---
 
 # Contracts

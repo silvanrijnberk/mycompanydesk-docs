@@ -1,5 +1,6 @@
 ---
 title: Projets
+description: "Regroupez factures, dépenses et temps passé dans des projets pour voir le temps, le chiffre d'affaires et la rentabilité par mission."
 ---
 
 # Projets

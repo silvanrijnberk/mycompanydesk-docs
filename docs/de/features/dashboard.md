@@ -1,5 +1,6 @@
 ---
 title: Dashboard
+description: "Der Startbildschirm Ihres Arbeitsbereichs: Periodenwahl, KPI-Übersicht, ein Hinweis-Widget und Blöcke, die nur bei passenden Daten erscheinen."
 last_verified: 2026-08-18
 ---
 

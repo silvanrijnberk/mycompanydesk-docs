@@ -1,5 +1,6 @@
 ---
 title: "Rechnung löschen"
+description: "So löschen Sie eine Rechnung: öffnen Sie die Rechnung, die Sie löschen möchten, scrollen Sie in der Seitenleiste zum Bereich Gefahrenzone."
 last_verified: 2026-08-15
 chatbot:
   triggers:

@@ -1,5 +1,6 @@
 ---
 title: Aufgaben
+description: "Aufgaben, die Sie selbst anlegen, und solche, die automatisch erscheinen: offene Rechnung, ablaufendes Angebot oder ein offener Einrichtungsschritt."
 ---
 
 # Aufgaben

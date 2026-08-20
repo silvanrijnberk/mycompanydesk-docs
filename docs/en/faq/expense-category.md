@@ -1,5 +1,6 @@
 ---
 title: "Expense category"
+description: "To set or change an expense category: open the expense in edit mode, find the Category dropdown."
 last_verified: 2026-08-15
 chatbot:
   triggers: ["expense category", "categorize expense", "expense categories", "which category", "change category", "uitgave categorie", "categorie wijzigen", "ausgabe kategorie", "categorie depense"]

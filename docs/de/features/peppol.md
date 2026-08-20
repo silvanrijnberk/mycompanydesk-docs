@@ -1,5 +1,6 @@
 ---
 title: Peppol E-Rechnung
+description: "Versenden Sie Rechnungen und Gutschriften als strukturierte E-Rechnung über Peppol, direkt in die Buchhaltung Ihres Kunden, und empfangen Sie sie ebenso."
 last_verified: 2026-08-15
 ---
 

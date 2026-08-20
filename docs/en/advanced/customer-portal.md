@@ -1,5 +1,6 @@
 ---
 title: Customer Portal
+description: "Every invoice you send carries a payment link to a secure branded portal where your customer can view the invoice, download the PDF and pay online."
 ---
 
 # Customer Portal

@@ -1,5 +1,6 @@
 ---
 title: Abonnement et paiements
+description: "Ce que vous nous payez, vos factures de notre part et votre carte de paiement, dans Paramètres, Abonnement et paiements."
 last_verified: 2026-08-05
 ---
 

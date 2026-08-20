@@ -1,5 +1,6 @@
 ---
-title: "Login issues"
+title: "Problèmes de connexion"
+description: "Si vous avez des problèmes de connexion : essayez Mot de passe oublié, vérifiez votre dossier spam, assurez-vous d'utiliser la bonne adresse e-mail."
 last_verified: 2026-05-09
 chatbot:
   triggers: ["cannot login", "cant login", "login problem", "forgot password", "reset password", "locked out", "verification email", "email not received", "kan niet inloggen", "wachtwoord vergeten", "passwort vergessen", "mot de passe oublie"]

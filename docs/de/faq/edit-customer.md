@@ -1,5 +1,6 @@
 ---
-title: "Edit a customer"
+title: "Kunden bearbeiten"
+description: "So bearbeiten Sie einen Kunden: Öffnen Sie das Profil unter Kunden, klicken Sie auf Bearbeiten und aktualisieren Sie Name, Adresse, E-Mail oder USt-IdNr."
 last_verified: 2026-05-09
 chatbot:
   triggers:

@@ -1,5 +1,6 @@
 ---
 title: "Export to PDF"
+description: "To export or download a PDF: open the invoice from the list, click the PDF preview or download button."
 last_verified: 2026-07-02
 chatbot:
   triggers:

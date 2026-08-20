@@ -1,5 +1,6 @@
 ---
-title: "Search invoices"
+title: "Rechercher des factures"
+description: "Pour rechercher une facture spécifique : accédez aux Factures."
 last_verified: 2026-05-09
 chatbot:
   triggers: ["search invoices", "find invoice", "filter invoices", "sort invoices", "search invoice", "look up invoice", "factuur zoeken", "facturen filteren", "rechnung suchen", "chercher facture"]

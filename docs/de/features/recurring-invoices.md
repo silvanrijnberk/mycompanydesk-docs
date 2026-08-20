@@ -1,5 +1,6 @@
 ---
 title: Wiederkehrende Rechnungen
+description: "Richten Sie Rechnungsvorlagen ein, die planmäßig Rechnungen erzeugen, für Retainer, Abos, Mieteinzug und Wartungsverträge."
 ---
 
 # Wiederkehrende Rechnungen

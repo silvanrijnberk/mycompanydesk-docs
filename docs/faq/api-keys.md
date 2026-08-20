@@ -1,5 +1,6 @@
 ---
-title: API keys
+title: "API-sleutels"
+description: "Om API-sleutels te beheren: ga naar Workspace-instellingen > API-sleutels, klik op API-sleutel aanmaken en geef hem een duidelijke naam."
 last_verified: 2026-05-09
 chatbot:
   triggers: ["api key", "api keys", "api access", "integration", "api token", "connect api", "api instellen", "api schlussel", "cle api"]

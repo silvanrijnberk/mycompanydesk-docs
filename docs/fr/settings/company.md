@@ -1,5 +1,6 @@
 ---
 title: "Paramètres de l'entreprise"
+description: "Le nom sur vos factures, votre adresse et votre numéro d'entreprise, votre logo et votre couleur, et votre site public, réunis dans les paramètres."
 last_verified: 2026-07-02
 ---
 

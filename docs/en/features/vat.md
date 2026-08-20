@@ -1,5 +1,6 @@
 ---
 title: VAT
+description: "Track collected and paid VAT, prepare your return and stay ahead of deadlines. The page mirrors the Dutch BTW form for companies in the Netherlands."
 last_verified: 2026-08-16
 ---
 

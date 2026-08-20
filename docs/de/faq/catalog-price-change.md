@@ -1,5 +1,6 @@
 ---
 title: Alle Preise auf einmal ändern
+description: "Gehen Sie zu Angebot und klicken Sie auf Preise ändern, um viele Preise auf einmal zu aktualisieren."
 last_verified: 2026-08-06
 chatbot:
   triggers:

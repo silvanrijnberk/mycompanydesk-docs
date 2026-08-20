@@ -1,5 +1,6 @@
 ---
 title: "Creditnota"
+description: "Zo maak je een creditnota: open de originele factuur die je wilt crediteren, klik op Creditnota / correctie maken op de detailpagina."
 last_verified: 2026-08-16
 chatbot:
   triggers: ["credit note", "create credit note", "issue credit", "credit invoice", "creditnota", "creditnota aanmaken", "gutschrift erstellen", "note de credit", "avoir"]

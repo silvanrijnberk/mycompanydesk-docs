@@ -1,5 +1,6 @@
 ---
 title: Set up your company
+description: "The setup wizard fills in your sender block, payment details and VAT status around your first invoice, with a KVK lookup and a live preview."
 last_verified: 2026-07-21
 ---
 

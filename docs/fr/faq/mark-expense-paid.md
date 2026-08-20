@@ -1,5 +1,6 @@
 ---
 title: "Marquer une dépense comme payée"
+description: "Pour marquer une dépense comme payée : ouvrez la dépense depuis la liste, cliquez sur Marquer comme payé, le statut passe immédiatement à Payée."
 last_verified: 2026-05-09
 chatbot:
   triggers:

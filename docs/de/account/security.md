@@ -1,5 +1,6 @@
 ---
 title: Sicherheit
+description: "Schützen Sie Ihr Konto mit einem starken Passwort, Zwei-Faktor-Authentifizierung und einem Blick auf Ihre aktiven Sitzungen."
 last_verified: 2026-07-10
 ---
 

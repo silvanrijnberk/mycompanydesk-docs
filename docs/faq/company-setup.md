@@ -1,5 +1,6 @@
 ---
 title: "Bedrijf instellen"
+description: "Checklist voor de eerste keer instellen. Alles staat onder Instellingen: ga naar Instellingen > Bedrijfsgegevens en voeg je officiële bedrijfsnaam."
 last_verified: 2026-07-02
 chatbot:
   triggers: ["set up company", "company setup", "company settings", "first setup", "getting started", "initial setup", "how to start", "where to begin", "bedrijf instellen", "aan de slag", "unternehmen einrichten", "configurer entreprise"]

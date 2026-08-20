@@ -1,5 +1,6 @@
 ---
 title: Introduction
+description: "MyCompanyDesk est une plateforme tout-en-un de comptabilité et de gestion pour indépendants, petites entreprises et gestionnaires de biens locatifs."
 ---
 
 # Introduction

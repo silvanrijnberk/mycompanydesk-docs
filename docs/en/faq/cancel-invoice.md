@@ -1,5 +1,6 @@
 ---
 title: Cancel an invoice
+description: "To cancel a sent invoice: open the invoice from your invoice list, in the sidebar, scroll to the Danger Zone section, click Mark as Canceled."
 last_verified: 2026-08-14
 chatbot:
   triggers: ["cancel invoice", "void invoice", "annul invoice", "reverse invoice", "credit note", "undo invoice", "factuur annuleren", "factuur ongedaan", "hoe annuleer ik een factuur", "rechnung stornieren", "wie storniere ich eine rechnung", "annuler facture"]

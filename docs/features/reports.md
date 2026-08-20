@@ -1,5 +1,6 @@
 ---
 title: Rapporten
+description: "Vijf gerichte rapportweergaven plus een overzicht dat ze samenbrengt, elk met de cijfers en de grafieken op een plek."
 ---
 
 # Rapporten

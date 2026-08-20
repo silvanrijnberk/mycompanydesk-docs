@@ -1,5 +1,6 @@
 ---
 title: "Berichtsübersicht"
+description: "Berichte ansehen: Gehen Sie zu Berichte und wechseln Sie zwischen Übersicht, Gewinn und Verlust, Cashflow, Kunden, Prognose und Einkommensteuer."
 last_verified: 2026-05-09
 chatbot:
   triggers:

@@ -1,5 +1,6 @@
 ---
-title: Edit an expense
+title: "Ausgabe bearbeiten"
+description: "So bearbeiten Sie eine Ausgabe: Öffnen Sie sie aus der Liste, klicken Sie auf Bearbeiten und ändern Sie Lieferant, Betrag, Kategorie oder Datum."
 last_verified: 2026-08-16
 chatbot:
   triggers: ["edit expense", "change expense", "modify expense", "update expense", "correct expense", "uitgave bewerken", "uitgave wijzigen", "ausgabe bearbeiten", "modifier depense"]

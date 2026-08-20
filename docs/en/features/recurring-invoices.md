@@ -1,5 +1,6 @@
 ---
 title: Recurring Invoices
+description: "Set up invoice templates that generate on a schedule, for monthly retainers, subscriptions, rent collection and maintenance contracts."
 ---
 
 # Recurring Invoices

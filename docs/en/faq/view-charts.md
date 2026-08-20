@@ -1,5 +1,6 @@
 ---
 title: "View charts"
+description: "To view charts and graphs: go to Reports in the sidebar, open one of the report views: Overview, P&L, Cash Flow, Clients, or Forecast."
 last_verified: 2026-05-09
 chatbot:
   triggers: ["view charts", "see graphs", "financial charts", "revenue chart", "expense chart", "grafieken bekijken", "diagramme anzeigen", "voir graphiques"]

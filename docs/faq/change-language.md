@@ -1,5 +1,6 @@
 ---
 title: "Taal wijzigen"
+description: "Je kunt de taal van de app-interface wijzigen. Ga naar Instellingen > Weergave en kies onder Taal van de app voor Nederlands, Engels, Duits of Frans."
 last_verified: 2026-07-02
 chatbot:
   triggers:

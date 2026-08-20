@@ -1,5 +1,6 @@
 ---
-title: "Upload receipt"
+title: "Beleg hochladen"
+description: "Beleg hochladen oder ersetzen: Öffnen Sie eine gespeicherte Ausgabe und nutzen Sie das Büroklammer-Symbol im Seitenpanel oder die Aktion auf der Seite."
 last_verified: 2026-08-15
 chatbot:
   triggers: ["upload receipt", "attach receipt", "add receipt", "receipt photo", "scan receipt", "expense receipt", "bon uploaden", "bon toevoegen", "beleg hochladen", "telecharger recu"]

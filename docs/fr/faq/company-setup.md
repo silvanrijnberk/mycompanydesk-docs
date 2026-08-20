@@ -1,5 +1,6 @@
 ---
 title: "Configurer l'entreprise"
+description: "Checklist de première configuration. Tout se trouve dans les Paramètres : allez dans Paramètres > Données de l'entreprise et ajoutez le nom légal."
 last_verified: 2026-07-02
 chatbot:
   triggers: ["set up company", "company setup", "company settings", "first setup", "getting started", "initial setup", "how to start", "where to begin", "bedrijf instellen", "aan de slag", "unternehmen einrichten", "configurer entreprise"]

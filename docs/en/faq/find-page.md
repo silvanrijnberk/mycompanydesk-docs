@@ -1,5 +1,6 @@
 ---
 title: "Find page"
+description: "To find pages in the app, use the main navigation menu. The main sections are Dashboard, Invoices, Quotes, Expenses, Customers, Reports and VAT."
 last_verified: 2026-05-09
 chatbot:
   triggers: ["where is", "find page", "navigate to", "how to get to", "menu location", "waar vind ik", "waar is", "wo finde ich", "ou trouver"]

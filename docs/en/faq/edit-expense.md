@@ -1,5 +1,6 @@
 ---
 title: Edit an expense
+description: "To edit an expense: open the expense from the list, click Edit."
 last_verified: 2026-08-16
 chatbot:
   triggers: ["edit expense", "change expense", "modify expense", "update expense", "correct expense", "uitgave bewerken", "uitgave wijzigen", "ausgabe bearbeiten", "modifier depense"]

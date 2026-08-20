@@ -1,5 +1,6 @@
 ---
 title: Setupwizard
+description: "De wizard op /setup bouwt je eerste factuur: hij haalt je gegevens uit het KVK-register, vult betaalgegevens en BTW in en toont live een voorbeeld."
 last_verified: 2026-07-15
 ---
 

@@ -1,5 +1,6 @@
 ---
 title: "Customer collections"
+description: "To view customer data that affects invoice follow-up in the app: open Customers and select the customer."
 last_verified: 2026-05-09
 chatbot:
   triggers: ["customer data collections", "improve collections", "data improve collections", "collections", "incasso", "klantgegevens incasso", "forderungsmanagement", "recouvrement"]

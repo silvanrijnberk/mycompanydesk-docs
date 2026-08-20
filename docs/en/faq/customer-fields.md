@@ -1,5 +1,6 @@
 ---
 title: "Customer fields"
+description: "The customer fields the app uses most often are: company or customer name - shown on invoices and quotes."
 last_verified: 2026-05-09
 chatbot:
   triggers:

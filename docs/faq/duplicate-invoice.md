@@ -1,5 +1,6 @@
 ---
 title: "Factuur dupliceren"
+description: "Zo dupliceer je een factuur: open de factuur die je wilt kopiëren, zoek in de zijbalk de sectie Acties, klik op Dupliceren."
 last_verified: 2026-08-17
 chatbot:
   triggers: ["duplicate invoice", "copy invoice", "clone invoice", "reuse invoice", "invoice template", "factuur kopieren", "factuur dupliceren", "rechnung kopieren", "dupliquer facture"]

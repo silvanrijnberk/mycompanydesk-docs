@@ -1,5 +1,6 @@
 ---
 title: Add a customer
+description: "Here's how to add a customer: go to Customers and open New Customer, enter the customer or company name and contact details."
 last_verified: 2026-05-09
 chatbot:
   triggers: ["create customer", "new customer", "add customer", "add client", "new client", "klant toevoegen", "nieuwe klant", "klant aanmaken", "kunde hinzufugen", "wie fuege ich einen kunden hinzu", "neuer kunde", "ajouter client", "comment ajouter un nouveau client"]

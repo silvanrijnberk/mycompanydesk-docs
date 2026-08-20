@@ -1,5 +1,6 @@
 ---
 title: "Betaalmethoden"
+description: "Om betaalmethoden op documenten te beheren: ga naar Instellingen en open Betalen."
 last_verified: 2026-07-22
 chatbot:
   triggers:

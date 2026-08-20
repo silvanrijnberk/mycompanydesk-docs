@@ -1,5 +1,6 @@
 ---
 title: Edit invoice
+description: "To edit an invoice: open the invoice from the list, click Edit; this is available while the invoice is a draft or finalized but not yet sent."
 last_verified: 2026-07-02
 chatbot:
   triggers: ["edit invoice", "change invoice", "modify invoice", "update invoice", "correct invoice", "fix invoice", "factuur bewerken", "factuur wijzigen", "factuur aanpassen", "hoe bewerk ik een factuur", "rechnung bearbeiten", "wie bearbeite ich eine rechnung", "modifier facture"]

@@ -1,5 +1,6 @@
 ---
 title: Bankfeed
+description: "Verbinden Sie Ihr Bankkonto, damit Transaktionen einfließen. Regeln machen aus Zahlungen Ausgabenentwürfe, die Sie vor der Buchung bestätigen."
 ---
 
 # Bankfeed

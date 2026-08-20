@@ -1,5 +1,6 @@
 ---
-title: VAT return
+title: "BTW-aangifte"
+description: "Om BTW-cijfers in de app te bekijken: open BTW, kies de periode die je wilt controleren."
 last_verified: 2026-05-09
 chatbot:
   triggers: ["vat return", "vat filing", "file vat", "prepare vat", "vat report", "btw aangifte", "btw indienen", "btw berekening", "mwst meldung", "declaration tva"]

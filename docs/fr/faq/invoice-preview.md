@@ -1,5 +1,6 @@
 ---
-title: "Invoice preview"
+title: "Aperçu de facture"
+description: "Pour prévisualiser une facture avant l'envoi : ouvrez la facture, cliquez sur l'icône Aperçu ou PDF, un aperçu du PDF de la facture s'affiche."
 last_verified: 2026-08-18
 chatbot:
   triggers:

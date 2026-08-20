@@ -1,5 +1,6 @@
 ---
 title: "Klantgegevens en incasso"
+description: "Om klantgegevens te bekijken die in de app invloed hebben op factuuropvolging: open Klanten en selecteer de klant."
 last_verified: 2026-05-09
 chatbot:
   triggers: ["customer data collections", "improve collections", "data improve collections", "collections", "incasso", "klantgegevens incasso", "forderungsmanagement", "recouvrement"]

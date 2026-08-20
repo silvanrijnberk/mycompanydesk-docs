@@ -1,5 +1,6 @@
 ---
 title: Dashboard
+description: "Het startscherm van je werkruimte: periodekiezer, KPI-overzicht, een aandachtswidget en blokken die alleen verschijnen als je cijfers ze nuttig maken."
 last_verified: 2026-08-18
 ---
 

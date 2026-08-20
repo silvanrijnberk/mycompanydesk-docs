@@ -1,5 +1,6 @@
 ---
 title: Modifier tous les prix en une fois
+description: "Rendez-vous dans Offre et cliquez sur Modifier les prix pour mettre à jour plusieurs prix en une seule fois."
 last_verified: 2026-08-06
 chatbot:
   triggers:

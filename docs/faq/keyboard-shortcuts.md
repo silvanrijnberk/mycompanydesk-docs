@@ -1,5 +1,6 @@
 ---
 title: Sneltoetsen
+description: "De applicatie heeft een kleine set sneltoetsen: druk op Cmd+K (Mac) of Ctrl+K (Windows/Linux) om het zoekvenster te openen: zoek in klanten, facturen."
 last_verified: 2026-07-02
 chatbot:
   triggers: ["keyboard shortcuts", "shortcuts", "hotkeys", "quick navigation", "sneltoetsen", "tastaturkurzel", "raccourcis clavier"]

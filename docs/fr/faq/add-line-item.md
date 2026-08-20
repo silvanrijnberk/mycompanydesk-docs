@@ -1,5 +1,6 @@
 ---
-title: Add line item
+title: "Ajouter une ligne"
+description: "Pour ajouter, modifier ou supprimer des lignes sur une facture : ouvrez la facture en mode édition."
 last_verified: 2026-05-09
 chatbot:
   triggers: ["add line item", "edit line item", "remove line item", "invoice line", "add row", "new line", "factuurregel toevoegen", "regel bewerken", "rechnungsposition", "ligne de facture", "ajouter ligne"]

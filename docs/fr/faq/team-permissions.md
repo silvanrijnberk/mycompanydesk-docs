@@ -1,5 +1,6 @@
 ---
 title: Permissions de l'équipe
+description: "Les permissions de page définissent ce que chaque membre d'équipe ou comptable peut faire : lecture - consulter les données."
 last_verified: 2026-07-02
 chatbot:
   triggers: ["team permissions", "manage team permissions", "page permissions", "read write create", "permission settings", "access control", "granular permissions", "read only", "write access", "create access", "pagina rechten", "teamrechten", "lezen schrijven", "toegang instellen", "seitenberechtigungen", "teamberechtigungen", "lese schreibzugriff", "permissions page", "permissions de l'equipe", "droits acces"]

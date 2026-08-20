@@ -1,5 +1,6 @@
 ---
 title: Quotes
+description: "Create and send quotations, track whether they are accepted, and convert an accepted quote into an invoice in one step."
 ---
 
 # Quotes

@@ -1,5 +1,6 @@
 ---
 title: Rechnungen
+description: "Erstellen Sie Rechnungen, versenden Sie sie mit Zahlungslinks und verfolgen Sie sie vom Entwurf über offen bis bezahlt, mit Filtern je Status."
 ---
 
 # Rechnungen

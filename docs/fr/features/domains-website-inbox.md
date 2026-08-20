@@ -1,5 +1,6 @@
 ---
 title: Domaines, site web et boite de reception
+description: "Domaines personnalisés, site vitrine hébergé et boîte partagée arrivent en un seul lot, derrière custom_domains et public_business_page."
 last_verified: 2026-08-15
 ---
 

@@ -1,5 +1,6 @@
 ---
 title: "Send an invoice by email"
+description: "To send an invoice by email: open the invoice (it should be saved first), click Send or the email button, the system uses the customer's email address."
 last_verified: 2026-05-09
 chatbot:
   triggers:

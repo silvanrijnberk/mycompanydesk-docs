@@ -1,5 +1,6 @@
 ---
 title: E-Mail-Vorlagen
+description: "E-Mail-Vorlagen lassen sich nicht bearbeiten. MyCompanyDesk nutzt feste, erprobte Texte für Rechnungs-, Gutschrift-, Angebots- und Erinnerungsmails."
 last_verified: 2026-08-14
 chatbot:
   triggers: ["email template", "customize email", "invoice email message", "email text", "change email message", "email sjabloon", "email aanpassen", "e-mail vorlage", "modele email", "personnaliser email"]

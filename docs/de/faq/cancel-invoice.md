@@ -1,5 +1,6 @@
 ---
 title: "Rechnung stornieren"
+description: "So stornieren Sie eine versendete Rechnung: öffnen Sie die Rechnung aus Ihrer Rechnungsliste, scrollen Sie in der Seitenleiste zum Bereich Gefahrenzone."
 last_verified: 2026-08-14
 chatbot:
   triggers: ["cancel invoice", "void invoice", "annul invoice", "reverse invoice", "credit note", "undo invoice", "factuur annuleren", "factuur ongedaan", "hoe annuleer ik een factuur", "rechnung stornieren", "wie storniere ich eine rechnung", "annuler facture"]

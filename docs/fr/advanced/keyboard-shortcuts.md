@@ -1,5 +1,6 @@
 ---
 title: Raccourcis clavier
+description: "Les raccourcis clavier qui fonctionnent vraiment dans MyCompanyDesk, à commencer par Cmd+K ou Ctrl+K pour la palette de recherche."
 ---
 
 # Raccourcis clavier

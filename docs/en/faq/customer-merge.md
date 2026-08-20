@@ -1,5 +1,6 @@
 ---
 title: Merge customers
+description: "To handle duplicate customers: identify the duplicate entries in your customer list, decide which record to keep (the one with the most complete data)."
 last_verified: 2026-05-09
 chatbot:
   triggers: ["merge customers", "duplicate customer", "combine customers", "customer duplicate", "klanten samenvoegen", "dubbele klant", "kunden zusammenfuhren", "fusionner clients", "doublons clients"]

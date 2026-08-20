@@ -1,5 +1,6 @@
 ---
 title: "Plan & payments"
+description: "What you pay us, your invoices from us and your payment card, on Settings, Je abonnement at /settings/abonnement."
 last_verified: 2026-08-05
 ---
 

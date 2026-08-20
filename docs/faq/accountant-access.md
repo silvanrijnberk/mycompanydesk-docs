@@ -1,5 +1,6 @@
 ---
 title: "Boekhouder toegang geven"
+description: "Boekhoudertoegang begint op twee manieren: jij nodigt je boekhouder uit vanuit je werkruimte, of je boekhouder nodigt jou uit vanuit het portaal."
 last_verified: 2026-08-15
 chatbot:
   triggers:

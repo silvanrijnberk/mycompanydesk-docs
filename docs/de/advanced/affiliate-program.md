@@ -1,5 +1,6 @@
 ---
 title: Affiliate-Programm
+description: "Verdienen Sie Provision, indem Sie Besucher vermitteln, die ein kostenpflichtiges Abo abschließen. Offen für Verlage, Vergleichsseiten und Blogs."
 ---
 
 # Affiliate-Programm

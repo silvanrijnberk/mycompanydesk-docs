@@ -1,5 +1,6 @@
 ---
-title: "Automatic recurring expenses"
+title: "Dépenses récurrentes automatiques"
+description: "Pour automatiser une dépense récurrente : ouvrez Dépenses récurrentes et saisissez le fournisseur, le montant, la catégorie et la fréquence."
 last_verified: 2026-05-09
 chatbot:
   triggers:

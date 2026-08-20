@@ -1,5 +1,6 @@
 ---
 title: Introduction
+description: "MyCompanyDesk is an all-in-one accounting platform for freelancers, small businesses and rental property managers, from invoices to VAT filing."
 ---
 
 # Introduction

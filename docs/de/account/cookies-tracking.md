@@ -1,5 +1,6 @@
 ---
 title: Cookies und Analytics
+description: "Wie MyCompanyDesk Cookies, lokalen Speicher und Analytics auf der Marketingseite und in der App nutzt, und wie Sie Ihre Auswahl jederzeit ändern."
 last_verified: 2026-07-14
 ---
 

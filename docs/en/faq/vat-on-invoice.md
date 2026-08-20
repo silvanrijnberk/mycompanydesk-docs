@@ -1,5 +1,6 @@
 ---
 title: VAT on invoice
+description: "To set VAT on an invoice: edit or create the invoice and pick the VAT rate per line, so each line can carry its own rate."
 last_verified: 2026-07-02
 chatbot:
   triggers: ["vat on invoice", "add vat to invoice", "tax rate invoice", "change vat rate", "btw op factuur", "btw tarief", "mwst auf rechnung", "tva sur facture"]

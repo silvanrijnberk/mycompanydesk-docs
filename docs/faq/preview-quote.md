@@ -1,5 +1,6 @@
 ---
-title: Preview a quote
+title: "Offerte bekijken"
+description: "Om een offerte te bekijken, printen of als PDF te downloaden: open de offerte-detailpagina, klik op Preview, gebruik Print of Download PDF."
 last_verified: 2026-05-09
 chatbot:
   triggers: ["preview quote", "quote preview", "preview proposal", "view quote pdf", "print quote", "offerte voorbeeld", "offerte preview", "angebot vorschau", "apercu devis", "previsualizar cotizacion", "visualizar proposta"]

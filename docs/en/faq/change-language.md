@@ -1,5 +1,6 @@
 ---
 title: "Change language"
+description: "You can change the language of the app interface. Go to Settings > Weergave (display) and pick Dutch, English, German, or French under App language."
 last_verified: 2026-07-02
 chatbot:
   triggers:

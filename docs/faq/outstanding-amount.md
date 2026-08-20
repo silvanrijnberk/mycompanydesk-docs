@@ -1,5 +1,6 @@
 ---
 title: "Openstaand bedrag"
+description: "Zo zie je het totale openstaande bedrag: ga naar Facturen en filter op Open, Verzonden of Te laat, bekijk de totalen in de lijst of de KPI-kop."
 last_verified: 2026-07-02
 chatbot:
   triggers: ["outstanding amount", "total unpaid", "money owed", "total outstanding", "how much owed", "openstaand bedrag", "totaal onbetaald", "offener betrag", "montant impaye", "somme due"]

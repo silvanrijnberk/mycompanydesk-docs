@@ -1,5 +1,6 @@
 ---
 title: "Gearchiveerde facturen vinden"
+description: "Gearchiveerde facturen vind je onder Facturen > Archief. Sta je al in de facturenlijst, schakel dan over naar de weergave Archief."
 last_verified: 2026-05-09
 chatbot:
   triggers:

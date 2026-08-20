@@ -1,5 +1,6 @@
 ---
 title: Facturation electronique Peppol
+description: "Envoyez factures et avoirs en facture électronique structurée via Peppol, directement dans la comptabilité de votre client, et recevez-les de même."
 last_verified: 2026-08-15
 ---
 

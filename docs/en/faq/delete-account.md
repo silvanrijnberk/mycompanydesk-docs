@@ -1,5 +1,6 @@
 ---
 title: Delete account
+description: "To delete your account: download your data first at Settings (Instellingen) > Gegevens downloaden if you want to keep a copy."
 last_verified: 2026-07-02
 chatbot:
   triggers: ["delete account", "close account", "remove account", "cancel subscription", "account verwijderen", "account opzeggen", "konto loschen", "supprimer compte", "resilier abonnement"]

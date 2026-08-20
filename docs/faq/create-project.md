@@ -1,5 +1,6 @@
 ---
-title: "Create a project"
+title: "Project aanmaken"
+description: "Om een project aan te maken: ga naar Projecten en open Nieuw project, vul de projectnaam, het nummer en de omschrijving in, koppel zo nodig de klant."
 last_verified: 2026-05-09
 chatbot:
   triggers:

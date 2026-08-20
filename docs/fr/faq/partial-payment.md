@@ -1,5 +1,6 @@
 ---
-title: "Partial payment"
+title: "Paiement partiel"
+description: "Pour enregistrer un paiement partiel sur une facture : ouvrez la facture depuis la liste, cliquez sur Enregistrer un paiement ou l'action de paiement."
 last_verified: 2026-05-09
 chatbot:
   triggers: ["partial payment", "record partial payment", "half payment", "part payment", "deposit received", "gedeeltelijke betaling", "deelbetaling", "aanbetaling ontvangen", "teilzahlung", "paiement partiel", "acompte recu"]

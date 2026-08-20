@@ -1,5 +1,6 @@
 ---
 title: API-integratie
+description: "Benader je facturen, uitgaven en klanten programmatisch via de REST API met een X-API-Key-header. API-toegang hoort bij het Pro-abonnement."
 ---
 
 # API-integratie

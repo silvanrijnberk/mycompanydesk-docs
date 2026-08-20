@@ -1,5 +1,6 @@
 ---
 title: "Rechercher des dépenses"
+description: "Pour rechercher et filtrer les dépenses : accédez aux Dépenses, utilisez la barre de recherche pour chercher par fournisseur, description ou catégorie."
 last_verified: 2026-05-09
 chatbot:
   triggers: ["search expenses", "find expense", "filter expenses", "sort expenses", "uitgave zoeken", "uitgaven filteren", "ausgabe suchen", "chercher depense"]

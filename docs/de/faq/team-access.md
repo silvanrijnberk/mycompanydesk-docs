@@ -1,5 +1,6 @@
 ---
 title: "Teamzugang"
+description: "Zugang zum Arbeitsbereich verwalten: Gehen Sie zu Einstellungen, Zugang und Steuerberater, prüfen Sie die Mitglieder und laden Sie Personen ein."
 last_verified: 2026-07-02
 chatbot:
   triggers:

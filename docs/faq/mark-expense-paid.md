@@ -1,5 +1,6 @@
 ---
 title: "Uitgave als betaald markeren"
+description: "Om een uitgave als betaald te markeren: open de uitgave vanuit de lijst, klik op Markeer als betaald, de status wordt direct bijgewerkt naar Betaald."
 last_verified: 2026-05-09
 chatbot:
   triggers:

@@ -1,5 +1,6 @@
 ---
 title: "Korting op een factuur"
+description: "Zo geef je korting op een factuur: bewerk of maak een factuur, voeg een aparte factuurregel toe met een negatief bedrag voor de korting."
 last_verified: 2026-07-02
 chatbot:
   triggers: ["discount", "add discount", "invoice discount", "percentage discount", "reduce price", "korting", "korting toevoegen", "rabatt", "rabatt gewahren", "remise", "reduction"]

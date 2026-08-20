@@ -1,5 +1,6 @@
 ---
 title: "Dark mode"
+description: "To switch your app theme: go to Settings > Weergave (display), choose Licht (light), Donker (dark), or Vanzelf (automatic, follows your device)."
 last_verified: 2026-07-02
 chatbot:
   triggers: ["dark mode", "light mode", "switch theme", "change theme", "night mode", "donkere modus", "thema wijzigen", "dunkler modus", "mode sombre"]

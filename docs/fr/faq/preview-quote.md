@@ -1,5 +1,6 @@
 ---
-title: Preview a quote
+title: "Aperçu d'un devis"
+description: "Pour prévisualiser, imprimer ou télécharger un devis en PDF : ouvrez la page du devis, cliquez sur Aperçu, puis Imprimer ou Télécharger PDF."
 last_verified: 2026-05-09
 chatbot:
   triggers: ["preview quote", "quote preview", "preview proposal", "view quote pdf", "print quote", "offerte voorbeeld", "offerte preview", "angebot vorschau", "apercu devis", "previsualizar cotizacion", "visualizar proposta"]

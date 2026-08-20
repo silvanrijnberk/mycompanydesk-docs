@@ -1,5 +1,6 @@
 ---
 title: "Dashboard gebruiken"
+description: "Je dashboard geeft je een snel overzicht van: een periodekiezer voor maand, kwartaal of jaar."
 last_verified: 2026-08-18
 chatbot:
   triggers:

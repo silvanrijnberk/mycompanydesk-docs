@@ -1,5 +1,6 @@
 ---
 title: Factures
+description: "Créez des factures professionnelles, envoyez-les avec un lien de paiement et suivez-les du brouillon à l'encaissement, avec un filtre par statut."
 ---
 
 # Factures

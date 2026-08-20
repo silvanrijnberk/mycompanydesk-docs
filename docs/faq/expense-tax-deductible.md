@@ -1,5 +1,6 @@
 ---
-title: Expense tax-deductible
+title: "Uitgave aftrekbaar"
+description: "Om aftrekbaarheid in de app vast te leggen: open de uitgave, stel voor dat record de optie aftrekbaar of niet-aftrekbaar in."
 last_verified: 2026-05-09
 chatbot:
   triggers: ["tax deductible", "deductible expenses", "which expenses deductible", "tax write off", "aftrekbare kosten", "welke kosten aftrekbaar", "absetzbare ausgaben", "depenses deductibles", "charges deductibles"]

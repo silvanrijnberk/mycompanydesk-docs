@@ -1,5 +1,6 @@
 ---
 title: Cookies and analytics
+description: "How MyCompanyDesk uses cookies, local storage and analytics on the marketing site and in the app, and how to change your consent at any time."
 last_verified: 2026-07-14
 ---
 

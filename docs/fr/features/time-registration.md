@@ -1,5 +1,6 @@
 ---
 title: Agenda
+description: "Saisissez vos heures, planifiez vos journées et transformez le temps facturable en factures. Agenda réunit le suivi du temps et votre calendrier."
 ---
 
 # Agenda

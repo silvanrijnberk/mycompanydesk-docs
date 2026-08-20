@@ -1,5 +1,6 @@
 ---
 title: "Supprimer une dépense"
+description: "Pour supprimer une dépense : ouvrez la dépense depuis votre liste de dépenses, dans la barre latérale, faites défiler jusqu'à la section Zone de danger."
 last_verified: 2026-08-16
 chatbot:
   triggers: ["delete expense", "remove expense", "trash expense", "erase expense", "uitgave verwijderen", "uitgave wissen", "hoe verwijder ik een uitgave", "ausgabe loschen", "wie losche ich eine ausgabe", "supprimer depense"]

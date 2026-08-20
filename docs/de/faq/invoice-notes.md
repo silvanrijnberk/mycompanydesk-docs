@@ -1,5 +1,6 @@
 ---
-title: Invoice notes
+title: "Notizen auf einer Rechnung"
+description: "Notizen zu einer Rechnung hinzufügen: Öffnen Sie die Rechnung im Bearbeitungsmodus und nutzen Sie den Bereich Notizen unter den Rechnungspositionen."
 last_verified: 2026-05-09
 chatbot:
   triggers: ["invoice notes", "add note", "invoice memo", "add comment", "internal note", "factuur notitie", "opmerking toevoegen", "rechnungsnotiz", "note de facture", "ajouter remarque"]

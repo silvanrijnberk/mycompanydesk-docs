@@ -1,5 +1,6 @@
 ---
-title: "Customer fields"
+title: "Champs client"
+description: "Les champs client les plus utilisés : le nom visible sur les factures et devis, l'adresse e-mail d'envoi, les champs d'adresse et le numéro de TVA."
 last_verified: 2026-05-09
 chatbot:
   triggers:

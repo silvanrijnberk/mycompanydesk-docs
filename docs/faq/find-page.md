@@ -1,5 +1,6 @@
 ---
-title: "Find page"
+title: "Pagina vinden"
+description: "Om pagina's in de app te vinden: gebruik het hoofdmenu in de navigatie."
 last_verified: 2026-05-09
 chatbot:
   triggers: ["where is", "find page", "navigate to", "how to get to", "menu location", "waar vind ik", "waar is", "wo finde ich", "ou trouver"]

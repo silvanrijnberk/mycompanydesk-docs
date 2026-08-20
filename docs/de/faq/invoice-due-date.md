@@ -1,5 +1,6 @@
 ---
 title: "Fälligkeitsdatum einer Rechnung"
+description: "So ändern Sie die Frist einer einzelnen Rechnung: öffnen Sie die Rechnung im Bearbeitungsmodus."
 last_verified: 2026-07-02
 chatbot:
   triggers: ["set due date", "change due date", "payment terms", "payment deadline", "when invoice due", "net 30", "net 14", "vervaldatum", "betaaltermijn", "zahlungsfrist", "echeance", "date d echeance", "conditions de paiement", "modifier conditions de paiement", "changer conditions de paiement", "comment modifier les conditions de paiement", "comment changer les conditions de paiement"]

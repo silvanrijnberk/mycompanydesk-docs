@@ -1,5 +1,6 @@
 ---
 title: "Annuler une facture"
+description: "Pour annuler une facture envoyée : ouvrez la facture depuis votre liste de factures."
 last_verified: 2026-08-14
 chatbot:
   triggers: ["cancel invoice", "void invoice", "annul invoice", "reverse invoice", "credit note", "undo invoice", "factuur annuleren", "factuur ongedaan", "hoe annuleer ik een factuur", "rechnung stornieren", "wie storniere ich eine rechnung", "annuler facture"]

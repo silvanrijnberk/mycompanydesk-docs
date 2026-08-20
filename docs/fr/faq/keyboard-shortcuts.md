@@ -1,5 +1,6 @@
 ---
 title: Raccourcis clavier
+description: "L'application propose un petit ensemble de raccourcis clavier : appuyez sur Cmd+K (Mac) ou Ctrl+K (Windows/Linux) pour ouvrir la fenêtre de recherche."
 last_verified: 2026-07-02
 chatbot:
   triggers: ["keyboard shortcuts", "shortcuts", "hotkeys", "quick navigation", "sneltoetsen", "tastaturkurzel", "raccourcis clavier"]

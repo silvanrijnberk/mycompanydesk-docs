@@ -1,5 +1,6 @@
 ---
 title: Vos paramètres personnels
+description: "Votre nom, votre adresse e-mail, votre mot de passe et vos préférences se trouvent en haut des paramètres et s'enregistrent pendant la saisie."
 last_verified: 2026-08-10
 ---
 

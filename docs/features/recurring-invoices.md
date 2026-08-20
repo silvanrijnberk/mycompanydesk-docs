@@ -1,5 +1,6 @@
 ---
 title: Terugkerende facturen
+description: "Stel factuursjablonen in die volgens schema facturen aanmaken, voor maandelijkse retainers, abonnementen, huur en onderhoudscontracten."
 ---
 
 # Terugkerende facturen

@@ -1,5 +1,6 @@
 ---
-title: "Convert a quote to an invoice"
+title: "Angebot in Rechnung umwandeln"
+description: "Angebot in Rechnung umwandeln: Öffnen Sie die Angebotsdetailseite und klicken Sie auf Rechnung aus Angebot erstellen, ein Entwurf übernimmt die Daten."
 last_verified: 2026-05-09
 chatbot:
   triggers:

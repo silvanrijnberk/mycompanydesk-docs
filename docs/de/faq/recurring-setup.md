@@ -1,5 +1,6 @@
 ---
 title: "Wiederkehrende Rechnungen einrichten"
+description: "So richten Sie eine wiederkehrende Rechnung ein: gehen Sie zu Wiederkehrende Rechnungen und klicken Sie auf Wiederkehrende Rechnung hinzufügen."
 last_verified: 2026-07-02
 chatbot:
   triggers: ["set up recurring", "recurring invoice", "recurring expense", "automate invoice", "automatic invoice", "monthly invoice", "terugkerende factuur", "terugkerende uitgave", "wiederkehrende rechnung", "facture recurrente"]

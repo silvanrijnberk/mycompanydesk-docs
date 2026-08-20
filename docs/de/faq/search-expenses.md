@@ -1,5 +1,6 @@
 ---
 title: "Ausgaben suchen"
+description: "So suchen und filtern Sie Ausgaben: gehen Sie zu Ausgaben, nutzen Sie die Suchleiste, um nach Lieferant, Beschreibung oder Kategorie zu suchen."
 last_verified: 2026-05-09
 chatbot:
   triggers: ["search expenses", "find expense", "filter expenses", "sort expenses", "uitgave zoeken", "uitgaven filteren", "ausgabe suchen", "chercher depense"]

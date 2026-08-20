@@ -1,5 +1,6 @@
 ---
-title: Send a quote
+title: "Envoyer un devis"
+description: "Pour envoyer un devis par e-mail : ouvrez la page du devis, cliquez sur Envoyer, vérifiez l'aperçu et le destinataire, puis confirmez l'envoi."
 last_verified: 2026-05-09
 chatbot:
   triggers: ["send quote", "email quote", "send proposal", "deliver quote", "quote email", "offerte versturen", "devis envoyer", "angebot senden", "enviar cotizacion", "enviar proposta", "inviare preventivo"]

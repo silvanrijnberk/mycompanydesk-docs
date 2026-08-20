@@ -1,5 +1,6 @@
 ---
-title: "Edit a customer"
+title: "Modifier un client"
+description: "Pour modifier un client : ouvrez son profil depuis Clients, cliquez sur Modifier et mettez à jour le nom, l'adresse, l'e-mail ou le numéro de TVA."
 last_verified: 2026-05-09
 chatbot:
   triggers:

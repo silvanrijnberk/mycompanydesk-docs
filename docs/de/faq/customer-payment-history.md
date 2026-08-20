@@ -1,5 +1,6 @@
 ---
 title: "Zahlungshistorie eines Kunden"
+description: "So sehen Sie die Zahlungshistorie eines Kunden: öffnen Sie Kunden und wählen Sie den Kunden aus."
 last_verified: 2026-05-09
 chatbot:
   triggers: ["customer payment history", "payment history", "customer invoices", "customer payments", "betalingsgeschiedenis", "klant facturen bekijken", "zahlungshistorie", "historique paiements client"]

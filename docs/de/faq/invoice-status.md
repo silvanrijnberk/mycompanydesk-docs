@@ -1,5 +1,6 @@
 ---
-title: Invoice status
+title: "Rechnungsstatus"
+description: "Rechnungsstatus erklärt: entwurf - noch nicht gesendet, frei bearbeitbar. Ein Entwurf kann erst als bezahlt markiert oder mit einer Zahlung erfasst."
 last_verified: 2026-08-15
 chatbot:
   triggers: ["invoice status", "invoice statuses", "what do invoice statuses mean", "draft sent paid", "invoice lifecycle", "factuurstatus", "factuur statussen", "rechnungsstatus", "statut facture"]

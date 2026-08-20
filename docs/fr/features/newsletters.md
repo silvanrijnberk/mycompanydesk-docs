@@ -1,6 +1,6 @@
 ---
 title: Infolettres
-description: Concevez, envoyez et suivez des infolettres dans MyCompanyDesk.
+description: "Rédigez, planifiez et envoyez des mailings à vos clients. L'éditeur est relié à votre liste clients, sans import CSV pour tenir les destinataires à jour."
 last_verified: 2026-08-18
 ---
 

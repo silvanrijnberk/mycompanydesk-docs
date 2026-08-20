@@ -1,5 +1,6 @@
 ---
 title: Transmission au comptable
+description: "Transmettez factures et dépenses automatiquement au logiciel de votre comptable, comme Exact, SnelStart, Twinfield ou Yuki, au lieu d'un envoi manuel."
 last_verified: 2026-08-19
 ---
 

@@ -1,5 +1,6 @@
 ---
-title: Edit a quote
+title: "Modifier un devis"
+description: "Pour modifier un devis : ouvrez-le depuis la liste, cliquez sur Modifier, mettez à jour le client, les lignes, les notes ou les dates, enregistrez."
 last_verified: 2026-05-09
 chatbot:
   triggers: ["edit quote", "change quote", "update quote", "modify quote", "correct quote", "offerte bewerken", "offerte wijzigen", "angebot bearbeiten", "devis modifier", "editar cotizacion", "editar proposta", "modificare preventivo"]

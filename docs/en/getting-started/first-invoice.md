@@ -1,5 +1,6 @@
 ---
 title: Your First Invoice
+description: "A step by step walkthrough of creating and sending your first invoice, from company details and customer to the send button."
 ---
 
 # Your First Invoice

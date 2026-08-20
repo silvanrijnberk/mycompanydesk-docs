@@ -81,8 +81,10 @@ const sharedHead = [
 ]
 
 /**
- * Per-locale site title and social preview text. These used to be one English
- * string for all four locales, so a Dutch page shared an English preview.
+ * Per-locale fallback title and social preview text. Every page carries its own
+ * `description` in frontmatter, which is what Google and the social preview
+ * should show; this map only catches a page that has none yet.
+ *
  * Emitted per page in `transformPageData` rather than in a locale `head`,
  * because locale head entries are appended to the shared head and would leave
  * two competing og:description tags on the page.
@@ -106,12 +108,13 @@ const LOCALE_META = {
   },
 }
 
-function socialTags(relativePath) {
+function socialTags(relativePath, frontmatter) {
   const { locale } = splitLocale(relativePath)
   const meta = LOCALE_META[locale]
+  const title = frontmatter?.title ? `${frontmatter.title} | ${meta.title}` : meta.title
   return [
-    ['meta', { property: 'og:title', content: meta.title }],
-    ['meta', { property: 'og:description', content: meta.description }],
+    ['meta', { property: 'og:title', content: title }],
+    ['meta', { property: 'og:description', content: frontmatter?.description || meta.description }],
   ]
 }
 
@@ -453,7 +456,7 @@ export default defineConfig({
   transformPageData(pageData) {
     pageData.frontmatter.head = [
       ...(pageData.frontmatter.head || []),
-      ...socialTags(pageData.relativePath),
+      ...socialTags(pageData.relativePath, pageData.frontmatter),
       ...localeHeadTags(pageData.relativePath),
     ]
   },

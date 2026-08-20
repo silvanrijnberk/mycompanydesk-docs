@@ -1,5 +1,6 @@
 ---
 title: Bank Feed
+description: "Link your bank account so transactions flow in automatically. Rules turn outgoing payments into draft expenses that you confirm before they book."
 last_verified: 2026-08-05
 ---
 

@@ -1,5 +1,6 @@
 ---
 title: Kundenportal
+description: "Jede versendete Rechnung enthält einen Zahlungslink zu einem sicheren Portal in Ihrem Design, wo Kunden die Rechnung sehen, herunterladen und zahlen."
 ---
 
 # Kundenportal

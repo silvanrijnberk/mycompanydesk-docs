@@ -1,5 +1,6 @@
 ---
 title: Contracten
+description: "Beheer terugkerende serviceovereenkomsten en huurcontracten, en laat ze volgens schema facturen aanmaken. Zet contracten aan via Bedrijf, Functies."
 ---
 
 # Contracten

@@ -1,5 +1,6 @@
 ---
 title: "Accès de l'équipe"
+description: "Pour gérer qui a accès à votre espace de travail : allez dans Paramètres > Accès et comptable."
 last_verified: 2026-07-02
 chatbot:
   triggers:

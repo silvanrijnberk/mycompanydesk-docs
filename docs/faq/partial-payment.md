@@ -1,5 +1,6 @@
 ---
-title: "Partial payment"
+title: "Gedeeltelijke betaling"
+description: "Om een gedeeltelijke betaling op een factuur vast te leggen: open de factuur vanuit de lijst, klik op Betaling vastleggen of de betalingsactie."
 last_verified: 2026-05-09
 chatbot:
   triggers: ["partial payment", "record partial payment", "half payment", "part payment", "deposit received", "gedeeltelijke betaling", "deelbetaling", "aanbetaling ontvangen", "teilzahlung", "paiement partiel", "acompte recu"]

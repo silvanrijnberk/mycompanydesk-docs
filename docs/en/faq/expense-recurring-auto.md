@@ -1,5 +1,6 @@
 ---
 title: "Automatic recurring expenses"
+description: "To automatically create recurring expenses: go to Recurring Expenses > click New, enter the vendor, amount, and category, set the frequency and start date."
 last_verified: 2026-05-09
 chatbot:
   triggers:

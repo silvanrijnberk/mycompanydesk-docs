@@ -1,5 +1,6 @@
 ---
 title: Fonctionnalites IA
+description: "Chaque fonction IA de MyCompanyDesk, ce qu'elle fait et quel fournisseur l'exécute. La chaîne par défaut reste dans l'UE : Gemini sur Vertex AI."
 ---
 
 # Fonctionnalites IA

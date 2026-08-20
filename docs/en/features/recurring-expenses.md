@@ -1,5 +1,6 @@
 ---
 title: Recurring Expenses
+description: "Automate regular costs like rent, subscriptions, insurance and utilities with templates that create expense records on a schedule."
 ---
 
 # Recurring Expenses

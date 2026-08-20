@@ -1,5 +1,6 @@
 ---
 title: Account aanmaken
+description: "Meld je in een paar minuten aan op app.mycompanydesk.com met e-mailadres en wachtwoord, of met Google of Outlook."
 ---
 
 # Account aanmaken

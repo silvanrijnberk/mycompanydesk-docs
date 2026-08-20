@@ -1,5 +1,6 @@
 ---
 title: Split an expense
+description: "To split an expense between categories or projects: create separate expense entries for each portion."
 last_verified: 2026-05-09
 chatbot:
   triggers: ["split expense", "divide expense", "expense between categories", "allocate expense", "expense allocation", "uitgave splitsen", "uitgave verdelen", "ausgabe aufteilen", "repartir depense"]

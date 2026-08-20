@@ -1,6 +1,6 @@
 ---
 title: Newsletter
-description: Entwerfen, versenden und verfolgen Sie Newsletter in MyCompanyDesk.
+description: "Schreiben, planen und versenden Sie Mailings an Ihre Kunden. Der Editor hängt an Ihrer Kundenliste, Empfänger bleiben ohne CSV-Import aktuell."
 last_verified: 2026-08-18
 ---
 

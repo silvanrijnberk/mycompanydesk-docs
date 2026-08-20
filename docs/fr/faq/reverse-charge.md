@@ -1,5 +1,6 @@
 ---
 title: "Autoliquidation"
+description: "Pour créer une facture en autoliquidation (UE) : allez dans Factures > Nouvelle facture."
 last_verified: 2026-07-02
 chatbot:
   triggers: ["reverse charge", "reverse charge invoice", "eu invoice", "intracommunautair", "intracommunity", "btw verlegd", "reverse charge rechnung", "autoliquidation", "intra-community"]
