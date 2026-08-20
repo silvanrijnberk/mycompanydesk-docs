@@ -68,6 +68,14 @@ Für jeden Entwurf können Sie:
 
 Wenn die von Ihnen gewählte Kategorie seit dem Laden der Seite archiviert wurde, wird die Aktion Bestätigen oder Bearbeiten mit dem Fehler `EXPENSE_CATEGORY_UNKNOWN` abgelehnt, anstatt die Ausgabe stumm unter einer anderen Kategorie zu buchen. Laden Sie die Seite neu, um die aktuelle Kategorieliste zu laden, und wählen Sie erneut.
 
+### Alte Warteschlangen-Einträge auf einen Schlag erledigen
+
+Wenn Sie ein Bankkonto verknüpfen, kann der erste Import Transaktionen aus der Zeit vor MyCompanyDesk holen. Viele dieser älteren Zeilen stammen aus einer bereits abgerechneten Periode, sodass keine Entscheidung mehr nötig ist. Sobald die Warteschlange einen Block veralteter Zeilen erkennt, bietet sie **Bis hier aktualisieren** an.
+
+Ein Klick schließt alle Warteschlangen-Einträge vor dem vorgeschlagenen Datum, auch solche, die gerade nicht sichtbar sind. Nichts wird gelöscht: die Transaktionen wandern zu **Ignoriert**, und Sie können die Aktion mit einem Klick rückgängig machen. Ab dann fragt MyCompanyDesk nur noch nach Transaktionen ab dem vorgeschlagenen Datum.
+
+Das Angebot erscheint nur, solange veraltete Zeilen vorhanden sind. Sind sie erledigt, verschwindet der Banner automatisch.
+
 ## Feedeinstellungen
 
 Auf derselben Einstellungsseite steuern Sie das Verhalten des Feeds:

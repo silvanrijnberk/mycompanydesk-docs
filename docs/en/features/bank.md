@@ -69,6 +69,14 @@ For each draft you can:
 
 If the category chip you picked has been archived since the page loaded, the confirm or edit action is refused with an `EXPENSE_CATEGORY_UNKNOWN` error instead of silently booking the expense under a different category. Refresh the page to load the current category list and pick again.
 
+### Catching up on older queue lines
+
+When you connect a bank, the first import can pull in transactions from before you started using MyCompanyDesk. Many of those older rows are from a period that has already been filed, so there is nothing left to decide. When the queue detects a block of stale rows, it offers **Catch up to here**.
+
+Clicking it closes every queue line before the suggested date, including rows that are not currently visible. Nothing is deleted: the transactions move to **Ignored**, and you can undo the action in one click. From that point on, MyCompanyDesk only asks you about transactions from the suggested date onward.
+
+The offer only appears while there are stale rows. Once they are cleared, the catch-up banner disappears automatically.
+
 ## Feed settings
 
 On the same settings page you control how the feed behaves:
