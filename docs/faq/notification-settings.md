@@ -1,7 +1,7 @@
 ---
 title: "Meldingsinstellingen"
-description: "Om je meldingsinstellingen te beheren: ga naar Instellingen > Meldingen en zet de meldingsonderwerpen per categorie aan of uit."
-last_verified: 2026-08-19
+description: "Om je meldingsinstellingen te beheren: ga naar Instellingen > Meldingen, zet de meldingsonderwerpen aan of uit en schakel pushmeldingen in."
+last_verified: 2026-08-21
 chatbot:
   triggers:
     - "notifications"
@@ -48,6 +48,22 @@ Op een telefoon of tablet kun je een rij swipen om snel iets te doen: naar links
 Je kunt door de lijst bewegen met het toetsenbord: pijltjestoetsen verplaatsen de selectie, Enter of Spatie opent de geselecteerde melding, en Esc sluit het paneel. Het paneel staat boven andere zwevende UI, zodat de focus erbinnen blijft zolang het open is.
 
 Als de lijst voor de eerste keer laadt, zie je grijze placeholderrijen die eruitzien als echte meldingen, in plaats van een spinner, zodat de lay-out niet verschuift zodra de echte rijen binnenkomen. Als je een rij afwijst of snoozt, schuiven de rijen eronder omhoog in plaats van meteen te verspringen. Een ingeklapte groep vouwt soepel uit.
+
+## De volledige meldingen-pagina
+
+Heb je meer ruimte nodig dan het paneel biedt? Klik onderin het paneel op **Alle meldingen bekijken**. Daarmee open je de volledige meldingen-pagina met dezelfde lijst en hetzelfde detailpaneel, maar met een duidelijkere kop die je aantal ongelezen meldingen toont en een **Meer opties**-menu. Handig als je veel meldingen tegelijk wilt afhandelen of ver terug wilt scrollen.
+
+## Binnenkomende-kaarten
+
+Als je de app opent, verschijnen meldingen die je nog niet gezien én nog niet gelezen hebt als een kort stapeltje kaarten rechtsboven. Elke kaart toont het icoon, de titel, de context en de beschikbare actie voor die melding. De kaarten schuiven na een paar seconden automatisch door, maar je kunt op **Bekijken** klikken om meteen naar het item te springen, **Later** kiezen om het stapeltje terug te laten zakken naar het belletje, of handmatig naar de volgende kaart gaan.
+
+Als er meer dan vier meldingen binnenkomen, wordt de laatste kaart een samenvatting die aangeeft hoeveel er nog meer zijn. Klik erop om de volledige meldingen-pagina te openen. Zodra een stapeltje getoond is, worden die meldingen als gezien gemarkeerd, dus dezelfde items zullen niet opnieuw oppoppen.
+
+Binnenkomende-kaarten blijven stil als:
+
+- Niet storen aan staat.
+- Het meldingenpaneel of de meldingen-pagina al open is.
+- Er geen ongeziene, ongelezen meldingen zijn.
 
 ## Een melding snoozen
 

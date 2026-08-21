@@ -1,7 +1,7 @@
 ---
 title: "Benachrichtigungseinstellungen"
-description: "So verwalten Sie Ihre Benachrichtigungseinstellungen: gehen Sie zu Einstellungen > Benachrichtigungen."
-last_verified: 2026-08-19
+description: "So verwalten Sie Ihre Benachrichtigungseinstellungen: gehen Sie zu Einstellungen > Benachrichtigungen, schalten Sie die Themen ein oder aus und aktivieren Sie Push-Benachrichtigungen."
+last_verified: 2026-08-21
 chatbot:
   triggers:
     - "notifications"
@@ -48,6 +48,22 @@ Auf dem Telefon oder Tablet können Sie eine Zeile swipen, um schnell zu handeln
 Sie können die Liste mit der Tastatur steuern: Pfeiltasten verschieben die Auswahl, Enter oder Leertaste öffnen die ausgewählte Benachrichtigung, Esc schließt den Bereich. Der Bereich liegt über anderer schwebender UI, damit der Fokus darin bleibt, solange er geöffnet ist.
 
 Während die Liste beim ersten Öffnen lädt, erscheinen graue Platzhalterzeilen in der Form echter Benachrichtigungen statt eines Spinners, damit sich das Layout nicht verschiebt, wenn die echten Zeilen eintreffen. Wenn Sie eine Zeile verwerfen oder snoozen, gleiten die darunter liegenden Zeilen nach oben, anstatt zu schnappen. Eine eingeklappte Gruppe klappt animiert auf.
+
+## Die vollständige Benachrichtigungsseite
+
+Benötigen Sie mehr Raum als der Bereich bietet? Klicken Sie unten im Bereich auf **Alle Benachrichtigungen anzeigen**. Damit öffnen Sie die dedizierte Benachrichtigungsseite mit derselben Liste und demselben Detailpanel, aber mit einer übersichtlicheren Kopfzeile, die Ihre ungelesene Anzahl und ein **Weitere Optionen**-Menü anzeigt. Praktisch, wenn Sie viele Benachrichtigungen auf einmal erledigen oder weit zurückscrollen möchten.
+
+## Eintreffende Karten
+
+Wenn Sie die App öffnen, erscheinen Benachrichtigungen, die Sie weder gesehen noch gelesen haben, als kurzer Stapel Karten oben rechts. Jede Karte zeigt das Symbol, den Titel, den Kontext und die verfügbare Aktion für diese Benachrichtigung. Die Karten schieben sich nach wenigen Sekunden automatisch weiter, aber Sie können auf **Ansehen** klicken, um direkt zum Eintrag zu springen, **Später** wählen, um den Stapel zurück zur Glocke zu schicken, oder manuell zur nächsten Karte wechseln.
+
+Wenn mehr als vier Benachrichtigungen eintreffen, ist die letzte Karte eine Zusammenfassung, die anzeigt, wie viele weitere es gibt. Klicken Sie darauf, um die vollständige Benachrichtigungsseite zu öffnen. Sobald ein Stapel einmal gezeigt wurde, werden diese Benachrichtigungen als gesehen markiert, sodass dieselben Elemente nicht erneut aufpoppen.
+
+Eintreffende Karten bleiben stumm, wenn:
+
+- Nicht stören aktiv ist.
+- Der Benachrichtigungsbereich oder die Benachrichtigungsseite bereits geöffnet ist.
+- Es keine ungesehenen, ungelesenen Benachrichtigungen gibt.
 
 ## Eine Benachrichtigung snoozen
 

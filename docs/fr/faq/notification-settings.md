@@ -1,7 +1,7 @@
 ---
 title: "Paramètres de notification"
-description: "Pour gérer vos paramètres de notification : allez dans Paramètres > Notifications, activez ou désactivez les sujets de notification. Les catégories sont."
-last_verified: 2026-08-19
+description: "Pour gérer vos paramètres de notification : allez dans Paramètres > Notifications, activez ou désactivez les sujets de notification et activez les notifications push."
+last_verified: 2026-08-21
 chatbot:
   triggers:
     - "notifications"
@@ -48,6 +48,22 @@ Sur un téléphone ou une tablette, vous pouvez faire glisser une ligne pour agi
 Vous pouvez parcourir la liste au clavier : les flèches déplacent la sélection, Entrée ou Espace ouvre la notification sélectionnée, et Échap ferme le panneau. Le panneau passe au-dessus des autres éléments flottants pour que le focus reste à l'intérieur tant qu'il est ouvert.
 
 Pendant le premier chargement de la liste, des lignes de substitution grises, en forme de vraies notifications, apparaissent à la place d’un spinner, pour que la mise en page ne saute pas quand les vraies lignes arrivent. Lorsque vous ignorez ou reportez une ligne, les lignes situées en dessous remontent en douceur plutôt que de sauter. Un groupe replié se déplie avec une animation.
+
+## La page complète des notifications
+
+Si vous avez besoin de plus d'espace que le panneau ne le permet, cliquez sur **Voir toutes les notifications** en bas du panneau. Cela ouvre la page dédiée des notifications avec la même liste et le même panneau de détail, plus un en-tête plus clair qui affiche votre nombre de non-lus et un menu **Plus d'options**. C'est utile lorsque vous voulez trier de nombreuses notifications à la fois ou remontrer loin dans l'historique.
+
+## Cartes d'arrivée
+
+Lorsque vous ouvrez l'application, les notifications que vous n'avez ni vues ni lues apparaissent sous forme de petit pile de cartes en haut à droite. Chaque carte montre l'icône, le titre, le contexte et l'action disponible pour cette notification. Les cartes avancent automatiquement après quelques secondes, mais vous pouvez cliquer sur **Voir** pour passer directement à l'élément, choisir **Plus tard** pour renvoyer la pile à la cloche, ou passer manuellement à la carte suivante.
+
+S'il y a plus de quatre notifications, la dernière carte est un récapitulatif indiquant combien d'autres notifications attendent. Cliquez dessus pour ouvrir la page complète des notifications. Une fois qu'une pile a été affichée, ces notifications sont marquées comme vues, donc les mêmes éléments ne réapparaîtront pas.
+
+Les cartes d'arrivée restent silencieuses dans les cas suivants :
+
+- Ne pas déranger est activé.
+- Le panneau de notifications ou la page de notifications est déjà ouvert.
+- Il n'y a pas de notifications non vues et non lues.
 
 ## Reporter une notification
 
