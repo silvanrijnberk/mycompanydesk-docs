@@ -1,7 +1,7 @@
 ---
 title: Expenses
 description: "Track business expenses, scan receipts, manage categories with their own VAT defaults, and let depreciation schedules run for investments."
-last_verified: 2026-08-16
+last_verified: 2026-08-21
 ---
 
 # Expenses
@@ -15,6 +15,8 @@ The expenses page lists every recorded expense. The payment status tabs in the t
 - **All**: every recorded expense
 - **Unpaid**: expenses not yet paid
 - **Paid**: expenses already paid
+
+Expenses that still need confirmation — bank-feed or inbox drafts that are not yet in your books — show a warning status badge instead of paid/unpaid, are tinted with a dashed border so they do not look like confirmed expenses, and cannot be selected for bulk actions until they are booked.
 
 You can still filter by category, project, date range, or status. Click an expense to open the detail page; click **New** to add one manually, or **Scan receipt** to extract one from an image or PDF.
 
