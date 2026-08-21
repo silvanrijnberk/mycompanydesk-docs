@@ -1,7 +1,7 @@
 ---
 title: "Notification settings"
-description: "To manage your notification settings: go to Settings > Meldingen (notifications), switch the notification topics on or off. The categories are: invoice."
-last_verified: 2026-08-19
+description: "To manage your notification settings: go to Settings > Meldingen (notifications), switch the notification topics on or off, and turn on push notifications."
+last_verified: 2026-08-21
 chatbot:
   triggers:
     - "notifications"
@@ -48,6 +48,22 @@ On a phone or tablet you can swipe a row to act quickly: swipe left to dismiss, 
 You can move through the list with the keyboard: arrow keys move the selection, Enter or Space opens the selected notification, and Esc closes the drawer. The drawer sits above other floating UI so focus stays inside it while it is open.
 
 While the list is loading for the first time, grey placeholder rows shaped like real notifications appear instead of a spinner, so the layout does not jump when the actual rows arrive. When you dismiss or snooze a row, the remaining rows glide up into the gap rather than snapping to a new position. Expanding a folded group animates its extra rows in place.
+
+## The full notifications page
+
+If you need more room than the drawer gives, click **View all notifications** at the bottom of the drawer. This opens the dedicated notifications page with the same list and detail panel, plus a clearer header that shows your unread count and a **More options** menu. It is useful when you want to triage many notifications at once or scroll far back through older items.
+
+## Arrival cards
+
+When you open the app, notifications that are unseen and unread appear as a short stack of cards in the top-right corner. Each card shows the icon, title, context and available action for that notification. The cards advance automatically after a few seconds, but you can click **View** to jump straight to the item, **Later** to dismiss the stack back to the bell, or click the next card manually.
+
+If there are more than four arrivals, the last card becomes a summary that says how many more there are. Click it to open the full notifications page. Once a stack has been shown, those notifications are marked as seen, so the same items will not pop up again.
+
+Arrival cards stay silent when:
+
+- Do-not-disturb is on.
+- The notifications drawer or notifications page is already open.
+- There are no unseen, unread notifications.
 
 ## Snoozing a notification
 
