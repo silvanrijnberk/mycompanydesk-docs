@@ -1,7 +1,7 @@
 ---
 title: Uitgaven
 description: "Houd je zakelijke uitgaven bij, scan bonnen, beheer categorieën met hun eigen BTW-standaard en laat afschrijvingen voor investeringen vanzelf lopen."
-last_verified: 2026-08-16
+last_verified: 2026-08-21
 ---
 
 # Uitgaven
@@ -15,6 +15,8 @@ De uitgavenpagina toont al je geregistreerde uitgaven. De betaalstatus-tabs in d
 - **Alles**: elke geregistreerde uitgave
 - **Onbetaald**: nog niet betaalde uitgaven
 - **Betaald**: al betaalde uitgaven
+
+Uitgaven die nog moeten worden bevestigd — concepten uit de bankfeed of inbox die nog niet in je boeken staan — tonen het label **Nog te bevestigen** in plaats van betaald/onbetaald. Ze krijgen een gestreepte rand en een warme tint zodat je ze niet verwart met bevestigde uitgaven, en ze kunnen niet worden geselecteerd voor bulkacties totdat je ze boekt.
 
 Je kunt nog steeds filteren op categorie, project, datumbereik of status. Klik op een uitgave om de detailpagina te openen; klik op **Nieuw** om er handmatig een toe te voegen, of **Scan bon** om er een te extraheren uit een afbeelding of PDF.
 

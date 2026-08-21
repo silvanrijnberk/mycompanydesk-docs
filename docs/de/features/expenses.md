@@ -1,7 +1,7 @@
 ---
 title: Ausgaben
 description: "Erfassen Sie Ausgaben, scannen Sie Belege, verwalten Sie Kategorien mit eigenen Steuersätzen und lassen Sie Abschreibungen automatisch laufen."
-last_verified: 2026-08-15
+last_verified: 2026-08-21
 ---
 
 # Ausgaben
@@ -15,6 +15,8 @@ Die Ausgabenseite listet alle Ihre erfassten Ausgaben auf. Die Zahlungsstatus-Ta
 - **Alle**: alle erfassten Ausgaben
 - **Unbezahlt**: noch nicht bezahlte Ausgaben
 - **Bezahlt**: bereits bezahlte Ausgaben
+
+Ausgaben, die noch bestätigt werden müssen — Entwürfe aus dem Bankfeed oder Posteingang, die noch nicht in der Buchhaltung sind — zeigen statt bezahlt/unbezahlt einen Warnstatus, sind farblich hervorgehoben und haben eine gestrichelte Umrandung, damit sie nicht wie bestätigte Ausgaben aussehen, und können bis zur Buchung nicht für Massenaktionen ausgewählt werden.
 
 Sie können weiterhin nach Kategorie, Projekt, Zeitraum oder Status filtern. Klicken Sie auf eine Ausgabe, um die Detailseite zu öffnen; klicken Sie auf **Neu**, um manuell eine hinzuzufügen, oder **Beleg scannen**, um einen aus einem Bild oder PDF zu extrahieren.
 

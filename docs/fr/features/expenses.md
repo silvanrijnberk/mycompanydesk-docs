@@ -1,7 +1,7 @@
 ---
 title: Dépenses
 description: "Suivez vos dépenses, scannez vos reçus, gérez des catégories avec leur propre TVA et laissez les amortissements se dérouler automatiquement."
-last_verified: 2026-08-15
+last_verified: 2026-08-21
 ---
 
 # Dépenses
@@ -15,6 +15,8 @@ La page des dépenses répertorie toutes vos dépenses enregistrées. Les onglet
 - **Toutes** : toutes les dépenses enregistrées
 - **Impayées** : dépenses non encore payées
 - **Payées** : dépenses déjà payées
+
+Les dépenses encore en attente de confirmation — les brouillons du flux bancaire ou de la boîte de réception qui ne sont pas encore comptabilisés — affichent un badge d'avertissement au lieu de payé/non payé, sont teintées avec une bordure pointillée pour ne pas ressembler à des dépenses confirmées, et ne peuvent pas être sélectionnées pour les actions en masse tant qu'elles ne sont pas comptabilisées.
 
 Vous pouvez toujours filtrer par catégorie, projet, plage de dates ou statut. Cliquez sur une dépense pour ouvrir la page de détail; cliquez sur **Nouvelle** pour en ajouter une manuellement, ou **Numériser un reçu** pour en extraire une à partir d'une image ou d'un PDF.
 
