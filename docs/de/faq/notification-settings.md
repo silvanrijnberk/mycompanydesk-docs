@@ -1,7 +1,7 @@
 ---
 title: "Benachrichtigungseinstellungen"
-description: "Verwalte deine Benachrichtigungsthemen unter Einstellungen > Meldingen. Auf dem Desktop öffnet die Glocke ein kompaktes Popover; auf dem Mobilgerät ein Vollbild-Sheet. Eine eigene Benachrichtigungsseite unter /meldingen bietet der Liste Platz für die Zwei-Fenster-Ansicht und die Tastatur-Triage."
-last_verified: 2026-08-21
+description: "Verwalten Sie Ihre Benachrichtigungsthemen unter Einstellungen > Meldingen. Die Glocke öffnet ein Popover auf dem Desktop und ein Sheet auf dem Mobilgerät."
+last_verified: 2026-08-22
 chatbot:
   triggers:
     - "notifications"
@@ -18,58 +18,58 @@ chatbot:
     - "How do I change my email?"
 ---
 
-So verwendest du die Benachrichtigungseinstellungen:
+So verwenden Sie die Benachrichtigungseinstellungen:
 
-1. Gehe zu Einstellungen → "Meldingen" (Benachrichtigungen)
-2. Schalte die Benachrichtigungsthemen ein oder aus. Die Kategorien sind:
+1. Gehen Sie zu Einstellungen → "Meldingen" (Benachrichtigungen)
+2. Schalten Sie die Benachrichtigungsthemen ein oder aus. Die Kategorien sind:
    - **Aufmerksamkeit für Rechnungen**: überfällige Rechnungen, Rechnungen mit nahendem Fälligkeitsdatum, unbearbeitete Entwürfe, fehlgeschlagene Lastschriften, fehlgeschlagene Rechnungszustellungen, angehaltene automatische Vertragsabrechnung und Zeiterfassungen ohne Tarif.
    - **Eingehendes Geld**: Zahlungen, bestätigte Zahlungen und ungewöhnliche Banktransaktionen.
-   - **Anstehende Fristen**: Mehrwertsteuer, Einkommensteuer, Körperschaftsteuer, die KOR-Schwelle sowie auslaufende Verträge oder Projekte. Du erhältst sie rechtzeitig, damit du nie zu spät dran bist. Diese Kategorie umfasst auch automatische Buchungen, die nicht erstellt werden konnten, weil das Datum in eine bereits angegebene und gesperrte Mehrwertsteuerperiode fällt, etwa eine weitergeleitete Inbox-Rechnung oder eine Banktransaktion. Die Benachrichtigung nennt den Lieferanten und das Rechnungsdatum und verweist dich auf die Inbox oder den Bankfeed, damit du es in der laufenden Periode buchen oder eine Ergänzungsmeldung einreichen kannst.
+   - **Anstehende Fristen**: Mehrwertsteuer, Einkommensteuer, Körperschaftsteuer, die KOR-Schwelle sowie auslaufende Verträge oder Projekte. Sie erhalten sie rechtzeitig, damit Sie nie zu spät dran sind. Diese Kategorie umfasst auch automatische Buchungen, die nicht erstellt werden konnten, weil das Datum in eine bereits angegebene und gesperrte Mehrwertsteuerperiode fällt, etwa eine weitergeleitete Inbox-Rechnung oder eine Banktransaktion. Die Benachrichtigung nennt den Lieferanten und das Rechnungsdatum und verweist Sie auf die Inbox oder den Bankfeed, damit Sie es in der laufenden Periode buchen oder eine Ergänzungsmeldung einreichen können.
    - **Neue Chancen**: Angebotsanfragen, unterschriebene Angebote und Website-Verkäufe.
-   - **Neue Inbox-Nachricht**: ein Hinweis auf deinem Telefon, sobald ein Kunde oder Lieferant eine E-Mail sendet.
-   - **Ausgabe fällig**: bevorstehende Fälligkeiten von Ausgaben, die du angelegt hast, etwa geplante Miete oder Nebenkosten, damit du sie rechtzeitig bezahlst oder erfasst.
-   - **Lieferantenregel gelernt**: eine In-App-Meldung, wenn MyCompanyDesk aus deinen bestätigten Entwürfen eine neue vertrauenswürdige Lieferantenregel für den Bankfeed gelernt hat.
+   - **Neue Inbox-Nachricht**: ein Hinweis auf Ihrem Telefon, sobald ein Kunde oder Lieferant eine E-Mail sendet.
+   - **Ausgabe fällig**: bevorstehende Fälligkeiten von Ausgaben, die Sie angelegt haben, etwa geplante Miete oder Nebenkosten, damit Sie sie rechtzeitig bezahlen oder erfassen.
+   - **Lieferantenregel gelernt**: eine In-App-Meldung, wenn MyCompanyDesk aus Ihren bestätigten Entwürfen eine neue vertrauenswürdige Lieferantenregel für den Bankfeed gelernt hat.
    - **Tipps und Neuigkeiten von MyCompanyDesk**: höchstens eine E-Mail pro Monat.
-   Kritische Nachrichten zu deinem Konto senden wir immer; diese kannst du nicht abschalten.
-3. Auf derselben Seite aktivierst du auch Push-Benachrichtigungen für das Gerät, das du gerade verwendest
-4. Hast du den Browser-Dialog weggeklickt? Klicke dann auf die Benachrichtigungsglocke oben in der App, wähle **Mehr Optionen** (drei Punkte) und tippe auf **Aktivieren**, um Push-Benachrichtigungen nachträglich zu aktivieren
+   Kritische Nachrichten zu Ihrem Konto senden wir immer; diese können Sie nicht abschalten.
+3. Auf derselben Seite aktivieren Sie auch Push-Benachrichtigungen für das Gerät, das Sie gerade verwenden
+4. Haben Sie den Browser-Dialog weggeklickt? Klicken Sie dann auf die Benachrichtigungsglocke oben in der App, wählen Sie **Mehr Optionen** (drei Punkte) und tippen Sie auf **Aktivieren**, um Push-Benachrichtigungen nachträglich zu aktivieren
 5. Änderungen werden automatisch gespeichert
 
 ## Die Benachrichtigungsliste
 
 Benachrichtigungen sind in drei Gruppen eingeteilt, sodass die Liste wie eine Zeitleiste liest: **Heute**, **Gestern** und **Älter**.
 
-Wenn du die Liste öffnest, werden alle darin enthaltenen Benachrichtigungen als gesehen markiert: die Zahl an der Glocke springt zurück auf null, aber jede Zeile behält ihren eigenen ungelesenen Punkt, bis du sie öffnest.
+Wenn Sie die Liste öffnen, werden alle darin enthaltenen Benachrichtigungen als gesehen markiert: die Zahl an der Glocke springt zurück auf null, aber jede Zeile behält ihren eigenen ungelesenen Punkt, bis Sie sie öffnen.
 
-Werden an einem Tag mehrere ähnliche informelle Updates eingehen, etwa Release Notes oder Produkttipps, werden sie hinter dem neuesten zusammengefasst. Eine Schaltfläche zeigt, wie viele weitere es gibt; klicke, um die Gruppe zu erweitern, erneut klicken, um sie zu reduzieren.
+Werden an einem Tag mehrere ähnliche informelle Updates eingehen, etwa Release Notes oder Produkttipps, werden sie hinter dem neuesten zusammengefasst. Eine Schaltfläche zeigt, wie viele weitere es gibt; klicken Sie, um die Gruppe zu erweitern, erneut klicken, um sie zu reduzieren.
 
-Auf Telefon oder Tablet kannst du eine Zeile schnell wischen: nach links zum Ablehnen, nach rechts zum Snoozen. Die Zeile zeigt an, was passiert, wenn du loslässt. Auf jeder Zeile gibt es auch Ablehnen- und Snooze-Schaltflächen.
+Auf Telefon oder Tablet können Sie eine Zeile schnell wischen: nach links zum Ablehnen, nach rechts zum Snoozen. Die Zeile zeigt an, was passiert, wenn Sie loslassen. Auf jeder Zeile gibt es auch Ablehnen- und Snooze-Schaltflächen.
 
-Du kannst dich mit der Tastatur durch die Liste bewegen: Pfeiltasten verschieben die Auswahl, Enter oder Leertaste öffnen die ausgewählte Benachrichtigung, Esc schließt das Popover oder Sheet. Das Popover oder Sheet schwebt über anderer schwebender UI, sodass der Fokus darin bleibt, solange es geöffnet ist.
+Sie können sich mit der Tastatur durch die Liste bewegen: Pfeiltasten verschieben die Auswahl, Enter oder Leertaste öffnen die ausgewählte Benachrichtigung, Esc schließt das Popover oder Sheet. Das Popover oder Sheet schwebt über anderer schwebender UI, sodass der Fokus darin bleibt, solange es geöffnet ist.
 
-Während die Liste zum ersten Mal lädt, erscheinen graue Platzhalterzeilen in Form echter Benachrichtigungen anstelle eines Spinners, damit das Layout nicht springt, sobald die echten Zeilen eintreffen. Wenn du eine Zeile ablehnst oder snoozt, gleiten die verbleibenden Zeilen nach oben, anstatt sofort zu springen. Eine reduzierte Gruppe klappt sanft aus.
+Während die Liste zum ersten Mal lädt, erscheinen graue Platzhalterzeilen in Form echter Benachrichtigungen anstelle eines Spinners, damit das Layout nicht springt, sobald die echten Zeilen eintreffen. Wenn Sie eine Zeile ablehnen oder snoozen, gleiten die verbleibenden Zeilen nach oben, anstatt sofort zu springen. Eine reduzierte Gruppe klappt sanft aus.
 
 ## Das Benachrichtigungs-Popover und -Sheet
 
-Auf dem Desktop öffnet ein Klick auf die Glocke ein kompaktes Popover darunter mit derselben Benachrichtigungsliste. Auf einem Telefon oder Tablet öffnet die Glocke ein Vollbild-Sheet. Beide dienen als kurzer Blick: klicke auf eine Zeile, um das Popover oder Sheet zu verlassen und den zugrunde liegenden Datensatz direkt zu öffnen.
+Auf dem Desktop sitzt die Glocke in der oberen Leiste und öffnet ein kompaktes Popover darunter. Auf einem Telefon oder Tablet öffnet die Glocke ein Vollbild-Sheet. Beide enthalten dieselbe Liste und dieselbe Detailansicht, sodass Sie den Drawer nie verlassen müssen, um eine Benachrichtigung zu lesen oder abzuarbeiten.
 
-Ein Link unten, **Alle meldingen bekijken**, öffnet die eigene **Benachrichtigungen**-Seite unter `/meldingen`. Diese Seite bietet der Liste genug Platz, um auf breiten Bildschirmen das Detailpanel neben der Liste anzuzeigen, mit derselben Tastatur-Triage: Pfeiltasten zum Bewegen, Enter oder Leertaste zum Öffnen und `E`, um die ausgewählte Benachrichtigung zu bearbeiten.
+Klicken Sie auf eine Zeile, um das Detail im Drawer auszuklappen. Auf dem Desktop öffnet sich das Detailpanel neben der Liste innerhalb des Popovers. Auf einem Telefon öffnet derselbe Detailinhalt in einem Vollbild-Overlay, damit Betrag und Aktionen lesbar bleiben.
 
-Solange das Popover oder Sheet geöffnet ist, werden eingehende Benachrichtigungs-Popups unterdrückt; sie setzen sich fort, nachdem du es schließt.
+Solange das Popover oder Sheet geöffnet ist, werden eingehende Benachrichtigungs-Popups unterdrückt; sie setzen sich fort, nachdem Sie es schließen.
 
 ## Eine Benachrichtigung snoozen
 
-Du kannst eine Aktionsbenachrichtigung vorübergehend stummschalten, ohne sie als gelesen zu markieren. Klicke auf die Glocke, um die Liste zu öffnen, und wähle bei der gewünschten Zeile **Snooze**. Du kannst snoozen bis:
+Sie können eine Aktionsbenachrichtigung vorübergehend stummschalten, ohne sie als gelesen zu markieren. Klicken Sie auf die Glocke, um die Liste zu öffnen, und wählen Sie bei der gewünschten Zeile **Snooze**. Sie können snoozen bis:
 
 - **1 Stunde** ab jetzt
 - **Morgen** um 09:00
 - **Nächste Woche** um 09:00
 
-Nach der nächsten Aktualisierung verschwindet die Benachrichtigung aus der ungelesenen Liste, aber die Zeile bleibt noch kurz mit einer **Rückgängig**-Schaltfläche sichtbar. Release Notes und Tipps können nicht gesnoozt werden; du liest sie oder markierst sie als gelesen.
+Nach der nächsten Aktualisierung verschwindet die Benachrichtigung aus der ungelesenen Liste, aber die Zeile bleibt noch kurz mit einer **Rückgängig**-Schaltfläche sichtbar. Release Notes und Tipps können nicht gesnoozt werden; Sie lesen sie oder markieren sie als gelesen.
 
 ## Nicht stören
 
-Öffne die Benachrichtigungsliste und tippe im Kopf auf **Mehr Optionen** (drei Punkte), um **Nicht stören** für Push-Benachrichtigungen einzustellen. Du kannst wählen zwischen:
+Öffnen Sie die Benachrichtigungsliste und tippen Sie im Kopf auf **Mehr Optionen** (drei Punkte), um **Nicht stören** für Push-Benachrichtigungen einzustellen. Sie können wählen zwischen:
 
 - **Aus**
 - **1 Stunde**
@@ -79,11 +79,11 @@ Während „Nicht stören“ aktiv ist, werden Push-Benachrichtigungen zurückge
 
 ## Das Detailpanel
 
-Das Detailpanel befindet sich auf der eigenen **Benachrichtigungen**-Seite (`/meldingen`), wo der Drawer genug Breite hat, um Liste und Panel nebeneinander anzuzeigen. Es ist nicht Teil des kompakten Glocke-Popovers oder Sheets auf kleineren Oberflächen. Klicke auf eine Benachrichtigung auf der Seite, um das Panel mit dem vollständigen Kontext zu öffnen. Bei einer überfälligen Rechnung siehst du den Gesamtbetrag, den offenen Betrag, den Zahlungsstatus und das Ausstellungsdatum. Bei einer Mehrwertsteuerfrist siehst du die Periode und das Fälligkeitsdatum. Bei zusammengefassten Benachrichtigungen listet das Panel die einzelnen Rechnungen, Angebote oder Datensätze hinter der Zusammenfassung auf.
+Das Detailpanel ist Teil des Benachrichtigungs-Drawers. Klicken Sie auf eine Benachrichtigung in der Liste, um sie auszuklappen. Bei einer überfälligen Rechnung sehen Sie den Gesamtbetrag, den offenen Betrag, den Zahlungsstatus und das Ausstellungsdatum. Bei einer Mehrwertsteuerfrist sehen Sie die Periode und das Fälligkeitsdatum. Bei zusammengefassten Benachrichtigungen listet das Panel die einzelnen Rechnungen, Angebote oder Datensätze hinter der Zusammenfassung auf.
 
 Das Panel wartet, bis der zugrunde liegende Datensatz geladen ist, bevor es wechselt. Bis dahin bleibt die vorherige Benachrichtigung sichtbar und ihre Schaltflächen sind inaktiv, damit sich nichts unter dem Cursor verschiebt. Sobald der Datensatz bereit ist, blendet das Panel in einem Schritt zur neuen Benachrichtigung über.
 
-Die Aktionen für den Eintrag werden so sortiert, dass die wichtigste Aktion zuerst steht und als primäre Aktion markiert ist. Der Rest bleibt in derselben Reihe. Passen mehr Aktionen in das Panel als Platz ist, verschieben sich die übrigen hinter die Schaltfläche **Mehr Aktionen** (drei Punkte). Tippe darauf, um den Rest zu sehen, ohne den Drawer zu schließen.
+Die Aktionen für den Eintrag werden so sortiert, dass die wichtigste Aktion zuerst steht und als primäre Aktion markiert ist. Der Rest bleibt in derselben Reihe. Passen mehr Aktionen in das Panel als Platz ist, verschieben sich die übrigen hinter die Schaltfläche **Mehr Aktionen** (drei Punkte). Tippen Sie darauf, um den Rest zu sehen, ohne den Drawer zu schließen.
 
 Die verfügbaren Aktionen hängen von der Benachrichtigung ab:
 
@@ -92,10 +92,10 @@ Die verfügbaren Aktionen hängen von der Benachrichtigung ab:
 - **Zahlungserinnerung senden**: sendet eine Zahlungserinnerung für die Rechnung, sichtbar bei überfälligen Rechnungen.
 - **Öffnen**: öffnet den zugrunde liegenden Datensatz, wie die Rechnung, das Angebot oder den Vertrag.
 - **Snooze** (oder **Später**): stellt die Benachrichtigung vorübergehend zurück, ohne sie als gelesen zu markieren.
-- **Ablehnen** (oder das **X**-Symbol): entfernt die Benachrichtigung aus deiner eigenen ungelesenen Liste. Auf einem Telefon befindet sich dasselbe Schließsymbol oben rechts in der Detail-Overlay, damit es nicht über dem Betrag liegt.
+- **Ablehnen** (oder das **X**-Symbol): entfernt die Benachrichtigung aus Ihrer eigenen ungelesenen Liste. Auf einem Telefon befindet sich dasselbe Schließsymbol oben rechts in der Detail-Overlay, damit es nicht über dem Betrag liegt.
 
-Release Notes und Tipps haben kein Detailpanel, weil es keinen zugrunde liegenden Datensatz gibt, auf den du reagieren kannst.
+Release Notes und Tipps haben kein Detailpanel, weil es keinen zugrunde liegenden Datensatz gibt, auf den Sie reagieren können.
 
-Push-Benachrichtigungen funktionieren in deinem Browser und in der Android-App. Auf Android zeigt die Benachrichtigung das App-Symbol, die Farbe der Kategorie und, wenn verfügbar, den Avatar des Absenders.
+Push-Benachrichtigungen funktionieren in Ihrem Browser und in der Android-App. Auf Android zeigt die Benachrichtigung das App-Symbol, die Farbe der Kategorie und, wenn verfügbar, den Avatar des Absenders.
 
-Wenn du eine fehlende Benachrichtigung suchst, prüfe sowohl den Benachrichtigungs-Schalter als auch die E-Mail-Adresse deines Kontos.
+Wenn Sie eine fehlende Benachrichtigung suchen, prüfen Sie sowohl den Benachrichtigungs-Schalter als auch die E-Mail-Adresse Ihres Kontos.

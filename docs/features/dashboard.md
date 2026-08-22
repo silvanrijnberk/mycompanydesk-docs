@@ -1,7 +1,7 @@
 ---
 title: Dashboard
 description: "Het startscherm van je werkruimte: periodekiezer, KPI-overzicht, een aandachtswidget en blokken die alleen verschijnen als je cijfers ze nuttig maken."
-last_verified: 2026-08-18
+last_verified: 2026-08-22
 ---
 
 # Dashboard
@@ -20,7 +20,7 @@ Alle getallen in de KPI-rij en in de tempo-berekeningen volgen de gekozen period
 
 ## KPI-rij
 
-De KPI-rij toont altijd vijf tegels. Elke tegel toont een hoofdgetal, een vergelijking met de vorige vergelijkbare periode als een eerlijke vergelijking mogelijk is, en een kleine trendlijn. Tegels linken door naar het bijbehorende rapport of de bijbehorende lijst.
+De KPI-rij toont vijf losse kaarten. Elke kaart toont een hoofdgetal, een vergelijking met de vorige vergelijkbare periode als een eerlijke vergelijking mogelijk is, en een kleine trendlijn. De kaarten delen dezelfde rand, hoekradius en grid als de blokken eronder, zodat de rij meeleest met het dashboard in plaats van als een aparte tabelstrip. Elke kaart linkt door naar het bijbehorende rapport of de bijbehorende lijst.
 
 | Tegel | Wat je ziet |
 |---|---|
@@ -30,7 +30,9 @@ De KPI-rij toont altijd vijf tegels. Elke tegel toont een hoofdgetal, een vergel
 | **Te betalen** | Geld dat je nog moet uitbetalen, met de achterstallige helft apart genoemd |
 | **Winst** | Nettowinst over de gekozen periode, met marge als die te berekenen is |
 
-Een tegel zonder eerlijke historie toont geen trendlijn in plaats van een verzonnen vlakke lijn. De kleur van een deltabadge volgt betekenis, niet alleen richting: stijgende debiteuren zijn slecht nieuws, ook al wijst de pijl omhoog.
+De kas-kaart heeft een subtiel merkkleur-tintje zodat je oog daar begint, maar hij is even breed als de rest. Als het kasgetal afkomstig is van een gekoppelde bankrekening, toont de kaart ook het tijdstip van de laatste synchronisatie.
+
+Een kaart zonder eerlijke historie toont geen trendlijn in plaats van een verzonnen vlakke lijn. De trendlijn leeft binnen zijn eigen kaart onder een zachte vulling, en de lijnkleur volgt de betekenis van de kaart: een verlies kleurt in de foutkleur ook al is het de winst-kaart, en een echte banksaldo toont zijn trajectory in plaats van een leeg band. De deltabadge zit op de labelrij in plaats van naast het getal, zodat een percentageverandering niet meeleest als onderdeel van het cijfer waarnaast hij staat. De badgekleur volgt betekenis, niet alleen richting: stijgende debiteuren zijn slecht nieuws, ook al wijst de pijl omhoog.
 
 ## Aandacht-widget
 

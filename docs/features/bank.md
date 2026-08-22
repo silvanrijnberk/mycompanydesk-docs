@@ -1,7 +1,7 @@
 ---
 title: Bankfeed
 description: "Koppel je bankrekening zodat transacties binnenstromen. Regels maken van uitgaande betalingen concept-uitgaven, die jij bevestigt voordat ze boeken."
-last_verified: 2026-08-21
+last_verified: 2026-08-22
 ---
 
 # Bankfeed
@@ -13,7 +13,7 @@ Koppel je bankrekening aan MyCompanyDesk en je transacties stromen automatisch b
 De bankfeed zit in het Uitgaven-gedeelte:
 
 - **Koppelingen en instellingen**: open **Uitgaven** en klik op het tandwiel in de paginakop. Daar koppel je banken, controleer je automatisch geïmporteerde uitgaven en beheer je regels en meldingen.
-- **Bankwachtrij**: bovenaan de uitgavenpagina zie je de rijen die nog moeten worden beoordeeld.
+- **Bankwachtrij**: bankregels die nog geen uitgave zijn, staan in de uitgavenlijst, gemarkeerd met een bankgroepkop.
 - **Transactiefeed**: de knop **Transacties** in de paginakop van Uitgaven opent de lijst met geïmporteerde banktransacties.
 
 ## Een bankrekening koppelen
@@ -53,9 +53,9 @@ Alleen uitgaande transacties worden uitgaven; inkomende betalingen worden nooit 
 
 ## De bankwachtrij
 
-De bankwachtrij staat bovenaan de uitgavenpagina. Hij toont transacties die nog niet als uitgave zijn geboekt: review-rijen die de feed heeft voorbereid, plus uitgavekandidaten uit de bankfeed. Elke rij toont de leverancier, datum, het bedrag, de voorgestelde categorie en waar die suggestie vandaan komt (een van je regels, je standaardcategorie, een slimme suggestie of de bankfeed).
+Bankregels die nog geen uitgave zijn, staan nu in de uitgaventabel, niet meer in een aparte kaart erboven. Een volle-breedte groepkop in de tabel markeert de grens tussen je gewone uitgaven en de bankregels. De kop toont een bankicoon, het aantal wachtende regels en bulkacties als er meer dan één regel is. Ook staat er een korte mededeling dat deze regels wel in je lijst staan, maar nog niet meetellen in de cijfers hierboven. Zo blijven de KPI's en de lijst met elkaar in overeenstemming.
 
-De wachtrij is gecached binnen je sessie. Als je terugkeert naar Uitgaven, staan de rijen er meteen in het eerste frame en ververst de achtergrond ze op hun plek. Zo schuift de lijst eronder niet meer weg terwijl je al aan het lezen bent. De cache hoort bij je huidige werkruimte: bij een werkruimtewissel wordt hij opnieuw opgebouwd.
+Elke bankregel gebruikt dezelfde kolommen als de rest van je uitgaven: leverancier, datum, bedrag, categorie, btw en herkomst. Een regel die al een voorgestelde categorie heeft, toont het categorie-icoon en de reden voor het voorstel (je eigen regel, slimme categorisatie, of een vermoeden op basis van de omschrijving). Een regel zonder categorie toont een open vraagteken en de aansporing om een categorie te kiezen. De regel draagt ook het logo van de bank waar hij vandaan komt, en eventuele waarschuwingen die de importeur heeft achtergelaten (bijvoorbeeld een bon die niet kon worden toegevoegd of een btw-tarief dat afweek van het gebruikelijke) staan onder de leveranciersnaam.
 
 ::: info
 De wachtrij laadt maximaal 100 review-rijen en 100 uitgavekandidaten per ophaalronde. Heeft de server meer rijen, dan geeft de wachtrij dat aan en haalt hij na een actie automatisch de volgende batch op. Op die manier komt niets meer vast te zitten achter een volle pagina.
@@ -72,7 +72,7 @@ Als de categorie die je hebt gekozen sinds het laden van de pagina is gearchivee
 
 ### Achterstand in één keer afschrijven
 
-Wanneer je een bank koppelt, haalt de eerste import transacties op van vóór je MyCompanyDesk gebruikte. Veel van die oudere regels komen uit een periode die al is ingediend, dus er valt niets meer over te beslissen. Zodra de wachtrij een blok verouderde regels ziet, biedt hij **Bijwerken tot daar** aan.
+Wanneer je een bank koppelt, haalt de eerste import transacties op van vóór je MyCompanyDesk gebruikte. Veel van die oudere regels komen uit een periode die al is ingediend, dus er valt niets meer over te beslissen. Zodra de wachtrij een blok verouderde regels ziet, biedt de groepkop **Bijwerken tot daar** aan.
 
 Als je op de knop klikt, worden alle wachtrijregels vóór de voorgestelde datum afgesloten, ook regels die nu niet in beeld staan. Er wordt niets verwijderd: de transacties verhuizen naar **Genegeerd**, en je kunt de actie in één klik terugdraaien. Vanaf dat moment vraagt MyCompanyDesk alleen nog naar transacties vanaf de voorgestelde datum.
 

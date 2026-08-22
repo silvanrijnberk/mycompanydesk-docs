@@ -1,7 +1,7 @@
 ---
 title: Bank Feed
 description: "Link your bank account so transactions flow in automatically. Rules turn outgoing payments into draft expenses that you confirm before they book."
-last_verified: 2026-08-21
+last_verified: 2026-08-22
 ---
 
 # Bank Feed
@@ -13,7 +13,7 @@ Link your bank account to MyCompanyDesk and your transactions flow in automatica
 The bank feed lives in the Expenses area:
 
 - **Connections and settings**: open **Expenses** and click the gear icon in the page header. This opens the expense settings, where you link banks, review auto-imported expenses, and manage rules and notifications.
-- **Bank queue**: at the top of the Expenses page you see the rows that still need review.
+- **Bank queue**: bank lines waiting to become expenses appear inside the Expenses list, marked by a bank group header.
 - **Transaction feed**: the **Transacties** button in the Expenses page header opens the list of imported bank transactions.
 
 ## Linking a bank account
@@ -53,9 +53,9 @@ Only outgoing transactions become expenses; incoming payments are never turned i
 
 ## The bank queue
 
-The bank queue sits at the top of the Expenses page. It shows transactions that have not yet been booked as expenses: review rows prepared by the feed, plus expense candidates from the bank feed. Each row shows the supplier, date, amount, the suggested category, and where that suggestion came from (one of your rules, your default category, a smart suggestion, or the bank feed).
+Bank lines waiting to become expenses are shown inside the Expenses table, not in a separate card above it. A full-width group header inside the table marks the boundary between your regular expenses and the bank rows. The header shows a bank icon, the number of waiting rows, and bulk actions when more than one row is present. It also carries a short note explaining that these rows are in your list but are not yet counted in the figures above, so the KPIs and the list stay consistent.
 
-The queue is cached within your session. When you return to Expenses, the rows appear in the first frame and the background refreshes them in place. That prevents the list underneath from shifting down while you are already reading it. The cache belongs to your current workspace: switching workspaces rebuilds it from scratch.
+Each bank row uses the same columns as the rest of your expenses: supplier, date, amount, category, VAT, and source. A row that already has a suggested category shows the category icon and the reason for the suggestion (your own rule, smart categorisation, or a guess based on the description). A row without a category shows an open question mark and the prompt to pick a category. The row also carries the logo of the bank it came from, and any warning note left by the importer (for example a receipt that could not be attached or a VAT rate that looked unusual) appears under the supplier name.
 
 ::: info
 The queue loads up to 100 review rows and 100 expense candidates per fetch. When the server has more rows, the queue indicates this and automatically pulls the next batch after an action, so nothing gets stuck behind a full page.
@@ -72,7 +72,7 @@ If the category you selected has been archived since the page loaded, the confir
 
 ### Catching up on older queue lines
 
-When you connect a bank, the first import can pull in transactions from before you started using MyCompanyDesk. Many of those older rows are from a period that has already been filed, so there is nothing left to decide. When the queue detects a block of stale rows, it offers **Catch up to here**.
+When you connect a bank, the first import can pull in transactions from before you started using MyCompanyDesk. Many of those older rows are from a period that has already been filed, so there is nothing left to decide. When the queue detects a block of stale rows, the group header offers **Catch up to here**.
 
 Clicking it closes every queue line before the suggested date, including rows that are not currently visible. Nothing is deleted: the transactions move to **Ignored**, and you can undo the action in one click. From that point on, MyCompanyDesk only asks you about transactions from the suggested date onward.
 

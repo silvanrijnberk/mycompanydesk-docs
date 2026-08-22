@@ -1,7 +1,7 @@
 ---
 title: Dashboard
 description: "Der Startbildschirm Ihres Arbeitsbereichs: Periodenwahl, KPI-Übersicht, ein Hinweis-Widget und Blöcke, die nur bei passenden Daten erscheinen."
-last_verified: 2026-08-18
+last_verified: 2026-08-22
 ---
 
 # Dashboard
@@ -20,7 +20,7 @@ Alle Zahlen in der KPI-Reihe und in den Tempo-Berechnungen folgen der gewählten
 
 ## KPI-Reihe
 
-Die KPI-Reihe zeigt immer fünf Kacheln. Jede Kachel zeigt eine Hauptzahl, einen Vergleich mit der vorherigen vergleichbaren Periode, sofern ein ehrlicher Vergleich möglich ist, und einen kleinen Trendverlauf. Die Kacheln verlinken zum passenden Bericht oder zur passenden Liste.
+Die KPI-Reihe zeigt immer fünf separate Kacheln. Jede Kachel zeigt eine Hauptzahl, einen Vergleich mit der vorherigen vergleichbaren Periode, sofern ein ehrlicher Vergleich möglich ist, und einen kleinen Trendverlauf. Die Kachen teilen sich Rand, Radius und Grid mit den Blöcken darunter, sodass die Reihe zum Dashboard gehört statt als eigene Tabellenleiste zu wirken. Die Kacheln verlinken zum passenden Bericht oder zur passenden Liste.
 
 | Kachel | Was Sie sehen |
 |---|---|
@@ -30,7 +30,9 @@ Die KPI-Reihe zeigt immer fünf Kacheln. Jede Kachel zeigt eine Hauptzahl, einen
 | **Verbindlichkeiten** | Geld, das Sie noch auszahlen müssen, wobei der überfällige Anteil ausgewiesen wird |
 | **Gewinn** | Nettogewinn in der gewählten Periode, mit Marge, wenn sie berechnet werden kann |
 
-Eine Kachel ohne ehrliche Historie zeigt keinen Trendverlauf anstelle einer erfundenen flachen Linie. Die Farbe eines Delta-Abzeichens folgt der Bedeutung, nicht nur der Richtung: Steigende Forderungen sind schlechte Nachrichten, auch wenn der Pfeil nach oben zeigt.
+Die Liquiditäts-Kachel behält einen dezenteren Markenfarbton, damit das Auge dort beginnt, ist aber genauso breit wie die anderen. Stammt die Liquiditätszahl aus einem verbundenen Bankkonto, zeigt die Kachel auch den Zeitpunkt der letzten Synchronisation.
+
+Eine Kachel ohne ehrliche Historie zeigt keinen Trendverlauf anstelle einer erfundenen flachen Linie. Der Trendverlauf lebt innerhalb seiner eigenen Kachel unter einer weichen Füllung, und die Linienfarbe folgt der Bedeutung der Kachel: ein Verlust wird in der Fehlerfarbe gezeichnet, auch wenn es der Gewinn-Slot ist, und ein echtes Banksaldo zeigt seinen Verlauf statt eines leeren Bandes. Das Delta-Abzeichen sitzt in der Labelreihe statt neben der Zahl, sodass eine Prozentveränderung nicht als Teil der Zahl wahrgenommen wird, neben der sie steht. Die Farbe des Abzeichens folgt der Bedeutung, nicht nur der Richtung: Steigende Forderungen sind schlechte Nachrichten, auch wenn der Pfeil nach oben zeigt.
 
 ## Aufmerksamkeits-Widget
 

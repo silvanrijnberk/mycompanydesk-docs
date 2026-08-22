@@ -1,6 +1,7 @@
 ---
 title: Flux bancaire
 description: "Reliez votre compte bancaire pour que les transactions arrivent seules. Des règles créent des brouillons de dépense que vous validez avant écriture."
+last_verified: 2026-08-22
 ---
 
 # Flux bancaire
@@ -12,7 +13,7 @@ Reliez votre compte bancaire à MyCompanyDesk et vos transactions arrivent autom
 Le flux bancaire se trouve dans la partie Dépenses :
 
 - **Connexions et réglages** : ouvrez **Dépenses** et cliquez sur la roue dentée dans l'en-tête de la page. Vous y reliez vos banques, contrôlez les dépenses importées automatiquement et gérez les règles et notifications.
-- **File d'attente bancaire** : en haut de la page Dépenses, vous voyez les lignes qui doivent encore être vérifiées.
+- **File d'attente bancaire** : les lignes bancaires qui ne sont pas encore des dépenses apparaissent dans la liste des dépenses, marquées par un en-tête de groupe bancaire.
 - **Flux de transactions** : le bouton **Transactions** dans l'en-tête de la page Dépenses ouvre la liste des transactions bancaires importées.
 
 ## Relier un compte bancaire
@@ -52,9 +53,9 @@ Seules les transactions sortantes deviennent des dépenses ; les paiements entra
 
 ## La file d'attente bancaire
 
-La file d'attente bancaire se trouve en haut de la page Dépenses. Elle affiche les transactions qui ne sont pas encore comptabilisées en tant que dépenses : les lignes de vérification préparées par le flux, ainsi que les candidats-dépenses issus du flux bancaire. Chaque ligne montre le fournisseur, la date, le montant, la catégorie suggérée et l'origine de la suggestion (une de vos règles, votre catégorie par défaut, une suggestion intelligente ou le flux bancaire).
+Les lignes bancaires qui ne sont pas encore des dépenses s'affichent maintenant dans le tableau des dépenses, et non plus dans une carte séparée au-dessus. Un en-tête de groupe en pleine largeur à l'intérieur du tableau marque la limite entre vos dépenses habituelles et les lignes bancaires. L'en-tête affiche une icône de banque, le nombre de lignes en attente et des actions groupées quand plus d'une ligne est présente. Il porte aussi une courte mention expliquant que ces lignes figurent dans votre liste, mais ne comptent pas encore dans les chiffres ci-dessus, afin que les indicateurs et la liste restent cohérents.
 
-La file est mise en cache dans votre session. Lorsque vous revenez dans Dépenses, les lignes apparaissent dans la première image et l'arrière-plan les actualise à leur place. Ainsi, la liste située en dessous ne descend plus pendant que vous êtes déjà en train de lire. Le cache appartient à votre espace de travail actuel : changer d'espace de travail le reconstruit à partir de zéro.
+Chaque ligne bancaire utilise les mêmes colonnes que le reste de vos dépenses : fournisseur, date, montant, catégorie, TVA et provenance. Une ligne qui a déjà une catégorie suggérée montre l'icône de la catégorie et la raison de la suggestion (votre propre règle, la catégorisation intelligente, ou une hypothèse basée sur la description). Une ligne sans catégorie affiche un point d'interrogation ouvert et vous invite à choisir une catégorie. La ligne porte également le logo de la banque d'où elle provient, et les avertissements laissés par l'importateur (par exemple un justificatif qui n'a pas pu être joint ou un taux de TVA qui semblait inhabituel) apparaissent sous le nom du fournisseur.
 
 ::: info
 La file charge jusqu'à 100 lignes de vérification et 100 candidats-dépenses par récupération. Lorsque le serveur a plus de lignes, la file l'indique et tire automatiquement le lot suivant après une action, pour que rien ne reste bloqué derrière une page pleine.
@@ -62,15 +63,16 @@ La file charge jusqu'à 100 lignes de vérification et 100 candidats-dépenses p
 
 Pour chaque brouillon, vous pouvez :
 
-- **Confirmer** : comptabiliser la dépense telle quelle. Elle rejoint votre liste de dépenses et compte dans les rapports et la TVA.
+- **Confirmer** : visible quand la ligne a déjà une catégorie. Comptabilise la dépense telle quelle. Elle rejoint votre liste de dépenses et compte dans les rapports et la TVA.
+- **Configurer** : visible quand la ligne n'a pas encore de catégorie. Ouvre la fiche de la ligne bancaire, où vous choisissez la catégorie avant de comptabiliser. La fiche montre la description bancaire brute et le compte de contrepartie quand ils apportent du contexte, une catégorie suggérée avec la raison de cette suggestion, et un aperçu de la TVA qui s'appliquera. Vous pouvez aussi cocher **Mémoriser ce fournisseur** pour créer une règle fournisseur qui comptabilisera automatiquement, sans vérification, les futurs paiements correspondants de ce fournisseur. Cliquez ensuite sur **Confirmer** pour valider ou sur **Ignorer** pour retirer le brouillon. Sur téléphone, la même fiche s'ouvre depuis la ligne.
 - **Modifier** : ouvrir la dépense pour ajuster la catégorie, la TVA ou le montant avant de comptabiliser.
 - **Rejeter** : écarter le brouillon. La transaction retourne dans le flux pour un traitement manuel.
 
-Si la puce de catégorie choisie a été archivée depuis le chargement de la page, l'action Confirmer ou Modifier est refusée avec l'erreur `EXPENSE_CATEGORY_UNKNOWN` au lieu de comptabiliser silencieusement la dépense sous une autre catégorie. Actualisez la page pour charger la liste des catégories actuelles et choisissez à nouveau.
+Si la catégorie choisie a été archivée depuis le chargement de la page, l'action Confirmer ou Modifier est refusée avec l'erreur `EXPENSE_CATEGORY_UNKNOWN` au lieu de comptabiliser silencieusement la dépense sous une autre catégorie. Actualisez la page pour charger la liste des catégories actuelles et choisissez à nouveau.
 
 ### Rattraper les anciennes lignes en une fois
 
-Quand vous reliez un compte bancaire, la première importation peut récupérer des transactions d'avant MyCompanyDesk. Beaucoup de ces lignes anciennes appartiennent à une période déjà déclarée, donc il n'y a plus rien à décider. Dès que la file détecte un bloc de lignes périmées, elle propose **Mettre à jour jusqu'ici**.
+Quand vous reliez un compte bancaire, la première importation peut récupérer des transactions d'avant MyCompanyDesk. Beaucoup de ces lignes anciennes appartiennent à une période déjà déclarée, donc il n'y a plus rien à décider. Dès que la file détecte un bloc de lignes périmées, l'en-tête de groupe propose **Mettre à jour jusqu'ici**.
 
 Cliquer ferme toutes les lignes de la file avant la date suggérée, y compris celles qui ne sont pas visibles actuellement. Rien n'est supprimé : les transactions passent dans **Ignorées**, et vous pouvez annuler l'action en un clic. Dès lors, MyCompanyDesk ne vous demande que les transactions à partir de la date suggérée.
 

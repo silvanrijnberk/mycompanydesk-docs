@@ -1,7 +1,7 @@
 ---
 title: "Paramètres de notification"
-description: "Gérez vos sujets de notification dans Paramètres > Meldingen. Sur ordinateur, la cloche ouvre une popover compacte ; sur mobile, un sheet plein écran. Une page Notifications dédiée à /meldingen donne à la liste l’espace nécessaire pour la vue détaillée en deux panneaux et le tri au clavier."
-last_verified: 2026-08-21
+description: "Gérez vos sujets de notification dans Paramètres > Meldingen. La cloche ouvre une popover compacte sur ordinateur et un sheet plein écran sur mobile."
+last_verified: 2026-08-22
 chatbot:
   triggers:
     - "notifications"
@@ -51,9 +51,9 @@ Pendant le premier chargement de la liste, des lignes grises en forme de vraies 
 
 ## La popover et le sheet de notifications
 
-Sur ordinateur, cliquer sur la cloche ouvre une popover compacte en dessous avec la même liste de notifications. Sur téléphone ou tablette, la cloche ouvre un sheet plein écran. L’un et l’autre servent à jeter un coup d’œil : cliquez sur une ligne pour quitter la popover ou le sheet et ouvrir directement l’enregistrement sous-jacent.
+Sur ordinateur, la cloche se trouve dans la barre supérieure et ouvre une popover compacte en dessous. Sur téléphone ou tablette, la cloche ouvre un sheet plein écran. Les deux contiennent la même liste et le même détail, vous n’avez donc jamais besoin de quitter le tiroir pour lire ou traiter une notification.
 
-Un lien en bas, **Alle meldingen bekijken**, ouvre la page **Notifications** dédiée à `/meldingen`. Cette page donne à la liste assez d’espace pour afficher le panneau de détail à côté sur les grands écrans, avec le même tri au clavier : flèches pour se déplacer, Entrée ou Espace pour ouvrir, et `E` pour agir sur la notification sélectionnée.
+Cliquez sur une ligne pour déployer le détail à l’intérieur du tiroir. Sur ordinateur, le panneau de détail s’ouvre à côté de la liste dans la popover. Sur téléphone, le même contenu détaillé s’ouvre dans une superposition plein écran pour que le montant et les actions restent lisibles.
 
 Tant que la popover ou le sheet est ouvert, les popups d’arrivée de nouvelles notifications sont supprimées ; elles reprennent une fois que vous le fermez.
 
@@ -79,7 +79,7 @@ Lorsque Ne pas déranger est actif, les notifications push sont retenues, mais l
 
 ## Le panneau de détail
 
-Le panneau de détail se trouve sur la page **Notifications** dédiée (`/meldingen`), où le tiroir a assez de largeur pour afficher la liste et le panneau côte à côte. Il ne fait pas partie de la popover ou du sheet compact de la cloche sur les petits écrans. Cliquez sur une notification dans la page pour ouvrir le panneau avec le contexte complet de l’élément. Pour une facture en retard, vous voyez le total, le montant ouvert, le statut de paiement et la date d’émission. Pour une échéance TVA, vous voyez la période et la date d’échéance. Pour les notifications regroupées, le panneau liste les factures, devis ou enregistrements individuels derrière le résumé.
+Le panneau de détail fait partie du tiroir de notification. Cliquez sur une notification dans la liste pour la déployer. Pour une facture en retard, vous voyez le total, le montant ouvert, le statut de paiement et la date d’émission. Pour une échéance TVA, vous voyez la période et la date d’échéance. Pour les notifications regroupées, le panneau liste les factures, devis ou enregistrements individuels derrière le résumé.
 
 Le panneau attend que l’enregistrement sous-jacent soit chargé avant de basculer. D’ici là, la notification précédente reste visible et ses boutons sont inactifs, pour que rien ne bouge sous votre curseur. Une fois l’enregistrement prêt, le panneau effectue un fondu enchaîné vers la nouvelle notification en une étape fluide.
 

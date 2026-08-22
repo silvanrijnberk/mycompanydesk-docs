@@ -1,7 +1,7 @@
 ---
 title: Dashboard
 description: "Your workspace home screen: period switcher, KPI summary, an attention widget and blocks that appear only when your data makes them useful."
-last_verified: 2026-08-18
+last_verified: 2026-08-22
 ---
 
 # Dashboard
@@ -20,9 +20,9 @@ Every figure in the KPI row and the pace calculations follows the selected perio
 
 ## KPI row
 
-The KPI row always shows five tiles. Each tile shows one headline figure, a comparison with the previous comparable period where an honest comparison exists, and a small sparkline for trend. Tiles link to the relevant report or list.
+The KPI row shows five separate cards. Each card shows one headline figure, a comparison with the previous comparable period where an honest comparison exists, and a small sparkline for trend. The cards share the same border, radius and grid as the blocks below them, so the row reads as part of the dashboard instead of a separate table strip. Every card links to the matching report or list.
 
-| Tile | What it shows |
+| Card | What it shows |
 |---|---|
 | **Cash** | Current cash position, either from a connected bank account or an estimated balance, plus runway in weeks |
 | **Receivables** | Outstanding invoices, with the overdue slice called out |
@@ -30,7 +30,9 @@ The KPI row always shows five tiles. Each tile shows one headline figure, a comp
 | **Payables** | Money you still need to pay out, with the overdue slice called out |
 | **Profit** | Net profit for the selected period, with margin when it can be computed |
 
-A tile that has no honest history renders without a sparkline rather than invent a flat line. The colour of a delta badge follows meaning, not just direction: receivables rising is bad news even though the arrow points up.
+The cash card keeps a soft brand tint so the eye starts there, but it is the same width as the others. When the cash figure comes from a connected bank account, the card also shows the time of the last sync.
+
+A card with no honest history renders without a sparkline rather than invent a flat line. The trend line lives inside its own card under a soft fill, and the line colour follows the card's meaning: a loss draws in the error colour even though the slot is profit, and a real bank balance draws its trajectory instead of an empty band. The delta badge sits on the label row rather than beside the figure, so a percentage change does not read as part of the number it stands next to. Badge colour follows meaning, not just direction: receivables rising is bad news even though the arrow points up.
 
 ## Attention widget
 

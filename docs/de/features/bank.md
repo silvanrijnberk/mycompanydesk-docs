@@ -1,6 +1,7 @@
 ---
 title: Bankfeed
 description: "Verbinden Sie Ihr Bankkonto, damit Transaktionen einfließen. Regeln machen aus Zahlungen Ausgabenentwürfe, die Sie vor der Buchung bestätigen."
+last_verified: 2026-08-22
 ---
 
 # Bankfeed
@@ -52,9 +53,9 @@ Nur abgehende Transaktionen werden zu Ausgaben; eingehende Zahlungen werden nie 
 
 ## Die Bankwarteschlange
 
-Die Bankwarteschlange steht oben auf der Ausgabenseite. Sie zeigt Transaktionen, die noch nicht als Ausgabe gebucht wurden: Prüfzeilen, die der Feed vorbereitet hat, plus Ausgabenkandidaten aus dem Bankfeed. Jede Zeile zeigt Lieferant, Datum, Betrag, die vorgeschlagene Kategorie und die Herkunft des Vorschlags (eine Ihrer Regeln, Ihre Standardkategorie, ein smarter Vorschlag oder der Bankfeed).
+Bankzeilen, die noch keine Ausgabe sind, werden jetzt in der Ausgabentabelle angezeigt, nicht mehr in einer separaten Karte darüber. Eine gruppenübergreifende Überschrift in der Tabelle markiert die Grenze zwischen Ihren normalen Ausgaben und den Bankzeilen. Die Überschrift zeigt ein Banksymbol, die Anzahl wartender Zeilen und Massenaktionen, wenn mehr als eine Zeile vorhanden ist. Außerdem enthält sie einen kurzen Hinweis, dass diese Zeilen zwar in Ihrer Liste stehen, aber noch nicht in den Zahlen oben mitgezählt werden. So bleiben die KPIs und die Liste miteinander in Einklang.
 
-Die Warteschlange wird innerhalb Ihrer Sitzung zwischengespeichert. Wenn Sie zu Ausgaben zurückkehren, erscheinen die Zeilen im ersten Frame, und der Hintergrund aktualisiert sie an Ort und Stelle. Dadurch verschiebt sich die darunter liegende Liste nicht mehr nach unten, während Sie bereits lesen. Der Cache gehört zu Ihrem aktuellen Arbeitsbereich: Bei einem Arbeitsbereichswechsel wird er neu aufgebaut.
+Jede Bankzeile verwendet dieselben Spalten wie der Rest Ihrer Ausgaben: Lieferant, Datum, Betrag, Kategorie, Mehrwertsteuer und Herkunft. Eine Zeile, die bereits einen vorgeschlagenen Kategorie hat, zeigt das Kategorie-Symbol und den Grund für den Vorschlag (Ihre eigene Regel, intelligente Kategorisierung oder ein Verdacht basierend auf der Beschreibung). Eine Zeile ohne Kategorie zeigt ein offenes Fragezeichen und den Hinweis, eine Kategorie zu wählen. Die Zeile trägt auch das Logo der Bank, aus der sie stammt, und eventuelle Warnhinweise, die der Importeur hinterlassen hat (zum Beispiel ein Beleg, der nicht hinzugefügt werden konnte, oder ein MwSt.-Satz, der vom Üblichen abwich), stehen unter dem Lieferantennamen.
 
 ::: info
 Die Warteschlange lädt maximal 100 Prüfzeilen und 100 Ausgabenkandidaten pro Abruf. Hat der Server mehr Zeilen, zeigt die Warteschlange das an und lädt nach einer Aktion automatisch den nächsten Batch, sodass nichts hinter einer vollen Seite stecken bleibt.
@@ -71,7 +72,7 @@ Wenn die von Ihnen gewählte Kategorie seit dem Laden der Seite archiviert wurde
 
 ### Alte Warteschlangen-Einträge auf einen Schlag erledigen
 
-Wenn Sie ein Bankkonto verknüpfen, kann der erste Import Transaktionen aus der Zeit vor MyCompanyDesk holen. Viele dieser älteren Zeilen stammen aus einer bereits abgerechneten Periode, sodass keine Entscheidung mehr nötig ist. Sobald die Warteschlange einen Block veralteter Zeilen erkennt, bietet sie **Bis hier aktualisieren** an.
+Wenn Sie ein Bankkonto verknüpfen, kann der erste Import Transaktionen aus der Zeit vor MyCompanyDesk holen. Viele dieser älteren Zeilen stammen aus einer bereits abgerechneten Periode, sodass keine Entscheidung mehr nötig ist. Sobald die Warteschlange einen Block veralteter Zeilen erkennt, bietet die Gruppenüberschrift **Bis hier aktualisieren** an.
 
 Ein Klick schließt alle Warteschlangen-Einträge vor dem vorgeschlagenen Datum, auch solche, die gerade nicht sichtbar sind. Nichts wird gelöscht: die Transaktionen wandern zu **Ignoriert**, und Sie können die Aktion mit einem Klick rückgängig machen. Ab dann fragt MyCompanyDesk nur noch nach Transaktionen ab dem vorgeschlagenen Datum.
 

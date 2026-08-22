@@ -1,7 +1,7 @@
 ---
 title: Tableau de bord
 description: "L'écran d'accueil de votre espace : sélecteur de période, résumé des indicateurs, un widget d'alerte et des blocs qui n'apparaissent que si utiles."
-last_verified: 2026-08-18
+last_verified: 2026-08-22
 ---
 
 # Tableau de bord
@@ -20,9 +20,9 @@ Tous les chiffres de la rangée d'indicateurs et les calculs de rythme suivent l
 
 ## Rangée d'indicateurs
 
-La rangée d'indicateurs affiche toujours cinq tuiles. Chaque tuile montre un chiffre principal, une comparaison avec la période comparable précédente lorsqu'une comparaison honnête est possible, et une petite courbe de tendance. Les tuiles renvoient vers le rapport ou la liste correspondant.
+La rangée d'indicateurs affiche cinq cartes distinctes. Chaque carte montre un chiffre principal, une comparaison avec la période comparable précédente lorsqu'une comparaison honnête est possible, et une petite courbe de tendance. Les cartes partagent la même bordure, le même arrondi et la même grille que les blocs en dessous, pour que la rangée fasse partie du tableau de bord plutôt que d'apparaître comme une bande de tableau séparée. Chaque carte renvoie vers le rapport ou la liste correspondant.
 
-| Tuile | Ce que vous voyez |
+| Carte | Ce que vous voyez |
 |---|---|
 | **Trésorerie** | Position de trésorerie actuelle, issue d'un compte bancaire connecté ou d'un solde estimé, plus le runway en semaines |
 | **Créances** | Factures en cours, avec la part en retard explicitement indiquée |
@@ -30,7 +30,9 @@ La rangée d'indicateurs affiche toujours cinq tuiles. Chaque tuile montre un ch
 | **Dettes à payer** | Argent que vous devez encore payer, avec la part en retard explicitement indiquée |
 | **Bénéfice** | Bénéfice net de la période choisie, avec la marge lorsqu'elle peut être calculée |
 
-Une tuile sans historique honnête s'affiche sans courbe de tendance plutôt qu'avec une ligne plate inventée. La couleur du badge d'évolution suit le sens, pas seulement la direction : des créances qui augmentent sont une mauvaise nouvelle même si la flèche pointe vers le haut.
+La carte Trésorerie garde une teinte de marque subtile pour guider le regard, mais elle a la même largeur que les autres. Lorsque le chiffre de trésorerie provient d'un compte bancaire connecté, la carte affiche aussi l'heure de la dernière synchronisation.
+
+Une carte sans historique honnête s'affiche sans courbe de tendance plutôt qu'avec une ligne plate inventée. La courbe de tendance vit à l'intérieur de sa propre carte sous un remplissage doux, et la couleur de la ligne suit la signification de la carte : une perte se dessine dans la couleur d'erreur même si l'emplacement est Bénéfice, et un vrai solde bancaire montre sa trajectoire au lieu d'une bande vide. Le badge d'évolution se trouve sur la ligne du libellé plutôt qu'à côté du chiffre, pour qu'un pourcentage de variation ne soit pas lu comme faisant partie du nombre auquel il se réfère. La couleur du badge suit le sens, pas seulement la direction : des créances qui augmentent sont une mauvaise nouvelle même si la flèche pointe vers le haut.
 
 ## Widget d'attention
 

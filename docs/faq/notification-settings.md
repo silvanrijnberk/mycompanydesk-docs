@@ -1,7 +1,7 @@
 ---
 title: "Meldingsinstellingen"
-description: "Beheer je meldingsonderwerpen onder Instellingen > Meldingen. Op desktop opent het belletje een compacte popover; op mobiel een volledig sheet. Een eigen Meldingen-pagina op /meldingen geeft de lijst ruimte voor het twee-paneel detailoverzicht en toetsenbordtriage."
-last_verified: 2026-08-21
+description: "Beheer je meldingsonderwerpen onder Instellingen > Meldingen. Het belletje opent een compacte popover op desktop en een volledig sheet op mobiel."
+last_verified: 2026-08-22
 chatbot:
   triggers:
     - "notifications"
@@ -51,9 +51,9 @@ Als de lijst voor de eerste keer laadt, zie je grijze placeholderrijen die eruit
 
 ## De meldingspopover en het sheet
 
-Op desktop opent een klik op het belletje een compacte popover eronder met dezelfde meldingslijst. Op een telefoon of tablet opent het belletje een volledig sheet. Beide zijn bedoeld als een snelle blik: klik op een rij om de popover of het sheet te sluiten en het onderliggende record direct te openen.
+Op desktop zit het belletje in de bovenste balk en opent het een compacte popover eronder. Op een telefoon of tablet opent het belletje een volledig sheet. Beide bevatten dezelfde lijst en hetzelfde detail, dus je hoeft de lade nooit te verlaten om een melding te lezen of af te handelen.
 
-Een link onderaan, **Alle meldingen bekijken**, opent de eigen **Meldingen**-pagina op `/meldingen`. Die pagina geeft de lijst genoeg ruimte om op brede schermen het detailpaneel naast de lijst te tonen, met dezelfde toetsenbordtriage: pijltjestoetsen om te lopen, Enter of Spatie om te openen, en `E` om de geselecteerde melding af te handelen.
+Klik op een rij om het detail in de lade uit te vouwen. Op desktop opent het detailpaneel naast de lijst binnen de popover. Op een telefoon opent dezelfde detailinhoud in een volledig overlay, zodat bedrag en acties leesbaar blijven.
 
 Zolang de popover of het sheet open is, worden inkomende binnenkomst-popups onderdrukt; die hervatten nadat je hem sluit.
 
@@ -79,7 +79,7 @@ Als Niet storen actief is, worden pushmeldingen tegengehouden, maar de meldingen
 
 ## Het detailpaneel
 
-Het detailpaneel staat op de eigen **Meldingen**-pagina (`/meldingen`), waar de lade de breedte heeft om de lijst en het paneel naast elkaar te tonen. Het maakt geen deel uit van de compacte bel-popover of het sheet op kleinere schermen. Klik op een melding op de pagina om het paneel met de volledige context te openen. Bij een te late factuur zie je het totaal, het openstaande bedrag, de betaalstatus en de factuurdatum. Bij een BTW-deadline zie je de periode en vervaldatum. Bij opgetelde meldingen zie je in het paneel de afzonderlijke facturen, offertes of records waar de samenvatting voor staat.
+Het detailpaneel maakt deel uit van de meldingslade. Klik op een melding in de lijst om hem uit te vouwen. Bij een te late factuur zie je het totaal, het openstaande bedrag, de betaalstatus en de factuurdatum. Bij een BTW-deadline zie je de periode en vervaldatum. Bij opgetelde meldingen zie je in het paneel de afzonderlijke facturen, offertes of records waar de samenvatting voor staat.
 
 Het paneel wacht tot het bijbehorende record is geladen voordat het wisselt. Tot die tijd blijft de vorige melding zichtbaar en staan de knoppen op inactief, zodat er niets onder je cursor verschuift. Zodra het record klaar is, fade het paneel in één keer over naar de nieuwe melding.
 
