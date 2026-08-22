@@ -1,6 +1,7 @@
 ---
 title: Bankfeed
 description: "Koppel je bankrekening zodat transacties binnenstromen. Regels maken van uitgaande betalingen concept-uitgaven, die jij bevestigt voordat ze boeken."
+last_verified: 2026-08-21
 ---
 
 # Bankfeed
@@ -62,11 +63,12 @@ De wachtrij laadt maximaal 100 review-rijen en 100 uitgavekandidaten per ophaalr
 
 Per concept kun je:
 
-- **Bevestigen**: de uitgave boeken zoals hij is. Hij verschijnt in je uitgavenlijst en telt mee in rapportages en BTW.
+- **Boeken**: zichtbaar als de regel al een categorie heeft. Boekt de uitgave zoals hij is. Hij verschijnt in je uitgavenlijst en telt mee in rapportages en BTW.
+- **Instellen**: zichtbaar als de regel nog geen categorie heeft. Opent het bankregelscherm, waar je eerst de categorie kiest voordat je boekt. Het scherm toont de ruwe bankomschrijving en tegenrekening als ze context geven, een voorgestelde categorie met de reden daarvoor, en een voorvertoning van de BTW die daarbij hoort. Je kunt ook **Onthoud deze leverancier** aanvinken om een leveranciersregel te maken die toekomstige betalingen van deze leverancier zonder controle boekt. Klik daarna op **Boeken** om te bevestigen of op **Negeren** om het concept te verwijderen. Op een telefoon opent dezelfde sheet vanuit de rij.
 - **Bewerken**: de uitgave openen om categorie, BTW of bedrag aan te passen voordat je boekt.
 - **Afwijzen**: het concept verwijderen. De transactie gaat terug naar de feed voor handmatige afhandeling.
 
-Als de categoriechip die je hebt gekozen sinds het laden van de pagina is gearchiveerd, wordt de actie Bevestigen of Bewerken geweigerd met de fout `EXPENSE_CATEGORY_UNKNOWN` in plaats van stilzwijgend een andere categorie te kiezen. Ververs de pagina om de huidige categorielijst te laden en kies opnieuw.
+Als de categorie die je hebt gekozen sinds het laden van de pagina is gearchiveerd, wordt de actie Bevestigen of Bewerken geweigerd met de fout `EXPENSE_CATEGORY_UNKNOWN` in plaats van stilzwijgend een andere categorie te kiezen. Ververs de pagina om de huidige categorielijst te laden en kies opnieuw.
 
 ### Achterstand in één keer afschrijven
 

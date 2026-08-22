@@ -62,7 +62,8 @@ Die Warteschlange lädt maximal 100 Prüfzeilen und 100 Ausgabenkandidaten pro A
 
 Für jeden Entwurf können Sie:
 
-- **Bestätigen**: die Ausgabe unverändert buchen. Sie erscheint in Ihrer Ausgabenliste und zählt in Berichten und bei der USt.
+- **Buchen**: sichtbar, wenn die Zeile bereits eine Kategorie hat. Bucht die Ausgabe unverändert. Sie erscheint in Ihrer Ausgabenliste und zählt in Berichten und bei der USt.
+- **Einrichten**: sichtbar, wenn die Zeile noch keine Kategorie hat. Öffnet das Bankzeilen-Sheet, in dem Sie vor dem Buchen die Kategorie wählen. Das Sheet zeigt die rohe Bankbeschreibung und die Gegenpartei-IBAN, falls sie Kontext liefern, eine vorgeschlagene Kategorie mit ihrer Begründung sowie eine Vorschau der daraus resultierenden USt. Sie können außerdem **Diesen Lieferanten merken** aktivieren, um eine Lieferantenregel anzulegen, die zukünftige passende Zahlungen dieses Lieferanten ohne Prüfung automatisch bucht. Klicken Sie dann auf **Buchen**, um zu bestätigen, oder auf **Ignorieren**, um den Entwurf zu entfernen. Auf einem Telefon öffnet sich dasselbe Sheet aus der Zeile heraus.
 - **Bearbeiten**: die Ausgabe öffnen, um Kategorie, USt. oder Betrag vor dem Buchen anzupassen.
 - **Ablehnen**: den Entwurf verwerfen. Die Transaktion geht zur manuellen Bearbeitung zurück in den Feed.
 

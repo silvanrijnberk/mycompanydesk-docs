@@ -1,7 +1,7 @@
 ---
 title: "Meldingsinstellingen"
-description: "Om je meldingsinstellingen te beheren: ga naar Instellingen > Meldingen en zet de meldingsonderwerpen per categorie aan of uit."
-last_verified: 2026-08-19
+description: "Beheer je meldingsonderwerpen onder Instellingen > Meldingen. Op desktop opent het belletje een compacte popover; op mobiel een volledig sheet. Een eigen Meldingen-pagina op /meldingen geeft de lijst ruimte voor het twee-paneel detailoverzicht en toetsenbordtriage."
+last_verified: 2026-08-21
 chatbot:
   triggers:
     - "notifications"
@@ -45,9 +45,17 @@ Als er op een dag meerdere vergelijkbare informatieve updates binnenkomen, bijvo
 
 Op een telefoon of tablet kun je een rij swipen om snel iets te doen: naar links om af te wijzen, naar rechts om te snoozen. De rij laat zien wat er gebeurt als je loslaat. Op elke rij staan ook knoppen voor Afwijzen en Snooze.
 
-Je kunt door de lijst bewegen met het toetsenbord: pijltjestoetsen verplaatsen de selectie, Enter of Spatie opent de geselecteerde melding, en Esc sluit het paneel. Het paneel staat boven andere zwevende UI, zodat de focus erbinnen blijft zolang het open is.
+Je kunt door de lijst bewegen met het toetsenbord: pijltjestoetsen verplaatsen de selectie, Enter of Spatie opent de geselecteerde melding, en Esc sluit de popover of het sheet. De popover of het sheet staat boven andere zwevende UI, zodat de focus erbinnen blijft zolang het open is.
 
 Als de lijst voor de eerste keer laadt, zie je grijze placeholderrijen die eruitzien als echte meldingen, in plaats van een spinner, zodat de lay-out niet verschuift zodra de echte rijen binnenkomen. Als je een rij afwijst of snoozt, schuiven de rijen eronder omhoog in plaats van meteen te verspringen. Een ingeklapte groep vouwt soepel uit.
+
+## De meldingspopover en het sheet
+
+Op desktop opent een klik op het belletje een compacte popover eronder met dezelfde meldingslijst. Op een telefoon of tablet opent het belletje een volledig sheet. Beide zijn bedoeld als een snelle blik: klik op een rij om de popover of het sheet te sluiten en het onderliggende record direct te openen.
+
+Een link onderaan, **Alle meldingen bekijken**, opent de eigen **Meldingen**-pagina op `/meldingen`. Die pagina geeft de lijst genoeg ruimte om op brede schermen het detailpaneel naast de lijst te tonen, met dezelfde toetsenbordtriage: pijltjestoetsen om te lopen, Enter of Spatie om te openen, en `E` om de geselecteerde melding af te handelen.
+
+Zolang de popover of het sheet open is, worden inkomende binnenkomst-popups onderdrukt; die hervatten nadat je hem sluit.
 
 ## Een melding snoozen
 
@@ -71,7 +79,7 @@ Als Niet storen actief is, worden pushmeldingen tegengehouden, maar de meldingen
 
 ## Het detailpaneel
 
-Als je op een melding klikt, opent er een paneel aan de rechterkant met de volledige context voor die melding. Bij een te late factuur zie je het totaal, het openstaande bedrag, de betaalstatus en de factuurdatum. Bij een BTW-deadline zie je de periode en vervaldatum. Bij opgetelde meldingen zie je in het paneel de afzonderlijke facturen, offertes of records waar de samenvatting voor staat.
+Het detailpaneel staat op de eigen **Meldingen**-pagina (`/meldingen`), waar de lade de breedte heeft om de lijst en het paneel naast elkaar te tonen. Het maakt geen deel uit van de compacte bel-popover of het sheet op kleinere schermen. Klik op een melding op de pagina om het paneel met de volledige context te openen. Bij een te late factuur zie je het totaal, het openstaande bedrag, de betaalstatus en de factuurdatum. Bij een BTW-deadline zie je de periode en vervaldatum. Bij opgetelde meldingen zie je in het paneel de afzonderlijke facturen, offertes of records waar de samenvatting voor staat.
 
 Het paneel wacht tot het bijbehorende record is geladen voordat het wisselt. Tot die tijd blijft de vorige melding zichtbaar en staan de knoppen op inactief, zodat er niets onder je cursor verschuift. Zodra het record klaar is, fade het paneel in één keer over naar de nieuwe melding.
 

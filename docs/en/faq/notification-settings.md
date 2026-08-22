@@ -1,7 +1,7 @@
 ---
 title: "Notification settings"
-description: "To manage your notification settings: go to Settings > Meldingen (notifications), switch the notification topics on or off. The categories are: invoice."
-last_verified: 2026-08-19
+description: "Manage your notification topics under Settings > Meldingen. On desktop the bell opens a compact popover; on mobile it opens a full-height sheet. A dedicated Notifications page at /meldingen gives the list room for the two-pane detail view and keyboard triage."
+last_verified: 2026-08-21
 chatbot:
   triggers:
     - "notifications"
@@ -45,9 +45,17 @@ If several similar informational updates arrive on the same day, such as release
 
 On a phone or tablet you can swipe a row to act quickly: swipe left to dismiss, swipe right to snooze. The row shows what will happen when you release it. Dismiss and snooze buttons are also available on every row.
 
-You can move through the list with the keyboard: arrow keys move the selection, Enter or Space opens the selected notification, and Esc closes the drawer. The drawer sits above other floating UI so focus stays inside it while it is open.
+You can move through the list with the keyboard: arrow keys move the selection, Enter or Space opens the selected notification, and Esc closes the popover or sheet. The popover or sheet sits above other floating UI so focus stays inside it while it is open.
 
 While the list is loading for the first time, grey placeholder rows shaped like real notifications appear instead of a spinner, so the layout does not jump when the actual rows arrive. When you dismiss or snooze a row, the remaining rows glide up into the gap rather than snapping to a new position. Expanding a folded group animates its extra rows in place.
+
+## The notification popover and sheet
+
+On desktop, clicking the notification bell opens a compact popover below it with the same notification list. On a phone or tablet the bell opens a full-height sheet. Both are meant as a quick glance: click a row to leave the popover or sheet and open the underlying record directly.
+
+A link at the bottom, **Alle meldingen bekijken**, opens the dedicated **Notifications** page at `/meldingen`. That page gives the list enough room to show the detail panel side-by-side on wide screens, with the same keyboard triage: arrow keys to move, Enter or Space to open, and `E` to act on the selected item.
+
+While the popover or sheet is open, new arrival popups are suppressed; they resume after you close it.
 
 ## Snoozing a notification
 
@@ -71,7 +79,7 @@ While do-not-disturb is active, push notifications are held back, but the notifi
 
 ## The detail panel
 
-Clicking a notification opens a right-hand panel with the full context for that item. For an overdue invoice you see the total, open amount, payment status and issue date. For a VAT deadline you see the period and due date. For rolled-up notifications the panel lists the individual invoices, quotes or records behind the summary.
+The detail panel lives on the dedicated **Notifications** page (`/meldingen`), where the drawer has enough width to show the list and the panel side-by-side. It is not part of the compact bell popover or sheet on smaller surfaces. Clicking a notification on the page opens the panel with the full context for that item. For an overdue invoice you see the total, open amount, payment status and issue date. For a VAT deadline you see the period and due date. For rolled-up notifications the panel lists the individual invoices, quotes or records behind the summary.
 
 The panel waits for the underlying record to load before it switches. Until the record arrives, the previous notification stays visible and its buttons are inactive, so nothing shifts under your cursor. Once the record is ready, the panel cross-fades to the new notification in one smooth step.
 

@@ -1,7 +1,7 @@
 ---
 title: Bank Feed
 description: "Link your bank account so transactions flow in automatically. Rules turn outgoing payments into draft expenses that you confirm before they book."
-last_verified: 2026-08-05
+last_verified: 2026-08-21
 ---
 
 # Bank Feed
@@ -63,11 +63,12 @@ The queue loads up to 100 review rows and 100 expense candidates per fetch. When
 
 For each draft you can:
 
-- **Confirm**: book the expense as-is. It moves to your expense list and counts in reports and VAT.
+- **Book**: shown when the row already has a category. Books the expense as-is. It moves to your expense list and counts in reports and VAT.
+- **Set up**: shown when the row has no category yet. It opens the bank-row sheet, where you can choose the category before booking. The sheet shows the raw bank description and counterpart account when they add context, any suggested category with the reason for it, and a preview of the VAT that will apply. You can also tick **Remember this supplier** to create a vendor rule that will auto-book future matching payments from this supplier without review. Then click **Book** to confirm or **Ignore** to remove the draft. On a phone the same sheet opens from the row.
 - **Edit**: open the expense to adjust the category, VAT, or amount before booking.
 - **Reject**: discard the draft. The transaction returns to the feed for manual handling.
 
-If the category chip you picked has been archived since the page loaded, the confirm or edit action is refused with an `EXPENSE_CATEGORY_UNKNOWN` error instead of silently booking the expense under a different category. Refresh the page to load the current category list and pick again.
+If the category you selected has been archived since the page loaded, the confirm or edit action is refused with an `EXPENSE_CATEGORY_UNKNOWN` error instead of silently booking the expense under a different category. Refresh the page to load the current category list and pick again.
 
 ### Catching up on older queue lines
 
