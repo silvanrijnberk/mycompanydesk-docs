@@ -77,6 +77,10 @@ Si un message de la boîte de réception est converti en une dépense dont la da
 
 Le tiroir de saisie rapide affiche le meme indicateur de periode de TVA a cote du champ de date avant l'enregistrement, afin qu'une periode verrouillee ou en tolerance soit visible avant que le serveur refuse l'ecriture.
 
+## Logos fournisseurs
+
+Lorsqu'un fournisseur a un logo connu, MyCompanyDesk l'affiche à côté du nom du fournisseur dans la liste des dépenses et dans l'autocomplétion fournisseur lorsque vous créez ou modifiez une dépense. Le logo provient du registre KVK pour les entreprises néerlandaises ou d'une liste organisée de marques courantes. Si aucun logo n'est disponible, l'application affiche un monogramme.
+
 ## Catégories de dépenses
 
 MyCompanyDesk propose des catégories prédéfinies avec des icônes pour une sélection rapide :

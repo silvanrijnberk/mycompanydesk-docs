@@ -49,6 +49,12 @@ Bij een geslaagde opzoeking verschijnt een geverifieerd-badge naast het KVK-numm
 
 Elke werkruimte heeft 100 gratis KVK-zoekopdrachten per dag (resultaten uit de cache tellen niet mee). Bij 20 of minder resterende zoekopdrachten toont de hint bij het KVK-veld hoeveel je er nog over hebt. Is het daglimiet bereikt, dan zie je een foutmelding en kun je de gegevens handmatig invullen of het morgen opnieuw proberen.
 
+### Bedrijfslogo's uit het KVK-register
+
+Voor Nederlandse klanten met een geregistreerd logo haalt MyCompanyDesk het logo op uit het KVK-register en toont het naast de bedrijfsnaam in de klantenlijst, de klantdetailpagina en de KVK-zoeksuggesties wanneer je een klant aanmaakt. Is er geen logo beschikbaar, of is het logo nog aan het laden, dan valt de app terug op een monogram zodat de rijhoogte niet verspringt.
+
+Het logo is alleen voor weergave; het vervangt niet je eigen werkruimtelogo op facturen of documenten.
+
 ## Klantdetailpagina
 
 De klantdetailpagina toont:

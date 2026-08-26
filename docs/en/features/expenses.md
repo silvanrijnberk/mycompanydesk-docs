@@ -78,6 +78,10 @@ The capture drawer shows the same VAT-period chip next to the date field before 
 
 When a forwarded email or a scan produces an expense but the receipt file itself cannot be attached (for example, an unsupported file type or a file over the limit), the expense is still created and a note is added to it telling you that the attachment is missing. Upload the receipt manually on the expense detail page when that happens.
 
+## Supplier logos
+
+When a supplier has a known logo, MyCompanyDesk shows it next to the supplier name in the expense list and in the supplier autocomplete when you create or edit an expense. The logo comes from the KVK register for Dutch businesses or from a curated list of common brands. If no logo is available, the app shows a monogram instead.
+
 ## VAT treatment
 
 Every expense has a `vat_treatment` field that decides how it lands on your VAT return:

@@ -1,6 +1,6 @@
 ---
 title: "Benachrichtigungseinstellungen"
-description: "So verwalten Sie Ihre Benachrichtigungseinstellungen: gehen Sie zu Einstellungen > Benachrichtigungen, schalten Sie die Themen ein oder aus und aktivieren Sie Push-Benachrichtigungen."
+description: "So verwalten Sie Ihre Benachrichtigungseinstellungen: Themen ein- oder ausschalten und Push-Benachrichtigungen aktivieren."
 last_verified: 2026-08-21
 chatbot:
   triggers:

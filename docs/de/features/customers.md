@@ -49,6 +49,12 @@ Bei erfolgreicher Suche erscheint ein Verifiziert-Badge neben dem Handelsregiste
 
 Jeder Arbeitsbereich hat 100 kostenlose KVK-Abrufe pro Tag (zwischengespeicherte Ergebnisse zählen nicht mit). Bei 20 oder weniger verbleibenden Abrufen zeigt der Hinweis am KVK-Feld einen Zähler, wie viele noch übrig sind. Wird das Tageslimit erreicht, erscheint eine entsprechende Meldung. Sie können die Daten dann manuell eingeben oder es morgen erneut versuchen.
 
+### Firmenlogos aus dem KVK-Register
+
+Für niederländische Kunden mit einem registrierten Logo ruft MyCompanyDesk das Logo aus dem KVK-Register ab und zeigt es neben dem Firmennamen in der Kundenliste, auf der Kundendetailseite und in den KVK-Suchvorschlägen an, wenn Sie einen Kunden anlegen. Ist kein Logo verfügbar oder wird es noch geladen, fällt die App auf ein Monogramm zurück, damit die Zeilenhöhe nicht springt.
+
+Das Logo dient nur der Anzeige und ersetzt nicht Ihr eigenes Arbeitsbereichslogo auf Rechnungen oder Dokumenten.
+
 ## Kundendetailseite
 
 Die Kundendetailseite zeigt:
