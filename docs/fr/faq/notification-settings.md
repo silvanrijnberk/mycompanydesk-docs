@@ -1,6 +1,6 @@
 ---
 title: "Paramètres de notification"
-description: "Pour gérer vos paramètres de notification : allez dans Paramètres > Notifications, activez ou désactivez les sujets de notification et activez les notifications push."
+description: "Pour gérer vos paramètres de notification : activez ou désactivez les sujets et les notifications push."
 last_verified: 2026-08-21
 chatbot:
   triggers:

@@ -77,6 +77,10 @@ Wenn eine Posteingangsnachricht in eine Ausgabe mit einem Datum innerhalb einer 
 
 Die Schnellerfassungs-Schublade zeigt denselben MwSt.-Perioden-Status neben dem Datumsfeld vor dem Speichern an, damit eine gesperrte oder Toleranzperiode sichtbar ist, bevor der Server die Buchung ablehnt.
 
+## Lieferantenlogos
+
+Wenn ein Lieferant ein bekanntes Logo hat, zeigt MyCompanyDesk es neben dem Lieferantennamen in der Ausgabenliste und in der Lieferanten-Autovervollständigung an, wenn Sie eine Ausgabe erstellen oder bearbeiten. Das Logo stammt aus dem KVK-Register für niederländische Unternehmen oder aus einer kuratierten Liste gängiger Marken. Ist kein Logo verfügbar, zeigt die App stattdessen ein Monogramm.
+
 ## Ausgabenkategorien
 
 MyCompanyDesk bietet vordefinierte Kategorien mit Symbolen zur schnellen Auswahl:

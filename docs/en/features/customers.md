@@ -49,6 +49,12 @@ A verified badge appears next to the chamber number field on successful lookup. 
 
 Each workspace gets 100 free KVK lookups per day (cached results do not count). When 20 or fewer lookups remain, the KVK field hint shows a counter of how many are left. If the daily cap is hit, the form shows a quota-exceeded message, and you can enter the data manually or try again tomorrow.
 
+### Company logos from the KVK register
+
+For Dutch customers with a registered logo, MyCompanyDesk fetches the logo from the KVK register and shows it next to the company name in the customer list, the customer detail page, and the KVK search suggestions when you create a customer. If no logo is available, or while the logo is still loading, the app falls back to a monogram so the row height does not jump.
+
+The logo is for display only; it does not replace your own workspace logo on invoices or documents.
+
 ## Customer detail page
 
 The customer detail page shows:

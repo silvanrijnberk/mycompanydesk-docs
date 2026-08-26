@@ -49,6 +49,12 @@ Un badge Verifie apparait a cote du champ du numero de chambre lorsque la recher
 
 Chaque espace de travail dispose de 100 recherches KVK gratuites par jour (les resultats mis en cache ne comptent pas). Lorsqu.il reste 20 recherches ou moins, l.indication du champ KVK affiche un compteur du nombre restant. Si la limite quotidienne est atteinte, un message d.erreur s.affiche -- vous pouvez saisir les donnees manuellement ou reessayer demain.
 
+### Logos d'entreprise du registre KVK
+
+Pour les clients néerlandais disposant d'un logo enregistré, MyCompanyDesk récupère le logo dans le registre KVK et l'affiche à côté du nom de l'entreprise dans la liste des clients, la fiche client et les suggestions de recherche KVK lorsque vous créez un client. Si aucun logo n'est disponible ou s'il est encore en cours de chargement, l'application affiche un monogramme pour éviter que la hauteur de ligne ne saute.
+
+Le logo est uniquement destiné à l'affichage. Il ne remplace pas le logo de votre propre espace de travail sur les factures ou documents.
+
 ## Page de detail du client
 
 La page de detail du client affiche :

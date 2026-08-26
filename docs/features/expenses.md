@@ -91,6 +91,10 @@ De snelle invoerlade toont dezelfde btw-periodestatus naast het datumveld voorda
 
 Als een doorgestuurde e-mail of een scan wel een uitgave oplevert, maar de bijbehorende bon niet meegevoegd kan worden (bijvoorbeeld een niet-ondersteund bestandstype of een te groot bestand), wordt de uitgave toch aangemaakt en krijgt hij een notitie dat de bijlage ontbreekt. Upload de bon daarna handmatig op de detailpagina van de uitgave.
 
+## Leverancierslogo's
+
+Als een leverancier een bekend logo heeft, toont MyCompanyDesk het naast de leveranciersnaam in de uitgavenlijst en in de leveranciersautocomplete wanneer je een uitgave maakt of bewerkt. Het logo komt uit het KVK-register voor Nederlandse bedrijven of uit een samengestelde lijst van veelvoorkomende merken. Is er geen logo beschikbaar, dan toont de app een monogram.
+
 ## BTW-afhandeling
 
 Elke uitgave kan een eigen BTW-tarief hebben. Veelgebruikte opties:

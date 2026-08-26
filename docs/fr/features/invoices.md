@@ -134,7 +134,7 @@ La suppression definitive d'une facture (suppression individuelle, action groupe
 
 La finalisation groupée applique les memes controles de TVA et de statut que pour l'envoi d'une seule facture. Les factures qui echouent a un controle sont ignorees; l'ecran de resultats indique pourquoi.
 
-Si une action groupee est refusee parce qu'une ou plusieurs lignes selectionnees tombent dans une periode de TVA verrouillee, le message d'erreur nomme la periode exacte et explique la prochaine etape. Une periode deja deposee et verrouillee ne peut etre rouverte que par une declaration suppletive. Un verrouillage nu (la date limite de depot est passee mais aucune declaration n'a ete deposee) peut etre deverrouille temporairement depuis la page TVA. Retirez les lignes situees dans cette periode de votre selection, ou utilisez la route de correction appropriee, puis reessayez.
+Si une action groupée est refusée parce qu'une ou plusieurs lignes sélectionnées tombent dans une période de TVA verrouillée, le message d'erreur nomme la période exacte et explique la prochaine étape. Une période déjà déposée et verrouillée ne peut être rouverte que par une déclaration supplétive. Un verrouillage nu (la date limite de dépôt est passée mais aucune déclaration n'a été déposée) peut être déverrouillé temporairement depuis la page TVA. Retirez les lignes situées dans cette période de votre sélection, ou utilisez la route de correction appropriée, puis réessayez.
 
 ## Liens de paiement
 
