@@ -134,6 +134,8 @@ Een factuur definitief verwijderen (enkelvoudig, via bulkacties, prullenbak lege
 
 Bulksgewijs afronden voert dezelfde BTW- en statuscontroles uit als bij het versturen van een enkele factuur. Facturen die een controle niet doorstaan, worden overgeslagen; het resultatenscherm geeft aan waarom.
 
+Als een bulkactie wordt geweigerd omdat één of meer geselecteerde regels in een vergrendelde BTW-periode vallen, noemt de foutmelding het exacte tijdvak en legt hij uit wat je kunt doen. Een ingediende en vergrendelde periode kan alleen via een suppletieaangifte worden heropend. Een kaal slot (de aangiftedeadline is verstreken zonder dat er een aangifte is ingediend) kun je tijdelijk ontgrendelen op de BTW-pagina. Haal de regels in dat tijdvak uit je selectie, of gebruik de passende correctieroute, en probeer het opnieuw.
+
 ## Betaallinks
 
 Wanneer je een factuur verstuurt, wordt een unieke betaallink gegenereerd. Je klant kan:

@@ -49,11 +49,11 @@ After the link pass, new transactions run through your rules and the smart categ
 
 Transactions from the first import, which pulls roughly the past 90 days, never auto-confirm. They always land in the review queue, even when the categorisation is confident. This only applies to the backlog from before the account was connected; new transactions arriving afterwards follow the normal review rules. The import-from date per account determines from which point that backlog appears in your task list; anything before it remains available for linking and reconciling, but does not request review.
 
-Only outgoing transactions become expenses; incoming payments are never turned into expenses. Expenses created from bank transactions show a small bank badge in the expenses list, so you can always see where an entry came from.
+Only outgoing transactions become expenses; incoming payments are never turned into expenses. Expenses created from bank transactions show a small bank icon in the expenses list, with a tooltip and a screen-reader label that name the connected bank. The exact bank logo is no longer shown, so the list stays readable when many bank-sourced rows are mixed with other expenses.
 
 ## The bank queue
 
-The bank queue sits at the top of the Expenses page. It shows transactions that have not yet been booked as expenses: review rows prepared by the feed, plus expense candidates from the bank feed. Each row shows the supplier, date, amount, the suggested category, and where that suggestion came from (one of your rules, your default category, a smart suggestion, or the bank feed).
+The bank queue sits at the top of the Expenses page and is now part of the main expenses table. It shows transactions that have not yet been booked as expenses: review rows prepared by the feed, plus expense candidates from the bank feed. Each row shows the supplier, date, amount, the suggested category, and where that suggestion came from (one of your rules, your default category, a smart suggestion, or the bank feed).
 
 The queue is cached within your session. When you return to Expenses, the rows appear in the first frame and the background refreshes them in place. That prevents the list underneath from shifting down while you are already reading it. The cache belongs to your current workspace: switching workspaces rebuilds it from scratch.
 

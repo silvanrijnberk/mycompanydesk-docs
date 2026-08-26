@@ -134,6 +134,8 @@ Permanently deleting an invoice (single delete, bulk delete, empty trash, or del
 
 Bulk finalizing runs the same VAT and status checks as sending a single invoice. Invoices that fail a check are skipped, and the results screen explains why.
 
+If a bulk action is refused because one or more selected rows fall inside a locked VAT period, the error message names the exact period and tells you what to do next. A filed and locked period can only be reopened via a supplementary VAT return. A bare lock (the period's filing deadline has passed but no return was filed) can be unlocked temporarily from the VAT page. Remove rows that fall in that period from your selection, or use the matching correction route, then try again.
+
 ## Payment links
 
 When you send an invoice, a unique payment link is generated. Your customer can:

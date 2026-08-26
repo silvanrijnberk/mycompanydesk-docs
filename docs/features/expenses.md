@@ -141,6 +141,8 @@ Selecteer meerdere uitgaven voor:
 - **Exporteren** - Download als CSV
 - **Markeer als betaald** - Markeer geselecteerde uitgaven als betaald. Als je een bank- of inbox-concept als betaald markeert, wordt de vlag "Te controleren" tegelijkertijd verwijderd, zodat de rij zichtbaar wordt in je rapportages, BTW-aangifte en boekhoudersexport in plaats van verborgen te blijven. Dit gebeurt alleen als je de status op betaald zet, niet als je hem terugzet naar onbetaald.
 
+Als een bulkactie wordt geweigerd omdat één of meer geselecteerde regels in een vergrendelde BTW-periode vallen, noemt de foutmelding het exacte tijdvak en legt hij uit wat je kunt doen. Een ingediende en vergrendelde periode kan alleen via een suppletieaangifte worden heropend. Een kaal slot (de aangiftedeadline is verstreken zonder dat er een aangifte is ingediend) kun je tijdelijk ontgrendelen op de BTW-pagina. Haal de regels in dat tijdvak uit je selectie, of gebruik de passende correctieroute, en probeer het opnieuw.
+
 ## Kilometervergoeding
 
 Rij je privé zakelijk, dan kun je die ritten bundelen tot één uitgave met een kilometervergoeding.

@@ -154,6 +154,8 @@ Select multiple expenses for:
 - **Export** - Download as CSV.
 - **Mark as paid** - Mark selected expenses as paid. Marking a bank or inbox draft as paid clears its "To review" flag at the same time, so the row shows up in your reports, VAT return and accountant export instead of staying hidden. This only happens when you set the status to paid, not when you move it back to unpaid.
 
+If a bulk action is refused because one or more selected rows fall inside a locked VAT period, the error message names the exact period and tells you what to do next. A filed and locked period can only be reopened via a supplementary VAT return. A bare lock (the period's filing deadline has passed but no return was filed) can be unlocked temporarily from the VAT page. Remove rows that fall in that period from your selection, or use the matching correction route, then try again.
+
 ## Mileage allowance
 
 If you drive a private car for business trips, you can book those trips as a single expense with a mileage allowance.
