@@ -58,7 +58,8 @@ De blokken onder de KPI-rij verschijnen alleen als ze hun plek verdienen. De cat
 | **Uitgavenmix** | Kostenverdeling per categorie, weergegeven als staafjes of treemap afhankelijk van de ruimte |
 | **Cash-grafiek** | Kaspositie over 12 maanden met prognose |
 | **Activiteit** | Recente factuur-, betalings- en uitgave-gebeurtenissen |
-| **BTW-kaart** | Huidige btw-periode, checklistvoortgang en volgende deadline |
+| **BTW-kaart** | Huidige btw-periode, checklistvoortgang, volgende deadline en in een oogopslag de btw over omzet, voorbelasting en het te betalen of terug te krijgen bedrag |
+| **Vaste lasten** | Maandelijkse terugkerende inkomsten en kosten, hoeveel procent van de vaste lasten je contracten dekken, en de grootste overeenkomsten aan beide kanten |
 
 Op telefoons vallen visuele vormen zoals treemaps of funnels terug op eenvoudiger vormen, zodat de getallen leesbaar blijven.
 
