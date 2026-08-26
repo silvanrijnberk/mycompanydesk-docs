@@ -48,11 +48,11 @@ Na de koppelronde doorlopen nieuwe transacties je regels en de slimme categorise
 
 Transacties uit de eerste import, die ongeveer de afgelopen 90 dagen ophaalt, worden nooit automatisch bevestigd. Ze komen altijd op de controlelijst, ook als de categorisering zeker is. Dat geldt alleen voor de achterstand van voor de koppeling; nieuwe transacties daarna volgen de normale controle-regels. Met de import-vanaf-datum per rekening bepaal je vanaf welk moment die achterstand in je takenlijst verschijnt; alles wat ervoor ligt blijft beschikbaar voor koppelen en afletteren, maar vraagt geen review.
 
-Alleen uitgaande transacties worden uitgaven; inkomende betalingen worden nooit omgezet in uitgaven. Uitgaven die uit banktransacties zijn ontstaan tonen een klein bankicoon in de uitgavenlijst, zodat je altijd ziet waar een boeking vandaan komt.
+Alleen uitgaande transacties worden uitgaven; inkomende betalingen worden nooit omgezet in uitgaven. Uitgaven die uit banktransacties zijn ontstaan tonen een klein bankicoon in de uitgavenlijst, met een tooltip en een label voor screenreaders die de gekoppelde bank noemen. De banklogo's zelf worden niet meer getoond, zodat de lijst leesbaar blijft als er veel bankrijen tussen andere uitgaven staan.
 
 ## De bankwachtrij
 
-De bankwachtrij staat bovenaan de uitgavenpagina. Hij toont transacties die nog niet als uitgave zijn geboekt: review-rijen die de feed heeft voorbereid, plus uitgavekandidaten uit de bankfeed. Elke rij toont de leverancier, datum, het bedrag, de voorgestelde categorie en waar die suggestie vandaan komt (een van je regels, je standaardcategorie, een slimme suggestie of de bankfeed).
+De bankwachtrij is nu onderdeel van de hoofduitgavenlijst. Hij toont transacties die nog niet als uitgave zijn geboekt: review-rijen die de feed heeft voorbereid, plus uitgavekandidaten uit de bankfeed. Elke rij toont de leverancier, datum, het bedrag, de voorgestelde categorie en waar die suggestie vandaan komt (een van je regels, je standaardcategorie, een slimme suggestie of de bankfeed).
 
 De wachtrij is gecached binnen je sessie. Als je terugkeert naar Uitgaven, staan de rijen er meteen in het eerste frame en ververst de achtergrond ze op hun plek. Zo schuift de lijst eronder niet meer weg terwijl je al aan het lezen bent. De cache hoort bij je huidige werkruimte: bij een werkruimtewissel wordt hij opnieuw opgebouwd.
 

@@ -159,6 +159,8 @@ Sélectionnez plusieurs dépenses pour :
 - **Exporter** -- Télécharger au format CSV
 - **Marquer comme payé** -- Marque les dépenses sélectionnées comme payées. Si vous marquez un brouillon bancaire ou un brouillon de la boîte de réception comme payé, le statut "À vérifier" est enlevé en même temps, de sorte que la ligne apparaisse dans vos rapports, votre déclaration de TVA et votre export comptable au lieu de rester cachée. Cela ne se produit que lorsque vous passez le statut à payé, pas lorsque vous revenez à non payé.
 
+Si une action groupée est refusée parce qu'une ou plusieurs lignes sélectionnées tombent dans une période de TVA verrouillée, le message d'erreur nomme la période exacte et explique la prochaine étape. Une période déjà déposée et verrouillée ne peut être rouverte que par une déclaration supplétive. Un verrouillage nu (la date limite de dépôt est passée mais aucune déclaration n'a été déposée) peut être déverrouillé temporairement depuis la page TVA. Retirez les lignes situées dans cette période de votre sélection, ou utilisez la route de correction appropriée, puis réessayez.
+
 ## Indemnité kilométrique
 
 Si vous utilisez une voiture privée pour des déplacements professionnels, vous pouvez regrouper ces trajets en une seule dépense avec une indemnité kilométrique.

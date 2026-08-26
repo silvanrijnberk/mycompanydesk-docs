@@ -134,6 +134,8 @@ Das endgültige Löschen einer Rechnung (einzeln, als Massenaktion, beim Leeren 
 
 Massenhaftes Freigeben führt dieselben MwSt.- und Statusprüfungen durch wie beim Versenden einer einzelnen Rechnung. Rechnungen, die eine Prüfung nicht bestehen, werden übersprungen; die Ergebnisübersicht zeigt den Grund an.
 
+Wird eine Massenaktion abgelehnt, weil eine oder mehrere ausgewählte Zeilen in einen gesperrten USt.-Zeitraum fallen, nennt die Fehlermeldung den genauen Zeitraum und erklärt den nächsten Schritt. Ein bereits abgegebener und gesperrter Zeitraum lässt sich nur über eine Suppletieabgabe wieder öffnen. Eine reine Sperre (die Abgabefrist ist abgelaufen, aber es wurde keine Abgabe eingereicht) können Sie auf der USt.-Seite vorübergehend entsperren. Entfernen Sie die Zeilen aus diesem Zeitraum aus Ihrer Auswahl, oder nutzen Sie die passende Korrektur-Route, und versuchen Sie es erneut.
+
 ## Zahlungslinks
 
 Wenn Sie eine Rechnung versenden, wird ein eindeutiger Zahlungslink generiert. Ihr Kunde kann:

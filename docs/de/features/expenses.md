@@ -159,6 +159,8 @@ Wählen Sie mehrere Ausgaben für:
 - **Exportieren** - Als CSV herunterladen
 - **Als bezahlt markieren** - Markiert ausgewählte Ausgaben als bezahlt. Wenn Sie einen Bank- oder Inbox-Entwurf als bezahlt markieren, wird gleichzeitig die Markierung "Zu prüfen" entfernt, sodass die Zeile in Ihren Berichten, der USt.-Erklärung und dem Buchhalterexport sichtbar ist, anstatt verborgen zu bleiben. Das passiert nur beim Setzen auf bezahlt, nicht beim Zurücksetzen auf unbezahlt.
 
+Wird eine Massenaktion abgelehnt, weil eine oder mehrere ausgewählte Zeilen in einen gesperrten USt.-Zeitraum fallen, nennt die Fehlermeldung den genauen Zeitraum und erklärt den nächsten Schritt. Ein bereits abgegebener und gesperrter Zeitraum lässt sich nur über eine Suppletieabgabe wieder öffnen. Eine reine Sperre (die Abgabefrist ist abgelaufen, aber es wurde keine Abgabe eingereicht) können Sie auf der USt.-Seite vorübergehend entsperren. Entfernen Sie die Zeilen aus diesem Zeitraum aus Ihrer Auswahl, oder nutzen Sie die passende Korrektur-Route, und versuchen Sie es erneut.
+
 ## Kilometerpauschale
 
 Wenn Sie mit einem Privatwagen geschäftlich unterwegs sind, können Sie diese Fahrten als eine einzelne Ausgabe mit Kilometerpauschale buchen.

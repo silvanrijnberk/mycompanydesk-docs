@@ -48,11 +48,11 @@ Nach der Verknüpfungsphase durchlaufen neue Transaktionen Ihre Regeln und die s
 
 Transaktionen aus dem ersten Import, der ungefähr die letzten 90 Tage abruft, werden nie automatisch bestätigt. Sie landen immer in der Prüfliste, auch wenn die Kategorisierung sicher ist. Das gilt nur für den Rückstand vor der Verbindung; neue Transaktionen danach folgen den normalen Prüfregeln. Das Import-von-Datum pro Konto legt fest, ab welchem Zeitpunkt dieser Rückstand in Ihrer Aufgabenliste erscheint; alles davor bleibt für Verknüpfen und Abgleichen verfügbar, fordert aber keine Prüfung.
 
-Nur abgehende Transaktionen werden zu Ausgaben; eingehende Zahlungen werden nie in Ausgaben umgewandelt. Ausgaben aus Banktransaktionen zeigen in der Ausgabenliste ein kleines Banksymbol, sodass Sie immer sehen, woher eine Buchung stammt.
+Nur abgehende Transaktionen werden zu Ausgaben; eingehende Zahlungen werden nie in Ausgaben umgewandelt. Ausgaben aus Banktransaktionen zeigen in der Ausgabenliste ein kleines Banksymbol, mit Tooltip und einem Label für Screenreader, das die verbundene Bank nennt. Die genauen Banklogos werden nicht mehr angezeigt, sodass die Liste übersichtlich bleibt, wenn viele Bankzeilen zwischen anderen Ausgaben stehen.
 
 ## Die Bankwarteschlange
 
-Die Bankwarteschlange steht oben auf der Ausgabenseite. Sie zeigt Transaktionen, die noch nicht als Ausgabe gebucht wurden: Prüfzeilen, die der Feed vorbereitet hat, plus Ausgabenkandidaten aus dem Bankfeed. Jede Zeile zeigt Lieferant, Datum, Betrag, die vorgeschlagene Kategorie und die Herkunft des Vorschlags (eine Ihrer Regeln, Ihre Standardkategorie, ein smarter Vorschlag oder der Bankfeed).
+Die Bankwarteschlange ist nun Teil der Hauptausgabenliste. Sie zeigt Transaktionen, die noch nicht als Ausgabe gebucht wurden: Prüfzeilen, die der Feed vorbereitet hat, plus Ausgabenkandidaten aus dem Bankfeed. Jede Zeile zeigt Lieferant, Datum, Betrag, die vorgeschlagene Kategorie und die Herkunft des Vorschlags (eine Ihrer Regeln, Ihre Standardkategorie, ein smarter Vorschlag oder der Bankfeed).
 
 Die Warteschlange wird innerhalb Ihrer Sitzung zwischengespeichert. Wenn Sie zu Ausgaben zurückkehren, erscheinen die Zeilen im ersten Frame, und der Hintergrund aktualisiert sie an Ort und Stelle. Dadurch verschiebt sich die darunter liegende Liste nicht mehr nach unten, während Sie bereits lesen. Der Cache gehört zu Ihrem aktuellen Arbeitsbereich: Bei einem Arbeitsbereichswechsel wird er neu aufgebaut.
 
