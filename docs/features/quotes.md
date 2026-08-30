@@ -58,6 +58,8 @@ Je kunt een klant vragen een offerte online te ondertekenen in plaats van hem al
 
 Als de e-mail voor het tekenen niet kan worden afgeleverd door een probleem met je e-mailinstellingen, verschijnt er een foutmelding met de vraag je e-mailinstellingen te controleren en het opnieuw te proberen. Het tekenverzoek zelf wordt op de server aangemaakt, dus je kunt het opnieuw versturen zodra de e-mailinstellingen in orde zijn.
 
+Een tekenverzoek kan niet meer worden verstuurd zodra een offerte is afgewezen of na de geldig-tot-datum. De actie **Naar tekenen versturen** is geblokkeerd voor offertes met de status **Afgewezen** of **Verlopen**, zodat je geen klant meer kunt vragen een offerte te ondertekenen die niet meer actief is.
+
 ## Acties op de offertedetailpagina
 
 De hoofdactie op de offertedetailpagina hangt af van de offertestatus:

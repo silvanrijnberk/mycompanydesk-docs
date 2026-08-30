@@ -17,6 +17,8 @@ Zo annuleer je een verstuurde factuur:
 
 Ook worden meldingen over deze factuur, zoals achterstallig, deadline of concept, opgelost, zodat je geen actie "Herinnering versturen" meer voor hem ziet in de bel. Dit geldt ook wanneer je meerdere facturen tegelijk annuleert vanuit de factuurlijst.
 
+Is de factuur al (deels) betaald? Dan toont het bevestigingsvenster het geïncasseerde bedrag en waarschuwt dat je dit nog terug moet betalen aan de klant. Na het annuleren verschijnt op de detailpagina en in het snelweergavepaneel een melding dat een terugbetaling openstaat.
+
 Is de factuur al (deels) betaald? Open dan de originele factuur en gebruik "Creditnota / correctie maken".
 
 Geannuleerde facturen kun je niet corrigeren met een creditnota. Wil je toch een correctie doorvoeren voor een al geannuleerde factuur? Dupliceer de geannuleerde factuur, pas de correctie toe en stuur hem opnieuw.

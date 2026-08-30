@@ -58,6 +58,8 @@ Vous pouvez demander à un client de signer un devis en ligne au lieu de ne l'en
 
 Si l'e-mail de signature ne peut pas être livré en raison d'un problème avec vos paramètres d'envoi, un message d'erreur apparaît vous demandant de vérifier vos paramètres e-mail et de réessayer. La demande de signature elle-même est créée sur le serveur, vous pouvez donc la renvoyer une fois les paramètres e-mail corrigés.
 
+Une demande de signature ne peut plus être envoyée une fois qu'un devis a été refusé ou après la date de validité. L'action **Envoyer pour signature** est bloquée pour les devis dont le statut est **Refusé** ou **Expiré**, afin que vous ne puissiez plus demander à un client de signer un devis qui n'est plus actif.
+
 ## Actions sur la page de detail du devis
 
 L'action principale sur la page de detail du devis depend du statut du devis :

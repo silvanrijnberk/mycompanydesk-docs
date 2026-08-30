@@ -53,6 +53,10 @@ See where your numbers are heading, based on recurring billings, open invoices, 
 
 The **Income tax** view estimates the income tax for the selected year: gross profit, the self-employed deduction and SME profit exemption, taxable income, the tax brackets, estimated tax, profit after tax, and how much to set aside. If your company is a BV, it shows an estimated corporate tax instead. Treat it as a planning aid for reserving money, not as a filing.
 
+If your workspace uses the real-estate module, the **Box 3** card shows the total capital, taxable base and notional return for the workspace. For legal forms with multiple partners, the card explains that each partner must split the base and notional return proportionally for their own Box 3 filing. The displayed amounts are the workspace total.
+
+The **KIA** card shows the small-business investment deduction based on your investments. If you sell an investment within five years of purchase, you may have to repay part of the deduction through the desinvestment addition. MyCompanyDesk does not calculate this automatically yet, so check the amount yourself or with your accountant.
+
 ### Looking for the VAT report?
 
 VAT has its own dedicated page with quarterly overviews and filing support. See [VAT Management](/en/features/vat).

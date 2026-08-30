@@ -53,6 +53,10 @@ Voyez où vont vos chiffres, sur la base des factures récurrentes, des factures
 
 La vue **Impôt sur le revenu** estime l'impôt sur le revenu pour l'année sélectionnée : bénéfice brut, déduction pour travailleurs indépendants et abattement PME, revenu imposable, tranches d'imposition, impôt estimé, bénéfice après impôt et le montant à mettre de côté. Si votre entreprise est une BV, elle affiche une estimation de l'impôt des sociétés à la place. Considérez cela comme un outil de planification pour constituer une réserve, pas comme une déclaration.
 
+Si votre espace de travail utilise le module immobilier, la carte **Box 3** affiche le patrimoine total, la base imposable et le rendement fictif de l'espace de travail. Pour les formes juridiques avec plusieurs associés, la carte explique que chaque associé doit répartir la base et le rendement fictif au prorata pour sa propre déclaration Box 3. Les montants affichés correspondent au total de l'espace de travail.
+
+La carte **KIA** montre la déduction pour investissement de petite envergure sur la base de vos investissements. Si vous vendez un investissement dans les cinq ans suivant l'achat, vous devrez peut-être rembourser une partie de la déduction via la majoration de désinvestissement. MyCompanyDesk ne calcule pas encore cela automatiquement ; vérifiez donc le montant vous-même ou avec votre comptable.
+
 ### Vous cherchez le rapport de TVA ?
 
 La TVA a sa propre page avec des aperçus trimestriels et une assistance pour la déclaration. Voir [Gestion de la TVA](/fr/features/vat).

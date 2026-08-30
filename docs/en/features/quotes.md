@@ -58,6 +58,8 @@ You can ask a customer to sign a quote online instead of sending it only as a PD
 
 If the signing e-mail cannot be delivered because of a problem with your sender settings, an error toast appears with the message to check your e-mail settings and try again. The signing request itself is created on the server, so you can resend it once the e-mail settings are fixed.
 
+A signing request cannot be sent once a quote has been rejected or after its validity date has passed. The **Send for signing** action is blocked for quotes in the **Rejected** or **Expired** status, so you cannot ask a customer to sign a quote that is no longer active.
+
 ## Quote detail actions
 
 The top action on the quote detail page depends on the quote status:

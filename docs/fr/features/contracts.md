@@ -128,7 +128,7 @@ Les contrats peuvent etre lies aux [objets/actifs](/fr/features/objects) pour la
 
 ## Lier à des projets
 
-Les contrats peuvent aussi être liés à des [projets](/fr/features/projects). Lorsque vous créez ou modifiez un projet, choisissez le contrat dans le champ **Contrat**. Les heures saisies sur ce projet sont alors incluses sur la facture du contrat.
+Les contrats peuvent aussi être liés à des [projets](/fr/features/projects). Lorsque vous créez ou modifiez un projet, choisissez le contrat dans le champ **Contrat**. Les heures saisies sur ce projet sont alors incluses sur la facture du contrat. Les contrats archivés restent visibles dans le menu déroulant, signalés par **(archivé)** après le nom, pour que vous puissiez conserver un lien existant ou choisir une ancienne convention si nécessaire.
 
 Cela est utile pour les accords de type retainer ou régie : le contrat définit la base de tarification, et les projets liés fournissent les heures.
 

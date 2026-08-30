@@ -128,7 +128,7 @@ Contracten kunnen worden gekoppeld aan [objecten/activa](/features/objects) voor
 
 ## Koppelen aan projecten
 
-Contracten kunnen ook worden gekoppeld aan [projecten](/features/projects). Bij het aanmaken of bewerken van een project kies je het contract in het veld **Contract**. Geboekte uren op dat project komen dan op de factuur van het contract.
+Contracten kunnen ook worden gekoppeld aan [projecten](/features/projects). Bij het aanmaken of bewerken van een project kies je het contract in het veld **Contract**. Geboekte uren op dat project komen dan op de factuur van het contract. Gearchiveerde contracten blijven in de dropdown zichtbaar, gemarkeerd met **(gearchiveerd)** achter de naam, zodat je een bestaande koppeling kunt behouden of een ouder overeenkomst kunt kiezen wanneer dat nodig is.
 
 Dit werkt goed voor retainer- of urenovereenkomsten: het contract bepaalt het tarief, de gekoppelde projecten leveren de uren.
 

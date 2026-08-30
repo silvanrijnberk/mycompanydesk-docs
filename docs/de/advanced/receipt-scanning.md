@@ -77,6 +77,10 @@ Der Scanner hat ein Panel mit erweiterten Optionen:
 - **Preisspanne**: ein Mindest- und Höchstbetrag; Positionen außerhalb der Spanne werden übersprungen
 - **Beleg anhängen**: ob die Originaldatei an die erstellte Ausgabe angehängt wird (standardmäßig aktiviert)
 
+## Scan-Limits
+
+Belege und Rechnungen mit zu vielen Positionen für einen Durchgang werden mit einer "zu viele Zeilen"-Meldung abgelehnt. Wenn diese Meldung erscheint, teilen Sie das Dokument in kleinere Teile (zum Beispiel eine Seite oder eine kleinere Gruppe von Positionen pro Durchgang) oder erfassen Sie die Ausgaben manuell.
+
 ## Tipps für beste Ergebnisse
 
 - **Gute Beleuchtung** — Fotografieren Sie bei guten Lichtverhältnissen

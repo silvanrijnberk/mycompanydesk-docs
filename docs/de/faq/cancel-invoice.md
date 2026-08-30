@@ -17,6 +17,8 @@ So stornieren Sie eine versendete Rechnung:
 
 Auch zugehörige Benachrichtigungen für die Rechnung, wie überfällig, Termin oder Entwurf, werden aufgelöst, sodass die Aktion "Erinnerung senden" in der Glocke nicht mehr erscheint. Das gilt auch, wenn Sie mehrere Rechnungen auf einmal aus der Rechnungsliste stornieren.
 
+Wurde auf die Rechnung bereits ein oder mehrere Zahlungseingänge gebucht, zeigt das Bestätigungsdialog den eingegangenen Betrag und warnt, dass Sie ihn dem Kunden noch erstatten müssen. Nach der Stornierung erscheint auf der Detailseite und in der Kurzansicht ein Hinweis, dass eine Erstattung offensteht.
+
 Ist die Rechnung bereits ganz oder teilweise bezahlt, öffnen Sie die Originalrechnung und nutzen Sie stattdessen "Gutschrift / Korrektur erstellen".
 
 Stornierte Rechnungen können nicht mit einer Gutschrift korrigiert werden. Wenn Sie dennoch eine Korrektur für eine bereits stornierte Rechnung ausstellen möchten, duplizieren Sie die stornierte Rechnung, nehmen Sie die Korrektur vor und senden Sie sie erneut.
