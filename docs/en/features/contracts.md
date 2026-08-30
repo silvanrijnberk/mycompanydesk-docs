@@ -128,7 +128,7 @@ Contracts can be linked to [objects/assets](/en/features/objects) for rental man
 
 ## Linking to projects
 
-Contracts can also be linked to [projects](/en/features/projects). When you create or edit a project, choose the contract in the **Contract** field. Hours you log on that project are then included on the contract's invoice.
+Contracts can also be linked to [projects](/en/features/projects). When you create or edit a project, choose the contract in the **Contract** field. Hours you log on that project are then included on the contract's invoice. Archived contracts still appear in the dropdown, labelled with **(archived)** after the name, so you can keep an existing link or pick an older agreement when needed.
 
 This is useful for retainer-style or time-and-materials agreements: the contract sets the rate basis, and the linked projects supply the hours.
 

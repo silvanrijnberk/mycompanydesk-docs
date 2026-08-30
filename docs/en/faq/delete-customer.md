@@ -17,3 +17,5 @@ To delete a customer:
 5. Confirm the deletion
 
 Deleting is never blocked, even for customers with linked invoices. It happens in stages: deleting an active customer archives them first, deleting again moves them to the Trash, and deleting from the Trash removes them permanently. You can restore the customer from the Archive or Trash view at any point before that final step.
+
+When you choose **Delete all customers** from workspace settings, the confirmation warns you that ongoing contracts and recurring invoices will be stopped as part of the deletion.

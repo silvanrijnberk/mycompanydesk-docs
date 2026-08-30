@@ -128,7 +128,7 @@ Verträge können mit [Objekten/Vermögenswerten](/de/features/objects) für die
 
 ## Verknüpfen mit Projekten
 
-Verträge können auch mit [Projekten](/de/features/projects) verknüpft werden. Wenn Sie ein Projekt anlegen oder bearbeiten, wählen Sie den Vertrag im Feld **Vertrag** aus. Erfasste Stunden auf diesem Projekt werden dann auf der Rechnung des Vertrags ausgewiesen.
+Verträge können auch mit [Projekten](/de/features/projects) verknüpft werden. Wenn Sie ein Projekt anlegen oder bearbeiten, wählen Sie den Vertrag im Feld **Vertrag** aus. Erfasste Stunden auf diesem Projekt werden dann auf der Rechnung des Vertrags ausgewiesen. Archivierte Verträge bleiben in der Dropdown-Liste sichtbar, gekennzeichnet mit **(archiviert)** hinter dem Namen, sodass Sie eine bestehende Verknüpfung beibehalten oder bei Bedarf eine ältere Vereinbarung wählen können.
 
 Das eignet sich für Retainer- oder Zeit-und-Material-Vereinbarungen: der Vertrag legt die Preisbasis fest, die verknüpften Projekte liefern die Stunden.
 

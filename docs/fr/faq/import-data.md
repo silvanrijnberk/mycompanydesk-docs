@@ -35,4 +35,6 @@ Pour les dépenses, les fichiers CSV rédigés au format néerlandais sont recon
 
 Si votre fichier comporte une colonne avec le montant de la TVA, MyCompanyDesk en déduit également le taux de TVA. Si le montant et le taux de TVA sont tous deux absents, le taux reste à 0, au lieu de se caler silencieusement sur le taux standard. La dépense apparaît alors dans le contrôle "TVA manquante" avant le dépôt.
 
+Lorsque vous renseignez volontairement un montant de TVA de 0 dans l'import, MyCompanyDesk conserve cette valeur au lieu de la remplacer silencieusement par le taux standard de la catégorie. Vous pouvez ainsi importer des dépenses réellement exonérées de TVA sans qu'un autre taux ne soit appliqué ensuite.
+
 Conseil : commencez par un petit import de test pour vérifier l'association avant d'importer de gros volumes.

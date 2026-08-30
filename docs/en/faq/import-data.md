@@ -35,4 +35,6 @@ For expenses, CSV files written in Dutch formats are parsed the way a Dutch book
 
 If a VAT amount column is present, MyCompanyDesk also derives the VAT rate from it. If both VAT amount and VAT rate are missing, the VAT rate is set to 0 instead of defaulting to the standard rate, so the expense appears in the pre-filing "Missing VAT" check.
 
+When you explicitly set a VAT amount of 0 in the import, MyCompanyDesk keeps that value instead of overwriting it with the category default. This lets you import expenses that are genuinely VAT-free without them silently getting a standard rate.
+
 Tip: Start with a small test import to verify the mapping before importing large datasets.

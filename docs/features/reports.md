@@ -53,6 +53,10 @@ Zie waar je cijfers naartoe gaan, gebaseerd op terugkerende facturen, openstaand
 
 De weergave **Inkomstenbelasting** schat de inkomstenbelasting voor het geselecteerde jaar: brutowinst, de zelfstandigenaftrek en de mkb-winstvrijstelling, belastbaar inkomen, de belastingschijven, geschatte belasting, winst na belasting en het bedrag dat je moet reserveren. Als je bedrijf een BV is, toont hij in plaats daarvan een geschatte vennootschapsbelasting. Zie het als hulpmiddel om geld te reserveren, niet als aangifte.
 
+Als je werkruimte de vastgoedmodule gebruikt, toont de **Box 3**-kaart het totale vermogen, belastbare grondslag en fictief rendement voor de werkruimte. Bij rechtsvormen met meerdere vennoten legt de kaart uit dat elke vennoot de grondslag en het fictief rendement naar rato moet verdelen voor de eigen Box 3-aangifte. De getoonde bedragen zijn het totaal van de werkruimte.
+
+De **KIA**-kaart toont de kleinschaligheidsinvesteringsaftrek op basis van je investeringen. Verkoop je een investering binnen vijf jaar na aanschaf, dan moet je mogelijk een deel van de aftrek terugbetalen via de desinvesteringsbijtelling. MyCompanyDesk berekent dit nog niet automatisch, dus controleer het bedrag zelf of met je boekhouder.
+
 ### Op zoek naar het BTW-rapport?
 
 BTW heeft een eigen pagina met kwartaaloverzichten en aangifte-ondersteuning. Zie [BTW-beheer](/features/vat).

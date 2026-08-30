@@ -17,3 +17,5 @@ So löschen Sie einen Kunden:
 5. Bestätigen Sie die Löschung
 
 Das Löschen wird nie blockiert, auch nicht bei Kunden mit verknüpften Rechnungen. Es erfolgt in Stufen: Das Löschen eines aktiven Kunden archiviert ihn zunächst, erneutes Löschen verschiebt ihn in den Papierkorb, und das Löschen aus dem Papierkorb ist endgültig. Bis zu diesem letzten Schritt können Sie den Kunden jederzeit aus der Ansicht Archiv oder Papierkorb wiederherstellen.
+
+Wenn Sie im Arbeitsbereich **Alle Kunden löschen** wählen, warnt die Bestätigung, dass laufende Verträge und wiederkehrende Rechnungen dadurch beendet werden.

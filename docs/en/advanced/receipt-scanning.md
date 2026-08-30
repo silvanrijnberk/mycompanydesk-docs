@@ -77,6 +77,10 @@ The scanner has an advanced options panel:
 - **Price range**: a minimum and maximum amount; items outside the range are skipped
 - **Attach receipt**: whether the original file is attached to the created expense (on by default)
 
+## Scanning limits
+
+Receipts and invoices with too many line items to process in one pass are rejected with a "too many lines" message. If you see this, split the document into smaller parts (for example, one page or a smaller group of line items at a time), or enter the expenses manually.
+
 ## Tips for best results
 
 - **Good lighting** — Take photos in well-lit conditions

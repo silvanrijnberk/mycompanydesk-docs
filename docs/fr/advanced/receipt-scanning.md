@@ -77,6 +77,10 @@ Le scanner dispose d'un panneau d'options avancées :
 - **Fourchette de prix** : un montant minimum et maximum ; les éléments hors fourchette sont ignorés
 - **Joindre le reçu** : si le fichier original est joint à la dépense créée (activé par défaut)
 
+## Limites de numérisation
+
+Les reçus et factures comportant trop de lignes pour être traités en une seule fois sont refusés avec un message indiquant que le nombre de lignes est trop élevé. Si ce message apparaît, divisez le document en parties plus petites (par exemple une page ou un plus petit groupe de lignes à la fois) ou saisissez les dépenses manuellement.
+
 ## Conseils pour de meilleurs resultats
 
 - **Bon eclairage** -- Prenez les photos dans de bonnes conditions d'eclairage

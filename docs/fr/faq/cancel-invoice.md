@@ -17,6 +17,8 @@ Pour annuler une facture envoyée :
 
 Les notifications liées à la facture, telles que en retard, échéance ou brouillon, sont également résolues, de sorte que l'action "Envoyer un rappel" n'apparaît plus pour elle dans la cloche. Cela s'applique aussi lorsque vous annulez plusieurs factures à la fois depuis la liste des factures.
 
+Si des paiements ont déjà été enregistrés sur cette facture, le dialogue de confirmation affiche le montant encaissé et vous avertit qu'il doit encore être remboursé au client. Après l'annulation, un message sur la page de détail et dans l'aperçu rapide indique qu'un remboursement est en attente.
+
 Si la facture est déjà payée, en tout ou en partie, ouvrez la facture d'origine et utilisez plutôt "Créer un avoir / une correction".
 
 Les factures annulées ne peuvent pas faire l'objet d'un avoir. Si vous devez tout de même émettre une correction pour une facture déjà annulée, dupliquez la facture annulée, apportez la correction et renvoyez-la.

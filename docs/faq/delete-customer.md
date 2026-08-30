@@ -17,3 +17,5 @@ Om een klant te verwijderen:
 5. Bevestig de verwijdering
 
 Verwijderen wordt nooit geblokkeerd, ook niet bij klanten met gekoppelde facturen. Het gaat in stappen: een actieve klant verwijderen archiveert deze eerst, nog een keer verwijderen verplaatst de klant naar de Prullenbak, en verwijderen vanuit de Prullenbak is definitief. Tot die laatste stap kun je de klant altijd terugzetten vanuit de weergave Archief of Prullenbak.
+
+Als je in de werkruimte-instellingen kiest voor **Alle klanten verwijderen**, waarschuwt de bevestiging dat lopende contracten en terugkerende facturen daardoor worden gestopt.

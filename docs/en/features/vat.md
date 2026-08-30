@@ -115,7 +115,7 @@ When you have international activity, companion cards appear under the sheet:
 
 - **ICP-opgaaf**: EU B2B sales grouped per customer. Required when you sold goods or services to VAT-registered customers in other EU countries. The card follows the page-wide period selector, so a quarterly export lists only that quarter's EU customers.
 - **OSS breakdown**: per-country B2C sales for the One Stop Shop scheme.
-- **Foreign VAT**: foreign VAT charged to you that may be reclaimable through the EU refund procedure.
+- **Foreign VAT**: foreign VAT charged to you that may be reclaimable through the EU refund procedure. This card only lists suppliers from EU member states; expenses from non-EU suppliers are not shown here. A warning appears when the reclaimable total is below the minimum that the EU refund procedure requires for that country, so you know you cannot submit a claim for that amount.
 - **Corrections**: manual VAT corrections, each with a hint that explains where it lands on the return. A private withdrawal counts in rubriek 1d. A suppletie is offset against rubriek 5a or 5b (under the KOR it does not affect input VAT, so rubriek 5b stays zero). A generic adjustment does not get its own box; it only shifts the payable or refundable total shown by MyCompanyDesk, not a rubriek you copy across.
 
 

@@ -17,6 +17,8 @@ To cancel a sent invoice:
 
 Any overdue, deadline, or draft notifications tied to the invoice are also resolved, so you will no longer see a "Send reminder" action for it in the bell. This also applies when you cancel multiple invoices at once from the invoice list.
 
+If you have already received one or more payments on the invoice, the cancel confirmation tells you the collected amount and warns you that you still need to refund the customer. The invoice detail page and quick view also show a "Refund due" notice after cancellation.
+
 If the invoice is already paid or partially paid, open the original invoice and use "Create credit note / correction" instead.
 
 Canceled invoices cannot be corrected with a credit note. If you need to issue a correction for an invoice that was already canceled, duplicate the canceled invoice, make the corrections, and send it again.

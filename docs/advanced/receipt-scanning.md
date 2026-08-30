@@ -77,6 +77,10 @@ De scanner heeft een paneel met geavanceerde opties:
 - **Prijsbereik**: een minimum- en maximumbedrag; items buiten het bereik worden overgeslagen
 - **Bon bijvoegen**: of het originele bestand als bijlage aan de aangemaakte uitgave wordt gekoppeld (standaard aan)
 
+## Scanlimieten
+
+Ontvangstbewijzen en facturen met te veel regelitems om in één keer te verwerken worden geweigerd met een melding dat het aantal regels te groot is. Zie je deze melding, splits het document dan op in kleinere delen (bijvoorbeeld één pagina of een kleinere groep regelitems per keer), of voer de uitgaven handmatig in.
+
 ## Tips voor het beste resultaat
 
 - **Goede belichting** — Maak foto's bij goede lichtomstandigheden

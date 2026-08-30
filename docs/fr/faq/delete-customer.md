@@ -17,3 +17,5 @@ Pour supprimer un client :
 5. Confirmez la suppression
 
 La suppression n'est jamais bloquée, même pour les clients ayant des factures liées. Elle se fait par étapes : supprimer un client actif l'archive d'abord, le supprimer à nouveau le déplace vers la Corbeille, et le supprimer depuis la Corbeille est définitif. Jusqu'à cette dernière étape, vous pouvez toujours restaurer le client depuis la vue Archives ou Corbeille.
+
+Si vous choisissez **Supprimer tous les clients** dans les paramètres de l'espace de travail, la confirmation vous avertit que les contrats en cours et les factures récurrentes seront arrêtés.

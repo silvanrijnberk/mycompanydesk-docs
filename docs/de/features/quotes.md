@@ -58,6 +58,8 @@ Sie können einen Kunden bitten, ein Angebot online zu unterschreiben, anstatt e
 
 Wenn die E-Mail zum Unterschreiben aufgrund eines Problems mit Ihren E-Mail-Einstellungen nicht zugestellt werden kann, erscheint eine Fehlermeldung, die Sie auffordert, Ihre E-Mail-Einstellungen zu prüfen und es erneut zu versuchen. Die Unterschriftenanfrage selbst wird auf dem Server erstellt, sodass Sie sie erneut senden können, sobald die E-Mail-Einstellungen korrigiert sind.
 
+Eine Unterschriftenanfrage kann nicht mehr versendet werden, sobald ein Angebot abgelehnt wurde oder nach Ablauf des Gültigkeitsdatums. Die Aktion **Zum Unterschreiben senden** ist für Angebote mit dem Status **Abgelehnt** oder **Abgelaufen** gesperrt, sodass Sie keinen Kunden mehr bitten können, ein Angebot zu unterschreiben, das nicht mehr aktiv ist.
+
 ## Detailaktionen für Angebote
 
 Die Hauptaktion auf der Angebotsdetailseite richtet sich nach dem Angebotsstatus:
