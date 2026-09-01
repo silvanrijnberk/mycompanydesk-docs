@@ -1,18 +1,22 @@
 ---
 title: Dashboard
-description: "Your workspace home screen: period switcher, KPI summary, an attention widget and blocks that appear only when your data makes them useful."
-last_verified: 2026-08-18
+description: "Your workspace home screen: greeting, period switcher, KPI summary, an attention widget and blocks that appear only when your data makes them useful."
+last_verified: 2026-09-01
 ---
 
 # Dashboard
 
-The dashboard at `/dashboard` is the home screen of your workspace. It answers one question: how is the business doing right now? The page shows a period switcher, a KPI summary row, a short attention widget, and a set of data-driven blocks that appear only when your workspace data says they are useful.
+The dashboard at `/dashboard` is the home screen of your workspace. It answers one question: how is the business doing right now? The page shows a greeting with time-of-day and first name, a period switcher, a KPI summary row, a short attention widget, and a set of data-driven blocks that appear only when your workspace data says they are useful.
 
 ## Layout
 
 The page is a single scrollable view built from a fixed catalogue of blocks. The order never changes, but a block only renders if your workspace data satisfies the test for it. A simple business therefore sees a shorter page, not empty placeholders.
 
-At the top sits a period switcher and the KPI row. Below that comes the attention widget, then supporting blocks such as the trend chart, ageing, revenue sources, quote pipeline, expense mix, cash chart, VAT card, and recent activity.
+At the top sit a greeting, a period switcher and the KPI row. Below that comes the attention widget, then supporting blocks such as the trend chart, ageing, revenue sources, quote pipeline, expense mix, cash chart, VAT card, and recent activity.
+
+## Greeting
+
+Above the numbers sits a greeting based on the time of day, together with your first name and the current date. In English the month name is capitalized.
 
 ## Period switcher
 
@@ -30,6 +34,15 @@ The KPI row always shows five tiles. Each tile shows one headline figure, a comp
 | **Payables** | Money you still need to pay out, with the overdue slice called out |
 | **Profit** | Net profit for the selected period, with margin when it can be computed |
 
+### Cash tile
+
+The **Cash** tile shows, alongside your balance, what is already committed. Two lines break this down:
+
+- **Reserved for VAT** - the positive quarter balance that should already be set aside
+- **Fixed costs per month** - your monthly fixed costs
+
+The final line shows **Free to spend**: what actually remains after those reservations. The VAT reservation uses the same quarter logic as the VAT card so monthly filers and early submitters do not see the wrong amount subtracted.
+
 A tile that has no honest history renders without a sparkline rather than invent a flat line. The colour of a delta badge follows meaning, not just direction: receivables rising is bad news even though the arrow points up.
 
 ## Attention widget
@@ -45,6 +58,10 @@ The Vandaag engine ranks signals into four severity levels:
 
 The engine is deterministic. No model is involved in producing the signals, so the page stays useful when the AI layer is down.
 
+### Action chips
+
+Some attention rows carry an action chip, for example to send a payment reminder. The first tap on a chip that requires confirmation arms it and shows the text **Are you sure? Tap again**; only the second tap executes the action. If no second tap arrives within five seconds, the chip disarms itself. This stops a stray tap from accidentally emailing a customer.
+
 ## Supporting blocks
 
 The blocks below the KPI row appear only when they earn their place. The catalogue decides both whether to show a block and which form to use.
@@ -55,12 +72,12 @@ The blocks below the KPI row appear only when they earn their place. The catalog
 | **Ageing** | Receivables aged by bucket |
 | **Revenue sources** | Largest customers by year-to-date revenue |
 | **Quotes** | Open quote pipeline and expiring quotes |
-| **Expense mix** | Cost breakdown by category, shown as bars or treemap depending on space |
+| **Expense mix** | Cost breakdown by category, shown as bars |
 | **Cash chart** | Cash position over 12 months with forecast |
 | **Activity** | Recent invoice, payment, and expense events |
 | **VAT card** | Current VAT period, checklist progress, and next deadline |
 
-On phones, large visual forms such as treemaps or funnels fall back to simpler forms so the numbers remain readable.
+On phones, large visual forms fall back to simpler forms so the numbers remain readable.
 
 ## First-run state
 

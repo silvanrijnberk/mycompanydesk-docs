@@ -1,18 +1,22 @@
 ---
 title: Dashboard
-description: "Der Startbildschirm Ihres Arbeitsbereichs: Periodenwahl, KPI-Übersicht, ein Hinweis-Widget und Blöcke, die nur bei passenden Daten erscheinen."
-last_verified: 2026-08-18
+description: "Der Startbildschirm Ihres Arbeitsbereichs: Begrüßung, Periodenwahl, KPI-Übersicht, ein Hinweis-Widget und Blöcke, die nur bei passenden Daten erscheinen."
+last_verified: 2026-09-01
 ---
 
 # Dashboard
 
-Das Dashboard unter `/dashboard` ist die Startseite Ihres Arbeitsbereichs. Es beantwortet eine Frage: Wie steht Ihr Unternehmen gerade da? Sie sehen eine Periodenauswahl, eine Reihe mit fünf KPI-Kacheln, ein kurzes Aufmerksamkeits-Widget und mehrere Datenblöcke, die nur erscheinen, wenn Ihre Unternehmensdaten zeigen, dass sie nützlich sind.
+Das Dashboard unter `/dashboard` ist die Startseite Ihres Arbeitsbereichs. Es beantwortet eine Frage: Wie steht Ihr Unternehmen gerade da? Sie sehen eine Begrüßung mit Tageszeit und Vorname, eine Periodenauswahl, eine Reihe mit fünf KPI-Kacheln, ein kurzes Aufmerksamkeits-Widget und mehrere Datenblöcke, die nur erscheinen, wenn Ihre Unternehmensdaten zeigen, dass sie nützlich sind.
 
 ## Aufbau
 
 Die Seite besteht aus einem festen Katalog von Blöcken in einer einzigen scrollbaren Ansicht. Die Reihenfolge ändert sich nie, aber ein Block wird nur angezeigt, wenn Ihre Daten die Schwelle erreichen. Ein einfacheres Unternehmen sieht also eine kürzere Seite, keine leeren Platzhalter.
 
-Oben befinden sich die Periodenauswahl und die KPI-Reihe. Darunter folgt das Aufmerksamkeits-Widget, gefolgt von unterstützenden Blöcken wie Trenddiagramm, Ageing, Umsatzquellen, Angebotspipeline, Ausgabenmix, Cash-Diagramm, Mehrwertsteuer-Karte und aktueller Aktivität.
+Oben befinden sich Begrüßung, Periodenauswahl und die KPI-Reihe. Darunter folgt das Aufmerksamkeits-Widget, gefolgt von unterstützenden Blöcken wie Trenddiagramm, Ageing, Umsatzquellen, Angebotspipeline, Ausgabenmix, Cash-Diagramm, Mehrwertsteuer-Karte und aktueller Aktivität.
+
+## Begrüßung
+
+Über den Zahlen steht eine Begrüßung je nach Tageszeit, zusammen mit Ihrem Vornamen und dem aktuellen Datum.
 
 ## Periodenauswahl
 
@@ -30,6 +34,15 @@ Die KPI-Reihe zeigt immer fünf Kacheln. Jede Kachel zeigt eine Hauptzahl, einen
 | **Verbindlichkeiten** | Geld, das Sie noch auszahlen müssen, wobei der überfällige Anteil ausgewiesen wird |
 | **Gewinn** | Nettogewinn in der gewählten Periode, mit Marge, wenn sie berechnet werden kann |
 
+### Liquiditäts-Kachel
+
+Die Kachel **Liquidität** zeigt neben Ihrem Saldo, was bereits verplant ist. Zwei Zeilen brechen das herunter:
+
+- **Reserviert für USt.** - der positive Quartalssaldo, der bereits separat gehalten werden sollte
+- **Fixe Kosten pro Monat** - Ihre monatlichen Fixkosten
+
+Die Schlusszeile zeigt **Frei verfügbar**: was nach diesen Reservierungen tatsächlich übrig bleibt. Die USt.-Reservierung verwendet dieselbe Quartalslogik wie die Mehrwertsteuer-Karte, sodass Monatsanmelder und frühe Einreicher keinen falschen Betrag abgezogen sehen.
+
 Eine Kachel ohne ehrliche Historie zeigt keinen Trendverlauf anstelle einer erfundenen flachen Linie. Die Farbe eines Delta-Abzeichens folgt der Bedeutung, nicht nur der Richtung: Steigende Forderungen sind schlechte Nachrichten, auch wenn der Pfeil nach oben zeigt.
 
 ## Aufmerksamkeits-Widget
@@ -45,6 +58,10 @@ Der Vandaag-Motor ordnet Signale in vier Schweregrad-Stufen:
 
 Der Motor ist deterministisch. Kein Modell ist an der Erzeugung der Signale beteiligt, sodass die Seite nützlich bleibt, wenn die KI-Schicht ausfällt.
 
+### Aktionschips
+
+Einige Aufmerksamkeitszeilen haben einen Aktionschip, zum Beispiel zum Versenden einer Zahlungserinnerung. Der erste Tipp auf einen Chip mit Bestätigung aktiviert ihn und zeigt den Text **Sind Sie sicher? Tippen Sie erneut**; erst der zweite Tipp führt die Aktion aus. Bleibt der zweite Tipp fünf Sekunden aus, deaktiviert sich der Chip wieder. So kann ein verirrtes Tippen nicht versehentlich eine E-Mail an einen Kunden auslösen.
+
 ## Unterstützende Blöcke
 
 Die Blöcke unter der KPI-Reihe erscheinen nur, wenn sie sich ihren Platz verdienen. Der Katalog entscheidet sowohl, ob ein Block angezeigt wird, als auch welche Form er annimmt.
@@ -55,12 +72,12 @@ Die Blöcke unter der KPI-Reihe erscheinen nur, wenn sie sich ihren Platz verdie
 | **Ageing** | Forderungen nach Altersgruppen aufgeteilt |
 | **Umsatzquellen** | Größte Kunden nach Umsatz im laufenden Jahr |
 | **Angebote** | Offene Angebotspipeline und auslaufende Angebote |
-| **Ausgabenmix** | Kostenaufschlüsselung nach Kategorie, als Balken oder Treemap je nach Platz |
+| **Ausgabenmix** | Kostenaufschlüsselung nach Kategorie, als Balken |
 | **Cash-Diagramm** | Cash-Position über 12 Monate mit Prognose |
 | **Aktivität** | Kürzliche Rechnungs-, Zahlungs- und Ausgaben-Ereignisse |
 | **Mehrwertsteuer-Karte** | Aktueller Mehrwertsteuer-Zeitraum, Checklist-Fortschritt und nächste Frist |
 
-Auf Telefonen fallen große visuelle Formen wie Treemaps oder Funnels auf einfachere Formen zurück, damit die Zahlen lesbar bleiben.
+Auf Telefonen fallen große visuelle Formen auf einfachere Formen zurück, damit die Zahlen lesbar bleiben.
 
 ## Erstnutzung-Bildschirm
 
