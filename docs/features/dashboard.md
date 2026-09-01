@@ -1,18 +1,22 @@
 ---
 title: Dashboard
-description: "Het startscherm van je werkruimte: periodekiezer, KPI-overzicht, een aandachtswidget en blokken die alleen verschijnen als je cijfers ze nuttig maken."
-last_verified: 2026-08-18
+description: "Het startscherm van je werkruimte: begroeting, periodekiezer, KPI-overzicht, aandachtswidget en blokken die alleen verschijnen bij nuttige cijfers."
+last_verified: 2026-09-01
 ---
 
 # Dashboard
 
-Het dashboard op `/dashboard` is het startscherm van je werkruimte. Het beantwoordt een vraag: hoe staat je bedrijf er nu voor? Je ziet een periodekiezer, een rij met vijf KPI-tegels, een kort aandacht-widget en een aantal datablokken die alleen verschijnen als je bedrijfsdata aangeeft dat ze nuttig zijn.
+Het dashboard op `/dashboard` is het startscherm van je werkruimte. Het beantwoordt een vraag: hoe staat je bedrijf er nu voor? Je ziet een begroeting met dagdeel en voornaam, een periodekiezer, een rij met vijf KPI-tegels, een kort aandacht-widget en een aantal datablokken die alleen verschijnen als je bedrijfsdata aangeeft dat ze nuttig zijn.
 
 ## Opbouw
 
 De pagina bestaat uit een vaste catalogus van blokken in een enkele scrollbare weergave. De volgorde verandert nooit, maar een blok wordt alleen getoond als je data de drempel haalt. Een eenvoudig bedrijf krijgt dus een kortere pagina, geen lege plekken.
 
-Bovenaan staan de periodekiezer en de KPI-rij. Daaronder komt het aandacht-widget, gevolgd door ondersteunende blokken zoals de trendgrafiek, ageing, omzetbronnen, offertepijplijn, uitgavenmix, cash-grafiek, btw-kaart en recente activiteit.
+Bovenaan staan de begroeting, de periodekiezer en de KPI-rij. Daaronder komt het aandacht-widget, gevolgd door ondersteunende blokken zoals de trendgrafiek, ageing, omzetbronnen, offertepijplijn, uitgavenmix, cash-grafiek, btw-kaart en recente activiteit.
+
+## Begroeting
+
+Boven de cijfers staat een begroeting op basis van het dagdeel, samen met je voornaam en de huidige datum. De maandnaam wordt in het Nederlands zonder hoofdletter geschreven.
 
 ## Periodekiezer
 
@@ -30,6 +34,15 @@ De KPI-rij toont altijd vijf tegels. Elke tegel toont een hoofdgetal, een vergel
 | **Te betalen** | Geld dat je nog moet uitbetalen, met de achterstallige helft apart genoemd |
 | **Winst** | Nettowinst over de gekozen periode, met marge als die te berekenen is |
 
+### Saldotegel
+
+De **Kas**-tegel laat naast je saldo zien wat er al vergeven is. Dat zijn twee regels:
+
+- **Gereserveerd voor btw** - het positieve kwartaalsaldo dat al apart gezet moet worden
+- **Vaste lasten per maand** - je maandelijkse vaste kosten
+
+De slotregel toont **Vrij besteedbaar**: wat er na die reserveringen effectief overblijft. De btw-reservering gebruikt dezelfde kwartaal-logica als de btw-kaart, zodat maandaangevers en vroege indieners geen verkeerd bedrag zien afgetrokken.
+
 Een tegel zonder eerlijke historie toont geen trendlijn in plaats van een verzonnen vlakke lijn. De kleur van een deltabadge volgt betekenis, niet alleen richting: stijgende debiteuren zijn slecht nieuws, ook al wijst de pijl omhoog.
 
 ## Aandacht-widget
@@ -45,6 +58,10 @@ De Vandaag-motor rangschikt signalen in vier ernstniveaus:
 
 De motor is deterministisch. Er is geen model betrokken bij het maken van de signalen, dus de pagina blijft bruikbaar als de AI-laag offline is.
 
+### Actiechips
+
+Sommige aandachtsregels hebben een actiechip, bijvoorbeeld om een betalingsherinnering te sturen. De eerste tik op een chip met bevestiging wapent hem en toont de tekst **Zeker weten? Tik nogmaals**; pas de tweede tik voert de actie uit. Na vijf seconden zonder tweede tik ontwapent de chip vanzelf. Zo kan een verdwalde tik niet per ongeluk een herinneringsmail naar een klant sturen.
+
 ## Ondersteunende blokken
 
 De blokken onder de KPI-rij verschijnen alleen als ze hun plek verdienen. De catalogus bepaalt zowel of een blok getoond wordt als welke vorm hij krijgt.
@@ -55,13 +72,13 @@ De blokken onder de KPI-rij verschijnen alleen als ze hun plek verdienen. De cat
 | **Ageing** | Debiteuren opgedeeld naar leeftijdsbakken |
 | **Omzetbronnen** | Grootste klanten naar omzet dit jaar |
 | **Offertes** | Open offertepijplijn en verlopende offertes |
-| **Uitgavenmix** | Kostenverdeling per categorie, weergegeven als staafjes of treemap afhankelijk van de ruimte |
+| **Uitgavenmix** | Kostenverdeling per categorie, weergegeven als staafjes |
 | **Cash-grafiek** | Kaspositie over 12 maanden met prognose |
-| **Activiteit** | Recente factuur-, betalings- en uitgave-gebeurtenissen |
+| **Activiteit** | Recent factuur-, betalings- en uitgave-gebeurtenissen |
 | **BTW-kaart** | Huidige btw-periode, checklistvoortgang, volgende deadline en in een oogopslag de btw over omzet, voorbelasting en het te betalen of terug te krijgen bedrag |
 | **Vaste lasten** | Maandelijkse terugkerende inkomsten en kosten, hoeveel procent van de vaste lasten je contracten dekken, en de grootste overeenkomsten aan beide kanten |
 
-Op telefoons vallen visuele vormen zoals treemaps of funnels terug op eenvoudiger vormen, zodat de getallen leesbaar blijven.
+Op telefoons vallen visuele vormen terug op eenvoudiger vormen, zodat de getallen leesbaar blijven.
 
 ## Eerste-keer-scherm
 
