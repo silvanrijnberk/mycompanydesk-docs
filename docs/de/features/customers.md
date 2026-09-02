@@ -95,6 +95,10 @@ Wenn Sie mehr als ein eigenes Unternehmen haben, kann auf der Kundenseite eine K
 - **Rechnung erstellen** — Eine neue Rechnung mit diesem Kunden vorausgefüllt starten
 - **Angebot erstellen** — Ein neues Angebot für diesen Kunden starten
 - **Archivieren** — Ins Archiv verschieben (kann später wiederhergestellt werden)
+
+:::caution
+Das Archivieren eines Kunden kann blockiert werden, wenn der Kunde noch eine aktive wiederkehrende Rechnung oder laufende Verträge hat. MyCompanyDesk zeigt dann eine Warnung, damit Sie die wiederkehrende Rechnung oder den Vertrag zuerst beenden. So vermeiden Sie, dass versehentlich weiter Rechnungen an einen archivierten Kunden gesendet werden.
+:::
 - **Löschen** — Kunden dauerhaft entfernen
 
 ## Massenaktionen

@@ -19,7 +19,7 @@ Lors de votre première connexion, MyCompanyDesk vous guide à travers un court 
 L'assistant s'ouvre sur un aperçu en direct de la facture et demande le client. Commencez à taper le nom du client.
 
 - Si le client existe déjà dans votre espace de travail, sélectionnez-le dans la liste.
-- Pour créer un nouveau client en ligne, tapez le nom et cliquez sur **Créer un client**. Le formulaire en ligne demande le nom du client et l'adresse. La recherche KVK peut proposer des entreprises néerlandaises et remplir l'adresse automatiquement ; pour un client particulier, ajoutez-le en saisissant l'adresse à la main.
+- Pour créer un nouveau client en ligne, tapez le nom et cliquez sur **Créer un client**. Le formulaire en ligne demande le nom du client et l'adresse. La recherche KVK peut proposer des entreprises néerlandaises à partir du nom de l'entreprise ou du numéro KVK et remplir l'adresse automatiquement ; pour un client particulier, ajoutez-le en saisissant l'adresse à la main.
 - L'e-mail du client est optionnel et n'est utilisé que lorsque vous envoyez la facture.
 
 Seul le nom du client est requis pour continuer. Vous pourrez compléter le reste des coordonnées du client plus tard depuis la page client.

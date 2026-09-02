@@ -19,7 +19,7 @@ The first time you sign in, MyCompanyDesk walks you through a short **setup wiza
 The wizard opens with a live invoice preview and asks for the customer. Start typing the customer name.
 
 - If the customer already exists in your workspace, select them from the dropdown.
-- To create a new customer inline, type the name and click **Create customer**. The inline form asks for the customer name and address. The KVK lookup can suggest Dutch businesses and fill in the address automatically; private customers can be added by typing the address by hand.
+- To create a new customer inline, type the name and click **Create customer**. The inline form asks for the customer name and address. The KVK lookup can suggest Dutch businesses by company name or KVK number and fill in the address automatically; private customers can be added by typing the address by hand.
 - The customer email is optional and only used when you send the invoice.
 
 Only the customer name is required to continue. You can finish the customer's details later from the customer page.

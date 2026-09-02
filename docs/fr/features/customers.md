@@ -95,6 +95,10 @@ Si vous possedez plus d'une entreprise, une carte **Entreprise propre** peut app
 - **Creer une facture** -- Demarrer une nouvelle facture pre-remplie avec ce client
 - **Creer un devis** -- Demarrer un nouveau devis pour ce client
 - **Archiver** -- Deplacer vers les archives (restauration possible)
+
+:::caution
+L'archivage d'un client peut être bloqué si le client a encore une facture récurrente active ou des contrats en cours. MyCompanyDesk affiche alors un avertissement pour que vous puissiez d'abord mettre fin à la facture récurrente ou au contrat. Cela évite d'envoyer accidentellement encore des factures à un client archivé.
+:::
 - **Supprimer** -- Supprimer definitivement le client
 
 ## Actions groupees

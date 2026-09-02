@@ -198,6 +198,8 @@ Wenn Ihr Workspace mehrere aktive eigene Domains hat (Pro-Tarif), können Sie ü
 
 Die öffentliche Website wird unter der am besten geeigneten URL des Unternehmens bereitgestellt: eigene Domain-Root → Workspace-Subdomain → Fallback `/portal/<slug>`-Route.
 
+Sie können die Website mit dem **Termine**-Block erweitern. Besucher können dann direkt über Ihre Website einen Termin buchen. Siehe [Online-Termine](/de/features/site-bookings).
+
 ### Site-Pakete
 
 `/website/pakketten` ist eine Galerie genehmigter, vorgestylter Site-Pakete. Sie können nach Branche oder Stil suchen. Wenn Sie ein Paket wählen, wird Ihre Entwurfs-Website ersetzt (Seiten, Abschnitte und Design-Tokens), aber niemals automatisch veröffentlicht; Sie prüfen das Ergebnis im Website-Builder und veröffentlichen es selbst, wenn Sie bereit sind. Ältere `/website/ontwerpen`-Links leiten hierhin weiter.
