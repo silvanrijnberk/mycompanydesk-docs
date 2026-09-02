@@ -1,18 +1,18 @@
 ---
 title: "Paramètres de l'entreprise"
-description: "Le nom sur vos factures, votre adresse et votre numéro d'entreprise, votre logo et votre couleur, et votre site public, réunis dans les paramètres."
-last_verified: 2026-07-02
+description: "Le nom sur vos factures, votre adresse, numéro d'entreprise, logo, couleur, site public et heures d'ouverture, réunis dans les paramètres."
+last_verified: 2026-09-03
 ---
 
 # Paramètres de l'entreprise
 
-Tout ce qui détermine l'image de votre entreprise vers l'extérieur : le nom sur vos factures, votre logo et votre couleur de marque, ainsi que votre site web public.
+Tout ce qui détermine l'image de votre entreprise vers l'extérieur : le nom sur vos factures, votre logo et votre couleur de marque, votre site web public et vos heures d'ouverture.
 
 ## Où le trouver
 
 Ouvrez **Paramètres** depuis le menu, ou allez sur `/settings`. Les sujets liés à l'entreprise sont des lignes du groupe **Votre entreprise** (dans l'application : « Je bedrijf ») :
 
-- **Données de l'entreprise** (Bedrijfsgegevens) sur `/settings/bedrijfsgegevens` : informations de l'entreprise, adresse, numéro KVK, numéro de TVA
+- **Données de l'entreprise** (Bedrijfsgegevens) sur `/settings/bedrijfsgegevens` : informations de l'entreprise, adresse, numéro KVK, numéro de TVA, heures d'ouverture
 - **Logo et couleur** (Logo en kleur) sur `/settings/uiterlijk` : logo, couleur de marque, style des documents
 - **Mise en page des factures** (Factuurontwerp) sur `/settings/factuurontwerp` : le studio de design de vos factures, décrit sur [Personnalisation PDF](/fr/settings/pdf)
 
@@ -28,10 +28,31 @@ Le formulaire d'identité. Ce que chaque facture, devis et e-mail affiche.
 - **Adresse** : rue, code postal, ville, pays (avec autocomplétion d'adresse)
 - **Immatriculation** : numéro KVK ou autre numéro d'immatriculation. Le bouton **Mettre à jour depuis KVK** récupère les dernières données du registre du commerce néerlandais et remplit les champs vides (nom de l'entreprise, adresse, code postal, ville, pays). Les valeurs que vous avez déjà saisies restent inchangées. Chaque espace de travail dispose de 100 recherches KVK gratuites par jour (les résultats mis en cache ne comptent pas dans la limite). Lorsqu'il reste 20 recherches ou moins, l'indication du champ affiche un compteur du nombre restant. Si la limite quotidienne est atteinte, vous pouvez saisir les données manuellement ou réessayer demain.
 - **Numéro de TVA** : votre identifiant TVA (par ex. `NL123456789B01`)
-- **Contact** : adresse e-mail publique, téléphone, e-mail de support
+- **Contact** : adresse e-mail publique, téléphone, e-mail de support, fuseau horaire
 - **Site web + réseaux sociaux** : utilisés dans la signature e-mail, sur votre page d'entreprise et dans les pieds de page
 
 Les modifications sont enregistrées automatiquement.
+
+## Heures d'ouverture
+
+Chemin : `/settings/bedrijfsgegevens#openingstijden`
+
+Gérez ici une source centrale pour vos heures d'ouverture. Les mêmes heures alimentent votre site web et le bloc de rendez-vous en ligne, vous n'avez donc jamais deux endroits à synchroniser.
+
+**Horaire hebdomadaire**
+
+- Réglez chaque jour comme **ouvert** ou **fermé**.
+- Pour un jour ouvert, indiquez un ou deux créneaux, par exemple `09:00 – 12:00` et `13:00 – 17:00`.
+- Un jour non configuré revient par défaut aux horaires de bureau (`09:00 – 17:00`) pour le site et le bloc de réservation.
+- Vous pouvez aussi régler un jour sur **sur rendez-vous**, afin qu'il apparaisse ouvert sans horaires fixes.
+
+**Jours spéciaux**
+
+- Ajoutez des dates individuelles pour les fêtes, vacances ou changements ponctuels.
+- Pour chaque jour spécial, choisissez **fermé**, **sur rendez-vous** ou un **créneau personnalisé**.
+- Le bloc de rendez-vous en ligne et votre site web respectent ces exceptions.
+
+Les modifications sont enregistrées automatiquement. Voir [Rendez-vous en ligne](/fr/features/site-bookings) pour l'utilisation de vos heures d'ouverture dans le bloc de réservation.
 
 ## Logo et couleur (Logo en kleur)
 

@@ -1,6 +1,7 @@
 ---
 title: Online appointments
 description: Let customers book appointments directly through your website with Site Bookings.
+last_verified: 2026-09-03
 ---
 
 # Online appointments
@@ -19,6 +20,16 @@ description: Let customers book appointments directly through your website with 
 - A calendar in MyCompanyDesk where appointments land.
 - At least one service you want to offer as a bookable appointment.
 
+## Available times and opening hours
+
+The times visitors can book come from one central source: **Settings** > **Business details** > **Opening hours**.
+
+- Set each day as open or closed, and add one or two time blocks per open day.
+- Use **Special days** for holidays, vacations or one-off changes; those also affect whether the booking block offers a day.
+- The appointments block automatically respects your opening hours and your connected calendar so no double or impossible bookings occur.
+
+See [Company Settings](/en/settings/company) for how to set your opening hours.
+
 ## Adding the appointments block to your website
 
 1. Open the **Site Builder** from the app.
@@ -36,10 +47,11 @@ In the block settings you control how customers can book:
 - **Service**: give the appointment a name, such as "Introductory call" or "Installation visit".
 - **Price (optional)**: enter a price if the appointment should be paid.
 - **Duration**: choose how long the appointment lasts, for example 30 or 60 minutes.
-- **Available time slots**: indicate on which days and times customers can book.
 - **Book ahead**: set how far in advance someone may schedule an appointment.
 - **Approval required**: enable this if you want to manually approve every request first.
 - **Block external calendar**: let the tool check your existing calendar so no double bookings occur.
+
+The **available time slots** themselves come from the central opening hours set in [Business details](/en/settings/company). The block blocks days and time blocks that are not open there.
 
 :::tip
 Connect an **email address** to the block so visitors receive an automatic confirmation and you get a notification for every new booking.
@@ -61,6 +73,8 @@ After an appointment is booked you can manage it from the calendar:
 - **Edit**: change date, time, or service via the calendar.
 - **Cancel**: delete the appointment. The customer is automatically notified if you have enabled mail settings.
 - **Reschedule**: offer an alternative time slot via the appointments block or the calendar.
+
+A **confirmed** online appointment also counts as worked hours in **Schedule**, so your appointments appear alongside your time entries. The hours are not billable through Schedule; the revenue from the appointment is invoiced separately from the appointment itself.
 
 ## Reminders and cancellation emails
 

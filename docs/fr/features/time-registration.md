@@ -1,6 +1,7 @@
 ---
 title: Agenda
 description: "Saisissez vos heures, planifiez vos journées et transformez le temps facturable en factures. Agenda réunit le suivi du temps et votre calendrier."
+last_verified: 2026-09-03
 ---
 
 # Agenda
@@ -85,6 +86,10 @@ Connectez Google Agenda ou le calendrier Outlook pour réunir votre agenda et vo
 - Activer un flux en lecture seule **Abonnement calendrier (iCal)** pour suivre vos heures enregistrées depuis n'importe quelle application de calendrier
 
 Les événements provenant d'un calendrier connecté apparaissent dans les vues Jour et Semaine ; appuyez sur l'un d'eux pour le transformer en entrée de temps.
+
+## Rendez-vous en ligne et heures
+
+Les rendez-vous que les clients réservent via le bloc **Site Bookings** sur votre site web sont automatiquement placés dans votre agenda une fois approuvés. Un rendez-vous en ligne confirmé compte également comme heures travaillées dans Agenda, vous n'avez donc pas à les saisir séparément. Ces heures ne sont pas **facturables** via Agenda; le revenu du rendez-vous est facturé séparément depuis le rendez-vous lui-même. Voir [Rendez-vous en ligne](/fr/features/site-bookings) pour configurer vos heures réservables.
 
 ## Paramètres
 

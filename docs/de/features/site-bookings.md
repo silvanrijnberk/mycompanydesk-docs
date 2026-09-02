@@ -1,6 +1,7 @@
 ---
 title: Online-Termine
 description: Lassen Sie Kunden direkt über Ihre Website Termine mit Site Bookings buchen.
+last_verified: 2026-09-03
 ---
 
 # Online-Termine
@@ -19,6 +20,16 @@ Mit **Site Bookings** fügen Sie Ihrer Website einen Block hinzu, über den Besu
 - Ein Kalender in MyCompanyDesk, in dem Termine landen.
 - Mindestens ein Service, den Sie als buchbaren Termin anbieten möchten.
 
+## Verfügbare Zeiten und Öffnungszeiten
+
+Die Zeiten, die Besucher buchen können, stammen aus einer zentralen Quelle: **Einstellungen** > **Unternehmensdaten** > **Öffnungszeiten**.
+
+- Legen Sie pro Tag fest, ob geöffnet oder geschlossen ist, und geben Sie für geöffnete Tage einen oder zwei Zeiträume an.
+- Verwenden Sie **Sonderöffnungszeiten** für Feiertage, Urlaub oder einmalige Änderungen; diese wirken sich auch darauf aus, ob der Terminblock einen Tag anbietet.
+- Der Terminblock berücksichtigt automatisch Ihre Öffnungszeiten und Ihren verbundenen Kalender, damit keine doppelten oder unmöglichen Termine entstehen.
+
+Siehe [Unternehmenseinstellungen](/de/settings/company) für das Einrichten Ihrer Öffnungszeiten.
+
 ## Terminblock zur Website hinzufügen
 
 1. Öffnen Sie den **Website-Builder** in der App.
@@ -36,10 +47,11 @@ In den Blockeinstellungen legen Sie fest, wie Kunden buchen können:
 - **Service**: geben Sie dem Termin einen Namen, zum Beispiel „Kennenlerntermin“ oder „Installationsbesuch“.
 - **Preis (optional)**: geben Sie einen Preis ein, falls der Termin kostenpflichtig sein soll.
 - **Dauer**: wählen Sie, wie lange der Termin dauert, zum Beispiel 30 oder 60 Minuten.
-- **Verfügbare Zeitfenster**: geben Sie an, an welchen Tagen und zu welchen Zeiten Kunden buchen können.
 - **Vorausbuchung**: legen Sie fest, wie weit im Voraus jemand einen Termin buchen darf.
 - **Freigabe erforderlich**: aktivieren Sie diese Option, wenn jede Anfrage zunächst manuell von Ihnen freigegeben werden soll.
 - **Externen Kalender blockieren**: lassen Sie das Tool Ihren bestehenden Kalender prüfen, damit keine Doppelbuchungen entstehen.
+
+Die **verfügbaren Zeitfenster** selbst stammen aus den zentralen Öffnungszeiten in [Unternehmensdaten](/de/settings/company). Der Block blendet Tage und Zeiträume aus, die dort nicht geöffnet sind.
 
 :::tip
 Verknüpfen Sie den Block mit einer **E-Mail-Adresse**, damit Besucher eine automatische Bestätigung erhalten und Sie bei jeder neuen Buchung benachrichtigt werden.
@@ -61,6 +73,8 @@ Nachdem ein Termin gebucht wurde, können Sie ihn im Kalender verwalten:
 - **Bearbeiten**: ändern Sie Datum, Uhrzeit oder Service über den Kalender.
 - **Stornieren**: löschen Sie den Termin. Der Kunde wird automatisch informiert, wenn Sie die E-Mail-Einstellungen aktiviert haben.
 - **Verschieben**: bieten Sie über den Terminblock oder den Kalender ein alternatives Zeitfenster an.
+
+Ein **bestätigter** Online-Termin zählt außerdem als erfasste Stunden im **Zeitplan**, damit Sie Ihre Termine neben Ihren Zeiteinträgen sehen. Diese Stunden sind über den Zeitplan nicht abrechenbar; der Umsatz des Termins wird separat über den Termin selbst in Rechnung gestellt.
 
 ## Erinnerungen und Stornierungsmails
 
