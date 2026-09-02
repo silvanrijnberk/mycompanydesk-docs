@@ -19,7 +19,7 @@ De eerste keer dat je inlogt, leidt MyCompanyDesk je door een korte **setupwizar
 De wizard opent met een live voorbeeld van de factuur en vraagt om de klant. Begin de klantnaam te typen.
 
 - Bestaat de klant al in je werkruimte, selecteer hem dan uit de lijst.
-- Wil je een nieuwe klant direct toevoegen, typ de naam en klik op **Klant aanmaken**. Het inline formulier vraagt om de klantnaam en het adres. De KVK-lookup kan Nederlandse bedrijven voorstellen en het adres automatisch invullen; particuliere klanten voeg je toe door het adres handmatig in te typen.
+- Wil je een nieuwe klant direct toevoegen, typ de naam en klik op **Klant aanmaken**. Het inline formulier vraagt om de klantnaam en het adres. De KVK-lookup kan Nederlandse bedrijven voorstellen op basis van bedrijfsnaam of KVK-nummer en het adres automatisch invullen; particuliere klanten voeg je toe door het adres handmatig in te typen.
 - Het e-mailadres van de klant is optioneel en wordt alleen gebruikt als je de factuur verstuurt.
 
 Alleen de klantnaam is verplicht om verder te gaan. Je kunt de rest van de klantgegevens later aanvullen op de klantpagina.

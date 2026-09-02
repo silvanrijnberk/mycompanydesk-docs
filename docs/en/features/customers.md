@@ -95,6 +95,10 @@ If you own more than one business, a card titled **Eigen bedrijf** can appear on
 - **Create invoice** — Start a new invoice pre-filled with this customer
 - **Create quote** — Start a new quote for this customer
 - **Archive** — Move to archive (can be restored later)
+
+:::caution
+Archiving a customer may be blocked when the customer still has an active recurring invoice or ongoing contracts. MyCompanyDesk shows a warning so you can end the recurring invoice or contract first. This prevents you from accidentally continuing to send invoices to an archived customer.
+:::
 - **Delete** — Permanently remove the customer
 
 ## Bulk actions

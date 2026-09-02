@@ -198,6 +198,8 @@ When your workspace has multiple active custom domains (Pro plan), a domain swit
 
 The public site is served at the highest-priority URL the company owns: custom domain root → workspace subdomain → fallback `/portal/<slug>` route.
 
+You can extend the site with the **Appointments** block so visitors can book an appointment directly from your website. See [Online appointments](/en/features/site-bookings).
+
 ### Site packages
 
 `/website/pakketten` is a gallery of approved, pre-styled site packages. You can search by industry or style. Picking a package replaces your draft site (pages, sections, and theme tokens) but never publishes; you review the result in the site builder and publish when you are ready. Older `/website/ontwerpen` links redirect here.

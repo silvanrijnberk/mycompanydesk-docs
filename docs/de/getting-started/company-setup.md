@@ -19,7 +19,7 @@ Beim ersten Anmelden führt MyCompanyDesk Sie durch einen kurzen **Einrichtungsa
 Der Assistent öffnet mit einer Live-Vorschau der Rechnung und fragt nach dem Kunden. Beginnen Sie, den Kundennamen zu tippen.
 
 - Wenn der Kunde bereits in Ihrem Arbeitsbereich existiert, wählen Sie ihn aus der Liste aus.
-- Um einen neuen Kunden direkt zu erstellen, tippen Sie den Namen und klicken Sie auf **Kunde erstellen**. Das Inline-Formular fragt nach Kundennamen und Adresse. Die KVK-Suche kann niederländische Unternehmen vorschlagen und die Adresse automatisch ausfüllen; private Kunden fügen Sie hinzu, indem Sie die Adresse von Hand eingeben.
+- Um einen neuen Kunden direkt zu erstellen, tippen Sie den Namen und klicken Sie auf **Kunde erstellen**. Das Inline-Formular fragt nach Kundennamen und Adresse. Die KVK-Suche kann niederländische Unternehmen anhand von Firmenname oder KVK-Nummer vorschlagen und die Adresse automatisch ausfüllen; private Kunden fügen Sie hinzu, indem Sie die Adresse von Hand eingeben.
 - Die Kunden-E-Mail ist optional und wird nur verwendet, wenn Sie die Rechnung senden.
 
 Nur der Kundenname ist erforderlich, um fortzufahren. Die restlichen Kundendaten können Sie später auf der Kundenseite vervollständigen.

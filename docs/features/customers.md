@@ -95,6 +95,10 @@ Als je meer dan een bedrijf hebt, kan op de klantdetailpagina een kaart **Eigen 
 - **Factuur aanmaken** — Start een nieuwe factuur vooraf ingevuld met deze klant
 - **Offerte aanmaken** — Start een nieuwe offerte voor deze klant
 - **Archiveren** — Verplaats naar archief (kan later worden hersteld)
+
+:::caution
+Het archiveren van een klant kan worden tegengehouden wanneer de klant nog een actieve terugkerende factuur of lopende contracten heeft. MyCompanyDesk toont dan een waarschuwing zodat je eerst de terugkerende factuur of het contract beëindigt. Dit voorkomt dat je per ongeluk facturen blijft versturen naar een gearchiveerde klant.
+:::
 - **Verwijderen** — Verwijder de klant permanent
 
 ## Bulkacties
