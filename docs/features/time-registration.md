@@ -1,6 +1,7 @@
 ---
 title: Uren & agenda
 description: "Schrijf uren, plan je dagen en zet declarabele tijd om in facturen. Uren & agenda zet urenregistratie, je agenda en agendasuggesties op een plek."
+last_verified: 2026-09-03
 ---
 
 # Uren & agenda
@@ -85,6 +86,10 @@ Koppel Google Agenda of Outlook Agenda om je agenda en je uren samen te brengen.
 - Een alleen-lezen feed **Agenda abonnement (iCal)** aanzetten om je gelogde uren te volgen vanuit elke agenda-app
 
 Afspraken uit een gekoppelde agenda verschijnen in de dag- en weekweergave; tik erop om er een urenregistratie van te maken.
+
+## Online afspraken en uren
+
+Afspraken die klanten via het **Site Bookings**-blok op je website boeken, worden na goedkeuring automatisch in je agenda gezet. Een bevestigde online afspraak telt tegelijk mee als gewerkte uren in Uren & agenda, zodat je ze niet apart hoeft te loggen. Deze uren zijn **niet factureerbaar** via Uren & agenda; de omzet van de afspraak factureer je vanuit de afspraak zelf. Zie [Online afspraken](/features/site-bookings) voor het instellen van je boekbare tijden.
 
 ## Instellingen
 

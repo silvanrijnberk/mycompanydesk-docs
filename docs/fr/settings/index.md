@@ -1,7 +1,7 @@
 ---
 title: Aperçu des paramètres
 description: "Tout ce qui se configure tient sur une seule page, réparti en trois groupes en langage clair, chaque réglage à deux clics au maximum."
-last_verified: 2026-08-05
+last_verified: 2026-09-03
 ---
 
 # Aperçu des paramètres
@@ -31,7 +31,7 @@ Paramètres partagés. Les modifications faites ici s'appliquent à tous les mem
 
 | Ligne | Ce que vous y réglez |
 |---|---|
-| **Données de l'entreprise** | Nom, adresse, numéro KvK et numéro de TVA; ils figurent sur vos factures et devis |
+| **Données de l'entreprise** | Nom, adresse, numéro KvK et numéro de TVA, ainsi que vos heures d'ouverture; ils figurent sur vos factures, devis et site web |
 | **Logo et couleur** | L'apparence de vos factures et devis |
 | **Factures et devis** | Délai de paiement, rappels automatiques et durée de validité des devis |
 | **Mise en page des factures** | Mise en forme, couleur et police de vos factures, avec aperçu en direct |

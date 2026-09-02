@@ -1,6 +1,7 @@
 ---
 title: Zeitplan
 description: "Erfassen Sie Stunden, planen Sie Ihre Tage und machen Sie abrechenbare Zeit zu Rechnungen. Zeitplan verbindet Zeiterfassung mit Ihrem Kalender."
+last_verified: 2026-09-03
 ---
 
 # Zeitplan
@@ -85,6 +86,10 @@ Verbinden Sie Google Kalender oder Outlook Kalender, um Agenda und Stunden zusam
 - Einen schreibgeschützten **Kalender-Abonnement (iCal)** Feed aktivieren, um Ihre erfassten Stunden aus jeder Kalender-App zu verfolgen
 
 Termine aus einem verbundenen Kalender erscheinen in der Tages- und Wochenansicht; tippen Sie darauf, um daraus einen Zeiteintrag zu machen.
+
+## Online-Termine und Stunden
+
+Termine, die Kunden über den **Site Bookings**-Block auf Ihrer Website buchen, werden nach Freigabe automatisch in Ihren Kalender übernommen. Ein bestätigter Online-Termin zählt zugleich als erfasste Stunden im Zeitplan, sodass Sie ihn nicht separat erfassen müssen. Diese Stunden sind über den Zeitplan **nicht abrechenbar**; der Umsatz des Termins wird separat über den Termin selbst in Rechnung gestellt. Siehe [Online-Termine](/de/features/site-bookings) für das Einrichten Ihrer buchbaren Zeiten.
 
 ## Einstellungen
 

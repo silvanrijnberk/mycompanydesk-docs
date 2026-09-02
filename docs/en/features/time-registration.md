@@ -1,6 +1,7 @@
 ---
 title: Schedule
 description: "Log hours, plan your days and turn billable time into invoices. Schedule puts time registration, your agenda and calendar suggestions in one place."
+last_verified: 2026-09-03
 ---
 
 # Schedule
@@ -85,6 +86,10 @@ Connect Google Calendar or Outlook Calendar to bring your agenda and your hours 
 - Enable a read-only **Calendar Subscription (iCal)** feed to follow your logged hours from any calendar app
 
 Events pulled from a connected calendar show up in the day and week views; tap one to turn it into a time entry.
+
+## Online appointments and hours
+
+Appointments that customers book through the **Site Bookings** block on your website are automatically placed in your calendar once approved. A confirmed online appointment also counts as worked hours in Schedule, so you do not have to log it separately. These hours are **not billable** through Schedule; the revenue from the appointment is invoiced from the appointment itself. See [Online appointments](/en/features/site-bookings) for setting up your bookable hours.
 
 ## Settings
 

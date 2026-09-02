@@ -1,7 +1,7 @@
 ---
 title: Settings overview
 description: "Everything you can configure lives on one settings page, sorted into three plain-language groups, with every setting at most two clicks away."
-last_verified: 2026-08-05
+last_verified: 2026-09-03
 ---
 
 # Settings overview
@@ -29,7 +29,7 @@ Shared settings. Changes here apply to everyone in your workspace.
 
 | Row | What it covers |
 |---|---|
-| **Bedrijfsgegevens** (business details) | Name, address, KvK and VAT number; these appear on your invoices and quotes |
+| **Bedrijfsgegevens** (business details) | Name, address, KvK and VAT number, and your opening hours; these appear on your invoices, quotes and website |
 | **Logo en kleur** (logo and colour) | How your invoices and quotes look |
 | **Facturen en offertes** (invoices and quotes) | Payment term, automatic payment reminders and how long quotes stay valid |
 | **Factuurontwerp** (invoice design) | Layout, colour and font of your invoices, with a live preview |

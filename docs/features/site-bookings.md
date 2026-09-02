@@ -1,11 +1,22 @@
 ---
 title: Online afspraken
 description: Laat klanten direct via je website een afspraak inplannen met Site Bookings.
+last_verified: 2026-09-03
 ---
 
 # Online afspraken
 
 Met **Site Bookings** plaats je op je website een blok waarmee bezoekers direct een afspraak bij je kunnen inplannen. Denk aan een kennismaking, een offerteafspraak of een servicebezoek: de klant kiest een service, een geschikt moment en bevestigt het verzoek. Jij bepaalt welke services je aanbiedt, wanneer je beschikbaar bent en of een afspraak eerst door jou bevestigd moet worden.
+
+## Beschikbare tijden en openingstijden
+
+De tijden die bezoekers kunnen boeken, komen uit één centrale bron: **Instellingen** > **Bedrijfsgegevens** > **Openingstijden**.
+
+- Per dag stel je in of je open bent, welke tijdvakken je hebt en of een dag **op afspraak** is.
+- Met **Afwijkende dagen** geef je feestdagen, vakanties of eenmalige wijzigingen door. Ook die bepalen mee of het afspraakblok een dag toont.
+- Het afspraakblok houdt automatisch rekening met je openingstijden en je gekoppelde agenda, zodat er geen dubbele of onmogelijke afspraken ontstaan.
+
+Zie [Bedrijfsinstellingen](/settings/company) voor het instellen van je openingstijden.
 
 ## Voor wie is dit?
 
@@ -36,10 +47,11 @@ In de instellingen van het blok bepaal je hoe klanten kunnen boeken:
 - **Service**: geef de afspraak een naam, zoals "Kennismaking" of "Installatiebezoek".
 - **Prijs (optioneel)**: vul een prijs in als de afspraak betaald moet worden.
 - **Duur**: kies hoe lang de afspraak duurt, bijvoorbeeld 30 of 60 minuten.
-- **Beschikbare tijdvakken**: geef aan op welke dagen en tijden klanten kunnen boeken.
 - **Vooruit boeken**: stel in hoe ver van tevoren iemand een afspraak mag maken.
 - **Goedkeuring vereist**: schakel dit in als jij eerst elke aanvraag handmatig moet goedkeuren.
 - **Externe agenda blokkeren**: laat de tool rekening houden met je bestaande agenda zodat er geen dubbele afspraken ontstaan.
+
+De **beschikbare tijden** zelf komen uit de centrale openingstijden die je bij [Bedrijfsgegevens](/settings/company) instelt. Het blok blokkeert dagen en tijdvakken die daar niet open staan.
 
 :::tip
 Koppel een **e-mailadres** aan het blok zodat bezoekers een automatische bevestiging ontvangen en je zelf een melding krijgt bij elke nieuwe boeking.
@@ -61,6 +73,8 @@ Nadat een afspraak is geboekt, kun je deze in de agenda beheren:
 - **Wijzigen**: pas datum, tijd of service aan via de agenda.
 - **Annuleren**: verwijder de afspraak. De klant ontvangt hier automatisch bericht over als je de mail-instellingen hebt ingeschakeld.
 - **Opnieuw inplannen**: bied een alternatief tijdvak aan via het afspraakblok of de agenda.
+
+Een **bevestigde** online afspraak telt mee als gewerkte uren in **Uren & agenda**, zodat je gemaakte afspraken terugziet bij je tijdregistratie. De uren zijn niet factureerbaar: het geld van de afspraak loopt via de aparte factuur die je vanuit de afspraak kunt maken.
 
 ## Herinneringen en annuleringsmail
 

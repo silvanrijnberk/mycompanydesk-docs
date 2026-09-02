@@ -1,7 +1,7 @@
 ---
 title: Übersicht der Einstellungen
 description: "Alles Einstellbare liegt auf einer Seite, sortiert in drei Gruppen in klarer Sprache, und jede Einstellung ist höchstens zwei Klicks entfernt."
-last_verified: 2026-08-05
+last_verified: 2026-09-03
 ---
 
 # Übersicht der Einstellungen
@@ -31,7 +31,7 @@ Geteilte Einstellungen. Änderungen hier gelten für alle in Ihrem Arbeitsbereic
 
 | Zeile | Was Sie dort regeln |
 |---|---|
-| **Unternehmensdaten** | Name, Adresse, Handelsregister- und USt-Nummer; diese erscheinen auf Ihren Rechnungen und Angeboten |
+| **Unternehmensdaten** | Name, Adresse, Handelsregister- und USt-Nummer sowie Ihre Öffnungszeiten; diese erscheinen auf Ihren Rechnungen, Angeboten und Website |
 | **Logo und Farbe** | Wie Ihre Rechnungen und Angebote aussehen |
 | **Rechnungen und Angebote** | Zahlungsfrist, automatische Zahlungserinnerungen und Gültigkeitsdauer von Angeboten |
 | **Rechnungsgestaltung** | Layout, Farbe und Schriftart Ihrer Rechnungen, mit Live-Vorschau |

@@ -1,7 +1,7 @@
 ---
 title: Overzicht van de instellingen
 description: "Alles wat je kunt instellen staat op een instellingenpagina, verdeeld over drie groepen in gewone taal, en elke instelling is hooguit twee klikken weg."
-last_verified: 2026-08-05
+last_verified: 2026-09-03
 ---
 
 # Overzicht van de instellingen
@@ -29,7 +29,7 @@ Gedeelde instellingen. Wijzigingen hier gelden voor iedereen in je werkruimte.
 
 | Rij | Wat je er regelt |
 |---|---|
-| **Bedrijfsgegevens** | Naam, adres, KvK- en BTW-nummer; deze komen op je facturen en offertes |
+| **Bedrijfsgegevens** | Naam, adres, KvK- en BTW-nummer, en je openingstijden; deze komen op je facturen, offertes en website |
 | **Logo en kleur** | Hoe je facturen en offertes eruitzien |
 | **Facturen en offertes** | Betaaltermijn, automatische herinneringen en hoe lang offertes geldig blijven |
 | **Factuurontwerp** | Opmaak, kleur en lettertype van je facturen, met live voorbeeld |
