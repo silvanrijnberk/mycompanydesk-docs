@@ -1,7 +1,7 @@
 ---
 title: Alle prijzen tegelijk aanpassen
-description: "Ga naar Aanbod en klik op Prijzen aanpassen om in één keer meerdere prijzen te wijzigen."
-last_verified: 2026-08-06
+description: "Ga naar Aanbod en klik op Prijzen om te zien wat je vraagt, wat je ervoor kreeg en wat een verhoging zou opleveren."
+last_verified: 2026-09-03
 chatbot:
   triggers:
     - "alle prijzen aanpassen"
@@ -17,26 +17,30 @@ chatbot:
     - "Kan ik een prijswijziging ongedaan maken?"
 ---
 
-Ga naar **Aanbod** en klik op **Prijzen aanpassen** om in één keer meerdere prijzen te wijzigen.
+Ga naar **Aanbod** en klik op **Prijzen** om in één keer meerdere prijzen te wijzigen. De pagina toont wat je vraagt, wat je dit jaar daadwerkelijk voor je aanbod hebt ontvangen, en wat een verhoging zou opleveren bij dezelfde verkopen.
 
 ## Hoe het werkt
 
-1. Kies hoe je de prijzen wilt wijzigen:
-   - **Percentage** — verhoog of verlaag elke prijs met een percentage.
-   - **Vast bedrag** — tel hetzelfde bedrag bij elke prijs op of trek het af.
+1. Kies wat je wilt wijzigen:
+   - **Alles**: elk item in je aanbod.
+   - **Diensten**, **Producten** of **Abonnementen**: alleen items van dat type.
+2. Kies hoeveel:
+   - **Percentage**: verhoog of verlaag elke prijs met een percentage.
+   - **Vast bedrag**: tel hetzelfde bedrag bij elke prijs op of trek het af.
    - Gebruik een min-teken om prijzen te verlagen.
-2. Kies afronding:
+3. Kies afronding:
    - **Op centen** houdt de prijs zoals deze uit de berekening komt.
    - **Op hele euro's** rondt af op hele euro's.
-3. Klik op **Bekijk wat er verandert** om een overzicht te zien met per item de oude en nieuwe prijs.
-4. Controleer het overzicht en klik op **Prijzen aanpassen** om toe te passen.
+4. Klik op **Bekijk wat er verandert** om een overzicht te zien met per item de oude en nieuwe prijs.
+5. Controleer het overzicht en klik op **Prijzen aanpassen** om toe te passen.
 
-Het overzicht toont ook hoeveel items zijn overgeslagen omdat ze geen prijs hebben (bijvoorbeeld prijs-op-aanvraag items). En je krijgt een waarschuwing als een actieve aanbieding hierdoor stopt, omdat de aanbiedingsprijs dan niet meer onder de normale prijs ligt.
+Het overzicht toont ook welke items blijven staan en waarom: omdat ze geen prijs hebben (bijvoorbeeld prijs-op-aanvraag items), omdat het een bundel is die de som van zijn onderdelen volgt, of omdat de afronding de prijs niet verandert. Je krijgt een waarschuwing als een actieve aanbieding hierdoor stopt, omdat de aanbiedingsprijs dan niet meer onder de normale prijs ligt. Als je abonnementen selecteert, legt het overzicht ook uit dat lopende abonnees hun huidige prijs houden; de nieuwe prijs geldt pas voor de volgende aanmelding.
 
 ## Wat verandert er wel en niet
 
 - Alleen de prijzen in je **Aanbod** worden gewijzigd.
 - Bestaande facturen, offertes en contracten houden de prijs waarmee ze zijn aangemaakt.
+- Lopende abonnementen houden de prijs waarbij ze zijn afgesloten. Wil je bestaande abonnees mee verhogen, pas dan hun terugkerende factuur aan.
 - Direct na het toepassen kun je de wijziging ongedaan maken. Met één keer ongedaan maken draai je de hele batch in één keer terug.
 
 ## Inflatiehint bij één item wijzigen

@@ -1,7 +1,7 @@
 ---
 title: Alle Preise auf einmal ändern
-description: "Gehen Sie zu Angebot und klicken Sie auf Preise ändern, um viele Preise auf einmal zu aktualisieren."
-last_verified: 2026-08-06
+description: "Gehen Sie zu Angebot und klicken Sie auf Preise, um zu sehen, was Sie verlangen, was Sie dafür erhalten haben und was eine Erhöhung bringen würde."
+last_verified: 2026-09-03
 chatbot:
   triggers:
     - "alle preise ändern"
@@ -17,26 +17,30 @@ chatbot:
     - "Kann ich eine Preisänderung rückgängig machen?"
 ---
 
-Gehen Sie zu **Angebot** und klicken Sie auf **Preise ändern**, um viele Preise auf einmal zu aktualisieren.
+Gehen Sie zu **Angebot** und klicken Sie auf **Preise**, um viele Preise auf einmal zu aktualisieren. Die Seite zeigt, was Sie verlangen, was Sie dieses Jahr tatsächlich für Ihr Angebot erhalten haben und was eine Erhöhung bei gleichen Verkäufen bringen würde.
 
 ## So funktioniert es
 
-1. Wählen Sie, wie Sie die Preise ändern möchten:
-   - **Prozentsatz** — erhöht oder senkt jeden Preis um einen Prozentsatz.
-   - **Fester Betrag** — addiert oder subtrahiert den gleichen Betrag von jedem Preis.
+1. Wählen Sie, was Sie ändern möchten:
+   - **Alles**: jedes Element in Ihrem Angebot.
+   - **Dienstleistungen**, **Produkte** oder **Abonnements**: nur Elemente dieser Art.
+2. Wählen Sie, um wie viel:
+   - **Prozentsatz**: erhöht oder senkt jeden Preis um einen Prozentsatz.
+   - **Fester Betrag**: addiert oder subtrahiert den gleichen Betrag von jedem Preis.
    - Verwenden Sie ein Minuszeichen, um Preise zu senken.
-2. Wählen Sie die Rundung:
+3. Wählen Sie die Rundung:
    - **Auf Cent** behält die normale Dezimalpreis.
    - **Auf ganze Euro** rundet auf ganze Euro.
-3. Klicken Sie auf **Änderungen prüfen**, um eine Vorschau zu öffnen, die jeden Artikel mit altem und neuem Preis auflistet.
-4. Prüfen Sie die Liste und klicken Sie auf **Preise ändern**, um sie anzuwenden.
+4. Klicken Sie auf **Änderungen prüfen**, um eine Vorschau zu öffnen, die jeden Artikel mit altem und neuem Preis auflistet.
+5. Prüfen Sie die Liste und klicken Sie auf **Preise ändern**, um sie anzuwenden.
 
-Die Vorschau zeigt auch, wie viele Artikel übersprungen wurden, weil sie keinen Preis haben (zum Beispiel Artikel mit Preis auf Anfrage). Außerdem warnen wir Sie, wenn eine aktive Aktion dadurch enden würde, weil der Aktionspreis dann nicht mehr unter dem regulären Preis liegt.
+Die Vorschau zeigt auch, welche Artikel bestehen bleiben und warum: weil sie keinen Preis haben (zum Beispiel Artikel mit Preis auf Anfrage), weil es ein Paket ist, dessen Preis die Summe seiner Bestandteile ist, oder weil die Rundung den Preis nicht verändert. Außerdem warnen wir Sie, wenn eine aktive Aktion dadurch enden würde, weil der Aktionspreis dann nicht mehr unter dem regulären Preis liegt. Wenn Sie Abonnements auswählen, erklärt die Vorschau auch, dass laufende Abonnenten ihren aktuellen Preis behalten; der neue Preis gilt erst für die nächste Anmeldung.
 
 ## Was sich ändert und was nicht
 
 - Es werden nur die Preise in Ihrem **Angebot** geändert.
 - Bestehende Rechnungen, Angebote und Verträge behalten die Preise, mit denen sie erstellt wurden.
+- Laufende Abonnements behalten den Preis, zu dem sie abgeschlossen wurden. Wenn Sie bestehende Abonnenten ebenfalls erhöhen möchten, ändern Sie deren wiederkehrende Rechnung.
 - Sie können eine Änderung direkt nach dem Anwenden rückgängig machen. Ein einziger Rückgängig-Schritt macht die gesamte Änderung auf einmal rückgängig.
 
 ## Inflationshinweis beim Bearbeiten eines einzelnen Artikels
