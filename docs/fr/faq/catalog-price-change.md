@@ -1,7 +1,7 @@
 ---
 title: Modifier tous les prix en une fois
-description: "Rendez-vous dans Offre et cliquez sur Modifier les prix pour mettre à jour plusieurs prix en une seule fois."
-last_verified: 2026-08-06
+description: "Rendez-vous dans Offre et cliquez sur Prix pour voir ce que vous demandez, ce que vous avez réellement reçu et ce qu'une hausse rapporterait."
+last_verified: 2026-09-03
 chatbot:
   triggers:
     - "modifier tous les prix"
@@ -17,26 +17,30 @@ chatbot:
     - "Puis-je annuler un changement de prix ?"
 ---
 
-Rendez-vous dans **Offre** et cliquez sur **Modifier les prix** pour mettre à jour plusieurs prix en une seule fois.
+Rendez-vous dans **Offre** et cliquez sur **Prix** pour modifier plusieurs prix en une seule fois. La page affiche ce que vous demandez, ce que vous avez réellement reçu pour votre offre cette année et ce qu'une augmentation rapporterait avec les mêmes ventes.
 
 ## Comment ça marche
 
-1. Choisissez comment modifier les prix :
-   - **Pourcentage** — augmente ou diminue chaque prix d'un pourcentage.
-   - **Montant fixe** — ajoute ou retire le même montant à chaque prix.
+1. Choisissez ce que vous voulez modifier :
+   - **Tout** : chaque article de votre offre.
+   - **Services**, **Produits** ou **Abonnements** : seulement les articles de ce type.
+2. Choisissez le montant :
+   - **Pourcentage** : augmente ou diminue chaque prix d'un pourcentage.
+   - **Montant fixe** : ajoute ou retire le même montant à chaque prix.
    - Utilisez un signe moins pour baisser les prix.
-2. Choisissez l'arrondi :
+3. Choisissez l'arrondi :
    - **Au centime près** conserve le prix décimal normal.
    - **À l'euro près** arrondit à l'euro entier.
-3. Cliquez sur **Voir les changements** pour ouvrir un aperçu qui liste chaque article avec son ancien et son nouveau prix.
-4. Vérifiez la liste, puis cliquez sur **Modifier les prix** pour appliquer.
+4. Cliquez sur **Voir les changements** pour ouvrir un aperçu qui liste chaque article avec son ancien et son nouveau prix.
+5. Vérifiez la liste, puis cliquez sur **Modifier les prix** pour appliquer.
 
-L'aperçu indique aussi combien d'articles sont ignorés parce qu'ils n'ont pas de prix (par exemple, les articles avec prix sur demande). Et il vous avertit si une promotion en cours cesserait d'être active, car le prix promotionnel ne serait alors plus inférieur au prix normal.
+L'aperçu indique aussi quels articles restent inchangés et pourquoi : parce qu'ils n'ont pas de prix (par exemple les articles avec prix sur demande), parce qu'il s'agit d'un lot dont le prix suit celui de ses composants, ou parce que l'arrondi ne modifie pas le prix. Il vous avertit si une promotion en cours cesserait d'être active, car le prix promotionnel ne serait alors plus inférieur au prix normal. Si vous sélectionnez des abonnements, l'aperçu explique aussi que les abonnés en cours gardent leur prix actuel; le nouveau prix ne s'applique qu'à la prochaine inscription.
 
 ## Ce qui change et ce qui ne change pas
 
 - Seuls les prix de votre **Offre** sont mis à jour.
 - Les factures, devis et contrats existants conservent le prix auquel ils ont été créés.
+- Les abonnements en cours conservent le prix auquel ils ont été souscrits. Pour augmenter aussi les abonnés existants, modifiez leur facture récurrente.
 - Vous pouvez annuler un changement juste après l'avoir appliqué. Une seule annulation rétablit tout le lot en une fois.
 
 ## Indication d'inflation lors de la modification d'un article
