@@ -1,7 +1,7 @@
 ---
 title: "Problemen met inloggen"
 description: "Als je problemen hebt met inloggen: probeer Wachtwoord vergeten op de inlogpagina, controleer je spam-/ongewenste e-mail map."
-last_verified: 2026-05-09
+last_verified: 2026-09-12
 chatbot:
   triggers: ["cannot login", "cant login", "login problem", "forgot password", "reset password", "locked out", "verification email", "email not received", "kan niet inloggen", "wachtwoord vergeten", "passwort vergessen", "mot de passe oublie"]
   actions: []
@@ -11,7 +11,7 @@ chatbot:
 Als je problemen hebt met inloggen:
 1. Probeer "Wachtwoord vergeten" op de inlogpagina
 2. Controleer je spam-/ongewenste e-mail map
-3. Zorg dat je het juiste e-mailadres gebruikt
+3. Zorg dat je het juiste e-mailadres gebruikt. Als je vanaf de inlogpagina een verificatiemail opnieuw verstuurt, laat het scherm zien naar welk adres deze is verzonden
 4. Wis je browsercache en cookies
 
 Als het probleem aanhoudt, maak dan hieronder een supportticket aan.
