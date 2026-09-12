@@ -1,7 +1,7 @@
 ---
 title: Configurer votre entreprise
 description: "L'assistant de configuration remplit votre bloc expéditeur, vos coordonnées de paiement et votre statut TVA autour de votre première facture."
-last_verified: 2026-07-21
+last_verified: 2026-09-12
 ---
 
 # Configurer votre entreprise
@@ -37,9 +37,15 @@ Aucun résultat, ou pas d'immatriculation KVK ?
 
 ## Étape 3 : Comment vous êtes payé
 
-L'assistant demande l'IBAN sur lequel les clients doivent payer. Vous pouvez saisir votre IBAN professionnel maintenant, ou cliquer sur **Ajouter mon IBAN plus tard** pour passer cette étape. Gardez à l'esprit qu'un client ne pourra pas facilement vous payer sans IBAN.
+Cette étape comporte deux parties : votre statut de TVA et votre IBAN.
 
-Si vous attendez toujours votre numéro de TVA auprès de l'administration fiscale, ou relevez du régime de franchise en base (KOR), vous pouvez quand même continuer et ajouter votre numéro de TVA plus tard.
+**Statut de TVA**
+
+Si vous facturez de la TVA, sélectionnez **Oui, je facture la TVA** et saisissez votre numéro de TVA. Tant que le champ est vide, une indication rappelle qu'un numéro de TVA est requis pour continuer ; si vous ne l'avez pas encore, cliquez sur **Je ne connais pas mon numéro de TVA maintenant, je le renseignerai plus tard** pour passer cette étape. Si vous êtes exonéré (par exemple via le régime de franchise en base), sélectionnez **Non, je suis exonéré** à la place. Vous pourrez modifier cela plus tard dans les paramètres.
+
+**IBAN**
+
+L'assistant demande l'IBAN sur lequel les clients doivent payer. Vous pouvez saisir votre IBAN professionnel maintenant, ou cliquer sur **Je le renseignerai plus tard** pour passer cette étape. Tant que le champ est vide, une indication rappelle qu'un IBAN est requis avant de pouvoir envoyer des factures. Gardez à l'esprit qu'un client ne pourra pas facilement vous payer sans IBAN.
 
 ## Étape 4 : Terminer la configuration
 

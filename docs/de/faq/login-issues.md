@@ -1,7 +1,7 @@
 ---
 title: "Probleme beim Anmelden"
 description: "Probleme beim Anmelden: Nutzen Sie Passwort vergessen, prüfen Sie den Spam-Ordner, kontrollieren Sie die E-Mail-Adresse und leeren Sie den Cache."
-last_verified: 2026-05-09
+last_verified: 2026-09-12
 chatbot:
   triggers: ["cannot login", "cant login", "login problem", "forgot password", "reset password", "locked out", "verification email", "email not received", "kan niet inloggen", "wachtwoord vergeten", "passwort vergessen", "mot de passe oublie"]
   actions: []
@@ -11,7 +11,7 @@ chatbot:
 Wenn Sie Probleme beim Anmelden haben:
 1. Versuchen Sie „Passwort vergessen“ auf der Anmeldeseite
 2. Prüfen Sie Ihren Spam-/Junk-Ordner
-3. Stellen Sie sicher, dass Sie die richtige E-Mail verwenden
+3. Stellen Sie sicher, dass Sie die richtige E-Mail verwenden. Wenn Sie von der Anmeldeseite aus eine Verifizierungs-E-Mail erneut senden, zeigt der Bildschirm an, an welche Adresse sie gesendet wurde
 4. Löschen Sie Browser-Cache und Cookies
 
 Wenn das Problem weiterhin besteht, erstellen Sie ein Support-Ticket.

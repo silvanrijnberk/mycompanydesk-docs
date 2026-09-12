@@ -1,7 +1,7 @@
 ---
 title: Set up your company
 description: "The setup wizard fills in your sender block, payment details and VAT status around your first invoice, with a KVK lookup and a live preview."
-last_verified: 2026-07-21
+last_verified: 2026-09-12
 ---
 
 # Set up your company
@@ -37,9 +37,15 @@ No match, or no KVK registration?
 
 ## Step 3: How you get paid
 
-The wizard asks for the IBAN that customers pay to. You can enter your business IBAN now, or click **I'll add my IBAN later** to skip it. Keep in mind that your customer cannot easily pay you without an IBAN.
+The step has two parts: your VAT status and your IBAN.
 
-If you are waiting for your VAT ID from the Tax Authority, or fall under the small business scheme (KOR), you can continue anyway and add your VAT ID later.
+**VAT status**
+
+If you charge VAT, select **Yes, I charge VAT** and enter your VAT ID. While the field is empty, a hint reminds you that a VAT ID is required to continue; if you do not have it yet, click **I don't know my VAT ID right now, I'll fill it in later** to skip it. If you are exempt (for example through the small businesses scheme, KOR), select **No, I'm exempt** instead. You can change this later in Settings.
+
+**IBAN**
+
+The wizard asks for the IBAN that customers pay to. You can enter your business IBAN now, or click **I'll fill this in later** to skip it. While the field is empty, a hint reminds you that an IBAN is required before you can send invoices. Keep in mind that your customer cannot easily pay you without an IBAN.
 
 ## Step 4: Finish setup
 

@@ -1,7 +1,7 @@
 ---
 title: Unternehmen einrichten
 description: "Der Einrichtungsassistent füllt Absenderblock, Zahlungsdaten und Steuerstatus rund um Ihre erste Rechnung, mit KVK-Abfrage und Live-Vorschau."
-last_verified: 2026-07-21
+last_verified: 2026-09-12
 ---
 
 # Unternehmen einrichten
@@ -37,9 +37,15 @@ Kein Treffer oder keine KVK-Registrierung?
 
 ## Schritt 3: Wie Sie bezahlt werden möchten
 
-Der Assistent fragt nach der IBAN, auf die Kunden überweisen. Sie können jetzt Ihre Geschäfts-IBAN eingeben oder auf **IBAN später hinzufügen** klicken, um diesen Schritt zu überspringen. Beachten Sie, dass ein Kunde Sie ohne IBAN kaum bequem bezahlen kann.
+Dieser Schritt hat zwei Teile: Ihr Mehrwertsteuer-Status und Ihre IBAN.
 
-Wenn Sie noch auf Ihre USt-IdNr. vom Finanzamt warten oder unter die Kleinunternehmerregelung fallen, können Sie trotzdem fortfahren und die USt-IdNr. später hinzufügen.
+**Mehrwertsteuer-Status**
+
+Wenn Sie Mehrwertsteuer berechnen, wählen Sie **Ja, ich berechne MwSt.** und geben Sie Ihre USt-IdNr. ein. Solange das Feld leer ist, erscheint ein Hinweis, dass eine USt-IdNr. erforderlich ist, um fortzufahren; wenn Sie sie noch nicht haben, klicken Sie auf **Ich kenne meine USt-IdNr. jetzt nicht, ich trage sie später ein**, um diesen Schritt zu überspringen. Wenn Sie befreit sind (z. B. durch die Kleinunternehmerregelung), wählen Sie stattdessen **Nein, ich bin befreit**. Sie können dies später in den Einstellungen ändern.
+
+**IBAN**
+
+Der Assistent fragt nach der IBAN, auf die Kunden überweisen. Sie können jetzt Ihre Geschäfts-IBAN eingeben oder auf **Trage ich später ein** klicken, um diesen Schritt zu überspringen. Solange das Feld leer ist, erscheint ein Hinweis, dass eine IBAN erforderlich ist, bevor Sie Rechnungen senden können. Beachten Sie, dass ein Kunde Sie ohne IBAN kaum bequem bezahlen kann.
 
 ## Schritt 4: Einrichtung abschließen
 
