@@ -153,6 +153,10 @@ Liez les dépenses à :
 - **Clients** -- Associez les coûts à des clients spécifiques, par exemple pour les refacturer ultérieurement
 - **Fournisseurs** -- Enregistrez à qui vous avez payé
 
+## Refacturation et changements de prix de revient
+
+Une dépense liée à un client peut être refacturée sur une facture. Le détail de la dépense affiche une ligne **Facture liée** dès qu'elle a été ajoutée à une facture, et un badge **Prix de revient modifié après facturation** si le prix de revient de la dépense a été modifié après l'envoi de la facture. Ce badge signifie que le montant de la facture ne correspond plus à la dépense sous-jacente ; ouvrez la facture ou modifiez la dépense pour les réaligner.
+
 ## Actions groupées
 
 Sélectionnez plusieurs dépenses pour :

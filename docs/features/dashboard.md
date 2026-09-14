@@ -82,7 +82,14 @@ Op telefoons vallen visuele vormen terug op eenvoudiger vormen, zodat de getalle
 
 ## Eerste-keer-scherm
 
-Een gloednieuwe werkruimte zonder facturen of klanten landt op een rustig eerste-keer-scherm in plaats van het volledige dashboard. Het biedt een duidelijke actie: maak je eerste factuur. Een klein ontdekkingspaneel nodigt je ook uit om factuurstyling, de website of accountbeveiliging te personaliseren. Het wegklikken van dat paneel verbergt alleen het paneel; het versturen van je eerste factuur sluit het eerste-keer-scherm af. Je kunt het scherm ook overslaan met de optie **Toon mijn dashboard**.
+Een gloednieuwe werkruimte zonder facturen of klanten landt op een rustig eerste-keer-scherm in plaats van het volledige dashboard. In plaats van een generieke "maak je eerste factuur"-boodschap kiest het scherm één concrete vervolgstap op basis van wat er al in de werkruimte gebeurd is. Mogelijke vervolgstappen zijn:
+
+- **Een opgeslagen conceptfactuur of -offerte versturen**, als je al een factuur of offerte hebt aangemaakt die nog niet is verstuurd. Het scherm toont die met een link om hem te openen en te verzenden.
+- **Een eerste factuur maken voor een bestaande klant**, als je al een klant hebt toegevoegd zonder factuur of offerte. De klant wordt genoemd en je wordt naar het nieuwe-factuurformulier geleid.
+- **Ontbrekende bedrijfsgegevens aanvullen**, als je IBAN of btw-status nog ontbreekt. Onder de hoofdactie verschijnt een extra link om die gegevens in te vullen.
+- **Maak je eerste factuur**, als er nog geen klanten, facturen of offertes zijn, is dit de standaardactie.
+
+Een klein ontdekkingspaneel nodigt je ook uit om factuurstyling, de website of accountbeveiliging te personaliseren. Het wegklikken van dat paneel verbergt alleen het paneel; het versturen van je eerste factuur sluit het eerste-keer-scherm af. Je kunt het scherm ook overslaan met de optie **Toon mijn dashboard**.
 
 ## Aan-de-slag-kaart
 

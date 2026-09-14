@@ -81,7 +81,14 @@ On phones, large visual forms fall back to simpler forms so the numbers remain r
 
 ## First-run state
 
-A brand-new workspace with no invoices or customers lands on a calm first-run screen instead of the full dashboard. It offers one focal action: create your first invoice. A small discovery panel also invites you to personalise invoice styling, the website, or account security. Dismissing the panel hides only the panel; sending your first invoice exits first-run mode. You can also skip the first-run screen with the **Show my dashboard** option.
+A brand-new workspace with no invoices or customers lands on a calm first-run screen instead of the full dashboard. Rather than a generic "create your first invoice" message, the screen picks one concrete next step based on what already exists in the workspace. Possible next steps are:
+
+- **Send a saved draft invoice or quote**, if you already created an invoice or quote that has not been sent. The screen surfaces it with a link to open and send it.
+- **Create a first invoice for an existing customer**, if you added a customer but have not billed them yet. The customer is named and the screen links to the new-invoice form.
+- **Fill in missing company details**, if your IBAN or VAT status is still missing. A secondary link under the main action lets you complete those details.
+- **Create your first invoice**, this is the default action when there are no customers, invoices or quotes yet.
+
+A small discovery panel also invites you to personalise invoice styling, the website, or account security. Dismissing the panel hides only the panel; sending your first invoice exits first-run mode. You can also skip the first-run screen with the **Show my dashboard** option.
 
 ## Getting started card
 

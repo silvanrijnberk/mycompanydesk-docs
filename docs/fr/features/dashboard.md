@@ -81,7 +81,14 @@ Sur téléphone, les formes visuelles larges basculent vers des formes plus simp
 
 ## Écran de première utilisation
 
-Un tout nouvel espace de travail sans factures ni clients atterrit sur un écran de première utilisation calme au lieu du tableau de bord complet. Il propose une action claire : créer votre première facture. Un petit panneau de découverte vous invite aussi à personnaliser le style des factures, le site web ou la sécurité du compte. Fermer le panneau ne cache que le panneau ; envoyer votre première facture quitte l'écran de première utilisation. Vous pouvez aussi sauter l'écran avec l'option **Afficher mon tableau de bord**.
+Un tout nouvel espace de travail sans factures ni clients atterrit sur un écran de première utilisation calme au lieu du tableau de bord complet. Au lieu d'un message générique "créez votre première facture", l'écran choisit une prochaine action concrète en fonction de ce qui existe déjà dans l'espace de travail. Les prochaines actions possibles sont :
+
+- **Envoyer un brouillon de facture ou de devis enregistré**, si vous avez déjà créé une facture ou un devis qui n'a pas encore été envoyé. L'écran l'affiche avec un lien pour l'ouvrir et l'envoyer.
+- **Créer une première facture pour un client existant**, si vous avez déjà ajouté un client sans facture ni devis. L'écran cite le client et vous dirige vers le formulaire de nouvelle facture.
+- **Compléter les informations d'entreprise manquantes**, si votre IBAN ou votre statut TVA manque encore. Un lien secondaire apparaît sous l'action principale pour compléter ces informations.
+- **Créer votre première facture**, c'est l'action par défaut quand il n'y a encore ni clients, ni factures, ni devis.
+
+Un petit panneau de découverte vous invite aussi à personnaliser le style des factures, le site web ou la sécurité du compte. Fermer le panneau ne cache que le panneau ; envoyer votre première facture quitte l'écran de première utilisation. Vous pouvez aussi sauter l'écran avec l'option **Afficher mon tableau de bord**.
 
 ## Carte de prise en main
 

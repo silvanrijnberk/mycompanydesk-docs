@@ -83,23 +83,31 @@ Les reçus et factures comportant trop de lignes pour être traités en une seul
 
 ## Conseils pour de meilleurs resultats
 
-- **Bon eclairage** -- Prenez les photos dans de bonnes conditions d'eclairage
-- **Surface plane** -- Placez le recu sur une surface plane
-- **Recu complet** -- Assurez-vous que le recu entier est dans le cadre
-- **Texte lisible** -- Verifiez que le texte est lisible et non flou
-- **Un recu par scan** -- Numerisez les recus individuellement pour une meilleure precision
+- **Bon éclairage** -- Prenez les photos dans de bonnes conditions d'éclairage
+- **Surface plane** -- Placez le reçu sur une surface plane
+- **Reçu complet** -- Assurez-vous que le reçu entier est dans le cadre
+- **Texte lisible** -- Vérifiez que le texte est lisible et non flou
+- **Un reçu par scan** -- Numérisez les reçus individuellement pour une meilleure précision
 
-## Apres la numerisation
+## Après la numérisation
 
-Une fois confirme, la depense est creee avec :
+Une fois confirmé, la dépense est créée avec :
 
-- Toutes les donnees extraites pre-remplies
-- Le recu original joint en piece jointe
-- Des suggestions de categorie (si les suggestions IA sont activees)
+- Toutes les données extraites pré-remplies
+- Le reçu original joint en pièce jointe
+- Des suggestions de catégorie (si les suggestions IA sont activées)
 
-Lorsque le scanner determine le pays d'un fournisseur (par exemple un fournisseur etranger ou un numéro de registre neerlandais reconnu), le panneau de verification affiche egalement un selecteur de traitement de TVA. Le scanner propose une valeur par defaut en fonction du fournisseur et du montant, mais vous pouvez la modifier avant de confirmer. Cela compte pour les achats intracommunautaires en autoliquidation et pour les depenses d'importation en provenance d'un pays hors UE.
+Lorsque le scanner détermine le pays d'un fournisseur (par exemple un fournisseur étranger ou un numéro de registre néerlandais reconnu), le panneau de vérification affiche également un sélecteur de traitement de TVA. Le scanner propose une valeur par défaut en fonction du fournisseur et du montant, mais vous pouvez la modifier avant de confirmer. Cela compte pour les achats intracommunautaires en autoliquidation et pour les dépenses d'importation en provenance d'un pays hors UE.
 
-Vous pouvez modifier la depense par la suite comme n'importe quelle depense creee manuellement.
+Vous pouvez modifier la dépense par la suite comme n'importe quelle dépense créée manuellement.
+
+## Devise et doubles saisies
+
+Le scanner reconnaît quand un document est dans une devise autre que l'euro. Dans ce cas, la carte de vérification affiche le montant original avec sa devise et un champ séparé où vous saisissez le montant en euros tel que votre banque l'a converti. Les lignes en devise étrangère ne peuvent être confirmées que lorsque le montant en euros est renseigné. Si le document est déjà en euros, la carte affiche "C'est juste de l'euro" et le processus reste inchangé.
+
+Quand le scanner pense qu'un reçu a déjà été saisi, il affiche un avertissement avec la date, le fournisseur et le montant de la dépense existante. Vous pouvez ouvrir cette dépense ou choisir de saisir le reçu à nouveau si l'avertissement est erroné. Cette vérification est une protection souple, pas un blocage dur ; elle empêche seulement de saisir deux fois le même reçu par inadvertance.
+
+Le scanner peut aussi reconnaître vos propres factures de vente et avertir que le document ressemble plutôt à une facture de vente qu'à une dépense. Cet avertissement ne bloque pas ; vous pouvez toujours continuer s'il s'agit d'un retour ou d'une correction.
 
 ## Droits d'accès
 
@@ -111,7 +119,9 @@ L'outil de téléchargement traite un fichier à la fois. Pour traiter plusieurs
 
 ## Conseils
 
-- Numerisez les recus des que vous les recevez -- ne les laissez pas s'accumuler
-- Verifiez attentivement le montant extrait, surtout pour les recus avec plusieurs devises
-- Activez les suggestions IA pour une categorisation automatique apres la numerisation
-- Conservez le fichier de recu original en piece jointe a des fins de controle fiscal
+- Numérisez les reçus dès que vous les recevez -- ne les laissez pas s'accumuler
+- Vérifiez attentivement le montant extrait, surtout pour les reçus avec plusieurs devises
+- Activez les suggestions IA pour une catégorisation automatique après la numérisation
+- Conservez le fichier de reçu original en pièce jointe à des fins de contrôle fiscal
+- Pour les reçus en devise étrangère, vérifiez toujours que le montant en euros correspond au taux de conversion de votre banque
+- Doute d'un avertissement de double saisie ? Ouvrez la dépense existante pour vérifier
