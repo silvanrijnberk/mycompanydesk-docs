@@ -153,6 +153,10 @@ Verknüpfen Sie Ausgaben mit:
 - **Kunden** - Kosten mit bestimmten Kunden verknüpfen, zum Beispiel zur späteren Weiterberechnung
 - **Lieferanten** - Erfassen, an wen Sie gezahlt haben
 
+## Weiterberechnung und Kostenänderungen
+
+Eine kundenverknüpfte Ausgabe kann auf einer Rechnung weiterberechnet werden. Auf der Ausgabendetailseite erscheint eine Zeile **Verknüpfte Rechnung**, sobald sie zu einer Rechnung hinzugefügt wurde, und ein Hinweis **Kosten geändert nach Fakturierung**, wenn der Kostenpreis der Ausgabe nach dem Versand der Rechnung bearbeitet wurde. Dieser Hinweis bedeutet, dass der Betrag auf der Rechnung nicht mehr mit der zugrunde liegenden Ausgabe übereinstimmt; öffnen Sie die Rechnung oder bearbeiten Sie die Ausgabe, um beides wieder auf den gleichen Stand zu bringen.
+
 ## Massenaktionen
 
 Wählen Sie mehrere Ausgaben für:

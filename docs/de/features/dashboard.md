@@ -81,7 +81,14 @@ Auf Telefonen fallen große visuelle Formen auf einfachere Formen zurück, damit
 
 ## Erstnutzung-Bildschirm
 
-Ein brandneuer Arbeitsbereich ohne Rechnungen oder Kunden landet auf einem ruhigen Erstnutzung-Bildschirm anstelle des vollen Dashboards. Er bietet eine klare Aktion: Erstellen Sie Ihre erste Rechnung. Ein kleines Entdeckungspanel lädt außerdem ein, Rechnungslayout, Website oder Kontosicherheit anzupassen. Das Schließen des Panels verbirgt nur das Panel; das Senden Ihrer ersten Rechnung beendet den Erstnutzung-Bildschirm. Sie können den Bildschirm auch mit der Option **Mein Dashboard anzeigen** überspringen.
+Ein brandneuer Arbeitsbereich ohne Rechnungen oder Kunden landet auf einem ruhigen Erstnutzung-Bildschirm anstelle des vollen Dashboards. Statt einer generischen "Erstellen Sie Ihre erste Rechnung"-Nachricht wählt der Bildschirm eine konkrete nächste Aktion auf Basis dessen, was bereits im Arbeitsbereich passiert ist. Mögliche nächste Aktionen sind:
+
+- **Einen gespeicherten Rechnungs- oder Angebotsentwurf senden**, wenn Sie bereits eine Rechnung oder ein Angebot erstellt haben, das noch nicht versendet wurde. Der Bildschirm zeigt sie mit einem Link zum Öffnen und Senden an.
+- **Eine erste Rechnung für einen bestehenden Kunden erstellen**, wenn Sie bereits einen Kunden hinzugefügt haben, aber noch keine Rechnung oder kein Angebot gestellt haben. Der Bildschirm nennt den Kunden und leitet Sie zum neuen Rechnungsformular.
+- **Fehlende Firmendaten ergänzen**, wenn IBAN oder USt.-Status noch fehlen. Unter der Hauptaktion erscheint ein zusätzlicher Link, um diese Daten zu vervollständigen.
+- **Erstellen Sie Ihre erste Rechnung**, das ist die Standardaktion, wenn es noch keine Kunden, Rechnungen oder Angebote gibt.
+
+Ein kleines Entdeckungspanel lädt außerdem ein, Rechnungslayout, Website oder Kontosicherheit anzupassen. Das Schließen des Panels verbirgt nur das Panel; das Senden Ihrer ersten Rechnung beendet den Erstnutzung-Bildschirm. Sie können den Bildschirm auch mit der Option **Mein Dashboard anzeigen** überspringen.
 
 ## Erste-Schritte-Karte
 

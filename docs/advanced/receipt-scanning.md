@@ -101,6 +101,14 @@ Als de scanner een leveranciersland herleidt (bijvoorbeeld een buitenlandse leve
 
 Je kunt de uitgave daarna bewerken zoals elke handmatig aangemaakte uitgave.
 
+## Valuta en dubbele boekingen
+
+De scanner herkent wanneer een document in een andere valuta is dan euro. In dat geval toont de controlekaart het originele bedrag met valuta en een apart veld waarin je het eurobedrag invult zoals je bank het heeft omgerekend. Pas als het eurobedrag is ingevuld, kunnen de regels in vreemde valuta worden bevestigd. Is het document in euro's, dan zie je de tekst "Dit is gewoon euro" en blijft het proces ongewijzigd.
+
+Als de scanner denkt dat een bon al eerder is geboekt, toont hij een waarschuwing met datum, leverancier en bedrag van de bestaande uitgave. Je kunt die uitgave openen, of ervoor kiezen om de bon toch opnieuw te boeken als de melding niet klopt. De controle is geen harde blokkade; hij voorkomt alleen per ongeluk dubbel ingevoerde bonnen.
+
+Let op: de scanner kan eigen verkoopfacturen herkennen en waarschuwen dat het document lijkt op een verkoopfactuur in plaats van een uitgave. Die waarschuwing blokkeert niet; je kunt nog steeds doorgaan als het om een retourzending of correctie gaat.
+
 ## Rechten
 
 De bonscanner valt onder dezelfde paginarechten als de pagina Uitgaven. Een teamlid heeft **Lezen**-toegang tot Uitgaven nodig om de scanner te openen, en **Aanmaken**-toegang om een gescande bon te bevestigen als nieuwe uitgave. Leden zonder het recht Aanmaken zien de scanner wel, maar kunnen de bevestiging niet afronden. Dit geldt zowel bij uploaden vanaf de pagina Uitgaven als via een gedeelde fotoflow.
@@ -115,3 +123,5 @@ De uploader verwerkt een bestand per keer. Wil je meerdere bonnen verwerken, sca
 - Controleer het geextraheerde bedrag zorgvuldig, vooral bij bonnen met meerdere valuta's
 - Schakel AI-suggesties in voor automatische categorisatie na het scannen
 - Bewaar het originele bonbestand als bijlage voor belastingcontroledoeleinden
+- Controleer bij bonnen in een vreemde valuta altijd of het eurobedrag overeenkomt met de omrekening van je bank
+- Twijfel je aan een dubbele-boekingsmelding? Open de bestaande uitgave om zeker te zijn

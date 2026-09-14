@@ -101,6 +101,14 @@ When the scanner resolves a supplier country (for example, a foreign supplier or
 
 You can edit the expense afterward like any manually created expense.
 
+## Currency and duplicate bookings
+
+The scanner recognises when a document is in a currency other than euro. In that case the review card shows the original amount with its currency and a separate field where you enter the euro amount as your bank converted it. The foreign-currency lines cannot be confirmed until the euro amount is filled in. If the document is already in euro, the card shows "This is just euros" and the flow stays unchanged.
+
+When the scanner thinks a receipt was already booked, it shows a warning with the date, supplier and amount of the existing expense. You can open that expense or choose to book the receipt again anyway if the warning is wrong. The check is a soft guard, not a hard block; it only prevents accidentally entering the same receipt twice.
+
+The scanner can also recognise your own sales invoices and warn that the document looks like a sales invoice rather than an expense. That warning does not block you; you can still continue if it is a return or a correction.
+
 ## Permissions
 
 The receipt scanner is gated by the same page permission as the Expenses page. A team member needs **Read** access to Expenses to open the scanner, and **Create** access to confirm a scanned receipt into a new expense. Members without the Create permission still see the scanner, but cannot finish the confirmation. This applies whether the receipt is uploaded from the Expenses page or created through a shared photo flow.
@@ -115,3 +123,5 @@ The uploader takes one file at a time. To process several receipts, scan them on
 - Check the extracted amount carefully, especially for receipts with multiple currencies
 - Enable AI suggestions for automatic categorization after scanning
 - Keep the original receipt file attached for tax audit purposes
+- For receipts in a foreign currency, always check that the euro amount matches your bank's conversion
+- Unsure about a duplicate-booking warning? Open the existing expense to verify

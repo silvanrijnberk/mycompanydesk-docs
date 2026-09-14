@@ -148,6 +148,10 @@ Link expenses to:
 
 Filters on the list cover category, project, customer, date range and status (active vs archived).
 
+## Rebilling and cost-price changes
+
+When an expense is linked to a customer it can be rebilled on an invoice. The expense detail shows a **Linked invoice** line when it has been added to an invoice, and a warning badge **Cost changed after invoicing** when the expense's cost price was edited after the invoice was sent. That badge means the amount on the invoice no longer matches the underlying expense; open the invoice or edit the expense to bring them back in line.
+
 ## Bulk actions
 
 Select multiple expenses for:

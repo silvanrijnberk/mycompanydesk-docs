@@ -101,6 +101,14 @@ Wenn der Scanner ein Lieferantenland ermittelt (zum Beispiel ein ausländischer 
 
 Sie können die Ausgabe anschließend wie jede manuell erstellte Ausgabe bearbeiten.
 
+## Währung und Doppelt-Buchungen
+
+Der Scanner erkennt, wenn ein Dokument in einer anderen Währung als Euro ist. In diesem Fall zeigt die Prüfkarte den Originalbetrag mit Währung und ein separates Feld, in dem Sie den Eurobetrag eingeben, wie ihn Ihre Bank umgerechnet hat. Die Zeilen in Fremdwährung können erst bestätigt werden, wenn der Eurobetrag eingetragen ist. Ist das Dokument bereits in Euro, erscheint der Text "Dies ist einfach Euro" und der Ablauf bleibt unverändert.
+
+Wenn der Scanner glaubt, dass ein Beleg bereits gebucht wurde, zeigt er eine Warnung mit Datum, Lieferant und Betrag der bestehenden Ausgabe. Sie können diese Ausgabe öffnen oder den Beleg trotzdem erneut buchen, wenn die Warnung nicht stimmt. Die Prüfung ist eine weiche Absicherung, keine harte Blockade; sie verhindert nur, dass derselbe Beleg aus Versehen zweimal erfasst wird.
+
+Der Scanner kann auch eigene Verkaufsrechnungen erkennen und warnen, dass das Dokument eher einer Verkaufsrechnung als einer Ausgabe entspricht. Diese Warnung blockiert nicht; Sie können trotzdem fortfahren, wenn es sich um eine Rücksendung oder Korrektur handelt.
+
 ## Berechtigungen
 
 Der Belegscanner unterliegt derselben Seitenberechtigung wie die Seite Ausgaben. Ein Teammitglied braucht **Lesen**-Zugriff auf Ausgaben, um den Scanner zu öffnen, und **Erstellen**-Zugriff, um einen gescannten Beleg als neue Ausgabe zu bestätigen. Mitglieder ohne Erstellen-Berechtigung sehen den Scanner weiterhin, können die Bestätigung aber nicht abschließen. Das gilt sowohl für Uploads über die Seite Ausgaben als auch für geteilte Fotoflows.
@@ -115,3 +123,5 @@ Der Uploader verarbeitet eine Datei pro Durchgang. Um mehrere Belege zu verarbei
 - Überprüfen Sie den extrahierten Betrag sorgfältig, besonders bei Belegen mit mehreren Währungen
 - Aktivieren Sie KI-Vorschläge für automatische Kategorisierung nach dem Scannen
 - Bewahren Sie die Original-Belegdatei als Anhang für Steuerprüfungszwecke auf
+- Prüfen Sie bei Belegen in Fremdwährung immer, ob der Eurobetrag mit der Umrechnung Ihrer Bank übereinstimmt
+- Zweifeln Sie an einer Doppelt-Buchungsmeldung? Öffnen Sie die bestehende Ausgabe, um sicherzugehen

@@ -135,6 +135,10 @@ Koppel uitgaven aan:
 - **Klanten** - Koppel kosten aan specifieke klanten, bijvoorbeeld om ze later door te factureren
 - **Leveranciers** - Registreer aan wie je hebt betaald
 
+## Doorbelasting en kostprijswijzigingen
+
+Een uitgave die aan een klant is gekoppeld, kan op een factuur worden doorbelast. Op de uitgavedetail staat een regel **Gekoppelde factuur** zodra hij aan een factuur is toegevoegd, en een waarschuwingslabel **Kostprijs gewijzigd na facturatie** als de kostprijs van de uitgave is aangepast nadat de factuur is verstuurd. Dat label betekent dat het bedrag op de factuur niet meer overeenkomt met de onderliggende uitgave; open de factuur of bewerk de uitgave om beide weer gelijk te trekken.
+
 ## Bulkacties
 
 Selecteer meerdere uitgaven voor:
