@@ -1,7 +1,7 @@
 ---
-title: "Teamzugang"
-description: "Zugang zum Arbeitsbereich verwalten: Gehen Sie zu Einstellungen, Zugang und Steuerberater, prüfen Sie die Mitglieder und laden Sie Personen ein."
-last_verified: 2026-07-02
+title: Teamzugriff
+description: "To manage who has access to your workspace: go to Settings > Toegang en boekhouder (access and accountant)."
+last_verified: 2026-09-15
 chatbot:
   triggers:
     - "team access"
@@ -23,18 +23,22 @@ chatbot:
     - "teamleden"
     - "uitnodigen"
     - "werkruimte"
+    - "toegang en boekhouder"
   actions:
-    - { label: "Open access settings", to: "/settings/team" }
+    - { label: "Open access settings", to: "/settings/toegang" }
   follow_up:
     - "How do I set page permissions for a team member?"
     - "How do I manage accountant access?"
     - "How do I remove a team member?"
+    - "Which plan do I need to invite team members?"
+
 ---
 
-So verwalten Sie, wer Zugang zu Ihrem Arbeitsbereich hat:
-1. Gehen Sie zu Einstellungen → „Zugang und Steuerberater“
-2. Prüfen Sie die aktuellen Mitglieder und Rollen im Bereich „Personen mit Zugang“
-3. Nutzen Sie „Jemandem Zugang geben“, um einen Teamkollegen per E-Mail einzuladen
-4. Öffnen Sie „Zugang verwalten“ oder das Zahnradsymbol bei einem Mitglied, um den Seitenzugriff festzulegen
+To manage who has access to your workspace:
 
-Berechtigungen werden pro Seite mit den Optionen Lesen, Schreiben und Erstellen verwaltet. Das Einladen von Teammitgliedern erfordert den Pro-Tarif; der Steuerberater-Bereich auf derselben Seite ist in jedem Tarif kostenlos.
+1. Go to Settings → **Toegang en boekhouder** (access and accountant)
+2. Review current members and roles in the **Mensen met toegang** (people with access) section
+3. Click **Iemand toegang geven** (give someone access) to invite a teammate by email
+4. Click the **Toegang beheren** (manage access) button or gear icon on a member row to set page permissions
+
+Permissions are managed per page with Read, Write and Create options. Inviting team members requires the **Pro** plan; the accountant section on the same page is free on every plan.

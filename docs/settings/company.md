@@ -1,82 +1,86 @@
 ---
 title: Bedrijfsinstellingen
-description: "De naam op je facturen, adres, KvK, logo, huisstijlkleur, website en openingstijden, gebundeld in Instellingen."
+description: "The name on your invoices, address, KvK, logo, brand colour, website and opening hours, grouped in Settings."
 last_verified: 2026-09-03
 ---
 
-# Bedrijfsinstellingen
+# Company Settings
 
-Alles wat bepaalt hoe je bedrijf er naar buiten toe uitziet: de naam op je facturen, je logo en huisstijlkleur, je publieke website en je openingstijden.
+Everything that defines how your business looks to the outside world: the name on your invoices, your logo and brand colour, your public website, and your opening hours.
 
-## Waar vind je het
+## Where to find it
 
-Open **Instellingen** via het menu, of ga naar `/settings`. Bedrijfsonderwerpen zijn rijen in de groep **Je bedrijf**:
+Open **Instellingen** (Settings) from the menu, or go to `/settings`. Company topics are rows in the **Je bedrijf** (your business) group:
 
-- **Bedrijfsgegevens** op `/settings/bedrijfsgegevens`: bedrijfsinformatie, adres, KVK-nummer, BTW-nummer, openingstijden
-- **Logo en kleur** op `/settings/uiterlijk`: logo, huisstijlkleur, documentstijl
-- **Factuurontwerp** op `/settings/factuurontwerp`: de ontwerpstudio voor je facturen, beschreven op [PDF-aanpassing](/settings/pdf)
+- **Bedrijfsgegevens** (business details) at `/settings/bedrijfsgegevens`: company info, address, KvK number, VAT number, opening hours
+- **Logo en kleur** (logo and colour) at `/settings/uiterlijk`: logo, brand colour, document styling
+- **Factuurontwerp** (invoice design) at `/settings/factuurontwerp`: the invoice design studio, covered on [PDF Customization](/en/settings/pdf)
 
-Oude links naar de vroegere werkruimte-instellingen verwijzen automatisch door naar de nieuwe plek.
+Old links to the previous workspace settings pages redirect to the new locations automatically.
 
-## Bedrijfsgegevens
+## Business details (Bedrijfsgegevens)
 
-Pad: `/settings/bedrijfsgegevens`
+Path: `/settings/bedrijfsgegevens`
 
-Het identiteitsformulier. Wat elke factuur, offerte en e-mail toont.
+The identity form. What every invoice, quote, and email shows.
 
-- **Bedrijfsnaam**: verschijnt op elk document
-- **Adres**: straat, postcode, plaats, land (met adresaanvulling)
-- **Registratie**: KVK-nummer of ander registratienummer. De knop **Ophalen uit KVK** haalt de laatste gegevens uit het Handelsregister en vult lege velden in (bedrijfsnaam, adres, postcode, plaats, land). Velden die je zelf al hebt ingevuld blijven staan. Elke werkruimte heeft 100 gratis KVK-zoekopdrachten per dag (resultaten uit de cache tellen niet mee). Bij 20 of minder resterende zoekopdrachten toont de veldhint een teller met het aantal dat je nog over hebt. Is de daglimiet bereikt, dan kun je de gegevens handmatig invullen of het morgen opnieuw proberen.
-- **BTW-nummer**: je BTW-id (bijv. `NL123456789B01`)
-- **Contact**: publiek e-mailadres, telefoon, support-e-mailadres, tijdzone
-- **Website + social media**: gebruikt in de e-mailhandtekening, op je bedrijfspagina en in footers
+- **Business name**: appears on every document
+- **Address**: street, postal code, city, country (with address autocomplete)
+- **Registration**: KvK or other registration number. The **Refresh from KVK** button pulls the latest data from the Dutch Chamber of Commerce registry and fills any blank fields (business name, address, postal code, city, country). It never overwrites values you already set. Each workspace gets 100 free KVK lookups per day (cached results do not count toward the limit). When 20 or fewer lookups remain, the field hint switches to a counter showing how many are left. If the daily cap is reached, the button is disabled until the next day or you can enter the data manually.
+- **Tax ID**: VAT number (e.g. `NL123456789B01`)
+- **Contact**: public email, phone, support email, timezone
+- **Website + social**: used by the email signature, business page, and footers
 
-Wijzigingen worden automatisch opgeslagen.
+Changes save automatically.
 
-## Openingstijden
+## Opening hours
 
-Pad: `/settings/bedrijfsgegevens#openingstijden`
+Path: `/settings/bedrijfsgegevens#openingstijden`
 
-Vanaf dit scherm beheer je één centrale bron voor je openingstijden. Dezelfde tijden voeden je website én het online afsprakenblok, zodat je nooit op twee plekken hoeft bij te houden wanneer je open bent.
+From here you manage one central source for your opening hours. The same hours feed your website and the online appointments block, so you never have to keep two places in sync.
 
-**Weekschema**
+**Weekly schedule**
 
-- Stel per dag in of je bedrijf **open** of **gesloten** is.
-- Voor een open dag geef je één of twee tijdvakken op, bijvoorbeeld `09:00 – 12:00` en `13:00 – 17:00`.
-- Een dag die je niet hebt ingesteld, valt terug op kantooruren (`09:00 – 17:00`) voor je site en afsprakenblok.
-- Je kunt een dag ook op **op afspraak** zetten: dan staat hij open zonder vaste tijden.
+- Set each day as **open** or **closed**.
+- For an open day, enter one or two time blocks, for example `09:00 - 12:00` and `13:00 - 17:00`.
+- A day you do not configure falls back to office hours (`09:00 - 17:00`) for your site and booking block.
+- You can also set a day to **by appointment** so it appears open without fixed times.
 
-**Afwijkende dagen**
+**Special days**
 
-- Voeg losse datums toe voor feestdagen, vakanties of eenmalige afwijkingen.
-- Per afwijkende dag kies je **gesloten**, **op afspraak** of een **aangepast tijdvak**.
-- Het online afsprakenblok en de website houden hier rekening mee.
+- Add individual dates for holidays, vacations, or one-off changes.
+- For each special day choose **closed**, **by appointment**, or a **custom time block**.
+- The online appointments block and your website respect these exceptions.
 
-Wijzigingen worden automatisch opgeslagen. Zie [Online afspraken](/features/site-bookings) voor hoe het afsprakenblok je openingstijden gebruikt.
+**Public website and appointments**
 
-## Logo en kleur
+Your opening hours are shown on the public business page and in the online appointments block. The website tab is managed under the top-level **Website** area; the booking block is covered on [Online appointments](/en/features/site-bookings). Both pull from the same source, so a change here updates both places.
 
-Pad: `/settings/uiterlijk`
+Changes save automatically. See [Online appointments](/en/features/site-bookings) for how the booking block uses your opening hours.
 
-De huisstijl voor facturen, offertes en uitgaande e-mail, met een livevoorbeeld van het resultaat.
+## Logo and colour (Logo en kleur)
 
-- **Logo uploaden**: gebruikt op elke PDF en in de e-mailheader
-- **Huisstijlkleur**: een accentkleur voor al je documenten en je publieke bedrijfspagina
-- **Stijlen**: kies een documentstijl, beschikbaar vanaf Starter
-- **PDF-voettekst**: de voettekst onderaan je documenten
+Path: `/settings/uiterlijk`
 
-Er is een stijl en een huisstijlkleur voor alle documenttypes; een tweede accentkleur bestaat niet meer. Wil je de opmaak, kleuren en het lettertype van je facturen en offertes helemaal zelf bepalen? Open dan de rij **Factuurontwerp** (de ontwerpstudio); zie [PDF-aanpassing](/settings/pdf).
+Branding for invoices, quotes, and outgoing email, with a live preview of the result.
 
-## Je website
+- **Logo upload**: used on every PDF and email header
+- **Brand colour**: one accent colour across your documents and public business page
+- **Style presets**: pick a document style, available on Starter and up
+- **PDF footer**: the footer text at the bottom of your documents
 
-Je publieke bedrijfspagina beheer je in het aparte onderdeel **Website** in de navigatie, niet onder Instellingen. Het is een dashboard met zes tabbladen: Overzicht, Bezoekers, Vindbaarheid, Koppelingen, Domein & e-mail en Instellingen. De site-editor open je via **Bewerk site**.
+There is one style and one brand colour for all document types; a second accent colour no longer exists. For full control over the layout, colours, and font of your invoices and quotes, open the **Factuurontwerp** row (the invoice design studio); see [PDF Customization](/en/settings/pdf).
 
-- De website is beschikbaar vanaf het Starter-abonnement.
-- Je eigen domein koppelen, in plaats van het standaard `mycompanydesk.com`-subdomein, vereist Pro. DNS-, SPF- en DKIM-records worden voor je beheerd; ze staan achter een geavanceerd-strookje dat de meeste gebruikers nooit hoeven te openen.
+## Your website
 
-## Gerelateerd
+Your public business page is managed in the top-level **Website** area of the app, not under Settings. It is a dashboard with six tabs: Overview, Visitors, Findability, Connections, Domain & email, and Settings. The site editor opens from **Edit site**.
 
-- [PDF-aanpassing](/settings/pdf) voor de ontwerpstudio Factuurontwerp
-- [Abonnement en betalingen](/settings/billing) om een eigen domein te ontgrendelen
-- [E-mailinstellingen](/settings/email) om vanaf je eigen domein te versturen
-- De installatiewizard op `/setup` loopt met nieuwe werkruimtes in een keer door deze instellingen heen
+- The website is available from the Starter plan.
+- Connecting your own domain, replacing the default `mycompanydesk.com` subdomain, requires Pro. DNS, SPF, and DKIM records are managed for you, tucked behind an advanced strip most users never need to open.
+
+## Related
+
+- [PDF Customization](/en/settings/pdf) for the Factuurontwerp design studio
+- [Plan & payments](/en/settings/billing) to unlock the custom domain
+- [Email setup](/en/settings/email) for sending from your own domain
+- The setup wizard at `/setup` walks new workspaces through these settings in one flow

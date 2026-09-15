@@ -9,7 +9,7 @@ Manage recurring service agreements and rental contracts with automatic billing 
 
 ## Overview
 
-Contracts represent ongoing agreements with customers — such as monthly service contracts, rental agreements, or maintenance plans. They can generate invoices automatically on a set schedule.
+Contracts represent ongoing agreements with customers - such as monthly service contracts, rental agreements, or maintenance plans. They can generate invoices automatically on a set schedule.
 
 ::: info
 The contracts module is optional. Enable it in **Company > Features** if you don't see it in the navigation.
@@ -19,13 +19,13 @@ The contracts module is optional. Enable it in **Company > Features** if you don
 
 1. Go to **Contracts > New Contract**
 2. Fill in:
-   - **Name** — A descriptive title (e.g., "Monthly cleaning service")
-   - **Customer** — The client party to the contract
-   - **Amount** — The recurring billing amount
-   - **Recurrence** — How often to bill (weekly, monthly, quarterly, yearly)
-   - **Start date** — When the contract begins
-   - **End date** — Optional end date
-   - **Description** — Terms and details
+   - **Name** - A descriptive title (e.g., "Monthly cleaning service")
+   - **Customer** - The client party to the contract
+   - **Amount** - The recurring billing amount
+   - **Recurrence** - How often to bill (weekly, monthly, quarterly, yearly)
+   - **Start date** - When the contract begins
+   - **End date** - Optional end date
+   - **Description** - Terms and details
 3. Click **Save**
 
 ::: tip Meer opties
@@ -36,10 +36,10 @@ The new-contract form keeps optional details tidy: the **More options** section 
 
 Every contract has a **Rate basis** that controls how the amount is agreed:
 
-- **Fixed amount** -- the same amount each period, such as rent or a fixed monthly fee.
-- **Hourly rate** -- you invoice the hours logged on projects linked to this contract.
-- **Daily rate** -- you invoice the days worked on projects linked to this contract.
-- **Fixed project price** -- a single agreed total for the whole assignment, invoiced once.
+- **Fixed amount** - the same amount each period, such as rent or a fixed monthly fee.
+- **Hourly rate** - you invoice the hours logged on projects linked to this contract.
+- **Daily rate** - you invoice the days worked on projects linked to this contract.
+- **Fixed project price** - a single agreed total for the whole assignment, invoiced once.
 
 For hourly and daily contracts, the contract detail page shows a **Work under this contract** card with the agreed, invoiced and logged totals, plus the linked projects. A day is counted as 8 hours.
 
@@ -48,9 +48,23 @@ A fixed project price does not repeat: the contract generates one invoice and th
 ## Contract statuses
 
 | Status | Description |
-|---|---|
+| - -| - -|
 | **Active** | Currently in effect, generates invoices |
-| **Inactive** | Paused — no invoices generated |
+| **Inactive** | Paused - no invoices generated |
+| **Expired** | The end date has passed; no new invoices are generated |
+
+::: warning MyCompanyDesk is not multi-tenant
+A contract is always linked to one customer in one workspace. The app does not support a single customer account that spans multiple tenants, and contract-generated invoices are always created in the workspace that owns the contract.
+:::
+
+## Terminating or pausing a contract
+
+You can stop an active contract in two ways:
+
+- **Deactivate** (`Pauzeren`) - the contract stays open but stops generating invoices. Activate it again at any time to resume billing.
+- **Set an end date** (`Einddatum`) - the contract runs until that date and then automatically becomes **Expired**. No invoices are generated for any period that ends after the end date.
+
+When you edit an active contract and add an end date, the app warns that future invoices will stop. If you remove the end date before it is reached, the contract resumes normal invoicing.
 
 ## End dates
 
@@ -59,8 +73,9 @@ You can set an **End date** when creating or editing a contract. Leave it empty 
 When an end date is set:
 
 - The contract detail page shows the end date, or **Open-ended** if none is set.
-- No invoices are generated for periods after the end date.
+- No invoices are generated for any period that ends after the end date.
 - The contracts list shows an **Expires soon** label when the end date is within 30 days.
+- When the end date passes, the status changes to **Expired** automatically.
 
 ## Automatic invoicing
 
@@ -84,9 +99,9 @@ If your plan no longer includes automatic contract invoicing, the app creates an
 
 Contracts bill for a period relative to the invoice date:
 
-- **Current** — the period that contains the invoice date (default)
-- **Previous** — the period before the invoice date
-- **Next** — the period after the invoice date; legacy value kept for older rental contracts that bill in advance
+- **Current** - the period that contains the invoice date (default)
+- **Previous** - the period before the invoice date
+- **Next** - the period after the invoice date; legacy value kept for older rental contracts that bill in advance
 
 The form today only lets you choose **current** or **previous**. If you have an older contract set to **next**, the API keeps that value when you save, so the contract stays editable.
 
@@ -144,9 +159,9 @@ The contracts list page shows summary metrics:
 
 ## Bulk actions
 
-- **Change status** — Activate or deactivate multiple contracts
-- **Archive** — Move to archive
-- **Restore** — Bring back archived contracts
+- **Change status** - Activate or deactivate multiple contracts
+- **Archive** - Move to archive
+- **Restore** - Bring back archived contracts
 
 ## Signing
 
@@ -186,9 +201,9 @@ Legacy contracts show a dash in the Signing column and appear under the "No e-si
 
 Signing links can require SMS verification before a party can view and sign the document. When enabled, the signer must enter a mobile number and confirm a 6-digit code sent by SMS.
 
-- **Send code** — After entering their mobile number, the signer taps the button and receives a code
-- **Verify code** — The signer enters the 6-digit code to prove access to the phone number
-- **Verified badge** — Once confirmed, a "Verified" badge appears with the last four digits of the number
+- **Send code** - After entering their mobile number, the signer taps the button and receives a code
+- **Verify code** - The signer enters the 6-digit code to prove access to the phone number
+- **Verified badge** - Once confirmed, a "Verified" badge appears with the last four digits of the number
 
 If the wrong code is entered, the signer can request a new one. SMS verification is configured per signing session and applies to all parties.
 
@@ -224,7 +239,8 @@ When a contract is created from a template, it pins to the version that was curr
 
 - Use contracts together with [recurring invoices](/en/features/recurring-invoices) for different billing scenarios
 - Link contracts to objects for full rental management
-- Set end dates to get notified before contracts expire
+- Set end dates to get notified before contracts expire; a contract expires automatically on its end date
+- Deactivate a contract instead of setting an end date if you want to pause and resume billing later
 - Review the contracts filter to see active vs. inactive at a glance
 - Filter by signing status to find contracts that still need signatures
 - Add signing parties when creating a contract to enable electronic signing

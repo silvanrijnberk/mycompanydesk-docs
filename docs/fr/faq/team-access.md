@@ -1,7 +1,7 @@
 ---
-title: "Accès de l'équipe"
-description: "Pour gérer qui a accès à votre espace de travail : allez dans Paramètres > Accès et comptable."
-last_verified: 2026-07-02
+title: Accès'équipe
+description: "To manage who has access to your workspace: go to Settings > Toegang en boekhouder (access and accountant)."
+last_verified: 2026-09-15
 chatbot:
   triggers:
     - "team access"
@@ -15,7 +15,7 @@ chatbot:
     - "gebruiker toevoegen"
     - "teamzugang"
     - "benutzer einladen"
-    - "acces equipe"
+    - "accès'équipe"
     - "inviter membre"
     - "team members"
     - "invite teammate"
@@ -23,18 +23,22 @@ chatbot:
     - "teamleden"
     - "uitnodigen"
     - "werkruimte"
+    - "toegang en boekhouder"
   actions:
-    - { label: "Open access settings", to: "/settings/team" }
+    - { label: "Open access settings", to: "/settings/toegang" }
   follow_up:
     - "How do I set page permissions for a team member?"
     - "How do I manage accountant access?"
     - "How do I remove a team member?"
+    - "Which plan do I need to invite team members?"
+
 ---
 
-Pour gérer qui a accès à votre espace de travail :
-1. Allez dans Paramètres → « Accès et comptable »
-2. Passez en revue les membres actuels et leurs rôles dans la section « Personnes ayant accès »
-3. Utilisez « Donner accès à quelqu'un » pour inviter un collègue par e-mail
-4. Ouvrez « Gérer l'accès » ou l'icône d'engrenage d'un membre pour définir l'accès aux pages
+To manage who has access to your workspace:
 
-Les permissions se gèrent par page avec les options Lecture, Écriture et Création. Inviter des membres d'équipe nécessite le plan Pro ; la section comptable sur la même page est gratuite sur tous les plans.
+1. Go to Settings → **Toegang en boekhouder** (access and accountant)
+2. Review current members and rôles in the **Mensen met toegang** (people with access) section
+3. Click **Iemand toegang geven** (give someone access) to invite a teammate by email
+4. Click the **Toegang beheren** (manage access) button or gear icon on a member row to set page permissions
+
+Permissions are managed per page with Read, Write and Create options. Inviting team members requires the **Pro** plan; the accountant section on the same page is free on every plan.

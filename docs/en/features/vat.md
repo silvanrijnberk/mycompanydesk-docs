@@ -10,6 +10,56 @@ last_verified: 2026-08-16
 
 Track collected and paid VAT, prepare your return, and stay ahead of deadlines. MyCompanyDesk supports country-specific VAT flows: the page mirrors the Dutch BTW form for companies in the Netherlands, and uses each workspace country's filing deadlines and rules for other supported countries, so the numbers you see are the numbers you file.
 
+## VAT settings leaf
+
+Settings → **Belasting** (Tax) contains a compact **BTW** (VAT) card with the choices that drive the VAT page and many invoice defaults.
+
+### Filing frequency
+
+The frequency sets which periods appear in the VAT page selector and which returns you must file:
+
+| Choice | Dutch label | Periods shown |
+|---|---|---|
+| **Monthly** | Elke maand | M01 to M12 plus full year |
+| **Quarterly** | Elke 3 maanden | Q1 to Q4 plus full year |
+| **Yearly** | Eén keer per jaar | Full year only |
+
+Changing the frequency does not rewrite historical returns. It only affects how future periods are grouped on the VAT page. After the change, the current period label and deadline ring update immediately.
+
+### VAT rate
+
+- **Standard rate**: the default VAT rate applied to new invoice lines and other taxable items.
+- **Reduced rate option**: when your workspace is allowed to use a reduced VAT rate, the form shows the reduced rate as an option. This is not available for every business type.
+
+### Default expense VAT rate
+
+Choose the VAT rate that is preselected when you add a new expense. You can still change it per expense.
+
+### Small business scheme (KOR)
+
+A toggle marks the workspace as participating in the Dutch **kleineondernemersregeling** (KOR). When enabled:
+
+- The VAT return treats the business as exempt from charging VAT.
+- Collected VAT is not shown as payable; input VAT is not deducted.
+- A meter on the VAT page shows how much of the annual KOR revenue limit has been used (`{ytd} van {limit} dit jaar`).
+- When the meter approaches the limit, the UI warns that you are close to losing KOR eligibility.
+
+If the business no longer qualifies for the KOR, turn the toggle off and double-check the next return with your accountant.
+
+### Exempt from VAT
+
+A separate **Vrijgesteld van btw** toggle is available for businesses that are explicitly exempt from VAT, for example certain financial or medical services. When this is on, new invoices default to a 0% VAT rate and the VAT page hides most filing detail. Do not confuse this with the KOR toggle; they have different rules.
+
+### KOR meter states
+
+The app shows the KOR progress meter in a few states:
+
+- **Under the limit**: normal progress colour, with the amount used and the limit.
+- **Near the limit**: an amber warning so you can plan for crossing the threshold.
+- **Over the limit**: a red warning that the KOR probably no longer applies; the next return should be filed as a normal VAT return.
+
+<!-- TODO(source-missing): verify exact threshold percentages that trigger near/over KOR meter warnings and whether the toggle is available for non-Dutch workspaces. -->
+
 ## Page layout
 
 The VAT page has three tabs: **Overview**, **Filing** and **Transactions** (Overzicht, Aangifte and Transacties when your app language is Dutch). Both the active tab and the active period are kept in the URL, so refresh and the back button preserve your place.
@@ -184,3 +234,13 @@ The built-in assistant can answer questions about your aangifte using your own w
 - Selling B2B in the EU? Open the ICP-opgaaf card before filing; it is a separate submission that is easy to forget.
 - Mark a period as filed right after submitting, then let the automatic lock protect it.
 - Zeroing an expense amount clears the derived VAT immediately, so a corrected expense cannot leave stale VAT on the aangifte.
+
+## See also
+
+- [How do I file a VAT return?](/en/faq/vat-return)
+- [Reclaiming foreign VAT](/en/faq/foreign-vat)
+- [Invoices](/en/features/invoices)
+- [Expenses](/en/features/expenses)
+- [Settings > Tax](/en/settings/company)
+
+<!-- TODO(source-missing): the exact Dutch VAT settings labels and help text should be double-checked against a live workspace before the next release. -->
