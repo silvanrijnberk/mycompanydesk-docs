@@ -1,7 +1,7 @@
 ---
-title: "Teamtoegang"
-description: "Om te beheren wie toegang heeft tot je werkruimte: ga naar Instellingen > Toegang en boekhouder."
-last_verified: 2026-07-02
+title: Teamtoegang
+description: "To manage who has access to your workspace: go to Settings > Toegang en boekhouder (access and accountant)."
+last_verified: 2026-09-15
 chatbot:
   triggers:
     - "team access"
@@ -23,18 +23,22 @@ chatbot:
     - "teamleden"
     - "uitnodigen"
     - "werkruimte"
+    - "toegang en boekhouder"
   actions:
-    - { label: "Open access settings", to: "/settings/team" }
+    - { label: "Open access settings", to: "/settings/toegang" }
   follow_up:
     - "How do I set page permissions for a team member?"
     - "How do I manage accountant access?"
     - "How do I remove a team member?"
+    - "Which plan do I need to invite team members?"
+
 ---
 
-Om te beheren wie toegang heeft tot je werkruimte:
-1. Ga naar Instellingen → "Toegang en boekhouder"
-2. Bekijk de huidige leden en rollen in het onderdeel "Mensen met toegang"
-3. Gebruik "Iemand toegang geven" om een teamgenoot per e-mail uit te nodigen
-4. Open "Toegang beheren" of het tandwielicoon bij een lid om paginatoegang in te stellen
+To manage who has access to your workspace:
 
-Rechten beheer je per pagina met de opties Lezen, Schrijven en Aanmaken. Teamleden uitnodigen vereist het Pro-abonnement; het boekhoudergedeelte op dezelfde pagina is gratis op elk abonnement.
+1. Go to Settings → **Toegang en boekhouder** (access and accountant)
+2. Review current members and roles in the **Mensen met toegang** (people with access) section
+3. Click **Iemand toegang geven** (give someone access) to invite a teammate by email
+4. Click the **Toegang beheren** (manage access) button or gear icon on a member row to set page permissions
+
+Permissions are managed per page with Read, Write and Create options. Inviting team members requires the **Pro** plan; the accountant section on the same page is free on every plan.

@@ -1,122 +1,158 @@
 ---
-title: "Accès et comptable"
-description: "Donnez à un associé, un salarié ou votre comptable son propre accès, avec des droits par page et une page dédiée à votre comptable."
+title: Accès'et comptable
+description: "Give a partner, employee or your accountant their own login, with page permissions under Mensen met toegang and Je boekhouder for your accountant."
 last_verified: 2026-08-04
 ---
 
-# Accès et comptable
+# Access & accountant
 
-Donnez à un associé, un employé ou votre comptable accès à votre comptabilité. Chaque personne reçoit son propre identifiant. Dans l'application, ces paramètres sont répartis sur deux pages : **Personnes ayant accès** et **Votre comptable**.
+Give a partner, employee, or your accountant access to your books. Each person gets their own login. In the app these settings are split into two pages: **Mensen met toegang** (people with access) and **Je boekhouder** (your accountant).
 
-## Où le trouver
+## Where to find it
 
-Ouvrez **Paramètres** depuis le menu et choisissez l'une des deux pages :
+Open **Instellingen** (Settings) from the menu and choose one of:
 
-- **Personnes ayant accès** pour inviter des collègues et définir les permissions de page.
-- **Votre comptable** pour inviter votre comptable.
+- **Mensen met toegang** to invite teammates and set page permissions.
+- **Je boekhouder** to invite your accountant.
 
-Vous pouvez aussi naviguer directement vers `/settings/toegang` ou `/settings/boekhouder`. L'ancienne route d'application `/settings/team` redirige vers `/settings/toegang`. Cette page de documentation couvre les deux pages de l'application.
+You can also navigate directly to `/settings/toegang` or `/settings/boekhouder`. The old `/settings/team` app route redirects to `/settings/toegang`. This docs page covers both app pages.
 
-Les deux pages sont :
+The two pages are:
 
-- **Personnes ayant accès** : invitez des collègues et définissez ce qu'ils peuvent voir et faire. Cette page nécessite le plan Pro ; sur Free et Starter, une invitation à mettre à niveau s'affiche. Sur Pro, il n'y a pas de limite au nombre de personnes invitées.
-- **Votre comptable** : invitez votre comptable et gérez son accès. Cette page est gratuite sur tous les plans.
+- **Mensen met toegang** (people with access): invite teammates and manage what they can see and do. This page requires the Pro plan; Free and Starter workspaces see an upgrade prompt. On Pro there is no limit on the number of people you invite.
+- **Je boekhouder** (your accountant): invite your accountant and manage their access. This page is free on every plan.
 
-## Ce que contient la page
+## What's'on the page
 
-### Nom de l'espace de travail
+### Workspace name
 
-Une carte avec un seul champ. Le nom de l'espace de travail apparaît dans la navigation, sur les invitations et dans le menu de l'espace de travail dans la barre latérale. Seuls les administrateurs peuvent le modifier. Les modifications sont enregistrées automatiquement.
+A single-field card. The workspace name appears in the navigation, on invitations, and in the workspace menu in the sidebar. Only team admins can edit it. Changes save automatically.
 
-### Membres actuels
+### Current members
 
-Une liste de toutes les personnes pouvant se connecter. Chaque ligne affiche :
+A list of everyone who can sign in. Each row shows:
 
-- Un avatar avec initiales et un point de présence (vert en ligne, gris inactif, masqué si vous n'êtes pas administrateur)
-- Le nom et l'adresse e-mail
-- Le badge de rôle ou le sélecteur de rôle (administrateur uniquement)
-- Une icône de réglages qui ouvre le panneau **Gérer l'accès**
-- La dernière activité (« Actif il y a 2 minutes », « Vu hier »), administrateur uniquement
+- Avatar with initials and a presence dot (green online, grey idle, hidden if you're not an admin)
+- Name and email
+- rôle badge or rôle picker (admin only)
+- A settings icon that opens the **Manage access** drawer
+- Last activity ("Active 2 minutes ago", "Last seen yesterday"), admin only
 
-Si la liste est vide, la carte affiche l'état solo : vous travaillez seul, votre espace de travail est pleinement fonctionnel, et vous ajoutez des collègues quand vous êtes prêt.
+When the list is empty, the card shows the solo state: "You're working solo. Your workspace is fully functional. Add teammates when you're ready."
 
-### Donner accès à quelqu'un
+### Give someone access
 
-Les administrateurs saisissent une adresse e-mail et envoient l'invitation. Dans l'application, le bouton s'appelle **Iemand toegang geven** (donner accès à quelqu'un). L'invité reçoit un e-mail avec un lien ; s'il n'a pas encore de compte MyCompanyDesk, il en crée un au moment d'accepter. Les invitations en attente figurent dans une carte séparée avec l'heure d'envoi et un badge.
+Admins type an email address and send the invite. In the app the button is called **Iemand toegang geven** (give someone access). The invitee receives an email with a link; if they don't'have a MyCompanyDesk account they create one during acceptance. Pending invitations show in a separate **Pending invitations** card with a sent-at timestamp and a `Pending` badge.
 
-Les non-administrateurs voient à la place un message d'information : seuls les administrateurs peuvent inviter de nouveaux membres.
+Non-admins see an info banner instead: "Only team admins can invite new members."
 
-### Comptable
+### Accountant
 
-Une liste séparée pour les comptables externes, gratuite sur tous les plans. Votre comptable peut consulter vos chiffres et vérifier vos déclarations sans occuper une place d'équipe Pro. Chaque ligne affiche un statut :
+A separate list for external accountants, free on every plan. Your accountant can see your figures and check your returns without taking up a Pro team seat. Each row shows a status:
 
-| Badge | Signification |
+| Badge | Meaning |
 |---|---|
-| **Contact uniquement** | Dans votre carnet d'adresses, sans accès à l'application |
-| **Invité** | E-mail d'invitation envoyé, pas encore accepté |
-| **Activé** | Possède un compte et peut se connecter |
-| **Révoqué** | Accès retiré (peut être restauré plus tard) |
+| **Contact only** | In your address book, no app access |
+| **Invited** | Invitation email sent, not yet accepted |
+| **Activated** | Has an account and can sign in |
+| **Revoked** | Access removed (can be restored later) |
 
-Actions administrateur par ligne : **Inviter le comptable**, le panneau **Gérer l'accès** et **Supprimer**.
+Admin actions per row: **Invite accountant**, **Manage access** drawer, **Remove**.
 
-## Livraison automatique à votre comptable
+## Automatic delivery to your accountant
 
-Une fois un comptable connecté, vous pouvez faire en sorte que MyCompanyDesk livre automatiquement des enregistrements. L'export rassemble les factures de vente, les dépenses et les devis acceptés dans un format que le logiciel de votre comptable peut importer, afin que les chiffres n'aient pas à être ressaisis. Les chiffres de la déclaration de TVA ne sont pas inclus ; téléchargez-les en CSV depuis **Taxes → Déclaration de TVA**.
+Once an accountant is connected, you can have MyCompanyDesk deliver records to them automatically. The export bundles sales invoices, expenses and accepted quotes in a format your accountant's software can import, so the data does not have to be retyped. VAT return figures are not included; download those as CSV from **Taxes → VAT return**.
 
-Ouvrez la ligne du comptable dans **Paramètres → Votre comptable**, choisissez **Livraison automatique**, sélectionnez les flux à inclure (par exemple factures de vente, dépenses et les devis acceptés), le moment de déclenchement et le format. Un journal de livraison montre ce qui a été envoyé et quand.
+Open the accountant row in **Settings → Je boekhouder**, choose **Automatic delivery**, pick the streams you want to include (for example sales invoices, expenses and accepted quotes), the trigger moment, and the format. A delivery log shows what was sent and when.
 
-### Vue d'ensemble des activités du comptable
+### Accountant activity overview
 
-MyCompanyDesk conserve désormais une vue d'ensemble des activités pour chaque comptable connecté. Elle enregistre ce que le comptable a consulté ou modifié dans votre espace de travail, afin que vous puissiez toujours relire ce qui s'est passé. Cette vue est disponible dans la même ligne du comptable, à côté du journal de livraison.
+MyCompanyDesk now keeps an activity overview for each connected accountant. It records what the accountant viewed or changed while in your workspace, so you can always read back what happened. The overview is available in the same accountant row, next to the delivery log.
 
-<!-- TODO(source-missing): confirmer l'abonnement/entitlement qui débloque la livraison automatique et les formats/profils d'export supportés -->
+<!-- TODO(source-missing): confirm the exact entitlement that gates automatic delivery and the supported export formats/profiles -->
 
-## Rôles
+## rôles
 
-| Rôle | Description |
+| rôle | Description |
 |---|---|
-| **Administrateur** | Accès complet. Peut inviter et supprimer des membres, changer les rôles, gérer l'abonnement, modifier les paramètres de l'entreprise et gérer les domaines ainsi que le DNS. |
-| **Membre** | Accès à ce que l'administrateur accorde dans le panneau Gérer l'accès. |
-| **Comptable** | Un type de contact distinct. Reçoit l'accès via le parcours comptable plutôt que via l'invitation de membre. |
+| **Admin** | Full access. Can invite/remove members, change rôles, manage billing, edit company settings, and manage domains and DNS. |
+| **Member** | Access to whatever the admin grants in the Manage Access drawer. |
+| **Accountant** | A separate type of contact. Granted access via the accountant flow rather than the member invite. |
 
-Les rôles se changent directement sur la ligne du membre via un menu (administrateur uniquement). Vous ne pouvez pas changer votre propre rôle.
+rôles are toggled inline on the member row via a dropdown (admin only). You can't change your own rôle.
 
 ## Permissions
 
-Le panneau **Gérer l'accès** ouvre un tableau de permissions par page. Chaque ligne correspond à une section de l'application : Tableau de bord, Factures, Dépenses, Clients, Projets, Objets, Contrats, Devis, Locations, Rapports, Suivi du temps, Taxes (TVA) et Paramètres.
+The **Manage access** drawer opens a per-page permission table. Each row is one section of the app: Dashboard, Invoices, Expenses, Customers, Projects, Objects, Contracts, Quotes, Rentals, Reports, Time registration, Taxes (VAT), and Settings.
 
-Pour chaque page, trois interrupteurs indépendants :
+For each page, three independent toggles:
 
-- **Lecture** : voit la page et les enregistrements qu'elle contient
-- **Écriture** : peut modifier les enregistrements existants
-- **Création** : peut ajouter de nouveaux enregistrements
+| Toggle | App label | What it does |
+|---|---|---|
+| **Read** | Lezen | Sees the page and the records on it |
+| **Write** | Schrijven | Can edit existing records |
+| **Create** | Aanmaken | Can add new records |
 
-Le panneau affiche aussi un bandeau **Accès révoqué** pour les comptes suspendus (le bouton Restaurer les réactive).
+The drawer includes quick shortcuts:
 
-## Sécurité de connexion
+- **Volledige toegang** (Full access) turns Read, Write and Create on for every page.
+- **Alleen-lezen toegang** (Read-only access) turns Read on and Write/Create off for every page.
+- **Alles intrekken** (Revoke all) turns everything off.
 
-La sécurité de connexion de chaque personne se trouve sur son propre compte, sous **Paramètres** puis **Connexion**, et non sur cette page :
+Read must be on before Write or Create can work. Turning Read off also disables Write and Create for that page.
 
-- **Passkeys** : les membres peuvent enregistrer une ou plusieurs passkeys ; ensuite, le bouton passkey devient la méthode de connexion par défaut à la place du champ mot de passe.
-- **Vérification en deux étapes** : lorsqu'elle est activée, la connexion demande, après le mot de passe, un code à 6 chiffres provenant d'une application d'authentification.
+The drawer also has an **Access revoked** banner for accounts that have been suspended (the Restore button re-enables them).
 
-Les administrateurs ne peuvent pas gérer les passkeys ni la vérification en deux étapes d'un autre membre ; ce sont des identifiants personnels. Une personne bloquée utilise l'option de récupération sur l'écran de connexion pour les réinitialiser.
+## Sign-in security
 
-## Changer d'espace de travail
+Each person's sign-in security lives on their own account, under **Instellingen** (Settings) and then **Inloggen** (signing in), not on this page:
 
-Ouvrez le menu de l'espace de travail dans l'en-tête de la barre latérale pour passer d'un espace à l'autre, voir l'abonnement ou en créer un nouveau.
+- **Passkeys**: members can register one or more passkeys; once registered, sign-in defaults to the passkey button instead of the password field.
+- **Two-step vérification**: when enabled, signing in asks for a 6-digit code from an authenticator app after the password.
 
-Si vous avez accès à plus d'un espace de travail, le menu renvoie aussi vers la vue d'ensemble **Espaces de travail** sur `/werkruimtes`. Cette page liste tous les espaces que vous possédez ou gérez en tant que comptable, met en évidence les échéances et les éléments ouverts par espace, et vous permet d'ouvrir le bon espace en un clic.
+Admins cannot manage another member's passkeys or two-step vérification; those are personal credentials. A member who is locked out can use the account recovery option on the sign-in screen to reset them.
 
-## Plans en un coup d'œil
+## Switching workspaces
 
-| Possibilité | Free | Starter | Pro |
+Open the workspace menu in the sidebar header to jump between workspaces, open subscription détails, or create a new one.
+
+If you have access to more than one workspace, the menu also links to the **Workspaces** overview at `/werkruimtes`. That page lists every workspace you own or manage as an accountant, highlights deadlines and open items per workspace, and lets you open the right workspace in one click.
+
+## Plan gating quick référence
+
+| Capability | Free | Starter | Pro |
 |---|---|---|---|
-| Propriétaire uniquement | oui | oui | oui |
-| Inviter des membres d'équipe | non | non | oui (illimité) |
-| Accès comptable | oui | oui | oui |
+| Workspace owner only | yes | yes | yes |
+| Invite team members | no | no | yes (unlimited) |
+| Accountant access | yes | yes | yes |
 
-## Voir aussi
+## Member and accountant lifecycle
 
-- [Abonnement et paiements](/fr/settings/billing) pour débloquer les membres d'équipe
-- [Compte et sécurité](/fr/account/security) pour les passkeys et la vérification en deux étapes
+### Inviting someone
+
+Admins click **Iemand toegang geven** and enter an email address. If the invitee already has a MyCompanyDesk account, the existing empty workspace merges into your team; a workspace with data stays separate. Pending invitations appear in the **Openstaande uitnodigingen** card with a sent-at timestamp and an **In afwachting** badge. Admins can resend or cancel an invite from that card.
+
+By default, new team members get full Read and Write access to Invoices, Customers, Expenses and Reports. Adjust this after acceptance via **Toegang beheren** next to their name.
+
+### rôles
+
+- **Admin** (Beheerder): full access, can invite and remove members, change rôles, manage billing, edit company settings and manage domains.
+- **Member** (Lid): access only to the pages granted in the Manage access drawer.
+- **Owner** (Eigenaar): the workspace owner can be changed with the **Eigenaar maken** action; customer emails are then sent via the new owner's'account.
+
+You cannot change your own rôle.
+
+### Removing or leaving
+
+- **Uit team verwijderen** (remove from team) removes a member. Their invoices, hours and notes stay in the workspace.
+- **Dit team verlaten** (leave team) is available to members. After leaving, they return to their own workspace and lose access to this one.
+- **Toegang intrekken** (revoke access) and **Toegang herstellen** (restore access) suspend or re-enable an account without deleting history.
+
+### Access revoked screen
+
+If a person's'access to a workspace is revoked, the app shows a screen with the title **Geen toegang meer** and the message that their access has been revoked. They can contact the workspace admin or switch to another workspace.
+
+## Related
+
+- [Plan & payments](/en/settings/billing) to unlock team members
+- [Account & security](/en/account/security) for passkey and two-step vérification setup

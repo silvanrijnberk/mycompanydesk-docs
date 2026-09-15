@@ -87,9 +87,19 @@ The **Manage access** drawer opens a per-page permission table. Each row is one 
 
 For each page, three independent toggles:
 
-- **Read**: sees the page and the records on it
-- **Write**: can edit existing records
-- **Create**: can add new records
+| Toggle | App label | What it does |
+|---|---|---|
+| **Read** | Lezen | Sees the page and the records on it |
+| **Write** | Schrijven | Can edit existing records |
+| **Create** | Aanmaken | Can add new records |
+
+The drawer includes quick shortcuts:
+
+- **Volledige toegang** (Full access) turns Read, Write and Create on for every page.
+- **Alleen-lezen toegang** (Read-only access) turns Read on and Write/Create off for every page.
+- **Alles intrekken** (Revoke all) turns everything off.
+
+Read must be on before Write or Create can work. Turning Read off also disables Write and Create for that page.
 
 The drawer also has an **Access revoked** banner for accounts that have been suspended (the Restore button re-enables them).
 
@@ -115,6 +125,32 @@ If you have access to more than one workspace, the menu also links to the **Work
 | Workspace owner only | yes | yes | yes |
 | Invite team members | no | no | yes (unlimited) |
 | Accountant access | yes | yes | yes |
+
+## Member and accountant lifecycle
+
+### Inviting someone
+
+Admins click **Iemand toegang geven** and enter an email address. If the invitee already has a MyCompanyDesk account, the existing empty workspace merges into your team; a workspace with data stays separate. Pending invitations appear in the **Openstaande uitnodigingen** card with a sent-at timestamp and an **In afwachting** badge. Admins can resend or cancel an invite from that card.
+
+By default, new team members get full Read and Write access to Invoices, Customers, Expenses and Reports. Adjust this after acceptance via **Toegang beheren** next to their name.
+
+### Roles
+
+- **Admin** (Beheerder): full access, can invite and remove members, change roles, manage billing, edit company settings and manage domains.
+- **Member** (Lid): access only to the pages granted in the Manage access drawer.
+- **Owner** (Eigenaar): the workspace owner can be changed with the **Eigenaar maken** action; customer emails are then sent via the new owner's account.
+
+You cannot change your own role.
+
+### Removing or leaving
+
+- **Uit team verwijderen** (remove from team) removes a member. Their invoices, hours and notes stay in the workspace.
+- **Dit team verlaten** (leave team) is available to members. After leaving, they return to their own workspace and lose access to this one.
+- **Toegang intrekken** (revoke access) and **Toegang herstellen** (restore access) suspend or re-enable an account without deleting history.
+
+### Access revoked screen
+
+If a person's access to a workspace is revoked, the app shows a screen with the title **Geen toegang meer** and the message that their access has been revoked. They can contact the workspace admin or switch to another workspace.
 
 ## Related
 

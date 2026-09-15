@@ -1,82 +1,86 @@
 ---
-title: Unternehmenseinstellungen
-description: "Der Name auf Ihren Rechnungen, Adresse, Handelsregisternummer, Logo, Markenfarbe, Website und Öffnungszeiten, gebündelt in den Einstellungen."
+title: Firmeneinstellungen
+description: "The name on your invoices, address, KvK, logo, brand colour, website and opening hours, grouped in Settings."
 last_verified: 2026-09-03
 ---
 
-# Unternehmenseinstellungen
+# Company Settings
 
-Alles, was bestimmt, wie Ihr Unternehmen nach außen wirkt: der Name auf Ihren Rechnungen, Ihr Logo und Ihre Markenfarbe, Ihre öffentliche Website und Ihre Öffnungszeiten.
+Everything that defines how your business looks to the outside world: the name on your invoices, your logo and brand colour, your public website, and your opening hours.
 
-## Wo Sie es finden
+## Where to find it
 
-Öffnen Sie **Einstellungen** über das Menü oder gehen Sie zu `/settings`. Unternehmensthemen sind Zeilen in der Gruppe **Ihr Unternehmen** (in der App: "Je bedrijf"):
+Open **Instellingen** (Settings) from the menu, or go to `/settings`. Company topics are rows in the **Je bedrijf** (your business) group:
 
-- **Unternehmensdaten** (Bedrijfsgegevens) unter `/settings/bedrijfsgegevens`: Firmendaten, Adresse, KVK-Nummer, USt.-Nummer, Öffnungszeiten
-- **Logo und Farbe** (Logo en kleur) unter `/settings/uiterlijk`: Logo, Markenfarbe, Dokumentstil
-- **Rechnungsdesign** (Factuurontwerp) unter `/settings/factuurontwerp`: das Designstudio für Ihre Rechnungen, beschrieben unter [PDF-Anpassung](/de/settings/pdf)
+- **Bedrijfsgegevens** (business details) at `/settings/bedrijfsgegevens`: company info, address, KvK number, VAT number, opening hours
+- **Logo en kleur** (logo and colour) at `/settings/uiterlijk`: logo, brand colour, document styling
+- **Factuurontwerp** (invoice design) at `/settings/factuurontwerp`: the invoice design studio, covered on [PDF Customization](/en/settings/pdf)
 
-Alte Links zu den früheren Arbeitsbereich-Einstellungen leiten automatisch auf die neuen Seiten weiter.
+Old links to the previous workspace settings pages redirect to the new locations automatically.
 
-## Unternehmensdaten (Bedrijfsgegevens)
+## Business details (Bedrijfsgegevens)
 
-Pfad: `/settings/bedrijfsgegevens`
+Path: `/settings/bedrijfsgegevens`
 
-Das Identitätsformular. Was jede Rechnung, jedes Angebot und jede E-Mail zeigt.
+The identity form. What every invoice, quote, and email shows.
 
-- **Firmenname**: erscheint auf jedem Dokument
-- **Adresse**: Straße, Postleitzahl, Stadt, Land (mit Adress-Autovervollständigung)
-- **Registrierung**: KVK-Nummer oder andere Registrierungsnummer. Die Schaltfläche **Aus KVK aktualisieren** ruft die aktuellsten Daten aus dem niederländischen Handelsregister ab und füllt leere Felder aus (Firmenname, Adresse, Postleitzahl, Stadt, Land). Bereits von Ihnen eingetragene Werte bleiben erhalten. Jeder Arbeitsbereich erhält 100 kostenlose KVK-Abrufe pro Tag (zwischengespeicherte Ergebnisse zählen nicht zum Limit). Bei 20 oder weniger verbleibenden Abrufen zeigt der Feldhinweis einen Zähler, wie viele noch übrig sind. Wenn die Tagesgrenze erreicht ist, können Sie die Daten manuell eingeben oder es morgen erneut versuchen.
-- **USt.-Nummer**: Ihre Umsatzsteuernummer (z. B. `NL123456789B01`)
-- **Kontakt**: öffentliche E-Mail-Adresse, Telefon, Support-E-Mail-Adresse, Zeitzone
-- **Website + Social Media**: verwendet in der E-Mail-Signatur, auf Ihrer Unternehmensseite und in Fußzeilen
+- **Business name**: appears on every document
+- **Address**: street, postal code, city, country (with address autocomplete)
+- **Registration**: KvK or other registration number. The **Refresh from KVK** button pulls the latest data from the Dutch Chamber of Commerce registry and fills any blank fields (business name, address, postal code, city, country). It never overwrites values you already set. Each workspace gets 100 free KVK lookups per day (cached results do not count toward the limit). When 20 or fewer lookups remain, the field hint switches to a counter showing how many are left. If the daily cap is reached, the button is disabled until the next day or you can enter the data manually.
+- **Tax ID**: VAT number (e.g. `NL123456789B01`)
+- **Contact**: public email, phone, support email, timezone
+- **Website + social**: used by the email signature, business page, and footers
 
-Änderungen werden automatisch gespeichert.
+Changes save automatically.
 
-## Öffnungszeiten
+## Opening hours
 
-Pfad: `/settings/bedrijfsgegevens#openingstijden`
+Path: `/settings/bedrijfsgegevens#openingstijden`
 
-Hier verwalten Sie eine zentrale Quelle für Ihre Öffnungszeiten. Dieselben Zeiten speisen Ihre Website und den Online-Terminblock, sodass Sie nie zwei Stellen synchron halten müssen.
+From here you manage one central source for your opening hours. The same hours feed your website and the online appointments block, so you never have to keep two places in sync.
 
-**Wochenschema**
+**Weekly schedule**
 
-- Legen Sie pro Tag fest, ob Ihr Unternehmen **geöffnet** oder **geschlossen** ist.
-- Für einen geöffneten Tag geben Sie einen oder zwei Zeiträume an, zum Beispiel `09:00 – 12:00` und `13:00 – 17:00`.
-- Ein nicht konfigurierter Tag fällt für Website und Terminblock auf Bürozeiten (`09:00 – 17:00`) zurück.
-- Sie können einen Tag auch auf **nach Vereinbarung** setzen, sodass er ohne feste Zeiten als geöffnet erscheint.
+- Set each day as **open** or **closed**.
+- For an open day, enter one or two time blocks, for example `09:00 - 12:00` and `13:00 - 17:00`.
+- A day you do not configure falls back to office hours (`09:00 - 17:00`) for your site and booking block.
+- You can also set a day to **by appointment** so it appears open without fixed times.
 
-**Sonderöffnungszeiten**
+**Special days**
 
-- Fügen Sie einzelne Daten für Feiertage, Urlaub oder einmalige Änderungen hinzu.
-- Pro Sonderdatum wählen Sie **geschlossen**, **nach Vereinbarung** oder einen **angepassten Zeitraum**.
-- Der Online-Terminblock und Ihre Website berücksichtigen diese Ausnahmen.
+- Add individual dates for holidays, vacations, or one-off changes.
+- For each special day choose **closed**, **by appointment**, or a **custom time block**.
+- The online appointments block and your website respect these exceptions.
 
-Änderungen werden automatisch gespeichert. Siehe [Online-Termine](/de/features/site-bookings) für die Verwendung Ihrer Öffnungszeiten im Terminblock.
+**Public website and appointments**
 
-## Logo und Farbe (Logo en kleur)
+Your opening hours are shown on the public business page and in the online appointments block. The website tab is managed under the top-level **Website** area; the booking block is covered on [Online appointments](/en/features/site-bookings). Both pull from the same source, so a change here updates both places.
 
-Pfad: `/settings/uiterlijk`
+Changes save automatically. See [Online appointments](/en/features/site-bookings) for how the booking block uses your opening hours.
 
-Das Branding für Rechnungen, Angebote und ausgehende E-Mails, mit einer Live-Vorschau des Ergebnisses.
+## Logo and colour (Logo en kleur)
 
-- **Logo hochladen**: wird auf jeder PDF und im E-Mail-Kopf verwendet
-- **Markenfarbe**: eine Akzentfarbe für alle Ihre Dokumente und Ihre öffentliche Unternehmensseite
-- **Stilvorlagen**: wählen Sie einen Dokumentstil, verfügbar ab Starter
-- **PDF-Fußzeile**: der Fußzeilentext unten auf Ihren Dokumenten
+Path: `/settings/uiterlijk`
 
-Es gibt einen Stil und eine Markenfarbe für alle Dokumenttypen; eine zweite Akzentfarbe existiert nicht mehr. Für volle Kontrolle über Layout, Farben und Schriftart Ihrer Rechnungen und Angebote öffnen Sie die Zeile **Rechnungsdesign** (das Designstudio); siehe [PDF-Anpassung](/de/settings/pdf).
+Branding for invoices, quotes, and outgoing email, with a live preview of the result.
 
-## Ihre Website
+- **Logo upload**: used on every PDF and email header
+- **Brand colour**: one accent colour across your documents and public business page
+- **Style presets**: pick a document style, available on Starter and up
+- **PDF footer**: the footer text at the bottom of your documents
 
-Ihre öffentliche Unternehmensseite verwalten Sie im eigenständigen Bereich **Website** in der Navigation, nicht unter Einstellungen. Es ist ein Dashboard mit sechs Tabs: Übersicht, Besucher, Auffindbarkeit, Verknüpfungen, Domain & E-Mail und Einstellungen. Der Site-Editor wird über **Website bearbeiten** geöffnet.
+There is one style and one brand colour for all document types; a second accent colour no longer exists. For full control over the layout, colours, and font of your invoices and quotes, open the **Factuurontwerp** row (the invoice design studio); see [PDF Customization](/en/settings/pdf).
 
-- Die Website ist ab dem Starter-Tarif verfügbar.
-- Das Verbinden einer eigenen Domain, anstelle der Standard-Subdomain auf `mycompanydesk.com`, erfordert Pro. DNS-, SPF- und DKIM-Einträge werden für Sie verwaltet; sie liegen hinter einem Erweitert-Bereich, den die meisten Nutzer nie öffnen müssen.
+## Your website
 
-## Verwandte Themen
+Your public business page is managed in the top-level **Website** area of the app, not under Settings. It is a dashboard with six tabs: Overview, Visitors, Findability, Connections, Domain & email, and Settings. The site editor opens from **Edit site**.
 
-- [PDF-Anpassung](/de/settings/pdf) für das Designstudio Rechnungsdesign
-- [Tarif und Zahlungen](/de/settings/billing), um eine eigene Domain freizuschalten
-- [E-Mail-Einrichtung](/de/settings/email), um von Ihrer eigenen Domain zu versenden
-- Der Einrichtungsassistent unter `/setup` führt neue Arbeitsbereiche in einem Durchlauf durch diese Einstellungen
+- The website is available from the Starter plan.
+- Connecting your own domain, replacing the default `mycompanydesk.com` subdomain, requires Pro. DNS, SPF, and DKIM records are managed for you, tucked behind an advanced strip most users never need to open.
+
+## Related
+
+- [PDF Customization](/en/settings/pdf) for the Factuurontwerp design studio
+- [Plan & payments](/en/settings/billing) to unlock the custom domain
+- [Email setup](/en/settings/email) for sending from your own domain
+- The setup wizard at `/setup` walks new workspaces through these settings in one flow

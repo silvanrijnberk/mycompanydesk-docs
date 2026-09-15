@@ -1,122 +1,158 @@
 ---
-title: Zugang und Steuerberater
-description: "Geben Sie Partner, Mitarbeitenden oder Ihrem Steuerberater einen eigenen Zugang, mit Seitenrechten pro Person und einer eigenen Steuerberater-Seite."
+title: Zugriff und Buchhalter
+description: "Give a partner, employee or your accountant their own login, with page permissions under Mensen met toegang and Je boekhouder for your accountant."
 last_verified: 2026-08-04
 ---
 
-# Zugang und Steuerberater
+# Access & accountant
 
-Geben Sie einem Partner, Mitarbeiter oder Ihrem Steuerberater Zugang zu Ihrer Buchhaltung. Jede Person erhält einen eigenen Login. In der App sind diese Einstellungen auf zwei Seiten aufgeteilt: **Personen mit Zugang** und **Ihr Steuerberater**.
+Give a partner, employee, or your accountant access to your books. Each person gets their own login. In the app these settings are split into two pages: **Mensen met toegang** (people with access) and **Je boekhouder** (your accountant).
 
-## Wo Sie es finden
+## Where to find it
 
-Öffnen Sie **Einstellungen** über das Menü und wählen Sie eine der beiden Seiten:
+Open **Instellingen** (Settings) from the menu and choose one of:
 
-- **Personen mit Zugang**, um Teamkollegen einzuladen und Seitenberechtigungen festzulegen.
-- **Ihr Steuerberater**, um Ihren Steuerberater einzuladen.
+- **Mensen met toegang** to invite teammates and set page permissions.
+- **Je boekhouder** to invite your accountant.
 
-Sie können auch direkt zu `/settings/toegang` oder `/settings/boekhouder` gehen. Die alte App-Route `/settings/team` leitet auf `/settings/toegang` weiter. Diese Docs-Seite beschreibt beide App-Seiten.
+You can also navigate directly to `/settings/toegang` or `/settings/boekhouder`. The old `/settings/team` app route redirects to `/settings/toegang`. This docs page covers both app pages.
 
-Die beiden Seiten sind:
+The two pages are:
 
-- **Personen mit Zugang**: Laden Sie Teamkollegen ein und legen Sie fest, was sie sehen und tun können. Diese Seite erfordert den Pro-Tarif; auf Free und Starter erscheint ein Upgrade-Hinweis. Auf Pro gibt es keine Begrenzung der Anzahl eingeladener Personen.
-- **Ihr Steuerberater**: Laden Sie Ihren Steuerberater ein und verwalten Sie dessen Zugang. Diese Seite ist in jedem Tarif kostenlos.
+- **Mensen met toegang** (people with access): invite teammates and manage what they can see and do. This page requires the Pro plan; Free and Starter workspaces see an upgrade prompt. On Pro there is no limit on the number of people you invite.
+- **Je boekhouder** (your accountant): invite your accountant and manage their access. This page is free on every plan.
 
-## Was auf der Seite steht
+## What's on the page
 
-### Name des Arbeitsbereichs
+### Workspace name
 
-Eine Karte mit einem einzigen Feld. Der Name des Arbeitsbereichs erscheint in der Navigation, auf Einladungen und im Arbeitsbereich-Menü in der Seitenleiste. Nur Team-Admins können ihn bearbeiten. Änderungen werden automatisch gespeichert.
+A single-field card. The workspace name appears in the navigation, on invitations, and in the workspace menu in the sidebar. Only team admins can edit it. Changes save automatically.
 
-### Aktuelle Mitglieder
+### Current members
 
-Eine Liste aller Personen, die sich anmelden können. Jede Zeile zeigt:
+A list of everyone who can sign in. Each row shows:
 
-- Avatar mit Initialen und einem Anwesenheitspunkt (grün online, grau inaktiv, ausgeblendet, wenn Sie kein Admin sind)
-- Name und E-Mail-Adresse
-- Rollen-Badge oder Rollenauswahl (nur Admin)
-- Ein Einstellungssymbol, das das Panel **Zugang verwalten** öffnet
-- Letzte Aktivität ("Vor 2 Minuten aktiv", "Gestern zuletzt gesehen"), nur Admin
+- Avatar with initials and a presence dot (green online, grey idle, hidden if you're not an admin)
+- Name and email
+- Role badge or role picker (admin only)
+- A settings icon that opens the **Manage access** drawer
+- Last activity ("Active 2 minutes ago", "Last seen yesterday"), admin only
 
-Ist die Liste leer, zeigt die Karte den Solo-Zustand: Sie arbeiten allein, Ihr Arbeitsbereich ist voll funktionsfähig, und Sie fügen Teamkollegen hinzu, wann immer Sie bereit sind.
+When the list is empty, the card shows the solo state: "You're working solo. Your workspace is fully functional. Add teammates when you're ready."
 
-### Jemandem Zugang geben
+### Give someone access
 
-Admins geben eine E-Mail-Adresse ein und senden die Einladung. In der App heißt die Schaltfläche **Iemand toegang geven** (jemandem Zugang geben). Der Eingeladene erhält eine E-Mail mit einem Link; wer noch kein MyCompanyDesk-Konto hat, erstellt beim Annehmen eines. Ausstehende Einladungen erscheinen in einer separaten Karte mit Sendezeitpunkt und einem Badge.
+Admins type an email address and send the invite. In the app the button is called **Iemand toegang geven** (give someone access). The invitee receives an email with a link; if they don't have a MyCompanyDesk account they create one during acceptance. Pending invitations show in a separate **Pending invitations** card with a sent-at timestamp and a `Pending` badge.
 
-Nicht-Admins sehen stattdessen einen Hinweis: Nur Team-Admins können neue Mitglieder einladen.
+Non-admins see an info banner instead: "Only team admins can invite new members."
 
-### Steuerberater
+### Accountant
 
-Eine separate Liste für externe Steuerberater, in jedem Tarif kostenlos. Ihr Steuerberater kann Ihre Zahlen einsehen und Ihre Abgaben prüfen, ohne einen Pro-Teamplatz zu belegen. Jede Zeile zeigt einen Status:
+A separate list for external accountants, free on every plan. Your accountant can see your figures and check your returns without taking up a Pro team seat. Each row shows a status:
 
-| Badge | Bedeutung |
+| Badge | Meaning |
 |---|---|
-| **Nur Kontakt** | In Ihrem Adressbuch, kein App-Zugang |
-| **Eingeladen** | Einladungs-E-Mail gesendet, noch nicht angenommen |
-| **Aktiviert** | Hat ein Konto und kann sich anmelden |
-| **Widerrufen** | Zugang entfernt (kann später wiederhergestellt werden) |
+| **Contact only** | In your address book, no app access |
+| **Invited** | Invitation email sent, not yet accepted |
+| **Activated** | Has an account and can sign in |
+| **Revoked** | Access removed (can be restored later) |
 
-Admin-Aktionen pro Zeile: **Steuerberater einladen**, das Panel **Zugang verwalten** und **Entfernen**.
+Admin actions per row: **Invite accountant**, **Manage access** drawer, **Remove**.
 
-## Automatische Zustellung an Ihren Steuerberater
+## Automatic delivery to your accountant
 
-Sobald ein Steuerberater verknüpft ist, können Sie MyCompanyDesk automatisch Datensätze zustellen lassen. Der Export bündelt Verkaufsrechnungen, Ausgaben und akzeptierte Angebote in einem Format, das die Software Ihres Steuerberaters einlesen kann, sodass die Zahlen nicht neu eingetippt werden müssen. USt.-Erklärungszahlen sind nicht enthalten; laden Sie diese als CSV unter **Steuern → USt.-Erklärung** herunter.
+Once an accountant is connected, you can have MyCompanyDesk deliver records to them automatically. The export bundles sales invoices, expenses and accepted quotes in a format your accountant's software can import, so the data does not have to be retyped. VAT return figures are not included; download those as CSV from **Taxes → VAT return**.
 
-Öffnen Sie die Zeile des Steuerberaters unter **Einstellungen → Ihr Steuerberater**, wählen Sie **Automatisch zustellen**, legen Sie fest, welche Bereiche enthalten sein sollen (zum Beispiel Verkaufsrechnungen, Ausgaben und akzeptierte Angebote), den Auslöserzeitpunkt und das Format. Ein Zustellungsprotokoll zeigt, was wann gesendet wurde.
+Open the accountant row in **Settings → Je boekhouder**, choose **Automatic delivery**, pick the streams you want to include (for example sales invoices, expenses and accepted quotes), the trigger moment, and the format. A delivery log shows what was sent and when.
 
-### Aktivitätsübersicht des Steuerberaters
+### Accountant activity overview
 
-MyCompanyDesk führt für jeden verknüpften Steuerberater eine Aktivitätsübersicht. Darin wird erfasst, was der Steuerberater in Ihrem Arbeitsbereich angesehen oder geändert hat, sodass Sie jederzeit nachlesen können, was passiert ist. Die Übersicht befindet sich in derselben Steuerberater-Zeile, neben dem Zustellungsprotokoll.
+MyCompanyDesk now keeps an activity overview for each connected accountant. It records what the accountant viewed or changed while in your workspace, so you can always read back what happened. The overview is available in the same accountant row, next to the delivery log.
 
-<!-- TODO(source-missing): Bestätigung des Tarifs/Entitlements, das automatisches Zustellen freischaltet, und der unterstützten Exportformate/Profile -->
+<!-- TODO(source-missing): confirm the exact entitlement that gates automatic delivery and the supported export formats/profiles -->
 
-## Rollen
+## Roles
 
-| Rolle | Beschreibung |
+| Role | Description |
 |---|---|
-| **Admin** | Vollzugriff. Kann Mitglieder einladen und entfernen, Rollen ändern, das Abonnement verwalten, Unternehmenseinstellungen bearbeiten und Domains sowie DNS verwalten. |
-| **Mitglied** | Zugriff auf das, was der Admin im Panel Zugang verwalten freigibt. |
-| **Steuerberater** | Ein eigener Kontakttyp. Erhält Zugang über den Steuerberater-Ablauf statt über die Mitgliedereinladung. |
+| **Admin** | Full access. Can invite/remove members, change roles, manage billing, edit company settings, and manage domains and DNS. |
+| **Member** | Access to whatever the admin grants in the Manage Access drawer. |
+| **Accountant** | A separate type of contact. Granted access via the accountant flow rather than the member invite. |
 
-Rollen werden direkt in der Mitgliederzeile über ein Menü umgeschaltet (nur Admin). Ihre eigene Rolle können Sie nicht ändern.
+Roles are toggled inline on the member row via a dropdown (admin only). You can't change your own role.
 
-## Berechtigungen
+## Permissions
 
-Das Panel **Zugang verwalten** öffnet eine Berechtigungstabelle pro Seite. Jede Zeile ist ein Bereich der App: Dashboard, Rechnungen, Ausgaben, Kunden, Projekte, Objekte, Verträge, Angebote, Vermietung, Berichte, Zeiterfassung, Steuern (USt) und Einstellungen.
+The **Manage access** drawer opens a per-page permission table. Each row is one section of the app: Dashboard, Invoices, Expenses, Customers, Projects, Objects, Contracts, Quotes, Rentals, Reports, Time registration, Taxes (VAT), and Settings.
 
-Für jede Seite gibt es drei unabhängige Schalter:
+For each page, three independent toggles:
 
-- **Lesen**: sieht die Seite und die Einträge darauf
-- **Schreiben**: kann bestehende Einträge bearbeiten
-- **Erstellen**: kann neue Einträge hinzufügen
+| Toggle | App label | What it does |
+|---|---|---|
+| **Read** | Lezen | Sees the page and the records on it |
+| **Write** | Schrijven | Can edit existing records |
+| **Create** | Aanmaken | Can add new records |
 
-Das Panel zeigt außerdem einen Hinweis **Zugang widerrufen** für gesperrte Konten (die Wiederherstellen-Schaltfläche aktiviert sie erneut).
+The drawer includes quick shortcuts:
 
-## Anmeldesicherheit
+- **Volledige toegang** (Full access) turns Read, Write and Create on for every page.
+- **Alleen-lezen toegang** (Read-only access) turns Read on and Write/Create off for every page.
+- **Alles intrekken** (Revoke all) turns everything off.
 
-Die Anmeldesicherheit jedes Mitglieds liegt beim eigenen Konto, unter **Einstellungen** und dann **Anmeldung**, nicht auf dieser Seite:
+Read must be on before Write or Create can work. Turning Read off also disables Write and Create for that page.
 
-- **Passkeys**: Mitglieder können einen oder mehrere Passkeys registrieren; danach ist die Passkey-Schaltfläche der Standardweg zur Anmeldung statt des Passwortfelds.
-- **Zwei-Schritt-Verifizierung**: Ist sie aktiviert, fragt die Anmeldung nach dem Passwort nach einem 6-stelligen Code aus einer Authenticator-App.
+The drawer also has an **Access revoked** banner for accounts that have been suspended (the Restore button re-enables them).
 
-Admins können die Passkeys oder Zwei-Schritt-Verifizierung eines anderen Mitglieds nicht verwalten; das sind persönliche Zugangsdaten. Wer ausgesperrt ist, nutzt die Wiederherstellungsoption auf dem Anmeldebildschirm, um sie zurückzusetzen.
+## Sign-in security
 
-## Arbeitsbereiche wechseln
+Each person's sign-in security lives on their own account, under **Instellingen** (Settings) and then **Inloggen** (signing in), not on this page:
 
-Öffnen Sie das Arbeitsbereich-Menü im Kopf der Seitenleiste, um zwischen Arbeitsbereichen zu wechseln, das Abonnement anzusehen oder einen neuen anzulegen.
+- **Passkeys**: members can register one or more passkeys; once registered, sign-in defaults to the passkey button instead of the password field.
+- **Two-step verification**: when enabled, signing in asks for a 6-digit code from an authenticator app after the password.
 
-Wenn Sie Zugriff auf mehr als einen Arbeitsbereich haben, verlinkt das Menü auch zur Übersicht **Arbeitsbereiche** unter `/werkruimtes`. Diese Seite listet alle Arbeitsbereiche, die Sie besitzen oder als Steuerberater verwalten, hebt Fristen und offene Posten pro Arbeitsbereich hervor und lässt Sie den richtigen Arbeitsbereich mit einem Klick öffnen.
+Admins cannot manage another member's passkeys or two-step verification; those are personal credentials. A member who is locked out can use the account recovery option on the sign-in screen to reset them.
 
-## Tarife im Überblick
+## Switching workspaces
 
-| Möglichkeit | Free | Starter | Pro |
+Open the workspace menu in the sidebar header to jump between workspaces, open subscription details, or create a new one.
+
+If you have access to more than one workspace, the menu also links to the **Workspaces** overview at `/werkruimtes`. That page lists every workspace you own or manage as an accountant, highlights deadlines and open items per workspace, and lets you open the right workspace in one click.
+
+## Plan gating quick reference
+
+| Capability | Free | Starter | Pro |
 |---|---|---|---|
-| Nur der Inhaber | ja | ja | ja |
-| Teammitglieder einladen | nein | nein | ja (unbegrenzt) |
-| Steuerberater-Zugang | ja | ja | ja |
+| Workspace owner only | yes | yes | yes |
+| Invite team members | no | no | yes (unlimited) |
+| Accountant access | yes | yes | yes |
 
-## Verwandte Themen
+## Member and accountant lifecycle
 
-- [Tarif und Zahlungen](/de/settings/billing), um Teammitglieder freizuschalten
-- [Konto und Sicherheit](/de/account/security) für Passkeys und Zwei-Schritt-Verifizierung
+### Inviting someone
+
+Admins click **Iemand toegang geven** and enter an email address. If the invitee already has a MyCompanyDesk account, the existing empty workspace merges into your team; a workspace with data stays separate. Pending invitations appear in the **Openstaande uitnodigingen** card with a sent-at timestamp and an **In afwachting** badge. Admins can resend or cancel an invite from that card.
+
+By default, new team members get full Read and Write access to Invoices, Customers, Expenses and Reports. Adjust this after acceptance via **Toegang beheren** next to their name.
+
+### Roles
+
+- **Admin** (Beheerder): full access, can invite and remove members, change roles, manage billing, edit company settings and manage domains.
+- **Member** (Lid): access only to the pages granted in the Manage access drawer.
+- **Owner** (Eigenaar): the workspace owner can be changed with the **Eigenaar maken** action; customer emails are then sent via the new owner's account.
+
+You cannot change your own role.
+
+### Removing or leaving
+
+- **Uit team verwijderen** (remove from team) removes a member. Their invoices, hours and notes stay in the workspace.
+- **Dit team verlaten** (leave team) is available to members. After leaving, they return to their own workspace and lose access to this one.
+- **Toegang intrekken** (revoke access) and **Toegang herstellen** (restore access) suspend or re-enable an account without deleting history.
+
+### Access revoked screen
+
+If a person's access to a workspace is revoked, the app shows a screen with the title **Geen toegang meer** and the message that their access has been revoked. They can contact the workspace admin or switch to another workspace.
+
+## Related
+
+- [Plan & payments](/en/settings/billing) to unlock team members
+- [Account & security](/en/account/security) for passkey and two-step verification setup

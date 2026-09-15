@@ -1,107 +1,123 @@
 ---
 title: Tableau de bord
-description: "L'écran d'accueil de votre espace : salutation, sélecteur de période, résumé des indicateurs, widget d'alerte et blocs conditionnels."
+description: "Het startscherm van je werkruimte: begroeting, sélecteur de période, KPI-overzicht, aandachtswidget en blokken die alleen verschijnen bij nuttige cijfers."
 last_verified: 2026-09-01
 ---
 
-# Tableau de bord
+# Dashboard
 
-Le tableau de bord sur `/dashboard` est l'écran d'accueil de votre espace de travail. Il répond à une question : comment va votre entreprise en ce moment ? Vous y voyez une salutation avec le moment de la journée et votre prénom, un sélecteur de période, une rangée de cinq tuiles d'indicateurs, un court widget d'attention et plusieurs blocs de données qui n'apparaissent que si vos données indiquent qu'ils sont utiles.
+Het dashboard op `/dashboard` is het startscherm van je werkruimte. Het beantwoordt een vraag: hoe staat je bedrijf er nu voor? Je ziet een begroeting met dagdeel en voornaam, een sélecteur de période, een rij met vijf KPI-tegels, een kort aandacht-widget en een aantal datablokken die alleen verschijnen als je bedrijfsdata aangeeft dat ze nuttig zijn.
 
-## Structure
+## Opbouw
 
-La page est constituée d'un catalogue fixe de blocs dans une vue scrollable unique. L'ordre ne change jamais, mais un bloc ne s'affiche que si vos données franchissent le seuil. Une entreprise simple voit donc une page plus courte, et non des espaces vides.
+De pagina bestaat uit een vaste catalogus van blokken in een enkele scrollbare weergave. De volgorde verandert nooit, maar een blok wordt alleen getoond als je data de drempel haalt. Een eenvoudig bedrijf krijgt dus een kortere pagina, geen lege plekken.
 
-En haut se trouvent la salutation, le sélecteur de période et la rangée d'indicateurs. Sous celle-ci vient le widget d'attention, puis des blocs d'appoint comme la tendance, l'âge des créances, les sources de revenus, le pipeline de devis, le mix de dépenses, le graphique de trésorerie, la carte TVA et l'activité récente.
+Bovenaan staan de begroeting, de sélecteur de période en de KPI-rij. Daaronder komt het aandacht-widget en het blok **Voor jou**, gevolgd door ondersteunende blokken zoals de trendgrafiek, ageing, omzetbronnen, offertepijplijn, uitgavenmix, cash-grafiek, btw-kaart en recente activiteit.
 
-## Salutation
+## Begroeting
 
-Au-dessus des chiffres figure une salutation en fonction du moment de la journée, avec votre prénom et la date du jour. En français, le nom du mois s'écrit en minuscule.
+Boven de cijfers staat een begroeting op basis van het dagdeel, samen met je voornaam en de huidige datum. De maandnaam wordt in het Nederlands zonder hoofdletter geschreven.
 
-## Sélecteur de période
+## sélecteur de période
 
-Tous les chiffres de la rangée d'indicateurs et les calculs de rythme suivent la période choisie. Vous choisissez entre **mois**, **trimestre** et **année**. Le graphique de tendance reste toujours sur 12 mois, pour que la comparaison reste honnête.
+Alle getallen in de KPI-rij en in de tempo-berekeningen volgen de gekozen période. Je kiest tussen **maand**, **kwartaal** en **jaar**. De trendgrafiek blijft altijd 12 maanden breed, zodat de vergelijking eerlijk blijft.
 
-## Rangée d'indicateurs
+## KPI-rij
 
-La rangée d'indicateurs affiche toujours cinq tuiles. Chaque tuile montre un chiffre principal, une comparaison avec la période comparable précédente lorsqu'une comparaison honnête est possible, et une petite courbe de tendance. Les tuiles renvoient vers le rapport ou la liste correspondant.
+De KPI-rij toont altijd vijf tegels. Elke tegel toont een hoofdgetal, een vergelijking met de vorige vergelijkbare période als een eerlijke vergelijking mogelijk is, en een kleine trendlijn. Tegels linken door naar het bijbehorende rapport of de bijbehorende lijst.
 
-| Tuile | Ce que vous voyez |
+| Tegel | Wat je ziet |
 |---|---|
-| **Trésorerie** | Position de trésorerie actuelle, issue d'un compte bancaire connecté ou d'un solde estimé, plus le runway en semaines |
-| **Créances** | Factures en cours, avec la part en retard explicitement indiquée |
-| **Chiffre d'affaires** | Chiffre d'affaires de la période choisie et le rythme prévisionnel pour la période complète, avec l'évolution par rapport à la période comparable précédente |
-| **Dettes à payer** | Argent que vous devez encore payer, avec la part en retard explicitement indiquée |
-| **Bénéfice** | Bénéfice net de la période choisie, avec la marge lorsqu'elle peut être calculée |
+| **Kas** | Huidige kaspositie, afkomstig van een gekoppelde bankrekening of een geschat saldo, plus runway in weken |
+| **Te ontvangen** | Openstaande facturen, met de achterstallige helft apart genoemd |
+| **Omzet** | Omzet over de gekozen période en het tempo voor de hele période, met mutatie ten opzichte van de vorige vergelijkbare période |
+| **Te betalen** | Geld dat je nog moet uitbetalen, met de achterstallige helft apart genoemd |
+| **Winst** | Nettowinst over de gekozen période, met marge als die te berekenen is |
 
-### Tuile Trésorerie
+### Saldotegel
 
-La tuile **Trésorerie** montre, à côté de votre solde, ce qui est déjà engagé. Deux lignes détaillent cela :
+De **Kas**-tegel laat naast je saldo zien wat er al vergeven is. Dat zijn twee regels:
 
-- **Réservé pour la TVA** - le solde trimestriel positif qui devrait déjà être mis de côté
-- **Charges fixes par mois** - vos coûts fixes mensuels
+- **Gereserveerd voor btw** - het positieve kwartaalsaldo dat al apart gezet moet worden
+- **Vaste lasten per maand** - je maandelijkse vaste kosten
 
-La ligne finale affiche **Librement disponible** : ce qui reste effectivement après ces réservations. La réservation TVA utilise la même logique trimestrielle que la carte TVA, afin que les déclarants mensuels et les déclarants anticipés ne voient pas un mauvais montant déduit.
+De slotregel toont **Vrij besteedbaar**: wat er na die reserveringen effectief overblijft. De btw-reservering gebruikt dezelfde kwartaal-logica als de btw-kaart, zodat maandaangevers en vroege indieners geen verkeerd bedrag zien afgetrokken.
 
-Une tuile sans historique honnête s'affiche sans courbe de tendance plutôt qu'avec une ligne plate inventée. La couleur du badge d'évolution suit le sens, pas seulement la direction : des créances qui augmentent sont une mauvaise nouvelle même si la flèche pointe vers le haut.
+Een tegel zonder eerlijke historie toont geen trendlijn in plaats van een verzonnen vlakke lijn. De kleur van een deltabadge volgt betekenis, niet alleen richting: stijgende debiteuren zijn slecht nieuws, ook al wijst de pijl omhoog.
 
-## Widget d'attention
+## Voor jou
 
-Le widget d'attention est alimenté par le moteur de signaux Vandaag. Il affiche jusqu'à quatre tâches qui demandent une action aujourd'hui ou cette semaine. Chaque ligne montre un point de sévérité, un titre court et un lien vers l'enregistrement. Le widget ne montre que des tâches ; il ne contient pas la liste complète classée, les preuves chiffrées ni les boutons d'action. La liste complète se trouve dans le panneau de notifications.
+Het blok **Voor jou** is een persoonlijk taken- en signalenbord op het dashboard. Het houdt de meest relevante vervolgacties op één plek, zonder het volledige belpaneel of het aandacht-widget te vervangen.
 
-Le moteur Vandaag classe les signaux en quatre niveaux de sévérité :
+Het onderscheidt:
 
-- **critical** : de l'argent s'échappe ou une échéance ferme approche
-- **attention** : une tâche concrète, aujourd'hui ou cette semaine
-- **upcoming** : daté, mais pas encore urgent
-- **good** : une bonne nouvelle que vous avez méritée
+- **Alle taken** (`Alle taken`) - alles waar de werkruimte aandacht voor vraagt
+- **Te laat** (`{n} te laat`) - achterstallige facturen, rekeningen of andere items
+- **Vandaag** (`{n} vandaag`) - items die vandaag af moeten
+- **Open** (`{n} open`) - nog wachtende items
+- **Gesprekken** (`{n} mail`) - ongelezen conversaties
+- **Afspraken** (`geen afspraken | {n} afspraak | {n} afspraken`) - aankomende boekingen
 
-Le moteur est déterministe. Aucun modèle n'intervient dans la production des signaux, donc la page reste utile lorsque la couche IA est indisponible.
+Elke regel toont het type item (factuur, gesprek, afspraak, enzovoort) en een directe link om hem te openen. Wanneer er niets te doen is, toont het blok **Niets op je bord.** Laadt het overzicht niet, dan biedt een opnieuw-knop een nieuwe poging.
 
-### Puce d'action
+## Aandacht-widget
 
-Certaines lignes d'attention ont une puce d'action, par exemple pour envoyer un rappel de paiement. Le premier tap sur une puce demandant une confirmation l'arme et affiche le texte **Vraiment ? Touchez encore** ; seul le deuxième tap exécute l'action. Si aucun deuxième tap n'arrive dans les cinq secondes, la puce se désarme d'elle-même. Ainsi, un tap accidentel ne peut pas envoyer un e-mail à un client.
+Het aandacht-widget wordt gevoed door de Vandaag-signaalmotor. Het toont maximaal vier taken die nu of deze week actie vragen. Elke regel toont een ernst-indicator, een korte titel en een link naar het bijbehorende record. Het widget toont alleen taken; het bevat niet de volledige gerangschikte lijst, de bewijskerngetallen of de actieknoppen. Die volledige lijst staat in het belpaneel.
 
-## Blocs d'appoint
+De Vandaag-motor rangschikt signalen in vier ernstniveaus:
 
-Les blocs sous la rangée d'indicateurs n'apparaissent que s'ils méritent leur place. Le catalogue décide à la fois si un bloc s'affiche et quelle forme il prend.
+- **critical**: geld loopt weg of een harde deadline komt dichtbij
+- **attention**: een concrete taak, vandaag of deze week
+- **upcoming**: gedateerd, maar nog niet urgent
+- **good**: positief nieuws dat je verdient
 
-| Bloc | Contenu |
+De motor is deterministisch. Er is geen model betrokken bij het maken van de signalen, dus de pagina blijft bruikbaar als de AI-laag offline is.
+
+### Actiechips
+
+Sommige aandachtsregels hebben een actiechip, bijvoorbeeld om een betalingsherinnering te sturen. De eerste tik op een chip met bevestiging wapent hem en toont de tekst **Zeker weten? Tik nogmaals**; pas de tweede tik voert de actie uit. Na vijf seconden zonder tweede tik ontwapent de chip vanzelf. Zo kan een verdwalde tik niet per ongeluk een herinneringsmail naar een klant sturen.
+
+## Ondersteunende blokken
+
+De blokken onder de KPI-rij verschijnen alleen als ze hun plek verdienen. De catalogus bepaalt zowel of een blok getoond wordt als welke vorm hij krijgt.
+
+| Blok | Inhoud |
 |---|---|
-| **Tendance** | Graphique 12 mois avec chiffre d'affaires et coûts côte à côte, plus la ligne de bénéfice |
-| **Âge des créances** | Créances réparties par tranche d'âge |
-| **Sources de revenus** | Plus grands clients par chiffre d'affaires depuis le début de l'année |
-| **Devis** | Pipeline de devis ouverts et devis à expiration |
-| **Mix de dépenses** | Répartition des coûts par catégorie, sous forme de barres |
-| **Graphique de trésorerie** | Position de trésorerie sur 12 mois avec prévision |
-| **Activité** | Événements récents de facturation, paiement et dépense |
-| **Carte TVA** | Période TVA en cours, progression de la checklist et prochaine échéance |
+| **Trend** | 12-maands grafiek met omzet en kosten naast elkaar, plus de winstlijn |
+| **Ageing** | Debiteuren opgedeeld naar leeftijdsbakken |
+| **Omzetbronnen** | Grootste klanten naar omzet dit jaar |
+| **Offertes** | Open offertepijplijn en verlopende offertes |
+| **Uitgavenmix** | Kostenverdeling per catégorie, weergegeven als staafjes |
+| **Cash-grafiek** | Kaspositie over 12 maanden met prognose |
+| **Activiteit** | Recent factuur-, betalings- en uitgave-gebeurtenissen |
+| **BTW-kaart** | Huidige btw-période, checklistvoortgang, volgende deadline en in een oogopslag de btw over omzet, voorbelasting en het te betalen of terug te krijgen bedrag |
+| **Vaste lasten** | Maandelijkse terugkerende inkomsten en kosten, hoeveel procent van de vaste lasten je contracten dekken, en de grootste overeenkomsten aan beide kanten |
 
-Sur téléphone, les formes visuelles larges basculent vers des formes plus simples pour que les chiffres restent lisibles.
+Op telefoons vallen visuele vormen terug op eenvoudiger vormen, zodat de getallen leesbaar blijven.
 
-## Écran de première utilisation
+## Eerste-keer-scherm
 
-Un tout nouvel espace de travail sans factures ni clients atterrit sur un écran de première utilisation calme au lieu du tableau de bord complet. Au lieu d'un message générique "créez votre première facture", l'écran choisit une prochaine action concrète en fonction de ce qui existe déjà dans l'espace de travail. Les prochaines actions possibles sont :
+Een gloednieuwe werkruimte zonder facturen of klanten landt op een rustig eerste-keer-scherm in plaats van het volledige dashboard. In plaats van een generieke "maak je eerste factuur"-boodschap kiest het scherm één concrete vervolgstap op basis van wat er al in de werkruimte gebeurd is. Mogelijke vervolgstappen zijn:
 
-- **Envoyer un brouillon de facture ou de devis enregistré**, si vous avez déjà créé une facture ou un devis qui n'a pas encore été envoyé. L'écran l'affiche avec un lien pour l'ouvrir et l'envoyer.
-- **Créer une première facture pour un client existant**, si vous avez déjà ajouté un client sans facture ni devis. L'écran cite le client et vous dirige vers le formulaire de nouvelle facture.
-- **Compléter les informations d'entreprise manquantes**, si votre IBAN ou votre statut TVA manque encore. Un lien secondaire apparaît sous l'action principale pour compléter ces informations.
-- **Créer votre première facture**, c'est l'action par défaut quand il n'y a encore ni clients, ni factures, ni devis.
+- **Een opgeslagen conceptfactuur of -offerte versturen**, als je al een factuur of offerte hebt aangemaakt die nog niet is verstuurd. Het scherm toont die met een link om hem te openen en te verzenden.
+- **Een eerste factuur maken voor een bestaande klant**, als je al een klant hebt toegevoegd zonder factuur of offerte. De klant wordt genoemd en je wordt naar het nieuwe-factuurformulier geleid.
+- **Ontbrekende bedrijfsgegevens aanvullen**, als je IBAN of btw-status nog ontbreekt. Onder de hoofdactie verschijnt een extra link om die gegevens in te vullen.
+- **Maak je eerste factuur**, als er nog geen klanten, facturen of offertes zijn, is dit de standaardactie.
 
-Un petit panneau de découverte vous invite aussi à personnaliser le style des factures, le site web ou la sécurité du compte. Fermer le panneau ne cache que le panneau ; envoyer votre première facture quitte l'écran de première utilisation. Vous pouvez aussi sauter l'écran avec l'option **Afficher mon tableau de bord**.
+Een klein ontdekkingspaneel nodigt je ook uit om factuurstyling, de website of accountbeveiliging te personaliseren. Het wegklikken van dat paneel verbergt alleen het paneel; het versturen van je eerste factuur sluit het eerste-keer-scherm af. Je kunt het scherm ook overslaan met de optie **Toon mijn dashboard**.
 
-## Carte de prise en main
+## Aan-de-slag-kaart
 
-Tant que la checklist de configuration a des étapes ouvertes, une carte épinglée apparaît au-dessus du tableau de bord. Elle liste les étapes restantes et offre un lien vers l'assistant de configuration. La fermeture est mémorisée côté serveur, donc la carte reste masquée sur tous vos appareils. L'assistant n'est pas bloquant : les nouveaux utilisateurs arrivent directement sur `/dashboard`.
+Zolang de setup-checklist nog openstaande stappen heeft, verschijnt er een vaste kaart boven het dashboard. Die somt de openstaande stappen op en biedt een link terug naar de setup-wizard. Wegklikken wordt server-side bewaard, dus de kaart blijft verborgen op al je apparaten. De wizard is niet blokkerend: nieuwe gebruikers landen direct op `/dashboard`.
 
-## Chargement et états d'erreur
+## Laden en foutmeldingen
 
-Pendant que le tableau de bord détermine s'il s'agit d'un espace de première utilisation et charge le briefing, un squelette reflète la forme finale de la page. Si la récupération de Vandaag échoue, la page affiche une erreur explicite avec un bouton réessayer au lieu d'un tout va bien construit à partir de données vides. Si un changement de période échoue alors que d'anciens chiffres sont encore à l'écran, un avis de données obsolètes apparaît avec un bouton réessayer en ligne.
+Terwijl het dashboard bepaalt of dit een eerste-keer-werkruimte is en de briefing laadt, toont een skeleton de uiteindelijke vorm van de pagina. Als het ophalen van Vandaag mislukt, toont de pagina een duidelijke fout met een opnieuw-knop in plaats van een alles-goed gebouwd uit lege data. Lukt een période-switch niet terwijl er nog oudere getallen op het scherm staan, dan verschijnt een verouderd-melding met inline opnieuw-knop. Het blok **Voor jou** volgt hetzelfde expliciete fout-en-opnieuw-gedrag wanneer het overzicht niet geladen kan worden.
 
-## Voir aussi
+## Zie ook
 
-- [Utiliser le tableau de bord](/fr/faq/use-dashboard)
-- [Rapports](/fr/features/reports)
-- [Clients](/fr/features/customers)
-- [Factures](/fr/features/invoices)
-- [TVA](/fr/features/vat)
+- [Dashboard gebruiken](/faq/use-dashboard)
+- [Rapportages](/features/reports)
+- [Klanten](/features/customers)
+- [Facturen](/features/invoices)
+- [BTW](/features/vat)

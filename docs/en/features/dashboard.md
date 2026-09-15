@@ -12,7 +12,7 @@ The dashboard at `/dashboard` is the home screen of your workspace. It answers o
 
 The page is a single scrollable view built from a fixed catalogue of blocks. The order never changes, but a block only renders if your workspace data satisfies the test for it. A simple business therefore sees a shorter page, not empty placeholders.
 
-At the top sit a greeting, a period switcher and the KPI row. Below that comes the attention widget, then supporting blocks such as the trend chart, ageing, revenue sources, quote pipeline, expense mix, cash chart, VAT card, and recent activity.
+At the top sit a greeting, a period switcher and the KPI row. Below that comes the attention widget and the **Voor jou** (For you) block, then supporting blocks such as the trend chart, ageing, revenue sources, quote pipeline, expense mix, cash chart, VAT card, and recent activity.
 
 ## Greeting
 
@@ -44,6 +44,21 @@ The **Cash** tile shows, alongside your balance, what is already committed. Two 
 The final line shows **Free to spend**: what actually remains after those reservations. The VAT reservation uses the same quarter logic as the VAT card so monthly filers and early submitters do not see the wrong amount subtracted.
 
 A tile that has no honest history renders without a sparkline rather than invent a flat line. The colour of a delta badge follows meaning, not just direction: receivables rising is bad news even though the arrow points up.
+
+## Voor jou (For you)
+
+The **Voor jou** block is a personal task and signal board on the dashboard. It keeps the most relevant next actions in one place without replacing the full bell panel or the attention widget.
+
+It groups:
+
+- **All tasks** (`Alle taken`) - everything the workspace thinks needs your attention
+- **Overdue** (`{n} te laat`) - late invoices, bills, or other items
+- **Today** (`{n} vandaag`) - items due today
+- **Open** (`{n} open`) - still waiting
+- **Mail** (`{n} mail`) - unread conversation threads
+- **Appointments** (`geen afspraken | {n} afspraak | {n} afspraken`) - upcoming bookings
+
+Each row shows the type of item (invoice, conversation, appointment, etc.) and a direct link to open it. When there is nothing to do, the block shows **Niets op je bord.** (Nothing on your plate). If loading fails, a retry button lets you try again.
 
 ## Attention widget
 
@@ -96,7 +111,7 @@ While the setup checklist still has open steps, a pinned card appears above the 
 
 ## Loading and error states
 
-While the dashboard decides whether this is a first-run workspace and loads the briefing, a skeleton mirrors the final shape of the page. If the Vandaag fetch fails, the page shows an explicit error with a retry button instead of an all-clear built from empty data. If a period switch fails while older numbers are still on screen, a stale notice appears with an inline retry.
+While the dashboard decides whether this is a first-run workspace and loads the briefing, a skeleton mirrors the final shape of the page. If the Vandaag fetch fails, the page shows an explicit error with a retry button instead of an all-clear built from empty data. If a period switch fails while older numbers are still on screen, a stale notice appears with an inline retry. The **Voor jou** block has the same explicit error-and-retry behaviour when its overview cannot be loaded.
 
 ## See also
 

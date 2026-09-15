@@ -12,7 +12,7 @@ Het dashboard op `/dashboard` is het startscherm van je werkruimte. Het beantwoo
 
 De pagina bestaat uit een vaste catalogus van blokken in een enkele scrollbare weergave. De volgorde verandert nooit, maar een blok wordt alleen getoond als je data de drempel haalt. Een eenvoudig bedrijf krijgt dus een kortere pagina, geen lege plekken.
 
-Bovenaan staan de begroeting, de periodekiezer en de KPI-rij. Daaronder komt het aandacht-widget, gevolgd door ondersteunende blokken zoals de trendgrafiek, ageing, omzetbronnen, offertepijplijn, uitgavenmix, cash-grafiek, btw-kaart en recente activiteit.
+Bovenaan staan de begroeting, de periodekiezer en de KPI-rij. Daaronder komt het aandacht-widget en het blok **Voor jou**, gevolgd door ondersteunende blokken zoals de trendgrafiek, ageing, omzetbronnen, offertepijplijn, uitgavenmix, cash-grafiek, btw-kaart en recente activiteit.
 
 ## Begroeting
 
@@ -44,6 +44,21 @@ De **Kas**-tegel laat naast je saldo zien wat er al vergeven is. Dat zijn twee r
 De slotregel toont **Vrij besteedbaar**: wat er na die reserveringen effectief overblijft. De btw-reservering gebruikt dezelfde kwartaal-logica als de btw-kaart, zodat maandaangevers en vroege indieners geen verkeerd bedrag zien afgetrokken.
 
 Een tegel zonder eerlijke historie toont geen trendlijn in plaats van een verzonnen vlakke lijn. De kleur van een deltabadge volgt betekenis, niet alleen richting: stijgende debiteuren zijn slecht nieuws, ook al wijst de pijl omhoog.
+
+## Voor jou
+
+Het blok **Voor jou** is een persoonlijk taken- en signalenbord op het dashboard. Het houdt de meest relevante vervolgacties op één plek, zonder het volledige belpaneel of het aandacht-widget te vervangen.
+
+Het onderscheidt:
+
+- **Alle taken** (`Alle taken`) - alles waar de werkruimte aandacht voor vraagt
+- **Te laat** (`{n} te laat`) - achterstallige facturen, rekeningen of andere items
+- **Vandaag** (`{n} vandaag`) - items die vandaag af moeten
+- **Open** (`{n} open`) - nog wachtende items
+- **Gesprekken** (`{n} mail`) - ongelezen conversaties
+- **Afspraken** (`geen afspraken | {n} afspraak | {n} afspraken`) - aankomende boekingen
+
+Elke regel toont het type item (factuur, gesprek, afspraak, enzovoort) en een directe link om hem te openen. Wanneer er niets te doen is, toont het blok **Niets op je bord.** Laadt het overzicht niet, dan biedt een opnieuw-knop een nieuwe poging.
 
 ## Aandacht-widget
 
@@ -97,7 +112,7 @@ Zolang de setup-checklist nog openstaande stappen heeft, verschijnt er een vaste
 
 ## Laden en foutmeldingen
 
-Terwijl het dashboard bepaalt of dit een eerste-keer-werkruimte is en de briefing laadt, toont een skeleton de uiteindelijke vorm van de pagina. Als het ophalen van Vandaag mislukt, toont de pagina een duidelijke fout met een opnieuw-knop in plaats van een alles-goed gebouwd uit lege data. Lukt een periode-switch niet terwijl er nog oudere getallen op het scherm staan, dan verschijnt een verouderd-melding met inline opnieuw-knop.
+Terwijl het dashboard bepaalt of dit een eerste-keer-werkruimte is en de briefing laadt, toont een skeleton de uiteindelijke vorm van de pagina. Als het ophalen van Vandaag mislukt, toont de pagina een duidelijke fout met een opnieuw-knop in plaats van een alles-goed gebouwd uit lege data. Lukt een periode-switch niet terwijl er nog oudere getallen op het scherm staan, dan verschijnt een verouderd-melding met inline opnieuw-knop. Het blok **Voor jou** volgt hetzelfde expliciete fout-en-opnieuw-gedrag wanneer het overzicht niet geladen kan worden.
 
 ## Zie ook
 

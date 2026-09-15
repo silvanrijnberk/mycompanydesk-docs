@@ -1,230 +1,246 @@
 ---
 title: Contrats
-description: "Gérez les contrats de service récurrents et les baux, et laissez-les générer des factures selon un calendrier. À activer dans Entreprise, Fonctionnalités."
+description: "Manage recurring service agreements and rental contracts, and let them generate invoices on a set schedule. Enable contracts under Company, Features."
 ---
 
-# Contrats
+# Contracts
 
-Gerez les accords de services recurrents et les contrats de location avec des calendriers de facturation automatiques.
+Manage recurring service agreements and rental contracts with automatic billing schedules.
 
-## Vue d'ensemble
+## Overview
 
-Les contrats representent des accords en cours avec des clients -- tels que des contrats de services mensuels, des baux de location ou des plans de maintenance. Ils peuvent generer automatiquement des factures selon un calendrier defini.
+Contracts represent ongoing agreements with customers - such as monthly service contracts, rental agreements, or maintenance plans. They can generate invoices automatically on a set schedule.
 
 ::: info
-Le module contrats est optionnel. Activez-le dans **Entreprise > Fonctionnalites** si vous ne le voyez pas dans la navigation.
+The contracts module is optional. Enable it in **Company > Features** if you don't see it in the navigation.
 :::
 
-## Creer un contrat
+## Creating a contract
 
-1. Allez dans **Contrats > Nouveau contrat**
-2. Remplissez :
-   - **Nom** -- Un titre descriptif (par ex., "Service de nettoyage mensuel")
-   - **Client** -- Le client partie au contrat
-   - **Montant** -- Le montant de facturation recurrent
-   - **Recurrence** -- Frequence de facturation (hebdomadaire, mensuelle, trimestrielle, annuelle)
-   - **Date de debut** -- Quand le contrat commence
-   - **Date de fin** -- Date de fin optionnelle
-   - **Description** -- Conditions et details
-3. Cliquez sur **Enregistrer**
+1. Go to **Contracts > New Contract**
+2. Fill in:
+   - **Name** - A descriptive title (e.g., "Monthly cleaning service")
+   - **Customer** - The client party to the contract
+   - **Amount** - The recurring billing amount
+   - **Recurrence** - How often to bill (weekly, monthly, quarterly, yearly)
+   - **Start date** - When the contract begins
+   - **End date** - Optional end date
+   - **Description** - Terms and détails
+3. Click **Save**
 
-::: tip Plus d'options
-Dans le formulaire de nouveau contrat, les details optionnels restent ranges : la section **Plus d'options** devoile des champs supplementaires pour le montant du supplement de service, le taux de TVA et la description du service. Ils ne sont pas requis pour creer le contrat, mais vous pouvez les deployer quand vous en avez besoin.
+::: tip Meer opties
+The new-contract form keeps optional détails tidy: the **More options** section reveals extra fields for service charge amount, VAT rate, and service description. These are not required to create the contract, but you can expand them when you need them.
 :::
 
-## Base de tarification
+## Rate basis
 
-Chaque contrat a une **base de tarification** qui détermine comment le montant a été convenu :
+Every contract has a **Rate basis** that controls how the amount is agreed:
 
-- **Montant fixe** -- le même montant chaque période, par exemple un loyer ou un forfait mensuel fixe.
-- **Taux horaire** -- vous facturez les heures que vous saisissez sur les projets liés à ce contrat.
-- **Taux journalier** -- vous facturez les jours que vous travaillez sur les projets liés à ce contrat.
-- **Prix forfaitaire de projet** -- un montant total convenu pour toute la mission, facturé une seule fois.
+- **Fixed amount** - the same amount each period, such as rent or a fixed monthly fee.
+- **Hourly rate** - you invoice the hours logged on projects linked to this contract.
+- **Daily rate** - you invoice the days worked on projects linked to this contract.
+- **Fixed project price** - a single agreed total for the whole assignment, invoiced once.
 
-Pour les contrats à taux horaire et journalier, la page de détail du contrat affiche une fiche **Travail sous ce contrat** avec les totaux convenus, facturés et saisis, plus les projets liés. Un jour compte comme 8 heures.
+For hourly and daily contracts, the contract détail page shows a **Work under this contract** card with the agreed, invoiced and logged totals, plus the linked projects. A day is counted as 8 hours.
 
-Un prix forfaitaire de projet ne se répète pas : le contrat génère une facture, puis s'arrête.
+A fixed project price does not repeat: the contract generates one invoice and then stops.
 
-## Statuts des contrats
+## Contract statuses
 
-| Statut | Description |
-|---|---|
-| **Actif** | Actuellement en vigueur, genere des factures |
-| **Inactif** | En pause -- aucune facture generee |
+| Status | Description |
+| - -| - -|
+| **Active** | Currently in effect, generates invoices |
+| **Inactive** | Paused - no invoices generated |
+| **Expired** | The end date has passed; no new invoices are generated |
 
-## Dates de fin
-
-Vous pouvez indiquer une **Date de fin** lors de la creation ou de la modification d'un contrat. Laissez le champ vide pour un contrat a duree indeterminee.
-
-Lorsqu'une date de fin est definie :
-
-- La page de detail du contrat affiche la date de fin, ou **Duree indeterminee** si aucune date n'est definie.
-- Aucune facture n'est generee pour les periodes apres la date de fin.
-- La liste des contrats affiche le label **Expire bientot** lorsque la date de fin est dans les 30 jours.
-
-## Facturation automatique
-
-Les contrats actifs avec un calendrier de recurrence generent automatiquement des factures a chaque periode de facturation. Le systeme :
-
-1. Cree un brouillon de facture base sur les termes du contrat
-2. Applique le client, le montant et la description corrects
-3. Utilise la meme numerotation automatique des factures
-
-Les factures generees ne sont marquees comme factures de location que lorsque le contrat est un contrat de location. Les contrats de services et de collaboration produisent des factures ordinaires. Cela influe sur le badge affiche sur la facture, le modele d'e-mail utilise a l'envoi et sur l'attribution du chiffre d'affaires a un objet lie.
-
-Vous pouvez examiner et envoyer les factures generees manuellement, ou configurer l'envoi automatique. Lorsqu'un contrat est base sur un taux horaire, un taux journalier ou un prix forfaitaire de projet, vous recevez aussi une alerte quand le budget du contrat est depasse ou quand des heures saisies n'ont pas pu etre tarifees car aucun taux n'etait defini.
-
-### Notifications d'envoi et de facturation automatique
-
-Si une facture generee ne peut pas etre envoyee par e-mail au client, l'application cree une notification **Facture non envoyee**. Cela se produit par exemple lorsque le client n'a pas d'adresse e-mail, votre envoi d'e-mails n'est pas configure, l'adresse est bloquee apres un rebond ou un signalement de spam, ou que l'envoi echoue pour une autre raison. La notification ouvre la facture pour que vous puissiez resoudre le probleme et renvoyer.
-
-Si votre forfait n'inclut plus la facturation automatique des contrats, l'application cree une notification **Facturation automatique suspendue** des que des factures de contrat sont pretes mais ne partent pas. La notification indique combien de factures de contrat attendent et depuis quand, et vous renvoie vers la page d'abonnement pour changer de forfait.
-
-## Période de facturation
-
-Les contrats facturent une période par rapport à la date de facture :
-
-- **Actuelle** — la période qui contient la date de facture (par défaut)
-- **Précédente** — la période avant la date de facture
-- **Suivante** — la période après la date de facture ; ancienne valeur conservée pour les anciens contrats de location facturés d'avance
-
-Le formulaire ne permet aujourd'hui de choisir qu'entre **actuelle** et **précédente**. Si vous avez un ancien contrat réglé sur **suivante**, l'API conserve cette valeur lors de l'enregistrement pour que le contrat reste modifiable.
-
-## Encaissement automatique
-
-Pour les contrats récurrents, vous pouvez encaisser automatiquement le montant facturé à partir du mandat de paiement enregistré du client, au lieu d'envoyer un lien de paiement par e-mail. Cela nécessite un prestataire de paiement connecté (Mollie ou Stripe) et un mandat valide du client.
-
-### Configurer l'encaissement automatique
-
-Sur la page de détail du contrat, ouvrez la carte **Encaissement automatique** et configurez le mandat. Une fois le mandat valide, activez le bouton bascule. Le système prélève alors chaque facture générée automatiquement.
-
-### Encaissement échoué
-
-Si un prélèvement échoue ou que le mandat n'est plus valide, vous recevez une notification « Encaissement automatique échoué ». La notification renvoie directement vers le contrat pour que vous puissiez reconnecter le mandat ou relancer le client.
-
-## Révision des prix
-
-Les contrats récurrents peuvent être ajustés pour tenir compte de l'inflation ou de hausses annuelles convenues. Ouvrez la liste des contrats et cliquez sur **Augmenter les prix** pour voir ce qu'une augmentation en pourcentage ferait pour tous les contrats éligibles. Un contrat n'est éligible que si au moins un an s'est écoulé depuis son début ou depuis sa dernière augmentation.
-
-L'aperçu montre, par contrat :
-
-- Le tarif ou le montant actuel par période
-- Le tarif ou le montant après augmentation
-- La date de la dernière ajustement du contrat
-
-Vous appliquez l'augmentation contrat par contrat, jamais en bloc, afin de pouvoir passer les clients avec qui vous n'avez pas encore discuté. Une fois appliquée, le système met à jour les conditions du contrat enregistrées et les futures factures reflètent le nouveau montant.
-
-::: tip D'abord s'entendre
-Discutez de toute augmentation de prix avec votre client avant de l'appliquer. L'aperçu ne change rien tant que vous n'avez pas cliqué sur **Appliquer** pour un contrat spécifique.
+::: warning MyCompanyDesk is not multi-tenant
+A contract is always linked to one customer in one workspace. The app does not support a single customer account that spans multiple tenants, and contract-generated invoices are always created in the workspace that owns the contract.
 :::
 
-## Liaison aux actifs
+## Terminating or pausing a contract
 
-Les contrats peuvent etre lies aux [objets/actifs](/fr/features/objects) pour la gestion locative :
+You can stop an active contract in two ways:
 
-- Associez un contrat a une propriete, un vehicule ou un equipement
-- Suivez quels actifs sont actuellement loues et a qui
-- Consultez l'historique des contrats par actif
+- **Deactivate** (`Pauzeren`) - the contract stays open but stops generating invoices. Activate it again at any time to résumé billing.
+- **Set an end date** (`Einddatum`) - the contract runs until that date and then automatically becomes **Expired**. No invoices are generated for any period that ends after the end date.
 
-## Lier à des projets
+When you edit an active contract and add an end date, the app warns that future invoices will stop. If you remove the end date before it is reached, the contract resumes normal invoicing.
 
-Les contrats peuvent aussi être liés à des [projets](/fr/features/projects). Lorsque vous créez ou modifiez un projet, choisissez le contrat dans le champ **Contrat**. Les heures saisies sur ce projet sont alors incluses sur la facture du contrat. Les contrats archivés restent visibles dans le menu déroulant, signalés par **(archivé)** après le nom, pour que vous puissiez conserver un lien existant ou choisir une ancienne convention si nécessaire.
+## End dates
 
-Cela est utile pour les accords de type retainer ou régie : le contrat définit la base de tarification, et les projets liés fournissent les heures.
+You can set an **End date** when creating or editing a contract. Leave it empty for an open-ended contract.
 
-Vous pouvez délier un projet à tout moment ; les heures déjà facturées restent sur leur facture.
+When an end date is set:
 
-## Indicateurs
+- The contract détail page shows the end date, or **Open-ended** if none is set.
+- No invoices are generated for any period that ends after the end date.
+- The contracts list shows an **Expires soon** label when the end date is within 30 days.
+- When the end date passes, the status changes to **Expired** automatically.
 
-La page de liste des contrats affiche des indicateurs de synthese :
+## Automatic invoicing
 
-- Total des contrats actifs
-- Valeur totale des contrats
-- Contrats par type de recurrence
+Active contracts with a recurrence schedule automatically generate invoices at each billing period. The system:
 
-## Actions groupees
+1. Creates a draft invoice based on the contract terms
+2. Applies the correct customer, amount, and description
+3. Uses the same automatic invoice numbering
 
-- **Changer le statut** -- Activez ou desactivez plusieurs contrats
-- **Archiver** -- Deplacez vers les archives
-- **Restaurer** -- Recuperez les contrats archives
+Generated invoices are tagged as rental invoices only when the contract is a rental contract. Service and collaboration contracts produce ordinary invoices. This affects the badge shown on the invoice, the email template used when the invoice is sent, and whether the revenue is attributed to a linked object.
 
-## Signature electronique
+You can review and send generated invoices manually, or configure auto-sending. When a contract is based on an hourly, daily or fixed project price, you also get a warning when the contract budget is exceeded or when logged hours cannot be priced because no rate was set.
 
-Les contrats prennent en charge la signature electronique. Vous pouvez ajouter des parties via le formulaire de contrat, et chaque partie recoit un lien de signature par e-mail.
+### Invoice delivery and auto-invoicing notifications
 
-Lorsqu'un contrat est signe, la page de detail du contrat affiche une carte de signature avec :
+If a generated invoice cannot be emailed to the customer, the app creates an **Invoice not sent** notification. This happens when the customer has no email address, your sender email is not configured, the address is blocked after a bounce or spam report, or the send fails for another reason. The notification opens the invoice so you can fix the cause and resend.
 
-- Le statut de chaque partie (invitee, consultee, signee ou expiree)
-- Un bouton **Voir** qui ouvre un apercu en ligne du document signe
-- Un bouton de telechargement pour enregistrer le PDF
+If your plan no longer includes automatic contract invoicing, the app creates an **Auto-invoicing paused** notification when contract invoices are ready but not being sent. The notification tells you how many contract invoices are waiting and since when, and points you to the subscription page to upgrade.
 
-La page d'apercu comprend une barre d'outils avec des actions d'impression et de telechargement, et affiche le contrat signe directement dans le navigateur. Le PDF signe et le PDF de revision contiennent tous les deux le texte integral du contrat, de sorte que chaque copie telechargee soit autonome.
+## Invoice period
 
-### Image de marque de l'expediteur sur la page de signature
+Contracts bill for a period relative to the invoice date:
 
-Lorsqu'un destinataire ouvre un contrat pour le signer, la page de signature reflete l'image de marque de l'expediteur :
+- **Current** - the period that contains the invoice date (default)
+- **Previous** - the period before the invoice date
+- **Next** - the period after the invoice date; legacy value kept for older rental contracts that bill in advance
 
-- Le logo de l'expediteur apparait en haut de la page
-- La page utilise la couleur d'accent de la marque de l'expediteur
-- Le texte et les boutons s'adaptent automatiquement pour rester lisibles sur cette couleur
+The form today only lets you choose **current** or **previous**. If you have an older contract set to **next**, the API keeps that value when you save, so the contract stays editable.
 
-Cela offre aux signataires une experience qui semble provenir de l'entreprise qui les a invites, et non d'une page generique tierce.
+## Automatic collection
 
-### Signature sur la liste des contrats
+For recurring contracts you can collect the billed amount automatically from the customer's stored payment mandate instead of sending a payment link by email. This requires a connected payment provider (Mollie or Stripe) and a valid customer mandate.
 
-La liste des contrats inclut une colonne **Signature** affichant le statut de signature pour chaque contrat avec signature electronique. Les statuts apparaissent sous forme de badges colores : brouillon (neutre), envoye (avertissement), partiellement signe (info) et actif (succes).
+### Setting up automatic collection
 
-Un filtre de signature au-dessus de la liste vous permet de filtrer par statut de signature, ou d'afficher les contrats sans signature electronique (« Sans signature electronique »).
+On the contract détail page, open the **Automatic collection** card and set up the mandate. Once the mandate is valid, turn the toggle on. The system then charges each generated invoice automatically.
 
-::: info Contrats existants
-Les contrats crees avant l'introduction de la signature electronique n'affichent pas de carte de signature sur la page de detail. Le systeme detecte les contrats existants en verifiant si le contrat comporte des parties signataires, un modele ou un contenu de signature. Seuls les contrats crees ou mis a jour apres le deploiement de la signature electronique incluent la carte de signature.
+### Failed collection
 
-Les contrats existants affichent un tiret dans la colonne Signature et apparaissent sous le filtre « Sans signature electronique ».
+If a charge fails or the mandate is no longer valid, you receive an "Automatic collection failed" notification. The notification links directly to the contract so you can reconnect the mandate or follow up with the customer.
+
+## Price indexation
+
+Recurring contracts can be adjusted for inflation or agreed yearly rises. Open the contracts list and click **Raise prices** to preview what a percentage increase would do across eligible contracts. A contract is only eligible if at least one year has passed since it started or since its last rise.
+
+The preview shows, per contract:
+
+- The current rate or amount per period
+- The new rate or amount after the increase
+- The date the contract was last adjusted
+
+You apply the rise per contract, never in bulk, so you can skip customers you have not yet spoken to. Once applied, the change updates the stored contract terms and future invoices reflect the new amount.
+
+::: tip Agree first
+Discuss any price rise with your customer before applying it. The preview changes nothing until you click **Apply** on a specific contract.
 :::
 
-### Verification SMS
+## Linking to assets
 
-Les liens de signature peuvent exiger une verification par SMS avant qu'une partie puisse consulter et signer le document. Lorsque cette option est activee, le signataire doit saisir un numero de mobile et confirmer un code a 6 chiffres envoye par SMS.
+Contracts can be linked to [objects/assets](/en/features/objects) for rental management:
 
-- **Envoyer le code** — Apres avoir saisi son numero de mobile, le signataire appuie sur le bouton et recoit un code
-- **Verifier le code** — Le signataire saisit le code a 6 chiffres pour prouver l'acces au numero
-- **Badge Verifie** — Une fois confirme, un badge « Verifie » apparait avec les quatre derniers chiffres du numero
+- Associate a contract with a property, vehicle, or piece of equipment
+- Track which assets are currently rented and to whom
+- View contract history per asset
 
-Si un code incorrect est saisi, le signataire peut en demander un nouveau. La verification SMS est configuree par session de signature et s'applique a toutes les parties.
+## Linking to projects
 
-## Versions de modele
+Contracts can also be linked to [projects](/en/features/projects). When you create or edit a project, choose the contract in the **Contract** field. Hours you log on that project are then included on the contract's'invoice. Archived contracts still appear in the dropdown, labelled with **(archived)** after the name, so you can keep an existing link or pick an older agreement when needed.
 
-Les modeles de contrat prennent en charge le versionnage pour suivre les modifications dans le temps. Chaque version est un instantane fige du contenu du modele a un moment donne, ce qui vous permet de faire evoluer vos modeles sans affecter les contrats deja crees.
+This is useful for retainer-style or time-and-materials agreements: the contract sets the rate basis, and the linked projects supply the hours.
 
-### Publier une version
+You can unlink a project at any time; existing hours stay on the invoice they were already added to.
 
-1. Allez dans **Contrats > Modeles**
-2. Trouvez votre modele et cliquez sur le bouton **Versions**
-3. Dans la fenetre des versions, saisissez :
-   - **Etiquette** -- Un identifiant court pour la version (par ex. "v2"). Si vous laissez le champ vide, le systeme attribue automatiquement une etiquette sequentielle.
-   - **Note de modification** -- Une breve description de ce qui a change dans cette version
-4. Cliquez sur **Publier**
+## Metrics
 
-Le brouillon actuel est capture comme nouvelle version. Les contrats existants restent rattaches a la version avec laquelle ils ont ete crees, la publication ne reecrit donc jamais le texte historique des contrats.
+The contracts list page shows summary metrics:
 
-### Consulter l'historique des versions
+- Total active contracts
+- Total contract value
+- Contracts by recurrence type
 
-L'historique des versions de chaque modele affiche :
+## Bulk actions
 
-- L'etiquette de version (par ex. "v1", "v2")
-- La note de modification et la date de publication
-- Un badge **Actuelle** sur la derniere version publiee
-- Un badge **Archivee** sur toutes les versions precedentes
+- **Change status** - Activate or deactivate multiple contracts
+- **Archive** - Move to archive
+- **Restore** - Bring back archived contracts
 
-### Comment les versions affectent les contrats
+## Signing
 
-Lorsqu'un contrat est cree a partir d'un modele, il est fige sur la version qui etait actuelle a ce moment-la. Si vous publiez ulterieurement une nouvelle version du modele, les contrats existants continuent de s'afficher a partir de leur version figee. Vous pouvez donc reviser les modeles en toute securite sans modifier les contrats en cours.
+Contracts support electronic signing. You can add parties through the contract form, and each party receives a signing link via email.
 
-## Conseils
+When a contract has been signed, the contract détail page shows a signing card with:
 
-- Utilisez les contrats conjointement avec les [factures recurrentes](/fr/features/recurring-invoices) pour differents scenarios de facturation
-- Liez les contrats aux objets pour une gestion locative complete
-- Definissez des dates de fin pour etre averti avant l'expiration des contrats
-- Utilisez le filtre des contrats pour voir les actifs vs. les inactifs en un coup d'oeil
-- Filtrez par statut de signature pour trouver les contrats qui doivent encore etre signes
-- Ajoutez des parties signataires lors de la creation d'un contrat pour activer la signature electronique
+- The status of each party (invited, viewed, signed, or expired)
+- A **View** button that opens an inline preview of the signed document
+- A download button to save the PDF
+
+The preview page includes a toolbar with print and download actions, and renders the signed contract directly in the browser. The signed PDF and review PDF both include the full contract body text, so every downloaded copy is self-contained.
+
+### Sender branding on the signing page
+
+When a recipient opens a contract to sign, the signing page carries the sender's brand:
+
+- The sender's logo appears at the top of the page
+- The page uses the sender's brand accent color
+- Text and buttons automatically adjust so they stay readable against that color
+
+This gives signers an experience that looks like it comes from the company that invited them, rather than a generic third-party page.
+
+### Signing on the contracts list
+
+The contracts list includes a **Signing** column showing the signing status for each contract that has e-signing enabled. Statuses appear as colored badges: draft (neutral), sent (warning), partially signed (info), and active (success).
+
+A signing filter dropdown above the list lets you narrow the view by signing status, or filter to contracts without e-signing ("No e-signing").
+
+::: info Legacy contracts
+Contracts created before the e-signing feature was added do not show a signing card on the détail page. The system detects legacy contracts by checking whether the contract has signing parties, a template, or signing content. Only contracts created or updated after the e-signing rollout include the signing card.
+
+Legacy contracts show a dash in the Signing column and appear under the "No e-signing" filter.
+:::
+
+### SMS vérification
+
+Signing links can require SMS vérification before a party can view and sign the document. When enabled, the signer must enter a mobile number and confirm a 6-digit code sent by SMS.
+
+- **Send code** - After entering their mobile number, the signer taps the button and receives a code
+- **Verify code** - The signer enters the 6-digit code to prove access to the phone number
+- **Verified badge** - Once confirmed, a "Verified" badge appears with the last four digits of the number
+
+If the wrong code is entered, the signer can request a new one. SMS vérification is configured per signing session and applies to all parties.
+
+## Template versions
+
+Contract templates support versioning so you can track changes over time. Each version is a frozen snapshot of the template content at a point in time, letting you evolve your templates without affecting contracts that were already created.
+
+### Publishing a version
+
+1. Go to **Contracts > Templates**
+2. Find your template and click the **Versions** button
+3. In the versions modal, enter:
+   - **Label** :  A short identifier for the version (e.g. "v2"). If left empty the system auto-assigns a sequential label.
+   - **Change note** :  A short description of what changed in this version
+4. Click **Publish**
+
+The current draft is snapshotted as a new version. Existing contracts stay pinned to the version they were created from, so publishing never rewrites historical contract text.
+
+### Viewing version history
+
+Each template's version history shows:
+
+- The version label (e.g. "v1", "v2")
+- The change note and publish date
+- A **Current** badge on the latest published version
+- An **Archived** badge on all previous versions
+
+### How versions affect contracts
+
+When a contract is created from a template, it pins to the version that was current at the time. If you later publish a new version of the template, existing contracts keep rendering from their pinned version. This means you can safely revise templates without altering active contracts.
+
+## Tips
+
+- Use contracts together with [recurring invoices](/en/features/recurring-invoices) for different billing scenarios
+- Link contracts to objects for full rental management
+- Set end dates to get notified before contracts expire; a contract expires automatically on its end date
+- Deactivate a contract instead of setting an end date if you want to pause and résumé billing later
+- Review the contracts filter to see active vs. inactive at a glance
+- Filter by signing status to find contracts that still need signatures
+- Add signing parties when creating a contract to enable electronic signing

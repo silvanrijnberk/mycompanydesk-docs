@@ -7,6 +7,45 @@ description: "Create professional invoices, send them with payment links, and tr
 
 Invoices are at the core of MyCompanyDesk. Create professional invoices, send them to customers with payment links, and track payments through to completion.
 
+## Settings for invoices and quotes
+
+Settings → **Facturen en offertes** (Invoices and quotes) holds defaults that apply to every new invoice and quote.
+
+### Payment terms
+
+Set the default number of days a customer gets to pay. Choices range from **Direct** to a custom number of days. This value appears on every new invoice, but you can override it per invoice.
+
+### Reminders
+
+Turn on automatic reminders and MyCompanyDesk sends a friendly reminder the day after an invoice becomes overdue, then every week until it is paid.
+
+### Quote validity
+
+Choose how long quotes stay valid by default: **2 weeks**, **1 month** or **2 months**.
+
+### Auto-invoice signed quotes
+
+When enabled, a signed quote automatically becomes a draft invoice. The draft is ready for your review; you still choose when to send it.
+
+### Invoice numbering
+
+MyCompanyDesk numbers invoices automatically in the order the Belastingdienst expects, unless you set a custom prefix or starting number.
+
+| Field | Dutch label | What it does |
+|---|---|---|
+| **Prefix** | Voorvoegsel | Text in front of the year on every new invoice, for example `INV-` or `2026_`. Sent invoices keep their existing number. |
+| **Next invoice number** | Eerstvolgende factuurnummer | The next number to use. You can only move forward, never back, because lowering the number would create duplicates. |
+
+The preview under the fields shows what your next invoice number will look like. Already sent invoices are never renumbered when you change these settings.
+
+### Default document language
+
+Choose the language used for invoices, quotes and customer emails by default. The default option follows your workspace language; you can change the language per document.
+
+### Peppol e-invoicing
+
+A toggle on the same settings page enables [Peppol e-invoicing](/en/features/peppol). When you switch it on, your company details are registered with the Peppol access point and you can send or receive e-invoices alongside email. See the Peppol page for identity verification, receiving, and missing-field checks.
+
 ## Overview
 
 The invoices page shows all your invoices with filtering and search capabilities. The status tabs in the top bar let you switch quickly between:
@@ -72,16 +111,16 @@ The preview header has a **Download PDF** button, a **Print** button, and a **Ch
 
 The top action on the invoice detail page depends on the invoice status:
 
-- **Send** — Available for draft, sent, and overdue invoices. This is the primary next step when the invoice still needs to reach the customer.
-- **Duplicate** — Shown for cancelled invoices so you can recreate them quickly.
-- **Mark as paid** — Shown when a customer reports a payment, letting you confirm it instead of re-sending the invoice.
+- **Send** - Available for draft, sent, and overdue invoices. This is the primary next step when the invoice still needs to reach the customer.
+- **Duplicate** - Shown for cancelled invoices so you can recreate them quickly.
+- **Mark as paid** - Shown when a customer reports a payment, letting you confirm it instead of re-sending the invoice.
 
 Additional actions live in the overflow menu next to the top action:
 
-- **Download PDF** — Download the invoice as a professionally formatted PDF document with your company logo, branding colors, and all invoice details.
-- **Cancel** — Cancel an invoice that should no longer be paid. Cancelled invoices remain in your records for auditing purposes.
-- **Duplicate** — Create a copy of an existing invoice, useful for recurring billing to the same customer.
-- **Send reminder** — Send a payment reminder for overdue invoices.
+- **Download PDF** - Download the invoice as a professionally formatted PDF document with your company logo, branding colors, and all invoice details.
+- **Cancel** - Cancel an invoice that should no longer be paid. Cancelled invoices remain in your records for auditing purposes.
+- **Duplicate** - Create a copy of an existing invoice, useful for recurring billing to the same customer.
+- **Send reminder** - Send a payment reminder for overdue invoices.
 
 ### Send
 
@@ -125,10 +164,10 @@ Send a payment reminder for overdue invoices. If your workspace has online payme
 
 Select multiple invoices from the list to perform actions in bulk:
 
-- **Mark as sent** — Mark multiple draft invoices as sent at once
-- **Mark as paid** — Record payment for multiple invoices
-- **Archive** — Move invoices to the archive
-- **Delete** — Permanently remove invoices
+- **Mark as sent** - Mark multiple draft invoices as sent at once
+- **Mark as paid** - Record payment for multiple invoices
+- **Archive** - Move invoices to the archive
+- **Delete** - Permanently remove invoices
 
 Permanently deleting an invoice (single delete, bulk delete, empty trash, or delete all) releases any attached expenses. They return to the uninvoiced list and can be added to another invoice.
 
@@ -187,18 +226,18 @@ To refund a payment:
 
 The invoice module supports multiple document types:
 
-- **Invoice** — Standard billing document
-- **Credit note** — Adjustment for refunds or corrections
-- **Reminder** — Payment reminder for overdue invoices
+- **Invoice** - Standard billing document
+- **Credit note** - Adjustment for refunds or corrections
+- **Reminder** - Payment reminder for overdue invoices
 
 ## Filtering and search
 
 Use the filter bar to narrow down your invoices:
 
-- **Status** — Draft, Sent, Overdue, Paid, Cancelled
-- **Customer** — Filter by specific customer
-- **Project** — Filter by linked project
-- **Date range** — Filter by invoice or due date
+- **Status** - Draft, Sent, Overdue, Paid, Cancelled
+- **Customer** - Filter by specific customer
+- **Project** - Filter by linked project
+- **Date range** - Filter by invoice or due date
 - **Search**: Search by invoice number, customer name, reference, or notes
 - **Deep links**: Notifications and emails that link straight to an invoice clear any active date-range filter when they open the page, so the invoice is not hidden by an existing filter
 
@@ -231,6 +270,19 @@ If your workspace uses manual numbering, the app also asks you to enter the invo
 If you are still waiting for your BTW-id from the Belastingdienst, or you are exempt under the small business scheme (KOR), you can acknowledge the gap and proceed anyway. You should add your BTW-id later once you have it.
 
 Once an invoice has been finalized, it cannot be archived or deleted in one step, because the invoice number has already been used. Use the cancel or credit-note flow to handle a finalized invoice that should no longer be paid.
+
+## Payment method status
+
+Payment methods can be active or inactive in your workspace:
+
+- **Active** methods appear as options when sending an invoice or setting up a customer mandate.
+- **Inactive** methods are hidden from new invoices and mandates. Existing mandates stay valid, but you cannot create new ones for an inactive method.
+
+iDEAL, bank transfer (scan-and-pay QR), PayPal, and credit card are available when your connected processor supports them. Availability depends on the processor you connect (Mollie or Stripe) and the country of your account. A method that is not available for your processor/country does not appear at all.
+
+When an online payment method is inactive, invoices still show the method list, but the inactive option is greyed out or hidden and the customer cannot select it. You can reactivate a method from **Money → Payments → Online payments**.
+
+<!-- TODO(source-missing): confirm exact labels for inactive payment method states and whether PayPal is enabled for both Mollie and Stripe. -->
 
 ## Receiving invoices from other MyCompanyDesk users
 
