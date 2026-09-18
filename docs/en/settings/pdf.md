@@ -17,7 +17,7 @@ Both live under **Instellingen** (Settings). See the [settings overview](/en/set
 Go to **Instellingen** and open **Logo en kleur**. This page sets your brand identity:
 
 - **Display name:** the name customers see, if it differs from your registered company name.
-- **Brand colour:** pick any colour, or start from one of the presets. This colour is used on your invoices, quotes, emails and website. A warning appears when a colour is too light to stay readable.
+- **Brand colour:** pick any colour, or start from one of the presets. This colour is used on your website, newsletter, emails, invoices and quotes. A warning appears when a colour is too light to stay readable. If you choose a separate accent colour in Factuurontwerp, invoices, quotes, emails and the payment page follow that colour instead. You can adopt that accent as your brand colour in one click.
 - **Logo:** upload a PNG, JPG or SVG. For photo-style logos there is a one-click background remover. No logo yet? Generate a simple one from your initials and a background colour, right on this page.
 - **Live preview:** a sample header shows your logo and colour together, so you see the result before it reaches a customer.
 
@@ -30,7 +30,7 @@ Go to **Instellingen** and open **Factuurontwerp**. This is the design studio fo
 The quickest route is the **Genereer uit mijn huisstijl** (generate from my brand) button: it builds a complete design around the brand colour you chose under Logo en kleur. Not happy? **Probeer andere** (try another) cycles through different looks. Everything stays editable afterwards:
 
 - **Startpunt** (starting point): six style presets: Klassiek, Modern, Botanisch, Atelier, Editorial and Blanco. Changing any option afterwards turns the design into your own custom variant.
-- **Accentkleur** (accent colour): your brand colour is offered first. When you have a logo, colours sampled from it appear as ready-made swatches. There is also a set of curated shades, and a custom picker for any colour.
+- **Accentkleur** (accent colour): your brand colour is offered first. When you have a logo, colours sampled from it appear as ready-made swatches. There is also a set of curated shades, and a custom picker for any colour. A different accent colour overrides your brand colour on invoices, quotes, emails and the payment page.
 - **Papiertint** (paper tint): white or one of the soft off-white tones (Crème, Greige, Zand, Mist).
 - **Lettertype** (typography): a heading font (Marcellus, Playfair Display, Fraunces or Cormorant) and a text font (Inter, Lato or EB Garamond).
 - **Thema / indeling** (theme and layout): the overall arrangement of the document, plus the density (Compact, Normaal, Ruim). The Botanisch layout has optional decorative artwork you can switch off.
@@ -40,7 +40,7 @@ Changes save automatically and show in the preview within a moment. Want the sta
 
 ## One style for all documents
 
-The design applies to every PDF MyCompanyDesk creates for you: invoices, quotes and payment reminders. You style it once; every document type stays consistent.
+The design applies to every PDF MyCompanyDesk creates for you: invoices, quotes and payment reminders. The colours customers see on emails and the payment page follow the same accent colour. You style it once; every document type stays consistent.
 
 ## Language
 
