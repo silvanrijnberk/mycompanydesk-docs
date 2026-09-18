@@ -65,11 +65,11 @@ Path: `/settings/uiterlijk`
 Branding for invoices, quotes, and outgoing email, with a live preview of the result.
 
 - **Logo upload**: used on every PDF and email header
-- **Brand colour**: one accent colour across your documents and public business page
+- **Brand colour**: one accent colour across your website, newsletter, emails, documents and public business page. If you set a different accent colour in **Factuurontwerp** (invoice design), that colour is what customers see on invoices, quotes, emails and the payment page. A hint under **Logo en kleur** offers a one-click option to make it your workspace brand colour too.
 - **Style presets**: pick a document style, available on Starter and up
 - **PDF footer**: the footer text at the bottom of your documents
 
-There is one style and one brand colour for all document types; a second accent colour no longer exists. For full control over the layout, colours, and font of your invoices and quotes, open the **Factuurontwerp** row (the invoice design studio); see [PDF Customization](/en/settings/pdf).
+There is one default brand colour for all customer surfaces; a second accent colour no longer exists. For full control over the layout, colours, and font of your invoices and quotes, open the **Factuurontwerp** row (the invoice design studio); see [PDF Customization](/en/settings/pdf).
 
 ## Your website
 

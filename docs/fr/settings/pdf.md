@@ -17,7 +17,7 @@ Les deux se trouvent dans les **paramètres**. Consultez l'[aperçu des paramèt
 Allez dans les **paramètres** et ouvrez **Logo et couleur**. Cette page définit votre identité de marque :
 
 - **Nom d'affichage :** le nom que voient vos clients, s'il diffère de votre dénomination enregistrée.
-- **Couleur de marque :** choisissez n'importe quelle couleur, ou partez d'une des propositions. Cette couleur habille vos factures, devis, e-mails et votre site web. Un avertissement apparaît quand une couleur est trop claire pour rester lisible.
+- **Couleur de marque :** choisissez n'importe quelle couleur, ou partez d'une des propositions. Cette couleur s'applique à votre site web, votre newsletter, vos e-mails, vos factures et vos devis. Un avertissement apparaît quand une couleur est trop claire pour rester lisible. Si vous choisissez une couleur d'accentuation différente dans la mise en page des factures, les factures, devis, e-mails et la page de paiement suivent cette couleur. Vous pouvez adopter cet accent comme couleur de marque en un clic.
 - **Logo :** importez un PNG, JPG ou SVG. Pour les logos de type photo, un clic suffit pour retirer l'arrière-plan. Pas encore de logo ? Générez-en un simple à partir de vos initiales et d'une couleur de fond, directement sur cette page.
 - **Aperçu en direct :** un en-tête d'exemple montre votre logo et votre couleur ensemble, pour voir le résultat avant vos clients.
 
@@ -30,7 +30,7 @@ Allez dans les **paramètres** et ouvrez **Mise en page des factures**. C'est le
 Le chemin le plus rapide est le bouton **Générer depuis mon identité visuelle** : il construit une mise en page complète autour de la couleur de marque choisie sous Logo et couleur. Pas convaincu ? **Essayer un autre style** passe à une autre variante. Tout reste ensuite modifiable :
 
 - **Point de départ :** six styles prédéfinis : Classique, Moderne, Botanique, Atelier, Éditorial et Vierge. Dès que vous modifiez un réglage, la mise en page devient votre propre variante.
-- **Couleur d'accentuation :** votre couleur de marque vient en premier. Si vous avez un logo, des couleurs qui en sont extraites apparaissent comme pastilles prêtes à l'emploi. S'y ajoutent une sélection de teintes choisies et un sélecteur libre pour n'importe quelle couleur.
+- **Couleur d'accentuation :** votre couleur de marque vient en premier. Si vous avez un logo, des couleurs qui en sont extraites apparaissent comme pastilles prêtes à l'emploi. S'y ajoutent une sélection de teintes choisies et un sélecteur libre pour n'importe quelle couleur. Une couleur d'accentuation différente remplace votre couleur de marque sur les factures, devis, e-mails et la page de paiement.
 - **Teinte du papier :** blanc ou l'une des douces teintes cassées (Crème, Grège, Sable, Brume).
 - **Police :** une police de titre (Marcellus, Playfair Display, Fraunces ou Cormorant) et une police de texte (Inter, Lato ou EB Garamond).
 - **Thème / mise en page :** l'organisation générale du document, plus la densité (Compact, Normal, Aéré). La mise en page Botanique propose des ornements décoratifs facultatifs que vous pouvez désactiver.
@@ -40,7 +40,7 @@ Les modifications sont enregistrées automatiquement et apparaissent aussitôt d
 
 ## Un style pour tous les documents
 
-La mise en page s'applique à chaque PDF que MyCompanyDesk crée pour vous : factures, devis et relances de paiement. Vous la réglez une fois ; chaque type de document reste cohérent.
+La mise en page s'applique à chaque PDF que MyCompanyDesk crée pour vous : factures, devis et relances de paiement. Les couleurs que les clients voient sur les e-mails et la page de paiement suivent le même accent. Vous la réglez une fois ; chaque type de document reste cohérent.
 
 ## Langue
 

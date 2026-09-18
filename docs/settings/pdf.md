@@ -17,7 +17,7 @@ Beide vind je onder **Instellingen**. Zie het [instellingenoverzicht](/settings/
 Ga naar **Instellingen** en open **Logo en kleur**. Deze pagina bepaalt je merkidentiteit:
 
 - **Weergavenaam:** de naam die klanten zien, als die afwijkt van je geregistreerde bedrijfsnaam.
-- **Merkkleur:** kies elke kleur, of begin met een van de voorinstellingen. Deze kleur wordt gebruikt op je facturen, offertes, e-mails en website. Er verschijnt een waarschuwing als een kleur te licht is om leesbaar te blijven.
+- **Merkkleur:** kies elke kleur, of begin met een van de voorinstellingen. Deze kleur geldt voor je website, nieuwsbrief, e-mails, facturen en offertes. Er verschijnt een waarschuwing als een kleur te licht is om leesbaar te blijven. Heb je in Factuurontwerp een eigen accentkleur gekozen? Dan volgen facturen, offertes, e-mails en de betaalpagina die kleur. Je kunt die accentkleur in één klik ook als merkkleur instellen.
 - **Logo:** upload een PNG, JPG of SVG. Voor fotologo's is er een achtergrondverwijderaar met één klik. Nog geen logo? Genereer er direct op deze pagina een uit je initialen en een achtergrondkleur.
 - **Livevoorbeeld:** een voorbeeldkop toont je logo en kleur samen, zodat je het resultaat ziet voordat een klant het ziet.
 
@@ -30,7 +30,7 @@ Ga naar **Instellingen** en open **Factuurontwerp**. Dit is de ontwerpstudio voo
 De snelste route is de knop **Genereer uit mijn huisstijl**: die bouwt een compleet ontwerp rond de merkkleur die je onder Logo en kleur hebt gekozen. Niet tevreden? **Probeer andere** wisselt naar een andere look. Alles blijft daarna aanpasbaar:
 
 - **Startpunt**: zes stijlvoorinstellingen: Klassiek, Modern, Botanisch, Atelier, Editorial en Blanco. Zodra je daarna iets aanpast, wordt het ontwerp je eigen variant.
-- **Accentkleur**: je merkkleur staat vooraan. Heb je een logo, dan verschijnen kleuren uit je logo als kant-en-klare stalen. Er is ook een set uitgekozen tinten, plus een eigen kiezer voor elke kleur.
+- **Accentkleur**: je merkkleur staat standaard vooraan. Heb je een logo, dan verschijnen kleuren uit je logo als kant-en-klare stalen. Er is ook een set uitgekozen tinten, plus een eigen kiezer voor elke kleur. Een afwijkende accentkleur overschrijft je merkkleur op facturen, offertes, e-mails en de betaalpagina.
 - **Papiertint**: wit of een van de zachte gebroken-witte tinten (Crème, Greige, Zand, Mist).
 - **Lettertype**: een koplettertype (Marcellus, Playfair Display, Fraunces of Cormorant) en een tekstlettertype (Inter, Lato of EB Garamond).
 - **Thema / indeling**: de algemene opbouw van het document, plus de dichtheid (Compact, Normaal, Ruim). De indeling Botanisch heeft optioneel decoratief artwork dat je kunt uitzetten.
@@ -40,7 +40,7 @@ Wijzigingen worden automatisch opgeslagen en zijn binnen een moment zichtbaar in
 
 ## Eén stijl voor alle documenten
 
-Het ontwerp geldt voor elke PDF die MyCompanyDesk voor je maakt: facturen, offertes en betalingsherinneringen. Je stelt het één keer in; elk documenttype blijft consistent.
+Het ontwerp geldt voor elke PDF die MyCompanyDesk voor je maakt: facturen, offertes en betalingsherinneringen. De kleuren die klanten zien op e-mails en de betaalpagina volgen dezelfde accentkleur. Je stelt het één keer in; elk documenttype blijft consistent.
 
 ## Taal
 

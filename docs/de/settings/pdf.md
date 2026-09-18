@@ -17,7 +17,7 @@ Beide finden Sie in den **Einstellungen**. Die vollständige Übersicht steht in
 Gehen Sie zu den **Einstellungen** und öffnen Sie **Logo und Farbe**. Diese Seite bestimmt Ihre Markenidentität:
 
 - **Anzeigename:** der Name, den Kunden sehen, falls er von Ihrem eingetragenen Firmennamen abweicht.
-- **Markenfarbe:** Wählen Sie eine beliebige Farbe oder starten Sie mit einer der Voreinstellungen. Diese Farbe erscheint auf Ihren Rechnungen, Angeboten, E-Mails und Ihrer Website. Eine Warnung erscheint, wenn eine Farbe zu hell ist, um lesbar zu bleiben.
+- **Markenfarbe:** Wählen Sie eine beliebige Farbe oder starten Sie mit einer der Voreinstellungen. Diese Farbe gilt für Ihre Website, Ihren Newsletter, Ihre E-Mails, Rechnungen und Angebote. Eine Warnung erscheint, wenn eine Farbe zu hell ist, um lesbar zu bleiben. Wenn Sie im Rechnungsdesign einen eigenen Akzent wählen, folgen Rechnungen, Angebote, E-Mails und die Zahlungsseite dieser Farbe. Sie können diesen Akzent mit einem Klick auch als Markenfarbe übernehmen.
 - **Logo:** Laden Sie ein PNG, JPG oder SVG hoch. Für Foto-Logos gibt es eine Hintergrundentfernung mit einem Klick. Noch kein Logo? Erzeugen Sie direkt auf dieser Seite eines aus Ihren Initialen und einer Hintergrundfarbe.
 - **Live-Vorschau:** Ein Beispielkopf zeigt Logo und Farbe zusammen, damit Sie das Ergebnis sehen, bevor ein Kunde es sieht.
 
@@ -30,7 +30,7 @@ Gehen Sie zu den **Einstellungen** und öffnen Sie **Rechnungsdesign**. Das ist 
 Der schnellste Weg ist die Schaltfläche **Aus meinem Corporate Design generieren**: Sie baut ein komplettes Design rund um die Markenfarbe, die Sie unter Logo und Farbe gewählt haben. Nicht zufrieden? **Anderen Look ausprobieren** wechselt zu einer anderen Variante. Alles bleibt danach anpassbar:
 
 - **Ausgangspunkt:** sechs Stilvorlagen: Klassisch, Modern, Botanisch, Atelier, Editorial und Blanko. Sobald Sie danach etwas ändern, wird das Design zu Ihrer eigenen Variante.
-- **Akzentfarbe:** Ihre Markenfarbe steht an erster Stelle. Haben Sie ein Logo, erscheinen daraus entnommene Farben als fertige Farbfelder. Dazu kommen eine Auswahl kuratierter Töne und ein eigener Farbwähler für jede Farbe.
+- **Akzentfarbe:** Ihre Markenfarbe steht an erster Stelle. Haben Sie ein Logo, erscheinen daraus entnommene Farben als fertige Farbfelder. Dazu kommen eine Auswahl kuratierter Töne und ein eigener Farbwähler für jede Farbe. Ein abweichender Akzent überschreibt Ihre Markenfarbe auf Rechnungen, Angeboten, E-Mails und der Zahlungsseite.
 - **Papierton:** Weiß oder einer der sanften gebrochen-weißen Töne (Creme, Greige, Sand, Nebel).
 - **Schriftart:** eine Überschriftenschrift (Marcellus, Playfair Display, Fraunces oder Cormorant) und eine Textschrift (Inter, Lato oder EB Garamond).
 - **Thema / Layout:** der Gesamtaufbau des Dokuments plus die Dichte (Kompakt, Normal, Luftig). Das Layout Botanisch hat optionale dekorative Elemente, die sich abschalten lassen.
@@ -40,7 +40,7 @@ Der schnellste Weg ist die Schaltfläche **Aus meinem Corporate Design generiere
 
 ## Ein Stil für alle Dokumente
 
-Das Design gilt für jedes PDF, das MyCompanyDesk für Sie erstellt: Rechnungen, Angebote und Zahlungserinnerungen. Sie gestalten es einmal; jeder Dokumenttyp bleibt konsistent.
+Das Design gilt für jedes PDF, das MyCompanyDesk für Sie erstellt: Rechnungen, Angebote und Zahlungserinnerungen. Die Farben, die Kunden auf E-Mails und der Zahlungsseite sehen, folgen demselben Akzent. Sie gestalten es einmal; jeder Dokumenttyp bleibt konsistent.
 
 ## Sprache
 
