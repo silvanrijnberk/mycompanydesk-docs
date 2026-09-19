@@ -1,7 +1,7 @@
 ---
 title: Domeinen, website en inbox
 description: "Eigen domeinen, de gehoste bedrijfswebsite en de gedeelde inbox komen als een bundel, achter de vlaggen custom_domains en public_business_page."
-last_verified: 2026-08-15
+last_verified: 2026-09-19
 ---
 
 # Domeinen, website en inbox
@@ -200,6 +200,12 @@ De openbare site wordt getoond op de best beschikbare URL die het bedrijf bezit:
 
 Je kunt de site uitbreiden met het **Afspraken**-blok. Bezoekers kunnen dan direct via je website een afspraak inplannen. Zie [Online afspraken](/features/site-bookings).
 
+### Je site offline zetten
+
+Als je je site tijdelijk wilt pauzeren, gebruik dan de schakelaar **Offline** in het tabblad **Overzicht**. Bezoekers en zoekmachines krijgen zolang een 503-pagina met een `Retry-After`-header. Het voorgestelde hercheckinterval begint bij vijf minuten en loopt op tot een dag voor een site die langer dan een dag offline staat.
+
+Na drie dagen offline toont de statuskaart in Overzicht een waarschuwing: Google beschouwt een lange onderbreking als een verwijderde pagina en het duurt weken voordat hij weer in de zoekresultaten meedoet nadat je de site hebt hersteld. Zo weet je of de downtime nog bewust loopt.
+
 ### Pakketten
 
 `/website/pakketten` toont goedgekeurde, voorgestylede sitepakketten. Je kunt zoeken op vak of stijl. Een pakket kiezen vervangt je conceptsite (pagina's, secties en ontwerptokens), maar publiceert nooit automatisch; je bekijkt het resultaat in de sitebouwer en publiceert zelf wanneer je tevreden bent. Oude `/website/ontwerpen`-links verwijzen hierheen door.
@@ -245,6 +251,8 @@ De inbox ververst automatisch zolang de tab open staat. De threadlijst pollt elk
 #### Markeren als ongelezen
 
 Je kunt een geopende thread vanuit de toolbar als ongelezen markeren. Waar de ongelezen-status eerder alleen lokaal werd bijgehouden en bij een refetch verdween, wordt dit nu server-side opgeslagen. De sidebar-badge telt ongelezen berichten, niet threads met ongelezen berichten, en wordt dienovereenkomstig bijgewerkt. De thread blijft ongelezen bij paginaherladingen, browserherstart en op andere apparaten totdat je hem opnieuw opent.
+
+Als een thread vanuit de lijst naar Prullenbak, Spam, Gesloten of Snoozed wordt verplaatst terwijl het leesvenster openstaat, sluit dat venster automatisch. Zo blijft het leesvenster altijd synchroon met de map die je bekijkt, zodat je geen antwoord blijft schrijven op een gesprek dat al uit het huidige overzicht is verdwenen.
 
 ### Verkopen
 

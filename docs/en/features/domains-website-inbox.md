@@ -1,7 +1,7 @@
 ---
 title: Domains, Website, and Inbox
 description: "Custom domains, the hosted business website and the shared inbox ship as one pre-launch bundle behind the custom_domains and public_business_page flags."
-last_verified: 2026-08-15
+last_verified: 2026-09-19
 ---
 
 # Domains, Website, and Inbox
@@ -200,6 +200,12 @@ The public site is served at the highest-priority URL the company owns: custom d
 
 You can extend the site with the **Appointments** block so visitors can book an appointment directly from your website. See [Online appointments](/en/features/site-bookings).
 
+### Taking your site offline
+
+If you need to pause your site, use the **Offline** toggle in the **Overview** tab. While the site is offline, visitors and search crawlers receive a 503 page with a `Retry-After` header. The suggested retry interval starts at five minutes and scales up to one day for a site that has been down for a day or longer.
+
+After three days offline, the Overview card shows a warning that Google treats a long outage as a removed page and that it can take weeks to regain search visibility once the site comes back. This warning is shown to you so you can decide whether the outage is still intentional.
+
 ### Site packages
 
 `/website/pakketten` is a gallery of approved, pre-styled site packages. You can search by industry or style. Picking a package replaces your draft site (pages, sections, and theme tokens) but never publishes; you review the result in the site builder and publish when you are ready. Older `/website/ontwerpen` links redirect here.
@@ -245,6 +251,8 @@ The inbox refreshes automatically while the tab is open. The thread list polls e
 #### Mark as unread
 
 You can mark any open thread as unread from the toolbar. Unlike earlier versions where the unread state was a local-only toggle that a refetch would discard, this is now persisted server-side. The sidebar badge counts unread messages, not threads with unread, and updates accordingly. The thread stays unread across page reloads, browser restarts, and devices until you open it again.
+
+If a thread is moved to Trash, Spam, Closed or Snoozed from the list while its reader is open, the reader closes automatically. This keeps the detail view in sync with the folder you are viewing, so you don't keep composing a reply to a thread that has already left the current view.
 
 ### Sales
 
