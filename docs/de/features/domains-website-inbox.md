@@ -1,7 +1,7 @@
 ---
 title: Domains, Website und Posteingang
 description: "Eigene Domains, die gehostete Unternehmenswebsite und das gemeinsame Postfach kommen als ein Bündel, hinter custom_domains und public_business_page."
-last_verified: 2026-08-15
+last_verified: 2026-09-19
 ---
 
 # Domains, Website und Posteingang
@@ -200,6 +200,12 @@ Die öffentliche Website wird unter der am besten geeigneten URL des Unternehmen
 
 Sie können die Website mit dem **Termine**-Block erweitern. Besucher können dann direkt über Ihre Website einen Termin buchen. Siehe [Online-Termine](/de/features/site-bookings).
 
+### Website vorübergehend offline schalten
+
+Wenn Sie Ihre Website pausieren möchten, verwenden Sie den Schalter **Offline** im Tab **Übersicht**. Besucher und Suchmaschinen-Crawler erhalten solange eine 503-Seite mit einem `Retry-After`-Header. Das vorgeschlagene erneute Prüfintervall beginnt bei fünf Minuten und steigt auf bis zu einen Tag an, wenn die Website länger als einen Tag offline ist.
+
+Nach drei Tagen Offline-Betrieb zeigt die Übersichtskarte einen Hinweis: Google behandelt eine längere Unterbrechung als entfernte Seite, und es kann Wochen dauern, bis die Sichtbarkeit in der Suche wiederhergestellt ist, sobald die Website zurückgeschaltet wird. Damit erkennen Sie, ob die Ausfallzeit noch beabsichtigt ist.
+
 ### Site-Pakete
 
 `/website/pakketten` ist eine Galerie genehmigter, vorgestylter Site-Pakete. Sie können nach Branche oder Stil suchen. Wenn Sie ein Paket wählen, wird Ihre Entwurfs-Website ersetzt (Seiten, Abschnitte und Design-Tokens), aber niemals automatisch veröffentlicht; Sie prüfen das Ergebnis im Website-Builder und veröffentlichen es selbst, wenn Sie bereit sind. Ältere `/website/ontwerpen`-Links leiten hierhin weiter.
@@ -245,6 +251,8 @@ Der Posteingang aktualisiert sich automatisch, während der Tab geöffnet ist. D
 #### Als ungelesen markieren
 
 Sie können einen geöffneten Thread über die Toolbar als ungelesen markieren. Anders als in früheren Versionen, in denen der Ungelesen-Status nur lokal gespeichert und bei einem Refetch verloren war, wird dieser nun serverseitig persistiert. Das Seitenleisten-Badge zählt ungelesene Nachrichten, nicht Threads mit ungelesenen Nachrichten, und wird entsprechend aktualisiert. Der Thread bleibt bei Seitenaktualisierungen, Browser-Neustarts und geräteübergreifend ungelesen, bis Sie ihn erneut öffnen.
+
+Wird ein Thread aus der Liste in den Papierkorb, Spam, Geschlossen- oder Snoozed-Status verschoben, während das Lesefenster geöffnet ist, schließt es sich automatisch. So bleibt die Detailansicht immer mit dem Ordner synchron, den Sie gerade betrachten, und Sie schreiben keine Antwort auf einen Thread, der den aktuellen Bereich bereits verlassen hat.
 
 ### Verkäufe
 

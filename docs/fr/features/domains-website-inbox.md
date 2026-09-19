@@ -1,7 +1,7 @@
 ---
 title: Domaines, site web et boite de reception
 description: "Domaines personnalisés, site vitrine hébergé et boîte partagée arrivent en un seul lot, derrière custom_domains et public_business_page."
-last_verified: 2026-08-15
+last_verified: 2026-09-19
 ---
 
 # Domaines, site web et boite de reception
@@ -200,6 +200,12 @@ Le site public est diffuse a l'URL la plus prioritaire disponible pour l'entrepr
 
 Vous pouvez enrichir le site avec le bloc **Rendez-vous**. Les visiteurs peuvent alors prendre rendez-vous directement depuis votre site. Voir [Rendez-vous en ligne](/fr/features/site-bookings).
 
+### Mettre le site hors ligne
+
+Si vous devez interrompre temporairement votre site, utilisez le bouton **Hors ligne** dans l'onglet **Aperçu**. Tant que le site est hors ligne, les visiteurs et les robots d'indexation reçoivent une page 503 avec un en-tête `Retry-After`. L'intervalle de nouvelle vérification recommandé commence à cinq minutes et monte jusqu'à un jour pour un site resté hors ligne plus d'un jour.
+
+Après trois jours hors ligne, la carte de l'aperçu affiche un avertissement : Google considère une interruption prolongée comme une page supprimée, et il faut des semaines pour retrouver sa visibilité dans les résultats de recherche après le rétablissement du site. Ce message vous permet de vérifier que l'interruption reste intentionnelle.
+
 ### Forfaits site
 
 `/website/pakketten` est une galerie de forfaits site prestyles et approuves. Vous pouvez rechercher par secteur ou par style. Choisir un forfait remplace votre site brouillon (pages, sections et tokens de theme), mais ne publie jamais automatiquement ; vous verifiez le resultat dans le constructeur de site et publiez vous-meme quand vous etes pret. Les anciens liens `/website/ontwerpen` redirigent ici.
@@ -245,6 +251,8 @@ La boite de reception s'actualise automatiquement tant que l'onglet est ouvert. 
 #### Marquer comme non lu
 
 Vous pouvez marquer un fil ouvert comme non lu depuis la barre d'outils. Contrairement aux versions precedentes ou l'etat non lu etait uniquement local et perdu au prochain rafraichissement, il est desormais persiste côte serveur. Le badge de la barre laterale compte les messages non lus, pas les fils avec des messages non lus, et se met a jour en consequence. Le fil reste non lu apres les rechargements de page, les redemarrages du navigateur et sur tous vos appareils, jusqu'a ce que vous le rouvriez.
+
+Le lecteur de thread suit aussi les changements d'état depuis le reste de la boîte de réception. Si vous déplacez une conversation vers la Corbeille, le Spam, Fermé ou En attente pendant que son panneau de lecture est ouvert, le panneau se ferme automatiquement. La vue détail reste ainsi synchronisée avec le dossier que vous consultez, et vous ne continuez pas à rédiger une réponse à un fil qui a déjà quitté la vue actuelle.
 
 ### Ventes
 
