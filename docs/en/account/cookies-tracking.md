@@ -49,4 +49,4 @@ This means anonymous page views in the app are not linked across visits. The sig
 - Enable Do Not Track in your browser to stop analytics identifiers from being stored.
 - Clear your browser's cookies and local storage for mycompanydesk.nl / mycompanydesk.com to remove stored identifiers.
 
-For questions, contact [support@mycompanydesk.com](mailto:support@mycompanydesk.com).
+For questions, contact [support@mycompanydesk.nl](mailto:support@mycompanydesk.nl).

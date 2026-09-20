@@ -49,4 +49,4 @@ Dit betekent dat anonieme paginaweergaven in de app niet over meerdere bezoeken 
 - Schakel Do Not Track in in je browser om opslag van analytics-ids te voorkomen.
 - Wis de cookies en lokale opslag voor mycompanydesk.nl / mycompanydesk.com in je browser om opgeslagen ids te verwijderen.
 
-Voor vragen kun je contact opnemen met [support@mycompanydesk.com](mailto:support@mycompanydesk.com).
+Voor vragen kun je contact opnemen met [support@mycompanydesk.nl](mailto:support@mycompanydesk.nl).
