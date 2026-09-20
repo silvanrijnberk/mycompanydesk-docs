@@ -49,4 +49,4 @@ Das bedeutet, dass anonyme Seitenaufrufe in der App nicht über mehrere Besuche 
 - Aktivieren Sie Do Not Track in Ihrem Browser, um die Speicherung von Analytics-IDs zu verhindern.
 - Löschen Sie Cookies und lokalen Speicher für mycompanydesk.nl / mycompanydesk.com in Ihrem Browser, um gespeicherte IDs zu entfernen.
 
-Bei Fragen kontaktieren Sie [support@mycompanydesk.com](mailto:support@mycompanydesk.com).
+Bei Fragen kontaktieren Sie [support@mycompanydesk.nl](mailto:support@mycompanydesk.nl).

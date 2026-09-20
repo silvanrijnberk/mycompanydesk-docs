@@ -49,4 +49,4 @@ Cela signifie que les pages vues anonymes dans l'application ne sont pas reliée
 - Activez Do Not Track dans votre navigateur pour empêcher le stockage des identifiants analytics.
 - Effacez les cookies et le stockage local pour mycompanydesk.nl / mycompanydesk.com dans votre navigateur pour supprimer les identifiants stockés.
 
-Pour toute question, contactez [support@mycompanydesk.com](mailto:support@mycompanydesk.com).
+Pour toute question, contactez [support@mycompanydesk.nl](mailto:support@mycompanydesk.nl).
