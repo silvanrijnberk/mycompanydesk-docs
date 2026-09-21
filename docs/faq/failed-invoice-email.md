@@ -1,9 +1,9 @@
 ---
 title: "Mislukte factuur-e-mail"
 description: "Zo los je een mislukte factuur-e-mail op: controleer of het juiste e-mailadres bij de klant staat."
-last_verified: 2026-07-02
+last_verified: 2026-09-21
 chatbot:
-  triggers: ["failed invoice email", "invoice email failed", "failed send invoice", "invoice not sending", "invoice email issue", "fix failed invoice email", "mislukte factuur-e-mail", "factuurmail mislukt", "factuur e-mail mislukt", "factuur versturen mislukt", "hoe los ik een mislukte factuur-e-mail op", "fehlgeschlagene rechnungs-e-mail", "rechnungs-e-mail fehlgeschlagen", "rechnung senden fehlgeschlagen", "wie behebe ich eine fehlgeschlagene rechnungs-e-mail", "e-mail de facture echoue", "email facture echoue", "envoi facture echec", "comment corriger un e-mail de facture echoue"]
+  triggers: ["failed invoice email", "invoice email failed", "failed send invoice", "invoice not sending", "invoice email issue", "fix failed invoice email", "mislukte factuur-e-mail", "factuurmail mislukt", "factuur e-mail mislukt", "factuur versturen mislukt", "hoe los ik een mislukte factuur-e-mail op", "te veel ontvangers", "inhoudscontrole", "bericht vastgehouden", "fehlgeschlagene rechnungs-e-mail", "rechnungs-e-mail fehlgeschlagen", "rechnung senden fehlgeschlagen", "wie behebe ich eine fehlgeschlagene rechnungs-e-mail", "e-mail de facture echoue", "email facture echoue", "envoi facture echec", "comment corriger un e-mail de facture echoue", "recipient cap", "content hold", "message retenu"]
   actions:
     - { label: "Open invoices", to: "/invoices" }
     - { label: "Open email settings", to: "/settings/email" }
@@ -16,5 +16,12 @@ Zo los je een mislukte factuur-e-mail op:
 3. Controleer je e-mailinstellingen via Instellingen → "E-mail"
 4. Verstuur de factuur opnieuw; ook een concept kun je gewoon mailen, Versturen is de hoofdactie en rondt het concept in dezelfde stap af
 5. Komt de mail nog steeds niet aan? Vraag de klant dan de spam- of ongewenste-mailmap te checken
+
+## Nieuwe accounts en anti-misbruikgrensjes
+
+Is de factuur net verstuurd vanuit een nieuwe werkruimte? Dan kan het mislukken door een van onze anti-misbruikgrensjes:
+
+- Het bericht heeft te veel ontvangers (aan, cc en bcc samen). De foutmelding geeft het huidige limiet; splits het bericht in meerdere e-mails.
+- Het bericht wordt vastgehouden voor inhoudscontrole. Je ziet dat het nog bekeken wordt en meestal is dat binnen een uur afgerond. Vul je KVK-nummer in bij je bedrijfsgegevens om deze controle voorgoed over te slaan.
 
 Tip: Bekijk eerst het voorbeeld van de factuur als je zeker wilt weten dat je de juiste klant en het juiste document opnieuw verstuurt.

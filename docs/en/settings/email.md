@@ -1,7 +1,7 @@
 ---
 title: Email
 description: "Choose which address your invoices and quotes go out from and set the sign-off under every message. Available on every plan."
-last_verified: 2026-07-02
+last_verified: 2026-09-21
 ---
 
 # Email
@@ -50,6 +50,13 @@ Every item you fill in is included; anything left empty is simply skipped. These
 ## Email texts
 
 Invoice, quote, and reminder emails use MyCompanyDesk's standard, well-tested texts, in your document language. There are no per-document templates to maintain. Before a document goes out, the send window still lets you adjust the recipient, subject, and message for that one email, and choose whether to include the view button, download button, PDF attachment, and invoice lines. See [Email templates](/en/faq/email-template).
+
+## Sending: limits and checks
+
+MyCompanyDesk blocks outgoing mail that looks like abuse, so our shared sending domain stays trustworthy for everyone. Very new accounts therefore have extra guardrails.
+
+- There is a maximum number of recipients per message (to, cc and bcc combined). A new account starts with a lower maximum for its first period; the exact limit is shown in the error if you exceed it. Split the message into multiple emails if you need to reach more people.
+- Messages from new accounts can sometimes be held for review. You will see that the message is still being checked, and it usually clears within an hour. Add your KVK number in your company details to skip this check permanently.
 
 ## Receiving: Inbox settings
 

@@ -50,6 +50,13 @@ Alles wat je invult nemen we mee; wat leeg blijft, laten we weg. Deze velden dee
 
 Voor factuur-, offerte- en herinneringsmails gebruikt MyCompanyDesk standaard, goed geteste teksten in je documenttaal. Er zijn geen sjablonen per documenttype om te onderhouden. Voordat een document de deur uit gaat, kun je in het verzendvenster nog wel de ontvanger, het onderwerp en het bericht van die ene e-mail aanpassen, en kiezen of je de bekijkknop, downloadknop, PDF-bijlage en factuurregels meestuurt. Zie [E-mailsjablonen](/faq/email-template).
 
+## Verzenden: limieten en controle
+
+MyCompanyDesk houdt uitgaande post tegen die eruitziet als misbruik, zodat ons gedeelde verzenddomein betrouwbaar blijft voor alle gebruikers. Voor hele nieuwe accounts gelden daarom extra grenzen.
+
+- Er geldt een maximum aan het aantal ontvangers per bericht (aan, cc en bcc samen). Een nieuw account krijgt in de eerste periode een lager maximum; het exacte limiet staat in de foutmelding als je het overschrijdt. Splits het bericht in meerdere e-mails als je meer mensen wilt bereiken.
+- Berichten van nieuwe accounts kunnen soms even vastgehouden worden voor controle. Je ziet dan dat het bericht nog bekeken wordt en meestal is dat binnen een uur afgerond. Vul je KVK-nummer in bij je bedrijfsgegevens om deze controle voorgoed over te slaan.
+
 ## Ontvangen: inboxinstellingen
 
 Alles over het ontvangen van mail vind je op de instellingenpagina van de inbox (**Inbox → Instellingen**):
