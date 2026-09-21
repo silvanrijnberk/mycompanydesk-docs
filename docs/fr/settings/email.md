@@ -50,6 +50,13 @@ Tout ce que vous remplissez est repris ; ce qui reste vide est simplement omis. 
 
 Les e-mails de facture, de devis et de rappel utilisent les textes standard et éprouvés de MyCompanyDesk, dans la langue de vos documents. Il n'y a aucun modèle par type de document à entretenir. Avant l'envoi d'un document, la fenêtre d'envoi vous permet encore d'ajuster le destinataire, l'objet et le message de cet e-mail précis, et de choisir d'inclure le bouton de consultation, le bouton de téléchargement, la pièce jointe PDF et les lignes de facture. Voir [Modèles d'e-mail](/fr/faq/email-template).
 
+## Envoi : limites et contrôle
+
+MyCompanyDesk retient les messages sortants qui ressemblent à un abus, afin que notre domaine d'envoi partagé reste fiable pour tout le monde. Les tout nouveaux comptes ont donc des limites supplémentaires.
+
+- Il existe un nombre maximum de destinataires par message (à, cc et cci ensemble). Un compte nouvellement créé commence avec un maximum plus bas pendant les premiers jours; la limite exacte s'affiche dans le message d'erreur si vous la dépassez. Divisez le message en plusieurs e-mails si vous devez joindre plus de personnes.
+- Les messages des nouveaux comptes peuvent parfois être retenus pour vérification. Vous verrez alors que le message est encore examiné et c'est généralement terminé sous une heure. Renseignez votre numéro KVK dans vos informations d'entreprise pour passer ce contrôle de façon permanente.
+
 ## Recevoir : paramètres de la boîte de réception
 
 Tout ce qui concerne la réception du courrier se trouve sur la page de paramètres de la boîte de réception (**Boîte de réception → Paramètres**) :

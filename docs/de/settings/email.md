@@ -50,6 +50,13 @@ Alles, was Sie ausfüllen, wird übernommen; was leer bleibt, wird einfach wegge
 
 Rechnungs-, Angebots- und Erinnerungs-E-Mails verwenden die standardmäßigen, gut erprobten Texte von MyCompanyDesk, in Ihrer Dokumentsprache. Es gibt keine Vorlagen pro Dokumenttyp zu pflegen. Bevor ein Dokument verschickt wird, können Sie im Versandfenster weiterhin Empfänger, Betreff und Nachricht dieser einen E-Mail anpassen und wählen, ob Ansicht-Button, Download-Button, PDF-Anhang und Rechnungspositionen enthalten sein sollen. Siehe [E-Mail-Vorlagen](/de/faq/email-template).
 
+## Versenden: Grenzen und Prüfung
+
+MyCompanyDesk hält ausgehende Post zurück, die nach Missbrauch aussieht, damit unsere gemeinsame Versanddomain für alle Nutzer verlässlich bleibt. Für ganz neue Konten gelten deshalb zusätzliche Grenzen.
+
+- Es gibt eine maximale Anzahl Empfänger pro Nachricht (an, cc und bcc zusammen). Ein neues Konto beginnt mit einem niedrigeren Maximum für die ersten Tage; das genaue Limit zeigt die Fehlermeldung, wenn Sie es überschreiten. Teilen Sie die Nachricht in mehrere E-Mails auf, wenn Sie mehr Personen erreichen möchten.
+- Nachrichten neuer Konten können manchmal zur Prüfung zurückgehalten werden. Sie sehen dann, dass die Nachricht noch geprüft wird, und meist ist das innerhalb einer Stunde erledigt. Tragen Sie Ihre KVK-Nummer in den Unternehmensdaten ein, um diese Prüfung dauerhaft zu überspringen.
+
 ## Empfangen: Posteingang-Einstellungen
 
 Alles rund um den Mail-Empfang finden Sie auf der Einstellungsseite des Posteingangs (**Posteingang → Einstellungen**):
