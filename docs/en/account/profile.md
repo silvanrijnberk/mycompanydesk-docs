@@ -1,7 +1,7 @@
 ---
 title: Your personal settings
 description: "Your name, email address, password and personal preferences live in the Over jou group at the top of Settings and save while you type."
-last_verified: 2026-08-10
+last_verified: 2026-09-22
 ---
 
 # Your personal settings
@@ -16,7 +16,7 @@ Your name, email address and profile photo.
 
 - **First name** and **Last name**. Your name also appears on your invoices.
 - **Email address**. This is your login and it cannot be changed here; the field is read only.
-- **Profile photo**. Upload a PNG, JPG or WebP image up to 5 MB. Customers see it on emails you send. A photo is optional, and you can remove it again at any time.
+- **Profile photo**. Upload a PNG, JPG or WebP image up to 5 MB and crop it before it goes live: drag the photo to move it and zoom until your head sits in the circle. Customers see it on emails you send. If you create your account with Google or Microsoft, we adopt your profile photo from there automatically; that only happens at sign-up, so replacing or removing the photo later is always your call. A photo is optional, and you can remove it again at any time.
 
 ## Weergave (display)
 

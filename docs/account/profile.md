@@ -1,7 +1,7 @@
 ---
 title: Je persoonlijke instellingen
 description: "Je naam, e-mailadres, wachtwoord en persoonlijke voorkeuren staan in de groep Over jou bovenaan Instellingen en bewaren zichzelf terwijl je typt."
-last_verified: 2026-08-10
+last_verified: 2026-09-22
 ---
 
 # Je persoonlijke instellingen
@@ -16,7 +16,7 @@ Je naam, e-mailadres en profielfoto.
 
 - **Voornaam** en **achternaam**. Je naam komt ook op je facturen te staan.
 - **E-mailadres**. Dit is je login en kun je hier niet wijzigen; het veld is alleen-lezen.
-- **Profielfoto**. Upload een PNG, JPG of WebP van maximaal 5 MB. Klanten zien de foto bij e-mails die je stuurt. Een foto is niet verplicht en je kunt hem altijd weer verwijderen.
+- **Profielfoto**. Upload een PNG, JPG of WebP van maximaal 5 MB en snij hem bij voordat hij live gaat: sleep de foto om hem te verschuiven en zoom tot je hoofd goed in de cirkel staat. Klanten zien de foto bij e-mails die je stuurt. Maak je je account aan met Google of Microsoft, dan nemen we je profielfoto daar automatisch van over; dat gebeurt alleen bij het aanmaken van je account, daarna is vervangen of weghalen altijd jouw keus. Een foto is niet verplicht en je kunt hem altijd weer verwijderen.
 
 ## Weergave
 

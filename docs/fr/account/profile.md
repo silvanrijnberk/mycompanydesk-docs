@@ -1,7 +1,7 @@
 ---
 title: Vos paramètres personnels
 description: "Votre nom, votre adresse e-mail, votre mot de passe et vos préférences se trouvent en haut des paramètres et s'enregistrent pendant la saisie."
-last_verified: 2026-08-10
+last_verified: 2026-09-22
 ---
 
 # Vos paramètres personnels
@@ -16,7 +16,7 @@ Votre nom, votre adresse e-mail et votre photo de profil.
 
 - **Prénom** et **nom**. Votre nom figure aussi sur vos factures.
 - **Adresse e-mail**. C'est votre identifiant de connexion et elle ne peut pas être modifiée ici; le champ est en lecture seule.
-- **Photo de profil**. Téléversez un PNG, JPG ou WebP de 5 Mo maximum. Vos clients la voient sur les e-mails que vous envoyez. La photo est facultative et vous pouvez la retirer à tout moment.
+- **Photo de profil**. Téléversez un PNG, JPG ou WebP de 5 Mo maximum et recadrez-le avant qu'il ne soit en ligne : faites glisser la photo pour la déplacer et zoomez jusqu'à ce que votre tête soit bien dans le cercle. Vos clients la voient sur les e-mails que vous envoyez. Si vous créez votre compte avec Google ou Microsoft, nous reprenons votre photo de profil automatiquement ; cela n'arrive qu'à la création du compte, ensuite remplacer ou retirer la photo reste toujours votre décision. La photo est facultative et vous pouvez la retirer à tout moment.
 
 ## Affichage
 

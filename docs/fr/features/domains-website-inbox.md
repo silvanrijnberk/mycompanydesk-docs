@@ -1,7 +1,7 @@
 ---
 title: Domaines, site web et boite de reception
 description: "Domaines personnalisés, site vitrine hébergé et boîte partagée arrivent en un seul lot, derrière custom_domains et public_business_page."
-last_verified: 2026-09-19
+last_verified: 2026-09-22
 ---
 
 # Domaines, site web et boite de reception
@@ -83,6 +83,7 @@ Ce que la page vous permet de faire :
 
 - **Acheter ou reclamer un domaine** via la carte d'achat de domaine. Saisissez un nom de domaine, verifiez la disponibilite via OpenProvider, et achetez le domaine ou reclamez-le gratuitement si votre espace de travail est eligible a la reclamation gratuite d'un `.nl`.
 - **Ajouter un domaine** (mode nameserver ou CNAME) via une carte dediee toujours visible.
+- **Transférer votre domaine chez nous** (transfert entrant) avec le code d'autorisation de votre registrar actuel, ou lancez l'assistant de migration si votre messagerie est encore chez un autre hébergeur.
 - **Verifier** un domaine en attente.
 - **Gerer les enregistrements DNS** pour le domaine selectionne -- A, AAAA, CNAME, MX, TXT, SRV, CAA, NS. Le CRUD passe par Cloudflare via l'API.
 - **SSL** pour le domaine selectionne -- consulter le statut du certificat, changer le mode SSL.
@@ -180,6 +181,29 @@ Nouvelles tables de base de donnees introduites par cette fonctionnalite :
 - `founder_domain_claims` -- suit les reclamations de domaine gratuites avec des snapshots d'eligibilite, un score d'abus et le statut de la reclamation.
 - `domain_buyout_intents` -- suit les intentions de paiement de rachat en cas de depart pendant l'essai avec les identifiants Stripe PaymentIntent et le statut de transfert.
 - La migration `domain_registrar_columns` ajoute des colonnes liees au registrar a la table `domains` existante.
+
+#### Transférer votre domaine chez nous (transfert entrant)
+
+Un domaine enregistré ailleurs ne pouvait jusqu'ici qu'être relié : l'enregistrement lui-même restait chez l'ancien registrar, donc le renouvellement et le départ en transfert ne le connaissaient pas. La quatrième option du sélecteur de domaine, **Transférer votre domaine chez nous**, amène l'enregistrement chez MyCompanyDesk. Il vous faut le code d'autorisation (le code de transfert) de votre registrar actuel, et le registre demande un numéro de téléphone avec la demande.
+
+Le sélecteur affiche le prix du transfert avant l'engagement :
+
+- **Un transfert `.nl` est gratuit.** Le registre ne facture rien et n'ajoute pas d'année, votre date d'expiration actuelle reste donc inchangée. Le renouvellement fonctionne ensuite comme un achat payant : vous recevez d'abord un rappel et ne payez que si vous renouvelez vous-même.
+- **`.eu`, `.com`, `.net` et `.org` coûtent le prix d'enregistrement, une seule fois**, et le transfert ajoute une année au domaine. Les prix de transfert sont relevés auprès de l'API de prix d'OpenProvider ; le tableau actuel se trouve dans `apps/api/src/modules/domains/domain-pricing.config.js` dans le dépôt RichardTool.
+
+Le transfert est demandé au registre avec votre code d'autorisation et nos serveurs de noms, pour que le courrier et le site continuent de pointer vers MyCompanyDesk. Pour un `.nl`, c'est généralement terminé en quelques minutes ; pour les autres extensions, cela peut prendre jusqu'à cinq jours. La page Domaines affiche une carte de statut par transfert : demandé, transféré (la carte disparaît dès que la zone est active) ou échoué avec la raison du registrar et une nouvelle tentative avec un nouveau code. Un code erroné ou un verrou de transfert encore actif chez votre registrar actuel revient comme un refus qui dit quoi faire.
+
+Le devis refuse, avec la raison nommée, quand l'extension n'est pas prise en charge pour le transfert, quand le domaine est déjà enregistré chez nous (reliez-le plutôt via l'option «J'ai déjà un domaine»), quand le domaine est lié à un autre espace de travail, quand un transfert est déjà en cours, ou quand le domaine n'est pas encore relié en mode nameserver avec sa messagerie chez nous. Ce dernier refus existe parce que déplacer l'enregistrement d'abord couperait votre messagerie ; l'assistant de migration ci-dessous relie d'abord le domaine et emmène la messagerie ensuite.
+
+Si vous transférez un domaine que vous aviez déjà relié, votre ligne de domaine existante est mise à jour et vos réglages, votre messagerie et votre site restent en place. Un transfert échoué est remboursé et la ligne du domaine retourne à son état relié. Le renouvellement traite les domaines transférés comme des achats payants.
+
+#### Venir d'un autre hébergeur (migration de la messagerie)
+
+L'option **Je viens d'un autre hébergeur** gère tout le déménagement en un assistant : il relie votre domaine, prépare votre boîte, importe le courrier de votre ancienne boîte, transfère l'enregistrement chez nous, importe ce qui est arrivé pendant le transfert, et se termine par l'avis que vous pouvez résilier votre forfait chez l'ancien hébergeur. Il vous faut seulement le mot de passe de votre ancienne boîte et, pour le transfert, le code de transfert. Serveurs de noms, enregistrements MX et ports restent invisibles ; seule la rare étape de repli les mentionne.
+
+L'import est une tâche persistante chez nous, pas une action de navigateur. La tâche est stockée côté serveur, avec le mot de passe de votre ancienne boîte chiffré (AES-GCM), et seulement avec votre accord explicite. Après l'activation du domaine, une passe de suivi importe ce qui est arrivé entre-temps, 48 heures plus tard une dernière passe récupère le reste, puis le mot de passe stocké est effacé. Quatorze jours, c'est le délai ferme : après, le mot de passe est parti dans tous les cas. Quand l'import est terminé, une notification dans l'application indique combien de messages sont arrivés de combien de dossiers, jusqu'à quelle date, et que vous pouvez maintenant résilier votre forfait chez l'ancien hébergeur. L'hôte IMAP est deviné d'après vos enregistrements MX actuels, avec `imap.<domaine>` et `mail.<domaine>` en repli ; les hébergeurs connus comme Hostinger sont reconnus par leur nom, et là où un hébergeur demande un mot de passe d'application, l'assistant le dit. La technique se trouve dans `apps/api/src/modules/domains/domain-migrate.service.js` dans le dépôt RichardTool.
+
+Deux garde-fous appartiennent au même parcours. La suppression d'une boîte ou la désactivation de la boîte de réception demande d'abord une confirmation qui dit combien de messages vont disparaître, historique importé compris. Et le devis de transfert refuse tant que votre messagerie n'a pas bougé, pour la raison ci-dessus. La promesse de confidentialité derrière : nous gardons le mot de passe de votre ancienne boîte chiffré jusqu'à ce que le transfert soit terminé, quatorze jours au maximum, puis nous l'effaçons. Cette promesse figure aussi sur la [page de confidentialité](https://mycompanydesk.nl/privacy).
 
 ### Site web heberge
 

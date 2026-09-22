@@ -1,7 +1,7 @@
 ---
 title: Domains, Website, and Inbox
 description: "Custom domains, the hosted business website and the shared inbox ship as one pre-launch bundle behind the custom_domains and public_business_page flags."
-last_verified: 2026-09-19
+last_verified: 2026-09-22
 ---
 
 # Domains, Website, and Inbox
@@ -83,6 +83,7 @@ What the page lets you do:
 
 - **Buy or claim a domain** via the domain purchase card. Enter a domain name, check availability against OpenProvider, and either buy it or claim it free if your workspace qualifies for the free `.nl` claim.
 - **Add a domain** (nameserver or CNAME mode) via a dedicated card that is always visible.
+- **Move a domain to us** (transfer in) with the authorization code from your current registrar, or run the migration wizard when your mail still lives at another hoster.
 - **Verify** a pending domain.
 - **Manage DNS records** for the selected active domain -- A, AAAA, CNAME, MX, TXT, SRV, CAA, NS. CRUD goes through Cloudflare via the API.
 - **SSL** for the selected domain -- view certificate status, change SSL mode.
@@ -180,6 +181,29 @@ New database tables introduced by this feature:
 - `founder_domain_claims` -- tracks free-domain claims with eligibility snapshots, abuse scoring, and claim status.
 - `domain_buyout_intents` -- tracks trial-exit buy-out payment intents with Stripe PaymentIntent IDs and handover status.
 - `domain_registrar_columns` migration adds registrar-related columns to the existing `domains` table.
+
+#### Move a domain to us (transfer in)
+
+A domain registered elsewhere used to be connect-only: the registration itself stayed with the old registrar, so renewal and the transfer-out route did not know about it. The fourth option in the domain chooser, **Move your domain to us**, brings the registration itself to MyCompanyDesk. You need the authorization code (the transfer code) from your current registrar, and the registry requires a phone number with the request.
+
+The chooser quotes the transfer before you commit:
+
+- **A `.nl` transfer is free.** The registry charges nothing and adds no year, so your current expiry date stays as it is. Renewal afterwards works like a paid purchase: you get a reminder first and only pay when you renew yourself.
+- **`.eu`, `.com`, `.net` and `.org` cost the one-time registration price**, and the transfer adds one year to the domain. The transfer prices are measured against OpenProvider's price API; the current table lives in `apps/api/src/modules/domains/domain-pricing.config.js` in the RichardTool repo.
+
+The transfer is requested at the registry with your authorization code and our nameservers attached, so mail and website keep pointing at MyCompanyDesk. For `.nl` this usually completes within minutes; for other TLDs it can take up to five days. The Domains page shows a status card per transfer: requested, moved (the card disappears once the zone is active), or failed with the registrar's reason and a retry with a new code. A wrong code or an active transfer lock at your current hoster comes back as a refusal that tells you what to do.
+
+The quote refuses, with a named reason, when the TLD is not supported for transfer, when the domain is already registered with us (connect it through the "I already have a domain" option instead), when the domain is linked to another workspace, when a transfer for it is already running, or when the domain is not yet connected in nameserver mode with its mail at us. That last refusal exists because moving the registration first would silence your mail; the migration wizard below connects the domain first and moves the mail along with it.
+
+Moving a domain you had connected yourself updates your existing domain row, so your settings, mail and website stay as they are. A failed transfer is refunded and the domain row returns to its connected state. Renewal treats transferred domains like paid purchases.
+
+#### Coming from another hoster (mail migration)
+
+The option **I am moving from another host** runs the whole move as one wizard: it connects your domain, prepares your mailbox, imports the mail from your old mailbox, transfers the domain registration to us, imports what arrived during the transfer, and ends with the notice that you can cancel your package at the old hoster. You need the password of your old mailbox and, for the transfer, the authorization code. Nameservers, MX records and ports stay out of sight; only the rare fallback step mentions them.
+
+The import is a persistent job on our side, not a browser action. The job is stored server-side with the old mailbox password encrypted (AES-GCM), and only with your explicit consent. After the domain activates, a follow-up run imports what arrived in between, a sweep run 48 hours later picks up the rest, and then the stored password is wiped. Fourteen days is the hard term: after that the password is gone in every case. When the import finishes, an in-app notification tells you how many messages arrived from how many folders, up to which date, and that you can now cancel your package at the old hoster. The IMAP host is guessed from your current MX records, with `imap.<domain>` and `mail.<domain>` as fallbacks; known hosters such as Hostinger are recognised by name, and where a hoster requires an app password the wizard says so. See `apps/api/src/modules/domains/domain-migrate.service.js` in the RichardTool repo for the mechanics.
+
+Two safeguards belong to the same flow. Deleting a mailbox or turning the inbox off asks for a confirmation that names how many messages will disappear, including imported history. And the transfer quote refuses while your mail has not moved yet, for the reason above. The privacy promise behind this: we keep the password of your old mailbox encrypted until the transfer is complete, at most fourteen days, and delete it afterwards. That promise is also on the [privacy page](https://mycompanydesk.nl/privacy).
 
 ### Hosted website
 
