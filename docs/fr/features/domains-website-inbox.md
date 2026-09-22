@@ -66,6 +66,8 @@ Pour les domaines personnalises en mode nameserver, l'assistant execute `quickEn
 - Configure `support@` et `sales@` comme alias bidirectionnels de `info@`, et `noreply@` comme alias d'envoi uniquement (autorise en From, rejete a l'arrivee).
 - Cree eventuellement une boite aux lettres personnelle (`silvan@acme.fr`) si vous avez coche la case dans l'assistant.
 
+Vous pouvez aussi activer la boîte de réception avant que la vérification ne soit terminée. Cloudflare refuse de configurer la messagerie sur une zone dont les serveurs de noms ne pointent pas encore vers nous ; votre boîte est alors créée immédiatement et les étapes propres à la zone (routage, catch-all, MX apex) sont reportées : l'application vous dit que le courrier sur ce domaine fonctionnera dès que vos serveurs de noms pointeront vers nous. Dès que le domaine devient actif, la plateforme termine la configuration d'elle-même.
+
 ## Reference par fonctionnalite
 
 ### Domaines personnalises
@@ -200,6 +202,8 @@ Si vous transférez un domaine que vous aviez déjà relié, votre ligne de doma
 #### Venir d'un autre hébergeur (migration de la messagerie)
 
 L'option **Je viens d'un autre hébergeur** gère tout le déménagement en un assistant : il relie votre domaine, prépare votre boîte, importe le courrier de votre ancienne boîte, transfère l'enregistrement chez nous, importe ce qui est arrivé pendant le transfert, et se termine par l'avis que vous pouvez résilier votre forfait chez l'ancien hébergeur. Il vous faut seulement le mot de passe de votre ancienne boîte et, pour le transfert, le code de transfert. Serveurs de noms, enregistrements MX et ports restent invisibles ; seule la rare étape de repli les mentionne.
+
+Votre boîte est prête dès le départ. Pendant que votre domaine est encore chez l'ancien hébergeur, votre nouvelle boîte existe déjà et l'import de votre ancien courrier peut commencer tout de suite. La réception et l'envoi depuis cette adresse s'activent quand le domaine est chez nous ; l'assistant gère ce déménagement plus loin dans le même parcours, et la plateforme termine la configuration du courrier automatiquement dès que le domaine est actif.
 
 L'import est une tâche persistante chez nous, pas une action de navigateur. La tâche est stockée côté serveur, avec le mot de passe de votre ancienne boîte chiffré (AES-GCM), et seulement avec votre accord explicite. Après l'activation du domaine, une passe de suivi importe ce qui est arrivé entre-temps, 48 heures plus tard une dernière passe récupère le reste, puis le mot de passe stocké est effacé. Quatorze jours, c'est le délai ferme : après, le mot de passe est parti dans tous les cas. Quand l'import est terminé, une notification dans l'application indique combien de messages sont arrivés de combien de dossiers, jusqu'à quelle date, et que vous pouvez maintenant résilier votre forfait chez l'ancien hébergeur. L'hôte IMAP est deviné d'après vos enregistrements MX actuels, avec `imap.<domaine>` et `mail.<domaine>` en repli ; les hébergeurs connus comme Hostinger sont reconnus par leur nom, et là où un hébergeur demande un mot de passe d'application, l'assistant le dit. La technique se trouve dans `apps/api/src/modules/domains/domain-migrate.service.js` dans le dépôt RichardTool.
 
