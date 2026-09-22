@@ -1,7 +1,7 @@
 ---
 title: Domeinen, website en inbox
 description: "Eigen domeinen, de gehoste bedrijfswebsite en de gedeelde inbox komen als een bundel, achter de vlaggen custom_domains en public_business_page."
-last_verified: 2026-09-19
+last_verified: 2026-09-22
 ---
 
 # Domeinen, website en inbox
@@ -83,6 +83,7 @@ Wat je op de pagina kunt doen:
 
 - **Domein kopen of claimen** via de domein-aanschafkaart. Voer een domeinnaam in, controleer de beschikbaarheid via OpenProvider, en koop het domein of claim het gratis als je werkruimte in aanmerking komt voor de gratis `.nl`-claim.
 - **Domein toevoegen** (nameserver- of CNAME-modus) via een eigen kaart die altijd zichtbaar is.
+- **Domein naar ons verhuizen** (transfer in) met de verhuiscode van je huidige registrar, of draai de migratiewizard als je mail nog bij een andere hoster staat.
 - **Verifiëren** van een pending domein.
 - **DNS-records beheren** voor het geselecteerde domein -- A, AAAA, CNAME, MX, TXT, SRV, CAA, NS. CRUD gaat via Cloudflare via de API.
 - **SSL** voor het geselecteerde domein -- certificaatstatus bekijken, SSL-modus wijzigen.
@@ -180,6 +181,29 @@ Nieuwe databasetabellen die door deze feature zijn toegevoegd:
 - `founder_domain_claims` -- volgt gratis domeinclaims met geschiktheidssnapshots, abuse-scoring en claimstatus.
 - `domain_buyout_intents` -- volgt overname-betalingsintents bij vertrek tijdens de proef met Stripe PaymentIntent-ID's en overdrachtsstatus.
 - `domain_registrar_columns`-migratie voegt registrar-gerelateerde kolommen toe aan de bestaande `domains`-tabel.
+
+#### Domein naar ons verhuizen (transfer in)
+
+Een domein dat elders geregistreerd stond kon tot nu toe alleen gekoppeld worden: de registratie zelf bleef bij de oude registrar, dus verlenging en de verhuis-uit-route wisten er niets van. De vierde deur in de domeinkiezer, **Verhuis je domein naar ons**, neemt de registratie mee naar MyCompanyDesk. Je hebt de autorisatiecode (de verhuiscode) van je huidige registrar nodig, en de registry vraagt om een telefoonnummer bij de aanvraag.
+
+De kiezer laat de prijs van de verhuizing van tevoren zien:
+
+- **Een `.nl`-verhuizing is gratis.** De registry rekent niets en voegt geen jaar toe, dus je huidige vervaldatum blijft staan. Verlengen werkt daarna als een betaalde aankoop: je krijgt eerst een herinnering en betaalt pas als je zelf verlengt.
+- **`.eu`, `.com`, `.net` en `.org` kosten de eenmalige registratieprijs**, en de verhuizing zet er een jaar bij het domein. De verhuisprijzen worden gemeten bij de prijs-API van OpenProvider; de actuele tabel staat in `apps/api/src/modules/domains/domain-pricing.config.js` in de RichardTool-repo.
+
+De verhuizing wordt bij de registry aangevraagd met je verhuiscode en onze nameservers erbij, zodat e-mail en website naar MyCompanyDesk blijven wijzen. Bij `.nl` is dat meestal binnen enkele minuten rond; bij andere extensies kan het tot vijf dagen duren. De Domeinen-pagina toont per verhuizing een statuskaart: aangevraagd, verhuisd (de kaart verdwijnt zodra de zone actief is) of mislukt met de reden van de registrar en een herkansing met een nieuwe code. Een verkeerde code of een transfer lock die nog aan staat bij je huidige hoster komt terug als een weigering die zegt wat je moet doen.
+
+De offerte weigert met een benoemde reden wanneer de extensie niet voor verhuizen ondersteund wordt, wanneer het domein al bij ons geregistreerd staat (koppel het dan via de deur "Ik heb al een domein"), wanneer het domein aan een andere werkruimte hangt, wanneer er al een verhuizing voor loopt, of wanneer het domein nog niet in nameserver-modus met zijn e-mail bij ons gekoppeld is. Die laatste weigering bestaat omdat de registratie eerst verhuizen je mail stillegt; de migratiewizard hieronder koppelt eerst het domein en neemt de mail daarna mee.
+
+Verhuis je een domein dat je al gekoppeld had, dan wordt je bestaande domeinrij bijgewerkt en blijven je instellingen, mail en website staan. Een mislukte verhuizing wordt terugbetaald en de domeinrij gaat terug naar de gekoppelde staat. Verlenging behandelt verhuisde domeinen als betaalde aankopen.
+
+#### Van een andere hoster komen (mailmigratie)
+
+De deur **Ik kom van een andere hoster** regelt de hele verhuizing in één wizard: hij koppelt je domein, zet je postbus klaar, importeert de mail uit je oude postbus, verhuist de registratie naar ons, importeert wat er tijdens de verhuizing binnenkwam en eindigt met de mededeling dat je je pakket bij de oude hoster kunt opzeggen. Je hebt alleen het wachtwoord van je oude postbus nodig en, voor de verhuizing, de verhuiscode. Nameservers, MX-records en poorten blijven buiten beeld; alleen de zeldzame terugvalstap noemt ze.
+
+De import is een taak die bij ons draait, geen browseractie. De taak wordt server-side opgeslagen met het wachtwoord van je oude postbus versleuteld (AES-GCM), en alleen met jouw uitdrukkelijke toestemming. Na activering van het domein haalt een vervolgronde op wat er intussen binnenkwam, 48 uur later haalt een laatste ronde de rest op, en daarna wordt het opgeslagen wachtwoord gewist. Veertien dagen is de harde termijn: daarna is het wachtwoord in elk geval weg. Als de import klaar is, meldt een melding in de app hoeveel berichten uit hoeveel mappen zijn binnengekomen, tot en met welke datum, en dat je je pakket bij de oude hoster nu kunt opzeggen. De IMAP-host wordt geraden uit je huidige MX-records, met `imap.<domein>` en `mail.<domein>` als terugval; bekende hosters zoals Hostinger worden bij naam herkend en waar een hoster om een app-wachtwoord vraagt, zegt de wizard dat. De techniek staat in `apps/api/src/modules/domains/domain-migrate.service.js` in de RichardTool-repo.
+
+Twee waarborgen horen bij dezelfde flow. Bij het verwijderen van een postbus of het uitzetten van de inbox vraagt de app eerst om bevestiging en noemt hoeveel berichten er verdwijnen, inclusief geïmporteerde geschiedenis. En de verhuisofferte weigert zolang je mail nog niet is overgezet, om de reden hierboven. De privacybelofte erachter: we bewaren het wachtwoord van je oude postbus versleuteld tot de verhuizing rond is, maximaal veertien dagen, en wissen het daarna. Die belofte staat ook op de [privacypagina](https://mycompanydesk.nl/privacy).
 
 ### Gehoste website
 

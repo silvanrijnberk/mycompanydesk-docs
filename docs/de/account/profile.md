@@ -1,7 +1,7 @@
 ---
 title: Ihre persönlichen Einstellungen
 description: "Name, E-Mail-Adresse, Passwort und persönliche Einstellungen stehen in der obersten Gruppe der Einstellungen und speichern sich beim Tippen selbst."
-last_verified: 2026-08-10
+last_verified: 2026-09-22
 ---
 
 # Ihre persönlichen Einstellungen
@@ -16,7 +16,7 @@ Ihr Name, Ihre E-Mail-Adresse und Ihr Profilfoto.
 
 - **Vorname** und **Nachname**. Ihr Name erscheint auch auf Ihren Rechnungen.
 - **E-Mail-Adresse**. Das ist Ihr Login und kann hier nicht geändert werden; das Feld ist schreibgeschützt.
-- **Profilfoto**. Laden Sie ein PNG, JPG oder WebP von maximal 5 MB hoch. Kunden sehen das Foto bei E-Mails, die Sie senden. Ein Foto ist optional, und Sie können es jederzeit wieder entfernen.
+- **Profilfoto**. Laden Sie ein PNG, JPG oder WebP von maximal 5 MB hoch und schneiden Sie es zu, bevor es live geht: Verschieben Sie das Foto per Ziehen und zoomen Sie, bis Ihr Kopf gut im Kreis sitzt. Kunden sehen das Foto bei E-Mails, die Sie senden. Wenn Sie Ihr Konto mit Google oder Microsoft anlegen, übernehmen wir Ihr Profilfoto automatisch von dort; das passiert nur beim Anlegen des Kontos, danach ist Ersetzen oder Entfernen immer Ihre Entscheidung. Ein Foto ist optional, und Sie können es jederzeit wieder entfernen.
 
 ## Darstellung
 

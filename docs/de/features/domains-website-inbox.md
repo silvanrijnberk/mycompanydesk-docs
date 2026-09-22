@@ -1,7 +1,7 @@
 ---
 title: Domains, Website und Posteingang
 description: "Eigene Domains, die gehostete Unternehmenswebsite und das gemeinsame Postfach kommen als ein Bündel, hinter custom_domains und public_business_page."
-last_verified: 2026-09-19
+last_verified: 2026-09-22
 ---
 
 # Domains, Website und Posteingang
@@ -83,6 +83,7 @@ Was Sie auf der Seite tun konnen:
 
 - **Domain kaufen oder beanspruchen** über die Domain-Kaufkarte. Geben Sie einen Domainnamen ein, prüfen Sie die Verfügbarkeit über OpenProvider, und kaufen Sie die Domain oder beanspruchen Sie sie kostenlos, wenn Ihr Workspace für den kostenlosen `.nl`-Claim berechtigt ist.
 - **Domain hinzufügen** (Nameserver- oder CNAME-Modus) über eine eigene Karte, die immer sichtbar ist.
+- **Domain zu uns umziehen** (eingehender Transfer) mit dem Autorisierungscode Ihres aktuellen Anbieters, oder starten Sie den Migrationsassistenten, wenn Ihre E-Mail noch bei einem anderen Anbieter liegt.
 - **Verifizieren** einer ausstehenden Domain.
 - **DNS-Records verwalten** für die ausgewählte Domain -- A, AAAA, CNAME, MX, TXT, SRV, CAA, NS. CRUD erfolgt über Cloudflare via API.
 - **SSL** für die ausgewählte Domain -- Zertifikatsstatus anzeigen, SSL-Modus ändern.
@@ -180,6 +181,29 @@ Neue Datenbanktabellen, die mit diesem Feature eingeführt wurden:
 - `founder_domain_claims` -- verfolgt Gratis-Domain-Claims mit Berechtigungs-Snapshots, Abuse-Scoring und Claim-Status.
 - `domain_buyout_intents` -- verfolgt Übernahme-Zahlungsabsichten bei vorzeitigem Probezeit-Ende mit Stripe PaymentIntent-IDs und Übergabestatus.
 - `domain_registrar_columns`-Migration fügt registrar-bezogene Spalten zur bestehenden `domains`-Tabelle hinzu.
+
+#### Domain zu uns umziehen (eingehender Transfer)
+
+Ein bei einem anderen Registrar registriertes Domain ließ sich bisher nur verknüpfen: Die Registrierung selbst blieb beim alten Anbieter, deshalb kannten Verlängerung und der Abgang per Umzug das Domain nicht. Die vierte Option in der Domain-Auswahl, **Domain zu uns umziehen**, bringt die Registrierung zu MyCompanyDesk. Sie brauchen den Autorisierungscode (den Umzugscode) Ihres aktuellen Anbieters, und die Registry verlangt eine Telefonnummer für die Anfrage.
+
+Die Auswahl zeigt den Preis des Umzugs an, bevor Sie sich festlegen:
+
+- **Ein `.nl`-Umzug ist kostenlos.** Die Registry berechnet nichts und ergänzt kein Jahr, Ihr aktuelles Ablaufdatum bleibt bestehen. Die Verlängerung läuft danach wie ein bezahlter Kauf: Sie erhalten zuerst eine Erinnerung und zahlen erst, wenn Sie selbst verlängern.
+- **`.eu`, `.com`, `.net` und `.org` kosten den einmaligen Registrierungspreis**, und der Umzug ergänzt ein Jahr zum Domain. Die Umzugspreise werden über die Preis-API von OpenProvider ermittelt; die aktuelle Tabelle liegt in `apps/api/src/modules/domains/domain-pricing.config.js` im RichardTool-Repo.
+
+Der Umzug wird bei der Registry mit Ihrem Autorisierungscode und unseren Nameservern beantragt, damit E-Mail und Website weiter auf MyCompanyDesk zeigen. Bei `.nl` ist das meist in wenigen Minuten erledigt; bei anderen Endungen kann es bis zu fünf Tage dauern. Die Domains-Seite zeigt pro Umzug eine Statuskarte: beantragt, umgezogen (die Karte verschwindet, sobald die Zone aktiv ist) oder fehlgeschlagen mit dem Grund des Registrars und einem neuen Versuch mit neuem Code. Ein falscher Code oder eine noch aktive Transfersperre bei Ihrem aktuellen Anbieter kommt als Ablehnung zurück, die sagt, was zu tun ist.
+
+Das Angebot lehnt mit benanntem Grund ab, wenn die Endung für den Umzug nicht unterstützt wird, wenn das Domain schon bei uns registriert ist (verbinden Sie es über die Option „Ich habe bereits eine Domain“), wenn das Domain an einen anderen Workspace gebunden ist, wenn dafür bereits ein Umzug läuft, oder wenn das Domain noch nicht im Nameserver-Modus mit seiner E-Mail bei uns verbunden ist. Diese letzte Ablehnung existiert, weil ein Umzug der Registrierung zuerst Ihre E-Mail lahmlegen würde; der Migrationsassistent unten verbindet zuerst das Domain und nimmt die E-Mail danach mit.
+
+Ziehen Sie mit einem Domain um, das Sie bereits verknüpft hatten, wird Ihre bestehende Domain-Zeile aktualisiert, und Einstellungen, E-Mail und Website bleiben, wie sie sind. Ein fehlgeschlagener Umzug wird zurückerstattet, und die Domain-Zeile geht in den verknüpften Zustand zurück. Die Verlängerung behandelt umgezogene Domains wie bezahlte Käufe.
+
+#### Von einem anderen Anbieter kommen (E-Mail-Migration)
+
+Die Option **Ich komme von einem anderen Anbieter** wickelt den ganzen Umzug in einem Assistenten ab: Er verbindet Ihr Domain, richtet Ihr Postfach ein, importiert die E-Mails aus Ihrem alten Postfach, überträgt die Registrierung zu uns, importiert, was während des Umzugs ankam, und endet mit dem Hinweis, dass Sie Ihr Paket beim alten Anbieter kündigen können. Sie brauchen nur das Passwort Ihres alten Postfachs und, für den Umzug, den Umzugscode. Nameserver, MX-Einträge und Ports bleiben unsichtbar; nur der seltene Rückfallsschritt erwähnt sie.
+
+Der Import ist ein dauerhafter Auftrag auf unserer Seite, keine Browseraktion. Der Auftrag wird serverseitig gespeichert, mit dem Passwort Ihres alten Postfachs verschlüsselt (AES-GCM), und nur mit Ihrer ausdrücklichen Zustimmung. Nach der Aktivierung des Domains holt ein Folgelauf nach, was inzwischen angekommen ist, 48 Stunden später räumt ein letzter Durchgang den Rest auf, und danach wird das gespeicherte Passwort gelöscht. Vierzehn Tage sind die harte Frist: danach ist das Passwort in jedem Fall weg. Ist der Import fertig, sagt eine In-App-Benachrichtigung, wie viele Nachrichten aus wie vielen Ordnern angekommen sind, bis zu welchem Datum, und dass Sie Ihr Paket beim alten Anbieter jetzt kündigen können. Der IMAP-Host wird aus Ihren aktuellen MX-Einträgen erraten, mit `imap.<domain>` und `mail.<domain>` als Rückfall; bekannte Anbieter wie Hostinger werden beim Namen erkannt, und wo ein Anbieter ein App-Passwort verlangt, sagt der Assistent das. Die Technik steht in `apps/api/src/modules/domains/domain-migrate.service.js` im RichardTool-Repo.
+
+Zwei Sicherungen gehören zu demselben Ablauf. Beim Löschen eines Postfachs oder beim Deaktivieren des Posteingangs fragt die App erst nach einer Bestätigung und nennt, wie viele Nachrichten dabei verschwinden, eingeschlossen importierten Verlauf. Und das Umzugsangebot lehnt ab, solange Ihre E-Mail noch nicht umgezogen ist, aus dem Grund oben. Die Datenschutzzusage dahinter: Wir bewahren das Passwort Ihres alten Postfachs verschlüsselt auf, bis der Umzug abgeschlossen ist, höchstens vierzehn Tage, und löschen es danach. Diese Zusage steht auch auf der [Datenschutzseite](https://mycompanydesk.nl/privacy).
 
 ### Gehostete Website
 
