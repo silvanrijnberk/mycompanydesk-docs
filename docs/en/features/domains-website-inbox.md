@@ -66,6 +66,8 @@ For nameserver-mode custom domains, the wizard runs `quickEnableInbox` after ver
 - Provisions `support@` and `sales@` as bidirectional aliases of `info@`, and `noreply@` as a send-only alias (allowed in From, dropped on inbound).
 - Optionally creates a personal mailbox (`silvan@acme.nl`) when you ticked the box in the wizard.
 
+The inbox can also be enabled before verification has completed. Cloudflare refuses to provision mail on a zone whose nameservers do not point at us yet, so your mailbox is then created right away while the zone-wide steps (routing, catch-all, apex MX) are postponed: the app tells you that mail on the domain starts working once your nameservers point at us. The moment the domain becomes active, the platform finishes the provisioning by itself.
+
 ## Per-feature reference
 
 ### Custom domains
@@ -200,6 +202,8 @@ Moving a domain you had connected yourself updates your existing domain row, so 
 #### Coming from another hoster (mail migration)
 
 The option **I am moving from another host** runs the whole move as one wizard: it connects your domain, prepares your mailbox, imports the mail from your old mailbox, transfers the domain registration to us, imports what arrived during the transfer, and ends with the notice that you can cancel your package at the old hoster. You need the password of your old mailbox and, for the transfer, the authorization code. Nameservers, MX records and ports stay out of sight; only the rare fallback step mentions them.
+
+Your mailbox is ready from the start. Even while your domain is still with the old hoster, your new mailbox already exists and importing your old mail can begin right away. Receiving and sending from that address switch on as soon as the domain is with us; the wizard handles the move itself later in the same flow, and the platform completes the mail setup automatically the moment the domain is active.
 
 The import is a persistent job on our side, not a browser action. The job is stored server-side with the old mailbox password encrypted (AES-GCM), and only with your explicit consent. After the domain activates, a follow-up run imports what arrived in between, a sweep run 48 hours later picks up the rest, and then the stored password is wiped. Fourteen days is the hard term: after that the password is gone in every case. When the import finishes, an in-app notification tells you how many messages arrived from how many folders, up to which date, and that you can now cancel your package at the old hoster. The IMAP host is guessed from your current MX records, with `imap.<domain>` and `mail.<domain>` as fallbacks; known hosters such as Hostinger are recognised by name, and where a hoster requires an app password the wizard says so. See `apps/api/src/modules/domains/domain-migrate.service.js` in the RichardTool repo for the mechanics.
 

@@ -66,6 +66,8 @@ Voor nameserver-modus eigen domeinen voert de wizard `quickEnableInbox` uit na v
 - Richt `support@` en `sales@` in als bidirectionele aliassen van `info@`, en `noreply@` als alleen-verzend-alias (toegestaan in From, weggegooid bij inkomend).
 - Maakt optioneel een persoonlijke mailbox (`silvan@acme.nl`) aan als je het vakje in de wizard hebt aangevinkt.
 
+Je kunt de inbox ook aanzetten voordat de verificatie rond is. Cloudflare richt geen mail in op een zone waarvan de nameservers nog niet naar ons wijzen; je postbus wordt dan wél meteen aangemaakt en de zonebrede stappen (routing, catch-all, apex-MX) worden uitgesteld: de app zegt je dat mail op dit domein gaat werken zodra je nameservers naar ons wijzen. Zodra het domein actief wordt, maakt het platform de inrichting zelf af.
+
 ## Per-feature referentie
 
 ### Eigen domeinen
@@ -200,6 +202,8 @@ Verhuis je een domein dat je al gekoppeld had, dan wordt je bestaande domeinrij 
 #### Van een andere hoster komen (mailmigratie)
 
 De deur **Ik kom van een andere hoster** regelt de hele verhuizing in één wizard: hij koppelt je domein, zet je postbus klaar, importeert de mail uit je oude postbus, verhuist de registratie naar ons, importeert wat er tijdens de verhuizing binnenkwam en eindigt met de mededeling dat je je pakket bij de oude hoster kunt opzeggen. Je hebt alleen het wachtwoord van je oude postbus nodig en, voor de verhuizing, de verhuiscode. Nameservers, MX-records en poorten blijven buiten beeld; alleen de zeldzame terugvalstap noemt ze.
+
+Je postbus staat er vanaf het begin. Ook terwijl je domein nog bij de oude hoster staat, bestaat je nieuwe postbus al en kan de import van je oude mail meteen beginnen. Ontvangen en versturen vanaf dat adres gaan aan zodra je domein bij ons staat; de verhuizing zelf regelt de wizard later in hetzelfde traject, en het platform maakt de mailinrichting automatisch af zodra het domein actief is.
 
 De import is een taak die bij ons draait, geen browseractie. De taak wordt server-side opgeslagen met het wachtwoord van je oude postbus versleuteld (AES-GCM), en alleen met jouw uitdrukkelijke toestemming. Na activering van het domein haalt een vervolgronde op wat er intussen binnenkwam, 48 uur later haalt een laatste ronde de rest op, en daarna wordt het opgeslagen wachtwoord gewist. Veertien dagen is de harde termijn: daarna is het wachtwoord in elk geval weg. Als de import klaar is, meldt een melding in de app hoeveel berichten uit hoeveel mappen zijn binnengekomen, tot en met welke datum, en dat je je pakket bij de oude hoster nu kunt opzeggen. De IMAP-host wordt geraden uit je huidige MX-records, met `imap.<domein>` en `mail.<domein>` als terugval; bekende hosters zoals Hostinger worden bij naam herkend en waar een hoster om een app-wachtwoord vraagt, zegt de wizard dat. De techniek staat in `apps/api/src/modules/domains/domain-migrate.service.js` in de RichardTool-repo.
 

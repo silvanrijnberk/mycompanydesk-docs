@@ -66,6 +66,8 @@ Für Nameserver-Modus eigene Domains führt der Assistent `quickEnableInbox` nac
 - Richtet `support@` und `sales@` als bidirektionale Aliase von `info@` ein, und `noreply@` als reinen Sende-Alias (erlaubt in From, verworfen bei eingehend).
 - Erstellt optional ein persönliches Postfach (`silvan@acme.de`), wenn Sie das Kästchen im Assistenten angekreuzt haben.
 
+Sie können den Posteingang auch einschalten, bevor die Verifizierung abgeschlossen ist. Cloudflare richtet keine E-Mail auf einer Zone ein, deren Nameserver noch nicht auf uns zeigen; Ihr Postfach wird dann trotzdem sofort angelegt, und die Schritte auf der Zone (Routing, Catch-all, Apex-MX) werden vorläufig zurückgestellt: Die App sagt Ihnen, dass Mail auf dieser Domain funktioniert, sobald Ihre Nameserver auf uns zeigen. Sobald das Domain aktiv wird, schließt die Plattform die Einrichtung automatisch ab.
+
 ## Referenz pro Feature
 
 ### Eigene Domains
@@ -200,6 +202,8 @@ Ziehen Sie mit einem Domain um, das Sie bereits verknüpft hatten, wird Ihre bes
 #### Von einem anderen Anbieter kommen (E-Mail-Migration)
 
 Die Option **Ich komme von einem anderen Anbieter** wickelt den ganzen Umzug in einem Assistenten ab: Er verbindet Ihr Domain, richtet Ihr Postfach ein, importiert die E-Mails aus Ihrem alten Postfach, überträgt die Registrierung zu uns, importiert, was während des Umzugs ankam, und endet mit dem Hinweis, dass Sie Ihr Paket beim alten Anbieter kündigen können. Sie brauchen nur das Passwort Ihres alten Postfachs und, für den Umzug, den Umzugscode. Nameserver, MX-Einträge und Ports bleiben unsichtbar; nur der seltene Rückfallsschritt erwähnt sie.
+
+Ihr Postfach ist von Anfang an bereit. Auch während Ihr Domain noch beim alten Anbieter liegt, existiert Ihr neues Postfach bereits und der Import Ihrer alten E-Mails kann direkt beginnen. Empfangen und Senden über diese Adresse schaltet die Plattform frei, sobald das Domain bei uns liegt; den Umzug selbst erledigt der Assistent später im selben Ablauf, und die Plattform schließt die Einrichtung der E-Mail automatisch ab, wenn das Domain aktiv ist.
 
 Der Import ist ein dauerhafter Auftrag auf unserer Seite, keine Browseraktion. Der Auftrag wird serverseitig gespeichert, mit dem Passwort Ihres alten Postfachs verschlüsselt (AES-GCM), und nur mit Ihrer ausdrücklichen Zustimmung. Nach der Aktivierung des Domains holt ein Folgelauf nach, was inzwischen angekommen ist, 48 Stunden später räumt ein letzter Durchgang den Rest auf, und danach wird das gespeicherte Passwort gelöscht. Vierzehn Tage sind die harte Frist: danach ist das Passwort in jedem Fall weg. Ist der Import fertig, sagt eine In-App-Benachrichtigung, wie viele Nachrichten aus wie vielen Ordnern angekommen sind, bis zu welchem Datum, und dass Sie Ihr Paket beim alten Anbieter jetzt kündigen können. Der IMAP-Host wird aus Ihren aktuellen MX-Einträgen erraten, mit `imap.<domain>` und `mail.<domain>` als Rückfall; bekannte Anbieter wie Hostinger werden beim Namen erkannt, und wo ein Anbieter ein App-Passwort verlangt, sagt der Assistent das. Die Technik steht in `apps/api/src/modules/domains/domain-migrate.service.js` im RichardTool-Repo.
 
