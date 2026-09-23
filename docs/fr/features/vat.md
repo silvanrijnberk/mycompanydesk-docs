@@ -31,6 +31,10 @@ Changing the frequency does not rewrite historical returns. It only affects how 
 - **Standard rate**: the default VAT rate applied to new invoice lines and other taxable items.
 - **Reduced rate option**: when your workspace is allowed to use a reduced VAT rate, the form shows the reduced rate as an option. This is not available for every business type.
 
+### Suggestion de 9 % pour les aliments et les boissons
+
+Lorsque vous ajoutez un tout nouvel article dans Aanbod, MyCompanyDesk peut vous demander : « Vendez-vous à manger ou à boire ? Cela relève généralement de 9 % de TVA. » La question n'apparaît que si votre espace de travail n'a jamais choisi son propre taux par défaut dans Paramètres → TVA, si KOR et l'exonération sont tous deux désactivés, et si vos propres données (code KVK/SBI, réponse donnée à l'inscription ou description de l'entreprise, jamais le nom de l'entreprise) pointent clairement vers l'alimentation ou l'hôtellerie-restauration. Un clic sur **Passer à 9 %** applique le taux réduit (sources/vat-rates.yaml#countries.NL.reduced) à ce seul article. Rien n'est présélectionné : ignorer la question ne change rien, elle n'apparaît jamais pour un article existant, et les espaces de travail sous KOR ou exonérés ne la voient pas.
+
 ### Default expense VAT rate
 
 Choose the VAT rate that is preselected when you add a new expense. You can still change it per expense.

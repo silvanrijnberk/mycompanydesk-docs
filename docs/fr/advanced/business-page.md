@@ -413,6 +413,8 @@ Les modifications non publiees sont suivies par page et par token. Le bouton Pub
 
 Avant de publier, le constructeur vérifie si votre page de contact ou votre pied de page montre l'adresse e-mail avec laquelle vous vous connectez. Si c'est le cas, vous recevez d'abord un avertissement, avec un lien pour définir une autre adresse e-mail publique ; vous pouvez aussi confirmer que l'adresse convient et publier quand même.
 
+Un double-clic rapide ne peut pas publier par accident : le bouton de confirmation de l'avertissement de publication ignore les clics pendant un court instant après son ouverture, et un second clic juste après le premier ne peut ni déclencher une publication en double ni contourner l'avertissement.
+
 ## Navigation
 
 L'editeur de navigation vous permet d'organiser les liens d'en-tete de votre site et de controler l'apparence de la barre de navigation sur l'ensemble de votre site :
