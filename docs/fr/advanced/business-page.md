@@ -315,7 +315,7 @@ Le panneau se situe en dehors du cadre du modele, donc il n'interfere jamais ave
 - **Ordre** : faites glisser les articles dans l'ordre souhaite, ou utilisez les boutons haut et bas. L'ordre naturel d'Aanbod s'applique aux articles que vous ne reordonnez pas explicitement.
 - **Afficher ou masquer** : cliquez sur l'icone oeil pour conserver un article dans Aanbod tout en le masquant sur ce site web.
 
-Le contenu de l'article lui-meme, titre, prix, description et image, est en lecture seule dans l'editeur. Il provient du catalogue Aanbod en direct et doit etre modifie la-bas. Le prix suit le mode de prix defini dans Aanbod : un montant fixe, "a partir de" un montant, ou "Sur demande" lorsqu'aucun prix n'est defini.
+Le contenu de l'article lui-même, titre, prix, description et image, est en lecture seule dans l'éditeur. Il provient du catalogue Aanbod en direct et doit être modifié là-bas. Le prix suit le mode de prix défini dans Aanbod : un montant fixe, "à partir de" un montant, ou "Sur demande" lorsqu'aucun prix n'est défini. Un prix de zéro est un vrai prix : un article volontairement gratuit affiche "Gratuit" sur le site, la liste des prix, la liste Aanbod et le bloc de réservation, au lieu de paraître sans prix ; seuls les articles sans prix du tout affichent "Sur demande".
 
 Si ce type de catalogue n'a pas encore d'article eligible, le panneau affiche un etat vide avec un lien pour ajouter un article dans Aanbod.
 
@@ -410,6 +410,8 @@ Lorsque vous etes pret :
 2. Votre site est publie sur l'URL publique (votre domaine personnalise, le sous-domaine de l'espace de travail ou la route portail de secours).
 
 Les modifications non publiees sont suivies par page et par token. Le bouton Publier est desactive lorsqu'il n'y a rien a publier. Basculer une page entre En ligne et Brouillon est un enregistrement immediat qui compte comme modification non publiee, le bouton Publier s'allume donc des que vous basculez.
+
+Avant de publier, le constructeur vérifie si votre page de contact ou votre pied de page montre l'adresse e-mail avec laquelle vous vous connectez. Si c'est le cas, vous recevez d'abord un avertissement, avec un lien pour définir une autre adresse e-mail publique ; vous pouvez aussi confirmer que l'adresse convient et publier quand même.
 
 ## Navigation
 
@@ -516,6 +518,8 @@ Les soumissions a la newsletter partagent la meme limite de taux que le formulai
 ## Pages legales
 
 Le constructeur de site cree deux pages legales standard pour chaque nouvel espace de travail : **Politique de confidentialite** (`/privacy`) et **Conditions generales** (`/algemene-voorwaarden`). Le contenu utilise des marqueurs de remplacement pour les donnees de l'entreprise. Lorsque la page est rendue pour les visiteurs, ces marqueurs sont remplaces par les valeurs de tes **Parametres de l'entreprise** — nom de l'entreprise, adresse, code postal, ville, pays, numero d'enregistrement, numero de TVA et e-mail public.
+
+La page des conditions générales connaît deux variantes, choisies selon votre métier. Les entreprises qui vendent directement aux consommateurs, les métiers sur rendez-vous et les métiers de boutique ou de restauration comme une boulangerie, reçoivent des conditions orientées consommateurs : elles couvrent les commandes, le droit de rétractation légal des consommateurs avec son exception légale pour les biens fabriqués sur mesure ou périssables, le paiement, l'annulation de rendez-vous et de cours, la responsabilité et les réclamations, plus une ligne d'information générique, par exemple sur les allergies. Les métiers sur devis et les services B2B gardent les conditions existantes pour artisans, qui traitent des devis, des travaux supplémentaires et de la livraison. Les deux variantes utilisent les mêmes marqueurs de remplacement.
 
 Tu peux modifier les pages legales dans l'editeur comme n'importe quelle autre page. L'editeur conserve les ancres de remplacement dans le contenu, de sorte que l'ouverture et l'enregistrement d'une page sans modification permettent aux futures mises a jour de tes donnees d'entreprise de se propager automatiquement.
 

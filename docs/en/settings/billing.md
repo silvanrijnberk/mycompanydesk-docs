@@ -101,6 +101,12 @@ The business inbox is a Pro feature. On Pro you can send up to 15 000 and receiv
 
 When a workspace lapses to Free, its public website and site-builder pages remain online. Free sites carry a small MyCompanyDesk badge on the workspace subdomain address; the only way to remove the badge is to move the site to a custom domain (Pro). The gate runs on every request, before any caching, so subscription changes take effect immediately.
 
+### When a paid subscription ends
+
+A paid subscription never stops silently. When it ends, the app shows a notification and sends an email (its wording is "Office has stopped"), in two variants: one for a failed payment, one for a cancellation you asked for yourself. You can subscribe again right away after a failed payment; checkout no longer routes you to the Stripe portal for a subscription that no longer exists.
+
+Your own domain stays visible on the Domains page after the plan ends: name, status and transfer code remain readable, with an upgrade prompt next to them, because changing domain settings needs the paid subscription again.
+
 ### Team access
 
 Team access is included in Pro with no per-person charge: invite as many working users as you want. There is no seat pricing and no per-seat add-on. On Free and Starter you work alone, though your accountant can always be given free access.
