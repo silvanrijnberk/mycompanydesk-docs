@@ -318,7 +318,7 @@ Das Panel liegt außerhalb des Vorlagenrahmens, sodass es die Gestaltung der Vor
 - **Reihenfolge**: ziehen Sie Artikel in die gewünschte Reihenfolge, oder nutzen Sie die Aufwärts- und Abwärts-Buttons. Die natürliche Reihenfolge aus Aanbod gilt für alles, was Sie nicht explizit neu sortieren.
 - **Anzeigen oder ausblenden**: klicken Sie auf das Augen-Symbol, um einen Artikel in Aanbod zu behalten, aber auf dieser Website auszublenden.
 
-Die Artikelinhalte selbst, Titel, Preis, Beschreibung und Bild, sind im Editor schreibgeschützt. Sie stammen aus dem Live-Aanbod und müssen dort bearbeitet werden. Der Preis folgt der im Aanbod hinterlegten Preismodus: ein fester Betrag, "ab" einem Betrag oder "Auf Anfrage", wenn kein Preis hinterlegt ist.
+Die Artikelinhalte selbst, Titel, Preis, Beschreibung und Bild, sind im Editor schreibgeschützt. Sie stammen aus dem Live-Aanbod und müssen dort bearbeitet werden. Der Preis folgt der im Aanbod hinterlegten Preismodus: ein fester Betrag, "ab" einem Betrag oder "Auf Anfrage", wenn kein Preis hinterlegt ist. Ein Preis von null ist ein echter Preis: Ein bewusst kostenloser Artikel zeigt auf der Site, in der Preisliste, in der Aanbod-Liste und im Buchungsblock „Kostenlos“ statt ohne Preis zu erscheinen; nur Artikel ganz ohne Preis zeigen "Auf Anfrage".
 
 Falls es für diese Katalogart noch keine passenden Artikel gibt, zeigt das Panel einen Leerzustand mit einem Link, um in Aanbod einen Artikel hinzuzufügen.
 
@@ -412,6 +412,8 @@ Wenn Sie bereit sind:
 2. Ihre Site wird unter der öffentlichen URL veröffentlicht (Ihre eigene Domain, Workspace-Subdomain oder die Fallback-Portalroute).
 
 Unveröffentlichte Änderungen werden pro Seite und pro Token erfasst. Die Veröffentlichen-Schaltfläche ist deaktiviert, wenn nichts zu veröffentlichen ist. Das Umschalten einer Seite zwischen Live und Entwurf wird sofort gespeichert und zählt als unveröffentlichte Änderung, sodass die Veröffentlichen-Schaltfläche beim Umschalten aufleuchtet.
+
+Vor der Veröffentlichung prüft der Builder, ob Ihre Kontaktseite oder Ihr Fußbereich die E-Mail-Adresse zeigt, mit der Sie sich anmelden. Ist das der Fall, erhalten Sie zuerst eine Warnung, mit einem Link, um eine andere öffentliche E-Mail-Adresse zu hinterlegen; Sie können auch bestätigen, dass die Adresse in Ordnung ist, und trotzdem veröffentlichen.
 
 ## Navigation
 
@@ -519,6 +521,8 @@ Newsletter-Einreichungen teilen dasselbe Rate-Limit wie das Kontaktformular: 5 p
 ## Rechtliche Seiten
 
 Der Website-Builder erstellt für jeden neuen Arbeitsbereich zwei Standard-Rechtsseiten: **Datenschutzerklärung** (`/privacy`) und **Allgemeine Geschäftsbedingungen** (`/algemene-voorwaarden`). Der Inhalt verwendet Platzhalter für Unternehmensdaten. Wenn die Seite für Besucher gerendert wird, werden diese Platzhalter durch die Werte aus Ihren **Unternehmenseinstellungen** ersetzt: Unternehmensname, Adresse, Postleitzahl, Stadt, Land, Registrierungsnummer, USt.-ID und öffentliche E-Mail.
+
+Die AGB-Seite kennt zwei Varianten, gewählt nach Ihrem Gewerbe. Unternehmen, die direkt an Verbraucher verkaufen, Termingewerbe und Shop- oder Gastronomiegewerbe wie eine Bäckerei erhalten verbraucherorientierte Bedingungen: Sie behandeln Bestellungen und Termine, das gesetzliche Widerrufsrecht für Verbraucher mit der gesetzlichen Ausnahme für maßgefertigte oder schnell verderbliche Waren, Zahlung, das Absagen von Terminen und Kursen, Haftung und Beschwerden, plus einen allgemeinen Hinweis zu Allergien. Auf Angebote basierende Gewerbe und B2B-Dienstleistungen behalten die bestehenden Handwerker-Bedingungen, die Angebote, Mehrarbeit und Abnahme behandeln. Beide Varianten nutzen dieselben Platzhalter.
 
 Sie können die rechtlichen Seiten wie jede andere Seite im Editor bearbeiten. Der Editor behält die Platzhalter-Anker im Inhalt, sodass auch das bloße Öffnen und Speichern einer Seite dafür sorgt, dass zukünftige Änderungen an Ihren Unternehmensdaten automatisch übernommen werden.
 

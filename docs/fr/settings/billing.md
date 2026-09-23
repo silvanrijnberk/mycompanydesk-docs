@@ -101,6 +101,12 @@ La boîte mail professionnelle est une fonctionnalité Pro. Avec Pro, vous pouve
 
 Lorsqu'un espace de travail retombe en Gratuit, son site web public et le constructeur de site restent en ligne. Les sites gratuits affichent un petit badge MyCompanyDesk sur l'adresse du sous-domaine de l'espace de travail ; la seule façon de supprimer le badge est de déplacer le site vers un domaine personnalisé (Pro). La vérification a lieu à chaque requête, avant le cache, pour que les changements d'abonnement prennent effet immédiatement.
 
+### Quand un abonnement payé s'arrête
+
+Un abonnement payé ne s'arrête jamais en silence. Dès qu'il s'arrête, l'application affiche une notification et envoie un e-mail (dont le titre est « Office s'est arrêté »), en deux variantes : une pour un paiement échoué, une pour une résiliation que vous avez demandée vous-même. Après un paiement échoué, vous pouvez vous réabonner tout de suite ; le tunnel de souscription ne vous envoie plus vers le portail Stripe pour un abonnement qui n'existe plus.
+
+Votre propre domaine reste visible sur la page Domaines après la fin de l'offre : le nom, le statut et le code de transfert restent lisibles, avec une invitation à passer à l'offre payante à côté, car modifier les réglages du domaine demande à nouveau l'abonnement payé.
+
 ### Accès équipe
 
 L'accès équipe est inclus dans Pro sans frais par personne : invitez autant d'utilisateurs actifs que vous le souhaitez. Il n'y a pas de tarification par siège ni d'add-on par siège. Avec Gratuit et Starter, vous travaillez seul, mais votre comptable peut toujours recevoir un accès gratuit.

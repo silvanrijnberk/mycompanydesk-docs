@@ -101,6 +101,12 @@ Die geschäftliche Inbox ist eine Pro-Funktion. Mit Pro können Sie pro Monat bi
 
 Wenn ein Arbeitsbereich auf Gratis zurückfällt, bleiben die öffentliche Website und der Website-Builder online. Gratis-Sites tragen ein kleines MyCompanyDesk-Badge auf der Workspace-Subdomain-Adresse; die einzige Möglichkeit, das Badge zu entfernen, ist die Site auf eine eigene Domain (Pro) umzuziehen. Die Prüfung erfolgt bei jeder Anfrage vor dem Cache, sodass Abonnement-Änderungen sofort wirksam werden.
 
+### Wenn ein bezahltes Abonnement endet
+
+Ein bezahltes Abonnement endet nie mehr still. Sobald es endet, zeigt die App eine Benachrichtigung und schickt eine E-Mail (mit dem Titel "Office wurde beendet"), in zwei Varianten: eine bei einer fehlgeschlagenen Zahlung, eine bei einer Kündigung, die Sie selbst veranlasst haben. Nach einer fehlgeschlagenen Zahlung können Sie sofort wieder abonnieren; der Checkout schickt Sie nicht länger zum Stripe-Portal für ein Abonnement, das nicht mehr existiert.
+
+Ihre eigene Domain bleibt nach dem Ablauf des Tarifs auf der Domains-Seite sichtbar: Name, Status und Umzugscode bleiben lesbar, daneben erscheint ein Upgrade-Hinweis, denn Änderungen an den Domain-Einstellungen brauchen wieder das bezahlte Abonnement.
+
 ### Teamzugang
 
 Der Teamzugang ist in Pro ohne Kosten pro Person enthalten: Laden Sie so viele mitarbeitende Nutzer ein, wie Sie möchten. Es gibt keine Sitzpreise und keine Add-ons pro Sitz. Mit Gratis und Starter arbeiten Sie allein, wobei Ihr Buchhalter jederzeit kostenlosen Zugang erhalten kann.

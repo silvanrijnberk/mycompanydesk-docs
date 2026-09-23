@@ -101,6 +101,12 @@ De zakelijke inbox is een Pro-functie. Op Pro kun je per maand tot 15 000 e-mail
 
 Als een werkruimte naar Gratis vervalt, blijven de openbare website en sitebouwer online. Gratis sites tonen een klein MyCompanyDesk-badge op het werkruimte-subdomeinadres; de enige manier om de badge te verwijderen is de site verhuizen naar een eigen domein (Pro). De controle gebeurt bij elk verzoek, voor de cache, zodat abonnementswijzigingen meteen zichtbaar zijn.
 
+### Als een betaald abonnement stopt
+
+Een betaald abonnement stopt nooit meer in stilte. Zodra het stopt, toont de app een melding en verstuurt ze een e-mail (met als kop "Office is gestopt"), in twee varianten: één bij een mislukte betaling en één bij een opzegging die je zelf vroeg. Na een mislukte betaling kun je meteen weer abonneren; de checkout stuurt je niet langer door naar het Stripe-portaal voor een abonnement dat er niet meer is.
+
+Je eigen domein blijft na het aflopen van het abonnement zichtbaar op de Domeinen-pagina: naam, status en verhuiscode blijven leesbaar, met een upgrade-aanwijzing ernaast, want domeininstellingen veranderen kan pas weer met het betaalde abonnement.
+
 ### Teamtoegang
 
 Teamtoegang is inbegrepen in Pro zonder kosten per persoon: nodig zoveel meewerkende gebruikers uit als je wilt. Er zijn geen stoelprijzen en geen add-ons per stoel. Op Gratis en Starter werk je alleen, al kan je boekhouder altijd gratis toegang krijgen.

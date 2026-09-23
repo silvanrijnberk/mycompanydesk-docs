@@ -318,7 +318,7 @@ The panel lives outside the template frame, so it never interferes with the temp
 - **Order**: drag items into the order you want, or use the up and down buttons. The natural Aanbod order is used for anything you do not explicitly reorder.
 - **Show or hide**: toggle the eye icon to keep an item in Aanbod but hide it on this website.
 
-The item content itself, title, price, description, and image, is read-only in the editor. It is pulled from the live Aanbod catalog and must be edited there. The price follows the price mode set in Aanbod: a fixed amount, "from" an amount, or "On request" when no price is set.
+The item content itself, title, price, description, and image, is read-only in the editor. It is pulled from the live Aanbod catalog and must be edited there. The price follows the price mode set in Aanbod: a fixed amount, "from" an amount, or "On request" when no price is set. A price of zero is a real price: a deliberately free item shows "Free" on the site, the price list, the catalog list and the booking block, instead of being treated as unpriced; only items with no price at all show "On request".
 
 If the catalog kind has no eligible items yet, the panel shows an empty state with a link to add an item in Aanbod.
 
@@ -413,6 +413,8 @@ When you are ready:
 2. Your site is published to the public URL (your custom domain, workspace subdomain, or the fallback portal route).
 
 Unpublished changes are tracked per page and per token. The publish button is disabled when there is nothing to publish. Toggling a page between Live and Concept is an immediate save that registers as an unpublished change, so the Publish button lights up the moment you toggle.
+
+Before you publish, the builder checks whether your contact page or footer shows the e-mail address you log in with. If it does, you get a warning first, with a link to set a different public e-mail address; you can also confirm the address is fine and publish anyway.
 
 ## Navigation
 
@@ -519,6 +521,8 @@ Newsletter submissions share the same rate limit as the contact form: 5 per minu
 ## Legal pages
 
 The site builder seeds every new workspace with two standard legal pages: **Privacy Policy** (`/privacy`) and **Terms & Conditions** (`/algemene-voorwaarden`). The content uses placeholder markers for company details. When the page is rendered for visitors, these markers are replaced with the values from your **Company Settings** — business name, address, postal code, city, country, registration number, VAT number, and public email.
+
+The terms page comes in two variants, matched to your trade. Businesses that sell straight to consumers, appointment-based trades and shop or food trades such as a bakery, get consumer terms: they cover orders and appointments, the statutory right of withdrawal for consumers with its legal exception for made-to-order or perishable goods, payment, cancelling appointments and lessons, liability and complaints, plus a generic allergy note. Quote-based trades and B2B services keep the existing contractor terms, which cover quotes, extra work and delivery. Both variants use the same placeholder markers.
 
 You can edit the legal pages in the editor like any other page. The editor preserves the placeholder anchors inside the content, so opening and saving a page without changing it still lets future updates to your company details flow through automatically.
 

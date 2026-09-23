@@ -318,7 +318,7 @@ Het paneel staat buiten het sjabloonkader, dus het stoort nooit de styling van h
 - **Volgorde**: sleep items in de gewenste volgorde, of gebruik de omhoog/omlaag-knoppen. De natuurlijke volgorde uit Aanbod geldt voor alles wat je niet handmatig herschikt.
 - **Zichtbaar of verborgen**: klik op het oog-icoon om een item in Aanbod te houden, maar te verbergen op deze website.
 
-De iteminhoud zelf, titel, prijs, beschrijving en afbeelding, is alleen-lezen in de editor. Die komt uit het live Aanbod en moet daar worden aangepast. De prijs volgt de prijsmodus die in Aanbod staat: een vast bedrag, "vanaf" een bedrag, of "Op aanvraag" als er geen prijs is ingesteld.
+De iteminhoud zelf, titel, prijs, beschrijving en afbeelding, is alleen-lezen in de editor. Die komt uit het live Aanbod en moet daar worden aangepast. De prijs volgt de prijsmodus die in Aanbod staat: een vast bedrag, "vanaf" een bedrag, of "Op aanvraag" als er geen prijs is ingesteld. Een prijs van nul is een echte prijs: een bewust gratis item toont "Gratis" op de site, de prijslijst, de Aanbodlijst en het boekingsblok, in plaats van als onbeprijsd te gelden; alleen items zonder enige prijs tonen "Op aanvraag".
 
 Is er voor dit soort catalogus nog geen geschikt item? Dan toont het paneel een lege status met een link om een item toe te voegen in Aanbod.
 
@@ -413,6 +413,8 @@ Wanneer je klaar bent:
 2. Je site wordt gepubliceerd naar de openbare URL (je eigen domein, werkruimte-subdomein of de terugvalportalroute).
 
 Ongepubliceerde wijzigingen worden per pagina en per token bijgehouden. De publiceerknop is uitgeschakeld als er niets te publiceren is. Een pagina wisselen tussen Live en Concept wordt meteen opgeslagen en telt als ongepubliceerde wijziging, dus de Publiceerknop licht op zodra je wisselt.
+
+Vóór het publiceren controleert de sitebouwer of je contactpagina of je voettekst het e-mailadres toont waarmee je inlogt. Zo ja, dan krijg je eerst een waarschuwing, met een link om een ander publiek e-mailadres in te stellen; je kunt ook bevestigen dat het adres klopt en toch publiceren.
 
 ## Navigatie
 
@@ -519,6 +521,8 @@ Nieuwsbriefinzendingen delen dezelfde snelheidslimiet als het contactformulier: 
 ## Juridische pagina's
 
 De sitebouwer voorziet elke nieuwe werkruimte van twee standaard juridische pagina's: **Privacybeleid** (`/privacy`) en **Algemene voorwaarden** (`/algemene-voorwaarden`). De inhoud gebruikt plaatsaanduidingsmarkeringen voor bedrijfsgegevens. Wanneer de pagina wordt gerenderd voor bezoekers, worden die markeringen vervangen door de waarden uit je **Bedrijfsinstellingen** — bedrijfsnaam, adres, postcode, plaats, land, registratienummer, btw-nummer en publieke e-mail.
+
+De voorwaardenpagina kent twee varianten, gekozen naar je vak. Bedrijven die rechtstreeks aan consumenten verkopen, afspraakvakken en winkel- of horecavakken zoals een bakker, krijgen consumentgerichte voorwaarden: ze behandelen bestellingen en afspraken, het wettelijke herroepingsrecht voor consumenten met de wettelijke uitzondering voor op maat gemaakte of snel bedervende producten, betaling, het annuleren van afspraken en lessen, aansprakelijkheid en klachten, plus een algemene zin over allergieën. Op offertes gerichte vakken en B2B-diensten houden de bestaande vakman-voorwaarden, die over offertes, meerwerk en oplevering gaan. Beide varianten gebruiken dezelfde plaatsaanduidingen.
 
 Je kunt de juridische pagina's net als elke andere pagina bewerken in de editor. De editor behoudt de plaatsaanduidingsankers in de inhoud, zodat ook openen en opslaan zonder wijzigingen ervoor zorgt dat toekomstige updates van je bedrijfsgegevens automatisch doorstromen.
 
