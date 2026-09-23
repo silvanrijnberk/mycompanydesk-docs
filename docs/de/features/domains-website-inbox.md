@@ -286,6 +286,16 @@ Sie können einen geöffneten Thread über die Toolbar als ungelesen markieren. 
 
 Wird ein Thread aus der Liste in den Papierkorb, Spam, Geschlossen- oder Snoozed-Status verschoben, während das Lesefenster geöffnet ist, schließt es sich automatisch. So bleibt die Detailansicht immer mit dem Ordner synchron, den Sie gerade betrachten, und Sie schreiben keine Antwort auf einen Thread, der den aktuellen Bereich bereits verlassen hat.
 
+#### Logo oder Foto beim Absender
+
+Eingehende E-Mail zeigt das Gesicht des Absenders zu jeder Nachricht, in der Thread-Liste und im Lesefenster. MyCompanyDesk sucht an drei Stellen nach einem Logo oder Foto, in dieser Reihenfolge: das Logo, das die Domain des Absenders selbst über BIMI veröffentlicht (derselbe Mechanismus wie bei Gmail), das Gravatar-Foto, das zu der Adresse gehört, und das Icon der eigenen Website des Absenders. Bei kostenlosen Mail-Domains wie Gmail, Outlook und iCloud wird nur Gravatar abgefragt, damit nicht jeder Gmail-Absender dasselbe Gmail-Logo erhält.
+
+Ein Logo erscheint nur bei einer Nachricht, die belegt, dass sie wirklich von dieser Domain stammt: Sie muss DMARC bestehen oder ein DKIM tragen, das mit der From-Domain übereinstimmt. Ein gefälschter Absender behält das neutrale Monogramm. Ein fehlendes Logo ist also der sichere Zustand, kein Mangel.
+
+Suche und Abruf laufen vollständig auf unserem Server, nie in Ihrem Browser. Gravatar und die Website des Absenders erfahren dadurch nicht, wer welche E-Mail liest, und die Bilder werden anschließend neu verpackt und aus unserem eigenen Speicher ausgeliefert.
+
+Ausgehende E-Mail zeigt das Foto der Person, die sie wirklich geschrieben hat: Ihres oder das eines Kollegen oder einer Kollegin aus der Mitgliederliste. Ältere ausgehende E-Mail ohne erfassten Verfasser zeigt in einem Ein-Personen-Workspace Ihr Foto und in einem Team das Monogramm.
+
 ### Verkäufe
 
 Wenn Sie Kauf-Buttons zu Preisstufen oder einem Produktblock auf Ihrer öffentlichen Website hinzufügen, erstellt jede abgeschlossene Zahlung einen Verkaufsdatensatz. Verfolgen Sie diese unter **Geld > Verkäufe** (`/workspace/financial/money/sales`).
