@@ -416,6 +416,8 @@ Ongepubliceerde wijzigingen worden per pagina en per token bijgehouden. De publi
 
 Vóór het publiceren controleert de sitebouwer of je contactpagina of je voettekst het e-mailadres toont waarmee je inlogt. Zo ja, dan krijg je eerst een waarschuwing, met een link om een ander publiek e-mailadres in te stellen; je kunt ook bevestigen dat het adres klopt en toch publiceren.
 
+Een snelle dubbelklik kan niet per ongeluk publiceren: de bevestigingsknop in de publicatiewaarschuwing negeert klikken even na het openen, en een tweede klik vlak na de eerste kan geen dubbele publicatie starten of de waarschuwing overslaan.
+
 ## Navigatie
 
 De navigatie-editor laat je de headerlinks van je site indelen en bepaalt hoe de navigatiebalk er op je hele site uitziet:

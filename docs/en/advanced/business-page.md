@@ -416,6 +416,8 @@ Unpublished changes are tracked per page and per token. The publish button is di
 
 Before you publish, the builder checks whether your contact page or footer shows the e-mail address you log in with. If it does, you get a warning first, with a link to set a different public e-mail address; you can also confirm the address is fine and publish anyway.
 
+A fast double-click cannot publish by accident: the confirm button in the publish warning ignores clicks for a moment after it opens, and a second click straight after the first cannot fire a duplicate publish or skip the warning.
+
 ## Navigation
 
 The navigation editor lets you arrange your site's header links and control how the navigation bar looks across your entire site:

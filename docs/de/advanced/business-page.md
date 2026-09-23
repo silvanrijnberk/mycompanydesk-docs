@@ -415,6 +415,8 @@ Unveröffentlichte Änderungen werden pro Seite und pro Token erfasst. Die Verö
 
 Vor der Veröffentlichung prüft der Builder, ob Ihre Kontaktseite oder Ihr Fußbereich die E-Mail-Adresse zeigt, mit der Sie sich anmelden. Ist das der Fall, erhalten Sie zuerst eine Warnung, mit einem Link, um eine andere öffentliche E-Mail-Adresse zu hinterlegen; Sie können auch bestätigen, dass die Adresse in Ordnung ist, und trotzdem veröffentlichen.
 
+Ein schneller Doppelklick kann nicht versehentlich veröffentlichen: Die Bestätigen-Schaltfläche in der Veröffentlichungswarnung ignoriert Klicks für einen Moment nach dem Öffnen, und ein zweiter Klick direkt nach dem ersten kann weder eine doppelte Veröffentlichung auslösen noch die Warnung überspringen.
+
 ## Navigation
 
 Der Navigations-Editor ermöglicht es Ihnen, die Header-Links Ihrer Site zu ordnen und das Erscheinungsbild der Navigationsleiste auf Ihrer gesamten Site zu steuern:
