@@ -1,7 +1,7 @@
 ---
 title: Domeinen, website en inbox
 description: "Eigen domeinen, de gehoste bedrijfswebsite en de gedeelde inbox komen als een bundel, achter de vlaggen custom_domains en public_business_page."
-last_verified: 2026-09-22
+last_verified: 2026-09-23
 ---
 
 # Domeinen, website en inbox
@@ -260,6 +260,7 @@ Mogelijkheden:
 - **Concepten** -- bewaar deels geschreven berichten en kom er later op terug. Concepten worden server-side opgeslagen en blijven bewaard tussen browsersessies. Elk concept heeft een onderwerp, ontvangerlijst en berichttekst. Concepten zonder onderwerp tonen "(geen onderwerp)", en concepten zonder ontvanger tonen "(geen ontvanger)". Een antwoord-concept krijgt een "Antwoord"-chip in de threadlijst, zodat je in een oogopslag ziet op welke thread je bezig was met antwoorden.
 - **Opstellen** -- ladeformulier met een enkele identiteitskiezer die mailbox en afzenderadres in één bediening instelt, klantkiezer (of vrij `Aan`), onderwerp, bericht, CC/BCC-velden, bijlagen. Waarschuwing voor bounced ontvanger wordt getoond voor verzending.
 - **Send-from aliassen** -- `info@`, `support@`, `sales@` zijn bidirectionele aliassen op dezelfde mailbox. `noreply@` is alleen-verzend -- selecteerbaar als From, maar inkomende mail erop wordt weggegooid bij opname.
+- **Afzendernaam** -- uitgaande mail verstuurt met een naam naast het adres: de weergavenaam van de postbus, of je bedrijfsnaam als er geen weergavenaam is ingevuld. Postbussen zonder weergavenaam tonen in de postbuslijst "Verstuurt als" met de bedrijfsnaam, en haal je de weergavenaam weg, dan verstuurt de postbus weer onder je bedrijfsnaam.
 - **Bijlagen** -- uploaden voor verzending (zowel opstellen als beantwoorden). Bijlagen op inkomende mail zijn downloadbaar vanuit het bericht; ondertekende download-URL's verlopen na een korte TTL.
 - **Alias-melding** -- wanneer een inkomend bericht binnenkomt op een adres dat nog geen geregistreerd alias is, toont de thread een zachte melding met een "Toevoegen als alias"-actie.
 - **Koppelen** -- threads kunnen worden gekoppeld aan een klant, project of factuur voor kruisverwijzing.

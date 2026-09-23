@@ -61,7 +61,7 @@ MyCompanyDesk houdt uitgaande post tegen die eruitziet als misbruik, zodat ons g
 
 Alles over het ontvangen van mail vind je op de instellingenpagina van de inbox (**Inbox → Instellingen**):
 
-- **Postbussen & adressen**: je adressen, aliassen en hoelang berichten bewaard blijven.
+- **Postbussen & adressen**: je adressen, aliassen, de naam die ontvangers bij je mail zien (de weergavenaam, of je bedrijfsnaam als die leeg is) en hoelang berichten bewaard blijven.
 - **Activiteit**: recente uitgaande aflevering, handig als je je afvraagt of een klant je factuur heeft ontvangen.
 - **Vertrouwde afzenders**: afzenders die nooit als spam worden gemarkeerd.
 - **AVG-gegevensverwijdering**: verwijder alle gesprekken en bijlagen van een specifiek adres (alleen voor beheerders).

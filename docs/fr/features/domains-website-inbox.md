@@ -1,7 +1,7 @@
 ---
 title: Domaines, site web et boite de reception
 description: "Domaines personnalisés, site vitrine hébergé et boîte partagée arrivent en un seul lot, derrière custom_domains et public_business_page."
-last_verified: 2026-09-22
+last_verified: 2026-09-23
 ---
 
 # Domaines, site web et boite de reception
@@ -260,6 +260,7 @@ Fonctionnalites :
 - **Brouillons** -- enregistrez les messages partiellement ecrits et revenez-y plus tard. Les brouillons sont enregistres côte serveur et persistent entre les sessions de navigation. Chaque brouillon contient un sujet, une liste de destinataires et un corps de message. Les brouillons sans sujet affichent "(pas de sujet)", et les brouillons sans destinataire affichent "(pas de destinataire)". Un brouillon de reponse est marque d'un tag "Reponse" dans la liste des fils, pour voir en un coup d'oeil sur quel fil vous etiez en train de repondre.
 - **Rediger** -- formulaire en tiroir avec selection de la boite aux lettres, selection de l'expediteur, selection du client (ou champ `A` libre), sujet, message, champs CC/BCC, pieces jointes. Un avertissement de destinataire rejete est affiche avant l'envoi.
 - **Alias d'envoi** -- `info@`, `support@`, `sales@` sont des alias bidirectionnels de la meme boite aux lettres. `noreply@` est un alias d'envoi uniquement -- selectionnable comme From, mais les e-mails entrants sont rejetes a l'ingestion.
+- **Nom de l'expéditeur** -- vos e-mails sortants portent un nom à côté de l'adresse : le nom affiché de la boîte, ou le nom de votre entreprise quand aucun nom affiché n'est renseigné. Les boîtes sans nom affiché montrent « Envoie en tant que » suivi du nom de l'entreprise dans la liste des boîtes, et si vous effacez le nom affiché, la boîte envoie de nouveau sous le nom de votre entreprise.
 - **Pieces jointes** -- telechargement avant envoi (redaction et reponse). Les pieces jointes des e-mails entrants sont telechargeables depuis le message ; les URL de telechargement signees expirent apres un court TTL.
 - **Avis d'alias** -- lorsqu'un message entrant arrive a une adresse qui n'est pas encore un alias declare, le fil affiche un avis discret avec une action "Ajouter comme alias".
 - **Liaison** -- les fils peuvent etre lies a un client, un projet ou une facture pour reference croisee.
