@@ -286,6 +286,16 @@ Vous pouvez marquer un fil ouvert comme non lu depuis la barre d'outils. Contrai
 
 Le lecteur de thread suit aussi les changements d'état depuis le reste de la boîte de réception. Si vous déplacez une conversation vers la Corbeille, le Spam, Fermé ou En attente pendant que son panneau de lecture est ouvert, le panneau se ferme automatiquement. La vue détail reste ainsi synchronisée avec le dossier que vous consultez, et vous ne continuez pas à rédiger une réponse à un fil qui a déjà quitté la vue actuelle.
 
+#### Logo ou photo de l'expéditeur
+
+Chaque message entrant porte le visage de son expéditeur, dans la liste des fils comme dans le lecteur. MyCompanyDesk cherche un logo ou une photo à trois endroits, dans cet ordre : le logo que le domaine de l'expéditeur publie lui-même via BIMI (le même mécanisme que chez Gmail), la photo Gravatar associée à l'adresse, et l'icône du site web de l'expéditeur. Pour les domaines de messagerie gratuits comme Gmail, Outlook et iCloud, seul Gravatar est consulté, pour que tous les expéditeurs Gmail ne portent pas le même logo.
+
+Un logo n'apparaît que sur un message qui prouve qu'il vient vraiment de ce domaine : il doit passer DMARC ou porter un DKIM aligné sur le domaine From. Un expéditeur falsifié garde le monogramme neutre. L'absence de logo est donc l'état sûr, pas un défaut.
+
+La recherche et la récupération se font entièrement sur notre serveur, jamais dans votre navigateur. Gravatar et le site de l'expéditeur n'apprennent donc rien sur qui lit les messages, et les images sont ensuite retraitées et servies depuis notre propre stockage.
+
+Le courrier sortant porte la photo de celui qui l'a vraiment écrit : la vôtre, ou celle d'un collègue de la liste des membres. Un message sortant plus ancien sans auteur connu affiche votre photo dans un espace de travail à une personne, et le monogramme dans une équipe.
+
 ### Ventes
 
 Lorsque vous ajoutez des boutons d'achat aux niveaux de tarifs ou a un bloc produit sur votre site public, chaque paiement effectue cree un enregistrement de vente. Suivez-les dans **Argent > Ventes** (`/workspace/financial/money/sales`).

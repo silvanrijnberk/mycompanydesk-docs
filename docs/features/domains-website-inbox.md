@@ -286,6 +286,16 @@ Je kunt een geopende thread vanuit de toolbar als ongelezen markeren. Waar de on
 
 Als een thread vanuit de lijst naar Prullenbak, Spam, Gesloten of Snoozed wordt verplaatst terwijl het leesvenster openstaat, sluit dat venster automatisch. Zo blijft het leesvenster altijd synchroon met de map die je bekijkt, zodat je geen antwoord blijft schrijven op een gesprek dat al uit het huidige overzicht is verdwenen.
 
+#### Logo of foto bij de afzender
+
+Inkomende mail toont het gezicht van de afzender, in de threadlijst en in het leesvenster. MyCompanyDesk zoekt een logo of foto op drie plekken, in deze volgorde: het logo dat het domein van de afzender zelf via BIMI publiceert (dezelfde methode die Gmail gebruikt), de Gravatar-foto die bij het adres hoort, en het icoon van de eigen website van de afzender. Bij gratis maildomeinen zoals Gmail, Outlook en iCloud wordt alleen Gravatar geprobeerd, zodat niet elke Gmail-afzender hetzelfde Gmail-logo krijgt.
+
+Een logo verschijnt alleen bij een bericht dat aantoont dat het echt van dat domein komt: het bericht moet DMARC halen of DKIM meedragen die uitgelijnd is met het From-domein. Een vervalste afzender houdt het neutrale monogram. Een logo dat ontbreekt is dus geen mankement, maar de veilige standaard.
+
+Zoeken en ophalen gebeurt volledig op onze server, nooit in je browser. Gravatar en de website van de afzender zien daardoor niet wie er mail van wie leest, en de beelden worden daarna opnieuw ingepakt en vanaf onze eigen opslag geleverd.
+
+Uitgaande mail toont de foto van wie hem echt schreef: jouw eigen foto, of die van een collega uit de ledenlijst. Oudere uitgaande mail zonder bekende schrijver toont in een eenpersoonswerkruimte jouw foto en in een team het monogram.
+
 ### Verkopen
 
 Wanneer je koopknoppen toevoegt aan tarieven of een productblok op je openbare site, creëert elke voltooide betaling een verkooprecord. Volg ze via **Geld > Verkopen** (`/workspace/financial/money/sales`).

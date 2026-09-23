@@ -286,6 +286,16 @@ You can mark any open thread as unread from the toolbar. Unlike earlier versions
 
 If a thread is moved to Trash, Spam, Closed or Snoozed from the list while its reader is open, the reader closes automatically. This keeps the detail view in sync with the folder you are viewing, so you don't keep composing a reply to a thread that has already left the current view.
 
+#### Sender logos and photos
+
+Incoming mail carries the sender's face next to the message, in the thread list and in the reader. MyCompanyDesk looks for a logo or photo in three places, in this order: the logo the sender's domain publishes via BIMI (the same mechanism Gmail uses), the Gravatar photo attached to the address, and the icon of the sender's own website. For free mail domains such as Gmail, Outlook and iCloud only Gravatar is consulted, so not every Gmail sender ends up with the same Gmail logo.
+
+A logo only appears on a message that proves it really came from that domain: the message must pass DMARC or carry DKIM that is aligned with the From domain. A forged sender keeps the neutral monogram, so a missing logo is the safe state, not a defect.
+
+Looking up and fetching images happens entirely on our server, never in your browser. Gravatar and the sender's website learn nothing about who reads the mail, and the images are re-encoded and served from our own storage afterwards.
+
+Outgoing mail shows the photo of whoever actually wrote it: your own photo, or a colleague's from the member list. Older outgoing mail without a recorded author shows your photo in a one-person workspace and the monogram in a team.
+
 ### Sales
 
 When you add buy buttons to pricing tiers or a product block on your public site, every completed payment creates a sale record. Track them at **Money > Sales** (`/workspace/financial/money/sales`).
