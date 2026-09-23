@@ -1,7 +1,7 @@
 ---
 title: Domains, Website, and Inbox
 description: "Custom domains, the hosted business website and the shared inbox ship as one pre-launch bundle behind the custom_domains and public_business_page flags."
-last_verified: 2026-09-22
+last_verified: 2026-09-23
 ---
 
 # Domains, Website, and Inbox
@@ -260,6 +260,7 @@ Capabilities:
 - **Drafts**: save partially written messages and come back to them later. Drafts are stored server-side and persist across browser sessions. Each draft carries a subject, recipient list and body. Drafts that are missing a subject show "(no subject)", and drafts without a recipient show "(no recipient)". A reply draft is indicated with a "Reply" chip in the thread list, so you can tell at a glance which thread you were mid-response on.
 - **Compose**: drawer form with a unified identity picker that sets both mailbox and sender address in one control, customer picker (or freeform `To`), subject, body, CC/BCC fields and attachments. Bounced-recipient warning is shown before send.
 - **Send-from aliases** — `info@`, `support@`, `sales@` are bidirectional aliases on the same mailbox. `noreply@` is send-only — selectable as From, but inbound mail to it is dropped on ingest.
+- **Sender name** - outgoing mail carries a name next to the address: the display name of the mailbox, or your company name when no display name is filled in. Mailboxes without one show "Sends as" with the company name in the mailbox list, and clearing the display name sends under the company name again.
 - **Attachments** — upload before send (compose and reply both). Attachments on inbound mail are downloadable from the message; signed download URLs expire after a short TTL.
 - **Alias notice** — when an inbound message arrives at an address that isn't yet a declared alias, the thread shows a soft notice with an "Add as alias" action.
 - **Linking** — threads can be linked to a customer, project or invoice for cross-referencing.

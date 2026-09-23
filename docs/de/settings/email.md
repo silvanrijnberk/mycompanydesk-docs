@@ -61,7 +61,7 @@ MyCompanyDesk hält ausgehende Post zurück, die nach Missbrauch aussieht, damit
 
 Alles rund um den Mail-Empfang finden Sie auf der Einstellungsseite des Posteingangs (**Posteingang → Einstellungen**):
 
-- **Postfächer & Adressen**: Ihre Adressen, Aliasse und wie lange Nachrichten aufbewahrt werden.
+- **Postfächer & Adressen**: Ihre Adressen, Aliasse, der Name, den Empfänger bei Ihren E-Mails sehen (der Anzeigename, oder Ihr Firmenname, wenn er leer ist), und wie lange Nachrichten aufbewahrt werden.
 - **Aktivität**: die letzten ausgehenden Zustellungen, hilfreich, wenn Sie sich fragen, ob ein Kunde Ihre Rechnung erhalten hat.
 - **Vertrauenswürdige Absender**: Absender, die nie als Spam markiert werden.
 - **DSGVO-Datenlöschung**: Löschen Sie alle Unterhaltungen und Anhänge einer bestimmten Adresse (nur für Administratoren).

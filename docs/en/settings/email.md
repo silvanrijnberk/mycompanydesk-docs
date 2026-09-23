@@ -1,7 +1,7 @@
 ---
 title: Email
 description: "Choose which address your invoices and quotes go out from and set the sign-off under every message. Available on every plan."
-last_verified: 2026-09-21
+last_verified: 2026-09-23
 ---
 
 # Email
@@ -62,7 +62,7 @@ MyCompanyDesk blocks outgoing mail that looks like abuse, so our shared sending 
 
 Everything about receiving mail lives on the Inbox settings page (**Inbox → Settings**):
 
-- **Mailboxes & addresses**: your addresses, aliases, and how long messages are kept.
+- **Mailboxes & addresses**: your addresses, aliases, the name recipients see on your mail (the display name, or your company name when it is empty), and how long messages are kept.
 - **Activity**: recent outbound delivery, useful when you wonder whether a customer received your invoice.
 - **Trusted senders**: senders that are never marked as spam.
 - **GDPR data removal**: delete all conversations and attachments from a specific address (admins only).

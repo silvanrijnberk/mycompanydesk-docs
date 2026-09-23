@@ -61,7 +61,7 @@ MyCompanyDesk retient les messages sortants qui ressemblent à un abus, afin que
 
 Tout ce qui concerne la réception du courrier se trouve sur la page de paramètres de la boîte de réception (**Boîte de réception → Paramètres**) :
 
-- **Boîtes & adresses** : vos adresses, alias et la durée de conservation des messages.
+- **Boîtes & adresses** : vos adresses, alias, le nom que vos destinataires voient sur vos e-mails (le nom affiché, ou le nom de votre entreprise s'il est vide) et la durée de conservation des messages.
 - **Activité** : les dernières livraisons sortantes, utile quand vous vous demandez si un client a bien reçu votre facture.
 - **Expéditeurs approuvés** : des expéditeurs qui ne sont jamais marqués comme spam.
 - **Suppression de données RGPD** : supprimez toutes les conversations et pièces jointes d'une adresse précise (administrateurs uniquement).
