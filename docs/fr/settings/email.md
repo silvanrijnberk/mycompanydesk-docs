@@ -9,6 +9,15 @@ MyCompanyDesk envoie vos factures et devis par e-mail à vos clients. **Paramèt
 
 La réception des e-mails (la boîte de réception) se configure ailleurs ; voir [Recevoir : paramètres de la boîte de réception](#recevoir-parametres-de-la-boite-de-reception) ci-dessous.
 
+## Connecter Gmail ou Outlook, ou votre boîte mail professionnelle ?
+
+Ce sont deux choses différentes :
+
+- **Connecter Gmail ou Outlook** (ci-dessous, dans **Méthode d'envoi**) détermine uniquement le compte depuis lequel partent vos factures, devis et rappels. MyCompanyDesk ne lit pas votre Gmail ou votre Outlook et n'y reçoit aucun e-mail.
+- **La boîte mail professionnelle** (Office) est votre messagerie sur votre propre domaine, par exemple `info@votreentreprise.fr`. Vous la lisez et y répondez dans **Boîte de réception** dans MyCompanyDesk et dans l'application MyCompanyDesk.
+
+Vous voulez envoyer depuis votre adresse professionnelle avec Outlook, Apple Mail ou Gmail, ou lire vos e-mails sur votre téléphone ? Voir [E-mails dans Outlook, Apple Mail ou sur votre téléphone](/fr/faq/mail-app-outlook). Vous voulez transférer tous vos e-mails vers Gmail ? Voir [Transférer vos e-mails vers Gmail ou une autre adresse](/fr/faq/forward-mail).
+
 ## Expéditeur
 
 La carte **Méthode d'envoi** détermine quelle adresse vos clients voient comme expéditeur. Il y a trois options.
@@ -17,7 +26,7 @@ La carte **Méthode d'envoi** détermine quelle adresse vos clients voient comme
 
 Envoyez des factures depuis votre propre domaine, comme votre boîte de réception. Les clients voient votre adresse comme expéditeur.
 
-- L'envoi depuis votre propre domaine fait partie de l'abonnement Pro ; dans les autres abonnements, l'option affiche un lien de mise à niveau.
+- L'envoi depuis votre propre domaine fait partie d'Office ; sur Desk, l'option affiche un lien de mise à niveau.
 - Vous avez déjà un domaine connecté ? La carte propose un bouton d'activation en un clic (**Activer l'e-mail sur votredomaine.fr**). C'est sans danger pour votre e-mail existant : si votre domaine reçoit déjà du courrier ailleurs (par exemple Gmail ou Microsoft 365), MyCompanyDesk vous avertit et ne prend rien en main.
 - Pas encore de domaine ? Le lien **Ajouter un domaine** vous amène aux paramètres de domaine.
 - Une fois l'envoi actif, la carte affiche l'adresse depuis laquelle vos documents partent, avec un lien vers les enregistrements DNS.
@@ -36,15 +45,15 @@ Les documents sont toujours envoyés sous votre propre identité. Si aucun expé
 
 Quand votre propre domaine est actif et compte plusieurs adresses, un choix supplémentaire apparaît : **Envoyer les factures depuis**. Choisissez quelle adresse vos clients voient comme expéditeur sur les factures et les devis.
 
-## Votre signature
+## Votre signature (pied de page de vos e-mails)
 
-Le pied de page sous chaque e-mail sortant est construit automatiquement à partir des informations que vous remplissez ici :
+Le pied de page sous chaque e-mail sortant, y compris les e-mails envoyés depuis la boîte de réception, est construit automatiquement à partir des informations que vous remplissez ici :
 
 - **E-mail de support**
 - **Site web**
 - Liens sociaux (LinkedIn, X, Facebook, Instagram)
 
-Tout ce que vous remplissez est repris ; ce qui reste vide est simplement omis. Ces champs sont partagés avec les informations de votre entreprise : que vous les modifiiez ici ou sous **Paramètres → Informations de l'entreprise**, les deux restent synchronisés.
+Tout ce que vous remplissez est repris ; ce qui reste vide est simplement omis. Ces champs sont partagés avec les informations de votre entreprise : que vous les modifiiez ici ou sous **Paramètres → Informations de l'entreprise**, les deux restent synchronisés. Pour en savoir plus, notamment sur une salutation et une formule de fin fixes dans la boîte de réception, voir [Configurer votre signature e-mail](/fr/faq/email-signature).
 
 ## Textes des e-mails
 
@@ -59,16 +68,18 @@ MyCompanyDesk retient les messages sortants qui ressemblent à un abus, afin que
 
 ## Recevoir : paramètres de la boîte de réception
 
-Tout ce qui concerne la réception du courrier se trouve sur la page de paramètres de la boîte de réception (**Boîte de réception → Paramètres**) :
+Tout ce qui concerne la réception du courrier se trouve dans la boîte de réception elle-même, dans l'onglet **Adresses** (**Boîte de réception** → **Adresses**) :
 
 - **Boîtes & adresses** : vos adresses, alias, le nom que vos destinataires voient sur vos e-mails (le nom affiché, ou le nom de votre entreprise s'il est vide) et la durée de conservation des messages.
+- **Transférer vers un e-mail** : une copie de chaque message entrant vers l'adresse e-mail avec laquelle vous vous connectez. Voir [Transférer vos e-mails](/fr/faq/forward-mail).
+- **Reprendre une boîte mail existante** : importez vos anciens e-mails. Voir [Importer vos anciens e-mails](/fr/faq/import-old-mail).
 - **Activité** : les dernières livraisons sortantes, utile quand vous vous demandez si un client a bien reçu votre facture.
 - **Expéditeurs approuvés** : des expéditeurs qui ne sont jamais marqués comme spam.
 - **Suppression de données RGPD** : supprimez toutes les conversations et pièces jointes d'une adresse précise (administrateurs uniquement).
 
-Les règles pour le courrier entrant se trouvent sous **Boîte de réception → Paramètres → Règles & routage**.
+Les règles pour le courrier entrant se trouvent sous **Boîte de réception** → **Règles & routage**.
 
 ## Voir aussi
 
 - [Paramètres de l'entreprise](/fr/settings/company) : les informations d'entreprise derrière votre signature
-- [Abonnement & paiements](/fr/settings/billing) : l'envoi depuis votre propre domaine fait partie de Pro
+- [Abonnement & paiements](/fr/settings/billing) : l'envoi depuis votre propre domaine fait partie d'Office

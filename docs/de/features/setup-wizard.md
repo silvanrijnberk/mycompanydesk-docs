@@ -60,7 +60,7 @@ Wenn Sie noch auf Ihre USt-IdNr. vom Finanzamt warten oder unter die Kleinuntern
 
 Der letzte Schritt bestätigt Ihre Testphase:
 
-- **Ihre Testphase:** Jeder neue Arbeitsbereich startet mit 60 Tagen Pro, kostenlos, ohne Kreditkarte.
+- **Ihre Testphase:** Jeder neue Arbeitsbereich startet mit 60 Tagen Office, kostenlos, ohne Kreditkarte.
 
 **Einrichtung abschließen** wendet Ihre Unternehmensdaten, USt.-Status, IBAN und Standardeinstellungen an. Vom Abschlussbildschirm aus werden auch optionale nächste Schritte angeboten, etwa das Einrichten einer Website. Eine Website einzurichten ist optional: es wird nichts erstellt, es sei denn, Sie wählen es auf dem Abschlussbildschirm oder in der Dashboard-Checkliste.
 

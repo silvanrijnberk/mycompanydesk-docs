@@ -55,5 +55,5 @@ For the best result on PDFs:
 - **Shape:** landscape or square logos fit the layouts best
 
 ::: info
-Invoice design and style presets are included from the **Starter** plan.
+Invoice design and style presets are included in every plan, Desk included.
 :::

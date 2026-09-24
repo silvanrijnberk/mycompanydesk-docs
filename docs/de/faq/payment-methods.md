@@ -44,7 +44,7 @@ Mollie unterstützt iDEAL, Bancontact, Kreditkarte und Banküberweisung, ideal f
 
 ## Online-Zahlungsgebühr im kostenlosen Plan
 
-Im kostenlosen Plan fällt für Online-Rechnungszahlungen eine kleine Servicegebühr an. Wenn ein Kunde eine Rechnung online bezahlt, werden 0,50 € über Ihr Mollie- oder Stripe-Konto als Application Fee einbehalten. Online-Zahlungen in Starter und Pro bleiben kostenlos. Der Hinweis wird neben **Online betalingen** auf `/settings/betalen` angezeigt, solange Ihr Arbeitsbereich im kostenlosen Plan ist.
+Mit Desk (kostenlos) fällt für Online-Rechnungszahlungen eine kleine Servicegebühr an. Wenn ein Kunde eine Rechnung online bezahlt, werden 0,50 € über Ihr Mollie- oder Stripe-Konto als Application Fee einbehalten. Online-Zahlungen mit Office sind kostenlos. Der Hinweis wird neben **Online betalingen** auf `/settings/betalen` angezeigt, solange Ihr Arbeitsbereich im kostenlosen Plan ist.
 
 Der genaue Betrag und der Mindestrechnungsbetrag werden serverseitig konfiguriert. Der Hinweis in der App zeigt derzeit 0,50 € pro Online-Rechnungszahlung ab 5 €, passend zu `config.billing.freeTierSurchargeCents` und `freeTierSurchargeMinInvoiceCents` in `apps/api/src/config/env.js`. Ändert sich einer dieser Werte, müssen diese Seite und der Hinweis in der App gemeinsam aktualisiert werden.
 

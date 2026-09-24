@@ -1,11 +1,16 @@
 ---
 title: "Plans and pricing"
-description: "MyCompanyDesk has two plans: Desk and Office. Desk is free and stays free."
-last_verified: 2026-07-22
+description: "What does MyCompanyDesk cost? Desk is free, Office costs 12.99 euros per month or 129.90 per year excl. VAT, with an intro price for the first year."
+last_verified: 2026-09-24
 chatbot:
   triggers:
     - "plans"
     - "pricing"
+    - "price"
+    - "prices"
+    - "cost"
+    - "how much"
+    - "what does it cost"
     - "subscription"
     - "upgrade"
     - "downgrade"
@@ -13,6 +18,9 @@ chatbot:
     - "Desk"
     - "abonnementen"
     - "prijzen"
+    - "wat kost"
+    - "kosten"
+    - "prijs"
     - "abonnement"
     - "upgraden"
     - "downgraden"
@@ -23,27 +31,41 @@ chatbot:
     - "plan"
     - "tarif"
   actions:
-    - { label: "Open settings", to: "/settings/billing" }
+    - { label: "Open Your subscription", to: "/settings/abonnement" }
   follow_up:
     - "How do recurring invoices work?"
     - "What happens when I downgrade?"
 ---
 
+# Plans and pricing
+
+## What does MyCompanyDesk cost?
+
 MyCompanyDesk has two plans: **Desk** and **Office**.
 
-**Desk** is free and stays free. It covers the work you do yourself: unlimited invoices, quotes and expenses, projects and time registration, your own website on `.mycompanydesk.site`, receipt scanning with AI, and basic AI chat.
+| | Desk | Office |
+|---|---|---|
+| Per month | free | €12.99 |
+| Per year | free | €129.90 (two months free) |
+| First year, paid yearly | free | €35.88 (€2.99 per month) if you never had a paid subscription |
 
-**Office** is a paid plan. It adds automation and services that cost real money to run: recurring invoices and expenses, contracts, bank connections, a business inbox on your own domain, digital VAT filing, full bookkeeping, API access, and higher AI limits. See the [plans page](https://mycompanydesk.nl/plans) for the current price.
+All prices exclude VAT. There is no extra charge per user.
 
-These features are defined in our billing config: [apps/api/src/modules/billing/plans.config.js](https://github.com/silvanrijnberk/RichardTool/blob/development/apps/api/src/modules/billing/plans.config.js).
+New workspaces get 60 days of Office for free, no credit card needed. If you keep Office after the trial, the first year costs €2.99 per month when you pay yearly. After that you pay €129.90 per year. If you do nothing, you continue on Desk automatically.
 
-**Upgrading and downgrading**
-- You can switch between Desk and Office at any time.
-- When you upgrade, the new features are available right away.
-- When you downgrade from Office to Desk, Office-only features stop working: new recurring invoices or expenses are no longer generated, your bank connection stops importing, and your custom-domain inbox no longer sends or receives. Existing templates, already generated invoices or expenses, and other data stay in your workspace.
-- If a free 60-day Office trial ends and you do not subscribe, your workspace moves to Desk automatically.
+## What is in Desk?
 
-**Billing**
-- All prices are shown excluding 21% VAT. The amount you pay at checkout includes VAT, which you can reclaim as voorbelasting.
-- There is no per-user charge. Desk allows one working user plus free accountant access. Office allows unlimited working users and free accountant access.
-- You can cancel or downgrade whenever you want. If you are not satisfied, you can get your money back within 14 days.
+Desk is free and stays free. You get unlimited invoices, quotes and expenses, projects and time registration, your own website on a free `.mycompanydesk.site` address, receipt scanning (3 per month) and the assistant (10 messages per month).
+
+## What does Office add?
+
+Office is all-in-one: your website and business email on your own domain, recurring invoices and expenses, automatic payment reminders, contracts, bank connections, digital VAT returns, automatic delivery to your accountant, Peppol e-invoicing, a newsletter, team members, multiple businesses, API access and higher AI limits. The full overview is in [Plan & payments](/en/settings/billing).
+
+## Upgrading, downgrading and cancelling
+
+- You see and change your plan under **Settings** → **Your subscription**.
+- After an upgrade, the Office features are available right away.
+- When you go back from Office to Desk, the Office features stop working: no new recurring invoices or expenses are created, your bank connection stops importing, and your inbox on your own domain no longer sends or receives mail. Your data stays where it is.
+- You can always cancel via **Settings** → **Cancel account** → **Cancel subscription**. You keep Office until the end of the paid period.
+- Desk is for you alone, with free access for your accountant. Office has unlimited team members, also with free access for your accountant.
+- Not happy? You get your money back within 14 days.

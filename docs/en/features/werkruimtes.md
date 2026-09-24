@@ -44,7 +44,7 @@ The work page lists open work in two blocks: your own businesses first, then cli
 
 If you run an accounting firm, the Firm section holds three firm-level pages:
 
-- **Firm overview** (`/werkruimtes/kantoor`) - firm members, pending client invitations, partner share link and referral stats, and whether free Pro has been granted.
+- **Firm overview** (`/werkruimtes/kantoor`) - firm members, pending client invitations, partner share link and referral stats, and whether free Office has been granted.
 - **Billing** (`/werkruimtes/kantoor/facturatie`) - offer to take over a client administration's subscription. The client must accept before anything is charged, the price per administration is shown before you confirm, and a pending offer is shown separately so you can withdraw it until the client responds.
 - **Export** (`/werkruimtes/kantoor/export`) - export several client administrations at once. Choose the year, period, and export format, select the administrations, and the app downloads one archive per client. Any failed export stays on screen so you can see what did not complete.
 
@@ -127,7 +127,7 @@ Each client row shows a work chip when something is waiting. Open it to see who 
 
 Open **Bedrijf toevoegen** and give the new business a name.
 
-If you are on a paid plan (Starter or Pro), the app shows the extra cost before you confirm. During your own Pro trial you pay nothing for the extra business; after the trial it is added to your subscription at the price shown in the confirmation.
+If you are on Office, the app shows the extra cost before you confirm. During your own Office trial you pay nothing for the extra business; after the trial it is added to your subscription at the price shown in the confirmation.
 
 If you are on a free Office workspace (for example a comped or founding-member arrangement), your first business stays free and the app now offers a separate checkout for a second business. The price is shown before you start the checkout, and only the second business is billed on its own add-on subscription. After the payment is confirmed, you can name and create the second business.
 

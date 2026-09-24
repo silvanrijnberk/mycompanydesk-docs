@@ -55,5 +55,5 @@ Pour le meilleur résultat sur les PDF :
 - **Forme :** les logos horizontaux ou carrés s'intègrent le mieux aux mises en page
 
 ::: info
-La conception des factures et les styles prédéfinis sont inclus à partir de la formule **Starter**.
+La conception des factures et les styles prédéfinis sont inclus dans toutes les formules, y compris Desk.
 :::

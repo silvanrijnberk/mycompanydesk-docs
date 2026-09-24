@@ -44,7 +44,7 @@ Die Arbeit-Seite listet offene Arbeit in zwei Blöcken: zuerst Ihre eigenen Unte
 
 Wenn Sie eine Steuerberaterkanzlei betreiben, enthält der Bereich Kanzlei drei kanzleieigene Seiten:
 
-- **Kanzlei-Überblick** (`/werkruimtes/kantoor`) - Kanzlei-Mitglieder, offene Mandanteneinladungen, Partner-Teilen-Link und Statistiken, sowie ob kostenloses Pro gewährt wurde.
+- **Kanzlei-Überblick** (`/werkruimtes/kantoor`) - Kanzlei-Mitglieder, offene Mandanteneinladungen, Partner-Teilen-Link und Statistiken, sowie ob kostenloses Office gewährt wurde.
 - **Abrechnung** (`/werkruimtes/kantoor/facturatie`) - bieten Sie an, das Abonnement einer Mandanten-Administration zu übernehmen. Der Mandant muss akzeptieren, bevor etwas berechnet wird; der Preis pro übernommener Administration wird vor der Bestätigung angezeigt. Ein noch ausstehendes Angebot wird getrennt angezeigt, damit Sie es zurückziehen können, solange der Mandant noch nicht geantwortet hat.
 - **Export** (`/werkruimtes/kantoor/export`) - exportieren Sie mehrere Mandanten-Administrationen auf einmal. Wählen Sie Jahr, Zeitraum und Exportformat, wählen Sie die Administrationen aus, und die App lädt pro Mandant ein Archiv herunter. Fehlgeschlagene Exports bleiben sichtbar, damit Sie sehen, was nicht abgeschlossen wurde.
 
@@ -127,7 +127,7 @@ Jede Mandantenzeile zeigt einen Arbeit-Chip, sobald etwas wartet. Öffnen Sie ih
 
 Öffnen Sie **Unternehmen hinzufügen** und geben Sie dem neuen Unternehmen einen Namen.
 
-Bei einem kostenpflichtigen Plan (Starter oder Pro) zeigt die App die zusätzlichen Kosten vor der Bestätigung an. Während Ihrer eigenen Office-Testphase zahlen Sie nichts für das zusätzliche Unternehmen; danach wird es zum angezeigten Preis Ihrem Abonnement hinzugefügt.
+Wenn Sie Office haben, zeigt die App die zusätzlichen Kosten vor der Bestätigung an. Während Ihrer eigenen Office-Testphase zahlen Sie nichts für das zusätzliche Unternehmen; danach wird es zum angezeigten Preis Ihrem Abonnement hinzugefügt.
 
 Wenn Ihr Arbeitsbereich ein kostenloses Office aufgrund einer Regelung wie einer Gunst- oder Founding-Member-Regelung hat, bleibt das erste Unternehmen kostenlos und die App bietet jetzt einen separaten Checkout für ein zweites Unternehmen. Der Preis wird im Voraus angezeigt; nur das zweite Unternehmen wird über ein eigenes Add-on-Abonnement abgerechnet. Nach Bestätigung der Zahlung können Sie das zweite Unternehmen benennen.
 

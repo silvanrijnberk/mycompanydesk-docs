@@ -130,7 +130,7 @@ Importez votre base de donnees clients existante depuis un fichier CSV :
 
 ## Exporter des clients
 
-Exportez votre liste de clients au format CSV depuis la page des clients (plan Pro et superieur).
+Exportez votre liste de clients au format CSV depuis la page des clients, avec toutes les formules.
 
 ## Clients perdus
 

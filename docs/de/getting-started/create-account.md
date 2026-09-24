@@ -35,7 +35,7 @@ Sie können diesen Zugang später unter Einstellungen → „Zugang und Steuerbe
 
 ## Ihr Arbeitsbereich
 
-Ihr Arbeitsbereich wird bei der Registrierung automatisch erstellt, mit einer **60-tägigen kostenlosen Pro-Testphase** (keine Zahlungsmethode erforderlich). Sie können sofort alle Pro-Funktionen erkunden; Ihre Unternehmensdaten füllen Sie später im Einrichtungsassistenten aus.
+Ihr Arbeitsbereich wird bei der Registrierung automatisch erstellt, mit einer **60-tägigen kostenlosen Office-Testphase** (keine Zahlungsmethode erforderlich). Sie können sofort alle Office-Funktionen erkunden; Ihre Unternehmensdaten füllen Sie später im Einrichtungsassistenten aus.
 
 ### Einem bestehenden Arbeitsbereich beitreten
 

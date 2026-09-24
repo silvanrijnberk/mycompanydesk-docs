@@ -136,7 +136,7 @@ If your workspace has general terms in Documents, the email preview also shows a
 
 ### Send as Peppol e-invoice
 
-If your workspace is on the Pro plan and has [Peppol e-invoicing](/en/features/peppol) enabled, the send dialog also offers **E-invoice (Peppol)**. This delivers the invoice digitally to your customer's'accounting software instead of sending it by email. You choose per invoice which channel to use.
+If your workspace is on the Office plan and has [Peppol e-invoicing](/en/features/peppol) enabled, the send dialog also offers **E-invoice (Peppol)**. This delivers the invoice digitally to your customer's'accounting software instead of sending it by email. You choose per invoice which channel to use.
 
 ### Download PDF
 
@@ -252,7 +252,7 @@ Because the card only sees the invoices loaded in the current list view, its buc
 Export your invoices as CSV for use in Excel, Google Sheets, or your accounting software.
 
 ::: info
-CSV export requires the **Pro** plan or higher.
+CSV export requires the **Office** plan.
 :::
 
 ## Finalizing and sending

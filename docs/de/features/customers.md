@@ -130,7 +130,7 @@ Importieren Sie Ihre bestehende Kundendatenbank aus CSV:
 
 ## Kunden exportieren
 
-Exportieren Sie Ihre Kundenliste als CSV von der Kundenseite (Pro-Tarif und höher).
+Exportieren Sie Ihre Kundenliste als CSV von der Kundenseite, in jedem Tarif.
 
 ## Abgewanderte Kunden
 

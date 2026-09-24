@@ -8,6 +8,10 @@ last_verified: 2026-09-23
 
 > **Status: Pre-Launch.** Alle drei Features auf dieser Seite werden zusammen als Bundle ausgerollt. Sie werden durch die `custom_domains`- und `public_business_page`-Feature-Flags gesteuert und befinden sich noch in der Einführung in die öffentlichen Tarife. Das hier beschriebene Verhalten entspricht der Codebasis vom 2026-05-09; falls ein Bildschirm in Ihrem Workspace anders aussieht, wurde das Bundle dort noch nicht aktiviert.
 
+::: tip Kurze Antwort
+Sie suchen die Schritte für eine bestimmte Aufgabe? Dann schauen Sie in die häufigen Fragen: [Eigene Domain verbinden und Nameserver](/de/faq/connect-domain), [Alte E-Mails importieren](/de/faq/import-old-mail), [Website veröffentlichen und online stellen](/de/faq/publish-website), [Mail an Gmail weiterleiten](/de/faq/forward-mail) und [Mail in Outlook oder auf dem Handy](/de/faq/mail-app-outlook). Diese Seite beschreibt die Technik dahinter.
+:::
+
 Eigene Domains, die gehostete Unternehmenswebsite und der gemeinsame E-Mail-Posteingang bilden ein Produkt. Der Grund: Sie teilen sich den Zustand. Dieselbe `domains`-Zeile, die beweist, dass Sie `acme.de` kontrollieren, macht `acme.de` auch zur URL Ihrer Website und sorgt dafür, dass `info@acme.de` E-Mails empfangen kann. Es gibt einen Onboarding-Ablauf, einen Einstellungsbaum und einen Ort in der App, um all das zu verwalten.
 
 ## Der gebündelte Wert
@@ -124,13 +128,13 @@ Wichtige Spalten, die die App liest:
 
 Die Domain-Verlängerung folgt drei Pfaden, je nachdem, wie die Domain erworben wurde:
 
-1. **Kostenlose gebündelte Verlängerung** (auf Pro umgestellte Trial-Stufe oder eine bestehende Gratis-auf-Lebenszeit-Vereinbarung): MCD übernimmt die Wholesale-Verlängerungskosten. Die Domain verlängert sich automatisch, solange der Workspace auf Pro bleibt. Keine Zahlungsmethode erforderlich.
-2. **Kostenpflichtige automatische Verlängerung** (bezahlter Kauf oder Trial-Stufe ohne Pro): Wird jährlich über die hinterlegte Karte abgerechnet. Funktioniert wie jede andere Abonnementverlängerung.
-3. **Manuelle Verlängerung**: Wenn ein Trial-Workspace aus Pro herausfällt UND keine Karte hinterlegt hat, überspringt der automatische Verlängerungspfad ihn. Der Benutzer sieht eine Benachrichtigung und kann eine einmalige Zahlung über `POST /api/domains/renew/:domainId` auslösen, die eine Stripe Embedded Checkout-Sitzung für die Verlängerung erstellt. Dies ist der einzige Weg, eine Domain ohne aktives Abonnement oder hinterlegte Karte aktiv zu halten.
+1. **Kostenlose gebündelte Verlängerung** (auf Office umgestellte Trial-Stufe oder eine bestehende Gratis-auf-Lebenszeit-Vereinbarung): MCD übernimmt die Wholesale-Verlängerungskosten. Die Domain verlängert sich automatisch, solange der Workspace auf Office bleibt. Keine Zahlungsmethode erforderlich.
+2. **Kostenpflichtige automatische Verlängerung** (bezahlter Kauf oder Trial-Stufe ohne Office): Wird jährlich über die hinterlegte Karte abgerechnet. Funktioniert wie jede andere Abonnementverlängerung.
+3. **Manuelle Verlängerung**: Wenn ein Trial-Workspace aus Office herausfällt UND keine Karte hinterlegt hat, überspringt der automatische Verlängerungspfad ihn. Der Benutzer sieht eine Benachrichtigung und kann eine einmalige Zahlung über `POST /api/domains/renew/:domainId` auslösen, die eine Stripe Embedded Checkout-Sitzung für die Verlängerung erstellt. Dies ist der einzige Weg, eine Domain ohne aktives Abonnement oder hinterlegte Karte aktiv zu halten.
 
 #### Domain-Übernahme bei vorzeitigem Probezeit-Ende
 
-Wenn ein Kunde während der Pro-Testphase abspringt, ohne Pro-Kunde zu werden, gibt es eine dritte Option für die kostenlose `.nl`-Domain: Übernahme für einmalig €15,00 inkl. MwSt. (einmalig). Der Übernahme-Ablauf (`DomainBuyoutModal.vue`) lässt den Kunden über Stripe Embedded Checkout bezahlen und erhält damit das vollständige Eigentum. Nach der Zahlung wird der Domain-Inhaber von MCD auf den Kunden übertragen und der Auth-Code (EPP) wird angezeigt, sodass die Domain zu jedem Registrar umgezogen werden kann.
+Wenn ein Kunde während der Office-Testphase abspringt, ohne Office-Kunde zu werden, gibt es eine dritte Option für die kostenlose `.nl`-Domain: Übernahme für einmalig €15,00 inkl. MwSt. (einmalig). Der Übernahme-Ablauf (`DomainBuyoutModal.vue`) lässt den Kunden über Stripe Embedded Checkout bezahlen und erhält damit das vollständige Eigentum. Nach der Zahlung wird der Domain-Inhaber von MCD auf den Kunden übertragen und der Auth-Code (EPP) wird angezeigt, sodass die Domain zu jedem Registrar umgezogen werden kann.
 
 Der Preis von €15,00 wird bewusst inklusive niederländischer MwSt. angegeben, weil die Abbuchung im Moment des Abgangs ausgelöst wird. Der Nettobetrag, der an Stripe übermittelt wird, beträgt €12,40; darauf werden 21% niederländische MwSt. aufaddiert und auf den Cent gerundet, sodass der Gesamtbetrag genau €15,00 ergibt. Siehe `apps/api/src/modules/domains/domain-pricing.config.js` im RichardTool-Repo und `sources/vat-rates.yaml#countries.NL.standard`.
 
@@ -144,30 +148,30 @@ Betroffene Datenbanktabellen:
 
 Die Übertragung einer über MyCompanyDesk registrierten Domain zu einem anderen Registrar hat dauerhafte Konsequenzen, die durch den wöchentlichen OpenProvider-Statusabgleich durchgesetzt werden:
 
-- **Domains mit Gratis-auf-Lebenszeit-Vereinbarung**: Der Gratis-Claim wird gelöscht und die interne lebenslange Pro-Zusage des Workspace wird gekündigt. Der Workspace wird zu einem normalen zahlenden Kunden. Dies ist unumkehrbar; die Zusage kann nicht erneut beansprucht werden.
-- **Trial- / Pro-gebündelte Domains**: Der gebündelte Gratis-Status geht verloren. Der Workspace kann nie wieder eine andere Gratis-Domain beanspruchen (bereits über die Retained-Claims-Liste durchgesetzt). Hinweis: Die Übernahme der Domain während der Testphase (siehe Übernahme-Abschnitt oben) ist keine Übertragung — es handelt sich um eine Inhaberübergabe, die dem Kunden Eigentum verschafft, bevor eine Übertragung stattfindet, sodass der Gratis-Domain-Vorteil für die Dauer der Testphase erhalten bleibt.
+- **Domains mit Gratis-auf-Lebenszeit-Vereinbarung**: Der Gratis-Claim wird gelöscht und die interne lebenslange Office-Zusage des Workspace wird gekündigt. Der Workspace wird zu einem normalen zahlenden Kunden. Dies ist unumkehrbar; die Zusage kann nicht erneut beansprucht werden.
+- **Trial- / Office-gebündelte Domains**: Der gebündelte Gratis-Status geht verloren. Der Workspace kann nie wieder eine andere Gratis-Domain beanspruchen (bereits über die Retained-Claims-Liste durchgesetzt). Hinweis: Die Übernahme der Domain während der Testphase (siehe Übernahme-Abschnitt oben) ist keine Übertragung. Es handelt sich um eine Inhaberübergabe, die dem Kunden Eigentum verschafft, bevor eine Übertragung stattfindet, sodass der Gratis-Domain-Vorteil für die Dauer der Testphase erhalten bleibt.
 - **Bezahlte Domains**: Kein Vorteilsentzug. Die Domain wechselt einfach zu `status = 'transferred_out'`.
 
-Das Claim-Modal warnt vor diesen Konsequenzen, bevor ein Gratis-Domain-Claim eingereicht wird, und verlangt eine ausdrückliche Bestätigung des Benutzers. Ein "So funktioniert Ihre Gratis-Domain"-Hinweis erklärt, dass die Domain während der Testphase auf MCD registriert ist, bei Pro-Umstellung kostenlos auf den eigenen Namen übertragen wird und bei vorzeitigem Ausstieg für €15 übernommen werden kann. Widerrufsdetails werden in der `domain_perk_revocations`-Audit-Tabelle für Support-Zwecke festgehalten.
+Das Claim-Modal warnt vor diesen Konsequenzen, bevor ein Gratis-Domain-Claim eingereicht wird, und verlangt eine ausdrückliche Bestätigung des Benutzers. Ein "So funktioniert Ihre Gratis-Domain"-Hinweis erklärt, dass die Domain während der Testphase auf MCD registriert ist, bei Office-Umstellung kostenlos auf den eigenen Namen übertragen wird und bei vorzeitigem Ausstieg für €15 übernommen werden kann. Widerrufsdetails werden in der `domain_perk_revocations`-Audit-Tabelle für Support-Zwecke festgehalten.
 
 #### Domain kaufen oder beanspruchen
 
 Die Domain-Kaufkarte (`DomainPurchaseCard.vue`, `domain-purchase.service.ts`) ist die erste Karte auf der Domains-Einstellungsseite. Sie erscheint, wenn der Workspace noch keine aktive eigene Domain hat. Die Karte erlaubt es, eine Domain auszuwählen und über zwei Wege zu erwerben, die beide ein eigenes Zwei-Schritte-Kaufmodal öffnen (`DomainClaimModal.vue`). Schritt 1 sammelt die Registrantdaten (die vom Registrar für WHOIS benötigten Angaben). Schritt 2 bearbeitet die Zahlung oder Einreichung:
 
 - **Kaufen** -- Bezahlter Kauf über OpenProvider. Der Benutzer gibt einen Domainnamen ein, die Karte ruft `GET /api/domain-purchase/quote` auf, um Verfügbarkeit und Preisgestaltung zu prüfen, und öffnet dann das Kaufmodal. Nach Erfassung der Registrantdaten ruft das Modal `POST /api/domain-purchase/checkout-session` auf, um eine Stripe-Zahlungssitzung zu erstellen, und lädt Stripe Embedded Checkout für die Zahlung. Nach Abschluss registriert `POST /api/domain-purchase/finalize` die Domain bei OpenProvider und legt die `domains`-Zeile im Nameserver-Modus an, verbunden mit Cloudflare.
-- **Gratis-Claim** -- Berechtigte Workspaces in einer Pro-Testphase konnen eine `.nl`-Domain fur das erste Jahr kostenlos beanspruchen. Die Karte ruft `GET /api/domain-purchase/free-domain/eligibility` auf, um den Claim-Tier des Workspace und den Gate-Status zu prufen. Das Modal sammelt die Registrantdaten und ruft beim Absenden `POST /api/domain-purchase/free-domain/claim` auf. Die Plattform tragt die Registrierungsgebühr fur das erste Jahr.
+- **Gratis-Claim**: Berechtigte Workspaces in einer Office-Testphase können eine `.nl`-Domain für das erste Jahr kostenlos beanspruchen. Die Karte ruft `GET /api/domain-purchase/free-domain/eligibility` auf, um den Claim-Tier des Workspace und den Gate-Status zu prüfen. Das Modal sammelt die Registrantdaten und ruft beim Absenden `POST /api/domain-purchase/free-domain/claim` auf. Die Plattform trägt die Registrierungsgebühr für das erste Jahr.
 
 Gratis-Claims unterscheiden sich nur darin, wie die Domain nach dem ersten Jahr verlangert wird:
 
-- **Trial-Stufe** -- Workspaces in einer Pro-Testphase. Das erste Jahr ist kostenlos. Am Ende des Gratis-Jahres muss der Workspace auf einem kostenpflichtigen Pro-Tarif sein; die Domain verlangert sich dann als Teil des Pro-Abonnements, bezahlt vom Workspace. Wenn der Workspace nach dem Gratis-Jahr kein Pro mehr zahlt, verfallt die Domain und muss manuell verlangert werden. Wahrend des Trial-Jahres kann der Benutzer optional eine Karte uber Stripe SetupIntent im Modal fur die zukunftige automatische Verlangerung hinterlegen.
+- **Trial-Stufe**: Workspaces in einer Office-Testphase. Das erste Jahr ist kostenlos. Am Ende des Gratis-Jahres muss der Workspace auf einem kostenpflichtigen Office-Tarif sein; die Domain verlängert sich dann als Teil des Office-Abonnements, bezahlt vom Workspace. Wenn der Workspace nach dem Gratis-Jahr kein Office mehr zahlt, verfällt die Domain und muss manuell verlängert werden. Während des Trial-Jahres kann der Benutzer optional eine Karte über Stripe SetupIntent im Modal für die zukünftige automatische Verlängerung hinterlegen.
 - **Paid-Stufe** -- Standard-Domains zum vollen Preis gekauft. Die Verlangerung wird jahrlich uber die hinterlegte Zahlungsmethode abgerechnet. Schlagt die Zahlung fehl, wird eine Benachrichtigung zur manuellen Verlangerung gesendet.
-- **Gratis-auf-Lebenszeit-Stufe** -- Eine kleine Zahl von Workspaces behalt Pro kostenlos und die lebenslange kostenlose Domain-Verlangerung aufgrund fruherer Vereinbarungen. Keine Zahlungsmethode erforderlich; die Verlangerung erfolgt automatisch uber die Plattform, wobei MCD die Wholesale-Kosten tragt. Diese Stufe ist geschlossen und kann nicht beantragt werden.
+- **Gratis-auf-Lebenszeit-Stufe**: Eine begrenzte Zahl von Workspaces behält Office kostenlos und die lebenslange kostenlose Domain-Verlängerung aufgrund früherer Vereinbarungen. Keine Zahlungsmethode erforderlich; die Verlängerung erfolgt automatisch über die Plattform, wobei MCD die Wholesale-Kosten trägt. Diese Stufe ist geschlossen und kann nicht beantragt werden.
 
 Der Berechtigungs-Endpunkt (`GET /api/domain-purchase/free-domain/eligibility`) liefert ein `tier`-Feld neben dem Gate-Bericht. Er gibt keine Anzahl verbleibender Claims aus.
 
 Die Berechtigung wird durch server-seitig geprüfte harte Bedingungen bestimmt:
 
-- **Aktiver Pro-Workspace** -- der Workspace muss auf Pro sein (Testphase oder bezahlt). Workspaces auf Free konnen nicht claimen.
+- **Aktiver Office-Workspace**: der Workspace muss auf Office sein (Testphase oder bezahlt). Workspaces auf Desk können nicht claimen.
 - **KVK erforderlich** -- der Workspace muss eine KVK-Nummer verknüpft haben.
 - **Domain muss `.nl` sein** -- das Gratisprogramm gilt nur für die NL-Endung.
 - **Domain muss mit dem KVK-Namen übereinstimmen** -- die Domain muss dem registrierten Firmennamen oder einem Handelsnamen entsprechen.
@@ -226,7 +230,7 @@ Was die Tabs abdecken:
 - **Domain & E-Mail**-Tab — Eigene Domain, DNS, SSL, Weiterleitungen und Posteingang-Einrichtung. Siehe den Abschnitt eigene Domains oben.
 - **Einstellungen**-Tab — Wählen Sie, welcher Builder live ist (Vorlage oder Maßanfertigung), und konfigurieren Sie den Workspace-Slug sowie weitere Website-Einstellungen.
 
-Wenn Ihr Workspace mehrere aktive eigene Domains hat (Pro-Tarif), können Sie über einen Domain-Wechsler eine Domain-Variante der Website bearbeiten. Jede Domain erhält ihre eigenen Seiten, Navigation, Design-Tokens und Veröffentlichungs-Snapshots. Ein Domain-Wechsel setzt den aktiven Tab zurück.
+Wenn Ihr Workspace mehrere aktive eigene Domains hat (Office-Tarif), können Sie über einen Domain-Wechsler eine Domain-Variante der Website bearbeiten. Jede Domain erhält ihre eigenen Seiten, Navigation, Design-Tokens und Veröffentlichungs-Snapshots. Ein Domain-Wechsel setzt den aktiven Tab zurück.
 
 Die öffentliche Website wird unter der am besten geeigneten URL des Unternehmens bereitgestellt: eigene Domain-Root → Workspace-Subdomain → Fallback `/portal/<slug>`-Route.
 
@@ -329,7 +333,7 @@ Die Checkout-Erfolg- und Checkout-Abgebrochen-Seiten zeigen dem Käufer einen ge
 
 ## Sichtbarkeit des Posteingang-Tabs
 
-Der Posteingang-Tab ist in der Seitenleiste und der unteren Navigationsleiste immer sichtbar. Auf kostenlosen Tarifen ohne Posteingang erscheint er als Upgrade-Hinweis und öffnet den Tarifvergleich, wenn er ausgewählt wird. Auf kostenpflichtigen Tarifen bleibt der Tab immer sichtbar, auch bevor eine Domain verbunden wurde, weil er der Einstieg in den Posteingang-Setup-Assistenten ist.
+Der Posteingang-Tab ist in der Seitenleiste und der unteren Navigationsleiste immer sichtbar. Mit Desk, ohne Posteingang, erscheint er als Upgrade-Hinweis und öffnet den Tarifvergleich, wenn er ausgewählt wird. Mit Office bleibt der Tab immer sichtbar, auch bevor eine Domain verbunden wurde, weil er der Einstieg in den Posteingang-Setup-Assistenten ist.
 
 Für einen Workspace, der bereits eine Posteingang-fähige Domain eingerichtet hat, zeigt der Tab den echten Posteingang mit Ungelesen-Zählern und vollständigem Thread-Management. Für bezahlte Workspaces ohne Posteingang-Domain leitet ein Klick auf den Tab zu `/inbox/setup`, damit Sie Domain und Posteingang in einem Ablauf verbinden und aktivieren.
 

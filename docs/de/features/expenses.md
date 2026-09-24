@@ -66,7 +66,7 @@ Lassen Sie die KI Ausgabendetails automatisch aus Belegen extrahieren:
 5. Bestätigen Sie, um die Ausgabe(n) zu erstellen
 
 ::: info
-Belegscanner erfordert den **Pro**-Tarif oder hoher. Der USt.-Satz einer neuen Ausgabe beginnt mit Ihrer Standard-Arbeitsbereichseinstellung.
+Den Belegscanner können Sie in jedem Tarif nutzen: 3 Scans pro Monat mit Desk und 200 mit Office. Der USt.-Satz einer neuen Ausgabe beginnt mit Ihrer Standard-Arbeitsbereichseinstellung.
 :::
 
 Wenn eine weitergeleitete E-Mail oder ein Scan zwar eine Ausgabe erzeugt, der Beleg selbst aber nicht angehängt werden kann (zum Beispiel ein nicht unterstützter Dateityp oder eine zu große Datei), wird die Ausgabe dennoch erstellt und mit einem Hinweis versehen, dass der Anhang fehlt. Laden Sie den Beleg anschließend manuell auf der Detailseite der Ausgabe hoch.

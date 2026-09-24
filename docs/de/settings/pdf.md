@@ -55,5 +55,5 @@ Für das beste Ergebnis auf PDFs:
 - **Form:** liegende oder quadratische Logos passen am besten in die Layouts
 
 ::: info
-Rechnungsdesign und Stilvorlagen sind ab dem **Starter**-Tarif enthalten.
+Rechnungsdesign und Stilvorlagen sind in jedem Tarif enthalten, auch in Desk.
 :::

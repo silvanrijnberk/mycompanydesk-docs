@@ -19,7 +19,7 @@ chatbot:
     - { label: "Zugriffseinstellungen öffnen", to: "/de/settings/team" }
   follow_up:
     - "How do I invite my accountant?"
-    - "What does the Free plan include?"
+    - "What does the Desk plan include?"
     - "How do VAT calculations work?"
 ---
 
@@ -36,7 +36,7 @@ Die meisten Freiberufler und Einzelunternehmen können ihre tägliche Buchhaltun
 
 ## Wann Sie es selbst erledigen können
 
-Eine einfache Einzelunternehmung oder freiberufliche Tätigkeit kann die Routine meist selbst erledigen. Wenn Sie nur wenige Rechnungen pro Jahr schreiben, Ihre Ausgaben erfassen und eine saubere USt.-Übersicht brauchen, machen Sie das im kostenlosen Tarif selbst.
+Eine einfache Einzelunternehmung oder freiberufliche Tätigkeit kann die Routine meist selbst erledigen. Wenn Sie nur wenige Rechnungen pro Jahr schreiben, Ihre Ausgaben erfassen und eine saubere USt.-Übersicht brauchen, machen Sie das selbst mit Desk, dem kostenlosen Tarif.
 
 ## Wann ein Steuerberater dennoch sinnvoll ist
 
@@ -44,4 +44,4 @@ Erwägen Sie einen Steuerberater bei komplexen Fällen wie einer GmbH, Angestell
 
 ## Kosten
 
-Sie können im kostenlosen Tarif starten und bleiben. Neue Arbeitsbereiche erhalten eine 60-tägige Pro-Testphase. Bezahlte Tarife finden Sie unter [Tarife & Zahlungen](/de/settings/billing).
+Sie können mit Desk, dem kostenlosen Tarif, starten und dabei bleiben. Neue Arbeitsbereiche erhalten 60 Tage Office. Bezahlte Tarife finden Sie unter [Tarife & Zahlungen](/de/settings/billing).

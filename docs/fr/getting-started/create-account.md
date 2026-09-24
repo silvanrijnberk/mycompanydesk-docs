@@ -35,7 +35,7 @@ Vous pouvez supprimer cet acces plus tard dans Parametres → « Accès et compt
 
 ## Votre espace de travail
 
-Votre espace de travail est créé automatiquement lors de votre inscription, avec une **période d'essai Pro gratuite de 60 jours** (aucun moyen de paiement requis). Vous pouvez explorer toutes les fonctionnalités Pro immédiatement ; les informations de votre entreprise seront remplies plus tard dans l'assistant de configuration.
+Votre espace de travail est créé automatiquement lors de votre inscription, avec une **période d'essai Office gratuite de 60 jours** (aucun moyen de paiement requis). Vous pouvez explorer toutes les fonctionnalités Office immédiatement ; les informations de votre entreprise seront remplies plus tard dans l'assistant de configuration.
 
 ### Rejoindre un espace de travail existant
 

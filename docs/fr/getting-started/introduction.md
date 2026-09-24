@@ -28,26 +28,22 @@ Les factures, devis et e-mails peuvent également être envoyés en néerlandais
 
 ## Abonnements
 
-MyCompanyDesk propose un plan Gratuit et deux plans payants : Starter et Pro. Les nouveaux clients bénéficient d'un essai Pro de 60 jours ; ceux qui ne convertissent pas restent sur Gratuit.
+MyCompanyDesk propose deux formules : **Desk** (gratuit) et **Office** (12,99 € par mois ou 129,90 € par an, hors TVA). Les nouveaux clients bénéficient de 60 jours d'Office gratuits ; ceux qui ne passent pas à Office continuent sur Desk. Voir [Formules et tarifs](/fr/faq/plans).
 
-| Fonctionnalité | Gratuit | Starter | Pro |
-|---|---|---|---|
-| Factures | Illimité | Illimité | Illimité |
-| Devis | Illimité | Illimité | Illimité |
-| Suivi des dépenses | Illimité | Illimité | Illimité |
-| Numérisation de reçus | Oui (3 scans/mois) | Oui (30 scans/mois) | Oui (200 scans/mois) |
-| Suggestions IA | Oui | Oui | Oui |
-| Image de marque personnalisée | Oui | Oui | Oui |
-| Saisie de temps, outils linguistiques | - | Oui | Oui |
-| Page entreprise publique | Oui | Oui | Oui |
-| Contrats et projets | - | Oui | Oui |
-| Rapports et export CSV/Excel | - | Oui | Oui |
-| Accès équipe | Vous seul | Vous seul | Personnes illimitées |
-| Boîte mail professionnelle sur votre domaine | - | - | Oui |
-| Connexions bancaires | - | - | Jusqu'à 3 |
-| Multi-domaine, routage de domaine personnalisé | - | - | Oui |
-| Rapports avancés, support prioritaire | - | - | Oui |
-| Accès API, webhooks | - | - | Oui |
+| Fonctionnalité | Desk | Office |
+|---|---|---|
+| Factures, devis et dépenses | Illimité | Illimité |
+| Projets et saisie de temps | Oui | Oui |
+| Numérisation de reçus | 3 par mois | 200 par mois |
+| Image de marque personnalisée | Oui | Oui |
+| Site web sur une adresse gratuite `.mycompanydesk.site` | Oui | Oui |
+| Site web et messagerie professionnelle sur votre propre domaine | - | Oui |
+| Factures récurrentes, contrats | - | Oui |
+| Export CSV/Excel des factures et dépenses | - | Oui |
+| Accès équipe | Vous seul | Personnes illimitées |
+| Connexions bancaires | - | Jusqu'à 3 |
+| Rapports avancés, support prioritaire | - | Oui |
+| Accès API, webhooks | - | Oui |
 
 ## Obtenir de l'aide
 

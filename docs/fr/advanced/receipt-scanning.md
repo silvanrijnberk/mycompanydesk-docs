@@ -1,6 +1,6 @@
 ---
 title: Numerisation de recus
-description: "Photographiez un reçu ou déposez un PDF, l'OCR assistée par IA remplit la dépense. Par mois : 3 scans en Gratuit, 30 en Starter, 200 en Pro."
+description: "Photographiez un reçu ou déposez un PDF, l'OCR assistée par IA remplit la dépense. Par mois : 3 scans sur Desk et 200 sur Office."
 ---
 
 # Numerisation de recus
@@ -8,7 +8,7 @@ description: "Photographiez un reçu ou déposez un PDF, l'OCR assistée par IA 
 Extrayez automatiquement les donnees de depenses a partir d'images de recus et de factures PDF grace a l'OCR alimente par l'IA.
 
 ::: info
-La numérisation de reçus est disponible sur tous les plans, avec une limite mensuelle sur le nombre de scans : 3 avec Gratuit, 30 avec Starter et 200 avec Pro. La limite est réinitialisée le premier de chaque mois civil.
+La numérisation de reçus est disponible sur tous les plans, avec une limite mensuelle sur le nombre de scans : 3 sur Desk et 200 sur Office. La limite est réinitialisée le premier de chaque mois civil.
 :::
 
 ## Vue d'ensemble

@@ -13,7 +13,7 @@ Email templates can no longer be edited. MyCompanyDesk uses standard, well-teste
 Credit note emails use a dedicated template that names the document as a credit note, states the credited amount as a positive number, and does not ask for payment or include a due date.
 
 What you can change:
-1. The sender: go to Settings → Email and choose your own domain (Pro), Gmail, or Outlook
+1. The sender: go to Settings → Email and choose your own domain (Office), Gmail, or Outlook
 2. Your sign-off: on the same page, fill in your support email, website, and social links; they appear under every email
 3. A single email: in the send window you can adjust the recipient, subject, and message before the email goes out
 

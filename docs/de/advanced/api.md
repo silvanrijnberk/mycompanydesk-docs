@@ -1,6 +1,6 @@
 ---
 title: API-Integration
-description: "Greifen Sie über die REST API mit einem X-API-Key-Header programmatisch auf Rechnungen, Ausgaben und Kunden zu. API-Zugang gehört zum Pro-Abo."
+description: "Greifen Sie über die REST API mit einem X-API-Key-Header programmatisch auf Rechnungen, Ausgaben und Kunden zu. API-Zugang gehört zum Office-Tarif."
 ---
 
 # API-Integration
@@ -8,7 +8,7 @@ description: "Greifen Sie über die REST API mit einem X-API-Key-Header programm
 Greifen Sie programmatisch über die REST API auf Ihre MyCompanyDesk-Daten zu.
 
 ::: info
-API-Zugang ist Teil des **Pro**-Tarifs.
+API-Zugang ist Teil des **Office**-Tarifs.
 :::
 
 ## Übersicht

@@ -49,7 +49,7 @@ L'assistant demande l'IBAN sur lequel les clients doivent payer. Vous pouvez sai
 
 ## Étape 4 : Terminer la configuration
 
-La dernière étape confirme votre essai Pro de 60 jours, sans carte bancaire, et applique tous les réglages. L'écran de fin propose aussi des prochaines étapes optionnelles, comme créer un site web. La création d'un site web est optionnelle, sauf si vous avez commencé via la recherche KVK sur la page d'accueil : dans ce cas, un site thématique a déjà été généré et vous attend dans l'éditeur de site.
+La dernière étape confirme votre essai Office de 60 jours, sans carte bancaire, et applique tous les réglages. L'écran de fin propose aussi des prochaines étapes optionnelles, comme créer un site web. La création d'un site web est optionnelle, sauf si vous avez commencé via la recherche KVK sur la page d'accueil : dans ce cas, un site thématique a déjà été généré et vous attend dans l'éditeur de site.
 
 Cliquez sur **Terminer la configuration** et l'assistant applique vos informations d'entreprise, votre statut de TVA, votre IBAN et vos paramètres par défaut, puis vous emmène à votre tableau de bord.
 

@@ -17,9 +17,8 @@ Die Chat-Nutzung hangt von Ihrem Tarif ab:
 
 | Tarif | Chat-Nachrichten (monatlich) |
 |---|---|
-| Gratis | 10 |
-| Starter | 100 |
-| Pro | 1 000 |
+| Desk | 10 |
+| Office | 1 000 |
 
 KI-Limits gelten monatlich, nicht taglich. Sie werden am Ersten jedes Monats zuruckgesetzt.
 
@@ -32,15 +31,15 @@ Der kontextbezogene Leitfaden fallt unter das EU-KI-Gesetz (Verordnung 2024/1689
 
 Die Verpflichtung tritt im August 2026 in Kraft; die Offenlegungen wurden vor der Frist implementiert.
 
-### Pro-Erscheinungsbild
+### Office-Erscheinungsbild
 
-Pro-Workspaces erhalten ein Premium-Assistenten-Design, das das generische Styling durch den Pro-Violett-Akzent ersetzt. Wenn der Abrechnungsplan Pro ist, andert sich das Assistenten-Panel visuell:
+Office-Workspaces erhalten ein Premium-Assistenten-Design in Violett. Wenn der Tarif Office ist, ändert sich das Assistenten-Panel visuell:
 
-- Die "KI"-Pille wird zu einer violetten "Pro"-Pille, die signalisiert, dass der Assistent mit dem hochwertigsten Modell und vollem App-Kontext lauft.
-- Panel-Rand, Avatar-Ring, Online-Punkt und Sende-Button wechseln zu Violett (`#a855f7`), passend zum Pro-Band in der App-Navigation.
-- Die Statuszeile zeigt "Ihr Pro-Assistent steht bereit" statt des generischen "Bereit zu helfen."
+- Die "KI"-Pille wird zu einer violetten Office-Pille, die signalisiert, dass der Assistent mit dem hochwertigsten Modell und vollem App-Kontext läuft.
+- Panel-Rand, Avatar-Ring, Online-Punkt und Sende-Button wechseln zu Violett (`#a855f7`).
+- Die Statuszeile zeigt "Ihr Office-Assistent steht bereit" statt des generischen "Bereit zu helfen."
 
-Das Pro-Erscheinungsbild ist rein kosmetisch. Die zugrunde liegende Modellauswahl, der Tool-Katalog und die EU-KI-Gesetz-Offenlegungen bleiben fur alle Tarife identisch. `TIER_CHAT_CONFIG` gibt Pro bereits ein leistungsfahigeres Modell und unbegrenzten App-Kontext.
+Das Office-Erscheinungsbild ist rein kosmetisch. Die zugrunde liegende Modellauswahl, der Tool-Katalog und die EU-KI-Gesetz-Offenlegungen bleiben für alle Tarife identisch. `TIER_CHAT_CONFIG` gibt Office bereits ein leistungsfähigeres Modell und unbegrenzten App-Kontext.
 
 ## KI-Vorschlage
 
@@ -72,7 +71,7 @@ Endpoints, die auf einen bestimmten Vorschlag oder eine bestimmte Ausgabe wirken
 Wenn Sie einen Vorschlag übernehmen, werden die zwischengespeicherten Finanzsummen, die vom geänderten Eintrag abhängen, sofort ungültig gemacht. USt., Berichte und das Dashboard aktualisieren sich direkt und zeigen die neue Kategorie, USt.-Behandlung oder Beschreibung.
 
 ::: info
-KI-Vorschlage erfordern den **Starter**-Tarif oder hoher. Aktivieren Sie sie unter **Unternehmen > Funktionen**.
+KI-Vorschläge gibt es in jedem Tarif: 10 pro Monat mit Desk und 2 000 pro Monat mit Office.
 :::
 
 ## Belegscanning
@@ -97,7 +96,7 @@ Grammatik- und Rechtschreibprufung fur Ihre Dokumente:
 Unterstutzt Englisch, Niederlandisch, Deutsch und Franzosisch.
 
 ::: info
-Textprufung ist in allen Tarifen verfugbar, einschließlich Gratis.
+Textprüfung ist in allen Tarifen verfügbar, einschließlich Desk.
 :::
 
 ## Kontozusammenfassungen
@@ -110,30 +109,30 @@ KI generiert regelmaassige Zusammenfassungen Ihrer Geschaftsaktivitat:
 
 Zusammenfassungen werden in Ihrer bevorzugten Sprache generiert und sind über das Dashboard verfügbar.
 
-## Dashboard-Briefing Insight (Pro)
+## Dashboard-Briefing Insight (Office)
 
-Der Dashboard-Briefing-Hero zeigt ein kurzes, persönliches KI-generiertes Briefing für Pro-Workspaces. Der Server generiert das Briefing einmal pro Kalendertag und cached es für den Rest des Tages.
+Der Dashboard-Briefing-Hero zeigt ein kurzes, persönliches KI-generiertes Briefing für Office-Workspaces. Der Server generiert das Briefing einmal pro Kalendertag und cached es für den Rest des Tages.
 
 - **Stimme.** Das Briefing spricht in der ersten Person ("ich") und adressiert den Nutzer formell ("Sie"). Es öffnet mit der dringendsten Handlung, fügt höchstens ein oder zwei unterstützende Punkte hinzu und schließt mit einem konkreten nächsten Schritt (z.B. "senden Sie Atelier Norden heute eine Zahlungserinnerung"). Warm, selbstbewusst, prägnant -- der Ton einer klugen Assistenz, die das Geschäft kennt.
 - **Modell.** Der Endpunkt `POST /api/dashboard/briefing-insight` läuft auf Vertex AI `europe-west1` (Gemini 2.5 Flash). Ollama Cloud wird für diesen Pfad nicht verwendet.
 - **Input-Signale.** Der Client sendet eine vollständige Übersicht der Geschäftsdaten des Tages: Liquidität und Runway, Umsatz und Gewinn (MTD + YTD), überfällige Forderungen (Anzahl, Summe, größter Kunde), Ausgaben (bald fällig + überfällig), Entwurfsanzahl, Projektmargen, USt.-Position (Saldo, Frist, Checklistenfortschritt, Reserve), nicht abgerechnete Stunden, aktuelle Zahlungen und neue Kunden. Alle Beträge werden vor dem Erreichen des Modells auf ganze Euro gerundet.
 - **Sprachen.** Das Modell generiert das Briefing in `nl/de/en/fr` basierend auf der Sprache des Benutzers. Der Client sendet den ISO-639-1-Code mit der Anfrage.
-- **Tarif-Gating.** Der Endpunkt ist an das `ai_insights` Feature-Flag gebunden, das Pro erfordert. Wenn ein Workspace nicht berechtigt ist, zeigt der Client nur den Standard-Lede an.
+- **Tarif-Gating.** Der Endpunkt ist an das `ai_insights` Feature-Flag gebunden, das Office erfordert. Wenn ein Workspace nicht berechtigt ist, zeigt der Client nur den Standard-Lede an.
 - **Fallback.** Bei einem Fehler (Modell nicht verfügbar, 403, Netzwerkfehler) verwendet der Client den bestehenden Standard-Lede. Dem Benutzer wird keine Fehlermeldung angezeigt.
 - **Client UX.** Während das AI-Briefing lädt, zeigt der Hero den gecachten deterministischen Lede des Vortages. Sobald die AI-Version eintrifft, ersetzt ein Cross-Fade-Übergang (Opacity + Slide) diesen. Das AI-Briefing erscheint mit einem Sparkle-Symbol und primärer Textfarbe. Ein layout-getreuer Skeleton-Shimmer (`BriefingSkeleton`) hält die gesamte Dashboard-Form, bis die Kerndaten da sind, und löst sich dann in eine koordinierte, gestaffelte Eintrittsanimation auf. Nutzer mit reduced-motion erhalten keine Animationen.
 
 
 ## Tarifberechtigungen
 
-| Funktion | Gratis | Starter | Pro |
-|---|---|---|---|
-| Kontextbezogener Leitfaden | Begrenzt, nur FAQ bei Uberlauf | Standard | Hochstes Limit |
-| KI-Vorschlage | Aus | An | An |
-| Lieferantenklassifizierung | Aus | An | An |
-| Belegscanning | Aus | An | An |
-| Textprufung | An | An | An |
-| Ubersetzung | An (nur UI) | An | An |
-| Dashboard-Briefing Insight | Aus | Aus | An |
+| Funktion | Desk | Office |
+|---|---|---|
+| Kontextbezogener Leitfaden | 10 Nachrichten pro Monat | 1 000 Nachrichten pro Monat |
+| KI-Vorschläge | 10 pro Monat | 2 000 pro Monat |
+| Lieferantenklassifizierung | An | An |
+| Belegscanning | 3 pro Monat | 200 pro Monat |
+| Textprüfung | An | An |
+| Übersetzung | An (nur UI) | An |
+| Dashboard-Briefing Insight | Aus | An |
 
 ## Datenschutz
 

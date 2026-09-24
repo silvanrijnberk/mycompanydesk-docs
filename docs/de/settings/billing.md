@@ -1,7 +1,7 @@
 ---
 title: "Abonnement & Zahlungen"
-description: "Was Sie uns zahlen, Ihre Rechnungen von uns und Ihre Zahlungskarte, unter Einstellungen, Abonnement und Zahlungen."
-last_verified: 2026-08-05
+description: "Desk ist kostenlos, Office kostet 12,99 € pro Monat zzgl. MwSt. Was jeder Tarif enthält, Ihre Rechnungen von uns und die Kündigung."
+last_verified: 2026-09-24
 ---
 
 # Abonnement & Zahlungen
@@ -10,141 +10,106 @@ Was Sie uns zahlen, Ihre Rechnungen von uns und Ihre Zahlungskarte.
 
 ## Wo Sie es finden
 
-Öffnen Sie **Einstellungen** und dann **Je abonnement** (Ihr Abonnement), oder navigieren Sie direkt zu `/settings/abonnement`.
+Öffnen Sie **Einstellungen** und dann **Ihr Abonnement**, oder navigieren Sie direkt zu `/settings/abonnement`.
 
 Die alten URLs `/workspace/account/billing` und `/settings/billing` leiten auf die neue Seite weiter; Lesezeichen funktionieren weiterhin und der Query-Parameter `?checkout=success|canceled` bleibt bei der Weiterleitung erhalten.
 
-## Bestehende Vereinbarungen
+## Tarife und Preise
 
-Eine kleine Zahl von Arbeitsbereichen behält Pro kostenlos aufgrund früherer Vereinbarungen. Diese gelten, solange MyCompanyDesk den Dienst und die betreffende Funktion anbietet. Sie sind geschlossen und können nicht beantragt werden; neue Arbeitsbereiche starten mit der unten beschriebenen 60-tägigen Pro-Testphase.
+MyCompanyDesk hat zwei Tarife: **Desk** und **Office**.
 
-Arbeitsbereiche mit einer solchen Vereinbarung sind in jeder Hinsicht normale Pro-Kunden: dieselben Funktionen, dieselben Limits. Der einzige Unterschied ist die auf der Abonnementseite angezeigte Abonnement-Quelle.
+- **Desk** ist kostenlos und bleibt kostenlos. Sie können damit starten und so lange dabei bleiben, wie Sie möchten.
+- **Office** kostet **12,99 € pro Monat** oder **129,90 € pro Jahr** (zwei Monate gratis).
 
-## Tarife
+Alle Preise verstehen sich zuzüglich 21 % MwSt., die beim Checkout hinzugefügt wird. Als Unternehmen holen Sie sich diese Steuer als Vorsteuer zurück.
 
-MyCompanyDesk hat einen Gratis-Tarif und zwei kostenpflichtige Tarife. Gratis ist ein eigenständiges Produkt, das bei der Anmeldung angeboten wird und dauerhaft verfügbar bleibt. Neue Kunden erhalten eine 60-tägige Pro-Testphase; ein Arbeitsbereich, der nicht umsteigt, landet auf Gratis.
+### Einführungspreis im ersten Jahr
 
-| Tarif | Monatlich | Jährlich | Beschreibung |
-|---|---|---|---|
-| **Gratis** | 0,00 EUR | 0,00 EUR | Unbegrenzt Rechnungen, Angebote und Ausgaben, plus Ihre eigene Website auf mycompanydesk.site |
-| **Starter** | 10,00 EUR | 100,00 EUR | Alles für Ihre Arbeit: Rechnungen, Angebote, Ausgaben, Stunden und Projekte, auf Ihrer eigenen Seite |
-| **Pro** | 25,00 EUR | 250,00 EUR | Lassen Sie Ihr Unternehmen wachsen: eigene Domain und Website, geschäftliche Inbox, Bankverbindung, Teamzugang, API und mehr |
+Hatten Sie noch nie ein bezahltes Abonnement, kostet Office im ersten Jahr **35,88 €** (2,99 € pro Monat), wenn Sie jährlich zahlen. Danach zahlen Sie den normalen Jahrespreis von 129,90 €. Der Einführungspreis gilt nur bei jährlicher Zahlung, nur für das erste Jahr und nicht für alle, die bereits früher ein bezahltes Abonnement hatten. Kommen Sie dafür infrage, steht die Abonnementseite gleich auf **Jährlich** und Sie sehen „Erstes Jahr 2,99 € pro Monat“.
 
-Alle Preise verstehen sich zuzüglich 21% niederländischer Mehrwertsteuer, die beim Checkout hinzugefügt wird. Die App kennzeichnet Preise mit "excl. btw" (exkl. MwSt.); als Unternehmen holen Sie sich diese Steuer als Vorsteuer zurück. Der Jahrespreis entspricht zehn Monatszahlungen, jährliche Zahlung schenkt Ihnen also zwei Monate.
+### Testphase
 
-Pro ist der hervorgehobene (empfohlene) Tarif in der Auswahl. Gratis erscheint auf der Preisseite und im Anmeldeprozess neben den kostenpflichtigen Tarifen.
+Jeder neue Arbeitsbereich erhält 60 Tage Office kostenlos, ohne Kreditkarte. Die Abonnementseite zeigt dann Ihre kostenlose Office-Testphase mit den verbleibenden Tagen an. Möchten Sie Office behalten, klicken Sie auf **Office behalten**. Tun Sie nichts, geht es nach der Testphase automatisch mit Desk weiter. Ihre Daten bleiben einfach erhalten.
 
-### Was jeder Tarif enthält
+### Was steckt in Desk und was in Office?
 
-Funktionen mit Nutzungslimits (monatliche Limits, soweit nicht anders angegeben):
+| Funktion | Desk (kostenlos) | Office |
+|---|---|---|
+| Rechnungen, Angebote und Ausgaben | unbegrenzt | unbegrenzt |
+| Projekte und Zeiterfassung | ja | ja |
+| PDF-Export, Anhänge, eigenes Branding | ja | ja |
+| Website unter Ihrer eigenen `.mycompanydesk.site`-Adresse | ja | ja |
+| Website auf Ihrer eigenen Domain (bis zu 5 Domains) | nein | ja |
+| Geschäftlicher Posteingang auf Ihrer eigenen Domain | nein, nur lesen und beantworten | ja |
+| Wiederkehrende Rechnungen und Ausgaben | nein | ja |
+| Automatische Zahlungserinnerungen | nein | ja |
+| Verträge | nein | ja |
+| Bankverbindungen | nein | bis zu 3 |
+| Digitale USt.-Voranmeldung | nein | ja |
+| Automatische Weitergabe an Ihren Steuerberater | nein | ja |
+| Peppol E-Rechnung | nein | ja |
+| Newsletter | nein | ja |
+| CSV/Excel-Export von Rechnungen und Ausgaben | nein | ja |
+| Teammitglieder einladen | nein, nur Sie | unbegrenzt |
+| Mehrere eigene Unternehmen | nein | bis zu 10 |
+| API-Zugang und Webhooks | nein | ja |
+| Erweiterte Berichte und KI-Einblicke | nein | ja |
+| Kein „Erstellt mit MyCompanyDesk“ auf Bezahlseite, Unterschriftsseite und E-Mails | nein | ja |
+| Prioritäts-Support | nein | ja |
 
-| Metrik | Gratis | Starter | Pro |
-|---|---|---|---|
-| Erstellte Rechnungen | unbegrenzt | unbegrenzt | unbegrenzt |
-| Erstellte Ausgaben | unbegrenzt | unbegrenzt | unbegrenzt |
-| Erstellte Angebote | unbegrenzt | unbegrenzt | unbegrenzt |
-| Speicher | 100 MB | 2 GB | unbegrenzt |
-| Personen mit Zugang | nur Sie | nur Sie | unbegrenzt |
-| Eigene Domains | 0 | 0 | 5 |
-| KI-Chat-Nachrichten (monatlich) | 10 | 100 | 1 000 |
-| KI-Belegscans (monatlich) | 3 | 30 | 200 |
-| KI-Vorschläge (monatlich) | 10 | 200 | 2 000 |
-| Bankverbindungen | 0 | 0 | 3 |
+Limits pro Monat:
 
-Hinweis: KI-Limits gelten monatlich, nicht täglich. Sie werden am Ersten jedes Kalendermonats zurückgesetzt.
+| Metrik | Desk | Office |
+|---|---|---|
+| KI-Chat-Nachrichten | 10 | 1 000 |
+| KI-Belegscans | 3 | 200 |
+| KI-Vorschläge | 10 | 2 000 |
+| Speicher | 100 MB | unbegrenzt |
+| Gesendete Mails aus dem Posteingang | - | 15 000 |
+| Empfangene Mails im Posteingang | - | 20 000 |
 
-Rechnungen im Gratis-Tarif sind unbegrenzt: kein monatliches Limit und kein lebenslanges Kontingent. Bereits erstellte Rechnungen bleiben jederzeit sichtbar und exportierbar.
+KI-Limits gelten monatlich und werden am Ersten jedes Kalendermonats zurückgesetzt. Bereits erstellte Rechnungen bleiben jederzeit sichtbar und exportierbar, auch mit Desk.
 
-Funktionen pro Tarif:
+Der Zugang für Ihren Steuerberater ist in jedem Tarif kostenlos und zählt nicht als Teammitglied.
 
-| Funktion | Gratis | Starter | Pro |
-|---|---|---|---|
-| Rechnungen, Ausgaben, Angebote, Anhänge | ja | ja | ja |
-| PDF-Export | ja | ja | ja |
-| CSV/Excel-Export | nein | ja | ja |
-| Belegscanner (mit den monatlichen Limits oben) | ja | ja | ja |
-| Assistent-Chat | ja | ja | ja |
-| KI-Einblicke | ja | ja | ja |
-| Echtzeit-Ausgabenklassifizierung | ja | ja | ja |
-| Verträge | nein | ja | ja |
-| Projekte | nein | ja | ja |
-| Mietobjekte * | nein | ja | ja |
-| Wiederkehrende Rechnungen und Ausgaben | nein | ja | ja |
-| Zeiterfassung | nein | ja | ja |
-| Individuelles Branding | ja | ja | ja |
-| Sprachwerkzeuge | nein | ja | ja |
-| Beschreibungsanreicherung | nein | ja | ja |
-| Öffentliche Unternehmensseite | ja | ja | ja |
-| Firmen-Subdomain und Stilvorlagen | ja | ja | ja |
-| Teamzugang (unbegrenzt viele Personen) | nein | nein | ja |
-| Rechnungen und Angebote ohne MyCompanyDesk-Hinweis | ja | ja | ja |
-| Erweiterte Berichte | nein | nein | ja |
-| Eigene Domain, Domain-Routing, vollständige Website auf Ihrer Domain | nein | nein | ja |
-| Geschäftliche Inbox | nein | nein | ja |
-| Newsletter | nein | nein | ja |
-| Privatsphäre-Modus | nein | nein | ja |
-| API-Zugang und Webhooks | nein | nein | ja |
-| Erweiterte Berechtigungen | nein | nein | ja |
-| Prioritäts-Support | nein | nein | ja |
-| Bankverbindungen (bis zu 3) | nein | nein | ja |
-| Peppol E-Rechnung | nein | nein | ja |
+### Ihre Website mit Desk
 
-\* Das Mietobjekte-Modul wird derzeit nur Arbeitsbereichen angezeigt, die es bereits nutzen.
+Ihre Website bleibt in jedem Tarif online. Mit Desk läuft sie unter Ihrer kostenlosen `.mycompanydesk.site`-Adresse mit einem kleinen „Erstellt mit MyCompanyDesk“-Badge. Auf einer eigenen Domain (Office) entfällt dieses Badge.
 
-Der Zugang für Ihren Buchhalter ist in jedem Tarif kostenlos und zählt nicht als Teamzugang.
+### Wenn Office endet
 
-### Limits der geschäftlichen Inbox
+Endet Ihr Office-Abonnement, zeigt die App eine Benachrichtigung und Sie erhalten eine E-Mail („Office wurde beendet“), sowohl bei einer fehlgeschlagenen Zahlung als auch bei einer Kündigung. Nach einer fehlgeschlagenen Zahlung können Sie sofort wieder abonnieren.
 
-Die geschäftliche Inbox ist eine Pro-Funktion. Mit Pro können Sie pro Monat bis zu 15 000 E-Mails senden und bis zu 20 000 E-Mails empfangen; die Anzahl der Postfächer ist nicht begrenzt.
-
-### Öffentliche Website: Verfügbarkeit
-
-Wenn ein Arbeitsbereich auf Gratis zurückfällt, bleiben die öffentliche Website und der Website-Builder online. Gratis-Sites tragen ein kleines MyCompanyDesk-Badge auf der Workspace-Subdomain-Adresse; die einzige Möglichkeit, das Badge zu entfernen, ist die Site auf eine eigene Domain (Pro) umzuziehen. Die Prüfung erfolgt bei jeder Anfrage vor dem Cache, sodass Abonnement-Änderungen sofort wirksam werden.
-
-### Wenn ein bezahltes Abonnement endet
-
-Ein bezahltes Abonnement endet nie mehr still. Sobald es endet, zeigt die App eine Benachrichtigung und schickt eine E-Mail (mit dem Titel "Office wurde beendet"), in zwei Varianten: eine bei einer fehlgeschlagenen Zahlung, eine bei einer Kündigung, die Sie selbst veranlasst haben. Nach einer fehlgeschlagenen Zahlung können Sie sofort wieder abonnieren; der Checkout schickt Sie nicht länger zum Stripe-Portal für ein Abonnement, das nicht mehr existiert.
-
-Ihre eigene Domain bleibt nach dem Ablauf des Tarifs auf der Domains-Seite sichtbar: Name, Status und Umzugscode bleiben lesbar, daneben erscheint ein Upgrade-Hinweis, denn Änderungen an den Domain-Einstellungen brauchen wieder das bezahlte Abonnement.
-
-### Teamzugang
-
-Der Teamzugang ist in Pro ohne Kosten pro Person enthalten: Laden Sie so viele mitarbeitende Nutzer ein, wie Sie möchten. Es gibt keine Sitzpreise und keine Add-ons pro Sitz. Mit Gratis und Starter arbeiten Sie allein, wobei Ihr Buchhalter jederzeit kostenlosen Zugang erhalten kann.
+Mit Desk funktionieren die Office-Funktionen nicht mehr: Es werden keine neuen wiederkehrenden Rechnungen oder Ausgaben erstellt, Ihre Bankverbindung importiert nicht mehr und Ihr Posteingang auf Ihrer eigenen Domain sendet und empfängt keine Mail. Ihre Daten bleiben erhalten. Ihre eigene Domain bleibt auf der Domain-Seite sichtbar, mit Name, Status und Auth-Code, aber Einstellungen ändern können Sie erst wieder mit Office.
 
 ### Zusätzliche Unternehmen
 
-Ihr Abonnement deckt Ihren Hauptarbeitsbereich ab. Jedes zusätzliche Unternehmen, das Sie hinzufügen, wird zum vorab angezeigten Preis berechnet.
+Ihr Abonnement deckt Ihr erstes Unternehmen ab. Mit Office können Sie weitere eigene Unternehmen für 5,99 € pro Monat oder 59,90 € pro Jahr je Unternehmen (zzgl. MwSt.) hinzufügen. Die App zeigt den Preis, bevor Sie bestätigen. Sie können ein Unternehmen jederzeit deaktivieren; es zählt dann nicht mehr mit, bleibt aber für die gesetzliche Aufbewahrungsfrist lesbar und exportierbar.
 
-Wenn Ihr Arbeitsbereich einen kostenpflichtigen Plan hat (Starter oder Pro), beginnt das zusätzliche Unternehmen mit einer eigenen Pro-Testphase. Während der Testphase kostet es nichts; danach wird es zum angezeigten Preis Ihrem Abonnement hinzugefügt.
+### Bestehende Vereinbarungen
 
-Wenn Ihr Arbeitsbereich kostenloses Office aufgrund einer Regelung wie einer Gunst- oder Founding-Member-Regelung hat, gibt es kein Abonnement, an das das zusätzliche Unternehmen angehängt werden könnte. Sie kaufen es deshalb über einen separaten reinen Add-on-Checkout. Das erste Unternehmen bleibt kostenlos; nur das zusätzliche Unternehmen wird berechnet. Sie können ein Unternehmen jederzeit inaktiv setzen; es wird dann nicht mehr für Ihr Abonnement oder Add-on gezählt, bleibt aber lesbar und exportierbar für die gesetzliche Aufbewahrungsfrist.
+Eine begrenzte Zahl von Arbeitsbereichen behält Office aufgrund früherer Vereinbarungen kostenlos. Diese Vereinbarungen sind geschlossen und können nicht mehr beantragt werden. Diese Arbeitsbereiche haben dieselben Funktionen und Limits wie jeder andere Office-Kunde.
 
-## Stripe-Portal
+## Bezahlen, Rechnungen und Kündigung
 
-Die Schaltfläche **Abonnement verwalten** (sichtbar, wenn der Arbeitsbereich eine aktive Periode oder einen Nicht-Gratis-Tarif hat) öffnet eine einmalige Stripe-Customer-Portal-Sitzung. Über das Portal können Sie:
+Sie bezahlen über Stripe. Mit der Schaltfläche **Abrechnung verwalten** unter **Einstellungen** → **Ihr Abonnement** öffnen Sie das Zahlungsportal. Dort können Sie:
 
-- Zahlungsmethode aktualisieren
-- Rechnungen und Belege herunterladen
-- Rechnungsadresse ändern
-- Abonnement kündigen
+- Ihre Zahlungsmethode aktualisieren;
+- Ihre Rechnungen und Belege von uns herunterladen;
+- Ihre Rechnungsadresse ändern;
+- Ihr Abonnement kündigen.
 
-Die Kündigung wird am Ende des aktuellen Zahlungszeitraums wirksam; der Zugriff bleibt bis dahin erhalten.
+Kündigen können Sie auch über **Einstellungen** → **Konto kündigen** → **Abonnement kündigen**. Die Kündigung wird am Ende des bezahlten Zeitraums wirksam; bis dahin behalten Sie Office. Danach geht es mit Desk weiter. Ihr Konto zu löschen ist ein separater Schritt auf derselben Seite.
 
-## Checkout-Ablauf
-
-1. Klicken Sie auf **Upgrade** auf einer Tarifkachel
-2. Sie gelangen auf eine Stripe-Checkout-Seite
-3. Stripe leitet mit `?checkout=success` oder `?checkout=canceled` zurück
-4. Die Seite zeigt ein Erfolgs- oder Abbruch-Banner; gesperrte UI wird sofort entsperrt
-
-Bei einem Upgrade auf Pro erhält das Erfolgsbanner den violetten Pro-Akzent und ein Kronen-Symbol ("Willkommen bei Pro") anstelle der standardmäßig grünen Bestätigung. Die gleiche Pro-Gestaltung finden Sie an weiteren Stellen in der App: ein violetter Ring um Ihren Avatar, ein Kronen-Symbol im Plan-Badge und "Pro-Feature"-Pills auf Pro-geschützten Einstellungsseiten wie API-Schlüssel und Inbox. Zusätzlich erhält der Kontextassistent ein Premium-Violett-Design: Die "KI"-Pille wird zur "Pro"-Pille, Panel-Rand und Sende-Button erhalten den Pro-Akzent und die Statuszeile ändert sich zu "Ihr Pro-Assistent steht bereit."
+Ein Upgrade machen Sie mit **Upgraden** auf der Abonnementseite. Sie bezahlen bei Stripe und kehren danach in die App zurück, wo die Office-Funktionen sofort freigeschaltet sind.
 
 ## Kontextbezogener Upgrade-Banner
 
-Wenn Sie von einer gesperrten Funktion auf die Abonnementseite gelangen, zeigt die Seite einen Banner mit "Sie sind wegen X hier, das schaltet es frei" anstelle eines generischen Tarif-Pitches.
+Wenn Sie von einer gesperrten Funktion auf die Abonnementseite gelangen, zeigt die Seite einen Banner mit „Sie sind wegen X hier, das schaltet es frei“ anstelle eines generischen Tarif-Pitches.
 
 ## Verwandte Themen
 
-- [Unternehmenseinstellungen](/de/settings/company) -- die öffentliche Unternehmensseite und eigene Domains werden hier verwaltet
-- [E-Mail](/de/settings/email) -- die geschäftliche Inbox erfordert Pro
-- [Team](/de/settings/team) -- der Teamzugang erfordert Pro
+- [Unternehmenseinstellungen](/de/settings/company): Ihre Unternehmensdaten und Ihr Branding
+- [E-Mail](/de/settings/email): der geschäftliche Posteingang gehört zu Office
+- [Team](/de/settings/team): Teammitglieder einladen gehört zu Office
+- [Tarife und Preise](/de/faq/plans)

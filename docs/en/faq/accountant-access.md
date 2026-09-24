@@ -37,7 +37,7 @@ There are two ways accountant access can start: either you invite your accountan
 3. Send the invite when you want them to create an account
 4. Open Manage access to set page permissions
 
-Accountant access is free on every plan; it does not require Pro or a team seat. Common statuses are contact-only, invited, active, and revoked.
+Accountant access is free on every plan; it does not require Office or a team seat. Common statuses are contact-only, invited, active, and revoked.
 
 ## Automatic delivery
 
