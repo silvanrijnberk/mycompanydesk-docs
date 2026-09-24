@@ -298,6 +298,18 @@ La recherche et la récupération se font entièrement sur notre serveur, jamais
 
 Le courrier sortant porte la photo de celui qui l'a vraiment écrit : la vôtre, ou celle d'un collègue de la liste des membres. Un message sortant plus ancien sans auteur connu affiche votre photo dans un espace de travail à une personne, et le monogramme dans une équipe.
 
+#### Utiliser votre boîte dans une application de messagerie
+
+Vous reliez une boîte MyCompanyDesk à une application de messagerie habituelle : **Boîte de réception > Paramètres**, ouvrez la boîte, puis choisissez **Relier l'application de messagerie**. La fenêtre vous donne tout ce que l'application demande : le serveur entrant (IMAP), POP3 pour les applications sans IMAP, le serveur sortant (SMTP), le nom d'utilisateur (l'adresse de votre boîte) et un mot de passe d'application.
+
+La boîte de réception reste la source de vérité. La lecture, l'envoi, les dossiers et le statut lu restent synchronisés avec votre Boîte de réception dans MyCompanyDesk, dans les deux sens : lisez un message dans votre application et il apparaît comme lu dans la boîte de réception, et le courrier envoyé depuis l'application arrive dans la bonne conversation. Les dossiers sont fixes (Boîte de réception, Archive, Envoyés, Brouillons, Indésirables, Corbeille) et apparaissent dans votre application sous les noms habituels ; créer ou renommer des dossiers depuis l'application n'est pas possible.
+
+La fenêtre vous guide application par application, avec un pas-à-pas pour Apple Mail, Outlook, l'application Gmail et Thunderbird. Pour les appareils Apple, vous téléchargez un profil d'installation qui remplit les réglages du serveur à votre place, et Thunderbird trouve les serveurs tout seul. Dans l'application Gmail, ajoutez le compte avec **Personnel (IMAP)** ; Gmail dans le navigateur ne récupère pas d'autres comptes, mais vous pouvez le relier pour l'envoi.
+
+Votre mot de passe d'application est créé dans la même fenêtre et ne s'affiche qu'une fois. Il sert pour le courrier entrant et sortant. Le révoquer déconnecte l'application immédiatement.
+
+La lecture via IMAP et POP3 peut être activée ou non selon le serveur. Si la lecture n'est pas encore disponible, la fenêtre l'indique, et l'envoi reste réglable. POP3 ne récupère que le dossier de réception, donc si votre application gère IMAP, c'est le meilleur choix.
+
 ### Ventes
 
 Lorsque vous ajoutez des boutons d'achat aux niveaux de tarifs ou a un bloc produit sur votre site public, chaque paiement effectue cree un enregistrement de vente. Suivez-les dans **Argent > Ventes** (`/workspace/financial/money/sales`).

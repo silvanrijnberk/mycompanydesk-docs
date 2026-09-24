@@ -22,6 +22,16 @@ Het offertesgedeelte stelt je in staat om offertes te maken, versturen en bijhou
 
 Het offerteformulier lijkt op het factuurformulier — als je weet hoe je een factuur maakt, weet je ook hoe je een offerte maakt.
 
+## Foto's bij een offerte
+
+Een offerte kan tot twaalf foto's bevatten. Ze laten zien waar de offerte over gaat: de plek, de situatie nu, of de schade voordat je begint. Voeg ze op de offerte toe met **Foto's toevoegen**, rechtstreeks van de camera of uit je galerij.
+
+Elke foto heeft een optionele omschrijving, zodat de klant weet wat hij ziet. Je past de volgorde aan of verwijdert een foto weer. Foto's die je toevoegt voordat je de offerte opslaat, worden als wachtend meegenomen: de offerte wordt vanzelf als concept bewaard, zodat je niets kwijtraakt.
+
+De foto's staan onder de regelitems, op drie plekken: op de offerte-PDF, op de openbare offertepagina die je klant opent, en in het tekenscherm. Elke foto verkleinen we aan onze kant naar een webvriendelijke maat, dus foto's toevoegen maakt de offerte niet traag. Zijn de foto's samen te groot als bijlage voor een e-mail, dan houdt de pdf er alleen de foto's in die passen en meldt de app dat niet alle meekwamen.
+
+Zodra de offerte is geaccepteerd of afgewezen, wacht op een handtekening of in de prullenbak ligt, zijn de foto's vergrendeld en kun je ze niet meer wijzigen.
+
 ## Een offerte versturen
 
 1. Open de offertedetailpagina

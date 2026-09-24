@@ -298,6 +298,18 @@ Zoeken en ophalen gebeurt volledig op onze server, nooit in je browser. Gravatar
 
 Uitgaande mail toont de foto van wie hem echt schreef: jouw eigen foto, of die van een collega uit de ledenlijst. Oudere uitgaande mail zonder bekende schrijver toont in een eenpersoonswerkruimte jouw foto en in een team het monogram.
 
+#### Je postbus in een mailapp gebruiken
+
+Je koppelt een MyCompanyDesk-postbus aan een gewone mailapp: **Inbox > Instellingen**, open de postbus, en kies **Mailapp koppelen**. Het venster geeft je alles wat de app vraagt: de inkomende server (IMAP), POP3 voor apps zonder IMAP, de uitgaande server (SMTP), de gebruikersnaam (je postbusadres) en een app-wachtwoord.
+
+De inbox blijft de bron van waarheid. Lezen, versturen, mappen en leesstatus blijven sync met je Postbus in MyCompanyDesk, in twee richtingen: lees je een bericht in je mailapp, dan staat hij in de postbus ook op gelezen, en mail die je uit de mailapp verstuurt komt in het juiste gesprek terecht. De mappen staan vast (Postbus, Archief, Verzonden, Concepten, Ongewenst, Prullenbak) en verschijnen in je mailapp onder de vertrouwde namen; mappen aanmaken of hernoemen vanuit de mailapp kan niet.
+
+Het venster loopt per mailapp met je mee, met een stap-voor-staphandleiding voor Apple Mail, Outlook, de Gmail-app en Thunderbird. Voor Apple-apparaten download je een installatieprofiel dat de serverinstellingen voor je invult, en Thunderbird vindt de servers vanzelf. In de Gmail-app voeg je het account toe met **Persoonlijk (IMAP)**; Gmail in de browser haalt geen andere accounts op, maar je koppelt hem wel voor het versturen.
+
+Je app-wachtwoord maak je in hetzelfde venster aan en je ziet het een keer. Het werkt voor inkomende en uitgaande post. Intrekken verbreekt de koppeling met de mailapp meteen.
+
+Of lezen via IMAP en POP3 is aangezet, kan per server verschillen. Staat lezen nog niet aan, dan zegt het venster dat, en versturen kun je wel al instellen. POP3 haalt alleen de postbusmap op, dus als je app IMAP aankan, is dat de betere keuze.
+
 ### Verkopen
 
 Wanneer je koopknoppen toevoegt aan tarieven of een productblok op je openbare site, creëert elke voltooide betaling een verkooprecord. Volg ze via **Geld > Verkopen** (`/workspace/financial/money/sales`).
