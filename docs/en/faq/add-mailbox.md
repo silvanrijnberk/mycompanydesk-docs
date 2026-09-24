@@ -3,7 +3,7 @@ title: "Add an extra mailbox or email address"
 description: "Create an extra mailbox on your own domain under Inbox > Adressen > Postbus toevoegen, or give an existing mailbox a second address."
 last_verified: 2026-09-24
 chatbot:
-  triggers: ["extra postbus", "postbus toevoegen", "postbus aanmaken", "nieuwe postbus", "tweede postbus", "e-mailadres aanmaken", "e-mailadres toevoegen", "email adres aanmaken", "nieuw e-mailadres", "tweede e-mailadres", "extra e-mailadres", "alias toevoegen", "add mailbox", "new mailbox", "extra mailbox", "add email address", "create email address", "second email address", "postfach hinzufügen", "neues postfach", "e-mail-adresse anlegen", "weitere e-mail-adresse", "ajouter une boîte mail", "nouvelle boîte mail", "créer une adresse e-mail", "nouvelle adresse e-mail"]
+  triggers: ["extra postbus", "info@ aanmaken", "info adres aanmaken", "postbus toevoegen", "postbus aanmaken", "nieuwe postbus", "tweede postbus", "e-mailadres aanmaken", "e-mailadres toevoegen", "email adres aanmaken", "nieuw e-mailadres", "tweede e-mailadres", "extra e-mailadres", "alias toevoegen", "add mailbox", "new mailbox", "extra mailbox", "add email address", "create email address", "second email address", "postfach hinzufügen", "neues postfach", "e-mail-adresse anlegen", "weitere e-mail-adresse", "ajouter une boîte mail", "nouvelle boîte mail", "créer une adresse e-mail", "nouvelle adresse e-mail"]
   actions:
     - { label: "Go to Adressen", to: "/inbox/settings" }
   follow_up: ["How do I connect my own domain?", "How do I send from this address in my mail app?"]
@@ -13,7 +13,7 @@ You create an extra mailbox on your own domain in the Inbox, on the **Adressen**
 
 1. Open **Inbox** and pick **Adressen** in the top bar.
 2. Under your domain, next to **Postbussen** (mailboxes), click **Postbus toevoegen** (add mailbox).
-3. Enter the part before the @, for example `support`. Your domain is already filled in after it.
+3. Enter the part before the @, for example `info`, `support` or `invoices`. Your domain is already filled in after it.
 4. Optionally enter a display name, the name recipients see next to your mail. Leave it empty and the mailbox sends under your company name.
 5. Click **Aanmaken** (create).
 

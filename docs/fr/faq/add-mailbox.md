@@ -3,7 +3,7 @@ title: "Ajouter une boîte mail ou une adresse e-mail"
 description: "Créez une boîte mail supplémentaire sur votre domaine via Inbox > Adressen > Postbus toevoegen, ou ajoutez une seconde adresse à une boîte existante."
 last_verified: 2026-09-24
 chatbot:
-  triggers: ["extra postbus", "postbus toevoegen", "postbus aanmaken", "nieuwe postbus", "tweede postbus", "e-mailadres aanmaken", "e-mailadres toevoegen", "email adres aanmaken", "nieuw e-mailadres", "tweede e-mailadres", "extra e-mailadres", "alias toevoegen", "add mailbox", "new mailbox", "extra mailbox", "add email address", "create email address", "second email address", "postfach hinzufügen", "neues postfach", "e-mail-adresse anlegen", "weitere e-mail-adresse", "ajouter une boîte mail", "nouvelle boîte mail", "créer une adresse e-mail", "nouvelle adresse e-mail"]
+  triggers: ["extra postbus", "info@ aanmaken", "info adres aanmaken", "postbus toevoegen", "postbus aanmaken", "nieuwe postbus", "tweede postbus", "e-mailadres aanmaken", "e-mailadres toevoegen", "email adres aanmaken", "nieuw e-mailadres", "tweede e-mailadres", "extra e-mailadres", "alias toevoegen", "add mailbox", "new mailbox", "extra mailbox", "add email address", "create email address", "second email address", "postfach hinzufügen", "neues postfach", "e-mail-adresse anlegen", "weitere e-mail-adresse", "ajouter une boîte mail", "nouvelle boîte mail", "créer une adresse e-mail", "nouvelle adresse e-mail"]
   actions:
     - { label: "Aller à Adressen", to: "/inbox/settings" }
   follow_up: ["Comment connecter mon propre domaine ?", "Comment envoyer depuis cette adresse dans mon application de messagerie ?"]
@@ -13,7 +13,7 @@ Vous créez une boîte mail supplémentaire sur votre propre domaine dans l'Inbo
 
 1. Ouvrez l'**Inbox** et choisissez **Adressen** en haut.
 2. Sous votre domaine, à côté de **Postbussen** (boîtes mail), cliquez sur **Postbus toevoegen** (ajouter une boîte mail).
-3. Saisissez la partie avant le @, par exemple `support`. Votre domaine est déjà indiqué après.
+3. Saisissez la partie avant le @, par exemple `info`, `support` ou `factures`. Votre domaine est déjà indiqué après.
 4. Si vous le souhaitez, saisissez un nom d'affichage : le nom que vos destinataires voient à côté de votre e-mail. Si vous laissez ce champ vide, la boîte envoie sous le nom de votre entreprise.
 5. Cliquez sur **Aanmaken** (créer).
 
