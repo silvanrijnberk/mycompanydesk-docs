@@ -35,7 +35,7 @@ Je kunt die toegang later verwijderen via Instellingen → "Toegang en boekhoude
 
 ## Je werkruimte
 
-Je werkruimte wordt automatisch aangemaakt wanneer je je registreert, met een **gratis Pro-proefperiode van 60 dagen** (geen betaalmethode nodig). Je kunt meteen alle Pro-functies verkennen; je bedrijfsgegevens vul je later in tijdens de setup-wizard.
+Je werkruimte wordt automatisch aangemaakt wanneer je je registreert, met een **gratis Office-proefperiode van 60 dagen** (geen betaalmethode nodig). Je kunt meteen alle Office-functies verkennen; je bedrijfsgegevens vul je later in tijdens de setup-wizard.
 
 ### Deelnemen aan een bestaande werkruimte
 

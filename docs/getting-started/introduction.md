@@ -28,26 +28,22 @@ Facturen, offertes en e-mails kunnen ook in het Nederlands, Engels, Duits of Fra
 
 ## Abonnementen
 
-MyCompanyDesk heeft een Gratis-abonnement en twee betaalde abonnementen: Starter en Pro. Nieuwe klanten krijgen een Pro-proefperiode van 60 dagen; wie niet overstapt, blijft op Gratis.
+MyCompanyDesk heeft twee abonnementen: **Desk** (gratis) en **Office** (€ 12,99 per maand of € 129,90 per jaar, excl. btw). Nieuwe klanten krijgen 60 dagen Office gratis; wie niet overstapt, gaat verder op Desk. Zie [Abonnementen en prijzen](/faq/plans).
 
-| Functie | Gratis | Starter | Pro |
-|---|---|---|---|
-| Facturen | Onbeperkt | Onbeperkt | Onbeperkt |
-| Offertes | Onbeperkt | Onbeperkt | Onbeperkt |
-| Uitgaven bijhouden | Onbeperkt | Onbeperkt | Onbeperkt |
-| Bonnen scannen | Ja (3 scans/maand) | Ja (30 scans/maand) | Ja (200 scans/maand) |
-| AI-suggesties | Ja | Ja | Ja |
-| Eigen huisstijl | Ja | Ja | Ja |
-| Urenregistratie, taalopties | - | Ja | Ja |
-| Openbare bedrijfspagina | Ja | Ja | Ja |
-| Contracten en projecten | - | Ja | Ja |
-| Rapportages en CSV/Excel-export | - | Ja | Ja |
-| Teamtoegang | Alleen jij | Alleen jij | Onbeperkt aantal mensen |
-| Zakelijke mailbox op je domein | - | - | Ja |
-| Bankkoppelingen | - | - | Maximaal 3 |
-| Multi-domein, eigen domein routering | - | - | Ja |
-| Geavanceerde rapporten, prioriteitsondersteuning | - | - | Ja |
-| API-toegang, webhooks | - | - | Ja |
+| Functie | Desk | Office |
+|---|---|---|
+| Facturen, offertes en uitgaven | Onbeperkt | Onbeperkt |
+| Projecten en urenregistratie | Ja | Ja |
+| Bonnen scannen | 3 per maand | 200 per maand |
+| Eigen huisstijl | Ja | Ja |
+| Website op een gratis `.mycompanydesk.site`-adres | Ja | Ja |
+| Website en zakelijke mail op je eigen domein | - | Ja |
+| Terugkerende facturen, contracten | - | Ja |
+| CSV/Excel-export van facturen en uitgaven | - | Ja |
+| Teamtoegang | Alleen jij | Onbeperkt aantal mensen |
+| Bankkoppelingen | - | Maximaal 3 |
+| Geavanceerde rapporten, prioriteitsondersteuning | - | Ja |
+| API-toegang, webhooks | - | Ja |
 
 ## Hulp krijgen
 

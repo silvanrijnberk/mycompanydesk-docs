@@ -36,7 +36,7 @@ De meeste zzp'ers en eenmanszaken kunnen hun dagelijkse boekhouding prima zelf d
 
 ## Wanneer je het zelf kunt
 
-Een eenvoudige eenmanszaak of zzp-onderneming kan het dagelijkse werk meestal prima zelf doen. Als je maar een paar facturen per jaar stuurt, je uitgaven bijhoudt en een net btw-overzicht wilt, doe je dit zelf op het Gratis-abonnement.
+Een eenvoudige eenmanszaak of zzp-onderneming kan het dagelijkse werk meestal prima zelf doen. Als je maar een paar facturen per jaar stuurt, je uitgaven bijhoudt en een net btw-overzicht wilt, doe je dit zelf op Desk, het gratis abonnement.
 
 ## Wanneer een boekhouder wel zinvol is
 
@@ -44,4 +44,4 @@ Overweeg een boekhouder bij ingewikkelde situaties, zoals een bv, personeel in d
 
 ## Kosten
 
-Je kunt starten en blijven op het Gratis-abonnement. Nieuwe werkruimtes krijgen 60 dagen Pro. Betaalde abonnementen staan in [Abonnement & betalingen](/settings/billing).
+Je kunt starten en blijven op Desk, het gratis abonnement. Nieuwe werkruimtes krijgen 60 dagen Office. Betaalde abonnementen staan in [Abonnement & betalingen](/settings/billing).

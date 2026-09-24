@@ -49,7 +49,7 @@ De wizard vraagt om het IBAN waar klanten naartoe betalen. Je kunt nu je zakelij
 
 ## Stap 4: Setup afronden
 
-De laatste stap bevestigt dat je 60 dagen Pro-proefperiode actief is, zonder creditcard, en past alles toe. Ook biedt het afrondscherm optionele vervolgstappen, zoals het instellen van een website. Een website instellen is optioneel, behalve wanneer je bent gestart via de KVK-lookup op de landingspagina: in dat geval is er al een thematische site gegenereerd die op je wacht in de website-editor.
+De laatste stap bevestigt dat je 60 dagen Office-proefperiode actief is, zonder creditcard, en past alles toe. Ook biedt het afrondscherm optionele vervolgstappen, zoals het instellen van een website. Een website instellen is optioneel, behalve wanneer je bent gestart via de KVK-lookup op de landingspagina: in dat geval is er al een thematische site gegenereerd die op je wacht in de website-editor.
 
 Klik op **Setup afronden** en de wizard past je bedrijfsgegevens, btw-status, IBAN en standaardinstellingen toe, waarna je naar je dashboard gaat.
 

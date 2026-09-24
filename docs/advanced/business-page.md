@@ -13,7 +13,7 @@ Bouw je zakelijke website met een drag-and-drop-editor. Maak meerdere pagina's, 
 De sitebouwer vervangt het oude bedrijfsprofiel van één pagina. Elke nieuwe werkruimte begint met een standaardsite van 4 pagina's (Home, Diensten, Over ons, Contact), zodat je vanaf dag één een echte multi-page basis hebt. De editor biedt je:
 
 - **Meerdere pagina's**: Maak zoveel pagina's als je nodig hebt, elk met een eigen pad en secties. De vier standaardpagina's zijn klaar om te bewerken, te verwijderen of aan te vullen.
-- **Domeinwisselaar**: Wanneer je werkruimte meerdere eigen domeinen heeft (Pro-abonnement), kun je via een dropdown in de bovenbalk wisselen tussen het bewerken van de hoofdsite en een per-domein-variant. Elk domein krijgt zijn eigen pagina's, navigatie, ontwerptokens en publicatiesnapshot.
+- **Domeinwisselaar**: Wanneer je werkruimte meerdere eigen domeinen heeft (Office-abonnement), kun je via een dropdown in de bovenbalk wisselen tussen het bewerken van de hoofdsite en een per-domein-variant. Elk domein krijgt zijn eigen pagina's, navigatie, ontwerptokens en publicatiesnapshot.
 - **Sectieblokken**: Voeg hero-, tekst-, galerij-, spotlight-, diensten-, team-, testimonial-, contactformulier- en aangepaste HTML-secties toe aan elke pagina. Sla secties op als herbruikbare blokken en bouw je eigen bibliotheek op.
 - **Ontwerptokens**: Stel merkkleuren, lettertypes, witruimte, hoekradius, bewegingsstijl, aangepaste CSS en een site-favicon in. Wijzigingen gelden voor de hele site.
 - **Navigatie-editor**: Sleep en zet headerlinks op volgorde, met dropdown-groepen, externe links en inline navbar-styling (merknaam, CTA-knop, telefoon, belknop, sticky).
@@ -536,10 +536,10 @@ Zie [Offertes - Offerteaanvragen](/features/quotes#offerteaanvragen) voor detail
 
 ## Abonnementsvereiste
 
-De openbare website (bedrijfspagina en sitebouwer) is beschikbaar op elk abonnement en blijft online. De MyCompanyDesk-badge is adresgebaseerd: hij verschijnt op een werkruimte-subdomein en verdwijnt op een eigen domein (Pro).
+De openbare website (bedrijfspagina en sitebouwer) is beschikbaar op elk abonnement en blijft online. De MyCompanyDesk-badge is adresgebaseerd: hij verschijnt op een werkruimte-subdomein en verdwijnt op een eigen domein (Office).
 
-- **Gratis**: de site is zichtbaar op het werkruimte-subdomein met een kleine MyCompanyDesk-badge.
-- **Starter en Pro**: de site is altijd zichtbaar; geen badge op een eigen domein, badge op het werkruimte-subdomein.
+- **Desk**: de site is zichtbaar op het gratis `.mycompanydesk.site`-adres met een MyCompanyDesk-badge.
+- **Office**: de site is altijd zichtbaar; geen badge op een eigen domein, wel op het gratis adres.
 - **Onzekere toestand**: als het systeem niet kan bepalen welk abonnement je hebt, blijft de site online om te voorkomen dat een site onterecht offline gaat.
 
 Deze poort geldt voor alle publieke paden: de bedrijfspagina, de servicedetailroute en de pagina's van de sitebouwer. De controle gebeurt bij elk verzoek, voor elke cachinglaag, zodat het klopt ook als je abonnement midden in een cacheperiode verandert.

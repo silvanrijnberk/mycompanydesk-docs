@@ -14,4 +14,4 @@ Om gegevens te exporteren:
 2. Download daar CSV-exports voor facturen, klanten en uitgaven, of de volledige back-up
 3. Gebruik exports op sectieniveau in Facturen, Uitgaven of Rapportages als je maar één dataset nodig hebt
 
-CSV-exports zijn beschikbaar vanaf het Starter-abonnement. Kies de export die past bij de pagina of set gegevens die je nodig hebt.
+CSV-exports van facturen en uitgaven horen bij Office; je klantenlijst en de volledige back-up exporteer je op elk abonnement. Kies de export die past bij de pagina of set gegevens die je nodig hebt.

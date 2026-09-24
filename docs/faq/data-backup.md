@@ -26,7 +26,7 @@ Om een back-up van je gegevens te maken:
 2. Download CSV-exports voor facturen, klanten en uitgaven, of de volledige back-up die daar beschikbaar is
 3. Controleer of de gedownloade bestanden de gegevens bevatten die je nodig hebt
 
-CSV-exports zijn beschikbaar vanaf het Starter-abonnement. Maak je regelmatig een back-up, kies dan een vast moment, bijvoorbeeld na het afsluiten van elk kwartaal.
+CSV-exports van facturen en uitgaven horen bij Office. Maak je regelmatig een back-up, kies dan een vast moment, bijvoorbeeld na het afsluiten van elk kwartaal.
 
 :::tip
 Voor supportmedewerkers van MyCompanyDesk bevat het adminpanel ook acties voor **Back-up maken** en **Gegevens downloaden** per werkruimte. De actie **Cache wissen** in het adminpanel maakt de gedeelde cache-service (en de module-eigen KPI-cache) leeg, en **Sessies ongeldig maken** verhoogt een globale drempel waardoor alle sessietokens die daarvoor zijn uitgegeven, worden geweigerd. Deze tools horen niet bij de klantinstellingen.

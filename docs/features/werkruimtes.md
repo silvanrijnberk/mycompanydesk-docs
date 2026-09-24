@@ -44,7 +44,7 @@ De werkpagina toont open werk in twee blokken: eerst je eigen bedrijven, dan kla
 
 Als je een accountantskantoor hebt, bevat de sectie Kantoor drie kantoorpagina's:
 
-- **Kantooroverzicht** (`/werkruimtes/kantoor`) - kantoormedewerkers, openstaande klantuitnodigingen, partner-deellink en statistieken, en of gratis Pro is toegekend.
+- **Kantooroverzicht** (`/werkruimtes/kantoor`) - kantoormedewerkers, openstaande klantuitnodigingen, partner-deellink en statistieken, en of gratis Office is toegekend.
 - **Facturatie** (`/werkruimtes/kantoor/facturatie`) - bied aan om een klantadministratie te betalen. De klant moet accepteren voordat er iets in rekening wordt gebracht; de prijs per overgenomen administratie staat vooraf op het scherm. Een openstaand aanbod zie je apart staan, zodat je het kunt intrekken zolang de klant nog niet heeft geantwoord.
 - **Export** (`/werkruimtes/kantoor/export`) - exporteer meerdere klantadministraties tegelijk. Kies jaar, periode en exportformaat, selecteer de administraties en de app downloadt per klant een archief. Eventuele mislukte exports blijven staan zodat je ziet wat niet is voltooid.
 
@@ -127,7 +127,7 @@ Elke klantrij toont een werk-chip zodra er iets wacht. Open deze om te zien wie 
 
 Open **Bedrijf toevoegen** en geef het nieuwe bedrijf een naam.
 
-Als je een betaald abonnement hebt (Starter of Pro), toont de app de extra kosten voordat je bevestigt. Tijdens je eigen Office-proefperiode betaal je niets voor het extra bedrijf; daarna wordt het tegen het getoonde tarief op je abonnement gezet.
+Als je Office hebt, toont de app de extra kosten voordat je bevestigt. Tijdens je eigen Office-proefperiode betaal je niets voor het extra bedrijf; daarna wordt het tegen het getoonde tarief op je abonnement gezet.
 
 Als je een gratis Office-werkruimte hebt (bijvoorbeeld via een gunst of founding-member-regeling), blijft je eerste bedrijf gratis en biedt de app nu een aparte checkout voor een tweede bedrijf. De prijs staat vooraf vermeld; alleen het tweede bedrijf wordt op een eigen add-on-abonnement gezet. Nadat de betaling is bevestigd, kun je het tweede bedrijf een naam geven.
 

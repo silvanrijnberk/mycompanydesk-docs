@@ -55,5 +55,5 @@ Voor het beste resultaat op PDF's:
 - **Vorm:** liggende of vierkante logo's passen het best in de indelingen
 
 ::: info
-Factuurontwerp en stijlvoorinstellingen zijn inbegrepen vanaf het **Starter**-abonnement.
+Factuurontwerp en stijlvoorinstellingen zijn inbegrepen in elk abonnement, ook in Desk.
 :::

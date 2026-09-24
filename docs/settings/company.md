@@ -66,7 +66,7 @@ Branding for invoices, quotes, and outgoing email, with a live preview of the re
 
 - **Logo upload**: used on every PDF and email header
 - **Brand colour**: one accent colour across your website, newsletter, emails, documents and public business page. If you set a different accent colour in **Factuurontwerp** (invoice design), that colour is what customers see on invoices, quotes, emails and the payment page. A hint under **Logo en kleur** offers a one-click option to make it your workspace brand colour too.
-- **Style presets**: pick a document style, available on Starter and up
+- **Style presets**: pick a document style, available on every plan
 - **PDF footer**: the footer text at the bottom of your documents
 
 There is one default brand colour for all customer surfaces; a second accent colour no longer exists. For full control over the layout, colours, and font of your invoices and quotes, open the **Factuurontwerp** row (the invoice design studio); see [PDF Customization](/en/settings/pdf).
@@ -75,8 +75,8 @@ There is one default brand colour for all customer surfaces; a second accent col
 
 Your public business page is managed in the top-level **Website** area of the app, not under Settings. It is a dashboard with six tabs: Overview, Visitors, Findability, Connections, Domain & email, and Settings. The site editor opens from **Edit site**.
 
-- The website is available from the Starter plan.
-- Connecting your own domain, replacing the default `mycompanydesk.com` subdomain, requires Pro. DNS, SPF, and DKIM records are managed for you, tucked behind an advanced strip most users never need to open.
+- The website is available on every plan, including Desk (free), on a free `.mycompanydesk.site` address.
+- Connecting your own domain, replacing the free subdomain, requires Office. DNS, SPF, and DKIM records are managed for you, tucked behind an advanced strip most users never need to open.
 
 ## Related
 
