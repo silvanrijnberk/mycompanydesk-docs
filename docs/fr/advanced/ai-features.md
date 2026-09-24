@@ -17,9 +17,8 @@ L'utilisation du chat depend de votre plan :
 
 | Plan | Messages de chat (mensuel) |
 |---|---|
-| Gratuit | 10 |
-| Starter | 100 |
-| Pro | 1 000 |
+| Desk | 10 |
+| Office | 1 000 |
 
 Les limites IA sont mensuelles, et non quotidiennes. Elles sont reinitialisees le premier de chaque mois.
 
@@ -32,15 +31,15 @@ Le guide contextuel est classe comme un systeme d'IA a risque limite en vertu de
 
 L'obligation entre en vigueur en aout 2026 ; les divulgations ont ete mises en place avant la date limite.
 
-### Apparence visuelle Pro
+### Apparence visuelle Office
 
-Les espaces de travail Pro beneficient d'une apparence d'assistant premium qui remplace le style generique par l'accent violet Pro. Lorsque le plan de facturation est Pro, le panneau de l'assistant change visuellement :
+Les espaces de travail Office bénéficient d'une apparence d'assistant premium en violet. Lorsque l'abonnement est Office, le panneau de l'assistant change visuellement :
 
-- La pastille "IA" devient une pastille violette "Pro", signalant que l'assistant utilise le modele le plus performant avec le contexte complet de l'application.
-- La bordure du panneau, l'anneau de l'avatar, le point en ligne et le bouton d'envoi passent au violet (`#a855f7`), en accord avec le ruban Pro dans la navigation de l'application.
-- La ligne de statut affiche "Votre assistant Pro est pret" au lieu du generique "Pret a aider."
+- La pastille "IA" devient une pastille Office violette, signalant que l'assistant utilise le modèle le plus performant avec le contexte complet de l'application.
+- La bordure du panneau, l'anneau de l'avatar, le point en ligne et le bouton d'envoi passent au violet (`#a855f7`).
+- La ligne de statut affiche "Votre assistant Office est prêt" au lieu du générique "Prêt à aider."
 
-L'apparence Pro est purement cosmetique. Le selecteur de modele sous-jacent, le catalogue d'outils et les divulgations de la loi europeenne sur l'IA restent identiques pour tous les plans. `TIER_CHAT_CONFIG` donne deja a Pro un modele plus puissant et un contexte d'application illimite.
+L'apparence Office est purement cosmétique. Le sélecteur de modèle sous-jacent, le catalogue d'outils et les divulgations de la loi européenne sur l'IA restent identiques pour toutes les formules. `TIER_CHAT_CONFIG` donne déjà à Office un modèle plus puissant et un contexte d'application illimité.
 
 ## Suggestions IA
 
@@ -72,7 +71,7 @@ Les points de terminaison qui agissent sur une suggestion ou une dépense spéci
 Lorsque vous appliquez une suggestion, les totaux financiers mis en cache qui dépendent de l'enregistrement modifié sont immédiatement invalidés. La TVA, les rapports et le tableau de bord se rafraîchissent tout de suite et reflètent la nouvelle catégorie, le nouveau traitement de TVA ou la nouvelle description.
 
 ::: info
-Les suggestions IA necessitent le plan **Starter** ou superieur. Activez-les via **Entreprise > Fonctionnalites**.
+Les suggestions IA sont disponibles avec toutes les formules : 10 par mois sur Desk et 2 000 par mois sur Office.
 :::
 
 ## Numerisation des recus
@@ -97,7 +96,7 @@ Verification grammaticale et orthographique pour vos documents :
 Prend en charge l'anglais, le neerlandais, l'allemand et le francais.
 
 ::: info
-La verification du texte est disponible sur tous les plans, y compris Gratuit.
+La vérification du texte est disponible avec toutes les formules, y compris Desk.
 :::
 
 ## Resumes de compte
@@ -110,30 +109,30 @@ L'IA genere des resumes periodiques de votre activite commerciale :
 
 Les resumes sont generes dans votre langue preferee et sont disponibles depuis le tableau de bord.
 
-## Apercu du tableau de bord par IA (Pro)
+## Aperçu du tableau de bord par IA (Office)
 
-La section hero du tableau de bord affiche un briefing court et personnel genere par IA pour les espaces de travail Pro. Le serveur genere le briefing une fois par jour calendaire et le met en cache pour le reste de la journee.
+La section hero du tableau de bord affiche un briefing court et personnel généré par IA pour les espaces de travail Office. Le serveur genere le briefing une fois par jour calendaire et le met en cache pour le reste de la journee.
 
 - **Voix.** Le briefing parle a la premiere personne ("je") et s'adresse a l'utilisateur avec le vouvoiement ("vous"). Il s'ouvre sur l'action la plus urgente, ajoute au plus un ou deux points supplementaires, et se termine par une etape suivante concrete (ex. "envoyez un rappel a Atelier Norden aujourd'hui"). Chaleureux, confiant, concis -- le ton d'un assistant competent qui connait l'entreprise.
 - **Modele.** L'endpoint `POST /api/dashboard/briefing-insight` fonctionne sur Vertex AI `europe-west1` (Gemini 2.5 Flash). Ollama Cloud n'est pas utilise pour ce chemin.
 - **Signaux d'entree.** Le client envoie un apercu complet des donnees d'activite du jour : liquidite et autonomie, CA et benefice (mois + annee), creances en retard (nombre, total, pire client), depenses (a venir + en retard), nombre de brouillons, marges par projet, position TVA (solde, echeance, progression checklist, reserve), heures non facturees, paiements recents et nouveaux clients. Tous les montants sont arrondis a l'euro entier avant d'atteindre le modele.
 - **Langues.** Le modele genere le briefing en `nl/de/en/fr` selon la langue de l'utilisateur. Le client inclut le code ISO-639-1 dans la requete.
-- **Restriction par plan.** L'endpoint est controle par le flag `ai_insights`, qui necessite Pro. Si un espace de travail n'est pas eligible, le client conserve uniquement le texte standard.
+- **Restriction par plan.** L'endpoint est contrôlé par le flag `ai_insights`, qui nécessite Office. Si un espace de travail n'est pas eligible, le client conserve uniquement le texte standard.
 - **Fallback.** En cas d'echec (modele indisponible, 403, erreur reseau), le client utilise le texte standard existant. Aucune erreur n'est affichee a l'utilisateur.
 - **UX client.** Pendant le chargement du briefing IA, le hero affiche le texte standard mis en cache de la veille. Lorsque la version IA arrive, une transition en fondu enchaine (opacite + glissement) la remplace. Le briefing IA apparait avec une icone sparkle et la couleur de texte principale. Un shimmer squelette fidele a la mise en page (`BriefingSkeleton`) maintient la forme complete du tableau de bord jusqu'a l'arrivee des donnees principales, puis se dissout dans une animation d'entree coordonnee et progressive. Les utilisateurs avec reduced-motion ne recoivent aucune animation.
 
 
 ## Droits par plan
 
-| Fonctionnalite | Gratuit | Starter | Pro |
-|---|---|---|---|
-| Guide contextuel | Limite, FAQ uniquement en debordement | Standard | Limite la plus elevee |
-| Suggestions IA | Desactive | Active | Active |
-| Classification des fournisseurs | Desactive | Active | Active |
-| Numerisation des recus | Desactive | Active | Active |
-| Verification du texte | Active | Active | Active |
-| Traduction | Active (UI uniquement) | Active | Active |
-| Apercu tableau de bord IA | Desactive | Desactive | Active |
+| Fonctionnalité | Desk | Office |
+|---|---|---|
+| Guide contextuel | 10 messages par mois | 1 000 messages par mois |
+| Suggestions IA | 10 par mois | 2 000 par mois |
+| Classification des fournisseurs | Activé | Activé |
+| Numérisation des reçus | 3 par mois | 200 par mois |
+| Vérification du texte | Activé | Activé |
+| Traduction | Activé (interface uniquement) | Activé |
+| Aperçu tableau de bord IA | Désactivé | Activé |
 
 ## Confidentialite
 

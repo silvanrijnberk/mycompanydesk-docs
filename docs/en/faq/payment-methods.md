@@ -42,9 +42,9 @@ To connect a processor:
 
 Mollie supports iDEAL, Bancontact, credit card, and bank transfer, ideal for Dutch and Belgian customers. Stripe Connect supports card, Apple Pay, Google Pay, and SEPA direct debit, suitable for international customers.
 
-## Online payment fees on the Free plan
+## Online payment fees on the free plan
 
-Online invoice payments carry a small service fee on the Free plan. When a customer pays an invoice online, € 0.50 is collected via your Mollie or Stripe account as an application fee. Online payments on Starter and Pro are not charged. The fee is shown next to **Online betalingen** on `/settings/betalen` while your workspace is on the Free plan.
+Online invoice payments carry a small service fee on Desk (free). When a customer pays an invoice online, € 0.50 is collected via your Mollie or Stripe account as an application fee. Online payments on Office are not charged. The fee is shown next to **Online betalingen** on `/settings/betalen` while your workspace is on the free plan.
 
 The exact amount and minimum invoice threshold are configured server-side. The in-app hint currently shows € 0.50 per online invoice payment from € 5, matching `config.billing.freeTierSurchargeCents` and `freeTierSurchargeMinInvoiceCents` in `apps/api/src/config/env.js`. If either value changes, this page and the in-app hint must be updated together.
 

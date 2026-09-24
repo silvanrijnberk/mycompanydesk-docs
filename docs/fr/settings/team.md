@@ -19,7 +19,7 @@ You can also navigate directly to `/settings/toegang` or `/settings/boekhouder`.
 
 The two pages are:
 
-- **Mensen met toegang** (people with access): invite teammates and manage what they can see and do. This page requires the Pro plan; Free and Starter workspaces see an upgrade prompt. On Pro there is no limit on the number of people you invite.
+- **Mensen met toegang** (people with access): invite teammates and manage what they can see and do. This page requires the Office plan; Desk workspaces see an upgrade prompt. On Office there is no limit on the number of people you invite.
 - **Je boekhouder** (your accountant): invite your accountant and manage their access. This page is free on every plan.
 
 ## What's'on the page
@@ -48,7 +48,7 @@ Non-admins see an info banner instead: "Only team admins can invite new members.
 
 ### Accountant
 
-A separate list for external accountants, free on every plan. Your accountant can see your figures and check your returns without taking up a Pro team seat. Each row shows a status:
+A separate list for external accountants, free on every plan. Your accountant can see your figures and check your returns without taking up a team seat. Each row shows a status:
 
 | Badge | Meaning |
 |---|---|
@@ -120,11 +120,11 @@ If you have access to more than one workspace, the menu also links to the **Work
 
 ## Plan gating quick référence
 
-| Capability | Free | Starter | Pro |
-|---|---|---|---|
-| Workspace owner only | yes | yes | yes |
-| Invite team members | no | no | yes (unlimited) |
-| Accountant access | yes | yes | yes |
+| Capability | Desk | Office |
+|---|---|---|
+| Workspace owner only | yes | yes |
+| Invite team members | no | yes (unlimited) |
+| Accountant access | yes | yes |
 
 ## Member and accountant lifecycle
 

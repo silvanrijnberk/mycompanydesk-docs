@@ -64,7 +64,7 @@ Download je gegevens per soort:
 - **Uitgaven** als CSV, met categorieën en bedragen
 
 ::: info
-CSV-exports zijn beschikbaar vanaf het **Starter**-abonnement. De volledige back-up (JSON) kun je altijd downloaden, op elk abonnement, inclusief Gratis.
+CSV-exports van facturen en uitgaven horen bij **Office**. De volledige back-up (JSON) en je klantenlijst kun je altijd downloaden, op elk abonnement, ook op Desk.
 :::
 
 ### Volledige back-up

@@ -1,7 +1,7 @@
 ---
 title: Abonnement et paiements
-description: "Ce que vous nous payez, vos factures de notre part et votre carte de paiement, dans Paramètres, Abonnement et paiements."
-last_verified: 2026-08-05
+description: "Desk est gratuit, Office coûte 12,99 € par mois hors TVA. Ce que contient chaque formule, nos factures et la résiliation de votre abonnement."
+last_verified: 2026-09-24
 ---
 
 # Abonnement et paiements
@@ -10,141 +10,106 @@ Ce que vous nous payez, vos factures de notre part et votre carte de paiement.
 
 ## Où le trouver
 
-Ouvrez **Paramètres**, puis **Je abonnement** (votre abonnement), ou naviguez directement vers `/settings/abonnement`.
+Ouvrez **Paramètres**, puis **Votre abonnement**, ou allez directement sur `/settings/abonnement`.
 
 Les anciennes URL `/workspace/account/billing` et `/settings/billing` redirigent vers la nouvelle page ; vos favoris continuent de fonctionner et le paramètre de requête `?checkout=success|canceled` est conservé lors de la redirection.
 
-## Accords existants
+## Formules et tarifs
 
-Un petit nombre d'espaces de travail conservent Pro gratuitement au titre d'accords antérieurs. Ces accords sont honorés tant que MyCompanyDesk propose le service et la fonctionnalité concernée. Ils sont clos et ne peuvent pas être demandés ; les nouveaux espaces de travail démarrent avec l'essai Pro de 60 jours décrit ci-dessous.
+MyCompanyDesk propose deux formules : **Desk** et **Office**.
 
-Les espaces de travail bénéficiant d'un tel accord sont des clients Pro comme les autres : mêmes fonctionnalités, mêmes limites. La seule différence est la source d'abonnement affichée sur la page d'abonnement.
+- **Desk** est gratuit et le reste. Vous pouvez commencer avec et y rester aussi longtemps que vous le souhaitez.
+- **Office** coûte **12,99 € par mois**, ou **129,90 € par an** (deux mois offerts).
 
-## Plans
+Tous les prix s'entendent hors TVA néerlandaise de 21 %, ajoutée lors du paiement. En tant qu'entreprise, vous récupérez cette TVA comme TVA déductible.
 
-MyCompanyDesk propose un plan Gratuit et deux plans payants. Le plan Gratuit est un produit à part entière, proposé à l'inscription et conservé indéfiniment. Les nouveaux clients bénéficient d'un essai Pro de 60 jours ; un espace de travail qui ne convertit pas atterrit sur Gratuit.
+### Prix de lancement pour la première année
 
-| Plan | Mensuel | Annuel | Description |
-|---|---|---|---|
-| **Gratuit** | 0,00 EUR | 0,00 EUR | Facturation, devis et dépenses illimités, plus votre propre site sur mycompanydesk.site |
-| **Starter** | 10,00 EUR | 100,00 EUR | Tout pour faire votre travail : factures, devis, dépenses, heures et projets, sur votre propre page |
-| **Pro** | 25,00 EUR | 250,00 EUR | Faites grandir votre entreprise : domaine et site web personnels, boîte mail professionnelle, connexion bancaire, accès équipe, API et plus |
+Si vous n'avez jamais eu d'abonnement payant, Office coûte **35,88 €** la première année (2,99 € par mois) en paiement annuel. Ensuite, vous payez le tarif annuel normal de 129,90 €. Le prix de lancement ne vaut qu'en paiement annuel, uniquement pour la première année, et pas pour qui a déjà eu un abonnement payant. Si vous y avez droit, la page d'abonnement s'ouvre directement sur **Annuel** et affiche « Première année 2,99 € par mois ».
 
-Tous les prix s'entendent hors TVA néerlandaise de 21%, ajoutée lors du paiement. L'application affiche les prix avec la mention « excl. btw » (hors TVA) ; en tant qu'entreprise, vous récupérez cette TVA comme taxe déductible. Le prix annuel équivaut à dix paiements mensuels, payer à l'année vous offre donc deux mois gratuits.
+### Période d'essai
 
-Pro est le plan mis en avant (recommandé) dans le sélecteur. Le plan Gratuit apparaît sur la page de tarifs et dans le flux d'inscription aux côtés des plans payants.
+Chaque nouvel espace de travail reçoit 60 jours d'Office gratuits, sans carte bancaire. Une bannière vous indique alors que vous êtes en essai gratuit, avec le nombre de jours restants. Pour garder Office, cliquez sur **Garder Office**. Si vous ne faites rien, vous passez automatiquement sur Desk à la fin de l'essai. Vos données restent en place.
 
-### Ce que chaque plan inclut
+### Que contiennent Desk et Office ?
 
-Fonctionnalités avec limites d'utilisation (limites mensuelles, sauf indication contraire) :
+| Fonctionnalité | Desk (gratuit) | Office |
+|---|---|---|
+| Factures, devis et dépenses | illimité | illimité |
+| Projets et saisie de temps | oui | oui |
+| Export PDF, pièces jointes, image de marque personnalisée | oui | oui |
+| Site web sur votre adresse `.mycompanydesk.site` | oui | oui |
+| Site web sur votre propre domaine (5 domaines maximum) | non | oui |
+| Boîte mail professionnelle sur votre propre domaine | non, lecture et réponse uniquement | oui |
+| Factures et dépenses récurrentes | non | oui |
+| Rappels de paiement automatiques | non | oui |
+| Contrats | non | oui |
+| Connexions bancaires | non | 3 maximum |
+| Déclaration de TVA numérique | non | oui |
+| Transmission automatique à votre comptable | non | oui |
+| Facturation électronique Peppol | non | oui |
+| Newsletter | non | oui |
+| Export CSV/Excel des factures et dépenses | non | oui |
+| Inviter des membres d'équipe | non, vous seul | illimité |
+| Plusieurs entreprises à vous | non | 10 maximum |
+| Accès API et webhooks | non | oui |
+| Rapports avancés et analyses IA | non | oui |
+| Sans mention « Créé avec MyCompanyDesk » sur la page de paiement, la page de signature et les e-mails | non | oui |
+| Support prioritaire | non | oui |
 
-| Métrique | Gratuit | Starter | Pro |
-|---|---|---|---|
-| Factures créées | illimité | illimité | illimité |
-| Dépenses créées | illimité | illimité | illimité |
-| Devis créés | illimité | illimité | illimité |
-| Stockage | 100 Mo | 2 Go | illimité |
-| Personnes avec accès | vous seul | vous seul | illimité |
-| Domaines personnalisés | 0 | 0 | 5 |
-| Messages de chat IA (mensuel) | 10 | 100 | 1 000 |
-| Scans de reçus IA (mensuel) | 3 | 30 | 200 |
-| Suggestions IA (mensuel) | 10 | 200 | 2 000 |
-| Connexions bancaires | 0 | 0 | 3 |
+Limites par mois :
 
-Remarque : les limites IA sont mensuelles, et non quotidiennes. Elles sont réinitialisées le premier de chaque mois civil.
+| Métrique | Desk | Office |
+|---|---|---|
+| Messages de chat IA | 10 | 1 000 |
+| Scans de reçus par IA | 3 | 200 |
+| Suggestions IA | 10 | 2 000 |
+| Stockage | 100 Mo | illimité |
+| E-mails envoyés depuis la boîte de réception | - | 15 000 |
+| E-mails reçus dans la boîte de réception | - | 20 000 |
 
-La facturation sur le plan Gratuit est illimitée : aucun plafond mensuel ni aucun plafond cumulé. Les factures déjà créées restent toujours visibles et exportables.
+Les limites IA sont mensuelles et réinitialisées le premier de chaque mois civil. Les factures déjà créées restent toujours visibles et exportables, y compris sur Desk.
 
-Fonctionnalités par plan :
+L'accès de votre comptable est gratuit avec toutes les formules et ne compte pas comme membre d'équipe.
 
-| Fonctionnalité | Gratuit | Starter | Pro |
-|---|---|---|---|
-| Factures, dépenses, devis, pièces jointes | oui | oui | oui |
-| Export PDF | oui | oui | oui |
-| Export CSV/Excel | non | oui | oui |
-| Numérisation de reçus (avec les limites mensuelles ci-dessus) | oui | oui | oui |
-| Chat assistant | oui | oui | oui |
-| Analyses IA | oui | oui | oui |
-| Classification des dépenses en temps réel | oui | oui | oui |
-| Contrats | non | oui | oui |
-| Projets | non | oui | oui |
-| Biens locatifs * | non | oui | oui |
-| Factures et dépenses récurrentes | non | oui | oui |
-| Saisie de temps | non | oui | oui |
-| Image de marque personnalisée | oui | oui | oui |
-| Outils linguistiques | non | oui | oui |
-| Enrichissement des descriptions | non | oui | oui |
-| Page entreprise publique | oui | oui | oui |
-| Sous-domaine d'entreprise et préréglages de style | oui | oui | oui |
-| Accès équipe (personnes illimitées) | non | non | oui |
-| Factures et devis sans mention MyCompanyDesk | oui | oui | oui |
-| Rapports avancés | non | non | oui |
-| Domaine personnalisé, routage de domaine, site web complet sur votre domaine | non | non | oui |
-| Boîte mail professionnelle | non | non | oui |
-| Newsletter | non | non | oui |
-| Mode confidentialité | non | non | oui |
-| Accès API et webhooks | non | non | oui |
-| Permissions avancées | non | non | oui |
-| Support prioritaire | non | non | oui |
-| Connexions bancaires (jusqu'à 3) | non | non | oui |
-| Facturation électronique Peppol | non | non | oui |
+### Votre site web sur Desk
 
-\* Le module de biens locatifs n'est actuellement affiché qu'aux espaces de travail qui l'utilisent déjà.
+Votre site web reste en ligne avec toutes les formules. Sur Desk, il se trouve sur votre adresse gratuite `.mycompanydesk.site` avec un petit badge « Créé avec MyCompanyDesk ». Sur votre propre domaine (Office), ce badge n'apparaît pas.
 
-L'accès de votre comptable est gratuit sur tous les plans et ne compte pas comme accès équipe.
+### Quand Office s'arrête
 
-### Limites de la boîte mail professionnelle
+Si votre abonnement Office s'arrête, l'application affiche une notification et vous recevez un e-mail (« Office s'est arrêté »), aussi bien après un paiement échoué qu'après une résiliation. Après un paiement échoué, vous pouvez vous réabonner tout de suite.
 
-La boîte mail professionnelle est une fonctionnalité Pro. Avec Pro, vous pouvez envoyer jusqu'à 15 000 e-mails et en recevoir jusqu'à 20 000 par mois ; le nombre de boîtes mail n'est pas limité.
-
-### Site public : disponibilité
-
-Lorsqu'un espace de travail retombe en Gratuit, son site web public et le constructeur de site restent en ligne. Les sites gratuits affichent un petit badge MyCompanyDesk sur l'adresse du sous-domaine de l'espace de travail ; la seule façon de supprimer le badge est de déplacer le site vers un domaine personnalisé (Pro). La vérification a lieu à chaque requête, avant le cache, pour que les changements d'abonnement prennent effet immédiatement.
-
-### Quand un abonnement payé s'arrête
-
-Un abonnement payé ne s'arrête jamais en silence. Dès qu'il s'arrête, l'application affiche une notification et envoie un e-mail (dont le titre est « Office s'est arrêté »), en deux variantes : une pour un paiement échoué, une pour une résiliation que vous avez demandée vous-même. Après un paiement échoué, vous pouvez vous réabonner tout de suite ; le tunnel de souscription ne vous envoie plus vers le portail Stripe pour un abonnement qui n'existe plus.
-
-Votre propre domaine reste visible sur la page Domaines après la fin de l'offre : le nom, le statut et le code de transfert restent lisibles, avec une invitation à passer à l'offre payante à côté, car modifier les réglages du domaine demande à nouveau l'abonnement payé.
-
-### Accès équipe
-
-L'accès équipe est inclus dans Pro sans frais par personne : invitez autant d'utilisateurs actifs que vous le souhaitez. Il n'y a pas de tarification par siège ni d'add-on par siège. Avec Gratuit et Starter, vous travaillez seul, mais votre comptable peut toujours recevoir un accès gratuit.
+Sur Desk, les fonctionnalités Office ne fonctionnent plus : aucune nouvelle facture ou dépense récurrente n'est créée, votre connexion bancaire n'importe plus rien et votre boîte mail sur votre propre domaine n'envoie ni ne reçoit plus d'e-mails. Vos données restent en place. Votre propre domaine reste visible sur la page des domaines, avec son nom, son statut et son code de transfert, mais pour modifier ses réglages il vous faut à nouveau Office.
 
 ### Entreprises supplémentaires
 
-Votre abonnement couvre votre espace de travail principal. Chaque entreprise supplémentaire que vous ajoutez est facturée au prix affiché avant confirmation.
+Votre abonnement couvre votre première entreprise. Avec Office, vous pouvez ajouter d'autres entreprises à vous pour 5,99 € par mois ou 59,90 € par an et par entreprise (hors TVA). L'application affiche le prix avant que vous confirmiez. Vous pouvez désactiver une entreprise à tout moment ; elle ne compte alors plus, mais reste lisible et exportable pendant la durée légale de conservation.
 
-Si votre espace de travail est sur un plan payant (Starter ou Pro), l'entreprise supplémentaire commence par sa propre période d'essai Pro. Pendant l'essai, elle ne coûte rien ; après l'essai, elle est ajoutée à votre abonnement au tarif affiché.
+### Accords existants
 
-Si votre espace de travail dispose d'un Office gratuit dans le cadre d'une disposition telle qu'un plan comped ou founding member, il n'y a pas d'abonnement auquel rattacher l'entreprise supplémentaire. Vous l'achetez donc via un paiement dédié add-on. La première entreprise reste gratuite ; seule l'entreprise supplémentaire est facturée. Vous pouvez désactiver une entreprise à tout moment ; elle ne compte alors plus dans votre abonnement ou add-on, tout en restant lisible et exportable pour la durée légale de conservation.
+Un nombre limité d'espaces de travail conservent Office gratuitement au titre d'accords antérieurs. Ces accords sont clos et ne peuvent plus être demandés. Ces espaces de travail ont les mêmes fonctionnalités et les mêmes limites que tout autre client Office.
 
-## Portail Stripe
+## Payer, factures et résiliation
 
-Le bouton **Gérer l'abonnement** (visible lorsque l'espace de travail a une période active ou un plan non Gratuit) ouvre une session unique du portail client Stripe. Depuis le portail, vous pouvez :
+Vous payez via Stripe. Le bouton **Gérer la facturation**, dans **Paramètres** → **Votre abonnement**, ouvre le portail de paiement. Vous pouvez y :
 
-- Mettre à jour le moyen de paiement
-- Télécharger les factures et reçus
-- Modifier l'adresse de facturation
-- Résilier l'abonnement
+- mettre à jour votre moyen de paiement ;
+- télécharger nos factures et reçus ;
+- modifier votre adresse de facturation ;
+- résilier votre abonnement.
 
-La résiliation prend effet à la fin de la période payée en cours ; l'accès est conservé jusque-là.
+Vous pouvez aussi résilier via **Paramètres** → **Résilier le compte** → **Résilier l'abonnement**. La résiliation prend effet à la fin de la période payée ; jusque-là, vous gardez Office. Ensuite, vous continuez sur Desk. La suppression de votre compte est une étape distincte sur la même page.
 
-## Flux de paiement
-
-1. Cliquez sur **Mettre à niveau** sur une vignette de plan
-2. Vous arrivez sur une page Stripe Checkout
-3. Stripe redirige avec `?checkout=success` ou `?checkout=canceled`
-4. La page affiche une bannière de succès ou d'annulation ; l'interface verrouillée est immédiatement déverrouillée
-
-Lors d'un passage au plan Pro, la bannière de succès prend l'accent violet Pro avec une icône de couronne (« Bienvenue chez Pro ») au lieu de la confirmation verte standard. Ce même style Pro apparaît ailleurs dans l'application : un anneau violet autour de l'avatar, une icône de couronne dans le badge de plan et des pastilles « Fonction Pro » sur les pages de paramètres réservées à Pro comme Clés API et Boîte de réception. De plus, l'assistant du guide contextuel reçoit une apparence violette premium : la pastille « IA » devient une pastille « Pro », la bordure du panneau et le bouton d'envoi adoptent l'accent Pro et la ligne de statut devient « Votre assistant Pro est prêt. »
+Pour passer à Office, cliquez sur **Mettre à niveau** sur la page d'abonnement. Vous payez chez Stripe, puis revenez dans l'application, où les fonctionnalités Office sont immédiatement débloquées.
 
 ## Bannière de mise à niveau contextuelle
 
-Lorsque vous arrivez sur la page d'abonnement depuis une fonctionnalité verrouillée, la page affiche une bannière « vous êtes venu ici pour X, voici ce qui le débloque » au lieu d'une présentation générique des plans.
+Lorsque vous arrivez sur la page d'abonnement depuis une fonctionnalité verrouillée, la page affiche une bannière « vous êtes venu ici pour X, voici ce qui le débloque » au lieu d'une présentation générique des formules.
 
 ## Voir aussi
 
-- [Paramètres de l'entreprise](/fr/settings/company) -- la page entreprise publique et les domaines personnalisés se gèrent ici
-- [E-mail](/fr/settings/email) -- la boîte mail professionnelle nécessite Pro
-- [Équipe](/fr/settings/team) -- l'accès équipe nécessite Pro
+- [Paramètres de l'entreprise](/fr/settings/company) : les informations et l'image de marque de votre entreprise
+- [E-mail](/fr/settings/email) : la boîte mail professionnelle fait partie d'Office
+- [Équipe](/fr/settings/team) : inviter des membres d'équipe fait partie d'Office
+- [Formules et tarifs](/fr/faq/plans)

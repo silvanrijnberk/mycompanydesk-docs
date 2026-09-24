@@ -44,7 +44,7 @@ La page Travail liste le travail ouvert en deux blocs : vos propres entreprises 
 
 Si vous dirigez un cabinet comptable, la section Cabinet contient trois pages au niveau du cabinet :
 
-- **Tableau de bord du cabinet** (`/werkruimtes/kantoor`) - membres du cabinet, invitations clientes en attente, lien de partage partenaire et statistiques, ainsi que l'attribution eventuelle de Pro gratuit.
+- **Tableau de bord du cabinet** (`/werkruimtes/kantoor`) - membres du cabinet, invitations clientes en attente, lien de partage partenaire et statistiques, ainsi que l'attribution éventuelle d'Office gratuit.
 - **Facturation** (`/werkruimtes/kantoor/facturatie`) - proposez de prendre en charge l'abonnement d'une administration cliente. Le client doit accepter avant que quoi que ce soit soit facture; le prix par administration prise en charge est affiche avant confirmation. Une offre en attente s'affiche separement pour que vous puissiez la retirer tant que le client n'a pas repondu.
 - **Export** (`/werkruimtes/kantoor/export`) - exportez plusieurs administrations clientes a la fois. Choisissez l'annee, la periode et le format d'export, selectionnez les administrations, et l'application telecharge une archive par client. Les exports echoues restent a l'ecran pour que vous voyiez ce qui n'a pas ete termine.
 
@@ -127,7 +127,7 @@ Chaque ligne client affiche une puce de travail des qu'une tache est en attente.
 
 Ouvrez **Ajouter une entreprise** et donnez un nom a la nouvelle entreprise.
 
-Si vous etes sur un plan payant (Starter ou Pro), l'application affiche le cout supplementaire avant la confirmation. Pendant votre propre periode d'essai Office, vous ne payez rien pour l'entreprise supplementaire; apres l'essai, elle est ajoutee a votre abonnement au tarif affiche.
+Si vous avez Office, l'application affiche le coût supplémentaire avant la confirmation. Pendant votre propre periode d'essai Office, vous ne payez rien pour l'entreprise supplementaire; apres l'essai, elle est ajoutee a votre abonnement au tarif affiche.
 
 Si votre espace de travail dispose d'un Office gratuit dans le cadre d'une disposition telle qu'un plan comped ou founding member, votre premiere entreprise reste gratuite et l'application propose maintenant un paiement separe pour une deuxieme entreprise. Le prix est affiche a l'avance; seule la deuxieme entreprise est facturee via un abonnement add-on dedie. Une fois le paiement confirme, vous pouvez nommer la deuxieme entreprise.
 

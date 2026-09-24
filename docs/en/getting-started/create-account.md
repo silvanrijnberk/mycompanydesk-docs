@@ -35,7 +35,7 @@ You can remove that access later from Settings → "Toegang en boekhouder".
 
 ## Your workspace
 
-Your workspace is created automatically when you sign up, with a **60-day free Pro trial** (no payment method required). You can explore all Pro features right away; your company details are filled in later during the setup wizard.
+Your workspace is created automatically when you sign up, with a **60-day free Office trial** (no payment method required). You can explore all Office features right away; your company details are filled in later during the setup wizard.
 
 ### Join an existing workspace
 

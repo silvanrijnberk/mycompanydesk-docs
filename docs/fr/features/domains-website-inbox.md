@@ -8,6 +8,10 @@ last_verified: 2026-09-23
 
 > **Statut : pre-lancement.** Les trois fonctionnalites de cette page sont deployees ensemble en un seul lot. Elles sont gerees par les flags `custom_domains` et `public_business_page` et sont encore en cours de deploiement sur les abonnements publics. Le comportement decrit ici correspond a la base de code au 2026-05-09 ; si un ecran semble different dans votre espace de travail, le lot n'y a pas encore ete active.
 
+::: tip Réponse rapide
+Vous cherchez les étapes pour une tâche précise ? Consultez les questions fréquentes : [Connecter votre propre domaine et les serveurs de noms](/fr/faq/connect-domain), [Importer vos anciens e-mails](/fr/faq/import-old-mail), [Publier votre site web et le mettre en ligne](/fr/faq/publish-website), [Transférer vos e-mails vers Gmail](/fr/faq/forward-mail) et [E-mails dans Outlook ou sur votre téléphone](/fr/faq/mail-app-outlook). Cette page décrit la technique qui se trouve derrière.
+:::
+
 Les domaines personnalises, le site web d'entreprise heberge et la boite de reception e-mail partagee forment un seul produit. La raison : ils partagent l'etat. La meme ligne `domains` qui prouve que vous contrôlez `acme.fr` fait aussi de `acme.fr` l'URL de votre site web et permet a `info@acme.fr` de recevoir des e-mails. Il y a un flux d'intégration, un arbre de parametres et un endroit dans l'application pour tout gerer.
 
 ## La valeur du lot
@@ -124,13 +128,13 @@ Colonnes notables que l'application lit :
 
 Le renouvellement de domaine suit trois chemins selon la maniere dont le domaine a ete acquis :
 
-1. **Renouvellement groupe gratuit** (niveau Trial converti en Pro, ou accord antérieur de gratuité à vie) : MCD prend en charge le cout de gros du renouvellement. Le domaine se renouvelle automatiquement tant que l'espace de travail reste sur Pro. Aucun moyen de paiement requis.
-2. **Renouvellement automatique payant** (achat payant ou niveau Trial sans Pro) : Facture annuellement via la carte enregistree. Fonctionne comme tout autre renouvellement d'abonnement.
-3. **Renouvellement manuel** : Si un espace de travail de niveau Trial quitte Pro ET n'a pas de carte enregistree, le chemin de renouvellement automatique le saute. L'utilisateur voit une notification et peut declencher un paiement ponctuel via `POST /api/domains/renew/:domainId`, qui cree une session Stripe Embedded Checkout pour le renouvellement. C'est le seul moyen de garder un domaine actif sans abonnement actif ni carte enregistree.
+1. **Renouvellement groupé gratuit** (niveau Trial converti en Office, ou accord antérieur de gratuité à vie) : MCD prend en charge le coût de gros du renouvellement. Le domaine se renouvelle automatiquement tant que l'espace de travail reste sur Office. Aucun moyen de paiement requis.
+2. **Renouvellement automatique payant** (achat payant ou niveau Trial sans Office) : facturé annuellement via la carte enregistrée. Fonctionne comme tout autre renouvellement d'abonnement.
+3. **Renouvellement manuel** : si un espace de travail de niveau Trial quitte Office ET n'a pas de carte enregistrée, le chemin de renouvellement automatique le saute. L'utilisateur voit une notification et peut déclencher un paiement ponctuel via `POST /api/domains/renew/:domainId`, qui crée une session Stripe Embedded Checkout pour le renouvellement. C'est le seul moyen de garder un domaine actif sans abonnement actif ni carte enregistrée.
 
 #### Rachat du domaine en cas de depart pendant l'essai
 
-Lorsqu'un client en periode d'essai Pro decide de partir avant de devenir client Pro payant, il dispose d'une troisieme option pour son domaine `.nl` gratuit : le racheter pour un montant forfaitaire de €15,00 TTC (paiement unique). Le flux de rachat (`DomainBuyoutModal.vue`) permet au client de payer via Stripe Embedded Checkout et d'obtenir la pleine propriete. Une fois le paiement effectue, le titulaire du domaine est transfere de MCD au client et le code d'authentification (EPP) est affiche, permettant de deplacer le domaine vers n'importe quel registrar.
+Lorsqu'un client en période d'essai Office décide de partir avant de devenir client Office payant, il dispose d'une troisième option pour son domaine `.nl` gratuit : le racheter pour un montant forfaitaire de €15,00 TTC (paiement unique). Le flux de rachat (`DomainBuyoutModal.vue`) permet au client de payer via Stripe Embedded Checkout et d'obtenir la pleine propriété. Une fois le paiement effectué, le titulaire du domaine est transféré de MCD au client et le code d'authentification (EPP) est affiché, permettant de déplacer le domaine vers n'importe quel registrar.
 
 Le prix de €15,00 est volontairement indique TTC, car le paiement est declenche au moment ou le client quitte MyCompanyDesk. Le montant net transmis a Stripe est de €12,40 ; 21% de TVA neerlandaise sont ajoutes et arrondis au centime pres, de sorte que le total atteint exactement €15,00. Voir `apps/api/src/modules/domains/domain-pricing.config.js` dans le depot RichardTool et `sources/vat-rates.yaml#countries.NL.standard`.
 
@@ -144,30 +148,30 @@ Tables de base de donnees concernees :
 
 Transferer un domaine enregistre via MyCompanyDesk vers un autre registrar a des consequences permanentes, appliquees par la synchronisation hebdomadaire du statut OpenProvider :
 
-- **Domaines avec accord de gratuité à vie** : La reclamation gratuite est supprimee et l'octroi Pro a vie interne de l'espace de travail est resilie. L'espace de travail devient un client payant normal. C'est irreversible -- l'octroi ne peut pas etre reclame a nouveau.
-- **Domaines niveau Trial / groupes Pro** : Le statut groupe gratuit est perdu. L'espace de travail ne pourra plus jamais reclamer un autre domaine gratuit (deja applique via la liste des reclamations conservees). A noter : le rachat du domaine pendant l'essai (voir section rachat ci-dessus) n'est pas un transfert -- c'est un changement de titulaire qui donne la propriete au client avant tout transfert, preservant ainsi l'avantage du domaine gratuit pour la duree de l'essai.
+- **Domaines avec accord de gratuité à vie** : la réclamation gratuite est supprimée et l'octroi Office à vie interne de l'espace de travail est résilié. L'espace de travail devient un client payant normal. C'est irréversible ; l'octroi ne peut pas être réclamé à nouveau.
+- **Domaines niveau Trial / groupés Office** : le statut groupé gratuit est perdu. L'espace de travail ne pourra plus jamais réclamer un autre domaine gratuit (déjà appliqué via la liste des réclamations conservées). À noter : le rachat du domaine pendant l'essai (voir la section rachat ci-dessus) n'est pas un transfert. C'est un changement de titulaire qui donne la propriété au client avant tout transfert, préservant ainsi l'avantage du domaine gratuit pour la durée de l'essai.
 - **Domaines payants** : Aucune revocation d'avantage -- le domaine passe simplement a `status = 'transferred_out'`.
 
-Le modal de reclamation avertit de ces consequences avant qu'une reclamation de domaine gratuit ne soit soumise, et exige une confirmation explicite de l'utilisateur. Une notice "Fonctionnement de votre domaine gratuit" explique que le domaine est enregistre au nom de MCD pendant l'essai, qu'il sera transfere gratuitement au nom du client en cas de passage a Pro, et qu'il peut etre rachete pour €15 en cas de depart anticipe. Les details de revocation sont enregistres dans la table d'audit `domain_perk_revocations` pour reference par le support.
+Le modal de réclamation avertit de ces conséquences avant qu'une réclamation de domaine gratuit ne soit soumise, et exige une confirmation explicite de l'utilisateur. Une notice "Fonctionnement de votre domaine gratuit" explique que le domaine est enregistré au nom de MCD pendant l'essai, qu'il sera transféré gratuitement au nom du client en cas de passage à Office, et qu'il peut être racheté pour €15 en cas de départ anticipé. Les détails de révocation sont enregistrés dans la table d'audit `domain_perk_revocations` pour référence par le support.
 
 #### Acheter ou reclamer un domaine
 
 La carte d'achat de domaine (`DomainPurchaseCard.vue`, `domain-purchase.service.ts`) est la premiere carte sur la page des parametres Domaines. Elle apparait lorsque l'espace de travail n'a pas encore de domaine personnalise actif. La carte permet a l'utilisateur de choisir et d'acquerir un domaine via deux chemins, qui ouvrent tous deux un modal d'achat en deux etapes (`DomainClaimModal.vue`). La premiere etape collecte les donnees du titulaire (requises par le registrar pour le WHOIS). La deuxieme etape gere le paiement ou la soumission :
 
 - **Acheter** -- Achat payant via OpenProvider. L'utilisateur saisit un nom de domaine, la carte appelle `GET /api/domain-purchase/quote` pour verifier la disponibilite et le prix, puis ouvre le modal d'achat. Apres avoir saisi les donnees du titulaire, le modal appelle `POST /api/domain-purchase/checkout-session` pour creer une session de paiement Stripe et affiche Stripe Embedded Checkout pour le paiement. Une fois le paiement termine, `POST /api/domain-purchase/finalize` enregistre le domaine chez OpenProvider et cree la ligne `domains` en mode nameserver, reliee a Cloudflare.
-- **Reclamation gratuite** -- Les espaces de travail eligibles en periode d'essai Pro peuvent reclamer gratuitement un domaine `.nl` pour la premiere annee. La carte appelle `GET /api/domain-purchase/free-domain/eligibility` pour verifier le niveau de reclamation et le statut des conditions. Le modal collecte les donnees du titulaire et appelle `POST /api/domain-purchase/free-domain/claim` a l'envoi. La plateforme prend en charge les frais d'enregistrement de la premiere annee.
+- **Réclamation gratuite** : les espaces de travail éligibles en période d'essai Office peuvent réclamer gratuitement un domaine `.nl` pour la première année. La carte appelle `GET /api/domain-purchase/free-domain/eligibility` pour vérifier le niveau de réclamation et le statut des conditions. Le modal collecte les données du titulaire et appelle `POST /api/domain-purchase/free-domain/claim` à l'envoi. La plateforme prend en charge les frais d'enregistrement de la première année.
 
 Les reclamations gratuites ne different que par la maniere dont le domaine est renouvele apres la premiere annee :
 
-- **Niveau Trial** -- Les espaces de travail en periode d'essai Pro. La premiere annee est gratuite. A la fin de l'annee gratuite, l'espace de travail doit avoir un abonnement Pro payant ; le domaine se renouvelle alors comme partie de l'abonnement Pro, paye par l'espace de travail. Si l'espace de travail cesse de payer Pro apres l'annee gratuite, le domaine expire et doit etre renouvele manuellement. Pendant l'annee d'essai, l'utilisateur peut optionnellement enregistrer une carte via Stripe SetupIntent dans le modal pour le futur renouvellement automatique.
+- **Niveau Trial** : les espaces de travail en période d'essai Office. La première année est gratuite. À la fin de l'année gratuite, l'espace de travail doit avoir un abonnement Office payant ; le domaine se renouvelle alors dans le cadre de l'abonnement Office, payé par l'espace de travail. Si l'espace de travail cesse de payer Office après l'année gratuite, le domaine expire et doit être renouvelé manuellement. Pendant l'année d'essai, l'utilisateur peut, s'il le souhaite, enregistrer une carte via Stripe SetupIntent dans le modal pour le futur renouvellement automatique.
 - **Niveau Payant** -- Domaines standard achetes au prix fort. Le renouvellement est facture via le moyen de paiement enregistre sur le cycle annuel. Si le paiement echoue, une notification de renouvellement manuel est envoyee.
-- **Niveau gratuit à vie** -- Un petit nombre d'espaces de travail conservent Pro gratuitement et le renouvellement de domaine gratuit à vie au titre d'accords antérieurs. Aucun moyen de paiement requis ; le renouvellement est gere automatiquement par la plateforme, MCD absorbant le cout de gros. Ce niveau est clos et ne peut pas etre demande.
+- **Niveau gratuit à vie** : un nombre limité d'espaces de travail conservent Office gratuitement et le renouvellement de domaine gratuit à vie au titre d'accords antérieurs. Aucun moyen de paiement requis ; le renouvellement est géré automatiquement par la plateforme, MCD absorbant le coût de gros. Ce niveau est clos et ne peut pas être demandé.
 
 Le point de terminaison d'eligibilite (`GET /api/domain-purchase/free-domain/eligibility`) renvoie un champ `tier` en plus du rapport de conditions. Il n'expose aucun nombre de reclamations restantes.
 
 L'eligibilite est determinee par un ensemble de conditions strictes verifiees cote serveur :
 
-- **Espace de travail Pro actif** -- l'espace de travail doit etre sur Pro (essai ou payant). Les espaces de travail sur Free ne peuvent pas reclamer.
+- **Espace de travail Office actif** : l'espace de travail doit être sur Office (essai ou payant). Les espaces de travail sur Desk ne peuvent pas réclamer.
 - **KVK requis** -- l'espace de travail doit avoir un numero KVK lie.
 - **Le domaine doit être `.nl`** -- le programme gratuit ne concerne que l'extension NL.
 - **Le domaine doit correspondre au nom KVK** -- le domaine doit correspondre a la raison sociale ou a un nom commercial.
@@ -226,7 +230,7 @@ Ce que couvrent les onglets :
 - **Domaine et e-mail** — Domaine personnalise, DNS, SSL, redirections et configuration de la boite de reception. Voir la section domaines personnalises ci-dessus.
 - **Parametres** — Choisissez quel constructeur est actif (modele ou sur mesure) et configurez le slug de l'espace de travail et les autres parametres du site.
 
-Lorsque votre espace de travail possede plusieurs domaines personnalises actifs (abonnement Pro), un selecteur de domaine permet d'editer une variante du site par domaine. Chaque domaine dispose de ses propres pages, navigation, tokens de design et snapshot de publication. Changer de domaine reinitialise l'onglet actif.
+Lorsque votre espace de travail possède plusieurs domaines personnalisés actifs (abonnement Office), un sélecteur de domaine permet d'éditer une variante du site par domaine. Chaque domaine dispose de ses propres pages, navigation, tokens de design et snapshot de publication. Changer de domaine réinitialise l'onglet actif.
 
 Le site public est diffuse a l'URL la plus prioritaire disponible pour l'entreprise : racine du domaine personnalise → sous-domaine de l'espace de travail → route de secours `/portal/<slug>`.
 

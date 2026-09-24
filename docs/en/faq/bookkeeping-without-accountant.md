@@ -19,7 +19,7 @@ chatbot:
     - { label: "Open access settings", to: "/settings/team" }
   follow_up:
     - "How do I invite my accountant?"
-    - "What does the Free plan include?"
+    - "What does the free Desk plan include?"
     - "How do VAT calculations work?"
 ---
 
@@ -36,7 +36,7 @@ Most freelancers and one-person businesses can handle their own day-to-day bookk
 
 ## When you can do it yourself
 
-A simple sole proprietorship or freelance business can usually manage routine bookkeeping on its own. If you only send a few invoices per year, track your expenses, and need a clean VAT overview, you can do this yourself on the Free plan.
+A simple sole proprietorship or freelance business can usually manage routine bookkeeping on its own. If you only send a few invoices per year, track your expenses, and need a clean VAT overview, you can do this yourself on Desk, the free plan.
 
 ## When an accountant still makes sense
 
@@ -44,4 +44,4 @@ Consider an accountant for complex situations such as a private limited company 
 
 ## Cost
 
-You can start and stay on the Free plan. New workspaces get a 60-day Pro trial. Paid plans are listed in [Plan & payments](/en/settings/billing).
+You can start and stay on Desk, the free plan. New workspaces get 60 days of Office. Paid plans are listed in [Plan & payments](/en/settings/billing).

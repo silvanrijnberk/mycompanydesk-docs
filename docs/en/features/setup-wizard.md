@@ -60,7 +60,7 @@ If you are waiting for your VAT ID from the Tax Authority, or fall under the sma
 
 The final step confirms your trial:
 
-- **Your trial:** every new workspace starts with 60 days of Pro, free, no credit card needed.
+- **Your trial:** every new workspace starts with 60 days of Office, free, no credit card needed.
 
 **Finish setup** applies your company details, VAT status, IBAN and default settings. The finish screen also offers optional next steps, such as setting up a website. Website setup is opt-in: nothing is created unless you choose it from the finish screen or the dashboard checklist.
 

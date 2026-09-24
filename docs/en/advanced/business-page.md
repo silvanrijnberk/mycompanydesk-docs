@@ -13,7 +13,7 @@ Build your business website with a drag-and-drop editor. Create multiple pages, 
 The site builder replaces the old single-page business profile. Every new workspace starts with a 4-page default site (Home, Diensten, Over ons, Contact) so you have a real multi-page foundation from day one. The editor gives you:
 
 - **Multi-page support**: Create as many pages as you need, each with its own path and sections. The four default pages are ready to edit, remove, or add to.
-- **Domain switcher**: When your workspace has multiple custom domains (Pro plan), a dropdown in the top bar lets you switch between editing the default site and a per-domain variant. Each domain gets its own pages, navigation, design tokens, and publish snapshot.
+- **Domain switcher**: When your workspace has multiple custom domains (Office plan), a dropdown in the top bar lets you switch between editing the default site and a per-domain variant. Each domain gets its own pages, navigation, design tokens, and publish snapshot.
 - **Section blocks**: Add hero, text, gallery, spotlight, services, team, testimonials, contact form, and custom HTML sections to any page. Save sections as reusable blocks to build a personal library.
 - **Design tokens**: Set brand colors, fonts, spacing, border radius, motion style, custom CSS, and a site favicon. Changes apply across the whole site.
 - **Navigation editor**: Drag-and-drop reorder of header links, with dropdown groups, external links, and inline navbar styling (brand name, CTA button, phone, call bar, sticky).
@@ -536,10 +536,10 @@ See [Quotes - Quote Requests](/en/features/quotes#quote-requests) for details on
 
 ## Subscription requirement
 
-The public website (business page and site builder) is available on every plan and stays online. MyCompanyDesk branding is address-based: the badge appears when the site is served on a workspace subdomain, and it is removed when the site is served on a custom domain (Pro).
+The public website (business page and site builder) is available on every plan and stays online. MyCompanyDesk branding is address-based: the badge appears when the site is served on a workspace subdomain, and it is removed when the site is served on a custom domain (Office).
 
-- **Free**: the site is visible on the workspace subdomain with a small MyCompanyDesk badge.
-- **Starter and Pro**: the site is always visible; no badge on a custom domain, badge on the workspace subdomain.
+- **Desk**: the site is visible on the free `.mycompanydesk.site` address with a MyCompanyDesk badge.
+- **Office**: the site is always visible; no badge on a custom domain, but still on the free address.
 - **Uncertain state**: if the system cannot determine your plan, the site stays up rather than risking an accidental takedown.
 
 This gate applies to all public serving paths: the business page, the service-detail route, and the site builder's rendered pages. It is checked on every request, before any caching layer, so it stays accurate even if your subscription changes mid-cache.

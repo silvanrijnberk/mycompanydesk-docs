@@ -64,7 +64,7 @@ Laden Sie Ihre Daten pro Typ herunter:
 - **Ausgaben** als CSV, mit Kategorien und Beträgen
 
 ::: info
-CSV-Exporte sind ab dem **Starter**-Abonnement verfügbar. Die komplette JSON-Sicherung ist in jedem Abonnement verfügbar, einschließlich Gratis.
+CSV-Exporte von Rechnungen und Ausgaben gehören zu **Office**. Die komplette JSON-Sicherung und Ihre Kundenliste können Sie jederzeit herunterladen, in jedem Tarif, auch mit Desk.
 :::
 
 ### Komplette Sicherung

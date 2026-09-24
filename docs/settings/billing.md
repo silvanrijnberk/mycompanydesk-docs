@@ -1,7 +1,7 @@
 ---
 title: "Abonnement & betalingen"
-description: "Wat je ons betaalt, je facturen van ons en je betaalkaart, onder Instellingen, Je abonnement op /settings/abonnement."
-last_verified: 2026-08-05
+description: "Desk is gratis, Office kost 12,99 euro per maand excl. btw. Wat er in elk abonnement zit, je facturen van ons en opzeggen."
+last_verified: 2026-09-24
 ---
 
 # Abonnement & betalingen
@@ -14,130 +14,94 @@ Open **Instellingen** en dan **Je abonnement**, of ga direct naar `/settings/abo
 
 De oude URL's `/workspace/account/billing` en `/settings/billing` verwijzen door naar de nieuwe pagina; bladwijzers blijven werken en de queryparameter `?checkout=success|canceled` blijft behouden tijdens de doorverwijzing.
 
-## Bestaande afspraken
+## Abonnementen en prijzen
 
-Een klein aantal werkruimtes houdt Pro gratis op basis van eerdere afspraken. Die afspraken blijven gelden zolang MyCompanyDesk de dienst en de betreffende functionaliteit aanbiedt. Ze zijn gesloten en kunnen niet worden aangevraagd; nieuwe werkruimtes starten met de Pro-proefperiode van 60 dagen die hieronder staat beschreven.
+MyCompanyDesk heeft twee abonnementen: **Desk** en **Office**.
 
-Werkruimtes met zo'n afspraak zijn in alle opzichten gewone Pro-klanten: dezelfde functies, dezelfde limieten. Het enige verschil is de abonnementsbron die op de abonnementspagina staat.
+- **Desk** is gratis en blijft gratis. Je kunt ermee starten en erop blijven zolang je wilt.
+- **Office** kost **€ 12,99 per maand**, of **€ 129,90 per jaar** (twee maanden gratis).
 
-## Abonnementen
+Alle prijzen zijn exclusief 21% btw, die bij het afrekenen wordt toegevoegd. Als ondernemer vraag je die btw terug als voorbelasting.
 
-MyCompanyDesk heeft een Gratis-abonnement en twee betaalde abonnementen. Gratis is een zelfstandig product: je kunt ermee starten en het blijft beschikbaar zolang je wilt. Nieuwe klanten krijgen een Pro-proefperiode van 60 dagen; een werkruimte die niet overstapt, belandt op Gratis.
+### Introductieprijs voor het eerste jaar
 
-| Abonnement | Maandelijks | Jaarlijks | Omschrijving |
-|---|---|---|---|
-| **Gratis** | € 0,00 | € 0,00 | Onbeperkt factureren, offertes en uitgaven, plus je eigen website op mycompanydesk.site |
-| **Starter** | € 10,00 | € 100,00 | Alles om je werk te doen: facturen, offertes, uitgaven, uren en projecten, op je eigen pagina |
-| **Pro** | € 25,00 | € 250,00 | Laat je bedrijf groeien: eigen domein en website, zakelijke inbox, bankkoppeling, teamtoegang, API en meer |
+Heb je nog nooit een betaald abonnement gehad, dan kost Office het eerste jaar **€ 35,88** (€ 2,99 per maand) als je per jaar betaalt. Daarna betaal je het gewone jaartarief van € 129,90. De introductieprijs geldt alleen bij jaarbetaling, alleen voor het eerste jaar, en niet voor wie al eerder een betaald abonnement had. Kom je ervoor in aanmerking, dan staat de abonnementspagina meteen op **Jaarlijks** en zie je "Eerste jaar € 2,99 per maand".
 
-Alle prijzen zijn exclusief 21% btw, die bij het afrekenen wordt toegevoegd. De app toont prijzen als "excl. btw"; als ondernemer vorder je deze btw terug als voorbelasting. De jaarprijs staat gelijk aan tien maandbetalingen, dus jaarlijks betalen geeft je twee maanden gratis.
+### Proefperiode
 
-Pro is het uitgelichte (aanbevolen) abonnement in de kiezer. Gratis staat op de prijzenpagina en in het aanmeldproces naast de betaalde abonnementen.
+Elke nieuwe werkruimte krijgt 60 dagen Office gratis, zonder creditcard. Je ziet dan "Je hebt een gratis Office-proefperiode" met het aantal dagen dat nog over is. Wil je Office houden, klik dan op **Office houden**. Doe je niets, dan ga je na de proefperiode automatisch verder op Desk. Je gegevens blijven gewoon staan.
 
-### Wat elk abonnement bevat
+### Wat zit in Desk en wat in Office?
 
-Functies met verbruikslimieten (maandelijkse limieten, tenzij anders aangegeven):
+| Functie | Desk (gratis) | Office |
+|---|---|---|
+| Facturen, offertes en uitgaven | onbeperkt | onbeperkt |
+| Projecten en urenregistratie | ja | ja |
+| PDF-export, bijlagen, eigen huisstijl | ja | ja |
+| Website op je eigen `.mycompanydesk.site`-adres | ja | ja |
+| Website op je eigen domein (maximaal 5 domeinen) | nee | ja |
+| Zakelijke inbox op je eigen domein | nee, alleen lezen en beantwoorden | ja |
+| Terugkerende facturen en uitgaven | nee | ja |
+| Automatische betalingsherinneringen | nee | ja |
+| Contracten | nee | ja |
+| Bankkoppelingen | nee | maximaal 3 |
+| Digitale btw-aangifte | nee | ja |
+| Automatisch aanleveren bij je boekhouder | nee | ja |
+| Peppol e-facturatie | nee | ja |
+| Nieuwsbrief | nee | ja |
+| CSV/Excel-export van facturen en uitgaven | nee | ja |
+| Teamleden uitnodigen | nee, alleen jij | onbeperkt |
+| Meerdere eigen bedrijven | nee | maximaal 10 |
+| API-toegang en webhooks | nee | ja |
+| Geavanceerde rapporten en AI-inzichten | nee | ja |
+| Geen "Gemaakt met MyCompanyDesk" op betaalpagina, ondertekenpagina en e-mails | nee | ja |
+| Prioriteitsondersteuning | nee | ja |
 
-| Meting | Gratis | Starter | Pro |
-|---|---|---|---|
-| Facturen aangemaakt | onbeperkt | onbeperkt | onbeperkt |
-| Uitgaven aangemaakt | onbeperkt | onbeperkt | onbeperkt |
-| Offertes aangemaakt | onbeperkt | onbeperkt | onbeperkt |
-| Opslag | 100 MB | 2 GB | onbeperkt |
-| Mensen met toegang | alleen jij | alleen jij | onbeperkt |
-| Eigen domeinen | 0 | 0 | 5 |
-| AI-chatberichten (maandelijks) | 10 | 100 | 1 000 |
-| AI-bonscans (maandelijks) | 3 | 30 | 200 |
-| AI-suggesties (maandelijks) | 10 | 200 | 2 000 |
-| Bankkoppelingen | 0 | 0 | 3 |
+Limieten per maand:
 
-Let op: AI-limieten zijn maandelijks, niet dagelijks. Ze worden gereset op de eerste van elke kalendermaand.
+| Meting | Desk | Office |
+|---|---|---|
+| AI-chatberichten | 10 | 1 000 |
+| Bonnen scannen met AI | 3 | 200 |
+| AI-suggesties | 10 | 2 000 |
+| Opslag | 100 MB | onbeperkt |
+| Verzonden mail vanuit de inbox | - | 15 000 |
+| Ontvangen mail in de inbox | - | 20 000 |
 
-Factureren op Gratis is onbeperkt: geen maandlimiet en geen levenslang plafond. Facturen die je al hebt aangemaakt, blijven altijd zichtbaar en exporteerbaar.
+AI-limieten zijn maandelijks en worden op de eerste van elke kalendermaand gereset. Facturen die je al hebt gemaakt, blijven altijd zichtbaar en exporteerbaar, ook op Desk.
 
-Functies per abonnement:
+Toegang voor je boekhouder is gratis op elk abonnement en telt niet mee als teamlid.
 
-| Functie | Gratis | Starter | Pro |
-|---|---|---|---|
-| Facturen, uitgaven, offertes, bijlagen | ja | ja | ja |
-| PDF-export | ja | ja | ja |
-| CSV/Excel-export | nee | ja | ja |
-| Bonnen scannen (met bovenstaande maandlimieten) | ja | ja | ja |
-| Assistent-chat | ja | ja | ja |
-| AI-inzichten | ja | ja | ja |
-| Realtime uitgavenclassificatie | ja | ja | ja |
-| Contracten | nee | ja | ja |
-| Projecten | nee | ja | ja |
-| Verhuurpanden * | nee | ja | ja |
-| Terugkerende facturen en uitgaven | nee | ja | ja |
-| Urenregistratie | nee | ja | ja |
-| Eigen huisstijl | ja | ja | ja |
-| Taalopties | nee | ja | ja |
-| Omschrijvingsverrijking | nee | ja | ja |
-| Openbare bedrijfspagina | ja | ja | ja |
-| Bedrijfssubdomein en stijlpresets | ja | ja | ja |
-| Teamtoegang (onbeperkt aantal mensen) | nee | nee | ja |
-| Facturen en offertes zonder MyCompanyDesk-vermelding | ja | ja | ja |
-| Geavanceerde rapporten | nee | nee | ja |
-| Eigen domein, domeinroutering, volledige website op je domein | nee | nee | ja |
-| Zakelijke inbox | nee | nee | ja |
-| Nieuwsbrief | nee | nee | ja |
-| Privacymodus | nee | nee | ja |
-| API-toegang en webhooks | nee | nee | ja |
-| Geavanceerde rechten | nee | nee | ja |
-| Prioriteitsondersteuning | nee | nee | ja |
-| Bankkoppelingen (maximaal 3) | nee | nee | ja |
-| Peppol e-facturatie | nee | nee | ja |
+### Je website op Desk
 
-\* De verhuurpandenmodule wordt momenteel alleen getoond aan werkruimtes die deze al gebruiken.
+Je website blijft op elk abonnement online. Op Desk staat hij op je gratis `.mycompanydesk.site`-adres met een klein "Gemaakt met MyCompanyDesk"-badge. Op een eigen domein (Office) staat dat badge er niet.
 
-Toegang voor je boekhouder is gratis op elk abonnement en telt niet mee als teamtoegang.
+### Als Office stopt
 
-### Limieten zakelijke inbox
+Stopt je Office-abonnement, dan toont de app een melding en krijg je een e-mail ("Office is gestopt"), zowel bij een mislukte betaling als bij een opzegging. Na een mislukte betaling kun je meteen opnieuw abonneren.
 
-De zakelijke inbox is een Pro-functie. Op Pro kun je per maand tot 15 000 e-mails versturen en tot 20 000 e-mails ontvangen; er is geen limiet op het aantal mailboxen.
-
-### Openbare site: beschikbaarheid
-
-Als een werkruimte naar Gratis vervalt, blijven de openbare website en sitebouwer online. Gratis sites tonen een klein MyCompanyDesk-badge op het werkruimte-subdomeinadres; de enige manier om de badge te verwijderen is de site verhuizen naar een eigen domein (Pro). De controle gebeurt bij elk verzoek, voor de cache, zodat abonnementswijzigingen meteen zichtbaar zijn.
-
-### Als een betaald abonnement stopt
-
-Een betaald abonnement stopt nooit meer in stilte. Zodra het stopt, toont de app een melding en verstuurt ze een e-mail (met als kop "Office is gestopt"), in twee varianten: één bij een mislukte betaling en één bij een opzegging die je zelf vroeg. Na een mislukte betaling kun je meteen weer abonneren; de checkout stuurt je niet langer door naar het Stripe-portaal voor een abonnement dat er niet meer is.
-
-Je eigen domein blijft na het aflopen van het abonnement zichtbaar op de Domeinen-pagina: naam, status en verhuiscode blijven leesbaar, met een upgrade-aanwijzing ernaast, want domeininstellingen veranderen kan pas weer met het betaalde abonnement.
-
-### Teamtoegang
-
-Teamtoegang is inbegrepen in Pro zonder kosten per persoon: nodig zoveel meewerkende gebruikers uit als je wilt. Er zijn geen stoelprijzen en geen add-ons per stoel. Op Gratis en Starter werk je alleen, al kan je boekhouder altijd gratis toegang krijgen.
+Op Desk werken de Office-functies niet meer: er worden geen nieuwe terugkerende facturen of uitgaven gemaakt, je bankkoppeling importeert niet meer en je inbox op je eigen domein verstuurt en ontvangt geen mail. Je gegevens blijven staan. Je eigen domein blijft zichtbaar op de domeinpagina, met naam, status en verhuiscode, maar instellingen wijzigen kan pas weer met Office.
 
 ### Extra bedrijven
 
-Je abonnement dekt je hoofdwerkruimte. Elk extra bedrijf dat je toevoegt, wordt tegen de prijs afgerekend die vooraf wordt getoond.
+Je abonnement dekt je eerste bedrijf. Met Office kun je extra eigen bedrijven toevoegen voor € 5,99 per maand of € 59,90 per jaar per bedrijf (excl. btw). De app toont de prijs voordat je bevestigt. Je kunt een bedrijf op elk moment deactiveren; dan telt het niet meer mee, maar blijft het leesbaar en exporteerbaar voor de wettelijke bewaartermijn.
 
-Als je werkruimte een betaald abonnement heeft (Starter of Pro), begint het extra bedrijf met een eigen Pro-proefperiode. Tijdens de proefperiode kost het niets; daarna wordt het tegen het getoonde tarief op je abonnement gezet.
+### Bestaande afspraken
 
-Als je werkruimte gratis Office heeft via een regeling zoals een gunst of founding-member-plan, is er geen abonnement om het extra bedrijf aan vast te maken. Je koopt het daarom via een aparte add-on-only checkout. Je eerste bedrijf blijft gratis; alleen het extra bedrijf wordt gefactureerd. Je kunt een bedrijf op elk moment deactiveren; dan telt het niet meer mee voor je abonnement of add-on, terwijl het leesbaar en exporteerbaar blijft voor de wettelijke bewaartermijn.
+Een beperkt aantal werkruimtes houdt Office gratis op basis van eerdere afspraken. Die afspraken zijn gesloten en kunnen niet meer worden aangevraagd. Deze werkruimtes hebben dezelfde functies en limieten als elke andere Office-klant.
 
-## Stripe-portaal
+## Betalen, facturen en opzeggen
 
-De knop **Abonnement beheren** (zichtbaar wanneer de werkruimte een actieve periode of niet-Gratis-abonnement heeft) opent een eenmalige Stripe Customer Portal-sessie. Vanuit het portaal kun je:
+Je betaalt via Stripe. Met de knop **Facturatie beheren** op **Instellingen** → **Je abonnement** open je het betaalportaal. Daar kun je:
 
-- Betaalmethode bijwerken
-- Facturen en bonnetjes downloaden
-- Factureringsadres wijzigen
-- Abonnement opzeggen
+- je betaalmethode bijwerken;
+- je facturen en bonnetjes van ons downloaden;
+- je factuuradres wijzigen;
+- je abonnement opzeggen.
 
-Opzeggen gaat in aan het einde van de huidige betaalde periode; je behoudt toegang tot die tijd.
+Opzeggen kan ook via **Instellingen** → **Account opzeggen** → **Abonnement opzeggen**. Je opzegging gaat in aan het eind van de betaalde periode; tot dan houd je Office. Daarna ga je verder op Desk. Je account verwijderen is een aparte stap op dezelfde pagina.
 
-## Betaalflow
-
-1. Klik op **Upgraden** op een abonnementstegel
-2. Je komt op een Stripe Checkout-pagina
-3. Stripe stuurt je terug met `?checkout=success` of `?checkout=canceled`
-4. De pagina toont een succes- of annuleringsbanner; vergrendelde UI wordt meteen ontgrendeld
-
-Bij een upgrade naar Pro krijgt de succesbanner het violette Pro-accent en een kroonicoontje ("Welkom bij Pro") in plaats van de standaard groene bevestiging. Dezelfde Pro-styling zie je op meer plekken in de app: een violette ring om je avatar, een kroonicoontje in de planbadge en "Pro feature"-pills op Pro-instellingen zoals API-sleutels en Inbox. Daarnaast krijgt de contextuele gids-assistent een premium violet uiterlijk: de "AI"-pill wordt een "Pro"-pill, de paneelrand en verzendknop krijgen het Pro-accent en de statusregel verandert naar "Jouw Pro-assistent staat klaar."
+Upgraden doe je met **Upgraden** op de abonnementspagina. Je rekent af bij Stripe en komt daarna terug in de app, waar de Office-functies meteen openstaan.
 
 ## Contextuele upgrade-banner
 
@@ -145,6 +109,7 @@ Wanneer je vanuit een vergrendelde functie op de abonnementspagina terechtkomt, 
 
 ## Zie ook
 
-- [Bedrijfsgegevens](/settings/company) -- de openbare bedrijfspagina en eigen domeinen beheer je hier
-- [E-mail](/settings/email) -- de zakelijke inbox vereist Pro
-- [Team](/settings/team) -- teamtoegang vereist Pro
+- [Bedrijfsgegevens](/settings/company): je bedrijfsgegevens en huisstijl
+- [E-mail](/settings/email): de zakelijke inbox hoort bij Office
+- [Team](/settings/team): teamleden uitnodigen hoort bij Office
+- [Abonnementen en prijzen](/faq/plans)

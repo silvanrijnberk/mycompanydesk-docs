@@ -80,7 +80,7 @@ Laat AI automatisch uitgavegegevens uit bonnen extraheren:
 5. Bevestig om de uitgave(n) aan te maken
 
 ::: info
-Bonnen scannen vereist het **Pro**-abonnement of hoger. Het BTW-tarief op een nieuwe uitgave begint bij je standaard werkruimte-instelling.
+Bonnen scannen kan op elk abonnement: 3 scans per maand op Desk en 200 op Office. Het BTW-tarief op een nieuwe uitgave begint bij je standaard werkruimte-instelling.
 :::
 
 ### Vergrendelde BTW-periodes

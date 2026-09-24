@@ -49,7 +49,7 @@ Der Assistent fragt nach der IBAN, auf die Kunden überweisen. Sie können jetzt
 
 ## Schritt 4: Einrichtung abschließen
 
-Der letzte Schritt bestätigt Ihre 60-tägige Pro-Testphase, kostenlos und ohne Kreditkarte, und wendet alles an. Vom Abschlussbildschirm aus werden auch optionale nächste Schritte angeboten, etwa das Einrichten einer Website. Eine Website einzurichten ist optional, außer wenn Sie über die KVK-Suche auf der Landing-Page gestartet sind: In diesem Fall wurde bereits eine thematische Website erstellt, die im Website-Editor auf Sie wartet.
+Der letzte Schritt bestätigt Ihre 60-tägige Office-Testphase, kostenlos und ohne Kreditkarte, und wendet alles an. Vom Abschlussbildschirm aus werden auch optionale nächste Schritte angeboten, etwa das Einrichten einer Website. Eine Website einzurichten ist optional, außer wenn Sie über die KVK-Suche auf der Landing-Page gestartet sind: In diesem Fall wurde bereits eine thematische Website erstellt, die im Website-Editor auf Sie wartet.
 
 Klicken Sie auf **Einrichtung abschließen** und der Assistent wendet Ihre Unternehmensdaten, USt.-Status, IBAN und Standardeinstellungen an und bringt Sie zu Ihrem Dashboard.
 

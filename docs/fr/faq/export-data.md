@@ -14,4 +14,4 @@ Pour exporter des données :
 2. Téléchargez-y les exports CSV des factures, des clients et des dépenses, ou la sauvegarde complète
 3. Utilisez les exports au niveau des sections dans Factures, Dépenses ou Rapports lorsque vous n'avez besoin que d'un seul jeu de données
 
-Les exports CSV sont disponibles à partir du plan Starter. Choisissez l'export qui correspond à la page ou au jeu d'enregistrements dont vous avez besoin.
+Les exports CSV des factures et des dépenses font partie d'Office ; votre liste de clients et la sauvegarde complète s'exportent avec toutes les formules. Choisissez l'export qui correspond à la page ou au jeu d'enregistrements dont vous avez besoin.

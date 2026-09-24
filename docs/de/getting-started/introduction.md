@@ -28,26 +28,22 @@ Rechnungen, Angebote und E-Mails können ebenfalls auf Niederländisch, Englisch
 
 ## Tarife
 
-MyCompanyDesk hat einen Gratis-Tarif und zwei kostenpflichtige Tarife: Starter und Pro. Neue Kunden erhalten eine 60-tägige Pro-Testphase; wer nicht umsteigt, bleibt auf Gratis.
+MyCompanyDesk hat zwei Tarife: **Desk** (kostenlos) und **Office** (12,99 € pro Monat oder 129,90 € pro Jahr, zzgl. MwSt.). Neue Kunden erhalten 60 Tage Office kostenlos; wer nicht umsteigt, macht mit Desk weiter. Siehe [Tarife und Preise](/de/faq/plans).
 
-| Funktion | Gratis | Starter | Pro |
-|---|---|---|---|
-| Rechnungen | Unbegrenzt | Unbegrenzt | Unbegrenzt |
-| Angebote | Unbegrenzt | Unbegrenzt | Unbegrenzt |
-| Ausgabenverfolgung | Unbegrenzt | Unbegrenzt | Unbegrenzt |
-| Belegscanner | Ja (3 Scans/Monat) | Ja (30 Scans/Monat) | Ja (200 Scans/Monat) |
-| KI-Vorschläge | Ja | Ja | Ja |
-| Individuelles Branding | Ja | Ja | Ja |
-| Zeiterfassung, Sprachwerkzeuge | - | Ja | Ja |
-| Öffentliche Unternehmensseite | Ja | Ja | Ja |
-| Verträge und Projekte | - | Ja | Ja |
-| Berichte und CSV/Excel-Export | - | Ja | Ja |
-| Teamzugang | Nur Sie | Nur Sie | Unbegrenzt viele Personen |
-| Geschäftliche Mailbox auf Ihrer Domain | - | - | Ja |
-| Bankverbindungen | - | - | Bis zu 3 |
-| Multi-Domain, eigene Domain-Routing | - | - | Ja |
-| Erweiterte Berichte, Prioritäts-Support | - | - | Ja |
-| API-Zugang, Webhooks | - | - | Ja |
+| Funktion | Desk | Office |
+|---|---|---|
+| Rechnungen, Angebote und Ausgaben | Unbegrenzt | Unbegrenzt |
+| Projekte und Zeiterfassung | Ja | Ja |
+| Belegscanner | 3 pro Monat | 200 pro Monat |
+| Individuelles Branding | Ja | Ja |
+| Website unter einer kostenlosen `.mycompanydesk.site`-Adresse | Ja | Ja |
+| Website und geschäftliche Mail auf Ihrer eigenen Domain | - | Ja |
+| Wiederkehrende Rechnungen, Verträge | - | Ja |
+| CSV/Excel-Export von Rechnungen und Ausgaben | - | Ja |
+| Teamzugang | Nur Sie | Unbegrenzt viele Personen |
+| Bankverbindungen | - | Bis zu 3 |
+| Erweiterte Berichte, Prioritäts-Support | - | Ja |
+| API-Zugang, Webhooks | - | Ja |
 
 ## Hilfe erhalten
 

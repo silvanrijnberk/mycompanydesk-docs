@@ -28,26 +28,22 @@ Invoices, quotes, and emails can also be sent in Dutch, English, German, or Fren
 
 ## Plans
 
-MyCompanyDesk has a Free plan and two paid plans: Starter and Pro. New customers get a 60-day Pro trial, and a workspace that does not convert continues on Free.
+MyCompanyDesk has two plans: **Desk** (free) and **Office** (€12.99 per month or €129.90 per year, excl. VAT). New customers get 60 days of Office for free; if you do not switch, you continue on Desk. See [Plans and pricing](/en/faq/plans).
 
-| Feature | Free | Starter | Pro |
-|---|---|---|---|
-| Invoices | Unlimited | Unlimited | Unlimited |
-| Quotes | Unlimited | Unlimited | Unlimited |
-| Expense tracking | Unlimited | Unlimited | Unlimited |
-| Receipt scanning | Yes (3 scans/month) | Yes (30 scans/month) | Yes (200 scans/month) |
-| AI suggestions | Yes | Yes | Yes |
-| Custom branding | Yes | Yes | Yes |
-| Time registration, language tools | - | Yes | Yes |
-| Public business page | Yes | Yes | Yes |
-| Contracts and projects | - | Yes | Yes |
-| Reports and CSV/Excel exports | - | Yes | Yes |
-| Team access | Just you | Just you | Unlimited people |
-| Business mailbox on your domain | - | - | Yes |
-| Bank connections | - | - | Up to 3 |
-| Multi-domain, custom domain routing | - | - | Yes |
-| Advanced reports, priority support | - | - | Yes |
-| API access, webhooks | - | - | Yes |
+| Feature | Desk | Office |
+|---|---|---|
+| Invoices, quotes and expenses | Unlimited | Unlimited |
+| Projects and time registration | Yes | Yes |
+| Receipt scanning | 3 per month | 200 per month |
+| Custom branding | Yes | Yes |
+| Website on a free `.mycompanydesk.site` address | Yes | Yes |
+| Website and business email on your own domain | - | Yes |
+| Recurring invoices, contracts | - | Yes |
+| CSV/Excel export of invoices and expenses | - | Yes |
+| Team access | Just you | Unlimited people |
+| Bank connections | - | Up to 3 |
+| Advanced reports, priority support | - | Yes |
+| API access, webhooks | - | Yes |
 
 ## Getting help
 

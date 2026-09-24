@@ -130,7 +130,7 @@ Importeer je bestaande klantendatabase vanuit CSV:
 
 ## Klanten exporteren
 
-Exporteer je klantenlijst als CSV vanaf de klantenpagina (Pro-abonnement en hoger).
+Exporteer je klantenlijst als CSV vanaf de klantenpagina, op elk abonnement.
 
 ## Weggebleven klanten
 

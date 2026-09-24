@@ -1,6 +1,6 @@
 ---
 title: Intégration API
-description: "Accédez à vos factures, dépenses et clients par l'API REST avec un en-tête X-API-Key. L'accès API fait partie de l'abonnement Pro."
+description: "Accédez à vos factures, dépenses et clients par l'API REST avec un en-tête X-API-Key. L'accès API fait partie de l'abonnement Office."
 ---
 
 # Intégration API
@@ -8,7 +8,7 @@ description: "Accédez à vos factures, dépenses et clients par l'API REST avec
 Accédez à vos données MyCompanyDesk de manière programmatique via l'API REST.
 
 ::: info
-L'accès API fait partie du plan **Pro**.
+L'accès API fait partie de l'abonnement **Office**.
 :::
 
 ## Vue d'ensemble

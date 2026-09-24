@@ -37,7 +37,7 @@ L'accès comptable peut commencer de deux façons : vous invitez votre comptable
 3. Envoyez l'invitation quand vous voulez que votre comptable crée un compte
 4. Ouvrez « Gérer l'accès » pour définir les permissions de page
 
-L'accès comptable est gratuit sur tous les plans ; il ne nécessite ni Pro ni place d'équipe. Les statuts courants sont contact seul, invité, actif et révoqué.
+L'accès comptable est gratuit sur tous les plans ; il ne nécessite ni Office ni place d'équipe. Les statuts courants sont contact seul, invité, actif et révoqué.
 
 ## Votre comptable vous invite
 

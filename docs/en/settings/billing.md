@@ -1,7 +1,7 @@
 ---
 title: "Plan & payments"
-description: "What you pay us, your invoices from us and your payment card, on Settings, Je abonnement at /settings/abonnement."
-last_verified: 2026-08-05
+description: "Desk is free, Office costs 12.99 euros per month excl. VAT. What each plan includes, your invoices from us and how to cancel."
+last_verified: 2026-09-24
 ---
 
 # Plan & payments
@@ -10,141 +10,106 @@ What you pay us, your invoices from us, and your payment card.
 
 ## Where to find it
 
-Open **Settings**, then **Je abonnement**, or navigate directly to `/settings/abonnement`.
+Open **Settings**, then **Your subscription**, or navigate directly to `/settings/abonnement`.
 
 The old `/workspace/account/billing` and `/settings/billing` URLs redirect to the new page; bookmarks still work and the `?checkout=success|canceled` query parameter is preserved across the redirect.
 
-## Legacy arrangements
+## Plans and prices
 
-A small number of legacy workspaces retain free Pro under earlier arrangements. These are honoured for as long as MyCompanyDesk offers the service and the relevant feature. They are closed and cannot be requested; new workspaces start on the 60-day Pro trial described below.
+MyCompanyDesk has two plans: **Desk** and **Office**.
 
-Workspaces on such an arrangement are regular Pro customers in every respect: same features, same limits. The only difference is the subscription source shown in billing.
+- **Desk** is free and stays free. You can start on it and stay on it for as long as you like.
+- **Office** costs **€12.99 per month**, or **€129.90 per year** (two months free).
 
-## Plans
+All prices exclude 21% VAT, which is added at checkout. As a business you reclaim that VAT as input tax.
 
-MyCompanyDesk has a Free plan plus two paid plans. Free is a product in its own right, offered at signup and kept indefinitely. New customers get a 60-day Pro trial, and a workspace that does not convert lands on Free rather than being locked out.
+### Intro price for the first year
 
-| Plan | Monthly | Yearly | Description |
-|---|---|---|---|
-| **Free** | €0.00 | €0.00 | Unlimited invoicing, quotes and expenses, plus your own website on mycompanydesk.site |
-| **Starter** | €10.00 | €100.00 | Everything to do your work: invoices, quotes, expenses, hours and projects, on your own page |
-| **Pro** | €25.00 | €250.00 | Grow your business: own domain and website, business inbox, bank connection, team access, API and more |
+If you have never had a paid subscription, Office costs **€35.88** for the first year (€2.99 per month) when you pay yearly. After that you pay the regular yearly price of €129.90. The intro price applies only to yearly billing, only for the first year, and not if you had a paid subscription before. If you qualify, the subscription page opens on **Yearly** straight away and shows "First year €2.99 per month".
 
-All prices exclude 21% Dutch VAT, which is added at checkout. The app labels prices "excl. btw"; as a business you reclaim this VAT as input tax. The yearly price equals ten monthly payments, so paying yearly gives you two months free.
+### Trial
 
-Pro is the highlighted (recommended) plan in the picker. Free appears on the pricing page and in the signup flow alongside the paid plans.
+Every new workspace gets 60 days of Office for free, no credit card needed. During the trial a banner shows your free Office trial and how many days are left. To keep Office, click **Keep Office**. If you do nothing, you continue on Desk automatically when the trial ends. Your data stays where it is.
 
-### What each plan includes
+### What is in Desk and what is in Office?
 
-Quota-limited features (monthly caps, except where noted):
+| Feature | Desk (free) | Office |
+|---|---|---|
+| Invoices, quotes and expenses | unlimited | unlimited |
+| Projects and time registration | yes | yes |
+| PDF export, attachments, custom branding | yes | yes |
+| Website on your own `.mycompanydesk.site` address | yes | yes |
+| Website on your own domain (up to 5 domains) | no | yes |
+| Business inbox on your own domain | no, read and reply only | yes |
+| Recurring invoices and expenses | no | yes |
+| Automatic payment reminders | no | yes |
+| Contracts | no | yes |
+| Bank connections | no | up to 3 |
+| Digital VAT return | no | yes |
+| Automatic delivery to your accountant | no | yes |
+| Peppol e-invoicing | no | yes |
+| Newsletter | no | yes |
+| CSV/Excel export of invoices and expenses | no | yes |
+| Invite team members | no, just you | unlimited |
+| Multiple businesses of your own | no | up to 10 |
+| API access and webhooks | no | yes |
+| Advanced reports and AI insights | no | yes |
+| No "Made with MyCompanyDesk" on the payment page, signing page and emails | no | yes |
+| Priority support | no | yes |
 
-| Metric | Free | Starter | Pro |
-|---|---|---|---|
-| Invoices created | unlimited | unlimited | unlimited |
-| Expenses created | unlimited | unlimited | unlimited |
-| Quotes created | unlimited | unlimited | unlimited |
-| Storage | 100 MB | 2 GB | unlimited |
-| People with access | just you | just you | unlimited |
-| Custom domains | 0 | 0 | 5 |
-| AI chat messages (monthly) | 10 | 100 | 1 000 |
-| AI receipt scans (monthly) | 3 | 30 | 200 |
-| AI suggestions (monthly) | 10 | 200 | 2 000 |
-| Bank connections | 0 | 0 | 3 |
+Monthly limits:
 
-Note: AI caps are monthly, not daily. They reset on the first of each calendar month.
+| Metric | Desk | Office |
+|---|---|---|
+| AI chat messages | 10 | 1 000 |
+| AI receipt scans | 3 | 200 |
+| AI suggestions | 10 | 2 000 |
+| Storage | 100 MB | unlimited |
+| Mail sent from the inbox | - | 15 000 |
+| Mail received in the inbox | - | 20 000 |
 
-Free invoicing is unlimited: there is no monthly cap and no lifetime allowance. Existing invoices always stay viewable and exportable.
+AI limits are monthly and reset on the first of each calendar month. Invoices you have already created always stay viewable and exportable, on Desk too.
 
-Features unlocked per plan:
+Access for your accountant is free on every plan and does not count as a team member.
 
-| Feature | Free | Starter | Pro |
-|---|---|---|---|
-| Invoices, expenses, quotes, attachments | yes | yes | yes |
-| PDF exports | yes | yes | yes |
-| CSV/Excel exports | no | yes | yes |
-| Receipt scanning (with the monthly caps above) | yes | yes | yes |
-| Assistant chat | yes | yes | yes |
-| AI insights | yes | yes | yes |
-| Real-time expense classification | yes | yes | yes |
-| Contracts | no | yes | yes |
-| Projects | no | yes | yes |
-| Rental properties * | no | yes | yes |
-| Recurring invoices and expenses | no | yes | yes |
-| Time registration | no | yes | yes |
-| Custom branding | yes | yes | yes |
-| Language tools | no | yes | yes |
-| Description enrichment | no | yes | yes |
-| Public business page | yes | yes | yes |
-| Company subdomain and style presets | yes | yes | yes |
-| Team access (unlimited people) | no | no | yes |
-| Clean invoices and quotes sent to your clients | yes | yes | yes |
-| Advanced reports | no | no | yes |
-| Custom domain, domain routing, full website on your domain | no | no | yes |
-| Business inbox | no | no | yes |
-| Newsletter | no | no | yes |
-| Privacy mode | no | no | yes |
-| API access and webhooks | no | no | yes |
-| Advanced permissions | no | no | yes |
-| Priority support | no | no | yes |
-| Bank connections (up to 3) | no | no | yes |
-| Peppol e-invoicing | no | no | yes |
+### Your website on Desk
 
-\* The rental properties module is currently only shown to workspaces that already use it.
+Your website stays online on every plan. On Desk it lives on your free `.mycompanydesk.site` address with a small "Made with MyCompanyDesk" badge. On your own domain (Office) the badge is not shown.
 
-Accountant (boekhouder) access is free on every plan and does not count as team access.
+### When Office stops
 
-### Business inbox limits
+When your Office subscription stops, the app shows a notification and you get an email ("Office has stopped"), both after a failed payment and after a cancellation. After a failed payment you can subscribe again right away.
 
-The business inbox is a Pro feature. On Pro you can send up to 15 000 and receive up to 20 000 emails per month; there is no cap on the number of mailboxes.
-
-### Public-site availability
-
-When a workspace lapses to Free, its public website and site-builder pages remain online. Free sites carry a small MyCompanyDesk badge on the workspace subdomain address; the only way to remove the badge is to move the site to a custom domain (Pro). The gate runs on every request, before any caching, so subscription changes take effect immediately.
-
-### When a paid subscription ends
-
-A paid subscription never stops silently. When it ends, the app shows a notification and sends an email (its wording is "Office has stopped"), in two variants: one for a failed payment, one for a cancellation you asked for yourself. You can subscribe again right away after a failed payment; checkout no longer routes you to the Stripe portal for a subscription that no longer exists.
-
-Your own domain stays visible on the Domains page after the plan ends: name, status and transfer code remain readable, with an upgrade prompt next to them, because changing domain settings needs the paid subscription again.
-
-### Team access
-
-Team access is included in Pro with no per-person charge: invite as many working users as you want. There is no seat pricing and no per-seat add-on. On Free and Starter you work alone, though your accountant can always be given free access.
+On Desk the Office features stop working: no new recurring invoices or expenses are created, your bank connection stops importing, and your inbox on your own domain no longer sends or receives mail. Your data stays where it is. Your own domain stays visible on the domains page, with its name, status and transfer code, but changing its settings needs Office again.
 
 ### Extra businesses
 
-Your subscription covers your home workspace. Each additional business you add is billed at the price shown before you confirm.
+Your subscription covers your first business. With Office you can add extra businesses of your own for €5.99 per month or €59.90 per year per business (excl. VAT). The app shows the price before you confirm. You can deactivate a business at any time; it then stops counting, but stays readable and exportable for the statutory retention period.
 
-If your workspace is on a paid plan (Starter or Pro), the extra business starts on its own Pro trial. During the trial it costs nothing; after the trial it is added to your subscription at the displayed price.
+### Existing arrangements
 
-If your workspace holds free Office under an arrangement like a comped or founding-member plan, there is no plan subscription to attach the extra business to, so you buy it through a separate add-on-only checkout. The first business stays free; only the extra business is billed. You can deactivate a business at any time; it then stops counting toward your subscription or add-on while remaining readable and exportable for the statutory retention period.
+A limited number of workspaces keep Office for free under earlier arrangements. These arrangements are closed and can no longer be requested. These workspaces have the same features and limits as any other Office customer.
 
-## Stripe portal
+## Paying, invoices and cancelling
 
-The **Manage subscription** button (visible whenever the workspace has an active period or non-Free plan) opens a one-shot Stripe Customer Portal session. From the portal you can:
+You pay through Stripe. The **Manage billing** button on **Settings** → **Your subscription** opens the billing portal. There you can:
 
-- Update payment method
-- Download invoices and receipts
-- Change billing address
-- Cancel the subscription
+- update your payment method;
+- download your invoices and receipts from us;
+- change your billing address;
+- cancel your subscription.
 
-Cancellation takes effect at the end of the current paid period; access remains until then.
+You can also cancel via **Settings** → **Cancel account** → **Cancel subscription**. Your cancellation takes effect at the end of the paid period; until then you keep Office. After that you continue on Desk. Deleting your account is a separate step on the same page.
 
-## Checkout flow
-
-1. Click **Upgrade** on a plan tile
-2. You are taken to a Stripe Checkout page
-3. Stripe redirects back with `?checkout=success` or `?checkout=canceled`
-4. The page shows a success or cancel banner; gated UI unlocks immediately
-
-When upgrading to Pro, the success banner uses the Pro violet accent and a crown icon ("Welcome to Pro") instead of the standard green confirmation. The same Pro styling appears throughout the app: a violet ring around the user avatar, a crown icon in the plan badge ribbon, and "Pro feature" pills on gated settings pages like API Keys and Inbox. Additionally, the contextual guide assistant gets a premium violet skin: the "AI" pill becomes a "Pro" pill, the panel border and send button adopt the Pro accent, and the status line changes to "Your Pro assistant is ready."
+To upgrade, click **Upgrade** on the subscription page. You check out with Stripe and then return to the app, where the Office features are unlocked right away.
 
 ## Contextual upgrade banner
 
-When you land on the billing page from a gated feature, the page shows a "you came here for X, here's what unlocks it" banner above the plan grid instead of a generic plans pitch.
+When you land on the billing page from a gated feature, the page shows a "you came here for X, here's what unlocks it" banner instead of a generic plans pitch.
 
 ## Related
 
-- [Company Settings](/en/settings/company) -- the public business page and custom domains are managed here
-- [Email](/en/settings/email) -- the business inbox requires Pro
-- [Team](/en/settings/team) -- team access requires Pro
+- [Company Settings](/en/settings/company): your company details and branding
+- [Email](/en/settings/email): the business inbox is part of Office
+- [Team](/en/settings/team): inviting team members is part of Office
+- [Plans and pricing](/en/faq/plans)

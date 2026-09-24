@@ -66,7 +66,7 @@ Laissez l'IA extraire automatiquement les détails de vos reçus :
 5. Confirmez pour créer la ou les dépenses
 
 ::: info
-La numerisation de recus necessite le plan **Pro** ou superieur. Le taux de TVA d'une nouvelle depense commence par votre reglage d'espace de travail par defaut.
+La numérisation de reçus est possible avec toutes les formules : 3 scans par mois sur Desk et 200 sur Office. Le taux de TVA d'une nouvelle depense commence par votre reglage d'espace de travail par defaut.
 :::
 
 Si un e-mail transféré ou un scan crée une dépense mais que le reçu ne peut pas être joint (par exemple un type de fichier non pris en charge ou un fichier trop volumineux), la dépense est quand même créée et un message indique que la pièce jointe est manquante. Ajoutez ensuite le reçu manuellement sur la page de détail de la dépense.

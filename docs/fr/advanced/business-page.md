@@ -13,7 +13,7 @@ Construisez votre site web professionnel avec un editeur par glisser-deposer. Cr
 Le constructeur de site remplace l'ancien profil d'entreprise a page unique. Chaque nouvel espace de travail commence avec un site standard de 4 pages (Accueil, Services, A propos, Contact), vous offrant une vraie fondation multi-pages des le premier jour. L'editeur vous donne :
 
 - **Pages multiples**: Creez autant de pages que necessaire, chacune avec son propre chemin et ses propres sections. Les quatre pages par defaut sont pretes a etre modifiees, supprimees ou completees.
-- **Selecteur de domaine**: Lorsque votre espace de travail possede plusieurs domaines personnalises (abonnement Pro), un menu deroulant dans la barre superieure vous permet de basculer entre l'edition du site principal et une variante par domaine. Chaque domaine dispose de ses propres pages, navigation, tokens de design et snapshot de publication.
+- **Selecteur de domaine**: Lorsque votre espace de travail possede plusieurs domaines personnalises (abonnement Office), un menu deroulant dans la barre superieure vous permet de basculer entre l'edition du site principal et une variante par domaine. Chaque domaine dispose de ses propres pages, navigation, tokens de design et snapshot de publication.
 - **Blocs de section**: Ajoutez des sections hero, texte, galerie, spotlight, services, equipe, temoignages, formulaire de contact et HTML personnalise a chaque page. Sauvegardez des sections comme blocs reutilisables pour constituer votre propre bibliotheque.
 - **Tokens de design**: Definissez les couleurs de marque, les polices, les espacements, les coins arrondis, le style de mouvement, le CSS personnalise et un favicon de site. Les modifications s'appliquent a l'ensemble du site.
 - **Editeur de navigation**: Reorganisez les liens d'en-tete par glisser-deposer, avec des groupes deroulants, des liens externes et le style de la barre de navigation en ligne (nom de marque, bouton CTA, telephone, barre d'appel, sticky).
@@ -533,10 +533,10 @@ Consultez [Devis -- Demandes de devis](/fr/features/quotes#quote-requests) pour 
 
 ## Condition d'abonnement
 
-Le site web public (page entreprise et constructeur de site) est disponible sur tous les plans et reste en ligne. Le badge MyCompanyDesk dépend de l'adresse : il apparaît sur le sous-domaine de l'espace de travail et disparaît sur un domaine personnalisé (Pro).
+Le site web public (page entreprise et constructeur de site) est disponible sur tous les plans et reste en ligne. Le badge MyCompanyDesk dépend de l'adresse : il apparaît sur le sous-domaine de l'espace de travail et disparaît sur un domaine personnalisé (Office).
 
-- **Gratuit**: le site est visible sur le sous-domaine de l'espace avec un petit badge MyCompanyDesk.
-- **Starter et Pro**: le site est toujours visible; pas de badge sur un domaine personnalisé, badge sur le sous-domaine de l'espace.
+- **Desk**: le site est visible sur l'adresse gratuite `.mycompanydesk.site` avec un badge MyCompanyDesk.
+- **Office**: le site est toujours visible; pas de badge sur un domaine personnalisé, mais un badge sur l'adresse gratuite.
 - **Etat incertain**: si le système ne peut pas déterminer votre plan, le site reste en ligne pour éviter une coupure accidentelle.
 
 Ce contrôle s'applique à tous les chemins publics: la page entreprise, la route de détail des services et les pages du constructeur de site. La vérification a lieu à chaque requête, avant toute couche de cache, afin de rester exacte même si votre abonnement change en cours de cache.

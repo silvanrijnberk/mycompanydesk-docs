@@ -49,7 +49,7 @@ The wizard asks for the IBAN that customers pay to. You can enter your business 
 
 ## Step 4: Finish setup
 
-The final step confirms your 60-day Pro trial, no credit card needed, and applies everything. It also offers optional next steps from the finish screen, such as setting up a website. Website setup is opt-in, except when you started via the landing-page KVK lookup: in that case a themed site is already generated and simply waits for you in the website editor.
+The final step confirms your 60-day Office trial, no credit card needed, and applies everything. It also offers optional next steps from the finish screen, such as setting up a website. Website setup is opt-in, except when you started via the landing-page KVK lookup: in that case a themed site is already generated and simply waits for you in the website editor.
 
 Click **Finish setup** and the wizard applies your company details, VAT status, IBAN and default settings, then takes you to your dashboard.
 

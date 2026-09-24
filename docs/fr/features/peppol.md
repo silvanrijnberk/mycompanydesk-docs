@@ -18,7 +18,7 @@ Si le fournisseur utilise également MyCompanyDesk, vous pouvez recevoir sa fact
 
 ## Disponibilite
 
-La facturation electronique Peppol est disponible avec le plan Pro. Les workspaces sur les plans Free ou Starter ne voient pas les options d'envoi et de reception de factures electroniques.
+La facturation électronique Peppol est disponible avec l'abonnement Office. Les espaces de travail sur Desk ne voient pas les options d'envoi et de reception de factures electroniques.
 
 ## Avant de pouvoir envoyer
 
@@ -61,7 +61,7 @@ Lorsque la reception est activee, vos fournisseurs peuvent vous envoyer des fact
 
 ### Disponibilite
 
-La reception fait partie de la facturation electronique Peppol et est disponible avec le plan Pro. Vous devez deja avoir active l'envoi de factures electroniques avant de pouvoir activer la reception.
+La reception fait partie de la facturation electronique Peppol et est disponible avec l'abonnement Office. Vous devez deja avoir active l'envoi de factures electroniques avant de pouvoir activer la reception.
 
 ### Avant de pouvoir recevoir
 
@@ -118,7 +118,7 @@ Votre client doit etre joignable sur le reseau Peppol. En pratique, cela signifi
 
 ## Depannage
 
-**L'option Peppol n'apparait pas.** Verifiez que votre workspace est sur le plan Pro et que la facturation electronique est activee dans les parametres de facturation. Verifiez aussi que votre profil d'entreprise contient tous les champs requis.
+**L'option Peppol n'apparait pas.** Vérifiez que votre espace de travail est sur l'abonnement Office et que la facturation electronique est activee dans les parametres de facturation. Verifiez aussi que votre profil d'entreprise contient tous les champs requis.
 
 **L'envoi a echoue.** Un echec d'envoi Peppol signifie generalement que le recepteur n'etait pas joignable sur le reseau, ou qu'un champ obligatoire de la facture manquait. Resolvez le probleme et reessayez, ou envoyez par e-mail pour poursuivre le workflow.
 

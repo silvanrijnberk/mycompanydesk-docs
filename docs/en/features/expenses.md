@@ -68,7 +68,7 @@ For image or PDF receipts:
 4. Review the extracted supplier, date, amount, VAT and category.
 5. Confirm to create the expense(s).
 
-Receipt scanning is available on every plan, including Free. The number of scans per month depends on your plan.
+Receipt scanning works on every plan: 3 scans per month on Desk and 200 on Office.
 
 ### Locked VAT periods
 

@@ -1,6 +1,6 @@
 ---
 title: Belegscanner
-description: "Fotografieren Sie einen Beleg oder laden Sie ein PDF hoch, KI-gestützte OCR füllt die Ausgabe aus. Pro Monat: 3 Scans mit Gratis, 30 Starter, 200 Pro."
+description: "Fotografieren Sie einen Beleg oder laden Sie ein PDF hoch, KI-gestützte OCR füllt die Ausgabe aus. Pro Monat: 3 Scans mit Desk und 200 mit Office."
 ---
 
 # Belegscanner
@@ -8,7 +8,7 @@ description: "Fotografieren Sie einen Beleg oder laden Sie ein PDF hoch, KI-gest
 Extrahieren Sie automatisch Ausgabendaten aus Belegbildern und PDF-Rechnungen mit KI-gestützter OCR.
 
 ::: info
-Der Belegscanner ist in jedem Tarif verfügbar, mit einem monatlichen Limit für die Anzahl der Scans: 3 mit Gratis, 30 mit Starter und 200 mit Pro. Das Limit wird am Ersten jedes Kalendermonats zurückgesetzt.
+Der Belegscanner ist in jedem Tarif verfügbar, mit einem monatlichen Limit für die Anzahl der Scans: 3 mit Desk und 200 mit Office. Das Limit wird am Ersten jedes Kalendermonats zurückgesetzt.
 :::
 
 ## Übersicht

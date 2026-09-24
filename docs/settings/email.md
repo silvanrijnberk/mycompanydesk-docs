@@ -9,6 +9,15 @@ MyCompanyDesk stuurt je facturen en offertes per e-mail naar je klanten. Bij **I
 
 E-mail ontvangen (de Inbox) stel je op een andere plek in; zie [Ontvangen: inboxinstellingen](#ontvangen-inboxinstellingen) hieronder.
 
+## Gmail of Outlook koppelen, of je zakelijke inbox?
+
+Dit zijn twee verschillende dingen:
+
+- **Gmail of Outlook koppelen** (hieronder, bij **Verzendmethode**) bepaalt alleen vanaf welk account je facturen, offertes en herinneringen worden verstuurd. MyCompanyDesk leest je Gmail of Outlook niet en ontvangt daar geen mail.
+- **De zakelijke inbox** (Office) is je mail op je eigen domein, zoals `info@jouwbedrijf.nl`. Die lees en beantwoord je in **Inbox** in MyCompanyDesk en in de MyCompanyDesk-app.
+
+Wil je mail vanaf je zakelijke adres versturen uit Outlook, Apple Mail of Gmail, of je mail op je telefoon lezen? Zie [Mail in Outlook, Apple Mail of op je telefoon](/faq/mail-app-outlook). Wil je al je mail doorsturen naar Gmail? Zie [Mail doorsturen naar Gmail of een ander adres](/faq/forward-mail).
+
 ## Afzender
 
 De kaart **Verzendmethode** bepaalt welk adres je klanten als afzender zien. Er zijn drie opties.
@@ -17,7 +26,7 @@ De kaart **Verzendmethode** bepaalt welk adres je klanten als afzender zien. Er 
 
 Verstuur facturen vanaf je eigen domein, net als je inbox. Klanten zien jouw adres als afzender.
 
-- Verzenden vanaf je eigen domein hoort bij het Pro-abonnement; op andere abonnementen zie je bij deze optie een upgradelink.
+- Verzenden vanaf je eigen domein hoort bij Office; op Desk zie je bij deze optie een upgradelink.
 - Heb je al een domein gekoppeld? Dan staat er een knop om het met een klik aan te zetten (**E-mail activeren op jouwdomein.nl**). Dat is veilig voor bestaande e-mail: draait er al mail op je domein (bijvoorbeeld Gmail of Microsoft 365), dan waarschuwt MyCompanyDesk en nemen we niets over.
 - Nog geen domein? Via **Domein toevoegen** kom je bij de domeininstellingen.
 - Zodra het actief is, zie je op de kaart vanaf welk adres je documenten worden verstuurd, met een link naar de DNS-records.
@@ -36,15 +45,15 @@ Documenten worden altijd vanuit je eigen naam verstuurd. Is er nog geen afzender
 
 Is je eigen domein actief en heeft het meerdere adressen, dan verschijnt er een extra keuze: **Verstuur facturen vanaf**. Kies welk adres je klanten als afzender zien op facturen en offertes.
 
-## Je afsluiter
+## Je afsluiter (e-mailhandtekening)
 
-Onder elke uitgaande e-mail bouwen we automatisch een afsluiter op met de gegevens die je hier invult:
+Onder elke uitgaande e-mail, ook mail uit de inbox, bouwen we automatisch een afsluiter op met de gegevens die je hier invult:
 
 - **Support-e-mail**
 - **Website**
 - Social links (LinkedIn, X, Facebook, Instagram)
 
-Alles wat je invult nemen we mee; wat leeg blijft, laten we weg. Deze velden deel je met je bedrijfsgegevens: pas je ze hier of bij **Instellingen → Bedrijfsgegevens** aan, dan blijven beide gelijk.
+Alles wat je invult nemen we mee; wat leeg blijft, laten we weg. Deze velden deel je met je bedrijfsgegevens: pas je ze hier of bij **Instellingen → Bedrijfsgegevens** aan, dan blijven beide gelijk. Meer hierover, en over een vaste aanhef en afsluiting in de inbox, staat in [E-mailhandtekening instellen](/faq/email-signature).
 
 ## E-mailteksten
 
@@ -59,16 +68,18 @@ MyCompanyDesk houdt uitgaande post tegen die eruitziet als misbruik, zodat ons g
 
 ## Ontvangen: inboxinstellingen
 
-Alles over het ontvangen van mail vind je op de instellingenpagina van de inbox (**Inbox → Instellingen**):
+Alles over het ontvangen van mail vind je in de inbox zelf, op het tabblad **Adressen** (**Inbox** → **Adressen**):
 
 - **Postbussen & adressen**: je adressen, aliassen, de naam die ontvangers bij je mail zien (de weergavenaam, of je bedrijfsnaam als die leeg is) en hoelang berichten bewaard blijven.
+- **Doorsturen naar e-mail**: een kopie van elk binnenkomend bericht naar je login-e-mailadres. Zie [Mail doorsturen](/faq/forward-mail).
+- **Bestaande postbus overzetten**: je oude mail importeren. Zie [Oude e-mails importeren](/faq/import-old-mail).
 - **Activiteit**: recente uitgaande aflevering, handig als je je afvraagt of een klant je factuur heeft ontvangen.
 - **Vertrouwde afzenders**: afzenders die nooit als spam worden gemarkeerd.
 - **AVG-gegevensverwijdering**: verwijder alle gesprekken en bijlagen van een specifiek adres (alleen voor beheerders).
 
-Regels voor inkomende mail vind je onder **Inbox → Instellingen → Regels & routing**.
+Regels voor inkomende mail vind je onder **Inbox** → **Regels & routing**.
 
 ## Gerelateerd
 
 - [Bedrijfsinstellingen](/settings/company): de bedrijfsgegevens achter je afsluiter
-- [Abonnement & betalingen](/settings/billing): verzenden vanaf je eigen domein hoort bij Pro
+- [Abonnement & betalingen](/settings/billing): verzenden vanaf je eigen domein hoort bij Office

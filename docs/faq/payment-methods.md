@@ -44,7 +44,7 @@ Mollie ondersteunt iDEAL, Bancontact, creditcard en bankoverboeking, ideaal voor
 
 ## Online-betalingstarief op het gratis plan
 
-Op het gratis plan geldt een klein servicekostenbedrag voor online factuurbetalingen. Wanneer een klant een factuur online betaalt, wordt € 0,50 via je Mollie- of Stripe-account geïnd als application fee. Online betalingen op Starter en Pro zijn kosteloos. Het tarief staat naast **Online betalingen** op `/settings/betalen` zolang je werkruimte op het gratis plan zit.
+Op Desk (gratis) geldt een klein servicekostenbedrag voor online factuurbetalingen. Wanneer een klant een factuur online betaalt, wordt € 0,50 via je Mollie- of Stripe-account geïnd als application fee. Online betalingen op Office zijn kosteloos. Het tarief staat naast **Online betalingen** op `/settings/betalen` zolang je werkruimte op het gratis plan zit.
 
 Het precieze bedrag en de minimale factuurwaarde staan server-side ingesteld. De hint in de app toont op dit moment € 0,50 per online factuurbetaling vanaf € 5, overeenkomstig `config.billing.freeTierSurchargeCents` en `freeTierSurchargeMinInvoiceCents` in `apps/api/src/config/env.js`. Als een van deze waarden wijzigt, moeten deze pagina en de hint in de app samen worden bijgewerkt.
 

@@ -9,6 +9,15 @@ MyCompanyDesk sendet Ihre Rechnungen und Angebote per E-Mail an Ihre Kunden. Unt
 
 Der E-Mail-Empfang (der Posteingang) wird an anderer Stelle eingerichtet; siehe [Empfangen: Posteingang-Einstellungen](#empfangen-posteingang-einstellungen) weiter unten.
 
+## Gmail oder Outlook verbinden, oder Ihr geschäftlicher Posteingang?
+
+Das sind zwei verschiedene Dinge:
+
+- **Gmail oder Outlook verbinden** (unten, bei **Versandmethode**) legt nur fest, von welchem Konto Ihre Rechnungen, Angebote und Zahlungserinnerungen verschickt werden. MyCompanyDesk liest Ihr Gmail oder Outlook nicht und empfängt dort keine Mail.
+- **Der geschäftliche Posteingang** (Office) ist Ihre Mail auf Ihrer eigenen Domain, etwa `info@ihrefirma.de`. Diese lesen und beantworten Sie unter **Posteingang** in MyCompanyDesk und in der MyCompanyDesk-App.
+
+Möchten Sie Mail von Ihrer geschäftlichen Adresse aus Outlook, Apple Mail oder Gmail versenden oder Ihre Mail auf dem Handy lesen? Siehe [Mail in Outlook, Apple Mail oder auf dem Handy](/de/faq/mail-app-outlook). Möchten Sie Ihre gesamte Mail an Gmail weiterleiten? Siehe [Mail an Gmail oder eine andere Adresse weiterleiten](/de/faq/forward-mail).
+
 ## Absender
 
 Die Karte **Versandmethode** legt fest, welche Adresse Ihre Kunden als Absender sehen. Es gibt drei Optionen.
@@ -17,7 +26,7 @@ Die Karte **Versandmethode** legt fest, welche Adresse Ihre Kunden als Absender 
 
 Senden Sie Rechnungen von Ihrer eigenen Domain, genau wie Ihren Posteingang. Kunden sehen Ihre Adresse als Absender.
 
-- Der Versand von der eigenen Domain gehört zum Pro-Abo; in anderen Abos zeigt die Option einen Upgrade-Link.
+- Der Versand von der eigenen Domain gehört zu Office; mit Desk zeigt die Option einen Upgrade-Link.
 - Ist bereits eine Domain verbunden? Dann bietet die Karte einen Ein-Klick-Button (**E-Mail für ihredomain.de aktivieren**). Das ist sicher für bestehende E-Mail: Läuft auf Ihrer Domain bereits Mail bei einem anderen Anbieter (zum Beispiel Gmail oder Microsoft 365), warnt MyCompanyDesk und übernimmt nichts.
 - Noch keine Domain? Über **Domain hinzufügen** gelangen Sie zu den Domain-Einstellungen.
 - Sobald der Versand aktiv ist, zeigt die Karte, von welcher Adresse Ihre Dokumente verschickt werden, mit einem Link zu den DNS-Einträgen.
@@ -36,15 +45,15 @@ Dokumente werden immer unter Ihrer eigenen Identität versendet. Ist noch kein A
 
 Ist Ihre eigene Domain aktiv und hat sie mehrere Adressen, erscheint eine zusätzliche Auswahl: **Rechnungen senden von**. Wählen Sie, welche Adresse Ihre Kunden als Absender auf Rechnungen und Angeboten sehen.
 
-## Ihre Grußformel
+## Ihre Grußformel (E-Mail-Signatur)
 
-Die Fußzeile unter jeder ausgehenden E-Mail wird automatisch aus den Angaben aufgebaut, die Sie hier ausfüllen:
+Die Fußzeile unter jeder ausgehenden E-Mail, auch unter Mail aus dem Posteingang, wird automatisch aus den Angaben aufgebaut, die Sie hier ausfüllen:
 
 - **Support-E-Mail**
 - **Website**
 - Social Links (LinkedIn, X, Facebook, Instagram)
 
-Alles, was Sie ausfüllen, wird übernommen; was leer bleibt, wird einfach weggelassen. Diese Felder teilen Sie mit Ihren Unternehmensdaten: Ob Sie sie hier oder unter **Einstellungen → Unternehmensdaten** bearbeiten, beide bleiben synchron.
+Alles, was Sie ausfüllen, wird übernommen; was leer bleibt, wird einfach weggelassen. Diese Felder teilen Sie mit Ihren Unternehmensdaten: Ob Sie sie hier oder unter **Einstellungen → Unternehmensdaten** bearbeiten, beide bleiben synchron. Mehr dazu und zu einer festen Begrüßung und einem festen Abschluss im Posteingang finden Sie unter [E-Mail-Signatur einrichten](/de/faq/email-signature).
 
 ## E-Mail-Texte
 
@@ -59,16 +68,18 @@ MyCompanyDesk hält ausgehende Post zurück, die nach Missbrauch aussieht, damit
 
 ## Empfangen: Posteingang-Einstellungen
 
-Alles rund um den Mail-Empfang finden Sie auf der Einstellungsseite des Posteingangs (**Posteingang → Einstellungen**):
+Alles rund um den Mail-Empfang finden Sie im Posteingang selbst, im Tab **Adressen** (**Posteingang** → **Adressen**):
 
 - **Postfächer & Adressen**: Ihre Adressen, Aliasse, der Name, den Empfänger bei Ihren E-Mails sehen (der Anzeigename, oder Ihr Firmenname, wenn er leer ist), und wie lange Nachrichten aufbewahrt werden.
+- **An E-Mail weiterleiten**: eine Kopie jeder eingehenden Nachricht an Ihre Login-E-Mail-Adresse. Siehe [Mail weiterleiten](/de/faq/forward-mail).
+- **Bestehendes Postfach übernehmen**: Ihre alte Mail importieren. Siehe [Alte E-Mails importieren](/de/faq/import-old-mail).
 - **Aktivität**: die letzten ausgehenden Zustellungen, hilfreich, wenn Sie sich fragen, ob ein Kunde Ihre Rechnung erhalten hat.
 - **Vertrauenswürdige Absender**: Absender, die nie als Spam markiert werden.
 - **DSGVO-Datenlöschung**: Löschen Sie alle Unterhaltungen und Anhänge einer bestimmten Adresse (nur für Administratoren).
 
-Regeln für eingehende Mail finden Sie unter **Posteingang → Einstellungen → Regeln & Routing**.
+Regeln für eingehende Mail finden Sie unter **Posteingang** → **Regeln & Routing**.
 
 ## Verwandte Themen
 
 - [Unternehmenseinstellungen](/de/settings/company): die Unternehmensdaten hinter Ihrer Grußformel
-- [Abo & Zahlungen](/de/settings/billing): der Versand von der eigenen Domain gehört zu Pro
+- [Abo & Zahlungen](/de/settings/billing): der Versand von der eigenen Domain gehört zu Office

@@ -13,7 +13,7 @@ E-Mail-Vorlagen können nicht mehr bearbeitet werden. MyCompanyDesk verwendet st
 Gutschrifts-E-Mails verwenden eine eigene Vorlage, die das Dokument als Gutschrift benennt, den gutgeschriebenen Betrag als positiven Betrag angibt und nicht um Zahlung bittet oder ein Zahlungsziel enthält.
 
 Was Sie anpassen können:
-1. Den Absender: Gehen Sie zu Einstellungen → E-Mail und wählen Sie Ihre eigene Domain (Pro), Gmail oder Outlook
+1. Den Absender: Gehen Sie zu Einstellungen → E-Mail und wählen Sie Ihre eigene Domain (Office), Gmail oder Outlook
 2. Ihre Grußformel: Füllen Sie auf derselben Seite Ihre Support-E-Mail, Website und Social Links aus; sie erscheinen unter jeder E-Mail
 3. Eine einzelne E-Mail: Im Versandfenster passen Sie Empfänger, Betreff und Nachricht an, bevor die E-Mail verschickt wird
 

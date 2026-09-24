@@ -19,7 +19,7 @@ chatbot:
     - { label: "Ouvrir les paramètres d'accès", to: "/fr/settings/team" }
   follow_up:
     - "How do I invite my accountant?"
-    - "What does the Free plan include?"
+    - "What does the Desk plan include?"
     - "How do VAT calculations work?"
 ---
 
@@ -36,7 +36,7 @@ La plupart des indépendants et entreprises individuelles peuvent gérer leur co
 
 ## Quand vous pouvez le faire vous-même
 
-Une entreprise individuelle ou une activité indépendante simple peut généralement gérer le travail courant seule. Si vous émettez seulement quelques factures par an, suivez vos dépenses et souhaitez un aperçu clair de la TVA, vous pouvez le faire vous-même avec le plan Gratuit.
+Une entreprise individuelle ou une activité indépendante simple peut généralement gérer le travail courant seule. Si vous émettez seulement quelques factures par an, suivez vos dépenses et souhaitez un aperçu clair de la TVA, vous pouvez le faire vous-même avec Desk, la formule gratuite.
 
 ## Quand un comptable reste utile
 
@@ -44,4 +44,4 @@ Envisagez un comptable pour les situations complexes, comme une société à res
 
 ## Coût
 
-Vous pouvez commencer et rester sur le plan Gratuit. Les nouveaux espaces de travail bénéficient d'un essai Pro de 60 jours. Les plans payants sont listés dans [Abonnement et paiements](/fr/settings/billing).
+Vous pouvez commencer et rester sur Desk, la formule gratuite. Les nouveaux espaces de travail bénéficient d'un essai Office de 60 jours. Les plans payants sont listés dans [Abonnement et paiements](/fr/settings/billing).

@@ -1,6 +1,6 @@
 ---
 title: Receipt Scanning
-description: "Photograph a receipt or upload a PDF and AI-powered OCR fills in the expense. Monthly caps: 3 scans on Free, 30 on Starter, 200 on Pro."
+description: "Photograph a receipt or upload a PDF and AI-powered OCR fills in the expense. Monthly caps: 3 scans on Desk and 200 on Office."
 ---
 
 # Receipt Scanning
@@ -8,7 +8,7 @@ description: "Photograph a receipt or upload a PDF and AI-powered OCR fills in t
 Automatically extract expense data from receipt images and PDF invoices using AI-powered OCR.
 
 ::: info
-Receipt scanning is available on every plan, with a monthly cap on the number of scans: 3 on Free, 30 on Starter, and 200 on Pro. The cap resets on the first of each calendar month.
+Receipt scanning is available on every plan, with a monthly cap on the number of scans: 3 on Desk and 200 on Office. The cap resets on the first of each calendar month.
 :::
 
 ## Overview

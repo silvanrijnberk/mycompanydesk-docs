@@ -13,7 +13,7 @@ E-mailsjablonen kun je niet meer bewerken. MyCompanyDesk gebruikt standaard, goe
 Creditnotamails gebruiken een eigen sjabloon dat het document als creditnota benoemt, het gecrediteerde bedrag als positief bedrag vermeldt en niet vraagt om te betalen of een vervaldatum toont.
 
 Wat je wel kunt aanpassen:
-1. De afzender: ga naar Instellingen → E-mail en kies je eigen domein (Pro), Gmail of Outlook
+1. De afzender: ga naar Instellingen → E-mail en kies je eigen domein (Office), Gmail of Outlook
 2. Je afsluiter: vul op dezelfde pagina je support-e-mail, website en social links in; die verschijnen onder elke e-mail
 3. Een losse e-mail: in het verzendvenster pas je de ontvanger, het onderwerp en het bericht aan voordat de e-mail de deur uit gaat
 

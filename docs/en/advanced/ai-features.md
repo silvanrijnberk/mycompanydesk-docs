@@ -30,15 +30,15 @@ The EU AI Act (Regulation 2024/1689) classifies the contextual guide as a limite
 
 These disclosures also appear in Dutch, German, and French in their respective locale builds. The obligation takes effect in August 2026; the disclosures shipped ahead of the deadline.
 
-### Pro visual skin
+### Office visual skin
 
-Pro-tier workspaces get a premium assistant skin that replaces the generic styling with the Pro violet accent. When the billing plan is Pro, the assistant panel changes visually:
+Office workspaces get a premium assistant skin in violet. When the plan is Office, the assistant panel changes visually:
 
-- The "AI" pill becomes a violet "Pro" pill, signalling that the assistant runs on the highest-tier model with full app context.
-- The panel border, avatar ring, online-dot, and send button shift to violet (`#a855f7`), matching the Pro ribbon in the app navigation.
-- The status line reads "Your Pro assistant is ready" instead of the generic "Ready to help."
+- The "AI" pill becomes a violet Office pill, signalling that the assistant runs on the highest-tier model with full app context.
+- The panel border, avatar ring, online-dot, and send button shift to violet (`#a855f7`).
+- The status line reads "Your Office assistant is ready" instead of the generic "Ready to help."
 
-The Pro skin is purely cosmetic. The underlying model selector, tool catalog, and EU AI Act disclosures remain identical across tiers. Backed by `TIER_CHAT_CONFIG` which already gives Pro a heavier model variant and unlimited app context.
+The Office skin is purely cosmetic. The underlying model selector, tool catalog, and EU AI Act disclosures remain identical across plans. Backed by `TIER_CHAT_CONFIG` which already gives Office a heavier model variant and unlimited app context.
 
 ### Tool catalog
 
@@ -155,40 +155,40 @@ Runtime translation of short snippets goes through `translate.service` which wra
 
 Bulk locale-file sync (filling missing keys, re-translating drift across `nl/de/fr`) is **not** in this service -- it lives in the Huisbot weekly cron which opens PRs against `development` autonomously. The in-app UI never blocks on translation drift.
 
-## Dashboard briefing insight (Pro)
+## Dashboard briefing insight (Office)
 
-The dashboard briefing hero shows a short, personal AI-written briefing for Pro workspaces. The server generates it once per calendar day and caches it for the rest of the day.
+The dashboard briefing hero shows a short, personal AI-written briefing for Office workspaces. The server generates it once per calendar day and caches it for the rest of the day.
 
 - **Voice.** The briefing speaks in the first person ("ik") and addresses the user informally ("je"). It opens with the single most urgent action, adds at most one or two supporting points, and closes with a concrete suggested next step (e.g. "stuur Atelier Norden vandaag een herinnering"). Warm, confident, concise — the tone of a smart assistant who knows the business.
 - **Model.** The endpoint `POST /api/dashboard/briefing-insight` runs on Vertex AI `europe-west1` (Gemini 2.5 Flash). Ollama Cloud is not used for this path.
 - **Input signals.** The client sends a full digest of the day's business data: liquidity and runway, revenue and profit (MTD + YTD), overdue receivables (count, total, worst customer), bills (due soon + overdue), draft counts, project margins, VAT position (balance, deadline, checklist progress, reserve), unbilled hours, recent payments, and new customers. All amounts are rounded to whole euros before reaching the model.
 - **Locales.** The model generates the briefing in `nl/de/en/fr` based on the user's locale. The client includes the ISO 639-1 code with the request.
-- **Plan gating.** The endpoint is gated on the `ai_insights` feature flag, which requires Pro. When a workspace is not entitled, the client keeps the deterministic lede alone.
+- **Plan gating.** The endpoint is gated on the `ai_insights` feature flag, which requires Office. When a workspace is not entitled, the client keeps the deterministic lede alone.
 - **Fallback.** On any failure (model unavailable, 403, network error) the client uses the existing deterministic lede. No error is shown to the user.
 - **Client UX.** While the AI briefing loads, the hero shows the previous day's cached deterministic lede. When the AI version arrives, a cross-fade transition (opacity + slide) replaces it. The AI briefing appears with a sparkle icon and primary text color. A layout-matched skeleton shimmer (`BriefingSkeleton`) holds the entire dashboard shape until core data settles, then dissolves into a coordinated staggered entrance animation. Reduced-motion users get no animations.
 
 ## Plan gating
 
-| Surface | Free | Starter | Pro |
-|---|---|---|---|
-| Contextual guide (incl. VAT tools) | Limited messages, FAQ-only on overflow | Standard tier | Highest tier |
-| AI suggestions | On | On | On |
-| Vendor classifier | On | On | On |
-| Receipt scanner | On | On | On |
-| Text check | On | On | On |
-| Translation | On (UI strings only) | On | On |
-| Briefing insight | Off | Off | On |
+| Surface | Desk | Office |
+|---|---|---|
+| Contextual guide (incl. VAT tools) | 10 messages per month | 1 000 messages per month |
+| AI suggestions | 10 per month | 2 000 per month |
+| Vendor classifier | On | On |
+| Receipt scanner | 3 per month | 200 per month |
+| Text check | On | On |
+| Translation | On (UI strings only) | On |
+| Briefing insight | Off | On |
 
 <!-- TODO(source-missing): AI_USAGE_LIMIT locale string implies a daily AI usage cap; this page states monthly caps only. Needs a sources/ entry before documenting the daily limit. -->
 ## AI usage caps (monthly)
 
 AI caps are monthly, not daily. A bookkeeper who batches 40 receipts on a Friday does not blow through a daily quota that resets at midnight. Cap tracking uses `ai_usage.date` with the first-of-month date. Monthly caps:
 
-| Metric | Free | Starter | Pro |
-|---|---|---|---|
-| AI chat messages | 10 | 100 | 1 000 |
-| AI receipt scans | 3 | 30 | 200 |
-| AI suggestions | 10 | 200 | 2 000 |
+| Metric | Desk | Office |
+|---|---|---|
+| AI chat messages | 10 | 1 000 |
+| AI receipt scans | 3 | 200 |
+| AI suggestions | 10 | 2 000 |
 
 ## Privacy
 

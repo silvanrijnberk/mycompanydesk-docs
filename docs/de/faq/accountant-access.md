@@ -37,7 +37,7 @@ Es gibt zwei Wege, wie der Steuerberater-Zugang starten kann: Sie laden Ihren St
 3. Senden Sie die Einladung, wenn Ihr Steuerberater ein Konto erstellen soll
 4. Öffnen Sie „Zugang verwalten“, um die Seitenberechtigungen festzulegen
 
-Der Steuerberater-Zugang ist in jedem Tarif kostenlos; er erfordert weder Pro noch einen Teamplatz. Häufige Statuswerte sind nur Kontakt, eingeladen, aktiv und widerrufen.
+Der Steuerberater-Zugang ist in jedem Tarif kostenlos; er erfordert weder Office noch einen Teamplatz. Häufige Statuswerte sind nur Kontakt, eingeladen, aktiv und widerrufen.
 
 ## Ihr Steuerberater lädt Sie ein
 

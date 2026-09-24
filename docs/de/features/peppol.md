@@ -18,7 +18,7 @@ Wenn der Lieferant ebenfalls MyCompanyDesk nutzt, können Sie seine strukturiert
 
 ## Verfügbarkeit
 
-Peppol E-Rechnung ist im Pro-Tarif verfügbar. Workspaces auf Free oder Starter sehen die Optionen zum E-Rechnungsversand und -empfang nicht.
+Peppol E-Rechnung ist im Office-Tarif verfügbar. Workspaces auf Desk sehen die Optionen zum E-Rechnungsversand und -empfang nicht.
 
 ## Bevor Sie senden können
 
@@ -61,7 +61,7 @@ Wenn der Empfang aktiviert ist, können Lieferanten Ihnen E-Rechnungen über Pep
 
 ### Verfügbarkeit
 
-Empfangen ist Teil von Peppol E-Rechnung und im Pro-Tarif verfügbar. Sie müssen den E-Rechnungsversand bereits aktiviert haben, bevor Sie den Empfang einschalten können.
+Empfangen ist Teil von Peppol E-Rechnung und im Office-Tarif verfügbar. Sie müssen den E-Rechnungsversand bereits aktiviert haben, bevor Sie den Empfang einschalten können.
 
 ### Bevor Sie empfangen können
 
@@ -118,7 +118,7 @@ Ihr Kunde muss über das Peppol-Netzwerk erreichbar sein. Das bedeutet in der Pr
 
 ## Fehlerbehebung
 
-**Die Peppol-Option wird nicht angezeigt.** Prüfen Sie, ob Ihr Workspace im Pro-Tarif ist und E-Rechnung in den Rechnungseinstellungen aktiviert ist. Prüfen Sie auch, ob Ihr Unternehmensprofil alle erforderlichen Felder enthält.
+**Die Peppol-Option wird nicht angezeigt.** Prüfen Sie, ob Ihr Workspace im Office-Tarif ist und E-Rechnung in den Rechnungseinstellungen aktiviert ist. Prüfen Sie auch, ob Ihr Unternehmensprofil alle erforderlichen Felder enthält.
 
 **Senden fehlgeschlagen.** Ein fehlgeschlagener Peppol-Versand bedeutet meist, dass der Empfänger im Netzwerk nicht erreichbar war oder ein Pflichtfeld der Rechnung fehlte. Beheben Sie das Problem und versuchen Sie es erneut, oder senden Sie per E-Mail, um den Workflow weiterlaufen zu lassen.
 

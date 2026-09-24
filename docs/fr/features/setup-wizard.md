@@ -60,7 +60,7 @@ Si vous attendez toujours votre numéro de TVA auprès de l'administration fisca
 
 La dernière étape confirme votre essai :
 
-- **Votre essai :** chaque nouvel espace de travail démarre avec 60 jours de Pro, gratuits, sans carte bancaire.
+- **Votre essai :** chaque nouvel espace de travail démarre avec 60 jours d'Office, gratuits, sans carte bancaire.
 
 **Terminer la configuration** applique vos informations d'entreprise, votre statut de TVA, votre IBAN et vos paramètres par défaut. L'écran de fin propose aussi des prochaines étapes optionnelles, comme créer un site web. La création d'un site web est optionnelle : rien n'est créé tant que vous ne le choisissez pas sur l'écran de fin ou dans la checklist du tableau de bord.
 

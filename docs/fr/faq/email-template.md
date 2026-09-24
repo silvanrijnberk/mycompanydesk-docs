@@ -13,7 +13,7 @@ Les modèles d'e-mail ne peuvent plus être modifiés. MyCompanyDesk utilise des
 Les e-mails d'avoir utilisent un modèle dédié qui présente le document comme un avoir, indique le montant crédité comme un nombre positif et ne demande pas de paiement ni n'inclut de date d'échéance.
 
 Ce que vous pouvez ajuster :
-1. L'expéditeur : accédez à Paramètres → E-mail et choisissez votre propre domaine (Pro), Gmail ou Outlook
+1. L'expéditeur : accédez à Paramètres → E-mail et choisissez votre propre domaine (Office), Gmail ou Outlook
 2. Votre signature : sur la même page, remplissez votre e-mail de support, votre site web et vos liens sociaux ; ils apparaissent sous chaque e-mail
 3. Un e-mail ponctuel : dans la fenêtre d'envoi, vous pouvez ajuster le destinataire, l'objet et le message avant l'envoi
 

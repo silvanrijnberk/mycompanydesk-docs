@@ -37,7 +37,7 @@ Er zijn twee manieren waarop boekhoudertoegang kan beginnen: jij nodigt je boekh
 3. Verstuur de uitnodiging wanneer je wilt dat je boekhouder een account aanmaakt
 4. Open "Toegang beheren" om de paginarechten in te stellen
 
-Boekhoudertoegang is gratis op elk abonnement; er is geen Pro of teamplek voor nodig. Veelvoorkomende statussen zijn alleen contact, uitgenodigd, actief en ingetrokken.
+Boekhoudertoegang is gratis op elk abonnement; er is geen Office of teamplek voor nodig. Veelvoorkomende statussen zijn alleen contact, uitgenodigd, actief en ingetrokken.
 
 ## Automatisch aanleveren
 

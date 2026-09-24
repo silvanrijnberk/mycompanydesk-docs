@@ -17,9 +17,8 @@ Chatgebruik is afhankelijk van je abonnement:
 
 | Abonnement | Chatberichten (maandelijks) |
 |---|---|
-| Gratis | 10 |
-| Starter | 100 |
-| Pro | 1 000 |
+| Desk | 10 |
+| Office | 1 000 |
 
 AI-limieten zijn maandelijks, niet dagelijks. Ze worden elke eerste van de maand gereset.
 
@@ -32,15 +31,15 @@ De contextuele gids valt onder de EU AI Act (Verordening 2024/1689) als een AI-s
 
 De verplichting geldt vanaf augustus 2026; de openbaarmakingen zijn voor de deadline ingebouwd.
 
-### Pro-uiterlijk
+### Office-uiterlijk
 
-Pro-werkruimtes krijgen een premium assistent-uiterlijk dat de generieke styling vervangt door het Pro-violet. Wanneer het facturatieplan Pro is, verandert het assistentpaneel visueel:
+Office-werkruimtes krijgen een premium assistent-uiterlijk in violet. Wanneer het abonnement Office is, verandert het assistentpaneel visueel:
 
-- De "AI"-pill wordt een violette "Pro"-pill, wat aangeeft dat de assistent op het hoogste model draait met volledige app-context.
-- De paneelrand, avatarring, online-dot en verzendknop veranderen naar violet (`#a855f7`), passend bij de Pro-lint in de app-navigatie.
-- De statusregel toont "Jouw Pro-assistent staat klaar" in plaats van het generieke "Klaar om te helpen."
+- De "AI"-pill wordt een violette Office-pill, wat aangeeft dat de assistent op het hoogste model draait met volledige app-context.
+- De paneelrand, avatarring, online-dot en verzendknop veranderen naar violet (`#a855f7`).
+- De statusregel toont "Jouw Office-assistent staat klaar" in plaats van het generieke "Klaar om te helpen."
 
-Het Pro-uiterlijk is puur cosmetisch. De onderliggende modelselector, toolcatalogus en EU AI Act-openbaarmakingen blijven identiek voor alle abonnementen. Achter de schermen geeft `TIER_CHAT_CONFIG` Pro al een zwaarder model en onbeperkte app-context.
+Het Office-uiterlijk is puur cosmetisch. De onderliggende modelselector, toolcatalogus en EU AI Act-openbaarmakingen blijven identiek voor alle abonnementen. Achter de schermen geeft `TIER_CHAT_CONFIG` Office al een zwaarder model en onbeperkte app-context.
 
 ## AI-suggesties
 
@@ -72,7 +71,7 @@ Endpoints die op een specifieke suggestie of uitgave acteren, valideren hun padp
 Wanneer je een suggestie toepast, worden de gecachede financiële totalen die van het gewijzigde record afhangen direct ongeldig gemaakt. BTW, rapportages en het dashboard verversen meteen en tonen de nieuwe categorie, btw-behandeling of omschrijving.
 
 ::: info
-AI-suggesties vereisen het **Starter**-abonnement of hoger. Schakel ze in via **Bedrijf > Functies**.
+AI-suggesties zijn er op elk abonnement: 10 per maand op Desk en 2 000 per maand op Office.
 :::
 
 ## Bonnen scannen
@@ -110,30 +109,30 @@ AI genereert periodieke samenvattingen van je bedrijfsactiviteit:
 
 Samenvattingen worden gegenereerd in je voorkeurstaal en zijn beschikbaar vanaf het dashboard.
 
-## Dashboard-briefing inzicht (Pro)
+## Dashboard-briefing inzicht (Office)
 
-De dashboard-briefing hero toont een korte, persoonlijke AI-geschreven briefing voor Pro-werkruimtes. De server genereert de briefing eenmaal per kalenderdag en cached deze voor de rest van de dag.
+De dashboard-briefing hero toont een korte, persoonlijke AI-geschreven briefing voor Office-werkruimtes. De server genereert de briefing eenmaal per kalenderdag en cached deze voor de rest van de dag.
 
 - **Stem.** De briefing spreekt in de eerste persoon ("ik") en spreekt de gebruiker informeel aan ("je"). Hij opent met de meest urgente actie, voegt hooguit een of twee ondersteunende punten toe, en sluit af met een concrete vervolgstap (bijv. "stuur Atelier Norden vandaag een herinnering"). Warm, zelfverzekerd, bondig -- de toon van een slimme assistent die de zaak kent.
 - **Model.** Het endpoint `POST /api/dashboard/briefing-insight` draait op Vertex AI `europe-west1` (Gemini 2.5 Flash). Ollama Cloud wordt niet gebruikt voor dit pad.
 - **Input signalen.** De client stuurt een volledig overzicht van de zakelijke data van de dag: liquiditeit en runway, omzet en winst (MTD + YTD), achterstallige debiteuren (aantal, totaal, slechtste klant), rekeningen (binnenkort + achterstallig), aantal concepten, projectmarges, btw-positie (saldo, deadline, checklistvoortgang, reserve), niet-gefactureerde uren, recente betalingen en nieuwe klanten. Alle bedragen worden afgerond op hele euro's voordat ze het model bereiken.
 - **Locales.** Het model genereert de briefing in `nl/de/en/fr` op basis van de taal van de gebruiker. De client stuurt de ISO 639-1-code mee met het verzoek.
-- **Plan-gating.** Het endpoint is gekoppeld aan de `ai_insights` feature flag, die Pro vereist. Als een werkruimte geen recht heeft, toont de client alleen de standaard lede.
+- **Plan-gating.** Het endpoint is gekoppeld aan de `ai_insights` feature flag, die Office vereist. Als een werkruimte geen recht heeft, toont de client alleen de standaard lede.
 - **Fallback.** Bij een fout (model niet beschikbaar, 403, netwerkfout) gebruikt de client de bestaande standaard lede. De gebruiker ziet geen foutmelding.
 - **Client UX.** Terwijl de AI-briefing laadt, toont de hero de gecachte deterministische lede van de vorige dag. Zodra de AI-versie binnen is, vervangt een cross-fade-overgang (opacity + slide) deze. De AI-briefing verschijnt met een sparkle-icoon en primaire tekstkleur. Een layout-matched skeleton-shimmer (`BriefingSkeleton`) houdt de volledige dashboardvorm vast totdat de kerndata binnen is, waarna deze oplost in een gecoordineerde, gestaffelde entree-animatie. Gebruikers met reduced-motion krijgen geen animaties.
 
 
 ## Abonnementsrechten
 
-| Functie | Gratis | Starter | Pro |
-|---|---|---|---|
-| Contextuele gids | Beperkt, alleen FAQ bij overloop | Standaard | Hoogste limiet |
-| AI-suggesties | Uit | Aan | Aan |
-| Leverancierclassificatie | Uit | Aan | Aan |
-| Bonnen scannen | Uit | Aan | Aan |
-| Tekstcontrole | Aan | Aan | Aan |
-| Vertaling | Aan (alleen UI) | Aan | Aan |
-| Dashboard-briefing inzicht | Uit | Uit | Aan |
+| Functie | Desk | Office |
+|---|---|---|
+| Contextuele gids | 10 berichten per maand | 1 000 berichten per maand |
+| AI-suggesties | 10 per maand | 2 000 per maand |
+| Leverancierclassificatie | Aan | Aan |
+| Bonnen scannen | 3 per maand | 200 per maand |
+| Tekstcontrole | Aan | Aan |
+| Vertaling | Aan (alleen UI) | Aan |
+| Dashboard-briefing inzicht | Uit | Aan |
 
 ## Privacy en gegevensbescherming
 
