@@ -26,7 +26,7 @@ abschreibungsdauer gueltigkeitsdauer nettoergebnis statue etui`.split(/\s+/))
 // Dutch and English terms quoted inside the German pages.
 const DE_FOREIGN = new Set(`does due goed toegang onroerende grootboekschema verzuimboete verzuimboetes
 boekhouder begroeting Begroeting genoemd vroege moeten boekingen value values revenue overdue
-Voorvoegsel Overdue issued gevoed voert hoeveel visuele gloednieuwe toegevoegd Prefix`.split(/\s+/))
+Voorvoegsel Overdue issued gevoed voert hoeveel visuele gloednieuwe toegevoegd Prefix toevoegen`.split(/\s+/))
 // 'ue' after a, e or q is the au-/eu-/qu- sequence, not a stand-in for 'ü'.
 const DE_ASCII_UMLAUT = /(?<![\p{L}\d])\p{L}{3,}(?!\d)(?:(?<![aeq])ue|ae|oe)\p{L}*(?![\p{L}\d])|(?<![\p{L}\d])\p{L}*(?:(?<![aeq])ue|ae|oe)\p{L}{2,}(?![\p{L}\d])/giu
 const DE_ASCII_SZ = /(?<!\p{L})(?:einschliesslich|abschliessen|schliesslich|anschliessend|schliesst|ausserdem|ausserhalb|weiss|gross|grosse|groesse|heisst|regelmaessig|gemaess)(?!\p{L})/giu

@@ -12,6 +12,7 @@ Schnelle Antworten auf häufige Fragen zu MyCompanyDesk. Jeder Eintrag entsprich
 - [Kunden hinzufügen](/de/faq/add-customer)
 - [Position hinzufügen](/de/faq/add-line-item)
 - [Add logo](/de/faq/add-logo)
+- [Weiteres Postfach oder weitere E-Mail-Adresse hinzufügen](/de/faq/add-mailbox)
 - [Add VAT number](/de/faq/add-vat-number)
 - [API-Schlüssel](/de/faq/api-keys)
 - [Automatic Reminders](/de/faq/automatic-reminders)

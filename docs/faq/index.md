@@ -12,6 +12,7 @@ Snelle antwoorden op veelvoorkomende vragen over MyCompanyDesk. Elk antwoord mat
 - [Klant toevoegen](/faq/add-customer)
 - [Factuurregel toevoegen](/faq/add-line-item)
 - [Add logo](/faq/add-logo)
+- [Extra postbus of e-mailadres toevoegen](/faq/add-mailbox)
 - [Add VAT number](/faq/add-vat-number)
 - [API-sleutels](/faq/api-keys)
 - [Automatic Reminders](/faq/automatic-reminders)
