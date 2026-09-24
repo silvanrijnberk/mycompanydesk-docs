@@ -298,6 +298,18 @@ Looking up and fetching images happens entirely on our server, never in your bro
 
 Outgoing mail shows the photo of whoever actually wrote it: your own photo, or a colleague's from the member list. Older outgoing mail without a recorded author shows your photo in a one-person workspace and the monogram in a team.
 
+#### Using your mailbox in a mail app
+
+You can connect a MyCompanyDesk mailbox to a regular mail app: **Inbox > Settings**, open the mailbox, then **Connect mail app**. The modal gives you everything the app asks for: the incoming server (IMAP), POP3 for apps without IMAP, the outgoing server (SMTP), the username (your mailbox address) and an app password.
+
+The inbox stays the source of truth. Reading, sending, folders and read status stay in sync with your Inbox in MyCompanyDesk, in both directions: read a message in your mail app and it shows as read in the inbox, and mail you send from the mail app lands in the right conversation. The folders are fixed (Inbox, Archive, Sent, Drafts, Junk, Trash) and appear under their familiar names in your mail app; creating or renaming folders from the mail app is not supported.
+
+The modal walks you through setup per mail app, with a step-by-step guide for Apple Mail, Outlook, the Gmail app and Thunderbird. For Apple devices you can download an installation profile that fills in the server settings for you, and Thunderbird finds the servers on its own. In the Gmail app you add the account with **Personal (IMAP)**; Gmail on the web does not fetch other accounts, but you can connect it for sending.
+
+Your app password is created in the same modal and is shown once. It works for both incoming and outgoing mail. Revoking it disconnects the mail app immediately.
+
+Whether reading through IMAP and POP3 is switched on can depend on the server. If reading is not available yet, the modal says so and you can still set up sending. POP3 fetches the inbox folder only, so IMAP is the better choice when your app supports it.
+
 ### Sales
 
 When you add buy buttons to pricing tiers or a product block on your public site, every completed payment creates a sale record. Track them at **Money > Sales** (`/workspace/financial/money/sales`).

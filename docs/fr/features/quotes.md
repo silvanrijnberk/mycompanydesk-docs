@@ -22,6 +22,16 @@ La section devis vous permet de creer, envoyer et suivre des devis. Les devis su
 
 Le formulaire de devis est similaire au formulaire de facture -- si vous savez creer une facture, vous savez deja creer un devis.
 
+## Des photos sur votre devis
+
+Un devis peut contenir jusqu'à douze photos. Elles montrent ce dont il s'agit : l'emplacement, la situation actuelle ou le dégât avant votre intervention. Ajoutez-les sur le devis avec **Ajouter des photos**, depuis la caméra ou depuis votre galerie.
+
+Chaque photo porte une description facultative, pour que le client sache ce qu'il regarde. Vous pouvez changer l'ordre des photos ou en supprimer. Les photos ajoutées avant l'enregistrement du devis sont gardées en attente : le devis est enregistré comme brouillon automatiquement, pour que rien ne se perde.
+
+Les photos figurent sous les lignes, à trois endroits : dans le PDF du devis, sur la page de devis publique que votre client ouvre, et dans la vue de signature. Chaque photo est réduite de notre côté à une taille adaptée au web : ajouter des photos ne ralentit pas le devis. Si les photos sont trop lourdes ensemble pour une pièce jointe, le PDF ne garde que celles qui tiennent et l'application vous signale que toutes n'y sont pas.
+
+Dès que le devis est accepté ou refusé, en attente de signature ou dans la corbeille, les photos sont verrouillées et ne peuvent plus être modifiées.
+
 ## Envoyer un devis
 
 1. Ouvrez la page de detail du devis

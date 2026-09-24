@@ -298,6 +298,18 @@ Suche und Abruf laufen vollständig auf unserem Server, nie in Ihrem Browser. Gr
 
 Ausgehende E-Mail zeigt das Foto der Person, die sie wirklich geschrieben hat: Ihres oder das eines Kollegen oder einer Kollegin aus der Mitgliederliste. Ältere ausgehende E-Mail ohne erfassten Verfasser zeigt in einem Ein-Personen-Workspace Ihr Foto und in einem Team das Monogramm.
 
+#### Ihr Postfach in einer Mail-App verwenden
+
+Sie verbinden ein MyCompanyDesk-Postfach mit einer gewöhnlichen Mail-App: **Posteingang > Einstellungen**, öffnen Sie das Postfach und wählen Sie **Mail-App verbinden**. Das Fenster liefert alles, was die App verlangt: den eingehenden Server (IMAP), POP3 für Apps ohne IMAP, den ausgehenden Server (SMTP), den Benutzernamen (Ihre Postfachadresse) und ein App-Passwort.
+
+Der Posteingang bleibt die Quelle der Wahrheit. Lesen, Senden, Ordner und Lesestatus bleiben mit Ihrem Posteingang in MyCompanyDesk synchron, in beide Richtungen: lesen Sie eine Nachricht in Ihrer Mail-App, gilt sie auch im Posteingang als gelesen, und E-Mail, die Sie aus der Mail-App senden, landet im richtigen Gespräch. Die Ordner stehen fest (Posteingang, Archiv, Gesendet, Entwürfe, Junk, Papierkorb) und erscheinen in Ihrer Mail-App unter den gewohnten Namen; Ordner anlegen oder umbenennen aus der Mail-App ist nicht möglich.
+
+Das Fenster begleitet Sie pro Mail-App, mit einer Schritt-für-Schritt-Anleitung für Apple Mail, Outlook, die Gmail-App und Thunderbird. Für Apple-Geräte laden Sie ein Installationsprofil herunter, das die Servereinstellungen für Sie einträgt, und Thunderbird findet die Server von selbst. In der Gmail-App fügen Sie das Konto mit **Persönlich (IMAP)** hinzu; Gmail im Browser ruft keine anderen Konten ab, aber Sie verbinden ihn für das Senden.
+
+Ihr App-Passwort legen Sie im selben Fenster an und sehen es einmal. Es gilt für ein- und ausgehende Post. Widerrufen trennt die Verbindung zur Mail-App sofort.
+
+Ob Lesen über IMAP und POP3 eingeschaltet ist, kann je nach Server unterschiedlich sein. Ist Lesen noch nicht verfügbar, sagt das Fenster das, und Senden können Sie trotzdem einrichten. POP3 holt nur den Posteingangsordner, darum ist IMAP die bessere Wahl, wenn Ihre App es unterstützt.
+
 ### Verkäufe
 
 Wenn Sie Kauf-Buttons zu Preisstufen oder einem Produktblock auf Ihrer öffentlichen Website hinzufügen, erstellt jede abgeschlossene Zahlung einen Verkaufsdatensatz. Verfolgen Sie diese unter **Geld > Verkäufe** (`/workspace/financial/money/sales`).

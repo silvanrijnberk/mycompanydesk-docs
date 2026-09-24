@@ -22,6 +22,16 @@ The quotes section lets you create, send, and track quotations. Quotes follow a 
 
 The quote form is similar to the invoice form — if you know how to create an invoice, you already know how to create a quote.
 
+## Photos on a quote
+
+A quote can hold up to twelve photos. They show what the quote is about: the spot, the current situation, or the damage before you start. Add them on the quote with **Add photos**, straight from the camera or from your gallery.
+
+Every photo carries an optional description, so the customer knows what they are looking at. You can reorder photos or remove them again. Photos you add before saving the quote are kept as pending: the quote is saved as a draft automatically, so nothing is lost.
+
+The photos appear below the line items, in three places: on the quote PDF, on the public quote page your customer opens, and in the signing view. Each photo is shrunk to a web-friendly size on our side, so adding photos does not slow down the quote. If the photos together are too large to attach to an email, the PDF carries the ones that fit and the app tells you that some did not make it.
+
+Once the quote has been accepted or rejected, is out for signing, or sits in the trash, the photos are locked and can no longer be changed.
+
 ## Sending a quote
 
 1. Open the quote detail page

@@ -22,6 +22,16 @@ Der Angebotsbereich ermöglicht es Ihnen, Angebote zu erstellen, zu versenden un
 
 Das Angebotsformular ähnelt dem Rechnungsformular — wenn Sie wissen, wie man eine Rechnung erstellt, wissen Sie bereits, wie man ein Angebot erstellt.
 
+## Fotos bei einem Angebot
+
+Ein Angebot fasst bis zu zwölf Fotos. Sie zeigen, worum es im Angebot geht: die Stelle, die aktuelle Situation oder den Schaden, bevor Sie anfangen. Fügen Sie sie auf dem Angebot mit **Fotos hinzufügen** hinzu, direkt aus der Kamera oder aus Ihrer Galerie.
+
+Jedes Foto trägt eine optionale Beschreibung, damit der Kunde weiß, was er sieht. Sie ändern die Reihenfolge oder entfernen ein Foto wieder. Fotos, die Sie hinzufügen, bevor Sie das Angebot speichern, werden als wartend übernommen: das Angebot wird automatisch als Entwurf gespeichert, damit nichts verloren geht.
+
+Die Fotos stehen unter den Positionen, an drei Stellen: im Angebot-PDF, auf der öffentlichen Angebotsseite, die Ihr Kunde öffnet, und in der Unterschriftsansicht. Jedes Foto verkleinern wir auf unserer Seite auf eine webfreundliche Größe, darum werden Angebote mit Fotos nicht langsamer. Sind die Fotos zusammen zu groß für eine E-Mail-Anlage, enthält das PDF nur die Fotos, die hineinpassen, und die App sagt Ihnen, dass nicht alle mitgekommen sind.
+
+Sobald das Angebot angenommen oder abgelehnt wurde, zur Unterschrift vorliegt oder im Papierkorb liegt, sind die Fotos gesperrt und lassen sich nicht mehr ändern.
+
 ## Angebot versenden
 
 1. Öffnen Sie die Angebotsdetailseite
