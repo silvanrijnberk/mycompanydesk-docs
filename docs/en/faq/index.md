@@ -12,6 +12,7 @@ Quick answers to common questions about MyCompanyDesk. Each entry mirrors what t
 - [Add customer](/en/faq/add-customer)
 - [Add Line Item](/en/faq/add-line-item)
 - [Add logo](/en/faq/add-logo)
+- [Add an extra mailbox or email address](/en/faq/add-mailbox)
 - [Add VAT number](/en/faq/add-vat-number)
 - [Api keys](/en/faq/api-keys)
 - [Automatic Reminders](/en/faq/automatic-reminders)

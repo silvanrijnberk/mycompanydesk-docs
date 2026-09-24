@@ -12,6 +12,7 @@ Réponses rapides aux questions courantes sur MyCompanyDesk. Chaque entrée corr
 - [Ajouter un client](/fr/faq/add-customer)
 - [Ajouter une ligne](/fr/faq/add-line-item)
 - [Add logo](/fr/faq/add-logo)
+- [Ajouter une boîte mail ou une adresse e-mail](/fr/faq/add-mailbox)
 - [Add VAT number](/fr/faq/add-vat-number)
 - [Clés API](/fr/faq/api-keys)
 - [Automatic Reminders](/fr/faq/automatic-reminders)
