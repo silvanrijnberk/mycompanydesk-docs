@@ -9,6 +9,8 @@ chatbot:
   follow_up: ["Comment connecter mon propre domaine ?", "Comment envoyer depuis cette adresse dans mon application de messagerie ?"]
 ---
 
+Vous voulez une deuxième adresse e-mail sur votre domaine, par exemple `devis@` ou `info@` en plus de votre propre adresse ? C'est possible. Créez une boîte mail supplémentaire, ou ajoutez une adresse supplémentaire (alias) à une boîte existante.
+
 Vous créez une boîte mail supplémentaire sur votre propre domaine dans l'Inbox, sous l'onglet **Adressen** (adresses) :
 
 1. Ouvrez l'**Inbox** et choisissez **Adressen** en haut.
@@ -19,7 +21,7 @@ Vous créez une boîte mail supplémentaire sur votre propre domaine dans l'Inbo
 
 Les e-mails envoyés à la nouvelle adresse arrivent dans cette boîte, et vous pouvez envoyer depuis celle-ci dans l'Inbox.
 
-## Une adresse de plus, sans boîte séparée
+## Une adresse de plus (alias), sans boîte séparée
 
 Vous voulez recevoir et envoyer sur une deuxième adresse tout en gardant tout dans la même boîte ? Cliquez sur le crayon à côté de cette boîte et ajoutez l'adresse sous **Verzend-als-adressen** (adresses d'envoi). Une réponse à un e-mail reçu sur cette adresse part de cette même adresse.
 

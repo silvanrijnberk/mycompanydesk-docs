@@ -9,6 +9,8 @@ chatbot:
   follow_up: ["Hoe koppel ik mijn eigen domein?", "Hoe verstuur ik vanaf dit adres uit mijn mailapp?"]
 ---
 
+Wil je een tweede e-mailadres op je domein, bijvoorbeeld `offerte@` of `info@` naast je eigen adres? Dat kan. Je maakt een extra postbus aan, of je geeft een bestaande postbus een extra adres (alias).
+
 Een extra postbus op je eigen domein maak je aan in de Inbox, op het tabblad **Adressen**:
 
 1. Open **Inbox** en kies bovenin **Adressen**.
@@ -19,7 +21,7 @@ Een extra postbus op je eigen domein maak je aan in de Inbox, op het tabblad **A
 
 Mail naar het nieuwe adres komt in die postbus binnen, en je kunt er in de Inbox vanaf versturen.
 
-## Alleen een extra adres, zonder aparte postbus
+## Alleen een extra adres (alias), zonder aparte postbus
 
 Wil je op een tweede adres mail ontvangen en versturen, maar alles in dezelfde postbus houden? Klik dan bij die postbus op het potloodje en voeg het adres toe onder **Verzend-als-adressen**. Een antwoord op mail aan dat adres gaat vanaf hetzelfde adres de deur uit.
 

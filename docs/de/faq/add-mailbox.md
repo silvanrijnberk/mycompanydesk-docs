@@ -9,6 +9,8 @@ chatbot:
   follow_up: ["Wie verbinde ich meine eigene Domain?", "Wie sende ich aus meiner Mail-App von dieser Adresse?"]
 ---
 
+Sie möchten eine zweite E-Mail-Adresse auf Ihrer Domain, zum Beispiel `angebote@` oder `info@` neben Ihrer eigenen Adresse? Das geht. Sie legen ein weiteres Postfach an oder geben einem bestehenden Postfach eine zusätzliche Adresse (Alias).
+
 Ein weiteres Postfach auf Ihrer eigenen Domain legen Sie in der Inbox auf dem Tab **Adressen** an:
 
 1. Öffnen Sie die **Inbox** und wählen Sie oben **Adressen**.
@@ -19,7 +21,7 @@ Ein weiteres Postfach auf Ihrer eigenen Domain legen Sie in der Inbox auf dem Ta
 
 Mails an die neue Adresse landen in diesem Postfach, und Sie können in der Inbox von dort aus senden.
 
-## Nur eine zusätzliche Adresse, ohne eigenes Postfach
+## Nur eine zusätzliche Adresse (Alias), ohne eigenes Postfach
 
 Sie möchten unter einer zweiten Adresse empfangen und senden, aber alles im selben Postfach behalten? Klicken Sie bei diesem Postfach auf den Stift und fügen Sie die Adresse unter **Verzend-als-adressen** (Senden-als-Adressen) hinzu. Eine Antwort auf eine Mail an diese Adresse geht von derselben Adresse aus hinaus.
 
