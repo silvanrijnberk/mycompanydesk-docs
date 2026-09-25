@@ -15,7 +15,7 @@ Siehe die [Übersicht der Einstellungen](/de/settings/) für die vollständige E
 Ihr Name, Ihre E-Mail-Adresse und Ihr Profilfoto.
 
 - **Vorname** und **Nachname**. Ihr Name erscheint auch auf Ihren Rechnungen.
-- **E-Mail-Adresse**. Das ist Ihr Login und kann hier nicht geändert werden; das Feld ist schreibgeschützt.
+- **E-Mail-Adresse**. Das ist die Adresse, mit der Sie sich anmelden. Über **E-Mail-Adresse ändern** ändern Sie sie selbst; siehe [E-Mail-Adresse ändern](/de/faq/change-email).
 - **Profilfoto**. Laden Sie ein PNG, JPG oder WebP von maximal 5 MB hoch und schneiden Sie es zu, bevor es live geht: Verschieben Sie das Foto per Ziehen und zoomen Sie, bis Ihr Kopf gut im Kreis sitzt. Kunden sehen das Foto bei E-Mails, die Sie senden. Wenn Sie Ihr Konto mit Google oder Microsoft anlegen, übernehmen wir Ihr Profilfoto automatisch von dort; das passiert nur beim Anlegen des Kontos, danach ist Ersetzen oder Entfernen immer Ihre Entscheidung. Ein Foto ist optional, und Sie können es jederzeit wieder entfernen.
 
 ## Darstellung

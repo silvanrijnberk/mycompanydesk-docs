@@ -45,6 +45,8 @@ At least one of these must be turned on for a quote, otherwise the customer has 
 
 If your workspace has general terms in Documents, the email preview also shows an **Include general terms** toggle. It is on by default for quotes. When enabled, the current terms PDF is attached to the email and the send is recorded as the provision event on the terms document.
 
+A quote also needs at least one line before it can be finalized or sent: the app refuses an empty quote and asks you to add a line first.
+
 ## Customer activity
 
 Once a quote has been emailed, the quote detail page shows a set of engagement pills that mirror the activity log already used for invoices:
@@ -111,6 +113,24 @@ Once a customer accepts your quote, convert it to an invoice with one click:
 4. Make any adjustments if needed
 5. Save and send the invoice
 
+## Deposit on acceptance
+
+A quote can include a deposit that is invoiced as soon as the customer signs. In the quote form, find the **Deposit on acceptance** section and choose:
+
+- **%** for a percentage of the quote total
+- **€** for a fixed amount you enter yourself
+- **None** for no deposit
+
+VAT on the deposit is calculated on the deposit invoice at the rates of the underlying lines. The quote PDF and the email name the deposit under its own "Deposit on acceptance" label, and a fixed deposit is always marked excl. VAT there. A deposit has to be at least €0.50.
+
+The page your customer signs shows the deposit as its own section: they can pay it online right away, open the deposit invoice, or pay later via the link in the email.
+
+When the customer signs, the deposit invoice is created from the same line items. With the default delivery setting it is sent immediately with a payment link; you can also keep it as a draft and send it yourself. The deposit invoice gets its own payment term, shorter than your usual term, because the customer has just said yes. The quote detail page follows the deposit invoice on its **Deposit** card: agreed, draft, sent, overdue or paid.
+
+When you convert the rest of the work to an invoice, the final invoice carries a negative **Settles deposit** line, so the customer only pays what is left. The deposit invoice itself stays a normal invoice in your lists, with its VAT due in the period of its own invoice date. Remove the settlement and the customer pays the full amount on top of the deposit; you can settle the deposit again later.
+
+You get a notification when the deposit invoice has been sent, is waiting as a draft, or could not be sent. The workspace default lives under **Settings > Invoices and quotes**, under Deposit: the standard percentage on new quotes, the payment term (7 days unless you change it), and whether signing sends the invoice right away or sets it up as a draft. You can adjust or remove the deposit per quote.
+
 ## Quote requests
 
 Customers can submit quote requests through your [site builder](/en/advanced/business-page). These appear in **Quotes > Requests**.
@@ -150,6 +170,10 @@ When a customer submits a quote request through your site builder or contact for
 - A notification tells you a concept quote is ready. Open the request, review the lines, link or create the customer, and send it when you are ready.
 
 This is a best-effort draft, not a finished proposal. Always check the prices and descriptions before sending.
+
+### Suggested customer from the request
+
+When you click **Create Quote** on a request, the requester's name and email appear as a suggested customer at the top of the customer field. Click **Use** to create the customer and put them on the quote, or ignore the suggestion and pick an existing customer yourself. The requester only becomes a customer once you confirm the suggestion; a customer whose name merely looks similar is never picked silently.
 
 ## Bulk actions
 

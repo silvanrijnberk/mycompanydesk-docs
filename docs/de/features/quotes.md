@@ -45,6 +45,8 @@ Für ein Angebot muss mindestens einer dieser Schalter aktiviert sein; sonst hat
 
 Wenn in Ihrem Arbeitsbereich Allgemeine Geschäftsbedingungen in Dokumenten hinterlegt sind, zeigt der E-Mail-Vorschau-Dialog außerdem den Schalter **Allgemeine Geschäftsbedingungen mitschicken** an. Er ist für Angebote standardmäßig aktiviert. Wenn Sie ihn einschalten, wird die aktuelle AGB-PDF der E-Mail beigefügt und der Versand als Übergabemoment auf dem AGB-Dokument protokolliert.
 
+Ein Angebot braucht außerdem mindestens eine Position, bevor es finalisiert oder versendet werden kann: Die App lehnt ein leeres Angebot ab und bittet Sie, zuerst eine Position hinzuzufügen.
+
 ## Kundenaktivität
 
 Sobald ein Angebot per E-Mail versendet wurde, zeigt die Detailseite Aktivitäts-Chips, die genauso funktionieren wie bei Rechnungen:
@@ -111,6 +113,24 @@ Sobald ein Kunde Ihr Angebot annimmt, wandeln Sie es mit einem Klick in eine Rec
 4. Nehmen Sie bei Bedarf Anpassungen vor
 5. Speichern und versenden Sie die Rechnung
 
+## Anzahlung bei Auftragserteilung
+
+Ein Angebot kann eine Anzahlung enthalten, die fakturiert wird, sobald der Kunde unterschreibt. Suchen Sie im Angebotsformular den Abschnitt **Anzahlung bei Auftragserteilung** und wählen Sie:
+
+- **%** für einen Prozentsatz des Angebotsgesamtbetrags
+- **€** für einen festen Betrag, den Sie selbst eintragen
+- **Keine** für keine Anzahlung
+
+Die USt. auf die Anzahlung berechnen wir auf der Anzahlungsrechnung mit den Sätzen der zugrunde liegenden Positionen. Das Angebots-PDF und die E-Mail nennen die Anzahlung unter dem eigenen Label „Anzahlung bei Auftragserteilung“, und ein fester Betrag wird dort immer als zzgl. MwSt. ausgewiesen. Eine Anzahlung muss mindestens 0,50 € betragen.
+
+Auf der Seite, die Ihr Kunde unterschreibt, ist die Anzahlung ein eigener Abschnitt: Ihr Kunde kann sofort online bezahlen, die Anzahlungsrechnung öffnen oder später über den Link in der E-Mail bezahlen.
+
+Unterschreibt der Kunde, wird die Anzahlungsrechnung aus denselben Positionen erstellt. Mit der Standardeinstellung wird sie direkt mit Zahlungslink versendet; Sie können sie auch als Entwurf bereitstellen und selbst senden. Die Anzahlungsrechnung erhält eine eigene Zahlungsfrist, kürzer als Ihre gewöhnliche Frist, denn der Kunde hat gerade zugesagt. Die Angebotsdetailseite verfolgt die Anzahlungsrechnung auf der Karte **Anzahlung**: vereinbart, Entwurf, versendet, überfällig oder bezahlt.
+
+Wandeln Sie den Rest der Arbeit in eine Rechnung um, erhält diese Endrechnung eine negative Position **Verrechnet Anzahlung**, damit der Kunde nur den Restbetrag zahlt. Die Anzahlungsrechnung selbst bleibt eine ganz normale Rechnung in Ihren Listen, deren USt. im Zeitraum ihres eigenen Rechnungsdatums fällig wird. Entfernen Sie die Verrechnung, zahlt der Kunde den vollen Betrag zusätzlich zur Anzahlung; Sie können die Anzahlung später erneut verrechnen.
+
+Sie erhalten eine Benachrichtigung, sobald die Anzahlungsrechnung versendet wurde, als Entwurf wartet oder nicht gesendet werden konnte. Den Arbeitsplatz-Standard stellen Sie unter **Einstellungen > Rechnungen und Angebote** bei Anzahlung ein: den Standardprozentsatz für neue Angebote, die Zahlungsfrist (7 Tage, sofern Sie nichts ändern) und ob die Unterschrift die Rechnung direkt versendet oder als Entwurf bereitstellt. Pro Angebot passen Sie die Anzahlung an oder entfernen sie.
+
 ## Angebotsanfragen
 
 Kunden können Angebotsanfragen über Ihren [Website-Builder](/de/advanced/business-page) einreichen. Diese erscheinen unter **Angebote > Anfragen**.
@@ -150,6 +170,10 @@ Wenn ein Kunde über Ihren Website-Builder oder Ihr Kontaktformular eine Angebot
 - Sie erhalten eine Benachrichtigung, sobald ein Konzept bereitsteht. Öffnen Sie die Anfrage, prüfen Sie die Positionen, verknüpfen oder erstellen Sie den Kunden und senden Sie das Angebot, wenn Sie bereit sind.
 
 Es ist ein best-effort-Entwurf, kein fertiges Angebot. Prüfen Sie immer Preise und Beschreibungen, bevor Sie versenden.
+
+### Vorgeschlagener Kunde aus der Anfrage
+
+Klicken Sie bei einer Anfrage auf **Angebot erstellen**, erscheinen Name und E-Mail-Adresse des Anfragenden oben im Kundenfeld als Vorschlag. Klicken Sie auf **Übernehmen**, um den Kunden anzulegen und auf das Angebot zu setzen, oder ignorieren Sie den Vorschlag und wählen Sie selbst einen bestehenden Kunden. Der Anfragende wird erst Kunde, wenn Sie den Vorschlag bestätigen; ein bestehender Kunde, dessen Name nur ähnlich klingt, wird nicht stillschweigend ausgewählt.
 
 ## Massenaktionen
 

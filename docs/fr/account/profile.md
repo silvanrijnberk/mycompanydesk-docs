@@ -15,7 +15,7 @@ Voir l'[aperçu des paramètres](/fr/settings/) pour la page de paramètres comp
 Votre nom, votre adresse e-mail et votre photo de profil.
 
 - **Prénom** et **nom**. Votre nom figure aussi sur vos factures.
-- **Adresse e-mail**. C'est votre identifiant de connexion et elle ne peut pas être modifiée ici; le champ est en lecture seule.
+- **Adresse e-mail**. C'est l'adresse avec laquelle vous vous connectez. Cliquez sur **Modifier votre adresse e-mail** pour la changer vous-même ; voir [Modifier l'adresse e-mail](/fr/faq/change-email).
 - **Photo de profil**. Téléversez un PNG, JPG ou WebP de 5 Mo maximum et recadrez-le avant qu'il ne soit en ligne : faites glisser la photo pour la déplacer et zoomez jusqu'à ce que votre tête soit bien dans le cercle. Vos clients la voient sur les e-mails que vous envoyez. Si vous créez votre compte avec Google ou Microsoft, nous reprenons votre photo de profil automatiquement ; cela n'arrive qu'à la création du compte, ensuite remplacer ou retirer la photo reste toujours votre décision. La photo est facultative et vous pouvez la retirer à tout moment.
 
 ## Affichage

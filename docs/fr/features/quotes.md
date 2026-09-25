@@ -45,6 +45,8 @@ Pour un devis, au moins l'une de ces options doit etre activee ; sinon le client
 
 Si votre espace de travail a des conditions generales dans Documents, l'apercu d'e-mail propose aussi l'option **Joindre les conditions generales**. Elle est activee par defaut pour les devis. Quand elle est activee, le PDF des conditions actuelles est joint a l'e-mail et l'envoi est enregistre comme evenement de remise sur le document des conditions.
 
+Un devis a aussi besoin d'au moins une ligne avant de pouvoir être finalisé ou envoyé : l'application refuse un devis vide et vous demande d'ajouter d'abord une ligne.
+
 ## Activité client
 
 Une fois qu'un devis a été envoyé par e-mail, la page de détail affiche des pastilles d'activité qui fonctionnent comme pour les factures :
@@ -111,6 +113,24 @@ Une fois que votre client accepte votre devis, convertissez-le en facture en un 
 4. Effectuez les ajustements necessaires
 5. Enregistrez et envoyez la facture
 
+## Acompte à l'acceptation
+
+Un devis peut inclure un acompte, facturé dès que le client signe. Dans le formulaire de devis, cherchez la section **Acompte à l'acceptation** et choisissez :
+
+- **%** pour un pourcentage du total du devis
+- **€** pour un montant fixe que vous saisissez vous-même
+- **Aucun** pour aucun acompte
+
+La TVA sur l'acompte est calculée sur la facture d'acompte avec les taux des lignes sous-jacentes. Le PDF du devis et l'e-mail nomment l'acompte sous son propre libellé « Acompte à l'acceptation », et un montant fixe y est toujours indiqué HT. Un acompte doit être d'au moins 0,50 €.
+
+Sur la page que votre client signe, l'acompte forme sa propre section : il peut payer en ligne immédiatement, ouvrir la facture d'acompte ou payer plus tard via le lien dans l'e-mail.
+
+Quand le client signe, la facture d'acompte est créée à partir des mêmes lignes. Avec le réglage par défaut, elle est envoyée immédiatement avec un lien de paiement ; vous pouvez aussi la préparer en brouillon et l'envoyer vous-même. La facture d'acompte reçoit son propre délai de paiement, plus court que votre délai habituel, car le client vient de dire oui. La page de détail du devis suit la facture d'acompte sur la carte **Acompte** : convenu, brouillon, envoyée, en retard ou payée.
+
+Quand vous convertissez le reste du travail en facture, cette facture finale reçoit une ligne négative **Déduit l'acompte**, pour que le client ne paie que le restant. La facture d'acompte elle-même reste une facture normale dans vos listes, dont la TVA est due sur la période de sa propre date de facture. Retirez la déduction et le client paie le montant complet en plus de l'acompte ; vous pourrez déduire l'acompte à nouveau plus tard.
+
+Vous recevez une notification dès que la facture d'acompte a été envoyée, attend en brouillon ou n'a pas pu être envoyée. La valeur par défaut de l'espace se règle sous **Paramètres > Factures et devis**, dans Acompte : le pourcentage par défaut sur les nouveaux devis, le délai de paiement (7 jours par défaut) et l'envoi immédiat à la signature ou la préparation en brouillon. Vous ajustez ou retirez l'acompte par devis.
+
 ## Demandes de devis
 
 Les clients peuvent soumettre des demandes de devis via votre [constructeur de site](/fr/advanced/business-page). Celles-ci apparaissent dans **Devis > Demandes**.
@@ -150,6 +170,10 @@ Quand un client soumet une demande de devis via votre constructeur de site ou vo
 - Une notification vous indique qu'un brouillon est pret. Ouvrez la demande, verifiez les lignes, liez ou creez le client, et envoyez le devis quand vous le souhaitez.
 
 C'est un brouillon automatique, pas une proposition finalisee. Verifiez toujours les prix et les descriptions avant d'envoyer.
+
+### Client suggéré depuis la demande
+
+Quand vous cliquez sur **Créer un devis** sur une demande, le nom et l'adresse e-mail du demandeur apparaissent comme client suggéré en haut du champ client. Cliquez sur **Utiliser** pour créer le client et l'ajouter au devis, ou ignorez la suggestion et choisissez vous-même un client existant. Le demandeur ne devient client qu'une fois votre confirmation donnée ; un client existant dont le nom ressemble seulement n'est pas choisi en silence.
 
 ## Actions groupees
 

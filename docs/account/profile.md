@@ -15,7 +15,7 @@ Zie het [overzicht van de instellingen](/settings/) voor de volledige instelling
 Je naam, e-mailadres en profielfoto.
 
 - **Voornaam** en **achternaam**. Je naam komt ook op je facturen te staan.
-- **E-mailadres**. Dit is je login en kun je hier niet wijzigen; het veld is alleen-lezen.
+- **E-mailadres**. Dit is het adres waarmee je inlogt. Klik op **Wijzig je e-mailadres** om het zelf te veranderen; zie [E-mailadres wijzigen](/faq/change-email).
 - **Profielfoto**. Upload een PNG, JPG of WebP van maximaal 5 MB en snij hem bij voordat hij live gaat: sleep de foto om hem te verschuiven en zoom tot je hoofd goed in de cirkel staat. Klanten zien de foto bij e-mails die je stuurt. Maak je je account aan met Google of Microsoft, dan nemen we je profielfoto daar automatisch van over; dat gebeurt alleen bij het aanmaken van je account, daarna is vervangen of weghalen altijd jouw keus. Een foto is niet verplicht en je kunt hem altijd weer verwijderen.
 
 ## Weergave
