@@ -70,7 +70,7 @@ You can ask a customer to sign a quote online instead of sending it only as a PD
 
 If the signing e-mail cannot be delivered because of a problem with your sender settings, an error toast appears with the message to check your e-mail settings and try again. The signing request itself is created on the server, so you can resend it once the e-mail settings are fixed.
 
-A signing request cannot be sent once a quote has been rejected or after its validity date has passed. The **Send for signing** action is blocked for quotes in the **Rejected** or **Expired** status, so you cannot ask a customer to sign a quote that is no longer active.
+A signing request cannot be sent once a quote has been rejected or after its validity date has passed. The **Send for signing** action is blocked for quotes in the **Rejected** or **Expired** status, so you cannot ask a customer to sign a quote that is no longer active. The action is also refused when the customer has already signed the quote, so a signed quote gets no second signing request. And a quote you have already set to **Accepted** yourself can no longer be declined through the sign link, while the customer can still sign it.
 
 ## Quote detail actions
 
@@ -159,6 +159,8 @@ Each request shows:
 2. Click **Mark as Reviewed** after reading
 3. Click **Create Quote** to generate a quote for this customer
 4. The quote is pre-filled with the customer's information
+
+When you create a quote from a request, the customer's own message shows read-only above the notes field, marked as visible only to you. It no longer lands in the notes themselves, because notes print on the quote PDF and appear in the customer portal.
 
 ### AI concept quote from a request
 

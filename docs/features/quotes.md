@@ -70,7 +70,7 @@ Je kunt een klant vragen een offerte online te ondertekenen in plaats van hem al
 
 Als de e-mail voor het tekenen niet kan worden afgeleverd door een probleem met je e-mailinstellingen, verschijnt er een foutmelding met de vraag je e-mailinstellingen te controleren en het opnieuw te proberen. Het tekenverzoek zelf wordt op de server aangemaakt, dus je kunt het opnieuw versturen zodra de e-mailinstellingen in orde zijn.
 
-Een tekenverzoek kan niet meer worden verstuurd zodra een offerte is afgewezen of na de geldig-tot-datum. De actie **Naar tekenen versturen** is geblokkeerd voor offertes met de status **Afgewezen** of **Verlopen**, zodat je geen klant meer kunt vragen een offerte te ondertekenen die niet meer actief is.
+Een tekenverzoek kan niet meer worden verstuurd zodra een offerte is afgewezen of na de geldig-tot-datum. De actie **Naar tekenen versturen** is geblokkeerd voor offertes met de status **Afgewezen** of **Verlopen**, zodat je geen klant meer kunt vragen een offerte te ondertekenen die niet meer actief is. De actie wordt ook geweigerd als de klant de offerte al heeft ondertekend: een ondertekende offerte krijgt geen tweede tekenverzoek. En een offerte die je zelf al op **Geaccepteerd** hebt gezet, kan via de tekenlink niet meer worden afgewezen; de klant kan hem via de link wel nog ondertekenen.
 
 ## Acties op de offertedetailpagina
 
@@ -159,6 +159,8 @@ Elke aanvraag toont:
 2. Klik op **Markeer als bekeken** na het lezen
 3. Klik op **Offerte aanmaken** om een offerte te genereren voor deze klant
 4. De offerte wordt vooraf ingevuld met de klantgegevens
+
+Maak je een offerte vanuit een aanvraag, dan staat het bericht van de aanvrager boven het notitieveld, alleen-lezen en gemarkeerd als alleen voor jou zichtbaar. Het komt niet meer in de notities zelf, want notities printen op de offerte-PDF en verschijnen in het klantportaal.
 
 ### AI-conceptofferte bij een aanvraag
 
