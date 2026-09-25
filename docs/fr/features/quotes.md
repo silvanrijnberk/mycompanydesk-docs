@@ -70,7 +70,7 @@ Vous pouvez demander à un client de signer un devis en ligne au lieu de ne l'en
 
 Si l'e-mail de signature ne peut pas être livré en raison d'un problème avec vos paramètres d'envoi, un message d'erreur apparaît vous demandant de vérifier vos paramètres e-mail et de réessayer. La demande de signature elle-même est créée sur le serveur, vous pouvez donc la renvoyer une fois les paramètres e-mail corrigés.
 
-Une demande de signature ne peut plus être envoyée une fois qu'un devis a été refusé ou après la date de validité. L'action **Envoyer pour signature** est bloquée pour les devis dont le statut est **Refusé** ou **Expiré**, afin que vous ne puissiez plus demander à un client de signer un devis qui n'est plus actif.
+Une demande de signature ne peut plus être envoyée une fois qu'un devis a été refusé ou après la date de validité. L'action **Envoyer pour signature** est bloquée pour les devis dont le statut est **Refusé** ou **Expiré**, afin que vous ne puissiez plus demander à un client de signer un devis qui n'est plus actif. L'action est également refusée lorsque le client a déjà signé le devis : un devis signé ne reçoit pas de seconde demande de signature. Et un devis que vous avez déjà passé vous-même sur **Accepté** ne peut plus être refusé via le lien de signature ; le client peut toujours le signer via le lien.
 
 ## Actions sur la page de detail du devis
 
@@ -158,9 +158,11 @@ Chaque demande affiche :
 1. Ouvrez la demande
 2. Cliquez sur **Marquer comme examinee** apres lecture
 3. Cliquez sur **Creer un devis** pour generer un devis pour ce client
-4. Le devis est pre-rempli avec les informations du client
+4. Le devis est pré-rempli avec les informations du client
 
-### Brouillon de devis IA a partir d'une demande
+Lorsque vous créez un devis à partir d'une demande, le message du demandeur s'affiche en lecture seule au-dessus du champ de notes, marqué comme visible uniquement par vous. Il n'atterrit plus dans les notes elles-mêmes, car les notes s'impriment sur le PDF du devis et apparaissent dans le portail client.
+
+### Brouillon de devis IA à partir d'une demande
 
 Quand un client soumet une demande de devis via votre constructeur de site ou votre formulaire de contact, MyCompanyDesk peut automatiquement rediger un brouillon de devis. L'IA lit le texte de la demande et votre propre catalogue, puis propose des lignes qu'elle peut faire correspondre.
 

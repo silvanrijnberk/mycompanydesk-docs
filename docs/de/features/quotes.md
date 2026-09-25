@@ -70,7 +70,7 @@ Sie können einen Kunden bitten, ein Angebot online zu unterschreiben, anstatt e
 
 Wenn die E-Mail zum Unterschreiben aufgrund eines Problems mit Ihren E-Mail-Einstellungen nicht zugestellt werden kann, erscheint eine Fehlermeldung, die Sie auffordert, Ihre E-Mail-Einstellungen zu prüfen und es erneut zu versuchen. Die Unterschriftenanfrage selbst wird auf dem Server erstellt, sodass Sie sie erneut senden können, sobald die E-Mail-Einstellungen korrigiert sind.
 
-Eine Unterschriftenanfrage kann nicht mehr versendet werden, sobald ein Angebot abgelehnt wurde oder nach Ablauf des Gültigkeitsdatums. Die Aktion **Zum Unterschreiben senden** ist für Angebote mit dem Status **Abgelehnt** oder **Abgelaufen** gesperrt, sodass Sie keinen Kunden mehr bitten können, ein Angebot zu unterschreiben, das nicht mehr aktiv ist.
+Eine Unterschriftenanfrage kann nicht mehr versendet werden, sobald ein Angebot abgelehnt wurde oder nach Ablauf des Gültigkeitsdatums. Die Aktion **Zum Unterschreiben senden** ist für Angebote mit dem Status **Abgelehnt** oder **Abgelaufen** gesperrt, sodass Sie keinen Kunden mehr bitten können, ein Angebot zu unterschreiben, das nicht mehr aktiv ist. Die Aktion wird auch abgelehnt, wenn der Kunde das Angebot bereits unterschrieben hat: ein unterschriebenes Angebot erhält keine zweite Unterschriftenanfrage. Und ein Angebot, das Sie selbst bereits auf **Angenommen** gesetzt haben, kann über den Unterschriften-Link nicht mehr abgelehnt werden; der Kunde kann es über den Link weiterhin unterschreiben.
 
 ## Detailaktionen für Angebote
 
@@ -159,6 +159,8 @@ Jede Anfrage zeigt:
 2. Klicken Sie auf **Als überprüft markieren** nach dem Lesen
 3. Klicken Sie auf **Angebot erstellen**, um ein Angebot für diesen Kunden zu generieren
 4. Das Angebot wird mit den Kundeninformationen vorausgefüllt
+
+Erstellen Sie ein Angebot aus einer Anfrage, dann steht die Nachricht des Anfragenden über dem Notizfeld, schreibgeschützt und gekennzeichnet als nur für Sie sichtbar. Sie landet nicht mehr in den Notizen selbst, denn Notizen erscheinen auf dem Angebots-PDF und im Kundenportal.
 
 ### KI-Konzeptangebot aus einer Anfrage
 
