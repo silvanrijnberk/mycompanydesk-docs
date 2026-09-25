@@ -45,6 +45,8 @@ Voor een offerte moet er minstens één van deze schakelaars aan staan; anders k
 
 Als je werkruimte algemene voorwaarden in Documenten heeft staan, toont de e-mailvoorbeelddialoog ook de schakelaar **Algemene voorwaarden meesturen**. Deze staat standaard aan voor offertes. Als je hem inschakelt, wordt de huidige voorwaarden-PDF bij de e-mail gevoegd en wordt de verzending vastgelegd als het terhandstellingsmoment op het voorwaardendocument.
 
+Een offerte heeft ook minstens één regel nodig voordat hij definitief kan worden gemaakt of verstuurd: de app weigert een lege offerte en vraagt je eerst een regel toe te voegen.
+
 ## Klantactiviteit
 
 Zodra een offerte per e-mail is verstuurd, toont de detailpagina een rij signalen die precies hetzelfde werken als bij facturen:
@@ -111,6 +113,24 @@ Zodra een klant je offerte accepteert, zet je deze met een klik om naar een fact
 4. Pas indien nodig aan
 5. Sla op en verstuur de factuur
 
+## Aanbetaling bij akkoord
+
+Een offerte kan een aanbetaling bevatten die wordt gefactureerd zodra de klant tekent. Zoek in het offerteformulier de sectie **Aanbetaling bij akkoord** en kies:
+
+- **%** voor een percentage van het offertetotaal
+- **€** voor een vast bedrag dat je zelf invult
+- **Geen** voor geen aanbetaling
+
+De btw over de aanbetaling berekenen we op de aanbetalingsfactuur met de tarieven van de onderliggende regels. De offerte-PDF en de e-mail noemen de aanbetaling onder het eigen label "Aanbetaling bij akkoord", en een vast bedrag staat daar altijd als excl. btw. Een aanbetaling moet minimaal € 0,50 zijn.
+
+Op de pagina die je klant ondertekent, staat de aanbetaling als eigen onderdeel: je klant kan direct online betalen, de aanbetalingsfactuur openen of later betalen via de link in de e-mail.
+
+Tekent de klant, dan wordt de aanbetalingsfactuur aangemaakt uit dezelfde regelitems. Met de standaardinstelling wordt hij direct verstuurd met een betaallink; je kunt hem ook als concept klaarzetten en zelf versturen. De aanbetalingsfactuur krijgt een eigen betaaltermijn, korter dan je gewone termijn, want de klant heeft net ja gezegd. De offertedetailpagina volgt de aanbetalingsfactuur op de kaart **Aanbetaling**: afgesproken, concept, verstuurd, te laat of betaald.
+
+Zet je de rest van de werk om naar een factuur, dan krijgt die eindfactuur een negatieve regel **Verrekent aanbetaling**, zodat de klant alleen het restant betaalt. De aanbetalingsfactuur zelf blijft een gewone factuur in je lijsten, waarvan de btw verschuldigd is in het tijdvak van zijn eigen factuurdatum. Haal je de verrekening weg, dan betaalt de klant het volledige bedrag bovenop de aanbetaling; je kunt de aanbetaling later weer verrekenen.
+
+Je krijgt een melding zodra de aanbetalingsfactuur is verstuurd, als concept wacht of niet kon worden verstuurd. De werkruimte-standaard staat onder **Instellingen > Facturen en offertes** bij Aanbetaling: het standaardpercentage op nieuwe offertes, de betaaltermijn (7 dagen tenzij je hem aanpast) en of ondertekenen de factuur direct verstuurt of als concept klaarzet. Per offerte pas je de aanbetaling aan of haal je hem weg.
+
 ## Offerteaanvragen
 
 Klanten kunnen offerteaanvragen indienen via je [sitebouwer](/advanced/business-page). Deze verschijnen in **Offertes > Aanvragen**.
@@ -150,6 +170,10 @@ Als een klant een offerteaanvraag via je sitebouwer of contactformulier indient,
 - Je krijgt een melding zodra een concept klaar staat. Open de aanvraag, controleer de regels, koppel of maak de klant aan en verstuur hem wanneer je wilt.
 
 Het is een best-effort concept, geen afgeronde offerte. Controleer altijd prijzen en omschrijvingen voordat je verstuurt.
+
+### Voorgestelde klant uit de aanvraag
+
+Klik je op **Offerte aanmaken** bij een aanvraag, dan verschijnen de naam en het e-mailadres van de aanvrager bovenin het klantveld als suggestie. Klik op **Gebruiken** om de klant aan te maken en op de offerte te zetten, of negeer de suggestie en kies zelf een bestaande klant. De aanvrager wordt pas een klant als jij de suggestie bevestigt; een bestaande klant wiens naam er alleen maar op lijkt, wordt niet stilletjes gekozen.
 
 ## Bulkacties
 
