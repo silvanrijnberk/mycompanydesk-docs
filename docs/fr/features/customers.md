@@ -97,7 +97,7 @@ Si vous possedez plus d'une entreprise, une carte **Entreprise propre** peut app
 - **Archiver** -- Deplacer vers les archives (restauration possible)
 
 :::caution
-L'archivage d'un client peut être bloqué si le client a encore une facture récurrente active ou des contrats en cours. MyCompanyDesk affiche alors un avertissement pour que vous puissiez d'abord mettre fin à la facture récurrente ou au contrat. Cela évite d'envoyer accidentellement encore des factures à un client archivé.
+L'archivage d'un client ayant une facture récurrente active ou des contrats en cours demande d'abord une confirmation. L'avertissement indique honnêtement ce que fait l'archivage : tant qu'un client est archivé, MyCompanyDesk ne crée plus de factures récurrentes et ne facture plus ses contrats, et les périodes sautées ne sont pas facturées ensuite. Mettez fin d'abord à la facture récurrente ou au contrat si cette facturation doit continuer.
 :::
 - **Supprimer** -- Supprimer definitivement le client
 

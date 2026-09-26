@@ -1,7 +1,7 @@
 ---
 title: Beveiliging
 description: "Beveilig je account met een sterk wachtwoord, tweestapsverificatie en zicht op je actieve sessies, allemaal onder Instellingen, Inloggen."
-last_verified: 2026-07-10
+last_verified: 2026-09-26
 ---
 
 # Beveiliging
@@ -78,7 +78,7 @@ Met passkeys log je in met biometrie of een beveiligingssleutel in plaats van ee
 
 ## Sessies
 
-De sessiekaart op **Instellingen > Inloggen** heeft één actie: **Uitloggen**, die je huidige sessie beëindigt. Er is geen lijst met andere apparaten en geen intrekken per sessie. Vermoed je dat iemand anders toegang heeft tot je account, wijzig dan je wachtwoord.
+De sessiekaart op **Instellingen > Inloggen** heeft één actie: **Uitloggen**, die je huidige sessie beëindigt. Er is geen lijst met andere apparaten en geen intrekken per sessie. Vermoed je dat iemand anders toegang heeft tot je account, wijzig dan je wachtwoord. Je wachtwoord wijzigen of resetten beëindigt elke andere sessie op je account (het apparaat waarop je het wijzigt, blijft ingelogd) en trekt de vertrouwde apparaten in die de 2FA-code overslaan.
 
 ## Inloggen via Google of Microsoft
 

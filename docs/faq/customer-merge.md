@@ -1,7 +1,7 @@
 ---
 title: "Klanten samenvoegen"
 description: "Om dubbele klantgegevens samen te voegen: ga naar Klanten, identificeer de dubbele vermeldingen, open een van de duplicaten."
-last_verified: 2026-05-09
+last_verified: 2026-09-26
 chatbot:
   triggers: ["merge customers", "duplicate customer", "combine customers", "customer duplicate", "klanten samenvoegen", "dubbele klant", "kunden zusammenfuhren", "fusionner clients", "doublons clients"]
   actions:
@@ -17,3 +17,5 @@ Om dubbele klantgegevens samen te voegen:
 6. Bevestig - alle facturen en geschiedenis worden samengevoegd
 
 Opmerking: Als er geen samenvoegoptie beschikbaar is, verplaats facturen handmatig en verwijder vervolgens het duplicaat.
+
+Een gearchiveerde klant kan niet de hoofdklant van een samenvoeging zijn. Herstel de gearchiveerde klant eerst naar actief: zolang een klant gearchiveerd is, worden zijn terugkerende facturen en contracten niet gefactureerd, en de samenvoeging zou die facturering dus stilleggen.

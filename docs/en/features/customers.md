@@ -97,7 +97,7 @@ If you own more than one business, a card titled **Eigen bedrijf** can appear on
 - **Archive** — Move to archive (can be restored later)
 
 :::caution
-Archiving a customer may be blocked when the customer still has an active recurring invoice or ongoing contracts. MyCompanyDesk shows a warning so you can end the recurring invoice or contract first. This prevents you from accidentally continuing to send invoices to an archived customer.
+Archiving a customer with an active recurring invoice or ongoing contracts asks for a confirmation first. The warning is honest about what archiving does: while a customer is archived, MyCompanyDesk creates no recurring invoices and bills no contracts for them, and skipped periods are not billed later. End the recurring invoice or contract first if that billing has to keep running.
 :::
 - **Delete** — Permanently remove the customer
 

@@ -1,7 +1,7 @@
 ---
 title: Zwei-Faktor-Authentifizierung
 description: "Die Zwei-Faktor-Authentifizierung (2FA) ergänzt Ihr Passwort um einen 6-stelligen Code aus einer Authenticator-App, gehen Sie zu Einstellungen > Anmeldung."
-last_verified: 2026-07-10
+last_verified: 2026-09-26
 chatbot:
   triggers: ["two factor", "two-factor", "2fa", "two step", "authenticator", "mfa", "tweestapsverificatie", "twee-factor", "zwei faktor", "authentification deux facteurs", "double authentification"]
   actions:
@@ -17,7 +17,7 @@ So aktivieren Sie 2FA:
 3. Geben Sie den 6-stelligen Code aus der App oder unter **Instellingen > Inlogcodes** ein und klicken Sie auf "Prüfen & aktivieren"
 4. Bewahren Sie die angezeigten Backup-Codes auf. Jeder Code funktioniert einmal, wenn Sie Ihren Authenticator nicht zur Hand haben
 
-Ab dann fragt die Anmeldung nach E-Mail-Adresse und Passwort zusätzlich nach dem 6-stelligen Code. Wenn Sie die MyCompanyDesk-App als Authenticator nutzen, finden Sie den aktuellen Code unter **Instellingen > Inlogcodes**. Aktivieren Sie die Option, dieses Gerät 30 Tage zu merken, und vertrauenswürdige Geräte überspringen den Code.
+Ab dann fragt die Anmeldung nach E-Mail-Adresse und Passwort zusätzlich nach dem 6-stelligen Code. Wenn Sie die MyCompanyDesk-App als Authenticator nutzen, finden Sie den aktuellen Code unter **Instellingen > Inlogcodes**. Aktivieren Sie die Option, dieses Gerät 30 Tage zu merken, und vertrauenswürdige Geräte überspringen den Code. Wenn Sie Ihr Passwort ändern oder zurücksetzen, endet dieses Vertrauen auf jedem Gerät, sodass der 6-stellige Code wieder abgefragt wird.
 
 Auf derselben Seite können Sie außerdem Passkeys hinzufügen (Touch ID, Face ID, Windows Hello oder Ihr Telefon), jedem Passkey einen Namen geben und nicht mehr genutzte Passkeys entfernen. Der Anmeldebildschirm bietet danach auch die Anmeldung per Passkey an.
 

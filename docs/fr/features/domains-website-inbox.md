@@ -95,7 +95,8 @@ Ce que la page vous permet de faire :
 - **Securite des e-mails** pour le domaine selectionne -- verification SPF/DMARC/DKIM avec une option "corriger" en un clic qui ecrit des valeurs par defaut securisees (`v=spf1 ~all`, `v=DMARC1; p=quarantine; …`).
 - **Parametres rapides** pour le domaine selectionne -- activer/desactiver le mode developpement Cloudflare, activer/desactiver le niveau de securite "Under attack", vider le cache.
 - **Analytique** pour le domaine selectionne -- 30 derniers jours de requêtes, bande passante, menaces, visiteurs, pages vues. Le point de terminaison Cloudflare Analytics actuel est en fin de vie ; la page affiche un etat `unavailable` vide jusqu'a la migration GraphQL.
-- **Supprimer** le domaine selectionne -- suppression logicielle de la ligne (`status = 'removed'`) et demantelement de la zone Cloudflare (ou du domaine Pages en mode CNAME).
+- **Supprimer** le domaine selectionne -- suppression logicielle de la ligne (`status = 'removed'`) et demantelement de la zone Cloudflare (ou du domaine Pages en mode CNAME). Si votre site tournait sur ce domaine, il revient vers un autre domaine de site actif ou vers l'adresse mycompanydesk.site gratuite.
+- **Domaines inactifs** dans une carte dédiée : les domaines expirés, les domaines transférés ailleurs et les domaines en CNAME jamais connectés y apparaissent avec un badge d'état et une courte explication, chacun avec une action de suppression ; les domaines expirés proposent aussi de contacter le support.
 
 #### Table `domains` -- l'etat partage
 
@@ -385,7 +386,7 @@ Ce lot correspond au côte **reception**. Les e-mails sortants -- envoi de factu
 
 ## Limites et points d'attention
 
-- **Un site web par entreprise.** L'ajout d'un domaine personnalise desactive le sous-domaine de l'espace de travail. La suppression du domaine ne reactive pas automatiquement le slug -- reactivez-le manuellement si vous souhaitez revenir en arriere.
+- **Un site web par entreprise.** L'ajout d'un domaine personnalisé désactive le sous-domaine de l'espace de travail. Supprimez le domaine qui porte votre site et le site revient de lui-même : vers un autre domaine de site web actif s'il y en a un, sinon vers l'adresse mycompanydesk.site gratuite.
 - **Une seule boite de reception active par domaine.** La plateforme n'autorise qu'un seul espace de travail a la fois a recevoir du courrier sur un domaine donne. Si un autre espace de travail a deja une boite active sur `acme.fr`, votre tentative d'activer la boite sur le meme nom est bloquee. Les sites web et les revendications CNAME ne sont pas bloques; seule une boite active est exclusive.
 - **Vous ne pouvez pas revendiquer une zone deja detenue par un autre espace de travail.** Lorsque vous ajoutez un domaine en mode nameserver, la plateforme verifie si la zone Cloudflare sous-jacente est deja active pour un autre espace de travail. Si c'est le cas, l'ajout est refuse avec un message d'erreur clair, pour eviter de "verifier" un domaine grace au DNS de quelqu'un d'autre.
 - **Re-ajouter votre propre domaine precedemment supprime fonctionne toujours.** Si votre espace de travail a precedemment supprime un domaine, la zone existante peut etre reutilisee pour le meme espace de travail; la protection bloque seulement qu'un autre espace de travail la prenne.
