@@ -29,11 +29,14 @@ Go to **Instellingen** and open **Factuurontwerp**. This is the design studio fo
 
 The quickest route is the **Genereer uit mijn huisstijl** (generate from my brand) button: it builds a complete design around the brand colour you chose under Logo en kleur. Not happy? **Probeer andere** (try another) cycles through different looks. Everything stays editable afterwards:
 
+- **Logo**: upload or replace your logo right in the studio (**Ander logo**, change logo). Without a logo, your company name sits at the top, and your logo also appears in your emails and on your payment page.
 - **Startpunt** (starting point): six style presets: Klassiek, Modern, Botanisch, Atelier, Editorial and Blanco. Changing any option afterwards turns the design into your own custom variant.
 - **Accentkleur** (accent colour): your brand colour is offered first. When you have a logo, colours sampled from it appear as ready-made swatches. There is also a set of curated shades, and a custom picker for any colour. A different accent colour overrides your brand colour on invoices, quotes, emails and the payment page.
 - **Papiertint** (paper tint): white or one of the soft off-white tones (Crème, Greige, Zand, Mist).
 - **Lettertype** (typography): a heading font (Marcellus, Playfair Display, Fraunces or Cormorant) and a text font (Inter, Lato or EB Garamond).
 - **Thema / indeling** (theme and layout): the overall arrangement of the document, plus the density (Compact, Normaal, Ruim). The Botanisch layout has optional decorative artwork you can switch off.
+- **Tekstgrootte** (text size): Klein, Normaal or Groot (small, normal or large) for the text of your document. Headings and your company name keep their size.
+- **Teksten op je document** (texts on your document): the closing text, ready under "Thank you" on every new invoice (a quote without its own text gets the text of your invoices), and the payment instruction shown under Payment on new invoices and on your payment page, with {iban}, {company} and {invoiceNumber} filled in for you.
 - **Voettekst** (footer text): the line at the bottom of every document, for example your KVK number or a thank-you note.
 
 Changes save automatically and show in the preview within a moment. Want the standard look back? **Thema uitschakelen** returns your documents to the default design.

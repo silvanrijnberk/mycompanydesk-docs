@@ -23,6 +23,8 @@ Turn on automatic reminders and MyCompanyDesk sends a friendly reminder the day 
 
 Choose how long quotes stay valid by default: **2 weeks**, **1 month** or **2 months**.
 
+Elke nieuwe offerte krijgt automatisch een geldig-tot-datum op basis van deze instelling, zodat een offerte nooit zonder verloopdatum de deur uit gaat.
+
 ### Auto-invoice signed quotes
 
 When enabled, a signed quote automatically becomes a draft invoice. The draft is ready for your review; you still choose when to send it.
@@ -130,7 +132,7 @@ Send the invoice to your customer via email. The email includes:
 - The invoice PDF as an attachment
 - A payment link for online payment
 
-Before sending, the email preview shows the message exactly as your customer will receive it. The send dialog has toggles for the **View button**, **Download button**, **PDF attachment**, **Invoice lines**, and, if you have online payments enabled, the **Confirm payment** button. These toggles are reflected in the live preview, so what you see is what your customer gets.
+Before sending, the email preview shows the message exactly as your customer will receive it. The send dialog has toggles for the **View button**, **Download button**, **PDF attachment**, **Invoice lines**, and, if you have online payments enabled, the **Confirm payment** button. These toggles are reflected in the live preview, so what you see is what your customer gets. Bericht elke keer weer bijgeschaafd? Vink in hetzelfde venster **Gebruik deze tekst voortaan voor facturen** aan, dan begint elke volgende factuurmail vanaf die versie. Zie [E-mailsjablonen](/faq/email-template).
 
 If your workspace has general terms in Documents, the email preview also shows an **Include general terms** toggle. For invoices this toggle is off by default. When enabled, the current terms PDF is attached to the email and the send is recorded as the provision event on the terms document.
 

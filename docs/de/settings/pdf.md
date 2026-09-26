@@ -29,11 +29,14 @@ Gehen Sie zu den **Einstellungen** und öffnen Sie **Rechnungsdesign**. Das ist 
 
 Der schnellste Weg ist die Schaltfläche **Aus meinem Corporate Design generieren**: Sie baut ein komplettes Design rund um die Markenfarbe, die Sie unter Logo und Farbe gewählt haben. Nicht zufrieden? **Anderen Look ausprobieren** wechselt zu einer anderen Variante. Alles bleibt danach anpassbar:
 
+- **Logo:** Laden Sie Ihr Logo direkt im Studio hoch oder ersetzen Sie es (**Anderes Logo**). Ohne Logo steht Ihr Firmenname oben, und Ihr Logo erscheint auch in Ihren E-Mails und auf Ihrer Zahlungsseite.
 - **Ausgangspunkt:** sechs Stilvorlagen: Klassisch, Modern, Botanisch, Atelier, Editorial und Blanko. Sobald Sie danach etwas ändern, wird das Design zu Ihrer eigenen Variante.
 - **Akzentfarbe:** Ihre Markenfarbe steht an erster Stelle. Haben Sie ein Logo, erscheinen daraus entnommene Farben als fertige Farbfelder. Dazu kommen eine Auswahl kuratierter Töne und ein eigener Farbwähler für jede Farbe. Ein abweichender Akzent überschreibt Ihre Markenfarbe auf Rechnungen, Angeboten, E-Mails und der Zahlungsseite.
 - **Papierton:** Weiß oder einer der sanften gebrochen-weißen Töne (Creme, Greige, Sand, Nebel).
 - **Schriftart:** eine Überschriftenschrift (Marcellus, Playfair Display, Fraunces oder Cormorant) und eine Textschrift (Inter, Lato oder EB Garamond).
 - **Thema / Layout:** der Gesamtaufbau des Dokuments plus die Dichte (Kompakt, Normal, Luftig). Das Layout Botanisch hat optionale dekorative Elemente, die sich abschalten lassen.
+- **Textgröße:** Klein, Normal oder Groß für den Text Ihres Dokuments. Überschriften und Ihr Firmenname behalten ihre Größe.
+- **Texte auf Ihrem Dokument:** der Abschlusstext, bereit unter „Vielen Dank“ auf jeder neuen Rechnung (ein Angebot ohne eigenen Text erhält den Text Ihrer Rechnungen), und der Zahlungshinweis unter Zahlung auf neuen Rechnungen und auf Ihrer Zahlungsseite, mit {iban}, {company} und {invoiceNumber} automatisch eingesetzt.
 - **Fußzeile:** die Zeile am Ende jedes Dokuments, zum Beispiel Ihre KVK-Nummer oder ein Dankeschön.
 
 Änderungen werden automatisch gespeichert und erscheinen sofort in der Vorschau. Möchten Sie zurück zum Standard? **Thema deaktivieren** setzt Ihre Dokumente auf das Standarddesign zurück.

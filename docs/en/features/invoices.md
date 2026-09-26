@@ -21,7 +21,7 @@ Turn on automatic reminders and MyCompanyDesk sends a friendly reminder the day 
 
 ### Quote validity
 
-Choose how long quotes stay valid by default: **2 weeks**, **1 month** or **2 months**.
+Choose how long quotes stay valid by default: **2 weeks**, **1 month** or **2 months**. Every new quote gets a valid-until date filled in from this setting, so a quote never goes out without one.
 
 ### Auto-invoice signed quotes
 
@@ -130,7 +130,7 @@ Send the invoice to your customer via email. The email includes:
 - The invoice PDF as an attachment
 - A payment link for online payment
 
-Before sending, the email preview shows the message exactly as your customer will receive it. The send dialog has toggles for the **View button**, **Download button**, **PDF attachment**, **Invoice lines**, and, if you have online payments enabled, the **Confirm payment** button. These toggles are reflected in the live preview, so what you see is what your customer gets.
+Before sending, the email preview shows the message exactly as your customer will receive it. The send dialog has toggles for the **View button**, **Download button**, **PDF attachment**, **Invoice lines**, and, if you have online payments enabled, the **Confirm payment** button. These toggles are reflected in the live preview, so what you see is what your customer gets. Fine-tuning the message every time? Tick **Use this text from now on for invoices** in the same dialog and every next invoice email starts from that version; see [Email templates](/en/faq/email-template).
 
 If your workspace has general terms in Documents, the email preview also shows an **Include general terms** toggle. For invoices this toggle is off by default. When enabled, the current terms PDF is attached to the email and the send is recorded as the provision event on the terms document.
 

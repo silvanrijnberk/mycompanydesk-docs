@@ -1,7 +1,7 @@
 ---
 title: Domains, Website, and Inbox
 description: "Custom domains, the hosted business website and the shared inbox ship as one pre-launch bundle behind the custom_domains and public_business_page flags."
-last_verified: 2026-09-23
+last_verified: 2026-09-26
 ---
 
 # Domains, Website, and Inbox
@@ -205,7 +205,7 @@ Moving a domain you had connected yourself updates your existing domain row, so 
 
 The option **I am moving from another host** runs the whole move as one wizard: it connects your domain, prepares your mailboxes, imports the mail from your old mailboxes, transfers the domain registration to us, imports what arrived during the transfer, and ends with the notice that you can cancel your package at the old hoster. You need the password of each old mailbox and, for the transfer, the authorization code. Nameservers, MX records and ports stay out of sight; only the rare fallback step mentions them.
 
-Your mailboxes are ready from the start. Even while your domain is still with the old hoster, every mailbox already exists and importing your old mail can begin right away. Receiving and sending from those addresses switch on as soon as the domain is with us; the wizard handles the move itself later in the same flow, and the platform completes the mail setup automatically the moment the domain is active.
+Your mailboxes are ready from the start. Even while your domain is still with the old hoster, every mailbox already exists and importing your old mail can begin right away. Receiving and sending from those addresses switch on as soon as the domain is with us; the wizard handles the move itself later in the same flow, and the platform completes the mail setup automatically the moment the domain is active. While you wait, Inbox settings marks the domain with a **Waiting for your domain** state: as soon as the nameservers have been switched, mail turns on automatically and there is nothing you need to do.
 
 The mail step asks for every address you had with the old hoster, one row per address, and the wizard only creates mailboxes for the addresses you name. Each address gets its own mailbox here; the first one becomes the default mailbox. An address that only forwarded to another address, without a password of its own, needs no entry: its mail already arrived in the mailbox it pointed at. Extra addresses can reuse the first address's password or get their own. The addresses move one at a time: while one is being moved, the rest wait in line, and each address card shows where it stands. Do not cancel your package at the old hoster until every address is done; the final screen lists the addresses that moved and, when an address did not come across completely, tells you to get in touch before cancelling anything. Messages that could not be moved at all, for instance because they are too large or unreadable, stay only at the old hoster; the final screen tells you how many, so you can save them yourself before cancelling your plan there.
 
