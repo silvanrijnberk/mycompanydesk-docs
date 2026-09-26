@@ -16,6 +16,8 @@ When you send an invoice, a unique **payment link** is generated. When your cust
 3. **Pay online** - Complete payment through the portal using the **Pay now** button
 4. **Confirm payment**: Acknowledge a bank transfer (not shown for credit notes, canceled invoices, or original invoices that have been fully credited, because none of these asks the customer for payment)
 
+Portal links open in the customer's web browser. Even when the MyCompanyDesk app is installed on the customer's phone, tapping an invoice link opens the browser, not the app.
+
 ## Portal features
 
 ### Invoice list

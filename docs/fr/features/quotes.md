@@ -66,7 +66,7 @@ Source : `apps/api/src/modules/invoices/customer-events.service.js` - `recordEve
 
 ## Faire signer un devis en ligne
 
-Vous pouvez demander à un client de signer un devis en ligne au lieu de ne l'envoyer que sous forme de PDF. Ouvrez la page de détail du devis et choisissez **Envoyer pour signature** pour envoyer une demande de signature au client. Le statut du devis passe à **Envoyé** afin que vous puissiez le suivre.
+Vous pouvez demander à un client de signer un devis en ligne au lieu de ne l'envoyer que sous forme de PDF. Ouvrez la page de détail du devis et choisissez **Envoyer pour signature** pour envoyer une demande de signature au client. Le statut du devis passe à **Envoyé** afin que vous puissiez le suivre. Le lien de signature s'ouvre dans le navigateur du client, pas dans l'appli MyCompanyDesk, même lorsque l'appli est installée sur son téléphone.
 
 Si l'e-mail de signature ne peut pas être livré en raison d'un problème avec vos paramètres d'envoi, un message d'erreur apparaît vous demandant de vérifier vos paramètres e-mail et de réessayer. La demande de signature elle-même est créée sur le serveur, vous pouvez donc la renvoyer une fois les paramètres e-mail corrigés.
 

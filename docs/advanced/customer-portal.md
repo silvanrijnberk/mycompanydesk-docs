@@ -16,6 +16,8 @@ Wanneer je een factuur verstuurt, wordt een unieke **betaallink** gegenereerd. W
 3. **Online betalen** - De betaling voltooien via het portaal via de knop **Nu betalen**
 4. **Betaling bevestigen**: Een bankoverschrijving bevestigen (niet zichtbaar voor creditnota's, ingetrokken facturen of originele facturen die volledig zijn gecrediteerd, omdat de klant in geen van deze gevallen nog iets hoeft te betalen)
 
+Portaallinks openen in de browser van je klant. Zit de MyCompanyDesk-app op zijn telefoon, dan opent een tik op de factuurlink alsnog de browser, niet de app.
+
 ## Portaalfuncties
 
 ### Facturenlijst

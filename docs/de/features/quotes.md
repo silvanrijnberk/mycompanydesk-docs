@@ -66,7 +66,7 @@ Quelle: `apps/api/src/modules/invoices/customer-events.service.js` - `recordEven
 
 ## Angebot online unterschreiben lassen
 
-Sie können einen Kunden bitten, ein Angebot online zu unterschreiben, anstatt es nur als PDF zu versenden. Öffnen Sie die Angebotsdetailseite und wählen Sie **Zum Unterschreiben senden**, um eine Unterschriftenanfrage an den Kunden zu senden. Der Angebotsstatus wechselt zu **Gesendet**, damit Sie den Fortschritt verfolgen können.
+Sie können einen Kunden bitten, ein Angebot online zu unterschreiben, anstatt es nur als PDF zu versenden. Öffnen Sie die Angebotsdetailseite und wählen Sie **Zum Unterschreiben senden**, um eine Unterschriftenanfrage an den Kunden zu senden. Der Angebotsstatus wechselt zu **Gesendet**, damit Sie den Fortschritt verfolgen können. Der Unterschriften-Link öffnet sich im Browser des Kunden, nicht in der MyCompanyDesk-App, auch wenn die App auf seinem Telefon installiert ist.
 
 Wenn die E-Mail zum Unterschreiben aufgrund eines Problems mit Ihren E-Mail-Einstellungen nicht zugestellt werden kann, erscheint eine Fehlermeldung, die Sie auffordert, Ihre E-Mail-Einstellungen zu prüfen und es erneut zu versuchen. Die Unterschriftenanfrage selbst wird auf dem Server erstellt, sodass Sie sie erneut senden können, sobald die E-Mail-Einstellungen korrigiert sind.
 

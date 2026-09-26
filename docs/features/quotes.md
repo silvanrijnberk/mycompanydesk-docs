@@ -66,7 +66,7 @@ Bron: `apps/api/src/modules/invoices/customer-events.service.js` - `recordEvent`
 
 ## Offerte online laten ondertekenen
 
-Je kunt een klant vragen een offerte online te ondertekenen in plaats van hem alleen als PDF te versturen. Open de offertedetailpagina en kies **Naar tekenen versturen** om een tekenverzoek naar de klant te sturen. De status van de offerte wijzigt in **Verzonden**, zodat je het proces kunt volgen.
+Je kunt een klant vragen een offerte online te ondertekenen in plaats van hem alleen als PDF te versturen. Open de offertedetailpagina en kies **Naar tekenen versturen** om een tekenverzoek naar de klant te sturen. De status van de offerte wijzigt in **Verzonden**, zodat je het proces kunt volgen. De tekenlink opent in de browser van je klant, niet in de MyCompanyDesk-app, ook als de app op zijn telefoon staat.
 
 Als de e-mail voor het tekenen niet kan worden afgeleverd door een probleem met je e-mailinstellingen, verschijnt er een foutmelding met de vraag je e-mailinstellingen te controleren en het opnieuw te proberen. Het tekenverzoek zelf wordt op de server aangemaakt, dus je kunt het opnieuw versturen zodra de e-mailinstellingen in orde zijn.
 

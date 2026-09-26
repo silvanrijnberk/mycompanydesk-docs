@@ -16,6 +16,8 @@ Wenn Sie eine Rechnung versenden, wird ein eindeutiger **Zahlungslink** generier
 3. **Online bezahlen** kann - Die Zahlung direkt über das Portal über die Schaltfläche **Jetzt bezahlen** abschließen
 4. **Zahlung bestätigen** kann: Eine Banküberweisung bestätigen (nicht sichtbar für Gutschriften, stornierte Rechnungen oder Originalrechnungen, die vollständig gutgeschrieben wurden, da der Kunde in keinem dieser Fälle noch etwas zu zahlen hat)
 
+Portallinks werden im Browser des Kunden geöffnet. Auch wenn der Kunde die MyCompanyDesk-App auf seinem Telefon installiert hat, öffnet ein Tipp auf den Rechnungslink den Browser, nicht die App.
+
 ## Portal-Funktionen
 
 ### Rechnungsliste

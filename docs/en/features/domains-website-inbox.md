@@ -221,7 +221,7 @@ What the tabs cover:
 
 - **Overview** tab — Preview your site, see whether it is live, and check how many unpublished changes are waiting.
 - **Visitors** tab — See where visitors come from and how they move through the site.
-- **Findability** tab — SEO and page metadata. Old `/website/seo` links redirect here.
+- **Findability** tab — SEO and page metadata, plus the card for service pages described below. Old `/website/seo` links redirect here.
 - **Connections** tab — Payment processors (Mollie, Stripe Connect) and third-party services such as Mailchimp, Plausible, and Trustpilot. Old `/website/integraties` links redirect here.
 - **Domain & email** tab — Custom domain, DNS, SSL, redirects, and inbox setup. See the custom domains section above.
 - **Settings** tab — Choose which builder is live (template or bespoke), and configure the workspace slug and other site-level settings.
@@ -231,6 +231,18 @@ When your workspace has multiple active custom domains (Pro plan), a domain swit
 The public site is served at the highest-priority URL the company owns: custom domain root → workspace subdomain → fallback `/portal/<slug>` route.
 
 You can extend the site with the **Appointments** block so visitors can book an appointment directly from your website. See [Online appointments](/en/features/site-bookings).
+
+#### Service pages for findability
+
+The Findability tab has a card titled "Meer pagina's waar mensen op zoeken" ("More pages people search for"; the app shows this card in Dutch no matter the app language). It only appears when there is something to do: one or more services from your Aanbod catalog without a page of their own, or drafted pages waiting for your review.
+
+Opening the card lists the proposals. Every proposal is a service you really sell, taken from your Aanbod, with its future address shown: each page gets its own spot under `/diensten/`. A proposal can carry a reason from Google Search Console: the search term that matches the service, how often it gets searched, and the position you hold on it. Such terms only rank the proposals and are answered inside the page's FAQ; no page is ever made for a bare search term. A term that matches no service gets no page either. The list instead says why: a term for your whole business (the trade plus your town) belongs to your home page, a search naming your company is left out because those visitors already found you, and a service that is not in your Aanbod yet can get a page once you add it there. A service that already has a page, under its own path or under a page titled like the service, is not proposed twice: two pages fighting over one term push each other down in the results.
+
+When the facts on file are too thin to fill a real page, the dialog asks you instead of inventing filler: what the service involves, roughly what it costs, and how long it takes. Your answers are saved with the service in your Aanbod where those fields were still empty, so they count as facts next time, and the written text goes through the same fact check as every other AI text on your site.
+
+The pages are written one by one and land as drafts. Nothing goes live on its own: you review the drafts, tick the ones you want, and publish exactly those, without your other unpublished changes being taken along. Published pages stay out of the menu. They appear in the footer under their own **Diensten** (Services) column, next to the Pages column, and in your sitemap, so Google finds them. If your site is not live yet, the pages are ready and go live as soon as you publish the website.
+
+The search card ties into this too. Under a query that gets searched while you rank low, the link under it opens this same dialog whenever there are proposals to make; otherwise it still leads to the page list.
 
 ### Taking your site offline
 
