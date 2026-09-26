@@ -95,7 +95,8 @@ Was Sie auf der Seite tun konnen:
 - **E-Mail-Sicherheit** für die ausgewählte Domain -- SPF/DMARC/DKIM-Prüfung mit einer Ein-Klick-"Fix"-Option, die sichere Standardwerte schreibt (`v=spf1 ~all`, `v=DMARC1; p=quarantine; …`).
 - **Schnelleinstellungen** für die ausgewählte Domain -- Cloudflare Development Mode ein/aus, "Under Attack"-Sicherheitsstufe ein/aus, Cache leeren.
 - **Analytics** für die ausgewählte Domain -- die letzten 30 Tage mit Anfragen, Bandbreite, Bedrohungen, Besuchern, Seitenaufrufen. Der aktuelle Cloudflare Analytics-Endpunkt ist abgekündigt; die Seite zeigt einen leeren `unavailable`-Zustand, bis die GraphQL-Migration erfolgt.
-- **Entfernen** der ausgewählten Domain -- Soft-Delete der Zeile (`status = 'removed'`) und Abbau der Cloudflare-Zone (oder der Pages-Domain im CNAME-Modus).
+- **Entfernen** der ausgewählten Domain -- Soft-Delete der Zeile (`status = 'removed'`) und Abbau der Cloudflare-Zone (oder der Pages-Domain im CNAME-Modus). Lief Ihre Website über diese Domain, fällt die Website auf eine andere aktive Website-Domain oder auf die kostenlose mycompanydesk.site-Adresse zurück.
+- **Inaktive Domains** in einer eigenen Karte: abgelaufene Domains, zu einem anderen Anbieter übertragene Domains und CNAME-Domains, die nie verbunden wurden, erscheinen dort mit Badge und kurzer Erklärung, jeweils mit einer Entfernen-Aktion; abgelaufene Domains bieten zusätzlich den Kontakt zum Support.
 
 #### `domains`-Tabelle -- der gemeinsame Zustand
 
@@ -385,7 +386,7 @@ Dieses Bundle ist die **Empfangsseite**. Ausgehende E-Mails -- Rechnungsversand,
 
 ## Grenzen und Fallstricke
 
-- **Eine Website pro Unternehmen.** Das Hinzufügen einer eigenen Domain deaktiviert die Workspace-Subdomain. Das Entfernen der Domain stellt den Slug nicht automatisch wieder her -- aktivieren Sie ihn manuell, wenn Sie zurückfallen möchten.
+- **Eine Website pro Unternehmen.** Das Hinzufügen einer eigenen Domain deaktiviert die Workspace-Subdomain. Sobald Sie die Domain entfernen, auf der Ihre Website läuft, fällt die Website von selbst zurück: auf eine andere aktive Website-Domain, wenn vorhanden, sonst auf die kostenlose mycompanydesk.site-Adresse.
 - **Nur eine aktiver Posteingang pro Domain.** Die Plattform erlaubt nur einem Workspace gleichzeitig, auf einer Domain E-Mails zu empfangen. Wenn ein anderer Workspace bereits einen Posteingang auf `acme.de` aktiviert hat, wird Ihr Versuch, auf demselben Namen einen Posteingang zu aktivieren, blockiert. Websites und reine CNAME-Claims werden nicht blockiert; nur ein aktiver Posteingang ist exklusiv.
 - **Sie können keine Zone beanspruchen, die ein anderer Workspace bereits hält.** Wenn Sie eine Domain im Nameserver-Modus hinzufügen, prüft die Plattform, ob die zugrundeliegende Cloudflare-Zone bereits für einen anderen Workspace live ist. Falls ja, wird das Hinzufügen mit einer klaren Fehlermeldung abgelehnt, damit Sie eine Domain nicht anhand fremder DNS-Einträge "verifizieren" können.
 - **Das erneute Hinzufügen einer eigenen zuvor entfernten Domain funktioniert weiterhin.** Wenn Ihr Workspace eine Domain zuvor entfernt hat, kann die bestehende Zone für denselben Workspace wiederverwendet werden; die Prüfung blockiert nur, dass ein anderer Workspace sie übernimmt.

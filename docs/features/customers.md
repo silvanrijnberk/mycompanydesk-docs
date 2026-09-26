@@ -97,7 +97,7 @@ Als je meer dan een bedrijf hebt, kan op de klantdetailpagina een kaart **Eigen 
 - **Archiveren** — Verplaats naar archief (kan later worden hersteld)
 
 :::caution
-Het archiveren van een klant kan worden tegengehouden wanneer de klant nog een actieve terugkerende factuur of lopende contracten heeft. MyCompanyDesk toont dan een waarschuwing zodat je eerst de terugkerende factuur of het contract beëindigt. Dit voorkomt dat je per ongeluk facturen blijft versturen naar een gearchiveerde klant.
+Het archiveren van een klant met een actieve terugkerende factuur of lopende contracten vraagt eerst om een bevestiging. De waarschuwing zegt eerlijk wat archiveren doet: zolang een klant gearchiveerd is, maakt MyCompanyDesk geen terugkerende facturen meer aan en worden contracten niet meer gefactureerd, en overgeslagen periodes worden later niet alsnog gefactureerd. Eindig eerst de terugkerende factuur of het contract als die facturering moet doorlopen.
 :::
 - **Verwijderen** — Verwijder de klant permanent
 

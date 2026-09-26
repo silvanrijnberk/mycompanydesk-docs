@@ -1,7 +1,7 @@
 ---
 title: Sécurité
 description: "Protégez votre compte avec un mot de passe solide, l'authentification à deux facteurs et un oeil sur vos sessions actives."
-last_verified: 2026-07-10
+last_verified: 2026-09-26
 ---
 
 # Sécurité
@@ -78,7 +78,7 @@ Les passkeys vous permettent de vous connecter avec la biométrie ou une clé de
 
 ## Sessions
 
-La carte des sessions dans **Paramètres > Connexion** propose une seule action : **Se déconnecter**, qui met fin à votre session actuelle. Il n'y a pas de liste des autres appareils ni de révocation par session. Si vous soupçonnez que quelqu'un d'autre a accès à votre compte, changez votre mot de passe.
+La carte des sessions dans **Paramètres > Connexion** propose une seule action : **Se déconnecter**, qui met fin à votre session actuelle. Il n'y a pas de liste des autres appareils ni de révocation par session. Si vous soupçonnez que quelqu'un d'autre a accès à votre compte, changez votre mot de passe. Changer ou réinitialiser votre mot de passe met fin à toutes les autres sessions de votre compte (l'appareil depuis lequel vous faites le changement reste connecté) et révoque les appareils de confiance qui sautent le code 2FA.
 
 ## Connexion via Google ou Microsoft
 

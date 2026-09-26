@@ -95,7 +95,8 @@ Wat je op de pagina kunt doen:
 - **E-mailbeveiliging** voor het geselecteerde domein -- SPF/DMARC/DKIM-controle met een een-klik "fix" die veilige standaardwaarden schrijft (`v=spf1 ~all`, `v=DMARC1; p=quarantine; …`).
 - **Snelle instellingen** voor het geselecteerde domein -- Cloudflare Development Mode aan/uit, "Under attack"-beveiligingsniveau aan/uit, cache legen.
 - **Analytics** voor het geselecteerde domein -- laatste 30 dagen van verzoeken, bandbreedte, dreigingen, bezoekers, paginaweergaven. Het huidige Cloudflare Analytics-eindpunt is uitgefaseerd; de pagina toont een lege `unavailable`-status tot de GraphQL-migratie landt.
-- **Verwijderen** van het geselecteerde domein -- soft-delete van de rij (`status = 'removed'`) en afbreken van de Cloudflare-zone (of het Pages-domein in CNAME-modus).
+- **Verwijderen** van het geselecteerde domein -- soft-delete van de rij (`status = 'removed'`) en afbreken van de Cloudflare-zone (of het Pages-domein in CNAME-modus). Draait je website op dit domein, dan valt de site terug op een ander actief websitedomein of op het gratis mycompanydesk.site-adres.
+- **Inactieve domeinen** bekijken in hun eigen kaart: verlopen domeinen, verhuisde domeinen en CNAME-domeinen die nooit koppelden, staan er met een statusbadge en een korte uitleg, elk met een Verwijder-actie; verlopen domeinen bieden ook een contactroute.
 
 #### `domains`-tabel -- de gedeelde status
 
@@ -385,7 +386,7 @@ Deze bundel is de **ontvangstkant**. Uitgaande e-mail -- factuurverzending, heri
 
 ## Limieten en aandachtspunten
 
-- **Een website per bedrijf.** Het toevoegen van een eigen domein deactiveert het werkruimte-subdomein. Het verwijderen van het domein herstelt de slug niet automatisch -- activeer het handmatig opnieuw als je wilt terugvallen.
+- **Een website per bedrijf.** Het toevoegen van een eigen domein deactiveert het werkruimte-subdomein. Verwijder je het domein waar je site op draait, dan valt de site vanzelf terug: op een ander actief websitedomein als je die hebt, anders op het gratis mycompanydesk.site-adres.
 - **Eén live inbox per domein.** Het platform staat maar één werkruimte tegelijk toe om mail te ontvangen op een bepaald domein. Als een andere werkruimte al een inbox ingeschakeld heeft op `acme.nl`, wordt jouw poging om de inbox op dezelfde naam in te schakelen geblokkeerd. Websites en CNAME-claims worden niet geblokkeerd; alleen een live inbox is exclusief.
 - **Je kunt geen zone claimen die een andere werkruimte al heeft.** Wanneer je een domein in nameserver-modus toevoegt, controleert het platform of de onderliggende Cloudflare-zone al live is voor een andere werkruimte. Zo ja, dan wordt het toevoegen geweigerd met een duidelijke foutmelding, zodat je een domein niet kunt "verifiëren" via iemands anders DNS.
 - **Je eigen eerder verwijderde domein opnieuw toevoegen werkt nog steeds.** Als je werkruimte eerder een domein heeft verwijderd, kan de bestaande zone opnieuw worden gebruikt voor dezelfde werkruimte; de controle blokkeert alleen dat een andere werkruimte het overneemt.

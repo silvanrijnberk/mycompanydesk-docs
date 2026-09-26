@@ -97,7 +97,7 @@ Wenn Sie mehr als ein eigenes Unternehmen haben, kann auf der Kundenseite eine K
 - **Archivieren** — Ins Archiv verschieben (kann später wiederhergestellt werden)
 
 :::caution
-Das Archivieren eines Kunden kann blockiert werden, wenn der Kunde noch eine aktive wiederkehrende Rechnung oder laufende Verträge hat. MyCompanyDesk zeigt dann eine Warnung, damit Sie die wiederkehrende Rechnung oder den Vertrag zuerst beenden. So vermeiden Sie, dass versehentlich weiter Rechnungen an einen archivierten Kunden gesendet werden.
+Beim Archivieren eines Kunden mit einer aktiven wiederkehrenden Rechnung oder laufenden Verträgen erscheint zuerst eine Bestätigungsfrage. Die Warnung sagt, was Archivieren bewirkt: Solange ein Kunde archiviert ist, erstellt MyCompanyDesk keine wiederkehrenden Rechnungen mehr und rechnet keine Verträge mehr ab, und übersprungene Zeiträume werden später nicht nachberechnet. Beenden Sie die wiederkehrende Rechnung oder den Vertrag zuerst, wenn diese Abrechnung weiterlaufen soll.
 :::
 - **Löschen** — Kunden dauerhaft entfernen
 

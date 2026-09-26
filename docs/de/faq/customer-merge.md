@@ -1,7 +1,7 @@
 ---
 title: "Kunden zusammenführen"
 description: "Doppelte Kundendatensätze zusammenführen: Öffnen Sie eines der Duplikate, nutzen Sie die Zusammenführen-Option und wählen Sie den Hauptdatensatz."
-last_verified: 2026-05-09
+last_verified: 2026-09-26
 chatbot:
   triggers: ["merge customers", "duplicate customer", "combine customers", "customer duplicate", "klanten samenvoegen", "dubbele klant", "kunden zusammenfuhren", "fusionner clients", "doublons clients"]
   actions:
@@ -17,3 +17,5 @@ Um doppelte Kundendatensätze zusammenzuführen:
 6. Bestätigen Sie: alle Rechnungen und der Verlauf werden zusammengeführt
 
 Hinweis: Wenn keine Zusammenführungsoption verfügbar ist, übertragen Sie Rechnungen manuell und löschen dann das Duplikat.
+
+Ein archivierter Kunde kann nicht der Hauptdatensatz einer Zusammenführung sein. Stellen Sie den archivierten Kunden zuerst wieder her: Solange ein Kunde archiviert ist, werden seine wiederkehrenden Rechnungen und Verträge nicht abgerechnet; die Zusammenführung würde diese Abrechnung lautlos stoppen.

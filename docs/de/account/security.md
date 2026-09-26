@@ -1,7 +1,7 @@
 ---
 title: Sicherheit
 description: "Schützen Sie Ihr Konto mit einem starken Passwort, Zwei-Faktor-Authentifizierung und einem Blick auf Ihre aktiven Sitzungen."
-last_verified: 2026-07-10
+last_verified: 2026-09-26
 ---
 
 # Sicherheit
@@ -78,7 +78,7 @@ Mit Passkeys melden Sie sich mit Biometrie oder einem Sicherheitsschlüssel stat
 
 ## Sitzungen
 
-Die Sitzungskarte unter **Einstellungen > Anmelden** hat eine einzige Aktion: **Abmelden**, die Ihre aktuelle Sitzung beendet. Es gibt keine Liste anderer Geräte und kein Widerrufen einzelner Sitzungen. Vermuten Sie, dass jemand anderes Zugriff auf Ihr Konto hat, ändern Sie Ihr Passwort.
+Die Sitzungskarte unter **Einstellungen > Anmelden** hat eine einzige Aktion: **Abmelden**, die Ihre aktuelle Sitzung beendet. Es gibt keine Liste anderer Geräte und kein Widerrufen einzelner Sitzungen. Vermuten Sie, dass jemand anderes Zugriff auf Ihr Konto hat, ändern Sie Ihr Passwort. Wenn Sie Ihr Passwort ändern oder zurücksetzen, werden alle anderen Sitzungen Ihres Kontos beendet (das Gerät, an dem Sie die Änderung machen, bleibt angemeldet), und die vertrauenswürdigen Geräte, die den 2FA-Code überspringen, werden widerrufen.
 
 ## Anmelden über Google oder Microsoft
 

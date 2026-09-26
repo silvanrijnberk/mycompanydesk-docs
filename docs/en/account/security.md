@@ -1,7 +1,7 @@
 ---
 title: Security
 description: "Protect your account with a strong password, two-factor authentication and an eye on active sessions, all under Settings, Inloggen."
-last_verified: 2026-07-10
+last_verified: 2026-09-26
 ---
 
 # Security
@@ -78,7 +78,7 @@ Passkeys let you sign in with biometrics or a security key instead of a password
 
 ## Sessions
 
-The sessions card on **Settings > Inloggen** has a single **Log out** action that ends your current session. There is no list of other devices or per-session revoking. If you suspect someone else has access to your account, change your password.
+The sessions card on **Settings > Inloggen** has a single **Log out** action that ends your current session. There is no list of other devices or per-session revoking. If you suspect someone else has access to your account, change your password. Changing or resetting your password ends every other session for your account (the device you made the change on stays signed in) and revokes the trusted devices that skip the 2FA code.
 
 ## Social login
 

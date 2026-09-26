@@ -95,7 +95,8 @@ What the page lets you do:
 - **Email security** for the selected domain -- SPF/DMARC/DKIM check with a one-click "fix" that writes safe defaults (`v=spf1 ~all`, `v=DMARC1; p=quarantine; …`).
 - **Quick settings** for the selected domain -- toggle Cloudflare Development Mode, toggle "Under attack" security level, purge cache.
 - **Analytics** for the selected domain -- last 30 days of requests, bandwidth, threats, visitors, pageviews. The current Cloudflare Analytics endpoint is sunset; the page renders an empty `unavailable` state until the GraphQL migration lands.
-- **Remove** the selected domain -- soft-deletes the row (`status = 'removed'`) and tears down the Cloudflare zone (or the Pages domain in CNAME mode).
+- **Remove** the selected domain -- soft-deletes the row (`status = 'removed'`) and tears down the Cloudflare zone (or the Pages domain in CNAME mode). If this domain carried your website, the site falls back to another active website domain or to the free mycompanydesk.site address.
+- **Review inactive domains** in their own card: expired domains, domains transferred away, and CNAME domains that never connected are listed with a status badge and a short explanation, each with a Remove action; expired domains also offer a contact-support route.
 
 #### `domains` table — the shared state
 
@@ -385,7 +386,7 @@ This bundle is the **receiving** side. Outgoing email — invoice delivery, remi
 
 ## Limits and gotchas
 
-- **One website per company.** Adding a custom domain deactivates the workspace subdomain. Removing the domain doesn't auto-revive the slug — re-activate it manually if you want to fall back.
+- **One website per company.** Adding a custom domain deactivates the workspace subdomain. Removing the domain that carries your site falls back on its own: the site moves to another active website domain when there is one, otherwise to the free mycompanydesk.site address.
 - **One live inbox per domain.** The platform allows only one workspace at a time to receive mail on a given domain. If another workspace already has an inbox enabled on `acme.nl`, your attempt to enable the inbox on the same name is blocked. Websites and CNAME-only claims are not blocked; only a live inbox is exclusive.
 - **You cannot claim a zone another workspace already holds.** When you add a nameserver-mode domain, the platform checks whether the underlying Cloudflare zone is already live for a different workspace. If it is, the add is refused with a clear error so you cannot "verify" a domain off someone else's DNS.
 - **Re-adding your own removed domain still works.** If your workspace previously removed a domain, the existing zone can be reused for the same workspace; the guard only blocks another workspace from taking it over.

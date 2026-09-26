@@ -1,7 +1,7 @@
 ---
 title: Tweestapsverificatie
 description: "Tweestapsverificatie (2FA) voegt een 6-cijferige code uit een authenticator-app toe bovenop je wachtwoord, ga naar Instellingen > Inloggen."
-last_verified: 2026-07-10
+last_verified: 2026-09-26
 chatbot:
   triggers: ["two factor", "two-factor", "2fa", "two step", "authenticator", "mfa", "tweestapsverificatie", "twee-factor", "zwei faktor", "authentification deux facteurs", "double authentification"]
   actions:
@@ -17,7 +17,7 @@ Zo schakel je 2FA in:
 3. Voer de 6-cijferige code uit de app of vanuit **Instellingen > Inlogcodes** in en klik op "Verifiëren & inschakelen"
 4. Bewaar de back-upcodes die verschijnen. Elke code werkt één keer als je je authenticator niet bij de hand hebt
 
-Vanaf dan vraagt inloggen na je e-mailadres en wachtwoord om de 6-cijferige code. Gebruik je de MyCompanyDesk-app als authenticator, vind je de huidige code onder **Instellingen > Inlogcodes**. Vink "Dit apparaat 30 dagen onthouden" aan en vertrouwde apparaten slaan de code over.
+Vanaf dan vraagt inloggen na je e-mailadres en wachtwoord om de 6-cijferige code. Gebruik je de MyCompanyDesk-app als authenticator, vind je de huidige code onder **Instellingen > Inlogcodes**. Vink "Dit apparaat 30 dagen onthouden" aan en vertrouwde apparaten slaan de code over. Je wachtwoord wijzigen of resetten haalt dit vertrouwen op elk apparaat weer weg, zodat de 6-cijferige code opnieuw wordt gevraagd.
 
 Op dezelfde pagina kun je ook passkeys toevoegen (Touch ID, Face ID, Windows Hello of je telefoon), elke passkey een naam geven en passkeys verwijderen die je niet meer gebruikt. Het inlogscherm biedt daarna ook inloggen met een passkey aan.
 
