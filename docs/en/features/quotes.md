@@ -66,7 +66,7 @@ Source: `apps/api/src/modules/invoices/customer-events.service.js` - `recordEven
 
 ## Online quote signing
 
-You can ask a customer to sign a quote online instead of sending it only as a PDF. On the quote detail page, choose **Send for signing** to send a signing request to the customer. The quote status changes to **Sent** so you can track it.
+You can ask a customer to sign a quote online instead of sending it only as a PDF. On the quote detail page, choose **Send for signing** to send a signing request to the customer. The quote status changes to **Sent** so you can track it. The signing link opens in the customer's web browser, not inside the MyCompanyDesk app, even when the app is installed on their phone.
 
 If the signing e-mail cannot be delivered because of a problem with your sender settings, an error toast appears with the message to check your e-mail settings and try again. The signing request itself is created on the server, so you can resend it once the e-mail settings are fixed.
 

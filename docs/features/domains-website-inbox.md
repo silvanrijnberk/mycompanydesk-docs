@@ -221,7 +221,7 @@ Wat de tabbladen doen:
 
 - **Overzicht**-tab — Voorvertoning van je site, of deze live is, en hoeveel ongepubliceerde wijzigingen er wachten.
 - **Bezoekers**-tab — Zie waar bezoekers vandaan komen en hoe ze door de site bewegen.
-- **Vindbaarheid**-tab — SEO en paginameta-informatie. Oude `/website/seo`-links verwijzen hierheen.
+- **Vindbaarheid**-tab — SEO en paginameta-informatie, plus de kaart met pagina's per dienst (zie hieronder). Oude `/website/seo`-links verwijzen hierheen.
 - **Koppelingen**-tab — Betaalproviders (Mollie, Stripe Connect) en diensten van derden zoals Mailchimp, Plausible en Trustpilot. Oude `/website/integraties`-links verwijzen hierheen.
 - **Domein & e-mail**-tab — Eigen domein, DNS, SSL, redirects en inbox-instellingen. Zie de sectie eigen domeinen hierboven.
 - **Instellingen**-tab — Kies welke bouwer live staat (sjabloon of op maat) en stel de werkruimteslug en andere site-instellingen in.
@@ -231,6 +231,18 @@ Wanneer je werkruimte meerdere actieve eigen domeinen heeft (Pro-abonnement), ku
 De openbare site wordt getoond op de best beschikbare URL die het bedrijf bezit: eigen domein-root → werkruimte-subdomein → terugval `/portal/<slug>`-route.
 
 Je kunt de site uitbreiden met het **Afspraken**-blok. Bezoekers kunnen dan direct via je website een afspraak inplannen. Zie [Online afspraken](/features/site-bookings).
+
+#### Pagina's voor je vindbaarheid
+
+Op het tabblad Vindbaarheid staat een kaart: "Meer pagina's waar mensen op zoeken". Hij verschijnt alleen als er iets te doen is: diensten uit je Aanbod zonder eigen pagina, of conceptpagina's die op jouw beoordeling wachten.
+
+Open je de kaart, dan zie je de voorstellen. Elk voorstel is een dienst die je echt levert, uit je Aanbod, met het adres erbij: elke pagina krijgt een eigen plek onder `/diensten/`. Een voorstel kan een reden uit Google Search Console meedragen: de zoekterm die bij de dienst past, hoe vaak hij gezocht wordt en op welke plek je daar staat. Zo'n term zet het voorstel bovenaan en wordt in de FAQ van de pagina beantwoord; er wordt nooit een pagina voor een losse zoekterm gemaakt. Een term die bij geen enkele dienst hoort krijgt ook geen pagina. De lijst legt dan uit waarom niet: een term voor je hele bedrijf (het vak plus je plaats) hoort bij je homepagina, een zoekopdracht met je bedrijfsnaam valt buiten de lijst omdat die mensen je al gevonden hebben, en een dienst die nog niet in je Aanbod staat kan een pagina krijgen zodra je hem daar toevoegt. Een dienst die al een pagina heeft, op zijn eigen pad of onder een pagina met de dienst als titel, wordt niet nogmaals voorgesteld: twee pagina's die om dezelfde term strijden duwen elkaar omlaag in de resultaten.
+
+Staat er te weinig over de dienst vast om een echte pagina te vullen, dan stelt het venster vragen in plaats van iets te verzinnen: wat houdt de dienst in, ongeveer wat kost hij en hoe lang duurt hij. Je antwoorden bewaren we bij de dienst in je Aanbod, waar die velden nog leeg waren, zodat ze de volgende keer ook feiten zijn, en de geschreven tekst gaat door dezelfde feitencontrole als alle andere AI-tekst op je site.
+
+De pagina's worden één voor één geschreven en komen als concept binnen. Er gaat vanzelf niets live: je leest de concepten na, vinkt aan wat mee moet en publiceert precies die pagina's, zonder dat je andere ongepubliceerde wijzigingen meegaan. Gepubliceerde pagina's staan niet in je menu. Ze komen in de footer onder een eigen **Diensten**-kolom, naast de kolom Pagina's, en in je sitemap, zodat Google ze vindt. Staat je site nog niet live, dan zijn de pagina's klaar en gaan ze online zodra je de website publiceert.
+
+De zoekkaart sluit hierop aan. Onder een zoekterm die vaak gezocht wordt terwijl je laag staat, opent de link op de zoekkaart hetzelfde venster zodra er voorstellen klaarliggen; anders leidt hij nog steeds naar de paginalijst.
 
 ### Je site offline zetten
 

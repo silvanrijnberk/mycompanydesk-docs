@@ -221,7 +221,7 @@ Ce que couvrent les onglets :
 
 - **Apercu** — Apercu du site, s'il est en ligne, et le nombre de modifications non publiees en attente.
 - **Visiteurs** — D'ou viennent les visiteurs et comment ils se deplacent sur le site.
-- **Visibilite** — SEO et metadonnees des pages. Les anciens liens `/website/seo` redirigent ici.
+- **Visibilité** — SEO et métadonnées des pages, plus la carte des pages de services (voir ci-dessous). Les anciens liens `/website/seo` redirigent ici.
 - **Connexions** — Prestataires de paiement (Mollie, Stripe Connect) et services tiers comme Mailchimp, Plausible et Trustpilot. Les anciens liens `/website/integraties` redirigent ici.
 - **Domaine et e-mail** — Domaine personnalise, DNS, SSL, redirections et configuration de la boite de reception. Voir la section domaines personnalises ci-dessus.
 - **Parametres** — Choisissez quel constructeur est actif (modele ou sur mesure) et configurez le slug de l'espace de travail et les autres parametres du site.
@@ -231,6 +231,18 @@ Lorsque votre espace de travail possede plusieurs domaines personnalises actifs 
 Le site public est diffuse a l'URL la plus prioritaire disponible pour l'entreprise : racine du domaine personnalise → sous-domaine de l'espace de travail → route de secours `/portal/<slug>`.
 
 Vous pouvez enrichir le site avec le bloc **Rendez-vous**. Les visiteurs peuvent alors prendre rendez-vous directement depuis votre site. Voir [Rendez-vous en ligne](/fr/features/site-bookings).
+
+#### Les pages de services pour la visibilité
+
+L'onglet Visibilité comporte une carte intitulée « Meer pagina's waar mensen op zoeken » (« More pages people search for » ; l'appli affiche cette carte en néerlandais quelle que soit la langue de l'appli). Elle n'apparaît que s'il y a quelque chose à faire : des services de votre catalogue Aanbod sans page propre, ou des brouillons qui attendent votre relecture.
+
+Ouvrez la carte pour voir les propositions. Chaque proposition porte sur un service que vous vendez vraiment, tiré de votre Aanbod, avec sa future adresse : chaque page reçoit sa propre place sous `/diensten/`. Une proposition peut s'appuyer sur un motif issu de Google Search Console : le terme recherché qui correspond au service, sa fréquence de recherche et la position que vous y occupez. Un tel terme fait monter la proposition en tête et est traité dans la FAQ de la page ; aucune page n'est jamais créée pour un simple terme de recherche. Un terme qui ne correspond à aucun service n'obtient pas de page non plus. La liste explique alors pourquoi : un terme pour toute votre activité (le métier plus votre commune) correspond à votre page d'accueil, une recherche avec votre nom d'entreprise reste dehors parce que ces visiteurs vous ont déjà trouvé, et un service qui n'est pas encore dans votre Aanbod pourra avoir sa page quand vous l'y ajouterez. Un service qui a déjà une page, sous son propre chemin ou sous une page qui porte le service en titre, n'est pas proposé deux fois : deux pages qui se disputent le même terme se rétrogradent mutuellement dans les résultats.
+
+Quand les faits enregistrés sont trop minces pour remplir une vraie page, la fenêtre vous pose des questions au lieu d'inventer du remplissage : en quoi consiste le service, ce qu'il coûte à peu près et combien de temps il prend. Vos réponses sont conservées avec le service dans votre Aanbod là où ces champs étaient encore vides, pour qu'elles comptent aussi comme des faits la prochaine fois, et le texte écrit passe par le même contrôle des faits que tout autre texte IA de votre site.
+
+Les pages sont rédigées une par une et arrivent en brouillon. Rien ne se met en ligne de lui-même : vous relisez les brouillons, vous cochez ceux qui doivent suivre et vous publiez exactement ceux-là ; vos autres modifications non publiées restent en attente. Les pages publiées ne figurent pas dans le menu. Elles apparaissent dans le pied de page sous leur propre colonne **Diensten** (Services), à côté de la colonne Pages, ainsi que dans votre sitemap, pour que Google les trouve. Si votre site n'est pas encore en ligne, les pages sont prêtes et passent en ligne dès que vous publiez le site.
+
+La carte de recherche s'y rattache aussi. Sous un terme recherché fréquemment pendant que vous êtes mal placé, le lien ouvre cette même fenêtre dès qu'il y a des propositions ; sinon il mène toujours à la liste des pages.
 
 ### Mettre le site hors ligne
 

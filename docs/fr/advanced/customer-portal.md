@@ -16,7 +16,9 @@ Lorsque vous envoyez une facture, un **lien de paiement** unique est genere. Lor
 3. **Payer en ligne** - Effectuer le paiement via le portail avec le bouton **Payer maintenant**
 4. **Confirmer le paiement** - Attester d'un virement bancaire (non visible pour les avoirs, les factures annulées ou les factures d'origine entièrement créditées, car le client n'a dans aucun de ces cas rien à payer)
 
-## Fonctionnalites du portail
+Les liens du portail s'ouvrent dans le navigateur du client. Même si le client a l'appli MyCompanyDesk installée sur son téléphone, toucher le lien d'une facture ouvre le navigateur, pas l'appli.
+
+## Fonctionnalités du portail
 
 ### Liste des factures
 

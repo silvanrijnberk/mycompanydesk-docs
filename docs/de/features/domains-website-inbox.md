@@ -221,7 +221,7 @@ Was die Tabs abdecken:
 
 - **Übersicht**-Tab — Vorschau Ihrer Website, ob diese live ist, und wie viele unveröffentlichte Änderungen ausstehen.
 - **Besucher**-Tab — Sehen Sie, wo Besucher herkommen und wie sie sich durch die Website bewegen.
-- **Auffindbarkeit**-Tab — SEO und Seiten-Metadaten. Alte `/website/seo`-Links leiten hierhin weiter.
+- **Auffindbarkeit**-Tab — SEO und Seiten-Metadaten, plus die Karte für Dienstseiten (siehe unten). Alte `/website/seo`-Links leiten hierhin weiter.
 - **Verknüpfungen**-Tab — Zahlungsanbieter (Mollie, Stripe Connect) und Drittanbieterdienste wie Mailchimp, Plausible und Trustpilot. Alte `/website/integraties`-Links leiten hierhin weiter.
 - **Domain & E-Mail**-Tab — Eigene Domain, DNS, SSL, Weiterleitungen und Posteingang-Einrichtung. Siehe den Abschnitt eigene Domains oben.
 - **Einstellungen**-Tab — Wählen Sie, welcher Builder live ist (Vorlage oder Maßanfertigung), und konfigurieren Sie den Workspace-Slug sowie weitere Website-Einstellungen.
@@ -231,6 +231,18 @@ Wenn Ihr Workspace mehrere aktive eigene Domains hat (Pro-Tarif), können Sie ü
 Die öffentliche Website wird unter der am besten geeigneten URL des Unternehmens bereitgestellt: eigene Domain-Root → Workspace-Subdomain → Fallback `/portal/<slug>`-Route.
 
 Sie können die Website mit dem **Termine**-Block erweitern. Besucher können dann direkt über Ihre Website einen Termin buchen. Siehe [Online-Termine](/de/features/site-bookings).
+
+#### Dienstseiten für die Auffindbarkeit
+
+Auf dem Auffindbarkeit-Tab liegt eine Karte mit dem Titel „Meer pagina's waar mensen op zoeken“ (niederländisch für „Weitere Seiten, nach denen gesucht wird“; die App zeigt diese Karte unabhängig von der App-Sprache auf Niederländisch). Sie erscheint nur, wenn es etwas zu tun gibt: Dienstleistungen aus Ihrem Aanbod-Katalog ohne eigene Seite oder Entwurfsseiten, die auf Ihre Prüfung warten.
+
+Öffnen Sie die Karte, dann sehen Sie die Vorschläge. Jeder Vorschlag ist eine Dienstleistung, die Sie wirklich anbieten, aus Ihrem Aanbod, mit der künftigen Adresse dabei: jede Seite bekommt ihren eigenen Platz unter `/diensten/`. Ein Vorschlag kann einen Grund aus der Google Search Console mitbringen: der Suchbegriff, der zur Dienstleistung passt, wie oft er gesucht wird und auf welchem Platz Sie dort stehen. Ein solcher Begriff stellt den Vorschlag nach vorn und wird im FAQ-Bereich der Seite beantwortet; eine Seite wird nie für einen bloßen Suchbegriff angelegt. Auch ein Begriff, zu dem keine Dienstleistung passt, bekommt keine Seite. Die Liste erklärt dann, warum nicht: Ein Begriff für Ihr ganzes Geschäft (das Gewerbe plus Ihr Ort) gehört zu Ihrer Startseite, eine Suche mit Ihrem Firmennamen bleibt außen vor, weil diese Besucher Sie schon gefunden haben, und eine Dienstleistung, die noch nicht in Ihrem Aanbod steht, kann eine Seite bekommen, sobald Sie sie dort ergänzen. Eine Dienstleistung, die schon eine Seite hat, unter ihrem eigenen Pfad oder unter einer Seite mit der Dienstleistung als Titel, wird nicht doppelt vorgeschlagen: zwei Seiten, die um denselben Begriff streiten, drücken sich gegenseitig in den Ergebnissen nach unten.
+
+Reichen die vorhandenen Fakten nicht für eine echte Seite, stellt das Fenster Fragen, statt etwas zu erfinden: worum es bei der Dienstleistung geht, was sie ungefähr kostet und wie lange sie dauert. Ihre Antworten werden bei der Dienstleistung in Ihrem Aanbod gespeichert, solange diese Felder noch leer waren, damit sie beim nächsten Mal ebenfalls als Fakten zählen, und der geschriebene Text läuft durch dieselbe Faktenprüfung wie jeder andere KI-Text auf Ihrer Website.
+
+Die Seiten werden einzeln geschrieben und kommen als Entwurf an. Von selbst geht nichts live: Sie prüfen die Entwürfe durch, markieren, welche veröffentlicht werden sollen, und veröffentlichen genau diese, ohne dass Ihre anderen unveröffentlichten Änderungen mitgehen. Veröffentlichte Seiten stehen nicht im Menü. Sie erscheinen in der Fußzeile unter einer eigenen Spalte **Diensten** (Leistungen) neben der Spalte Seiten sowie in Ihrer Sitemap, damit Google sie findet. Ist Ihre Website noch nicht live, sind die Seiten fertig und gehen online, sobald Sie die Website veröffentlichen.
+
+Auch die Suchkarte ist daran gekoppelt. Unter einem Suchbegriff, der oft gesucht wird, während Sie weit hinten stehen, öffnet der Link dasselbe Fenster, sobald es Vorschläge gibt; andernfalls führt er weiterhin zur Seitenliste.
 
 ### Website vorübergehend offline schalten
 
