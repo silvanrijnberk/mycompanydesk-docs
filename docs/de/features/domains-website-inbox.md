@@ -1,7 +1,7 @@
 ---
 title: Domains, Website und Posteingang
 description: "Eigene Domains, die gehostete Unternehmenswebsite und das gemeinsame Postfach kommen als ein Bündel, hinter custom_domains und public_business_page."
-last_verified: 2026-09-23
+last_verified: 2026-09-26
 ---
 
 # Domains, Website und Posteingang
@@ -205,7 +205,7 @@ Ziehen Sie mit einem Domain um, das Sie bereits verknüpft hatten, wird Ihre bes
 
 Die Option **Ich komme von einem anderen Anbieter** wickelt den ganzen Umzug in einem Assistenten ab: Er verbindet Ihr Domain, richtet Ihre Postfächer ein, importiert die E-Mails aus Ihren alten Postfächern, überträgt die Registrierung zu uns, importiert, was während des Umzugs ankam, und endet mit dem Hinweis, dass Sie Ihr Paket beim alten Anbieter kündigen können. Sie brauchen das Passwort jedes alten Postfachs und, für den Umzug, den Umzugscode. Nameserver, MX-Einträge und Ports bleiben unsichtbar; nur der seltene Rückfallsschritt erwähnt sie.
 
-Ihre Postfächer sind von Anfang an bereit. Auch während Ihr Domain noch beim alten Anbieter liegt, existieren alle Ihre Postfächer bereits und der Import Ihrer alten E-Mails kann direkt beginnen. Empfangen und Senden über diese Adressen schaltet die Plattform frei, sobald das Domain bei uns liegt; den Umzug selbst erledigt der Assistent später im selben Ablauf, und die Plattform schließt die Einrichtung der E-Mail automatisch ab, wenn das Domain aktiv ist.
+Ihre Postfächer sind von Anfang an bereit. Auch während Ihr Domain noch beim alten Anbieter liegt, existieren alle Ihre Postfächer bereits und der Import Ihrer alten E-Mails kann direkt beginnen. Empfangen und Senden über diese Adressen schaltet die Plattform frei, sobald das Domain bei uns liegt; den Umzug selbst erledigt der Assistent später im selben Ablauf, und die Plattform schließt die Einrichtung der E-Mail automatisch ab, wenn das Domain aktiv ist. Während Sie auf die Nameserver warten, zeigt der Posteingang unter Einstellungen den Status **Wartet auf Ihre Domain** an: Sobald die Nameserver umgestellt sind, geht Ihre E-Mail von selbst an, und Sie müssen dort nichts tun.
 
 Der E-Mail-Schritt fragt nach jeder Adresse, die Sie beim alten Anbieter hatten, eine Zeile pro Adresse, und der Assistent legt nur für die Adressen Postfächer an, die Sie selbst nennen. Jede Adresse bekommt hier ein eigenes Postfach; die erste wird Ihr Standardpostfach. Eine Adresse, die nur an eine andere weitergeleitet hat, ohne eigenes Passwort, müssen Sie nicht eintragen: Diese E-Mails liegen schon in dem Postfach, an das sie gingen. Weitere Adressen dürfen das Passwort der ersten Adresse übernehmen oder bekommen ein eigenes. Die Adressen werden nacheinander übertragen: Während eine läuft, wartet der Rest in der Warteschlange, und jede Adresskarte zeigt, wo sie steht. Kündigen Sie Ihr Paket beim alten Anbieter erst, wenn jede Adresse fertig ist; der letzte Bildschirm zählt die übertragenen Adressen auf und, falls bei einer Adresse nicht alles ankam, weist Sie hin, sich vor jeder Kündigung bei uns zu melden. Nachrichten, die gar nicht übertragen werden konnten, etwa weil sie zu groß oder unlesbar sind, liegen nur noch beim alten Anbieter; der letzte Bildschirm sagt, wie viele es sind, damit Sie sie selbst sichern können, bevor Sie Ihren Vertrag dort kündigen.
 

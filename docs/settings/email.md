@@ -48,7 +48,9 @@ Alles wat je invult nemen we mee; wat leeg blijft, laten we weg. Deze velden dee
 
 ## E-mailteksten
 
-Voor factuur-, offerte- en herinneringsmails gebruikt MyCompanyDesk standaard, goed geteste teksten in je documenttaal. Er zijn geen sjablonen per documenttype om te onderhouden. Voordat een document de deur uit gaat, kun je in het verzendvenster nog wel de ontvanger, het onderwerp en het bericht van die ene e-mail aanpassen, en kiezen of je de bekijkknop, downloadknop, PDF-bijlage en factuurregels meestuurt. Zie [E-mailsjablonen](/faq/email-template).
+Voor factuur-, offerte- en herinneringsmails gebruikt MyCompanyDesk standaard, goed geteste teksten in je documenttaal. Liever je eigen formulering? Pas het bericht in het verzendvenster aan en vink **Gebruik deze tekst voortaan** aan: vanaf dan begint die documentsoort (facturen, offertes, herinneringen, creditnota's of huurfacturen) aan jouw tekst, in die taal. In het verzendvenster ga je ook weer terug naar de standaardtekst wanneer je wilt, en alleen de eigenaar van de werkruimte kan de standaardtekst veranderen. Zie [E-mailsjablonen](/faq/email-template).
+
+Voordat een document de deur uit gaat, kun je in het verzendvenster nog wel de ontvanger, het onderwerp en het bericht van die ene e-mail aanpassen, en kiezen of je de bekijkknop, downloadknop, PDF-bijlage en factuurregels meestuurt.
 
 ## Verzenden: limieten en controle
 

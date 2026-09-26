@@ -29,11 +29,14 @@ Ga naar **Instellingen** en open **Factuurontwerp**. Dit is de ontwerpstudio voo
 
 De snelste route is de knop **Genereer uit mijn huisstijl**: die bouwt een compleet ontwerp rond de merkkleur die je onder Logo en kleur hebt gekozen. Niet tevreden? **Probeer andere** wisselt naar een andere look. Alles blijft daarna aanpasbaar:
 
+- **Logo**: upload of vervang je logo direct in de studio (**Ander logo**). Zonder logo staat je bedrijfsnaam bovenaan, en je logo verschijnt ook in je e-mails en op je betaalpagina.
 - **Startpunt**: zes stijlvoorinstellingen: Klassiek, Modern, Botanisch, Atelier, Editorial en Blanco. Zodra je daarna iets aanpast, wordt het ontwerp je eigen variant.
 - **Accentkleur**: je merkkleur staat standaard vooraan. Heb je een logo, dan verschijnen kleuren uit je logo als kant-en-klare stalen. Er is ook een set uitgekozen tinten, plus een eigen kiezer voor elke kleur. Een afwijkende accentkleur overschrijft je merkkleur op facturen, offertes, e-mails en de betaalpagina.
 - **Papiertint**: wit of een van de zachte gebroken-witte tinten (Crème, Greige, Zand, Mist).
 - **Lettertype**: een koplettertype (Marcellus, Playfair Display, Fraunces of Cormorant) en een tekstlettertype (Inter, Lato of EB Garamond).
 - **Thema / indeling**: de algemene opbouw van het document, plus de dichtheid (Compact, Normaal, Ruim). De indeling Botanisch heeft optioneel decoratief artwork dat je kunt uitzetten.
+- **Tekstgrootte**: Klein, Normaal of Groot voor de tekst van je document. Koppen en je bedrijfsnaam houden hun maat.
+- **Teksten op je document**: de afsluitende tekst, klaar onder "Met dank" op elke nieuwe factuur (een offerte zonder eigen tekst krijgt de tekst van je facturen), en de betaalinstructie die bij Betaling staat op nieuwe facturen en op je betaalpagina, met {iban}, {bedrijf} en {factuurnummer} die vanzelf worden ingevuld.
 - **Voettekst**: de regel onderaan elk document, bijvoorbeeld je KVK-nummer of een bedankje.
 
 Wijzigingen worden automatisch opgeslagen en zijn binnen een moment zichtbaar in het voorbeeld. Wil je terug naar de standaardlook? **Thema uitschakelen** zet je documenten terug op het standaardontwerp.

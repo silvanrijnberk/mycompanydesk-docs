@@ -1,7 +1,7 @@
 ---
 title: Domeinen, website en inbox
 description: "Eigen domeinen, de gehoste bedrijfswebsite en de gedeelde inbox komen als een bundel, achter de vlaggen custom_domains en public_business_page."
-last_verified: 2026-09-23
+last_verified: 2026-09-26
 ---
 
 # Domeinen, website en inbox
@@ -205,7 +205,7 @@ Verhuis je een domein dat je al gekoppeld had, dan wordt je bestaande domeinrij 
 
 De deur **Ik kom van een andere hoster** regelt de hele verhuizing in één wizard: hij koppelt je domein, zet je postbussen klaar, importeert de mail uit je oude postbussen, verhuist de registratie naar ons, importeert wat er tijdens de verhuizing binnenkwam en eindigt met de mededeling dat je je pakket bij de oude hoster kunt opzeggen. Je hebt het wachtwoord van elke oude postbus nodig en, voor de verhuizing, de verhuiscode. Nameservers, MX-records en poorten blijven buiten beeld; alleen de zeldzame terugvalstap noemt ze.
 
-Je postbussen staan er vanaf het begin. Ook terwijl je domein nog bij de oude hoster staat, bestaan al je postbussen al en kan de import van je oude mail meteen beginnen. Ontvangen en versturen vanaf die adressen gaan aan zodra je domein bij ons staat; de verhuizing zelf regelt de wizard later in hetzelfde traject, en het platform maakt de mailinrichting automatisch af zodra het domein actief is.
+Je postbussen staan er vanaf het begin. Ook terwijl je domein nog bij de oude hoster staat, bestaan al je postbussen al en kan de import van je oude mail meteen beginnen. Ontvangen en versturen vanaf die adressen gaan aan zodra je domein bij ons staat; de verhuizing zelf regelt de wizard later in hetzelfde traject, en het platform maakt de mailinrichting automatisch af zodra het domein actief is. Ondertussen geeft de inbox-instellingen het domein de status **Wacht op je domein**: zodra je nameservers zijn omgezet, gaat de mail vanzelf aan en hoef je daar niets te doen.
 
 De mailstap vraagt om elk adres dat je bij de oude hoster had, één regel per adres, en de wizard maakt alleen postbussen aan voor de adressen die jij opgeeft. Elk adres krijgt hier een eigen postbus; de eerste wordt je standaardpostbus. Een adres dat alleen doorstuurde naar een ander adres, zonder eigen wachtwoord, hoef je niet in te vullen: die mail staat al in de postbus waar hij naartoe ging. Extra adressen mogen het wachtwoord van het eerste adres hergebruiken of krijgen een eigen wachtwoord. De adressen gaan één voor één over: terwijl er één wordt overgezet, wacht de rest in de rij, en op elke adreskaart zie je waar hij staat. Zeg je pakket bij de oude hoster nog niet op voordat elk adres klaar is; het afsluitende scherm zet de overgezette adressen op een rij en, als er van een adres nog niet alles is overgekomen, verwijst het je naar ons voordat je iets opzegt. Berichten die helemaal niet mee konden, bijvoorbeeld omdat ze te groot of onleesbaar zijn, staan alleen nog bij de oude hoster; het afsluitende scherm zegt hoeveel het er zijn, zodat je ze zelf kunt bewaren voordat je je pakket daar opzegt.
 

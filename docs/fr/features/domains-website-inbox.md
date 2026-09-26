@@ -1,7 +1,7 @@
 ---
 title: Domaines, site web et boite de reception
 description: "Domaines personnalisés, site vitrine hébergé et boîte partagée arrivent en un seul lot, derrière custom_domains et public_business_page."
-last_verified: 2026-09-23
+last_verified: 2026-09-26
 ---
 
 # Domaines, site web et boite de reception
@@ -205,7 +205,7 @@ Si vous transférez un domaine que vous aviez déjà relié, votre ligne de doma
 
 L'option **Je viens d'un autre hébergeur** gère tout le déménagement en un assistant : il relie votre domaine, prépare vos boîtes, importe le courrier de vos anciennes boîtes, transfère l'enregistrement chez nous, importe ce qui est arrivé pendant le transfert, et se termine par l'avis que vous pouvez résilier votre forfait chez l'ancien hébergeur. Il vous faut le mot de passe de chaque ancienne boîte et, pour le transfert, le code de transfert. Serveurs de noms, enregistrements MX et ports restent invisibles ; seule la rare étape de repli les mentionne.
 
-Vos boîtes sont prêtes dès le départ. Pendant que votre domaine est encore chez l'ancien hébergeur, toutes vos boîtes existent déjà et l'import de votre ancien courrier peut commencer tout de suite. La réception et l'envoi depuis ces adresses s'activent quand le domaine est chez nous ; l'assistant gère ce déménagement plus loin dans le même parcours, et la plateforme termine la configuration du courrier automatiquement dès que le domaine est actif.
+Vos boîtes sont prêtes dès le départ. Pendant que votre domaine est encore chez l'ancien hébergeur, toutes vos boîtes existent déjà et l'import de votre ancien courrier peut commencer tout de suite. La réception et l'envoi depuis ces adresses s'activent quand le domaine est chez nous ; l'assistant gère ce déménagement plus loin dans le même parcours, et la plateforme termine la configuration du courrier automatiquement dès que le domaine est actif. Pendant ce temps, la boîte de réception donne au domaine le statut **En attente de votre domaine** : dès que vos serveurs de noms sont modifiés, la messagerie s'active d'elle-même, et vous n'avez rien à faire là.
 
 L'étape du courrier demande chaque adresse que vous aviez chez l'ancien hébergeur, une ligne par adresse, et l'assistant ne crée des boîtes que pour les adresses que vous nommez. Chaque adresse reçoit ici sa propre boîte ; la première devient votre boîte principale. Une adresse qui ne faisait que renvoyer vers une autre, sans mot de passe à elle, n'a pas besoin d'être saisie : ce courrier est déjà arrivé dans la boîte vers laquelle il allait. Les adresses suivantes peuvent reprendre le mot de passe de la première ou en recevoir un propre. Les adresses partent une par une : pendant que l'une est en cours, les autres attendent leur tour, et chaque carte d'adresse montre où elle en est. Ne résiliez votre forfait chez l'ancien hébergeur qu'une fois chaque adresse terminée ; l'écran final liste les adresses transférées et, si une adresse n'est pas arrivée en entier, vous invite à nous contacter avant de résilier quoi que ce soit. Les messages qui n'ont pas pu être transférés du tout, par exemple parce qu'ils sont trop volumineux ou illisibles, ne se trouvent plus que chez l'ancien hébergeur ; l'écran final en donne le nombre, pour que vous puissiez les sauvegarder vous-même avant de résilier votre forfait là-bas.
 

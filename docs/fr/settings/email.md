@@ -48,7 +48,9 @@ Tout ce que vous remplissez est repris ; ce qui reste vide est simplement omis. 
 
 ## Textes des e-mails
 
-Les e-mails de facture, de devis et de rappel utilisent les textes standard et éprouvés de MyCompanyDesk, dans la langue de vos documents. Il n'y a aucun modèle par type de document à entretenir. Avant l'envoi d'un document, la fenêtre d'envoi vous permet encore d'ajuster le destinataire, l'objet et le message de cet e-mail précis, et de choisir d'inclure le bouton de consultation, le bouton de téléchargement, la pièce jointe PDF et les lignes de facture. Voir [Modèles d'e-mail](/fr/faq/email-template).
+Les e-mails de facture, de devis et de rappel utilisent les textes standard et éprouvés de MyCompanyDesk, dans la langue de vos documents. Vous préférez votre propre formulation ? Ajustez le message dans la fenêtre d'envoi et cochez **Utiliser ce texte désormais** : à partir de là, ce type de document (factures, devis, relances, avoirs ou factures de loyer) part de votre texte, dans cette langue. La fenêtre d'envoi vous ramène aussi au texte standard quand vous voulez, et seul le propriétaire de l'espace de travail peut changer le texte par défaut. Voir [Modèles d'e-mail](/fr/faq/email-template).
+
+Avant l'envoi d'un document, la fenêtre d'envoi vous permet encore d'ajuster le destinataire, l'objet et le message de cet e-mail précis, et de choisir d'inclure le bouton de consultation, le bouton de téléchargement, la pièce jointe PDF et les lignes de facture.
 
 ## Envoi : limites et contrôle
 

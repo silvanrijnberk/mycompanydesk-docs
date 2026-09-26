@@ -29,11 +29,14 @@ Allez dans les **paramètres** et ouvrez **Mise en page des factures**. C'est le
 
 Le chemin le plus rapide est le bouton **Générer depuis mon identité visuelle** : il construit une mise en page complète autour de la couleur de marque choisie sous Logo et couleur. Pas convaincu ? **Essayer un autre style** passe à une autre variante. Tout reste ensuite modifiable :
 
+- **Logo :** chargez ou remplacez votre logo directement dans le studio (**Autre logo**). Sans logo, le nom de votre entreprise figure en haut, et votre logo apparaît aussi dans vos e-mails et sur votre page de paiement.
 - **Point de départ :** six styles prédéfinis : Classique, Moderne, Botanique, Atelier, Éditorial et Vierge. Dès que vous modifiez un réglage, la mise en page devient votre propre variante.
 - **Couleur d'accentuation :** votre couleur de marque vient en premier. Si vous avez un logo, des couleurs qui en sont extraites apparaissent comme pastilles prêtes à l'emploi. S'y ajoutent une sélection de teintes choisies et un sélecteur libre pour n'importe quelle couleur. Une couleur d'accentuation différente remplace votre couleur de marque sur les factures, devis, e-mails et la page de paiement.
 - **Teinte du papier :** blanc ou l'une des douces teintes cassées (Crème, Grège, Sable, Brume).
 - **Police :** une police de titre (Marcellus, Playfair Display, Fraunces ou Cormorant) et une police de texte (Inter, Lato ou EB Garamond).
 - **Thème / mise en page :** l'organisation générale du document, plus la densité (Compact, Normal, Aéré). La mise en page Botanique propose des ornements décoratifs facultatifs que vous pouvez désactiver.
+- **Taille du texte :** Petit, Normal ou Grand pour le texte de votre document. Les titres et le nom de votre entreprise gardent leur taille.
+- **Textes sur votre document :** le texte de clôture, prêt sous « Merci » sur chaque nouvelle facture (un devis sans texte propre reprend le texte de vos factures), et l'instruction de paiement affichée sous Paiement sur les nouvelles factures et sur votre page de paiement, avec {iban}, {company} et {invoiceNumber} insérés automatiquement.
 - **Pied de page :** la ligne au bas de chaque document, par exemple votre numéro KVK ou un mot de remerciement.
 
 Les modifications sont enregistrées automatiquement et apparaissent aussitôt dans l'aperçu. Envie de revenir au style standard ? **Désactiver le thème** remet vos documents sur la mise en page par défaut.

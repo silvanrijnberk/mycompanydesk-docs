@@ -48,7 +48,9 @@ Alles, was Sie ausfüllen, wird übernommen; was leer bleibt, wird einfach wegge
 
 ## E-Mail-Texte
 
-Rechnungs-, Angebots- und Erinnerungs-E-Mails verwenden die standardmäßigen, gut erprobten Texte von MyCompanyDesk, in Ihrer Dokumentsprache. Es gibt keine Vorlagen pro Dokumenttyp zu pflegen. Bevor ein Dokument verschickt wird, können Sie im Versandfenster weiterhin Empfänger, Betreff und Nachricht dieser einen E-Mail anpassen und wählen, ob Ansicht-Button, Download-Button, PDF-Anhang und Rechnungspositionen enthalten sein sollen. Siehe [E-Mail-Vorlagen](/de/faq/email-template).
+Rechnungs-, Angebots- und Erinnerungs-E-Mails verwenden die standardmäßigen, gut erprobten Texte von MyCompanyDesk, in Ihrer Dokumentsprache. Lieber Ihre eigene Formulierung? Passen Sie die Nachricht im Versandfenster an und aktivieren Sie **Diesen Text künftig verwenden**: Ab dann startet diese Dokumentart (Rechnungen, Angebote, Zahlungserinnerungen, Gutschriften oder Mietrechnungen) bei Ihrem Text, in dieser Sprache. Im Versandfenster stellen Sie jederzeit wieder auf den Standardtext zurück, und nur der Workspace-Inhaber kann den Standardtext ändern. Siehe [E-Mail-Vorlagen](/de/faq/email-template).
+
+Bevor ein Dokument verschickt wird, können Sie im Versandfenster weiterhin Empfänger, Betreff und Nachricht dieser einen E-Mail anpassen und wählen, ob Ansicht-Button, Download-Button, PDF-Anhang und Rechnungspositionen enthalten sein sollen.
 
 ## Versenden: Grenzen und Prüfung
 

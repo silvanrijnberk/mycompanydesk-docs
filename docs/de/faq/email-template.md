@@ -1,16 +1,25 @@
 ---
 title: E-Mail-Vorlagen
-description: "E-Mail-Vorlagen lassen sich nicht bearbeiten. MyCompanyDesk nutzt feste, erprobte Texte für Rechnungs-, Gutschrift-, Angebots- und Erinnerungsmails."
-last_verified: 2026-08-14
+description: "Rechnungs-, Angebots- und Erinnerungsmails nutzen einen Standardtext. Speichern Sie Ihren eigenen Text im Versandfenster, pro Dokumentart und Sprache."
+last_verified: 2026-09-26
 chatbot:
   triggers: ["email template", "customize email", "invoice email message", "email text", "change email message", "email sjabloon", "email aanpassen", "e-mail vorlage", "modele email", "personnaliser email"]
   actions:
     - { label: "Open email settings", to: "/settings/email" }
   follow_up: ["How do I send an invoice by email?", "How do I change the PDF style?"]
 ---
-E-Mail-Vorlagen können nicht mehr bearbeitet werden. MyCompanyDesk verwendet standardmäßige, gut erprobte Texte für Rechnungs-, Gutschrifts-, Angebots- und Erinnerungs-E-Mails, in Ihrer Dokumentsprache.
+Rechnungs-, Angebots- und Erinnerungs-E-Mails starten mit den standardmäßigen, gut erprobten Texten von MyCompanyDesk, in Ihrer Dokumentsprache. Vorlagen pflegen ist nicht nötig, und das dürfen Sie auch so lassen. Mit Ihrer eigenen Formulierung zufrieden? Speichern Sie sie als Ihren eigenen Standardtext, dann startet jedes nächste Dokument dieser Art damit.
 
 Gutschrifts-E-Mails verwenden eine eigene Vorlage, die das Dokument als Gutschrift benennt, den gutgeschriebenen Betrag als positiven Betrag angibt und nicht um Zahlung bittet oder ein Zahlungsziel enthält.
+
+## Ihr eigener Standardtext
+
+Schreiben Sie Betreff und Nachricht im Versandfenster so, wie Sie sie möchten, und aktivieren Sie **Diesen Text künftig für Rechnungen verwenden** (oder für Angebote, Zahlungserinnerungen, Gutschriften oder Mietrechnungen). Sobald die E-Mail unterwegs ist, ist Ihr Text der Startpunkt für jedes nächste Dokument dieser Art.
+
+- Der Text wird mit Platzhaltern gespeichert: Name, Nummer, Betrag und Daten füllt MyCompanyDesk bei jeder E-Mail selbst wieder ein.
+- Ihr Text gilt pro Dokumentart und pro Sprache. Andere Sprachen behalten den Standardtext.
+- Das Versandfenster zeigt an, wenn Ihr eigener Text aktiv ist, und bietet **Zurück zum Standardtext von MyCompanyDesk** an. Die Umstellung greift beim Senden, direkt danach können Sie sie mit **Rückgängig** zurücknehmen.
+- Nur der Workspace-Inhaber kann den Standardtext setzen oder zurücksetzen. Die Buchhaltung passt eine einzelne E-Mail an, ändert aber nicht den Standard.
 
 Was Sie anpassen können:
 1. Den Absender: Gehen Sie zu Einstellungen → E-Mail und wählen Sie Ihre eigene Domain (Pro), Gmail oder Outlook

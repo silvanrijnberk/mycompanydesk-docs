@@ -1,7 +1,7 @@
 ---
 title: Email
 description: "Choose which address your invoices and quotes go out from and set the sign-off under every message. Available on every plan."
-last_verified: 2026-09-23
+last_verified: 2026-09-26
 ---
 
 # Email
@@ -49,7 +49,9 @@ Every item you fill in is included; anything left empty is simply skipped. These
 
 ## Email texts
 
-Invoice, quote, and reminder emails use MyCompanyDesk's standard, well-tested texts, in your document language. There are no per-document templates to maintain. Before a document goes out, the send window still lets you adjust the recipient, subject, and message for that one email, and choose whether to include the view button, download button, PDF attachment, and invoice lines. See [Email templates](/en/faq/email-template).
+Invoice, quote, and reminder emails use MyCompanyDesk's standard, well-tested texts, in your document language. Prefer your own wording? Adjust the message in the send window and tick **Use this text from now on**: from then on, that document type (invoices, quotes, reminders, credit notes, or rent invoices) starts from your text, in that language. The send window also switches you back to the standard text whenever you like, and only the workspace owner can change the default. See [Email templates](/en/faq/email-template).
+
+Before a document goes out, the send window still lets you adjust the recipient, subject, and message for that one email, and choose whether to include the view button, download button, PDF attachment, and invoice lines.
 
 ## Sending: limits and checks
 
