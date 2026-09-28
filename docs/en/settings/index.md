@@ -67,6 +67,12 @@ A few pages only appear through search, to keep the main list calm:
 - **Bankkoppeling** (bank connection): connects your bank so incoming transactions are recognised as expenses automatically.
 - **API-sleutels** (API keys) and **Webhooks**: developer settings, shown when the public API is available on your account.
 
+## The Settings button on a work page
+
+Pages that show things configured elsewhere carry a **Settings** button in the top bar: invoices, quotes, recurring invoices, contracts, customers, your Aanbod, expenses, bookkeeping, taxes, the inbox, newsletters, your website, and hours and calendar. Open it and a panel lists exactly the settings that govern what you see on that page, each with its current value next to it: the payment term with reminders, the next invoice number, the deposit percentage, whether a logo or IBAN is set, your VAT rate and how often you file. A setting with no value yet shows an Add action instead, so an empty spot is visible at a glance. A row click opens the card on the settings page, and the back button there returns you to where you were. **All settings** opens the full overview at `/settings`.
+
+The button does not appear on new and edit forms, nor on the settings pages themselves. A page whose contents are not configured anywhere does not get one either.
+
 ## Where do I find...
 
 | I want to... | Open |

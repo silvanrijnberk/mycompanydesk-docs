@@ -301,6 +301,16 @@ Je kunt een geopende thread vanuit de toolbar als ongelezen markeren. Waar de on
 
 Als een thread vanuit de lijst naar Prullenbak, Spam, Gesloten of Snoozed wordt verplaatst terwijl het leesvenster openstaat, sluit dat venster automatisch. Zo blijft het leesvenster altijd synchroon met de map die je bekijkt, zodat je geen antwoord blijft schrijven op een gesprek dat al uit het huidige overzicht is verdwenen.
 
+#### Spamfilter
+
+Elke inkomende mail gaat door een spamfilter voordat er verder iets mee gebeurt: een grote set regels op headers, links en inhoud, DNS-blokkeerlijsten, phishinglijsten en een statistisch filter dat bijleert van de Spam- en Geen spam-knoppen die je zelf drukt. Mail die het filter als spam aanmerkt komt je inbox niet meer binnen: die belandt direct in de map Spam, met de redenen erbij. Mail waar het filter over twijfelt blijft in de inbox staan en krijgt bovenin het leesvenster een rode melding ("Dit zou spam kunnen zijn.") met daaronder de redenen en daarnaast de knop Markeer als spam.
+
+De redenen zijn concreet: de afzender doet zich voor als een bekende naam maar mailt vanaf een ander domein, een link wijst naar een bekende phishingsite, het antwoordadres staat op een lijst met misbruikte adressen of gaat naar een ander adres dan de afzender, een buitenstaander noemt je eigen domeinnaam in het onderwerp, een link gaat naar een anonieme hostingdienst in plaats van naar de website van de afzender, het domein van de afzender bestaat pas net, de domeinextensie wordt vooral voor spam gebruikt, een link of de verzendende server staat op een spamlijst, de mail is niet echt verstuurd door het domein dat als afzender staat, hij bevat verborgen tekst, of hij lijkt op mail die eerder als spam is gemarkeerd. De sterkste redenen staan bovenaan.
+
+Daar verandert nog iets mee. Bij een gesprek dat als verdacht is aangemerkt blijft de AI-samenvattingskaart verborgen, zodat een phishingmail nooit in onze woorden wordt samengevat. En markeer je een gesprek als Geen spam, dan gaat hij terug naar je inbox en komt de afzender op de vertrouwenslijst, zodat het volgende bericht gewoon binnenkomt.
+
+Naast het filter blijft de AI-beoordeling bestaan, maar die kan een oordeel alleen verhogen, nooit verlagen, en stuurt nooit zelf echte mail naar Spam. Het filter zelf mag nooit mail kosten: is het onbereikbaar of te traag, dan komt het bericht precies zo binnen als voorheen.
+
 #### Logo of foto bij de afzender
 
 Inkomende mail toont het gezicht van de afzender, in de threadlijst en in het leesvenster. MyCompanyDesk zoekt een logo of foto op drie plekken, in deze volgorde: het logo dat het domein van de afzender zelf via BIMI publiceert (dezelfde methode die Gmail gebruikt), de Gravatar-foto die bij het adres hoort, en het icoon van de eigen website van de afzender. Bij gratis maildomeinen zoals Gmail, Outlook en iCloud wordt alleen Gravatar geprobeerd, zodat niet elke Gmail-afzender hetzelfde Gmail-logo krijgt.
@@ -319,7 +329,9 @@ De inbox blijft de bron van waarheid. Lezen, versturen, mappen en leesstatus bli
 
 Het venster loopt per mailapp met je mee, met een stap-voor-staphandleiding voor Apple Mail, Outlook, de Gmail-app en Thunderbird. Voor Apple-apparaten download je een installatieprofiel dat de serverinstellingen voor je invult, en Thunderbird vindt de servers vanzelf. In de Gmail-app voeg je het account toe met **Persoonlijk (IMAP)**; Gmail in de browser haalt geen andere accounts op, maar je koppelt hem wel voor het versturen.
 
-Je app-wachtwoord maak je in hetzelfde venster aan en je ziet het een keer. Het werkt voor inkomende en uitgaande post. Intrekken verbreekt de koppeling met de mailapp meteen.
+Een wachtwoord blijft werken tot je het zelf intrekt, dus maak er een per apparaat aan en trek precies het apparaat terug dat misdraagt; intrekken verbreekt de koppeling met die mailapp meteen. Kopieer het wachtwoord en plak het in je mailapp in plaats van het over te typen, bij inkomend én uitgaand. Naast het wachtwoord toont het venster een QR-code die je met de camera van je telefoon scant om het wachtwoord daar te kopiëren; die code verschijnt als je het wachtwoord aanmaakt in de browser op je computer, niet in de app op je telefoon zelf.
+
+Lukt het inloggen vanuit je mailapp niet, dan zegt het venster waarom. Bovenaan staat de meest recent geweigerde aanmelding met dag en tijd en wat je eraan kunt doen, en bij elk app-wachtwoord in de lijst staat de laatste weigering met een korte reden. Een weigering verdwijnt uit beeld zodra het inloggen daarna weer lukt. De redenen die de server kan melden: het wachtwoord is ingetrokken (zet een wachtwoord uit de lijst hieronder in je mailapp, bij inkomend én uitgaand, of maak hieronder een nieuw aan), er zit een typefout in het wachtwoord (plak het opnieuw in, niet overtypen), je mailapp gebruikt je oude wachtwoord of je MyCompanyDesk-wachtwoord in plaats van een app-wachtwoord, de gebruikersnaam klopt niet (vul het hele postbusadres in), je account heeft nu geen toegang tot de Inbox, of de Inbox staat uit voor dit domein.
 
 Of lezen via IMAP en POP3 is aangezet, kan per server verschillen. Staat lezen nog niet aan, dan zegt het venster dat, en versturen kun je wel al instellen. POP3 haalt alleen de postbusmap op, dus als je app IMAP aankan, is dat de betere keuze.
 

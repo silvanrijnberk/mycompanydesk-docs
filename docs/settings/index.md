@@ -67,6 +67,12 @@ Een paar pagina's verschijnen alleen via zoeken, zodat de hoofdlijst rustig blij
 - **Bankkoppeling**: koppelt je bank zodat binnenkomende transacties automatisch als uitgaven worden herkend.
 - **API-sleutels** en **Webhooks**: instellingen voor ontwikkelaars, zichtbaar wanneer de publieke API op je account beschikbaar is.
 
+## De knop Instellingen op een werkpagina
+
+Pagina's die dingen tonen die ergens anders worden ingesteld, krijgen in de bovenbalk een knop **Instellingen**: facturen, offertes, terugkerende facturen, contracten, klanten, je Aanbod, uitgaven, boekhouding, belastingen, de inbox, nieuwsbrieven, je website en uren en agenda. Open je de knop, dan verschijnt een paneel met precies de instellingen die over die pagina gaan, elk met de huidige waarde ernaast: de betaaltermijn met herinneringen, het volgende factuurnummer, het percentage aanbetaling, of er al een logo of IBAN staat, je btwtarief en hoe vaak je aangifte doet. Een instelling zonder waarde toont in plaats daarvan de actie Invullen, zodat een lege plek meteen opvalt. Een regel brengt je naar de kaart op het instellingenblad, en de terugknop daar zet je weer terug waar je was. **Alle instellingen** opent het volledige overzicht op `/settings`.
+
+De knop staat niet op nieuwe- en bewerkformulieren, en niet op de instellingenpagina's zelf. Een pagina waarvan niets ergens anders wordt ingesteld, krijgt hem ook niet.
+
 ## Waar vind ik...
 
 | Ik wil... | Open |

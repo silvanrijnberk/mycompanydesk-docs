@@ -301,6 +301,16 @@ You can mark any open thread as unread from the toolbar. Unlike earlier versions
 
 If a thread is moved to Trash, Spam, Closed or Snoozed from the list while its reader is open, the reader closes automatically. This keeps the detail view in sync with the folder you are viewing, so you don't keep composing a reply to a thread that has already left the current view.
 
+#### Spam filter
+
+Every incoming email passes through a spam filter before anything else happens with it: a large set of rules on headers, links and content, DNS blocklists, phishing feeds, and a statistical filter that keeps learning from the Spam and Not spam buttons you press. Email the filter rates as spam never reaches your inbox: it lands in the Spam folder directly, with the reasons attached. Email the filter is unsure about stays in the inbox and carries a red notice at the top of the reader ("This might be spam.") with the reasons underneath and a Mark as spam button beside them.
+
+The reasons are concrete: the sender claims a well-known name but mailed from a different domain, a link points at a known phishing site, the reply address sits on a list of abused addresses or leads somewhere other than the sender, an outsider names your own domain in the subject, a link goes to an anonymous hosting service instead of the sender's website, the sender's domain was only just created, the domain extension is one mostly used for spam, a link or the sending server is on a spam list, the email did not really come from the domain it names as sender, it carries hidden text, or it resembles email that was marked as spam before. The strongest reasons come first.
+
+Two more things change along with it. On a thread flagged as suspicious, the AI summary card stays hidden, so a phishing email is never paraphrased in our voice. And when you mark a thread as Not spam, it moves back to your inbox and the sender is trusted, so their next message arrives normally.
+
+The AI judgement keeps running beside the filter, but it can only raise a verdict, never lower one, and it never sends real email to Spam on its own. The filter itself is never allowed to cost you email: if it is unreachable or too slow, the message arrives exactly as it would have before.
+
 #### Sender logos and photos
 
 Incoming mail carries the sender's face next to the message, in the thread list and in the reader. MyCompanyDesk looks for a logo or photo in three places, in this order: the logo the sender's domain publishes via BIMI (the same mechanism Gmail uses), the Gravatar photo attached to the address, and the icon of the sender's own website. For free mail domains such as Gmail, Outlook and iCloud only Gravatar is consulted, so not every Gmail sender ends up with the same Gmail logo.
@@ -319,7 +329,9 @@ The inbox stays the source of truth. Reading, sending, folders and read status s
 
 The modal walks you through setup per mail app, with a step-by-step guide for Apple Mail, Outlook, the Gmail app and Thunderbird. For Apple devices you can download an installation profile that fills in the server settings for you, and Thunderbird finds the servers on its own. In the Gmail app you add the account with **Personal (IMAP)**; Gmail on the web does not fetch other accounts, but you can connect it for sending.
 
-Your app password is created in the same modal and is shown once. It works for both incoming and outgoing mail. Revoking it disconnects the mail app immediately.
+A password keeps working until you revoke it yourself, so create one per device and revoke exactly the one that misbehaves; revoking disconnects that mail app immediately. Copy the password and paste it into your mail app instead of retyping it, for both incoming and outgoing. Next to the password the window shows a QR code you scan with your phone's camera to copy the password over there; the code appears when you create the password from a browser on your computer, not in the app on your phone itself.
+
+When your mail app cannot sign in, the window tells you why. At the top it names the most recent rejected sign-in with the day and time and explains what to do about it, and each app password in the list shows its last rejection with a short reason. A rejection disappears from view once signing in succeeds again afterwards. The reasons the server can report: the password has been revoked (put a password from the list below into your mail app, for both incoming and outgoing, or create a new one below), there is a typo in the password (paste it in again, do not retype it), the mail app is using your old password or your MyCompanyDesk password instead of an app password, the username is wrong (enter the full mailbox address), your account currently has no access to the Inbox, or the Inbox is turned off for this domain.
 
 Whether reading through IMAP and POP3 is switched on can depend on the server. If reading is not available yet, the modal says so and you can still set up sending. POP3 fetches the inbox folder only, so IMAP is the better choice when your app supports it.
 

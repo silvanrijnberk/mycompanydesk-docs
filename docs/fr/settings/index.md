@@ -69,6 +69,12 @@ Quelques pages n'apparaissent que via la recherche, pour garder la liste princip
 - **Connexion bancaire** : connecte votre banque afin que les transactions entrantes soient reconnues automatiquement comme des dépenses.
 - **Clés API** et **Webhooks** : paramètres pour développeurs, visibles lorsque l'API publique est disponible sur votre compte.
 
+## Le bouton Paramètres sur une page de travail
+
+Les pages qui montrent des choses réglées ailleurs portent un bouton **Paramètres** dans la barre du haut : factures, devis, factures récurrentes, contrats, clients, votre Aanbod, dépenses, comptabilité, impôts, la boîte de réception, newsletters, votre site web, ainsi que heures et agenda. Ouvrez-le : un panneau liste exactement les réglages qui gouvernent ce que vous voyez sur cette page, chacun avec sa valeur actuelle à côté : le délai de paiement avec les relances, le prochain numéro de facture, le pourcentage d'acompte, la présence d'un logo ou d'un IBAN, votre taux de TVA et votre fréquence de déclaration. Un réglage sans valeur affiche à la place l'action À compléter, pour qu'un emplacement vide saute aux yeux. Un clic sur une ligne ouvre la carte sur la page de paramètres, et le bouton retour vous ramène là où vous étiez. **Tous les paramètres** ouvre l'aperçu complet sur `/settings`.
+
+Le bouton n'apparaît ni sur les formulaires de création et de modification, ni sur les pages de paramètres elles-mêmes. Une page dont rien n'est réglé ailleurs ne l'obtient pas non plus.
+
 ## Où trouver...
 
 | Je veux... | Ouvrez |

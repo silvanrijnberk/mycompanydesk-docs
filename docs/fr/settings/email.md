@@ -76,7 +76,7 @@ L'onglet garde aussi votre formule d'appel et votre formule de politesse standar
 
 ### Votre signature
 
-Le pied de page sous chaque e-mail sortant se construit automatiquement à partir des informations de votre entreprise : le nom de votre entreprise apparaît toujours, et les informations que vous remplissez (e-mail de support, site web, liens sociaux) s'ajoutent. Ce qui reste vide est omis. Les mêmes informations figurent aussi sur vos factures et votre site web, aussi les modifiez-vous à un seul endroit : **Paramètres → Informations de l'entreprise**. Sous E-mail, un aperçu montre à quoi ressemblera votre signature, avec le lien **Modifier les informations de l'entreprise**. Si seul le nom de l'entreprise est rempli pour l'instant, l'aperçu le dit aussi.
+Le pied de page sous chaque e-mail sortant se construit automatiquement à partir des informations de votre entreprise : le nom de votre entreprise apparaît toujours, et les informations que vous remplissez (e-mail de support, site web, liens sociaux) s'ajoutent. Ce qui reste vide est omis. Les mêmes informations figurent aussi sur vos factures et votre site web, aussi les modifiez-vous à un seul endroit : **Paramètres → Informations de l'entreprise**. Sous E-mail, un aperçu montre votre signature, avec le lien **Modifier les informations de l'entreprise**. L'aperçu affiche le pied de page exact qui part sous chaque e-mail, donc ce que vous voyez est ce que reçoit votre client : le téléphone, l'adresse, le numéro KvK, votre photo et le lien vers votre site y apparaissent dès que vous les remplissez.
 
 ## Mise en forme
 

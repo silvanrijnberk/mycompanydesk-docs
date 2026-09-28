@@ -76,7 +76,7 @@ Op het tabblad staan ook je standaard aanhef en afsluiting, die het opstelvenste
 
 ### Je afsluiter
 
-Onder elke uitgaande e-mail zetten we je bedrijfsnaam en de gegevens die je invult bij je bedrijfsgegevens. Wat leeg is, laten we weg. Diezelfde gegevens staan ook op je facturen en je website, en daarom pas je ze op één plek aan: bij **Instellingen → Bedrijfsgegevens**. Op het E-mail-tabblad zie je een voorbeeld van hoe je afsluiter eruitziet, met de link **Bedrijfsgegevens aanpassen**. Is er nog maar een bedrijfsnaam ingevuld, dan zegt het voorbeeld dat ook.
+Onder elke uitgaande e-mail zetten we je bedrijfsnaam en de gegevens die je invult bij je bedrijfsgegevens. Wat leeg is, laten we weg. Diezelfde gegevens staan ook op je facturen en je website, en daarom pas je ze op één plek aan: bij **Instellingen → Bedrijfsgegevens**. Op het E-mail-tabblad zie je een voorbeeld van je afsluiter, met de link **Bedrijfsgegevens aanpassen**. Het voorbeeld is precies de voet die onder elke mail naar je klant gaat, dus wat je ziet is wat je klant krijgt: telefoon, adres, KvK-nummer, je foto en de link naar je site verschijnen erin zodra je ze invult.
 
 ## Vormgeving
 
