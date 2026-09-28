@@ -13,7 +13,7 @@ L'icone d'assistant dans la topbar ouvre un panneau de chat qui sait sur quelle 
 
 ### Demander à un humain (Vraag het Sil)
 
-Sous chaque panneau d'assistant se trouve la ligne « Plutôt parler à une personne ? » : les personnes qui répondent actuellement aux questions, avec nom et photo, à côté d'un bouton WhatsApp. L'assistant reste le chemin le plus rapide pour la plupart des questions ; un humain n'est ainsi jamais à plus d'un clic.
+Sous le guide se trouve la ligne « Plutôt parler à une personne ? » : les personnes qui répondent actuellement aux questions, avec nom et photo, à côté d'un bouton WhatsApp. L'assistant reste le chemin le plus rapide pour la plupart des questions ; un humain n'est ainsi jamais à plus d'un clic. L'Assistant Financier d'Office est un chat sur vos propres chiffres et pour préparer devis et factures, pas un service d'assistance : la ligne n'y apparaît donc pas d'emblée, mais dès que la conversation devient une demande d'aide (la réponse vient de la FAQ ou du manuel) ou que l'assistant bloque.
 
 En choisissant l'une de ces personnes, un petit formulaire s'ouvre : votre question, plus une case à cocher pour joindre votre conversation avec l'assistant, déjà cochée d'avance. L'envoi transforme votre question en ticket de support ordinaire, et la réponse arrive dans l'app et par e-mail, avec la promesse d'une réponse sous un jour ouvré, généralement en quelques heures. Après l'envoi, un lien mène à votre question sous forme de fil de ticket. Le bouton WhatsApp ouvre une conversation dans laquelle une courte présentation attend déjà : qui vous êtes, à quelle page votre question se rapporte et ce que vous demandez.
 

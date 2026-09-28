@@ -13,7 +13,7 @@ De assistent-icoon in de topbar opent een chatpaneel dat weet op welke pagina je
 
 ### Een mens vragen (Vraag het Sil)
 
-Onder elk assistentpaneel staat de regel "Liever een mens?": de mensen die op dit moment vragen beantwoorden, met naam en foto, naast een WhatsApp-knop. De assistent blijft de snelste route voor de meeste vragen; zo is een mens nooit meer dan één klik weg.
+Onder de gids staat de regel "Liever een mens?": de mensen die op dit moment vragen beantwoorden, met naam en foto, naast een WhatsApp-knop. De assistent blijft de snelste route voor de meeste vragen; zo is een mens nooit meer dan één klik weg. De Financieel Assistent van Office is een chat over je eigen cijfers en om offertes en facturen te maken, geen helpdesk: daar staat de regel niet meteen onder, maar pas als het gesprek een hulpvraag wordt (het antwoord komt uit de FAQ of de handleiding) of de assistent vastloopt.
 
 Klik je iemand aan, dan opent een kort formulier: je vraag, plus een keuzevakje om je gesprek met de assistent mee te sturen, dat alvast aangevinkt staat. Versturen maakt van je vraag een gewoon supportticket, en het antwoord komt in de app en per mail, beloofd binnen één werkdag en meestal binnen een paar uur. Na het versturen kun je je vraag meteen openen als ticketgesprek. De WhatsApp-knop opent een chat waarin een korte introductie al klaarstaat: wie je bent, over welke pagina je vraag gaat en de vraag zelf.
 

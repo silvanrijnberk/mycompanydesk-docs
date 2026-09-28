@@ -1,7 +1,7 @@
 ---
 title: Cookies et analytics
 description: "Comment MyCompanyDesk utilise les cookies, le stockage local, les analytics et les enregistrements de session, et comment changer votre choix."
-last_verified: 2026-08-20
+last_verified: 2026-09-28
 ---
 
 # Cookies et analytics
@@ -12,13 +12,13 @@ Cette page explique comment MyCompanyDesk utilise les cookies, le stockage local
 
 Le site marketing affiche une bannière de consentement aux cookies lors de votre première visite. Cette bannière demande si nous pouvons placer un stockage analytics. Vous pouvez modifier votre choix à tout moment via la bannière.
 
-L'analytics est soumis à consentement (opt-in). Tant que vous n'acceptez pas, le site marketing n'initialise pas d'analytics, n'envoie aucune page vue ou événement et ne stocke aucun identifiant analytics. Choisir "Uniquement essentiel" ne laisse donc aucune trace analytics.
+L'analytics avec identifiant est soumis à consentement (opt-in). Sans votre consentement, nous comptons seulement, de façon anonyme, combien de fois une page est consultée et par quel site ou moteur de recherche les visiteurs arrivent. Pour cela, nous ne stockons rien sur votre appareil, n'utilisons aucun identifiant et ne faisons aucun enregistrement. Votre adresse IP n'est pas conservée. Choisir "Uniquement essentiel" ne laisse donc aucune trace analytics sur votre appareil.
 
 Si vous acceptez, le site démarre l'analytics et stocke un identifiant analytics anonyme dans le `localStorage` de votre navigateur sous la clé `mcd_phid`. Cet identifiant sert uniquement à comprendre comment les visiteurs naviguent sur le site. Il n'est pas lié à votre compte ou à votre adresse e-mail.
 
 Avec votre consentement, nous pouvons également enregistrer des sessions de votre visite sur le site marketing. Ces enregistrements nous aident à voir où le site peut s'améliorer. Tout ce que vous tapez dans les champs de saisie est masqué dans ces enregistrements et n'est pas lisible pour nous. Les données sont pseudonymisées.
 
-Si vous refusez plus tard via la bannière, ou si votre navigateur envoie un signal Do Not Track (DNT), aucun identifiant analytics n'est stocké et aucun nouvel événement analytics n'est envoyé. La bannière peut toutefois toujours apparaître, car elle couvre également les cookies non-analytics.
+Si vous refusez plus tard via la bannière, ce comptage anonyme continue simplement : aucun identifiant analytics n'est stocké et aucun enregistrement n'est fait. Si votre navigateur envoie un signal Do Not Track (DNT), nous ne mesurons rien du tout, pas même ce comptage anonyme. La bannière peut toutefois toujours apparaître, car elle couvre également les cookies non-analytics.
 
 ## Du site marketing vers l'application
 

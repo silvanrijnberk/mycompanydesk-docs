@@ -1,7 +1,7 @@
 ---
 title: Cookies en analytics
 description: "Hoe MyCompanyDesk omgaat met cookies, lokale opslag, analytics en sessie-opnames, en hoe je je keuze wijzigt."
-last_verified: 2026-08-20
+last_verified: 2026-09-28
 ---
 
 # Cookies en analytics
@@ -12,13 +12,13 @@ Op deze pagina lees je hoe MyCompanyDesk omgaat met cookies, lokale opslag en an
 
 De marketingwebsite toont een cookietoestemmingsbanner bij je eerste bezoek. Die banner vraagt of we analytics-opslag mogen plaatsen. Je kunt je keuze later altijd aanpassen via de banner.
 
-Analytics is opt-in. Totdat je akkoord gaat, initialiseert de marketingwebsite geen analytics, stuurt hij geen pageview of event en slaat hij geen analytics-id op. Als je dus kiest voor "Alleen essentieel", blijft er geen analytics-spoor achter.
+Analytics met een id is opt-in. Zonder toestemming tellen we alleen anoniem hoe vaak een pagina bekeken wordt en via welke website of zoekmachine bezoekers binnenkomen. Daarvoor slaan we niets op je apparaat op, gebruiken we geen id, maken we geen opnames en bewaren we je IP-adres niet. Bij "Alleen essentieel" blijft er dus niets van analytics op je apparaat achter.
 
 Als je akkoord gaat, start de site analytics en slaat hij een anonieme analytics-id op in de `localStorage` van je browser onder de sleutel `mcd_phid`. Deze id wordt alleen gebruikt om te begrijpen hoe bezoekers door de site navigeren. Hij is niet gekoppeld aan je account of e-mailadres.
 
 Daarnaast kunnen we, als je toestemming geeft, sessie-opnames maken van je bezoek aan de marketingwebsite. Die helpen ons zien waar de site beter kan. Alles wat je in invoervelden typt, wordt in die opnames gemaskeerd en is voor ons niet leesbaar. De gegevens zijn gepseudonimiseerd.
 
-Als je later via de banner weigert, of als je browser een Do Not Track (DNT)-signaal stuurt, wordt er geen analytics-id opgeslagen en worden er geen nieuwe analytics-events verstuurd. De banner kan nog steeds verschijnen, omdat hij ook niet-analytics-cookies behandelt.
+Als je later via de banner weigert, loopt dat anonieme tellen gewoon door: er wordt geen analytics-id opgeslagen en er worden geen opnames gemaakt. Stuurt je browser een Do Not Track (DNT)-signaal, dan meten we helemaal niets, ook dat anonieme tellen niet. De banner kan nog steeds verschijnen, omdat hij ook niet-analytics-cookies behandelt.
 
 ## Van marketingwebsite naar app
 

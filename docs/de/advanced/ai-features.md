@@ -13,7 +13,7 @@ Das Assistenten-Symbol in der Topbar offnet ein Chat-Panel, das weiß, auf welch
 
 ### Einen Menschen fragen (Vraag het Sil)
 
-Unter jedem Assistenten-Panel steht die Zeile „Lieber einen Menschen fragen?“: die Menschen, die gerade Fragen beantworten, mit Name und Foto, daneben eine WhatsApp-Schaltfläche. Der Assistent bleibt der schnellste Weg für die meisten Fragen; ein Mensch ist so nie mehr als ein Klick entfernt.
+Unter dem Leitfaden steht die Zeile „Lieber einen Menschen fragen?“: die Menschen, die gerade Fragen beantworten, mit Name und Foto, daneben eine WhatsApp-Schaltfläche. Der Assistent bleibt der schnellste Weg für die meisten Fragen; ein Mensch ist so nie mehr als ein Klick entfernt. Der Finanzassistent von Office ist ein Chat über Ihre eigenen Zahlen und zum Erstellen von Angeboten und Rechnungen, kein Helpdesk: Dort steht die Zeile nicht von Anfang an, sondern erst, wenn das Gespräch zu einer Hilfefrage wird (die Antwort kommt aus der FAQ oder dem Handbuch) oder der Assistent ins Stocken gerät.
 
 Wählen Sie eine der Personen aus, öffnet sich ein kurzes Formular: Ihre Frage, plus ein standardmäßig angehaktes Ankreuzfeld, um Ihr Gespräch mit dem Assistenten mitzuschicken. Das Senden macht aus Ihrer Frage ein ganz normales Support-Ticket, und die Antwort kommt in der App und per E-Mail, mit dem Versprechen einer Antwort innerhalb eines Werktags, meist nach wenigen Stunden. Nach dem Senden führt ein Link zu Ihrer Frage als Ticket-Thread. Die WhatsApp-Schaltfläche öffnet einen Chat, in dem eine kurze Vorstellung schon steht: wer Sie sind, zu welcher Seite Ihre Frage gehört und was Sie fragen möchten.
 
