@@ -76,7 +76,7 @@ Auf dem Reiter liegen auch Ihre Standardanrede und Grußformel, die das Verfasse
 
 ### Ihr Abschluss
 
-Der Abschluss unter jeder ausgehenden E-Mail baut sich automatisch aus Ihren Unternehmensdaten auf: Ihr Firmenname steht immer darunter, und die Angaben, die Sie ausfüllen (Support-E-Mail, Website, Social Links), kommen hinzu. Was leer bleibt, wird weggelassen. Dieselben Angaben erscheinen auch auf Ihren Rechnungen und Ihrer Website, deshalb bearbeiten Sie sie an einer Stelle: unter **Einstellungen → Unternehmensdaten**. Im E-Mail-Bereich sehen Sie eine Vorschau Ihres Abschlusses, mit dem Link **Unternehmensdaten bearbeiten**. Die Vorschau wird auf dem Server genauso aufgebaut wie die echte Sendung, Sie sehen also genau das, was unter jeder E-Mail an Ihre Kunden geht: Telefon, Adresse, KvK-Nummer, Ihr Foto und der Link zu Ihrer Seite erscheinen darin, sobald Sie sie ausgefüllt haben.
+Der Abschluss unter jeder ausgehenden E-Mail baut sich automatisch aus Ihren Unternehmensdaten auf: Ihr Firmenname steht immer darunter, und die Angaben, die Sie ausfüllen (Support-E-Mail, Website, Social Links), kommen hinzu. Was leer bleibt, wird weggelassen. Dieselben Angaben erscheinen auch auf Ihren Rechnungen und Ihrer Website, deshalb bearbeiten Sie sie an einer Stelle: unter **Einstellungen → Unternehmensdaten**. Im E-Mail-Bereich sehen Sie eine Vorschau Ihres Abschlusses, mit dem Link **Unternehmensdaten bearbeiten**. Die Vorschau zeigt den Abschluss genau so, wie er unter jede E-Mail an Ihre Kunden gesetzt wird: Sie sehen also genau das, was Ihr Kunde erhält. Telefon, Adresse, KvK-Nummer, Ihr Foto und der Link zu Ihrer Seite erscheinen darin, sobald Sie sie ausgefüllt haben.
 
 ## Gestaltung
 
