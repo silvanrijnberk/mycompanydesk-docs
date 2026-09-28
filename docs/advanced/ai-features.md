@@ -11,6 +11,12 @@ MyCompanyDesk bevat AI-gestuurde functies om je sneller en slimmer te laten werk
 
 De assistent-icoon in de topbar opent een chatpaneel dat weet op welke pagina je bent, welke records je bekijkt en hoe je werkruimtegegevens eruitzien. Het is gebouwd als een tool-using agent: in plaats van getallen te gokken, vraagt ze ernaar. Op desktop opent het paneel als een drawer die rechts tegen de rand van het scherm zit; op mobiel opent het als een bottom sheet via de sparkles-knop in de mobiele header.
 
+### Een mens vragen (Vraag het Sil)
+
+Onder elk assistentpaneel staat de regel "Liever een mens?": de mensen die op dit moment vragen beantwoorden, met naam en foto, naast een WhatsApp-knop. De assistent blijft de snelste route voor de meeste vragen; zo is een mens nooit meer dan één klik weg.
+
+Klik je iemand aan, dan opent een kort formulier: je vraag, plus een keuzevakje om je gesprek met de assistent mee te sturen, dat alvast aangevinkt staat. Versturen maakt van je vraag een gewoon supportticket, en het antwoord komt in de app en per mail, beloofd binnen één werkdag en meestal binnen een paar uur. Na het versturen kun je je vraag meteen openen als ticketgesprek. De WhatsApp-knop opent een chat waarin een korte introductie al klaarstaat: wie je bent, over welke pagina je vraag gaat en de vraag zelf.
+
 ### Chatlimieten
 
 Chatgebruik is afhankelijk van je abonnement:

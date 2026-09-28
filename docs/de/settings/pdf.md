@@ -25,7 +25,7 @@ Gehen Sie zu den **Einstellungen** und öffnen Sie **Logo und Farbe**. Diese Sei
 
 ## Rechnungsdesign
 
-Gehen Sie zu den **Einstellungen** und öffnen Sie **Rechnungsdesign**. Das ist das Designstudio für Ihre Dokumente: alle Regler links, eine große Live-A4-Vorschau rechts, die bei jedem Klick mitzieht.
+Gehen Sie zu den **Einstellungen** und öffnen Sie **Rechnungsdesign**. Das ist das Designstudio für Ihre Dokumente: alle Regler links, eine große Live-A4-Vorschau rechts, die bei jedem Klick mitzieht. Die Vorschau rechnet mit Ihren echten Einstellungen: die Zahlungsfrist, die Gültigkeit von Angeboten und die nächste Rechnungsnummer darin sind die, die Sie gesetzt haben.
 
 Der schnellste Weg ist die Schaltfläche **Aus meinem Corporate Design generieren**: Sie baut ein komplettes Design rund um die Markenfarbe, die Sie unter Logo und Farbe gewählt haben. Nicht zufrieden? **Anderen Look ausprobieren** wechselt zu einer anderen Variante. Alles bleibt danach anpassbar:
 
@@ -38,6 +38,8 @@ Der schnellste Weg ist die Schaltfläche **Aus meinem Corporate Design generiere
 - **Textgröße:** Klein, Normal oder Groß für den Text Ihres Dokuments. Überschriften und Ihr Firmenname behalten ihre Größe.
 - **Texte auf Ihrem Dokument:** der Abschlusstext, bereit unter „Vielen Dank“ auf jeder neuen Rechnung (ein Angebot ohne eigenen Text erhält den Text Ihrer Rechnungen), und der Zahlungshinweis unter Zahlung auf neuen Rechnungen und auf Ihrer Zahlungsseite, mit {iban}, {company} und {invoiceNumber} automatisch eingesetzt.
 - **Fußzeile:** die Zeile am Ende jedes Dokuments, zum Beispiel Ihre KVK-Nummer oder ein Dankeschön.
+
+**Auch auf Ihrer Rechnung** (Ook op je factuur): unter den Reglern steht eine Karte mit dem, was auf Ihrer Rechnung erscheint, aber woanders eingestellt wird: Ihre Firmendaten, Ihre Zahlungsarten, die Zahlungsfrist, die Rechnungsnummerierung, die Gültigkeit von Angeboten und Ihre USt-Einstellungen. Jede Zeile zeigt den aktuellen Wert und öffnet die Einstellungsseite, auf der er wohnt; die Zurück-Schaltfläche dort bringt Sie zurück ins Studio.
 
 Änderungen werden automatisch gespeichert und erscheinen sofort in der Vorschau. Möchten Sie zurück zum Standard? **Thema deaktivieren** setzt Ihre Dokumente auf das Standarddesign zurück.
 
