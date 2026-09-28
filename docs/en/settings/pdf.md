@@ -25,7 +25,7 @@ Changes save automatically.
 
 ## Factuurontwerp
 
-Go to **Instellingen** and open **Factuurontwerp**. This is the design studio for your documents: every control on the left, a live A4 preview on the right that updates as you click.
+Go to **Instellingen** and open **Factuurontwerp**. This is the design studio for your documents: every control on the left, a live A4 preview on the right that updates as you click. The preview works with your real settings: the payment term, the quote validity and the next invoice number it shows are the ones you have set.
 
 The quickest route is the **Genereer uit mijn huisstijl** (generate from my brand) button: it builds a complete design around the brand colour you chose under Logo en kleur. Not happy? **Probeer andere** (try another) cycles through different looks. Everything stays editable afterwards:
 
@@ -38,6 +38,8 @@ The quickest route is the **Genereer uit mijn huisstijl** (generate from my bran
 - **Tekstgrootte** (text size): Klein, Normaal or Groot (small, normal or large) for the text of your document. Headings and your company name keep their size.
 - **Teksten op je document** (texts on your document): the closing text, ready under "Thank you" on every new invoice (a quote without its own text gets the text of your invoices), and the payment instruction shown under Payment on new invoices and on your payment page, with {iban}, {company} and {invoiceNumber} filled in for you.
 - **Voettekst** (footer text): the line at the bottom of every document, for example your KVK number or a thank-you note.
+
+**Ook op je factuur** (Also on your invoice): below the controls, a card lists what appears on your invoice but is set elsewhere: your company details, payment methods, payment term, invoice numbering, quote validity and VAT settings. Each row shows the current value and opens the settings page where it lives; the back button there returns you to the studio.
 
 Changes save automatically and show in the preview within a moment. Want the standard look back? **Thema uitschakelen** returns your documents to the default design.
 

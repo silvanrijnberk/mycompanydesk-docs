@@ -25,7 +25,7 @@ Wijzigingen worden automatisch opgeslagen.
 
 ## Factuurontwerp
 
-Ga naar **Instellingen** en open **Factuurontwerp**. Dit is de ontwerpstudio voor je documenten: alle knoppen links, een live A4-voorbeeld rechts dat meebeweegt terwijl je klikt.
+Ga naar **Instellingen** en open **Factuurontwerp**. Dit is de ontwerpstudio voor je documenten: alle knoppen links, een live A4-voorbeeld rechts dat meebeweegt terwijl je klikt. Het voorbeeld rekent met je echte instellingen: de betaaltermijn, de offertegeldigheid en het volgende factuurnummer die erin staan zijn degene die jij hebt ingesteld.
 
 De snelste route is de knop **Genereer uit mijn huisstijl**: die bouwt een compleet ontwerp rond de merkkleur die je onder Logo en kleur hebt gekozen. Niet tevreden? **Probeer andere** wisselt naar een andere look. Alles blijft daarna aanpasbaar:
 
@@ -38,6 +38,8 @@ De snelste route is de knop **Genereer uit mijn huisstijl**: die bouwt een compl
 - **Tekstgrootte**: Klein, Normaal of Groot voor de tekst van je document. Koppen en je bedrijfsnaam houden hun maat.
 - **Teksten op je document**: de afsluitende tekst, klaar onder "Met dank" op elke nieuwe factuur (een offerte zonder eigen tekst krijgt de tekst van je facturen), en de betaalinstructie die bij Betaling staat op nieuwe facturen en op je betaalpagina, met {iban}, {bedrijf} en {factuurnummer} die vanzelf worden ingevuld.
 - **Voettekst**: de regel onderaan elk document, bijvoorbeeld je KVK-nummer of een bedankje.
+
+**Ook op je factuur**: onder de knoppen staat een kaart met wat er op je factuur staat, maar wat je ergens anders instelt: je bedrijfsgegevens, je betaalmethoden, de betaaltermijn, de factuurnummering, de offertegeldigheid en je btw-instellingen. Elke regel laat de huidige waarde zien en opent de instellingenpagina waar die hoort; de terugknop daar brengt je weer terug naar de studio.
 
 Wijzigingen worden automatisch opgeslagen en zijn binnen een moment zichtbaar in het voorbeeld. Wil je terug naar de standaardlook? **Thema uitschakelen** zet je documenten terug op het standaardontwerp.
 

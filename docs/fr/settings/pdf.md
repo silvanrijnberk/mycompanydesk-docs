@@ -25,7 +25,7 @@ Les modifications sont enregistrées automatiquement.
 
 ## Mise en page des factures
 
-Allez dans les **paramètres** et ouvrez **Mise en page des factures**. C'est le studio de conception de vos documents : toutes les commandes à gauche, un grand aperçu A4 en direct à droite qui suit chacun de vos clics.
+Allez dans les **paramètres** et ouvrez **Mise en page des factures**. C'est le studio de conception de vos documents : toutes les commandes à gauche, un grand aperçu A4 en direct à droite qui suit chacun de vos clics. L'aperçu travaille avec vos vrais réglages : le délai de paiement, la validité des devis et le prochain numéro de facture qu'il affiche sont ceux que vous avez définis.
 
 Le chemin le plus rapide est le bouton **Générer depuis mon identité visuelle** : il construit une mise en page complète autour de la couleur de marque choisie sous Logo et couleur. Pas convaincu ? **Essayer un autre style** passe à une autre variante. Tout reste ensuite modifiable :
 
@@ -38,6 +38,8 @@ Le chemin le plus rapide est le bouton **Générer depuis mon identité visuelle
 - **Taille du texte :** Petit, Normal ou Grand pour le texte de votre document. Les titres et le nom de votre entreprise gardent leur taille.
 - **Textes sur votre document :** le texte de clôture, prêt sous « Merci » sur chaque nouvelle facture (un devis sans texte propre reprend le texte de vos factures), et l'instruction de paiement affichée sous Paiement sur les nouvelles factures et sur votre page de paiement, avec {iban}, {company} et {invoiceNumber} insérés automatiquement.
 - **Pied de page :** la ligne au bas de chaque document, par exemple votre numéro KVK ou un mot de remerciement.
+
+**Aussi sur votre facture** (Ook op je factuur) : sous les commandes se trouve une carte listant ce qui figure sur votre facture mais se règle ailleurs : vos coordonnées d'entreprise, vos moyens de paiement, le délai de paiement, la numérotation des factures, la validité des devis et vos réglages de TVA. Chaque ligne affiche la valeur actuelle et ouvre la page de paramètres où elle se trouve ; le bouton retour vous ramène ensuite au studio.
 
 Les modifications sont enregistrées automatiquement et apparaissent aussitôt dans l'aperçu. Envie de revenir au style standard ? **Désactiver le thème** remet vos documents sur la mise en page par défaut.
 

@@ -11,6 +11,12 @@ MyCompanyDesk enthalt KI-gestutzte Funktionen, die Ihnen helfen, schneller und i
 
 Das Assistenten-Symbol in der Topbar offnet ein Chat-Panel, das weiß, auf welcher Seite Sie sich befinden, welche Datensatze Sie betrachten und wie Ihre Workspace-Daten aussehen. Es ist als Tool-using Agent aufgebaut: Statt Zahlen zu erraten, fragt sie danach. Auf dem Desktop offnet sich das Panel als Drawer, der rechts an den Bildschirmrand angeheftet ist; auf Mobilgeraten offnet es sich als Bottom Sheet uber die Sparkles-Schaltflache im mobilen Header.
 
+### Einen Menschen fragen (Vraag het Sil)
+
+Unter jedem Assistenten-Panel steht die Zeile „Lieber einen Menschen fragen?“: die Menschen, die gerade Fragen beantworten, mit Name und Foto, daneben eine WhatsApp-Schaltfläche. Der Assistent bleibt der schnellste Weg für die meisten Fragen; ein Mensch ist so nie mehr als ein Klick entfernt.
+
+Wählen Sie eine der Personen aus, öffnet sich ein kurzes Formular: Ihre Frage, plus ein standardmäßig angehaktes Ankreuzfeld, um Ihr Gespräch mit dem Assistenten mitzuschicken. Das Senden macht aus Ihrer Frage ein ganz normales Support-Ticket, und die Antwort kommt in der App und per E-Mail, mit dem Versprechen einer Antwort innerhalb eines Werktags, meist nach wenigen Stunden. Nach dem Senden führt ein Link zu Ihrer Frage als Ticket-Thread. Die WhatsApp-Schaltfläche öffnet einen Chat, in dem eine kurze Vorstellung schon steht: wer Sie sind, zu welcher Seite Ihre Frage gehört und was Sie fragen möchten.
+
 ### Chat-Limits
 
 Die Chat-Nutzung hangt von Ihrem Tarif ab:

@@ -21,6 +21,12 @@ The assistant icon in the topbar opens a chat panel that knows which page you ar
 - **Conversation memory.** The last 6 turns are kept verbatim; older turns are summarised into a rolling memory.
 - **Pre-filter, no router.** A small deterministic filter catches forbidden topics, casual messages, and empty input before the model is called. Beyond that there is **no DATA/FAQ/GENERAL classifier in front of the agent** -- the model sees the full tool catalog and picks tools itself, including a tool that searches the help knowledge base. One question can naturally use multiple tools (e.g. "how do I file my Q2 VAT and what's my saldo" calls `search_help` and `vat_aangifte_rubrieken` in the same loop).
 
+### Ask a human (Vraag het Sil)
+
+Under every assistant panel sits a row titled "Liever een mens?" (Rather ask a person?): the people who currently answer questions, with name and photo, next to a WhatsApp button. The assistant stays the fastest route for most questions; this row keeps a human one click away.
+
+Choosing one of them opens a short form: your question, plus a checkbox, ticked by default, to include your conversation with the assistant. Sending turns the question into a regular support ticket, and the answer arrives in the app and by email, with the promise of an answer within one working day, usually within a few hours. A link to the ticket appears after sending. The WhatsApp button opens a chat with a short introduction already filled in: who you are, which page your question is about, and the question itself.
+
 ### EU AI Act disclosure (art. 50)
 
 The EU AI Act (Regulation 2024/1689) classifies the contextual guide as a limited-risk AI system under article 50. Limited-risk systems must transparently disclose to end users that they are interacting with AI. Two disclosure mechanisms ship in the guide:
