@@ -117,6 +117,8 @@ Ouvrez **Transactions** depuis l'en-tête de la page Dépenses pour voir toutes 
 - **Lettrées** : transactions associées à une facture ou une dépense, avec un lien vers l'enregistrement.
 - **Ignorées** : transactions que vous avez ignorées.
 
+Pendant que vous traitez l'onglet des transactions non lettrées, les lignes qui ne comptent pas comme à traiter restent dans des groupes repliés en dessous : **Compte personnel** pour les lignes d'un compte personnel relié (le groupe n'apparaît que si vous en avez relié un), et **Plus anciennes** pour les lignes d'avant la date à partir de laquelle le flux suit le compte. Une ligne marquée comme privée porte une note indiquant qu'elle reste hors comptabilité ; une ligne pas encore examinée le dit aussi. Les compteurs à traiter de cette page, de Comptabilité → Banque et des tuiles du tableau de bord partagent une même définition et comptent aussi les débits de votre compte personnel qui pourraient être des dépenses professionnelles, afin que les totaux concordent partout.
+
 Pour chaque transaction ouverte :
 
 - **Associer** ouvre une fenêtre où vous associez la transaction à une facture ou une dépense existante. L'argent sortant suggère des dépenses, l'argent entrant des factures, et vous pouvez basculer et rechercher.

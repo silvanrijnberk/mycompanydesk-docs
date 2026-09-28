@@ -43,6 +43,8 @@ The **Cash** tile shows, alongside your balance, what is already committed. Two 
 
 The final line shows **Free to spend**: what actually remains after those reservations. The VAT reservation uses the same quarter logic as the VAT card so monthly filers and early submitters do not see the wrong amount subtracted.
 
+The balance counts your business accounts: a linked personal account stays out of the cash position and the cash forecast. Its withdrawals that might be business expenses are named separately in the to-process lines instead, so the number you see here matches Boekhouding → Bank and the badge on Transacties.
+
 A tile that has no honest history renders without a sparkline rather than invent a flat line. The colour of a delta badge follows meaning, not just direction: receivables rising is bad news even though the arrow points up.
 
 ## Voor jou (For you)

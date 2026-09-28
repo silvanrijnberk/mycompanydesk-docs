@@ -118,6 +118,8 @@ Open **Transacties** from the Expenses page header to see every imported transac
 - **Gekoppeld**: transactions linked to an invoice or expense, with a link to that record.
 - **Genegeerd**: transactions you chose to ignore.
 
+While you work through the unmatched tab, rows that do not count as to-process sit in collapsed groups underneath: **Personal account** for rows on a linked personal account (the group only appears when you linked one), and **Older** for rows from before the date your feed started following the account. A row flagged as private carries a note that it stays out of the bookkeeping; a row that has not been reviewed yet says so. The to-process counters on this page, on Bookkeeping → Bank, and on the dashboard tiles all share one definition and include withdrawals on your personal account that could be business expenses, so the totals match everywhere.
+
 For each open transaction:
 
 - **Koppelen** opens a window where you link the transaction to an existing invoice or expense. Money out suggests expenses and money in suggests invoices, and you can flip between the two and search.

@@ -1,19 +1,14 @@
 ---
 title: Email
-description: "Choose which address your invoices go out from, what your emails say and how they look. The email hub bundles addresses, texts and design."
+description: "Choose which address your invoices and quotes go out from and set what appears under every message. Available on every plan."
 last_verified: 2026-09-28
 ---
 
 # Email
 
-MyCompanyDesk emails your invoices and quotes to your customers. **Settings → Email** bundles everything about your mail on one page with four tabs:
+MyCompanyDesk emails your invoices and quotes to your customers. **Settings → Email** is the hub for everything around that mail: **Addresses and sending** for the sender side, **Invoice and quote emails** for the mail we compose for your documents, **Inbox emails** for the mail you write yourself, and **Rules** for what happens to incoming mail. The page is available on every plan; only sending from your own domain is part of Pro.
 
-- **Addresses and sending**: where your mail arrives and which address you send from
-- **Texts**: what your emails say
-- **Design**: how your emails look
-- **Rules**: what happens automatically to incoming mail
-
-The page is available on every plan; only sending from your own domain is part of Pro. Rules and trusted senders for incoming mail live on the Rules tab; see [Receiving: mailboxes and rules](#receiving-mailboxes-and-rules) below.
+Rules and trusted senders for incoming mail live under **Rules**; see [Receiving: mailboxes and rules](#receiving-mailboxes-and-rules) below.
 
 ## Addresses and sending
 
@@ -56,30 +51,48 @@ Under **Mailboxes** you manage the mailboxes on your connected domains: add a ma
 
 The **Forwarding receipts** card points to Expenses: your own address for receipts and supplier invoices lives under **Expenses**, not here.
 
+## Invoice and quote emails
+
+The **Invoice and quote emails** page holds everything about the mail MyCompanyDesk composes when you send an invoice, quote, reminder or credit note: the default text per email type and language, the appearance, and the footer. The preview next to the settings shows the whole email exactly as your customer receives it, with your own text applied, including edits you have not saved yet.
+
+### The default texts
+
+Invoice, quote, reminder, and credit note emails start from a standard, well-tested text in the language of the document. Pick the type of email (invoice, quote, reminder, or credit note) and the email language, write your own subject and message, and save. Your own text carries a **Your own text** badge, and saving it means every next email of that type starts from your wording. **Back to standard text** restores the standard wording, after a confirmation.
+
+The customer name, number, amounts, and dates in the sample are examples: when you send, MyCompanyDesk fills in the details of the real document, so leave the placeholders where they belong. The sentence about a request only appears when the quote comes from a request.
+
+As an accountant you can read these texts but not change them; the workspace owner sets and resets the standard text. You can still adjust subject and message for one email in the send window. See [Email templates](/en/faq/email-template) for the details.
+
+### Appearance
+
+The appearance sets the style and header of every customer email: pick one of the five styles (Classic, Modern, Minimal, Warm, or Professional), set the header, and check the preview. The preview is built on the server the same way as the real sending, so it shows exactly what your customer receives. **See everything your customer receives from you** opens the complete email as the customer gets it, with header, texts, and footer together.
+
+### The footer under your emails
+
+Every outgoing document email ends with your company name and CoC number, plus the contact details you switch on underneath. Each detail is a switch: your photo, phone number, email address, website address, address, social media, a link to your site at the bottom, and your certifications. The certifications switch only appears once you have added certifications in your company details. A switch for a detail you have not filled in yet says so, with a link to complete it in Company details. The address switch exists for home addresses: switch it off to keep your home address out of your email; the invoice PDF itself always carries the full address.
+
+The details come from your company details, so what you see is what your customer receives: phone, address, CoC number, your photo and the link to your site appear as soon as you fill them in. Editing them under **Settings → Company details** keeps both in sync.
+
+## Inbox emails
+
+**Inbox emails** is the counterpart page for the mail you write and answer yourself: the greeting and sign-off every new message starts with, and your signature.
+
+### Greeting and sign-off
+
+Your standard greeting and sign-off prefill the compose window of the Inbox for new messages you write yourself. The block is managed by team admins on workspaces with the Inbox. If you cannot edit it, the preview still shows the saved texts the inbox fills in.
+
+### Your signature
+
+**Logo above your name** puts a small logo in your signature. Leave it off if you already use a signature with its own logo, otherwise the logo shows up twice. The switch is only available once you have added a logo in your company details.
+
+The footer list underneath is your inbox-only list of contact details, separate from the footer under your invoices: what you switch off here keeps showing there. The preview on the right shows the complete message exactly as the recipient gets it, from the greeting down to the last footer line.
+
 ## Sending: limits and checks
 
 MyCompanyDesk blocks outgoing mail that looks like abuse, so our shared sending domain stays trustworthy for everyone. Very new accounts therefore have extra guardrails.
 
 - There is a maximum number of recipients per message (to, cc and bcc combined). A new account starts with a lower maximum for its first period; the exact limit is shown in the error if you exceed it. Split the message into multiple emails if you need to reach more people.
 - Messages from new accounts can sometimes be held for review. You will see that the message is still being checked, and it usually clears within an hour. Add your KVK number in your company details to skip this check permanently.
-
-## Texts
-
-Invoice, quote, reminder, and credit note emails start from a standard, well-tested text in the language of the document. Under **Standard email for documents** you manage those texts yourself: pick the type of email (invoice, quote, reminder, or credit note) and the email language, write your own subject and message, and save. Your own text carries a **Your own text** badge, and saving it means every next email of that type starts from your wording. **Back to standard text** restores the standard wording, after a confirmation.
-
-The customer name, number, amounts, and dates in the sample are examples: when you send, MyCompanyDesk fills in the details of the real document, so leave the placeholders where they belong. The sentence about a request only appears when the quote comes from a request.
-
-As an accountant you can read these texts but not change them; the workspace owner sets and resets the standard text. You can still adjust subject and message for one email in the send window. See [Email templates](/en/faq/email-template) for the details.
-
-The tab also holds your standard greeting and sign-off, which prefill the compose window of the Inbox for new messages you write yourself.
-
-### Your sign-off
-
-The sign-off under every outgoing email is built automatically from your company details: your company name always appears, and the details you fill in (support email, website, social links) join it. Anything left empty is left out. The same details also appear on your invoices and your website, so there is one place to edit them: **Settings → Company details**. Under Email you get a preview of your sign-off, with an **Edit company details** link. The preview is the exact footer that goes out under every email, so what you see is what your customer receives: phone, address, KvK number, your photo and the link to your site appear in it as soon as you fill them in under Company details. Your certifications and quality marks (STEK, VCA, CE and the like) join the footer as well: with **Show below your emails** on, their logos appear under every email to your customers, and their names appear in the text version of your emails. You manage them on the Certifications card under [Company settings](/en/settings/company).
-
-## Design
-
-The **Design** tab sets the style and header of every customer email: pick one of the five styles (Classic, Modern, Minimal, Warm, or Professional), set the header, and check the preview. The preview is built on the server the same way as the real sending, so it shows exactly what your customer receives. **See everything your customer receives from you** opens the complete email as the customer gets it, with header, texts, and sign-off together.
 
 ## Receiving: mailboxes and rules
 
@@ -92,5 +105,5 @@ Everything about the mail you receive now lives on the Email page as well:
 
 ## Related
 
-- [Company settings](/en/settings/company): the company details behind your sign-off
+- [Company settings](/en/settings/company): the company details behind your footer
 - [Plan & payments](/en/settings/billing): sending from your own domain is part of Pro

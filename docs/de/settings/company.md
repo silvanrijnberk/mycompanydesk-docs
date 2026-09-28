@@ -29,7 +29,7 @@ The identity form. What every invoice, quote, and email shows.
 - **Registration**: KvK or other registration number. The **Refresh from KVK** button pulls the latest data from the Dutch Chamber of Commerce registry and fills any blank fields (business name, address, postal code, city, country). It never overwrites values you already set. Each workspace gets 100 free KVK lookups per day (cached results do not count toward the limit). When 20 or fewer lookups remain, the field hint switches to a counter showing how many are left. If the daily cap is reached, the button is disabled until the next day or you can enter the data manually.
 - **Tax ID**: VAT number (e.g. `NL123456789B01`)
 - **Contact**: public email, phone, support email, timezone
-- **Website + social**: used by the email signature, business page, and footers
+- **Website + social**: used by the email signature, business page, and footers. Paste the full address of your profile or page (for example `https://instagram.com/yourcompany`); a value that would not become a link is flagged after you leave the field, and a bare username shows where it would link.
 
 Changes save automatically.
 

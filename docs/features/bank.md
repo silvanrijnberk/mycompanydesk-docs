@@ -117,6 +117,8 @@ Open **Transacties** vanuit de paginakop van Uitgaven om alle geïmporteerde tra
 - **Gekoppeld**: transacties gekoppeld aan een factuur of uitgave, met een link naar dat record.
 - **Genegeerd**: transacties die je hebt genegeerd.
 
+Terwijl je de tab met ongekoppelde regels doorwerkt, staan regels die niet meetellen voor te verwerken in ingeklapte groepen eronder: **Privérekening** voor regels van een gekoppelde privérekening (de groep verschijnt pas als je er één hebt gekoppeld), en **Ouder** voor regels van vóór de datum waarop de feed met de rekening meekijkt. Een regel die als privé is gemarkeerd, krijgt een notitie dat hij buiten de boekhouding blijft; een regel die nog niet beoordeeld is, zegt dat ook. De tellers voor te verwerken op deze pagina, in Boekhouding → Bank en in de dashboardtegels delen één definitie en tellen ook de afschrijvingen op je privérekening mee die een zakelijke uitgave kunnen zijn, zodat de totalen overal gelijk zijn.
+
 Per openstaande transactie:
 
 - **Koppelen** opent een venster waarin je de transactie koppelt aan een bestaande factuur of uitgave. Geld eruit stelt uitgaven voor en geld erin facturen, en je kunt wisselen en zoeken.

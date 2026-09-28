@@ -117,6 +117,8 @@ Ein Lieferant wird nur dann als vertrauenswürdig eingestuft, wenn ein starkes, 
 - **Zugeordnet**: Transaktionen mit Verknüpfung zu einer Rechnung oder Ausgabe, inklusive Link zum Datensatz.
 - **Ignoriert**: Transaktionen, die Sie ignoriert haben.
 
+Während Sie den Reiter mit den nicht zugeordneten Zeilen durcharbeiten, stehen Zeilen, die nicht als zu verarbeiten zählen, in eingeklappten Gruppen darunter: **Privatkonto** für Zeilen von einem verbundenen Privatkonto (die Gruppe erscheint erst, wenn Sie eines verbunden haben), und **Älter** für Zeilen von vor dem Datum, ab dem der Feed dem Konto folgt. Eine als privat markierte Zeile erhält einen Hinweis, dass sie außerhalb der Buchhaltung bleibt; eine noch nicht geprüfte Zeile sagt das ebenfalls. Die Zähler für zu verarbeiten auf dieser Seite, in Buchhaltung → Bank und in den Dashboard-Kacheln teilen eine Definition und zählen auch Abbuchungen auf Ihrem Privatkonto mit, die eine geschäftliche Ausgabe sein könnten, sodass die Summen überall übereinstimmen.
+
 Für jede offene Transaktion:
 
 - **Zuordnen** öffnet ein Fenster, in dem Sie die Transaktion mit einer bestehenden Rechnung oder Ausgabe verknüpfen. Bei abgehendem Geld werden Ausgaben vorgeschlagen, bei eingehendem Rechnungen, und Sie können umschalten und suchen.

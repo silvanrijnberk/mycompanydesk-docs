@@ -43,6 +43,8 @@ De **Kas**-tegel laat naast je saldo zien wat er al vergeven is. Dat zijn twee r
 
 De slotregel toont **Vrij besteedbaar**: wat er na die reserveringen effectief overblijft. De btw-reservering gebruikt dezelfde kwartaal-logica als de btw-kaart, zodat maandaangevers en vroege indieners geen verkeerd bedrag zien afgetrokken.
 
+Het saldo telt je zakelijke rekeningen: een gekoppelde privérekening blijft buiten de kaspositie en de kasprognose. Afschrijvingen daarop die een zakelijke uitgave kunnen zijn, worden apart genoemd in de regels voor te verwerken, zodat het getal hier gelijk is aan Boekhouding → Bank en de badge op Transacties.
+
 Een tegel zonder eerlijke historie toont geen trendlijn in plaats van een verzonnen vlakke lijn. De kleur van een deltabadge volgt betekenis, niet alleen richting: stijgende debiteuren zijn slecht nieuws, ook al wijst de pijl omhoog.
 
 ## Voor jou

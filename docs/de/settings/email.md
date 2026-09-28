@@ -1,19 +1,14 @@
 ---
 title: E-Mail
-description: "Legen Sie fest, von welcher Adresse Rechnungen gehen, was in Ihren E-Mails steht und wie sie aussehen. Der Hub bündelt Adressen, Texte und Gestaltung."
+description: "Legen Sie fest, von welcher Adresse Rechnungen und Angebote ausgehen, und stellen Sie ein, was unter jeder Nachricht steht. In jedem Abo enthalten."
 last_verified: 2026-09-28
 ---
 
 # E-Mail
 
-MyCompanyDesk sendet Ihre Rechnungen und Angebote per E-Mail an Ihre Kunden. Unter **Einstellungen → E-Mail** finden Sie alles rund um Ihre Post auf einer Seite mit vier Reitern:
+MyCompanyDesk sendet Ihre Rechnungen und Angebote per E-Mail an Ihre Kunden. **Einstellungen → E-Mail** ist der Ausgangspunkt für alles rund um diese Mails: **Adressen und Versand** für die Absenderseite, **Rechnungs- und Angebotsmails** für die Mails, die wir für Ihre Dokumente verfassen, **Posteingangs-Mails** für das, was Sie selbst schreiben, und **Regeln** für eingehende Mail. Die Seite ist in jedem Abo verfügbar; nur der Versand von der eigenen Domain gehört zu Pro.
 
-- **Adressen und Versand**: wo Ihre E-Mails ankommen und von welcher Adresse Sie senden
-- **Texte**: was in Ihren E-Mails steht
-- **Gestaltung**: wie Ihre E-Mails aussehen
-- **Regeln**: was mit eingehenden E-Mails automatisch passiert
-
-Die Seite ist in jedem Abo verfügbar; nur der Versand von der eigenen Domain gehört zu Pro. Regeln und vertrauenswürdige Absender für eingehende Post finden Sie auf dem Reiter Regeln; siehe unten [Empfangen: Postfächer und Regeln](#empfangen-postfaecher-und-regeln).
+Regeln und vertrauenswürdige Absender für eingehende Post stehen unter **Regeln**; siehe unten [Empfangen: Postfächer und Regeln](#empfangen-postfaecher-und-regeln).
 
 ## Adressen und Versand
 
@@ -56,43 +51,59 @@ Unter **Postfächer** verwalten Sie die Postfächer Ihrer verbundenen Domains: l
 
 Die Karte **Belege weiterleiten** verweist auf die Ausgaben: Ihre eigene Adresse für Belege und Lieferantenrechnungen gehört zu **Ausgaben**, nicht hierher.
 
-## Versenden: Grenzen und Prüfung
+## Rechnungs- und Angebotsmails
 
-MyCompanyDesk hält ausgehende Post zurück, die nach Missbrauch aussieht, damit unsere gemeinsame Versanddomain für alle Nutzer verlässlich bleibt. Für ganz neue Konten gelten deshalb zusätzliche Grenzen.
+Unter **Rechnungs- und Angebotsmails** steht alles zu den Mails, die MyCompanyDesk verfasst, wenn Sie eine Rechnung, ein Angebot, eine Zahlungserinnerung oder eine Gutschrift senden: der Standardtext pro Mailart und Sprache, das Aussehen und die Fußzeile. Die Vorschau neben den Einstellungen zeigt die ganze Mail genau so, wie Ihr Kunde sie erhält, mit Ihrem eigenen Text, auch wenn Sie ihn noch nicht gespeichert haben.
 
-- Es gibt eine maximale Anzahl Empfänger pro Nachricht (an, cc und bcc zusammen). Ein neues Konto beginnt mit einem niedrigeren Maximum für die ersten Tage; das genaue Limit zeigt die Fehlermeldung, wenn Sie es überschreiten. Teilen Sie die Nachricht in mehrere E-Mails auf, wenn Sie mehr Personen erreichen möchten.
-- Nachrichten neuer Konten können manchmal zur Prüfung zurückgehalten werden. Sie sehen dann, dass die Nachricht noch geprüft wird, und meist ist das innerhalb einer Stunde erledigt. Tragen Sie Ihre KVK-Nummer in den Unternehmensdaten ein, um diese Prüfung dauerhaft zu überspringen.
+### Der Standardtext
 
-## Texte
-
-### Standard-E-Mail zu Dokumenten
-
-Rechnungs-, Angebots-, Erinnerungs- und Gutschrifts-E-Mails starten mit einem standardmäßigen, gut erprobten Text in der Sprache des Dokuments. Unter **Standard-E-Mail zu Dokumenten** verwalten Sie diese Texte selbst: wählen Sie die Art der E-Mail (Rechnung, Angebot, Zahlungserinnerung oder Gutschrift) und die Sprache der E-Mail, schreiben Sie Ihren eigenen Betreff und Text und speichern Sie. Ihr eigener Text trägt das Label **Eigener Text**; mit **Zurück zum Standardtext** holen Sie nach einer Bestätigung den Standard zurück.
+Rechnungs-, Angebots-, Erinnerungs- und Gutschrifts-E-Mails starten mit einem standardmäßigen, gut erprobten Text in der Sprache des Dokuments. Wählen Sie die Art der E-Mail (Rechnung, Angebot, Zahlungserinnerung oder Gutschrift) und die Sprache der E-Mail, schreiben Sie Ihren eigenen Betreff und Text und speichern Sie. Ihr eigener Text trägt das Label **Eigener Text**; mit **Zurück zum Standardtext** holen Sie nach einer Bestätigung den Standard zurück.
 
 Kundenname, Nummer, Beträge und Daten in der Vorschau sind Beispiele: Beim Versand setzt MyCompanyDesk die Angaben des echten Dokuments ein, lassen Sie die Platzhalter daher dort stehen. Der Satz zur Anfrage erscheint nur, wenn das Angebot aus einer Anfrage stammt.
 
 Als Buchhalter können Sie diese Texte lesen, aber nicht ändern; der Workspace-Inhaber setzt den Standardtext und kann ihn zurücksetzen. Betreff und Nachricht einer einzelnen E-Mail passen Sie weiterhin im Versandfenster an. Siehe [E-Mail-Vorlagen](/de/faq/email-template) für die Details.
 
-Auf dem Reiter liegen auch Ihre Standardanrede und Grußformel, die das Verfassen-Fenster im Posteingang für neue Nachrichten vorab ausfüllen.
+### Erscheinungsbild
 
-### Ihr Abschluss
+Das Erscheinungsbild legt Stil und Kopfzeile jeder Kunden-E-Mail fest: Wählen Sie einen der fünf Stile (Klassisch, Modern, Minimal, Warm oder Geschäftlich), setzen Sie die Kopfzeile und prüfen Sie die Vorschau. Die Vorschau entsteht auf dem Server mit demselben Aufbau wie der echte Versand, sie zeigt also genau, was Ihr Kunde erhält. Über **Alles ansehen, was Ihr Kunde von Ihnen erhält** öffnen Sie die komplette E-Mail, so wie Ihr Kunde sie erhält, mit Kopfzeile, Texten und Fußzeile zusammen.
 
-Der Abschluss unter jeder ausgehenden E-Mail baut sich automatisch aus Ihren Unternehmensdaten auf: Ihr Firmenname steht immer darunter, und die Angaben, die Sie ausfüllen (Support-E-Mail, Website, Social Links), kommen hinzu. Was leer bleibt, wird weggelassen. Dieselben Angaben erscheinen auch auf Ihren Rechnungen und Ihrer Website, deshalb bearbeiten Sie sie an einer Stelle: unter **Einstellungen → Unternehmensdaten**. Im E-Mail-Bereich sehen Sie eine Vorschau Ihres Abschlusses, mit dem Link **Unternehmensdaten bearbeiten**. Die Vorschau zeigt den Abschluss genau so, wie er unter jede E-Mail an Ihre Kunden gesetzt wird: Sie sehen also genau das, was Ihr Kunde erhält. Telefon, Adresse, KvK-Nummer, Ihr Foto und der Link zu Ihrer Seite erscheinen darin, sobald Sie sie ausgefüllt haben. Ihre Gütesiegel können ebenfalls Teil des Abschlusses werden: Ist **Unter Ihren E-Mails anzeigen** aktiv, stehen die Logos unter jeder E-Mail an Ihre Kunden, und ihre Namen erscheinen in der Textversion Ihrer E-Mails. Sie verwalten sie auf der Karte Gütesiegel unter [Firmeneinstellungen](/de/settings/company).
+### Die Fußzeile unter Ihrer E-Mail
 
-## Gestaltung
+Unter jeder Rechnung, jedem Angebot, jeder Zahlungserinnerung und jeder Gutschrift stehen Ihr Firmenname und Ihre KVK-Nummer, dazu die Angaben, die Sie darunter einschalten. Jede Angabe ist ein Schalter: Ihr Foto, Ihre Telefonnummer, Ihre E-Mail-Adresse, Ihre Webadresse, Ihre Adresse, Ihre Social-Media-Kanäle, ein Link zu Ihrer Website unten und Ihre Gütesiegel. Der Schalter für Gütesiegel erscheint erst, sobald Sie welche in Ihren Unternehmensdaten hinterlegt haben. Für eine noch leere Angabe sagt der Schalter das und verlinkt zu den Unternehmensdaten. Der Schalter für die Adresse ist für Privatadressen gedacht: Schalten Sie ihn aus, um Ihre Privatadresse aus der Mail herauszuhalten; auf der Rechnung selbst (dem PDF) steht die vollständige Adresse immer.
 
-Der Reiter **Gestaltung** legt Stil und Kopfzeile jeder Kunden-E-Mail fest: Wählen Sie einen der fünf Stile (Klassisch, Modern, Minimal, Warm oder Geschäftlich), setzen Sie die Kopfzeile und prüfen Sie die Vorschau. Die Vorschau entsteht auf dem Server mit demselben Aufbau wie der echte Versand, sie zeigt also genau, was Ihr Kunde erhält. Über **Alles ansehen, was Ihr Kunde von Ihnen erhält** öffnen Sie die komplette E-Mail, so wie Ihr Kunde sie erhält, mit Kopfzeile, Texten und Abschluss zusammen.
+Die Angaben kommen aus Ihren Unternehmensdaten, Sie sehen also genau das, was Ihr Kunde erhält: Telefon, Adresse, KVK-Nummer, Ihr Foto und der Link zu Ihrer Seite erscheinen darin, sobald Sie sie ausgefüllt haben. Bearbeiten Sie sie unter **Einstellungen → Unternehmensdaten**, bleiben beide synchron.
+
+## Posteingangs-Mails
+
+**Posteingangs-Mails** ist die Gegenseite für das, was Sie selbst aus dem Posteingang schreiben und beantworten: die Anrede und Grußformel, mit der jede neue Nachricht beginnt, und Ihre Signatur.
+
+### Anrede und Grußformel
+
+Ihre Standardanrede und Grußformel füllen das Verfassen-Fenster im Posteingang für neue Nachrichten vorab aus, die Sie selbst schreiben. Den Block verwalten Team-Admins, in Arbeitsbereichen mit Posteingang. Sehen Sie den Block nicht, zeigt die Vorschau einfach die gespeicherten Texte, die der Posteingang einsetzt.
+
+### Ihre Signatur
+
+**Logo über Ihrem Namen** setzt ein kleines Logo in Ihre Signatur. Lassen Sie es aus, wenn Sie bereits eine Signatur mit eigenem Logo nutzen, sonst steht das Logo doppelt dort. Der Schalter ist erst verfügbar, sobald Sie in Ihren Unternehmensdaten ein Logo hinterlegt haben.
+
+Die Fußzeilenliste darunter ist Ihre eigene Posteingangs-Liste mit Kontaktdaten, getrennt von der Fußzeile unter Ihren Rechnungen: Was Sie hier ausschalten, bleibt dort stehen. Die Vorschau rechts zeigt die komplette Mail genau so, wie der Empfänger sie bekommt, von der Anrede bis zur letzten Zeile der Fußzeile.
+
+## Versenden: Grenzen und Prüfung
+
+MyCompanyDesk hält ausgehende Post zurück, die nach Missbrauch aussieht, damit unsere gemeinsame Versanddomain für alle zuverlässig bleibt. Für ganz neue Accounts gelten deshalb zusätzliche Grenzen.
+
+- Es gibt ein Maximum an Empfängern pro Nachricht (an, cc und bcc zusammen). Ein neuer Account startet mit einem niedrigeren Maximum für die erste Zeit; das genaue Limit steht in der Fehlermeldung, wenn Sie es überschreiten. Teilen Sie die Nachricht auf mehrere E-Mails auf, wenn Sie mehr Menschen erreichen möchten.
+- Nachrichten von neuen Accounts werden manchmal kurz zur Prüfung zurückgehalten. Sie sehen dann, dass die Nachricht noch geprüft wird, und meistens ist das innerhalb einer Stunde abgeschlossen. Hinterlegen Sie Ihre KVK-Nummer in Ihren Unternehmensdaten, um diese Prüfung dauerhaft zu überspringen.
 
 ## Empfangen: Postfächer und Regeln
 
-Auch für den Empfang ist die E-Mail-Seite der zentrale Ort:
+Auch für die eingehende Mail ist die E-Mail-Seite der zentrale Punkt:
 
-- **Postfächer, weitere Adressen, Weiterleitung und Import** finden Sie unter **Einstellungen → E-Mail → Adressen und Versand**. Alte Links zu den Posteingang-Einstellungen landen automatisch dort.
-- **Regeln für eingehende E-Mails und vertrauenswürdige Absender** finden Sie auf dem Reiter **Regeln**. Bisher waren sie ein Reiter im Posteingang; diese Reiterleiste ist entfallen, und alte Links wie /inbox/regels landen automatisch an der neuen Stelle. Der Reiter steht nur für Arbeitsbereiche mit der Inbox-Funktion.
+- **Postfächer, zusätzliche Adressen, Weiterleitung und Import** finden Sie unter **Einstellungen → E-Mail → Adressen und Versand**. Alte Links zu den Posteingangseinstellungen landen dort automatisch.
+- **Regeln für eingehende Mail und vertrauenswürdige Absender** stehen unter **Einstellungen → E-Mail → Regeln**. Sie waren früher ein Reiter im Posteingang; diese Reiterleiste ist weg, und alte Links wie /inbox/regels landen automatisch am neuen Ort. Die Seite gibt es nur in Arbeitsbereichen mit der Posteingangsfunktion.
 - Ob eine E-Mail wirklich angekommen ist, sehen Sie im Ordner **Gesendet** des Posteingangs: dort steht pro Nachricht, ob sie den Empfänger erreicht hat.
-- **DSGVO-Datenlöschung** (alle Unterhaltungen und Anhänge einer bestimmten Adresse löschen, nur für Administratoren) finden Sie unter **Einstellungen → Gegevens wissen**.
+- **DSGVO-Datenlöschung** (alle Gespräche und Anhänge einer bestimmten Adresse löschen, nur für Admins) steht unter **Einstellungen → Gegevens wissen**.
 
 ## Verwandte Themen
 
-- [Unternehmenseinstellungen](/de/settings/company): die Unternehmensdaten hinter Ihrem Abschluss
+- [Unternehmenseinstellungen](/de/settings/company): die Unternehmensdaten hinter Ihrer Fußzeile
 - [Abo & Zahlungen](/de/settings/billing): der Versand von der eigenen Domain gehört zu Pro

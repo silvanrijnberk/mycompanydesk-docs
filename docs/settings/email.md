@@ -1,19 +1,14 @@
 ---
 title: E-mail
-description: "Kies vanaf welk adres je facturen versturen, wat er in je mails staat en hoe ze eruitzien. De e-mailhub bundelt adressen, teksten en vormgeving."
+description: "Kies vanaf welk adres je facturen en offertes versturen en stel in wat er onder elk bericht staat. Beschikbaar op elk abonnement."
 last_verified: 2026-09-28
 ---
 
 # E-mail
 
-MyCompanyDesk stuurt je facturen en offertes per e-mail naar je klanten. Bij **Instellingen → E-mail** vind je alles rond je mail op één pagina met vier tabbladen:
+MyCompanyDesk stuurt je facturen en offertes per e-mail naar je klanten. **Instellingen → E-mail** is het middelpunt van alles rond die mail: **Adressen en verzenden** voor de verzendkant, **Factuur- en offertemails** voor de mails die we voor je documenten opstellen, **Inboxmails** voor wat je zelf schrijft, en **Regels** voor wat er met inkomende mail gebeurt. De pagina is op elk abonnement beschikbaar; alleen verzenden vanaf je eigen domein hoort bij Pro.
 
-- **Adressen en verzenden**: waar je mail binnenkomt en vanaf welk adres je verstuurt
-- **Teksten**: wat er in je mails staat
-- **Vormgeving**: hoe je mails eruitzien
-- **Regels**: wat er automatisch gebeurt met inkomende mail
-
-De pagina is op elk abonnement beschikbaar; alleen verzenden vanaf je eigen domein hoort bij Pro. Regels en vertrouwde afzenders voor inkomende mail staan op het tabblad Regels; zie hieronder bij [Ontvangen: postbussen en regels](#ontvangen-postbussen-en-regels).
+Regels en vertrouwde afzenders voor inkomende mail staan onder **Regels**; zie [Ontvangen: postbussen en regels](#ontvangen-postbussen-en-regels) hieronder.
 
 ## Adressen en verzenden
 
@@ -46,15 +41,51 @@ Is je eigen domein actief en heeft het meerdere adressen, dan verschijnt er een 
 
 ### Je standaardadres
 
-Kies bij **Jij verstuurt standaard vanaf** je eigen standaardadres. Dat adres staat klaar als je in de Inbox een nieuw bericht opstelt. Het geldt alleen voor jou.
+Onder **Je verstuurt standaard vanaf dit adres** kies je je eigen standaardadres voor verzenden. Dat adres staat klaar als je een nieuw bericht schrijft in de Inbox, en de keuze geldt alleen voor jou.
 
 ### Postbussen
 
-Onder **Postbussen** beheer je de postbussen op je gekoppelde domeinen: voeg een postbus toe om mail te ontvangen op een nieuw adres op je eigen domein, zet extra adressen bij een bestaande postbus, stuur inkomende mail door naar je huidige mailapp en koppel de mailapp zelf. Bestaande mail kun je in een bestaande postbus importeren. De postbusdelen horen bij de Inbox-functie; zonder die functie zie je ze niet. De verzendmethode zelf is er voor iedereen.
+Onder **Postbussen** beheer je de postbussen op je gekoppelde domeinen: voeg een postbus toe om mail te ontvangen op een nieuw adres op je eigen domein, voeg extra adressen aan een bestaande postbus toe, stuur inkomende mail door naar je huidige mailprogramma en koppel het mailprogramma zelf. Bestaande mail kun je importeren in een bestaande postbus. De postbusgedeelten vragen de Inbox-permissie; zonder blijven ze verborgen en blijft het verzenddeel voor iedereen beschikbaar.
 
 ### Bonnen doorsturen
 
-De kaart **Bonnen doorsturen** verwijst je naar Uitgaven: je eigen adres voor bonnen en facturen van leveranciers staat bij **Uitgaven**, niet hier.
+De kaart **Bonnen doorsturen** verwijst naar Uitgaven: je eigen adres voor bonnen en inkoopfacturen staat onder **Uitgaven**, niet hier.
+
+## Factuur- en offertemails
+
+Op **Factuur- en offertemails** staat alles over de mails die MyCompanyDesk opstelt als je een factuur, offerte, herinnering of creditnota verstuurt: de standaardtekst per soort mail en taal, het uiterlijk en de voet. Het voorbeeld naast de instellingen laat de hele mail zien precies zoals je klant hem krijgt, met jouw tekst erin verwerkt, ook als je die nog niet hebt bewaard.
+
+### De standaardtekst
+
+Factuur-, offerte-, herinnerings- en creditnotamails beginnen met een standaard, goed geteste tekst in de taal van het document. Kies het soort mail (factuur, offerte, herinnering of creditnota) en de taal van de mail, schrijf je eigen onderwerp en bericht en sla op. Je eigen tekst krijgt het label **Eigen tekst**; met **Terug naar standaardtekst** haal je na een bevestiging de standaard terug.
+
+De klantnaam, het nummer, de bedragen en de data in het voorbeeld zijn voorbeelden: bij het versturen vullen we de gegevens van het echte document in, dus laat de placeholders daar staan. De zin over een aanvraag verschijnt alleen als de offerte uit een aanvraag komt.
+
+Als boekhouder kun je deze teksten lezen maar niet veranderen; de eigenaar van de werkruimte stelt de standaardtekst in en kan hem terugdraaien. Onderwerp en bericht van één e-mail pas je nog steeds in het verzendvenster aan. Zie [E-mailsjablonen](/faq/email-template) voor de details.
+
+### Uiterlijk
+
+Het uiterlijk bepaalt de stijl en de kop van elke klantmail: kies één van de vijf stijlen (Klassiek, Modern, Minimaal, Warm of Zakelijk), stel de kop in en bekijk het voorbeeld. Het voorbeeld wordt op de server op dezelfde manier opgebouwd als de echte verzending, dus je ziet precies wat je klant krijgt. Met **Bekijk alles wat je klant van je krijgt** open je de complete mail zoals je klant hem krijgt, met kop, teksten en voet bij elkaar.
+
+### De voet onder je mail
+
+Onder elke factuur, offerte, herinnering en creditnota staan je bedrijfsnaam en KvK-nummer, plus de gegevens die je daaronder aanzet. Elk gegeven is een schakelaar: je foto, telefoonnummer, e-mailadres, websiteadres, adres, sociale media, een link naar je site onderaan en je keurmerken. De schakelaar voor keurmerken verschijnt pas zodra je keurmerken hebt toegevoegd bij je bedrijfsgegevens. Staat een gegeven nog niet ingevuld, dan zegt de schakelaar dat en linkt hij naar Bedrijfsgegevens om het aan te vullen. De schakelaar voor het adres is er voor huisadressen: zet hem uit om je huisadres uit je mail te houden; op de factuur zelf (de pdf) staat het volledige adres altijd.
+
+De gegevens komen uit je bedrijfsgegevens, dus wat je ziet is wat je klant krijgt: telefoon, adres, KvK-nummer, je foto en de link naar je site verschijnen er zodra je ze invult. Pas je ze bij **Instellingen → Bedrijfsgegevens** aan, dan blijven beide gelijk.
+
+## Inboxmails
+
+**Inboxmails** is de tegenhanger voor wat je zelf schrijft en beantwoordt vanuit je inbox: de aanhef en afsluiting waarmee elk nieuw bericht begint, en je handtekening.
+
+### Aanhef en afsluiting
+
+Je standaard aanhef en afsluiting vullen het opstelvenster van de Inbox alvast in voor berichten die je zelf schrijft. Het blok beheren teambeheerders, op werkruimtes met de Inbox. Zie je het blok niet, dan laat het voorbeeld gewoon de bewaarde teksten zien die de inbox invult.
+
+### Je handtekening
+
+**Logo boven je naam** zet een klein logo in je handtekening. Laat hem uit als je al een handtekening met eigen logo gebruikt, anders staat het logo er twee keer. De schakelaar is er pas zodra je bij je bedrijfsgegevens een logo hebt toegevoegd.
+
+De voetlijst eronder is je eigen inboxlijst met contactgegevens, los van de voet onder je facturen: wat je hier uitzet, blijft daar gewoon staan. Het voorbeeld rechts laat de hele mail zien precies zoals de ontvanger hem krijgt, van de aanhef tot de laatste regel van de voet.
 
 ## Verzenden: limieten en controle
 
@@ -63,36 +94,16 @@ MyCompanyDesk houdt uitgaande post tegen die eruitziet als misbruik, zodat ons g
 - Er geldt een maximum aan het aantal ontvangers per bericht (aan, cc en bcc samen). Een nieuw account krijgt in de eerste periode een lager maximum; het exacte limiet staat in de foutmelding als je het overschrijdt. Splits het bericht in meerdere e-mails als je meer mensen wilt bereiken.
 - Berichten van nieuwe accounts kunnen soms even vastgehouden worden voor controle. Je ziet dan dat het bericht nog bekeken wordt en meestal is dat binnen een uur afgerond. Vul je KVK-nummer in bij je bedrijfsgegevens om deze controle voorgoed over te slaan.
 
-## Teksten
-
-### Standaardmail bij documenten
-
-Factuur-, offerte-, herinnerings- en creditnotamails beginnen met een standaard, goed geteste tekst in de taal van het document. Onder **Standaardmail bij documenten** beheer je die teksten zelf: kies het soort mail (factuur, offerte, herinnering of creditnota) en de taal van de mail, schrijf je eigen onderwerp en bericht en sla op. Je eigen tekst krijgt het label **Eigen tekst**; met **Terug naar standaardtekst** haal je na een bevestiging de standaard terug.
-
-De klantnaam, het nummer, de bedragen en de data in het voorbeeld zijn voorbeelden: bij het versturen vullen we de gegevens van het echte document in, dus laat de placeholders daar staan. De zin over een aanvraag verschijnt alleen als de offerte uit een aanvraag komt.
-
-Als accountant kun je deze teksten lezen maar niet veranderen; de eigenaar van de werkruimte stelt de standaardtekst in en kan hem terugdraaien. Onderwerp en bericht van één e-mail pas je nog steeds in het verzendvenster aan. Zie [E-mailsjablonen](/faq/email-template) voor de details.
-
-Op het tabblad staan ook je standaard aanhef en afsluiting, die het opstelvenster van de Inbox alvast invullen voor berichten die je zelf schrijft.
-
-### Je afsluiter
-
-Onder elke uitgaande e-mail zetten we je bedrijfsnaam en de gegevens die je invult bij je bedrijfsgegevens. Wat leeg is, laten we weg. Diezelfde gegevens staan ook op je facturen en je website, en daarom pas je ze op één plek aan: bij **Instellingen → Bedrijfsgegevens**. Op het E-mail-tabblad zie je een voorbeeld van je afsluiter, met de link **Bedrijfsgegevens aanpassen**. Het voorbeeld is precies de voet die onder elke mail naar je klant gaat, dus wat je ziet is wat je klant krijgt: telefoon, adres, KvK-nummer, je foto en de link naar je site verschijnen erin zodra je ze invult. Je keurmerken kunnen ook deel worden van je afsluiter: met **Tonen onder je e-mails** aan staan de logo's onder elke mail naar je klant, en hun namen verschijnen in de tekstversie van je mail. Je beheert ze op de kaart Keurmerken bij [Bedrijfsinstellingen](/settings/company).
-
-## Vormgeving
-
-Het tabblad **Vormgeving** bepaalt de stijl en de kop van elke klantmail: kies één van de vijf stijlen (Klassiek, Modern, Minimaal, Warm of Zakelijk), stel de kop in en bekijk het voorbeeld. Het voorbeeld wordt op de server op dezelfde manier opgebouwd als de echte verzending, dus je ziet precies wat je klant krijgt. Met **Bekijk alles wat je klant van je krijgt** open je de complete mail zoals je klant hem krijgt, met kop, teksten en afsluiter bij elkaar.
-
 ## Ontvangen: postbussen en regels
 
 Ook voor de mail die binnenkomt is de E-mailpagina het centrale punt:
 
 - **Postbussen, extra adressen, doorsturen en importeren** vind je onder **Instellingen → E-mail → Adressen en verzenden**. Oude links naar de inboxinstellingen komen daar automatisch uit.
-- **Regels voor inkomende mail en vertrouwde afzenders** staan op het tabblad **Regels**. Ze zaten eerder als tabblad in de Inbox; die tabrij is weg, en oude links zoals /inbox/regels komen automatisch bij de nieuwe plek uit. Het tabblad staat er alleen als je werkruimte de Inbox-functie heeft.
+- **Regels voor inkomende mail en vertrouwde afzenders** staan onder **Instellingen → E-mail → Regels**. Ze zaten eerder als tabblad in de Inbox; die tabrij is weg, en oude links zoals /inbox/regels komen automatisch bij de nieuwe plek uit. De pagina staat er alleen als je werkruimte de Inbox-functie heeft.
 - Of een mail echt aankwam, zie je in de map **Verzonden** van de Inbox: daar staat per bericht of hij de ontvanger bereikt heeft.
 - **AVG-gegevensverwijdering** (alle gesprekken en bijlagen van een specifiek adres verwijderen, alleen voor beheerders) staat onder **Instellingen → Gegevens wissen**.
 
 ## Gerelateerd
 
-- [Bedrijfsinstellingen](/settings/company): de bedrijfsgegevens achter je afsluiter
+- [Bedrijfsinstellingen](/settings/company): de bedrijfsgegevens achter je voet
 - [Abonnement & betalingen](/settings/billing): verzenden vanaf je eigen domein hoort bij Pro
