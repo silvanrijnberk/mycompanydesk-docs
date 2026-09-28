@@ -15,6 +15,6 @@ Zo verwijder je je account:
 3. Klik onder "Account definitief verwijderen" op "Verwijderen"
 4. Bevestig met je huidige wachtwoord. Deze actie is permanent
 
-Op dezelfde pagina kun je ook alleen je betaalde abonnement opzeggen. Je betaalt dan niets meer, maar je account en gegevens blijven bewaard, want de Belastingdienst wil dat je je administratie 7 jaar kunt laten zien. Verwijder je je account, dan zijn je account en al je gegevens voorgoed weg.
+Op dezelfde pagina kun je ook alleen je betaalde abonnement opzeggen. Je betaalt dan niets meer, maar je account en gegevens blijven bewaard, want de Belastingdienst wil dat je je administratie 7 jaar kunt laten zien. Voordat je bevestigt, zet de pagina erbij wat blijft werken en wat stopt, zodat je weet wat je kiest. Verwijder je je account, dan zijn je account en al je gegevens voorgoed weg.
 
 Belangrijk: het verwijderen van je account kan niet ongedaan worden gemaakt. Exporteer alles wat je nodig hebt voordat je doorgaat.

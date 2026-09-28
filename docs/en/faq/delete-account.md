@@ -15,6 +15,6 @@ To delete your account:
 3. Under "Account definitief verwijderen" (permanently delete account), click "Delete"
 4. Confirm with your current password. This action is permanent
 
-The same page also lets you cancel only your paid subscription. You then stop paying, but your account and data stay, since Dutch tax rules require you to keep your records for 7 years. Deleting your account removes your account and all your data for good.
+The same page also lets you cancel only your paid subscription. You then stop paying, but your account and data stay, since Dutch tax rules require you to keep your records for 7 years. Before you confirm, the page lists what keeps working and what stops, so you know what you are choosing. Deleting your account removes your account and all your data for good.
 
 Important: account deletion cannot be undone. Export everything you need before you proceed.

@@ -15,6 +15,6 @@ So löschen Sie Ihr Konto:
 3. Klicken Sie unter "Konto dauerhaft löschen" auf "Löschen"
 4. Bestätigen Sie mit Ihrem aktuellen Passwort. Dieser Schritt ist endgültig
 
-Auf derselben Seite können Sie auch nur Ihr bezahltes Abonnement kündigen. Sie zahlen dann nichts mehr, Ihr Konto und Ihre Daten bleiben aber erhalten, da das niederländische Steuerrecht eine Aufbewahrung Ihrer Unterlagen für 7 Jahre verlangt. Löschen Sie Ihr Konto, sind Ihr Konto und alle Ihre Daten endgültig weg.
+Auf derselben Seite können Sie auch nur Ihr bezahltes Abonnement kündigen. Sie zahlen dann nichts mehr, Ihr Konto und Ihre Daten bleiben aber erhalten, da das niederländische Steuerrecht eine Aufbewahrung Ihrer Unterlagen für 7 Jahre verlangt. Bevor Sie bestätigen, listet die Seite auf, was weiterläuft und was stoppt, damit Sie wissen, was Sie wählen. Löschen Sie Ihr Konto, sind Ihr Konto und alle Ihre Daten endgültig weg.
 
 Wichtig: Die Kontolöschung kann nicht rückgängig gemacht werden. Exportieren Sie alles, was Sie brauchen, bevor Sie fortfahren.
