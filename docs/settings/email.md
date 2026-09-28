@@ -6,13 +6,14 @@ last_verified: 2026-09-28
 
 # E-mail
 
-MyCompanyDesk stuurt je facturen en offertes per e-mail naar je klanten. Bij **Instellingen → E-mail** vind je alles rond je mail op één pagina met drie tabbladen:
+MyCompanyDesk stuurt je facturen en offertes per e-mail naar je klanten. Bij **Instellingen → E-mail** vind je alles rond je mail op één pagina met vier tabbladen:
 
 - **Adressen en verzenden**: waar je mail binnenkomt en vanaf welk adres je verstuurt
 - **Teksten**: wat er in je mails staat
 - **Vormgeving**: hoe je mails eruitzien
+- **Regels**: wat er automatisch gebeurt met inkomende mail
 
-De pagina is op elk abonnement beschikbaar; alleen verzenden vanaf je eigen domein hoort bij Pro. Regels en vertrouwde afzenders voor inkomende mail hebben hun eigen plek in de Inbox; zie hieronder bij [Ontvangen: postbussen en regels](#ontvangen-postbussen-en-regels).
+De pagina is op elk abonnement beschikbaar; alleen verzenden vanaf je eigen domein hoort bij Pro. Regels en vertrouwde afzenders voor inkomende mail staan op het tabblad Regels; zie hieronder bij [Ontvangen: postbussen en regels](#ontvangen-postbussen-en-regels).
 
 ## Adressen en verzenden
 
@@ -76,7 +77,7 @@ Op het tabblad staan ook je standaard aanhef en afsluiting, die het opstelvenste
 
 ### Je afsluiter
 
-Onder elke uitgaande e-mail zetten we je bedrijfsnaam en de gegevens die je invult bij je bedrijfsgegevens. Wat leeg is, laten we weg. Diezelfde gegevens staan ook op je facturen en je website, en daarom pas je ze op één plek aan: bij **Instellingen → Bedrijfsgegevens**. Op het E-mail-tabblad zie je een voorbeeld van je afsluiter, met de link **Bedrijfsgegevens aanpassen**. Het voorbeeld is precies de voet die onder elke mail naar je klant gaat, dus wat je ziet is wat je klant krijgt: telefoon, adres, KvK-nummer, je foto en de link naar je site verschijnen erin zodra je ze invult.
+Onder elke uitgaande e-mail zetten we je bedrijfsnaam en de gegevens die je invult bij je bedrijfsgegevens. Wat leeg is, laten we weg. Diezelfde gegevens staan ook op je facturen en je website, en daarom pas je ze op één plek aan: bij **Instellingen → Bedrijfsgegevens**. Op het E-mail-tabblad zie je een voorbeeld van je afsluiter, met de link **Bedrijfsgegevens aanpassen**. Het voorbeeld is precies de voet die onder elke mail naar je klant gaat, dus wat je ziet is wat je klant krijgt: telefoon, adres, KvK-nummer, je foto en de link naar je site verschijnen erin zodra je ze invult. Je keurmerken kunnen ook deel worden van je afsluiter: met **Tonen onder je e-mails** aan staan de logo's onder elke mail naar je klant, en hun namen verschijnen in de tekstversie van je mail. Je beheert ze op de kaart Keurmerken bij [Bedrijfsinstellingen](/settings/company).
 
 ## Vormgeving
 
@@ -84,11 +85,11 @@ Het tabblad **Vormgeving** bepaalt de stijl en de kop van elke klantmail: kies �
 
 ## Ontvangen: postbussen en regels
 
-Mail ontvangen regelde je tot nu toe op de instellingenpagina van de inbox. Die pagina is vervangen:
+Ook voor de mail die binnenkomt is de E-mailpagina het centrale punt:
 
 - **Postbussen, extra adressen, doorsturen en importeren** vind je onder **Instellingen → E-mail → Adressen en verzenden**. Oude links naar de inboxinstellingen komen daar automatisch uit.
-- **Regels voor inkomende mail en vertrouwde afzenders** staan onder **Inbox → Regels**.
-- **Recente uitgaande aflevering** staat onder **Inbox → Overzicht**.
+- **Regels voor inkomende mail en vertrouwde afzenders** staan op het tabblad **Regels**. Ze zaten eerder als tabblad in de Inbox; die tabrij is weg, en oude links zoals /inbox/regels komen automatisch bij de nieuwe plek uit. Het tabblad staat er alleen als je werkruimte de Inbox-functie heeft.
+- Of een mail echt aankwam, zie je in de map **Verzonden** van de Inbox: daar staat per bericht of hij de ontvanger bereikt heeft.
 - **AVG-gegevensverwijdering** (alle gesprekken en bijlagen van een specifiek adres verwijderen, alleen voor beheerders) staat onder **Instellingen → Gegevens wissen**.
 
 ## Gerelateerd

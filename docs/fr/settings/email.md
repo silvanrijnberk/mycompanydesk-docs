@@ -6,13 +6,14 @@ last_verified: 2026-09-28
 
 # E-mail
 
-MyCompanyDesk envoie vos factures et devis par e-mail à vos clients. **Paramètres → E-mail** réunit tout ce qui touche à votre courrier sur une page à trois onglets :
+MyCompanyDesk envoie vos factures et devis par e-mail à vos clients. **Paramètres → E-mail** réunit tout ce qui touche à votre courrier sur une page à quatre onglets :
 
 - **Adresses et envoi** : où arrive votre courrier et depuis quelle adresse vous envoyez
 - **Textes** : ce que disent vos e-mails
 - **Mise en forme** : l'apparence de vos e-mails
+- **Règles** : ce qui arrive automatiquement aux e-mails entrants
 
-La page est disponible dans tous les abonnements ; seul l'envoi depuis votre propre domaine fait partie de Pro. Les règles et les expéditeurs approuvés du courrier entrant ont leur propre emplacement dans la boîte de réception ; voir plus bas [Recevoir : boîtes mail et règles](#recevoir-boites-mail-et-regles).
+La page est disponible dans tous les abonnements ; seul l'envoi depuis votre propre domaine fait partie de Pro. Les règles et les expéditeurs approuvés du courrier entrant se trouvent sur l'onglet Règles ; voir plus bas [Recevoir : boîtes mail et règles](#recevoir-boites-mail-et-regles).
 
 ## Adresses et envoi
 
@@ -76,7 +77,7 @@ L'onglet garde aussi votre formule d'appel et votre formule de politesse standar
 
 ### Votre signature
 
-Le pied de page sous chaque e-mail sortant se construit automatiquement à partir des informations de votre entreprise : le nom de votre entreprise apparaît toujours, et les informations que vous remplissez (e-mail de support, site web, liens sociaux) s'ajoutent. Ce qui reste vide est omis. Les mêmes informations figurent aussi sur vos factures et votre site web, aussi les modifiez-vous à un seul endroit : **Paramètres → Informations de l'entreprise**. Sous E-mail, un aperçu montre votre signature, avec le lien **Modifier les informations de l'entreprise**. L'aperçu affiche le pied de page exact qui part sous chaque e-mail, donc ce que vous voyez est ce que reçoit votre client : le téléphone, l'adresse, le numéro KvK, votre photo et le lien vers votre site y apparaissent dès que vous les remplissez.
+Le pied de page sous chaque e-mail sortant se construit automatiquement à partir des informations de votre entreprise : le nom de votre entreprise apparaît toujours, et les informations que vous remplissez (e-mail de support, site web, liens sociaux) s'ajoutent. Ce qui reste vide est omis. Les mêmes informations figurent aussi sur vos factures et votre site web, aussi les modifiez-vous à un seul endroit : **Paramètres → Informations de l'entreprise**. Sous E-mail, un aperçu montre votre signature, avec le lien **Modifier les informations de l'entreprise**. L'aperçu affiche le pied de page exact qui part sous chaque e-mail, donc ce que vous voyez est ce que reçoit votre client : le téléphone, l'adresse, le numéro KvK, votre photo et le lien vers votre site y apparaissent dès que vous les remplissez. Vos labels et certifications peuvent aussi faire partie de la signature : lorsque **Afficher sous vos e-mails** est activé, les logos apparaissent sous chaque e-mail envoyé à vos clients, et leurs noms figurent dans la version texte de vos e-mails. Vous les gérez sur la carte Labels et certifications des [paramètres de l'entreprise](/fr/settings/company).
 
 ## Mise en forme
 
@@ -84,11 +85,11 @@ L'onglet **Mise en forme** règle le style et l'en-tête de chaque e-mail client
 
 ## Recevoir : boîtes mail et règles
 
-La réception du courrier se gérait jusqu'ici sur la page de paramètres de la boîte de réception. Cette page a été remplacée :
+Tout ce qui concerne le courrier entrant se règle désormais également sur la page E-mail :
 
 - **Boîtes mail, adresses supplémentaires, transfert et import** se trouvent sous **Paramètres → E-mail → Adresses et envoi**. Les anciens liens vers les paramètres de la boîte de réception arrivent là automatiquement.
-- **Les règles du courrier entrant et les expéditeurs approuvés** se trouvent sous **Boîte de réception → Règles**.
-- **Les dernières livraisons sortantes** se trouvent sous **Boîte de réception → Aperçu**.
+- **Les règles du courrier entrant et les expéditeurs approuvés** se trouvent sur l'onglet **Règles**. Elles étaient auparavant un onglet de la boîte de réception ; cette rangée d'onglets a disparu, et les anciens liens comme /inbox/regels arrivent automatiquement au nouvel endroit. L'onglet n'existe que pour les espaces de travail disposant de la fonction Boîte de réception.
+- Pour savoir si un e-mail est bien arrivé, consultez le dossier **Envoyés** de la boîte de réception : il indique pour chaque message s'il a atteint son destinataire.
 - **La suppression de données RGPD** (supprimer toutes les conversations et pièces jointes d'une adresse précise, administrateurs uniquement) se trouve sous **Paramètres → Gegevens wissen**.
 
 ## Voir aussi

@@ -6,13 +6,14 @@ last_verified: 2026-09-28
 
 # Email
 
-MyCompanyDesk emails your invoices and quotes to your customers. **Settings → Email** bundles everything about your mail on one page with three tabs:
+MyCompanyDesk emails your invoices and quotes to your customers. **Settings → Email** bundles everything about your mail on one page with four tabs:
 
 - **Addresses and sending**: where your mail arrives and which address you send from
 - **Texts**: what your emails say
 - **Design**: how your emails look
+- **Rules**: what happens automatically to incoming mail
 
-The page is available on every plan; only sending from your own domain is part of Pro. Rules and trusted senders for incoming mail have their own place in the Inbox; see [Receiving: mailboxes and rules](#receiving-mailboxes-and-rules) below.
+The page is available on every plan; only sending from your own domain is part of Pro. Rules and trusted senders for incoming mail live on the Rules tab; see [Receiving: mailboxes and rules](#receiving-mailboxes-and-rules) below.
 
 ## Addresses and sending
 
@@ -74,7 +75,7 @@ The tab also holds your standard greeting and sign-off, which prefill the compos
 
 ### Your sign-off
 
-The sign-off under every outgoing email is built automatically from your company details: your company name always appears, and the details you fill in (support email, website, social links) join it. Anything left empty is left out. The same details also appear on your invoices and your website, so there is one place to edit them: **Settings → Company details**. Under Email you get a preview of your sign-off, with an **Edit company details** link. The preview is the exact footer that goes out under every email, so what you see is what your customer receives: phone, address, KvK number, your photo and the link to your site appear in it as soon as you fill them in under Company details.
+The sign-off under every outgoing email is built automatically from your company details: your company name always appears, and the details you fill in (support email, website, social links) join it. Anything left empty is left out. The same details also appear on your invoices and your website, so there is one place to edit them: **Settings → Company details**. Under Email you get a preview of your sign-off, with an **Edit company details** link. The preview is the exact footer that goes out under every email, so what you see is what your customer receives: phone, address, KvK number, your photo and the link to your site appear in it as soon as you fill them in under Company details. Your certifications and quality marks (STEK, VCA, CE and the like) join the footer as well: with **Show below your emails** on, their logos appear under every email to your customers, and their names appear in the text version of your emails. You manage them on the Certifications card under [Company settings](/en/settings/company).
 
 ## Design
 
@@ -82,11 +83,11 @@ The **Design** tab sets the style and header of every customer email: pick one o
 
 ## Receiving: mailboxes and rules
 
-Receiving mail used to be managed on the Inbox settings page. That page has been replaced:
+Everything about the mail you receive now lives on the Email page as well:
 
 - **Mailboxes, extra addresses, forwarding, and importing** are under **Settings → Email → Addresses and sending**. Old links to the inbox settings page land there automatically.
-- **Rules for incoming mail and trusted senders** live under **Inbox → Rules**.
-- **Recent outbound delivery** is under **Inbox → Overview**.
+- **Rules for incoming mail and trusted senders** live under **Settings → Email → Rules**. They used to be a tab in the Inbox; that tab row is gone, and old links such as /inbox/regels land on the new place automatically. The tab is only there for workspaces with the Inbox feature.
+- Whether an email actually arrived, you see in the **Sent** folder of the Inbox: it shows per message whether it reached its recipient.
 - **GDPR data removal** (delete all conversations and attachments from a specific address, admins only) lives under **Settings → Gegevens wissen**.
 
 ## Related

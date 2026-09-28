@@ -1,7 +1,7 @@
 ---
 title: Paramètres entreprise
 description: "The name on your invoices, address, KvK, logo, brand colour, website and opening hours, grouped in Settings."
-last_verified: 2026-09-03
+last_verified: 2026-09-28
 ---
 
 # Company Settings
@@ -32,6 +32,20 @@ The identity form. What every invoice, quote, and email shows.
 - **Website + social**: used by the email signature, business page, and footers
 
 Changes save automatically.
+
+## Certifications (Keurmerken)
+
+Path: `/settings/bedrijfsgegevens#keurmerken`
+
+The **Keurmerken** card on the Bedrijfsgegevens page holds your company's certifications and quality marks, such as STEK, VCA or CE. They appear below your emails and on your website, and you manage them in one place.
+
+- **Add a certification**: choose an image (PNG, JPG, WebP or SVG, 3 MB at most). MyCompanyDesk trims the white space around the logo, caps its height at 480 pixels and converts it to a PNG with transparency. An SVG is rasterized, so mail programs that cannot show SVG still display the mark.
+- **Name**: required, up to 64 characters. The name describes the logo for people who cannot see it, and it appears in the text version of your emails.
+- **Link (optional)**: for example the register page where customers can verify your certificate. The link must start with `https://` or `http://`.
+- Up to six certifications. Reorder them with the up and down arrows; to replace the image, remove the certification and add it again.
+- Two switches, both on by default: **Tonen onder je e-mails** puts the logos below every email to your customers (their names form the last line of the text version), and **Tonen op je website** feeds the Keurmerken block on your website.
+- Adding your first certification automatically places a **Keurmerken** block on the homepage of your website, as a draft. It goes live when you publish your site.
+- Removing a certification keeps the file on the server, so emails that already went out keep showing the mark. An empty list, or **Tonen op je website** switched off, makes the block hide itself on the website.
 
 ## Opening hours
 

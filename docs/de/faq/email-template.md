@@ -26,7 +26,7 @@ Ihren eigenen Standardtext legen Sie an zwei Stellen fest:
 
 Was Sie anpassen können:
 1. Den Absender: Gehen Sie zu Einstellungen → E-Mail → Adressen und Versand und wählen Sie Ihre eigene Domain (Pro), Gmail oder Outlook
-2. Ihre Grußformel: Tragen Sie Ihre Support-E-Mail, Website und Social Links unter Einstellungen → Unternehmensdaten ein; sie erscheinen unter jeder E-Mail, die Sie senden, und auf Ihren Rechnungen und Ihrer Website
+2. Ihre Grußformel: Tragen Sie Ihre Support-E-Mail, Website und Social Links unter Einstellungen → Unternehmensdaten ein; sie erscheinen unter jeder E-Mail, die Sie senden, und auf Ihren Rechnungen und Ihrer Website. Ihre Gütesiegel (STEK, VCA, CE und mehr) erscheinen ebenfalls darunter, sobald Sie sie hinzufügen und **Unter Ihren E-Mails anzeigen** aktiv lassen
 3. Eine einzelne E-Mail: Im Versandfenster passen Sie Empfänger, Betreff und Nachricht an, bevor die E-Mail verschickt wird
 
 Tipp: Die Angaben in Ihrer Grußformel erscheinen auch auf Ihren Rechnungen und Ihrer Website; ausfüllen in den Unternehmensdaten genügt, damit jede E-Mail vollständig ist.

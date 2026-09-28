@@ -1,7 +1,7 @@
 ---
 title: Sitebouwer
 description: "Bouw een website met meerdere pagina's in de drag-and-drop-editor: secties en blokken, je eigen kleuren en lettertypes, en publiceren wanneer jij wilt."
-last_verified: 2026-08-20
+last_verified: 2026-09-28
 ---
 
 # Sitebouwer
@@ -181,7 +181,7 @@ Een site waarvan de homepage op Concept staat, toont niets bij publicatie. Als j
 
 In de **Editor**-tab:
 
-- Klik op **Sectie toevoegen** om de beschikbare bloktypes te zien (hero, tekst, galerij, spotlight, diensten, team, testimonials, contactformulier, tarieven, product, aangepaste HTML, en meer).
+- Klik op **Sectie toevoegen** om de beschikbare bloktypes te zien (hero, tekst, galerij, spotlight, diensten, team, testimonials, contactformulier, tarieven, product, keurmerken, aangepaste HTML, en meer).
 - Kies een bloktype om het op de pagina te plaatsen.
 - Klik op een sectie om het inspectiepaneel te openen, waar je inhoud, layout, stijl en animatie kunt bewerken.
 - Sleep secties omhoog of omlaag om ze te verplaatsen. Gebruik de dupliceer- en verwijderacties op elke sectie.
@@ -307,6 +307,18 @@ Een losstaande eenmalige koopkaart, voor als een volledige tarieventabel meer is
 - Een optionele notitieregel onder de knop voor verzendinformatie, disclaimers of opmerkingen.
 
 Zie [Verkopen](/features/domains-website-inbox#verkopen) voor het bijhouden van betalingen en bestellingen.
+
+### Keurmerken-blok
+
+Het **Keurmerken**-blok toont de certificaten en keurmerken van je bedrijf (STEK, VCA, CE en meer), precies zoals je ze bij **Instellingen → Bedrijfsgegevens** invoert. Die lijst beheer je op die ene plek: het blok is datagebonden en de inspecteur heeft geen items-editor, alleen de weergave.
+
+- **Kopje**: standaard "Certificeringen en keurmerken". Typ je eigen kopje, of laat het leeg voor een blok zonder kop.
+- **Stijl**: witte tegels (standaard) of kaal. **Grootte**: klein, middel of groot.
+- Maximaal zes keurmerken; volgorde, naam en link stel je bij Bedrijfsgegevens in. Voeg je het eerste keurmerk toe, dan zet MyCompanyDesk automatisch een Keurmerken-blok op je homepage, als concept: vóór een afsluitende oproep als dat het laatste blok is, anders onderaan vóór de footer. Het wordt niet meteen gepubliceerd; publiceren doe je zelf. Bestaat er al een keurmerken-sectie op je site, dan komt er geen tweede.
+- Is de lijst leeg of staat **Tonen op je website** bij Bedrijfsgegevens uit, dan verbergt het blok zichzelf op de gepubliceerde site. De editor zegt het ook als de keurmerken voor de website uit staan.
+- Verwijder je een keurmerk, dan blijft het bestand bewaard en toont al verzonden mail het logo gewoon; het blok verbergt zichzelf pas als de hele lijst leeg is.
+
+Bron: `packages/shared/src/site-blocks/registry.ts#keurmerken`; `apps/api/src/modules/companies/certifications.service.js`.
 
 ### Catalogussecties
 

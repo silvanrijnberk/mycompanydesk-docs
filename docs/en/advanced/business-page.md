@@ -1,7 +1,7 @@
 ---
 title: Site Builder
 description: "Build a multi-page business website with the drag-and-drop editor: sections and blocks, your own colours and fonts, and publish when you are ready."
-last_verified: 2026-08-20
+last_verified: 2026-09-28
 ---
 
 # Site Builder
@@ -181,7 +181,7 @@ A site whose home page is in Concept renders nothing when published. If you togg
 
 In the **Editor** tab:
 
-- Click **Add section** to see the available block types (hero, text, gallery, spotlight, services, team, testimonials, contact form, pricing, product, custom HTML, and more).
+- Click **Add section** to see the available block types (hero, text, gallery, spotlight, services, team, testimonials, contact form, pricing, product, certifications, custom HTML, and more).
 - Select a block type to insert it onto the page.
 - Click any section to open the inspector panel, where you can edit its content, layout, style, and animation.
 - Drag sections up or down to reorder. Use the duplicate and delete actions on each section.
@@ -307,6 +307,18 @@ A standalone single-item buy card, for when a full pricing table is more than yo
 - An optional note line under the button for delivery info, disclaimers, or shipping notes.
 
 See [Sales](/en/features/domains-website-inbox#sales) for tracking payments and orders.
+
+### Certifications block
+
+The **Keurmerken** block shows your company's certifications and quality marks (STEK, VCA, CE and more), exactly as you enter them under **Instellingen → Bedrijfsgegevens**. You manage that list in one place: the block is data-bound, so the inspector has no items editor, only the presentation.
+
+- **Caption**: "Certificeringen en keurmerken" by default. Type your own caption, or leave it empty for a block without a heading.
+- **Style**: white tiles (default) or plain. **Size**: small, medium, or large.
+- Up to six certifications; order, name, and link are set under Instellingen → Bedrijfsgegevens. When you add your first certification, MyCompanyDesk automatically places a Keurmerken block on your homepage, as a draft: before a closing call-to-action if that is the last block, otherwise at the bottom before the footer. It is not published right away; you publish. If your site already has a certifications section, no second one is added.
+- If the list is empty, or **Tonen op je website** is switched off under Instellingen → Bedrijfsgegevens, the block hides itself on the published site. The editor also tells you when certifications are switched off for the website.
+- When you remove a certification, the file is kept and email that already went out keeps showing the logo; the block only hides itself once the list is completely empty.
+
+Source: `packages/shared/src/site-blocks/registry.ts#keurmerken`; `apps/api/src/modules/companies/certifications.service.js`.
 
 ### Catalog sections
 

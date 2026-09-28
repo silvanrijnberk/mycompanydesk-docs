@@ -26,7 +26,7 @@ Vous définissez votre propre texte standard à deux endroits :
 
 Ce que vous pouvez ajuster :
 1. L'expéditeur : accédez à Paramètres → E-mail → Adresses et envoi et choisissez votre propre domaine (Pro), Gmail ou Outlook
-2. Votre signature : renseignez votre e-mail de support, votre site web et vos liens sociaux sous Paramètres → Informations de l'entreprise ; ils apparaissent sous chaque e-mail que vous envoyez, et sur vos factures et votre site web
+2. Votre signature : renseignez votre e-mail de support, votre site web et vos liens sociaux sous Paramètres → Informations de l'entreprise ; ils apparaissent sous chaque e-mail que vous envoyez, et sur vos factures et votre site web. Vos labels et certifications (STEK, VCA, CE et autres) y figurent également, dès que vous les ajoutez et laissez **Afficher sous vos e-mails** activé
 3. Un e-mail ponctuel : dans la fenêtre d'envoi, vous pouvez ajuster le destinataire, l'objet et le message avant l'envoi
 
 Astuce : les informations de votre signature figurent aussi sur vos factures et votre site web ; les remplir dans les Informations de l'entreprise suffit pour que chaque e-mail soit complet.

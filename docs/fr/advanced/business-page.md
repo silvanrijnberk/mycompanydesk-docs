@@ -1,7 +1,7 @@
 ---
 title: Constructeur de site
 description: "Construisez un site web de plusieurs pages dans l'éditeur glisser-déposer : sections et blocs, vos couleurs et polices, publication quand vous voulez."
-last_verified: 2026-08-20
+last_verified: 2026-09-28
 ---
 
 # Constructeur de site
@@ -178,7 +178,7 @@ Un site dont la page d'accueil est en Brouillon n'affiche rien lors de la public
 
 Dans l'onglet **Editeur** :
 
-- Cliquez sur **Ajouter une section** pour voir les types de blocs disponibles (hero, texte, galerie, spotlight, services, equipe, temoignages, formulaire de contact, tarifs, produit, HTML personnalise, etc.).
+- Cliquez sur **Ajouter une section** pour voir les types de blocs disponibles (hero, texte, galerie, spotlight, services, equipe, temoignages, formulaire de contact, tarifs, produit, labels et certifications, HTML personnalise, etc.).
 - Selectionnez un type de bloc pour l'inserer sur la page.
 - Cliquez sur une section pour ouvrir le panneau d'inspection, ou vous pouvez modifier son contenu, sa mise en page, son style et son animation.
 - Faites glisser les sections vers le haut ou le bas pour les reordonner. Utilisez les actions dupliquer et supprimer sur chaque section.
@@ -304,6 +304,18 @@ Une fiche d'achat autonome pour un seul article, quand un tableau tarifaire comp
 - Une ligne de note optionnelle sous le bouton pour les informations de livraison, les mentions legales ou les remarques.
 
 Consultez [Ventes](/fr/features/domains-website-inbox#ventes) pour le suivi des paiements et des commandes.
+
+### Bloc de labels et certifications
+
+Le bloc **Keurmerken** affiche les certificats et labels de votre entreprise (STEK, VCA, CE et autres), exactement comme vous les saisissez sous **Paramètres → Informations de l'entreprise**. Vous gérez cette liste à un seul endroit : le bloc est lié aux données, le panneau d'inspection n'a pas d'éditeur d'éléments, seulement la présentation.
+
+- **Titre** : « Certificeringen en keurmerken » par défaut. Saisissez votre propre titre, ou laissez le champ vide pour un bloc sans titre.
+- **Style** : tuiles blanches (par défaut) ou épuré. **Taille** : petite, moyenne ou grande.
+- Au maximum six labels ; l'ordre, le nom et le lien se règlent sous Informations de l'entreprise. Quand vous ajoutez votre premier label, MyCompanyDesk place automatiquement un bloc de labels sur votre page d'accueil, comme brouillon : avant un appel à l'action final si c'est le dernier bloc, sinon en bas avant le pied de page. Il n'est pas publié tout de suite ; la publication reste entre vos mains. Si votre site comporte déjà une section de labels, aucune seconde n'est ajoutée.
+- Si la liste est vide, ou si **Afficher sur votre site web** est désactivé sous Informations de l'entreprise, le bloc se cache sur le site publié. L'éditeur l'indique aussi lorsque les labels sont désactivés pour le site web.
+- Quand vous supprimez un label, le fichier est conservé et les e-mails déjà envoyés continuent d'afficher le logo ; le bloc ne se masque que lorsque la liste est complètement vide.
+
+Source : `packages/shared/src/site-blocks/registry.ts#keurmerken` ; `apps/api/src/modules/companies/certifications.service.js`.
 
 ### Sections catalogue
 
