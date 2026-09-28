@@ -1,15 +1,22 @@
 ---
 title: E-mail
-description: "Bepaal vanaf welk adres je facturen en offertes vertrekken en stel de ondertekening onder elk bericht in. Beschikbaar op elk abonnement."
+description: "Kies vanaf welk adres je facturen versturen, wat er in je mails staat en hoe ze eruitzien. De e-mailhub bundelt adressen, teksten en vormgeving."
+last_verified: 2026-09-28
 ---
 
 # E-mail
 
-MyCompanyDesk stuurt je facturen en offertes per e-mail naar je klanten. Bij **Instellingen → E-mail** regel je de verzendkant: vanaf welk adres je documenten worden verstuurd en de afsluiter onder elk bericht. De pagina is op elk abonnement beschikbaar.
+MyCompanyDesk stuurt je facturen en offertes per e-mail naar je klanten. Bij **Instellingen → E-mail** vind je alles rond je mail op één pagina met drie tabbladen:
 
-E-mail ontvangen (de Inbox) stel je op een andere plek in; zie [Ontvangen: inboxinstellingen](#ontvangen-inboxinstellingen) hieronder.
+- **Adressen en verzenden**: waar je mail binnenkomt en vanaf welk adres je verstuurt
+- **Teksten**: wat er in je mails staat
+- **Vormgeving**: hoe je mails eruitzien
 
-## Afzender
+De pagina is op elk abonnement beschikbaar; alleen verzenden vanaf je eigen domein hoort bij Pro. Regels en vertrouwde afzenders voor inkomende mail hebben hun eigen plek in de Inbox; zie hieronder bij [Ontvangen: postbussen en regels](#ontvangen-postbussen-en-regels).
+
+## Adressen en verzenden
+
+### Verzendmethode
 
 De kaart **Verzendmethode** bepaalt welk adres je klanten als afzender zien. Er zijn drie opties.
 
@@ -36,21 +43,17 @@ Documenten worden altijd vanuit je eigen naam verstuurd. Is er nog geen afzender
 
 Is je eigen domein actief en heeft het meerdere adressen, dan verschijnt er een extra keuze: **Verstuur facturen vanaf**. Kies welk adres je klanten als afzender zien op facturen en offertes.
 
-## Je afsluiter
+### Je standaardadres
 
-Onder elke uitgaande e-mail bouwen we automatisch een afsluiter op met de gegevens die je hier invult:
+Kies bij **Jij verstuurt standaard vanaf** je eigen standaardadres. Dat adres staat klaar als je in de Inbox een nieuw bericht opstelt. Het geldt alleen voor jou.
 
-- **Support-e-mail**
-- **Website**
-- Social links (LinkedIn, X, Facebook, Instagram)
+### Postbussen
 
-Alles wat je invult nemen we mee; wat leeg blijft, laten we weg. Deze velden deel je met je bedrijfsgegevens: pas je ze hier of bij **Instellingen → Bedrijfsgegevens** aan, dan blijven beide gelijk.
+Onder **Postbussen** beheer je de postbussen op je gekoppelde domeinen: voeg een postbus toe om mail te ontvangen op een nieuw adres op je eigen domein, zet extra adressen bij een bestaande postbus, stuur inkomende mail door naar je huidige mailapp en koppel de mailapp zelf. Bestaande mail kun je in een bestaande postbus importeren. De postbusdelen horen bij de Inbox-functie; zonder die functie zie je ze niet. De verzendmethode zelf is er voor iedereen.
 
-## E-mailteksten
+### Bonnen doorsturen
 
-Voor factuur-, offerte- en herinneringsmails gebruikt MyCompanyDesk standaard, goed geteste teksten in je documenttaal. Liever je eigen formulering? Pas het bericht in het verzendvenster aan en vink **Gebruik deze tekst voortaan** aan: vanaf dan begint die documentsoort (facturen, offertes, herinneringen, creditnota's of huurfacturen) aan jouw tekst, in die taal. In het verzendvenster ga je ook weer terug naar de standaardtekst wanneer je wilt, en alleen de eigenaar van de werkruimte kan de standaardtekst veranderen. Zie [E-mailsjablonen](/faq/email-template).
-
-Voordat een document de deur uit gaat, kun je in het verzendvenster nog wel de ontvanger, het onderwerp en het bericht van die ene e-mail aanpassen, en kiezen of je de bekijkknop, downloadknop, PDF-bijlage en factuurregels meestuurt.
+De kaart **Bonnen doorsturen** verwijst je naar Uitgaven: je eigen adres voor bonnen en facturen van leveranciers staat bij **Uitgaven**, niet hier.
 
 ## Verzenden: limieten en controle
 
@@ -59,16 +62,34 @@ MyCompanyDesk houdt uitgaande post tegen die eruitziet als misbruik, zodat ons g
 - Er geldt een maximum aan het aantal ontvangers per bericht (aan, cc en bcc samen). Een nieuw account krijgt in de eerste periode een lager maximum; het exacte limiet staat in de foutmelding als je het overschrijdt. Splits het bericht in meerdere e-mails als je meer mensen wilt bereiken.
 - Berichten van nieuwe accounts kunnen soms even vastgehouden worden voor controle. Je ziet dan dat het bericht nog bekeken wordt en meestal is dat binnen een uur afgerond. Vul je KVK-nummer in bij je bedrijfsgegevens om deze controle voorgoed over te slaan.
 
-## Ontvangen: inboxinstellingen
+## Teksten
 
-Alles over het ontvangen van mail vind je op de instellingenpagina van de inbox (**Inbox → Instellingen**):
+### Standaardmail bij documenten
 
-- **Postbussen & adressen**: je adressen, aliassen, de naam die ontvangers bij je mail zien (de weergavenaam, of je bedrijfsnaam als die leeg is) en hoelang berichten bewaard blijven.
-- **Activiteit**: recente uitgaande aflevering, handig als je je afvraagt of een klant je factuur heeft ontvangen.
-- **Vertrouwde afzenders**: afzenders die nooit als spam worden gemarkeerd.
-- **AVG-gegevensverwijdering**: verwijder alle gesprekken en bijlagen van een specifiek adres (alleen voor beheerders).
+Factuur-, offerte-, herinnerings- en creditnotamails beginnen met een standaard, goed geteste tekst in de taal van het document. Onder **Standaardmail bij documenten** beheer je die teksten zelf: kies het soort mail (factuur, offerte, herinnering of creditnota) en de taal van de mail, schrijf je eigen onderwerp en bericht en sla op. Je eigen tekst krijgt het label **Eigen tekst**; met **Terug naar standaardtekst** haal je na een bevestiging de standaard terug.
 
-Regels voor inkomende mail vind je onder **Inbox → Instellingen → Regels & routing**.
+De klantnaam, het nummer, de bedragen en de data in het voorbeeld zijn voorbeelden: bij het versturen vullen we de gegevens van het echte document in, dus laat de placeholders daar staan. De zin over een aanvraag verschijnt alleen als de offerte uit een aanvraag komt.
+
+Als accountant kun je deze teksten lezen maar niet veranderen; de eigenaar van de werkruimte stelt de standaardtekst in en kan hem terugdraaien. Onderwerp en bericht van één e-mail pas je nog steeds in het verzendvenster aan. Zie [E-mailsjablonen](/faq/email-template) voor de details.
+
+Op het tabblad staan ook je standaard aanhef en afsluiting, die het opstelvenster van de Inbox alvast invullen voor berichten die je zelf schrijft.
+
+### Je afsluiter
+
+Onder elke uitgaande e-mail zetten we je bedrijfsnaam en de gegevens die je invult bij je bedrijfsgegevens. Wat leeg is, laten we weg. Diezelfde gegevens staan ook op je facturen en je website, en daarom pas je ze op één plek aan: bij **Instellingen → Bedrijfsgegevens**. Op het E-mail-tabblad zie je een voorbeeld van hoe je afsluiter eruitziet, met de link **Bedrijfsgegevens aanpassen**. Is er nog maar een bedrijfsnaam ingevuld, dan zegt het voorbeeld dat ook.
+
+## Vormgeving
+
+Het tabblad **Vormgeving** bepaalt de stijl en de kop van elke klantmail: kies één van de vijf stijlen (Klassiek, Modern, Minimaal, Warm of Zakelijk), stel de kop in en bekijk het voorbeeld. Het voorbeeld wordt op de server op dezelfde manier opgebouwd als de echte verzending, dus je ziet precies wat je klant krijgt. Met **Bekijk alles wat je klant van je krijgt** open je de complete mail zoals je klant hem krijgt, met kop, teksten en afsluiter bij elkaar.
+
+## Ontvangen: postbussen en regels
+
+Mail ontvangen regelde je tot nu toe op de instellingenpagina van de inbox. Die pagina is vervangen:
+
+- **Postbussen, extra adressen, doorsturen en importeren** vind je onder **Instellingen → E-mail → Adressen en verzenden**. Oude links naar de inboxinstellingen komen daar automatisch uit.
+- **Regels voor inkomende mail en vertrouwde afzenders** staan onder **Inbox → Regels**.
+- **Recente uitgaande aflevering** staat onder **Inbox → Overzicht**.
+- **AVG-gegevensverwijdering** (alle gesprekken en bijlagen van een specifiek adres verwijderen, alleen voor beheerders) staat onder **Instellingen → Gegevens wissen**.
 
 ## Gerelateerd
 

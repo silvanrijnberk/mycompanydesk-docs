@@ -1,7 +1,7 @@
 ---
 title: "Reports overview"
 description: "To view your reports: go to Reports, switch between the six views: Overview, P&L, Cash Flow, Clients, Forecast, and Income tax."
-last_verified: 2026-05-09
+last_verified: 2026-09-28
 chatbot:
   triggers:
     - "view reports"
@@ -26,8 +26,8 @@ chatbot:
 To view your reports:
 1. Go to Reports
 2. Switch between the six views: Overview, P&L, Cash Flow, Clients, Forecast, and Income tax
-3. Use the filters to set the period granularity (year, quarter, month, week, or day), pick the year, include open invoices, or compare with another year
+3. Use the filters to set the period granularity (year, quarter, month, week, or day) and pick the year. The switches **Include open invoices** and **Compare with another year** appear only on the views that use them
 
-There are no status or category filters on reports; the period and comparison filters apply across all views.
+There are no status or category filters on reports. The period and year filters apply across all views; the open-invoices and comparison switches show only on the views that read them.
 
 Tip: If a number looks wrong, verify the active period and comparison settings first.

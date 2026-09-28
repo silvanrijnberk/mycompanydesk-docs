@@ -1,15 +1,22 @@
 ---
 title: E-mail
-description: "Choisissez l'adresse d'envoi de vos factures et devis, et réglez la signature au bas de chaque message. Disponible dans tous les abonnements."
+description: "Choisissez depuis quelle adresse vos factures partent, ce que disent vos e-mails et leur apparence. Le hub réunit adresses, textes et mise en forme."
+last_verified: 2026-09-28
 ---
 
 # E-mail
 
-MyCompanyDesk envoie vos factures et devis par e-mail à vos clients. **Paramètres → E-mail** est l'endroit où vous gérez l'envoi : depuis quelle adresse vos documents partent, et la signature sous chaque message. La page est disponible dans tous les abonnements.
+MyCompanyDesk envoie vos factures et devis par e-mail à vos clients. **Paramètres → E-mail** réunit tout ce qui touche à votre courrier sur une page à trois onglets :
 
-La réception des e-mails (la boîte de réception) se configure ailleurs ; voir [Recevoir : paramètres de la boîte de réception](#recevoir-parametres-de-la-boite-de-reception) ci-dessous.
+- **Adresses et envoi** : où arrive votre courrier et depuis quelle adresse vous envoyez
+- **Textes** : ce que disent vos e-mails
+- **Mise en forme** : l'apparence de vos e-mails
 
-## Expéditeur
+La page est disponible dans tous les abonnements ; seul l'envoi depuis votre propre domaine fait partie de Pro. Les règles et les expéditeurs approuvés du courrier entrant ont leur propre emplacement dans la boîte de réception ; voir plus bas [Recevoir : boîtes mail et règles](#recevoir-boites-mail-et-regles).
+
+## Adresses et envoi
+
+### Méthode d'envoi
 
 La carte **Méthode d'envoi** détermine quelle adresse vos clients voient comme expéditeur. Il y a trois options.
 
@@ -36,39 +43,53 @@ Les documents sont toujours envoyés sous votre propre identité. Si aucun expé
 
 Quand votre propre domaine est actif et compte plusieurs adresses, un choix supplémentaire apparaît : **Envoyer les factures depuis**. Choisissez quelle adresse vos clients voient comme expéditeur sur les factures et les devis.
 
-## Votre signature
+### Votre adresse par défaut
 
-Le pied de page sous chaque e-mail sortant est construit automatiquement à partir des informations que vous remplissez ici :
+Sous **Vous envoyez par défaut depuis**, vous choisissez votre adresse d'envoi par défaut. Cette adresse est préremplie quand vous rédigez un nouveau message dans la boîte de réception. Elle ne s'applique qu'à vous.
 
-- **E-mail de support**
-- **Site web**
-- Liens sociaux (LinkedIn, X, Facebook, Instagram)
+### Boîtes mail
 
-Tout ce que vous remplissez est repris ; ce qui reste vide est simplement omis. Ces champs sont partagés avec les informations de votre entreprise : que vous les modifiiez ici ou sous **Paramètres → Informations de l'entreprise**, les deux restent synchronisés.
+Sous **Boîtes mail**, vous gérez les boîtes mail de vos domaines connectés : ajoutez une boîte mail pour recevoir le courrier sur une nouvelle adresse de votre propre domaine, ajoutez des adresses supplémentaires à une boîte existante, transférez le courrier entrant vers votre application mail actuelle et reliez l'application mail elle-même. Vous pouvez importer le courrier existant dans une boîte mail existante. Les sections boîtes mail demandent la fonction Boîte de réception ; sans elle, elles restent masquées. La méthode d'envoi reste accessible à tous.
 
-## Textes des e-mails
+### Transférer des justificatifs
 
-Les e-mails de facture, de devis et de rappel utilisent les textes standard et éprouvés de MyCompanyDesk, dans la langue de vos documents. Vous préférez votre propre formulation ? Ajustez le message dans la fenêtre d'envoi et cochez **Utiliser ce texte désormais** : à partir de là, ce type de document (factures, devis, relances, avoirs ou factures de loyer) part de votre texte, dans cette langue. La fenêtre d'envoi vous ramène aussi au texte standard quand vous voulez, et seul le propriétaire de l'espace de travail peut changer le texte par défaut. Voir [Modèles d'e-mail](/fr/faq/email-template).
-
-Avant l'envoi d'un document, la fenêtre d'envoi vous permet encore d'ajuster le destinataire, l'objet et le message de cet e-mail précis, et de choisir d'inclure le bouton de consultation, le bouton de téléchargement, la pièce jointe PDF et les lignes de facture.
+La carte **Transférer des justificatifs** renvoie vers les Dépenses : votre adresse pour les justificatifs et les factures des fournisseurs se trouve sous **Dépenses**, pas ici.
 
 ## Envoi : limites et contrôle
 
 MyCompanyDesk retient les messages sortants qui ressemblent à un abus, afin que notre domaine d'envoi partagé reste fiable pour tout le monde. Les tout nouveaux comptes ont donc des limites supplémentaires.
 
-- Il existe un nombre maximum de destinataires par message (à, cc et cci ensemble). Un compte nouvellement créé commence avec un maximum plus bas pendant les premiers jours; la limite exacte s'affiche dans le message d'erreur si vous la dépassez. Divisez le message en plusieurs e-mails si vous devez joindre plus de personnes.
+- Il existe un nombre maximum de destinataires par message (à, cc et cci ensemble). Un compte nouvellement créé commence avec un maximum plus bas pendant les premiers jours ; la limite exacte s'affiche dans le message d'erreur si vous la dépassez. Divisez le message en plusieurs e-mails si vous devez joindre plus de personnes.
 - Les messages des nouveaux comptes peuvent parfois être retenus pour vérification. Vous verrez alors que le message est encore examiné et c'est généralement terminé sous une heure. Renseignez votre numéro KVK dans vos informations d'entreprise pour passer ce contrôle de façon permanente.
 
-## Recevoir : paramètres de la boîte de réception
+## Textes
 
-Tout ce qui concerne la réception du courrier se trouve sur la page de paramètres de la boîte de réception (**Boîte de réception → Paramètres**) :
+### E-mail standard des documents
 
-- **Boîtes & adresses** : vos adresses, alias, le nom que vos destinataires voient sur vos e-mails (le nom affiché, ou le nom de votre entreprise s'il est vide) et la durée de conservation des messages.
-- **Activité** : les dernières livraisons sortantes, utile quand vous vous demandez si un client a bien reçu votre facture.
-- **Expéditeurs approuvés** : des expéditeurs qui ne sont jamais marqués comme spam.
-- **Suppression de données RGPD** : supprimez toutes les conversations et pièces jointes d'une adresse précise (administrateurs uniquement).
+Les e-mails de facture, de devis, de relance et d'avoir partent d'un texte standard et éprouvé, dans la langue du document. Sous **E-mail standard des documents**, vous gérez ces textes vous-même : choisissez le type d'e-mail (facture, devis, relance ou avoir) et la langue de l'e-mail, rédigez votre objet et votre message, puis enregistrez. Votre texte porte l'étiquette **Texte personnalisé** ; avec **Revenir au texte standard**, vous récupérez le texte d'origine après une confirmation.
 
-Les règles pour le courrier entrant se trouvent sous **Boîte de réception → Paramètres → Règles & routage**.
+Le nom du client, le numéro, les montants et les dates de l'exemple sont des exemples : à l'envoi, MyCompanyDesk insère les données du vrai document, laissez donc les espaces réservés à leur place. La phrase sur une demande n'apparaît que si le devis vient d'une demande.
+
+Comme comptable, vous pouvez lire ces textes mais pas les modifier ; le propriétaire de l'espace de travail définit le texte standard et peut y revenir. Objet et message d'un e-mail précis restent ajustables dans la fenêtre d'envoi. Voir [Modèles d'e-mail](/fr/faq/email-template) pour les détails.
+
+L'onglet garde aussi votre formule d'appel et votre formule de politesse standard, qui préremplissent la fenêtre de rédaction de la boîte de réception pour vos nouveaux messages.
+
+### Votre signature
+
+Le pied de page sous chaque e-mail sortant se construit automatiquement à partir des informations de votre entreprise : le nom de votre entreprise apparaît toujours, et les informations que vous remplissez (e-mail de support, site web, liens sociaux) s'ajoutent. Ce qui reste vide est omis. Les mêmes informations figurent aussi sur vos factures et votre site web, aussi les modifiez-vous à un seul endroit : **Paramètres → Informations de l'entreprise**. Sous E-mail, un aperçu montre à quoi ressemblera votre signature, avec le lien **Modifier les informations de l'entreprise**. Si seul le nom de l'entreprise est rempli pour l'instant, l'aperçu le dit aussi.
+
+## Mise en forme
+
+L'onglet **Mise en forme** règle le style et l'en-tête de chaque e-mail client : choisissez l'un des cinq styles (Classique, Moderne, Minimaliste, Chaleureux ou Professionnel), réglez l'en-tête et contrôlez l'aperçu. L'aperçu est construit sur le serveur de la même façon que l'envoi réel ; il montre donc exactement ce que reçoit votre client. **Voir tout ce que votre client reçoit de vous** ouvre l'e-mail complet tel que votre client le reçoit, avec en-tête, textes et signature réunis.
+
+## Recevoir : boîtes mail et règles
+
+La réception du courrier se gérait jusqu'ici sur la page de paramètres de la boîte de réception. Cette page a été remplacée :
+
+- **Boîtes mail, adresses supplémentaires, transfert et import** se trouvent sous **Paramètres → E-mail → Adresses et envoi**. Les anciens liens vers les paramètres de la boîte de réception arrivent là automatiquement.
+- **Les règles du courrier entrant et les expéditeurs approuvés** se trouvent sous **Boîte de réception → Règles**.
+- **Les dernières livraisons sortantes** se trouvent sous **Boîte de réception → Aperçu**.
+- **La suppression de données RGPD** (supprimer toutes les conversations et pièces jointes d'une adresse précise, administrateurs uniquement) se trouve sous **Paramètres → Gegevens wissen**.
 
 ## Voir aussi
 

@@ -1,7 +1,7 @@
 ---
 title: Quote status
 description: "Quote statuses explained: draft: still editable, not sent to the customer yet, sent: delivered to the customer, accepted: the customer agreed to the quote."
-last_verified: 2026-07-02
+last_verified: 2026-09-28
 chatbot:
   triggers: ["quote status", "quote statuses", "quote lifecycle", "draft open sent canceled", "offerte status", "angebotsstatus", "statut devis", "estado cotizacion", "status proposta"]
   actions:
@@ -19,5 +19,7 @@ Quote statuses explained:
 On the quote detail page, the current stage is shown as a lifecycle card: Draft → Sent, then Accepted or Declined as a decision branch. Expired and canceled quotes are shown as terminal outcomes at the end of the flow.
 
 When you convert an accepted quote to an invoice, the quote stays Accepted and gets a "Converted to invoice" marker.
+
+On the signing page, the customer gets a plain-language explanation when a quote can no longer be signed: a quote past its valid-until date asks the customer to request a new quote, a quote already turned into an invoice or agreement leaves nothing to do, and a quote that was already accepted can no longer be declined. In that last case the page invites the customer to contact you about a change of mind.
 
 Tip: Use the quote list filters to check drafts and expired quotes first.
