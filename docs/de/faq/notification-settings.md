@@ -1,7 +1,7 @@
 ---
 title: "Benachrichtigungseinstellungen"
 description: "So verwalten Sie Ihre Benachrichtigungseinstellungen: Themen ein- oder ausschalten und Push-Benachrichtigungen aktivieren."
-last_verified: 2026-08-21
+last_verified: 2026-09-28
 chatbot:
   triggers:
     - "notifications"
@@ -34,6 +34,8 @@ So verwalten Sie Ihre Benachrichtigungseinstellungen:
 3. Auf derselben Seite aktivieren Sie auch Push-Benachrichtigungen für das Gerät, das Sie gerade nutzen
 4. Wenn Sie die Browser-Abfrage geschlossen haben, klicken Sie oben in der App auf die Benachrichtigungsglocke, wählen Sie **Weitere Optionen** (drei Punkte) und klicken Sie dann auf **Aktivieren**, um Push-Benachrichtigungen später nachzuholen
 5. Änderungen werden automatisch gespeichert
+
+Push-Benachrichtigungen sind an Ihre Sitzung gebunden. Sobald Sie sich abmelden, empfängt das Gerät Ihre Benachrichtigungen nicht mehr; sobald Sie sich wieder anmelden, registriert sich die App oder der Browser erneut für Benachrichtigungen.
 
 ## Die Benachrichtigungsliste
 

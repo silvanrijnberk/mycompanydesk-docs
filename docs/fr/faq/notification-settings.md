@@ -1,7 +1,7 @@
 ---
 title: "Paramètres de notification"
 description: "Pour gérer vos paramètres de notification : activez ou désactivez les sujets et les notifications push."
-last_verified: 2026-08-21
+last_verified: 2026-09-28
 chatbot:
   triggers:
     - "notifications"
@@ -34,6 +34,8 @@ Pour gérer vos paramètres de notification :
 3. Sur la même page, vous pouvez aussi activer les notifications push pour l'appareil que vous utilisez
 4. Si vous avez fermé la demande du navigateur, cliquez sur la cloche de notifications en haut de l'application, choisissez **Plus d'options** (trois points), puis sélectionnez **Activer** pour activer les notifications push plus tard
 5. Les modifications sont enregistrées automatiquement
+
+Les notifications push sont liées à votre session. Dès que vous vous déconnectez, l'appareil cesse de recevoir vos notifications ; dès que vous vous reconnectez, l'application ou le navigateur s'inscrit de nouveau aux notifications.
 
 ## La liste de notifications
 

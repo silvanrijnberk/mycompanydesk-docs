@@ -1,7 +1,7 @@
 ---
 title: "Aperçu des rapports"
 description: "Pour consulter vos rapports : allez dans Rapports dans la barre latérale, puis choisissez la vue et la période à afficher."
-last_verified: 2026-05-09
+last_verified: 2026-09-28
 chatbot:
   triggers:
     - "view reports"
@@ -26,8 +26,8 @@ chatbot:
 Pour consulter vos rapports :
 1. Allez dans Rapports
 2. Passez d'une vue à l'autre parmi les six : l'aperçu, Compte de résultat, Trésorerie, Clients, Prévision et Impôt sur le revenu
-3. Utilisez les filtres pour choisir le découpage de la période (année, trimestre, mois, semaine ou jour), sélectionner l'année, inclure les factures ouvertes ou comparer avec une autre année
+3. Utilisez les filtres pour choisir le découpage de la période (année, trimestre, mois, semaine ou jour) et sélectionner l'année. Les interrupteurs **Inclure les factures ouvertes** et **Comparer avec une autre année** n'apparaissent que dans les vues qui les utilisent
 
-Les rapports n'ont pas de filtres de statut ou de catégorie ; les filtres de période et de comparaison s'appliquent à toutes les vues.
+Les rapports n'ont pas de filtres de statut ou de catégorie. Les filtres de période et d'année s'appliquent à toutes les vues ; les interrupteurs factures ouvertes et comparaison n'apparaissent que dans les vues qui les lisent.
 
 Astuce : si un chiffre semble incorrect, vérifiez d'abord les réglages actifs de période et de comparaison.

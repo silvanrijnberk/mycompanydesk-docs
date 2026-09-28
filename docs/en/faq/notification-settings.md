@@ -1,7 +1,7 @@
 ---
 title: "Notification settings"
 description: "To manage your notification settings: go to Settings > Meldingen (notifications), switch the notification topics on or off, and turn on push notifications."
-last_verified: 2026-08-21
+last_verified: 2026-09-28
 chatbot:
   triggers:
     - "notifications"
@@ -34,6 +34,8 @@ To manage your notification settings:
 3. On the same page you can also turn on push notifications for the device you are using
 4. If you dismissed the browser prompt, click the notification bell at the top of the app, choose **More options** (three dots), and select **Turn on** to enable push notifications later
 5. Changes save automatically
+
+Push notifications are bound to your session. When you log out, the device stops receiving your notifications right away; when you sign in again, the app or browser registers for notifications again.
 
 ## The notification list
 

@@ -1,16 +1,22 @@
 ---
 title: Email
-description: "Choose which address your invoices and quotes go out from and set the sign-off under every message. Available on every plan."
-last_verified: 2026-09-26
+description: "Choose which address your invoices go out from, what your emails say and how they look. The email hub bundles addresses, texts and design."
+last_verified: 2026-09-28
 ---
 
 # Email
 
-MyCompanyDesk emails your invoices and quotes to your customers. **Settings → Email** is where you control the sending side: which address your documents go out from, and the sign-off under every message. The page is available on every plan.
+MyCompanyDesk emails your invoices and quotes to your customers. **Settings → Email** bundles everything about your mail on one page with three tabs:
 
-Receiving email (the Inbox) is configured elsewhere; see [Receiving: Inbox settings](#receiving-inbox-settings) below.
+- **Addresses and sending**: where your mail arrives and which address you send from
+- **Texts**: what your emails say
+- **Design**: how your emails look
 
-## Sender
+The page is available on every plan; only sending from your own domain is part of Pro. Rules and trusted senders for incoming mail have their own place in the Inbox; see [Receiving: mailboxes and rules](#receiving-mailboxes-and-rules) below.
+
+## Addresses and sending
+
+### Delivery method
 
 The **Delivery method** card decides which address your customers see as the sender. There are three options.
 
@@ -37,21 +43,17 @@ Documents are always sent from your own identity. If no sender is set up yet, My
 
 When your own domain is active and has more than one address, an extra picker appears: **Send invoices from**. Choose which of your addresses customers see as the sender on invoices and quotes.
 
-## Your sign-off
+### Your default address
 
-The footer under every outgoing email is built automatically from the details you fill in here:
+Under **You send from this address by default** you pick your own default sending address. That address is filled in when you write a new message in the Inbox, and the choice applies only to you.
 
-- **Support email**
-- **Website**
-- Social links (LinkedIn, X, Facebook, Instagram)
+### Mailboxes
 
-Every item you fill in is included; anything left empty is simply skipped. These fields are shared with your company details, so editing them here or under **Settings → Company details** keeps both in sync.
+Under **Mailboxes** you manage the mailboxes on your connected domains: add a mailbox to receive mail on a new address on your own domain, add extra addresses to an existing mailbox, forward incoming mail to your current mail app, and connect the mail app itself. You can import existing mail into an existing mailbox. The mailbox sections need the Inbox permission; without it they stay hidden, and the sending part remains available to everyone.
 
-## Email texts
+### Forwarding receipts
 
-Invoice, quote, and reminder emails use MyCompanyDesk's standard, well-tested texts, in your document language. Prefer your own wording? Adjust the message in the send window and tick **Use this text from now on**: from then on, that document type (invoices, quotes, reminders, credit notes, or rent invoices) starts from your text, in that language. The send window also switches you back to the standard text whenever you like, and only the workspace owner can change the default. See [Email templates](/en/faq/email-template).
-
-Before a document goes out, the send window still lets you adjust the recipient, subject, and message for that one email, and choose whether to include the view button, download button, PDF attachment, and invoice lines.
+The **Forwarding receipts** card points to Expenses: your own address for receipts and supplier invoices lives under **Expenses**, not here.
 
 ## Sending: limits and checks
 
@@ -60,16 +62,32 @@ MyCompanyDesk blocks outgoing mail that looks like abuse, so our shared sending 
 - There is a maximum number of recipients per message (to, cc and bcc combined). A new account starts with a lower maximum for its first period; the exact limit is shown in the error if you exceed it. Split the message into multiple emails if you need to reach more people.
 - Messages from new accounts can sometimes be held for review. You will see that the message is still being checked, and it usually clears within an hour. Add your KVK number in your company details to skip this check permanently.
 
-## Receiving: Inbox settings
+## Texts
 
-Everything about receiving mail lives on the Inbox settings page (**Inbox → Settings**):
+Invoice, quote, reminder, and credit note emails start from a standard, well-tested text in the language of the document. Under **Standard email for documents** you manage those texts yourself: pick the type of email (invoice, quote, reminder, or credit note) and the email language, write your own subject and message, and save. Your own text carries a **Your own text** badge, and saving it means every next email of that type starts from your wording. **Back to standard text** restores the standard wording, after a confirmation.
 
-- **Mailboxes & addresses**: your addresses, aliases, the name recipients see on your mail (the display name, or your company name when it is empty), and how long messages are kept.
-- **Activity**: recent outbound delivery, useful when you wonder whether a customer received your invoice.
-- **Trusted senders**: senders that are never marked as spam.
-- **GDPR data removal**: delete all conversations and attachments from a specific address (admins only).
+The customer name, number, amounts, and dates in the sample are examples: when you send, MyCompanyDesk fills in the details of the real document, so leave the placeholders where they belong. The sentence about a request only appears when the quote comes from a request.
 
-Rules for incoming mail live under **Inbox → Settings → Rules & routing**.
+As an accountant you can read these texts but not change them; the workspace owner sets and resets the standard text. You can still adjust subject and message for one email in the send window. See [Email templates](/en/faq/email-template) for the details.
+
+The tab also holds your standard greeting and sign-off, which prefill the compose window of the Inbox for new messages you write yourself.
+
+### Your sign-off
+
+The sign-off under every outgoing email is built automatically from your company details: your company name always appears, and the details you fill in (support email, website, social links) join it. Anything left empty is left out. The same details also appear on your invoices and your website, so there is one place to edit them: **Settings → Company details**. Under Email you get a preview of how your sign-off will look, with an **Edit company details** link. If only the company name is filled in so far, the preview says so.
+
+## Design
+
+The **Design** tab sets the style and header of every customer email: pick one of the five styles (Classic, Modern, Minimal, Warm, or Professional), set the header, and check the preview. The preview is built on the server the same way as the real sending, so it shows exactly what your customer receives. **See everything your customer receives from you** opens the complete email as the customer gets it, with header, texts, and sign-off together.
+
+## Receiving: mailboxes and rules
+
+Receiving mail used to be managed on the Inbox settings page. That page has been replaced:
+
+- **Mailboxes, extra addresses, forwarding, and importing** are under **Settings → Email → Addresses and sending**. Old links to the inbox settings page land there automatically.
+- **Rules for incoming mail and trusted senders** live under **Inbox → Rules**.
+- **Recent outbound delivery** is under **Inbox → Overview**.
+- **GDPR data removal** (delete all conversations and attachments from a specific address, admins only) lives under **Settings → Gegevens wissen**.
 
 ## Related
 

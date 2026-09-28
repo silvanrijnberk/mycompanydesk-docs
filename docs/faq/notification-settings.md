@@ -1,7 +1,7 @@
 ---
 title: "Meldingsinstellingen"
 description: "Om je meldingsinstellingen te beheren: ga naar Instellingen > Meldingen, zet de meldingsonderwerpen aan of uit en schakel pushmeldingen in."
-last_verified: 2026-08-21
+last_verified: 2026-09-28
 chatbot:
   triggers:
     - "notifications"
@@ -34,6 +34,8 @@ Om je meldingsinstellingen te beheren:
 3. Op dezelfde pagina zet je ook pushmeldingen aan voor het apparaat dat je gebruikt
 4. Heb je de browservraag weggeklikt? Klik dan op het belletje voor meldingen bovenaan de app, kies **Meer opties** (drie stippen) en tik op **Aanzetten** om pushmeldingen later alsnog in te schakelen
 5. Wijzigingen worden automatisch opgeslagen
+
+Pushmeldingen hangen aan je sessie. Zodra je uitlogt, stopt het apparaat met het ontvangen van je meldingen; zodra je opnieuw inlogt, registreert de app of browser zich weer voor meldingen.
 
 ## De meldingslijst
 
