@@ -1,7 +1,7 @@
 ---
 title: AI Features
 description: "Every AI surface in MyCompanyDesk, what it does and which provider handles it. The default chain is EU-only: Gemini on Vertex AI europe-west1 first."
-last_verified: 2026-05-18
+last_verified: 2026-09-28
 ---
 
 # AI Features
@@ -23,7 +23,7 @@ The assistant icon in the topbar opens a chat panel that knows which page you ar
 
 ### Ask a human (Vraag het Sil)
 
-Under every assistant panel sits a row titled "Liever een mens?" (Rather ask a person?): the people who currently answer questions, with name and photo, next to a WhatsApp button. The assistant stays the fastest route for most questions; this row keeps a human one click away.
+Under the contextual guide sits a row titled "Liever een mens?" (Rather ask a person?): the people who currently answer questions, with name and photo, next to a WhatsApp button. The assistant stays the fastest route for most questions; this row keeps a human one click away. The Financial Assistant panel on Office is a chat about your own figures and for drafting quotes and invoices, not a helpdesk, so it does not show this row up front: it appears once the conversation turns into a help question (the answer comes from the FAQ or the help pages) or the assistant runs into an error.
 
 Choosing one of them opens a short form: your question, plus a checkbox, ticked by default, to include your conversation with the assistant. Sending turns the question into a regular support ticket, and the answer arrives in the app and by email, with the promise of an answer within one working day, usually within a few hours. A link to the ticket appears after sending. The WhatsApp button opens a chat with a short introduction already filled in: who you are, which page your question is about, and the question itself.
 

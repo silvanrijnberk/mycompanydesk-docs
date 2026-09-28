@@ -1,7 +1,7 @@
 ---
 title: Cookies and analytics
 description: "How MyCompanyDesk handles cookies, local storage, analytics and session recordings, and how to manage your consent."
-last_verified: 2026-08-20
+last_verified: 2026-09-28
 ---
 
 # Cookies and analytics
@@ -12,13 +12,13 @@ This page explains how MyCompanyDesk uses cookies, local storage, and analytics.
 
 The marketing site shows a cookie-consent banner when you first visit. The banner asks whether we may place analytics storage. You can change your choice at any time via the banner.
 
-Analytics is opt-in. Until you accept, the marketing site does not initialize analytics, does not send any pageview or event, and does not store an analytics identifier. This means choosing "Alleen essentieel" (essential only) leaves no analytics trail.
+Analytics that stores an identifier is opt-in. Until you accept, the marketing site only counts, anonymously, how often a page is viewed and which website or search engine visitors came from. That count stores nothing on your device, uses no identifier, makes no recordings and does not keep your IP address. Choosing "Alleen essentieel" (essential only) therefore leaves no analytics data on your device.
 
 If you accept, the site starts analytics and stores an anonymous analytics identifier in your browser's `localStorage` under the key `mcd_phid`. This identifier is only used to understand how visitors move through the site. It is not linked to your account or email address.
 
 With your consent we may also record sessions of your visit to the marketing site. These recordings help us see where the site can improve. Anything you type into input fields is masked in those recordings and is not readable to us. The data is pseudonymised.
 
-If you later decline via the banner, or if your browser sends a Do Not Track (DNT) signal, no analytics identifier is stored and no new analytics events are sent. The banner may still appear because it also covers non-analytics cookies.
+If you later decline via the banner, the anonymous count keeps running, but no analytics identifier is stored and no recordings are made. If your browser sends a Do Not Track (DNT) signal, we measure nothing at all, not even that anonymous count. The banner may still appear because it also covers non-analytics cookies.
 
 ## From marketing site to app
 
