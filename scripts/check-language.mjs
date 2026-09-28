@@ -32,7 +32,7 @@ const DE_ASCII_UMLAUT = /(?<![\p{L}\d])\p{L}{3,}(?!\d)(?:(?<![aeq])ue|ae|oe)\p{L
 const DE_ASCII_SZ = /(?<!\p{L})(?:einschliesslich|abschliessen|schliesslich|anschliessend|schliesst|ausserdem|ausserhalb|weiss|gross|grosse|groesse|heisst|regelmaessig|gemaess)(?!\p{L})/giu
 const DE_DU = /(?<!\p{L})(?:du|dich|dir|dein|deine[mnrs]?|deiner)(?!\p{L})/giu
 // The German app UI is itself in the du-form, so these labels are quoted, not written.
-const DE_UI_LABELS = ['Über dich', 'Deine Daten', 'Dein Unternehmen', 'Deine Website und Domain', 'Dein Abonnement']
+const DE_UI_LABELS = ['Über dich', 'Deine Daten', 'Dein Unternehmen', 'Deine Website und Domain', 'Dein Abonnement', 'Kommst du nicht weiter?']
 
 // French words that always carry an accent or a cedilla.
 const FR_STRIPPED = new Set(`numero numeros modele modeles meme memes depense depenses defaut deja creer creez

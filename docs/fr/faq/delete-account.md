@@ -15,6 +15,6 @@ Pour supprimer votre compte :
 3. Sous "Supprimer définitivement le compte", cliquez sur "Supprimer"
 4. Confirmez avec votre mot de passe actuel. Cette action est définitive
 
-Sur la même page, vous pouvez aussi résilier uniquement votre abonnement payant. Vous ne payez alors plus rien, mais votre compte et vos données sont conservés, car la législation fiscale néerlandaise impose de garder votre comptabilité pendant 7 ans. Si vous supprimez votre compte, votre compte et toutes vos données disparaissent définitivement.
+Sur la même page, vous pouvez aussi résilier uniquement votre abonnement payant. Vous ne payez alors plus rien, mais votre compte et vos données sont conservés, car la législation fiscale néerlandaise impose de garder votre comptabilité pendant 7 ans. Avant que vous ne confirmiez, la page liste ce qui continue de fonctionner et ce qui s'arrête, pour que vous sachiez ce que vous choisissez. Si vous supprimez votre compte, votre compte et toutes vos données disparaissent définitivement.
 
 Important : la suppression du compte est irréversible. Exportez tout ce dont vous avez besoin avant de continuer.

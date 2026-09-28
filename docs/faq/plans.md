@@ -34,7 +34,7 @@ Deze functies staan in onze billing-config: [apps/api/src/modules/billing/plans.
 **Upgraden en downgraden**
 - Je kunt altijd wisselen tussen Desk en Office.
 - Na een upgrade zijn de nieuwe functies meteen beschikbaar.
-- Als je van Office teruggaat naar Desk, werken Office-only functies niet meer: nieuwe terugkerende facturen of uitgaven worden niet meer aangemaakt, je bankkoppeling importeert niet meer en je inbox op een eigen domein verzendt of ontvangt geen berichten. Bestaande sjablonen, eerder aangemaakte facturen of uitgaven en andere data blijven in je werkruimte staan.
+- Als je van Office teruggaat naar Desk, werken Office-only functies niet meer: je bankkoppeling importeert niet meer, nieuwe terugkerende facturen of uitgaven worden niet meer aangemaakt, het klaarzetten van je btw-aangifte en jaarrekening stopt en nieuwe mail versturen vanaf je eigen adres kan niet meer. Mail blijft binnenkomen en lezen en beantwoorden kan, je website blijft op je eigen domein draaien en je data blijft in je werkruimte staan. De opzegpagina zet er precies bij wat blijft werken en wat stopt voordat je beslist.
 - Als je gratis proefperiode van 60 dagen Office afloopt zonder abonnement, gaat je werkruimte automatisch naar Desk.
 
 **Facturatie**

@@ -105,6 +105,8 @@ Wenn ein Arbeitsbereich auf Gratis zurückfällt, bleiben die öffentliche Websi
 
 Ein bezahltes Abonnement endet nie mehr still. Sobald es endet, zeigt die App eine Benachrichtigung und schickt eine E-Mail (mit dem Titel "Office wurde beendet"), in zwei Varianten: eine bei einer fehlgeschlagenen Zahlung, eine bei einer Kündigung, die Sie selbst veranlasst haben. Nach einer fehlgeschlagenen Zahlung können Sie sofort wieder abonnieren; der Checkout schickt Sie nicht länger zum Stripe-Portal für ein Abonnement, das nicht mehr existiert.
 
+Sie können auch selbst zu Desk wechseln, während Office läuft: Auf der Tarifseite trägt die Desk-Karte einen Link „Zu Desk wechseln“. Er öffnet die Kündigungsseite (/settings/opzeggen), die auflistet, was weiterläuft und was stoppt, an welchem Datum, bevor Sie die Kündigung im Stripe-Portal bestätigen.
+
 Ihre eigene Domain bleibt nach dem Ablauf des Tarifs auf der Domains-Seite sichtbar: Name, Status und Umzugscode bleiben lesbar, daneben erscheint ein Upgrade-Hinweis, denn Änderungen an den Domain-Einstellungen brauchen wieder das bezahlte Abonnement.
 
 ### Teamzugang

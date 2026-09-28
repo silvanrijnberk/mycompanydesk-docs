@@ -105,6 +105,8 @@ Als een werkruimte naar Gratis vervalt, blijven de openbare website en sitebouwe
 
 Een betaald abonnement stopt nooit meer in stilte. Zodra het stopt, toont de app een melding en verstuurt ze een e-mail (met als kop "Office is gestopt"), in twee varianten: één bij een mislukte betaling en één bij een opzegging die je zelf vroeg. Na een mislukte betaling kun je meteen weer abonneren; de checkout stuurt je niet langer door naar het Stripe-portaal voor een abonnement dat er niet meer is.
 
+Je kunt ook zelf naar Desk teruggaan terwijl Office nog loopt: op de abonnementspagina staat op de Desk-kaart een link Overstappen naar Desk. Die opent de opzegpagina (/settings/opzeggen), die eerst bijzet wat blijft werken en wat stopt, op welke datum, voordat je de opzegging in het Stripe-portaal bevestigt.
+
 Je eigen domein blijft na het aflopen van het abonnement zichtbaar op de Domeinen-pagina: naam, status en verhuiscode blijven leesbaar, met een upgrade-aanwijzing ernaast, want domeininstellingen veranderen kan pas weer met het betaalde abonnement.
 
 ### Teamtoegang
