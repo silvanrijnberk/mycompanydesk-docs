@@ -74,7 +74,7 @@ The tab also holds your standard greeting and sign-off, which prefill the compos
 
 ### Your sign-off
 
-The sign-off under every outgoing email is built automatically from your company details: your company name always appears, and the details you fill in (support email, website, social links) join it. Anything left empty is left out. The same details also appear on your invoices and your website, so there is one place to edit them: **Settings → Company details**. Under Email you get a preview of how your sign-off will look, with an **Edit company details** link. If only the company name is filled in so far, the preview says so.
+The sign-off under every outgoing email is built automatically from your company details: your company name always appears, and the details you fill in (support email, website, social links) join it. Anything left empty is left out. The same details also appear on your invoices and your website, so there is one place to edit them: **Settings → Company details**. Under Email you get a preview of your sign-off, with an **Edit company details** link. The preview is built on the server the same way as the real sending, so it shows the footer exactly as your customer receives it: phone, address, KvK number, your photo and the link to your site appear in it as soon as you fill them in under Company details.
 
 ## Design
 

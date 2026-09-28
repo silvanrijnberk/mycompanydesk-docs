@@ -69,6 +69,12 @@ Einige Seiten erscheinen nur über die Suche, damit die Hauptliste ruhig bleibt:
 - **Bankverbindung**: verbindet Ihre Bank, damit eingehende Transaktionen automatisch als Ausgaben erkannt werden.
 - **API-Schlüssel** und **Webhooks**: Einstellungen für Entwickler, sichtbar, wenn die öffentliche API auf Ihrem Konto verfügbar ist.
 
+## Die Schaltfläche Einstellungen auf einer Arbeitsseite
+
+Seiten, die Dinge zeigen, die anderswo eingestellt werden, tragen in der oberen Leiste die Schaltfläche **Einstellungen**: Rechnungen, Angebote, wiederkehrende Rechnungen, Verträge, Kunden, Ihr Aanbod, Ausgaben, Buchhaltung, Steuern, den Posteingang, Newsletter, Ihre Website sowie Stunden und Kalender. Öffnen Sie sie, zeigt ein Panel genau die Einstellungen, die über diese Seite gehen, jeweils mit dem aktuellen Wert daneben: das Zahlungsziel mit Erinnerungen, die nächste Rechnungsnummer, die Anzahlung, ob ein Logo oder eine IBAN hinterlegt ist, Ihren Steuersatz und wie oft Sie sich melden. Eine Einstellung ohne Wert zeigt stattdessen die Aktion Ergänzen, damit eine leere Stelle sofort auffällt. Ein Klick auf eine Zeile bringt Sie zur Karte auf dem Einstellungsblatt, und die Zurück-Schaltfläche dort bringt Sie an Ihren alten Ort zurück. **Alle Einstellungen** öffnet die vollständige Übersicht unter `/settings`.
+
+Die Schaltfläche steht nicht auf Neu- und Bearbeiten-Formularen und nicht auf den Einstellungsseiten selbst. Eine Seite, deren Inhalt nirgends eingestellt wird, bekommt sie auch nicht.
+
 ## Wo finde ich...
 
 | Ich möchte... | Öffnen Sie |

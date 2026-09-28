@@ -301,6 +301,16 @@ Sie können einen geöffneten Thread über die Toolbar als ungelesen markieren. 
 
 Wird ein Thread aus der Liste in den Papierkorb, Spam, Geschlossen- oder Snoozed-Status verschoben, während das Lesefenster geöffnet ist, schließt es sich automatisch. So bleibt die Detailansicht immer mit dem Ordner synchron, den Sie gerade betrachten, und Sie schreiben keine Antwort auf einen Thread, der den aktuellen Bereich bereits verlassen hat.
 
+#### Spamfilter
+
+Jede eingehende E-Mail läuft durch einen Spamfilter, bevor irgendetwas anderes damit passiert: eine große Menge Regeln zu Headern, Links und Inhalten, DNS-Sperrlisten, Phishing-Feeds und ein statistischer Filter, der aus den Schaltflächen Spam und Kein Spam lernt. Vom Filter als Spam eingestufte Mail erreicht Ihren Posteingang gar nicht erst: sie landet direkt im Ordner Spam, mit den Gründen dazu. Mail, bei der der Filter unsicher ist, bleibt im Posteingang und trägt oben im Lesefenster einen roten Hinweis ("Das könnte Spam sein.") mit den Gründen darunter und der Schaltfläche Als Spam markieren daneben.
+
+Die Gründe sind konkret: der Absender gibt sich als bekannter Name aus, mailt aber von einer anderen Domain, ein Link zeigt auf eine bekannte Phishing-Seite, die Antwortadresse steht auf einer Liste missbrauchter Adressen oder führt zu einer anderen Adresse als die des Absenders, jemand von außen nennt Ihre eigene Domain im Betreff, ein Link führt zu einem anonymen Hosting-Dienst statt zur Website des Absenders, die Domain des Absenders existiert erst seit Kurzem, die Domainendung wird vor allem für Spam genutzt, ein Link oder der sendende Server steht auf einer Spamliste, die E-Mail wurde nicht wirklich von der Domain gesendet, die als Absender angegeben ist, sie enthält verborgenen Text, oder sie ähnelt E-Mails, die zuvor schon als Spam markiert wurden. Die stärksten Gründe stehen oben.
+
+Dazu ändern sich noch zwei Dinge. Bei einem als verdächtig eingestuften Thread bleibt die KI-Zusammenfassung verborgen, damit eine Phishing-Mail nie in unseren Worten wiedergegeben wird. Und wenn Sie einen Thread als Kein Spam markieren, kehrt er in Ihren Posteingang zurück und der Absender kommt auf die Vertrauensliste, damit die nächste Nachricht normal ankommt.
+
+Neben dem Filter läuft die KI-Einschätzung weiter, aber sie kann ein Urteil nur erhöhen, nie senken, und sie stuft nie selbst echte Mail als Spam ein. Der Filter selbst darf nie Mail kosten: ist er nicht erreichbar oder zu langsam, kommt die Nachricht genau so an wie zuvor.
+
 #### Logo oder Foto beim Absender
 
 Eingehende E-Mail zeigt das Gesicht des Absenders zu jeder Nachricht, in der Thread-Liste und im Lesefenster. MyCompanyDesk sucht an drei Stellen nach einem Logo oder Foto, in dieser Reihenfolge: das Logo, das die Domain des Absenders selbst über BIMI veröffentlicht (derselbe Mechanismus wie bei Gmail), das Gravatar-Foto, das zu der Adresse gehört, und das Icon der eigenen Website des Absenders. Bei kostenlosen Mail-Domains wie Gmail, Outlook und iCloud wird nur Gravatar abgefragt, damit nicht jeder Gmail-Absender dasselbe Gmail-Logo erhält.
@@ -319,7 +329,9 @@ Der Posteingang bleibt die Quelle der Wahrheit. Lesen, Senden, Ordner und Lesest
 
 Das Fenster begleitet Sie pro Mail-App, mit einer Schritt-für-Schritt-Anleitung für Apple Mail, Outlook, die Gmail-App und Thunderbird. Für Apple-Geräte laden Sie ein Installationsprofil herunter, das die Servereinstellungen für Sie einträgt, und Thunderbird findet die Server von selbst. In der Gmail-App fügen Sie das Konto mit **Persönlich (IMAP)** hinzu; Gmail im Browser ruft keine anderen Konten ab, aber Sie verbinden ihn für das Senden.
 
-Ihr App-Passwort legen Sie im selben Fenster an und sehen es einmal. Es gilt für ein- und ausgehende Post. Widerrufen trennt die Verbindung zur Mail-App sofort.
+Ein Passwort funktioniert, bis Sie es selbst widerrufen, also legen Sie eines pro Gerät an und widerrufen genau das Gerät, das sich falsch verhält; Widerrufen trennt die Verbindung zur Mail-App sofort. Kopieren Sie das Passwort und fügen Sie es in Ihre Mail-App ein, statt es abzutippen, für eingehend und ausgehend. Neben dem Passwort zeigt das Fenster einen QR-Code, den Sie mit der Kamera Ihres Telefons scannen, um das Passwort dort zu kopieren; der Code erscheint, wenn Sie das Passwort im Browser am Computer anlegen, nicht in der App auf dem Telefon selbst.
+
+Gelingt die Anmeldung aus Ihrer Mail-App nicht, sagt das Fenster, woran es lag. Oben steht die zuletzt abgelehnte Anmeldung mit Tag und Uhrzeit und was zu tun ist, und bei jedem App-Passwort in der Liste steht die letzte Ablehnung mit einem kurzen Grund. Eine Ablehnung verschwindet, sobald die Anmeldung danach wieder gelingt. Die Gründe, die der Server melden kann: das Passwort wurde widerrufen (tragen Sie ein Passwort aus der Liste unten in Ihre Mail-App ein, für eingehend und ausgehend, oder legen Sie unten ein neues an), im Passwort liegt ein Tippfehler (fügen Sie es erneut ein, nicht abtippen), Ihre Mail-App verwendet Ihr altes Passwort oder Ihr MyCompanyDesk-Passwort statt eines App-Passworts, der Benutzername stimmt nicht (tragen Sie die vollständige Postfachadresse ein), Ihr Konto hat derzeit keinen Zugriff auf die Inbox, oder die Inbox ist für diese Domain ausgeschaltet.
 
 Ob Lesen über IMAP und POP3 eingeschaltet ist, kann je nach Server unterschiedlich sein. Ist Lesen noch nicht verfügbar, sagt das Fenster das, und Senden können Sie trotzdem einrichten. POP3 holt nur den Posteingangsordner, darum ist IMAP die bessere Wahl, wenn Ihre App es unterstützt.
 
