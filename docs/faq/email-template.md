@@ -26,7 +26,7 @@ Je stelt je eigen standaardtekst op twee plekken in:
 
 Wat je altijd kunt aanpassen:
 1. De afzender: ga naar Instellingen → E-mail → Adressen en verzenden en kies je eigen domein (Pro), Gmail of Outlook
-2. Je afsluiter: vul je support-e-mail, website en social links in bij Instellingen → Bedrijfsgegevens; die verschijnen onder elke mail die je verstuurt, en op je facturen en je website
+2. Je afsluiter: vul je support-e-mail, website en social links in bij Instellingen → Bedrijfsgegevens; die verschijnen onder elke mail die je verstuurt, en op je facturen en je website. Je keurmerken (STEK, VCA, CE en meer) staan er ook onder, zodra je ze toevoegt en **Tonen onder je e-mails** aanstaat
 3. Een losse mail: in het verzendvenster pas je de ontvanger, het onderwerp en het bericht aan voordat de mail de deur uit gaat
 
 Tip: De gegevens in je afsluiter staan ook op je facturen en je website; invullen bij Bedrijfsgegevens houdt elke mail compleet.

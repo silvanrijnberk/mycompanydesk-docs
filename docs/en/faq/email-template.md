@@ -27,7 +27,7 @@ You can set your own standard text in two places:
 
 What you can change:
 1. The sender: go to Settings → Email → Addresses and sending and choose your own domain (Pro), Gmail, or Outlook
-2. Your sign-off: fill in your support email, website, and social links under Settings → Company details; they appear under every email you send, and on your invoices and website
+2. Your sign-off: fill in your support email, website, and social links under Settings → Company details; they appear under every email you send, and on your invoices and website. Your certifications and quality marks (STEK, VCA, CE and more) appear under it as well, once you add them and keep **Show below your emails** on
 3. A single email: in the send window you can adjust the recipient, subject, and message before the email goes out
 
 Tip: The details in your sign-off also appear on your invoices and website, so filling them in under Company details keeps every email complete.

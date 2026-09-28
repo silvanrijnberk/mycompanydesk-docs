@@ -1,7 +1,7 @@
 ---
 title: Website-Builder
 description: "Bauen Sie eine mehrseitige Unternehmenswebsite im Drag-and-drop-Editor: Abschnitte und Blöcke, eigene Farben und Schriften, und veröffentlichen."
-last_verified: 2026-08-20
+last_verified: 2026-09-28
 ---
 
 # Website-Builder
@@ -181,7 +181,7 @@ Eine Site, deren Startseite auf Entwurf steht, zeigt bei der Veröffentlichung n
 
 Im **Editor**-Tab:
 
-- Klicken Sie auf **Abschnitt hinzufügen**, um die verfügbaren Blocktypen zu sehen (Hero, Text, Galerie, Spotlight, Dienstleistungen, Team, Testimonials, Kontaktformular, Preise, Produkt, benutzerdefiniertes HTML und mehr).
+- Klicken Sie auf **Abschnitt hinzufügen**, um die verfügbaren Blocktypen zu sehen (Hero, Text, Galerie, Spotlight, Dienstleistungen, Team, Testimonials, Kontaktformular, Preise, Produkt, Gütesiegel, benutzerdefiniertes HTML und mehr).
 - Wählen Sie einen Blocktyp aus, um ihn auf der Seite einzufügen.
 - Klicken Sie auf einen Abschnitt, um das Inspektionspanel zu öffnen, in dem Sie Inhalt, Layout, Stil und Animation bearbeiten können.
 - Ziehen Sie Abschnitte nach oben oder unten, um sie neu anzuordnen. Nutzen Sie die Duplizieren- und Löschen-Aktionen bei jedem Abschnitt.
@@ -307,6 +307,18 @@ Eine eigenständige Einzelprodukt-Kaufkarte, ideal wenn eine vollständige Preis
 - Eine optionale Hinweiszeile unter dem Button für Versandinformationen, Hinweise oder AGB-Verweise.
 
 Siehe [Verkäufe](/de/features/domains-website-inbox#verkaufe) für die Nachverfolgung von Zahlungen und Bestellungen.
+
+### Gütesiegel-Block
+
+Der Block **Gütesiegel** zeigt die Zertifikate und Gütesiegel Ihres Unternehmens (STEK, VCA, CE und mehr), genau so, wie Sie sie unter **Einstellungen → Unternehmensdaten** erfassen. Diese Liste verwalten Sie an genau dieser einen Stelle: der Block ist datengebunden, das Inspektionspanel hat keinen Artikeleditor, sondern nur die Darstellung.
+
+- **Überschrift**: standardmäßig „Certificeringen en keurmerken“. Geben Sie eine eigene Überschrift ein oder lassen Sie das Feld leer für einen Block ohne Überschrift.
+- **Stil**: weiße Kacheln (Standard) oder schlicht. **Größe**: klein, mittel oder groß.
+- Höchstens sechs Gütesiegel; Reihenfolge, Name und Link legen Sie unter Unternehmensdaten fest. Wenn Sie das erste Gütesiegel hinzufügen, setzt MyCompanyDesk automatisch einen Gütesiegel-Block auf Ihre Startseite, als Entwurf: vor einer abschließenden Aufforderung, wenn diese der letzte Block ist, sonst unten vor der Fußzeile. Es wird nicht sofort veröffentlicht; das Publizieren übernehmen Sie. Gibt es auf Ihrer Website bereits einen Gütesiegel-Abschnitt, kommt kein zweiter dazu.
+- Ist die Liste leer oder ist **Auf Ihrer Website anzeigen** unter Unternehmensdaten aus, versteckt sich der Block auf der veröffentlichten Website. Der Editor weist auch darauf hin, wenn die Gütesiegel für die Website ausgeschaltet sind.
+- Entfernen Sie ein Gütesiegel, bleibt die Datei erhalten und bereits gesendete E-Mail zeigt das Logo weiterhin; der Block versteckt sich erst, wenn die Liste vollständig leer ist.
+
+Quelle: `packages/shared/src/site-blocks/registry.ts#keurmerken`; `apps/api/src/modules/companies/certifications.service.js`.
 
 ### Katalogabschnitte
 

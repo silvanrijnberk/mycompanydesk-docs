@@ -6,13 +6,14 @@ last_verified: 2026-09-28
 
 # E-Mail
 
-MyCompanyDesk sendet Ihre Rechnungen und Angebote per E-Mail an Ihre Kunden. Unter **Einstellungen → E-Mail** finden Sie alles rund um Ihre Post auf einer Seite mit drei Reitern:
+MyCompanyDesk sendet Ihre Rechnungen und Angebote per E-Mail an Ihre Kunden. Unter **Einstellungen → E-Mail** finden Sie alles rund um Ihre Post auf einer Seite mit vier Reitern:
 
 - **Adressen und Versand**: wo Ihre E-Mails ankommen und von welcher Adresse Sie senden
 - **Texte**: was in Ihren E-Mails steht
 - **Gestaltung**: wie Ihre E-Mails aussehen
+- **Regeln**: was mit eingehenden E-Mails automatisch passiert
 
-Die Seite ist in jedem Abo verfügbar; nur der Versand von der eigenen Domain gehört zu Pro. Regeln und vertrauenswürdige Absender für eingehende Post haben ihren eigenen Platz im Posteingang; siehe unten [Empfangen: Postfächer und Regeln](#empfangen-postfaecher-und-regeln).
+Die Seite ist in jedem Abo verfügbar; nur der Versand von der eigenen Domain gehört zu Pro. Regeln und vertrauenswürdige Absender für eingehende Post finden Sie auf dem Reiter Regeln; siehe unten [Empfangen: Postfächer und Regeln](#empfangen-postfaecher-und-regeln).
 
 ## Adressen und Versand
 
@@ -76,7 +77,7 @@ Auf dem Reiter liegen auch Ihre Standardanrede und Grußformel, die das Verfasse
 
 ### Ihr Abschluss
 
-Der Abschluss unter jeder ausgehenden E-Mail baut sich automatisch aus Ihren Unternehmensdaten auf: Ihr Firmenname steht immer darunter, und die Angaben, die Sie ausfüllen (Support-E-Mail, Website, Social Links), kommen hinzu. Was leer bleibt, wird weggelassen. Dieselben Angaben erscheinen auch auf Ihren Rechnungen und Ihrer Website, deshalb bearbeiten Sie sie an einer Stelle: unter **Einstellungen → Unternehmensdaten**. Im E-Mail-Bereich sehen Sie eine Vorschau Ihres Abschlusses, mit dem Link **Unternehmensdaten bearbeiten**. Die Vorschau zeigt den Abschluss genau so, wie er unter jede E-Mail an Ihre Kunden gesetzt wird: Sie sehen also genau das, was Ihr Kunde erhält. Telefon, Adresse, KvK-Nummer, Ihr Foto und der Link zu Ihrer Seite erscheinen darin, sobald Sie sie ausgefüllt haben.
+Der Abschluss unter jeder ausgehenden E-Mail baut sich automatisch aus Ihren Unternehmensdaten auf: Ihr Firmenname steht immer darunter, und die Angaben, die Sie ausfüllen (Support-E-Mail, Website, Social Links), kommen hinzu. Was leer bleibt, wird weggelassen. Dieselben Angaben erscheinen auch auf Ihren Rechnungen und Ihrer Website, deshalb bearbeiten Sie sie an einer Stelle: unter **Einstellungen → Unternehmensdaten**. Im E-Mail-Bereich sehen Sie eine Vorschau Ihres Abschlusses, mit dem Link **Unternehmensdaten bearbeiten**. Die Vorschau zeigt den Abschluss genau so, wie er unter jede E-Mail an Ihre Kunden gesetzt wird: Sie sehen also genau das, was Ihr Kunde erhält. Telefon, Adresse, KvK-Nummer, Ihr Foto und der Link zu Ihrer Seite erscheinen darin, sobald Sie sie ausgefüllt haben. Ihre Gütesiegel können ebenfalls Teil des Abschlusses werden: Ist **Unter Ihren E-Mails anzeigen** aktiv, stehen die Logos unter jeder E-Mail an Ihre Kunden, und ihre Namen erscheinen in der Textversion Ihrer E-Mails. Sie verwalten sie auf der Karte Gütesiegel unter [Firmeneinstellungen](/de/settings/company).
 
 ## Gestaltung
 
@@ -84,11 +85,11 @@ Der Reiter **Gestaltung** legt Stil und Kopfzeile jeder Kunden-E-Mail fest: Wäh
 
 ## Empfangen: Postfächer und Regeln
 
-Den Mail-Empfang haben Sie bisher auf der Seite Posteingang-Einstellungen geregelt. Diese Seite ist entfallen:
+Auch für den Empfang ist die E-Mail-Seite der zentrale Ort:
 
 - **Postfächer, weitere Adressen, Weiterleitung und Import** finden Sie unter **Einstellungen → E-Mail → Adressen und Versand**. Alte Links zu den Posteingang-Einstellungen landen automatisch dort.
-- **Regeln für eingehende E-Mails und vertrauenswürdige Absender** finden Sie unter **Posteingang → Regeln**.
-- **Zuletzt ausgehend zugestellte Nachrichten** finden Sie unter **Posteingang → Übersicht**.
+- **Regeln für eingehende E-Mails und vertrauenswürdige Absender** finden Sie auf dem Reiter **Regeln**. Bisher waren sie ein Reiter im Posteingang; diese Reiterleiste ist entfallen, und alte Links wie /inbox/regels landen automatisch an der neuen Stelle. Der Reiter steht nur für Arbeitsbereiche mit der Inbox-Funktion.
+- Ob eine E-Mail wirklich angekommen ist, sehen Sie im Ordner **Gesendet** des Posteingangs: dort steht pro Nachricht, ob sie den Empfänger erreicht hat.
 - **DSGVO-Datenlöschung** (alle Unterhaltungen und Anhänge einer bestimmten Adresse löschen, nur für Administratoren) finden Sie unter **Einstellungen → Gegevens wissen**.
 
 ## Verwandte Themen
