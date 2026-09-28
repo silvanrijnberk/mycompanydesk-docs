@@ -1,11 +1,11 @@
 ---
 title: Email templates
-description: "Invoice, quote, reminder and credit note emails start from a standard text. Set your own text per type and language under Settings → Email → Texts."
+description: "Invoice, quote, reminder and credit note emails start from a standard text. Set your own text per type and language under Settings → Email."
 last_verified: 2026-09-28
 chatbot:
   triggers: ["email template", "customize email", "invoice email message", "email text", "change email message", "email sjabloon", "email aanpassen", "e-mail vorlage", "modele email", "personnaliser email"]
   actions:
-    - { label: "Open email texts", to: "/settings/email/teksten" }
+    - { label: "Open email texts", to: "/settings/email/facturen" }
   follow_up: ["How do I send an invoice by email?", "How do I change the PDF style?"]
 ---
 
@@ -17,7 +17,7 @@ Credit note emails use a dedicated template that names the document as a credit 
 
 You can set your own standard text in two places:
 
-1. **Settings → Email → Texts**: pick the type of email (invoice, quote, reminder, or credit note) and the email language, write your subject and message, and save. Your text is marked **Your own text**, and **Back to standard text** brings the standard wording back after a confirmation.
+1. **Invoice and quote emails** under Settings → Email: pick the type of email (invoice, quote, reminder, or credit note) and the email language, write your subject and message, and save. Your text is marked **Your own text**, and **Back to standard text** brings the standard wording back after a confirmation.
 2. **The send window**: write the subject and message the way you want them, and tick **Use this text from now on for invoices** (or for quotes, reminders, credit notes, or rent invoices). Once the email has gone out, your text is the starting point for every next document of that kind.
 
 - The text is stored with placeholders: MyCompanyDesk fills in the name, number, amount, and dates fresh for every email.
@@ -27,7 +27,7 @@ You can set your own standard text in two places:
 
 What you can change:
 1. The sender: go to Settings → Email → Addresses and sending and choose your own domain (Pro), Gmail, or Outlook
-2. Your sign-off: fill in your support email, website, and social links under Settings → Company details; they appear under every email you send, and on your invoices and website. Your certifications and quality marks (STEK, VCA, CE and more) appear under it as well, once you add them and keep **Show below your emails** on
+2. Your sign-off: fill in your support email, website, and social links under Settings → Company details; they appear under every email you send, and on your invoices and website. Your certifications and quality marks (STEK, VCA, CE and more) appear under it as well; under Settings → Email you choose per mail type whether they do
 3. A single email: in the send window you can adjust the recipient, subject, and message before the email goes out
 
 Tip: The details in your sign-off also appear on your invoices and website, so filling them in under Company details keeps every email complete.
