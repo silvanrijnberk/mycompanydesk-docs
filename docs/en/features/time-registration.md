@@ -21,6 +21,8 @@ Planned entries carry a **Tentative** badge; press **Confirm** once the work act
 
 If you want, enable **Auto-confirm tentative time** in the schedule settings. When this is on, tentative entries are confirmed automatically once their scheduled date has passed, even if nobody opens the Schedule page.
 
+Totals only count hours that were actually worked. Planned entries for later days stay out of the tracked-hours totals on the dashboard (**Uren dit jaar**, Hours this year), in reports (**Tracked hours**), and on the **Work & time** view until they are confirmed; the side panel states that basis. The hours criterion meter for the income tax return counts by its own basis, shown underneath the meter: only your own confirmed hours plus travel time, so its number can differ from the totals here.
+
 ## Logging time
 
 ### Timer

@@ -53,6 +53,8 @@ Sehen Sie, wohin Ihre Zahlen gehen, basierend auf wiederkehrenden Rechnungen, of
 
 Die Ansicht **Einkommensteuer** schätzt die Einkommensteuer für das gewählte Jahr: Bruttogewinn, Selbstständigenabzug und KMU-Freigrenze, steuerpflichtiges Einkommen, Steuerklassen, geschätzte Steuer, Gewinn nach Steuer und die zu reservierende Summe. Bei einer BV wird stattdessen eine geschätzte Körperschaftsteuer gezeigt. Sehen Sie sie als Planungshilfe für Rücklagen, nicht als Abgabe.
 
+Die Karte zum Stundenkriterium nennt ihre Grundlage unter der Messanzeige: Sie zählt nur Ihre eigenen bestätigten geleisteten Stunden plus Reisezeit, und geplante Stunden zählen, sobald Sie sie bestätigen. Das ist bewusst enger als die Zahl **Erfasste Stunden** anderswo in den Berichten, die alle geleisteten Stunden zählt und geplante zukünftige Stunden auslässt, sodass die beiden Zahlen auseinanderliegen dürfen.
+
 Wenn Ihr Arbeitsbereich das Immobilienmodul nutzt, zeigt die Karte **Box 3** das gesamte Vermögen, die steuerpflichtige Grundlage und den fiktiven Ertrag des Arbeitsbereichs. Bei Rechtsformen mit mehreren Gesellschaftern erklärt die Karte, dass jeder Gesellschafter Grundlage und fiktiven Ertrag im Verhältnis für seine eigene Box-3-Abgabe aufteilen muss. Die angezeigten Beträge sind die Summe des Arbeitsbereichs.
 
 Die Karte **KIA** zeigt die Kleininvestitionsabzug auf Basis Ihrer Investitionen. Verkaufen Sie eine Investition innerhalb von fünf Jahren nach dem Kauf, müssen Sie möglicherweise einen Teil der Abzugsbetrags über die Desinvestitionszulage zurückzahlen. MyCompanyDesk berechnet dies noch nicht automatisch; prüfen Sie den Betrag daher selbst oder mit Ihrem Buchhalter.

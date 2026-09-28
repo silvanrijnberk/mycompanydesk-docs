@@ -29,7 +29,7 @@ The identity form. What every invoice, quote, and email shows.
 - **Registration**: KvK or other registration number. The **Refresh from KVK** button pulls the latest data from the Dutch Chamber of Commerce registry and fills any blank fields (business name, address, postal code, city, country). It never overwrites values you already set. Each workspace gets 100 free KVK lookups per day (cached results do not count toward the limit). When 20 or fewer lookups remain, the field hint switches to a counter showing how many are left. If the daily cap is reached, the button is disabled until the next day or you can enter the data manually.
 - **Tax ID**: VAT number (e.g. `NL123456789B01`)
 - **Contact**: public email, phone, support email, timezone
-- **Website + social**: used by the email signature, business page, and footers
+- **Website + social**: used by the email signature, business page, and footers. Paste the full address of your profile or page (for example `https://instagram.com/yourcompany`); a value that would not become a link is flagged after you leave the field, and a bare username shows where it would link.
 
 Changes save automatically.
 
@@ -37,13 +37,13 @@ Changes save automatically.
 
 Path: `/settings/bedrijfsgegevens#keurmerken`
 
-The **Keurmerken** card on the Bedrijfsgegevens page holds your company's certifications and quality marks, such as STEK, VCA or CE. They appear below your emails and on your website, and you manage them in one place.
+The **Keurmerken** card on the Bedrijfsgegevens page holds your company's certifications and quality marks, such as STEK, VCA or CE. They appear on your website, and under your emails per mail type as chosen under Settings → Email. You manage them in one place.
 
 - **Add a certification**: choose an image (PNG, JPG, WebP or SVG, 3 MB at most). MyCompanyDesk trims the white space around the logo, caps its height at 480 pixels and converts it to a PNG with transparency. An SVG is rasterized, so mail programs that cannot show SVG still display the mark.
-- **Name**: required, up to 64 characters. The name describes the logo for people who cannot see it, and it appears in the text version of your emails.
+- **Name**: required, up to 64 characters. The name describes the logo for people who cannot see it.
 - **Link (optional)**: for example the register page where customers can verify your certificate. The link must start with `https://` or `http://`.
 - Up to six certifications. Reorder them with the up and down arrows; to replace the image, remove the certification and add it again.
-- Two switches, both on by default: **Tonen onder je e-mails** puts the logos below every email to your customers (their names form the last line of the text version), and **Tonen op je website** feeds the Keurmerken block on your website.
+- One switch, on by default: **Tonen op je website** feeds the Keurmerken block on your website. Whether the logos also appear under your emails is chosen per mail type under **Settings → Email**; the card shows a note with a link there.
 - Adding your first certification automatically places a **Keurmerken** block on the homepage of your website, as a draft. It goes live when you publish your site.
 - Removing a certification keeps the file on the server, so emails that already went out keep showing the mark. An empty list, or **Tonen op je website** switched off, makes the block hide itself on the website.
 

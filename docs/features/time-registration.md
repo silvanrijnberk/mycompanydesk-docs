@@ -21,6 +21,8 @@ Geplande registraties dragen het label **Gepland**; druk op **Bevestigen** zodra
 
 Wil je dit niet handmatig doen? Zet **Geplande tijd automatisch bevestigen** aan in de agenda-instellingen. Geplande registraties worden dan automatisch bevestigd zodra de geplande datum is verstreken, ook als je de agenda niet opent.
 
+Totalen tellen alleen uren die echt gewerkt zijn. Geplande registraties voor latere dagen staan buiten de urentotalen op het dashboard (**Uren dit jaar**), in de rapportages (**Geregistreerde uren**) en onder **Werk & tijd**, totdat je ze bevestigt; het zijpaneel benoemt die grondslag. De urencriteriummeter voor de inkomstenbelasting rekent met een eigen grondslag, die onder de meter staat: alleen je eigen bevestigde uren plus reistijd, dus dat getal mag afwijken van de totalen hier.
+
 ## Uren schrijven
 
 ### Timer

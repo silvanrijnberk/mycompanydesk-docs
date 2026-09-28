@@ -21,6 +21,8 @@ Les entrées planifiées portent le badge **Provisoire** ; appuyez sur **Confirm
 
 Vous préférez ne pas le faire manuellement ? Activez **Confirmer automatiquement le temps provisoire** dans les paramètres de l'agenda. Les entrées provisoires sont alors confirmées automatiquement une fois leur date prévue passée, même si personne n'ouvre l'agenda.
 
+Les totaux ne comptent que les heures réellement travaillées. Les entrées planifiées pour des jours ultérieurs restent hors des totaux d'heures du tableau de bord, des rapports (**Heures enregistrées**) et de **Travail et temps** jusqu'à leur confirmation ; le panneau latéral énonce cette base. Le compteur du critère d'heures pour l'impôt sur le revenu suit sa propre base, indiquée sous le compteur : uniquement vos propres heures confirmées plus le temps de trajet, ce chiffre peut donc différer des totaux ici.
+
 ## Enregistrer du temps
 
 ### Minuteur

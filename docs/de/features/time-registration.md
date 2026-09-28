@@ -21,6 +21,8 @@ Geplante Einträge tragen das Label **Vorläufig**; drücken Sie **Bestätigen**
 
 Möchten Sie das nicht manuell erledigen? Aktivieren Sie **Vorläufige Zeit automatisch bestätigen** in den Zeitplan-Einstellungen. Vorläufige Einträge werden dann automatisch bestätigt, sobald ihr geplanter Termin verstrichen ist, auch wenn niemand den Zeitplan öffnet.
 
+Summen zählen nur Stunden, die tatsächlich gearbeitet wurden. Vorläufige Einträge für spätere Tage bleiben außerhalb der Stundensummen im Dashboard, in den Berichten (**Erfasste Stunden**) und unter **Arbeit & Zeit**, bis Sie sie bestätigen; das Seitenpanel nennt diese Grundlage. Die Anzeige zum Stundenkriterium für die Einkommensteuer rechnet mit einer eigenen Grundlage, die unter der Anzeige steht: nur Ihre eigenen bestätigten Stunden plus Reisezeit, daher darf diese Zahl von den Summen hier abweichen.
+
 ## Zeit erfassen
 
 ### Timer
