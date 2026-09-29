@@ -83,7 +83,7 @@ Your standard greeting and sign-off prefill the compose window of the Inbox for 
 
 ### Your signature
 
-Your signature can carry a small logo above your greeting, chosen under **Logo in your signature**. There are three options: **None** for no logo in the signature, **Next to your name** for a small logo next to your name (the same placement as the head of your document emails), and **Instead of your name** for a logo that already contains your business name. The choice is only available once you have added a logo in your company details; until then the option shows why, with a link to add one.
+Your signature can carry a small logo, chosen under **Logo in your signature**. There are three options: **None** for no logo in the signature, **Next to your name** for a small logo next to your name (the same placement as the head of your document emails), and **Instead of your name** for a logo that already contains your business name. The choice is only available once you have added a logo in your company details; until then the option tells you that you have no logo yet and that you add one in Company details.
 
 If your logo already contains the business name, choose **Instead of your name**. If you already use a signature with its own logo, keep it on **None**, otherwise the logo shows up twice.
 

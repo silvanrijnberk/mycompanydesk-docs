@@ -1,7 +1,7 @@
 ---
 title: E-mail
 description: "Choisissez l'adresse d'envoi de vos factures et devis et définissez ce qui figure sous chaque message. Disponible dans tous les abonnements."
-last_verified: 2026-09-28
+last_verified: 2026-09-29
 ---
 
 # E-mail
@@ -83,7 +83,9 @@ Votre formule d'appel et votre formule de politesse standard préremplissent la 
 
 ### Votre signature
 
-**Logo au-dessus de votre nom** place un petit logo dans votre signature. Laissez-le désactivé si vous utilisez déjà une signature avec son propre logo, sinon le logo apparaîtrait deux fois. L'interrupteur n'est disponible qu'une fois un logo ajouté dans les informations de l'entreprise.
+Votre signature peut porter un petit logo, à régler sous **Logo dans votre signature**. Trois choix possibles : **Aucun**, **À côté de votre nom** (un petit logo à côté du nom, comme dans l'en-tête de vos e-mails de documents) et **À la place de votre nom** (pour un logo qui contient déjà le nom de votre entreprise). Les choix n'apparaissent qu'une fois un logo ajouté dans vos informations d'entreprise ; sans logo, l'option l'indique et rappelle que vous en ajoutez un dans les informations de l'entreprise.
+
+Le nom de votre entreprise figure-t-il déjà dans votre logo ? Choisissez alors **À la place de votre nom**. Vous utilisez déjà une signature avec son propre logo ? Gardez **Aucun**, sinon le logo apparaîtrait deux fois.
 
 La liste du pied de page en dessous est votre liste propre à la boîte de réception, distincte du pied de page sous vos factures : ce que vous désactivez ici reste affiché là. L'aperçu à droite montre le message complet exactement comme le destinataire le reçoit, de la formule d'appel jusqu'à la dernière ligne du pied de page.
 

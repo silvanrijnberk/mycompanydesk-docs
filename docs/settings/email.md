@@ -83,7 +83,7 @@ Je standaard aanhef en afsluiting vullen het opstelvenster van de Inbox alvast i
 
 ### Je handtekening
 
-Boven je handtekening kan een klein logo staan, dat stel je in bij **Logo in je handtekening**. Er zijn drie keuzes: **Geen** voor geen logo in de handtekening, **Naast je naam** voor een klein logo naast je naam (hetzelfde als de kop van je documentmails), en **In plaats van je naam** voor een logo waar je bedrijfsnaam al in staat. De keuzes zijn er pas zodra je bij je bedrijfsgegevens een logo hebt toegevoegd; tot die tijd laat de optie zien waarom, met een link om er één toe te voegen.
+Boven je naam kan in je handtekening een klein logo staan, dat stel je in bij **Logo in je handtekening**. Er zijn drie keuzes: **Geen** voor geen logo in de handtekening, **Naast je naam** voor een klein logo naast je naam (hetzelfde als de kop van je documentmails), en **In plaats van je naam** voor een logo waar je bedrijfsnaam al in staat. De keuzes zijn er pas zodra je bij je bedrijfsgegevens een logo hebt toegevoegd; anders zegt de optie dat je nog geen logo hebt en dat je er een toevoegt bij je bedrijfsgegevens.
 
 Staat je bedrijfsnaam al in je logo? Kies dan **In plaats van je naam**. Gebruik je al een eigen handtekening met logo, laat de keuze dan op **Geen** staan, anders staat het logo er twee keer.
 

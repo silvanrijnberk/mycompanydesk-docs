@@ -83,7 +83,7 @@ Ihre Standardanrede und Grußformel füllen das Verfassen-Fenster im Posteingang
 
 ### Ihre Signatur
 
-Über Ihrer Grußformel kann ein kleines Logo stehen, eingestellt unter **Logo in Ihrer Signatur**. Es gibt drei Optionen: **Kein Logo**, **Neben Ihrem Namen** (ein kleines Logo neben dem Namen, so wie der Kopf Ihrer Dokumentmails) und **Statt Ihres Namens** (für ein Logo, in dem Ihr Firmenname schon enthalten ist). Die Optionen erscheinen erst, sobald Sie in Ihren Unternehmensdaten ein Logo hinterlegt haben; bis dahin zeigt die Option den Grund an, mit einem Link zum Nachholen.
+In Ihrer Signatur kann ein kleines Logo stehen, eingestellt unter **Logo in Ihrer Signatur**. Es gibt drei Optionen: **Kein Logo**, **Neben Ihrem Namen** (ein kleines Logo neben dem Namen, so wie der Kopf Ihrer Dokumentmails) und **Statt Ihres Namens** (für ein Logo, in dem Ihr Firmenname schon enthalten ist). Die Optionen erscheinen erst, sobald Sie in Ihren Unternehmensdaten ein Logo hinterlegt haben; fehlt noch ein Logo, weist die Option darauf hin, dass Sie eines in den Unternehmensdaten hinzufügen.
 
 Steht Ihr Firmenname schon in Ihrem Logo? Wählen Sie dann **Statt Ihres Namens**. Nutzen Sie bereits eine Signatur mit eigenem Logo, lassen Sie es auf **Kein Logo** stehen, sonst steht das Logo doppelt dort.
 
