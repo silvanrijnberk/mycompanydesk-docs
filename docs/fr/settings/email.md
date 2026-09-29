@@ -1,7 +1,7 @@
 ---
 title: E-mail
 description: "Choisissez l'adresse d'envoi de vos factures et devis et définissez ce qui figure sous chaque message. Disponible dans tous les abonnements."
-last_verified: 2026-09-28
+last_verified: 2026-09-29
 ---
 
 # E-mail
@@ -83,7 +83,9 @@ Votre formule d'appel et votre formule de politesse standard préremplissent la 
 
 ### Votre signature
 
-**Logo au-dessus de votre nom** place un petit logo dans votre signature. Laissez-le désactivé si vous utilisez déjà une signature avec son propre logo, sinon le logo apparaîtrait deux fois. L'interrupteur n'est disponible qu'une fois un logo ajouté dans les informations de l'entreprise.
+Votre signature peut porter un petit logo, à régler sous **Logo dans votre signature**. Trois choix possibles : **Aucun**, **À côté de votre nom** (un petit logo à côté du nom, comme dans l'en-tête de vos e-mails de documents) et **À la place de votre nom** (pour un logo qui contient déjà le nom de votre entreprise). Les choix n'apparaissent qu'une fois un logo ajouté dans vos informations d'entreprise ; sans logo, l'option l'indique et rappelle que vous en ajoutez un dans les informations de l'entreprise.
+
+Le nom de votre entreprise figure-t-il déjà dans votre logo ? Choisissez alors **À la place de votre nom**. Vous utilisez déjà une signature avec son propre logo ? Gardez **Aucun**, sinon le logo apparaîtrait deux fois.
 
 La liste du pied de page en dessous est votre liste propre à la boîte de réception, distincte du pied de page sous vos factures : ce que vous désactivez ici reste affiché là. L'aperçu à droite montre le message complet exactement comme le destinataire le reçoit, de la formule d'appel jusqu'à la dernière ligne du pied de page.
 
@@ -91,8 +93,8 @@ La liste du pied de page en dessous est votre liste propre à la boîte de réce
 
 MyCompanyDesk bloque le courrier sortant qui ressemble à un abus, afin que notre domaine d'envoi partagé reste digne de confiance pour tout le monde. Les tout nouveaux comptes ont donc des garde-fous supplémentaires.
 
-- Un maximum de destinataires s'applique par message (à, cc et cci ensemble). Un nouveau compte démarre avec un maximum plus bas pour sa première période ; la limite exacte figure dans l'erreur si vous la dépassez. Répartissez le message sur plusieurs e-mails pour toucher plus de personnes.
-- Les messages des nouveaux comptes peuvent parfois être retenus un moment pour vérification. Vous voyez alors que le message est encore en cours d'examen, et c'est généralement réglé dans l'heure. Renseignez votre numéro KVK dans les informations de votre entreprise pour sauter définitivement cette vérification.
+- Un maximum de destinataires s'applique par message (à, cc et cci ensemble). Un nouveau compte démarre avec un maximum plus bas pour sa première période ; la limite exacte figure dans l'erreur si vous la dépassez. Répartissez le message sur plusieurs e-mails pour toucher plus de personnes. Le maximum peut aussi être temporairement plus bas que d'habitude, par exemple un destinataire par message ; le message d'erreur dit ce qui s'applique, et vous pouvez nous contacter si vous en avez besoin de plus.
+- Les messages des nouveaux comptes peuvent parfois être retenus un moment pour vérification. Vous voyez alors que le message est encore en cours d'examen, et c'est généralement réglé dans l'heure. Après validation, vous recevez une notification et vous pouvez le renvoyer. Un domaine d'envoi vérifié, un abonnement payant et une série de messages bien délivrés sautent cette vérification automatiquement. Renseigner votre numéro KVK ne saute plus cette vérification : le registre seul ne montre pas qui se trouve réellement derrière un compte.
 
 ## Recevoir : boîtes mail et règles
 

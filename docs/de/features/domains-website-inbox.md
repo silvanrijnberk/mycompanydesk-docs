@@ -1,7 +1,7 @@
 ---
 title: Domains, Website und Posteingang
 description: "Eigene Domains, die gehostete Unternehmenswebsite und das gemeinsame Postfach kommen als ein Bündel, hinter custom_domains und public_business_page."
-last_verified: 2026-09-26
+last_verified: 2026-09-29
 ---
 
 # Domains, Website und Posteingang
@@ -174,7 +174,7 @@ Die Berechtigung wird durch server-seitig geprüfte harte Bedingungen bestimmt:
 - **Domain muss mit dem KVK-Namen übereinstimmen** -- die Domain muss dem registrierten Firmennamen oder einem Handelsnamen entsprechen.
 - **KVK darf nicht auf der Retained-Claims-Liste stehen** -- eine Gratis-Domain pro KVK-Nummer. Eine KVK, die bereits eine Gratis-Domain beansprucht (und dann übertragen) hat, ist dauerhaft gesperrt.
 
-Kontoalter und Website-Inhalt sind keine harten Bedingungen. Sie würden legitime Onboarding-Tag-Claims blockieren, was dem "Ihr Unternehmen an einem Tag gründen, Domain inklusive"-Versprechen widerspricht. Stattdessen fließen beide als weiche Signale in den Gemini-Abuse-Score ein: ein brandneues Konto mit einer Template-Website erzielt einen niedrigen Score und landet in der manuellen Prüfung; ein echtes Unternehmen mit echtem Inhalt wird unabhängig vom Alter automatisch genehmigt. Die Eligibility-Antwort enthält einen `softSignals`-Block (`ageDays`, `sitePublished`, `paragraphCount`), sodass die UI einen Hinweis anzeigen kann, ohne den Claim zu blockieren.
+Kontoalter und Website-Inhalt sind keine harten Bedingungen. Sie würden legitime Onboarding-Tag-Claims blockieren, was dem Versprechen „Ihr Unternehmen an einem Tag gründen, Domain inklusive“ widerspricht. Stattdessen fließen beide als weiche Signale in den Gemini-Abuse-Score ein, mit denen die Prüfliste sortiert wird. Der Score entscheidet die Genehmigung nicht mehr allein: Gründer und zahlende Workspaces behalten die automatische Genehmigung bei gutem Score, ein Claim aus einem Office-Testzeitraum wird immer zuerst von einem Menschen geprüft (im Modal steht, dass meist innerhalb eines Werktags eine Antwort kommt), und ein Workspace, der bei der Anmeldung unter verschärfter Kontrolle steht, wird nie automatisch genehmigt. Score und Gründe bleiben intern; der Claim zeigt sie dem Nutzer nie an. Die Eligibility-Antwort enthält einen `softSignals`-Block (`ageDays`, `sitePublished`, `paragraphCount`), sodass die UI einen Hinweis anzeigen kann, ohne den Claim zu blockieren.
 
 Wenn eine Bedingung nicht erfüllt ist, listet die Karte die verbleibenden Anforderungen auf, damit der Benutzer sieht, was noch zum Freischalten der Gratis-Claim fehlt.
 

@@ -1,7 +1,7 @@
 ---
 title: E-Mail
 description: "Legen Sie fest, von welcher Adresse Rechnungen und Angebote ausgehen, und stellen Sie ein, was unter jeder Nachricht steht. In jedem Abo enthalten."
-last_verified: 2026-09-28
+last_verified: 2026-09-29
 ---
 
 # E-Mail
@@ -83,7 +83,9 @@ Ihre Standardanrede und Grußformel füllen das Verfassen-Fenster im Posteingang
 
 ### Ihre Signatur
 
-**Logo über Ihrem Namen** setzt ein kleines Logo in Ihre Signatur. Lassen Sie es aus, wenn Sie bereits eine Signatur mit eigenem Logo nutzen, sonst steht das Logo doppelt dort. Der Schalter ist erst verfügbar, sobald Sie in Ihren Unternehmensdaten ein Logo hinterlegt haben.
+In Ihrer Signatur kann ein kleines Logo stehen, eingestellt unter **Logo in Ihrer Signatur**. Es gibt drei Optionen: **Kein Logo**, **Neben Ihrem Namen** (ein kleines Logo neben dem Namen, so wie der Kopf Ihrer Dokumentmails) und **Statt Ihres Namens** (für ein Logo, in dem Ihr Firmenname schon enthalten ist). Die Optionen erscheinen erst, sobald Sie in Ihren Unternehmensdaten ein Logo hinterlegt haben; fehlt noch ein Logo, weist die Option darauf hin, dass Sie eines in den Unternehmensdaten hinzufügen.
+
+Steht Ihr Firmenname schon in Ihrem Logo? Wählen Sie dann **Statt Ihres Namens**. Nutzen Sie bereits eine Signatur mit eigenem Logo, lassen Sie es auf **Kein Logo** stehen, sonst steht das Logo doppelt dort.
 
 Die Fußzeilenliste darunter ist Ihre eigene Posteingangs-Liste mit Kontaktdaten, getrennt von der Fußzeile unter Ihren Rechnungen: Was Sie hier ausschalten, bleibt dort stehen. Die Vorschau rechts zeigt die komplette Mail genau so, wie der Empfänger sie bekommt, von der Anrede bis zur letzten Zeile der Fußzeile.
 
@@ -91,8 +93,8 @@ Die Fußzeilenliste darunter ist Ihre eigene Posteingangs-Liste mit Kontaktdaten
 
 MyCompanyDesk hält ausgehende Post zurück, die nach Missbrauch aussieht, damit unsere gemeinsame Versanddomain für alle zuverlässig bleibt. Für ganz neue Accounts gelten deshalb zusätzliche Grenzen.
 
-- Es gibt ein Maximum an Empfängern pro Nachricht (an, cc und bcc zusammen). Ein neuer Account startet mit einem niedrigeren Maximum für die erste Zeit; das genaue Limit steht in der Fehlermeldung, wenn Sie es überschreiten. Teilen Sie die Nachricht auf mehrere E-Mails auf, wenn Sie mehr Menschen erreichen möchten.
-- Nachrichten von neuen Accounts werden manchmal kurz zur Prüfung zurückgehalten. Sie sehen dann, dass die Nachricht noch geprüft wird, und meistens ist das innerhalb einer Stunde abgeschlossen. Hinterlegen Sie Ihre KVK-Nummer in Ihren Unternehmensdaten, um diese Prüfung dauerhaft zu überspringen.
+- Es gibt ein Maximum an Empfängern pro Nachricht (an, cc und bcc zusammen). Ein neuer Account startet mit einem niedrigeren Maximum für die erste Zeit; das genaue Limit steht in der Fehlermeldung, wenn Sie es überschreiten. Teilen Sie die Nachricht auf mehrere E-Mails auf, wenn Sie mehr Menschen erreichen möchten. Das Maximum kann vorübergehend auch niedriger sein als sonst, etwa ein Empfänger pro Nachricht; die Fehlermeldung sagt, was gilt, und Sie können sich an uns wenden, wenn Sie mehr benötigen.
+- Nachrichten von neuen Accounts werden manchmal kurz zur Prüfung zurückgehalten. Sie sehen dann, dass die Nachricht noch geprüft wird, und meistens ist das innerhalb einer Stunde abgeschlossen. Nach der Freigabe erhalten Sie eine Benachrichtigung und können sie erneut senden. Eine verifizierte Absendedomain, ein bezahltes Abonnement und eine Reihe reibungslos zugestellter Nachrichten überspringen diese Prüfung automatisch. Das Hinterlegen Ihrer KVK-Nummer überspringt die Prüfung nicht mehr: das Register allein zeigt nicht, wer tatsächlich hinter einem Konto steckt.
 
 ## Empfangen: Postfächer und Regeln
 

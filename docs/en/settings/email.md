@@ -1,7 +1,7 @@
 ---
 title: Email
 description: "Choose which address your invoices and quotes go out from and set what appears under every message. Available on every plan."
-last_verified: 2026-09-28
+last_verified: 2026-09-29
 ---
 
 # Email
@@ -83,7 +83,9 @@ Your standard greeting and sign-off prefill the compose window of the Inbox for 
 
 ### Your signature
 
-**Logo above your name** puts a small logo in your signature. Leave it off if you already use a signature with its own logo, otherwise the logo shows up twice. The switch is only available once you have added a logo in your company details.
+Your signature can carry a small logo, chosen under **Logo in your signature**. There are three options: **None** for no logo in the signature, **Next to your name** for a small logo next to your name (the same placement as the head of your document emails), and **Instead of your name** for a logo that already contains your business name. The choice is only available once you have added a logo in your company details; until then the option tells you that you have no logo yet and that you add one in Company details.
+
+If your logo already contains the business name, choose **Instead of your name**. If you already use a signature with its own logo, keep it on **None**, otherwise the logo shows up twice.
 
 The footer list underneath is your inbox-only list of contact details, separate from the footer under your invoices: what you switch off here keeps showing there. The preview on the right shows the complete message exactly as the recipient gets it, from the greeting down to the last footer line.
 
@@ -91,8 +93,8 @@ The footer list underneath is your inbox-only list of contact details, separate 
 
 MyCompanyDesk blocks outgoing mail that looks like abuse, so our shared sending domain stays trustworthy for everyone. Very new accounts therefore have extra guardrails.
 
-- There is a maximum number of recipients per message (to, cc and bcc combined). A new account starts with a lower maximum for its first period; the exact limit is shown in the error if you exceed it. Split the message into multiple emails if you need to reach more people.
-- Messages from new accounts can sometimes be held for review. You will see that the message is still being checked, and it usually clears within an hour. Add your KVK number in your company details to skip this check permanently.
+- There is a maximum number of recipients per message (to, cc and bcc combined). A new account starts with a lower maximum for its first period; the exact limit is shown in the error if you exceed it. Split the message into multiple emails if you need to reach more people. The maximum can also be temporarily lower than usual, such as one recipient per message; the error tells you what applies, and you can contact us if you need more.
+- Messages from new accounts can sometimes be held for review. You will see that the message is still being checked, and it usually clears within an hour. You get a notification once it is approved, and can then send it again. A verified sending domain, a paid subscription, and a stretch of successfully delivered messages skip this check automatically. Filling in a KVK number no longer skips this check: the register alone does not show who is actually behind an account.
 
 ## Receiving: mailboxes and rules
 

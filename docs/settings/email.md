@@ -1,7 +1,7 @@
 ---
 title: E-mail
 description: "Kies vanaf welk adres je facturen en offertes versturen en stel in wat er onder elk bericht staat. Beschikbaar op elk abonnement."
-last_verified: 2026-09-28
+last_verified: 2026-09-29
 ---
 
 # E-mail
@@ -83,7 +83,9 @@ Je standaard aanhef en afsluiting vullen het opstelvenster van de Inbox alvast i
 
 ### Je handtekening
 
-**Logo boven je naam** zet een klein logo in je handtekening. Laat hem uit als je al een handtekening met eigen logo gebruikt, anders staat het logo er twee keer. De schakelaar is er pas zodra je bij je bedrijfsgegevens een logo hebt toegevoegd.
+Boven je naam kan in je handtekening een klein logo staan, dat stel je in bij **Logo in je handtekening**. Er zijn drie keuzes: **Geen** voor geen logo in de handtekening, **Naast je naam** voor een klein logo naast je naam (hetzelfde als de kop van je documentmails), en **In plaats van je naam** voor een logo waar je bedrijfsnaam al in staat. De keuzes zijn er pas zodra je bij je bedrijfsgegevens een logo hebt toegevoegd; anders zegt de optie dat je nog geen logo hebt en dat je er een toevoegt bij je bedrijfsgegevens.
+
+Staat je bedrijfsnaam al in je logo? Kies dan **In plaats van je naam**. Gebruik je al een eigen handtekening met logo, laat de keuze dan op **Geen** staan, anders staat het logo er twee keer.
 
 De voetlijst eronder is je eigen inboxlijst met contactgegevens, los van de voet onder je facturen: wat je hier uitzet, blijft daar gewoon staan. Het voorbeeld rechts laat de hele mail zien precies zoals de ontvanger hem krijgt, van de aanhef tot de laatste regel van de voet.
 
@@ -91,8 +93,8 @@ De voetlijst eronder is je eigen inboxlijst met contactgegevens, los van de voet
 
 MyCompanyDesk houdt uitgaande post tegen die eruitziet als misbruik, zodat ons gedeelde verzenddomein betrouwbaar blijft voor alle gebruikers. Voor hele nieuwe accounts gelden daarom extra grenzen.
 
-- Er geldt een maximum aan het aantal ontvangers per bericht (aan, cc en bcc samen). Een nieuw account krijgt in de eerste periode een lager maximum; het exacte limiet staat in de foutmelding als je het overschrijdt. Splits het bericht in meerdere e-mails als je meer mensen wilt bereiken.
-- Berichten van nieuwe accounts kunnen soms even vastgehouden worden voor controle. Je ziet dan dat het bericht nog bekeken wordt en meestal is dat binnen een uur afgerond. Vul je KVK-nummer in bij je bedrijfsgegevens om deze controle voorgoed over te slaan.
+- Er geldt een maximum aan het aantal ontvangers per bericht (aan, cc en bcc samen). Een nieuw account krijgt in de eerste periode een lager maximum; het exacte limiet staat in de foutmelding als je het overschrijdt. Splits het bericht in meerdere e-mails als je meer mensen wilt bereiken. Het maximum kan tijdelijk ook lager zijn dan je gewend bent, bijvoorbeeld één ontvanger per bericht; de foutmelding zegt wat er geldt, en je kunt contact met ons opnemen als je er meer nodig hebt.
+- Berichten van nieuwe accounts kunnen soms even vastgehouden worden voor controle. Je ziet dan dat het bericht nog bekeken wordt en meestal is dat binnen een uur afgerond. Na goedkeuring krijg je bericht en kun je hem opnieuw versturen. Een geverifieerd verzenddomein, een betaald abonnement en een reeks vlot bezorgde berichten slaan deze controle automatisch over. Je KVK-nummer invullen slaat de controle niet meer over: het register alléén laat niet zien wie er echt achter een account zit.
 
 ## Ontvangen: postbussen en regels
 
