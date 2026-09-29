@@ -1,7 +1,7 @@
 ---
 title: Authentification à deux facteurs
 description: "L'authentification à deux facteurs (2FA) ajoute un code à 6 chiffres issu d'une application d'authentification en plus de votre mot de passe."
-last_verified: 2026-09-26
+last_verified: 2026-09-29
 chatbot:
   triggers: ["two factor", "two-factor", "2fa", "two step", "authenticator", "mfa", "tweestapsverificatie", "twee-factor", "zwei faktor", "authentification deux facteurs", "double authentification"]
   actions:
@@ -20,6 +20,8 @@ Pour activer la 2FA :
 Dès lors, la connexion demande le code à 6 chiffres après votre e-mail et votre mot de passe. Si vous utilisez l'application MyCompanyDesk comme authentificateur, trouvez le code actuel sous **Instellingen > Inlogcodes**. Activez l'option pour mémoriser cet appareil pendant 30 jours et les appareils de confiance sautent cette étape. Changer ou réinitialiser votre mot de passe supprime cette confiance sur chaque appareil : le code à 6 chiffres est de nouveau demandé.
 
 Sur la même page, vous pouvez aussi ajouter des passkeys (Touch ID, Face ID, Windows Hello ou votre téléphone), donner un nom à chaque passkey et supprimer celles que vous n'utilisez plus. L'écran de connexion propose ensuite également la connexion par passkey.
+
+Pas de 2FA sur votre compte ? La connexion sur un navigateur encore inconnu donne aussi lieu à une vérification : un code à 6 chiffres par e-mail, valable 15 minutes, et MyCompanyDesk mémorise ensuite ce navigateur pendant 30 jours. Voir [Code de connexion par e-mail sur un nouveau navigateur](/fr/account/security#code-de-connexion-par-e-mail-sur-un-nouveau-navigateur).
 
 Plus d'accès à votre authentificateur ? Saisissez l'un de vos codes de secours à la connexion, ou utilisez le lien "Vous n'avez plus accès à votre deuxième facteur ?" sur l'écran de connexion. Après un délai de sécurité de 24 heures, votre deuxième facteur est effacé et vous pouvez vous reconnecter avec votre seul mot de passe.
 

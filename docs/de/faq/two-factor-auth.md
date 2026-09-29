@@ -1,7 +1,7 @@
 ---
 title: Zwei-Faktor-Authentifizierung
 description: "Die Zwei-Faktor-Authentifizierung (2FA) ergänzt Ihr Passwort um einen 6-stelligen Code aus einer Authenticator-App, gehen Sie zu Einstellungen > Anmeldung."
-last_verified: 2026-09-26
+last_verified: 2026-09-29
 chatbot:
   triggers: ["two factor", "two-factor", "2fa", "two step", "authenticator", "mfa", "tweestapsverificatie", "twee-factor", "zwei faktor", "authentification deux facteurs", "double authentification"]
   actions:
@@ -20,6 +20,8 @@ So aktivieren Sie 2FA:
 Ab dann fragt die Anmeldung nach E-Mail-Adresse und Passwort zusätzlich nach dem 6-stelligen Code. Wenn Sie die MyCompanyDesk-App als Authenticator nutzen, finden Sie den aktuellen Code unter **Instellingen > Inlogcodes**. Aktivieren Sie die Option, dieses Gerät 30 Tage zu merken, und vertrauenswürdige Geräte überspringen den Code. Wenn Sie Ihr Passwort ändern oder zurücksetzen, endet dieses Vertrauen auf jedem Gerät, sodass der 6-stellige Code wieder abgefragt wird.
 
 Auf derselben Seite können Sie außerdem Passkeys hinzufügen (Touch ID, Face ID, Windows Hello oder Ihr Telefon), jedem Passkey einen Namen geben und nicht mehr genutzte Passkeys entfernen. Der Anmeldebildschirm bietet danach auch die Anmeldung per Passkey an.
+
+Keine 2FA in Ihrem Konto? Auch dann läuft die Anmeldung auf einem Browser, den wir noch nicht kennen, nicht ohne Kontrolle: ein 6-stelliger Code per E-Mail, 15 Minuten gültig, und MyCompanyDesk merkt sich diesen Browser danach 30 Tage. Siehe [Anmeldecode per E-Mail auf einem neuen Browser](/de/account/security#anmeldecode-per-e-mail-auf-einem-neuen-browser).
 
 Kein Zugriff mehr auf Ihren Authenticator? Geben Sie bei der Anmeldung einen Ihrer Backup-Codes ein, oder nutzen Sie den Link "Kein Zugriff mehr auf Ihren zweiten Faktor?" auf dem Anmeldebildschirm. Nach einer Sicherheitswartezeit von 24 Stunden wird Ihr zweiter Faktor gelöscht und Sie können sich wieder nur mit Ihrem Passwort anmelden.
 

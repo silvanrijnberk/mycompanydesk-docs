@@ -1,7 +1,7 @@
 ---
 title: Sicherheit
 description: "Schützen Sie Ihr Konto mit einem starken Passwort, Zwei-Faktor-Authentifizierung und einem Blick auf Ihre aktiven Sitzungen."
-last_verified: 2026-09-26
+last_verified: 2026-09-29
 ---
 
 # Sicherheit
@@ -53,6 +53,16 @@ Die Wartezeit existiert, damit ein Angreifer, der nur Ihr Passwort kennt, den Sc
 2. Wählen Sie die Deaktivierung der Bestätigung in zwei Schritten
 3. Bestätigen Sie mit einem aktuellen Code aus Ihrer Authenticator-App, einem Backup-Code oder Ihrem Passwort
 
+## Anmeldecode per E-Mail auf einem neuen Browser
+
+Haben Sie keine Zwei-Faktor-Authentifizierung? Dann reicht Ihr Passwort allein nicht aus, wenn Sie sich auf einem Browser anmelden, den Ihr Konto noch nicht kennt: Nach dem Passwort senden wir Ihnen einen 6-stelligen Code per E-Mail. Der Anmeldebildschirm zeigt danach den Codeschritt, den Sie von der 2FA kennen, diesmal unter dem Titel „Bestätigen Sie, dass Sie es sind“, mit der (teilweise verdeckten) Adresse, an die der Code gegangen ist.
+
+Der Code ist 15 Minuten gültig. Keine E-Mail erhalten? Sehen Sie im Spam-Ordner nach oder nutzen Sie „Neuen Code senden“; der jüngste Code ersetzt den vorherigen. Nach fünf Falscheingaben funktioniert der Code nicht mehr, fordern Sie dann einen neuen an. Nach der Eingabe merkt sich MyCompanyDesk diesen Browser 30 Tage, ähnlich wie bei der 2FA, wo Sie dieses Gerät merken können, nur geschieht das hier automatisch.
+
+Lässt sich der Code nicht senden, verweist der Anmeldebildschirm auf die Anmeldung mit Google, Microsoft oder einem Passkey, oder auf einen neuen Versuch in ein paar Minuten. Die allererste Anmeldung nach der Registrierung überspringt diesen Schritt, da Ihre E-Mail-Adresse gerade bestätigt wurde.
+
+Eine Ausnahme: Liegt Ihre Anmeldeadresse auf einer Domain, deren Postfach MyCompanyDesk selbst betreibt, bleibt der Codeschritt aus, denn der Code würde in genau dem Postfach warten, das Sie erst nach der Anmeldung lesen können. Richten Sie für solche Konten die Zwei-Faktor-Authentifizierung ein.
+
 ## Anmelden ohne Passwort (Magic Link)
 
 Sie können sich ohne Passwort mit einem einmaligen Link anmelden, der an Ihre E-Mail gesendet wird:
@@ -78,7 +88,7 @@ Mit Passkeys melden Sie sich mit Biometrie oder einem Sicherheitsschlüssel stat
 
 ## Sitzungen
 
-Die Sitzungskarte unter **Einstellungen > Anmelden** hat eine einzige Aktion: **Abmelden**, die Ihre aktuelle Sitzung beendet. Es gibt keine Liste anderer Geräte und kein Widerrufen einzelner Sitzungen. Vermuten Sie, dass jemand anderes Zugriff auf Ihr Konto hat, ändern Sie Ihr Passwort. Wenn Sie Ihr Passwort ändern oder zurücksetzen, werden alle anderen Sitzungen Ihres Kontos beendet (das Gerät, an dem Sie die Änderung machen, bleibt angemeldet), und die vertrauenswürdigen Geräte, die den 2FA-Code überspringen, werden widerrufen.
+Die Sitzungskarte unter **Einstellungen > Anmelden** hat eine einzige Aktion: **Abmelden**, die Ihre aktuelle Sitzung beendet. Es gibt keine Liste anderer Geräte und kein Widerrufen einzelner Sitzungen. Vermuten Sie, dass jemand anderes Zugriff auf Ihr Konto hat, ändern Sie Ihr Passwort. Wenn Sie Ihr Passwort ändern oder zurücksetzen, werden alle anderen Sitzungen Ihres Kontos beendet (das Gerät, an dem Sie die Änderung machen, bleibt angemeldet), und die vertrauenswürdigen Geräte, die den Codeschritt überspringen, werden widerrufen.
 
 ## Anmelden über Google oder Microsoft
 

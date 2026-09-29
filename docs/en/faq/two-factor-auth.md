@@ -1,7 +1,7 @@
 ---
 title: Two-factor authentication
 description: "Two-factor authentication (2FA) adds a 6-digit code from an authenticator app on top of your password, go to Settings (Instellingen) > Inloggen."
-last_verified: 2026-09-26
+last_verified: 2026-09-29
 chatbot:
   triggers: ["two factor", "two-factor", "2fa", "two step", "authenticator", "mfa", "tweestapsverificatie", "twee-factor", "zwei faktor", "authentification deux facteurs", "double authentification"]
   actions:
@@ -20,6 +20,8 @@ To enable 2FA:
 From then on, signing in asks for the 6-digit code after your email and password. If you use the MyCompanyDesk app as your authenticator, find the current code under **Instellingen > Inlogcodes**. Check "Remember this device for 30 days" and trusted devices skip the code. Changing or resetting your password clears this trust on every device, so the 6-digit code is asked again.
 
 On the same page you can also add passkeys (Touch ID, Face ID, Windows Hello or your phone), give each one a name, and remove the ones you no longer use. The login screen then offers passkey sign-in as well.
+
+No 2FA on your account? Signing in from a browser we do not know yet still gets a check: a 6-digit code by email, valid for 15 minutes, and MyCompanyDesk remembers that browser for 30 days afterwards. See [a login code by email on a new browser](/en/account/security#a-login-code-by-email-on-a-new-browser).
 
 Lost access to your authenticator? Enter one of your backup codes at sign-in, or use the "Lost access to your second factor?" link on the login screen. After a 24-hour security delay your second factor is cleared and you can sign in with just your password.
 
