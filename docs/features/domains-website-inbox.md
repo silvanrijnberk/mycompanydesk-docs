@@ -1,7 +1,7 @@
 ---
 title: Domeinen, website en inbox
 description: "Eigen domeinen, de gehoste bedrijfswebsite en de gedeelde inbox komen als een bundel, achter de vlaggen custom_domains en public_business_page."
-last_verified: 2026-09-28
+last_verified: 2026-09-29
 ---
 
 # Domeinen, website en inbox
@@ -174,7 +174,7 @@ De geschiktheid wordt bepaald door harde voorwaarden die server-side worden geco
 - **Domein moet overeenkomen met de KVK-naam** -- het domein moet corresponderen met de geregistreerde statutaire naam of een handelsnaam.
 - **KVK mag niet op de retained-claims-lijst staan** -- een gratis domein per KVK-nummer. Een KVK die al eerder een gratis domein heeft geclaimd (en daarna overgedragen) is permanent geblokkeerd.
 
-Account-leeftijd en site-inhoud zijn geen harde voorwaarden. Die zouden legitieme claims op de dag van onboarding blokkeren, wat in strijd is met de belofte "je bedrijf in een dag opzetten, domein inbegrepen". In plaats daarvan stromen beide in de Gemini-abuse-score als zachte signalen: een gloednieuw account met een template-site scoort laag en komt in handmatige beoordeling; een echt bedrijf met echte inhoud wordt automatisch goedgekeurd, ongeacht de leeftijd. Het eligibility-antwoord bevat een `softSignals`-blok (`ageDays`, `sitePublished`, `paragraphCount`) zodat de UI een hint kan tonen zonder de claim te blokkeren.
+Account-leeftijd en site-inhoud zijn geen harde voorwaarden. Die zouden legitieme claims op de dag van onboarding blokkeren, wat in strijd is met de belofte “je bedrijf in een dag opzetten, domein inbegrepen”. In plaats daarvan stromen beide in de Gemini-abuse-score als zachte signalen die de beoordelingsrij sorteren. De score bepaalt de goedkeuring niet meer in zijn eentje: founders en betalende werkruimtes houden de automatische goedkeuring bij een goede score, een aanvraag vanuit een Office-trial wordt altijd eerst door een mens bekeken (de claim-modal zegt dat er meestal binnen een werkdag antwoord komt), en voor een werkruimte die bij de aanmelding extra controle heeft gekregen gaat een aanvraag nooit automatisch door. De score en de redenen blijven intern: de aanvraag laat ze nooit aan de gebruiker zien. Het eligibility-antwoord bevat een `softSignals`-blok (`ageDays`, `sitePublished`, `paragraphCount`) zodat de UI een hint kan tonen zonder de claim te blokkeren.
 
 Wanneer een voorwaarde niet wordt gehaald, toont de kaart de resterende vereisten zodat de gebruiker kan zien wat er nog nodig is voordat de gratis claim beschikbaar komt.
 

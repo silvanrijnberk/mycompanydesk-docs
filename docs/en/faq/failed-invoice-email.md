@@ -1,7 +1,7 @@
 ---
 title: Failed invoice email
 description: "To fix a failed invoice email: check that the customer record has the correct email address."
-last_verified: 2026-09-21
+last_verified: 2026-09-29
 chatbot:
   triggers: ["failed invoice email", "invoice email failed", "failed send invoice", "invoice not sending", "invoice email issue", "fix failed invoice email", "mislukte factuur-e-mail", "factuurmail mislukt", "factuur e-mail mislukt", "factuur versturen mislukt", "hoe los ik een mislukte factuur-e-mail op", "te veel ontvangers", "inhoudscontrole", "bericht vastgehouden", "fehlgeschlagene rechnungs-e-mail", "rechnungs-e-mail fehlgeschlagen", "rechnung senden fehlgeschlagen", "wie behebe ich eine fehlgeschlagene rechnungs-e-mail", "e-mail de facture echoue", "email facture echoue", "envoi facture echec", "comment corriger un e-mail de facture echoue", "recipient cap", "content hold", "message retenu"]
   actions:
@@ -21,7 +21,7 @@ To fix a failed invoice email:
 
 Did the invoice just leave a new workspace? Then the failure may be one of our anti-abuse guardrails:
 
-- The message has too many recipients (to, cc and bcc combined). The error states the current limit; split the message into multiple emails.
-- The message is held for content review. You will see it is still being checked, and it usually clears within an hour. Add your KVK number in your company details to skip this check permanently.
+- The message has too many recipients (to, cc and bcc combined). The error states the current limit; split the message into multiple emails. The limit can also be temporarily lower than usual, such as one recipient per message, and you can contact us if you need more.
+- The message is held for content review. You will see it is still being checked, and it usually clears within an hour. You get a notification once it is approved, and can then send it again. A verified sending domain, a paid subscription, and a stretch of successfully delivered messages skip this check automatically. Filling in a KVK number no longer skips it: the register alone does not show who is actually behind an account.
 
 Tip: Preview the invoice first if you want to confirm the correct customer and document before resending.

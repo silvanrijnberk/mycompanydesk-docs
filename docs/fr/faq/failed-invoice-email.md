@@ -1,7 +1,7 @@
 ---
 title: "Échec d'envoi d'une facture"
 description: "Pour résoudre l'échec d'envoi d'une facture par e-mail : vérifiez que la fiche client contient la bonne adresse e-mail."
-last_verified: 2026-09-21
+last_verified: 2026-09-29
 chatbot:
   triggers: ["failed invoice email", "invoice email failed", "failed send invoice", "invoice not sending", "invoice email issue", "fix failed invoice email", "mislukte factuur-e-mail", "factuurmail mislukt", "factuur e-mail mislukt", "factuur versturen mislukt", "hoe los ik een mislukte factuur-e-mail op", "te veel ontvangers", "inhoudscontrole", "bericht vastgehouden", "fehlgeschlagene rechnungs-e-mail", "rechnungs-e-mail fehlgeschlagen", "rechnung senden fehlgeschlagen", "wie behebe ich eine fehlgeschlagene rechnungs-e-mail", "e-mail de facture echoue", "email facture echoue", "envoi facture echec", "comment corriger un e-mail de facture echoue", "recipient cap", "content hold", "message retenu"]
   actions:
@@ -21,7 +21,7 @@ Pour résoudre l'échec d'envoi d'une facture par e-mail :
 
 La facture vient-elle d'être envoyée depuis un nouvel espace de travail ? L'échec peut alors venir d'une de nos limites anti-abus :
 
-- Le message a trop de destinataires (à, cc et cci ensemble). Le message d'erreur indique la limite actuelle; divisez le message en plusieurs e-mails.
-- Le message est retenu pour vérification du contenu. Vous verrez qu'il est encore examiné et c'est généralement terminé sous une heure. Renseignez votre numéro KVK dans vos informations d'entreprise pour passer ce contrôle de façon permanente.
+- Le message a trop de destinataires (à, cc et cci ensemble). Le message d'erreur indique la limite actuelle ; divisez le message en plusieurs e-mails. La limite peut aussi être temporairement plus basse que d'habitude, par exemple un destinataire par message. Vous pouvez nous contacter si vous en avez besoin de plus.
+- Le message est retenu pour vérification du contenu. Vous voyez qu'il est encore examiné et c'est généralement réglé sous une heure. Après validation, vous recevez une notification et vous pouvez le renvoyer. Un domaine d'envoi vérifié, un abonnement payant et une série de messages bien délivrés sautent cette vérification automatiquement. Remplir votre numéro KVK ne saute plus cette vérification : le registre seul ne montre pas qui se trouve réellement derrière un compte.
 
 Astuce : affichez d'abord l'aperçu de la facture si vous voulez confirmer le bon client et le bon document avant de renvoyer.

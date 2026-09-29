@@ -1,7 +1,7 @@
 ---
 title: Domaines, site web et boite de reception
 description: "Domaines personnalisés, site vitrine hébergé et boîte partagée arrivent en un seul lot, derrière custom_domains et public_business_page."
-last_verified: 2026-09-26
+last_verified: 2026-09-29
 ---
 
 # Domaines, site web et boite de reception
@@ -174,7 +174,7 @@ L'eligibilite est determinee par un ensemble de conditions strictes verifiees co
 - **Le domaine doit correspondre au nom KVK** -- le domaine doit correspondre a la raison sociale ou a un nom commercial.
 - **Le KVK ne doit pas figurer sur la liste des reclamations conservees** -- un domaine gratuit par numero KVK. Un KVK qui a deja reclame (puis transfere) un domaine gratuit est bloque de façon permanente.
 
-L'age du compte et le contenu du site ne sont pas des conditions strictes. Elles bloqueraient les reclamations legitimes le jour de l'intégration, ce qui contredit la promesse "creez votre entreprise en un jour, domaine inclus". Les deux sont plutot integres dans le score d'abus Gemini comme signaux faibles : un tout nouveau compte avec un site modele obtient un score bas et passe en revision manuelle ; une vraie entreprise avec du vrai contenu est automatiquement approuvee, peu importe l'age. La reponse d'eligibilite contient un bloc `softSignals` (`ageDays`, `sitePublished`, `paragraphCount`) pour que l'interface puisse afficher une indication sans bloquer la reclamation.
+L'âge du compte et le contenu du site ne sont pas des conditions strictes. Ils bloqueraient les demandes légitimes déposées dès le jour de l'inscription, ce qui contredit la promesse « créez votre entreprise en un jour, domaine inclus ». Les deux alimentent donc le score d'abus Gemini comme signaux dits faibles, qui servent à trier la file de révision. Le score ne décide plus de l'approbation à lui seul : les fondateurs et les workspaces payants conservent l'approbation automatique quand le score est bon, une demande venant d'un essai Office passe toujours d'abord par une vérification humaine (la fenêtre indique une réponse habituellement sous un jour ouvré), et un workspace sous surveillance renforcée à l'inscription n'est jamais approuvé automatiquement. Le score et ses raisons restent internes ; la demande ne les montre jamais à l'utilisateur. La réponse d'éligibilité contient un bloc `softSignals` (`ageDays`, `sitePublished`, `paragraphCount`) pour que l'interface puisse afficher une indication sans bloquer la demande.
 
 Lorsqu'une condition n'est pas remplie, la carte liste les exigences restantes pour que l'utilisateur puisse voir ce qu'il reste a debloquer avant que la reclamation gratuite ne soit disponible.
 

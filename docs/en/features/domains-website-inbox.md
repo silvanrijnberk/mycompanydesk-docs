@@ -1,7 +1,7 @@
 ---
 title: Domains, Website, and Inbox
 description: "Custom domains, the hosted business website and the shared inbox ship as one pre-launch bundle behind the custom_domains and public_business_page flags."
-last_verified: 2026-09-28
+last_verified: 2026-09-29
 ---
 
 # Domains, Website, and Inbox
@@ -174,7 +174,7 @@ Eligibility is determined by a set of hard gates checked server-side:
 - **Domain must match the KVK name** -- the domain must correspond to the registered legal name or a trade name.
 - **KVK must not be on the retained-claims list** -- one free domain per KVK number. A KVK that has already claimed (and then transferred away) a free domain is blocked permanently.
 
-Account age and site-content quality are not hard gates. They would block legitimate onboarding-day claims, which contradicts the "set up your business in a day, domain included" pitch. Instead, both flow into the Gemini abuse score as soft signals: a brand-new account with a template site scores low and lands in manual review; a real business with real content auto-approves regardless of age. The eligibility response carries a `softSignals` block (`ageDays`, `sitePublished`, `paragraphCount`) so the UI can surface a hint without blocking the claim.
+Account age and site-content quality are not hard gates. They would block legitimate onboarding-day claims, which contradicts the “set up your business in a day, domain included” pitch. Instead, both flow into the Gemini abuse score as soft signals that help sort the review queue. The score no longer grants approval on its own: Founders and paying workspaces keep automatic approval when the score is good, a claim from an Office-trial workspace is always checked by a person first (the claim modal says an answer usually comes within one working day), and a workspace under heightened signup scrutiny is never approved automatically. The score and its reasons stay internal; the claim flow never shows them to the user. The eligibility response carries a `softSignals` block (`ageDays`, `sitePublished`, `paragraphCount`) so the UI can surface a hint without blocking the claim.
 
 When a gate fails, the card lists the remaining requirements so the user can see what is left to unlock before the free claim becomes available.
 

@@ -91,8 +91,8 @@ La liste du pied de page en dessous est votre liste propre à la boîte de réce
 
 MyCompanyDesk bloque le courrier sortant qui ressemble à un abus, afin que notre domaine d'envoi partagé reste digne de confiance pour tout le monde. Les tout nouveaux comptes ont donc des garde-fous supplémentaires.
 
-- Un maximum de destinataires s'applique par message (à, cc et cci ensemble). Un nouveau compte démarre avec un maximum plus bas pour sa première période ; la limite exacte figure dans l'erreur si vous la dépassez. Répartissez le message sur plusieurs e-mails pour toucher plus de personnes.
-- Les messages des nouveaux comptes peuvent parfois être retenus un moment pour vérification. Vous voyez alors que le message est encore en cours d'examen, et c'est généralement réglé dans l'heure. Renseignez votre numéro KVK dans les informations de votre entreprise pour sauter définitivement cette vérification.
+- Un maximum de destinataires s'applique par message (à, cc et cci ensemble). Un nouveau compte démarre avec un maximum plus bas pour sa première période ; la limite exacte figure dans l'erreur si vous la dépassez. Répartissez le message sur plusieurs e-mails pour toucher plus de personnes. Le maximum peut aussi être temporairement plus bas que d'habitude, par exemple un destinataire par message ; le message d'erreur dit ce qui s'applique, et vous pouvez nous contacter si vous en avez besoin de plus.
+- Les messages des nouveaux comptes peuvent parfois être retenus un moment pour vérification. Vous voyez alors que le message est encore en cours d'examen, et c'est généralement réglé dans l'heure. Après validation, vous recevez une notification et vous pouvez le renvoyer. Un domaine d'envoi vérifié, un abonnement payant et une série de messages bien délivrés sautent cette vérification automatiquement. Renseigner votre numéro KVK ne saute plus cette vérification : le registre seul ne montre pas qui se trouve réellement derrière un compte.
 
 ## Recevoir : boîtes mail et règles
 
