@@ -21,7 +21,7 @@ Vanaf dan vraagt inloggen na je e-mailadres en wachtwoord om de 6-cijferige code
 
 Op dezelfde pagina kun je ook passkeys toevoegen (Touch ID, Face ID, Windows Hello of je telefoon), elke passkey een naam geven en passkeys verwijderen die je niet meer gebruikt. Het inlogscherm biedt daarna ook inloggen met een passkey aan.
 
-Geen 2FA op je account? Ook dan krijgt inloggen op een browser die we nog niet kennen een controle: een code van 6 cijfers per mail, 15 minuten geldig, en MyCompanyDesk onthoudt die browser daarna 30 dagen. Zie [Inlogcode per mail op een nieuwe browser](/account/security#inlogcode-per-mail-op-een-nieuwe-browser).
+Geen 2FA op je account? Ook dan vraagt inloggen op een onbekende browser om een code: zes cijfers per mail, 15 minuten geldig, en MyCompanyDesk onthoudt die browser daarna 30 dagen. Zie [Inlogcode per mail op een nieuwe browser](/account/security#inlogcode-per-mail-op-een-nieuwe-browser).
 
 Geen toegang meer tot je authenticator? Vul bij het inloggen een van je back-upcodes in, of gebruik de link "Geen toegang meer tot je tweede factor?" op het inlogscherm. Na een veiligheidswachttijd van 24 uur wordt je tweede factor gewist en kun je weer inloggen met alleen je wachtwoord.
 

@@ -59,7 +59,7 @@ Heb je geen tweestapsverificatie? Ook dan is je wachtwoord alleen niet genoeg op
 
 De code is 15 minuten geldig. Geen mail gekregen? Kijk in je spammap of gebruik **Stuur een nieuwe code**; de nieuwste code vervangt de vorige. Na vijf verkeerde pogingen werkt de code niet meer en vraag je een nieuwe aan. Na het invoeren onthoudt MyCompanyDesk deze browser 30 dagen, net als "dit apparaat 30 dagen onthouden" bij 2FA, maar hier gebeurt dat automatisch.
 
-Kan de code niet verstuurd worden, dan verwijst het inlogscherm je naar inloggen met Google, Microsoft of een passkey, of naar een poging over een paar minuten. De allereerste inlog na je aanmelding slaat deze stap over, want je e-mailadres is dan net bevestigd.
+Kan de code niet verstuurd worden, dan verwijst het inlogscherm je door naar inloggen met Google, Microsoft of een passkey, of vraagt je het over een paar minuten opnieuw te proberen. De allereerste inlog na je aanmelding slaat deze stap over, want je e-mailadres is dan net bevestigd.
 
 Eén uitzondering: staat je inlogadres op een domein waarvan MyCompanyDesk de mailbox zelf verzorgt? Dan blijft de codestap uit, want de code zou wachten in precies het postvak dat je pas na het inloggen kunt lezen. Zet voor die accounts tweestapsverificatie aan.
 
