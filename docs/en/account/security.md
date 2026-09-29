@@ -1,7 +1,7 @@
 ---
 title: Security
 description: "Protect your account with a strong password, two-factor authentication and an eye on active sessions, all under Settings, Inloggen."
-last_verified: 2026-09-26
+last_verified: 2026-09-29
 ---
 
 # Security
@@ -53,6 +53,16 @@ The waiting period exists so that an attacker with only your password cannot ins
 2. Choose to disable two-step verification
 3. Confirm with a current code from your authenticator app, a backup code, or your password
 
+## A login code by email on a new browser
+
+No two-factor authentication on your account? Your password alone is still not enough on a browser your account does not know yet: after your password, we email a 6-digit code. The login screen then shows the code step you may know from 2FA, now under the title **Confirm it's you**, with the (partly hidden) email address the code was sent to.
+
+The code is valid for 15 minutes. No email arrived? Look in your spam folder, or use **Send a new code**; the newest code replaces the previous one. After five wrong attempts the code no longer works and you ask for a new one. Once you enter the code, MyCompanyDesk remembers this browser for 30 days, like the "remember this device for 30 days" option at 2FA, except here it happens automatically.
+
+If the code cannot be sent at all, the login screen points you to signing in with Google, Microsoft or a passkey instead, or to trying again in a few minutes. The very first login right after registering skips this step, because your email address was just verified.
+
+One exception: is your login address on a domain whose mailbox MyCompanyDesk hosts itself? Then the code step stays off, because the code would wait in exactly the mailbox you can only read after logging in. Set up two-factor authentication for those accounts instead.
+
 ## Passwordless sign-in (magic link)
 
 You can sign in without a password using a one-time link sent to your email:
@@ -78,7 +88,7 @@ Passkeys let you sign in with biometrics or a security key instead of a password
 
 ## Sessions
 
-The sessions card on **Settings > Inloggen** has a single **Log out** action that ends your current session. There is no list of other devices or per-session revoking. If you suspect someone else has access to your account, change your password. Changing or resetting your password ends every other session for your account (the device you made the change on stays signed in) and revokes the trusted devices that skip the 2FA code.
+The sessions card on **Settings > Inloggen** has a single **Log out** action that ends your current session. There is no list of other devices or per-session revoking. If you suspect someone else has access to your account, change your password. Changing or resetting your password ends every other session for your account (the device you made the change on stays signed in) and revokes the trusted devices that skip the code step.
 
 ## Social login
 

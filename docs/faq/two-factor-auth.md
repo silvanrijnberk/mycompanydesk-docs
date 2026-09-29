@@ -1,7 +1,7 @@
 ---
 title: Tweestapsverificatie
 description: "Tweestapsverificatie (2FA) voegt een 6-cijferige code uit een authenticator-app toe bovenop je wachtwoord, ga naar Instellingen > Inloggen."
-last_verified: 2026-09-26
+last_verified: 2026-09-29
 chatbot:
   triggers: ["two factor", "two-factor", "2fa", "two step", "authenticator", "mfa", "tweestapsverificatie", "twee-factor", "zwei faktor", "authentification deux facteurs", "double authentification"]
   actions:
@@ -20,6 +20,8 @@ Zo schakel je 2FA in:
 Vanaf dan vraagt inloggen na je e-mailadres en wachtwoord om de 6-cijferige code. Gebruik je de MyCompanyDesk-app als authenticator, vind je de huidige code onder **Instellingen > Inlogcodes**. Vink "Dit apparaat 30 dagen onthouden" aan en vertrouwde apparaten slaan de code over. Je wachtwoord wijzigen of resetten haalt dit vertrouwen op elk apparaat weer weg, zodat de 6-cijferige code opnieuw wordt gevraagd.
 
 Op dezelfde pagina kun je ook passkeys toevoegen (Touch ID, Face ID, Windows Hello of je telefoon), elke passkey een naam geven en passkeys verwijderen die je niet meer gebruikt. Het inlogscherm biedt daarna ook inloggen met een passkey aan.
+
+Geen 2FA op je account? Ook dan krijgt inloggen op een browser die we nog niet kennen een controle: een code van 6 cijfers per mail, 15 minuten geldig, en MyCompanyDesk onthoudt die browser daarna 30 dagen. Zie [Inlogcode per mail op een nieuwe browser](/account/security#inlogcode-per-mail-op-een-nieuwe-browser).
 
 Geen toegang meer tot je authenticator? Vul bij het inloggen een van je back-upcodes in, of gebruik de link "Geen toegang meer tot je tweede factor?" op het inlogscherm. Na een veiligheidswachttijd van 24 uur wordt je tweede factor gewist en kun je weer inloggen met alleen je wachtwoord.
 

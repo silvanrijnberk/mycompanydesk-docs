@@ -1,7 +1,7 @@
 ---
 title: Beveiliging
 description: "Beveilig je account met een sterk wachtwoord, tweestapsverificatie en zicht op je actieve sessies, allemaal onder Instellingen, Inloggen."
-last_verified: 2026-09-26
+last_verified: 2026-09-29
 ---
 
 # Beveiliging
@@ -53,6 +53,16 @@ De wachttijd bestaat zodat een aanvaller met alleen je wachtwoord niet meteen de
 2. Kies voor het uitschakelen van verificatie in twee stappen
 3. Bevestig met een actuele code uit je authenticator-app, een back-upcode of je wachtwoord
 
+## Inlogcode per mail op een nieuwe browser
+
+Heb je geen tweestapsverificatie? Ook dan is je wachtwoord alleen niet genoeg op een browser die je account nog niet kent: na je wachtwoord mailen we een code van 6 cijfers. Het inlogscherm toont daarna de codestap die je van 2FA kent, nu onder de titel **Bevestig dat jij het bent**, met het (deels gemaskeerde) adres waarnaar de code ging.
+
+De code is 15 minuten geldig. Geen mail gekregen? Kijk in je spammap of gebruik **Stuur een nieuwe code**; de nieuwste code vervangt de vorige. Na vijf verkeerde pogingen werkt de code niet meer en vraag je een nieuwe aan. Na het invoeren onthoudt MyCompanyDesk deze browser 30 dagen, net als "dit apparaat 30 dagen onthouden" bij 2FA, maar hier gebeurt dat automatisch.
+
+Kan de code niet verstuurd worden, dan verwijst het inlogscherm je naar inloggen met Google, Microsoft of een passkey, of naar een poging over een paar minuten. De allereerste inlog na je aanmelding slaat deze stap over, want je e-mailadres is dan net bevestigd.
+
+Eén uitzondering: staat je inlogadres op een domein waarvan MyCompanyDesk de mailbox zelf verzorgt? Dan blijft de codestap uit, want de code zou wachten in precies het postvak dat je pas na het inloggen kunt lezen. Zet voor die accounts tweestapsverificatie aan.
+
 ## Inloggen zonder wachtwoord (magic link)
 
 Je kunt inloggen zonder wachtwoord met een eenmalige link die naar je e-mail wordt gestuurd:
@@ -78,7 +88,7 @@ Met passkeys log je in met biometrie of een beveiligingssleutel in plaats van ee
 
 ## Sessies
 
-De sessiekaart op **Instellingen > Inloggen** heeft één actie: **Uitloggen**, die je huidige sessie beëindigt. Er is geen lijst met andere apparaten en geen intrekken per sessie. Vermoed je dat iemand anders toegang heeft tot je account, wijzig dan je wachtwoord. Je wachtwoord wijzigen of resetten beëindigt elke andere sessie op je account (het apparaat waarop je het wijzigt, blijft ingelogd) en trekt de vertrouwde apparaten in die de 2FA-code overslaan.
+De sessiekaart op **Instellingen > Inloggen** heeft één actie: **Uitloggen**, die je huidige sessie beëindigt. Er is geen lijst met andere apparaten en geen intrekken per sessie. Vermoed je dat iemand anders toegang heeft tot je account, wijzig dan je wachtwoord. Je wachtwoord wijzigen of resetten beëindigt elke andere sessie op je account (het apparaat waarop je het wijzigt, blijft ingelogd) en trekt de vertrouwde apparaten in die de codestap overslaan.
 
 ## Inloggen via Google of Microsoft
 

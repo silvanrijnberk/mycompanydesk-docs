@@ -1,7 +1,7 @@
 ---
 title: Sécurité
 description: "Protégez votre compte avec un mot de passe solide, l'authentification à deux facteurs et un oeil sur vos sessions actives."
-last_verified: 2026-09-26
+last_verified: 2026-09-29
 ---
 
 # Sécurité
@@ -53,6 +53,16 @@ Ce délai existe pour qu'un attaquant qui ne connaît que votre mot de passe ne 
 2. Choisissez de désactiver la vérification en deux étapes
 3. Confirmez avec un code actuel de votre application d'authentification, un code de secours ou votre mot de passe
 
+## Code de connexion par e-mail sur un nouveau navigateur
+
+Vous n'avez pas d'authentification à deux facteurs ? Votre mot de passe seul ne suffit alors pas sur un navigateur que votre compte ne connaît pas encore : après le mot de passe, nous envoyons un code à 6 chiffres par e-mail. L'écran de connexion affiche ensuite l'étape du code que vous connaissez de la 2FA, cette fois sous le titre **Confirmez qu'il s'agit bien de vous**, avec l'adresse (partiellement masquée) à laquelle le code a été envoyé.
+
+Le code est valable 15 minutes. Aucun e-mail reçu ? Regardez vos spams ou utilisez **Envoyer un nouveau code** ; le code le plus récent remplace le précédent. Après cinq mauvaises saisies, le code ne fonctionne plus et vous en demandez un nouveau. Une fois le code saisi, MyCompanyDesk mémorise ce navigateur pendant 30 jours, comme l'option "mémoriser cet appareil pendant 30 jours" de la 2FA, mais automatiquement ici.
+
+Si l'envoi du code échoue, l'écran de connexion vous oriente vers la connexion avec Google, Microsoft ou une passkey, ou vers un nouvel essai dans quelques minutes. La toute première connexion après l'inscription saute cette étape : votre adresse e-mail vient d'être confirmée.
+
+Une exception : si votre adresse de connexion se trouve sur un domaine dont MyCompanyDesk héberge la boîte mail elle-même, l'étape du code reste désactivée, car le code attendrait dans la boîte que vous ne pouvez lire qu'en vous connectant. Activez pour ces comptes l'authentification à deux facteurs.
+
 ## Connexion sans mot de passe (lien magique)
 
 Vous pouvez vous connecter sans mot de passe grâce à un lien à usage unique envoyé par e-mail :
@@ -78,7 +88,7 @@ Les passkeys vous permettent de vous connecter avec la biométrie ou une clé de
 
 ## Sessions
 
-La carte des sessions dans **Paramètres > Connexion** propose une seule action : **Se déconnecter**, qui met fin à votre session actuelle. Il n'y a pas de liste des autres appareils ni de révocation par session. Si vous soupçonnez que quelqu'un d'autre a accès à votre compte, changez votre mot de passe. Changer ou réinitialiser votre mot de passe met fin à toutes les autres sessions de votre compte (l'appareil depuis lequel vous faites le changement reste connecté) et révoque les appareils de confiance qui sautent le code 2FA.
+La carte des sessions dans **Paramètres > Connexion** propose une seule action : **Se déconnecter**, qui met fin à votre session actuelle. Il n'y a pas de liste des autres appareils ni de révocation par session. Si vous soupçonnez que quelqu'un d'autre a accès à votre compte, changez votre mot de passe. Changer ou réinitialiser votre mot de passe met fin à toutes les autres sessions de votre compte (l'appareil depuis lequel vous faites le changement reste connecté) et révoque les appareils de confiance qui sautent l'étape du code.
 
 ## Connexion via Google ou Microsoft
 
