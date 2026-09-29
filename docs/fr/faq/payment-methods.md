@@ -38,7 +38,7 @@ Pour connecter un prestataire :
 1. Allez dans **Paramètres → Paiement**
 2. Sous **Online betalingen**, cliquez sur **Verbind Mollie** ou **Verbind Stripe**
 3. Suivez le flux OAuth pour autoriser votre compte
-4. Une fois connecté, chaque facture envoyée inclut un lien de paiement pour vos clients
+4. Une fois connecté, chaque facture envoyée inclut un lien de paiement pour vos clients. Les courriels de facture et de rappel commencent alors par un bouton **Payer maintenant** qui amène le client directement à la page de paiement ; le paiement ne démarre que dans le navigateur du client, aussi les analyseurs de courriels n'en créent aucun, et le QR de scan et de paiement du PDF de la facture utilise le même lien.
 
 Mollie prend en charge iDEAL, Bancontact, la carte bancaire et le virement, idéal pour les clients néerlandais et belges. Stripe Connect prend en charge la carte, Apple Pay, Google Pay et le prélèvement SEPA, adapté aux clients internationaux.
 

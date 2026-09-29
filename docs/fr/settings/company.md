@@ -1,7 +1,7 @@
 ---
 title: Paramètres entreprise
 description: "The name on your invoices, address, KvK, logo, brand colour, website and opening hours, grouped in Settings."
-last_verified: 2026-09-28
+last_verified: 2026-09-29
 ---
 
 # Company Settings
@@ -26,12 +26,21 @@ The identity form. What every invoice, quote, and email shows.
 
 - **Business name**: appears on every document
 - **Address**: street, postal code, city, country (with address autocomplete)
-- **Registration**: KvK or other registration number. The **Refresh from KVK** button pulls the latest data from the Dutch Chamber of Commerce registry and fills any blank fields (business name, address, postal code, city, country). It never overwrites values you already set. Each workspace gets 100 free KVK lookups per day (cached results do not count toward the limit). When 20 or fewer lookups remain, the field hint switches to a counter showing how many are left. If the daily cap is reached, the button is disabled until the next day or you can enter the data manually.
+- **Registration**: KvK or other registration number. The row warns you (advisory only) when the number does not look like a valid KvK number; actual lookups are done by the fill-in helper at the top of the page, see below.
 - **Tax ID**: VAT number (e.g. `NL123456789B01`)
 - **Contact**: public email, phone, support email, timezone
 - **Website + social**: used by the email signature, business page, and footers. Paste the full address of your profile or page (for example `https://instagram.com/yourcompany`); a value that would not become a link is flagged after you leave the field, and a bare username shows where it would link.
 
 Changes save automatically.
+
+## Aide au remplissage (Vul je gegevens automatisch in)
+
+En haut de la page Bedrijfsgegevens se trouve la carte **Vul je gegevens automatisch in**. Elle tire vos données d'entreprise de deux sources et les place côte à côte :
+
+- **Kamer van Koophandel (KvK)** : nom de l'entreprise et adresse
+- **Google** : téléphone, site web et heures d'ouverture depuis votre profil Google Business
+
+Chaque suggestion figure sous **Dit vonden we** (voici ce que nous avons trouvé) avec sa source indiquée. Cochez ce que vous voulez reprendre et appuyez sur **Overnemen** (reprendre, le bouton compte ce que vous avez coché). Neufs, seuls les champs vides sont remplis : une ligne qui contient déjà quelque chose est marquée **al ingevuld** (déjà rempli) et est passée. Une recherche n'écrase donc jamais votre propre travail. Le bouton KvK qui se trouvait sous le champ d'immatriculation vit désormais dans cette carte : le remplissage automatique se passe ainsi à un seul endroit.
 
 ## Certifications (Keurmerken)
 
@@ -71,6 +80,14 @@ From here you manage one central source for your opening hours. The same hours f
 Your opening hours are shown on the public business page and in the online appointments block. The website tab is managed under the top-level **Website** area; the booking block is covered on [Online appointments](/en/features/site-bookings). Both pull from the same source, so a change here updates both places.
 
 Changes save automatically. See [Online appointments](/en/features/site-bookings) for how the booking block uses your opening hours.
+
+### Suivre Google (Ook op Google bijhouden)
+
+Dans la carte Heures d'ouverture se trouve une ligne qui relie vos horaires à votre profil Google Business. Activez **Ook op Google bijhouden** (tenir aussi à jour sur Google), connectez-vous à Google et choisissez l'établissement à mettre à jour. Ensuite, chaque changement fait ici est posé sur votre profil Google dans la nuit ; la ligne l'annonce avec **Je wijziging gaat vannacht naar Google** (votre changement part ce soir vers Google).
+
+Vos semaines diffèrent-elles ? La ligne demande alors la version qui fait foi, car MyCompanyDesk ne réécrit jamais Google de sa propre initiative : **Zet mijn tijden op Google** (mettre mes heures sur Google) ou **Neem die van Google over** (reprendre celles de Google). Reprendre remplace les heures ci-dessus par celles de Google, ce qui met aussi à jour l'affichage « Ouvert » sur votre site. Seuls les jours différents sont listés, et un jour **sur rendez-vous** apparaît comme fermé chez Google, car Google ne connaît pas cet état. Avec **Nu bijwerken** (mettre à jour maintenant), envoyez vos heures à Google sans attendre la ronde nocturne ; après un envoi échoué, le bouton réapparaît à côté de l'erreur.
+
+Désactiver l'interrupteur arrête la tenue à jour, mais votre compte et votre établissement restent connectés.
 
 ## Logo and colour (Logo en kleur)
 

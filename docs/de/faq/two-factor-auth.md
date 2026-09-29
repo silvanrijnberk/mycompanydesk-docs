@@ -23,6 +23,8 @@ Auf derselben Seite können Sie außerdem Passkeys hinzufügen (Touch ID, Face I
 
 Keine 2FA in Ihrem Konto? Auch dann läuft die Anmeldung auf einem Browser, den wir noch nicht kennen, nicht ohne Kontrolle: ein 6-stelliger Code per E-Mail, 15 Minuten gültig, und MyCompanyDesk merkt sich diesen Browser danach 30 Tage. Siehe [Anmeldecode per E-Mail auf einem neuen Browser](/de/account/security#anmeldecode-per-e-mail-auf-einem-neuen-browser).
 
+Empfindliche Änderungen (Ihre IBAN, Anmeldeadresse, Ihr Passwort, eine Domain, die umzieht, E-Mail-Weiterleitung, API-Schlüssel oder ein neuer Administrator) verlangen zusätzlich zur Anmeldung eine weitere Prüfung: **„Bestätigen Sie, dass Sie es sind“**, mit einem Passkey, der Code-App oder einem Code per E-Mail. Ein Passwort zählt für diesen Schritt nicht. Siehe [Sicherheit](/de/account/security#bestätigen-sie-dass-sie-es-sind-bei-empfindlichen-änderungen).
+
 Kein Zugriff mehr auf Ihren Authenticator? Geben Sie bei der Anmeldung einen Ihrer Backup-Codes ein, oder nutzen Sie den Link "Kein Zugriff mehr auf Ihren zweiten Faktor?" auf dem Anmeldebildschirm. Nach einer Sicherheitswartezeit von 24 Stunden wird Ihr zweiter Faktor gelöscht und Sie können sich wieder nur mit Ihrem Passwort anmelden.
 
 Zum Deaktivieren von 2FA nutzen Sie dieselbe Einstellungsseite und bestätigen mit einem Code aus Ihrer Authenticator-App, einem Backup-Code oder Ihrem Passwort.

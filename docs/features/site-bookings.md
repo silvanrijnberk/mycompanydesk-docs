@@ -1,7 +1,7 @@
 ---
 title: Online afspraken
 description: Laat klanten direct via je website een afspraak inplannen met Site Bookings.
-last_verified: 2026-09-03
+last_verified: 2026-09-29
 ---
 
 # Online afspraken
@@ -56,6 +56,21 @@ De **beschikbare tijden** zelf komen uit de centrale openingstijden die je bij [
 :::tip
 Koppel een **e-mailadres** aan het blok zodat bezoekers een automatische bevestiging ontvangen en je zelf een melding krijgt bij elke nieuwe boeking.
 :::
+
+## Groepsafspraken
+
+Niet elke boeking is één klant op een vrij moment van zijn keuze. Een **groepsafspraak** (een workshop, les of rondleiding) heeft één vaste tijd en een aantal plekken, en er kunnen tegelijk meerdere klanten mee. Je plant de sessies in de agenda onder **Groepsafspraken**:
+
+- **Aanboditem**: de sessie leent zijn naam en, als je een rekent, de prijs van het aanboditem dat je kiest. Nog geen aanbod? Maak eerst een service aan, bijvoorbeeld je workshop.
+- **Eén of meer datums**: plan in één keer meerdere startmomenten, elk met een duur.
+- **Plekken**: hoeveel mensen er in de sessie passen (tussen 1 en 500). **Max per aanmelding** stelt in hoeveel mensen één aanmelding mag meenemen (tot 50).
+- **Aanmelden open tot**: tot de start, een aantal uren vooraf of tot een week vooraf. Tot dat moment kunnen deelnemers zichzelf ook weer afmelden.
+- **Locatie**: optioneel, bijvoorbeeld je studio.
+- **Betaling**: volledig online vooraf betaald (een plek is pas bevestigd als hij betaald is; zonder Mollie of Stripe betaalt men op locatie) of **op locatie**, waar na de sessie voor elke deelnemer een conceptfactuur klaarligt.
+
+Bezoekers melden zich aan via het blok **Groepsafspraken** op je website, in één keer voor één of meerdere personen zolang er plekken zijn. Elke aanmelding wordt los bijgehouden, dus herinneringsmails, de persoonlijke annuleerlink, online betaling en een eventuele factuur werken per deelnemer. In de agenda draagt elke sessie een bezettingsbalk zodat je op één blik ziet hoe vol de groep is, en een sessie neemt je eigen agenda in beslag naast je afspraken; hetzelfde moment kan dus niet dubbel bezet.
+
+Op de sessiepagina vind je de deelnemers: mail ze in één keer, voeg iemand met de hand toe, markeer een no-show of annuleer één persoon (die krijgt een e-mail en de plekken komen vrij). Je kunt de hele sessie ook verzetten of annuleren; een verzetmelding gaat alleen naar deelnemers die ook daadwerkelijk per mail bereikbaar zijn. Een onbetaalde aanmelding die zo blijft liggen wordt **verlopen** in plaats van geannuleerd, en alleen een verlopen aanmelding krijgt zijn plekken terug als de betaling alsnog binnenkomt. Aanmeldingen die jij of de bezoeker zelf afmeldde komen niet terug, en het geld gaat terug. Deelnemers vinden hun sessie, zoals elke afspraak met jou, in hun klantportaal onder **Afspraken**.
 
 ## Een afspraak boeken vanuit het portaal
 

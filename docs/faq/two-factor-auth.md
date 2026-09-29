@@ -23,6 +23,8 @@ Op dezelfde pagina kun je ook passkeys toevoegen (Touch ID, Face ID, Windows Hel
 
 Geen 2FA op je account? Ook dan vraagt inloggen op een onbekende browser om een code: zes cijfers per mail, 15 minuten geldig, en MyCompanyDesk onthoudt die browser daarna 30 dagen. Zie [Inlogcode per mail op een nieuwe browser](/account/security#inlogcode-per-mail-op-een-nieuwe-browser).
 
+Gevoelige wijzigingen (je IBAN, je inlogadres, je wachtwoord, een domein dat verhuist, het doorsturen van je mail, API-sleutels of een nieuwe beheerder) vragen na de inlog nog een extra controle: **Bevestig dat jij het bent**, met een passkey, de code-app of een code per mail. Je wachtwoord telt daar niet bij. Zie [Beveiliging](/account/security#bevestig-dat-jij-het-bent-bij-gevoelige-wijzigingen).
+
 Geen toegang meer tot je authenticator? Vul bij het inloggen een van je back-upcodes in, of gebruik de link "Geen toegang meer tot je tweede factor?" op het inlogscherm. Na een veiligheidswachttijd van 24 uur wordt je tweede factor gewist en kun je weer inloggen met alleen je wachtwoord.
 
 Wil je 2FA uitschakelen? Dat doe je op dezelfde instellingenpagina en bevestig je met een code uit je authenticator-app, een back-upcode of je wachtwoord.

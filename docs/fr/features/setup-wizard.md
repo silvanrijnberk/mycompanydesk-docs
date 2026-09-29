@@ -1,12 +1,12 @@
 ---
 title: Assistant de configuration
-description: "L'assistant sur /setup construit votre première facture : il récupère vos données au registre KVK, remplit paiement et TVA et affiche un aperçu."
-last_verified: 2026-07-15
+description: "L'assistant sur /setup prépare votre entreprise et demande ensuite par quoi commencer : factures, votre site web ou le courriel professionnel."
+last_verified: 2026-09-29
 ---
 
 # Assistant de configuration
 
-L'assistant de configuration sur `/setup` rend un nouvel espace de travail opérationnel en quelques minutes. Il s'articule autour de votre première facture : il demande à qui vous facturez, récupère vos informations d'entreprise dans le registre du commerce néerlandais (KVK), remplit vos coordonnées de paiement et le statut de TVA, et affiche un aperçu en direct de la facture. C'est la porte d'entrée des nouveaux utilisateurs, et il reste disponible ensuite.
+L'assistant de configuration sur `/setup` rend un nouvel espace de travail opérationnel en quelques minutes. Il commence par votre facture : il demande à qui vous facturez, récupère vos informations d'entreprise dans le registre du commerce néerlandais (KVK) et affiche un aperçu en direct de la facture. Juste après l'étape KVK, il demande par quoi vous voulez commencer : par les factures et devis, par votre propre site web ou par le courriel sur votre propre domaine. Rien n'est figé : chaque étape peut être passée et tout peut être modifié plus tard dans les paramètres.
 
 Si vous cherchez le guide de base, commencez par [Configurer votre entreprise](/fr/getting-started/company-setup). Cette page est la référence de chaque étape et de chaque option.
 
@@ -20,12 +20,13 @@ L'assistant ne vous bloque nulle part. **Passer pour l'instant** vous ramène au
 
 ## Les étapes
 
-L'assistant affiche une barre de progression avec jusqu'à quatre étapes :
+L'assistant demande, dans cet ordre :
 
 1. **Client :** à qui vous facturez
 2. **KVK :** les informations de votre entreprise
-3. **Paiement :** votre IBAN et statut de TVA
-4. **Finalisation :** confirmation de l'essai et prochaines étapes optionnelles
+3. **Par quoi commencer :** votre choix (voir [l'étape plus bas](#etape-par-quoi-voulez-vous-commencer))
+4. **Paiement :** votre IBAN et statut de TVA (uniquement sur le parcours facturation)
+5. **Finalisation :** confirmation de l'essai et prochaines étapes optionnelles
 
 **Continuer** avance dès qu'une étape a ce qu'il lui faut ; **Terminer la configuration** sur la dernière étape applique tout.
 
@@ -49,6 +50,16 @@ Deux chemins :
 **Pas d'immatriculation KVK :** continuez sans informations d'entreprise et complétez-les plus tard dans les paramètres, sous **Données de l'entreprise**.
 
 Quand une recherche ne donne rien, l'assistant le dit et propose de passer à la saisie manuelle, avec le nom déjà tapé prérempli.
+
+## Étape : Par quoi voulez-vous commencer ?
+
+Directement après l'étape KVK, l'assistant demande **Par quoi voulez-vous commencer ?** avec trois réponses :
+
+- **Factures et devis** : le parcours habituel. L'assistant poursuit avec l'aperçu de la facture, l'étape Paiement (IBAN et statut de TVA) puis l'écran de fin.
+- **Votre propre site web** : l'assistant s'arrête ici et un bouton vous emmène vers `/website`, où s'ouvre l'éditeur de site.
+- **Le courriel sur votre propre domaine** : l'assistant s'arrête ici et un bouton vous emmène vers `/inbox/setup`, où la boîte mail professionnelle est configurée.
+
+Le choix ne décide que de l'endroit où l'assistant vous remet. Rien n'est activé ni désactivé, et rien n'arrive présélectionné. Le tableau de bord suit le même choix : il propose **Zet je website online** (mettez votre site en ligne) ou **Stel je zakelijke e-mail in** (configurez votre courriel professionnel) tant que le site n'est pas publié ou qu'il n'existe pas de boîte propre sur votre propre domaine, puis revient au parcours facturation.
 
 ## Étape : Paiement
 

@@ -38,7 +38,7 @@ Zo koppel je een verwerker:
 1. Ga naar **Instellingen → Betalen**
 2. Klik onder **Online betalingen** op **Verbind Mollie** of **Verbind Stripe**
 3. Volg de OAuth-stappen om je account te autoriseren
-4. Na het koppelen bevat elke verstuurde factuur een betaallink voor je klanten
+4. Na het koppelen bevat elke verstuurde factuur een betaallink voor je klanten. Factuur- en herinneringsmails beginnen dan met een **Betaal nu**-knop die de klant direct bij de betaalpagina brengt; de betaling start uitsluitend in de browser van de klant, dus mailscanners maken er geen aan, en de scan-en-betaal-QR op de factuur-PDF gebruikt dezelfde link.
 
 Mollie ondersteunt iDEAL, Bancontact, creditcard en bankoverboeking, ideaal voor Nederlandse en Belgische klanten. Stripe Connect ondersteunt card, Apple Pay, Google Pay en SEPA-incasso, geschikt voor internationale klanten.
 

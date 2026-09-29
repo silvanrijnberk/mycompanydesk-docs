@@ -53,6 +53,19 @@ Ce délai existe pour qu'un attaquant qui ne connaît que votre mot de passe ne 
 2. Choisissez de désactiver la vérification en deux étapes
 3. Confirmez avec un code actuel de votre application d'authentification, un code de secours ou votre mot de passe
 
+## Confirmez qu'il s'agit bien de vous pour les changements sensibles
+
+Certains changements sont trop importants pour reposer sur le seul mot de passe. MyCompanyDesk demande d'abord de **confirmer qu'il s'agit bien de vous** avant que vous puissiez :
+
+- modifier ou effacer un IBAN ou une adresse PayPal existants
+- changer votre adresse de connexion ou votre mot de passe
+- supprimer ou déplacer un domaine
+- transférer le courriel vers une autre adresse
+- créer une clé API
+- nommer quelqu'un administrateur, ou transférer la propriété
+
+Vous confirmez avec votre passkey, un code de votre application d'authentification (ou de **Instellingen > Inlogcodes** dans l'appli installée), ou un code à 6 chiffres par e-mail. Votre mot de passe ne compte pas pour cette étape, car celui qui l'a tapé une fois peut être n'importe qui. Après une confirmation, vous avez environ 15 minutes de répit : une connexion fraîche avec code, passkey ou Google compte aussi. Remplir une valeur pour la première fois (à la prise en main, un champ IBAN encore vide) ne demande rien, car il n'existe aucune valeur à protéger.
+
 ## Code de connexion par e-mail sur un nouveau navigateur
 
 Vous n'avez pas d'authentification à deux facteurs ? Votre mot de passe seul ne suffit alors pas sur un navigateur que votre compte ne connaît pas encore : après le mot de passe, nous envoyons un code à 6 chiffres par e-mail. L'écran de connexion affiche ensuite l'étape du code que vous connaissez si vous utilisez la 2FA, cette fois sous le titre **Confirmez qu'il s'agit bien de vous**, avec l'adresse (partiellement masquée) à laquelle le code a été envoyé.
@@ -61,7 +74,7 @@ Le code est valable 15 minutes. Aucun e-mail reçu ? Regardez vos spams ou utili
 
 Si l'envoi du code échoue, l'écran de connexion vous propose de vous connecter avec Google, Microsoft ou une passkey, ou d'essayer à nouveau dans quelques minutes. La toute première connexion après l'inscription saute cette étape : votre adresse e-mail vient d'être confirmée.
 
-Une exception : si votre adresse de connexion se trouve sur un domaine dont MyCompanyDesk héberge la boîte mail elle-même, l'étape du code reste désactivée, car le code attendrait dans la boîte mail, que vous ne pouvez lire qu'en vous connectant. Pour ces comptes, activez plutôt l'authentification à deux facteurs.
+Une exception : si votre adresse de connexion se trouve sur un domaine dont MyCompanyDesk héberge la boîte mail elle-même, l'étape du code reste désactivée, car le code attendrait dans la boîte mail, que vous ne pouvez lire qu'en vous connectant. Pour ces comptes, activez plutôt l'authentification à deux facteurs. Juste après la connexion avec une telle adresse, l'appli propose **Beveilig je inlog** (sécurisez votre connexion) : ajouter une passkey, ou utiliser l'application de codes dans l'appli installée. Vous pouvez repousser cette invitation de 14 jours. Ensuite, pour un compte de domaine hébergé doté d'une passkey, le mot de passe seul ne suffit plus à se connecter : un mot de passe divulgué ne peut donc plus ouvrir votre boîte mail.
 
 ## Connexion sans mot de passe (lien magique)
 
@@ -85,6 +98,9 @@ Les passkeys vous permettent de vous connecter avec la biométrie ou une clé de
 - Enregistrez plusieurs passkeys (Face ID, Touch ID, Windows Hello, clés matérielles)
 - Nommez chaque passkey pour pouvoir révoquer les appareils individuellement
 - Sur l'écran de connexion, une fois votre adresse e-mail saisie, un bouton de connexion par passkey apparaît si votre compte en possède une
+- Les passkeys couvrent aussi la vérification **confirmez qu'il s'agit bien de vous** pour les changements sensibles (voir plus haut), où un mot de passe ne compte pas
+
+Sur un domaine dont MyCompanyDesk héberge la boîte mail, une passkey change la connexion elle-même : le mot de passe seul ne suffit plus à se connecter (voir l'exception plus haut).
 
 ## Sessions
 

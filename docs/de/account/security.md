@@ -53,6 +53,19 @@ Die Wartezeit existiert, damit ein Angreifer, der nur Ihr Passwort kennt, den Sc
 2. Wählen Sie die Deaktivierung der Bestätigung in zwei Schritten
 3. Bestätigen Sie mit einem aktuellen Code aus Ihrer Authenticator-App, einem Backup-Code oder Ihrem Passwort
 
+## Bestätigen Sie, dass Sie es sind, bei empfindlichen Änderungen
+
+Manche Änderungen sind zu wichtig, um allein hinter einem Passwort zu stehen. MyCompanyDesk verlangt zuerst **„Bestätigen Sie, dass Sie es sind“**, bevor Sie:
+
+- eine bestehende IBAN- oder PayPal-Adresse ändern oder löschen
+- Ihre Anmeldeadresse oder Ihr Passwort ändern
+- eine Domain löschen oder umziehen
+- Mail an eine andere Adresse weiterleiten
+- einen API-Schlüssel anlegen
+- jemanden zum Administrator machen oder das Eigentum übertragen
+
+Sie bestätigen mit Ihrem Passkey, einem Code aus Ihrer Authenticator-App (oder aus **Instellingen > Inlogcodes** in der installierten App) oder einem 6-stelligen Code per E-Mail. Ihr Passwort zählt für diesen Schritt nicht, denn wer es einmal eingetippt hat, kann jeder sein. Nach einer Bestätigung haben Sie etwa 15 Minuten Ruhe: eine frische Anmeldung mit Code, Passkey oder Google zählt genauso. Etwas zum ersten Mal ausfüllen (beim Start, ein noch leeres IBAN-Feld) fragt nichts ab, weil es keine bestehende Angabe zu schützen gibt.
+
 ## Anmeldecode per E-Mail auf einem neuen Browser
 
 Haben Sie keine Zwei-Faktor-Authentifizierung? Dann reicht Ihr Passwort allein nicht aus, wenn Sie sich auf einem Browser anmelden, den Ihr Konto noch nicht kennt: Nach dem Passwort senden wir Ihnen einen 6-stelligen Code per E-Mail. Der Anmeldebildschirm zeigt danach den Codeschritt, den Sie von der 2FA kennen, diesmal unter dem Titel „Bestätigen Sie, dass Sie es sind“, mit der (teilweise verdeckten) Adresse, an die der Code gegangen ist.
@@ -61,7 +74,7 @@ Der Code ist 15 Minuten gültig. Keine E-Mail erhalten? Sehen Sie im Spam-Ordner
 
 Lässt sich der Code nicht senden, verweist der Anmeldebildschirm auf die Anmeldung mit Google, Microsoft oder einem Passkey, oder auf einen neuen Versuch in ein paar Minuten. Die allererste Anmeldung nach der Registrierung überspringt diesen Schritt, da Ihre E-Mail-Adresse gerade bestätigt wurde.
 
-Eine Ausnahme: Liegt Ihre Anmeldeadresse auf einer Domain, deren Postfach MyCompanyDesk selbst betreibt, bleibt der Codeschritt aus, denn der Code würde in genau dem Postfach warten, das Sie erst nach der Anmeldung lesen können. Richten Sie für solche Konten die Zwei-Faktor-Authentifizierung ein.
+Eine Ausnahme: Liegt Ihre Anmeldeadresse auf einer Domain, deren Postfach MyCompanyDesk selbst betreibt, bleibt der Codeschritt aus, denn der Code würde in genau dem Postfach warten, das Sie erst nach der Anmeldung lesen können. Richten Sie für solche Konten die Zwei-Faktor-Authentifizierung ein. Direkt nach der Anmeldung mit so einer Adresse bietet die App **Beveilig je inlog** (Sichern Sie Ihre Anmeldung) an: einen Passkey hinzufügen oder die Code-App in der installierten App nutzen. Die Aufforderung dürfen Sie 14 Tage aufhalten. Danach gilt für so ein Konto mit Passkey: das Passwort allein ist keine Anmeldung mehr, sodass ein geleaktes Passwort Ihre Mailbox nicht öffnen kann.
 
 ## Anmelden ohne Passwort (Magic Link)
 
@@ -85,6 +98,9 @@ Mit Passkeys melden Sie sich mit Biometrie oder einem Sicherheitsschlüssel stat
 - Registrieren Sie mehrere Passkeys (Face ID, Touch ID, Windows Hello, Hardware-Schlüssel)
 - Benennen Sie jeden Passkey, damit Sie Geräte einzeln widerrufen können
 - Auf dem Anmeldebildschirm erscheint nach Eingabe Ihrer E-Mail-Adresse eine Passkey-Schaltfläche, wenn Ihr Konto einen besitzt
+- Passkeys decken auch die Prüfung **„Bestätigen Sie, dass Sie es sind“** bei empfindlichen Änderungen ab (siehe oben), bei der ein Passwort nicht zählt
+
+Auf einer Domain, deren Postfach MyCompanyDesk betreibt, ändert ein Passkey die Anmeldung selbst: das Passwort allein ist keine Anmeldung mehr (siehe die Ausnahme oben).
 
 ## Sitzungen
 

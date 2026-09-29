@@ -57,6 +57,21 @@ Die **verfügbaren Zeitfenster** selbst stammen aus den zentralen Öffnungszeite
 Verknüpfen Sie den Block mit einer **E-Mail-Adresse**, damit Besucher eine automatische Bestätigung erhalten und Sie bei jeder neuen Buchung benachrichtigt werden.
 :::
 
+## Gruppentermine
+
+Nicht jede Buchung ist ein Kunde zu einer frei gewählten Zeit. Ein **Gruppentermin** (ein Workshop, ein Kurs, eine Führung) hat eine feste Zeit und eine Anzahl von Plätzen, und mehrere Kunden können gleichzeitig teilnehmen. Sie planen die Sitzungen im Kalender unter **Gruppentermine**:
+
+- **Sortiment-Item**: Name und, falls Sie einen berechnen, Preis der Sitzung kommen aus dem Sortiment-Item, das Sie auswählen. Noch kein Sortiment? Legen Sie zuerst eine Service an, zum Beispiel für Ihren Workshop.
+- **Ein oder mehrere Termine**: planen Sie mehrere Startzeiten auf einmal, jede mit ihrer Dauer.
+- **Plätze**: wie viele Personen in die Sitzung passen (zwischen 1 und 500). **Max. pro Anmeldung** legt fest, wie viele Personen eine Anmeldung mitbringen darf (bis 50).
+- **Anmeldung offen bis**: bis zum Beginn, eine bestimmte Zahl von Stunden davor oder eine Woche davor. Bis dahin können die Teilnehmenden sich auch selbst abmelden.
+- **Ort**: optional, zum Beispiel Ihr Studio.
+- **Zahlung**: vollständig online im Voraus bezahlt (ein Platz ist erst bestätigt, wenn er bezahlt ist; ohne Mollie oder Stripe zahlt man vor Ort) oder **vor Ort**, wobei nach der Sitzung für jede Teilnehmende ein Rechnungsentwurf bereitliegt.
+
+Besuchende melden sich über den Block **Gruppentermine** auf Ihrer Website an, in einer Anmeldung für eine oder mehrere Personen, solange Plätze übrig sind. Jede Anmeldung wird getrennt pro Person geführt, deshalb funktionieren Erinnerungsmails, der persönliche Abmeldelink, Onlinezahlung und eine eventuelle Rechnung pro Teilnehmendem. Im Kalender trägt jede Sitzung einen Auslastungsbalken, damit Sie auf einen Blick sehen, wie voll die Gruppe ist, und eine Sitzung belegt Ihren eigenen Kalender neben Ihren Terminen; derselbe Zeitpunkt kann also nicht doppelt belegt sein.
+
+Auf der Sitzungsseite finden Sie die Teilnehmenden: in einem Zug mailen, jemanden per Hand hinzufügen, als Nichterscheinen kennzeichnen oder eine Einzelperson abmelden (sie erhält eine E-Mail und die Plätze werden wieder frei). Sie können die ganze Sitzung auch verschieben oder absagen; eine Verschiebemeldung geht nur an Teilnehmende, die auch wirklich per E-Mail erreichbar sind. Eine unbezahlte Anmeldung, die unbezahlt bleibt, wird **abgelaufen** statt abgesagt, und erst eine abgelaufene Anmeldung bekommt ihre Plätze zurück, wenn die Zahlung noch rechtzeitig eintrifft. Anmeldungen, die Sie selbst oder die besuchende Person abgemeldet hat, kommen nicht zurück, und das Geld geht zurück. Teilnehmende finden ihre gebuchte Sitzung wie jeden Termin mit Ihnen in ihrem Kundenportal unter **Termine**.
+
 ## Einen Termin über das Portal buchen
 
 Besucher sehen auf Ihrer Website eine Übersicht mit verfügbaren Zeiten. Sobald sie ein Zeitfenster wählen, geben sie ihre Daten ein und bestätigen die Anfrage. Je nach Einstellung:

@@ -23,6 +23,8 @@ On the same page you can also add passkeys (Touch ID, Face ID, Windows Hello or 
 
 No 2FA on your account? Signing in from a browser we do not know yet still gets a check: a 6-digit code by email, valid for 15 minutes, and MyCompanyDesk remembers that browser for 30 days afterwards. See [a login code by email on a new browser](/en/account/security#a-login-code-by-email-on-a-new-browser).
 
+Sensitive changes (your IBAN, login address, password, a domain that moves away, mail forwarding, API keys or a new admin) ask one more check on top of any login: **Confirm it's you**, with a passkey, the code app or an emailed code. A password is not enough for that step. See [Security](/en/account/security#confirm-its-you-for-sensitive-changes).
+
 Lost access to your authenticator? Enter one of your backup codes at sign-in, or use the "Lost access to your second factor?" link on the login screen. After a 24-hour security delay your second factor is cleared and you can sign in with just your password.
 
 To turn 2FA off, use the same settings page and confirm with a code from your authenticator app, a backup code, or your password.

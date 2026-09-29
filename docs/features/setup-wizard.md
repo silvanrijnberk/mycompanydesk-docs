@@ -1,12 +1,12 @@
 ---
 title: Setupwizard
-description: "De wizard op /setup bouwt je eerste factuur: hij haalt je gegevens uit het KVK-register, vult betaalgegevens en BTW in en toont live een voorbeeld."
-last_verified: 2026-07-15
+description: "De wizard op /setup zet je bedrijf klaar en vraagt daarna waar je wilt beginnen: facturen, je eigen website of zakelijke e-mail op je eigen domein."
+last_verified: 2026-09-29
 ---
 
 # Setupwizard
 
-De setupwizard op `/setup` maakt een nieuwe werkruimte in een paar minuten gebruiksklaar. De wizard draait om je eerste factuur: hij vraagt voor wie je factureert, haalt je bedrijfsgegevens op uit het Handelsregister (KVK), vult je betaalgegevens en btw-status in en toont een live voorbeeld van de factuur terwijl je bezig bent. Niets staat vast: elke stap kun je overslaan en alles kun je later aanpassen in Instellingen.
+De setupwizard op `/setup` maakt een nieuwe werkruimte in een paar minuten gebruiksklaar. Hij begint bij je factuur: hij vraagt voor wie je factureert, haalt je bedrijfsgegevens op uit het Handelsregister (KVK) en toont een live voorbeeld van de factuur terwijl je bezig bent. Direct na de KVK-stap vraagt hij waar je mee wilt beginnen: met facturen en offertes, met je eigen website of met e-mail op je eigen domein. Niets staat vast: elke stap kun je overslaan en alles kun je later aanpassen in Instellingen.
 
 Kom je voor de basisuitleg, begin dan bij [Je bedrijf instellen](/getting-started/company-setup). Deze pagina is de referentie voor elke stap en optie.
 
@@ -20,12 +20,13 @@ De wizard is optioneel. **Voor nu overslaan** brengt je naar het dashboard zonde
 
 ## De stappen
 
-De wizard toont een voortgangsbalk met maximaal vier stappen:
+De wizard vraagt, in deze volgorde:
 
 1. **Klant**: voor wie je factureert
 2. **KVK**: je bedrijfsgegevens
-3. **Betaald krijgen**: je IBAN en btw-status
-4. **Afronden**: proefbevestiging en optionele vervolgstappen
+3. **Waar je mee begint**: jouw keuze (zie [de stap hieronder](#stap-waar-wil-je-mee-beginnen))
+4. **Betaald krijgen**: je IBAN en btw-status (alleen op de factuurroute)
+5. **Afronden**: proefbevestiging en optionele vervolgstappen
 
 **Doorgaan** brengt je verder zodra een stap heeft wat hij nodig heeft; **Setup afronden** op de laatste stap past alles toe.
 
@@ -49,6 +50,16 @@ Twee routes:
 Geen KVK-inschrijving? Ga verder zonder bedrijfsgegevens en vul ze later in onder **Bedrijfsgegevens** in Instellingen.
 
 Levert een zoekopdracht niets op, dan zegt de wizard dat en biedt hij aan om over te schakelen naar handmatig invullen, met de naam die je typte alvast ingevuld.
+
+## Stap: Waar wil je mee beginnen?
+
+Direct na de KVK-stap vraagt de wizard **Waar wil je mee beginnen?** met drie antwoorden:
+
+- **Facturen en offertes**: de gewone route. De wizard gaat verder met het factuurvoorbeeld, de stap Betaald krijgen (IBAN en btw-status) en het afrondscherm.
+- **Je eigen website**: de wizard stopt hier en een knop brengt je naar `/website`, waar de site-editor opent.
+- **E-mail op je eigen domein**: de wizard stopt hier en een knop brengt je naar `/inbox/setup`, waar je zakelijke mailbox wordt ingesteld.
+
+De keuze bepaalt alleen waar de wizard je aflevert. Er gaat geen onderdeel aan of uit en er staat niets voorgeselecteerd. Het dashboard volgt dezelfde keuze: het biedt **Zet je website online** of **Stel je zakelijke e-mail in** aan zolang je site nog niet online staat of er geen eigen postbus op je eigen domein is, en keert daarna terug naar de factuurroute.
 
 ## Stap: Betaald krijgen
 

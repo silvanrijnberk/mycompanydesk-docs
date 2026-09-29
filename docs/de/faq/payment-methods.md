@@ -38,7 +38,7 @@ So verbinden Sie einen Anbieter:
 1. Gehen Sie zu **Einstellungen → Zahlung**
 2. Klicken Sie unter **Online betalingen** auf **Verbind Mollie** oder **Verbind Stripe**
 3. Folgen Sie dem OAuth-Vorgang zur Autorisierung Ihres Kontos
-4. Nach der Verbindung enthält jede versendete Rechnung einen Zahlungslink für Ihre Kunden
+4. Nach der Verbindung enthält jede versendete Rechnung einen Zahlungslink für Ihre Kunden. Rechnungs- und Erinnerungsmails beginnen dann mit einer Schaltfläche **Jetzt bezahlen**, die den Kunden direkt zur Zahlungsseite bringt; die Zahlung startet ausschließlich im Browser des Kunden, deshalb richten Mailscanner keine ein, und der Scan-und-Bezahl-QR-Code auf der Rechnungs-PDF nutzt denselben Link.
 
 Mollie unterstützt iDEAL, Bancontact, Kreditkarte und Banküberweisung, ideal für niederländische und belgische Kunden. Stripe Connect unterstützt Karte, Apple Pay, Google Pay und SEPA-Lastschrift, geeignet für internationale Kunden.
 

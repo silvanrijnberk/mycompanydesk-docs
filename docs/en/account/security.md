@@ -53,6 +53,19 @@ The waiting period exists so that an attacker with only your password cannot ins
 2. Choose to disable two-step verification
 3. Confirm with a current code from your authenticator app, a backup code, or your password
 
+## Confirm it's you for sensitive changes
+
+Some changes are too important to sit behind a password alone. MyCompanyDesk asks to **Confirm it's you** before you can:
+
+- Change or clear an existing IBAN or PayPal address
+- Change your login address or password
+- Remove or move a domain
+- Forward mail to another address
+- Create an API key
+- Promote someone to admin, or transfer ownership
+
+You confirm with your passkey, a code from your authenticator app (or from **Instellingen > Inlogcodes** in the installed app), or a 6-digit code by email. Your password is not accepted for this step, because whoever typed it once could be anyone. After a confirmation you get about 15 minutes of quiet: a fresh sign-in with a code, passkey or Google counts the same way. Filling in a value for the first time (starting onboarding, an empty IBAN field) never asks, because there is no existing value to protect.
+
 ## A login code by email on a new browser
 
 No two-factor authentication on your account? Your password alone is still not enough on a browser your account does not know yet: after your password, we email a 6-digit code. The login screen then shows the code step you may know from 2FA, now under the title **Confirm it's you**, with the (partly hidden) email address the code was sent to.
@@ -61,7 +74,7 @@ The code is valid for 15 minutes. No email arrived? Look in your spam folder, or
 
 If the code cannot be sent at all, the login screen points you to signing in with Google, Microsoft or a passkey instead, or to trying again in a few minutes. The very first login right after registering skips this step, because your email address was just verified.
 
-One exception: is your login address on a domain whose mailbox MyCompanyDesk hosts itself? Then the code step stays off, because the code would wait in exactly the mailbox you can only read after logging in. Set up two-factor authentication for those accounts instead.
+One exception: is your login address on a domain whose mailbox MyCompanyDesk hosts itself? Then the code step stays off, because the code would wait in exactly the mailbox you can only read after logging in. Set up two-factor authentication for those accounts instead. Right after signing in with such an address, the app offers **Beveilig je inlog** (Secure your sign-in): add a passkey, or use the code app inside the installed app. You can put the offer off for 14 days. From then on, a hosted-domain account with a passkey no longer accepts the password alone as a login, so a leaked password cannot open your mailbox.
 
 ## Passwordless sign-in (magic link)
 
@@ -85,6 +98,9 @@ Passkeys let you sign in with biometrics or a security key instead of a password
 - Register multiple passkeys (Face ID, Touch ID, Windows Hello, hardware keys)
 - Name each passkey so you can revoke individual devices
 - On the login screen, once you enter your email address, a passkey sign-in button is offered if your account has one
+- Passkeys also cover the **Confirm it's you** check for sensitive changes (see above), where a password is not enough
+
+On a domain whose mailbox MyCompanyDesk hosts, adding a passkey changes login itself: the password alone no longer signs you in (see the hosted-domain paragraph above).
 
 ## Sessions
 
