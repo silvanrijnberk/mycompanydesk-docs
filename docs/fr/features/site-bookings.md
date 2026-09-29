@@ -1,7 +1,7 @@
 ---
 title: Rendez-vous en ligne
 description: Permettez aux clients de prendre rendez-vous directement via votre site avec Site Bookings.
-last_verified: 2026-09-03
+last_verified: 2026-09-29
 ---
 
 # Rendez-vous en ligne
@@ -56,6 +56,21 @@ Les **créneaux disponibles** proviennent des heures d'ouverture centrales défi
 :::tip
 Liez le bloc à une **adresse e-mail** pour que les visiteurs reçoivent une confirmation automatique et que vous soyez informé de chaque nouvelle réservation.
 :::
+
+## Séances de groupe
+
+Toute réservation n'est pas un client seul à une heure librement choisie. Une **séance de groupe** (un atelier, un cours, une visite guidée) a une heure fixe et un nombre de places, et plusieurs clients peuvent y participer en même temps. Vous les planifiez dans l'agenda sous **Groepsafspraken** (séances de groupe) :
+
+- **Article du catalogue** : la séance tire son nom et, si vous en calculez un, son prix de l'article du catalogue que vous choisissez. Pas encore de catalogue ? Créez d'abord un service, par exemple pour votre atelier.
+- **Une ou plusieurs dates** : planifiez plusieurs heures de départ d'un coup, chacune avec sa durée.
+- **Places** : combien de personnes tiennent dans la séance (entre 1 et 500). **Max. par inscription** définit combien de personnes une même inscription peut amener (jusqu'à 50).
+- **Inscriptions ouvertes jusqu'à** : jusqu'au début, un certain nombre d'heures avant ou une semaine avant. Jusque-là, les participants peuvent aussi se désinscrire eux-mêmes.
+- **Lieu** : optionnel, par exemple votre studio.
+- **Paiement** : payé intégralement en ligne à l'avance (une place n'est confirmée qu'une fois payée ; sans Mollie ni Stripe, les gens paient sur place) ou **sur place**, où une facture en brouillon attend chaque participant après la séance.
+
+Les visiteurs s'inscrivent via le bloc **Groepsafspraken** sur votre site, pour une ou plusieurs personnes en une fois tant qu'il reste des places. Chaque inscription est tenue séparément par participant : les courriels de rappel, le lien d'annulation personnel, le paiement en ligne et une éventuelle facture fonctionnent par personne. Dans l'agenda, chaque séance porte sa barre de remplissage, pour voir d'un coup d'œil à quel point le groupe est plein, et une séance occupe votre propre agenda à côté de vos rendez-vous ; le même moment ne peut donc pas être pris deux fois.
+
+Sur la page de la séance, vous trouvez les participants : écrivez-leur en une fois, ajoutez quelqu'un à la main, marquez une absence, ou annulez une seule personne (elle reçoit un e-mail et les places redeviennent libres). Vous pouvez aussi déplacer ou annuler la séance entière ; un avis de déplacement ne part qu'aux participants réellement joignables par e-mail. Une inscription non payée qui reste impayée devient **expirée** plutôt qu'annulée, et seule une inscription expirée récupère ses places si le paiement finit par arriver. Les inscriptions que vous ou le visiteur avez annulées ne reviennent pas, et l'argent repart. Les participants retrouvent leur séance, comme tout rendez-vous avec vous, dans leur portail client sous **Rendez-vous**.
 
 ## Réserver un rendez-vous depuis le portail
 

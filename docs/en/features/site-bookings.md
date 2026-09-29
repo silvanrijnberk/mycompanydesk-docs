@@ -1,7 +1,7 @@
 ---
 title: Online appointments
 description: Let customers book appointments directly through your website with Site Bookings.
-last_verified: 2026-09-03
+last_verified: 2026-09-29
 ---
 
 # Online appointments
@@ -56,6 +56,21 @@ The **available time slots** themselves come from the central opening hours set 
 :::tip
 Connect an **email address** to the block so visitors receive an automatic confirmation and you get a notification for every new booking.
 :::
+
+## Group sessions
+
+Not every booking is one customer at a free time of their choosing. A **group session** (a workshop, a class, a guided tour) has one fixed time and a number of places, and several customers can take part. You schedule the sessions in the agenda under **Groepsafspraken** (Group sessions):
+
+- **Item from your offering**: the session takes its name and price from the offering item you pick. No offering yet? Add a service first, for example your workshop.
+- **One or more dates**: plan several start times in one go, each with its duration.
+- **Places**: how many people fit the session (between 1 and 500). **Max per sign-up** sets how many people one registration can bring (up to 50).
+- **Sign-up open until**: until the start, a set number of hours before, or one week before. Until that moment participants can also cancel themselves.
+- **Location**: optional, for example your studio.
+- **Payment**: paid in full online (a place is only confirmed once paid; without Mollie or Stripe connected, people pay on site) or **on site**, where a draft invoice is ready for each participant after the session.
+
+Visitors sign up through the **Groepsafspraken** block on your website, for one or several people in one go as long as places remain. Every enrolment is kept per participant, so reminder emails, the personal cancellation link, online payment and a possible invoice all work per person. In the agenda, each session carries its occupancy bar so you can see at a glance how full the group is, and a session occupies your own calendar alongside your appointments, so the same moment cannot hold both.
+
+On the session page you find the participants: email them in one go, add someone by hand, mark a no-show, or cancel one person (they receive an email and the places become available again). You can also move or cancel the whole session; a notice about a move is only mailed to participants who actually receive email. An unpaid registration that stays unpaid becomes **expired** instead of cancelled, and only an expired registration gets its places back when the payment still lands in time. Registrations you or the visitor cancelled do not come back, and their money goes back. Participants find their booked session, like any appointment with you, in their customer portal under **Appointments**.
 
 ## Booking an appointment from the portal
 

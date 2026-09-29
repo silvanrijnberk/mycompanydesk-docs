@@ -1,12 +1,12 @@
 ---
 title: Einrichtungsassistent
-description: "Der Assistent unter /setup baut Ihre erste Rechnung: Er holt Ihre Daten aus dem KVK-Register, füllt Zahlung und Steuer und zeigt eine Live-Vorschau."
-last_verified: 2026-07-15
+description: "Der Assistent unter /setup richtet Ihr Unternehmen ein und fragt danach, womit Sie starten wollen: Rechnungen, Ihre Website oder geschäftliche E-Mail."
+last_verified: 2026-09-29
 ---
 
 # Einrichtungsassistent
 
-Der Einrichtungsassistent unter `/setup` macht einen neuen Arbeitsbereich in wenigen Minuten startklar. Er dreht sich um Ihre erste Rechnung: Er fragt, wen Sie abrechnen möchten, holt Ihre Unternehmensdaten aus dem niederländischen Handelsregister (KVK), füllt Zahlungsdetails und USt.-Status aus und zeigt dabei eine Live-Vorschau der Rechnung. Er ist die Eingangstür für neue Benutzer und bleibt danach verfügbar.
+Der Einrichtungsassistent unter `/setup` macht einen neuen Arbeitsbereich in wenigen Minuten startklar. Er beginnt bei Ihrer Rechnung: Er fragt, wen Sie abrechnen möchten, holt Ihre Unternehmensdaten aus dem niederländischen Handelsregister (KVK) und zeigt dabei eine Live-Vorschau der Rechnung. Direkt nach dem KVK-Schritt fragt er, womit Sie starten wollen: mit Rechnungen und Angeboten, mit Ihrer eigenen Website oder mit E-Mail auf Ihrer eigenen Domain. Nichts steht fest: Jeder Schritt lässt sich überspringen, und alles lässt sich später in den Einstellungen ändern.
 
 Wenn Sie die Grundlagen suchen, beginnen Sie bei [Unternehmen einrichten](/de/getting-started/company-setup). Diese Seite ist die Referenz für jeden Schritt und jede Option.
 
@@ -20,12 +20,13 @@ Der Assistent blockiert Sie nirgends. **Vorerst überspringen** bringt Sie zum D
 
 ## Die Schritte
 
-Der Assistent zeigt eine Fortschrittsleiste mit bis zu vier Schritten:
+Der Assistent fragt, in dieser Reihenfolge:
 
 1. **Kunde:** wen Sie abrechnen möchten
 2. **KVK:** Ihre Unternehmensdaten
-3. **Zahlungseingang:** Ihr IBAN und USt.-Status
-4. **Abschluss:** Testbestätigung und optionale nächste Schritte
+3. **Womit Sie starten:** Ihre Wahl (siehe [den Schritt unten](#schritt-womit-wollen-sie-starten))
+4. **Zahlungseingang:** Ihr IBAN und USt.-Status (nur auf der Rechnungsroute)
+5. **Abschluss:** Testbestätigung und optionale nächste Schritte
 
 **Weiter** führt fort, sobald ein Schritt hat, was er braucht; **Einrichtung abschließen** auf dem letzten Schritt wendet alles an.
 
@@ -49,6 +50,16 @@ Zwei Wege:
 **Kein Handelsregister-Eintrag?**: Fahren Sie ohne Unternehmensdaten fort und tragen Sie sie später unter Unternehmensdaten in den Einstellungen nach.
 
 Findet eine Suche nichts, sagt der Assistent das und bietet den Wechsel zur manuellen Eingabe an, mit dem bereits eingetippten Namen vorausgefüllt.
+
+## Schritt: Womit wollen Sie starten?
+
+Direkt nach dem KVK-Schritt fragt der Assistent **Womit wollen Sie starten?** mit drei Antworten:
+
+- **Rechnungen und Angebote**: die gewohnte Route. Der Assistent fährt fort mit der Rechnungsvorschau, dem Schritt Zahlungseingang (IBAN und USt.-Status) und dem Abschlussbildschirm.
+- **Ihre eigene Website**: der Assistent endet hier, und eine Schaltfläche bringt Sie zu `/website`, wo sich der Website-Editor öffnet.
+- **E-Mail auf Ihrer eigenen Domain**: der Assistent endet hier, und eine Schaltfläche bringt Sie zu `/inbox/setup`, wo das geschäftliche Postfach eingerichtet wird.
+
+Die Wahl bestimmt nur, wo der Assistent Sie absetzt. Nichts wird ein- oder ausgeschaltet und nichts fertig vorausgewählt. Das Dashboard folgt derselben Wahl: Es bietet **Zet je website online** (Stellen Sie Ihre Website online) oder **Stel je zakelijke e-mail in** (Richten Sie Ihre geschäftliche E-Mail ein) an, bis die Website veröffentlicht ist oder ein eigenes Postfach auf Ihrer eigenen Domain besteht, und kehrt danach zur Rechnungsroute zurück.
 
 ## Schritt: Zahlungseingang
 

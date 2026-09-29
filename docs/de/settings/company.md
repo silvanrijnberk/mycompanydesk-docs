@@ -1,7 +1,7 @@
 ---
 title: Firmeneinstellungen
 description: "The name on your invoices, address, KvK, logo, brand colour, website and opening hours, grouped in Settings."
-last_verified: 2026-09-28
+last_verified: 2026-09-29
 ---
 
 # Company Settings
@@ -26,12 +26,21 @@ The identity form. What every invoice, quote, and email shows.
 
 - **Business name**: appears on every document
 - **Address**: street, postal code, city, country (with address autocomplete)
-- **Registration**: KvK or other registration number. The **Refresh from KVK** button pulls the latest data from the Dutch Chamber of Commerce registry and fills any blank fields (business name, address, postal code, city, country). It never overwrites values you already set. Each workspace gets 100 free KVK lookups per day (cached results do not count toward the limit). When 20 or fewer lookups remain, the field hint switches to a counter showing how many are left. If the daily cap is reached, the button is disabled until the next day or you can enter the data manually.
+- **Registration**: KvK or other registration number. The row warns you (advisory only) when the number does not look like a valid KvK number; actual lookups are done by the fill-in helper at the top of the page, see below.
 - **Tax ID**: VAT number (e.g. `NL123456789B01`)
 - **Contact**: public email, phone, support email, timezone
 - **Website + social**: used by the email signature, business page, and footers. Paste the full address of your profile or page (for example `https://instagram.com/yourcompany`); a value that would not become a link is flagged after you leave the field, and a bare username shows where it would link.
 
 Changes save automatically.
+
+## Ausfüllhilfe (Vul je gegevens automatisch in)
+
+Oben auf der Seite Bedrijfsgegevens liegt die Karte **Vul je gegevens automatisch in**. Sie zieht Ihre Unternehmensdaten aus zwei Quellen und stellt sie nebeneinander:
+
+- **Kamer van Koophandel (KvK)**: Firmenname und Adresse
+- **Google**: Telefon, Website und Öffnungszeiten aus Ihrem Google-Unternehmensprofil
+
+Jeder Vorschlag steht unter **Dit vonden we** (Das haben wir gefunden) mit genannter Quelle. Kreuzen Sie an, was Sie übernehmen wollen, und drücken Sie **Overnemen** (übernehmen, die Schaltfläche zählt mit, was Sie gewählt haben). Gefüllt werden nur leere Felder: eine Zeile, in der schon etwas steht, wird mit **al ingevuld** (schon ausgefüllt) markiert und übersprungen. Eine Abfrage überschreibt also nie Ihre eigene Arbeit. Die KvK-Schaltfläche, die bisher unter dem Registrierungsfeld lag, sitzt jetzt in dieser Karte; das automatische Ausfüllen geschieht so an einem Ort.
 
 ## Certifications (Keurmerken)
 
@@ -71,6 +80,14 @@ From here you manage one central source for your opening hours. The same hours f
 Your opening hours are shown on the public business page and in the online appointments block. The website tab is managed under the top-level **Website** area; the booking block is covered on [Online appointments](/en/features/site-bookings). Both pull from the same source, so a change here updates both places.
 
 Changes save automatically. See [Online appointments](/en/features/site-bookings) for how the booking block uses your opening hours.
+
+### Google mitführen (Ook op Google bijhouden)
+
+In der Karte Öffnungszeiten sitzt eine Zeile, die Ihre Zeiten mit Ihrem Google-Unternehmensprofil verbindet. Schalten Sie **Ook op Google bijhouden** ein (auch auf Google aktuell halten), melden Sie sich bei Google an und wählen Sie den Standort, der aktualisiert werden darf. Ändern Sie danach etwas, stellt MyCompanyDesk diese Änderung in der Nacht auch auf Ihrem Google-Profil; die Zeile meldet das mit **Je wijziging gaat vannacht naar Google** (Ihre Änderung geht heute Nacht zu Google).
+
+Weichen die Wochen ab? Dann fragt die Zeile, welche Fassung gilt, denn MyCompanyDesk überschreibt Google nie von sich aus: **Zet mijn tijden op Google** (meine Zeiten auf Google stellen) oder **Neem die van Google over** (Googles Zeiten übernehmen). Das Übernehmen ersetzt die oben stehenden Zeiten durch die von Google und aktualisiert damit auch die „Jetzt geöffnet“-Anzeige auf Ihrer Website. Gelistet werden nur die Tage, die abweichen, und ein Tag auf **auf Termin** erscheint bei Google als geschlossen, weil Google diesen Zustand nicht kennt. Mit **Nu bijwerken** (jetzt aktualisieren) schicken Sie Ihre Zeiten ohne Warten auf die nächtliche Runde zu Google; nach einer misslungenen Zustellung steht die Schaltfläche neben dem Fehler erneut bereit.
+
+Schalten Sie den Schalter aus, wird das Nachhalten gestoppt, aber Ihr Konto und Ihr Standort bleiben verbunden.
 
 ## Logo and colour (Logo en kleur)
 

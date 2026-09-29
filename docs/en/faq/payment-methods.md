@@ -38,7 +38,7 @@ To connect a processor:
 1. Go to **Settings → Betalen**
 2. Under **Online betalingen**, click **Verbind Mollie** or **Verbind Stripe**
 3. Follow the OAuth flow to authorize your account
-4. Once connected, sent invoices include a payment link your customers can use
+4. Once connected, sent invoices include a payment link your customers can use. Invoice and reminder emails then lead with a **Pay now** button that takes the customer straight to the payment page; the payment only ever starts in the customer's own browser, so email scanners cannot start one, and the scan-to-pay QR on the invoice PDF uses the same link.
 
 Mollie supports iDEAL, Bancontact, credit card, and bank transfer, ideal for Dutch and Belgian customers. Stripe Connect supports card, Apple Pay, Google Pay, and SEPA direct debit, suitable for international customers.
 

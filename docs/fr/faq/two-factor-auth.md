@@ -23,6 +23,8 @@ Sur la même page, vous pouvez aussi ajouter des passkeys (Touch ID, Face ID, Wi
 
 Pas de 2FA sur votre compte ? La connexion sur un navigateur encore inconnu donne aussi lieu à une vérification : un code à 6 chiffres par e-mail, valable 15 minutes, et MyCompanyDesk mémorise ensuite ce navigateur pendant 30 jours. Voir [Code de connexion par e-mail sur un nouveau navigateur](/fr/account/security#code-de-connexion-par-e-mail-sur-un-nouveau-navigateur).
 
+Les changements sensibles (votre IBAN, votre adresse de connexion, votre mot de passe, un domaine qui déménage, le transfert de courriel, les clés API ou un nouvel administrateur) demandent, après la connexion, une vérification de plus : **confirmez qu'il s'agit bien de vous**, avec une passkey, l'application de codes ou un code envoyé par e-mail. Votre mot de passe ne suffit pas pour cette étape. Voir [Sécurité](/fr/account/security#confirmez-quil-sagit-bien-de-vous-pour-les-changements-sensibles).
+
 Plus d'accès à votre authentificateur ? Saisissez l'un de vos codes de secours à la connexion, ou utilisez le lien "Vous n'avez plus accès à votre deuxième facteur ?" sur l'écran de connexion. Après un délai de sécurité de 24 heures, votre deuxième facteur est effacé et vous pouvez vous reconnecter avec votre seul mot de passe.
 
 Pour désactiver la 2FA, utilisez la même page de paramètres et confirmez avec un code de votre application d'authentification, un code de secours ou votre mot de passe.

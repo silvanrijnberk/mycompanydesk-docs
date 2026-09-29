@@ -53,6 +53,19 @@ De wachttijd bestaat zodat een aanvaller met alleen je wachtwoord niet meteen de
 2. Kies voor het uitschakelen van verificatie in twee stappen
 3. Bevestig met een actuele code uit je authenticator-app, een back-upcode of je wachtwoord
 
+## Bevestig dat jij het bent bij gevoelige wijzigingen
+
+Sommige wijzigingen zijn te belangrijk om alleen achter een wachtwoord te zitten. MyCompanyDesk vraagt eerst **Bevestig dat jij het bent** voordat je:
+
+- een bestaand IBAN- of PayPal-adres wijzigt of wist
+- je inlogadres of wachtwoord wijzigt
+- een domein verwijdert of verhuist
+- mail doorstuurt naar een ander adres
+- een API-sleutel aanmaakt
+- iemand beheerder maakt of het eigendom overdraagt
+
+Je bevestigt met je passkey, een code uit je authenticator-app (of uit **Instellingen > Inlogcodes** in de geïnstalleerde app), of een code van 6 cijfers per mail. Je wachtwoord telt voor deze stap niet: wie alleen je wachtwoord kent, is nog niet automatisch jij. Na een bevestiging heb je zo'n 15 minuten rust, en een verse inlog met code, passkey of Google telt mee. Iets voor het eerst invullen (bij de start, een nog leeg IBAN-veld) vraagt niets, want er is geen bestaande waarde om te beschermen.
+
 ## Inlogcode per mail op een nieuwe browser
 
 Heb je geen tweestapsverificatie? Ook dan is je wachtwoord alleen niet genoeg op een browser die je account nog niet kent: na je wachtwoord mailen we een code van 6 cijfers. Het inlogscherm toont daarna de codestap die je van 2FA kent, nu onder de titel **Bevestig dat jij het bent**, met het (deels gemaskeerde) adres waarnaar de code ging.
@@ -61,7 +74,7 @@ De code is 15 minuten geldig. Geen mail gekregen? Kijk in je spammap of gebruik 
 
 Kan de code niet verstuurd worden, dan verwijst het inlogscherm je door naar inloggen met Google, Microsoft of een passkey, of vraagt je het over een paar minuten opnieuw te proberen. De allereerste inlog na je aanmelding slaat deze stap over, want je e-mailadres is dan net bevestigd.
 
-Eén uitzondering: staat je inlogadres op een domein waarvan MyCompanyDesk de mailbox zelf verzorgt? Dan blijft de codestap uit, want de code zou wachten in precies het postvak dat je pas na het inloggen kunt lezen. Zet voor die accounts tweestapsverificatie aan.
+Eén uitzondering: staat je inlogadres op een domein waarvan MyCompanyDesk de mailbox zelf verzorgt? Dan blijft de codestap uit, want de code zou wachten in precies het postvak dat je pas na het inloggen kunt lezen. Zet voor die accounts tweestapsverificatie aan. Direct na het inloggen met zo'n adres biedt de app **Beveilig je inlog**: een passkey toevoegen, of de code-app in de geïnstalleerde app. Je mag de aanbieding 14 dagen negeren. Daarna geldt voor zo'n account met passkey: het wachtwoord alleen is geen login meer, zodat een gelekt wachtwoord je mailbox niet kan openen.
 
 ## Inloggen zonder wachtwoord (magic link)
 
@@ -85,6 +98,9 @@ Met passkeys log je in met biometrie of een beveiligingssleutel in plaats van ee
 - Registreer meerdere passkeys (Face ID, Touch ID, Windows Hello, hardwaresleutels)
 - Geef elke passkey een naam, zodat je apparaten afzonderlijk kunt intrekken
 - Op het inlogscherm verschijnt na het invullen van je e-mailadres een passkey-knop als je account er een heeft
+- Passkeys dekken ook de **Bevestig dat jij het bent**-controle bij gevoelige wijzigingen (zie hierboven), waar een wachtwoord niet telt
+
+Op een domein waarvan MyCompanyDesk de mailbox verzorgt verandert een passkey het inloggen zelf: het wachtwoord alleen is geen login meer (zie de uitzondering hierboven).
 
 ## Sessies
 

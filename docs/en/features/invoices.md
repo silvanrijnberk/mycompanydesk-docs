@@ -183,6 +183,8 @@ When you send an invoice, a unique payment link is generated. Your customer can:
 2. View the invoice in the **customer portal**
 3. Pay directly online using your connected Mollie or Stripe account
 
+With Mollie or Stripe connected, the email itself leads with a **Pay now** button that goes straight to the payment page, with **View invoice** next to it for customers who want to look first. The payment only starts in the customer's own browser, so email scanners cannot start one. Details on [the customer portal](/en/advanced/customer-portal#payment).
+
 Payment is automatically recorded and the invoice status updates to **Paid**.
 
 If an invoice is canceled after it was sent, the payment link stops working. If a customer clicks the link in the old email or PDF, they see a message that the invoice was canceled and can no longer be paid online.

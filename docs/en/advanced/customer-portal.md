@@ -1,15 +1,15 @@
 ---
 title: Customer Portal
-description: "Every invoice you send carries a payment link to a secure branded portal where your customer can view the invoice, download the PDF and pay online."
+description: "Your customers get their own portal page for your business: invoices, quotes, contracts, appointments and messages together, with online payment."
 ---
 
 # Customer Portal
 
-The customer portal lets your clients view and pay invoices online through a secure, branded interface.
+The customer portal is your client's page for your business. Every invoice, quote and contract you send carries a link into it, and the full portal opens with an email login link. Together it holds their documents, appointments and messages in one secure, branded place.
 
 ## How it works
 
-When you send an invoice, a unique **payment link** is generated. When your customer clicks this link, they're taken to the customer portal where they can:
+When you send an invoice, a unique **payment link** is generated. When your customer clicks this link, they land on the invoice in their portal and can:
 
 1. **View the invoice** - See all details, line items, and totals
 2. **Download the PDF** - Get a copy of the invoice
@@ -18,7 +18,21 @@ When you send an invoice, a unique **payment link** is generated. When your cust
 
 Portal links open in the customer's web browser. Even when the MyCompanyDesk app is installed on the customer's phone, tapping an invoice link opens the browser, not the app.
 
+### Two ways in
+
+An invoice link only proves that someone received that email. It shows **their invoices** and that invoice, and nothing that acts on the customer's behalf: signing quotes, managing appointments and messaging need the full portal. The full portal opens with a login link that is emailed to the customer (see below), so it is tied to the email address your customer card has.
+
+## Logging in with an email link
+
+On the portal the access screen asks the customer for their email address and mails a new login link. The link works once and stays valid for one hour. It is only sent to the address the company knows from the customer card, and the screen does not reveal whether an address is known, so nobody can use it to check who your customer is.
+
+Once the link is opened, that browser stays signed in for this customer at your company. **Log out** ends those sessions in that browser. The portal always identifies itself with your company name and branding, and its contact block shows your public business email, so customers reach the right mailbox even when their first invoice went to a private address.
+
 ## Portal features
+
+### Overview
+
+The overview is the home page of the portal: your branding, a greeting and a short **To do** list that gathers what still needs the customer (pay an invoice, sign a document, read a new message). Under it sit the **open** and **paid** summary cards and the customer's invoices.
 
 ### Invoice list
 
@@ -40,7 +54,15 @@ The portal shows a clean, branded view of the invoice including:
 
 ### Payment
 
-Customers can pay directly through the portal. If you have connected Mollie or Stripe, pay buttons appear on the invoice view so customers can complete payment in one click. Pay buttons and the total amount due are hidden for credit notes, canceled invoices, and original invoices that have been fully credited, because none of these asks the customer for money. For invoices with partial payments or credit notes, the portal shows the amount already received, any credit applied, and the balance still due before the customer pays, so the pay button amount matches the remaining outstanding amount. When a customer follows an autopay link (for example from a payment reminder email), the portal scrolls to the correct pay button and highlights it with a pulsing animation instead of automatically redirecting to the payment flow. This gives the customer a chance to review the invoice before paying. When payment is confirmed, the invoice status in your dashboard automatically updates to **Paid**. The portal also tells the customer the truth after a Mollie or iDEAL return: if the payment provider has not yet confirmed the payment, the page says so instead of pretending the payment is being processed, and the customer can try again.
+Customers can pay directly through the portal. If you have connected Mollie or Stripe, pay buttons appear on the invoice view so customers can complete payment in one click. Pay buttons and the total amount due are hidden for credit notes, canceled invoices, and original invoices that have been fully credited, because none of these asks the customer for money. For invoices with partial payments or credit notes, the portal shows the amount already received, any credit applied, and the balance still due before the customer pays, so the pay button amount matches the remaining outstanding amount. When payment is confirmed, the invoice status in your dashboard automatically updates to **Paid**. The portal also tells the customer the truth after a Mollie or iDEAL return: if the payment provider has not yet confirmed the payment, the page says so instead of pretending the payment is being processed, and the customer can try again.
+
+With Mollie or Stripe connected, the invoice and reminder emails lead with a **Pay now** button, followed by **View invoice** for customers who want to look first. The button opens the portal with a direct-pay flag, which starts the payment right away and forwards the customer to the payment page. Three guarantees come with that design:
+
+- **The payment only starts in a real browser.** The portal page starts it when the customer opens the mail link, so link scanners that preview email (corporate mail filters and similar) never create a payment on their own, and every check (already paid, withdrawn, credit note, "I have paid" awaiting confirmation) stays on the payment request itself.
+- **A background tab does not pay on its own.** When the mail was opened in a background tab earlier, the payment starts only when the customer actually looks at the portal page.
+- **Paid invoices stop asking.** An invoice that is already paid, canceled, or where a payment is still awaiting the provider's confirmation gets no Pay now button, and the mail opens the portal without one.
+
+The scan-to-pay QR code on the invoice PDF uses the same fixed link, so it keeps working, unlike one-time checkout URLs that expire in the mail.
 
 #### Mollie payment controls
 
@@ -57,6 +79,18 @@ Once Stripe is connected, you get a **Betaalknop op facturen** toggle in your wo
 Below the toggle is a **Betaalmethoden** section listing every supported payment method cross-referenced with your Stripe account capabilities (card, iDEAL, Bancontact, SEPA Direct Debit, PayPal, Klarna, and Link by Stripe). By default Stripe Checkout automatically picks the right method per customer. Tick specific methods to limit what customers see, only those appear at checkout. Clear all ticks to return to automatic selection.
 
 An **Open Stripe Dashboard** button deep-links you to your Stripe payment-method settings so you can verify your integration and test payments directly in Stripe.
+
+### Quotes and contracts
+
+The **Documents** tab lists what this customer has received from you: quotes, contracts and other signable documents. Documents waiting for a signature come first, with a **View and sign** action; a quote shows until its validity date, and statuses follow the flow of the document (received, accepted, declined, expired, signed). Signing happens on a secured signing page, and it asks for an SMS code when you require one for the document.
+
+### Appointments
+
+The portal lists the upcoming and past appointments belonging to this customer, including the seats they signed up for on a group session (see [Online appointments](/en/features/site-bookings)). Appointments can be added to the customer's own calendar, and rescheduling or cancelling goes through the same page the confirmation email refers to. Appointments that were not booked with this customer's email address stay private.
+
+### Messages
+
+The messages tab is a direct line to your inbox. The customer writes a question or note, it lands in your inbox inside the app, and your reply arrives both in the portal and in the customer's email. Customers without an email address on their record see a hint to call or mail you instead.
 
 ### Branding
 
@@ -80,7 +114,7 @@ Each portal link is:
 - **Token-based** - Secured with a unique access token
 - **Invoice-specific** - Only shows the specific invoice
 
-Customers don't need a MyCompanyDesk account to view and pay invoices.
+Customers don't need a MyCompanyDesk account to view and pay invoices. Every portal session is pinned to one customer at one company by the server, so a session opened at one business never shows documents from another, and portal pages are always sent without caching so personal data never sits in shared caches.
 
 ## Customer event tracking
 
