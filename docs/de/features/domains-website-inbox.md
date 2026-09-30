@@ -1,7 +1,7 @@
 ---
 title: Domains, Website und Posteingang
 description: "Eigene Domains, die gehostete Unternehmenswebsite und das gemeinsame Postfach kommen als ein Bündel, hinter custom_domains und public_business_page."
-last_verified: 2026-09-29
+last_verified: 2026-09-30
 ---
 
 # Domains, Website und Posteingang
@@ -28,7 +28,7 @@ Der Assistentenschritt unter `/setup` ist der empfohlene Einstiegspunkt. Er füh
 
 Zwei Wege im Assistenten, beide in der `domains`-Tabelle gespeichert:
 
-- **Kostenlose Workspace-Subdomain** -- `ihr-slug.mycompanydesk.com` (oder `.nl` für NL-Workspaces). Keine DNS-Arbeit; der Slug wird als Cloudflare Pages Custom Domain registriert und die Website ist innerhalb von Sekunden live. Dies ist der Standard für neue Workspaces.
+- **Kostenlose Workspace-Subdomain** -- `ihr-slug.mycompanydesk.com` (oder `.nl` für NL-Workspaces). Keine DNS-Arbeit; der Slug (die schlichte Form Ihres Firmennamens) wird als Cloudflare Pages Custom Domain registriert und die Website ist innerhalb von Sekunden live. Die Subdomain kommt in den Blick, sobald Sie die Website veröffentlichen, nicht früher.
 - **Ihre eigene Domain** -- geben Sie `acme.de` ein. Zwei Setup-Modi werden unterstützt:
   - **Nameserver-Modus** (empfohlen) -- es wird eine Cloudflare-Zone für die Domain erstellt. Sie ändern die Nameserver Ihres Registrars auf die beiden `*.ns.cloudflare.com`-Hostnamen, die der Assistent anzeigt. Cloudflare wird zum autoritativen DNS für die Domain, was E-Mail, SSL und DNS-Record-Verwaltung innerhalb von MyCompanyDesk ermöglicht.
   - **CNAME-Modus** -- für eine Subdomain (z. B. `portal.acme.de`) oder um nur die Website Ihrer Hauptdomain zu verknüpfen, während E-Mail und alles andere bei Ihrem bisherigen Anbieter bleiben („Nur meine Website verknüpfen“). Sie fügen einen einzigen CNAME-Record bei Ihrem bisherigen Anbieter hinzu; bei einer Hauptdomain meistens `www.` plus Ihre Domain, denn die meisten Anbieter erlauben keinen CNAME-Record auf der nackten Domain. Steht der Record, zeigt `www.<Ihre Domain>` Ihre MyCompanyDesk-Website. E-Mail-Routing ist in diesem Modus nicht verfügbar; die Website auf der nackten Domain selbst zu hosten, braucht den Nameserver-Modus.

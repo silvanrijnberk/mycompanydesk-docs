@@ -18,7 +18,7 @@ Getting started with MyCompanyDesk takes just a few minutes.
 5. After verification you receive a welcome email and land straight in the app, in your own workspace.
 
 :::tip Partner referral
-You can also start from the marketing site. If you look up your company on the landing page and pick it from the Dutch trade register (KVK), the CTA carries your KVK number to `/register`. After signup and verification, the setup wizard auto-applies that KVK number and auto-generates a themed website for you. The site is ready but not yet live; the first time you open the website editor you can publish it or adjust it first.
+You can also start from the marketing site. If you look up your company on the landing page and pick it from the Dutch trade register (KVK), the CTA carries your KVK number to `/register`. After signup and verification, the setup wizard auto-applies that KVK number and carries the business name onto your workspace. No website is generated in the background: a website is built the first time you open the website editor yourself, as a draft that waits for your publication.
 :::
 
 ## Invited by your accountant
@@ -55,7 +55,7 @@ Returning users land on the same split-screen page. The **Sign In** tab accepts 
 
 New accounts go straight into the setup wizard at `/setup` after the first login or email verification. The wizard is skippable: click **Leave for now** to continue to your dashboard, or close the tab and come back later. While setup is unfinished, a dismissable **Finish setup** banner at the top of the dashboard lets you resume at any time.
 
-The wizard is built around your first invoice. It asks who you are billing and fills in the sender block, payment details and VAT status while showing a live preview of the invoice. You can also have it look up your company in the Dutch trade register (KVK) to prefill your business details. Website setup is opt-in from the finish screen, not a step in the wizard itself.
+The wizard is built around your first invoice. It asks who you are billing and fills in the sender block, payment details and VAT status while showing a live preview of the invoice. You can also have it look up your company in the Dutch trade register (KVK) to prefill your business details. No website runs in the background: what you open yourself is what gets built, and the dashboard suggests the next steps under **Zet dit op**.
 
 Every answer is saved as you go, so you can skip, resume and re-run the wizard without losing progress. All information can also be changed later in Settings.
 

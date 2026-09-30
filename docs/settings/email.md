@@ -1,7 +1,7 @@
 ---
 title: E-mail
 description: "Kies vanaf welk adres je facturen en offertes versturen en stel in wat er onder elk bericht staat. Beschikbaar op elk abonnement."
-last_verified: 2026-09-29
+last_verified: 2026-09-30
 ---
 
 # E-mail
@@ -62,6 +62,18 @@ Factuur-, offerte-, herinnerings- en creditnotamails beginnen met een standaard,
 De klantnaam, het nummer, de bedragen en de data in het voorbeeld zijn voorbeelden: bij het versturen vullen we de gegevens van het echte document in, dus laat de placeholders daar staan. De zin over een aanvraag verschijnt alleen als de offerte uit een aanvraag komt.
 
 Als boekhouder kun je deze teksten lezen maar niet veranderen; de eigenaar van de werkruimte stelt de standaardtekst in en kan hem terugdraaien. Onderwerp en bericht van één e-mail pas je nog steeds in het verzendvenster aan. Zie [E-mailsjablonen](/faq/email-template) voor de details.
+
+### De stijl van de mail
+
+Per soort documentmail kies je naast de tekst ook een **stijl van de mail**: vijf manieren om de standaardtekst in te vullen, in inhoud, niet in opmaak. De keuze geldt voor alle talen.
+
+- **Formeel**: de standaardtekst, in u-vorm. Staat er vanaf het begin, dus de mail verandert pas als je zelf een stijl kiest.
+- **Kort**: de kern in een paar regels, in je-vorm.
+- **Persoonlijk**: warme aanhef, in je-vorm, met een bedankje voor de samenwerking; een terugkerende factuur volgt deze stijl ook.
+- **Compleet**: alles wat een klant nodig heeft om te betalen of te beslissen (datum, bedrag, termijn, rekeningnummer, waar je met vragen heen kunt), en altijd met de regeltabel van het document eronder, ook bij een offerte.
+- **Minimaal**: alleen het nummer, het totaal en de datum; geen aanhef, geen afsluiter.
+
+Welke onderdelen een stijl meeneemt hangt voor de rest af van je eigen instelling: de schakelaar **factuurregels in de mail** onder de tekst bepaalt of een andere stijl dan Compleet de regeltabel meekrijgt, en de schakelaar in het verzendvenster wint op het moment dat je hem daar ziet. Een eigen tekst wint het altijd van een stijl: staat je eigen tekst voor een soort mail, dan gaat die mee, en bij het kiezen van een stijl vraagt de pagina of die eigen tekst moet wijken. Zodra je een stijl kiest, herschrijft het voorbeeld rechts en laat de preview precies zien wat je klant krijgt.
 
 ### Uiterlijk
 

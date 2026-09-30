@@ -1,7 +1,7 @@
 ---
 title: Assistant de configuration
 description: "L'assistant sur /setup prépare votre entreprise et demande ensuite par quoi commencer : factures, votre site web ou le courriel professionnel."
-last_verified: 2026-09-29
+last_verified: 2026-09-30
 ---
 
 # Assistant de configuration
@@ -13,8 +13,7 @@ Si vous cherchez le guide de base, commencez par [Configurer votre entreprise](/
 ## Quand l'assistant apparaît
 
 - **Première connexion :** les nouveaux comptes arrivent automatiquement dans l'assistant.
-- **Bannière du tableau de bord :** tant que la configuration n'est pas terminée, une bannière en haut du tableau de bord propose de la finir. La bannière se masque avec la croix ; ce masquage vaut par navigateur, et `/setup` reste accessible directement.
-- **À tout moment :** rendez-vous sur `/setup` pour lancer ou relancer l'assistant.
+- **À tout moment :** rendez-vous sur `/setup` pour lancer ou relancer l'assistant. Une bannière en haut du tableau de bord n'existe plus ; tant que la configuration a des bouts libres, le tableau de bord vous signale lui-même la prochaine étape en bas de la page, sous **À configurer**.
 
 L'assistant ne vous bloque nulle part. **Passer pour l'instant** vous ramène au tableau de bord sans terminer ; rien n'est perdu, car chaque réponse est enregistrée immédiatement. Revenez plus tard et vous reprenez exactement où vous vous étiez arrêté.
 
@@ -26,7 +25,7 @@ L'assistant demande, dans cet ordre :
 2. **KVK :** les informations de votre entreprise
 3. **Par quoi commencer :** votre choix (voir [l'étape plus bas](#etape-par-quoi-voulez-vous-commencer))
 4. **Paiement :** votre IBAN et statut de TVA (uniquement sur le parcours facturation)
-5. **Finalisation :** confirmation de l'essai et prochaines étapes optionnelles
+5. **Finalisation :** confirmation de l'essai
 
 **Continuer** avance dès qu'une étape a ce qu'il lui faut ; **Terminer la configuration** sur la dernière étape applique tout.
 
@@ -73,11 +72,11 @@ La dernière étape confirme votre essai :
 
 - **Votre essai :** chaque nouvel espace de travail démarre avec 60 jours de Pro, gratuits, sans carte bancaire.
 
-**Terminer la configuration** applique vos informations d'entreprise, votre statut de TVA, votre IBAN et vos paramètres par défaut. L'écran de fin propose aussi des prochaines étapes optionnelles, comme créer un site web. La création d'un site web est optionnelle : rien n'est créé tant que vous ne le choisissez pas sur l'écran de fin ou dans la checklist du tableau de bord.
+**Terminer la configuration** applique vos informations d'entreprise, votre statut de TVA, votre IBAN et vos paramètres par défaut. L'écran de fin nomme ce qui suit encore : la sécurisation de votre compte et votre site web sont proposés plus loin, quand ça arrange, sous **À configurer** sur le tableau de bord. Nul part en tâche de fond un site ne se construit ; à la première ouverture de la zone **Site Web** vous-même, le site standard en brouillon s'y crée (accueil, prestations, à-propos, contact, avec vos données sur les pages légales), restant en attente de votre publication.
 
 ## Passer, reprendre et relancer
 
-- **Passer :** vous ramène à tout moment au tableau de bord. La bannière du tableau de bord garde un chemin de retour jusqu'à ce que la configuration soit terminée.
+- **Passer :** vous ramène à tout moment au tableau de bord. `/setup` reste le chemin de retour jusqu'à ce que la configuration soit terminée.
 - **Reprendre :** les réponses sont enregistrées à chaque modification. Fermer l'onglet en cours de route ne coûte rien ; à la visite suivante, vous reprenez sur la même étape.
 - **Relancer :** après la finalisation, `/setup` relance le parcours depuis la première étape, avec vos réponses conservées. L'assistant complète les champs vides au lieu d'écraser : une liste de prestations que vous avez construite, un logo importé ou des réglages choisis à la main ne sont pas remplacés.
 

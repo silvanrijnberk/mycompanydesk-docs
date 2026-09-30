@@ -1,7 +1,7 @@
 ---
 title: Je bedrijf instellen
 description: "De setupwizard vult je afzenderblok, betaalgegevens en BTW-status in rond je eerste factuur, met een KVK-opzoeking en een live voorbeeld."
-last_verified: 2026-09-12
+last_verified: 2026-09-30
 ---
 
 # Je bedrijf instellen
@@ -11,7 +11,7 @@ De eerste keer dat je inlogt, leidt MyCompanyDesk je door een korte **setupwizar
 ## Waar vind je de wizard
 
 - **Eerste keer inloggen:** de wizard opent automatisch.
-- **Later:** zolang de setup niet af is, staat er bovenaan je dashboard een banner met een knop terug naar de wizard. Je kunt de banner verbergen, of altijd rechtstreeks naar `/setup` gaan.
+- **Later:** open altijd rechtstreeks `/setup` om de wizard te doorlopen of opnieuw te doorlopen. Zolang de opzet nog losse eindjes heeft, wijst het dashboard je onderaan de pagina zelf op de volgende stap, onder **Zet dit op**.
 - **Overslaan:** op elke stap zit een knop **Voor nu overslaan**. Je antwoorden tot dan toe worden bewaard, dus je gaat later gewoon verder waar je was.
 
 ## Stap 1: Voor wie je factureert
@@ -49,9 +49,15 @@ De wizard vraagt om het IBAN waar klanten naartoe betalen. Je kunt nu je zakelij
 
 ## Stap 4: Setup afronden
 
-De laatste stap bevestigt dat je 60 dagen Pro-proefperiode actief is, zonder creditcard, en past alles toe. Ook biedt het afrondscherm optionele vervolgstappen, zoals het instellen van een website. Een website instellen is optioneel, behalve wanneer je bent gestart via de KVK-lookup op de landingspagina: in dat geval is er al een thematische site gegenereerd die op je wacht in de website-editor.
+De laatste stap bevestigt dat je 60 dagen Pro-proefperiode actief is, zonder creditcard, en past alles toe, waarna je naar je dashboard gaat. Er draait op de achtergrond niets mee: het afrondscherm noemt wat nog volgt (je account beveiligen, en je website) en die suggesties volgen later, onder **Zet dit op** op het dashboard, wanneer het uitkomt. MyCompanyDesk genereert hier geen website meer en kiest geen diensten voor je; een website bouw je zelf, de eerste keer dat je het **Website**-gebied opent.
 
 Klik op **Setup afronden** en de wizard past je bedrijfsgegevens, btw-status, IBAN en standaardinstellingen toe, waarna je naar je dashboard gaat.
+
+## De website: gebouwd zodra je hem opent, online zodra je publiceert
+
+MyCompanyDesk zet geen website onder je werkruimte zonder dat je erom vraagt. Meld je aan en factuur zonder het gebied Website ooit te openen, dan staat er niets half af te wachten.
+
+Open je **Website** voor het eerst, dan wordt een standaardsite als concept aangemaakt: een homepagina, diensten, een over ons en contact, plus de pagina's Privacyverklaring en Algemene voorwaarden, met je registratiegegevens op de plekken waar ze horen. Er staat alleen tekst op waar je zelf achter staat; lege blokken blijven leeg tot jij ze vult, en de websitewizard verzint geen oorsprongsverhaal of standaardantwoord meer. Er gaat ook vanzelf niets online: publiceren blijft jouw moment, pas dan gaat je adres live. Je werkruimtesubdomein, de simpele vorm van je bedrijfsnaam onder mycompanydesk.com, komt pas bij het publiceren in beeld.
 
 ## Later aanpassen
 

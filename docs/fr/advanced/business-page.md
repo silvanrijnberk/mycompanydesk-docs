@@ -1,7 +1,7 @@
 ---
 title: Constructeur de site
 description: "Construisez un site web de plusieurs pages dans l'éditeur glisser-déposer : sections et blocs, vos couleurs et polices, publication quand vous voulez."
-last_verified: 2026-09-28
+last_verified: 2026-09-30
 ---
 
 # Constructeur de site
@@ -414,7 +414,7 @@ Les modifications dans l'onglet Style sont enregistrees automatiquement et s'app
 
 La barre superieure affiche un point tant que des modifications non publiees attendent. Lors de la publication, seules les pages marquees En ligne sont incluses dans le snapshot. Les pages en Brouillon restent invisibles sur le site public, meme apres publication.
 
-Tant que vous n'avez pas publie, votre URL publique envoie une balise robots `noindex`. Ainsi, le sous-domaine de l'espace de travail provisionne automatiquement reste hors des moteurs de recherche pendant que vous construisez votre site.
+Tant que vous n'avez pas publié, votre URL publique envoie une balise robots `noindex`. Ainsi, le sous-domaine de l'espace de travail reste hors des moteurs de recherche pendant que vous construisez votre site ; le sous-domaine lui-même n'entre en vue qu'à votre première publication.
 
 Lorsque vous etes pret :
 

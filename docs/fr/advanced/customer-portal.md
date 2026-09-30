@@ -32,7 +32,7 @@ Une fois le lien ouvert, ce navigateur reste connecté à ce portail client dans
 
 ### Aperçu
 
-L'aperçu est la page d'accueil du portail : votre image de marque, un message de salutation et une courte liste **À faire** qui rassemble ce qui attend encore le client (payer une facture, signer un document, lire un nouveau message). En dessous se trouvent les cartes **ouvert** et **payé** ainsi que les factures du client.
+L'aperçu est la page d'accueil du portail : votre image de marque et une salutation en haut, avec votre propre texte de bienvenue en dessous si vous en avez mis un, à côté de la carte fixe de l'entreprise avec vos coordonnées. Une courte liste **À faire** rassemble ce qui attend encore le client (payer une facture, signer un document, lire un nouveau message), et quand tout est réglé, la page le dit tout simplement : **Tout est payé, rien n'est en attente.** Si un paiement signalé par le client est encore en cours de contrôle, la page le dit aussi, au lieu de demander l'argent une seconde fois.
 
 ### Liste des factures
 
@@ -42,15 +42,9 @@ Les brouillons n'apparaissent jamais dans la liste du portail. Un lien de portai
 
 ### Vue de la facture
 
-Le portail affiche une vue claire et personnalisée de la facture comprenant :
+La facture s'ouvre dans le design du portail : votre bloc d'entreprise en haut, les détails de la facture comme la date, la date d'échéance et le numéro, et en dessous un panneau de paiement qui propose les deux manières de payer comme onglets : **Payer en ligne** (les boutons Mollie ou Stripe, quand un prestataire est relié) et **Virement**, avec la mention de paiement que le client indique lors de son virement et un code QR, pour que payer sans boutons en ligne reste possible. À côté, le panneau continue de montrer le montant déjà reçu, l'avoir appliqué et le solde restant.
 
-- Le logo et l'image de marque de votre entreprise
-- Le numéro et la date de la facture
-- Les lignes avec descriptions et montants
-- La ventilation de la TVA
-- Le montant total dû
-- Le montant déjà reçu, l'avoir appliqué et le solde restant (pour les factures partiellement payées ou créditées)
-- La date d'échéance
+Sur la même page se trouve la conversation avec le client : le champ de question **Questions sur cette facture** à côté de la vue, pour qu'une question sur exactement cette facture se pose et se réponde dans une conversation propre. Le client y télécharge aussi le PDF, et le même motif se répète sous un devis, un contrat, un document et un rendez-vous.
 
 ### Paiement
 
@@ -84,23 +78,44 @@ Le bouton **Open Stripe Dashboard** vous redirige directement vers vos paramètr
 
 L'onglet **Devis et contrats** montre ce que ce client a reçu de vous : devis, contrats et autres documents à signer. Les documents qui attendent une signature arrivent en tête, avec l'action **Consulter et signer** ; un devis reste visible jusqu'à sa date de validité, et les statuts suivent le cours du document (reçu, accepté, refusé, expiré, signé). La signature passe par une page de signature sécurisée, qui demande un code SMS lorsque vous l'imposez pour un document.
 
+La page de signature porte le même habit que le reste du portail : votre nom dans l'en-tête, le document, une ligne d'étapes (lire, signer, confirmer) et une phrase de consentement, **J'accepte ce devis et les conditions de {company}.** pour un devis, avant que le bouton ne dise **Signer et envoyer**. La signature, elle, fonctionne comme avant : nom dessiné ou tapé, puis un e-mail de confirmation et le PDF en téléchargement. La page de signature porte le même champ de question que le reste du portail, pour qu'une question sur ce document arrive dans une conversation au lieu d'un canal à part.
+
 ### Rendez-vous
 
 Le portail affiche les rendez-vous à venir et passés de ce client, y compris les places qu'il a réservées pour une séance de groupe (atelier, cours, visite guidée) ; voir [Rendez-vous en ligne](/fr/features/site-bookings). Un rendez-vous peut être ajouté au calendrier du client, et le déplacement ou l'annulation passent par la même page que celle du lien dans le courriel de confirmation. Les rendez-vous qui n'ont pas été réservés avec l'adresse e-mail de ce client restent invisibles.
 
+### Questions par document
+
+Chaque vue du portail porte sa propre conversation : à une facture s'ajoute **Questions sur cette facture**, à un devis **Questions sur ce devis**, et le même motif vaut pour les contrats, les autres documents et les rendez-vous. Le client écrit sa question, elle arrive dans votre boîte dans l'appli, et votre réponse parvient à la fois dans la conversation et dans le courriel du client. Une question appartient au document de part d'où elle est posée : chaque conversation reste à son propre sujet.
+
+Poser une question demande le portail complet. Celui qui n'arrive qu'avec le lien de paiement d'une facture voit où est la porte : le portail propose d'envoyer le lien de connexion par courriel à l'adresse que votre fiche client possède, et le champ de question explique que les questions se posent dans le portail complet. Les messages du portail restent tels qu'ils sont écrits : le courriel qui vous arrive est la question de votre client, sans signature de courriel et sans historique cité dessous.
+
 ### Messages
 
-L'onglet Messages est une ligne directe vers votre boîte de réception. Le client écrit une question ou une remarque, elle arrive dans votre boîte dans l'appli, et votre réponse parvient à la fois dans le portail et dans le courriel du client. Les clients sans adresse e-mail sur leur fiche voient une astuce pour vous appeler ou vous écrire.
+L'onglet Messages reste la ligne directe pour tout ce qui n'appartient pas à un seul document. Le client écrit une question ou une remarque, elle arrive dans votre boîte dans l'appli, et votre réponse parvient à la fois dans le portail et dans le courriel du client. Les clients sans adresse e-mail sur leur fiche voient une astuce pour vous appeler ou vous écrire.
 
 ### Image de marque
 
 Le portail client utilise l'image de marque de votre entreprise :
 
 - Logo de l'entreprise
-- Couleur d'accentuation
+- Couleur de marque
 - Informations de l'entreprise
 
 Cela crée une expérience professionnelle et cohérente pour vos clients.
+
+### L'apparence du portail
+
+Sous **Paramètres → Espace client** vous choisissez l'apparence de l'ensemble, sans travail supplémentaire : logo, couleur et données de l'entreprise ont déjà leur propre place et viennent avec d'eux-mêmes. Ici vous réglez vous-même :
+
+- **Style** : cinq styles, chacun tiré de votre couleur de marque, pour qu'une couleur pâle ou presque noire ressorte chez votre client comme dans l'aperçu. **Sobre** (blanc, votre couleur seulement dans les boutons et les accents), **Chaleureux** (papier doux et formes arrondies), **Couleur** (votre couleur dans l'en-tête et la première tâche), **Net** (anguleux et professionnel, une grille claire) ou **Soirée** (un en-tête sombre avec de grandes lettres). Chaque tuile du sélecteur porte un petit aperçu dans ce style.
+- **Affichage** : clair ou sombre, ou laissez-le sur **Selon votre client**, pour que l'espace suive ce que l'appareil de votre client demande (votre client peut toujours le changer lui-même).
+- **Texte de bienvenue** : une courte ligne sous la salutation. Laissez-la vide, nous indiquons nous-mêmes ce qui attend votre client.
+- **Votre photo sur la carte** : avec une photo de profil, c'est vous qui figurez avec votre nom sur la carte de contact, à la place de votre entreprise. Votre logo reste en haut.
+
+À côté des réglages se trouve l'aperçu : le vrai aperçu du portail avec des données d'exemple, dans la largeur que reçoit votre client, exactement comme votre client le voit. Le contenu de la carte d'entreprise et le lien du portail renvoient à leurs propres places : le logo et la couleur se règlent sous **Apparence**, les données de l'entreprise sous **Données de l'entreprise**.
+
+Envoyer à un client son lien de connexion ou le déconnecter partout, cela se fait sur la page du client, dans le bloc **Espace client**.
 
 ## Copie figée de la facture
 

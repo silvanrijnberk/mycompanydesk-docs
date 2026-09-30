@@ -1,7 +1,7 @@
 ---
 title: Setupwizard
 description: "De wizard op /setup zet je bedrijf klaar en vraagt daarna waar je wilt beginnen: facturen, je eigen website of zakelijke e-mail op je eigen domein."
-last_verified: 2026-09-29
+last_verified: 2026-09-30
 ---
 
 # Setupwizard
@@ -13,8 +13,7 @@ Kom je voor de basisuitleg, begin dan bij [Je bedrijf instellen](/getting-starte
 ## Wanneer je de wizard ziet
 
 - **Eerste keer inloggen:** nieuwe accounts komen automatisch in de wizard terecht.
-- **Dashboardbanner:** zolang de setup niet af is, biedt een banner bovenaan het dashboard aan om hem af te maken. De banner is te verbergen met het kruisje; dat verbergen geldt per browser, en `/setup` blijft rechtstreeks bereikbaar.
-- **Altijd:** ga naar `/setup` om de wizard te starten of opnieuw te doorlopen.
+- **Altijd:** ga naar `/setup` om de wizard te starten of opnieuw te doorlopen. Er staat geen banner meer bovenaan het dashboard; zolang de setup losse eindjes heeft, wijst het dashboard je onderaan de pagina zelf op de volgende stap, onder **Zet dit op**.
 
 De wizard is optioneel. **Voor nu overslaan** brengt je naar het dashboard zonder af te ronden; er gaat niets verloren, want elk antwoord wordt meteen opgeslagen. Kom je later terug, dan ga je verder waar je stopte.
 
@@ -26,7 +25,7 @@ De wizard vraagt, in deze volgorde:
 2. **KVK**: je bedrijfsgegevens
 3. **Waar je mee begint**: jouw keuze (zie [de stap hieronder](#stap-waar-wil-je-mee-beginnen))
 4. **Betaald krijgen**: je IBAN en btw-status (alleen op de factuurroute)
-5. **Afronden**: proefbevestiging en optionele vervolgstappen
+5. **Afronden**: proefbevestiging
 
 **Doorgaan** brengt je verder zodra een stap heeft wat hij nodig heeft; **Setup afronden** op de laatste stap past alles toe.
 
@@ -59,7 +58,7 @@ Direct na de KVK-stap vraagt de wizard **Waar wil je mee beginnen?** met drie an
 - **Je eigen website**: de wizard stopt hier en een knop brengt je naar `/website`, waar de site-editor opent.
 - **E-mail op je eigen domein**: de wizard stopt hier en een knop brengt je naar `/inbox/setup`, waar je zakelijke mailbox wordt ingesteld.
 
-De keuze bepaalt alleen waar de wizard je aflevert. Er gaat geen onderdeel aan of uit en er staat niets voorgeselecteerd. Het dashboard volgt dezelfde keuze: het biedt **Zet je website online** of **Stel je zakelijke e-mail in** aan zolang je site nog niet online staat of er geen eigen postbus op je eigen domein is, en keert daarna terug naar de factuurroute.
+De keuze bepaalt alleen waar de wizard je aflevert. Er gaat geen onderdeel aan of uit en er staat niets voorgeselecteerd. Het dashboard volgt dezelfde keuze in **Zet dit op**: het biedt de website of de zakelijke e-mail aan zolang je site nog niet online staat of er geen eigen postbus op je eigen domein is, en keert daarna terug naar de factuurroute.
 
 ## Stap: Betaald krijgen
 
@@ -73,11 +72,11 @@ De laatste stap bevestigt je proefperiode:
 
 - **Je proefperiode:** elke nieuwe werkruimte start met 60 dagen Pro, gratis, zonder creditcard.
 
-**Setup afronden** past je bedrijfsgegevens, btw-status, IBAN en standaardinstellingen toe. Het afrondscherm biedt ook optionele vervolgstappen, zoals het instellen van een website. Een website instellen is optioneel: er wordt niets aangemaakt tenzij je dat kiest vanaf het afrondscherm of de dashboard-checklist.
+**Setup afronden** past je bedrijfsgegevens, btw-status, IBAN en standaardinstellingen toe. Het afrondscherm noemt wat nog volgt: je account beveiligen en je website worden later voorgesteld, wanneer het uitkomt, onder **Zet dit op** op het dashboard. Er wordt nergens op de achtergrond een website gebouwd; de eerste keer dat je het gebied **Website** zelf opent, wordt daar de standaardconceptsite aangemaakt (home, diensten, over ons, contact, met bij de juridische pagina's je gegevens), nog wachtend op jouw publicatie.
 
 ## Overslaan, hervatten en opnieuw doorlopen
 
-- **Overslaan:** **Voor nu overslaan** brengt je op elk moment naar het dashboard. De dashboardbanner houdt een weg terug open tot de setup af is.
+- **Overslaan:** **Voor nu overslaan** brengt je op elk moment naar het dashboard. `/setup` blijft de weg terug tot de setup af is.
 - **Hervatten:** antwoorden worden bij elke wijziging opgeslagen. Het tabblad halverwege sluiten kost niets; bij het volgende bezoek ga je verder op dezelfde stap.
 - **Opnieuw doorlopen:** na het afronden start `/setup` de flow opnieuw vanaf de eerste stap, met je bewaarde antwoorden. De wizard vult lege velden aan in plaats van te overschrijven: een dienstenlijst die je hebt opgebouwd, een logo dat je hebt geüpload of instellingen die je zelf koos worden niet vervangen.
 

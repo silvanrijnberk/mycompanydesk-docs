@@ -1,7 +1,7 @@
 ---
 title: Unternehmen einrichten
 description: "Der Einrichtungsassistent füllt Absenderblock, Zahlungsdaten und Steuerstatus rund um Ihre erste Rechnung, mit KVK-Abfrage und Live-Vorschau."
-last_verified: 2026-09-12
+last_verified: 2026-09-30
 ---
 
 # Unternehmen einrichten
@@ -11,7 +11,7 @@ Beim ersten Anmelden führt MyCompanyDesk Sie durch einen kurzen **Einrichtungsa
 ## Wo Sie den Assistenten finden
 
 - **Erste Anmeldung:** Der Assistent öffnet sich automatisch.
-- **Später:** Solange die Einrichtung nicht abgeschlossen ist, zeigt ein Banner oben auf dem Dashboard eine Schaltfläche zurück in den Assistenten. Sie können das Banner ausblenden oder jederzeit direkt zu `/setup` gehen.
+- **Später:** Öffnen Sie jederzeit direkt `/setup`, um den Assistenten zu durchlaufen oder erneut zu durchlaufen. Solange die Einrichtung noch offene Enden hat, weist das Dashboard Sie unten auf der Seite selbst auf den nächsten Schritt hin, unter **Richten Sie das ein**.
 - **Überspringen:** Auf jedem Schritt gibt es eine Schaltfläche **Vorerst überspringen**. Ihre bisherigen Antworten werden gespeichert, Sie machen später einfach dort weiter, wo Sie waren.
 
 ## Schritt 1: Wen Sie abrechnen möchten
@@ -49,9 +49,15 @@ Der Assistent fragt nach der IBAN, auf die Kunden überweisen. Sie können jetzt
 
 ## Schritt 4: Einrichtung abschließen
 
-Der letzte Schritt bestätigt Ihre 60-tägige Pro-Testphase, kostenlos und ohne Kreditkarte, und wendet alles an. Vom Abschlussbildschirm aus werden auch optionale nächste Schritte angeboten, etwa das Einrichten einer Website. Eine Website einzurichten ist optional, außer wenn Sie über die KVK-Suche auf der Landing-Page gestartet sind: In diesem Fall wurde bereits eine thematische Website erstellt, die im Website-Editor auf Sie wartet.
+Der letzte Schritt bestätigt Ihre 60-tägige Pro-Testphase, kostenlos und ohne Kreditkarte, und wendet alles an, dann bringt er Sie zum Dashboard. Im Hintergrund läuft nichts mit: Der Abschlussbildschirm nennt, was noch folgt (die Sicherheit Ihres Kontos und Ihre Website), und diese Vorschläge folgen später, unter **Richten Sie das ein** auf dem Dashboard, wann immer es passt. MyCompanyDesk erzeugt hier keine Website mehr und wählt keine Leistungen für Sie; eine Website bauen Sie selbst, beim ersten Öffnen des Bereichs **Website**.
 
 Klicken Sie auf **Einrichtung abschließen** und der Assistent wendet Ihre Unternehmensdaten, USt.-Status, IBAN und Standardeinstellungen an und bringt Sie zu Ihrem Dashboard.
+
+## Die Website: gebaut, sobald Sie sie öffnen, online, sobald Sie veröffentlichen
+
+MyCompanyDesk legt keine Website unter Ihren Arbeitsbereich, ohne dass Sie darum bitten. Melden Sie sich an und schreiben Sie Rechnungen, ohne den Bereich Website je zu öffnen, dann wartet dort nichts Unfertiges.
+
+Beim ersten Öffnen von **Website** wird eine Standard-Site als Entwurf angelegt: eine Startseite, Leistungen, ein Über-uns und Kontakt, dazu die Seiten Datenschutzerklärung und Allgemeine Geschäftsbedingungen, mit Ihren Registrierungsdaten an den Stellen, wo sie hingehören. Auf den Seiten steht nur Text, zu dem Sie stehen können; leere Blöcke bleiben leer, bis Sie sie füllen, und der Website-Assistent erfindet keine Herkunftsgeschichte und keine Standardantwort mehr. Auch online geht von selbst nichts: Veröffentlichen bleibt Ihr Moment, erst dann wird Ihre Adresse live. Ihr Arbeitsbereich-Subdomain, die schlichte Form Ihres Firmennamens unter mycompanydesk.com, kommt erst beim Veröffentlichen in den Blick.
 
 ## Später ändern
 

@@ -1,7 +1,7 @@
 ---
 title: Domeinen, website en inbox
 description: "Eigen domeinen, de gehoste bedrijfswebsite en de gedeelde inbox komen als een bundel, achter de vlaggen custom_domains en public_business_page."
-last_verified: 2026-09-29
+last_verified: 2026-09-30
 ---
 
 # Domeinen, website en inbox
@@ -28,7 +28,7 @@ De wizardstap op `/setup` is de aanbevolen start. Het voert via `apply.service.j
 
 Twee routes in de wizard, beide opgeslagen in de `domains`-tabel:
 
-- **Gratis werkruimte-subdomein** -- `jouw-slug.mycompanydesk.com` (of `.nl` voor NL-werkruimtes). Geen DNS-werk; de slug wordt geregistreerd als Cloudflare Pages custom domain en de website is binnen enkele seconden live. Dit is de standaard voor nieuwe werkruimtes.
+- **Gratis werkruimte-subdomein** -- `jouw-slug.mycompanydesk.com` (of `.nl` voor NL-werkruimtes). Geen DNS-werk; de slug (de simpele vorm van je bedrijfsnaam) wordt geregistreerd als Cloudflare Pages custom domain en de website is binnen enkele seconden live. Het subdomein komt in beeld zodra je de website publiceert, niet eerder.
 - **Je eigen domein** -- voer `acme.nl` in. Twee setup-modi worden ondersteund:
   - **Nameserver-modus** (aanbevolen) -- er wordt een Cloudflare-zone aangemaakt voor het domein. Je wijzigt de nameservers van je registrar naar de twee `*.ns.cloudflare.com`-hostnamen die de wizard toont. Cloudflare wordt de gezaghebbende DNS voor het domein, wat e-mail, SSL en DNS-beheer binnen MyCompanyDesk mogelijk maakt.
   - **CNAME-modus** -- voor een subdomein (bijv. `portal.acme.nl`) of om alleen de website op je hoofddomein te koppelen, terwijl e-mail en al het andere bij je huidige aanbieder blijft ("Alleen mijn website koppelen"). Je voegt één CNAME-record toe bij je huidige aanbieder; op een hoofddomein is dat meestal `www.` plus je domein, want de meeste aanbieders kunnen geen CNAME-record op het kale domein zetten. Zodra het record staat, toont `www.<jouw domein>` je MyCompanyDesk-website. E-mailroutering is niet beschikbaar in deze modus; de website op het kale domein zelf hosten kan alleen met nameservermodus.

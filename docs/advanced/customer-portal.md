@@ -32,7 +32,7 @@ Na het openen van de link blijft die browser ingelogd voor deze klant bij jouw b
 
 ### Overzicht
 
-Het overzicht is de thuispagina van het portaal: je huisstijl, een begroeting en een korte **Te doen**-lijst met wat de klant nog moet doen (een factuur betalen, een document tekenen, een nieuw bericht lezen). Daaronder staan de kaartjes **openstaand** en **betaald** en de facturen van de klant.
+Het overzicht is de thuispagina van het portaal: je huisstijl en een begroeting bovenaan, met daaronder je eigen welkomsttekst als je die gezet hebt, naast de vaste bedrijfskaart met je contactgegevens. Een korte **Te doen**-lijst verzamelt wat de klant nog moet doen (een factuur betalen, een document tekenen, een nieuw bericht lezen) en als alles rond is, zegt de pagina dat gewoon: **Alles is betaald, er staat niets open.** Wordt er na een melding van de klant nog een betaling gecontroleerd, dan zegt de pagina dat ook, in plaats van opnieuw om geld te vragen.
 
 ### Facturenlijst
 
@@ -42,15 +42,9 @@ Conceptfacturen verschijnen nooit in de portaallijst. Een portaal-link wordt all
 
 ### Factuurweergave
 
-Het portaal toont een overzichtelijke, huisstijl-conforme weergave van de factuur inclusief:
+De factuur opent in het portaalontwerp: je bedrijfsblok bovenaan, de factuurgegevens zoals datum, vervaldatum en factuurnummer, en daaronder een betaalpaneel dat de twee manieren om te betalen als tabbladen aanbiedt: **Online betalen** (de Mollie- of Stripe-knop, als er een provider is gekoppeld) en **Zelf overmaken**, met de betaalomschrijving die de klant bij zijn overboeking invult en een QR-code, zodat de klant ook zonder online knoppen kan betalen. Daarnaast blijft het paneel al ontvangen bedrag, toegepaste credit en het openstaande restant tonen.
 
-- Je bedrijfslogo en huisstijl
-- Factuurnummer en datum
-- Regelitems met omschrijvingen en bedragen
-- BTW-specificatie
-- Totaal verschuldigd bedrag
-- Al ontvangen bedrag, toegepaste creditnota en het restant (voor gedeeltelijk betaalde of gecrediteerde facturen)
-- Vervaldatum
+Op dezelfde pagina zit het gesprek met de klant: het vraagvak **Vragen over deze factuur** naast de weergave, zodat een vraag over precies die factuur in een eigen gesprek gesteld en beantwoord wordt. De klant downloadt de PDF hier ook, en hetzelfde patroon herhaalt zich onder een offerte, contract, document en afspraak.
 
 ### Betaling
 
@@ -84,23 +78,44 @@ Met de **Open Stripe Dashboard**-knop word je doorgelinkt naar je Stripe-betaalm
 
 Het tabblad **Offertes en contracten** laat zien wat deze klant van je heeft gekregen: offertes, contracten en andere te ondertekenen documenten. Documenten die op een handtekening wachten staan bovenaan, met de actie **Bekijken en tekenen**; een offerte staat in beeld tot uiterlijk zijn geldigheidsdatum en statuses volgen de gang van het document (ontvangen, geaccepteerd, afgewezen, verlopen, getekend). Tekenen loopt via een beveiligde tekenpagina, en vraagt om een sms-code wanneer jij dat per document verplicht stelt.
 
+De tekenpagina zit in hetzelfde jasje als de rest van het portaal: je naam in de kop, het document, een stapbalk (lezen, tekenen, bevestigen) en één instemmelijn, **Ik ga akkoord met deze offerte en de voorwaarden van {bedrijf}** bij een offerte, voor de knop **Teken en verstuur**. De handtekening zelf werkt zoals hij werkte: naam tekenen of typen, met na het tekenen een bevestigingsmail en de PDF als download. De tekenpagina draagt hetzelfde vraagvak als de rest van het portaal, zodat een vraag over dit document in een gesprek belandt in plaats van langs de zijkant.
+
 ### Afspraken
 
 Het portaal toont de komende en eerdere afspraken van deze klant, ook de plekken die hij voor een groepsafspraak (workshop, les, rondleiding) heeft gereserveerd; zie [Online afspraken](/features/site-bookings). Afspraken kunnen in de agenda van de klant zelf worden gezet, en verzetten of annuleren gaat via dezelfde pagina als die in de bevestigingsmail staat. Afspraken die niet met het e-mailadres van deze klant zijn geboekt blijven voor hem onzichtbaar.
 
+### Vragen per document
+
+Elke weergave in het portaal heeft een eigen gesprek: bij een factuur staat **Vragen over deze factuur**, bij een offerte **Vragen over deze offerte**, en hetzelfde patroon geldt voor contracten, overige documenten en afspraken. De klant schrijft zijn vraag, die komt binnen in je inbox in de app, en jouw antwoord belandt zowel in het gesprek als in de mail van de klant. Een vraag hoort bij het document waar hij gesteld is: elk gesprek blijft bij zijn eigen onderdeel.
+
+Om een vraag te stellen heb je het volledige portaal nodig. Wie alleen met een factuurbetalingslink binnenkomt, ziet waar de deur is: het portaal biedt aan de inloglink te mailen naar het adres dat op de klantkaart staat, en het vraagvak legt uit dat vragen in het volledige portaal gesteld worden. Berichten in het portaal blijven zoals ze geschreven zijn: de mail die bij je binnenkomt is de vraag van je klant, zonder mailhandtekening en zonder geciteerde geschiedenis eronder.
+
 ### Berichten
 
-De berichten-tab is een directe lijn met je inbox. De klant schrijft een vraag of opmerking, die komt binnen in je inbox in de app, en jouw antwoord belandt zowel in het portaal als in de mail van de klant. Klanten zonder e-mailadres bij hun gegevens krijgen een hint om je te bellen of te mailen.
+Het berichten-tabblad blijft de directe lijn voor alles wat niet bij één document hoort. De klant schrijft een vraag of opmerking, die komt binnen in je inbox in de app, en jouw antwoord belandt zowel in het portaal als in de mail van de klant. Klanten zonder e-mailadres bij hun gegevens krijgen een hint om je te bellen of te mailen.
 
 ### Huisstijl
 
 Het klantportaal gebruikt je bedrijfshuisstijl:
 
 - Bedrijfslogo
-- Accentkleur
+- Merkkleur
 - Bedrijfsinformatie
 
 Dit creëert een professionele, consistente ervaring voor je klanten.
+
+### De look van het portaal
+
+Onder **Instellingen → Klantportaal** kies je hoe het eruitziet, zonder extra werk: logo, kleur en bedrijfsgegevens hebben al een eigen plek en nemen vanzelf mee. Hier stel je zelf in:
+
+- **Stijl**: vijf stijlen, elk afgeleid van je merkkleur, zodat een bleke of bijna zwarte merkkleur bij je klant net zo uitvalt als in het voorbeeld. **Rustig** (wit, je kleur alleen in knoppen en accenten), **Warm** (zacht papier en ronde vormen), **Kleur** (je kleur in de kop en de eerste taak), **Strak** (hoekig en zakelijk, een helder raster) of **Avond** (een donkere kop met grote letters). Elke tegel in de kiezer draagt een klein voorbeeld in die stijl.
+- **Standaardweergave**: licht of donker, of laat hem op **Zoals je klant wil** staan, zodat het portaal volgt wat het toestel van je klant vraagt (je klant kan het zelf altijd omzetten).
+- **Welkomsttekst**: een korte regel onder de begroeting. Laat hem leeg, dan zetten we er zelf iets passends neer.
+- **Je foto op de kaart**: met een profielfoto staat jij met je naam op de contactkaart, in plaats van je bedrijf. Je logo blijft bovenaan.
+
+Naast de instellingen staat het voorbeeld: het echte portaaloverzicht met voorbeelddata, op de breedte die je klant krijgt, precies zoals je klant hem ziet. De inhoud van de bedrijfskaart en de portaallink verwijzen naar hun eigen plekken: je past logo en kleur aan bij **Uiterlijk**, de bedrijfsgegevens bij **Bedrijfsgegevens**.
+
+Een klant zijn inloglink sturen of hem overal uitloggen, doe je op de klantpagina, in het blok **Klantportaal**.
 
 ## Bevroren factuurkopie
 

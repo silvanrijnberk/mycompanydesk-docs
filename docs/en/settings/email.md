@@ -1,7 +1,7 @@
 ---
 title: Email
 description: "Choose which address your invoices and quotes go out from and set what appears under every message. Available on every plan."
-last_verified: 2026-09-29
+last_verified: 2026-09-30
 ---
 
 # Email
@@ -62,6 +62,18 @@ Invoice, quote, reminder, and credit note emails start from a standard, well-tes
 The customer name, number, amounts, and dates in the sample are examples: when you send, MyCompanyDesk fills in the details of the real document, so leave the placeholders where they belong. The sentence about a request only appears when the quote comes from a request.
 
 As an accountant you can read these texts but not change them; the workspace owner sets and resets the standard text. You can still adjust subject and message for one email in the send window. See [Email templates](/en/faq/email-template) for the details.
+
+### The style of the mail
+
+For every type of document email you also pick a **style of the mail** (Stijl): five ways to fill in the standard text, in content, not in looks. The choice applies to all languages.
+
+- **Formeel**: the default text, written in the u-form. Stands there from the start, so the mail changes nothing until you actively choose a style.
+- **Kort**: the core in a few lines, in je-form.
+- **Persoonlijk**: a warm greeting, in je-form, with a word of thanks for the collaboration; a recurring invoice follows it as well.
+- **Compleet**: everything a customer needs to pay or decide (date, amount, due date, account number, where to go with questions), and always with the line-item table of the document under it, even for a quote.
+- **Minimaal**: only the number, the total, and the date; no greeting, no closing.
+
+Which parts a style carries depends on your own settings for the rest: the **invoice lines in the mail** switch under the text decides whether a style other than Compleet gets the line-item table, and the switch in the send window wins when it is shown there. An own text always beats a style: if you set your own wording for a type, it keeps being sent, and choosing a style then asks whether that own text should go. Once you pick a style, the sample text on the right rewrites and the preview shows exactly what your customer receives.
 
 ### Appearance
 

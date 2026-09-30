@@ -1,125 +1,174 @@
 ---
 title: Tableau de bord
-description: "Het startscherm van je werkruimte: begroeting, sélecteur de période, KPI-overzicht, aandachtswidget en blokken die alleen verschijnen bij nuttige cijfers."
-last_verified: 2026-09-01
+description: "L'écran d'accueil montre ce qui a besoin de vous maintenant, l'argent et une carte par module ; les chiffres profonds sont sur Chiffres."
+last_verified: 2026-09-30
 ---
 
-# Dashboard
+# Tableau de bord
 
-Het dashboard op `/dashboard` is het startscherm van je werkruimte. Het beantwoordt een vraag: hoe staat je bedrijf er nu voor? Je ziet een begroeting met dagdeel en voornaam, een sélecteur de période, een rij met vijf KPI-tegels, een kort aandacht-widget en een aantal datablokken die alleen verschijnen als je bedrijfsdata aangeeft dat ze nuttig zijn.
+Le tableau de bord sous `/dashboard` est l'écran d'accueil de votre espace de travail. C'est une seule page (en interne, nous l'appelons **Mijn bedrijf**, mon entreprise) qui réunit l'argent, les parties de votre entreprise qui demandent de l'attention, et tout ce que vous pouvez encore activer. Chaque chiffre vient de vos propres données, du jour, sans une seconde étape après.
 
-## Opbouw
+Derrière se trouve une seconde page : **Chiffres** (`/cijfers`), la vue d'analyse avec les tuiles KPI, le graphique de tendance, l'ancienneté des créances et les autres chiffres profonds qui se trouvaient jusqu'ici sur le tableau de bord. La carte d'argent y renvoie, et la barre latérale possède sa propre entrée **Chiffres**.
 
-De pagina bestaat uit een vaste catalogus van blokken in een enkele scrollbare weergave. De volgorde verandert nooit, maar een blok wordt alleen getoond als je data de drempel haalt. Een eenvoudig bedrijf krijgt dus een kortere pagina, geen lege plekken.
+## À faire maintenant
 
-Bovenaan staan de begroeting, de sélecteur de période en de KPI-rij. Daaronder komt het aandacht-widget en het blok **Voor jou**, gevolgd door ondersteunende blokken zoals de trendgrafiek, ageing, omzetbronnen, offertepijplijn, uitgavenmix, cash-grafiek, btw-kaart en recente activiteit.
+En haut se trouve **À faire maintenant** : une liste de ce qui réclame votre attention, et chaque élément porte son propre bouton, pour qu'une facture parte de là. La liste ne montre rien qui ne soit pas vrai ; des éléments typiques :
 
-## Begroeting
+- Une facture jamais envoyée, ou une facture encore en brouillon, avec le montant qui va avec
+- Des factures en retard, avec une action de rappel
+- La déclaration de TVA et son échéance
+- Des demandes qui attendent un devis, et des devis restés sans réponse
+- Des lignes bancaires encore à rapprocher
+- Un agenda de réservation posé sur un site sans visiteurs
+- Un site Web hors ligne pendant que des visiteurs viennent encore, ou des modifications pas encore publiées
 
-Boven de cijfers staat een begroeting op basis van het dagdeel, samen met je voornaam en de huidige datum. De maandnaam wordt in het Nederlands zonder hoofdletter geschreven.
+Si votre période d'essai touche à sa fin, cela apparaît ici en premier, au-dessus de tout, comme seul élément avec une échéance ferme.
 
-## sélecteur de période
+Une seule règle garde cette liste sans bruit : **Te laat** (en retard) ne compte que si MyCompanyDesk connaît vos paiements. Un paiement enregistré comme payé dans les six derniers mois montre que le livre est suivi ; une connexion bancaire ou le paiement en ligne seuls ne suffisent pas, car une connexion que personne ne pointe, ou le paiement en ligne laissé activé pendant que les clients font un virement, déclarerait chaque facture en retard. Les factures n'entrent dans cette liste comme en retard que si ce signal existe.
 
-Alle getallen in de KPI-rij en in de tempo-berekeningen volgen de gekozen période. Je kiest tussen **maand**, **kwartaal** en **jaar**. De trendgrafiek blijft altijd 12 maanden breed, zodat de vergelijking eerlijk blijft.
+## La carte d'argent
 
-## KPI-rij
+À côté de **À faire maintenant** se trouve la carte d'argent, avec les quatre chiffres qui répondent d'un coup d'œil à la question « comment va l'entreprise » :
 
-De KPI-rij toont altijd vijf tegels. Elke tegel toont een hoofdgetal, een vergelijking met de vorige vergelijkbare période als een eerlijke vergelijking mogelijk is, en een kleine trendlijn. Tegels linken door naar het bijbehorende rapport of de bijbehorende lijst.
+- **Librement disponible** : votre solde bancaire, moins la réserve de TVA et vos charges fixes mensuelles
+- **En banque** : le solde de vos comptes professionnels
+- **À recevoir**, avec la part en retard mentionnée
+- **Chiffre d'affaires par mois**
 
-| Tegel | Wat je ziet |
+La réserve suit la même logique de trimestre que la carte TVA, pour que les déposants mensuels et les déclarants précoces ne voient pas partir le mauvais montant. Le solde compte vos comptes professionnels ; un compte privé relié reste en dehors des chiffres. Un lien sous la carte ouvre la vue complète **Chiffres**.
+
+## Une carte par module
+
+Chaque partie de l'entreprise qui tourne, réclame de l'attention ou est configurée à moitié reçoit sa propre carte sur la page. Chaque carte porte :
+
+- le **statut** : En cours, Attention, Configuré en partie (par exemple « 2 sur 4 terminés »), Pas encore utilisé ou Chargement impossible
+- un **surlignage d'une phrase** venant de ses propres données : la prochaine facture automatique, l'estimation de TVA, la tendance du solde, votre dernier client ou les visiteurs sur votre site
+- une **phrase de raison avec son propre bouton** là où la carte demande de l'attention
+
+Chaque carte lit sa propre source : la carte du site montre les visiteurs et les vues (le brouillon tant que vous construisez, le site en ligne après publication), la carte du portail client montre ce que vos clients ont fait avec vos devis et factures durant les 30 derniers jours, la carte des avis montre votre note, la carte de banque la tendance du solde et ce qui reste à rapprocher, la carte d'agenda vos premiers rendez-vous. Ainsi vous lisez l'état de toute l'entreprise sans ouvrir chaque partie séparément.
+
+Les parties en cours sans contenu de propre carte ne reçoivent pas de place vide : elles figurent par nom sous **Tous les modules**, pour que la grille ne montre que des cartes avec quelque chose à voir.
+
+## À configurer
+
+Ce que vous n'avez pas encore lancé arrive sous **À configurer** : au plus trois prochaines étapes, chacune avec une raison tirée de vos données (« 3 factures sont impayées. Avec un bouton de paiement dans l'e-mail, vos clients paient tout de suite. »), une courte estimation en minutes, et une annulation pour celui qui la fait disparaître. Les étapes se lisent en direct dans vos données, pas dans une liste fixe : une étape finie se ferme elle-même, et la liste reste d'accord avec la réalité.
+
+Les bannières qui se tenaient autrefois au-dessus du tableau de bord sont parties ; chaque sollicitation se trouve maintenant là où elle a sa place :
+
+- une période d'essai qui se termine est la première ligne dans **À faire maintenant**
+- sécuriser votre compte, régler un moyen de paiement, les notifications push et le domaine gratuit apparaissent comme étapes dans **À configurer**
+- les nouvelles du produit et le lien vers l'app forment en bas une ligne compacte
+
+Si vous aviez déjà fait disparaître une de ces bannières, elle reste disparue : les conditions et les clés de suppression sont les mêmes.
+
+## Tous les modules
+
+Sous les cartes se trouve la liste **Tous les modules** : tout ce qui tourne déjà sans carte propre, et tout ce qui n'est pas encore utilisé, comme une liste facile à découvrir.
+
+- Avec la croix, vous désactivez un module, le même interrupteur que sous **Paramètres → Modules**. Un module désactivé disparaît aussi de la barre latérale, pour que le menu et la page racontent la même histoire, et il revient via la liste en bas.
+- Quand un module partage son interrupteur avec un autre, les deux se désactivent et reviennent ensemble.
+- Un module que votre offre n'inclut pas reste visible, avec mention du plan qui l'ouvre, pour que vous sachiez qu'il existe.
+
+## Première visite
+
+Un nouvel espace de travail reçoit la même page, car la configuration s'y fait : il n'y a plus d'écran de première visite séparé. **À configurer** place **Première facture** en haut tant qu'aucune facture n'a été envoyée. L'ancienne liste de démarrage, dont les tâches se fermaient sans jamais se rouvrir et glissaient lentement hors de la réalité, a disparu. La ligne de l'application reste silencieuse jusqu'à l'envoi de votre première facture, pour qu'un nouvel espace ne soit pas sollicité avant que quelque chose soit parti.
+
+## Pour les comptables
+
+Un comptable qui regarde dans les livres d'un client voit le tableau de bord comme le client le vit : les parties en marche et ce qui demande là de l'attention. Les étapes de configuration, les interrupteurs de modules et les nouvelles du produit s'en vont, car la configuration est le travail du propriétaire, pas celui du comptable.
+
+## Chiffres : la vue d'analyse
+
+Les chiffres profonds de l'ancien tableau de bord se trouvent ici, déplacés sans changement. La page est une vue unique et défilante ; un bloc n'apparaît que si vos données le réclament.
+
+## Sélecteur de période
+
+Chaque chiffre de la rangée KPI et des calculs de rythme suit la période choisie. Vous choisissez entre **mois**, **trimestre** et **année**. Le graphique de tendance reste toujours large de 12 mois, pour que la comparaison reste honnête.
+
+## Rangée KPI
+
+La rangée KPI montre toujours cinq tuiles. Chaque tuile montre un chiffre principal, une comparaison avec la période comparable précédente quand une comparaison honnête existe, et une petite courbe de tendance. Les tuiles renvoient au rapport ou à la liste correspondants.
+
+| Tuile | Ce que vous voyez |
 |---|---|
-| **Kas** | Huidige kaspositie, afkomstig van een gekoppelde bankrekening of een geschat saldo, plus runway in weken |
-| **Te ontvangen** | Openstaande facturen, met de achterstallige helft apart genoemd |
-| **Omzet** | Omzet over de gekozen période en het tempo voor de hele période, met mutatie ten opzichte van de vorige vergelijkbare période |
-| **Te betalen** | Geld dat je nog moet uitbetalen, met de achterstallige helft apart genoemd |
-| **Winst** | Nettowinst over de gekozen période, met marge als die te berekenen is |
+| **Trésorerie** | Position actuelle de trésorerie, depuis un compte bancaire relié ou un solde estimé, plus la marge hebdomadaire |
+| **À recevoir** | Factures ouvertes, avec la part en retard mentionnée à part |
+| **Chiffre d'affaires** | Chiffre d'affaires sur la période choisie et le rythme pour toute la période, avec l'évolution par rapport à la période comparable précédente |
+| **À payer** | L'argent qu'il vous reste à décaisser, avec la part en retard mentionnée à part |
+| **Bénéfice** | Bénéfice net sur la période choisie, avec la marge quand elle se calcule |
 
-### Saldotegel
+### Tuile du solde
 
-De **Kas**-tegel laat naast je saldo zien wat er al vergeven is. Dat zijn twee regels:
+La tuile **Trésorerie** montre, près de votre solde, ce qui est déjà engagé. Ce sont deux lignes :
 
-- **Gereserveerd voor btw** - het positieve kwartaalsaldo dat al apart gezet moet worden
-- **Vaste lasten per maand** - je maandelijkse vaste kosten
+- **Réservé à la TVA** - le solde trimestriel positif qui devrait déjà être mis de côté
+- **Charges fixes par mois** - vos charges fixes mensuelles
 
-De slotregel toont **Vrij besteedbaar**: wat er na die reserveringen effectief overblijft. De btw-reservering gebruikt dezelfde kwartaal-logica als de btw-kaart, zodat maandaangevers en vroege indieners geen verkeerd bedrag zien afgetrokken.
+La ligne finale montre **Librement disponible** : ce qui reste effectivement après ces réserves. La réserve de TVA suit la même logique de trimestre que la carte de TVA, pour que les déclarants mensuels et les déclarants précoces ne voient pas soustraire le mauvais montant.
 
-Het saldo telt je zakelijke rekeningen: een gekoppelde privérekening blijft buiten de kaspositie en de kasprognose. Afschrijvingen daarop die een zakelijke uitgave kunnen zijn, worden apart genoemd in de regels voor te verwerken, zodat het getal hier gelijk is aan Boekhouding → Bank en de badge op Transacties.
+Le solde compte vos comptes professionnels : un compte privé relié reste en dehors de la position de trésorerie et de la prévision. Ses retraits, possibles dépenses professionnelles, sont nommés séparément dans les lignes à traiter, pour que le chiffre ici corresponde à la banque dans la comptabilité et au badge sur les transactions.
 
-Een tegel zonder eerlijke historie toont geen trendlijn in plaats van een verzonnen vlakke lijn. De kleur van een deltabadge volgt betekenis, niet alleen richting: stijgende debiteuren zijn slecht nieuws, ook al wijst de pijl omhoog.
+Une tuile sans historique honnête ne rend pas de courbe de tendance, au lieu d'inventer une ligne plate. La couleur d'un badge suit le sens, pas seulement la direction : des créances qui montent sont une mauvaise nouvelle, même si la flèche pointe vers le haut.
 
-## Voor jou
+La rangée KPI montre des mouvements de trésorerie ; la tuile **Bénéfice** et le bloc de tendance calculent selon une vue bénéfices et pertes. Dans cette vue, les dépenses sont sans TVA, les investissements s'étalent sur leur plan d'amortissement, et les brouillons encore en révision restent dehors. Utilisez le rapport P&L si vous voulez le même chiffre de bénéfice dans un rapport détaillé.
 
-Het blok **Voor jou** is een persoonlijk taken- en signalenbord op het dashboard. Het houdt de meest relevante vervolgacties op één plek, zonder het volledige belpaneel of het aandacht-widget te vervangen.
+## Pour vous
 
-Het onderscheidt:
+Le bloc **Pour vous** est un tableau de tâches et de signaux personnel sur le tableau de bord. Il garde les actions suivantes les plus pertinentes en un seul endroit, sans remplacer le panneau complet de la cloche ni le widget d'attention.
 
-- **Alle taken** (`Alle taken`) - alles waar de werkruimte aandacht voor vraagt
-- **Te laat** (`{n} te laat`) - achterstallige facturen, rekeningen of andere items
-- **Vandaag** (`{n} vandaag`) - items die vandaag af moeten
-- **Open** (`{n} open`) - nog wachtende items
-- **Gesprekken** (`{n} mail`) - ongelezen conversaties
-- **Afspraken** (`geen afspraken | {n} afspraak | {n} afspraken`) - aankomende boekingen
+Il regroupe :
 
-Elke regel toont het type item (factuur, gesprek, afspraak, enzovoort) en een directe link om hem te openen. Wanneer er niets te doen is, toont het blok **Niets op je bord.** Laadt het overzicht niet, dan biedt een opnieuw-knop een nieuwe poging.
+- **Toutes les tâches** - tout ce qui, dans l'espace de travail, demande votre attention
+- **En retard** (`{n} en retard`) - factures, factures d'achat ou autres éléments en retard
+- **Aujourd'hui** (`{n} aujourd'hui`) - les éléments qui arrivent à échéance aujourd'hui
+- **Ouvertes** (`{n} ouvertes`) - éléments encore en attente
+- **E-mails** (`{n} e-mails`) - conversations non lues
+- **Rendez-vous** (`aucun rendez-vous | {n} rendez-vous`) - réservations à venir
 
-## Aandacht-widget
+Chaque ligne montre le type d'élément (facture, conversation, rendez-vous, etc.) et un lien direct pour l'ouvrir. Quand il n'y a rien à faire, le bloc montre **Rien à traiter.** Si le chargement échoue, un bouton de nouvelle tentative est offert.
 
-Het aandacht-widget wordt gevoed door de Vandaag-signaalmotor. Het toont maximaal vier taken die nu of deze week actie vragen. Elke regel toont een ernst-indicator, een korte titel en een link naar het bijbehorende record. Het widget toont alleen taken; het bevat niet de volledige gerangschikte lijst, de bewijskerngetallen of de actieknoppen. Die volledige lijst staat in het belpaneel.
+## Widget d'attention
 
-De Vandaag-motor rangschikt signalen in vier ernstniveaus:
+Le widget d'attention est alimenté par le moteur de signaux Vandaag. Il montre jusqu'à quatre tâches qui demandent une action aujourd'hui ou cette semaine. Chaque ligne montre un point de gravité, un court titre et un lien vers l'élément concerné. Le widget ne montre que les tâches ; il ne contient pas la liste complète classée, ni les pastilles d'explication, ni les boutons d'action. Cette liste complète se trouve dans le panneau de la cloche.
 
-- **critical**: geld loopt weg of een harde deadline komt dichtbij
-- **attention**: een concrete taak, vandaag of deze week
-- **upcoming**: gedateerd, maar nog niet urgent
-- **good**: positief nieuws dat je verdient
+Le moteur Vandaag classe les signaux en quatre niveaux de gravité :
 
-De motor is deterministisch. Er is geen model betrokken bij het maken van de signalen, dus de pagina blijft bruikbaar als de AI-laag offline is.
+- **critical** : l'argent s'enfuit ou une échéance dure se rapproche
+- **attention** : une vraie tâche, aujourd'hui ou cette semaine
+- **upcoming** : datée, mais pas encore urgente
+- **good** : bonne nouvelle méritée
 
-### Actiechips
+Le moteur est déterministe. Aucun modèle ne produit les signaux, donc la page reste utile quand la couche IA est hors service.
 
-Sommige aandachtsregels hebben een actiechip, bijvoorbeeld om een betalingsherinnering te sturen. De eerste tik op een chip met bevestiging wapent hem en toont de tekst **Zeker weten? Tik nogmaals**; pas de tweede tik voert de actie uit. Na vijf seconden zonder tweede tik ontwapent de chip vanzelf. Zo kan een verdwalde tik niet per ongeluk een herinneringsmail naar een klant sturen.
+### Puces d'action
 
-## Ondersteunende blokken
+Certaines lignes d'attention portent une puce d'action, par exemple pour envoyer un rappel de paiement. Le premier appui sur une puce qui demande une confirmation l'arme et montre le texte **Sûr ? Appuyez encore** ; seul le deuxième appui exécute l'action. Si un deuxième appui n'arrive pas dans les cinq secondes, la puce se désarme toute seule. Ainsi un appui égaré ne peut pas envoyer par accident un e-mail à un client.
 
-De blokken onder de KPI-rij verschijnen alleen als ze hun plek verdienen. De catalogus bepaalt zowel of een blok getoond wordt als welke vorm hij krijgt.
+## Blocs de soutien
 
-| Blok | Inhoud |
+Les blocs au-dessous de la rangée KPI n'apparaissent que s'ils méritent leur place. Le catalogue décide autant de si un bloc s'affiche que de la forme qu'il reçoit.
+
+| Bloc | Contenu |
 |---|---|
-| **Trend** | 12-maands grafiek met omzet en kosten naast elkaar, plus de winstlijn |
-| **Ageing** | Debiteuren opgedeeld naar leeftijdsbakken |
-| **Omzetbronnen** | Grootste klanten naar omzet dit jaar |
-| **Offertes** | Open offertepijplijn en verlopende offertes |
-| **Uitgavenmix** | Kostenverdeling per catégorie, weergegeven als staafjes |
-| **Cash-grafiek** | Kaspositie over 12 maanden met prognose |
-| **Activiteit** | Recent factuur-, betalings- en uitgave-gebeurtenissen |
-| **BTW-kaart** | Huidige btw-période, checklistvoortgang, volgende deadline en in een oogopslag de btw over omzet, voorbelasting en het te betalen of terug te krijgen bedrag |
-| **Vaste lasten** | Maandelijkse terugkerende inkomsten en kosten, hoeveel procent van de vaste lasten je contracten dekken, en de grootste overeenkomsten aan beide kanten |
+| **Tendance** | Graphique 12 mois, revenus et coûts côte à côte, avec la ligne de bénéfice |
+| **Âge des créances** | Créances à répartir par tranches d'âge |
+| **Sources de revenus** | Plus gros clients selon le chiffre d'affaires de l'année en cours |
+| **Devis** | Pipeline des devis ouverts et devis qui expirent |
+| **Mix des dépenses** | Répartition des coûts par catégorie, sous forme de barres |
+| **Graphique de trésorerie** | Position de trésorerie sur 12 mois avec prévision |
+| **Activité** | Événements récents de facture, de paiement et de dépense |
+| **Carte TVA** | Période de TVA actuelle, avancement de la liste de contrôle et prochaine échéance |
 
-Op telefoons vallen visuele vormen terug op eenvoudiger vormen, zodat de getallen leesbaar blijven.
+Sur les téléphones, les grandes formes visuelles retombent sur des formes plus simples, pour que les chiffres restent lisibles.
 
-## Eerste-keer-scherm
+## Chargement et états d'erreur
 
-Een gloednieuwe werkruimte zonder facturen of klanten landt op een rustig eerste-keer-scherm in plaats van het volledige dashboard. In plaats van een generieke "maak je eerste factuur"-boodschap kiest het scherm één concrete vervolgstap op basis van wat er al in de werkruimte gebeurd is. Mogelijke vervolgstappen zijn:
+Un squelette dessine la forme finale de la vue, pour que la page ne se décale jamais sous vos yeux. Si le chargement de **Mijn bedrijf** échoue, la page dit ce qui cloche et porte un bouton de nouvelle tentative, au lieu d'un tout-va-bien bâti sur des données vides. Si le contenu des cartes échoue pendant que la vue d'ensemble est bien arrivée, chaque carte retombe sur la phrase de son statut. Sur **Chiffres**, une erreur porte le même bouton de nouvelle tentative, et un changement de période qui rate pendant que des chiffres plus anciens sont à l'écran montre un avis d'obsolescence avec une nouvelle tentative en ligne. Le bloc **Pour vous** suit le même comportement explicite d'erreur et de nouvelle tentative quand son aperçu ne peut pas se charger.
 
-- **Een opgeslagen conceptfactuur of -offerte versturen**, als je al een factuur of offerte hebt aangemaakt die nog niet is verstuurd. Het scherm toont die met een link om hem te openen en te verzenden.
-- **Een eerste factuur maken voor een bestaande klant**, als je al een klant hebt toegevoegd zonder factuur of offerte. De klant wordt genoemd en je wordt naar het nieuwe-factuurformulier geleid.
-- **Ontbrekende bedrijfsgegevens aanvullen**, als je IBAN of btw-status nog ontbreekt. Onder de hoofdactie verschijnt een extra link om die gegevens in te vullen.
-- **Maak je eerste factuur**, als er nog geen klanten, facturen of offertes zijn, is dit de standaardactie.
+## Voir aussi
 
-Een klein ontdekkingspaneel nodigt je ook uit om factuurstyling, de website of accountbeveiliging te personaliseren. Het wegklikken van dat paneel verbergt alleen het paneel; het versturen van je eerste factuur sluit het eerste-keer-scherm af. Je kunt het scherm ook overslaan met de optie **Toon mijn dashboard**.
-
-## Aan-de-slag-kaart
-
-Zolang de setup-checklist nog openstaande stappen heeft, verschijnt er een vaste kaart boven het dashboard. Die somt de openstaande stappen op en biedt een link terug naar de setup-wizard. Wegklikken wordt server-side bewaard, dus de kaart blijft verborgen op al je apparaten. De wizard is niet blokkerend: nieuwe gebruikers landen direct op `/dashboard`.
-
-## Laden en foutmeldingen
-
-Terwijl het dashboard bepaalt of dit een eerste-keer-werkruimte is en de briefing laadt, toont een skeleton de uiteindelijke vorm van de pagina. Als het ophalen van Vandaag mislukt, toont de pagina een duidelijke fout met een opnieuw-knop in plaats van een alles-goed gebouwd uit lege data. Lukt een période-switch niet terwijl er nog oudere getallen op het scherm staan, dan verschijnt een verouderd-melding met inline opnieuw-knop. Het blok **Voor jou** volgt hetzelfde expliciete fout-en-opnieuw-gedrag wanneer het overzicht niet geladen kan worden.
-
-## Zie ook
-
-- [Dashboard gebruiken](/faq/use-dashboard)
-- [Rapportages](/features/reports)
-- [Klanten](/features/customers)
-- [Facturen](/features/invoices)
-- [BTW](/features/vat)
+- [Utiliser le tableau de bord](/fr/faq/use-dashboard)
+- [Rapports](/fr/features/reports)
+- [Clients](/fr/features/customers)
+- [Factures](/fr/features/invoices)
+- [TVA](/fr/features/vat)

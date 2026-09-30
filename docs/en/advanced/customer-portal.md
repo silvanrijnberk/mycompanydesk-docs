@@ -32,7 +32,7 @@ Once the link is opened, that browser stays signed in for this customer at your 
 
 ### Overview
 
-The overview is the home page of the portal: your branding, a greeting and a short **To do** list that gathers what still needs the customer (pay an invoice, sign a document, read a new message). Under it sit the **open** and **paid** summary cards and the customer's invoices.
+The overview is the home page of the portal: your branding and a greeting up top (with your own welcome text under it, if you set one), next to a fixed company card with your contact details. A short **To do** list gathers what still needs the customer (pay an invoice, sign a document, read a new message), and once everything is settled the page says so plainly: **Everything has been paid, nothing is outstanding.** If a payment is still being checked after a bank-transfer acknowledgement, the page mentions that too instead of asking for money a second time.
 
 ### Invoice list
 
@@ -42,15 +42,9 @@ Draft invoices never appear in the portal list. A portal link is only generated 
 
 ### Invoice view
 
-The portal shows a clean, branded view of the invoice including:
+The invoice opens in the portal design: your company block at the top, the invoice details such as date, due date and invoice number, and below that a payment panel that puts the two ways to pay behind tabs: **Pay online** (the Mollie or Stripe buttons, when connected) and **Bank transfer**, with the payment reference the customer quotes and a QR code, so paying without the online buttons stays possible. Next to that, the panel keeps showing what has already been paid, any credit applied, and the remaining balance.
 
-- Your company logo and branding
-- Invoice number and date
-- Line items with descriptions and amounts
-- VAT breakdown
-- Total amount due
-- Any amount already paid, any credit note applied, and the remaining balance (for partially paid or partially credited invoices)
-- Due date
+On the same page sits the conversation with the customer: a **Questions about this invoice** ask box next to the detail, so a question about this exact invoice is asked and answered in one thread. The customer can also download the PDF here, and the same pattern repeats under a quote, contract, document or appointment.
 
 ### Payment
 
@@ -84,23 +78,44 @@ An **Open Stripe Dashboard** button deep-links you to your Stripe payment-method
 
 The **Documents** tab lists what this customer has received from you: quotes, contracts and other signable documents. Documents waiting for a signature come first, with a **View and sign** action; a quote shows until its validity date, and statuses follow the flow of the document (received, accepted, declined, expired, signed). Signing happens on a secured signing page, and it asks for an SMS code when you require one for the document.
 
+The signing page sits in the same jacket as the rest of the portal: your name at the top, the document, a step line (read, sign, confirm) and one consent sentence, **I agree to this quote and the terms of {company}** for a quote, before the button says **Sign and send**. The signature itself stays as it was: draw or type the name, with a confirmation email and the PDF as download after signing. The signing page also carries the same ask box as every other page in the portal, so a question about this document ends up in a thread instead of a side channel.
+
 ### Appointments
 
 The portal lists the upcoming and past appointments belonging to this customer, including the seats they signed up for on a group session (see [Online appointments](/en/features/site-bookings)). Appointments can be added to the customer's own calendar, and rescheduling or cancelling goes through the same page the confirmation email refers to. Appointments that were not booked with this customer's email address stay private.
 
+### Questions per document
+
+Every view in the portal carries its own conversation: under an invoice there is **Questions about this invoice**, under a quote **Questions about this quote**, and the same pattern for contracts, other documents and appointments. The customer writes a question, it lands in your inbox inside the app, and your reply arrives both in the thread and in the customer's email. A question is never answered to a different item: each thread belongs to the document it was opened from.
+
+Asking a question needs the full portal. Someone who arrives through an invoice payment link alone sees where the door is: the portal offers to email the login link to the address your customer card has, and the ask box explains that questions are asked in the full portal. Portal messages without an email signature and without quoted history underneath keep their shape: the reply that lands in your inbox reads as your customer wrote it.
+
 ### Messages
 
-The messages tab is a direct line to your inbox. The customer writes a question or note, it lands in your inbox inside the app, and your reply arrives both in the portal and in the customer's email. Customers without an email address on their record see a hint to call or mail you instead.
+The messages tab stays the direct line for everything that is not tied to one document. The customer writes a question or note, it lands in your inbox inside the app, and your reply arrives both in the portal and in the customer's email. Customers without an email address on their record see a hint to call or mail you instead.
 
 ### Branding
 
 The customer portal uses your company branding:
 
 - Company logo
-- Accent color
+- Brand colour
 - Company information
 
 This creates a professional, consistent experience for your customers.
+
+### The look of the portal
+
+Under **Settings → Customer portal** (in Dutch: Klantportaal) you choose how it all looks, without extra work: logo, colour and company data already have their own place, and they carry over. Here you set:
+
+- **Style**: five styles, each derived from your brand colour, so a pale or almost black brand colour turns out the same way for your customer as in the preview. **Calm** (white, your colour only in buttons and accents), **Warm** (soft paper and rounded shapes), **Colour** (your colour in the header and the first task), **Sharp** (angular and businesslike, a clear grid) or **Evening** (a dark header with large lettering). Each tile in the picker carries a live miniature in that style.
+- **Default look**: light or dark, or left on **follow the customer's device** (the customer can still switch it themselves).
+- **Welcome text**: a short line under the greeting. If you leave it empty, something fitting stands there instead.
+- **Your photo on the company card**: with a profile photo, the contact card shows you with your name instead of the company data. Your logo stays at the top.
+
+Next to the settings stands the live preview: the real portal overview with sample data, at the width your customer gets, exactly as he sees it. Company card contents and the portal link point to their own places: logo and colour sit under **Appearance**, the business data under **Company details**.
+
+Sending a customer their login link, or signing a single customer out everywhere, happens on the customer page under the **Customer portal** block.
 
 ## Frozen invoice copy
 

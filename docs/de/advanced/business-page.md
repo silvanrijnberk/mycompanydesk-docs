@@ -1,7 +1,7 @@
 ---
 title: Website-Builder
 description: "Bauen Sie eine mehrseitige Unternehmenswebsite im Drag-and-drop-Editor: Abschnitte und Blöcke, eigene Farben und Schriften, und veröffentlichen."
-last_verified: 2026-09-28
+last_verified: 2026-09-30
 ---
 
 # Website-Builder
@@ -416,7 +416,7 @@ Wenn Sie bereits ein Logo auf Ihrer Website haben, können Sie es direkt in MyCo
 
 Die obere Leiste zeigt einen Punkt an, solange unveröffentlichte Änderungen warten. Bei der Veröffentlichung werden nur Seiten mit dem Status Live in den Snapshot aufgenommen. Seiten im Entwurf bleiben auf der öffentlichen Site unsichtbar, auch nach der Veröffentlichung.
 
-Bis Sie veröffentlichen, sendet Ihre öffentliche URL ein `noindex`-Robots-Tag. So bleibt die automatisch bereitgestellte Workspace-Subdomain außerhalb der Suchmaschinen, während Sie noch aufbauen.
+Bis Sie veröffentlichen, sendet Ihre öffentliche URL ein `noindex`-Robots-Tag. So bleibt die Workspace-Subdomain außerhalb der Suchmaschinen, während Sie noch aufbauen; die Subdomain selbst kommt erst bei Ihrer ersten Veröffentlichung in den Blick.
 
 Wenn Sie bereit sind:
 
