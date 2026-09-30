@@ -27,7 +27,7 @@ Om je meldingsinstellingen te beheren:
    - **Geld binnenkomt**: betalingen, bevestigde betalingen en opvallende banktransacties.
    - **Deadline in aantocht**: BTW, inkomstenbelasting, vennootschapsbelasting, de KOR-grens, en aflopende contracten of projecten. Je krijgt ze ruim van tevoren, zodat je nooit te laat bent. Deze categorie bevat ook automatische boekingen die niet konden worden gemaakt omdat de datum valt in een BTW-periode die al is aangegeven en vergrendeld, zoals een doorgestuurde inboxfactuur of een banktransactie. De melding noemt de leverancier en factuurdatum en wijst je naar de inbox of bankfeed, zodat je het in de huidige periode kunt boeken of een suppletieaangifte kunt indienen.
    - **Nieuwe kansen**: offerteaanvragen, ondertekende offertes en verkopen via je website.
-   - **Nieuw bericht in je inbox**: een seintje op je telefoon zodra een klant of leverancier mailt.
+   - **Nieuw bericht in je inbox**: een seintje op je telefoon zodra een klant of leverancier mailt. Mail die in Spam belandt, blijft stil: geen ping en geen rij in de meldingenlijst.
    - **Uitgave vervalt**: aankomende vervaldatums van uitgaven die je hebt aangemaakt, zoals geplande huur of nutskosten, zodat je ze op tijd kunt betalen of vastleggen.
    - **Leveranciersregel geleerd**: een in-app melding wanneer MyCompanyDesk vanuit je bevestigde concepten een nieuwe vaste-leveranciersregel voor de bankfeed heeft geleerd.
    - **Tips en nieuws van MyCompanyDesk**: hooguit één mailtje per maand.

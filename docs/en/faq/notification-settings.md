@@ -27,7 +27,7 @@ To manage your notification settings:
    - **Money in**: payments, confirmed payments and unusual bank transactions.
    - **Upcoming deadlines**: VAT, income tax, corporate tax, the KOR threshold, and contracts or projects that are about to expire. You get these well in advance so you are never late. This category also includes automated bookings that could not be made because the date falls in a VAT period that has already been filed and locked, such as a forwarded inbox invoice or a bank transaction. The notification names the supplier and invoice date and points you to the inbox or bank feed so you can book it in the current period or file a supplementary return.
    - **New opportunities**: quote requests, signed quotes and website sales.
-   - **New inbox message**: a ping on your phone whenever a customer or supplier emails.
+   - **New inbox message**: a ping on your phone whenever a customer or supplier emails. Mail that lands in Spam notifies no one: no ping and no row in the notification list.
    - **Expense due**: upcoming due dates on expenses you created, such as scheduled rent or utility costs, so you can pay or record them on time.
    - **Vendor rule learned**: an in-app alert when MyCompanyDesk learns a new trusted-vendor bank rule from your confirmed drafts.
    - **Tips and news from MyCompanyDesk**: at most one email per month.

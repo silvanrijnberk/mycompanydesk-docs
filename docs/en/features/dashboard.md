@@ -53,7 +53,7 @@ Parts that are running without their own card content do not get an empty card; 
 
 ## Set this up next (Zet dit op)
 
-What you have not started yet comes in under **Set this up next**: up to three next steps to set up, each with a reason from your own data ("8 invoices still open? With a payment button in the mail your customers pay immediately"), a short minutes estimate, and an undo for dismissing one. The steps are read live from your data, not from a fixed checklist: a done step closes itself, and it never disagrees with reality.
+What you have not started yet comes in under **Set this up next**: up to three next steps to set up, each with a reason from your own data ("8 invoices still open? With a payment button in the mail your customers pay immediately"), a short minutes estimate, and a **Not for me** cross on any step you will never do. The steps are read live from your data, not from a fixed checklist: a done step closes itself, and it never disagrees with reality.
 
 The banners that used to stand above the dashboard are gone; every notification now sits where it belongs:
 
@@ -67,9 +67,21 @@ If you had dismissed one of those banners before, it stays dismissed: the condit
 
 Under the cards sits the **All modules** list: everything already in use without its own card, and everything not yet in use, as one discoverable list.
 
-- A cross turns a module off, the same switch you find under **Settings → Modules**. A switched-off module also disappears from the sidebar, so the menu and the page keep telling the same story, and it returns from the restore list at the bottom.
+- A cross turns a module in use off, the same switch you find under **Settings → Modules**. A switched-off module also disappears from the sidebar, so the menu and the page keep telling the same story, and it returns from the restore list at the bottom. On a module that has not started yet, the cross is a **Not for me** instead (see below).
 - Where a module shares its switch with another one, both are switched and restored together.
 - A module your plan does not include stays visible, marked with the plan that unlocks it, so you know it exists.
+
+## Not for me (Niet voor mij)
+
+A suggestion you will never act on can be told so once, for the whole workspace. On a chip under All modules, or on a setup step in **Set this up next**, the cross of a module you have not started yet is a **Not for me**: there is nothing to switch off, so the module is dismissed instead. Any such module that does carry its own card puts the same choice in the card menu.
+
+After that the dashboard stops proposing it: the step leaves **Set this up next** and the Monday mail, which reads the same list, and the module no longer comes back as a chip. **Do now** stays as it is, because that is real backlog, not suggestion. When the module starts running anyway, it simply gets its card back.
+
+Not everything can leave this way. A module that is running or asking for attention keeps its card, because you already work with it; a partly set up module with its own card content stays too, so your own data never leaves the dashboard at one click; and the core parts of the app never get this choice.
+
+A bookkeeper looking along in someone else's books sees no **Not for me** anywhere; setting up is the owner's work.
+
+Everything marked this way returns from the bottom of the page: the list at the end of **All modules** shows every hidden module with its own **Show again** button. When a marked module does end up in view, its card menu offers **Suggest again** as well.
 
 ## First visit
 
@@ -81,7 +93,7 @@ A bookkeeper looking along in someone else's books sees the dashboard the way th
 
 ## Figures: the analysis view
 
-The deep figures of the old dashboard live here, unchanged. The page is a single scrollable view built from the blocks below; a block only renders when your data satisfies the test for it.
+The deep figures of the old dashboard live here. The page holds figures only: what wants something from you, such as the attention items and the recent-activity feed, stands on Mijn bedrijf instead. It is a single scrollable view built from the blocks below; a block only renders when your data satisfies the test for it.
 
 ## Period switcher
 
@@ -114,38 +126,6 @@ A tile that has no honest history renders without a sparkline rather than invent
 
 The KPI row shows cash-movement figures; the **Profit** tile and the trend block use a profit-and-loss view. In the P&L view, expenses are without VAT, investments are spread through their depreciation schedule, and drafts still pending review are excluded. Use the P&L report if you want the same profit figure in a detailed report.
 
-## Voor jou (For you)
-
-The **Voor jou** block is a personal task and signal board on the dashboard. It keeps the most relevant next actions in one place without replacing the full bell panel or the attention widget.
-
-It groups:
-
-- **All tasks** (`Alle taken`) - everything the workspace thinks needs your attention
-- **Overdue** (`{n} te laat`) - late invoices, bills, or other items
-- **Today** (`{n} vandaag`) - items due today
-- **Open** (`{n} open`) - still waiting
-- **Mail** (`{n} mail`) - unread conversation threads
-- **Appointments** (`geen afspraken | {n} afspraak | {n} afspraken`) - upcoming bookings
-
-Each row shows the type of item (invoice, conversation, appointment, etc.) and a direct link to open it. When there is nothing to do, the block shows **Niets op je bord.** (Nothing on your plate). If loading fails, a retry button lets you try again.
-
-## Attention widget
-
-The attention widget is fed by the Vandaag signal engine. It shows up to four tasks that need action today or this week. Each row shows a severity dot, a short title, and a link to the record. The widget only surfaces tasks; it does not contain the full ranked list, the explanation chips, or the action buttons. The full list lives in the bell panel.
-
-The Vandaag engine ranks signals into four severity levels:
-
-- **critical**: money leaking or a hard deadline closing
-- **attention**: a real task, today or this week
-- **upcoming**: dated, but not yet urgent
-- **good**: earned positive news
-
-The engine is deterministic. No model is involved in producing the signals, so the page stays useful when the AI layer is down.
-
-### Action chips
-
-Some attention rows carry an action chip, for example to send a payment reminder. The first tap on a chip that requires confirmation arms it and shows the text **Are you sure? Tap again**; only the second tap executes the action. If no second tap arrives within five seconds, the chip disarms itself. This stops a stray tap from accidentally emailing a customer.
-
 ## Supporting blocks
 
 The blocks below the KPI row appear only when they earn their place. The catalogue decides both whether to show a block and which form to use.
@@ -158,14 +138,13 @@ The blocks below the KPI row appear only when they earn their place. The catalog
 | **Quotes** | Open quote pipeline and expiring quotes |
 | **Expense mix** | Cost breakdown by category, shown as bars |
 | **Cash chart** | Cash position over 12 months with forecast |
-| **Activity** | Recent invoice, payment, and expense events |
 | **VAT card** | Current VAT period, checklist progress, and next deadline |
 
 On phones, large visual forms fall back to simpler forms so the numbers remain readable.
 
 ## Loading and error states
 
-A skeleton mirrors the final shape of the view, so the page never shifts under your eyes. If the load of **Mijn bedrijf** fails, the page says what is wrong and carries a retry button, instead of an all-clear built from empty data. If the card contents fail while the overall state did load, every card falls back to the one sentence of its state. On the **Figures** page an error carries the same retry, and a period switch that fails while older figures are on screen shows a stale notice with an inline retry. The **Voor jou** block has the same explicit error-and-retry behaviour when its overview cannot be loaded.
+A skeleton mirrors the final shape of the view, so the page never shifts under your eyes. If the load of **Mijn bedrijf** fails, the page says what is wrong and carries a retry button, instead of an all-clear built from empty data. If the card contents fail while the overall state did load, every card falls back to the one sentence of its state. On the **Figures** page an error carries the same retry, and a period switch that fails while older figures are on screen shows a stale notice with an inline retry.
 
 ## See also
 

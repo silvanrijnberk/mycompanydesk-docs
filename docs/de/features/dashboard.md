@@ -53,7 +53,7 @@ Bereiche, die laufen, ohne eigene Karteninhalte zu haben, bekommen keinen leeren
 
 ## Richten Sie das ein
 
-Was Sie noch nicht gestartet haben, kommt unter **Richten Sie das ein** herein: höchstens drei nächste Schritte, jeder mit einem Grund aus Ihren eigenen Daten („8 Rechnungen sind offen. Mit einem Zahlungsbutton in der E-Mail zahlen Ihre Kunden sofort."), einer kurzen Minutenschätzung und einem Rückgängigmachen für den, der einen Schritt wegklickt. Die Schritte werden live aus Ihren Daten gelesen, nicht aus einer festen Checkliste: ein fertiger Schritt schließt sich selbst, und die Liste bleibt synchron mit der Wirklichkeit.
+Was Sie noch nicht gestartet haben, kommt unter **Richten Sie das ein** herein: höchstens drei nächste Schritte, jeder mit einem Grund aus Ihren eigenen Daten („8 Rechnungen sind offen. Mit einem Zahlungsbutton in der E-Mail zahlen Ihre Kunden sofort."), einer kurzen Minutenschätzung und, bei Schritten, die Sie nie tun werden, einem Kreuz **Nichts für mich**. Die Schritte werden live aus Ihren Daten gelesen, nicht aus einer festen Checkliste: ein fertiger Schritt schließt sich selbst, und die Liste bleibt synchron mit der Wirklichkeit.
 
 Die Banner, die früher über dem Dashboard standen, sind weg; jede Aufforderung sitzt jetzt dort, wo sie hingehört:
 
@@ -67,9 +67,21 @@ Hatten Sie so ein Banner schon weggeklickt, bleibt es weg: die Bedingungen und d
 
 Unter den Karten liegt die Liste **Alle Bereiche**: alles, was schon läuft, ohne eine eigene Karte, und alles, was noch nicht in Gebrauch ist, als eine übersichtliche Liste.
 
-- Mit dem Kreuz schalten Sie einen Bereich aus, mit demselben Schalter wie unter **Einstellungen → Module**. Ein ausgeschalteter Bereich verschwindet auch aus der Seitenleiste, damit Menü und Seite dieselbe Geschichte erzählen, und kommt über die Liste unten zurück.
+- Mit dem Kreuz schalten Sie einen Bereich in Gebrauch aus, mit demselben Schalter wie unter **Einstellungen → Module**. Ein ausgeschalteter Bereich verschwindet auch aus der Seitenleiste, damit Menü und Seite dieselbe Geschichte erzählen, und kommt über die Liste unten zurück. Bei einem Bereich, der noch nicht läuft, ist das Kreuz ein **Nichts für mich** (siehe unten).
 - Teilt ein Bereich seinen Schalter mit einem anderen, werden beide zusammen aus- und eingeschaltet.
 - Ein Bereich, den Ihr Plan nicht einschließt, bleibt sichtbar, mit dem Plan genannt, der ihn freischaltet, damit Sie wissen, dass es ihn gibt.
+
+## Nichts für mich
+
+Ein Vorschlag, mit dem Sie nie etwas anfangen werden, kann das einmal hören, für den ganzen Arbeitsbereich. Auf einem Chip unter Alle Bereiche oder auf einem Einrichtungsschritt in **Richten Sie das ein** ist das Kreuz eines noch nicht laufenden Bereichs ein **Nichts für mich**: es gibt nichts zum Abschalten, also wird der Bereich abgewählt. Trägt so ein Bereich doch eine eigene Karte, steht dieselbe Wahl im Kartenmenü.
+
+Danach schlägt das Dashboard ihn nicht mehr vor: der Schritt verschwindet aus **Richten Sie das ein** und aus der Montagsmail, die dieselbe Liste liest, und der Bereich kommt nicht wieder als Chip. **Jetzt erledigen** bleibt, wie es ist, denn das sind echte Rückstände, keine Vorschläge. Läuft der Bereich später doch, bekommt er einfach seine Karte zurück.
+
+Nicht alles kann so weg. Ein laufender Bereich oder einer, der Aufmerksamkeit verlangt, behält seine Karte, denn Sie arbeiten bereits mit ihm; ein teilweise eingerichteter Bereich mit eigenen Karteninhalten bleibt ebenfalls, damit Ihre eigenen Daten nie mit einem Klick vom Dashboard fallen; und die Kernbereiche der App bekommen diese Wahl nie.
+
+Ein Buchhalter, der mitliest, sieht **Nichts für mich** nirgends; die Einrichtung ist das Werk des Inhabers.
+
+Alles, was Sie so abgewählt haben, kommt unten auf der Seite zurück: Die Liste am Ende von **Alle Bereiche** zeigt jeden ausgeblendeten Bereich mit einer eigenen Schaltfläche zum Wiederanzeigen. Steht ein abgewählter Bereich doch einmal in Sicht, bietet das Kartenmenü auch **Wieder vorschlagen** an.
 
 ## Erster Besuch
 
@@ -81,7 +93,7 @@ Ein Buchhalter, der in den Büchern eines Kunden mitliest, sieht das Dashboard, 
 
 ## Kennzahlen: die Analyseansicht
 
-Die tieferen Zahlen des alten Dashboards stehen hier, unverändert umgezogen. Die Seite ist eine einzelne scrollbare Ansicht; ein Baustein erscheint nur, wenn Ihre Daten ihn hergeben.
+Die tieferen Zahlen des alten Dashboards stehen hier. Die Seite zeigt Zahlen und nichts weiter: was um Aufmerksamkeit bittet und die Aktivitätsliste stehen auf **Mijn bedrijf**. Die Seite ist eine einzelne scrollbare Ansicht; ein Baustein erscheint nur, wenn Ihre Daten ihn hergeben.
 
 ## Periodenauswahl
 
@@ -114,38 +126,6 @@ Eine Kachel ohne ehrliche Historie zeigt keine Trendlinie, statt eine erfundene 
 
 Die KPI-Reihe zeigt Kassenbewegungen; die Kachel **Gewinn** und der Trendbaustein rechnen in einer Gewinn-und-Verlust-Sicht. Darin stehen Ausgaben ohne USt, laufen Investitionen über ihren Abschreibungsplan und bleiben Entwürfe, die noch in Prüfung liegen, außen vor. Nutzen Sie den G&V-Bericht, wenn Sie dieselbe Gewinnzahl als detaillierten Bericht wünschen.
 
-## Für Sie
-
-Der Baustein **Für Sie** ist eine persönliche Aufgaben- und Signaltafel auf dem Dashboard. Er hält die relevantesten Folgeaktionen an einem Ort, ohne das volle Klingpanel oder das Aufmerksamkeitswidget zu ersetzen.
-
-Er gliedert:
-
-- **Alle Aufgaben** - alles, wofür der Arbeitsbereich Aufmerksamkeit verlangt
-- **Überfällig** (`{n} überfällig`) - überfällige Rechnungen, Rechnungen oder andere Einträge
-- **Heute** (`{n} heute`) - Einträge, die heute fällig sind
-- **Offen** (`{n} offen`) - Einträge, die noch warten
-- **E-Mails** (`{n} E-Mails`) - ungelesene Gespräche
-- **Termine** - bevorstehende Buchungen
-
-Jede Zeile zeigt die Art des Eintrags (Rechnung, Gespräch, Termin und so weiter) und einen direkten Link, um ihn zu öffnen. Gibt es nichts zu tun, zeigt der Baustein "Nichts auf deinem Tisch." Lädt der Überblick nicht, bietet eine Schaltfläche einen neuen Versuch.
-
-## Aufmerksamkeitswidget
-
-Das Aufmerksamkeitswidget wird von der Vandaag-Signalmaschine gespeist. Es zeigt bis zu vier Aufgaben, die heute oder diese Woche eine Aktion verlangen. Jede Zeile zeigt einen Schweregrad-Punkt, einen kurzen Titel und einen Link zum Eintrag. Das Widget zeigt nur Aufgaben; die vollständige gerankte Liste, die Erklärungs-Chips und die Aktionsschaltflächen stehen nicht darin. Diese stehen im Kling-Panel.
-
-Die Vandaag-Maschine ordnet Signale in vier Schweregrade:
-
-- **critical**: Geld läuft weg oder eine harte Frist naht
-- **attention**: eine echte Aufgabe, heute oder diese Woche
-- **upcoming**: datiert, aber noch nicht dringend
-- **good**: verdiente gute Nachricht
-
-Die Maschine ist deterministisch. Kein Modell erzeugt die Signale, sodass die Seite brauchbar bleibt, wenn die KI-Schicht außer Betrieb ist.
-
-### Aktions-Chips
-
-Manche Aufmerksamkeitszeilen tragen einen Aktions-Chip, um zum Beispiel eine Zahlungserinnerung zu schicken. Der erste Tipp auf einen Chip, der eine Bestätigung verlangt, bewaffnet ihn und zeigt **Sicher? Tipp noch einmal**; erst der zweite Tipp führt die Aktion aus. Kommt der zweite Tipp innerhalb von fünf Sekunden nicht, entwaffnet sich der Chip von selbst. So kann ein irrender Tipp nicht aus Versehen eine E-Mail an einen Kunden schicken.
-
 ## Ergänzende Bausteine
 
 Die Bausteine unter der KPI-Reihe erscheinen nur, wenn sie ihren Platz verdienen. Der Katalog entscheidet, ob ein Baustein gezeigt wird und welche Form er bekommt.
@@ -158,14 +138,13 @@ Die Bausteine unter der KPI-Reihe erscheinen nur, wenn sie ihren Platz verdienen
 | **Angebote** | Offene Angebots-Pipeline und ablaufende Angebote |
 | **Ausgaben-Mix** | Kostenaufteilung nach Kategorie, als Balken |
 | **Kassendiagramm** | Kassenposition über 12 Monate mit Prognose |
-| **Aktivität** | Neueste Rechnungs-, Zahlungs- und Ausgaben-Ereignisse |
 | **USt-Karte** | Aktuelle USt-Periode, Checklistenfortschritt und nächste Frist |
 
 Auf Handys fallen visuelle Formen auf einfachere Formen zurück, damit die Zahlen lesbar bleiben.
 
 ## Laden- und Fehlerzustände
 
-Ein Skeleton zeigt die endgültige Form der Ansicht, sodass die Seite nie unter Ihren Augen verrutscht. Schlägt das Laden von **Mijn bedrijf** fehl, sagt die Seite, was nicht stimmt, und bietet eine Schaltfläche für einen neuen Versuch, statt eines Alles-in-Ordnung aus leeren Daten. Schlägt der Karteninhalt fehl, während der Gesamtauszug gelungen war, fällt jede Karte auf den einen Satz ihres Status zurück. Auf **Kennzahlen** trägt eine Fehler dieselbe Schaltfläche zum neuen Versuch, und ein Periodenwechsel, der danebengeht, während ältere Zahlen auf dem Schirm stehen, zeigt einen Hinweis zur Veraltung mit einer Inline-Schaltfläche zum neuen Versuch. Der Baustein **Für Sie** folgt demselben expliziten Fehler-und-Neuversuch-Verhalten, wenn sein Überblick nicht geladen werden kann.
+Ein Skeleton zeigt die endgültige Form der Ansicht, sodass die Seite nie unter Ihren Augen verrutscht. Schlägt das Laden von **Mijn bedrijf** fehl, sagt die Seite, was nicht stimmt, und bietet eine Schaltfläche für einen neuen Versuch, statt eines Alles-in-Ordnung aus leeren Daten. Schlägt der Karteninhalt fehl, während der Gesamtauszug gelungen war, fällt jede Karte auf den einen Satz ihres Status zurück. Auf **Kennzahlen** trägt eine Fehler dieselbe Schaltfläche zum neuen Versuch, und ein Periodenwechsel, der danebengeht, während ältere Zahlen auf dem Schirm stehen, zeigt einen Hinweis zur Veraltung mit einer Inline-Schaltfläche zum neuen Versuch.
 
 ## Siehe auch
 

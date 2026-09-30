@@ -53,7 +53,7 @@ Les parties en cours sans contenu de propre carte ne reçoivent pas de place vid
 
 ## À configurer
 
-Ce que vous n'avez pas encore lancé arrive sous **À configurer** : au plus trois prochaines étapes, chacune avec une raison tirée de vos données (« 3 factures sont impayées. Avec un bouton de paiement dans l'e-mail, vos clients paient tout de suite. »), une courte estimation en minutes, et une annulation pour celui qui la fait disparaître. Les étapes se lisent en direct dans vos données, pas dans une liste fixe : une étape finie se ferme elle-même, et la liste reste d'accord avec la réalité.
+Ce que vous n'avez pas encore lancé arrive sous **À configurer** : au plus trois prochaines étapes, chacune avec une raison tirée de vos données (« 3 factures sont impayées. Avec un bouton de paiement dans l'e-mail, vos clients paient tout de suite. »), une courte estimation en minutes et, pour les étapes que vous ne ferez jamais, une croix **Pas pour moi**. Les étapes se lisent en direct dans vos données, pas dans une liste fixe : une étape finie se ferme elle-même, et la liste reste d'accord avec la réalité.
 
 Les bannières qui se tenaient autrefois au-dessus du tableau de bord sont parties ; chaque sollicitation se trouve maintenant là où elle a sa place :
 
@@ -67,9 +67,21 @@ Si vous aviez déjà fait disparaître une de ces bannières, elle reste disparu
 
 Sous les cartes se trouve la liste **Tous les modules** : tout ce qui tourne déjà sans carte propre, et tout ce qui n'est pas encore utilisé, comme une liste facile à découvrir.
 
-- Avec la croix, vous désactivez un module, le même interrupteur que sous **Paramètres → Modules**. Un module désactivé disparaît aussi de la barre latérale, pour que le menu et la page racontent la même histoire, et il revient via la liste en bas.
+- Avec la croix, vous désactivez un module en service, le même interrupteur que sous **Paramètres → Modules**. Un module désactivé disparaît aussi de la barre latérale, pour que le menu et la page racontent la même histoire, et il revient via la liste en bas. Pour un module qui ne tourne pas encore, la croix est un **Pas pour moi** (voir plus bas).
 - Quand un module partage son interrupteur avec un autre, les deux se désactivent et reviennent ensemble.
 - Un module que votre offre n'inclut pas reste visible, avec mention du plan qui l'ouvre, pour que vous sachiez qu'il existe.
+
+## Pas pour moi
+
+Une suggestion dont vous ne ferez jamais rien peut l'entendre une fois, pour tout l'espace de travail. Sur une pastille sous Tous les modules, ou sur une étape dans **À configurer**, la croix d'un module pas encore lancé est un **Pas pour moi** : il n'y a rien à désactiver, alors le module est écarté. Si un tel module porte malgré tout sa propre carte, le même choix se trouve dans le menu de la carte.
+
+À partir de là, le tableau de bord ne le propose plus : l'étape sort de **À configurer** et du courriel du lundi, qui lit la même liste, et le module ne revient plus comme pastille. **À faire maintenant** reste en place, car ce sont de vrais retards, pas des suggestions. Quand le module se met malgré tout à tourner, il reprend simplement sa carte.
+
+Tout ne peut pas partir ainsi. Un module en marche ou qui réclame de l'attention garde sa carte, car vous travaillez déjà avec lui ; un module configuré à moitié avec son propre contenu de carte reste aussi, pour que vos propres données ne quittent jamais le tableau de bord en un clic ; et les modules centraux de l'app ne se voient jamais proposer ce choix.
+
+Un comptable qui regarde dans les livres d'un client ne voit **Pas pour moi** nulle part ; la configuration est le travail du propriétaire.
+
+Tout ce que vous avez écarté ainsi revient en bas de la page : la liste à la fin de **Tous les modules** montre chaque module masqué avec un bouton pour l'afficher à nouveau. Quand un module écarté se trouve malgré tout à l'écran, le menu de la carte offre aussi **Proposer à nouveau**.
 
 ## Première visite
 
@@ -81,7 +93,7 @@ Un comptable qui regarde dans les livres d'un client voit le tableau de bord com
 
 ## Chiffres : la vue d'analyse
 
-Les chiffres profonds de l'ancien tableau de bord se trouvent ici, déplacés sans changement. La page est une vue unique et défilante ; un bloc n'apparaît que si vos données le réclament.
+Les chiffres profonds de l'ancien tableau de bord se trouvent ici, et rien qu'eux : ce qui attend quelque chose de vous, les éléments d'attention et le fil d'activité, se tient sur **Mijn bedrijf**. La page est une vue unique et défilante ; un bloc n'apparaît que si vos données le réclament.
 
 ## Sélecteur de période
 
@@ -114,38 +126,6 @@ Une tuile sans historique honnête ne rend pas de courbe de tendance, au lieu d'
 
 La rangée KPI montre des mouvements de trésorerie ; la tuile **Bénéfice** et le bloc de tendance calculent selon une vue bénéfices et pertes. Dans cette vue, les dépenses sont sans TVA, les investissements s'étalent sur leur plan d'amortissement, et les brouillons encore en révision restent dehors. Utilisez le rapport P&L si vous voulez le même chiffre de bénéfice dans un rapport détaillé.
 
-## Pour vous
-
-Le bloc **Pour vous** est un tableau de tâches et de signaux personnel sur le tableau de bord. Il garde les actions suivantes les plus pertinentes en un seul endroit, sans remplacer le panneau complet de la cloche ni le widget d'attention.
-
-Il regroupe :
-
-- **Toutes les tâches** - tout ce qui, dans l'espace de travail, demande votre attention
-- **En retard** (`{n} en retard`) - factures, factures d'achat ou autres éléments en retard
-- **Aujourd'hui** (`{n} aujourd'hui`) - les éléments qui arrivent à échéance aujourd'hui
-- **Ouvertes** (`{n} ouvertes`) - éléments encore en attente
-- **E-mails** (`{n} e-mails`) - conversations non lues
-- **Rendez-vous** (`aucun rendez-vous | {n} rendez-vous`) - réservations à venir
-
-Chaque ligne montre le type d'élément (facture, conversation, rendez-vous, etc.) et un lien direct pour l'ouvrir. Quand il n'y a rien à faire, le bloc montre **Rien à traiter.** Si le chargement échoue, un bouton de nouvelle tentative est offert.
-
-## Widget d'attention
-
-Le widget d'attention est alimenté par le moteur de signaux Vandaag. Il montre jusqu'à quatre tâches qui demandent une action aujourd'hui ou cette semaine. Chaque ligne montre un point de gravité, un court titre et un lien vers l'élément concerné. Le widget ne montre que les tâches ; il ne contient pas la liste complète classée, ni les pastilles d'explication, ni les boutons d'action. Cette liste complète se trouve dans le panneau de la cloche.
-
-Le moteur Vandaag classe les signaux en quatre niveaux de gravité :
-
-- **critical** : l'argent s'enfuit ou une échéance dure se rapproche
-- **attention** : une vraie tâche, aujourd'hui ou cette semaine
-- **upcoming** : datée, mais pas encore urgente
-- **good** : bonne nouvelle méritée
-
-Le moteur est déterministe. Aucun modèle ne produit les signaux, donc la page reste utile quand la couche IA est hors service.
-
-### Puces d'action
-
-Certaines lignes d'attention portent une puce d'action, par exemple pour envoyer un rappel de paiement. Le premier appui sur une puce qui demande une confirmation l'arme et montre le texte **Sûr ? Appuyez encore** ; seul le deuxième appui exécute l'action. Si un deuxième appui n'arrive pas dans les cinq secondes, la puce se désarme toute seule. Ainsi un appui égaré ne peut pas envoyer par accident un e-mail à un client.
-
 ## Blocs de soutien
 
 Les blocs au-dessous de la rangée KPI n'apparaissent que s'ils méritent leur place. Le catalogue décide autant de si un bloc s'affiche que de la forme qu'il reçoit.
@@ -158,14 +138,13 @@ Les blocs au-dessous de la rangée KPI n'apparaissent que s'ils méritent leur p
 | **Devis** | Pipeline des devis ouverts et devis qui expirent |
 | **Mix des dépenses** | Répartition des coûts par catégorie, sous forme de barres |
 | **Graphique de trésorerie** | Position de trésorerie sur 12 mois avec prévision |
-| **Activité** | Événements récents de facture, de paiement et de dépense |
 | **Carte TVA** | Période de TVA actuelle, avancement de la liste de contrôle et prochaine échéance |
 
 Sur les téléphones, les grandes formes visuelles retombent sur des formes plus simples, pour que les chiffres restent lisibles.
 
 ## Chargement et états d'erreur
 
-Un squelette dessine la forme finale de la vue, pour que la page ne se décale jamais sous vos yeux. Si le chargement de **Mijn bedrijf** échoue, la page dit ce qui cloche et porte un bouton de nouvelle tentative, au lieu d'un tout-va-bien bâti sur des données vides. Si le contenu des cartes échoue pendant que la vue d'ensemble est bien arrivée, chaque carte retombe sur la phrase de son statut. Sur **Chiffres**, une erreur porte le même bouton de nouvelle tentative, et un changement de période qui rate pendant que des chiffres plus anciens sont à l'écran montre un avis d'obsolescence avec une nouvelle tentative en ligne. Le bloc **Pour vous** suit le même comportement explicite d'erreur et de nouvelle tentative quand son aperçu ne peut pas se charger.
+Un squelette dessine la forme finale de la vue, pour que la page ne se décale jamais sous vos yeux. Si le chargement de **Mijn bedrijf** échoue, la page dit ce qui cloche et porte un bouton de nouvelle tentative, au lieu d'un tout-va-bien bâti sur des données vides. Si le contenu des cartes échoue pendant que la vue d'ensemble est bien arrivée, chaque carte retombe sur la phrase de son statut. Sur **Chiffres**, une erreur porte le même bouton de nouvelle tentative, et un changement de période qui rate pendant que des chiffres plus anciens sont à l'écran montre un avis d'obsolescence avec une nouvelle tentative en ligne.
 
 ## Voir aussi
 

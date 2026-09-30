@@ -42,4 +42,4 @@ Les tâches peuvent provenir de plusieurs endroits :
 ## Conseils
 
 - Utilisez la pastille de provenance pour accéder à l'enregistrement concerné.
-- Le [widget d'attention du tableau de bord](/fr/features/dashboard) affiche jusqu'à quatre tâches qui nécessitent une action aujourd'hui ou cette semaine.
+- La liste **À faire maintenant** du [tableau de bord](/fr/faq/use-dashboard) place les tâches qui réclament une action aujourd'hui devant tout le reste.
