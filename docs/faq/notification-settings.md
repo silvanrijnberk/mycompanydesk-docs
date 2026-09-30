@@ -1,7 +1,7 @@
 ---
 title: "Meldingsinstellingen"
 description: "Om je meldingsinstellingen te beheren: ga naar Instellingen > Meldingen, zet de meldingsonderwerpen aan of uit en schakel pushmeldingen in."
-last_verified: 2026-09-28
+last_verified: 2026-09-30
 chatbot:
   triggers:
     - "notifications"
@@ -22,6 +22,7 @@ Om je meldingsinstellingen te beheren:
 
 1. Ga naar Instellingen → "Meldingen"
 2. Zet de meldingsonderwerpen aan of uit. De categorieën zijn:
+   - **Op maandag wat er deze week moet gebeuren**: de maandagmail met de taken uit **Nu doen** op je dashboard. Elke maandag een mail, en alleen als er iets is; zit er iets dringend tussen, dan ook een seintje op je telefoon. De mail gaat alleen naar de eigenaar van de werkruimte, en die ziet als enige deze schakelaar. De schakelaar staat standaard aan; de afmeldlink onderin de mail zet hem uit.
    - **Aandacht voor facturen**: te late facturen, facturen die bijna vervallen, concepten die blijven liggen, mislukte incasso's, facturen die niet bij de klant zijn aangekomen, stilgevallen automatische contractfacturatie en uren zonder tarief.
    - **Geld binnenkomt**: betalingen, bevestigde betalingen en opvallende banktransacties.
    - **Deadline in aantocht**: BTW, inkomstenbelasting, vennootschapsbelasting, de KOR-grens, en aflopende contracten of projecten. Je krijgt ze ruim van tevoren, zodat je nooit te laat bent. Deze categorie bevat ook automatische boekingen die niet konden worden gemaakt omdat de datum valt in een BTW-periode die al is aangegeven en vergrendeld, zoals een doorgestuurde inboxfactuur of een banktransactie. De melding noemt de leverancier en factuurdatum en wijst je naar de inbox of bankfeed, zodat je het in de huidige periode kunt boeken of een suppletieaangifte kunt indienen.

@@ -1,7 +1,7 @@
 ---
 title: "Benachrichtigungseinstellungen"
 description: "So verwalten Sie Ihre Benachrichtigungseinstellungen: Themen ein- oder ausschalten und Push-Benachrichtigungen aktivieren."
-last_verified: 2026-09-28
+last_verified: 2026-09-30
 chatbot:
   triggers:
     - "notifications"
@@ -22,6 +22,7 @@ So verwalten Sie Ihre Benachrichtigungseinstellungen:
 
 1. Gehen Sie zu Einstellungen → „Benachrichtigungen“
 2. Schalten Sie die Benachrichtigungsthemen ein oder aus. Die Kategorien sind:
+   - **Montags, was diese Woche zu tun ist**: die Montags-E-Mail mit den Aufgaben aus **Jetzt erledigen** auf Ihrem Dashboard. An jedem Montag eine E-Mail, nur wenn etwas ansteht; wenn etwas dringend ist, kommt auch eine Benachrichtigung auf Ihrem Telefon an. Die E-Mail geht nur an den Workspace-Inhaber, der deshalb allein diesen Schalter sieht. Der Schalter steht standardmäßig auf an; der Abmeldelink am Ende der E-Mail schaltet ihn wieder aus.
    - **Rechnungen, die Ihre Aufmerksamkeit brauchen**: überfällige Rechnungen, Rechnungen, die bald fällig sind, unbearbeitete Entwürfe, fehlgeschlagene Lastschriften, fehlgeschlagene Rechnungszustellungen, pausierte automatische Vertragsabrechnung und Stunden ohne Tarif.
    - **Zahlungseingang**: Zahlungen, bestätigte Zahlungen und auffällige Banktransaktionen.
    - **Anstehende Fristen**: MwSt., Einkommensteuer, Körperschaftsteuer, die Kleinunternehmer-Grenze, und auslaufende Verträge oder Projekte. Sie erhalten sie rechtzeitig vorab, damit Sie nie zu spät sind. Diese Kategorie umfasst auch automatische Buchungen, die nicht vorgenommen werden konnten, weil das Datum in einen bereits abgegebenen und gesperrten Mehrwertsteuerzeitraum fällt, zum Beispiel eine weitergeleitete Posteingangsrechnung oder eine Banktransaktion. Die Benachrichtigung nennt den Lieferanten und das Rechnungsdatum und verweist Sie auf den Posteingang oder den Bank-Feed, damit Sie die Ausgabe im aktuellen Zeitraum buchen oder eine ergänzende Erklärung einreichen können.

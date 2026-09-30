@@ -26,6 +26,8 @@ Als je proefperiode bijna om is, staat dat hier eerst, boven alles, als enige me
 
 Eén regel houdt deze lijst ruisvrij: **Te laat** telt alleen als MyCompanyDesk je betalingen kent. Een betaling die de laatste zes maanden als betaald geregistreerd werd, laat zien dat je boek bijgehouden wordt; een bankkoppeling of online betalen alleen niet, want een koppeling die niemand aflettert, of online betalen dat aan staat terwijl klanten overmaken, zou elke factuur te laat noemen. Facturen komen alleen als te laat in de lijst als dat signaal er is.
 
+Elke maandag komt dezelfde lijst langs in je mailbox: alleen als er iets te doen is, alleen voor de eigenaar van de werkruimte, en met een seintje op je telefoon als iets erin dringend is. De mail zet je aan of uit bij Instellingen > Meldingen.
+
 ## De geldkaart
 
 Naast **Nu doen** staat de geldkaart, met de vier getallen die "hoe gaat het" in één oogopslag beantwoorden:

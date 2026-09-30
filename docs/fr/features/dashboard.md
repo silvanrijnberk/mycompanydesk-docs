@@ -26,6 +26,8 @@ Si votre période d'essai touche à sa fin, cela apparaît ici en premier, au-de
 
 Une seule règle garde cette liste sans bruit : **Te laat** (en retard) ne compte que si MyCompanyDesk connaît vos paiements. Un paiement enregistré comme payé dans les six derniers mois montre que le livre est suivi ; une connexion bancaire ou le paiement en ligne seuls ne suffisent pas, car une connexion que personne ne pointe, ou le paiement en ligne laissé activé pendant que les clients font un virement, déclarerait chaque facture en retard. Les factures n'entrent dans cette liste comme en retard que si ce signal existe.
 
+La même liste arrive aussi chaque lundi dans votre boîte mail : uniquement s'il y a quelque chose à faire, uniquement pour le propriétaire de l'espace de travail, et avec une notification sur votre téléphone si une tâche est urgente. Vous activez ou désactivez le courriel dans Paramètres → « Notifications ».
+
 ## La carte d'argent
 
 À côté de **À faire maintenant** se trouve la carte d'argent, avec les quatre chiffres qui répondent d'un coup d'œil à la question « comment va l'entreprise » :
