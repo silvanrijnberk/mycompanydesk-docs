@@ -18,7 +18,7 @@ Demarrer avec MyCompanyDesk ne prend que quelques minutes.
 5. Après la vérification, vous recevez un e-mail de bienvenue et arrivez directement dans l'application, dans votre propre espace de travail.
 
 :::tip Commencer depuis la page d'accueil
-Vous pouvez aussi commencer depuis le site marketing. Si vous recherchez votre entreprise sur la page d'accueil et la sélectionnez dans le registre néerlandais (KVK), le CTA emporte votre numéro KVK jusqu'à `/register`. Après inscription et vérification, l'assistant de configuration applique automatiquement ce numéro KVK et génère directement un site web thématique pour vous. Le site est prêt mais n'est pas encore en ligne; la première fois que vous ouvrez l'éditeur de site, vous pouvez le publier ou l'ajuster d'abord.
+Vous pouvez aussi commencer depuis le site marketing. Si vous recherchez votre entreprise sur la page d'accueil et la sélectionnez dans le registre néerlandais (KVK), le CTA emporte votre numéro KVK jusqu'à `/register`. Après inscription et vérification, l'assistant de configuration applique automatiquement ce numéro KVK et reprend le nom de l'entreprise sur votre espace de travail. Aucun site web ne se génère en tâche de fond : vous le construisez vous-même, en brouillon, à la première ouverture de l'éditeur de site, et il attend jusqu'à ce que vous publiiez.
 :::
 
 ## Invite par votre comptable
@@ -53,9 +53,9 @@ Les utilisateurs recurrents arrivent sur le meme ecran partage. L'onglet **Conne
 
 ## Terminer l'assistant de configuration
 
-Les nouveaux comptes arrivent directement dans l'assistant de configuration à `/setup` après la première connexion ou la vérification par e-mail. L'assistant est facultatif : cliquez sur **Passer pour l'instant** pour continuer vers votre tableau de bord, ou fermez l'onglet et revenez plus tard. Tant que la configuration n'est pas terminée, un bandeau fermable **Terminer la configuration** en haut du tableau de bord vous permet de reprendre à tout moment.
+Les nouveaux comptes arrivent directement dans l'assistant de configuration à `/setup` après la première connexion ou la vérification par e-mail. L'assistant est facultatif : cliquez sur **Passer pour l'instant** pour continuer vers votre tableau de bord, ou fermez l'onglet et revenez plus tard. Tant que la configuration a des bouts libres, le tableau de bord vous signale lui-même la prochaine étape en bas de la page, sous **À configurer**.
 
-L'assistant s'articule autour de votre première facture. Il demande à qui vous facturez et remplit en parallèle le bloc expéditeur, les coordonnées de paiement et le statut de TVA, avec un aperçu en direct de la facture à côté des questions. Vous pouvez aussi faire rechercher votre entreprise dans le registre néerlandais (KVK) pour préremplir vos coordonnées professionnelles. La création d'un site web est optionnelle depuis l'écran de fin, et non une étape de l'assistant.
+L'assistant s'articule autour de votre première facture. Il demande à qui vous facturez et remplit en parallèle le bloc expéditeur, les coordonnées de paiement et le statut de TVA, avec un aperçu en direct de la facture à côté des questions. Vous pouvez aussi faire rechercher votre entreprise dans le registre néerlandais (KVK) pour préremplir vos coordonnées professionnelles. Rien ne se construit en tâche de fond : ce que vous ouvrez vous-même se configure, et le tableau de bord propose les prochaines étapes sous **À configurer**.
 
 Chaque réponse est enregistrée au fur et à mesure, vous pouvez donc passer l'assistant, le reprendre plus tard et le relancer sans perdre de progression. Toutes les informations peuvent aussi être modifiées ultérieurement dans les Paramètres.
 

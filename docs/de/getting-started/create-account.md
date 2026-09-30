@@ -18,7 +18,7 @@ Der Einstieg in MyCompanyDesk dauert nur wenige Minuten.
 5. Nach der Verifizierung erhalten Sie eine Willkommens-E-Mail und gelangen direkt in die App, in Ihren eigenen Arbeitsbereich.
 
 :::tip Partner-Empfehlung
-Sie können auch über die Marketingseite beginnen. Wenn Sie Ihr Unternehmen auf der Landing-Page suchen und aus dem niederländischen Handelsregister (KVK) auswählen, trägt der CTA Ihre KVK-Nummer zu `/register`. Nach der Registrierung und Verifizierung wendet der Einrichtungsassistent diese KVK-Nummer automatisch an und erstellt direkt eine thematische Website für Sie. Die Website steht bereit, ist aber noch nicht live; beim ersten Öffnen des Website-Editors können Sie sie veröffentlichen oder zuerst anpassen.
+Sie können auch über die Marketingseite beginnen. Wenn Sie Ihr Unternehmen auf der Landing-Page suchen und aus dem niederländischen Handelsregister (KVK) auswählen, trägt der CTA Ihre KVK-Nummer zu `/register`. Nach der Registrierung und Verifizierung wendet der Einrichtungsassistent diese KVK-Nummer automatisch an und übernimmt den Firmennamen auf Ihren Arbeitsbereich. Im Hintergrund wird keine Website erzeugt: Sie bauen sie selbst, als Entwurf, beim ersten Öffnen des Website-Editors, und sie wartet darauf, bis Sie veröffentlichen.
 :::
 
 ## Von Ihrem Steuerberater eingeladen
@@ -53,9 +53,9 @@ Rückkehrende Benutzer landen auf derselben geteilten Seite. Der **Anmelden**-Ta
 
 ## Einrichtungsassistenten abschließen
 
-Neue Accounts gelangen nach dem ersten Login oder der E-Mail-Bestätigung direkt in den Einrichtungsassistenten unter `/setup`. Der Assistent ist optional: Klicken Sie auf **Vorerst überspringen**, um zum Dashboard weiterzugehen, oder schließen Sie den Tab und kommen Sie später zurück. Solange die Einrichtung nicht abgeschlossen ist, zeigt das Dashboard einen schließbaren **Setup abschließen**-Banner, über den Sie jederzeit fortfahren können.
+Neue Accounts gelangen nach dem ersten Login oder der E-Mail-Bestätigung direkt in den Einrichtungsassistenten unter `/setup`. Der Assistent ist optional: Klicken Sie auf **Vorerst überspringen**, um zum Dashboard weiterzugehen, oder schließen Sie den Tab und kommen Sie später zurück. Solange die Einrichtung offene Enden hat, weist das Dashboard Sie unten auf der Seite selbst auf den nächsten Schritt hin, unter **Richten Sie das ein**.
 
-Der Assistent dreht sich um Ihre erste Rechnung. Er fragt, wen Sie abrechnen möchten, und füllt währenddessen den Absenderblock, Zahlungsdetails und den USt.-Status aus, mit einer Live-Vorschau der Rechnung neben den Fragen. Sie können Ihr Unternehmen auch im niederländischen Handelsregister (KVK) nachschlagen lassen, damit Ihre Geschäftsdaten automatisch übernommen werden. Eine Website einzurichten ist ab dem Abschlussbildschirm optional, kein Schritt im Assistenten selbst.
+Der Assistent dreht sich um Ihre erste Rechnung. Er fragt, wen Sie abrechnen möchten, und füllt währenddessen den Absenderblock, Zahlungsdetails und den USt.-Status aus, mit einer Live-Vorschau der Rechnung neben den Fragen. Sie können Ihr Unternehmen auch im niederländischen Handelsregister (KVK) nachschlagen lassen, damit Ihre Geschäftsdaten automatisch übernommen werden. Im Hintergrund wird nichts für Sie gebaut: was Sie selbst öffnen, wird eingerichtet, und das Dashboard schlägt die nächsten Schritte unter **Richten Sie das ein** vor.
 
 Jede Antwort wird sofort gespeichert, sodass Sie den Assistenten überspringen, später fortsetzen und neu starten können, ohne Fortschritt zu verlieren. Alle Angaben können später auch unter Einstellungen geändert werden.
 

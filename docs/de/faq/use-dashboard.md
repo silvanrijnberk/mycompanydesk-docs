@@ -1,7 +1,7 @@
 ---
-title: "Dashboard nutzen"
-description: "Ihr Dashboard bietet einen schnellen Überblick über: eine Periodenauswahl für Monat, Quartal oder Jahr."
-last_verified: 2026-08-18
+title: "Dashboard verwenden"
+description: "Das Dashboard unter /dashboard zeigt, was jetzt Aufmerksamkeit braucht, das Geld und eine Karte pro Modul; die tieferen Zahlen stehen auf Kennzahlen."
+last_verified: 2026-09-30
 chatbot:
   triggers:
     - "use dashboard"
@@ -19,15 +19,16 @@ chatbot:
     - "How do I create an invoice?"
 ---
 
-Ihr Dashboard bietet einen schnellen Überblick über:
+Ihr Dashboard (intern **Mijn bedrijf**) gibt Ihnen einen schnellen Überblick über:
 
-- eine Periodenauswahl für Monat, Quartal oder Jahr
-- fünf feste KPI-Kacheln: Liquidität, Forderungen, Umsatz, Verbindlichkeiten und Gewinn
-- ein Aufmerksamkeits-Widget mit bis zu vier Aufgaben, die bearbeitet werden müssen
-- unterstützende Blöcke wie Trend, Ageing, Umsatzquellen, Angebote, Ausgaben, Cash, Aktivität und Mehrwertsteuer
+- **Jetzt erledigen** (Nu doen): eine Liste, in der jeder Eintrag seine eigene Schaltfläche trägt, von unversendeten Rechnungen bis zur USt-Erklärung
+- die **Geldkarte**: frei verfügbar, Saldo, noch zu erhalten und Umsatz pro Monat
+- **eine Karte pro Modul**: alles, was läuft, um Aufmerksamkeit bittet oder halb eingerichtet ist
+- **Richten Sie das ein** (Zet dit op): die nächsten Einrichtungsschritte, mit einem Grund aus Ihren eigenen Daten
+- **Alle Bereiche** (Alle onderdelen): der Rest, zum Selbst Ein- und Ausschalten
 
-Wechseln Sie mit der Periodenauswahl, um alle Zahlen der KPI-Reihe neu einzurahmen. Der Trendchart bleibt immer bei 12 Monaten.
+Die alten Banner über der Seite sind weg: Probezeit, Kontosicherheit und Zahlungsmethode stehen jetzt in Jetzt erledigen und Richten Sie das ein, Produktneuigkeiten unterhalb des Rests.
 
-Jede KPI-Kachel verlinkt zum passenden Bericht oder zur passenden Liste. Klicken Sie durch, um Dinge direkt dort zu erledigen.
+Zwei Sichten halten die Zahlen ehrlich. Die Geldkarte zählt, was schon vergeben ist: frei verfügbar ist Ihr Banksaldo, abzüglich der USt-Rückstellung und Ihrer Fixkosten pro Monat. Die tieferen Zahlen sind umgezogen auf die Seite **Kennzahlen** (`/cijfers`, auch in der Seitenleiste): die KPI-Reihe mit der Periodenauswahl, das Trenddiagramm über 12 Monate, Alterung, Umsatzquellen, Ausgaben-Mix, Kassendiagramm und die Aktivitätsliste.
 
-Das Dashboard hält zwei Sichten ehrlich nebeneinander: Die KPI-Reihe zeigt Kassenbewegungszahlen, während die Gewinnkachel und der Trendblock eine GuV-Sicht verwenden. In der GuV-Sicht sind Ausgaben ohne Mehrwertsteuer, Investitionen über ihren Abschreibungsplan verteilt und Entwürfe, die noch in Überprüfung stehen, ausgeschlossen. Verwenden Sie den GuV-Bericht, wenn Sie dieselbe Gewinnzahl in einem detaillierten Bericht sehen möchten.
+Auf Kennzahlen zeigt die KPI-Reihe Kassenbewegungszahlen, während die Gewinnkachel und der Trendblock eine GuV-Sicht verwenden. In der GuV-Sicht sind Ausgaben ohne Mehrwertsteuer, Investitionen über ihren Abschreibungsplan verteilt und Entwürfe, die noch in Überprüfung stehen, ausgeschlossen. Verwenden Sie den GuV-Bericht, wenn Sie dieselbe Gewinnzahl in einem detaillierten Bericht sehen möchten.

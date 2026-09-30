@@ -1,22 +1,85 @@
 ---
 title: Dashboard
-description: "Your workspace home screen: greeting, period switcher, KPI summary, an attention widget and blocks that appear only when your data makes them useful."
-last_verified: 2026-09-01
+description: "The workspace home screen answers how the business is doing and what needs you now, with the deeper figures one click away on Figures."
+last_verified: 2026-09-30
 ---
 
 # Dashboard
 
-The dashboard at `/dashboard` is the home screen of your workspace. It answers one question: how is the business doing right now? The page shows a greeting with time-of-day and first name, a period switcher, a KPI summary row, a short attention widget, and a set of data-driven blocks that appear only when your workspace data says they are useful.
+The dashboard at `/dashboard` is the home screen of your workspace. It is one page (internally we call it **Mijn bedrijf**, my business) that holds the money, the parts of your business that ask for attention, and everything else you can switch on. Every number comes from your own data, today, without a second step after it.
 
-## Layout
+A second page sits behind it: **Figures** (`/cijfers`), the analysis view with the KPI tiles, the trend chart, ageing and the other deep figures that used to live on the dashboard. The money card links to it, and the sidebar has its own **Figures** entry.
 
-The page is a single scrollable view built from a fixed catalogue of blocks. The order never changes, but a block only renders if your workspace data satisfies the test for it. A simple business therefore sees a shorter page, not empty placeholders.
+## To do now (Nu doen)
 
-At the top sit a greeting, a period switcher and the KPI row. Below that comes the attention widget and the **Voor jou** (For you) block, then supporting blocks such as the trend chart, ageing, revenue sources, quote pipeline, expense mix, cash chart, VAT card, and recent activity.
+At the top sits **Do now**: one list of what deserves your attention now, and every item carries its own button, so an invoice can be sent and a reminder goes out from the same row. The row shows nothing that is not true; typical items are:
 
-## Greeting
+- An invoice that was never sent, or a draft invoice waiting to go out, with the amount involved
+- Overdue invoices, with a reminder action
+- The VAT return and its deadline
+- Quote requests waiting for a quote, and quotes that have gone quiet
+- Bank rows that still have to be matched
+- An online booking agenda that sits on a site that is not live
+- A website that is offline while visitors still come, or changes that are not published yet
 
-Above the numbers sits a greeting based on the time of day, together with your first name and the current date. In English the month name is capitalized.
+When your trial is about to end, that appears here first, above everything else, as the one item with a hard deadline.
+
+One rule keeps this list free of noise: **Te laat** (overdue) only counts when MyCompanyDesk knows your payments. A payment registered in the last six months shows the book is being tracked; a bank connection or online payments alone does not, because a connection nobody ticks off, or online payments that stay switched on while customers transfer, would mark every invoice late. Invoices are only put in this list as overdue when that signal is there.
+
+## The money card
+
+Next to **Do now** stands the money card, with the four figures that answer "how are we doing" in one view:
+
+- **Free to spend**: your bank balance minus the VAT reservation and your fixed monthly costs
+- **Bank balance**
+- **Receivables**, with the overdue slice called out
+- **Revenue per month**
+
+The reservation follows the same quarter logic as the VAT card, so monthly filers and early submitters do not lose the wrong amount from view. The balance counts your business accounts; a linked personal account stays out of the figures. A link under the card opens the full **Figures** analysis view.
+
+## A card for every module
+
+Every part of the business that is running, asks for attention, or is only half set up, gets its own card on the page. Every card carries:
+
+- the **status**: Running, Attention, Partly set up (as "2 of 4 done"), Not used yet, or Can't be loaded
+- a **one-sentence highlight** from its own data: the next automatic invoice, the VAT estimate, the balance trend, your newest customer, or visitors on your site
+- a **reason sentence with its own button** where the card asks for attention
+
+Each card reads its own source: the website card shows visitors and views (the draft while you are still building, the live site after publishing), the customer portal card lists what your customers did with your quotes and invoices in the last 30 days, the reviews card shows your score, the bank card shows the balance trend and anything that still has to be matched, the calendar card shows your first upcoming appointments. So you read the state of your whole business without opening each part separately.
+
+Parts that are running without their own card content do not get an empty card; they appear by name under **All modules** (Alle onderdelen) instead, so the grid only carries cards with something to show.
+
+## Set this up next (Zet dit op)
+
+What you have not started yet comes in under **Set this up next**: up to three next steps to set up, each with a reason from your own data ("8 invoices still open? With a payment button in the mail your customers pay immediately"), a short minutes estimate, and an undo for dismissing one. The steps are read live from your data, not from a fixed checklist: a done step closes itself, and it never disagrees with reality.
+
+The banners that used to stand above the dashboard are gone; every notification now sits where it belongs:
+
+- the trial that is about to end is the first line in **Do now**
+- securing your account, setting a payment method, push notifications and the free domain appear as steps in **Set this up next**
+- product news and the link to the app form a compact line under the rest
+
+If you had dismissed one of those banners before, it stays dismissed: the conditions and the hide switches are the same.
+
+## All modules (Alle onderdelen)
+
+Under the cards sits the **All modules** list: everything already in use without its own card, and everything not yet in use, as one discoverable list.
+
+- A cross turns a module off, the same switch you find under **Settings → Modules**. A switched-off module also disappears from the sidebar, so the menu and the page keep telling the same story, and it returns from the restore list at the bottom.
+- Where a module shares its switch with another one, both are switched and restored together.
+- A module your plan does not include stays visible, marked with the plan that unlocks it, so you know it exists.
+
+## First visit
+
+A new workspace receives the same page, because setup now happens there: there is no separate first-run takeover anymore. **Set this up next** puts **First invoice** at the top as long as no invoice has been sent. The old starting checklist, whose tasks closed but never reopened and slowly drifted away from reality, is gone. The app banner stays quiet until your first invoice has been sent, so a fresh workspace is not asked for the app before anything has gone out.
+
+## For accountants
+
+A bookkeeper looking along in someone else's books sees the dashboard the way the customer experiences it: the running parts and what asks for attention there. Setup steps, the module switches and product news are left out, because setting up is the owner's work, not the accountant's.
+
+## Figures: the analysis view
+
+The deep figures of the old dashboard live here, unchanged. The page is a single scrollable view built from the blocks below; a block only renders when your data satisfies the test for it.
 
 ## Period switcher
 
@@ -46,6 +109,8 @@ The final line shows **Free to spend**: what actually remains after those reserv
 The balance counts your business accounts: a linked personal account stays out of the cash position and the cash forecast. Its withdrawals that might be business expenses are named separately in the to-process lines instead, so the number you see here matches Boekhouding → Bank and the badge on Transacties.
 
 A tile that has no honest history renders without a sparkline rather than invent a flat line. The colour of a delta badge follows meaning, not just direction: receivables rising is bad news even though the arrow points up.
+
+The KPI row shows cash-movement figures; the **Profit** tile and the trend block use a profit-and-loss view. In the P&L view, expenses are without VAT, investments are spread through their depreciation schedule, and drafts still pending review are excluded. Use the P&L report if you want the same profit figure in a detailed report.
 
 ## Voor jou (For you)
 
@@ -96,24 +161,9 @@ The blocks below the KPI row appear only when they earn their place. The catalog
 
 On phones, large visual forms fall back to simpler forms so the numbers remain readable.
 
-## First-run state
-
-A brand-new workspace with no invoices or customers lands on a calm first-run screen instead of the full dashboard. Rather than a generic "create your first invoice" message, the screen picks one concrete next step based on what already exists in the workspace. Possible next steps are:
-
-- **Send a saved draft invoice or quote**, if you already created an invoice or quote that has not been sent. The screen surfaces it with a link to open and send it.
-- **Create a first invoice for an existing customer**, if you added a customer but have not billed them yet. The customer is named and the screen links to the new-invoice form.
-- **Fill in missing company details**, if your IBAN or VAT status is still missing. A secondary link under the main action lets you complete those details.
-- **Create your first invoice**, this is the default action when there are no customers, invoices or quotes yet.
-
-A small discovery panel also invites you to personalise invoice styling, the website, or account security. Dismissing the panel hides only the panel; sending your first invoice exits first-run mode. You can also skip the first-run screen with the **Show my dashboard** option.
-
-## Getting started card
-
-While the setup checklist still has open steps, a pinned card appears above the dashboard. It lists the remaining steps and a link back to the setup wizard. Dismissing the card is stored server-side, so it stays hidden across devices. The wizard is non-blocking: new signups land on `/dashboard` directly.
-
 ## Loading and error states
 
-While the dashboard decides whether this is a first-run workspace and loads the briefing, a skeleton mirrors the final shape of the page. If the Vandaag fetch fails, the page shows an explicit error with a retry button instead of an all-clear built from empty data. If a period switch fails while older numbers are still on screen, a stale notice appears with an inline retry. The **Voor jou** block has the same explicit error-and-retry behaviour when its overview cannot be loaded.
+A skeleton mirrors the final shape of the view, so the page never shifts under your eyes. If the load of **Mijn bedrijf** fails, the page says what is wrong and carries a retry button, instead of an all-clear built from empty data. If the card contents fail while the overall state did load, every card falls back to the one sentence of its state. On the **Figures** page an error carries the same retry, and a period switch that fails while older figures are on screen shows a stale notice with an inline retry. The **Voor jou** block has the same explicit error-and-retry behaviour when its overview cannot be loaded.
 
 ## See also
 

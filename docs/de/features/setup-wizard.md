@@ -1,7 +1,7 @@
 ---
 title: Einrichtungsassistent
 description: "Der Assistent unter /setup richtet Ihr Unternehmen ein und fragt danach, womit Sie starten wollen: Rechnungen, Ihre Website oder geschäftliche E-Mail."
-last_verified: 2026-09-29
+last_verified: 2026-09-30
 ---
 
 # Einrichtungsassistent
@@ -13,8 +13,7 @@ Wenn Sie die Grundlagen suchen, beginnen Sie bei [Unternehmen einrichten](/de/ge
 ## Wann der Assistent erscheint
 
 - **Erste Anmeldung:** Neue Konten landen automatisch im Assistenten.
-- **Dashboard-Banner:** Solange die Einrichtung nicht abgeschlossen ist, bietet ein Banner oben auf dem Dashboard an, sie abzuschließen. Das Banner lässt sich über das Kreuz ausblenden; das Ausblenden gilt pro Browser, und `/setup` bleibt direkt erreichbar.
-- **Jederzeit:** Rufen Sie `/setup` auf, um den Assistenten zu starten oder erneut zu durchlaufen.
+- **Jederzeit:** Rufen Sie `/setup` auf, um den Assistenten zu starten oder erneut zu durchlaufen. Ein Banner oben auf dem Dashboard gibt es nicht mehr; solange die Einrichtung offene Enden hat, weist das Dashboard Sie unten auf der Seite selbst auf den nächsten Schritt hin, unter **Richten Sie das ein**.
 
 Der Assistent blockiert Sie nirgends. **Vorerst überspringen** bringt Sie zum Dashboard, ohne abzuschließen; dabei geht nichts verloren, denn jede Antwort wird sofort gespeichert. Kommen Sie später zurück, machen Sie genau dort weiter, wo Sie aufgehört haben.
 
@@ -26,7 +25,7 @@ Der Assistent fragt, in dieser Reihenfolge:
 2. **KVK:** Ihre Unternehmensdaten
 3. **Womit Sie starten:** Ihre Wahl (siehe [den Schritt unten](#schritt-womit-wollen-sie-starten))
 4. **Zahlungseingang:** Ihr IBAN und USt.-Status (nur auf der Rechnungsroute)
-5. **Abschluss:** Testbestätigung und optionale nächste Schritte
+5. **Abschluss:** Testbestätigung
 
 **Weiter** führt fort, sobald ein Schritt hat, was er braucht; **Einrichtung abschließen** auf dem letzten Schritt wendet alles an.
 
@@ -73,11 +72,11 @@ Der letzte Schritt bestätigt Ihre Testphase:
 
 - **Ihre Testphase:** Jeder neue Arbeitsbereich startet mit 60 Tagen Pro, kostenlos, ohne Kreditkarte.
 
-**Einrichtung abschließen** wendet Ihre Unternehmensdaten, USt.-Status, IBAN und Standardeinstellungen an. Vom Abschlussbildschirm aus werden auch optionale nächste Schritte angeboten, etwa das Einrichten einer Website. Eine Website einzurichten ist optional: es wird nichts erstellt, es sei denn, Sie wählen es auf dem Abschlussbildschirm oder in der Dashboard-Checkliste.
+**Einrichtung abschließen** wendet Ihre Unternehmensdaten, USt.-Status, IBAN und Standardeinstellungen an. Der Abschlussbildschirm nennt, was noch folgt: die Sicherheit Ihres Kontos und Ihre Website werden später vorgeschlagen, wann es passt, unter **Richten Sie das ein** auf dem Dashboard. Im Hintergrund wird nirgendwo eine Website gebaut; beim ersten Öffnen des Bereichs **Website** selbst wird dort die Standard-Entwurfssite angelegt (Startseite, Leistungen, Über uns, Kontakt, mit Ihren Daten bei den rechtlichen Seiten), noch wartend auf Ihre Veröffentlichung.
 
 ## Überspringen, Fortsetzen und erneut Durchlaufen
 
-- **Überspringen:** **Vorerst überspringen** bringt Sie jederzeit zum Dashboard. Das Dashboard-Banner hält einen Weg zurück offen, bis die Einrichtung abgeschlossen ist.
+- **Überspringen:** **Vorerst überspringen** bringt Sie jederzeit zum Dashboard. `/setup` bleibt der Weg zurück, bis die Einrichtung abgeschlossen ist.
 - **Fortsetzen:** Antworten werden bei jeder Änderung gespeichert. Den Tab mittendrin zu schließen kostet nichts; beim nächsten Besuch geht es auf demselben Schritt weiter.
 - **Erneut durchlaufen:** Nach dem Abschluss startet `/setup` den Ablauf wieder beim ersten Schritt, mit Ihren gespeicherten Antworten. Der Assistent füllt leere Felder auf, statt zu überschreiben: eine aufgebaute Dienstleistungsliste, ein hochgeladenes Logo oder selbst gewählte Einstellungen werden nicht ersetzt.
 

@@ -1,7 +1,7 @@
 ---
 title: Setup wizard
 description: "The wizard at /setup builds your first invoice: it pulls your details from the KVK register, fills in payment and VAT, and previews the invoice live."
-last_verified: 2026-09-29
+last_verified: 2026-09-30
 ---
 
 # Setup wizard
@@ -13,8 +13,7 @@ If you came here for the basic walkthrough, start at [Set up your company](/en/g
 ## When the wizard is offered
 
 - **First sign-in:** new accounts land in the wizard automatically.
-- **Dashboard banner:** while setup is unfinished, a banner at the top of the dashboard offers to finish it. The banner can be hidden with the close button; hiding it is per browser, and `/setup` stays reachable directly.
-- **Any time:** navigate to `/setup` to run or re-run the wizard.
+- **Any time:** navigate to `/setup` to run or re-run the wizard. There is no banner at the top of the dashboard anymore; while setup still has loose ends, the dashboard points at the next step in its own way, under **Zet dit op**.
 
 The wizard is skippable. **Leave for now** takes you to the dashboard without finishing; nothing is lost, because every answer is saved the moment you give it. Come back later and you continue exactly where you stopped.
 
@@ -73,11 +72,11 @@ The final step confirms your trial:
 
 - **Your trial:** every new workspace starts with 60 days of Pro, free, no credit card needed.
 
-**Finish setup** applies your company details, VAT status, IBAN and default settings. The finish screen also offers optional next steps, such as setting up a website. Website setup is opt-in: nothing is created unless you choose it from the finish screen or the dashboard checklist.
+**Finish setup** applies your company details, VAT status, IBAN and default settings. The finish screen names what follows later: securing your account and your website are suggested further on, whenever it fits, under **Zet dit op** on the dashboard. A website is not built here or anywhere else in the background; the first time you open the **Website** area yourself, the standard draft site is created there (home, services, about us, contact, with the legal pages carrying your details), still awaiting your publication.
 
 ## Skipping, resuming and re-running
 
-- **Skip:** **Leave for now** exits to the dashboard at any point. The dashboard banner keeps a way back until setup is finished.
+- **Skip:** **Leave for now** exits to the dashboard at any point. `/setup` stays the way back until setup is finished.
 - **Resume:** answers are saved on every change. Closing the tab mid-step loses nothing; the next visit continues on the same step.
 - **Re-run:** after finishing, `/setup` starts the flow again from the first step with your saved answers. The wizard fills blanks rather than overwriting: a services list you built, a logo you uploaded or settings you chose by hand are not replaced.
 

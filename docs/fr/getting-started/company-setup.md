@@ -1,7 +1,7 @@
 ---
 title: Configurer votre entreprise
 description: "L'assistant de configuration remplit votre bloc expéditeur, vos coordonnées de paiement et votre statut TVA autour de votre première facture."
-last_verified: 2026-09-12
+last_verified: 2026-09-30
 ---
 
 # Configurer votre entreprise
@@ -11,7 +11,7 @@ Lors de votre première connexion, MyCompanyDesk vous guide à travers un court 
 ## Où trouver l'assistant
 
 - **Première connexion :** l'assistant s'ouvre automatiquement.
-- **Plus tard :** tant que la configuration n'est pas terminée, une bannière en haut de votre tableau de bord propose un bouton pour y revenir. Vous pouvez masquer la bannière, ou aller directement sur `/setup` à tout moment.
+- **Plus tard :** ouvrez `/setup` directement, à tout moment, pour parcourir ou reparcourir l'assistant. Tant que la configuration a des bouts libres, le tableau de bord vous signale lui-même la prochaine étape en bas de la page, sous **À configurer**.
 - **Passer :** chaque étape comporte un bouton **Passer pour l'instant**. Vos réponses sont conservées, vous reprenez plus tard là où vous étiez.
 
 ## Étape 1 : À qui vous facturez
@@ -49,9 +49,15 @@ L'assistant demande l'IBAN sur lequel les clients doivent payer. Vous pouvez sai
 
 ## Étape 4 : Terminer la configuration
 
-La dernière étape confirme votre essai Pro de 60 jours, sans carte bancaire, et applique tous les réglages. L'écran de fin propose aussi des prochaines étapes optionnelles, comme créer un site web. La création d'un site web est optionnelle, sauf si vous avez commencé via la recherche KVK sur la page d'accueil : dans ce cas, un site thématique a déjà été généré et vous attend dans l'éditeur de site.
+La dernière étape confirme votre essai Pro de 60 jours, sans carte bancaire, et applique tous les réglages, puis vous emmène à votre tableau de bord. Rien ne tourne en tâche de fond : l'écran de fin nomme ce qui suit encore (sécuriser votre compte, et votre site web), et ces suggestions suivent plus tard sous **À configurer** sur le tableau de bord, quand ça arrange. MyCompanyDesk ne génère plus de site ici et ne choisit pas de prestations pour vous ; un site se construit à la première ouverture de la zone **Site Web**.
 
 Cliquez sur **Terminer la configuration** et l'assistant applique vos informations d'entreprise, votre statut de TVA, votre IBAN et vos paramètres par défaut, puis vous emmène à votre tableau de bord.
+
+## Le site web : construit dès que vous l'ouvrez, en ligne dès que vous publiez
+
+MyCompanyDesk ne place pas de site web sous votre espace de travail sans que vous le demandiez. Inscrivez-vous et facturez sans jamais ouvrir la zone Site Web : rien d'inachevé n'y attend.
+
+À la première ouverture de **Site Web**, un site standard est créé comme brouillon : une page d'accueil, des prestations, un à-propos et contact, plus les pages Déclaration de confidentialité et Conditions générales, avec vos données d'enregistrement aux endroits qui sont les leurs. Seul un texte auquel vous pouvez tenir se trouve sur les pages ; les blocs vides attendent que vous les écriviez, et l'assistant du site n'invente plus une histoire d'origine ni une réponse standard. Rien ne se met non plus en ligne de soi : publier reste votre moment, c'est seulement alors que votre adresse devient active. Votre sous-domaine d'espace de travail, la forme simple du nom de votre entreprise sous mycompanydesk.com, n'entre en vue qu'à la publication.
 
 ## Modifier plus tard
 

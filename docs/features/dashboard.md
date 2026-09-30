@@ -1,22 +1,85 @@
 ---
 title: Dashboard
-description: "Het startscherm van je werkruimte: begroeting, periodekiezer, KPI-overzicht, aandachtswidget en blokken die alleen verschijnen bij nuttige cijfers."
-last_verified: 2026-09-01
+description: "Mijn bedrijf: één pagina met wat nu van je vraagt, de geldkaart en per onderdeel een kaart. De diepere cijfers staan op Cijfers."
+last_verified: 2026-09-30
 ---
 
 # Dashboard
 
-Het dashboard op `/dashboard` is het startscherm van je werkruimte. Het beantwoordt een vraag: hoe staat je bedrijf er nu voor? Je ziet een begroeting met dagdeel en voornaam, een periodekiezer, een rij met vijf KPI-tegels, een kort aandacht-widget en een aantal datablokken die alleen verschijnen als je bedrijfsdata aangeeft dat ze nuttig zijn.
+Het dashboard op `/dashboard` is het startscherm van je werkruimte, en heet hier **Mijn bedrijf**: één pagina met het geld, de onderdelen die om aandacht vragen en alles wat je nog kunt aanzetten. Elk getal komt uit je eigen data, van vandaag, zonder extra stap erna.
 
-## Opbouw
+Achter het dashboard staat nog een pagina: **Cijfers** (`/cijfers`). Daar ligt de analyseweergave met de KPI-tegels, de trendgrafiek, ageing en de diepere cijfers die tot nu toe op het dashboard stonden. De geldkaart linkt erop door en de zijbalk heeft een eigen **Cijfers**-ingang.
 
-De pagina bestaat uit een vaste catalogus van blokken in een enkele scrollbare weergave. De volgorde verandert nooit, maar een blok wordt alleen getoond als je data de drempel haalt. Een eenvoudig bedrijf krijgt dus een kortere pagina, geen lege plekken.
+## Nu doen
 
-Bovenaan staan de begroeting, de periodekiezer en de KPI-rij. Daaronder komt het aandacht-widget en het blok **Voor jou**, gevolgd door ondersteunende blokken zoals de trendgrafiek, ageing, omzetbronnen, offertepijplijn, uitgavenmix, cash-grafiek, btw-kaart en recente activiteit.
+Bovenaan staat **Nu doen**: één lijst van wat nu om je vraagt, en elk item draagt zijn eigen knop, zodat een factuur van daaruit verstuurt en een herinnering vertrekt. De lijst toont niets dat niet waar is; typische onderdelen:
 
-## Begroeting
+- Een factuur die nooit is verzonden, of een conceptfactuur die klaarstaat, met het bedrag eraan
+- Te late facturen, met een herinneringsactie
+- De btw-aangifte en zijn deadline
+- Aanvragen die op een offerte wachten en offertes die stilliggen
+- Bankregels die nog gekoppeld moeten worden
+- Een boekingsagenda die op een site zonder bezoekers staat
+- Een website die offline staat terwijl er nog bezoekers komen, of wijzigingen die nog niet online staan
 
-Boven de cijfers staat een begroeting op basis van het dagdeel, samen met je voornaam en de huidige datum. De maandnaam wordt in het Nederlands zonder hoofdletter geschreven.
+Als je proefperiode bijna om is, staat dat hier eerst, boven alles, als enige met een harde deadline.
+
+Eén regel houdt deze lijst ruisvrij: **Te laat** telt alleen als MyCompanyDesk je betalingen kent. Een betaling die de laatste zes maanden als betaald geregistreerd werd, laat zien dat je boek bijgehouden wordt; een bankkoppeling of online betalen alleen niet, want een koppeling die niemand aflettert, of online betalen dat aan staat terwijl klanten overmaken, zou elke factuur te laat noemen. Facturen komen alleen als te laat in de lijst als dat signaal er is.
+
+## De geldkaart
+
+Naast **Nu doen** staat de geldkaart, met de vier getallen die "hoe gaat het" in één oogopslag beantwoorden:
+
+- **Vrij besteedbaar**: je banksaldo, min de btw-reservering en je vaste lasten per maand
+- **Op de bank**: het saldo op je zakelijke rekeningen
+- **Nog te ontvangen**, met het te late deel erbij genoemd
+- **Omzet per maand**
+
+De reservering volgt dezelfde kwartaal-logica als de btw-kaart, zodat maandaangevers en vroege indieners het juiste bedrag uit beeld zien blijven. Het saldo telt je zakelijke rekeningen; een gekoppelde privérekening blijft buiten de cijfers. Een link onder de kaart opent de volledige **Cijfers**-weergave.
+
+## Per onderdeel een kaart
+
+Elk onderdeel dat loopt, aandacht vraagt of half staat, krijgt zijn eigen kaart op de pagina. Elke kaart draagt:
+
+- de **status**: Loopt, Aandacht, Half opgezet (als "2 van 4 klaar"), Nog niet gebruikt of Niet te laden
+- een **highlight van één zin** uit eigen data: de eerstvolgende automatische factuur, de btw-schatting, de saldoverloop, je nieuwste klant of bezoekers op je site
+- een **redenzin met een knop** waar de kaart om aandacht vraagt
+
+Elke kaart leest zijn eigen bron: de websitekaart toont bezoekers en weergaven (het concept zolang je bouwt, de live site na publicatie), de klantportaal-kaart laat zien wat je klanten de laatste 30 dagen met je offertes en facturen deden, de reviews-kaart toont je score, de bankkaart de saldoverloop en wat nog gekoppeld moet worden, de agendakaart je eerste aankomende afspraken. Zo lees je de stand van het hele bedrijf zonder elk onderdeel apart open te doen.
+
+Onderdelen die draaien zonder eigen kaartinhoud krijgen geen lege plek: ze staan bij naam onder **Alle onderdelen**, zodat het raster alleen kaarten toont met iets te zien.
+
+## Zet dit op
+
+Wat je nog niet opgezet hebt, komt binnen als **Zet dit op**: maximaal drie volgende stappen, elk met een reden uit je eigen data ("8 facturen staan open. Met een betaalknop in de mail betaalt je klant meteen"), een korte minutenschatting en een terugdraaien voor wie een stap wegklikt. De stappen worden live uit je data gelezen, niet uit een vast rijtje: een klaare stap sluit zichzelf, en de lijst blijft kloppen met de werkelijkheid.
+
+De balken die vroeger boven het dashboard stonden zijn weg; elke oproep staat nu waar hij thuishoort:
+
+- een proefperiode die afloopt is de eerste regel in **Nu doen**
+- je account beveiligen, een betaalmethode instellen, pushmeldingen en het gratis domein verschijnen als stappen in **Zet dit op**
+- productnieuws en de link naar de app vormen een compacte regel onderaan
+
+Heb je zo'n balk eerder weggeklikt, dan blijft hij weg: de voorwaarden en de wegklik-sleutels zijn hetzelfde.
+
+## Alle onderdelen
+
+Onder de kaarten zit de lijst **Alle onderdelen**: alles wat al loopt zonder eigen kaart, en wat nog niet in gebruik is, als één vindbare lijst.
+
+- Met het kruisje zet je een onderdeel uit, dezelfde schakelaar als onder **Instellingen → Onderdelen**. Een uitgezet onderdeel verdwijnt ook uit de zijbalk, zodat menu en pagina hetzelfde verhaal blijven vertellen, en komt terug via de lijst onderaan.
+- Deelt een onderdeel zijn schakelaar met een ander, dan gaan en komen ze samen.
+- Een onderdeel dat bij je plan niet zit, blijft zichtbaar, met het plan dat hem opent erbij vermeld, zodat je weet dat hij bestaat.
+
+## Eerste bezoek
+
+Een nieuw bedrijf krijgt dezelfde pagina, want de opzet gebeurt daar: er is geen aparte eerste-keer-opvang meer. **Zet dit op** zet **Eerste factuur** bovenaan zolang er geen factuur verstuurd is. De oude startchecklist, waarvan de taken dicht gingen en nooit weer open en langzaam uit de pas liepen met de werkelijkheid, is verdwenen. De app-regel blijft stil tot je eerste factuur verstuurd is, zodat een nieuw bedrijf niet om de app gevraagd wordt voordat er iets verstuurd is.
+
+## Voor boekhouders
+
+Een boekhouder die in de boeken van een klant meekijkt ziet **Mijn bedrijf** zoals de klant hem meemaakt: de lopende onderdelen en wat daar om aandacht vraagt. Opzetstappen, de moduleschakelaars en productnieuws vallen weg, want opzetten is het werk van de eigenaar.
+
+## Cijfers: de analyseweergave
+
+De diepere cijfers van het oude dashboard staan hier, ongewijzigd verhuisd. De pagina is één scrollbare weergave; elk blok verschijnt alleen als je data het aangeeft.
 
 ## Periodekiezer
 
@@ -46,6 +109,9 @@ De slotregel toont **Vrij besteedbaar**: wat er na die reserveringen effectief o
 Het saldo telt je zakelijke rekeningen: een gekoppelde privérekening blijft buiten de kaspositie en de kasprognose. Afschrijvingen daarop die een zakelijke uitgave kunnen zijn, worden apart genoemd in de regels voor te verwerken, zodat het getal hier gelijk is aan Boekhouding → Bank en de badge op Transacties.
 
 Een tegel zonder eerlijke historie toont geen trendlijn in plaats van een verzonnen vlakke lijn. De kleur van een deltabadge volgt betekenis, niet alleen richting: stijgende debiteuren zijn slecht nieuws, ook al wijst de pijl omhoog.
+
+
+De KPI-rij toont kasbewegingen; de tegel **Winst** en het trendblok rekenen in een winst-en-verlies-weergave. Daarin staan kosten zonder btw, lopen investeringen mee via hun afschrijving en blijven concepten die nog in review liggen buiten beeld. Gebruik het W&P-rapport als je dezelfde winst als gedetailleerd rapport wilt.
 
 ## Voor jou
 
@@ -97,24 +163,10 @@ De blokken onder de KPI-rij verschijnen alleen als ze hun plek verdienen. De cat
 
 Op telefoons vallen visuele vormen terug op eenvoudiger vormen, zodat de getallen leesbaar blijven.
 
-## Eerste-keer-scherm
-
-Een gloednieuwe werkruimte zonder facturen of klanten landt op een rustig eerste-keer-scherm in plaats van het volledige dashboard. In plaats van een generieke "maak je eerste factuur"-boodschap kiest het scherm één concrete vervolgstap op basis van wat er al in de werkruimte gebeurd is. Mogelijke vervolgstappen zijn:
-
-- **Een opgeslagen conceptfactuur of -offerte versturen**, als je al een factuur of offerte hebt aangemaakt die nog niet is verstuurd. Het scherm toont die met een link om hem te openen en te verzenden.
-- **Een eerste factuur maken voor een bestaande klant**, als je al een klant hebt toegevoegd zonder factuur of offerte. De klant wordt genoemd en je wordt naar het nieuwe-factuurformulier geleid.
-- **Ontbrekende bedrijfsgegevens aanvullen**, als je IBAN of btw-status nog ontbreekt. Onder de hoofdactie verschijnt een extra link om die gegevens in te vullen.
-- **Maak je eerste factuur**, als er nog geen klanten, facturen of offertes zijn, is dit de standaardactie.
-
-Een klein ontdekkingspaneel nodigt je ook uit om factuurstyling, de website of accountbeveiliging te personaliseren. Het wegklikken van dat paneel verbergt alleen het paneel; het versturen van je eerste factuur sluit het eerste-keer-scherm af. Je kunt het scherm ook overslaan met de optie **Toon mijn dashboard**.
-
-## Aan-de-slag-kaart
-
-Zolang de setup-checklist nog openstaande stappen heeft, verschijnt er een vaste kaart boven het dashboard. Die somt de openstaande stappen op en biedt een link terug naar de setup-wizard. Wegklikken wordt server-side bewaard, dus de kaart blijft verborgen op al je apparaten. De wizard is niet blokkerend: nieuwe gebruikers landen direct op `/dashboard`.
 
 ## Laden en foutmeldingen
 
-Terwijl het dashboard bepaalt of dit een eerste-keer-werkruimte is en de briefing laadt, toont een skeleton de uiteindelijke vorm van de pagina. Als het ophalen van Vandaag mislukt, toont de pagina een duidelijke fout met een opnieuw-knop in plaats van een alles-goed gebouwd uit lege data. Lukt een periode-switch niet terwijl er nog oudere getallen op het scherm staan, dan verschijnt een verouderd-melding met inline opnieuw-knop. Het blok **Voor jou** volgt hetzelfde expliciete fout-en-opnieuw-gedrag wanneer het overzicht niet geladen kan worden.
+Een skeleton toont de eindvorm van de weergave, zodat de pagina niet onder je ogen verspringt. Faalt het laden van **Mijn bedrijf**, dan zegt de pagina wat er scheelt en biedt ze een opnieuw-knop, in plaats van een alles-goed gebouwd uit lege data. Faalt de kaartinhoud terwijl de stand wél binnenkwam, dan valt elke kaart terug op de ene zin van zijn status. Op **Cijfers** draagt een fout dezelfde opnieuw-knop, en een periode-switch die niet lukt terwijl er oudere getallen op scherm staan, toont een verouderd-melding met een inline opnieuw-knop. Het blok **Voor jou** volgt hetzelfde expliciete fout-en-opnieuw-gedrag wanneer het overzicht niet geladen kan worden.
 
 ## Zie ook
 

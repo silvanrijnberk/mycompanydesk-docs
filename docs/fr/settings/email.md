@@ -1,7 +1,7 @@
 ---
 title: E-mail
 description: "Choisissez l'adresse d'envoi de vos factures et devis et définissez ce qui figure sous chaque message. Disponible dans tous les abonnements."
-last_verified: 2026-09-29
+last_verified: 2026-09-30
 ---
 
 # E-mail
@@ -62,6 +62,18 @@ Les e-mails de facture, de devis, de relance et d'avoir partent d'un texte stand
 Le nom du client, le numéro, les montants et les dates de l'exemple sont des exemples : à l'envoi, MyCompanyDesk insère les données du vrai document, laissez donc les espaces réservés à leur place. La phrase sur une demande n'apparaît que si le devis vient d'une demande.
 
 Comme comptable, vous pouvez lire ces textes mais pas les modifier ; le propriétaire de l'espace de travail définit le texte standard et peut y revenir. Objet et message d'un e-mail précis restent ajustables dans la fenêtre d'envoi. Voir [Modèles d'e-mail](/fr/faq/email-template) pour les détails.
+
+### Le style de l'e-mail
+
+Par type d'e-mail de document vous choisissez aussi un **style de l'e-mail** : cinq façons de remplir le texte standard, en contenu, pas en apparence. Le choix vaut pour toutes les langues.
+
+- **Formel** : le texte d'origine, vouvoyé. Il se tient là depuis le début, donc l'e-mail ne change que quand vous choisissez vous-même un style.
+- **Court** : l'essentiel en quelques lignes, tutoyé.
+- **Personnel** : une chaleureuse salutation, tutoyée, avec un mot de merci pour la collaboration ; une facture récurrente suit ce style aussi.
+- **Complet** : tout ce qu'un client a besoin pour payer ou décider (date, montant, terme, numéro de compte, où envoyer ses questions), et toujours avec le tableau des lignes du document en dessous, même pour un devis.
+- **Minimal** : seulement le numéro, le total et la date ; sans salutation, sans formule de fin.
+
+Quelles parties un style emporte dépend ailleurs de vos propres réglages : l'interrupteur **lignes de facture dans l'e-mail** sous le texte décide si un autre style que Complet reçoit le tableau des lignes, et l'interrupteur dans la fenêtre d'envoi gagne quand vous le voyez là. Un texte personnalisé gagne toujours contre un style : votre propre formulation pour un type part avec l'envoi, et au choix d'un style la page demande si ce texte doit disparaître. Dès que vous choisissez un style, l'exemple à droite se réécrit, et l'aperçu montre exactement ce que votre client reçoit.
 
 ### Apparence
 

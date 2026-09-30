@@ -18,7 +18,7 @@ Aan de slag gaan met MyCompanyDesk duurt maar een paar minuten.
 5. Na verificatie ontvang je een welkomstmail en kom je direct in de app terecht, in je eigen werkruimte.
 
 :::tip Verwijzing via boekhouder
-Je kunt ook beginnen via de marketingsite. Als je je bedrijf opzoekt op de landingspagina en selecteert uit het Handelsregister (KVK), neemt de knop je KVK-nummer mee naar `/register`. Na aanmelding en verificatie past de setupwizard dat KVK-nummer automatisch toe en genereert hij direct een thematische website voor je. De site staat klaar maar is nog niet live; de eerste keer dat je de website-editor opent, kun je hem publiceren of eerst aanpassen.
+Je kunt ook beginnen via de marketingsite. Als je je bedrijf opzoekt op de landingspagina en selecteert uit het Handelsregister (KVK), neemt de knop je KVK-nummer mee naar `/register`. Na aanmelding en verificatie past de setupwizard dat KVK-nummer automatisch toe en neemt hij de bedrijfsnaam over op je werkruimte. Er wordt op de achtergrond geen website gegenereerd: die bouw je zelf, als concept, de eerste keer dat je de website-editor opent, en hij blijft wachten tot jij publiceert.
 :::
 
 ## Uitgenodigd door je boekhouder
@@ -53,9 +53,9 @@ Terugkerende gebruikers komen op dezelfde gesplitste pagina. De **Inloggen**-tab
 
 ## Voltooi de setup-wizard
 
-Nieuwe accounts komen na de eerste login of e-mailverificatie direct in de setup-wizard op `/setup`. De wizard is optioneel: klik op **Voor nu overslaan** om verder te gaan naar je dashboard, of sluit het tabblad en kom later terug. Zolang de setup niet af is, toont je dashboard een sluitbare **Setup afronden**-banner waarmee je op elk moment verder kunt.
+Nieuwe accounts komen na de eerste login of e-mailverificatie direct in de setup-wizard op `/setup`. De wizard is optioneel: klik op **Voor nu overslaan** om verder te gaan naar je dashboard, of sluit het tabblad en kom later terug. Zolang de opzet losse eindjes heeft, wijst het dashboard je onderaan de pagina zelf op de volgende stap, onder **Zet dit op**.
 
-De wizard draait om je eerste factuur. Hij vraagt voor wie je factureert en vult intussen het afzenderblok, betaalgegevens en btw-status in, met een live voorbeeld van de factuur naast de vragen. Je kunt ook je bedrijf opzoeken in het KVK-register zodat je zakengegevens automatisch worden ingevuld. Een website instellen is optioneel vanaf het afrondscherm, geen stap in de wizard zelf.
+De wizard draait om je eerste factuur. Hij vraagt voor wie je factureert en vult intussen het afzenderblok, betaalgegevens en btw-status in, met een live voorbeeld van de factuur naast de vragen. Je kunt ook je bedrijf opzoeken in het KVK-register zodat je zakengegevens automatisch worden ingevuld. Op de achtergrond wordt niets voor je gebouwd: wat je zelf opent, wordt opgezet, en het dashboard stelt de volgende stappen voor onder **Zet dit op**.
 
 Elk antwoord wordt direct opgeslagen, dus je kunt de wizard overslaan, later hervatten en opnieuw starten zonder voortgang kwijt te raken. Alle gegevens kun je later ook nog aanpassen in Instellingen.
 

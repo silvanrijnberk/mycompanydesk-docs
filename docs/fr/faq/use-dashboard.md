@@ -1,7 +1,7 @@
 ---
 title: "Utiliser le tableau de bord"
-description: "Votre tableau de bord vous donne un aperçu rapide de : un sélecteur de période pour mois, trimestre ou année."
-last_verified: 2026-08-18
+description: "Le tableau de bord sous /dashboard montre ce qui a besoin de vous maintenant, l'argent et une carte par module ; les chiffres profonds sur Chiffres."
+last_verified: 2026-09-30
 chatbot:
   triggers:
     - "use dashboard"
@@ -19,15 +19,16 @@ chatbot:
     - "How do I create an invoice?"
 ---
 
-Votre tableau de bord vous donne un aperçu rapide de :
+Votre tableau de bord (en interne **Mijn bedrijf**) vous donne un aperçu rapide de :
 
-- un sélecteur de période pour mois, trimestre ou année
-- cinq tuiles d'indicateurs fixes : trésorerie, créances, chiffre d'affaires, dettes à payer et bénéfice
-- un widget d'attention avec jusqu'à quatre tâches qui demandent une action
-- des blocs d'appoint comme la tendance, l'âge des créances, les sources de revenus, les devis, les dépenses, la trésorerie, l'activité et la TVA
+- **À faire maintenant** (Nu doen) : une liste où chaque élément porte son propre bouton, des factures non envoyées jusqu'à la déclaration de TVA
+- la **carte d'argent** : librement disponible, solde, à recevoir et chiffre d'affaires par mois
+- **une carte par module** : tout ce qui tourne, demande de l'attention ou est configuré à moitié
+- **À configurer** (Zet dit op) : les prochaines étapes de configuration, avec une raison tirée de vos données
+- **Tous les modules** (Alle onderdelen) : le reste, à activer et désactiver soi-même
 
-Passez d'une période à l'autre via le sélecteur pour reframer tous les chiffres de la ligne d'indicateurs. Le graphique de tendance reste toujours sur 12 mois.
+Les anciennes bannières au-dessus de la page sont parties : période d'essai, sécurisation du compte et moyen de paiement se trouvent maintenant dans À faire maintenant et À configurer, les nouvelles du produit sous le reste.
 
-Chaque tuile d'indicateur renvoie vers le rapport ou la liste correspondante. Cliquez pour régler les choses directement à la source.
+Deux vues gardent les chiffres honnêtes. La carte d'argent compte ce qui est déjà engagé : librement disponible est votre solde bancaire, moins la réserve de TVA et vos charges fixes mensuelles. Les chiffres plus profonds sont déplacés vers la page **Chiffres** (`/cijfers`, aussi dans la barre latérale) : la rangée KPI avec le sélecteur de période, le graphique de tendance sur 12 mois, l'âge des créances, les sources de revenus, le mix des dépenses, le graphique de trésorerie et la liste d'activité.
 
-Le tableau de bord garde deux vues honnêtes côte à côte : la ligne d'indicateurs montre les mouvements de trésorerie, tandis que la tuile bénéfice et le bloc tendance utilisent une vue de compte de résultat. Dans cette vue de compte de résultat, les dépenses sont hors TVA, les investissements sont répartis sur leur plan d'amortissement et les brouillons encore en attente de révision sont exclus. Utilisez le rapport de compte de résultat pour voir le même chiffre de bénéfice dans un rapport détaillé.
+Sur Chiffres, la rangée KPI montre les mouvements de trésorerie tandis que la tuile bénéfice et le bloc tendance utilisent une vue de compte de résultat. Dans cette vue, les dépenses sont hors TVA, les investissements sont répartis sur leur plan d'amortissement et les brouillons encore en attente de révision sont exclus. Utilisez le rapport de compte de résultat pour voir le même chiffre de bénéfice dans un rapport détaillé.

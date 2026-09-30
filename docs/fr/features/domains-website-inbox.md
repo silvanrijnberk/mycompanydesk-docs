@@ -1,7 +1,7 @@
 ---
 title: Domaines, site web et boite de reception
 description: "Domaines personnalisés, site vitrine hébergé et boîte partagée arrivent en un seul lot, derrière custom_domains et public_business_page."
-last_verified: 2026-09-29
+last_verified: 2026-09-30
 ---
 
 # Domaines, site web et boite de reception
@@ -28,7 +28,7 @@ L'etape de l'assistant sur `/setup` est le point d'entree recommande. Elle execu
 
 Deux chemins dans l'assistant, tous deux stockes dans la table `domains` :
 
-- **Sous-domaine d'espace de travail gratuit** -- `votre-slug.mycompanydesk.com` (ou `.nl` pour les espaces NL). Aucun travail DNS ; le slug est enregistre comme domaine personnalise Cloudflare Pages et le site web est en ligne en quelques secondes. C'est le choix par defaut pour les nouveaux espaces de travail.
+- **Sous-domaine d'espace de travail gratuit** -- `votre-slug.mycompanydesk.com` (ou `.nl` pour les espaces NL). Aucun travail DNS ; le slug (la forme simple du nom de votre entreprise) est enregistré comme domaine personnalisé Cloudflare Pages et le site web est en ligne en quelques secondes. Le sous-domaine n'entre en vue qu'à la publication du site web, pas avant.
 - **Votre propre domaine** -- saisissez `acme.fr`. Deux modes de configuration sont pris en charge :
   - **Mode nameserver** (recommande) -- une zone Cloudflare est creee pour le domaine. Vous modifiez les nameservers de votre registraire vers les deux noms d'hôte `*.ns.cloudflare.com` affiches par l'assistant. Cloudflare devient le DNS faisant autorite pour le domaine, ce qui permet l'e-mail, le SSL et la gestion des enregistrements DNS dans MyCompanyDesk.
   - **Mode CNAME** -- pour un sous-domaine (ex. `portal.acme.fr`) ou pour ne relier que le site web de votre domaine principal, pendant que l'e-mail et tout le reste restent chez votre hébergeur actuel (« Connecter uniquement mon site web »). Vous ajoutez un seul enregistrement CNAME chez votre hébergeur actuel ; sur un domaine principal, c'est généralement `www.` suivi de votre domaine, car la plupart des hébergeurs ne permettent pas d'enregistrement CNAME sur le domaine nu. Dès que l'enregistrement est en place, `www.<votre domaine>` affiche votre site web MyCompanyDesk. Le routage des e-mails n'est pas disponible dans ce mode ; héberger le site sur le domaine nu lui-même exige le mode nameserver.

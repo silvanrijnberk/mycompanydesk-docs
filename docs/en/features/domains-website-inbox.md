@@ -1,7 +1,7 @@
 ---
 title: Domains, Website, and Inbox
 description: "Custom domains, the hosted business website and the shared inbox ship as one pre-launch bundle behind the custom_domains and public_business_page flags."
-last_verified: 2026-09-29
+last_verified: 2026-09-30
 ---
 
 # Domains, Website, and Inbox
@@ -28,7 +28,7 @@ The wizard step at `/setup` is the recommended entry point. It applies through `
 
 Two paths in the wizard, both stored on the `domains` table:
 
-- **Free workspace subdomain** — `your-slug.mycompanydesk.com` (or `.nl` for NL workspaces). No DNS work; the slug is registered as a Cloudflare Pages custom domain and the website is live within seconds. This is the default for new workspaces.
+- **Free workspace subdomain**: `your-slug.mycompanydesk.com` (or `.nl` for NL workspaces). No DNS work; the slug (a plain form of your company name) is registered as a Cloudflare Pages custom domain and the website is live within seconds. The subdomain is applied when you publish the website, not before.
 - **Your own domain** — paste `acme.nl`. Two setup modes are supported:
   - **Nameserver mode** (recommended) — a Cloudflare zone is created for the domain. You change your registrar's nameservers to the two `*.ns.cloudflare.com` hostnames the wizard shows. Cloudflare becomes authoritative DNS for the domain, which is what unlocks email, SSL and DNS-record management inside MyCompanyDesk.
   - **CNAME mode** covers a subdomain (e.g. `portal.acme.nl`), or for connecting only the website on a main domain while email and everything else stay at your current provider ("Only connect my website"). You add a single CNAME record at your current provider; on a main domain that is usually `www.` plus your domain, because most providers cannot put a CNAME record on the bare domain. Once the record is live, `www.<your domain>` shows your MyCompanyDesk website. Email routing is not available in this mode; hosting the website on the bare domain itself needs nameserver mode.

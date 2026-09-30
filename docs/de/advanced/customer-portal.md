@@ -32,7 +32,7 @@ Nach dem Öffnen des Links bleibt dieser Browser für diesen Kunden bei Ihrem Un
 
 ### Übersicht
 
-Die Übersicht ist die Startseite des Portals: Ihr Design, eine Begrüßung und eine kurze **Zu erledigen**-Liste, die sammelt, was noch vom Kunden verlangt wird (eine Rechnung bezahlen, ein Dokument unterschreiben, eine neue Nachricht lesen). Darunter stehen die Karten **offen** und **bezahlt** und die Rechnungen des Kunden.
+Die Übersicht ist die Startseite des Portals: Ihr Design und eine Begrüßung oben, mit Ihrer eigenen Begrüßungszeile darunter, wenn Sie eine gesetzt haben, neben der festen Firmenkarte mit Ihren Kontaktdaten. Eine kurze **Zu erledigen**-Liste sammelt, was noch vom Kunden verlangt wird (eine Rechnung bezahlen, ein Dokument unterschreiben, eine neue Nachricht lesen), und wenn alles erledigt ist, sagt die Seite es genau so: **Alles ist bezahlt, es ist nichts offen.** Wird eine Zahlung nach einer Meldung des Kunden noch geprüft, sagt die Seite auch das, statt ein zweites Mal um Geld zu bitten.
 
 ### Rechnungsliste
 
@@ -42,15 +42,9 @@ Entwürfe erscheinen nie in der Rechnungsliste. Ein Portal-Link wird erst erzeug
 
 ### Rechnungsansicht
 
-Das Portal zeigt eine übersichtliche, gebrandete Ansicht der Rechnung, einschließlich:
+Die Rechnung öffnet sich im Portaldesign: Ihr Firmenblock oben, die Rechnungsdaten wie Datum, Fälligkeitsdatum und Rechnungsnummer, und darunter ein Zahlungspanel, das die zwei Wege zu zahlen als Registerkarten anbietet: **Online bezahlen** (die Mollie- oder Stripe-Schaltflächen, wenn ein Anbieter verbunden ist) und **Selbst überweisen**, mit dem Verwendungszweck, den der Kunde bei seiner Überweisung einsetzt, und einem QR-Code, damit Zahlen ohne Online-Buttons möglich bleibt. Daneben zeigt das Panel weiter den bereits erhaltenen Betrag, die angewandte Gutschrift und den offenen Restbetrag.
 
-- Ihr Firmenlogo und Branding
-- Rechnungsnummer und Datum
-- Positionen mit Beschreibungen und Beträgen
-- USt.-Aufschlüsselung
-- Fälliger Gesamtbetrag
-- Bereits erhaltener Betrag, angewandte Gutschrift und Restbetrag (bei teilweise bezahlten oder gutgeschriebenen Rechnungen)
-- Fälligkeitsdatum
+Auf derselben Seite sitzt das Gespräch mit dem Kunden: das Fragefeld **Fragen zu dieser Rechnung** neben der Ansicht, sodass eine Frage zu genau dieser Rechnung in einem eigenen Gespräch gestellt und beantwortet wird. Das PDF lädt der Kunde hier ebenfalls herunter, und dasselbe Muster wiederholt sich unter einem Angebot, Vertrag, Dokument und Termin.
 
 ### Zahlung
 
@@ -84,9 +78,17 @@ Die Schaltfläche **Open Stripe Dashboard** verlinkt Sie direkt zu Ihren Stripe-
 
 Der Tab **Angebote und Verträge** zeigt, was dieser Kunde von Ihnen erhalten hat: Angebote, Verträge und andere unterschreibbare Dokumente. Dokumente, die auf eine Unterschrift warten, stehen oben, mit der Aktion **Ansehen und unterschreiben**; ein Angebot bleibt bis zu seiner Gültigkeit im Blick, und Status folgen dem Ablauf des Dokuments (erhalten, angenommen, abgelehnt, abgelaufen, unterschrieben). Unterschrieben wird auf einer gesicherten Signierseite, die eine SMS-Kennung verlangt, wenn Sie das für ein Dokument vorschreiben.
 
+Die Signierseite trägt dasselbe Gewand wie der Rest des Portals: Ihr Name im Kopf, das Dokument, eine Schrittlinie (lesen, unterschreiben, bestätigen) und eine Zustimmungszeile, **Ich bin mit diesem Angebot und den Bedingungen von {company} einverstanden** bei einem Angebot, bevor die Schaltfläche **Signieren und senden** heißt. Die Unterschrift selbst funktioniert wie bisher: Name zeichnen oder tippen, danach eine Bestätigungs-E-Mail und das PDF als Download. Die Signierseite trägt dasselbe Fragefeld wie der Rest des Portals, sodass eine Frage zu diesem Dokument in einem Gespräch landet statt am Rand.
+
 ### Termine
 
 Das Portal zeigt die kommenden und vergangenen Termine dieses Kunden, auch die Plätze, die er für einen Gruppentermin (Workshop, Kurs, Führung) belegt hat; siehe [Online-Terminbuchung](/de/features/site-bookings). Termine lassen sich in den eigenen Kalender des Kunden übernehmen, Verschieben oder Absagen läuft über dieselbe Seite, auf die der Link in der Bestätigungsmail zeigt. Termine, die nicht mit der E-Mail-Adresse dieses Kunden gebucht wurden, bleiben unsichtbar.
+
+### Fragen pro Dokument
+
+Jede Ansicht im Portal hat ein eigenes Gespräch: Zu einer Rechnung steht **Fragen zu dieser Rechnung**, zu einem Angebot **Fragen zu diesem Angebot**, und dasselbe Muster gilt für Verträge, übrige Dokumente und Termine. Der Kunde schreibt seine Frage, sie trifft in Ihrem Postfach in der App ein, und Ihre Antwort kommt sowohl im Gespräch als auch in der E-Mail des Kunden an. Eine Frage gehört zu dem Dokument, an dem sie gestellt wurde: jedes Gespräch bleibt bei seinem eigenen Bereich.
+
+Um eine Frage zu stellen, brauchen Sie das vollständige Portal. Wer allein über den Zahlungslink einer Rechnung hereinkommt, sieht, wo die Tür ist: das Portal bietet an, eine Login-Link an die Adresse zu mailen, die auf der Kundenkarte steht, und das Fragefeld erklärt, dass Fragen im vollständigen Portal gestellt werden. Nachrichten im Portal bleiben, wie sie geschrieben sind: die E-Mail, die bei Ihnen eintrifft, ist die Frage Ihres Kunden, ohne Mail-Signatur und ohne zitierte Vorgeschichte darunter.
 
 ### Nachrichten
 
@@ -97,10 +99,23 @@ Der Nachrichten-Tab ist die direkte Verbindung zu Ihrem Postfach. Der Kunde schr
 Das Kundenportal verwendet Ihr Unternehmensbranding:
 
 - Firmenlogo
-- Akzentfarbe
+- Marktfarbe
 - Unternehmensinformationen
 
 Dies schafft ein professionelles, konsistentes Erlebnis für Ihre Kunden.
+
+### So sieht es aus
+
+Unter **Einstellungen → Kundenportal** wählen Sie, wie alles aussieht, ohne Zusatzarbeit: Logo, Farbe und Unternehmensdaten haben bereits ihren eigenen Ort und werden von selbst mitgenommen. Hier stellen Sie selbst ein:
+
+- **Stil**: fünf Stile, jeder aus Ihrer Marktfarbe abgeleitet, sodass eine blasse oder fast schwarze Farbe bei Ihrem Kunden genauso ausfällt wie in der Vorschau. **Ruhig** (weiß, Ihre Farbe nur in Schaltflächen und Akzenten), **Warm** (weiches Papier und runde Formen), **Farbe** (Ihre Farbe im Kopf und in der ersten Aufgabe), **Klar** (kantig und sachlich, ein klares Raster) oder **Abend** (ein dunkler Kopf mit großer Schrift). Jede Kachel in der Auswahl trägt eine kleine Vorschau in diesem Stil.
+- **Darstellung**: hell oder dunkel, oder lassen Sie sie auf **Wie Ihr Kunde möchte** stehen, sodass das Portal folgt, was das Gerät Ihres Kunden verlangt (Ihr Kunde kann es selbst immer umschalten).
+- **Begrüßungszeile**: eine kurze Zeile unter der Begrüßung. Lassen Sie sie leer, dann zeigen wir selbst, was für Ihren Kunden bereitliegt.
+- **Ihr Foto auf der Karte**: mit einem Profilfoto stehen Sie mit Ihrem Namen auf der Kontaktkarte, statt Ihrem Unternehmen. Ihr Logo bleibt oben.
+
+Neben den Einstellungen steht die Vorschau: der echte Portalüberblick mit Beispieldaten, in der Breite, die Ihr Kunde bekommt, genau so, wie Ihr Kunde sie sieht. Der Inhalt der Firmenkarte und der Portallink verweisen an ihre eigenen Orte: Logo und Farbe passen Sie bei **Erscheinungsbild** an, die Unternehmensdaten bei **Firmendaten**.
+
+Einem Kunden seinen Login-Link schicken oder ihn überall ausloggen, tun Sie auf der Kundenseite, im Block **Kundenportal**.
 
 ## Eingefrorene Rechnungskopie
 

@@ -1,7 +1,7 @@
 ---
 title: Email templates
 description: "Invoice, quote, reminder and credit note emails start from a standard text. Set your own text per type and language under Settings → Email."
-last_verified: 2026-09-28
+last_verified: 2026-09-30
 chatbot:
   triggers: ["email template", "customize email", "invoice email message", "email text", "change email message", "email sjabloon", "email aanpassen", "e-mail vorlage", "modele email", "personnaliser email"]
   actions:
@@ -10,6 +10,8 @@ chatbot:
 ---
 
 Invoice, quote, reminder, and credit note emails start from MyCompanyDesk's standard, well-tested texts, in your document language. There are no templates to set up or maintain, and you can leave it at that. Prefer your own wording? Set it once, and every next document of that kind starts from it.
+
+Every type also has a choice of **style of the mail**: Formeel (the default text, in u-form), Kort, Persoonlijk, Compleet and Minimaal. The style decides which content the standard text carries, for instance whether the line-item table goes under the message (Compleet always does, even on a quote, the others follow the invoice-lines switch). Your own text always wins over a style, and the style choice applies to all languages.
 
 Credit note emails use a dedicated template that names the document as a credit note, states the credited amount as a positive number, and does not ask for payment or include a due date.
 
@@ -24,6 +26,18 @@ You can set your own standard text in two places:
 - Your text applies per document type and per language. Other languages keep the standard text.
 - The send window shows when your own text is active and offers **Back to the MyCompanyDesk standard text**. The switch takes effect when you send, and right after that you can reverse it with **Undo**.
 - Only the workspace owner can set or reset the standard text. An accountant can adjust a single email but cannot change the default.
+
+## The style of the mail
+
+Under **Settings → Email → Factuur- and offertemails** you pick the style per type of mail. The five styles fill in the standard text for you:
+
+- **Formeel**: the default text in the u-form, the way the mail already went out
+- **Kort**: a few lines with the core, in je-form
+- **Persoonlijk**: warm, in je-form, with a word of thanks for the collaboration
+- **Compleet**: everything to pay or decide, always with the line-item table, even for a quote
+- **Minimaal**: only the number, the total and the date
+
+Choosing one styles the mail for every next send of that type, in every language. When you have an own text for that type, the page asks whether the style should replace it, and **Back to standard text** brings you, per type, back to the style you chose last. The switch in the send window that adds or removes the line-item table decides per send about the lines, as long as the table is allowed for that type; the Compleet style carries it always.
 
 What you can change:
 1. The sender: go to Settings → Email → Addresses and sending and choose your own domain (Pro), Gmail, or Outlook

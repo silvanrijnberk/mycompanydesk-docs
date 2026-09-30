@@ -1,7 +1,7 @@
 ---
 title: E-Mail
 description: "Legen Sie fest, von welcher Adresse Rechnungen und Angebote ausgehen, und stellen Sie ein, was unter jeder Nachricht steht. In jedem Abo enthalten."
-last_verified: 2026-09-29
+last_verified: 2026-09-30
 ---
 
 # E-Mail
@@ -62,6 +62,18 @@ Rechnungs-, Angebots-, Erinnerungs- und Gutschrifts-E-Mails starten mit einem st
 Kundenname, Nummer, Beträge und Daten in der Vorschau sind Beispiele: Beim Versand setzt MyCompanyDesk die Angaben des echten Dokuments ein, lassen Sie die Platzhalter daher dort stehen. Der Satz zur Anfrage erscheint nur, wenn das Angebot aus einer Anfrage stammt.
 
 Als Buchhalter können Sie diese Texte lesen, aber nicht ändern; der Workspace-Inhaber setzt den Standardtext und kann ihn zurücksetzen. Betreff und Nachricht einer einzelnen E-Mail passen Sie weiterhin im Versandfenster an. Siehe [E-Mail-Vorlagen](/de/faq/email-template) für die Details.
+
+### Der Stil der E-Mail
+
+Pro Art der Dokumenten-E-Mail wählen Sie neben dem Text auch einen **Stil der E-Mail**: fünf Arten, den Standardtext zu füllen, inhaltlich, nicht in der Aufmachung. Die Wahl gilt für alle Sprachen.
+
+- **Förmlich**: der Standardtext, in der Sie-Form. Steht von Anfang an da, sodass sich an der Mail nichts ändert, bis Sie selbst einen Stil wählen.
+- **Kurz**: das Wesentliche in ein paar Zeilen, in der Anrede, wie die App sie zeigt ("Das Wichtigste kurz, mit du").
+- **Persönlich**: eine warme Anrede, wie die App sie zeigt ("Herzlich, mit du"), mit einem Dank für die Zusammenarbeit; eine wiederkehrende Rechnung folgt diesem Stil ebenfalls.
+- **Vollständig**: alles, was ein Kunde braucht, um zu zahlen oder zu entscheiden (Datum, Betrag, Frist, Kontonummer, wohin mit Fragen), und immer mit der Positionstabelle des Dokuments darunter, auch bei einem Angebot.
+- **Minimal**: nur die Nummer, der Gesamtbetrag und das Datum; keine Anrede, kein Abschluss.
+
+Welche Teile ein Stil mitnimmt, hängt im Übrigen von Ihren eigenen Einstellungen ab: der Schalter **Rechnungspositionen in der Mail** unter dem Text entscheidet, ob ein anderer Stil als Vollständig die Positionstabelle mitnimmt, und der Schalter im Versandfenster gewinnt, wenn Sie ihn dort sehen. Ein eigener Text gewinnt immer gegen einen Stil: steht Ihr eigener Wortlaut für eine Art, geht der mit, und bei der Wahl eines Stils fragt die Seite, ob dieser eigene Text weichen soll. Sobald Sie einen Stil wählen, schreibt sich die Vorschau rechts um, und die Vorschau zeigt genau, was Ihr Kunde erhält.
 
 ### Erscheinungsbild
 

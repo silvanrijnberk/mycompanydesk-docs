@@ -1,7 +1,7 @@
 ---
 title: Set up your company
 description: "The setup wizard fills in your sender block, payment details and VAT status around your first invoice, with a KVK lookup and a live preview."
-last_verified: 2026-09-12
+last_verified: 2026-09-30
 ---
 
 # Set up your company
@@ -11,7 +11,7 @@ The first time you sign in, MyCompanyDesk walks you through a short **setup wiza
 ## Where to find it
 
 - **First sign-in:** the wizard opens automatically.
-- **Later:** as long as setup is unfinished, a banner sits at the top of your dashboard with a button back into the wizard. You can hide the banner, or go to `/setup` directly at any time.
+- **Later:** open `/setup` directly at any time to run or re-run the wizard. While setup is unfinished the dashboard keeps pointing at the next step in its own way, under **Zet dit op**.
 - **Skipping:** the wizard has a **Leave for now** button on every step. Your answers so far are saved, so you continue where you left off.
 
 ## Step 1: Who you are billing
@@ -49,9 +49,15 @@ The wizard asks for the IBAN that customers pay to. You can enter your business 
 
 ## Step 4: Finish setup
 
-The final step confirms your 60-day Pro trial, no credit card needed, and applies everything. It also offers optional next steps from the finish screen, such as setting up a website. Website setup is opt-in, except when you started via the landing-page KVK lookup: in that case a themed site is already generated and simply waits for you in the website editor.
+The final step confirms your 60-day Pro trial, no credit card needed, and applies everything, then takes you to the dashboard. Nothing runs in the background while the screen confirms: the finish message names what stays behind for later (securing your account, and your website), and those suggestions follow on the dashboard under **Zet dit op** when it fits. MyCompanyDesk no longer generates a website or picks services for you here; a website is built the first time you open the **Website** area yourself.
 
 Click **Finish setup** and the wizard applies your company details, VAT status, IBAN and default settings, then takes you to your dashboard.
+
+## The website: built when you open it, live when you publish
+
+MyCompanyDesk does not put a website under your workspace before you ask for one. Sign up and send invoices without ever opening the Website area, and nothing half-finished is waiting there.
+
+The first time you open **Website**, a standard site is created as a draft: a home page, services, an about page and contact, plus the privacy statement and terms and conditions with your registration details filled in where they belong. Only lines you can vouch for stand on the pages; empty blocks stay empty until you write them, and the website wizard does not invent an origin story or a stock answer anymore. Nothing goes online on its own either: publishing stays the moment you choose, and only then does your web address go live. Your workspace subdomain, the form of your company name under mycompanydesk.com, is only applied when you publish.
 
 ## Changing things later
 

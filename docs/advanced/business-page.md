@@ -1,7 +1,7 @@
 ---
 title: Sitebouwer
 description: "Bouw een website met meerdere pagina's in de drag-and-drop-editor: secties en blokken, je eigen kleuren en lettertypes, en publiceren wanneer jij wilt."
-last_verified: 2026-09-28
+last_verified: 2026-09-30
 ---
 
 # Sitebouwer
@@ -417,7 +417,7 @@ Wijzigingen in de Stijl-tab worden automatisch opgeslagen bij bewerken en gelden
 
 De bovenbalk toont een stippeltje zolang er ongepubliceerde wijzigingen wachten. Bij publiceren worden alleen pagina's op Live meegenomen in de snapshot. Concept-pagina's blijven onzichtbaar op de openbare site, ook na publicatie.
 
-Totdat je publiceert, geeft je openbare URL een `noindex` robots-tag mee. Zo blijft het automatisch aangemaakte werkruimte-subdomein buiten zoekmachines terwijl je nog aan het bouwen bent.
+Totdat je publiceert, geeft je openbare URL een `noindex` robots-tag mee. Zo blijft het werkruimte-subdomein buiten zoekmachines terwijl je nog aan het bouwen bent; het subdomein zelf komt pas bij je eerste publicatie in beeld.
 
 Wanneer je klaar bent:
 
