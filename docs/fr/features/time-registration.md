@@ -81,11 +81,11 @@ Sur la page du client, la carte **Facturation automatique** réunit tout : chaqu
 - **Préparer** : la facture est créée pour vous, vous recevez une notification et vous l'envoyez vous-même.
 - **Envoyer automatiquement** : la facture est créée, vous recevez une notification, et un jour plus tard elle part d'elle-même vers le client. Pendant cette journée, vous pouvez encore la retenir ; une facture retenue reste simplement prête dans l'application.
 
-Tout ce qui arrive à échéance pour le même client au même moment atterrit sur une seule facture, sauf si un projet demande la sienne propre. Les heures sans projet rejoignent la facture mensuelle quand l'interrupteur de la carte client est activé. La première facture automatique gagne à être envoyée par vous-même, pour avoir vu une fois à quoi elle ressemble ; la carte le dit aussi, la première fois.
+Tout ce qui arrive à échéance pour le même client au même moment atterrit sur une seule facture, sauf si un projet demande la sienne propre. Les heures sans projet rejoignent la facture mensuelle quand l'interrupteur de la carte client est activé. La première facture automatique gagne à être envoyée par vous-même, pour avoir vu une fois à quoi elle ressemble ; la carte le rappelle aussi, la première fois.
 
 Tout ce qui sort de l'ordinaire retient l'envoi automatique : un client sans adresse e-mail, des heures sans tarif, un montant nettement au-dessus des mois précédents, ou une facture qui couvre plusieurs mois parce que la facturation automatique a été en pause. Ces factures sont seulement préparées, et la notification vous dit pourquoi.
 
-Les dépenses ne sont incluses que si la dépense elle-même porte le [refacturation au client](/fr/features/expenses#refacturation-et-changements-de-prix-de-revient).
+Les dépenses ne sont incluses que si la dépense elle-même porte l'interrupteur [Refacturer au client](/fr/features/expenses#refacturation-et-changements-de-prix-de-revient).
 
 Si votre forfait n'inclut pas la facturation automatique du temps, elle reste en pause ; la notification vous le dit. Les factures automatiques utilisent le taux de TVA par défaut de votre espace de travail et respectent vos paramètres KOR ou d'exemption de TVA, comme les factures créées manuellement.
 

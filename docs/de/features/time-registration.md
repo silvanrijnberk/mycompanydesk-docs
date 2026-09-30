@@ -81,7 +81,7 @@ Auf der Kundenseite bündelt die Karte **Automatische Abrechnung** alles: jedes 
 - **Vorbereiten**: Die Rechnung wird für Sie erstellt, Sie erhalten eine Mitteilung und versenden sie selbst.
 - **Automatisch versenden**: Die Rechnung wird erstellt, Sie erhalten eine Mitteilung, und einen Tag später geht sie von selbst an den Kunden. Während dieses Tages können Sie sie noch zurückhalten; eine zurückgehaltene Rechnung bleibt einfach in der App liegen.
 
-Alles, was für denselben Kunden zum selben Moment fällig wird, landet auf einer Rechnung, es sei denn, ein Projekt möchte eine eigene. Stunden ohne Projekt schließen sich an die Monatsrechnung an, wenn der Schalter auf der Kundenkarte aktiv ist. Die erste automatische Rechnung versenden Sie am besten selbst, damit Sie einmal gesehen haben, wie sie aussieht; die Karte sagt Ihnen das bei der ersten Rechnung ebenfalls.
+Alles, was für denselben Kunden zum selben Moment fällig wird, landet auf einer Rechnung, es sei denn, ein Projekt möchte eine eigene. Stunden ohne Projekt schließen sich an die Monatsrechnung an, wenn der Schalter auf der Kundenkarte aktiv ist. Die erste automatische Rechnung versenden Sie am besten selbst, damit Sie einmal sehen, wie sie aussieht; die Karte wiederholt das bei der ersten Rechnung ebenfalls.
 
 Alles Ungewöhnliche hält den automatischen Versand zurück: ein Kunde ohne E-Mail-Adresse, Stunden ohne Satz, ein Betrag, der spürbar über den Vormonaten liegt, oder eine Rechnung, die mehrere Monate umfasst, weil das automatische Abrechnen eine Zeit still stand. Diese Rechnungen werden nur vorbereitet, und die Mitteilung sagt Ihnen, warum.
 
