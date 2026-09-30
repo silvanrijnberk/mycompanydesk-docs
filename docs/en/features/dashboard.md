@@ -26,6 +26,8 @@ When your trial is about to end, that appears here first, above everything else,
 
 One rule keeps this list free of noise: **Te laat** (overdue) only counts when MyCompanyDesk knows your payments. A payment registered in the last six months shows the book is being tracked; a bank connection or online payments alone does not, because a connection nobody ticks off, or online payments that stay switched on while customers transfer, would mark every invoice late. Invoices are only put in this list as overdue when that signal is there.
 
+The same list also lands in your mailbox every Monday: only when there is something to do, only for the workspace owner, and with a ping on your phone when something on it is urgent. You turn the mail on or off under Settings → Meldingen (notifications).
+
 ## The money card
 
 Next to **Do now** stands the money card, with the four figures that answer "how are we doing" in one view:
