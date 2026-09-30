@@ -27,7 +27,7 @@ So verwalten Sie Ihre Benachrichtigungseinstellungen:
    - **Zahlungseingang**: Zahlungen, bestätigte Zahlungen und auffällige Banktransaktionen.
    - **Anstehende Fristen**: MwSt., Einkommensteuer, Körperschaftsteuer, die Kleinunternehmer-Grenze, und auslaufende Verträge oder Projekte. Sie erhalten sie rechtzeitig vorab, damit Sie nie zu spät sind. Diese Kategorie umfasst auch automatische Buchungen, die nicht vorgenommen werden konnten, weil das Datum in einen bereits abgegebenen und gesperrten Mehrwertsteuerzeitraum fällt, zum Beispiel eine weitergeleitete Posteingangsrechnung oder eine Banktransaktion. Die Benachrichtigung nennt den Lieferanten und das Rechnungsdatum und verweist Sie auf den Posteingang oder den Bank-Feed, damit Sie die Ausgabe im aktuellen Zeitraum buchen oder eine ergänzende Erklärung einreichen können.
    - **Neue Chancen**: Angebotsanfragen, unterschriebene Angebote und Verkäufe über Ihre Website.
-   - **Neue Nachricht im Posteingang**: ein Signal auf Ihrem Telefon, sobald ein Kunde oder Lieferant mailt.
+   - **Neue Nachricht im Posteingang**: ein Signal auf Ihrem Telefon, sobald ein Kunde oder Lieferant mailt. Mail, die im Spam-Ordner landet, löst nichts aus: kein Signal und keine Zeile in der Benachrichtigungsliste.
    - **Ausgabe fällig**: anstehende Fälligkeitstermine von Ausgaben, die Sie angelegt haben, wie z. B. geplante Miete oder Nebenkosten, damit Sie sie rechtzeitig bezahlen oder erfassen können.
    - **Lieferantenregel gelernt**: eine In-App-Benachrichtigung, wenn MyCompanyDesk aus Ihren bestätigten Entwürfen eine neue vertrauenswürdige Lieferantenregel für den Bank-Feed gelernt hat.
    - **Tipps und Neuigkeiten von MyCompanyDesk**: höchstens eine E-Mail pro Monat.

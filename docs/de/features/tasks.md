@@ -42,4 +42,4 @@ Aufgaben können aus verschiedenen Quellen stammen:
 ## Tipps
 
 - Nutzen Sie den Quellenchip, um zum Datensatz zu springen, um den es geht.
-- Das [Aufmerksamkeits-Widget](/de/features/dashboard) zeigt bis zu vier Aufgaben, die heute oder diese Woche anstehen.
+- Die Liste **Jetzt erledigen** auf dem [Dashboard](/de/faq/use-dashboard) stellt die Aufgaben, die heute dran sind, vor alles andere.

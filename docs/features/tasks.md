@@ -42,4 +42,4 @@ Taken kunnen uit verschillende bronnen komen:
 ## Tips
 
 - Gebruik de bron-chip om naar het record te springen waar een taak over gaat.
-- Het [aandacht-widget](/features/dashboard) toont tot vier taken die vandaag of deze week aandacht nodig hebben.
+- De **Nu doen**-lijst op het [dashboard](/faq/use-dashboard) zet de taken die vandaag aandacht vragen bovenaan.

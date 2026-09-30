@@ -53,7 +53,7 @@ Onderdelen die draaien zonder eigen kaartinhoud krijgen geen lege plek: ze staan
 
 ## Zet dit op
 
-Wat je nog niet opgezet hebt, komt binnen als **Zet dit op**: maximaal drie volgende stappen, elk met een reden uit je eigen data ("8 facturen staan open. Met een betaalknop in de mail betaalt je klant meteen"), een korte minutenschatting en een terugdraaien voor wie een stap wegklikt. De stappen worden live uit je data gelezen, niet uit een vast rijtje: een klaare stap sluit zichzelf, en de lijst blijft kloppen met de werkelijkheid.
+Wat je nog niet opgezet hebt, komt binnen als **Zet dit op**: maximaal drie volgende stappen, elk met een reden uit je eigen data ("8 facturen staan open. Met een betaalknop in de mail betaalt je klant meteen"), een korte minutenschatting en op de stappen die je nooit gaat doen een kruisje **Niet voor mij**. De stappen worden live uit je data gelezen, niet uit een vast rijtje: een klare stap sluit zichzelf, en de lijst blijft kloppen met de werkelijkheid.
 
 De balken die vroeger boven het dashboard stonden zijn weg; elke oproep staat nu waar hij thuishoort:
 
@@ -67,9 +67,21 @@ Heb je zo'n balk eerder weggeklikt, dan blijft hij weg: de voorwaarden en de weg
 
 Onder de kaarten zit de lijst **Alle onderdelen**: alles wat al loopt zonder eigen kaart, en wat nog niet in gebruik is, als één vindbare lijst.
 
-- Met het kruisje zet je een onderdeel uit, dezelfde schakelaar als onder **Instellingen → Onderdelen**. Een uitgezet onderdeel verdwijnt ook uit de zijbalk, zodat menu en pagina hetzelfde verhaal blijven vertellen, en komt terug via de lijst onderaan.
+- Met het kruisje zet je een onderdeel in gebruik uit, dezelfde schakelaar als onder **Instellingen → Onderdelen**. Een uitgezet onderdeel verdwijnt ook uit de zijbalk, zodat menu en pagina hetzelfde verhaal blijven vertellen, en komt terug via de lijst onderaan. Op een onderdeel dat nog niet loopt, is het kruisje een **Niet voor mij** (zie hieronder).
 - Deelt een onderdeel zijn schakelaar met een ander, dan gaan en komen ze samen.
 - Een onderdeel dat bij je plan niet zit, blijft zichtbaar, met het plan dat hem opent erbij vermeld, zodat je weet dat hij bestaat.
+
+## Niet voor mij
+
+Een voorstel waar je nooit iets mee gaat doen, kan dat een keer horen voor de hele werkruimte. Op een chip onder Alle onderdelen, of op een opzetstap in **Zet dit op**, is het kruisje van een onderdeel dat nog niet loopt een **Niet voor mij**: er is niets uit te zetten, dus het onderdeel wordt weggezet. Heeft zo'n onderdeel toch een eigen kaart, dan staat dezelfde keuze in het kaartmenu.
+
+Daarna vraagt het dashboard er niet meer naar: de stap verdwijnt uit **Zet dit op** en uit de maandagmail, die dezelfde lijst leest, en het onderdeel komt niet meer terug als chip. **Nu doen** blijft staan, want dat is echte achterstand, geen voorstel. Loopt het onderdeel daarna toch, dan krijgt het gewoon zijn kaart terug.
+
+Niet alles kan op deze manier weg. Een onderdeel dat loopt of om aandacht vraagt houdt zijn kaart, want je gebruikt het al; een half opgezet onderdeel met eigen kaartinhoud blijft ook staan, zodat je eigen data nooit met één klik van het dashboard verdwijnt; en de kern van de app krijgt deze keuze nooit.
+
+Een boekhouder die meekijkt ziet **Niet voor mij** nergens; opzetten is het werk van de eigenaar.
+
+Alles wat je zo weggezet hebt, komt terug onderaan de pagina: de lijst aan het eind van **Alle onderdelen** toont elk verborgen onderdeel met een eigen knop **Weer tonen**. Staat zo'n onderdeel tóch een keer in beeld, dan biedt het kaartmenu ook **Weer voorstellen** aan.
 
 ## Eerste bezoek
 
@@ -81,7 +93,7 @@ Een boekhouder die in de boeken van een klant meekijkt ziet **Mijn bedrijf** zoa
 
 ## Cijfers: de analyseweergave
 
-De diepere cijfers van het oude dashboard staan hier, ongewijzigd verhuisd. De pagina is één scrollbare weergave; elk blok verschijnt alleen als je data het aangeeft.
+De diepere cijfers van het oude dashboard staan hier. De pagina toont alleen cijfers: de aandacht en de feed van wat er gebeurde, staan op Mijn bedrijf. De pagina is één scrollbare weergave; elk blok verschijnt alleen als je data het aangeeft.
 
 ## Periodekiezer
 
@@ -115,38 +127,6 @@ Een tegel zonder eerlijke historie toont geen trendlijn in plaats van een verzon
 
 De KPI-rij toont kasbewegingen; de tegel **Winst** en het trendblok rekenen in een winst-en-verlies-weergave. Daarin staan kosten zonder btw, lopen investeringen mee via hun afschrijving en blijven concepten die nog in review liggen buiten beeld. Gebruik het W&P-rapport als je dezelfde winst als gedetailleerd rapport wilt.
 
-## Voor jou
-
-Het blok **Voor jou** is een persoonlijk taken- en signalenbord op het dashboard. Het houdt de meest relevante vervolgacties op één plek, zonder het volledige belpaneel of het aandacht-widget te vervangen.
-
-Het onderscheidt:
-
-- **Alle taken** (`Alle taken`) - alles waar de werkruimte aandacht voor vraagt
-- **Te laat** (`{n} te laat`) - achterstallige facturen, rekeningen of andere items
-- **Vandaag** (`{n} vandaag`) - items die vandaag af moeten
-- **Open** (`{n} open`) - nog wachtende items
-- **Gesprekken** (`{n} mail`) - ongelezen conversaties
-- **Afspraken** (`geen afspraken | {n} afspraak | {n} afspraken`) - aankomende boekingen
-
-Elke regel toont het type item (factuur, gesprek, afspraak, enzovoort) en een directe link om hem te openen. Wanneer er niets te doen is, toont het blok **Niets op je bord.** Laadt het overzicht niet, dan biedt een opnieuw-knop een nieuwe poging.
-
-## Aandacht-widget
-
-Het aandacht-widget wordt gevoed door de Vandaag-signaalmotor. Het toont maximaal vier taken die nu of deze week actie vragen. Elke regel toont een ernst-indicator, een korte titel en een link naar het bijbehorende record. Het widget toont alleen taken; het bevat niet de volledige gerangschikte lijst, de bewijskerngetallen of de actieknoppen. Die volledige lijst staat in het belpaneel.
-
-De Vandaag-motor rangschikt signalen in vier ernstniveaus:
-
-- **critical**: geld loopt weg of een harde deadline komt dichtbij
-- **attention**: een concrete taak, vandaag of deze week
-- **upcoming**: gedateerd, maar nog niet urgent
-- **good**: positief nieuws dat je verdient
-
-De motor is deterministisch. Er is geen model betrokken bij het maken van de signalen, dus de pagina blijft bruikbaar als de AI-laag offline is.
-
-### Actiechips
-
-Sommige aandachtsregels hebben een actiechip, bijvoorbeeld om een betalingsherinnering te sturen. De eerste tik op een chip met bevestiging wapent hem en toont de tekst **Zeker weten? Tik nogmaals**; pas de tweede tik voert de actie uit. Na vijf seconden zonder tweede tik ontwapent de chip vanzelf. Zo kan een verdwalde tik niet per ongeluk een herinneringsmail naar een klant sturen.
-
 ## Ondersteunende blokken
 
 De blokken onder de KPI-rij verschijnen alleen als ze hun plek verdienen. De catalogus bepaalt zowel of een blok getoond wordt als welke vorm hij krijgt.
@@ -159,7 +139,6 @@ De blokken onder de KPI-rij verschijnen alleen als ze hun plek verdienen. De cat
 | **Offertes** | Open offertepijplijn en verlopende offertes |
 | **Uitgavenmix** | Kostenverdeling per categorie, weergegeven als staafjes |
 | **Cash-grafiek** | Kaspositie over 12 maanden met prognose |
-| **Activiteit** | Recent factuur-, betalings- en uitgave-gebeurtenissen |
 | **BTW-kaart** | Huidige btw-periode, checklistvoortgang, volgende deadline en in een oogopslag de btw over omzet, voorbelasting en het te betalen of terug te krijgen bedrag |
 | **Vaste lasten** | Maandelijkse terugkerende inkomsten en kosten, hoeveel procent van de vaste lasten je contracten dekken, en de grootste overeenkomsten aan beide kanten |
 
@@ -168,7 +147,7 @@ Op telefoons vallen visuele vormen terug op eenvoudiger vormen, zodat de getalle
 
 ## Laden en foutmeldingen
 
-Een skeleton toont de eindvorm van de weergave, zodat de pagina niet onder je ogen verspringt. Faalt het laden van **Mijn bedrijf**, dan zegt de pagina wat er scheelt en biedt ze een opnieuw-knop, in plaats van een alles-goed gebouwd uit lege data. Faalt de kaartinhoud terwijl de stand wél binnenkwam, dan valt elke kaart terug op de ene zin van zijn status. Op **Cijfers** draagt een fout dezelfde opnieuw-knop, en een periode-switch die niet lukt terwijl er oudere getallen op scherm staan, toont een verouderd-melding met een inline opnieuw-knop. Het blok **Voor jou** volgt hetzelfde expliciete fout-en-opnieuw-gedrag wanneer het overzicht niet geladen kan worden.
+Een skeleton toont de eindvorm van de weergave, zodat de pagina niet onder je ogen verspringt. Faalt het laden van **Mijn bedrijf**, dan zegt de pagina wat er scheelt en biedt ze een opnieuw-knop, in plaats van een alles-goed gebouwd uit lege data. Faalt de kaartinhoud terwijl de stand wél binnenkwam, dan valt elke kaart terug op de ene zin van zijn status. Op **Cijfers** draagt een fout dezelfde opnieuw-knop, en een periode-switch die niet lukt terwijl er oudere getallen op scherm staan, toont een verouderd-melding met een inline opnieuw-knop.
 
 ## Zie ook
 

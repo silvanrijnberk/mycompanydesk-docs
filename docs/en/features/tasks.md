@@ -42,4 +42,4 @@ Tasks can come from several places:
 ## Tips
 
 - Use the source chip to jump to the record a task is about.
-- The [dashboard attention widget](/en/features/dashboard) shows up to four tasks that need action today or this week.
+- The **Do now** list on the [dashboard](/en/faq/use-dashboard) puts the tasks that need action today ahead of everything else.

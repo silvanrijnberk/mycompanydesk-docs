@@ -25,10 +25,10 @@ Je dashboard, **Mijn bedrijf**, geeft je een snel overzicht van:
 - de **geldkaart**: vrij besteedbaar, saldo, nog te ontvangen en omzet per maand
 - **per onderdeel een kaart**: alles wat loopt, aandacht vraagt of half staat
 - **Zet dit op**: de volgende opzetstappen, met een reden uit je eigen data
-- **Alle onderdelen**: de rest, om zelf aan of uit te zetten
+- **Alle onderdelen**: de rest, om zelf aan of uit te zetten; een voorstel waar je nooit iets mee gaat doen zet je weg met **Niet voor mij**, en alles wat weggezet of uitgezet is komt terug via de lijst onderaan de pagina
 
 De oude balken boven de pagina zijn weg: proefperiode, beveiligen en betaalmethode staan nu in Nu doen en Zet dit op, productnieuws onderaan de rest.
 
-Twee weergaven houden de getallen eerlijk. De geldkaart telt wat er al vergeven is: vrij besteedbaar is je banksaldo, min de btw-reservering en je vaste lasten per maand. De diepere cijfers zijn verhuisd naar de pagina **Cijfers** (`/cijfers`, ook in de zijbalk): de KPI-rij met de periodekiezer, de trendgrafiek van 12 maanden, ageing, omzetbronnen, uitgavenmix, cash-grafiek en de activiteitenlijst.
+Twee weergaven houden de getallen eerlijk. De geldkaart telt wat er al vergeven is: vrij besteedbaar is je banksaldo, min de btw-reservering en je vaste lasten per maand. De diepere cijfers zijn verhuisd naar de pagina **Cijfers** (`/cijfers`, ook in de zijbalk): de KPI-rij met de periodekiezer, de trendgrafiek van 12 maanden, ageing, omzetbronnen, uitgavenmix en de cash-grafiek. Op Cijfers vraagt niets iets van je: de aandacht en de activiteitenlijst staan op Mijn bedrijf.
 
 Op Cijfers toont de KPI-rij kasbewegingscijfers, terwijl de winsttegel en het trendblok een winst-en-verliesweergave gebruiken. In die W&V-weergave zijn uitgaven zonder BTW, investeringen verdeeld over hun afschrijvingsschema en concepten die nog in beoordeling zijn uitgesloten. Gebruik het W&V-rapport als je hetzelfde winstcijfer in een gedetailleerd rapport wilt zien.
