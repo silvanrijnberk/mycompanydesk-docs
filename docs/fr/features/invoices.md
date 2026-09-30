@@ -29,6 +29,10 @@ Chaque nouveau devis reçoit automatiquement une date valide jusqu'au, calculée
 
 When enabled, a signed quote automatically becomes a draft invoice. The draft is ready for your review; you still choose when to send it.
 
+### Joindre les conditions par défaut
+
+Si vous conservez vos conditions générales dans Documents, chaque envoi peut les joindre en PDF. Sous **Conditions générales** sur la même page de réglages, vous choisissez séparément par type si la case démarre cochée : devis et factures ont chacun leur interrupteur. D'origine, les conditions partent avec les devis et pas avec les factures. La case reste modifiable à chaque envoi.
+
 ### Invoice numbering
 
 MyCompanyDesk numbers invoices automatically in the order the Belastingdienst expects, unless you set a custom prefix or starting number.
@@ -134,7 +138,7 @@ Send the invoice to your customer via email. The email includes:
 
 Before sending, the email preview shows the message exactly as your customer will receive it. The send dialog has toggles for the **View button**, **Download button**, **PDF attachment**, **Invoice lines**, and, if you have online payments enabled, the **Confirm payment** button. These toggles are reflected in the live preview, so what you see is what your customer gets. Vous peaufinez le message à chaque envoi ? Cochez dans la même fenêtre **Utiliser ce texte désormais pour les factures** : chaque prochain e-mail de facture partira de cette version. Voir [Modèles d'e-mail](/fr/faq/email-template).
 
-If your workspace has general terms in Documents, the email preview also shows an **Include general terms** toggle. For invoices this toggle is off by default. When enabled, the current terms PDF is attached to the email and the send is recorded as the provision event on the terms document.
+If your workspace has general terms in Documents, the email preview also shows an **Include general terms** toggle. Son état au départ suit le réglage par défaut que vous avez choisi pour ce type de document sous Joindre les conditions par défaut (d'origine : cochée pour les devis, décochée pour les factures). When enabled, the current terms PDF is attached to the email and the send is recorded as the provision event on the terms document.
 
 ### Send as Peppol e-invoice
 

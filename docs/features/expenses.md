@@ -137,7 +137,9 @@ Koppel uitgaven aan:
 
 ## Doorbelasting en kostprijswijzigingen
 
-Een uitgave die aan een klant is gekoppeld, kan op een factuur worden doorbelast. Op de uitgavedetail staat een regel **Gekoppelde factuur** zodra hij aan een factuur is toegevoegd, en een waarschuwingslabel **Kostprijs gewijzigd na facturatie** als de kostprijs van de uitgave is aangepast nadat de factuur is verstuurd. Dat label betekent dat het bedrag op de factuur niet meer overeenkomt met de onderliggende uitgave; open de factuur of bewerk de uitgave om beide weer gelijk te trekken.
+Een uitgave die aan een klant is gekoppeld, kan op een factuur worden doorbelast. Voor dat doel heeft de uitgave zelf een schakelaar **Doorbelasten aan de klant**: doorbelaste uitgaven komen op de volgende factuur van de klant en tonen **Staat al op een factuur** zodra ze op een factuur staan. [Automatisch uren factureren](/features/time-registration#automatisch-uren-factureren) pakt alleen uitgaven mee die deze schakelaar aan hebben staan.
+
+Op de uitgavedetail staat een regel **Gekoppelde factuur** zodra hij aan een factuur is toegevoegd, en een waarschuwingslabel **Kostprijs gewijzigd na facturatie** als de kostprijs van de uitgave is aangepast nadat de factuur is verstuurd. Dat label betekent dat het bedrag op de factuur niet meer overeenkomt met de onderliggende uitgave; open de factuur of bewerk de uitgave om beide weer gelijk te trekken.
 
 ## Bulkacties
 

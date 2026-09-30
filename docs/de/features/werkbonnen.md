@@ -38,6 +38,8 @@ Nach dem Unterschreiben kann der Arbeitsbericht nicht mehr geändert werden. Die
 
 Von jedem Arbeitsbericht gibt es ein PDF mit den Besuchsdaten, den Stunden und Materialien, den Summen und, wenn er unterschrieben ist, der Unterschrift des Kunden. Senden Sie den unterschriebenen Arbeitsbericht von der Arbeitsberichtseite an Ihren Kunden: das PDF geht automatisch als Anhang mit.
 
+Das Arbeitsbericht-PDF folgt standardmäßig Ihrem [Rechnungsdesign](/de/settings/pdf), mit derselben Akzentfarbe, denselben Schriften und demselben Briefpapier. Soll der Arbeitsbericht anders aussehen? Geben Sie ihm im Designstudio eine eigene Vorlage; ein Arbeitsbericht hat keinen Schlusstext.
+
 ## Vom Arbeitsbericht zur Rechnung
 
 Aus einem unterschriebenen Arbeitsbericht erstellen Sie mit einem Klick eine Rechnung. Sie beginnt als Entwurf mit den Stunden und Materialien bereits auf den Positionen, und sie zeigt die Berichtsnummer als Verweis. Zu einem Arbeitsbericht gehört eine Rechnung; existiert sie bereits, bringt Sie der Link auf der Arbeitsberichtseite direkt dorthin. Prüfen Sie den Rechnungsentwurf und senden Sie ihn wie gewohnt.

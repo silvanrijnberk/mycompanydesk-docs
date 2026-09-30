@@ -35,7 +35,9 @@ Le chemin le plus rapide est le bouton **Générer depuis mon identité visuelle
 - **Teinte du papier :** blanc ou l'une des douces teintes cassées (Crème, Grège, Sable, Brume).
 - **Police :** une police de titre (Marcellus, Playfair Display, Fraunces ou Cormorant) et une police de texte (Inter, Lato ou EB Garamond).
 - **Thème / mise en page :** l'organisation générale du document, plus la densité (Compact, Normal, Aéré). La mise en page Botanique propose des ornements décoratifs facultatifs que vous pouvez désactiver.
+- **Modèle par type de document :** chaque type de document suit votre design de facture ; quand un type doit différer, donnez-lui son propre modèle. Le bon d'intervention en est l'exemple : il suit votre mise en page de facture ou reçoit son propre design, et un bon d'intervention n'a pas de texte de clôture.
 - **Taille du texte :** Petit, Normal ou Grand pour le texte de votre document. Les titres et le nom de votre entreprise gardent leur taille.
+- **Votre papier à en-tête :** importez le papier à en-tête de votre imprimeur, en PDF, PNG ou JPG, couvrant la page A4 entière en portrait. Le design mesure l'espace que votre création occupe en haut et en bas et le réserve, afin que rien ne passe par-dessus ; ajustez la mesure si elle est à côté. Votre logo figure-t-il déjà dans le papier à en-tête ? Un interrupteur retire le logo et le nom en haut du document ; votre adresse reste toujours, elle est obligatoire. Le papier à en-tête apparaît sur la première page, les pages suivantes gardent leurs marges normales. Une astuce indique que la plupart des lignes tiennent sur une page avec la mise en page Classique ou la densité Compact ; si votre mise en page actuelle laisse trop peu de place, l'application passe vos factures en Classique et le signale, et vous revenez en arrière sous Modèle.
 - **Textes sur votre document :** le texte de clôture, prêt sous « Merci » sur chaque nouvelle facture (un devis sans texte propre reprend le texte de vos factures), et l'instruction de paiement affichée sous Paiement sur les nouvelles factures et sur votre page de paiement, avec {iban}, {company} et {invoiceNumber} insérés automatiquement.
 - **Pied de page :** la ligne au bas de chaque document, par exemple votre numéro KVK ou un mot de remerciement.
 
@@ -45,7 +47,7 @@ Les modifications sont enregistrées automatiquement et apparaissent aussitôt d
 
 ## Un style pour tous les documents
 
-La mise en page s'applique à chaque PDF que MyCompanyDesk crée pour vous : factures, devis et relances de paiement. Les couleurs que les clients voient sur les e-mails et la page de paiement suivent le même accent. Vous la réglez une fois ; chaque type de document reste cohérent.
+La mise en page s'applique à chaque PDF que MyCompanyDesk crée pour vous : factures, devis, relances de paiement et bons d'intervention. Chaque type de document suit votre design de facture ; donnez-lui son propre modèle quand il doit différer. Les couleurs que les clients voient sur les e-mails et la page de paiement suivent le même accent. Vous la réglez une fois ; chaque type de document reste cohérent. Votre papier à en-tête apparaît partout où le document apparaît : dans le PDF, dans la vue que votre client voit dans le portail client, et sur le bon d'intervention.
 
 ## Langue
 

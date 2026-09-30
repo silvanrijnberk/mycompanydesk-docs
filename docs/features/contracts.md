@@ -133,6 +133,20 @@ You apply the rise per contract, never in bulk, so you can skip customers you ha
 Discuss any price rise with your customer before applying it. The preview changes nothing until you click **Apply** on a specific contract.
 :::
 
+### Automatische jaarlijkse verhoging
+
+Een contract dat volgens afspraak elk jaar een verhoging krijgt, kan die verhoging zelf uitvoeren. Open het contract en stel de automatische verhoging in:
+
+- **Verhogen met**: het CBS-consumptieprijsindexcijfer (CPI), of een vast percentage dat jezelf kiest.
+- **Elk jaar op**: de dag en maand waarop de verhoging elk jaar ingaat.
+- **Aankondiging**: de klant of huurder krijgt vooraf mail vanaf jouw eigen mailadres; jij kiest hoeveel maanden van tevoren.
+
+De voorwaarde die de app stelt: het werkt op een lopend contract met een vast bedrag per periode. Elk jaar krijg je ongeveer een week voordat de aankondiging verstuurd wordt een melding met de geplande verhoging, en met één klik sla je dit jaar over. Doe je niets, dan gaan beide stappen vanzelf: eerst krijgt de klant de aankondiging, en pas nadat die mail eruit is, verandert de prijs. Facturen voor periodes vóór de ingangsdatum houden de oude prijs; periodes vanaf de ingangsdatum gebruiken de nieuwe. Lukt het niet om de aankondiging vóór de ingangsdatum te mailen, dan gaat de verhoging niet door en vertelt een melding je waarom.
+
+Een handmatige verhoging met een ingangsdatum in de toekomst, toegepast via **Prijzen verhogen** op de contractenlijst, volgt hetzelfde schema maar zonder aankondigingsmail.
+
+Bevat je abonnement automatische verhogingen niet, dan zegt de knop op het contract dat, en je kunt de verhoging nog steeds handmatig toepassen met **Prijzen verhogen**.
+
 ## Linking to assets
 
 Contracts can be linked to [objects/assets](/en/features/objects) for rental management:

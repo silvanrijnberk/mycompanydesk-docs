@@ -57,6 +57,16 @@ Das ist sinnvoll, wenn der Vertrag den Satz festlegt (Stundensatz, Tagessatz ode
 
 Wenn für einen Vertrag kein Satz hinterlegt ist, bleiben verknüpfte Stunden unverrechnet und Sie erhalten eine Benachrichtigung, dass sie nicht bewertet werden konnten.
 
+## Automatisches Abrechnen für ein Projekt
+
+Ein Projekt kann seine Stunden in einem eigenen Rhythmus abrechnen. Auf der Projektseite wählen Sie, wie es abgerechnet wird:
+
+- **Manuell** (die Voreinstellung): Diese Rechnungen erstellen Sie selbst.
+- **Jeden Monat**: Anfang des Monats gehen die bis dahin erfassten Stunden und weiterberechneten Kosten auf einer Rechnung an den Kunden.
+- **Beim Abschluss**: Alles, was noch offen ist, geht auf eine Schlussrechnung, sobald Sie das Projekt abschließen.
+
+Sie können dem Projekt auch eine eigene Rechnung geben, getrennt von den anderen Projekten desselben Kunden. Die Kundenseite bündelt die [vollständige Übersicht](/de/features/time-registration#automatische-zeitabrechnung): alle Projekte dieses Kunden, die Stunden ohne Projekt und wie der Versand funktioniert.
+
 ## Budgetverfolgung
 
 Wenn Sie ein Budget festlegen:

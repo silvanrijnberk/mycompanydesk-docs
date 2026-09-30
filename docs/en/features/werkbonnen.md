@@ -38,6 +38,8 @@ Once signed, the work order can no longer be changed. The signature, the signer'
 
 Every work order has a PDF with the visit details, the hours and materials, the totals and, when it is signed, the customer's signature. Email the signed work order to your customer from the work order page: the PDF is attached automatically.
 
+The work order PDF follows your [invoice design](/en/settings/pdf) by default, so it carries the same accent colour, typography and letterhead. Want the work order to look different? Give it its own template in the design studio; a work order has no closing text.
+
 ## From work order to invoice
 
 A signed work order turns into an invoice in one click. The invoice starts as a draft with the hours and materials already on the lines, and it shows the work order number as a reference. There is one invoice per work order; if it already exists, the link on the work order page takes you straight to it. Check the draft invoice and send it as usual.

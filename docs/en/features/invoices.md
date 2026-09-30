@@ -27,6 +27,10 @@ Choose how long quotes stay valid by default: **2 weeks**, **1 month** or **2 mo
 
 When enabled, a signed quote automatically becomes a draft invoice. The draft is ready for your review; you still choose when to send it.
 
+### Attach terms by default
+
+If you keep your general terms in Documents, every send can attach them as a PDF. Under **Terms and conditions** on the same settings page you choose, separately for quotes and for invoices, whether the send dialog starts with that box ticked. Out of the box, quotes carry their terms and invoices do not. The box itself stays adjustable on every send.
+
 ### Invoice numbering
 
 MyCompanyDesk numbers invoices automatically in the order the Belastingdienst expects, unless you set a custom prefix or starting number.
@@ -132,7 +136,7 @@ Send the invoice to your customer via email. The email includes:
 
 Before sending, the email preview shows the message exactly as your customer will receive it. The send dialog has toggles for the **View button**, **Download button**, **PDF attachment**, **Invoice lines**, and, if you have online payments enabled, the **Confirm payment** button. These toggles are reflected in the live preview, so what you see is what your customer gets. Fine-tuning the message every time? Tick **Use this text from now on for invoices** in the same dialog and every next invoice email starts from that version; see [Email templates](/en/faq/email-template).
 
-If your workspace has general terms in Documents, the email preview also shows an **Include general terms** toggle. For invoices this toggle is off by default. When enabled, the current terms PDF is attached to the email and the send is recorded as the provision event on the terms document.
+If your workspace has general terms in Documents, the email preview also shows an **Include general terms** toggle. It starts on or off following the attach-terms default you set for this document type under [Terms and conditions](#attach-terms-by-default) (out of the box: on for quotes, off for invoices). When enabled, the current terms PDF is attached to the email and the send is recorded as the provision event on the terms document.
 
 ### Send as Peppol e-invoice
 

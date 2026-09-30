@@ -133,6 +133,20 @@ You apply the rise per contract, never in bulk, so you can skip customers you ha
 Discuss any price rise with your customer before applying it. The preview changes nothing until you click **Apply** on a specific contract.
 :::
 
+### Augmentation annuelle automatique
+
+Un contrat qui reçoit, selon votre accord, une hausse chaque année peut effectuer cette hausse tout seul. Ouvrez le contrat et réglez l'augmentation automatique :
+
+- **Augmenter de** : l'indice des prix à la consommation du CBS (IPC), ou un pourcentage fixe que vous choisissez.
+- **Chaque année le** : le jour et le mois où l'augmentation prend effet chaque année.
+- **Annonce** : le client ou le locataire reçoit un e-mail d'avance depuis votre propre adresse ; vous choisissez combien de mois à l'avance.
+
+La condition posée par l'application : cela fonctionne sur un contrat en cours avec un montant fixe par période. Chaque année, environ une semaine avant l'envoi de l'annonce, vous recevez une notification avec l'augmentation prévue, et un clic suffit pour sauter cette année. Si vous ne faites rien, les deux étapes se font seules : le client reçoit d'abord l'e-mail d'annonce, et ce n'est qu'après son envoi que le prix change. Les factures pour les périodes antérieures à la date d'effet gardent l'ancien prix ; les périodes à partir de cette date utilisent le nouveau. Si l'e-mail d'annonce ne peut pas partir avant la date d'effet, l'augmentation n'a pas lieu et une notification vous en explique la raison.
+
+Une augmentation manuelle avec une date d'effet future, appliquée via **Augmenter les prix** dans la liste des contrats, suit le même calendrier mais sans e-mail d'annonce.
+
+Si votre abonnement n'inclut pas les augmentations automatiques, le bouton sur le contrat vous l'indique ; vous pouvez toujours appliquer la hausse à la main via **Augmenter les prix**.
+
 ## Linking to assets
 
 Contracts can be linked to [objects/assets](/en/features/objects) for rental management:

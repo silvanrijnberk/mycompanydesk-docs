@@ -35,7 +35,9 @@ The quickest route is the **Genereer uit mijn huisstijl** (generate from my bran
 - **Papiertint** (paper tint): white or one of the soft off-white tones (Crème, Greige, Zand, Mist).
 - **Lettertype** (typography): a heading font (Marcellus, Playfair Display, Fraunces or Cormorant) and a text font (Inter, Lato or EB Garamond).
 - **Thema / indeling** (theme and layout): the overall arrangement of the document, plus the density (Compact, Normaal, Ruim). The Botanisch layout has optional decorative artwork you can switch off.
+- **Template per documentsoort** (template per document type): every document type follows your invoice design, and where one must differ you give it its own template. The work order is the example: it can follow your invoice layout or carry its own design, and a work order has no closing text.
 - **Tekstgrootte** (text size): Klein, Normaal or Groot (small, normal or large) for the text of your document. Headings and your company name keep their size.
+- **Eigen briefpapier** (your own letterhead): upload the letterhead your printer made, as a PDF, PNG or JPG, filling the whole page of portrait A4. The studio measures the space your design takes at the top and bottom and reserves it, so nothing lands on top of your artwork; adjust the space if the measure is off. Is your logo already in the letterhead? One switch leaves out the logo and name at the top of the document; your address always stays, it is required. The letterhead shows on the first page, and the following pages keep their normal margins. A tip points out that most lines still fit on one page with the Klassiek layout or the Compact density; when your current layout leaves too little room, the app switches your invoices to Klassiek and tells you, and you can switch back under Template.
 - **Teksten op je document** (texts on your document): the closing text, ready under "Thank you" on every new invoice (a quote without its own text gets the text of your invoices), and the payment instruction shown under Payment on new invoices and on your payment page, with {iban}, {company} and {invoiceNumber} filled in for you.
 - **Voettekst** (footer text): the line at the bottom of every document, for example your KVK number or a thank-you note.
 
@@ -45,7 +47,7 @@ Changes save automatically and show in the preview within a moment. Want the sta
 
 ## One style for all documents
 
-The design applies to every PDF MyCompanyDesk creates for you: invoices, quotes and payment reminders. The colours customers see on emails and the payment page follow the same accent colour. You style it once; every document type stays consistent.
+The design applies to every PDF MyCompanyDesk creates for you: invoices, quotes, payment reminders and work orders. Each document type follows your invoice design; give any of them its own template when it needs to differ. The colours customers see on emails and the payment page follow the same accent colour. You style it once; every document type stays consistent. Your letterhead shows up wherever the document appears: the PDF, your customer's view in the customer portal and the work order.
 
 ## Language
 

@@ -35,7 +35,9 @@ Der schnellste Weg ist die Schaltfläche **Aus meinem Corporate Design generiere
 - **Papierton:** Weiß oder einer der sanften gebrochen-weißen Töne (Creme, Greige, Sand, Nebel).
 - **Schriftart:** eine Überschriftenschrift (Marcellus, Playfair Display, Fraunces oder Cormorant) und eine Textschrift (Inter, Lato oder EB Garamond).
 - **Thema / Layout:** der Gesamtaufbau des Dokuments plus die Dichte (Kompakt, Normal, Luftig). Das Layout Botanisch hat optionale dekorative Elemente, die sich abschalten lassen.
+- **Vorlage pro Dokumentart:** jede Dokumentart folgt Ihrem Rechnungsdesign, und wo eine abweichen soll, geben Sie ihr eine eigene Vorlage. Der Arbeitsbericht ist das Beispiel: Er folgt Ihrem Rechnungslayout oder erhält ein eigenes Design, und ein Arbeitsbericht hat keinen Schlusstext.
 - **Textgröße:** Klein, Normal oder Groß für den Text Ihres Dokuments. Überschriften und Ihr Firmenname behalten ihre Größe.
+- **Eigenes Briefpapier:** laden Sie das Briefpapier Ihrer Druckerei hoch, als PDF, PNG oder JPG, als vollständige A4-Seite im Hochformat. Das Design misst den Raum, den Ihr Entwurf oben und unten benötigt, und reserviert ihn, damit nichts über Ihr eigenes Papier gerät; justieren Sie das Maß, wenn die Messung danebenliegt. Steht Ihr Logo bereits im Briefpapier? Ein Schalter lässt Logo und Namen oben am Dokument weg; Ihre Adresse bleibt immer stehen, sie ist Pflicht. Das Briefpapier erscheint auf der ersten Seite, die folgenden Seiten behalten ihre normalen Ränder. Ein Tipp sagt, dass mit dem Layout Klassisch oder der Dichte Kompakt die meisten Zeilen auf eine Seite passen; lässt Ihr aktuelles Layout zu wenig Raum, stellt die App Ihre Rechnungen auf Klassisch um und sagt das, und unter Vorlage schalten Sie zurück.
 - **Texte auf Ihrem Dokument:** der Abschlusstext, bereit unter „Vielen Dank“ auf jeder neuen Rechnung (ein Angebot ohne eigenen Text erhält den Text Ihrer Rechnungen), und der Zahlungshinweis unter Zahlung auf neuen Rechnungen und auf Ihrer Zahlungsseite, mit {iban}, {company} und {invoiceNumber} automatisch eingesetzt.
 - **Fußzeile:** die Zeile am Ende jedes Dokuments, zum Beispiel Ihre KVK-Nummer oder ein Dankeschön.
 
@@ -45,7 +47,7 @@ Der schnellste Weg ist die Schaltfläche **Aus meinem Corporate Design generiere
 
 ## Ein Stil für alle Dokumente
 
-Das Design gilt für jedes PDF, das MyCompanyDesk für Sie erstellt: Rechnungen, Angebote und Zahlungserinnerungen. Die Farben, die Kunden auf E-Mails und der Zahlungsseite sehen, folgen demselben Akzent. Sie gestalten es einmal; jeder Dokumenttyp bleibt konsistent.
+Das Design gilt für jedes PDF, das MyCompanyDesk für Sie erstellt: Rechnungen, Angebote, Zahlungserinnerungen und Arbeitsberichte. Jede Dokumentart folgt Ihrem Rechnungsdesign; geben Sie einer eine eigene Vorlage, wenn sie abweichen soll. Die Farben, die Kunden auf E-Mails und der Zahlungsseite sehen, folgen demselben Akzent. Sie gestalten es einmal; jeder Dokumenttyp bleibt konsistent. Ihr Briefpapier erscheint überall, wo das Dokument erscheint: im PDF, in der Ansicht, die Ihr Kunde im Kundenportal sieht, und auf dem Arbeitsbericht.
 
 ## Sprache
 

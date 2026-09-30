@@ -29,6 +29,10 @@ Jedes neue Angebot bekommt automatisch ein Datum „Gültig bis“ auf Grundlage
 
 When enabled, a signed quote automatically becomes a draft invoice. The draft is ready for your review; you still choose when to send it.
 
+### AGB standardmäßig mitschicken
+
+Halten Sie Ihre Allgemeinen Geschäftsbedingungen unter Dokumenten bereit, kann jeder Versand sie als PDF mitschicken. Unter **Allgemeine Geschäftsbedingungen** auf derselben Einstellungsseite legen Sie getrennt je Art fest, ob das Kontrollkästchen im Versanddialog anfangs gesetzt ist: Angebote und Rechnungen haben je einen eigenen Schalter. Ab Werk gehen die AGB bei Angeboten mit und bei Rechnungen nicht. Das Kontrollkästchen selbst bleibt bei jedem Versand anpassbar.
+
 ### Invoice numbering
 
 MyCompanyDesk numbers invoices automatically in the order the Belastingdienst expects, unless you set a custom prefix or starting number.
@@ -134,7 +138,7 @@ Send the invoice to your customer via email. The email includes:
 
 Before sending, the email preview shows the message exactly as your customer will receive it. The send dialog has toggles for the **View button**, **Download button**, **PDF attachment**, **Invoice lines**, and, if you have online payments enabled, the **Confirm payment** button. These toggles are reflected in the live preview, so what you see is what your customer gets. Passen Sie den Text regelmäßig an? Aktivieren Sie im selben Dialog **Diesen Text künftig für Rechnungen verwenden**, dann startet jede nächste Rechnungs-E-Mail mit dieser Version. Siehe [E-Mail-Vorlagen](/de/faq/email-template).
 
-If your workspace has general terms in Documents, the email preview also shows an **Include general terms** toggle. For invoices this toggle is off by default. When enabled, the current terms PDF is attached to the email and the send is recorded as the provision event on the terms document.
+If your workspace has general terms in Documents, the email preview also shows an **Include general terms** toggle. Ob er anfangs gesetzt ist, folgt der Voreinstellung, die Sie unter AGB standardmäßig mitschicken auf derselben Einstellungsseite für diese Dokumentart getroffen haben (ab Werk: bei Angeboten an, bei Rechnungen aus). When enabled, the current terms PDF is attached to the email and the send is recorded as the provision event on the terms document.
 
 ### Send as Peppol e-invoice
 

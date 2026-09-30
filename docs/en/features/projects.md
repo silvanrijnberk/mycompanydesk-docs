@@ -57,6 +57,16 @@ This is useful when the contract sets the rate (hourly, daily or fixed project p
 
 If a contract has no rate set, hours linked to it stay uninvoiced and you get a notification telling you they could not be priced.
 
+## Automatic billing for a project
+
+A project can invoice its hours on a rhythm of its own. On the project page you pick how it is invoiced:
+
+- **Manual** (the default): you create the invoices yourself.
+- **Every month**: early in the month, the hours and charged expenses up to then go on an invoice for the customer.
+- **When the project is completed**: everything still open goes on a final invoice once you mark the project completed.
+
+You can also let the project get its own invoice instead of sharing one with the other projects of the same customer. The customer's page holds the [full overview](/en/features/time-registration#automatic-time-invoicing): all projects of that customer, the hours without a project, and how sending works.
+
 ## Budget tracking
 
 If you set a budget:
