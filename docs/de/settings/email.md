@@ -89,6 +89,8 @@ Die Angaben kommen aus Ihren Unternehmensdaten, Sie sehen also genau das, was Ih
 
 **Posteingangs-Mails** ist die Gegenseite für das, was Sie selbst aus dem Posteingang schreiben und beantworten: die Anrede und Grußformel, mit der jede neue Nachricht beginnt, und Ihre Signatur.
 
+Eine Mail, die Sie selbst tippen, geht so raus wie eine Posteingangs-Mail, auch wenn Sie sie von einer Kundenseite oder einer Rechnung aus schreiben: Ihr Text mit Ihrer Signatur darunter, ohne den Kopf und die Fußzeile, die Dokumentmails tragen. Die Vorschau im Verfassen-Fenster zeigt genau, was gesendet wird.
+
 ### Anrede und Grußformel
 
 Ihre Standardanrede und Grußformel füllen das Verfassen-Fenster im Posteingang für neue Nachrichten vorab aus, die Sie selbst schreiben. Den Block verwalten Team-Admins, in Arbeitsbereichen mit Posteingang. Sehen Sie den Block nicht, zeigt die Vorschau einfach die gespeicherten Texte, die der Posteingang einsetzt.

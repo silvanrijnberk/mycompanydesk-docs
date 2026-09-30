@@ -89,6 +89,8 @@ Les informations viennent des informations de l'entreprise, ce que vous voyez es
 
 **E-mails de la boîte de réception** est la page homologue pour ce que vous écrivez et auquel vous répondez depuis votre boîte de réception : la formule d'appel et la formule de politesse avec lesquelles commence chaque nouveau message, et votre signature.
 
+Un e-mail que vous rédigez vous-même part comme un e-mail de la boîte de réception, même si vous l'envoyez depuis la page d'un client ou d'une facture : votre texte avec votre signature en dessous, sans l'en-tête et le pied de page que portent les e-mails de documents. L'aperçu dans la fenêtre de rédaction montre exactement ce qui sera envoyé.
+
 ### Formule d'appel et formule de politesse
 
 Votre formule d'appel et votre formule de politesse standard préremplissent la fenêtre de rédaction de la boîte de réception pour vos nouveaux messages. Le bloc est géré par les administrateurs d'équipe, dans les espaces de travail dotés de la boîte de réception. Si vous ne voyez pas le bloc, l'aperçu montre simplement les textes enregistrés que la boîte de réception insère.

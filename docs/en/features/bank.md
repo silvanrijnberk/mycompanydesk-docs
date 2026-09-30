@@ -1,7 +1,7 @@
 ---
 title: Bank Feed
 description: "Link your bank account so transactions flow in automatically. Rules turn outgoing payments into draft expenses that you confirm before they book."
-last_verified: 2026-08-05
+last_verified: 2026-09-30
 ---
 
 # Bank Feed
@@ -132,7 +132,7 @@ Most linking is still a manual step. MyCompanyDesk does, however, automatically 
 Five bank notifications can be switched on independently at the bottom of the settings page:
 
 - **Sync errors**: an email and in-app notification when a bank connection fails to sync, with a link to fix it.
-- **Weekly digest**: a Monday morning email summarising the past week's bank activity. It is skipped when there was nothing to report.
+- **Weekly digest**: a Monday morning email summarising the past week's bank activity. It is skipped when there was nothing to report. The digest is switched off by default in every workspace, so Monday brings one email instead of two: with the digest off, the bank rows that still have to be matched appear in the Monday **Do now** email instead. Only workspaces whose Monday **Do now** email was already switched off keep the digest as it was, because there is no other email to carry the unmatched rows. Switch the digest back on in this list if you want the separate summary; with the digest on, the Monday email leaves those rows out.
 - **Large transactions**: an alert when a transaction meets or exceeds a euro threshold you set yourself.
 - **Vendor rule learned**: an in-app notification when MyCompanyDesk has learned a new trusted vendor rule from your confirmed drafts.
 - **Locked VAT period**: a one-time alert when the bank feed tries to book an outgoing transaction inside a VAT period that has already been filed and locked. The row is skipped permanently so the sync does not retry forever, and the notification tells you how to handle it: book the expense manually with a current-period date, or file a supplementary VAT return.
