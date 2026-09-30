@@ -1,7 +1,7 @@
 ---
 title: Security
 description: "Protect your account with a strong password, two-factor authentication and an eye on active sessions, all under Settings, Inloggen."
-last_verified: 2026-09-29
+last_verified: 2026-09-30
 ---
 
 # Security
@@ -105,6 +105,8 @@ On a domain whose mailbox MyCompanyDesk hosts, adding a passkey changes login it
 ## Sessions
 
 The sessions card on **Settings > Inloggen** has a single **Log out** action that ends your current session. There is no list of other devices or per-session revoking. If you suspect someone else has access to your account, change your password. Changing or resetting your password ends every other session for your account (the device you made the change on stays signed in) and revokes the trusted devices that skip the code step.
+
+Sessions slide with your usage: as long as you keep using MyCompanyDesk, your session renews itself and you stay signed in. After 30 days without use, your session ends, and a session never lasts longer than 90 days from the moment you signed in. Signing in again starts both windows anew.
 
 ## Social login
 

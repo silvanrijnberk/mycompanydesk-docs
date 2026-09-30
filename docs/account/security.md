@@ -1,7 +1,7 @@
 ---
 title: Beveiliging
 description: "Beveilig je account met een sterk wachtwoord, tweestapsverificatie en zicht op je actieve sessies, allemaal onder Instellingen, Inloggen."
-last_verified: 2026-09-29
+last_verified: 2026-09-30
 ---
 
 # Beveiliging
@@ -105,6 +105,8 @@ Op een domein waarvan MyCompanyDesk de mailbox verzorgt verandert een passkey he
 ## Sessies
 
 De sessiekaart op **Instellingen > Inloggen** heeft één actie: **Uitloggen**, die je huidige sessie beëindigt. Er is geen lijst met andere apparaten en geen intrekken per sessie. Vermoed je dat iemand anders toegang heeft tot je account, wijzig dan je wachtwoord. Je wachtwoord wijzigen of resetten beëindigt elke andere sessie op je account (het apparaat waarop je het wijzigt, blijft ingelogd) en trekt de vertrouwde apparaten in die de codestap overslaan.
+
+Je sessie schuift mee met je gebruik: zolang je MyCompanyDesk blijft gebruiken, verlengt je sessie zichzelf en blijf je ingelogd. Na 30 dagen zonder gebruik eindigt je sessie, en een sessie duurt nooit langer dan 90 dagen vanaf het moment dat je inlogde. Na opnieuw inloggen beginnen beide termijnen opnieuw.
 
 ## Inloggen via Google of Microsoft
 
