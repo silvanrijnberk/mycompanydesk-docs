@@ -26,7 +26,7 @@ Läuft Ihre Probezeit bald ab, steht das zuerst, über allem, als einziger Eintr
 
 Eine Regel hält diese Liste frei von Rauschen: **Te laat** (überfällig) zählt nur, wenn MyCompanyDesk Ihre Zahlungen kennt. Eine Zahlung, die in den letzten sechs Monaten als bezahlt registriert wurde, zeigt, dass Ihre Bücher mitgeführt werden; eine Bankanbindung oder Onlinezahlung allein tut es nicht, denn eine Anbindung, die niemand abzeichnet, oder Onlinezahlungen, die an bleiben, während Kunden überweisen, würde jede Rechnung als überfällig melden. Rechnungen kommen nur dann als überfällig in diese Liste, wenn dieses Signal da ist.
 
-Dieselbe Liste kommt jeden Montag auch in Ihr Postfach: nur wenn etwas zu tun ist, nur für den Workspace-Inhaber, und mit einer Benachrichtigung auf Ihrem Telefon, wenn etwas davon dringend ist. Ein- oder ausschalten unter Einstellungen → „Benachrichtigungen“.
+Dieselbe Liste kommt jeden Montag auch in Ihr Postfach: nur wenn etwas zu tun ist, nur für den Workspace-Inhaber, und mit einer Benachrichtigung auf Ihrem Telefon, wenn etwas davon dringend ist. Sie schalten die E-Mail unter Einstellungen → „Benachrichtigungen“ ein oder aus.
 
 ## Die Geldkarte
 
