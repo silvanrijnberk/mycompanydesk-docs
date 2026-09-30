@@ -89,6 +89,8 @@ The details come from your company details, so what you see is what your custome
 
 **Inbox emails** is the counterpart page for the mail you write and answer yourself: the greeting and sign-off every new message starts with, and your signature.
 
+A mail you type yourself goes out the inbox way, also when you write it from a customer or an invoice page: your text with your signature underneath, not the header and footer that document emails carry. The preview in the compose window shows exactly what will be sent.
+
 ### Greeting and sign-off
 
 Your standard greeting and sign-off prefill the compose window of the Inbox for new messages you write yourself. The block is managed by team admins on workspaces with the Inbox. If you cannot edit it, the preview still shows the saved texts the inbox fills in.

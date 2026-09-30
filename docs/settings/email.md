@@ -89,6 +89,8 @@ De gegevens komen uit je bedrijfsgegevens, dus wat je ziet is wat je klant krijg
 
 **Inboxmails** is de tegenhanger voor wat je zelf schrijft en beantwoordt vanuit je inbox: de aanhef en afsluiting waarmee elk nieuw bericht begint, en je handtekening.
 
+Een mail die je zelf typt gaat eruit zoals een inboxmail, ook als je hem stuurt vanaf een klantpagina of een factuur: je tekst met je handtekening eronder, zonder de kop en voettekst waar documentmails mee gaan. De voorbeeldweergave in het opstelvenster laat precies zien wat er verstuurd wordt.
+
 ### Aanhef en afsluiting
 
 Je standaard aanhef en afsluiting vullen het opstelvenster van de Inbox alvast in voor berichten die je zelf schrijft. Het blok beheren teambeheerders, op werkruimtes met de Inbox. Zie je het blok niet, dan laat het voorbeeld gewoon de bewaarde teksten zien die de inbox invult.
