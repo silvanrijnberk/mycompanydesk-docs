@@ -35,7 +35,9 @@ De snelste route is de knop **Genereer uit mijn huisstijl**: die bouwt een compl
 - **Papiertint**: wit of een van de zachte gebroken-witte tinten (Crème, Greige, Zand, Mist).
 - **Lettertype**: een koplettertype (Marcellus, Playfair Display, Fraunces of Cormorant) en een tekstlettertype (Inter, Lato of EB Garamond).
 - **Thema / indeling**: de algemene opbouw van het document, plus de dichtheid (Compact, Normaal, Ruim). De indeling Botanisch heeft optioneel decoratief artwork dat je kunt uitzetten.
+- **Sjabloon per documentsoort**: elk soort document volgt je factuurontwerp, en waar een soort moet afwijken geef je het een eigen sjabloon. De werkbon is het voorbeeld: hij volgt je factuurindeling of krijgt een eigen ontwerp, en een werkbon heeft geen afsluitende tekst.
 - **Tekstgrootte**: Klein, Normaal of Groot voor de tekst van je document. Koppen en je bedrijfsnaam houden hun maat.
+- **Eigen briefpapier**: laad het briefpapier van je drukker in, als PDF, PNG of JPG, de volledige A4-pagina in portret. Het ontwerp meet de ruimte die je ontwerp boven en onder nodig heeft en houdt die vrij, zodat niets over je eigen ontwerp heen valt; pas de maat aan als de meting ernaast zit. Staat je logo al in het briefpapier? Eén schakelaar laat het logo en de naam bovenin het document weg; je adres blijft altijd staan, want die is verplicht. Het briefpapier komt op de eerste pagina en de volgende pagina's houden hun gewone marges. Een tip zegt dat de meeste regels op één pagina passen met de indeling Klassiek of de dichtheid Compact; laat je huidige indeling te weinig ruimte over, dan zet de app je facturen op Klassiek en meldt dat, en onder Sjabloon zet je het terug.
 - **Teksten op je document**: de afsluitende tekst, klaar onder "Met dank" op elke nieuwe factuur (een offerte zonder eigen tekst krijgt de tekst van je facturen), en de betaalinstructie die bij Betaling staat op nieuwe facturen en op je betaalpagina, met {iban}, {bedrijf} en {factuurnummer} die vanzelf worden ingevuld.
 - **Voettekst**: de regel onderaan elk document, bijvoorbeeld je KVK-nummer of een bedankje.
 
@@ -45,7 +47,7 @@ Wijzigingen worden automatisch opgeslagen en zijn binnen een moment zichtbaar in
 
 ## Eén stijl voor alle documenten
 
-Het ontwerp geldt voor elke PDF die MyCompanyDesk voor je maakt: facturen, offertes en betalingsherinneringen. De kleuren die klanten zien op e-mails en de betaalpagina volgen dezelfde accentkleur. Je stelt het één keer in; elk documenttype blijft consistent.
+Het ontwerp geldt voor elke PDF die MyCompanyDesk voor je maakt: facturen, offertes, betalingsherinneringen en werkbommen. Elk soort document volgt je factuurontwerp; geef een soort een eigen sjabloon wanneer dat moet afwijken. De kleuren die klanten zien op e-mails en de betaalpagina volgen dezelfde accentkleur. Je stelt het één keer in; elk documenttype blijft consistent. Je briefpapier verschijnt overal waar het document verschijnt: in de PDF, in de weergave die je klant in het klantportaal ziet, en op de werkbon.
 
 ## Taal
 

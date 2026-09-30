@@ -38,6 +38,8 @@ Na het tekenen kan de werkbon niet meer worden gewijzigd. De handtekening, de na
 
 Van elke werkbon bestaat een PDF met de bezoekgegevens, de uren en materialen, de totalen en, als hij getekend is, de handtekening van de klant. Mail de getekende werkbon vanaf de werkbonpagina naar je klant: de pdf gaat automatisch als bijlage mee.
 
+De werkbon-PDF volgt standaard je [factuurontwerp](/settings/pdf), met dezelfde accentkleur, dezelfde letters en hetzelfde briefpapier. Wil je dat de werkbon er anders uitziet? Geef haar in het ontwerpsjabloon een eigen sjabloon; een werkbon heeft geen afsluitende tekst.
+
 ## Van werkbon naar factuur
 
 Van een getekende werkbon maak je met één klik een factuur. Die begint als concept met de uren en materialen al op de regels, en hij toont het bonnummer als verwijzing. Er hoort één factuur bij een werkbon; bestaat hij al, dan brengt de link op de werkbonpagina je er meteen heen. Controleer de conceptfactuur en verstuur hem zoals gewoonlijk.

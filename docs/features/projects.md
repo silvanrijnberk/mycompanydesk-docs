@@ -57,6 +57,16 @@ Dit is handig wanneer het contract het tarief bepaalt (uur-, dag- of vaste proje
 
 Als voor een contract geen tarief is ingesteld, blijven gekoppelde uren ongefactureerd en krijg je een melding dat ze niet konden worden geprijsd.
 
+## Automatisch factureren voor een project
+
+Een project kan zijn uren op een eigen ritme laten factureren. Op de projectpagina kies je hoe het gefactureerd wordt:
+
+- **Handmatig** (de standaard): die maak je zelf aan.
+- **Elke maand**: begin van de maand gaan de uren en doorbelaste kosten tot dan naar de klant op een factuur.
+- **Bij afronding**: alles wat nog open staat, gaat naar een eindfactuur zodra je het project afrondt.
+
+Je kunt het project ook een eigen factuur geven, los van de andere projecten van dezelfde klant. De pagina van de klant houdt het [volledige overzicht](/features/time-registration#automatisch-uren-factureren) bij: alle projecten van die klant, de uren zonder project, en hoe het versturen werkt.
+
 ## Budgetopvolging
 
 Als je een budget instelt:

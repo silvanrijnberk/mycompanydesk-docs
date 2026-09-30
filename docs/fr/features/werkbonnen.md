@@ -38,6 +38,8 @@ Une fois signé, le bon ne peut plus être modifié. La signature, le nom du sig
 
 Chaque bon dispose d'un PDF avec les détails de la visite, les heures et les fournitures, les totaux et, s'il est signé, la signature du client. Envoyez le bon signé à votre client depuis la page du bon : le PDF part automatiquement en pièce jointe.
 
+Le PDF du bon suit par défaut votre [design de facture](/fr/settings/pdf), avec la même couleur d'accent, les mêmes polices et le même papier à en-tête. Vous voulez que le bon ait un autre look ? Donnez-lui son propre modèle dans le studio ; un bon d'intervention n'a pas de texte de clôture.
+
 ## Du bon à la facture
 
 D'un bon signé, vous créez une facture en un clic. Elle commence comme brouillon avec les heures et les fournitures déjà sur les lignes, et elle affiche le numéro du bon comme référence. Une facture correspond à un bon ; si elle existe déjà, le lien sur la page du bon vous y conduit directement. Vérifiez le brouillon de facture et envoyez-le comme d'habitude.

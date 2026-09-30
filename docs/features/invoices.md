@@ -29,6 +29,10 @@ Elke nieuwe offerte krijgt automatisch een geldig-tot-datum op basis van deze in
 
 When enabled, a signed quote automatically becomes a draft invoice. The draft is ready for your review; you still choose when to send it.
 
+### Voorwaarden standaard meesturen
+
+Houd je jouw algemene voorwaarden in Documenten bij, dan kan elke verzending ze als PDF meesturen. Onder **Algemene voorwaarden** op dezelfde instellingenpagina stel je apart per soort in of het vinkje bij verzending standaard aan staat: offertes en facturen hebben elk een eigen schakelaar. Standaard gaan de voorwaarden mee bij offertes en niet bij facturen. Het vinkje zelf kun je bij elke verzending aanpassen.
+
 ### Invoice numbering
 
 MyCompanyDesk numbers invoices automatically in the order the Belastingdienst expects, unless you set a custom prefix or starting number.
@@ -134,7 +138,7 @@ Send the invoice to your customer via email. The email includes:
 
 Before sending, the email preview shows the message exactly as your customer will receive it. The send dialog has toggles for the **View button**, **Download button**, **PDF attachment**, **Invoice lines**, and, if you have online payments enabled, the **Confirm payment** button. These toggles are reflected in the live preview, so what you see is what your customer gets. Bericht elke keer weer bijgeschaafd? Vink in hetzelfde venster **Gebruik deze tekst voortaan voor facturen** aan, dan begint elke volgende factuurmail vanaf die versie. Zie [E-mailsjablonen](/faq/email-template).
 
-If your workspace has general terms in Documents, the email preview also shows an **Include general terms** toggle. For invoices this toggle is off by default. When enabled, the current terms PDF is attached to the email and the send is recorded as the provision event on the terms document.
+If your workspace has general terms in Documents, the email preview also shows an **Include general terms** toggle. Of het vinkje start staat bij de standaard die je onder [Voorwaarden standaard meesturen](#voorwaarden-standaard-meesturen) voor dit soort document hebt ingesteld (uit het hoofd: aan bij offertes, uit bij facturen). When enabled, the current terms PDF is attached to the email and the send is recorded as the provision event on the terms document.
 
 ### Send as Peppol e-invoice
 

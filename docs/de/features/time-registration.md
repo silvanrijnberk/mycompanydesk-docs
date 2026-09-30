@@ -1,7 +1,7 @@
 ---
 title: Zeitplan
 description: "Erfassen Sie Stunden, planen Sie Ihre Tage und machen Sie abrechenbare Zeit zu Rechnungen. Zeitplan verbindet Zeiterfassung mit Ihrem Kalender."
-last_verified: 2026-09-03
+last_verified: 2026-10-01
 ---
 
 # Zeitplan
@@ -68,7 +68,26 @@ Rechnungszeilen werden automatisch beschrieben: zuerst die Beschreibung des Eint
 
 ### Automatische Zeitabrechnung
 
-Automatisches Abrechnen konfigurieren Sie pro Kunde. Aktivieren Sie auf der Seite des Kunden **Auto-Rechnung**, um monatlich automatisch eine Rechnung für die erfassten Stunden dieses Kunden zu erstellen, auf Wunsch auch automatisch versendet. Die Rechnung wird als Entwurf erstellt und bleibt offen, damit Sie sie vor dem Versand noch prüfen können. Sie verwendet den Standard-Mehrwertsteuersatz Ihres Arbeitsbereichs und berücksichtigt Ihre KOR- oder Mehrwertsteuerbefreiungseinstellungen, genau wie manuell erstellte Rechnungen.
+Das automatische Abrechnen regeln Sie pro Projekt. Auf einer Projektseite wählen Sie, wie die Stunden dieses Projekts abgerechnet werden:
+
+- **Manuell** (die Voreinstellung): Diese Rechnung erstellen Sie selbst aus den Stunden des Projekts.
+- **Jeden Monat**: Am Ersten des Monats gehen die bis dahin erfassten Stunden, ergänzt um die weiterberechneten Ausgaben, in einer Rechnung an den Kunden des Projekts.
+- **Beim Abschluss**: Markieren Sie das Projekt als abgeschlossen, geht alles, was noch offen ist, in eine Schlussrechnung für den Kunden.
+
+Fällt das Projekt unter einen Vertrag, der selbst fakturiert, entscheidet dieser Vertrag, und die Projektseite sagt Ihnen das auch; einem solchen Projekt geben Sie keinen eigenen Rhythmus.
+
+Auf der Kundenseite bündelt die Karte **Automatische Abrechnung** alles: jedes Projekt dieses Kunden mit seiner Wahl, einen Schalter für Stunden ohne Projekt und Ihren Versandwunsch:
+
+- **Vorbereiten**: Die Rechnung wird für Sie erstellt, Sie erhalten eine Mitteilung und versenden sie selbst.
+- **Automatisch versenden**: Die Rechnung wird erstellt, Sie erhalten eine Mitteilung, und einen Tag später geht sie von selbst an den Kunden. Während dieses Tages können Sie sie noch zurückhalten; eine zurückgehaltene Rechnung bleibt einfach in der App liegen.
+
+Alles, was für denselben Kunden zum selben Moment fällig wird, landet auf einer Rechnung, es sei denn, ein Projekt möchte eine eigene. Stunden ohne Projekt schließen sich an die Monatsrechnung an, wenn der Schalter auf der Kundenkarte aktiv ist. Die erste automatische Rechnung versenden Sie am besten selbst, damit Sie einmal sehen, wie sie aussieht; die Karte wiederholt das bei der ersten Rechnung ebenfalls.
+
+Alles Ungewöhnliche hält den automatischen Versand zurück: ein Kunde ohne E-Mail-Adresse, Stunden ohne Satz, ein Betrag, der spürbar über den Vormonaten liegt, oder eine Rechnung, die mehrere Monate umfasst, weil das automatische Abrechnen eine Zeit still stand. Diese Rechnungen werden nur vorbereitet, und die Mitteilung sagt Ihnen, warum.
+
+Ausgaben fließen nur mit, wenn die Ausgabe selbst auf [dem Kunden weiterberechnen](/de/features/expenses#weiterberechnung-und-kostenänderungen) steht.
+
+Enthält Ihr Tarif das automatische Zeitabrechnen nicht, pausiert es, bis Ihr Tarif es wieder enthält; die Mitteilung sagt Ihnen das. Automatische Rechnungen verwenden den Standard-Mehrwertsteuersatz Ihres Arbeitsbereichs und berücksichtigen Ihre KOR- oder Mehrwertsteuerbefreiungseinstellungen, genau wie manuell erstellte Rechnungen.
 
 ## Massenaktionen
 

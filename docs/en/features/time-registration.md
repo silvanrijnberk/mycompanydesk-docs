@@ -1,7 +1,7 @@
 ---
 title: Schedule
 description: "Log hours, plan your days and turn billable time into invoices. Schedule puts time registration, your agenda and calendar suggestions in one place."
-last_verified: 2026-09-03
+last_verified: 2026-10-01
 ---
 
 # Schedule
@@ -68,7 +68,26 @@ Invoice lines are described automatically: the entry's own description is used f
 
 ### Automatic time invoicing
 
-Automatic invoicing is configured per customer. On the customer's page, enable **Auto-Invoice** to automatically create a monthly invoice for that customer's registered time, optionally sent automatically. The invoice is created as a draft and stays open so you can review it before it goes out. It uses your workspace's default VAT rate and respects your KOR or VAT-exemption settings, matching the VAT treatment of invoices you create manually.
+Automatic invoicing is decided per project. On a project page you choose how its hours are invoiced:
+
+- **Manual** (the default): you create the invoice yourself from the project's hours.
+- **Every month**: on the first day of the month, the hours logged up to then go on an invoice for the project's customer, together with the expenses charged to that customer.
+- **When the project is completed**: once you mark the project as completed, everything still open goes on a final invoice for the customer.
+
+If the project belongs to a contract that invoices on its own, the contract decides and the project page says so; you cannot give that project its own rhythm.
+
+On the customer's page, the **Automatic invoicing** card brings it all together: every project of that customer with its choice, a switch for hours without a project, and your sending preference:
+
+- **Prepare**: the invoice is created for you, you get a notification and you send it yourself.
+- **Send automatically**: the invoice is created, you get a notification, and it goes out to the customer by itself one day later. During that day you can still hold it back; held-back invoices stay ready in the app.
+
+Everything that falls due for the same customer on the same day lands on a single invoice, unless a project is set to put it on its own invoice. Hours without a project join the same monthly invoice when the switch on the customer card is on. The first automatic invoice is best sent yourself, so you have seen once what it looks like; the card tells you the same the first time round.
+
+Anything unusual holds the automatic send back: a customer without an email address, hours without a rate, an amount notably above the previous months, or an invoice that covers several months because automatic invoicing was paused. Those invoices are only prepared, and the notification tells you why.
+
+Expenses are only included when the expense itself is set to [charge to the customer](/en/features/expenses#rebilling-and-cost-price-changes).
+
+If your plan does not include automatic time invoicing, it stays paused; the notification tells you so. Automatic invoices use your workspace's default VAT rate and respect your KOR or VAT-exemption settings, matching the VAT treatment of invoices you create manually.
 
 ## Bulk actions
 

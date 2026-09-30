@@ -1,7 +1,7 @@
 ---
 title: "Notification settings"
 description: "To manage your notification settings: go to Settings > Meldingen (notifications), switch the notification topics on or off, and turn on push notifications."
-last_verified: 2026-09-30
+last_verified: 2026-10-01
 chatbot:
   triggers:
     - "notifications"
@@ -23,9 +23,9 @@ To manage your notification settings:
 1. Go to Settings → "Meldingen" (notifications)
 2. Switch the notification topics on or off. The categories are:
    - **On Monday, what needs doing this week**: the Monday email with the tasks from **Do now** on your dashboard. One email every Monday, only when there is something; when a task is urgent, a ping on your phone comes with it. The email goes to the workspace owner only, who is therefore the only one to see this switch. The switch is on by default; the unsubscribe link at the bottom of the email turns it off. As long as the separate weekly bank summary stays off (the default), the bank rows that still have to be matched are in this email too.
-   - **Invoice attention**: late invoices, invoices nearing their due date, drafts left untouched, failed direct debits, failed invoice deliveries, paused automatic contract invoicing and time entries without a rate.
+   - **Invoice attention**: late invoices, invoices nearing their due date, drafts left untouched, failed direct debits, failed invoice deliveries, paused automatic contract invoicing, automatically created hours invoices and what happens to them (ready, on the schedule to send, held back, or sent), and time entries without a rate.
    - **Money in**: payments, confirmed payments and unusual bank transactions.
-   - **Upcoming deadlines**: VAT, income tax, corporate tax, the KOR threshold, and contracts or projects that are about to expire. You get these well in advance so you are never late. This category also includes automated bookings that could not be made because the date falls in a VAT period that has already been filed and locked, such as a forwarded inbox invoice or a bank transaction. The notification names the supplier and invoice date and points you to the inbox or bank feed so you can book it in the current period or file a supplementary return.
+   - **Upcoming deadlines**: VAT, income tax, corporate tax, the KOR threshold, the yearly increases you planned on contracts (the week-ahead notice, an announcement email that failed, or a rise that did not go ahead), and contracts or projects that are about to expire. You get these well in advance so you are never late. This category also includes automated bookings that could not be made because the date falls in a VAT period that has already been filed and locked, such as a forwarded inbox invoice or a bank transaction. The notification names the supplier and invoice date and points you to the inbox or bank feed so you can book it in the current period or file a supplementary return.
    - **New opportunities**: quote requests, signed quotes and website sales.
    - **New inbox message**: a ping on your phone whenever a customer or supplier emails. Mail that lands in Spam notifies no one: no ping and no row in the notification list.
    - **Expense due**: upcoming due dates on expenses you created, such as scheduled rent or utility costs, so you can pay or record them on time.

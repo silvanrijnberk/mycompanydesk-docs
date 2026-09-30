@@ -133,6 +133,20 @@ You apply the rise per contract, never in bulk, so you can skip customers you ha
 Discuss any price rise with your customer before applying it. The preview changes nothing until you click **Apply** on a specific contract.
 :::
 
+### Automatische jährliche Erhöhung
+
+Ein Vertrag, der laut Vereinbarung jedes Jahr eine Erhöhung erhält, kann diese Erhöhung selbst ausführen. Öffnen Sie den Vertrag und richten Sie die automatische Erhöhung ein:
+
+- **Erhöhen um**: den Verbraucherpreisindex des CBS (VPI), oder einen festen Prozentsatz, den Sie selbst wählen.
+- **Jedes Jahr zum**: den Tag und Monat, an dem die Erhöhung jedes Jahr wirksam wird.
+- **Ankündigung**: Der Kunde oder Mieter erhält vorab eine E-Mail von Ihrem eigenen Postfach; Sie wählen, wie viele Monate im Voraus.
+
+Vorbereitung der App: es funktioniert bei einem laufenden Vertrag mit festem Betrag pro Zeitraum. Etwa eine Woche, bevor die Ankündigung fällig ist, erhalten Sie eine Benachrichtigung mit der geplanten Erhöhung, und mit einem Klick überspringen Sie dieses Jahr. Tun Sie nichts, passieren beide Schritte von selbst: Zuerst erhält der Kunde die Ankündigungsmail, und erst nachdem sie verschickt ist, ändert sich der Preis. Rechnungen für Zeiträume vor dem Gültigkeitsdatum behalten den alten Preis; Zeiträume ab dem Gültigkeitsdatum nutzen den neuen. Lässt sich die Ankündigung vor dem Gültigkeitsdatum nicht versenden, findet die Erhöhung nicht statt, und eine Benachrichtigung sagt Ihnen, warum.
+
+Eine manuelle Erhöhung mit einem zukünftigen Gültigkeitsdatum, angewendet über **Preise erhöhen** in der Vertragsliste, folgt demselben Zeitplan, jedoch ohne Ankündigungsmail.
+
+Sind automatische Erhöhungen nicht in Ihrem Abonnement enthalten, sagt Ihnen die Schaltfläche auf dem Vertrag das; anwenden können Sie die Erhöhung weiterhin manuell über **Preise erhöhen**.
+
 ## Linking to assets
 
 Contracts can be linked to [objects/assets](/en/features/objects) for rental management:

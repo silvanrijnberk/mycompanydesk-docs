@@ -155,7 +155,9 @@ Liez les dépenses à :
 
 ## Refacturation et changements de prix de revient
 
-Une dépense liée à un client peut être refacturée sur une facture. Le détail de la dépense affiche une ligne **Facture liée** dès qu'elle a été ajoutée à une facture, et un badge **Prix de revient modifié après facturation** si le prix de revient de la dépense a été modifié après l'envoi de la facture. Ce badge signifie que le montant de la facture ne correspond plus à la dépense sous-jacente ; ouvrez la facture ou modifiez la dépense pour les réaligner.
+Une dépense liée à un client peut être refacturée sur une facture. À cet effet, la dépense elle-même a un interrupteur **Refacturer au client** : les dépenses refacturées vont sur la prochaine facture du client et affichent **Déjà sur une facture** dès qu'elles sont sur une. La [facturation automatique du temps](/fr/features/time-registration#facturation-automatique-du-temps) n'inclut que les dépenses qui portent cet interrupteur.
+
+Le détail de la dépense affiche une ligne **Facture liée** dès qu'elle a été ajoutée à une facture, et un badge **Prix de revient modifié après facturation** si le prix de revient de la dépense a été modifié après l'envoi de la facture. Ce badge signifie que le montant de la facture ne correspond plus à la dépense sous-jacente ; ouvrez la facture ou modifiez la dépense pour les réaligner.
 
 ## Actions groupées
 

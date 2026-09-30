@@ -1,7 +1,7 @@
 ---
 title: Expenses
 description: "Track business expenses, scan receipts, manage categories with their own VAT defaults, and let depreciation schedules run for investments."
-last_verified: 2026-08-21
+last_verified: 2026-10-01
 ---
 
 # Expenses
@@ -150,7 +150,9 @@ Filters on the list cover category, project, customer, date range and status (ac
 
 ## Rebilling and cost-price changes
 
-When an expense is linked to a customer it can be rebilled on an invoice. The expense detail shows a **Linked invoice** line when it has been added to an invoice, and a warning badge **Cost changed after invoicing** when the expense's cost price was edited after the invoice was sent. That badge means the amount on the invoice no longer matches the underlying expense; open the invoice or edit the expense to bring them back in line.
+When an expense is linked to a customer it can be rebilled on an invoice. The expense detail has a **Charge to the customer** switch: flagged expenses land on the customer's next invoice, and show **Already on an invoice** once they are on one. [Automatic time invoicing](/en/features/time-registration#automatic-time-invoicing) only includes expenses that carry this flag.
+
+The expense detail shows a **Linked invoice** line when it has been added to an invoice, and a warning badge **Cost changed after invoicing** when the expense's cost price was edited after the invoice was sent. That badge means the amount on the invoice no longer matches the underlying expense; open the invoice or edit the expense to bring them back in line.
 
 ## Bulk actions
 

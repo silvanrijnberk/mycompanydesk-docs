@@ -57,6 +57,16 @@ Cela est utile quand le contrat définit le taux (taux horaire, taux journalier 
 
 Si aucun taux n'est défini pour un contrat, les heures liées restent non facturées et vous recevez une notification indiquant qu'elles n'ont pas pu être tarifées.
 
+## Facturation automatique d'un projet
+
+Un projet peut facturer ses heures à son propre rythme. Sur la page du projet, vous choisissez comment se fait la facturation :
+
+- **Manuel** (le réglage par défaut) : vous créez les factures vous-même.
+- **Chaque mois** : au début du mois, les heures et les dépenses refacturées jusque-là partent sur une facture pour le client.
+- **À l'achèvement** : tout ce qui reste ouvert part sur une facture finale dès que vous marquez le projet comme terminé.
+
+Vous pouvez aussi donner au projet sa propre facture, séparée des autres projets du même client. La page du client réunit la [vue d'ensemble complète](/fr/features/time-registration#facturation-automatique-du-temps) : tous les projets de ce client, les heures sans projet et la façon d'envoyer.
+
 ## Suivi du budget
 
 Si vous definissez un budget :

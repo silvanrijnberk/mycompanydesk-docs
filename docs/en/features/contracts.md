@@ -133,6 +133,20 @@ You apply the rise per contract, never in bulk, so you can skip customers you ha
 Discuss any price rise with your customer before applying it. The preview changes nothing until you click **Apply** on a specific contract.
 :::
 
+### Automatic yearly increases
+
+A contract that gets a yearly rise by agreement can carry that rise out itself. Open the contract and set up the automatic increase:
+
+- **Increase by**: the CPI (CBS) consumer price figure, or a fixed percentage you choose yourself.
+- **Every year on**: the day and month the increase takes effect each year.
+- **Announcement**: the client or tenant is emailed ahead of time from your own email address; you choose how many months in advance.
+
+The eligibility rule is the app's own: it works on a running contract with a fixed amount per period. Each year, about a week before the announcement is due, you get told what the planned increase adds up to, and you can skip this year with one click. Do nothing, and both steps happen on their own: the client gets the announcement email first, and the price only changes after that email went out. Invoices for periods before the start date keep the old price; periods from the start date on use the new one. If the announcement email cannot be sent before the start date, the increase does not go ahead and a notification tells you why.
+
+A manual increase with a future start date, applied from **Raise prices** on the contracts list, follows the same schedule but without an announcement email.
+
+If your plan does not include automatic increases, the button on the contract tells you so, and you can still apply the rise by hand with **Raise prices**.
+
 ## Linking to assets
 
 Contracts can be linked to [objects/assets](/en/features/objects) for rental management:
