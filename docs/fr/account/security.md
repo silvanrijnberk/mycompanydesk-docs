@@ -1,7 +1,7 @@
 ---
 title: Sécurité
 description: "Protégez votre compte avec un mot de passe solide, l'authentification à deux facteurs et un oeil sur vos sessions actives."
-last_verified: 2026-09-29
+last_verified: 2026-09-30
 ---
 
 # Sécurité
@@ -105,6 +105,8 @@ Sur un domaine dont MyCompanyDesk héberge la boîte mail, une passkey change la
 ## Sessions
 
 La carte des sessions dans **Paramètres > Connexion** propose une seule action : **Se déconnecter**, qui met fin à votre session actuelle. Il n'y a pas de liste des autres appareils ni de révocation par session. Si vous soupçonnez que quelqu'un d'autre a accès à votre compte, changez votre mot de passe. Changer ou réinitialiser votre mot de passe met fin à toutes les autres sessions de votre compte (l'appareil depuis lequel vous faites le changement reste connecté) et révoque les appareils de confiance qui sautent l'étape du code.
+
+Votre session suit votre usage : tant que vous continuez à utiliser MyCompanyDesk, elle se renouvelle d'elle-même et vous restez connecté. Après 30 jours sans utilisation, votre session prend fin, et une session ne dure jamais plus de 90 jours après votre connexion. En vous reconnectant, les deux délais repartent de zéro.
 
 ## Connexion via Google ou Microsoft
 
