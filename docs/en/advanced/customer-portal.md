@@ -15,7 +15,7 @@ When you send an invoice, a unique **payment link** is generated. When your cust
 2. **Download the PDF** - Get a copy of the invoice
 3. **Pay online** - Complete payment through the portal using the **Pay now** button
 4. **Confirm payment**: Acknowledge a bank transfer (not shown for credit notes, canceled invoices, or original invoices that have been fully credited, because none of these asks the customer for payment)
-5. **Add to my books**: set the invoice into their own MyCompanyDesk expenses (only shown for business customers on real, valid invoices)
+5. **Add to my books**: put the invoice into their own MyCompanyDesk expenses (only shown for business customers on real, valid invoices)
 
 Portal links open in the customer's web browser. Even when the MyCompanyDesk app is installed on the customer's phone, tapping an invoice link opens the browser, not the app.
 
@@ -77,7 +77,7 @@ An **Open Stripe Dashboard** button deep-links you to your Stripe payment-method
 
 ### Add the invoice to your books
 
-A business customer who uses MyCompanyDesk themselves can pull your invoice straight into their own expenses with the **Add to my books** button beside **Download PDF**. MyCompanyDesk imports the invoice as a draft expense in their workspace, with the amounts, the VAT and the PDF attached, and opens it ready for review. The button shows on real, valid invoices for business customers: quotes, credit notes, canceled invoices and invoices that are fully credited have nothing to book, so there is no button.
+A business customer who uses MyCompanyDesk themselves can pull your invoice straight into their own expenses with the **Add to my books** button beside **Download PDF**. MyCompanyDesk imports the invoice as a draft expense in their workspace, with the amounts, the VAT and the PDF attached, and opens it ready for review. The button appears on real, valid invoices for business customers: quotes, credit notes, canceled invoices and invoices that are fully credited have nothing to book, so there is no button.
 
 No account yet? The page shows what the invoice is, who sent it and for how much, beside **Create account** and **I already have an account**. After that step MyCompanyDesk resumes the import by itself, on that device, for up to a week (the browser keeps the pending import for seven days, see `apps/web/utils/pendingInvoiceImport.ts#MAX_AGE_MS`).
 

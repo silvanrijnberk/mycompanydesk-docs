@@ -71,7 +71,7 @@ Les lignes de facture sont décrites automatiquement : d'abord la description de
 La facturation automatique se règle par projet. Sur la page d'un projet, vous choisissez comment ses heures sont facturées :
 
 - **Manuel** (le réglage par défaut) : vous créez la facture vous-même à partir des heures du projet.
-- **À un jour fixe** (le réglage par défaut) : vous choisissez le rythme sur le projet : chaque semaine un jour de la semaine, ou chaque mois un jour du mois. Les heures enregistrées jusqu'à la précédente date de facturation incluses, plus les dépenses refacturées, partent sur une facture pour le client du projet. Le mois est facturé au jour choisi, jusqu'au 28, ou au dernier jour du mois, pour que les mois courts ne sautent jamais ; la règle vit dans `packages/shared/src/logic/billing-schedule.ts#isValidBillingSchedule`.
+- **À un jour fixe** (le réglage par défaut) : vous choisissez le rythme du projet : chaque semaine un jour de la semaine, ou chaque mois un jour du mois. Les heures enregistrées jusqu'à la précédente date de facturation incluse, plus les dépenses refacturées, partent sur une facture pour le client du projet. Le mois est facturé au jour choisi, jusqu'au 28, ou au dernier jour du mois, pour que les mois courts ne sautent jamais ; la règle vit dans `packages/shared/src/logic/billing-schedule.ts#isValidBillingSchedule`.
 - **À l'achèvement** : quand vous marquez le projet comme terminé, tout ce qui reste ouvert part sur une facture finale pour le client.
 
 Si le projet relève d'un contrat qui facture lui-même, c'est ce contrat qui décide, et la page du projet le dit ; un tel projet ne reçoit pas son propre rythme.

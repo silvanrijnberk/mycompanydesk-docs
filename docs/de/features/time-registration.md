@@ -71,7 +71,7 @@ Rechnungszeilen werden automatisch beschrieben: zuerst die Beschreibung des Eint
 Das automatische Abrechnen regeln Sie pro Projekt. Auf einer Projektseite wählen Sie, wie die Stunden dieses Projekts abgerechnet werden:
 
 - **Manuell** (die Voreinstellung): Diese Rechnung erstellen Sie selbst aus den Stunden des Projekts.
-- **An festem Tag** (die Voreinstellung): Sie wählen den Rhythmus am Projekt: jede Woche an einem Wochentag oder jeden Monat an einem Tag des Monats. Die Stunden, die bis einschließlich des vorigen Rechnungstags erfasst sind, gehen ergänzt um die weiterberechneten Ausgaben in einer Rechnung an den Kunden des Projekts. Der Monat rechnet am gewählten Tag ab, bis zum 28., oder am letzten Tag des Monats, damit kurze Monate nicht überspringen; die Regel steht in `packages/shared/src/logic/billing-schedule.ts#isValidBillingSchedule`.
+- **An festem Tag** (die Voreinstellung): Sie wählen den Rhythmus für das Projekt: jede Woche an einem Wochentag oder jeden Monat an einem Tag des Monats. Die Stunden, die bis einschließlich des vorigen Rechnungstags erfasst sind, gehen ergänzt um die weiterberechneten Ausgaben in einer Rechnung an den Kunden des Projekts. Der Monat rechnet am gewählten Tag ab, bis zum 28., oder am letzten Tag des Monats, damit kurze Monate nicht überspringen; die Regel steht in `packages/shared/src/logic/billing-schedule.ts#isValidBillingSchedule`.
 - **Beim Abschluss**: Markieren Sie das Projekt als abgeschlossen, geht alles, was noch offen ist, in eine Schlussrechnung für den Kunden.
 
 Fällt das Projekt unter einen Vertrag, der selbst fakturiert, entscheidet dieser Vertrag, und die Projektseite sagt Ihnen das auch; einem solchen Projekt geben Sie keinen eigenen Rhythmus.

@@ -77,7 +77,6 @@ Met de **Open Stripe Dashboard**-knop word je doorgelinkt naar je Stripe-betaalm
 
 ### De factuur in je eigen administratie
 
-
 Een zakelijke klant die zelf MyCompanyDesk gebruikt, kan jouw factuur met de knop **In mijn administratie**, naast **Download PDF**, meteen in de eigen uitgaven zetten. MyCompanyDesk importeert de factuur als concept-uitgave in die werkruimte, met de bedragen, de btw en de PDF erbij, en opent hem klaar om te controleren. De knop staat op echte, geldige facturen voor zakelijke klanten: offertes, creditnota's, ingetrokken facturen en volledig gecrediteerde facturen hebben niets te boeken, dus die krijgt geen knop.
 
 Heeft de klant nog geen account, dan laat de pagina zien welke factuur het is, wie hem stuurde en voor hoeveel, met **Account maken** en **Ik heb al een account** ernaast. Daarna pakt MyCompanyDesk de import vanzelf weer op, op hetzelfde apparaat, tot een week lang (de browser bewaart de wachtende import zeven dagen, zie `apps/web/utils/pendingInvoiceImport.ts#MAX_AGE_MS`).

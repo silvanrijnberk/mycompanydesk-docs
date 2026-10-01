@@ -22,7 +22,7 @@ Vous ne pouvez pas envoyer de rappel lorsque :
 - la facture est encore un brouillon
 - la facture est annulée
 - la facture est déjà marquée comme payée
-- le client a indiqué dans le portail qu'il a déjà payé et que le statut est Vérification requise ; les relances attendent que vous confirmiez le paiement ou que vous mettiez la déclaration de côté
+- le client a indiqué dans le portail qu'il a déjà payé et que le statut est Vérification requise ; les relances attendent que vous confirmiez le paiement ou la déclaration rejetée
 - il s'agit d'un avoir ou d'une note de remboursement
 - la facture a été entièrement créditée par un avoir
 - il ne reste plus rien à payer (par exemple, le client a payé pendant que la page était ouverte)
