@@ -304,6 +304,8 @@ When the feature is active:
 - The same invoice can never be turned into two drafts: a database-level deduplication guard blocks duplicates, even if the sender resends the email.
 - To protect your review queue, MyCompanyDesk limits each sender to at most ten drafts in your workspace per rolling 24-hour window. The cap is enforced in `apps/api/src/modules/invoices/network-delivery.service.js#NETWORK_DAILY_PAIR_CAP`.
 
+The second way in needs no settings: the customer portal carries an **Add to my books** button on the invoice itself, and the click is the opt-in. MyCompanyDesk books the draft in the receiver's workspace at that moment, without the switch above and without the daily cap, and it works whatever mailbox the invoice arrived at. Both entrances share the same deduplication guard, so an invoice that already arrived automatically is never booked a second time. See [Customer portal](/en/advanced/customer-portal#add-the-invoice-to-your-books) for the button and the account step.
+
 The feature is free on both sides. It only works when the supplier emails the invoice to a mailbox that MyCompanyDesk hosts for you. If you prefer a network-based channel, you can also receive supplier invoices through [Peppol e-invoicing](/en/features/peppol).
 
 ## Tips

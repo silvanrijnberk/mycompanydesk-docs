@@ -306,6 +306,8 @@ When the feature is active:
 - The same invoice can never be turned into two drafts: a database-level deduplication guard blocks duplicates, even if the sender resends the email.
 - To protect your review queue, MyCompanyDesk limits each sender to at most ten drafts in your workspace per rolling 24-hour window. The cap is enforced in `apps/api/src/modules/invoices/network-delivery.service.js#NETWORK_DAILY_PAIR_CAP`.
 
+La deuxième entrée ne demande aucun réglage : le portail client porte un bouton **Ajouter à ma comptabilité** sur la facture elle-même, et le clic vaut consentement. MyCompanyDesk comptabilise la provisoire dans l'espace de travail du destinataire à ce moment-là, sans l'interrupteur ci-dessus et sans la limite quotidienne, et cela marche quel que soit le boîte où la facture est arrivée. Les deux entrées partagent la même déduplication, ainsi une facture déjà arrivée automatiquement n'est jamais comptabilisée une seconde fois. Le bouton lui-même est décrit dans [le portail client](/fr/advanced/customer-portal#la-facture-dans-votre-propre-comptabilite).
+
 The feature is free on both sides. It only works when the supplier emails the invoice to a mailbox that MyCompanyDesk hosts for you. If you prefer a network-based channel, you can also receive supplier invoices through [Peppol e-invoicing](/en/features/peppol).
 
 ## Tips

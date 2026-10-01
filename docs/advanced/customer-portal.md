@@ -15,6 +15,7 @@ Wanneer je een factuur verstuurt, wordt een unieke **betaallink** gegenereerd. J
 2. **De PDF downloaden** - Een kopie van de factuur krijgen
 3. **Online betalen** - De betaling voltooien via het portaal via de knop **Nu betalen**
 4. **Betaling bevestigen**: Een bankoverschrijving bevestigen (niet zichtbaar voor creditnota's, ingetrokken facturen of originele facturen die volledig zijn gecrediteerd, omdat de klant in geen van deze gevallen nog iets hoeft te betalen)
+5. **In mijn administratie**: de factuur in de eigen MyCompanyDesk-uitgaven zetten (alleen zichtbaar voor zakelijke klanten op een echte, geldige factuur)
 
 Portaallinks openen in de browser van je klant. Zit de MyCompanyDesk-app op zijn telefoon, dan opent een tik op de factuurlink alsnog de browser, niet de app.
 
@@ -73,6 +74,15 @@ Zodra Stripe is gekoppeld, krijg je een **Betaalknop op facturen**-schakelaar in
 Onder de schakelaar staat een **Betaalmethoden**-sectie die elke ondersteunde betaalmethode toont, afgestemd op de capabilities van je Stripe-account (card, iDEAL, Bancontact, SEPA Direct Debit, PayPal, Klarna en Link by Stripe). Standaard kiest Stripe Checkout automatisch de juiste methode per klant. Vink specifieke methoden aan om te beperken wat klanten zien, alleen die verschijnen bij het afrekenen. Haal alle vinkjes weg om terug te gaan naar automatische selectie.
 
 Met de **Open Stripe Dashboard**-knop word je doorgelinkt naar je Stripe-betaalmethode-instellingen, zodat je je integratie kunt verifieren en betalingen rechtstreeks in Stripe kunt testen.
+
+### De factuur in je eigen administratie
+
+
+Een zakelijke klant die zelf MyCompanyDesk gebruikt, kan jouw factuur met de knop **In mijn administratie**, naast **Download PDF**, meteen in de eigen uitgaven zetten. MyCompanyDesk importeert de factuur als concept-uitgave in die werkruimte, met de bedragen, de btw en de PDF erbij, en opent hem klaar om te controleren. De knop staat op echte, geldige facturen voor zakelijke klanten: offertes, creditnota's, ingetrokken facturen en volledig gecrediteerde facturen hebben niets te boeken, dus die krijgt geen knop.
+
+Heeft de klant nog geen account, dan laat de pagina zien welke factuur het is, wie hem stuurde en voor hoeveel, met **Account maken** en **Ik heb al een account** ernaast. Daarna pakt MyCompanyDesk de import vanzelf weer op, op hetzelfde apparaat, tot een week lang (de browser bewaart de wachtende import zeven dagen, zie `apps/web/utils/pendingInvoiceImport.ts#MAX_AGE_MS`).
+
+De import deelt de ontdubbeling met facturen die vanzelf aankomen (zie [Facturen ontvangen van andere MyCompanyDesk-gebruikers](/features/invoices#receiving-invoices-from-other-mycompanydesk-users)), zodat dezelfde factuur nooit twee keer geboekt wordt. Op je eigen factuur lees je het terug: **Klant heeft de factuur in de eigen administratie gezet**.
 
 ### Offertes en contracten
 
@@ -139,6 +149,7 @@ MyCompanyDesk houdt klantinteracties met het portaal bij:
 - Wanneer ze de PDF downloaden
 - Wanneer ze een betaling initiëren
 - Wanneer de betaling is bevestigd
+- Wanneer de klant de factuur in de eigen administratie zet
 
 Dit helpt je om klantbetrokkenheid te begrijpen en effectief op te volgen.
 

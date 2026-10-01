@@ -71,7 +71,7 @@ Invoice lines are described automatically: the entry's own description is used f
 Automatic invoicing is decided per project. On a project page you choose how its hours are invoiced:
 
 - **Manual** (the default): you create the invoice yourself from the project's hours.
-- **Every month**: on the first day of the month, the hours logged up to then go on an invoice for the project's customer, together with the expenses charged to that customer.
+- **On a fixed day** (the default): you pick the rhythm on the project: every week on a weekday, or every month on a day of the month. The hours logged up to and including the previous invoice day go on an invoice for the project's customer, together with the expenses charged to that customer. A month is invoiced on the day you picked, up to the 28th, or on the last day of the month, so short months never skip; the rule lives in `packages/shared/src/logic/billing-schedule.ts#isValidBillingSchedule`.
 - **When the project is completed**: once you mark the project as completed, everything still open goes on a final invoice for the customer.
 
 If the project belongs to a contract that invoices on its own, the contract decides and the project page says so; you cannot give that project its own rhythm.
@@ -81,9 +81,9 @@ On the customer's page, the **Automatic invoicing** card brings it all together:
 - **Prepare**: the invoice is created for you, you get a notification and you send it yourself.
 - **Send automatically**: the invoice is created, you get a notification, and it goes out to the customer by itself one day later. During that day you can still hold it back; held-back invoices stay ready in the app.
 
-Everything that falls due for the same customer on the same day lands on a single invoice, unless a project is set to put it on its own invoice. Hours without a project join the same monthly invoice when the switch on the customer card is on. The first automatic invoice is best sent yourself, so you have seen once what it looks like; the card tells you the same the first time round.
+Everything that falls due for the same customer on the same day lands on a single invoice, unless a project is set to put it on its own invoice. Hours without a project join the same invoice when the switch on the customer card is on; the card sets their day with the same picker the projects use. The first automatic invoice is best sent yourself, so you have seen once what it looks like; the card tells you the same the first time round.
 
-Anything unusual holds the automatic send back: a customer without an email address, hours without a rate, an amount notably above the previous months, or an invoice that covers several months because automatic invoicing was paused. Those invoices are only prepared, and the notification tells you why.
+Anything unusual holds the automatic send back: a customer without an email address, hours without a rate, an amount notably above the previous months, or an invoice that covers a longer stretch because automatic invoicing was paused. Those invoices are only prepared, and the notification tells you why.
 
 Expenses are only included when the expense itself is set to [charge to the customer](/en/features/expenses#rebilling-and-cost-price-changes).
 

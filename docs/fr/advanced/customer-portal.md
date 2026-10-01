@@ -15,6 +15,7 @@ Lorsque vous envoyez une facture, un **lien de paiement** unique est généré. 
 2. **Télécharger le PDF** - Obtenir une copie de la facture
 3. **Payer en ligne** - Effectuer le paiement via le portail avec le bouton **Payer maintenant**
 4. **Confirmer le paiement** - Attester d'un virement bancaire (non visible pour les avoirs, les factures annulées ou les factures d'origine entièrement créditées, car le client n'a dans aucun de ces cas rien à payer)
+5. **Ajouter à ma comptabilité** : mettre la facture dans ses propres dépenses MyCompanyDesk (visible seulement pour les clients professionnels sur une vraie facture valide)
 
 Les liens du portail s'ouvrent dans le navigateur du client. Même si le client a l'appli MyCompanyDesk installée sur son téléphone, toucher le lien d'une facture ouvre le navigateur, pas l'appli.
 
@@ -73,6 +74,14 @@ Une fois Stripe connecté, vous obtenez un interrupteur **Betaalknop op facturen
 Sous l'interrupteur se trouve une section **Betaalmethoden** listant chaque méthode de paiement prise en charge, croisée avec les capacités de votre compte Stripe (carte, iDEAL, Bancontact, prélèvement SEPA, PayPal, Klarna et Link by Stripe). Par défaut, Stripe Checkout choisit automatiquement la bonne méthode par client. Cochez des méthodes spécifiques pour restreindre ce que les clients voient, seules celles-ci apparaissent au checkout. Décochez tout pour revenir à la sélection automatique.
 
 Le bouton **Open Stripe Dashboard** vous redirige directement vers vos paramètres de méthodes de paiement Stripe, afin que vous puissiez vérifier votre intégration et tester les paiements directement dans Stripe.
+
+### La facture dans votre propre comptabilité
+
+Un client professionnel qui utilise lui-même MyCompanyDesk peut tirer votre facture directement dans ses propres dépenses avec le bouton **Ajouter à ma comptabilité**, à côté de **Télécharger le PDF**. MyCompanyDesk importe la facture comme dépense provisoire dans cet espace de travail, avec les montants, la TVA et le PDF joint, et l'ouvre prête à vérifier. Le bouton apparaît sur des vraies factures valides pour des clients professionnels : devis, avoirs, factures annulées et factures entièrement créditées n'ont rien à comptabiliser, donc pas de bouton.
+
+Pas encore de compte ? La page montre quelle facture c'est, qui l'a envoyée et pour combien, avec **Créer un compte** et **J'ai déjà un compte** à côté. Ensuite, MyCompanyDesk reprend l'import tout seul, sur cet appareil, pendant une semaine au plus (le navigateur garde l'import en attente sept jours, voir `apps/web/utils/pendingInvoiceImport.ts#MAX_AGE_MS`).
+
+L'import partage la même déduplication que les factures qui arrivent par la voie automatique (voir [Receiving invoices from other MyCompanyDesk users](/fr/features/invoices#receiving-invoices-from-other-mycompanydesk-users)), pour que la même facture ne soit jamais comptabilisée deux fois. Sur votre propre facture, vous relisez ce qui s'est passé : **Le client a ajouté la facture à sa propre comptabilité**.
 
 ### Devis et contrats
 
@@ -139,6 +148,7 @@ MyCompanyDesk suit les interactions des clients avec le portail :
 - Quand il télécharge le PDF
 - Quand il initie un paiement
 - Quand le paiement est confirmé
+- Quand le client ajoute la facture dans sa propre comptabilité
 
 Cela vous aide à comprendre l'engagement de vos clients et à effectuer des relances efficacement.
 
