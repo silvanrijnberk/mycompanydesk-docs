@@ -1,7 +1,7 @@
 ---
 title: "Zahlungsmethoden"
 description: "So verwalten Sie Zahlungsmethoden auf Dokumenten: gehen Sie zu Einstellungen und öffnen Sie Zahlung."
-last_verified: 2026-07-22
+last_verified: 2026-10-01
 chatbot:
   triggers:
     - "payment methods"
@@ -44,7 +44,7 @@ Mollie unterstützt iDEAL, Bancontact, Kreditkarte und Banküberweisung, ideal f
 
 ## Online-Zahlungsgebühr bei Desk
 
-Bei Desk kann für Online-Rechnungszahlungen eine kleine Servicegebühr anfallen. Bezahlt ein Kunde eine Rechnung online über Ihr Mollie- oder Stripe-Konto, wird die Gebühr pro Zahlung von der Auszahlung einbehalten. Bei Office fällt sie nie an. Die App zeigt die Gebühr neben **Online betalingen** auf `/settings/betalen` an, solange Ihr Arbeitsbereich auf Desk ist.
+Bei Desk zahlen Sie 0,50 EUR inkl. MwSt. pro online bezahlter Rechnung ab 5 EUR, zusätzlich zu den Kosten von Mollie oder Stripe. Bezahlt ein Kunde eine Rechnung online über Ihr Mollie- oder Stripe-Konto, wird die Gebühr pro Zahlung von der Auszahlung einbehalten. Bei Office fällt sie nie an. Die App zeigt die Gebühr neben **Online betalingen** auf `/settings/betalen` an, solange Ihr Arbeitsbereich auf Desk ist.
 
 Zum Trennen klicken Sie auf **Loskoppelen** auf der entsprechenden Karte. Wenn in den letzten 24 Stunden Zahlungen eingegangen sind, erscheint eine Warnung, dass möglicherweise noch ausstehende Webhooks eintreffen und dass Rückzahlungen für diese Zahlungen manuell bearbeitet werden müssen. Nach der Trennung können Kunden nicht mehr über diesen Anbieter bezahlen.
 

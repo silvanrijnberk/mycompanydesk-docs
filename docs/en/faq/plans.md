@@ -1,7 +1,7 @@
 ---
 title: "Plans and pricing"
 description: "MyCompanyDesk has two plans: Desk and Office. Desk is free and stays free."
-last_verified: 2026-07-22
+last_verified: 2026-10-01
 chatbot:
   triggers:
     - "plans"

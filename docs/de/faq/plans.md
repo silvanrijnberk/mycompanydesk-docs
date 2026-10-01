@@ -1,7 +1,7 @@
 ---
 title: "Tarife und Preise"
 description: "MyCompanyDesk gibt es in zwei Tarifen: Desk und Office. Desk ist kostenlos und bleibt kostenlos."
-last_verified: 2026-07-22
+last_verified: 2026-10-01
 chatbot:
   triggers:
     - "tarife"

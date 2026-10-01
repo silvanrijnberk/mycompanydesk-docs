@@ -29,11 +29,11 @@ MyCompanyDesk propose deux formules : **Desk** et **Office**. Desk est gratuit, 
 | **Desk** | 0,00 EUR | 0,00 EUR | Facturation, devis et dépenses illimités, projets et saisie de temps, plus votre propre site sur mycompanydesk.site |
 | **Office** | 12,99 EUR | 129,90 EUR | Tout Desk plus l'automatisation et des services en plus : connexion bancaire, domaine personnel, boîte mail professionnelle, factures récurrentes, comptabilité complète, accès équipe, API et plus |
 
-Tous les prix s'entendent hors TVA néerlandaise de 21%, ajoutée lors du paiement. L'application affiche les prix avec la mention « excl. btw » (hors TVA) ; en tant qu'entreprise, vous récupérez cette TVA comme taxe déductible. Le prix annuel équivaut à dix paiements mensuels, payer à l'année vous offre donc deux mois gratuits.
+Tous les prix s'entendent hors TVA néerlandaise de 21%, ajoutée lors du paiement. L'application affiche les prix avec la mention « excl. btw » (hors TVA) ; en tant qu'entreprise, vous récupérez cette TVA comme taxe déductible. Le prix annuel équivaut à dix paiements mensuels, payer à l'année vous offre donc deux mois gratuits. L'exception est le montant de 0,50 € par facture payée en ligne sur Desk : il est indiqué TTC.
 
 **Première année plus avantageuse :** si vous payez Office à l'année et que votre espace de travail n'a encore jamais payé, la première année coûte 35,88 EUR (2,99 EUR par mois). Ensuite, vous payez 129,90 EUR par an. Pas satisfait après votre premier paiement ? Vous êtes remboursé dans les 14 jours.
 
-Paiements en ligne : lorsqu'un client règle une facture en ligne via Mollie ou Stripe, Desk peut appliquer de petits frais de service par paiement. Vous les voyez dans l'application, à côté de la connexion de paiement. Avec Office, vous ne les payez pas.
+Paiements en ligne : sur Desk, vous payez 0,50 € TTC par facture payée en ligne de 5 € ou plus, en plus des frais de Mollie ou Stripe. Avec Office, vous ne payez pas cela.
 
 ### Ce que chaque formule inclut
 
@@ -49,6 +49,7 @@ Fonctionnalités avec limites d'utilisation (limites mensuelles, sauf indication
 | Domaines personnalisés | 0 | 5 |
 | Messages de chat IA (mensuel) | 10 | 1 000 |
 | Scans de reçus IA (mensuel) | 3 | 200 |
+| Suggestions IA (mensuel) | 10 | 2 000 |
 | Connexions bancaires | 0 | 3 |
 
 Remarque : les limites IA sont mensuelles, et non quotidiennes. Elles sont réinitialisées le premier de chaque mois civil.
@@ -122,7 +123,7 @@ L'accès équipe est inclus dans Office sans frais par personne : invitez autant
 
 Les entreprises supplémentaires demandent Office. Votre abonnement couvre votre espace de travail principal ; chaque entreprise supplémentaire que vous ajoutez est facturée au prix affiché avant confirmation.
 
-L'entreprise supplémentaire commence par sa propre période d'essai Office. Pendant l'essai, elle ne coûte rien ; après l'essai, elle est ajoutée à votre abonnement au tarif affiché.
+L'entreprise supplémentaire suit l'abonnement de votre espace de travail principal. Si vous êtes encore dans votre propre période d'essai Office, elle ne coûte rien ; ensuite elle est ajoutée à votre abonnement au tarif affiché.
 
 Si votre espace de travail dispose d'un Office gratuit dans le cadre d'une disposition telle qu'un plan comped ou founding member, il n'y a pas d'abonnement auquel rattacher l'entreprise supplémentaire. Vous l'achetez donc via un paiement dédié add-on. La première entreprise reste gratuite ; seule l'entreprise supplémentaire est facturée. Vous pouvez désactiver une entreprise à tout moment ; elle ne compte alors plus dans votre abonnement ou add-on, tout en restant lisible et exportable pour la durée légale de conservation.
 

@@ -1,7 +1,7 @@
 ---
 title: "Betaalmethoden"
 description: "Om betaalmethoden op documenten te beheren: ga naar Instellingen en open Betalen."
-last_verified: 2026-07-22
+last_verified: 2026-10-01
 chatbot:
   triggers:
     - "payment methods"
@@ -44,7 +44,7 @@ Mollie ondersteunt iDEAL, Bancontact, creditcard en bankoverboeking, ideaal voor
 
 ## Online-betalingstarief op Desk
 
-Op Desk kan er een kleine servicevergoeding gelden voor online factuurbetalingen. Betaalt een klant een factuur online via je Mollie- of Stripe-account, dan wordt die vergoeding per betaling van de uitbetaling ingehouden. Op Office is dat nooit zo. De app toont de vergoeding naast **Online betalingen** op `/settings/betalen` zolang je werkruimte op Desk zit.
+Op Desk betaal je € 0,50 incl. btw per online betaalde factuur van € 5 of meer, bovenop de kosten van Mollie of Stripe. Betaalt een klant een factuur online via je Mollie- of Stripe-account, dan wordt die vergoeding per betaling van de uitbetaling ingehouden. Op Office is dat nooit zo. De app toont de vergoeding naast **Online betalingen** op `/settings/betalen` zolang je werkruimte op Desk zit.
 
 Loskoppelen doe je met **Loskoppelen** op de betreffende kaart. Als er in de afgelopen 24 uur betalingen zijn geweest, krijg je een waarschuwing dat er mogelijk nog openstaande webhooks binnenkomen en dat je terugbetalingen voor die betalingen handmatig moet verwerken. Na het loskoppelen kunnen klanten niet meer via die verwerker betalen.
 

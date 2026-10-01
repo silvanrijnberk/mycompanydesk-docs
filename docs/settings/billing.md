@@ -29,11 +29,11 @@ MyCompanyDesk heeft twee abonnementen: **Desk** en **Office**. Desk is gratis, z
 | **Desk** | € 0,00 | € 0,00 | Onbeperkt factureren, offertes en uitgaven, projecten en uren, plus je eigen website op mycompanydesk.site |
 | **Office** | € 12,99 | € 129,90 | Alles van Desk plus automatisering en extra diensten: bankkoppeling, eigen domein, zakelijke inbox, terugkerende facturen, volledige boekhouding, teamtoegang, API en meer |
 
-Alle prijzen zijn exclusief 21% btw, die bij het afrekenen wordt toegevoegd. De app toont prijzen als "excl. btw"; als ondernemer vorder je deze btw terug als voorbelasting. De jaarprijs staat gelijk aan tien maandbetalingen, dus jaarlijks betalen geeft je twee maanden gratis.
+Alle prijzen zijn exclusief 21% btw, die bij het afrekenen wordt toegevoegd. De app toont prijzen als "excl. btw"; als ondernemer vorder je deze btw terug als voorbelasting. De jaarprijs staat gelijk aan tien maandbetalingen, dus jaarlijks betalen geeft je twee maanden gratis. Een uitzondering is de € 0,50 per online betaalde factuur op Desk: dat bedrag is inclusief btw.
 
 **Eerste jaar voordeliger:** betaal je Office jaarlijks en heeft je werkruimte nog nooit eerder betaald, dan kost het eerste jaar € 35,88 (€ 2,99 per maand). Daarna betaal je € 129,90 per jaar. Niet tevreden na je eerste betaling? Binnen 14 dagen krijg je je geld terug.
 
-Online betalingen: als een klant een factuur online betaalt via Mollie of Stripe, kan op Desk een kleine servicevergoeding per betaling gelden. Die zie je in de app bij de betaalkoppeling. Op Office betaal je die niet.
+Online betalingen: op Desk betaal je € 0,50 incl. btw per online betaalde factuur van € 5 of meer, bovenop de kosten van Mollie of Stripe. Op Office betaal je dit niet.
 
 ### Wat elk abonnement bevat
 
@@ -49,6 +49,7 @@ Functies met verbruikslimieten (maandelijkse limieten, tenzij anders aangegeven)
 | Eigen domeinen | 0 | 5 |
 | AI-chatberichten (maandelijks) | 10 | 1 000 |
 | AI-bonscans (maandelijks) | 3 | 200 |
+| AI-suggesties (maandelijks) | 10 | 2 000 |
 | Bankkoppelingen | 0 | 3 |
 
 Let op: AI-limieten zijn maandelijks, niet dagelijks. Ze worden gereset op de eerste van elke kalendermaand.
@@ -122,7 +123,7 @@ Teamtoegang is inbegrepen in Office zonder kosten per persoon: nodig zoveel meew
 
 Extra eigen bedrijven vragen Office. Je abonnement dekt je hoofdwerkruimte; elk extra bedrijf dat je toevoegt, wordt tegen de prijs afgerekend die vooraf wordt getoond.
 
-Het extra bedrijf begint met een eigen Office-proefperiode. Tijdens de proefperiode kost het niets; daarna wordt het tegen het getoonde tarief op je abonnement gezet.
+Het extra bedrijf volgt het abonnement van je hoofdwerkruimte. Zit je zelf nog in je Office-proefperiode, dan betaal je er niets voor; daarna komt het tegen het getoonde tarief op je abonnement.
 
 Als je werkruimte gratis Office heeft via een regeling zoals een gunst of founding-member-plan, is er geen abonnement om het extra bedrijf aan vast te maken. Je koopt het daarom via een aparte add-on-only checkout. Je eerste bedrijf blijft gratis; alleen het extra bedrijf wordt gefactureerd. Je kunt een bedrijf op elk moment deactiveren; dan telt het niet meer mee voor je abonnement of add-on, terwijl het leesbaar en exporteerbaar blijft voor de wettelijke bewaartermijn.
 

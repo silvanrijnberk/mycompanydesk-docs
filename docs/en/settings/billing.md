@@ -29,11 +29,11 @@ MyCompanyDesk has two plans: **Desk** and **Office**. Desk is free, needs no cre
 | **Desk** | €0.00 | €0.00 | Unlimited invoicing, quotes and expenses, projects and time registration, plus your own website on mycompanydesk.site |
 | **Office** | €12.99 | €129.90 | Everything in Desk plus automation and extra services: bank connection, own domain, business inbox, recurring invoices, full bookkeeping, team access, API and more |
 
-All prices exclude 21% Dutch VAT, which is added at checkout. The app labels prices "excl. btw"; as a business you reclaim this VAT as input tax. The yearly price equals ten monthly payments, so paying yearly gives you two months free.
+All prices exclude 21% Dutch VAT, which is added at checkout. The app labels prices "excl. btw"; as a business you reclaim this VAT as input tax. The yearly price equals ten monthly payments, so paying yearly gives you two months free. The one exception is the €0.50 per invoice paid online on Desk: that amount includes VAT.
 
 **Cheaper first year:** if you pay for Office yearly and your workspace has never paid before, the first year costs €35.88 (€2.99 per month). After that you pay €129.90 per year. Not happy after your first payment? You get your money back within 14 days.
 
-Online payments: when a customer pays an invoice online via Mollie or Stripe, Desk can carry a small service fee per payment. You see it in the app next to the payment connection. On Office you do not pay it.
+Online payments: on Desk you pay €0.50 incl. VAT per invoice paid online of €5 or more, on top of the costs of Mollie or Stripe. On Office you do not pay this.
 
 ### What each plan includes
 
@@ -49,6 +49,7 @@ Quota-limited features (monthly caps, except where noted):
 | Custom domains | 0 | 5 |
 | AI chat messages (monthly) | 10 | 1 000 |
 | AI receipt scans (monthly) | 3 | 200 |
+| AI suggestions (monthly) | 10 | 2 000 |
 | Bank connections | 0 | 3 |
 
 Note: AI caps are monthly, not daily. They reset on the first of each calendar month.
@@ -122,7 +123,7 @@ Team access is included in Office with no per-person charge: invite as many work
 
 Extra businesses of your own need Office. Your subscription covers your home workspace; each additional business you add is billed at the price shown before you confirm.
 
-The extra business starts on its own Office trial. During the trial it costs nothing; after the trial it is added to your subscription at the displayed price.
+The extra business follows the subscription of your main workspace. If you are still in your own Office trial, it costs nothing; after that it is added to your subscription at the displayed price.
 
 If your workspace holds free Office under an arrangement like a comped or founding-member plan, there is no plan subscription to attach the extra business to, so you buy it through a separate add-on-only checkout. The first business stays free; only the extra business is billed. You can deactivate a business at any time; it then stops counting toward your subscription or add-on while remaining readable and exportable for the statutory retention period.
 

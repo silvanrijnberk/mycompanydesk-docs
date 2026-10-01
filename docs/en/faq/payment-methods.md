@@ -1,7 +1,7 @@
 ---
 title: "Payment methods"
 description: "To configure payment methods on documents: go to Settings and open Betalen."
-last_verified: 2026-07-22
+last_verified: 2026-10-01
 chatbot:
   triggers:
     - "payment methods"
@@ -44,7 +44,7 @@ Mollie supports iDEAL, Bancontact, credit card, and bank transfer, ideal for Dut
 
 ## Online payment fees on Desk
 
-On Desk, online invoice payments can carry a small service fee. When a customer pays an invoice online through your Mollie or Stripe account, the fee is held back from the payout for each payment. On Office there is never a fee. The app shows the fee next to **Online betalingen** on `/settings/betalen` while your workspace is on Desk.
+On Desk you pay €0.50 incl. VAT per invoice paid online of €5 or more, on top of the costs of Mollie or Stripe. When a customer pays an invoice online through your Mollie or Stripe account, the fee is held back from the payout for each payment. On Office there is never a fee. The app shows the fee next to **Online betalingen** on `/settings/betalen` while your workspace is on Desk.
 
 To disconnect, click **Loskoppelen** on the relevant card. If there are payments from the last 24 hours, a warning appears reminding you that pending webhooks may still arrive and that refunds for those payments must be handled manually. After disconnecting, customers can no longer pay via that processor.
 

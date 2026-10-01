@@ -29,11 +29,11 @@ MyCompanyDesk hat zwei Tarife: **Desk** und **Office**. Desk ist kostenlos, brau
 | **Desk** | 0,00 EUR | 0,00 EUR | Unbegrenzt Rechnungen, Angebote und Ausgaben, Projekte und Zeiterfassung, plus Ihre eigene Website auf mycompanydesk.site |
 | **Office** | 12,99 EUR | 129,90 EUR | Alles aus Desk plus Automatisierung und zusätzliche Dienste: Bankverbindung, eigene Domain, geschäftliche Inbox, wiederkehrende Rechnungen, vollständige Buchhaltung, Teamzugang, API und mehr |
 
-Alle Preise verstehen sich zuzüglich 21% niederländischer Mehrwertsteuer, die beim Checkout hinzugefügt wird. Die App kennzeichnet Preise mit "excl. btw" (exkl. MwSt.); als Unternehmen holen Sie sich diese Steuer als Vorsteuer zurück. Der Jahrespreis entspricht zehn Monatszahlungen, jährliche Zahlung schenkt Ihnen also zwei Monate.
+Alle Preise verstehen sich zuzüglich 21% niederländischer Mehrwertsteuer, die beim Checkout hinzugefügt wird. Die App kennzeichnet Preise mit "excl. btw" (exkl. MwSt.); als Unternehmen holen Sie sich diese Steuer als Vorsteuer zurück. Der Jahrespreis entspricht zehn Monatszahlungen, jährliche Zahlung schenkt Ihnen also zwei Monate. Die Ausnahme sind die 0,50 EUR pro online bezahlter Rechnung bei Desk: Dieser Betrag enthält die MwSt.
 
 **Günstigeres erstes Jahr:** Zahlen Sie Office jährlich und hat Ihr Arbeitsbereich noch nie gezahlt, kostet das erste Jahr 35,88 EUR (2,99 EUR pro Monat). Danach zahlen Sie 129,90 EUR pro Jahr. Nach Ihrer ersten Zahlung nicht zufrieden? Innerhalb von 14 Tagen erhalten Sie Ihr Geld zurück.
 
-Online-Zahlungen: Wenn ein Kunde eine Rechnung online über Mollie oder Stripe bezahlt, kann bei Desk pro Zahlung eine kleine Servicegebühr anfallen. Sie sehen sie in der App neben der Zahlungsanbindung. Bei Office zahlen Sie sie nicht.
+Online-Zahlungen: Bei Desk zahlen Sie 0,50 EUR inkl. MwSt. pro online bezahlter Rechnung ab 5 EUR, zusätzlich zu den Kosten von Mollie oder Stripe. Bei Office zahlen Sie das nicht.
 
 ### Was jeder Tarif enthält
 
@@ -49,6 +49,7 @@ Funktionen mit Nutzungslimits (monatliche Limits, soweit nicht anders angegeben)
 | Eigene Domains | 0 | 5 |
 | KI-Chat-Nachrichten (monatlich) | 10 | 1 000 |
 | KI-Belegscans (monatlich) | 3 | 200 |
+| KI-Vorschläge (monatlich) | 10 | 2 000 |
 | Bankverbindungen | 0 | 3 |
 
 Hinweis: KI-Limits gelten monatlich, nicht täglich. Sie werden am Ersten jedes Kalendermonats zurückgesetzt.
@@ -122,7 +123,7 @@ Der Teamzugang ist in Office ohne Kosten pro Person enthalten: Laden Sie so viel
 
 Zusätzliche eigene Unternehmen erfordern Office. Ihr Abonnement deckt Ihren Hauptarbeitsbereich ab; jedes zusätzliche Unternehmen, das Sie hinzufügen, wird zum vorab angezeigten Preis berechnet.
 
-Das zusätzliche Unternehmen beginnt mit einer eigenen Office-Testphase. Während der Testphase kostet es nichts; danach wird es zum angezeigten Preis Ihrem Abonnement hinzugefügt.
+Das zusätzliche Unternehmen folgt dem Abonnement Ihres Hauptarbeitsbereichs. Sind Sie selbst noch in Ihrer Office-Testphase, zahlen Sie dafür nichts; danach wird es zum angezeigten Preis Ihrem Abonnement hinzugefügt.
 
 Wenn Ihr Arbeitsbereich kostenloses Office aufgrund einer Regelung wie einer Gunst- oder Founding-Member-Regelung hat, gibt es kein Abonnement, an das das zusätzliche Unternehmen angehängt werden könnte. Sie kaufen es deshalb über einen separaten reinen Add-on-Checkout. Das erste Unternehmen bleibt kostenlos; nur das zusätzliche Unternehmen wird berechnet. Sie können ein Unternehmen jederzeit inaktiv setzen; es wird dann nicht mehr für Ihr Abonnement oder Add-on gezählt, bleibt aber lesbar und exportierbar für die gesetzliche Aufbewahrungsfrist.
 

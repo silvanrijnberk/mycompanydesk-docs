@@ -44,7 +44,7 @@ Die Arbeit-Seite listet offene Arbeit in zwei Blöcken: zuerst Ihre eigenen Unte
 
 Wenn Sie eine Steuerberaterkanzlei betreiben, enthält der Bereich Kanzlei drei kanzleieigene Seiten:
 
-- **Kanzlei-Überblick** (`/werkruimtes/kantoor`) - Kanzlei-Mitglieder, offene Mandanteneinladungen, Partner-Teilen-Link und Statistiken, sowie ob ein kostenloses Office gewährt wurde.
+- **Kanzlei-Überblick** (`/werkruimtes/kantoor`) - Kanzlei-Mitglieder, offene Mandanteneinladungen, Partner-Teilen-Link und Statistiken, sowie ob Office kostenlos gewährt wurde.
 - **Abrechnung** (`/werkruimtes/kantoor/facturatie`) - bieten Sie an, das Abonnement einer Mandanten-Administration zu übernehmen. Der Mandant muss akzeptieren, bevor etwas berechnet wird; der Preis pro übernommener Administration wird vor der Bestätigung angezeigt. Ein noch ausstehendes Angebot wird getrennt angezeigt, damit Sie es zurückziehen können, solange der Mandant noch nicht geantwortet hat.
 - **Export** (`/werkruimtes/kantoor/export`) - exportieren Sie mehrere Mandanten-Administrationen auf einmal. Wählen Sie Jahr, Zeitraum und Exportformat, wählen Sie die Administrationen aus, und die App lädt pro Mandant ein Archiv herunter. Fehlgeschlagene Exports bleiben sichtbar, damit Sie sehen, was nicht abgeschlossen wurde.
 

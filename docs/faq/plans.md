@@ -1,7 +1,7 @@
 ---
 title: "Abonnementen en prijzen"
 description: "MyCompanyDesk heeft twee abonnementen: Desk en Office. Desk is gratis en blijft gratis."
-last_verified: 2026-07-22
+last_verified: 2026-10-01
 chatbot:
   triggers:
     - "abonnementen"

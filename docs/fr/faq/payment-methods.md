@@ -1,7 +1,7 @@
 ---
 title: "Moyens de paiement"
 description: "Pour gérer les méthodes de paiement sur les documents : allez dans Paramètres et ouvrez Paiement."
-last_verified: 2026-07-22
+last_verified: 2026-10-01
 chatbot:
   triggers:
     - "payment methods"
@@ -44,7 +44,7 @@ Mollie prend en charge iDEAL, Bancontact, la carte bancaire et le virement, idé
 
 ## Frais de paiement en ligne sur Desk
 
-Sur Desk, les paiements de factures en ligne peuvent entraîner de petits frais de service. Quand un client paie une facture en ligne via votre compte Mollie ou Stripe, ces frais sont retenus sur le versement pour chaque paiement. Sur Office, il n'y en a jamais. L'application affiche ces frais à côté de **Online betalingen** sur `/settings/betalen` tant que votre espace de travail est sur Desk.
+Sur Desk, vous payez 0,50 € TTC par facture payée en ligne de 5 € ou plus, en plus des frais de Mollie ou Stripe. Quand un client paie une facture en ligne via votre compte Mollie ou Stripe, ces frais sont retenus sur le versement pour chaque paiement. Sur Office, il n'y en a jamais. L'application affiche ces frais à côté de **Online betalingen** sur `/settings/betalen` tant que votre espace de travail est sur Desk.
 
 Pour déconnecter, cliquez sur **Loskoppelen** sur la carte correspondante. Si des paiements ont eu lieu au cours des 24 dernières heures, un avertissement vous rappelle que des webhooks en attente peuvent encore arriver et que les remboursements pour ces paiements doivent être traités manuellement. Après la déconnexion, les clients ne peuvent plus payer via ce prestataire.
 
