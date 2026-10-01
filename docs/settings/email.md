@@ -6,7 +6,7 @@ last_verified: 2026-09-30
 
 # E-mail
 
-MyCompanyDesk stuurt je facturen en offertes per e-mail naar je klanten. **Instellingen → E-mail** is het middelpunt van alles rond die mail: **Adressen en verzenden** voor de verzendkant, **Factuur- en offertemails** voor de mails die we voor je documenten opstellen, **Inboxmails** voor wat je zelf schrijft, en **Regels** voor wat er met inkomende mail gebeurt. De pagina is op elk abonnement beschikbaar; alleen verzenden vanaf je eigen domein hoort bij Pro.
+MyCompanyDesk stuurt je facturen en offertes per e-mail naar je klanten. **Instellingen → E-mail** is het middelpunt van alles rond die mail: **Adressen en verzenden** voor de verzendkant, **Factuur- en offertemails** voor de mails die we voor je documenten opstellen, **Inboxmails** voor wat je zelf schrijft, en **Regels** voor wat er met inkomende mail gebeurt. De pagina is op elk abonnement beschikbaar; alleen verzenden vanaf je eigen domein hoort bij Office.
 
 Regels en vertrouwde afzenders voor inkomende mail staan onder **Regels**; zie [Ontvangen: postbussen en regels](#ontvangen-postbussen-en-regels) hieronder.
 
@@ -20,7 +20,7 @@ De kaart **Verzendmethode** bepaalt welk adres je klanten als afzender zien. Er 
 
 Verstuur facturen vanaf je eigen domein, net als je inbox. Klanten zien jouw adres als afzender.
 
-- Verzenden vanaf je eigen domein hoort bij het Pro-abonnement; op andere abonnementen zie je bij deze optie een upgradelink.
+- Verzenden vanaf je eigen domein hoort bij het Office-abonnement; op Desk zie je bij deze optie een upgradelink.
 - Heb je al een domein gekoppeld? Dan staat er een knop om het met een klik aan te zetten (**E-mail activeren op jouwdomein.nl**). Dat is veilig voor bestaande e-mail: draait er al mail op je domein (bijvoorbeeld Gmail of Microsoft 365), dan waarschuwt MyCompanyDesk en nemen we niets over.
 - Nog geen domein? Via **Domein toevoegen** kom je bij de domeininstellingen.
 - Zodra het actief is, zie je op de kaart vanaf welk adres je documenten worden verstuurd, met een link naar de DNS-records.
@@ -122,4 +122,4 @@ Ook voor de mail die binnenkomt is de E-mailpagina het centrale punt:
 ## Gerelateerd
 
 - [Bedrijfsinstellingen](/settings/company): de bedrijfsgegevens achter je voet
-- [Abonnement & betalingen](/settings/billing): verzenden vanaf je eigen domein hoort bij Pro
+- [Abonnement & betalingen](/settings/billing): verzenden vanaf je eigen domein hoort bij Office

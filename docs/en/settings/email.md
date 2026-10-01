@@ -6,7 +6,7 @@ last_verified: 2026-09-30
 
 # Email
 
-MyCompanyDesk emails your invoices and quotes to your customers. **Settings → Email** is the hub for everything around that mail: **Addresses and sending** for the sender side, **Invoice and quote emails** for the mail we compose for your documents, **Inbox emails** for the mail you write yourself, and **Rules** for what happens to incoming mail. The page is available on every plan; only sending from your own domain is part of Pro.
+MyCompanyDesk emails your invoices and quotes to your customers. **Settings → Email** is the hub for everything around that mail: **Addresses and sending** for the sender side, **Invoice and quote emails** for the mail we compose for your documents, **Inbox emails** for the mail you write yourself, and **Rules** for what happens to incoming mail. The page is available on every plan; only sending from your own domain is part of Office.
 
 Rules and trusted senders for incoming mail live under **Rules**; see [Receiving: mailboxes and rules](#receiving-mailboxes-and-rules) below.
 
@@ -20,7 +20,7 @@ The **Delivery method** card decides which address your customers see as the sen
 
 Send invoices from your own domain, just like your inbox. Customers see your address as the sender.
 
-- Sending from your own domain is part of the Pro plan; on other plans the option shows an upgrade link.
+- Sending from your own domain is part of the Office plan; on Desk the option shows an upgrade link.
 - Already have a domain connected? The card offers a one-click enable button (**Enable email on yourdomain.com**). This is safe for existing email: if your domain already runs mail somewhere else (for example Gmail or Microsoft 365), MyCompanyDesk warns you and does not take it over.
 - No domain yet? The **Add domain** link takes you to the domain settings.
 - Once active, the card shows the address your documents are sent from, with a link to the DNS records.
@@ -122,4 +122,4 @@ Everything about the mail you receive now lives on the Email page as well:
 ## Related
 
 - [Company settings](/en/settings/company): the company details behind your footer
-- [Plan & payments](/en/settings/billing): sending from your own domain is part of Pro
+- [Plan & payments](/en/settings/billing): sending from your own domain is part of Office

@@ -40,7 +40,7 @@ Under **Settings → Email → Factuur- and offertemails** you pick the style pe
 Choosing one styles the mail for every next send of that type, in every language. When you have an own text for that type, the page asks whether the style should replace it, and **Back to standard text** brings you, per type, back to the style you chose last. The switch in the send window that adds or removes the line-item table decides per send about the lines, as long as the table is allowed for that type; the Compleet style carries it always.
 
 What you can change:
-1. The sender: go to Settings → Email → Addresses and sending and choose your own domain (Pro), Gmail, or Outlook
+1. The sender: go to Settings → Email → Addresses and sending and choose your own domain (Office), Gmail, or Outlook
 2. Your sign-off: fill in your support email, website, and social links under Settings → Company details; they appear under every email you send, and on your invoices and website. Your certifications and quality marks (STEK, VCA, CE and more) appear under it as well; under Settings → Email you choose per mail type whether they do
 3. A single email: in the send window you can adjust the recipient, subject, and message before the email goes out
 

@@ -42,11 +42,9 @@ Zo koppel je een verwerker:
 
 Mollie ondersteunt iDEAL, Bancontact, creditcard en bankoverboeking, ideaal voor Nederlandse en Belgische klanten. Stripe Connect ondersteunt card, Apple Pay, Google Pay en SEPA-incasso, geschikt voor internationale klanten.
 
-## Online-betalingstarief op het gratis plan
+## Online-betalingstarief op Desk
 
-Op het gratis plan geldt een klein servicekostenbedrag voor online factuurbetalingen. Wanneer een klant een factuur online betaalt, wordt € 0,50 via je Mollie- of Stripe-account geïnd als application fee. Online betalingen op Starter en Pro zijn kosteloos. Het tarief staat naast **Online betalingen** op `/settings/betalen` zolang je werkruimte op het gratis plan zit.
-
-Het precieze bedrag en de minimale factuurwaarde staan server-side ingesteld. De hint in de app toont op dit moment € 0,50 per online factuurbetaling vanaf € 5, overeenkomstig `config.billing.freeTierSurchargeCents` en `freeTierSurchargeMinInvoiceCents` in `apps/api/src/config/env.js`. Als een van deze waarden wijzigt, moeten deze pagina en de hint in de app samen worden bijgewerkt.
+Op Desk kan er een kleine servicevergoeding gelden voor online factuurbetalingen. Betaalt een klant een factuur online via je Mollie- of Stripe-account, dan wordt die vergoeding per betaling van de uitbetaling ingehouden. Op Office is dat nooit zo. De app toont de vergoeding naast **Online betalingen** op `/settings/betalen` zolang je werkruimte op Desk zit.
 
 Loskoppelen doe je met **Loskoppelen** op de betreffende kaart. Als er in de afgelopen 24 uur betalingen zijn geweest, krijg je een waarschuwing dat er mogelijk nog openstaande webhooks binnenkomen en dat je terugbetalingen voor die betalingen handmatig moet verwerken. Na het loskoppelen kunnen klanten niet meer via die verwerker betalen.
 

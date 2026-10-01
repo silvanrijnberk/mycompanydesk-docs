@@ -42,11 +42,9 @@ Pour connecter un prestataire :
 
 Mollie prend en charge iDEAL, Bancontact, la carte bancaire et le virement, idéal pour les clients néerlandais et belges. Stripe Connect prend en charge la carte, Apple Pay, Google Pay et le prélèvement SEPA, adapté aux clients internationaux.
 
-## Frais de paiement en ligne sur le plan Gratuit
+## Frais de paiement en ligne sur Desk
 
-Les paiements de factures en ligne entraînent de petits frais de service sur le plan Gratuit. Quand un client paie une facture en ligne, 0,50 € sont prélevés via votre compte Mollie ou Stripe en tant qu'application fee. Les paiements en ligne sur Starter et Pro sont gratuits. L'indication apparaît à côté de **Online betalingen** sur `/settings/betalen` tant que votre espace de travail est sur le plan Gratuit.
-
-Le montant exact et le montant minimum de facture sont configurés côté serveur. L'info-bulle de l'application indique actuellement 0,50 € par paiement de facture en ligne à partir de 5 €, conformément à `config.billing.freeTierSurchargeCents` et `freeTierSurchargeMinInvoiceCents` dans `apps/api/src/config/env.js`. Si l'une de ces valeurs change, cette page et l'info-bulle doivent être mises à jour ensemble.
+Sur Desk, les paiements de factures en ligne peuvent entraîner de petits frais de service. Quand un client paie une facture en ligne via votre compte Mollie ou Stripe, ces frais sont retenus sur le versement pour chaque paiement. Sur Office, il n'y en a jamais. L'application affiche ces frais à côté de **Online betalingen** sur `/settings/betalen` tant que votre espace de travail est sur Desk.
 
 Pour déconnecter, cliquez sur **Loskoppelen** sur la carte correspondante. Si des paiements ont eu lieu au cours des 24 dernières heures, un avertissement vous rappelle que des webhooks en attente peuvent encore arriver et que les remboursements pour ces paiements doivent être traités manuellement. Après la déconnexion, les clients ne peuvent plus payer via ce prestataire.
 

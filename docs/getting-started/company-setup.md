@@ -49,7 +49,7 @@ De wizard vraagt om het IBAN waar klanten naartoe betalen. Je kunt nu je zakelij
 
 ## Stap 4: Setup afronden
 
-De laatste stap bevestigt dat je 60 dagen Pro-proefperiode actief is, zonder creditcard, en past alles toe, waarna je naar je dashboard gaat. Er draait op de achtergrond niets mee: het afrondscherm noemt wat nog volgt (je account beveiligen, en je website) en die suggesties volgen later, onder **Zet dit op** op het dashboard, wanneer het uitkomt. MyCompanyDesk genereert hier geen website meer en kiest geen diensten voor je; een website bouw je zelf, de eerste keer dat je het **Website**-gebied opent.
+De laatste stap bevestigt dat je 60 dagen Office-proefperiode actief is, zonder creditcard, en past alles toe, waarna je naar je dashboard gaat. Er draait op de achtergrond niets mee: het afrondscherm noemt wat nog volgt (je account beveiligen, en je website) en die suggesties volgen later, onder **Zet dit op** op het dashboard, wanneer het uitkomt. MyCompanyDesk genereert hier geen website meer en kiest geen diensten voor je; een website bouw je zelf, de eerste keer dat je het **Website**-gebied opent.
 
 Klik op **Setup afronden** en de wizard past je bedrijfsgegevens, btw-status, IBAN en standaardinstellingen toe, waarna je naar je dashboard gaat.
 

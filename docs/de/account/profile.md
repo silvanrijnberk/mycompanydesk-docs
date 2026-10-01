@@ -26,6 +26,7 @@ Wie die App für Sie aussieht, auf jedem Gerät, auf dem Sie sich anmelden.
 - **Schriftgröße**: Normal, Groß oder Extra groß, für entspannteres Lesen. Die Auswahl wird pro Gerät gespeichert, sodass Ihr Telefon eine größere Schrift verwenden kann als Ihr Laptop. Die App folgt auch der System-Schriftgröße Ihres Telefons bis zur Extra-groß-Stufe; bei dieser Größe wechselt die untere Tab-Leiste auf dem Handy auf reine Symbole, damit alle Tabs erreichbar bleiben.
 - **Sprache der App**: Niederländisch, Englisch, Deutsch oder Französisch. Das ändert nur die Menüs und Schaltflächen für Sie; die Sprache Ihrer Rechnungen und Angebote ist eine eigene Wahl pro Dokument.
 - **Erweiterte Einstellungen**: ein Schalter pro Gerät, der zusätzliche technische Optionen in der App sichtbar macht, etwa DNS- und SSL-Verwaltung auf den Domain-Seiten. Lassen Sie ihn aus, wenn Sie diese nicht brauchen.
+- **Zahlen über Ihren Listen** (ruhige Ansicht): Wählen Sie **Rustig** (Ruhig) oder **Uitgebreid** (Ausführlich). Ruhig ist die Standardeinstellung: Sie sehen nur die Liste, ohne Kacheln mit Summen und ohne Seitenkarten. Wählen Sie **Uitgebreid**, wenn Sie Zusammenfassungen und Summen über und neben Ihren Listen sehen möchten. Die Wahl gilt nur auf dem Gerät, auf dem Sie sie treffen, Ihr Telefon und Ihr Laptop können also verschieden sein.
 
 ## Benachrichtigungen
 

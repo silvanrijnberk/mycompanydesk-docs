@@ -1,6 +1,6 @@
 ---
 title: API-integratie
-description: "Benader je facturen, uitgaven en klanten programmatisch via de REST API met een X-API-Key-header. API-toegang hoort bij het Pro-abonnement."
+description: "Benader je facturen, uitgaven en klanten programmatisch via de REST API met een X-API-Key-header. API-toegang hoort bij het Office-abonnement."
 ---
 
 # API-integratie
@@ -8,7 +8,7 @@ description: "Benader je facturen, uitgaven en klanten programmatisch via de RES
 Krijg programmatisch toegang tot je MyCompanyDesk-gegevens via de REST API.
 
 ::: info
-API-toegang is onderdeel van het **Pro**-abonnement.
+API-toegang is onderdeel van het **Office**-abonnement.
 :::
 
 ## Overzicht

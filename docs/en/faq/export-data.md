@@ -14,4 +14,4 @@ To export data:
 2. Download CSV exports for invoices, customers, and expenses, or the full backup available there
 3. Use section-level exports in Invoices, Expenses, or Reports when you only need one dataset
 
-CSV exports are available from the Starter plan. Choose the export that matches the page or record set you need.
+The CSV exports of invoices and expenses are part of the Office plan. The customer list as CSV and the full backup are free on every plan. Choose the export that matches the page or record set you need.

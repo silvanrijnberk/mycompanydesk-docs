@@ -26,6 +26,7 @@ How the app looks for you, on every device you sign in on.
 - **Text size**: Normal, Large or Extra Large, for more comfortable reading. The choice is saved per device, so your phone can use a larger size than your laptop. The app also follows your phone's system text-size setting up to the Extra Large step; at that size the mobile bottom tab bar switches to icons-only to keep all tabs reachable.
 - **Language of the app**: Dutch, English, German or French. This changes the menus and buttons for you only; the language of your invoices and quotes is a separate choice per document.
 - **Advanced settings**: a per-device switch that reveals extra technical options across the app, such as DNS and SSL controls on the domain pages. Leave it off unless you need those.
+- **Numbers above your lists** (calm view): choose **Rustig** (Calm) or **Uitgebreid** (Detailed). Calm is the default: you only see the list, without summary tiles or side cards. Choose **Uitgebreid** if you want summaries and totals above and beside your lists. The choice only applies on the device where you make it, so your phone and your laptop can differ.
 
 ## Meldingen (notifications)
 

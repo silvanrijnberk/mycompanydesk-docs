@@ -26,6 +26,7 @@ L'apparence de l'application pour vous, sur chaque appareil où vous vous connec
 - **Taille du texte** : normale, grande ou très grande, pour une lecture plus confortable. Le choix est mémorisé par appareil, donc votre téléphone peut utiliser une taille plus grande que votre ordinateur. L'application suit aussi la taille de texte système de votre téléphone jusqu'à l'étape très grande ; à cette taille, la barre d'onglets inférieure sur mobile passe aux seuls icônes pour que tous les onglets restent accessibles.
 - **Langue de l'application** : néerlandais, anglais, allemand ou français. Cela ne change que les menus et boutons pour vous; la langue de vos factures et devis est un choix séparé, par document.
 - **Paramètres avancés** : un interrupteur par appareil qui révèle des options techniques supplémentaires dans l'application, comme la gestion DNS et SSL sur les pages de domaine. Laissez-le désactivé si vous n'en avez pas besoin.
+- **Les chiffres au-dessus de vos listes** (affichage calme) : choisissez **Rustig** (Calme) ou **Uitgebreid** (Détaillé). Calme est le réglage par défaut : vous ne voyez que la liste, sans tuiles de totaux ni cartes latérales. Choisissez **Uitgebreid** si vous voulez voir des résumés et des totaux au-dessus et à côté de vos listes. Le choix ne vaut que sur l'appareil où vous le faites, votre téléphone et votre ordinateur peuvent donc différer.
 
 ## Notifications
 

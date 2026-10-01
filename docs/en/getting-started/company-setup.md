@@ -49,7 +49,7 @@ The wizard asks for the IBAN that customers pay to. You can enter your business 
 
 ## Step 4: Finish setup
 
-The final step confirms your 60-day Pro trial, no credit card needed, and applies everything, then takes you to the dashboard. Nothing runs in the background while the screen confirms: the finish message names what stays behind for later (securing your account, and your website), and those suggestions follow on the dashboard under **Zet dit op** when it fits. MyCompanyDesk no longer generates a website or picks services for you here; a website is built the first time you open the **Website** area yourself.
+The final step confirms your 60-day Office trial, no credit card needed, and applies everything, then takes you to the dashboard. Nothing runs in the background while the screen confirms: the finish message names what stays behind for later (securing your account, and your website), and those suggestions follow on the dashboard under **Zet dit op** when it fits. MyCompanyDesk no longer generates a website or picks services for you here; a website is built the first time you open the **Website** area yourself.
 
 Click **Finish setup** and the wizard applies your company details, VAT status, IBAN and default settings, then takes you to your dashboard.
 

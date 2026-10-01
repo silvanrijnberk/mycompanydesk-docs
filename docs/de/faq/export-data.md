@@ -14,4 +14,4 @@ So exportieren Sie Daten:
 2. Laden Sie dort CSV-Exporte für Rechnungen, Kunden und Ausgaben oder das Vollbackup herunter
 3. Nutzen Sie Exporte auf Bereichsebene in Rechnungen, Ausgaben oder Berichten, wenn Sie nur einen Datensatz brauchen
 
-CSV-Exporte sind ab dem Starter-Tarif verfügbar. Wählen Sie den Export, der zu der Seite oder dem Datensatz passt, den Sie benötigen.
+Die CSV-Exporte von Rechnungen und Ausgaben gehören zum Office-Tarif. Die Kundenliste als CSV und das Vollbackup sind in jedem Tarif kostenlos. Wählen Sie den Export, der zu der Seite oder dem Datensatz passt, den Sie benötigen.

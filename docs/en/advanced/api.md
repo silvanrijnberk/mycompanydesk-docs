@@ -1,6 +1,6 @@
 ---
 title: API Integration
-description: "Access invoices, expenses and customers programmatically over the REST API with an X-API-Key header. API access is part of the Pro plan."
+description: "Access invoices, expenses and customers programmatically over the REST API with an X-API-Key header. API access is part of the Office plan."
 ---
 
 # API Integration
@@ -8,7 +8,7 @@ description: "Access invoices, expenses and customers programmatically over the 
 Access your MyCompanyDesk data programmatically through the REST API.
 
 ::: info
-API access is part of the **Pro** plan.
+API access is part of the **Office** plan.
 :::
 
 ## Overview

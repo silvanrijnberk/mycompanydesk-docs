@@ -70,7 +70,7 @@ Als je nog wacht op je btw-nummer van de Belastingdienst, of onder de kleineonde
 
 De laatste stap bevestigt je proefperiode:
 
-- **Je proefperiode:** elke nieuwe werkruimte start met 60 dagen Pro, gratis, zonder creditcard.
+- **Je proefperiode:** elke nieuwe werkruimte start met 60 dagen Office, gratis, zonder creditcard.
 
 **Setup afronden** past je bedrijfsgegevens, btw-status, IBAN en standaardinstellingen toe. Het afrondscherm noemt wat nog volgt: je account beveiligen en je website worden later voorgesteld, wanneer het uitkomt, onder **Zet dit op** op het dashboard. Er wordt nergens op de achtergrond een website gebouwd; de eerste keer dat je het gebied **Website** zelf opent, wordt daar de standaardconceptsite aangemaakt (home, diensten, over ons, contact, met bij de juridische pagina's je gegevens), nog wachtend op jouw publicatie.
 

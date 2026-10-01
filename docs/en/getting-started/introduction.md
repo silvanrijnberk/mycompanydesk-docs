@@ -28,26 +28,26 @@ Invoices, quotes, and emails can also be sent in Dutch, English, German, or Fren
 
 ## Plans
 
-MyCompanyDesk has a Free plan and two paid plans: Starter and Pro. New customers get a 60-day Pro trial, and a workspace that does not convert continues on Free.
+MyCompanyDesk has two plans: Desk and Office. Desk is free and stays free. New customers get 60 days of Office, no credit card needed; a workspace that does not switch moves to Desk automatically and keeps all its data.
 
-| Feature | Free | Starter | Pro |
-|---|---|---|---|
-| Invoices | Unlimited | Unlimited | Unlimited |
-| Quotes | Unlimited | Unlimited | Unlimited |
-| Expense tracking | Unlimited | Unlimited | Unlimited |
-| Receipt scanning | Yes (3 scans/month) | Yes (30 scans/month) | Yes (200 scans/month) |
-| AI suggestions | Yes | Yes | Yes |
-| Custom branding | Yes | Yes | Yes |
-| Time registration, language tools | - | Yes | Yes |
-| Public business page | Yes | Yes | Yes |
-| Contracts and projects | - | Yes | Yes |
-| Reports and CSV/Excel exports | - | Yes | Yes |
-| Team access | Just you | Just you | Unlimited people |
-| Business mailbox on your domain | - | - | Yes |
-| Bank connections | - | - | Up to 3 |
-| Multi-domain, custom domain routing | - | - | Yes |
-| Advanced reports, priority support | - | - | Yes |
-| API access, webhooks | - | - | Yes |
+| Feature | Desk | Office |
+|---|---|---|
+| Price | Free | €12.99 per month or €129.90 per year, excl. VAT |
+| Invoices, quotes, expenses | Unlimited | Unlimited |
+| Projects and time registration | Yes | Yes |
+| Receipt scanning | Yes (3 scans/month) | Yes (200 scans/month) |
+| Custom branding | Yes | Yes |
+| Public business page and website on mycompanydesk.site | Yes | Yes |
+| Business inbox | Read and reply | Full, with your own mailboxes |
+| Team access | Just you | Unlimited people |
+| Recurring invoices, contracts and auto-invoicing | - | Yes |
+| Bank connections | - | Up to 3 |
+| Own domain, also for your website | - | Yes |
+| Full bookkeeping and filing your VAT return | - | Yes |
+| CSV/Excel exports, advanced reports, language tools | - | Yes |
+| API access, webhooks, priority support | - | Yes |
+
+All details are on [Plan & payments](/en/settings/billing).
 
 ## Getting help
 

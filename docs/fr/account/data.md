@@ -64,7 +64,7 @@ Téléchargez vos enregistrements par type :
 - **Dépenses** en CSV, avec catégories et montants
 
 ::: info
-Les exports CSV sont disponibles à partir du forfait **Starter**. La sauvegarde complète (JSON) est disponible sur tous les forfaits, y compris Gratuit.
+Les exports CSV de vos factures et de vos dépenses font partie du plan **Office**. Votre liste de clients en CSV et la sauvegarde complète (JSON) sont disponibles sur tous les plans, y compris Desk.
 :::
 
 ### Sauvegarde complète

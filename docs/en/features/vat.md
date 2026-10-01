@@ -242,7 +242,6 @@ The built-in assistant can answer questions about your aangifte using your own w
 ## See also
 
 - [How do I file a VAT return?](/en/faq/vat-return)
-- [Reclaiming foreign VAT](/en/faq/foreign-vat)
 - [Invoices](/en/features/invoices)
 - [Expenses](/en/features/expenses)
 - [Settings > Tax](/en/settings/company)

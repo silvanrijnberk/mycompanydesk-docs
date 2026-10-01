@@ -66,7 +66,7 @@ Laissez l'IA extraire automatiquement les détails de vos reçus :
 5. Confirmez pour créer la ou les dépenses
 
 ::: info
-La numerisation de recus necessite le plan **Pro** ou superieur. Le taux de TVA d'une nouvelle depense commence par votre reglage d'espace de travail par defaut.
+La numérisation de reçus est disponible sur tous les plans, y compris Desk. Le nombre de scans par mois dépend de votre plan : 3 sur Desk et 200 sur Office. Le taux de TVA d'une nouvelle depense commence par votre reglage d'espace de travail par defaut.
 :::
 
 Si un e-mail transféré ou un scan crée une dépense mais que le reçu ne peut pas être joint (par exemple un type de fichier non pris en charge ou un fichier trop volumineux), la dépense est quand même créée et un message indique que la pièce jointe est manquante. Ajoutez ensuite le reçu manuellement sur la page de détail de la dépense.
@@ -166,7 +166,7 @@ Sélectionnez plusieurs dépenses pour :
 - **Catégoriser** -- Changer la catégorie en masse
 - **Archiver** -- Déplacer vers les archives. Lorsque vous archivez plusieurs dépenses non payées avec une date d'échéance en une fois, les rappels de paiement ouverts correspondants sont suspendus. La barre d'actions en masse affiche d'abord une confirmation dès qu'une dépense sélectionnée est non payée et a une date d'échéance, pour que vous sachiez combien des dépenses sélectionnées perdent leur rappel. Le rappel reste suspendu tant que les dépenses sont archivées. Si vous restaurez ultérieurement une dépense archivée, le passage quotidien recrée le rappel, mais au plus tôt la nuit suivante.
 - **Supprimer** -- Supprimer définitivement
-- **Exporter** -- Télécharger au format CSV
+- **Exporter**: Télécharger au format CSV (Office)
 - **Marquer comme payé** -- Marque les dépenses sélectionnées comme payées. Si vous marquez un brouillon bancaire ou un brouillon de la boîte de réception comme payé, le statut "À vérifier" est enlevé en même temps, de sorte que la ligne apparaisse dans vos rapports, votre déclaration de TVA et votre export comptable au lieu de rester cachée. Cela ne se produit que lorsque vous passez le statut à payé, pas lorsque vous revenez à non payé.
 
 Si une action groupée est refusée parce qu'une ou plusieurs lignes sélectionnées tombent dans une période de TVA verrouillée, le message d'erreur nomme la période exacte et explique la prochaine étape. Une période déjà déposée et verrouillée ne peut être rouverte que par une déclaration supplétive. Un verrouillage nu (la date limite de dépôt est passée mais aucune déclaration n'a été déposée) peut être déverrouillé temporairement depuis la page TVA. Retirez les lignes situées dans cette période de votre sélection, ou utilisez la route de correction appropriée, puis réessayez.

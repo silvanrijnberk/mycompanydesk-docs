@@ -39,7 +39,7 @@ Sous **Paramètres → E-mail → E-mails de factures et devis** vous choisissez
 Avec un style, chaque prochain e-mail de ce type ressort ainsi, dans toutes les langues. Avez-vous un texte personnalisé pour ce type, la page demande si le style doit le remplacer, et **Revenir au texte standard** vous ramène par type au style choisi en dernier. L'interrupteur dans la fenêtre d'envoi qui ajoute ou enlève le tableau des lignes décide à l'envoi des lignes, tant que le tableau est permis pour ce type ; le style Complet l'emporte toujours avec lui.
 
 Ce que vous pouvez ajuster :
-1. L'expéditeur : accédez à Paramètres → E-mail → Adresses et envoi et choisissez votre propre domaine (Pro), Gmail ou Outlook
+1. L'expéditeur : accédez à Paramètres → E-mail → Adresses et envoi et choisissez votre propre domaine (Office), Gmail ou Outlook
 2. Votre signature : renseignez votre e-mail de support, votre site web et vos liens sociaux sous Paramètres → Informations de l'entreprise ; ils apparaissent sous chaque e-mail que vous envoyez, et sur vos factures et votre site web. Vos labels et certifications (STEK, VCA, CE et autres) y figurent également ; sous Paramètres → E-mail, vous choisissez par type d'e-mail si c'est le cas
 3. Un e-mail ponctuel : dans la fenêtre d'envoi, vous pouvez ajuster le destinataire, l'objet et le message avant l'envoi
 
