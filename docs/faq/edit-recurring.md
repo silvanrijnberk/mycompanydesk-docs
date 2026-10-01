@@ -1,7 +1,7 @@
 ---
 title: "Terugkerende factuur bewerken"
 description: "Om een terugkerend item te bewerken: ga naar Terugkerende facturen (of Uitgaven), open het terugkerende item, klik op Bewerken."
-last_verified: 2026-08-15
+last_verified: 2026-10-01
 chatbot:
   triggers:
     - "edit recurring"
@@ -24,7 +24,7 @@ Om een terugkerend item te bewerken:
 1. Ga naar Terugkerende facturen (of Uitgaven)
 2. Open het terugkerende item
 3. Klik op "Bewerken"
-4. Wijzig bedrag, frequentie, klant of regels
+4. Wijzig bedrag, frequentie, klant of regels; bij een terugkerende factuur kun je ook de betaalopties, factuurgegevens, referentie, project of bezitting aanpassen
 5. Sla op - toekomstige generaties gebruiken het bijgewerkte sjabloon
 
 Let op: wijzigingen gelden alleen voor toekomstige facturen/uitgaven. Eerder aangemaakte items blijven ongewijzigd.

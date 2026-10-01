@@ -54,6 +54,8 @@ Vous préférez n'enregistrer qu'un total par jour ? Activez le **Mode heures un
 
 Le tarif affiché pour chaque entrée de temps est le **tarif horaire effectif** de cette entrée. Si l'entrée a son propre tarif horaire, c'est celui-ci qui est utilisé ; sinon on revient au tarif du projet, puis au tarif du client, et enfin au tarif par défaut de l'espace de travail. Le montant de la ligne sur une facture reflète donc toujours le tarif réel stocké avec l'entrée.
 
+L'entrée elle-même montre quel tarif s'appliquera. L'entrée n'a pas de tarif à elle ? Alors la carte indique **Tarif horaire du projet**, et les totaux de la liste comptent ce tarif du projet pour ces entrées. Une fois une entrée facturée, elle affiche le tarif réellement facturé : celui de la ligne de facture, pas celui que le projet pratique aujourd'hui. Dans la fenêtre d'édition, un indice apparaît quand le tarif est vide : la facture utilisera le tarif du projet.
+
 ### Créer une facture depuis la page Agenda
 
 Lorsque vous avez des entrées non facturées, cliquez sur **Créer une facture**. Un panneau s'ouvre où vous choisissez un client ; il liste toutes les entrées non facturées de ce client avec leur total. Confirmez, et un brouillon de facture est créé avec une ligne par entrée. Le temps de trajet et les frais de déplacement facturables liés à ces entrées sont ajoutés en lignes séparées.

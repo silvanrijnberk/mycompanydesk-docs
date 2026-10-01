@@ -41,6 +41,14 @@ Regelitems van terugkerende facturen werken op dezelfde manier als reguliere fac
 - Een kortingspercentage kan niet hoger zijn dan 100%.
 - Een kortingswaarde mag niet negatief zijn.
 
+## Betaalopties en factuurdetails
+
+Een terugkerende factuur kan dezelfde documentvelden meekrijgen als een gewone factuur. Onder **Betaalopties** kies je de betaalmethode van deze reeks. Zolang je niets kiest, volgt elke factuur de betaalinstellingen van je bedrijf, dus een wijziging onder Instellingen → Betalen loopt vanzelf in de reeks mee. Eenmaal gekozen, neemt **Standaard van je bedrijf gebruiken** de keuze terug. De betaalnotitie werkt hetzelfde.
+
+Onder **Factuurgegevens** bepaal je wat er op elke factuur uit de reeks staat: **BTW verlegd**, de **Referentie**, het **Project** en de **Bezitting** waar de facturering bij hoort, plus de schakelaar om deze reeks voor je boekhouder te verbergen. MyCompanyDesk suggereert btw verlegd als een klant lijkt op een EU-bedrijf buiten Nederland, en waarschuwt wanneer de klant geen BTW-nummer heeft. Btw verlegd heeft het BTW-nummer van de klant nodig: het formulier weigert de reeks te bewaren zonder, en is het nummer later weg, dan houdt de generatie die factuur aan als concept zonder nummer en krijg je een melding, in plaats van dat er onbeheerd een ongeldige factuur verstuurd wordt.
+
+Alles wat je hier invult, gaat één op één mee naar elke factuur die de reeks aanmaakt. Eerder gegenereerde facturen houden wat ze op dat moment kregen; zie [btw verlegd](/faq/reverse-charge) voor wanneer de behandeling geldt.
+
 ## Frequentieopties
 
 | Frequentie | Beschrijving |

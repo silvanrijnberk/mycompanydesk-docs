@@ -54,6 +54,8 @@ Möchten Sie lieber nur eine Tagessumme erfassen? Aktivieren Sie **Nur Stunden M
 
 Der für jeden Zeiteintrag angezeigte Satz ist der **effektive Stundensatz** dieses Eintrags. Hat der Eintrag einen eigenen Stundensatz, wird dieser verwendet; andernfalls fällt er auf den Projektsatz zurück, dann auf den Kundensatz und schließlich auf den Arbeitsbereichs-Standard. Der Betrag einer Rechnungszeile spiegelt also immer den tatsächlichen mit dem Eintrag gespeicherten Satz wider.
 
+Der Eintrag selbst zeigt an, welcher Satz das wird. Hat der Eintrag keinen eigenen Stundensatz? Dann steht dort **Stundensatz des Projekts**, und die Summen in der Liste rechnen für diese Einträge ebenfalls mit dem Projektsatz. Wurde ein Eintrag einmal abgerechnet, zeigt er den Satz, der tatsächlich abgerechnet wurde: den Satz auf der Rechnungszeile, nicht was das Projekt heute rechnet. Im Bearbeitungsdialog erscheint bei leerem Satz ein Hinweis, dass die Rechnung den Projektsatz verwendet.
+
 ### Eine Rechnung von der Zeitplan-Seite erstellen
 
 Wenn nicht abgerechnete Einträge vorliegen, klicken Sie auf **Rechnung erstellen**. Ein Dialog öffnet sich, in dem Sie einen Kunden wählen; er listet alle nicht abgerechneten Einträge dieses Kunden mit ihrer Summe. Bestätigen Sie, und es entsteht ein Rechnungsentwurf mit einer Zeile pro Eintrag. Abrechenbare Reisezeit und Reisekosten, die mit diesen Einträgen verknüpft sind, werden als separate Zeilen hinzugefügt.

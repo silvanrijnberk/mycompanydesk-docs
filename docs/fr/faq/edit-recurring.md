@@ -1,7 +1,7 @@
 ---
 title: "Modifier une facture récurrente"
 description: "Pour modifier un élément récurrent : allez dans Factures récurrentes (ou Dépenses), ouvrez l'élément récurrent, cliquez sur Modifier."
-last_verified: 2026-08-15
+last_verified: 2026-10-01
 chatbot:
   triggers:
     - "edit recurring"
@@ -24,7 +24,7 @@ Pour modifier un élément récurrent :
 1. Allez dans Factures récurrentes (ou Dépenses)
 2. Ouvrez l'élément récurrent
 3. Cliquez sur « Modifier »
-4. Modifiez le montant, la fréquence, le client ou les lignes
+4. Modifiez le montant, la fréquence, le client ou les lignes ; sur une facture récurrente, vous pouvez aussi modifier les options de paiement, les détails de la facture, la référence, le projet ou l'actif
 5. Enregistrez - les futures générations utiliseront le modèle mis à jour
 
 Remarque : les modifications ne concernent que les factures/dépenses futures. Les éléments déjà créés restent inchangés.

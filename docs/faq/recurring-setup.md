@@ -1,7 +1,7 @@
 ---
 title: "Terugkerende facturen instellen"
 description: "Zo stel je een terugkerende factuur in: ga naar Terugkerende facturen en klik op Terugkerende factuur toevoegen, kies de klant en voeg factuurregels toe."
-last_verified: 2026-07-02
+last_verified: 2026-10-01
 chatbot:
   triggers: ["set up recurring", "recurring invoice", "recurring expense", "automate invoice", "automatic invoice", "monthly invoice", "terugkerende factuur", "terugkerende uitgave", "wiederkehrende rechnung", "facture recurrente"]
   actions:
@@ -16,6 +16,8 @@ Zo stel je een terugkerende factuur in:
 3. Stel de frequentie en startdatum in
 4. Kies of elke factuur automatisch wordt gemaild of als concept wordt aangemaakt
 5. Sla op en controleer het schema in de lijst met terugkerende facturen
+
+Onder **Betaalopties** en **Factuurgegevens** stel je in wat elke factuur uit de reeks meekrijgt: een eigen betaalmethode, een betaalnotitie, een referentie, het project of de bezitting, btw verlegd, en of je boekhouder deze facturen ziet. Laat je een veld leeg, dan volgt elke factuur op het moment van aanmaken de standaard van je bedrijf.
 
 Er is geen einddatumveld. Wil je stoppen, open dan de terugkerende factuur en klik op "Pauzeren"; dezelfde schakelaar toont "Activeren", zodat je later weer kunt starten.
 

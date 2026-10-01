@@ -1,7 +1,7 @@
 ---
 title: "Wiederkehrende Rechnungen einrichten"
 description: "So richten Sie eine wiederkehrende Rechnung ein: gehen Sie zu Wiederkehrende Rechnungen und klicken Sie auf Wiederkehrende Rechnung hinzufügen."
-last_verified: 2026-07-02
+last_verified: 2026-10-01
 chatbot:
   triggers: ["set up recurring", "recurring invoice", "recurring expense", "automate invoice", "automatic invoice", "monthly invoice", "terugkerende factuur", "terugkerende uitgave", "wiederkehrende rechnung", "facture recurrente"]
   actions:
@@ -16,6 +16,8 @@ So richten Sie eine wiederkehrende Rechnung ein:
 3. Legen Sie Häufigkeit und Startdatum fest
 4. Wählen Sie, ob jede Rechnung automatisch per E-Mail versendet oder als Entwurf erstellt wird
 5. Speichern Sie und prüfen Sie den Zeitplan in der Liste der wiederkehrenden Rechnungen
+
+Unter **Zahlungsoptionen** und **Rechnungsdetails** legen Sie fest, was jede Rechnung der Serie mitnimmt: eine eigene Zahlungsart, eine Zahlungsnotiz, eine Referenz, das Projekt oder den Vermögenswert, Reverse Charge, und ob Ihr Buchhalter diese Rechnungen sieht. Lassen Sie ein Feld leer, folgt jede Rechnung beim Erstellen der Standardeinstellung Ihres Unternehmens.
 
 Ein Enddatum-Feld gibt es nicht. Möchten Sie stoppen, öffnen Sie die wiederkehrende Rechnung und klicken Sie auf "Pausieren"; derselbe Schalter zeigt "Aktivieren", damit Sie später fortsetzen können.
 

@@ -41,6 +41,14 @@ Recurring invoice line items work the same way as regular invoice lines:
 - A percentage discount cannot be higher than 100%.
 - A discount value cannot be negative.
 
+## Payment options and invoice details
+
+A recurring invoice can carry the same document fields a normal invoice has. Under **Payment options**, pick the payment method of this series. As long as you pick nothing, every invoice follows the payment settings of your business, so a change in Settings under **Betalen** (getting paid) carries into the series by itself. Once you pick one, **Use your business default** undoes it. The payment note works the same way.
+
+Under **Invoice details**, set what every invoice in the series shows: **VAT Reverse Charge (BTW verlegd)**, the **Reference**, the **Project** and the **Asset** the billing belongs to, plus a switch to hide this series from your accountant. MyCompanyDesk suggests reverse charge when a customer looks like an EU business outside the Netherlands, and warns when the customer has no VAT number. Reverse charge needs the customer's VAT number: the form refuses to save the series without one, and if the number is gone later, the generation holds that invoice as an unnumbered draft and notifies you, instead of sending an invalid invoice unattended.
+
+Everything set here is carried one on one onto each invoice the series generates. Previously generated invoices keep what they got at the time; see [reverse charge](/en/faq/reverse-charge) for when the treatment applies.
+
 ## Frequency options
 
 | Frequency | Description |
