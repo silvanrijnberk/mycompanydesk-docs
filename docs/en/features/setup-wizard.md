@@ -70,7 +70,7 @@ If you are waiting for your VAT ID from the Tax Authority, or fall under the sma
 
 The final step confirms your trial:
 
-- **Your trial:** every new workspace starts with 60 days of Pro, free, no credit card needed.
+- **Your trial:** every new workspace starts with 60 days of Office, free, no credit card needed.
 
 **Finish setup** applies your company details, VAT status, IBAN and default settings. The finish screen names what follows later: securing your account and your website are suggested further on, whenever it fits, under **Zet dit op** on the dashboard. A website is not built here or anywhere else in the background; the first time you open the **Website** area yourself, the standard draft site is created there (home, services, about us, contact, with the legal pages carrying your details), still awaiting your publication.
 

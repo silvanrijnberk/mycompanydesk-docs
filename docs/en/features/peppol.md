@@ -18,7 +18,7 @@ If the supplier also uses MyCompanyDesk, you can receive their structured invoic
 
 ## Availability
 
-Peppol e-invoicing is available on the Pro plan. Workspaces on Free or Starter do not see the e-invoice sending or receiving options.
+Peppol e-invoicing is available on the Office plan. Workspaces on Desk do not see the e-invoice sending or receiving options.
 
 ## Before you can send
 
@@ -61,7 +61,7 @@ When receiving is enabled, suppliers can send you e-invoices over Peppol. MyComp
 
 ### Availability
 
-Receiving is part of Peppol e-invoicing and is available on the Pro plan. You must already have e-invoicing sending enabled before you can turn receiving on.
+Receiving is part of Peppol e-invoicing and is available on the Office plan. You must already have e-invoicing sending enabled before you can turn receiving on.
 
 ### Before you can receive
 
@@ -118,7 +118,7 @@ Your customer must be reachable on the Peppol network. In practice this means th
 
 ## Troubleshooting
 
-**The Peppol option does not show.** Check that your workspace is on the Pro plan and that e-invoicing is enabled in the invoice settings. Also verify that your company profile has all required fields listed above.
+**The Peppol option does not show.** Check that your workspace is on the Office plan and that e-invoicing is enabled in the invoice settings. Also verify that your company profile has all required fields listed above.
 
 **Sending failed.** A failed Peppol send usually means the receiver could not be reached on the network, or one of the required invoice fields is missing. Fix the issue and retry, or send by email to keep the workflow moving.
 

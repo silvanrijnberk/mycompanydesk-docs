@@ -49,7 +49,7 @@ L'assistant demande l'IBAN sur lequel les clients doivent payer. Vous pouvez sai
 
 ## Étape 4 : Terminer la configuration
 
-La dernière étape confirme votre essai Pro de 60 jours, sans carte bancaire, et applique tous les réglages, puis vous emmène à votre tableau de bord. Rien ne tourne en tâche de fond : l'écran de fin nomme ce qui suit encore (sécuriser votre compte, et votre site web), et ces suggestions suivent plus tard sous **À configurer** sur le tableau de bord, quand ça arrange. MyCompanyDesk ne génère plus de site ici et ne choisit pas de prestations pour vous ; un site se construit à la première ouverture de la zone **Site Web**.
+La dernière étape confirme votre essai Office de 60 jours, sans carte bancaire, et applique tous les réglages, puis vous emmène à votre tableau de bord. Rien ne tourne en tâche de fond : l'écran de fin nomme ce qui suit encore (sécuriser votre compte, et votre site web), et ces suggestions suivent plus tard sous **À configurer** sur le tableau de bord, quand ça arrange. MyCompanyDesk ne génère plus de site ici et ne choisit pas de prestations pour vous ; un site se construit à la première ouverture de la zone **Site Web**.
 
 Cliquez sur **Terminer la configuration** et l'assistant applique vos informations d'entreprise, votre statut de TVA, votre IBAN et vos paramètres par défaut, puis vous emmène à votre tableau de bord.
 

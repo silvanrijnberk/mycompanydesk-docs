@@ -1,6 +1,6 @@
 ---
 title: Bonnen scannen
-description: "Fotografeer een bon of upload een PDF en AI-gestuurde OCR vult de uitgave in. Per maand: 3 scans op Gratis, 30 op Starter en 200 op Pro."
+description: "Fotografeer een bon of upload een PDF en AI-gestuurde OCR vult de uitgave in. Per maand: 3 scans op Desk en 200 op Office."
 ---
 
 # Bonnen scannen
@@ -8,7 +8,7 @@ description: "Fotografeer een bon of upload een PDF en AI-gestuurde OCR vult de 
 Extraheer automatisch uitgavegegevens uit bonafbeeldingen en PDF-facturen met behulp van AI-gestuurde OCR.
 
 ::: info
-Bonnen scannen is beschikbaar op elk abonnement, met een maandelijkse limiet op het aantal scans: 3 op Gratis, 30 op Starter en 200 op Pro. De limiet wordt gereset op de eerste van elke kalendermaand.
+Bonnen scannen is beschikbaar op elk abonnement, met een maandelijkse limiet op het aantal scans: 3 op Desk en 200 op Office. De limiet wordt gereset op de eerste van elke kalendermaand.
 :::
 
 ## Overzicht

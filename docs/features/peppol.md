@@ -18,7 +18,7 @@ Als de leverancier ook MyCompanyDesk gebruikt, kun je zijn gestructureerde factu
 
 ## Beschikbaarheid
 
-Peppol e-facturatie is beschikbaar op het Pro-abonnement. Werkruimtes op Free of Starter zien de opties voor e-factuurverzending en -ontvangst niet.
+Peppol e-facturatie is beschikbaar op het Office-abonnement. Werkruimtes op Desk zien de opties voor e-factuurverzending en -ontvangst niet.
 
 ## Voordat je kunt versturen
 
@@ -61,7 +61,7 @@ Als ontvangen is ingeschakeld, kunnen leveranciers je e-facturen sturen via Pepp
 
 ### Beschikbaarheid
 
-Ontvangen is onderdeel van Peppol e-facturatie en beschikbaar op het Pro-abonnement. Je moet e-factuurverzending al hebben ingeschakeld voordat je ontvangen kunt aanzetten.
+Ontvangen is onderdeel van Peppol e-facturatie en beschikbaar op het Office-abonnement. Je moet e-factuurverzending al hebben ingeschakeld voordat je ontvangen kunt aanzetten.
 
 ### Voordat je kunt ontvangen
 
@@ -118,7 +118,7 @@ Je klant moet bereikbaar zijn op het Peppol-netwerk. In de praktijk betekent dit
 
 ## Problemen oplossen
 
-**De Peppol-optie verschijnt niet.** Controleer of je werkruimte op het Pro-abonnement zit en of e-facturatie is ingeschakeld in de factuurinstellingen. Controleer ook of je bedrijfsprofiel alle vereiste velden bevat.
+**De Peppol-optie verschijnt niet.** Controleer of je werkruimte op het Office-abonnement zit en of e-facturatie is ingeschakeld in de factuurinstellingen. Controleer ook of je bedrijfsprofiel alle vereiste velden bevat.
 
 **Versturen is mislukt.** Een mislukte Peppol-verzending betekent meestal dat de ontvanger niet bereikbaar was op het netwerk, of dat een verplicht factuurveld ontbrak. Los het probleem op en probeer het opnieuw, of verstuur per e-mail om de workflow door te laten gaan.
 

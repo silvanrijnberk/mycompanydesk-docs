@@ -28,26 +28,26 @@ Facturen, offertes en e-mails kunnen ook in het Nederlands, Engels, Duits of Fra
 
 ## Abonnementen
 
-MyCompanyDesk heeft een Gratis-abonnement en twee betaalde abonnementen: Starter en Pro. Nieuwe klanten krijgen een Pro-proefperiode van 60 dagen; wie niet overstapt, blijft op Gratis.
+MyCompanyDesk heeft twee abonnementen: Desk en Office. Desk is gratis en blijft gratis. Nieuwe klanten krijgen 60 dagen Office, zonder creditcard; wie niet overstapt, gaat automatisch naar Desk en houdt alle gegevens.
 
-| Functie | Gratis | Starter | Pro |
-|---|---|---|---|
-| Facturen | Onbeperkt | Onbeperkt | Onbeperkt |
-| Offertes | Onbeperkt | Onbeperkt | Onbeperkt |
-| Uitgaven bijhouden | Onbeperkt | Onbeperkt | Onbeperkt |
-| Bonnen scannen | Ja (3 scans/maand) | Ja (30 scans/maand) | Ja (200 scans/maand) |
-| AI-suggesties | Ja | Ja | Ja |
-| Eigen huisstijl | Ja | Ja | Ja |
-| Urenregistratie, taalopties | - | Ja | Ja |
-| Openbare bedrijfspagina | Ja | Ja | Ja |
-| Contracten en projecten | - | Ja | Ja |
-| Rapportages en CSV/Excel-export | - | Ja | Ja |
-| Teamtoegang | Alleen jij | Alleen jij | Onbeperkt aantal mensen |
-| Zakelijke mailbox op je domein | - | - | Ja |
-| Bankkoppelingen | - | - | Maximaal 3 |
-| Multi-domein, eigen domein routering | - | - | Ja |
-| Geavanceerde rapporten, prioriteitsondersteuning | - | - | Ja |
-| API-toegang, webhooks | - | - | Ja |
+| Functie | Desk | Office |
+|---|---|---|
+| Prijs | Gratis | € 12,99 per maand of € 129,90 per jaar, excl. btw |
+| Facturen, offertes, uitgaven | Onbeperkt | Onbeperkt |
+| Projecten en urenregistratie | Ja | Ja |
+| Bonnen scannen | Ja (3 scans/maand) | Ja (200 scans/maand) |
+| Eigen huisstijl | Ja | Ja |
+| Openbare bedrijfspagina en website op mycompanydesk.site | Ja | Ja |
+| Zakelijke inbox | Lezen en beantwoorden | Volledig, met eigen mailboxen |
+| Teamtoegang | Alleen jij | Onbeperkt aantal mensen |
+| Terugkerende facturen, contracten en automatisch factureren | - | Ja |
+| Bankkoppelingen | - | Maximaal 3 |
+| Eigen domein, ook voor je website | - | Ja |
+| Volledige boekhouding en btw-aangifte indienen | - | Ja |
+| CSV/Excel-export, geavanceerde rapporten, taalopties | - | Ja |
+| API-toegang, webhooks, prioriteitsondersteuning | - | Ja |
+
+Alle details staan bij [Abonnement & betalingen](/settings/billing).
 
 ## Hulp krijgen
 

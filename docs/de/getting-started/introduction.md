@@ -28,26 +28,26 @@ Rechnungen, Angebote und E-Mails können ebenfalls auf Niederländisch, Englisch
 
 ## Tarife
 
-MyCompanyDesk hat einen Gratis-Tarif und zwei kostenpflichtige Tarife: Starter und Pro. Neue Kunden erhalten eine 60-tägige Pro-Testphase; wer nicht umsteigt, bleibt auf Gratis.
+MyCompanyDesk hat zwei Tarife: Desk und Office. Desk ist kostenlos und bleibt kostenlos. Neue Kunden erhalten 60 Tage Office, ohne Kreditkarte; wer nicht umsteigt, wechselt automatisch zu Desk und behält alle Daten.
 
-| Funktion | Gratis | Starter | Pro |
-|---|---|---|---|
-| Rechnungen | Unbegrenzt | Unbegrenzt | Unbegrenzt |
-| Angebote | Unbegrenzt | Unbegrenzt | Unbegrenzt |
-| Ausgabenverfolgung | Unbegrenzt | Unbegrenzt | Unbegrenzt |
-| Belegscanner | Ja (3 Scans/Monat) | Ja (30 Scans/Monat) | Ja (200 Scans/Monat) |
-| KI-Vorschläge | Ja | Ja | Ja |
-| Individuelles Branding | Ja | Ja | Ja |
-| Zeiterfassung, Sprachwerkzeuge | - | Ja | Ja |
-| Öffentliche Unternehmensseite | Ja | Ja | Ja |
-| Verträge und Projekte | - | Ja | Ja |
-| Berichte und CSV/Excel-Export | - | Ja | Ja |
-| Teamzugang | Nur Sie | Nur Sie | Unbegrenzt viele Personen |
-| Geschäftliche Mailbox auf Ihrer Domain | - | - | Ja |
-| Bankverbindungen | - | - | Bis zu 3 |
-| Multi-Domain, eigene Domain-Routing | - | - | Ja |
-| Erweiterte Berichte, Prioritäts-Support | - | - | Ja |
-| API-Zugang, Webhooks | - | - | Ja |
+| Funktion | Desk | Office |
+|---|---|---|
+| Preis | Kostenlos | 12,99 EUR pro Monat oder 129,90 EUR pro Jahr, zzgl. MwSt. |
+| Rechnungen, Angebote, Ausgaben | Unbegrenzt | Unbegrenzt |
+| Projekte und Zeiterfassung | Ja | Ja |
+| Belege scannen | Ja (3 Scans/Monat) | Ja (200 Scans/Monat) |
+| Eigenes Branding | Ja | Ja |
+| Öffentliche Unternehmensseite und Website auf mycompanydesk.site | Ja | Ja |
+| Geschäftliche Inbox | Lesen und antworten | Vollständig, mit eigenen Postfächern |
+| Teamzugang | Nur Sie | Unbegrenzt viele Personen |
+| Wiederkehrende Rechnungen, Verträge und automatische Rechnungsstellung | - | Ja |
+| Bankverbindungen | - | Bis zu 3 |
+| Eigene Domain, auch für Ihre Website | - | Ja |
+| Vollständige Buchhaltung und USt.-Erklärung einreichen | - | Ja |
+| CSV/Excel-Export, erweiterte Berichte, Sprachwerkzeuge | - | Ja |
+| API-Zugang, Webhooks, Prioritäts-Support | - | Ja |
+
+Alle Einzelheiten finden Sie unter [Abonnement & Zahlungen](/de/settings/billing).
 
 ## Hilfe erhalten
 

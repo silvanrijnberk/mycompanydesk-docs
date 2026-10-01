@@ -80,7 +80,7 @@ Laat AI automatisch uitgavegegevens uit bonnen extraheren:
 5. Bevestig om de uitgave(n) aan te maken
 
 ::: info
-Bonnen scannen vereist het **Pro**-abonnement of hoger. Het BTW-tarief op een nieuwe uitgave begint bij je standaard werkruimte-instelling.
+Bonnen scannen is beschikbaar op elk abonnement, ook op Desk. Het aantal scans per maand hangt af van je abonnement: 3 op Desk en 200 op Office. Het BTW-tarief op een nieuwe uitgave begint bij je standaard werkruimte-instelling.
 :::
 
 ### Vergrendelde BTW-periodes
@@ -148,7 +148,7 @@ Selecteer meerdere uitgaven voor:
 - **Categoriseren** - Wijzig categorie in bulk
 - **Archiveren** - Verplaats naar archief. Als je meerdere onbetaalde uitgaven met een vervaldatum tegelijk archiveert, vallen hun openstaande betaalherinneringen stil. De bulkbalk toont eerst een bevestiging zodra een van de geselecteerde uitgaven onbetaald is én een vervaldatum heeft, zodat je weet hoeveel van de geselecteerde uitgaven hun herinnering kwijtraken. Zolang de uitgaven gearchiveerd zijn, blijft de herinnering uit. Zet je een gearchiveerde uitgave later terug, dan maakt de dagelijkse sweep de herinnering opnieuw aan, maar pas de volgende nacht op zijn vroegst.
 - **Verwijderen** - Permanent verwijderen
-- **Exporteren** - Download als CSV
+- **Exporteren** - Download als CSV (Office)
 - **Markeer als betaald** - Markeer geselecteerde uitgaven als betaald. Als je een bank- of inbox-concept als betaald markeert, wordt de vlag "Te controleren" tegelijkertijd verwijderd, zodat de rij zichtbaar wordt in je rapportages, BTW-aangifte en boekhoudersexport in plaats van verborgen te blijven. Dit gebeurt alleen als je de status op betaald zet, niet als je hem terugzet naar onbetaald.
 
 Als een bulkactie wordt geweigerd omdat één of meer geselecteerde regels in een vergrendelde BTW-periode vallen, noemt de foutmelding het exacte tijdvak en legt hij uit wat je kunt doen. Een ingediende en vergrendelde periode kan alleen via een suppletieaangifte worden heropend. Een kaal slot (de aangiftedeadline is verstreken zonder dat er een aangifte is ingediend) kun je tijdelijk ontgrendelen op de BTW-pagina. Haal de regels in dat tijdvak uit je selectie, of gebruik de passende correctieroute, en probeer het opnieuw.

@@ -39,7 +39,7 @@ Unter **Einstellungen → E-Mail → Rechnungs- und Angebotsmails** wählen Sie 
 Mit einem Stil sieht jede nächste Mail dieser Art so aus, in jeder Sprache. Haben Sie einen eigenen Text für diese Art, fragt die Seite, ob der Stil ihn ersetzen soll, und **Zurück zum Standardtext** führt Sie je Art zurück zum zuletzt gewählten Stil. Der Schalter im Versandfenster, der die Positionstabelle hinzufügt oder wegnimmt, entscheidet pro Sendung über die Positionen, solange die Tabelle für diese Art erlaubt ist; der Stil Vollständig nimmt sie immer mit.
 
 Was Sie anpassen können:
-1. Den Absender: Gehen Sie zu Einstellungen → E-Mail → Adressen und Versand und wählen Sie Ihre eigene Domain (Pro), Gmail oder Outlook
+1. Den Absender: Gehen Sie zu Einstellungen → E-Mail → Adressen und Versand und wählen Sie Ihre eigene Domain (Office), Gmail oder Outlook
 2. Ihre Grußformel: Tragen Sie Ihre Support-E-Mail, Website und Social Links unter Einstellungen → Unternehmensdaten ein; sie erscheinen unter jeder E-Mail, die Sie senden, und auf Ihren Rechnungen und Ihrer Website. Ihre Gütesiegel (STEK, VCA, CE und mehr) erscheinen ebenfalls darunter; unter Einstellungen → E-Mail wählen Sie pro Mailart, ob das geschieht
 3. Eine einzelne E-Mail: Im Versandfenster passen Sie Empfänger, Betreff und Nachricht an, bevor die E-Mail verschickt wird
 

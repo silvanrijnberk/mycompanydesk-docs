@@ -6,7 +6,7 @@ last_verified: 2026-09-30
 
 # E-mail
 
-MyCompanyDesk envoie vos factures et devis par e-mail à vos clients. **Paramètres → E-mail** est le point central de tout ce qui entoure ces e-mails : **Adresses et envoi** pour le côté expédition, **E-mails de factures et devis** pour les e-mails que nous rédigeons pour vos documents, **E-mails de la boîte de réception** pour ce que vous écrivez vous-même, et **Règles** pour le courrier entrant. La page est disponible dans tous les abonnements ; seul l'envoi depuis votre propre domaine fait partie de Pro.
+MyCompanyDesk envoie vos factures et devis par e-mail à vos clients. **Paramètres → E-mail** est le point central de tout ce qui entoure ces e-mails : **Adresses et envoi** pour le côté expédition, **E-mails de factures et devis** pour les e-mails que nous rédigeons pour vos documents, **E-mails de la boîte de réception** pour ce que vous écrivez vous-même, et **Règles** pour le courrier entrant. La page est disponible dans tous les abonnements ; seul l'envoi depuis votre propre domaine fait partie d'Office.
 
 Les règles et les expéditeurs approuvés du courrier entrant se trouvent sous **Règles** ; voir plus bas [Recevoir : boîtes mail et règles](#recevoir-boites-mail-et-regles).
 
@@ -20,7 +20,7 @@ La carte **Méthode d'envoi** détermine quelle adresse vos clients voient comme
 
 Envoyez des factures depuis votre propre domaine, comme votre boîte de réception. Les clients voient votre adresse comme expéditeur.
 
-- L'envoi depuis votre propre domaine fait partie de l'abonnement Pro ; dans les autres abonnements, l'option affiche un lien de mise à niveau.
+- L'envoi depuis votre propre domaine fait partie de l'abonnement Office ; dans Desk, l'option affiche un lien de mise à niveau.
 - Vous avez déjà un domaine connecté ? La carte propose un bouton d'activation en un clic (**Activer l'e-mail sur votredomaine.fr**). C'est sans danger pour votre e-mail existant : si votre domaine reçoit déjà du courrier ailleurs (par exemple Gmail ou Microsoft 365), MyCompanyDesk vous avertit et ne prend rien en main.
 - Pas encore de domaine ? Le lien **Ajouter un domaine** vous amène aux paramètres de domaine.
 - Une fois l'envoi actif, la carte affiche l'adresse depuis laquelle vos documents partent, avec un lien vers les enregistrements DNS.
@@ -122,4 +122,4 @@ Tout ce qui concerne le courrier entrant se règle désormais également sur la 
 ## Voir aussi
 
 - [Paramètres de l'entreprise](/fr/settings/company) : les informations d'entreprise derrière votre pied de page
-- [Abonnement & paiements](/fr/settings/billing) : l'envoi depuis votre propre domaine fait partie de Pro
+- [Abonnement & paiements](/fr/settings/billing) : l'envoi depuis votre propre domaine fait partie d'Office

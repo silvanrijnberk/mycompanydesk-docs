@@ -66,7 +66,7 @@ Lassen Sie die KI Ausgabendetails automatisch aus Belegen extrahieren:
 5. Bestätigen Sie, um die Ausgabe(n) zu erstellen
 
 ::: info
-Belegscanner erfordert den **Pro**-Tarif oder hoher. Der USt.-Satz einer neuen Ausgabe beginnt mit Ihrer Standard-Arbeitsbereichseinstellung.
+Der Belegscanner ist in jedem Tarif verfügbar, auch in Desk. Die Anzahl der Scans pro Monat hängt von Ihrem Tarif ab: 3 in Desk und 200 in Office. Der USt.-Satz einer neuen Ausgabe beginnt mit Ihrer Standard-Arbeitsbereichseinstellung.
 :::
 
 Wenn eine weitergeleitete E-Mail oder ein Scan zwar eine Ausgabe erzeugt, der Beleg selbst aber nicht angehängt werden kann (zum Beispiel ein nicht unterstützter Dateityp oder eine zu große Datei), wird die Ausgabe dennoch erstellt und mit einem Hinweis versehen, dass der Anhang fehlt. Laden Sie den Beleg anschließend manuell auf der Detailseite der Ausgabe hoch.
@@ -166,7 +166,7 @@ Wählen Sie mehrere Ausgaben für:
 - **Kategorisieren** - Kategorie in großem Umfang ändern
 - **Archivieren** - Ins Archiv verschieben. Wenn Sie mehrere unbezahlte Ausgaben mit Fälligkeitsdatum auf einmal archivieren, werden deren offene Zahlungserinnerungen pausiert. Die Massenaktionsleiste zeigt vorher eine Bestätigung, sobald eine ausgewählte Ausgabe unbezahlt ist und ein Fälligkeitsdatum hat, damit Sie wissen, wie viele der ausgewählten Ausgaben ihre Erinnerung verlieren. Solange die Ausgaben archiviert sind, bleibt die Erinnerung aus. Stellen Sie eine archivierte Ausgabe später wieder her, wird die Erinnerung beim nächsten täglichen Lauf neu angelegt, aber frühestens in der folgenden Nacht.
 - **Löschen** - Dauerhaft entfernen
-- **Exportieren** - Als CSV herunterladen
+- **Exportieren** - Als CSV herunterladen (Office)
 - **Als bezahlt markieren** - Markiert ausgewählte Ausgaben als bezahlt. Wenn Sie einen Bank- oder Inbox-Entwurf als bezahlt markieren, wird gleichzeitig die Markierung "Zu prüfen" entfernt, sodass die Zeile in Ihren Berichten, der USt.-Erklärung und dem Buchhalterexport sichtbar ist, anstatt verborgen zu bleiben. Das passiert nur beim Setzen auf bezahlt, nicht beim Zurücksetzen auf unbezahlt.
 
 Wird eine Massenaktion abgelehnt, weil eine oder mehrere ausgewählte Zeilen in einen gesperrten USt.-Zeitraum fallen, nennt die Fehlermeldung den genauen Zeitraum und erklärt den nächsten Schritt. Ein bereits abgegebener und gesperrter Zeitraum lässt sich nur über eine Suppletieabgabe wieder öffnen. Eine reine Sperre (die Abgabefrist ist abgelaufen, aber es wurde keine Abgabe eingereicht) können Sie auf der USt.-Seite vorübergehend entsperren. Entfernen Sie die Zeilen aus diesem Zeitraum aus Ihrer Auswahl, oder nutzen Sie die passende Korrektur-Route, und versuchen Sie es erneut.

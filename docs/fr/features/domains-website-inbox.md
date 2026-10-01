@@ -6,7 +6,7 @@ last_verified: 2026-09-30
 
 # Domaines, site web et boite de reception
 
-> **Statut : pre-lancement.** Les trois fonctionnalites de cette page sont deployees ensemble en un seul lot. Elles sont gerees par les flags `custom_domains` et `public_business_page` et sont encore en cours de deploiement sur les abonnements publics. Le comportement decrit ici correspond a la base de code au 2026-05-09 ; si un ecran semble different dans votre espace de travail, le lot n'y a pas encore ete active.
+> **Statut : pre-lancement.** Les trois fonctionnalites de cette page sont deployees ensemble en un seul lot. Elles sont gerees par les flags `custom_domains` et `public_business_page` et sont encore en cours de déploiement. Les domaines personnalisés et la boîte de réception complète relèvent d'Office ; le site web sur une adresse mycompanydesk.site et une boîte de réception pour lire et répondre sont inclus dans Desk. Le comportement decrit ici correspond a la base de code au 2026-05-09 ; si un ecran semble different dans votre espace de travail, le lot n'y a pas encore ete active.
 
 Les domaines personnalises, le site web d'entreprise heberge et la boite de reception e-mail partagee forment un seul produit. La raison : ils partagent l'etat. La meme ligne `domains` qui prouve que vous contrôlez `acme.fr` fait aussi de `acme.fr` l'URL de votre site web et permet a `info@acme.fr` de recevoir des e-mails. Il y a un flux d'intégration, un arbre de parametres et un endroit dans l'application pour tout gerer.
 
@@ -14,7 +14,7 @@ Les domaines personnalises, le site web d'entreprise heberge et la boite de rece
 
 Ajoutez un domaine et vous obtenez trois choses :
 
-- **Une adresse personnalisee.** Votre entreprise est accessible sur `acme.fr` au lieu de `acme.mycompanydesk.com`.
+- **Une adresse personnalisee.** Votre entreprise est accessible sur `acme.fr` au lieu de `acme.mycompanydesk.site`.
 - **Un site web en ligne.** La page d'entreprise hebergee est automatiquement publiee sur le domaine verifie.
 - **Une boite de reception operationnelle.** `info@acme.fr`, ainsi que `support@`, `sales@` et un alias d'envoi uniquement `noreply@`, captent les e-mails et envoient des reponses.
 
@@ -28,7 +28,7 @@ L'etape de l'assistant sur `/setup` est le point d'entree recommande. Elle execu
 
 Deux chemins dans l'assistant, tous deux stockes dans la table `domains` :
 
-- **Sous-domaine d'espace de travail gratuit** -- `votre-slug.mycompanydesk.com` (ou `.nl` pour les espaces NL). Aucun travail DNS ; le slug (la forme simple du nom de votre entreprise) est enregistré comme domaine personnalisé Cloudflare Pages et le site web est en ligne en quelques secondes. Le sous-domaine n'entre en vue qu'à la publication du site web, pas avant.
+- **Sous-domaine d'espace de travail gratuit** : `votre-slug.mycompanydesk.site`. Aucun travail DNS ; le slug (la forme simple du nom de votre entreprise) est enregistré comme domaine personnalisé Cloudflare Pages et le site web est en ligne en quelques secondes. Le sous-domaine n'entre en vue qu'à la publication du site web, pas avant. Cette adresse fait partie de Desk : le site affiche un petit label « Gemaakt met MyCompanyDesk » et reste en ligne en permanence. Sur un domaine personnalisé (Office), ce label n'apparaît pas.
 - **Votre propre domaine** -- saisissez `acme.fr`. Deux modes de configuration sont pris en charge :
   - **Mode nameserver** (recommande) -- une zone Cloudflare est creee pour le domaine. Vous modifiez les nameservers de votre registraire vers les deux noms d'hôte `*.ns.cloudflare.com` affiches par l'assistant. Cloudflare devient le DNS faisant autorite pour le domaine, ce qui permet l'e-mail, le SSL et la gestion des enregistrements DNS dans MyCompanyDesk.
   - **Mode CNAME** -- pour un sous-domaine (ex. `portal.acme.fr`) ou pour ne relier que le site web de votre domaine principal, pendant que l'e-mail et tout le reste restent chez votre hébergeur actuel (« Connecter uniquement mon site web »). Vous ajoutez un seul enregistrement CNAME chez votre hébergeur actuel ; sur un domaine principal, c'est généralement `www.` suivi de votre domaine, car la plupart des hébergeurs ne permettent pas d'enregistrement CNAME sur le domaine nu. Dès que l'enregistrement est en place, `www.<votre domaine>` affiche votre site web MyCompanyDesk. Le routage des e-mails n'est pas disponible dans ce mode ; héberger le site sur le domaine nu lui-même exige le mode nameserver.
@@ -54,7 +54,7 @@ La page d'entreprise hebergee (voir [Constructeur de site](/fr/advanced/business
 
 1. Un domaine personnalise avec `business_page_enabled = true` → `https://acme.fr`
 2. Un domaine personnalise avec `portal_subdomain_enabled = true` → `https://portal.acme.fr`
-3. Le sous-domaine de l'espace de travail → `https://acme.mycompanydesk.com`
+3. Le sous-domaine de l'espace de travail → `https://acme.mycompanydesk.site`
 4. La route portail de secours (`/portal/<slug>`) lorsque rien d'autre n'est configure.
 
 ### Etape 5 -- La boite de reception capture les e-mails
@@ -125,13 +125,13 @@ Colonnes notables que l'application lit :
 
 Le renouvellement de domaine suit trois chemins selon la maniere dont le domaine a ete acquis :
 
-1. **Renouvellement groupe gratuit** (niveau Trial converti en Pro, ou accord antérieur de gratuité à vie) : MCD prend en charge le cout de gros du renouvellement. Le domaine se renouvelle automatiquement tant que l'espace de travail reste sur Pro. Aucun moyen de paiement requis.
-2. **Renouvellement automatique payant** (achat payant ou niveau Trial sans Pro) : Facture annuellement via la carte enregistree. Fonctionne comme tout autre renouvellement d'abonnement.
-3. **Renouvellement manuel** : Si un espace de travail de niveau Trial quitte Pro ET n'a pas de carte enregistree, le chemin de renouvellement automatique le saute. L'utilisateur voit une notification et peut declencher un paiement ponctuel via `POST /api/domains/renew/:domainId`, qui cree une session Stripe Embedded Checkout pour le renouvellement. C'est le seul moyen de garder un domaine actif sans abonnement actif ni carte enregistree.
+1. **Renouvellement groupe gratuit** (niveau Trial converti en Office, ou accord antérieur de gratuité à vie) : MCD prend en charge le cout de gros du renouvellement. Le domaine se renouvelle automatiquement tant que l'espace de travail reste sur Office. Aucun moyen de paiement requis.
+2. **Renouvellement automatique payant** (achat payant ou niveau Trial sans Office) : Facture annuellement via la carte enregistree. Fonctionne comme tout autre renouvellement d'abonnement.
+3. **Renouvellement manuel** : Si un espace de travail de niveau Trial quitte Office ET n'a pas de carte enregistree, le chemin de renouvellement automatique le saute. L'utilisateur voit une notification et peut declencher un paiement ponctuel via `POST /api/domains/renew/:domainId`, qui cree une session Stripe Embedded Checkout pour le renouvellement. C'est le seul moyen de garder un domaine actif sans abonnement actif ni carte enregistree.
 
 #### Rachat du domaine en cas de depart pendant l'essai
 
-Lorsqu'un client en periode d'essai Pro decide de partir avant de devenir client Pro payant, il dispose d'une troisieme option pour son domaine `.nl` gratuit : le racheter pour un montant forfaitaire de €15,00 TTC (paiement unique). Le flux de rachat (`DomainBuyoutModal.vue`) permet au client de payer via Stripe Embedded Checkout et d'obtenir la pleine propriete. Une fois le paiement effectue, le titulaire du domaine est transfere de MCD au client et le code d'authentification (EPP) est affiche, permettant de deplacer le domaine vers n'importe quel registrar.
+Lorsqu'un client en période d'essai Office décide de partir avant de devenir client Office payant, il dispose d'une troisieme option pour son domaine `.nl` gratuit : le racheter pour un montant forfaitaire de €15,00 TTC (paiement unique). Le flux de rachat (`DomainBuyoutModal.vue`) permet au client de payer via Stripe Embedded Checkout et d'obtenir la pleine propriete. Une fois le paiement effectue, le titulaire du domaine est transfere de MCD au client et le code d'authentification (EPP) est affiche, permettant de deplacer le domaine vers n'importe quel registrar.
 
 Le prix de €15,00 est volontairement indique TTC, car le paiement est declenche au moment ou le client quitte MyCompanyDesk. Le montant net transmis a Stripe est de €12,40 ; 21% de TVA neerlandaise sont ajoutes et arrondis au centime pres, de sorte que le total atteint exactement €15,00. Voir `apps/api/src/modules/domains/domain-pricing.config.js` dans le depot RichardTool et `sources/vat-rates.yaml#countries.NL.standard`.
 
@@ -145,8 +145,8 @@ Tables de base de donnees concernees :
 
 Transferer un domaine enregistre via MyCompanyDesk vers un autre registrar a des consequences permanentes, appliquees par la synchronisation hebdomadaire du statut OpenProvider :
 
-- **Domaines avec accord de gratuité à vie** : La reclamation gratuite est supprimee et l'octroi Pro a vie interne de l'espace de travail est resilie. L'espace de travail devient un client payant normal. C'est irreversible -- l'octroi ne peut pas etre reclame a nouveau.
-- **Domaines niveau Trial / groupes Pro** : Le statut groupe gratuit est perdu. L'espace de travail ne pourra plus jamais reclamer un autre domaine gratuit (deja applique via la liste des reclamations conservees). A noter : le rachat du domaine pendant l'essai (voir section rachat ci-dessus) n'est pas un transfert -- c'est un changement de titulaire qui donne la propriete au client avant tout transfert, preservant ainsi l'avantage du domaine gratuit pour la duree de l'essai.
+- **Domaines avec accord de gratuité à vie** : La réclamation gratuite est supprimée et l'octroi Office à vie interne de l'espace de travail est résilié. L'espace de travail devient un client payant normal. C'est irréversible: l'octroi ne peut pas être réclamé à nouveau.
+- **Domaines niveau Trial / groupés Office** : Le statut groupe gratuit est perdu. L'espace de travail ne pourra plus jamais reclamer un autre domaine gratuit (deja applique via la liste des reclamations conservees). A noter : le rachat du domaine pendant l'essai (voir section rachat ci-dessus) n'est pas un transfert, c'est un changement de titulaire qui donne la propriete au client avant tout transfert, preservant ainsi l'avantage du domaine gratuit pour la duree de l'essai.
 - **Domaines payants** : Aucune revocation d'avantage -- le domaine passe simplement a `status = 'transferred_out'`.
 
 Le modal de reclamation avertit de ces consequences avant qu'une reclamation de domaine gratuit ne soit soumise, et exige une confirmation explicite de l'utilisateur. Une notice "Fonctionnement de votre domaine gratuit" explique que le domaine est enregistre au nom de MCD pendant l'essai, qu'il sera transféré gratuitement au nom du client lorsque celui-ci devient un client Office payant, et qu'il peut être racheté pour €15 en cas de départ anticipé. Les details de revocation sont enregistres dans la table d'audit `domain_perk_revocations` pour reference par le support.
@@ -156,19 +156,19 @@ Le modal de reclamation avertit de ces consequences avant qu'une reclamation de 
 La carte d'achat de domaine (`DomainPurchaseCard.vue`, `domain-purchase.service.ts`) est la premiere carte sur la page des parametres Domaines. Elle apparait lorsque l'espace de travail n'a pas encore de domaine personnalise actif. La carte permet a l'utilisateur de choisir et d'acquerir un domaine via deux chemins, qui ouvrent tous deux un modal d'achat en deux etapes (`DomainClaimModal.vue`). La premiere etape collecte les donnees du titulaire (requises par le registrar pour le WHOIS). La deuxieme etape gere le paiement ou la soumission :
 
 - **Acheter** -- Achat payant via OpenProvider. L'utilisateur saisit un nom de domaine, la carte appelle `GET /api/domain-purchase/quote` pour verifier la disponibilite et le prix, puis ouvre le modal d'achat. Apres avoir saisi les donnees du titulaire, le modal appelle `POST /api/domain-purchase/checkout-session` pour creer une session de paiement Stripe et affiche Stripe Embedded Checkout pour le paiement. Une fois le paiement termine, `POST /api/domain-purchase/finalize` enregistre le domaine chez OpenProvider et cree la ligne `domains` en mode nameserver, reliee a Cloudflare.
-- **Reclamation gratuite** -- Les espaces de travail eligibles en periode d'essai Pro peuvent reclamer gratuitement un domaine `.nl` pour la premiere annee. La carte appelle `GET /api/domain-purchase/free-domain/eligibility` pour verifier le niveau de reclamation et le statut des conditions. Le modal collecte les donnees du titulaire et appelle `POST /api/domain-purchase/free-domain/claim` a l'envoi. La plateforme prend en charge les frais d'enregistrement de la premiere annee.
+- **Reclamation gratuite**: Les espaces de travail éligibles en période d'essai Office peuvent réclamer gratuitement un domaine `.nl` pour la première année. La carte appelle `GET /api/domain-purchase/free-domain/eligibility` pour verifier le niveau de reclamation et le statut des conditions. Le modal collecte les donnees du titulaire et appelle `POST /api/domain-purchase/free-domain/claim` a l'envoi. La plateforme prend en charge les frais d'enregistrement de la premiere annee.
 
 Les reclamations gratuites ne different que par la maniere dont le domaine est renouvele apres la premiere annee :
 
 - **Niveau Trial** -- Les espaces de travail en période d'essai Office. La première année est gratuite. À la fin de l'année gratuite, l'espace de travail doit avoir un abonnement Office payant ; le domaine se renouvelle alors dans le cadre de l'abonnement Office, payé par l'espace de travail. Si l'espace de travail cesse de payer Office après l'année gratuite, le domaine expire et doit être renouvelé manuellement. Pendant l'annee d'essai, l'utilisateur peut optionnellement enregistrer une carte via Stripe SetupIntent dans le modal pour le futur renouvellement automatique.
 - **Niveau Payant** -- Domaines standard achetes au prix fort. Le renouvellement est facture via le moyen de paiement enregistre sur le cycle annuel. Si le paiement echoue, une notification de renouvellement manuel est envoyee.
-- **Niveau gratuit à vie** -- Un petit nombre d'espaces de travail conservent Pro gratuitement et le renouvellement de domaine gratuit à vie au titre d'accords antérieurs. Aucun moyen de paiement requis ; le renouvellement est gere automatiquement par la plateforme, MCD absorbant le cout de gros. Ce niveau est clos et ne peut pas etre demande.
+- **Niveau gratuit à vie**: Un petit nombre d'espaces de travail conservent Office gratuitement et le renouvellement de domaine gratuit à vie au titre d'accords antérieurs. Aucun moyen de paiement requis ; le renouvellement est gere automatiquement par la plateforme, MCD absorbant le cout de gros. Ce niveau est clos et ne peut pas etre demande.
 
 Le point de terminaison d'eligibilite (`GET /api/domain-purchase/free-domain/eligibility`) renvoie un champ `tier` en plus du rapport de conditions. Il n'expose aucun nombre de reclamations restantes.
 
 L'eligibilite est determinee par un ensemble de conditions strictes verifiees cote serveur :
 
-- **Espace de travail Pro actif** -- l'espace de travail doit etre sur Pro (essai ou payant). Les espaces de travail sur Free ne peuvent pas reclamer.
+- **Espace de travail Office actif** : l'espace de travail doit être sur Office (essai ou payant). Les espaces de travail sur Desk ne peuvent pas réclamer.
 - **KVK requis** -- l'espace de travail doit avoir un numero KVK lie.
 - **Le domaine doit être `.nl`** -- le programme gratuit ne concerne que l'extension NL.
 - **Le domaine doit correspondre au nom KVK** -- le domaine doit correspondre a la raison sociale ou a un nom commercial.
@@ -227,7 +227,7 @@ Ce que couvrent les onglets :
 - **Domaine et e-mail** — Domaine personnalise, DNS, SSL, redirections et configuration de la boite de reception. Voir la section domaines personnalises ci-dessus.
 - **Parametres** — Choisissez quel constructeur est actif (modele ou sur mesure) et configurez le slug de l'espace de travail et les autres parametres du site.
 
-Lorsque votre espace de travail possede plusieurs domaines personnalises actifs (abonnement Pro), un selecteur de domaine permet d'editer une variante du site par domaine. Chaque domaine dispose de ses propres pages, navigation, tokens de design et snapshot de publication. Changer de domaine reinitialise l'onglet actif.
+Lorsque votre espace de travail possede plusieurs domaines personnalises actifs (abonnement Office), un selecteur de domaine permet d'editer une variante du site par domaine. Chaque domaine dispose de ses propres pages, navigation, tokens de design et snapshot de publication. Changer de domaine reinitialise l'onglet actif.
 
 Le site public est diffuse a l'URL la plus prioritaire disponible pour l'entreprise : racine du domaine personnalise → sous-domaine de l'espace de travail → route de secours `/portal/<slug>`.
 
@@ -371,7 +371,7 @@ Les pages succes-du-checkout et checkout-annule affichent a l'acheteur un ecran 
 
 ## Visibilite de l'onglet Boite de reception
 
-L'onglet Boite de reception est toujours visible dans la barre laterale et la barre de navigation inferieure. Sur les abonnements gratuits sans boite de reception, il s'affiche comme indicateur de mise a niveau et ouvre la comparaison des abonnements lorsque vous le selectionnez. Sur les abonnements payants, il reste toujours visible, meme avant qu'un domaine soit connecte, car il est le point d'entree de l'assistant de configuration de la boite de reception.
+L'onglet Boite de reception est toujours visible dans la barre laterale et la barre de navigation inferieure. Sur Desk, la boîte de réception se limite à lire et à répondre aux messages ; rédiger de nouveaux messages, les boîtes aux lettres propres et les domaines relèvent d'Office. Sur Office, l'onglet reste toujours visible, meme avant qu'un domaine soit connecte, car il est le point d'entree de l'assistant de configuration de la boite de reception.
 
 Pour un espace de travail qui a deja configure une boite de reception sur un domaine, l'onglet affiche la veritable boite avec les compteurs de non-lus et la gestion complete des fils. Pour les espaces payants sans domaine configure, selectionner l'onglet redirige vers `/inbox/setup` afin de connecter le domaine et activer la boite de reception en un seul flux.
 

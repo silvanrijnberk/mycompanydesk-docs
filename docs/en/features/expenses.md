@@ -68,7 +68,7 @@ For image or PDF receipts:
 4. Review the extracted supplier, date, amount, VAT and category.
 5. Confirm to create the expense(s).
 
-Receipt scanning is available on every plan, including Free. The number of scans per month depends on your plan.
+Receipt scanning is available on every plan, including Desk. The number of scans per month depends on your plan: 3 on Desk and 200 on Office.
 
 ### Locked VAT periods
 
@@ -161,7 +161,7 @@ Select multiple expenses for:
 - **Categorize** - Re-assign the category (re-runs the depreciation hook for newly-investment-flagged rows).
 - **Archive** - Move to archive. Archiving unpaid expenses that have a due date pauses their open payment reminders. The bulk bar asks for confirmation first when any selected expense is unpaid and has a due date, so you know how many of the selected expenses lose a reminder. The reminder stays paused while the expenses are archived. If you restore an archived expense later, the daily sweep recreates the reminder, but not immediately; it returns the next night at the earliest.
 - **Delete** - Permanently remove.
-- **Export** - Download as CSV.
+- **Export** - Download as CSV (Office).
 - **Mark as paid** - Mark selected expenses as paid. Marking a bank or inbox draft as paid clears its "To review" flag at the same time, so the row shows up in your reports, VAT return and accountant export instead of staying hidden. This only happens when you set the status to paid, not when you move it back to unpaid.
 
 If a bulk action is refused because one or more selected rows fall inside a locked VAT period, the error message names the exact period and tells you what to do next. A filed and locked period can only be reopened via a supplementary VAT return. A bare lock (the period's filing deadline has passed but no return was filed) can be unlocked temporarily from the VAT page. Remove rows that fall in that period from your selection, or use the matching correction route, then try again.

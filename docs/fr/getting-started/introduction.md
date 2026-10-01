@@ -28,26 +28,26 @@ Les factures, devis et e-mails peuvent également être envoyés en néerlandais
 
 ## Abonnements
 
-MyCompanyDesk propose un plan Gratuit et deux plans payants : Starter et Pro. Les nouveaux clients bénéficient d'un essai Pro de 60 jours ; ceux qui ne convertissent pas restent sur Gratuit.
+MyCompanyDesk propose deux formules : Desk et Office. Desk est gratuit et reste gratuit. Les nouveaux clients bénéficient de 60 jours d'Office, sans carte bancaire ; un espace de travail qui ne change pas de formule passe automatiquement sur Desk et conserve toutes ses données.
 
-| Fonctionnalité | Gratuit | Starter | Pro |
-|---|---|---|---|
-| Factures | Illimité | Illimité | Illimité |
-| Devis | Illimité | Illimité | Illimité |
-| Suivi des dépenses | Illimité | Illimité | Illimité |
-| Numérisation de reçus | Oui (3 scans/mois) | Oui (30 scans/mois) | Oui (200 scans/mois) |
-| Suggestions IA | Oui | Oui | Oui |
-| Image de marque personnalisée | Oui | Oui | Oui |
-| Saisie de temps, outils linguistiques | - | Oui | Oui |
-| Page entreprise publique | Oui | Oui | Oui |
-| Contrats et projets | - | Oui | Oui |
-| Rapports et export CSV/Excel | - | Oui | Oui |
-| Accès équipe | Vous seul | Vous seul | Personnes illimitées |
-| Boîte mail professionnelle sur votre domaine | - | - | Oui |
-| Connexions bancaires | - | - | Jusqu'à 3 |
-| Multi-domaine, routage de domaine personnalisé | - | - | Oui |
-| Rapports avancés, support prioritaire | - | - | Oui |
-| Accès API, webhooks | - | - | Oui |
+| Fonctionnalité | Desk | Office |
+|---|---|---|
+| Prix | Gratuit | 12,99 EUR par mois ou 129,90 EUR par an, hors TVA |
+| Factures, devis, dépenses | Illimité | Illimité |
+| Projets et saisie de temps | Oui | Oui |
+| Numérisation de reçus | Oui (3 scans/mois) | Oui (200 scans/mois) |
+| Image de marque personnalisée | Oui | Oui |
+| Page entreprise publique et site sur mycompanydesk.site | Oui | Oui |
+| Boîte mail professionnelle | Lire et répondre | Complète, avec vos propres boîtes mail |
+| Accès équipe | Vous seul | Personnes illimitées |
+| Factures récurrentes, contrats et facturation automatique | - | Oui |
+| Connexions bancaires | - | Jusqu'à 3 |
+| Domaine personnalisé, aussi pour votre site | - | Oui |
+| Comptabilité complète et dépôt de la déclaration de TVA | - | Oui |
+| Export CSV/Excel, rapports avancés, outils linguistiques | - | Oui |
+| Accès API, webhooks, support prioritaire | - | Oui |
+
+Tous les détails se trouvent sous [Abonnement et paiements](/fr/settings/billing).
 
 ## Obtenir de l'aide
 

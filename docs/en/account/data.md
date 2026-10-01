@@ -64,7 +64,7 @@ Download your records per type:
 - **Expenses** as CSV, with categories and amounts
 
 ::: info
-CSV exports are available from the **Starter** plan. The complete JSON backup is available on every plan, including Free.
+The CSV exports of your invoices and expenses are part of the **Office** plan. Your customer list as CSV and the complete JSON backup are available on every plan, including Desk.
 :::
 
 ### Complete backup

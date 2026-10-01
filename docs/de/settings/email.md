@@ -6,7 +6,7 @@ last_verified: 2026-09-30
 
 # E-Mail
 
-MyCompanyDesk sendet Ihre Rechnungen und Angebote per E-Mail an Ihre Kunden. **Einstellungen → E-Mail** ist der Ausgangspunkt für alles rund um diese Mails: **Adressen und Versand** für die Absenderseite, **Rechnungs- und Angebotsmails** für die Mails, die wir für Ihre Dokumente verfassen, **Posteingangs-Mails** für das, was Sie selbst schreiben, und **Regeln** für eingehende Mail. Die Seite ist in jedem Abo verfügbar; nur der Versand von der eigenen Domain gehört zu Pro.
+MyCompanyDesk sendet Ihre Rechnungen und Angebote per E-Mail an Ihre Kunden. **Einstellungen → E-Mail** ist der Ausgangspunkt für alles rund um diese Mails: **Adressen und Versand** für die Absenderseite, **Rechnungs- und Angebotsmails** für die Mails, die wir für Ihre Dokumente verfassen, **Posteingangs-Mails** für das, was Sie selbst schreiben, und **Regeln** für eingehende Mail. Die Seite ist in jedem Abo verfügbar; nur der Versand von der eigenen Domain gehört zu Office.
 
 Regeln und vertrauenswürdige Absender für eingehende Post stehen unter **Regeln**; siehe unten [Empfangen: Postfächer und Regeln](#empfangen-postfaecher-und-regeln).
 
@@ -20,7 +20,7 @@ Die Karte **Versandmethode** legt fest, welche Adresse Ihre Kunden als Absender 
 
 Senden Sie Rechnungen von Ihrer eigenen Domain, genau wie Ihren Posteingang. Kunden sehen Ihre Adresse als Absender.
 
-- Der Versand von der eigenen Domain gehört zum Pro-Abo; in anderen Abos zeigt die Option einen Upgrade-Link.
+- Der Versand von der eigenen Domain gehört zum Office-Abo; in Desk zeigt die Option einen Upgrade-Link.
 - Ist bereits eine Domain verbunden? Dann bietet die Karte einen Ein-Klick-Button (**E-Mail für ihredomain.de aktivieren**). Das ist sicher für bestehende E-Mail: Läuft auf Ihrer Domain bereits Mail bei einem anderen Anbieter (zum Beispiel Gmail oder Microsoft 365), warnt MyCompanyDesk und übernimmt nichts.
 - Noch keine Domain? Über **Domain hinzufügen** gelangen Sie zu den Domain-Einstellungen.
 - Sobald der Versand aktiv ist, zeigt die Karte, von welcher Adresse Ihre Dokumente verschickt werden, mit einem Link zu den DNS-Einträgen.
@@ -122,4 +122,4 @@ Auch für die eingehende Mail ist die E-Mail-Seite der zentrale Punkt:
 ## Verwandte Themen
 
 - [Unternehmenseinstellungen](/de/settings/company): die Unternehmensdaten hinter Ihrer Fußzeile
-- [Abo & Zahlungen](/de/settings/billing): der Versand von der eigenen Domain gehört zu Pro
+- [Abo & Zahlungen](/de/settings/billing): der Versand von der eigenen Domain gehört zu Office

@@ -49,7 +49,7 @@ Der Assistent fragt nach der IBAN, auf die Kunden überweisen. Sie können jetzt
 
 ## Schritt 4: Einrichtung abschließen
 
-Der letzte Schritt bestätigt Ihre 60-tägige Pro-Testphase, kostenlos und ohne Kreditkarte, und wendet alles an, dann bringt er Sie zum Dashboard. Im Hintergrund läuft nichts mit: Der Abschlussbildschirm nennt, was noch folgt (die Sicherheit Ihres Kontos und Ihre Website), und diese Vorschläge folgen später, unter **Richten Sie das ein** auf dem Dashboard, wann immer es passt. MyCompanyDesk erzeugt hier keine Website mehr und wählt keine Leistungen für Sie; eine Website bauen Sie selbst, beim ersten Öffnen des Bereichs **Website**.
+Der letzte Schritt bestätigt Ihre 60-tägige Office-Testphase, kostenlos und ohne Kreditkarte, und wendet alles an, dann bringt er Sie zum Dashboard. Im Hintergrund läuft nichts mit: Der Abschlussbildschirm nennt, was noch folgt (die Sicherheit Ihres Kontos und Ihre Website), und diese Vorschläge folgen später, unter **Richten Sie das ein** auf dem Dashboard, wann immer es passt. MyCompanyDesk erzeugt hier keine Website mehr und wählt keine Leistungen für Sie; eine Website bauen Sie selbst, beim ersten Öffnen des Bereichs **Website**.
 
 Klicken Sie auf **Einrichtung abschließen** und der Assistent wendet Ihre Unternehmensdaten, USt.-Status, IBAN und Standardeinstellungen an und bringt Sie zu Ihrem Dashboard.
 

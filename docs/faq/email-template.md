@@ -39,7 +39,7 @@ Onder **Instellingen → E-mail → Factuur- en offertemails** kies je per soort
 Met een stijl gaat elke volgende mail van die soort er zo uit, in alle talen. Heb je een eigen tekst voor die soort, dan vraagt de pagina of de stijl hem moet vervangen, en **Terug naar standaardtekst** brengt je per soort terug naar de stijl die je het laatst koos. De schakelaar in het verzendvenster die de regeltabel toevoegt of weghaalt, beslist per verzending over de regels, zolang de tabel voor die soort mag; de stijl Compleet draagt hem altijd.
 
 Wat je altijd kunt aanpassen:
-1. De afzender: ga naar Instellingen → E-mail → Adressen en verzenden en kies je eigen domein (Pro), Gmail of Outlook
+1. De afzender: ga naar Instellingen → E-mail → Adressen en verzenden en kies je eigen domein (Office), Gmail of Outlook
 2. Je afsluiter: vul je support-e-mail, website en social links in bij Instellingen → Bedrijfsgegevens; die verschijnen onder elke mail die je verstuurt, en op je facturen en je website. Je keurmerken (STEK, VCA, CE en meer) staan er ook onder; bij Instellingen → E-mail kies je per soort mail of dat gebeurt
 3. Een losse mail: in het verzendvenster pas je de ontvanger, het onderwerp en het bericht aan voordat de mail de deur uit gaat
 

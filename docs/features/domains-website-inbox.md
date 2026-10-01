@@ -6,7 +6,7 @@ last_verified: 2026-09-30
 
 # Domeinen, website en inbox
 
-> **Status: pre-launch.** Alle drie de features op deze pagina rollen samen uit als een bundel. Ze worden beheerd door de `custom_domains` en `public_business_page` feature flags en worden nog uitgerold naar de openbare abonnementen. Het gedrag dat hier beschreven staat komt overeen met de codebase per 2026-05-09; als een scherm er in jouw werkruimte anders uitziet, is de bundel daar nog niet ingeschakeld.
+> **Status: pre-launch.** Alle drie de features op deze pagina rollen samen uit als een bundel. Ze worden beheerd door de `custom_domains` en `public_business_page` feature flags en worden nog uitgerold. Eigen domeinen en de volledige inbox horen bij Office; de website op een mycompanydesk.site-adres en de inbox om te lezen en te beantwoorden zitten in Desk. Het gedrag dat hier beschreven staat komt overeen met de codebase per 2026-05-09; als een scherm er in jouw werkruimte anders uitziet, is de bundel daar nog niet ingeschakeld.
 
 Eigen domeinen, de gehoste bedrijfswebsite en de gedeelde e-mailinbox vormen samen een product. De reden: ze delen status. Dezelfde `domains`-rij die bewijst dat jij `acme.nl` beheert, maakt `acme.nl` ook de URL van je website en zorgt dat `info@acme.nl` mail kan ontvangen. Er is een onboarding-flow, een instellingenstructuur en een plek in de app om het allemaal te beheren.
 
@@ -14,7 +14,7 @@ Eigen domeinen, de gehoste bedrijfswebsite en de gedeelde e-mailinbox vormen sam
 
 Voeg een domein toe en je krijgt drie dingen:
 
-- **Een eigen adres.** Je bedrijf draait op `acme.nl` in plaats van `acme.mycompanydesk.com`.
+- **Een eigen adres.** Je bedrijf draait op `acme.nl` in plaats van `acme.mycompanydesk.site`.
 - **Een live website.** De gehoste bedrijfspagina wordt automatisch gepubliceerd op het geverifieerde domein.
 - **Een werkende inbox.** `info@acme.nl`, plus `support@`, `sales@` en een alleen-verzend `noreply@`-alias, vangen mail op en versturen antwoorden.
 
@@ -28,7 +28,7 @@ De wizardstap op `/setup` is de aanbevolen start. Het voert via `apply.service.j
 
 Twee routes in de wizard, beide opgeslagen in de `domains`-tabel:
 
-- **Gratis werkruimte-subdomein** -- `jouw-slug.mycompanydesk.com` (of `.nl` voor NL-werkruimtes). Geen DNS-werk; de slug (de simpele vorm van je bedrijfsnaam) wordt geregistreerd als Cloudflare Pages custom domain en de website is binnen enkele seconden live. Het subdomein komt in beeld zodra je de website publiceert, niet eerder.
+- **Gratis werkruimte-subdomein**: `jouw-slug.mycompanydesk.site`. Geen DNS-werk; de slug (de simpele vorm van je bedrijfsnaam) wordt geregistreerd als Cloudflare Pages custom domain en de website is binnen enkele seconden live. Het subdomein komt in beeld zodra je de website publiceert, niet eerder. Dit adres zit in Desk: de website draagt er een klein label "Gemaakt met MyCompanyDesk" en blijft permanent online. Op een eigen domein (Office) staat dat label er niet.
 - **Je eigen domein** -- voer `acme.nl` in. Twee setup-modi worden ondersteund:
   - **Nameserver-modus** (aanbevolen) -- er wordt een Cloudflare-zone aangemaakt voor het domein. Je wijzigt de nameservers van je registrar naar de twee `*.ns.cloudflare.com`-hostnamen die de wizard toont. Cloudflare wordt de gezaghebbende DNS voor het domein, wat e-mail, SSL en DNS-beheer binnen MyCompanyDesk mogelijk maakt.
   - **CNAME-modus** -- voor een subdomein (bijv. `portal.acme.nl`) of om alleen de website op je hoofddomein te koppelen, terwijl e-mail en al het andere bij je huidige aanbieder blijft ("Alleen mijn website koppelen"). Je voegt één CNAME-record toe bij je huidige aanbieder; op een hoofddomein is dat meestal `www.` plus je domein, want de meeste aanbieders kunnen geen CNAME-record op het kale domein zetten. Zodra het record staat, toont `www.<jouw domein>` je MyCompanyDesk-website. E-mailroutering is niet beschikbaar in deze modus; de website op het kale domein zelf hosten kan alleen met nameservermodus.
@@ -54,7 +54,7 @@ De gehoste bedrijfspagina (zie [Sitebouwer](/advanced/business-page)) wordt auto
 
 1. Een eigen domein met `business_page_enabled = true` → `https://acme.nl`
 2. Een eigen domein met `portal_subdomain_enabled = true` → `https://portal.acme.nl`
-3. Het werkruimte-subdomein → `https://acme.mycompanydesk.com`
+3. Het werkruimte-subdomein → `https://acme.mycompanydesk.site`
 4. De terugvalportalroute (`/portal/<slug>`) wanneer er niets anders is geconfigureerd.
 
 ### Stap 5 -- Inbox ontvangt mail
@@ -125,13 +125,13 @@ Belangrijke kolommen die de app leest:
 
 Domeinverlenging volgt drie routes, afhankelijk van hoe het domein is verkregen:
 
-1. **Gratis gebundelde verlenging** (naar Pro geconverteerde trial-tier, of een bestaande gratis-voor-het-leven-afspraak): MCD neemt de wholesale-verlengkosten voor zijn rekening. Het domein verloopt automatisch zolang de werkruimte op Pro blijft. Geen betaalmiddel nodig.
-2. **Betaalde automatische verlenging** (betaalde aankoop, of trial-tier zonder Pro): Jaarlijks in rekening gebracht via de opgeslagen kaart. Werkt als elke andere abonnementsverlenging.
-3. **Handmatige verlenging**: Als een trial-tier werkruimte van Pro af valt EN geen opgeslagen kaart heeft, slaat het automatische verlengingspad deze over. De gebruiker ziet een melding en kan een eenmalige betaling starten via `POST /api/domains/renew/:domainId`, wat een Stripe Embedded Checkout-sessie aanmaakt voor de verlenging. Dit is de enige manier om een domein actief te houden zonder actief abonnement of opgeslagen kaart.
+1. **Gratis gebundelde verlenging** (naar Office geconverteerde trial-tier, of een bestaande gratis-voor-het-leven-afspraak): MCD neemt de wholesale-verlengkosten voor zijn rekening. Het domein verloopt automatisch zolang de werkruimte op Office blijft. Geen betaalmiddel nodig.
+2. **Betaalde automatische verlenging** (betaalde aankoop, of trial-tier zonder Office): Jaarlijks in rekening gebracht via de opgeslagen kaart. Werkt als elke andere abonnementsverlenging.
+3. **Handmatige verlenging**: Als een trial-tier werkruimte van Office af valt EN geen opgeslagen kaart heeft, slaat het automatische verlengingspad deze over. De gebruiker ziet een melding en kan een eenmalige betaling starten via `POST /api/domains/renew/:domainId`, wat een Stripe Embedded Checkout-sessie aanmaakt voor de verlenging. Dit is de enige manier om een domein actief te houden zonder actief abonnement of opgeslagen kaart.
 
 #### Overname bij vertrek tijdens de proef
 
-Wanneer een klant tijdens de Pro-proefperiode vertrekt zonder Pro-klant te worden, is er een derde optie voor het gratis `.nl`-domein: overnemen voor eenmalig €15,00 incl. btw (éénmalig). De overname-flow (`DomainBuyoutModal.vue`) laat de klant betalen via Stripe Embedded Checkout en krijgt daarmee volledig eigendom. Na betaling wordt de houder overgezet van MCD naar de klant en wordt de verhuiscode (EPP) getoond, waarmee het domein naar elke registrar verhuisd kan worden.
+Wanneer een klant tijdens de Office-proefperiode vertrekt zonder Office-klant te worden, is er een derde optie voor het gratis `.nl`-domein: overnemen voor eenmalig €15,00 incl. btw (éénmalig). De overname-flow (`DomainBuyoutModal.vue`) laat de klant betalen via Stripe Embedded Checkout en krijgt daarmee volledig eigendom. Na betaling wordt de houder overgezet van MCD naar de klant en wordt de verhuiscode (EPP) getoond, waarmee het domein naar elke registrar verhuisd kan worden.
 
 De prijs van €15,00 is bewust incl. btw vermeld, omdat de betaling plaatsvindt op het moment dat de klant vertrekt. Het nettobedrag dat naar Stripe gaat is €12,40; daar wordt 21% Nederlandse btw bovenop geheven en afgerond op hele centen, zodat het totaal precies op €15,00 uitkomt. Zie `apps/api/src/modules/domains/domain-pricing.config.js` in de RichardTool-repo en `sources/vat-rates.yaml#countries.NL.standard`.
 
@@ -145,8 +145,8 @@ Databasetabellen:
 
 Het overdragen van een domein dat via MyCompanyDesk is geregistreerd naar een andere registrar heeft permanente gevolgen, afgedwongen door de wekelijkse OpenProvider-statussynchronisatie:
 
-- **Domeinen met een gratis-voor-het-leven-afspraak**: De gratis claim wordt verwijderd en de interne levenslange Pro-toekenning van de werkruimte wordt opgezegd. De werkruimte wordt een normale betalende klant. Dit is onomkeerbaar; de toekenning kan niet opnieuw worden geclaimd.
-- **Trial-tier / Pro-gebundelde domeinen**: De gebundelde-gratis-status gaat verloren. De werkruimte kan nooit meer een ander gratis domein claimen (al afgedwongen via de retained-claims-lijst). Let op: het overnemen van het domein tijdens de proef (zie overnamesectie hierboven) is geen overdracht — het is een houderswijziging die de klant eigendom geeft voordat een overdracht plaatsvindt, waardoor het gratis-domeinvoordeel behouden blijft voor de duur van de proef.
+- **Domeinen met een gratis-voor-het-leven-afspraak**: De gratis claim wordt verwijderd en de interne levenslange Office-toekenning van de werkruimte wordt opgezegd. De werkruimte wordt een normale betalende klant. Dit is onomkeerbaar; de toekenning kan niet opnieuw worden geclaimd.
+- **Trial-tier / Office-gebundelde domeinen**: De gebundelde-gratis-status gaat verloren. De werkruimte kan nooit meer een ander gratis domein claimen (al afgedwongen via de retained-claims-lijst). Let op: het overnemen van het domein tijdens de proef (zie overnamesectie hierboven) is geen overdracht, maar een houderswijziging die de klant eigendom geeft voordat een overdracht plaatsvindt, waardoor het gratis-domeinvoordeel behouden blijft voor de duur van de proef.
 - **Betaalde domeinen**: Geen voordeelintrekking. Het domein gaat simpelweg naar `status = 'transferred_out'`.
 
 De claim-modal waarschuwt voor deze gevolgen voordat een gratis-domein claim wordt ingediend, en vereist expliciete bevestiging van de gebruiker. Een "Zo werkt je gratis domein"-uitleg toont dat het domein tijdens de proef op naam van MCD staat, gratis op je naam komt als je betalende Office-klant wordt, en bij vertrek voor €15 overgenomen kan worden. Intrekkingsdetails worden vastgelegd in de `domain_perk_revocations`-audittabel voor supportreferentie.
@@ -156,19 +156,19 @@ De claim-modal waarschuwt voor deze gevolgen voordat een gratis-domein claim wor
 De domein-aanschafkaart (`DomainPurchaseCard.vue`, `domain-purchase.service.ts`) is de eerste kaart op de Domeinen-pagina. De kaart verschijnt wanneer de werkruimte nog geen actief eigen domein heeft. Via de kaart kan de gebruiker een domein uitkiezen en bemachtigen via twee routes, die beide een speciale twee-stappen aanschafmodal openen (`DomainClaimModal.vue`). Stap 1 verzamelt de registrantgegevens (de gegevens die de registrar nodig heeft voor WHOIS). Stap 2 handelt de betaling of claim af:
 
 - **Kopen** -- Betaalde aankoop via OpenProvider. De gebruiker voert een domeinnaam in, de kaart roept `GET /api/domain-purchase/quote` aan om beschikbaarheid en prijs te controleren, en opent daarna de aanschafmodal. Nadat de registrantgegevens zijn ingevuld, roept de modal `POST /api/domain-purchase/checkout-session` aan om een Stripe-betalingssessie aan te maken en toont Stripe Embedded Checkout voor de betaling. Zodra de betaling voltooid is, registreert `POST /api/domain-purchase/finalize` het domein bij OpenProvider en maakt de `domains`-rij aan in nameserver-modus, gekoppeld aan Cloudflare.
-- **Gratis claim** -- Werkruimtes op een Pro-trial die aan de voorwaarden voldoen kunnen een `.nl`-domein gratis claimen voor het eerste jaar. De kaart roept `GET /api/domain-purchase/free-domain/eligibility` aan om de claim-tier van de werkruimte en de gate-status te controleren. De modal verzamelt de registrantgegevens en roept bij indienen `POST /api/domain-purchase/free-domain/claim` aan. Het platform betaalt de eerstejaars registratiekosten.
+- **Gratis claim**: Werkruimtes op een Office-trial die aan de voorwaarden voldoen kunnen een `.nl`-domein gratis claimen voor het eerste jaar. De kaart roept `GET /api/domain-purchase/free-domain/eligibility` aan om de claim-tier van de werkruimte en de gate-status te controleren. De modal verzamelt de registrantgegevens en roept bij indienen `POST /api/domain-purchase/free-domain/claim` aan. Het platform betaalt de eerstejaars registratiekosten.
 
 Gratis claims verschillen alleen in hoe het domein na het eerste jaar wordt verlengd:
 
 - **Trial-tier** -- Werkruimtes op een Office-trial. Het eerste jaar is gratis. Aan het einde van het gratis jaar moet de werkruimte op een betaald Office-abonnement zitten; het domein verloopt dan als onderdeel van het Office-abonnement, betaald door de werkruimte. Als de werkruimte stopt met Office betalen na het gratis jaar, verloopt het domein en moet handmatig verlengd worden. Tijdens het trial-jaar kan de gebruiker optioneel een kaart opslaan via Stripe SetupIntent in de modal voor toekomstige automatische verlenging.
 - **Paid-tier** -- Standaard domeinen gekocht voor de volle prijs. Verlenging wordt via de opgeslagen betaalmethode in rekening gebracht op de jaarlijkse cyclus. Als de betaling mislukt, wordt een handmatige-verlenging-melding verstuurd.
-- **Gratis-voor-het-leven-tier** -- Een klein aantal werkruimtes houdt Pro gratis en levenslange gratis domeinverlenging op basis van eerdere afspraken. Geen betaalmiddel nodig; verlenging wordt automatisch door het platform afgehandeld, waarbij MCD de wholesale-kosten draagt. Deze tier is gesloten en kan niet worden aangevraagd.
+- **Gratis-voor-het-leven-tier**: Een klein aantal werkruimtes houdt Office gratis en levenslange gratis domeinverlenging op basis van eerdere afspraken. Geen betaalmiddel nodig; verlenging wordt automatisch door het platform afgehandeld, waarbij MCD de wholesale-kosten draagt. Deze tier is gesloten en kan niet worden aangevraagd.
 
 Het eligibility-eindpunt (`GET /api/domain-purchase/free-domain/eligibility`) retourneert een `tier`-veld naast het gate-rapport. Het geeft geen aantal resterende claims terug.
 
 De geschiktheid wordt bepaald door harde voorwaarden die server-side worden gecontroleerd:
 
-- **Actieve Pro-werkruimte** -- de werkruimte moet op Pro zitten (trial of betaald). Werkruimtes op Free kunnen niet claimen.
+- **Actieve Office-werkruimte**: de werkruimte moet op Office zitten (trial of betaald). Werkruimtes op Desk kunnen niet claimen.
 - **KVK vereist** -- de werkruimte moet een KVK-nummer gekoppeld hebben.
 - **Domein moet `.nl` zijn** -- de gratis actie geldt alleen voor de NL-extensie.
 - **Domein moet overeenkomen met de KVK-naam** -- het domein moet corresponderen met de geregistreerde statutaire naam of een handelsnaam.
@@ -227,7 +227,7 @@ Wat de tabbladen doen:
 - **Domein & e-mail**-tab: eigen domein, DNS, SSL, redirects en de postbus- en e-mailinstellingen (nu onder Instellingen → E-mail → Adressen en verzenden). Zie de sectie eigen domeinen hierboven.
 - **Instellingen**-tab — Kies welke bouwer live staat (sjabloon of op maat) en stel de werkruimteslug en andere site-instellingen in.
 
-Wanneer je werkruimte meerdere actieve eigen domeinen heeft (Pro-abonnement), kun je via een domeinwisselaar een per-domein-variant van de site bewerken. Elk domein krijgt zijn eigen pagina's, navigatie, ontwerptokens en publicatiesnapshot. Wisselen van domein zet de actieve tab terug.
+Wanneer je werkruimte meerdere actieve eigen domeinen heeft (Office-abonnement), kun je via een domeinwisselaar een per-domein-variant van de site bewerken. Elk domein krijgt zijn eigen pagina's, navigatie, ontwerptokens en publicatiesnapshot. Wisselen van domein zet de actieve tab terug.
 
 De openbare site wordt getoond op de best beschikbare URL die het bedrijf bezit: eigen domein-root → werkruimte-subdomein → terugval `/portal/<slug>`-route.
 
@@ -371,7 +371,7 @@ De checkout-succes- en checkout-geannuleerd-pagina's tonen de koper een branded 
 
 ## Zichtbaarheid van de Inbox-tab
 
-De Inbox-tab is altijd zichtbaar in de zijbalk en onderste navigatiebalk. Op gratis abonnementen zonder inbox verschijnt hij als upgrade-hint en opent hij de abonnementsvergelijking als je erop klikt. Op betaalde abonnementen blijft de tab altijd zichtbaar, ook voordat er een domein is gekoppeld, omdat hij het startpunt is van de inbox-setup-wizard.
+De Inbox-tab is altijd zichtbaar in de zijbalk en onderste navigatiebalk. Op Desk is de inbox beperkt tot berichten lezen en beantwoorden; nieuwe berichten opstellen, eigen postbussen en domeinen horen bij Office. Op Office blijft de tab altijd zichtbaar, ook voordat er een domein is gekoppeld, omdat hij het startpunt is van de inbox-setup-wizard.
 
 Voor een werkruimte die al een inbox-domein heeft ingericht, toont de tab de echte inbox met ongelezen-tellers en volledige threadbeheer. Voor betaalde werkruimtes zonder inbox-domein leidt een klik op de tab door naar `/inbox/setup`, zodat je in één flow het domein koppelt en de inbox inschakelt.
 

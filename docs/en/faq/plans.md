@@ -1,7 +1,7 @@
 ---
 title: "Plans and pricing"
 description: "MyCompanyDesk has two plans: Desk and Office. Desk is free and stays free."
-last_verified: 2026-07-22
+last_verified: 2026-10-01
 chatbot:
   triggers:
     - "plans"
@@ -40,7 +40,7 @@ These features are defined in our billing config: [apps/api/src/modules/billing/
 **Upgrading and downgrading**
 - You can switch between Desk and Office at any time.
 - When you upgrade, the new features are available right away.
-- When you downgrade from Office to Desk, Office-only features stop working: your bank stops importing, new recurring invoices or expenses are no longer generated, preparing your VAT return and annual accounts stops, and sending new email from your own address stops. Email keeps coming in and you can still read and reply, your website keeps running on your own domain, and your data stays in your workspace. The cancel page lists exactly what keeps working and what stops before you decide.
+- When you downgrade from Office to Desk, Office-only features stop working: your bank stops importing, new recurring invoices or expenses are no longer generated, preparing your VAT return and annual accounts stops, and sending new email from your own address stops. Email keeps coming in and you can still read and reply, your website stays online on your mycompanydesk.site address, and your data stays in your workspace. The cancel page lists exactly what keeps working and what stops before you decide.
 - If a free 60-day Office trial ends and you do not subscribe, your workspace moves to Desk automatically.
 
 **Billing**
