@@ -22,10 +22,12 @@ Vous ne pouvez pas envoyer de rappel lorsque :
 - la facture est encore un brouillon
 - la facture est annulée
 - la facture est déjà marquée comme payée
-- le client a indiqué dans le portail qu'il a déjà payé et que le statut est "Vérification requise"
+- le client a indiqué dans le portail qu'il a déjà payé et que le statut est Vérification requise ; les relances attendent que vous confirmiez le paiement ou la déclaration rejetée
 - il s'agit d'un avoir ou d'une note de remboursement
 - la facture a été entièrement créditée par un avoir
 - il ne reste plus rien à payer (par exemple, le client a payé pendant que la page était ouverte)
+
+Une déclaration du portail a aussi une fin. Si cinq jours ouvrés passent après la déclaration (l'attente et la règle de remise vivent dans `apps/api/src/modules/scheduler/scheduler.service.js#checkStalePaymentClaims`) sans qu'aucun paiement n'arrive, MyCompanyDesk vérifie les faits : avec une connexion bancaire fonctionnelle sur le numéro de compte de la facture, qui ne montre aucun paiement entrant depuis environ la date de facture, la facture revient sur envoyée, la déclaration est effacée, et votre client peut payer ou déclarer à nouveau ; une notification vous dit que cela s'est produit. Dans tout autre cas, MyCompanyDesk vous demande une seule fois si le paiement est arrivé, et laisse la facture en l'état jusqu'à votre décision. Vous pouvez aussi agir vous-même : la page de facture propose **Confirmer le paiement** quand l'argent est là, et **Pas reçu** pour remettre la facture sur envoyée, ce qui fait repartir les relances et permet à votre client de payer ou de déclarer à nouveau.
 
 Quand une facture est en retard, la page de détail propose la prochaine étape à suivre :
 

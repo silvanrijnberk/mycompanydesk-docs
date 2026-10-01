@@ -22,10 +22,12 @@ Eine Erinnerung kann nicht gesendet werden, wenn:
 - die Rechnung noch ein Entwurf ist
 - die Rechnung storniert wurde
 - die Rechnung bereits als bezahlt markiert ist
-- der Kunde im Portal angegeben hat, dass er bereits bezahlt hat, und der Status "Überprüfung erforderlich" ist
+- der Kunde im Portal angegeben hat, dass er bereits bezahlt hat, und der Status Überprüfung erforderlich ist; Erinnerungen warten, bis Sie die Zahlung bestätigen oder die Meldung zurücksetzen
 - es sich um eine Gutschrift oder Rückerstattungsnotiz handelt
 - die Rechnung vollständig durch eine Gutschrift ausgeglichen wurde
 - nichts mehr offen steht (zum Beispiel weil der Kunde bezahlt hat, während die Seite geöffnet war)
+
+Auch eine Meldung aus dem Portal hat ein Ende. Bleiben fünf Werktage nach der Meldung (die Wartezeit und die Rücksetzregel stehen in `apps/api/src/modules/scheduler/scheduler.service.js#checkStalePaymentClaims`) Zahlungen aus, prüft MyCompanyDesk die Fakten: mit einer funktionierenden Bankanbindung auf der Kontonummer der Rechnung, die seit dem Rechnungsdatum keinen Zahlungseingang zeigt, setzt MyCompanyDesk die Rechnung zurück auf versendet, entfernt die Meldung, und Ihr Kunde kann wieder zahlen oder sich melden; eine Mitteilung sagt Ihnen, dass dies geschehen ist. In allen anderen Fällen fragt MyCompanyDesk Sie einmal nach, ob die Zahlung gekommen ist, und lässt die Rechnung unangetastet, bis Sie entscheiden. Sie können auch selbst handeln: auf der Rechnung stehen **Zahlung bestätigen**, wenn das Geld da ist, und **Nicht eingegangen**, um die Rechnung zurück auf versendet zu setzen, sodass Erinnerungen wieder laufen und Ihr Kunde erneut zahlen oder sich melden kann.
 
 Wenn eine Rechnung überfällig ist, schlägt die Rechnungsdetailseite einen nächsten Schritt vor:
 

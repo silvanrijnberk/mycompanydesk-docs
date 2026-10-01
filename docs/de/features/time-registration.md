@@ -71,7 +71,7 @@ Rechnungszeilen werden automatisch beschrieben: zuerst die Beschreibung des Eint
 Das automatische Abrechnen regeln Sie pro Projekt. Auf einer Projektseite wählen Sie, wie die Stunden dieses Projekts abgerechnet werden:
 
 - **Manuell** (die Voreinstellung): Diese Rechnung erstellen Sie selbst aus den Stunden des Projekts.
-- **Jeden Monat**: Am Ersten des Monats gehen die bis dahin erfassten Stunden, ergänzt um die weiterberechneten Ausgaben, in einer Rechnung an den Kunden des Projekts.
+- **An festem Tag** (die Voreinstellung): Sie wählen den Rhythmus für das Projekt: jede Woche an einem Wochentag oder jeden Monat an einem Tag des Monats. Die Stunden, die bis einschließlich des vorigen Rechnungstags erfasst sind, gehen ergänzt um die weiterberechneten Ausgaben in einer Rechnung an den Kunden des Projekts. Der Monat rechnet am gewählten Tag ab, bis zum 28., oder am letzten Tag des Monats, damit kurze Monate nicht überspringen; die Regel steht in `packages/shared/src/logic/billing-schedule.ts#isValidBillingSchedule`.
 - **Beim Abschluss**: Markieren Sie das Projekt als abgeschlossen, geht alles, was noch offen ist, in eine Schlussrechnung für den Kunden.
 
 Fällt das Projekt unter einen Vertrag, der selbst fakturiert, entscheidet dieser Vertrag, und die Projektseite sagt Ihnen das auch; einem solchen Projekt geben Sie keinen eigenen Rhythmus.
@@ -81,9 +81,9 @@ Auf der Kundenseite bündelt die Karte **Automatische Abrechnung** alles: jedes 
 - **Vorbereiten**: Die Rechnung wird für Sie erstellt, Sie erhalten eine Mitteilung und versenden sie selbst.
 - **Automatisch versenden**: Die Rechnung wird erstellt, Sie erhalten eine Mitteilung, und einen Tag später geht sie von selbst an den Kunden. Während dieses Tages können Sie sie noch zurückhalten; eine zurückgehaltene Rechnung bleibt einfach in der App liegen.
 
-Alles, was für denselben Kunden zum selben Moment fällig wird, landet auf einer Rechnung, es sei denn, ein Projekt möchte eine eigene. Stunden ohne Projekt schließen sich an die Monatsrechnung an, wenn der Schalter auf der Kundenkarte aktiv ist. Die erste automatische Rechnung versenden Sie am besten selbst, damit Sie einmal sehen, wie sie aussieht; die Karte wiederholt das bei der ersten Rechnung ebenfalls.
+Alles, was für denselben Kunden zum selben Moment fällig wird, landet auf einer Rechnung, es sei denn, ein Projekt möchte eine eigene. Stunden ohne Projekt schließen sich an diese Rechnung an, wenn der Schalter auf der Kundenkarte aktiv ist; ihren Tag stellen Sie dort mit derselben Auswahl ein, die die Projekte auch nutzen. Die erste automatische Rechnung versenden Sie am besten selbst, damit Sie einmal sehen, wie sie aussieht; die Karte wiederholt das bei der ersten Rechnung ebenfalls.
 
-Alles Ungewöhnliche hält den automatischen Versand zurück: ein Kunde ohne E-Mail-Adresse, Stunden ohne Satz, ein Betrag, der spürbar über den Vormonaten liegt, oder eine Rechnung, die mehrere Monate umfasst, weil das automatische Abrechnen eine Zeit still stand. Diese Rechnungen werden nur vorbereitet, und die Mitteilung sagt Ihnen, warum.
+Alles Ungewöhnliche hält den automatischen Versand zurück: ein Kunde ohne E-Mail-Adresse, Stunden ohne Satz, ein Betrag, der spürbar über den Vormonaten liegt, oder eine Rechnung, die einen längeren Zeitraum umfasst, weil das automatische Abrechnen eine Zeit still stand. Diese Rechnungen werden nur vorbereitet, und die Mitteilung sagt Ihnen, warum.
 
 Ausgaben fließen nur mit, wenn die Ausgabe selbst auf [dem Kunden weiterberechnen](/de/features/expenses#weiterberechnung-und-kostenänderungen) steht.
 

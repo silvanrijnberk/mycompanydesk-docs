@@ -71,7 +71,7 @@ Les lignes de facture sont décrites automatiquement : d'abord la description de
 La facturation automatique se règle par projet. Sur la page d'un projet, vous choisissez comment ses heures sont facturées :
 
 - **Manuel** (le réglage par défaut) : vous créez la facture vous-même à partir des heures du projet.
-- **Chaque mois** : le premier jour du mois, les heures enregistrées jusque-là, plus les dépenses refacturées, partent sur une facture pour le client du projet.
+- **À un jour fixe** (le réglage par défaut) : vous choisissez le rythme du projet : chaque semaine un jour de la semaine, ou chaque mois un jour du mois. Les heures enregistrées jusqu'à la précédente date de facturation incluse, plus les dépenses refacturées, partent sur une facture pour le client du projet. Le mois est facturé au jour choisi, jusqu'au 28, ou au dernier jour du mois, pour que les mois courts ne sautent jamais ; la règle vit dans `packages/shared/src/logic/billing-schedule.ts#isValidBillingSchedule`.
 - **À l'achèvement** : quand vous marquez le projet comme terminé, tout ce qui reste ouvert part sur une facture finale pour le client.
 
 Si le projet relève d'un contrat qui facture lui-même, c'est ce contrat qui décide, et la page du projet le dit ; un tel projet ne reçoit pas son propre rythme.
@@ -81,9 +81,9 @@ Sur la page du client, la carte **Facturation automatique** réunit tout : chaqu
 - **Préparer** : la facture est créée pour vous, vous recevez une notification et vous l'envoyez vous-même.
 - **Envoyer automatiquement** : la facture est créée, vous recevez une notification, et un jour plus tard elle part d'elle-même vers le client. Pendant cette journée, vous pouvez encore la retenir ; une facture retenue reste simplement prête dans l'application.
 
-Tout ce qui arrive à échéance pour le même client au même moment atterrit sur une seule facture, sauf si un projet demande la sienne propre. Les heures sans projet rejoignent la facture mensuelle quand l'interrupteur de la carte client est activé. La première facture automatique gagne à être envoyée par vous-même, pour avoir vu une fois à quoi elle ressemble ; la carte le rappelle aussi, la première fois.
+Tout ce qui arrive à échéance pour le même client au même moment atterrit sur une seule facture, sauf si un projet demande la sienne propre. Les heures sans projet rejoignent la même facture quand l'interrupteur de la carte client est activé ; la carte règle leur jour avec la même liste que celle des projets. La première facture automatique gagne à être envoyée par vous-même, pour avoir vu une fois à quoi elle ressemble ; la carte le rappelle aussi, la première fois.
 
-Tout ce qui sort de l'ordinaire retient l'envoi automatique : un client sans adresse e-mail, des heures sans tarif, un montant nettement au-dessus des mois précédents, ou une facture qui couvre plusieurs mois parce que la facturation automatique a été en pause. Ces factures sont seulement préparées, et la notification vous dit pourquoi.
+Tout ce qui sort de l'ordinaire retient l'envoi automatique : un client sans adresse e-mail, des heures sans tarif, un montant nettement au-dessus des mois précédents, ou une facture qui couvre une période plus longue parce que la facturation automatique a été en pause. Ces factures sont seulement préparées, et la notification vous dit pourquoi.
 
 Les dépenses ne sont incluses que si la dépense elle-même porte l'interrupteur [Refacturer au client](/fr/features/expenses#refacturation-et-changements-de-prix-de-revient).
 

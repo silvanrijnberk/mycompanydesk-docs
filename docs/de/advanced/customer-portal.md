@@ -15,6 +15,7 @@ Wenn Sie eine Rechnung versenden, wird ein eindeutiger **Zahlungslink** generier
 2. **Das PDF herunterladen** kann - Eine Kopie der Rechnung erhalten
 3. **Online bezahlen** kann - Die Zahlung direkt über das Portal über die Schaltfläche **Jetzt bezahlen** abschließen
 4. **Zahlung bestätigen** kann: Eine Banküberweisung bestätigen (nicht sichtbar für Gutschriften, stornierte Rechnungen oder Originalrechnungen, die vollständig gutgeschrieben wurden, da der Kunde in keinem dieser Fälle noch etwas zu zahlen hat)
+5. **In meine Buchhaltung**: die Rechnung in die eigenen MyCompanyDesk-Ausgaben übernehmen (nur sichtbar für Geschäftskunden bei einer echten, gültigen Rechnung)
 
 Portallinks werden im Browser des Kunden geöffnet. Auch wenn der Kunde die MyCompanyDesk-App auf seinem Telefon installiert hat, öffnet ein Tipp auf den Rechnungslink den Browser, nicht die App.
 
@@ -73,6 +74,14 @@ Sobald Stripe verbunden ist, erhalten Sie einen **Betaalknop op facturen**-Schal
 Unter dem Schalter befindet sich ein **Betaalmethoden**-Bereich, der jede unterstützte Zahlungsmethode zeigt, abgeglichen mit den Capabilities Ihres Stripe-Kontos (Karte, iDEAL, Bancontact, SEPA-Lastschrift, PayPal, Klarna und Link by Stripe). Standardmäßig wählt Stripe Checkout automatisch die richtige Methode pro Kunde. Aktivieren Sie bestimmte Methoden, um die Auswahl einzuschränken, nur diese erscheinen im Checkout. Entfernen Sie alle Häkchen, um zur automatischen Auswahl zurückzukehren.
 
 Die Schaltfläche **Open Stripe Dashboard** verlinkt Sie direkt zu Ihren Stripe-Zahlungsmethodeneinstellungen, damit Sie Ihre Integration überprüfen und Zahlungen direkt in Stripe testen können.
+
+### Die Rechnung in die eigene Buchhaltung
+
+Ein Geschäftskunde, der selbst MyCompanyDesk benutzt, kann Ihre Rechnung mit der Schaltfläche **In meine Buchhaltung**, neben **PDF herunterladen**, direkt in die eigenen Ausgaben übernehmen. MyCompanyDesk importiert die Rechnung als Ausgabenentwurf in diesen Arbeitsbereich, mit den Beträgen, der Umsatzsteuer und der PDF, und öffnet sie, bereit zur Prüfung. Die Schaltfläche erscheint bei echten, gültigen Rechnungen für Geschäftskunden: Angebote, Gutschriften, stornierte Rechnungen und vollständig gutgeschriebene Rechnungen haben nichts zu buchen, also bleibt die Schaltfläche weg.
+
+Fehlt das Konto noch, zeigt die Seite, welche Rechnung es ist, wer sie geschickt hat und für wie viel, mit **Konto erstellen** und **Ich habe bereits ein Konto** daneben. Danach nimmt MyCompanyDesk den Import von selbst wieder auf, auf demselben Gerät, bis zu einer Woche lang (der Browser behält den wartenden Import sieben Tage, siehe `apps/web/utils/pendingInvoiceImport.ts#MAX_AGE_MS`).
+
+Der Import teilt die Dublettenprüfung mit Rechnungen, die automatisch ankommen (siehe [Receiving invoices from other MyCompanyDesk users](/de/features/invoices#receiving-invoices-from-other-mycompanydesk-users)), sodass dieselbe Rechnung nie zweimal gebucht wird. Auf Ihrer eigenen Rechnung lesen Sie es danach: **Kunde hat die Rechnung in die eigene Buchhaltung übernommen**.
 
 ### Angebote und Verträge
 
@@ -139,6 +148,7 @@ MyCompanyDesk verfolgt Kundeninteraktionen mit dem Portal:
 - Wann er das PDF herunterlädt
 - Wann er die Zahlung einleitet
 - Wann die Zahlung bestätigt wird
+- Wann der Kunde die Rechnung in die eigene Buchhaltung übernimmt
 
 Dies hilft Ihnen, das Kundenengagement zu verstehen und effektiv nachzufassen.
 

@@ -71,7 +71,7 @@ Factuurregels worden automatisch omschreven: eerst de omschrijving van de regist
 Automatisch factureren regel je per project. Op een projectpagina kies je hoe de uren van dat project gefactureerd worden:
 
 - **Handmatig** (de standaard): die maak je zelf aan vanuit de uren van het project.
-- **Elke maand**: op de eerste van de maand gaan de uren die tot dan gelogd zijn, plus de doorbelaste uitgaven, in één factuur naar de klant van het project.
+- **Op vaste dag** (de standaard): je kiest het ritme op de projectpagina: elke week op een weekdag, of elke maand op een dag van de maand. De uren die tot en met de vorige factuurdag gelogd zijn, plus de doorbelaste uitgaven, gaan in één factuur naar de klant van het project. Een maand factureert op de gekozen dag, tot de 28e, of op de laatste dag van de maand, zodat korte maanden nooit overslaan; de regel staat in `packages/shared/src/logic/billing-schedule.ts#isValidBillingSchedule`.
 - **Bij afronding**: markeer je het project als afgerond, dan gaat alles wat nog open staat mee naar een eindfactuur voor de klant.
 
 Valt het project onder een contract dat zelf factureert, dan bepaalt dat contract en zegt de projectpagina dat ook; je geeft zo'n project geen eigen ritme.
@@ -81,9 +81,9 @@ Op de pagina van de klant bundelt de kaart **Automatisch factureren** alles: elk
 - **Klaarzetten**: de factuur wordt voor je aangemaakt, je krijgt een melding en je verstuurt hem zelf.
 - **Automatisch versturen**: de factuur wordt aangemaakt, je krijgt een melding, en een dag later gaat hij vanzelf naar de klant. Die dag kun je hem nog tegenhouden; een tegengehouden factuur blijft gewoon klaar staan in de app.
 
-Alles wat voor dezelfde klant op hetzelfde moment vervalt komt op één factuur, tenzij een project zijn eigen factuur wil. Uren zonder project sluiten zich aan bij die maandfactuur wanneer de schakelaar op de klantenkaart aan staat. De eerste automatische factuur verstuur je het beste zelf, zodat je een keer gezien hebt hoe hij eruitziet; de kaart zegt dat bij de eerste factuur ook.
+Alles wat voor dezelfde klant op hetzelfde moment vervalt komt op één factuur, tenzij een project zijn eigen factuur wil. Uren zonder project sluiten zich aan bij die factuur wanneer de schakelaar op de klantenkaart aan staat; hun dag stel je daar in met dezelfde kieslijst als bij de projecten. De eerste automatische factuur verstuur je het beste zelf, zodat je een keer gezien hebt hoe hij eruitziet; de kaart zegt dat bij de eerste factuur ook.
 
-Alles wat buiten de gewone rit valt houdt het automatische versturen tegen: een klant zonder e-mailadres, uren zonder tarief, een bedrag dat merkbaar boven de vorige maanden uitkomt, of een factuur die meerdere maanden beslaat omdat automatisch factureren een tijd stil stond. Die facturen worden alleen klaargezet, en de melding vertelt je waarom.
+Alles wat buiten de gewone rit valt houdt het automatische versturen tegen: een klant zonder e-mailadres, uren zonder tarief, een bedrag dat merkbaar boven de vorige maanden uitkomt, of een factuur die een langere periode beslaat omdat automatisch factureren een tijd stil stond. Die facturen worden alleen klaargezet, en de melding vertelt je waarom.
 
 Uitgaven doen alleen mee wanneer de uitgave zelf op [doorbelasten bij de klant](/features/expenses#doorbelasting-en-kostprijswijzigingen) staat.
 

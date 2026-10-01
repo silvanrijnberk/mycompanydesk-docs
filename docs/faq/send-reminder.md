@@ -22,10 +22,12 @@ Je kunt geen herinnering versturen als:
 - de factuur nog een concept is
 - de factuur is geannuleerd
 - de factuur al als betaald staat aangemerkt
-- de klant via het portaal heeft aangegeven dat hij al betaald heeft en de factuur op 'Klant zegt: betaald' staat
+- de klant via het portaal heeft aangegeven dat hij al betaald heeft en de factuur op 'Klant zegt: betaald' staat; herinneringen wachten tot je de betaling bevestigt of de melding terugzet
 - het een creditnota of refundnota betreft
 - de factuur volledig is gecrediteerd via een creditnota
 - er niets meer openstaat (bijvoorbeeld omdat de klant betaalde terwijl de pagina openstond)
+
+Een melding uit het portaal heeft ook een einde. Komt er vijf werkdagen na de melding niets binnen, dan controleert MyCompanyDesk de feiten (de wachttijd en de terugzetregel staan in `apps/api/src/modules/scheduler/scheduler.service.js#checkStalePaymentClaims`): met een werkende bankkoppeling op het rekeningnummer van de factuur, die sinds rond de factuurdatum geen inkomende betaling toont, zet MyCompanyDesk de factuur terug op verzonden, haalt de melding weg en kan je klant opnieuw betalen of melden; een melding laat jou weten dat dit is gebeurd. In elk ander geval vraagt MyCompanyDesk je een keer of de betaling binnen is, en laat de factuur met rust tot jij beslist. Je kunt ook zelf handelen: op de factuur staat **Betaling bevestigen** als het geld er is, en **Niet binnengekomen** om de factuur terug te zetten naar verzonden, zodat herinneringen weer lopen en je klant opnieuw kan betalen of melden.
 
 Wanneer een factuur te laat is, toont de factuurdetailpagina een voorgestelde volgende stap:
 

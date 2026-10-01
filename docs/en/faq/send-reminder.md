@@ -22,10 +22,12 @@ You cannot send a reminder when:
 - the invoice is still a draft
 - the invoice has been canceled
 - the invoice is already marked as paid
-- the invoice is waiting for payment verification because the customer reported it as paid through the portal
+- the invoice is waiting for payment verification because the customer reported it as paid through the portal; reminders wait until you confirm the payment or set the report aside
 - the invoice is a credit note or refund note
 - the invoice has been fully credited by a credit note
 - nothing is left outstanding (for example, the customer paid while the page was open)
+
+A report from the portal has an end to it. If five working days pass (the wait and the set-back rule live in `apps/api/src/modules/scheduler/scheduler.service.js#checkStalePaymentClaims`) and nothing has come in, MyCompanyDesk checks the facts: with a working bank connection on the invoice's account number, one that shows no incoming payment since around the invoice date, the invoice goes back to sent, the report is cleared, and your customer can pay or report again; a notification tells you about the set-back. In any other case, MyCompanyDesk asks you once whether the payment has come in, and leaves the invoice alone until you decide. You can also act yourself: the invoice page proposes **Confirm payment** when the money is there, and **Not received** to set the invoice back to sent, which lets reminders run again and lets your customer report or pay anew.
 
 When an invoice becomes overdue, the invoice detail page shows a suggested next step:
 
