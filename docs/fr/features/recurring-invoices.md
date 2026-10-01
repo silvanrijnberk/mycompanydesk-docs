@@ -41,6 +41,14 @@ Les lignes des factures recurrentes fonctionnent comme les lignes des factures n
 - Une remise en pourcentage ne peut pas depasser 100 %.
 - Une valeur de remise ne peut pas etre negative.
 
+## Options de paiement et détails de facture
+
+Une facture récurrente peut porter les mêmes champs de document qu'une facture normale. Sous **Options de paiement**, choisissez le moyen de paiement de cette série. Tant que vous n'avez rien choisi, chaque facture suit les réglages de paiement de votre entreprise, si bien qu'un changement sous Paramètres → Paiement se répercute tout seul sur la série. Une fois le choix fait, le bouton **Utiliser le réglage par défaut de votre entreprise** le retire. La note de paiement fonctionne pareil.
+
+Sous **Détails de la facture**, réglez ce que porte chaque facture de la série : **l'autoliquidation de la TVA**, la **Référence**, le **Projet** et l'**Actif** auquel la facturation se rapporte, plus l'interrupteur qui cache cette série à votre comptable. MyCompanyDesk suggère l'autoliquidation quand un client ressemble à une entreprise de l'UE hors des Pays-Bas, et vous alerte si le client n'a pas de numéro de TVA. L'autoliquidation exige le numéro de TVA du client : sans lui, le formulaire refuse d'enregistrer la série ; si le numéro a disparu plus tard, la génération garde cette facture comme brouillon sans numéro et vous en avertit, pour qu'aucune facture invalide ne parte jamais toute seule.
+
+Tout ce que vous réglez ici est reporté tel quel sur chaque facture que la série crée. Les factures déjà générées gardent ce qu'elles ont reçu alors ; voir [l'autoliquidation](/fr/faq/reverse-charge) pour les cas où ce traitement s'applique.
+
 ## Options de frequence
 
 | Frequence | Description |

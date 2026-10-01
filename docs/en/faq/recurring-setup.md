@@ -1,7 +1,7 @@
 ---
 title: "Recurring setup"
 description: "To set up a recurring invoice: go to Recurring Invoices and click Add recurring invoice, select the customer and add line items."
-last_verified: 2026-07-02
+last_verified: 2026-10-01
 chatbot:
   triggers: ["set up recurring", "recurring invoice", "recurring expense", "automate invoice", "automatic invoice", "monthly invoice", "terugkerende factuur", "terugkerende uitgave", "wiederkehrende rechnung", "facture recurrente"]
   actions:
@@ -16,6 +16,8 @@ To set up a recurring invoice:
 3. Set the frequency and start date
 4. Choose whether each invoice is emailed automatically or created as a draft
 5. Save and review the recurring list to confirm the schedule
+
+Under **Payment options** and **Invoice details** you set what every invoice in the series carries: a payment method of its own, a payment note, a reference, the project or asset, reverse charge, and whether your accountant sees these invoices. Leave a field empty and each invoice follows the business defaults at the moment it is generated.
 
 There is no end date field. When you want to stop, open the recurring invoice and click "Pause"; the same toggle shows "Activate" so you can resume later.
 

@@ -41,6 +41,14 @@ Positionen wiederkehrender Rechnungen funktionieren wie bei regulären Rechnunge
 - Ein Prozentrabatt kann nicht höher als 100 % sein.
 - Ein Rabattwert darf nicht negativ sein.
 
+## Zahlungsoptionen und Rechnungsdaten
+
+Eine wiederkehrende Rechnung kann dieselben Dokumentfelder mitbringen wie eine normale Rechnung. Unter **Zahlungsoptionen** legen Sie die Zahlungsart dieser Serie fest. Solange Sie nichts wählen, folgt jede Rechnung den Zahlungseinstellungen Ihres Unternehmens, sodass eine Änderung unter Einstellungen → Zahlung von selbst in die Serie durchschlägt. Einmal gewählt, nimmt die Schaltfläche **Standard Ihres Unternehmens verwenden** die Auswahl zurück. Die Zahlungsnotiz funktioniert genauso.
+
+Unter **Rechnungsdetails** legen Sie fest, was auf jeder Rechnung dieser Serie steht: **Reverse Charge (Steuerschuldnerschaft des Leistungsempfängers)**, die **Referenz**, das **Projekt** und der **Vermögenswert**, zu dem die Abrechnung gehört, plus der Schalter, der diese Serie vor Ihrem Buchhalter verbirgt. MyCompanyDesk schlägt Reverse Charge vor, wenn ein Kunde wie ein EU-Unternehmen außerhalb der Niederlande aussieht, und warnt, wenn der Kunde keine USt-IdNr. hat. Reverse Charge braucht die USt-IdNr. des Kunden: ohne sie weigert sich das Formular, die Serie zu speichern, und fehlt sie später, hält die Generierung diese Rechnung als Entwurf ohne Nummer an und benachrichtigt Sie, statt eine ungültige Rechnung unbeaufsichtigt zu versenden.
+
+Alles, was Sie hier eintragen, wird eins zu eins auf jede Rechnung übernommen, die die Serie erzeugt. Bereits erzeugte Rechnungen behalten, was sie beim Erzeugen bekommen haben; unter [Reverse Charge](/de/faq/reverse-charge) steht, wann die Behandlung greift.
+
 ## Häufigkeitsoptionen
 
 | Häufigkeit | Beschreibung |

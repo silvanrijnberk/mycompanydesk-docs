@@ -54,6 +54,8 @@ Log je liever alleen een totaal per dag? Zet dan **Alleen uren modus** aan in de
 
 Het tarief dat bij elke urenregistratie wordt getoond, is het **effectieve uurtarief** van die registratie. Heeft de registratie een eigen uurtarief, dan wordt dat gebruikt; anders valt het terug op het projecttarief, dan het klanttarief, en uiteindelijk op het standaard uurtarief van de werkruimte. De regelprijs op een factuur sluit dus altijd aan bij het daadwerkelijke tarief dat bij de registratie is opgeslagen.
 
+De registratie zelf laat zien welk tarief dat wordt. Heeft de registratie geen eigen uurtarief? Dan staat er **Uurtarief van het project** en tellen de totalen in de lijst voor die registraties ook dat projecttarief. Is een registratie eenmaal gefactureerd, dan toont ze het tarief dat echt gefactureerd is: het tarief op de factuurregel, niet wat het project vandaag rekent. In het bewerkvenster verschijnt bij een leeg tarief een hint dat de factuur met het projecttarief rekent.
+
 ### Een factuur maken vanaf de pagina Uren & agenda
 
 Heb je niet-gefactureerde registraties, klik dan op **Factuur aanmaken**. Er opent een lade waarin je een klant kiest; je ziet alle niet-gefactureerde registraties van die klant met het totaal. Bevestig, en er wordt een conceptfactuur aangemaakt met een regel per registratie. Declarabele reistijd en reiskosten die aan die registraties zijn gekoppeld, komen er als aparte regels bij.

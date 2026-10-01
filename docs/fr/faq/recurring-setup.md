@@ -1,7 +1,7 @@
 ---
 title: "Configurer des factures récurrentes"
 description: "Pour configurer une facture récurrente : allez dans Factures récurrentes et cliquez sur Ajouter une facture récurrente."
-last_verified: 2026-07-02
+last_verified: 2026-10-01
 chatbot:
   triggers: ["set up recurring", "recurring invoice", "recurring expense", "automate invoice", "automatic invoice", "monthly invoice", "terugkerende factuur", "terugkerende uitgave", "wiederkehrende rechnung", "facture recurrente"]
   actions:
@@ -16,6 +16,8 @@ Pour configurer une facture récurrente :
 3. Définissez la fréquence et la date de début
 4. Choisissez si chaque facture est envoyée automatiquement par e-mail ou créée comme brouillon
 5. Enregistrez et vérifiez la planification dans la liste des factures récurrentes
+
+Sous **Options de paiement** et **Détails de la facture**, réglez ce que chaque facture de la série emporte : son propre moyen de paiement, une note de paiement, une référence, le projet ou l'actif, l'autoliquidation, et la visibilité de ces factures pour votre comptable. Laissez un champ vide, et chaque facture reprend, à sa création, les réglages par défaut de votre entreprise.
 
 Il n'y a pas de champ de date de fin. Pour arrêter, ouvrez la facture récurrente et cliquez sur "Mettre en pause" ; le même bouton affiche "Activer" pour reprendre plus tard.
 
