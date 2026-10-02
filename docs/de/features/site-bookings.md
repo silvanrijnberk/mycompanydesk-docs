@@ -91,9 +91,17 @@ Nachdem ein Termin gebucht wurde, können Sie ihn im Kalender verwalten:
 
 Ein **bestätigter** Online-Termin zählt außerdem als erfasste Stunden im **Zeitplan**, damit Sie Ihre Termine neben Ihren Zeiteinträgen sehen. Diese Stunden sind über den Zeitplan nicht abrechenbar; der Umsatz des Termins wird separat über den Termin selbst in Rechnung gestellt.
 
+## Anzahlung
+
+Der Terminblock kann Besucher beim Buchen um eine Anzahlung bitten. Schalten Sie **Anzahlung** in den Blockeinstellungen ein und wählen Sie einen festen Betrag oder einen Prozentsatz des Dienstpreises. Eine Anzahlung braucht einen verbundenen Zahlungsanbieter (Mollie oder Stripe); ohne einen solchen bucht der Block einfach ohne Anzahlung.
+
+Solange die Anzahlung nicht eingegangen ist, bleibt die Buchung offen: Die App zeigt **Zahlung ausstehend** statt der Schaltflächen Annehmen und Ablehnen, und das Annehmen wird verweigert, bis das Geld da ist. Lehnen Sie eine Anfrage ab, oder läuft eine Anfrage ab, geht die bezahlte Anzahlung von selbst zurück. Auch eine Stornierung durch den Besucher zahlt den Betrag von selbst zurück, solange sie in das Rückerstattungsfenster fällt, das Sie in den Blockeinstellungen einstellen. Im Standard läuft dieses Fenster bis einen Tag vor dem Start; Sie können es auf Ihren ganzen Buchungshorizont ausdehnen, damit jede Stornierung vor dem Start zurückzahlt, oder auf null setzen: Dann zahlt nichts automatisch zurück, und Sie erstatten selbst über die Schaltfläche **Anzahlung zurückerstatten** am Termin.
+
+Das Verschieben eines Termins öffnet das Rückerstattungsfenster nicht erneut.
+
 ## Erinnerungen und Stornierungsmails
 
-MyCompanyDesk kann automatisch eine Erinnerungsmail vor dem Termin senden. Auch eine Stornierungsmail an den Kunden ist möglich. Ob und wann diese E-Mails versendet werden, legen Sie in den Blockeinstellungen und Ihren Unternehmenseinstellungen fest.
+MyCompanyDesk kann automatisch eine Erinnerungsmail vor dem Termin senden. Auch eine Stornierungsmail an den Kunden ist möglich. Ob und wann diese E-Mails versendet werden, legen Sie in den Blockeinstellungen und Ihren Unternehmenseinstellungen fest. Wurde für einen Termin schon eine Erinnerung gesendet und wird er danach verschoben, geht die Erinnerung für die neue Startzeit noch einmal heraus.
 
 ## Häufig gestellte Fragen
 

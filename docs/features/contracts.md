@@ -103,6 +103,8 @@ Contracts bill for a period relative to the invoice date:
 - **Previous** - the period before the invoice date
 - **Next** - the period after the invoice date; legacy value kept for older rental contracts that bill in advance
 
+Factureert een contract achteraf, dan komt er nooit een factuur voor een periode die vóór de startdatum ligt, en de periode waarin de einddatum valt krijgt daarna alsnog een factuur.
+
 The form today only lets you choose **current** or **previous**. If you have an older contract set to **next**, the API keeps that value when you save, so the contract stays editable.
 
 ## Automatic collection

@@ -44,6 +44,12 @@ Das Arbeitsbericht-PDF folgt standardmäßig Ihrem [Rechnungsdesign](/de/setting
 
 Aus einem unterschriebenen Arbeitsbericht erstellen Sie mit einem Klick eine Rechnung. Sie beginnt als Entwurf mit den Stunden und Materialien bereits auf den Positionen, und sie zeigt die Berichtsnummer als Verweis. Zu einem Arbeitsbericht gehört eine Rechnung; existiert sie bereits, bringt Sie der Link auf der Arbeitsberichtseite direkt dorthin. Prüfen Sie den Rechnungsentwurf und senden Sie ihn wie gewohnt.
 
+### Mehrere Arbeitsberichte zusammen abrechnen
+
+In der Liste der Arbeitsberichte setzen Sie mehreren unterschriebenen Arbeitsberichten desselben Kunden ein Häkchen und wählen **Gemeinsam abrechnen**. Heraus kommt ein Rechnungsentwurf mit den Stunden und Materialien jedes angehakten Berichts, und jede Position trägt das Datum ihres eigenen Berichts.
+
+Nicht jeder Arbeitsbericht kann mitkommen: nur unterschriebene ohne Rechnung, und nur solche desselben Kunden. Arbeitsberichte aus zwei verschiedenen Angeboten gehen nicht auf eine Rechnung zusammen; ein Bericht ohne Angebot (Mehrarbeit) schließt sich gern Berichten mit Angebot an. Und unterliegt ein Arbeitsbericht dem Reverse Charge, während die anderen angehakten Berichte Umsatzsteuer berechnen, lehnt die App die Kombination ab, statt still alles mit 0% abzurechnen: Stellen Sie diese separat in Rechnung.
+
 ## Kunden zusammenführen
 
 Beim Zusammenführen von zwei Kunden wandern die Arbeitsberichte mit den übrigen Daten zum verbleibenden Kunden.

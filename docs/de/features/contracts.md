@@ -103,6 +103,8 @@ Contracts bill for a period relative to the invoice date:
 - **Previous** - the period before the invoice date
 - **Next** - the period after the invoice date; legacy value kept for older rental contracts that bill in advance
 
+Rechnet ein Vertrag nachträglich ab, gibt es nie eine Rechnung für einen Zeitraum vor dem Startdatum, und der Zeitraum, der das Enddatum enthält, erhält seine Rechnung noch danach.
+
 The form today only lets you choose **current** or **previous**. If you have an older contract set to **next**, the API keeps that value when you save, so the contract stays editable.
 
 ## Automatic collection

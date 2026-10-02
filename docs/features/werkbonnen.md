@@ -44,6 +44,12 @@ De werkbon-PDF volgt standaard je [factuurontwerp](/settings/pdf), met dezelfde 
 
 Van een getekende werkbon maak je met één klik een factuur. Die begint als concept met de uren en materialen al op de regels, en hij toont het bonnummer als verwijzing. Er hoort één factuur bij een werkbon; bestaat hij al, dan brengt de link op de werkbonpagina je er meteen heen. Controleer de conceptfactuur en verstuur hem zoals gewoonlijk.
 
+### Meerdere werkbonnen samen factureren
+
+Op de werkbonnenlijst vink je meerdere getekende werkbonnen van dezelfde klant aan en kies je **Samen factureren**. Er komt één conceptfactuur uit, met de uren en materialen van elke aangevinkte werkbon, en elke regel draagt de datum van zijn eigen bon.
+
+Niet elke werkbon kan mee: alleen getekende werkbonnen zonder factuur, en alleen bonnen die bij dezelfde klant horen. Werkbonnen die bij twee verschillende offertes horen, gaan niet op één factuur samen; een bon zonder offerte (meerwerk) voegt zich wel bij bonnen die er één hebben. En valt één werkbon onder btw verlegd terwijl de andere aangevinkte bonnen btw rekenen, dan weigert de app de combinatie in plaats van stilletjes alles op 0% te factureren: factureer die apart.
+
 ## Klanten samenvoegen
 
 Bij het samenvoegen van twee klanten gaan de werkbonnen mee naar de klant die overblijft, samen met de rest van hun gegevens.

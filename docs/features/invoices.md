@@ -148,6 +148,8 @@ If your workspace is on the Office plan and has [Peppol e-invoicing](/en/feature
 
 Download the invoice as a professionally formatted PDF document. The PDF includes your company logo, branding colors, and all invoice details.
 
+Is een factuur langer dan één pagina, dan breekt het PDF hem netjes af: de totalen blijven bij de laatste regels staan, onder een strookje dat meldt dat de factuur verdergaat, en het betaalblok krijgt daarna een blad voor zichzelf. Geen vervolgpagina opent met een lege tabel of een herhaalde kopie van de cijfers.
+
 ### Mark as paid
 
 Manually confirm payment when a customer pays via bank transfer or other offline method.

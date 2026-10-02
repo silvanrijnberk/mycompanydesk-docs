@@ -44,6 +44,12 @@ The work order PDF follows your [invoice design](/en/settings/pdf) by default, s
 
 A signed work order turns into an invoice in one click. The invoice starts as a draft with the hours and materials already on the lines, and it shows the work order number as a reference. There is one invoice per work order; if it already exists, the link on the work order page takes you straight to it. Check the draft invoice and send it as usual.
 
+### Invoicing several work orders together
+
+On the work order list, tick several signed work orders of the same customer and choose **Invoice together**. You get one draft invoice with the hours and materials of every work order you selected, and each line carries the date of its own work order.
+
+Not every work order can join: only signed work orders without an invoice, and only ones that belong to the same customer. Work orders tied to two different quotes cannot go on one invoice together, a work order without a quote (extra work) does join work orders that have one. And when one work order falls under VAT reverse charge while the other selected work orders carry VAT, the app refuses the combination instead of quietly invoicing everything at 0%: invoice those separately.
+
 ## Customer merge
 
 When you merge two customers, their work orders move to the remaining customer together with the rest of their records.
