@@ -55,9 +55,11 @@ Your answers are saved as the site brief. When you finish, the AI writes fresh c
 
 The services in the first question each take an optional price. Type an amount including VAT, switch on **from** for a starting price, or leave the field empty and your site shows "On request". A price already set in your offering is filled in automatically. When your workspace charges no VAT (exempt or small business scheme), the field simply reads Price and the hint notes that the prices carry no VAT.
 
+When the booking question is on **Customers pick a time themselves**, the service list also asks how long each appointment lasts. Every service starts with a suggested duration in minutes, based on the name of the service and the work you described in the wizard: a plain cut gets a smaller suggestion than colouring, and a dog salon gets a longer one. Each suggestion is yours to change, and a duration already set in your offering is filled in automatically. A duration is a whole number of minutes between 5 and 480. A service without a duration cannot be booked online: clearing the field keeps the service on your site, but the appointments block no longer offers it to customers as a bookable time.
+
 You can also stop halfway: click **Finish later** or reload, and your answers are still there when you return. The wizard keeps what you changed on that device for about a week, and restores a saved answer only while the underlying value is unchanged; if company details or services changed in the meantime, from Settings or another device, the current value wins.
 
-Source: `apps/web/utils/siteWizardDraft.ts#SITE_WIZARD_DRAFT_TTL_MS`.
+Source: `apps/web/utils/siteWizardDraft.ts#SITE_WIZARD_DRAFT_TTL_MS`; `apps/web/utils/siteWizardDuration.ts#guessServiceDurationMin`.
 
 The same wizard can also rewrite an existing site from scratch. Restarting it from the Style tab confirms first, because finishing replaces copy you may have edited yourself. The site stays a draft until you publish it yourself.
 

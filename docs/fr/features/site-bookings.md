@@ -53,6 +53,8 @@ Dans les paramètres du bloc, vous contrôlez comment les clients peuvent réser
 
 Les **créneaux disponibles** proviennent des heures d'ouverture centrales définies dans [Données de l'entreprise](/fr/settings/company). Le bloc masque les jours et créneaux qui n'y sont pas ouverts.
 
+Dans l'éditeur, le bloc de rendez-vous présente les services de votre offre sous forme de puces, exactement comme sur votre site en ligne : le nom, la durée et le prix TTC tels que les visiteurs les voient, avec une seule ligne de TVA sous la rangée. Un clic sur une puce ne change dans l'éditeur que le service sur lequel l'agenda d'exemple est bâti ; aucune disponibilité n'y est chargée et rien n'est réservé.
+
 :::tip
 Liez le bloc à une **adresse e-mail** pour que les visiteurs reçoivent une confirmation automatique et que vous soyez informé de chaque nouvelle réservation.
 :::

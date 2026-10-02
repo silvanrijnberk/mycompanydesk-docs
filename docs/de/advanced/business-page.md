@@ -55,9 +55,11 @@ Ihre Antworten werden als Site-Briefing gespeichert. Wenn Sie abschließen, schr
 
 Die Dienstleistungen in der ersten Frage können jeweils einen optionalen Preis erhalten. Geben Sie einen Betrag inklusive MwSt. ein, schalten Sie **ab** für einen Startpreis ein, oder lassen Sie das Feld leer: Ihre Site zeigt dann „Auf Anfrage“. Ein Preis, der bereits im Angebot steht, wird automatisch vorausgefüllt. Berechnet Ihr Workspace keine MwSt. (befreit oder KOR), heißt das Feld einfach Preis und der Hinweis erwähnt, dass die Preise keine MwSt. enthalten.
 
+Haben Sie in der Buchungsfrage **Kunden wählen selbst eine Zeit** gewählt, fragt die Liste der Dienstleistungen auch, wie lange jeder Termin dauert. Jede Dienstleistung startet mit einem Vorschlag in Minuten, abgeleitet aus dem Namen der Dienstleistung und aus dem, was Sie im Assistenten über Ihre Arbeit erzählt haben: für einen kurzen Schnitt schlägt der Assistent weniger Minuten vor als fürs Färben, und im Hundesalon fällt der Vorschlag länger aus. Jeden Vorschlag können Sie anpassen, und eine Dauer, die bereits im Angebot steht, wird automatisch eingetragen. Eine Dauer ist eine ganze Zahl von Minuten zwischen 5 und 480. Ohne Dauer ist eine Leistung nicht online buchbar: Lassen Sie das Feld leer, bleibt die Leistung auf Ihrer Site, aber der Terminblock bietet sie nicht mehr als wählbare Zeit an.
+
 Sie können auch mitten im Assistenten aufhören: Klicken Sie auf **Später fertigstellen** oder laden Sie die Seite neu, und Ihre Antworten stehen bei der Rückkehr wieder da. Der Assistent bewahrt Ihre eigenen Änderungen auf diesem Gerät rund eine Woche auf und stellt etwas nur wieder her, solange der zugrunde liegende Wert unverändert ist; haben sich Ihre Firmendaten oder Dienstleistungen unterdessen geändert, aus den Einstellungen oder von einem anderen Gerät, gilt der aktuelle Wert.
 
-Quelle: `apps/web/utils/siteWizardDraft.ts#SITE_WIZARD_DRAFT_TTL_MS`.
+Quelle: `apps/web/utils/siteWizardDraft.ts#SITE_WIZARD_DRAFT_TTL_MS`; `apps/web/utils/siteWizardDuration.ts#guessServiceDurationMin`.
 
 Derselbe Assistent kann eine bestehende Site auch komplett neu schreiben. Wenn Sie ihn über den Stil-Tab neu starten, fragt er zuerst nach Bestätigung, denn Abschließen ersetzt Text, den Sie selbst bearbeitet haben. Die Site bleibt Entwurf, bis Sie selbst veröffentlichen.
 

@@ -52,9 +52,11 @@ Vos réponses sont enregistrées comme brief du site. En terminant, l'IA rédige
 
 Les services de la première question acceptent chacun un prix facultatif. Saisissez un montant TTC, activez **à partir de** pour un prix de départ, ou laissez le champ vide : votre site affichera alors « Sur demande ». Un prix déjà fixé dans votre offre est repris automatiquement. Si votre espace ne facture pas de TVA (exonéré ou KOR), le champ s'appelle simplement Prix et l'aide précise que les prix sont hors TVA.
 
+Si la question sur les réservations est réglée sur **Les clients choisissent eux-mêmes une heure**, la liste de services demande aussi combien de temps dure chaque rendez-vous. Chaque service part avec une durée suggérée en minutes, d'après le nom du service et ce que vous avez décrit de votre activité dans l'assistant : une coupe simple obtient une suggestion plus courte que la coloration, et un salon de toilettage en obtient une plus longue. Chaque suggestion reste modifiable, et une durée déjà fixée dans votre offre est reprise automatiquement. Une durée est un nombre entier de minutes entre 5 et 480. Sans durée, un service ne peut pas être réservé en ligne : si vous videz le champ, le service reste sur votre site, mais le bloc de rendez-vous ne le propose plus comme heure à choisir.
+
 Vous pouvez aussi vous arrêter en cours de route : cliquez sur **Terminer plus tard** ou rechargez la page, et vos réponses vous attendent au retour. L'assistant conserve ce que vous avez modifié sur cet appareil pendant environ une semaine, et ne restaure une réponse que si la valeur sous-jacente n'a pas changé ; si vos données d'entreprise ou vos services ont changé entre-temps, depuis les paramètres ou depuis un autre appareil, la valeur actuelle l'emporte.
 
-Source : `apps/web/utils/siteWizardDraft.ts#SITE_WIZARD_DRAFT_TTL_MS`.
+Source : `apps/web/utils/siteWizardDraft.ts#SITE_WIZARD_DRAFT_TTL_MS`; `apps/web/utils/siteWizardDuration.ts#guessServiceDurationMin`.
 
 Le même assistant peut aussi réécrire un site existant entièrement. En le relançant depuis l'onglet Style, il demande d'abord une confirmation, car terminer remplace le texte que vous avez vous-même modifié. Le site reste brouillon jusqu'à ce que vous publiiez vous-même.
 

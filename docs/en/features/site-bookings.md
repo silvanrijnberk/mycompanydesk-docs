@@ -53,6 +53,8 @@ In the block settings you control how customers can book:
 
 The **available time slots** themselves come from the central opening hours set in [Business details](/en/settings/company). The block blocks days and time blocks that are not open there.
 
+In the site builder editor, the appointments block shows the services from your offering as chips, exactly as on the live site: the name, the duration and the price including VAT as visitors see it, with a single VAT label line under the row. Clicking a chip in the editor only switches the service the example calendar is built around; it loads no availability and books nothing.
+
 :::tip
 Connect an **email address** to the block so visitors receive an automatic confirmation and you get a notification for every new booking.
 :::
