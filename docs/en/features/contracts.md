@@ -103,6 +103,8 @@ Contracts bill for a period relative to the invoice date:
 - **Previous** - the period before the invoice date
 - **Next** - the period after the invoice date; legacy value kept for older rental contracts that bill in advance
 
+A contract that bills in arrears never covers a period that starts before its start date, and the period that contains the end date still gets its invoice afterwards.
+
 The form today only lets you choose **current** or **previous**. If you have an older contract set to **next**, the API keeps that value when you save, so the contract stays editable.
 
 ## Automatic collection

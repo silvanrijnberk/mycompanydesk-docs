@@ -148,6 +148,8 @@ If your workspace is on the Office plan and has [Peppol e-invoicing](/en/feature
 
 Download the invoice as a professionally formatted PDF document. The PDF includes your company logo, branding colors, and all invoice details.
 
+Ist eine Rechnung länger als eine Seite, bricht das PDF sie ordentlich um: Die Summen bleiben bei den letzten Positionen, mit einem Hinweis, dass die Rechnung weitergeht, und der Zahlungsteil bekommt danach eine eigene Seite. Keine Folgeseite beginnt mit einer leeren Tabelle oder einer wiederholten Kopie der Zahlen.
+
 ### Mark as paid
 
 Manually confirm payment when a customer pays via bank transfer or other offline method.

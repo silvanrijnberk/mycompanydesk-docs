@@ -58,6 +58,55 @@ Alles, was Sie hier eintragen, wird eins zu eins auf jede Rechnung übernommen, 
 | **Vierteljährlich** | Alle 3 Monate |
 | **Jährlich** | Einmal pro Jahr |
 
+## Zustellungsart
+
+Unter **Nach dem Erstellen** legt die Reihe fest, was mit jeder erzeugten Rechnung passiert:
+
+- **Entwurf**: Die Rechnung liegt als Entwurf bereit. Sie prüfen und versenden sie selbst.
+- **Versenden**: Sie erhalten eine Benachrichtigung, und die Rechnung geht einen Tag später an den Kunden, außer Sie halten sie an diesem Tag zurück. Eine zurückgehaltene Rechnung bleibt in der App liegen und ist bereit zum Versand.
+- **Einziehen**: Wie bei Versenden, und der Betrag wird zusätzlich über das Lastschriftmandat des Kunden eingezogen. Dieses Mandat richten Sie einmalig in einem Vertrag mit diesem Kunden ein; siehe [Automatischer Einzug](/de/features/contracts#automatic-collection).
+
+Das Formular weist von selbst darauf hin, wenn eine Wahl nicht möglich ist: Versenden braucht einen Kunden mit E-Mail-Adresse, und Einziehen ein gültiges Lastschriftmandat.
+
+## Zeitraum auf der Rechnung
+
+Jede Reihe wählt selbst, was ihre Positionen über den abgerechneten Zeitraum sagen:
+
+- **Keiner**: Die Positionen erscheinen so auf der Rechnung, wie Sie sie geschrieben haben.
+- **Laufender Zeitraum**: der Zeitraum, der das Rechnungsdatum enthält.
+- **Vorheriger Zeitraum**: der Zeitraum vor dem Rechnungsdatum (nachträglich).
+- **Nächster Zeitraum**: der Zeitraum nach dem Rechnungsdatum (im Voraus).
+
+Das Formular zeigt eine Vorschau, wie die Position auf der nächsten Rechnung aussieht. Lassen Sie es auf Keiner stehen, wenn die Beschreibung dem Kunden schon genug verrät.
+
+## Laufzeit
+
+Unter **Laufzeit** legen Sie fest, wie lange die Reihe weiterarbeitet:
+
+- **Unbefristet**: Die Reihe endet nicht.
+- **Bis zu einem Datum**: Die Reihe endet nach diesem Datum. Für einen Zeitraum, der an oder vor diesem Datum beginnt, erscheint noch eine Rechnung, damit die letzte Periode nicht verloren geht: nachträglich abgerechnet geht die Juni-Rechnung am 1. Juli noch heraus, wenn die Reihe bis zum 30. Juni läuft.
+- **Eine Anzahl von Malen**: Die Reihe stoppt nach so vielen Rechnungen. Die Seite zählt mit, wie viele erstellt wurden.
+
+Am Ende stellt sich die Reihe selbst still, und eine Benachrichtigung nennt die letzte Rechnung, die sie erstellt hat.
+
+## Jährliche Preiserhöhung
+
+Eine wiederkehrende Rechnung kann ihre Positionspreise einmal im Jahr selbst erhöhen. Öffnen Sie die wiederkehrende Rechnung und aktivieren Sie **Jährliche Preiserhöhung**:
+
+- **Erhöhen um**: den Verbraucherpreisindex des CBS (VPI), oder einen festen Prozentsatz.
+- **Jedes Jahr zum**: den Tag und Monat, an dem die Erhöhung jedes Jahr wirksam wird.
+- **Kunden per E-Mail informieren**: wie viele Monate im Voraus der Kunde informiert wird.
+
+Die Erhöhung arbeitet je Position: Jeder Positionspreis steigt mit dem Prozentsatz, auf den Cent gerundet, und die Paketbestandteile unter einer Position steigen mit.
+
+Etwa eine Woche, bevor die Ankündigung fällig ist, erhalten Sie eine Benachrichtigung mit den erwarteten Beträgen und einer E-Mail-Vorschau, und mit einem Klick überspringen Sie dieses Jahr. Tun Sie nichts, läuft der Rest von selbst: Am Mail-Datum bekommt der Kunde die Ankündigung von Ihrer eigenen E-Mail-Adresse, und zum Inkrafttreten gehen genau die Positionen, die in dieser E-Mail stehen, in einem Durchgang auf ihren neuen Preis. Eine Position, die Sie erst nach der E-Mail hinzufügen, oder deren Preis Sie von Hand ändern, behält den von Ihnen gesetzten Preis.
+
+Rechnungen für Zeiträume vor dem Inkrafttreten behalten die alten Preise, auch wenn sie erst danach erstellt werden. Ein im Voraus abgerechneter Zeitraum erhält die neuen Preise, sobald der Kunde informiert wurde. Die Ankündigungs-E-Mail nennt Beträge ohne MwSt. nur, wo MwSt. anfällt, und nennt die erste Rechnung, die die neuen Preise trägt.
+
+Lässt sich die Ankündigung vor dem Inkrafttreten nicht senden, geht die Erhöhung nicht durch, und eine Benachrichtigung sagt Ihnen, warum. Die Karte führt eine kurze Historie: durchgeführte Erhöhungen, übersprungene Jahre und Jahre, in denen der VPI nicht stieg.
+
+Die Erhöhung läuft auf einer aktiven wiederkehrenden Rechnung mit mindestens einer Position. Eine pausierte Reihe plant keine Erhöhung, und die Karte sagt das. Gehört das automatische Erhöhen nicht zu Ihrem Tarif, passen Sie die Positionspreise einfach selbst an.
+
 ## Wiederkehrende Rechnungen verwalten
 
 ### Pausieren
@@ -90,7 +139,7 @@ Jedes Mal, wenn eine wiederkehrende Rechnung ausgelöst wird, wird eine neue Rec
 
 - Sie verwendet die Positionen und den Kunden der Vorlage
 - Sie erhält die nächste automatische Rechnungsnummer
-- Sie beginnt als **Entwurf** (überprüfen und versenden) oder wird automatisch versendet, falls konfiguriert
+- Was danach passiert, hängt von der Zustellungsart der Reihe ab: Die Rechnung liegt als Entwurf bereit, geht einen Tag später heraus, außer Sie halten sie zurück, oder sie wird zusätzlich über das Lastschriftmandat eingezogen
 - Jede generierte Rechnung ist unabhängig — Sie können sie bearbeiten, ohne die Vorlage zu beeinflussen
 
 ### Gesperrte USt.-Perioden

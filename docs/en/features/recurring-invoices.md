@@ -58,6 +58,55 @@ Everything set here is carried one on one onto each invoice the series generates
 | **Quarterly** | Every 3 months |
 | **Yearly** | Once per year |
 
+## Delivery method
+
+Under **After it is created**, the series decides what happens to each invoice it generates:
+
+- **Draft**: the invoice waits as a draft. You check it and send it yourself.
+- **Send**: you get a notification and the invoice goes to the customer one day later, unless you hold it back during that day. A held-back invoice stays in the app, ready to send.
+- **Collect**: the same as Send, and the amount is also collected through the customer's direct debit mandate. You set that mandate up on a contract with this customer; see [Automatic collection](/en/features/contracts#automatic-collection).
+
+The form tells you when a choice is not available: Send needs a customer with an email address, and Collect needs a valid direct debit mandate.
+
+## Period on the invoice
+
+Each series picks what its lines say about the period they bill:
+
+- **None**: the lines appear on the invoice exactly as you wrote them.
+- **Current**: the period that contains the invoice date.
+- **Previous**: the period before the invoice date (in arrears).
+- **Next**: the period after the invoice date (in advance).
+
+The form shows a preview of how the line reads on the next invoice. Leave it on None when the description already tells the customer enough.
+
+## Duration
+
+Under **Runs** you decide how long the series keeps working:
+
+- **Ongoing**: the series has no end.
+- **Until a date**: the series stops after that date. Invoices are still created for a period that starts on or before that date, so the closing period is not lost: billed in arrears, the invoice for June still goes out on 1 July when the series runs until 30 June.
+- **A number of times**: the series stops after that many invoices. The page counts how many have been made.
+
+When the series reaches its end, it switches itself off and you get one notification naming the last invoice it made.
+
+## Automatic yearly price increase
+
+A recurring invoice can raise its line prices once a year on its own. Open the recurring invoice and turn on **Yearly price increase**:
+
+- **Increase by**: the CPI (CBS) consumer price figure, or a fixed percentage.
+- **Every year on**: the day and month the increase takes effect each year.
+- **Email client**: how many months in advance the customer is emailed.
+
+The increase works per line: every line price rises with the percentage, rounded to the cent, and the package components under a line rise along with it.
+
+About a week before the announcement is due, you get a notification with the expected amounts and an email preview, and you can skip this year with one click. Do nothing and the rest runs on its own: on the mail date the customer gets the announcement from your own email address, and on the effective date exactly the lines promised in that email move to their new price in one go. A line you added after the email, or repriced by hand, keeps the price you gave it.
+
+Invoices for periods before the effective date keep the old prices, even when they are created after the date. A period billed in advance gets the new prices as soon as the customer has been emailed. The announcement email mentions amounts excluding VAT only where VAT applies, and names the first invoice that carries the new prices.
+
+If the announcement cannot be sent before the effective date, the increase does not go ahead and a notification tells you why. The card keeps a short history: applied rises, skipped years, and years in which the CPI did not rise.
+
+The increase runs on an active recurring invoice with at least one line. A paused series plans no increase and the card says so. When automatic increases are not part of your plan, you can still adjust the line prices yourself.
+
 ## Managing recurring invoices
 
 ### Pause
@@ -90,7 +139,7 @@ Each time a recurring invoice fires, a new invoice is created:
 
 - It uses the template's line items and customer
 - It receives the next automatic invoice number
-- It starts as a **Draft** (review and send) or auto-sends if configured
+- What happens next follows the delivery method of the series: the invoice waits as a draft, it goes out one day later unless you hold it back, or it is also collected through the direct debit mandate
 - Each generated invoice is independent — you can edit it without affecting the template
 
 ### Locked VAT periods

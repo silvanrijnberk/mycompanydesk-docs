@@ -91,9 +91,17 @@ Une fois un rendez-vous réservé, vous pouvez le gérer depuis l'agenda :
 
 Un rendez-vous en ligne **confirmé** compte également comme heures travaillées dans **Agenda**, afin que vos rendez-vous apparaissent à côté de vos entrées de temps. Ces heures ne sont pas facturables via Agenda; le revenu du rendez-vous est facturé séparément depuis le rendez-vous lui-même.
 
+## Acompte
+
+Le bloc de rendez-vous peut demander un acompte aux visiteurs qui réservent. Activez **Acompte** dans les réglages du bloc et choisissez un montant fixe ou un pourcentage du prix du service. Un acompte exige un prestataire de paiement connecté (Mollie ou Stripe) ; sans lui, le bloc se contente de réserver sans acompte.
+
+Tant que l'acompte n'est pas payé, la réservation reste en attente : l'application affiche **En attente de paiement** à la place des boutons Accepter et Refuser, et l'acceptation est refusée tant que l'argent n'est pas arrivé. Quand vous refusez une demande, ou qu'une demande expire, l'acompte payé est remboursé tout seul. Une annulation par le visiteur rembourse aussi le montant d'elle-même, tant qu'elle tombe dans la fenêtre de remboursement que vous réglez dans les paramètres du bloc. Par défaut, cette fenêtre va jusqu'à un jour avant le début ; vous pouvez l'élargir à tout votre horizon de réservation, pour que chaque annulation avant le début soit remboursée, ou la ramener à zéro : rien ne part alors automatiquement et vous remboursez vous-même avec le bouton **Rembourser l'acompte** du rendez-vous.
+
+La replanification d'un rendez-vous ne rouvre jamais sa fenêtre de remboursement.
+
 ## Rappels et e-mails d'annulation
 
-MyCompanyDesk peut envoyer automatiquement un e-mail de rappel avant le rendez-vous. Un e-mail d'annulation au client est également possible. Vous décidez si et quand ces e-mails sont envoyés dans les paramètres du bloc et dans les paramètres de l'entreprise.
+MyCompanyDesk peut envoyer automatiquement un e-mail de rappel avant le rendez-vous. Un e-mail d'annulation au client est également possible. Vous décidez si et quand ces e-mails sont envoyés dans les paramètres du bloc et dans les paramètres de l'entreprise. Si un rendez-vous déjà annoncé par un rappel est replanifié ensuite, le rappel pour la nouvelle heure de départ part une fois de plus.
 
 ## Questions fréquentes
 

@@ -91,9 +91,17 @@ Nadat een afspraak is geboekt, kun je deze in de agenda beheren:
 
 Een **bevestigde** online afspraak telt mee als gewerkte uren in **Uren & agenda**, zodat je gemaakte afspraken terugziet bij je tijdregistratie. De uren zijn niet factureerbaar: het geld van de afspraak loopt via de aparte factuur die je vanuit de afspraak kunt maken.
 
+## Aanbetaling
+
+Het afspraakblok kan bezoekers bij het boeken om een aanbetaling vragen. Zet **Aanbetaling** aan bij de instellingen van het blok en kies een vast bedrag of een percentage van de dienstprijs. Een aanbetaling heeft een gekoppelde betaalprovider (Mollie of Stripe) nodig; is die er niet, dan boekt het blok gewoon zonder aanbetaling.
+
+Zolang de aanbetaling niet binnen is, blijft de boeking in behandeling: de app toont **Wacht op betaling** in plaats van de knoppen Accepteren en Afwijzen, en accepteren wordt geweigerd tot het geld binnen is. Wijs je een aanvraag af, of loopt een aanvraag vanzelf af, dan stort de betaalde aanbetaling zichzelf terug. Een annulering door de bezoeker krijgt het bedrag ook vanzelf terug, zolang de annulering binnen het terugbetalingsvenster valt dat je in de blokinstellingen zet. Standaard loopt dat venster tot een dag voor de start; je kunt het verbreden tot je hele boekhorizon, zodat elke annulering vóór de start terugbetaald wordt, of op nul zetten: dan gaat er niets automatisch terug en beslis je zelf met de knop **Aanbetaling terugbetalen** op de afspraak.
+
+Het opnieuw inplannen van een afspraak opent het terugbetalingsvenster niet opnieuw.
+
 ## Herinneringen en annuleringsmail
 
-MyCompanyDesk kan automatisch een herinneringsmail sturen voor de afspraak. Ook bij annulering is er een e-mail naar de klant mogelijk. Je bepaalt zelf of en wanneer deze e-mails worden verstuurd in de instellingen van het afspraakblok en je bedrijfsinstellingen.
+MyCompanyDesk kan automatisch een herinneringsmail sturen voor de afspraak. Ook bij annulering is er een e-mail naar de klant mogelijk. Je bepaalt zelf of en wanneer deze e-mails worden verstuurd in de instellingen van het afspraakblok en je bedrijfsinstellingen. Is er al een herinnering verstuurd en wordt de afspraak daarna opnieuw ingepland, dan gaat de herinnering voor de nieuwe starttijd alsnog uit.
 
 ## Veelgestelde vragen
 

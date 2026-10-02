@@ -58,7 +58,56 @@ Tout ce que vous réglez ici est reporté tel quel sur chaque facture que la sé
 | **Trimestrielle** | Tous les 3 mois |
 | **Annuelle** | Une fois par an |
 
-## Gerer les factures recurrentes
+## Mode d'envoi
+
+Sous **Après la création**, la série décide ce que devient chaque facture qu'elle produit :
+
+- **Brouillon** : la facture reste en brouillon. Vous la vérifiez et l'envoyez vous-même.
+- **Envoyer** : vous recevez une notification et la facture part chez le client un jour plus tard, sauf si vous la retenez dans ce délai. Une facture retenue reste dans l'application, prête à repartir.
+- **Prélever** : comme pour Envoyer, et le montant est aussi prélevé via le mandat de prélèvement du client. Ce mandat se met en place une fois pour toutes sur un contrat avec ce client ; voir [Prélèvement automatique](/fr/features/contracts#automatic-collection).
+
+Le formulaire précise tout seul quand un choix n'est pas possible : Envoyer exige un client avec une adresse e-mail, et Prélever un mandat de prélèvement valide.
+
+## Période sur la facture
+
+Chaque série choisit ce que ses lignes disent de la période qu'elles facturent :
+
+- **Aucune** : les lignes figurent sur la facture telles que vous les avez écrites.
+- **Période en cours** : la période qui contient la date de facture.
+- **Période précédente** : la période avant la date de facture (à terme échu).
+- **Période suivante** : la période après la date de facture (à l'avance).
+
+Le formulaire montre un aperçu de la ligne sur la prochaine facture. Laissez Aucune quand la description en dit déjà assez au client.
+
+## Durée
+
+Sous **Durée**, vous décidez combien de temps la série travaille :
+
+- **Sans fin** : la série ne se termine pas.
+- **Jusqu'à une date** : la série s'arrête après cette date. Une facture sort encore pour une période qui commence à cette date ou avant, pour que la dernière période ne se perde pas : à terme échu, la facture de juin part encore le 1er juillet quand la série va jusqu'au 30 juin.
+- **Un nombre de fois** : la série s'arrête après autant de factures. La page compte combien sont déjà passées.
+
+Une fois arrivée à son terme, la série se met en veille toute seule et une notification nomme la dernière facture qu'elle a créée.
+
+## Augmentation annuelle des prix
+
+Une facture récurrente peut augmenter elle-même le prix de ses lignes, une fois par an. Ouvrez la facture récurrente et activez **Augmentation annuelle des prix** :
+
+- **Augmenter selon** : l'indice des prix à la consommation du CBS (IPC), ou un pourcentage fixe.
+- **Chaque année le** : le jour et le mois où l'augmentation prend effet chaque année.
+- **Prévenir le client par e-mail** : combien de mois à l'avance le client reçoit l'e-mail.
+
+L'augmentation travaille ligne par ligne : le prix de chaque ligne augmente du pourcentage choisi, arrondi au centime, et les composants de forfait sous une ligne suivent.
+
+Environ une semaine avant l'échéance de l'annonce, vous recevez une notification avec les montants attendus et un aperçu de l'e-mail ; un clic suffit pour passer l'année. Ne faites rien, et le reste suit tout seul : le jour de l'envoi, le client reçoit l'annonce depuis votre propre adresse e-mail, et à la date d'effet, exactement les lignes promises dans cet e-mail passent au nouveau prix, en une seule fois. Une ligne ajoutée après l'e-mail, ou dont vous avez mis le prix à la main, garde le prix que vous lui avez donné.
+
+Les factures des périodes d'avant la date d'effet gardent les anciens prix, même quand elles sont créées après. Une période facturée à l'avance reçoit les nouveaux prix dès que le client a été prévenu. L'e-mail d'annonce ne parle de montants hors TVA que là où la TVA s'applique, et nomme la première facture qui portera les nouveaux prix.
+
+Si l'annonce ne peut pas partir avant la date d'effet, l'augmentation ne va pas au bout et une notification vous dit pourquoi. La carte garde un petit historique : augmentations appliquées, années passées, années sans hausse de l'IPC.
+
+L'augmentation tourne sur une facture récurrente active avec au moins une ligne. Une série en pause ne planifie rien et le dit sur la carte. Si les augmentations automatiques ne sont pas incluses dans votre abonnement, vous pouvez toujours ajuster les prix des lignes vous-même.
+
+## Gérer les factures récurrentes
 
 ### Mettre en pause
 
@@ -90,7 +139,7 @@ A chaque declenchement d'une facture recurrente, une nouvelle facture est creee 
 
 - Elle utilise les lignes et le client du modele
 - Elle recoit le prochain numero de facture automatique
-- Elle commence en tant que **Brouillon** (a examiner et envoyer) ou est envoyee automatiquement si configure
+- Ce qui arrive ensuite suit le mode d'envoi de la série : la facture reste en brouillon, part un jour plus tard sauf si vous la retenez, ou son montant est aussi prélevé via le mandat de prélèvement
 - Chaque facture generee est independante -- vous pouvez la modifier sans affecter le modele
 
 ### Periodes de TVA verrouillees

@@ -91,9 +91,17 @@ After an appointment is booked you can manage it from the calendar:
 
 A **confirmed** online appointment also counts as worked hours in **Schedule**, so your appointments appear alongside your time entries. The hours are not billable through Schedule; the revenue from the appointment is invoiced separately from the appointment itself.
 
+## Deposits
+
+The appointments block can ask visitors for a deposit when they book. Turn on **Deposit** in the block settings and choose a fixed amount or a percentage of the service price. A deposit needs a connected payment provider (Mollie or Stripe); without one, the block simply books without a deposit.
+
+While the deposit has not been paid, the booking stays pending: the app shows **Awaiting payment** instead of the Accept and Decline buttons, and approving is refused until the money has come in. When you decline a request, or a request expires, its paid deposit is refunded automatically. A cancellation by the visitor also pays the deposit back on its own, as long as the cancellation falls within the refund window you set in the block settings. By default that window runs until a day before the start; you can widen it to your whole booking horizon, so every cancellation before the start pays back, or narrow it to zero, which turns automatic refunds off and leaves the money to you via the **Refund deposit** button on the appointment.
+
+Rescheduling an appointment never reopens the refund window.
+
 ## Reminders and cancellation emails
 
-MyCompanyDesk can automatically send a reminder email before the appointment. A cancellation email to the customer is also possible. You decide whether and when these emails are sent in the appointments block settings and your company settings.
+MyCompanyDesk can automatically send a reminder email before the appointment. A cancellation email to the customer is also possible. You decide whether and when these emails are sent in the appointments block settings and your company settings. An appointment that moves keeps its reminders: one that already went out for the old time goes out once more for the new start time.
 
 ## Frequently asked questions
 
