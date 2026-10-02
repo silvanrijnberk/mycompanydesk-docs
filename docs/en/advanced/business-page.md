@@ -1,7 +1,7 @@
 ---
 title: Site Builder
 description: "Build a multi-page business website with the drag-and-drop editor: sections and blocks, your own colours and fonts, and publish when you are ready."
-last_verified: 2026-09-30
+last_verified: 2026-10-02
 ---
 
 # Site Builder
@@ -45,13 +45,19 @@ The banner uses the Gemini AI model (lite variant) when available on your worksp
 
 Before you ever open the editor, the website setup wizard can build your first draft for you. It opens automatically the first time a new workspace visits `/website`, and you can restart it later from **Company > Your website > Style** by clicking **Set up again**. The wizard asks four questions and then may show an optional web-address step:
 
-1. **What you do** (pre-filled from your KVK data) - your work, services and tone.
+1. **What you do** (pre-filled from your KVK data) - your work, services and tone. The same step asks how customers should book: they pick a time themselves within your opening hours, they send a request that you confirm, or there is no online booking. If your site already has an appointments block, the wizard starts on the mode that block uses and follows your choice when you finish.
 2. **What you want** - whether the site should bring in leads, showcase your work, build credibility or get found online.
 3. **Logo** - keep the AI-generated logo or upload your own PNG/SVG.
 4. **Brand colour** - pick one of the suggested swatches or enter your own hex colour.
 5. **Web address** (only when your workspace does not already have an active domain or CNAME serving the site) — add or connect the domain where your site will live. You can skip this step and set up an address later.
 
 Your answers are saved as the site brief. When you finish, the AI writes fresh copy for your whole draft site based on the brief and your workspace data, applies your chosen logo and brand colour, and leaves everything as a draft. Nothing is published automatically. You review the result in the editor and publish when you are happy with it.
+
+The services in the first question each take an optional price. Type an amount including VAT, switch on **from** for a starting price, or leave the field empty and your site shows "On request". A price already set in your offering is filled in automatically. When your workspace charges no VAT (exempt or small business scheme), the field simply reads Price and the hint notes that the prices carry no VAT.
+
+You can also stop halfway: click **Finish later** or reload, and your answers are still there when you return. The wizard keeps what you changed on that device for about a week, and restores a saved answer only while the underlying value is unchanged; if company details or services changed in the meantime, from Settings or another device, the current value wins.
+
+Source: `apps/web/utils/siteWizardDraft.ts#SITE_WIZARD_DRAFT_TTL_MS`.
 
 The same wizard can also rewrite an existing site from scratch. Restarting it from the Style tab confirms first, because finishing replaces copy you may have edited yourself. The site stays a draft until you publish it yourself.
 
@@ -426,7 +432,7 @@ When you are ready:
 
 Unpublished changes are tracked per page and per token. The publish button is disabled when there is nothing to publish. Toggling a page between Live and Concept is an immediate save that registers as an unpublished change, so the Publish button lights up the moment you toggle.
 
-Before you publish, the builder checks whether your contact page or footer shows the e-mail address you log in with. If it does, you get a warning first, with a link to set a different public e-mail address; you can also confirm the address is fine and publish anyway.
+From whichever entry point you publish, the overview, the editor toolbar or the first-run screen, the same publish warning appears once something stands out. It lists every point: whether your contact page or footer shows the e-mail address you log in with (with a link to set a different public e-mail address, or a button to confirm the address is intentional), and whether fields are still missing on your legal pages, with a link that fills in the company details. Confirm the e-mail address and nothing else stands out, and the dialog switches to a neutral "Ready to publish" that only asks for confirmation.
 
 A fast double-click cannot publish by accident: the confirm button in the publish warning ignores clicks for a moment after it opens, and a second click straight after the first cannot fire a duplicate publish or skip the warning.
 
@@ -536,9 +542,11 @@ Newsletter submissions share the same rate limit as the contact form: 5 per minu
 
 The site builder seeds every new workspace with two standard legal pages: **Privacy Policy** (`/privacy`) and **Terms & Conditions** (`/algemene-voorwaarden`). The content uses placeholder markers for company details. When the page is rendered for visitors, these markers are replaced with the values from your **Company Settings** — business name, address, postal code, city, country, registration number, VAT number, and public email.
 
-The terms page comes in two variants, matched to your trade. Businesses that sell straight to consumers, appointment-based trades and shop or food trades such as a bakery, get consumer terms: they cover orders and appointments, the statutory right of withdrawal for consumers with its legal exception for made-to-order or perishable goods, payment, cancelling appointments and lessons, liability and complaints, plus a generic allergy note. Quote-based trades and B2B services keep the existing contractor terms, which cover quotes, extra work and delivery. Both variants use the same placeholder markers.
+The text of both pages is matched to your trade, terms and privacy alike. The terms page comes in two variants. Businesses that sell straight to consumers, appointment-based trades and shop or food trades such as a bakery, get consumer terms: they cover orders and appointments, the statutory right of withdrawal for consumers with its legal exception for made-to-order or perishable goods, payment, cancelling appointments and lessons, liability and complaints, plus a generic allergy note. Quote-based trades and B2B services keep the existing contractor terms, which cover quotes, extra work and delivery. Both variants use the same placeholder markers.
 
 You can edit the legal pages in the editor like any other page. The editor preserves the placeholder anchors inside the content, so opening and saving a page without changing it still lets future updates to your company details flow through automatically.
+
+When MyCompanyDesk improves the standard legal texts, existing sites are refreshed too. As soon as you open Website, the platform checks whether your privacy and terms pages are still, word for word, one of the standard texts it generates for your trade. A page you have edited yourself is never touched. A page that still carries the standard text is rewritten to the wording your trade needs: when that page was live, only that page is refreshed inside the published snapshot, so your other drafts are untouched and the publish bar does not report it as an unpublished change; a page in Concept stays a draft and shows the new text the next time you publish.
 
 The legal pages are rendered at publish time, just like the rest of your site. They share the same Live/Concept status and the same subscription visibility gate.
 

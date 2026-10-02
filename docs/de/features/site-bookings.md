@@ -1,7 +1,7 @@
 ---
 title: Online-Termine
 description: Lassen Sie Kunden direkt über Ihre Website Termine mit Site Bookings buchen.
-last_verified: 2026-09-03
+last_verified: 2026-10-02
 ---
 
 # Online-Termine
@@ -91,11 +91,13 @@ Nachdem ein Termin gebucht wurde, können Sie ihn im Kalender verwalten:
 
 Ein **bestätigter** Online-Termin zählt außerdem als erfasste Stunden im **Zeitplan**, damit Sie Ihre Termine neben Ihren Zeiteinträgen sehen. Diese Stunden sind über den Zeitplan nicht abrechenbar; der Umsatz des Termins wird separat über den Termin selbst in Rechnung gestellt.
 
+Eine Kundin oder ein Kunde kann online stornieren, solange der Termin noch nicht begonnen hat. Ein Termin, für den bereits eine Rechnung erstellt wurde, lässt sich online nicht mehr stornieren: Die Stornierseite weist darauf hin und bittet den Kunden, sich bei Ihnen zu melden.
+
 ## Anzahlung
 
 Der Terminblock kann Besucher beim Buchen um eine Anzahlung bitten. Schalten Sie **Anzahlung** in den Blockeinstellungen ein und wählen Sie einen festen Betrag oder einen Prozentsatz des Dienstpreises. Eine Anzahlung braucht einen verbundenen Zahlungsanbieter (Mollie oder Stripe); ohne einen solchen bucht der Block einfach ohne Anzahlung.
 
-Solange die Anzahlung nicht eingegangen ist, bleibt die Buchung offen: Die App zeigt **Zahlung ausstehend** statt der Schaltflächen Annehmen und Ablehnen, und das Annehmen wird verweigert, bis das Geld da ist. Lehnen Sie eine Anfrage ab, oder läuft eine Anfrage ab, geht die bezahlte Anzahlung von selbst zurück. Auch eine Stornierung durch den Besucher zahlt den Betrag von selbst zurück, solange sie in das Rückerstattungsfenster fällt, das Sie in den Blockeinstellungen einstellen. Im Standard läuft dieses Fenster bis einen Tag vor dem Start; Sie können es auf Ihren ganzen Buchungshorizont ausdehnen, damit jede Stornierung vor dem Start zurückzahlt, oder auf null setzen: Dann zahlt nichts automatisch zurück, und Sie erstatten selbst über die Schaltfläche **Anzahlung zurückerstatten** am Termin.
+Solange die Anzahlung nicht eingegangen ist, bleibt die Buchung offen: Die App zeigt **Zahlung ausstehend** statt der Annehmen-Schaltfläche, und das Annehmen wird verweigert, bis das Geld da ist. Ablehnen können Sie in der Zwischenzeit trotzdem; bei einer unbezahlten Anfrage steht nur dieser Knopf. Lehnen Sie eine Anfrage ab, oder läuft eine Anfrage ab, geht die bezahlte Anzahlung von selbst zurück. Trifft später noch eine Zahlung für eine Anfrage ein, die unterdessen abgelehnt, zurückgezogen oder abgelaufen ist, geht auch dieser Betrag automatisch zurück. Auch eine Stornierung durch den Besucher zahlt den Betrag von selbst zurück, solange sie in das Rückerstattungsfenster fällt, das Sie in den Blockeinstellungen einstellen. Im Standard läuft dieses Fenster bis einen Tag vor dem Start; Sie können es auf Ihren ganzen Buchungshorizont ausdehnen, damit jede Stornierung vor dem Start zurückzahlt, oder auf null setzen: Dann zahlt nichts automatisch zurück, und Sie erstatten selbst über die Schaltfläche **Anzahlung zurückerstatten** am Termin.
 
 Das Verschieben eines Termins öffnet das Rückerstattungsfenster nicht erneut.
 
@@ -106,7 +108,7 @@ MyCompanyDesk kann automatisch eine Erinnerungsmail vor dem Termin senden. Auch 
 ## Häufig gestellte Fragen
 
 **Warum sehe ich keine verfügbaren Zeiten?**
-Prüfen Sie, ob Sie mindestens einen Service angelegt haben und ob Ihre Zeitfenster in der Zukunft liegen. Eine aktivierte Freigabe kann außerdem dazu führen, dass Zeiten erst sichtbar werden, nachdem Sie eine Anfrage bestätigt haben.
+Prüfen Sie, ob Sie mindestens einen Service angelegt haben, ob dieser eine Dauer hat, und ob Ihre Zeitfenster in der Zukunft liegen. Eine aktivierte Freigabe kann außerdem dazu führen, dass Zeiten erst sichtbar werden, nachdem Sie eine Anfrage bestätigt haben.
 
 **Kann ich mehrere Services anbieten?**
 Ja. Pro Terminblock können Sie einen oder mehrere Services anzeigen. Jeder Service hat einen eigenen Namen, eine eigene Dauer und einen eigenen Preis.

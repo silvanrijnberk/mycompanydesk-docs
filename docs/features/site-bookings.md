@@ -1,7 +1,7 @@
 ---
 title: Online afspraken
 description: Laat klanten direct via je website een afspraak inplannen met Site Bookings.
-last_verified: 2026-09-29
+last_verified: 2026-10-02
 ---
 
 # Online afspraken
@@ -91,11 +91,13 @@ Nadat een afspraak is geboekt, kun je deze in de agenda beheren:
 
 Een **bevestigde** online afspraak telt mee als gewerkte uren in **Uren & agenda**, zodat je gemaakte afspraken terugziet bij je tijdregistratie. De uren zijn niet factureerbaar: het geld van de afspraak loopt via de aparte factuur die je vanuit de afspraak kunt maken.
 
+Een klant kan online annuleren zolang de afspraak nog niet is begonnen. Een afspraak waarvoor al een factuur is gemaakt, laat zich online niet meer annuleren: de annuleringspagina wijst daarop en vraagt de klant om contact met je op te nemen.
+
 ## Aanbetaling
 
 Het afspraakblok kan bezoekers bij het boeken om een aanbetaling vragen. Zet **Aanbetaling** aan bij de instellingen van het blok en kies een vast bedrag of een percentage van de dienstprijs. Een aanbetaling heeft een gekoppelde betaalprovider (Mollie of Stripe) nodig; is die er niet, dan boekt het blok gewoon zonder aanbetaling.
 
-Zolang de aanbetaling niet binnen is, blijft de boeking in behandeling: de app toont **Wacht op betaling** in plaats van de knoppen Accepteren en Afwijzen, en accepteren wordt geweigerd tot het geld binnen is. Wijs je een aanvraag af, of loopt een aanvraag vanzelf af, dan stort de betaalde aanbetaling zichzelf terug. Een annulering door de bezoeker krijgt het bedrag ook vanzelf terug, zolang de annulering binnen het terugbetalingsvenster valt dat je in de blokinstellingen zet. Standaard loopt dat venster tot een dag voor de start; je kunt het verbreden tot je hele boekhorizon, zodat elke annulering vóór de start terugbetaald wordt, of op nul zetten: dan gaat er niets automatisch terug en beslis je zelf met de knop **Aanbetaling terugbetalen** op de afspraak.
+Zolang de aanbetaling niet binnen is, blijft de boeking in behandeling: de app toont **Wacht op betaling** in plaats van de Accepteren-knop, en accepteren wordt geweigerd tot het geld binnen is. Afwijken kun je intussen wel: bij een onbetaalde aanvraag staat alleen die knop. Wijs je een aanvraag af, of loopt een aanvraag vanzelf af, dan stort de betaalde aanbetaling zichzelf terug. Komt er later alsnog een betaling binnen voor een aanvraag die in de tussentijd is afgewezen, ingetrokken of verlopen, dan gaat ook dat bedrag automatisch terug. Een annulering door de bezoeker krijgt het bedrag ook vanzelf terug, zolang de annulering binnen het terugbetalingsvenster valt dat je in de blokinstellingen zet. Standaard loopt dat venster tot een dag voor de start; je kunt het verbreden tot je hele boekhorizon, zodat elke annulering vóór de start terugbetaald wordt, of op nul zetten: dan gaat er niets automatisch terug en beslis je zelf met de knop **Aanbetaling terugbetalen** op de afspraak.
 
 Het opnieuw inplannen van een afspraak opent het terugbetalingsvenster niet opnieuw.
 
@@ -106,7 +108,7 @@ MyCompanyDesk kan automatisch een herinneringsmail sturen voor de afspraak. Ook 
 ## Veelgestelde vragen
 
 **Waarom zie ik geen beschikbare tijden?**
-Controleer of je minimaal één service hebt aangemaakt en of je tijdvakken in de toekomst liggen. Ook een ingeschakelde goedkeuring kan ervoor zorgen dat tijden pas zichtbaar zijn nadat jij een aanvraag hebt goedgekeurd.
+Controleer of je minimaal één service hebt aangemaakt, of die een duur heeft, en of je tijdvakken in de toekomst liggen. Ook een ingeschakelde goedkeuring kan ervoor zorgen dat tijden pas zichtbaar zijn nadat jij een aanvraag hebt goedgekeurd.
 
 **Kan ik meerdere services aanbieden?**
 Ja. Je kunt per afspraakblok één of meerdere services tonen. Elke service heeft een eigen naam, duur en prijs.
