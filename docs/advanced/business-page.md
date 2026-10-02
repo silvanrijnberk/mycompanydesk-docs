@@ -55,9 +55,11 @@ Je antwoorden worden opgeslagen als sitebriefing. Als je afsluit, schrijft de AI
 
 De diensten in de eerste vraag hebben elk een optionele prijs. Typ een bedrag inclusief btw, zet **vanaf** aan voor een vanaf-prijs, of laat het veld leeg: je site toont dan "Op aanvraag". Een prijs die al bij Aanbod staat, wordt automatisch ingevuld. Valt je werkruimte onder geen btw (vrijgesteld of KOR), dan heet het veld gewoon Prijs en vermeldt de hint dat de prijzen zonder btw zijn.
 
+Kies je in de boekingsvraag voor **Klanten kiezen zelf een tijd**, dan vraagt de dienstenlijst ook hoe lang elke afspraak duurt. Elke dienst start met een voorgestelde duur in minuten, op basis van de naam van de dienst en het werk dat je in de wizard omschreef: voor een korte knipbeurt stelt de wizard minder minuten voor dan voor het kleuren van haar, en in een trimsalon wordt juist meer tijd ingevuld. Elke suggestie mag je aanpassen, en een duur die al bij Aanbod staat, wordt automatisch ingevuld. Een duur is een heel aantal minuten tussen 5 en 480. Een dienst zonder duur is niet online te boeken: maak je het veld leeg, dan blijft de dienst op je site staan, maar kan het afspraakblok hem niet meer als kiesbare tijd aanbieden.
+
 Je mag ook halverwege stoppen: klik op **Later afmaken** of herlaad de pagina, en je antwoorden staan er bij terugkeer weer. De wizard bewaart wat je zelf hebt gewijzigd op dat apparaat, ongeveer een week lang, en zet iets alleen terug zolang de onderliggende waarde niet veranderd is; zijn je bedrijfsgegevens of diensten in de tussentijd gewijzigd, vanuit Instellingen of vanaf een ander apparaat, dan geldt de huidige waarde.
 
-Bron: `apps/web/utils/siteWizardDraft.ts#SITE_WIZARD_DRAFT_TTL_MS`.
+Bron: `apps/web/utils/siteWizardDraft.ts#SITE_WIZARD_DRAFT_TTL_MS`; `apps/web/utils/siteWizardDuration.ts#guessServiceDurationMin`.
 
 Dezelfde wizard kan een bestaande site ook helemaal opnieuw schrijven. Als je hem vanuit de Stijl-tab herstart, vraagt hij eerst om bevestiging, want afsluiten vervangt tekst die je zelf hebt aangepast. De site blijft concept tot je zelf publiceert.
 

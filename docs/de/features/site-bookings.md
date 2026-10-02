@@ -53,6 +53,8 @@ In den Blockeinstellungen legen Sie fest, wie Kunden buchen können:
 
 Die **verfügbaren Zeitfenster** selbst stammen aus den zentralen Öffnungszeiten in [Unternehmensdaten](/de/settings/company). Der Block blendet Tage und Zeiträume aus, die dort nicht geöffnet sind.
 
+Im Editor zeigt der Terminblock die Services aus Ihrem Angebot als Chips an, genau wie auf der Live-Site: den Namen, die Dauer und den Preis inklusive MwSt., wie Besucher ihn sehen, dazu eine einzige MwSt.-Zeile unter der Reihe. Ein Klick auf einen Chip wechselt im Editor nur den Service, auf dem das Beispielraster aufbaut; Verfügbarkeiten werden dort nicht geladen und nichts gebucht.
+
 :::tip
 Verknüpfen Sie den Block mit einer **E-Mail-Adresse**, damit Besucher eine automatische Bestätigung erhalten und Sie bei jeder neuen Buchung benachrichtigt werden.
 :::

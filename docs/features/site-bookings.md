@@ -53,6 +53,8 @@ In de instellingen van het blok bepaal je hoe klanten kunnen boeken:
 
 De **beschikbare tijden** zelf komen uit de centrale openingstijden die je bij [Bedrijfsgegevens](/settings/company) instelt. Het blok blokkeert dagen en tijdvakken die daar niet open staan.
 
+In de editor toont het afspraakblok de diensten uit je Aanbod als chips, precies zoals op je live site: de naam, de duur en de prijs inclusief btw zoals bezoekers die zien, met één btw-regel onder de rij. Een klik op een chip wisselt in de editor alleen de dienst waarop het voorbeeldrooster gebaseerd is; er wordt geen beschikbaarheid geladen en er wordt niets geboekt.
+
 :::tip
 Koppel een **e-mailadres** aan het blok zodat bezoekers een automatische bevestiging ontvangen en je zelf een melding krijgt bij elke nieuwe boeking.
 :::
