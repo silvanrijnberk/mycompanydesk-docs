@@ -66,13 +66,13 @@ Onder **Na het aanmaken** bepaalt de reeks wat er met elke factuur gebeurt die h
 - **Versturen**: je krijgt een melding en de factuur gaat een dag later naar de klant, tenzij je hem in die dag tegenhoudt. Een tegengehouden factuur blijft in de app staan, klaar om te versturen.
 - **Incasseren**: als bij Versturen, en het bedrag wordt ook geïncasseerd via de incassomachtiging van de klant. Die machtiging regel je eenmalig op een contract met deze klant; zie [Automatische incasso](/features/contracts#automatic-collection).
 
-Het formulier zegt vanzelf wanneer een keuze niet kan: Versturen heeft een klant met e-mailadres nodig, en Incasseren een geldige incassomachtiging.
+Het formulier geeft vanzelf aan wanneer een keuze niet kan: Versturen heeft een klant met e-mailadres nodig, en Incasseren een geldige incassomachtiging.
 
 ## Periode op de factuur
 
 Elke reeks kiest zelf wat zijn regels zeggen over de periode waarvoor ze factureren:
 
-- **Geen**: de regels komen op de factuur zoals je ze hierboven schrijft.
+- **Geen**: de regels komen op de factuur precies zoals je ze op de reeks schrijft.
 - **Lopende periode**: de periode waar de factuurdatum in valt.
 - **Vorige periode**: de periode vóór de factuurdatum (achteraf).
 - **Volgende periode**: de periode na de factuurdatum (vooruit).

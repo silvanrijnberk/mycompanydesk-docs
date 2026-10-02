@@ -97,7 +97,7 @@ Une facture récurrente peut augmenter elle-même le prix de ses lignes, une foi
 - **Chaque année le** : le jour et le mois où l'augmentation prend effet chaque année.
 - **Prévenir le client par e-mail** : combien de mois à l'avance le client reçoit l'e-mail.
 
-L'augmentation travaille ligne par ligne : le prix de chaque ligne monte du pourcentage choisi, arrondi au centime, et les composants de forfait sous une ligne suivent.
+L'augmentation travaille ligne par ligne : le prix de chaque ligne augmente du pourcentage choisi, arrondi au centime, et les composants de forfait sous une ligne suivent.
 
 Environ une semaine avant l'échéance de l'annonce, vous recevez une notification avec les montants attendus et un aperçu de l'e-mail ; un clic suffit pour passer l'année. Ne faites rien, et le reste suit tout seul : le jour de l'envoi, le client reçoit l'annonce depuis votre propre adresse e-mail, et à la date d'effet, exactement les lignes promises dans cet e-mail passent au nouveau prix, en une seule fois. Une ligne ajoutée après l'e-mail, ou dont vous avez mis le prix à la main, garde le prix que vous lui avez donné.
 

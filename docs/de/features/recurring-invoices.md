@@ -66,7 +66,7 @@ Unter **Nach dem Erstellen** legt die Reihe fest, was mit jeder erzeugten Rechnu
 - **Versenden**: Sie erhalten eine Benachrichtigung, und die Rechnung geht einen Tag später an den Kunden, außer Sie halten sie an diesem Tag zurück. Eine zurückgehaltene Rechnung bleibt in der App liegen und ist bereit zum Versand.
 - **Einziehen**: Wie bei Versenden, und der Betrag wird zusätzlich über das Lastschriftmandat des Kunden eingezogen. Dieses Mandat richten Sie einmalig in einem Vertrag mit diesem Kunden ein; siehe [Automatischer Einzug](/de/features/contracts#automatic-collection).
 
-Das Formular sagt von selbst, wenn eine Wahl nicht möglich ist: Versenden braucht einen Kunden mit E-Mail-Adresse, und Einziehen ein gültiges Lastschriftmandat.
+Das Formular weist von selbst darauf hin, wenn eine Wahl nicht möglich ist: Versenden braucht einen Kunden mit E-Mail-Adresse, und Einziehen ein gültiges Lastschriftmandat.
 
 ## Zeitraum auf der Rechnung
 
@@ -99,7 +99,7 @@ Eine wiederkehrende Rechnung kann ihre Positionspreise einmal im Jahr selbst erh
 
 Die Erhöhung arbeitet je Position: Jeder Positionspreis steigt mit dem Prozentsatz, auf den Cent gerundet, und die Paketbestandteile unter einer Position steigen mit.
 
-Etwa eine Woche, bevor die Ankündigung fällig ist, erhalten Sie eine Benachrichtigung mit den erwarteten Beträgen und einer E-Mail-Vorschau, und mit einem Klick überspringen Sie dieses Jahr. Tun Sie nichts, läuft der Rest von selbst: Am Mail-Datum bekommt der Kunde die Ankündigung von Ihrer eigenen E-Mail-Adresse, und zum Inkrafttreten gehen genau die Positionen, die in dieser E-Mail stehen, in einem Durchgang auf ihren neuen Preis. Eine Position, die Sie nach der E-Mail hinzugefügt oder von Hand umpreist haben, behält den Preis, den Sie ihr gegeben haben.
+Etwa eine Woche, bevor die Ankündigung fällig ist, erhalten Sie eine Benachrichtigung mit den erwarteten Beträgen und einer E-Mail-Vorschau, und mit einem Klick überspringen Sie dieses Jahr. Tun Sie nichts, läuft der Rest von selbst: Am Mail-Datum bekommt der Kunde die Ankündigung von Ihrer eigenen E-Mail-Adresse, und zum Inkrafttreten gehen genau die Positionen, die in dieser E-Mail stehen, in einem Durchgang auf ihren neuen Preis. Eine Position, die Sie erst nach der E-Mail hinzufügen, oder deren Preis Sie von Hand ändern, behält den von Ihnen gesetzten Preis.
 
 Rechnungen für Zeiträume vor dem Inkrafttreten behalten die alten Preise, auch wenn sie erst danach erstellt werden. Ein im Voraus abgerechneter Zeitraum erhält die neuen Preise, sobald der Kunde informiert wurde. Die Ankündigungs-E-Mail nennt Beträge ohne MwSt. nur, wo MwSt. anfällt, und nennt die erste Rechnung, die die neuen Preise trägt.
 
