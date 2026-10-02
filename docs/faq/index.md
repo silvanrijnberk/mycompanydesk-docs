@@ -113,6 +113,6 @@ Snelle antwoorden op veelvoorkomende vragen over MyCompanyDesk. Elk antwoord mat
 - [Bon uploaden](/faq/upload-receipt)
 - [Use the dashboard](/faq/use-dashboard)
 - [Vat on invoice](/faq/vat-on-invoice)
-- [BTW-aangifte](/faq/vat-return)
+- [Btw-aangifte](/faq/vat-return)
 - [View charts](/faq/view-charts)
 - [Year overview](/faq/year-overview)

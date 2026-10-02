@@ -89,7 +89,7 @@ MyCompanyDesk accepteert alleen inkomende Peppol e-facturen in euro's (EUR). E-f
 
 ### Binnenkomende e-facturen controleren
 
-Elke e-factuur landt als conceptuitgave bij **Uitgaven**. De conceptuitgave is vooringevuld met leverancier, omschrijving, bedrag, btw en factuurdatum uit de binnenkomende e-factuur. Wanneer de leverancier verlegde BTW heeft toegepast, classificeert MyCompanyDesk deze als verlegd en laat hij het btw-tarief op 0 % staan, zodat het in de juiste rubriek van je btw-aangifte valt. Controleer de gegevens, voeg eventueel een bon toe en sla hem op als gewone uitgave.
+Elke e-factuur landt als conceptuitgave bij **Uitgaven**. De conceptuitgave is vooringevuld met leverancier, omschrijving, bedrag, btw en factuurdatum uit de binnenkomende e-factuur. Wanneer de leverancier verlegde btw heeft toegepast, classificeert MyCompanyDesk deze als verlegd en laat hij het btw-tarief op 0 % staan, zodat het in de juiste rubriek van je btw-aangifte valt. Controleer de gegevens, voeg eventueel een bon toe en sla hem op als gewone uitgave.
 
 ### Ontvangen uitschakelen
 

@@ -89,7 +89,7 @@ Alles wat buiten de gewone rit valt houdt het automatische versturen tegen: een 
 
 Uitgaven doen alleen mee wanneer de uitgave zelf op [doorbelasten bij de klant](/features/expenses#doorbelasting-en-kostprijswijzigingen) staat.
 
-Bevat je abonnement automatisch urenfacturering niet, dan pauzeert het tot je abonnement het weer doet; de melding vertelt je dat. Automatische facturen gebruiken het standaard BTW-tarief van je werkruimte en respecteren je KOR- of vrijgesteld-instellingen, net als facturen die je handmatig aanmaakt.
+Bevat je abonnement automatisch urenfacturering niet, dan pauzeert het tot je abonnement het weer doet; de melding vertelt je dat. Automatische facturen gebruiken het standaard btw-tarief van je werkruimte en respecteren je KOR- of vrijgesteld-instellingen, net als facturen die je handmatig aanmaakt.
 
 ## Bulkacties
 

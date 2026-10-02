@@ -33,8 +33,8 @@ Er is geen CSV-sjabloon om te downloaden; de import werkt met de kolommen van je
 
 Voor uitgaven worden CSV-bestanden in Nederlandse notatie herkend. Bedragen als 100,50 of 1.234,56 en datums in dd-mm-jjjj-volgorde worden als dag-maand-jaar gelezen. Dat werkt net zoals de bedragsvelden in de web-app, dus typen en importeren volgen dezelfde regels.
 
-Is er een kolom met BTW-bedrag, dan leidt MyCompanyDesk daar het BTW-tarief uit af. Ontbreken zowel BTW-bedrag als tarief, dan blijft het tarief op 0 staan in plaats van op het standaardtarief te vallen. De uitgave komt dan in de controle "BTW ontbreekt" voor de aangifte.
+Is er een kolom met btw-bedrag, dan leidt MyCompanyDesk daar het btw-tarief uit af. Ontbreken zowel btw-bedrag als tarief, dan blijft het tarief op 0 staan in plaats van op het standaardtarief te vallen. De uitgave komt dan in de controle "Btw ontbreekt" voor de aangifte.
 
-Als je in de import zelf een BTW-bedrag van 0 invult, houdt MyCompanyDesk die waarde aan in plaats van hem stilzwijgend te vervangen door het standaardtarief van de categorie. Zo kun je uitgaven importeren die echt btw-vrij zijn, zonder dat er achteraf een ander tarief op komt te staan.
+Als je in de import zelf een btw-bedrag van 0 invult, houdt MyCompanyDesk die waarde aan in plaats van hem stilzwijgend te vervangen door het standaardtarief van de categorie. Zo kun je uitgaven importeren die echt btw-vrij zijn, zonder dat er achteraf een ander tarief op komt te staan.
 
 Tip: begin met een kleine testimport om de koppeling te controleren voordat je grotere datasets importeert.

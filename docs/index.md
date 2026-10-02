@@ -1,5 +1,5 @@
 ---
-description: "Documentatie van MyCompanyDesk: uitleg over facturen, offertes, uitgaven, BTW, de bankkoppeling, je website en elke instelling in de app."
+description: "Documentatie van MyCompanyDesk: uitleg over facturen, offertes, uitgaven, btw, de bankkoppeling, je website en elke instelling in de app."
 layout: home
 hero:
   name: MyCompanyDesk
@@ -23,8 +23,8 @@ features:
     details: Registreer uitgaven handmatig of scan bonnen met AI-gestuurde OCR. Categoriseer en koppel ze aan projecten.
   - icon:
       src: /icons/bar-chart-3.svg
-    title: Rapporten & BTW
-    details: Krijg inzicht in omzet, winst, cashflow en BTW. Vergrendel periodes na aangifte voor compliance.
+    title: Rapporten & btw
+    details: Krijg inzicht in omzet, winst, cashflow en btw. Vergrendel periodes na aangifte voor compliance.
   - icon:
       src: /icons/users.svg
     title: Klanten & Projecten

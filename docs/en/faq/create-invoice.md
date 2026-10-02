@@ -14,9 +14,9 @@ Here's how to create an invoice:
 2. Select a customer or add one from the customer picker
 3. Add the line items with description, quantity, price, and VAT
 4. In the Invoice Details card, set the invoice date and due date
-5. Use "Save as Draft" if it is not ready yet, or "Finalize" when the invoice is ready (MyCompanyDesk checks your BTW-id and IBAN first, you can fill them in on the spot if needed)
+5. Use "Save as Draft" if it is not ready yet, or "Finalize" when the invoice is ready (MyCompanyDesk checks your btw-id and IBAN first, you can fill them in on the spot if needed)
 6. After saving, open the invoice detail page to preview or send it
 
 If the customer has unbilled time entries, the form pulls them in as line items and fills in missing descriptions automatically.
 
-Tip: Defaults like payment terms and quote validity live at Settings → "Facturen en offertes"; invoice numbering is automatic, so there is nothing to configure there. Make sure your BTW-id and IBAN are filled in so you can finalize without interruption.
+Tip: Defaults like payment terms and quote validity live at Settings → "Facturen en offertes"; invoice numbering is automatic, so there is nothing to configure there. Make sure your btw-id and IBAN are filled in so you can finalize without interruption.

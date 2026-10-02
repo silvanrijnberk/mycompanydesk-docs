@@ -31,7 +31,7 @@ Per rekening kun je:
 - Op elk moment een **handmatige sync** starten.
 - De rekening ontkoppelen.
 
-## Sync-frequentie
+## Hoe vaak synchroniseren
 
 Hoe vaak MyCompanyDesk nieuwe transacties ophaalt is één instelling voor je hele werkruimte: **Realtime**, **Elke 4 uur** of **Dagelijks**. De handmatige sync per rekening werkt daar altijd bovenop.
 
@@ -43,7 +43,7 @@ Na de koppelronde doorlopen nieuwe transacties je regels en de slimme categorise
 
 1. Eerst worden je eigen regels gecontroleerd. Een transactie die matcht krijgt de categorie van de regel.
 2. Transacties zonder regelmatch krijgen een categoriesuggestie van de slimme categorisering, of vallen terug op je standaardcategorie als je die hebt ingesteld.
-3. Een gecategoriseerde uitgaande transactie wordt een **concept-uitgave**: de tegenpartij wordt de leverancier, en het bedrag, de datum en de gebruikelijke BTW-behandeling van de categorie worden ingevuld.
+3. Een gecategoriseerde uitgaande transactie wordt een **concept-uitgave**: de tegenpartij wordt de leverancier, en het bedrag, de datum en de gebruikelijke btw-behandeling van de categorie worden ingevuld.
 4. Het concept belandt in de controlelijst, dus er wordt niets geboekt zonder dat jij het ziet.
 
 Transacties uit de eerste import, die ongeveer de afgelopen 90 dagen ophaalt, worden nooit automatisch bevestigd. Ze komen altijd op de controlelijst, ook als de categorisering zeker is. Dat geldt alleen voor de achterstand van voor de koppeling; nieuwe transacties daarna volgen de normale controle-regels. Met de import-vanaf-datum per rekening bepaal je vanaf welk moment die achterstand in je takenlijst verschijnt; alles wat ervoor ligt blijft beschikbaar voor koppelen en afletteren, maar vraagt geen review.
@@ -62,8 +62,8 @@ De wachtrij laadt maximaal 100 review-rijen en 100 uitgavekandidaten per ophaalr
 
 Per concept kun je:
 
-- **Bevestigen**: de uitgave boeken zoals hij is. Hij verschijnt in je uitgavenlijst en telt mee in rapportages en BTW.
-- **Bewerken**: de uitgave openen om categorie, BTW of bedrag aan te passen voordat je boekt.
+- **Bevestigen**: de uitgave boeken zoals hij is. Hij verschijnt in je uitgavenlijst en telt mee in rapportages en btw.
+- **Bewerken**: de uitgave openen om categorie, btw of bedrag aan te passen voordat je boekt.
 - **Afwijzen**: het concept verwijderen. De transactie gaat terug naar de feed voor handmatige afhandeling.
 
 Als de categoriechip die je hebt gekozen sinds het laden van de pagina is gearchiveerd, wordt de actie Bevestigen of Bewerken geweigerd met de fout `EXPENSE_CATEGORY_UNKNOWN` in plaats van stilzwijgend een andere categorie te kiezen. Ververs de pagina om de huidige categorielijst te laden en kies opnieuw.
@@ -132,9 +132,9 @@ Onderaan de instellingenpagina kun je vijf bankmeldingen los van elkaar aanzette
 
 - **E-mail bij sync-fout**: een e-mail en in-app melding wanneer een bankkoppeling niet kan synchroniseren, met een link om het op te lossen.
 - **Wekelijks overzicht**: een e-mail op maandagochtend met de bankactiviteit van de afgelopen week. Deze wordt overgeslagen als er niets te melden was. Het wekelijkse overzicht staat standaard uit in elke werkruimte, zodat er op maandag maar één mail binnenkomt: staat het uit, dan verschijnen de bankregels die nog gekoppeld moeten worden in de maandagmail van **Nu doen**. Alleen werkruimtes bij wie de maandagmail al uit stond, houden het overzicht zoals het was, want er is dan geen andere mail die de bankregels zonder koppeling meeneemt. Zet het overzicht in deze lijst weer aan als je de aparte samenvatting terugwilt; de maandagmail laat die regels dan weer weg.
-- **Push bij grote transactie**: een melding wanneer een transactie een door jou ingesteld bedrag bereikt of overschrijdt.
+- **Melding bij groot bedrag**: een melding wanneer een transactie een door jou ingesteld bedrag bereikt of overschrijdt.
 - **Leveranciersregel geleerd**: een in-app melding wanneer MyCompanyDesk een nieuwe vaste-leveranciersregel heeft geleerd vanuit je bevestigde concepten.
-- **Vergrendelde BTW-periode**: een eenmalige melding wanneer de bankfeed probeert een uitgaande transactie te boeken in een BTW-periode die al is aangegeven en vergrendeld. De regel wordt definitief overgeslagen zodat de sync niet eindeloos opnieuw probeert, en de melding legt uit wat je kunt doen: boek de uitgave handmatig met een datum in de huidige open periode, of dien een suppletie-aangifte in.
+- **Vergrendelde btw-periode**: een eenmalige melding wanneer de bankfeed probeert een uitgaande transactie te boeken in een btw-periode die al is aangegeven en vergrendeld. De regel wordt definitief overgeslagen zodat de sync niet eindeloos opnieuw probeert, en de melding legt uit wat je kunt doen: boek de uitgave handmatig met een datum in de huidige open periode, of dien een suppletie-aangifte in.
 
 ## Problemen oplossen
 
@@ -142,6 +142,6 @@ Onderaan de instellingenpagina kun je vijf bankmeldingen los van elkaar aanzette
 
 **Een transactie is geen uitgave geworden.** Controleer of auto-import aanstaat, of het bedrag boven je minimumbedrag ligt en of het een uitgaande betaling is. Je kunt de transactie altijd handmatig koppelen op de Transacties-pagina.
 
-**Een banktransactie valt in een vergrendelde BTW-periode.** De bankfeed kan geen uitgaven automatisch boeken met een datum in een periode die al is aangegeven. Je krijgt een eenmalige melding "Banktransactie: BTW-periode vergrendeld", de regel wordt gemarkeerd als definitief overgeslagen en de volgende sync probeert hem niet opnieuw. Om de kosten alsnog vast te leggen, boek je de uitgave handmatig met een datum in de huidige open periode, of vraag je je boekhouder of een suppletie-aangifte de juiste route is.
+**Een banktransactie valt in een vergrendelde btw-periode.** De bankfeed kan geen uitgaven automatisch boeken met een datum in een periode die al is aangegeven. Je krijgt een eenmalige melding "Banktransactie: btw-periode vergrendeld", de regel wordt gemarkeerd als definitief overgeslagen en de volgende sync probeert hem niet opnieuw. Om de kosten alsnog vast te leggen, boek je de uitgave handmatig met een datum in de huidige open periode, of vraag je je boekhouder of een suppletie-aangifte de juiste route is.
 
 **Ik krijg geen meldingen.** Controleer de meldingsschakelaars onderaan de uitgaven-instellingen.

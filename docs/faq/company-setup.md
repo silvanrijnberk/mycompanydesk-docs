@@ -12,7 +12,7 @@ chatbot:
 
 Checklist voor de eerste keer instellen. Alles staat onder Instellingen:
 
-1. Ga naar Instellingen → "Bedrijfsgegevens" en voeg je officiële bedrijfsnaam, adres, KVK-nummer en BTW-nummer toe
+1. Ga naar Instellingen → "Bedrijfsgegevens" en voeg je officiële bedrijfsnaam, adres, KVK-nummer en btw-nummer toe
 2. Ga naar Instellingen → "Logo en kleur" om je logo te uploaden en je huisstijlkleur te kiezen
 3. Ga naar Instellingen → "Betalen" om je IBAN toe te voegen; zodra dat veld is ingevuld, komen de overboekingsgegevens automatisch op je facturen
 4. Ga naar Instellingen → "Facturen en offertes" voor je betaaltermijn, automatische herinneringen en de geldigheid van offertes

@@ -34,7 +34,7 @@ Shared settings. Changes here apply to everyone in your workspace.
 | **Facturen en offertes** (invoices and quotes) | Payment term, automatic payment reminders and how long quotes stay valid |
 | **Factuurontwerp** (invoice design) | Layout, colour and font of your invoices, with a live preview |
 | **Betalen** (getting paid) | How customers can pay you: your IBAN, iDEAL and PayPal |
-| **BTW** (VAT) | Your usual VAT rate, how often you file and the KOR small-business scheme |
+| **Btw** (VAT) | Your usual VAT rate, how often you file and the KOR small-business scheme |
 | **Uitgaven** (expenses) | Default category and payment method for new expenses, plus the address for forwarding receipts by email |
 | **Uitgavencategorieën** (expense categories) | Add, edit, archive or delete custom expense categories; set VAT treatment and deduction percentage |
 | **Bankkoppeling** (bank connection) | Connect your bank so transactions arrive as draft expenses |
@@ -60,7 +60,7 @@ Five rows are only visible to team admins: **Mensen met toegang**, **Je boekhoud
 
 ## Search
 
-Press **Cmd+K** (Mac) or **Ctrl+K** (Windows and Linux), or click the search box at the top of the settings page. Typing filters the rows as you type, and everyday words work too: "iban" finds **Betalen**, "donker" (dark) finds **Weergave**, "aangifte" (tax return) finds **BTW**.
+Press **Cmd+K** (Mac) or **Ctrl+K** (Windows and Linux), or click the search box at the top of the settings page. Typing filters the rows as you type, and everyday words work too: "iban" finds **Betalen**, "donker" (dark) finds **Weergave**, "aangifte" (tax return) finds **Btw**.
 
 A few pages only appear through search, to keep the main list calm:
 
@@ -86,7 +86,7 @@ The button does not appear on new and edit forms, nor on the settings pages them
 | Change the payment term or reminder emails | **Facturen en offertes** |
 | Restyle my invoice PDF | **Factuurontwerp** |
 | Add my IBAN or let customers pay with iDEAL | **Betalen** |
-| Change my VAT rate or filing frequency | **BTW** |
+| Change my VAT rate or filing frequency | **Btw** |
 | Send invoices from my own email address | **E-mail** |
 | Set up my website or domain | **Je website en domein** |
 | Turn quotes, projects or newsletters on or off | **Onderdelen** |

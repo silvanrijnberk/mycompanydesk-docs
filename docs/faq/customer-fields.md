@@ -28,7 +28,7 @@ De klantvelden die de app het vaakst gebruikt zijn:
 1. Klant- of bedrijfsnaam - zichtbaar op facturen en offertes
 2. E-mailadres - gebruikt wanneer je documenten per e-mail verstuurt
 3. Adresvelden - hergebruikt op documentlay-outs die adresgegevens tonen
-4. BTW-nummer - zichtbaar op documenten als dit veld is ingevuld
+4. Btw-nummer - zichtbaar op documenten als dit veld is ingevuld
 5. IBAN en betaaltermijn - hergebruikt waar factuurstandaarden die nodig hebben
 6. Contactpersoon en telefoonnummer - zichtbaar in het klantprofiel als referentie
 

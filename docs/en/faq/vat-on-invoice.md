@@ -17,7 +17,7 @@ To set VAT on an invoice:
 3. The system calculates VAT automatically
 4. VAT totals appear in the invoice summary
 
-New invoice lines default to your standard VAT rate. To change that default, go to Settings → "BTW" and update the default rate. The rate is always 0% when the invoice uses the VAT reverse charge toggle.
+New invoice lines default to your standard VAT rate. To change that default, go to Settings → "Btw" and update the default rate. The rate is always 0% when the invoice uses the VAT reverse charge toggle.
 
 MyCompanyDesk accepts the current Dutch rates 0%, 9% and 21% (sources/vat-rates.yaml#countries.NL.zero/reduced/standard).
 

@@ -11,9 +11,9 @@ chatbot:
 Om een uitgave te bewerken:
 1. Open de uitgave vanuit de lijst
 2. Klik op "Bewerken"
-3. Pas leverancier, bedrag, categorie, datum of notities aan. Opslaan met een bedrag van EUR 0,00 wordt tegengehouden, tenzij het een echt nulrecord is zoals een creditnota met alleen BTW.
+3. Pas leverancier, bedrag, categorie, datum of notities aan. Opslaan met een bedrag van EUR 0,00 wordt tegengehouden, tenzij het een echt nulrecord is zoals een creditnota met alleen btw.
 4. Sla je wijzigingen op
 
 Een uitgave in de prullenbak kun je niet bewerken. Zet hem eerst terug uit de prullenbak en maak dan je wijzigingen.
 
-Dezelfde beperkingen gelden als je een AI-suggestie toepast. Een uitgave in de prullenbak of een vergrendelde BTW-periode blokkeert de knop Toepassen, en de suggestie wordt niet weggeschreven.
+Dezelfde beperkingen gelden als je een AI-suggestie toepast. Een uitgave in de prullenbak of een vergrendelde btw-periode blokkeert de knop Toepassen, en de suggestie wordt niet weggeschreven.

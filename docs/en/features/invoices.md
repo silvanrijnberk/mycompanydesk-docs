@@ -265,7 +265,7 @@ CSV export of the invoice list is part of the **Office** plan.
 
 ## Finalizing and sending
 
-When you finalize or send an invoice, MyCompanyDesk checks that your company has a BTW-id (VAT number) and IBAN on file. In the Netherlands, a valid invoice requires your BTW-id, and your IBAN tells customers where to pay.
+When you finalize or send an invoice, MyCompanyDesk checks that your company has a btw-id (VAT number) and IBAN on file. In the Netherlands, a valid invoice requires your btw-id, and your IBAN tells customers where to pay.
 
 If either field is missing, a dialog opens so you can fill them in right there. Once saved, your invoice finalizes automatically.
 
@@ -275,7 +275,7 @@ Invoice quantities on the PDF are formatted in the same language as the rest of 
 
 If your workspace uses manual numbering, the app also asks you to enter the invoice number when you finalize or send. MyCompanyDesk suggests the next number in your sequence, but you can type any number you like. The number is required and must be unique.
 
-If you are still waiting for your BTW-id from the Belastingdienst, or you are exempt under the small business scheme (KOR), you can acknowledge the gap and proceed anyway. You should add your BTW-id later once you have it.
+If you are still waiting for your btw-id from the Belastingdienst, or you are exempt under the small business scheme (KOR), you can acknowledge the gap and proceed anyway. You should add your btw-id later once you have it.
 
 Once an invoice has been finalized, it cannot be archived or deleted in one step, because the invoice number has already been used. Use the cancel or credit-note flow to handle a finalized invoice that should no longer be paid.
 

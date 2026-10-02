@@ -11,7 +11,7 @@ chatbot:
 
 Om klantgegevens te bekijken die in de app invloed hebben op factuuropvolging:
 1. Open Klanten en selecteer de klant
-2. Controleer in het klantprofiel het opgeslagen factuur-e-mailadres, adres, BTW-nummer en de betaalvoorwaarden
+2. Controleer in het klantprofiel het opgeslagen factuur-e-mailadres, adres, btw-nummer en de betaalvoorwaarden
 3. Bekijk de kaart "Recente facturen" voor de status en het totaal per factuur, en open een factuur voor de betaalgegevens
 4. Werk het klantrecord bij als de contact- of factuurgegevens verouderd zijn
 

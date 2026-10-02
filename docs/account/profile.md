@@ -34,7 +34,7 @@ Vier schakelaars bepalen waarover MyCompanyDesk je een berichtje stuurt, in de a
 
 - Als een factuur te laat betaald is, zodat je er meteen achteraan kunt.
 - Als een klant betaald heeft.
-- Als je bijna BTW-aangifte moet doen, ruim van tevoren.
+- Als je bijna btw-aangifte moet doen, ruim van tevoren.
 - Tips en nieuws van MyCompanyDesk, hooguit één mailtje per maand.
 
 Echt belangrijke berichten over je account sturen we altijd; die kun je niet uitzetten.

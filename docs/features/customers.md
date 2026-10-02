@@ -30,7 +30,7 @@ Met het statusfilter boven de lijst schakel je ook tussen Alle statussen, Actief
    - **E-mail** — Contacte-mail voor het versturen van facturen
    - **Telefoon** — Contacttelefoonnummer
    - **Adres** — Straat, postcode, plaats, land
-   - **BTW-nummer** — BTW-registratie van de klant (voor B2B)
+   - **Btw-nummer**: btw-registratie van de klant (voor B2B)
    - **Klantnummer** — Automatisch gegenereerd of aangepast
 3. Klik op **Opslaan**
 

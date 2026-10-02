@@ -122,7 +122,7 @@ Bespoke templates that include a minimal footer now let you add your own footer 
 
 From there you can add:
 
-- **Legal line**: your KvK/BTW or other small print, rendered in the template's footer style.
+- **Legal line**: your KvK/btw or other small print, rendered in the template's footer style.
 - **Link columns**: titled columns of links, useful for pages like contact, terms or services.
 - **Contact details**: toggle to show your email, phone and address from your company details.
 - **Social links**: toggle to show the social links saved in your company details.

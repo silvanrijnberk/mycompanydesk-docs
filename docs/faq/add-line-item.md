@@ -12,7 +12,7 @@ chatbot:
 Om regelitems toe te voegen, te bewerken of te verwijderen op een factuur:
 1. Open de factuur in bewerkingsmodus
 2. Klik op "Regel toevoegen" of de +-knop om een nieuwe rij toe te voegen
-3. Voer omschrijving, aantal, eenheidsprijs en BTW-tarief in. Het omschrijvingsveld is de weg naar je aanbod: klik in het lege veld (of druk pijl omlaag) om je aanbod meteen te zien, of begin te typen en de passende aanbod-items verschijnen eronder. Kies er een en de regel vult zich met omschrijving, prijs en BTW-tarief
+3. Voer omschrijving, aantal, eenheidsprijs en btw-tarief in. Het omschrijvingsveld is de weg naar je aanbod: klik in het lege veld (of druk pijl omlaag) om je aanbod meteen te zien, of begin te typen en de passende aanbod-items verschijnen eronder. Kies er een en de regel vult zich met omschrijving, prijs en btw-tarief
 4. Enter houdt je eigen tekst; een suggestie kies je met een klik of met pijltjes en Enter
 5. Iets langers getypt? In een nieuw document, als de eerste (enige) regel met zes woorden of meer een hele klus omschrijft en AI aan staat, biedt de lijst **Regels opstellen uit deze tekst** aan: de zin wordt regels met prijzen, uit je aanbod waar het kan
 6. Een zelf getypte regel met omschrijving en een prijs boven nul krijgt **Bewaren in je aanbod** eronder, zodat je aanbod meegroeit terwijl je factureert

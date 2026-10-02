@@ -1,12 +1,12 @@
 ---
 title: Uitgaven
-description: "Houd je zakelijke uitgaven bij, scan bonnen, beheer categorieën met hun eigen BTW-standaard en laat afschrijvingen voor investeringen vanzelf lopen."
+description: "Houd je zakelijke uitgaven bij, scan bonnen, beheer categorieën met hun eigen btw-standaard en laat afschrijvingen voor investeringen vanzelf lopen."
 last_verified: 2026-08-21
 ---
 
 # Uitgaven
 
-Houd al je zakelijke uitgaven bij, scan bonnen met AI en categoriseer kosten voor nauwkeurige boekhouding en BTW-aangifte.
+Houd al je zakelijke uitgaven bij, scan bonnen met AI en categoriseer kosten voor nauwkeurige boekhouding en btw-aangifte.
 
 ## Overzicht
 
@@ -27,7 +27,7 @@ Uitgaven in de prullenbak zijn zichtbaar via de weergave Prullenbak, maar je kun
 Categorieën worden per werkruimte bewaard in de tabel `expense_categories`; het is geen vaste lijst in de app. Elke categorie heeft:
 
 - Een **sleutel** (slug voor de API en het formulier).
-- Een standaard **BTW-behandeling**.
+- Een standaard **Btw-behandeling**.
 - Een **aftrekbar percentage** voor gedeeltelijk aftrekbare categorieën.
 - Een **investeringsvlag** die overeenkomende uitgaven automatisch als investering markeert.
 - Een standaard **afschrijvingstermijn** in maanden voor de afschrijvingsmotor.
@@ -41,10 +41,10 @@ De instelwizard plant een op de branche afgestemde set bovenop de elf standaardc
 1. Ga naar **Uitgaven > Nieuwe uitgave**
 2. Vul in:
    - **Omschrijving** - Waarvoor de uitgave is
-   - **Bedrag** - Totale kosten (inclusief of exclusief BTW)
+   - **Bedrag** - Totale kosten (inclusief of exclusief btw)
    - **Datum** - Wanneer de uitgave plaatsvond
    - **Categorie** - Selecteer uit je werkruimtelijst (standaardcategorieën of zelf toegevoegde categorieën). Als je een standaard uitgavecategorie hebt ingesteld onder werkruimte-instellingen, is deze hier al vooringevuld.
-   - **BTW-tarief** - Wordt vooringevuld met het standaard BTW-tarief voor uitgaven van je werkruimte (in te stellen onder werkruimte-instellingen). Je kunt het altijd per uitgave aanpassen.
+   - **Btw-tarief** - Wordt vooringevuld met het standaard btw-tarief voor uitgaven van je werkruimte (in te stellen onder werkruimte-instellingen). Je kunt het altijd per uitgave aanpassen.
    - **Betaalmethode** - Wordt vooringevuld met de standaard betaalmethode voor uitgaven van je werkruimte, indien ingesteld.
 3. Voeg optioneel een **bon**-afbeelding of PDF toe
 4. Koppel optioneel aan een **project** of **klant**
@@ -65,7 +65,7 @@ Bij het aanmaken van een nieuwe uitgave klik je op **Vanuit sjabloon** (alleen z
 
 ### Van banktransacties
 
-Wanneer je [bankfeed](/features/bank) is gekoppeld, worden gecategoriseerde uitgaande transacties automatisch omgezet naar conceptuitgaven. Elke uitgave krijgt de tegenpartij als leverancier, het absolute bedrag als bruto, het standaard BTW-tarief en de behandeling van de categorie, en de boekingsdatum van de transactie. Conceptuitgaven verschijnen eerst in de beoordelingsinbox van de bankfeed, waar je ze kunt bevestigen, bewerken of afwijzen voordat ze in je boekhouding komen. Zie [auto-importuitgaven beoordelen](/features/bank#auto-importuitgaven-beoordelen) voor de volledige workflow.
+Wanneer je [bankfeed](/features/bank) is gekoppeld, worden gecategoriseerde uitgaande transacties automatisch omgezet naar conceptuitgaven. Elke uitgave krijgt de tegenpartij als leverancier, het absolute bedrag als bruto, het standaard btw-tarief en de behandeling van de categorie, en de boekingsdatum van de transactie. Conceptuitgaven verschijnen eerst in de beoordelingsinbox van de bankfeed, waar je ze kunt bevestigen, bewerken of afwijzen voordat ze in je boekhouding komen. Zie [auto-importuitgaven beoordelen](/features/bank#auto-importuitgaven-beoordelen) voor de volledige workflow.
 
 ### Bonnen scannen
 
@@ -80,12 +80,12 @@ Laat AI automatisch uitgavegegevens uit bonnen extraheren:
 5. Bevestig om de uitgave(n) aan te maken
 
 ::: info
-Bonnen scannen is beschikbaar op elk abonnement, ook op Desk. Het aantal scans per maand hangt af van je abonnement: 3 op Desk en 200 op Office. Het BTW-tarief op een nieuwe uitgave begint bij je standaard werkruimte-instelling.
+Bonnen scannen is beschikbaar op elk abonnement, ook op Desk. Het aantal scans per maand hangt af van je abonnement: 3 op Desk en 200 op Office. Het btw-tarief op een nieuwe uitgave begint bij je standaard werkruimte-instelling.
 :::
 
-### Vergrendelde BTW-periodes
+### Vergrendelde btw-periodes
 
-Als een inboxbericht wordt omgezet naar een uitgave met een datum in een BTW-periode die al is aangegeven, wordt de automatische boeking geweigerd om de ingediende aangifte te beschermen. In plaats van de factuur stilzwijgend te laten verdwijnen, maakt MyCompanyDesk een `inbox_expense_period_locked`-melding aan die de leverancier en factuurdatum noemt en aangeeft dat de BTW-periode vergrendeld is. De melding brengt je naar de inboxlijst, zodat je de doorgestuurde factuur daar kunt terugvinden. Je hebt vervolgens dezelfde twee opties als bij andere gevallen van een vergrendelde periode: boek de uitgave handmatig met een datum in de huidige open periode, of dien een suppletieaangifte in voor de vergrendelde periode.
+Als een inboxbericht wordt omgezet naar een uitgave met een datum in een btw-periode die al is aangegeven, wordt de automatische boeking geweigerd om de ingediende aangifte te beschermen. In plaats van de factuur stilzwijgend te laten verdwijnen, maakt MyCompanyDesk een `inbox_expense_period_locked`-melding aan die de leverancier en factuurdatum noemt en aangeeft dat de btw-periode vergrendeld is. De melding brengt je naar de inboxlijst, zodat je de doorgestuurde factuur daar kunt terugvinden. Je hebt vervolgens dezelfde twee opties als bij andere gevallen van een vergrendelde periode: boek de uitgave handmatig met een datum in de huidige open periode, of dien een suppletieaangifte in voor de vergrendelde periode.
 
 De snelle invoerlade toont dezelfde btw-periodestatus naast het datumveld voordat je opslaat, zodat een vergrendelde of coulanceperiode zichtbaar is voordat de server de boeking weigert.
 
@@ -95,35 +95,35 @@ Als een doorgestuurde e-mail of een scan wel een uitgave oplevert, maar de bijbe
 
 Als een leverancier een bekend logo heeft, toont MyCompanyDesk het naast de leveranciersnaam in de uitgavenlijst en in de leveranciersautocomplete wanneer je een uitgave maakt of bewerkt. Het logo komt uit het KVK-register voor Nederlandse bedrijven of uit een samengestelde lijst van veelvoorkomende merken. Is er geen logo beschikbaar, dan toont de app een monogram.
 
-## BTW-afhandeling
+## Btw-afhandeling
 
-Elke uitgave kan een eigen BTW-tarief hebben. Veelgebruikte opties:
+Elke uitgave kan een eigen btw-tarief hebben. Veelgebruikte opties:
 
 - **21%** - Standaardtarief
 - **9%** - Verlaagd tarief
 - **0%** - Nultarief of vrijgesteld
 
-Het BTW-bedrag wordt automatisch berekend en opgenomen in je [BTW-rapportages](/features/vat).
+Het btw-bedrag wordt automatisch berekend en opgenomen in je [Btw-rapportages](/features/vat).
 
-### BTW-behandeling
+### Btw-behandeling
 
-In speciale gevallen stel je de BTW-behandeling van de uitgave in:
+In speciale gevallen stel je de btw-behandeling van de uitgave in:
 
-- **Standaard**: binnenlandse BTW.
-- **Verlegd (EU)**: je rekent de BTW zelf af voor een zakelijke aankoop uit de EU, rubriek 4b.
-- **Verlegd (buiten de EU)**: leverancier buiten de EU factureert 0% BTW (sources/vat-rates.yaml#countries.NL.zero), jij rekent zelf af in rubriek 4a. Gebruik dit bijvoorbeeld voor een Amerikaanse leverancier zoals Anthropic of OpenAI.
-- **Vrijgesteld**: de levering is BTW-vrij.
-- **Buitenlandse BTW in rekening gebracht**: buitenlandse BTW die mogelijk via de EU-teruggaafprocedure terug te vragen is.
+- **Standaard**: binnenlandse btw.
+- **Verlegd (EU)**: je rekent de btw zelf af voor een zakelijke aankoop uit de EU, rubriek 4b.
+- **Verlegd (buiten de EU)**: leverancier buiten de EU factureert 0% btw (sources/vat-rates.yaml#countries.NL.zero), jij rekent zelf af in rubriek 4a. Gebruik dit bijvoorbeeld voor een Amerikaanse leverancier zoals Anthropic of OpenAI.
+- **Vrijgesteld**: de levering is btw-vrij.
+- **Buitenlandse btw in rekening gebracht**: buitenlandse btw die mogelijk via de EU-teruggaafprocedure terug te vragen is.
 
 De behandeling wordt meestal overgenomen uit de categorie. Je kunt hem per uitgave overschrijven.
 
-### Handmatig BTW-bedrag
+### Handmatig btw-bedrag
 
-Meestal berekent MyCompanyDesk het BTW-bedrag uit het tarief en het nettobedrag. Komt dat niet overeen met het document van de leverancier, bijvoorbeeld een creditnota met netto EUR 0 en alleen BTW, dan kun je het BTW-bedrag handmatig invoeren. Het tarief bepaalt het bedrag dan niet meer; het formulier gebruikt jouw ingevoerde bedrag.
+Meestal berekent MyCompanyDesk het btw-bedrag uit het tarief en het nettobedrag. Komt dat niet overeen met het document van de leverancier, bijvoorbeeld een creditnota met netto EUR 0 en alleen btw, dan kun je het btw-bedrag handmatig invoeren. Het tarief bepaalt het bedrag dan niet meer; het formulier gebruikt jouw ingevoerde bedrag.
 
 ### Correcties in vergrendelde perioden
 
-Zit een uitgave in een vergrendelde BTW-periode, dan blokkeert het formulier wijzigingen in de financiële velden en biedt een correctiepad. De foutmelding komt via de code `PERIOD_LOCKED`, zodat je een Nederlandse toelichting ziet in plaats van de ruwe backend-tekst. De correctie wordt in een latere, open periode aangemaakt en verwijst naar de oorspronkelijke vergrendelde uitgave, zodat je later nog kunt zien wat er is gewijzigd.
+Zit een uitgave in een vergrendelde btw-periode, dan blokkeert het formulier wijzigingen in de financiële velden en biedt een correctiepad. De foutmelding komt via de code `PERIOD_LOCKED`, zodat je een Nederlandse toelichting ziet in plaats van de ruwe backend-tekst. De correctie wordt in een latere, open periode aangemaakt en verwijst naar de oorspronkelijke vergrendelde uitgave, zodat je later nog kunt zien wat er is gewijzigd.
 
 De poort vergelijkt de waarden die daadwerkelijk weggeschreven zouden worden, niet alleen de velden die zichtbaar zijn in het formulier. Dat geldt ook voor meerregelige `lines`, investeringsvlaggen en afschrijvingsinvoer zoals restwaarde, gebruiksduur en privégebruikpercentage. Elke financieel relevante wijziging in een ingediende periode wordt geweigerd; niet-financiële aanpassingen zoals notities, betaalstatus of bonbijlagen blijven wel mogelijk.
 
@@ -149,9 +149,9 @@ Selecteer meerdere uitgaven voor:
 - **Archiveren** - Verplaats naar archief. Als je meerdere onbetaalde uitgaven met een vervaldatum tegelijk archiveert, vallen hun openstaande betaalherinneringen stil. De bulkbalk toont eerst een bevestiging zodra een van de geselecteerde uitgaven onbetaald is én een vervaldatum heeft, zodat je weet hoeveel van de geselecteerde uitgaven hun herinnering kwijtraken. Zolang de uitgaven gearchiveerd zijn, blijft de herinnering uit. Zet je een gearchiveerde uitgave later terug, dan maakt de dagelijkse sweep de herinnering opnieuw aan, maar pas de volgende nacht op zijn vroegst.
 - **Verwijderen** - Permanent verwijderen
 - **Exporteren** - Download als CSV (Office)
-- **Markeer als betaald** - Markeer geselecteerde uitgaven als betaald. Als je een bank- of inbox-concept als betaald markeert, wordt de vlag "Te controleren" tegelijkertijd verwijderd, zodat de rij zichtbaar wordt in je rapportages, BTW-aangifte en boekhoudersexport in plaats van verborgen te blijven. Dit gebeurt alleen als je de status op betaald zet, niet als je hem terugzet naar onbetaald.
+- **Markeer als betaald** - Markeer geselecteerde uitgaven als betaald. Als je een bank- of inbox-concept als betaald markeert, wordt de vlag "Te controleren" tegelijkertijd verwijderd, zodat de rij zichtbaar wordt in je rapportages, btw-aangifte en boekhoudersexport in plaats van verborgen te blijven. Dit gebeurt alleen als je de status op betaald zet, niet als je hem terugzet naar onbetaald.
 
-Als een bulkactie wordt geweigerd omdat één of meer geselecteerde regels in een vergrendelde BTW-periode vallen, noemt de foutmelding het exacte tijdvak en legt hij uit wat je kunt doen. Een ingediende en vergrendelde periode kan alleen via een suppletieaangifte worden heropend. Een kaal slot (de aangiftedeadline is verstreken zonder dat er een aangifte is ingediend) kun je tijdelijk ontgrendelen op de BTW-pagina. Haal de regels in dat tijdvak uit je selectie, of gebruik de passende correctieroute, en probeer het opnieuw.
+Als een bulkactie wordt geweigerd omdat één of meer geselecteerde regels in een vergrendelde btw-periode vallen, noemt de foutmelding het exacte tijdvak en legt hij uit wat je kunt doen. Een ingediende en vergrendelde periode kan alleen via een suppletieaangifte worden heropend. Een kaal slot (de aangiftedeadline is verstreken zonder dat er een aangifte is ingediend) kun je tijdelijk ontgrendelen op de btw-pagina. Haal de regels in dat tijdvak uit je selectie, of gebruik de passende correctieroute, en probeer het opnieuw.
 
 ## Kilometervergoeding
 
@@ -177,11 +177,11 @@ Categorieën met `auto_flag_investment = true` (doorgaans uitrusting en andere i
 - De regeling gebruikt lineaire afschrijving met dagpro rata voor de eerste en laatste kalendermaand, conform de richtlijnen van de Belastingdienst.
 - Regels worden bewaard in `expense_depreciation_lines` en doorgegeven aan rapportages.
 
-De afschrijfbare basis is gelijk aan de geactiveerde waarde die de grootboekpost boekt naar de activarekening (`apps/api/src/modules/ledger/posting-engine.js`), niet het bruto-bedrag exclusief BTW. Daarmee worden ook niet-aftrekbare voorbelasting (voor categorieën met een aftrekpercentage onder de 100%) en het zakelijke deel na privégebruikpercentage meegenomen, zodat de afschrijvingsregeling, het objectenregister en de KIA-berekening allemaal van hetzelfde bedrag uitgaan.
+De afschrijfbare basis is gelijk aan de geactiveerde waarde die de grootboekpost boekt naar de activarekening (`apps/api/src/modules/ledger/posting-engine.js`), niet het bruto-bedrag exclusief btw. Daarmee worden ook niet-aftrekbare voorbelasting (voor categorieën met een aftrekpercentage onder de 100%) en het zakelijke deel na privégebruikpercentage meegenomen, zodat de afschrijvingsregeling, het objectenregister en de KIA-berekening allemaal van hetzelfde bedrag uitgaan.
 
-Het bewerken van categorie, datum, bedrag, BTW-behandeling, privégebruikpercentage, gebruiksduur of restwaarde op een bestaande uitgave triggert herberekening. Als een bestaande afschrijvingsregel al in een vergrendelde BTW-periode valt, wordt de herberekening geweigerd, zodat de ingediende aangifte niet stilletjes wijzigt. Het terugzetten van een investeringsuitgave naar een niet-investeringscategorie verwijdert de afschrijvingsregels.
+Het bewerken van categorie, datum, bedrag, btw-behandeling, privégebruikpercentage, gebruiksduur of restwaarde op een bestaande uitgave triggert herberekening. Als een bestaande afschrijvingsregel al in een vergrendelde btw-periode valt, wordt de herberekening geweigerd, zodat de ingediende aangifte niet stilletjes wijzigt. Het terugzetten van een investeringsuitgave naar een niet-investeringscategorie verwijdert de afschrijvingsregels.
 
-Een investering waarvan de eigen datum nog in een open periode valt, kan toch tegen een vergrendeld schema aanlopen als de afschrijvingsregels in een latere, vergrendelde BTW-periode vallen. Dan toont het formulier de foutcode `DEPRECIATION_SCHEDULE_LOCKED` in plaats van `PERIOD_LOCKED`. Gebruik de actie **Tijdelijk ontgrendelen** voor dat tijdvak op de [BTW-pagina](/features/vat) en probeer de wijziging opnieuw.
+Een investering waarvan de eigen datum nog in een open periode valt, kan toch tegen een vergrendeld schema aanlopen als de afschrijvingsregels in een latere, vergrendelde btw-periode vallen. Dan toont het formulier de foutcode `DEPRECIATION_SCHEDULE_LOCKED` in plaats van `PERIOD_LOCKED`. Gebruik de actie **Tijdelijk ontgrendelen** voor dat tijdvak op de [Btw-pagina](/features/vat) en probeer de wijziging opnieuw.
 
 Treinkaartjes en andere autokosten kun je ook als gewone uitgave boeken via **Uitgaven > Nieuw** met leverancier, bedrag, datum en categorie.
 
@@ -213,7 +213,7 @@ Het aanmaken van een uitgave schrijft voortaan voor elk ontstaanspad een regel i
 
 ## Tips
 
-- Stel je standaard BTW-tarief, standaard uitgavecategorie en standaard betaalmethode voor uitgaven in onder **Instellingen > Uitgaven** zodat het formulier niet steeds leeg begint. Een 0%-BTW-instelling werkt correct; het formulier behandelt die als een bewuste keuze.
+- Stel je standaard btw-tarief, standaard uitgavecategorie en standaard betaalmethode voor uitgaven in onder **Instellingen > Uitgaven** zodat het formulier niet steeds leeg begint. Een 0%-btw-instelling werkt correct; het formulier behandelt die als een bewuste keuze.
 - Eigen categorieën beheer je in **Instellingen > Uitgavencategorieën**. Systeemcategorieën kun je niet verwijderen; archiveer ze als je ze niet meer wilt zien.
 - Schakel [AI-suggesties](/advanced/ai-features) in voor automatische categorie-aanbevelingen
 - Voeg altijd bonnen toe - ze zijn essentieel voor belastingcontroles

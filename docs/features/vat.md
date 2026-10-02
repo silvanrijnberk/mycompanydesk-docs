@@ -1,6 +1,6 @@
 ---
-title: BTW
-description: "Track collected and paid VAT, prepare your return and stay ahead of deadlines. The page mirrors the Dutch BTW form for companies in the Netherlands."
+title: Btw
+description: "Track collected and paid VAT, prepare your return and stay ahead of deadlines. The page mirrors the Dutch btw form for companies in the Netherlands."
 last_verified: 2026-08-16
 ---
 
@@ -8,11 +8,11 @@ last_verified: 2026-08-16
 
 # VAT
 
-Track collected and paid VAT, prepare your return, and stay ahead of deadlines. MyCompanyDesk supports country-specific VAT flows: the page mirrors the Dutch BTW form for companies in the Netherlands, and uses each workspace country's filing deadlines and rules for other supported countries, so the numbers you see are the numbers you file.
+Track collected and paid VAT, prepare your return, and stay ahead of deadlines. MyCompanyDesk supports country-specific VAT flows: the page mirrors the Dutch btw form for companies in the Netherlands, and uses each workspace country's filing deadlines and rules for other supported countries, so the numbers you see are the numbers you file.
 
 ## VAT settings leaf
 
-Settings → **Belasting** (Tax) contains a compact **BTW** (VAT) card with the choices that drive the VAT page and many invoice defaults.
+Settings → **Belasting** (Tax) contains a compact **Btw** (VAT) card with the choices that drive the VAT page and many invoice defaults.
 
 ### Filing frequency
 
@@ -33,7 +33,7 @@ Changing the frequency does not rewrite historical returns. It only affects how 
 
 ### 9% suggestie voor eten en drinken
 
-Voeg je een gloednieuw item toe in Aanbod, dan kan MyCompanyDesk het vragen: "Verkoop je eten of drinken? Daarvoor geldt meestal 9% btw." Die vraag verschijnt alleen als je werkruimte nog nooit zelf een standaardtarief heeft gekozen in Instellingen → BTW, KOR en vrijgesteld allebei uit staan, en je eigen gegevens (KVK/SBI-code, je antwoord uit de wizard of je bedrijfsomschrijving, nooit je bedrijfsnaam) duidelijk naar eten of horeca wijzen. Klik je op **Zet op 9%**, dan krijgt alleen dit ene item het verlaagde tarief (sources/vat-rates.yaml#countries.NL.reduced). Er wordt niets vooraf gekozen: de vraag negeren verandert niets, bij bestaande items verschijnt hij nooit, en werkruimtes met KOR of vrijgesteld zien hem niet.
+Voeg je een gloednieuw item toe in Aanbod, dan kan MyCompanyDesk het vragen: "Verkoop je eten of drinken? Daarvoor geldt meestal 9% btw." Die vraag verschijnt alleen als je werkruimte nog nooit zelf een standaardtarief heeft gekozen in Instellingen → Btw, KOR en vrijgesteld allebei uit staan, en je eigen gegevens (KVK/SBI-code, je antwoord uit de wizard of je bedrijfsomschrijving, nooit je bedrijfsnaam) duidelijk naar eten of horeca wijzen. Klik je op **Zet op 9%**, dan krijgt alleen dit ene item het verlaagde tarief (sources/vat-rates.yaml#countries.NL.reduced). Er wordt niets vooraf gekozen: de vraag negeren verandert niets, bij bestaande items verschijnt hij nooit, en werkruimtes met KOR of vrijgesteld zien hem niet.
 
 ### Default expense VAT rate
 
@@ -80,7 +80,7 @@ The hero summarises the selected period:
 - **Deadline ring**: a circular countdown to the next filing deadline, computed from your workspace country's schedule and your filing frequency. Red when 3 days or fewer remain, amber up to 14 days, green otherwise.
 
 <!-- TODO(source-missing): RichardTool 8bd35ae1 introduced country-specific VAT filing deadlines (NL, GB, DE, and others). The exact deadline rules per country are not yet in sources/. Do not list specific per-country due dates until a human adds them to sources/. -->
-- **VAT savings pot (BTW-spaarpotje)**: a suggested reserve of the period balance plus a 10% buffer, shown when you owe VAT. When you are due money back, the tile flips to a green refund tile instead.
+- **VAT savings pot (Btw-spaarpotje)**: a suggested reserve of the period balance plus a 10% buffer, shown when you owe VAT. When you are due money back, the tile flips to a green refund tile instead.
 
 Three buttons sit under the balance: **Open aangifte** jumps to the Filing tab, **How is this calculated?** walks through the math behind the balance, and **Open Mijn Belastingdienst Zakelijk** opens the business portal at `mijn.belastingdienst.nl/mbo-portaal/` so you can finish the submission without an extra chooser step.
 
@@ -129,7 +129,7 @@ A table that mirrors the Belastingdienst aangifteformulier:
 | 4. Prestaties vanuit het buitenland aan u verricht | 4a, 4b |
 | 5. Voorbelasting en berekening totaal | 5a, 5b, 5c |
 
-Each row shows the omzet (excl.) and the VAT amount. The bottom bar shows the total to pay or receive. Corrections that fall outside the form appear on their own rows: a generic booking correction is shown as **Correctie**, while a reduction under the old KOR scheme is shown as **Vermindering volgens de oude KOR**. The CSV summary adds a matching corrections line when these are nonzero, so the balance, collected and paid figures add up. The year-overview BTW-saldo column uses the same net-VAT total as the rubrieken sheet, so its rows total to the same figure.
+Each row shows the omzet (excl.) and the VAT amount. The bottom bar shows the total to pay or receive. Corrections that fall outside the form appear on their own rows: a generic booking correction is shown as **Correctie**, while a reduction under the old KOR scheme is shown as **Vermindering volgens de oude KOR**. The CSV summary adds a matching corrections line when these are nonzero, so the balance, collected and paid figures add up. The year-overview btw-saldo column uses the same net-VAT total as the rubrieken sheet, so its rows total to the same figure.
 
 When you add a manual correction, enter a positive amount and choose a direction (VAT due or VAT refund). Negative amounts are rejected and the form shows an error asking you to pick the direction instead; the direction determines whether the correction increases VAT payable or decreases it.
 
@@ -145,7 +145,7 @@ When you save or delete a correction, the rubrieken sheet, hero card, quarter st
 
 ### Exports for your accountant
 
-A download card next to the sheet offers CSV exports: a full export for your boekhouder, a BTW summary for the selected quarter, and a year overview.
+A download card next to the sheet offers CSV exports: a full export for your boekhouder, a btw summary for the selected quarter, and a year overview.
 
 The ZIP filename includes the company name, the period and the export profile, and the README inside also names the company. This makes it easier for an accountant who downloads exports for several clients to tell the files apart.
 
@@ -200,7 +200,7 @@ A summary bar at the top of the VAT page shows how many periods are locked; expa
 
 - **Automatic locking**: once a period's filing deadline has passed, MyCompanyDesk locks it automatically, so your books keep matching the aangifte you filed.
 - **Manual locking**: period chips let you lock any past period of the selected year yourself, for example right after filing early. Locking a period that is still running triggers an extra warning. Periods that ended before the workspace was created cannot be locked, because MyCompanyDesk holds no data for them and cannot have filed a return on your behalf.
-- **Mark as filed**: flag a locked period as filed once you have submitted the aangifte. Filing a return from the Filing tab marks the period as filed in the same step, so this action is for returns you filed outside MyCompanyDesk. If an archived return exists for a period that is not marked as filed, the periods list says so and shows that return's date. When you open a BTW-deadline reminder in the notification panel, the **Mark as filed** action uses the period named in that reminder rather than today's date, so it updates the correct quarter or month. It also resolves only the reminders for that period, not every outstanding VAT reminder in the workspace. Filed quarters show this in the quarter strip too.
+- **Mark as filed**: flag a locked period as filed once you have submitted the aangifte. Filing a return from the Filing tab marks the period as filed in the same step, so this action is for returns you filed outside MyCompanyDesk. If an archived return exists for a period that is not marked as filed, the periods list says so and shows that return's date. When you open a btw-deadline reminder in the notification panel, the **Mark as filed** action uses the period named in that reminder rather than today's date, so it updates the correct quarter or month. It also resolves only the reminders for that period, not every outstanding VAT reminder in the workspace. Filed quarters show this in the quarter strip too.
 - **Unmark as filed**: if you marked a period as filed by mistake, you can remove that filing record. MyCompanyDesk asks for confirmation first, because the action removes the record that you filed for this period. The period stays locked, the filing task and deadline return, and nothing changes at the tax authority. Your submitted return remains submitted.
 - **Temporary unlock**: need to fix something? Unlock a period temporarily (72 hours) and it relocks by itself, or relock it manually when you are done. Removing a lock entirely is only possible while the filing deadline has not yet passed.
 
@@ -216,9 +216,9 @@ Concurrent filing attempts for the same period are serialized. If two submission
 
 ## KOR
 
-The kleineondernemersregeling is managed under **Settings → BTW**: a card tracks your year revenue against the €20,000 threshold ([`sources/vat-rates.yaml#countries.NL.small_business_threshold_eur`](../../sources/vat-rates.yaml)) with a progress bar, explains what enrolment means for your invoicing, and has the enrolment toggle. You remain eligible up to and including exactly €20,000 of year revenue; only revenue above that ends KOR eligibility. While your revenue is still in the KOR range, the VAT page shows a hint linking there.
+The kleineondernemersregeling is managed under **Settings → Btw**: a card tracks your year revenue against the €20,000 threshold ([`sources/vat-rates.yaml#countries.NL.small_business_threshold_eur`](../../sources/vat-rates.yaml)) with a progress bar, explains what enrolment means for your invoicing, and has the enrolment toggle. You remain eligible up to and including exactly €20,000 of year revenue; only revenue above that ends KOR eligibility. While your revenue is still in the KOR range, the VAT page shows a hint linking there.
 
-If you go above €20,000 while still enrolled, a warning banner appears at the top of the invoice editor. The banner title says you are above the KOR threshold, the body explains that the invoice must include VAT rather than 0%, and the CTA opens **Settings → BTW** so you can deregister with the Belastingdienst and turn KOR off.
+If you go above €20,000 while still enrolled, a warning banner appears at the top of the invoice editor. The banner title says you are above the KOR threshold, the body explains that the invoice must include VAT rather than 0%, and the CTA opens **Settings → Btw** so you can deregister with the Belastingdienst and turn KOR off.
 
 ## KIA and Box 3
 

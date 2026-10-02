@@ -24,5 +24,5 @@ Om een klant te bewerken:
 1. Ga naar Klanten en zoek de klant
 2. Klik op de klant om het profiel te openen
 3. Klik op "Bewerken"
-4. Pas naam, adres, e-mail, BTW-nummer of betaalvoorwaarden aan
+4. Pas naam, adres, e-mail, btw-nummer of betaalvoorwaarden aan
 5. Sla je wijzigingen op

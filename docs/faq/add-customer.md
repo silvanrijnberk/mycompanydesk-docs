@@ -12,7 +12,7 @@ Zo voeg je een klant toe:
 1. Ga naar Klanten en open "Nieuwe klant"
 2. Vul de klant- of bedrijfsnaam en contactgegevens in
 3. Voeg e-mailadres, telefoonnummer en adres toe
-4. Vul indien nodig BTW-nummer, IBAN en betaaltermijn in
+4. Vul indien nodig btw-nummer, IBAN en betaaltermijn in
 5. Sla de klant op
 
 Tip: Het klantformulier heeft nu geen apart veld voor voorkeurstaal, dus focus op de factuur- en betaalgegevens die later opnieuw worden gebruikt.
