@@ -12,7 +12,7 @@ chatbot:
 Zo maak je een offerte:
 1. Ga naar Offertes en open "Offerte aanmaken"
 2. Selecteer een klant en koppel eventueel een project
-3. Voeg offerteregels toe met omschrijving, aantal, prijs en BTW
+3. Voeg offerteregels toe met omschrijving, aantal, prijs en btw
 4. Stel in de kaart met offertedetails de offertedatum en "Geldig tot" in
 5. Gebruik "Opslaan als concept" als de offerte nog niet klaar is, of "Afronden" wanneer die gereed is
 6. Open na het opslaan de offertedetailpagina om te bekijken of te versturen

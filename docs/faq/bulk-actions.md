@@ -16,7 +16,7 @@ Om bulkacties uit te voeren:
 
 ## Controles bij bulksgewijs afronden
 
-Als je facturen bulksgewijs afrondt of verstuurt, voert MyCompanyDesk dezelfde BTW- en statuscontroles uit als bij een enkele factuur. Zo kan een factuur met verlegde BTW bijvoorbeeld niet worden afgerond als de klant geen BTW-nummer heeft, en moet een regel met 0% BTW (sources/vat-rates.yaml#countries.NL.zero) een duidelijke grondslag hebben (verlegde BTW of een goedgekeurde nultariefreden). Facturen die een controle niet doorstaan, worden overgeslagen; in het resultatenscherm zie je welke facturen het betreft en waarom.
+Als je facturen bulksgewijs afrondt of verstuurt, voert MyCompanyDesk dezelfde btw- en statuscontroles uit als bij een enkele factuur. Zo kan een factuur met verlegde btw bijvoorbeeld niet worden afgerond als de klant geen btw-nummer heeft, en moet een regel met 0% btw (sources/vat-rates.yaml#countries.NL.zero) een duidelijke grondslag hebben (verlegde btw of een goedgekeurde nultariefreden). Facturen die een controle niet doorstaan, worden overgeslagen; in het resultatenscherm zie je welke facturen het betreft en waarom.
 
 ## Uitgaven bulksgewijs archiveren
 

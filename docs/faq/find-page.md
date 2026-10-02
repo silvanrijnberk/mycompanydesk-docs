@@ -10,7 +10,7 @@ chatbot:
 
 Om pagina's in de app te vinden:
 • Gebruik het hoofdmenu in de navigatie
-• Hoofdsecties zijn Dashboard, Facturen, Offertes, Uitgaven, Klanten, Terugkerend, Projecten, Contracten, Vastgoed, Rapporten, Overzicht, BTW, Bedrijf, Workspace-instellingen en Mijn account
+• Hoofdsecties zijn Dashboard, Facturen, Offertes, Uitgaven, Klanten, Terugkerend, Projecten, Contracten, Vastgoed, Rapporten, Overzicht, Btw, Bedrijf, Workspace-instellingen en Mijn account
 • Bedrijfsinstellingen staan onder Bedrijf
 • API-sleutels, teamtoegang en functietoggles staan onder Workspace-instellingen
 • Taal, weergave, meldingen, beveiliging en datahulpmiddelen staan onder Mijn account

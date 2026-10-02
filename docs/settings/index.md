@@ -29,12 +29,12 @@ Gedeelde instellingen. Wijzigingen hier gelden voor iedereen in je werkruimte.
 
 | Rij | Wat je er regelt |
 |---|---|
-| **Bedrijfsgegevens** | Naam, adres, KvK- en BTW-nummer, en je openingstijden; deze komen op je facturen, offertes en website |
+| **Bedrijfsgegevens** | Naam, adres, KvK- en btw-nummer, en je openingstijden; deze komen op je facturen, offertes en website |
 | **Logo en kleur** | Hoe je facturen en offertes eruitzien |
 | **Facturen en offertes** | Betaaltermijn, automatische herinneringen en hoe lang offertes geldig blijven |
 | **Factuurontwerp** | Opmaak, kleur en lettertype van je facturen, met live voorbeeld |
 | **Betalen** | Hoe klanten jou kunnen betalen: je IBAN, iDEAL en PayPal |
-| **BTW** | Je gebruikelijke tarief, hoe vaak je aangifte doet en de KOR |
+| **Btw** | Je gebruikelijke tarief, hoe vaak je aangifte doet en de KOR |
 | **Uitgaven** | Standaardcategorie en betaalmethode voor nieuwe uitgaven, plus het adres om bonnen per e-mail door te sturen |
 | **Uitgavencategorieën** | Eigen uitgavecategorieën toevoegen, bewerken, archiveren of verwijderen; btw-behandeling en aftrekbare deel instellen |
 | **Bankkoppeling** | Je bank koppelen zodat transacties als conceptuitgaven binnenkomen |
@@ -60,7 +60,7 @@ Vijf rijen zijn alleen zichtbaar voor teambeheerders: **Mensen met toegang**, **
 
 ## Zoeken
 
-Druk op **Cmd+K** (Mac) of **Ctrl+K** (Windows en Linux), of klik op het zoekveld bovenaan de instellingenpagina. Terwijl je typt worden de rijen gefilterd, en alledaagse woorden werken ook: "iban" vindt **Betalen**, "donker" vindt **Weergave**, "aangifte" vindt **BTW**.
+Druk op **Cmd+K** (Mac) of **Ctrl+K** (Windows en Linux), of klik op het zoekveld bovenaan de instellingenpagina. Terwijl je typt worden de rijen gefilterd, en alledaagse woorden werken ook: "iban" vindt **Betalen**, "donker" vindt **Weergave**, "aangifte" vindt **Btw**.
 
 Een paar pagina's verschijnen alleen via zoeken, zodat de hoofdlijst rustig blijft:
 
@@ -81,12 +81,12 @@ De knop staat niet op nieuwe- en bewerkformulieren, en niet op de instellingenpa
 | Mijn wachtwoord wijzigen of verificatie in twee stappen instellen | **Inloggen** |
 | Kiezen waarover ik meldingen krijg | **Meldingen** |
 | Donkere modus, grotere letters, een andere app-taal of samenvattingskaarten boven lijsten verbergen | **Weergave** |
-| Mijn bedrijfsadres of BTW-nummer corrigeren | **Bedrijfsgegevens** |
+| Mijn bedrijfsadres of btw-nummer corrigeren | **Bedrijfsgegevens** |
 | Een logo uploaden of mijn huisstijlkleur wijzigen | **Logo en kleur** |
 | De betaaltermijn of herinneringsmails aanpassen | **Facturen en offertes** |
 | Mijn factuur-pdf een andere stijl geven | **Factuurontwerp** |
 | Mijn IBAN toevoegen of klanten met iDEAL laten betalen | **Betalen** |
-| Mijn BTW-tarief of aangiftefrequentie wijzigen | **BTW** |
+| Mijn btw-tarief of aangiftefrequentie wijzigen | **Btw** |
 | Facturen versturen vanaf mijn eigen e-mailadres | **E-mail** |
 | Mijn website of domein regelen | **Je website en domein** |
 | Offertes, projecten of nieuwsbrieven aan- of uitzetten | **Onderdelen** |

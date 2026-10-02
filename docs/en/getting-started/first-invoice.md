@@ -11,7 +11,7 @@ This guide walks you through creating and sending your first invoice in MyCompan
 
 Make sure you have:
 
-- [Set up your company information](/en/getting-started/company-setup) (name, address, BTW-id, IBAN)
+- [Set up your company information](/en/getting-started/company-setup) (name, address, btw-id, IBAN)
 - At least one customer to invoice (you can create one during the process)
 
 ## Create an invoice

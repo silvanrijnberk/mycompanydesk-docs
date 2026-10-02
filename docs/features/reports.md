@@ -59,13 +59,13 @@ Als je werkruimte de vastgoedmodule gebruikt, toont de **Box 3**-kaart het total
 
 De **KIA**-kaart toont de kleinschaligheidsinvesteringsaftrek op basis van je investeringen. Verkoop je een investering binnen vijf jaar na aanschaf, dan moet je mogelijk een deel van de aftrek terugbetalen via de desinvesteringsbijtelling. MyCompanyDesk berekent dit nog niet automatisch, dus controleer het bedrag zelf of met je boekhouder.
 
-### Op zoek naar het BTW-rapport?
+### Op zoek naar het btw-rapport?
 
-BTW heeft een eigen pagina met kwartaaloverzichten en aangifte-ondersteuning. Zie [BTW-beheer](/features/vat).
+Btw heeft een eigen pagina met kwartaaloverzichten en aangifte-ondersteuning. Zie [Btw-beheer](/features/vat).
 
 ## Boekhoudweergave
 
-Rapporten opent standaard in een eenvoudige weergave: inkomsten, uitgaven en de BTW die je verschuldigd bent, zonder boekhoudjargon. Schakel op elk moment naar de volledige boekhoudersweergave om het grootboek, de balans, de winst-en-verliesrekening en de jaarrekening te zien. De volledige weergave is handig als je met een boekhouder werkt; je hebt hem niet nodig voor je eigen aangifte.
+Rapporten opent standaard in een eenvoudige weergave: inkomsten, uitgaven en de btw die je verschuldigd bent, zonder boekhoudjargon. Schakel op elk moment naar de volledige boekhoudersweergave om het grootboek, de balans, de winst-en-verliesrekening en de jaarrekening te zien. De volledige weergave is handig als je met een boekhouder werkt; je hebt hem niet nodig voor je eigen aangifte.
 
 In het grootboek zie je per rekening de bijbehorende RGS-referentiecode waar van toepassing. RGS (Referentie Grootboekschema) is het standaardrekeningschema voor Nederlandse ondernemers; de codes helpen jou en je boekhouder om grootboekregels eenvoudig af te stemmen op boekhoudsoftware die RGS ondersteunt.
 

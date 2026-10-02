@@ -25,7 +25,7 @@ Om je meldingsinstellingen te beheren:
    - **Op maandag wat er deze week moet gebeuren**: de maandagmail met de taken uit **Nu doen** op je dashboard. Elke maandag een mail, en alleen als er iets is; zit er iets dringend tussen, dan ook een seintje op je telefoon. De mail gaat alleen naar de eigenaar van de werkruimte, en die ziet als enige deze schakelaar. De schakelaar staat standaard aan; de afmeldlink onderin de mail zet hem uit. Zolang het aparte wekelijkse bankoverzicht uit staat (de standaard), zitten de bankregels die nog gekoppeld moeten worden ook in deze mail.
    - **Aandacht voor facturen**: te late facturen, facturen die bijna vervallen, concepten die blijven liggen, mislukte incasso's, facturen die niet bij de klant zijn aangekomen, stilgevallen automatische contractfacturatie, automatisch aangemaakte urenfacturen en wat er mee gebeurt (klaar, op het rooster om te versturen, tegengehouden of verstuurd), en uren zonder tarief.
    - **Geld binnenkomt**: betalingen, bevestigde betalingen en opvallende banktransacties.
-   - **Deadline in aantocht**: BTW, inkomstenbelasting, vennootschapsbelasting, de KOR-grens, de jaarlijkse verhogingen die je op contracten hebt ingepland (de melding een week van tevoren, een aankondigingsmail die mislukte, of een verhoging die niet doorging), en aflopende contracten of projecten. Je krijgt ze ruim van tevoren, zodat je nooit te laat bent. Deze categorie bevat ook automatische boekingen die niet konden worden gemaakt omdat de datum valt in een BTW-periode die al is aangegeven en vergrendeld, zoals een doorgestuurde inboxfactuur of een banktransactie. De melding noemt de leverancier en factuurdatum en wijst je naar de inbox of bankfeed, zodat je het in de huidige periode kunt boeken of een suppletieaangifte kunt indienen.
+   - **Deadline in aantocht**: Btw, inkomstenbelasting, vennootschapsbelasting, de KOR-grens, de jaarlijkse verhogingen die je op contracten hebt ingepland (de melding een week van tevoren, een aankondigingsmail die mislukte, of een verhoging die niet doorging), en aflopende contracten of projecten. Je krijgt ze ruim van tevoren, zodat je nooit te laat bent. Deze categorie bevat ook automatische boekingen die niet konden worden gemaakt omdat de datum valt in een btw-periode die al is aangegeven en vergrendeld, zoals een doorgestuurde inboxfactuur of een banktransactie. De melding noemt de leverancier en factuurdatum en wijst je naar de inbox of bankfeed, zodat je het in de huidige periode kunt boeken of een suppletieaangifte kunt indienen.
    - **Nieuwe kansen**: offerteaanvragen, ondertekende offertes en verkopen via je website.
    - **Nieuw bericht in je inbox**: een seintje op je telefoon zodra een klant of leverancier mailt. Mail die in Spam belandt, blijft stil: geen ping en geen rij in de meldingenlijst.
    - **Uitgave vervalt**: aankomende vervaldatums van uitgaven die je hebt aangemaakt, zoals geplande huur of nutskosten, zodat je ze op tijd kunt betalen of vastleggen.
@@ -90,7 +90,7 @@ Als Niet storen actief is, worden pushmeldingen tegengehouden, maar de meldingen
 
 ## Het detailpaneel
 
-Als je op een melding klikt, opent er een paneel aan de rechterkant met de volledige context voor die melding. Bij een te late factuur zie je het totaal, het openstaande bedrag, de betaalstatus en de factuurdatum. Bij een BTW-deadline zie je de periode en vervaldatum. Bij opgetelde meldingen zie je in het paneel de afzonderlijke facturen, offertes of records waar de samenvatting voor staat.
+Als je op een melding klikt, opent er een paneel aan de rechterkant met de volledige context voor die melding. Bij een te late factuur zie je het totaal, het openstaande bedrag, de betaalstatus en de factuurdatum. Bij een btw-deadline zie je de periode en vervaldatum. Bij opgetelde meldingen zie je in het paneel de afzonderlijke facturen, offertes of records waar de samenvatting voor staat.
 
 Het paneel wacht tot het bijbehorende record is geladen voordat het wisselt. Tot die tijd blijft de vorige melding zichtbaar en staan de knoppen op inactief, zodat er niets onder je cursor verschuift. Zodra het record klaar is, fade het paneel in één keer over naar de nieuwe melding.
 
@@ -99,7 +99,7 @@ De acties voor die melding worden gerangschikt zodat de belangrijkste actie als 
 Welke acties beschikbaar zijn, hangt af van de melding:
 
 - **Markeer als betaald**: boekt een handmatige betaling voor het resterende bedrag en rondt de factuurmelding af.
-- **Markeer als ingediend**: markeert de BTW-periode als ingediend; alleen zichtbaar bij BTW-deadlines.
+- **Markeer als ingediend**: markeert de btw-periode als ingediend; alleen zichtbaar bij btw-deadlines.
 - **Verstuur herinnering**: stuurt een betalingsherinnering voor de factuur, zichtbaar bij te late facturen.
 - **Openen**: opent het bijbehorende record, zoals de factuur, offerte of het contract.
 - **Snooze** (of **Later**): stelt de melding tijdelijk uit zonder hem als gelezen te markeren.

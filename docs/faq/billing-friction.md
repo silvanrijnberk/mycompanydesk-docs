@@ -1,6 +1,6 @@
 ---
 title: "Hulp bij facturatie en abonnement"
-description: "Om factuurfouten in de app te beperken: open Klanten en vul het factuur-e-mailadres, adres, BTW-nummer en standaard betaalvoorwaarden van de klant in."
+description: "Om factuurfouten in de app te beperken: open Klanten en vul het factuur-e-mailadres, adres, btw-nummer en standaard betaalvoorwaarden van de klant in."
 last_verified: 2026-05-09
 chatbot:
   triggers:
@@ -22,7 +22,7 @@ chatbot:
 ---
 
 Om factuurfouten in de app te beperken:
-1. Open Klanten en vul het factuur-e-mailadres, adres, BTW-nummer en standaard betaalvoorwaarden van de klant in
+1. Open Klanten en vul het factuur-e-mailadres, adres, btw-nummer en standaard betaalvoorwaarden van de klant in
 2. Gebruik daarna die opgeslagen klant bij het aanmaken van de factuur in plaats van alles opnieuw te typen
 3. Bekijk eerst de factuurpreview zodat je klantgegevens, factuurregels en PDF-opmaak kunt controleren
 4. Verschijnt er nog steeds verkeerde informatie, werk dan eerst het klantrecord of de bedrijfsinstellingen bij en vernieuw daarna het concept

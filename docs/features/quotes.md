@@ -15,7 +15,7 @@ Het offertesgedeelte stelt je in staat om offertes te maken, versturen en bijhou
 
 1. Ga naar **Offertes > Nieuwe offerte**
 2. Selecteer of maak een **klant** aan
-3. Voeg **regelitems** toe met omschrijvingen, aantallen, prijzen en BTW-tarieven
+3. Voeg **regelitems** toe met omschrijvingen, aantallen, prijzen en btw-tarieven
 4. Stel een **geldig tot**-datum in (hoe lang de offerte geldig is)
 5. Voeg optionele **notities** toe
 6. Klik op **Opslaan**
@@ -166,7 +166,7 @@ Maak je een offerte vanuit een aanvraag, dan staat het bericht van de aanvrager 
 
 Als een klant een offerteaanvraag via je sitebouwer of contactformulier indient, kan MyCompanyDesk automatisch een conceptofferte opzetten. De AI leest de aanvraagtekst en je eigen catalogus en stelt regels voor die hij kan matchen.
 
-- Gematchte catalogusitems behouden hun catalogusprijs, BTW-tarief en eenheid. De AI suggereert alleen hoeveelheden.
+- Gematchte catalogusitems behouden hun catalogusprijs, btw-tarief en eenheid. De AI suggereert alleen hoeveelheden.
 - Werk dat niet in de catalogus past, wordt een omschrijvingsregel met prijs 0, zodat je zelf een prijs kunt bepalen.
 - Het concept wordt aangemaakt als offerte in status **Concept**. Hij wordt niet automatisch verstuurd en er wordt geen klantrecord aangemaakt op basis van het ongeverifieerde formulier.
 - Je krijgt een melding zodra een concept klaar staat. Open de aanvraag, controleer de regels, koppel of maak de klant aan en verstuur hem wanneer je wilt.

@@ -29,10 +29,10 @@ De meeste zzp'ers en eenmanszaken kunnen hun dagelijkse boekhouding prima zelf d
 
 ## Wat MyCompanyDesk voor je doet
 
-- **BTW-berekening**: per factuur en bon wordt het juiste btw-bedrag berekend. Zie [BTW-beheer](/features/vat) voor meer informatie.
+- **Btw-berekening**: per factuur en bon wordt het juiste btw-bedrag berekend. Zie [Btw-beheer](/features/vat) voor meer informatie.
 - **Bonnen scannen**: maak een foto van je bon en AI leest het bedrag, de btw, de leverancier en de datum uit. Zie [Bonnen scannen](/advanced/receipt-scanning).
 - **Overzicht inkomsten en uitgaven**: zie openstaande facturen, betaalde bedragen en uitgaven in één dashboard.
-- **BTW-aangifte voorbereiden**: het btw-rapport groepeert je transacties, zodat je de aangifte zelf kunt doen of achteraf aan je boekhouder kunt geven.
+- **Btw-aangifte voorbereiden**: het btw-rapport groepeert je transacties, zodat je de aangifte zelf kunt doen of achteraf aan je boekhouder kunt geven.
 
 ## Wanneer je het zelf kunt
 

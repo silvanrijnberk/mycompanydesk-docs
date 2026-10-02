@@ -41,7 +41,7 @@ Boekhoudertoegang is gratis op elk abonnement; er is geen Office-abonnement of t
 
 ## Automatisch aanleveren
 
-Nadat je boekhouder is gekoppeld, ga je naar **Instellingen → Toegang en boekhouder** en zet je automatisch doorsturen aan. MyCompanyDesk kan dan een export aan je boekhouder leveren met verkoopfacturen, uitgaven en geaccepteerde offertes in een formaat dat het pakket van je boekhouder inleest, zodat de cijfers niet handmatig hoeven te worden overgenomen. BTW-aangiftecijfers zitten niet in deze export; download die als CSV via **Belastingen → BTW-aangifte**. Je kiest zelf welke onderdelen worden meegestuurd en ziet in een log wat er is afgeleverd.
+Nadat je boekhouder is gekoppeld, ga je naar **Instellingen → Toegang en boekhouder** en zet je automatisch doorsturen aan. MyCompanyDesk kan dan een export aan je boekhouder leveren met verkoopfacturen, uitgaven en geaccepteerde offertes in een formaat dat het pakket van je boekhouder inleest, zodat de cijfers niet handmatig hoeven te worden overgenomen. Btw-aangiftecijfers zitten niet in deze export; download die als CSV via **Belastingen → Btw-aangifte**. Je kiest zelf welke onderdelen worden meegestuurd en ziet in een log wat er is afgeleverd.
 
 ## Je boekhouder nodigt jou uit
 
@@ -60,7 +60,7 @@ Je kunt die toegang later altijd weer intrekken via Instellingen → "Toegang en
 
 Als je boekhouder toegang heeft, ziet hij of zij in het boekhoudersportaal een triage-overzicht met één rij per administratie. Het overzicht sorteert op urgentie, zodat je boekhouder in één oogopslag ziet welke administratie aandacht nodig heeft.
 
-- Administraties met een komende of gemiste BTW-aangiftetermijn komen bovenaan.
+- Administraties met een komende of gemiste btw-aangiftetermijn komen bovenaan.
 - Openstaande facturen en ontbrekende bonnen worden per administratie geteld.
 - Administraties die op schema liggen, krijgen het label "Loopt goed".
 

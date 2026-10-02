@@ -27,7 +27,7 @@ MyCompanyDesk heeft twee abonnementen: **Desk** en **Office**.
 
 **Desk** is gratis en blijft gratis. Je krijgt onbeperkt facturen, offertes en uitgaven, projecten en urenregistratie, je eigen website op `.mycompanydesk.site`, bonnetjes scannen met AI en een basale AI-chat.
 
-**Office** is betaald. Daarbij krijg je automatisering en diensten die MCD echt geld kosten: terugkerende facturen en uitgaven, contracten, bankkoppelingen, een zakelijke inbox op je eigen domein, digitale BTW-aangifte, volledige boekhouding, API-toegang en hogere AI-limieten. Zie de [abonnementenpagina](https://mycompanydesk.nl/plans) voor de actuele prijs.
+**Office** is betaald. Daarbij krijg je automatisering en diensten die MCD echt geld kosten: terugkerende facturen en uitgaven, contracten, bankkoppelingen, een zakelijke inbox op je eigen domein, digitale btw-aangifte, volledige boekhouding, API-toegang en hogere AI-limieten. Zie de [abonnementenpagina](https://mycompanydesk.nl/plans) voor de actuele prijs.
 
 Deze functies staan in onze billing-config: [apps/api/src/modules/billing/plans.config.js](https://github.com/silvanrijnberk/RichardTool/blob/development/apps/api/src/modules/billing/plans.config.js).
 
@@ -38,6 +38,6 @@ Deze functies staan in onze billing-config: [apps/api/src/modules/billing/plans.
 - Als je gratis proefperiode van 60 dagen Office afloopt zonder abonnement, gaat je werkruimte automatisch naar Desk.
 
 **Facturatie**
-- Alle prijzen zijn exclusief 21% BTW. Het bedrag dat je betaalt bij checkout is inclusief BTW; je kunt die terugvragen als voorbelasting.
+- Alle prijzen zijn exclusief 21% btw. Het bedrag dat je betaalt bij checkout is inclusief btw; je kunt die terugvragen als voorbelasting.
 - Er is geen kosten per gebruiker. Desk biedt plek voor één gebruiker plus gratis boekhouder-toegang. Office biedt onbeperkt gebruikers plus gratis boekhouder-toegang.
 - Je kunt op elk moment opzeggen of downgraden. Niet tevreden? Binnen 14 dagen krijg je je geld terug.

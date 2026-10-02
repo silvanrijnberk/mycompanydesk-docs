@@ -122,7 +122,7 @@ Bespoke-sjablonen met een minimale footer laten je nu je eigen voettekst-inhoud 
 
 Daar kun je toevoegen:
 
-- **Juridische regel**: je KvK/BTW of andere kleine lettertjes, weergegeven in de stijl van het ontwerp.
+- **Juridische regel**: je KvK/btw of andere kleine lettertjes, weergegeven in de stijl van het ontwerp.
 - **Linkkolommen**: getitelde kolommen met links, handig voor pagina's als contact, voorwaarden of diensten.
 - **Contactgegevens**: schakel in om je e-mail, telefoon en adres uit je bedrijfsgegevens te tonen.
 - **Sociale links**: schakel in om de sociale links uit je bedrijfsgegevens te tonen.
@@ -489,7 +489,7 @@ Beschikbare tokens:
 | `{{bedrijf.naam}}` | Bedrijfsnaam |
 | `{{bedrijf.adres}}` | Volledig adres, samengesteld uit straat, postcode en plaats |
 | `{{bedrijf.kvk}}` | KVK-nummer |
-| `{{bedrijf.btw}}` | BTW-id |
+| `{{bedrijf.btw}}` | Btw-id |
 | `{{bedrijf.email}}` | Publiek e-mailadres |
 :::
 

@@ -14,7 +14,7 @@ Importeer bestaande gegevens in MyCompanyDesk en exporteer je administratie als 
 
 Importeer gegevens uit CSV-bestanden voor:
 
-- **Klanten** met naam, e-mail, telefoon, adres, BTW-nummer
+- **Klanten** met naam, e-mail, telefoon, adres, btw-nummer
 - **Facturen** met factuurgegevens
 - **Uitgaven** met categorieën en bedragen
 
@@ -48,7 +48,7 @@ De importwizard toont je CSV-kolommen en laat je elke kolom aan het bijbehorende
 | Straat / Adres | Straatadres |
 | Postcode | Postcode |
 | Plaats | Plaats |
-| VAT / BTW | BTW-nummer |
+| VAT / BTW | Btw-nummer |
 | Telefoon | Telefoonnummer |
 
 ## Exporteren

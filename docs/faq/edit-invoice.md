@@ -17,4 +17,4 @@ Zo bewerk je een factuur:
 
 Is een factuur eenmaal verstuurd of gemaild, of staat die op betaald of te laat, dan is die vergrendeld en kun je die niet meer bewerken. Annuleer de factuur en maak een nieuwe, of gebruik "Creditnota / correctie maken" voor correcties.
 
-Tip: Fout op een verstuurde factuur? Met een creditnota plus een nieuwe factuur blijven je nummering en BTW-administratie kloppend.
+Tip: Fout op een verstuurde factuur? Met een creditnota plus een nieuwe factuur blijven je nummering en btw-administratie kloppend.

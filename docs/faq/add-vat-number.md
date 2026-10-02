@@ -1,6 +1,6 @@
 ---
-title: "BTW-nummer toevoegen"
-description: "Om je BTW-nummer toe te voegen of te wijzigen: ga naar Instellingen > Bedrijfsgegevens, vul daar het veld BTW-nummer in."
+title: "Btw-nummer toevoegen"
+description: "Om je btw-nummer toe te voegen of te wijzigen: ga naar Instellingen > Bedrijfsgegevens, vul daar het veld btw-nummer in."
 last_verified: 2026-07-02
 chatbot:
   triggers:
@@ -18,9 +18,9 @@ chatbot:
     - "How do I set VAT on an invoice?"
 ---
 
-Om je BTW-nummer toe te voegen of te wijzigen:
+Om je btw-nummer toe te voegen of te wijzigen:
 1. Ga naar Instellingen → "Bedrijfsgegevens"
-2. Vul daar het veld "BTW-nummer" in
+2. Vul daar het veld "Btw-nummer" in
 3. Wijzigingen worden automatisch opgeslagen
 
-Je BTW-nummer wordt daarna gebruikt op gegenereerde documenten. Voor klant-BTW-nummers open je het klantprofiel en vul je daar het BTW-veld in.
+Je btw-nummer wordt daarna gebruikt op gegenereerde documenten. Voor klant-btw-nummers open je het klantprofiel en vul je daar het btw-veld in.

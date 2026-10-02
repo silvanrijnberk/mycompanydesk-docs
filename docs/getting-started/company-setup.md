@@ -1,6 +1,6 @@
 ---
 title: Je bedrijf instellen
-description: "De setupwizard vult je afzenderblok, betaalgegevens en BTW-status in rond je eerste factuur, met een KVK-opzoeking en een live voorbeeld."
+description: "De setupwizard vult je afzenderblok, betaalgegevens en btw-status in rond je eerste factuur, met een KVK-opzoeking en een live voorbeeld."
 last_verified: 2026-09-30
 ---
 
@@ -37,11 +37,11 @@ Geen treffer, of geen KVK-inschrijving?
 
 ## Stap 3: Hoe je betaald krijgt
 
-Deze stap bestaat uit twee onderdelen: je BTW-status en je IBAN.
+Deze stap bestaat uit twee onderdelen: je btw-status en je IBAN.
 
-**BTW-status**
+**Btw-status**
 
-Als je BTW in rekening brengt, selecteer **Ja, ik reken BTW** en vul je BTW-id in. Zolang het veld leeg is, zie je een hint dat een BTW-id vereist is om door te gaan; als je die nog niet hebt, klik je op **Ik weet mijn BTW-id nu niet, ik vul hem later in** om deze stap over te slaan. Ben je vrijgesteld (bijvoorbeeld via de kleineondernemersregeling, KOR), selecteer dan **Nee, ik ben vrijgesteld**. Je kunt dit later aanpassen in Instellingen.
+Als je btw in rekening brengt, selecteer **Ja, ik reken btw** en vul je btw-id in. Zolang het veld leeg is, zie je een hint dat een btw-id vereist is om door te gaan; als je die nog niet hebt, klik je op **Ik weet mijn btw-id nu niet, ik vul hem later in** om deze stap over te slaan. Ben je vrijgesteld (bijvoorbeeld via de kleineondernemersregeling, KOR), selecteer dan **Nee, ik ben vrijgesteld**. Je kunt dit later aanpassen in Instellingen.
 
 **IBAN**
 
