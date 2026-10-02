@@ -1,7 +1,7 @@
 ---
 title: Rendez-vous en ligne
 description: Permettez aux clients de prendre rendez-vous directement via votre site avec Site Bookings.
-last_verified: 2026-09-29
+last_verified: 2026-10-02
 ---
 
 # Rendez-vous en ligne
@@ -91,11 +91,13 @@ Une fois un rendez-vous réservé, vous pouvez le gérer depuis l'agenda :
 
 Un rendez-vous en ligne **confirmé** compte également comme heures travaillées dans **Agenda**, afin que vos rendez-vous apparaissent à côté de vos entrées de temps. Ces heures ne sont pas facturables via Agenda; le revenu du rendez-vous est facturé séparément depuis le rendez-vous lui-même.
 
+Un client peut annuler en ligne tant que le rendez-vous n'a pas commencé. Un rendez-vous pour lequel une facture existe déjà ne peut plus être annulé en ligne : la page d'annulation le signale et invite le client à vous contacter.
+
 ## Acompte
 
 Le bloc de rendez-vous peut demander un acompte aux visiteurs qui réservent. Activez **Acompte** dans les réglages du bloc et choisissez un montant fixe ou un pourcentage du prix du service. Un acompte exige un prestataire de paiement connecté (Mollie ou Stripe) ; sans lui, le bloc se contente de réserver sans acompte.
 
-Tant que l'acompte n'est pas payé, la réservation reste en attente : l'application affiche **En attente de paiement** à la place des boutons Accepter et Refuser, et l'acceptation est refusée tant que l'argent n'est pas arrivé. Quand vous refusez une demande, ou qu'une demande expire, l'acompte payé est remboursé tout seul. Une annulation par le visiteur rembourse aussi le montant d'elle-même, tant qu'elle tombe dans la fenêtre de remboursement que vous réglez dans les paramètres du bloc. Par défaut, cette fenêtre va jusqu'à un jour avant le début ; vous pouvez l'élargir à tout votre horizon de réservation, pour que chaque annulation avant le début soit remboursée, ou la ramener à zéro : rien ne part alors automatiquement et vous remboursez vous-même avec le bouton **Rembourser l'acompte** du rendez-vous.
+Tant que l'acompte n'est pas payé, la réservation reste en attente : l'application affiche **En attente de paiement** à la place du bouton Accepter, et l'acceptation est refusée tant que l'argent n'est pas arrivé. Vous pouvez quand même refuser la demande pendant ce temps ; sur une demande non payée, ce bouton figure seul. Quand vous refusez une demande, ou qu'une demande expire, l'acompte payé est remboursé tout seul. Un paiement qui arrive plus tard pour une demande entre-temps refusée, retirée ou expirée est remboursé de la même façon. Une annulation par le visiteur rembourse aussi le montant d'elle-même, tant qu'elle tombe dans la fenêtre de remboursement que vous réglez dans les paramètres du bloc. Par défaut, cette fenêtre va jusqu'à un jour avant le début ; vous pouvez l'élargir à tout votre horizon de réservation, pour que chaque annulation avant le début soit remboursée, ou la ramener à zéro : rien ne part alors automatiquement et vous remboursez vous-même avec le bouton **Rembourser l'acompte** du rendez-vous.
 
 La replanification d'un rendez-vous ne rouvre jamais sa fenêtre de remboursement.
 
@@ -106,7 +108,7 @@ MyCompanyDesk peut envoyer automatiquement un e-mail de rappel avant le rendez-v
 ## Questions fréquentes
 
 **Pourquoi ne vois-je aucun créneau disponible ?**
-Vérifiez que vous avez créé au moins un service et que vos créneaux sont dans le futur. Une approbation activée peut aussi faire que les créneaux ne sont visibles qu'après votre confirmation de la demande.
+Vérifiez que vous avez créé au moins un service, qu'il possède une durée, et que vos créneaux sont dans le futur. Une approbation activée peut aussi faire que les créneaux ne sont visibles qu'après votre confirmation de la demande.
 
 **Puis-je proposer plusieurs services ?**
 Oui. Vous pouvez afficher un ou plusieurs services par bloc de rendez-vous. Chaque service a son propre nom, sa propre durée et son propre prix.

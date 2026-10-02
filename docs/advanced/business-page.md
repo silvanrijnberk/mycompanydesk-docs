@@ -1,7 +1,7 @@
 ---
 title: Sitebouwer
 description: "Bouw een website met meerdere pagina's in de drag-and-drop-editor: secties en blokken, je eigen kleuren en lettertypes, en publiceren wanneer jij wilt."
-last_verified: 2026-09-30
+last_verified: 2026-10-02
 ---
 
 # Sitebouwer
@@ -45,13 +45,19 @@ De banner gebruikt het Gemini AI-model (lite-variant) als dat beschikbaar is in 
 
 Voordat je ooit de editor opent, kan de website-opzetwizard je eerste concept voor je bouwen. Hij opent automatisch de eerste keer dat een nieuwe werkruimte `/website` bezoekt, en je kunt hem later opnieuw starten via **Bedrijf > Je website > Stijl** met **Opnieuw opzetten**. De wizard stelt vier vragen en toont daarna optioneel een stap voor een webadres:
 
-1. **Wat je doet** (alvast ingevuld uit je KVK-gegevens) - je werk, diensten en toon.
+1. **Wat je doet** (alvast ingevuld uit je KVK-gegevens) - je werk, diensten en toon. Dezelfde stap vraagt ook hoe klanten kunnen boeken: ze kiezen zelf een tijd binnen je openingstijden, ze sturen een aanvraag die jij bevestigt, of er is geen online boeking. Heeft je site al een afspraakblok, dan begint de wizard in de modus van dat blok en schakelt hij bij het afronden mee met jouw keuze.
 2. **Wat je wilt** - of je site vooral klanten moet binnenhalen, je werk moet tonen, betrouwbaar moet overkomen of beter vindbaar moet zijn.
 3. **Logo** - houd het AI-gegenereerde logo, of upload je eigen PNG/SVG.
 4. **Merkkleur** - kies een van de voorgestelde kleuren of geef je eigen hex-kleur op.
 5. **Webadres** (alleen als je werkruimte nog geen actief domein of CNAME heeft die de site bedient) — voeg een domein toe of koppel een bestaand domein. Je kunt deze stap overslaan en later een adres toevoegen.
 
 Je antwoorden worden opgeslagen als sitebriefing. Als je afsluit, schrijft de AI nieuwe teksten voor je hele conceptsite op basis van de briefing en je werkruimtegegevens, past je gekozen logo en merkkleur toe, en laat alles als concept staan. Er wordt niets automatisch gepubliceerd. Je bekijkt het resultaat in de editor en publiceert pas wanneer je tevreden bent.
+
+De diensten in de eerste vraag hebben elk een optionele prijs. Typ een bedrag inclusief btw, zet **vanaf** aan voor een vanaf-prijs, of laat het veld leeg: je site toont dan "Op aanvraag". Een prijs die al bij Aanbod staat, wordt automatisch ingevuld. Valt je werkruimte onder geen btw (vrijgesteld of KOR), dan heet het veld gewoon Prijs en vermeldt de hint dat de prijzen zonder btw zijn.
+
+Je mag ook halverwege stoppen: klik op **Later afmaken** of herlaad de pagina, en je antwoorden staan er bij terugkeer weer. De wizard bewaart wat je zelf hebt gewijzigd op dat apparaat, ongeveer een week lang, en zet iets alleen terug zolang de onderliggende waarde niet veranderd is; zijn je bedrijfsgegevens of diensten in de tussentijd gewijzigd, vanuit Instellingen of vanaf een ander apparaat, dan geldt de huidige waarde.
+
+Bron: `apps/web/utils/siteWizardDraft.ts#SITE_WIZARD_DRAFT_TTL_MS`.
 
 Dezelfde wizard kan een bestaande site ook helemaal opnieuw schrijven. Als je hem vanuit de Stijl-tab herstart, vraagt hij eerst om bevestiging, want afsluiten vervangt tekst die je zelf hebt aangepast. De site blijft concept tot je zelf publiceert.
 
@@ -426,7 +432,7 @@ Wanneer je klaar bent:
 
 Ongepubliceerde wijzigingen worden per pagina en per token bijgehouden. De publiceerknop is uitgeschakeld als er niets te publiceren is. Een pagina wisselen tussen Live en Concept wordt meteen opgeslagen en telt als ongepubliceerde wijziging, dus de Publiceerknop licht op zodra je wisselt.
 
-Vóór het publiceren controleert de sitebouwer of je contactpagina of je voettekst het e-mailadres toont waarmee je inlogt. Zo ja, dan krijg je eerst een waarschuwing, met een link om een ander publiek e-mailadres in te stellen; je kunt ook bevestigen dat het adres klopt en toch publiceren.
+Van welke ingang je ook publiceert, overzicht, editorwerkbalk of het eerste-opstartscherm: zodra er iets opvalt krijg je dezelfde publicatiewaarschuwing. Ze somt elk punt op: of je contactpagina of voettekst het e-mailadres toont waarmee je inlogt (met een link om een ander publiek e-mailadres in te stellen, of een knop om te bevestigen dat dit een bewust adres is), en of er op je juridische pagina's nog velden ontbreken, met een link die je bedrijfsgegevens invult. Bevestig je het e-mailadres en valt er verder niets op, dan schakelt de dialoog over op een neutrale Klaar om te publiceren die alleen nog om bevestiging vraagt.
 
 Een snelle dubbelklik kan niet per ongeluk publiceren: de bevestigingsknop in de publicatiewaarschuwing negeert klikken even na het openen, en een tweede klik vlak na de eerste kan geen dubbele publicatie starten of de waarschuwing overslaan.
 
@@ -536,9 +542,11 @@ Nieuwsbriefinzendingen delen dezelfde snelheidslimiet als het contactformulier: 
 
 De sitebouwer voorziet elke nieuwe werkruimte van twee standaard juridische pagina's: **Privacybeleid** (`/privacy`) en **Algemene voorwaarden** (`/algemene-voorwaarden`). De inhoud gebruikt plaatsaanduidingsmarkeringen voor bedrijfsgegevens. Wanneer de pagina wordt gerenderd voor bezoekers, worden die markeringen vervangen door de waarden uit je **Bedrijfsinstellingen** — bedrijfsnaam, adres, postcode, plaats, land, registratienummer, btw-nummer en publieke e-mail.
 
-De voorwaardenpagina kent twee varianten, gekozen naar je vak. Bedrijven die rechtstreeks aan consumenten verkopen, afspraakvakken en winkel- of horecavakken zoals een bakker, krijgen consumentgerichte voorwaarden: ze behandelen bestellingen en afspraken, het wettelijke herroepingsrecht voor consumenten met de wettelijke uitzondering voor op maat gemaakte of snel bedervende producten, betaling, het annuleren van afspraken en lessen, aansprakelijkheid en klachten, plus een algemene zin over allergieën. Op offertes gerichte vakken en B2B-diensten houden de bestaande vakman-voorwaarden, die over offertes, meerwerk en oplevering gaan. Beide varianten gebruiken dezelfde plaatsaanduidingen.
+De tekst van beide pagina's is naar je vak gekozen, voorwaarden en privacy. De voorwaardenpagina kent twee varianten. Bedrijven die rechtstreeks aan consumenten verkopen, afspraakvakken en winkel- of horecavakken zoals een bakker, krijgen consumentgerichte voorwaarden: ze behandelen bestellingen en afspraken, het wettelijke herroepingsrecht voor consumenten met de wettelijke uitzondering voor op maat gemaakte of snel bedervende producten, betaling, het annuleren van afspraken en lessen, aansprakelijkheid en klachten, plus een algemene zin over allergieën. Op offertes gerichte vakken en B2B-diensten houden de bestaande vakman-voorwaarden, die over offertes, meerwerk en oplevering gaan. Beide varianten gebruiken dezelfde plaatsaanduidingen.
 
 Je kunt de juridische pagina's net als elke andere pagina bewerken in de editor. De editor behoudt de plaatsaanduidingsankers in de inhoud, zodat ook openen en opslaan zonder wijzigingen ervoor zorgt dat toekomstige updates van je bedrijfsgegevens automatisch doorstromen.
+
+Verbeterd MyCompanyDesk de standaardteksten, dan worden ook bestaande sites bijgewerkt. Zodra je Website opent, controleert het platform of je privacy- en voorwaardenpagina's nog, letter voor letter, een van de standaardteksten zijn die hij voor jouw vak schrijft. Een pagina die je zelf hebt aangepast, wordt nooit aangepakt. Staat er nog de standaardtekst, dan herschrijft hij haar naar de woorden die bij je vak horen: was die pagina live, dan gaat alleen die pagina opnieuw het publicatie-snapshot in, je andere concepten blijven onaangeroerd en de publiceerbalk meldt dit niet als ongepubliceerde wijziging; staat een pagina op Concept, dan blijft die concept en komt de nieuwe tekst mee bij je volgende publicatie.
 
 De juridische pagina's worden gerenderd op het moment van publiceren, net als de rest van je site. Ze delen dezelfde Live/Concept-status en dezelfde zichtbaarheidsregels op basis van je abonnement.
 

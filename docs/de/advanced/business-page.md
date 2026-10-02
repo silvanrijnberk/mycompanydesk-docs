@@ -1,7 +1,7 @@
 ---
 title: Website-Builder
 description: "Bauen Sie eine mehrseitige Unternehmenswebsite im Drag-and-drop-Editor: Abschnitte und Blöcke, eigene Farben und Schriften, und veröffentlichen."
-last_verified: 2026-09-30
+last_verified: 2026-10-02
 ---
 
 # Website-Builder
@@ -45,13 +45,19 @@ Das Banner verwendet das Gemini KI-Modell (Lite-Variante), sofern in Ihrem Works
 
 Bevor Sie überhaupt den Editor öffnen, kann der Website-Einrichtungsassistent Ihren ersten Entwurf für Sie erstellen. Er öffnet sich automatisch beim ersten Besuch von `/website` in einem neuen Workspace und lässt sich später unter **Unternehmen > Ihre Website > Stil** mit **Erneut einrichten** neu starten. Der Assistent stellt vier Fragen und zeigt dann optional einen Schritt für eine Webadresse an:
 
-1. **Was Sie tun** (aus Ihren KVK-Daten vorausgefüllt) - Ihre Arbeit, Dienstleistungen und Tonalität.
+1. **Was Sie tun** (aus Ihren KVK-Daten vorausgefüllt) - Ihre Arbeit, Dienstleistungen und Tonalität. Derselbe Schritt fragt auch, wie Kunden buchen können: Sie wählen selbst eine Zeit innerhalb Ihrer Öffnungszeiten, Sie senden eine Anfrage, die Sie bestätigen, oder gebucht wird nicht online. Hat Ihre Site bereits einen Terminblock, startet der Assistent im Modus dieses Blocks und richtet sich beim Abschließen nach Ihrer Wahl.
 2. **Was Sie wollen** - ob die Site vor allem Kunden gewinnen, Ihre Arbeit zeigen, vertrauenswürdig wirken oder online gefunden werden soll.
 3. **Logo** - das KI-generierte Logo behalten, oder Ihr eigenes PNG/SVG hochladen.
 4. **Markenfarbe** - eine der vorgeschlagenen Farben wählen oder Ihre eigene Hex-Farbe eingeben.
 5. **Webadresse** (nur wenn Ihr Workspace noch keine aktive Domain oder CNAME hat, die die Site bedient) — fügen Sie eine Domain hinzu oder verbinden Sie eine bestehende. Sie können diesen Schritt überspringen und später eine Adresse hinzufügen.
 
 Ihre Antworten werden als Site-Briefing gespeichert. Wenn Sie abschließen, schreibt die KI auf Basis des Briefings und Ihrer Workspace-Daten neuen Text für Ihren gesamten Entwurf, wendet Ihr gewähltes Logo und Ihre Markenfarbe an und lässt alles als Entwurf stehen. Es wird nichts automatisch veröffentlicht. Sie prüfen das Ergebnis im Editor und veröffentlichen es, sobald Sie zufrieden sind.
+
+Die Dienstleistungen in der ersten Frage können jeweils einen optionalen Preis erhalten. Geben Sie einen Betrag inklusive MwSt. ein, schalten Sie **ab** für einen Startpreis ein, oder lassen Sie das Feld leer: Ihre Site zeigt dann „Auf Anfrage“. Ein Preis, der bereits im Angebot steht, wird automatisch vorausgefüllt. Berechnet Ihr Workspace keine MwSt. (befreit oder KOR), heißt das Feld einfach Preis und der Hinweis erwähnt, dass die Preise keine MwSt. enthalten.
+
+Sie können auch mitten im Assistenten aufhören: Klicken Sie auf **Später fertigstellen** oder laden Sie die Seite neu, und Ihre Antworten stehen bei der Rückkehr wieder da. Der Assistent bewahrt Ihre eigenen Änderungen auf diesem Gerät rund eine Woche auf und stellt etwas nur wieder her, solange der zugrunde liegende Wert unverändert ist; haben sich Ihre Firmendaten oder Dienstleistungen unterdessen geändert, aus den Einstellungen oder von einem anderen Gerät, gilt der aktuelle Wert.
+
+Quelle: `apps/web/utils/siteWizardDraft.ts#SITE_WIZARD_DRAFT_TTL_MS`.
 
 Derselbe Assistent kann eine bestehende Site auch komplett neu schreiben. Wenn Sie ihn über den Stil-Tab neu starten, fragt er zuerst nach Bestätigung, denn Abschließen ersetzt Text, den Sie selbst bearbeitet haben. Die Site bleibt Entwurf, bis Sie selbst veröffentlichen.
 
@@ -425,7 +431,7 @@ Wenn Sie bereit sind:
 
 Unveröffentlichte Änderungen werden pro Seite und pro Token erfasst. Die Veröffentlichen-Schaltfläche ist deaktiviert, wenn nichts zu veröffentlichen ist. Das Umschalten einer Seite zwischen Live und Entwurf wird sofort gespeichert und zählt als unveröffentlichte Änderung, sodass die Veröffentlichen-Schaltfläche beim Umschalten aufleuchtet.
 
-Vor der Veröffentlichung prüft der Builder, ob Ihre Kontaktseite oder Ihr Fußbereich die E-Mail-Adresse zeigt, mit der Sie sich anmelden. Ist das der Fall, erhalten Sie zuerst eine Warnung, mit einem Link, um eine andere öffentliche E-Mail-Adresse zu hinterlegen; Sie können auch bestätigen, dass die Adresse in Ordnung ist, und trotzdem veröffentlichen.
+Ganz gleich, von wo Sie veröffentlichen, über die Übersicht, die Editor-Symbolleiste oder den Erste-Schritte-Bildschirm: Sobald etwas auffällt, erscheint zuerst dieselbe Veröffentlichungswarnung. Sie listet jeden Punkt auf: ob Ihre Kontaktseite oder Ihr Fußbereich die E-Mail-Adresse zeigt, mit der Sie sich anmelden (mit einem Link für eine andere öffentliche E-Mail-Adresse oder einer Schaltfläche, um diese Adresse als gewollt zu bestätigen), und ob auf Ihren rechtlichen Seiten noch Felder fehlen, mit einem Link, der Ihre Firmendaten ausfüllt. Haben Sie die E-Mail-Adresse bestätigt und fällt sonst nichts auf, wechselt der Dialog in den neutralen Stand „Bereit zum Veröffentlichen“ und fragt nur noch nach Bestätigung.
 
 Ein schneller Doppelklick kann nicht versehentlich veröffentlichen: Die Bestätigen-Schaltfläche in der Veröffentlichungswarnung ignoriert Klicks für einen Moment nach dem Öffnen, und ein zweiter Klick direkt nach dem ersten kann weder eine doppelte Veröffentlichung auslösen noch die Warnung überspringen.
 
@@ -536,9 +542,11 @@ Newsletter-Einreichungen teilen dasselbe Rate-Limit wie das Kontaktformular: 5 p
 
 Der Website-Builder erstellt für jeden neuen Arbeitsbereich zwei Standard-Rechtsseiten: **Datenschutzerklärung** (`/privacy`) und **Allgemeine Geschäftsbedingungen** (`/algemene-voorwaarden`). Der Inhalt verwendet Platzhalter für Unternehmensdaten. Wenn die Seite für Besucher gerendert wird, werden diese Platzhalter durch die Werte aus Ihren **Unternehmenseinstellungen** ersetzt: Unternehmensname, Adresse, Postleitzahl, Stadt, Land, Registrierungsnummer, USt.-ID und öffentliche E-Mail.
 
-Die AGB-Seite kennt zwei Varianten, gewählt nach Ihrem Gewerbe. Unternehmen, die direkt an Verbraucher verkaufen, Termingewerbe und Shop- oder Gastronomiegewerbe wie eine Bäckerei erhalten verbraucherorientierte Bedingungen: Sie behandeln Bestellungen und Termine, das gesetzliche Widerrufsrecht für Verbraucher mit der gesetzlichen Ausnahme für maßgefertigte oder schnell verderbliche Waren, Zahlung, das Absagen von Terminen und Kursen, Haftung und Beschwerden, plus einen allgemeinen Hinweis zu Allergien. Auf Angebote basierende Gewerbe und B2B-Dienstleistungen behalten die bestehenden Handwerker-Bedingungen, die Angebote, Mehrarbeit und Abnahme behandeln. Beide Varianten nutzen dieselben Platzhalter.
+Der Text beider Seiten ist nach Ihrem Gewerbe gewählt, AGB und Datenschutzerklärung. Die AGB-Seite kennt zwei Varianten. Unternehmen, die direkt an Verbraucher verkaufen, Termingewerbe und Shop- oder Gastronomiegewerbe wie eine Bäckerei erhalten verbraucherorientierte Bedingungen: Sie behandeln Bestellungen und Termine, das gesetzliche Widerrufsrecht für Verbraucher mit der gesetzlichen Ausnahme für maßgefertigte oder schnell verderbliche Waren, Zahlung, das Absagen von Terminen und Kursen, Haftung und Beschwerden, plus einen allgemeinen Hinweis zu Allergien. Auf Angebote basierende Gewerbe und B2B-Dienstleistungen behalten die bestehenden Handwerker-Bedingungen, die Angebote, Mehrarbeit und Abnahme behandeln. Beide Varianten nutzen dieselben Platzhalter.
 
 Sie können die rechtlichen Seiten wie jede andere Seite im Editor bearbeiten. Der Editor behält die Platzhalter-Anker im Inhalt, sodass auch das bloße Öffnen und Speichern einer Seite dafür sorgt, dass zukünftige Änderungen an Ihren Unternehmensdaten automatisch übernommen werden.
+
+Verbessert MyCompanyDesk die Standardtexte, werden auch bestehende Sites aufgefrischt. Sobald Sie Website öffnen, prüft die Plattform, ob Ihre Datenschutz- und AGB-Seiten noch, Wort für Wort, einem der Standardtexte entsprechen, die sie für Ihr Gewerbe erzeugt. Eine Seite, die Sie selbst bearbeitet haben, bleibt unangetastet. Trägt eine Seite noch den Standardtext, schreibt die Plattform sie in die Formulierung um, die Ihr Gewerbe braucht: War die Seite live, geht nur diese Seite erneut in den Veröffentlichungs-Snapshot, Ihre anderen Entwürfe bleiben unberührt und die Veröffentlichen-Leiste meldet das nicht als unveröffentlichte Änderung; steht eine Seite auf Entwurf, bleibt sie Entwurf und bringt den neuen Text mit der nächsten Veröffentlichung mit.
 
 Die rechtlichen Seiten werden zum Zeitpunkt der Veröffentlichung gerendert, wie der Rest Ihrer Site. Sie teilen sich den gleichen Live/Entwurf-Status und die gleiche Sichtbarkeitsregel auf Grundlage des Abonnements.
 

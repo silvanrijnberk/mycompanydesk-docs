@@ -1,7 +1,7 @@
 ---
 title: Online appointments
 description: Let customers book appointments directly through your website with Site Bookings.
-last_verified: 2026-09-29
+last_verified: 2026-10-02
 ---
 
 # Online appointments
@@ -91,11 +91,13 @@ After an appointment is booked you can manage it from the calendar:
 
 A **confirmed** online appointment also counts as worked hours in **Schedule**, so your appointments appear alongside your time entries. The hours are not billable through Schedule; the revenue from the appointment is invoiced separately from the appointment itself.
 
+A customer can cancel online as long as the appointment has not started. An appointment that already has an invoice can no longer be cancelled online: the cancellation page points this out and asks the customer to contact you instead.
+
 ## Deposits
 
 The appointments block can ask visitors for a deposit when they book. Turn on **Deposit** in the block settings and choose a fixed amount or a percentage of the service price. A deposit needs a connected payment provider (Mollie or Stripe); without one, the block simply books without a deposit.
 
-While the deposit has not been paid, the booking stays pending: the app shows **Awaiting payment** instead of the Accept and Decline buttons, and approving is refused until the money has come in. When you decline a request, or a request expires, its paid deposit is refunded automatically. A cancellation by the visitor also pays the deposit back on its own, as long as the cancellation falls within the refund window you set in the block settings. By default that window runs until a day before the start; you can widen it to your whole booking horizon, so every cancellation before the start pays back, or narrow it to zero, which turns automatic refunds off and leaves the money to you via the **Refund deposit** button on the appointment.
+While the deposit has not been paid, the booking stays pending: the app shows **Awaiting payment** instead of the Accept button, and approving is refused until the money has come in. Declining the request is still possible while the payment is out. When you decline a request, or a request expires, its paid deposit is refunded automatically. A payment that arrives later for a request declined, withdrawn or expired in the meantime is refunded the same way. A cancellation by the visitor also pays the deposit back on its own, as long as the cancellation falls within the refund window you set in the block settings. By default that window runs until a day before the start; you can widen it to your whole booking horizon, so every cancellation before the start pays back, or narrow it to zero, which turns automatic refunds off and leaves the money to you via the **Refund deposit** button on the appointment.
 
 Rescheduling an appointment never reopens the refund window.
 
@@ -106,7 +108,7 @@ MyCompanyDesk can automatically send a reminder email before the appointment. A 
 ## Frequently asked questions
 
 **Why do I not see any available times?**
-Check that you have created at least one service and that your time slots are in the future. Enabled approval can also mean times only become visible after you have approved a request.
+Check that you have created at least one service, that it has a duration, and that your time slots are in the future. Enabled approval can also mean times only become visible after you have approved a request.
 
 **Can I offer multiple services?**
 Yes. You can show one or more services per appointments block. Each service has its own name, duration, and price.

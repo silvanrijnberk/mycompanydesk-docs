@@ -1,7 +1,7 @@
 ---
 title: Constructeur de site
 description: "Construisez un site web de plusieurs pages dans l'éditeur glisser-déposer : sections et blocs, vos couleurs et polices, publication quand vous voulez."
-last_verified: 2026-09-30
+last_verified: 2026-10-02
 ---
 
 # Constructeur de site
@@ -42,13 +42,19 @@ La bannière utilise le modèle IA Gemini (variante lite) s'il est disponible da
 
 Avant même d'ouvrir l'éditeur, l'assistant de configuration du site web peut créer votre premier brouillon. Il s'ouvre automatiquement la première fois qu'un nouvel espace visite `/website`, et vous pouvez le relancer plus tard via **Entreprise > Votre site web > Style** en cliquant sur **Reconfigurer**. L'assistant pose quatre questions et affiche ensuite éventuellement une étape pour une adresse web :
 
-1. **Ce que vous faites** (pré-rempli à partir de vos données d'entreprise) - votre activité, vos services et votre ton.
+1. **Ce que vous faites** (pré-rempli à partir de vos données d'entreprise) - votre activité, vos services et votre ton. La même étape demande aussi comment les clients peuvent réserver : ils choisissent eux-mêmes une heure dans vos horaires d'ouverture, ils envoient une demande que vous confirmez, ou il n'y a pas de réservation en ligne. Si votre site possède déjà un bloc rendez-vous, l'assistant démarre sur le mode de ce bloc et suit votre choix à la fin.
 2. **Ce que vous voulez** - si le site doit surtout attirer des clients, présenter votre travail, rassurer ou être mieux référencé.
 3. **Logo** - conservez le logo généré par l'IA, ou téléchargez votre propre PNG/SVG.
 4. **Couleur de marque** - choisissez l'un des échantillons proposés ou saisissez votre propre couleur hexadécimale.
 5. **Adresse web** (uniquement si votre espace de travail n'a pas déjà de domaine actif ou de CNAME desservant le site) — ajoutez un domaine ou connectez-en un existant. Vous pouvez ignorer cette étape et ajouter une adresse plus tard.
 
 Vos réponses sont enregistrées comme brief du site. En terminant, l'IA rédige un nouveau texte pour l'ensemble de votre brouillon à partir du brief et de vos données d'espace, applique votre logo et votre couleur de marque, et laisse tout en brouillon. Rien n'est publié automatiquement. Vous vérifiez le résultat dans l'éditeur et publiez quand vous êtes satisfait.
+
+Les services de la première question acceptent chacun un prix facultatif. Saisissez un montant TTC, activez **à partir de** pour un prix de départ, ou laissez le champ vide : votre site affichera alors « Sur demande ». Un prix déjà fixé dans votre offre est repris automatiquement. Si votre espace ne facture pas de TVA (exonéré ou KOR), le champ s'appelle simplement Prix et l'aide précise que les prix sont hors TVA.
+
+Vous pouvez aussi vous arrêter en cours de route : cliquez sur **Terminer plus tard** ou rechargez la page, et vos réponses vous attendent au retour. L'assistant conserve ce que vous avez modifié sur cet appareil pendant environ une semaine, et ne restaure une réponse que si la valeur sous-jacente n'a pas changé ; si vos données d'entreprise ou vos services ont changé entre-temps, depuis les paramètres ou depuis un autre appareil, la valeur actuelle l'emporte.
+
+Source : `apps/web/utils/siteWizardDraft.ts#SITE_WIZARD_DRAFT_TTL_MS`.
 
 Le même assistant peut aussi réécrire un site existant entièrement. En le relançant depuis l'onglet Style, il demande d'abord une confirmation, car terminer remplace le texte que vous avez vous-même modifié. Le site reste brouillon jusqu'à ce que vous publiiez vous-même.
 
@@ -423,7 +429,7 @@ Lorsque vous etes pret :
 
 Les modifications non publiees sont suivies par page et par token. Le bouton Publier est desactive lorsqu'il n'y a rien a publier. Basculer une page entre En ligne et Brouillon est un enregistrement immediat qui compte comme modification non publiee, le bouton Publier s'allume donc des que vous basculez.
 
-Avant de publier, le constructeur vérifie si votre page de contact ou votre pied de page montre l'adresse e-mail avec laquelle vous vous connectez. Si c'est le cas, vous recevez d'abord un avertissement, avec un lien pour définir une autre adresse e-mail publique ; vous pouvez aussi confirmer que l'adresse convient et publier quand même.
+Quel que soit le point de départ, la vue d'ensemble, la barre d'outils de l'éditeur ou l'écran de première installation, le même avertissement de publication apparaît d'abord dès que quelque chose se remarque. Il énumère chaque point : si votre page de contact ou votre pied de page montre l'adresse e-mail avec laquelle vous vous connectez (avec un lien pour définir une autre adresse e-mail publique, ou un bouton pour confirmer que cette adresse est délibérée), et si vos pages légales manquent encore de champs, avec un lien qui complète les informations de l'entreprise. Une fois l'adresse e-mail confirmée et rien d'autre à signaler, la boîte de dialogue passe à un état neutre « Prêt à publier » qui ne demande plus que la confirmation.
 
 Un double-clic rapide ne peut pas publier par accident : le bouton de confirmation de l'avertissement de publication ignore les clics pendant un court instant après son ouverture, et un second clic juste après le premier ne peut ni déclencher une publication en double ni contourner l'avertissement.
 
@@ -533,9 +539,11 @@ Les soumissions a la newsletter partagent la meme limite de taux que le formulai
 
 Le constructeur de site cree deux pages legales standard pour chaque nouvel espace de travail : **Politique de confidentialite** (`/privacy`) et **Conditions generales** (`/algemene-voorwaarden`). Le contenu utilise des marqueurs de remplacement pour les donnees de l'entreprise. Lorsque la page est rendue pour les visiteurs, ces marqueurs sont remplaces par les valeurs de tes **Parametres de l'entreprise** — nom de l'entreprise, adresse, code postal, ville, pays, numero d'enregistrement, numero de TVA et e-mail public.
 
-La page des conditions générales connaît deux variantes, choisies selon votre métier. Les entreprises qui vendent directement aux consommateurs, les métiers sur rendez-vous et les métiers de boutique ou de restauration comme une boulangerie, reçoivent des conditions orientées consommateurs : elles couvrent les commandes, le droit de rétractation légal des consommateurs avec son exception légale pour les biens fabriqués sur mesure ou périssables, le paiement, l'annulation de rendez-vous et de cours, la responsabilité et les réclamations, plus une ligne d'information générique, par exemple sur les allergies. Les métiers sur devis et les services B2B gardent les conditions existantes pour artisans, qui traitent des devis, des travaux supplémentaires et de la livraison. Les deux variantes utilisent les mêmes marqueurs de remplacement.
+Le texte des deux pages est choisi selon votre métier, conditions et confidentialité. La page des conditions générales connaît deux variantes. Les entreprises qui vendent directement aux consommateurs, les métiers sur rendez-vous et les métiers de boutique ou de restauration comme une boulangerie, reçoivent des conditions orientées consommateurs : elles couvrent les commandes, le droit de rétractation légal des consommateurs avec son exception légale pour les biens fabriqués sur mesure ou périssables, le paiement, l'annulation de rendez-vous et de cours, la responsabilité et les réclamations, plus une ligne d'information générique, par exemple sur les allergies. Les métiers sur devis et les services B2B gardent les conditions existantes pour artisans, qui traitent des devis, des travaux supplémentaires et de la livraison. Les deux variantes utilisent les mêmes marqueurs de remplacement.
 
 Tu peux modifier les pages legales dans l'editeur comme n'importe quelle autre page. L'editeur conserve les ancres de remplacement dans le contenu, de sorte que l'ouverture et l'enregistrement d'une page sans modification permettent aux futures mises a jour de tes donnees d'entreprise de se propager automatiquement.
+
+Quand MyCompanyDesk améliore les textes légaux standard, les sites existants sont rafraîchis aussi. Dès que vous ouvrez Website, la plateforme vérifie si vos pages confidentialité et conditions sont encore, mot pour mot, l'un des textes standard qu'elle génère pour votre métier. Une page que vous avez modifiée vous-même n'est jamais touchée. Une page qui porte encore le texte standard est réécrite avec les mots que votre métier exige : si cette page était en ligne, elle seule repart dans le snapshot publié, vos autres brouillons ne bougent pas et la barre de publication ne signale pas ce rafraîchissement comme modification non publiée ; une page en brouillon reste en brouillon et emporte le nouveau texte à votre prochaine publication.
 
 Les pages legales sont rendues au moment de la publication, comme le reste de ton site. Elles partagent le meme statut Live/Concept et la meme regle de visibilite liee a l'abonnement.
 
