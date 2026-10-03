@@ -44,7 +44,7 @@ MyCompanyDesk heeft twee abonnementen: Desk en Office. Desk is gratis en blijft 
 | Bankkoppelingen | - | Maximaal 3 |
 | Eigen domein, ook voor je website | - | Ja |
 | Volledige boekhouding en btw-aangifte indienen | - | Ja |
-| CSV/Excel-export, geavanceerde rapporten, taalopties | - | Ja |
+| Geavanceerde rapporten en taalopties | - | Ja |
 | API-toegang, webhooks, prioriteitsondersteuning | - | Ja |
 
 Alle details staan bij [Abonnement & betalingen](/settings/billing).

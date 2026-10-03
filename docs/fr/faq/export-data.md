@@ -1,7 +1,7 @@
 ---
 title: "Exporter des données"
 description: "Pour exporter des données : allez dans Paramètres > Télécharger les données pour les boutons d'export rapide."
-last_verified: 2026-07-02
+last_verified: 2026-10-03
 chatbot:
   triggers: ["export data", "download data", "export csv", "export excel", "download report", "data exporteren", "gegevens downloaden", "daten exportieren", "exporter donnees"]
   actions:
@@ -14,4 +14,4 @@ Pour exporter des données :
 2. Téléchargez-y les exports CSV des factures, des clients et des dépenses, ou la sauvegarde complète
 3. Utilisez les exports au niveau des sections dans Factures, Dépenses ou Rapports lorsque vous n'avez besoin que d'un seul jeu de données
 
-Les exports CSV des factures et des dépenses font partie du plan Office. La liste de clients en CSV et la sauvegarde complète sont gratuites sur tous les plans. Choisissez l'export qui correspond à la page ou au jeu d'enregistrements dont vous avez besoin.
+Tous les exports CSV (factures, dépenses, liste de clients) et la sauvegarde complète sont gratuits sur tous les plans. Choisissez l'export qui correspond à la page ou au jeu d'enregistrements dont vous avez besoin.

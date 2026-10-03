@@ -1,7 +1,7 @@
 ---
 title: "Data Import & Export"
 description: "Import customers, invoices and expenses from CSV, and export your records for backup or for use in another tool."
-last_verified: 2026-07-02
+last_verified: 2026-10-03
 ---
 
 # Data Import & Export
@@ -64,7 +64,7 @@ Download your records per type:
 - **Expenses** as CSV, with categories and amounts
 
 ::: info
-The CSV exports of your invoices and expenses are part of the **Office** plan. Your customer list as CSV and the complete JSON backup are available on every plan, including Desk.
+The CSV exports of your invoices, expenses and customer list, plus the complete JSON backup, are available on every plan, including Desk.
 :::
 
 ### Complete backup

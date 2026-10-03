@@ -259,11 +259,7 @@ Because the card only sees the invoices loaded in the current list view, its buc
 
 ## Export
 
-Export your invoices as CSV for use in Excel, Google Sheets, or your accounting software.
-
-::: info
-CSV export of the invoice list is part of the **Office** plan.
-:::
+Export your invoices as CSV for use in Excel, Google Sheets, or your accounting software. This export is available on every plan.
 
 ## Finalizing and sending
 

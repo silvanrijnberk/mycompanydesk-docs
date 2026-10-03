@@ -1,7 +1,7 @@
 ---
 title: "Datensicherung"
 description: "So sichern Sie Ihre Daten: gehen Sie zu Einstellungen > Daten herunterladen."
-last_verified: 2026-07-02
+last_verified: 2026-10-03
 chatbot:
   triggers:
     - "backup data"
@@ -26,7 +26,7 @@ So sichern Sie Ihre Daten:
 2. Laden Sie CSV-Exporte für Rechnungen, Kunden und Ausgaben oder das dort verfügbare Vollbackup herunter
 3. Prüfen Sie, ob die heruntergeladenen Dateien die benötigten Datensätze enthalten
 
-Die CSV-Exporte von Rechnungen und Ausgaben gehören zum Office-Tarif. Die Kundenliste als CSV und das Vollbackup sind in jedem Tarif kostenlos. Wenn Sie regelmäßig sichern, wählen Sie einen festen Zeitpunkt, zum Beispiel nach dem Abschluss jedes Quartals.
+Die CSV-Exporte von Rechnungen, Ausgaben und Ihrer Kundenliste sowie das Vollbackup sind in jedem Tarif kostenlos. Wenn Sie regelmäßig sichern, wählen Sie einen festen Zeitpunkt, zum Beispiel nach dem Abschluss jedes Quartals.
 
 :::tip
 Für MyCompanyDesk-Supportmitarbeiter bietet das Admin-Panel außerdem Aktionen für **Backup erstellen** und **Daten herunterladen** pro Workspace. Die Aktion **Cache leeren** leert den gemeinsamen Cache-Service (und den modulspezifischen KPI-Cache), und **Sitzungen ungültig machen** erhöht einen globalen Zeitstempel, der alle davor ausgegebenen Sitzungstokens ablehnt. Diese Werkzeuge gehören nicht zu den kundenseitigen Einstellungen.

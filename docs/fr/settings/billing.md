@@ -1,7 +1,7 @@
 ---
 title: Abonnement et paiements
 description: "Ce que vous nous payez, vos factures de notre part et votre carte de paiement, dans Paramètres, Abonnement et paiements."
-last_verified: 2026-10-01
+last_verified: 2026-10-03
 ---
 
 # Abonnement et paiements
@@ -69,7 +69,7 @@ Fonctionnalités par formule :
 | Page entreprise publique, site sur mycompanydesk.site et préréglages de style | oui | oui |
 | Aperçu de la TVA | oui | oui |
 | Envoi manuel de relances de paiement | oui | oui |
-| Export de sauvegarde (JSON) et de la liste clients (CSV) | oui | oui |
+| Export de sauvegarde (JSON) et des listes de clients, de factures et de dépenses (CSV) | oui | oui |
 | Boîte mail professionnelle : lire et répondre | oui | oui |
 | Boîte mail professionnelle : écrire de nouveaux e-mails et boîtes mail personnelles | non | oui |
 | Domaine personnalisé, aussi pour votre site, sans badge MyCompanyDesk | non | oui |
@@ -85,7 +85,6 @@ Fonctionnalités par formule :
 | Transmission automatique à votre comptable | non | oui |
 | Facturation électronique Peppol | non | oui |
 | Accès équipe (personnes illimitées) | non | oui |
-| Export CSV/Excel des listes de factures et de dépenses | non | oui |
 | Rapports avancés | non | oui |
 | Analyses IA (synthèse du tableau de bord, rapports) | non | oui |
 | Outils linguistiques et enrichissement des descriptions | non | oui |

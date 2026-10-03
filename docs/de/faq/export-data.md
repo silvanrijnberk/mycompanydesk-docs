@@ -1,7 +1,7 @@
 ---
 title: "Daten exportieren"
 description: "So exportieren Sie Daten: gehen Sie zu Einstellungen > Daten herunterladen für die schnellen Exportaktionen."
-last_verified: 2026-07-02
+last_verified: 2026-10-03
 chatbot:
   triggers: ["export data", "download data", "export csv", "export excel", "download report", "data exporteren", "gegevens downloaden", "daten exportieren", "exporter donnees"]
   actions:
@@ -14,4 +14,4 @@ So exportieren Sie Daten:
 2. Laden Sie dort CSV-Exporte für Rechnungen, Kunden und Ausgaben oder das Vollbackup herunter
 3. Nutzen Sie Exporte auf Bereichsebene in Rechnungen, Ausgaben oder Berichten, wenn Sie nur einen Datensatz brauchen
 
-Die CSV-Exporte von Rechnungen und Ausgaben gehören zum Office-Tarif. Die Kundenliste als CSV und das Vollbackup sind in jedem Tarif kostenlos. Wählen Sie den Export, der zu der Seite oder dem Datensatz passt, den Sie benötigen.
+Alle CSV-Exporte (Rechnungen, Ausgaben, Kundenliste) und das Vollbackup sind in jedem Tarif kostenlos. Wählen Sie den Export, der zu der Seite oder dem Datensatz passt, den Sie benötigen.

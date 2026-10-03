@@ -44,7 +44,7 @@ MyCompanyDesk has two plans: Desk and Office. Desk is free and stays free. New c
 | Bank connections | - | Up to 3 |
 | Own domain, also for your website | - | Yes |
 | Full bookkeeping and filing your VAT return | - | Yes |
-| CSV/Excel exports, advanced reports, language tools | - | Yes |
+| Advanced reports and language tools | - | Yes |
 | API access, webhooks, priority support | - | Yes |
 
 All details are on [Plan & payments](/en/settings/billing).

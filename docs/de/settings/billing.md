@@ -1,7 +1,7 @@
 ---
 title: "Abonnement & Zahlungen"
 description: "Was Sie uns zahlen, Ihre Rechnungen von uns und Ihre Zahlungskarte, unter Einstellungen, Abonnement und Zahlungen."
-last_verified: 2026-10-01
+last_verified: 2026-10-03
 ---
 
 # Abonnement & Zahlungen
@@ -69,7 +69,7 @@ Funktionen pro Tarif:
 | Öffentliche Unternehmensseite, Website auf mycompanydesk.site und Stilvorlagen | ja | ja |
 | USt.-Übersicht | ja | ja |
 | Zahlungserinnerungen manuell versenden | ja | ja |
-| Backup (JSON) und Kundenliste (CSV) exportieren | ja | ja |
+| Backup (JSON) und CSV-Export von Kunden, Rechnungen und Ausgaben | ja | ja |
 | Geschäftliche Inbox: lesen und antworten | ja | ja |
 | Geschäftliche Inbox: neue E-Mails schreiben und eigene Postfächer | nein | ja |
 | Eigene Domain, auch für Ihre Website, ohne MyCompanyDesk-Badge | nein | ja |
@@ -85,7 +85,6 @@ Funktionen pro Tarif:
 | Automatische Übermittlung an Ihren Steuerberater | nein | ja |
 | Peppol E-Rechnung | nein | ja |
 | Teamzugang (unbegrenzt viele Personen) | nein | ja |
-| CSV/Excel-Export von Rechnungs- und Ausgabenlisten | nein | ja |
 | Erweiterte Berichte | nein | ja |
 | KI-Einblicke (Dashboard-Überblick, Berichte) | nein | ja |
 | Sprachwerkzeuge und Beschreibungsanreicherung | nein | ja |

@@ -1,7 +1,7 @@
 ---
 title: Import et export de données
 description: "Importez clients, factures et dépenses depuis un CSV, et exportez vos données pour les sauvegarder ou les utiliser dans un autre outil."
-last_verified: 2026-07-02
+last_verified: 2026-10-03
 ---
 
 # Import et export de données
@@ -64,7 +64,7 @@ Téléchargez vos enregistrements par type :
 - **Dépenses** en CSV, avec catégories et montants
 
 ::: info
-Les exports CSV de vos factures et de vos dépenses font partie du plan **Office**. Votre liste de clients en CSV et la sauvegarde complète (JSON) sont disponibles sur tous les plans, y compris Desk.
+Les exports CSV de vos factures, de vos dépenses et de votre liste de clients, ainsi que la sauvegarde complète (JSON), sont disponibles sur tous les plans, y compris Desk.
 :::
 
 ### Sauvegarde complète

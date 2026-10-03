@@ -1,7 +1,7 @@
 ---
 title: "Plan & payments"
 description: "What you pay us, your invoices from us and your payment card, on Settings, Je abonnement at /settings/abonnement."
-last_verified: 2026-10-01
+last_verified: 2026-10-03
 ---
 
 # Plan & payments
@@ -69,7 +69,7 @@ Features per plan:
 | Public business page, website on mycompanydesk.site and style presets | yes | yes |
 | VAT overview | yes | yes |
 | Sending payment reminders manually | yes | yes |
-| Backup (JSON) and customer list (CSV) export | yes | yes |
+| Backup (JSON) and CSV export of customers, invoices and expenses | yes | yes |
 | Business inbox: read and reply | yes | yes |
 | Business inbox: write new email and own mailboxes | no | yes |
 | Own domain, also for your website, without the MyCompanyDesk badge | no | yes |
@@ -85,7 +85,6 @@ Features per plan:
 | Automatic delivery to your accountant | no | yes |
 | Peppol e-invoicing | no | yes |
 | Team access (unlimited people) | no | yes |
-| CSV/Excel export of invoice and expense lists | no | yes |
 | Advanced reports | no | yes |
 | AI insights (dashboard briefing, reports) | no | yes |
 | Language tools and description enrichment | no | yes |

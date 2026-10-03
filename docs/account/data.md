@@ -1,7 +1,7 @@
 ---
 title: "Gegevens importeren & exporteren"
 description: "Importeer klanten, facturen en uitgaven uit CSV, en exporteer je administratie als back-up of voor gebruik in een ander programma."
-last_verified: 2026-07-02
+last_verified: 2026-10-03
 ---
 
 # Gegevens importeren & exporteren
@@ -64,7 +64,7 @@ Download je gegevens per soort:
 - **Uitgaven** als CSV, met categorieën en bedragen
 
 ::: info
-De CSV-exports van je facturen en uitgaven horen bij het **Office**-abonnement. Je klantenlijst als CSV en de volledige back-up (JSON) kun je altijd downloaden, op elk abonnement, inclusief Desk.
+De CSV-exports van je facturen, uitgaven en klantenlijst, plus de volledige back-up (JSON), kun je altijd downloaden, op elk abonnement, inclusief Desk.
 :::
 
 ### Volledige back-up
