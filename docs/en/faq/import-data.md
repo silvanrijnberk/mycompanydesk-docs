@@ -31,6 +31,8 @@ The import page lives at `/profile/import`. There is no menu entry for it, so op
 
 There is no template CSV to download; the import works with the columns of your own file and lets you map them during the upload.
 
+For customer imports, the mapping step also recognises Dutch column names: headers such as Bedrijfsnaam, KvK-nummer and Woonplaats land on the right field through the same column table the server uses, so a customer file kept in Dutch Excel does not arrive with empty fields. Columns that do not match any field are left out of the import; the result names them, so you always know what was and was not imported.
+
 For expenses, CSV files written in Dutch formats are parsed the way a Dutch bookkeeper writes them. Amount cells such as 100,50 or 1.234,56 are recognized, and dates in dd-mm-yyyy order are read as day-month-year. This matches the number fields in the web app, so what you type and what you import use the same rules.
 
 If a VAT amount column is present, MyCompanyDesk also derives the VAT rate from it. If both VAT amount and VAT rate are missing, the VAT rate is set to 0 instead of defaulting to the standard rate, so the expense appears in the pre-filing "Missing VAT" check.

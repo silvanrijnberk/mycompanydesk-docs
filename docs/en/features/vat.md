@@ -76,11 +76,11 @@ The active tab and period are both in the URL, so links from the VAT deadline re
 
 The hero summarises the selected period:
 
-- **Balance**: net VAT (collected minus paid) with a "te betalen" or "terug te ontvangen" label. It follows the period selector.
+- **Balance**: the same net total as rubriek 5g on the Filing tab: VAT collected and self-charged (rubrieken 2a/4a/4b) minus the input VAT that goes into rubriek 5b, with manual corrections included. VAT owed through the OSS scheme is not part of it, because that belongs on its own return. It carries a "te betalen" or "terug te ontvangen" label and follows the period selector.
 - **Deadline ring**: a circular countdown to the next filing deadline, computed from your workspace country's schedule and your filing frequency. Red when 3 days or fewer remain, amber up to 14 days, green otherwise.
 
 <!-- TODO(source-missing): RichardTool 8bd35ae1 introduced country-specific VAT filing deadlines (NL, GB, DE, and others). The exact deadline rules per country are not yet in sources/. Do not list specific per-country due dates until a human adds them to sources/. -->
-- **VAT savings pot (Btw-spaarpotje)**: a suggested reserve of the period balance plus a 10% buffer, shown when you owe VAT. When you are due money back, the tile flips to a green refund tile instead.
+- **VAT savings pot (Btw-spaarpotje)**: a suggested reserve of the VAT you still have to pay plus a 10% buffer, shown when the balance is payable. When you are due money back, the tile flips to a green refund tile instead.
 
 Three buttons sit under the balance: **Open aangifte** jumps to the Filing tab, **How is this calculated?** walks through the math behind the balance, and **Open Mijn Belastingdienst Zakelijk** opens the business portal at `mijn.belastingdienst.nl/mbo-portaal/` so you can finish the submission without an extra chooser step.
 

@@ -31,6 +31,8 @@ La page d'import se trouve sur `/profile/import`. Il n'y a pas d'entrée de menu
 
 Il n'y a pas de modèle CSV à télécharger ; l'import fonctionne avec les colonnes de votre propre fichier et vous permet de les associer pendant le téléversement.
 
+L'étape de correspondance reconnaît aussi les noms de colonnes en néerlandais : des intitulés comme Bedrijfsnaam, KvK-nummer ou Woonplaats rejoignent le bon champ via la même table de colonnes que celle du serveur, si bien qu'un fichier clients entretenu dans un Excel néerlandais n'arrive pas avec des champs vides. Les colonnes qui ne correspondent à aucun champ ne sont pas reprises ; le résultat les liste, pour que vous sachiez toujours ce qui a été importé et ce qui ne l'a pas été.
+
 Pour les dépenses, les fichiers CSV rédigés au format néerlandais sont reconnus. Les montants comme 100,50 ou 1.234,56 et les dates au format jj-mm-aaaa sont lus en jour-mois-année. Cela correspond aux champs de montant de l'application web, donc la saisie et l'importation suivent les mêmes règles.
 
 Si votre fichier comporte une colonne avec le montant de la TVA, MyCompanyDesk en déduit également le taux de TVA. Si le montant et le taux de TVA sont tous deux absents, le taux reste à 0, au lieu de se caler silencieusement sur le taux standard. La dépense apparaît alors dans le contrôle "TVA manquante" avant le dépôt.

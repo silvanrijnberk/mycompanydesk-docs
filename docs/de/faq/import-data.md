@@ -31,6 +31,8 @@ Die Importseite liegt unter `/profile/import`. Es gibt keinen Menüeintrag dafü
 
 Es gibt keine CSV-Vorlage zum Herunterladen; der Import arbeitet mit den Spalten Ihrer eigenen Datei und lässt Sie diese beim Hochladen zuordnen.
 
+Der Zuordnungsschritt erkennt auch niederländische Spaltennamen: Überschriften wie Bedrijfsnaam, KvK-nummer und Woonplaats landen über dieselbe Spaltentabelle, die auch der Server nutzt, im richtigen Feld, sodass eine Kundendatei aus niederländischem Excel nicht mit leeren Feldern ankommt. Spalten, die keinem Feld entsprechen, übernimmt der Import nicht; das Ergebnis nennt sie, damit Sie immer wissen, was übernommen wurde und was nicht.
+
 Für Ausgaben werden CSV-Dateien in niederländischer Schreibweise erkannt. Beträge wie 100,50 oder 1.234,56 und Daten im Format tt-mm-jjjj werden als Tag-Monat-Jahr gelesen. Das entspricht den Betragsfeldern in der Web-App, sodass Tippen und Importieren nach denselben Regeln funktionieren.
 
 Wenn eine Spalte mit dem MwSt.-Betrag vorhanden ist, leitet MyCompanyDesk daraus auch den MwSt.-Satz ab. Fehlen sowohl MwSt.-Betrag als auch MwSt.-Satz, bleibt der Satz bei 0, anstatt auf den Standardsatz zu fallen. Die Ausgabe erscheint dann in der Prüfung "MwSt. fehlt" vor der Abgabe.

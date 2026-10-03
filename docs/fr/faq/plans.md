@@ -30,14 +30,14 @@ MyCompanyDesk propose deux formules : **Desk** et **Office**.
 
 **Desk** est gratuit et reste gratuit. Vous pouvez y créer des factures, devis et dépenses sans limite, gérer des projets et une feuille de temps, publier votre propre site sur `.mycompanydesk.site`, scanner des reçus par IA et discuter avec une IA basique.
 
-**Office** est payant. Il ajoute l'automatisation et des services qui coûtent réellement à faire tourner : factures et dépenses récurrentes, contrats, connexions bancaires, une boîte mail professionnelle sur votre propre domaine, déclaration de TVA numérique, comptabilité complète, accès API et des limites IA plus élevées. Voir la [page des tarifs](https://mycompanydesk.nl/plans) pour le prix actuel.
+**Office** est payant. Il ajoute l'automatisation et des services qui coûtent réellement à faire tourner : factures et dépenses récurrentes, contrats, connexions bancaires, une boîte mail professionnelle sur votre propre domaine, comptabilité complète, accès API et des limites IA plus élevées. Voir la [page des tarifs](https://mycompanydesk.nl/plans) pour le prix actuel.
 
 Ces fonctionnalités sont définies dans notre configuration de facturation : [apps/api/src/modules/billing/plans.config.js](https://github.com/silvanrijnberk/RichardTool/blob/development/apps/api/src/modules/billing/plans.config.js).
 
 **Changement de formule**
 - Vous pouvez passer de Desk à Office, et inversement, à tout moment.
 - Après une montée de version, les nouvelles fonctionnalités sont disponibles immédiatement.
-- Si vous rétrogradez d'Office vers Desk, les fonctionnalités réservées à Office cessent de fonctionner : votre connexion bancaire n'importe plus de transactions, plus aucune facture ou dépense récurrente n'est générée, la préparation de votre déclaration de TVA et de vos comptes annuels s'arrête, et l'envoi de nouveaux e-mails depuis votre propre adresse n'est plus possible. Les e-mails continuent d'arriver, vous pouvez les lire et y répondre, votre site web reste en ligne sur votre adresse mycompanydesk.site, et vos données restent dans votre espace de travail. La page de résiliation liste exactement ce qui continue de fonctionner et ce qui s'arrête avant que vous ne décidiez.
+- Si vous rétrogradez d'Office vers Desk, les fonctionnalités réservées à Office cessent de fonctionner : votre connexion bancaire n'importe plus de transactions, plus aucune facture ou dépense récurrente n'est générée, les rapports, la comptabilité complète avec les comptes annuels et la déclaration de revenus s'arrêtent, et l'envoi de nouveaux e-mails depuis votre propre adresse n'est plus possible. Les e-mails continuent d'arriver, vous pouvez les lire et y répondre, votre site web reste en ligne sur votre adresse mycompanydesk.site, préparer votre déclaration de TVA et la déposer vous-même continue de fonctionner, et vos données restent dans votre espace de travail. La page de résiliation liste exactement ce qui continue de fonctionner et ce qui s'arrête avant que vous ne décidiez.
 - Si votre période d'essai Office de 60 jours se termine sans abonnement, votre espace de travail passe automatiquement sur Desk.
 
 **Facturation**
