@@ -44,7 +44,7 @@ MyCompanyDesk propose deux formules : Desk et Office. Desk est gratuit et reste 
 | Connexions bancaires | - | Jusqu'à 3 |
 | Domaine personnalisé, aussi pour votre site | - | Oui |
 | Comptabilité complète et dépôt de la déclaration de TVA | - | Oui |
-| Export CSV/Excel, rapports avancés, outils linguistiques | - | Oui |
+| Rapports avancés et outils linguistiques | - | Oui |
 | Accès API, webhooks, support prioritaire | - | Oui |
 
 Tous les détails se trouvent sous [Abonnement et paiements](/fr/settings/billing).

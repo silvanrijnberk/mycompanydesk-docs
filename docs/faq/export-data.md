@@ -1,7 +1,7 @@
 ---
 title: "Gegevens exporteren"
 description: "Om gegevens te exporteren: ga naar Instellingen > Gegevens downloaden voor de snelle exportknoppen."
-last_verified: 2026-07-02
+last_verified: 2026-10-03
 chatbot:
   triggers: ["export data", "download data", "export csv", "export excel", "download report", "data exporteren", "gegevens downloaden", "daten exportieren", "exporter donnees"]
   actions:
@@ -14,4 +14,4 @@ Om gegevens te exporteren:
 2. Download daar CSV-exports voor facturen, klanten en uitgaven, of de volledige back-up
 3. Gebruik exports op sectieniveau in Facturen, Uitgaven of Rapportages als je maar één dataset nodig hebt
 
-De CSV-exports van facturen en uitgaven horen bij het Office-abonnement. De klantenlijst als CSV en de volledige back-up zijn gratis op elk abonnement. Kies de export die past bij de pagina of set gegevens die je nodig hebt.
+Alle CSV-exports (facturen, uitgaven, klantenlijst) en de volledige back-up zijn gratis op elk abonnement. Kies de export die past bij de pagina of set gegevens die je nodig hebt.

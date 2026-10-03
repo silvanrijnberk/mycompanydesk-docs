@@ -1,7 +1,7 @@
 ---
 title: "Export data"
 description: "To export data: go to Settings > Gegevens downloaden (download your data) for the quick export buttons."
-last_verified: 2026-07-02
+last_verified: 2026-10-03
 chatbot:
   triggers: ["export data", "download data", "export csv", "export excel", "download report", "data exporteren", "gegevens downloaden", "daten exportieren", "exporter donnees"]
   actions:
@@ -14,4 +14,4 @@ To export data:
 2. Download CSV exports for invoices, customers, and expenses, or the full backup available there
 3. Use section-level exports in Invoices, Expenses, or Reports when you only need one dataset
 
-The CSV exports of invoices and expenses are part of the Office plan. The customer list as CSV and the full backup are free on every plan. Choose the export that matches the page or record set you need.
+All CSV exports (invoices, expenses, customers) and the full backup are free on every plan. Choose the export that matches the page or record set you need.

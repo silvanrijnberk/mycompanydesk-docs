@@ -1,7 +1,7 @@
 ---
 title: Dépenses
 description: "Suivez vos dépenses, scannez vos reçus, gérez des catégories avec leur propre TVA et laissez les amortissements se dérouler automatiquement."
-last_verified: 2026-08-21
+last_verified: 2026-10-03
 ---
 
 # Dépenses
@@ -166,7 +166,7 @@ Sélectionnez plusieurs dépenses pour :
 - **Catégoriser** -- Changer la catégorie en masse
 - **Archiver** -- Déplacer vers les archives. Lorsque vous archivez plusieurs dépenses non payées avec une date d'échéance en une fois, les rappels de paiement ouverts correspondants sont suspendus. La barre d'actions en masse affiche d'abord une confirmation dès qu'une dépense sélectionnée est non payée et a une date d'échéance, pour que vous sachiez combien des dépenses sélectionnées perdent leur rappel. Le rappel reste suspendu tant que les dépenses sont archivées. Si vous restaurez ultérieurement une dépense archivée, le passage quotidien recrée le rappel, mais au plus tôt la nuit suivante.
 - **Supprimer** -- Supprimer définitivement
-- **Exporter**: Télécharger au format CSV (Office)
+- **Exporter**: Télécharger au format CSV
 - **Marquer comme payé** -- Marque les dépenses sélectionnées comme payées. Si vous marquez un brouillon bancaire ou un brouillon de la boîte de réception comme payé, le statut "À vérifier" est enlevé en même temps, de sorte que la ligne apparaisse dans vos rapports, votre déclaration de TVA et votre export comptable au lieu de rester cachée. Cela ne se produit que lorsque vous passez le statut à payé, pas lorsque vous revenez à non payé.
 
 Si une action groupée est refusée parce qu'une ou plusieurs lignes sélectionnées tombent dans une période de TVA verrouillée, le message d'erreur nomme la période exacte et explique la prochaine étape. Une période déjà déposée et verrouillée ne peut être rouverte que par une déclaration supplétive. Un verrouillage nu (la date limite de dépôt est passée mais aucune déclaration n'a été déposée) peut être déverrouillé temporairement depuis la page TVA. Retirez les lignes situées dans cette période de votre sélection, ou utilisez la route de correction appropriée, puis réessayez.

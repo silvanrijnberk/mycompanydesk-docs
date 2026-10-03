@@ -44,7 +44,7 @@ MyCompanyDesk hat zwei Tarife: Desk und Office. Desk ist kostenlos und bleibt ko
 | Bankverbindungen | - | Bis zu 3 |
 | Eigene Domain, auch für Ihre Website | - | Ja |
 | Vollständige Buchhaltung und USt.-Erklärung einreichen | - | Ja |
-| CSV/Excel-Export, erweiterte Berichte, Sprachwerkzeuge | - | Ja |
+| Erweiterte Berichte und Sprachwerkzeuge | - | Ja |
 | API-Zugang, Webhooks, Prioritäts-Support | - | Ja |
 
 Alle Einzelheiten finden Sie unter [Abonnement & Zahlungen](/de/settings/billing).

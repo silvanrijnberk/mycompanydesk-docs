@@ -1,7 +1,7 @@
 ---
 title: Ausgaben
 description: "Erfassen Sie Ausgaben, scannen Sie Belege, verwalten Sie Kategorien mit eigenen Steuersätzen und lassen Sie Abschreibungen automatisch laufen."
-last_verified: 2026-08-21
+last_verified: 2026-10-03
 ---
 
 # Ausgaben
@@ -166,7 +166,7 @@ Wählen Sie mehrere Ausgaben für:
 - **Kategorisieren** - Kategorie in großem Umfang ändern
 - **Archivieren** - Ins Archiv verschieben. Wenn Sie mehrere unbezahlte Ausgaben mit Fälligkeitsdatum auf einmal archivieren, werden deren offene Zahlungserinnerungen pausiert. Die Massenaktionsleiste zeigt vorher eine Bestätigung, sobald eine ausgewählte Ausgabe unbezahlt ist und ein Fälligkeitsdatum hat, damit Sie wissen, wie viele der ausgewählten Ausgaben ihre Erinnerung verlieren. Solange die Ausgaben archiviert sind, bleibt die Erinnerung aus. Stellen Sie eine archivierte Ausgabe später wieder her, wird die Erinnerung beim nächsten täglichen Lauf neu angelegt, aber frühestens in der folgenden Nacht.
 - **Löschen** - Dauerhaft entfernen
-- **Exportieren** - Als CSV herunterladen (Office)
+- **Exportieren** - Als CSV herunterladen
 - **Als bezahlt markieren** - Markiert ausgewählte Ausgaben als bezahlt. Wenn Sie einen Bank- oder Inbox-Entwurf als bezahlt markieren, wird gleichzeitig die Markierung "Zu prüfen" entfernt, sodass die Zeile in Ihren Berichten, der USt.-Erklärung und dem Buchhalterexport sichtbar ist, anstatt verborgen zu bleiben. Das passiert nur beim Setzen auf bezahlt, nicht beim Zurücksetzen auf unbezahlt.
 
 Wird eine Massenaktion abgelehnt, weil eine oder mehrere ausgewählte Zeilen in einen gesperrten USt.-Zeitraum fallen, nennt die Fehlermeldung den genauen Zeitraum und erklärt den nächsten Schritt. Ein bereits abgegebener und gesperrter Zeitraum lässt sich nur über eine Suppletieabgabe wieder öffnen. Eine reine Sperre (die Abgabefrist ist abgelaufen, aber es wurde keine Abgabe eingereicht) können Sie auf der USt.-Seite vorübergehend entsperren. Entfernen Sie die Zeilen aus diesem Zeitraum aus Ihrer Auswahl, oder nutzen Sie die passende Korrektur-Route, und versuchen Sie es erneut.

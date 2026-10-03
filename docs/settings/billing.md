@@ -1,7 +1,7 @@
 ---
 title: "Abonnement & betalingen"
 description: "Wat je ons betaalt, je facturen van ons en je betaalkaart, onder Instellingen, Je abonnement op /settings/abonnement."
-last_verified: 2026-10-01
+last_verified: 2026-10-03
 ---
 
 # Abonnement & betalingen
@@ -69,7 +69,7 @@ Functies per abonnement:
 | Openbare bedrijfspagina, website op mycompanydesk.site en stijlpresets | ja | ja |
 | Btw-overzicht | ja | ja |
 | Betalingsherinneringen handmatig versturen | ja | ja |
-| Back-up (JSON) en klantenlijst (CSV) exporteren | ja | ja |
+| Back-up (JSON) en CSV-export van klanten, facturen en uitgaven | ja | ja |
 | Zakelijke inbox: lezen en beantwoorden | ja | ja |
 | Zakelijke inbox: nieuwe mail schrijven en eigen mailboxen | nee | ja |
 | Eigen domein, ook voor je website, zonder MyCompanyDesk-badge | nee | ja |
@@ -85,7 +85,6 @@ Functies per abonnement:
 | Automatisch aanleveren aan je boekhouder | nee | ja |
 | Peppol e-facturatie | nee | ja |
 | Teamtoegang (onbeperkt aantal mensen) | nee | ja |
-| CSV/Excel-export van factuur- en uitgavenlijsten | nee | ja |
 | Geavanceerde rapporten | nee | ja |
 | AI-inzichten (dashboardoverzicht, rapportages) | nee | ja |
 | Taalopties en omschrijvingsverrijking | nee | ja |

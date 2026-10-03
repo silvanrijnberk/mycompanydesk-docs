@@ -1,7 +1,7 @@
 ---
 title: "Datenimport & -export"
 description: "Importieren Sie Kunden, Rechnungen und Ausgaben aus CSV, und exportieren Sie Ihre Daten als Sicherung oder für die Nutzung in anderen Programmen."
-last_verified: 2026-07-02
+last_verified: 2026-10-03
 ---
 
 # Datenimport & -export
@@ -64,7 +64,7 @@ Laden Sie Ihre Daten pro Typ herunter:
 - **Ausgaben** als CSV, mit Kategorien und Beträgen
 
 ::: info
-Die CSV-Exporte Ihrer Rechnungen und Ausgaben gehören zum **Office**-Tarif. Ihre Kundenliste als CSV und die komplette JSON-Sicherung sind in jedem Tarif verfügbar, einschließlich Desk.
+Die CSV-Exporte Ihrer Rechnungen, Ausgaben und Kundenliste sowie die komplette JSON-Sicherung sind in jedem Tarif verfügbar, einschließlich Desk.
 :::
 
 ### Komplette Sicherung
