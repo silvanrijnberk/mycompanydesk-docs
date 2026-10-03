@@ -40,7 +40,7 @@ These features are defined in our billing config: [apps/api/src/modules/billing/
 **Upgrading and downgrading**
 - You can switch between Desk and Office at any time.
 - When you upgrade, the new features are available right away.
-- When you downgrade from Office to Desk, Office-only features stop working: your bank stops importing, new recurring invoices or expenses are no longer generated, the reports, your bookkeeping with the annual accounts and your income tax return stop, and sending new email from your own address stops. Email keeps coming in and you can still read and reply, your website stays online on your mycompanydesk.site address, preparing your VAT return and filing it yourself keeps working, and your data stays in your workspace. The cancel page lists exactly what keeps working and what stops before you decide.
+- When you downgrade from Office to Desk, Office-only features stop working: your bank stops importing, new recurring invoices or expenses are no longer generated, the reports, your bookkeeping with the annual accounts and your income tax return stop, and sending new email from your own address stops. Email keeps coming in and you can still read and reply, your website stays online on your mycompanydesk.site address, you can still prepare your VAT return and file it yourself, and your data stays in your workspace. The cancel page lists exactly what keeps working and what stops before you decide.
 - If a free 60-day Office trial ends and you do not subscribe, your workspace moves to Desk automatically.
 
 **Billing**
