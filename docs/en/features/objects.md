@@ -41,7 +41,7 @@ The objects module is designed for businesses that manage physical assets — pa
 3. Click **Save**
 
 ::: tip More options
-The new-object form only asks for the name by default. Use **More options** to add a description, and **Purchase and status** to set purchase date, price, current value, VAT regime and status. These fields are optional for creating the object; the status defaults to available.
+The new-object form only asks for the name by default. Use **More options** to add a description, and **Purchase and status** to set purchase date, price, current value, VAT regime and status. These fields are optional for creating the object; the status defaults to available. The VAT regime starts at Met btw (with VAT); when the type is an Appartement (residential rental) it starts at Zonder btw (without VAT). Your own choice in the form always wins, and existing objects keep whatever was saved for them.
 :::
 
 ## Object detail page

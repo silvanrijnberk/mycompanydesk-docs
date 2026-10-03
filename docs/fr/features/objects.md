@@ -41,7 +41,7 @@ Le module objets est concu pour les entreprises qui gerent des actifs physiques 
 3. Cliquez sur **Enregistrer**
 
 ::: tip Plus d'options
-Le formulaire de nouvel objet ne demande que le nom par defaut. Utilisez **Plus d'options** pour ajouter une description, et **Achat et statut** pour definir la date d'achat, le prix, la valeur actuelle, le regime de TVA et le statut. Ces champs sont optionnels pour creer l'objet; le statut est disponible par defaut.
+Le formulaire de nouvel objet ne demande que le nom par defaut. Utilisez **Plus d'options** pour ajouter une description, et **Achat et statut** pour definir la date d'achat, le prix, la valeur actuelle, le régime de TVA et le statut. Ces champs sont optionnels pour créer l'objet ; le statut est disponible par défaut. Le régime de TVA commence avec TVA par défaut ; pour un appartement (logement loué), il commence sans TVA. Votre choix dans le formulaire prime toujours, et les objets existants gardent ce qui a été enregistré pour eux.
 :::
 
 ## Page de detail de l'objet

@@ -1,7 +1,7 @@
 ---
 title: Newsletter
 description: "Schreiben, planen und versenden Sie Mailings an Ihre Kunden. Der Editor hängt an Ihrer Kundenliste, Empfänger bleiben ohne CSV-Import aktuell."
-last_verified: 2026-08-18
+last_verified: 2026-10-03
 ---
 
 # Newsletter
@@ -52,6 +52,8 @@ Beide führen in den Kampagnen-Editor, in dem Sie Betreff, Preheader, Inhalt, Ab
 - **Entwurf speichern** speichert die Kampagne ohne Versand.
 
 Sobald eine Kampagne eingereiht oder versendet wurde, kann sie nicht mehr gelöscht werden; eine fehlgeschlagene Kampagne können Sie über das Überlauf-Menü erneut senden.
+
+Die Bestätigungs- und Willkommens-Mail für neue Abonnenten kommt von Ihrem eigenen Unternehmen: Ihr Name als Absender und Ihre eigene Antwortadresse, statt einer anonymen MyCompanyDesk-Adresse. Lässt sich eine geplante Kampagne nicht versenden, bekommen Sie eine Benachrichtigung („Nieuwsbrief niet verstuurd“, Newsletter nicht versendet) und können sie danach erneut senden.
 
 ## Ergebnisse
 

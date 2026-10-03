@@ -1,7 +1,7 @@
 ---
 title: Infolettres
 description: "Rédigez, planifiez et envoyez des mailings à vos clients. L'éditeur est relié à votre liste clients, sans import CSV pour tenir les destinataires à jour."
-last_verified: 2026-08-18
+last_verified: 2026-10-03
 ---
 
 # Infolettres
@@ -52,6 +52,8 @@ Les deux aboutissent dans l'éditeur de campagne, où vous pouvez modifier l'obj
 - **Enregistrer le brouillon** enregistre la campagne sans l'envoyer.
 
 Une fois qu'une campagne est en file d'attente ou envoyée, elle ne peut plus être supprimée ; une campagne échouée peut être renvoyée depuis le menu débordant.
+
+Les e-mails de confirmation et de bienvenue des nouveaux abonnés viennent de votre entreprise : votre nom comme expéditeur et votre propre adresse de réponse, plutôt qu'une adresse MyCompanyDesk anonyme. Si l'envoi d'une campagne planifiée échoue, vous recevez une notification (Nieuwsbrief niet verstuurd, newsletter non envoyée) et pouvez la renvoyer ensuite.
 
 ## Résultats
 

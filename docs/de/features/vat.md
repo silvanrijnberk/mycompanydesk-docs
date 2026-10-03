@@ -1,7 +1,7 @@
 ---
 title: MwSt
 description: "Track collected and paid VAT, prepare your return and stay ahead of deadlines. The page mirrors the Dutch btw form for companies in the Netherlands."
-last_verified: 2026-08-16
+last_verified: 2026-10-03
 ---
 
 <!-- TODO(source-missing): RichardTool 5407b44 added historical Dutch VAT rates 6% and 19% to the valid invoice/quote/contract/recurring-invoice/catalog rate set. sources/vat-rates.yaml#countries.NL does not yet list those rates, so do not document the full valid set until the source is updated. -->

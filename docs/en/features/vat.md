@@ -1,7 +1,7 @@
 ---
 title: VAT
 description: "Track collected and paid VAT, prepare your return and stay ahead of deadlines. The page mirrors the Dutch btw form for companies in the Netherlands."
-last_verified: 2026-08-16
+last_verified: 2026-10-03
 ---
 
 <!-- TODO(source-missing): RichardTool 5407b44 added historical Dutch VAT rates 6% and 19% to the valid invoice/quote/contract/recurring-invoice/catalog rate set. sources/vat-rates.yaml#countries.NL does not yet list those rates, so do not document the full valid set until the source is updated. -->
@@ -77,7 +77,7 @@ The active tab and period are both in the URL, so links from the VAT deadline re
 The hero summarises the selected period:
 
 - **Balance**: the same net total as rubriek 5g on the Filing tab: VAT collected and self-charged (rubrieken 2a/4a/4b) minus the input VAT that goes into rubriek 5b, with manual corrections included. VAT owed through the OSS scheme is not part of it, because that belongs on its own return. It carries a "te betalen" or "terug te ontvangen" label and follows the period selector.
-- **Deadline ring**: a circular countdown to the next filing deadline, computed from your workspace country's schedule and your filing frequency. Red when 3 days or fewer remain, amber up to 14 days, green otherwise.
+- **Deadline ring**: a circular countdown to the next filing deadline, computed from your workspace country's schedule and your filing frequency. Red when 3 days or fewer remain, amber up to 14 days, green otherwise. Has a return been submitted but its amount is still open, the ring stays on that period until the payment date and the hint reads "Ingediend, nog betalen", with "Vandaag betalen" on the payment day itself; a submitted period that is settled, or one that came out as a refund, no longer holds the ring and the countdown moves on to the next filing.
 
 <!-- TODO(source-missing): RichardTool 8bd35ae1 introduced country-specific VAT filing deadlines (NL, GB, DE, and others). The exact deadline rules per country are not yet in sources/. Do not list specific per-country due dates until a human adds them to sources/. -->
 - **VAT savings pot (Btw-spaarpotje)**: a suggested reserve of the VAT you still have to pay plus a 10% buffer, shown when the balance is payable. When you are due money back, the tile flips to a green refund tile instead.
