@@ -41,7 +41,7 @@ Das Objektmodul ist für Unternehmen konzipiert, die physische Vermögenswerte v
 3. Klicken Sie auf **Speichern**
 
 ::: tip Weitere Optionen
-Das Formular für neue Objekte fragt standardmäßig nur nach dem Namen. Über **Weitere Optionen** fügen Sie eine Beschreibung hinzu, und über **Anschaffung und Status** legen Sie Anschaffungsdatum, Preis, aktuellen Wert, USt.-Regelung und Status fest. Diese Felder sind für das Erstellen des Objekts nicht erforderlich; der Status ist standardmäßig verfügbar.
+Das Formular für neue Objekte fragt standardmäßig nur nach dem Namen. Über **Weitere Optionen** fügen Sie eine Beschreibung hinzu, und über **Anschaffung und Status** legen Sie Anschaffungsdatum, Preis, aktuellen Wert, USt.-Regelung und Status fest. Diese Felder sind für das Erstellen des Objekts nicht erforderlich; der Status ist standardmäßig verfügbar. Die USt.-Regelung startet mit Umsatzsteuer; beim Typ Apartment (Wohnraum) startet sie ohne Umsatzsteuer. Ihre eigene Auswahl im Formular gewinnt immer, und bestehende Objekte behalten, was für sie gespeichert wurde.
 :::
 
 ## Objektdetailseite

@@ -1,7 +1,7 @@
 ---
 title: Teamberechtigungen
 description: "Page permissions control what each team member or accountant can do: Read, Write and Create, matching the Lezen, Schrijven and Aanmaken toggles in the app."
-last_verified: 2026-09-15
+last_verified: 2026-10-03
 chatbot:
   triggers: ["team permissions", "manage team permissions", "page permissions", "read write create", "permission settings", "access control", "granular permissions", "read only", "write access", "create access", "pagina rechten", "teamrechten", "lezen schrijven", "toegang instellen", "seitenberechtigungen", "teamberechtigungen", "lese schreibzugriff", "permissions page", "permissions de l'equipe", "droits acces"]
   actions:
@@ -34,3 +34,5 @@ Read must be on before Write or Create can work. Turning Read off also disables 
 The **Payments** page also requires Read access on the **Invoices** page, because payments can update invoice status (including marking invoices as paid) and process refunds.
 
 Create permission is scoped to new records only. A member with Create but no Write can add new records through the collection root, but cannot edit existing records, change status, use bulk actions, or confirm scanned receipts into new expenses.
+
+Pages without a Read right stay out of reach for the member: the Boekhouding area shows only the tabs that member may open, and opening a direct link to a page without access shows a short note that the member has no access to that part of the app. The dashboard stays quiet about it, because every member lands there when signing in.

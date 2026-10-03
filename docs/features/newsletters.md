@@ -1,7 +1,7 @@
 ---
 title: Nieuwsbrieven
 description: "Schrijf, plan en verstuur mailings naar je klanten. De editor koppelt aan je klantenlijst, dus je ontvangers blijven synchroon zonder CSV-import."
-last_verified: 2026-08-18
+last_verified: 2026-10-03
 ---
 
 # Nieuwsbrieven
@@ -52,6 +52,8 @@ Beide eindigen in de campagne-editor, waar je onderwerp, preheader, inhoud, afze
 - **Concept opslaan** slaat de campagne op zonder te versturen.
 
 Zodra een campagne in de wachtrij staat of verstuurd is, kan deze niet meer worden verwijderd; een mislukte campagne kun je opnieuw versturen via het overflow-menu.
+
+De bevestigings- en welkomstmail voor nieuwe abonnees komen van je bedrijf: jouw naam als afzender en jouw eigen antwoordadres, in plaats van een anonieme MyCompanyDesk-mail. Lukt het versturen van een ingeplande mailing niet, dan krijg je een melding (Nieuwsbrief niet verstuurd) en kun je hem daarna opnieuw versturen.
 
 ## Resultaten
 

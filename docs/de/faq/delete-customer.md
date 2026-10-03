@@ -1,7 +1,7 @@
 ---
 title: "Kunden löschen"
 description: "So löschen Sie einen Kunden: gehen Sie zu Kunden und suchen Sie den Kunden, öffnen Sie das Profil."
-last_verified: 2026-05-09
+last_verified: 2026-10-03
 chatbot:
   triggers: ["delete customer", "remove customer", "trash customer", "klant verwijderen", "klant wissen", "kunde loschen", "supprimer client"]
   actions:
@@ -16,6 +16,8 @@ So löschen Sie einen Kunden:
 4. Klicken Sie auf „Löschen“
 5. Bestätigen Sie die Löschung
 
-Das Löschen wird nie blockiert, auch nicht bei Kunden mit verknüpften Rechnungen. Es erfolgt in Stufen: Das Löschen eines aktiven Kunden archiviert ihn zunächst, erneutes Löschen verschiebt ihn in den Papierkorb, und das Löschen aus dem Papierkorb ist endgültig. Bis zu diesem letzten Schritt können Sie den Kunden jederzeit aus der Ansicht Archiv oder Papierkorb wiederherstellen.
+Das Löschen ist nur selten blockiert, auch nicht bei Kunden mit verknüpften Rechnungen. Es erfolgt in Stufen: Das Löschen eines aktiven Kunden archiviert ihn zunächst, erneutes Löschen verschiebt ihn in den Papierkorb, und das Löschen aus dem Papierkorb ist endgültig. Bis zu diesem letzten Schritt können Sie den Kunden jederzeit aus der Ansicht Archiv oder Papierkorb wiederherstellen.
+
+Zwei Dinge blockieren diesen letzten Schritt doch: eine aktive wiederkehrende Zeiterfassung für diesen Kunden (beenden Sie sie zuerst unter Zeitplan) und Stunden dieses Kunden, die noch nicht fakturiert sind (fakturieren Sie sie zuerst, oder markieren Sie sie als nicht abrechenbar). Stunden, die erst in der Zukunft geplant sind, blockieren das Löschen nicht.
 
 Wenn Sie im Arbeitsbereich **Alle Kunden löschen** wählen, warnt die Bestätigung, dass laufende Verträge und wiederkehrende Rechnungen dadurch beendet werden.

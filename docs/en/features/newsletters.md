@@ -1,7 +1,7 @@
 ---
 title: Newsletters
 description: "Write, schedule and send mailings to your customers. The editor is linked to your customer list, so recipients stay in sync without CSV imports."
-last_verified: 2026-08-18
+last_verified: 2026-10-03
 ---
 
 # Newsletters
@@ -52,6 +52,8 @@ Both end up on the campaign editor, where you can edit the subject, preheader, b
 - **Save draft** stores the campaign without sending it.
 
 Once a campaign is queued or sent it can no longer be deleted; you can resend a failed campaign from the overflow menu.
+
+The confirmation and welcome mail for new subscribers come from your own company: your name as the sender and your own reply-to address, rather than an anonymous MyCompanyDesk address. When a scheduled mailing cannot be sent, you get a notification (Nieuwsbrief niet verstuurd, newsletter not sent) and can resend it afterwards.
 
 ## Results
 
