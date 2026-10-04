@@ -9,7 +9,7 @@ Verwalten Sie Ihre vollständige Kundendatenbank. Jede Rechnung, jedes Angebot u
 
 ## Übersicht
 
-Die Kundenseite listet alle Ihre Kunden mit den wichtigsten Informationen auf einen Blick auf. Verwenden Sie Suche und Filter, um Kunden schnell zu finden.
+Die Kundenseite listet alle Ihre Kunden mit den wichtigsten Informationen auf einen Blick auf. Verwenden Sie Suche und Filter, um Kunden schnell zu finden. Ein Klick auf einen Kunden in der Liste öffnet die Detailseite des Kunden.
 
 ## Segmente in der Kundenliste
 
@@ -108,14 +108,6 @@ Wählen Sie mehrere Kunden für:
 - **Archivieren** — Inaktive Kunden in großem Umfang archivieren
 - **Wiederherstellen** — Archivierte Kunden zurückholen
 - **Löschen** — Mehrere Kunden entfernen
-
-## Schnellansicht
-
-Am Desktop klicken Sie auf einen Kunden in der Liste, um das **Schnellansicht**-Seitenpanel zu öffnen. Dies zeigt wichtige Details und Aktionen, ohne die Liste zu verlassen:
-
-- Zusammenfassung der Kundeninformationen
-- Neueste Rechnungen
-- Bearbeiten-Schaltfläche zum Öffnen der vollständigen Bearbeitungsseite
 
 ## Kunden importieren
 

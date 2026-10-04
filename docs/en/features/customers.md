@@ -9,7 +9,7 @@ Manage your complete customer database. Every invoice, quote, and project links 
 
 ## Overview
 
-The customers page lists all your clients with key information at a glance. Use search and filters to find customers quickly.
+The customers page lists all your clients with key information at a glance. Use search and filters to find customers quickly. Clicking a customer in the list opens the customer's detail page.
 
 ## Customer list segments
 
@@ -108,14 +108,6 @@ Select multiple customers for:
 - **Archive** — Bulk archive inactive customers
 - **Restore** — Bring back archived customers
 - **Delete** — Remove multiple customers
-
-## Quick view
-
-On desktop, click a customer in the list to open the **quick view** slide panel. This shows key details and actions without leaving the list:
-
-- Customer info summary
-- Recent invoices
-- Edit button to open the full edit page
 
 ## Import customers
 

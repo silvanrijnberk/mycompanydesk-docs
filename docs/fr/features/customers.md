@@ -9,7 +9,7 @@ Gerez votre base de donnees clients complete. Chaque facture, devis et projet es
 
 ## Vue d'ensemble
 
-La page des clients repertorie tous vos clients avec les informations cles en un coup d'oeil. Utilisez la recherche et les filtres pour trouver rapidement des clients.
+La page des clients repertorie tous vos clients avec les informations cles en un coup d'oeil. Utilisez la recherche et les filtres pour trouver rapidement des clients. Un clic sur un client dans la liste ouvre la page de détail de ce client.
 
 ## Segments dans la liste des clients
 
@@ -108,14 +108,6 @@ Selectionnez plusieurs clients pour :
 - **Archiver** -- Archiver les clients inactifs en masse
 - **Restaurer** -- Recuperer les clients archives
 - **Supprimer** -- Supprimer plusieurs clients
-
-## Apercu rapide
-
-Sur ordinateur, cliquez sur un client dans la liste pour ouvrir le panneau d'**apercu rapide**. Celui-ci affiche les informations cles et les actions sans quitter la liste :
-
-- Resume des informations client
-- Factures recentes
-- Bouton de modification pour ouvrir la page d'edition complete
 
 ## Importer des clients
 

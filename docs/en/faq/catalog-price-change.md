@@ -55,6 +55,6 @@ The hint only appears in edit mode and only for items with a fixed price. Price-
 
 You can also print your catalog as a customer-facing price list. Open **Aanbod** and click **Price list** to open `/aanbod/prijslijst`.
 
-The page lists your active items grouped into **Services**, **Products**, and **Subscriptions**. Empty groups are skipped. Turn on **Only show what is on my website** to print the same subset that appears on your site builder. Click **Print or save as PDF** to use the browser print dialog.
+The page lists your active items grouped into **Services**, **Products**, **Packages** and **Subscriptions**, and empty groups are skipped. If your workspace has the website module, you also get the **Only what's on your website** switch, so you print exactly the subset your site builder shows. Without the website module, services and products print as one group without a header, while packages and subscriptions keep their own header. Click **Print or save as PDF** to use the browser print dialog.
 
 Prices are rendered with the same helpers used elsewhere in the app, so the sheet shows the same amounts a customer would see online. The list carries a note that all prices are exclusive of VAT and that no rights can be derived from it.

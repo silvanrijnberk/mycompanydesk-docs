@@ -17,7 +17,7 @@ So stornieren Sie eine versendete Rechnung:
 
 Auch zugehörige Benachrichtigungen für die Rechnung, wie überfällig, Termin oder Entwurf, werden aufgelöst, sodass die Aktion "Erinnerung senden" in der Glocke nicht mehr erscheint. Das gilt auch, wenn Sie mehrere Rechnungen auf einmal aus der Rechnungsliste stornieren.
 
-Wurde auf die Rechnung bereits ein oder mehrere Zahlungseingänge gebucht, zeigt das Bestätigungsdialog den eingegangenen Betrag und warnt, dass Sie ihn dem Kunden noch erstatten müssen. Nach der Stornierung erscheint auf der Detailseite und in der Kurzansicht ein Hinweis, dass eine Erstattung offensteht.
+Wurde auf die Rechnung bereits ein oder mehrere Zahlungseingänge gebucht, zeigt das Bestätigungsdialog den eingegangenen Betrag und warnt, dass Sie ihn dem Kunden noch erstatten müssen. Nach der Stornierung erscheint auf der Detailseite ein Hinweis, dass eine Erstattung offensteht.
 
 Ist die Rechnung bereits ganz oder teilweise bezahlt, öffnen Sie die Originalrechnung und nutzen Sie stattdessen "Gutschrift / Korrektur erstellen".
 
@@ -25,6 +25,6 @@ Stornierte Rechnungen können nicht mit einer Gutschrift korrigiert werden. Wenn
 
 Stornieren ist etwas anderes als Löschen: beim Stornieren wechselt der Status zu Storniert, die Rechnung bleibt aber in der Liste sichtbar; beim Löschen durchläuft sie die Stufen Archiviert und Papierkorb, bevor sie endgültig gelöscht ist. Endgültiges Löschen in einem Schritt ist nur möglich, solange ein Dokument noch ein Entwurf ohne Nummer ist.
 
-Sobald eine Rechnung storniert ist, ist sie nicht mehr einziehbar. Die Rechnungsdetailseite, die Vorschau in der Rechnungsliste und das Kundenportal zeigen keinen Restbetrag mehr an, auch wenn bereits gebuchte Zahlungen auf der Rechnung vorhanden sind. Bereits gebuchte Zahlungen bleiben im Zahlungsverlauf sichtbar.
+Sobald eine Rechnung storniert ist, ist sie nicht mehr einziehbar. Die Rechnungsdetailseite und das Kundenportal zeigen keinen Restbetrag mehr an, auch wenn bereits gebuchte Zahlungen auf der Rechnung vorhanden sind. Bereits gebuchte Zahlungen bleiben im Zahlungsverlauf sichtbar.
 
 Tipp: Beim Stornieren bleibt die Rechnungsnummer in Ihren Unterlagen erhalten; löschen können Sie ein Dokument nur, solange es noch ein Entwurf ohne Nummer ist.

@@ -105,7 +105,7 @@ Die KPI-Reihe zeigt immer fünf Kacheln. Jede Kachel zeigt eine Hauptzahl, einen
 
 | Kachel | Was Sie sehen |
 |---|---|
-| **Kasse** | Aktuelle Kassenposition, aus einem verknüpften Bankkonto oder einem geschätzten Saldo, plus Runway in Wochen |
+| **Kasse** | Aktuelle Kassenposition, aus einem verknüpften Bankkonto oder, ohne Verknüpfung, geschätzt aus den liquiden Mitteln Ihrer Buchhaltung, plus Runway in Wochen |
 | **Forderungen** | Offene Rechnungen, mit dem überfälligen Teil besonders benannt |
 | **Umsatz** | Umsatz über die gewählte Periode und das Tempo für die ganze Periode, mit Veränderung gegenüber der vorherigen vergleichbaren Periode |
 | **Verbindlichkeiten** | Geld, das Sie noch auszahlen müssen, mit dem überfälligen Teil besonders benannt |

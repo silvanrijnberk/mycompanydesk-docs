@@ -55,6 +55,6 @@ Der Hinweis erscheint nur im Bearbeitungsmodus und nur für Artikel mit Festprei
 
 Sie können Ihr Angebot auch als kundenorientierte Preisliste ausdrucken. Öffnen Sie **Angebot** und klicken Sie auf **Preisliste**, um `/aanbod/prijslijst` zu öffnen.
 
-Die Seite listet Ihre aktiven Artikel gruppiert nach **Dienstleistungen**, **Produkten** und **Abonnements**. Leere Gruppen werden übersprungen. Schalten Sie **Nur was auf meiner Website steht** ein, um dieselbe Auswahl zu drucken, die in Ihrem Website-Builder angezeigt wird. Klicken Sie auf **Drucken oder als PDF speichern**, um den Druckdialog Ihres Browsers zu nutzen.
+Die Seite listet Ihre aktiven Artikel gruppiert nach **Dienstleistungen**, **Produkten**, **Paketen** und **Abonnements**, und leere Gruppen werden übersprungen. Hat Ihr Arbeitsbereich das Website-Modul, bekommen Sie zusätzlich den Schalter **Nur was auf Ihrer Website steht**, sodass Sie genau die Auswahl drucken, die Ihr Website-Builder zeigt. Ohne Website-Modul erscheinen Dienstleistungen und Produkte als eine Gruppe ohne Überschrift, während Pakete und Abonnements ihre eigene Überschrift behalten. Klicken Sie auf **Drucken oder als PDF speichern**, um den Druckdialog Ihres Browsers zu nutzen.
 
 Die Preise werden mit denselben Hilfsmitteln berechnet wie an allen anderen Stellen der App, sodass das Blatt dieselben Beträge zeigt, die ein Kunde online sehen würde. Am Fuß steht, dass alle Preise ohne USt. sind und der Liste keine Rechte entnommen werden können.

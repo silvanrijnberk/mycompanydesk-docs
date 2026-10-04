@@ -105,7 +105,7 @@ La rangée KPI montre toujours cinq tuiles. Chaque tuile montre un chiffre princ
 
 | Tuile | Ce que vous voyez |
 |---|---|
-| **Trésorerie** | Position actuelle de trésorerie, depuis un compte bancaire relié ou un solde estimé, plus la marge hebdomadaire |
+| **Trésorerie** | Position actuelle de trésorerie, depuis un compte bancaire relié ou, sans compte relié, estimée d'après les liquidités comptabilisées, plus la marge hebdomadaire |
 | **À recevoir** | Factures ouvertes, avec la part en retard mentionnée à part |
 | **Chiffre d'affaires** | Chiffre d'affaires sur la période choisie et le rythme pour toute la période, avec l'évolution par rapport à la période comparable précédente |
 | **À payer** | L'argent qu'il vous reste à décaisser, avec la part en retard mentionnée à part |
