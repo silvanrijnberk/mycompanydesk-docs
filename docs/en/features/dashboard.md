@@ -105,7 +105,7 @@ The KPI row always shows five tiles. Each tile shows one headline figure, a comp
 
 | Tile | What it shows |
 |---|---|
-| **Cash** | Current cash position, either from a connected bank account or an estimated balance, plus runway in weeks |
+| **Cash** | Current cash position, either from a connected bank account or, without one, estimated from the liquid assets in your books, plus runway in weeks |
 | **Receivables** | Outstanding invoices, with the overdue slice called out |
 | **Revenue** | Revenue for the selected period and the pace for the full period, with change vs the previous comparable period |
 | **Payables** | Money you still need to pay out, with the overdue slice called out |

@@ -17,7 +17,7 @@ To cancel a sent invoice:
 
 Any overdue, deadline, or draft notifications tied to the invoice are also resolved, so you will no longer see a "Send reminder" action for it in the bell. This also applies when you cancel multiple invoices at once from the invoice list.
 
-If you have already received one or more payments on the invoice, the cancel confirmation tells you the collected amount and warns you that you still need to refund the customer. The invoice detail page and quick view also show a "Refund due" notice after cancellation.
+If you have already received one or more payments on the invoice, the cancel confirmation tells you the collected amount and warns you that you still need to refund the customer. The invoice detail page also shows a "Refund due" notice after cancellation.
 
 If the invoice is already paid or partially paid, open the original invoice and use "Create credit note / correction" instead.
 
@@ -25,6 +25,6 @@ Canceled invoices cannot be corrected with a credit note. If you need to issue a
 
 Canceling is different from deleting: canceling changes the status to Canceled while keeping the invoice in the list; deleting moves it through Archived and Trash stages before it is permanently removed. Deleting is only possible in one step while a document is still a draft without a number.
 
-Once an invoice is canceled, it is no longer collectible. The invoice detail page, the invoice list quick view, and the customer portal all stop showing a remaining balance, even if there are still recorded payments on the invoice. Payments that were already booked remain visible in the payment history.
+Once an invoice is canceled, it is no longer collectible. The invoice detail page and the customer portal stop showing a remaining balance, even if there are still recorded payments on the invoice. Payments that were already booked remain visible in the payment history.
 
 Tip: Canceling keeps the invoice number in your records; deleting is only possible while a document is still a draft without a number.

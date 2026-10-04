@@ -9,7 +9,7 @@ Beheer je volledige klantendatabase. Elke factuur, offerte en elk project is gek
 
 ## Overzicht
 
-De klantenpagina toont al je klanten met belangrijke informatie in een oogopslag. Gebruik zoek- en filterfuncties om snel klanten te vinden.
+De klantenpagina toont al je klanten met belangrijke informatie in een oogopslag. Gebruik zoek- en filterfuncties om snel klanten te vinden. Klik je een klant aan, dan open je de detailpagina van die klant.
 
 ## Segmenten in de klantenlijst
 
@@ -108,14 +108,6 @@ Selecteer meerdere klanten voor:
 - **Archiveren** — Inactieve klanten in bulk archiveren
 - **Herstellen** — Gearchiveerde klanten terughalen
 - **Verwijderen** — Meerdere klanten verwijderen
-
-## Snelle weergave
-
-Op desktop kun je op een klant in de lijst klikken om het **snelle weergave** schuifpaneel te openen. Dit toont belangrijke details en acties zonder de lijst te verlaten:
-
-- Samenvatting klantinfo
-- Recente facturen
-- Bewerkknop om de volledige bewerkpagina te openen
 
 ## Klanten importeren
 

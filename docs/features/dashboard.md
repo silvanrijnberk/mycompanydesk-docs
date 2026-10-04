@@ -105,7 +105,7 @@ De KPI-rij toont altijd vijf tegels. Elke tegel toont een hoofdgetal, een vergel
 
 | Tegel | Wat je ziet |
 |---|---|
-| **Kas** | Huidige kaspositie, afkomstig van een gekoppelde bankrekening of een geschat saldo, plus runway in weken |
+| **Kas** | Huidige kaspositie, afkomstig van een gekoppelde bankrekening of, zonder koppeling, geschat op basis van de liquide middelen in je boeken, plus runway in weken |
 | **Te ontvangen** | Openstaande facturen, met de achterstallige helft apart genoemd |
 | **Omzet** | Omzet over de gekozen periode en het tempo voor de hele periode, met mutatie ten opzichte van de vorige vergelijkbare periode |
 | **Te betalen** | Geld dat je nog moet uitbetalen, met de achterstallige helft apart genoemd |

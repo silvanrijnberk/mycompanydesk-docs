@@ -55,6 +55,6 @@ De hint verschijnt alleen in bewerkmodus en alleen voor items met een vaste prij
 
 Je kunt je aanbod ook afdrukken als klantvriendelijke prijslijst. Open **Aanbod** en klik op **Prijslijst** om `/aanbod/prijslijst` te openen.
 
-De pagina toont je actieve items, gegroepeerd onder **Diensten**, **Producten** en **Abonnementen**. Lege groepen worden weggelaten. Zet **Alleen wat op mijn website staat** aan om dezelfde selectie te printen die in je sitebouwer staat. Klik op **Printen of opslaan als pdf** om het dialoogvenster van je browser te gebruiken.
+De pagina toont je actieve items, gegroepeerd onder **Diensten**, **Producten**, **Pakketten** en **Abonnementen**; lege groepen worden weggelaten. Heeft je werkruimte de websitemodule, dan krijg je er ook de schakelaar **Alleen wat op je website staat** bij, zodat je precies de selectie print die je sitebouwer toont. Zonder websitemodule verschijnen diensten en producten als één groep zonder kop, terwijl pakketten en abonnementen hun eigen kop houden. Klik op **Printen of opslaan als pdf** om het dialoogvenster van je browser te gebruiken.
 
 De prijzen worden berekend met dezelfde hulpmiddelen als elders in de app, dus het blaadje toont dezelfde bedragen die een klant online zou zien. Onderaan staat dat alle prijzen exclusief btw zijn en dat er geen rechten aan de lijst kunnen worden ontleend.
