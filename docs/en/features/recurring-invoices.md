@@ -125,6 +125,8 @@ Restart a paused recurring invoice:
 2. Click **Resume**
 3. Generation continues from the next scheduled date
 
+Invoices for dates that passed while the series was paused are not created retroactively. The confirmation message names the date the next invoice will be due.
+
 ### Edit
 
 Editing a recurring invoice affects **future** invoices only. Previously generated invoices are not changed.

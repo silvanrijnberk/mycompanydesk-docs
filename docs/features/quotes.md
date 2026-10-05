@@ -72,6 +72,8 @@ Als de e-mail voor het tekenen niet kan worden afgeleverd door een probleem met 
 
 Een tekenverzoek kan niet meer worden verstuurd zodra een offerte is afgewezen of na de geldig-tot-datum. De actie **Naar tekenen versturen** is geblokkeerd voor offertes met de status **Afgewezen** of **Verlopen**, zodat je geen klant meer kunt vragen een offerte te ondertekenen die niet meer actief is. De actie wordt ook geweigerd als de klant de offerte al heeft ondertekend: een ondertekende offerte krijgt geen tweede tekenverzoek. En een offerte die je zelf al op **Geaccepteerd** hebt gezet, kan via de tekenlink niet meer worden afgewezen; de klant kan hem via de link wel nog ondertekenen.
 
+Het ondertekenblok in de offerte-PDF volgt de documenttaal van de offerte: staat de PDF op Engels, Duits of Frans ingesteld, dan staat ook het handtekeningblok en het verloop van de ondertekening eronder in die taal. Overeenkomsten blijven in het Nederlands.
+
 ## Acties op de offertedetailpagina
 
 De hoofdactie op de offertedetailpagina hangt af van de offertestatus:

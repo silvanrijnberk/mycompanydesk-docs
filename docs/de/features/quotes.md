@@ -72,6 +72,8 @@ Wenn die E-Mail zum Unterschreiben aufgrund eines Problems mit Ihren E-Mail-Eins
 
 Eine Unterschriftenanfrage kann nicht mehr versendet werden, sobald ein Angebot abgelehnt wurde oder nach Ablauf des Gültigkeitsdatums. Die Aktion **Zum Unterschreiben senden** ist für Angebote mit dem Status **Abgelehnt** oder **Abgelaufen** gesperrt, sodass Sie keinen Kunden mehr bitten können, ein Angebot zu unterschreiben, das nicht mehr aktiv ist. Die Aktion wird auch abgelehnt, wenn der Kunde das Angebot bereits unterschrieben hat: ein unterschriebenes Angebot erhält keine zweite Unterschriftenanfrage. Und ein Angebot, das Sie selbst bereits auf **Angenommen** gesetzt haben, kann über den Unterschriften-Link nicht mehr abgelehnt werden; der Kunde kann es über den Link weiterhin unterschreiben.
 
+Der Unterschriftsblock in der Angebots-PDF folgt der Dokumentsprache des Angebots: ist das Angebot auf Englisch, Deutsch oder Französisch eingestellt, sind auch der Unterschriftsblock und der Verlauf der Unterzeichnung darunter in dieser Sprache. Verträge bleiben auf Niederländisch.
+
 ## Detailaktionen für Angebote
 
 Die Hauptaktion auf der Angebotsdetailseite richtet sich nach dem Angebotsstatus:

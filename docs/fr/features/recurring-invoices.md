@@ -125,6 +125,8 @@ Redemarrez une facture recurrente en pause :
 2. Cliquez sur **Reprendre**
 3. La generation reprend a partir de la prochaine date programmee
 
+Les factures dont la date est passée pendant la pause ne sont pas créées rétroactivement. Le message de confirmation indique la date de la prochaine facture.
+
 ### Modifier
 
 La modification d'une facture recurrente n'affecte que les factures **futures**. Les factures deja generees ne sont pas modifiees.
