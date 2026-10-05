@@ -113,6 +113,7 @@ Votre session suit votre usage : tant que vous continuez à utiliser MyCompanyDe
 Si vous vous connectez avec Google ou Microsoft :
 
 - L'authentification est gérée par le fournisseur
+- La connexion avec Microsoft n'utilise que l'adresse e-mail que Microsoft confirme lui-même (l'identifiant de connexion de votre compte Microsoft). Si Microsoft ne peut pas la confirmer, connectez-vous avec votre adresse e-mail et nous vous envoyons un lien de connexion
 - MyCompanyDesk ne voit ni ne stocke jamais votre mot de passe Google ou Microsoft
 - Vous pouvez aussi définir un mot de passe via **Paramètres > Connexion** pour activer en plus la connexion par e-mail
 

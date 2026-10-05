@@ -113,6 +113,7 @@ Je sessie schuift mee met je gebruik: zolang je MyCompanyDesk blijft gebruiken, 
 Log je in met Google of Microsoft:
 
 - De authenticatie wordt afgehandeld door de aanbieder
+- Bij inloggen met Microsoft gebruiken we alleen het e-mailadres dat Microsoft zelf bevestigt (de inlognaam van je Microsoft-account). Kan Microsoft dat niet bevestigen, dan log je in met je e-mailadres en sturen we je een inloglink
 - MyCompanyDesk ziet of bewaart je Google- of Microsoft-wachtwoord nooit
 - Je kunt daarnaast een wachtwoord instellen via **Instellingen > Inloggen** om ook met e-mail te kunnen inloggen
 
