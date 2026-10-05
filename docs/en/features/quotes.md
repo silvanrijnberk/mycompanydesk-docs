@@ -72,6 +72,8 @@ If the signing e-mail cannot be delivered because of a problem with your sender 
 
 A signing request cannot be sent once a quote has been rejected or after its validity date has passed. The **Send for signing** action is blocked for quotes in the **Rejected** or **Expired** status, so you cannot ask a customer to sign a quote that is no longer active. The action is also refused when the customer has already signed the quote, so a signed quote gets no second signing request. And a quote you have already set to **Accepted** yourself can no longer be declined through the sign link, while the customer can still sign it.
 
+The signing block in the quote PDF follows the quote's document language: if the PDF is set to English, German or French, the signature block and the signing record underneath it print in that same language. Contract documents stay in Dutch.
+
 ## Quote detail actions
 
 The top action on the quote detail page depends on the quote status:

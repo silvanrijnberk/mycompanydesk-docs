@@ -220,6 +220,10 @@ The kleineondernemersregeling is managed under **Settings → Btw**: a card trac
 
 If you go above €20,000 while still enrolled, a warning banner appears at the top of the invoice editor. The banner title says you are above the KOR threshold, the body explains that the invoice must include VAT rather than 0%, and the CTA opens **Settings → Btw** so you can deregister with the Belastingdienst and turn KOR off.
 
+### Documents and emails under the KOR
+
+While the KOR toggle is on, document lines count as 0% VAT. Invoice, quote, credit note and contract PDFs print **Subtotal** and **Total** without excl./incl. VAT labels and without a VAT line, invoice emails leave out the excl./incl. VAT summary under the lines, and new catalog items default to 0% VAT. The signing page shows **Total** instead of **Total including VAT** when the quote carries no VAT. The same document wording applies while the separate exempt toggle (Vrijgesteld van btw) is on, and VAT wording in the terms you publish through your site stays neutral even after the KOR is switched off again.
+
 ## KIA and Box 3
 
 KIA (kleinschaligheidsinvesteringsaftrek) and Box 3 are income tax topics and live under **Reports → Income tax**, not on the VAT page. The Box 3 card only appears for workspaces using the properties module.

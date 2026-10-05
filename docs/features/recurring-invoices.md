@@ -125,6 +125,8 @@ Een gepauzeerde terugkerende factuur opnieuw starten:
 2. Klik op **Hervatten**
 3. De generatie gaat verder vanaf de volgende geplande datum
 
+Facturen voor datums die tijdens de pauze zijn verstreken, worden niet alsnog aangemaakt. De bevestiging noemt de datum waarop de volgende factuur verschijnt.
+
 ### Bewerken
 
 Het bewerken van een terugkerende factuur heeft alleen effect op **toekomstige** facturen. Eerder gegenereerde facturen worden niet gewijzigd.

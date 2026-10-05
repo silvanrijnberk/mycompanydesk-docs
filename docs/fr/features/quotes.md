@@ -72,6 +72,8 @@ Si l'e-mail de signature ne peut pas être livré en raison d'un problème avec 
 
 Une demande de signature ne peut plus être envoyée une fois qu'un devis a été refusé ou après la date de validité. L'action **Envoyer pour signature** est bloquée pour les devis dont le statut est **Refusé** ou **Expiré**, afin que vous ne puissiez plus demander à un client de signer un devis qui n'est plus actif. L'action est également refusée lorsque le client a déjà signé le devis : un devis signé ne reçoit pas de seconde demande de signature. Et un devis que vous avez déjà passé vous-même sur **Accepté** ne peut plus être refusé via le lien de signature ; le client peut toujours le signer via le lien.
 
+Le bloc de signature dans le PDF du devis suit la langue du document : si le devis est réglé sur l'anglais, l'allemand ou le français, le bloc de signature et l'historique de signature qui l'accompagne paraissent dans cette même langue. Les contrats restent en néerlandais.
+
 ## Actions sur la page de detail du devis
 
 L'action principale sur la page de detail du devis depend du statut du devis :

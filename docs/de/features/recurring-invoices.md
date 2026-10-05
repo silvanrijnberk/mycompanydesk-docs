@@ -125,6 +125,8 @@ Eine pausierte wiederkehrende Rechnung fortsetzen:
 2. Klicken Sie auf **Fortsetzen**
 3. Die Generierung wird ab dem nächsten geplanten Datum fortgesetzt
 
+Rechnungen für Termine, die während der Pause verstrichen sind, werden nicht nachträglich erstellt. Die Bestätigungsmeldung nennt das Datum, an dem die nächste Rechnung fällig wird.
+
 ### Bearbeiten
 
 Das Bearbeiten einer wiederkehrenden Rechnung betrifft nur **zukünftige** Rechnungen. Bereits generierte Rechnungen werden nicht geändert.
