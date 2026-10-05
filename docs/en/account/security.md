@@ -113,6 +113,7 @@ Sessions slide with your usage: as long as you keep using MyCompanyDesk, your se
 If you use Google or Microsoft to sign in:
 
 - Your authentication is handled by the provider
+- Microsoft sign-in only continues with the email address Microsoft itself confirms (the sign-in name of your Microsoft account). If Microsoft cannot confirm an address, the login screen points you to signing in with your email address and a login link
 - MyCompanyDesk never sees or stores your Google or Microsoft password
 - You can also set a password on **Settings > Inloggen** to enable email login alongside it
 

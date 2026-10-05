@@ -113,6 +113,7 @@ Ihre Sitzung bleibt gültig, solange Sie MyCompanyDesk weiter nutzen: sie verlä
 Wenn Sie sich mit Google oder Microsoft anmelden:
 
 - Die Authentifizierung übernimmt der Anbieter
+- Bei der Anmeldung mit Microsoft akzeptieren wir nur die E-Mail-Adresse, die Microsoft selbst bestätigt (den Anmeldenamen Ihres Microsoft-Kontos). Kann Microsoft sie nicht bestätigen, melden Sie sich mit Ihrer E-Mail-Adresse an, und wir senden Ihnen einen Anmeldelink
 - MyCompanyDesk sieht oder speichert Ihr Google- oder Microsoft-Passwort niemals
 - Sie können zusätzlich unter **Einstellungen > Anmelden** ein Passwort festlegen, um sich auch per E-Mail anmelden zu können
 
