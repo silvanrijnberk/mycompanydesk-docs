@@ -1,7 +1,7 @@
 ---
 title: "Benachrichtigungseinstellungen"
 description: "So verwalten Sie Ihre Benachrichtigungseinstellungen: Themen ein- oder ausschalten und Push-Benachrichtigungen aktivieren."
-last_verified: 2026-09-30
+last_verified: 2026-10-06
 chatbot:
   triggers:
     - "notifications"
@@ -21,16 +21,15 @@ chatbot:
 So verwalten Sie Ihre Benachrichtigungseinstellungen:
 
 1. Gehen Sie zu Einstellungen → „Benachrichtigungen“
-2. Schalten Sie die Benachrichtigungsthemen ein oder aus. Die Kategorien sind:
+2. Schalten Sie die Benachrichtigungsthemen ein oder aus. Die Schalter stehen in fünf Gruppen: **Jede Woche**, **Ihr Geld**, **Ihre Kunden**, **Ihr Team** und **Von MyCompanyDesk**, und unter jedem Schalter zeigt die App, wie die Meldung ankommt: **In der App**, **Per E-Mail** oder **Auf dem Telefon**. Die Rechnungs-, Geld-, Fristen- und Lead-Themen nutzen alle drei; beim Wochen-Thema kommt nur bei Eile ein Signal auf dem Telefon dazu. Die Themen sind:
    - **Montags, was diese Woche zu tun ist**: die Montags-E-Mail mit den Aufgaben aus **Jetzt erledigen** auf Ihrem Dashboard. An jedem Montag eine E-Mail, nur wenn etwas ansteht; wenn etwas dringend ist, kommt auch eine Benachrichtigung auf Ihrem Telefon an. Die E-Mail geht nur an den Workspace-Inhaber, der deshalb allein diesen Schalter sieht. Der Schalter ist standardmäßig aktiviert; der Abmeldelink am Ende der E-Mail schaltet ihn wieder aus. Solange die separate wöchentliche Bankübersicht ausgeschaltet bleibt (der Standard), sind die noch nicht zugeordneten Bankbuchungen auch in dieser E-Mail enthalten.
-   - **Rechnungen, die Ihre Aufmerksamkeit brauchen**: überfällige Rechnungen, Rechnungen, die bald fällig sind, unbearbeitete Entwürfe, fehlgeschlagene Lastschriften, fehlgeschlagene Rechnungszustellungen, pausierte automatische Vertragsabrechnung, automatisch erstellte Stundenrechnungen und was mit ihnen passiert (bereit, im Versandplan, zurückgehalten oder gesendet), und Stunden ohne Tarif.
-   - **Zahlungseingang**: Zahlungen, bestätigte Zahlungen und auffällige Banktransaktionen.
-   - **Anstehende Fristen**: MwSt., Einkommensteuer, Körperschaftsteuer, die Kleinunternehmer-Grenze, die jährlichen Erhöhungen, die Sie auf Verträgen eingeplant haben (die Benachrichtigung eine Woche vorher, eine fehlgeschlagene Ankündigungsmail oder eine Erhöhung, die nicht stattfand), und auslaufende Verträge oder Projekte. Sie erhalten sie rechtzeitig vorab, damit Sie nie zu spät sind. Diese Kategorie umfasst auch automatische Buchungen, die nicht vorgenommen werden konnten, weil das Datum in einen bereits abgegebenen und gesperrten Mehrwertsteuerzeitraum fällt, zum Beispiel eine weitergeleitete Posteingangsrechnung oder eine Banktransaktion. Die Benachrichtigung nennt den Lieferanten und das Rechnungsdatum und verweist Sie auf den Posteingang oder den Bank-Feed, damit Sie die Ausgabe im aktuellen Zeitraum buchen oder eine ergänzende Erklärung einreichen können.
-   - **Neue Chancen**: Angebotsanfragen, unterschriebene Angebote und Verkäufe über Ihre Website.
-   - **Neue Nachricht im Posteingang**: ein Signal auf Ihrem Telefon, sobald ein Kunde oder Lieferant mailt. Mail, die im Spam-Ordner landet, löst nichts aus: kein Signal und keine Zeile in der Benachrichtigungsliste.
-   - **Ausgabe fällig**: anstehende Fälligkeitstermine von Ausgaben, die Sie angelegt haben, wie z. B. geplante Miete oder Nebenkosten, damit Sie sie rechtzeitig bezahlen oder erfassen können.
-   - **Lieferantenregel gelernt**: eine In-App-Benachrichtigung, wenn MyCompanyDesk aus Ihren bestätigten Entwürfen eine neue vertrauenswürdige Lieferantenregel für den Bank-Feed gelernt hat.
-   - **Tipps und Neuigkeiten von MyCompanyDesk**: höchstens eine E-Mail pro Monat.
+   - **Wenn eine Rechnung zu spät bezahlt wird**: überfällige Rechnungen, Rechnungen, die bald fällig sind, unbearbeitete Entwürfe, fehlgeschlagene Lastschriften, fehlgeschlagene Rechnungszustellungen, pausierte automatische Vertragsabrechnung, automatisch erstellte Stundenrechnungen und was mit ihnen passiert (bereit, im Versandplan, zurückgehalten oder gesendet), Signale zu Ihren Ausgaben, zum Beispiel wiederkehrende Ausgaben oder ein Lieferant, der still geworden ist, und Stunden ohne Tarif.
+   - **Wenn ein Kunde bezahlt hat**: Zahlungen, bestätigte Zahlungen und auffällige Banktransaktionen.
+   - **Wenn Sie bald eine MwSt.-Erklärung abgeben müssen**: MwSt., Einkommensteuer, Körperschaftsteuer, die Kleinunternehmer-Grenze, die jährlichen Erhöhungen, die Sie auf Verträgen eingeplant haben (die Benachrichtigung eine Woche vorher, eine fehlgeschlagene Ankündigungsmail oder eine Erhöhung, die nicht stattfand), auslaufende Verträge oder Projekte und Fälligkeiten offener Einkaufsrechnungen. Sie erhalten sie rechtzeitig vorab, damit Sie nie zu spät sind. Diese Kategorie umfasst auch automatische Buchungen, die nicht vorgenommen werden konnten, weil das Datum in einen bereits abgegebenen und gesperrten Mehrwertsteuerzeitraum fällt, zum Beispiel eine weitergeleitete Posteingangsrechnung oder eine Banktransaktion. Die Benachrichtigung nennt den Lieferanten und das Rechnungsdatum und verweist Sie auf den Posteingang oder den Bank-Feed, damit Sie die Ausgabe im aktuellen Zeitraum buchen oder eine ergänzende Erklärung einreichen können.
+   - **Wenn ein Lead eingeht**: Angebotsanfragen, unterschriebene Angebote und Verkäufe über Ihre Website.
+   - **Wenn eine neue Nachricht in Ihrem Posteingang eingeht**: ein Signal auf Ihrem Telefon, sobald ein Kunde oder Lieferant Ihnen schreibt, und wenn eine E-Mail nicht gesendet werden konnte oder eine weitergeleitete Rechnung nicht gelesen werden konnte. Mail, die im Spam-Ordner landet, löst nichts aus: kein Signal und keine Zeile in der Benachrichtigungsliste.
+   - **Wenn ein Kollege Ihnen etwas zuweist** (Team-Workspace): eine Aufgabe, ein Gespräch, ein Kunde, ein Projekt, ein Termin oder ein Objekt, das Ihnen zugewiesen wurde, oder eine Erwähnung. Dieses Thema erscheint nur bei der Glocke und als Push, nicht als E-Mail.
+   - **Tipps und Neuigkeiten von MyCompanyDesk**: die monatliche Produktaktualisierung per E-Mail. Höchstens eine E-Mail pro Monat, Sie können sich jederzeit abmelden.
    Wirklich wichtige Nachrichten zu Ihrem Konto senden wir immer; die können Sie nicht ausschalten.
 3. Auf derselben Seite aktivieren Sie auch Push-Benachrichtigungen für das Gerät, das Sie gerade nutzen
 4. Wenn Sie die Browser-Abfrage geschlossen haben, klicken Sie oben in der App auf die Benachrichtigungsglocke, wählen Sie **Weitere Optionen** (drei Punkte) und klicken Sie dann auf **Aktivieren**, um Push-Benachrichtigungen später nachzuholen
