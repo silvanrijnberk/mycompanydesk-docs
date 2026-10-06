@@ -1,7 +1,7 @@
 ---
 title: "Meldingsinstellingen"
 description: "Om je meldingsinstellingen te beheren: ga naar Instellingen > Meldingen, zet de meldingsonderwerpen aan of uit en schakel pushmeldingen in."
-last_verified: 2026-09-30
+last_verified: 2026-10-06
 chatbot:
   triggers:
     - "notifications"
@@ -21,16 +21,15 @@ chatbot:
 Om je meldingsinstellingen te beheren:
 
 1. Ga naar Instellingen → "Meldingen"
-2. Zet de meldingsonderwerpen aan of uit. De categorieën zijn:
+2. Zet de meldingsonderwerpen aan of uit. De schakelaars staan in vijf groepen: **Elke week**, **Je geld**, **Je klanten**, **Je team** en **Van MyCompanyDesk**, en onder elke schakelaar toont de app hoe je die melding krijgt: **In de app**, **Per e-mail** of **Op je telefoon**. De factuur-, geld-, deadline- en kansonderwerpen gebruiken alle drie; het weekonderwerp stuurt alleen bij iets dringends een seintje naar je telefoon. De onderwerpen zijn:
    - **Op maandag wat er deze week moet gebeuren**: de maandagmail met de taken uit **Nu doen** op je dashboard. Elke maandag een mail, en alleen als er iets is; zit er iets dringend tussen, dan ook een seintje op je telefoon. De mail gaat alleen naar de eigenaar van de werkruimte, en die ziet als enige deze schakelaar. De schakelaar staat standaard aan; de afmeldlink onderin de mail zet hem uit. Zolang het aparte wekelijkse bankoverzicht uit staat (de standaard), zitten de bankregels die nog gekoppeld moeten worden ook in deze mail.
-   - **Aandacht voor facturen**: te late facturen, facturen die bijna vervallen, concepten die blijven liggen, mislukte incasso's, facturen die niet bij de klant zijn aangekomen, stilgevallen automatische contractfacturatie, automatisch aangemaakte urenfacturen en wat er mee gebeurt (klaar, op het rooster om te versturen, tegengehouden of verstuurd), en uren zonder tarief.
-   - **Geld binnenkomt**: betalingen, bevestigde betalingen en opvallende banktransacties.
-   - **Deadline in aantocht**: Btw, inkomstenbelasting, vennootschapsbelasting, de KOR-grens, de jaarlijkse verhogingen die je op contracten hebt ingepland (de melding een week van tevoren, een aankondigingsmail die mislukte, of een verhoging die niet doorging), en aflopende contracten of projecten. Je krijgt ze ruim van tevoren, zodat je nooit te laat bent. Deze categorie bevat ook automatische boekingen die niet konden worden gemaakt omdat de datum valt in een btw-periode die al is aangegeven en vergrendeld, zoals een doorgestuurde inboxfactuur of een banktransactie. De melding noemt de leverancier en factuurdatum en wijst je naar de inbox of bankfeed, zodat je het in de huidige periode kunt boeken of een suppletieaangifte kunt indienen.
-   - **Nieuwe kansen**: offerteaanvragen, ondertekende offertes en verkopen via je website.
-   - **Nieuw bericht in je inbox**: een seintje op je telefoon zodra een klant of leverancier mailt. Mail die in Spam belandt, blijft stil: geen ping en geen rij in de meldingenlijst.
-   - **Uitgave vervalt**: aankomende vervaldatums van uitgaven die je hebt aangemaakt, zoals geplande huur of nutskosten, zodat je ze op tijd kunt betalen of vastleggen.
-   - **Leveranciersregel geleerd**: een in-app melding wanneer MyCompanyDesk vanuit je bevestigde concepten een nieuwe vaste-leveranciersregel voor de bankfeed heeft geleerd.
-   - **Tips en nieuws van MyCompanyDesk**: hooguit één mailtje per maand.
+   - **Als een factuur je aandacht nodig heeft**: te late facturen, facturen die bijna vervallen, concepten die blijven liggen, mislukte incasso's, facturen die niet bij de klant zijn aangekomen, stilgevallen automatische contractfacturatie, automatisch aangemaakte urenfacturen en wat er mee gebeurt (klaar, op het rooster om te versturen, tegengehouden of verstuurd), signalen over je uitgaven, zoals terugkerende uitgaven of een leverancier die stilvalt, en uren zonder tarief.
+   - **Als er geld binnenkomt**: betalingen, bevestigde betalingen en opvallende banktransacties.
+   - **Als er een deadline aankomt**: Btw, inkomstenbelasting, vennootschapsbelasting, de KOR-grens, de jaarlijkse verhogingen die je op contracten hebt ingepland (de melding een week van tevoren, een aankondigingsmail die mislukte, of een verhoging die niet doorging), aflopende contracten of projecten, en vervaldatums van onbetaalde inkoopfacturen. Je krijgt ze ruim van tevoren, zodat je nooit te laat bent. Deze categorie bevat ook automatische boekingen die niet konden worden gemaakt omdat de datum valt in een btw-periode die al is aangegeven en vergrendeld, zoals een doorgestuurde inboxfactuur of een banktransactie. De melding noemt de leverancier en factuurdatum en wijst je naar de inbox of bankfeed, zodat je het in de huidige periode kunt boeken of een suppletieaangifte kunt indienen.
+   - **Als er een kans binnenkomt**: offerteaanvragen, ondertekende offertes en verkopen via je website.
+   - **Als er een nieuw bericht in je inbox binnenkomt**: een seintje op je telefoon zodra een klant of leverancier mailt, en ook wanneer een mail niet verzonden kon worden of een doorgestuurde factuur niet te lezen was. Mail die in Spam belandt, blijft stil: geen ping en geen rij in de meldingenlijst.
+   - **Als een collega jou iets toewijst** (team-werkruimtes): een taak, gesprek, klant, project, afspraak of object dat aan jou is toegewezen, of iets waarin je genoemd wordt. Dit onderwerp komt alleen bij het belletje en als push terecht, niet per e-mail.
+   - **Nieuwe functies en tips van MyCompanyDesk**: de maandelijkse productupdate per mail. Hooguit één mailtje per maand, uitschrijven kan altijd.
    Echt belangrijke berichten over je account sturen we altijd; die kun je niet uitzetten.
 3. Op dezelfde pagina zet je ook pushmeldingen aan voor het apparaat dat je gebruikt
 4. Heb je de browservraag weggeklikt? Klik dan op het belletje voor meldingen bovenaan de app, kies **Meer opties** (drie stippen) en tik op **Aanzetten** om pushmeldingen later alsnog in te schakelen
