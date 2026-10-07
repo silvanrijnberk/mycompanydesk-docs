@@ -286,6 +286,42 @@ Capabilities:
 - **Read by** -- when a thread is still marked as new to you and a colleague has already opened it, the row names that colleague: Read by Anissa. On your phone you see an eye icon with the first name. Former colleagues and the accountant are not named.
 - **Soft-delete**: threads can be moved to Trash instead of being permanently destroyed. A delete button (trash icon) appears in the toolbar for non-deleted threads. Once deleted, the button changes to a restore action that moves the thread back to `open`. The Trash filter appears in the left sidebar alongside Open, Snoozed, Closed and Spam, so you can review deleted threads before they are purged.
 - **Full-text search**: a search bar above the thread list lets you search across all inbox messages by subject, body text, snippet, and sender. The search is powered by Postgres full-text search with weighted field ranking, so subject matches appear before body matches. Results are grouped by thread, with the best-matching message's snippet shown as a preview line. Supports quoted phrases, `OR`, and `-` exclusions. A single word of at least three characters is also matched inside email addresses and sender names, so searching for part of an address, like the domain, finds the thread. Multi-word and negated searches keep using full-text matching only. A 250 ms debounce keeps the UI responsive, and the loading spinner gives real-time feedback.
+- **What the sender wants**: in the Office inbox, the row of a triaged thread shows one short line about what the latest message asks of you ("Requests a quote, wants to be finished in December"), written by the AI triage when the message arrived. The line only stands while the sender has the last word and the triage ran after it; once you have replied, or newer mail arrived that has not been triaged, the row falls back to the opening words of the message. See [Inbox groups](#inbox-groups-office) below.
+- **Internal notes**: a private note on the thread, for you and your team. The note appears in the conversation itself, at the point it was written, marked as internal only; the customer never sees it. You can @mention a teammate in a note.
+- **Save a sender as customer**: when a thread comes from an address that does not match one of your customers, the sender strip above the message says "Not in your customers yet" and offers to save the sender as a customer in one click.
+- **AI reply drafts (Office)**: see [AI reply drafts](#ai-reply-drafts) below.
+
+#### Inbox groups (Office)
+
+On Office, the inbox groups incoming mail by what it asks of you. Three tabs sit above the list:
+
+- **Waiting on you**: conversations where the sender is waiting for an answer. When a message has been sitting for a full day, the row counts the days it has been waiting.
+- **Bills**: supplier invoices the triage recognised. The list opens the thread straight onto the bill card.
+- **Other**: newsletters and system messages, the mail you read when there is time left.
+
+A tab without mail disappears. The tabs carry workspace-wide counts. When everything that was waiting on you is answered, the list shows a quiet "All done" notice instead of rows. On Desk, where the inbox is limited to reading and replying, the list stays one folder.
+
+The tabs live on the default inbox view itself: labels, Promotions and Starred work exactly as before. Archiving, snoozing and closing move a conversation out of the group it was in, the same way they always moved it out of the open list.
+
+#### Bill card in the reader
+
+For a thread the triage marked as a bill, the message reader shows the mail as a bill card:
+
+- Once the invoice's attachment is booked as an expense (automatically after triage, or through the book button), the card shows the amount including VAT, the VAT amount, and the state of the expense straight from your books: waiting in To review, or already booked. The button opens the expense.
+- Before the bill is booked, the card shows only what the email text itself says, labelled "Amount (from the email)" so it is never mistaken for a booked figure.
+- The card flags overdue bills: "before 21 October" turns into "overdue since 21 October", highlighted in red once the due date has passed.
+
+#### AI reply drafts
+
+Office can draft the reply for you. Above the reply editor sits a "Draft a reply" toggle. Opening it shows what the AI can work with:
+
+- **Direction chips**: Confirm, Decline politely, Ask for info, and Say thanks. Each chip asks for the whole reply in that direction.
+- **Your own instruction**: type what the reply should say ("confirm the appointment for Tuesday") and press Generate.
+- **Rewrite my text**: when you have already written something, the AI polishes your own draft instead and fixes grammar, tone and clarity without adding facts.
+
+While it writes, the editor shows "Writing your reply…" and stays out of reach. The writing state belongs to the open conversation: if you switch to another thread in the meantime, the answer is not written into the wrong conversation, and when it is done the editor scrolls the text into view instead of throwing a cursor in it. A generated reply lands in the editor as text you can still edit, saves as a draft automatically, and is never shown as sent. A failed send never misleads the drafting either: the AI reads messages that actually arrived or really went out, never drafts and never failed mail.
+
+The drafted reply states what the last message in the thread asked for, in the language that message was written in, addressed as one person ("I"), and signed with your name. It does not invent facts, prices or dates: where something needed is unknown, it leaves a plain placeholder like [datum]. If the thread was flagged as suspicious, the whole AI reply toolbox stays hidden. On a fresh triage, one-tap quick replies can appear above the reply editor ("I would love to come and have a look"): they open the reply box and generate the mail in that direction, available while the sender's message is still the last one.
 
 #### Drafts
 

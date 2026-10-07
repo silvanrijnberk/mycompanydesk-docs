@@ -52,14 +52,18 @@ A toggle on the same settings page enables [Peppol e-invoicing](/en/features/pep
 
 ## Overview
 
-The invoices page shows all your invoices with filtering and search capabilities. The status tabs in the top bar let you switch quickly between:
+The invoices page lists your invoices under tabs: **All** ("what needs you first"), **To send** and **Awaiting payment**. The three tabs carry live counts, the payment tabs also show their total amount in euros, and the awaiting tab raises a red alert with the number of overdue invoices.
 
-- **All**: every invoice
-- **Drafts**: created but not sent
-- **Outstanding**: sent, open, or overdue invoices
-- **Website sales**: online sales, when your workspace has website sales enabled
+Inside the lists, invoices are grouped by where they stand, so the work you must do comes first and finished work sinks to the bottom:
 
-You can still use the **Status** filter to narrow the list to any status, including sent, overdue, paid, or cancelled.
+- **Overdue**, then **To send**, then **Awaiting payment**: the work sitting with you now
+- **Paid in September** (the two most recent months with rows), then **Paid earlier** for everything before that, collapsed until you press Show
+- **Paid**: paid without an attributable month
+- **Cancelled or credited**: the archive of work that is no longer live
+
+Every group header carries the count of the whole group and, where it applies, the group total. Collapse a group with "Hide" and its rows stop counting towards the pages while the header stays in place. A month dated in the future (almost always a typo in the date) never collapses: it stays open with its own header so the mistake stays visible.
+
+Next to the dates, each row carries a **Status** column that says the state in plain words: "Draft", "To send", "due date 12 May passed", "due in 3 days", "customer says: paid". The **Status** filter in the filter panel still narrows the list to any single status, including drafts, late, paid and cancelled, and website sales keep their own view of the list.
 
 ## Creating an invoice
 
@@ -80,6 +84,8 @@ For faster creation:
 2. Select a customer
 3. Add items or choose a template
 4. Save (and optionally send immediately)
+
+On the phone, the quick-add button starts a short step-by-step flow instead of the full form: customer first, then the lines, then a review step before saving and sending.
 
 ### From a template
 

@@ -128,6 +128,16 @@ La section hero du tableau de bord affiche un briefing court et personnel géné
 - **UX client.** Pendant le chargement du briefing IA, le hero affiche le texte standard mis en cache de la veille. Lorsque la version IA arrive, une transition en fondu enchaine (opacite + glissement) la remplace. Le briefing IA apparait avec une icone sparkle et la couleur de texte principale. Un shimmer squelette fidele a la mise en page (`BriefingSkeleton`) maintient la forme complete du tableau de bord jusqu'a l'arrivee des donnees principales, puis se dissout dans une animation d'entree coordonnee et progressive. Les utilisateurs avec reduced-motion ne recoivent aucune animation.
 
 
+## Aide IA dans la boîte de réception (Office)
+
+La boîte de réception peut rédiger pour vous la réponse à un courriel d'un client. Le point d'entrée `POST /api/inbox/threads/:id/generate-reply` passe par le même routeur de LLM que les autres fonctions IA (charge de travail `inbox-generate-reply`) et connaît deux modes : `reply` écrit une réponse complète à partir de zéro (orientable par une courte instruction ou une puce comme « Confirmer »), `rewrite` polit votre propre brouillon sans en changer le sens ni la langue.
+
+- **Modèle.** Gemini sur Vertex AI `europe-west1`, par la chaîne standard, comme les autres surfaces de discussion.
+- **Entrée.** Le contexte de conversation trié et raccourci : les courriels réellement arrivés et les réponses réellement envoyées. Les brouillons, les envois échoués et les rebonds ne comptent pas, pour qu'une ébauche générée ou un courriel en erreur ne soit jamais pris pour un message lu par le client.
+- **Sortie.** Du texte brut uniquement (l'éditeur l'enveloppe en HTML), dans la langue du dernier message entrant, à la première personne du singulier, signé du nom du propriétaire. Les détails inconnus deviennent des espaces réservés comme `[datum]`, jamais des inventions.
+- **Jauge.** `ai_insights`, donc Office seulement ; le client masque toute l'aide lorsque le droit manque ou que la conversation est marquée comme suspecte.
+- **En cas d'erreur.** Toute erreur du modèle revient comme `{ ok: false }` sans exception levée : l'éditeur affiche un toast et reste intact.
+
 ## Droits par plan
 
 | Fonctionnalité | Desk | Office |
@@ -138,6 +148,7 @@ La section hero du tableau de bord affiche un briefing court et personnel géné
 | Numérisation des reçus | Activé (3 par mois) | Activé (200 par mois) |
 | Vérification du texte | Activé | Activé |
 | Traduction | Activé (UI uniquement) | Activé |
+| Aide IA dans la boîte de réception | Désactivé | Activé |
 | Aperçu tableau de bord IA | Désactivé | Activé |
 
 ## Confidentialite

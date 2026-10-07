@@ -54,14 +54,18 @@ A toggle on the same settings page enables [Peppol e-invoicing](/en/features/pep
 
 ## Overview
 
-The invoices page shows all your invoices with filtering and search capabilities. The status tabs in the top bar let you switch quickly between:
+De facturenpagina zet je facturen onder tabs: **Alle** ("eerst wat jij moet doen"), **Nog versturen** en **Wacht op betaling**. De tabs dragen live aantallen, de tabbladen met betalingen tonen er ook hun totaalbedrag in euro's bij, en op de wacht-tab staat een rode melding met het aantal te late facturen.
 
-- **All**: every invoice
-- **Drafts**: created but not sent
-- **Outstanding**: sent, open, or overdue invoices
-- **Website sales**: online sales, when your workspace has website sales enabled
+In de lijsten staan de facturen gegroepeerd op waar ze staan, zodat het werk dat op je wacht bovenaan komt en het werk dat klaar is naar onderen zakt:
 
-You can still use the **Status** filter to narrow the list to any status, including sent, overdue, paid, or cancelled.
+- **Te laat**, daarna **Nog versturen**, dan **Wacht op betaling**: het werk dat nu bij jou ligt
+- **Betaald in september** (de twee nieuwste maanden met rijen), daarna **Betaald eerder** voor alles daarvoor, ingeklapt tot je op Toon drukt
+- **Betaald**: betaald zonder toewijsbare maand
+- **Geannuleerd of gecrediteerd**: het archief van werk dat niet meer leeft
+
+Elke groepskop draagt het aantal van de hele groep en, waar het van toepassing is, het groepstotaal. Met Verberg klap je een groep dicht: de rijen tellen dan niet meer mee voor de paginering, de kop blijft gewoon staan. Een maand die in de toekomst dateert (bijna altijd een typfout in de datum) klapt nooit in: die staat open met zijn eigen kop, zodat de fout zichtbaar blijft.
+
+Naast de data draagt elke rij een kolom **Stand** die de toestand in gewone woorden zegt: "Concept", "Nog versturen", "vervaldatum 12 mei voorbij", "vervalt over 3 dagen", "klant zegt: betaald". Met het filter **Status** in het filterpaneel zet je de lijst nog steeds op één enkele status, inclusief concept, te laat, betaald en geannuleerd, en websiteverkopen hebben hun eigen overzicht van de lijst.
 
 ## Creating an invoice
 
@@ -82,6 +86,8 @@ For faster creation:
 2. Select a customer
 3. Add items or choose a template
 4. Save (and optionally send immediately)
+
+Op de telefoon start dezelfde knop geen lang formulier maar een korte stappenflow: eerst de klant, dan de regels, dan een controlestap voor opslaan en versturen.
 
 ### From a template
 

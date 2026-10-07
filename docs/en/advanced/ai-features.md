@@ -173,6 +173,17 @@ The dashboard briefing hero shows a short, personal AI-written briefing for Offi
 - **Fallback.** On any failure (model unavailable, 403, network error) the client uses the existing deterministic lede. No error is shown to the user.
 - **Client UX.** While the AI briefing loads, the hero shows the previous day's cached deterministic lede. When the AI version arrives, a cross-fade transition (opacity + slide) replaces it. The AI briefing appears with a sparkle icon and primary text color. A layout-matched skeleton shimmer (`BriefingSkeleton`) holds the entire dashboard shape until core data settles, then dissolves into a coordinated staggered entrance animation. Reduced-motion users get no animations.
 
+## Inbox reply drafts (Office)
+
+The inbox composer can draft the reply of a customer email for you. The endpoint `POST /api/inbox/threads/:id/generate-reply` runs through the same LLM router as the other surfaces (`inbox-generate-reply` workload) with two modes: `reply`, which writes a full answer from scratch (optionally steered by a short instruction or a one-tap direction chip), and `rewrite`, which polishes the user's own draft without changing its meaning or language.
+
+- **Model.** Gemini on Vertex AI `europe-west1` over the standard router chain, like the other chat surfaces.
+- **Input.** The triage-built, clipped thread context: inbound mail that actually arrived and replies that really went out. Drafts, failed sends and bounces are excluded, so a generated concept or a mail that errored is never treated as if the customer had read it.
+- **Output.** Plain text only (the composer wraps it into HTML), written in the language of the last inbound message, first person singular, signed with the owner's name. Unknown details become placeholders like `[datum]` instead of inventions. Markdown that slips through is stripped to plain dashes and inline emphasis markers removed.
+- **Gating.** `ai_insights`, so Office only; the client hides the whole toolbox when the entitlement is missing or the thread is flagged as suspicious.
+- **Failure behaviour.** Any model failure returns `{ ok: false }` without throwing; the composer shows a toast and leaves the editor untouched.
+- **EU AI Act.** The draft is fully visible and editable before any send, so there is nothing to disclose per art. 50 beyond the general AI transparency of the app.
+
 ## Plan gating
 
 | Surface | Desk | Office |
@@ -183,6 +194,7 @@ The dashboard briefing hero shows a short, personal AI-written briefing for Offi
 | Receipt scanner | On (3 per month) | On (200 per month) |
 | Text check | On | On |
 | Translation | On (UI strings only) | On |
+| Inbox reply drafts | Off | On |
 | Briefing insight | Off | On |
 
 <!-- TODO(source-missing): AI_USAGE_LIMIT locale string implies a daily AI usage cap; this page states monthly caps only. Needs a sources/ entry before documenting the daily limit. -->

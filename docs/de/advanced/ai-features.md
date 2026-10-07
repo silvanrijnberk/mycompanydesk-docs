@@ -128,6 +128,16 @@ Der Dashboard-Briefing-Hero zeigt ein kurzes, persönliches KI-generiertes Brief
 - **Client UX.** Während das AI-Briefing lädt, zeigt der Hero den gecachten deterministischen Lede des Vortages. Sobald die AI-Version eintrifft, ersetzt ein Cross-Fade-Übergang (Opacity + Slide) diesen. Das AI-Briefing erscheint mit einem Sparkle-Symbol und primärer Textfarbe. Ein layout-getreuer Skeleton-Shimmer (`BriefingSkeleton`) hält die gesamte Dashboard-Form, bis die Kerndaten da sind, und löst sich dann in eine koordinierte, gestaffelte Eintrittsanimation auf. Nutzer mit reduced-motion erhalten keine Animationen.
 
 
+## Antwort-Assistent im Posteingang (Office)
+
+Der Posteingang kann die Antwort auf eine Kundenmail für Sie entwerfen. Der Endpunkt `POST /api/inbox/threads/:id/generate-reply` läuft über denselben LLM-Router wie die anderen KI-Flächen (Workload `inbox-generate-reply`) und kennt zwei Modi: `reply` entwirft eine vollständige Antwort von Grund auf (lenkbar über eine kurze Anweisung oder einen Chip wie „Bestätigen“), `rewrite` überarbeitet Ihren eigenen Entwurf, ohne Bedeutung oder Sprache zu verändern.
+
+- **Modell.** Gemini auf Vertex AI `europe-west1` über die übliche Kette, wie bei den anderen Chat-Flächen.
+- **Eingabe.** Der triagierte, gekürzte Konversationskontext: Mail, die wirklich angekommen ist, und Antworten, die wirklich versendet wurden. Entwürfe, fehlgeschlagene Sendeversuche und Bounces zählen nicht mit, damit ein generierter Entwurf oder eine Fehlermail nie wie eine gelesene Mail behandelt wird.
+- **Ausgabe.** Nur reinen Text (der Editor verpackt ihn in HTML), in der Sprache der letzten eingehenden Nachricht, in der ersten Person Singular, signiert mit dem Namen des Inhabers. Unbekannte Details werden zu Platzhaltern wie `[datum]`, nicht zu Erfindungen.
+- **Gating.** `ai_insights`, also nur Office; der Client blendet die gesamte Hilfestellung aus, wenn der Anspruch fehlt oder der Thread als verdächtig markiert ist.
+- **Fehlerverhalten.** Jeder Modellfehler kehrt als `{ ok: false }` zurück, ohne zu werfen: Der Editor zeigt einen Toast an und bleibt unangetastet.
+
 ## Tarifberechtigungen
 
 | Funktion | Desk | Office |
@@ -138,6 +148,7 @@ Der Dashboard-Briefing-Hero zeigt ein kurzes, persönliches KI-generiertes Brief
 | Belegscanning | An (3 pro Monat) | An (200 pro Monat) |
 | Textprüfung | An | An |
 | Übersetzung | An (nur UI) | An |
+| Antwort-Assistent im Posteingang | Aus | An |
 | Dashboard-Briefing Insight | Aus | An |
 
 ## Datenschutz

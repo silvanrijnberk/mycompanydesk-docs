@@ -286,6 +286,42 @@ Funktionen:
 - **Gelesen von** -- ist ein Thread für Sie noch als neu markiert und hat eine Kollegin oder ein Kollege ihn bereits geöffnet, nennt die Zeile diese Person: Gelesen von Anissa. Auf dem Handy sehen Sie ein Augensymbol mit dem Vornamen. Ehemalige Kollegen und die Buchhaltung werden nicht genannt.
 - **Soft-Delete** -- Threads können in den Papierkorb verschoben werden, anstatt dauerhaft gelöscht zu werden. Eine Löschen-Schaltfläche (Papierkorb-Symbol) erscheint in der Werkzeugleiste für nicht gelöschte Threads. Nach dem Löschen ändert sich die Schaltfläche in eine Wiederherstellen-Aktion, die den Thread zurück auf `open` setzt. Der Papierkorb-Filter erscheint in der linken Seitenleiste neben Offen, Zurückgestellt, Geschlossen und Spam, sodass Sie gelöschte Threads überprüfen können, bevor sie endgültig bereinigt werden.
 - **Volltextsuche**: eine Suchleiste über der Thread-Liste ermöglicht die Suche in allen Posteingangsnachrichten nach Betreff, Nachrichtentext, Snippet und Absender. Die Suche verwendet die Postgres-Volltextsuche mit gewichteter Feldrangfolge, sodass Betreff-Treffer vor Nachrichtentext-Treffern erscheinen. Ergebnisse werden pro Thread gruppiert, wobei das Snippet der am besten passenden Nachricht als Vorschauzeile angezeigt wird. Unterstützt Phrasen in Anführungszeichen, `OR` und `-` Ausschlüsse. Ein einzelnes Wort mit mindestens drei Zeichen wird zusätzlich in E-Mail-Adressen und Absendernamen gesucht, sodass Sie einen Thread auch dann wiederfinden, wenn Sie nur einen Teil einer Adresse eingeben, zum Beispiel die Domain. Suchen mit mehreren Wörtern oder einem `-`-Ausschluss berücksichtigen weiterhin nur ganze Wörter. Eine 250-ms-Verzögerung hält die Oberfläche reaktionsschnell, und der Ladeindikator gibt Echtzeit-Feedback.
+- **Was der Absender möchte**: In der Office-Inbox zeigt die Zeile eines triagierten Threads eine kurze Zeile darüber, was die letzte Nachricht von Ihnen verlangt („Fordert ein Angebot an, will im Dezember fertig sein“), geschrieben von der KI-Triage, als die Mail eintraf. Die Zeile steht nur, solange der Absender das letzte Wort hat und die Triage danach lief; sobald Sie geantwortet haben oder neuere Mail eingegangen ist, die noch nicht triagiert wurde, fällt die Zeile auf die Anfangsworte der Nachricht zurück. Siehe [Posteingangsgruppen](#posteingangsgruppen-office) unten.
+- **Interne Notizen**: eine private Notiz zum Thread, für Sie und Ihr Team. Die Notiz steht im Gespräch selbst an dem Punkt, an dem sie geschrieben wurde, gekennzeichnet als intern; der Kunde sieht sie nie. In einer Notiz können Sie eine Kollegin oder einen Kollegen @-erwähnen.
+- **Absender als Kunden speichern**: Kommt ein Gespräch von einer Adresse, die zu keinem Ihrer Kunden passt, sagt der Absenderstreifen über der Nachricht „Noch nicht in deinen Kunden“ und bietet an, den Absender über „Als Kunde speichern“ mit einem Klick als Kunden zu speichern.
+- **Antwort-Assistent (Office)**: siehe [Antwort-Assistent](#antwort-assistent) unten.
+
+#### Posteingangsgruppen (Office)
+
+In der Office-Inbox gliedert der Posteingang eingehende Mail danach, was sie von Ihnen verlangt. Über der Liste stehen drei Reiter:
+
+- **Wartet auf dich**: Gespräche, in denen der Absender auf eine Antwort wartet. Liegt eine Nachricht schon einen vollen Tag zurück, zählt die Zeile die Wartetage.
+- **Rechnungen**: Lieferantenrechnungen, die die Triage erkannt hat. Die Liste öffnet das Gespräch direkt auf der Rechnungskarte.
+- **Sonstiges**: Newsletter und Systemmails, die Post, die Sie lesen, wenn Zeit übrig ist.
+
+Ein Reiter ohne Post verschwindet. Die Anzahlen auf den Reitern gelten für den ganzen Workspace. Ist alles beantwortet, was auf Sie gewartet hat, zeigt die Liste statt Zeilen eine ruhige Meldung „Alles erledigt“. In der Desk-Inbox, die auf Lesen und Antworten begrenzt ist, bleibt die Liste ein Ordner.
+
+Die Reiteraufteilung ist die Aufteilung des Posteingangs selbst: Labels, Werbung und Mit Stern arbeiten genau wie bisher. Archivieren, Zurückstellen und Schließen nehmen ein Gespräch auch aus seiner Gruppe heraus, so wie es schon immer aus der offenen Liste verschwand.
+
+#### Rechnungskarte im Leser
+
+Für einen Thread, den die Triage als Rechnung erkennt, zeigt der Leser die Nachricht als Rechnungskarte:
+
+- Sobald der Anhang als Ausgabe gebucht ist (automatisch nach der Triage oder über den Buchen-Knopf), zeigt die Karte Betrag inklusive MwSt., den MwSt.-Betrag und den Stand der Ausgabe direkt aus Ihren Büchern: wartet unter „Zu prüfen“ oder ist bereits gebucht. Der Knopf öffnet die Ausgabe.
+- Bevor die Rechnung gebucht ist, zeigt die Karte nur, was der Mailtext selbst sagt, beschriftet mit „Betrag (aus der E-Mail)“, damit daraus nie ein gebuchter Betrag gelesen wird.
+- Die Karte markiert überfällige Rechnungen: „bis 21. Oktober“ wird „überfällig seit 21. Oktober“, rot, sobald das Fälligkeitsdatum vergangen ist.
+
+#### Antwort-Assistent
+
+Office entwirft auf Wunsch die Antwort auf eine Kundenmail für Sie. Über dem Antwort-Editor steht eine Schaltfläche „Antwort entwerfen“. Sie öffnet ein Feld mit:
+
+- **Richtungs-Chips**: Bestätigen, Freundlich ablehnen, Nach Infos fragen und Bedanken. Jeder Chip lässt die KI die ganze Antwort in diese Richtung schreiben.
+- **Ihre eigene Anweisung**: Was möchten Sie antworten? (zum Beispiel den Termin für Dienstag bestätigen) Schreiben Sie es ins Feld und wählen Sie Generieren.
+- **Meinen Text umschreiben**: haben Sie schon selbst etwas geschrieben, poliert die KI Ihren eigenen Entwurf statt Neues zu erfinden: Grammatik, Ton und Klarheit, ohne neue Fakten.
+
+Während die KI schreibt, zeigt der Editor „Antwort wird geschrieben…“ und bleibt außer Reichweite. Der Schreibzustand gehört zum offenen Gespräch: öffnen Sie inzwischen einen anderen Thread, landet die Antwort nie im falschen Gespräch, und ist sie fertig, scrollt der Editor den Text ins Bild, statt einen Cursor hineinzusetzen. Der entworfene Text fällt als gewöhnlicher Text in den Editor und ist dann einfach Ihr Entwurf: Sie bearbeiten ihn, er wird automatisch als Entwurf gespeichert und zählt nie als gesendet. Auch eine fehlgeschlagene Sendung führt die KI nicht hinters Licht: sie liest Nachrichten, die wirklich angekommen oder wirklich gesendet wurden, nie Entwürfe und nie fehlgeschlagene Mail.
+
+Der entworfene Antworttext behandelt, was die letzte Nachricht im Thread verlangt, in der Sprache dieser Nachricht, geschrieben als eine Person („ich“), signiert mit Ihrem Namen. Fakten, Preise oder Termine werden nicht erfunden: wo etwas nötig ist, das nicht dasteht, lässt der Text einen nackten Platzhalter wie [datum] zurück. Ist der Thread als verdächtig markiert, verschwindet die ganze Antwort-Hilfe aus dem Bild. Nach einer frischen Triage können über dem Antwortfeld Schnellantworten stehen: Antwortrichtungen mit einem Tipp („Ich komme gern vorbei“), die das Antwortfeld aufklappen und die Mail in dieser Richtung entwerfen. Das gilt, solange die Nachricht des Absenders die letzte ist.
 
 #### Entwürfe
 

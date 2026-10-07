@@ -128,6 +128,16 @@ De dashboard-briefing hero toont een korte, persoonlijke AI-geschreven briefing 
 - **Client UX.** Terwijl de AI-briefing laadt, toont de hero de gecachte deterministische lede van de vorige dag. Zodra de AI-versie binnen is, vervangt een cross-fade-overgang (opacity + slide) deze. De AI-briefing verschijnt met een sparkle-icoon en primaire tekstkleur. Een layout-matched skeleton-shimmer (`BriefingSkeleton`) houdt de volledige dashboardvorm vast totdat de kerndata binnen is, waarna deze oplost in een gecoordineerde, gestaffelde entree-animatie. Gebruikers met reduced-motion krijgen geen animaties.
 
 
+## Inbox-antwoordhulp (Office)
+
+De inbox kan het antwoord op een klantmail voor je opstellen. Het endpoint `POST /api/inbox/threads/:id/generate-reply` draait over dezelfde LLM-router als de andere AI-oppervlakken (workload `inbox-generate-reply`) met twee modi: `reply`, dat vanaf nul een volledig antwoord schrijft (stuurbare richting via een korte instructie of een chip zoals "Bevestigen"), en `rewrite`, dat je eigen concept polijst zonder de betekenis of taal te veranderen.
+
+- **Model.** Gemini op Vertex AI `europe-west1` over de standaardketen, zoals de andere chat-oppervlakken.
+- **Input.** De getrieerde, ingekorte gesprekscontext: mail die echt is aangekomen en antwoorden die echt verstuurd zijn. Concepten, mislukte verzendingen en bounces horen er niet bij, zodat een gegenereerd concept of een mail die foutliep nooit telt alsof de klant hem heeft gelezen.
+- **Output.** Alleen platte tekst (de editor wikkelt hem in HTML), geschreven in de taal van de laatste binnenkomst, in de eerste persoon enkelvoud, ondertekend met de naam van de eigenaar. Onbekende details worden placeholders zoals `[datum]` in plaats van verzinsels.
+- **Gating.** `ai_insights`, dus alleen Office; de client verbergt de hele hulp als het recht ontbreekt of de draad als verdacht staat gemarkeerd.
+- **Foutgedrag.** Elke modelfout komt terug als `{ ok: false }` zonder te gooien: de editor toont een toast en blijft onaangeroerd.
+
 ## Abonnementsrechten
 
 | Functie | Desk | Office |
@@ -138,6 +148,7 @@ De dashboard-briefing hero toont een korte, persoonlijke AI-geschreven briefing 
 | Bonnen scannen | Aan (3 per maand) | Aan (200 per maand) |
 | Tekstcontrole | Aan | Aan |
 | Vertaling | Aan (alleen UI) | Aan |
+| Inbox-antwoordhulp | Uit | Aan |
 | Dashboard-briefing inzicht | Uit | Aan |
 
 ## Privacy en gegevensbescherming

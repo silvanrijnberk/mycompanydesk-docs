@@ -99,6 +99,9 @@ Si vous possedez plus d'une entreprise, une carte **Entreprise propre** peut app
 :::caution
 L'archivage d'un client ayant une facture récurrente active ou des contrats en cours demande d'abord une confirmation. L'avertissement indique honnêtement ce que fait l'archivage : tant qu'un client est archivé, MyCompanyDesk ne crée plus de factures récurrentes et ne facture plus ses contrats, et les périodes sautées ne sont pas facturées ensuite. Mettez fin d'abord à la facture récurrente ou au contrat si cette facturation doit continuer.
 :::
+
+Un client au statut prospect (jamais facturé) ne propose pas d'action « Créer une facture », pas même dans le menu « Plus », et le serveur refuse toute facture pour lui de toute façon. La page du client affiche alors un bouton « Convertir en client » ; dès que son statut passe à actif, toutes les actions de facturation réapparaissent.
+
 - **Supprimer** -- Supprimer definitivement le client
 
 ## Actions groupees
