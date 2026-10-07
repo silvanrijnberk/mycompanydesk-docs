@@ -303,9 +303,9 @@ Un onglet sans courrier disparaît. Les compteurs des onglets valent pour tout l
 
 Le découpage en onglets est celui-même de la réception : les étiquettes, Promotions et Avec étoile fonctionnent exactement comme avant. Archiver, reporter et fermer sortent une conversation de son groupe, comme elles la sortaient toujours de la liste ouverte.
 
-#### Les factures dans la boîte de réception
+#### Carte de facture dans le lecteur
 
-Pour un fil que le triage a identifié comme facture, le lecteur échange les premiers mots contre une carte de facture :
+Pour un fil que le triage a identifié comme facture, le lecteur affiche le message sous forme de carte de facture :
 
 - Dès que la pièce jointe est comptabilisée en dépense (automatiquement après le triage, ou via le bouton de comptabilisation), la carte montre le montant avec TVA, le montant de TVA et l'état de la dépense directement dans vos livres : en attente dans « À vérifier », ou déjà comptabilisée. Le bouton ouvre la dépense.
 - Avant que la facture ne soit comptabilisée, la carte ne montre que ce que dit le texte du courriel lui-même, étiqueté « Montant (selon l’e-mail) », pour qu'on ne le lise jamais comme un chiffre comptabilisé.
@@ -321,7 +321,7 @@ Office peut rédiger pour vous la réponse à un courriel d'un client. Au-dessus
 
 Pendant qu'elle écrit, l'éditeur montre « Rédaction de la réponse… » et reste hors d'atteinte. L'état d'écriture appartient à la conversation ouverte : si vous ouvrez entre-temps une autre conversation, la réponse n'atterrit jamais dans la mauvaise, et quand elle est prête, l'éditeur fait défiler le texte à l'écran au lieu d'y poser un curseur. La réponse rédigée tombe dans l'éditeur comme un texte ordinaire qui devient votre brouillon : vous le modifiez, il s'enregistre automatiquement comme brouillon et ne compte jamais comme envoyé. Un envoi qui a échoué ne berne pas non plus la rédaction : l'IA lit des messages réellement arrivés ou réellement envoyés, jamais des brouillons et jamais des envois manqués.
 
-La réponse rédigée traite ce que demande le dernier message du fil, dans la langue de ce message, écrite à la première personne du singulier (« je »), signée avec votre nom. Elle n'invente ni faits, ni prix, ni dates : là où quelque chose de nécessaire manque, elle laisse un simple espace réservé comme [datum]. Si le fil a été signalé comme suspect, toute la boîte à outils IA disparaît. Après un triage frais, des réponses rapides peuvent aussi se présenter sous l'éditeur : des directions de réponse en un clic (« Je viendrais volontiers jeter un œil ») qui ouvrent le champ de réponse et rédigent le courriel dans cette direction, disponibles tant que le message de l'expéditeur reste le dernier.
+La réponse rédigée traite ce que demande le dernier message du fil, dans la langue de ce message, écrite à la première personne du singulier (« je »), signée avec votre nom. Elle n'invente ni faits, ni prix, ni dates : là où quelque chose de nécessaire manque, elle laisse un simple espace réservé comme [datum]. Si le fil a été signalé comme suspect, toute la boîte à outils IA disparaît. Après un triage frais, des réponses rapides en un clic peuvent apparaître au-dessus de l'éditeur de réponse (« Je viendrais volontiers jeter un œil ») : elles ouvrent le champ de réponse et rédigent le courriel dans cette direction, disponibles tant que le message de l'expéditeur reste le dernier.
 
 #### Brouillons
 

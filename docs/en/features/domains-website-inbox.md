@@ -301,11 +301,11 @@ On Office, the inbox groups incoming mail by what it asks of you. Three tabs sit
 
 A tab without mail disappears. The tabs carry workspace-wide counts. When everything that was waiting on you is answered, the list shows a quiet "All done" notice instead of rows. On Desk, where the inbox is limited to reading and replying, the list stays one folder.
 
-The tab is the default Postvak IN split: labels, Promoties and Met ster work exactly as before. Archiving, snoozing and closing move a conversation out of the group it was in, the same way they always moved it out of the open list.
+The tabs live on the default inbox view itself: labels, Promotions and Starred work exactly as before. Archiving, snoozing and closing move a conversation out of the group it was in, the same way they always moved it out of the open list.
 
-#### Bills on the inbox list
+#### Bill card in the reader
 
-For a thread the triage marked as a bill, the reader trades the opening words for a bill card:
+For a thread the triage marked as a bill, the message reader shows the mail as a bill card:
 
 - Once the invoice's attachment is booked as an expense (automatically after triage, or through the book button), the card shows the amount including VAT, the VAT amount, and the state of the expense straight from your books: waiting in To review, or already booked. The button opens the expense.
 - Before the bill is booked, the card shows only what the email text itself says, labelled "Amount (from the email)" so it is never mistaken for a booked figure.
@@ -321,7 +321,7 @@ Office can draft the reply for you. Above the reply editor sits a "Draft a reply
 
 While it writes, the editor shows "Writing your reply…" and stays out of reach. The writing state belongs to the open conversation: if you switch to another thread in the meantime, the answer is not written into the wrong conversation, and when it is done the editor scrolls the text into view instead of throwing a cursor in it. A generated reply lands in the editor as text you can still edit, saves as a draft automatically, and is never shown as sent. A failed send never misleads the drafting either: the AI reads messages that actually arrived or really went out, never drafts and never failed mail.
 
-The drafted reply states what the last message in the thread asked for, in the language that message was written in, addressed as one person ("I"), and signed with your name. It does not invent facts, prices or dates: where something needed is unknown, it leaves a plain placeholder like [datum]. If the thread was flagged as suspicious, the whole AI reply toolbox stays hidden. On a fresh triage the row can also offer quick replies underneath the editor: one-tap reply directions ("I would love to come and have a look") that open the reply box and generate the mail in that direction, available while the sender's message is still the last one.
+The drafted reply states what the last message in the thread asked for, in the language that message was written in, addressed as one person ("I"), and signed with your name. It does not invent facts, prices or dates: where something needed is unknown, it leaves a plain placeholder like [datum]. If the thread was flagged as suspicious, the whole AI reply toolbox stays hidden. On a fresh triage, one-tap quick replies can appear above the reply editor ("I would love to come and have a look"): they open the reply box and generate the mail in that direction, available while the sender's message is still the last one.
 
 #### Drafts
 

@@ -303,9 +303,9 @@ Ein Reiter ohne Post verschwindet. Die Anzahlen auf den Reitern gelten für den 
 
 Die Reiteraufteilung ist die Aufteilung des Posteingangs selbst: Labels, Werbung und Mit Stern arbeiten genau wie bisher. Archivieren, Zurückstellen und Schließen nehmen ein Gespräch auch aus seiner Gruppe heraus, so wie es schon immer aus der offenen Liste verschwand.
 
-#### Rechnungen im Posteingang
+#### Rechnungskarte im Leser
 
-Für einen Thread, den die Triage als Rechnung erkennt, tauscht der Leser die Anfangsworte gegen eine Rechnungskarte:
+Für einen Thread, den die Triage als Rechnung erkennt, zeigt der Leser die Nachricht als Rechnungskarte:
 
 - Sobald der Anhang als Ausgabe gebucht ist (automatisch nach der Triage oder über den Buchen-Knopf), zeigt die Karte Betrag inklusive MwSt., den MwSt.-Betrag und den Stand der Ausgabe direkt aus Ihren Büchern: wartet unter „Zu prüfen“ oder ist bereits gebucht. Der Knopf öffnet die Ausgabe.
 - Bevor die Rechnung gebucht ist, zeigt die Karte nur, was der Mailtext selbst sagt, beschriftet mit „Betrag (aus der E-Mail)“, damit daraus nie ein gebuchter Betrag gelesen wird.
@@ -321,7 +321,7 @@ Office entwirft auf Wunsch die Antwort auf eine Kundenmail für Sie. Über dem A
 
 Während die KI schreibt, zeigt der Editor „Antwort wird geschrieben…“ und bleibt außer Reichweite. Der Schreibzustand gehört zum offenen Gespräch: öffnen Sie inzwischen einen anderen Thread, landet die Antwort nie im falschen Gespräch, und ist sie fertig, scrollt der Editor den Text ins Bild, statt einen Cursor hineinzusetzen. Der entworfene Text fällt als gewöhnlicher Text in den Editor und ist dann einfach Ihr Entwurf: Sie bearbeiten ihn, er wird automatisch als Entwurf gespeichert und zählt nie als gesendet. Auch eine fehlgeschlagene Sendung führt die KI nicht hinters Licht: sie liest Nachrichten, die wirklich angekommen oder wirklich gesendet wurden, nie Entwürfe und nie fehlgeschlagene Mail.
 
-Der entworfene Antworttext behandelt, was die letzte Nachricht im Thread verlangt, in der Sprache dieser Nachricht, geschrieben als eine Person („ich“), signiert mit Ihrem Namen. Fakten, Preise oder Termine werden nicht erfunden: wo etwas nötig ist, das nicht dasteht, lässt der Text einen nackten Platzhalter wie [datum] zurück. Ist der Thread als verdächtig markiert, verschwindet die ganze Antwort-Hilfe aus dem Bild. Nach einer frischen Triage kann unter dem Antwortfeld auch schnelle Antworten geben: Antwortrichtungen mit einem Tipp („Ich komme gern vorbei“), die das Antwortfeld aufklappen und die Mail in dieser Richtung entwerfen. Das gilt, solange die Nachricht des Absenders die letzte ist.
+Der entworfene Antworttext behandelt, was die letzte Nachricht im Thread verlangt, in der Sprache dieser Nachricht, geschrieben als eine Person („ich“), signiert mit Ihrem Namen. Fakten, Preise oder Termine werden nicht erfunden: wo etwas nötig ist, das nicht dasteht, lässt der Text einen nackten Platzhalter wie [datum] zurück. Ist der Thread als verdächtig markiert, verschwindet die ganze Antwort-Hilfe aus dem Bild. Nach einer frischen Triage können über dem Antwortfeld Schnellantworten stehen: Antwortrichtungen mit einem Tipp („Ich komme gern vorbei“), die das Antwortfeld aufklappen und die Mail in dieser Richtung entwerfen. Das gilt, solange die Nachricht des Absenders die letzte ist.
 
 #### Entwürfe
 

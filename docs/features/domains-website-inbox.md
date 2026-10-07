@@ -303,9 +303,9 @@ Een tab zonder post verdwijnt. De tellingen op de tabs gelden de hele werkruimte
 
 De tabverdeling is de split van Postvak IN zelf: labels, Promoties en Met ster werken precies zoals voorheen. Archiveren, snoozen en sluiten haalt een gesprek ook weer uit de groep waarin het stond, zoals het altijd al uit de open lijst verdween.
 
-#### Rekeningen op de inboxlijst
+#### Rekeningkaart in de lezer
 
-Voor een draad die de triage als rekening herkende, toont de lezer in plaats van de openingswoorden een rekeningkaart:
+Voor een draad die de triage als rekening herkende, toont de lezer het bericht als rekeningkaart:
 
 - Zodra de bijlage als uitgave geboekt is (automatisch na de triage, of via de boekknop), laat de kaart bedrag inclusief btw, het btw-bedrag en de stand van de uitgave rechtstreeks uit je boeken zien: staat klaar in "Te controleren", of al geboekt. De knop opent de uitgave.
 - Voordat de rekening geboekt is, laat de kaart alleen zien wat de mailtekst zelf zegt, met als bijschrift "Bedrag (uit de mail)", zodat je er nooit een geboekt bedrag in leest.
@@ -321,7 +321,7 @@ Office schrijft op verzoek het antwoord op een klantmail voor je. Boven het antw
 
 Terwijl de AI schrijft, laat de editor "Antwoord wordt geschreven…" zien en blijft hij buiten bereik. De schrijfstatus hoort bij het geopende gesprek: open je intussen een andere draad, dan belandt het antwoord niet in het verkeerde gesprek, en is het klaar, dan schuift de editor de tekst in beeld in plaats van er een cursor in te zetten. Het gegenereerde antwoord valt als gewone tekst in de editor en is dan gewoon jouw concept: je bewerkt het, het wordt automatisch als concept opgeslagen en het telt nooit als verzonden. Ook een verzending die mislukt stuurt de AI niet de kant op: hij leest berichten die echt zijn aangekomen of echt zijn verstuurd, nooit concepten en nooit mislukte mail.
 
-Het opgestelde antwoord behandelt wat het laatste bericht in het gesprek vraagt, in de taal van dat bericht, geschreven als één persoon ("ik"), en ondertekend met jouw naam. Feiten, prijzen of data worden niet verzonnen: waar iets nodig is dat er niet staat, laat het antwoord een kaal placeholder-woord als [datum] achter. Staat de draad gemarkeerd als verdacht, dan verdwijnt de hele AI-antwoordhulp uit beeld. Na een verse triage kan er onder het antwoordvak ook snelle antwoorden staan: antwoordrichtingen met één tik ("Ik kom graag kijken"), die het antwoordvak openklappen en de mail in die richting opstellen. Dat geldt zolang het bericht van de afzender het laatste is.
+Het opgestelde antwoord behandelt wat het laatste bericht in het gesprek vraagt, in de taal van dat bericht, geschreven als één persoon ("ik"), en ondertekend met jouw naam. Feiten, prijzen of data worden niet verzonnen: waar iets nodig is dat er niet staat, laat het antwoord een kaal placeholder-woord als [datum] achter. Staat de draad gemarkeerd als verdacht, dan verdwijnt de hele AI-antwoordhulp uit beeld. Na een verse triage kunnen boven het antwoordvak ook snelle antwoorden staan: antwoordrichtingen met één tik ("Ik kom graag kijken"), die het antwoordvak openklappen en de mail in die richting opstellen. Dat geldt zolang het bericht van de afzender het laatste is.
 
 #### Concepten
 
