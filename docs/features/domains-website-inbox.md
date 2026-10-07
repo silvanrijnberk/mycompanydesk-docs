@@ -286,6 +286,42 @@ Mogelijkheden:
 - **Gelezen door** -- staat een gesprek nog op Nieuw voor jou en heeft een collega hem al geopend, dan noemt de rij die collega: Gelezen door Anissa. Op de telefoon zie je een oogje met de voornaam. Voormalige collega's en de boekhouder worden niet genoemd.
 - **Zacht verwijderen** -- threads kunnen naar de Prullenbak worden verplaatst in plaats van permanent te worden vernietigd. Een verwijderknop (prullenbakicoon) verschijnt in de werkbalk voor niet-verwijderde threads. Eenmaal verwijderd, verandert de knop in een herstelactie die de thread terugzet naar `open`. Het Prullenbak-filter verschijnt in de linkerzijbalk naast Open, Gesluimd, Gesloten en Spam, zodat je verwijderde threads kunt bekijken voordat ze definitief worden opgeschoond.
 - **Volledige tekst zoeken**: een zoekbalk boven de threadlijst laat je alle inboxberichten doorzoeken op onderwerp, berichttekst, snippet en afzender. De zoekopdracht maakt gebruik van Postgres full-text search met gewogen veldrangschikking, zodat treffers in het onderwerp boven treffers in de berichttekst verschijnen. Resultaten worden gegroepeerd per thread, met de snippet van het best overeenkomende bericht als voorbeeldregel. Ondersteunt zinnen tussen aanhalingstekens, `OR` en `-` uitsluitingen. Eén los woord van minstens drie letters wordt ook gezocht in e-mailadressen en afzendernamen, dus je vindt een thread ook terug als je alleen een stuk van een adres intypt, zoals het domein. Zoek je met meerdere woorden of met een `-`-uitsluiting, dan wordt alleen op hele woorden gezocht. Een vertraging van 250 ms houdt de interface responsief, en de laadindicator geeft realtime feedback.
+- **Wat wil de afzender**: op een getrieerde draad toont de rij in de lijst één korte regel over wat het laatste bericht van je vraagt ("Vraagt een offerte, wil in december klaar zijn"), geschreven door de AI-triage op het moment dat de mail binnenkwam. De regel staat er alleen zolang de afzender het laatste woord heeft en de triage daarna heeft gedraaid; heb jij geantwoord, of kwam er nieuwere mail binnen die nog niet getrieerd is, dan valt de rij terug op de openingswoorden van het bericht. Op Office groepeert de inbox de lijst op dezelfde manier; zie [Inbox-groepen](#inbox-groepen-office) hieronder.
+- **Interne notities**: een privénotitie bij het gesprek, voor jou en je team. De notitie staat in het gesprek zelf op het moment waarop hij is geschreven, gemarkeerd als intern; de klant ziet hem nooit. Je kunt een collega @-mentioneren in een notitie.
+- **Afzender opslaan als klant**: komt een gesprek van een adres dat bij geen enkele van je klanten hoort, dan zegt de afzenderstrook boven het bericht "Nog niet in je klanten" en biedt hem met één klik op te slaan als klant.
+- **AI-antwoordhulp (Office)**: zie [AI-antwoordhulp](#ai-antwoordhulp) hieronder.
+
+#### Inbox-groepen (Office)
+
+In de Office-inbox groepeert Postvak IN binnenkomende mail op wat het van je vraagt. Boven de lijst staan drie tabs:
+
+- **Wacht op jou**: gesprekken waarin de afzender op een antwoord wacht. Staat een bericht al een hele dag te wachten, dan telt de rij de dagen mee.
+- **Rekeningen**: leveranciersfacturen die de triage herkend heeft. De lijst opent het gesprek meteen op de rekeningkaart.
+- **Overig**: nieuwsbrieven en systeemmails, de post die je leest als er tijd over is.
+
+Een tab zonder post verdwijnt. De tellingen op de tabs gelden de hele werkruimte. Heb je alles beantwoord wat op je wachtte, dan toont de lijst in plaats van rijen een rustige melding "Alles klaar". In de Desk-inbox, die beperkt is tot lezen en antwoorden, blijft de lijst één map.
+
+De tabverdeling is de split van Postvak IN zelf: labels, Promoties en Met ster werken precies zoals voorheen. Archiveren, snoozen en sluiten haalt een gesprek ook weer uit de groep waarin het stond, zoals het altijd al uit de open lijst verdween.
+
+#### Rekeningen op de inboxlijst
+
+Voor een draad die de triage als rekening herkende, toont de lezer in plaats van de openingswoorden een rekeningkaart:
+
+- Zodra de bijlage als uitgave geboekt is (automatisch na de triage, of via de boekknop), laat de kaart bedrag inclusief btw, het btw-bedrag en de stand van de uitgave rechtstreeks uit je boeken zien: wachtend bij Te beoordelen, of al geboekt. De knop opent de uitgave.
+- Voordat de rekening geboekt is, laat de kaart alleen zien wat de mailtekst zelf zegt, met als bijschrift "Bedrag (uit de mail)", zodat je er nooit een geboekt bedrag in leest.
+- De kaart markeert te late rekeningen: "betalen voor 21 oktober" wordt "te laat, was 21 oktober", in het rood zodra de vervaldatum voorbij is.
+
+#### AI-antwoordhulp
+
+Office schrijft op verzoek het antwoord op een klantmail voor je. Boven het antwoordvak staat een knop "Antwoord laten opstellen" ("Draft a reply"). Die opent een vak met:
+
+- **Richtingschips**: Bevestigen, Netjes afzeggen, Om info vragen en Bedanken. Elke chip laat de AI het hele antwoord in die richting schrijven.
+- **Je eigen instructie**: typ wat het antwoord moet zeggen ("bevestig de afspraak voor dinsdag") en kies Genereer.
+- **Mijn tekst herschrijven**: heb je al zelf iets geschreven, dan polijst de AI je eigen concept in plaats van nieuws te verzinnen: grammatica, toon en duidelijkheid, zonder nieuwe feiten.
+
+Terwijl de AI schrijft, laat de editor "Je antwoord wordt geschreven..." zien en blijft hij buiten bereik. De schrijfstatus hoort bij het geopende gesprek: open je intussen een andere draad, dan belandt het antwoord niet in het verkeerde gesprek, en is het klaar, dan schuift de editor de tekst in beeld in plaats van er een cursor in te zetten. Het gegenereerde antwoord valt als gewone tekst in de editor en is dan gewoon jouw concept: je bewerkt het, het wordt automatisch als concept opgeslagen en het telt nooit als verzonden. Ook een verzending die mislukt stuurt de AI niet de kant op: hij leest berichten die echt zijn aangekomen of echt zijn verstuurd, nooit concepten en nooit mislukte mail.
+
+Het opgestelde antwoord behandelt wat het laatste bericht in het gesprek vraagt, in de taal van dat bericht, geschreven als één persoon ("ik"), en ondertekend met jouw naam. Feiten, prijzen of data worden niet verzonnen: waar iets nodig is dat er niet staat, laat het antwoord een kaal placeholder-woord als [datum] achter. Staat de draad gemarkeerd als verdacht, dan verdwijnt de hele AI-antwoordhulp uit beeld. Na een verse triage kan er onder het antwoordvak ook snelle antwoorden staan: antwoordrichtingen met één tik ("Ik kom graag kijken"), die het antwoordvak openklappen en de mail in die richting opstellen. Dat geldt zolang het bericht van de afzender het laatste is.
 
 #### Concepten
 

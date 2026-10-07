@@ -99,6 +99,9 @@ If you own more than one business, a card titled **Eigen bedrijf** can appear on
 :::caution
 Archiving a customer with an active recurring invoice or ongoing contracts asks for a confirmation first. The warning is honest about what archiving does: while a customer is archived, MyCompanyDesk creates no recurring invoices and bills no contracts for them, and skipped periods are not billed later. End the recurring invoice or contract first if that billing has to keep running.
 :::
+
+A customer who is a prospect (has never been invoiced) carries no Create invoice action, not even in the overflow menu, and the server refuses invoice creation for them anyway. The customer page shows a Convert to customer button instead; once their status is active, all invoicing actions appear.
+
 - **Delete** — Permanently remove the customer
 
 ## Bulk actions

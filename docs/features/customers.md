@@ -99,6 +99,9 @@ Als je meer dan een bedrijf hebt, kan op de klantdetailpagina een kaart **Eigen 
 :::caution
 Het archiveren van een klant met een actieve terugkerende factuur of lopende contracten vraagt eerst om een bevestiging. De waarschuwing zegt eerlijk wat archiveren doet: zolang een klant gearchiveerd is, maakt MyCompanyDesk geen terugkerende facturen meer aan en worden contracten niet meer gefactureerd, en overgeslagen periodes worden later niet alsnog gefactureerd. Eindig eerst de terugkerende factuur of het contract als die facturering moet doorlopen.
 :::
+
+Een klant die een mogelijke klant (prospect) is, dus waarvan nog nooit een factuur is gemaakt, heeft geen knop Factuur aanmaken, ook niet in het overloopmenu, en de server weigert een factuur voor hem sowieso. De klantenpagina biedt zo'n klant een Omzetten naar klant-knop; zodra de status actief is, verschijnen alle factuuracties.
+
 - **Verwijderen** — Verwijder de klant permanent
 
 ## Bulkacties

@@ -54,14 +54,18 @@ A toggle on the same settings page enables [Peppol e-invoicing](/en/features/pep
 
 ## Overview
 
-The invoices page shows all your invoices with filtering and search capabilities. The status tabs in the top bar let you switch quickly between:
+La page des factures présente vos factures sous des onglets : **Tout** (« ce qui réclame d'abord votre attention »), **À envoyer** et **En attente de paiement**. Les onglets portent des compteurs à jour, les onglets de paiement ajoutent aussi leur total en euros, et l'onglet d'attente affiche une alerte rouge avec le nombre de factures en retard.
 
-- **All**: every invoice
-- **Drafts**: created but not sent
-- **Outstanding**: sent, open, or overdue invoices
-- **Website sales**: online sales, when your workspace has website sales enabled
+Dans les listes, les factures sont regroupées selon leur situation, pour que le travail qui vous attend arrive en haut et que le travail terminé descende vers le bas :
 
-You can still use the **Status** filter to narrow the list to any status, including sent, overdue, paid, or cancelled.
+- **En retard**, puis **À envoyer**, puis **En attente de paiement** : le travail qui se trouve actuellement chez vous
+- **Payées en septembre** (les deux mois les plus récents contenant des lignes), puis **Payées plus tôt** pour tout ce qui précède, replié jusqu'à ce que vous appuyiez sur Afficher
+- **Payées** : payées sans mois attribuable
+- **Annulées ou créditées** : l'archive du travail qui ne court plus
+
+Chaque en-tête de groupe porte le compteur du groupe entier et, le cas échéant, son total. Avec Masquer, vous repliez un groupe : ses lignes cessent de compter pour la pagination, mais l'en-tête reste à sa place. Un mois daté dans le futur (presque toujours une coquille dans la date) ne se replie jamais : il reste ouvert avec son propre en-tête, pour que la coquille reste visible.
+
+À côté des dates, chaque ligne porte une colonne **Statut** qui dit la situation en mots simples : « brouillon », « à envoyer », « échue le 12 mai », « échéance dans 3 jours », « le client déclare : payée ». Le filtre **Statut** dans le panneau de filtres continue de réduire la liste à un statut précis, y compris brouillon, en retard, payées et annulées, et les ventes du site web gardent leur propre vue de la liste.
 
 ## Creating an invoice
 
@@ -82,6 +86,8 @@ For faster creation:
 2. Select a customer
 3. Add items or choose a template
 4. Save (and optionally send immediately)
+
+Sur le téléphone, ce même bouton n'ouvre pas le long formulaire mais un court parcours en étapes : d'abord le client, puis les lignes, puis une étape de vérification avant d'enregistrer et d'envoyer.
 
 ### From a template
 

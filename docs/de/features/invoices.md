@@ -54,14 +54,18 @@ A toggle on the same settings page enables [Peppol e-invoicing](/en/features/pep
 
 ## Overview
 
-The invoices page shows all your invoices with filtering and search capabilities. The status tabs in the top bar let you switch quickly between:
+Die Rechnungsseite zeigt Ihre Rechnungen unter Reitern: **Alle** („was zuerst Ihre Aufmerksamkeit braucht“), **Noch senden** und **Warten auf Zahlung**. Die Reiter tragen aktuelle Anzahlen, die Zahlungsreiter zeigen auch ihren Gesamtbetrag in Euro daneben, und auf dem Warte-Reiter erscheint eine rote Meldung mit der Anzahl überfälliger Rechnungen.
 
-- **All**: every invoice
-- **Drafts**: created but not sent
-- **Outstanding**: sent, open, or overdue invoices
-- **Website sales**: online sales, when your workspace has website sales enabled
+In den Listen sind die Rechnungen danach gruppiert, wo sie stehen, damit die Arbeit, die auf Sie wartet, oben liegt und erledigte Arbeit nach unten rutscht:
 
-You can still use the **Status** filter to narrow the list to any status, including sent, overdue, paid, or cancelled.
+- **Überfällig**, danach **Noch senden**, dann **Warten auf Zahlung**: die Arbeit, die jetzt bei Ihnen liegt
+- **Bezahlt im September** (die zwei neuesten Monate mit Zeilen), danach **Bezahlt in früheren Monaten** für alles davor, eingeklappt bis Sie auf Anzeigen drücken
+- **Bezahlt**: bezahlt ohne zuordenbaren Monat
+- **Storniert oder gutgeschrieben**: das Archiv der Arbeit, die nicht mehr läuft
+
+Jede Gruppenkopfzeile trägt die Anzahl der ganzen Gruppe und, wo zutreffend, die Gruppensumme. Mit Ausblenden klappen Sie eine Gruppe zu: die Zeilen zählen dann nicht mehr für die Seiteneinteilung, die Kopfzeile bleibt an ihrem Platz. Ein Monat mit Datum in der Zukunft (fast immer ein Tippfehler im Datum) klappt nie ein: Er bleibt offen mit eigener Kopfzeile, damit der Fehler sichtbar bleibt.
+
+Neben den Daten trägt jede Zeile eine Spalte **Stand**, die den Zustand in gewöhnlichen Worten nennt: „Entwurf“, „zu senden“, „Fälligkeit 12. Mai ist vergangen“, „fällig in 3 Tagen“, „Kunde meint: bezahlt“. Mit dem **Status**-Filter im Filterpanel schränkt die Liste weiterhin auf einen beliebigen Status ein, einschließlich Entwurf, überfällig, bezahlt und storniert, und Websiteverkäufe behalten ihre eigene Ansicht der Liste.
 
 ## Creating an invoice
 
@@ -82,6 +86,8 @@ For faster creation:
 2. Select a customer
 3. Add items or choose a template
 4. Save (and optionally send immediately)
+
+Auf dem Handy startet derselbe Knopf kein langes Formular, sondern einen kurzen Schrittablauf: zuerst der Kunde, dann die Positionen, dann ein Prüfschritt vor dem Speichern und Senden.
 
 ### From a template
 

@@ -286,6 +286,42 @@ Fonctionnalites :
 - **Lu par** -- lorsqu'un fil est encore marqué comme nouveau pour vous et qu'un collègue l'a déjà ouvert, la ligne cite ce collègue : Lu par Anissa. Sur mobile, vous voyez un œil avec le prénom. Les anciens collègues et le comptable ne sont pas cités.
 - **Suppression douce** -- les fils peuvent etre deplaces vers la Corbeille au lieu d'etre definitivement detruits. Un bouton Supprimer (icône de corbeille) apparait dans la barre d'outils pour les fils non supprimes. Une fois supprime, le bouton se transforme en action Restaurer qui replace le fil en `open`. Le filtre Corbeille apparait dans la barre laterale gauche a côte de Ouvert, Reporte, Ferme et Spam, vous permettant de consulter les fils supprimes avant leur purge definitive.
 - **Recherche en texte integral**: une barre de recherche au-dessus de la liste des fils vous permet de rechercher dans tous les messages de la boite de reception par sujet, corps du texte, extrait et expediteur. La recherche utilise la recherche plein texte de Postgres avec ponderation des champs, de sorte que les correspondances dans le sujet apparaissent avant celles dans le corps du texte. Les resultats sont regroupes par fil, avec l'extrait du message le plus pertinent affiche en apercu. Prend en charge les expressions entre guillemets, `OR` et les exclusions `-`. Un mot seul d'au moins trois caractères est également recherché dans les adresses e-mail et les noms d'expéditeur, si bien que vous retrouvez un fil même en ne tapant qu'un fragment d'adresse, par exemple le domaine. Les recherches avec plusieurs mots ou une exclusion `-` continuent de porter sur des mots entiers. Un delai de 250 ms maintient l'interface reactive, et l'indicateur de chargement donne un retour en temps reel.
+- **Ce que demande l'expéditeur** : sur un fil trié, la ligne de la liste montre une phrase courte sur ce que le dernier message attend de vous (« Demande un devis, veut être terminé en décembre »), écrite par le triage IA à l'arrivée du message. La phrase ne reste en place que tant que l'expéditeur a le dernier mot et que le triage a tourné après ; dès que vous avez répondu, ou qu'un message plus récent non trié est arrivé, la ligne retombe sur les premiers mots du message. Sur Office, la boîte de réception groupe la liste de la même façon ; voir [Groupes de la boîte de réception](#groupes-de-la-boite-de-reception-office) plus bas.
+- **Notes internes** : une note privée sur le fil, pour vous et votre équipe. La note apparaît dans la conversation même, à l'endroit où elle a été écrite, marquée comme interne ; le client ne la voit jamais. Vous pouvez mentionner un collègue avec @ dans une note.
+- **Enregistrer l'expéditeur comme client** : quand une conversation vient d'une adresse qui ne correspond à aucun de vos clients, la bande de l'expéditeur au-dessus du message indique « Pas encore dans vos clients » et propose d'enregistrer l'expéditeur comme client en un clic.
+- **Aide IA pour les réponses (Office)** : voir [Aide IA pour les réponses](#aide-ia-pour-les-reponses) plus bas.
+
+#### Groupes de la boîte de réception (Office)
+
+Dans la boîte de réception Office, la réception groupe le courrier entrant selon ce qu'il attend de vous. Trois onglets se trouvent au-dessus de la liste :
+
+- **Vous attendent** : les conversations où l'expéditeur attend une réponse. Quand un message attend depuis un jour entier, la ligne compte les jours d'attente.
+- **Factures** : les factures fournisseurs que le triage a reconnues. La liste ouvre la conversation directement sur la carte de facture.
+- **Autres** : les bulletins et les messages système, le courrier que vous lisez quand il reste du temps.
+
+Un onglet sans courrier disparaît. Les compteurs des onglets valent pour tout l'espace de travail. Quand tout ce qui vous attendait est répondu, la liste montre à la place des lignes un avis paisible « Tout est fait ». Dans la boîte de réception Desk, limitée à la lecture et aux réponses, la liste reste un seul dossier.
+
+Le découpage en onglets est celui-même de la réception : les étiquettes, Promotions et Avec étoile fonctionnent exactement comme avant. Archiver, reporter et fermer sortent une conversation de son groupe, comme elles la sortaient toujours de la liste ouverte.
+
+#### Les factures dans la boîte de réception
+
+Pour un fil que le triage a identifié comme facture, le lecteur échange les premiers mots contre une carte de facture :
+
+- Dès que la pièce jointe est comptabilisée en dépense (automatiquement après le triage, ou via le bouton de comptabilisation), la carte montre le montant avec TVA, le montant de TVA et l'état de la dépense directement dans vos livres : en attente de vérification, ou déjà comptabilisée. Le bouton ouvre la dépense.
+- Avant que la facture ne soit comptabilisée, la carte ne montre que ce que dit le texte du courriel lui-même, étiqueté « Montant (du courriel) », pour qu'on ne le lise jamais comme un chiffre comptabilisé.
+- La carte signale les factures en retard : « payer avant le 21 octobre » devient « en retard depuis le 21 octobre », en rouge dès que l'échéance est passée.
+
+#### Aide IA pour les réponses
+
+Office peut rédiger pour vous la réponse à un courriel d'un client. Au-dessus de l'éditeur de réponse se trouve un bouton « Rédiger une réponse » (« Draft a reply »). Il ouvre un champ avec :
+
+- **Pastilles de direction** : Confirmer, Refuser poliment, Demander des informations et Remercier. Chaque pastille fait écrire toute la réponse dans cette direction.
+- **Votre propre instruction** : tapez ce que la réponse doit dire (« confirme le rendez-vous de mardi ») et choisissez Générer.
+- **Reformuler mon texte** : quand vous avez déjà écrit quelque chose, l'IA polit votre propre brouillon au lieu d'inventer du nouveau : grammaire, ton et clarté, sans aucun nouveau fait.
+
+Pendant qu'elle écrit, l'éditeur montre « Votre réponse s'écrit… » et reste hors d'atteinte. L'état d'écriture appartient à la conversation ouverte : si vous ouvrez entre-temps une autre conversation, la réponse n'atterrit jamais dans la mauvaise, et quand elle est prête, l'éditeur fait défiler le texte à l'écran au lieu d'y poser un curseur. La réponse rédigée tombe dans l'éditeur comme un texte ordinaire qui devient votre brouillon : vous le modifiez, il s'enregistre automatiquement comme brouillon et ne compte jamais comme envoyé. Un envoi qui a échoué ne berne pas non plus la rédaction : l'IA lit des messages réellement arrivés ou réellement envoyés, jamais des brouillons et jamais des envois manqués.
+
+La réponse rédigée traite ce que demande le dernier message du fil, dans la langue de ce message, écrite à la première personne du singulier (« je »), signée avec votre nom. Elle n'invente ni faits, ni prix, ni dates : là où quelque chose de nécessaire manque, elle laisse un simple espace réservé comme [datum]. Si le fil a été signalé comme suspect, toute la boîte à outils IA disparaît. Après un triage frais, des réponses rapides peuvent aussi se présenter sous l'éditeur : des directions de réponse en un clic (« Je viendrais volontiers jeter un œil ») qui ouvrent le champ de réponse et rédigent le courriel dans cette direction, disponibles tant que le message de l'expéditeur reste le dernier.
 
 #### Brouillons
 

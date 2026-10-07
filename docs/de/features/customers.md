@@ -99,6 +99,9 @@ Wenn Sie mehr als ein eigenes Unternehmen haben, kann auf der Kundenseite eine K
 :::caution
 Beim Archivieren eines Kunden mit einer aktiven wiederkehrenden Rechnung oder laufenden Verträgen erscheint zuerst eine Bestätigungsfrage. Die Warnung sagt, was Archivieren bewirkt: Solange ein Kunde archiviert ist, erstellt MyCompanyDesk keine wiederkehrenden Rechnungen mehr und rechnet keine Verträge mehr ab, und übersprungene Zeiträume werden später nicht nachberechnet. Beenden Sie die wiederkehrende Rechnung oder den Vertrag zuerst, wenn diese Abrechnung weiterlaufen soll.
 :::
+
+Ein Kunde, der ein Interessent ist (Prospekt, noch nie fakturiert), erhält keine Aktion „Rechnung erstellen", auch nicht im Menü „Mehr", und der Server lehnt eine Rechnung für ihn ohnehin ab. Die Kundenseite bietet stattdessen einen Button „In Kunden umwandeln"; sobald der Status aktiv ist, erscheinen alle Rechnungsaktionen.
+
 - **Löschen** — Kunden dauerhaft entfernen
 
 ## Massenaktionen
