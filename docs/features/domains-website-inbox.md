@@ -299,7 +299,7 @@ In de Office-inbox groepeert Postvak IN binnenkomende mail op wat het van je vra
 - **Rekeningen**: leveranciersfacturen die de triage herkend heeft. De lijst opent het gesprek meteen op de rekeningkaart.
 - **Overig**: nieuwsbrieven en systeemmails, de post die je leest als er tijd over is.
 
-Een tab zonder post verdwijnt. De tellingen op de tabs gelden de hele werkruimte. Heb je alles beantwoord wat op je wachtte, dan toont de lijst in plaats van rijen een rustige melding "Alles klaar". In de Desk-inbox, die beperkt is tot lezen en antwoorden, blijft de lijst één map.
+Een tab zonder post verdwijnt. De tellingen op de tabs gelden de hele werkruimte. Heb je alles beantwoord wat op je wachtte, dan toont de lijst in plaats van rijen een rustige melding "Alles gedaan". In de Desk-inbox, die beperkt is tot lezen en antwoorden, blijft de lijst één map.
 
 De tabverdeling is de split van Postvak IN zelf: labels, Promoties en Met ster werken precies zoals voorheen. Archiveren, snoozen en sluiten haalt een gesprek ook weer uit de groep waarin het stond, zoals het altijd al uit de open lijst verdween.
 
@@ -307,19 +307,19 @@ De tabverdeling is de split van Postvak IN zelf: labels, Promoties en Met ster w
 
 Voor een draad die de triage als rekening herkende, toont de lezer in plaats van de openingswoorden een rekeningkaart:
 
-- Zodra de bijlage als uitgave geboekt is (automatisch na de triage, of via de boekknop), laat de kaart bedrag inclusief btw, het btw-bedrag en de stand van de uitgave rechtstreeks uit je boeken zien: wachtend bij Te beoordelen, of al geboekt. De knop opent de uitgave.
+- Zodra de bijlage als uitgave geboekt is (automatisch na de triage, of via de boekknop), laat de kaart bedrag inclusief btw, het btw-bedrag en de stand van de uitgave rechtstreeks uit je boeken zien: staat klaar in "Te controleren", of al geboekt. De knop opent de uitgave.
 - Voordat de rekening geboekt is, laat de kaart alleen zien wat de mailtekst zelf zegt, met als bijschrift "Bedrag (uit de mail)", zodat je er nooit een geboekt bedrag in leest.
-- De kaart markeert te late rekeningen: "betalen voor 21 oktober" wordt "te laat, was 21 oktober", in het rood zodra de vervaldatum voorbij is.
+- De kaart markeert te late rekeningen: "betalen voor 21 oktober" wordt "te laat sinds 21 oktober", in het rood zodra de vervaldatum voorbij is.
 
 #### AI-antwoordhulp
 
-Office schrijft op verzoek het antwoord op een klantmail voor je. Boven het antwoordvak staat een knop "Antwoord laten opstellen" ("Draft a reply"). Die opent een vak met:
+Office schrijft op verzoek het antwoord op een klantmail voor je. Boven het antwoordvak staat een knop "Antwoord opstellen". Die opent een vak met:
 
-- **Richtingschips**: Bevestigen, Netjes afzeggen, Om info vragen en Bedanken. Elke chip laat de AI het hele antwoord in die richting schrijven.
+- **Richtingschips**: Bevestigen, Vriendelijk afwijzen, Om info vragen en Bedanken. Elke chip laat de AI het hele antwoord in die richting schrijven.
 - **Je eigen instructie**: typ wat het antwoord moet zeggen ("bevestig de afspraak voor dinsdag") en kies Genereer.
-- **Mijn tekst herschrijven**: heb je al zelf iets geschreven, dan polijst de AI je eigen concept in plaats van nieuws te verzinnen: grammatica, toon en duidelijkheid, zonder nieuwe feiten.
+- **Herschrijf mijn tekst**: heb je al zelf iets geschreven, dan polijst de AI je eigen concept in plaats van nieuws te verzinnen: grammatica, toon en duidelijkheid, zonder nieuwe feiten.
 
-Terwijl de AI schrijft, laat de editor "Je antwoord wordt geschreven..." zien en blijft hij buiten bereik. De schrijfstatus hoort bij het geopende gesprek: open je intussen een andere draad, dan belandt het antwoord niet in het verkeerde gesprek, en is het klaar, dan schuift de editor de tekst in beeld in plaats van er een cursor in te zetten. Het gegenereerde antwoord valt als gewone tekst in de editor en is dan gewoon jouw concept: je bewerkt het, het wordt automatisch als concept opgeslagen en het telt nooit als verzonden. Ook een verzending die mislukt stuurt de AI niet de kant op: hij leest berichten die echt zijn aangekomen of echt zijn verstuurd, nooit concepten en nooit mislukte mail.
+Terwijl de AI schrijft, laat de editor "Antwoord wordt geschreven…" zien en blijft hij buiten bereik. De schrijfstatus hoort bij het geopende gesprek: open je intussen een andere draad, dan belandt het antwoord niet in het verkeerde gesprek, en is het klaar, dan schuift de editor de tekst in beeld in plaats van er een cursor in te zetten. Het gegenereerde antwoord valt als gewone tekst in de editor en is dan gewoon jouw concept: je bewerkt het, het wordt automatisch als concept opgeslagen en het telt nooit als verzonden. Ook een verzending die mislukt stuurt de AI niet de kant op: hij leest berichten die echt zijn aangekomen of echt zijn verstuurd, nooit concepten en nooit mislukte mail.
 
 Het opgestelde antwoord behandelt wat het laatste bericht in het gesprek vraagt, in de taal van dat bericht, geschreven als één persoon ("ik"), en ondertekend met jouw naam. Feiten, prijzen of data worden niet verzonnen: waar iets nodig is dat er niet staat, laat het antwoord een kaal placeholder-woord als [datum] achter. Staat de draad gemarkeerd als verdacht, dan verdwijnt de hele AI-antwoordhulp uit beeld. Na een verse triage kan er onder het antwoordvak ook snelle antwoorden staan: antwoordrichtingen met één tik ("Ik kom graag kijken"), die het antwoordvak openklappen en de mail in die richting opstellen. Dat geldt zolang het bericht van de afzender het laatste is.
 

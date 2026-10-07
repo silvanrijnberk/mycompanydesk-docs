@@ -54,18 +54,18 @@ A toggle on the same settings page enables [Peppol e-invoicing](/en/features/pep
 
 ## Overview
 
-Die Rechnungsseite zeigt Ihre Rechnungen unter Reitern: **Alle** („was zuerst Ihre Aufmerksamkeit braucht“), **Noch senden** und **Warten auf Zahlung**. Die Reiter tragen aktuelle Anzahlen, die Zahlungsreiter zeigen auch ihren Gesamtbetrag in Euro daneben, und auf dem Warte-Reiter erscheint eine rote Meldung mit der Anzahl überfälliger Rechnungen.
+Die Rechnungsseite zeigt Ihre Rechnungen unter Reitern: **Alle** („zuerst, was Sie tun müssen“), **Noch zu versenden** und **Warten auf Zahlung**. Die Reiter tragen aktuelle Anzahlen, die Zahlungsreiter zeigen auch ihren Gesamtbetrag in Euro daneben, und auf dem Warte-Reiter erscheint eine rote Meldung mit der Anzahl überfälliger Rechnungen.
 
 In den Listen sind die Rechnungen danach gruppiert, wo sie stehen, damit die Arbeit, die auf Sie wartet, oben liegt und erledigte Arbeit nach unten rutscht:
 
-- **Überfällig**, danach **Noch senden**, dann **Warten auf Zahlung**: die Arbeit, die jetzt bei Ihnen liegt
-- **Bezahlt im September** (die zwei neuesten Monate mit Zeilen), danach **Bezahlt in früheren Monaten** für alles davor, eingeklappt bis Sie auf Anzeigen drücken
+- **Überfällig**, danach **Noch zu versenden**, dann **Warten auf Zahlung**: die Arbeit, die jetzt bei Ihnen liegt
+- **Bezahlt im September** (die zwei neuesten Monate mit Zeilen), danach **Früher bezahlt** für alles davor, eingeklappt bis Sie auf Anzeigen drücken
 - **Bezahlt**: bezahlt ohne zuordenbaren Monat
 - **Storniert oder gutgeschrieben**: das Archiv der Arbeit, die nicht mehr läuft
 
 Jede Gruppenkopfzeile trägt die Anzahl der ganzen Gruppe und, wo zutreffend, die Gruppensumme. Mit Ausblenden klappen Sie eine Gruppe zu: die Zeilen zählen dann nicht mehr für die Seiteneinteilung, die Kopfzeile bleibt an ihrem Platz. Ein Monat mit Datum in der Zukunft (fast immer ein Tippfehler im Datum) klappt nie ein: Er bleibt offen mit eigener Kopfzeile, damit der Fehler sichtbar bleibt.
 
-Neben den Daten trägt jede Zeile eine Spalte **Stand**, die den Zustand in gewöhnlichen Worten nennt: „Entwurf“, „zu senden“, „Fälligkeit 12. Mai ist vergangen“, „fällig in 3 Tagen“, „Kunde meint: bezahlt“. Mit dem **Status**-Filter im Filterpanel schränkt die Liste weiterhin auf einen beliebigen Status ein, einschließlich Entwurf, überfällig, bezahlt und storniert, und Websiteverkäufe behalten ihre eigene Ansicht der Liste.
+Neben den Daten trägt jede Zeile eine Spalte **Stand**, die den Zustand in gewöhnlichen Worten nennt: „Entwurf“, „Noch senden“, „Fälligkeit 12. Mai überschritten“, „fällig in 3 Tagen“, „Kunde sagt: bezahlt“. Mit dem **Status**-Filter im Filterpanel schränkt die Liste weiterhin auf einen beliebigen Status ein, einschließlich Entwurf, überfällig, bezahlt und storniert, und Websiteverkäufe behalten ihre eigene Ansicht der Liste.
 
 ## Creating an invoice
 

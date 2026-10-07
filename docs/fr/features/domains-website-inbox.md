@@ -295,7 +295,7 @@ Fonctionnalites :
 
 Dans la boîte de réception Office, la réception groupe le courrier entrant selon ce qu'il attend de vous. Trois onglets se trouvent au-dessus de la liste :
 
-- **Vous attendent** : les conversations où l'expéditeur attend une réponse. Quand un message attend depuis un jour entier, la ligne compte les jours d'attente.
+- **En attente de vous** : les conversations où l'expéditeur attend une réponse. Quand un message attend depuis un jour entier, la ligne compte les jours d'attente.
 - **Factures** : les factures fournisseurs que le triage a reconnues. La liste ouvre la conversation directement sur la carte de facture.
 - **Autres** : les bulletins et les messages système, le courrier que vous lisez quand il reste du temps.
 
@@ -307,19 +307,19 @@ Le découpage en onglets est celui-même de la réception : les étiquettes, Pro
 
 Pour un fil que le triage a identifié comme facture, le lecteur échange les premiers mots contre une carte de facture :
 
-- Dès que la pièce jointe est comptabilisée en dépense (automatiquement après le triage, ou via le bouton de comptabilisation), la carte montre le montant avec TVA, le montant de TVA et l'état de la dépense directement dans vos livres : en attente de vérification, ou déjà comptabilisée. Le bouton ouvre la dépense.
-- Avant que la facture ne soit comptabilisée, la carte ne montre que ce que dit le texte du courriel lui-même, étiqueté « Montant (du courriel) », pour qu'on ne le lise jamais comme un chiffre comptabilisé.
-- La carte signale les factures en retard : « payer avant le 21 octobre » devient « en retard depuis le 21 octobre », en rouge dès que l'échéance est passée.
+- Dès que la pièce jointe est comptabilisée en dépense (automatiquement après le triage, ou via le bouton de comptabilisation), la carte montre le montant avec TVA, le montant de TVA et l'état de la dépense directement dans vos livres : en attente dans « À vérifier », ou déjà comptabilisée. Le bouton ouvre la dépense.
+- Avant que la facture ne soit comptabilisée, la carte ne montre que ce que dit le texte du courriel lui-même, étiqueté « Montant (selon l’e-mail) », pour qu'on ne le lise jamais comme un chiffre comptabilisé.
+- La carte signale les factures en retard : « Avant le 21 octobre » devient « en retard depuis le 21 octobre », en rouge dès que l'échéance est passée.
 
 #### Aide IA pour les réponses
 
-Office peut rédiger pour vous la réponse à un courriel d'un client. Au-dessus de l'éditeur de réponse se trouve un bouton « Rédiger une réponse » (« Draft a reply »). Il ouvre un champ avec :
+Office peut rédiger pour vous la réponse à un courriel d'un client. Au-dessus de l'éditeur de réponse se trouve un bouton « Rédiger une réponse ». Il ouvre un champ avec :
 
-- **Pastilles de direction** : Confirmer, Refuser poliment, Demander des informations et Remercier. Chaque pastille fait écrire toute la réponse dans cette direction.
-- **Votre propre instruction** : tapez ce que la réponse doit dire (« confirme le rendez-vous de mardi ») et choisissez Générer.
-- **Reformuler mon texte** : quand vous avez déjà écrit quelque chose, l'IA polit votre propre brouillon au lieu d'inventer du nouveau : grammaire, ton et clarté, sans aucun nouveau fait.
+- **Pastilles de direction** : Confirmer, Refuser poliment, Demander des infos et Remercier. Chaque pastille fait écrire toute la réponse dans cette direction.
+- **Votre propre instruction** : tapez ce que la réponse doit dire (« confirmez le rendez-vous de mardi ») et choisissez Générer.
+- **Réécrire mon texte** : quand vous avez déjà écrit quelque chose, l'IA polit votre propre brouillon au lieu d'inventer du nouveau : grammaire, ton et clarté, sans aucun nouveau fait.
 
-Pendant qu'elle écrit, l'éditeur montre « Votre réponse s'écrit… » et reste hors d'atteinte. L'état d'écriture appartient à la conversation ouverte : si vous ouvrez entre-temps une autre conversation, la réponse n'atterrit jamais dans la mauvaise, et quand elle est prête, l'éditeur fait défiler le texte à l'écran au lieu d'y poser un curseur. La réponse rédigée tombe dans l'éditeur comme un texte ordinaire qui devient votre brouillon : vous le modifiez, il s'enregistre automatiquement comme brouillon et ne compte jamais comme envoyé. Un envoi qui a échoué ne berne pas non plus la rédaction : l'IA lit des messages réellement arrivés ou réellement envoyés, jamais des brouillons et jamais des envois manqués.
+Pendant qu'elle écrit, l'éditeur montre « Rédaction de la réponse… » et reste hors d'atteinte. L'état d'écriture appartient à la conversation ouverte : si vous ouvrez entre-temps une autre conversation, la réponse n'atterrit jamais dans la mauvaise, et quand elle est prête, l'éditeur fait défiler le texte à l'écran au lieu d'y poser un curseur. La réponse rédigée tombe dans l'éditeur comme un texte ordinaire qui devient votre brouillon : vous le modifiez, il s'enregistre automatiquement comme brouillon et ne compte jamais comme envoyé. Un envoi qui a échoué ne berne pas non plus la rédaction : l'IA lit des messages réellement arrivés ou réellement envoyés, jamais des brouillons et jamais des envois manqués.
 
 La réponse rédigée traite ce que demande le dernier message du fil, dans la langue de ce message, écrite à la première personne du singulier (« je »), signée avec votre nom. Elle n'invente ni faits, ni prix, ni dates : là où quelque chose de nécessaire manque, elle laisse un simple espace réservé comme [datum]. Si le fil a été signalé comme suspect, toute la boîte à outils IA disparaît. Après un triage frais, des réponses rapides peuvent aussi se présenter sous l'éditeur : des directions de réponse en un clic (« Je viendrais volontiers jeter un œil ») qui ouvrent le champ de réponse et rédigent le courriel dans cette direction, disponibles tant que le message de l'expéditeur reste le dernier.
 

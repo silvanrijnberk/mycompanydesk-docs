@@ -61,9 +61,9 @@ Inside the lists, invoices are grouped by where they stand, so the work you must
 - **Paid**: paid without an attributable month
 - **Cancelled or credited**: the archive of work that is no longer live
 
-Every group header carries the count of the whole group and, where it applies, the group total. Collapse a group with Hide and its rows stop counting towards the pages while the header stays in place. A month dated in the future (almost always a typo in the date) never collapses: it stays open with its own header so the mistake stays visible.
+Every group header carries the count of the whole group and, where it applies, the group total. Collapse a group with "Hide" and its rows stop counting towards the pages while the header stays in place. A month dated in the future (almost always a typo in the date) never collapses: it stays open with its own header so the mistake stays visible.
 
-Next to the dates, each row carries a **Status** column that says the state in plain words: "draft", "to send", "due date 12 May passed", "due in 3 days", "customer says: paid". The **Status** filter in the filter panel still narrows the list to any single status, including drafts, late, paid and cancelled, and website sales keep their own view of the list.
+Next to the dates, each row carries a **Status** column that says the state in plain words: "Draft", "To send", "due date 12 May passed", "due in 3 days", "customer says: paid". The **Status** filter in the filter panel still narrows the list to any single status, including drafts, late, paid and cancelled, and website sales keep their own view of the list.
 
 ## Creating an invoice
 
