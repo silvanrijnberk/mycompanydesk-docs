@@ -1,7 +1,7 @@
 ---
 title: "Vervaldatum van een factuur"
 description: "Zo pas je de vervaldatum van één factuur aan: open de factuur in bewerkmodus, werk in de kaart met factuurdetails het veld Vervaldatum bij."
-last_verified: 2026-07-02
+last_verified: 2026-10-09
 chatbot:
   triggers: ["set due date", "change due date", "payment terms", "payment deadline", "when invoice due", "net 30", "net 14", "vervaldatum", "betaaltermijn", "zahlungsfrist", "echeance", "date d echeance", "conditions de paiement", "modifier conditions de paiement", "changer conditions de paiement", "comment modifier les conditions de paiement", "comment changer les conditions de paiement"]
   actions:
@@ -21,4 +21,4 @@ Tip: Automatische herinneringen volgen de vervaldatum, dus met een juiste termij
 
 Als een klant geen eigen betaaltermijn heeft, geldt eerst de werkruimtestandaard via **Instellingen → Facturen en offertes**, pas daarna de platformstandaard (14 dagen). Die volgorde werd eerder overgeslagen bij het kiezen van een klant, waardoor de vervaldatum te vroeg kon uitvallen.
 
-Facturen die uit contracten of terugkerende facturen worden gegenereerd, krijgen ook een vervaldatum. Ze gebruiken de eigen betaaltermijn van het contract of de terugkerende factuur als die is ingesteld; anders vallen ze net als handmatige facturen terug op de platformstandaard.
+Facturen die uit contracten of terugkerende facturen worden gegenereerd, krijgen ook een vervaldatum. Bij terugkerende facturen wint de eigen betaaltermijn van de reeks als die is ingesteld; anders vallen ze terug op de platformstandaard. Bij contracten wint eerst een ingevulde betaaltermijn op het contract (meer dan 0 dagen); zonder die termijn volgt de contractfactuur dezelfde volgorde als een handmatige factuur: eerst de betaaltermijn van de klant, dan de standaard van de werkruimte, dan die van het platform. De mailtekst over de betalingstermijn en de termijn op het contractstuk zelf volgen dezelfde bronnen.

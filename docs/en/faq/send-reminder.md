@@ -1,7 +1,7 @@
 ---
 title: Send reminder
 description: "To follow up on unpaid invoices: open the overdue invoice, use the Send Reminder action, the system generates a professional reminder email."
-last_verified: 2026-08-16
+last_verified: 2026-10-09
 chatbot:
   triggers: ["send reminder", "payment reminder", "remind customer", "follow up", "chase payment", "herinnering sturen", "betaalherinnering", "aanmaning", "zahlungserinnerung", "relance", "rappel paiement"]
   actions:
@@ -20,6 +20,7 @@ If your workspace has online payments enabled, the reminder email gives the cust
 
 You cannot send a reminder when:
 - the invoice is still a draft
+- the invoice was never sent to your customer: a payment reminder is never the first mail a customer gets about an invoice, so MyCompanyDesk refuses it; send the invoice first. Once something has come in, or a send to the customer is recorded, reminders can go out again.
 - the invoice has been canceled
 - the invoice is already marked as paid
 - the invoice is waiting for payment verification because the customer reported it as paid through the portal; reminders wait until you confirm the payment or set the report aside

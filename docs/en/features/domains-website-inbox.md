@@ -1,7 +1,7 @@
 ---
 title: Domains, Website, and Inbox
 description: "Custom domains, the hosted business website and the shared inbox ship as one pre-launch bundle behind the custom_domains and public_business_page flags."
-last_verified: 2026-09-30
+last_verified: 2026-10-09
 ---
 
 # Domains, Website, and Inbox
@@ -270,7 +270,7 @@ Capabilities:
 - **Reply all**: reply to all participants on the thread with one click. The action appears next to reply in the thread header and includes every recipient from the original message.
 - **Forward**: forward the entire thread to another recipient. Opens a compose drawer with the original message body and attachments preserved for editing before sending. The forwarded message header shows the original sender, date and subject.
 - **CC and BCC**: CC and BCC fields are available on both compose and reply through an "Add Cc/Bcc" toggle. Addresses accept comma-separated lists or paste from clipboard. The inputs stay hidden until needed, matching the standard inbox pattern where most messages do not need them.
-- **Drafts**: save partially written messages and come back to them later. Drafts are stored server-side and persist across browser sessions. Each draft carries a subject, recipient list, body and any attachments added. Drafts that are missing a subject show "(no subject)", and drafts without a recipient show "(no recipient)". A reply draft is indicated with a "Reply" chip in the thread list, so you can tell at a glance which thread you were mid-response on.
+- **Drafts**: save partially written messages and come back to them later. Drafts are stored server-side and persist across browser sessions. Each draft carries a subject, recipient list, body and any attachments added. Drafts that are missing a subject show "(no subject)", and drafts without a recipient show "(no recipient)". In the thread list, a conversation that holds a reply draft of yours carries a red "Draft" label next to the name, so you can tell at a glance which thread you were mid-response on; opening it loads the draft straight into the reply box.
 - **Compose**: drawer form with a unified identity picker that sets both mailbox and sender address in one control, customer picker (or freeform `To`), subject, body, CC/BCC fields and attachments. Bounced-recipient warning is shown before send.
 - **Default sender**: the Send-from field of a new message opens on your own default mailbox, so in a workspace with several logins everyone is offered their own address instead of a colleague's. Without a saved choice it falls back to the first personal mailbox of the workspace, or the first mailbox. When the field sits on a mailbox that is not your default yet, a "Make this my default address" link under the field saves that mailbox as yours, and the hint then reads "This is your default address for new messages." The default applies to new messages only: a reply always goes from the mailbox the conversation arrived on, and invoices and quotes keep their own workspace sender address.
 - **Send-from aliases** — `info@`, `support@`, `sales@` are bidirectional aliases on the same mailbox. `noreply@` is send-only — selectable as From, but inbound mail to it is dropped on ingest.
@@ -295,7 +295,7 @@ Capabilities:
 
 On Office, the inbox groups incoming mail by what it asks of you. Three tabs sit above the list:
 
-- **Waiting on you**: conversations where the sender is waiting for an answer. When a message has been sitting for a full day, the row counts the days it has been waiting.
+- **Waiting on you**: conversations where the sender is waiting for an answer. When a message has been sitting for a full day, the row counts the days it has been waiting. Mail that does not ask for an answer gets no waiting count, however long it has been sitting.
 - **Bills**: supplier invoices the triage recognised. The list opens the thread straight onto the bill card.
 - **Other**: newsletters and system messages, the mail you read when there is time left.
 
@@ -319,13 +319,15 @@ Office can draft the reply for you. Above the reply editor sits a "Draft a reply
 - **Your own instruction**: type what the reply should say ("confirm the appointment for Tuesday") and press Generate.
 - **Rewrite my text**: when you have already written something, the AI polishes your own draft instead and fixes grammar, tone and clarity without adding facts.
 
-While it writes, the editor shows "Writing your reply…" and stays out of reach. The writing state belongs to the open conversation: if you switch to another thread in the meantime, the answer is not written into the wrong conversation, and when it is done the editor scrolls the text into view instead of throwing a cursor in it. A generated reply lands in the editor as text you can still edit, saves as a draft automatically, and is never shown as sent. A failed send never misleads the drafting either: the AI reads messages that actually arrived or really went out, never drafts and never failed mail.
+While it writes, the editor shows "Writing your reply…" and stays out of reach. The writing state belongs to the open conversation: if you switch to another thread in the meantime, the answer is not written into the wrong conversation, and when it is done the editor scrolls the text into view instead of throwing a cursor in it. A generated reply lands in the editor as text you can still edit, saves as a draft automatically, and is never shown as sent. A failed send never misleads the drafting either: the AI reads messages that actually arrived or really went out, never drafts and never failed mail. When you were the last one to write on the thread (you sent a quote or answered a question) and nothing has come back since, "Draft a reply" writes a short follow-up instead: it refers to what you sent and invites a reaction, without ever pretending the customer replied.
 
 The drafted reply states what the last message in the thread asked for, in the language that message was written in, addressed as one person ("I"), and signed with your name. It does not invent facts, prices or dates: where something needed is unknown, it leaves a plain placeholder like [datum]. If the thread was flagged as suspicious, the whole AI reply toolbox stays hidden. On a fresh triage, one-tap quick replies can appear above the reply editor ("I would love to come and have a look"): they open the reply box and generate the mail in that direction, available while the sender's message is still the last one.
 
 #### Drafts
 
-The Drafts tab sits alongside the main thread list. Drafts are saved server-side, so they survive browser restarts and follow you across devices. When you start a new message or reply and close the compose drawer without sending, the content is automatically saved as a draft. You can also explicitly save a draft with the "Save draft" button. A draft chip shows "Reply" if the draft was started from a thread, or "New" if it is a fresh compose. Editing a draft opens the compose drawer pre-filled with the saved content. Deleting a draft requires a confirmation step.
+The Drafts tab sits alongside the main thread list. Drafts are saved server-side, so they survive browser restarts and follow you across devices. When you start a new message or reply and close the compose drawer without sending, the content is automatically saved as a draft. You can also explicitly save a draft with the "Save draft" button. A draft chip shows "Reply" if the draft was started from a thread, or "New" if it is a fresh compose. Editing a draft opens the compose drawer pre-filled with the saved content. Deleting a draft in the Drafts tab requires a confirmation step.
+
+Opening a thread that holds a reply draft puts that draft in the reply box, where the header shows "Draft" with a trash action next to it. Discarding deletes the draft, empties the reply box back to its empty template and shows a toast with "Undo", so one tap on the trash never costs you a written answer: undo puts your text back into the box while the thread is still open (attachments included), or re-saves it as a draft otherwise. The draft only leaves the server once the toast's undo option is gone. If the delete fails, your text returns to the box with a clear error message; a draft that was already sent or thrown away elsewhere counts as discarded.
 
 The inbox uses your custom domain only after `quickEnableInbox` has run successfully and the apex MX records point at Cloudflare. Until then, the workspace can still send mail through the default delivery path described in [Email Integration](/en/settings/email), but it can't receive mail.
 

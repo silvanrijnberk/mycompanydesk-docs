@@ -1,7 +1,7 @@
 ---
 title: "Abonnement & betalingen"
 description: "Wat je ons betaalt, je facturen van ons en je betaalkaart, onder Instellingen, Je abonnement op /settings/abonnement."
-last_verified: 2026-10-03
+last_verified: 2026-10-09
 ---
 
 # Abonnement & betalingen
@@ -110,7 +110,7 @@ Als een werkruimte naar Desk gaat, blijven de openbare website en sitebouwer onl
 
 Een betaald abonnement stopt nooit meer in stilte. Zodra het stopt, toont de app een melding en verstuurt ze een e-mail (met als kop "Office is gestopt"), in twee varianten: één bij een mislukte betaling en één bij een opzegging die je zelf vroeg. Na een mislukte betaling kun je meteen weer abonneren; de checkout stuurt je niet langer door naar het Stripe-portaal voor een abonnement dat er niet meer is.
 
-Je kunt ook zelf naar Desk teruggaan terwijl Office nog loopt: op de abonnementspagina staat op de Desk-kaart een link Overstappen naar Desk. Die opent de opzegpagina (/settings/opzeggen), die eerst bijzet wat blijft werken en wat stopt, op welke datum, voordat je de opzegging in het Stripe-portaal bevestigt.
+Je kunt ook zelf naar Desk teruggaan terwijl Office nog loopt: op de abonnementspagina staat op de Desk-kaart een link Overstappen naar Desk. Die opent de opzegpagina (/settings/opzeggen), die eerst bijzet wat blijft werken en wat stopt, op welke datum, voordat je de opzegging in het Stripe-portaal bevestigt. Na de bevestiging zegt dezelfde pagina dat het abonnement is opgezegd en noemt de datum waarop Office stopt, met een knop Opzegging intrekken zolang de betaalde periode doorloopt; de knop opent het Stripe-portaal, waar je de aankomende opzegging kunt terugdraaien. In de iOS-app ontbreekt de knop en blijft het Stripe-portaal zelf de weg om terug te draaien.
 
 Je eigen domein blijft na het aflopen van het abonnement zichtbaar op de Domeinen-pagina: naam, status en verhuiscode blijven leesbaar, met een upgrade-aanwijzing ernaast, want domeininstellingen veranderen kan pas weer met Office.
 

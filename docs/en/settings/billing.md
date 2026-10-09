@@ -1,7 +1,7 @@
 ---
 title: "Plan & payments"
 description: "What you pay us, your invoices from us and your payment card, on Settings, Je abonnement at /settings/abonnement."
-last_verified: 2026-10-03
+last_verified: 2026-10-09
 ---
 
 # Plan & payments
@@ -110,7 +110,7 @@ When a workspace moves to Desk, its public website and site-builder pages remain
 
 A paid subscription never stops silently. When it ends, the app shows a notification and sends an email (its wording is "Office has stopped"), in two variants: one for a failed payment, one for a cancellation you asked for yourself. You can subscribe again right away after a failed payment; checkout no longer routes you to the Stripe portal for a subscription that no longer exists.
 
-You can also move to Desk yourself while Office is running: on the billing page, the Desk card carries a Switch to Desk link. It opens the cancel page (/settings/opzeggen), which lists what keeps working and what stops, on which date, before it sends you to the Stripe portal to confirm.
+You can also move to Desk yourself while Office is running: on the billing page, the Desk card carries a Switch to Desk link. It opens the cancel page (/settings/opzeggen), which lists what keeps working and what stops, on which date, before it sends you to the Stripe portal to confirm. Once the cancellation is confirmed, the same page says the subscription is canceled and names the date Office stops, and offers an Undo cancellation button as long as the paid period has not ended; it opens the Stripe portal, where you can undo the pending cancellation. On iOS the button is hidden and the Stripe portal itself remains the way to undo.
 
 Your own domain stays visible on the Domains page after the plan ends: name, status and transfer code remain readable, with an upgrade prompt next to them, because changing domain settings needs Office again.
 

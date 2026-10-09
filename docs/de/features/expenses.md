@@ -1,7 +1,7 @@
 ---
 title: Ausgaben
 description: "Erfassen Sie Ausgaben, scannen Sie Belege, verwalten Sie Kategorien mit eigenen Steuersätzen und lassen Sie Abschreibungen automatisch laufen."
-last_verified: 2026-10-03
+last_verified: 2026-10-09
 ---
 
 # Ausgaben
@@ -119,6 +119,8 @@ In Sonderfällen legen Sie die USt.-Behandlung für die Ausgabe fest:
 - **Ausländische USt. in Rechnung gestellt**: ausländische USt., die eventuell über das EU-Erstattungsverfahren zurückzuholen ist.
 
 Die Behandlung wird normalerweise aus der Kategorie übernommen. Sie können sie pro Ausgabe überschreiben.
+
+Eine Kategorie kann auch begrenzen, was die Erklärung zurückholt. Eine Kategorie mit einem Absetzungsanteil unter 100 % (etwa eine Kategorie für Bewirtung oder Geschenke) lässt einen Teil der USt., oder alles, außerhalb der Erklärung, auch wenn der Schalter „USt. absetzbar“ an ist. Kommt auf dieser Ausgabe sonst USt. zurück, warnt das Formular unter dem Schalter und nennt die Kategorie und den Anteil, den Sie zurückbekommen; bei ausgeschaltetem Schalter, ausländischer oder befreiter USt., keiner USt. auf dem Beleg oder der Kleinunternehmerregelung (KOR) gibt es nichts zurückzuholen und die Warnung bleibt aus. Die Buchungskarte auf der Detailseite zeigt dieselbe Warnung als Kennzeichen.
 
 ### USt.-Betrag manuell
 

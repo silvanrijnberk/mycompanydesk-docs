@@ -1,7 +1,7 @@
 ---
 title: "Fälligkeitsdatum einer Rechnung"
 description: "So ändern Sie die Frist einer einzelnen Rechnung: öffnen Sie die Rechnung im Bearbeitungsmodus."
-last_verified: 2026-07-02
+last_verified: 2026-10-09
 chatbot:
   triggers: ["set due date", "change due date", "payment terms", "payment deadline", "when invoice due", "net 30", "net 14", "vervaldatum", "betaaltermijn", "zahlungsfrist", "echeance", "date d echeance", "conditions de paiement", "modifier conditions de paiement", "changer conditions de paiement", "comment modifier les conditions de paiement", "comment changer les conditions de paiement"]
   actions:
@@ -21,4 +21,4 @@ Tipp: Automatische Erinnerungen richten sich nach dem Fälligkeitsdatum; mit der
 
 Hat ein Kunde keine eigenen Zahlungsfristen, gilt zuerst der Arbeitsbereich-Standard unter **Einstellungen → Rechnungen und Angebote**, erst danach der Plattform-Standard (14 Tage). Diese Reihenfolge wurde früher beim Auswählen eines Kunden übersprungen, sodass das Fälligkeitsdatum früher ausfallen konnte als beabsichtigt.
 
-Aus Verträgen und wiederkehrenden Rechnungen generierte Rechnungen erhalten ebenfalls ein Fälligkeitsdatum. Sie verwenden die eigene Zahlungsfrist des Vertrags oder der wiederkehrenden Rechnung, sofern gesetzt; andernfalls greift wie bei manuell erstellten Rechnungen der Plattform-Standard.
+Aus Verträgen und wiederkehrenden Rechnungen generierte Rechnungen erhalten ebenfalls ein Fälligkeitsdatum. Bei wiederkehrenden Rechnungen gewinnt die eigene Zahlungsfrist der Serie, sofern gesetzt; andernfalls greift der Plattform-Standard. Bei Verträgen gewinnt zuerst eine ausgefüllte Vertragsfrist (mehr als 0 Tage); fehlt sie, folgt die Vertragsrechnung derselben Reihenfolge wie eine manuell erstellte Rechnung: zuerst die Zahlungsfrist des Kunden, dann der Arbeitsbereich-Standard, dann der Plattform-Standard. Der Mailtext über die Zahlungsfrist und die Frist auf dem Vertragsschreiben selbst folgen denselben Quellen.
