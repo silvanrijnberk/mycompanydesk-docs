@@ -1,7 +1,7 @@
 ---
 title: "Erinnerung senden"
 description: "Erinnerung zu einer unbezahlten Rechnung senden: Öffnen Sie die Rechnung und nutzen Sie Erinnerung senden, sie nennt den offenen Restbetrag."
-last_verified: 2026-08-16
+last_verified: 2026-10-09
 chatbot:
   triggers: ["send reminder", "payment reminder", "remind customer", "follow up", "chase payment", "herinnering sturen", "betaalherinnering", "aanmaning", "zahlungserinnerung", "relance", "rappel paiement"]
   actions:
@@ -20,6 +20,7 @@ Wenn Ihr Arbeitsbereich Online-Zahlungen aktiviert hat, bietet die Erinnerungsma
 
 Eine Erinnerung kann nicht gesendet werden, wenn:
 - die Rechnung noch ein Entwurf ist
+- die Rechnung noch nie an Ihren Kunden gesendet wurde: eine Zahlungserinnerung ist nie die erste Mail, die Ihr Kunde über eine Rechnung bekommt. MyCompanyDesk lehnt sie deshalb ab; die Rechnung geht zuerst raus. Ist bereits etwas eingegangen oder ist ein Versand an den Kunden erfasst, laufen Erinnerungen wieder.
 - die Rechnung storniert wurde
 - die Rechnung bereits als bezahlt markiert ist
 - der Kunde im Portal angegeben hat, dass er bereits bezahlt hat, und der Status Überprüfung erforderlich ist; Erinnerungen warten, bis Sie die Zahlung bestätigen oder die Meldung zurücksetzen

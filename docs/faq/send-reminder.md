@@ -1,7 +1,7 @@
 ---
 title: "Herinnering versturen"
 description: "Om een herinnering te versturen voor een onbetaalde factuur: open de factuur, gebruik de actie Herinnering versturen."
-last_verified: 2026-08-16
+last_verified: 2026-10-09
 chatbot:
   triggers: ["send reminder", "payment reminder", "remind customer", "follow up", "chase payment", "herinnering sturen", "betaalherinnering", "aanmaning", "zahlungserinnerung", "relance", "rappel paiement"]
   actions:
@@ -20,6 +20,7 @@ Als je werkruimte online betalingen heeft ingeschakeld, biedt de herinneringsmai
 
 Je kunt geen herinnering versturen als:
 - de factuur nog een concept is
+- de factuur nog nooit naar je klant is verstuurd: een betalingsherinnering is nooit de eerste mail die je klant over een factuur krijgt, dus MyCompanyDesk weigert hem; verstuur eerst de factuur zelf. Is er al iets binnengekomen, of staat er een verzending naar de klant geregistreerd, dan kunnen herinneringen wel weer lopen.
 - de factuur is geannuleerd
 - de factuur al als betaald staat aangemerkt
 - de klant via het portaal heeft aangegeven dat hij al betaald heeft en de factuur op 'Klant zegt: betaald' staat; herinneringen wachten tot je de betaling bevestigt of de melding terugzet

@@ -1,7 +1,7 @@
 ---
 title: "Partial payment"
 description: "To record a partial payment on an invoice: open the invoice from the list, click Record Payment or the payment action."
-last_verified: 2026-05-09
+last_verified: 2026-10-09
 chatbot:
   triggers: ["partial payment", "record partial payment", "half payment", "part payment", "deposit received", "gedeeltelijke betaling", "deelbetaling", "aanbetaling ontvangen", "teilzahlung", "paiement partiel", "acompte recu"]
   actions:
@@ -15,5 +15,7 @@ To record a partial payment on an invoice:
 3. Enter the amount received (less than the total)
 4. Save - the invoice status changes to Partially Paid
 5. Repeat when additional payments arrive
+
+An amount above what is still outstanding is refused: the form warns with "More than the outstanding amount ({amount})" before you save, instead of showing a new balance until the click. The payment date cannot lie in the future, so the date field only offers Today as a shortcut.
 
 Tip: The remaining balance is tracked automatically and appears on the invoice detail page. Partially paid invoices also get their own reminder suggestion that asks for the remaining balance. In the customer portal, partially paid invoices show the amount already paid and the remaining balance before the customer completes payment.

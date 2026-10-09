@@ -1,7 +1,7 @@
 ---
 title: Dépenses
 description: "Suivez vos dépenses, scannez vos reçus, gérez des catégories avec leur propre TVA et laissez les amortissements se dérouler automatiquement."
-last_verified: 2026-10-03
+last_verified: 2026-10-09
 ---
 
 # Dépenses
@@ -119,6 +119,8 @@ Dans des cas particuliers, vous définissez le traitement de la TVA de la dépen
 - **TVA étrangère facturée**: TVA étrangère éventuellement récupérable via la procédure de remboursement de l'UE.
 
 Le traitement est normalement hérité de la catégorie. Vous pouvez le remplacer par dépense.
+
+Une catégorie peut aussi limiter ce que la déclaration récupère. Une catégorie avec un pourcentage de déduction inférieur à 100 % (pensez à une catégorie repas ou cadeaux) laisse une part de la TVA, ou la totalité, hors déclaration, même quand l'interrupteur « TVA déductible » est activé. Quand la dépense récupérerait sinon de la TVA, le formulaire prévient sous l'interrupteur et nomme la catégorie et la part récupérée ; interrupteur coupé, TVA étrangère ou exonérée, TVA absente du document ou KOR, il n'y a rien à récupérer et l'avertissement n'apparaît pas. La carte Comptabilisation de la page de détail montre le même avertissement sous forme d'étiquette.
 
 ### Montant de TVA manuel
 

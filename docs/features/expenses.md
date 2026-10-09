@@ -1,7 +1,7 @@
 ---
 title: Uitgaven
 description: "Houd je zakelijke uitgaven bij, scan bonnen, beheer categorieën met hun eigen btw-standaard en laat afschrijvingen voor investeringen vanzelf lopen."
-last_verified: 2026-10-03
+last_verified: 2026-10-09
 ---
 
 # Uitgaven
@@ -116,6 +116,8 @@ In speciale gevallen stel je de btw-behandeling van de uitgave in:
 - **Buitenlandse btw in rekening gebracht**: buitenlandse btw die mogelijk via de EU-teruggaafprocedure terug te vragen is.
 
 De behandeling wordt meestal overgenomen uit de categorie. Je kunt hem per uitgave overschrijven.
+
+Een categorie kan ook begrenzen wat de aangifte terugvraagt. Een categorie met een aftrekpercentage onder de 100% (denk aan een categorie voor etentjes of relatiegeschenken) laat een deel van de btw, of alles, buiten de aangifte, ook als de schakelaar "Btw aftrekbaar" aan staat. Komt er op deze uitgave anderszins btw terug, dan waarschuwt het formulier onder de schakelaar en noemt de categorie en het deel dat je terugkrijgt; met de schakelaar uit, buitenlandse of vrijgestelde btw, geen btw op het document of de KOR valt er niets terug te vragen en ontbreekt de waarschuwing. De Boeking-kaart op de detailpagina toont dezelfde waarschuwing als vlag.
 
 ### Handmatig btw-bedrag
 

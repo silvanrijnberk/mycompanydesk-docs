@@ -1,7 +1,7 @@
 ---
 title: Expenses
 description: "Track business expenses, scan receipts, manage categories with their own VAT defaults, and let depreciation schedules run for investments."
-last_verified: 2026-10-03
+last_verified: 2026-10-09
 ---
 
 # Expenses
@@ -95,6 +95,8 @@ Every expense has a `vat_treatment` field that decides how it lands on your VAT 
 | `foreign_vat_charged` | A non-EU supplier charged you VAT (typically reclaimable through the EU refund procedure). |
 
 The treatment is normally inherited from the category default. Override it on a per-expense basis when reality differs - for example, a Software-category expense from a US vendor that did charge VAT instead of applying the EU reverse-charge default.
+
+Categories can also cap what the return reclaims. A category that carries a deduction percentage below 100% (think of a meal or gift category) leaves part of the VAT, or all of it, outside the return, even when the deductible switch is on. Where the expense would otherwise claim VAT back, the form warns under the switch and names the category and the share you get back; with the deductible switch off, foreign or exempt VAT, no VAT charged, or the KOR there is nothing to claim and no warning appears. The booking card on the expense detail page carries the same warning as a flag.
 
 ### Manual VAT amount
 
