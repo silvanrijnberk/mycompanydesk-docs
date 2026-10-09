@@ -144,6 +144,8 @@ Cancellation takes effect at the end of the current paid period; access remains 
 3. Stripe redirects back with `?checkout=success` or `?checkout=canceled`
 4. The page shows a success or cancel banner; gated UI unlocks immediately
 
+If processing does not finish shortly after a successful payment, the banner says your payment went through but your plan is not ready yet, and shows a button to check again.
+
 When upgrading to Office, the success banner uses the Office violet accent and a crown icon ("Welcome to Office") instead of the standard green confirmation. The same Office styling appears throughout the app: a violet ring around the user avatar, a crown icon in the plan badge ribbon, and "Office feature" pills on gated settings pages like API Keys and Inbox. Additionally, the contextual guide assistant gets a premium violet skin: the "AI" pill becomes an "Office" pill, the panel border and send button adopt the Office accent, and the status line changes to "Your Office assistant is ready."
 
 ## Contextual upgrade banner

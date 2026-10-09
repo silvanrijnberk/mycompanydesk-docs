@@ -144,6 +144,8 @@ Opzeggen gaat in aan het einde van de huidige betaalde periode; je behoudt toega
 3. Stripe stuurt je terug met `?checkout=success` of `?checkout=canceled`
 4. De pagina toont een succes- of annuleringsbanner; vergrendelde UI wordt meteen ontgrendeld
 
+Blijft de verwerking na een geslaagde betaling uit, dan meldt de banner dat je betaling is gelukt maar je abonnement er nog niet staat, met een knop om het opnieuw te proberen.
+
 Bij een upgrade naar Office krijgt de succesbanner het violette Office-accent en een kroonicoontje ("Welkom bij Office") in plaats van de standaard groene bevestiging. Dezelfde Office-styling zie je op meer plekken in de app: een violette ring om je avatar, een kroonicoontje in de planbadge en "Office-functie"-pills op instellingen die Office vragen, zoals API-sleutels en Inbox. Daarnaast krijgt de contextuele gids-assistent een premium violet uiterlijk: de "AI"-pill wordt een "Office"-pill, de paneelrand en verzendknop krijgen het Office-accent en de statusregel verandert naar "Jouw Office-assistent staat klaar."
 
 ## Contextuele upgrade-banner

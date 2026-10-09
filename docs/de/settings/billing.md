@@ -144,6 +144,8 @@ Die Kündigung wird am Ende des aktuellen Zahlungszeitraums wirksam; der Zugriff
 3. Stripe leitet mit `?checkout=success` oder `?checkout=canceled` zurück
 4. Die Seite zeigt ein Erfolgs- oder Abbruch-Banner; gesperrte UI wird sofort entsperrt
 
+Bleibt die Verarbeitung nach einer erfolgreichen Zahlung aus, meldet das Banner, dass Ihre Zahlung durchging, Ihr Abonnement aber noch nicht bereit ist, mit einem Button zum erneuten Prüfen.
+
 Bei einem Upgrade auf Office erhält das Erfolgsbanner den violetten Office-Akzent und ein Kronen-Symbol ("Willkommen bei Office") anstelle der standardmäßig grünen Bestätigung. Die gleiche Office-Gestaltung finden Sie an weiteren Stellen in der App: ein violetter Ring um Ihren Avatar, ein Kronen-Symbol im Plan-Badge und "Office-Funktion"-Pills auf Einstellungsseiten, die Office erfordern, wie API-Schlüssel und Inbox. Zusätzlich erhält der Kontextassistent ein Premium-Violett-Design: Die "KI"-Pille wird zur "Office"-Pille, Panel-Rand und Sende-Button erhalten den Office-Akzent und die Statuszeile ändert sich zu "Ihr Office-Assistent steht bereit."
 
 ## Kontextbezogener Upgrade-Banner
