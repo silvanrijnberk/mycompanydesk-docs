@@ -1,7 +1,7 @@
 ---
 title: AI Features
 description: "Every AI surface in MyCompanyDesk, what it does and which provider handles it. The default chain is EU-only: Gemini on Vertex AI europe-west1 first."
-last_verified: 2026-09-28
+last_verified: 2026-10-09
 ---
 
 # AI Features
@@ -197,7 +197,6 @@ The inbox composer can draft the reply of a customer email for you. The endpoint
 | Inbox reply drafts | Off | On |
 | Briefing insight | Off | On |
 
-<!-- TODO(source-missing): AI_USAGE_LIMIT locale string implies a daily AI usage cap; this page states monthly caps only. Needs a sources/ entry before documenting the daily limit. -->
 ## AI usage caps (monthly)
 
 AI caps are monthly, not daily. A bookkeeper who batches 40 receipts on a Friday does not blow through a daily quota that resets at midnight. Cap tracking uses `ai_usage.date` with the first-of-month date. Monthly caps:

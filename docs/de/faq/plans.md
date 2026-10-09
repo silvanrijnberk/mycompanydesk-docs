@@ -1,7 +1,7 @@
 ---
 title: "Tarife und Preise"
 description: "MyCompanyDesk gibt es in zwei Tarifen: Desk und Office. Desk ist kostenlos und bleibt kostenlos."
-last_verified: 2026-10-01
+last_verified: 2026-10-09
 chatbot:
   triggers:
     - "tarife"
@@ -36,7 +36,7 @@ Diese Funktionen sind in unserer Billing-Config hinterlegt: [apps/api/src/module
 **Upgrade und Downgrade**
 - Sie können jederzeit zwischen Desk und Office wechseln.
 - Nach einem Upgrade sind die neuen Funktionen sofort verfügbar.
-- Wenn Sie von Office auf Desk herunterstufen, funktionieren Office-only Funktionen nicht mehr: Ihre Bankanbindung importiert nicht mehr, neue wiederkehrende Rechnungen oder Ausgaben werden nicht mehr erstellt, die Berichte, die vollständige Buchhaltung mit dem Jahresabschluss und die Einkommensteuererklärung entfallen, und neue E-Mails von Ihrer eigenen Adresse senden geht nicht mehr. E-Mails kommen weiter an, Lesen und Antworten bleiben möglich, Ihre Website bleibt auf Ihrer mycompanydesk.site-Adresse online, das Vorbereiten Ihrer Umsatzsteuererklärung und ihr Einreichen bei der Steuerbehörde laufen weiter, und Ihre Daten bleiben in Ihrem Arbeitsbereich. Die Kündigungsseite listet genau, was weiterläuft und was stoppt, bevor Sie entscheiden.
+- Wenn Sie von Office auf Desk herunterstufen, funktionieren Office-only Funktionen nicht mehr: Ihre Bankanbindung importiert nicht mehr, neue wiederkehrende Rechnungen oder Ausgaben werden nicht mehr erstellt, die Berichte, die vollständige Buchhaltung mit dem Jahresabschluss und die Einkommensteuererklärung entfallen, und Sie können keine neuen E-Mails mehr selbst verfassen, Ihre E-Mails in einer Mail-App lesen oder Ihre Domain verwalten. E-Mails kommen weiter an (auch an Adressen Ihrer eigenen Domain), Sie können sie lesen und beantworten, und Rechnungen und Antworten werden auf Desk weiterhin von Ihrer eigenen Adresse verschickt. Ihre Website bleibt online und bleibt bearbeitbar, das Vorbereiten Ihrer Umsatzsteuererklärung und ihr Einreichen bei der Steuerbehörde laufen weiter, und Ihre Daten bleiben in Ihrem Arbeitsbereich. Die Kündigungsseite listet genau, was weiterläuft und was stoppt, bevor Sie entscheiden.
 - Läuft die kostenlose 60-tägige Office-Testphase ohne Abonnement ab, wechselt Ihr Arbeitsbereich automatisch auf Desk.
 
 **Abrechnung**

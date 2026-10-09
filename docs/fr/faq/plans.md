@@ -1,7 +1,7 @@
 ---
 title: "Formules et tarifs"
 description: "MyCompanyDesk propose deux formules : Desk et Office. Desk est gratuit et reste gratuit."
-last_verified: 2026-10-01
+last_verified: 2026-10-09
 chatbot:
   triggers:
     - "formules"
@@ -37,7 +37,7 @@ Ces fonctionnalités sont définies dans notre configuration de facturation : [a
 **Changement de formule**
 - Vous pouvez passer de Desk à Office, et inversement, à tout moment.
 - Après une montée de version, les nouvelles fonctionnalités sont disponibles immédiatement.
-- Si vous rétrogradez d'Office vers Desk, les fonctionnalités réservées à Office cessent de fonctionner : votre connexion bancaire n'importe plus de transactions, plus aucune facture ou dépense récurrente n'est générée, les rapports, la comptabilité complète avec les comptes annuels et la déclaration de revenus s'arrêtent, et l'envoi de nouveaux e-mails depuis votre propre adresse n'est plus possible. Les e-mails continuent d'arriver, vous pouvez les lire et y répondre, votre site web reste en ligne sur votre adresse mycompanydesk.site, vous pouvez toujours préparer votre déclaration de TVA et la déposer vous-même, et vos données restent dans votre espace de travail. La page de résiliation liste exactement ce qui continue de fonctionner et ce qui s'arrête avant que vous ne décidiez.
+- Si vous rétrogradez d'Office vers Desk, les fonctionnalités réservées à Office cessent de fonctionner : votre connexion bancaire n'importe plus de transactions, plus aucune facture ou dépense récurrente n'est générée, les rapports, la comptabilité complète avec les comptes annuels et la déclaration de revenus s'arrêtent, et vous ne pouvez plus rédiger de nouveaux e-mails vous-même, lire vos e-mails dans une application de messagerie ni gérer votre domaine. Les e-mails continuent d'arriver (aussi sur les adresses de votre propre domaine), vous pouvez les lire et y répondre, et les factures et les réponses partent de Desk depuis votre propre adresse. Votre site web reste en ligne et reste modifiable, vous pouvez toujours préparer votre déclaration de TVA et la déposer vous-même, et vos données restent dans votre espace de travail. La page de résiliation liste exactement ce qui continue de fonctionner et ce qui s'arrête avant que vous ne décidiez.
 - Si votre période d'essai Office de 60 jours se termine sans abonnement, votre espace de travail passe automatiquement sur Desk.
 
 **Facturation**

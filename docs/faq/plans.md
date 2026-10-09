@@ -1,7 +1,7 @@
 ---
 title: "Abonnementen en prijzen"
 description: "MyCompanyDesk heeft twee abonnementen: Desk en Office. Desk is gratis en blijft gratis."
-last_verified: 2026-10-01
+last_verified: 2026-10-09
 chatbot:
   triggers:
     - "abonnementen"
@@ -34,7 +34,7 @@ Deze functies staan in onze billing-config: [apps/api/src/modules/billing/plans.
 **Upgraden en downgraden**
 - Je kunt altijd wisselen tussen Desk en Office.
 - Na een upgrade zijn de nieuwe functies meteen beschikbaar.
-- Als je van Office teruggaat naar Desk, werken Office-only functies niet meer: je bankkoppeling importeert niet meer, nieuwe terugkerende facturen of uitgaven worden niet meer aangemaakt, rapportages, je volledige boekhouding met de jaarrekening en de winstaangifte stoppen, en nieuwe mail versturen vanaf je eigen adres kan niet meer. Mail blijft binnenkomen en lezen en beantwoorden kan, je website blijft online op je mycompanydesk.site-adres, je btw-aangifte klaarzetten en zelf indienen blijft gewoon werken, en je data blijft in je werkruimte staan. De opzegpagina zet er precies bij wat blijft werken en wat stopt voordat je beslist.
+- Als je van Office teruggaat naar Desk, werken Office-only functies niet meer: je bankkoppeling importeert niet meer, nieuwe terugkerende facturen of uitgaven worden niet meer aangemaakt, rapportages, je volledige boekhouding met de jaarrekening en de winstaangifte stoppen, en zelf nieuwe mail opstellen, je mail in een mailapp lezen en je domein beheren kan niet meer. Mail blijft binnenkomen (ook op adressen van je eigen domein), lezen en beantwoorden kan gewoon, en facturen en antwoorden versturen op Desk nog vanaf je eigen adres. Je website blijft online en je kunt hem gewoon bewerken, je btw-aangifte klaarzetten en zelf indienen blijft werken, en je data blijft in je werkruimte staan. De opzegpagina zet er precies bij wat blijft werken en wat stopt voordat je beslist.
 - Als je gratis proefperiode van 60 dagen Office afloopt zonder abonnement, gaat je werkruimte automatisch naar Desk.
 
 **Facturatie**

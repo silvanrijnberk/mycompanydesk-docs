@@ -144,6 +144,8 @@ La résiliation prend effet à la fin de la période payée en cours ; l'accès 
 3. Stripe redirige avec `?checkout=success` ou `?checkout=canceled`
 4. La page affiche une bannière de succès ou d'annulation ; l'interface verrouillée est immédiatement déverrouillée
 
+Si le traitement n'aboutit pas peu après un paiement réussi, la bannière indique que votre paiement est bien passé mais que votre abonnement n'est pas encore prêt, avec un bouton pour revérifier.
+
 Lors d'un passage à Office, la bannière de succès prend l'accent violet Office avec une icône de couronne (« Bienvenue chez Office ») au lieu de la confirmation verte standard. Ce même style Office apparaît ailleurs dans l'application : un anneau violet autour de l'avatar, une icône de couronne dans le badge de formule et des pastilles « Fonction Office » sur les pages de paramètres qui demandent Office, comme Clés API et Boîte de réception. De plus, l'assistant du guide contextuel reçoit une apparence violette premium : la pastille « IA » devient une pastille « Office », la bordure du panneau et le bouton d'envoi adoptent l'accent Office et la ligne de statut devient « Votre assistant Office est prêt. »
 
 ## Bannière de mise à niveau contextuelle
