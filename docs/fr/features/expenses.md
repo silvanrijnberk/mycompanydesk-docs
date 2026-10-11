@@ -165,7 +165,7 @@ Le détail de la dépense affiche une ligne **Facture liée** dès qu'elle a ét
 
 ## Actions groupées
 
-Sélectionnez plusieurs dépenses pour un travail de groupe. Pendant une sélection, une colonne de cases à cocher apparaît dans la liste ; hors sélection, pas de cases, et sur une liste vide il n'y a pas du tout de bouton de sélection. Votre tri sur la liste est retenu, un rechargement le garde.
+Sélectionnez plusieurs dépenses pour un travail de groupe. Pendant une sélection, une colonne de cases à cocher apparaît dans la liste ; hors sélection, pas de cases, et sur une liste vide il n'y a pas du tout de bouton de sélection. Votre tri sur la liste est retenu et survit à un rechargement.
 
 - **Catégoriser** -- Changer la catégorie en masse
 - **Archiver** -- Déplacer vers les archives. Lorsque vous archivez plusieurs dépenses non payées avec une date d'échéance en une fois, les rappels de paiement ouverts correspondants sont suspendus. La barre d'actions en masse affiche d'abord une confirmation dès qu'une dépense sélectionnée est non payée et a une date d'échéance, pour que vous sachiez combien des dépenses sélectionnées perdent leur rappel. Le rappel reste suspendu tant que les dépenses sont archivées. Si vous restaurez ultérieurement une dépense archivée, le passage quotidien recrée le rappel, mais au plus tôt la nuit suivante.

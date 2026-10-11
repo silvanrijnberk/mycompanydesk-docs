@@ -28,7 +28,7 @@ Un bouton **Changer de période** se trouve en haut, à côté du libellé de p�
 
 ## Ventes
 
-**Ventes** répond à « Que est-ce que je vends ? » avec le chiffre d'affaires dans le temps, le chiffre d'affaires par service ou produit de votre catalogue, les articles qui se vendent le mieux avec leur nombre, leur part et la valeur moyenne de vente, et la répartition services ou produits. Les factures sont rattachées aux articles du catalogue pour cette page ; les articles sans lien apparaissent comme non liés, avec la remarque que le lien rend la page exacte.
+**Ventes** répond, avec le chiffre d'affaires dans le temps, au chiffre d'affaires par service ou produit de votre catalogue, aux articles qui se vendent le mieux avec leur nombre, leur part et la valeur moyenne de vente, et à la répartition services ou produits. Les factures sont rattachées aux articles du catalogue pour cette page ; les articles sans lien apparaissent comme non liés, avec la remarque que le lien rend la page exacte.
 
 Les questions sous les chiffres comparent toujours la période avec la même période de l'année précédente, sur une fenêtre de même longueur : **Comment vont mes ventes ?**, **D'où vient cette croissance ?** (avec le nom du client quand la croissance vient surtout d'un seul), **Où se situe la baisse ?**, et **Est-ce que je vends de plus gros projets ?** avec la facture moyenne d'aujourd'hui contre celle de l'an dernier.
 

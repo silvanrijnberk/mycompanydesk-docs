@@ -165,7 +165,7 @@ Auf der Ausgabendetailseite erscheint eine Zeile **Verknüpfte Rechnung**, sobal
 
 ## Massenaktionen
 
-Wählen Sie mehrere Ausgaben für die Sammelarbeit. Während einer Auswahl erscheint eine Spalte mit Häkchen in der Liste; außerhalb einer Auswahl gibt es keine Häkchen, und an eine leere Liste hängt gar kein Auswahl-Button. Ihre Sortierung in der Liste bleibt gemerkt, ein Neuladen behält sie.
+Wählen Sie mehrere Ausgaben für die Sammelarbeit. Während einer Auswahl erscheint eine Spalte mit Häkchen in der Liste; außerhalb einer Auswahl gibt es keine Häkchen, und an eine leere Liste hängt gar kein Auswahl-Button. Ihre Sortierung in der Liste bleibt gemerkt und übersteht ein Neuladen.
 
 - **Kategorisieren** - Kategorie in großem Umfang ändern
 - **Archivieren** - Ins Archiv verschieben. Wenn Sie mehrere unbezahlte Ausgaben mit Fälligkeitsdatum auf einmal archivieren, werden deren offene Zahlungserinnerungen pausiert. Die Massenaktionsleiste zeigt vorher eine Bestätigung, sobald eine ausgewählte Ausgabe unbezahlt ist und ein Fälligkeitsdatum hat, damit Sie wissen, wie viele der ausgewählten Ausgaben ihre Erinnerung verlieren. Solange die Ausgaben archiviert sind, bleibt die Erinnerung aus. Stellen Sie eine archivierte Ausgabe später wieder her, wird die Erinnerung beim nächsten täglichen Lauf neu angelegt, aber frühestens in der folgenden Nacht.

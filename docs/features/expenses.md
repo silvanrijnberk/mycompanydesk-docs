@@ -147,7 +147,7 @@ Op de uitgavedetail staat een regel **Gekoppelde factuur** zodra hij aan een fac
 
 ## Bulkacties
 
-Selecteer meerdere uitgaven voor bulkwerk. Tijdens een selectie verschijnt er een vinkjeskolom in de lijst; buiten een selectie zijn er geen vinkjes, en aan een lege lijst hangt helemaal geen selecteerknop. Je sortering op de lijst wordt onthouden, dus een herlaad je hem terug.
+Selecteer meerdere uitgaven voor bulkwerk. Tijdens een selectie verschijnt er een vinkjeskolom in de lijst; buiten een selectie zijn er geen vinkjes, en aan een lege lijst hangt helemaal geen selecteerknop. Je sortering op de lijst wordt onthouden en overleeft een herladen.
 
 - **Categoriseren** - Wijzig categorie in bulk
 - **Archiveren** - Verplaats naar archief. Als je meerdere onbetaalde uitgaven met een vervaldatum tegelijk archiveert, vallen hun openstaande betaalherinneringen stil. De bulkbalk toont eerst een bevestiging zodra een van de geselecteerde uitgaven onbetaald is én een vervaldatum heeft, zodat je weet hoeveel van de geselecteerde uitgaven hun herinnering kwijtraken. Zolang de uitgaven gearchiveerd zijn, blijft de herinnering uit. Zet je een gearchiveerde uitgave later terug, dan maakt de dagelijkse sweep de herinnering opnieuw aan, maar pas de volgende nacht op zijn vroegst.

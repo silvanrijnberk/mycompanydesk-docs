@@ -93,7 +93,7 @@ Enthält Ihr Tarif das automatische Zeitabrechnen nicht, pausiert es, bis Ihr Ta
 
 ## Massenaktionen
 
-Wählen Sie mehrere Einträge in der Listenansicht aus (langes Drücken auf Mobilgeräten), um sie auf einmal zu bearbeiten. Während der Auswahl steht eine Spalte mit Häkchen in der Liste, und ein Tipp auf die Zeile selbst hakert sie bei einer Auswahl an; außerhalb der Auswahl gibt es keine Häkchenspalte.
+Wählen Sie mehrere Einträge in der Listenansicht aus (langes Drücken auf Mobilgeräten), um sie auf einmal zu bearbeiten. Während der Auswahl steht eine Spalte mit Häkchen in der Liste, und ein Tipp auf die Zeile selbst setzt das Häkchen; außerhalb der Auswahl gibt es keine Häkchenspalte.
 
 - **Als abrechenbar markieren** oder **Als nicht abrechenbar markieren**
 - **Archivieren**
