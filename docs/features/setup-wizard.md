@@ -77,6 +77,7 @@ De laatste stap bevestigt je proefperiode:
 ## Overslaan, hervatten en opnieuw doorlopen
 
 - **Overslaan:** **Voor nu overslaan** brengt je op elk moment naar het dashboard. `/setup` blijft de weg terug tot de setup af is.
+- **Website eerst** (Eerst mijn website maken): een tweede uitgang zit in de voetbalk van de eerste stap, naast Overslaan. Hij verlaat de setup zonder af te ronden en opent direct de website-opzetwizard; anders dan de blote overslaan houdt hij de taak Maak je website af op het dashboard open, want er staat nog geen site om af te maken.
 - **Hervatten:** antwoorden worden bij elke wijziging opgeslagen. Het tabblad halverwege sluiten kost niets; bij het volgende bezoek ga je verder op dezelfde stap.
 - **Opnieuw doorlopen:** na het afronden start `/setup` de flow opnieuw vanaf de eerste stap, met je bewaarde antwoorden. De wizard vult lege velden aan in plaats van te overschrijven: een dienstenlijst die je hebt opgebouwd, een logo dat je hebt geüpload of instellingen die je zelf koos worden niet vervangen.
 

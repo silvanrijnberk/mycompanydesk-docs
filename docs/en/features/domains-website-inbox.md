@@ -261,7 +261,9 @@ See [Site Builder](/en/advanced/business-page) for the full editor guide.
 
 The inbox is a top-level surface at `/inbox` (`apps/web/pages/inbox/index.vue`). Backend lives in `apps/api/src/modules/inbox/*` and writes to a separate set of tables (`company_email_domains`, `company_mailboxes`, `email_threads`, `email_messages`, `email_attachments`, `email_events`).
 
-When a forwarded supplier invoice is converted into a draft expense from an attachment, the expense is only booked after you confirm it. If the invoice date falls in a VAT period that has already been filed, the automated booking is refused and an `inbox_expense_period_locked` notification is created instead of silently dropping the invoice; the notification lands on the inbox list and tells you which supplier and invoice date are involved, so you can book it manually in the current period or file a supplementary return.
+When a forwarded supplier invoice is converted into a draft expense from an attachment, the expense is only booked after you confirm it.
+
+Before the bill is booked, the rule also looks at the expenses already standing in your books: an invoice can land on an existing expense instead of becoming a second one, with manually entered expenses and foreign-currency payments included. The supplier name carries the match, with the amount and a skewed window around it, because a payment often follows its invoice by weeks and a monthly supplier keeps its euro debit and its next invoice roughly a month apart. An invoice in dollars, pounds or francs can land next to the euro debit of the same supplier a few days apart, without any exchange rate in the system. Without supplier-name evidence, the rule only pairs the invoice with a bank-side expense of the same amount, and only when exactly one candidate fits. An expense that already carries a receipt never gets a second one over it; such an invoice books into To review instead, with a note pointing at the existing expense, because a reminder that arrives as a different file cannot be told apart. The catch-up on the bills tab also re-judges invoice mails after a change to the triage: bills that the triage once missed get another look, and a temporary outage never takes threads out of that catch-up for good. The triage model reads the file names of the attachments as well. If the invoice date falls in a VAT period that has already been filed, the automated booking is refused and an `inbox_expense_period_locked` notification is created instead of silently dropping the invoice; the notification lands on the inbox list and tells you which supplier and invoice date are involved, so you can book it manually in the current period or file a supplementary return.
 
 Capabilities:
 
@@ -296,7 +298,7 @@ Capabilities:
 On Office, the inbox groups incoming mail by what it asks of you. Three tabs sit above the list:
 
 - **Waiting on you**: conversations where the sender is waiting for an answer. When a message has been sitting for a full day, the row counts the days it has been waiting. Mail that does not ask for an answer gets no waiting count, however long it has been sitting.
-- **Bills**: supplier invoices the triage recognised. The list opens the thread straight onto the bill card.
+- **Bills**: supplier invoices the triage recognised. The list opens the thread straight onto the bill card; a catch-up pass gives older bill mails another look whenever the triage has changed.
 - **Other**: newsletters and system messages, the mail you read when there is time left.
 
 A tab without mail disappears. The tabs carry workspace-wide counts. When everything that was waiting on you is answered, the list shows a quiet "All done" notice instead of rows. On Desk, where the inbox is limited to reading and replying, the list stays one folder.

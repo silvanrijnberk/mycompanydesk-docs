@@ -196,6 +196,8 @@ When you click **Create Quote** on a request, the requester's name and email app
 
 ## Bulk actions
 
+During a selection a checkbox column appears in the list, and nowhere else; an empty list carries no select button at all.
+
 - **Send** — Send multiple quotes at once
 - **Archive** — Move quotes to archive
 - **Delete** — Remove quotes

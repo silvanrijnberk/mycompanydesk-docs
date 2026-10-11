@@ -196,6 +196,8 @@ Klicken Sie bei einer Anfrage auf **Angebot erstellen**, erscheinen Name und E-M
 
 ## Massenaktionen
 
+Während einer Auswahl erscheint eine Spalte mit Häkchen in der Liste, sonst nirgends; eine leere Liste hat gar keinen Auswahl-Button.
+
 - **Senden** — Mehrere Angebote gleichzeitig versenden
 - **Archivieren** — Angebote ins Archiv verschieben
 - **Löschen** — Angebote entfernen

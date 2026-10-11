@@ -77,6 +77,7 @@ La dernière étape confirme votre essai :
 ## Passer, reprendre et relancer
 
 - **Passer :** vous ramène à tout moment au tableau de bord. `/setup` reste le chemin de retour jusqu'à ce que la configuration soit terminée.
+- **D'abord le site** (Eerst mijn website maken) : une deuxième sortie figure dans la barre du bas de la première étape, à côté de Passer. Elle quitte la configuration sans la finaliser et ouvre directement l'assistant de site ; au lieu du simple Passage, elle maintient ouverte la tâche Terminez votre site du tableau de bord, car il n'existe pas encore de site à terminer.
 - **Reprendre :** les réponses sont enregistrées à chaque modification. Fermer l'onglet en cours de route ne coûte rien ; à la visite suivante, vous reprenez sur la même étape.
 - **Relancer :** après la finalisation, `/setup` relance le parcours depuis la première étape, avec vos réponses conservées. L'assistant complète les champs vides au lieu d'écraser : une liste de prestations que vous avez construite, un logo importé ou des réglages choisis à la main ne sont pas remplacés.
 

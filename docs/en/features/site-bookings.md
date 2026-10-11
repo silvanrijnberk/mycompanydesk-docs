@@ -73,6 +73,8 @@ Under the date the block tells the visitor whether that day is still free. The a
 
 Visitors cannot send a date in the past, and a date field on a plain request form refuses past dates the same way.
 
+The block can also set its own pace for requests. Under the block settings, **Minimaal van tevoren aanvragen (dagen)** (minimum notice in days, offered with a date only) sets how many whole days ahead the first date the picker offers sits: 0 = from today, and an earlier date is simply not pickable. With a time on the block, **Minimaal van tevoren aanvragen (uren)** (minimum notice in hours) refuses a request for a sooner moment. Without a value there is no notice beyond the past-date rule; the picker and the server apply the same rule, so what the site offers and what gets saved never disagree. With a date only, **Maximaal aantal aanvragen per week (optioneel)** caps the open or accepted requests of this block for days in one week (Monday up to Sunday); once the week sits full, those days show on your site as not free, and a request you move to closed stops counting. Empty or 0 means no maximum. Confirmation messages carry the weekday of the requested date beside the date, so a request arrives with a named day, not only as a number.
+
 ## Group sessions
 
 Not every booking is one customer at a free time of their choosing. A **group session** (a workshop, a class, a guided tour) has one fixed time and a number of places, and several customers can take part. You schedule the sessions in the agenda under **Groepsafspraken** (Group sessions):

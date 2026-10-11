@@ -196,6 +196,8 @@ Klik je op **Offerte aanmaken** bij een aanvraag, dan verschijnen de naam en het
 
 ## Bulkacties
 
+Tijdens een selectie verschijnt er een vinkjeskolom in de lijst, anders nergens; een lege lijst heeft helemaal geen selecteerknop.
+
 - **Versturen** — Verstuur meerdere offertes tegelijk
 - **Archiveren** — Verplaats offertes naar het archief
 - **Verwijderen** — Verwijder offertes

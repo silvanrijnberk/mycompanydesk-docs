@@ -196,6 +196,8 @@ Quand vous cliquez sur **Créer un devis** sur une demande, le nom et l'adresse 
 
 ## Actions groupees
 
+Pendant une sélection, une colonne de cases à cocher apparaît dans la liste, sinon nulle part ; une liste vide n'a pas du tout de bouton de sélection.
+
 - **Envoyer** -- Envoyez plusieurs devis en une fois
 - **Archiver** -- Deplacez les devis vers les archives
 - **Supprimer** -- Supprimez des devis

@@ -65,6 +65,8 @@ Laissez l'IA extraire automatiquement les détails de vos reçus :
 4. Vérifiez les données extraites (date, montant, fournisseur, description)
 5. Confirmez pour créer la ou les dépenses
 
+Qu'une dépense existe déjà dans vos livres pour un reçu numérisé, le plus souvent l'écriture bancaire du même paiement, la carte de vérification porte le bouton **Bon hieraan toevoegen** (pour une dépense qui n'a pas encore de reçu) : le reçu s'attache à la dépense existante au lieu d'en saisir une deuxième, et la ligne sort de la vérification. Les montants répétés sur un même reçu sont signalés et restent des coûts séparés. Voir [Numérisation de reçus](/fr/advanced/receipt-scanning) pour le détail.
+
 ::: info
 La numérisation de reçus est disponible sur tous les plans, y compris Desk. Le nombre de scans par mois dépend de votre plan : 3 sur Desk et 200 sur Office. Le taux de TVA d'une nouvelle depense commence par votre reglage d'espace de travail par defaut.
 :::
@@ -163,7 +165,7 @@ Le détail de la dépense affiche une ligne **Facture liée** dès qu'elle a ét
 
 ## Actions groupées
 
-Sélectionnez plusieurs dépenses pour :
+Sélectionnez plusieurs dépenses pour un travail de groupe. Pendant une sélection, une colonne de cases à cocher apparaît dans la liste ; hors sélection, pas de cases, et sur une liste vide il n'y a pas du tout de bouton de sélection. Votre tri sur la liste est retenu, un rechargement le garde.
 
 - **Catégoriser** -- Changer la catégorie en masse
 - **Archiver** -- Déplacer vers les archives. Lorsque vous archivez plusieurs dépenses non payées avec une date d'échéance en une fois, les rappels de paiement ouverts correspondants sont suspendus. La barre d'actions en masse affiche d'abord une confirmation dès qu'une dépense sélectionnée est non payée et a une date d'échéance, pour que vous sachiez combien des dépenses sélectionnées perdent leur rappel. Le rappel reste suspendu tant que les dépenses sont archivées. Si vous restaurez ultérieurement une dépense archivée, le passage quotidien recrée le rappel, mais au plus tôt la nuit suivante.

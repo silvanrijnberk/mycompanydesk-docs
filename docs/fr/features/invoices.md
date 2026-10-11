@@ -176,7 +176,7 @@ Send a payment reminder for overdue invoices. If your workspace has online payme
 
 ## Bulk actions
 
-Select multiple invoices from the list to perform actions in bulk:
+Select multiple invoices from the list to perform actions in bulk. A checkbox column appears in the list while the selection is running, and nowhere else; an empty list carries no select button.
 
 - **Mark as sent** - Mark multiple draft invoices as sent at once
 - **Mark as paid** - Record payment for multiple invoices

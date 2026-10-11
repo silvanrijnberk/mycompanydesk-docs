@@ -48,13 +48,17 @@ Path: `/settings/bedrijfsgegevens#keurmerken`
 
 The **Keurmerken** card on the Bedrijfsgegevens page holds your company's certifications and quality marks, such as STEK, VCA or CE. They appear on your website, and under your emails per mail type as chosen under Settings → Email. You manage them in one place.
 
-- **Add a certification**: choose an image (PNG, JPG, WebP or SVG, 3 MB at most). MyCompanyDesk trims the white space around the logo, caps its height at 480 pixels and converts it to a PNG with transparency. An SVG is rasterized, so mail programs that cannot show SVG still display the mark.
+- **Add a certification**: choose an image (PNG, JPG, WebP or SVG, 3 MB at most). MyCompanyDesk trims the white space around the logo, caps its height at 480 pixels and converts it to a PNG with transparency. An SVG is rasterized, so mail programs that cannot show SVG still display the mark. The image is optional: a certification can carry just its name, and a name-only mark shows as its name on your website and in the text version of your e-mails.
 - **Name**: required, up to 64 characters. The name describes the logo for people who cannot see it.
 - **Link (optional)**: for example the register page where customers can verify your certificate. The link must start with `https://` or `http://`.
 - Up to six certifications. Reorder them with the up and down arrows; to replace the image, remove the certification and add it again.
 - One switch, on by default: **Tonen op je website** feeds the Keurmerken block on your website. Whether the logos also appear under your emails is chosen per mail type under **Settings → Email**; the card shows a note with a link there.
 - Adding your first certification automatically places a **Keurmerken** block on the homepage of your website, as a draft. It goes live when you publish your site.
 - Removing a certification keeps the file on the server, so emails that already went out keep showing the mark. An empty list, or **Tonen op je website** switched off, makes the block hide itself on the website.
+
+## Form of address on your website (Aanspreekvorm op je website)
+
+Below the Keurmerken card sits the card that decides how your website talks to its visitors: **Je en jij** (personal, "Ik help je graag.") or **U** (polite, "Ik help u graag."). The fixed texts on your site, buttons, form lines, thank-you messages, follow the choice at once; a one-person business speaks as ik instead of we. What you or the text writer already wrote keeps its own voice until you press **Zet alle teksten om naar je** or **Zet alle teksten om naar u**: one run converts every text standing on the site, your own typed text included, changing only the form of address and never the content. The result names how many texts changed and which stayed standing, and a publish puts them live. The website wizard asks the same choice in its first step and writes the same setting.
 
 ## Opening hours
 
