@@ -1,7 +1,7 @@
 ---
 title: Rendez-vous en ligne
 description: Permettez aux clients de prendre rendez-vous directement via votre site avec Site Bookings.
-last_verified: 2026-10-02
+last_verified: 2026-10-11
 ---
 
 # Rendez-vous en ligne
@@ -58,6 +58,20 @@ Dans l'éditeur, le bloc de rendez-vous présente les services de votre offre so
 :::tip
 Liez le bloc à une **adresse e-mail** pour que les visiteurs reçoivent une confirmation automatique et que vous soyez informé de chaque nouvelle réservation.
 :::
+
+## Demandes sur une date seule
+
+Tous les métiers ne vendent pas des créneaux horaires. Un DJ, un food truck ou un photographe de mariage perd des journées, et la question d'un visiteur n'est pas « mardi à 14 h ? » mais « le 14 juin est-il encore libre ? ». Pour ces métiers, réglez **Hoe boeken klanten?** (comment les clients réservent) sur **Aanvraag (jij bevestigt)** (demande, vous confirmez) et activez **Alleen een datum vragen** (demander une date seule, sans heure). Le formulaire ne demande alors qu'une date.
+
+Sous la date, le bloc indique au visiteur si ce jour est encore libre. La réponse vient de votre propre agenda :
+
+- **Un jour est occupé s'il porte déjà quelque chose** : une réservation passée via votre site, une séance de groupe, une entrée de votre propre agenda MCD (planifiée ou tracée), un rendez-vous dans votre calendrier Google ou Outlook connecté (journées entières comprises), ou une journée marquée **fermée** dans les Jours exceptionnels.
+- **Non comptés** : vos horaires hebdomadaires fixes (en mode demande, ils ne limitent rien : le visiteur peut demander n'importe quel jour de votre semaine), les anniversaires et lieux de travail de vos calendriers connectés, les calendriers partagés avec vous ou que vous suivez seulement (par exemple un calendrier des jours fériés), les événements que vous avez refusés ou marqués comme libres, et une soirée de la veille qui se termine au plus tard à 6 h : cette nuit appartient à la veille, pas au lendemain.
+- Le site regarde environ deux ans plus loin. Au-delà, il ne dit rien au lieu de déclarer le jour occupé.
+- La réponse se limite à libre ou occupé : votre site ne révèle jamais à un visiteur ce qui figure sur votre journée.
+- Chaque demande aboutit chez vous : la date arrive comme demande à confirmer, comme pour l'autre mode de demande.
+
+Les visiteurs ne peuvent pas envoyer une date passée, et un champ de date sur un formulaire de demande ordinaire refuse les dates passées de la même façon.
 
 ## Séances de groupe
 

@@ -1,7 +1,7 @@
 ---
 title: Online afspraken
 description: Laat klanten direct via je website een afspraak inplannen met Site Bookings.
-last_verified: 2026-10-02
+last_verified: 2026-10-11
 ---
 
 # Online afspraken
@@ -58,6 +58,20 @@ In de editor toont het afspraakblok de diensten uit je Aanbod als chips, precies
 :::tip
 Koppel een **e-mailadres** aan het blok zodat bezoekers een automatische bevestiging ontvangen en je zelf een melding krijgt bij elke nieuwe boeking.
 :::
+
+## Datumaanvragen
+
+Niet elk vak verkoopt tijdvakken. Een dj, een foodtruck of een trouwfotograaf verliest dagen, en de vraag van een bezoeker is niet "dinsdag om 14:00?" maar "is 14 juni nog vrij?". Voor die vakken zet je in het blok **Hoe boeken klanten?** op **Aanvraag (jij bevestigt)** en zet je **Alleen een datum vragen** aan (zonder tijd). Het formulier vraagt dan alleen een datum.
+
+Onder de datum ziet de bezoeker of die dag nog vrij is. Het antwoord komt uit je eigen agenda:
+
+- **Een dag is bezet als er al iets op staat**: een aanmelding via je site, een groepsafspraak, een item in je eigen MCD-agenda (gepland of gewerkt), een afspraak met of zonder hele dag in je eigen gekoppelde Google- of Outlook-agenda, of een dag die je bij Afwijkende dagen op dicht hebt gezet.
+- **Niet meegeteld**: je vaste weekuren (in aanvraagmodus beperken die niets, dus elke dag van je week mag worden aangevraagd), verjaardagen en werklocaties uit je gekoppelde agenda's, agenda's die met je zijn gedeeld of die je alleen volgt (zoals een feestdagencalender), items die je had afgewezen of als vrij markeerde, en een optreden van de avond ervoor dat tot uiterlijk 06:00 doorloopt: dat is de nacht van de vorige dag, niet de volgende dag.
+- De site kijkt ongeveer twee jaar vooruit. Verder zegt hij niets, in plaats van de dag bezet te noemen.
+- Het antwoord is alleen vrij of bezet: je site vertelt een bezoeker nooit wat er die dag op je agenda staat.
+- Elke aanvraag eindigt bij jou: de datum komt binnen als verzoek dat jij bevestigt, net als bij de andere aanvraagmodus.
+
+Bezoekers kunnen geen datum uit het verleden opsturen, en een datumveld op een gewoon aanvraagformulier weigert verleden data op dezelfde manier.
 
 ## Groepsafspraken
 

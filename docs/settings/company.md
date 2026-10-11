@@ -1,7 +1,7 @@
 ---
 title: Bedrijfsinstellingen
 description: "The name on your invoices, address, KvK, logo, brand colour, website and opening hours, grouped in Settings."
-last_verified: 2026-09-29
+last_verified: 2026-10-11
 ---
 
 # Company Settings
@@ -28,7 +28,7 @@ The identity form. What every invoice, quote, and email shows.
 - **Address**: street, postal code, city, country (with address autocomplete)
 - **Registration**: KvK or other registration number. The row warns you (advisory only) when the number does not look like a valid KvK number; actual lookups are done by the fill-in helper at the top of the page, see below.
 - **Tax ID**: VAT number (e.g. `NL123456789B01`)
-- **Contact**: public email, phone, support email, timezone
+- **Contact**: public email, phone, support email, timezone. The address you log in with is not put on your website until you confirm it as your public address (the website wizard and the publish dialog ask); your invoices keep using it either way.
 - **Website + social**: used by the email signature, business page, and footers. Paste the full address of your profile or page (for example `https://instagram.com/yourcompany`); a value that would not become a link is flagged after you leave the field, and a bare username shows where it would link.
 
 Changes save automatically.
@@ -77,7 +77,7 @@ From here you manage one central source for your opening hours. The same hours f
 
 **Public website and appointments**
 
-Your opening hours are shown on the public business page and in the online appointments block. The website tab is managed under the top-level **Website** area; the booking block is covered on [Online appointments](/en/features/site-bookings). Both pull from the same source, so a change here updates both places.
+Your opening hours are shown on the public business page and in the online appointments block. The website tab is managed under the top-level **Website** area; the booking block is covered on [Online appointments](/en/features/site-bookings). Both pull from the same source, so a change here updates both places. These hours limit the moments customers can pick themselves online. Someone who requests an appointment instead is not limited by them: any day can be asked, and you confirm.
 
 Changes save automatically. See [Online appointments](/en/features/site-bookings) for how the booking block uses your opening hours.
 

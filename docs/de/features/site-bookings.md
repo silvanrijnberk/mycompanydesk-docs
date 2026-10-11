@@ -1,7 +1,7 @@
 ---
 title: Online-Termine
 description: Lassen Sie Kunden direkt über Ihre Website Termine mit Site Bookings buchen.
-last_verified: 2026-10-02
+last_verified: 2026-10-11
 ---
 
 # Online-Termine
@@ -58,6 +58,20 @@ Im Editor zeigt der Terminblock die Services aus Ihrem Angebot als Chips an, gen
 :::tip
 Verknüpfen Sie den Block mit einer **E-Mail-Adresse**, damit Besucher eine automatische Bestätigung erhalten und Sie bei jeder neuen Buchung benachrichtigt werden.
 :::
+
+## Datumsanfragen
+
+Nicht jedes Gewerbe verkauft Zeitfenster. Ein DJ, ein Foodtruck oder ein Hochzeitsfotograf verliert Tage, und die Frage eines Besuchers lautet nicht „Dienstag um 14:00?“, sondern „ist der 14. Juni noch frei?“. Für diese Gewerbe stellen Sie im Block **Hoe boeken klanten?** (wie Kunden buchen) auf **Aanvraag (jij bevestigt)** (Anfrage, Sie bestätigen) und aktivieren **Alleen een datum vragen** (nur ein Datum erfragen, ohne Zeit). Das Formular fragt dann nur nach einem Datum.
+
+Unter dem Datum sieht der Besucher, ob dieser Tag noch frei ist. Die Antwort kommt aus Ihrem eigenen Kalender:
+
+- **Ein Tag ist belegt, wenn schon etwas darauf liegt**: eine Buchung über Ihre Site, ein Gruppentermin, ein Eintrag in Ihrem eigenen MCD-Kalender (geplant oder gearbeitet), ein Termin in Ihrem eigenen verknüpften Google- oder Outlook-Kalender (ganztägige Einträge eingeschlossen), oder ein Tag, den Sie bei Besonderen Tagen auf geschlossen gestellt haben.
+- **Nicht gezählt**: Ihre festen Wochenzeiten (im Anfragemodus schränken sie nichts ein, jeder Ihrer Wochentage darf angefragt werden), Geburtstage und Arbeitsorte aus Ihren verknüpften Kalendern, mit Ihnen geteilte oder nur abonnierte Kalender (etwa ein Feiertagskalender), Einträge, die Sie abgelehnt oder als frei markiert haben, und ein Auftritt vom Abend zuvor, der bis spätestens 6:00 weiterläuft: das ist die Nacht des Vortages, nicht des nächsten Tages.
+- Die Site schaut rund zwei Jahre voraus. Weiter sagt sie nichts, statt den Tag als belegt zu nennen.
+- Die Antwort lautet nur frei oder belegt: Ihre Site sagt einem Besucher nie, was an dem Tag auf Ihrem Kalender liegt.
+- Jede Anfrage landet bei Ihnen: das Datum kommt als Anfrage an, die Sie bestätigen, wie im übrigen Anfragemodus.
+
+Besucher können kein Datum aus der Vergangenheit senden, und ein Datumsfeld auf einem gewöhnlichen Anfrageformular lehnt Vergangenes auf dieselbe Weise ab.
 
 ## Gruppentermine
 

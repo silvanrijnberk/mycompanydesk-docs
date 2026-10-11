@@ -1,7 +1,7 @@
 ---
 title: Online appointments
 description: Let customers book appointments directly through your website with Site Bookings.
-last_verified: 2026-10-02
+last_verified: 2026-10-11
 ---
 
 # Online appointments
@@ -58,6 +58,20 @@ In the site builder editor, the appointments block shows the services from your 
 :::tip
 Connect an **email address** to the block so visitors receive an automatic confirmation and you get a notification for every new booking.
 :::
+
+## Date requests
+
+Not every trade sells time slots. A DJ, a food truck or a wedding photographer loses days, and the question a visitor asks is not "Tuesday at 14:00?" but "is 14 June still free?". For those trades, set the block's **Hoe boeken klanten?** (how do customers book) to **Aanvraag (jij bevestigt)** (request, you confirm) and switch on **Alleen een datum vragen** (ask for a date only). The form then asks for a date without a time.
+
+Under the date the block tells the visitor whether that day is still free. The answer comes from your own agenda:
+
+- **A day is busy when something is already on it**: a booking made through your site, a group session, an entry in your own MCD agenda (planned or logged), a timed or whole-day appointment in your own linked Google or Outlook calendar, or a day you set to **closed** under Special days.
+- **Not counted**: your fixed weekly opening hours (in request mode they limit nothing, so a visitor may ask for any day of your week), birthdays and working locations from your linked calendars, calendars shared with you or that you only follow (such as a holidays calendar), events you declined or marked as free, and an event from the evening before that ends by 6:00: that night belongs to the day before, not to the next day.
+- The site checks about two years ahead. Beyond that it says nothing instead of calling the day busy.
+- The answer is only free or busy: your site never tells a visitor what sits on your day.
+- Every request still lands with you: the date arrives as a request you confirm, the same way as the other request mode.
+
+Visitors cannot send a date in the past, and a date field on a plain request form refuses past dates the same way.
 
 ## Group sessions
 
