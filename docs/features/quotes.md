@@ -135,16 +135,19 @@ Je krijgt een melding zodra de aanbetalingsfactuur is verstuurd, als concept wac
 
 ## Offerteaanvragen
 
-Klanten kunnen offerteaanvragen indienen via je [sitebouwer](/advanced/business-page). Deze verschijnen in **Offertes > Aanvragen**.
+Klanten kunnen aanvragen indienen via je [sitebouwer](/advanced/business-page). Deze verschijnen in **Offertes > Aanvragen**, op een eigen tabblad per soort: offerteaanvragen, berichten, afspraakverzoeken en terugbelverzoeken. De soort zit op de aanvraag zelf, zodat mail, melding en inbox hem noemen zoals de bezoeker het bedoelde.
 
 ### Aanvragen beheren
 
 Elke aanvraag toont:
 
-- Klantnaam en e-mailadres
+- Klantnaam en e-mailadres (bij een terugbelverzoek: telefoon, en een e-mailadres alleen als dat optioneel is gekozen)
 - Gevraagde dienst of omschrijving
 - Datum ingediend
 - Status
+- Foto's als de bezoeker meesturede (zie hieronder)
+
+De lijst kan filteren op alleen offertes, zodat een stroom berichten de offertes die nog openstaan niet wegdrukt.
 
 ### Aanvraagstatussen
 
@@ -152,8 +155,20 @@ Elke aanvraag toont:
 |---|---|
 | **Nieuw** | Zojuist ontvangen, nog niet bekeken |
 | **Bekeken** | Je hebt de aanvraag gelezen |
-| **Geoffreerd** | Je hebt een offerte verstuurd als reactie |
+| **Geoffreerd** | Je hebt met een offerte gereageerd (bij een bericht: geantwoord; bij een afspraak: ingepland; bij terugbellen: teruggebeld) |
 | **Gesloten** | Aanvraag afgehandeld (geaccepteerd of afgewezen) |
+
+### Foto's bij een aanvraag
+
+Op offerte- en berichtformulieren kan de sitebouwer **Bezoekers kunnen foto's meesturen** aanzetten. Een bezoeker voegt dan tot drie foto's aan de aanvraag toe, elk maximaal 10 MB, als JPEG, PNG of WebP. Een iPhone-foto in HEIC of HEIF krijgt meteen een melding met de vraag een gangbare soort te kiezen. De foto's staan op de aanvraag en openen er op volledige grootte.
+
+Terugbel- en afspraakformulieren nemen geen foto's aan: die vragen om een moment, niet om de beschrijving van een klus.
+
+### Terugbelverzoeken
+
+Een terugbelverzoek is voor bezoekers die liever bellen: ze laten hun naam en telefoonnummer achter, en het formulier vraagt geen e-mailadres. Terugbelverzoeken komen op hun eigen tabblad, met **Bel terug** als hoofdactie en **Markeer als teruggebeld** om een verzoek af te ronden. Zet je er een offerte naast en verstuur die, dan loopt de status hetzelfde spoor als bij elke andere aanvraag.
+
+Terugbellen is een keuze per formulierblok in de sitebouwer; de bedrijfsbrede standaard loopt alleen over offerte, bericht en afspraak. Handig voor klanten zonder e-mail: ze vragen aan via je site, jij belt terug.
 
 ### Reageren op een aanvraag
 

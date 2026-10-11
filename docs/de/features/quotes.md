@@ -135,16 +135,19 @@ Sie erhalten eine Benachrichtigung, sobald die Anzahlungsrechnung versendet wurd
 
 ## Angebotsanfragen
 
-Kunden können Angebotsanfragen über Ihren [Website-Builder](/de/advanced/business-page) einreichen. Diese erscheinen unter **Angebote > Anfragen**.
+Kunden können Anfragen über Ihren [Website-Builder](/de/advanced/business-page) einreichen. Diese erscheinen unter **Angebote > Anfragen**, auf einem eigenen Reiter pro Art: Angebotsanfragen, Nachrichten, Terminanfragen und Rückrufanfragen. Die Art sitzt auf der Anfrage selbst, damit Mail, Benachrichtigung und Posteingang sie so nennen, wie der Besucher es meinte.
 
 ### Anfragen verwalten
 
 Jede Anfrage zeigt:
 
-- Kundenname und E-Mail
+- Kundenname und E-Mail (bei einer Rückrufanfrage: Telefon, und eine E-Mail nur, wenn das Feld sie optional lässt)
 - Angefragter Service oder Beschreibung
 - Eingangsdatum
 - Status
+- Fotos, wenn der Besucher welche mitschickte (siehe unten)
+
+Die Liste lässt sich auf Angebotsanfragen einschränken, damit ein Strom von Nachrichten die Angebote, die noch ausstehen, nicht untergeht.
 
 ### Anfragestatus
 
@@ -152,8 +155,20 @@ Jede Anfrage zeigt:
 |---|---|
 | **Neu** | Gerade eingegangen, nicht überprüft |
 | **Überprüft** | Sie haben die Anfrage gelesen |
-| **Angeboten** | Sie haben als Antwort ein Angebot gesendet |
+| **Angeboten** | Sie haben mit einem Angebot geantwortet (bei einer Nachricht: geantwortet; bei einem Termin: eingeplant; bei einem Rückruf: zurückgerufen) |
 | **Geschlossen** | Anfrage erledigt (angenommen oder abgelehnt) |
+
+### Fotos zu einer Anfrage
+
+Auf Angebots- und Nachrichtenformularen lässt der Website-Builder **Besucher können Fotos mitschicken** einschalten. Ein Besucher legt dann bis zu drei Fotos zur Anfrage, je höchstens 10 MB, als JPEG, PNG oder WebP. Ein iPhone-Foto in HEIC oder HEIF bekommt sofort eine Meldung mit der Aufforderung, ein gängiges Format zu wählen. Die Fotos stehen auf der Anfrage und öffnen dort in voller Größe.
+
+Rückruf- und Terminformulare nehmen keine Fotos an: sie fragen nach einem Moment, nicht nach der Beschreibung einer Arbeit.
+
+### Rückrufanfragen
+
+Eine Rückrufanfrage ist für Besucher, die lieber telefonieren: sie hinterlassen Name und Telefonnummer, und das Formular verlangt gar keine E-Mail-Adresse. Rückrufanfragen landen auf ihrem eigenen Reiter, mit **Zurückrufen** als Hauptaktion und **Als zurückgerufen markieren**, um eine Anfrage abzuschließen. Setzen Sie ein Angebot dazu ab und schicken es, läuft der Status auf demselben Weg wie bei jeder anderen Anfrage.
+
+Rückruf ist eine Wahl pro Formularblock im Website-Builder; die unternehmensweite Einstellung deckt nur Angebot, Nachricht und Termin ab. Praktisch für Kunden ohne E-Mail: sie fragen über Ihre Seite an, Sie rufen zurück.
 
 ### Auf eine Anfrage antworten
 

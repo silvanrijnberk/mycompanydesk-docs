@@ -135,16 +135,19 @@ You get a notification when the deposit invoice has been sent, is waiting as a d
 
 ## Quote requests
 
-Customers can submit quote requests through your [site builder](/en/advanced/business-page). These appear in **Quotes > Requests**.
+Customers can submit requests through your [site builder](/en/advanced/business-page). These appear in **Quotes > Requests**, sorted into their own tab per request kind: quote requests, messages, appointment requests and call-back requests. The kind is part of each request, so the mail, notification and inbox name it the way the visitor meant it.
 
 ### Managing requests
 
 Each request shows:
 
-- Customer name and email
+- Customer name and email (for a call-back request, phone and only an optional email)
 - Requested service or description
 - Date submitted
 - Status
+- Photos when the visitor sent any (see below)
+
+The list can filter to quote requests only, so a stream of messages does not bury the quotes you still owe people.
 
 ### Request statuses
 
@@ -152,8 +155,20 @@ Each request shows:
 |---|---|
 | **New** | Just received, unreviewed |
 | **Reviewed** | You've read the request |
-| **Quoted** | You've sent a quote in response |
+| **Quoted** | You've responded with a quote (for a message: replied; for an appointment: scheduled; for a call-back: called back) |
 | **Closed** | Request resolved (accepted or declined) |
+
+### Photos on requests
+
+On quote and message forms, the site builder can switch on **Visitors can send photos along**. A visitor then adds up to three photos with the request, each up to 10 MB, as JPEG, PNG or WebP. An iPhone photo in HEIC or HEIF format gets a clear message telling the visitor to pick another format. The photos show on the request card and open full size from there.
+
+Call-back and appointment forms do not accept photos: they ask about a moment, not describing work.
+
+### Call-back requests
+
+A call-back request is for visitors who prefer a phone call: they leave their name and phone number, and the form does not require an email address at all. Call-back requests land in their own tab with a **Call back** button as the main action, and **Mark as called back** to complete one. When you turn the request into a quote and send it, the status follows the same lifecycle as any other request.
+
+Call-back is a per-form choice in the site builder; a workspace-wide default only covers the quote, message and appointment kinds. Handy for clients who do not use email: they ask through your site, you call them back.
 
 ### Responding to a request
 

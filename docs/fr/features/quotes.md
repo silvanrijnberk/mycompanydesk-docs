@@ -135,16 +135,19 @@ Vous recevez une notification dès que la facture d'acompte a été envoyée, at
 
 ## Demandes de devis
 
-Les clients peuvent soumettre des demandes de devis via votre [constructeur de site](/fr/advanced/business-page). Celles-ci apparaissent dans **Devis > Demandes**.
+Les clients peuvent soumettre des demandes via votre [constructeur de site](/fr/advanced/business-page). Celles-ci apparaissent dans **Devis > Demandes**, sur un onglet propre à chaque type : demandes de devis, messages, demandes de rendez-vous et demandes de rappel. Le type est inscrit sur la demande elle-même, si bien que l'e-mail, la notification et la boîte de réception le nomment comme le visiteur l'entend.
 
 ### Gerer les demandes
 
 Chaque demande affiche :
 
-- Nom et e-mail du client
-- Service demande ou description
+- Nom et e-mail du client (pour une demande de rappel : le téléphone, et un e-mail seulement si le formulaire le laisse facultatif)
+- Service demandé ou description
 - Date de soumission
 - Statut
+- Photos quand le visiteur en a envoyé (voir ci-dessous)
+
+La liste peut se limiter aux devis seuls, pour qu'un flot de messages n'enterre pas les devis qui restent ouverts.
 
 ### Statuts des demandes
 
@@ -152,8 +155,20 @@ Chaque demande affiche :
 |---|---|
 | **Nouvelle** | Vient d'etre recue, non examinee |
 | **Examinee** | Vous avez lu la demande |
-| **Devis envoye** | Vous avez envoye un devis en reponse |
+| **Devis envoye** | Vous avez répondu avec un devis (pour un message : répondu ; pour un rendez-vous : planifié ; pour un rappel : rappelé) |
 | **Fermee** | Demande resolue (acceptee ou refusee) |
+
+### Photos sur une demande
+
+Sur les formulaires de devis et de message, le constructeur de site peut activer **Les visiteurs peuvent envoyer des photos**. Un visiteur ajoute alors jusqu'à trois photos à la demande, chacune au maximum 10 Mo, en JPEG, PNG ou WebP. Une photo iPhone au format HEIC ou HEIF reçoit immédiatement un message qui demande un format courant. Les photos figurent sur la demande et s'ouvrent en pleine taille depuis celle-ci.
+
+Les formulaires de rappel et de rendez-vous n'acceptent pas de photos : ils demandent un moment, pas la description d'un chantier.
+
+### Demandes de rappel
+
+Une demande de rappel est pour les visiteurs qui préfèrent le téléphone : ils laissent leur nom et leur numéro, et le formulaire n'exige aucune adresse e-mail. Les demandes de rappel arrivent sur leur propre onglet, avec **Rappeler** comme action principale et **Marquer comme rappelé** pour les clôturer. Quand vous transformez la demande en devis et l'envoyez, le statut suit la même marche que pour toute autre demande.
+
+Le rappel est un choix propre à chaque bloc de formulaire dans le constructeur de site ; le réglage global de l'entreprise couvre seulement les types devis, message et rendez-vous. Pratique pour les clients sans e-mail : ils demandent via votre site, vous les rappelez.
 
 ### Repondre a une demande
 

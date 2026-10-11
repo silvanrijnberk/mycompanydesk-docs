@@ -1,7 +1,7 @@
 ---
 title: Website-Builder
 description: "Bauen Sie eine mehrseitige Unternehmenswebsite im Drag-and-drop-Editor: Abschnitte und Blöcke, eigene Farben und Schriften, und veröffentlichen."
-last_verified: 2026-10-02
+last_verified: 2026-10-11
 ---
 
 # Website-Builder
@@ -45,13 +45,13 @@ Das Banner verwendet das Gemini KI-Modell (Lite-Variante), sofern in Ihrem Works
 
 Bevor Sie überhaupt den Editor öffnen, kann der Website-Einrichtungsassistent Ihren ersten Entwurf für Sie erstellen. Er öffnet sich automatisch beim ersten Besuch von `/website` in einem neuen Workspace und lässt sich später unter **Unternehmen > Ihre Website > Stil** mit **Erneut einrichten** neu starten. Der Assistent stellt vier Fragen und zeigt dann optional einen Schritt für eine Webadresse an:
 
-1. **Was Sie tun** (aus Ihren KVK-Daten vorausgefüllt) - Ihre Arbeit, Dienstleistungen und Tonalität. Derselbe Schritt fragt auch, wie Kunden buchen können: Sie wählen selbst eine Zeit innerhalb Ihrer Öffnungszeiten, Sie senden eine Anfrage, die Sie bestätigen, oder gebucht wird nicht online. Hat Ihre Site bereits einen Terminblock, startet der Assistent im Modus dieses Blocks und richtet sich beim Abschließen nach Ihrer Wahl.
+1. **Was Sie tun** (aus Ihren KVK-Daten vorausgefüllt) - Ihre Arbeit, Dienstleistungen und Tonalität. Derselbe Schritt trägt Ihren echten Firmennamen (Pflicht, und gleich mit Ihren Unternehmensdaten gespeichert), Ihre Telefonnummer, Ihre Öffnungszeiten und die Adresse Ihrer Kontaktseite, und fragt auch, wie Kunden buchen können: Sie wählen selbst eine Zeit innerhalb Ihrer Öffnungszeiten, Sie senden eine Anfrage, die Sie bestätigen, oder gebucht wird nicht online. Hat Ihre Site bereits einen Terminblock, startet der Assistent im Modus dieses Blocks und richtet sich beim Abschließen nach Ihrer Wahl.
 2. **Was Sie wollen** - ob die Site vor allem Kunden gewinnen, Ihre Arbeit zeigen, vertrauenswürdig wirken oder online gefunden werden soll.
 3. **Logo** - das KI-generierte Logo behalten, oder Ihr eigenes PNG/SVG hochladen.
 4. **Markenfarbe** - eine der vorgeschlagenen Farben wählen oder Ihre eigene Hex-Farbe eingeben.
 5. **Webadresse** (nur wenn Ihr Workspace noch keine aktive Domain oder CNAME hat, die die Site bedient) — fügen Sie eine Domain hinzu oder verbinden Sie eine bestehende. Sie können diesen Schritt überspringen und später eine Adresse hinzufügen.
 
-Ihre Antworten werden als Site-Briefing gespeichert. Wenn Sie abschließen, schreibt die KI auf Basis des Briefings und Ihrer Workspace-Daten neuen Text für Ihren gesamten Entwurf, wendet Ihr gewähltes Logo und Ihre Markenfarbe an und lässt alles als Entwurf stehen. Es wird nichts automatisch veröffentlicht. Sie prüfen das Ergebnis im Editor und veröffentlichen es, sobald Sie zufrieden sind.
+Ihre Antworten werden als Site-Briefing gespeichert. Wenn Sie abschließen, schreibt die KI auf Basis des Briefings und Ihrer Workspace-Daten neuen Text für Ihren gesamten Entwurf, wendet Ihr gewähltes Logo und Ihre Markenfarbe an und lässt alles als Entwurf stehen. Es wird nichts automatisch veröffentlicht. Sie prüfen das Ergebnis im Editor und veröffentlichen es, sobald Sie zufrieden sind. Auf der Abschlusskarte passen Sie den Titel an, unter dem Ihre Site in Google erscheint, bevor Sie abschließen.
 
 Die Dienstleistungen in der ersten Frage können jeweils einen optionalen Preis erhalten. Geben Sie einen Betrag inklusive MwSt. ein, schalten Sie **ab** für einen Startpreis ein, oder lassen Sie das Feld leer: Ihre Site zeigt dann „Auf Anfrage“. Ein Preis, der bereits im Angebot steht, wird automatisch vorausgefüllt. Berechnet Ihr Workspace keine MwSt. (befreit oder KOR), heißt das Feld einfach Preis und der Hinweis erwähnt, dass die Preise keine MwSt. enthalten.
 
@@ -405,7 +405,7 @@ Im **Stil**-Tab steuern Sie das Erscheinungsbild Ihrer gesamten Site:
 - **Dunkelmodus**: Legen Sie fest, wie Ihre Site mit dunkler Darstellung umgeht. Drei Optionen: **Aus** (kein Dunkelmodus, die Site bleibt im hellen Farbschema), **Schaltfläche** (Besucher sehen einen Sonne/Mond-Umschalter in der Navigationsleiste und können das Thema wechseln, ihre Wahl wird lokal gespeichert), oder **System folgen** (die Site übernimmt automatisch die Betriebssystem-Einstellung des Besuchers über einen Live-Media-Query-Listener). Wenn der Dunkelmodus aktiviert ist, erscheint eine dunkle Farbpalette, in der Sie für jede Farbe eine nachtoptimierte Variante festlegen können. Lassen Sie die dunkle Palette leer, wendet die Site eine automatische Invertierung an, bei der Ihre Marken- und Akzentfarben erhalten bleiben.
 - **Typografie**: Wählen Sie Überschrift-, Text- und Mono-Schriften aus der integrierten Schriftbibliothek (Geist, Inter, DM Sans, DM Serif Display, Fraunces, Instrument Serif, Geist Mono).
 - **Selbst gehostete Schriften**: Alle Schriften werden von MyCompanyDesk selbst ausgeliefert, nicht von Google Fonts oder einem anderen Drittanbieter-CDN. Dieselben Schriftdateien werden in der Editor-Vorschau und auf Ihrer veröffentlichten Site verwendet, sodass die Schrift überall gleich aussieht und die IP-Adressen Ihrer Besucher in Ihrer eigenen Domain bleiben.
-- **Skalierung**: Legen Sie Eckenradius, Dichte (kompakt, luftig, großzügig), maximale Inhaltsbreite, vertikalen Abschnittsabstand und Kartenstil fest. Der Kartenstil steuert, wie Inhaltskarten über die Abschnitte hinweg gerendert werden: **Flach** (kein Rand), **Umrandet** (Standard, dünne Linie), **Schattiert** (weicher Schatten), **Schwebend** (starker Schatten), **Brut** (harte Linie mit versetztem Schatten), **Linie** (nur Kontur, keine Füllung) oder **Glas** (durchscheinende, mattierte Karte mit Hintergrund-Blur). Glas wirkt am besten über einem Foto, Farbverlauf oder dekorativen Streifen; auf einfachem Hintergrund fällt es auf eine sanft getönte Karte zurück.
+- **Skalierung**: Legen Sie Eckenradius, Dichte (kompakt, luftig, großzügig), maximale Inhaltsbreite, vertikalen Abschnittsabstand, die Textgröße für den Text, den Ihre Besucher lesen (**Normal**, **Groß** oder **Extra**), und Kartenstil fest. Der Kartenstil steuert, wie Inhaltskarten über die Abschnitte hinweg gerendert werden: **Flach** (kein Rand), **Umrandet** (Standard, dünne Linie), **Schattiert** (weicher Schatten), **Schwebend** (starker Schatten), **Brut** (harte Linie mit versetztem Schatten), **Linie** (nur Kontur, keine Füllung) oder **Glas** (durchscheinende, mattierte Karte mit Hintergrund-Blur). Glas wirkt am besten über einem Foto, Farbverlauf oder dekorativen Streifen; auf einfachem Hintergrund fällt es auf eine sanft getönte Karte zurück.
 - **Bewegung**: Aktivieren Sie reduzierte Bewegung oder wählen Sie einen Bewegungsstil (Aus, Dezente Überblendung, Hereingleiten).
 - **Schaltflächen**: Passen Sie Schaltflächenradius, Innenabstand und Hover-Effekte an.
 - **Navigationsleiste**: Legen Sie das Layout (Standard, zentriert, geteilt), den Hintergrundstil (durchgehend, transparent mit Blur, vollständig transparent) und das Aussehen der CTA-Schaltfläche (ausgefüllt, Umrandung, nur Text) fest. Die Navigationsleisteneinstellungen gelten für jede Seite.
@@ -433,7 +433,9 @@ Wenn Sie bereit sind:
 
 Unveröffentlichte Änderungen werden pro Seite und pro Token erfasst. Die Veröffentlichen-Schaltfläche ist deaktiviert, wenn nichts zu veröffentlichen ist. Das Umschalten einer Seite zwischen Live und Entwurf wird sofort gespeichert und zählt als unveröffentlichte Änderung, sodass die Veröffentlichen-Schaltfläche beim Umschalten aufleuchtet.
 
-Ganz gleich, ob Sie über die Übersicht, die Editor-Symbolleiste oder den Erste-Schritte-Bildschirm veröffentlichen: Sobald etwas auffällt, erscheint zuerst dieselbe Veröffentlichungswarnung. Sie listet jeden Punkt auf: ob Ihre Kontaktseite oder Ihr Fußbereich die E-Mail-Adresse zeigt, mit der Sie sich anmelden (mit einem Link für eine andere öffentliche E-Mail-Adresse oder einer Schaltfläche, um diese Adresse als gewollt zu bestätigen), und ob auf Ihren rechtlichen Seiten noch Felder fehlen, mit einem Link, der Ihre Firmendaten ausfüllt. Haben Sie die E-Mail-Adresse bestätigt und fällt sonst nichts auf, wechselt der Dialog in den neutralen Stand „Bereit zum Veröffentlichen“ und fragt nur noch nach Bestätigung.
+Ganz gleich, ob Sie über die Übersicht, die Editor-Symbolleiste oder den Erste-Schritte-Bildschirm veröffentlichen: Sobald etwas auffällt, erscheint zuerst dieselbe Veröffentlichungswarnung. Sie listet jeden Punkt auf: ob Ihre Kontaktseite oder Ihr Fußbereich die E-Mail-Adresse zeigt, mit der Sie sich anmelden (mit einem Link für eine andere öffentliche E-Mail-Adresse oder einer Schaltfläche, um diese Adresse als gewollt zu bestätigen), ob auf Ihren rechtlichen Seiten noch Felder fehlen, mit einem Link, der Ihre Firmendaten ausfüllt, und ob ein FAQ-Block noch Fragen ohne Antwort zählt, mit einem Link, der diesen Block zum Schreiben öffnet. Haben Sie die E-Mail-Adresse bestätigt und fällt sonst nichts auf, wechselt der Dialog in den neutralen Stand „Bereit zum Veröffentlichen“ und fragt nur noch nach Bestätigung.
+
+Die erste Veröffentlichung endet mit dem Moment „Ihre Website ist online“: **Ihre Site ansehen** und **Ihren Link teilen**, mit einem Kopierknopf für die Adresse, die Sie an Kunden weitergeben.
 
 Ein schneller Doppelklick kann nicht versehentlich veröffentlichen: Die Bestätigen-Schaltfläche in der Veröffentlichungswarnung ignoriert Klicks für einen Moment nach dem Öffnen, und ein zweiter Klick direkt nach dem ersten kann weder eine doppelte Veröffentlichung auslösen noch die Warnung überspringen.
 
@@ -515,12 +517,16 @@ Siehe [Domains, Website und Posteingang](/de/features/domains-website-inbox) fü
 
 ## Kontaktformular
 
-Der Kontaktformular-Block (`form` Abschnittstyp) verfügt über einen aktiven Submit-Handler. Wenn ein Besucher die von Ihnen konfigurierten Felder ausfüllt (Name, E-Mail, Telefon, Unternehmen, Nachricht) und auf Senden klickt, erstellt die Plattform eine Angebotsanfrage und benachrichtigt Ihren Workspace. Das Formular zeigt nach Abschluss ein Erfolgsbanner und bei Fehlern eine Inline-Fehlermeldung an. Alle Eingabefelder werden während des Sendens deaktiviert, um Doppelabsendungen zu vermeiden.
+Der Kontaktformular-Block (`form` Abschnittstyp) verfügt über einen aktiven Submit-Handler. Wenn ein Besucher die von Ihnen konfigurierten Felder ausfüllt (Name, E-Mail, Telefon, Unternehmen, Nachricht) und auf Senden klickt, erstellt die Plattform eine Anfrage und benachrichtigt Ihren Workspace. Das Formular zeigt nach Abschluss ein Erfolgsbanner und bei Fehlern eine Inline-Fehlermeldung an. Alle Eingabefelder werden während des Sendens deaktiviert, um Doppelabsendungen zu vermeiden.
+
+Im Inspektor wählen Sie die **Art der Anfrage** des Blocks: **Angebot** (eine Anfrage nach Arbeit), **Nachricht** (eine einfache Frage oder eine Vorstellung), **Termin** (eine Anfrage nach einem Moment in Ihrem Kalender), oder **Zurückrufen** (Name und Telefon, keine E-Mail nötig). Die leere Wahl folgt der unternehmensweiten Einstellung, die Sie unter **Website > Verbindungen** legen. Die Art entscheidet, wie Einreichungen in Ihrem Posteingang, in Benachrichtigungen und in Mails heißen, und jede Art bekommt ihren eigenen Reiter unter **Angebote > Anfragen**. Ein Rückrufformular tauscht das Pflichtfeld E-Mail gegen ein Pflichtfeld Telefon.
+
+Auf Angebots- und Nachrichtenformularen lässt **Besucher können Fotos mitschicken** einen Besucher bis zu 3 Fotos (je 10 MB, JPEG, PNG oder WebP) zur Anfrage geben. Siehe [Angebotsanfragen](/de/features/quotes#angebotsanfragen), was auf Ihrer Seite ankommt.
 
 Was beim Absenden passiert:
 
 1. Es werden nur die Felder gesendet, die der Block tatsächlich rendert. Wird das Namensfeld ausgeblendet, bricht das Backend nicht ab.
-2. Die Plattform erstellt eine Angebotsanfrage unter dem Unternehmen, das mit dem Site-Slug verknüpft ist.
+2. Die Plattform erstellt eine Anfrage (Art mit der Einreichung mitgestempelt) unter dem Unternehmen, das mit dem Site-Slug verknüpft ist.
 3. Sie erhalten eine Workspace-Benachrichtigung (derselbe Pfad wie die alte `/portal/quote-request` Route).
 4. Die Anfrage erscheint unter **Angebote > Anfragen**.
 5. Der Besucher sieht eine anpassbare Erfolgsmeldung.

@@ -1,11 +1,11 @@
 ---
 title: Berichte
-description: "Fünf gezielte Berichtsansichten plus eine Übersicht, die sie zusammenführt, jede mit Zahlen und Diagrammen an einer Stelle."
+description: "Fünf gezielte Berichtsansichten plus eine Übersicht, die fünf einfache Fragen beantwortet, jede mit Zahlen und Diagrammen an einer Stelle."
 ---
 
 # Berichte
 
-Verstehen Sie, wie Ihr Unternehmen dasteht, mit fünf fokussierten Berichtsansichten und einer Übersicht, die sie zusammenführt. Diagramme sind direkt in jeder Ansicht eingebettet, sodass jeder Bericht Zahlen und Visualisierungen an einem Ort vereint.
+Verstehen Sie, wie Ihr Unternehmen dasteht, mit fünf fokussierten Berichtsansichten und einer Übersicht, die zuerst die einfachen Fragen beantwortet. Diagramme sind direkt in jeder Ansicht eingebettet, sodass jeder Bericht Zahlen und Visualisierungen an einem Ort vereint.
 
 ## Navigation
 
@@ -15,15 +15,15 @@ Wählen Sie in der Seitenleiste **Berichte**. Auf dem Desktop wechseln Sie die A
 
 ### Übersicht
 
-Die Landing-Übersicht führt Ihre wichtigsten Kennzahlen für die gewählte Periode zusammen:
+Die Übersicht beantwortet fünf Fragen zur gewählten Periode, eine Karte pro Frage, jede mit einem Betrag, einem Satz Kontext und einem Link in den passenden Bericht:
 
-- Kopfkennzahlen: Umsatz, Gewinn mit Marge, offene Rechnungen, erfasste Stunden und Ausgaben
-- Ein Finanzübersichtsdiagramm (monatlich oder vierteljährlich)
-- Eine Alterungsaufschlüsselung unbezahlter Rechnungen mit einer Verknüpfung, um Erinnerungen zu senden
-- Ihre umsatzstärksten Kunden
-- Hinweis-Karten, die auf Handlungsbedarf aufmerksam machen, etwa überfällige Rechnungen oder eine knappe Gewinnmarge
+- **Wie viel habe ich verdient?** Umsatz der Periode, mit dem Anteil, der nach Kosten bleibt, bis auf die Cent pro Euro. Kosten höher als Umsatz? Die Karte nennt, um wie viel. Link zur Verkaufsansicht.
+- **Wer schuldet mir noch Geld?** Die offene Summe, verteilt über ihre Rechnungen, mit den überfälligen Rechnungen und ihrem gemeinsamen Betrag, sobald es welche gibt. Daneben sitzt die Alterungsaufschlüsselung; ist alles bezahlt, sagt die Karte das einfach. Ein Button öffnet die überfälligen Rechnungen direkt.
+- **Von wem bekomme ich die meeste Arbeit?** Ihr bester Kunde der Periode mit seinem Anteil am Umsatz, darunter die nächsten. Link zur Kundenansicht.
+- **Wie viel habe ich gearbeitet?** Erfasste Stunden der Periode, mit dem schon in Rechnung gestellten Anteil, wenn es einen gibt. Link zur Ansicht Arbeit und Zeit.
+- **Mehr wissen?** Ein Raster mit Links zu den übrigen Ansichten: was sich am meisten verkauft, wohin das Geld geht, wie viel Geld kommt, welche Angebote noch offen sind, welche Kunden weggeblieben sind, wie Sie gefunden werden, und die Schätzung der Einkommensteuer.
 
-Jeder Block verlinkt auf den passenden Detailbericht.
+Oben sitzt ein Button **Periode ändern**, neben dem Periodenlabel. Deeplinks nehmen ihre Periode mit: eine Dashboard-Kachel zu Gewinn oder Umsatz öffnet Berichte in derselben Periode, die die Kachel zeigte.
 
 ### GuV
 
