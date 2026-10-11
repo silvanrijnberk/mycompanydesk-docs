@@ -261,7 +261,11 @@ Siehe [Website-Builder](/de/advanced/business-page) für die vollständige Edito
 
 Der Posteingang ist eine Top-Level-Oberfläche unter `/inbox` (`apps/web/pages/inbox/index.vue`). Das Backend befindet sich in `apps/api/src/modules/inbox/*` und schreibt in separate Tabellen (`company_email_domains`, `company_mailboxes`, `email_threads`, `email_messages`, `email_attachments`, `email_events`).
 
-Wenn eine weitergeleitete Lieferantenrechnung aus einem Anhang in einen Ausgabenentwurf umgewandelt wird, wird die Ausgabe erst nach Ihrer Bestätigung gebucht. Fällt das Rechnungsdatum in eine bereits angegebene MwSt.-Periode, wird die automatische Buchung abgelehnt und statt der Rechnung stillschweigend zu verwerfen eine `inbox_expense_period_locked`-Benachrichtigung erstellt; die Benachrichtigung landet in der Posteingangsliste und nennt Lieferanten sowie Rechnungsdatum, sodass Sie die Ausgabe manuell in der aktuellen Periode buchen oder einen ergänzenden MwSt.-Voranmeldung einreichen können.
+Wenn eine weitergeleitete Lieferantenrechnung aus einem Anhang in einen Ausgabenentwurf umgewandelt wird, wird die Ausgabe erst nach Ihrer Bestätigung gebucht.
+
+Bevor die Rechnung gebucht wird, sieht die Regel auch nach den Ausgaben, die schon in Ihren Büchern stehen: Eine Rechnung kann zu einer bestehenden Ausgabe gehören, statt eine zweite zu werden, auch bei Handausgaben und Zahlungen in Fremdwährung. Der Lieferantenname trägt den Abgleich, mit dem Betrag und einem versetzten Fenster darum, denn eine Zahlung folgt der Rechnung oft erst Wochen später, und ein monatlicher Lieferant hält seine Euro-Lastschrift und seine nächste Rechnung rund einen Monat auseinander. Eine Rechnung in Dollar, Pfund oder Franken kann wenige Tage neben der Euro-Lastschrift desselben Lieferanten liegen, ganz ohne Wechselkurs im System. Ohne Namensnachweis koppelt die Regel die Rechnung nur an eine Bankausgabe desselben Betrags, und nur, wenn genau ein Kandidat passt. Eine Ausgabe, die schon einen Beleg hat, bekommt nie einen zweiten darüber; so eine Rechnung bucht in „Zu prüfen“, mit einer Notiz, die auf die bestehende Ausgabe zeigt, denn eine Mahnung, die als andere Datei ankommt, ist nicht zu unterscheiden. Die Aufholrunde auf dem Rechnungen-Tab beurteilt Rechnungsmails auch nach einer Änderung der Triage erneut: Rechnungen, die die Triage damals übersah, kommen wieder an die Reihe, und eine Störung nimmt Threads nie endgültig aus dieser Aufholrunde. Das Triage-Modell liest auch die Dateinamen der Anhänge.
+
+Fällt das Rechnungsdatum in eine bereits angegebene MwSt.-Periode, wird die automatische Buchung abgelehnt und statt der Rechnung stillschweigend zu verwerfen eine `inbox_expense_period_locked`-Benachrichtigung erstellt; die Benachrichtigung landet in der Posteingangsliste und nennt Lieferanten sowie Rechnungsdatum, sodass Sie die Ausgabe manuell in der aktuellen Periode buchen oder einen ergänzenden MwSt.-Voranmeldung einreichen können.
 
 Funktionen:
 
@@ -296,7 +300,7 @@ Funktionen:
 In der Office-Inbox gliedert der Posteingang eingehende Mail danach, was sie von Ihnen verlangt. Über der Liste stehen drei Reiter:
 
 - **Wartet auf dich**: Gespräche, in denen der Absender auf eine Antwort wartet. Liegt eine Nachricht schon einen vollen Tag zurück, zählt die Zeile die Wartetage. Post, die um keine Antwort bittet, bekommt keine Wartetage, egal wie lange sie liegt.
-- **Rechnungen**: Lieferantenrechnungen, die die Triage erkannt hat. Die Liste öffnet das Gespräch direkt auf der Rechnungskarte.
+- **Rechnungen**: Lieferantenrechnungen, die die Triage erkannt hat. Die Liste öffnet das Gespräch direkt auf der Rechnungskarte; eine Aufholrunde gibt älteren Rechnungsmails eine weitere Chance, sobald die Triage sich geändert hat.
 - **Sonstiges**: Newsletter und Systemmails, die Post, die Sie lesen, wenn Zeit übrig ist.
 
 Ein Reiter ohne Post verschwindet. Die Anzahlen auf den Reitern gelten für den ganzen Workspace. Ist alles beantwortet, was auf Sie gewartet hat, zeigt die Liste statt Zeilen eine ruhige Meldung „Alles erledigt“. In der Desk-Inbox, die auf Lesen und Antworten begrenzt ist, bleibt die Liste ein Ordner.

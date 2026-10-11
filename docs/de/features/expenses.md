@@ -65,6 +65,8 @@ Lassen Sie die KI Ausgabendetails automatisch aus Belegen extrahieren:
 4. Überprüfen Sie die extrahierten Daten (Datum, Betrag, Lieferant, Beschreibung)
 5. Bestätigen Sie, um die Ausgabe(n) zu erstellen
 
+Steht für einen gescannten Beleg schon eine Ausgabe in Ihren Büchern, meist die Bankbuchung derselben Zahlung, trägt die Prüfkarte den Button **Bon hieraan toevoegen** (für eine Ausgabe, die noch keinen Beleg hat): der Beleg hängt dann an der bestehenden Ausgabe, statt eine zweite zu buchen, und die Zeile fällt aus der Prüfung. Doppelte Beträge auf einem Beleg werden markiert und bleiben getrennte Kosten. Siehe [Belege scannen](/de/advanced/receipt-scanning) für die Einzelheiten.
+
 ::: info
 Der Belegscanner ist in jedem Tarif verfügbar, auch in Desk. Die Anzahl der Scans pro Monat hängt von Ihrem Tarif ab: 3 in Desk und 200 in Office. Der USt.-Satz einer neuen Ausgabe beginnt mit Ihrer Standard-Arbeitsbereichseinstellung.
 :::
@@ -163,7 +165,7 @@ Auf der Ausgabendetailseite erscheint eine Zeile **Verknüpfte Rechnung**, sobal
 
 ## Massenaktionen
 
-Wählen Sie mehrere Ausgaben für:
+Wählen Sie mehrere Ausgaben für die Sammelarbeit. Während einer Auswahl erscheint eine Spalte mit Häkchen in der Liste; außerhalb einer Auswahl gibt es keine Häkchen, und an eine leere Liste hängt gar kein Auswahl-Button. Ihre Sortierung in der Liste bleibt gemerkt und übersteht ein Neuladen.
 
 - **Kategorisieren** - Kategorie in großem Umfang ändern
 - **Archivieren** - Ins Archiv verschieben. Wenn Sie mehrere unbezahlte Ausgaben mit Fälligkeitsdatum auf einmal archivieren, werden deren offene Zahlungserinnerungen pausiert. Die Massenaktionsleiste zeigt vorher eine Bestätigung, sobald eine ausgewählte Ausgabe unbezahlt ist und ein Fälligkeitsdatum hat, damit Sie wissen, wie viele der ausgewählten Ausgaben ihre Erinnerung verlieren. Solange die Ausgaben archiviert sind, bleibt die Erinnerung aus. Stellen Sie eine archivierte Ausgabe später wieder her, wird die Erinnerung beim nächsten täglichen Lauf neu angelegt, aber frühestens in der folgenden Nacht.

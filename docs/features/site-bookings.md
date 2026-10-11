@@ -73,6 +73,8 @@ Onder de datum ziet de bezoeker of die dag nog vrij is. Het antwoord komt uit je
 
 Bezoekers kunnen geen datum uit het verleden opsturen, en een datumveld op een gewoon aanvraagformulier weigert verleden data op dezelfde manier.
 
+Het blok kan aanvragen ook een eigen tempo meegeven. Bij de blokinstellingen stelt **Minimaal van tevoren aanvragen (dagen)** (aangeboden bij alleen-een-datum) hoeveel hele dagen vooruit de eerste datum uit de dagkiezer begint: 0 = vanaf vandaag, en een eerdere datum is gewoonweg niet te kiezen. Staat er een tijd op het blok, dan weigert **Minimaal van tevoren aanvragen (uren)** een aanvraag voor een eerder moment. Zonder waarde is er geen termijn op de regel tegen het verleden na; de dagkiezer en de server passen dezelfde regel toe, dus wat de site aanbiedt en wat opgeslagen wordt komen nooit tegen elkaar te spreken. Met alleen een datum begrenst **Maximaal aantal aanvragen per week (optioneel)** de open of geaccepteerde aanvragen van dit blok voor dagen in één week (maandag tot en met zondag); zit de week vol, dan staan de dagen van die week op je site als niet vrij, en een aanvraag die je op Gesloten zet telt niet meer mee. Leeg of 0 betekent geen maximum. In de bevestiging staat naast de datum ook de weekdag, zodat een aanvraag met een dagennaam binnenkomt en niet alleen als blote datum.
+
 ## Groepsafspraken
 
 Niet elke boeking is één klant op een vrij moment van zijn keuze. Een **groepsafspraak** (een workshop, les of rondleiding) heeft één vaste tijd en een aantal plekken, en er kunnen tegelijk meerdere klanten mee. Je plant de sessies in de agenda onder **Groepsafspraken**:

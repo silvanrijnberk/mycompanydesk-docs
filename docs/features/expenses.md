@@ -79,6 +79,8 @@ Laat AI automatisch uitgavegegevens uit bonnen extraheren:
 4. Controleer de geextraheerde gegevens (datum, bedrag, leverancier, omschrijving)
 5. Bevestig om de uitgave(n) aan te maken
 
+Staat er voor een gescande bon al een uitgave in je boeken, meestal de bankboeking van diezelfde betaling, dan draagt de controlekaart de knop **Bon hieraan toevoegen** (voor een uitgave die nog geen bon heeft): de bon hangt dan aan de bestaande uitgave in plaats van dat er een tweede wordt geboekt, en de rij valt uit de beoordeling. Dubbele bedragen op één bon worden gevlagd en blijven losse kosten. Zie [Bonnen scannen](/advanced/receipt-scanning) voor de details.
+
 ::: info
 Bonnen scannen is beschikbaar op elk abonnement, ook op Desk. Het aantal scans per maand hangt af van je abonnement: 3 op Desk en 200 op Office. Het btw-tarief op een nieuwe uitgave begint bij je standaard werkruimte-instelling.
 :::
@@ -145,7 +147,7 @@ Op de uitgavedetail staat een regel **Gekoppelde factuur** zodra hij aan een fac
 
 ## Bulkacties
 
-Selecteer meerdere uitgaven voor:
+Selecteer meerdere uitgaven voor bulkwerk. Tijdens een selectie verschijnt er een vinkjeskolom in de lijst; buiten een selectie zijn er geen vinkjes, en aan een lege lijst hangt helemaal geen selecteerknop. Je sortering op de lijst wordt onthouden en overleeft een herladen.
 
 - **Categoriseren** - Wijzig categorie in bulk
 - **Archiveren** - Verplaats naar archief. Als je meerdere onbetaalde uitgaven met een vervaldatum tegelijk archiveert, vallen hun openstaande betaalherinneringen stil. De bulkbalk toont eerst een bevestiging zodra een van de geselecteerde uitgaven onbetaald is én een vervaldatum heeft, zodat je weet hoeveel van de geselecteerde uitgaven hun herinnering kwijtraken. Zolang de uitgaven gearchiveerd zijn, blijft de herinnering uit. Zet je een gearchiveerde uitgave later terug, dan maakt de dagelijkse sweep de herinnering opnieuw aan, maar pas de volgende nacht op zijn vroegst.

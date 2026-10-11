@@ -93,7 +93,7 @@ If your plan does not include automatic time invoicing, it stays paused; the not
 
 ## Bulk actions
 
-Select multiple entries in the list view (long-press on mobile) to act on them at once:
+Select multiple entries in the list view (long-press on mobile) to act on them at once. While the selection runs a checkbox column sits in the list, and a tap on the row itself ticks it during a selection; outside the selection there is no checkbox column.
 
 - **Mark billable** or **Mark not billable**
 - **Archive**

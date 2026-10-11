@@ -77,6 +77,7 @@ The final step confirms your trial:
 ## Skipping, resuming and re-running
 
 - **Skip:** **Leave for now** exits to the dashboard at any point. `/setup` stays the way back until setup is finished.
+- **Website first** (Eerst mijn website maken): a second exit sits in the footer of the first step, beside Skip. It leaves the setup without finishing and opens the website setup wizard directly; unlike the plain skip it keeps the Finish your website task on the dashboard open, because no site exists yet to finish.
 - **Resume:** answers are saved on every change. Closing the tab mid-step loses nothing; the next visit continues on the same step.
 - **Re-run:** after finishing, `/setup` starts the flow again from the first step with your saved answers. The wizard fills blanks rather than overwriting: a services list you built, a logo you uploaded or settings you chose by hand are not replaced.
 

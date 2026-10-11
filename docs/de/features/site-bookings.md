@@ -73,6 +73,8 @@ Unter dem Datum sieht der Besucher, ob dieser Tag noch frei ist. Die Antwort kom
 
 Besucher können kein Datum aus der Vergangenheit senden, und ein Datumsfeld auf einem gewöhnlichen Anfrageformular lehnt Vergangenes auf dieselbe Weise ab.
 
+Der Block kann Anfragen auch ein eigenes Tempo geben. In den Blockeinstellungen stellt **Minimaal van tevoren aanvragen (dagen)** (nur bei nur-ein-Datum) ein, wie viele ganze Tage voraus der erste Datumsvorschlag der Tagauswahl beginnt: 0 = ab heute, ein früheres Datum ist schlicht nicht wählbar. Liegt eine Zeit auf dem Block, lehnt **Minimaal van tevoren aanvragen (uren)** eine Anfrage für einen früheren Moment ab. Ohne Wert gilt keine Frist außer der Regel gegen die Vergangenheit; Tagauswahl und Server wenden dieselbe Regel an; was die Site anbietet und was gespeichert wird, widerspricht sich nie. Bei nur-ein-Datum begrenzt **Maximaal aantal aanvragen per week (optioneel)** die offenen oder angenommenen Anfragen dieses Blocks für Tage in einer Woche (Montag bis Sonntag); ist die Woche voll, erscheinen die Tage dieser Woche auf Ihrer Site als nicht frei, und eine Anfrage, die Sie auf geschlossen setzen, zählt nicht mehr mit. Leer oder 0 heißt kein Maximum. In der Bestätigung steht neben dem Datum auch der Wochentag, sodass eine Anfrage mit einem Tagesnamen ankommt und nicht nur als nackte Zahl.
+
 ## Gruppentermine
 
 Nicht jede Buchung ist ein Kunde zu einer frei gewählten Zeit. Ein **Gruppentermin** (ein Workshop, ein Kurs, eine Führung) hat eine feste Zeit und eine Anzahl von Plätzen, und mehrere Kunden können gleichzeitig teilnehmen. Sie planen die Sitzungen im Kalender unter **Gruppentermine**:

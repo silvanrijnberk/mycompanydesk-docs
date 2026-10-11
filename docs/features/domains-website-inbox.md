@@ -261,7 +261,9 @@ Zie [Sitebouwer](/advanced/business-page) voor de volledige editorgids.
 
 De inbox is een top-level weergave op `/inbox` (`apps/web/pages/inbox/index.vue`). De backend bevindt zich in `apps/api/src/modules/inbox/*` en schrijft naar aparte tabellen (`company_email_domains`, `company_mailboxes`, `email_threads`, `email_messages`, `email_attachments`, `email_events`).
 
-Als een doorgestuurde leveranciersfactuur vanuit een bijlage wordt omgezet naar een conceptuitgave, wordt de uitgave pas geboekt nadat je hem bevestigt. Als de factuurdatum in een btw-periode valt die al is aangegeven, wordt de automatische boeking geweigerd en wordt er een `inbox_expense_period_locked`-melding aangemaakt in plaats van de factuur stilzwijgend te laten verdwijnen. De melding belandt op de inboxlijst en noemt de leverancier en factuurdatum, zodat je de factuur handmatig in de huidige periode kunt boeken of een suppletieaangifte kunt indienen.
+Als een doorgestuurde leveranciersfactuur vanuit een bijlage wordt omgezet naar een conceptuitgave, wordt de uitgave pas geboekt nadat je hem bevestigt.
+
+Voordat de rekening geboekt wordt, kijkt de regel ook naar de uitgaven die al in je boeken staan: een factuur kan bij een bestaande uitgave horen in plaats van een tweede te worden, ook bij zelf ingevoerde uitgaven en betalingen in vreemde valuta. De leveranciersnaam draait de match, met het bedrag en een scheef venster eromheen, want een betaling volgt zijn factuur vaak pas weken later en een maandelijkse leverancier houdt zijn euro-afschrijving en zijn volgende factuur ruwweg een maand uit elkaar. Een factuur in dollars, ponden of franken kan enkele dagen naast de euro-afschrijving van dezelfde leverancier landen, zonder wisselkoers in het systeem. Zonder naambewijs koppelt de regel de factuur alleen aan een bankuitgave met hetzelfde bedrag, en alleen als er precies één kandidaat past. Een uitgave die al een bon heeft, krijgt er nooit een tweede overheen; zo'n factuur boekt in Te controleren, met een notitie die naar de bestaande uitgave wijst, want een herinnering die als ander bestand binnenkomt is niet te onderscheiden. De inhaalslag op het tabblad Rekeningen beoordeelt factuurmails ook opnieuw na een wijziging van de triage: rekeningen die de triage destijds miste krijgen nog een kans, en een storing haalt threads nooit voorgoed uit die inhaalslag. Het triagemodel leest ook de bestandsnamen van de bijlagen. Als de factuurdatum in een btw-periode valt die al is aangegeven, wordt de automatische boeking geweigerd en wordt er een `inbox_expense_period_locked`-melding aangemaakt in plaats van de factuur stilzwijgend te laten verdwijnen. De melding belandt op de inboxlijst en noemt de leverancier en factuurdatum, zodat je de factuur handmatig in de huidige periode kunt boeken of een suppletieaangifte kunt indienen.
 
 Mogelijkheden:
 
@@ -296,7 +298,7 @@ Mogelijkheden:
 In de Office-inbox groepeert Postvak IN binnenkomende mail op wat het van je vraagt. Boven de lijst staan drie tabs:
 
 - **Wacht op jou**: gesprekken waarin de afzender op een antwoord wacht. Staat een bericht al een hele dag te wachten, dan telt de rij de dagen mee. Mail die niet om een antwoord vraagt, krijgt geen dagteller, hoe lang hij ook ligt.
-- **Rekeningen**: leveranciersfacturen die de triage herkend heeft. De lijst opent het gesprek meteen op de rekeningkaart.
+- **Rekeningen**: leveranciersfacturen die de triage herkend heeft. De lijst opent het gesprek meteen op de rekeningkaart; een inhaalslag geeft oudere rekeningmails opnieuw een kans zodra de triage is gewijzigd.
 - **Overig**: nieuwsbrieven en systeemmails, de post die je leest als er tijd over is.
 
 Een tab zonder post verdwijnt. De tellingen op de tabs gelden de hele werkruimte. Heb je alles beantwoord wat op je wachtte, dan toont de lijst in plaats van rijen een rustige melding "Alles gedaan". In de Desk-inbox, die beperkt is tot lezen en antwoorden, blijft de lijst één map.

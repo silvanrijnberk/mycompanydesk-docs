@@ -105,7 +105,11 @@ Vous pouvez modifier la dépense par la suite comme n'importe quelle dépense cr
 
 Le scanner reconnaît quand un document est dans une devise autre que l'euro. Dans ce cas, la carte de vérification affiche le montant original avec sa devise et un champ séparé où vous saisissez le montant en euros tel que votre banque l'a converti. Les lignes en devise étrangère ne peuvent être confirmées que lorsque le montant en euros est renseigné. Si le document est déjà en euros, la carte affiche "C'est juste de l'euro" et le processus reste inchangé.
 
-Quand le scanner pense qu'un reçu a déjà été saisi, il affiche un avertissement avec la date, le fournisseur et le montant de la dépense existante. Vous pouvez ouvrir cette dépense ou choisir de saisir le reçu à nouveau si l'avertissement est erroné. Cette vérification est une protection souple, pas un blocage dur ; elle empêche seulement de saisir deux fois le même reçu par inadvertance.
+Quand le scanner pense qu'un reçu a déjà été saisi, il affiche un avertissement avec la date, le fournisseur et le montant de la dépense existante. Vous pouvez ouvrir cette dépense ou choisir de saisir le reçu à nouveau si l'avertissement est erroné ; l'enregistrement demande alors encore une fois, avec « Deux fois la même dépense ? », avant de saisir. Cette vérification est une protection souple, pas un blocage dur ; elle empêche seulement de saisir deux fois le même reçu par inadvertance.
+
+Qu'une dépense existe déjà dans vos livres pour le reçu numérisé, ou tout proche, la carte de vérification porte le bouton **Bon hieraan toevoegen** (tant que cette dépense n'a pas encore de reçu) : le reçu s'attache comme pièce à la dépense existante au lieu d'en saisir une deuxième, la ligne disparaît de la vérification, et à la dernière ligne vous atterrissez directement sur cette dépense. Une dépense qui porte déjà un reçu n'en reçoit jamais un deuxième par-dessus.
+
+Les lignes d'un même reçu restent des coûts séparés : trois tickets de parking identiques sur un même reçu se saisissent comme trois coûts, et le montant doublé est signalé au lieu d'être passé sous silence. Quand tout le lot figure déjà dans vos livres, la confirmation le dit, au lieu de tout saisir une deuxième fois.
 
 Le scanner peut aussi reconnaître vos propres factures de vente et avertir que le document ressemble plutôt à une facture de vente qu'à une dépense. Cet avertissement ne bloque pas ; vous pouvez toujours continuer s'il s'agit d'un retour ou d'une correction.
 

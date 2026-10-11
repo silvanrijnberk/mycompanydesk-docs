@@ -33,7 +33,7 @@ When you open the site builder for the first time on a fresh workspace, the edit
 
 What the banner can do for you:
 
-- **Generate**: Click **Generate suggestion** to let the AI read your KVK data and propose copy.
+- **Generate**: Click **Generate suggestion** to let the AI read your KVK data and propose copy. What comes out sticks to what you gave it: it does not invent a story about you on the About page.
 - **Edit inline**: Adjust the tagline, about text and service names and descriptions right in the banner.
 - **Accept**: Click **Apply** to write the accepted copy to your workspace. Your company description, hero tagline and services are updated in one go.
 - **Regenerate**: Not happy with the result? Click **Regenerate** for a fresh set of suggestions.
@@ -45,18 +45,18 @@ The banner uses the Gemini AI model (lite variant) when available on your worksp
 
 Before you ever open the editor, the website setup wizard can build your first draft for you. It opens automatically the first time a new workspace visits `/website`, and you can restart it later from **Company > Your website > Style** by clicking **Set up again**; on a restart it starts from what is already true. It runs these steps:
 
-1. **What you do** (pre-filled from your KVK data) - your work, services and tone. The same step carries your business name (required, saved together with your company details), phone number, opening hours (with quick picks for weekdays, the weekend, or every day), the address your contact page shows, and the address customers may e-mail you on, asked as **Email address for customers** with a checkbox for whether your site shows it. Your login address is prefilled there but only lands on your site while the show-it box stays on; changing the address updates your company details (and your invoices) with it.
+1. **What you do** (pre-filled from your KVK data) - your work, services and tone. The same step carries your business name (required, saved together with your company details), phone number, WhatsApp (yes, with the same number as your phone, or another number), opening hours (with quick picks for weekdays, the weekend, or every day, and the times set per day), the address your contact page shows, and the address customers may e-mail you on, asked as **Email address for customers** with a checkbox for whether your site shows it. Your login address is prefilled there but only lands on your site while the show-it box stays on; changing the address updates your company details (and your invoices) with it.
 2. **What you want** - whether the site should bring in leads, showcase your work, build credibility or get found online.
-3. **Light or dark, and colour** - the wizard first asks whether your site should come out light or dark, then offers named colour swatches or your own hex colour. The generated logo preview follows your pick straight away.
+3. **Light or dark, and colour** - the wizard asks whether your site should come out light or dark, then offers colour sets with gentle, softer shades, a deep blue among the dark options, or your own hex colour. The generated logo preview follows your pick straight away, so the colour step sits before the logo step.
 4. **Logo** - keep the AI-generated logo, upload your own PNG/SVG, or use just your business name as a text logo.
-5. **Your own photos** (optional) - add up to six photos of your own work. The first lands at the top of your home page, the next ones on the page about you, and from four photos the site also builds a photo gallery out of them. Skip this step and the site gets example photos you can replace later.
+5. **Your own photos** (optional) - add up to six photos of your own work. The first lands at the top of your home page, the next ones on the page about you, and from two photos the site also builds a photo gallery out of them. Skip this step and the site gets example photos you can replace later.
 6. **Web address** (only when your workspace does not already have an active domain or CNAME serving the site). Add or connect the domain where your site will live. You can skip this step and set up an address later; a site that is already live keeps its address.
 
 Your answers are saved as the site brief. When you finish, the AI writes fresh copy for your whole draft site based on the brief and your workspace data, applies your chosen logo and brand colour, and leaves everything as a draft. Nothing is published automatically. You review the result in the editor and publish when you are happy with it. On the closing card you can adjust the title your site carries in Google before you finish. The finishing run takes about half a minute; leave the screen open, it tells you which stage it is working through.
 
-The services in the first question each take an optional price with a choice between **incl. VAT** and **excl. VAT**: the site always shows what the customer pays, so an amount entered excluding VAT is converted at that item's VAT rate, and when your workspace charges no VAT (exempt or small business scheme) the field simply reads Price and the hint notes that the prices carry no VAT. Each price also takes a unit (per hour, per person) and the row previews the line a visitor will see. Switch on **from** for a starting price, or leave the field empty and your site shows "On request". A price already set in your offering is filled in automatically, and each service carries a tick for whether customers can book it online.
+The services in the first question each take an optional price with a choice between **incl. VAT** and **excl. VAT**, and a preview under the field shows exactly what a visitor will see for it. By default the site shows what the customer pays, so an amount entered excluding VAT is converted at that item's VAT rate; a workspace-wide switch on the site builder blocks, described under [Pricing tiers with buy buttons](#pricing-tiers-with-buy-buttons), can flip the whole site to showing prices without VAT instead. When your workspace charges no VAT (exempt or small business scheme) the field simply reads Price and the hint notes that the prices carry no VAT; type all prices excluding VAT and they appear on the site that way. Each price also takes a unit (per hour, per person) and the row previews the line a visitor will see. Switch on **from** for a starting price, or leave the field empty and your site shows "On request". A price already set in your offering is filled in automatically, and each service carries a tick for whether customers can book it online.
 
-When the booking question is on **Customers pick a time themselves**, the service list also asks how long each appointment lasts. Every service starts with a suggested duration in minutes, based on the name of the service and the work you described in the wizard: a plain cut gets a smaller suggestion than colouring, and a dog salon gets a longer one. Each suggestion is yours to change, and a duration already set in your offering is filled in automatically. A duration is a whole number of minutes between 5 and 480. A service without a duration cannot be booked online: clearing the field keeps the service on your site, but the appointments block no longer offers it to customers as a bookable time. The booking question itself now knows four answers: customers pick a time themselves, they send a request that you confirm, they sign up for a fixed session (a workshop, a class or a guided walk), or there is no online booking. A sign-up is built with your first date, sign-up closes two hours before the start, and customers pay on the spot; leave the date empty and you plan the sessions later in the agenda under **Groepsafspraken**. If your site already has an appointments block, the wizard starts on the mode that block uses and follows your choice when you finish.
+When the booking question is on **Customers pick a time themselves**, the service list also asks how long each appointment lasts. Every service starts with a suggested duration in minutes, based on the name of the service and the work you described in the wizard: a plain cut gets a smaller suggestion than colouring, and a dog salon gets a longer one. Each suggestion is yours to change, and a duration already set in your offering is filled in automatically. A duration is a whole number of minutes between 5 and 480. A service without a duration cannot be booked online: clearing the field keeps the service on your site, but the appointments block no longer offers it to customers as a bookable time. The booking question itself now knows five answers: customers pick a time themselves, they send a request that you confirm, they sign up for a fixed session (a workshop, a class or a guided walk), they ask you for a quote (they describe the job, photos can come along, and the request lands in your inbox), or there is no online booking. A sign-up is built with your first date, sign-up closes two hours before the start, and customers pay on the spot; leave the date empty and you plan the sessions later in the agenda under **Groepsafspraken**. If your site already has an appointments block, the wizard starts on the mode that block uses and follows your choice when you finish.
 
 You can also stop halfway: click **Finish later** or reload, and your answers are still there when you return. The wizard keeps what you changed on that device for about a week, and restores a saved answer only while the underlying value is unchanged; if company details or services changed in the meantime, from Settings or another device, the current value wins.
 
@@ -142,6 +142,10 @@ When you open a bespoke page in the editor, the **Sections** panel now offers th
 
 Click **Add section** to open the picker, choose the kind you want, and the section drops onto the page with sensible defaults. The inspector on the right shows the fields for the selected section, whether they come from your workspace data or from the section's own content props. You can reorder, hide, or remove added sections the same way as the design's own sections.
 
+### Address, map, service area and parking on the contact page
+
+The contact page shows where you work and how to reach it. The **Locaties** block falls back to your business address when you have no locations of your own, and a contact block leaves out an address that a Locaties block already shows on the same page. A new contact page no longer starts with an empty Locaties block. A map (**Kaart tonen**) is drawn from your address when you want one, **Werkgebied** (work area) is one of the presets in Add section when you want to show where you come to your customers, and the access section is named **Bereikbaarheid en parkeren** (access and parking).
+
 ### Renaming pages
 
 Template pages have a fixed address and a menu label that is baked into the design's markup. Rather than editing every link by hand, the **Pages** panel lets you rename the menu label of any template page. Click the pencil next to a page, type the new label, and every link to that page in the navigation and footer updates automatically. The page address itself does not change, so no redirect is needed and existing links keep working.
@@ -153,6 +157,12 @@ If you clear the field or type the design's original name back, the rename is re
 Designs contain small pieces of literal text, such as kickers, captions, and micro-headings, that are not connected to your workspace data. In edit mode these text snippets are editable on the canvas: click the text, type the change, and press Enter or click outside to save. The override is stored per section and per page, and the public site shows your version instead of the design's original words.
 
 Text inside repeating blocks is not editable this way, because one static path would change every repeated item. Editing is also limited to text that sits inside a section, so there is always a stable address for the override. To undo a change, clear the field or type the design's original text back.
+
+Headings that the wizard, a rewrite or a fresh section write for you come out in sentence form, so a heading reads like a sentence; whole names such as your company or a brand keep their own capitals.
+
+### The form of address on your site (Aanspreekvorm)
+
+Your site answers its visitors in a form of address you choose: **Je en jij** (personal: "Ik help je graag.") or **U** (polite: "Ik help u graag."). The choice lives in the website wizard's first step and on the card **Aanspreekvorm op je website** under Instellingen → Bedrijfsgegevens; both write the same setting. Fixed texts on the site, such as buttons, form lines and thank-you messages, follow the choice at once. What you or the text writer already wrote keeps its own voice; the button on that card, **Zet alle teksten om naar je** or **Zet alle teksten om naar u**, converts everything standing on the site in one run, your own typed text included, changing only the form of address and not the content. The result tells you how many texts were adjusted and which stayed standing, and a publish puts them live. Sections you add later take the form of address the site already carries, and the legal pages, the privacy policy and the terms, render in the chosen form too. For a one-person business the fixed texts speak as ik (I) instead of we; the wizard asks your first name for that voice, and never introduces you with your company name.
 
 ## Creating pages
 
@@ -222,6 +232,8 @@ When you open the image upload field in any section block (hero, spotlight, team
 - Results appear in a grid. Click any photo to insert it as your section image.
 - The search is proxied through the MyCompanyDesk server, so your Unsplash access key never reaches the browser.
 - Attribution is tracked automatically per Unsplash's API guidelines and rendered on your published site. The "Foto's: `photographer` · Unsplash" credit line in the footer names the photographers of the stock photos a visitor actually sees on the published site: a service card that picked up your own photo from your offering no longer earns a credit, the same photographer is named once, and photos you replaced drop out.
+
+Alt text follows your own photos: an upload's alt comes from the image file's name (place names kept whole, at most 200 characters), and you can replace that alt afterwards, on an upload as well as on a stock photo already in place.
 - If Unsplash is not configured on your workspace, the Stockfoto button stays hidden so you never see a broken feature.
 
 ## Saved blocks
@@ -307,6 +319,8 @@ The pricing section lets you list your plans or packages. Each tier can optional
 
 Pricing sections can also render as a feature comparison matrix. Switch the layout variant to **Comparison table** in the inspector. The matrix shows each tier as a column and every feature from all tiers as a row, with check marks where a tier includes the feature. This makes plan-to-plan comparison easy at a glance. See [Section layout variants](#section-layout-variants) for the full options.
 
+Blocks that show catalog prices, services, products, subscriptions or pricing tiers, carry **Prijzen op je website: inclusief / exclusief btw** in the inspector, saved workspace-wide. On the default, including, your site shows what the customer pays, and a structured price carries its own small label (including VAT, or exempt when your workspace charges no VAT) so the amount is never ambiguous. The excluding choice prints the typed amount without VAT with an **excl. btw** label: on service cards, in the pricing block, in the appointment block's service list and on group sessions. Free, On request and your own website text stay untouched, and what a visitor actually pays at checkout, through a deposit, a product buy button or an online payment, remains including VAT. Saving re-bakes the published site.
+
 ### Product block
 
 A standalone single-item buy card, for when a full pricing table is more than you need:
@@ -323,6 +337,7 @@ The **Keurmerken** block shows your company's certifications and quality marks (
 
 - **Caption**: "Certificeringen en keurmerken" by default. Type your own caption, or leave it empty for a block without a heading.
 - **Style**: white tiles (default) or plain. **Size**: small, medium, or large.
+- A certification is fine without an image: a name-only mark shows as its name on the site and in the text version of your e-mails. An image stays optional; when you place one, it goes through the usual trimming and conversions.
 - Up to six certifications; order, name, and link are set under Instellingen → Bedrijfsgegevens. When you add your first certification, MyCompanyDesk automatically places a Keurmerken block on your homepage, as a draft: before a closing call-to-action if that is the last block, otherwise at the bottom before the footer. It is not published right away; you publish. If your site already has a certifications section, no second one is added.
 - If the list is empty, or **Tonen op je website** is switched off under Instellingen → Bedrijfsgegevens, the block hides itself on the published site. The editor also tells you when certifications are switched off for the website.
 - When you remove a certification, the file is kept and email that already went out keeps showing the logo; the block only hides itself once the list is completely empty.
@@ -331,7 +346,7 @@ Source: `packages/shared/src/site-blocks/registry.ts#keurmerken`; `apps/api/src/
 
 ### Catalog sections
 
-Some bespoke templates include a live catalog section that pulls items straight from your Aanbod catalog. If the current page structurally repeats over services, products, or subscriptions, the content editor shows a **Catalog** panel for each kind that is actually used on that page.
+Some bespoke templates include a live catalog section that pulls items straight from your Aanbod catalog. If the current page structurally repeats over services, products, or subscriptions, the content editor shows a **Catalog** panel for each kind that is actually used on that page. A description you type for a service is one text: the services section on your home page and the services page share it, so a fix lands in both at once. Re-baking the site never puts a service card's draft text live: until you publish, the cards keep the text they had.
 
 The panel lives outside the template frame, so it never interferes with the template's own styling. From here you control only the presentation of the catalog on this site:
 
@@ -412,7 +427,7 @@ In the **Style** tab, you control the look and feel of your entire site:
 - **Navbar**: Set the layout (standard, centered, split), background style (solid, translucent blur, transparent), and CTA button appearance (filled, outline, text-only). The navbar settings apply to every page.
 - **Phone & call bar**: Add a clickable phone number to your navigation bar. When set, the phone number appears beside the CTA button on desktop and in the mobile navigation drawer. Enable the **Mobile call bar** toggle to pin a fixed "tap to call" button at the bottom of the screen on mobile devices, so visitors can reach you with one tap regardless of where they are on the page. The phone label defaults to "Call us" when left empty. The call bar can also carry WhatsApp next to the call button: it takes the WhatsApp number the rest of your site already carries, a WhatsApp button (hero or closing block), a contact block that includes WhatsApp, or the floating contact button, while a WhatsApp number set on the navigation block itself wins. On desktop WhatsApp stays reachable through the floating contact button; on mobile the button leaves WhatsApp out as soon as the bar shows it, so WhatsApp never appears twice on one screen.
 - **Reading progress bar**: Show a thin progress indicator at the top of every page as visitors scroll. The bar uses your brand color and can be turned on or off from the Style tab.
-- **Custom CSS**: Write your own CSS that gets injected into the site. Useful for fine-tuning or overriding defaults.
+- **Custom CSS**: Write your own CSS that gets injected into the site. Useful for fine-tuning or overriding defaults. It sits at the bottom of the Style tab, under a strip titled **Voor gevorderden** (for advanced users) that carries a short explanation with it.
 - **Favicon**: Upload a favicon for your site. It is shown in browser tabs and bookmarks. If not set, the site falls back to your light logo, then your business profile picture.
 - **Head snippets**: Add analytics scripts (Plausible, Umami, Matomo) or font preconnects via the snippet picker.
 
@@ -440,7 +455,7 @@ From whichever entry point you publish, the overview, the editor toolbar or the 
 - **Starter copy** still untouched on your pages.
 - **FAQ blocks** carrying questions without answers, with a link that opens that block to write them.
 - **Pricing cards without a price.** A Tarieven block would go live with cards that carry no amount, so the warning names them and links to the block to fill in the prices.
-- **Fields missing on your legal pages**, with a link that fills in the company details. Without a KVK number yet you can still publish: that line is left off the pages, and you add it later in the same place.
+- **Fields missing on your legal pages**, with a link that fills in the company details. Without a KVK number yet you can still publish: that line is left off the pages, and you add it later in the same place. An information line about the KVK number sits in the dialog itself, so the reason that number stands on your legal pages is named where you publish.
 - **A contact block nobody can reach** (no phone and no e-mail anywhere on it).
 - **Your login e-mail address.** The site keeps the address you log in with off your pages until you say it may be shown. The warning offers to show this address on your site, or a link to set a different public e-mail address; you can also keep the address off the site. A deliberate "no e-mail on my site" counts as information, not as a warning, and it never holds up publishing. Where the hidden address would have stood, your phone number and the rest of the sentence stay standing: the wording around the removed address is tidied up rather than printed.
 
@@ -483,7 +498,7 @@ Three switches control content that is generated for you:
 
 - **Show page links automatically** ("Pagina's"): a sitemap column with a link to every live, indexable page on your site. It is on by default for new sites because it helps search engines find every page and prevents orphaned pages. The home page, blog posts, draft pages, password-protected pages, and pages marked "noindex" or hidden from the sitemap are excluded automatically. Hide an individual page from this column by turning off **Show in sitemap** in that page's SEO settings.
 - **Show contact details** ("Contact"): your public email, phone number, and address from your company details.
-- **Show social links** ("Social"): the social URLs saved in your company details.
+- **Show social links** ("Social"): the social URLs saved in your company details. For Instagram, Facebook and LinkedIn the footer panel lets you fill the address in directly, and asks for a confirmation before it updates the details in your company settings.
 
 These blocks appear in your site's own footer styling, below any manual columns. If your design already shows contact or social details, the matching toggle is hidden so nothing appears twice.
 

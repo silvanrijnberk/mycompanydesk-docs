@@ -68,6 +68,8 @@ For image or PDF receipts:
 4. Review the extracted supplier, date, amount, VAT and category.
 5. Confirm to create the expense(s).
 
+When a scanned receipt matches an expense already standing in your books, typically the bank's booking of the same payment, the review card carries **Add receipt to this expense** (for an expense that has no receipt yet): the receipt is attached to the existing expense instead of a second booking, and the row drops out of the review. Repeated amounts on one receipt are flagged while staying separate costs. See [Receipt scanning](/en/advanced/receipt-scanning) for the detail.
+
 Receipt scanning is available on every plan, including Desk. The number of scans per month depends on your plan: 3 on Desk and 200 on Office.
 
 ### Locked VAT periods
@@ -158,7 +160,7 @@ The expense detail shows a **Linked invoice** line when it has been added to an 
 
 ## Bulk actions
 
-Select multiple expenses for:
+Select multiple expenses for bulk work. While a selection is running a checkbox column appears in the list; outside a selection there are no checkboxes, and an empty list shows no select button at all. Your sort choice on the list is remembered, so a reload keeps it.
 
 - **Categorize** - Re-assign the category (re-runs the depreciation hook for newly-investment-flagged rows).
 - **Archive** - Move to archive. Archiving unpaid expenses that have a due date pauses their open payment reminders. The bulk bar asks for confirmation first when any selected expense is unpaid and has a due date, so you know how many of the selected expenses lose a reminder. The reminder stays paused while the expenses are archived. If you restore an archived expense later, the daily sweep recreates the reminder, but not immediately; it returns the next night at the earliest.

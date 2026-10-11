@@ -77,6 +77,7 @@ Der letzte Schritt bestätigt Ihre Testphase:
 ## Überspringen, Fortsetzen und erneut Durchlaufen
 
 - **Überspringen:** **Vorerst überspringen** bringt Sie jederzeit zum Dashboard. `/setup` bleibt der Weg zurück, bis die Einrichtung abgeschlossen ist.
+- **Website zuerst** (Eerst mijn website maken): ein zweiter Ausgang sitzt in der Fußleiste des ersten Schritts, neben Überspringen. Er verlässt die Einrichtung ohne abzuschließen und öffnet direkt den Website-Assistenten; anders als die simple Überspringung hält die Aufgabe Ihre Website fertigstellen im Dashboard offen, denn es gibt noch keine Site, die fertigzustellen wäre.
 - **Fortsetzen:** Antworten werden bei jeder Änderung gespeichert. Den Tab mittendrin zu schließen kostet nichts; beim nächsten Besuch geht es auf demselben Schritt weiter.
 - **Erneut durchlaufen:** Nach dem Abschluss startet `/setup` den Ablauf wieder beim ersten Schritt, mit Ihren gespeicherten Antworten. Der Assistent füllt leere Felder auf, statt zu überschreiben: eine aufgebaute Dienstleistungsliste, ein hochgeladenes Logo oder selbst gewählte Einstellungen werden nicht ersetzt.
 

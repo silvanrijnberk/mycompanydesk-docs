@@ -105,7 +105,11 @@ Je kunt de uitgave daarna bewerken zoals elke handmatig aangemaakte uitgave.
 
 De scanner herkent wanneer een document in een andere valuta is dan euro. In dat geval toont de controlekaart het originele bedrag met valuta en een apart veld waarin je het eurobedrag invult zoals je bank het heeft omgerekend. Pas als het eurobedrag is ingevuld, kunnen de regels in vreemde valuta worden bevestigd. Is het document in euro's, dan zie je de tekst "Dit is gewoon euro" en blijft het proces ongewijzigd.
 
-Als de scanner denkt dat een bon al eerder is geboekt, toont hij een waarschuwing met datum, leverancier en bedrag van de bestaande uitgave. Je kunt die uitgave openen, of ervoor kiezen om de bon toch opnieuw te boeken als de melding niet klopt. De controle is geen harde blokkade; hij voorkomt alleen per ongeluk dubbel ingevoerde bonnen.
+Als de scanner denkt dat een bon al eerder is geboekt, toont hij een waarschuwing met datum, leverancier en bedrag van de bestaande uitgave. Je kunt die uitgave openen, of ervoor kiezen om de bon toch opnieuw te boeken als de melding niet klopt; opslaan vraagt dan nog een keer, met "Twee keer dezelfde uitgave?", voordat er geboekt wordt. De controle is geen harde blokkade; hij voorkomt alleen per ongeluk dubbel ingevoerde bonnen.
+
+Staat er voor de gescande bon, of vlak daarbij, al een uitgave in je boeken, dan draagt de controlekaart de knop **Bon hieraan toevoegen** (zolang die uitgave nog geen bon heeft): de bon hangt dan als bewijsstuk aan de uitgave die er al staat, in plaats van een tweede te boeken, de rij verdwijnt uit de beoordeling, en bij de laatste rij land je direct op die uitgave. Een uitgave die al een bon heeft, krijgt er nooit een tweede overheen.
+
+Regels op dezelfde bon blijven losse kosten: drie gelijke parkeerkaartjes op één bon boeken als drie kosten, en het dubbele bedrag wordt gevlagd in plaats van stilletjes overgeslagen. Zit de hele batch al in je boeken, dan zegt de bevestiging dat, in plaats van alles een tweede keer te boeken.
 
 Let op: de scanner kan eigen verkoopfacturen herkennen en waarschuwen dat het document lijkt op een verkoopfactuur in plaats van een uitgave. Die waarschuwing blokkeert niet; je kunt nog steeds doorgaan als het om een retourzending of correctie gaat.
 

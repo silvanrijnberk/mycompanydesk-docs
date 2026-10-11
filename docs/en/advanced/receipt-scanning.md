@@ -105,7 +105,11 @@ You can edit the expense afterward like any manually created expense.
 
 The scanner recognises when a document is in a currency other than euro. In that case the review card shows the original amount with its currency and a separate field where you enter the euro amount as your bank converted it. The foreign-currency lines cannot be confirmed until the euro amount is filled in. If the document is already in euro, the card shows "This is just euros" and the flow stays unchanged.
 
-When the scanner thinks a receipt was already booked, it shows a warning with the date, supplier and amount of the existing expense. You can open that expense or choose to book the receipt again anyway if the warning is wrong. The check is a soft guard, not a hard block; it only prevents accidentally entering the same receipt twice.
+When the scanner thinks a receipt was already booked, it shows a warning with the date, supplier and amount of the existing expense. You can open that expense or choose to book the receipt again anyway if the warning is wrong; saving then asks once more with "Two of the same expense?" before it books. The check is a soft guard, not a hard block; it only prevents accidentally entering the same receipt twice.
+
+When the receipt already scanned has an expense standing in your books for it, or close to it, the review card carries the **Add receipt to this expense** button (when that expense has no receipt yet): the receipt is attached to the expense standing there instead of booking a second one, the row disappears out of the review, and with the last row you land on the expense. An expense that already carries a receipt never gets a second one over it.
+
+Rows on the same receipt stay separate costs: three equal parking tickets on one receipt book as three costs, and the repeated amount gets flagged instead of quietly skipped. When the whole batch sits already in your books, the confirmation says so instead of booking it a second time.
 
 The scanner can also recognise your own sales invoices and warn that the document looks like a sales invoice rather than an expense. That warning does not block you; you can still continue if it is a return or a correction.
 

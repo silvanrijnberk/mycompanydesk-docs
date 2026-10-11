@@ -93,7 +93,7 @@ Si votre forfait n'inclut pas la facturation automatique du temps, elle reste en
 
 ## Actions groupées
 
-Sélectionnez plusieurs entrées dans la vue Liste (appui long sur mobile) pour agir en une fois :
+Sélectionnez plusieurs entrées dans la vue Liste (appui long sur mobile) pour agir en une fois. Pendant la sélection, une colonne de cases à cocher figure dans la liste, et toucher la ligne elle-même la coche pendant une sélection ; hors sélection, il n'y a pas de colonne de cases.
 
 - **Marquer comme facturable** ou **Marquer comme non facturable**
 - **Archiver**

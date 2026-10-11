@@ -105,7 +105,11 @@ Sie können die Ausgabe anschließend wie jede manuell erstellte Ausgabe bearbei
 
 Der Scanner erkennt, wenn ein Dokument in einer anderen Währung als Euro ist. In diesem Fall zeigt die Prüfkarte den Originalbetrag mit Währung und ein separates Feld, in dem Sie den Eurobetrag eingeben, wie ihn Ihre Bank umgerechnet hat. Die Zeilen in Fremdwährung können erst bestätigt werden, wenn der Eurobetrag eingetragen ist. Ist das Dokument bereits in Euro, erscheint der Text "Dies ist einfach Euro" und der Ablauf bleibt unverändert.
 
-Wenn der Scanner glaubt, dass ein Beleg bereits gebucht wurde, zeigt er eine Warnung mit Datum, Lieferant und Betrag der bestehenden Ausgabe. Sie können diese Ausgabe öffnen oder den Beleg trotzdem erneut buchen, wenn die Warnung nicht stimmt. Die Prüfung ist eine weiche Absicherung, keine harte Blockade; sie verhindert nur, dass derselbe Beleg aus Versehen zweimal erfasst wird.
+Wenn der Scanner glaubt, dass ein Beleg bereits gebucht wurde, zeigt er eine Warnung mit Datum, Lieferant und Betrag der bestehenden Ausgabe. Sie können diese Ausgabe öffnen oder den Beleg trotzdem erneut buchen, wenn die Warnung nicht stimmt; das Speichern fragt dann noch einmal, mit „Zweimal dieselbe Ausgabe?“, bevor gebucht wird. Die Prüfung ist eine weiche Absicherung, keine harte Blockade; sie verhindert nur, dass derselbe Beleg aus Versehen zweimal erfasst wird.
+
+Steht für den gescannten Beleg, oder ganz in der Nähe, schon eine Ausgabe in Ihren Büchern, trägt die Prüfkarte den Button **Bon hieraan toevoegen** (solange diese Ausgabe noch keinen Beleg hat): der Beleg hängt dann als Nachweis an der bestehenden Ausgabe, statt eine zweite zu buchen, die Zeile verschwindet aus der Prüfung, und bei der letzten Zeile landen Sie direkt auf dieser Ausgabe. Eine Ausgabe, die schon einen Beleg hat, bekommt nie einen zweiten darüber.
+
+Zeilen auf demselben Beleg bleiben getrennte Kosten: drei gleiche Parkscheine auf einem Beleg buchen als drei Kosten, und der doppelte Betrag wird markiert, statt stillschweigend übersprungen. Liegt die ganze Ladung schon in Ihren Büchern, sagt die Bestätigung das, statt alles ein zweites Mal zu buchen.
 
 Der Scanner kann auch eigene Verkaufsrechnungen erkennen und warnen, dass das Dokument eher einer Verkaufsrechnung als einer Ausgabe entspricht. Diese Warnung blockiert nicht; Sie können trotzdem fortfahren, wenn es sich um eine Rücksendung oder Korrektur handelt.
 

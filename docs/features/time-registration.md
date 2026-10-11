@@ -93,7 +93,7 @@ Bevat je abonnement automatisch urenfacturering niet, dan pauzeert het tot je ab
 
 ## Bulkacties
 
-Selecteer meerdere registraties in de lijstweergave (lang indrukken op mobiel) om ze in een keer te bewerken:
+Selecteer meerdere registraties in de lijstweergave (lang indrukken op mobiel) om ze in een keer te bewerken: tijdens de selectie staat er een vinkjeskolom in de lijst, en een tik op de rij zelf vinkt hem aan; buiten de selectie is er geen vinkjeskolom.
 
 - **Markeer als factureerbaar** of **Markeer als niet factureerbaar**
 - **Archiveren**
