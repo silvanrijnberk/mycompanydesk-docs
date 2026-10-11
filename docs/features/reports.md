@@ -9,7 +9,7 @@ De rapportages zijn gebouwd rond gewone vragen. Elke pagina opent met de vraag d
 
 ## Navigeren
 
-Ga in de zijbalk naar **Rapportages**. Op desktop wissel je van pagina met de tabbalk bovenaan; op mobiel gebruik je de paginafoon of veeg je links en rechts tussen pagina's. Knop **Filters** zit aan het einde van de tabbalk en opent het periodepaneel.
+Ga in de zijbalk naar **Rapportages**. Op desktop wissel je van pagina met de tabbalk bovenaan; op mobiel gebruik je de paginakiezer of veeg je links en rechts tussen pagina's. Knop **Filters** zit aan het einde van de tabbalk en opent het periodepaneel.
 
 De meeste pagina's volgen de periode die je bovenaan kiest. Vier plaatsen beantwoorden een vraag over vandaag en verbergen de periodekeuze bewust, want een jaartje erboven belooft een keuze die niets doet: **Offertes**, **Nog te betalen** en **Weggebleven** bij Klanten, en **Wat er gaat komen** bij Geldstroom. Diepe koppelingen nemen hun periode mee: een dashboardtegel over winst of omzet opent de rapportages op de lopende periode van dat soort (deze maand, dit kwartaal of dit jaar).
 
@@ -18,7 +18,7 @@ De meeste pagina's volgen de periode die je bovenaan kiest. Vier plaatsen beantw
 Het overzicht opent met de omzet van de periode tegen vorig jaar, en beantwoordt daarna de vragen die je hele bedrijf raken, één kaart per vraag:
 
 - **Wat heb ik verdiend?** De winst vóór belasting van de periode: omzet min kosten, met dezelfde periode vorig jaar ernaast (hoger, lager, keer zoveel, of gelijk). De grafiek onder het antwoord toont de omzet van beide jaren, maand voor maand, met de lopende maanden gemarkeerd. Een link opent de verkooppagina.
-- **Wat moet ik opzij zetten?** Staat er zolang er iets opzij kan. De kaart noemt de btw die je nog afdraagt, met kwartaal en einddatum, schat de inkomstenbelasting over dit jaar (of de vennootschapsbelasting bij een BV), en noemt alles een voorlopige schatting die je boekhouder definitief uitrekent. Is het urencriterium nog niet rond, dan gaat er een rij mee die naar de urenpagina linkt: haal je het niet, dan betaal je meer.
+- **Wat moet ik opzij zetten?** Staat op de pagina zolang er iets opzij te zetten valt. De kaart noemt de btw die je nog afdraagt, met kwartaal en einddatum, schat de inkomstenbelasting over dit jaar (of de vennootschapsbelasting bij een BV), en noemt alles een voorlopige schatting die je boekhouder definitief uitrekent. Is het urencriterium nog niet rond, dan gaat er een rij mee die naar de urenpagina linkt: haal je het niet, dan betaal je meer.
 - **Wie moet mij nog betalen?** Het openstaande totaal en over hoeveel facturen dat verdeeld is, de klant die het langst op zijn geld wacht, de late facturen met hun dagen, en een knop die de achterstallige facturen opent. Heeft iedereen betaald, dan zegt de kaart het zo; staan er facturen open maar niets te laat, dan zegt de kaart dat ook.
 - **Op wie leun ik?** Je grootste klant met zijn deel van je omzet, of dat veel leunen op één klant is of mooi verspreid, en waar je groei vandaan komt: komt bijna alles van deze klant, dan zegt de kaart wat je omzet zonder hem had gedaan. Een balk laat de verdeling zien.
 - **Laat ik ergens geld liggen?** Staat er alleen als er iets ligt wat niet opgehaald is: geregistreerde uren die nog niet op een factuur staan (zet ze op een factuur, dan komt het geld binnen) en offertes die verlopen zonder antwoord van de klant.
@@ -44,7 +44,7 @@ De vragen onder de cijfers vergelijken de periode altijd met dezelfde periode vo
 - **Nog te betalen** is de stand van vandaag: **Hoeveel geld staat er nog open?** met de leeftijdsbuckets (nog niet te laat, 1 tot 30, 31 tot 60, 61 tot 90, en meer dan 90 dagen te laat), **Wie wacht het langst met betalen?**, en **Hoe snel betalen je klanten?** met de gemiddelde betalingstijd ernaast.
 - **Weggebleven** toont klanten die in de laatste drie jaar bij je kochten en in het afgelopen jaar niet, met wat ze eerder samen besteedden, de datum van hun laatste betaalde factuur, en knoppen om ze te bellen of te mailen. Staat er niemand, dan zegt de pagina dat en noemt hij de regel. Het is campagne-werk, dus het staat in een rapport in plaats van in de op urgentie gesorteerde dashboard-briefing.
 
-## Werk en tijd
+## Werk & tijd
 
 **Werk en tijd** beantwoordt **Waar gaat mijn tijd naartoe?** met de geregistreerde uren van de periode, de uren per klant en per project, de verdeling facturabel tegen niet, en je effectieve uurtarief. **Laat ik geld liggen?** noemt de uren die nog niet op een factuur staan, met de link die ze factureert. **Wat levert een uur werk op, per klant?** en **Levert harder werken meer op?** wegen je uren tegen wat ze binnenbrengen. De kaart voor het urencriterium beantwoordt **Haal ik het urencriterium?** tegen de drempel van het jaar: of je op dit tempo op schema ligt of niet, en hoeveel uur per week je er de rest van het jaar nodig hebt; staan er maar weinig uren geregistreerd, dan zegt de kaart dat in plaats van te gissen. Die meter telt alleen je eigen bevestigde gewerkte uren plus reistijd, geplande uren tellen zodra je ze bevestigt, en dat is smaller dan het totaal geregistreerde uren op de pagina, dus de twee getallen mogen uit elkaar liggen. In een werkruimte met een team splitst de pagina wat het hele team logde en wat je zelf logde.
 
@@ -66,7 +66,7 @@ De vragen onder de cijfers vergelijken de periode altijd met dezelfde periode vo
 
 ## Filters
 
-Open het **Filters**-paneel met de knop aan het einde van de tabbalk. Het paneel toont alleen de schakelaars die de open pagina echt leest, zodat een filter die niets verandert niet aangeboden wordt:
+Open het **Filters**-paneel met de knop aan het einde van de tabbalk. Het paneel toont alleen de schakelaars die de open pagina echt leest, zodat een filter dat niets verandert niet aangeboden wordt:
 
 - **Periode**: kies de granulariteit (**Jaar**, **Kwartaal**, **Maand**, **Week**, of **Dag**), met bij de gekozen granulariteit een bijpassende keuzelijst
 - **Jaar**: het rapportagejaar
@@ -76,13 +76,13 @@ Er is geen vergelijkingsschakelaar meer: de pagina's die vergelijken vergelijken
 
 ## Belasting
 
-De kaart **Wat moet ik opzij zetten?** op het overzicht draagt de samenvatting. De volledige schattingen staan bij **Belastingen** in de app. Het blad voor de inkomstenbelasting breekt het jaar af van brutowinst via de zelfstandigenaftrek en de mkb-winstvrijstelling tot belastbaar inkomen, de belastingschijven, geschatte belasting, winst na belasting en hoeveel je opzij zet, met het urencriterium, de aannames achter de schatting en de kleinschaligheidsinvesteringsaftrek (KIA) in de zijlijn. Verkoop je een investering binnen vijf jaar na aanschaf, dan kan er een deel van die aftrek terugkomen via de desinvesteringsbijtelling; MyCompanyDesk rekent dat nog niet automatisch uit, dus controleer het bedrag zelf of met je boekhouder. Is je bedrijf een BV, dan schat de pagina de vennootschapsbelasting in plaats daarvan. Het Box 3-tabblad toont verhuurd vastgoed met het totale vermogen, de belastbare grondslag en het fictieve rendement; heb je meerdere vennoten, dan verdeelt elke vennoot de grondslag en het rendement naar rato voor de eigen Box 3-aangifte, en de getoonde bedragen zijn het totaal van de werkruimte. Zie elke schatting als hulpmiddel om geld te reserveren, niet als aangifte.
+De kaart **Wat moet ik opzij zetten?** op het overzicht draagt de samenvatting. De volledige schattingen staan bij **Belastingen** in de app. De pagina voor de inkomstenbelasting breekt het jaar af van brutowinst via de zelfstandigenaftrek en de mkb-winstvrijstelling tot belastbaar inkomen, de belastingschijven, geschatte belasting, winst na belasting en hoeveel je opzij zet, met het urencriterium, de aannames achter de schatting en de kleinschaligheidsinvesteringsaftrek (KIA) in de zijlijn. Verkoop je een investering binnen vijf jaar na aanschaf, dan kan er een deel van die aftrek terugkomen via de desinvesteringsbijtelling; MyCompanyDesk rekent dat nog niet automatisch uit, dus controleer het bedrag zelf of met je boekhouder. Is je bedrijf een BV, dan schat de pagina de vennootschapsbelasting in plaats daarvan. Het Box 3-tabblad toont verhuurd vastgoed met het totale vermogen, de belastbare grondslag en het fictieve rendement; heb je meerdere vennoten, dan verdeelt elke vennoot de grondslag en het rendement naar rato voor de eigen Box 3-aangifte, en de getoonde bedragen zijn het totaal van de werkruimte. Zie elke schatting als hulpmiddel om geld te reserveren, niet als aangifte.
 
 De btw-aangifte heeft een eigen pagina met kwartaaloverzichten en ondersteuning bij het indienen. Zie [BTW-beheer](/features/vat).
 
 ## Boekhouding
 
-Het grootboek, de balans, de winst-en-verliesrekening en de jaarrekening staan bij **Boekhouding** in de zijbalk, een aparte sectie voor de boeken, met schrijfacties zoals een jaar afsluiten. De rapportages zelf blijven analyse; de volledige boekhouding is handig als je met een boekhouder werkt, en voor je eigen aangifte heb je haar niet nodig.
+Het grootboek, de balans, de winst-en-verliesrekening en de jaarrekening staan bij **Boekhouding** in de zijbalk, een aparte sectie voor de boeken, met schrijfacties zoals een jaar afsluiten. De rapportages zelf blijven analyse; de volledige boekhouding is handig als je met een boekhouder werkt, en voor je eigen aangifte heb je ze niet nodig.
 
 Het grootboek toont elke grootboekrekening met zijn RGS-referentiecode waar die van toepassing is. RGS (Referentie Grootboekschema) is het Nederlandse standaardrekeningschema voor ondernemers; de codes maken het makkelijker om grootboekregels uit te lijnen met boekhoudsoftware die RGS ondersteunt.
 
@@ -93,7 +93,7 @@ Kies bij Boekhouding de jaarrekening van een jaar en dan **Auditfile (XAF)** om 
 ## Tips
 
 - Volg de kaart **Wie moet mij nog betalen?** op het overzicht en open de achterstallige facturen vanaf daar
-- Kijk elk kwartier op het tabblad **Weggebleven** om eerdere klanten terug te winnen
+- Kijk elk kwartaal in het tabblad **Weggebleven** om eerdere klanten terug te winnen
 - Verkoop en Kosten vergelijken altijd met dezelfde periode vorig jaar; lees hun vragen om te zien of de groei van één klant komt
 - Lees **Hoeveel hou ik de komende maanden over** voordat je verplichtingen aangaat die geld kosten
 - Bekijk de kaart **Haal je het urencriterium?** ruim voor het jaar om is, zodat er tijd is om je uren te loggen
