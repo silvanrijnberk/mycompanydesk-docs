@@ -17,7 +17,7 @@ Ga in de zijbalk naar **Rapporten**. Op desktop wissel je van weergave met de ta
 
 Het overzicht stelt vijf vragen over de periode die je koos, één kaart per vraag, elk met één bedrag, één zin met context en een doorklik naar het bijbehorende rapport:
 
-- **Hoeveel heb ik verdiend?** Omzet voor de periode, met het deel dat je na kosten overhoudt, tot op de cent per euro. Kosten hoger dan omzet? Dan zeg je kaart om hoeveel. Linkt naar de verkoopweergave.
+- **Hoeveel heb ik verdiend?** Omzet voor de periode, met het deel dat je na kosten overhoudt, tot op de cent per euro. Kosten hoger dan omzet? De kaart zegt dan om hoeveel. Linkt naar de verkoopweergave.
 - **Wie moet mij nog betalen?** Het openstaande totaal, verdeeld over zijn facturen, met de late facturen en hun gezamenlijke bedrag erbij als die er zijn. Naast het blok zit een verouderingsoverzicht; is alles betaald, dan zegt de kaart dat gewoon. Een knop opent de achterstallige facturen direct.
 - **Van wie krijg ik het meeste werk?** Je grootste klant van de periode met zijn deel van je omzet, en de nummers daaronder. Linkt naar de klantweergave.
 - **Hoeveel heb ik gewerkt?** Geregistreerde uren in de periode, met het al gefactureerde deel erbij als dat er is. Linkt naar de weergave werk en tijd.

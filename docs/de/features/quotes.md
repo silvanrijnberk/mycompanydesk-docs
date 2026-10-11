@@ -147,7 +147,7 @@ Jede Anfrage zeigt:
 - Status
 - Fotos, wenn der Besucher welche mitschickte (siehe unten)
 
-Die Liste lässt sich auf Angebotsanfragen einschränken, damit ein Strom von Nachrichten die Angebote, die noch ausstehen, nicht untergeht.
+Die Liste lässt sich auf Angebotsanfragen einschränken, damit ein Strom von Nachrichten die Angebote, die noch ausstehen, nicht untergehen.
 
 ### Anfragestatus
 
