@@ -1,7 +1,7 @@
 ---
 title: Domeinen, website en inbox
 description: "Eigen domeinen, de gehoste bedrijfswebsite en de gedeelde inbox komen als een bundel, achter de vlaggen custom_domains en public_business_page."
-last_verified: 2026-10-09
+last_verified: 2026-10-11
 ---
 
 # Domeinen, website en inbox
@@ -216,13 +216,13 @@ Twee waarborgen horen bij dezelfde flow. Bij het verwijderen van een postbus of 
 
 ### Gehoste website
 
-Je website-dashboard staat op **Bedrijf › Je website** (`/website`). Het is een dashboard met zes tabbladen: Overzicht, Bezoekers, Vindbaarheid, Koppelingen, Domein & e-mail en Instellingen. De editor open je via **Bewerk site** als je inhoud of vormgeving wilt wijzigen.
+Je website-dashboard staat op **Bedrijf › Je website** (`/website`). Het is een dashboard met zes tabbladen: Overzicht, Bezoekers, Gevonden worden, Koppelingen, Domein & e-mail en Instellingen. De editor open je via **Bewerk site** als je inhoud of vormgeving wilt wijzigen.
 
 Wat de tabbladen doen:
 
 - **Overzicht**-tab — Voorvertoning van je site, of deze live is, en hoeveel ongepubliceerde wijzigingen er wachten.
 - **Bezoekers**-tab — Zie waar bezoekers vandaan komen en hoe ze door de site bewegen.
-- **Vindbaarheid**-tab — SEO en paginameta-informatie, plus de kaart met pagina's per dienst (zie hieronder). Oude `/website/seo`-links verwijzen hierheen.
+- **Gevonden worden**-tab: SEO en paginameta-informatie, plus de kaart met pagina's per dienst (zie hieronder). Oude `/website/seo`-links verwijzen hierheen.
 - **Koppelingen**-tab — Betaalproviders (Mollie, Stripe Connect) en diensten van derden zoals Mailchimp, Plausible en Trustpilot. Oude `/website/integraties`-links verwijzen hierheen.
 - **Domein & e-mail**-tab: eigen domein, DNS, SSL, redirects en de postbus- en e-mailinstellingen (nu onder Instellingen → E-mail → Adressen en verzenden). Zie de sectie eigen domeinen hierboven.
 - **Instellingen**-tab — Kies welke bouwer live staat (sjabloon of op maat) en stel de werkruimteslug en andere site-instellingen in.
@@ -235,7 +235,7 @@ Je kunt de site uitbreiden met het **Afspraken**-blok. Bezoekers kunnen dan dire
 
 #### Pagina's voor je vindbaarheid
 
-Op het tabblad Vindbaarheid staat een kaart: "Meer pagina's waar mensen op zoeken". Hij verschijnt alleen als er iets te doen is: diensten uit je Aanbod zonder eigen pagina, of conceptpagina's die op jouw beoordeling wachten.
+Op het tabblad Gevonden worden staat een kaart: "Meer pagina's waar mensen op zoeken". Hij verschijnt alleen als er iets te doen is: diensten uit je Aanbod zonder eigen pagina, of conceptpagina's die op jouw beoordeling wachten.
 
 Open je de kaart, dan zie je de voorstellen. Elk voorstel is een dienst die je echt levert, uit je Aanbod, met het adres erbij: elke pagina krijgt een eigen plek onder `/diensten/`. Een voorstel kan een reden uit Google Search Console meedragen: de zoekterm die bij de dienst past, hoe vaak hij gezocht wordt en op welke plek je daar staat. Zo'n term zet het voorstel bovenaan en wordt in de FAQ van de pagina beantwoord; er wordt nooit een pagina voor een losse zoekterm gemaakt. Een term die bij geen enkele dienst hoort krijgt ook geen pagina. De lijst legt dan uit waarom niet: een term voor je hele bedrijf (het vak plus je plaats) hoort bij je homepagina, een zoekopdracht met je bedrijfsnaam valt buiten de lijst omdat die mensen je al gevonden hebben, en een dienst die nog niet in je Aanbod staat kan een pagina krijgen zodra je hem daar toevoegt. Een dienst die al een pagina heeft, op zijn eigen pad of onder een pagina met de dienst als titel, wordt niet nogmaals voorgesteld: twee pagina's die om dezelfde term strijden duwen elkaar omlaag in de resultaten.
 

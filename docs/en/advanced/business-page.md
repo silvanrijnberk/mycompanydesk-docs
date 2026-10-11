@@ -1,7 +1,7 @@
 ---
 title: Site Builder
 description: "Build a multi-page business website with the drag-and-drop editor: sections and blocks, your own colours and fonts, and publish when you are ready."
-last_verified: 2026-10-02
+last_verified: 2026-10-11
 ---
 
 # Site Builder
@@ -43,19 +43,20 @@ The banner uses the Gemini AI model (lite variant) when available on your worksp
 
 ## Website setup wizard
 
-Before you ever open the editor, the website setup wizard can build your first draft for you. It opens automatically the first time a new workspace visits `/website`, and you can restart it later from **Company > Your website > Style** by clicking **Set up again**. The wizard asks four questions and then may show an optional web-address step:
+Before you ever open the editor, the website setup wizard can build your first draft for you. It opens automatically the first time a new workspace visits `/website`, and you can restart it later from **Company > Your website > Style** by clicking **Set up again**; on a restart it starts from what is already true. It runs these steps:
 
-1. **What you do** (pre-filled from your KVK data) - your work, services and tone. The same step carries your business name (required, saved together with your company details), phone number, opening hours and the address your contact page shows, and asks how customers should book: they pick a time themselves within your opening hours, they send a request that you confirm, or there is no online booking. If your site already has an appointments block, the wizard starts on the mode that block uses and follows your choice when you finish.
+1. **What you do** (pre-filled from your KVK data) - your work, services and tone. The same step carries your business name (required, saved together with your company details), phone number, opening hours (with quick picks for weekdays, the weekend, or every day), the address your contact page shows, and the address customers may e-mail you on, asked as **Email address for customers** with a checkbox for whether your site shows it. Your login address is prefilled there but only lands on your site while the show-it box stays on; changing the address updates your company details (and your invoices) with it.
 2. **What you want** - whether the site should bring in leads, showcase your work, build credibility or get found online.
-3. **Logo** - keep the AI-generated logo or upload your own PNG/SVG.
-4. **Brand colour** - pick one of the suggested swatches or enter your own hex colour.
-5. **Web address** (only when your workspace does not already have an active domain or CNAME serving the site) — add or connect the domain where your site will live. You can skip this step and set up an address later.
+3. **Light or dark, and colour** - the wizard first asks whether your site should come out light or dark, then offers named colour swatches or your own hex colour. The generated logo preview follows your pick straight away.
+4. **Logo** - keep the AI-generated logo, upload your own PNG/SVG, or use just your business name as a text logo.
+5. **Your own photos** (optional) - add up to six photos of your own work. The first lands at the top of your home page, the next ones on the page about you, and from four photos the site also builds a photo gallery out of them. Skip this step and the site gets example photos you can replace later.
+6. **Web address** (only when your workspace does not already have an active domain or CNAME serving the site). Add or connect the domain where your site will live. You can skip this step and set up an address later; a site that is already live keeps its address.
 
-Your answers are saved as the site brief. When you finish, the AI writes fresh copy for your whole draft site based on the brief and your workspace data, applies your chosen logo and brand colour, and leaves everything as a draft. Nothing is published automatically. You review the result in the editor and publish when you are happy with it. On the closing card you can adjust the title your site carries in Google before you finish.
+Your answers are saved as the site brief. When you finish, the AI writes fresh copy for your whole draft site based on the brief and your workspace data, applies your chosen logo and brand colour, and leaves everything as a draft. Nothing is published automatically. You review the result in the editor and publish when you are happy with it. On the closing card you can adjust the title your site carries in Google before you finish. The finishing run takes about half a minute; leave the screen open, it tells you which stage it is working through.
 
-The services in the first question each take an optional price. Type an amount including VAT, switch on **from** for a starting price, or leave the field empty and your site shows "On request". A price already set in your offering is filled in automatically. When your workspace charges no VAT (exempt or small business scheme), the field simply reads Price and the hint notes that the prices carry no VAT.
+The services in the first question each take an optional price with a choice between **incl. VAT** and **excl. VAT**: the site always shows what the customer pays, so an amount entered excluding VAT is converted at that item's VAT rate, and when your workspace charges no VAT (exempt or small business scheme) the field simply reads Price and the hint notes that the prices carry no VAT. Each price also takes a unit (per hour, per person) and the row previews the line a visitor will see. Switch on **from** for a starting price, or leave the field empty and your site shows "On request". A price already set in your offering is filled in automatically, and each service carries a tick for whether customers can book it online.
 
-When the booking question is on **Customers pick a time themselves**, the service list also asks how long each appointment lasts. Every service starts with a suggested duration in minutes, based on the name of the service and the work you described in the wizard: a plain cut gets a smaller suggestion than colouring, and a dog salon gets a longer one. Each suggestion is yours to change, and a duration already set in your offering is filled in automatically. A duration is a whole number of minutes between 5 and 480. A service without a duration cannot be booked online: clearing the field keeps the service on your site, but the appointments block no longer offers it to customers as a bookable time.
+When the booking question is on **Customers pick a time themselves**, the service list also asks how long each appointment lasts. Every service starts with a suggested duration in minutes, based on the name of the service and the work you described in the wizard: a plain cut gets a smaller suggestion than colouring, and a dog salon gets a longer one. Each suggestion is yours to change, and a duration already set in your offering is filled in automatically. A duration is a whole number of minutes between 5 and 480. A service without a duration cannot be booked online: clearing the field keeps the service on your site, but the appointments block no longer offers it to customers as a bookable time. The booking question itself now knows four answers: customers pick a time themselves, they send a request that you confirm, they sign up for a fixed session (a workshop, a class or a guided walk), or there is no online booking. A sign-up is built with your first date, sign-up closes two hours before the start, and customers pay on the spot; leave the date empty and you plan the sessions later in the agenda under **Groepsafspraken**. If your site already has an appointments block, the wizard starts on the mode that block uses and follows your choice when you finish.
 
 You can also stop halfway: click **Finish later** or reload, and your answers are still there when you return. The wizard keeps what you changed on that device for about a week, and restores a saved answer only while the underlying value is unchanged; if company details or services changed in the meantime, from Settings or another device, the current value wins.
 
@@ -159,7 +160,7 @@ Text inside repeating blocks is not editable this way, because one static path w
 2. Click **New page**.
 3. Enter a title and a path (e.g. `/about`).
 4. Choose a template or start blank.
-5. The page opens in the editor, where you can add sections and build it out.
+5. The page opens in the editor, where you can add sections and build it out. A page you create here is added to your menu automatically; the 404 page and blog post pages are not. If setting that menu entry fails, MyCompanyDesk tells you and you can turn it on yourself in the menu editor.
 
 ### Default pages
 
@@ -220,7 +221,7 @@ When you open the image upload field in any section block (hero, spotlight, team
 - Type a search term (e.g. "hair salon", "coffee", "wood") and hit enter.
 - Results appear in a grid. Click any photo to insert it as your section image.
 - The search is proxied through the MyCompanyDesk server, so your Unsplash access key never reaches the browser.
-- Attribution is tracked automatically per Unsplash's API guidelines and rendered on your published site. When your site goes live, a "Foto's: `photographer` · Unsplash" credit line appears in the footer for every page that uses at least one stock photo, so you are always compliant.
+- Attribution is tracked automatically per Unsplash's API guidelines and rendered on your published site. The "Foto's: `photographer` · Unsplash" credit line in the footer names the photographers of the stock photos a visitor actually sees on the published site: a service card that picked up your own photo from your offering no longer earns a credit, the same photographer is named once, and photos you replaced drop out.
 - If Unsplash is not configured on your workspace, the Stockfoto button stays hidden so you never see a broken feature.
 
 ## Saved blocks
@@ -401,15 +402,15 @@ Each section block has a **Bottom divider** setting in the inspector's style pan
 In the **Style** tab, you control the look and feel of your entire site:
 
 - **Presets**: One-click starting points that set colors, fonts, and spacing in one go. Eight presets are available: **Editorial** (navy and gold, serif headlines), **Studio** (warm cream with terracotta), **Tech** (sharp slate with electric blue), **Atelier** (bone-white with deep green), **Bold** (high-contrast black with a bright accent), **Calm** (sage green and soft white), **Mono** (architectural minimalism, no accent color), and **Vivid** (cobalt and coral on cool white). Applying a preset merges the tokens into your workspace, preserving your logo, custom CSS, and head snippets.
-- **Colors**: Pick brand, accent, paper, ink, surface, and muted colors. The palette is applied through CSS custom properties.
-- **Dark mode**: Choose how your site handles dark mode. Three options: **Off** (no dark mode, site stays in its light palette), **Button** (visitors see a sun/moon toggle in the navigation bar and can switch themes, with their choice saved locally), or **System** (the site follows the visitor's OS-level preference automatically via a live media-query listener). When dark mode is on, a paired dark palette appears where you can set night-optimized versions of each color. If you leave the dark palette empty, the site applies a sensible default inversion that keeps your brand and accent colors intact.
+- **Colors**: Six colour tokens, shown under plain names: **Hoofdkleur** (primary colour), **Tweede kleur** (second colour), **Pagina-achtergrond** (the page background behind everything), **Blokken en kaarten** (blocks and cards), **Tekst** (text) and **Kleine tekst** (secondary text). The palette is applied through CSS custom properties.
+- **Dark mode**: Choose how your site handles dark mode. Four options: **Uit** (off: no dark mode, site stays in its light palette), **Altijd donker** ("always dark", your whole site is dark for every visitor, whatever their device has set), **Knop in menubalk** ("button in the menu bar", visitors see a sun/moon toggle in the navigation bar and can switch themes, with their choice saved locally), and **Volgt het toestel** ("follows the device", the site follows the visitor's OS-level preference automatically via a live media-query listener). Turning "Altijd donker" or "Knop in menubalk" on lays out a readable night palette for you: night-optimized versions of each colour, with a primary or second colour that would vanish on the dark page (black, navy) automatically lightened for the night version. A night colour you set yourself is left alone, and changing your light primary or second colour re-derives its night version as well. The Style tab also carries a card that jumps straight to the dark designs in the gallery; and when you apply a site package while your site is always dark, the site asks first, because the package turns "Altijd donker" off so the result looks as in its preview.
 - **Typography**: Choose heading, body, and mono fonts from the built-in font library (Geist, Inter, DM Sans, DM Serif Display, Fraunces, Instrument Serif, Geist Mono).
 - **Self-hosted fonts**: All fonts are served from MyCompanyDesk itself, not from Google Fonts or another third-party CDN. The same font files are used in the editor preview and on your published site, so the typeface looks identical everywhere and visitor IP addresses stay on your domain.
 - **Scale**: Set border radius, content density (compact, airy, generous), maximum content width, vertical section spacing, the body text size for the text your visitors read (**Normal**, **Large**, or **Extra large**), and card style. The card style controls how content cards render across sections: **Flat** (no border), **Bordered** (default, thin outline), **Shadowed** (soft shadow), **Elevated** (strong shadow), **Brut** (hard outline with offset shadow), **Lijn** (outline only, no fill), or **Glass** (translucent frosted card with a backdrop blur). Glass looks best over a photo, gradient, or decorative band; on a plain background it falls back to a softly tinted card.
 - **Motion**: Enable reduced motion or choose a motion style (Off, Subtle fade, Slide up).
 - **Buttons**: Customize button border radius, padding, and hover effects.
 - **Navbar**: Set the layout (standard, centered, split), background style (solid, translucent blur, transparent), and CTA button appearance (filled, outline, text-only). The navbar settings apply to every page.
-- **Phone & call bar**: Add a clickable phone number to your navigation bar. When set, the phone number appears beside the CTA button on desktop and in the mobile navigation drawer. Enable the **Mobile call bar** toggle to pin a fixed "tap to call" button at the bottom of the screen on mobile devices, so visitors can reach you with one tap regardless of where they are on the page. The phone label defaults to "Call us" when left empty.
+- **Phone & call bar**: Add a clickable phone number to your navigation bar. When set, the phone number appears beside the CTA button on desktop and in the mobile navigation drawer. Enable the **Mobile call bar** toggle to pin a fixed "tap to call" button at the bottom of the screen on mobile devices, so visitors can reach you with one tap regardless of where they are on the page. The phone label defaults to "Call us" when left empty. The call bar can also carry WhatsApp next to the call button: it takes the WhatsApp number the rest of your site already carries, a WhatsApp button (hero or closing block), a contact block that includes WhatsApp, or the floating contact button, while a WhatsApp number set on the navigation block itself wins. On desktop WhatsApp stays reachable through the floating contact button; on mobile the button leaves WhatsApp out as soon as the bar shows it, so WhatsApp never appears twice on one screen.
 - **Reading progress bar**: Show a thin progress indicator at the top of every page as visitors scroll. The bar uses your brand color and can be turned on or off from the Style tab.
 - **Custom CSS**: Write your own CSS that gets injected into the site. Useful for fine-tuning or overriding defaults.
 - **Favicon**: Upload a favicon for your site. It is shown in browser tabs and bookmarks. If not set, the site falls back to your light logo, then your business profile picture.
@@ -434,7 +435,18 @@ When you are ready:
 
 Unpublished changes are tracked per page and per token. The publish button is disabled when there is nothing to publish. Toggling a page between Live and Concept is an immediate save that registers as an unpublished change, so the Publish button lights up the moment you toggle.
 
-From whichever entry point you publish, the overview, the editor toolbar or the first-run screen, the same publish warning appears once something stands out. It lists every point: whether your contact page or footer shows the e-mail address you log in with (with a link to set a different public e-mail address, or a button to confirm the address is intentional), whether fields are still missing on your legal pages, with a link that fills in the company details, and whether an FAQ block still carries questions without answers, with a link that opens that block to write them. Confirm the e-mail address and nothing else stands out, and the dialog switches to a neutral "Ready to publish" that only asks for confirmation.
+From whichever entry point you publish, the overview, the editor toolbar or the first-run screen, the same publish warning appears once something stands out, and it lists every point with its own action:
+
+- **Starter copy** still untouched on your pages.
+- **FAQ blocks** carrying questions without answers, with a link that opens that block to write them.
+- **Pricing cards without a price.** A Tarieven block would go live with cards that carry no amount, so the warning names them and links to the block to fill in the prices.
+- **Fields missing on your legal pages**, with a link that fills in the company details. Without a KVK number yet you can still publish: that line is left off the pages, and you add it later in the same place.
+- **A contact block nobody can reach** (no phone and no e-mail anywhere on it).
+- **Your login e-mail address.** The site keeps the address you log in with off your pages until you say it may be shown. The warning offers to show this address on your site, or a link to set a different public e-mail address; you can also keep the address off the site. A deliberate "no e-mail on my site" counts as information, not as a warning, and it never holds up publishing. Where the hidden address would have stood, your phone number and the rest of the sentence stay standing: the wording around the removed address is tidied up rather than printed.
+
+Information only: if the site builder left example (stock) photos standing that you have not replaced yet, the dialog carries one line pointing at the first of them, with a button that opens that block so you can place a photo of your own. This line never opens the warning by itself; it also appears beside the publish button and on the Overview.
+
+When everything still standing is informational, the dialog switches to a neutral "Ready to publish" that only asks for confirmation.
 
 The first publish ends with a "Your website is online" moment: **View your site** and **Share your link**, with a copy button for the address you hand out to customers.
 
@@ -499,7 +511,7 @@ How to use them:
 
 - In any text area field, click the chip that matches the value you want. The token is inserted at the cursor.
 - You can also type a token by hand. Only the five keys above are supported.
-- If a value is empty in your company settings, the token renders as a bracketed hint on the public site, for example `[bedrijfsnaam]`, so you can spot what is still missing.
+- If a value is empty in your company settings, the token renders as a bracketed hint on the public site, for example `[bedrijfsnaam]`, so you can spot what is still missing. The e-mail token carries your public address: the address you log in with is public only once you confirmed it on your website (the publish dialog asks); until then, text that leaned on the token is tidied up on the published site with your phone number left standing, and no visitor ever sees the token itself.
 - Tokens are resolved after the publish snapshot, so later edits to your company details show on the live site without a new publish.
 - Legal pages seeded by the platform use these tokens automatically. Editing the surrounding text does not break the binding.
 
