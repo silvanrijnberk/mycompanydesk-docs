@@ -1,7 +1,7 @@
 ---
 title: Sitebouwer
 description: "Bouw een website met meerdere pagina's in de drag-and-drop-editor: secties en blokken, je eigen kleuren en lettertypes, en publiceren wanneer jij wilt."
-last_verified: 2026-10-02
+last_verified: 2026-10-11
 ---
 
 # Sitebouwer
@@ -45,13 +45,13 @@ De banner gebruikt het Gemini AI-model (lite-variant) als dat beschikbaar is in 
 
 Voordat je ooit de editor opent, kan de website-opzetwizard je eerste concept voor je bouwen. Hij opent automatisch de eerste keer dat een nieuwe werkruimte `/website` bezoekt, en je kunt hem later opnieuw starten via **Bedrijf > Je website > Stijl** met **Opnieuw opzetten**. De wizard stelt vier vragen en toont daarna optioneel een stap voor een webadres:
 
-1. **Wat je doet** (alvast ingevuld uit je KVK-gegevens) - je werk, diensten en toon. Dezelfde stap vraagt ook hoe klanten kunnen boeken: ze kiezen zelf een tijd binnen je openingstijden, ze sturen een aanvraag die jij bevestigt, of er is geen online boeking. Heeft je site al een afspraakblok, dan begint de wizard in de modus van dat blok en schakelt hij bij het afronden mee met jouw keuze.
+1. **Wat je doet** (alvast ingevuld uit je KVK-gegevens) - je werk, diensten en toon. Dezelfde stap neemt je echte bedrijfsnaam mee (verplicht, en meteen opgeslagen bij je bedrijfsgegevens), je telefoonnummer, je openingstijden en het adres dat je contactpagina toont, en vraagt ook hoe klanten kunnen boeken: ze kiezen zelf een tijd binnen je openingstijden, ze sturen een aanvraag die jij bevestigt, of er is geen online boeking. Heeft je site al een afspraakblok, dan begint de wizard in de modus van dat blok en schakelt hij bij het afronden mee met jouw keuze.
 2. **Wat je wilt** - of je site vooral klanten moet binnenhalen, je werk moet tonen, betrouwbaar moet overkomen of beter vindbaar moet zijn.
 3. **Logo** - houd het AI-gegenereerde logo, of upload je eigen PNG/SVG.
 4. **Merkkleur** - kies een van de voorgestelde kleuren of geef je eigen hex-kleur op.
 5. **Webadres** (alleen als je werkruimte nog geen actief domein of CNAME heeft die de site bedient) — voeg een domein toe of koppel een bestaand domein. Je kunt deze stap overslaan en later een adres toevoegen.
 
-Je antwoorden worden opgeslagen als sitebriefing. Als je afsluit, schrijft de AI nieuwe teksten voor je hele conceptsite op basis van de briefing en je werkruimtegegevens, past je gekozen logo en merkkleur toe, en laat alles als concept staan. Er wordt niets automatisch gepubliceerd. Je bekijkt het resultaat in de editor en publiceert pas wanneer je tevreden bent.
+Je antwoorden worden opgeslagen als sitebriefing. Als je afsluit, schrijft de AI nieuwe teksten voor je hele conceptsite op basis van de briefing en je werkruimtegegevens, past je gekozen logo en merkkleur toe, en laat alles als concept staan. Er wordt niets automatisch gepubliceerd. Je bekijkt het resultaat in de editor en publiceert pas wanneer je tevreden bent. Op de afsluitkaart pas je de titel aan waarmee je site in Google verschijnt, voordat je afsluit.
 
 De diensten in de eerste vraag hebben elk een optionele prijs. Typ een bedrag inclusief btw, zet **vanaf** aan voor een vanaf-prijs, of laat het veld leeg: je site toont dan "Op aanvraag". Een prijs die al bij Aanbod staat, wordt automatisch ingevuld. Valt je werkruimte onder geen btw (vrijgesteld of KOR), dan heet het veld gewoon Prijs en vermeldt de hint dat de prijzen zonder btw zijn.
 
@@ -405,7 +405,7 @@ In de **Stijl**-tab bepaal je de look-and-feel van je hele site:
 - **Donkere modus**: Bepaal hoe je site omgaat met donkere weergave. Drie opties: **Uit** (geen donkere modus, de site blijft in het lichte palet), **Knop** (bezoekers zien een zon/maan-knop in de navigatiebalk en kunnen wisselen, hun keuze wordt lokaal opgeslagen), of **Volg systeem** (de site volgt automatisch de OS-voorkeur van de bezoeker via een live media-query). Wanneer donkere modus aan staat, verschijnt er een donker palet waarin je per kleur een nachtversie kunt instellen. Laat je het donkere palet leeg, dan past de site een automatische inversie toe waarbij je merk- en accentkleuren behouden blijven.
 - **Typografie**: Kies kop-, body- en mono-lettertypes uit de ingebouwde lettertypebibliotheek (Geist, Inter, DM Sans, DM Serif Display, Fraunces, Instrument Serif, Geist Mono).
 - **Zelfgehoste lettertypes**: Alle lettertypes worden vanaf MyCompanyDesk zelf geserveerd, niet van Google Fonts of een andere externe CDN. Dezelfde fontbestanden worden gebruikt in de editor-preview en op je gepubliceerde site, dus de tekst ziet er overal identiek uit en het IP-adres van bezoekers blijft op je eigen domein.
-- **Schaal**: Stel hoekradius, dichtheid (compact, ruim, royaal), maximale inhoudsbreedte, verticale sectie-afstand en kaartstijl in. De kaartstijl bepaalt hoe inhoudskaarten over de secties heen worden weergegeven: **Plat** (geen rand), **Omlijnd** (standaard, dunne lijn), **Schaduw** (zachte schaduw), **Zwevend** (sterke schaduw), **Brut** (harde rand met blokschaduw), **Lijn** (alleen contour, geen vulling) of **Glas** (doorzichtige, matgeglazuurde kaart met een achtergrondblur). Glas komt het best tot zijn recht over een foto, verloop of decoratieve band; op een effen achtergrond valt hij terug op een zacht getinte kaart.
+- **Schaal**: Stel hoekradius, dichtheid (compact, ruim, royaal), maximale inhoudsbreedte, verticale sectie-afstand, de tekstgrootte voor de tekst die je bezoekers lezen (**Normaal**, **Groot** of **Extra**), en kaartstijl in. De kaartstijl bepaalt hoe inhoudskaarten over de secties heen worden weergegeven: **Plat** (geen rand), **Omlijnd** (standaard, dunne lijn), **Schaduw** (zachte schaduw), **Zwevend** (sterke schaduw), **Brut** (harde rand met blokschaduw), **Lijn** (alleen contour, geen vulling) of **Glas** (doorzichtige, matgeglazuurde kaart met een achtergrondblur). Glas komt het best tot zijn recht over een foto, verloop of decoratieve band; op een effen achtergrond valt hij terug op een zacht getinte kaart.
 - **Beweging**: Schakel verminderde beweging in of kies een bewegingsstijl (Uit, Subtiele fade, Slide-up).
 - **Knoppen**: Pas knopradius, padding en hover-effecten aan.
 - **Navbar**: Stel de layout in (standaard, gecentreerd, split), de achtergrondstijl (vast, transparant met blur, volledig transparant) en hoe de CTA-knop eruitziet (vol, lijn, alleen tekst). De navbar-instellingen gelden voor elke pagina.
@@ -434,7 +434,9 @@ Wanneer je klaar bent:
 
 Ongepubliceerde wijzigingen worden per pagina en per token bijgehouden. De publiceerknop is uitgeschakeld als er niets te publiceren is. Een pagina wisselen tussen Live en Concept wordt meteen opgeslagen en telt als ongepubliceerde wijziging, dus de Publiceerknop licht op zodra je wisselt.
 
-Van welke ingang je ook publiceert, overzicht, editorwerkbalk of het eerste-opstartscherm: zodra er iets opvalt krijg je dezelfde publicatiewaarschuwing. Ze somt elk punt op: of je contactpagina of voettekst het e-mailadres toont waarmee je inlogt (met een link om een ander publiek e-mailadres in te stellen, of een knop om te bevestigen dat dit een bewust adres is), en of er op je juridische pagina's nog velden ontbreken, met een link die je bedrijfsgegevens invult. Bevestig je het e-mailadres en valt er verder niets op, dan schakelt de dialoog over op een neutrale Klaar om te publiceren die alleen nog om bevestiging vraagt.
+Van welke ingang je ook publiceert, overzicht, editorwerkbalk of het eerste-opstartscherm: zodra er iets opvalt krijg je dezelfde publicatiewaarschuwing. Ze somt elk punt op: of je contactpagina of voettekst het e-mailadres toont waarmee je inlogt (met een link om een ander publiek e-mailadres in te stellen, of een knop om te bevestigen dat dit een bewust adres is), of er op je juridische pagina's nog velden ontbreken, met een link die je bedrijfsgegevens invult, en of een FAQ-blok nog vragen zonder antwoord telt, met een link die dat blok opent om ze te schrijven. Bevestig je het e-mailadres en valt er verder niets op, dan schakelt de dialoog over op een neutrale Klaar om te publiceren die alleen nog om bevestiging vraagt.
+
+De allereerste publicatie eindigt met een moment Je website is online: **Bekijk je site** en **Deel je link**, met een kopieerknop voor het adres dat je aan klanten uitdeelt.
 
 Een snelle dubbelklik kan niet per ongeluk publiceren: de bevestigingsknop in de publicatiewaarschuwing negeert klikken even na het openen, en een tweede klik vlak na de eerste kan geen dubbele publicatie starten of de waarschuwing overslaan.
 
@@ -515,12 +517,16 @@ Zie [Domeinen, website en inbox](/features/domains-website-inbox) voor domeinins
 
 ## Contactformulier
 
-Het contactformulierblok (`form` sectietype) heeft een live verzendfunctionaliteit. Wanneer een bezoeker de velden invult die jij hebt ingesteld (naam, e-mail, telefoon, bedrijf, bericht) en op verzenden klikt, maakt het platform een offerteaanvraag aan en stuurt het een melding naar je werkruimte. Het formulier toont een succesbanner bij afronding en een foutmelding als er iets misgaat. Alle invoervelden worden tijdens het verzenden uitgeschakeld om dubbel verzenden te voorkomen.
+Het contactformulierblok (`form` sectietype) heeft een live verzendfunctionaliteit. Wanneer een bezoeker de velden invult die jij hebt ingesteld (naam, e-mail, telefoon, bedrijf, bericht) en op verzenden klikt, maakt het platform een aanvraag aan en stuurt het een melding naar je werkruimte. Het formulier toont een succesbanner bij afronding en een foutmelding als er iets misgaat. Alle invoervelden worden tijdens het verzenden uitgeschakeld om dubbel verzenden te voorkomen.
+
+In de inspecteur kies je de **Soort aanvraag** van het blok: **Offerte** (een aanvraag voor werk), **Bericht** (een gewone vraag of kennismaking), **Afspraak** (verzoek om een moment in je agenda), of **Terugbellen** (naam en telefoon, geen e-mail nodig). De lege keuze volgt de bedrijfsbrede standaard die je onder **Website > Koppelingen** zet. De soort bepaalt hoe inzendingen in je inbox, meldingen en mail heten, en elke soort krijgt zijn eigen tabblad onder **Offertes > Aanvragen**. Een terugbelformulier wisselt het verplichte e-mailveld om voor een verplicht telefoonveld.
+
+Op offerte- en berichtformulieren laat **Bezoekers kunnen foto's meesturen** een bezoeker tot 3 foto's (10 MB elk, JPEG, PNG of WebP) bij de aanvraag voegen. Zie [Offerteaanvragen](/features/quotes#offerteaanvragen) voor wat er aan jouw kant binnenkomt.
 
 Wat gebeurt er bij verzenden:
 
 1. Alleen de velden die het blok daadwerkelijk toont worden meegestuurd, dus het verbergen van het naamveld breekt de backend niet.
-2. Het platform maakt een offerteaanvraag aan onder het bedrijf dat aan de site-slug is gekoppeld.
+2. Het platform maakt een aanvraag aan (met de soort op de inzending) onder het bedrijf dat aan de site-slug is gekoppeld.
 3. Je ontvangt een werkruimtemelding (dezelfde route als de oude `/portal/quote-request`).
 4. De aanvraag verschijnt bij **Offertes > Aanvragen**.
 5. De bezoeker ziet een aanpasbare succesmelding.

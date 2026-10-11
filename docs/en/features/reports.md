@@ -1,11 +1,11 @@
 ---
 title: Reports
-description: "Five focused report views plus an overview that ties them together, each combining the numbers with charts in one place."
+description: "Five focused report views plus an overview that answers five plain questions, each view combining the numbers with charts in one place."
 ---
 
 # Reports
 
-Understand how your business is doing with five focused report views and an overview that ties them together. Charts are embedded directly in each view, so every report combines numbers and visuals in one place.
+Understand how your business is doing with five focused report views and an overview that answers the plain questions first. Charts are embedded directly in each view, so every report combines numbers and visuals in one place.
 
 ## Accessing reports
 
@@ -15,15 +15,15 @@ Navigate to **Reports** in the sidebar. On desktop, switch views with the tab ba
 
 ### Overview
 
-The landing view brings your key numbers together for the selected period:
+The overview answers five questions about the period you picked, one card per question, each with a single amount, a sentence of context, and a link into the matching report:
 
-- Headline stats: revenue, profit with margin, outstanding invoices, tracked hours, and expenses
-- A financial overview chart (monthly or quarterly)
-- An aging breakdown of unpaid invoices, with a shortcut to send reminders
-- Your top clients by revenue
-- Insight cards that flag things worth acting on, such as overdue invoices or a slim profit margin
+- **How much did I earn?** Revenue for the period, with the share you keep after costs, down to the cents per euro. Costs higher than revenue? The card says by how much. Links to the sales view.
+- **Who still owes me money?** The outstanding total spread over its invoices, with the late invoices and their combined amount called out when there are any. An aging breakdown sits beside it; when every invoice is paid, the card says so. A button opens the overdue invoices directly.
+- **Who gives me the most work?** Your top client of the period with their share of your revenue, and the runners-up underneath. Links to the client view.
+- **How much did I work?** Tracked hours for the period, with the part already invoiced named when there is any. Links to the work-and-time view.
+- **Want to know more?** A grid of quick links to the remaining views: what sells the most, where the money goes, how much cash is coming, which quotes are still open, which clients stopped coming back, how people find you, and the income tax estimate.
 
-Each block links through to the matching detailed report.
+A **Change period** button sits at the top, next to the period label. Deep links carry their period with them: a dashboard tile for profit or revenue opens reports on the same period that tile showed.
 
 ### Profit & Loss
 

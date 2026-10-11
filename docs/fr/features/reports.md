@@ -1,11 +1,11 @@
 ---
 title: Rapports
-description: "Cinq vues de rapport ciblées et une synthèse qui les relie, chacune réunissant les chiffres et les graphiques au même endroit."
+description: "Cinq vues de rapport ciblées plus une synthèse qui répond à cinq questions simples, chacune réunissant les chiffres et les graphiques au même endroit."
 ---
 
 # Rapports
 
-Comprenez comment va votre entreprise avec cinq vues de rapport ciblées et une vue d'ensemble qui les rassemble. Les graphiques sont intégrés directement dans chaque vue, de sorte que chaque rapport combine chiffres et visuels au même endroit.
+Comprenez comment va votre entreprise avec cinq vues de rapport ciblées et une vue d'ensemble qui répond d'abord aux questions simples. Les graphiques sont intégrés directement dans chaque vue, de sorte que chaque rapport combine chiffres et visuels au même endroit.
 
 ## Accès
 
@@ -15,15 +15,15 @@ Allez dans **Rapports** dans la barre latérale. Sur ordinateur, changez de vue 
 
 ### Vue d'ensemble
 
-La vue d'accueil rassemble vos chiffres clés pour la période sélectionnée :
+La vue d'ensemble répond à cinq questions sur la période choisie, une carte par question, chacune avec un montant, une phrase de contexte et un lien vers le rapport correspondant :
 
-- Indicateurs phares : chiffre d'affaires, bénéfice avec marge, factures impayées, heures suivies et dépenses
-- Un graphique de synthèse financière (mensuel ou trimestriel)
-- Un détail du vieillissement des factures impayées, avec un raccourci pour envoyer des rappels
-- Vos meilleurs clients par chiffre d'affaires
-- Des cartes d'analyse qui signalent les points d'attention, comme des factures en retard ou une marge trop faible
+- **Combien ai-je gagné ?** Le chiffre d'affaires de la période, avec la part conservée après les frais, jusqu'au centime par euro. Les frais plus élevés que le chiffre d'affaires ? La carte dit de combien. Lien vers la vue des ventes.
+- **Qui me doit encore de l'argent ?** Le total impayé, réparti sur ses factures, avec les factures en retard et leur montant commun dès qu'il y en a. À côté se trouve le détail du vieillissement ; si tout est payé, la carte le dit simplement. Un bouton ouvre directement les factures en retard.
+- **De qui me vient le plus de travail ?** Votre meilleur client de la période avec sa part du chiffre d'affaires, et les suivants en dessous. Lien vers la vue clients.
+- **Combien ai-je travaillé ?** Les heures suivies de la période, avec la partie déjà facturée quand il y en a une. Lien vers la vue travail et temps.
+- **Mieux savoir ?** Une grille de liens vers les autres vues : ce qui se vend le plus, où va votre argent, l'argent qui arrive, les devis encore ouverts, les clients partis, comment on vous trouve, et l'estimation de l'impôt sur le revenu.
 
-Chaque bloc renvoie vers le rapport détaillé correspondant.
+Un bouton **Changer de période** se trouve en haut, à côté du libellé de la période. Les liens profonds emportent leur période : une tuile du tableau de bord profit ou chiffre d'affaires ouvre les rapports sur la période que la tuile montrait.
 
 ### Compte de résultat
 

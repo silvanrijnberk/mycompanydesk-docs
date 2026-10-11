@@ -1,7 +1,7 @@
 ---
 title: Constructeur de site
 description: "Construisez un site web de plusieurs pages dans l'éditeur glisser-déposer : sections et blocs, vos couleurs et polices, publication quand vous voulez."
-last_verified: 2026-10-02
+last_verified: 2026-10-11
 ---
 
 # Constructeur de site
@@ -42,13 +42,13 @@ La bannière utilise le modèle IA Gemini (variante lite) s'il est disponible da
 
 Avant même d'ouvrir l'éditeur, l'assistant de configuration du site web peut créer votre premier brouillon. Il s'ouvre automatiquement la première fois qu'un nouvel espace visite `/website`, et vous pouvez le relancer plus tard via **Entreprise > Votre site web > Style** en cliquant sur **Reconfigurer**. L'assistant pose quatre questions et affiche ensuite éventuellement une étape pour une adresse web :
 
-1. **Ce que vous faites** (pré-rempli à partir de vos données d'entreprise) - votre activité, vos services et votre ton. La même étape demande aussi comment les clients peuvent réserver : ils choisissent eux-mêmes une heure dans vos horaires d'ouverture, ils envoient une demande que vous confirmez, ou il n'y a pas de réservation en ligne. Si votre site possède déjà un bloc rendez-vous, l'assistant démarre sur le mode de ce bloc et reprend votre choix lorsque vous terminez.
+1. **Ce que vous faites** (pré-rempli à partir de vos données d'entreprise) - votre activité, vos services et votre ton. La même étape porte votre vrai nom d'entreprise (obligatoire, et enregistré aussitôt avec vos données d'entreprise), votre numéro de téléphone, vos horaires d'ouverture et l'adresse que montre votre page de contact, et demande aussi comment les clients peuvent réserver : ils choisissent eux-mêmes une heure dans vos horaires d'ouverture, ils envoient une demande que vous confirmez, ou il n'y a pas de réservation en ligne. Si votre site possède déjà un bloc rendez-vous, l'assistant démarre sur le mode de ce bloc et reprend votre choix lorsque vous terminez.
 2. **Ce que vous voulez** - si le site doit surtout attirer des clients, présenter votre travail, rassurer ou être mieux référencé.
 3. **Logo** - conservez le logo généré par l'IA, ou téléchargez votre propre PNG/SVG.
 4. **Couleur de marque** - choisissez l'un des échantillons proposés ou saisissez votre propre couleur hexadécimale.
 5. **Adresse web** (uniquement si votre espace de travail n'a pas déjà de domaine actif ou de CNAME desservant le site) — ajoutez un domaine ou connectez-en un existant. Vous pouvez ignorer cette étape et ajouter une adresse plus tard.
 
-Vos réponses sont enregistrées comme brief du site. En terminant, l'IA rédige un nouveau texte pour l'ensemble de votre brouillon à partir du brief et de vos données d'espace, applique votre logo et votre couleur de marque, et laisse tout en brouillon. Rien n'est publié automatiquement. Vous vérifiez le résultat dans l'éditeur et publiez quand vous êtes satisfait.
+Vos réponses sont enregistrées comme brief du site. En terminant, l'IA rédige un nouveau texte pour l'ensemble de votre brouillon à partir du brief et de vos données d'espace, applique votre logo et votre couleur de marque, et laisse tout en brouillon. Rien n'est publié automatiquement. Vous vérifiez le résultat dans l'éditeur et publiez quand vous êtes satisfait. Sur la carte finale, vous ajustez le titre sous lequel votre site apparaît dans Google avant de terminer.
 
 Les services de la première question acceptent chacun un prix facultatif. Saisissez un montant TTC, activez **à partir de** pour un prix de départ, ou laissez le champ vide : votre site affichera alors « Sur demande ». Un prix déjà fixé dans votre offre est repris automatiquement. Si votre espace ne facture pas de TVA (exonéré ou KOR), le champ s'appelle simplement Prix et l'aide précise que les prix sont hors TVA.
 
@@ -402,7 +402,7 @@ Dans l'onglet **Style**, vous controlez l'apparence de l'ensemble de votre site 
 - **Mode sombre**: Definit le comportement du site en affichage sombre. Trois options : **Desactive** (pas de mode sombre, le site reste sur le theme clair), **Bouton** (les visiteurs voient un bouton soleil/lune dans la navigation et peuvent changer de theme, leur choix est enregistre localement), ou **Suivre le systeme** (le site suit automatiquement la preference du visiteur au niveau du systeme d'exploitation via un ecouteur media-query en direct). Lorsque le mode sombre est actif, une palette sombre apparait, vous permettant de definir une version nocturne de chaque couleur. Si vous laissez la palette sombre vide, le site applique une inversion par defaut qui preserve vos couleurs de marque et d'accent.
 - **Typographie**: Choisissez les polices de titre, de corps et mono dans la bibliotheque integree (Geist, Inter, DM Sans, DM Serif Display, Fraunces, Instrument Serif, Geist Mono).
 - **Polices auto-hebergees**: Toutes les polices sont servies par MyCompanyDesk lui-meme, et non par Google Fonts ou un autre CDN tiers. Les memes fichiers de police sont utilises dans l'apercu de l'editeur et sur votre site publie, pour que la typographie soit identique partout et que les adresses IP des visiteurs restent sur votre domaine.
-- **Echelle**: Definissez le rayon des coins, la densite (compact, aere, genereux), la largeur maximale du contenu, l'espacement vertical des sections et le style des cartes. Le style des cartes determine comment les cartes de contenu s'affichent dans toutes les sections: **Plat** (pas de bordure), **Bordure** (par defaut, fine ligne), **Ombre** (ombre douce), **Eleve** (ombre forte), **Brut** (bordure epaisse avec ombre decaltee), **Ligne** (contour seul, sans remplissage) ou **Verre** (carte translucide givreee avec flou d'arriere-plan). Le verre est le plus efficace sur une photo, un degrade ou une bande decorative; sur un fond uni, il se degrade en une carte legerement teintee.
+- **Echelle**: Definissez le rayon des coins, la densite (compact, aere, genereux), la largeur maximale du contenu, l'espacement vertical des sections, la taille du texte du corps pour le texte que vos visiteurs lisent (**Normal**, **Grand** ou **Extra**), et le style des cartes. Le style des cartes determine comment les cartes de contenu s'affichent dans toutes les sections: **Plat** (pas de bordure), **Bordure** (par defaut, fine ligne), **Ombre** (ombre douce), **Eleve** (ombre forte), **Brut** (bordure epaisse avec ombre decaltee), **Ligne** (contour seul, sans remplissage) ou **Verre** (carte translucide givreee avec flou d'arriere-plan). Le verre est le plus efficace sur une photo, un degrade ou une bande decorative; sur un fond uni, il se degrade en une carte legerement teintee.
 - **Mouvement**: Activez le mouvement reduit ou choisissez un style de mouvement (Desactive, Fondu subtil, Glissement).
 - **Boutons**: Personnalisez le rayon, le remplissage et les effets de survol des boutons.
 - **Barre de navigation**: Definissez la disposition (standard, centree, divisee), le style d'arriere-plan (plein, flou translucide, transparent) et l'apparence du bouton CTA (plein, contour, texte seul). Les parametres de navigation s'appliquent a chaque page.
@@ -431,7 +431,9 @@ Lorsque vous etes pret :
 
 Les modifications non publiees sont suivies par page et par token. Le bouton Publier est desactive lorsqu'il n'y a rien a publier. Basculer une page entre En ligne et Brouillon est un enregistrement immediat qui compte comme modification non publiee, le bouton Publier s'allume donc des que vous basculez.
 
-Quel que soit le point de départ, la vue d'ensemble, la barre d'outils de l'éditeur ou l'écran de première installation, le même avertissement de publication apparaît d'abord dès que quelque chose reste à signaler. Il énumère chaque point : si votre page de contact ou votre pied de page montre l'adresse e-mail avec laquelle vous vous connectez (avec un lien pour définir une autre adresse e-mail publique, ou un bouton pour confirmer que cette adresse est délibérée), et si vos pages légales manquent encore de champs, avec un lien qui complète les informations de l'entreprise. Une fois l'adresse e-mail confirmée et rien d'autre à signaler, la boîte de dialogue passe à un état neutre « Prêt à publier » qui ne demande plus que la confirmation.
+Quel que soit le point de départ, la vue d'ensemble, la barre d'outils de l'éditeur ou l'écran de première installation, le même avertissement de publication apparaît d'abord dès que quelque chose reste à signaler. Il énumère chaque point : si votre page de contact ou votre pied de page montre l'adresse e-mail avec laquelle vous vous connectez (avec un lien pour définir une autre adresse e-mail publique, ou un bouton pour confirmer que cette adresse est délibérée), si vos pages légales manquent encore de champs, avec un lien qui complète les informations de l'entreprise, et si un bloc FAQ compte encore des questions sans réponse, avec un lien qui ouvre ce bloc pour les écrire. Une fois l'adresse e-mail confirmée et rien d'autre à signaler, la boîte de dialogue passe à un état neutre « Prêt à publier » qui ne demande plus que la confirmation.
+
+La toute première publication se termine par un moment « Votre site web est en ligne » : **Voir votre site** et **Partager votre lien**, avec un bouton de copie pour l'adresse que vous communiquerez aux clients.
 
 Un double-clic rapide ne peut pas publier par accident : le bouton de confirmation de l'avertissement de publication ignore les clics pendant un court instant après son ouverture, et un second clic juste après le premier ne peut ni déclencher une publication en double ni contourner l'avertissement.
 
@@ -512,12 +514,16 @@ Consultez [Domaines, site web et boite de reception](/fr/features/domains-websit
 
 ## Formulaire de contact
 
-Le bloc formulaire de contact (`form` type de section) dispose d'un gestionnaire d'envoi actif. Lorsqu'un visiteur remplit les champs que vous avez configurés (nom, e-mail, téléphone, entreprise, message) et clique sur Envoyer, la plateforme crée une demande de devis et notifie votre espace de travail. Le formulaire affiche une bannière de succès une fois terminé et une erreur inline en cas de problème. Tous les champs sont désactivés pendant l'envoi pour éviter les doubles soumissions.
+Le bloc formulaire de contact (`form` type de section) dispose d'un gestionnaire d'envoi actif. Lorsqu'un visiteur remplit les champs que vous avez configurés (nom, e-mail, téléphone, entreprise, message) et clique sur Envoyer, la plateforme crée une demande et notifie votre espace de travail. Le formulaire affiche une bannière de succès une fois terminé et une erreur inline en cas de problème. Tous les champs sont désactivés pendant l'envoi pour éviter les doubles soumissions.
+
+Dans l'inspecteur, vous choisissez le **Type de demande** du bloc : **Devis** (une demande de travail), **Message** (une simple question ou une présentation), **Rendez-vous** (une demande de moment dans votre agenda), ou **Rappel** (nom et téléphone, sans e-mail obligatoire). L'option vide suit le réglage global de l'entreprise, posé sous **Site web > Connexions**. Le type décide comment les soumissions s'appellent dans votre boîte de réception, vos notifications et vos e-mails, et chaque type garde son propre onglet sous **Devis > Demandes**. Un formulaire de rappel échange le champ e-mail obligatoire contre un champ téléphone obligatoire.
+
+Sur les formulaires de devis et de message, **Les visiteurs peuvent envoyer des photos** permet à un visiteur d'ajouter jusqu'à 3 photos (10 Mo chacune, JPEG, PNG ou WebP) à la demande. Voyez [Demandes de devis](/fr/features/quotes#demandes-de-devis) pour ce qui arrive côté app.
 
 Ce qui se passe lors de l'envoi :
 
 1. Seuls les champs que le bloc rend effectivement sont envoyés. Le fait de masquer le champ nom ne casse donc pas le backend.
-2. La plateforme crée une demande de devis sous l'entreprise liée au slug du site.
+2. La plateforme crée une demande (type estampillé à l'arrivée) sous l'entreprise liée au slug du site.
 3. Vous recevez une notification dans votre espace de travail (même chemin que l'ancienne route `/portal/quote-request`).
 4. La demande apparait dans **Devis > Demandes**.
 5. Le visiteur voit un message de succes personnalisable.

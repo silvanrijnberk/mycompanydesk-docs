@@ -1,11 +1,11 @@
 ---
 title: Rapporten
-description: "Vijf gerichte rapportweergaven plus een overzicht dat ze samenbrengt, elk met de cijfers en de grafieken op een plek."
+description: "Vijf gerichte rapportweergaven plus een overzicht dat vijf gewone vragen beantwoordt, elk met de cijfers en de grafieken op een plek."
 ---
 
 # Rapporten
 
-Begrijp hoe je bedrijf ervoor staat met vijf gerichte rapportweergaven en een overzicht dat ze samenbrengt. Grafieken zitten direct in elke weergave, zodat elk rapport cijfers en beelden op één plek combineert.
+Begrijp hoe je bedrijf ervoor staat met vijf gerichte rapportweergaven en een overzicht dat eerst de gewone vragen beantwoordt. Grafieken zitten direct in elke weergave, zodat elk rapport cijfers en beelden op één plek combineert.
 
 ## Navigeren
 
@@ -15,15 +15,15 @@ Ga in de zijbalk naar **Rapporten**. Op desktop wissel je van weergave met de ta
 
 ### Overzicht
 
-Het landingsoverzicht brengt je belangrijkste cijfers samen voor de geselecteerde periode:
+Het overzicht stelt vijf vragen over de periode die je koos, één kaart per vraag, elk met één bedrag, één zin met context en een doorklik naar het bijbehorende rapport:
 
-- Kopcijfers: omzet, winst met marge, openstaande facturen, geregistreerde uren en uitgaven
-- Een financieel overzichtsdiagram (per maand of kwartaal)
-- Een verouderingsoverzicht van onbetaalde facturen, met een snelkoppeling om herinneringen te versturen
-- Je grootste klanten op omzet
-- Inzichtkaarten die aandachtspunten signaleren, zoals achterstallige facturen of een krappe winstmarge
+- **Hoeveel heb ik verdiend?** Omzet voor de periode, met het deel dat je na kosten overhoudt, tot op de cent per euro. Kosten hoger dan omzet? De kaart zegt dan om hoeveel. Linkt naar de verkoopweergave.
+- **Wie moet mij nog betalen?** Het openstaande totaal, verdeeld over zijn facturen, met de late facturen en hun gezamenlijke bedrag erbij als die er zijn. Naast het blok zit een verouderingsoverzicht; is alles betaald, dan zegt de kaart dat gewoon. Een knop opent de achterstallige facturen direct.
+- **Van wie krijg ik het meeste werk?** Je grootste klant van de periode met zijn deel van je omzet, en de nummers daaronder. Linkt naar de klantweergave.
+- **Hoeveel heb ik gewerkt?** Geregistreerde uren in de periode, met het al gefactureerde deel erbij als dat er is. Linkt naar de weergave werk en tijd.
+- **Meer weten?** Een raster met doorkliks naar de overige weergaven: wat verkooop je het meest, waar gaat je geld naartoe, hoeveel geld komt eraan, welke offertes lopen nog, welke klanten zijn weggebleven, hoe vinden mensen je, en de schatting voor de inkomstenbelasting.
 
-Elk blok linkt door naar het bijbehorende gedetailleerde rapport.
+Bovenaan zit een knop **Andere periode**, naast het periodelabel. Diepe koppelingen nemen hun periode mee: een dashboardtegel over winst of omzet opent rapporten op dezelfde periode die de tegel toonde.
 
 ### Winst & verlies
 
