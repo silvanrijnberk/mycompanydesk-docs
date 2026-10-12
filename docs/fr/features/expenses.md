@@ -177,7 +177,7 @@ Si une action groupée est refusée parce qu'une ou plusieurs lignes sélectionn
 
 ## Indemnité kilométrique
 
-Si vous utilisez une voiture privée pour des déplacements professionnels, vous pouvez regrouper ces trajets en une seule dépense avec une indemnité kilométrique. Les trajets viennent de l'enregistrement du temps, donc la comptabilisation demande l'accès à cette page ; sans accès, le parcours explique ce que demander à votre administrateur.
+Si vous utilisez une voiture privée pour des déplacements professionnels, vous pouvez regrouper ces trajets en une seule dépense avec une indemnité kilométrique. Les trajets viennent de l'enregistrement du temps, donc la comptabilisation demande l'accès à cette page ; sans accès, le parcours explique ce qu'il faut demander à votre administrateur.
 
 1. Allez dans **Dépenses** et ouvrez l'indemnité kilométrique.
 2. Choisissez la période à comptabiliser.

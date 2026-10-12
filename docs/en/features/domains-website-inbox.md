@@ -125,7 +125,7 @@ Notable columns the app reads from:
 
 Domain renewal follows three paths depending on how the domain was acquired:
 
-1. **Free bundled renewal** (Office-converted trial-tier, or a legacy free-for-life arrangement): MCD absorbs the wholesale renewal cost. The domain auto-renews as long as the workspace is really on Office; if the subscription is cancelled to end at its period end and Office stops before the domain expires, the free renewal no longer applies and renewing the domain is up to you. No payment method needed.
+1. **Free bundled renewal** (Office-converted trial-tier, or a legacy free-for-life arrangement): MCD absorbs the wholesale renewal cost. The domain auto-renews as long as the workspace is really on Office; if the subscription is cancelled to run until the end of its period and Office stops before the domain expires, the free renewal no longer applies and renewing the domain is up to you. No payment method needed.
 2. **Paid auto-renewal** (paid purchase, or trial-tier without Office): Charged annually via the saved card. Works like any subscription renewal.
 3. **Manual renewal**: If a trial-tier workspace falls off Office AND has no saved card, the auto-renewal path skips it. The user sees a notification and can trigger a one-off payment via `POST /api/domains/renew/:domainId`, which creates a Stripe Embedded Checkout session for the renewal. This is the only way to keep a domain alive without an active subscription or saved card.
 
