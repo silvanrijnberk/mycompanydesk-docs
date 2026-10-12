@@ -177,7 +177,7 @@ Wird eine Massenaktion abgelehnt, weil eine oder mehrere ausgewählte Zeilen in 
 
 ## Kilometerpauschale
 
-Wenn Sie mit einem Privatwagen geschäftlich unterwegs sind, können Sie diese Fahrten als eine einzelne Ausgabe mit Kilometerpauschale buchen.
+Wenn Sie mit einem Privatwagen geschäftlich unterwegs sind, können Sie diese Fahrten als eine einzelne Ausgabe mit Kilometerpauschale buchen. Die Fahrten kommen aus der Zeiterfassung, das Erfassen braucht deshalb Zugang zu dieser Seite; ohne Zugang sagt der Ablauf, was Sie beim Administrator anfragen können.
 
 1. Gehen Sie zu **Ausgaben** und öffnen Sie die Kilometerpauschale.
 2. Wählen Sie den Zeitraum, den Sie buchen möchten.

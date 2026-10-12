@@ -125,7 +125,7 @@ Colonnes notables que l'application lit :
 
 Le renouvellement de domaine suit trois chemins selon la maniere dont le domaine a ete acquis :
 
-1. **Renouvellement groupe gratuit** (niveau Trial converti en Office, ou accord antérieur de gratuité à vie) : MCD prend en charge le cout de gros du renouvellement. Le domaine se renouvelle automatiquement tant que l'espace de travail reste sur Office. Aucun moyen de paiement requis.
+1. **Renouvellement groupe gratuit** (niveau Trial converti en Office, ou accord antérieur de gratuité à vie) : MCD prend en charge le cout de gros du renouvellement. Le domaine se renouvelle automatiquement tant que l'espace de travail est réellement sur Office ; quand l'abonnement est résilié pour la fin de période et qu'Office s'arrête avant l'expiration du domaine, le renouvellement vous incombe ensuite. Aucun moyen de paiement requis.
 2. **Renouvellement automatique payant** (achat payant ou niveau Trial sans Office) : Facture annuellement via la carte enregistree. Fonctionne comme tout autre renouvellement d'abonnement.
 3. **Renouvellement manuel** : Si un espace de travail de niveau Trial quitte Office ET n'a pas de carte enregistree, le chemin de renouvellement automatique le saute. L'utilisateur voit une notification et peut declencher un paiement ponctuel via `POST /api/domains/renew/:domainId`, qui cree une session Stripe Embedded Checkout pour le renouvellement. C'est le seul moyen de garder un domaine actif sans abonnement actif ni carte enregistree.
 

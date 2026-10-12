@@ -17,7 +17,7 @@ Oben sitzt **Jetzt erledigen**: eine Liste dessen, was jetzt Ihre Aufmerksamkeit
 - Eine Rechnung, die nie verschickt wurde, oder eine Rechnung im Entwurf, mit dem Betrag dazu
 - Überfällige Rechnungen, mit einer Erinnerungsaktion
 - Die Umsatzsteuererklärung und ihre Frist
-- Anfragen, die auf ein Angebot warten, und Angebote, die stillstehen
+- Anfragen, die auf Ihre Antwort warten, und Angebote, die stillstehen
 - Bankzeilen, die noch zugeordnet werden müssen
 - Eine Buchungsagenda, die auf einer Site ohne Besucher sitzt
 - Eine Website, die offline ist, während noch Besucher kommen, oder Änderungen, die noch nicht online stehen
