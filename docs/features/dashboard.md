@@ -17,7 +17,7 @@ Bovenaan staat **Nu doen**: één lijst van wat nu om je vraagt, en elk item dra
 - Een factuur die nooit is verzonden, of een conceptfactuur die klaarstaat, met het bedrag eraan
 - Te late facturen, met een herinneringsactie
 - De btw-aangifte en zijn deadline
-- Aanvragen die op een offerte wachten en offertes die stilliggen
+- Aanvragen die op je reactie wachten, en offertes die stilliggen
 - Bankregels die nog gekoppeld moeten worden
 - Een boekingsagenda die op een site zonder bezoekers staat
 - Een website die offline staat terwijl er nog bezoekers komen, of wijzigingen die nog niet online staan

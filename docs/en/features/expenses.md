@@ -172,7 +172,7 @@ If a bulk action is refused because one or more selected rows fall inside a lock
 
 ## Mileage allowance
 
-If you drive a private car for business trips, you can book those trips as a single expense with a mileage allowance.
+If you drive a private car for business trips, you can book those trips as a single expense with a mileage allowance. The trips come from Time registration, so booking them asks for access to that page; without access, the flow explains what to ask your admin for instead of failing.
 
 1. Go to **Expenses** and open the mileage allowance flow.
 2. Pick the period you want to book.

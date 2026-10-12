@@ -17,7 +17,7 @@ En haut se trouve **À faire maintenant** : une liste de ce qui réclame votre a
 - Une facture jamais envoyée, ou une facture encore en brouillon, avec le montant qui va avec
 - Des factures en retard, avec une action de rappel
 - La déclaration de TVA et son échéance
-- Des demandes qui attendent un devis, et des devis restés sans réponse
+- Des demandes qui attendent votre réponse, et des devis restés sans réponse
 - Des lignes bancaires encore à rapprocher
 - Un agenda de réservation posé sur un site sans visiteurs
 - Un site Web hors ligne pendant que des visiteurs viennent encore, ou des modifications pas encore publiées

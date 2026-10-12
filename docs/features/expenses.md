@@ -159,7 +159,7 @@ Als een bulkactie wordt geweigerd omdat één of meer geselecteerde regels in ee
 
 ## Kilometervergoeding
 
-Rij je privé zakelijk, dan kun je die ritten bundelen tot één uitgave met een kilometervergoeding.
+Rij je privé zakelijk, dan kun je die ritten bundelen tot één uitgave met een kilometervergoeding. De ritten komen uit Uren, dus het boeken vraagt toegang tot die pagina; zonder toegang zegt de uitleg wat je bij de beheerder moet vragen.
 
 1. Ga naar **Uitgaven** en open de kilometervergoeding.
 2. Kies de periode die je wilt boeken.

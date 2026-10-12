@@ -125,7 +125,7 @@ Wichtige Spalten, die die App liest:
 
 Die Domain-Verlängerung folgt drei Pfaden, je nachdem, wie die Domain erworben wurde:
 
-1. **Kostenlose gebündelte Verlängerung** (auf Office umgestellte Trial-Stufe oder eine bestehende Gratis-auf-Lebenszeit-Vereinbarung): MCD übernimmt die Wholesale-Verlängerungskosten. Die Domain verlängert sich automatisch, solange der Workspace auf Office bleibt. Keine Zahlungsmethode erforderlich.
+1. **Kostenlose gebündelte Verlängerung** (auf Office umgestellte Trial-Stufe oder eine bestehende Gratis-auf-Lebenszeit-Vereinbarung): MCD übernimmt die Wholesale-Verlängerungskosten. Die Domain verlängert sich automatisch, solange der Workspace wirklich auf Office läuft; läuft das Abonnement auf das Periodenende aus und stoppt Office, bevor die Domain fällig ist, verlängern Sie die Domain danach selbst. Keine Zahlungsmethode erforderlich.
 2. **Kostenpflichtige automatische Verlängerung** (bezahlter Kauf oder Trial-Stufe ohne Office): Wird jährlich über die hinterlegte Karte abgerechnet. Funktioniert wie jede andere Abonnementverlängerung.
 3. **Manuelle Verlängerung**: Wenn ein Trial-Workspace aus Office herausfällt UND keine Karte hinterlegt hat, überspringt der automatische Verlängerungspfad ihn. Der Benutzer sieht eine Benachrichtigung und kann eine einmalige Zahlung über `POST /api/domains/renew/:domainId` auslösen, die eine Stripe Embedded Checkout-Sitzung für die Verlängerung erstellt. Dies ist der einzige Weg, eine Domain ohne aktives Abonnement oder hinterlegte Karte aktiv zu halten.
 

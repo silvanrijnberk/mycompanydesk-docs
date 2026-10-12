@@ -17,7 +17,7 @@ At the top sits **Do now**: one list of what deserves your attention now, and ev
 - An invoice that was never sent, or a draft invoice waiting to go out, with the amount involved
 - Overdue invoices, with a reminder action
 - The VAT return and its deadline
-- Quote requests waiting for a quote, and quotes that have gone quiet
+- Quote requests waiting for your reply, and quotes that have gone quiet
 - Bank rows that still have to be matched
 - An online booking agenda that sits on a site that is not live
 - A website that is offline while visitors still come, or changes that are not published yet

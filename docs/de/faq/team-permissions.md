@@ -31,7 +31,7 @@ The drawer also has quick shortcuts:
 
 Read must be on before Write or Create can work. Turning Read off also disables Write and Create for that page.
 
-The **Payments** page also requires Read access on the **Invoices** page, because payments can update invoice status (including marking invoices as paid) and process refunds.
+The **Payments** page also requires Read access on the **Invoices** page, because payments can update invoice status (including marking invoices as paid) and process refunds. The trips behind the mileage allowance live in Time registration (Uren) and that flow asks for Read on the same page. Saved routes and the trip suggestions used by the public-transport expense open with Read on Time registration or Expenses.
 
 The same right protects the invoice entry points scattered across the app. Every action that creates an invoice or a quote somewhere else (a **Factuur maken** action on an hour row, in an appointment, on the Nearby customers sheet, or on a project and contract page) asks for the right on **Facturen** (invoices), and without it the action stays hidden instead of ending in an error. Turning on automatic invoicing asks for Write access on Facturen, and starting a payment mandate asks for the same right. Read-gated lists behave consistently too: the transactions list on the VAT page skips invoice and expense rows the member has no Read right on, the document archive lists receipts, invoices and mail attachments only for members with the matching right, and shielded pieces stay out of the archive view for the accountant.
 

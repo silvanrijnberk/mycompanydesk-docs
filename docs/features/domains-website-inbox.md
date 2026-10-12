@@ -125,7 +125,7 @@ Belangrijke kolommen die de app leest:
 
 Domeinverlenging volgt drie routes, afhankelijk van hoe het domein is verkregen:
 
-1. **Gratis gebundelde verlenging** (naar Office geconverteerde trial-tier, of een bestaande gratis-voor-het-leven-afspraak): MCD neemt de wholesale-verlengkosten voor zijn rekening. Het domein verloopt automatisch zolang de werkruimte op Office blijft. Geen betaalmiddel nodig.
+1. **Gratis gebundelde verlenging** (naar Office geconverteerde trial-tier, of een bestaande gratis-voor-het-leven-afspraak): MCD neemt de wholesale-verlengkosten voor zijn rekening. Het domein verlengt automatisch zolang de werkruimte werkelijk op Office loopt; heb je het abonnement per einde periode opgezegd en stopt Office vóórdat het domein verloopt, dan verleng je het domein daarna zelf. Geen betaalmiddel nodig.
 2. **Betaalde automatische verlenging** (betaalde aankoop, of trial-tier zonder Office): Jaarlijks in rekening gebracht via de opgeslagen kaart. Werkt als elke andere abonnementsverlenging.
 3. **Handmatige verlenging**: Als een trial-tier werkruimte van Office af valt EN geen opgeslagen kaart heeft, slaat het automatische verlengingspad deze over. De gebruiker ziet een melding en kan een eenmalige betaling starten via `POST /api/domains/renew/:domainId`, wat een Stripe Embedded Checkout-sessie aanmaakt voor de verlenging. Dit is de enige manier om een domein actief te houden zonder actief abonnement of opgeslagen kaart.
 
