@@ -17,7 +17,7 @@ Wechseln Sie mit der Auswahl oben zwischen vier Ansichten (auf Mobilgeräten wis
 - **Monat**: Summen pro Tag; wählen Sie einen Tag, um dorthin zu springen.
 - **Liste**: eine durchsuchbare Tabelle aller Einträge mit Filtern für Rechnungsstatus, Kunde, Projekt und Fahrten, plus Summen für die aktuelle Auswahl.
 
-Geplante Einträge tragen das Label **Vorläufig**; drücken Sie **Bestätigen**, sobald die Arbeit tatsächlich erledigt ist, um sie in erfasste Stunden umzuwandeln.
+Geplante Einträge tragen das Label **Vorläufig**; drücken Sie **Bestätigen**, sobald die Arbeit tatsächlich erledigt ist, um sie in erfasste Stunden umzuwandeln. Bestätigen Sie einen Eintrag, dessen Datum noch in der Zukunft liegt, fragt die App zuerst, ob diese Stunden schon mitzählen dürfen.
 
 Möchten Sie das nicht manuell erledigen? Aktivieren Sie **Vorläufige Zeit automatisch bestätigen** in den Zeitplan-Einstellungen. Vorläufige Einträge werden dann automatisch bestätigt, sobald ihr geplanter Termin verstrichen ist, auch wenn niemand den Zeitplan öffnet.
 
@@ -35,6 +35,8 @@ Auf Mobilgeräten enthält die Tagesansicht einen Timer: Starten Sie ihn, wenn S
 2. Der Schnelleingabe-Dialog öffnet sich: Wählen Sie den Kunden und optional ein Projekt, geben Sie Ihre Stunden ein und passen Sie bei Bedarf Beschreibung und Stundensatz an
 3. Geben Sie die Zeit als Gesamtstunden ein oder wechseln Sie zu Start- und Endzeit
 4. Speichern Sie den Eintrag
+
+Ein Eintrag umfasst einen Tag und darf höchstens 24 Stunden lang sein; verteilen Sie Ihre Woche auf mehrere Tage.
 
 ### Standard-Zeilenbeschreibung
 

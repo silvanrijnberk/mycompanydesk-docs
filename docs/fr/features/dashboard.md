@@ -32,12 +32,12 @@ La même liste arrive aussi chaque lundi dans votre boîte mail : uniquement s'i
 
 À côté de **À faire maintenant** se trouve la carte d'argent, avec les quatre chiffres qui répondent d'un coup d'œil à la question « comment va l'entreprise » :
 
-- **Librement disponible** : votre solde bancaire, moins la réserve de TVA et vos charges fixes mensuelles
+- **Librement disponible** : votre solde bancaire, moins la réserve de TVA, l'impôt sur votre bénéfice et vos charges fixes mensuelles
 - **En banque** : le solde de vos comptes professionnels
 - **À recevoir**, avec la part en retard mentionnée
 - **Chiffre d'affaires par mois**
 
-La réserve suit la même logique de trimestre que la carte TVA, pour que les déposants mensuels et les déclarants précoces ne voient pas partir le mauvais montant. Le solde compte vos comptes professionnels ; un compte privé relié reste en dehors des chiffres. Un lien sous la carte ouvre la vue complète **Chiffres**.
+La réserve suit la même logique de trimestre que la carte TVA, pour que les déposants mensuels et les déclarants précoces ne voient pas partir le mauvais montant. Sous le chiffre, la carte liste ses réserves : la TVA, l'impôt sur votre bénéfice (la même estimation que celle de la réponse des rapports) et vos charges fixes. La ligne d'impôt n'apparaît qu'une fois cette estimation arrivée, pour que le chiffre ne se montre pas haut d'abord puis ne baisse. Le solde compte vos comptes professionnels ; un compte privé relié reste en dehors des chiffres. Un lien sous la carte ouvre la vue complète **Chiffres**.
 
 ## Une carte par module
 

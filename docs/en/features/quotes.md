@@ -81,7 +81,7 @@ The signing block in the quote PDF follows the quote's document language: if the
 The top action on the quote detail page depends on the quote status:
 
 - **Send** — Available for draft and sent quotes, so the quote can reach the customer.
-- **Convert to Invoice** — Available once the customer has accepted the quote, turning it into an invoice with one click.
+- **Convert to Invoice** - Available once the customer has accepted the quote, turning it into an invoice with one click. The bottom bar also offers it on a sent or draft quote, and every conversion lands the quote in **Accepted**; a draft is given its quote number at that moment.
 - **Duplicate / Create new version** — Available for rejected or expired quotes so you can reissue them quickly.
 
 Additional actions live in the overflow menu next to the top action:

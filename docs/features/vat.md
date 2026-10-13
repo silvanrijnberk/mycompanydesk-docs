@@ -216,7 +216,7 @@ Concurrent filing attempts for the same period are serialized. If two submission
 
 ## KOR
 
-The kleineondernemersregeling is managed under **Settings → Btw**: a card tracks your year revenue against the €20,000 threshold ([`sources/vat-rates.yaml#countries.NL.small_business_threshold_eur`](../../sources/vat-rates.yaml)) with a progress bar, explains what enrolment means for your invoicing, and has the enrolment toggle. You remain eligible up to and including exactly €20,000 of year revenue; only revenue above that ends KOR eligibility. While your revenue is still in the KOR range, the VAT page shows a hint linking there.
+The kleineondernemersregeling is managed under **Settings → Btw**: a card tracks your year revenue against the €20,000 threshold ([`sources/vat-rates.yaml#countries.NL.small_business_threshold_eur`](../../sources/vat-rates.yaml)) with a progress bar, explains what enrolment means for your invoicing, and has the enrolment toggle. You remain eligible up to and including exactly €20,000 of year revenue; only revenue above that ends KOR eligibility. While your revenue is still in the KOR range, the VAT page shows a hint linking there. With the KOR on, the rest of the VAT settings (filing frequency, default rate, exemption) fold away behind a **Show other VAT settings** button, and the top of the page reads "You take part in the KOR: you charge no VAT."
 
 If you go above €20,000 while still enrolled, a warning banner appears at the top of the invoice editor. The banner title says you are above the KOR threshold, the body explains that the invoice must include VAT rather than 0%, and the CTA opens **Settings → Btw** so you can deregister with the Belastingdienst and turn KOR off.
 
@@ -226,7 +226,7 @@ While the KOR is on, invoices do not need a VAT number: the check before sending
 
 ### Documents and emails under the KOR
 
-While the KOR toggle is on, document lines count as 0% VAT. Invoice, quote, credit note and contract PDFs print **Subtotal** and **Total** without excl./incl. VAT labels and without a VAT line, invoice emails leave out the excl./incl. VAT summary under the lines, and new catalog items default to 0% VAT. The signing page shows **Total** instead of **Total including VAT** when the quote carries no VAT. The same document wording applies while the separate exempt toggle (Vrijgesteld van btw) is on, and VAT wording in the terms you publish through your site stays neutral even after the KOR is switched off again.
+While the KOR toggle is on, document lines count as 0% VAT. Invoice, quote, credit note and contract PDFs print **Subtotal** and **Total** without excl./incl. VAT labels and without a VAT line, invoice emails leave out the excl./incl. VAT summary under the lines, and new catalog items default to 0% VAT. The line editor keeps quiet about it too: a line shows no VAT rate and no "0% VAT" or "excl. VAT" label, in the line sheet, on the mobile line card and in the document detail. The signing page shows **Total** instead of **Total including VAT** when the quote carries no VAT. The same document wording applies while the separate exempt toggle (Vrijgesteld van btw) is on, and VAT wording in the terms you publish through your site stays neutral even after the KOR is switched off again.
 
 ## KIA and Box 3
 

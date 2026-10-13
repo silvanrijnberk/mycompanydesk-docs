@@ -10,6 +10,7 @@ chatbot:
 ---
 Rechnungsstatus erklärt:
 • Entwurf - noch nicht gesendet, frei bearbeitbar. Ein Entwurf kann erst als bezahlt markiert oder mit einer Zahlung erfasst werden, nachdem er finalisiert wurde; früher erzeugte eine Zahlung auf einem Entwurf eine nummerlose Rechnung mit Status Bezahlt, was jetzt nicht mehr erlaubt ist.
+• Noch zu versenden - finalisiert, aber noch nicht gesendet oder bezahlt. Steht bereits eine Zahlung darauf (etwa eine Anzahlung oder Teilzahlung), zeigt die Liste ihn als Gesendet an, weil er klar raus ist.
 • Gesendet - an den Kunden zugestellt, wartet auf Zahlung
 • Überfällig - Fälligkeitsdatum überschritten, noch nicht bezahlt
 • Überprüfung erforderlich - der Kunde hat im Portal angegeben, dass er bezahlt hat; bestätigen oder lehnen Sie die Zahlung ab, bevor die Rechnung auf Bezahlt wechselt
@@ -18,4 +19,4 @@ Rechnungsstatus erklärt:
 
 Löschen erfolgt in Stufen: aus aktiv wird Archiviert, aus Archiviert wird Papierkorb, und aus dem Papierkorb wird endgültig gelöscht. Sie können die Rechnung aus dem Archiv oder dem Papierkorb wiederherstellen, solange sie nicht endgültig gelöscht ist. Stornieren ist anders: damit markieren Sie eine gesendete oder bezahlte Rechnung als storniert, sie bleibt aber in der Liste sichtbar.
 
-Tipp: Nutzen Sie die Statusfilter, um zuerst Offen und Überfällig zu sehen.
+Tipp: Nutzen Sie die Statusfilter, um zuerst Noch zu versenden und Überfällig zu sehen.

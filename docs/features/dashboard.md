@@ -32,12 +32,12 @@ Elke maandag komt dezelfde lijst langs in je mailbox: alleen als er iets te doen
 
 Naast **Nu doen** staat de geldkaart, met de vier getallen die "hoe gaat het" in één oogopslag beantwoorden:
 
-- **Vrij besteedbaar**: je banksaldo, min de btw-reservering en je vaste lasten per maand
+- **Vrij besteedbaar**: je banksaldo, min de btw-reservering, de belasting over je winst en je vaste lasten per maand
 - **Op de bank**: het saldo op je zakelijke rekeningen
 - **Nog te ontvangen**, met het te late deel erbij genoemd
 - **Omzet per maand**
 
-De reservering volgt dezelfde kwartaal-logica als de btw-kaart, zodat maandaangevers en vroege indieners het juiste bedrag uit beeld zien blijven. Het saldo telt je zakelijke rekeningen; een gekoppelde privérekening blijft buiten de cijfers. Een link onder de kaart opent de volledige **Cijfers**-weergave.
+De reservering volgt dezelfde kwartaal-logica als de btw-kaart, zodat maandaangevers en vroege indieners het juiste bedrag uit beeld zien blijven. Onder het getal zet de kaart de reserveringen op een rij: de btw, de belasting over je winst (dezelfde schatting die het antwoord bij Rapportages gebruikt) en je vaste lasten. De belastingsrij verschijnt pas zodra die schatting binnen is, zodat het getal niet eerst hoog staat en dan zakt. Het saldo telt je zakelijke rekeningen; een gekoppelde privérekening blijft buiten de cijfers. Een link onder de kaart opent de volledige **Cijfers**-weergave.
 
 ## Per onderdeel een kaart
 

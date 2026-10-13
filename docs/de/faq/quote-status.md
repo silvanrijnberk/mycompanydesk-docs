@@ -18,7 +18,7 @@ Die Angebotsstatus im Überblick:
 
 Auf der Angebotsdetailseite wird die aktuelle Phase als Lifecycle-Karte angezeigt: Entwurf → Gesendet, gefolgt von Angenommen oder Zurückgewiesen als Entscheidungszweig. Abgelaufene und stornierte Angebote werden am Ende des Ablaufs als Endergebnis dargestellt.
 
-Wandeln Sie ein akzeptiertes Angebot in eine Rechnung um, bleibt das Angebot Akzeptiert und erhält die Markierung "In Rechnung umgewandelt".
+Wandeln Sie ein akzeptiertes Angebot in eine Rechnung um, bleibt das Angebot Akzeptiert und erhält die Markierung "In Rechnung umgewandelt". Die Umwandlung funktioniert auch direkt von einem gesendeten oder Entwurfs-Angebot aus (wenn der Kunde auf andere Weise Ja gesagt hat): Das Angebot wechselt dann auf Akzeptiert, und ein Entwurf erhält dabei seine Angebotsnummer.
 
 Auf der Unterschriftsseite erhält der Kunde eine klare Erklärung, sobald ein Angebot nicht mehr unterschrieben werden kann: bei einem abgelaufenen Angebot bittet die Seite den Kunden, ein neues Angebot anzufordern; ein Angebot, das bereits in eine Rechnung oder Vereinbarung umgewandelt wurde, zeigt, dass nichts mehr zu tun bleibt; und ein bereits angenommenes Angebot kann nicht mehr abgelehnt werden. In diesem letzten Fall weist die Seite den Kunden an, bei einem Sinneswandel Kontakt aufzunehmen.
 

@@ -18,7 +18,7 @@ Quote statuses explained:
 
 On the quote detail page, the current stage is shown as a lifecycle card: Draft → Sent, then Accepted or Declined as a decision branch. Expired and canceled quotes are shown as terminal outcomes at the end of the flow.
 
-When you convert an accepted quote to an invoice, the quote stays Accepted and gets a "Converted to invoice" marker.
+When you convert an accepted quote to an invoice, the quote stays Accepted and gets a "Converted to invoice" marker. Converting also works straight from a sent or draft quote (when the customer said yes another way): the quote moves to Accepted, and a draft is given its quote number at that moment.
 
 On the signing page, the customer gets a plain-language explanation when a quote can no longer be signed: a quote past its valid-until date asks the customer to request a new quote, a quote already turned into an invoice or agreement leaves nothing to do, and a quote that was already accepted can no longer be declined. In that last case the page invites the customer to contact you about a change of mind.
 

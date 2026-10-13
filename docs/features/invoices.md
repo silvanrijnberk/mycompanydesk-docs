@@ -104,8 +104,8 @@ The **Amounts incl. VAT** switch on the document form changes what you type. Wit
 
 - The price you typed is what stays: change the VAT rate on the line afterwards and the amount including VAT remains in place, with the amount excluding VAT adjusting underneath it.
 - A discount in euros on a line discounts what the customer pays. A percentage discount works the same as on any other line.
-- The PDF and the e-invoice label the totals as incl. VAT, so the customer can see that VAT sits inside the prices.
-- Working without the switch while the prices you typed are the paid kind? When the customer is a private customer, the form asks whether the prices you typed include VAT. One click switches the document over without touching your amounts.
+- On prices including VAT, the PDF and the invoice and quote detail show what the customer pays: the unit price and the line amount print including VAT (€ 38,00, not € 31,40), the price excluding VAT sits underneath the unit price in small print, and the VAT block names the base of every rate ("VAT 21% on € 35,54"). Package parts print including VAT too, so they add up to the package price. The totals of the document stay unchanged, and the e-invoice carries the same figures.
+- Working without the switch while the prices you typed are the paid kind? When the customer is a private customer, the form asks whether the prices you typed include VAT. One click switches the document over without touching your amounts. Starting a new document for a private customer turns the switch on by itself (the prices the app fills in from your offering keep their line totals), and a notice under the switch then says "Private customer: you are now typing prices including VAT.", with a **Turn off** button that puts prices excluding VAT back.
 
 ## Attributing an invoice to an object
 
@@ -237,7 +237,7 @@ Online payments made via Mollie or Stripe can be refunded directly from MyCompan
 
 Partial refunds initiated at Mollie or Stripe (for example, when you refund only part of the amount there) now appear in the payment list with the refund date and the remaining booked amount.
 
-Non-online methods (bank transfer, cash) use the existing void path: the payment is marked voided without a processor-side refund. When you void a payment, the invoice status is restored to the state that matches the invoice history. If the invoice had already been emailed to the customer, it returns to **Sent**; if it had never been sent, it returns to **Open**. The original sending history is preserved.
+Non-online methods (bank transfer, cash) use the existing void path: the payment is marked voided without a processor-side refund. When you void a payment, the invoice status is restored to the state that matches the invoice history. If the invoice had already been emailed to the customer, it returns to **Sent**; if it had never been sent, it returns to **To send**. The original sending history is preserved.
 
 To refund a payment:
 

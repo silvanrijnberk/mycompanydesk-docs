@@ -17,7 +17,7 @@ Passez d'une vue à l'autre avec le sélecteur en haut (balayez entre les pério
 - **Mois** : les totaux par jour ; sélectionnez un jour pour y accéder.
 - **Liste** : un tableau consultable de toutes les entrées avec des filtres par statut de facturation, client, projet et déplacements, plus les totaux de la sélection en cours.
 
-Les entrées planifiées portent le badge **Provisoire** ; appuyez sur **Confirmer** une fois le travail réellement effectué pour les transformer en heures enregistrées.
+Les entrées planifiées portent le badge **Provisoire** ; appuyez sur **Confirmer** une fois le travail réellement effectué pour les transformer en heures enregistrées. Quand vous confirmez une entrée dont la date est encore dans le futur, l'application demande d'abord si ces heures peuvent déjà compter.
 
 Vous préférez ne pas le faire manuellement ? Activez **Confirmer automatiquement le temps provisoire** dans les paramètres de l'agenda. Les entrées provisoires sont alors confirmées automatiquement une fois leur date prévue passée, même si personne n'ouvre l'agenda.
 
@@ -35,6 +35,8 @@ Sur mobile, la vue Jour comprend un minuteur : lancez-le quand vous commencez à
 2. Le panneau de saisie rapide s'ouvre : choisissez le client et éventuellement un projet, saisissez vos heures et ajustez la description et le tarif si nécessaire
 3. Saisissez le temps en nombre total d'heures, ou passez à une heure de début et de fin
 4. Enregistrez l'entrée
+
+Une entrée couvre une seule journée et dure au maximum 24 heures ; répartissez votre semaine sur plusieurs jours.
 
 ### Description de ligne par défaut
 
