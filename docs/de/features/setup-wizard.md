@@ -1,7 +1,7 @@
 ---
 title: Einrichtungsassistent
 description: "Der Assistent unter /setup richtet Ihr Unternehmen ein und fragt danach, womit Sie starten wollen: Rechnungen, Ihre Website oder geschäftliche E-Mail."
-last_verified: 2026-09-30
+last_verified: 2026-10-13
 ---
 
 # Einrichtungsassistent
@@ -64,7 +64,7 @@ Die Wahl bestimmt nur, wo der Assistent Sie absetzt. Nichts wird ein- oder ausge
 
 Der Assistent fragt nach der IBAN, auf die Kunden überweisen. Sie können jetzt Ihre Geschäfts-IBAN eingeben oder auf **IBAN später hinzufügen** klicken, um diesen Schritt zu überspringen. Beachten Sie, dass ein Kunde Sie ohne IBAN kaum bequem bezahlen kann.
 
-Wenn Sie noch auf Ihre USt-IdNr. vom Finanzamt warten oder unter die Kleinunternehmerregelung fallen, können Sie trotzdem fortfahren und die USt-IdNr. später hinzufügen.
+Zum USt-Status fragt der Schritt, ob Sie Umsatzsteuer abrechnen und, falls nein, ob das an der Kleinunternehmerregelung (KOR) liegt: ja, nein, oder ich weiß es nicht. **Ich weiß es nicht** bekommt eine eigene Antwort: Die KOR greift nur, wenn Sie sich selbst dafür bei der Belastingdienst angemeldet und ein Schreiben darüber erhalten haben; niedriger Umsatz allein genügt nicht, und das Schreiben des Finanzamts sagt es sicher. Antwort ja schaltet die Regelung ein, Rechnungen entstehen ohne Umsatzsteuer und erwähnen, dass Sie an der KOR teilnehmen. Warten Sie noch auf Ihre USt-IdNr. vom Finanzamt, können Sie trotzdem fortfahren und sie später hinzufügen.
 
 ## Schritt: Abschluss
 

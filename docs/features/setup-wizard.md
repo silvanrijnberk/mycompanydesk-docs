@@ -1,7 +1,7 @@
 ---
 title: Setupwizard
 description: "De wizard op /setup zet je bedrijf klaar en vraagt daarna waar je wilt beginnen: facturen, je eigen website of zakelijke e-mail op je eigen domein."
-last_verified: 2026-09-30
+last_verified: 2026-10-13
 ---
 
 # Setupwizard
@@ -64,7 +64,7 @@ De keuze bepaalt alleen waar de wizard je aflevert. Er gaat geen onderdeel aan o
 
 De wizard vraagt om het IBAN waar klanten naartoe betalen. Je kunt nu je zakelijke IBAN invullen, of op **IBAN later toevoegen** klikken om deze stap over te slaan. Houd er rekening mee dat een klant je zonder IBAN minder makkelijk kan betalen.
 
-Als je nog wacht op je btw-nummer van de Belastingdienst, of onder de kleineondernemersregeling (KOR) valt, kun je gewoon doorgaan en je btw-nummer later toevoegen.
+Voor je btw-status vraagt de stap of je btw afdraagt en, als je nee zegt, of dat komt door de KOR: ja, nee, of ik weet het niet. **Ik weet het niet** krijgt zijn eigen antwoord: de KOR geldt alleen als je jezelf bij de Belastingdienst heb aangemeld en een brief daarover hebt gekregen; alleen lage omzet is niet genoeg, en de brief van de Belastingdienst vertelt het zeker. Antwoord je ja, dan zet de wizard het regime aan, worden je facturen zonder btw gemaakt en vermelden ze dat je meedoet aan de KOR. Wacht je nog op je btw-nummer van de Belastingdienst, dan kun je gewoon doorgaan en het later toevoegen.
 
 ## Stap: Afronden
 

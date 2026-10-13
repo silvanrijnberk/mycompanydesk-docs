@@ -1,7 +1,7 @@
 ---
 title: Assistant de configuration
 description: "L'assistant sur /setup prépare votre entreprise et demande ensuite par quoi commencer : factures, votre site web ou le courriel professionnel."
-last_verified: 2026-09-30
+last_verified: 2026-10-13
 ---
 
 # Assistant de configuration
@@ -64,7 +64,7 @@ Le choix ne décide que de l'endroit où l'assistant vous remet. Rien n'est acti
 
 L'assistant demande l'IBAN sur lequel les clients doivent payer. Vous pouvez saisir votre IBAN professionnel maintenant, ou cliquer sur **Ajouter mon IBAN plus tard** pour passer cette étape. Gardez à l'esprit qu'un client ne pourra pas facilement vous payer sans IBAN.
 
-Si vous attendez toujours votre numéro de TVA auprès de l'administration fiscale, ou relevez du régime de franchise en base (KOR), vous pouvez quand même continuer et ajouter votre numéro de TVA plus tard.
+Pour le statut de TVA, l'étape demande si vous facturez de la TVA et, si c'est non, si c'est à cause du régime pour petits entrepreneurs (KOR) : oui, non, ou je ne sais pas. **Je ne sais pas** a sa propre réponse : le régime ne s'applique que si vous vous êtes vous-même inscrit auprès de la Belastingdienst et reçu une lettre à ce sujet ; un chiffre d'affaires bas ne suffit pas à lui seul, et la lettre de l'administration fiscale vous le dit pour de bon. Répondre oui active le régime, vos factures sont créées sans TVA et mentionnent que vous participez à la KOR. Si vous attendez toujours votre numéro de TVA auprès de l'administration fiscale, vous pouvez quand même continuer et l'ajouter plus tard.
 
 ## Étape : Finalisation
 

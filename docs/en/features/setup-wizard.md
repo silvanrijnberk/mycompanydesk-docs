@@ -64,7 +64,7 @@ The choice only steers where the wizard hands you over. Nothing is switched on o
 
 The wizard asks for the IBAN that customers pay to. You can enter your business IBAN now, or click **I'll add my IBAN later** to skip it. Keep in mind that your customer cannot easily pay you without an IBAN.
 
-If you are waiting for your VAT ID from the Tax Authority, or fall under the small business scheme (KOR), you can continue anyway and add your VAT ID later.
+For VAT status, the step asks whether you charge VAT and, when you answer no, whether that is because you take part in the KOR: yes, no, or I don't know. **I don't know** earns its own answer: the KOR only applies when you signed up for it with the Belastingdienst yourself and received a letter about it; low turnover alone is not enough, and the letter from the tax office tells you for sure. Answering yes switches the scheme on, your invoices are made without VAT and carry a note that you take part in the KOR. If you are waiting for your VAT ID from the Tax Authority, you can continue anyway and add it later.
 
 ## Step: Finish
 

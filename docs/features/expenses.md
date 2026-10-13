@@ -1,7 +1,7 @@
 ---
 title: Uitgaven
 description: "Houd je zakelijke uitgaven bij, scan bonnen, beheer categorieën met hun eigen btw-standaard en laat afschrijvingen voor investeringen vanzelf lopen."
-last_verified: 2026-10-09
+last_verified: 2026-10-13
 ---
 
 # Uitgaven
@@ -159,7 +159,7 @@ Als een bulkactie wordt geweigerd omdat één of meer geselecteerde regels in ee
 
 ## Kilometervergoeding
 
-Rij je privé zakelijk, dan kun je die ritten bundelen tot één uitgave met een kilometervergoeding. De ritten komen uit Uren, dus het boeken vraagt toegang tot die pagina; zonder toegang zegt de uitleg wat je bij de beheerder moet vragen.
+Rij je privé zakelijk, dan kun je die ritten bundelen tot één uitgave met een kilometervergoeding. De ritten komen uit Uren en uit het rittenoverzicht hieronder, dus het boeken vraagt toegang tot die pagina's; zonder toegang zegt de uitleg wat je bij de beheerder moet vragen.
 
 1. Ga naar **Uitgaven** en open de kilometervergoeding.
 2. Kies de periode die je wilt boeken.
@@ -188,6 +188,26 @@ Het bewerken van categorie, datum, bedrag, btw-behandeling, privégebruikpercent
 Een investering waarvan de eigen datum nog in een open periode valt, kan toch tegen een vergrendeld schema aanlopen als de afschrijvingsregels in een latere, vergrendelde btw-periode vallen. Dan toont het formulier de foutcode `DEPRECIATION_SCHEDULE_LOCKED` in plaats van `PERIOD_LOCKED`. Gebruik de actie **Tijdelijk ontgrendelen** voor dat tijdvak op de [Btw-pagina](/features/vat) en probeer de wijziging opnieuw.
 
 Treinkaartjes en andere autokosten kun je ook als gewone uitgave boeken via **Uitgaven > Nieuw** met leverancier, bedrag, datum en categorie.
+
+## Ritten
+
+Het overzicht **Ritten** onder Uitgaven houdt je kilometers van het jaar bij, met of zonder uren. Een rit heeft een datum, een vertrekpunt en een bestemming, het aantal kilometers gewoon één kant op, zakelijk of privé, een optionele klant en een notitie. Je hoeft er geen uren bij te zetten: elke kilometer-ingang (op de pagina **Uitgaven**, in het zoekpaneel en in de reisinstellingen) opent direct het ritformulier.
+
+Als je een rit toevoegt, vraagt het formulier **Waarmee rijd je?**. Kies je een privéauto, dan levert elke zakelijke kilometer een vast bedrag per kilometer aan vergoeding op, die je als kosten boekt. Kies je een auto of bus van de zaak, dan zijn tanken, onderhoud en verzekering al als uitgaven geboekt en zie je geen vergoeding; je ritten staan er dan alleen voor je eigen administratie. Tot de vraag beantwoord is, blijft de vergoeding uit beeld. In een werkruimte met een team beantwoordt de beheerder de vraag voor iedereen.
+
+Het overzicht groepeert ritten per maand en telt per maand op: zakelijke kilometers, privékilometers en de kilometervergoeding die ze opleveren. Ritten die nog niet als kosten geboekt zijn, laten dat totaal zien met een **Nu boeken**-link naar de kilometervergoeding hierboven. Een rit die bij een ureninvoer hoort, krijgt de markering **Bij uren**; een geboekte rit laat zien dat hij al geboekt is. Een geboekte rit veranderen begint met het verwijderen van de uitgave die ervan gemaakt is.
+
+## Vreemde valuta
+
+De administratie rekent in euro's. Staat op het document achter een uitgave een andere munt, dan worden die munt en het bedrag op het document opgeslagen naast het eurobedrag, terwijl de rapportages, de btw-aangifte en het grootboek gewoon in euro's blijven lezen.
+
+Zo komt het eurobedrag tot stand:
+
+- **Scan in een andere valuta**: het scanscherm vraagt om het eurobedrag, het bedrag waarvoor je bank het document omrekent. Tot dat bedrag er staat, laat de kaart het bedrag van het document in zijn eigen munt zien, nooit een verzonnen eurobedrag. Alleen het eurobedrag komt in je boeken.
+- **Doorgestuurde factuur (inbox)**: een factuur in een vreemde valuta die zichzelf boekt, gaat uit van een omrekening tegen de koers van de Europese Centrale Bank van die dag, gemarkeerd als voorlopig bedrag. Weekend- en feestdagen hebben geen eigen koers en pakken de koers van de vorige werkdag. Bestaat er helemaal geen koers, dan wordt er niets gegokt: één melding stuurt je naar het scanscherm om het eurobedrag zelf in te vullen.
+- **De bank wint**: zodra de betaling op een gekoppelde bankrekening opduikt, schrijft de werkelijke afschrijving de voorlopige omrekening over. Het eurobedrag wordt wat de bank heeft afgeschreven, opslag van de kaartuitgever inbegrepen, en er wordt geen tweede kostenpost naast geboekt. Zit de uitgave in een afgesloten btw-periode, dan wordt er niets stilletjes gewijzigd: de koppeling blijft staan en een notitie op de uitgave vertelt wat de bank heeft afgeschreven en dat het verschil op een volgende aangifte thuishoort.
+
+In de lijst toont een uitgave in vreemde valuta het omgerekende eurobedrag; de detailpagina bewaart de oorspronkelijke munt, het oorspronkelijke bedrag en de datum van de gebruikte koers.
 
 ## Terugkerende uitgaven
 

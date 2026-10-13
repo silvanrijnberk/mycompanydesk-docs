@@ -41,6 +41,8 @@ Recurring invoice line items work the same way as regular invoice lines:
 - A percentage discount cannot be higher than 100%.
 - A discount value cannot be negative.
 
+The form carries the same **Amounts incl. VAT** switch as the invoice form. With it on, the prices you type are what the customer pays, VAT included. See [Invoices](/en/features/invoices#prices-including-vat).
+
 ## Payment options and invoice details
 
 A recurring invoice can carry the same document fields a normal invoice has. Under **Payment options**, pick the payment method of this series. As long as you pick nothing, every invoice follows the payment settings of your business, so a change in Settings under **Betalen** (getting paid) carries into the series by itself. Once you pick one, **Use your business default** undoes it. The payment note works the same way.

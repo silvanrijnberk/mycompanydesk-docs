@@ -96,6 +96,15 @@ You can start a new invoice from a saved template in two places:
 
 Saved templates keep the full line: description, quantity, unit, unit price, VAT rate, discount, and whether the line is VAT exempt. They deliberately do not keep the link to a catalog item, because catalog items can be deleted later and the template would then fail when used.
 
+## Prices including VAT
+
+The **Amounts incl. VAT** switch on the document form changes what you type. With it on, a line price is the price the customer pays, VAT included, and the VAT is taken back out of the price instead of added on top. The switch exists on invoices, quotes and recurring invoices, and each document remembers its own choice; the hint under the switch says which way you are working.
+
+- The price you typed is what stays: change the VAT rate on the line afterwards and the amount including VAT remains in place, with the amount excluding VAT adjusting underneath it.
+- A discount in euros on a line discounts what the customer pays. A percentage discount works the same as on any other line.
+- The PDF and the e-invoice label the totals as incl. VAT, so the customer can see that VAT sits inside the prices.
+- Working without the switch while the prices you typed are the paid kind? When the customer is a private customer, the form asks whether the prices you typed include VAT. One click switches the document over without touching your amounts.
+
 ## Attributing an invoice to an object
 
 If the revenue belongs to a rental property, vehicle or other asset, select the object in the invoice form. The invoice is then listed on that object's detail page and included in its total revenue. This works both for invoices generated from a rental contract and for direct attribution, such as service-charge settlements, one-off charges and sale invoices.

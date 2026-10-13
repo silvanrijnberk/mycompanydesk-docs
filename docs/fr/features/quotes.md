@@ -22,6 +22,8 @@ La section devis vous permet de creer, envoyer et suivre des devis. Les devis su
 
 Le formulaire de devis est similaire au formulaire de facture -- si vous savez creer une facture, vous savez deja creer un devis.
 
+Le formulaire porte le même interrupteur **Montants TTC** que celui des factures. Quand il est activé, vous saisissez les prix que le client paie et la TVA en est extraite. Voir [Factures](/fr/features/invoices#prices-including-vat).
+
 ## Des photos sur votre devis
 
 Un devis peut contenir jusqu'à douze photos. Elles montrent ce dont il s'agit : l'emplacement, la situation actuelle ou le dégât avant votre intervention. Ajoutez-les sur le devis avec **Ajouter des photos**, depuis la caméra ou depuis votre galerie.

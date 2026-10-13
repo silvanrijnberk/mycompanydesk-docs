@@ -1,7 +1,7 @@
 ---
 title: "Problèmes de connexion"
 description: "Si vous avez des problèmes de connexion : essayez Mot de passe oublié, vérifiez votre dossier spam, assurez-vous d'utiliser la bonne adresse e-mail."
-last_verified: 2026-09-12
+last_verified: 2026-10-13
 chatbot:
   triggers: ["cannot login", "cant login", "login problem", "forgot password", "reset password", "locked out", "verification email", "email not received", "kan niet inloggen", "wachtwoord vergeten", "passwort vergessen", "mot de passe oublie"]
   actions: []
@@ -13,5 +13,6 @@ Si vous avez des problèmes de connexion :
 2. Vérifiez votre dossier spam
 3. Assurez-vous d'utiliser la bonne adresse e-mail. Lorsque vous renvoyez un e-mail de vérification depuis la page de connexion, l'écran indique à quelle adresse il a été envoyé
 4. Videz le cache et les cookies
+5. Consultez la page de statut sur [status.mycompanydesk.com](https://status.mycompanydesk.com) : elle indique si MyCompanyDesk lui-même a un problème
 
 Si le problème persiste, créez un ticket de support.

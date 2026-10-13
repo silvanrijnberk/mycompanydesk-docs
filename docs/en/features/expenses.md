@@ -1,7 +1,7 @@
 ---
 title: Expenses
 description: "Track business expenses, scan receipts, manage categories with their own VAT defaults, and let depreciation schedules run for investments."
-last_verified: 2026-10-09
+last_verified: 2026-10-13
 ---
 
 # Expenses
@@ -172,7 +172,7 @@ If a bulk action is refused because one or more selected rows fall inside a lock
 
 ## Mileage allowance
 
-If you drive a private car for business trips, you can book those trips as a single expense with a mileage allowance. The trips come from Time registration, so booking them asks for access to that page; without access, the flow explains what to ask your admin for instead of failing.
+If you drive a private car for business trips, you can book those trips as a single expense with a mileage allowance. The trips come from Schedule and from the Trips screen below, so booking them asks for access to those; without access, the flow explains what to ask your admin for instead of failing.
 
 1. Go to **Expenses** and open the mileage allowance flow.
 2. Pick the period you want to book.
@@ -186,6 +186,26 @@ The expense is created with one line for the total business kilometres.
 If your workspace uses a company car, the actual car costs are already booked as expenses, so a separate mileage allowance is not needed.
 
 Train tickets and other car costs can also be recorded as regular expenses under **Expenses > New** with the supplier, amount, date and category.
+
+## Trips
+
+The **Trips** screen under Expenses holds your kilometres for the year, with or without hours. A trip carries a date, where you went from and to, the kilometres one way, whether it was business or private, an optional customer and a note. An hour entry is no longer needed to record kilometres: every kilometre entry (the one on **Expenses**, in the search palette and in the travel settings) opens the trip form.
+
+When you add a trip, the form asks **What do you drive?**. Pick a private car and every business kilometre earns a fixed allowance per kilometre, which you book as a cost. Pick a company car or van and the fuel, maintenance and insurance are already booked as expenses, so no allowance is shown and the trips are for your records only. Until the question is answered, the allowance stays out of sight; on a workspace with a team, the workspace admin answers the question for everyone.
+
+The screen groups trips per month and totals each month: business kilometres, private kilometres and the allowance they add up to. Trips that are not yet booked as a cost carry that total with a **Book now** link into the mileage allowance flow above. A trip that belongs to a logged hour entry is marked as such, and a trip that has been booked shows that too. Changing a booked trip starts with deleting the expense it became.
+
+## Foreign currency
+
+The books stay in euros. When the document behind an expense is in another currency, that currency and the amount on the document are recorded next to the euro amount, while every report, the VAT return and the ledger keep reading euros.
+
+How the euro amount comes about:
+
+- **Scan in another currency**: the scan screen asks for the euro amount, the amount your bank converts the document to. Until it is entered, the card shows the document amount in its own currency, never an invented euro figure. Only the euro amount reaches your books.
+- **Forwarded invoice (inbox)**: a foreign-currency invoice that books itself carries a conversion at the European Central Bank rate of the document date, marked as a provisional amount. Weekend and holiday dates have no rate of their own and use the rate of the previous working day. When no rate exists at all, nothing is guessed: one notification points you to the scan screen to enter the euro amount yourself.
+- **The bank wins**: as soon as the payment turns up on a connected bank account, the actual debit takes the place of the provisional conversion. The euro amount becomes what the bank charged, card issuer's surcharge included, and no second cost is booked beside it. An expense that sits in a locked VAT period is never quietly changed: it stays linked to the bank transaction and a note on the expense tells you what the bank debited and that the difference belongs on a next return.
+
+In the list, a foreign-currency expense shows the euro amount with a converted note; the expense detail keeps the original currency, the original amount and the date of the rate used.
 
 ## Recurring expenses
 

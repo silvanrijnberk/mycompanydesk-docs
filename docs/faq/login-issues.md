@@ -13,5 +13,6 @@ Als je problemen hebt met inloggen:
 2. Controleer je spam-/ongewenste e-mail map
 3. Zorg dat je het juiste e-mailadres gebruikt. Als je vanaf de inlogpagina een verificatiemail opnieuw verstuurt, laat het scherm zien naar welk adres deze is verzonden
 4. Wis je browsercache en cookies
+5. Bekijk de statuspagina op [status.mycompanydesk.com](https://status.mycompanydesk.com): daar staat of MyCompanyDesk zelf een storing heeft
 
 Als het probleem aanhoudt, maak dan hieronder een supportticket aan.

@@ -22,6 +22,8 @@ Het offertesgedeelte stelt je in staat om offertes te maken, versturen en bijhou
 
 Het offerteformulier lijkt op het factuurformulier — als je weet hoe je een factuur maakt, weet je ook hoe je een offerte maakt.
 
+Het formulier heeft dezelfde schakelaar **Bedragen incl. btw** als het factuurformulier. Zet je hem aan, dan typ je de prijzen die de klant betaalt en komt de btw eruit. Zie [Facturen](/features/invoices#prices-including-vat).
+
 ## Foto's bij een offerte
 
 Een offerte kan tot twaalf foto's bevatten. Ze laten zien waar de offerte over gaat: de plek, de situatie nu, of de schade voordat je begint. Voeg ze op de offerte toe met **Foto's toevoegen**, rechtstreeks van de camera of uit je galerij.
