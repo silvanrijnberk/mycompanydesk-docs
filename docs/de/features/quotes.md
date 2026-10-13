@@ -22,6 +22,8 @@ Der Angebotsbereich ermöglicht es Ihnen, Angebote zu erstellen, zu versenden un
 
 Das Angebotsformular ähnelt dem Rechnungsformular — wenn Sie wissen, wie man eine Rechnung erstellt, wissen Sie bereits, wie man ein Angebot erstellt.
 
+Das Formular trägt denselben Schalter **Beträge inkl. MwSt.** wie das Rechnungsformular. Ist er an, tippen Sie die Preise ein, die der Kunde zahlt, und die MwSt. kommt heraus. Siehe [Rechnungen](/de/features/invoices#prices-including-vat).
+
 ## Fotos bei einem Angebot
 
 Ein Angebot fasst bis zu zwölf Fotos. Sie zeigen, worum es im Angebot geht: die Stelle, die aktuelle Situation oder den Schaden, bevor Sie anfangen. Fügen Sie sie auf dem Angebot mit **Fotos hinzufügen** hinzu, direkt aus der Kamera oder aus Ihrer Galerie.

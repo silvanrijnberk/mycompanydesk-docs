@@ -41,6 +41,8 @@ Les lignes des factures recurrentes fonctionnent comme les lignes des factures n
 - Une remise en pourcentage ne peut pas depasser 100 %.
 - Une valeur de remise ne peut pas etre negative.
 
+Le formulaire porte le même interrupteur **Montants TTC** que celui des factures. Une fois activé, les prix saisis sont ce que paie le client, TVA incluse. Voir [Factures](/fr/features/invoices#prices-including-vat).
+
 ## Options de paiement et détails de facture
 
 Une facture récurrente peut porter les mêmes champs de document qu'une facture normale. Sous **Options de paiement**, choisissez le moyen de paiement de cette série. Tant que vous n'avez rien choisi, chaque facture suit les réglages de paiement de votre entreprise, si bien qu'un changement sous Paramètres → Paiement se répercute tout seul sur la série. Une fois le choix fait, le bouton **Utiliser le réglage par défaut de votre entreprise** le retire. La note de paiement fonctionne pareil.

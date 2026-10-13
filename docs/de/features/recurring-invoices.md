@@ -41,6 +41,8 @@ Positionen wiederkehrender Rechnungen funktionieren wie bei regulären Rechnunge
 - Ein Prozentrabatt kann nicht höher als 100 % sein.
 - Ein Rabattwert darf nicht negativ sein.
 
+Das Formular trägt denselben Schalter **Beträge inkl. MwSt.** wie das Rechnungsformular. Ist er an, sind die getippten Preise das, was der Kunde zahlt, MwSt. inklusive. Siehe [Rechnungen](/de/features/invoices#prices-including-vat).
+
 ## Zahlungsoptionen und Rechnungsdaten
 
 Eine wiederkehrende Rechnung kann dieselben Dokumentfelder mitbringen wie eine normale Rechnung. Unter **Zahlungsoptionen** legen Sie die Zahlungsart dieser Serie fest. Solange Sie nichts wählen, folgt jede Rechnung den Zahlungseinstellungen Ihres Unternehmens, sodass eine Änderung unter Einstellungen → Zahlung von selbst in die Serie durchschlägt. Einmal gewählt, nimmt die Schaltfläche **Standard Ihres Unternehmens verwenden** die Auswahl zurück. Die Zahlungsnotiz funktioniert genauso.

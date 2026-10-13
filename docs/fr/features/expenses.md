@@ -1,7 +1,7 @@
 ---
 title: Dépenses
 description: "Suivez vos dépenses, scannez vos reçus, gérez des catégories avec leur propre TVA et laissez les amortissements se dérouler automatiquement."
-last_verified: 2026-10-09
+last_verified: 2026-10-13
 ---
 
 # Dépenses
@@ -177,7 +177,7 @@ Si une action groupée est refusée parce qu'une ou plusieurs lignes sélectionn
 
 ## Indemnité kilométrique
 
-Si vous utilisez une voiture privée pour des déplacements professionnels, vous pouvez regrouper ces trajets en une seule dépense avec une indemnité kilométrique. Les trajets viennent de l'enregistrement du temps, donc la comptabilisation demande l'accès à cette page ; sans accès, le parcours explique ce qu'il faut demander à votre administrateur.
+Si vous utilisez une voiture privée pour des déplacements professionnels, vous pouvez regrouper ces trajets en une seule dépense avec une indemnité kilométrique. Les trajets viennent de l'enregistrement du temps et de l'écran des trajets ci-dessous, donc la comptabilisation demande l'accès à ces pages ; sans accès, le parcours explique ce qu'il faut demander à votre administrateur.
 
 1. Allez dans **Dépenses** et ouvrez l'indemnité kilométrique.
 2. Choisissez la période à comptabiliser.
@@ -191,6 +191,26 @@ La dépense est créée avec une ligne pour le total des kilomètres professionn
 Si votre espace de travail utilise un véhicule de société, les frais réels de voiture sont déjà comptabilisés comme dépense ; une indemnité kilométrique séparée n'est alors pas nécessaire.
 
 Les billets de train et autres frais de voiture peuvent aussi être enregistrés comme une dépense classique dans **Dépenses > Nouveau** avec le fournisseur, le montant, la date et la catégorie.
+
+## Trajets
+
+L'écran **Trajets** sous Dépenses garde vos kilomètres de l'année, avec ou sans heures. Un trajet porte une date, un point de départ et une destination, le nombre de kilomètres en simple, professionnel ou privé, un client optionnel et une note. Ajouter des heures n'est plus nécessaire : chaque entrée kilométrique (celle de **Dépenses**, dans le panel de recherche et dans les réglages de déplacement) ouvre directement le formulaire de trajet.
+
+En ajoutant un trajet, le formulaire demande **Avec quel véhicule roulez-vous ?**. Choisissez la voiture personnelle, et chaque kilomètre professionnel rapporte un montant fixe d'indemnité kilométrique, à comptabiliser comme frais. Choisissez la voiture ou l'utilitaire de l'entreprise, et le carburant, l'entretien et l'assurance sont déjà comptabilisés comme dépenses ; aucune indemnité n'apparaît et vos trajets restent là pour votre propre suivi. Tant que la question reste sans réponse, l'indemnité reste hors de vue. Dans un espace avec une équipe, l'administrateur répond à la question pour tout le monde.
+
+L'écran regroupe les trajets par mois et totalise chaque mois : kilomètres professionnels, kilomètres privés et l'indemnité kilométrique qui en découle. Les trajets pas encore comptabilisés en frais montrent ce total avec le lien **Comptabiliser** vers l'indemnité kilométrique ci-dessus. Un trajet lié à une heure saisie porte la mention **Avec heures** ; un trajet déjà comptabilisé l'affiche aussi. Modifier un trajet comptabilisé commence par supprimer la dépense qui en est née.
+
+## Devise étrangère
+
+La comptabilité reste en euros. Quand le document derrière une dépense est dans une autre devise, cette devise et le montant du document sont enregistrés à côté du montant en euros, tandis que les rapports, la déclaration de TVA et le Grand livre continuent de lire des euros.
+
+Comment le montant en euros se forme :
+
+- **Scan dans une autre devise** : l'écran de scan demande le montant en euros, celui pour lequel votre banque convertit le document. Tant qu'il n'est pas saisi, la carte affiche le montant du document dans sa propre devise, jamais un montant en euros inventé. Seul le montant en euros arrive dans vos comptes.
+- **Facture transmise (boîte de réception)** : une facture en devise étrangère qui se comptabilise seule part d'une conversion au taux de référence de la Banque centrale européenne du jour, marquée comme montant provisoire. Les week-ends et jours fériés n'ont pas de taux propre et reprennent le taux du jour ouvré précédent. Sans aucun taux disponible, rien n'est deviné : une seule notification renvoie vers l'écran de scan pour saisir vous-même le montant en euros.
+- **La banque l'emporte** : dès que le paiement apparaît sur un compte bancaire connecté, le réel débit remplace la conversion provisoire. Le montant en euros devient ce que la banque a facturé, surcharge de l'émetteur de carte incluse, et aucune seconde dépense ne s'ajoute à côté. Une dépense dans une période de TVA verrouillée n'est jamais modifiée discrètement : le lien reste en place et une note sur la dépense indique ce que la banque a débité, la différence relevant d'une déclaration suivante.
+
+Dans la liste, une dépense en devise étrangère affiche le montant en euros converti ; la page de détail garde la devise d'origine, le montant d'origine et la date du taux utilisé.
 
 ## Dépenses récurrentes
 

@@ -1,7 +1,7 @@
 ---
 title: Ausgaben
 description: "Erfassen Sie Ausgaben, scannen Sie Belege, verwalten Sie Kategorien mit eigenen Steuersätzen und lassen Sie Abschreibungen automatisch laufen."
-last_verified: 2026-10-09
+last_verified: 2026-10-13
 ---
 
 # Ausgaben
@@ -177,7 +177,7 @@ Wird eine Massenaktion abgelehnt, weil eine oder mehrere ausgewählte Zeilen in 
 
 ## Kilometerpauschale
 
-Wenn Sie mit einem Privatwagen geschäftlich unterwegs sind, können Sie diese Fahrten als eine einzelne Ausgabe mit Kilometerpauschale buchen. Die Fahrten kommen aus der Zeiterfassung, das Erfassen braucht deshalb Zugang zu dieser Seite; ohne Zugang sagt der Ablauf, was Sie beim Administrator anfragen können.
+Wenn Sie mit einem Privatwagen geschäftlich unterwegs sind, können Sie diese Fahrten als eine einzelne Ausgabe mit Kilometerpauschale buchen. Die Fahrten kommen aus der Zeiterfassung und aus dem Fahrtenverzeichnis unten, das Erfassen braucht deshalb Zugang zu diesen Seiten; ohne Zugang sagt der Ablauf, was Sie beim Administrator anfragen können.
 
 1. Gehen Sie zu **Ausgaben** und öffnen Sie die Kilometerpauschale.
 2. Wählen Sie den Zeitraum, den Sie buchen möchten.
@@ -191,6 +191,26 @@ Die Ausgabe wird mit einer Zeile für die gesamten geschäftlichen Kilometer ers
 Wenn Ihr Workspace einen Firmenwagen nutzt, sind die tatsächlichen Autokosten bereits als Ausgabe gebucht; eine separate Kilometerpauschale ist dann nicht nötig.
 
 Zugtickets und andere Autokosten können Sie auch als reguläre Ausgabe erfassen unter **Ausgaben > Neu** mit Lieferant, Betrag, Datum und Kategorie.
+
+## Fahrten
+
+Das Verzeichnis **Fahrten** unter Ausgaben hält Ihre Kilometer des Jahres fest, mit oder ohne Stunden. Eine Fahrt trägt ein Datum, Start und Ziel, die Kilometer einfache Strecke, geschäftlich oder privat, einen optionalen Kunden und eine Notiz. Stundenbrauch gibt es keinen mehr: jeder Kilometer-Einstieg (der auf **Ausgaben**, in der Befehlspalette und in den Reiseeinstellungen) öffnet direkt das Fahrtenformular.
+
+Beim Anlegen einer Fahrt fragt das Formular **Womit fahren Sie?**. Wählen Sie den Privatwagen, bringt jeder geschäftliche Kilometer einen festen Betrag pro Kilometer als Kilometerpauschale, die Sie als Kosten buchen. Wählen Sie Firmenwagen oder Transporter, sind Tanken, Wartung und Versicherung bereits als Ausgaben gebucht, es erscheint keine Pauschale, und Ihre Fahrten stehen hier nur für Ihre Unterlagen. Bis die Frage beantwortet ist, bleibt die Pauschale unsichtbar. In einem Workspace mit Team beantwortet der Administrator die Frage für alle.
+
+Das Verzeichnis gruppiert Fahrten pro Monat und summiert je Monat: geschäftliche Kilometer, private Kilometer und die Kilometerpauschale, die daraus folgt. Noch nicht als Kosten gebuchte Fahrten zeigen dieses Total mit dem Link **Jetzt buchen** in die Kilometerpauschale oben. Eine Fahrt, die zu einer erfassten Stunde gehört, trägt die Markierung **Bei Stunden**; eine gebuchte Fahrt zeigt das ebenfalls. Eine gebuchte Fahrt ändern Sie, indem Sie zuerst die Ausgabe löschen, die daraus entstanden ist.
+
+## Fremdwährung
+
+Die Buchhaltung rechnet in Euro. Läuft die Rechnung in einer Fremdwährung hinter der Ausgabe, werden diese Währung und der Betrag auf dem Dokument neben dem Eurobetrag gespeichert, während Berichte, Umsatzsteuervoranmeldung und Hauptbuch weiter in Euro rechnen.
+
+So entsteht der Eurobetrag:
+
+- **Scan in einer anderen Währung**: der Scanbildschirm fragt nach dem Eurobetrag, dem Betrag, für den Ihre Bank das Dokument umrechnet. Bis dieser Betrag steht, zeigt die Karte den Betrag des Dokuments in seiner eigenen Währung, nie einen erfundenen Eurobetrag. Nur der Eurobetrag kommt in Ihre Bücher.
+- **Weitergeleitete Rechnung (Eingang)**: eine Fremdwährungsrechnung, die sich selbst bucht, rechnet auf den Referenzkursen der Europäischen Zentralbank (EZB) des Tages, markiert als vorläufiger Betrag. An Wochenenden und Feiertagen gibt es keinen eigenen Kurs; der Ablauf nimmt den Kurs des letzten Werktags. Gibt es gar keinen Kurs, wird nichts geraten: eine einzige Meldung schickt Sie zum Scanbildschirm, um den Eurobetrag selbst einzugeben.
+- **Die Bank gewinnt**: sobald die Zahlung auf einem verbundenen Bankkonto auftaucht, ersetzt die echte Abbuchung die vorläufige Umrechnung. Der Eurobetrag wird der Betrag der Bank, inklusive des Aufschlags des Kartenherausgebers, und daneben wird keine zweite Kostenposition gebucht. Liegt die Ausgabe in einem abgeschlossenen USt-Zeitraum, bleibt alles unverändert: die Verknüpfung bleibt stehen und eine Notiz an der Ausgabe sagt, was die Bank abgebucht hat und dass der Rest in eine nächste Anmeldung gehört.
+
+In der Liste zeigt eine Ausgabe in Fremdwährung den umgerechneten Eurobetrag; die Ausgabendetails bewahren die ursprüngliche Währung, den ursprünglichen Betrag und das Datum des genutzten Kurses.
 
 ## Wiederkehrende Ausgaben
 
