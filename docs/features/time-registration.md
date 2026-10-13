@@ -17,7 +17,7 @@ Wissel tussen vier weergaven met de kiezer bovenaan (veeg tussen periodes op mob
 - **Maand**: totalen per dag; selecteer een dag om ernaartoe te springen.
 - **Lijst**: een doorzoekbare tabel van alle registraties met filters voor factuurstatus, klant, project en reizen, plus totalen voor de huidige selectie.
 
-Geplande registraties dragen het label **Gepland**; druk op **Bevestigen** zodra het werk echt is gedaan om ze om te zetten naar gelogde uren.
+Geplande registraties dragen het label **Gepland**; druk op **Bevestigen** zodra het werk echt is gedaan om ze om te zetten naar gelogde uren. Bevestig je er een waarvan de datum nog in de toekomst ligt, dan vraagt de app eerst of die uren al mee mogen tellen.
 
 Wil je dit niet handmatig doen? Zet **Geplande tijd automatisch bevestigen** aan in de agenda-instellingen. Geplande registraties worden dan automatisch bevestigd zodra de geplande datum is verstreken, ook als je de agenda niet opent.
 
@@ -35,6 +35,8 @@ Op mobiel bevat de dagweergave een timer: start hem als je begint met werken en 
 2. De snelle invoerlade opent: kies de klant en eventueel een project, vul je uren in en pas waar nodig de omschrijving en het tarief aan
 3. Voer tijd in als totaal aantal uren, of schakel naar een begin- en eindtijd
 4. Sla de registratie op
+
+Een registratie beslaat één dag en mag maximaal 24 uur lang zijn; verdeel je week over meerdere dagen.
 
 ### Standaard regelomschrijving
 

@@ -98,6 +98,7 @@ Path: `/settings/uiterlijk`
 Branding for invoices, quotes, and outgoing email, with a live preview of the result.
 
 - **Logo upload**: used on every PDF and email header
+- **Display name** (Weergavenaam): an optional brand name on your emails and PDFs. Leave it empty and your business name is used. Once it differs from the business name, it also decides what your invoice and the app menu carry; the business-details form then shows under the name field what displays at the moment ("Your invoice and menu currently show: ..."), with a link back to this page.
 - **Brand colour**: one accent colour across your website, newsletter, emails, documents and public business page. If you set a different accent colour in **Factuurontwerp** (invoice design), that colour is what customers see on invoices, quotes, emails and the payment page. A hint under **Logo en kleur** offers a one-click option to make it your workspace brand colour too.
 - **Style presets**: pick a document style, available on every plan
 - **PDF footer**: the footer text at the bottom of your documents

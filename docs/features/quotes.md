@@ -81,7 +81,7 @@ Het ondertekenblok in de offerte-PDF volgt de documenttaal van de offerte: staat
 De hoofdactie op de offertedetailpagina hangt af van de offertestatus:
 
 - **Versturen** — Beschikbaar voor concept- en verzonden offertes, zodat de offerte de klant kan bereiken.
-- **Omzetten naar factuur** — Beschikbaar zodra de klant de offerte heeft geaccepteerd; hiermee maak je in één klik een factuur.
+- **Omzetten naar factuur** - Beschikbaar zodra de klant de offerte heeft geaccepteerd; hiermee maak je in één klik een factuur. De onderbalk biedt hem ook bij een verzonden of nog-conceptofferte aan, en elke omzetting zet de offerte op **Geaccepteerd**; een concept krijgt dan alsnog zijn offertenummer.
 - **Dupliceren / nieuwe versie maken** — Beschikbaar voor afgewezen of verlopen offertes, zodat je ze snel opnieuw kunt uitbrengen.
 
 Extra acties zitten in het overflow-menu naast de hoofdactie:

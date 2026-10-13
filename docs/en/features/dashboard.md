@@ -32,12 +32,12 @@ The same list also lands in your mailbox every Monday: only when there is someth
 
 Next to **Do now** stands the money card, with the four figures that answer "how are we doing" in one view:
 
-- **Free to spend**: your bank balance minus the VAT reservation and your fixed monthly costs
+- **Free to spend**: your bank balance minus the VAT reservation, the tax on your profit and your fixed monthly costs
 - **Bank balance**
 - **Receivables**, with the overdue slice called out
 - **Revenue per month**
 
-The reservation follows the same quarter logic as the VAT card, so monthly filers and early submitters do not lose the wrong amount from view. The balance counts your business accounts; a linked personal account stays out of the figures. A link under the card opens the full **Figures** analysis view.
+The reservation follows the same quarter logic as the VAT card, so monthly filers and early submitters do not lose the wrong amount from view. Under the figure the card lists its reservations: the VAT, the tax on your profit (the same estimate the Reports answer uses) and your fixed monthly costs. The tax line appears only once that estimate is in, so the figure does not sit high first and then drop. The balance counts your business accounts; a linked personal account stays out of the figures. A link under the card opens the full **Figures** analysis view.
 
 ## A card for every module
 

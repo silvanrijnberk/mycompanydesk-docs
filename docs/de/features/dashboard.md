@@ -32,12 +32,12 @@ Dieselbe Liste kommt jeden Montag auch in Ihr Postfach: nur wenn etwas zu tun is
 
 Neben **Jetzt erledigen** steht die Geldkarte mit den vier Zahlen, die auf einen Blick beantworten, wie es um das Geschäft steht:
 
-- **Frei verfügbar**: Ihr Banksaldo, abzüglich der USt-Rückstellung und Ihrer Fixkosten pro Monat
+- **Frei verfügbar**: Ihr Banksaldo, abzüglich der USt-Rückstellung, der Steuer auf Ihren Gewinn und Ihrer Fixkosten pro Monat
 - **Auf der Bank**: der Saldo Ihrer Geschäftskonten
 - **Noch zu erhalten**, mit dem überfälligen Teil erwähnt
 - **Umsatz pro Monat**
 
-Die Rückstellung folgt derselben Quartalslogik wie die USt-Karte, sodass Monatsmelder und frühe Einreicher nicht den falschen Betrag aus dem Blick verlieren. Der Saldo zählt Ihre Geschäftskonten; ein verknüpftes Privatkonto bleibt außen vor. Ein Link unter der Karte öffnet die vollständige **Kennzahlen**-Ansicht.
+Die Rückstellung folgt derselben Quartalslogik wie die USt-Karte, sodass Monatsmelder und frühe Einreicher nicht den falschen Betrag aus dem Blick verlieren. Unter der Zahl listet die Karte ihre Rückstellungen auf: die Umsatzsteuer, die Steuer auf Ihren Gewinn (dieselbe Schätzung, die auch die Berichtsantwort nutzt) und Ihre Fixkosten. Die Steuerzeile erscheint erst, wenn diese Schätzung da ist, damit die Zahl nicht erst hoch steht und dann sinkt. Der Saldo zählt Ihre Geschäftskonten; ein verknüpftes Privatkonto bleibt außen vor. Ein Link unter der Karte öffnet die vollständige **Kennzahlen**-Ansicht.
 
 ## Eine Karte pro Modul
 

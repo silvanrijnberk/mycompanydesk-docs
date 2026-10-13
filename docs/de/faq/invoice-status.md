@@ -10,6 +10,7 @@ chatbot:
 ---
 Rechnungsstatus erklärt:
 • Entwurf - noch nicht gesendet, frei bearbeitbar. Ein Entwurf kann erst als bezahlt markiert oder mit einer Zahlung erfasst werden, nachdem er finalisiert wurde; früher erzeugte eine Zahlung auf einem Entwurf eine nummerlose Rechnung mit Status Bezahlt, was jetzt nicht mehr erlaubt ist.
+• Noch zu versenden - finalisiert, aber noch nicht gesendet oder bezahlt. Steht bereits eine Zahlung darauf (etwa eine Anzahlung oder Teilzahlung), zeigt die Liste ihn als Gesendet an, weil er klar raus ist.
 • Gesendet - an den Kunden zugestellt, wartet auf Zahlung
 • Überfällig - Fälligkeitsdatum überschritten, noch nicht bezahlt
 • Überprüfung erforderlich - der Kunde hat im Portal angegeben, dass er bezahlt hat; bestätigen oder lehnen Sie die Zahlung ab, bevor die Rechnung auf Bezahlt wechselt

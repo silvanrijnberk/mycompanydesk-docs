@@ -10,6 +10,7 @@ chatbot:
 ---
 Statuts de facture expliqués :
 • Brouillon - pas encore envoyée, modifiable librement. Un brouillon ne peut être marqué comme payé ou faire l'objet d'un paiement enregistré qu'après finalisation ; auparavant, un paiement sur un brouillon créait une facture sans numéro avec le statut Payée, ce qui n'est plus autorisé.
+• À envoyer - finalisée, mais pas encore envoyée ni payée. Si un paiement est déjà enregistré sur elle (par exemple un acompte ou un paiement partiel), la liste l'affiche comme Envoyée, car elle est clairement partie.
 • Envoyée - livrée au client, en attente de paiement
 • En retard - date d'échéance dépassée, pas encore payée
 • Vérification requise - le client a indiqué dans le portail qu'il a payé ; confirmez ou refusez le paiement avant que la facture passe à Payée

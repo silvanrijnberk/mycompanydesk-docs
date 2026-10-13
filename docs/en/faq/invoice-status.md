@@ -10,7 +10,7 @@ chatbot:
 ---
 Invoice statuses explained:
 • Draft - not finalized yet, fully editable. It cannot be marked paid or recorded as paid until you finalize it; recording a payment on a draft used to create a numberless invoice with status Paid, which is no longer allowed.
-• Open - finalized but not sent/paid yet
+• To send - finalized but not sent/paid yet. When a payment is already booked against it (for example a deposit or a part payment), the list shows it as Sent, because it has clearly gone out.
 • Sent - delivered to the customer, awaiting payment
 • Overdue - due date passed and still unpaid
 • Needs verification - the customer reported payment through the portal; confirm or reject it before the status moves to Paid

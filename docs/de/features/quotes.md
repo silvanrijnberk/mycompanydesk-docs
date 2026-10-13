@@ -81,7 +81,7 @@ Der Unterschriftsblock in der Angebots-PDF folgt der Dokumentsprache des Angebot
 Die Hauptaktion auf der Angebotsdetailseite richtet sich nach dem Angebotsstatus:
 
 - **Senden** — Verfügbar für Entwurfs- und gesendete Angebote, damit das Angebot den Kunden erreicht.
-- **In Rechnung umwandeln** — Verfügbar, sobald der Kunde das Angebot angenommen hat; damit erstellen Sie mit einem Klick eine Rechnung.
+- **In Rechnung umwandeln** - Verfügbar, sobald der Kunde das Angebot angenommen hat; damit erstellen Sie mit einem Klick eine Rechnung. In der Fußleiste steht er auch bei gesendeten oder Entwurfs-Angeboten zur Verfügung, und jede Umwandlung setzt das Angebot auf **Angenommen**; ein Entwurf erhält in dem Moment seine Angebotsnummer.
 - **Duplizieren / neue Version erstellen** — Verfügbar für abgelehnte oder abgelaufene Angebote, damit Sie sie schnell neu ausstellen können.
 
 Zusätzliche Aktionen finden sich im Overflow-Menü neben der Hauptaktion:

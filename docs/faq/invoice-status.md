@@ -10,6 +10,7 @@ chatbot:
 ---
 Factuurstatussen uitgelegd:
 • Concept - nog niet verstuurd, vrij te bewerken. Je kunt een concept pas als betaald markeren of er een betaling op registreren nadat je hem definitief hebt gemaakt; een betaling op een concept maakte eerder een nummerloze factuur met status Betaald, wat nu niet meer mag.
+• Nog versturen - definitief gemaakt, nog niet verstuurd of betaald. Staat er al een betaling op (bijvoorbeeld een aanbetaling of deelbetaling), dan toont de lijst hem als Verstuurd, omdat hij duidelijk de deur uit is.
 • Verstuurd - bezorgd bij de klant, wacht op betaling
 • Achterstallig - vervaldatum verstreken, nog niet betaald
 • Klant zegt: betaald - de klant heeft via het portaal aangegeven te hebben betaald; bevestig of weiger de betaling voordat de factuur op Betaald komt

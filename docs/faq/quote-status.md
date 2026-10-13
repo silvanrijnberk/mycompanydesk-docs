@@ -18,7 +18,7 @@ De offertestatussen op een rij:
 
 Op de offertedetailpagina zie je de huidige fase als een lifecycle-kaart: Concept → Verzonden, gevolgd door Geaccepteerd of Geweigerd als beslissingsvertakking. Verlopen en geannuleerde offertes worden aan het einde van de flow als eindresultaat getoond.
 
-Zet je een geaccepteerde offerte om naar een factuur, dan blijft de offerte Geaccepteerd en krijgt die de markering "Omgezet naar factuur".
+Zet je een geaccepteerde offerte om naar een factuur, dan blijft de offerte Geaccepteerd en krijgt die de markering "Omgezet naar factuur". Omzetten lukt ook rechtstreeks vanaf een verzonden of conceptofferte (als de klant al op een andere manier ja zei): de offerte gaat dan op Geaccepteerd, en een conceptofferte krijgt alsnog een offertenummer.
 
 Op de tekenpagina krijgt de klant een duidelijke uitleg als een offerte niet meer getekend kan worden: een offerte waarvan de geldig-tot-datum voorbij is, vraagt de klant om een nieuwe offerte; een offerte die al omgezet is naar een factuur of overeenkomst laat zien dat er niets meer te doen valt; en een offerte die al geaccepteerd is, kan niet meer worden afgewezen. In dat laatste geval wijst de pagina de klant op contact opnemen met jou bij een veranderd idee.
 

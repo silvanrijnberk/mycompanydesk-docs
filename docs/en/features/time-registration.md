@@ -17,7 +17,7 @@ Switch between four views with the selector at the top (swipe between periods on
 - **Month**: totals per day; select a day to jump to it.
 - **List**: a searchable table of all entries with filters for invoice status, customer, project, and travel, plus totals for the current selection.
 
-Planned entries carry a **Tentative** badge; press **Confirm** once the work actually happened to turn them into logged hours.
+Planned entries carry a **Tentative** badge; press **Confirm** once the work actually happened to turn them into logged hours. Confirming an entry whose date still lies in the future asks first, so hours that have not happened do not slip into your totals unnoticed.
 
 If you want, enable **Auto-confirm tentative time** in the schedule settings. When this is on, tentative entries are confirmed automatically once their scheduled date has passed, even if nobody opens the Schedule page.
 
@@ -35,6 +35,8 @@ On mobile, the day view includes a timer: start it when you begin working and st
 2. The quick-add drawer opens: pick the customer and optionally a project, enter your hours, and adjust the description and rate where needed
 3. Enter time as a total number of hours, or switch to a start and end time
 4. Save the entry
+
+An entry covers a single day and holds at most 24 hours; spread your week over several days.
 
 ### Default line description
 
