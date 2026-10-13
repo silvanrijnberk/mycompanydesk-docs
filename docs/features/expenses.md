@@ -169,7 +169,7 @@ Rij je privé zakelijk, dan kun je die ritten bundelen tot één uitgave met een
 
 De uitgave wordt aangemaakt met één regel voor het totaal aan zakelijke kilometers.
 
-<!-- TODO(source-missing): Het Nederlandse kilometervergoedingstarief per kilometer staat nog niet in sources/. Quote het tarief niet in de documentatie totdat een mens het huidige bedrag heeft gecontroleerd op belastingdienst.nl. -->
+De vergoeding is € 0,25 per zakelijke kilometer voor ritten in 2026 en € 0,23 voor ritten tot en met 2025 ([`sources/nl-mileage.yaml#ib_entrepreneur.per_km_eur`](https://github.com/silvanrijnberk/mycompanydesk-docs/blob/main/sources/nl-mileage.yaml)). Elke rit krijgt het bedrag van zijn eigen jaar, dus een periode over 1 januari heen telt beide bedragen. Over de vergoeding gaat geen btw, en brandstof, verzekering, tol en parkeren zitten er al in: die trek je niet nog eens apart af ([`sources/nl-mileage.yaml#ib_entrepreneur.conditions`](https://github.com/silvanrijnberk/mycompanydesk-docs/blob/main/sources/nl-mileage.yaml)).
 
 Als je werkruimte een bedrijfsauto gebruikt, zijn de werkelijke autokosten al als uitgave geboekt; een aparte kilometervergoeding is dan niet nodig.
 

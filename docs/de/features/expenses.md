@@ -175,7 +175,7 @@ Wenn Sie mit einem Privatwagen geschäftlich unterwegs sind, können Sie diese F
 
 Die Ausgabe wird mit einer Zeile für die gesamten geschäftlichen Kilometer erstellt.
 
-<!-- TODO(source-missing): Der niederländische Kilometerpauschalesatz pro Kilometer ist noch nicht in sources/ hinterlegt. Geben Sie den Satz nicht in der Dokumentation wieder, bis ein Mensch den aktuellen Betrag auf belastingdienst.nl überprüft hat. -->
+Die Pauschale beträgt 0,25 € je geschäftlichem Kilometer für Fahrten im Jahr 2026 und 0,23 € für Fahrten bis einschließlich 2025 ([`sources/nl-mileage.yaml#ib_entrepreneur.per_km_eur`](https://github.com/silvanrijnberk/mycompanydesk-docs/blob/main/sources/nl-mileage.yaml)). Jede Fahrt wird mit dem Satz ihres eigenen Jahres berechnet, ein Zeitraum über den 1. Januar hinweg kombiniert also beide Sätze. Auf die Pauschale fällt keine MwSt. an, und Kraftstoff, Versicherung, Maut und Parken sind darin bereits enthalten: Diese Kosten ziehen Sie nicht zusätzlich gesondert ab ([`sources/nl-mileage.yaml#ib_entrepreneur.conditions`](https://github.com/silvanrijnberk/mycompanydesk-docs/blob/main/sources/nl-mileage.yaml)).
 
 Wenn Ihr Workspace einen Firmenwagen nutzt, sind die tatsächlichen Autokosten bereits als Ausgabe gebucht; eine separate Kilometerpauschale ist dann nicht nötig.
 

@@ -28,3 +28,29 @@ countries:
       KOR is opt-in per calendar year. Once opted in, VAT is not charged on
       invoices and input VAT is not deductible. Sticks for at least 3 years
       unless threshold is exceeded.
+    # KOR-details, nagelopen tegen belastingdienst.nl.
+    small_business_last_verified: 2026-10-13
+    small_business_verified_by: silvanrijnberk
+    small_business_source_url: https://www.belastingdienst.nl/wps/wcm/connect/nl/btw/content/kor-voorwaarden
+    small_business_threshold_scope: |
+      Omzet per kalenderjaar, exclusief btw. Geldt voor het jaar van aanmelding
+      én het kalenderjaar daarvóór.
+    small_business_warning_threshold_eur: null   # niet genoemd door de Belastingdienst; een in-app waarschuwing is een MCD-productkeuze, geen bron
+    small_business_on_exceed: |
+      Zodra de omzet in een kalenderjaar boven € 20.000 komt: direct afmelden.
+      Over het VOLLEDIGE bedrag van de levering/dienst waarmee de grens wordt
+      overschreden moet btw worden berekend. Daarna uitgesloten van de KOR voor
+      de rest van dat kalenderjaar en het kalenderjaar daarop.
+    small_business_sources:
+      - url: https://www.belastingdienst.nl/wps/wcm/connect/nl/btw/content/kor-voorwaarden
+        quote: "Per kalenderjaar hebt u een omzet van maximaal € 20.000."
+      - url: https://www.belastingdienst.nl/wps/wcm/connect/nl/btw/content/kor-voorwaarden
+        quote: "De maximale omzet van € 20.000 geldt voor het kalenderjaar waarin u zich aanmeldt, én voor het kalenderjaar daarvóór."
+      - url: https://www.belastingdienst.nl/wps/wcm/connect/nl/btw/content/kor-voorwaarden
+        quote: "Uw omzet is het totaal van alle bedragen die u aan uw klanten berekent, exclusief de btw."
+      - url: https://www.belastingdienst.nl/wps/wcm/connect/nl/btw/content/afmelden-kor
+        quote: "U moet zich op dat moment direct afmelden."
+      - url: https://www.belastingdienst.nl/wps/wcm/connect/nl/btw/content/afmelden-kor
+        quote: "U moet daarom over het volledige bedrag van die levering of dienst btw aan uw klant in rekening brengen."
+      - url: https://www.belastingdienst.nl/wps/wcm/connect/nl/btw/content/afmelden-kor
+        quote: "Na de definitieve beëindigingsdatum gaat een periode in waarin u tijdelijk niet kunt deelnemen aan de KOR."

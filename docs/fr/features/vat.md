@@ -61,10 +61,12 @@ La carte KOR vous demande si vous participez à la **kleineondernemersregeling**
 La jauge a trois états :
 
 - **Sous le seuil** : couleur de progression normale.
-- **Proche du seuil** : un avertissement pour anticiper le dépassement.
-- **Au-dessus du seuil** : un avertissement rouge indiquant que le KOR ne s'applique plus ; à partir de la facture qui a franchi le seuil, vous facturez à nouveau la TVA.
+- **Proche du seuil** : à partir de 80 % du seuil, la ligne sous la jauge vous invite à surveiller votre chiffre d'affaires, pour anticiper le dépassement. Si vous participez, un avis orange indique aussi, à partir de 90 %, la marge qui vous reste.
+- **Au-dessus du seuil** : dès que votre chiffre d'affaires de l'année dépasse 20 000 € hors TVA ([`sources/vat-rates.yaml#countries.NL.small_business_threshold_eur`](https://github.com/silvanrijnberk/mycompanydesk-docs/blob/main/sources/vat-rates.yaml)), un avertissement rouge indique que le KOR ne s'applique plus. À partir de la facture qui a franchi le seuil, vous facturez à nouveau la TVA, sur le montant total de cette facture. Désinscrivez-vous sans attendre auprès de la Belastingdienst : vous ne pouvez alors plus participer au KOR pour le reste de l'année et l'année suivante ([`sources/vat-rates.yaml#countries.NL.small_business_on_exceed`](https://github.com/silvanrijnberk/mycompanydesk-docs/blob/main/sources/vat-rates.yaml)).
 
-<!-- TODO(source-missing): verify exact threshold percentages that trigger near/over KOR meter warnings and whether the toggle is available for non-Dutch workspaces. -->
+Les paliers de 80 % et 90 % sont des choix de MyCompanyDesk pour vous prévenir à temps ; la Belastingdienst ne fixe que le seuil de 20 000 €.
+
+<!-- TODO(source-missing): whether the KOR switch is offered to workspaces outside the Netherlands is not yet verified. -->
 
 Si vous ne remplissez plus les conditions du KOR, désactivez l'interrupteur et vérifiez la déclaration suivante avec votre comptable. Pour en savoir plus sur le KOR, voir [plus bas](#kor).
 
@@ -73,9 +75,9 @@ Si vous ne remplissez plus les conditions du KOR, désactivez l'interrupteur et 
 La carte du haut résume la période choisie :
 
 - **Solde** : le même total net que la rubrique 5g de l'onglet Déclaration : TVA collectée et autoliquidée (rubriques 2a/4a/4b) moins la TVA déductible de la rubrique 5b, corrections manuelles comprises. La TVA due au titre du guichet unique OSS n'en fait pas partie, car elle relève d'une déclaration distincte. Le solde porte la mention « À payer » ou « À récupérer » et suit le sélecteur de période.
-- **Anneau d'échéance** : un compte à rebours circulaire jusqu'à la prochaine échéance, calculé à partir du calendrier du pays de votre espace et de votre fréquence de déclaration. Rouge à 3 jours ou moins, orange jusqu'à 14 jours, vert sinon. Si une déclaration a été déposée mais pas encore payée, l'anneau reste sur cette période jusqu'à la date de paiement et affiche **Déclarée, reste à payer**, puis **À payer aujourd'hui** le jour même. Une période déposée et réglée, ou soldée par un remboursement, ne retient plus l'anneau et le compte à rebours passe à la déclaration suivante.
+- **Anneau d'échéance** : un compte à rebours circulaire jusqu'à la prochaine échéance, calculé à partir du calendrier du pays de votre espace et de votre fréquence de déclaration. Rouge à 3 jours ou moins, orange jusqu'à 14 jours, vert sinon. Si une déclaration a été déposée mais pas encore payée, l'anneau reste sur cette période jusqu'à la date de paiement et affiche **Déclarée, reste à payer**, puis **À payer aujourd'hui** le jour même. Une période déposée et réglée, ou soldée par un remboursement, ne retient plus l'anneau et le compte à rebours passe à la déclaration suivante. Pour un espace néerlandais, l'échéance d'une déclaration mensuelle ou trimestrielle est le dernier jour du mois qui suit la période, et celle d'une déclaration annuelle tombe avant le 1er avril de l'année suivante (donc le 31 mars au plus tard). À cette date, la Belastingdienst doit avoir reçu à la fois la déclaration et le paiement ([`sources/nl-vat-filing.yaml#deadlines`](https://github.com/silvanrijnberk/mycompanydesk-docs/blob/main/sources/nl-vat-filing.yaml)).
 
-<!-- TODO(source-missing): The app uses country-specific VAT filing deadlines (NL, GB, DE, and others). The exact deadline rules per country are not yet in sources/. Do not list specific per-country due dates until a human adds them to sources/. -->
+<!-- TODO(source-missing): The app also uses country-specific VAT filing deadlines for workspaces outside the Netherlands (GB, DE and others). Those rules are not in sources/ yet; do not list per-country due dates for them until a human adds them. -->
 - **Réserve** : une somme à mettre de côté, soit la TVA encore à payer plus une marge de 10 %, affichée quand le solde est à payer. Si l'administration vous doit de l'argent, la tuile affiche le remboursement.
 
 Deux boutons figurent sous le solde : **Vers la déclaration** ouvre l'onglet Déclaration, et **Comment est-ce calculé ?** détaille le calcul du solde.
@@ -133,11 +135,9 @@ Le nom du fichier ZIP de l'export comptable contient le nom de l'entreprise, la 
 
 ### Avertissement d'écart avec une déclaration déposée
 
-<!-- TODO(source-missing): The filed-return drift warning uses a Belastingdienst threshold to choose between "include in the next regular return" and "formal suppletieaangifte required". sources/ has no entry for this threshold; do not quote the value or link target in docs until a human verifies the rule at belastingdienst.nl. -->
-
 Pour la TVA néerlandaise, l'onglet Déclaration continue de recalculer la déclaration à partir de vos écritures actuelles, même lorsque la période est marquée comme déclarée. Si le calcul ne correspond plus à ce que vous avez déposé, un bandeau d'avertissement apparaît au-dessus du tableau des rubriques. Il compare les montants déposés et actuels des rubriques 5a, 5b et du total net 5g, et indique l'écart pour chaque ligne.
 
-Le bandeau vous dit aussi quoi faire : reporter l'écart dans votre prochaine déclaration ordinaire, déposer une déclaration rectificative formelle (suppletieaangifte, avec le bouton **Créer une suppletie**), ou simplement noter que les rubriques ont bougé alors que le montant à payer ou à récupérer est resté le même.
+Le bandeau vous dit aussi quoi faire, selon l'écart sur le total net (5g). Jusqu'à 1 000 € de TVA inclus, vous reportez l'écart dans votre prochaine déclaration ordinaire. Au-delà de 1 000 €, une déclaration rectificative formelle (suppletieaangifte) est obligatoire, et c'est seulement dans ce cas que le bandeau affiche le bouton **Créer une suppletie** ([`sources/nl-vat-corrections.yaml#suppletie.next_return_threshold_eur`](https://github.com/silvanrijnberk/mycompanydesk-docs/blob/main/sources/nl-vat-corrections.yaml)). Si seules les rubriques ont bougé et que le montant à payer ou à récupérer est resté le même, le bandeau vous le signale et vous n'avez rien à comptabiliser.
 
 ### Cartes internationales
 
@@ -165,18 +165,16 @@ Une correction n'est prise en compte dans une déclaration que si sa période co
 
 Lorsque vous enregistrez ou supprimez une correction, le tableau des rubriques, la carte du haut et les cartes de période se mettent à jour immédiatement ; inutile d'actualiser ou de changer de période.
 
-<!-- TODO(source-missing): The app surfaces a Belastingdienst €1,000 threshold for suppletie corrections (under = next regular aangifte, over = formal suppletieaangifte required). sources/ has no entry for this threshold; do not invent the value or the link target until a human verifies the current rule at belastingdienst.nl. -->
+Pour une **Suppletie**, la liste indique aussi la voie que la Belastingdienst impose. Le seuil est de 1 000 € de TVA ([`sources/nl-vat-corrections.yaml#suppletie.next_return_threshold_eur`](https://github.com/silvanrijnberk/mycompanydesk-docs/blob/main/sources/nl-vat-corrections.yaml)) : 1 000 € ou moins peut être repris dans votre prochaine déclaration ordinaire, plus de 1 000 € exige une déclaration rectificative formelle (suppletieaangifte). MyCompanyDesk raisonne par période corrigée et additionne toutes les suppleties de cette période : une ligne de 600 € et une de 700 € comptent ensemble pour 1 300 €. Vous avez déclaré trop peu de TVA ? Déposez alors la suppletie dans les 8 semaines suivant la découverte de l'erreur ([`sources/nl-vat-corrections.yaml#suppletie.deadline_after_discovery_weeks`](https://github.com/silvanrijnberk/mycompanydesk-docs/blob/main/sources/nl-vat-corrections.yaml)). Vous pouvez corriger jusqu'à 5 ans après l'année concernée par la correction ([`sources/nl-vat-corrections.yaml#suppletie.correction_window_years`](https://github.com/silvanrijnberk/mycompanydesk-docs/blob/main/sources/nl-vat-corrections.yaml)).
 
 ### Usage privé de la voiture
 
 Si vous déduisez la TVA d'une voiture de société, vous devez corriger l'usage privé en fin d'année. Lorsque vous enregistrez des frais de voiture, l'onglet Corrections affiche une ligne suggérée **Usage privé de la voiture** ; **Calculer** ouvre la correction :
 
-- Choisissez entre une correction forfaitaire basée sur le prix catalogue de la voiture et une correction selon l'usage réel, basée sur un registre de trajets complet.
-- Le pourcentage forfaitaire dépend de l'âge de la voiture par rapport au seuil ou du fait qu'elle a été achetée sans déduction de TVA.
+- Choisissez entre une correction forfaitaire basée sur le prix catalogue de la voiture et une correction selon l'usage réel, basée sur un registre de trajets complet (**Je tiens un registre complet des déplacements**).
+- Le forfait est de 2,7 % du prix catalogue, TVA et BPM comprises ([`sources/nl-vat-corrections.yaml#private_car_use.standard_pct_of_catalogue_value`](https://github.com/silvanrijnberk/mycompanydesk-docs/blob/main/sources/nl-vat-corrections.yaml)). Il passe à 1,5 % lorsque l'usage privé a lieu plus de 4 ans après l'année de mise en service de la voiture, ou lorsque la voiture a été achetée sans déduction de TVA, par exemple sous le régime de la marge ou auprès d'un particulier ([`sources/nl-vat-corrections.yaml#private_car_use.reduced_applies_when`](https://github.com/silvanrijnberk/mycompanydesk-docs/blob/main/sources/nl-vat-corrections.yaml)). Une voiture mise en service en 2021 relève donc de 2,7 % jusqu'en 2025 inclus et de 1,5 % à partir de 2026. Pour le taux réduit, activez **Véhicule de plus de 5 ans ou acheté sans déduction de TVA**.
 
-La correction est intégrée aux totaux de la période dans l'onglet Déclaration.
-
-<!-- TODO(source-missing): The Dutch flat-rate percentages for company-car private-use VAT correction and the age threshold are not yet in sources/. Do not quote the values in docs until a human verifies the current rules at belastingdienst.nl. -->
+La ligne suggérée n'apparaît que dans la dernière période de l'année (Q4, M12 ou la déclaration annuelle), car la correction se fait dans la dernière déclaration de l'année ([`sources/nl-vat-corrections.yaml#private_car_use.declared_in`](https://github.com/silvanrijnberk/mycompanydesk-docs/blob/main/sources/nl-vat-corrections.yaml)). La correction est intégrée aux totaux de la période dans l'onglet Déclaration.
 
 ## Onglet Transactions
 

@@ -61,10 +61,12 @@ De KOR-kaart vraagt of je meedoet aan de **kleineondernemersregeling** en heeft 
 De meter kent drie standen:
 
 - **Onder de grens**: gewone voortgangskleur.
-- **In de buurt van de grens**: een waarschuwing, zodat je kunt plannen voor het moment dat je eroverheen gaat.
-- **Boven de grens**: een rode waarschuwing dat de KOR niet meer geldt; vanaf de factuur die over de grens ging, reken je weer btw.
+- **In de buurt van de grens**: vanaf 80% van de grens zegt de regel onder de meter dat je je omzet in de gaten moet houden, zodat je kunt plannen voor het moment dat je eroverheen gaat. Doe je mee, dan laat een oranje melding vanaf 90% ook zien hoeveel ruimte je nog hebt.
+- **Boven de grens**: zodra je omzet dit jaar boven € 20.000 exclusief btw komt ([`sources/vat-rates.yaml#countries.NL.small_business_threshold_eur`](https://github.com/silvanrijnberk/mycompanydesk-docs/blob/main/sources/vat-rates.yaml)), zegt een rode waarschuwing dat de KOR niet meer geldt. Vanaf de factuur die over de grens ging, reken je weer btw, over het volledige bedrag van die factuur. Meld je meteen af bij de Belastingdienst: je kunt dan de rest van dat jaar en het jaar erna niet meer meedoen aan de KOR ([`sources/vat-rates.yaml#countries.NL.small_business_on_exceed`](https://github.com/silvanrijnberk/mycompanydesk-docs/blob/main/sources/vat-rates.yaml)).
 
-<!-- TODO(source-missing): verify exact threshold percentages that trigger near/over KOR meter warnings and whether the toggle is available for non-Dutch workspaces. -->
+De punten van 80% en 90% kiest MyCompanyDesk zelf om je op tijd te waarschuwen; de Belastingdienst stelt alleen de grens van € 20.000.
+
+<!-- TODO(source-missing): whether the KOR switch is offered to workspaces outside the Netherlands is not yet verified. -->
 
 Kom je niet meer in aanmerking voor de KOR, zet de schakelaar dan uit en loop de volgende aangifte na met je boekhouder. Meer over de KOR lees je [hieronder](#kor).
 
@@ -73,9 +75,9 @@ Kom je niet meer in aanmerking voor de KOR, zet de schakelaar dan uit en loop de
 De bovenste kaart vat het gekozen tijdvak samen:
 
 - **Saldo**: hetzelfde netto totaal als rubriek 5g op het tabblad Aangifte: ontvangen en zelf berekende btw (rubrieken 2a/4a/4b) min de voorbelasting die in rubriek 5b terechtkomt, inclusief handmatige correcties. Btw via de OSS-regeling telt niet mee, want die hoort op een eigen aangifte. Het saldo krijgt het label "Te betalen" of "Terug te vorderen" en volgt de tijdvakkiezer.
-- **Deadlinering**: een ronde aftelring naar de volgende aangiftedeadline, berekend uit het schema van het land van je werkruimte en je aangiftefrequentie. Rood bij 3 dagen of minder, oranje tot 14 dagen, anders groen. Is een aangifte ingediend maar nog niet betaald, dan blijft de ring op dat tijdvak staan tot de betaaldatum en staat er **Ingediend, nog betalen**, met **Vandaag betalen** op de betaaldag zelf. Een ingediend tijdvak dat is afgerekend, of dat op een teruggave uitkwam, houdt de ring niet meer vast en de aftelling gaat door naar de volgende aangifte.
+- **Deadlinering**: een ronde aftelring naar de volgende aangiftedeadline, berekend uit het schema van het land van je werkruimte en je aangiftefrequentie. Rood bij 3 dagen of minder, oranje tot 14 dagen, anders groen. Is een aangifte ingediend maar nog niet betaald, dan blijft de ring op dat tijdvak staan tot de betaaldatum en staat er **Ingediend, nog betalen**, met **Vandaag betalen** op de betaaldag zelf. Een ingediend tijdvak dat is afgerekend, of dat op een teruggave uitkwam, houdt de ring niet meer vast en de aftelling gaat door naar de volgende aangifte. Voor een Nederlandse werkruimte is de deadline bij een maand- of kwartaalaangifte de laatste dag van de maand na het tijdvak, en bij een jaaraangifte vóór 1 april van het jaar erna (dus uiterlijk 31 maart). Op die dag moet de Belastingdienst zowel je aangifte als je betaling binnen hebben ([`sources/nl-vat-filing.yaml#deadlines`](https://github.com/silvanrijnberk/mycompanydesk-docs/blob/main/sources/nl-vat-filing.yaml)).
 
-<!-- TODO(source-missing): The app uses country-specific VAT filing deadlines (NL, GB, DE, and others). The exact deadline rules per country are not yet in sources/. Do not list specific per-country due dates until a human adds them to sources/. -->
+<!-- TODO(source-missing): The app also uses country-specific VAT filing deadlines for workspaces outside the Netherlands (GB, DE and others). Those rules are not in sources/ yet; do not list per-country due dates for them until a human adds them. -->
 - **Spaarpotje**: een voorgestelde reservering van de btw die je nog moet betalen plus 10% marge, zichtbaar als je btw moet betalen. Krijg je geld terug, dan toont de tegel de teruggave.
 
 Onder het saldo staan twee knoppen: **Naar aangifte** springt naar het tabblad Aangifte, en **Hoe wordt dit berekend?** loopt de rekensom achter het saldo door.
@@ -133,11 +135,9 @@ De bestandsnaam van de ZIP van de boekhouder-export bevat de bedrijfsnaam, het t
 
 ### Waarschuwing bij afwijking van een ingediende aangifte
 
-<!-- TODO(source-missing): The filed-return drift warning uses a Belastingdienst threshold to choose between "include in the next regular return" and "formal suppletieaangifte required". sources/ has no entry for this threshold; do not quote the value or link target in docs until a human verifies the rule at belastingdienst.nl. -->
-
 Voor Nederlandse btw blijft het tabblad Aangifte de aangifte uit je actuele boekingen herberekenen, ook als het tijdvak als ingediend is gemarkeerd. Komt de berekening niet meer overeen met wat je hebt ingediend, dan verschijnt er een waarschuwing boven het rubriekenoverzicht. Die zet de ingediende en de huidige bedragen van rubriek 5a, 5b en het netto totaal in 5g naast elkaar en toont per regel het verschil.
 
-De waarschuwing zegt ook wat je moet doen: het verschil meenemen in je volgende gewone aangifte, een formele suppletieaangifte doen (met de knop **Suppletie aanmaken**), of alleen opmerken dat de rubrieken zijn verschoven terwijl het te betalen of terug te vragen bedrag gelijk is gebleven.
+De waarschuwing zegt ook wat je moet doen, op basis van het verschil in het netto totaal (5g). Gaat het om € 1.000 btw of minder, dan neem je het verschil mee in je volgende gewone aangifte. Boven de € 1.000 is een formele suppletieaangifte verplicht, en alleen dan staat de knop **Suppletie aanmaken** erbij ([`sources/nl-vat-corrections.yaml#suppletie.next_return_threshold_eur`](https://github.com/silvanrijnberk/mycompanydesk-docs/blob/main/sources/nl-vat-corrections.yaml)). Zijn alleen de rubrieken verschoven en is het te betalen of terug te vragen bedrag gelijk gebleven, dan zegt de waarschuwing dat en hoef je niets te boeken.
 
 ### Internationale kaarten
 
@@ -165,18 +165,16 @@ Een correctie telt alleen mee in een aangifte als het tijdvak past bij je aangif
 
 Sla je een correctie op of verwijder je er een, dan werken het rubriekenoverzicht, de bovenste kaart en de tijdvakkaarten meteen bij; verversen of van tijdvak wisselen is niet nodig.
 
-<!-- TODO(source-missing): The app surfaces a Belastingdienst €1,000 threshold for suppletie corrections (under = next regular aangifte, over = formal suppletieaangifte required). sources/ has no entry for this threshold; do not invent the value or the link target until a human verifies the current rule at belastingdienst.nl. -->
+Bij een **Suppletie** zegt de lijst ook welke route de Belastingdienst voorschrijft. De grens is € 1.000 btw ([`sources/nl-vat-corrections.yaml#suppletie.next_return_threshold_eur`](https://github.com/silvanrijnberk/mycompanydesk-docs/blob/main/sources/nl-vat-corrections.yaml)): € 1.000 of minder mag je verwerken in je eerstvolgende gewone aangifte, meer dan € 1.000 vraagt een formele suppletieaangifte. MyCompanyDesk kijkt per gecorrigeerd tijdvak en telt alle suppleties op dat tijdvak bij elkaar op, dus een regel van € 600 en een van € 700 tellen samen als € 1.300. Heb je te weinig btw aangegeven? Dien de suppletie dan in binnen 8 weken nadat je de fout ontdekte ([`sources/nl-vat-corrections.yaml#suppletie.deadline_after_discovery_weeks`](https://github.com/silvanrijnberk/mycompanydesk-docs/blob/main/sources/nl-vat-corrections.yaml)). Corrigeren kan tot en met 5 jaar na het jaar waar de correctie over gaat ([`sources/nl-vat-corrections.yaml#suppletie.correction_window_years`](https://github.com/silvanrijnberk/mycompanydesk-docs/blob/main/sources/nl-vat-corrections.yaml)).
 
 ### Privégebruik auto
 
 Trek je btw af op een auto van de zaak, dan corrigeer je aan het eind van het jaar voor het privégebruik. Boek je autokosten, dan toont het tabblad Correcties een voorgestelde regel **Privégebruik auto**; **Berekenen** opent de correctie:
 
-- Kies tussen een forfaitaire correctie op basis van de catalogusprijs, of een correctie op basis van het werkelijke gebruik uit een sluitende rittenregistratie.
-- Het forfaitaire percentage hangt af van of de auto ouder is dan de leeftijdsgrens of zonder btw-aftrek is gekocht.
+- Kies tussen een forfaitaire correctie op basis van de catalogusprijs, of een correctie op basis van het werkelijke gebruik uit een sluitende rittenregistratie (**Ik heb een sluitende rittenregistratie**).
+- Het forfait is 2,7% van de catalogusprijs inclusief btw en bpm ([`sources/nl-vat-corrections.yaml#private_car_use.standard_pct_of_catalogue_value`](https://github.com/silvanrijnberk/mycompanydesk-docs/blob/main/sources/nl-vat-corrections.yaml)). Het wordt 1,5% als het privégebruik plaatsvindt later dan 4 jaar na het jaar waarin je de auto bent gaan gebruiken, of als je de auto zonder btw-aftrek hebt gekocht, bijvoorbeeld via de margeregeling of van een particulier ([`sources/nl-vat-corrections.yaml#private_car_use.reduced_applies_when`](https://github.com/silvanrijnberk/mycompanydesk-docs/blob/main/sources/nl-vat-corrections.yaml)). Een auto die je in 2021 in gebruik nam, valt dus tot en met 2025 onder 2,7% en vanaf 2026 onder 1,5%. Voor het lagere percentage zet je **Auto ouder dan 5 jaar of gekocht zonder btw-aftrek** aan.
 
-De correctie telt mee in de totalen van het tijdvak op het tabblad Aangifte.
-
-<!-- TODO(source-missing): The Dutch flat-rate percentages for company-car private-use VAT correction and the age threshold are not yet in sources/. Do not quote the values in docs until a human verifies the current rules at belastingdienst.nl. -->
+De voorgestelde regel staat alleen in het laatste tijdvak van het jaar (Q4, M12 of de jaaraangifte), omdat de correctie in de laatste aangifte van het jaar hoort ([`sources/nl-vat-corrections.yaml#private_car_use.declared_in`](https://github.com/silvanrijnberk/mycompanydesk-docs/blob/main/sources/nl-vat-corrections.yaml)). De correctie telt mee in de totalen van het tijdvak op het tabblad Aangifte.
 
 ## Tabblad Transacties
 

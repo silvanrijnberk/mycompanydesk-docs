@@ -175,7 +175,7 @@ Si vous utilisez une voiture privée pour des déplacements professionnels, vous
 
 La dépense est créée avec une ligne pour le total des kilomètres professionnels.
 
-<!-- TODO(source-missing): Le taux d'indemnité kilométrique néerlandais au kilomètre n'est pas encore dans sources/. Ne citez pas le taux dans la documentation tant qu'un humain n'a pas vérifié le montant actuel sur belastingdienst.nl. -->
+L'indemnité est de 0,25 € par kilomètre professionnel pour les trajets de 2026 et de 0,23 € pour les trajets jusqu'en 2025 inclus ([`sources/nl-mileage.yaml#ib_entrepreneur.per_km_eur`](https://github.com/silvanrijnberk/mycompanydesk-docs/blob/main/sources/nl-mileage.yaml)). Chaque trajet est valorisé au taux de sa propre année : une période à cheval sur le 1er janvier combine donc les deux taux. L'indemnité ne porte pas de TVA, et le carburant, l'assurance, les péages et le stationnement y sont déjà inclus : vous ne les déduisez pas en plus séparément ([`sources/nl-mileage.yaml#ib_entrepreneur.conditions`](https://github.com/silvanrijnberk/mycompanydesk-docs/blob/main/sources/nl-mileage.yaml)).
 
 Si votre espace de travail utilise un véhicule de société, les frais réels de voiture sont déjà comptabilisés comme dépense ; une indemnité kilométrique séparée n'est alors pas nécessaire.
 

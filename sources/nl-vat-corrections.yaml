@@ -1,0 +1,68 @@
+# NL btw-correcties: suppletie en privégebruik auto.
+# Historische tarieven (6%/19%) bewust niet opgenomen: niet bevestigd op belastingdienst.nl.
+# Curated by hand. The mcd-public-surfaces-sync agent reads but never writes.
+
+last_verified: 2026-10-13
+verified_by: silvanrijnberk
+source_url: https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/btw/btw_aangifte_doen_en_betalen/aangifte_corrigeren/
+notes: |
+  De € 1.000-grens geldt per btw-BEDRAG (niet omzet). "Maximaal € 1.000" /
+  "€ 1.000 of minder" valt in de eerstvolgende aangifte; "meer dan € 1.000"
+  verplicht een suppletie. Uitzonderingen waar verrekenen NIET mag:
+  intracommunautaire verwerving dubbel aangegeven, en jaarglobalisatie bij de
+  margeregeling (dan brief naar belastingkantoor).
+
+suppletie:
+  next_return_threshold_eur: 1000
+  threshold_inclusive: true          # "€ 1.000 of minder" mag in volgende aangifte
+  correction_window_years: 5         # tot en met 5 jaar na het jaar van het tijdvak
+  deadline_after_discovery_weeks: 8  # sinds 1 januari 2025, voor te weinig aangegeven btw
+  deadline_rule_since: 2025-01-01
+  no_interest_if: |
+    Suppletie binnen 3 maanden na afloop van het jaar, of de te weinig
+    aangegeven btw wordt binnen het jaar gecorrigeerd (dan geen belastingrente).
+  exceptions_no_offset:
+    - intracommunautaire verwerving (in NL en ander EU-land aangegeven)
+    - margeregeling, teruggaaf via jaarglobalisatie
+  sources:
+    - url: https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/btw/btw_aangifte_doen_en_betalen/aangifte_corrigeren/
+      quote: "Hebt u bij uw btw-aangifte een bedrag van maximaal €1000 te veel of te weinig ingevuld? Dan geeft u dat bedrag op in uw eerstvolgende btw-aangifte."
+    - url: https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/btw/btw_aangifte_doen_en_betalen/aangifte_corrigeren/
+      quote: "Ontdekt u een fout en gaat het om een btw-bedrag van meer dan € 1.000? Dan bent u verplicht dit zo snel mogelijk te corrigeren."
+    - url: https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/btw/btw_aangifte_doen_en_betalen/aangifte_corrigeren/
+      quote: "Verzend het correctieformulier dan zo snel mogelijk, maar in elk geval binnen 8 weken nadat u de fout ontdekte."
+    - url: https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/btw/btw_aangifte_doen_en_betalen/aangifte_corrigeren/
+      quote: "U kunt correcties indienen tot en met 5 jaar na het jaar waarop de correctie betrekking heeft."
+    - url: https://download.belastingdienst.nl/belastingdienst/docs/toelichting_suppletie_btw_ob1431t21pl.pdf
+      version: "OB 143 - 1T*21PL, januari 2025"
+      quote: "Gaat het om een btw-bedrag van € 1.000 of minder? Dan hoeft u dit formulier niet in te vullen. Geef dit bedrag dan op in uw eerstvolgende btw-aangifte."
+    - url: https://download.belastingdienst.nl/belastingdienst/docs/toelichting_suppletie_btw_ob1431t21pl.pdf
+      quote: "Sinds 1 januari 2025 geldt dat uw suppletie uiterlijk binnen 8 weken moet worden gedaan, na het moment waarop u ontdekt dat u te weinig btw hebt aangegeven."
+
+private_car_use:
+  # Forfait voor btw-correctie privégebruik auto van de zaak zonder sluitende kilometeradministratie.
+  standard_pct_of_catalogue_value: 2.7
+  reduced_pct_of_catalogue_value: 1.5
+  catalogue_value_includes: [btw, bpm]
+  reduced_applies_when:
+    - privégebruik vindt plaats later dan 4 jaar na het jaar waarin de auto in gebruik is genomen (dus vanaf het 5e jaar NA het jaar van ingebruikname)
+    - auto aangeschaft zonder btw-aftrek (bv. marge-auto of gekocht van particulier)
+  applies_to_lease: true             # 2,7% geldt ook bij operational en financial lease
+  pro_rata_part_year: true           # bv. aankoop 1 september = 4/12 x 2,7%
+  declared_in: laatste btw-aangifte van het boekjaar / kalenderjaar
+  alternative: werkelijk privégebruik aantonen met sluitende kilometeradministratie
+  notes: |
+    Leeftijdsdrempel exact: "later dan 4 jaar na het jaar waarin u de auto bent
+    gaan gebruiken". Ingebruikname in 2021 -> 2,7% t/m 2025, 1,5% vanaf 2026.
+    Bron noemt ook een maximum-correctie (afgetrokken btw onderhoud/gebruik +
+    1/5 van aankoop-btw) als de afgetrokken btw in de 4 jaren na aankoop lager
+    uitvalt; dat is hier niet gemodelleerd.
+  sources:
+    - url: https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/btw/btw_aftrekken/btw_en_de_auto/privegebruik_auto_van_de_zaak/privegebruik_auto_van_de_zaak
+      quote: "Dit percentage van 2,7 geldt ook voor de auto die u gebruikt op basis van operational lease of financial lease."
+    - url: https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/btw/btw_aftrekken/btw_en_de_auto/privegebruik_auto_van_de_zaak/privegebruik_auto_van_de_zaak
+      quote: "Vindt het privégebruik plaats later dan 4 jaar na het jaar waarin u de auto bent gaan gebruiken? Dan neemt u 1,5% in plaats van 2,7% van de catalogusprijs van de auto, inclusief btw en bpm."
+    - url: https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/btw/btw_aftrekken/btw_en_de_auto/privegebruik_auto_van_de_zaak/privegebruik_auto_van_de_zaak
+      quote: "U betaalt de btw voor het privégebruik auto via de laatste btw-aangifte van het boekjaar."
+    - url: https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/btw/btw_aftrekken/btw_en_de_auto/privegebruik_auto_van_de_zaak/privegebruik_auto_van_de_zaak
+      quote: "Als u de auto in de loop van het jaar koopt, kunt u het percentage van 2,7% naar evenredigheid verlagen."

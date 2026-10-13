@@ -167,7 +167,7 @@ If you drive a private car for business trips, you can book those trips as a sin
 
 The expense is created with one line for the total business kilometres.
 
-<!-- TODO(source-missing): The Dutch mileage allowance rate per kilometre is not yet in sources/. Do not quote the rate in docs until a human verifies the current figure at belastingdienst.nl. -->
+The allowance is €0.25 per business kilometre for trips in 2026 and €0.23 for trips up to and including 2025 ([`sources/nl-mileage.yaml#ib_entrepreneur.per_km_eur`](https://github.com/silvanrijnberk/mycompanydesk-docs/blob/main/sources/nl-mileage.yaml)). Every trip is priced at the rate of its own year, so a period that spans 1 January combines both rates. The allowance carries no VAT, and fuel, insurance, tolls and parking are included in it: you cannot deduct those separately on top ([`sources/nl-mileage.yaml#ib_entrepreneur.conditions`](https://github.com/silvanrijnberk/mycompanydesk-docs/blob/main/sources/nl-mileage.yaml)).
 
 If your workspace uses a company car, the actual car costs are already booked as expenses, so a separate mileage allowance is not needed.
 

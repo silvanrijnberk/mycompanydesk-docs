@@ -61,10 +61,12 @@ Die KOR-Karte fragt, ob Sie an der niederländischen **kleineondernemersregeling
 Die Anzeige kennt drei Zustände:
 
 - **Unter der Grenze**: normale Fortschrittsfarbe.
-- **Nahe der Grenze**: eine Warnung, damit Sie das Überschreiten einplanen können.
-- **Über der Grenze**: eine rote Warnung, dass die KOR nicht mehr gilt; ab der Rechnung, mit der Sie die Grenze überschritten haben, berechnen Sie wieder MwSt.
+- **Nahe der Grenze**: ab 80 % der Grenze weist die Zeile unter der Anzeige darauf hin, Ihren Umsatz im Blick zu behalten, damit Sie das Überschreiten einplanen können. Nehmen Sie teil, zeigt ab 90 % zusätzlich ein oranger Hinweis, wie viel Spielraum noch bleibt.
+- **Über der Grenze**: sobald Ihr Umsatz in diesem Jahr 20.000 € ohne MwSt. übersteigt ([`sources/vat-rates.yaml#countries.NL.small_business_threshold_eur`](https://github.com/silvanrijnberk/mycompanydesk-docs/blob/main/sources/vat-rates.yaml)), meldet eine rote Warnung, dass die KOR nicht mehr gilt. Ab der Rechnung, mit der Sie die Grenze überschritten haben, berechnen Sie wieder MwSt., und zwar auf den vollen Betrag dieser Rechnung. Melden Sie sich sofort bei der Belastingdienst ab: Für den Rest dieses Jahres und das folgende Jahr können Sie dann nicht mehr an der KOR teilnehmen ([`sources/vat-rates.yaml#countries.NL.small_business_on_exceed`](https://github.com/silvanrijnberk/mycompanydesk-docs/blob/main/sources/vat-rates.yaml)).
 
-<!-- TODO(source-missing): verify exact threshold percentages that trigger near/over KOR meter warnings and whether the toggle is available for non-Dutch workspaces. -->
+Die Schwellen von 80 % und 90 % legt MyCompanyDesk selbst fest, um Sie rechtzeitig zu warnen; die Belastingdienst bestimmt nur die Grenze von 20.000 €.
+
+<!-- TODO(source-missing): whether the KOR switch is offered to workspaces outside the Netherlands is not yet verified. -->
 
 Erfüllen Sie die Voraussetzungen der KOR nicht mehr, schalten Sie sie aus und prüfen Sie die nächste Erklärung mit Ihrem Buchhalter. Mehr zur KOR lesen Sie [weiter unten](#kor).
 
@@ -73,9 +75,9 @@ Erfüllen Sie die Voraussetzungen der KOR nicht mehr, schalten Sie sie aus und p
 Die obere Karte fasst den gewählten Zeitraum zusammen:
 
 - **Saldo**: dieselbe Nettosumme wie Rubrik 5g im Tab Erklärung: vereinnahmte und selbst berechnete MwSt. (Rubriken 2a/4a/4b) abzüglich der Vorsteuer aus Rubrik 5b, einschließlich manueller Korrekturen. MwSt. aus der OSS-Regelung zählt nicht mit, weil sie in eine eigene Erklärung gehört. Der Saldo trägt das Label "Zu zahlen" oder "Zurückzufordern" und folgt der Zeitraumauswahl.
-- **Fristenring**: ein runder Countdown bis zur nächsten Abgabefrist, berechnet aus dem Fristenplan des Landes Ihres Arbeitsbereichs und Ihrer Erklärungshäufigkeit. Rot bei 3 Tagen oder weniger, orange bis 14 Tage, sonst grün. Ist eine Erklärung eingereicht, aber noch nicht bezahlt, bleibt der Ring bis zum Zahlungstermin bei diesem Zeitraum und zeigt **Eingereicht, Zahlung offen**, am Zahltag selbst **Heute zahlen**. Ein eingereichter Zeitraum, der beglichen ist oder mit einer Erstattung endete, hält den Ring nicht mehr fest; der Countdown springt zur nächsten Erklärung.
+- **Fristenring**: ein runder Countdown bis zur nächsten Abgabefrist, berechnet aus dem Fristenplan des Landes Ihres Arbeitsbereichs und Ihrer Erklärungshäufigkeit. Rot bei 3 Tagen oder weniger, orange bis 14 Tage, sonst grün. Ist eine Erklärung eingereicht, aber noch nicht bezahlt, bleibt der Ring bis zum Zahlungstermin bei diesem Zeitraum und zeigt **Eingereicht, Zahlung offen**, am Zahltag selbst **Heute zahlen**. Ein eingereichter Zeitraum, der beglichen ist oder mit einer Erstattung endete, hält den Ring nicht mehr fest; der Countdown springt zur nächsten Erklärung. Für einen niederländischen Arbeitsbereich ist die Frist bei einer Monats- oder Quartalserklärung der letzte Tag des Monats nach dem Zeitraum, bei einer Jahreserklärung vor dem 1. April des Folgejahres (also spätestens der 31. März). Bis dahin müssen sowohl die Erklärung als auch die Zahlung bei der Belastingdienst eingegangen sein ([`sources/nl-vat-filing.yaml#deadlines`](https://github.com/silvanrijnberk/mycompanydesk-docs/blob/main/sources/nl-vat-filing.yaml)).
 
-<!-- TODO(source-missing): The app uses country-specific VAT filing deadlines (NL, GB, DE, and others). The exact deadline rules per country are not yet in sources/. Do not list specific per-country due dates until a human adds them to sources/. -->
+<!-- TODO(source-missing): The app also uses country-specific VAT filing deadlines for workspaces outside the Netherlands (GB, DE and others). Those rules are not in sources/ yet; do not list per-country due dates for them until a human adds them. -->
 - **Rücklage**: ein Vorschlag, wie viel Sie zurücklegen sollten, nämlich die noch zu zahlende MwSt. plus 10 % Puffer, sichtbar, wenn Sie zahlen müssen. Bekommen Sie Geld zurück, zeigt die Kachel die Erstattung.
 
 Unter dem Saldo stehen zwei Schaltflächen: **Erklärung öffnen** springt zum Tab Erklärung, und **Wie wird das berechnet?** geht die Rechnung hinter dem Saldo durch.
@@ -133,11 +135,9 @@ Der Dateiname der ZIP-Datei des Buchhalter-Exports enthält Firmenname, Zeitraum
 
 ### Warnung bei Abweichung von einer eingereichten Erklärung
 
-<!-- TODO(source-missing): The filed-return drift warning uses a Belastingdienst threshold to choose between "include in the next regular return" and "formal suppletieaangifte required". sources/ has no entry for this threshold; do not quote the value or link target in docs until a human verifies the rule at belastingdienst.nl. -->
-
 Bei niederländischer MwSt. berechnet der Tab Erklärung die Erklärung auch dann weiter aus Ihren aktuellen Buchungen, wenn der Zeitraum als eingereicht markiert ist. Stimmt die Berechnung nicht mehr mit dem Eingereichten überein, erscheint über der Rubrikenübersicht eine Warnung. Sie stellt die eingereichten und die aktuellen Beträge für Rubrik 5a, 5b und die Nettosumme in 5g gegenüber und zeigt je Zeile die Differenz.
 
-Die Warnung sagt auch, was zu tun ist: die Differenz in der nächsten regulären Erklärung mitnehmen, eine förmliche Berichtigungserklärung (suppletieaangifte) abgeben (mit der Schaltfläche **Suppletie erstellen**) oder nur zur Kenntnis nehmen, dass sich Rubriken verschoben haben, während der zu zahlende oder zu erstattende Betrag gleich geblieben ist.
+Die Warnung sagt auch, was zu tun ist, und richtet sich nach der Differenz in der Nettosumme (5g). Bis einschließlich 1.000 € MwSt. nehmen Sie die Differenz in Ihre nächste reguläre Erklärung auf. Über 1.000 € ist eine förmliche Berichtigungserklärung (suppletieaangifte) Pflicht, und nur dann zeigt die Warnung die Schaltfläche **Suppletie erstellen** ([`sources/nl-vat-corrections.yaml#suppletie.next_return_threshold_eur`](https://github.com/silvanrijnberk/mycompanydesk-docs/blob/main/sources/nl-vat-corrections.yaml)). Haben sich nur die Rubriken verschoben und ist der zu zahlende oder zu erstattende Betrag gleich geblieben, sagt die Warnung das, und Sie müssen nichts buchen.
 
 ### Internationale Karten
 
@@ -165,18 +165,16 @@ Eine Korrektur zählt nur in einer Erklärung, wenn ihr Zeitraum zu Ihrer Erklä
 
 Wenn Sie eine Korrektur speichern oder löschen, aktualisieren sich Rubrikenübersicht, obere Karte und Zeitraumkarten sofort; Neuladen oder ein Zeitraumwechsel ist nicht nötig.
 
-<!-- TODO(source-missing): The app surfaces a Belastingdienst €1,000 threshold for suppletie corrections (under = next regular aangifte, over = formal suppletieaangifte required). sources/ has no entry for this threshold; do not invent the value or the link target until a human verifies the current rule at belastingdienst.nl. -->
+Bei einer **Suppletie** zeigt die Liste auch, welchen Weg die Belastingdienst vorschreibt. Die Grenze liegt bei 1.000 € MwSt. ([`sources/nl-vat-corrections.yaml#suppletie.next_return_threshold_eur`](https://github.com/silvanrijnberk/mycompanydesk-docs/blob/main/sources/nl-vat-corrections.yaml)): 1.000 € oder weniger dürfen Sie in Ihrer nächsten regulären Erklärung verrechnen, mehr als 1.000 € erfordert eine förmliche Berichtigungserklärung (suppletieaangifte). MyCompanyDesk prüft das je korrigiertem Zeitraum und addiert alle Suppleties für diesen Zeitraum, sodass eine Zeile über 600 € und eine über 700 € zusammen als 1.300 € zählen. Haben Sie zu wenig MwSt. erklärt? Dann reichen Sie die Suppletie innerhalb von 8 Wochen ein, nachdem Sie den Fehler entdeckt haben ([`sources/nl-vat-corrections.yaml#suppletie.deadline_after_discovery_weeks`](https://github.com/silvanrijnberk/mycompanydesk-docs/blob/main/sources/nl-vat-corrections.yaml)). Korrigieren können Sie bis einschließlich 5 Jahre nach dem Jahr, auf das sich die Korrektur bezieht ([`sources/nl-vat-corrections.yaml#suppletie.correction_window_years`](https://github.com/silvanrijnberk/mycompanydesk-docs/blob/main/sources/nl-vat-corrections.yaml)).
 
 ### Private Pkw-Nutzung
 
 Ziehen Sie MwSt. für ein Firmenfahrzeug ab, müssen Sie am Jahresende die private Nutzung korrigieren. Wenn Sie Autokosten buchen, zeigt der Tab Korrekturen eine vorgeschlagene Zeile **Private Pkw-Nutzung**; **Berechnen** öffnet die Korrektur:
 
-- Wählen Sie zwischen einer pauschalen Korrektur auf Basis des Listenpreises und einer Korrektur nach tatsächlicher Nutzung auf Basis eines lückenlosen Fahrtenbuchs.
-- Der Pauschalsatz hängt davon ab, ob das Fahrzeug älter als die Altersgrenze ist oder ohne Vorsteuerabzug gekauft wurde.
+- Wählen Sie zwischen einer pauschalen Korrektur auf Basis des Listenpreises und einer Korrektur nach tatsächlicher Nutzung auf Basis eines lückenlosen Fahrtenbuchs (**Ich führe ein lückenloses Fahrtenbuch**).
+- Die Pauschale beträgt 2,7 % des Listenpreises einschließlich MwSt. und BPM ([`sources/nl-vat-corrections.yaml#private_car_use.standard_pct_of_catalogue_value`](https://github.com/silvanrijnberk/mycompanydesk-docs/blob/main/sources/nl-vat-corrections.yaml)). Sie sinkt auf 1,5 %, wenn die private Nutzung später als 4 Jahre nach dem Jahr stattfindet, in dem Sie das Fahrzeug in Gebrauch genommen haben, oder wenn Sie das Fahrzeug ohne Vorsteuerabzug gekauft haben, etwa über die Differenzbesteuerung oder von privat ([`sources/nl-vat-corrections.yaml#private_car_use.reduced_applies_when`](https://github.com/silvanrijnberk/mycompanydesk-docs/blob/main/sources/nl-vat-corrections.yaml)). Für ein Fahrzeug, das Sie 2021 in Gebrauch genommen haben, gelten also bis einschließlich 2025 2,7 % und ab 2026 1,5 %. Für den niedrigeren Satz schalten Sie **Auto älter als 5 Jahre oder ohne MwSt.-Abzug gekauft** ein.
 
-Die Korrektur fließt in die Summen des Zeitraums im Tab Erklärung ein.
-
-<!-- TODO(source-missing): The Dutch flat-rate percentages for company-car private-use VAT correction and the age threshold are not yet in sources/. Do not quote the values in docs until a human verifies the current rules at belastingdienst.nl. -->
+Die vorgeschlagene Zeile erscheint nur im letzten Zeitraum des Jahres (Q4, M12 oder die Jahreserklärung), weil die Korrektur in die letzte Erklärung des Jahres gehört ([`sources/nl-vat-corrections.yaml#private_car_use.declared_in`](https://github.com/silvanrijnberk/mycompanydesk-docs/blob/main/sources/nl-vat-corrections.yaml)). Die Korrektur fließt in die Summen des Zeitraums im Tab Erklärung ein.
 
 ## Tab Transaktionen
 

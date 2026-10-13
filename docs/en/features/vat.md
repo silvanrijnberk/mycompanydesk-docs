@@ -61,10 +61,12 @@ The KOR card asks whether you take part in the Dutch **kleineondernemersregeling
 The meter has three states:
 
 - **Under the limit**: normal progress colour.
-- **Near the limit**: a warning so you can plan for crossing the threshold.
-- **Over the limit**: a red warning that the KOR no longer applies; from the invoice that crossed the threshold you must charge VAT again.
+- **Near the limit**: from 80% of the threshold the line under the meter tells you to keep an eye on your revenue, so you can plan for crossing it. While you are enrolled, an amber notice from 90% also says how much room is left.
+- **Over the limit**: as soon as your revenue this year goes above €20,000 excluding VAT ([`sources/vat-rates.yaml#countries.NL.small_business_threshold_eur`](https://github.com/silvanrijnberk/mycompanydesk-docs/blob/main/sources/vat-rates.yaml)), a red warning says the KOR no longer applies. From the invoice that crossed the threshold you must charge VAT again, on the full amount of that invoice. Deregister with the Belastingdienst straight away: the KOR is then closed to you for the rest of that year and the next ([`sources/vat-rates.yaml#countries.NL.small_business_on_exceed`](https://github.com/silvanrijnberk/mycompanydesk-docs/blob/main/sources/vat-rates.yaml)).
 
-<!-- TODO(source-missing): verify exact threshold percentages that trigger near/over KOR meter warnings and whether the toggle is available for non-Dutch workspaces. -->
+The 80% and 90% points are choices MyCompanyDesk makes to warn you in time; the Belastingdienst itself only sets the €20,000 limit.
+
+<!-- TODO(source-missing): whether the KOR switch is offered to workspaces outside the Netherlands is not yet verified. -->
 
 If the business no longer qualifies for the KOR, turn the switch off and double-check the next return with your accountant. More on the KOR [below](#kor).
 
@@ -73,9 +75,9 @@ If the business no longer qualifies for the KOR, turn the switch off and double-
 The hero summarises the selected period:
 
 - **Balance**: the same net total as rubriek 5g on the Return tab: VAT collected and self-charged (rubrieken 2a/4a/4b) minus the input VAT that goes into rubriek 5b, with manual corrections included. VAT owed through the OSS scheme is not part of it, because that belongs on its own return. It carries a "to pay" or "to reclaim" label and follows the period selector.
-- **Deadline ring**: a circular countdown to the next filing deadline, computed from your workspace country's schedule and your filing frequency. Red when 3 days or fewer remain, amber up to 14 days, green otherwise. Has a return been submitted but its amount is still open, the ring stays on that period until the payment date and the hint reads **Filed, payment open**, with **Pay today** on the payment day itself; a submitted period that is settled, or one that came out as a refund, no longer holds the ring and the countdown moves on to the next filing.
+- **Deadline ring**: a circular countdown to the next filing deadline, computed from your workspace country's schedule and your filing frequency. Red when 3 days or fewer remain, amber up to 14 days, green otherwise. Has a return been submitted but its amount is still open, the ring stays on that period until the payment date and the hint reads **Filed, payment open**, with **Pay today** on the payment day itself; a submitted period that is settled, or one that came out as a refund, no longer holds the ring and the countdown moves on to the next filing. For a Dutch workspace the deadline is the last day of the month after the period for a monthly or quarterly return, and before 1 April of the following year (so 31 March at the latest) for an annual return. By then the Belastingdienst must have received both the return and the payment ([`sources/nl-vat-filing.yaml#deadlines`](https://github.com/silvanrijnberk/mycompanydesk-docs/blob/main/sources/nl-vat-filing.yaml)).
 
-<!-- TODO(source-missing): The app uses country-specific VAT filing deadlines (NL, GB, DE, and others). The exact deadline rules per country are not yet in sources/. Do not list specific per-country due dates until a human adds them to sources/. -->
+<!-- TODO(source-missing): The app also uses country-specific VAT filing deadlines for workspaces outside the Netherlands (GB, DE and others). Those rules are not in sources/ yet; do not list per-country due dates for them until a human adds them. -->
 - **Savings pot**: a suggested reserve of the VAT you still have to pay plus a 10% buffer, shown when the balance is payable. When you are due money back, the tile shows the refund instead.
 
 Two buttons sit under the balance: **Open aangifte** jumps to the Return tab, and **How is this calculated?** walks through the math behind the balance.
@@ -133,11 +135,9 @@ The accountant export's ZIP filename includes the company name, the period and t
 
 ### Filed-return drift warning
 
-<!-- TODO(source-missing): The filed-return drift warning uses a Belastingdienst threshold to choose between "include in the next regular return" and "formal suppletieaangifte required". sources/ has no entry for this threshold; do not quote the value or link target in docs until a human verifies the rule at belastingdienst.nl. -->
-
 For Dutch VAT, once a period is marked as filed the Return tab keeps recalculating the return from your live records. If the current calculation no longer matches what you submitted, a warning banner appears above the rubrieken sheet. It compares the filed and current amounts for rubriek 5a, 5b and the net total in 5g, and shows the difference for each row.
 
-The banner tells you what to do next. It either tells you to include the difference in your next regular return, to file a formal suppletieaangifte (with a **Create suppletie** button), or to note that the rows shifted while the net payable or refundable amount stayed the same.
+The banner tells you what to do next, based on the difference in the net total (5g). Up to and including €1,000 of VAT, you include the difference in your next regular return. Above €1,000 a formal suppletieaangifte is required, and only then does the banner show a **Create suppletie** button ([`sources/nl-vat-corrections.yaml#suppletie.next_return_threshold_eur`](https://github.com/silvanrijnberk/mycompanydesk-docs/blob/main/sources/nl-vat-corrections.yaml)). If the rows shifted but the net payable or refundable amount stayed the same, the banner says so and there is nothing to book.
 
 ### International cards
 
@@ -165,18 +165,16 @@ A correction is only counted in a return when its period matches your filing fre
 
 When you save or delete a correction, the rubrieken sheet, the hero and the period cards update immediately; there is no need to refresh or switch periods.
 
-<!-- TODO(source-missing): The app surfaces a Belastingdienst €1,000 threshold for suppletie corrections (under = next regular aangifte, over = formal suppletieaangifte required). sources/ has no entry for this threshold; do not invent the value or the link target until a human verifies the current rule at belastingdienst.nl. -->
+For a **Suppletie**, the list also says which route the Belastingdienst requires. The limit is €1,000 of VAT ([`sources/nl-vat-corrections.yaml#suppletie.next_return_threshold_eur`](https://github.com/silvanrijnberk/mycompanydesk-docs/blob/main/sources/nl-vat-corrections.yaml)): €1,000 or less may go into your next regular return, more than €1,000 needs a formal suppletieaangifte. MyCompanyDesk tests this per corrected period and adds up all suppletie corrections on that period, so a line of €600 and one of €700 count as €1,300 together. Did you declare too little VAT? Then file the suppletie within 8 weeks of finding the error ([`sources/nl-vat-corrections.yaml#suppletie.deadline_after_discovery_weeks`](https://github.com/silvanrijnberk/mycompanydesk-docs/blob/main/sources/nl-vat-corrections.yaml)). You can correct up to 5 years after the year the correction relates to ([`sources/nl-vat-corrections.yaml#suppletie.correction_window_years`](https://github.com/silvanrijnberk/mycompanydesk-docs/blob/main/sources/nl-vat-corrections.yaml)).
 
 ### Company car private use
 
 When you deduct VAT on a company car, you must correct for private use at the end of the year. When you book car costs, the Corrections tab shows a suggested **Private use of car** row; **Calculate** opens the correction:
 
-- Choose between a flat-rate correction based on the car's list price, or an actual-use correction based on a complete trip log.
-- The flat-rate percentage depends on whether the car is older than the threshold age or was bought without VAT deduction.
+- Choose between a flat-rate correction based on the car's list price, or an actual-use correction based on a complete trip log (**I keep a complete trip log**).
+- The flat rate is 2.7% of the list price including VAT and BPM ([`sources/nl-vat-corrections.yaml#private_car_use.standard_pct_of_catalogue_value`](https://github.com/silvanrijnberk/mycompanydesk-docs/blob/main/sources/nl-vat-corrections.yaml)). It drops to 1.5% when the private use takes place later than 4 years after the year you started using the car, or when the car was bought without VAT deduction, for example under the margin scheme or from a private seller ([`sources/nl-vat-corrections.yaml#private_car_use.reduced_applies_when`](https://github.com/silvanrijnberk/mycompanydesk-docs/blob/main/sources/nl-vat-corrections.yaml)). A car first used in 2021 therefore uses 2.7% up to and including 2025 and 1.5% from 2026. For the lower rate, turn on **Car older than 5 years or bought without VAT deduction**.
 
-The correction is rolled into the period totals on the Return tab.
-
-<!-- TODO(source-missing): The Dutch flat-rate percentages for company-car private-use VAT correction and the age threshold are not yet in sources/. Do not quote the values in docs until a human verifies the current rules at belastingdienst.nl. -->
+The suggested row only appears in the last period of the year (Q4, M12 or the annual return), because the correction belongs in the last return of the year ([`sources/nl-vat-corrections.yaml#private_car_use.declared_in`](https://github.com/silvanrijnberk/mycompanydesk-docs/blob/main/sources/nl-vat-corrections.yaml)). The correction is rolled into the period totals on the Return tab.
 
 ## Transactions tab
 
