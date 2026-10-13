@@ -19,4 +19,4 @@ Rechnungsstatus erklärt:
 
 Löschen erfolgt in Stufen: aus aktiv wird Archiviert, aus Archiviert wird Papierkorb, und aus dem Papierkorb wird endgültig gelöscht. Sie können die Rechnung aus dem Archiv oder dem Papierkorb wiederherstellen, solange sie nicht endgültig gelöscht ist. Stornieren ist anders: damit markieren Sie eine gesendete oder bezahlte Rechnung als storniert, sie bleibt aber in der Liste sichtbar.
 
-Tipp: Nutzen Sie die Statusfilter, um zuerst Offen und Überfällig zu sehen.
+Tipp: Nutzen Sie die Statusfilter, um zuerst Noch zu versenden und Überfällig zu sehen.

@@ -19,4 +19,4 @@ Invoice statuses explained:
 
 Deleting an invoice is a staged action: from active it goes to Archived, then to Trash, and only then is permanently removed. You can restore it from Archive or Trash while it is still in either stage. Canceling is different: it marks a sent or paid invoice as Canceled but keeps it in the list.
 
-Tip: Use invoice filters to focus on Open and Overdue first.
+Tip: Use invoice filters to focus on To send and Overdue first.

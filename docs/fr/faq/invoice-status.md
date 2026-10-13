@@ -19,4 +19,4 @@ Statuts de facture expliqués :
 
 La suppression se fait par paliers : actif devient Archivé, archivé devient Corbeille, et corbeille devient une suppression définitive. Vous pouvez restaurer la facture depuis l'archive ou la corbeille tant qu'elle n'est pas définitivement supprimée. L'annulation est différente : elle marque une facture envoyée ou payée comme Annulée, mais elle reste visible dans la liste.
 
-Astuce : utilisez les filtres de statut pour afficher d'abord Ouvert et En retard.
+Astuce : utilisez les filtres de statut pour afficher d'abord À envoyer et En retard.

@@ -19,4 +19,4 @@ Factuurstatussen uitgelegd:
 
 Verwijderen gaat in stappen: van actief naar Gearchiveerd, dan naar Prullenbak, en pas daarna definitief weg. Je kunt hem uit het Archief of de Prullenbak terughalen zolang hij nog niet definitief verwijderd is. Annuleren werkt anders: daarmee markeer je een verstuurde of betaalde factuur als Geannuleerd, maar hij blijft in de lijst staan.
 
-Tip: Gebruik de statusfilters om eerst Open en Achterstallig te zien.
+Tip: Gebruik de statusfilters om eerst Nog versturen en Achterstallig te zien.
