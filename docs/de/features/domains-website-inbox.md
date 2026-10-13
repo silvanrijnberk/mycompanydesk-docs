@@ -1,12 +1,12 @@
 ---
 title: Domains, Website und Posteingang
-description: "Eigene Domains, die gehostete Unternehmenswebsite und das gemeinsame Postfach kommen als ein Bündel, hinter custom_domains und public_business_page."
+description: "Eigene Domains, die gehostete Unternehmenswebsite und das gemeinsame Postfach: was in Desk und Office enthalten ist und wie sie zusammenarbeiten."
 last_verified: 2026-10-09
 ---
 
 # Domains, Website und Posteingang
 
-> **Status: Pre-Launch.** Alle drei Features auf dieser Seite werden zusammen als Bundle ausgerollt. Sie werden durch die `custom_domains`- und `public_business_page`-Feature-Flags gesteuert und werden noch ausgerollt. Eigene Domains und der volle Posteingang gehören zu Office; die Website unter einer mycompanydesk.site-Adresse und ein Posteingang zum Lesen und Antworten sind in Desk enthalten. Das hier beschriebene Verhalten entspricht der Codebasis vom 2026-05-09; falls ein Bildschirm in Ihrem Workspace anders aussieht, wurde das Bundle dort noch nicht aktiviert.
+> **Für alle verfügbar.** Die Website unter einer kostenlosen mycompanydesk.site-Adresse und ein Posteingang zum Lesen und Antworten sind in Desk enthalten. Eigene Domains und der volle Posteingang sind in Office enthalten.
 
 Eigene Domains, die gehostete Unternehmenswebsite und der gemeinsame E-Mail-Posteingang bilden ein Produkt. Der Grund: Sie teilen sich den Zustand. Dieselbe `domains`-Zeile, die beweist, dass Sie `acme.de` kontrollieren, macht `acme.de` auch zur URL Ihrer Website und sorgt dafür, dass `info@acme.de` E-Mails empfangen kann. Es gibt einen Onboarding-Ablauf, einen Einstellungsbaum und einen Ort in der App, um all das zu verwalten.
 
@@ -451,7 +451,7 @@ Dieses Bundle ist die **Empfangsseite**. Ausgehende E-Mails -- Rechnungsversand,
 - **CNAME-Modus hat keine E-Mail.** E-Mail-Routing erfordert eine vollständige Cloudflare-Zone, die nur der Nameserver-Modus bietet.
 - **Der Assistent verweigert das Überschreiben eines bestehenden Drittanbieter-MX.** Wenn Ihr Apex bereits auf Google Workspace oder Microsoft 365 zeigt, gibt `quickEnableInbox` `apexMx.status = 'conflict'` zurück und Sie müssen wählen: MX zu Cloudflare migrieren oder bei Ihrem bestehenden Anbieter bleiben und den gebündelten Posteingang überspringen.
 - **Reservierte Subdomains.** `app`, `admin`, `api`, `www`, `mail`, `support`, `portal`, `dashboard` und eine Handvoll anderer sind auf Workspace-Slug-Ebene gesperrt.
-- **Pre-Launch.** Das Bundle wird durch `custom_domains` und `public_business_page` feature-gesteuert. Workspaces ohne diese Flags sehen die Upgrade-Aufforderung anstelle des Editors.
+- **Ihr Abo bestimmt, was Sie sehen.** Ist etwas nicht in Ihrem Abo enthalten, sehen Sie eine Upgrade-Schaltfläche anstelle des Editors.
 
 ## Verwandt
 

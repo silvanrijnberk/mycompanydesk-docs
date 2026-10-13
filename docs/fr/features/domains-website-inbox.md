@@ -1,12 +1,12 @@
 ---
 title: Domaines, site web et boite de reception
-description: "Domaines personnalisés, site vitrine hébergé et boîte partagée arrivent en un seul lot, derrière custom_domains et public_business_page."
+description: "Domaines personnalisés, site vitrine hébergé et boîte partagée : ce qui est inclus dans Desk et Office et comment ils fonctionnent ensemble."
 last_verified: 2026-10-09
 ---
 
 # Domaines, site web et boite de reception
 
-> **Statut : pre-lancement.** Les trois fonctionnalites de cette page sont deployees ensemble en un seul lot. Elles sont gerees par les flags `custom_domains` et `public_business_page` et sont encore en cours de déploiement. Les domaines personnalisés et la boîte de réception complète relèvent d'Office ; le site web sur une adresse mycompanydesk.site et une boîte de réception pour lire et répondre sont inclus dans Desk. Le comportement decrit ici correspond a la base de code au 2026-05-09 ; si un ecran semble different dans votre espace de travail, le lot n'y a pas encore ete active.
+> **Disponible pour tous.** Le site web sur une adresse mycompanydesk.site gratuite et une boîte de réception pour lire et répondre sont inclus dans Desk. Les domaines personnalisés et la boîte de réception complète sont inclus dans Office.
 
 Les domaines personnalises, le site web d'entreprise heberge et la boite de reception e-mail partagee forment un seul produit. La raison : ils partagent l'etat. La meme ligne `domains` qui prouve que vous contrôlez `acme.fr` fait aussi de `acme.fr` l'URL de votre site web et permet a `info@acme.fr` de recevoir des e-mails. Il y a un flux d'intégration, un arbre de parametres et un endroit dans l'application pour tout gerer.
 
@@ -449,7 +449,7 @@ Ce lot correspond au côte **reception**. Les e-mails sortants -- envoi de factu
 - **Le mode CNAME n'a pas d'e-mail.** Le routage des e-mails necessite une zone Cloudflare complete, ce que seul le mode nameserver fournit.
 - **L'assistant refuse d'ecraser un MX tiers existant.** Si votre apex pointe deja vers Google Workspace ou Microsoft 365, `quickEnableInbox` retourne `apexMx.status = 'conflict'` et vous devez choisir : migrer le MX vers Cloudflare, ou rester chez votre fournisseur existant et sauter la boite de reception integree.
 - **Sous-domaines reserves.** `app`, `admin`, `api`, `www`, `mail`, `support`, `portal`, `dashboard` et quelques autres sont bloques au niveau du slug de l'espace de travail.
-- **Pre-lancement.** Le lot est controle par les flags `custom_domains` et `public_business_page`. Les espaces de travail sans ces flags voient l'invitation de mise a niveau au lieu de l'editeur.
+- **Votre abonnement détermine ce que vous voyez.** Si une fonction n'est pas incluse dans votre abonnement, vous voyez un bouton de mise à niveau au lieu de l'éditeur.
 
 ## Voir aussi
 

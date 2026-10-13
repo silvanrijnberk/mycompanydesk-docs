@@ -1,12 +1,12 @@
 ---
 title: Domeinen, website en inbox
-description: "Eigen domeinen, de gehoste bedrijfswebsite en de gedeelde inbox komen als een bundel, achter de vlaggen custom_domains en public_business_page."
+description: "Eigen domeinen, de gehoste bedrijfswebsite en de gedeelde inbox: wat er in Desk en Office zit en hoe ze samenwerken."
 last_verified: 2026-10-11
 ---
 
 # Domeinen, website en inbox
 
-> **Status: pre-launch.** Alle drie de features op deze pagina rollen samen uit als een bundel. Ze worden beheerd door de `custom_domains` en `public_business_page` feature flags en worden nog uitgerold. Eigen domeinen en de volledige inbox horen bij Office; de website op een mycompanydesk.site-adres en de inbox om te lezen en te beantwoorden zitten in Desk. Het gedrag dat hier beschreven staat komt overeen met de codebase per 2026-05-09; als een scherm er in jouw werkruimte anders uitziet, is de bundel daar nog niet ingeschakeld.
+> **Beschikbaar voor iedereen.** De website op een gratis mycompanydesk.site-adres en de inbox om te lezen en te beantwoorden zitten in Desk. Eigen domeinen en de volledige inbox zitten in Office.
 
 Eigen domeinen, de gehoste bedrijfswebsite en de gedeelde e-mailinbox vormen samen een product. De reden: ze delen status. Dezelfde `domains`-rij die bewijst dat jij `acme.nl` beheert, maakt `acme.nl` ook de URL van je website en zorgt dat `info@acme.nl` mail kan ontvangen. Er is een onboarding-flow, een instellingenstructuur en een plek in de app om het allemaal te beheren.
 
@@ -449,7 +449,7 @@ Deze bundel is de **ontvangstkant**. Uitgaande e-mail -- factuurverzending, heri
 - **CNAME-modus heeft geen e-mail.** E-mailroutering vereist een volledige Cloudflare-zone, wat alleen nameserver-modus biedt.
 - **De wizard weigert een bestaande externe MX te overschrijven.** Als je apex al naar Google Workspace of Microsoft 365 wijst, retourneert `quickEnableInbox` `apexMx.status = 'conflict'` en moet je kiezen: migreer MX naar Cloudflare, of blijf bij je bestaande provider en sla de gebundelde inbox over.
 - **Gereserveerde subdomeinen.** `app`, `admin`, `api`, `www`, `mail`, `support`, `portal`, `dashboard` en een handvol andere zijn geblokkeerd op werkruimte-slug-niveau.
-- **Pre-launch.** De bundel is feature-gated door `custom_domains` en `public_business_page`. Werkruimtes zonder deze flags zien de upgrade-prompt in plaats van de editor.
+- **Abonnement bepaalt wat je ziet.** Zit iets niet in jouw abonnement, dan zie je een knop om over te stappen in plaats van de editor.
 
 ## Gerelateerd
 

@@ -1,12 +1,12 @@
 ---
 title: Domains, Website, and Inbox
-description: "Custom domains, the hosted business website and the shared inbox ship as one pre-launch bundle behind the custom_domains and public_business_page flags."
+description: "Custom domains, the hosted business website and the shared inbox: what is included in Desk and Office and how they work together."
 last_verified: 2026-10-09
 ---
 
 # Domains, Website, and Inbox
 
-> **Status: pre-launch.** All three features in this page roll out together as a single bundle. They are gated by the `custom_domains` and `public_business_page` feature flags and are still being rolled out. Custom domains and the full inbox belong to Office; the website on a mycompanydesk.site address and an inbox for reading and replying are included in Desk. Behaviour described here matches the codebase as of 2026-05-09; if a screen looks different in your workspace, the bundle has not been enabled there yet.
+> **Available to everyone.** The website on a free mycompanydesk.site address and an inbox for reading and replying are included in Desk. Custom domains and the full inbox are included in Office.
 
 Custom domains, the hosted business website, and the shared email inbox ship as one product. The reason: they share state. The same `domains` row that proves you control `acme.nl` also makes `acme.nl` your website's URL and lets `info@acme.nl` start receiving mail. There is one onboarding flow, one settings tree, and one place in the app to manage all of it.
 
@@ -449,7 +449,7 @@ This bundle is the **receiving** side. Outgoing email — invoice delivery, remi
 - **CNAME mode has no email.** Email routing requires a full Cloudflare zone, which only nameserver mode provides.
 - **The wizard refuses to overwrite an existing third-party MX.** If your apex already points at Google Workspace or Microsoft 365, `quickEnableInbox` returns `apexMx.status = 'conflict'` and you have to choose: migrate MX to Cloudflare, or stay on your existing provider and skip the bundled inbox.
 - **Reserved subdomains.** `app`, `admin`, `api`, `www`, `mail`, `support`, `portal`, `dashboard` and a handful of others are blocked at the workspace-slug level.
-- **Pre-launch.** The bundle is feature-gated by `custom_domains` and `public_business_page`. Workspaces without those flags see the upgrade prompt instead of the editor.
+- **Your plan decides what you see.** If something is not in your plan, you see an upgrade button instead of the editor.
 
 ## Related
 
