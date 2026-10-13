@@ -1,7 +1,7 @@
 ---
 title: Cookies et analytics
 description: "Comment MyCompanyDesk utilise les cookies, le stockage local, les analytics et les enregistrements de session, et comment changer votre choix."
-last_verified: 2026-09-28
+last_verified: 2026-10-13
 ---
 
 # Cookies et analytics
@@ -10,21 +10,23 @@ Cette page explique comment MyCompanyDesk utilise les cookies, le stockage local
 
 ## Site marketing
 
-Le site marketing affiche une bannière de consentement aux cookies lors de votre première visite. Cette bannière demande si nous pouvons placer un stockage analytics. Vous pouvez modifier votre choix à tout moment via la bannière.
+Le site marketing affiche une bannière de consentement aux cookies lors de votre première visite. Cette bannière demande si nous pouvons placer un stockage analytics. Votre choix est enregistré dans votre navigateur. Pour le modifier plus tard, effacez les données du site marketing dans votre navigateur ; la bannière réapparaît lors de votre visite suivante.
 
-L'analytics avec identifiant est soumis à consentement (opt-in). Sans votre consentement, nous comptons seulement, de façon anonyme, combien de fois une page est consultée et par quel site ou moteur de recherche les visiteurs arrivent. Pour cela, nous ne stockons rien sur votre appareil, n'utilisons aucun identifiant et ne faisons aucun enregistrement. Votre adresse IP n'est pas conservée. Choisir "Uniquement essentiel" ne laisse donc aucune trace analytics sur votre appareil.
+L'analytics avec identifiant est soumis à consentement (opt-in). Sans votre consentement, nous comptons seulement, de façon anonyme, combien de fois une page est consultée, par quel site ou moteur de recherche les visiteurs arrivent et quel bouton vers l'application ou la boutique d'applications est cliqué. Pour cela, nous ne stockons rien sur votre appareil, n'utilisons aucun identifiant et ne faisons aucun enregistrement. Votre adresse IP n'est pas conservée. Choisir **Essentiels uniquement** ne laisse donc aucune trace analytics sur votre appareil.
 
 Si vous acceptez, le site démarre l'analytics et stocke un identifiant analytics anonyme dans le `localStorage` de votre navigateur sous la clé `mcd_phid`. Cet identifiant sert uniquement à comprendre comment les visiteurs naviguent sur le site. Il n'est pas lié à votre compte ou à votre adresse e-mail.
 
 Avec votre consentement, nous pouvons également enregistrer des sessions de votre visite sur le site marketing. Ces enregistrements nous aident à voir où le site peut s'améliorer. Tout ce que vous tapez dans les champs de saisie est masqué dans ces enregistrements et n'est pas lisible pour nous. Les données sont pseudonymisées.
 
-Si vous refusez plus tard via la bannière, ce comptage anonyme continue simplement : aucun identifiant analytics n'est stocké et aucun enregistrement n'est fait. Si votre navigateur envoie un signal Do Not Track (DNT), nous ne mesurons rien du tout, pas même ce comptage anonyme. La bannière peut toutefois toujours apparaître, car elle couvre également les cookies non-analytics.
+Si vous refusez (avec **Essentiels uniquement**, ou en fermant la bannière avec Échap), ce comptage anonyme continue simplement : aucun identifiant analytics n'est stocké et aucun enregistrement n'est fait. Si votre navigateur envoie un signal Do Not Track (DNT), nous ne mesurons rien du tout, pas même ce comptage anonyme. La bannière peut toutefois toujours apparaître, car elle couvre également les cookies non-analytics.
 
 ## Du site marketing vers l'application
 
-Lorsque vous cliquez depuis le site marketing vers l'application, le site marketing peut ajouter un paramètre `phid` éphémère. L'application supprime ce paramètre immédiatement après le chargement et ne le conserve pas dans l'URL. Il sert uniquement à relier la même visite anonyme à la session de l'application, afin que nous puissions voir si le site aide les gens à s'inscrire.
+Si vous avez donné votre consentement et cliquez depuis le site marketing vers l'application, le site marketing ajoute un paramètre `phid` éphémère. L'application supprime ce paramètre immédiatement après le chargement et ne le conserve pas dans l'URL. Il sert uniquement à relier la même visite anonyme à la session de l'application, afin que nous puissions voir si le site aide les gens à s'inscrire.
 
 Le paramètre n'est considéré comme fiable que si vous venez réellement de notre propre site marketing. Les liens falsifiés ou transférés sont ignorés.
+
+Un lien vers l'application ou vers une boutique d'applications transmet aussi la façon dont vous nous avez trouvés : le site qui vous a envoyé (sans la partie après le point d'interrogation), la page d'arrivée, d'éventuels codes de campagne et la langue de la page. Il ne contient aucun identifiant et rien n'est stocké sur votre appareil, c'est pourquoi cela se fait aussi sans consentement ; pas si votre navigateur envoie Do Not Track. L'application retire aussi ce paramètre de l'URL immédiatement. Si vous vous inscrivez, nous conservons cette origine avec votre nouveau compte, pour savoir quels canaux amènent de nouveaux utilisateurs.
 
 ## Dans l'application
 
@@ -32,7 +34,8 @@ L'application n'affiche **pas** de bannière de cookies. Elle est conçue pour �
 
 - L'état analytics réside dans le `sessionStorage`, pas dans les cookies. Il survit aux rechargements au sein du même onglet, mais est supprimé lorsque vous fermez l'onglet.
 - L'application respecte le signal Do Not Track du navigateur.
-- Aucun enregistrement de session n'est effectué.
+- L'enregistrement de session est désactivé dans l'application, avec une exception : pendant les 30 premiers jours d'un nouvel espace de travail, nous enregistrons les sessions pour voir où les nouveaux utilisateurs bloquent. Tout ce que vous tapez dans les champs de saisie est masqué, tout comme les montants, les quantités, les noms et les autres textes de vos listes. Rien n'est enregistré lorsqu'un comptable travaille dans le dossier d'un client, dans la démo, ou si votre navigateur envoie Do Not Track.
+- Aucune de nos mesures d'audience ne tourne sur les sites que vous publiez avec MyCompanyDesk ni dans le portail client.
 - Une fois connecté, l'application vous identifie à l'aide de votre véritable identifiant utilisateur, afin que les événements ultérieurs soient associés au même compte.
 
 Cela signifie que les pages vues anonymes dans l'application ne sont pas reliées d'une visite à l'autre. L'entonnoir inscription → client payant est principalement mesuré par des événements côté serveur liés à votre identifiant utilisateur, et non par le stockage du navigateur.
@@ -46,7 +49,7 @@ Cela signifie que les pages vues anonymes dans l'application ne sont pas reliée
 ## Vos choix
 
 - Utilisez la bannière de cookies sur le site marketing pour accepter ou refuser le stockage analytics.
-- Activez Do Not Track dans votre navigateur pour empêcher le stockage des identifiants analytics.
+- Activez Do Not Track dans votre navigateur pour empêcher le stockage des identifiants analytics et l'enregistrement des sessions.
 - Effacez les cookies et le stockage local pour mycompanydesk.nl / mycompanydesk.com dans votre navigateur pour supprimer les identifiants stockés.
 
 Pour toute question, contactez [support@mycompanydesk.nl](mailto:support@mycompanydesk.nl).

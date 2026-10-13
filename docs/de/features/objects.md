@@ -1,173 +1,137 @@
 ---
-title: "Objekte & Vermögenswerte"
-description: "Verwalten Sie Mietobjekte, Fahrzeuge, Ausrüstung und andere Anlagen über den gesamten Lebenszyklus. Aktivieren unter Unternehmen, Funktionen."
+title: "Objekte"
+description: "Gebäude, Fahrzeuge, Maschinen und andere Objekte verwalten: Wert, Abschreibung, Miete, Kosten und WOZ. In Office, aktivierbar unter Module."
 ---
 
-# Objekte & Vermögenswerte
+# Objekte
 
-Verfolgen Sie Mietobjekte, Fahrzeuge, Ausstattung und andere Geschäftsvermögenswerte mit vollständigem Lebenszyklus-Management.
+Behalten Sie im Blick, was Ihr Unternehmen besitzt, was es wert ist und was es einbringt: vermietete Gebäude und Garagen, Ihr Firmenwagen, Maschinen, Werkzeug und andere Vermögenswerte.
 
 ::: info
-Das Objektmodul ist optional. Aktivieren Sie es unter **Unternehmen > Funktionen**, wenn Sie es nicht in der Navigation sehen.
+**Objekte** gehört zum Office-Abonnement. Sehen Sie es nicht in der Navigation, aktivieren Sie **Vermögenswerte & Objekte** unter **Einstellungen › Module**.
 :::
 
 ## Übersicht
 
-Das Objektmodul ist für Unternehmen konzipiert, die physische Vermögenswerte verwalten — insbesondere Vermietungsunternehmen, Immobilienverwalter und Geräteverleihdienste. Jedes Objekt repräsentiert einen Vermögenswert, den Sie besitzen oder verwalten.
+Die Seite **Objekte** zeigt alle Ihre Objekte, gruppiert nach Art (Gebäude, Fahrzeuge, Werkzeug und Maschinen, Einrichtung, Elektronik, Sonstiges). Oben stehen die Kennzahlen: **Aktueller Wert**, **Gesamter Mietwert**, was **Steht leer**, **Kosten dieses Jahr** und **Abschreibung dieses Jahr**.
 
-## Objekttypen
+## Typen
 
-| Typ | Anwendungsfall |
+Beim Anlegen wählen Sie einen Typ: **Immobilie / Garage**, **Wohnung**, **Büro**, **Einzelhandel**, **Fahrzeug**, **Maschine**, **Ausrüstung**, **Möbel**, **Elektronik** oder **Sonstige**. Immobilien, Wohnungen, Büros und Ladenflächen erhalten eine Adresse und einen WOZ-Verlauf.
+
+## Status
+
+| Status | Bedeutung |
 |---|---|
-| **Immobilie** | Mietwohnungen, Büros, Gewerbeflächen |
-| **Fahrzeug** | PKW, LKW, Transporter, Baufahrzeuge |
-| **Maschine** | Industrieausrüstung, Werkzeuge, Generatoren |
-| **Sonstiges** | Jeder andere Vermögenswerttyp |
-
-## Objektstatus
-
-| Status | Beschreibung |
-|---|---|
+| **Aktiv** | In Gebrauch (Standard für ein neues Objekt) |
 | **Verfügbar** | Bereit zur Vermietung oder Nutzung |
-| **Vermietet** | Derzeit an einen Kunden vermietet |
-| **Inaktiv** | Nicht verfügbar (Wartung, ausgemustert) |
+| **Belegt** | In Gebrauch oder vermietet |
+| **Wartung** | Wegen Wartung vorübergehend nicht verfügbar |
+| **Inaktiv** | Nicht in Gebrauch |
+| **Verkauft** / **Entsorgt** | Nicht mehr Teil Ihres Unternehmens |
 
-## Objekt erstellen
+Ein Objekt mit laufendem Mietvertrag erscheint in der Liste als **Vermietet**.
 
-1. Gehen Sie zu **Objekte > Neues Objekt**
-2. Füllen Sie aus:
-   - **Name** - Eine eindeutige Bezeichnung (z. B. „Wohnung 3B“ oder „Bagger CAT 320“)
-   - **Typ** - Immobilie, Fahrzeug, Maschine oder Sonstiges
+## Objekt hinzufügen
+
+1. Öffnen Sie **Objekte** und klicken Sie auf **Objekt hinzufügen**
+2. Geben Sie den **Namen** ein (zum Beispiel „Garage Utrecht, Box 12“) und wählen Sie den **Typ**
 3. Klicken Sie auf **Speichern**
 
-::: tip Weitere Optionen
-Das Formular für neue Objekte fragt standardmäßig nur nach dem Namen. Über **Weitere Optionen** fügen Sie eine Beschreibung hinzu, und über **Anschaffung und Status** legen Sie Anschaffungsdatum, Preis, aktuellen Wert, USt.-Regelung und Status fest. Diese Felder sind für das Erstellen des Objekts nicht erforderlich; der Status ist standardmäßig verfügbar. Die USt.-Regelung startet mit Umsatzsteuer; beim Typ Apartment (Wohnraum) startet sie ohne Umsatzsteuer. Ihre eigene Auswahl im Formular gewinnt immer, und bestehende Objekte behalten, was für sie gespeichert wurde.
+::: tip Weitere Angaben
+Nur der Name ist Pflicht. Den Rest füllen Sie bei Bedarf in den einklappbaren Abschnitten aus: **Adresse / Standort** (bei Gebäuden), **Details** (Referenz, Beschreibung, Standardmiete), **Wert** (Kaufdatum, Kaufpreis, aktueller Wert, Verkaufsdatum, Erlös und USt-Regime) und **Status**. Das USt-Regime beginnt mit **Mit USt**; bei einer **Wohnung** (Wohnraum) beginnt es mit **Ohne USt**. Ihre eigene Wahl im Formular gilt immer, und bestehende Objekte behalten, was für sie gespeichert ist.
 :::
 
-## Objektdetailseite
+## Die Objektseite
 
-Die Detailseite zeigt:
+Die Seite eines Objekts zeigt:
 
-- Vermögenswertinformationen und Typ
-- Aktueller Status
-- **Gesamtumsatz**: tatsächlicher Umsatz aus bezahlten Rechnungen für dieses Objekt, einschließlich Miete, Servicekosten, Einzelrechnungen und Verkaufsrechnungen, die ihm zugeordnet sind
-- **Aktive Verträge**: Anzahl der derzeit aktiven Verträge zu diesem Objekt
-- **WOZ-Verlauf** (bei Immobilien) — jährliche WOZ-Werte, die für die Box-3-Berechnung verwendet werden
-- Verknüpfte Verträge
-- Mietverlauf
-- **Rechnungen**: jede Rechnung, die in den Gesamtumsatz einfließt, mit Status und Betrag ohne MwSt.
+- Oben den **Gesamtumsatz** und den Status, mit der Anzahl aktiver Verträge
+- Die Kerndaten: Adresse (mit Kartenlink), Standardmiete, aktueller Mieter und die Anschaffung
+- **Verlauf**: Verträge, Rechnungen, Wartung und Dokumente in einer Zeitleiste
+- **WOZ-Verlauf** (bei Gebäuden)
+- **Anlagegut**: Anschaffungswert, Abschreibung und Buchwert, sobald eine als Investition gebuchte Anschaffung mit dem Objekt verknüpft ist
+- **Kilometererfassung** (bei Fahrzeugen mit Fahrten)
+- **Finanzübersicht**: **Gesamtumsatz**, **Gesamtkosten**, **Netto-Cashflow** und eine Aufteilung **Pro Jahr**
+- **Aufgaben**, zum Beispiel ein fehlender WOZ-Wert für Box 3
 
-### Diesem Objekt zugeordnete Rechnungen
+### Umsatz und Rechnungen
 
-Die Registerkarte Rechnungen auf der Objektdetailseite listet jede Rechnung auf, die zum Gesamtumsatz beiträgt:
+Der **Gesamtumsatz** zählt alle bezahlten Rechnungen, die mit dem Objekt verknüpft sind, ohne MwSt.:
 
-- Rechnungen, die aus einem mit diesem Objekt verknüpften Vertrag erstellt wurden
-- Rechnungen, die direkt dem Objekt zugeordnet sind, zum Beispiel Servicekostenabrechnungen, Einzelrechnungen und Verkaufsrechnungen
+- Rechnungen aus einem Vertrag, der an diesem Objekt hängt
+- Rechnungen, die direkt mit dem Objekt verknüpft sind, etwa Servicekosten, Einzelrechnungen und Verkaufsrechnungen
 
-Jede Zeile zeigt Rechnungsnummer, Kunde, Datum, Status und den Betrag ohne MwSt. Ein Hinweis erklärt, dass die Summe alle bezahlten Rechnungen erfasst, während der Box-3-Bericht nur erhaltene Miete und das Datum des Geldeingangs verwendet. Die beiden Beträge können daher voneinander abweichen.
+Der Box-3-Bericht zählt nur erhaltene Miete und richtet sich nach dem Datum des Geldeingangs. Die beiden Beträge können daher abweichen; die Seite erklärt das ebenfalls.
 
-### Vertragszusammenfassung
+### Verlauf
 
-Oberhalb der Vertragsliste gibt eine Zusammenfassungszeile einen schnellen Überblick über den Vertragszustand des Objekts:
+Der **Verlauf** fasst Verträge, Rechnungen, Wartung und Dokumente in einer chronologischen Liste zusammen. Über **Hinzufügen** wählen Sie **Wartung erfassen** (Datum, Beschreibung, Kategorie, Kosten, durchgeführt von) oder **Dokument hinzufügen**. Wartung und Dokumente löschen Sie hier; einen Vertrag oder eine Rechnung verwalten Sie auf der jeweiligen Seite.
 
-- **Verträge gesamt**: mit diesem Objekt verknüpft
-- **Signierte Verträge**: wie viele vollständig unterzeichnet sind
-- **Monatlich aktiv**: kombinierter monatlicher Wert aller aktiven Verträge, normalisiert aus Verträgen mit unterschiedlicher Frequenz (wöchentlich, vierteljährlich, jährlich)
+Ein Vertrag, der noch auf eine Unterschrift wartet, zeigt seinen Signierstatus: **Nicht gesendet**, **Ausstehend**, **Teilweise signiert**, **Abgelaufen** oder **Beendet**. Ist der Vertrag signiert, sehen Sie wieder, ob er aktiv ist. Ältere Verträge, die nie für die digitale Signatur eingerichtet wurden, zeigen keinen Signierstatus.
 
-### WOZ-Verlauf (Immobilienobjekte)
+### WOZ-Verlauf (Gebäude)
 
-Bei Objekten des Typs **Immobilie** enthält die Detailseite einen Abschnitt zum WOZ-Verlauf. WOZ-Werte (Waardering Onroerende Zaken) sind die von der Gemeinde festgesetzten Immobilienwerte, die in der niederländischen Box-3-Steuerberechnung verwendet werden.
+Bei Immobilien, Wohnungen, Büros und Ladenflächen führt die Seite die WOZ-Werte pro Jahr. Box 3 verwendet den WOZ-Wert, der am 1. Januar des jeweiligen Jahres galt (der Stichtag).
 
-- **Sehen** Sie jährliche WOZ-Werte pro Jahr ein.
-- **Fügen Sie** neue Werte hinzu, indem Sie das Jahr und den von der Gemeinde festgesetzten WOZ-Wert eingeben.
-- Box 3 verwendet den WOZ-Wert mit Stichtag 1. Januar. Geben Sie den Wert ein, der zu Beginn des Steuerjahres gilt.
-- Wurden noch keine Werte eingetragen, zeigt der Abschnitt einen leeren Zustand mit der Aufforderung, den ersten hinzuzufügen.
+- Fügen Sie einen Wert mit Jahr und dem von der Gemeinde festgesetzten WOZ-Wert hinzu.
+- Hat das Objekt eine gültige niederländische Adresse und ist der Verlauf noch leer, ruft MyCompanyDesk die Werte selbst aus dem Kadaster ab. Mit **Aktualisieren** holen Sie jederzeit die neuesten Daten; diese Werte tragen das Label **Kadaster**.
+- Hat das Kadaster keine Daten für die Adresse (etwa bei einem Neubau), erscheint ein Hinweis und Sie tragen die Werte selbst ein.
 
-#### Kadaster-Anbindung
+Liegt ein WOZ-Verlauf aus dem Kadaster vor, zeigt die Karte zusätzlich einen **Geschätzten aktuellen Wert**: den letzten WOZ-Wert, fortgeschrieben mit dem Hauspreisindex des CBS für die Region des Objekts.
 
-Wenn Sie ein Immobilienobjekt mit einer gültigen niederländischen Adresse anlegen, kann MyCompanyDesk die WOZ-Historie direkt aus dem Kadaster importieren. Das spart manuelle Eingaben und liefert Ihnen dieselben Werte, die die Gemeinde hinterlegt hat.
+### Anlagegut und Bodemwaarde
 
-- **Automatischer Abruf**: ist die WOZ-Historie noch leer, ruft das System beim Öffnen der Detailseite die verfügbaren Werte aus dem Kadaster ab.
-- **Manuelles Aktualisieren**: klicken Sie auf **Aktualisieren**, um jederzeit die neuesten Kadaster-Daten abzurufen. Importierte Werte erhalten eine "Kadaster"-Quellenkennzeichnung.
-- **Fehlende Daten**: wenn das Kadaster für die Adresse keine Daten hat (zum Beispiel bei einem Neubau), erscheint ein Hinweis und Sie können die Werte manuell eingeben.
+Ist eine Anschaffung, die Sie als Investition abschreiben, mit dem Objekt verknüpft (verknüpfen Sie die Ausgabe über das Feld **Vermögenswert** im Ausgabenformular), zeigt der Block **Anlagegut**:
 
-#### Geschätzter aktueller Wert
+- **Anschaffungswert**: was Sie dafür bezahlt haben
+- **In der Bilanz**: der aktivierte geschäftliche Anteil, nach einem etwaigen nicht abziehbaren USt-Anteil und Privatnutzung
+- **Bisher abgeschrieben** und **Abschreibung dieses Jahr**
+- **Buchwert**: was noch in der Bilanz steht
+- Den Abschreibungsplan pro Kalenderjahr
 
-Bei Immobilien, für die eine WOZ-Historie aus dem Kadaster abgerufen wurde, projiziert MyCompanyDesk einen geschätzten aktuellen Marktwert. Diese Projektion nimmt das jüngste WOZ-Stichtagsdatum und wendet den CBS-PBK-Preisindex für die COROP-Region der Immobilie an. So erhalten Sie einen Wert, der die aktuelle Marktentwicklung widerspiegelt.
+Bei Gebäuden steht zusätzlich die **Bodemwaarde**: die gesetzliche Untergrenze auf Basis des WOZ-Werts, unter die der Buchwert eines Gebäudes nicht sinken darf. MyCompanyDesk ändert den Plan nicht stillschweigend. Liegt die Abschreibung unter der Untergrenze, sehen Sie **Zu weit abgeschrieben**; steht der Buchwert genau auf der Untergrenze, erhalten Sie einen Hinweis. Sie beheben das, indem Sie den Restwert der Anschaffung auf die Bodemwaarde setzen. Hat das Objekt genau eine Anschaffung, öffnet der Link **Öffnen Sie die Anschaffung, um den Restwert anzupassen** sie direkt. Fahrzeuge, Maschinen und andere Objekte, die keine Gebäude sind, haben keine Bodemwaarde.
 
-### Vermögensübersicht und Bodemwaarde (Gebäude-Mindestwert)
+### Verkauft oder veräußert
 
-Immobilienobjekte, die als Betriebsvermögen geführt werden, zeigen auf der Detailseite eine Vermögensübersicht:
+Verkaufen, entsorgen oder entnehmen Sie ein Objekt, tragen Sie das im Abschnitt **Wert** des Formulars ein:
 
-- **Anschaffungswert**: der Betrag, der für das Wirtschaftsgut gezahlt wurde.
-- **Aktivierter Wert**: der betriebliche Teil der aktivierten Kosten nach Anwendung des Abzugsanteils der Kategorie und eines etwaigen Privatnutzungsanteils. Dieser verwendet dieselbe Formel wie die Sollbuchung auf dem Anlagekonto in der Buchhaltung und der Abschreibungsplan (`apps/api/src/modules/ledger/posting-engine.js`), sodass die drei Stellen im Einklang bleiben.
-- **Kumulierte Abschreibung**: alles, was bisher abgeschrieben wurde.
-- **Abschreibung dieses Jahres**: der Abschreibungsbetrag für das laufende Kalenderjahr.
-- **Buchwert**: der verbleibende Wert in der Bilanz (aktivierter Wert abzüglich kumulierter Abschreibung).
-- **Bodemwaarde**: die gesetzliche Untergrenze, unter die der Buchwert eines Gebäudes nicht sinken darf. Sie basiert auf dem für die Immobilie erfassten WOZ-Wert.
+- **Verkaufsdatum**: das Datum, an dem das Objekt Ihr Unternehmen verlassen hat.
+- **Erlös (exkl. MwSt.)**: der erhaltene Betrag. Lassen Sie das Feld leer, wenn Sie ihn noch nicht kennen; tragen Sie 0 ein, wenn Sie das Objekt ohne Erlös entsorgt haben.
 
-Die Bodemwaarde steht bewusst neben dem Buchwert, weil die beiden nur zusammen sinnvoll sind. MyCompanyDesk ändert nicht stillschweigend die gebuchte Abschreibungsplanung; stattdessen warnt es, wenn der aktuelle Plan bereits unter die Untergrenze gerutscht ist, oder weist darauf hin, wenn der Buchwert die Untergrenze genau erreicht hat.
+Sobald das Verkaufsdatum gespeichert ist, zeigt der Block **Anlagegut** einen Teil **Verkauft oder veräußert** mit dem Datum, dem **Buchwert beim Verkauf**, dem **Erlös** und dem **Buchgewinn** oder **Buchverlust**. Ohne Erlös sehen Sie nur den abgeschriebenen Buchwert, mit dem Hinweis, dass sich Gewinn oder Verlust erst bestimmen lassen, wenn der Erlös bekannt ist.
 
-Erscheint eine Warnung, beheben Sie das, indem Sie den Restwert der Anschaffung auf die Bodemwaarde setzen. Wenn das Objekt nur eine Anschaffung hat, öffnet ein Link diese direkt, damit Sie oder Ihr Steuerberater die Anpassung vornehmen können.
+Der Block warnt auch, wenn der Abschreibungsplan noch Beträge nach dem Verkaufsdatum vorsieht. Diese landen weiter in Ihrer Gewinn- und Verlustrechnung, bis Sie die Abschreibungsdauer der Anschaffung anpassen.
 
-Diese Regel gilt nur für Gebäude (zum Beispiel Immobilie, Wohnung, Büro oder Laden). Fahrzeuge, Maschinen, Geräte und sonstige Wirtschaftsgüter ohne Gebäudecharakter haben keine Bodemwaarde-Untergrenze.
+## Mit Verträgen, Rechnungen und Ausgaben verknüpfen
 
-### Verkauft oder ausgesondert
-
-Wenn Sie ein Wirtschaftsgut verkaufen, verschrotten oder auf andere Weise aus dem Betrieb nehmen, erfassen Sie das im Abschnitt **Anschaffung und Status** des Objektformulars:
-
-- **Veräußerungsdatum:** das Datum, an dem das Wirtschaftsgut den Betrieb verlassen hat.
-- **Erlös (netto):** der erhaltene Betrag. Lassen Sie das Feld leer, wenn der Betrag noch nicht bekannt ist; tragen Sie 0 ein, wenn das Gut verschrottet wurde und kein Erlös erzielt wurde.
-
-Sobald ein Veräußerungsdatum gespeichert ist, zeigt die Objektdetailseite einen Block mit den Veräußerungsangaben:
-
-- das Veräußerungsdatum
-- der Buchwert bei Veräußerung
-- der Erlös, sofern erfasst
-- der Buchgewinn oder der Buchverlust
-
-Lassen Sie den Erlös leer, wird der Buchwert ausgewiesen, der abgeschrieben wurde, mit dem Hinweis, dass Buchgewinn oder Buchverlust erst ermittelt werden können, sobald der Erlös bekannt ist.
-
-Die Vermögensübersicht warnt Sie auch, wenn der Abschreibungsplan noch Beträge nach dem Veräußerungsdatum vorsieht. Abschreibungszeilen werden bei Aktivierung für die gesamte Laufzeit angelegt, sodass sie weiterhin in die Gewinn- und Verlustrechnung gelangen, es sei denn, Sie passen die Abschreibungsdauer der Anschaffung an.
-
-### Signierstatus der Verträge
-
-Jede Vertragszeile auf der Objektdetailseite zeigt nun eine Signierstatus-Badge neben der Aktiv/Pausiert-Badge. Die Farbgebung folgt der gleichen Zuordnung wie auf der Vertragsdetailseite:
-
-- **Signiert** (grün): alle Parteien haben unterzeichnet
-- **Teilweise signiert** (blau): einige Parteien haben unterzeichnet, andere noch nicht
-- **Gesendet** (gelb): die Signiereinladung wurde versendet, noch keine Unterschriften
-- **Abgelaufen** oder **Beendet** (rot): die Signieranfrage ist nicht mehr gültig
-
-Vollständig signierte Verträge zeigen ein kleines Augensymbol, das eine Inline-Vorschau des unterschriebenen Dokuments öffnet. So können Sie den abgeschlossenen Vertrag lesen, ohne die Objektseite zu verlassen.
-
-Altverträge, die vor der Einführung der E-Signing-Funktion angelegt wurden, zeigen keine Signier-Badge. Das System erkennt Altverträge auf dieselbe Weise wie auf der Vertragsdetailseite: Ein Vertrag benötigt Signierparteien, eine Vorlage oder Signierinhalte, damit eine Badge angezeigt wird.
-
-## Objekte mit Verträgen und Rechnungen verknüpfen
-
-Objekte lassen sich mit anderen MyCompanyDesk-Funktionen integrieren:
-
-- **Verträge** — Erstellen Sie einen Mietvertrag für ein Objekt mit Angabe des Mieters (Kunden) und der Bedingungen
-- **Rechnungen**: Rechnungen können direkt im Rechnungsformular einem Objekt zugeordnet werden oder über einen Mietvertrag verknüpft werden. Beide Wege fließen in den Gesamtumsatz des Objekts ein.
-- **Wiederkehrende Rechnungen** — Richten Sie automatische monatliche Mietabrechnungen pro Objekt ein
+- **Verträge**: Erstellen Sie einen Mietvertrag für ein Objekt, mit Mieter (Kunde) und Konditionen.
+- **Rechnungen**: Verknüpfen Sie eine Rechnung im Rechnungsformular direkt mit einem Objekt, oder lassen Sie sie aus einem Mietvertrag entstehen. Beides zählt zum Gesamtumsatz.
+- **Wiederkehrende Rechnungen**: Verknüpfen Sie eine wiederkehrende Rechnung mit einem Objekt für die automatische Mietabrechnung.
+- **Ausgaben**: Verknüpfen Sie Kosten über das Feld **Vermögenswert** mit einem Objekt; sie zählen dann zu dessen Kosten.
 
 ## Filtern
 
-Filtern Sie Ihre Objekte nach:
+Filtern Sie die Liste nach:
 
-- **Typ** — Immobilie, Fahrzeug, Maschine, Sonstiges
-- **Status** — Verfügbar, Vermietet, Inaktiv
-- **Suche** — Nach Name oder Beschreibung finden
+- **Art**: die Gruppe (zum Beispiel Gebäude oder Fahrzeuge)
+- **Typ**: der Objekttyp
+- **Status**: ein Status, oder **Leer (mit Miete)** für Objekte mit Mietpreis, die derzeit nicht vermietet sind
+- **Suchen** nach Name oder Beschreibung
+
+Mit **Ansicht** wechseln Sie zwischen aktiven, archivierten und gelöschten Objekten.
 
 ## Massenaktionen
 
-- **Status ändern** — Verfügbarkeit in großem Umfang aktualisieren
-- **Archivieren** — Ins Archiv verschieben
-- **Löschen** — Objekte entfernen
+- **Archivieren** und **Löschen** (in den Papierkorb) in der aktiven Liste
+- **Wiederherstellen (aktiv)** und **In Papierkorb verschieben** im Archiv
+- **Wiederherstellen (Archiv)** und **Endgültig löschen** im Papierkorb
+
+Ein Objekt mit aktiven Verträgen lässt sich nicht löschen.
 
 ## Tipps
 
-- Verwenden Sie den Statusfilter, um schnell zu sehen, welche Vermögenswerte zur Vermietung verfügbar sind
-- Verknüpfen Sie jede Mietrechnung mit ihrem Objekt für eine vollständige finanzielle Nachverfolgung pro Vermögenswert
-- Richten Sie Verträge mit Wiederholung für automatische Mietabrechnung ein
-- Prüfen Sie die Objektkennzahlen oben auf der Seite für einen Verfügbarkeitsüberblick
+- Nutzen Sie den Filter **Leer (mit Miete)**, um schnell zu sehen, was Sie vermieten können
+- Verknüpfen Sie jede Mietrechnung und jeden Kostenposten mit dem passenden Objekt, damit Umsatz, Kosten und Netto-Cashflow pro Objekt stimmen
+- Nutzen Sie wiederkehrende Rechnungen oder Verträge für die automatische Mietabrechnung
+- Tragen Sie den WOZ-Wert zum 1. Januar für Ihre Box-3-Erklärung ein

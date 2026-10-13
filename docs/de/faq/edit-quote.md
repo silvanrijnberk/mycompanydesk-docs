@@ -14,3 +14,5 @@ So bearbeiten Sie ein Angebot:
 2. Klicken Sie auf „Bearbeiten“ (oder /quotes/{id}/edit)
 3. Aktualisieren Sie Kundendaten, Positionen, Notizen oder Daten
 4. Speichern Sie
+
+Kein „Bearbeiten“ zu sehen? Dann wurde das Angebot bereits angenommen, abgelehnt oder ist abgelaufen, es wurde schon in eine Rechnung oder Vereinbarung umgewandelt, liegt Ihrem Kunden zur Unterschrift vor oder befindet sich im Papierkorb. Duplizieren Sie das Angebot dann und passen Sie die Kopie an.

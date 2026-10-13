@@ -18,8 +18,8 @@ Ga naar **Instellingen** en open **Logo en kleur**. Deze pagina bepaalt je merki
 
 - **Weergavenaam:** de naam die klanten zien, als die afwijkt van je geregistreerde bedrijfsnaam.
 - **Merkkleur:** kies elke kleur, of begin met een van de voorinstellingen. Deze kleur geldt voor je website, nieuwsbrief, e-mails, facturen en offertes. Er verschijnt een waarschuwing als een kleur te licht is om leesbaar te blijven. Heb je in Factuurontwerp een eigen accentkleur gekozen? Dan volgen facturen, offertes, e-mails en de betaalpagina die kleur. Je kunt die accentkleur in één klik ook als merkkleur instellen.
-- **Logo:** upload een PNG, JPG of SVG. Voor fotologo's is er een achtergrondverwijderaar met één klik. Nog geen logo? Genereer er direct op deze pagina een uit je initialen en een achtergrondkleur.
-- **Livevoorbeeld:** een voorbeeldkop toont je logo en kleur samen, zodat je het resultaat ziet voordat een klant het ziet.
+- **Bedrijfslogo:** upload een SVG (aanbevolen), PNG of JPG, maximaal 2 MB. Voor fotologo's is er een achtergrondverwijderaar met één klik. Nog geen logo? Met **Logo maken uit tekst** maak je er op deze pagina een uit je initialen en een achtergrondkleur.
+- **Voorbeeld:** een voorbeeldkop toont je logo en kleur samen, zodat je het resultaat ziet voordat een klant het ziet.
 
 Wijzigingen worden automatisch opgeslagen.
 
@@ -27,14 +27,14 @@ Wijzigingen worden automatisch opgeslagen.
 
 Ga naar **Instellingen** en open **Factuurontwerp**. Dit is de ontwerpstudio voor je documenten: alle knoppen links, een live A4-voorbeeld rechts dat meebeweegt terwijl je klikt. Het voorbeeld rekent met je echte instellingen: de betaaltermijn, de offertegeldigheid en het volgende factuurnummer die erin staan zijn degene die jij hebt ingesteld.
 
-De snelste route is de knop **Genereer uit mijn huisstijl**: die bouwt een compleet ontwerp rond de merkkleur die je onder Logo en kleur hebt gekozen. Niet tevreden? **Probeer andere** wisselt naar een andere look. Alles blijft daarna aanpasbaar:
+De snelste route is **Maak een ontwerp uit mijn huisstijl** met de knop **Gebruik mijn huisstijl**: die bouwt een compleet ontwerp rond de merkkleur die je onder Logo en kleur hebt gekozen. Niet tevreden? **Probeer andere** wisselt naar een andere look. Alles blijft daarna aanpasbaar:
 
 - **Logo**: upload of vervang je logo direct in de studio (**Ander logo**). Zonder logo staat je bedrijfsnaam bovenaan, en je logo verschijnt ook in je e-mails en op je betaalpagina.
-- **Startpunt**: zes stijlvoorinstellingen: Klassiek, Modern, Botanisch, Atelier, Editorial en Blanco. Zodra je daarna iets aanpast, wordt het ontwerp je eigen variant.
+- **Startpunt**: zeven sjablonen: Klassiek, Modern, Compact, Statement, Editorial, Atelier en Botanisch. Zodra je daarna iets aanpast, wordt het ontwerp je eigen variant.
 - **Accentkleur**: je merkkleur staat standaard vooraan. Heb je een logo, dan verschijnen kleuren uit je logo als kant-en-klare stalen. Er is ook een set uitgekozen tinten, plus een eigen kiezer voor elke kleur. Een afwijkende accentkleur overschrijft je merkkleur op facturen, offertes, e-mails en de betaalpagina.
-- **Papiertint**: wit of een van de zachte gebroken-witte tinten (Crème, Greige, Zand, Mist).
+- **Papiertint**: Wit of een van de zachte gebroken-witte tinten (Crème, Greige, Zand, Mist).
 - **Lettertype**: een koplettertype (Marcellus, Playfair Display, Fraunces of Cormorant) en een tekstlettertype (Inter, Lato of EB Garamond).
-- **Thema / indeling**: de algemene opbouw van het document, plus de dichtheid (Compact, Normaal, Ruim). De indeling Botanisch heeft optioneel decoratief artwork dat je kunt uitzetten.
+- **Thema / indeling**: de algemene opbouw van het document, plus de **Regelafstand** (Compact, Normaal, Ruim). De indeling Botanisch heeft optioneel decoratief artwork dat je kunt uitzetten.
 - **Sjabloon per documentsoort**: elk soort document volgt je factuurontwerp, en waar een soort moet afwijken geef je het een eigen sjabloon. De werkbon is het voorbeeld: hij volgt je factuurindeling of krijgt een eigen ontwerp, en een werkbon heeft geen afsluitende tekst.
 - **Tekstgrootte**: Klein, Normaal of Groot voor de tekst van je document. Koppen en je bedrijfsnaam houden hun maat.
 - **Eigen briefpapier**: de studio begint met één keuze, onder **Opmaak**: **Ons ontwerp**, de kant met sjabloon, kleur en lettertype die in de opsomming hierboven staat, of **Eigen briefpapier**, het briefpapier van je drukker. De kanten gaan niet samen: onder je briefpapier komt de factuur in één kale klassieke opmaak, zonder sierwerk en zonder papiertint, en het ontwerp dat onder Ons ontwerp stond, blijft bewaard, dus terugwisselen kost niets. Briefpapier aanwezig? Laad het in als PDF, PNG of JPG, de volledige A4-pagina in portret. Het ontwerp meet de ruimte die het drukwerk boven en onder nodig heeft en houdt die vrij, zodat niets over je eigen drukwerk heen valt; pas de maat aan als de meting ernaast zit. **Adres van je klant**: zet het adres links of rechts op de pagina, zodat het gelijk loopt met het venster van je envelop. Staat je logo al in het briefpapier? Eén schakelaar laat het logo en de naam bovenin het document weg; je adres blijft altijd staan, want die is verplicht. Kleuren die uit het briefpapier zijn gehaald verschijnen als kant-en-klare swatches in de accentkleur, zodat kopjes en totaal bij het papier passen. Met **Alleen op de eerste pagina** aan (de standaard) draagt je briefpapier de eerste pagina, en zijn de volgende pagina's een wit vel met je naam of logo en een paginanummer. Zet de schakelaar uit om je briefpapier op elke pagina te zetten. Draagt het briefpapier de documenttitel al? Dan zet je per soort document de schakelaar aan ("Factuur staat al op het briefpapier"), en laat het document die titel weg; elke soort stel je apart in, dus een offerte houdt zijn eigen titel, ook als het papier al Factuur zegt.
@@ -43,11 +43,11 @@ De snelste route is de knop **Genereer uit mijn huisstijl**: die bouwt een compl
 
 **Ook op je factuur**: onder de knoppen staat een kaart met wat er op je factuur staat, maar wat je ergens anders instelt: je bedrijfsgegevens, je betaalmethoden, de betaaltermijn, de factuurnummering, de offertegeldigheid en je btw-instellingen. Elke regel laat de huidige waarde zien en opent de instellingenpagina waar die hoort; de terugknop daar brengt je weer terug naar de studio.
 
-Wijzigingen worden automatisch opgeslagen en zijn binnen een moment zichtbaar in het voorbeeld. Wil je terug naar de standaardlook? **Thema uitschakelen** zet je documenten terug op het standaardontwerp.
+Wijzigingen worden automatisch opgeslagen en zijn binnen een moment zichtbaar in het voorbeeld. Wil je terug naar de standaardlook? **Thema uitschakelen (terug naar standaard)** zet je documenten terug op het standaardontwerp.
 
 ## Eén stijl voor alle documenten
 
-Het ontwerp geldt voor elke PDF die MyCompanyDesk voor je maakt: facturen, offertes, betalingsherinneringen en werkbommen. Elk soort document volgt je factuurontwerp; geef een soort een eigen sjabloon wanneer dat moet afwijken. De kleuren die klanten zien op e-mails en de betaalpagina volgen dezelfde accentkleur. Je stelt het één keer in; elk documenttype blijft consistent. Je briefpapier verschijnt overal waar het document verschijnt: in de PDF, in de weergave die je klant in het klantportaal ziet, en op de werkbon. Documenten die over meerdere pagina's lopen, nummeren hun vellen: "Pagina 2 van 3" staat rustig in de ondermarge van elke pagina.
+Het ontwerp geldt voor elke PDF die MyCompanyDesk voor je maakt: facturen, offertes, betalingsherinneringen en werkbonnen. Elk soort document volgt je factuurontwerp; geef een soort een eigen sjabloon wanneer dat moet afwijken. De kleuren die klanten zien op e-mails en de betaalpagina volgen dezelfde accentkleur. Je stelt het één keer in; elk documenttype blijft consistent. Je briefpapier verschijnt overal waar het document verschijnt: in de PDF, in de weergave die je klant in het klantportaal ziet, en op de werkbon. Documenten die over meerdere pagina's lopen, nummeren hun vellen: "Pagina 2 van 3" staat rustig in de ondermarge van elke pagina.
 
 ## Taal
 
@@ -57,7 +57,7 @@ Document-PDF's zijn beschikbaar in het Nederlands, Engels, Duits en Frans. Docum
 
 Voor het beste resultaat op PDF's:
 
-- **Formaat:** PNG met transparante achtergrond werkt het best; JPG en SVG kunnen ook
+- **Formaat:** SVG geeft de beste kwaliteit; PNG (bij voorkeur met transparante achtergrond) en JPG kunnen ook, tot 2 MB
 - **Resolutie:** minstens 300 pixels breed
 - **Vorm:** liggende of vierkante logo's passen het best in de indelingen
 

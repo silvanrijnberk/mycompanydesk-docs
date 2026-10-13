@@ -4,7 +4,7 @@ layout: home
 hero:
   name: MyCompanyDesk
   text: Accounting made simple
-  tagline: The all-in-one platform for freelancers and small businesses to manage invoices, expenses, customers, and more.
+  tagline: The all-in-one platform for freelancers to manage invoices, expenses, customers, your website and more.
   actions:
     - theme: brand
       text: Get Started
@@ -16,7 +16,7 @@ features:
   - icon:
       src: /icons/file-bar-chart.svg
     title: Invoices & Quotes
-    details: Create professional invoices and quotes, send them to customers, and track payments — all in one place.
+    details: Create professional invoices and quotes, send them to customers, and track payments, all in one place.
   - icon:
       src: /icons/receipt.svg
     title: Expense Tracking
@@ -24,7 +24,7 @@ features:
   - icon:
       src: /icons/bar-chart-3.svg
     title: Reports & VAT
-    details: Get insights into revenue, profit, cash flow, and VAT. Lock periods after filing for compliance.
+    details: Prepare your VAT return on any plan and lock periods after filing. Office adds reports on revenue, profit, cash flow and customers.
   - icon:
       src: /icons/users.svg
     title: Customers & Projects
@@ -32,19 +32,19 @@ features:
   - icon:
       src: /icons/refresh-cw.svg
     title: Recurring Billing
-    details: Set up recurring invoices and expenses that generate automatically on your chosen schedule.
+    details: With Office, set up recurring invoices and expenses that generate automatically on your chosen schedule.
   - icon:
       src: /icons/bar-chart-3.svg
     title: Assets and depreciation
     details: Track business assets, record purchase value, and let depreciation run automatically so you always know the current book value.
   - icon:
       src: /icons/house.svg
-    title: Contracts & Assets
-    details: Manage rental contracts, track properties, vehicles, and equipment with full lifecycle management.
+    title: Contracts
+    details: Record fixed arrangements with customers in a contract, have it signed online and invoice automatically. With Office.
   - icon:
       src: /icons/house.svg
-    title: Website on your own domain
-    details: Build a multi-page site on your own domain, start from a pre-styled site package, or apply a bespoke design. Managed alongside the rest of your business.
+    title: Your own website
+    details: Build a multi-page site, free on mycompanydesk.site or on your own domain with Office. Start from a pre-styled site package, managed alongside the rest of your business.
     link: /en/advanced/business-page
     linkText: Read more
 ---

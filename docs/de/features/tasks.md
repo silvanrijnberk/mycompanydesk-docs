@@ -9,7 +9,7 @@ Aufgaben zeigen an, was Sie in MyCompanyDesk erledigen müssen. Einige Aufgaben 
 
 ## Aufgabenliste
 
-Die Aufgabenseite listet Ihre offenen und erledigten Aufgaben auf. Jede Zeile zeigt Titel, Fälligkeitsdatum, Status, Priorität und den verknüpften Datensatz. Aufgaben, die aus einem Angebot, einer Ausgabe, einem Projekt, einem Vertrag oder einer Erste-Schritte-Checkliste stammen, zeigen ein Quellenchip, damit Sie sofort erkennen, woher sie kommen.
+Die Aufgabenseite gruppiert Ihre Aufgaben in **Überfällig**, **Heute**, **Diese Woche**, **Später** und **Erledigt** (die letzten 14 Tage). Jede Zeile zeigt Titel, Fälligkeitsdatum, Status, Priorität und den verknüpften Datensatz. Aufgaben, die nicht von Hand angelegt wurden, zeigen einen Quellenchip, damit Sie sofort erkennen, woher sie kommen.
 
 Klicken Sie auf eine Aufgabe, um die Detail-Drawer zu öffnen.
 
@@ -20,7 +20,7 @@ Die Detail-Drawer ist eine schreibgeschützte Ansicht, die das gesamte Bild zeig
 - Fälligkeitsdatum, Status und Priorität
 - Die vollständige Beschreibung
 - Der verknüpfte Datensatz
-- Die Quelle der Aufgabe, zum Beispiel Angebot, Ausgabe, Projekt, Vertrag oder Erste-Schritte-Checkliste
+- Die Herkunft der Aufgabe, zum Beispiel eine Rechnung, ein Angebot, eine E-Mail oder die USt-Voranmeldung
 - Das Projekt, falls die Aufgabe dazugehört
 - Tags
 - Wann die Aufgabe erstellt wurde
@@ -33,13 +33,16 @@ Sie können die Aufgabe direkt aus der Detail-Drawer als erledigt markieren oder
 Aufgaben können aus verschiedenen Quellen stammen:
 
 - **Manuell**: Aufgaben, die Sie selbst anlegen
-- **Angebot**: aus einem Angebot generiert
-- **Ausgabe**: aus einer Ausgabe generiert
-- **Projekt**: aus einem Projekt generiert
-- **Vertrag**: aus einem Vertrag generiert
-- **Erste Schritte**: Onboarding-Schritte für einen neuen Arbeitsbereich
+- **Rechnung**: eine überfällige Rechnung
+- **Aus Angebot**: ein Angebot, das bald abläuft
+- **Ausgabe**: eine Ausgabe, der noch eine Kategorie fehlt
+- **Vertrag**: ein Vertrag, der ausläuft
+- **USt**: eine anstehende USt-Voranmeldung
+- **Aus E-Mail**: eine Aufgabe, die Sie aus einer Nachricht in Ihrem Posteingang anlegen
+- **Aus Projekt**: eine Aufgabe, die zu einem Projekt gehört
+- **Erste Schritte**: Einrichtungsschritte für einen neuen Arbeitsbereich
 
 ## Tipps
 
 - Nutzen Sie den Quellenchip, um zum Datensatz zu springen, um den es geht.
-- Die Liste **Jetzt erledigen** auf dem [Dashboard](/de/faq/use-dashboard) stellt die Aufgaben, die heute dran sind, vor alles andere.
+- Sind Aufgaben überfällig, bittet die Karte **Aufgaben** auf dem [Dashboard](/de/faq/use-dashboard) um Aufmerksamkeit, mit einer Schaltfläche zu Ihrer Aufgabenliste.

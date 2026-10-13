@@ -21,30 +21,28 @@ Häufige Anwendungsfälle:
 
 ## Wiederkehrende Ausgabe erstellen
 
-1. Gehen Sie zu **Wiederkehrende Ausgaben > Neu**
+1. Öffnen Sie **Wiederkehrend**, Reiter **Ausgaben**, und klicken Sie auf **Wiederkehrende Ausgabe hinzufügen**
 2. Füllen Sie die Vorlage aus:
-   - **Beschreibung**: wofür die Ausgabe ist
-   - **Lieferant**: freier Lieferantenname, mit Autocomplete für bereits verwendete Lieferanten
-   - **Land** und **Handelsregisternummer (KVK)**: optionale Felder für die Lieferantenidentität; wenn ausgefüllt, werden sie in jede aus dieser Vorlage erstellte Ausgabe übernommen
-   - **Betrag**: die wiederkehrenden Kosten
-   - **Kategorie**: Ausgabenkategorie
-   - **USt.-Satz**: anwendbare USt.
-   - **USt.-Behandlung**: wie die Ausgabe in der USt.-Erklärung behandelt wird
-   - **Häufigkeit**: wöchentlich, monatlich, vierteljährlich oder jährlich
+   - **Name**: wofür die Ausgabe ist
+   - **Lieferant**: der Name des Lieferanten. Beim Tippen schlägt das Feld Lieferanten vor, die Sie schon verwendet haben, und Unternehmen aus dem niederländischen Handelsregister (KVK)
+   - **Kategorie**: die Ausgabenkategorie
+   - **Beschreibung** und bei Bedarf ein **Projekt**
+   - Unter **Zeitplan**: die **Frequenz** (wöchentlich, monatlich, vierteljährlich oder jährlich) und das **Startdatum**
+   - Unter **Ausgabendetails**: den **Betrag exkl. MwSt.**, den **MwSt.-Satz**, ob die Steuer abzugsfähig ist (**USt abzugsfähig**) und die **MwSt.-Behandlung**, also wie die Ausgabe in Ihre Umsatzsteuererklärung eingeht
 3. Klicken Sie auf **Speichern**
 
-::: tip Weitere Optionen
-Im Formular für wiederkehrende Ausgaben bleiben optionale Angaben unter **Weitere Optionen** verborgen. Notizen und die Lieferantenidentität stehen dort standardmäßig; klappen Sie den Abschnitt aus, wenn Sie sie ergänzen möchten.
+::: tip Ausgabendetails
+Bei einer neuen wiederkehrenden Ausgabe ist der Block **Ausgabendetails** zugeklappt; klappen Sie ihn auf, um Beträge und Steuer einzutragen. Bearbeiten Sie eine bestehende wiederkehrende Ausgabe, ist er sofort offen.
 :::
 
 ### Lieferantenidentität
 
-Wenn Sie Lieferantenname, Land und KVK-Nummer in einer wiederkehrenden Vorlage hinterlegen, hat das zwei Auswirkungen:
+Wählen Sie im Feld **Lieferant** ein Unternehmen unter **Aus dem Handelsregister (KVK)**, speichert die Vorlage auch die KVK-Nummer und das Land dieses Lieferanten, und neben dem Namen erscheint die Markierung **KVK**. Das hat zwei Auswirkungen:
 
 - **Lieferantenvorschläge** greifen auf die hinterlegte Identität zurück, sodass Sie denselben Lieferanten nicht jeden Monat erneut auswählen müssen.
-- **Generierte Ausgaben** übernehmen dieselbe Lieferantenidentität wie die Vorlage. Dadurch wird die Regelung für innergemeinschaftliche Lieferungen oder nicht-EU-Lieferanten genauso automatisch angewendet wie bei manuell erfassten Ausgaben.
+- **Generierte Ausgaben** übernehmen dieselbe Lieferantenidentität wie die Vorlage. Dadurch werden die Umkehr der Steuerschuld und die Einfuhrumsatzsteuer (etwa bei Lieferanten innerhalb oder außerhalb der EU) genauso automatisch angewendet wie bei manuell erfassten Ausgaben.
 
-Wenn Sie den Lieferantennamen später ändern und er passt nicht mehr zum hinterlegten KVK-Eintrag, werden die Felder für KVK-Nummer und Land geleert. So verhindert das Formular, dass veraltete Identitätsdaten weiterhin bestehen.
+Ändern Sie den Lieferantennamen später und passt er nicht mehr zum gewählten KVK-Unternehmen, werden KVK-Nummer und Land geleert. Mit **KVK-Verknüpfung aufheben** lösen Sie die Verknüpfung auch selbst. So bleiben keine veralteten Identitätsdaten stehen.
 
 ## Häufigkeitsoptionen
 

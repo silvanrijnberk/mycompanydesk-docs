@@ -1,6 +1,6 @@
 ---
 title: "Projekt erstellen"
-description: "So erstellen Sie ein Projekt: Gehen Sie zu Projekte, Neues Projekt, und tragen Sie Name, Nummer, Kunde, Status, Budget und Stundensatz ein."
+description: "So erstellen Sie ein Projekt: Gehen Sie zu Projekte, klicken Sie auf Erstellen und tragen Sie Name, Nummer, Kunde, Status, Budget und Stundensatz ein."
 last_verified: 2026-05-09
 chatbot:
   triggers:
@@ -19,7 +19,7 @@ chatbot:
 ---
 
 So erstellen Sie ein Projekt:
-1. Gehen Sie zu Projekte und öffnen Sie „Neues Projekt“
+1. Gehen Sie zu Projekte und klicken Sie auf „Erstellen“
 2. Geben Sie Projektname, Nummer und Beschreibung ein
 3. Verknüpfen Sie bei Bedarf den Kunden
 4. Setzen Sie Status, Daten, Budget und Stundensatz, soweit sie relevant sind

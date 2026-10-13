@@ -1,6 +1,6 @@
 ---
 title: "Trouver les factures archivées"
-description: "Les factures archivées se trouvent dans Factures > Archives. Si vous êtes déjà dans la liste des factures, passez à la vue Archives."
+description: "Les factures archivées se trouvent dans Factures : cliquez sur Filtres et choisissez la vue Archives sous Afficher."
 last_verified: 2026-05-09
 chatbot:
   triggers:
@@ -29,4 +29,4 @@ chatbot:
     - "How do I cancel an invoice?"
 ---
 
-Les factures archivées se trouvent dans Factures -> Archives. Si vous êtes déjà dans la liste des factures, passez à la vue Archives. Les factures supprimées se trouvent dans la Corbeille.
+Les factures archivées se trouvent dans Factures : cliquez sur Filtres au-dessus de la liste et choisissez la vue Archives sous Afficher. Sur votre téléphone, utilisez le bouton de filtre en haut. Les factures supprimées se trouvent dans la Corbeille.

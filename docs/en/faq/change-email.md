@@ -8,8 +8,8 @@ chatbot:
   follow_up: ["How do I change my password?", "How do I update my profile?"]
 ---
 
-You can change your login email yourself. Under Settings, open the "Over jou" (About you) group at the top and click **Change your email address** next to the Email address field. Fill in the new address and, if you sign in with a password, your current password.
+You can change your login email yourself. Go to Settings › "Login" and click **Change** in the "Email address" card. (The **Change your email address** link under Settings › "Your details" takes you to the same place.) Fill in the new address and, if you sign in with a password, your current password, then click **Send confirmation email**.
 
-We email a confirmation link to the new address. The change only goes through when you open that link; until then nothing on your account changes, and the profile shows that a confirmation is on its way. The same email carries a cancel link, and you can also cancel a pending change yourself, signed in, from the same place in settings.
+We email a confirmation link to the new address. The change only goes through when you open that link; until then nothing on your account changes, and the profile shows that a confirmation is on its way. The same email carries a cancel link, and you can also cancel a pending change yourself, signed in, with **Cancel** in the same place in settings.
 
 Confirm links expire. If yours has expired, request the change again from settings. If the address was just confirmed by another account, pick a different one. Once the change is confirmed, sign in with your new address; your password and the rest of your account stay as they were.

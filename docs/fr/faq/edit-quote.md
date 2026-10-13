@@ -14,3 +14,5 @@ Pour modifier un devis :
 2. Cliquez sur « Modifier » (ou /quotes/{id}/edit)
 3. Mettez à jour le client, les lignes, les notes ou les dates
 4. Enregistrez
+
+Pas de bouton « Modifier » ? Le devis a alors déjà été accepté, refusé ou a expiré, il a été converti en facture ou en contrat, il attend la signature de votre client ou il se trouve dans la corbeille. Dupliquez alors le devis et modifiez la copie.

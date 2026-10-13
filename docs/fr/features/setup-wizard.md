@@ -1,19 +1,19 @@
 ---
 title: Assistant de configuration
-description: "L'assistant sur /setup prépare votre entreprise et demande ensuite par quoi commencer : factures, votre site web ou le courriel professionnel."
+description: "L'assistant sur /setup récupère vos données au registre KVK, demande par quoi commencer et règle la TVA et l'IBAN pour facturer."
 last_verified: 2026-10-13
 ---
 
 # Assistant de configuration
 
-L'assistant de configuration sur `/setup` rend un nouvel espace de travail opérationnel en quelques minutes. Il commence par votre facture : il demande à qui vous facturez, récupère vos informations d'entreprise dans le registre du commerce néerlandais (KVK) et affiche un aperçu en direct de la facture. Juste après l'étape KVK, il demande par quoi vous voulez commencer : par les factures et devis, par votre propre site web ou par le courriel sur votre propre domaine. Rien n'est figé : chaque étape peut être passée et tout peut être modifié plus tard dans les paramètres.
+L'assistant de configuration sur `/setup` (**Configurons votre entreprise**) rend un nouvel espace de travail opérationnel en quelques minutes. Il récupère vos informations d'entreprise dans le registre du commerce néerlandais (KVK) et affiche un aperçu en direct de votre facture. Juste après l'étape KVK, il demande par quoi vous voulez commencer : par les factures et devis, par votre propre site web ou par l'e-mail sur votre propre domaine. Rien n'est figé : chaque étape peut être passée et tout peut être modifié plus tard dans les paramètres.
 
 Si vous cherchez le guide de base, commencez par [Configurer votre entreprise](/fr/getting-started/company-setup). Cette page est la référence de chaque étape et de chaque option.
 
 ## Quand l'assistant apparaît
 
 - **Première connexion :** les nouveaux comptes arrivent automatiquement dans l'assistant.
-- **À tout moment :** rendez-vous sur `/setup` pour lancer ou relancer l'assistant. Une bannière en haut du tableau de bord n'existe plus ; tant que la configuration a des bouts libres, le tableau de bord vous signale lui-même la prochaine étape en bas de la page, sous **À configurer**.
+- **Tant que la configuration n'est pas terminée :** rendez-vous sur `/setup` pour reprendre là où vous vous êtes arrêté. Une fois terminée, `/setup` vous envoie vers le tableau de bord. Il n'y a pas de bannière en haut du tableau de bord ; tant que la configuration a des points en suspens, le tableau de bord vous signale lui-même la prochaine étape en bas de la page, sous **À configurer**.
 
 L'assistant ne vous bloque nulle part. **Passer pour l'instant** vous ramène au tableau de bord sans terminer ; rien n'est perdu, car chaque réponse est enregistrée immédiatement. Revenez plus tard et vous reprenez exactement où vous vous étiez arrêté.
 
@@ -21,23 +21,11 @@ L'assistant ne vous bloque nulle part. **Passer pour l'instant** vous ramène au
 
 L'assistant demande, dans cet ordre :
 
-1. **Client :** à qui vous facturez
-2. **KVK :** les informations de votre entreprise
-3. **Par quoi commencer :** votre choix (voir [l'étape plus bas](#etape-par-quoi-voulez-vous-commencer))
-4. **Paiement :** votre IBAN et statut de TVA (uniquement sur le parcours facturation)
-5. **Finalisation :** confirmation de l'essai
+1. **SIRENE** (Trouvez votre entreprise au registre du commerce)
+2. **Début** (Par quoi voulez-vous commencer ?) : votre choix (voir [l'étape ci-dessous](#etape-par-quoi-voulez-vous-commencer))
+3. **TVA et IBAN** (Comment êtes-vous payé ?) : uniquement sur le parcours facturation
 
-**Continuer** avance dès qu'une étape a ce qu'il lui faut ; **Terminer la configuration** sur la dernière étape applique tout.
-
-## Étape : Client
-
-L'assistant s'ouvre sur un aperçu en direct de la facture et demande le client. Commencez à taper le nom du client.
-
-- Si le client existe déjà dans votre espace de travail, sélectionnez-le dans la liste.
-- Pour créer un nouveau client en ligne, tapez le nom et cliquez sur **Créer un client**. Le formulaire en ligne demande le nom du client et l'adresse. La recherche KVK peut proposer des entreprises néerlandaises et remplir l'adresse automatiquement ; pour un client particulier, ajoutez-le en saisissant l'adresse à la main.
-- L'e-mail du client est optionnel et n'est utilisé que lorsque vous envoyez la facture.
-
-Seul le nom du client est requis pour continuer. Vous pourrez compléter le reste des coordonnées du client plus tard depuis la page client.
+**Continuer** vous fait avancer dès qu'une étape a ce qu'il lui faut, et **Retour** revient d'une étape. À la dernière étape du parcours facturation, **Terminer la configuration** applique tout ; si vous avez choisi le site ou l'e-mail, ce bouton s'appelle **Vers votre site web** ou **Vers votre e-mail**.
 
 ## Étape : KVK
 
@@ -54,32 +42,38 @@ Quand une recherche ne donne rien, l'assistant le dit et propose de passer à la
 
 Directement après l'étape KVK, l'assistant demande **Par quoi voulez-vous commencer ?** avec trois réponses :
 
-- **Factures et devis** : le parcours habituel. L'assistant poursuit avec l'aperçu de la facture, l'étape Paiement (IBAN et statut de TVA) puis l'écran de fin.
-- **Votre propre site web** : l'assistant s'arrête ici et un bouton vous emmène vers `/website`, où s'ouvre l'éditeur de site.
-- **Le courriel sur votre propre domaine** : l'assistant s'arrête ici et un bouton vous emmène vers `/inbox/setup`, où la boîte mail professionnelle est configurée.
+- **Envoyer des factures et des devis** : le parcours habituel. L'assistant poursuit avec l'étape TVA et IBAN puis l'écran de finalisation.
+- **Votre propre site web** : l'assistant s'arrête ici et **Vers votre site web** vous emmène vers `/website`, où s'ouvre l'éditeur de site.
+- **E-mail sur votre propre domaine** : l'assistant s'arrête ici et **Vers votre e-mail** vous emmène vers `/inbox/setup`, où la boîte mail professionnelle est configurée.
 
 Le choix ne décide que de l'endroit où l'assistant vous remet. Rien n'est activé ni désactivé, et rien n'arrive présélectionné. Le tableau de bord suit le même choix : il propose **Zet je website online** (mettez votre site en ligne) ou **Stel je zakelijke e-mail in** (configurez votre courriel professionnel) tant que le site n'est pas publié ou qu'il n'existe pas de boîte propre sur votre propre domaine, puis revient au parcours facturation.
 
-## Étape : Paiement
+## Étape : TVA et IBAN
 
-L'assistant demande l'IBAN sur lequel les clients doivent payer. Vous pouvez saisir votre IBAN professionnel maintenant, ou cliquer sur **Ajouter mon IBAN plus tard** pour passer cette étape. Gardez à l'esprit qu'un client ne pourra pas facilement vous payer sans IBAN.
+Cette étape (**Comment êtes-vous payé ?**) demande les deux éléments qui figurent sur chaque facture.
 
-Pour le statut de TVA, l'étape demande si vous facturez de la TVA et, si c'est non, si c'est à cause du régime pour petits entrepreneurs (KOR) : oui, non, ou je ne sais pas. **Je ne sais pas** a sa propre réponse : le régime ne s'applique que si vous vous êtes vous-même inscrit auprès de la Belastingdienst et reçu une lettre à ce sujet ; un chiffre d'affaires bas ne suffit pas à lui seul, et la lettre de l'administration fiscale vous le dit pour de bon. Répondre oui active le régime, vos factures sont créées sans TVA et mentionnent que vous participez à la KOR. Si vous attendez toujours votre numéro de TVA auprès de l'administration fiscale, vous pouvez quand même continuer et l'ajouter plus tard.
+**Facturez-vous la TVA ?** Choisissez l'une des trois réponses :
 
-## Étape : Finalisation
+- **Oui, je facture la TVA** : la plupart des indépendants. Saisissez votre numéro de TVA, ou choisissez **Je ne connais pas mon numéro de TVA maintenant, je le renseignerai plus tard** ; l'application vous le redemande à l'envoi de votre première facture.
+- **Non, je participe à la KOR** : seulement si vous vous êtes inscrit vous-même auprès de la Belastingdienst et avez reçu un courrier à ce sujet. Un faible chiffre d'affaires ne suffit pas. Vos factures sont alors établies sans TVA et indiquent que vous participez à la KOR.
+- **Non, je suis exonéré** : pour certaines professions, comme les soins par un prestataire de santé enregistré ou l'enseignement par un formateur inscrit au CRKBO. Vos factures sont établies sans TVA.
 
-La dernière étape confirme votre essai :
+Si vous hésitez pour la KOR, l'étape demande **Participes-tu au KOR (régime des petites entreprises) ?** avec **Oui, j'y participe**, **Non** et **Je ne sais pas**. Avec Je ne sais pas, elle explique que vous n'y participez pas si vous ne vous êtes pas inscrit vous-même, et que le courrier de la Belastingdienst le dit avec certitude.
 
-- **Votre essai :** chaque nouvel espace de travail démarre avec 60 jours d'Office, gratuits, sans carte bancaire.
+**Où vos clients peuvent-ils payer ?** Saisissez votre IBAN et le nom du titulaire du compte, ou choisissez **Je le renseignerai plus tard** pour passer. Vous pouvez ajouter votre IBAN plus tard dans les paramètres, et l'application vous le redemande à votre première facture.
 
-**Terminer la configuration** applique vos informations d'entreprise, votre statut de TVA, votre IBAN et vos paramètres par défaut. L'écran de fin nomme ce qui suit encore : la sécurisation de votre compte et votre site web sont proposés plus loin, quand ça arrange, sous **À configurer** sur le tableau de bord. Nul part en tâche de fond un site ne se construit ; à la première ouverture de la zone **Site Web** vous-même, le site standard en brouillon s'y crée (accueil, prestations, à-propos, contact, avec vos données sur les pages légales), restant en attente de votre publication.
+## Finalisation
 
-## Passer, reprendre et relancer
+**Terminer la configuration** applique vos informations d'entreprise, votre statut de TVA et votre IBAN. L'écran de fin (**Vous êtes prêt à facturer**) propose le bouton **Créez votre première facture** et indique la suite : sécuriser votre compte et votre site web vous seront proposés plus tard, au bon moment, sous **À configurer** sur le tableau de bord. Aucun site n'est construit en arrière-plan ; la première fois que vous ouvrez vous-même l'espace **Site web**, le site brouillon par défaut y est créé (accueil, services, à propos, contact, avec vos informations sur les pages juridiques), en attente de votre publication.
+
+Chaque nouvel espace de travail démarre avec 60 jours d'Office, gratuits et sans carte bancaire. Si vous vous inscrivez via un lien d'invitation d'un comptable partenaire, cet essai dure 12 mois. À la fin, votre espace de travail repasse sur Desk, sans mur de paiement.
+
+## Passer et reprendre
 
 - **Passer :** vous ramène à tout moment au tableau de bord. `/setup` reste le chemin de retour jusqu'à ce que la configuration soit terminée.
-- **D'abord le site** (Eerst mijn website maken) : une deuxième sortie figure dans la barre du bas de la première étape, à côté de Passer. Elle quitte la configuration sans la finaliser et ouvre directement l'assistant de site ; au lieu du simple Passage, elle maintient ouverte la tâche Terminez votre site du tableau de bord, car il n'existe pas encore de site à terminer.
+- **D'abord le site** (**Créer d'abord mon site web**) : sous la question **Vous venez surtout pour votre site web ?** dans la barre du bas de la première étape se trouve une deuxième sortie, à côté de Passer. Elle quitte la configuration sans la finaliser et ouvre directement l'assistant de site ; contrairement au simple Passer, elle maintient ouverte la tâche Terminez votre site du tableau de bord, car il n'existe pas encore de site à terminer.
 - **Reprendre :** les réponses sont enregistrées à chaque modification. Fermer l'onglet en cours de route ne coûte rien ; à la visite suivante, vous reprenez sur la même étape.
-- **Relancer :** après la finalisation, `/setup` relance le parcours depuis la première étape, avec vos réponses conservées. L'assistant complète les champs vides au lieu d'écraser : une liste de prestations que vous avez construite, un logo importé ou des réglages choisis à la main ne sont pas remplacés.
+- **Après la finalisation :** `/setup` vous envoie alors vers le tableau de bord. Ce que l'assistant a rempli se modifie dans les paramètres (voir ci-dessous). L'assistant ne complète que les champs vides au lieu d'écraser : ce que vous aviez saisi vous-même reste en place.
 
 ## Modifier sans l'assistant
 

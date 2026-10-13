@@ -27,7 +27,7 @@ Les totaux ne comptent que les heures réellement travaillées. Les entrées pla
 
 ### Minuteur
 
-Sur mobile, la vue Jour comprend un minuteur : lancez-le quand vous commencez à travailler et arrêtez-le pour enregistrer le temps écoulé comme entrée. Vous pouvez faire du minuteur votre mode de travail par défaut via le réglage du mode de travail (voir Paramètres ci-dessous).
+Sur mobile, la vue Jour comprend un minuteur : lancez-le quand vous commencez à travailler et arrêtez-le pour enregistrer le temps écoulé comme entrée.
 
 ### Entrées manuelles
 
@@ -75,7 +75,7 @@ Les lignes de facture sont décrites automatiquement : d'abord la description de
 La facturation automatique se règle par projet. Sur la page d'un projet, vous choisissez comment ses heures sont facturées :
 
 - **Manuel** (le réglage par défaut) : vous créez la facture vous-même à partir des heures du projet.
-- **À un jour fixe** (le réglage par défaut) : vous choisissez le rythme du projet : chaque semaine un jour de la semaine, ou chaque mois un jour du mois. Les heures enregistrées jusqu'à la précédente date de facturation incluse, plus les dépenses refacturées, partent sur une facture pour le client du projet. Le mois est facturé au jour choisi, jusqu'au 28, ou au dernier jour du mois, pour que les mois courts ne sautent jamais ; la règle vit dans `packages/shared/src/logic/billing-schedule.ts#isValidBillingSchedule`.
+- **À jour fixe** : vous choisissez le rythme du projet : chaque semaine un jour de la semaine, ou chaque mois un jour du mois. Les heures enregistrées jusqu'à la précédente date de facturation incluse, plus les dépenses refacturées, partent sur une facture pour le client du projet. Le mois est facturé au jour choisi, jusqu'au 28, ou au dernier jour du mois, pour que les mois courts ne sautent jamais.
 - **À l'achèvement** : quand vous marquez le projet comme terminé, tout ce qui reste ouvert part sur une facture finale pour le client.
 
 Si le projet relève d'un contrat qui facture lui-même, c'est ce contrat qui décide, et la page du projet le dit ; un tel projet ne reçoit pas son propre rythme.
@@ -91,7 +91,7 @@ Tout ce qui sort de l'ordinaire retient l'envoi automatique : un client sans adr
 
 Les dépenses ne sont incluses que si la dépense elle-même porte l'interrupteur [Refacturer au client](/fr/features/expenses#refacturation-et-changements-de-prix-de-revient).
 
-Si votre forfait n'inclut pas la facturation automatique du temps, elle reste en pause ; la notification vous le dit. Les factures automatiques utilisent le taux de TVA par défaut de votre espace de travail et respectent vos paramètres KOR ou d'exemption de TVA, comme les factures créées manuellement.
+La facturation automatique fait partie de l'abonnement Office. Sur Desk, elle reste en pause jusqu'à ce que vous repassiez à Office ; la carte et la notification vous le disent. Les factures automatiques utilisent le taux de TVA par défaut de votre espace de travail et respectent vos paramètres KOR ou d'exemption de TVA, comme les factures créées manuellement.
 
 ## Actions groupées
 
@@ -103,7 +103,7 @@ Sélectionnez plusieurs entrées dans la vue Liste (appui long sur mobile) pour 
 
 ## Synchronisation de calendrier externe
 
-Connectez Google Agenda ou le calendrier Outlook pour réunir votre agenda et vos heures. Ouvrez les paramètres de l'agenda via **Paramètres** > **Agenda** ou la roue dentée sur la page Agenda, et suivez le lien calendrier. Vous pouvez aussi aller directement à la page des calendriers connectés. Vous pouvez y :
+Connectez Google Agenda ou le calendrier Outlook pour réunir votre agenda et vos heures. Ouvrez les paramètres de l'agenda via **Paramètres** › **Heures et agenda** ou la roue dentée sur la page Agenda, et choisissez **Connecter un agenda (Google ou Outlook)**. Vous pouvez aussi aller directement à la page des calendriers connectés. Vous pouvez y :
 
 - Connecter **Google Agenda** ou **Calendrier Outlook**
 - Activer la synchronisation par connexion avec **Activer la synchronisation**
@@ -114,20 +114,19 @@ Les événements provenant d'un calendrier connecté apparaissent dans les vues 
 
 ## Rendez-vous en ligne et heures
 
-Les rendez-vous que les clients réservent via le bloc **Site Bookings** sur votre site web sont automatiquement placés dans votre agenda une fois approuvés. Un rendez-vous en ligne confirmé compte également comme heures travaillées dans Agenda, vous n'avez donc pas à les saisir séparément. Ces heures ne sont pas **facturables** via Agenda; le revenu du rendez-vous est facturé séparément depuis le rendez-vous lui-même. Voir [Rendez-vous en ligne](/fr/features/site-bookings) pour configurer vos heures réservables.
+Les rendez-vous que les clients réservent via le bloc de rendez-vous de votre site web sont automatiquement placés dans votre agenda une fois approuvés. Un rendez-vous en ligne confirmé compte également comme heures travaillées dans Agenda, vous n'avez donc pas à les saisir séparément. Ces heures ne sont **pas facturables** via Agenda ; le revenu du rendez-vous est facturé séparément depuis le rendez-vous lui-même. Voir [Rendez-vous en ligne](/fr/features/site-bookings) pour configurer vos heures réservables.
 
 ## Paramètres
 
-Les paramètres de l'agenda se trouvent sous **Paramètres** > **Agenda** ou via la roue dentée sur la page Agenda. Vous y configurez :
+Les paramètres de l'agenda se trouvent sous **Paramètres** › **Heures et agenda** ou via la roue dentée sur la page Agenda. Vous y configurez :
 
-- Le **Mode heures uniquement**, la **confirmation automatique du temps provisoire**, et le comportement de saisie
-- Le mode de travail : **Heures**, **Postes** ou minuteur
+- **Comportement de saisie** : **Mode heures uniquement** et **Confirmer automatiquement le temps provisoire**
 - Les heures de travail affichées sur la chronologie
-- Les étapes affichées par la saisie rapide (projet, notes, déplacements)
-- Le tarif horaire par défaut (administrateurs d'équipe)
-- Les valeurs par défaut des déplacements comme les adresses, le véhicule et le tarif kilométrique
-- Utiliser votre localisation actuelle comme point de départ d'un déplacement, quand votre appareil le permet
+- Le **Tarif horaire par défaut** et l'**Arrondi du temps** (administrateurs)
+- **Déplacements chez les clients** : adresses, mode de transport par défaut, voiture (personnelle ou de société) et tarif kilométrique
 - Un lien pour connecter un calendrier externe
+
+Pour un déplacement dans le formulaire d'entrée, vous pouvez utiliser votre position actuelle comme point de départ, si votre appareil le permet.
 
 ## Conseils
 

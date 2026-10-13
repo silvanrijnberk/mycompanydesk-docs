@@ -15,10 +15,10 @@ Zo pas je de vervaldatum van één factuur aan:
 2. Werk in de kaart met factuurdetails het veld "Vervaldatum" bij
 3. Sla de factuur op
 
-Wil je dat toekomstige facturen met een andere termijn starten, pas dan de betaaltermijn van de klant aan of de standaard via Instellingen → "Facturen en offertes" onder "Hoeveel dagen krijgt een klant om te betalen?".
+Wil je dat toekomstige facturen met een andere termijn starten, pas dan de betaaltermijn van de klant aan of de standaard via Instellingen › "Facturen en offertes" onder "Hoeveel dagen krijgt een klant om te betalen?".
 
-Tip: Automatische herinneringen volgen de vervaldatum, dus met een juiste termijn gaan ook de herinneringen op het goede moment de deur uit.
+Tip: Automatische betaalherinneringen (Office) volgen de vervaldatum, dus met een juiste termijn gaan ook de herinneringen op het goede moment de deur uit.
 
-Als een klant geen eigen betaaltermijn heeft, geldt eerst de werkruimtestandaard via **Instellingen → Facturen en offertes**, pas daarna de platformstandaard (14 dagen). Die volgorde werd eerder overgeslagen bij het kiezen van een klant, waardoor de vervaldatum te vroeg kon uitvallen.
+Als een klant geen eigen betaaltermijn heeft, geldt eerst de werkruimtestandaard via **Instellingen › Facturen en offertes**, pas daarna de platformstandaard (14 dagen). Die volgorde werd eerder overgeslagen bij het kiezen van een klant, waardoor de vervaldatum te vroeg kon uitvallen.
 
 Facturen die uit contracten of terugkerende facturen worden gegenereerd, krijgen ook een vervaldatum. Bij terugkerende facturen wint de eigen betaaltermijn van de reeks als die is ingesteld; anders vallen ze terug op de platformstandaard. Bij contracten wint eerst een ingevulde betaaltermijn op het contract (meer dan 0 dagen); zonder die termijn volgt de contractfactuur dezelfde volgorde als een handmatige factuur: eerst de betaaltermijn van de klant, dan de standaard van de werkruimte, dan die van het platform. De mailtekst over de betalingstermijn en de termijn op het contractstuk zelf volgen dezelfde bronnen.

@@ -1,119 +1,110 @@
 ---
-title: Votre premiere facture
+title: Votre première facture
 description: "Pas à pas pour créer et envoyer votre première facture, de vos données d'entreprise au client, jusqu'au bouton d'envoi."
 ---
 
-# Votre premiere facture
+# Votre première facture
 
-Ce guide vous accompagne dans la creation et l'envoi de votre premiere facture dans MyCompanyDesk.
+Ce guide vous accompagne pas à pas dans la création et l'envoi de votre première facture dans MyCompanyDesk.
 
 ## Avant de commencer
 
 Assurez-vous d'avoir :
 
-- [Configure les informations de votre entreprise](/fr/getting-started/company-setup) (nom, adresse, numero de TVA, IBAN)
-- Au moins un client a facturer (vous pouvez en creer un pendant le processus)
+- [Configuré les informations de votre entreprise](/fr/getting-started/company-setup) (nom, adresse, numéro de TVA, IBAN). S'il manque encore votre numéro de TVA ou votre IBAN, MyCompanyDesk vous le demande au moment de finaliser la facture.
+- Au moins un client à facturer (vous pouvez en créer un pendant le processus)
 
-## Creer une facture
+## Créer une facture
 
-1. Naviguez vers **Factures** dans la barre laterale
-2. Cliquez sur le bouton **Nouvelle facture** (ou utilisez le bouton flottant **+** sur mobile)
-3. Remplissez le formulaire de facture :
+1. Allez dans **Factures** dans la barre latérale
+2. Cliquez sur **Créer** (ou utilisez le bouton **+** sur votre téléphone)
+3. Remplissez la facture
 
-### Selectionner un client
+Sur téléphone ou tablette, une nouvelle facture s'ouvre en trois étapes : **Client**, **Lignes** et **Vérifier**. **Suivant** vous mène à l'étape d'après. Sur un grand écran, tout tient sur une seule page.
 
-Commencez a taper le nom du client. Si le client existe, selectionnez-le dans la liste deroulante. Sinon, tapez le nom complet et cliquez sur **Creer un client** pour l'ajouter directement. Le formulaire en ligne demande un nom de client et une adresse. La recherche KVK peut proposer des entreprises neerlandaises et remplir l'adresse automatiquement ; pour un client particulier, ajoutez-le en saisissant l'adresse a la main. Seul le nom du client est requis ; l'e-mail et l'adresse complete se rajoutent plus tard depuis la page client.
+### Sélectionner un client
 
-### Ajouter des lignes de facturation
+Commencez à taper le nom du client dans le champ **Rechercher un client...**. Si le client existe, sélectionnez-le dans la liste. Sinon, choisissez **Ajouter un nouveau client**. Le panneau **Nouveau client** demande le type de client (**Particulier** ou **Entreprise**), le nom et l'adresse. Pour une entreprise, la recherche KVK retrouve les données et remplit l'adresse automatiquement ; pour un particulier, vous saisissez l'adresse vous-même. L'e-mail est facultatif. Cliquez sur **Ajouter** et le client figure sur la facture.
 
-Chaque ligne contient :
+### Ajouter des lignes
 
-- **Description** -- Ce que vous facturez
-- **Quantite** -- Nombre d'unites
-- **Prix unitaire** -- Prix par unite
-<!-- TODO(source-missing): RichardTool 5407b44 widened the valid Dutch invoice/catalog VAT-rate set to include historical rates 6% and 19%. sources/vat-rates.yaml#countries.NL currently only lists 0%, 9% and 21%, so this line must stay unchanged until the source is updated. -->
-- **Taux de TVA** -- Pourcentage de TVA applicable (0 %, 9 %, 21 %, etc.)
+Chaque ligne comporte :
 
-Cliquez sur **Ajouter un element** pour ajouter d'autres lignes. Le total est calcule automatiquement, TVA incluse.
+- **Description** : ce que vous facturez
+- **Qté** : nombre d'unités
+- **Prix** : prix unitaire. Par défaut, vous saisissez les prix hors TVA ; activez **Prix TTC** si vous préférez saisir le montant que paie votre client.
+<!-- TODO(source-missing): The app also accepts the historical Dutch rates 6% and 19% on invoices and catalog items. sources/vat-rates.yaml#countries.NL currently only lists 0%, 9% and 21%, so this line must stay unchanged until the source is updated. -->
+- **Taux de TVA**: Pourcentage de TVA applicable (0 %, 9 %, 21 %, etc.)
 
-### Definir les details de la facture
+Cliquez sur **Ajouter une ligne** pour d'autres lignes, ou choisissez un produit ou un service dans votre offre. Le total est calculé automatiquement, TVA comprise.
 
-- **Numero de facture** -- Attribue automatiquement par MyCompanyDesk
-- **Date de facture** -- Par defaut, la date du jour
-- **Date d'echeance** -- Calculee a partir de vos conditions de paiement par defaut (ajustable)
-- **Notes** -- Notes optionnelles qui apparaissent sur la facture
+### Définir les détails de la facture
+
+- **Numéro de facture** : proposé automatiquement. La facture reçoit son numéro définitif lorsque vous la finalisez.
+- **Date de facture** : aujourd'hui par défaut
+- **Date d'échéance** : calculée selon votre délai de paiement par défaut (modifiable)
+- **Notes** : notes facultatives qui apparaissent sur la facture
 
 ### Enregistrer
 
-Cliquez sur **Enregistrer** pour creer la facture en tant que **brouillon**. Vous pouvez encore tout modifier avant l'envoi.
+Vous avez deux boutons :
 
-## Previsualiser la facture
+- **Enregistrer comme brouillon** : conserve la facture en **Brouillon**. Vous pouvez encore tout modifier.
+- **Finaliser** : attribue son numéro à la facture et la rend prête à l'envoi. Ensuite, les données ne peuvent plus être modifiées (exigence de l'administration fiscale néerlandaise).
 
-Avant l'envoi, previsualisez l'apparence du PDF :
+## Vérifier la facture
 
-1. Ouvrez la page de detail de la facture
-2. Cliquez sur **Apercu** pour voir le PDF genere
-3. Verifiez que toutes les informations sont correctes -- coordonnees de l'entreprise, informations client, lignes de facturation, totaux
+Dans le formulaire de facture, cliquez sur **Voir l'aperçu** pour voir à quoi ressemble le PDF. Vérifiez que tout est correct : données de l'entreprise, informations client, lignes et totaux. La page de la facture affiche aussi le document, et vous pouvez l'enregistrer avec **Télécharger PDF**.
 
 ## Envoyer la facture
 
-Lorsque vous etes pret a envoyer :
+Une facture finalisée qui n'est pas encore partie a le statut **À envoyer**. Pour l'envoyer :
 
-1. Cliquez sur **Envoyer** sur la page de detail de la facture
-2. Verifiez l'e-mail qui sera envoye a votre client :
-   - Objet (personnalisable)
-   - Corps de l'e-mail (base sur votre modele d'e-mail)
-   - Piece jointe PDF
-   - Lien de paiement (si active)
-3. Cliquez sur **Envoyer** pour transmettre la facture
+1. Cliquez sur **Envoyer** sur la page de la facture
+2. Dans la fenêtre **Envoyer l'email**, vérifiez l'e-mail destiné à votre client :
+   - **À** : l'adresse e-mail de votre client
+   - **Objet** et **Message** (modifiables)
+   - Sous **Inclure dans l'email** : le **Bouton afficher (lien en ligne)**, le **Bouton télécharger** et la **Pièce jointe PDF**. Grâce au lien en ligne, votre client consulte et paie la facture.
+3. Cliquez sur **Envoyer l'email**
 
-Le statut de la facture passe de **Brouillon** a **Envoyee**.
+Le statut de la facture passe à **Envoyée**. Vous l'avez envoyée vous-même, par exemple via WhatsApp ? Cliquez alors sur **Marquer comme envoyée**.
 
 ::: tip
-Vous pouvez personnaliser vos modeles d'e-mail dans **Parametres > E-mail**. Les modeles prennent en charge votre image de marque et peuvent etre definis par langue.
+Vous modifiez vos textes d'e-mail dans **Paramètres › E-mail**. Vous pouvez aussi adapter le texte dans la fenêtre d'envoi et cocher **Utiliser ce texte désormais pour les factures**.
 :::
 
 ## Suivre le paiement
 
-Une fois envoyee, la facture apparait dans vos vues **Envoyees** ou **En retard**. Lorsque le client paie :
+Après l'envoi, la facture apparaît sous **En attente de paiement**, ou sous **En retard** une fois la date d'échéance dépassée. Lorsque le client paie :
 
-- Si le client paie via le **lien de paiement**, la facture est automatiquement marquee comme payee
-- Pour les virements bancaires, cliquez sur **Marquer comme payee** sur la facture pour enregistrer le paiement manuellement
+- Si le client paie en ligne (iDEAL, à configurer dans **Paramètres › Paiement**), la facture est automatiquement marquée comme payée
+- Pour un virement bancaire, cliquez sur **Marquer comme payée** sur la facture pour enregistrer le paiement manuellement
 
 ## Statuts des factures
 
 | Statut | Description |
 |---|---|
-| **Brouillon** | Creee mais pas encore envoyee. Entierement modifiable. |
-| **Envoyee** | Transmise au client. En attente de paiement. |
-| **En retard** | Date d'echeance depassee et toujours impayee. |
-| **Payee** | Paiement recu et confirme. |
-| **Annulee** | La facture a ete annulee. Aucun paiement attendu. |
+| **Brouillon** | Créée mais pas encore finalisée. Entièrement modifiable. |
+| **À envoyer** | Définitive, pas encore envoyée. |
+| **Envoyée** | Remise au client. En attente de paiement. |
+| **En retard** | Date d'échéance dépassée et pas encore payée. |
+| **Vérification requise** | Le client indique avoir payé. Vérifiez-le et marquez la facture comme payée. |
+| **Payée** | Paiement reçu et confirmé. |
+| **Annulée** | La facture a été annulée. Aucun paiement attendu. |
 
-## Ajout rapide
+## Utiliser des modèles
 
-Pour une creation de facture plus rapide, utilisez l'**ajout rapide** :
+Gagnez du temps avec les modèles de facture :
 
-1. Cliquez sur l'icone d'ajout rapide sur la page de liste des factures
-2. Selectionnez un client
-3. Ajoutez des elements (ou utilisez un modele enregistre)
-4. Enregistrez et envoyez immediatement si vous le souhaitez
+1. Créez une nouvelle facture avec vos lignes les plus utilisées
+2. Cliquez sur **Enregistrer comme modèle**
+3. La prochaine fois, choisissez **À partir d'un modèle** sur une nouvelle facture, et toutes les lignes sont préremplies
 
-L'ajout rapide est ideal pour les factures courantes ou vous facturez regulierement des elements similaires.
+## Prochaines étapes
 
-## Utiliser des modeles
+Félicitations pour l'envoi de votre première facture ! Découvrez d'autres fonctionnalités :
 
-Gagnez du temps avec les modeles de factures :
-
-1. Creez une facture avec vos lignes de facturation courantes
-2. Cliquez sur **Enregistrer comme modele**
-3. La prochaine fois, creez une nouvelle facture a partir du modele -- tous les elements sont pre-remplis
-
-## Prochaines etapes
-
-Felicitations pour l'envoi de votre premiere facture ! Decouvrez d'autres fonctionnalites :
-
-- [Suivre vos depenses](/fr/features/expenses)
-- [Creer des devis](/fr/features/quotes) pour des travaux potentiels
-- [Configurer des factures recurrentes](/fr/features/recurring-invoices) pour la facturation reguliere
+- [Suivre vos dépenses](/fr/features/expenses)
+- [Créer des devis](/fr/features/quotes) pour des travaux potentiels
+- [Configurer des factures récurrentes](/fr/features/recurring-invoices) pour la facturation régulière (Office)
 - [Consulter les rapports](/fr/features/reports) pour comprendre vos finances

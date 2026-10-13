@@ -19,12 +19,12 @@ Recurring invoices are templates that automatically create new invoices at speci
 
 ## Creating a recurring invoice
 
-1. Go to **Recurring Invoices > New**
+1. Go to **Recurring**, tab **Invoices**, and click **Add recurring invoice**
 2. Fill in the template:
-   - **Customer** — Who to bill
-   - **Line items** — What to bill for (descriptions, amounts, VAT)
-   - **Frequency** — How often (weekly, monthly, quarterly, yearly)
-   - **Start date** — When to start generating
+   - **Customer**: who to bill
+   - **Line items**: what to bill for (descriptions, amounts, VAT)
+   - **Frequency**: how often (weekly, monthly, quarterly, yearly)
+   - **Start date**: when the first invoice is created
 3. Click **Save**
 
 ::: tip More options
@@ -117,7 +117,7 @@ Temporarily stop invoice generation:
 
 1. Open the recurring invoice
 2. Click **Pause**
-3. Status changes to **Paused** — no invoices are generated
+3. Status changes to **Paused**: no invoices are generated
 
 ### Resume
 
@@ -144,7 +144,7 @@ Each time a recurring invoice fires, a new invoice is created:
 - It uses the template's line items and customer
 - It receives the next automatic invoice number
 - What happens next follows the delivery method of the series: the invoice waits as a draft, it goes out one day later unless you hold it back, or it is also collected through the direct debit mandate
-- Each generated invoice is independent — you can edit it without affecting the template
+- Each generated invoice is independent: you can edit it without affecting the template
 
 ### Locked VAT periods
 
@@ -166,8 +166,7 @@ Recurring invoices are part of the Office plan. If you upgrade from Desk to Offi
 
 ## Bulk actions
 
-- **Pause / Resume** — Toggle multiple recurring invoices
-- **Delete** — Remove multiple templates
+- **Pause** or **Resume**: stop or restart several recurring invoices at once
 
 ## Tips
 

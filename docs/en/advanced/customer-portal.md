@@ -11,10 +11,10 @@ The customer portal is your client's page for your business. Every invoice, quot
 
 When you send an invoice, a unique **payment link** is generated. When your customer clicks this link, they land on the invoice in their portal and can:
 
-1. **View the invoice** - See all details, line items, and totals
-2. **Download the PDF** - Get a copy of the invoice
-3. **Pay online** - Complete payment through the portal using the **Pay now** button
-4. **Confirm payment**: Acknowledge a bank transfer (not shown for credit notes, canceled invoices, or original invoices that have been fully credited, because none of these asks the customer for payment)
+1. **View the invoice**: see all details, line items, and totals
+2. **Download the PDF**: get a copy of the invoice with **Download PDF**
+3. **Pay online**: complete payment on the **Pay online** tab
+4. **Report a transfer**: use **Already paid? Let {company} know** and then **I have paid** to say they paid by bank transfer (not shown for credit notes, canceled invoices, or original invoices that have been fully credited, because none of these asks the customer for payment)
 5. **Add to my books**: put the invoice into their own MyCompanyDesk expenses (only shown for business customers on real, valid invoices)
 
 Portal links open in the customer's web browser. Even when the MyCompanyDesk app is installed on the customer's phone, tapping an invoice link opens the browser, not the app.
@@ -27,17 +27,19 @@ An invoice link only proves that someone received that email. It shows **their i
 
 On the portal the access screen asks the customer for their email address and mails a new login link. The link works once and stays valid for one hour. It is only sent to the address the company knows from the customer card, and the screen does not reveal whether an address is known, so nobody can use it to check who your customer is.
 
-Once the link is opened, that browser stays signed in for this customer at your company. **Log out** ends those sessions in that browser. The portal always identifies itself with your company name and branding, and its contact block shows your public business email, so customers reach the right mailbox even when their first invoice went to a private address.
+Once the link is opened, the customer stays signed in on that device for 30 days, without a password. **Log out** ends that session in that browser. The portal always identifies itself with your company name and branding, and its contact block shows your public business email, so customers reach the right mailbox even when their first invoice went to a private address.
 
 ## Portal features
 
 ### Overview
 
-The overview is the home page of the portal: your branding and a greeting up top (with your own welcome text under it, if you set one), next to a fixed company card with your contact details. A short **To do** list gathers what still needs the customer (pay an invoice, sign a document, read a new message), and once everything is settled the page says so plainly: **Everything has been paid, nothing is outstanding.** If a payment is still being checked after a bank-transfer acknowledgement, the page mentions that too instead of asking for money a second time.
+The overview is the home page of the portal: your branding and a greeting up top (with your own welcome text under it, if you set one), next to a fixed company card with your contact details. A short **To do** list gathers what still needs the customer (pay an invoice, sign a document, read a new message), and once everything is settled the page says so plainly: **Everything is paid, nothing is outstanding.** If a payment is still being checked after a bank-transfer acknowledgement, the page mentions that too instead of asking for money a second time.
 
-### Invoice list
+### Invoices
 
-When a customer has several invoices, the portal also shows a list with every invoice, credit note, and their current status. The "Open" and "Overdue" summary cards above the table add up the **remaining balance** per document, not the gross total. So a €1,000 invoice with a €400 partial payment contributes €600 to the open amount, and a credit note that has already been applied to its parent invoice contributes €0 so it is not subtracted twice. "Overdue" is derived from the due date: any sent or open invoice with a due date before today is counted there, so the card stays current even when invoices rarely carry the legacy `overdue` status.
+The **Invoices** tab puts every invoice and credit note in one of three groups: **Outstanding**, **Paid** and **Credit notes and withdrawn**. Next to them are two totals: **Outstanding** and **Paid in** the current year. If the customer reported a payment that you are still checking, that amount is shown separately under **Awaiting confirmation**, not in the outstanding amount.
+
+**Outstanding** adds up the **remaining balance** per document, not the gross total, and includes invoices that are already past their due date. So a €1,000 invoice with a €400 partial payment contributes €600 to the outstanding amount, and a credit note that has already been applied to its parent invoice contributes €0 so it is not subtracted twice.
 
 Draft invoices never appear in the portal list. A portal link is only generated when an invoice is sent, so unsent drafts have no customer-facing link and cannot be viewed in the portal.
 
@@ -61,15 +63,15 @@ The scan-to-pay QR code on the invoice PDF uses the same fixed link, so it keeps
 
 #### Mollie payment controls
 
-Once Mollie is connected, you get a **Betaalknop op facturen** toggle in your workspace under **Money → Payments → Online betalingen**. Turn it on to add a Mollie **Pay now** button to every outgoing invoice. Turn it off and the button disappears without disconnecting Mollie.
+Once Mollie is connected, you get a **Betaalknop op facturen** toggle under **Settings › Payments**, in the **Let customers pay with iDEAL** block. Turn it on to add a Mollie payment button to every invoice you send. Turn it off and the button disappears without disconnecting Mollie.
 
 Below the toggle is a **Betaalmethoden** section listing every payment method enabled in your Mollie dashboard (iDEAL, Bancontact, credit card, and more). By default all methods are shown to customers. Tick specific methods to narrow the set, only those appear on your invoices. Clear all ticks to go back to "show everything."
 
-A **Stuur testbetaling** button lets you walk a free €1 test checkout through Mollie, so you can confirm everything works before your customers see it. No real money moves.
+A **Stuur testbetaling** button lets you walk a €1 checkout through Mollie's test mode, so you can confirm everything works before your customers see it. No real money moves.
 
 #### Stripe payment controls
 
-Once Stripe is connected, you get a **Betaalknop op facturen** toggle in your workspace under **Money → Payments → Online betalingen**. Turn it on to add a Stripe **Pay now** button to every outgoing invoice. Turn it off and the button disappears without disconnecting Stripe. The toggle is only available once Stripe onboarding (KYC) is complete.
+Once Stripe is connected, you get a **Betaalknop op facturen** toggle under **Settings › Payments**, in the **Let customers pay with iDEAL** block. Turn it on to add a Stripe payment button to every invoice you send. Turn it off and the button disappears without disconnecting Stripe. The toggle is only available once Stripe onboarding (KYC) is complete.
 
 Below the toggle is a **Betaalmethoden** section listing every supported payment method cross-referenced with your Stripe account capabilities (card, iDEAL, Bancontact, SEPA Direct Debit, PayPal, Klarna, and Link by Stripe). By default Stripe Checkout automatically picks the right method per customer. Tick specific methods to limit what customers see, only those appear at checkout. Clear all ticks to return to automatic selection.
 
@@ -79,29 +81,25 @@ An **Open Stripe Dashboard** button deep-links you to your Stripe payment-method
 
 A business customer who uses MyCompanyDesk themselves can pull your invoice straight into their own expenses with the **Add to my books** button beside **Download PDF**. MyCompanyDesk imports the invoice as a draft expense in their workspace, with the amounts, the VAT and the PDF attached, and opens it ready for review. The button appears on real, valid invoices for business customers: quotes, credit notes, canceled invoices and invoices that are fully credited have nothing to book, so there is no button.
 
-No account yet? The page shows what the invoice is, who sent it and for how much, beside **Create account** and **I already have an account**. After that step MyCompanyDesk resumes the import by itself, on that device, for up to a week (the browser keeps the pending import for seven days, see `apps/web/utils/pendingInvoiceImport.ts#MAX_AGE_MS`).
+No account yet? The page shows what the invoice is, who sent it and for how much, beside **Create account** and **I already have an account**. After that step MyCompanyDesk resumes the import by itself, on that device, for up to a week.
 
 The import joins the same deduplication as invoices that arrive by the automatic lane (see [Receiving invoices from other MyCompanyDesk users](/en/features/invoices#receiving-invoices-from-other-mycompanydesk-users)), so the same invoice is never booked twice. Your own invoice detail records it right back: **Customer added the invoice to their own books**.
 
-### Quotes and contracts
+### Quotes, contracts and documents
 
-The **Documents** tab lists what this customer has received from you: quotes, contracts and other signable documents. Documents waiting for a signature come first, with a **View and sign** action; a quote shows until its validity date, and statuses follow the flow of the document (received, accepted, declined, expired, signed). Signing happens on a secured signing page, and it asks for an SMS code when you require one for the document.
+The **Quotes**, **Contracts** and **Documents** tabs list what this customer has received from you. A tab only appears when it has something in it: a customer with only invoices sees no empty Quotes tab. Documents waiting for a signature come first, with a **View and sign** action. A quote shows until its validity date, and the status follows the flow of the document (for example **Waiting for you**, **Accepted**, **Declined**, **Expired** or **Signed**). Signing happens on a secured signing page, and it asks for an SMS code when you require one for the document.
 
-The signing page sits in the same jacket as the rest of the portal: your name at the top, the document, a step line (read, sign, confirm) and one consent sentence, **I agree to this quote and the terms of {company}** for a quote, before the button says **Sign and send**. The signature itself stays as it was: draw or type the name, with a confirmation email and the PDF as download after signing. The signing page also carries the same ask box as every other page in the portal, so a question about this document ends up in a thread instead of a side channel.
+The signing page sits in the same jacket as the rest of the portal: your name at the top, the document, a step line (**Read the document**, **Place your signature**, **Confirm**) and, for a quote, one consent sentence, **I agree to this quote and the terms of {company}.**, before the **Sign and send** button. The customer draws or types their name, and after signing gets a confirmation email and the PDF as a download. If they do not want a quote, they choose **I do not agree** and can add a reason. The signing page also carries the same ask box as every other page in the portal, so a question about this document ends up in a thread instead of a side channel.
 
 ### Appointments
 
-The portal lists the upcoming and past appointments belonging to this customer, including the seats they signed up for on a group session (see [Online appointments](/en/features/site-bookings)). Appointments can be added to the customer's own calendar, and rescheduling or cancelling goes through the same page the confirmation email refers to. Appointments that were not booked with this customer's email address stay private.
+The portal lists the upcoming and past appointments belonging to this customer, including the seats they signed up for on a group session (see [Online appointments](/en/features/site-bookings)). With **Add to calendar** the customer puts an appointment in their own calendar, and **Reschedule or cancel** goes through the same page the confirmation email refers to. Appointments that were not booked with this customer's email address stay private.
 
 ### Questions per document
 
-Every view in the portal carries its own conversation: under an invoice there is **Questions about this invoice**, under a quote **Questions about this quote**, and the same pattern for contracts, other documents and appointments. The customer writes a question, it lands in your inbox inside the app, and your reply arrives both in the thread and in the customer's email. A question is never answered to a different item: each thread belongs to the document it was opened from.
+Every view in the portal carries its own conversation: under an invoice there is **Questions about this invoice**, under a quote **Questions about this quote**, and the same pattern for contracts, other documents and appointments. The customer writes a question, it lands in your inbox inside the app, and your reply arrives both in the thread and in the customer's email. A question is never answered to a different item: each thread belongs to the document it was opened from. There is no separate messages tab: every question belongs to the item it is about, and the overview shows per item whether there are messages.
 
-Asking a question needs the full portal. Someone who arrives through an invoice payment link alone sees where the door is: the portal offers to email the login link to the address your customer card has, and the ask box explains that questions are asked in the full portal. Portal messages without an email signature and without quoted history underneath keep their shape: the reply that lands in your inbox reads as your customer wrote it.
-
-### Messages
-
-The messages tab stays the direct line for everything that is not tied to one document. The customer writes a question or note, it lands in your inbox inside the app, and your reply arrives both in the portal and in the customer's email. Customers without an email address on their record see a hint to call or mail you instead.
+Asking a question needs the full portal. Someone who arrives through an invoice link alone sees where the door is: with **Send me the link** the portal offers to email the login link to the address your customer card has, and the ask box explains that questions are asked in the full portal. Portal messages without an email signature and without quoted history underneath keep their shape: the reply that lands in your inbox reads as your customer wrote it.
 
 ### Branding
 
@@ -115,14 +113,14 @@ This creates a professional, consistent experience for your customers.
 
 ### The look of the portal
 
-Under **Settings → Customer portal** (in Dutch: Klantportaal) you choose how it all looks, without extra work: logo, colour and company data already have their own place, and they carry over. Here you set:
+Under **Settings › Customer portal** you choose how it all looks, without extra work: logo, colour and company data already have their own place, and they carry over. Here you set:
 
 - **Style**: five styles, each derived from your brand colour, so a pale or almost black brand colour turns out the same way for your customer as in the preview. **Calm** (white, your colour only in buttons and accents), **Warm** (soft paper and rounded shapes), **Colour** (your colour in the header and the first task), **Sharp** (angular and businesslike, a clear grid) or **Evening** (a dark header with large lettering). Each tile in the picker carries a live miniature in that style.
-- **Default look**: light or dark, or left on **follow the customer's device** (the customer can still switch it themselves).
+- **Display**: **Always light** or **Always dark**, or leave it on **As your customer prefers** so the portal follows the customer's device (the customer can still switch it themselves).
 - **Welcome text**: a short line under the greeting. If you leave it empty, something fitting stands there instead.
-- **Your photo on the company card**: with a profile photo, the contact card shows you with your name instead of the company data. Your logo stays at the top.
+- **Your photo on the card**: with a profile photo, the contact card shows you with your name instead of the company data. Your logo stays at the top.
 
-Next to the settings stands the live preview: the real portal overview with sample data, at the width your customer gets, exactly as he sees it. Company card contents and the portal link point to their own places: logo and colour sit under **Appearance**, the business data under **Company details**.
+Next to the settings stands the live preview: the real portal overview with sample data, at the width your customer gets, exactly as he sees it. Company card contents and the portal link point to their own places: logo and colour sit under **Logo and colour**, the business data under **Business details**.
 
 Sending a customer their login link, or signing a single customer out everywhere, happens on the customer page under the **Customer portal** block.
 
@@ -134,9 +132,9 @@ The invoice view and PDF download are rendered from a snapshot taken when the in
 
 Each portal link is:
 
-- **Unique** - Generated per invoice
-- **Token-based** - Secured with a unique access token
-- **Invoice-specific** - Only shows the specific invoice
+- **Unique**: generated per invoice
+- **Secured**: with a unique access token
+- **Limited**: an invoice link only shows that customer's invoices, no quotes, appointments or messages
 
 Customers don't need a MyCompanyDesk account to view and pay invoices. Every portal session is pinned to one customer at one company by the server, so a session opened at one business never shows documents from another, and portal pages are always sent without caching so personal data never sits in shared caches.
 
@@ -155,6 +153,6 @@ This helps you understand customer engagement and follow up effectively.
 ## Tips
 
 - Include a personal note in your invoice email to encourage portal use
-- The portal works on all devices - mobile, tablet, and desktop
+- The portal works on all devices: mobile, tablet, and desktop
 - Payment confirmations are sent to both you and the customer
 - Check the customer event history on the invoice detail page to see portal interactions

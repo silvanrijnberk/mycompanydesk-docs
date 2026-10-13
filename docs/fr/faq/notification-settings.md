@@ -1,7 +1,7 @@
 ---
 title: "Paramètres de notification"
 description: "Pour gérer vos paramètres de notification : activez ou désactivez les sujets et les notifications push."
-last_verified: 2026-10-06
+last_verified: 2026-10-13
 chatbot:
   triggers:
     - "notifications"
@@ -20,7 +20,7 @@ chatbot:
 
 Pour gérer vos paramètres de notification :
 
-1. Allez dans Paramètres → « Notifications »
+1. Allez dans Paramètres › « Notifications »
 2. Activez ou désactivez les sujets de notification. Les interrupteurs sont regroupés en cinq groupes : **Chaque semaine**, **Votre argent**, **Vos clients**, **Votre équipe** et **De MyCompanyDesk**, et sous chaque interrupteur l'application montre comment la notification arrive : **Dans l'app**, **Par e-mail** ou **Sur votre téléphone**. Les sujets factures, argent, échéances et opportunités utilisent les trois ; le sujet hebdomadaire ajoute un signal téléphonique seulement en cas d'urgence. Les sujets sont :
    - **Le lundi, ce qu'il faut faire cette semaine** : le courriel du lundi avec les tâches de **À faire maintenant** sur votre tableau de bord. Un e-mail chaque lundi, uniquement s'il y a quelque chose à faire ; si une tâche est urgente, vous recevez en plus une notification sur votre téléphone. Le courriel est envoyé au propriétaire de l'espace de travail, qui est donc le seul à voir cet interrupteur. L'interrupteur est activé par défaut ; le lien de désabonnement en bas du courriel le désactive. Tant que le récapitulatif bancaire hebdomadaire séparé reste désactivé (c'est le réglage par défaut), les lignes bancaires encore à rapprocher font aussi partie de cet e-mail.
    - **Quand une facture est payée en retard** : factures en retard, factures proches de l'échéance, brouillons laissés en suspens, prélèvements échoués, envois de factures échoués, facturation automatique des contrats suspendue, factures d'heures créées automatiquement et ce qui leur arrive (prête, programmée pour l'envoi, retenue ou envoyée), signaux sur vos dépenses, par exemple des dépenses récurrentes ou un fournisseur devenu silencieux, et heures sans tarif.
@@ -39,73 +39,66 @@ Les notifications push sont liées à votre session. Dès que vous vous déconne
 
 ## La liste de notifications
 
-Les notifications sont regroupées en trois volets pour que la liste se lise comme une chronologie : **Aujourd'hui**, **Hier** et **Plus ancien**.
+Cliquez sur la cloche en haut de l'application pour ouvrir vos notifications. Elles sont regroupées par jour pour que la liste se lise comme une chronologie : **Aujourd'hui**, **Hier** et **Plus tôt**. En bas, **Charger plus** affiche les notifications plus anciennes.
 
-Ouvrir la liste marque tout ce qu'elle contient comme vu : le compteur sur la cloche retombe à zéro, mais chaque ligne garde son propre point non lu jusqu'à ce que vous l'ouvriez.
+Dès que vous ouvrez la liste, toutes les notifications qu'elle contient sont considérées comme vues : le compteur de la cloche repasse à zéro, mais chaque ligne garde son point non lu jusqu'à ce que vous l'ouvriez.
 
-Si plusieurs mises à jour informatives similaires arrivent le même jour, par exemple des notes de version ou des astuces produit, elles se replient derrière la plus récente. Un bouton indique combien d'autres il y a ; cliquez pour développer le groupe, cliquez à nouveau pour le replier.
+Quand trois mises à jour informatives similaires ou plus arrivent le même jour, par exemple des nouveautés produit ou des conseils, elles se replient sous la plus récente. Un bouton indique combien de notifications similaires il reste ; cliquez dessus pour les afficher, puis sur **Afficher moins** pour les replier.
 
-Sur un téléphone ou une tablette, vous pouvez faire glisser une ligne pour agir vite : vers la gauche pour ignorer, vers la droite pour reporter. La ligne montre ce qui se passera au relâchement. Chaque ligne comporte aussi des boutons Ignorer et Reporter.
+Cliquez sur une notification pour aller directement à l'élément concerné, comme la facture, le devis ou le contrat. Les nouveautés produit, les conseils et les longs messages sans élément associé s'ouvrent dans une fenêtre de lecture.
 
-Vous pouvez parcourir la liste au clavier : les flèches déplacent la sélection, Entrée ou Espace ouvre la notification sélectionnée, et Échap ferme le panneau. Le panneau passe au-dessus des autres éléments flottants pour que le focus reste à l'intérieur tant qu'il est ouvert.
+Chaque ligne a deux boutons à droite. La croix (**Ignorer**) retire la notification de votre propre liste ; le message qui s'affiche vous permet de revenir en arrière avec **Annuler**. Les trois points (**Plus d’actions**) déplient les actions de cette notification. Sur téléphone ou tablette, vous pouvez aussi faire glisser une ligne : vers la droite pour l'ignorer, vers la gauche pour la reporter. La ligne indique ce qui se passera quand vous relâchez.
 
-Pendant le premier chargement de la liste, des lignes de substitution grises, en forme de vraies notifications, apparaissent à la place d’un spinner, pour que la mise en page ne saute pas quand les vraies lignes arrivent. Lorsque vous ignorez ou reportez une ligne, les lignes situées en dessous remontent en douceur plutôt que de sauter. Un groupe replié se déplie avec une animation.
+Fermez le panneau avec Échap, en cliquant à côté ou en cliquant de nouveau sur la cloche. Sur téléphone, un bouton de fermeture se trouve en haut à droite.
 
-## La page complète des notifications
+Au premier chargement, vous voyez des lignes grises qui ressemblent à de vraies notifications au lieu d'un indicateur de chargement, pour que la mise en page ne saute pas à l'arrivée des vraies lignes. Quand vous ignorez une ligne, celles du dessous remontent en douceur au lieu de sauter.
 
-Si vous avez besoin de plus d'espace que le panneau ne le permet, cliquez sur **Voir toutes les notifications** en bas du panneau. Cela ouvre la page dédiée des notifications avec la même liste et le même panneau de détail, plus un en-tête plus clair qui affiche votre nombre de non-lus et un menu **Plus d'options**. C'est utile lorsque vous voulez trier de nombreuses notifications à la fois ou remontrer loin dans l'historique.
+## Actions sur une notification
 
-## Cartes d'arrivée
+Les actions proposées dépendent de la notification :
 
-Lorsque vous ouvrez l'application, les notifications que vous n'avez ni vues ni lues apparaissent sous forme de petit pile de cartes en haut à droite. Chaque carte montre l'icône, le titre, le contexte et l'action disponible pour cette notification. Les cartes avancent automatiquement après quelques secondes, mais vous pouvez cliquer sur **Voir** pour passer directement à l'élément, choisir **Plus tard** pour renvoyer la pile à la cloche, ou passer manuellement à la carte suivante.
+- **Ouvrir** (ou **Tout ouvrir** pour une notification qui porte sur plusieurs factures) : ouvre l'élément concerné.
+- **Envoyer un rappel** : envoie une relance de paiement pour une facture en retard.
+- **Plus tard** : reporte la notification, voir ci-dessous.
+- **Lire** : ouvre les nouveautés produit, les conseils et les longs messages dans la fenêtre de lecture.
 
-S'il y a plus de quatre notifications, la dernière carte est un récapitulatif indiquant combien d'autres notifications attendent. Cliquez dessus pour ouvrir la page complète des notifications. Une fois qu'une pile a été affichée, ces notifications sont marquées comme vues, donc les mêmes éléments ne réapparaîtront pas.
-
-Les cartes d'arrivée restent silencieuses dans les cas suivants :
-
-- Ne pas déranger est activé.
-- Le panneau de notifications ou la page de notifications est déjà ouvert.
-- Il n'y a pas de notifications non vues et non lues.
+Quand une notification porte sur plusieurs factures à la fois, la ligne affiche aussi les factures individuelles derrière le résumé ; cliquez sur l'une d'elles pour l'ouvrir. Si toutes les actions ne tiennent pas sur une ligne, les autres se trouvent derrière un bouton supplémentaire à trois points.
 
 ## Reporter une notification
 
-Vous pouvez reporter temporairement une notification d'action sans la marquer comme lue. Cliquez sur la cloche pour ouvrir la liste, puis choisissez **Snooze** sur la ligne concernée. Vous pouvez reporter jusqu'à :
+Vous pouvez reporter une notification qui attend quelque chose de vous sans la marquer comme lue. Choisissez **Plus tard**, puis la durée :
 
 - **1 heure** à partir de maintenant
 - **Demain** à 09:00
 - **La semaine prochaine** à 09:00
 
-Après le prochain rafraîchissement, la notification disparaît de la liste des non-lues, mais la ligne reste visible avec un bouton d'annulation jusque-là. Les notes de version et les astuces ne peuvent pas être reportées; vous les lisez ou les marquez comme lues.
+La ligne reste en place et indique jusqu'à quand elle est reportée, avec **annuler** à côté. Les nouveautés produit et les conseils ne peuvent pas être reportés ; vous les lisez ou les ignorez.
 
-## Ne pas déranger
+## Le menu Plus d'options
 
-Ouvrez la liste de notifications et cliquez sur **Plus d'options** (trois points) dans l'en-tête pour activer **Ne pas déranger** pour les notifications push. Choisissez entre :
+En haut du panneau des notifications se trouve **Plus d'options** (trois points). Vous y trouvez :
 
-- **Désactivé**
-- **1 heure**
-- **Jusqu'à demain** à 09:00
+- **Tout marquer comme lu** : marque toutes vos notifications comme lues. Elles restent dans la liste.
+- **Ne pas déranger : désactivé**, **Ne pas déranger : 1 heure** et **Ne pas déranger jusqu'à demain** (jusqu'à 09:00 le lendemain matin).
+- **Activer** : active les notifications push sur cet appareil. Cette ligne n'apparaît que tant que le push n'est pas encore activé ici.
 
-Tant que Ne pas déranger est actif, les notifications push sont retenues, mais les notifications continuent d'apparaître dans l'application et les e-mails restent envoyés. Une puce dans l'en-tête du panneau affiche l'état actif et l'heure d'expiration.
+Lorsque Ne pas déranger est actif, les notifications push sont retenues, mais les notifications apparaissent toujours dans l'application et vos e-mails continuent d'arriver normalement. Une étiquette dans l'en-tête du panneau indique que Ne pas déranger est actif et jusqu'à quelle heure.
 
-## Le panneau de détail
+## Notifications à l'arrivée
 
-Cliquer sur une notification ouvre un panneau à droite avec le contexte complet de cette notification. Pour une facture en retard, vous voyez le total, le montant restant dû, le statut de paiement et la date de facturation. Pour une échéance de TVA, vous voyez la période et la date d'échéance. Pour les notifications groupées, le panneau liste les factures, devis ou enregistrements individuels derrière le résumé.
+À l'ouverture de l'application, les notifications que vous n'avez ni vues ni lues apparaissent sous forme de barre fine d'une ligne : en bas à droite sur ordinateur, juste au-dessus de la barre du bas sur téléphone. La barre affiche l'icône, le titre et le contexte, avec **Voir** pour aller directement à l'élément. Plusieurs notifications s'empilent. Après quelques secondes, la barre passe d'elle-même à la suivante, sauf tant que votre souris ou le focus est dessus. La croix, ou un glissement sur téléphone, la fait disparaître ; tout reste ensuite accessible sous la cloche.
 
-Le panneau attend que l’enregistrement sous-jacent soit chargé avant de changer. Jusqu’alors, la notification précédente reste visible et ses boutons sont inactifs, pour que rien ne bouge sous votre curseur. Une fois l’enregistrement prêt, le panneau effectue un fondu enchaîné vers la nouvelle notification en une seule étape.
+Au-delà de quatre notifications, la dernière barre devient un résumé (le nombre d'**autres notifications**) qui ouvre le panneau des notifications. Ce qui a été affiché en barre compte comme vu et ne réapparaît pas.
 
-Les actions pour cette notification sont classées afin que la plus importante apparaisse en premier et soit mise en évidence comme action principale. Les autres restent sur la même ligne. S'il y a plus d'actions que l'espace ne le permet, les actions supplémentaires sont regroupées derrière le bouton **Plus d'actions** (trois points). Appuyez dessus pour voir les actions restantes sans fermer le panneau.
+Les notifications à l'arrivée restent silencieuses lorsque :
 
-Les actions disponibles dépendent de la notification:
+- Ne pas déranger est actif.
+- Le panneau des notifications est déjà ouvert.
+- L'onglet de l'application est en arrière-plan. Ce qui attend s'affiche dès votre retour.
+- Il n'y a aucune notification non vue et non lue.
 
-- **Marquer comme payée**: enregistre un paiement manuel pour le solde restant et clôt la notification de facture.
-- **Marquer comme déclarée**: marque la période de TVA comme déclarée; s'affiche uniquement pour les notifications d'échéance de TVA.
-- **Envoyer un rappel**: envoie un rappel de paiement pour la facture, affiché pour les factures en retard.
-- **Ouvrir**: ouvre l'enregistrement sous-jacent, comme la facture, le devis ou le contrat.
-- **Reporter** (ou **Plus tard**): diffère temporairement la notification sans la marquer comme lue.
-- **Ignorer** (ou l'icône **X**): supprime la notification de votre propre liste de non-lues. Sur un téléphone, la même icône de fermeture se trouve en haut à droite de la superposition de détail, afin qu'elle ne recouvre pas le montant.
+## Notifications push
 
-Les notes de version et les astuces n'ont pas de panneau de détail, car il n'y a aucun enregistrement sous-jacent sur lequel agir.
-
-Les notifications push fonctionnent dans votre navigateur et dans l'application Android. Sur Android, la notification affiche l'icône de l'application, la couleur de la catégorie et, quand c'est possible, l'avatar de l'expéditeur.
+Les notifications push fonctionnent dans votre navigateur et dans l'application MyCompanyDesk sur votre téléphone. Sur Android, la notification affiche l'icône de l'application, la couleur de la catégorie et, quand c'est possible, l'avatar de l'expéditeur.
 
 Si une alerte vous échappe, vérifiez à la fois l'interrupteur de notification et l'adresse e-mail de votre compte.

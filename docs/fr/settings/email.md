@@ -1,12 +1,12 @@
 ---
 title: E-mail
 description: "Choisissez l'adresse d'envoi de vos factures et devis et définissez ce qui figure sous chaque message. Disponible dans tous les abonnements."
-last_verified: 2026-09-30
+last_verified: 2026-10-13
 ---
 
 # E-mail
 
-MyCompanyDesk envoie vos factures et devis par e-mail à vos clients. **Paramètres → E-mail** est le point central de tout ce qui entoure ces e-mails : **Adresses et envoi** pour le côté expédition, **E-mails de factures et devis** pour les e-mails que nous rédigeons pour vos documents, **E-mails de la boîte de réception** pour ce que vous écrivez vous-même, et **Règles** pour le courrier entrant. La page est disponible dans tous les abonnements ; seul l'envoi depuis votre propre domaine fait partie d'Office.
+MyCompanyDesk envoie vos factures et devis par e-mail à vos clients. **Paramètres › E-mail** est le point central de tout ce qui entoure ces e-mails : **Adresses et envoi** pour le côté expédition, **E-mails de factures et devis** pour les e-mails que nous rédigeons pour vos documents, **E-mails de la boîte de réception** pour ce que vous écrivez vous-même, et **Règles** pour le courrier entrant. La page est disponible dans tous les abonnements ; seul l'envoi depuis votre propre domaine fait partie d'Office.
 
 Les règles et les expéditeurs approuvés du courrier entrant se trouvent sous **Règles** ; voir plus bas [Recevoir : boîtes mail et règles](#recevoir-boites-mail-et-regles).
 
@@ -45,7 +45,7 @@ Sous **Vous envoyez par défaut depuis**, vous choisissez votre adresse d'envoi 
 
 ### Boîtes mail
 
-Sous **Boîtes mail**, vous gérez les boîtes mail de vos domaines connectés : ajoutez une boîte mail pour recevoir le courrier sur une nouvelle adresse de votre propre domaine, ajoutez des adresses supplémentaires à une boîte existante, transférez le courrier entrant vers votre application mail actuelle et reliez l'application mail elle-même. Vous pouvez importer le courrier existant dans une boîte mail existante. Les sections boîtes mail demandent la fonction Boîte de réception ; sans elle, elles restent masquées. La méthode d'envoi reste accessible à tous.
+Sous **Boîtes mail**, vous gérez les boîtes mail de vos domaines connectés : ajoutez une boîte mail pour recevoir le courrier sur une nouvelle adresse de votre propre domaine, ajoutez des adresses supplémentaires à une boîte existante, transférez le courrier entrant vers votre application mail actuelle et reliez l'application mail elle-même. Vous pouvez importer le courrier existant dans une boîte mail existante. Les boîtes mail sur votre propre domaine font partie de la boîte de réception complète d'Office, et un membre d'équipe a aussi besoin du droit d'accès à la boîte de réception. Sans les deux, les sections boîtes mail restent masquées ; la méthode d'envoi reste accessible à tous.
 
 ### Transférer des justificatifs
 
@@ -57,7 +57,7 @@ La page **E-mails de factures et devis** réunit tout ce qui concerne les e-mail
 
 ### Le texte standard
 
-Les e-mails de facture, de devis, de relance et d'avoir partent d'un texte standard et éprouvé, dans la langue du document. Choisissez le type d'e-mail (facture, devis, relance ou avoir) et la langue de l'e-mail, rédigez votre objet et votre message, puis enregistrez. Votre texte porte l'étiquette **Texte personnalisé** ; avec **Revenir au texte standard**, vous récupérez le texte d'origine après une confirmation.
+Les e-mails de facture, de devis, de relance et d'avoir partent d'un texte standard et éprouvé, dans la langue du document. Choisissez le type d'e-mail (facture, devis, relance ou avoir) et la langue de l'e-mail, rédigez votre objet et votre message, puis enregistrez. Votre texte porte l'étiquette **Texte personnalisé** ; avec **Revenir à** suivi du nom de votre style (par exemple **Revenir à Formel**), vous récupérez le texte de ce style après une confirmation.
 
 Le nom du client, le numéro, les montants et les dates de l'exemple sont des exemples : à l'envoi, MyCompanyDesk insère les données du vrai document, laissez donc les espaces réservés à leur place. La phrase sur une demande n'apparaît que si le devis vient d'une demande.
 
@@ -65,7 +65,7 @@ Comme comptable, vous pouvez lire ces textes mais pas les modifier ; le proprié
 
 ### Le style de l'e-mail
 
-Par type d'e-mail de document vous choisissez aussi un **style de l'e-mail** : cinq façons de remplir le texte standard, en contenu, pas en apparence. Le choix vaut pour toutes les langues.
+Par type d'e-mail de document, vous choisissez aussi un **Style de l'e-mail** : cinq façons de remplir le texte standard, en contenu, pas en apparence. Le choix vaut pour toutes les langues.
 
 - **Formel** : le texte d'origine, vouvoyé. Il se tient là depuis le début, donc l'e-mail ne change que quand vous choisissez vous-même un style.
 - **Court** : l'essentiel en quelques lignes, tutoyé.
@@ -73,7 +73,7 @@ Par type d'e-mail de document vous choisissez aussi un **style de l'e-mail** : c
 - **Complet** : tout ce qu'un client a besoin pour payer ou décider (date, montant, terme, numéro de compte, où envoyer ses questions), et toujours avec le tableau des lignes du document en dessous, même pour un devis.
 - **Minimal** : seulement le numéro, le total et la date ; sans salutation, sans formule de fin.
 
-Quelles parties un style emporte dépend ailleurs de vos propres réglages : l'interrupteur **lignes de facture dans l'e-mail** sous le texte décide si un autre style que Complet reçoit le tableau des lignes, et l'interrupteur dans la fenêtre d'envoi gagne quand vous le voyez là. Un texte personnalisé gagne toujours contre un style : votre propre formulation pour un type part avec l'envoi, et au choix d'un style la page demande si ce texte doit disparaître. Dès que vous choisissez un style, l'exemple à droite se réécrit, et l'aperçu montre exactement ce que votre client reçoit.
+Complet inclut toujours le tableau des lignes, les autres styles non. Dans la fenêtre d'envoi, vous activez ou désactivez le tableau pour chaque e-mail avec **Inclure les lignes de facture** ; l'interrupteur est activé d'office quand le style inclut le tableau. Un texte personnalisé gagne toujours contre un style : votre propre formulation pour un type part avec l'envoi, et au choix d'un style la page demande si ce texte doit disparaître. Dès que vous choisissez un style, l'exemple à droite se réécrit, et l'aperçu montre exactement ce que votre client reçoit.
 
 ### Apparence
 
@@ -83,7 +83,7 @@ L'apparence règle le style et l'en-tête de chaque e-mail client : choisissez l
 
 Sous chaque facture, devis, relance et avoir figurent le nom de votre entreprise et votre numéro KVK, plus les informations que vous activez en dessous. Chaque information est un interrupteur : votre photo, votre numéro de téléphone, votre adresse e-mail, l'adresse de votre site, votre adresse, vos réseaux sociaux, un lien vers votre site en bas, et vos labels et certifications. L'interrupteur des labels n'apparaît qu'une fois que vous en avez ajouté dans les informations de l'entreprise. Pour une information pas encore renseignée, l'interrupteur le dit et renvoie vers les informations de l'entreprise pour la compléter. L'interrupteur de l'adresse existe pour les adresses personnelles : désactivez-le pour garder votre adresse personnelle hors de vos e-mails ; la facture elle-même (le pdf) affiche toujours l'adresse complète.
 
-Les informations viennent des informations de l'entreprise, ce que vous voyez est donc ce que reçoit votre client : le téléphone, l'adresse, le numéro KvK, votre photo et le lien vers votre site y apparaissent dès que vous les remplissez. Si vous les modifiez sous **Paramètres → Informations de l'entreprise**, les deux restent synchronisés.
+Les informations viennent des informations de l'entreprise, ce que vous voyez est donc ce que reçoit votre client : le téléphone, l'adresse, le numéro KvK, votre photo et le lien vers votre site y apparaissent dès que vous les remplissez. Si vous les modifiez sous **Paramètres › Informations de l'entreprise**, les deux restent synchronisés.
 
 ## E-mails de la boîte de réception
 
@@ -114,12 +114,12 @@ MyCompanyDesk bloque le courrier sortant qui ressemble à un abus, afin que notr
 
 Tout ce qui concerne le courrier entrant se règle désormais également sur la page E-mail :
 
-- **Boîtes mail, adresses supplémentaires, transfert et import** se trouvent sous **Paramètres → E-mail → Adresses et envoi**. Les anciens liens vers les paramètres de la boîte de réception arrivent là automatiquement.
-- **Les règles du courrier entrant et les expéditeurs approuvés** se trouvent sous **Paramètres → E-mail → Règles**. Elles étaient auparavant un onglet de la boîte de réception ; cette rangée d'onglets a disparu, et les anciens liens comme /inbox/regels arrivent automatiquement au nouvel endroit. La page n'existe que pour les espaces de travail disposant de la fonction Boîte de réception.
+- **Boîtes mail, adresses supplémentaires, transfert et import** se trouvent sous **Paramètres › E-mail › Adresses et envoi**. Les anciens liens vers les paramètres de la boîte de réception arrivent là automatiquement.
+- **Les règles du courrier entrant et les expéditeurs approuvés** se trouvent sous **Paramètres › E-mail › Règles**. Elles étaient auparavant un onglet de la boîte de réception ; cette rangée d'onglets a disparu, et les anciens liens comme /inbox/regels arrivent automatiquement au nouvel endroit. La page n'existe que si votre espace de travail dispose de la boîte de réception complète, qui fait partie d'Office.
 - Pour savoir si un e-mail est bien arrivé, consultez le dossier **Envoyés** de la boîte de réception : il indique pour chaque message s'il a atteint son destinataire.
-- **La suppression de données RGPD** (supprimer toutes les conversations et pièces jointes d'une adresse précise, administrateurs uniquement) se trouve sous **Paramètres → Gegevens wissen**.
+- **La suppression de données RGPD** (supprimer toutes les conversations et pièces jointes d'une adresse précise, administrateurs uniquement) se trouve sous **Paramètres › Gegevens wissen**.
 
 ## Voir aussi
 
 - [Paramètres de l'entreprise](/fr/settings/company) : les informations d'entreprise derrière votre pied de page
-- [Abonnement & paiements](/fr/settings/billing) : l'envoi depuis votre propre domaine fait partie d'Office
+- [Abonnement et paiements](/fr/settings/billing) : l'envoi depuis votre propre domaine fait partie d'Office

@@ -1,7 +1,7 @@
 ---
 title: Beveiliging
 description: "Beveilig je account met een sterk wachtwoord, tweestapsverificatie en zicht op je actieve sessies, allemaal onder Instellingen, Inloggen."
-last_verified: 2026-09-30
+last_verified: 2026-10-13
 ---
 
 # Beveiliging
@@ -10,7 +10,7 @@ Bescherm je account met sterke authenticatie. Alles hieronder vind je in het Ins
 
 ## Wachtwoord
 
-Gebruik een sterk, uniek wachtwoord voor je MyCompanyDesk-account. Wijzig het via **Instellingen > Inloggen**.
+Gebruik een sterk, uniek wachtwoord voor je MyCompanyDesk-account. Wijzig het via **Instellingen › Inloggen**.
 
 ### Wachtwoordvereisten
 
@@ -21,19 +21,19 @@ Gebruik een sterk, uniek wachtwoord voor je MyCompanyDesk-account. Wijzig het vi
 
 Voeg een extra beveiligingslaag toe aan je account:
 
-1. Ga naar **Instellingen > Inloggen**
+1. Ga naar **Instellingen › Inloggen**
 2. Start het instellen van verificatie in twee stappen
 3. Scan de QR-code met je authenticator-app (Google Authenticator, 1Password, Authy en vergelijkbare apps)
 4. Vul de verificatiecode in om te bevestigen
 5. Bewaar je **back-upcodes** op een veilige plek
 
-Heb je de geïnstalleerde MyCompanyDesk-app, dan kun je codes ook in de app zelf laten genereren. Kies tijdens het instellen voor **Gebruik de MyCompanyDesk-app**, en vind je inlogcodes daarna onder **Instellingen > Inlogcodes** in de app.
+Heb je de geïnstalleerde MyCompanyDesk-app, dan kun je codes ook in de app zelf laten genereren. Kies tijdens het instellen voor **Gebruik de MyCompanyDesk-app**, en vind je inlogcodes daarna onder **Instellingen › Inlogcodes** in de app.
 
 Met 2FA ingeschakeld heb je zowel je wachtwoord als een code uit je authenticator-app nodig om in te loggen.
 
 ### Inloggen met 2FA
 
-Na het invullen van je wachtwoord vraagt het inlogscherm om de 6-cijferige code uit je authenticator-app. Gebruik je de MyCompanyDesk-app als authenticator, open de app en gebruik de huidige code bij **Instellingen > Inlogcodes**. Geen toegang tot je app? Vul in hetzelfde veld een van je back-upcodes in.
+Na het invullen van je wachtwoord vraagt het inlogscherm om de 6-cijferige code uit je authenticator-app. Gebruik je de MyCompanyDesk-app als authenticator, open de app en gebruik de huidige code bij **Instellingen › Inlogcodes**. Geen toegang tot je app? Vul in hetzelfde veld een van je back-upcodes in.
 
 Log je in met je wachtwoord en een code, dan kun je **dit apparaat 30 dagen onthouden** aanvinken; dit apparaat slaat de codestap dan een maand over.
 
@@ -49,9 +49,10 @@ De wachttijd bestaat zodat een aanvaller met alleen je wachtwoord niet meteen de
 
 ### 2FA uitschakelen
 
-1. Ga naar **Instellingen > Inloggen**
+1. Ga naar **Instellingen › Inloggen**
 2. Kies voor het uitschakelen van verificatie in twee stappen
-3. Bevestig met een actuele code uit je authenticator-app, een back-upcode of je wachtwoord
+3. Bevestig eerst dat jij het bent (zie hieronder)
+4. Heb je dat niet net gedaan, dan vraagt het formulier nog om een actuele code uit je authenticator-app, een back-upcode of je wachtwoord
 
 ## Bevestig dat jij het bent bij gevoelige wijzigingen
 
@@ -59,12 +60,12 @@ Sommige wijzigingen zijn te belangrijk om alleen achter een wachtwoord te zitten
 
 - een bestaand IBAN- of PayPal-adres wijzigt of wist
 - je inlogadres of wachtwoord wijzigt
-- een domein verwijdert of verhuist
+- een domein verwijdert of verhuist, of de DNS-instellingen van je domein aanpast
 - mail doorstuurt naar een ander adres
-- een API-sleutel aanmaakt
-- iemand beheerder maakt of het eigendom overdraagt
+- iemand uitnodigt, iemand beheerder maakt of het eigendom overdraagt
+- tweestapsverificatie of een passkey toevoegt of weghaalt, of nieuwe back-upcodes maakt
 
-Je bevestigt met je passkey, een code uit je authenticator-app (of uit **Instellingen > Inlogcodes** in de geïnstalleerde app), of een code van 6 cijfers per mail. Je wachtwoord telt voor deze stap niet: wie alleen je wachtwoord kent, is nog niet automatisch jij. Na een bevestiging heb je zo'n 15 minuten rust, en een verse inlog met code, passkey of Google telt mee. Iets voor het eerst invullen (bij de start, een nog leeg IBAN-veld) vraagt niets, want er is geen bestaande waarde om te beschermen.
+Je bevestigt met je passkey, een code uit je authenticator-app (of uit **Instellingen › Inlogcodes** in de geïnstalleerde app), of een code van 6 cijfers per mail. Je wachtwoord telt voor deze stap niet: wie alleen je wachtwoord kent, is nog niet automatisch jij. Na een bevestiging heb je zo'n 15 minuten rust, en een verse inlog met code, passkey of Google telt mee. Iets voor het eerst invullen (bij de start, een nog leeg IBAN-veld) vraagt niets, want er is geen bestaande waarde om te beschermen.
 
 ## Inlogcode per mail op een nieuwe browser
 
@@ -81,8 +82,8 @@ Eén uitzondering: staat je inlogadres op een domein waarvan MyCompanyDesk de ma
 Je kunt inloggen zonder wachtwoord met een eenmalige link die naar je e-mail wordt gestuurd:
 
 1. Ga naar de inlogpagina
-2. Klik op **Stuur mij een inloglink**
-3. Vul je e-mailadres in
+2. Vul je e-mailadres in
+3. Klik op **Stuur me een inloglink**
 4. Open je inbox en klik op de link
 
 De link is 15 minuten geldig en kan maar één keer worden gebruikt. Uit veiligheidsoogpunt maakt het aanvragen van een nieuwe link eerdere links ongeldig.
@@ -93,9 +94,10 @@ Bevestig je je e-mailadres na het aanmelden, dan word je automatisch ingelogd. E
 
 ## Passkeys
 
-Met passkeys log je in met biometrie of een beveiligingssleutel in plaats van een wachtwoord. Ze zijn beschikbaar voor elke gebruiker: beheer je eigen passkeys via **Instellingen > Inloggen**.
+Met passkeys log je in met biometrie of een beveiligingssleutel in plaats van een wachtwoord. Ze zijn beschikbaar voor elke gebruiker: beheer je eigen passkeys via **Instellingen › Inloggen**.
 
 - Registreer meerdere passkeys (Face ID, Touch ID, Windows Hello, hardwaresleutels)
+- Passkeys toevoegen en beheren doe je in je browser op app.mycompanydesk.com; in de geïnstalleerde app werken ze niet
 - Geef elke passkey een naam, zodat je apparaten afzonderlijk kunt intrekken
 - Op het inlogscherm verschijnt na het invullen van je e-mailadres een passkey-knop als je account er een heeft
 - Passkeys dekken ook de **Bevestig dat jij het bent**-controle bij gevoelige wijzigingen (zie hierboven), waar een wachtwoord niet telt
@@ -104,7 +106,7 @@ Op een domein waarvan MyCompanyDesk de mailbox verzorgt verandert een passkey he
 
 ## Sessies
 
-De sessiekaart op **Instellingen > Inloggen** heeft één actie: **Uitloggen**, die je huidige sessie beëindigt. Er is geen lijst met andere apparaten en geen intrekken per sessie. Vermoed je dat iemand anders toegang heeft tot je account, wijzig dan je wachtwoord. Je wachtwoord wijzigen of resetten beëindigt elke andere sessie op je account (het apparaat waarop je het wijzigt, blijft ingelogd) en trekt de vertrouwde apparaten in die de codestap overslaan.
+De kaart **Uitloggen op dit apparaat** op **Instellingen › Inloggen** heeft één actie: **Uitloggen**, die je huidige sessie beëindigt. Er is geen lijst met andere apparaten en geen intrekken per sessie. Vermoed je dat iemand anders toegang heeft tot je account, wijzig dan je wachtwoord. Je wachtwoord wijzigen of resetten beëindigt elke andere sessie op je account (het apparaat waarop je het wijzigt, blijft ingelogd) en trekt de vertrouwde apparaten in die de codestap overslaan.
 
 Je sessie schuift mee met je gebruik: zolang je MyCompanyDesk blijft gebruiken, verlengt je sessie zichzelf en blijf je ingelogd. Na 30 dagen zonder gebruik eindigt je sessie, en een sessie duurt nooit langer dan 90 dagen vanaf het moment dat je inlogde. Na opnieuw inloggen beginnen beide termijnen opnieuw.
 
@@ -115,7 +117,7 @@ Log je in met Google of Microsoft:
 - De authenticatie wordt afgehandeld door de aanbieder
 - Bij inloggen met Microsoft gebruiken we alleen het e-mailadres dat Microsoft zelf bevestigt (de inlognaam van je Microsoft-account). Kan Microsoft dat niet bevestigen, dan log je in met je e-mailadres en sturen we je een inloglink
 - MyCompanyDesk ziet of bewaart je Google- of Microsoft-wachtwoord nooit
-- Je kunt daarnaast een wachtwoord instellen via **Instellingen > Inloggen** om ook met e-mail te kunnen inloggen
+- Wil je ook met je e-mailadres en een wachtwoord inloggen, kies dan **Stuur link om een wachtwoord in te stellen** op **Instellingen › Inloggen**; via die link stel je een wachtwoord in
 
 ## Gegevensbescherming
 
@@ -131,8 +133,13 @@ Zie [Cookies en analytics](/account/cookies-tracking) voor meer informatie over 
 
 ## Account opzeggen
 
-Wil je stoppen met MyCompanyDesk, ga dan naar **Instellingen > Account opzeggen**. Deze rij is alleen zichtbaar voor beheerders. Lees de pagina rustig door: die legt uit wat er met je abonnement en je gegevens gebeurt voordat je bevestigt.
+Wil je stoppen met MyCompanyDesk, ga dan naar **Instellingen › Account opzeggen**. Deze rij is alleen zichtbaar voor beheerders. Lees de pagina rustig door: die legt uit wat er met je abonnement en je gegevens gebeurt voordat je bevestigt.
+
+- **Abonnement opzeggen**: je betaalt vanaf de volgende periode niets meer en gaat aan het eind van je betaalperiode over naar het gratis Desk. Je gegevens blijven bewaard; zet je Office later weer aan, dan gaat alles verder waar het was. In de iPhone-app zeg je je abonnement niet op; dat doe je via mycompanydesk.com.
+- **Account definitief verwijderen**: ben je eigenaar van de werkruimte, dan stuur je met **Verzoek versturen** een verzoek om je account en de werkruimte met alle gegevens te verwijderen. We nemen dan per e-mail contact met je op om het af te ronden; er wordt op dat moment nog niets gewist.
+
+Wil je niet stoppen maar opnieuw beginnen, gebruik dan **Instellingen › Gegevens wissen**.
 
 ::: warning
-Je account opzeggen is een grote stap. Download eerst een kopie van je administratie via **Instellingen > Gegevens downloaden**; de Belastingdienst wil dat je je administratie 7 jaar kunt laten zien.
+Je account opzeggen is een grote stap. Download eerst een kopie van je administratie via **Instellingen › Gegevens downloaden**; de Belastingdienst wil dat je je administratie 7 jaar kunt laten zien.
 :::

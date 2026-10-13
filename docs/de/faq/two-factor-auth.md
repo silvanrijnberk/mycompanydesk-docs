@@ -1,7 +1,7 @@
 ---
 title: Zwei-Faktor-Authentifizierung
-description: "Die Zwei-Faktor-Authentifizierung (2FA) ergänzt Ihr Passwort um einen 6-stelligen Code aus einer Authenticator-App, gehen Sie zu Einstellungen > Anmeldung."
-last_verified: 2026-09-29
+description: "Die Zwei-Faktor-Authentifizierung (2FA) ergänzt Ihr Passwort um einen 6-stelligen Code aus einer Authenticator-App, gehen Sie zu Einstellungen › Anmelden."
+last_verified: 2026-10-13
 chatbot:
   triggers: ["two factor", "two-factor", "2fa", "two step", "authenticator", "mfa", "tweestapsverificatie", "twee-factor", "zwei faktor", "authentification deux facteurs", "double authentification"]
   actions:
@@ -12,18 +12,18 @@ chatbot:
 Die Zwei-Faktor-Authentifizierung (2FA) ergänzt Ihr Passwort um einen 6-stelligen Code aus einer Authenticator-App.
 
 So aktivieren Sie 2FA:
-1. Gehen Sie zu Einstellungen → "Anmeldung"
-2. Klicken Sie auf "Authenticator-App aktivieren". Scannen Sie den QR-Code mit einer Authenticator-App (Google Authenticator, 1Password, Authy), oder wählen Sie, wenn Sie die installierte MyCompanyDesk-App verwenden, **Gebruik de MyCompanyDesk-app** aus, um Codes direkt in der App zu erzeugen.
-3. Geben Sie den 6-stelligen Code aus der App oder unter **Instellingen > Inlogcodes** ein und klicken Sie auf "Prüfen & aktivieren"
+1. Gehen Sie zu Einstellungen › "Anmelden"
+2. Klicken Sie auf "Authenticator-App aktivieren". Scannen Sie den QR-Code mit einer Authenticator-App (Google Authenticator, 1Password, Authy), oder wählen Sie, wenn Sie die installierte MyCompanyDesk-App verwenden, **Die MyCompanyDesk-App verwenden** aus, um Codes direkt in der App zu erzeugen.
+3. Geben Sie den 6-stelligen Code aus der App oder unter **Einstellungen › Anmeldecodes** ein und klicken Sie auf "Prüfen & aktivieren"
 4. Bewahren Sie die angezeigten Backup-Codes auf. Jeder Code funktioniert einmal, wenn Sie Ihren Authenticator nicht zur Hand haben
 
-Ab dann fragt die Anmeldung nach E-Mail-Adresse und Passwort zusätzlich nach dem 6-stelligen Code. Wenn Sie die MyCompanyDesk-App als Authenticator nutzen, finden Sie den aktuellen Code unter **Instellingen > Inlogcodes**. Aktivieren Sie die Option, dieses Gerät 30 Tage zu merken, und vertrauenswürdige Geräte überspringen den Code. Wenn Sie Ihr Passwort ändern oder zurücksetzen, endet dieses Vertrauen auf jedem Gerät, sodass der 6-stellige Code wieder abgefragt wird.
+Ab dann fragt die Anmeldung nach E-Mail-Adresse und Passwort zusätzlich nach dem 6-stelligen Code. Wenn Sie die MyCompanyDesk-App als Authenticator nutzen, finden Sie den aktuellen Code unter **Einstellungen › Anmeldecodes**. Aktivieren Sie die Option, dieses Gerät 30 Tage zu merken, und vertrauenswürdige Geräte überspringen den Code. Wenn Sie Ihr Passwort ändern oder zurücksetzen, endet dieses Vertrauen auf jedem Gerät, sodass der 6-stellige Code wieder abgefragt wird.
 
 Auf derselben Seite können Sie außerdem Passkeys hinzufügen (Touch ID, Face ID, Windows Hello oder Ihr Telefon), jedem Passkey einen Namen geben und nicht mehr genutzte Passkeys entfernen. Der Anmeldebildschirm bietet danach auch die Anmeldung per Passkey an.
 
 Keine 2FA in Ihrem Konto? Auch dann läuft die Anmeldung auf einem Browser, den wir noch nicht kennen, nicht ohne Kontrolle: ein 6-stelliger Code per E-Mail, 15 Minuten gültig, und MyCompanyDesk merkt sich diesen Browser danach 30 Tage. Siehe [Anmeldecode per E-Mail auf einem neuen Browser](/de/account/security#anmeldecode-per-e-mail-auf-einem-neuen-browser).
 
-Empfindliche Änderungen (Ihre IBAN, Anmeldeadresse, Ihr Passwort, eine Domain, die umzieht, E-Mail-Weiterleitung, API-Schlüssel oder ein neuer Administrator) verlangen zusätzlich zur Anmeldung eine weitere Prüfung: **„Bestätigen Sie, dass Sie es sind“**, mit einem Passkey, der Code-App oder einem Code per E-Mail. Ein Passwort zählt für diesen Schritt nicht. Siehe [Sicherheit](/de/account/security#bestätigen-sie-dass-sie-es-sind-bei-empfindlichen-änderungen).
+Empfindliche Änderungen (Ihre IBAN, Anmeldeadresse, Ihr Passwort, eine Domain, die umzieht, E-Mail-Weiterleitung oder ein neuer Administrator) verlangen zusätzlich zur Anmeldung eine weitere Prüfung: **„Bestätigen Sie, dass Sie es sind“**, mit einem Passkey, der Code-App oder einem Code per E-Mail. Ein Passwort zählt für diesen Schritt nicht. Siehe [Sicherheit](/de/account/security#bestatigen-sie-dass-sie-es-sind-bei-empfindlichen-anderungen).
 
 Kein Zugriff mehr auf Ihren Authenticator? Geben Sie bei der Anmeldung einen Ihrer Backup-Codes ein, oder nutzen Sie den Link "Kein Zugriff mehr auf Ihren zweiten Faktor?" auf dem Anmeldebildschirm. Nach einer Sicherheitswartezeit von 24 Stunden wird Ihr zweiter Faktor gelöscht und Sie können sich wieder nur mit Ihrem Passwort anmelden.
 

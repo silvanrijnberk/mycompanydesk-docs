@@ -1,6 +1,6 @@
 ---
 title: "Dunkelmodus"
-description: "So wechseln Sie Ihr Theme: gehen Sie zu Einstellungen > Darstellung, wählen Sie Hell, Dunkel oder Automatisch (folgt Ihrem Gerät)."
+description: "So wechseln Sie Ihr Theme: gehen Sie zu Einstellungen › Darstellung, wählen Sie Hell, Dunkel oder Automatisch (folgt Ihrem Gerät)."
 last_verified: 2026-07-02
 chatbot:
   triggers: ["dark mode", "light mode", "switch theme", "change theme", "night mode", "donkere modus", "thema wijzigen", "dunkler modus", "mode sombre"]
@@ -11,22 +11,23 @@ chatbot:
 ## Dunkelmodus in der App
 
 So wechseln Sie Ihr Theme:
-1. Gehen Sie zu Einstellungen → „Darstellung“
+1. Gehen Sie zu Einstellungen › „Darstellung“
 2. Wählen Sie Hell, Dunkel oder Automatisch (folgt Ihrem Gerät)
 3. Die Änderung wird sofort angewendet und automatisch gespeichert
 
-Tipp: Sie können auch den Theme-Schalter im Navigationsmenü für einen schnellen Wechsel nutzen.
+Tipp: Für einen schnellen Wechsel nutzen Sie **Dunkelmodus** oder **Hellmodus** in Ihrem Kontomenü in der oberen Leiste.
 
 ## Dunkelmodus für Ihre Website
 
-Haben Sie eine gehostete Geschäftswebsite? Dann können Sie auch für Ihre Besucher einen Dunkelmodus einrichten. Öffnen Sie den Bereich **Website** in der App, gehen Sie zur Seite **Stil** und suchen Sie die Dunkelmodus-Einstellung im Abschnitt **Farben**.
+Haben Sie eine Website über MyCompanyDesk? Dann können Sie auch Ihre Website dunkel gestalten. Öffnen Sie **Website** in der App, gehen Sie im Editor zum Bildschirm **Stijl** (Stil) und suchen Sie den Abschnitt **Donkere kleuren** (dunkle Farben). Diese Beschriftungen des Website-Editors erscheinen auf Niederländisch.
 
-Drei Optionen:
+Vier Optionen:
 
-- **Aus** (Standard): Kein Dunkelmodus. Ihre Site bleibt im hellen Farbschema.
-- **Schaltfläche**: Besucher sehen einen Sonne/Mond-Umschalter in der Navigationsleiste. Die Voreinstellung ist immer hell; Besucher, die den dunklen Modus möchten, müssen ihn selbst aktivieren. Nach der Wahl wird die Einstellung im Browser für den nächsten Besuch gespeichert.
-- **System folgen**: Die Site übernimmt automatisch die Betriebssystem-Einstellung des Besuchers. Passt sich an, sobald der Besucher seine Systemeinstellung ändert.
+- **Uit** (aus, Standard): Ihre Website ist immer hell.
+- **Altijd donker** (immer dunkel): Jeder Besucher sieht Ihre Website dunkel.
+- **Knop in menubalk** (Schaltfläche in der Menüleiste): Besucher wählen selbst hell oder dunkel über eine Schaltfläche in der Menüleiste.
+- **Volgt het toestel** (folgt dem Gerät): dunkel für Besucher, deren Smartphone oder Computer auf dunkel steht, sonst hell.
 
-Wenn Sie den Dunkelmodus aktivieren, erscheint eine dunkle Farbpalette, in der Sie für jede Markenfarbe eine nachtoptimierte Version festlegen können. Die Palette leer zu lassen ist in Ordnung; die Site verwendet dann eine automatische Invertierung, bei der Ihre Marken- und Akzentfarben erhalten bleiben.
+Wählen Sie etwas anderes als Uit, suchen Sie unter **Kies een donkere set** (dunkles Set wählen) ein fertiges Set aus: "Bijna zwart", "Nachtblauw", "Donkergroen" oder "Warm antraciet". Zusätzlich können Sie für jede Farbe eine eigene Nachtversion festlegen. Oben auf dem Stijl-Bildschirm bietet die Karte **Liever een donkere site?** (lieber eine dunkle Website?) mit **Maak mijn site donker** (meine Website dunkel machen) einen schnellen Weg.
 
 Siehe [Website-Builder](/de/advanced/business-page) für mehr zur Gestaltung Ihrer Website.

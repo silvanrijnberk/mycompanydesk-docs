@@ -1,7 +1,7 @@
 ---
 title: Weiterleitung an Steuerberater
 description: "Senden Sie Rechnungen und Ausgaben automatisch an das Programm Ihres Steuerberaters, etwa Exact, SnelStart, Twinfield oder Yuki, statt einzeln."
-last_verified: 2026-08-19
+last_verified: 2026-10-13
 ---
 
 # Weiterleitung an Steuerberater
@@ -10,11 +10,13 @@ Wenn Ihr Steuerberater in einem eigenen Paket arbeitet, etwa Exact, SnelStart, T
 
 ## Wo Sie es finden
 
-Gehen Sie zu **Einstellungen** > **Zugriff und Steuerberater** (`/settings/team`) und öffnen Sie den Bereich **Steuerberater**. Unter der Kontaktliste finden Sie die Karte **Automatische Weiterleitung**.
+Gehen Sie zu **Einstellungen › Ihr Buchhalter** (`/settings/boekhouder`). Unter der Kontaktliste finden Sie die Karte **Automatische Weiterleitung**.
+
+Die automatische Weiterleitung ist Teil von **Office**. Im Desk-Tarif sehen Sie an dieser Stelle eine Schaltfläche zum Wechseln des Tarifs. Ein einzelnes Dokument von Hand an Ihren Buchhalter senden (siehe unten) geht in jedem Tarif, und der Buchhalterzugang ist ebenfalls in jedem Tarif kostenlos.
 
 ## Was Sie einstellen können
 
-Die Karte liest aus und schreibt auf `/api/team/accountant-delivery`. Jedes Arbeitsbereichsmitglied kann die Einstellungen sehen; nur Team-Admins können sie ändern.
+Jedes Arbeitsbereichsmitglied kann die Einstellungen sehen; nur Team-Admins können sie ändern.
 
 | Einstellung | Optionen |
 |---|---|
@@ -54,15 +56,15 @@ Nur Belege, die für einen Steuerberater bereit sind, verlassen den Arbeitsberei
 - Rechnungen müssen versandt sein; Entwürfe werden nicht weitergeleitet.
 - Wenn die Belegpflicht aktiv ist, müssen Ausgaben einen Beleg haben.
 
-Die Engine arbeitet mit einem Wasserzeichen (`last_delivered_at`), nicht mit einzelnen Status-Hooks, sodass kein Beleg verpasst wird, weil später ein neuer Zahlungsweg hinzukommt.
+Die Weiterleitung merkt sich, bis zu welchem Zeitpunkt alles zugestellt wurde, und nimmt danach alles Neue mit. So geht kein Beleg verloren, auch wenn später ein neuer Zahlungsweg hinzukommt.
 
 ## Zustellungsprotokoll und Aktivität
 
-Die Seite **Zugang und Steuerberater** führt ein Zustellungsprotokoll, das zeigt, was wann weitergeleitet wurde. Außerdem wird eine Aktivitätsübersicht des verknüpften Steuerberaters erfasst: was er in Ihrem Arbeitsbereich angesehen oder geändert hat. Beide Protokolle sind für Eigentümer und Admins sichtbar; der Steuerberater sieht das Zustellungsprotokoll, kann es aber nicht löschen.
+Die Seite **Ihr Buchhalter** führt unter **Zuletzt gesendet** ein Zustellungsprotokoll, das zeigt, was wann weitergeleitet wurde. Außerdem wird eine Aktivitätsübersicht des verknüpften Steuerberaters erfasst: was er in Ihrem Arbeitsbereich angesehen oder geändert hat. Beide Protokolle sind für Eigentümer und Admins sichtbar; der Steuerberater sieht das Zustellungsprotokoll, kann es aber nicht löschen.
 
 ## Manuelle Weiterleitung aus einem Beleg
 
-Sie können auch eine einzelne Rechnung, Ausgabe oder ein Angebot direkt von der Detailseite an Ihren Steuerberater übermitteln. Suchen Sie die Schaltfläche **An Steuerberater senden** neben den E-Mail-Aktionen. Damit wird eine manuelle Zustellung im selben Protokoll erfasst, sodass Sie sie neben der automatischen Weiterleitung sehen. Auch fehlgeschlagene manuelle Sendungen werden protokolliert, damit Sie denselben Beleg nicht versehentlich zweimal senden.
+Sie können auch eine einzelne Rechnung, Ausgabe oder ein Angebot direkt von der Detailseite an Ihren Steuerberater übermitteln, in jedem Tarif. Suchen Sie die Schaltfläche **An Buchhalter senden** neben den E-Mail-Aktionen. Damit wird eine manuelle Zustellung im selben Protokoll erfasst, sodass Sie sie neben der automatischen Weiterleitung sehen. Auch fehlgeschlagene manuelle Sendungen werden protokolliert, damit Sie denselben Beleg nicht versehentlich zweimal senden.
 
 ## Gesendete Elemente
 
@@ -70,7 +72,7 @@ Manuelle Sendungen und andere Arbeitsbereichs-E-Mails erscheinen im Posteingang 
 
 ## Verwandt
 
-- [Zugriff und Steuerberater](/de/settings/team) für das Einladen Ihres Steuerberaters und die Auswahl eines Kontakts
+- [Personen mit Zugriff und Ihr Buchhalter](/de/settings/team) für das Einladen Ihres Steuerberaters und die Auswahl eines Kontakts (in der App: **Einstellungen › Ihr Buchhalter**)
 - [Rechnungen](/de/features/invoices) für das Versenden und Verwalten von Verkaufsrechnungen
 - [Ausgaben](/de/features/expenses) für das Hinzufügen von Belegen und Ausgaben
 - [Angebote](/de/features/quotes) für das Erstellen und Umwandeln von Angeboten

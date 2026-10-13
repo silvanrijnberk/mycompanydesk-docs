@@ -1,7 +1,7 @@
 ---
 title: "Benachrichtigungseinstellungen"
 description: "So verwalten Sie Ihre Benachrichtigungseinstellungen: Themen ein- oder ausschalten und Push-Benachrichtigungen aktivieren."
-last_verified: 2026-10-06
+last_verified: 2026-10-13
 chatbot:
   triggers:
     - "notifications"
@@ -20,8 +20,8 @@ chatbot:
 
 So verwalten Sie Ihre Benachrichtigungseinstellungen:
 
-1. Gehen Sie zu Einstellungen → „Benachrichtigungen“
-2. Schalten Sie die Benachrichtigungsthemen ein oder aus. Die Schalter stehen in fünf Gruppen: **Jede Woche**, **Ihr Geld**, **Ihre Kunden**, **Ihr Team** und **Von MyCompanyDesk**, und unter jedem Schalter zeigt die App, wie die Meldung ankommt: **In der App**, **Per E-Mail** oder **Auf dem Telefon**. Die Rechnungs-, Geld-, Fristen- und Lead-Themen nutzen alle drei; beim Wochen-Thema kommt nur bei Eile ein Signal auf dem Telefon dazu. Die Themen sind:
+1. Gehen Sie zu Einstellungen › „Benachrichtigungen“
+2. Schalten Sie die Benachrichtigungsthemen ein oder aus. Die Schalter stehen in fünf Gruppen: **Jede Woche**, **Ihr Geld**, **Ihre Kunden**, **Ihr Team** und **Von MyCompanyDesk**, und unter jedem Schalter zeigt die App, wie die Meldung ankommt: **In der App**, **Per E-Mail** oder **Auf Ihrem Telefon**. Die Rechnungs-, Geld-, Fristen- und Lead-Themen nutzen alle drei; beim Wochen-Thema kommt nur bei Eile ein Signal auf dem Telefon dazu. Die Themen sind:
    - **Montags, was diese Woche zu tun ist**: die Montags-E-Mail mit den Aufgaben aus **Jetzt erledigen** auf Ihrem Dashboard. An jedem Montag eine E-Mail, nur wenn etwas ansteht; wenn etwas dringend ist, kommt auch eine Benachrichtigung auf Ihrem Telefon an. Die E-Mail geht nur an den Workspace-Inhaber, der deshalb allein diesen Schalter sieht. Der Schalter ist standardmäßig aktiviert; der Abmeldelink am Ende der E-Mail schaltet ihn wieder aus. Solange die separate wöchentliche Bankübersicht ausgeschaltet bleibt (der Standard), sind die noch nicht zugeordneten Bankbuchungen auch in dieser E-Mail enthalten.
    - **Wenn eine Rechnung zu spät bezahlt wird**: überfällige Rechnungen, Rechnungen, die bald fällig sind, unbearbeitete Entwürfe, fehlgeschlagene Lastschriften, fehlgeschlagene Rechnungszustellungen, pausierte automatische Vertragsabrechnung, automatisch erstellte Stundenrechnungen und was mit ihnen passiert (bereit, im Versandplan, zurückgehalten oder gesendet), Signale zu Ihren Ausgaben, zum Beispiel wiederkehrende Ausgaben oder ein Lieferant, der still geworden ist, und Stunden ohne Tarif.
    - **Wenn ein Kunde bezahlt hat**: Zahlungen, bestätigte Zahlungen und auffällige Banktransaktionen.
@@ -32,80 +32,73 @@ So verwalten Sie Ihre Benachrichtigungseinstellungen:
    - **Tipps und Neuigkeiten von MyCompanyDesk**: die monatliche Produktaktualisierung per E-Mail. Höchstens eine E-Mail pro Monat, Sie können sich jederzeit abmelden.
    Wirklich wichtige Nachrichten zu Ihrem Konto senden wir immer; die können Sie nicht ausschalten.
 3. Auf derselben Seite aktivieren Sie auch Push-Benachrichtigungen für das Gerät, das Sie gerade nutzen
-4. Wenn Sie die Browser-Abfrage geschlossen haben, klicken Sie oben in der App auf die Benachrichtigungsglocke, wählen Sie **Weitere Optionen** (drei Punkte) und klicken Sie dann auf **Aktivieren**, um Push-Benachrichtigungen später nachzuholen
+4. Wenn Sie die Browser-Abfrage geschlossen haben, klicken Sie oben in der App auf die Benachrichtigungsglocke, wählen Sie **Mehr Optionen** (drei Punkte) und klicken Sie dann auf **Aktivieren**, um Push-Benachrichtigungen später nachzuholen
 5. Änderungen werden automatisch gespeichert
 
 Push-Benachrichtigungen sind an Ihre Sitzung gebunden. Sobald Sie sich abmelden, empfängt das Gerät Ihre Benachrichtigungen nicht mehr; sobald Sie sich wieder anmelden, registriert sich die App oder der Browser erneut für Benachrichtigungen.
 
 ## Die Benachrichtigungsliste
 
-Benachrichtigungen sind in drei Gruppen unterteilt, damit die Liste wie eine Zeitleiste lesbar ist: **Heute**, **Gestern** und **Älter**.
+Klicken Sie oben in der App auf die Glocke, um Ihre Benachrichtigungen zu öffnen. Sie sind nach Tagen gruppiert, sodass sich die Liste wie eine Zeitleiste liest: **Heute**, **Gestern** und **Früher**. Ganz unten holen Sie mit **Mehr laden** ältere Benachrichtigungen nach.
 
-Wenn Sie die Liste öffnen, werden alle darin enthaltenen Benachrichtigungen als gesehen markiert: die Zahl auf der Glocke geht auf null zurück, aber jede Zeile behält ihren eigenen ungelesenen Punkt, bis Sie sie öffnen.
+Sobald Sie die Liste öffnen, gelten alle Benachrichtigungen darin als gesehen: Die Zahl an der Glocke springt auf null, aber jede Zeile behält ihren eigenen Ungelesen-Punkt, bis Sie sie öffnen.
 
-Werden an einem Tag mehrere ähnliche informative Updates empfangen, etwa Release Notes oder Produkttipps, klappt sie sich hinter der neuesten Meldung zusammen. Ein Button zeigt, wie viele weitere es gibt; ein Klick expandiert die Gruppe, ein weiterer klappt sie wieder ein.
+Kommen an einem Tag drei oder mehr ähnliche informative Updates herein, etwa Produktneuigkeiten oder Tipps, werden sie unter dem neuesten zusammengefasst. Eine Schaltfläche zeigt, wie viele ähnliche Benachrichtigungen es noch gibt; ein Klick blendet sie ein, **Weniger anzeigen** klappt sie wieder zu.
 
-Auf dem Telefon oder Tablet können Sie eine Zeile swipen, um schnell zu handeln: nach links zum Verwerfen, nach rechts zum Snoozen. Die Zeile zeigt an, was beim Loslassen passiert. Auf jeder Zeile sind außerdem Buttons zum Verwerfen und Snoozen verfügbar.
+Ein Klick auf eine Benachrichtigung führt Sie direkt zum zugehörigen Eintrag, etwa zur Rechnung, zum Angebot oder zum Vertrag. Produktneuigkeiten, Tipps und lange Nachrichten ohne eigenen Eintrag öffnen sich in einem Lesefenster.
 
-Sie können die Liste mit der Tastatur steuern: Pfeiltasten verschieben die Auswahl, Enter oder Leertaste öffnen die ausgewählte Benachrichtigung, Esc schließt den Bereich. Der Bereich liegt über anderer schwebender UI, damit der Fokus darin bleibt, solange er geöffnet ist.
+Jede Zeile hat rechts zwei Schaltflächen. Das Kreuz (**Verwerfen**) entfernt die Benachrichtigung aus Ihrer eigenen Liste; in der Meldung, die daraufhin erscheint, holen Sie sie mit **Rückgängig machen** zurück. Die drei Punkte (**Weitere Aktionen**) klappen die Aktionen zu dieser Benachrichtigung auf. Auf Telefon oder Tablet können Sie eine Zeile auch wischen: nach rechts zum Verwerfen, nach links zum Zurückstellen. Die Zeile zeigt, was beim Loslassen passiert.
 
-Während die Liste beim ersten Öffnen lädt, erscheinen graue Platzhalterzeilen in der Form echter Benachrichtigungen statt eines Spinners, damit sich das Layout nicht verschiebt, wenn die echten Zeilen eintreffen. Wenn Sie eine Zeile verwerfen oder snoozen, gleiten die darunter liegenden Zeilen nach oben, anstatt zu schnappen. Eine eingeklappte Gruppe klappt animiert auf.
+Sie schließen das Panel mit Esc, mit einem Klick daneben oder mit einem erneuten Klick auf die Glocke. Auf dem Telefon gibt es oben rechts eine Schließen-Schaltfläche.
 
-## Die vollständige Benachrichtigungsseite
+Beim ersten Laden sehen Sie statt eines Spinners graue Platzhalterzeilen, die wie echte Benachrichtigungen aussehen, damit das Layout nicht springt, wenn die echten Zeilen ankommen. Wenn Sie eine Zeile verwerfen, rücken die Zeilen darunter weich nach oben, statt sofort zu springen.
 
-Benötigen Sie mehr Raum als der Bereich bietet? Klicken Sie unten im Bereich auf **Alle Benachrichtigungen anzeigen**. Damit öffnen Sie die dedizierte Benachrichtigungsseite mit derselben Liste und demselben Detailpanel, aber mit einer übersichtlicheren Kopfzeile, die Ihre ungelesene Anzahl und ein **Weitere Optionen**-Menü anzeigt. Praktisch, wenn Sie viele Benachrichtigungen auf einmal erledigen oder weit zurückscrollen möchten.
+## Aktionen zu einer Benachrichtigung
 
-## Eintreffende Karten
+Welche Aktionen Sie sehen, hängt von der Benachrichtigung ab:
 
-Wenn Sie die App öffnen, erscheinen Benachrichtigungen, die Sie weder gesehen noch gelesen haben, als kurzer Stapel Karten oben rechts. Jede Karte zeigt das Symbol, den Titel, den Kontext und die verfügbare Aktion für diese Benachrichtigung. Die Karten schieben sich nach wenigen Sekunden automatisch weiter, aber Sie können auf **Ansehen** klicken, um direkt zum Eintrag zu springen, **Später** wählen, um den Stapel zurück zur Glocke zu schicken, oder manuell zur nächsten Karte wechseln.
+- **Öffnen** (oder **Alles öffnen** bei einer Benachrichtigung zu mehreren Rechnungen): öffnet den zugehörigen Eintrag.
+- **Erinnerung senden**: verschickt bei überfälligen Rechnungen eine Zahlungserinnerung.
+- **Später**: stellt die Benachrichtigung zurück, siehe unten.
+- **Lesen**: öffnet Produktneuigkeiten, Tipps und lange Nachrichten im Lesefenster.
 
-Wenn mehr als vier Benachrichtigungen eintreffen, ist die letzte Karte eine Zusammenfassung, die anzeigt, wie viele weitere es gibt. Klicken Sie darauf, um die vollständige Benachrichtigungsseite zu öffnen. Sobald ein Stapel einmal gezeigt wurde, werden diese Benachrichtigungen als gesehen markiert, sodass dieselben Elemente nicht erneut aufpoppen.
+Betrifft eine Benachrichtigung mehrere Rechnungen auf einmal, zeigt die Zeile auch die einzelnen Rechnungen hinter der Zusammenfassung; ein Klick öffnet die jeweilige Rechnung. Passen nicht alle Aktionen in eine Zeile, liegen die übrigen hinter einer weiteren Schaltfläche mit drei Punkten.
 
-Eintreffende Karten bleiben stumm, wenn:
+## Eine Benachrichtigung zurückstellen
 
-- Nicht stören aktiv ist.
-- Der Benachrichtigungsbereich oder die Benachrichtigungsseite bereits geöffnet ist.
-- Es keine ungesehenen, ungelesenen Benachrichtigungen gibt.
-
-## Eine Benachrichtigung snoozen
-
-Sie können eine Handlungsbenachrichtigung vorübergehend verschieben, ohne sie als gelesen zu markieren. Klicken Sie auf die Glocke, um die Liste zu öffnen, und wählen Sie bei der gewünschten Benachrichtigung **Snooze**. Sie können snoozen bis:
+Eine Benachrichtigung, die etwas von Ihnen möchte, können Sie zurückstellen, ohne sie als gelesen zu markieren. Wählen Sie **Später** und dann, wie lange:
 
 - **1 Stunde** ab jetzt
 - **Morgen** um 09:00 Uhr
 - **Nächste Woche** um 09:00 Uhr
 
-Nach dem nächsten Abruf verschwindet die Benachrichtigung aus der ungelesenen Liste, bis dahin bleibt die Zeile aber sichtbar mit einer Schaltfläche zum Rückgängigmachen. Release Notes und Tipps lassen sich nicht snoozen; die lesen Sie oder markieren sie als gelesen.
+Die Zeile bleibt stehen und zeigt, bis wann sie zurückgestellt ist, mit **rückgängig machen** daneben. Produktneuigkeiten und Tipps lassen sich nicht zurückstellen; Sie lesen oder verwerfen sie.
 
-## Nicht stören
+## Das Menü Mehr Optionen
 
-Öffnen Sie die Benachrichtigungsliste und klicken Sie oben auf **Weitere Optionen** (drei Punkte), um **Nicht stören** für Push-Benachrichtigungen einzustellen. Die Auswahl ist:
+Oben im Benachrichtigungspanel finden Sie **Mehr Optionen** (drei Punkte). Darin:
 
-- **Aus**
-- **1 Stunde**
-- **Bis morgen** um 09:00 Uhr
+- **Alle gelesen**: markiert alle Benachrichtigungen als gelesen. Sie bleiben in der Liste stehen.
+- **Nicht stören: aus**, **Nicht stören: 1 Stunde** und **Nicht stören bis morgen** (bis 09:00 Uhr am nächsten Morgen).
+- **Aktivieren**: schaltet Push-Benachrichtigungen auf diesem Gerät ein. Diese Zeile erscheint nur, solange Push hier noch nicht aktiv ist.
 
-Solange Nicht stören aktiv ist, werden Push-Benachrichtigungen zurückgehalten, aber die Benachrichtigungen erscheinen weiterhin in der App und E-Mails werden weiterhin zugestellt. Ein Chip im Kopfbereich zeigt den aktiven Status und die Uhrzeit an, zu der er abläuft.
+Solange Nicht stören aktiv ist, werden Push-Benachrichtigungen zurückgehalten, die Benachrichtigungen erscheinen aber weiterhin in der App und Ihre E-Mails kommen wie gewohnt an. Ein Hinweis im Kopf des Panels zeigt, dass Nicht stören aktiv ist und bis wann.
 
-## Das Detailpanel
+## Eintreffende Benachrichtigungen
 
-Ein Klick auf eine Benachrichtigung öffnet ein rechts angeordnetes Panel mit dem vollständigen Kontext dieses Elements. Bei einer überfälligen Rechnung sehen Sie den Gesamtbetrag, den offenen Betrag, den Zahlungsstatus und das Rechnungsdatum. Bei einer MwSt.-Frist sehen Sie den Zeitraum und das Fälligkeitsdatum. Bei zusammengefassten Benachrichtigungen listet das Panel die einzelnen Rechnungen, Angebote oder Datensätze hinter der Zusammenfassung auf.
+Wenn Sie die App öffnen, erscheinen Benachrichtigungen, die Sie weder gesehen noch gelesen haben, als schmale einzeilige Leiste: am Computer unten rechts, auf dem Telefon direkt über der unteren Leiste. Die Leiste zeigt Symbol, Titel und Kontext, mit **Ansehen**, um direkt zum Eintrag zu springen. Mehrere Benachrichtigungen werden gestapelt. Nach einigen Sekunden geht die Leiste von selbst weiter, außer solange Ihre Maus oder der Fokus darauf liegt. Mit dem Kreuz, oder auf dem Telefon per Wischen, entfernen Sie sie; alles bleibt danach unter der Glocke zu finden.
 
-Das Panel wartet, bis der zugrunde liegende Datensatz geladen ist, bevor es wechselt. Bis dahin bleibt die vorherige Benachrichtigung sichtbar und ihre Schaltflächen sind inaktiv, damit sich nichts unter dem Cursor verschiebt. Sobald der Datensatz bereit ist, blendet das Panel in einem Schritt zur neuen Benachrichtigung über.
+Bei mehr als vier Benachrichtigungen wird die letzte Leiste zu einer Zusammenfassung (die Zahl der **weiteren Benachrichtigungen**), die das Benachrichtigungspanel öffnet. Was als Leiste gezeigt wurde, gilt als gesehen und taucht nicht erneut auf.
 
-Die Aktionen für dieses Element werden so sortiert, dass die wichtigste Aktion zuerst steht und als Hauptaktion hervorgehoben wird. Die restlichen Aktionen bleiben in derselben Zeile. Wenn mehr Aktionen vorhanden sind als Platz im Panel, werden die weiteren Aktionen hinter der Schaltfläche **Weitere Aktionen** (drei Punkte) verborgen. Tippen Sie darauf, um die restlichen Aktionen zu sehen, ohne den Bereich zu schließen.
+Eintreffende Benachrichtigungen bleiben still, wenn:
 
-Welche Aktionen verfügbar sind, hängt von der Benachrichtigung ab:
+- Nicht stören aktiv ist.
+- Das Benachrichtigungspanel bereits geöffnet ist.
+- Der Tab mit der App im Hintergrund liegt. Was wartet, erscheint, sobald Sie zurückkommen.
+- Es keine ungesehenen, ungelesenen Benachrichtigungen gibt.
 
-- **Als bezahlt markieren**: bucht eine manuelle Zahlung für den Restbetrag und schließt die Rechnungsbenachrichtigung ab.
-- **Als eingereicht markieren**: markiert den MwSt.-Zeitraum als eingereicht; wird nur bei MwSt.-Fristen angezeigt.
-- **Erinnerung senden**: sendet eine Zahlungserinnerung für die Rechnung, angezeigt bei überfälligen Rechnungen.
-- **Öffnen**: öffnet den zugrunde liegenden Datensatz, zum Beispiel die Rechnung, das Angebot oder den Vertrag.
-- **Snooze** (oder **Später**): verschiebt die Benachrichtigung vorübergehend, ohne sie als gelesen zu markieren.
-- **Verwerfen** (oder das **X**-Symbol): entfernt die Benachrichtigung aus Ihrer eigenen ungelesenen Liste. Auf dem Telefon befindet sich dasselbe Schließsymbol oben rechts im Detail-Overlay, damit es den Betrag nicht überlappt.
+## Push-Benachrichtigungen
 
-Release Notes und Tipps haben kein Detailpanel, weil es keinen zugrunde liegenden Datensatz gibt, an dem Sie etwas ändern können.
-
-Push-Benachrichtigungen funktionieren im Browser und in der Android-App. Auf Android zeigt die Benachrichtigung das App-Symbol, die Farbe der Kategorie und nach Möglichkeit den Avatar des Absenders.
+Push-Benachrichtigungen funktionieren im Browser und in der MyCompanyDesk-App auf Ihrem Telefon. Auf Android zeigt die Benachrichtigung das App-Symbol, die Farbe der Kategorie und nach Möglichkeit den Avatar des Absenders.
 
 Wenn eine Benachrichtigung ausbleibt, prüfen Sie sowohl den Schalter als auch die E-Mail-Adresse Ihres Kontos.

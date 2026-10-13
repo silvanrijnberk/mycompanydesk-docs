@@ -8,15 +8,15 @@ chatbot:
   follow_up: ["How do I delete multiple invoices?", "How do I export selected items?"]
 ---
 To perform bulk actions:
-1. Go to the list view (Invoices, Expenses, or Customers)
-2. Select multiple items using the checkboxes
-3. The action bar appears at the bottom of the page on desktop and at the bottom of the screen on mobile
-4. Choose the action (e.g. delete, send, export)
-5. Confirm the bulk operation
+1. Go to the list view (for example Invoices, Quotes, Expenses, or Customers)
+2. Select items: on desktop the checkbox appears when you hover over a row. You can also choose "Select multiple" in a row's menu; all checkboxes then appear
+3. A bar appears at the bottom of the screen with the number of selected items, "Select all", and the available actions
+4. Choose the action, for example "Mark as paid", "Mark as Sent", "Mark as Canceled", "Archive", or "Delete" (which actions you get depends on the list and on what you selected)
+5. Confirm the action when asked
 
-## Bulk finalizing checks
+## Checks when marking drafts as sent in bulk
 
-When you finalize or send invoices in bulk, MyCompanyDesk runs the same VAT and status checks as when you send one invoice. For example, a reverse-charge invoice cannot be finalized unless the customer has a VAT number, and a 0% VAT line (sources/vat-rates.yaml#countries.NL.zero) must have a clear basis (reverse charge or an approved zero-rate reason). Invoices that fail a check are skipped, and the results screen lists the affected invoices with the reason so you can fix them.
+When you mark draft invoices as sent in bulk, they get an invoice number and MyCompanyDesk runs the same checks as for a single invoice. Your VAT ID, IBAN, and business address must be filled in, a reverse-charge invoice cannot be finalized unless the customer has a VAT number, and a 0% VAT line (sources/vat-rates.yaml#countries.NL.zero) must have a clear basis (reverse charge or an approved zero-rate reason). If one invoice fails a check, the whole action stops; the message names that invoice so you can fix it first.
 
 ## Bulk archiving expenses
 

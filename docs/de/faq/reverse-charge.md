@@ -1,7 +1,7 @@
 ---
 title: "Reverse-Charge-Rechnung"
 description: "Reverse-Charge-Rechnung (EU) erstellen: Wählen Sie unter Rechnungen, Neue Rechnung Ihren EU-Kunden mit hinterlegter USt-IdNr. und setzen Sie den Schalter."
-last_verified: 2026-07-02
+last_verified: 2026-10-13
 chatbot:
   triggers: ["reverse charge", "reverse charge invoice", "eu invoice", "intracommunautair", "intracommunity", "btw verlegd", "reverse charge rechnung", "autoliquidation", "intra-community"]
   actions:
@@ -10,7 +10,7 @@ chatbot:
 ---
 
 So erstellen Sie eine Reverse-Charge-Rechnung (EU):
-1. Gehen Sie zu Rechnungen → Neue Rechnung
+1. Gehen Sie zu Rechnungen › Neue Rechnung
 2. Wählen Sie Ihren EU-Kunden und prüfen Sie, ob die USt-IdNr. beim Kunden hinterlegt ist
 3. Aktivieren Sie im Rechnungsformular den Schalter "Reverse Charge (Steuerschuldnerschaft des Leistungsempfängers)"; MyCompanyDesk schlägt ihn bei EU-Geschäftskunden automatisch vor
 4. Die MwSt. aller Positionen springt automatisch auf 0 %, wenn der Schalter eingeschaltet ist, und zurück auf ihren vorherigen Satz, wenn Sie ihn wieder ausschalten; manuelle Änderungen sind nicht nötig.
@@ -31,7 +31,7 @@ Fehlt das Land oder die KVK-Nummer, markiert die Prüfung vor der Abgabe auf der
 
 ## Import-Reverse-Charge (Lieferanten außerhalb der EU)
 
-Manche Lieferanten außerhalb der EU berechnen keine niederländische USt. auf ihrer Rechnung. Dann bilanzieren Sie die USt. selbst in Ihrer Erklärung. In MyCompanyDesk heißt das `import_reverse_charge` und landet in Rubrik 4a, nicht 4b.
+Manche Lieferanten außerhalb der EU berechnen keine niederländische USt. auf ihrer Rechnung. Dann bilanzieren Sie die USt. selbst in Ihrer Erklärung. In MyCompanyDesk heißt diese MwSt.-Behandlung **Reverse-Charge Einfuhr**, und die USt. landet in Rubrik 4a, nicht 4b.
 
 Verwenden Sie diese Behandlung, wenn:
 

@@ -8,8 +8,8 @@ chatbot:
   follow_up: ["How do I change my password?", "How do I update my profile?"]
 ---
 
-Sie können Ihre Login-E-Mail-Adresse selbst ändern. Öffnen Sie in den Einstellungen die Gruppe „Deine Daten“ am oberen Rand und klicken Sie neben dem Feld E-Mail-Adresse auf **E-Mail-Adresse ändern**. Tragen Sie die neue Adresse ein und, falls Sie sich mit einem Passwort anmelden, Ihr aktuelles Passwort.
+Sie können Ihre Login-E-Mail-Adresse selbst ändern. Gehen Sie zu Einstellungen › „Anmelden“ und klicken Sie in der Karte „E-Mail-Adresse“ auf **Ändern**. (Unter Einstellungen › „Ihre Daten“ führt der Link **E-Mail-Adresse ändern** an dieselbe Stelle.) Tragen Sie die neue Adresse ein und, falls Sie sich mit einem Passwort anmelden, Ihr aktuelles Passwort, und klicken Sie auf **Bestätigungs-E-Mail senden**.
 
-Wir schicken eine Bestätigungs-E-Mail an die neue Adresse. Die Änderung wird erst wirksam, wenn Sie diesen Link öffnen; bis dahin ändert sich an Ihrem Konto nichts, und das Profil zeigt an, dass eine Bestätigung unterwegs ist. Dieselbe E-Mail enthält einen Abbrechen-Link. Eine ausstehende Änderung können Sie auch angemeldet selbst abbrechen, an derselben Stelle in den Einstellungen.
+Wir schicken eine Bestätigungs-E-Mail an die neue Adresse. Die Änderung wird erst wirksam, wenn Sie diesen Link öffnen; bis dahin ändert sich an Ihrem Konto nichts, und das Profil zeigt an, dass eine Bestätigung unterwegs ist. Dieselbe E-Mail enthält einen Abbrechen-Link. Eine ausstehende Änderung können Sie auch angemeldet selbst mit **Abbrechen** an derselben Stelle in den Einstellungen abbrechen.
 
 Bestätigungslinks laufen ab. Ist Ihr Link abgelaufen, fordern Sie die Änderung erneut über die Einstellungen an. Wurde die Adresse inzwischen von einem anderen Konto bestätigt, wählen Sie eine andere. Nach der Bestätigung melden Sie sich mit Ihrer neuen Adresse an; Ihr Passwort und der Rest Ihres Kontos bleiben, wie sie sind.

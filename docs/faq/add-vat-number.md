@@ -1,6 +1,6 @@
 ---
 title: "Btw-nummer toevoegen"
-description: "Om je btw-nummer toe te voegen of te wijzigen: ga naar Instellingen > Bedrijfsgegevens, vul daar het veld btw-nummer in."
+description: "Om je btw-nummer toe te voegen of te wijzigen: ga naar Instellingen › Bedrijfsgegevens, vul daar het veld btw-nummer in."
 last_verified: 2026-07-02
 chatbot:
   triggers:
@@ -19,7 +19,7 @@ chatbot:
 ---
 
 Om je btw-nummer toe te voegen of te wijzigen:
-1. Ga naar Instellingen → "Bedrijfsgegevens"
+1. Ga naar Instellingen › "Bedrijfsgegevens"
 2. Vul daar het veld "Btw-nummer" in
 3. Wijzigingen worden automatisch opgeslagen
 

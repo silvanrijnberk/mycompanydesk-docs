@@ -8,8 +8,8 @@ chatbot:
   follow_up: ["How do I change my password?", "How do I update my profile?"]
 ---
 
-Vous pouvez modifier vous-même votre adresse e-mail de connexion. Ouvrez dans les paramètres le groupe « Vos données » en haut de la page et cliquez, à côté du champ Adresse e-mail, sur **Modifier votre adresse e-mail**. Indiquez la nouvelle adresse et, si vous vous connectez avec un mot de passe, votre mot de passe actuel.
+Vous pouvez modifier vous-même votre adresse e-mail de connexion. Allez dans Paramètres › « Connexion » et cliquez sur **Modifier** dans la carte « Adresse e-mail ». (Dans Paramètres › « Vos données », le lien **Modifier votre adresse e-mail** mène au même endroit.) Indiquez la nouvelle adresse et, si vous vous connectez avec un mot de passe, votre mot de passe actuel, puis cliquez sur **Envoyer l'e-mail de confirmation**.
 
-Nous envoyons un e-mail de confirmation à la nouvelle adresse. La modification ne prend effet qu'une fois le lien de confirmation ouvert ; d'ici là, rien ne change sur votre compte, et le profil indique qu'une confirmation est en route. Le même e-mail contient un lien d'annulation. Vous pouvez aussi annuler une demande en cours, une fois connecté, au même endroit dans les paramètres.
+Nous envoyons un e-mail de confirmation à la nouvelle adresse. La modification ne prend effet qu'une fois le lien de confirmation ouvert ; d'ici là, rien ne change sur votre compte, et le profil indique qu'une confirmation est en route. Le même e-mail contient un lien d'annulation. Vous pouvez aussi annuler une demande en cours, une fois connecté, avec **Annuler** au même endroit dans les paramètres.
 
 Les liens de confirmation expirent. Si le vôtre a expiré, redemandez la modification depuis les paramètres. Si l'adresse vient d'être confirmée par un autre compte, choisissez-en une autre. Après la confirmation, connectez-vous avec votre nouvelle adresse ; votre mot de passe et le reste de votre compte restent inchangés.

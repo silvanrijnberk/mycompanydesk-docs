@@ -1,14 +1,14 @@
 ---
 title: E-Mail
 description: "Legen Sie fest, von welcher Adresse Rechnungen und Angebote ausgehen, und stellen Sie ein, was unter jeder Nachricht steht. In jedem Abo enthalten."
-last_verified: 2026-09-30
+last_verified: 2026-10-13
 ---
 
 # E-Mail
 
-MyCompanyDesk sendet Ihre Rechnungen und Angebote per E-Mail an Ihre Kunden. **Einstellungen → E-Mail** ist der Ausgangspunkt für alles rund um diese Mails: **Adressen und Versand** für die Absenderseite, **Rechnungs- und Angebotsmails** für die Mails, die wir für Ihre Dokumente verfassen, **Posteingangs-Mails** für das, was Sie selbst schreiben, und **Regeln** für eingehende Mail. Die Seite ist in jedem Abo verfügbar; nur der Versand von der eigenen Domain gehört zu Office.
+MyCompanyDesk sendet Ihre Rechnungen und Angebote per E-Mail an Ihre Kunden. **Einstellungen › E-Mail** ist der Ausgangspunkt für alles rund um diese Mails: **Adressen und Versand** für die Absenderseite, **Rechnungs- und Angebotsmails** für die Mails, die wir für Ihre Dokumente verfassen, **Posteingangs-Mails** für das, was Sie selbst schreiben, und **Regeln** für eingehende Mail. Die Seite ist in jedem Abo verfügbar; nur der Versand von der eigenen Domain gehört zu Office.
 
-Regeln und vertrauenswürdige Absender für eingehende Post stehen unter **Regeln**; siehe unten [Empfangen: Postfächer und Regeln](#empfangen-postfaecher-und-regeln).
+Regeln und vertrauenswürdige Absender für eingehende Post stehen unter **Regeln**; siehe unten [Empfangen: Postfächer und Regeln](#empfangen-postfacher-und-regeln).
 
 ## Adressen und Versand
 
@@ -45,7 +45,7 @@ Unter **Sie senden standardmäßig von** wählen Sie Ihre eigene Standardadresse
 
 ### Postfächer
 
-Unter **Postfächer** verwalten Sie die Postfächer Ihrer verbundenen Domains: legen Sie ein Postfach an, um E-Mails unter einer neuen Adresse Ihrer eigenen Domain zu empfangen, fügen Sie einem bestehenden Postfach weitere Adressen hinzu, leiten Sie eingehende E-Mails an Ihre bisherige Mail-App weiter und verbinden Sie die Mail-App selbst. Bestehende E-Mails lassen sich in ein vorhandenes Postfach importieren. Die Postfach-Bereiche gehören zur Posteingangsfunktion; ohne sie bleiben sie ausgeblendet. Die Versandmethode steht allen offen.
+Unter **Postfächer** verwalten Sie die Postfächer Ihrer verbundenen Domains: legen Sie ein Postfach an, um E-Mails unter einer neuen Adresse Ihrer eigenen Domain zu empfangen, fügen Sie einem bestehenden Postfach weitere Adressen hinzu, leiten Sie eingehende E-Mails an Ihre bisherige Mail-App weiter und verbinden Sie die Mail-App selbst. Bestehende E-Mails lassen sich in ein vorhandenes Postfach importieren. Postfächer auf Ihrer eigenen Domain gehören zum vollständigen Posteingang in Office, und ein Teammitglied braucht zusätzlich das Recht für den Posteingang. Ohne beides bleiben die Postfach-Bereiche ausgeblendet; die Versandmethode steht allen offen.
 
 ### Belege weiterleiten
 
@@ -57,7 +57,7 @@ Unter **Rechnungs- und Angebotsmails** steht alles zu den Mails, die MyCompanyDe
 
 ### Der Standardtext
 
-Rechnungs-, Angebots-, Erinnerungs- und Gutschrifts-E-Mails starten mit einem standardmäßigen, gut erprobten Text in der Sprache des Dokuments. Wählen Sie die Art der E-Mail (Rechnung, Angebot, Zahlungserinnerung oder Gutschrift) und die Sprache der E-Mail, schreiben Sie Ihren eigenen Betreff und Text und speichern Sie. Ihr eigener Text trägt das Label **Eigener Text**; mit **Zurück zum Standardtext** holen Sie nach einer Bestätigung den Standard zurück.
+Rechnungs-, Angebots-, Erinnerungs- und Gutschrifts-E-Mails starten mit einem standardmäßigen, gut erprobten Text in der Sprache des Dokuments. Wählen Sie die Art der E-Mail (Rechnung, Angebot, Zahlungserinnerung oder Gutschrift) und die Sprache der E-Mail, schreiben Sie Ihren eigenen Betreff und Text und speichern Sie. Ihr eigener Text trägt das Label **Eigener Text**; mit **Zurück zu** und dem Namen Ihres Stils (zum Beispiel **Zurück zu Förmlich**) holen Sie nach einer Bestätigung den Text dieses Stils zurück.
 
 Kundenname, Nummer, Beträge und Daten in der Vorschau sind Beispiele: Beim Versand setzt MyCompanyDesk die Angaben des echten Dokuments ein, lassen Sie die Platzhalter daher dort stehen. Der Satz zur Anfrage erscheint nur, wenn das Angebot aus einer Anfrage stammt.
 
@@ -73,7 +73,7 @@ Pro Art der Dokumenten-E-Mail wählen Sie neben dem Text auch einen **Stil der E
 - **Vollständig**: alles, was ein Kunde braucht, um zu zahlen oder zu entscheiden (Datum, Betrag, Frist, Kontonummer, wohin mit Fragen), und immer mit der Positionstabelle des Dokuments darunter, auch bei einem Angebot.
 - **Minimal**: nur die Nummer, der Gesamtbetrag und das Datum; keine Anrede, kein Abschluss.
 
-Welche Teile ein Stil mitnimmt, hängt im Übrigen von Ihren eigenen Einstellungen ab: der Schalter **Rechnungspositionen in der Mail** unter dem Text entscheidet, ob ein anderer Stil als Vollständig die Positionstabelle mitnimmt, und der Schalter im Versandfenster gewinnt, wenn Sie ihn dort sehen. Ein eigener Text gewinnt immer gegen einen Stil: steht Ihr eigener Wortlaut für eine Art, geht der mit, und bei der Wahl eines Stils fragt die Seite, ob dieser eigene Text weichen soll. Sobald Sie einen Stil wählen, schreibt sich die Vorschau rechts um, und die Vorschau zeigt genau, was Ihr Kunde erhält.
+Vollständig nimmt die Positionstabelle immer mit, die anderen Stile nicht. Im Versandfenster schalten Sie die Tabelle pro E-Mail mit **Rechnungspositionen einfügen** ein oder aus; der Schalter steht von selbst auf an, wenn der Stil die Tabelle mitnimmt. Ein eigener Text gewinnt immer gegen einen Stil: steht Ihr eigener Wortlaut für eine Art, geht der mit, und bei der Wahl eines Stils fragt die Seite, ob dieser eigene Text weichen soll. Sobald Sie einen Stil wählen, schreibt sich die Vorschau rechts um, und die Vorschau zeigt genau, was Ihr Kunde erhält.
 
 ### Erscheinungsbild
 
@@ -83,7 +83,7 @@ Das Erscheinungsbild legt Stil und Kopfzeile jeder Kunden-E-Mail fest: Wählen S
 
 Unter jeder Rechnung, jedem Angebot, jeder Zahlungserinnerung und jeder Gutschrift stehen Ihr Firmenname und Ihre KVK-Nummer, dazu die Angaben, die Sie darunter einschalten. Jede Angabe ist ein Schalter: Ihr Foto, Ihre Telefonnummer, Ihre E-Mail-Adresse, Ihre Webadresse, Ihre Adresse, Ihre Social-Media-Kanäle, ein Link zu Ihrer Website unten und Ihre Gütesiegel. Der Schalter für Gütesiegel erscheint erst, sobald Sie welche in Ihren Unternehmensdaten hinterlegt haben. Für eine noch leere Angabe sagt der Schalter das und verlinkt zu den Unternehmensdaten. Der Schalter für die Adresse ist für Privatadressen gedacht: Schalten Sie ihn aus, um Ihre Privatadresse aus der Mail herauszuhalten; auf der Rechnung selbst (dem PDF) steht die vollständige Adresse immer.
 
-Die Angaben kommen aus Ihren Unternehmensdaten, Sie sehen also genau das, was Ihr Kunde erhält: Telefon, Adresse, KVK-Nummer, Ihr Foto und der Link zu Ihrer Seite erscheinen darin, sobald Sie sie ausgefüllt haben. Bearbeiten Sie sie unter **Einstellungen → Unternehmensdaten**, bleiben beide synchron.
+Die Angaben kommen aus Ihren Unternehmensdaten, Sie sehen also genau das, was Ihr Kunde erhält: Telefon, Adresse, KVK-Nummer, Ihr Foto und der Link zu Ihrer Seite erscheinen darin, sobald Sie sie ausgefüllt haben. Bearbeiten Sie sie unter **Einstellungen › Unternehmensdaten**, bleiben beide synchron.
 
 ## Posteingangs-Mails
 
@@ -114,12 +114,12 @@ MyCompanyDesk hält ausgehende Post zurück, die nach Missbrauch aussieht, damit
 
 Auch für die eingehende Mail ist die E-Mail-Seite der zentrale Punkt:
 
-- **Postfächer, zusätzliche Adressen, Weiterleitung und Import** finden Sie unter **Einstellungen → E-Mail → Adressen und Versand**. Alte Links zu den Posteingangseinstellungen landen dort automatisch.
-- **Regeln für eingehende Mail und vertrauenswürdige Absender** stehen unter **Einstellungen → E-Mail → Regeln**. Sie waren früher ein Reiter im Posteingang; diese Reiterleiste ist weg, und alte Links wie /inbox/regels landen automatisch am neuen Ort. Die Seite gibt es nur in Arbeitsbereichen mit der Posteingangsfunktion.
+- **Postfächer, zusätzliche Adressen, Weiterleitung und Import** finden Sie unter **Einstellungen › E-Mail › Adressen und Versand**. Alte Links zu den Posteingangseinstellungen landen dort automatisch.
+- **Regeln für eingehende Mail und vertrauenswürdige Absender** stehen unter **Einstellungen › E-Mail › Regeln**. Sie waren früher ein Reiter im Posteingang; diese Reiterleiste ist weg, und alte Links wie /inbox/regels landen automatisch am neuen Ort. Die Seite gibt es nur, wenn Ihr Arbeitsbereich den vollständigen Posteingang hat, und der gehört zu Office.
 - Ob eine E-Mail wirklich angekommen ist, sehen Sie im Ordner **Gesendet** des Posteingangs: dort steht pro Nachricht, ob sie den Empfänger erreicht hat.
-- **DSGVO-Datenlöschung** (alle Gespräche und Anhänge einer bestimmten Adresse löschen, nur für Admins) steht unter **Einstellungen → Gegevens wissen**.
+- **DSGVO-Datenlöschung** (alle Gespräche und Anhänge einer bestimmten Adresse löschen, nur für Admins) steht unter **Einstellungen › Gegevens wissen**.
 
 ## Verwandte Themen
 
 - [Unternehmenseinstellungen](/de/settings/company): die Unternehmensdaten hinter Ihrer Fußzeile
-- [Abo & Zahlungen](/de/settings/billing): der Versand von der eigenen Domain gehört zu Office
+- [Abonnement & Zahlungen](/de/settings/billing): der Versand von der eigenen Domain gehört zu Office

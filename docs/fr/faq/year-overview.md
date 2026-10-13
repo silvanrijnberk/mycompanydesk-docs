@@ -1,7 +1,7 @@
 ---
 title: "Aperçu annuel"
-description: "Pour examiner une année complète dans l'application : ouvrez Rapports, réglez le filtre de période sur Année et choisissez l'année à examiner."
-last_verified: 2026-05-09
+description: "Pour examiner une année complète : ouvrez Rapports, réglez la période sur Année sous Filtres et choisissez l'année à examiner."
+last_verified: 2026-10-13
 chatbot:
   triggers:
     - "year overview"
@@ -23,9 +23,11 @@ chatbot:
 ---
 
 Pour examiner une année complète dans l'application :
-1. Ouvrez Rapports
-2. Réglez le filtre de période sur Année et choisissez l'année à examiner
-3. L'aperçu montre les chiffres clés ; passez à la vue Compte de résultat, Trésorerie, Clients ou Prévision pour plus de détail
-4. Activez le filtre de comparaison pour voir l'année à côté d'une année précédente
+1. Ouvrez **Rapports** (Office)
+2. Sous **Filtres**, réglez la période sur Année et choisissez l'année à examiner
+3. **Vue d'ensemble** montre les chiffres clés ; passez à Ventes, Clients, Coûts ou Trésorerie pour plus de détail
+4. Activez la comparaison pour voir l'année à côté d'une année précédente
 
-Astuce : le filtre « Inclure les factures ouvertes » détermine si les factures impayées comptent dans les totaux.
+Pour le compte de résultat et les comptes annuels de cette année, ouvrez **Comptabilité** (Office).
+
+Astuce : **Inclure les factures ouvertes** détermine si les factures impayées comptent dans les totaux.

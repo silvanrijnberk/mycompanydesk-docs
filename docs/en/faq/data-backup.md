@@ -1,6 +1,6 @@
 ---
 title: "Data backup"
-description: "To back up your data: go to Settings > Gegevens downloaden (download your data)."
+description: "To back up your data: go to Settings › Download data."
 last_verified: 2026-10-03
 chatbot:
   triggers:
@@ -22,12 +22,8 @@ chatbot:
 ---
 
 To back up your data:
-1. Go to Settings -> "Gegevens downloaden" (download your data)
+1. Go to Settings › "Download data"
 2. Download CSV exports for invoices, customers, and expenses, or the full backup available there
 3. Confirm the downloaded files contain the records you need
 
 The CSV exports of invoices, expenses and your customer list, and the full backup, are free on every plan. If you back up regularly, pick a fixed moment, for example after closing each quarter.
-
-:::tip
-For MyCompanyDesk support staff, the admin panel also has a **Create backup** action and a **Download data** action for workspaces. The admin panel's **Clear cache** action flushes the shared cache service (and any module-level KPI cache), and **Invalidate sessions** bumps a global cutoff that rejects every session token issued before it. These tools are not part of the customer-facing settings pages.
-:::

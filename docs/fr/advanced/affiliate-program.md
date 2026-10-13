@@ -1,6 +1,6 @@
 ---
 title: Programme d'affiliation
-description: "Gagnez une commission en amenant des visiteurs qui prennent un abonnement payant. Ouvert aux éditeurs, comparateurs, blogs et infolettres."
+description: "Recevez une commission fixe pour chaque lecteur qui démarre un abonnement payant via votre lien. Pour éditeurs, blogs et infolettres."
 ---
 
 # Programme d'affiliation
@@ -13,50 +13,48 @@ Le programme est ouvert aux éditeurs externes qui envoient un trafic pertinent 
 
 ## Comment postuler
 
-Postulez via la page publique d'affiliation : [mycompanydesk.nl/affiliate](https://mycompanydesk.nl/affiliate). Après approbation, vous recevez un code de parrainage personnel et une page de statistiques privée pour suivre vos performances.
+Postulez via le formulaire sur [mycompanydesk.nl/affiliate](https://mycompanydesk.nl/affiliate). Vous indiquez le nom de votre site ou de votre newsletter, votre adresse e-mail, éventuellement votre site web, et les sujets que vous traitez. Nous examinons chaque candidature nous-mêmes et vous répondons sous quelques jours ouvrés.
 
-<!-- TODO(source-missing): confirmer l'URL publique de candidature et le processus d'approbation -->
+Une fois accepté, vous recevez votre propre lien contenant votre code et votre propre page de statistiques. Aucune connexion n'est nécessaire : la page s'ouvre avec un lien personnel.
 
 ## Comment ça marche
 
-1. Partagez votre lien de parrainage avec votre audience.
-2. Un visiteur qui accède à MyCompanyDesk via votre lien est attribué à votre code pour cette session de navigateur.
-3. Si le visiteur souscrit un abonnement payant et reste client au-delà de la période de conservation, la conversion est créditée sur votre compte affilié.
+1. Partagez votre lien avec votre audience. Il mène au site de MyCompanyDesk, pour que les visiteurs puissent d'abord découvrir le produit.
+2. Un visiteur arrivé par votre lien reste rattaché à votre code pendant toute cette session de navigation, même s'il lit quelques pages avant de s'inscrire.
+3. Si le visiteur démarre un abonnement payant, une commission est créée pour vous. Une inscription gratuite ne rapporte rien.
 
-<!-- TODO(source-missing): confirmer la fenêtre d'attribution exacte et le libellé de la période de conservation -->
+S'inscrire via votre propre lien ne compte pas : un espace de travail créé avec la même adresse e-mail que votre candidature d'affilié ne donne droit à aucune commission.
 
-## Commission et paiement
+## Commission et versement
 
-Chaque affilié dispose d'un montant de commission fixe convenu lors de l'onboarding. La commission est versée pour chaque espace de travail qui passe à un abonnement payant et reste payant pendant la période de conservation.
+Vous gagnez un montant fixe par client apporté qui démarre un abonnement payant. Par défaut, c'est 40 € par client payant, sans limite sur le nombre de clients. Si vous avez une large audience et souhaitez convenir d'une autre commission, indiquez-le dans votre candidature. Le montant affiché sur votre page de statistiques est celui qui s'applique à vous.
 
-Les paiements sont transférés sur le compte bancaire (IBAN) que vous avez fourni. Le calendrier de paiement et tout seuil minimum sont confirmés lors de l'approbation de votre candidature.
+Une commission reste d'abord en attente pendant 30 jours. Si le client continue de payer ensuite, le montant devient à verser. Nous versons chaque mois par virement bancaire.
 
-<!-- TODO(source-missing): calendrier de paiement et seuil minimum -->
+## Votre page de statistiques
 
-## Tableau de bord affilié
+Votre page de statistiques affiche :
 
-Votre page de statistiques privée affiche :
+- **Votre lien de parrainage**, avec un bouton pour le copier
+- **Visites** : combien de fois quelqu'un est arrivé par votre lien
+- **Inscriptions** : les espaces de travail inscrits via votre lien
+- **Clients payants** : les espaces de travail ayant démarré un abonnement payant
+- **En attente**, **À verser** et **Versé** : vos commissions par statut
+- **Inscriptions récentes** avec la date, le montant et le statut
 
-- **Inscriptions** — espaces de travail inscrits via votre lien
-- **Conversions** — espaces de travail ayant démarré un abonnement payant
-- **En attente, approuvé, payé et récupéré** — totaux des commissions
-- **Conversions récentes** et leur statut
+Elle ne contient aucune donnée permettant de reconnaître les clients apportés. Vous voyez combien de clients sont venus par vous, pas qui ils sont.
 
-Aucune information personnelle identifiable concernant les espaces de travail recommandés n'est affichée.
+## Statuts d'une commission
 
-## Cycle de vie d'une commission
+- **En attente** : le client a commencé à payer et le délai de 30 jours court encore
+- **À verser** : le délai est écoulé et le client paie toujours
+- **Versé** : la commission a été virée sur votre compte bancaire
+- **Annulée** : le client a résilié pendant le délai, ou le paiement a été remboursé ou contesté avant le versement de la commission
 
-Une conversion passe par les statuts suivants :
+## Confidentialité et suivi
 
-- **En attente** — la recommandation a converti et est encore dans la période de conservation
-- **Approuvé** — la période de conservation est écoulée et l'espace de travail paie toujours
-- **Payé** — la commission a été transférée sur votre compte bancaire
-- **Récupéré** — l'abonnement a été annulé ou remboursé avant le paiement de la commission
-
-## Confidentialité et tracking
-
-Le suivi d'affiliation n'utilise que le code de parrainage dans l'URL et un compteur par session de navigateur. Le beacon de clic envoie uniquement le code affilié ; il n'identifie pas le visiteur et ne stocke pas de données personnelles.
+Le rattachement n'utilise que le code de votre lien, conservé pendant la session de navigation. Une visite est comptée une fois par session et n'envoie que votre code. Le visiteur n'est pas identifié et aucune donnée personnelle n'est enregistrée.
 
 ## Questions ?
 
-Pour toute question sur le programme d'affiliation, utilisez les options de contact sur la [page d'affiliation](https://mycompanydesk.nl/affiliate) ou contactez l'équipe MyCompanyDesk.
+Pour toute question sur le programme d'affiliation, utilisez les options de contact sur la [page d'affiliation](https://mycompanydesk.nl/affiliate) ou contactez MyCompanyDesk.

@@ -1,7 +1,7 @@
 ---
 title: "Meldingsinstellingen"
-description: "Om je meldingsinstellingen te beheren: ga naar Instellingen > Meldingen, zet de meldingsonderwerpen aan of uit en schakel pushmeldingen in."
-last_verified: 2026-10-06
+description: "Om je meldingsinstellingen te beheren: ga naar Instellingen › Meldingen, zet de meldingsonderwerpen aan of uit en schakel pushmeldingen in."
+last_verified: 2026-10-13
 chatbot:
   triggers:
     - "notifications"
@@ -20,7 +20,7 @@ chatbot:
 
 Om je meldingsinstellingen te beheren:
 
-1. Ga naar Instellingen → "Meldingen"
+1. Ga naar Instellingen › "Meldingen"
 2. Zet de meldingsonderwerpen aan of uit. De schakelaars staan in vijf groepen: **Elke week**, **Je geld**, **Je klanten**, **Je team** en **Van MyCompanyDesk**, en onder elke schakelaar toont de app hoe je die melding krijgt: **In de app**, **Per e-mail** of **Op je telefoon**. De factuur-, geld-, deadline- en kansonderwerpen gebruiken alle drie; het weekonderwerp stuurt alleen bij iets dringends een seintje naar je telefoon. De onderwerpen zijn:
    - **Op maandag wat er deze week moet gebeuren**: de maandagmail met de taken uit **Nu doen** op je dashboard. Elke maandag een mail, en alleen als er iets is; zit er iets dringend tussen, dan ook een seintje op je telefoon. De mail gaat alleen naar de eigenaar van de werkruimte, en die ziet als enige deze schakelaar. De schakelaar staat standaard aan; de afmeldlink onderin de mail zet hem uit. Zolang het aparte wekelijkse bankoverzicht uit staat (de standaard), zitten de bankregels die nog gekoppeld moeten worden ook in deze mail.
    - **Als een factuur je aandacht nodig heeft**: te late facturen, facturen die bijna vervallen, concepten die blijven liggen, mislukte incasso's, facturen die niet bij de klant zijn aangekomen, stilgevallen automatische contractfacturatie, automatisch aangemaakte urenfacturen en wat er mee gebeurt (klaar, op het rooster om te versturen, tegengehouden of verstuurd), signalen over je uitgaven, zoals terugkerende uitgaven of een leverancier die stilvalt, en uren zonder tarief.
@@ -39,73 +39,66 @@ Pushmeldingen hangen aan je sessie. Zodra je uitlogt, stopt het apparaat met het
 
 ## De meldingslijst
 
-Meldingen zijn ingedeeld in drie groepen, zodat de lijst als een tijdlijn leest: **Vandaag**, **Gisteren** en **Eerder**.
+Klik op het belletje bovenaan de app om je meldingen te openen. Ze staan per dag gegroepeerd, zodat de lijst als een tijdlijn leest: **Vandaag**, **Gisteren** en **Eerder**. Onderaan haal je oudere meldingen op met **Meer laden**.
 
 Als je de lijst opent, worden alle meldingen daarin als gezien gemarkeerd: het getal op de bel springt terug naar nul, maar elke rij houdt zijn eigen ongelezen stipje tot je hem opent.
 
-Als er op een dag meerdere vergelijkbare informatieve updates binnenkomen, bijvoorbeeld release notes of producttips, vouwen ze in tot de nieuwste. Een knop toont hoeveel er nog meer zijn; klik om de groep uit te vouwen, klik nogmaals om hem in te klappen.
+Komen er op een dag drie of meer vergelijkbare informatieve updates binnen, bijvoorbeeld productnieuws of tips, dan vouwen ze in tot de nieuwste. Een knop toont hoeveel soortgelijke meldingen er nog zijn; klik erop om ze te tonen en op **Minder tonen** om ze weer in te klappen.
 
-Op een telefoon of tablet kun je een rij swipen om snel iets te doen: naar links om af te wijzen, naar rechts om te snoozen. De rij laat zien wat er gebeurt als je loslaat. Op elke rij staan ook knoppen voor Afwijzen en Snooze.
+Klik op een melding om meteen naar het bijbehorende item te gaan, zoals de factuur, offerte of het contract. Productnieuws, tips en lange berichten zonder eigen item openen in een leesvenster.
 
-Je kunt door de lijst bewegen met het toetsenbord: pijltjestoetsen verplaatsen de selectie, Enter of Spatie opent de geselecteerde melding, en Esc sluit het paneel. Het paneel staat boven andere zwevende UI, zodat de focus erbinnen blijft zolang het open is.
+Elke rij heeft rechts twee knoppen. Het kruisje (**Wegdoen**) haalt de melding uit je eigen lijst; in de melding die dan verschijnt kun je dat met **Ongedaan maken** terugdraaien. De drie stippen (**Acties tonen**) klappen de acties voor die melding open. Op een telefoon of tablet kun je een rij ook vegen: naar rechts om hem weg te doen, naar links om hem uit te stellen. De rij laat zien wat er gebeurt als je loslaat.
 
-Als de lijst voor de eerste keer laadt, zie je grijze placeholderrijen die eruitzien als echte meldingen, in plaats van een spinner, zodat de lay-out niet verschuift zodra de echte rijen binnenkomen. Als je een rij afwijst of snoozt, schuiven de rijen eronder omhoog in plaats van meteen te verspringen. Een ingeklapte groep vouwt soepel uit.
+Het paneel sluit je met Esc, door ernaast te klikken of door opnieuw op het belletje te klikken. Op een telefoon staat rechtsboven een sluitknop.
 
-## De volledige meldingen-pagina
+Als de lijst voor de eerste keer laadt, zie je grijze placeholderrijen die eruitzien als echte meldingen, in plaats van een spinner, zodat de lay-out niet verschuift zodra de echte rijen binnenkomen. Als je een rij wegdoet, schuiven de rijen eronder omhoog in plaats van meteen te verspringen.
 
-Heb je meer ruimte nodig dan het paneel biedt? Klik onderin het paneel op **Alle meldingen bekijken**. Daarmee open je de volledige meldingen-pagina met dezelfde lijst en hetzelfde detailpaneel, maar met een duidelijkere kop die je aantal ongelezen meldingen toont en een **Meer opties**-menu. Handig als je veel meldingen tegelijk wilt afhandelen of ver terug wilt scrollen.
+## Acties op een melding
 
-## Binnenkomende-kaarten
+Welke acties je ziet, hangt af van de melding:
 
-Als je de app opent, verschijnen meldingen die je nog niet gezien én nog niet gelezen hebt als een kort stapeltje kaarten rechtsboven. Elke kaart toont het icoon, de titel, de context en de beschikbare actie voor die melding. De kaarten schuiven na een paar seconden automatisch door, maar je kunt op **Bekijken** klikken om meteen naar het item te springen, **Later** kiezen om het stapeltje terug te laten zakken naar het belletje, of handmatig naar de volgende kaart gaan.
+- **Openen** (of **Alles openen** bij een melding over meerdere facturen): opent het bijbehorende item.
+- **Herinnering versturen**: stuurt een betalingsherinnering voor de factuur, bij te late facturen.
+- **Later**: stelt de melding uit, zie hieronder.
+- **Lezen**: opent productnieuws, tips en lange berichten in het leesvenster.
 
-Als er meer dan vier meldingen binnenkomen, wordt de laatste kaart een samenvatting die aangeeft hoeveel er nog meer zijn. Klik erop om de volledige meldingen-pagina te openen. Zodra een stapeltje getoond is, worden die meldingen als gezien gemarkeerd, dus dezelfde items zullen niet opnieuw oppoppen.
+Gaat een melding over meerdere facturen tegelijk, dan zie je in de rij ook de losse facturen waar de samenvatting voor staat; klik er een aan om hem te openen. Passen niet alle acties op één regel, dan staan de overige achter een extra knop met drie stippen.
 
-Binnenkomende-kaarten blijven stil als:
+## Een melding uitstellen
 
-- Niet storen aan staat.
-- Het meldingenpaneel of de meldingen-pagina al open is.
-- Er geen ongeziene, ongelezen meldingen zijn.
-
-## Een melding snoozen
-
-Je kunt een actiemelding tijdelijk uitstellen zonder hem als gelezen te markeren. Klik op het belletje om de lijst te openen en kies bij de melding die je wilt uitstellen voor **Snooze**. Je kunt snoozen tot:
+Je kunt een melding die iets van je vraagt tijdelijk uitstellen zonder hem als gelezen te markeren. Kies bij de melding **Later** en daarna hoe lang:
 
 - **1 uur** vanaf nu
 - **Morgen** om 09:00
 - **Volgende week** om 09:00
 
-Na de volgende keer ophalen verdwijnt de melding uit de ongelezen lijst, maar de regel blijft nog even zichtbaar met een knop om het ongedaan te maken. Release notes en tips kun je niet snoozen; die lees je of markeer je als gelezen.
+De rij blijft staan en toont tot wanneer hij is uitgesteld, met **ongedaan maken** ernaast. Productnieuws en tips kun je niet uitstellen; die lees je of doe je weg.
 
-## Niet storen
+## Het menu Meer opties
 
-Open de meldingslijst en tik in de kop op **Meer opties** (drie stippen) om **Niet storen** in te stellen voor pushmeldingen. Je kunt kiezen uit:
+Bovenaan het meldingenpaneel staat **Meer opties** (drie stippen). Daar vind je:
 
-- **Uit**
-- **1 uur**
-- **Tot morgen** om 09:00
+- **Alles gelezen**: zet al je meldingen op gelezen. Ze blijven gewoon in de lijst staan.
+- **Niet storen: uit**, **Niet storen: 1 uur** en **Niet storen tot morgen** (tot 09:00 de volgende ochtend).
+- **Aanzetten**: zet pushmeldingen aan op dit apparaat. Deze regel staat er alleen zolang push hier nog niet aan staat.
 
-Als Niet storen actief is, worden pushmeldingen tegengehouden, maar de meldingen verschijnen nog wel in de app en je e-mails blijven gewoon doorkomen. Een chip in de kop van het paneel toont aan dat Niet storen aan staat en tot hoe laat.
+Als Niet storen actief is, worden pushmeldingen tegengehouden, maar de meldingen verschijnen nog wel in de app en je e-mails blijven gewoon doorkomen. Een label in de kop van het paneel toont dat Niet storen aan staat en tot hoe laat.
 
-## Het detailpaneel
+## Binnenkomende meldingen
 
-Als je op een melding klikt, opent er een paneel aan de rechterkant met de volledige context voor die melding. Bij een te late factuur zie je het totaal, het openstaande bedrag, de betaalstatus en de factuurdatum. Bij een btw-deadline zie je de periode en vervaldatum. Bij opgetelde meldingen zie je in het paneel de afzonderlijke facturen, offertes of records waar de samenvatting voor staat.
+Als je de app opent, verschijnen meldingen die je nog niet gezien én nog niet gelezen hebt als een smalle balk van één regel: op de computer rechtsonder, op je telefoon net boven de onderbalk. De balk toont het icoon, de titel en de context, met **Bekijken** om meteen naar het item te gaan. Komen er meerdere binnen, dan stapelen ze. Na een paar seconden schuift de balk vanzelf door, behalve zolang je muis of focus erop staat. Met het kruisje, of door hem op je telefoon weg te vegen, haal je hem weg; alles staat daarna gewoon onder het belletje.
 
-Het paneel wacht tot het bijbehorende record is geladen voordat het wisselt. Tot die tijd blijft de vorige melding zichtbaar en staan de knoppen op inactief, zodat er niets onder je cursor verschuift. Zodra het record klaar is, fade het paneel in één keer over naar de nieuwe melding.
+Bij meer dan vier meldingen wordt de laatste balk een samenvatting (**Nog** met het aantal meldingen) die het meldingenpaneel opent. Wat als balk getoond is, telt als gezien, dus dezelfde melding komt niet opnieuw op.
 
-De acties voor die melding worden gerangschikt zodat de belangrijkste actie als eerste staat en als hoofdactie wordt gemarkeerd. De rest blijft op dezelfde rij staan. Passen er meer acties dan het paneel ruimte heeft, dan verhuizen de overige acties achter de knop **Acties tonen** (drie stippen). Tik daarop om de rest te zien zonder de lade te sluiten.
+Binnenkomende meldingen blijven stil als:
 
-Welke acties beschikbaar zijn, hangt af van de melding:
+- Niet storen aan staat.
+- Het meldingenpaneel al open is.
+- Het tabblad met de app op de achtergrond staat. Wat er ligt, verschijnt zodra je terugkomt.
+- Er geen ongeziene, ongelezen meldingen zijn.
 
-- **Markeer als betaald**: boekt een handmatige betaling voor het resterende bedrag en rondt de factuurmelding af.
-- **Markeer als ingediend**: markeert de btw-periode als ingediend; alleen zichtbaar bij btw-deadlines.
-- **Verstuur herinnering**: stuurt een betalingsherinnering voor de factuur, zichtbaar bij te late facturen.
-- **Openen**: opent het bijbehorende record, zoals de factuur, offerte of het contract.
-- **Snooze** (of **Later**): stelt de melding tijdelijk uit zonder hem als gelezen te markeren.
-- **Afwijzen** (of het **X**-icoon): verwijdert de melding uit je eigen lijst met ongelezen meldingen. Op een telefoon staat hetzelfde sluiticoon rechtsboven in de detail-overlay, zodat het niet over het bedrag heen valt.
+## Pushmeldingen
 
-Release notes en tips hebben geen detailpaneel, omdat er geen onderliggend record is waar je op kunt acteren.
-
-Pushmeldingen werken in je browser en in de Android-app. Op Android zie je het app-icoon, de kleur van de meldingscategorie en, als het kan, de avatar van de afzender.
+Pushmeldingen werken in je browser en in de MyCompanyDesk-app op je telefoon. Op Android zie je het app-icoon, de kleur van de meldingscategorie en, als het kan, de avatar van de afzender.
 
 Mis je een melding? Controleer dan zowel de meldingsschakelaar als het e-mailadres van je account.

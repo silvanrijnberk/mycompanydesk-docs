@@ -1,7 +1,7 @@
 ---
 title: "Data Import & Export"
 description: "Import customers, invoices and expenses from CSV, and export your records for backup or for use in another tool."
-last_verified: 2026-10-03
+last_verified: 2026-10-13
 ---
 
 # Data Import & Export
@@ -17,22 +17,26 @@ Import data from CSV files for:
 - **Customers** with name, email, phone, address, VAT number
 - **Invoices** with invoice details
 - **Expenses** with categories and amounts
+- **Catalog**: your products and services, with price (excl. VAT), unit and VAT rate
 
 Other record types (such as projects or objects) cannot be imported from CSV; you create those in the app itself.
 
 ### How to import
 
-The import wizard lives on its own page in the app: open `/profile/import` directly, useful when you are moving over from another tool right after signing up.
+The import wizard lives on its own page in the app, **Import CSV Data**. Open it with **Import** on your customer list, via **Settings › Switching**, or directly at `/profile/import`, useful when you are moving over from another tool right after signing up.
 
-1. Select the **data type** you want to import (customers, invoices, or expenses)
+1. Select the **data type** you want to import (customers, invoices, expenses or catalog)
 2. Upload your **CSV file**
 3. **Map columns** by matching your CSV column headers to MyCompanyDesk fields
 4. **Import** to create the records; the result shows how many rows were imported and how many failed
+
+If the result is not what you expected, **Undo this import** removes exactly the rows this import created, except rows that something is already linked to.
 
 ### Import tips
 
 - Use UTF-8 encoding for your CSV files
 - Include a header row with column names
+- Both commas and semicolons are recognised as separators
 - Date formats should be consistent (YYYY-MM-DD recommended)
 - Amount fields should use dot (.) as decimal separator
 - Empty fields are skipped (existing defaults are used)
@@ -53,7 +57,7 @@ The import wizard shows your CSV columns and lets you map each to the correspond
 
 ## Export
 
-Exports live in one place: open **Instellingen** (Settings) and pick **Gegevens downloaden** (download your data).
+Exports live in one place: open **Settings** and pick **Download data**.
 
 ### CSV export
 
@@ -71,19 +75,19 @@ The CSV exports of your invoices, expenses and customer list, plus the complete 
 
 The same page offers a **complete backup**: all your data in one JSON file. Use it as a periodic backup or as a full snapshot of your records, for example for a GDPR data request.
 
-Exports contain only the data you have access to. PDF versions of invoices are downloaded separately, from each invoice's own page.
+Exports contain only the data you have access to. PDF versions of invoices are downloaded separately, from each invoice's own page. Photos and PDFs of your receipts are not in the export; they stay with the expense itself.
 
 ## Location data
 
-Some mobile flows can use your GPS location when you explicitly choose to:
+MyCompanyDesk can use your location when you explicitly choose to:
 
-- Find **customers nearby** from the customer list.
-- Use **current location** when completing an address field.
+- Find a **Customer nearby** from the customer list.
+- Use **Current location** as the starting address of a trip when logging hours.
 
-We only read your location in those two cases and only inside the app. We turn it into an address or a filtered customer list, and we do not store the raw coordinates. You can refuse or revoke the permission at any time in your device settings.
+We only read your location in those two cases, in the app or in your browser. We turn it into an address or a filtered customer list, and we do not store the raw coordinates. You can refuse or revoke the permission at any time in your device or browser settings.
 
 ## Tips
 
 - Export your data regularly as a backup
-- Rather than emailing files to your accountant, give them direct access via **Settings > Toegang en boekhouder**; they always see your latest figures
+- Rather than emailing files to your accountant, give them direct access via **Settings › Your accountant**; they always see your latest figures
 - When switching from another tool, use the import wizard to migrate your customer list

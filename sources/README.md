@@ -28,7 +28,11 @@ If `last_verified` is older than 180 days when the agent reads it, the agent fla
 
 | File | Scope |
 |---|---|
-| `vat-rates.yaml` | Standard / reduced / zero VAT rates per country + small-business thresholds |
+| `vat-rates.yaml` | Standard / reduced / zero VAT rates per country + small-business thresholds; NL KOR details (turnover scope, what happens on exceeding) |
+| `nl-vat-filing.yaml` | NL VAT return periods (month / quarter / year) and filing + payment deadlines |
+| `nl-vat-corrections.yaml` | NL VAT corrections: suppletie threshold and window, private use of a company car (2.7% / 1.5%) |
+| `nl-mileage.yaml` | NL per-km rate for business trips (IB entrepreneur deduction, tax-free payroll allowance) |
+| `dba-schijnzelfstandigheid.yaml` | Wet DBA / false self-employment claims |
 
 More to come as needs surface. Add files conservatively, one rule domain per file.
 

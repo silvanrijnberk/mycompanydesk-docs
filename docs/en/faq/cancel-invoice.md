@@ -1,6 +1,6 @@
 ---
 title: Cancel an invoice
-description: "To cancel a sent invoice: open the invoice from your invoice list, in the sidebar, scroll to the Danger Zone section, click Mark as Canceled."
+description: "To cancel a sent invoice: open the invoice, choose Mark as Canceled in the More menu at the top of the page and confirm."
 last_verified: 2026-08-14
 chatbot:
   triggers: ["cancel invoice", "void invoice", "annul invoice", "reverse invoice", "credit note", "undo invoice", "factuur annuleren", "factuur ongedaan", "hoe annuleer ik een factuur", "rechnung stornieren", "wie storniere ich eine rechnung", "annuler facture"]
@@ -11,15 +11,15 @@ chatbot:
 
 To cancel a sent invoice:
 1. Open the invoice from your invoice list
-2. In the sidebar, scroll to the "Danger Zone" section
-3. Click "Mark as Canceled"
+2. Open the "More" menu in the page header (the ⋯ menu on your phone)
+3. Click "Mark as Canceled" and confirm
 4. The invoice status changes to Canceled
 
 Any overdue, deadline, or draft notifications tied to the invoice are also resolved, so you will no longer see a "Send reminder" action for it in the bell. This also applies when you cancel multiple invoices at once from the invoice list.
 
 If you have already received one or more payments on the invoice, the cancel confirmation tells you the collected amount and warns you that you still need to refund the customer. The invoice detail page also shows a "Refund due" notice after cancellation.
 
-If the invoice is already paid or partially paid, open the original invoice and use "Create credit note / correction" instead.
+If the invoice is already fully paid, or a credit note has already been issued against it, you cannot cancel it. Open the original invoice and use "Create credit note / correction" instead.
 
 Canceled invoices cannot be corrected with a credit note. If you need to issue a correction for an invoice that was already canceled, duplicate the canceled invoice, make the corrections, and send it again.
 

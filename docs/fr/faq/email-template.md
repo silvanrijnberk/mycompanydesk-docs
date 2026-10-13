@@ -1,6 +1,6 @@
 ---
 title: Modèles d'e-mail
-description: "Les e-mails de facture, devis, relance et avoir partent d'un texte standard. Votre texte se définit par type et par langue sous Paramètres → E-mail."
+description: "Les e-mails de facture, devis, relance et avoir partent d'un texte standard. Votre texte se définit par type et par langue sous Paramètres › E-mail."
 last_verified: 2026-09-30
 chatbot:
   triggers: ["email template", "customize email", "invoice email message", "email text", "change email message", "email sjabloon", "email aanpassen", "e-mail vorlage", "modele email", "personnaliser email"]
@@ -18,7 +18,7 @@ Les e-mails d'avoir utilisent un modèle dédié qui présente le document comme
 
 Vous définissez votre propre texte standard à deux endroits :
 
-1. **E-mails de factures et devis** sous Paramètres → E-mail : choisissez le type d'e-mail (facture, devis, relance ou avoir) et la langue de l'e-mail, rédigez votre objet et votre message, puis enregistrez. Votre texte porte l'étiquette **Texte personnalisé** ; avec **Revenir au texte standard**, vous récupérez le texte d'origine après une confirmation.
+1. **E-mails de factures et devis** sous Paramètres › E-mail : choisissez le type d'e-mail (facture, devis, relance ou avoir) et la langue de l'e-mail, rédigez votre objet et votre message, puis enregistrez. Votre texte porte l'étiquette **Texte personnalisé** ; avec le bouton **Revenir à** suivi du nom de votre style (par exemple **Revenir à Formel**), vous récupérez le texte d'origine après une confirmation.
 2. **La fenêtre d'envoi** : rédigez l'objet et le message à votre goût, puis cochez **Utiliser ce texte désormais pour les factures** (ou pour les devis, relances, avoirs ou factures de loyer). Dès que l'e-mail est parti, votre texte est le point de départ de chaque nouveau document de ce type.
 
 - Le texte est enregistré avec des espaces réservés : nom, numéro, montant et dates sont remplis par MyCompanyDesk à chaque e-mail.
@@ -28,7 +28,7 @@ Vous définissez votre propre texte standard à deux endroits :
 
 ## Le style de l'e-mail
 
-Sous **Paramètres → E-mail → E-mails de factures et devis** vous choisissez un style par type d'e-mail. Les cinq styles remplissent le texte standard pour vous :
+Sous **Paramètres › E-mail › E-mails de factures et devis** vous choisissez un style par type d'e-mail. Les cinq styles remplissent le texte standard pour vous :
 
 - **Formel** : le texte d'origine vouvoyé, comme l'e-mail partait déjà
 - **Court** : quelques lignes avec l'essentiel, tutoyé
@@ -36,11 +36,11 @@ Sous **Paramètres → E-mail → E-mails de factures et devis** vous choisissez
 - **Complet** : tout pour payer ou décider, toujours avec le tableau des lignes en dessous, même pour un devis
 - **Minimal** : seulement le numéro, le total et la date
 
-Avec un style, chaque prochain e-mail de ce type ressort ainsi, dans toutes les langues. Avez-vous un texte personnalisé pour ce type, la page demande si le style doit le remplacer, et **Revenir au texte standard** vous ramène par type au style choisi en dernier. L'interrupteur dans la fenêtre d'envoi qui ajoute ou enlève le tableau des lignes décide à l'envoi des lignes, tant que le tableau est permis pour ce type ; le style Complet l'emporte toujours avec lui.
+Avec un style, chaque prochain e-mail de ce type ressort ainsi, dans toutes les langues. Avez-vous un texte personnalisé pour ce type, la page demande si le style doit le remplacer, et **Revenir à** (suivi du nom du style) vous ramène par type au style choisi en dernier. L'interrupteur dans la fenêtre d'envoi qui ajoute ou enlève le tableau des lignes décide à l'envoi des lignes, tant que le tableau est permis pour ce type ; le style Complet l'emporte toujours avec lui.
 
 Ce que vous pouvez ajuster :
-1. L'expéditeur : accédez à Paramètres → E-mail → Adresses et envoi et choisissez votre propre domaine (Office), Gmail ou Outlook
-2. Votre signature : renseignez votre e-mail de support, votre site web et vos liens sociaux sous Paramètres → Informations de l'entreprise ; ils apparaissent sous chaque e-mail que vous envoyez, et sur vos factures et votre site web. Vos labels et certifications (STEK, VCA, CE et autres) y figurent également ; sous Paramètres → E-mail, vous choisissez par type d'e-mail si c'est le cas
+1. L'expéditeur : accédez à Paramètres › E-mail › Adresses et envoi et choisissez votre propre domaine (Office), Gmail ou Outlook
+2. Votre signature : renseignez votre e-mail de support, votre site web et vos liens sociaux sous Paramètres › Données de l'entreprise ; ils apparaissent sous chaque e-mail que vous envoyez, et sur vos factures et votre site web. Vos labels et certifications (STEK, VCA, CE et autres) y figurent également ; sous Paramètres › E-mail, vous choisissez par type d'e-mail si c'est le cas
 3. Un e-mail ponctuel : dans la fenêtre d'envoi, vous pouvez ajuster le destinataire, l'objet et le message avant l'envoi
 
-Astuce : les informations de votre signature figurent aussi sur vos factures et votre site web ; les remplir dans les Informations de l'entreprise suffit pour que chaque e-mail soit complet.
+Astuce : les informations de votre signature figurent aussi sur vos factures et votre site web ; les remplir dans les Données de l'entreprise suffit pour que chaque e-mail soit complet.

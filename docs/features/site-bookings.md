@@ -1,19 +1,20 @@
 ---
 title: Online afspraken
-description: Laat klanten direct via je website een afspraak inplannen met Site Bookings.
-last_verified: 2026-10-11
+description: Laat klanten via het afspraakblok op je website direct een afspraak inplannen of een datum aanvragen, met optionele aanbetaling.
+last_verified: 2026-10-13
 ---
 
 # Online afspraken
 
-Met **Site Bookings** plaats je op je website een blok waarmee bezoekers direct een afspraak bij je kunnen inplannen. Denk aan een kennismaking, een offerteafspraak of een servicebezoek: de klant kiest een service, een geschikt moment en bevestigt het verzoek. Jij bepaalt welke services je aanbiedt, wanneer je beschikbaar bent en of een afspraak eerst door jou bevestigd moet worden.
+Met het blok **Online boeken (afspraak plannen)** plaats je op je website een blok waarmee bezoekers direct een afspraak bij je kunnen inplannen. Denk aan een kennismaking, een offerteafspraak of een servicebezoek: de klant kiest een dienst, een geschikt moment en bevestigt het verzoek. Jij bepaalt welke diensten je aanbiedt, wanneer je beschikbaar bent en of een afspraak eerst door jou bevestigd moet worden.
 
 ## Beschikbare tijden en openingstijden
 
-De tijden die bezoekers kunnen boeken, komen uit één centrale bron: **Instellingen** > **Bedrijfsgegevens** > **Openingstijden**.
+De tijden die bezoekers kunnen boeken, komen uit één centrale bron: **Instellingen › Bedrijfsgegevens › Openingstijden**.
 
 - Per dag stel je in of je open bent, welke tijdvakken je hebt en of een dag **op afspraak** is.
-- Met **Afwijkende dagen** geef je feestdagen, vakanties of eenmalige wijzigingen door. Ook die bepalen mee of het afspraakblok een dag toont.
+- Met **Vrije dagen en uitzonderingen** geef je feestdagen, vakanties of eenmalige wijzigingen door. Ook die bepalen mee of het afspraakblok een dag toont.
+- Laat je klanten een afspraak aanvragen in plaats van zelf een tijd te kiezen, dan beperken je openingstijden niets en bevestig jij. Op welke dagen ze dan kunnen aanvragen, kies je in het blok bij **Op welke dagen kun je?**.
 - Het afspraakblok houdt automatisch rekening met je openingstijden en je gekoppelde agenda, zodat er geen dubbele of onmogelijke afspraken ontstaan.
 
 Zie [Bedrijfsinstellingen](/settings/company) voor het instellen van je openingstijden.
@@ -28,13 +29,13 @@ Zie [Bedrijfsinstellingen](/settings/company) voor het instellen van je openings
 
 - Een website gebouwd met de **Sitebouwer**.
 - Een agenda in MyCompanyDesk waar afspraken in terechtkomen.
-- Minimaal één service die je als boekbare afspraak wilt aanbieden.
+- Minimaal één dienst in je **Aanbod** die je als boekbare afspraak wilt aanbieden.
 
 ## Afspraakblok toevoegen aan je website
 
 1. Open de **Sitebouwer** via de app.
 2. Bewerk de pagina waarop je het afspraakblok wilt plaatsen.
-3. Zoek in de blokkenbibliotheek naar **Afspraken** of **Site Bookings**.
+3. Zoek in de blokkenbibliotheek naar **Online boeken (afspraak plannen)**.
 4. Sleep het blok naar de gewenste plek op de pagina.
 5. Klik op het blok om de instellingen te openen.
 
@@ -44,12 +45,12 @@ Je website toont nu het afspraakformulier zodra je de pagina publiceert.
 
 In de instellingen van het blok bepaal je hoe klanten kunnen boeken:
 
-- **Service**: geef de afspraak een naam, zoals "Kennismaking" of "Installatiebezoek".
-- **Prijs (optioneel)**: vul een prijs in als de afspraak betaald moet worden.
-- **Duur**: kies hoe lang de afspraak duurt, bijvoorbeeld 30 of 60 minuten.
-- **Vooruit boeken**: stel in hoe ver van tevoren iemand een afspraak mag maken.
-- **Goedkeuring vereist**: schakel dit in als jij eerst elke aanvraag handmatig moet goedkeuren.
-- **Externe agenda blokkeren**: laat de tool rekening houden met je bestaande agenda zodat er geen dubbele afspraken ontstaan.
+- **Hoe boeken klanten?**: kies **Direct boeken (vrije tijden)** als bezoekers zelf een vrij moment kiezen, of **Aanvraag (jij bevestigt)** als ze een moment aanvragen dat jij bevestigt. Een aanvraag komt binnen als lead in je Inbox, met een melding.
+- **Diensten**: het blok toont de diensten uit je **Aanbod**, elk met een eigen duur. Wil je in dit blok andere diensten, vul dan **Diensten met eigen duur (optioneel)** in met een naam, duur en optionele prijs. De volgorde pas je aan in Aanbod.
+- **Duur per afspraak (minuten)** en **Pauze tussen afspraken (minuten)**: hoe lang een afspraak duurt als de dienst geen eigen duur heeft, en hoeveel ruimte er tussen twee afspraken zit.
+- **Minimaal vooraf boeken (uren)** en **Online te boeken tot (dagen vooruit)**: hoe kort van tevoren iemand nog mag boeken en hoe ver vooruit.
+- **Zelf accepteren voor de afspraak vaststaat**: de tijd wordt vastgehouden en jij bevestigt of wijst af onder **Uren & agenda › Afspraken**. Bij je akkoord krijgt de bezoeker automatisch de bevestiging met agenda-uitnodiging.
+- **Gekoppelde agenda blokkeert tijden**: afspraken in je gekoppelde Google- of Outlook-agenda maken die tijden onboekbaar. Hele-dag-items tellen hier niet mee; gebruik daarvoor vrije dagen bij je openingstijden.
 
 De **beschikbare tijden** zelf komen uit de centrale openingstijden die je bij [Bedrijfsgegevens](/settings/company) instelt. Het blok blokkeert dagen en tijdvakken die daar niet open staan.
 
@@ -61,11 +62,11 @@ Koppel een **e-mailadres** aan het blok zodat bezoekers een automatische bevesti
 
 ## Datumaanvragen
 
-Niet elk vak verkoopt tijdvakken. Een dj, een foodtruck of een trouwfotograaf verliest dagen, en de vraag van een bezoeker is niet "dinsdag om 14:00?" maar "is 14 juni nog vrij?". Voor die vakken zet je in het blok **Hoe boeken klanten?** op **Aanvraag (jij bevestigt)** en zet je **Alleen een datum vragen** aan (zonder tijd). Het formulier vraagt dan alleen een datum.
+Niet elk vak verkoopt tijdvakken. Een dj, een foodtruck of een trouwfotograaf verliest dagen, en de vraag van een bezoeker is niet "dinsdag om 14:00?" maar "is 14 juni nog vrij?". Voor die vakken zet je in het blok **Hoe boeken klanten?** op **Aanvraag (jij bevestigt)** en zet je **Alleen een datum vragen (geen tijd)** aan. Het formulier vraagt dan alleen een datum. Met **Op welke dagen kun je?** kies je op welke weekdagen een aanvraag mag vallen.
 
 Onder de datum ziet de bezoeker of die dag nog vrij is. Het antwoord komt uit je eigen agenda:
 
-- **Een dag is bezet als er al iets op staat**: een aanmelding via je site, een groepsafspraak, een item in je eigen MCD-agenda (gepland of gewerkt), een afspraak met of zonder hele dag in je eigen gekoppelde Google- of Outlook-agenda, of een dag die je bij Afwijkende dagen op dicht hebt gezet.
+- **Een dag is bezet als er al iets op staat**: een aanmelding via je site, een groepsafspraak, een item in je eigen MyCompanyDesk-agenda (gepland of gewerkt), een afspraak met of zonder hele dag in je eigen gekoppelde Google- of Outlook-agenda, of een dag die je bij Afwijkende dagen op dicht hebt gezet.
 - **Niet meegeteld**: je vaste weekuren (in aanvraagmodus beperken die niets, dus elke dag van je week mag worden aangevraagd), verjaardagen en werklocaties uit je gekoppelde agenda's, agenda's die met je zijn gedeeld of die je alleen volgt (zoals een feestdagencalender), items die je had afgewezen of als vrij markeerde, en een optreden van de avond ervoor dat tot uiterlijk 06:00 doorloopt: dat is de nacht van de vorige dag, niet de volgende dag.
 - De site kijkt ongeveer twee jaar vooruit. Verder zegt hij niets, in plaats van de dag bezet te noemen.
 - Het antwoord is alleen vrij of bezet: je site vertelt een bezoeker nooit wat er die dag op je agenda staat.
@@ -73,7 +74,7 @@ Onder de datum ziet de bezoeker of die dag nog vrij is. Het antwoord komt uit je
 
 Bezoekers kunnen geen datum uit het verleden opsturen, en een datumveld op een gewoon aanvraagformulier weigert verleden data op dezelfde manier.
 
-Het blok kan aanvragen ook een eigen tempo meegeven. Bij de blokinstellingen stelt **Minimaal van tevoren aanvragen (dagen)** (aangeboden bij alleen-een-datum) hoeveel hele dagen vooruit de eerste datum uit de dagkiezer begint: 0 = vanaf vandaag, en een eerdere datum is gewoonweg niet te kiezen. Staat er een tijd op het blok, dan weigert **Minimaal van tevoren aanvragen (uren)** een aanvraag voor een eerder moment. Zonder waarde is er geen termijn op de regel tegen het verleden na; de dagkiezer en de server passen dezelfde regel toe, dus wat de site aanbiedt en wat opgeslagen wordt komen nooit tegen elkaar te spreken. Met alleen een datum begrenst **Maximaal aantal aanvragen per week (optioneel)** de open of geaccepteerde aanvragen van dit blok voor dagen in één week (maandag tot en met zondag); zit de week vol, dan staan de dagen van die week op je site als niet vrij, en een aanvraag die je op Gesloten zet telt niet meer mee. Leeg of 0 betekent geen maximum. In de bevestiging staat naast de datum ook de weekdag, zodat een aanvraag met een dagennaam binnenkomt en niet alleen als blote datum.
+Het blok kan aanvragen ook een eigen tempo meegeven. Bij de blokinstellingen stelt **Minimaal aantal dagen van tevoren** (aangeboden bij alleen een datum) hoeveel hele dagen vooruit de eerste datum uit de dagkiezer begint: 0 = vanaf vandaag, en een eerdere datum is gewoonweg niet te kiezen. Vraagt het blok ook een tijd, dan weigert **Minimaal van tevoren** (in uren of dagen) een aanvraag voor een eerder moment. Zonder waarde is er geen termijn op de regel tegen het verleden na; de dagkiezer en de server passen dezelfde regel toe, dus wat de site aanbiedt en wat opgeslagen wordt komen nooit tegen elkaar te spreken. **Maximaal aantal aanvragen per week (optioneel)** begrenst de open of geaccepteerde aanvragen van dit blok voor dagen in één week (maandag tot en met zondag); zit de week vol, dan staan de dagen van die week op je site als niet vrij, en een aanvraag die je op Gesloten zet telt niet meer mee. Leeg of 0 betekent geen maximum. In de bevestiging staat naast de datum ook de weekdag, zodat een aanvraag met een dagennaam binnenkomt en niet alleen als blote datum.
 
 ## Groepsafspraken
 
@@ -82,7 +83,7 @@ Niet elke boeking is één klant op een vrij moment van zijn keuze. Een **groeps
 - **Aanboditem**: de sessie leent zijn naam en, als je een rekent, de prijs van het aanboditem dat je kiest. Nog geen aanbod? Maak eerst een service aan, bijvoorbeeld je workshop.
 - **Eén of meer datums**: plan in één keer meerdere startmomenten, elk met een duur.
 - **Plekken**: hoeveel mensen er in de sessie passen (tussen 1 en 500). **Max per aanmelding** stelt in hoeveel mensen één aanmelding mag meenemen (tot 50).
-- **Aanmelden open tot**: tot de start, een aantal uren vooraf of tot een week vooraf. Tot dat moment kunnen deelnemers zichzelf ook weer afmelden.
+- **Aanmelden kan tot**: tot de start, een aantal uren vooraf of tot een week vooraf. Tot dat moment kunnen deelnemers zichzelf ook weer afmelden.
 - **Locatie**: optioneel, bijvoorbeeld je studio.
 - **Betaling**: volledig online vooraf betaald (een plek is pas bevestigd als hij betaald is; zonder Mollie of Stripe betaalt men op locatie) of **op locatie**, waar na de sessie voor elke deelnemer een conceptfactuur klaarligt.
 
@@ -113,9 +114,9 @@ Een klant kan online annuleren zolang de afspraak nog niet is begonnen. Een afsp
 
 ## Aanbetaling
 
-Het afspraakblok kan bezoekers bij het boeken om een aanbetaling vragen. Zet **Aanbetaling** aan bij de instellingen van het blok en kies een vast bedrag of een percentage van de dienstprijs. Een aanbetaling heeft een gekoppelde betaalprovider (Mollie of Stripe) nodig; is die er niet, dan boekt het blok gewoon zonder aanbetaling.
+Het afspraakblok kan bezoekers bij het boeken om een aanbetaling vragen. Zet **Aanbetaling vragen** aan bij de instellingen van het blok en kies een vast bedrag of een percentage van de dienstprijs. Een aanbetaling heeft een gekoppelde betaalprovider (Mollie of Stripe) nodig; is die er niet, dan boekt het blok gewoon zonder aanbetaling.
 
-Zolang de aanbetaling niet binnen is, blijft de boeking in behandeling: de app toont **Wacht op betaling** in plaats van de Accepteren-knop, en accepteren wordt geweigerd tot het geld binnen is. Afwijken kun je intussen wel: bij een onbetaalde aanvraag staat alleen die knop. Wijs je een aanvraag af, of loopt een aanvraag vanzelf af, dan stort de betaalde aanbetaling zichzelf terug. Komt er later alsnog een betaling binnen voor een aanvraag die in de tussentijd is afgewezen, ingetrokken of verlopen, dan gaat ook dat bedrag automatisch terug. Een annulering door de bezoeker krijgt het bedrag ook vanzelf terug, zolang de annulering binnen het terugbetalingsvenster valt dat je in de blokinstellingen zet. Standaard loopt dat venster tot een dag voor de start; je kunt het verbreden tot je hele boekhorizon, zodat elke annulering vóór de start terugbetaald wordt, of op nul zetten: dan gaat er niets automatisch terug en beslis je zelf met de knop **Aanbetaling terugbetalen** op de afspraak.
+Zolang de aanbetaling niet binnen is, blijft de boeking in behandeling: de app toont **Wacht op betaling** in plaats van de Accepteren-knop, en accepteren wordt geweigerd tot het geld binnen is. Afwijzen kun je intussen wel: bij een onbetaalde aanvraag staat alleen die knop. Wijs je een aanvraag af, of loopt een aanvraag vanzelf af, dan stort de betaalde aanbetaling zichzelf terug. Komt er later alsnog een betaling binnen voor een aanvraag die in de tussentijd is afgewezen, ingetrokken of verlopen, dan gaat ook dat bedrag automatisch terug. Een annulering door de bezoeker krijgt het bedrag ook vanzelf terug, zolang hij op tijd annuleert volgens **Kosteloos annuleren** in de blokinstellingen: **Tot 24 uur van tevoren** (de standaard), **Tot 48 uur van tevoren**, **Tot een week van tevoren**, **Altijd terugbetalen** (elke annulering vóór de start) of **Nooit automatisch terugbetalen**: dan beslis je zelf met de knop **Aanbetaling terugbetalen** op de afspraak.
 
 Het opnieuw inplannen van een afspraak opent het terugbetalingsvenster niet opnieuw.
 
@@ -126,13 +127,13 @@ MyCompanyDesk kan automatisch een herinneringsmail sturen voor de afspraak. Ook 
 ## Veelgestelde vragen
 
 **Waarom zie ik geen beschikbare tijden?**
-Controleer of je minimaal één service hebt aangemaakt, of die een duur heeft, en of je tijdvakken in de toekomst liggen. Ook een ingeschakelde goedkeuring kan ervoor zorgen dat tijden pas zichtbaar zijn nadat jij een aanvraag hebt goedgekeurd.
+Controleer of je minimaal één dienst in je Aanbod hebt, of die een duur heeft, en of je openingstijden in de komende periode open dagen hebben. Staat het blok op **Aanvraag (jij bevestigt)**, dan kiest de bezoeker geen vrije tijd maar vraagt hij een moment of datum aan.
 
-**Kan ik meerdere services aanbieden?**
-Ja. Je kunt per afspraakblok één of meerdere services tonen. Elke service heeft een eigen naam, duur en prijs.
+**Kan ik meerdere diensten aanbieden?**
+Ja. Het blok toont de diensten uit je Aanbod, of de diensten die je in het blok zelf invult. Elke dienst heeft een eigen naam, duur en prijs.
 
 **Wordt er een betaling gevraagd bij het boeken?**
-Alleen als je een prijs aan de service koppelt. Zonder prijs is de boeking gratis en ontvang je alleen een reservering.
+Alleen als je **Aanbetaling vragen** aanzet en Mollie of Stripe hebt gekoppeld. Een prijs bij een dienst wordt alleen getoond; zonder aanbetaling is de boeking een reservering en factureer je achteraf vanuit de afspraak.
 
 ## Gerelateerde onderwerpen
 

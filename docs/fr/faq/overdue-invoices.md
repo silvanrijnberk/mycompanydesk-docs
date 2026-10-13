@@ -1,7 +1,7 @@
 ---
 title: "Factures en retard"
 description: "Pour gérer les factures en retard : allez dans Factures, filtrez par statut En retard, triez par échéance et ouvrez-en une pour relancer."
-last_verified: 2026-05-09
+last_verified: 2026-10-13
 chatbot:
   triggers: ["overdue invoices", "late invoices", "unpaid invoices", "outstanding invoices", "invoices not paid", "achterstallige facturen", "onbetaalde facturen", "uberfaellige rechnungen", "factures impayees"]
   actions:
@@ -11,8 +11,8 @@ chatbot:
 
 Pour consulter et gérer les factures en retard :
 1. Allez dans Factures
-2. Filtrez par statut « En retard »
-3. Triez par date d'échéance
+2. Le groupe **En retard** se trouve en haut de la liste. Pour n'afficher que ces factures, choisissez le statut « En retard » sous **Filtres**
+3. Cliquez sur la colonne Date d'échéance pour trier par échéance
 4. Ouvrez une facture pour envoyer un rappel ou afficher les détails
 
-Le tableau de bord peut aussi vous ramener vers les totaux en retard et les listes correspondantes.
+L'onglet **En attente de paiement** indique aussi d'un coup d'œil combien de factures sont en retard, et le tableau de bord vous ramène vers les factures en retard.

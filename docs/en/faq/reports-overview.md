@@ -1,7 +1,7 @@
 ---
 title: "Reports overview"
-description: "To view your reports: go to Reports, switch between the six views: Overview, P&L, Cash Flow, Clients, Forecast, and Income tax."
-last_verified: 2026-09-28
+description: "To view your reports: go to Reports and switch between Overview, Sales, Quotes, Clients, Work & time, Expenses, Cash Flow and Reach."
+last_verified: 2026-10-13
 chatbot:
   triggers:
     - "view reports"
@@ -16,18 +16,18 @@ chatbot:
     - "voir rapports"
   actions:
     - { label: "Open reports", to: "/reports" }
-    - { label: "Open VAT", to: "/vat" }
+    - { label: "Open VAT", to: "/belastingen" }
   follow_up:
     - "How do I export my data?"
     - "How do I view charts?"
     - "How do I see profit and loss?"
 ---
 
-To view your reports:
-1. Go to Reports
-2. Switch between the six views: Overview, P&L, Cash Flow, Clients, Forecast, and Income tax
-3. Use the filters to set the period granularity (year, quarter, month, week, or day) and pick the year. The switches **Include open invoices** and **Compare with another year** appear only on the views that use them
+To view your reports (Office):
+1. Go to **Reports** in the sidebar, under Finance
+2. Switch between the tabs at the top: **Overview**, **Sales**, **Quotes**, **Clients**, **Work & time**, **Expenses**, **Cash Flow** and **Reach**. Quotes, Work & time and Reach only appear once you have quotes, hours or a newsletter
+3. Use **Filters** to set the period granularity (year, quarter, month, week, or day) and pick the year. **Include open invoices** and the comparison with another year appear only on the tabs that use them
 
-There are no status or category filters on reports. The period and year filters apply across all views; the open-invoices and comparison switches show only on the views that read them.
+There are no status or category filters on reports. Your VAT return and income tax live under **Taxes**, and your profit and loss statement, balance sheet and ledger under **Bookkeeping**.
 
 Tip: If a number looks wrong, verify the active period and comparison settings first.

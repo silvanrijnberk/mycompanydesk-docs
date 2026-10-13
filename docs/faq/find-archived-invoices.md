@@ -1,6 +1,6 @@
 ---
 title: "Gearchiveerde facturen vinden"
-description: "Gearchiveerde facturen vind je onder Facturen > Archief. Sta je al in de facturenlijst, schakel dan over naar de weergave Archief."
+description: "Gearchiveerde facturen vind je in Facturen: klik op Filters en kies bij Tonen de weergave Archief."
 last_verified: 2026-05-09
 chatbot:
   triggers:
@@ -29,4 +29,4 @@ chatbot:
     - "How do I cancel an invoice?"
 ---
 
-Gearchiveerde facturen vind je onder Facturen -> Archief. Sta je al in de facturenlijst, schakel dan over naar de weergave Archief. Verwijderde facturen staan in de Prullenbak.
+Gearchiveerde facturen vind je in Facturen: klik boven de lijst op Filters en kies bij Tonen de weergave Archief. Op je telefoon gebruik je daarvoor het filterknopje bovenaan. Verwijderde facturen staan in de Prullenbak.

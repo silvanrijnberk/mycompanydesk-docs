@@ -12,8 +12,8 @@ chatbot:
 Chaque ligne de facture peut porter sa propre remise :
 
 1. Modifiez ou créez une facture
-2. Cliquez sur l'icône d'étiquette de la ligne qui doit porter la remise
-3. Dans le petit panneau qui s'ouvre, choisissez le type de remise : **pourcentage** ou **montant fixe**
+2. Sur la ligne qui doit porter la remise, cliquez sur le bouton avec le signe pourcentage (**Remise sur cette ligne**)
+3. Dans le petit panneau qui s'ouvre, choisissez le type de remise : **%** (pourcentage) ou **€** (montant fixe)
 4. Saisissez la valeur de la remise et choisissez **Terminé**
 
 Un badge sur la ligne affiche ensuite la remise (par exemple -10 %), et le total de la ligne se met à jour : le montant d'origine apparaît barré, avec le montant réduit en dessous.

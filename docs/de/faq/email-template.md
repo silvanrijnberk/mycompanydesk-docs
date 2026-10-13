@@ -18,7 +18,7 @@ Gutschrifts-E-Mails verwenden eine eigene Vorlage, die das Dokument als Gutschri
 
 Ihren eigenen Standardtext legen Sie an zwei Stellen fest:
 
-1. **Rechnungs- und Angebotsmails** unter Einstellungen → E-Mail: wählen Sie die Art der E-Mail (Rechnung, Angebot, Zahlungserinnerung oder Gutschrift) und die Sprache der E-Mail, schreiben Sie Ihren eigenen Betreff und Text und speichern Sie. Ihr Text trägt das Label **Eigener Text**; mit **Zurück zum Standardtext** holen Sie nach einer Bestätigung den Standard zurück.
+1. **Rechnungs- und Angebotsmails** unter Einstellungen › E-Mail: wählen Sie die Art der E-Mail (Rechnung, Angebot, Zahlungserinnerung oder Gutschrift) und die Sprache der E-Mail, schreiben Sie Ihren eigenen Betreff und Text und speichern Sie. Ihr Text trägt das Label **Eigener Text**; mit der Schaltfläche **Zurück zu** und dem Namen Ihres Stils (zum Beispiel **Zurück zu Förmlich**) holen Sie nach einer Bestätigung den Standard zurück.
 2. **Das Versandfenster**: schreiben Sie Betreff und Nachricht so, wie Sie sie möchten, und aktivieren Sie **Diesen Text künftig für Rechnungen verwenden** (oder für Angebote, Zahlungserinnerungen, Gutschriften oder Mietrechnungen). Sobald die E-Mail unterwegs ist, ist Ihr Text der Startpunkt für jedes nächste Dokument dieser Art.
 
 - Der Text wird mit Platzhaltern gespeichert: Name, Nummer, Betrag und Daten füllt MyCompanyDesk bei jeder E-Mail selbst wieder ein.
@@ -28,7 +28,7 @@ Ihren eigenen Standardtext legen Sie an zwei Stellen fest:
 
 ## Der Stil der E-Mail
 
-Unter **Einstellungen → E-Mail → Rechnungs- und Angebotsmails** wählen Sie pro Art der Mail einen Stil. Die fünf Stile füllen den Standardtext für Sie:
+Unter **Einstellungen › E-Mail › Rechnungs- und Angebotsmails** wählen Sie pro Art der Mail einen Stil. Die fünf Stile füllen den Standardtext für Sie:
 
 - **Förmlich**: der Standardtext in der Sie-Form, wie die Mail bereits aussah
 - **Kurz**: ein paar Zeilen mit dem Wesentlichen, in der Anrede wie die App sie zeigt ("Das Wichtigste kurz, mit du")
@@ -36,11 +36,11 @@ Unter **Einstellungen → E-Mail → Rechnungs- und Angebotsmails** wählen Sie 
 - **Vollständig**: alles, um zu zahlen oder zu entscheiden, immer mit einer Positionstabelle darunter, auch bei einem Angebot
 - **Minimal**: nur die Nummer, der Gesamtbetrag und das Datum
 
-Mit einem Stil sieht jede nächste Mail dieser Art so aus, in jeder Sprache. Haben Sie einen eigenen Text für diese Art, fragt die Seite, ob der Stil ihn ersetzen soll, und **Zurück zum Standardtext** führt Sie je Art zurück zum zuletzt gewählten Stil. Der Schalter im Versandfenster, der die Positionstabelle hinzufügt oder wegnimmt, entscheidet pro Sendung über die Positionen, solange die Tabelle für diese Art erlaubt ist; der Stil Vollständig nimmt sie immer mit.
+Mit einem Stil sieht jede nächste Mail dieser Art so aus, in jeder Sprache. Haben Sie einen eigenen Text für diese Art, fragt die Seite, ob der Stil ihn ersetzen soll, und **Zurück zu** (mit dem Namen des Stils) führt Sie je Art zurück zum zuletzt gewählten Stil. Der Schalter im Versandfenster, der die Positionstabelle hinzufügt oder wegnimmt, entscheidet pro Sendung über die Positionen, solange die Tabelle für diese Art erlaubt ist; der Stil Vollständig nimmt sie immer mit.
 
 Was Sie anpassen können:
-1. Den Absender: Gehen Sie zu Einstellungen → E-Mail → Adressen und Versand und wählen Sie Ihre eigene Domain (Office), Gmail oder Outlook
-2. Ihre Grußformel: Tragen Sie Ihre Support-E-Mail, Website und Social Links unter Einstellungen → Unternehmensdaten ein; sie erscheinen unter jeder E-Mail, die Sie senden, und auf Ihren Rechnungen und Ihrer Website. Ihre Gütesiegel (STEK, VCA, CE und mehr) erscheinen ebenfalls darunter; unter Einstellungen → E-Mail wählen Sie pro Mailart, ob das geschieht
+1. Den Absender: Gehen Sie zu Einstellungen › E-Mail › Adressen und Versand und wählen Sie Ihre eigene Domain (Office), Gmail oder Outlook
+2. Ihre Grußformel: Tragen Sie Ihre Support-E-Mail, Website und Social Links unter Einstellungen › Unternehmensdaten ein; sie erscheinen unter jeder E-Mail, die Sie senden, und auf Ihren Rechnungen und Ihrer Website. Ihre Gütesiegel (STEK, VCA, CE und mehr) erscheinen ebenfalls darunter; unter Einstellungen › E-Mail wählen Sie pro Mailart, ob das geschieht
 3. Eine einzelne E-Mail: Im Versandfenster passen Sie Empfänger, Betreff und Nachricht an, bevor die E-Mail verschickt wird
 
 Tipp: Die Angaben in Ihrer Grußformel erscheinen auch auf Ihren Rechnungen und Ihrer Website; ausfüllen in den Unternehmensdaten genügt, damit jede E-Mail vollständig ist.

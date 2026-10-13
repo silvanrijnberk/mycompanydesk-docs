@@ -1,7 +1,7 @@
 ---
 title: "Datenimport & -export"
 description: "Importieren Sie Kunden, Rechnungen und Ausgaben aus CSV, und exportieren Sie Ihre Daten als Sicherung oder für die Nutzung in anderen Programmen."
-last_verified: 2026-10-03
+last_verified: 2026-10-13
 ---
 
 # Datenimport & -export
@@ -17,22 +17,26 @@ Importieren Sie Daten aus CSV-Dateien für:
 - **Kunden** mit Name, E-Mail, Telefon, Adresse, USt.-Nummer
 - **Rechnungen** mit Rechnungsdetails
 - **Ausgaben** mit Kategorien und Beträgen
+- **Katalog**: Ihre Produkte und Dienstleistungen, mit Preis (netto), Einheit und Steuersatz
 
 Andere Datentypen (etwa Projekte oder Objekte) lassen sich nicht aus CSV importieren; diese legen Sie in der App selbst an.
 
 ### So importieren Sie
 
-Der Import-Assistent hat eine eigene Seite in der App: Öffnen Sie `/profile/import` direkt, praktisch, wenn Sie kurz nach der Registrierung von einem anderen Tool umsteigen.
+Der Import-Assistent hat eine eigene Seite in der App, **CSV-Daten importieren**. Sie öffnen sie mit **Importieren** in Ihrer Kundenliste, über **Einstellungen › Wechseln** oder direkt unter `/profile/import`, praktisch, wenn Sie kurz nach der Registrierung von einem anderen Tool umsteigen.
 
-1. Wählen Sie den **Datentyp**, den Sie importieren möchten (Kunden, Rechnungen oder Ausgaben)
+1. Wählen Sie den **Datentyp**, den Sie importieren möchten (Kunden, Rechnungen, Ausgaben oder Katalog)
 2. Laden Sie Ihre **CSV-Datei** hoch
 3. **Ordnen Sie die Spalten zu**, indem Sie Ihre CSV-Spaltenüberschriften den MyCompanyDesk-Feldern zuweisen
 4. **Importieren** Sie, um die Datensätze anzulegen; das Ergebnis zeigt, wie viele Zeilen importiert wurden und wie viele fehlgeschlagen sind
+
+Stimmt das Ergebnis nicht, entfernt **Diesen Import rückgängig machen** genau die Zeilen, die dieser Import angelegt hat, außer Zeilen, mit denen bereits etwas verknüpft ist.
 
 ### Import-Tipps
 
 - Verwenden Sie UTF-8-Kodierung für Ihre CSV-Dateien
 - Fügen Sie eine Kopfzeile mit Spaltennamen ein
+- Komma und Semikolon werden beide als Trennzeichen erkannt
 - Halten Sie Datumsformate konsistent (JJJJ-MM-TT empfohlen)
 - Verwenden Sie in Betragsfeldern einen Punkt (.) als Dezimaltrennzeichen
 - Leere Felder werden übersprungen (bestehende Standardwerte werden verwendet)
@@ -71,19 +75,19 @@ Die CSV-Exporte Ihrer Rechnungen, Ausgaben und Kundenliste sowie die komplette J
 
 Dieselbe Seite bietet eine **komplette Sicherung**: alle Ihre Daten in einer JSON-Datei. Nutzen Sie sie als regelmäßige Sicherung oder als vollständige Momentaufnahme Ihrer Unterlagen, zum Beispiel für eine DSGVO-Auskunft.
 
-Exporte enthalten nur die Daten, auf die Sie Zugriff haben. PDF-Versionen von Rechnungen laden Sie separat herunter, auf der Seite der jeweiligen Rechnung.
+Exporte enthalten nur die Daten, auf die Sie Zugriff haben. PDF-Versionen von Rechnungen laden Sie separat herunter, auf der Seite der jeweiligen Rechnung. Fotos und PDFs Ihrer Belege sind nicht im Export enthalten; sie bleiben bei der jeweiligen Ausgabe.
 
 ## Standortdaten
 
-Einige mobile Abläufe können Ihren GPS-Standort verwenden, wenn Sie dies ausdrücklich wählen:
+MyCompanyDesk kann Ihren Standort verwenden, wenn Sie dies ausdrücklich wählen:
 
-- In der Kundenliste **Kunden in der Nähe** suchen.
-- Beim Ausfüllen eines Adressfeldes den **aktuellen Standort** verwenden.
+- In der Kundenliste **Kunde in der Nähe** suchen.
+- Beim Erfassen von Stunden **Aktueller Standort** als Startadresse einer Fahrt wählen.
 
-Wir lesen Ihren Standort nur in diesen beiden Fällen und nur in der App. Wir wandeln ihn in eine Adresse oder eine gefilterte Kundenliste um und speichern die Rohkoordinaten nicht. Sie können die Berechtigung jederzeit in den Einstellungen Ihres Geräts verweigern oder widerrufen.
+Wir lesen Ihren Standort nur in diesen beiden Fällen, in der App oder in Ihrem Browser. Wir wandeln ihn in eine Adresse oder eine gefilterte Kundenliste um und speichern die Rohkoordinaten nicht. Sie können die Berechtigung jederzeit in den Einstellungen Ihres Geräts oder Browsers verweigern oder widerrufen.
 
 ## Tipps
 
 - Exportieren Sie Ihre Daten regelmäßig als Sicherung
-- Statt Dateien an Ihren Buchhalter zu mailen, geben Sie ihm direkten Zugang über **Einstellungen > Zugang und Buchhalter**; so sieht er immer Ihre aktuellsten Zahlen
+- Statt Dateien an Ihren Buchhalter zu mailen, geben Sie ihm direkten Zugang über **Einstellungen › Ihr Buchhalter**; so sieht er immer Ihre aktuellsten Zahlen
 - Wenn Sie von einem anderen Tool umsteigen, nutzen Sie den Import-Assistenten, um Ihre Kundenliste zu übernehmen

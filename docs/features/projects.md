@@ -13,41 +13,44 @@ Projecten helpen je facturen, uitgaven en tijdregistraties te groeperen. Dit gee
 
 ## Een project aanmaken
 
-1. Ga naar **Projecten > Nieuw project**
+1. Ga naar **Projecten › Nieuw project**
 2. Vul in:
-   - **Naam** — Een duidelijke projectnaam
-   - **Klant** — De klant waarvoor dit project is
-   - **Omschrijving** — Waar het project over gaat
-   - **Budget** — Optioneel budgetbedrag
-   - **Status** — Actief, In de wacht of Voltooid
+   - **Naam**: een duidelijke projectnaam (het enige verplichte veld)
+   - **Klant**: de klant waarvoor dit project is
+   - **Omschrijving**: waar het project over gaat
+   - **Budget**: een optioneel budgetbedrag
+   - **Status**: Gepland, Actief, Gepauzeerd of Afgerond
 3. Klik op **Opslaan**
 
 ## Projectstatussen
 
 | Status | Beschrijving |
 |---|---|
+| **Gepland** | Nog niet begonnen |
 | **Actief** | Er wordt momenteel aan gewerkt |
-| **In de wacht** | Tijdelijk gepauzeerd |
-| **Voltooid** | Afgerond — er wordt geen werk meer verwacht |
-| **Gearchiveerd** | Opgeslagen ter referentie |
+| **Gepauzeerd** | Tijdelijk stilgelegd |
+| **Afgerond** | Klaar, er wordt geen werk meer verwacht |
+| **Geannuleerd** | Gaat niet door |
+
+Een project dat je niet meer in je lijst wilt zien, archiveer je. Het staat dan in de weergave **Archief**; verwijderde projecten staan in de **Prullenbak**.
 
 ## Projectdetailpagina
 
 De projectdetailpagina toont:
 
-- **Overzicht** — Naam, klant, status, budget
-- **Gekoppelde facturen** — Alle facturen gerelateerd aan dit project
-- **Gekoppelde uitgaven** — Kosten toegeschreven aan dit project
-- **Tijdregistraties** — Uren gelogd voor dit project
-- **Winstgevendheid** — Omzet versus kosten specificatie
+- **Wat dit project oplevert**: inkomsten, uitgaven en het resultaat
+- **Budget**: hoeveel er besteed is en wat er nog over is
+- **Uren per persoon**: wie hoeveel uren op het project schreef
+- **Geschiedenis**: de facturen, uitgaven en uren die aan het project hangen
+- **Automatisch factureren**: hoe de uren van het project gefactureerd worden (zie hieronder)
 
 ## Items koppelen aan projecten
 
 Bij het aanmaken van facturen, uitgaven of tijdregistraties selecteer je het project uit de dropdown om ze te koppelen. Dit werkt automatisch de financien van het project bij.
 
-- **Facturen** — Houd omzet per project bij
-- **Uitgaven** — Houd kosten per project bij
-- **Tijdregistraties** — Houd uren per project bij
+- **Facturen**: Houd omzet per project bij
+- **Uitgaven**: Houd kosten per project bij
+- **Tijdregistraties**: Houd uren per project bij
 
 ## Koppelen aan een contract
 
@@ -59,41 +62,38 @@ Als voor een contract geen tarief is ingesteld, blijven gekoppelde uren ongefact
 
 ## Automatisch factureren voor een project
 
-Een project kan zijn uren op een eigen ritme laten factureren. Op de projectpagina kies je hoe het gefactureerd wordt:
+Een project kan zijn uren op een eigen ritme laten factureren. Op de projectpagina kies je onder **Automatisch factureren** hoe het gefactureerd wordt:
 
-- **Handmatig** (de standaard): die maak je zelf aan.
-- **Elke maand**: begin van de maand gaan de uren en doorbelaste kosten tot dan naar de klant op een factuur.
-- **Bij afronding**: alles wat nog open staat, gaat naar een eindfactuur zodra je het project afrondt.
+- **Handmatig** (de standaard): je maakt de factuur zelf, vanuit de uren van het project.
+- **Op vaste dag**: elke week of elke maand op de dag die je kiest gaan de uren en doorbelaste kosten tot dan op een factuur naar de klant.
+- **Bij afronden**: alles wat nog openstaat, gaat naar een eindfactuur zodra je het project op Afgerond zet.
 
-Je kunt het project ook een eigen factuur geven, los van de andere projecten van dezelfde klant. De pagina van de klant houdt het [volledige overzicht](/features/time-registration#automatisch-uren-factureren) bij: alle projecten van die klant, de uren zonder project, en hoe het versturen werkt.
+Je kunt het project ook **Op een eigen factuur** zetten, los van de andere projecten van dezelfde klant. De pagina van de klant houdt het [volledige overzicht](/features/time-registration#automatisch-uren-factureren) bij: alle projecten van die klant, de uren zonder project, en hoe het versturen werkt.
+
+Projecten en urenregistratie zitten in elk abonnement, ook in Desk. Automatisch factureren hoort bij Office; op Desk maak je de factuur zelf vanuit de uren.
 
 ## Budgetopvolging
 
 Als je een budget instelt:
 
-- Zie hoeveel van het budget is verbruikt
-- Houd het resterende budget bij
-- Vergelijk werkelijke kosten met het budget
-- Ontvang waarschuwingen wanneer je het budgetlimiet nadert
+- Zie je hoeveel van het budget is besteed
+- Zie je hoeveel budget er nog over is
+- Toont de projectenlijst het label **Over budget** zodra de kosten het budget passeren
 
 ## Bulkacties
 
-- **Status wijzigen** — Werk meerdere projecten tegelijk bij
-- **Archiveren** — Verplaats voltooide projecten naar het archief
-- **Herstellen** — Haal gearchiveerde projecten terug
+Selecteer meerdere projecten in de lijst:
 
-## Rapportages
+- **Archiveren**: verplaats projecten naar het archief
+- **Verwijderen**: verplaats projecten naar de prullenbak
+- **Herstellen**: haal projecten terug uit het archief of de prullenbak
 
-Bekijk projectprestaties in de [klantrapportages](/features/reports) om te zien:
+## Winstgevendheid
 
-- Omzet per project
-- Bestede tijd per project
-- Winstmarges
-- Vergelijking tussen projecten
+De projectenlijst toont per project de inkomsten, de uitgaven, het nettoresultaat en de marge. Op **Cijfers** vergelijkt het blok **Projectmarges** je projecten met elkaar.
 
 ## Tips
 
-- Gebruik projecten ook voor kleine opdrachten — de inzichten zijn waardevol
+- Gebruik projecten ook voor korte opdrachten: de inzichten zijn waardevol
 - Koppel zowel facturen als uitgaven voor nauwkeurige winstmarges
-- Archiveer voltooide projecten om je actieve lijst overzichtelijk te houden
-- Bekijk het projectgerichte dashboardprofiel voor een projectfocusweergave
+- Archiveer afgeronde projecten om je actieve lijst overzichtelijk te houden

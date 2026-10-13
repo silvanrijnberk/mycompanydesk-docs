@@ -11,103 +11,94 @@ This guide walks you through creating and sending your first invoice in MyCompan
 
 Make sure you have:
 
-- [Set up your company information](/en/getting-started/company-setup) (name, address, btw-id, IBAN)
+- [Set up your company information](/en/getting-started/company-setup) (name, address, VAT ID, IBAN). If your VAT ID or IBAN is still missing, MyCompanyDesk asks for it when you finalize the invoice.
 - At least one customer to invoice (you can create one during the process)
 
 ## Create an invoice
 
-1. Navigate to **Invoices** in the sidebar
-2. Click the **New Invoice** button (or use the **+** floating button on mobile)
-3. Fill in the invoice form:
+1. Go to **Invoices** in the sidebar
+2. Click **Create** (or use the **+** button on your phone)
+3. Fill in the invoice
+
+On a phone or tablet, a new invoice opens in three steps: **Customer**, **Lines** and **Review**. **Next** takes you to the following step. On a large screen everything sits on one page.
 
 ### Select a customer
 
-Start typing the customer name. If the customer exists, select them from the dropdown. If not, type the full name and click **Create customer** to add them inline. The inline form asks for a customer name and address. The KVK lookup can suggest Dutch businesses and fill in the address automatically; private customers can be added by typing the address by hand. Only the customer name is required; you can add the email and full address later on the customer page.
+Start typing the customer name in the **Search for a customer...** field. If the customer exists, select them from the list. If not, choose **Add new customer**. The **New customer** panel asks for the customer type (**Private individual** or **Business**), the name and the address. For businesses, the KVK lookup finds the details and fills in the address automatically; for private customers you type the address yourself. Email is optional. Click **Add** and the customer is on the invoice.
 
-### Add line items
+### Add lines
 
-Each line item has:
+Each line has:
 
-- **Description** — What you're billing for
-- **Quantity** — Number of units
-- **Unit price** — Price per unit
-<!-- TODO(source-missing): RichardTool 5407b44 widened the valid Dutch invoice/catalog VAT-rate set to include historical rates 6% and 19%. sources/vat-rates.yaml#countries.NL currently only lists 0%, 9% and 21%, so this line must stay unchanged until the source is updated. -->
-- **VAT rate** — Applicable VAT percentage (0%, 9%, 21%, etc.)
+- **Description**: what you are billing for
+- **Qty**: number of units
+- **Price**: price per unit. By default you type prices without VAT; switch on **Prices incl. VAT** if you would rather type the amount your customer pays.
+<!-- TODO(source-missing): The app also accepts the historical Dutch rates 6% and 19% on invoices and catalog items. sources/vat-rates.yaml#countries.NL currently only lists 0%, 9% and 21%, so this line must stay unchanged until the source is updated. -->
+- **VAT rate**: Applicable VAT percentage (0%, 9%, 21%, etc.)
 
-Click **Add item** to add more line items. The total is calculated automatically including VAT.
+Click **Add Line Item** for more lines, or pick a product or service from your offering. The total is calculated automatically, including VAT.
 
 ### Set invoice details
 
-- **Invoice number** — Assigned automatically by MyCompanyDesk
-- **Invoice date** — Defaults to today
-- **Due date** — Calculated from your default payment terms (adjustable)
-- **Notes** — Optional notes that appear on the invoice
+- **Invoice number**: suggested automatically. The invoice gets its fixed number when you finalize it.
+- **Invoice date**: defaults to today
+- **Due date**: calculated from your default payment terms (adjustable)
+- **Notes**: optional notes that appear on the invoice
 
 ### Save
 
-Click **Save** to create the invoice as a **draft**. You can still edit everything before sending.
+You have two buttons:
 
-## Preview the invoice
+- **Save as Draft**: keeps the invoice as a **Draft**. You can still change everything.
+- **Finalize**: gives the invoice its number and makes it ready to send. After that the details can no longer be changed (required by the Dutch Tax Administration).
 
-Before sending, preview how the PDF will look:
+## Review the invoice
 
-1. Open the invoice detail page
-2. Click **Preview** to see the generated PDF
-3. Check that all information is correct — company details, customer info, line items, totals
+In the invoice form, click **View preview** to see what the PDF looks like. Check that everything is correct: company details, customer info, lines and totals. The invoice page also shows the document, and you can **Download PDF** there.
 
 ## Send the invoice
 
-When you're ready to send:
+A finalized invoice that has not gone out yet has the status **To send**. To send it:
 
-1. Click **Send** on the invoice detail page
-2. Review the email that will be sent to your customer:
-   - Subject line (customizable)
-   - Email body (based on your email template)
-   - PDF attachment
-   - Payment link (if enabled)
-3. Click **Send** to deliver the invoice
+1. Click **Send** on the invoice page
+2. In the **Send Email** window, check the email to your customer:
+   - **To**: your customer's email address
+   - **Subject** and **Message** (editable)
+   - Under **Include in email**: the **View button (online link)**, the **Download button** and the **PDF attachment**. Through the online link your customer views and pays the invoice.
+3. Click **Send Email**
 
-The invoice status changes from **Draft** to **Sent**.
+The invoice status changes to **Sent**. Sent it yourself, for example over WhatsApp? Click **Mark as Sent**.
 
 ::: tip
-You can customize your email templates in **Settings > Email**. Templates support your branding and can be set per language.
+You can change your email texts in **Settings › Email**. You can also edit the text in the send window and tick **Use this text from now on for invoices**.
 :::
 
 ## Track payment
 
-Once sent, the invoice appears in your **Sent** or **Overdue** views. When the customer pays:
+After sending, the invoice sits under **Awaiting payment**, or under **Overdue** once the due date has passed. When the customer pays:
 
-- If the customer pays via the **payment link**, the invoice is marked as paid automatically
-- For bank transfers, click **Mark as Paid** on the invoice to record the payment manually
+- If the customer pays online (iDEAL, set up in **Settings › Payments**), the invoice is marked as paid automatically
+- For bank transfers, click **Mark as paid** on the invoice to record the payment manually
 
 ## Invoice statuses
 
 | Status | Description |
 |---|---|
-| **Draft** | Created but not yet sent. Fully editable. |
-| **Sent** | Delivered to the customer. Waiting for payment. |
-| **Overdue** | Past the due date and still unpaid. |
+| **Draft** | Created but not finalized yet. Fully editable. |
+| **To send** | Final, not sent yet. |
+| **Sent** | Delivered to the customer. Awaiting payment. |
+| **Overdue** | Past the due date and not yet paid. |
+| **Needs verification** | The customer says they have paid. Check it and mark the invoice as paid. |
 | **Paid** | Payment received and confirmed. |
-| **Cancelled** | Invoice was cancelled. No payment expected. |
+| **Canceled** | Invoice was canceled. No payment expected. |
 
-## Quick add
-
-For faster invoice creation, use **Quick Add**:
-
-1. Click the quick-add icon on the invoices list page
-2. Select a customer
-3. Add items (or use a saved template)
-4. Save and optionally send immediately
-
-Quick Add is ideal for routine invoices where you bill similar items regularly.
-
-## Using templates
+## Use templates
 
 Save time with invoice templates:
 
-1. Create an invoice with your commonly used line items
-2. Click **Save as Template** 
-3. Next time, start a new invoice from the template — all items are pre-filled
+1. Create a new invoice with your most-used lines
+2. Click **Save as Template**
+3. Next time, choose **From template** on a new invoice, and all lines are pre-filled
 
 ## Next steps
 
@@ -115,5 +106,5 @@ Congratulations on sending your first invoice! Explore more features:
 
 - [Track your expenses](/en/features/expenses)
 - [Create quotes](/en/features/quotes) for potential work
-- [Set up recurring invoices](/en/features/recurring-invoices) for regular billing
+- [Set up recurring invoices](/en/features/recurring-invoices) for regular billing (Office)
 - [View reports](/en/features/reports) to understand your finances

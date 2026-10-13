@@ -13,7 +13,7 @@ chatbot:
 To fix a failed invoice email:
 1. Check that the customer record has the correct email address
 2. Open the invoice detail page and review the delivery status or any error shown there
-3. Verify your email setup at Settings → "Email"
+3. Verify your email setup at Settings › "Email"
 4. Send the invoice again; drafts can be emailed too, Send is the primary action and finalizes the draft in the same step
 5. If the customer still does not receive it, ask them to check their spam or junk folder
 

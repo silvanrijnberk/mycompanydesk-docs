@@ -27,6 +27,6 @@ chatbot:
 Zo exporteer of download je een PDF:
 1. Open de factuur vanuit de lijst
 2. Klik op de PDF-voorbeeld- of downloadknop
-3. De PDF gebruikt je logo, kleur en opmaak uit Instellingen → "Logo en kleur" en Instellingen → "Factuurontwerp"
+3. De PDF gebruikt je logo, kleur en opmaak uit Instellingen › "Logo en kleur" en Instellingen › "Factuurontwerp"
 
-Tip: Stel je logo en huisstijlkleur in via Instellingen → "Logo en kleur", en kies de opmaak, kleuren en het lettertype van je facturen via Instellingen → "Factuurontwerp".
+Tip: Stel je logo en huisstijlkleur in via Instellingen › "Logo en kleur", en kies de opmaak, kleuren en het lettertype van je facturen via Instellingen › "Factuurontwerp".

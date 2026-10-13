@@ -6,7 +6,7 @@ last_verified: 2026-09-30
 
 # Tableau de bord
 
-Le tableau de bord sous `/dashboard` est l'écran d'accueil de votre espace de travail. C'est une seule page (en interne, nous l'appelons **Mijn bedrijf**, mon entreprise) qui réunit l'argent, les parties de votre entreprise qui demandent de l'attention, et tout ce que vous pouvez encore activer. Chaque chiffre vient de vos propres données, du jour, sans une seconde étape après.
+Le tableau de bord sous `/dashboard` est l'écran d'accueil de votre espace de travail. C'est une seule page qui réunit l'argent, les parties de votre entreprise qui demandent de l'attention, et tout ce que vous pouvez encore activer. Chaque chiffre vient de vos propres données, du jour, sans une seconde étape après.
 
 Derrière se trouve une seconde page : **Chiffres** (`/cijfers`), la vue d'analyse avec les tuiles KPI, le graphique de tendance, l'ancienneté des créances et les autres chiffres profonds qui se trouvaient jusqu'ici sur le tableau de bord. La carte d'argent y renvoie, et la barre latérale possède sa propre entrée **Chiffres**.
 
@@ -26,7 +26,7 @@ Si votre période d'essai touche à sa fin, cela apparaît ici en premier, au-de
 
 Une seule règle garde cette liste sans bruit : **Te laat** (en retard) ne compte que si MyCompanyDesk connaît vos paiements. Un paiement enregistré comme payé dans les six derniers mois montre que le livre est suivi ; une connexion bancaire ou le paiement en ligne seuls ne suffisent pas, car une connexion que personne ne pointe, ou le paiement en ligne laissé activé pendant que les clients font un virement, déclarerait chaque facture en retard. Les factures n'entrent dans cette liste comme en retard que si ce signal existe.
 
-La même liste arrive aussi chaque lundi dans votre boîte mail : uniquement s'il y a quelque chose à faire, uniquement pour le propriétaire de l'espace de travail, et avec une notification sur votre téléphone si une tâche est urgente. Vous activez ou désactivez le courriel dans Paramètres → « Notifications ».
+La même liste arrive aussi chaque lundi dans votre boîte mail : uniquement s'il y a quelque chose à faire, uniquement pour le propriétaire de l'espace de travail, et avec une notification sur votre téléphone si une tâche est urgente. Vous activez ou désactivez le courriel dans Paramètres › « Notifications ».
 
 ## La carte d'argent
 
@@ -67,7 +67,7 @@ Si vous aviez déjà fait disparaître une de ces bannières, elle reste disparu
 
 Sous les cartes se trouve la liste **Tous les modules** : tout ce qui tourne déjà sans carte propre, et tout ce qui n'est pas encore utilisé, comme une liste facile à découvrir.
 
-- Avec la croix, vous désactivez un module en service, le même interrupteur que sous **Paramètres → Modules**. Un module désactivé disparaît aussi de la barre latérale, pour que le menu et la page racontent la même histoire, et il revient via la liste en bas. Pour un module qui ne tourne pas encore, la croix est un **Pas pour moi** (voir plus bas).
+- Avec la croix, vous désactivez un module en service, le même interrupteur que sous **Paramètres › Modules**. Un module désactivé disparaît aussi de la barre latérale, pour que le menu et la page racontent la même histoire, et il revient via la liste en bas. Pour un module qui ne tourne pas encore, la croix est un **Pas pour moi** (voir plus bas).
 - Quand un module partage son interrupteur avec un autre, les deux se désactivent et reviennent ensemble.
 - Un module que votre offre n'inclut pas reste visible, avec mention du plan qui l'ouvre, pour que vous sachiez qu'il existe.
 
@@ -93,7 +93,7 @@ Un comptable qui regarde dans les livres d'un client voit le tableau de bord com
 
 ## Chiffres : la vue d'analyse
 
-Les chiffres profonds de l'ancien tableau de bord se trouvent ici, et rien qu'eux : ce qui attend quelque chose de vous, les éléments d'attention et le fil d'activité, se tient sur **Mijn bedrijf**. La page est une vue unique et défilante ; un bloc n'apparaît que si vos données le réclament.
+Les chiffres profonds de l'ancien tableau de bord se trouvent ici, et rien qu'eux : ce qui attend quelque chose de vous, les éléments d'attention et le fil d'activité, se tient sur le tableau de bord. La page est une vue unique et défilante ; un bloc n'apparaît que si vos données le réclament.
 
 ## Sélecteur de période
 
@@ -105,17 +105,20 @@ La rangée KPI montre toujours cinq tuiles. Chaque tuile montre un chiffre princ
 
 | Tuile | Ce que vous voyez |
 |---|---|
-| **Trésorerie** | Position actuelle de trésorerie, depuis un compte bancaire relié ou, sans compte relié, estimée d'après les liquidités comptabilisées, plus la marge hebdomadaire |
+| **Trésorerie** | Position actuelle de trésorerie depuis un compte bancaire relié. Sans compte relié, la tuile affiche un solde estimé d'après les liquidités comptabilisées. Avec le nombre de semaines que l'argent couvre |
 | **À recevoir** | Factures ouvertes, avec la part en retard mentionnée à part |
 | **Chiffre d'affaires** | Chiffre d'affaires sur la période choisie et le rythme pour toute la période, avec l'évolution par rapport à la période comparable précédente |
 | **À payer** | L'argent qu'il vous reste à décaisser, avec la part en retard mentionnée à part |
 | **Bénéfice** | Bénéfice net sur la période choisie, avec la marge quand elle se calcule |
 
+Quand le bloc des heures figure sur la page (vous saisissez des heures), la rangée parle la langue d'une activité à l'heure : **Chiffre d'affaires** et **À payer** cèdent la place à **Heures** (avec la part facturable) et **Travail non facturé** (avec l'ancienneté du travail le plus ancien en attente).
+
 ### Tuile du solde
 
-La tuile **Trésorerie** montre, près de votre solde, ce qui est déjà engagé. Ce sont deux lignes :
+La tuile **Trésorerie** montre, près de votre solde, ce qui est déjà engagé. Ce sont jusqu'à trois lignes, seulement quand quelque chose est réellement réservé :
 
-- **Réservé à la TVA** - le solde trimestriel positif qui devrait déjà être mis de côté
+- **Réservé pour la TVA** - le solde trimestriel positif qui devrait déjà être mis de côté
+- **Impôt sur ton bénéfice** - l'impôt estimé sur votre bénéfice à ce jour
 - **Charges fixes par mois** - vos charges fixes mensuelles
 
 La ligne finale montre **Librement disponible** : ce qui reste effectivement après ces réserves. La réserve de TVA suit la même logique de trimestre que la carte de TVA, pour que les déclarants mensuels et les déclarants précoces ne voient pas soustraire le mauvais montant.
@@ -139,12 +142,15 @@ Les blocs au-dessous de la rangée KPI n'apparaissent que s'ils méritent leur p
 | **Mix des dépenses** | Répartition des coûts par catégorie, sous forme de barres |
 | **Graphique de trésorerie** | Position de trésorerie sur 12 mois avec prévision |
 | **Carte TVA** | Période de TVA actuelle, avancement de la liste de contrôle et prochaine échéance |
+| **Heures ces semaines** | Vos heures saisies des dernières semaines, facturables et internes |
+| **Marges par projet** | Chiffre d'affaires, coûts et marge par projet |
+| **Charges fixes** | Revenus et coûts récurrents mensuels, et la part de vos charges fixes couverte par vos contrats |
 
 Sur les téléphones, les grandes formes visuelles retombent sur des formes plus simples, pour que les chiffres restent lisibles.
 
 ## Chargement et états d'erreur
 
-Un squelette dessine la forme finale de la vue, pour que la page ne se décale jamais sous vos yeux. Si le chargement de **Mijn bedrijf** échoue, la page dit ce qui cloche et porte un bouton de nouvelle tentative, au lieu d'un tout-va-bien bâti sur des données vides. Si le contenu des cartes échoue pendant que la vue d'ensemble est bien arrivée, chaque carte retombe sur la phrase de son statut. Sur **Chiffres**, une erreur porte le même bouton de nouvelle tentative, et un changement de période qui rate pendant que des chiffres plus anciens sont à l'écran montre un avis d'obsolescence avec une nouvelle tentative en ligne.
+Un squelette dessine la forme finale de la vue, pour que la page ne se décale jamais sous vos yeux. Si le chargement du tableau de bord échoue, la page dit ce qui cloche et porte un bouton de nouvelle tentative, au lieu d'un tout-va-bien bâti sur des données vides. Si le contenu des cartes échoue pendant que la vue d'ensemble est bien arrivée, chaque carte retombe sur la phrase de son statut. Sur **Chiffres**, une erreur porte le même bouton de nouvelle tentative, et un changement de période qui rate pendant que des chiffres plus anciens sont à l'écran montre un avis d'obsolescence avec une nouvelle tentative en ligne.
 
 ## Voir aussi
 

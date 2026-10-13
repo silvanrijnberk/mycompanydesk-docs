@@ -1,12 +1,12 @@
 ---
 title: Dashboard
-description: "Mijn bedrijf: één pagina met wat nu van je vraagt, de geldkaart en per onderdeel een kaart. De diepere cijfers staan op Cijfers."
+description: "Het dashboard: één pagina met wat nu van je vraagt, de geldkaart en per onderdeel een kaart. De diepere cijfers staan op Cijfers."
 last_verified: 2026-09-30
 ---
 
 # Dashboard
 
-Het dashboard op `/dashboard` is het startscherm van je werkruimte, en heet hier **Mijn bedrijf**: één pagina met het geld, de onderdelen die om aandacht vragen en alles wat je nog kunt aanzetten. Elk getal komt uit je eigen data, van vandaag, zonder extra stap erna.
+Het dashboard op `/dashboard` is het startscherm van je werkruimte: één pagina met het geld, de onderdelen die om aandacht vragen en alles wat je nog kunt aanzetten. Elk getal komt uit je eigen data, van vandaag, zonder extra stap erna.
 
 Achter het dashboard staat nog een pagina: **Cijfers** (`/cijfers`). Daar ligt de analyseweergave met de KPI-tegels, de trendgrafiek, ageing en de diepere cijfers die tot nu toe op het dashboard stonden. De geldkaart linkt erop door en de zijbalk heeft een eigen **Cijfers**-ingang.
 
@@ -26,7 +26,7 @@ Als je proefperiode bijna om is, staat dat hier eerst, boven alles, als enige me
 
 Eén regel houdt deze lijst ruisvrij: **Te laat** telt alleen als MyCompanyDesk je betalingen kent. Een betaling die de laatste zes maanden als betaald geregistreerd werd, laat zien dat je boek bijgehouden wordt; een bankkoppeling of online betalen alleen niet, want een koppeling die niemand aflettert, of online betalen dat aan staat terwijl klanten overmaken, zou elke factuur te laat noemen. Facturen komen alleen als te laat in de lijst als dat signaal er is.
 
-Elke maandag komt dezelfde lijst langs in je mailbox: alleen als er iets te doen is, alleen voor de eigenaar van de werkruimte, en met een seintje op je telefoon als iets erin dringend is. De mail zet je aan of uit bij Instellingen > Meldingen.
+Elke maandag komt dezelfde lijst langs in je mailbox: alleen als er iets te doen is, alleen voor de eigenaar van de werkruimte, en met een seintje op je telefoon als iets erin dringend is. De mail zet je aan of uit bij Instellingen › Meldingen.
 
 ## De geldkaart
 
@@ -67,7 +67,7 @@ Heb je zo'n balk eerder weggeklikt, dan blijft hij weg: de voorwaarden en de weg
 
 Onder de kaarten zit de lijst **Alle onderdelen**: alles wat al loopt zonder eigen kaart, en wat nog niet in gebruik is, als één vindbare lijst.
 
-- Met het kruisje zet je een onderdeel in gebruik uit, dezelfde schakelaar als onder **Instellingen → Onderdelen**. Een uitgezet onderdeel verdwijnt ook uit de zijbalk, zodat menu en pagina hetzelfde verhaal blijven vertellen, en komt terug via de lijst onderaan. Op een onderdeel dat nog niet loopt, is het kruisje een **Niet voor mij** (zie hieronder).
+- Met het kruisje zet je een onderdeel in gebruik uit, dezelfde schakelaar als onder **Instellingen › Onderdelen**. Een uitgezet onderdeel verdwijnt ook uit de zijbalk, zodat menu en pagina hetzelfde verhaal blijven vertellen, en komt terug via de lijst onderaan. Op een onderdeel dat nog niet loopt, is het kruisje een **Niet voor mij** (zie hieronder).
 - Deelt een onderdeel zijn schakelaar met een ander, dan gaan en komen ze samen.
 - Een onderdeel dat bij je plan niet zit, blijft zichtbaar, met het plan dat hem opent erbij vermeld, zodat je weet dat hij bestaat.
 
@@ -89,11 +89,11 @@ Een nieuw bedrijf krijgt dezelfde pagina, want de opzet gebeurt daar: er is geen
 
 ## Voor boekhouders
 
-Een boekhouder die in de boeken van een klant meekijkt ziet **Mijn bedrijf** zoals de klant hem meemaakt: de lopende onderdelen en wat daar om aandacht vraagt. Opzetstappen, de moduleschakelaars en productnieuws vallen weg, want opzetten is het werk van de eigenaar.
+Een boekhouder die in de boeken van een klant meekijkt ziet het dashboard zoals de klant het meemaakt: de lopende onderdelen en wat daar om aandacht vraagt. Opzetstappen, de moduleschakelaars en productnieuws vallen weg, want opzetten is het werk van de eigenaar.
 
 ## Cijfers: de analyseweergave
 
-De diepere cijfers van het oude dashboard staan hier. De pagina toont alleen cijfers: de aandacht en de feed van wat er gebeurde, staan op Mijn bedrijf. De pagina is één scrollbare weergave; elk blok verschijnt alleen als je data het aangeeft.
+De diepere cijfers van het oude dashboard staan hier. De pagina toont alleen cijfers: de aandacht en de feed van wat er gebeurde, staan op het dashboard. De pagina is één scrollbare weergave; elk blok verschijnt alleen als je data het aangeeft.
 
 ## Periodekiezer
 
@@ -105,22 +105,25 @@ De KPI-rij toont altijd vijf tegels. Elke tegel toont een hoofdgetal, een vergel
 
 | Tegel | Wat je ziet |
 |---|---|
-| **Kas** | Huidige kaspositie, afkomstig van een gekoppelde bankrekening of, zonder koppeling, geschat op basis van de liquide middelen in je boeken, plus runway in weken |
+| **Op de rekening** | Huidige kaspositie van een gekoppelde bankrekening. Zonder koppeling heet de tegel **Geschat saldo** en volgt het bedrag uit de liquide middelen in je boeken. Met erbij hoeveel weken het geld meegaat |
 | **Te ontvangen** | Openstaande facturen, met de achterstallige helft apart genoemd |
 | **Omzet** | Omzet over de gekozen periode en het tempo voor de hele periode, met mutatie ten opzichte van de vorige vergelijkbare periode |
 | **Te betalen** | Geld dat je nog moet uitbetalen, met de achterstallige helft apart genoemd |
 | **Winst** | Nettowinst over de gekozen periode, met marge als die te berekenen is |
 
+Staat het blok met je uren op de pagina (je schrijft uren), dan spreekt de rij de taal van een urenbedrijf: **Omzet** en **Te betalen** maken plaats voor **Uren** (met het factureerbare deel) en **Ongefactureerd werk** (met hoe lang het oudste werk al wacht).
+
 ### Saldotegel
 
-De **Kas**-tegel laat naast je saldo zien wat er al vergeven is. Dat zijn twee regels:
+De saldotegel laat naast je saldo zien wat er al vergeven is. Dat zijn maximaal drie regels, alleen als er echt iets gereserveerd staat:
 
 - **Gereserveerd voor btw** - het positieve kwartaalsaldo dat al apart gezet moet worden
+- **Belasting over je winst** - de geschatte belasting over je winst tot nu toe
 - **Vaste lasten per maand** - je maandelijkse vaste kosten
 
 De slotregel toont **Vrij besteedbaar**: wat er na die reserveringen effectief overblijft. De btw-reservering gebruikt dezelfde kwartaal-logica als de btw-kaart, zodat maandaangevers en vroege indieners geen verkeerd bedrag zien afgetrokken.
 
-Het saldo telt je zakelijke rekeningen: een gekoppelde privérekening blijft buiten de kaspositie en de kasprognose. Afschrijvingen daarop die een zakelijke uitgave kunnen zijn, worden apart genoemd in de regels voor te verwerken, zodat het getal hier gelijk is aan Boekhouding → Bank en de badge op Transacties.
+Het saldo telt je zakelijke rekeningen: een gekoppelde privérekening blijft buiten de kaspositie en de kasprognose. Afschrijvingen daarop die een zakelijke uitgave kunnen zijn, worden apart genoemd in de regels voor te verwerken, zodat het getal hier gelijk is aan Boekhouding › Bank en de badge op Transacties.
 
 Een tegel zonder eerlijke historie toont geen trendlijn in plaats van een verzonnen vlakke lijn. De kleur van een deltabadge volgt betekenis, niet alleen richting: stijgende debiteuren zijn slecht nieuws, ook al wijst de pijl omhoog.
 
@@ -140,6 +143,8 @@ De blokken onder de KPI-rij verschijnen alleen als ze hun plek verdienen. De cat
 | **Uitgavenmix** | Kostenverdeling per categorie, weergegeven als staafjes |
 | **Cash-grafiek** | Kaspositie over 12 maanden met prognose |
 | **Btw-kaart** | Huidige btw-periode, checklistvoortgang, volgende deadline en in een oogopslag de btw over omzet, voorbelasting en het te betalen of terug te krijgen bedrag |
+| **Uren deze weken** | Je geschreven uren van de afgelopen weken, factureerbaar en intern |
+| **Projectmarges** | Omzet, kosten en marge per project |
 | **Vaste lasten** | Maandelijkse terugkerende inkomsten en kosten, hoeveel procent van de vaste lasten je contracten dekken, en de grootste overeenkomsten aan beide kanten |
 
 Op telefoons vallen visuele vormen terug op eenvoudiger vormen, zodat de getallen leesbaar blijven.
@@ -147,7 +152,7 @@ Op telefoons vallen visuele vormen terug op eenvoudiger vormen, zodat de getalle
 
 ## Laden en foutmeldingen
 
-Een skeleton toont de eindvorm van de weergave, zodat de pagina niet onder je ogen verspringt. Faalt het laden van **Mijn bedrijf**, dan zegt de pagina wat er scheelt en biedt ze een opnieuw-knop, in plaats van een alles-goed gebouwd uit lege data. Faalt de kaartinhoud terwijl de stand wél binnenkwam, dan valt elke kaart terug op de ene zin van zijn status. Op **Cijfers** draagt een fout dezelfde opnieuw-knop, en een periode-switch die niet lukt terwijl er oudere getallen op scherm staan, toont een verouderd-melding met een inline opnieuw-knop.
+Een skeleton toont de eindvorm van de weergave, zodat de pagina niet onder je ogen verspringt. Faalt het laden van het dashboard, dan zegt de pagina wat er scheelt en biedt ze een opnieuw-knop, in plaats van een alles-goed gebouwd uit lege data. Faalt de kaartinhoud terwijl de stand wél binnenkwam, dan valt elke kaart terug op de ene zin van zijn status. Op **Cijfers** draagt een fout dezelfde opnieuw-knop, en een periode-switch die niet lukt terwijl er oudere getallen op scherm staan, toont een verouderd-melding met een inline opnieuw-knop.
 
 ## Zie ook
 

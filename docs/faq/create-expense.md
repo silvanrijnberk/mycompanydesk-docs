@@ -1,6 +1,6 @@
 ---
 title: "Uitgave aanmaken"
-description: "Zo voeg je een uitgave toe: ga naar Uitgaven en klik op Nieuwe uitgave."
+description: "Zo voeg je een uitgave toe: ga naar Uitgaven, klik op Nieuwe uitgave en scan een bon of vul leverancier, categorie, bedrag en datum zelf in."
 last_verified: 2026-05-09
 chatbot:
   triggers: ["create expense", "new expense", "add expense", "log expense", "record expense", "track expense", "uitgave toevoegen", "nieuwe uitgave", "uitgave aanmaken", "ausgabe hinzufugen", "wie erstelle ich eine ausgabe", "ajouter depense", "comment creer une depense"]
@@ -11,8 +11,10 @@ chatbot:
 
 Zo voeg je een uitgave toe:
 1. Ga naar Uitgaven en klik op "Nieuwe uitgave"
-2. Vul leverancier, categorie, omschrijving, bedrag en datum in. Een bedrag is verplicht; het formulier slaat geen uitgave van EUR 0,00 op, tenzij het een echt nulrecord is zoals een creditnota met alleen btw.
-3. Sla de uitgave op zodat het record wordt aangemaakt
-4. Open daarna de opgeslagen uitgave als je "Bon uploaden" wilt gebruiken
+2. Heb je een bon? Klik op "Scan een bon" of upload een foto of pdf. MyCompanyDesk leest de leverancier, het bedrag en de datum uit en hangt de bon meteen aan de uitgave. Controleer daarna de ingevulde gegevens
+3. Geen bon bij de hand? Vul de gegevens zelf in. Datum, leverancier, categorie en bedrag zijn verplicht; een uitgave van € 0,00 kun je niet opslaan
+4. Sla de uitgave op
 
-Tip: Het uploaden van een bon gebeurt op de detailpagina nadat de uitgave is opgeslagen.
+Meer velden nodig, zoals een vervaldatum, klant, project of notities? Kies in het paneel "Meer velden nodig?" om het volledige formulier te openen. Een bon die je later krijgt, voeg je toe op de pagina van de uitgave met "Bon uploaden".
+
+Bonnen automatisch uitlezen gebruikt AI-scans: op Desk zijn dat er 3 per maand, op Office 200. Zijn je scans op, dan wordt de bon wel bewaard en vul je de gegevens zelf in.

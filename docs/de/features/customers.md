@@ -16,26 +16,26 @@ Die Kundenseite listet alle Ihre Kunden mit den wichtigsten Informationen auf ei
 Oben auf der Kundenseite zeigt eine Kachelleiste einen schnellen Überblick über Ihre Kundenbasis. Die Zahlen sind unabhängig von den Such- und Datumsfiltern der Liste, sodass eine Kachel immer das gesamte Buch widerspiegelt.
 
 - **Kunden mit überfälligen Rechnungen**: wie viele Kunden Ihnen aktuell Geld schulden. Klicken Sie auf die Kachel, um die Seite mit überfälligen Rechnungen zu öffnen.
-- **Inaktiv gewordene Kunden**: aktive Kunden, die bereits einmal in Rechnung gestellt wurden, aber in den letzten N Monaten keine Rechnung mehr erhalten haben. Klicken Sie auf die Kachel, um die Liste auf inaktiv gewordene Kunden zu filtern. Das Standardfenster beträgt sechs Monate; die Kachelbezeichnung zeigt das genaue Fenster an, das der Arbeitsbereich verwendet.
+- **Inaktiv geworden**: aktive Kunden, die bereits einmal eine Rechnung bekommen haben, in den letzten Monaten aber keine mehr. Klicken Sie auf die Kachel, um die Liste auf diese Kunden zu filtern. Das Standardfenster beträgt sechs Monate; die Kachel nennt das Fenster, das der Arbeitsbereich verwendet (zum Beispiel „keine Rechnung seit 6 Monaten“).
 - **Interessenten**: aktive Kunden, die noch nie in Rechnung gestellt wurden. Klicken Sie auf die Kachel, um die Liste auf Interessenten zu filtern.
 - **Kunden gesamt**: die feste Anzahl aktiver Kunden. Klicken Sie auf die Kachel, um die Filter der Liste zurückzusetzen.
 
-Mit dem Statusfilter oberhalb der Liste wechseln Sie auch zwischen Allen Status, Aktiv, Interessenten, Inaktiv geworden, Archiviert und Papierkorb.
+Mit dem Statusfilter oberhalb der Liste wechseln Sie auch zwischen Alle Status, Aktiv, Interessenten, Inaktiv geworden, Archiv und Papierkorb.
 
 ## Kunden erstellen
 
-1. Gehen Sie zu **Kunden > Neuer Kunde**
+1. Öffnen Sie **Kunden** und klicken Sie auf **Erstellen**
 2. Füllen Sie die Kundendetails aus:
-   - **Name** — Firmen- oder Personenname (erforderlich)
-   - **E-Mail** — Kontakt-E-Mail für den Rechnungsversand
-   - **Telefon** — Kontakttelefonnummer
-   - **Adresse** — Straße, Postleitzahl, Stadt, Land
-   - **USt.-Nummer** — USt.-Registrierung des Kunden (für B2B)
-   - **Kundennummer** — Automatisch generiert oder benutzerdefiniert
+   - **Name**: Firmen- oder Personenname (erforderlich)
+   - **E-Mail**: Kontakt-E-Mail für den Rechnungsversand
+   - **Telefon**: Kontakttelefonnummer
+   - **Adresse**: Straße, Postleitzahl, Stadt, Land
+   - **USt.-Nummer**: USt.-Registrierung des Kunden (für B2B)
+   - **Kundennummer**: Automatisch generiert oder benutzerdefiniert
 3. Klicken Sie auf **Speichern**
 
 ::: tip
-Sie können Kunden auch direkt beim Erstellen einer Rechnung oder eines Angebots anlegen — ohne die Seite verlassen zu müssen.
+Sie können Kunden auch direkt beim Erstellen einer Rechnung oder eines Angebots anlegen, ohne die Seite verlassen zu müssen.
 :::
 
 ### KVK-Autofill
@@ -47,7 +47,7 @@ Beim Anlegen niederländischer Kunden kann MyCompanyDesk Unternehmensdaten autom
 
 Bei erfolgreicher Suche erscheint ein Verifiziert-Badge neben dem Handelsregisterfeld. Wird die Nummer nicht gefunden, erscheint eine Fehlermeldung. Beide Suchfunktionen sind nur für niederländische Kunden verfügbar.
 
-Jeder Arbeitsbereich hat 100 kostenlose KVK-Abrufe pro Tag (zwischengespeicherte Ergebnisse zählen nicht mit). Bei 20 oder weniger verbleibenden Abrufen zeigt der Hinweis am KVK-Feld einen Zähler, wie viele noch übrig sind. Wird das Tageslimit erreicht, erscheint eine entsprechende Meldung. Sie können die Daten dann manuell eingeben oder es morgen erneut versuchen.
+Klappt die Suche nicht, tragen Sie die Daten einfach selbst ein.
 
 ### Firmenlogos aus dem KVK-Register
 
@@ -59,17 +59,17 @@ Das Logo dient nur der Anzeige und ersetzt nicht Ihr eigenes Arbeitsbereichslogo
 
 Die Kundendetailseite zeigt:
 
-- **Kontaktinformationen** — Alle gespeicherten Daten
-- **Rechnungsverlauf** — Jede an diesen Kunden gesendete Rechnung
-- **Ausgabenverlauf** — Mit diesem Kunden verknüpfte Ausgaben
+- **Kontaktinformationen**: Alle gespeicherten Daten
+- **Rechnungsverlauf**: Jede an diesen Kunden gesendete Rechnung
+- **Ausgabenverlauf**: Mit diesem Kunden verknüpfte Ausgaben
 - **Verträge** - Aktive und inaktive Verträge, mit Signaturstatus-Badges und einem PDF-Vorschau-Icon, wenn E-Signing aktiviert ist
 - **Dokumente**: für diesen Kunden hinterlegte Vereinbarungen, wie Allgemeine Geschäftsbedingungen, NDAs und Auftragsverarbeitungsvereinbarungen. Hat der Kunde einen Vertrag, aber keine Auftragsverarbeitungsvereinbarung, erscheint ein Hinweis mit einem Link, um eine zu erstellen.
-- **Projekte** — Aktive und abgeschlossene Projekte
-- **Statistiken** — Gesamtumsatz, ausstehender Saldo, durchschnittliche Zahlungsdauer
+- **Projekte**: Aktive und abgeschlossene Projekte
+- **Statistiken**: Gesamtumsatz, ausstehender Saldo, durchschnittliche Zahlungsdauer
 
 ### Fehlende Auftragsverarbeitungsvereinbarung
 
-Hat ein Kunde einen Vertrag, aber keine Auftragsverarbeitungsvereinbarung in Dokumenten, zeigt die Dokumenten-Karte auf der Kundendetailseite einen Hinweis und einen Link **Auftragsverarbeitungsvereinbarung erstellen**. Dies weist auf eine Compliance-Lücke an der Stelle hin, an der Sie wahrscheinlich handeln. Der Hinweis erscheint nur, wenn die Dokumenten- und Vertragsmodule aktiviert sind und die Dokumenten-Karte sonst leer wäre.
+Hat ein Kunde einen Vertrag, aber keine Auftragsverarbeitungsvereinbarung in Dokumenten, zeigt die Dokumenten-Karte auf der Kundendetailseite einen Hinweis und einen Link **Auftragsverarbeitungsvertrag erstellen**. Dies weist auf eine Compliance-Lücke an der Stelle hin, an der Sie wahrscheinlich handeln. Der Hinweis erscheint nur, wenn das Modul Verträge eingeschaltet ist (Office) und die Dokumenten-Karte sonst leer wäre.
 
 ### E-Mail-Zustellbarkeitsbanner
 
@@ -91,33 +91,37 @@ Wenn Sie mehr als ein eigenes Unternehmen haben, kann auf der Kundenseite eine K
 
 ## Aktionen
 
-- **Bearbeiten** — Kundeninformationen aktualisieren
-- **Rechnung erstellen** — Eine neue Rechnung mit diesem Kunden vorausgefüllt starten
-- **Angebot erstellen** — Ein neues Angebot für diesen Kunden starten
-- **Archivieren** — Ins Archiv verschieben (kann später wiederhergestellt werden)
+- **Bearbeiten**: Kundeninformationen aktualisieren
+- **Rechnung erstellen**: eine neue Rechnung mit diesem Kunden vorausgefüllt starten
+- **Angebot erstellen**: ein neues Angebot für diesen Kunden starten
+- **Neuer Arbeitsbericht**: einen Arbeitsbericht für diesen Kunden starten (wenn das Modul Arbeitsberichte eingeschaltet ist)
+- **Zusammenführen mit…**: einen doppelten Kunden mit diesem zusammenführen
+- **Archivieren**: ins Archiv verschieben (kann später wiederhergestellt werden)
 
 :::caution
 Beim Archivieren eines Kunden mit einer aktiven wiederkehrenden Rechnung oder laufenden Verträgen erscheint zuerst eine Bestätigungsfrage. Die Warnung sagt, was Archivieren bewirkt: Solange ein Kunde archiviert ist, erstellt MyCompanyDesk keine wiederkehrenden Rechnungen mehr und rechnet keine Verträge mehr ab, und übersprungene Zeiträume werden später nicht nachberechnet. Beenden Sie die wiederkehrende Rechnung oder den Vertrag zuerst, wenn diese Abrechnung weiterlaufen soll.
 :::
 
-Ein Kunde, der ein Interessent ist (Prospekt, noch nie fakturiert), erhält keine Aktion „Rechnung erstellen", auch nicht im Menü „Mehr", und der Server lehnt eine Rechnung für ihn ohnehin ab. Die Kundenseite bietet stattdessen einen Button „In Kunden umwandeln"; sobald der Status aktiv ist, erscheinen alle Rechnungsaktionen.
+Ein Kunde, der ein Interessent ist (Prospekt, noch nie fakturiert), erhält keine Aktion „Rechnung erstellen", auch nicht im Menü „Mehr", und der Server lehnt eine Rechnung für ihn ohnehin ab. Die Kundenseite bietet stattdessen die Schaltfläche **Nach Kunden umrechnen**; sobald der Status aktiv ist, erscheinen alle Rechnungsaktionen.
 
-- **Löschen** — Kunden dauerhaft entfernen
+- **Löschen**: den Kunden in den Papierkorb verschieben
 
 ## Massenaktionen
 
 Wählen Sie mehrere Kunden für:
 
-- **Archivieren** — Inaktive Kunden in großem Umfang archivieren
-- **Wiederherstellen** — Archivierte Kunden zurückholen
-- **Löschen** — Mehrere Kunden entfernen
+- **Zu Favoriten hinzufügen**: Kunden als Favoriten markieren
+- **Archivieren**: Kunden in einem Schritt archivieren
+- **Löschen**: Kunden in den Papierkorb verschieben
+
+Im Archiv wählen Sie **Zu aktiv wiederherstellen** oder **In Papierkorb verschieben**; im Papierkorb **Zum Archiv wiederherstellen** oder **Endgültig löschen**.
 
 ## Kunden importieren
 
 Importieren Sie Ihre bestehende Kundendatenbank aus CSV:
 
-1. Gehen Sie zu **Profil > Import**
-2. Wählen Sie **Kunden** als Datentyp
+1. Klicken Sie auf der Kundenseite auf **Importieren** (oder öffnen Sie **Einstellungen › Wechseln** und wählen Sie **Kunden importieren**)
+2. Prüfen Sie, dass **Kunden** als Datentyp gewählt ist
 3. Laden Sie Ihre CSV-Datei hoch
 4. Ordnen Sie Ihre CSV-Spalten den MyCompanyDesk-Feldern zu (Name, E-Mail, Adresse usw.)
 5. Überprüfen Sie die Vorschau
@@ -125,17 +129,17 @@ Importieren Sie Ihre bestehende Kundendatenbank aus CSV:
 
 ## Kunden exportieren
 
-Exportieren Sie Ihre Kundenliste als CSV von der Kundenseite (in jedem Tarif verfügbar).
+Laden Sie Ihre Kundenliste als CSV-Datei unter **Einstellungen › Daten herunterladen** herunter (in jedem Abonnement verfügbar).
 
 ## Abgewanderte Kunden
 
-Die Registerkarte [Berichte > Kunden > Abgewanderte](/de/features/reports) listet Kunden, die früher gekauft haben, aber dieses Jahr noch keine Rechnung erhalten haben. Die Ansicht zeigt die Anzahl, wie viel sie früher zusammen ausgegeben haben, und das Datum ihrer letzten Rechnung, mit Links, um jeden Kunden direkt anzurufen oder per E-Mail zu kontaktieren. Sie lebt in Berichte, weil die Reaktivierung alter Kunden kampagnenartige Arbeit ist, die nicht in einen nach Dringlichkeit sortierten Feed passt.
+Der Reiter **Weggeblieben** im Kundenbericht **Wer sind meine Kunden?** unter [Berichte](/de/features/reports) (Office) listet Kunden, die früher gekauft haben, aber dieses Jahr noch keine Rechnung erhalten haben. Die Ansicht zeigt die Anzahl, wie viel sie früher zusammen ausgegeben haben, und das Datum ihrer letzten Rechnung, mit Links, um jeden Kunden direkt anzurufen oder per E-Mail zu kontaktieren. Sie lebt in Berichte, weil die Reaktivierung alter Kunden kampagnenartige Arbeit ist, die nicht in einen nach Dringlichkeit sortierten Feed passt.
 
-Die Standard-Kundenliste segmentiert ebenfalls inaktive Kunden selbst; die Registerkarte Abgewanderte fügt den kampagnenartigen Hinweis hinzu, ohne diesen Filter zu ersetzen.
+Die Standard-Kundenliste segmentiert ebenfalls inaktive Kunden selbst; der Reiter Weggeblieben fügt den kampagnenartigen Hinweis hinzu, ohne diesen Filter zu ersetzen.
 
 ## Tipps
 
-- Halten Sie Kunden-E-Mails aktuell — sie werden für den Rechnungsversand verwendet
+- Halten Sie Kunden-E-Mails aktuell: Sie werden für den Rechnungsversand verwendet
 - Verwenden Sie die Suchleiste für sofortigen unscharfen Abgleich über alle Kundenfelder
-- Setzen Sie Ihre wichtigsten Kunden als Favoriten für schnellen Zugriff
+- Markieren Sie Ihre wichtigsten Kunden als Favoriten für schnellen Zugriff
 

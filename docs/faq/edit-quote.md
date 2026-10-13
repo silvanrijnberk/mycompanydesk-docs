@@ -14,3 +14,5 @@ Om een offerte te bewerken:
 2. Klik op "Bewerken" (of ga naar /quotes/{id}/edit)
 3. Pas klantgegevens, regels, notities of datums aan
 4. Sla op
+
+Staat er geen "Bewerken"? Dan is de offerte al geaccepteerd, afgewezen of verlopen, al omgezet naar een factuur of overeenkomst, ligt hij ter ondertekening bij je klant of staat hij in de prullenbak. Dupliceer de offerte dan en pas de kopie aan.

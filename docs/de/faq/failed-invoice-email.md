@@ -13,7 +13,7 @@ chatbot:
 So beheben Sie eine fehlgeschlagene Rechnungs-E-Mail:
 1. Prüfen Sie, ob beim Kunden die richtige E-Mail-Adresse hinterlegt ist
 2. Öffnen Sie die Detailseite der Rechnung und sehen Sie sich den Zustellstatus oder eine angezeigte Fehlermeldung an
-3. Überprüfen Sie Ihre E-Mail-Einstellungen unter Einstellungen → "E-Mail"
+3. Überprüfen Sie Ihre E-Mail-Einstellungen unter Einstellungen › "E-Mail"
 4. Senden Sie die Rechnung erneut; auch Entwürfe lassen sich per E-Mail versenden, Senden ist die Hauptaktion und schließt den Entwurf im selben Schritt ab
 5. Kommt die E-Mail weiterhin nicht an, bitten Sie den Kunden, den Spam- oder Junk-Ordner zu prüfen
 

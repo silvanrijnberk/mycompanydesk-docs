@@ -1,0 +1,50 @@
+# NL kilometervergoeding / aftrek zakelijke kilometers.
+# Curated by hand. The mcd-public-surfaces-sync agent reads but never writes.
+
+last_verified: 2026-10-13
+verified_by: silvanrijnberk
+source_url: https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/inkomstenbelasting/veranderingen-inkomstenbelasting-2026/zakelijk-gebruik-privevervoermiddel-2026
+notes: |
+  Twee regimes, niet verwarren:
+  - `ib_entrepreneur`: ondernemer (IB) met een vervoermiddel dat privé-eigendom
+    is of privé gehuurd, trekt een vast bedrag per zakelijke km af van de winst.
+  - `payroll_tax_free`: onbelaste kilometervergoeding die een werkgever aan een
+    werknemer mag geven (loonheffingen). Voor 2026 met terugwerkende kracht
+    verhoogd naar 0,25 via een beleidsbesluit vooruitlopend op Belastingplan 2027.
+  Let op: de Belastingdienst-pagina voor particulieren over woon-werk
+  (reiskostenaftrek) toonde bij zoeken nog € 0,23 voor 2026; niet leidend,
+  maar wel een inconsistentie op de site.
+
+ib_entrepreneur:
+  per_km_eur:
+    2024: 0.23
+    2025: 0.23
+    2026: 0.25
+  conditions: |
+    Vervoermiddel (auto, motor, fiets) is eigendom van de ondernemer of privé
+    gehuurd. Kosten zoals brandstof, verzekering, tol en parkeren mogen NIET
+    apart worden afgetrokken; die zitten in het bedrag per km. Woon-werkverkeer
+    telt voor de IB als zakelijke kilometers.
+  sources:
+    - year: 2026
+      url: https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/inkomstenbelasting/veranderingen-inkomstenbelasting-2026/zakelijk-gebruik-privevervoermiddel-2026
+      quote: "Dan mag u in 2026 voor de zakelijke ritten € 0,25 per kilometer van uw winst aftrekken."
+    - year: 2025
+      url: https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/inkomstenbelasting/verandering_inkomstenbelasting_vorige_jaren/veranderingen-inkomstenbelasting-2025/zakelijk-gebruik-privevervoermiddel-2025
+      quote: "Dan mag u in 2025 voor de zakelijke ritten € 0,23 per kilometer van uw winst aftrekken."
+    - topic: geen losse kosten
+      url: https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/winst/inkomstenbelasting/verandering_inkomstenbelasting_vorige_jaren/veranderingen-inkomstenbelasting-2025/zakelijk-gebruik-privevervoermiddel-2025
+      quote: "U mag geen kosten (zoals brandstof, verzekering, tol, parkeren) afzonderlijk van uw winst aftrekken."
+
+payroll_tax_free:
+  per_km_eur:
+    2025: 0.23
+    2026: 0.25
+  effective_from: 2026-01-01
+  legal_basis: beleidsbesluit staatssecretaris (Staatscourant), vooruitlopend op Belastingplan 2027
+  published: 2026-06-25
+  sources:
+    - url: https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/berichten/nieuws/verhoging-onbelaste-kilometervergoeding-hoe-verwerkt-u-dit-in-de-loonaangifte
+      quote: "Het kabinet verhoogt de onbelaste vergoeding van € 0,23 naar € 0,25 per kilometer."
+    - url: https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/berichten/nieuws/verhoging-onbelaste-kilometervergoeding-hoe-verwerkt-u-dit-in-de-loonaangifte
+      quote: "Deze maatregel gaat in met terugwerkende kracht vanaf 1 januari 2026."

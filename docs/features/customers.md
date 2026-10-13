@@ -16,7 +16,7 @@ De klantenpagina toont al je klanten met belangrijke informatie in een oogopslag
 Bovenaan de klantenpagina toont een rij tegels een snel overzicht van je klantenbestand. De getallen zijn onafhankelijk van de zoek- en datumfilters op de lijst, zodat een tegel altijd het hele klantenbestand weergeeft.
 
 - **Klanten met achterstallige facturen**: hoeveel klanten je op dit moment nog moeten betalen. Klik op de tegel om de pagina met achterstallige facturen te openen.
-- **Stil geworden klanten**: actieve klanten die eerder wel een factuur hebben gehad, maar in de afgelopen N maanden geen factuur meer hebben ontvangen. Klik op de tegel om de lijst te filteren op stil geworden klanten. De standaard periode is zes maanden; het tegellabel toont de exacte periode die de werkruimte gebruikt.
+- **Stil geworden**: actieve klanten die eerder wel een factuur hebben gehad, maar in de afgelopen maanden geen factuur meer hebben ontvangen. Klik op de tegel om de lijst te filteren op stil geworden klanten. De standaardperiode is zes maanden; de tegel noemt de periode die de werkruimte gebruikt (bijvoorbeeld "geen factuur in 6 maanden").
 - **Mogelijke klanten**: actieve klanten die nog nooit een factuur hebben ontvangen. Klik op de tegel om de lijst te filteren op mogelijke klanten.
 - **Totaal klanten**: het vaste aantal actieve klanten. Klik op de tegel om de filters van de lijst te wissen.
 
@@ -24,18 +24,18 @@ Met het statusfilter boven de lijst schakel je ook tussen Alle statussen, Actief
 
 ## Een klant aanmaken
 
-1. Ga naar **Klanten > Nieuwe klant**
+1. Ga naar **Klanten › Nieuwe klant**
 2. Vul de klantgegevens in:
-   - **Naam** — Bedrijfs- of persoonsnaam (verplicht)
-   - **E-mail** — Contacte-mail voor het versturen van facturen
-   - **Telefoon** — Contacttelefoonnummer
-   - **Adres** — Straat, postcode, plaats, land
+   - **Naam**: Bedrijfs- of persoonsnaam (verplicht)
+   - **E-mail**: Contacte-mail voor het versturen van facturen
+   - **Telefoon**: Contacttelefoonnummer
+   - **Adres**: Straat, postcode, plaats, land
    - **Btw-nummer**: btw-registratie van de klant (voor B2B)
-   - **Klantnummer** — Automatisch gegenereerd of aangepast
+   - **Klantnummer**: Automatisch gegenereerd of aangepast
 3. Klik op **Opslaan**
 
 ::: tip
-Je kunt ook klanten inline aanmaken bij het maken van een factuur of offerte — je hoeft niet weg te navigeren.
+Je kunt ook klanten inline aanmaken bij het maken van een factuur of offerte. Je hoeft niet weg te navigeren.
 :::
 
 ### KVK-autofill
@@ -47,7 +47,7 @@ Bij het aanmaken van een Nederlandse klant kan MyCompanyDesk bedrijfsgegevens au
 
 Bij een geslaagde opzoeking verschijnt een geverifieerd-badge naast het KVK-nummerveld. Als het nummer niet wordt gevonden, krijg je een foutmelding te zien. Beide opzoekingen zijn alleen beschikbaar voor Nederlandse klanten.
 
-Elke werkruimte heeft 100 gratis KVK-zoekopdrachten per dag (resultaten uit de cache tellen niet mee). Bij 20 of minder resterende zoekopdrachten toont de hint bij het KVK-veld hoeveel je er nog over hebt. Is het daglimiet bereikt, dan zie je een foutmelding en kun je de gegevens handmatig invullen of het morgen opnieuw proberen.
+Lukt het opzoeken niet, dan vul je de gegevens gewoon zelf in.
 
 ### Bedrijfslogo's uit het KVK-register
 
@@ -59,17 +59,17 @@ Het logo is alleen voor weergave; het vervangt niet je eigen werkruimtelogo op f
 
 De klantdetailpagina toont:
 
-- **Contactgegevens** — Alle opgeslagen gegevens
-- **Factuurgeschiedenis** — Elke factuur die naar deze klant is gestuurd
-- **Uitgavengeschiedenis** — Uitgaven gekoppeld aan deze klant
+- **Contactgegevens**: Alle opgeslagen gegevens
+- **Factuurgeschiedenis**: Elke factuur die naar deze klant is gestuurd
+- **Uitgavengeschiedenis**: Uitgaven gekoppeld aan deze klant
 - **Contracten** - Actieve en inactieve contracten, met ondertekeningsstatus-badges en een pdf-voorbeeldicoon wanneer e-signing is ingeschakeld
 - **Documenten**: afspraken die voor deze klant zijn opgeslagen, zoals algemene voorwaarden, NDA's en verwerkersovereenkomsten. Als de klant een contract heeft maar geen verwerkersovereenkomst, verschijnt er een hint met een link om er een op te stellen.
-- **Projecten** — Actieve en voltooide projecten
-- **Statistieken** — Totale omzet, openstaand saldo, gemiddelde betaaltijd
+- **Projecten**: Actieve en voltooide projecten
+- **Statistieken**: Totale omzet, openstaand saldo, gemiddelde betaaltijd
 
 ### Ontbrekende verwerkersovereenkomst
 
-Als een klant een contract heeft maar geen verwerkersovereenkomst in Documenten, toont de documentenkaart op de klantdetailpagina een hint en een link **Verwerkersovereenkomst opstellen**. Dit wijst je op een compliance-tekort op de plek waar je er waarschijnlijk iets aan doet. De hint verschijnt alleen als de documenten- en contractenmodules aan staan en de documentenkaart verder leeg zou zijn.
+Als een klant een contract heeft maar geen verwerkersovereenkomst in Documenten, toont de documentenkaart op de klantdetailpagina een hint en een link **Verwerkersovereenkomst opstellen**. Dit wijst je op een compliance-tekort op de plek waar je er waarschijnlijk iets aan doet. De hint verschijnt alleen als het onderdeel Contracten aan staat (Office) en de documentenkaart verder leeg zou zijn.
 
 ### E-mailgezondheidsbanner
 
@@ -91,33 +91,37 @@ Als je meer dan een bedrijf hebt, kan op de klantdetailpagina een kaart **Eigen 
 
 ## Acties
 
-- **Bewerken** — Klantinformatie bijwerken
-- **Factuur aanmaken** — Start een nieuwe factuur vooraf ingevuld met deze klant
-- **Offerte aanmaken** — Start een nieuwe offerte voor deze klant
-- **Archiveren** — Verplaats naar archief (kan later worden hersteld)
+- **Bewerken**: werk de gegevens van de klant bij
+- **Maak factuur**: begin een nieuwe factuur met deze klant al ingevuld
+- **Offerte aanmaken**: begin een nieuwe offerte voor deze klant
+- **Nieuwe werkbon**: begin een werkbon voor deze klant (als het onderdeel Werkbonnen aan staat)
+- **Samenvoegen met…**: voeg een dubbele klant samen met deze klant
+- **Archiveren**: verplaats naar het archief (kan later worden hersteld)
 
 :::caution
 Het archiveren van een klant met een actieve terugkerende factuur of lopende contracten vraagt eerst om een bevestiging. De waarschuwing zegt eerlijk wat archiveren doet: zolang een klant gearchiveerd is, maakt MyCompanyDesk geen terugkerende facturen meer aan en worden contracten niet meer gefactureerd, en overgeslagen periodes worden later niet alsnog gefactureerd. Eindig eerst de terugkerende factuur of het contract als die facturering moet doorlopen.
 :::
 
-Een klant die een mogelijke klant (prospect) is, dus waarvan nog nooit een factuur is gemaakt, heeft geen knop Factuur aanmaken, ook niet in het overloopmenu, en de server weigert een factuur voor hem sowieso. De klantenpagina biedt zo'n klant een Omzetten naar klant-knop; zodra de status actief is, verschijnen alle factuuracties.
+Een mogelijke klant (prospect), dus een klant voor wie nog nooit een factuur is gemaakt, heeft geen knop **Maak factuur**, ook niet in het menu met meer acties, en de server weigert een factuur voor hem sowieso. De klantpagina biedt zo'n klant de knop **Converteren naar klant**; zodra de status actief is, verschijnen alle factuuracties.
 
-- **Verwijderen** — Verwijder de klant permanent
+- **Verwijderen**: verplaats de klant naar de prullenbak
 
 ## Bulkacties
 
 Selecteer meerdere klanten voor:
 
-- **Archiveren** — Inactieve klanten in bulk archiveren
-- **Herstellen** — Gearchiveerde klanten terughalen
-- **Verwijderen** — Meerdere klanten verwijderen
+- **Toevoegen aan favorieten**: zet klanten bovenaan als favoriet
+- **Archiveren**: archiveer klanten in één keer
+- **Verwijderen**: verplaats klanten naar de prullenbak
+
+In het archief kies je **Herstellen naar actief** of **Naar prullenbak**; in de prullenbak **Herstellen naar archief** of **Permanent verwijderen**.
 
 ## Klanten importeren
 
 Importeer je bestaande klantendatabase vanuit CSV:
 
-1. Ga naar **Profiel > Importeren**
-2. Selecteer **Klanten** als gegevenstype
+1. Klik op de klantenpagina op **Importeren** (of ga naar **Instellingen › Overstappen** en kies **Klanten importeren**)
+2. Controleer dat **Klanten** als gegevenstype gekozen is
 3. Upload je CSV-bestand
 4. Koppel je CSV-kolommen aan MyCompanyDesk-velden (naam, e-mail, adres, etc.)
 5. Bekijk het voorbeeld
@@ -125,17 +129,17 @@ Importeer je bestaande klantendatabase vanuit CSV:
 
 ## Klanten exporteren
 
-Exporteer je klantenlijst als CSV vanaf de klantenpagina (op elk abonnement).
+Download je klantenlijst als CSV-bestand via **Instellingen › Gegevens downloaden** (op elk abonnement).
 
 ## Weggebleven klanten
 
-Het tabblad [Rapporten > Klanten > Weggebleven](/features/reports) toont klanten die eerder kochten maar dit jaar nog geen factuur hebben gekregen. De weergave toont het aantal, wat ze eerder samen besteedden en de datum van hun laatste factuur, met links om elke klant direct te bellen of te mailen. Het staat in Rapporten omdat oude klanten terugwinnen campagne-werk is, geen item dat past in een op urgentie gesorteerde feed.
+Het tabblad **Weggebleven** in het klantenrapport **Wie zijn mijn klanten?** onder [Rapportages](/features/reports) (Office) toont klanten die eerder kochten maar dit jaar nog geen factuur hebben gekregen. De weergave toont het aantal, wat ze eerder samen besteedden en de datum van hun laatste factuur, met links om elke klant direct te bellen of te mailen. Het staat in Rapportages omdat oude klanten terugwinnen campagnewerk is, geen item dat past in een op urgentie gesorteerde feed.
 
 De standaard klantenlijst segmenteert ook zelf inactieve klanten; het tabblad Weggebleven voegt de campagne-achtige herinnering toe zonder die filter te vervangen.
 
 ## Tips
 
-- Houd e-mailadressen van klanten up-to-date — ze worden gebruikt voor factuurverzending
+- Houd e-mailadressen van klanten actueel: ze worden gebruikt om facturen te versturen
 - Gebruik de zoekbalk voor directe fuzzy-matching over alle klantvelden
-- Pin je belangrijkste klanten als favorieten voor snelle toegang
+- Zet je belangrijkste klanten als favoriet, dan vind je ze snel terug
 

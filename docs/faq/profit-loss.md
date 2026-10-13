@@ -1,20 +1,18 @@
 ---
 title: "Winst en verlies"
-description: "Om het winst-en-verliesoverzicht in de app te openen: open Rapporten, ga naar de weergave Winst & verlies."
-last_verified: 2026-08-15
+description: "Het winst-en-verliesoverzicht open je via Boekhouding, Boekhoudersweergave en het tabblad Winst & verlies (Office)."
+last_verified: 2026-10-13
 chatbot:
   triggers: ["profit and loss", "profit loss", "income statement", "p&l", "winst en verlies", "resultatenrekening", "gewinn und verlust", "compte de resultat", "resultat net"]
   actions:
-    - { label: "Open reports", to: "/reports" }
+    - { label: "Open bookkeeping", to: "/boekhouding" }
   follow_up: ["How do I view charts?", "How do I export my reports?", "How do I see my year overview?"]
 ---
 
-Om het winst-en-verliesoverzicht in de app te openen:
-1. Open Rapporten
-2. Ga naar de weergave Winst & verlies
-3. Kies de periode die je wilt bekijken met de periode- en jaarfilters
-4. Bekijk de cijfers voor die periode; met de tabbladen Winst, Omzet en Uitgaven in de weergave zoom je in op elke kant
+Het winst-en-verliesoverzicht staat in je boekhouding (Office):
+1. Open **Boekhouding** in de zijbalk, onder Financiën
+2. Klik op **Boekhoudersweergave** om de tabbladen voor je boekhouder te tonen
+3. Open het tabblad **Winst & verlies**: je opbrengsten en kosten per grootboekrekening, met een grafiek van de resultaatopbouw
+4. Kies de periode die je wilt bekijken met de periode- en jaarkiezer
 
-Het dashboard gebruikt dezelfde W&V-definitie voor de nettowinst- en geschatte belastingreservekaarten. Uitgaven worden zonder btw geteld, geactiveerde investeringen worden via hun afschrijvingschema verwerkt in plaats van in de aankoopmaand, en bank- of inboxconcepten die nog in beoordeling zijn, worden uitgesloten omdat ze nog niet in de boeken staan. Dit verschilt van de kasgerichte totalen in de pulse-rij, die wel btw en openstaande concepten bevatten.
-
-Zet de vergelijkingsfilter aan om dezelfde periode naast een eerder jaar te zien.
+Wil je alleen snel je winst zien? Die staat ook op Rapportages › Overzicht en op de pagina **Cijfers**. Daar worden uitgaven zonder btw geteld, geactiveerde investeringen via hun afschrijvingsschema verwerkt in plaats van in de aankoopmaand, en bank- of inboxconcepten die nog in beoordeling zijn uitgesloten, omdat ze nog niet in de boeken staan.

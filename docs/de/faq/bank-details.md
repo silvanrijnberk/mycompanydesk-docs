@@ -1,6 +1,6 @@
 ---
 title: "Bankdaten"
-description: "So fügen Sie Bankdaten hinzu oder aktualisieren sie: gehen Sie zu Einstellungen und öffnen Sie Zahlung."
+description: "So fügen Sie Bankdaten hinzu oder aktualisieren sie: gehen Sie zu Einstellungen und öffnen Sie Bezahlung."
 last_verified: 2026-07-02
 chatbot:
   triggers: ["bank details", "add bank account", "bank information", "where do i add my bank details", "iban", "payment details", "bankgegevens", "waar voeg ik mijn bankgegevens toe", "bankrekening toevoegen", "bankdaten", "wo trage ich meine bankdaten ein", "coordonnees bancaires", "ou ajouter mes coordonnees bancaires"]
@@ -10,7 +10,7 @@ chatbot:
 ---
 
 So fügen Sie Bankdaten hinzu oder aktualisieren sie:
-1. Gehen Sie zu Einstellungen und öffnen Sie „Zahlung“
+1. Gehen Sie zu Einstellungen und öffnen Sie „Bezahlung“
 2. Tragen Sie Ihre IBAN und den Namen auf dem Konto in der Bankkonto-Karte ein
 3. Änderungen werden automatisch gespeichert
 

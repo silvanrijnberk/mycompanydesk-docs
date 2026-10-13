@@ -21,12 +21,14 @@ chatbot:
 ---
 
 So bearbeiten Sie ein wiederkehrendes Element:
-1. Gehen Sie zu Wiederkehrende Rechnungen (oder Ausgaben)
+1. Gehen Sie im Menü zu „Wiederkehrend“ und wählen Sie oben „Rechnungen“ oder „Ausgaben“
 2. Öffnen Sie das wiederkehrende Element
 3. Klicken Sie auf „Bearbeiten“
 4. Ändern Sie Betrag, Frequenz, Kunde oder Positionen; bei einer wiederkehrenden Rechnung auch die Zahlungsoptionen, die Rechnungsdetails, die Referenz, das Projekt oder den Vermögenswert
 5. Speichern Sie: zukünftige Generierungen verwenden die aktualisierte Vorlage
 
 Hinweis: Änderungen wirken sich nur auf zukünftige Rechnungen/Ausgaben aus. Bereits erzeugte Einträge bleiben unverändert.
+
+Wiederkehrende Rechnungen und Ausgaben gehören zum Office-Abonnement.
 
 Hinweis: Wenn Sie das Startdatum ändern, bevor der erste Eintrag erzeugt wurde, verschiebt sich das nächste geplante Datum mit. Sobald der erste Eintrag erzeugt wurde, verschiebt eine Änderung des Startdatums den Zeitplan nicht mehr.

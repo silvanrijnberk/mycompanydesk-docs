@@ -13,41 +13,44 @@ Projekte helfen Ihnen, Rechnungen, Ausgaben und Zeiteinträge zusammenzufassen. 
 
 ## Projekt erstellen
 
-1. Gehen Sie zu **Projekte > Neues Projekt**
+1. Gehen Sie zu **Projekte › Neues Projekt**
 2. Füllen Sie aus:
-   - **Name** — Ein aussagekräftiger Projektname
-   - **Kunde** — Der Kunde, für den dieses Projekt ist
-   - **Beschreibung** — Was das Projekt beinhaltet
-   - **Budget** — Optionaler Budgetbetrag
-   - **Status** — Aktiv, Pausiert oder Abgeschlossen
+   - **Name**: ein aussagekräftiger Projektname (das einzige Pflichtfeld)
+   - **Kunde**: der Kunde, für den dieses Projekt ist
+   - **Beschreibung**: was das Projekt beinhaltet
+   - **Budget**: ein optionaler Budgetbetrag
+   - **Status**: Geplant, Aktiv, Pausiert oder Abgeschlossen
 3. Klicken Sie auf **Speichern**
 
 ## Projektstatus
 
 | Status | Beschreibung |
 |---|---|
+| **Geplant** | Noch nicht begonnen |
 | **Aktiv** | Wird derzeit bearbeitet |
 | **Pausiert** | Vorübergehend unterbrochen |
-| **Abgeschlossen** | Fertig — keine weitere Arbeit erwartet |
-| **Archiviert** | Zur Referenz gespeichert |
+| **Abgeschlossen** | Fertig, keine weitere Arbeit erwartet |
+| **Storniert** | Findet nicht statt |
+
+Ein Projekt, das Sie nicht mehr in Ihrer Liste sehen möchten, archivieren Sie. Es steht dann in der Ansicht **Archiv**; gelöschte Projekte liegen im **Papierkorb**.
 
 ## Projektdetailseite
 
 Die Projektdetailseite zeigt:
 
-- **Übersicht** — Name, Kunde, Status, Budget
-- **Verknüpfte Rechnungen** — Alle Rechnungen zu diesem Projekt
-- **Verknüpfte Ausgaben** — Diesem Projekt zugeordnete Kosten
-- **Zeiteinträge** — Für dieses Projekt erfasste Stunden
-- **Rentabilität** — Aufschlüsselung Umsatz vs. Kosten
+- **Was dieses Projekt einbringt**: Einnahmen, Ausgaben und das Ergebnis
+- **Budget**: wie viel ausgegeben ist und was noch übrig bleibt
+- **Stunden pro Person**: wer wie viele Stunden auf das Projekt erfasst hat
+- **Verlauf**: die Rechnungen, Ausgaben und Stunden, die zum Projekt gehören
+- **Automatische Abrechnung**: wie die Stunden des Projekts abgerechnet werden (siehe unten)
 
 ## Elemente mit Projekten verknüpfen
 
 Beim Erstellen von Rechnungen, Ausgaben oder Zeiteinträgen wählen Sie das Projekt aus der Dropdown-Liste, um sie zu verknüpfen. Dies aktualisiert automatisch die Finanzdaten des Projekts.
 
-- **Rechnungen** — Umsatz pro Projekt verfolgen
-- **Ausgaben** — Kosten pro Projekt verfolgen
-- **Zeiteinträge** — Stunden pro Projekt verfolgen
+- **Rechnungen**: Umsatz pro Projekt verfolgen
+- **Ausgaben**: Kosten pro Projekt verfolgen
+- **Zeiteinträge**: Stunden pro Projekt verfolgen
 
 ## Mit einem Vertrag verknüpfen
 
@@ -59,41 +62,38 @@ Wenn für einen Vertrag kein Satz hinterlegt ist, bleiben verknüpfte Stunden un
 
 ## Automatisches Abrechnen für ein Projekt
 
-Ein Projekt kann seine Stunden in einem eigenen Rhythmus abrechnen. Auf der Projektseite wählen Sie, wie es abgerechnet wird:
+Ein Projekt kann seine Stunden in einem eigenen Rhythmus abrechnen. Auf der Projektseite wählen Sie unter **Automatische Abrechnung**, wie es abgerechnet wird:
 
-- **Manuell** (die Voreinstellung): Diese Rechnungen erstellen Sie selbst.
-- **Jeden Monat**: Anfang des Monats gehen die bis dahin erfassten Stunden und weiterberechneten Kosten auf einer Rechnung an den Kunden.
-- **Beim Abschluss**: Alles, was noch offen ist, geht auf eine Schlussrechnung, sobald Sie das Projekt abschließen.
+- **Manuell** (die Voreinstellung): Sie erstellen die Rechnung selbst aus den Stunden des Projekts.
+- **An einem festen Tag**: jede Woche oder jeden Monat an dem Tag, den Sie wählen, gehen die bis dahin erfassten Stunden und weiterberechneten Kosten auf einer Rechnung an den Kunden.
+- **Beim Abschluss**: Alles, was noch offen ist, geht auf eine Schlussrechnung, sobald Sie das Projekt auf Abgeschlossen setzen.
 
-Sie können dem Projekt auch eine eigene Rechnung geben, getrennt von den anderen Projekten desselben Kunden. Die Kundenseite bündelt die [vollständige Übersicht](/de/features/time-registration#automatische-zeitabrechnung): alle Projekte dieses Kunden, die Stunden ohne Projekt und wie der Versand funktioniert.
+Sie können das Projekt auch **Auf eigener Rechnung** abrechnen lassen, getrennt von den anderen Projekten desselben Kunden. Die Kundenseite bündelt die [vollständige Übersicht](/de/features/time-registration#automatische-zeitabrechnung): alle Projekte dieses Kunden, die Stunden ohne Projekt und wie der Versand funktioniert.
+
+Projekte und Zeiterfassung sind in jedem Abonnement enthalten, auch in Desk. Die automatische Abrechnung gehört zu Office; in Desk erstellen Sie die Rechnung selbst aus den Stunden.
 
 ## Budgetverfolgung
 
 Wenn Sie ein Budget festlegen:
 
-- Sehen Sie, wie viel des Budgets verbraucht wurde
-- Verfolgen Sie das verbleibende Budget
-- Vergleichen Sie tatsächliche Kosten mit dem Budget
-- Erhalten Sie Warnungen, wenn Sie sich den Budgetgrenzen nähern
+- Sehen Sie, wie viel des Budgets ausgegeben ist
+- Sehen Sie, wie viel Budget noch übrig ist
+- Zeigt die Projektliste die Markierung **Über Budget**, sobald die Kosten das Budget überschreiten
 
 ## Massenaktionen
 
-- **Status ändern** — Mehrere Projekte gleichzeitig aktualisieren
-- **Archivieren** — Abgeschlossene Projekte ins Archiv verschieben
-- **Wiederherstellen** — Archivierte Projekte zurückholen
+Wählen Sie mehrere Projekte in der Liste aus:
 
-## Berichte
+- **Archivieren**: Projekte ins Archiv verschieben
+- **Löschen**: Projekte in den Papierkorb verschieben
+- **Wiederherstellen**: Projekte aus dem Archiv oder dem Papierkorb zurückholen
 
-Sehen Sie die Projektleistung in den [Kundenberichten](/de/features/reports):
+## Rentabilität
 
-- Umsatz pro Projekt
-- Zeitaufwand pro Projekt
-- Gewinnmargen
-- Vergleich über Projekte hinweg
+Die Projektliste zeigt pro Projekt die Einnahmen, die Ausgaben, das Nettoergebnis und die Marge. Unter **Kennzahlen** vergleicht der Baustein **Projektmargen** Ihre Projekte miteinander.
 
 ## Tipps
 
-- Verwenden Sie Projekte auch für kleine Aufträge — die Einblicke sind wertvoll
+- Verwenden Sie Projekte auch für kurze Aufträge: die Einblicke sind wertvoll
 - Verknüpfen Sie sowohl Rechnungen als auch Ausgaben, um genaue Gewinnmargen zu erhalten
 - Archivieren Sie abgeschlossene Projekte, um Ihre aktive Liste übersichtlich zu halten
-- Schauen Sie sich das projektbasierte Dashboard-Profil für eine projektfokussierte Ansicht an

@@ -1,7 +1,7 @@
 ---
 title: "Team access"
-description: "To manage who has access to your workspace: go to Settings > Toegang en boekhouder (access and accountant)."
-last_verified: 2026-09-15
+description: "To manage who has access to your workspace: go to Settings, People with access, then invite someone or manage their permissions."
+last_verified: 2026-10-13
 chatbot:
   triggers:
     - "team access"
@@ -23,7 +23,7 @@ chatbot:
     - "teamleden"
     - "uitnodigen"
     - "werkruimte"
-    - "toegang en boekhouder"
+    - "mensen met toegang"
   actions:
     - { label: "Open access settings", to: "/settings/toegang" }
   follow_up:
@@ -36,9 +36,11 @@ chatbot:
 
 To manage who has access to your workspace:
 
-1. Go to Settings → **Toegang en boekhouder** (access and accountant)
-2. Review current members and roles in the **Mensen met toegang** (people with access) section
-3. Click **Iemand toegang geven** (give someone access) to invite a teammate by email
-4. Click the **Toegang beheren** (manage access) button or gear icon on a member row to set page permissions
+1. Go to Settings › **People with access**
+2. Review who already has access and with which role: **Owner**, **Admin** or **Member**
+3. Click **Invite teammate**, enter their email address and click **Send invite**
+4. Want to set what someone may do per page? Open the menu on that person's row (on your phone, the **Manage** button) and choose **Manage access**
 
-Permissions are managed per page with Read, Write and Create options. Inviting team members requires the **Office** plan; the accountant section on the same page is free on every plan.
+Permissions are set per page with Read, Write and Create, see [Team permissions](/en/faq/team-permissions). Inviting people requires the **Office** plan, as many as you like and with no per-person charge.
+
+You give your accountant access under Settings › **Your accountant**. That is free on every plan.

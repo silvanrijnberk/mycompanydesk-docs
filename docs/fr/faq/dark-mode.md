@@ -1,6 +1,6 @@
 ---
 title: "Mode sombre"
-description: "Pour changer de thème : allez dans Paramètres > Affichage, choisissez Clair, Sombre ou Automatique (suit votre appareil)."
+description: "Pour changer de thème : allez dans Paramètres › Affichage, choisissez Clair, Sombre ou Automatique (suit votre appareil)."
 last_verified: 2026-07-02
 chatbot:
   triggers: ["dark mode", "light mode", "switch theme", "change theme", "night mode", "donkere modus", "thema wijzigen", "dunkler modus", "mode sombre"]
@@ -11,22 +11,23 @@ chatbot:
 ## Mode sombre dans l'application
 
 Pour changer de thème :
-1. Allez dans Paramètres → « Affichage »
+1. Allez dans Paramètres › « Affichage »
 2. Choisissez Clair, Sombre ou Automatique (suit votre appareil)
 3. Le changement s'applique immédiatement et est enregistré automatiquement
 
-Astuce : vous pouvez aussi utiliser le bouton de thème dans le menu de navigation pour un changement rapide.
+Astuce : pour changer rapidement, utilisez **Mode sombre** ou **Mode clair** dans votre menu de compte, dans la barre du haut.
 
 ## Mode sombre pour votre site web
 
-Vous avez un site web professionnel hébergé ? Vous pouvez également définir un mode sombre pour vos visiteurs. Ouvrez la section **Site web** de l'application, allez sur la page **Style** et cherchez le réglage du mode sombre dans la section **Couleurs**.
+Vous avez un site web via MyCompanyDesk ? Vous pouvez aussi le passer en sombre. Ouvrez **Site web** dans l'application, allez sur l'écran **Stijl** (style) de l'éditeur et cherchez la section **Donkere kleuren** (couleurs sombres). Ces libellés de l'éditeur de site s'affichent en néerlandais.
 
-Trois options :
+Quatre options :
 
-- **Désactivé** (par défaut) : Pas de mode sombre. Votre site reste sur le thème clair.
-- **Bouton** : Les visiteurs voient un bouton soleil/lune dans la barre de navigation. Le mode clair est toujours le choix par défaut ; les visiteurs qui préfèrent le mode sombre doivent l'activer eux-mêmes. Une fois choisi, le réglage est enregistré dans leur navigateur pour la prochaine visite.
-- **Suivre le système** : Le site suit automatiquement la préférence du visiteur au niveau du système d'exploitation. S'adapte dès que le visiteur change son paramètre système.
+- **Uit** (désactivé, par défaut) : votre site est toujours clair.
+- **Altijd donker** (toujours sombre) : chaque visiteur voit votre site en sombre.
+- **Knop in menubalk** (bouton dans la barre de menu) : les visiteurs choisissent eux-mêmes clair ou sombre avec un bouton dans la barre de menu.
+- **Volgt het toestel** (suit l'appareil) : sombre pour les visiteurs dont le téléphone ou l'ordinateur est en mode sombre, clair sinon.
 
-Lorsque vous activez le mode sombre, un panneau de palette sombre apparaît pour que vous puissiez choisir une version nocturne de chaque couleur de marque. Laisser la palette vide est possible ; le site applique une inversion par défaut qui préserve vos couleurs de marque et d'accent.
+Si vous choisissez autre chose que Uit, sélectionnez sous **Kies een donkere set** (choisir un jeu sombre) un jeu prêt à l'emploi : Bijna zwart, Nachtblauw, Donkergroen ou Warm antraciet. Vous pouvez aussi définir votre propre version nocturne de chaque couleur. En haut de l'écran Stijl, la carte **Liever een donkere site?** (plutôt un site sombre ?) propose **Maak mijn site donker** (rendre mon site sombre) comme raccourci.
 
 Consultez [Constructeur de site](/fr/advanced/business-page) pour en savoir plus sur la personnalisation de votre site.

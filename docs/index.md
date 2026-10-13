@@ -4,7 +4,7 @@ layout: home
 hero:
   name: MyCompanyDesk
   text: Boekhouding eenvoudig gemaakt
-  tagline: Het alles-in-één platform voor zzp'ers en kleine bedrijven om facturen, uitgaven, klanten en meer te beheren.
+  tagline: Het alles-in-één platform voor zzp'ers om facturen, uitgaven, klanten, je website en meer te beheren.
   actions:
     - theme: brand
       text: Aan de slag
@@ -16,7 +16,7 @@ features:
   - icon:
       src: /icons/file-bar-chart.svg
     title: Facturen & Offertes
-    details: Maak professionele facturen en offertes, verstuur ze naar klanten en houd betalingen bij — alles op één plek.
+    details: Maak professionele facturen en offertes, verstuur ze naar klanten en houd betalingen bij, alles op één plek.
   - icon:
       src: /icons/receipt.svg
     title: Uitgaven bijhouden
@@ -24,7 +24,7 @@ features:
   - icon:
       src: /icons/bar-chart-3.svg
     title: Rapporten & btw
-    details: Krijg inzicht in omzet, winst, cashflow en btw. Vergrendel periodes na aangifte voor compliance.
+    details: Bereid je btw-aangifte voor op elk abonnement en vergrendel periodes na aangifte. Met Office krijg je rapportages over omzet, winst, cashflow en klanten.
   - icon:
       src: /icons/users.svg
     title: Klanten & Projecten
@@ -32,19 +32,19 @@ features:
   - icon:
       src: /icons/refresh-cw.svg
     title: Terugkerende facturering
-    details: Stel terugkerende facturen en uitgaven in die automatisch worden gegenereerd volgens je gekozen schema.
+    details: Stel met Office terugkerende facturen en uitgaven in die automatisch worden gegenereerd volgens je gekozen schema.
   - icon:
       src: /icons/bar-chart-3.svg
     title: Activa en afschrijving
     details: Houd zakelijke activa bij, leg de aanschafwaarde vast en laat afschrijvingen automatisch lopen, zodat je altijd de actuele boekwaarde ziet.
   - icon:
       src: /icons/house.svg
-    title: Contracten & Assets
-    details: Beheer huurcontracten, volg vastgoed, voertuigen en apparatuur met volledig levenscyclusbeheer.
+    title: Contracten
+    details: Leg vaste afspraken met klanten vast in een contract, laat het online ondertekenen en factureer automatisch. Met Office.
   - icon:
       src: /icons/house.svg
-    title: Website op je eigen domein
-    details: Bouw een site met meerdere pagina's op je eigen domein, start vanuit een kant-en-klaar site-pakket, of pas een bespoke design toe. Alles vanuit dezelfde app.
+    title: Je eigen website
+    details: Bouw een site met meerdere pagina's, gratis op mycompanydesk.site of met Office op je eigen domein. Start vanuit een kant-en-klaar site-pakket, alles vanuit dezelfde app.
     link: /advanced/business-page
     linkText: Meer lezen
 ---

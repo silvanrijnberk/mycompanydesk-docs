@@ -13,4 +13,4 @@ Datums, tijden en getallen volgen in MyCompanyDesk de Nederlandse notatie en zij
 
 Invoervelden voor getallen, zoals prijs- en betalingsbedragen, accepteren zowel een komma als een punt als decimaalteken, ongeacht welke taal je browser gebruikt.
 
-Wat je wel kunt aanpassen is de taal van de app zelf: ga naar Instellingen → "Weergave" en kies Nederlands, Engels, Duits of Frans voor de interface.
+Wat je wel kunt aanpassen is de taal van de app zelf: ga naar Instellingen › "Weergave" en kies Nederlands, Engels, Duits of Frans voor de interface.

@@ -1,332 +1,309 @@
 ---
 title: Rechnungen
-description: "Create professional invoices, send them with payment links, and track them from draft through outstanding to paid, with filters on every status."
+description: "Erstellen Sie saubere Rechnungen, versenden Sie sie mit Zahlungslink und verfolgen Sie jede vom Entwurf bis zur Zahlung."
 ---
 
-# Invoices
+# Rechnungen
 
-Invoices are at the core of MyCompanyDesk. Create professional invoices, send them to customers with payment links, and track payments through to completion.
+Rechnungen sind das Herzstück von MyCompanyDesk. Sie erstellen saubere Rechnungen, schicken sie Ihren Kunden mit einem Zahlungslink und verfolgen die Zahlung, bis das Geld da ist. Rechnungen erstellen und versenden geht unbegrenzt, in jedem Abonnement, auch in Desk.
 
-## Settings for invoices and quotes
+## Einstellungen für Rechnungen und Angebote
 
-Settings → **Facturen en offertes** (Invoices and quotes) holds defaults that apply to every new invoice and quote.
+Unter **Einstellungen › Rechnungen und Angebote** legen Sie die Vorgaben für jede neue Rechnung und jedes neue Angebot fest.
 
-### Payment terms
+### Zahlungsziel
 
-Set the default number of days a customer gets to pay. Choices range from **Direct** to a custom number of days. This value appears on every new invoice, but you can override it per invoice.
+Legen Sie fest, wie viele Tage ein Kunde zum Bezahlen hat: **14 Tage** (das wählen die meisten), **30 Tage**, **60 Tage** oder eine eigene Anzahl Tage (0 heißt **Sofort**). Dieses Ziel steht auf jeder neuen Rechnung, Sie können es aber pro Rechnung ändern.
 
-### Reminders
+### Erinnerungen
 
-Turn on automatic reminders and MyCompanyDesk sends a friendly reminder the day after an invoice becomes overdue, then every week until it is paid.
+Schalten Sie **Zu spät? Automatisch eine Erinnerung senden** ein, dann schickt MyCompanyDesk eine freundliche Erinnerung, sobald eine Rechnung drei Tage über dem Fälligkeitsdatum liegt, und danach jede Woche erneut, bis bezahlt ist. Automatische Erinnerungen gehören zu Office. Eine Erinnerung selbst von der Rechnung aus zu senden, geht in jedem Abonnement.
 
-### Quote validity
+### Gültigkeit von Angeboten
 
-Choose how long quotes stay valid by default: **2 weeks**, **1 month** or **2 months**.
+Wählen Sie, wie lange ein Angebot standardmäßig gültig bleibt: **2 Wochen**, **1 Monat** oder **2 Monate**. Jedes neue Angebot bekommt automatisch ein Datum „Gültig bis“ auf Grundlage dieser Einstellung, damit kein Angebot ohne Ablaufdatum hinausgeht.
 
-Jedes neue Angebot bekommt automatisch ein Datum „Gültig bis“ auf Grundlage dieser Einstellung, damit kein Angebot ohne Ablaufdatum hinausgeht.
+### Unterschriebene Angebote automatisch abrechnen
 
-### Auto-invoice signed quotes
+Ist **Unterschrieben? Automatisch einen Rechnungsentwurf vorbereiten** eingeschaltet, wird aus einem unterschriebenen Angebot von selbst ein Rechnungsentwurf. Sie prüfen ihn und entscheiden selbst, wann er hinausgeht. Diese Automatisierung gehört zu Office.
 
-When enabled, a signed quote automatically becomes a draft invoice. The draft is ready for your review; you still choose when to send it.
+### AGB standardmäßig mitschicken {#agb-mitschicken}
 
-### AGB standardmäßig mitschicken
+Halten Sie Ihre Allgemeinen Geschäftsbedingungen unter Dokumente bereit, kann jeder Versand sie als PDF mitschicken. Unter **Allgemeine Geschäftsbedingungen** auf derselben Einstellungsseite legen Sie getrennt je Art fest, ob das Kontrollkästchen im Versanddialog anfangs gesetzt ist: Angebote und Rechnungen haben je einen eigenen Schalter. Ab Werk gehen die AGB bei Angeboten mit und bei Rechnungen nicht. Das Kontrollkästchen selbst bleibt bei jedem Versand anpassbar.
 
-Halten Sie Ihre Allgemeinen Geschäftsbedingungen unter Dokumenten bereit, kann jeder Versand sie als PDF mitschicken. Unter **Allgemeine Geschäftsbedingungen** auf derselben Einstellungsseite legen Sie getrennt je Art fest, ob das Kontrollkästchen im Versanddialog anfangs gesetzt ist: Angebote und Rechnungen haben je einen eigenen Schalter. Ab Werk gehen die AGB bei Angeboten mit und bei Rechnungen nicht. Das Kontrollkästchen selbst bleibt bei jedem Versand anpassbar.
+### Rechnungsnummern
 
-### Invoice numbering
+MyCompanyDesk nummeriert Rechnungen automatisch und lückenlos, so wie es die niederländische Steuerbehörde verlangt, es sei denn, Sie legen unter **Nummerierung** selbst ein Präfix oder eine Startnummer fest.
 
-MyCompanyDesk numbers invoices automatically in the order the Belastingdienst expects, unless you set a custom prefix or starting number.
+| Feld | Was es bewirkt |
+|---|---|
+| **Präfix** | Text vor der Jahreszahl auf jeder neuen Rechnung, zum Beispiel `RE-` oder `2026_`. Bereits versendete Rechnungen behalten ihre Nummer. |
+| **Nächste Rechnungsnummer** | Die Nummer, die als Nächstes vergeben wird. Sie lässt sich nur vorwärts stellen, nie zurück, weil sonst doppelte Nummern entstünden. |
 
-| Field | Dutch label | What it does |
-|---|---|---|
-| **Prefix** | "Voorvoegsel" | Text in front of the year on every new invoice, for example `INV-` or `2026_`. Sent invoices keep their existing number. |
-| **Next invoice number** | Eerstvolgende factuurnummer | The next number to use. You can only move forward, never back, because lowering the number would create duplicates. |
+Unter den Feldern sehen Sie, wie Ihre nächste Rechnungsnummer aussieht. Bereits versendete Rechnungen bekommen nie eine andere Nummer, wenn Sie diese Einstellungen ändern.
 
-The preview under the fields shows what your next invoice number will look like. Already sent invoices are never renumbered when you change these settings.
+### Sprache Ihrer Dokumente
 
-### Default document language
+Bei **In welcher Sprache erstellen Sie Ihre Dokumente?** wählen Sie die Sprache Ihrer Rechnungen, Angebote und E-Mails an Kunden. Niederländisch ist die Vorgabe. Rechnungen in anderen Sprachen gehören zu Office. Eine abgeschlossene Rechnung behält die Sprache, in der sie erstellt wurde.
 
-Choose the language used for invoices, quotes and customer emails by default. The default option follows your workspace language; you can change the language per document.
+### Peppol-E-Rechnungen
 
-### Peppol e-invoicing
+Mit einem Schalter auf derselben Einstellungsseite aktivieren Sie [Peppol-E-Rechnungen](/de/features/peppol) (Office). Ihre Unternehmensdaten werden dann beim Peppol-Zugangspunkt angemeldet, und Sie können neben E-Mail auch E-Rechnungen senden und empfangen. Auf der Peppol-Seite lesen Sie mehr über die Identitätsprüfung, den Empfang und fehlende Angaben.
 
-A toggle on the same settings page enables [Peppol e-invoicing](/en/features/peppol). When you switch it on, your company details are registered with the Peppol access point and you can send or receive e-invoices alongside email. See the Peppol page for identity verification, receiving, and missing-field checks.
+## Überblick
 
-## Overview
-
-Die Rechnungsseite zeigt Ihre Rechnungen unter Reitern: **Alle** („zuerst, was Sie tun müssen“), **Noch zu versenden** und **Warten auf Zahlung**. Die Reiter tragen aktuelle Anzahlen, die Zahlungsreiter zeigen auch ihren Gesamtbetrag in Euro daneben, und auf dem Warte-Reiter erscheint eine rote Meldung mit der Anzahl überfälliger Rechnungen.
+Die Rechnungsseite zeigt Ihre Rechnungen unter Reitern: **Alle** („zuerst, was Sie tun müssen“), **Noch zu versenden** und **Wartet auf Zahlung**. Die Reiter tragen aktuelle Anzahlen, die Zahlungsreiter zeigen auch ihren Gesamtbetrag in Euro, und auf dem Warte-Reiter erscheint eine rote Meldung mit der Anzahl überfälliger Rechnungen.
 
 In den Listen sind die Rechnungen danach gruppiert, wo sie stehen, damit die Arbeit, die auf Sie wartet, oben liegt und erledigte Arbeit nach unten rutscht:
 
-- **Überfällig**, danach **Noch zu versenden**, dann **Warten auf Zahlung**: die Arbeit, die jetzt bei Ihnen liegt
-- **Bezahlt im September** (die zwei neuesten Monate mit Zeilen), danach **Früher bezahlt** für alles davor, eingeklappt bis Sie auf Anzeigen drücken
+- **Überfällig**, danach **Noch zu versenden**, dann **Wartet auf Zahlung**: die Arbeit, die jetzt bei Ihnen liegt
+- **Bezahlt im September** (die zwei neuesten Monate mit Zeilen), danach **Früher bezahlt** für alles davor, eingeklappt, bis Sie auf Anzeigen drücken
 - **Bezahlt**: bezahlt ohne zuordenbaren Monat
 - **Storniert oder gutgeschrieben**: das Archiv der Arbeit, die nicht mehr läuft
 
-Jede Gruppenkopfzeile trägt die Anzahl der ganzen Gruppe und, wo zutreffend, die Gruppensumme. Mit Ausblenden klappen Sie eine Gruppe zu: die Zeilen zählen dann nicht mehr für die Seiteneinteilung, die Kopfzeile bleibt an ihrem Platz. Ein Monat mit Datum in der Zukunft (fast immer ein Tippfehler im Datum) klappt nie ein: Er bleibt offen mit eigener Kopfzeile, damit der Fehler sichtbar bleibt.
+Jede Gruppenkopfzeile trägt die Anzahl der ganzen Gruppe und, wo zutreffend, die Gruppensumme. Mit Ausblenden klappen Sie eine Gruppe zu: Die Zeilen zählen dann nicht mehr für die Seiteneinteilung, die Kopfzeile bleibt an ihrem Platz. Ein Monat mit Datum in der Zukunft (fast immer ein Tippfehler im Datum) klappt nie ein: Er bleibt mit eigener Kopfzeile offen, damit der Fehler sichtbar bleibt.
 
-Neben den Daten trägt jede Zeile eine Spalte **Stand**, die den Zustand in gewöhnlichen Worten nennt: „Entwurf“, „Noch senden“, „Fälligkeit 12. Mai überschritten“, „fällig in 3 Tagen“, „Kunde sagt: bezahlt“. Mit dem **Status**-Filter im Filterpanel schränkt die Liste weiterhin auf einen beliebigen Status ein, einschließlich Entwurf, überfällig, bezahlt und storniert, und Websiteverkäufe behalten ihre eigene Ansicht der Liste.
+Neben den Daten trägt jede Zeile eine Spalte **Stand**, die den Zustand in einfachen Worten nennt: „Entwurf“, „Noch senden“, „Fälligkeit 12. Mai überschritten“, „fällig in 3 Tagen“, „Kunde sagt: bezahlt“. Mit dem Filter **Status** im Filterbereich grenzen Sie die Liste weiterhin auf einen einzelnen Status ein, auch Entwurf, überfällig, bezahlt und storniert. Verkaufen Sie über Ihre Website, erscheint neben **Rechnungen** ein Reiter **Website-Verkäufe** mit einer eigenen Liste dieser Verkäufe.
 
-## Creating an invoice
+## Eine Rechnung erstellen
 
-### Full form
+### Das vollständige Formular
 
-1. Go to **Invoices > New Invoice**
-2. Select or create a **customer**
-3. Add **line items** with description, quantity, unit price, and VAT rate. The default VAT rate for new lines comes from your workspace tax settings (Geldzaken → Belasting). If a customer has reverse charge enabled, the line automatically uses 0%.
-4. Set the **invoice date** and **due date**
-5. Add optional **notes** or **internal remarks**
-6. Click **Save** to create a draft
+1. Öffnen Sie **Rechnungen** und klicken Sie auf **Erstellen**
+2. Wählen oder erstellen Sie einen **Kunden**
+3. Fügen Sie **Positionen** mit Beschreibung, Menge, Einzelpreis und Mehrwertsteuersatz hinzu. Den Standardsatz für neue Positionen legen Sie unter **Einstellungen › MwSt.** fest. Ist bei einem Kunden die Umkehr der Steuerschuld eingeschaltet, bekommt die Position automatisch 0 %.
+4. Legen Sie **Rechnungsdatum** und **Fälligkeitsdatum** fest
+5. Ergänzen Sie bei Bedarf **Notizen** oder **interne Bemerkungen**
+6. Klicken Sie auf **Speichern**, um einen Entwurf anzulegen
 
-### Quick Add
+Auf dem Handy öffnet eine neue Rechnung kein langes Formular, sondern einen kurzen Ablauf in Schritten: zuerst der Kunde, dann die Positionen, dann ein Prüfschritt vor dem Speichern und Senden.
 
-For faster creation:
+### Aus einer Vorlage
 
-1. Click the quick-add button on the invoices list
-2. Select a customer
-3. Add items or choose a template
-4. Save (and optionally send immediately)
+Klicken Sie im Rechnungsformular auf **Aus Vorlage** (die Schaltfläche erscheint nur, wenn Sie Rechnungsvorlagen haben). Wählen Sie eine Vorlage, und das Formular füllt sich an Ort und Stelle mit den Positionen, dem Kunden und den übrigen gespeicherten Angaben. Passen Sie an, was nötig ist, speichern und senden Sie. Eine Rechnung speichern Sie als Vorlage mit **Als Vorlage speichern** im Menü mit weiteren Aktionen auf der Rechnung.
 
-Auf dem Handy startet derselbe Knopf kein langes Formular, sondern einen kurzen Schrittablauf: zuerst der Kunde, dann die Positionen, dann ein Prüfschritt vor dem Speichern und Senden.
+Eine Vorlage speichert die vollständige Position: Beschreibung, Menge, Einheit, Einzelpreis, Mehrwertsteuersatz, Rabatt und ob die Position steuerfrei ist. Die Verknüpfung mit einem Eintrag aus Ihrem Angebot an Leistungen speichert sie bewusst nicht: Dieser Eintrag kann später gelöscht werden, und dann würde die Vorlage nicht mehr funktionieren.
 
-### From a template
+## Preise inklusive Mehrwertsteuer
 
-You can start a new invoice from a saved template in two places:
+Der Schalter **Beträge inkl. MwSt.** im Formular ändert, was Sie eintippen. Ist er an, ist ein Positionspreis der Betrag, den der Kunde zahlt, Mehrwertsteuer inklusive, und die Steuer wird aus dem Preis herausgerechnet statt aufgeschlagen. Den Schalter gibt es bei Rechnungen, Angeboten und wiederkehrenden Rechnungen, jedes Dokument merkt sich seine eigene Wahl, und der Hinweis unter dem Schalter sagt, wie Sie gerade arbeiten.
 
-- In the **full invoice form**, click **Start from template** (only shown when you have saved invoice templates). Pick a template, and the form fills itself in place with its line items, customer and other saved data. Adjust anything you need, then save and send.
-- From the **quick-add drawer**, click **Use Template**, select a saved template, and all line items are pre-filled. Adjust as needed, then save and send.
+- Der eingetippte Preis bleibt stehen: Ändern Sie danach den Steuersatz der Position, bleibt der Bruttobetrag gleich und der Nettobetrag darunter passt sich an.
+- Ein Rabatt in Euro auf eine Position geht von dem ab, was der Kunde zahlt. Ein prozentualer Rabatt wirkt wie bei jeder anderen Position.
+- Bei Bruttopreisen zeigen das PDF und die Rechnungs- und Angebotsseite, was der Kunde zahlt: Einzelpreis und Positionsbetrag stehen inklusive Mehrwertsteuer da (38,00 €, nicht 31,40 €), der Nettopreis steht klein unter dem Einzelpreis, und der Steuerblock nennt die Bemessungsgrundlage jedes Satzes („MwSt. 21 % auf 35,54 €“). Auch Paketbestandteile stehen brutto da, damit sie sich zum Paketpreis addieren. Die Summen des Dokuments ändern sich nicht, und die E-Rechnung trägt dieselben Zahlen.
+- Sie arbeiten ohne den Schalter, haben aber Bruttopreise eingetippt? Bei einem Privatkunden fragt das Formular, ob die eingegebenen Preise inklusive Mehrwertsteuer sind. Mit einem Klick stellen Sie das Dokument um, ohne dass sich Ihre Beträge ändern. Beginnen Sie ein neues Dokument für einen Privatkunden, geht der Schalter von selbst an (Preise, die die App aus Ihrem Angebot übernimmt, behalten ihre Positionssumme), und unter dem Schalter erscheint dann ein Hinweis, dass Sie für diesen Privatkunden jetzt Bruttopreise eingeben, mit einer Schaltfläche **Ausschalten**, die wieder Nettopreise einstellt.
 
-Saved templates keep the full line: description, quantity, unit, unit price, VAT rate, discount, and whether the line is VAT exempt. They deliberately do not keep the link to a catalog item, because catalog items can be deleted later and the template would then fail when used.
+## Eine Rechnung einem Objekt zuordnen
 
-## Prices including VAT
+Gehört der Umsatz zu einer vermieteten Immobilie, einem Fahrzeug oder einem anderen Objekt, wählen Sie dieses Objekt im Rechnungsformular. Die Rechnung erscheint dann auf der Seite des Objekts und zählt zu dessen Gesamtumsatz. Das funktioniert für Rechnungen aus einem Mietvertrag und für eine direkte Zuordnung, etwa eine Nebenkostenabrechnung, eine einmalige Gebühr oder eine Verkaufsrechnung. [Objekte](/de/features/objects) sind ein Modul von Office.
 
-The **Amounts incl. VAT** switch on the document form changes what you type. With it on, a line price is the price the customer pays, VAT included, and the VAT is taken back out of the price instead of added on top. The switch exists on invoices, quotes and recurring invoices, and each document remembers its own choice; the hint under the switch says which way you are working.
+## Die Rechnungsseite
 
-- The price you typed is what stays: change the VAT rate on the line afterwards and the amount including VAT remains in place, with the amount excluding VAT adjusting underneath it.
-- A discount in euros on a line discounts what the customer pays. A percentage discount works the same as on any other line.
-- On prices including VAT, the PDF and the invoice and quote detail show what the customer pays: the unit price and the line amount print including VAT (€ 38,00, not € 31,40), the price excluding VAT sits underneath the unit price in small print, and the VAT block names the base of every rate ("VAT 21% on € 35,54"). Package parts print including VAT too, so they add up to the package price. The totals of the document stay unchanged, and the e-invoice carries the same figures.
-- Working without the switch while the prices you typed are the paid kind? When the customer is a private customer, the form asks whether the prices you typed include VAT. One click switches the document over without touching your amounts. Starting a new document for a private customer turns the switch on by itself (the prices the app fills in from your offering keep their line totals), and a notice under the switch then says "Private customer: you are now typing prices including VAT.", with a **Turn off** button that puts prices excluding VAT back.
+Jede Rechnung hat eine eigene Seite mit:
 
-## Attributing an invoice to an object
+- den Angaben zum Kunden
+- den Positionen mit Zwischensummen
+- der Aufschlüsselung der Mehrwertsteuer
+- dem Gesamtbetrag
+- Status und Verlauf
+- dem Zahlungslink (wenn die Rechnung versendet ist)
 
-If the revenue belongs to a rental property, vehicle or other asset, select the object in the invoice form. The invoice is then listed on that object's detail page and included in its total revenue. This works both for invoices generated from a rental contract and for direct attribution, such as service-charge settlements, one-off charges and sale invoices.
+## Dokumentvorschau
 
-## Invoice details
+Jede gespeicherte Rechnung hat auf ihrer Seite eine Live-Vorschau als PDF. Sie sehen die Rechnung genau so, wie Ihr Kunde sie sieht: Layout, Positionen, Summen, Branding und Logo.
 
-Each invoice has a detail page showing:
+In der Kopfzeile der Vorschau stehen die Schaltflächen **PDF herunterladen**, **Drucken** und **Design anpassen**. Mit **Design anpassen** gelangen Sie direkt zum Rechnungsdesign und ändern das Aussehen all Ihrer Rechnungen, Angebote und Erinnerungen. Sind Sie fertig, kehren Sie zur Rechnung zurück, von der Sie kamen. Auf dem Handy steht dieselbe Aktion im Menü mit weiteren Aktionen, damit die Kopfzeile der Vorschau ruhig bleibt.
 
-- Customer information
-- Line items with subtotals
-- VAT breakdown
-- Total amount
-- Status and history
-- Payment link (if sent)
+## Aktionen
 
-## Document preview
+Die Hauptschaltfläche auf der Rechnungsseite folgt dem Schritt, in dem die Rechnung steht:
 
-Every saved invoice has a live PDF preview on its detail page. The preview shows the invoice exactly as your customer will see it: layout, line items, totals, branding and logo.
+- **Abschließen**: bei einem Entwurf. Die Rechnung bekommt dann ihre feste Nummer.
+- **Senden**: bei einer abgeschlossenen Rechnung, die noch nicht beim Kunden ist.
+- **Als bezahlt markieren**: bei einer versendeten Rechnung, die auf Zahlung wartet, und wenn der Kunde meldet, dass er bezahlt hat, damit Sie das bestätigen, statt die Rechnung erneut zu schicken.
+- **Erinnerung senden**: bei einer überfälligen Rechnung. **Als bezahlt markieren** steht dann im Menü mit weiteren Aktionen.
+- **Duplizieren**: bei einer bezahlten oder stornierten Rechnung, als zweite Schaltfläche, damit Sie sie schnell neu anlegen.
 
-The preview header has a **Download PDF** button, a **Print** button, and a **Change design** button. Click **Change design** to jump straight to the invoice design settings and adjust the look of all your invoices, quotes and reminders. When you are done, you return to the invoice you came from. On mobile the same action lives in the page's overflow menu so the preview header stays uncluttered.
+Weitere Aktionen stehen je nach Status im Menü neben der Hauptschaltfläche: **Duplizieren**, **Jeden Monat wiederholen** (macht aus der Rechnung eine wiederkehrende Rechnung), die E-Mail erneut senden, **Erinnerung senden**, **An Buchhalter senden**, **Als Vorlage speichern** und die Rechnung stornieren. Auf dem Handy stehen dort auch die Vorschau, **PDF herunterladen** und **Design anpassen**.
 
-## Actions
+### Senden
 
-The top action on the invoice detail page depends on the invoice status:
+Senden Sie die Rechnung per E-Mail an Ihren Kunden. Die E-Mail enthält:
 
-- **Send** - Available for draft, sent, and overdue invoices. This is the primary next step when the invoice still needs to reach the customer.
-- **Duplicate** - Shown for cancelled invoices so you can recreate them quickly.
-- **Mark as paid** - Shown when a customer reports a payment, letting you confirm it instead of re-sending the invoice.
+- eine Nachricht, die Sie anpassen können (auf Grundlage Ihrer E-Mail-Vorlage)
+- die Rechnung als PDF-Anhang
+- einen Zahlungslink für die Online-Zahlung
 
-Additional actions live in the overflow menu next to the top action:
+Vor dem Versand zeigt die E-Mail-Vorschau die Nachricht genau so, wie Ihr Kunde sie erhält. Unter **In E-Mail aufnehmen** stehen Schalter für den **Ansicht-Button (Online-Link)**, den **Download-Button**, den **PDF-Anhang** und **Rechnungspositionen einfügen**. Was Sie einschalten, sehen Sie sofort in der Vorschau, was Sie sehen, bekommt also auch Ihr Kunde. Feilen Sie jedes Mal wieder am Text? Aktivieren Sie im selben Dialog **Diesen Text künftig für Rechnungen verwenden**, dann startet jede nächste Rechnungs-E-Mail mit dieser Version. Siehe [E-Mail-Vorlagen](/de/faq/email-template).
 
-- **Download PDF** - Download the invoice as a professionally formatted PDF document with your company logo, branding colors, and all invoice details.
-- **Cancel** - Cancel an invoice that should no longer be paid. Cancelled invoices remain in your records for auditing purposes.
-- **Duplicate** - Create a copy of an existing invoice, useful for recurring billing to the same customer.
-- **Send reminder** - Send a payment reminder for overdue invoices.
+Hat Ihr Arbeitsbereich AGB unter Dokumente, zeigt die E-Mail-Vorschau auch den Schalter **Allgemeine Geschäftsbedingungen mitsenden**. Ob er anfangs gesetzt ist, folgt der Vorgabe, die Sie unter [AGB standardmäßig mitschicken](#agb-mitschicken) für diese Dokumentart getroffen haben (ab Werk: bei Angeboten an, bei Rechnungen aus). Ist er an, geht das aktuelle AGB-PDF als Anhang mit, und der Versand wird als Zeitpunkt der Aushändigung auf dem AGB-Dokument festgehalten.
 
-### Send
+### Als Peppol-E-Rechnung senden
 
-Send the invoice to your customer via email. The email includes:
+Ist Ihr Arbeitsbereich auf Office und sind [Peppol-E-Rechnungen](/de/features/peppol) eingeschaltet, bietet der Versanddialog auch **E-Rechnung (Peppol)** an. Die Rechnung geht dann digital in die Buchhaltungssoftware Ihres Kunden statt per E-Mail. Sie wählen pro Rechnung, welchen Weg Sie nutzen.
 
-- A customizable message (based on your email template)
-- The invoice PDF as an attachment
-- A payment link for online payment
+### PDF herunterladen
 
-Before sending, the email preview shows the message exactly as your customer will receive it. The send dialog has toggles for the **View button**, **Download button**, **PDF attachment**, **Invoice lines**, and, if you have online payments enabled, the **Confirm payment** button. These toggles are reflected in the live preview, so what you see is what your customer gets. Passen Sie den Text regelmäßig an? Aktivieren Sie im selben Dialog **Diesen Text künftig für Rechnungen verwenden**, dann startet jede nächste Rechnungs-E-Mail mit dieser Version. Siehe [E-Mail-Vorlagen](/de/faq/email-template).
-
-If your workspace has general terms in Documents, the email preview also shows an **Include general terms** toggle. Ob er anfangs gesetzt ist, folgt der Voreinstellung, die Sie unter AGB standardmäßig mitschicken auf derselben Einstellungsseite für diese Dokumentart getroffen haben (ab Werk: bei Angeboten an, bei Rechnungen aus). When enabled, the current terms PDF is attached to the email and the send is recorded as the provision event on the terms document.
-
-### Send as Peppol e-invoice
-
-If your workspace is on the Office plan and has [Peppol e-invoicing](/en/features/peppol) enabled, the send dialog also offers **E-invoice (Peppol)**. This delivers the invoice digitally to your customer's accounting software instead of sending it by email. You choose per invoice which channel to use.
-
-### Download PDF
-
-Download the invoice as a professionally formatted PDF document. The PDF includes your company logo, branding colors, and all invoice details.
+Laden Sie die Rechnung als sauber gestaltetes PDF mit Ihrem Logo, Ihren Markenfarben und allen Rechnungsangaben herunter.
 
 Ist eine Rechnung länger als eine Seite, bricht das PDF sie ordentlich um: Die Summen bleiben bei den letzten Positionen, mit einem Hinweis, dass die Rechnung weitergeht, und der Zahlungsteil bekommt danach eine eigene Seite. Keine Folgeseite beginnt mit einer leeren Tabelle oder einer wiederholten Kopie der Zahlen.
 
-### Mark as paid
+### Als bezahlt markieren
 
-Manually confirm payment when a customer pays via bank transfer or other offline method.
+Bestätigen Sie eine Zahlung selbst, wenn der Kunde per Überweisung oder auf anderem Weg außerhalb der App zahlt.
 
-### Cancel
+### Stornieren
 
-Cancel an invoice that should no longer be paid. Cancelled invoices remain in your records for auditing purposes.
+Stornieren Sie eine Rechnung, die nicht mehr bezahlt werden muss. Stornierte Rechnungen bleiben in Ihrer Buchhaltung, damit alles nachvollziehbar bleibt.
 
-### Duplicate
+### Duplizieren
 
-Create a copy of an existing invoice, useful for recurring billing to the same customer.
+Legen Sie eine Kopie einer bestehenden Rechnung an, praktisch, wenn Sie denselben Kunden erneut abrechnen.
 
-Credit notes cannot be duplicated. A duplicate would not reference any invoice and would still count as negative revenue in the VAT return, so create a new correction from the invoice you want to correct instead.
+Eine Gutschrift lässt sich nicht duplizieren. Das Duplikat würde auf keine Rechnung verweisen und trotzdem als negativer Umsatz in Ihre Umsatzsteuererklärung einfließen. Erstellen Sie deshalb eine neue Korrektur über **Gutschrift erstellen** bei der Rechnung, die Sie korrigieren möchten.
 
-### Send reminder
+### Erinnerung senden
 
-Send a payment reminder for overdue invoices. If your workspace has online payments enabled, the reminder email gives the customer the same payment options as the original invoice: a **View & pay** button, a **Confirm payment** button, and a scan-and-pay QR code on the PDF.
+Senden Sie eine Zahlungserinnerung für eine überfällige Rechnung. Das geht in jedem Abonnement; nur die automatischen Erinnerungen gehören zu Office. Ist die Online-Zahlung eingerichtet, bietet die Erinnerungs-E-Mail dem Kunden dieselben Zahlungswege wie die ursprüngliche Rechnung: eine Schaltfläche zum Ansehen und Bezahlen, eine Schaltfläche zum Bestätigen der Zahlung und einen QR-Code zum Scannen und Bezahlen auf dem PDF.
 
-## Bulk actions
+## Sammelaktionen
 
-Select multiple invoices from the list to perform actions in bulk. A checkbox column appears in the list while the selection is running, and nowhere else; an empty list carries no select button.
+Wählen Sie mehrere Rechnungen in der Liste aus, um sie in einem Schritt zu bearbeiten. Die Spalte mit Kontrollkästchen erscheint nur, solange Sie auswählen; eine leere Liste hat gar keine Auswahlschaltfläche.
 
-- **Mark as sent** - Mark multiple draft invoices as sent at once
-- **Mark as paid** - Record payment for multiple invoices
-- **Archive** - Move invoices to the archive
-- **Delete** - Permanently remove invoices
+- **Als bezahlt markieren**: eine Zahlung für mehrere Rechnungen gleichzeitig erfassen
+- **Als versendet markieren**: Rechnungen, die Sie außerhalb von MyCompanyDesk zugestellt haben, auf versendet setzen. Das ändert nur den Status und gibt den Rechnungen ihre feste Nummer; es geht keine E-Mail hinaus.
+- **Als storniert markieren**: mehrere Rechnungen gleichzeitig stornieren
+- **Archivieren**: Rechnungen ins Archiv verschieben
+- **Löschen**: Rechnungen in den Papierkorb verschieben
 
-Permanently deleting an invoice (single delete, bulk delete, empty trash, or delete all) releases any attached expenses. They return to the uninvoiced list and can be added to another invoice.
+Im Archiv und im Papierkorb stellen Sie Rechnungen wieder her, und aus dem Papierkorb löschen Sie sie endgültig.
 
-Bulk finalizing runs the same VAT and status checks as sending a single invoice. Invoices that fail a check are skipped, and the results screen explains why.
+Löschen Sie eine Rechnung endgültig (einzeln, als Sammelaktion, durch Leeren des Papierkorbs oder durch Alles löschen), werden verknüpfte Ausgaben wieder frei. Sie stehen dann wieder bei den noch nicht abgerechneten Ausgaben und können auf eine andere Rechnung.
 
-If a bulk action is refused because one or more selected rows fall inside a locked VAT period, the error message names the exact period and tells you what to do next. A filed and locked period can only be reopened via a supplementary VAT return. A bare lock (the period's filing deadline has passed but no return was filed) can be unlocked temporarily from the VAT page. Remove rows that fall in that period from your selection, or use the matching correction route, then try again.
+Rechnungen als Sammelaktion auf versendet zu setzen durchläuft dieselben Steuer- und Statusprüfungen wie das Abschließen einer einzelnen Rechnung. Rechnungen, die eine Prüfung nicht bestehen, werden übersprungen, und die Ergebnisanzeige sagt, warum.
 
-## Payment links
+Lehnt die App eine Sammelaktion ab, weil eine oder mehrere ausgewählte Zeilen in einem gesperrten Umsatzsteuerzeitraum liegen, nennt die Fehlermeldung genau diesen Zeitraum und sagt, was Sie tun können. Ein eingereichter und gesperrter Zeitraum lässt sich nur über eine Berichtigungserklärung (suppletie) wieder öffnen. Eine reine Sperre (die Abgabefrist ist vorbei, aber es wurde keine Erklärung eingereicht) können Sie auf der Mehrwertsteuerseite vorübergehend aufheben. Nehmen Sie die Zeilen aus diesem Zeitraum aus Ihrer Auswahl oder nutzen Sie den passenden Korrekturweg, und versuchen Sie es erneut.
 
-When you send an invoice, a unique payment link is generated. Your customer can:
+## Zahlungslinks
 
-1. Click the link in the email
-2. View the invoice in the **customer portal**
-3. Pay directly online using your connected Mollie or Stripe account
+Wenn Sie eine Rechnung senden, erzeugt MyCompanyDesk einen eigenen Zahlungslink. Ihr Kunde kann:
 
-Mit Mollie oder Stripe beginnt die Mail mit einer Schaltfläche **Jetzt bezahlen**, die direkt zur Zahlungsseite führt, daneben **Rechnung ansehen** für Kunden, die zuerst hinschauen möchten. Die Zahlung startet nur im Browser des Kunden, deshalb richten Mailscanner keine ein. Mehr dazu steht beim [Kundenportal](/de/advanced/customer-portal#zahlung).
+1. auf den Link in der E-Mail klicken
+2. die Rechnung im **Kundenportal** ansehen
+3. direkt online über Ihr verbundenes Mollie- oder Stripe-Konto bezahlen
 
-Payment is automatically recorded and the invoice status updates to **Paid**.
+Mit Mollie oder Stripe beginnt die E-Mail mit einer Schaltfläche **Jetzt bezahlen**, die direkt zur Zahlungsseite führt, daneben **Rechnung ansehen** für Kunden, die zuerst hinschauen möchten. Die Zahlung startet nur im Browser des Kunden, deshalb lösen Mailscanner keine aus. Mehr dazu steht beim [Kundenportal](/de/advanced/customer-portal#zahlung).
 
-If an invoice is canceled after it was sent, the payment link stops working. If a customer clicks the link in the old email or PDF, they see a message that the invoice was canceled and can no longer be paid online.
+Die Zahlung wird automatisch erfasst, und die Rechnung springt auf **Bezahlt**.
 
-## Online payments
+Stornieren Sie eine Rechnung, nachdem sie versendet wurde, funktioniert der Zahlungslink nicht mehr. Klickt ein Kunde auf den Link in der alten E-Mail oder im PDF, sieht er, dass die Rechnung storniert ist und nicht mehr online bezahlt werden kann.
 
-Enable online invoice payments by connecting your own Mollie or Stripe account:
+## Online-Zahlung
 
-1. Go to **Money → Payments** in your workspace sidebar
-2. Under **Online betalingen**, connect your processor of choice
-3. Mollie supports iDEAL, Bancontact, credit card, and bank transfer
-4. Stripe Connect supports card, Apple Pay, Google Pay, and SEPA direct debit
+Lassen Sie Kunden Ihre Rechnungen online bezahlen, indem Sie Ihr eigenes Mollie- oder Stripe-Konto verbinden:
 
-Once connected, every invoice you send includes a payment link. Your customers pay through your own processor account. Funds go directly to you. MyCompanyDesk does not handle or hold your payments.
+1. Öffnen Sie **Einstellungen › Zahlung**
+2. Verbinden Sie unter **Kunden mit iDEAL bezahlen lassen** Mollie oder Stripe
+3. Ihr Kunde sieht die Zahlungsarten, die in Ihrem eigenen Mollie- oder Stripe-Konto aktiv sind, etwa iDEAL, Kreditkarte oder Bancontact
 
-## Payment processor badge
+Ist die Verbindung hergestellt, bekommt jede Rechnung, die Sie senden, einen Zahlungslink. Ihre Kunden zahlen über Ihr eigenes Konto beim Zahlungsanbieter, und das Geld geht direkt an Sie. MyCompanyDesk verwaltet Ihr Geld nicht und hält es auch nicht fest.
 
-When an invoice is fully paid, the payment section header shows a badge identifying which processor the payment came through: "Paid via Mollie" or "Paid via Stripe". The dominant processor is displayed when multiple payment methods were used. This lets you see at a glance where the money landed without scrolling through the payment history.
+Auf derselben Seite tragen Sie Ihre IBAN für Überweisungen ein (der QR-Code zum Scannen und Bezahlen auf dem PDF nutzt sie) und, mit **Kunden dürfen auch per PayPal bezahlen**, die E-Mail-Adresse Ihres PayPal-Kontos.
 
-## Payment refunds
+## Herkunft der Zahlung
 
-Online payments made via Mollie or Stripe can be refunded directly from MyCompanyDesk. When you refund a payment:
+Ist eine Rechnung vollständig bezahlt, zeigt die Kopfzeile des Zahlungsbereichs eine Plakette mit dem Zahlungsanbieter, über den das Geld kam: „Bezahlt über Mollie“ oder „Bezahlt über Stripe“. Bei mehreren Zahlungsarten sehen Sie den Anbieter, über den das meiste kam. So erkennen Sie auf einen Blick, wo das Geld gelandet ist, ohne durch den Zahlungsverlauf zu scrollen.
 
-- The full amount is returned to your customer through the same payment provider
-- The refund is processed immediately by Mollie or Stripe
-- The payment is marked as refunded in your records
+## Zahlungen erstatten
 
-Partial refunds initiated at Mollie or Stripe (for example, when you refund only part of the amount there) now appear in the payment list with the refund date and the remaining booked amount.
+Online-Zahlungen über Mollie oder Stripe erstatten Sie direkt aus MyCompanyDesk. Erstatten Sie eine Zahlung, dann:
 
-Non-online methods (bank transfer, cash) use the existing void path: the payment is marked voided without a processor-side refund. When you void a payment, the invoice status is restored to the state that matches the invoice history. If the invoice had already been emailed to the customer, it returns to **Sent**; if it had never been sent, it returns to **To send**. The original sending history is preserved.
+- geht der volle Betrag über denselben Zahlungsanbieter an Ihren Kunden zurück
+- verarbeitet Mollie oder Stripe die Erstattung sofort
+- steht die Zahlung in Ihrer Buchhaltung als erstattet
 
-To refund a payment:
+Eine Teilerstattung, die Sie direkt bei Mollie oder Stripe auslösen (etwa wenn Sie dort nur einen Teil des Betrags zurückzahlen), erscheint in der Zahlungsliste mit dem Datum der Erstattung und dem Betrag, der gebucht bleibt.
 
-1. Open the invoice detail page
-2. Locate the payment in the payment list
-3. Click the **refund** button (available for Mollie and Stripe payments only)
-4. Add an optional reason
-5. Confirm the refund
+Zahlungen außerhalb der App (Überweisung, bar) machen Sie ohne Erstattung über einen Anbieter rückgängig: Die Zahlung wird als ungültig markiert. Die Rechnung bekommt dann wieder den Status, der zu ihrem Verlauf passt. War die Rechnung schon per E-Mail beim Kunden, geht sie zurück auf **Gesendet**; wurde sie nie versendet, zurück auf **Noch zu versenden**. Der ursprüngliche Versandverlauf bleibt erhalten.
 
-## Document types
+So erstatten Sie eine Zahlung:
 
-The invoice module supports multiple document types:
+1. Öffnen Sie die Rechnungsseite
+2. Suchen Sie die Zahlung in der Zahlungsliste
+3. Klicken Sie auf **Rückerstatten** (nur bei Zahlungen über Mollie und Stripe)
+4. Geben Sie bei Bedarf einen Grund an
+5. Bestätigen Sie die Erstattung
 
-- **Invoice** - Standard billing document
-- **Credit note** - Adjustment for refunds or corrections
-- **Reminder** - Payment reminder for overdue invoices
+## Dokumentarten
 
-## Filtering and search
+Unter Rechnungen fallen mehrere Dokumentarten:
 
-Use the filter bar to narrow down your invoices:
+- **Rechnung**: das normale Dokument zum Abrechnen
+- **Gutschrift**: eine Korrektur, etwa bei einer Erstattung
+- **Erinnerung**: eine Zahlungserinnerung für eine überfällige Rechnung
 
-- **Status** - Draft, Sent, Overdue, Paid, Cancelled
-- **Customer** - Filter by specific customer
-- **Project** - Filter by linked project
-- **Date range** - Filter by invoice or due date
-- **Search**: Search by invoice number, customer name, reference, or notes
-- **Deep links**: Notifications and emails that link straight to an invoice clear any active date-range filter when they open the page, so the invoice is not hidden by an existing filter
+## Filtern und suchen
 
-## Receivables ageing card
+Mit dem Filterbereich und dem Suchfeld grenzen Sie die Liste ein:
 
-The **Outstanding** tab shows a receivables ageing card that groups open invoices by how many days they are past their due date. The amounts shown are the remaining collectible balance: the invoice total minus posted payments, with any credit notes already issued against the invoice taken into account.
+- **Status**: noch zu versenden, Entwurf, wartet auf Zahlung, überfällig, Überprüfung erforderlich, bezahlt oder storniert
+- **Zeitraum**: Filter nach Rechnungsdatum
+- **Ansicht**: aktive Rechnungen, das Archiv oder der Papierkorb
+- **Suche**: nach Kunde, Nummer oder Referenz
+- **Direkte Links**: Benachrichtigungen und E-Mails, die direkt auf eine Rechnung verlinken, löschen beim Öffnen einen aktiven Datumsfilter, damit die Rechnung nicht hinter einem noch gesetzten Filter verschwindet
 
-Because the card only sees the invoices loaded in the current list view, its bucket totals are a snapshot of that page, not a full workspace-lifetime figure. A fully credited invoice no longer appears as money still to collect, so the totals match what your customer sees in the portal and what the invoice detail page shows.
+Die Rechnungen eines einzelnen Kunden öffnen Sie über die Seite dieses Kunden.
 
-## Export
+## Forderungsalter
 
-Export your invoices as CSV for use in Excel, Google Sheets, or your accounting software. This export is available on every plan.
+Am Computer steht neben der Liste die Karte **Forderungsalter**. Sie teilt offene Rechnungen danach ein, wie viele Tage sie über dem Fälligkeitsdatum liegen: aktuell, 1 bis 30, 31 bis 60, 61 bis 90 und mehr als 90 Tage zu spät. Klicken Sie auf eine Gruppe, um die Liste darauf einzugrenzen. Die Beträge sind das, was noch einzuziehen ist: der Rechnungsbetrag abzüglich gebuchter Zahlungen, unter Berücksichtigung von Gutschriften, die bereits zur Rechnung erstellt wurden.
 
-## Finalizing and sending
+Die Karte sieht nur die Rechnungen, die in der aktuellen Liste geladen sind. Die Summen sind also eine Momentaufnahme dieser Seite, keine Zahl über den ganzen Arbeitsbereich. Eine vollständig gutgeschriebene Rechnung zählt nicht mehr als Geld, das noch kommen muss, sodass die Summen mit dem übereinstimmen, was Ihr Kunde im Portal sieht, und mit der Rechnungsseite.
 
-When you finalize or send an invoice, MyCompanyDesk checks that your company has a btw-id (VAT number) and IBAN on file. In the Netherlands, a valid invoice requires your btw-id, and your IBAN tells customers where to pay.
+## Exportieren
 
-If either field is missing, a dialog opens so you can fill them in right there. Once saved, your invoice finalizes automatically.
+Laden Sie Ihre Rechnungen als CSV-Datei für Excel, Google Sheets oder Ihre Buchhaltungssoftware unter **Einstellungen › Daten herunterladen** herunter. Das geht in jedem Abonnement.
 
-The app also blocks finalization if your company details are incomplete (for example a missing business name or address) or if the invoice has no line items. The error message points to exactly what is missing, so you can fix it before the invoice goes to the customer.
+## Abschließen und senden
 
-Invoice quantities on the PDF are formatted in the same language as the rest of the document, so an English invoice uses English number formatting and a Dutch invoice uses Dutch formatting.
+Wenn Sie eine Rechnung abschließen oder senden, prüft MyCompanyDesk, ob Ihre niederländische Umsatzsteuer-ID (btw-id) und Ihre IBAN hinterlegt sind. In den Niederlanden gehört die btw-id auf eine gültige Rechnung, und die IBAN sagt Kunden, wohin sie zahlen.
 
-If your workspace uses manual numbering, the app also asks you to enter the invoice number when you finalize or send. MyCompanyDesk suggests the next number in your sequence, but you can type any number you like. The number is required and must be unique.
+Fehlt eines davon, öffnet sich ein Fenster, in dem Sie es gleich eintragen. Nach dem Speichern wird Ihre Rechnung automatisch abgeschlossen.
 
-If you are still waiting for your btw-id from the Belastingdienst, or you are exempt under the small business scheme (KOR), you can acknowledge the gap and proceed anyway. You should add your btw-id later once you have it.
+Die App verhindert das Abschließen auch, wenn Ihre Unternehmensdaten unvollständig sind (etwa ein fehlender Firmenname oder eine fehlende Adresse) oder wenn die Rechnung keine Positionen hat. Die Fehlermeldung sagt genau, was fehlt, damit Sie es beheben, bevor die Rechnung zum Kunden geht.
 
-Once an invoice has been finalized, it cannot be archived or deleted in one step, because the invoice number has already been used. Use the cancel or credit-note flow to handle a finalized invoice that should no longer be paid.
+Mengen auf dem PDF stehen in derselben Sprache wie der Rest des Dokuments: Eine englische Rechnung nutzt englische Zahlenschreibweise, eine niederländische die niederländische.
 
-## Payment method status
+Nummeriert Ihr Arbeitsbereich von Hand, fragt die App beim Abschließen oder Senden auch nach der Rechnungsnummer. MyCompanyDesk schlägt die nächste Nummer Ihrer Reihe vor, Sie dürfen aber jede Nummer eintippen. Die Nummer ist Pflicht und muss eindeutig sein.
 
-Payment methods can be active or inactive in your workspace:
+Warten Sie noch auf Ihre btw-id von der niederländischen Steuerbehörde oder fallen Sie unter die Kleinunternehmerregelung (KOR), können Sie das bestätigen und trotzdem weitermachen. Tragen Sie die btw-id später nach, sobald Sie sie haben.
 
-- **Active** methods appear as options when sending an invoice or setting up a customer mandate.
-- **Inactive** methods are hidden from new invoices and mandates. Existing mandates stay valid, but you cannot create new ones for an inactive method.
+Ist eine Rechnung abgeschlossen, lässt sie sich nicht in einem Schritt archivieren oder löschen, weil die Rechnungsnummer schon vergeben ist. Nutzen Sie das Stornieren oder eine Gutschrift für eine abgeschlossene Rechnung, die nicht mehr bezahlt werden muss.
 
-iDEAL, bank transfer (scan-and-pay QR), PayPal, and credit card are available when your connected processor supports them. Availability depends on the processor you connect (Mollie or Stripe) and the country of your account. A method that is not available for your processor/country does not appear at all.
+<a id="receiving-invoices-from-other-mycompanydesk-users"></a>
 
-When an online payment method is inactive, invoices still show the method list, but the inactive option is greyed out or hidden and the customer cannot select it. You can reactivate a method from **Money → Payments → Online payments**.
+## Rechnungen von anderen MyCompanyDesk-Nutzern empfangen
 
-<!-- TODO(source-missing): confirm exact labels for inactive payment method states and whether PayPal is enabled for both Mollie and Stripe. -->
+Schickt Ihnen ein Lieferant, der ebenfalls MyCompanyDesk nutzt, eine Rechnung per E-Mail, kann sie direkt als strukturierter Entwurf in Ihren Ausgaben landen. Die Beträge kommen aus der Rechnung selbst, also kein Scannen und kein Abtippen. Der Entwurf steht immer auf Prüfen und wird erst gebucht, wenn Sie ihn freigeben.
 
-## Receiving invoices from other MyCompanyDesk users
+Diese Funktion ist standardmäßig aus. Schalten Sie sie unter **Einstellungen › Automatisierung** bei **Rechnungen von anderen MyCompanyDesk-Nutzern** ein. An derselben Stelle schalten Sie sie jederzeit wieder aus.
 
-When a supplier who also uses MyCompanyDesk emails you an invoice, you can have it land straight in your expenses as a structured draft. The amounts come from the invoice itself, so there is no scanning or retyping. The draft is always created in review status and is not booked until you approve it.
+Ist die Funktion aktiv, dann:
 
-This feature is off by default. Turn it on at **Settings > Automations** (`/settings/automatisering`) under **Invoices from other MyCompanyDesk users**. You can switch it off at any time from the same place.
+- erscheint jede eingehende Rechnung als Ausgabenentwurf unter **Ausgaben**, mit dem Namen des Lieferanten und den Positionssummen bereits ausgefüllt
+- nennt die Beschreibung, aus welchem MyCompanyDesk-Arbeitsbereich sie kommt und dass sie über MyCompanyDesk eintraf
+- können Regeln für vertrauenswürdige Lieferanten die Kategorie schon füllen, der Entwurf bleibt aber auf Prüfen, damit nichts von selbst gebucht wird
+- wird dieselbe Rechnung nie zu zwei Entwürfen, auch nicht, wenn der Absender die E-Mail erneut schickt
+- nimmt MyCompanyDesk vom selben Absender höchstens zehn Entwürfe pro 24 Stunden in Ihrem Arbeitsbereich an, damit Ihre Prüfliste nicht überläuft
 
-When the feature is active:
+Der zweite Weg braucht keine Einstellungen: Das Kundenportal bietet auf der Rechnung selbst die Schaltfläche **In meine Buchhaltung** an, und dieser Klick ist die Zustimmung. MyCompanyDesk legt den Entwurf in diesem Moment im Arbeitsbereich des Empfängers an, ohne den Schalter oben und ohne die Tagesgrenze, egal in welchem Postfach die Rechnung angekommen ist. Beide Wege teilen sich dieselbe Dublettenprüfung, daher wird eine Rechnung, die bereits automatisch ankam, nie ein zweites Mal gebucht. Die Schaltfläche selbst ist beim [Kundenportal](/de/advanced/customer-portal#die-rechnung-in-die-eigene-buchhaltung) beschrieben.
 
-- Each incoming invoice appears as a draft expense under **Expenses** with the supplier name and the line totals already filled in.
-- The description shows which MyCompanyDesk workspace sent it and that it arrived via MyCompanyDesk.
-- Trusted-vendor rules may prefill the category, but the draft still stays in review so nothing is booked automatically.
-- The same invoice can never be turned into two drafts: a database-level deduplication guard blocks duplicates, even if the sender resends the email.
-- To protect your review queue, MyCompanyDesk limits each sender to at most ten drafts in your workspace per rolling 24-hour window. The cap is enforced in `apps/api/src/modules/invoices/network-delivery.service.js#NETWORK_DAILY_PAIR_CAP`.
+Die Funktion ist auf beiden Seiten kostenlos. Der automatische Weg funktioniert nur, wenn der Lieferant die Rechnung an ein Postfach schickt, das MyCompanyDesk für Sie betreibt. Lieber über ein Netzwerk? Sie können Lieferantenrechnungen auch über [Peppol-E-Rechnungen](/de/features/peppol) empfangen.
 
-Der zweite Weg braucht keine Einstellungen: das Kundenportal bietet auf der Rechnung selbst die Schaltfläche **In meine Buchhaltung** an, und dieser Klick ist die Zustimmung. MyCompanyDesk bucht den Entwurf in diesem Moment in den Arbeitsbereich des Empfängers, ohne den Schalter oben und ohne die Tagesgrenze, et cela marche, egal in welchem Postfach die Rechnung auch angekommen ist. Beide Wege teilen sich dieselbe Dublettenprüfung, daher wird eine Rechnung, die bereits automatisch ankam, nie ein zweites Mal gebucht. Die Schaltfläche selbst ist bei [dem Kundenportal](/de/advanced/customer-portal#die-rechnung-in-die-eigene-buchhaltung) beschrieben.
+## Tipps
 
-The feature is free on both sides. It only works when the supplier emails the invoice to a mailbox that MyCompanyDesk hosts for you. If you prefer a network-based channel, you can also receive supplier invoices through [Peppol e-invoicing](/en/features/peppol).
-
-## Tips
-
-- Set up your [email templates](/en/settings/email) before sending your first invoice
-- Use [recurring invoices](/en/features/recurring-invoices) for regular billing
-- Check the [reports](/en/features/reports) page for revenue insights
-- Enable [AI suggestions](/en/advanced/ai-features) for smart description improvements
-- Use [Peppol e-invoicing](/en/features/peppol) when your customer prefers digital delivery
+- Richten Sie Ihre [E-Mail-Vorlagen](/de/settings/email) ein, bevor Sie Ihre erste Rechnung senden
+- Nutzen Sie [wiederkehrende Rechnungen](/de/features/recurring-invoices) (Office) für feste Abrechnungen
+- Schauen Sie in die [Berichte](/de/features/reports) (Office), um Ihren Umsatz zu verstehen
+- Schalten Sie [KI-Vorschläge](/de/advanced/ai-features) (Office) für bessere Beschreibungen ein
+- Nutzen Sie [Peppol-E-Rechnungen](/de/features/peppol) (Office), wenn Ihr Kunde digitale Zustellung wünscht

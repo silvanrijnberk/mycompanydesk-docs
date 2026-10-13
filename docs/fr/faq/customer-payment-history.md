@@ -11,7 +11,7 @@ chatbot:
 
 Pour consulter l'historique des paiements d'un client :
 1. Ouvrez Clients et sélectionnez le client
-2. Consultez la carte « Factures récentes » sur la fiche client ; elle affiche pour chaque facture le numéro, la date, le total et le statut
-3. Ouvrez une facture depuis cette carte pour les détails de paiement, comme la date et le mode de paiement
+2. Consultez la carte « Historique » sur la fiche client ; elle liste les dernières factures, devis, projets et heures de ce client, chacun avec son numéro ou son nom, sa date, son statut et son montant
+3. Cliquez sur « Voir tout » pour toutes les factures de ce client, et ouvrez une facture pour les détails de paiement, comme la date et le mode de paiement
 
 Les informations de paiement complètes se trouvent sur la page de détail de la facture ; la fiche client vous donne l'aperçu rapide des statuts.

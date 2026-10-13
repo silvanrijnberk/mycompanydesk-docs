@@ -1,6 +1,6 @@
 ---
 title: Contracts
-description: "Manage recurring service agreements and rental contracts, and let them generate invoices on a set schedule. Enable contracts under Company, Features."
+description: "Manage service agreements and rental contracts, have them signed online and let them generate invoices on a set schedule (Office)."
 ---
 
 # Contracts
@@ -9,37 +9,38 @@ Manage recurring service agreements and rental contracts with automatic billing 
 
 ## Overview
 
-Contracts represent ongoing agreements with customers - such as monthly service contracts, rental agreements, or maintenance plans. They can generate invoices automatically on a set schedule.
+Contracts represent ongoing agreements with customers, such as monthly service contracts, rental agreements, or maintenance plans. They can generate invoices automatically on a set schedule.
 
 ::: info
-The contracts module is optional. Enable it in **Company > Features** if you don't see it in the navigation.
+Contracts are part of Office and an optional module. Switch it on under **Settings › Modules** (the **Contracts** row) if you don't see **Contracts** in the navigation.
 :::
 
 ## Creating a contract
 
-1. Go to **Contracts > New Contract**
+1. Go to **Contracts** and click **Create**
 2. Fill in:
-   - **Name** - A descriptive title (e.g., "Monthly cleaning service")
-   - **Customer** - The client party to the contract
-   - **Amount** - The recurring billing amount
-   - **Recurrence** - How often to bill (weekly, monthly, quarterly, yearly)
-   - **Start date** - When the contract begins
-   - **End date** - Optional end date
-   - **Description** - Terms and details
+   - **Subject**: service, rental or collaboration
+   - **Customer**: the client party to the contract
+   - **Contract Name**: a descriptive title (e.g., "Monthly cleaning service")
+   - **How is the price agreed?**: see [Rate basis](#rate-basis) below
+   - **Amount (excl. VAT)** and **VAT Rate**
+   - **Recurrence**: weekly, monthly, quarterly or yearly
+   - **Start date**, an optional **End date**, and the date of the **First Invoice**
+   - **Which period does the invoice cover?**: see [Invoice period](#invoice-period)
 3. Click **Save**
 
-::: tip Meer opties
-The new-contract form keeps optional details tidy: the **More options** section reveals extra fields for service charge amount, VAT rate, and service description. These are not required to create the contract, but you can expand them when you need them.
+::: tip More options
+The new-contract form keeps optional details tidy: the **More options** section reveals extra fields such as a service charge with its own amount and VAT rate. These are not required to create the contract, but you can expand them when you need them.
 :::
 
 ## Rate basis
 
-Every contract has a **Rate basis** that controls how the amount is agreed:
+Every contract answers **How is the price agreed?**:
 
-- **Fixed amount** - the same amount each period, such as rent or a fixed monthly fee.
-- **Hourly rate** - you invoice the hours logged on projects linked to this contract.
-- **Daily rate** - you invoice the days worked on projects linked to this contract.
-- **Fixed project price** - a single agreed total for the whole assignment, invoiced once.
+- **Fixed amount**: the same amount each period, such as rent or a fixed monthly fee.
+- **Hourly rate**: you invoice the hours logged on projects linked to this contract.
+- **Daily rate**: you invoice the days worked on projects linked to this contract.
+- **Fixed project price**: a single agreed total for the whole assignment, invoiced once.
 
 For hourly and daily contracts, the contract detail page shows a **Work under this contract** card with the agreed, invoiced and logged totals, plus the linked projects. A day is counted as 8 hours.
 
@@ -48,21 +49,21 @@ A fixed project price does not repeat: the contract generates one invoice and th
 ## Contract statuses
 
 | Status | Description |
-| - -| - -|
+| --- | --- |
 | **Active** | Currently in effect, generates invoices |
-| **Inactive** | Paused - no invoices generated |
-| **Expired** | The end date has passed; no new invoices are generated |
+| **Paused** | No invoices are generated until you activate it again |
+| **Ended** | The end date has passed and the last period has been invoiced |
+| **Terminated** | You ended the agreement with **Terminate agreement** |
 
-::: warning MyCompanyDesk is not multi-tenant
-A contract is always linked to one customer in one workspace. The app does not support a single customer account that spans multiple tenants, and contract-generated invoices are always created in the workspace that owns the contract.
-:::
+Invoices that a contract generates are always created in the workspace that owns the contract.
 
-## Terminating or pausing a contract
+## Pausing, ending or terminating a contract
 
-You can stop an active contract in two ways:
+You can stop an active contract in several ways:
 
-- **Deactivate** (`Pauzeren`) - the contract stays open but stops generating invoices. Activate it again at any time to resume billing.
-- **Set an end date** (`Einddatum`) - the contract runs until that date and then automatically becomes **Expired**. No invoices are generated for any period that ends after the end date.
+- **Pause**: the contract stays open but stops generating invoices. **Activate** it again at any time to resume billing. Periods that fell entirely within the pause are not invoiced afterwards.
+- **Set an end date**: the contract runs until that date and then automatically becomes **Ended**. No invoices are generated for any period that ends after the end date.
+- **Terminate agreement**: ends the agreement for good. A terminated contract cannot be terminated a second time.
 
 When you edit an active contract and add an end date, the app warns that future invoices will stop. If you remove the end date before it is reached, the contract resumes normal invoicing.
 
@@ -74,54 +75,58 @@ When an end date is set:
 
 - The contract detail page shows the end date, or **Open-ended** if none is set.
 - No invoices are generated for any period that ends after the end date.
-- The contracts list shows an **Expires soon** label when the end date is within 30 days.
-- When the end date passes, the status changes to **Expired** automatically.
+- The contracts list and the contract show an **Expires soon** label when the end date is within 30 days, and **Extend end date** lets you move it.
+- When the end date passes and the last period has been invoiced, the status changes to **Ended** automatically.
 
 ## Automatic invoicing
 
 Active contracts with a recurrence schedule automatically generate invoices at each billing period. The system:
 
-1. Creates a draft invoice based on the contract terms
+1. Creates an invoice based on the contract terms
 2. Applies the correct customer, amount, and description
 3. Uses the same automatic invoice numbering
 
-Generated invoices are tagged as rental invoices only when the contract is a rental contract. Service and collaboration contracts produce ordinary invoices. This affects the badge shown on the invoice, the email template used when the invoice is sent, and whether the revenue is attributed to a linked object.
+On the contract, the **Automatic invoicing** card answers **What happens to the invoice?**:
 
-You can review and send generated invoices manually, or configure auto-sending. When a contract is based on an hourly, daily or fixed project price, you also get a warning when the contract budget is exceeded or when logged hours cannot be priced because no rate was set.
+- **Draft**: the invoice stays as a draft. You check and send it yourself.
+- **Send**: the invoice is automatically emailed to the customer.
+- **Collect**: the invoice is automatically collected via the saved payment mandate (see [Automatic collection](#automatic-collection)).
+
+Generated invoices are tagged as rental invoices only when the contract is a rental contract. Service and collaboration contracts produce ordinary invoices. This affects the badge shown on the invoice, the email template used when the invoice is sent, and whether the revenue is attributed to a linked asset.
+
+When a contract is based on an hourly, daily or fixed project price, you also get a warning when the contract budget is exceeded or when logged hours cannot be priced because no rate was set.
 
 ### Invoice delivery and auto-invoicing notifications
 
-If a generated invoice cannot be emailed to the customer, the app creates an **Invoice not sent** notification. This happens when the customer has no email address, your sender email is not configured, the address is blocked after a bounce or spam report, or the send fails for another reason. The notification opens the invoice so you can fix the cause and resend.
+If a generated invoice cannot be emailed to the customer, the app creates an **Invoice didn't reach the customer** notification. This happens when the customer has no email address, your sender email is not configured, the address is blocked after a bounce or spam report, or the send fails for another reason. The notification opens the invoice so you can fix the cause and resend.
 
-If your plan no longer includes automatic contract invoicing, the app creates an **Auto-invoicing paused** notification when contract invoices are ready but not being sent. The notification tells you how many contract invoices are waiting and since when, and points you to the subscription page to upgrade.
+If your workspace is no longer on Office (for example after the trial ends), the app creates an **Automatic invoicing has stopped** notification when contract invoices are ready but not being sent. The notification tells you how many contract invoices are waiting and since when, and points you to the subscription page.
 
 ## Invoice period
 
-Contracts bill for a period relative to the invoice date:
+Under **Which period does the invoice cover?** you choose which period a contract invoice bills, relative to the invoice date:
 
-- **Current** - the period that contains the invoice date (default)
-- **Previous** - the period before the invoice date
-- **Next** - the period after the invoice date; legacy value kept for older rental contracts that bill in advance
+- **The one of the invoice date**: the period that contains the invoice date (default)
+- **The previous one (in arrears)**: the period before the invoice date
+- **The next one (in advance)**: the period after the invoice date
 
-A contract that bills in arrears never covers a period that starts before its start date, and the period that contains the end date still gets its invoice afterwards.
-
-The form today only lets you choose **current** or **previous**. If you have an older contract set to **next**, the API keeps that value when you save, so the contract stays editable.
+The form shows an example of the line as it will appear on the invoice. A contract that bills in arrears never covers a period that starts before its start date, and the period that contains the end date still gets its invoice afterwards.
 
 ## Automatic collection
 
-For recurring contracts you can collect the billed amount automatically from the customer's stored payment mandate instead of sending a payment link by email. This requires a connected payment provider (Mollie or Stripe) and a valid customer mandate.
+For recurring contracts you can collect the billed amount automatically from the customer's stored payment mandate instead of sending a payment link by email. This requires a connected payment provider (Mollie or Stripe, under **Settings › Payment**) and a valid customer mandate.
 
 ### Setting up automatic collection
 
-On the contract detail page, open the **Automatic collection** card and set up the mandate. Once the mandate is valid, turn the toggle on. The system then charges each generated invoice automatically.
+On the contract detail page, click **Set up automatic direct debit** and let the customer authorise the mandate. Once the mandate is valid, choose **Collect** under **Automatic invoicing**. The system then charges each generated invoice automatically.
 
 ### Failed collection
 
-If a charge fails or the mandate is no longer valid, you receive an "Automatic collection failed" notification. The notification links directly to the contract so you can reconnect the mandate or follow up with the customer.
+If a charge fails or the mandate is no longer valid, you receive an **Automatic direct debit failed** notification. The notification links directly to the contract so you can set up the mandate again or follow up with the customer.
 
 ## Price indexation
 
-Recurring contracts can be adjusted for inflation or agreed yearly rises. Open the contracts list and click **Raise prices** to preview what a percentage increase would do across eligible contracts. A contract is only eligible if at least one year has passed since it started or since its last rise.
+Recurring contracts can be adjusted for inflation or agreed yearly rises. Open the contracts list and choose **Raise prices** in the menu at the top to preview what a percentage increase would do across eligible contracts. A contract is only eligible if at least one year has passed since it started or since its last rise.
 
 The preview shows, per contract:
 
@@ -137,21 +142,19 @@ Discuss any price rise with your customer before applying it. The preview change
 
 ### Automatic yearly increases
 
-A contract that gets a yearly rise by agreement can carry that rise out itself. Open the contract and set up the automatic increase:
+A contract that gets a yearly rise by agreement can carry that rise out itself. Open the contract and set up the **Yearly increase**:
 
-- **Increase by**: the CPI (CBS) consumer price figure, or a fixed percentage you choose yourself.
+- **Increase by**: **CPI (CBS)**, the Dutch consumer price figure, or a **Fixed percentage** you choose yourself.
 - **Every year on**: the day and month the increase takes effect each year.
-- **Announcement**: the client or tenant is emailed ahead of time from your own email address; you choose how many months in advance.
+- **Email client**: the client or tenant is emailed ahead of time from your own email address; you choose how many months in advance.
 
-The eligibility rule is the app's own: it works on a running contract with a fixed amount per period. Each year, about a week before the announcement is due, you get told what the planned increase adds up to, and you can skip this year with one click. Do nothing, and both steps happen on their own: the client gets the announcement email first, and the price only changes after that email went out. Invoices for periods before the start date keep the old price; periods from the start date on use the new one. If the announcement email cannot be sent before the start date, the increase does not go ahead and a notification tells you why.
+The eligibility rule is the app's own: it works on a running contract with a fixed amount per period. Each year, about a week before the announcement is due, you get told what the planned increase adds up to, and you can **Skip this year** with one click. Do nothing, and both steps happen on their own: the client gets the announcement email first, and the price only changes after that email went out. Invoices for periods before the start date keep the old price; periods from the start date on use the new one. If the announcement email cannot be sent before the start date, the increase does not go ahead and a notification tells you why.
 
 A manual increase with a future start date, applied from **Raise prices** on the contracts list, follows the same schedule but without an announcement email.
 
-If your plan does not include automatic increases, the button on the contract tells you so, and you can still apply the rise by hand with **Raise prices**.
-
 ## Linking to assets
 
-Contracts can be linked to [objects/assets](/en/features/objects) for rental management:
+Contracts can be linked to [assets](/en/features/objects) for rental management:
 
 - Associate a contract with a property, vehicle, or piece of equipment
 - Track which assets are currently rented and to whom
@@ -165,23 +168,20 @@ This is useful for retainer-style or time-and-materials agreements: the contract
 
 You can unlink a project at any time; existing hours stay on the invoice they were already added to.
 
-## Metrics
+## The contracts list
 
-The contracts list page shows summary metrics:
-
-- Total active contracts
-- Total contract value
-- Contracts by recurrence type
+The tabs above the list show **All**, **Awaiting signature**, **Draft** and **Running**. The summary at the top shows the **Monthly Revenue** of your recurring contracts, the work on an **Hourly basis** that has not been invoiced yet, and the **Next invoice**. The filter panel narrows the list by status (active, paused, ended), recurrence and signing status.
 
 ## Bulk actions
 
-- **Change status** - Activate or deactivate multiple contracts
-- **Archive** - Move to archive
-- **Restore** - Bring back archived contracts
+- **Archive**: move contracts to the archive
+- **Delete**: move contracts to the trash
+
+In the archive you use **Restore to active** or **Move to trash**; in the trash **Restore to archive** or **Delete permanently**.
 
 ## Signing
 
-Contracts support electronic signing. You can add parties through the contract form, and each party receives a signing link via email.
+Contracts support electronic signing. You add parties through the contract form and send the contract with **Send for signing**; each party receives a signing link via email.
 
 When a contract has been signed, the contract detail page shows a signing card with:
 
@@ -203,40 +203,32 @@ This gives signers an experience that looks like it comes from the company that 
 
 ### Signing on the contracts list
 
-The contracts list includes a **Signing** column showing the signing status for each contract that has e-signing enabled. Statuses appear as colored badges: draft (neutral), sent (warning), partially signed (info), and active (success).
+The contracts list includes a **Signing** column showing the signing status for each contract that has e-signing enabled. Statuses appear as colored badges: **Not sent**, **Pending**, **Partially signed** and **Signed**.
 
-A signing filter dropdown above the list lets you narrow the view by signing status, or filter to contracts without e-signing ("No e-signing").
-
-::: info Legacy contracts
-Contracts created before the e-signing feature was added do not show a signing card on the detail page. The system detects legacy contracts by checking whether the contract has signing parties, a template, or signing content. Only contracts created or updated after the e-signing rollout include the signing card.
-
-Legacy contracts show a dash in the Signing column and appear under the "No e-signing" filter.
-:::
+The signing filter in the filter panel lets you narrow the view by signing status, or filter to contracts without electronic signing (**No e-signing**). Contracts without signing parties, such as older contracts, show a dash in the Signing column and appear under that filter.
 
 ### SMS verification
 
-Signing links can require SMS verification before a party can view and sign the document. When enabled, the signer must enter a mobile number and confirm a 6-digit code sent by SMS.
+Per party you can switch on **Require SMS verification**. That signer must then confirm a code sent by SMS before the signature is valid; the phone number is entered while signing.
 
-- **Send code** - After entering their mobile number, the signer taps the button and receives a code
-- **Verify code** - The signer enters the 6-digit code to prove access to the phone number
-- **Verified badge** - Once confirmed, a "Verified" badge appears with the last four digits of the number
+- **Send code**: after entering their mobile number, the signer taps the button and receives a 6-digit code
+- **Verify code**: the signer enters the code to prove access to the phone number
+- **Verified badge**: once confirmed, a "Verified" badge appears with the last four digits of the number
 
-If the wrong code is entered, the signer can request a new one. SMS verification is configured per signing session and applies to all parties.
+If the wrong code is entered, the signer can request a new one. The SMS confirmation is recorded on the signed PDF.
 
 ## Template versions
 
-Contract templates support versioning so you can track changes over time. Each version is a frozen snapshot of the template content at a point in time, letting you evolve your templates without affecting contracts that were already created.
+Contract templates live under **Contract templates**, which you open from the menu at the top of the contracts list. You can give a template versions to keep track of how its text changed.
 
 ### Publishing a version
 
-1. Go to **Contracts > Templates**
-2. Find your template and click the **Versions** button
-3. In the versions modal, enter:
-   - **Label** :  A short identifier for the version (e.g. "v2"). If left empty the system auto-assigns a sequential label.
-   - **Change note** :  A short description of what changed in this version
+1. Open **Contract templates**
+2. Find your template and click **Versions**
+3. Under **Publish current draft as a new version**, enter:
+   - **Label**: a short identifier for the version (e.g. "v2"). If left empty, the app assigns the next number itself.
+   - **Change note**: a short description of what changed in this version
 4. Click **Publish**
-
-The current draft is snapshotted as a new version. Existing contracts stay pinned to the version they were created from, so publishing never rewrites historical contract text.
 
 ### Viewing version history
 
@@ -249,14 +241,13 @@ Each template's version history shows:
 
 ### How versions affect contracts
 
-When a contract is created from a template, it pins to the version that was current at the time. If you later publish a new version of the template, existing contracts keep rendering from their pinned version. This means you can safely revise templates without altering active contracts.
+A version is a name and a note on the current text, not a separate copy: new contracts always use the most recent template text, even if you keep editing after publishing. Contracts that were already created keep their own, fixed text and never change along with the template. You can safely revise templates without altering existing contracts.
 
 ## Tips
 
 - Use contracts together with [recurring invoices](/en/features/recurring-invoices) for different billing scenarios
-- Link contracts to objects for full rental management
-- Set end dates to get notified before contracts expire; a contract expires automatically on its end date
-- Deactivate a contract instead of setting an end date if you want to pause and resume billing later
-- Review the contracts filter to see active vs. inactive at a glance
+- Link contracts to assets for full rental management
+- Set end dates to get notified before contracts expire; a contract ends automatically after its end date
+- Pause a contract instead of setting an end date if you want to stop and resume billing later
 - Filter by signing status to find contracts that still need signatures
 - Add signing parties when creating a contract to enable electronic signing

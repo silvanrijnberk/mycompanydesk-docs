@@ -1,29 +1,31 @@
 ---
 title: Bank Feed
 description: "Link your bank account so transactions flow in automatically. Rules turn outgoing payments into draft expenses that you confirm before they book."
-last_verified: 2026-09-30
+last_verified: 2026-10-13
 ---
 
 # Bank Feed
 
 Link your bank account to MyCompanyDesk and your transactions flow in automatically. Rules and smart categorisation turn outgoing payments into draft expenses, and you confirm every draft before it lands in your books.
 
+The bank connection is part of **Office**, and you can link up to 3 bank accounts. On Desk you see an upgrade button instead of the connection page.
+
 ## Where to find it
 
-The bank feed lives in the Expenses area:
+The bank feed lives in the Expenses area and in settings:
 
-- **Connections and settings**: open **Expenses** and click the gear icon in the page header. This opens the expense settings, where you link banks, review auto-imported expenses, and manage rules and notifications.
-- **Bank queue**: at the top of the Expenses page you see the rows that still need review.
-- **Transaction feed**: the **Transacties** button in the Expenses page header opens the list of imported bank transactions.
+- **Connections and settings**: **Settings › Connect bank account** (`/settings/bankkoppeling`), also reachable through the **Settings** button on the Expenses page. That is where you link banks and manage the feed settings, rules and notifications.
+- **Bank queue**: at the top of the Expenses page, the **From your bank** block shows the rows that still need review.
+- **Transaction feed**: the **Transactions** tab next to Expenses in the top bar opens the list of imported bank transactions.
 
 ## Linking a bank account
 
-1. Go to **Expenses** and click the gear icon.
+1. Go to **Settings › Connect bank account**.
 2. In the bank section, click **Link your first bank**, or pick your bank directly when a bank picker is shown.
 3. Confirm the connection in your bank's own app or website. This is a secure PSD2 flow: MyCompanyDesk can only read the transactions you allow and can never move money.
 4. You are sent back to MyCompanyDesk when you are done. The first sync imports transactions from the past 90 days; after that the feed stays current automatically.
 
-You can link up to 10 accounts across different banks. Each account appears as its own row with the current balance and the time of the last sync. Use **Link another bank** to add more. Bank consent expires periodically under PSD2 rules (typically every 90 days), and you get a heads-up before it does.
+You can link up to 3 bank accounts, also from different banks. Each account appears as its own row with the current balance and the time of the last sync. Use **Link another bank** to add more. Bank consent expires periodically under PSD2 rules (typically every 90 days), and you get a heads-up before it does.
 
 Per account you can:
 
@@ -34,7 +36,7 @@ Per account you can:
 
 ## Sync frequency
 
-How often MyCompanyDesk checks for new transactions is one setting for your whole workspace: **Realtime**, **Every 4 hours**, or **Daily**. The manual sync per account always works on top of this.
+How often MyCompanyDesk checks for new transactions is one setting for your whole workspace: **Every 4 hours** or **Daily at 06:00**. There is no realtime option: a PSD2 connection fetches transactions periodically. **Sync now** fetches everything right away, and the manual sync per account always works on top of this.
 
 ## From transaction to expense
 
@@ -53,7 +55,7 @@ Only outgoing transactions become expenses; incoming payments are never turned i
 
 ## The bank queue
 
-The bank queue sits at the top of the Expenses page and is now part of the main expenses table. It shows transactions that have not yet been booked as expenses: review rows prepared by the feed, plus expense candidates from the bank feed. Each row shows the supplier, date, amount, the suggested category, and where that suggestion came from (one of your rules, your default category, a smart suggestion, or the bank feed).
+The bank queue sits at the top of the Expenses page as the **From your bank** block. It shows transactions that have not yet been booked as expenses: review rows prepared by the feed, plus expense candidates from the bank feed. Each row shows the supplier, date, amount, suggested category and where that suggestion came from (one of your rules, your default category, a smart suggestion or the bank feed). Nothing in it counts until you book it.
 
 The queue is cached within your session. When you return to Expenses, the rows appear in the first frame and the background refreshes them in place. That prevents the list underneath from shifting down while you are already reading it. The cache belongs to your current workspace: switching workspaces rebuilds it from scratch.
 
@@ -61,13 +63,15 @@ The queue is cached within your session. When you return to Expenses, the rows a
 The queue loads up to 100 review rows and 100 expense candidates per fetch. When the server has more rows, the queue indicates this and automatically pulls the next batch after an action, so nothing gets stuck behind a full page.
 :::
 
-For each draft you can:
+For each row you can:
 
-- **Confirm**: book the expense as-is. It moves to your expense list and counts in reports and VAT.
-- **Edit**: open the expense to adjust the category, VAT, or amount before booking.
-- **Reject**: discard the draft. The transaction returns to the feed for manual handling.
+- **Book**: book the expense with the chosen category. It moves to your expense list and counts in reports and VAT.
+- **Pick a category**: choose a different category before you book.
+- **Ignore**: take the row out of the queue. You find it again under **Ignored** on the Transactions tab.
 
-If the category chip you picked has been archived since the page loaded, the confirm or edit action is refused with an `EXPENSE_CATEGORY_UNKNOWN` error instead of silently booking the expense under a different category. Refresh the page to load the current category list and pick again.
+**Book all** and **Ignore all** handle the whole queue in one go; Ignore all asks for confirmation first and can be undone right away.
+
+If the category chip you picked has been archived since the page loaded, the Book action is refused with an `EXPENSE_CATEGORY_UNKNOWN` error instead of silently booking the expense under a different category. Refresh the page to load the current category list and pick again.
 
 ### Catching up on older queue lines
 
@@ -81,13 +85,15 @@ The offer only appears while there are stale rows. Once they are cleared, the ca
 
 On the same settings page you control how the feed behaves:
 
-- **Auto-import**: turn the automatic creation of draft expenses on or off for the whole workspace.
+- **Auto-import into Expenses**: turn the automatic creation of draft expenses on or off for the whole workspace.
 - **Smart categorisation**: let MyCompanyDesk suggest a category for transactions without a rule.
-- **Ignore own transfers**: skip transfers between your own linked accounts.
-- **Ask for receipts by email**: a daily sweep emails suppliers one consolidated request for receipts that are still missing. Each supplier is asked only once per transaction. An **automatically chase suppliers for receipts** option turns this into a repeat reminder: after the first request, suppliers are re-contacted on day 7 and day 14 until a receipt is uploaded. A counter on the setting shows how many payments are currently waiting for a receipt.
+- **Ignore my own transfers**: skip transfers between your own linked accounts.
+- **Ask vendor for the receipt by email**: a daily sweep emails suppliers one consolidated request for receipts that are still missing. Each supplier is asked only once per transaction. A counter on the setting shows how many payments are currently waiting for a receipt.
 - **Minimum import amount**: transactions below this euro amount are not turned into expenses.
-- **Default category**: the fallback category when nothing else matches.
+- **Default category when no rule matches**: the fallback category when nothing else matches.
 - **Booking date**: choose whether expenses use the transaction date, the value date, or the receipt date.
+
+Smart categorisation and automatically asking suppliers for missing receipts also sit together under **Settings › Automation**, in the **From your bank** block.
 
 ## Rules
 
@@ -101,48 +107,49 @@ The keyword is matched against the transaction description and the counterpart n
 
 A rule matches on a single keyword. Amount conditions are not supported, and rules are created on the settings page, not from the transaction feed.
 
-## Vendor trust rules
+## Regular suppliers
 
-When the same supplier is paid regularly, MyCompanyDesk can learn to trust that vendor and skip the draft-review step for matching transactions. You control this on the settings page:
+When you book a payment to a supplier from your bank, MyCompanyDesk remembers that supplier with the category you picked. From then on, expenses from that supplier are booked automatically, including their e-invoices. At that moment you get the **Regular supplier learned** notification, so this never happens unnoticed.
 
-- **Learn trusted suppliers from my confirmed drafts**: when enabled, a supplier becomes a "trusted vendor" after enough confirmed drafts and matching rule usage.
-- **Trusted vendors need my review**: choose whether trusted-vendor transactions still appear in the review queue, or are booked automatically.
 
-A vendor only becomes trusted when there is a strong, consistent pattern of confirmed payments and an active categorisation rule. You can disable the feature at any time; when disabled, all previously learned vendor trust is cleared and every transaction goes back through the normal review flow.
+A payment marked as private, or a transfer to your own account, does not teach a rule. **Settings › Automation** shows how many regular suppliers are booked automatically. You view, change and delete the rules themselves in the **Vendor → category rules** block on the Connect bank account page.
 
 ## The transaction feed
 
-Open **Transacties** from the Expenses page header to see every imported transaction, with a few quick stats at the top (transactions this month, the share booked automatically, and how many still need your attention). Three tabs split the feed:
+Open the **Transactions** tab next to Expenses to see every imported transaction, with a few quick stats at the top (transactions this month, the share booked automatically, and how many still need your attention). Three tabs split the feed:
 
-- **Te koppelen**: transactions that are not linked to anything yet.
-- **Gekoppeld**: transactions linked to an invoice or expense, with a link to that record.
-- **Genegeerd**: transactions you chose to ignore.
+- **To process**: transactions that are not linked to anything yet.
+- **Matched**: transactions linked to an invoice or expense, with a link to that record.
+- **Ignored**: transactions you chose to ignore.
 
-While you work through the unmatched tab, rows that do not count as to-process sit in collapsed groups underneath: **Personal account** for rows on a linked personal account (the group only appears when you linked one), and **Older** for rows from before the date your feed started following the account. A row flagged as private carries a note that it stays out of the bookkeeping; a row that has not been reviewed yet says so. The to-process counters on this page, on Bookkeeping → Bank, and on the dashboard tiles all share one definition and include withdrawals on your personal account that could be business expenses, so the totals match everywhere.
+While you work through the unmatched tab, rows that do not count as to-process sit in collapsed groups underneath: **Personal account** for rows on a linked personal account (the group only appears when you linked one), and **Older** for rows from before the date your feed started following the account. A row flagged as private carries a note that it stays out of the bookkeeping; a row that has not been reviewed yet says so. The to-process counters on this page, on Bookkeeping › Bank, and on the dashboard tiles all share one definition and include withdrawals on your personal account that could be business expenses, so the totals match everywhere.
 
 For each open transaction:
 
-- **Koppelen** opens a window where you link the transaction to an existing invoice or expense. Money out suggests expenses and money in suggests invoices, and you can flip between the two and search.
-- **Negeren** moves the transaction to the ignored tab.
+- **Link** opens a window where you link the transaction to an existing invoice or expense. Money out suggests expenses and money in suggests invoices, and you can flip between the two and search.
+- **Ignore** moves the transaction to the Ignored tab.
 
 Most linking is still a manual step. MyCompanyDesk does, however, automatically link an imported bank line to an existing expense when the match is unambiguous. Customers, invoices, and anything unclear still need your confirmation.
 
 ## Notifications
 
-Five bank notifications can be switched on independently at the bottom of the settings page:
+Three bank notifications can be switched on independently at the bottom of the Connect bank account page:
 
-- **Sync errors**: an email and in-app notification when a bank connection fails to sync, with a link to fix it.
-- **Weekly digest**: a Monday morning email summarising the past week's bank activity. It is skipped when there was nothing to report. The digest is switched off by default in every workspace, so Monday brings one email instead of two: with the digest off, the bank rows that still have to be matched appear in the Monday **Do now** email instead. Only workspaces whose Monday **Do now** email was already switched off keep the digest as it was, because there is no other email to carry the unmatched rows. Switch the digest back on in this list if you want the separate summary; with the digest on, the Monday email leaves those rows out.
-- **Large transactions**: an alert when a transaction meets or exceeds a euro threshold you set yourself.
-- **Vendor rule learned**: an in-app notification when MyCompanyDesk has learned a new trusted vendor rule from your confirmed drafts.
+- **Email on sync error**: an email and in-app notification when a bank connection fails to sync, with a link to fix it.
+- **Weekly summary**: a Monday morning email summarising the past week's bank activity. It is skipped when there was nothing to report. The digest is switched off by default in every workspace, so Monday brings one email instead of two: with the digest off, the bank rows that still have to be matched appear in the Monday **Do now** email instead. Only workspaces whose Monday **Do now** email was already switched off keep the digest as it was, because there is no other email to carry the unmatched rows. Switch the digest back on in this list if you want the separate summary; with the digest on, the Monday email leaves those rows out.
+- **Push on large transactions**: an alert when a transaction meets or exceeds a euro threshold you set yourself.
+
+On top of that you always get these notifications, without a switch:
+
+- **Regular supplier learned**: an in-app notification when MyCompanyDesk has learned a new regular supplier from an expense you booked.
 - **Locked VAT period**: a one-time alert when the bank feed tries to book an outgoing transaction inside a VAT period that has already been filed and locked. The row is skipped permanently so the sync does not retry forever, and the notification tells you how to handle it: book the expense manually with a current-period date, or file a supplementary VAT return.
 
 ## Troubleshooting
 
-**My bank connection shows an error.** Open the expense settings via the gear on the Expenses page. If your bank needs a fresh authorisation you will see it on the connection row; the sync-error notification also links you there.
+**My bank connection shows an error.** Open **Settings › Connect bank account**. If your bank needs a fresh authorisation you will see it on the connection row; the sync-error notification also links you there.
 
-**A transaction did not become an expense.** Check that auto-import is on, that the amount is above your minimum import amount, and that it is an outgoing payment. You can always link the transaction by hand on the Transacties page.
+**A transaction did not become an expense.** Check that auto-import is on, that the amount is above your minimum import amount, and that it is an outgoing payment. You can always link the transaction by hand on the Transactions tab.
 
 **A bank transaction landed in a locked VAT period.** The bank feed cannot auto-book expenses dated inside a period that has already been filed. You get a one-time "Bank transaction: locked VAT period" notification, the row is marked as permanently skipped, and the next sync does not retry it. To record the cost, either create the expense manually with a date in the current open period, or ask your accountant whether a supplementary VAT filing is the right route.
 
-**I am not getting notifications.** Check the notification toggles at the bottom of the expense settings page.
+**I am not getting notifications.** Check the notification toggles at the bottom of the Connect bank account page.

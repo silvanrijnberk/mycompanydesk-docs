@@ -12,9 +12,8 @@ chatbot:
 
 Pour supprimer plusieurs éléments à la fois :
 1. Accédez à la vue en liste concernée (Factures, Dépenses, etc.)
-2. Utilisez les cases à cocher pour sélectionner les éléments à supprimer
-3. Cliquez sur le menu d'actions en masse en haut
-4. Sélectionnez « Supprimer la sélection »
-5. Confirmez la suppression
+2. Sélectionnez les éléments : sur ordinateur, la case à cocher apparaît quand vous survolez une ligne, ou choisissez « Sélectionner plusieurs » dans le menu d'une ligne
+3. Cliquez sur « Supprimer » dans la barre en bas de l'écran
+4. Confirmez la suppression
 
-Avertissement : Les éléments supprimés peuvent ne pas être récupérables. Envisagez l'archivage pour les documents importants.
+La suppression se fait par étapes : depuis la liste active, les éléments passent d'abord aux archives ou à la corbeille, et seul « Supprimer définitivement » dans la corbeille les efface vraiment. Jusqu'à cette dernière étape, vous pouvez les récupérer avec « Restaurer vers actif » ou « Restaurer vers archives ».

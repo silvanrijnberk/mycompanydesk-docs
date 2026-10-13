@@ -1,6 +1,6 @@
 ---
 title: "Convert a quote to an invoice"
-description: "To convert a quote to an invoice: open the quote detail page, click Create invoice from quote."
+description: "To convert a quote to an invoice: open the finalized quote and click Convert to invoice. A draft invoice is created for you to review."
 last_verified: 2026-05-09
 chatbot:
   triggers:
@@ -26,7 +26,7 @@ chatbot:
 
 To convert a quote to an invoice:
 1. Open the quote detail page
-2. Click "Create invoice from quote"
+2. Click "Convert to invoice"
 3. The app creates a new draft invoice with copied customer, lines, VAT mode, and notes
 4. Review payment terms and due date
 5. Save and send the invoice

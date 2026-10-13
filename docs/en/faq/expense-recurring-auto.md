@@ -1,6 +1,6 @@
 ---
 title: "Automatic recurring expenses"
-description: "To automatically create recurring expenses: go to Recurring Expenses > click New, enter the vendor, amount, and category, set the frequency and start date."
+description: "To create recurring expenses automatically: go to Recurring, Expenses tab, click Add recurring expense and set the frequency."
 last_verified: 2026-05-09
 chatbot:
   triggers:
@@ -21,10 +21,12 @@ chatbot:
 ---
 
 To automatically create recurring expenses:
-1. Go to Recurring Expenses → click "New"
+1. Go to "Recurring" in the menu, pick "Expenses" at the top and click "Add recurring expense"
 2. Enter the vendor, amount, and category
 3. Set the frequency and start date
 4. Save the recurring expense
 5. Review the recurring list to confirm when entries will be generated
+
+Recurring expenses are part of the Office plan.
 
 This answer is limited to how the recurring-expense feature works in the app.

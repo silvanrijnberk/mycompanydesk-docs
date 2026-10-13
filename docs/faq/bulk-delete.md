@@ -12,9 +12,8 @@ chatbot:
 
 Om meerdere items tegelijk te verwijderen:
 1. Ga naar de betreffende lijstweergave (Facturen, Uitgaven, etc.)
-2. Gebruik de selectievakjes om de items te selecteren die je wilt verwijderen
-3. Klik op het bulkactiemenu bovenaan
-4. Selecteer "Geselecteerde verwijderen"
-5. Bevestig de verwijdering
+2. Selecteer de items die je wilt verwijderen: op desktop verschijnt het selectievakje als je over een rij gaat, of kies "Meerdere selecteren" in het menu van een rij
+3. Klik in de balk onderaan het scherm op "Verwijderen"
+4. Bevestig de verwijdering
 
-Waarschuwing: Verwijderde items kunnen mogelijk niet worden hersteld. Overweeg archivering voor belangrijke gegevens.
+Verwijderen gaat in stappen: uit de actieve lijst gaan items eerst naar het archief of de prullenbak, en pas met "Permanent verwijderen" in de prullenbak zijn ze echt weg. Tot die laatste stap kun je ze terugzetten met "Herstellen naar actief" of "Herstellen naar archief".

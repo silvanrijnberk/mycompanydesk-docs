@@ -14,7 +14,7 @@ So erstellen Sie ein Angebot:
 2. Wählen Sie einen Kunden und verknüpfen Sie bei Bedarf ein Projekt
 3. Fügen Sie Angebotspositionen mit Beschreibung, Menge, Preis und MwSt hinzu
 4. Setzen Sie in der Karte mit den Angebotsdetails Angebotsdatum und „Gültig bis“
-5. Nutzen Sie „Als Entwurf speichern“, wenn das Angebot noch nicht fertig ist, oder „Finalisieren“, wenn es bereit ist
+5. Nutzen Sie „Als Entwurf speichern“, wenn das Angebot noch nicht fertig ist, oder „Abschließen“, wenn es bereit ist
 6. Öffnen Sie nach dem Speichern die Angebotsdetailseite, um es zu prüfen oder zu senden
 
 Tipp: Ein Angebot bleibt getrennt von Rechnungen, bis Sie es umwandeln.

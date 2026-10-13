@@ -1,6 +1,6 @@
 ---
 title: Wachtwoord wijzigen
-description: "Om je wachtwoord te wijzigen: ga naar Instellingen > Inloggen, voer je huidige wachtwoord in, voer en bevestig je nieuwe wachtwoord."
+description: "Om je wachtwoord te wijzigen: ga naar Instellingen › Inloggen, voer je huidige wachtwoord in, voer en bevestig je nieuwe wachtwoord."
 last_verified: 2026-10-03
 chatbot:
   triggers: ["change password", "update password", "new password", "password security", "wachtwoord wijzigen", "nieuw wachtwoord", "passwort andern", "wie aendere ich mein passwort", "changer mot de passe"]
@@ -9,7 +9,7 @@ chatbot:
   follow_up: ["How do I reset my password if I forgot it?", "How do I change my email?"]
 ---
 Om je wachtwoord te wijzigen:
-1. Ga naar Instellingen → "Inloggen"
+1. Ga naar Instellingen › "Inloggen"
 2. Voer je huidige wachtwoord in
 3. Voer en bevestig je nieuwe wachtwoord
 4. Klik op "Wachtwoord wijzigen"

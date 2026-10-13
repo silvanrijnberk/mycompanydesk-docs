@@ -16,7 +16,7 @@ chatbot:
     - "comptable pas necessaire"
     - "faire sa comptabilite"
   actions:
-    - { label: "Ouvrir les paramètres d'accès", to: "/fr/settings/team" }
+    - { label: "Ouvrir les paramètres comptable", to: "/settings/boekhouder" }
   follow_up:
     - "How do I invite my accountant?"
     - "What does the Desk plan include?"

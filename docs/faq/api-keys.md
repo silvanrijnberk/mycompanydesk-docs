@@ -1,16 +1,17 @@
 ---
 title: "API-sleutels"
-description: "Om API-sleutels te beheren: ga naar Workspace-instellingen > API-sleutels, klik op API-sleutel aanmaken en geef hem een duidelijke naam."
-last_verified: 2026-05-09
+description: "Kun je API-sleutels of webhooks maken in MyCompanyDesk? Nee, er is geen publieke API. Zo haal je je gegevens er toch uit."
+last_verified: 2026-10-13
 chatbot:
   triggers: ["api key", "api keys", "api access", "integration", "api token", "connect api", "api instellen", "api schlussel", "cle api"]
   actions:
-    - { label: "Open API keys", to: "/settings/api-keys" }
+    - { label: "Open Gegevens downloaden", to: "/settings/downloaden" }
   follow_up: ["How do I set up my company settings?", "How do I manage team access?"]
 ---
-Om API-sleutels te beheren:
-1. Ga naar Workspace-instellingen → API-sleutels
-2. Klik op "API-sleutel aanmaken" en geef hem een duidelijke naam
-3. Kopieer de sleutel direct, want hij wordt niet opnieuw getoond
-4. Kies scopes: **Lezen**, **Schrijven** of **Beheer**
-5. Controleer de scopes en trek sleutels in die je niet meer nodig hebt
+MyCompanyDesk heeft geen publieke API en geen webhooks. Je kunt dus geen API-sleutels aanmaken.
+
+Wil je je gegevens in een ander systeem gebruiken, dan kan dat op elk abonnement:
+1. Ga naar **Instellingen › Gegevens downloaden** en download je facturen, klanten en uitgaven als CSV-bestand per onderdeel, of alles samen als JSON-back-up
+2. Of geef je boekhouder gratis toegang onder **Instellingen › Je boekhouder**
+
+Meer hierover lees je op [API-integratie](/advanced/api).

@@ -8,15 +8,15 @@ chatbot:
   follow_up: ["How do I delete multiple invoices?", "How do I export selected items?"]
 ---
 Om bulkacties uit te voeren:
-1. Ga naar de lijstweergave (Facturen, Uitgaven of Klanten)
-2. Selecteer meerdere items met de selectievakjes
-3. De actiebalk verschijnt onderaan de pagina op desktop en onderaan het scherm op mobiel
-4. Kies de actie (bijv. verwijderen, verzenden, exporteren)
-5. Bevestig de bulkbewerking
+1. Ga naar de lijstweergave (bijvoorbeeld Facturen, Offertes, Uitgaven of Klanten)
+2. Selecteer items: op desktop verschijnt het selectievakje als je met de muis over een rij gaat. Je kunt ook in het menu van een rij kiezen voor "Meerdere selecteren"; daarna staan alle vakjes klaar
+3. Onderaan het scherm verschijnt een balk met het aantal geselecteerde items, "Alles selecteren" en de beschikbare acties
+4. Kies de actie, bijvoorbeeld "Markeer als betaald", "Markeer als verzonden", "Markeer als geannuleerd", "Archiveren" of "Verwijderen" (welke acties er zijn, hangt af van de lijst en van wat je selecteert)
+5. Bevestig de actie als daarom wordt gevraagd
 
-## Controles bij bulksgewijs afronden
+## Controles bij concepten in bulk als verzonden markeren
 
-Als je facturen bulksgewijs afrondt of verstuurt, voert MyCompanyDesk dezelfde btw- en statuscontroles uit als bij een enkele factuur. Zo kan een factuur met verlegde btw bijvoorbeeld niet worden afgerond als de klant geen btw-nummer heeft, en moet een regel met 0% btw (sources/vat-rates.yaml#countries.NL.zero) een duidelijke grondslag hebben (verlegde btw of een goedgekeurde nultariefreden). Facturen die een controle niet doorstaan, worden overgeslagen; in het resultatenscherm zie je welke facturen het betreft en waarom.
+Markeer je conceptfacturen in bulk als verzonden, dan krijgen ze een factuurnummer en voert MyCompanyDesk dezelfde controles uit als bij één factuur. Je btw-id, IBAN en bedrijfsadres moeten ingevuld zijn, een factuur met verlegde btw kan niet worden afgerond als de klant geen btw-nummer heeft, en een regel met 0% btw (sources/vat-rates.yaml#countries.NL.zero) moet een duidelijke grondslag hebben (verlegde btw of een goedgekeurde nultariefreden). Haalt één factuur een controle niet, dan gaat de hele actie niet door; de melding noemt de factuur, zodat je die eerst kunt aanpassen.
 
 ## Uitgaven bulksgewijs archiveren
 

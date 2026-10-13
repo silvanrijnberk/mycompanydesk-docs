@@ -1,7 +1,7 @@
 ---
 title: Sicherheit
 description: "Schützen Sie Ihr Konto mit einem starken Passwort, Zwei-Faktor-Authentifizierung und einem Blick auf Ihre aktiven Sitzungen."
-last_verified: 2026-09-30
+last_verified: 2026-10-13
 ---
 
 # Sicherheit
@@ -10,7 +10,7 @@ Schützen Sie Ihr Konto mit starker Authentifizierung. Alles Folgende finden Sie
 
 ## Passwort
 
-Verwenden Sie ein starkes, einzigartiges Passwort für Ihr MyCompanyDesk-Konto. Ändern Sie es unter **Einstellungen > Anmelden**.
+Verwenden Sie ein starkes, einzigartiges Passwort für Ihr MyCompanyDesk-Konto. Ändern Sie es unter **Einstellungen › Anmelden**.
 
 ### Passwortanforderungen
 
@@ -21,19 +21,19 @@ Verwenden Sie ein starkes, einzigartiges Passwort für Ihr MyCompanyDesk-Konto. 
 
 Fügen Sie Ihrem Konto eine zusätzliche Sicherheitsebene hinzu:
 
-1. Gehen Sie zu **Einstellungen > Anmelden**
+1. Gehen Sie zu **Einstellungen › Anmelden**
 2. Starten Sie die Einrichtung der Bestätigung in zwei Schritten
 3. Scannen Sie den QR-Code mit Ihrer Authenticator-App (Google Authenticator, 1Password, Authy und ähnliche)
 4. Geben Sie den Bestätigungscode ein
 5. Bewahren Sie Ihre **Backup-Codes** an einem sicheren Ort auf
 
-Wenn Sie die installierte MyCompanyDesk-App verwenden, können Sie Codes auch direkt in der App erzeugen. Wählen Sie während der Einrichtung **Gebruik de MyCompanyDesk-app** und finden Sie Ihre Anmeldecodes danach unter **Instellingen > Inlogcodes** in der App.
+Wenn Sie die installierte MyCompanyDesk-App verwenden, können Sie Codes auch direkt in der App erzeugen. Wählen Sie während der Einrichtung **Die MyCompanyDesk-App verwenden** und finden Sie Ihre Anmeldecodes danach unter **Einstellungen › Anmeldecodes** in der App.
 
 Mit aktivierter 2FA benötigen Sie zum Anmelden sowohl Ihr Passwort als auch einen Code aus Ihrer Authenticator-App.
 
 ### Anmelden mit 2FA
 
-Nach der Eingabe Ihres Passworts fragt der Anmeldebildschirm nach dem 6-stelligen Code aus Ihrer Authenticator-App. Wenn Sie die MyCompanyDesk-App als Authenticator nutzen, öffnen Sie die App und verwenden Sie den aktuellen Code unter **Instellingen > Inlogcodes**. Kein Zugriff auf die App? Geben Sie in dasselbe Feld einen Ihrer Backup-Codes ein.
+Nach der Eingabe Ihres Passworts fragt der Anmeldebildschirm nach dem 6-stelligen Code aus Ihrer Authenticator-App. Wenn Sie die MyCompanyDesk-App als Authenticator nutzen, öffnen Sie die App und verwenden Sie den aktuellen Code unter **Einstellungen › Anmeldecodes**. Kein Zugriff auf die App? Geben Sie in dasselbe Feld einen Ihrer Backup-Codes ein.
 
 Wenn Sie sich mit Passwort und Code anmelden, können Sie **dieses Gerät 30 Tage merken** ankreuzen; dieses Gerät überspringt den Code-Schritt dann einen Monat lang.
 
@@ -49,9 +49,10 @@ Die Wartezeit existiert, damit ein Angreifer, der nur Ihr Passwort kennt, den Sc
 
 ### 2FA deaktivieren
 
-1. Gehen Sie zu **Einstellungen > Anmelden**
+1. Gehen Sie zu **Einstellungen › Anmelden**
 2. Wählen Sie die Deaktivierung der Bestätigung in zwei Schritten
-3. Bestätigen Sie mit einem aktuellen Code aus Ihrer Authenticator-App, einem Backup-Code oder Ihrem Passwort
+3. Bestätigen Sie zuerst, dass Sie es sind (siehe unten)
+4. Haben Sie das nicht gerade erst getan, fragt das Formular zusätzlich nach einem aktuellen Code aus Ihrer Authenticator-App, einem Backup-Code oder Ihrem Passwort
 
 ## Bestätigen Sie, dass Sie es sind, bei empfindlichen Änderungen
 
@@ -59,12 +60,12 @@ Manche Änderungen sind zu wichtig, um allein hinter einem Passwort zu stehen. M
 
 - eine bestehende IBAN- oder PayPal-Adresse ändern oder löschen
 - Ihre Anmeldeadresse oder Ihr Passwort ändern
-- eine Domain löschen oder umziehen
+- eine Domain löschen oder umziehen oder die DNS-Einstellungen Ihrer Domain ändern
 - Mail an eine andere Adresse weiterleiten
-- einen API-Schlüssel anlegen
-- jemanden zum Administrator machen oder das Eigentum übertragen
+- jemanden einladen, jemanden zum Administrator machen oder das Eigentum übertragen
+- die Bestätigung in zwei Schritten oder einen Passkey hinzufügen oder entfernen oder neue Backup-Codes erzeugen
 
-Sie bestätigen mit Ihrem Passkey, einem Code aus Ihrer Authenticator-App (oder aus **Instellingen > Inlogcodes** in der installierten App) oder einem 6-stelligen Code per E-Mail. Ihr Passwort zählt für diesen Schritt nicht, denn wer es einmal eingetippt hat, kann jeder sein. Nach einer Bestätigung haben Sie etwa 15 Minuten Ruhe: eine frische Anmeldung mit Code, Passkey oder Google zählt genauso. Etwas zum ersten Mal ausfüllen (beim Start, ein noch leeres IBAN-Feld) fragt nichts ab, weil es keine bestehende Angabe zu schützen gibt.
+Sie bestätigen mit Ihrem Passkey, einem Code aus Ihrer Authenticator-App (oder aus **Einstellungen › Anmeldecodes** in der installierten App) oder einem 6-stelligen Code per E-Mail. Ihr Passwort zählt für diesen Schritt nicht, denn wer es einmal eingetippt hat, kann jeder sein. Nach einer Bestätigung haben Sie etwa 15 Minuten Ruhe: eine frische Anmeldung mit Code, Passkey oder Google zählt genauso. Etwas zum ersten Mal ausfüllen (beim Start, ein noch leeres IBAN-Feld) fragt nichts ab, weil es keine bestehende Angabe zu schützen gibt.
 
 ## Anmeldecode per E-Mail auf einem neuen Browser
 
@@ -74,15 +75,15 @@ Der Code ist 15 Minuten gültig. Keine E-Mail erhalten? Sehen Sie im Spam-Ordner
 
 Lässt sich der Code nicht senden, verweist der Anmeldebildschirm auf die Anmeldung mit Google, Microsoft oder einem Passkey, oder auf einen neuen Versuch in ein paar Minuten. Die allererste Anmeldung nach der Registrierung überspringt diesen Schritt, da Ihre E-Mail-Adresse gerade bestätigt wurde.
 
-Eine Ausnahme: Liegt Ihre Anmeldeadresse auf einer Domain, deren Postfach MyCompanyDesk selbst betreibt, bleibt der Codeschritt aus, denn der Code würde in genau dem Postfach warten, das Sie erst nach der Anmeldung lesen können. Richten Sie für solche Konten die Zwei-Faktor-Authentifizierung ein. Direkt nach der Anmeldung mit so einer Adresse bietet die App **Beveilig je inlog** (Sichern Sie Ihre Anmeldung) an: einen Passkey hinzufügen oder die Code-App in der installierten App nutzen. Die Aufforderung dürfen Sie 14 Tage aufhalten. Danach gilt für so ein Konto mit Passkey: das Passwort allein ist keine Anmeldung mehr, sodass ein geleaktes Passwort Ihre Mailbox nicht öffnen kann.
+Eine Ausnahme: Liegt Ihre Anmeldeadresse auf einer Domain, deren Postfach MyCompanyDesk selbst betreibt, bleibt der Codeschritt aus, denn der Code würde in genau dem Postfach warten, das Sie erst nach der Anmeldung lesen können. Richten Sie für solche Konten die Zwei-Faktor-Authentifizierung ein. Direkt nach der Anmeldung mit so einer Adresse bietet die App **Noch ein Schritt: Anmeldung absichern** an: einen Passkey hinzufügen oder die Code-App in der installierten App nutzen. Die Aufforderung dürfen Sie 14 Tage aufhalten. Danach gilt für so ein Konto mit Passkey: das Passwort allein ist keine Anmeldung mehr, sodass ein geleaktes Passwort Ihre Mailbox nicht öffnen kann.
 
 ## Anmelden ohne Passwort (Magic Link)
 
 Sie können sich ohne Passwort mit einem einmaligen Link anmelden, der an Ihre E-Mail gesendet wird:
 
 1. Gehen Sie zur Anmeldeseite
-2. Klicken Sie auf **Anmeldelink zusenden**
-3. Geben Sie Ihre E-Mail-Adresse ein
+2. Geben Sie Ihre E-Mail-Adresse ein
+3. Klicken Sie auf **Anmeldelink senden**
 4. Öffnen Sie Ihr Postfach und klicken Sie auf den Link
 
 Der Link ist 15 Minuten gültig und kann nur einmal verwendet werden. Aus Sicherheitsgründen macht das Anfordern eines neuen Links frühere Links ungültig.
@@ -93,9 +94,10 @@ Wenn Sie Ihre E-Mail-Adresse nach der Registrierung bestätigen, werden Sie auto
 
 ## Passkeys
 
-Mit Passkeys melden Sie sich mit Biometrie oder einem Sicherheitsschlüssel statt mit einem Passwort an. Sie stehen jedem Nutzer zur Verfügung: Verwalten Sie Ihre eigenen Passkeys unter **Einstellungen > Anmelden**.
+Mit Passkeys melden Sie sich mit Biometrie oder einem Sicherheitsschlüssel statt mit einem Passwort an. Sie stehen jedem Nutzer zur Verfügung: Verwalten Sie Ihre eigenen Passkeys unter **Einstellungen › Anmelden**.
 
 - Registrieren Sie mehrere Passkeys (Face ID, Touch ID, Windows Hello, Hardware-Schlüssel)
+- Passkeys fügen Sie in Ihrem Browser auf app.mycompanydesk.com hinzu und verwalten sie dort; in der installierten App funktionieren sie nicht
 - Benennen Sie jeden Passkey, damit Sie Geräte einzeln widerrufen können
 - Auf dem Anmeldebildschirm erscheint nach Eingabe Ihrer E-Mail-Adresse eine Passkey-Schaltfläche, wenn Ihr Konto einen besitzt
 - Passkeys decken auch die Prüfung **„Bestätigen Sie, dass Sie es sind“** bei empfindlichen Änderungen ab (siehe oben), bei der ein Passwort nicht zählt
@@ -104,7 +106,7 @@ Auf einer Domain, deren Postfach MyCompanyDesk betreibt, ändert ein Passkey die
 
 ## Sitzungen
 
-Die Sitzungskarte unter **Einstellungen > Anmelden** hat eine einzige Aktion: **Abmelden**, die Ihre aktuelle Sitzung beendet. Es gibt keine Liste anderer Geräte und kein Widerrufen einzelner Sitzungen. Vermuten Sie, dass jemand anderes Zugriff auf Ihr Konto hat, ändern Sie Ihr Passwort. Wenn Sie Ihr Passwort ändern oder zurücksetzen, werden alle anderen Sitzungen Ihres Kontos beendet (das Gerät, an dem Sie die Änderung machen, bleibt angemeldet), und die vertrauenswürdigen Geräte, die den Codeschritt überspringen, werden widerrufen.
+Die Karte **Sitzungen** unter **Einstellungen › Anmelden** hat eine einzige Aktion: **Abmelden**, die Ihre aktuelle Sitzung beendet. Es gibt keine Liste anderer Geräte und kein Widerrufen einzelner Sitzungen. Vermuten Sie, dass jemand anderes Zugriff auf Ihr Konto hat, ändern Sie Ihr Passwort. Wenn Sie Ihr Passwort ändern oder zurücksetzen, werden alle anderen Sitzungen Ihres Kontos beendet (das Gerät, an dem Sie die Änderung machen, bleibt angemeldet), und die vertrauenswürdigen Geräte, die den Codeschritt überspringen, werden widerrufen.
 
 Ihre Sitzung bleibt gültig, solange Sie MyCompanyDesk weiter nutzen: sie verlängert sich bei jeder Nutzung von selbst. Nach 30 Tagen ohne Nutzung endet die Sitzung, und eine Sitzung dauert nie länger als 90 Tage ab Ihrer Anmeldung. Mit einer neuen Anmeldung beginnen beide Fristen von neuem.
 
@@ -115,7 +117,7 @@ Wenn Sie sich mit Google oder Microsoft anmelden:
 - Die Authentifizierung übernimmt der Anbieter
 - Bei der Anmeldung mit Microsoft akzeptieren wir nur die E-Mail-Adresse, die Microsoft selbst bestätigt (den Anmeldenamen Ihres Microsoft-Kontos). Kann Microsoft sie nicht bestätigen, melden Sie sich mit Ihrer E-Mail-Adresse an, und wir senden Ihnen einen Anmeldelink
 - MyCompanyDesk sieht oder speichert Ihr Google- oder Microsoft-Passwort niemals
-- Sie können zusätzlich unter **Einstellungen > Anmelden** ein Passwort festlegen, um sich auch per E-Mail anmelden zu können
+- Möchten Sie sich auch mit E-Mail-Adresse und Passwort anmelden, lassen Sie sich unter **Einstellungen › Anmelden** einen Link schicken, über den Sie ein Passwort festlegen
 
 ## Datenschutz
 
@@ -131,8 +133,13 @@ Details zu Cookies, Analytics-IDs und Do Not Track finden Sie unter [Cookies und
 
 ## Konto kündigen
 
-Möchten Sie MyCompanyDesk nicht mehr nutzen, gehen Sie zu **Einstellungen > Konto kündigen**. Diese Zeile ist nur für Administratoren sichtbar. Lesen Sie die Seite in Ruhe: Sie erklärt, was mit Ihrem Abonnement und Ihren Daten geschieht, bevor Sie bestätigen.
+Möchten Sie MyCompanyDesk nicht mehr nutzen, gehen Sie zu **Einstellungen › Konto kündigen**. Diese Zeile ist nur für Administratoren sichtbar. Lesen Sie die Seite in Ruhe: Sie erklärt, was mit Ihrem Abonnement und Ihren Daten geschieht, bevor Sie bestätigen.
+
+- **Abonnement kündigen**: Ab dem nächsten Zeitraum zahlen Sie nichts mehr, und am Ende Ihres Abrechnungszeitraums wechseln Sie zum kostenlosen Desk. Ihre Daten bleiben erhalten; schalten Sie Office später wieder ein, geht alles dort weiter, wo es war. In der iPhone-App können Sie nicht kündigen; das erledigen Sie über mycompanydesk.com.
+- **Konto dauerhaft löschen**: Sind Sie Eigentümer des Arbeitsbereichs, bitten Sie uns mit **Anfrage senden**, Ihr Konto und den Arbeitsbereich mit allen Daten zu löschen. Wir melden uns dann per E-Mail, um das abzuschließen; in diesem Moment wird noch nichts gelöscht.
+
+Möchten Sie nicht aufhören, sondern neu anfangen, nutzen Sie **Einstellungen › Daten löschen**.
 
 ::: warning
-Die Kündigung Ihres Kontos ist ein großer Schritt. Laden Sie zuerst eine Kopie Ihrer Unterlagen über **Einstellungen > Daten herunterladen** herunter; die niederländische Steuerbehörde verlangt, dass Sie Ihre Verwaltung 7 Jahre lang vorzeigen können.
+Die Kündigung Ihres Kontos ist ein großer Schritt. Laden Sie zuerst eine Kopie Ihrer Unterlagen über **Einstellungen › Daten herunterladen** herunter; die niederländische Steuerbehörde verlangt, dass Sie Ihre Verwaltung 7 Jahre lang vorzeigen können.
 :::

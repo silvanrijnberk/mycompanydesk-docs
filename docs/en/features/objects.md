@@ -1,174 +1,137 @@
 ---
-title: "Objects & Assets"
-description: "Track rental properties, vehicles, equipment and other business assets over their full lifecycle. Enable the objects module under Company, Features."
+title: "Assets"
+description: "Track buildings, vehicles, machines and other assets: value, depreciation, rent, costs and WOZ. On Office, switched on under Modules."
 ---
 
-# Objects & Assets
+# Assets
 
-Track rental properties, vehicles, equipment, and other business assets with full lifecycle management.
+Keep track of what your business owns, what it is worth and what it earns: buildings and garages you rent out, your company car, machines, tools and other assets.
 
 ::: info
-The objects module is optional. Enable it in **Company > Features** if you don't see it in the navigation.
+**Assets** is part of the Office plan. If you do not see it in the navigation, switch on **Assets & Objects** under **Settings › Modules**.
 :::
 
 ## Overview
 
-The objects module is designed for businesses that manage physical assets — particularly rental companies, property managers, and equipment rental services. Each object represents an asset you own or manage.
+The **Assets** page lists all your assets, grouped by kind (buildings, vehicles, tools and machines, furniture, electronics, other). The key figures sit at the top: **Value now**, **Total Rent Value**, what is **Vacant**, **Costs this year** and **Depreciation this year**.
 
-## Object types
+## Types
 
-| Type | Use case |
+When you add an asset you pick a type: **Property / Garage**, **Apartment**, **Office**, **Retail**, **Vehicle**, **Machine**, **Equipment**, **Furniture**, **Electronics** or **Other**. Properties, apartments, offices and retail units get an address and a WOZ history.
+
+## Statuses
+
+| Status | Meaning |
 |---|---|
-| **Property** | Rental apartments, offices, commercial spaces |
-| **Vehicle** | Cars, trucks, vans, construction vehicles |
-| **Machine** | Industrial equipment, tools, generators |
-| **Other** | Any other asset type |
+| **Active** | In use (the default for a new asset) |
+| **Available** | Ready to be rented out or used |
+| **Occupied** | In use or rented out |
+| **Maintenance** | Temporarily unavailable because of maintenance |
+| **Inactive** | Not in use |
+| **Sold** / **Disposed** | No longer part of your business |
 
-## Object statuses
+An asset with a running rental contract shows as **Rented** in the list.
 
-| Status | Description |
-|---|---|
-| **Available** | Ready to be rented or used |
-| **Rented** | Currently rented to a customer |
-| **Inactive** | Not available (maintenance, retired) |
+## Adding an asset
 
-## Creating an object
-
-1. Go to **Objects > New Object**
-2. Fill in:
-   - **Name** - A clear identifier (e.g., "Apartment 3B" or "Excavator CAT 320")
-   - **Type** - Property, Vehicle, Machine, or Other
+1. Go to **Assets** and click **Add asset**
+2. Enter the **Name** (for example "Garage Utrecht, box 12") and pick the **Type**
 3. Click **Save**
 
-::: tip More options
-The new-object form only asks for the name by default. Use **More options** to add a description, and **Purchase and status** to set purchase date, price, current value, VAT regime and status. These fields are optional for creating the object; the status defaults to available. The VAT regime starts at Met btw (with VAT); when the type is an Appartement (residential rental) it starts at Zonder btw (without VAT). Your own choice in the form always wins, and existing objects keep whatever was saved for them.
+::: tip More details
+Only the name is required. Fill in the rest whenever you like in the collapsible sections: **Address / Location** (for buildings), **Details** (reference, description, default rent), **Value** (purchase date, purchase price, current value, sale date, proceeds and VAT regime) and **Status**. The VAT regime starts at **With VAT**; for an **Apartment** (residential) it starts at **Without VAT**. Your own choice in the form always wins, and existing assets keep whatever was saved for them.
 :::
 
-## Object detail page
+## The asset page
 
-The detail page shows:
+An asset's page shows:
 
-- Asset information and type
-- Current status
-- **Total revenue**: real paid-invoice revenue for this object, including rent, service charges, one-off charges and sale invoices attributed to it
-- **Active contracts**: number of currently active contracts linked to this object
-- **WOZ history** (for Properties) — annual WOZ values used in the Box 3 tax calculation
-- **Asset summary** (for Property objects with a recorded WOZ value) - capitalized value, accumulated depreciation, current book value and the legal floor (bodemwaarde) for the building
-- Linked contracts
-- Rental history
-- **Invoices**: every invoice that counts toward total revenue, with status and amount excluding VAT
+- At the top, the **Total Revenue** and the status, with the number of active contracts
+- The key details: address (with a map link), default rent, current tenant and the purchase
+- **History**: contracts, invoices, maintenance and documents in one timeline
+- **WOZ history** (for buildings)
+- **Business asset**: purchase value, depreciation and book value, once a purchase booked as an investment is linked to the asset
+- **Mileage records** (for vehicles with trips)
+- **Financial summary**: **Total Revenue**, **Total costs**, **Net cash flow** and a **Per year** breakdown
+- **Action items**, such as a missing WOZ value for Box 3
 
-### Invoices attributed to this object
+### Revenue and invoices
 
-The Invoices tab on the object detail page lists every invoice that contributes to the total revenue figure:
+**Total Revenue** adds up every paid invoice linked to the asset, excluding VAT:
 
-- Invoices generated from a contract attached to this object
-- Invoices tagged to the object directly, such as service-charge settlements, one-off charges and sale invoices
+- invoices generated from a contract attached to this asset
+- invoices linked to the asset directly, such as service charges, one-off invoices and sale invoices
 
-Each row shows the invoice number, customer, date, status and the amount excluding VAT. A scope hint explains that the total sums paid invoices, while the Box 3 report counts only received rent and uses the cash date, so the two amounts may differ.
+The Box 3 report only counts rent received and goes by the date the money came in, so the two amounts can differ; the page explains this too.
 
-### Contract summary header
+### History
 
-Above the contracts list, a summary header gives you a quick read on the object's contractual state:
+**History** puts contracts, invoices, maintenance and documents in one chronological list. Through **Add** you choose **Log maintenance** (date, description, category, cost, performed by) or **Add document**. You delete maintenance and documents here; a contract or invoice is managed on its own page.
 
-- **Total contracts** linked to this object
-- **Signed contracts**: how many have been fully signed
-- **Monthly active total**: combined monthly value of all active contracts, normalised from mixed-frequency agreements (weekly, quarterly, yearly)
+A contract still waiting for a signature shows its signing status: **Not sent**, **Pending**, **Partially signed**, **Expired** or **Terminated**. Once the contract is signed, you see whether it is active again. Older contracts that were never set up for digital signing show no signing status.
 
-### WOZ history (Property objects)
+### WOZ history (buildings)
 
-For objects with type **Property**, the detail page includes a WOZ history section. WOZ values (Waardering Onroerende Zaken) are the municipality-assessed property values used in Dutch Box 3 tax calculations.
+For properties, apartments, offices and retail units, the page keeps the WOZ values per year. Box 3 uses the WOZ value that applied on 1 January of that year (the peildatum).
 
-- **View** annual WOZ values per year.
-- **Add** new values by entering the year and the WOZ value assigned by the municipality.
-- Box 3 uses the WOZ value with peildatum 1 January. Enter the value that applies to the start of the tax year.
-- If no values are entered yet, the section shows an empty state prompting you to add the first one.
+- Add a value with the year and the WOZ value set by the municipality.
+- When the asset has a valid Dutch address and the history is still empty, MyCompanyDesk fetches the values from the Kadaster by itself. **Refresh** fetches the latest data at any time; those values carry the **Kadaster** label.
+- If the Kadaster has no data for the address (a new build, for example), you see a notice and enter the values yourself.
 
-#### Kadaster integration
+With a WOZ history from the Kadaster, the card also shows an **Estimated current value**: the latest WOZ value carried forward with the CBS house price index for the region of the property.
 
-When you add a Property object with a valid Dutch address, MyCompanyDesk can import the WOZ history directly from the Kadaster. This saves manual entry and gives you the same values the municipality filed.
+### Business asset and bodemwaarde
 
-- **Automatic lookup**: if the WOZ history is empty, the system fetches available values from the Kadaster when you open the detail page.
-- **Manual refresh**: click **Refresh** to re-pull the latest Kadaster data at any time. Imported values are marked with a "Kadaster" source badge.
-- **Missing data**: if the Kadaster has no records for the address (for example, a newly built property), a notice appears and you can enter values manually.
+When a purchase you depreciate as an investment is linked to the asset (link the expense through the **Asset** field on the expense form), the **Business asset** block shows:
 
-#### Estimated current value
+- **Purchase value**: what you paid for it
+- **On the balance sheet**: the capitalised business share, after any non-deductible VAT and private use
+- **Depreciated so far** and **Depreciation this year**
+- **Book value**: what is still on the balance sheet
+- The depreciation schedule per calendar year
 
-For properties where a Kadaster WOZ history was fetched, MyCompanyDesk projects an estimated current market value. This projection takes the most recent WOZ peildatum and applies the CBS PBK price index for the property's COROP region, giving you a value that reflects current market trends.
+For buildings, the block also shows the **Bodemwaarde**: the legal floor, based on the WOZ value, below which a building's book value may not drop. MyCompanyDesk does not quietly rewrite the schedule. If depreciation has gone below the floor you see **Over-depreciated**; if the book value sits exactly on the floor, you get a notice saying so. You fix it by setting the purchase's residual value to the bodemwaarde. When the asset has one purchase, the link **Open the purchase to adjust the residual value** opens it directly. Vehicles, machines and other assets that are not buildings have no bodemwaarde.
 
-### Asset summary and bodemwaarde (building floor)
+### Sold or disposed of
 
-Property objects that are tracked as a bezitting (capital asset) show an asset summary in the detail page:
+When you sell an asset, throw it away or take it out of your business otherwise, fill in the **Value** section of the form:
 
-- **Acquisition value**: what was paid for the asset.
-- **Capitalized value**: the business part of the capitalized cost, after the category's deduction percentage and any private-use share are applied. This uses the same formula as the ledger debit to the asset account and the depreciation schedule (`apps/api/src/modules/ledger/posting-engine.js`), so the three surfaces stay in lockstep.
-- **Accumulated depreciation**: everything written off so far.
-- **Depreciation this year**: the current calendar year's write-off.
-- **Book value**: the remaining value on the balance (capitalized value minus accumulated depreciation).
-- **Bodemwaarde**: the legal floor below which the book value of a building may not drop. It is based on the WOZ value recorded for the property.
+- **Sale date**: the date the asset left your business.
+- **Proceeds (excl. VAT)**: the amount received. Leave it empty if you do not know it yet; enter 0 if you threw it away without proceeds.
 
-The bodemwaarde is shown next to the book value because the two are only meaningful together. MyCompanyDesk does not silently rewrite the posted depreciation schedule; instead, it warns you when the current schedule has already gone below the floor, or notes when the book value has exactly reached it.
+Once the sale date is saved, the **Business asset** block shows a **Sold or disposed of** part with the date, the **Book value at sale**, the **Proceeds** and the **Book profit** or **Book loss**. Without proceeds you only see the book value written off, with a note that the profit or loss can only be determined once the proceeds are known.
 
-If a warning appears, the correction is made by setting the acquisition's residual value to the bodemwaarde. When the object has a single acquisition, a link opens the acquisition so you or your accountant can adjust it.
+The block also warns when the depreciation schedule still plans amounts after the sale date. Those keep landing in your profit and loss until you change the depreciation term on the purchase.
 
-This rule applies to buildings only (for example, property, apartment, office or retail). Vehicles, machines, equipment and other non-building asset types do not have a bodemwaarde floor.
+## Linking to contracts, invoices and expenses
 
-### Disposal
-
-If you sell, scrap or otherwise dispose of an asset, record it in the **Purchase and status** section of the object form:
-
-- **Disposal date:** the date the asset left the business.
-- **Proceeds (excl. VAT):** the amount received. Leave the field empty if you do not know it yet; enter 0 if the asset was scrapped and no money changed hands.
-
-Once a disposal date is saved, the object detail page shows a disposal block that lists:
-
-- the disposal date
-- the book value at disposal
-- the proceeds, if recorded
-- the book profit or book loss
-
-If you leave the proceeds empty, the block shows the book value that was written off and explains that the book profit or loss cannot be determined until the proceeds are recorded.
-
-The asset summary also warns you when the depreciation schedule still posts amounts after the disposal date. Depreciation lines are generated in full when the asset is capitalized, so they keep reaching the profit and loss statement unless the depreciation term on the acquisition is adjusted.
-
-### Contract signing status
-
-Each contract row in the object detail page now shows a signing status badge alongside the active/paused badge. The colour follows the same map used on the contract detail page:
-
-- **Signed** (green): all parties have signed
-- **Partially signed** (blue): some parties have signed, others pending
-- **Sent** (yellow): the signing invite has been sent, no signatures yet
-- **Expired** or **Terminated** (red): the signing request is no longer valid
-
-Fully signed contracts show a small eye icon that opens an inline preview of the signed document, so you can read the completed contract without leaving the property page.
-
-Legacy contracts created before the e-signing feature was added do not show a signing badge. The system detects legacy contracts the same way as on the contract detail page: contracts must have signing parties, a template, or signing content to show a badge.
-
-## Linking objects to contracts and invoices
-
-Objects integrate with other MyCompanyDesk features:
-
-- **Contracts** — Create a rental contract for an object, specifying the tenant (customer) and terms
-- **Invoices**: Invoices can be attributed to an object directly in the invoice form, or linked through a rental contract. Both routes count toward the object's total revenue.
-- **Recurring invoices** — Set up automatic monthly rent invoicing per object
+- **Contracts**: create a rental contract for an asset, with the tenant (customer) and terms.
+- **Invoices**: link an invoice to an asset directly on the invoice form, or let it come from a rental contract. Both count toward total revenue.
+- **Recurring invoices**: link a recurring invoice to an asset for automatic rent invoicing.
+- **Expenses**: link costs to an asset through the **Asset** field; they then count toward that asset's costs.
 
 ## Filtering
 
-Filter your objects by:
+Filter the list by:
 
-- **Type** — Property, Vehicle, Machine, Other
-- **Status** — Available, Rented, Inactive
-- **Search** — Find by name or description
+- **Kind**: the group (for example buildings or vehicles)
+- **Type**: the asset type
+- **Status**: a status, or **Vacant (with rent)** for assets with a rent that are not rented out now
+- **Search** by name or description
+
+**View** switches between active, archived and deleted assets.
 
 ## Bulk actions
 
-- **Change status** — Update availability in bulk
-- **Archive** — Move to archive
-- **Delete** — Remove objects
+- **Archive** and **Delete** (to the trash) in the active list
+- **Restore to active** and **Move to trash** in the archive
+- **Restore to archive** and **Delete permanently** in the trash
+
+An asset with active contracts cannot be deleted.
 
 ## Tips
 
-- Use the status filter to quickly see which assets are available for rent
-- Link every rental invoice to its object for complete financial tracking per asset
-- Set up contracts with recurrence for automatic rent invoicing
-- Check the object metrics at the top of the page for availability overview
+- Use the **Vacant (with rent)** filter to see quickly what you can rent out
+- Link every rent invoice and every cost to its asset, so revenue, costs and net cash flow per asset add up
+- Use recurring invoices or contracts for automatic rent invoicing
+- Enter the WOZ value as of 1 January for your Box 3 return

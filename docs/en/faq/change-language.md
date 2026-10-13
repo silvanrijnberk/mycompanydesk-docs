@@ -1,6 +1,6 @@
 ---
 title: "Change language"
-description: "You can change the language of the app interface. Go to Settings > Weergave (display) and pick Dutch, English, German, or French under App language."
+description: "You can change the language of the app interface. Go to Settings › Display and pick Dutch, English, German, or French under App language."
 last_verified: 2026-07-02
 chatbot:
   triggers:
@@ -27,6 +27,6 @@ chatbot:
     - "How do I change the currency?"
 ---
 
-You can change the language of the app interface. Go to Settings → "Weergave" (display) and pick Dutch, English, German, or French under "App language". The change applies immediately and only affects your own view, not your teammates'.
+You can change the language of the app interface. Go to Settings › "Display" and pick Dutch, English, German, or French under "App language". The change applies immediately and only affects your own view, not your teammates'.
 
-The language of the documents you send (invoices, quotes, emails to customers) is managed separately from the interface language, and there is currently no setting for it in the app. If you need your documents in another language, use the support ticket form below the chat.
+The language of the documents you send (invoices, quotes, emails to customers) is separate from the interface language. You set it under Settings › "Invoices and quotes", at "Which language do you create your documents in?": Dutch, English, German, or French. That choice applies to the whole workspace. Creating documents in a language other than Dutch is part of Office.

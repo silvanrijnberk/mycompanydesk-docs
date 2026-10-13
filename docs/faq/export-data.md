@@ -1,6 +1,6 @@
 ---
 title: "Gegevens exporteren"
-description: "Om gegevens te exporteren: ga naar Instellingen > Gegevens downloaden voor de snelle exportknoppen."
+description: "Om gegevens te exporteren: ga naar Instellingen › Gegevens downloaden voor de snelle exportknoppen."
 last_verified: 2026-10-03
 chatbot:
   triggers: ["export data", "download data", "export csv", "export excel", "download report", "data exporteren", "gegevens downloaden", "daten exportieren", "exporter donnees"]
@@ -10,7 +10,7 @@ chatbot:
 ---
 
 Om gegevens te exporteren:
-1. Ga naar Instellingen → "Gegevens downloaden" voor de snelle exportknoppen
+1. Ga naar Instellingen › "Gegevens downloaden" voor de snelle exportknoppen
 2. Download daar CSV-exports voor facturen, klanten en uitgaven, of de volledige back-up
 3. Gebruik exports op sectieniveau in Facturen, Uitgaven of Rapportages als je maar één dataset nodig hebt
 

@@ -1,6 +1,6 @@
 ---
 title: "Edit a recurring invoice"
-description: "To edit a recurring invoice or expense: go to Recurring Invoices (or Recurring Expenses), open the recurring item, click Edit."
+description: "To edit a recurring invoice or expense: go to Recurring in the menu, pick Invoices or Expenses, open the item and click Edit."
 last_verified: 2026-10-01
 chatbot:
   triggers:
@@ -21,12 +21,14 @@ chatbot:
 ---
 
 To edit a recurring invoice or expense:
-1. Go to Recurring Invoices (or Recurring Expenses)
+1. Go to "Recurring" in the menu and pick "Invoices" or "Expenses" at the top
 2. Open the recurring item
 3. Click "Edit"
 4. Change the amount, frequency, customer, or line items; on a recurring invoice you can also change the payment options, invoice details, reference, project or asset
 5. Save - future generations will use the updated template
 
 Note: Changes only affect future invoices/expenses. Previously generated items remain unchanged.
+
+Recurring invoices and expenses are part of the Office plan.
 
 Note: If you change the start date before the first item has been generated, the next scheduled date moves with it. Once the first item has been generated, the start date no longer shifts the schedule.

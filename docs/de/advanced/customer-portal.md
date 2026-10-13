@@ -11,10 +11,10 @@ Das Kundenportal ist die Seite Ihres Kunden bei Ihrem Unternehmen. Jede Rechnung
 
 Wenn Sie eine Rechnung versenden, wird ein eindeutiger **Zahlungslink** generiert. Wenn Ihr Kunde auf diesen Link klickt, landet er bei der Rechnung in seinem Portal und kann dort:
 
-1. **Die Rechnung ansehen** kann - Alle Details, Positionen und Gesamtbeträge einsehen
-2. **Das PDF herunterladen** kann - Eine Kopie der Rechnung erhalten
-3. **Online bezahlen** kann - Die Zahlung direkt über das Portal über die Schaltfläche **Jetzt bezahlen** abschließen
-4. **Zahlung bestätigen** kann: Eine Banküberweisung bestätigen (nicht sichtbar für Gutschriften, stornierte Rechnungen oder Originalrechnungen, die vollständig gutgeschrieben wurden, da der Kunde in keinem dieser Fälle noch etwas zu zahlen hat)
+1. **Die Rechnung ansehen**: alle Details, Positionen und Gesamtbeträge einsehen
+2. **Das PDF herunterladen**: mit **PDF herunterladen** eine Kopie der Rechnung erhalten
+3. **Online bezahlen**: die Zahlung auf dem Tab **Online bezahlen** abschließen
+4. **Eine Überweisung melden**: mit **Schon bezahlt? Geben Sie {company} Bescheid** und danach **Ich habe bezahlt** mitteilen, dass er selbst überwiesen hat (nicht sichtbar für Gutschriften, stornierte Rechnungen oder Originalrechnungen, die vollständig gutgeschrieben wurden, da der Kunde in keinem dieser Fälle noch etwas zu zahlen hat)
 5. **In meine Buchhaltung**: die Rechnung in die eigenen MyCompanyDesk-Ausgaben übernehmen (nur sichtbar für Geschäftskunden bei einer echten, gültigen Rechnung)
 
 Portallinks werden im Browser des Kunden geöffnet. Auch wenn der Kunde die MyCompanyDesk-App auf seinem Telefon installiert hat, öffnet ein Tipp auf den Rechnungslink den Browser, nicht die App.
@@ -27,7 +27,7 @@ Ein Rechnungslink beweist nur, dass jemand diese E-Mail erhalten hat. Er zeigt *
 
 Am Portal fragt der Zugangsbildschirm nach der E-Mail-Adresse des Kunden und schickt danach einen neuen Login-Link. Der Link funktioniert einmal und bleibt eine Stunde gültig. Er geht nur an die Adresse, die das Unternehmen von der Kundenkarte kennt, und der Bildschirm verrät nicht, ob eine Adresse bekannt ist, damit niemand darüber prüfen kann, wer Ihre Kunden sind.
 
-Nach dem Öffnen des Links bleibt dieser Browser für diesen Kunden bei Ihrem Unternehmen eingeloggt. **Abmelden** beendet diese Sitzungen in diesem Browser. Das Portal zeigt sich immer mit Ihrem Firmennamen und Ihrem Design, und der Kontaktbereich zeigt Ihre öffentliche geschäftliche E-Mail-Adresse, damit Kunden die richtige Mailbox erreichen, selbst wenn die erste Rechnung an eine Privatadresse ging.
+Nach dem Öffnen des Links bleibt Ihr Kunde 30 Tage auf diesem Gerät eingeloggt, ohne Passwort. **Abmelden** beendet diese Sitzung in diesem Browser. Das Portal zeigt sich immer mit Ihrem Firmennamen und Ihrem Design, und der Kontaktbereich zeigt Ihre öffentliche geschäftliche E-Mail-Adresse, damit Kunden die richtige Mailbox erreichen, selbst wenn die erste Rechnung an eine Privatadresse ging.
 
 ## Portal-Funktionen
 
@@ -35,9 +35,11 @@ Nach dem Öffnen des Links bleibt dieser Browser für diesen Kunden bei Ihrem Un
 
 Die Übersicht ist die Startseite des Portals: Ihr Design und eine Begrüßung oben, mit Ihrer eigenen Begrüßungszeile darunter, wenn Sie eine gesetzt haben, neben der festen Firmenkarte mit Ihren Kontaktdaten. Eine kurze **Zu erledigen**-Liste sammelt, was noch vom Kunden verlangt wird (eine Rechnung bezahlen, ein Dokument unterschreiben, eine neue Nachricht lesen), und wenn alles erledigt ist, sagt die Seite es genau so: **Alles ist bezahlt, es ist nichts offen.** Wird eine Zahlung nach einer Meldung des Kunden noch geprüft, sagt die Seite auch das, statt ein zweites Mal um Geld zu bitten.
 
-### Rechnungsliste
+### Rechnungen
 
-Wenn ein Kunde mehrere Rechnungen hat, zeigt das Portal auch eine Liste mit jeder Rechnung, Gutschrift und dem aktuellen Status. Die Zusammenfassungskarten "Offen" und "Überfällig" über der Tabelle addieren den **Restbetrag pro Beleg**, nicht den Bruttobetrag. Eine Rechnung über 1.000 € mit einer Teilzahlung von 400 € trägt also 600 € zum offenen Betrag bei, und eine Gutschrift, die bereits mit ihrer Ursprungsrechnung verrechnet wurde, trägt 0 € bei, damit sie nicht zweimal abgezogen wird. "Überfällig" leitet sich aus dem Fälligkeitsdatum ab: jede versendete oder offene Rechnung mit einem Fälligkeitsdatum vor heute wird dort gezählt, damit die Karte auch dann aktuell bleibt, wenn Rechnungen nur noch selten den Legacy-Status `overdue` tragen.
+Der Tab **Rechnungen** ordnet jede Rechnung und Gutschrift einer von drei Gruppen zu: **Offen**, **Bezahlt** und **Gutschriften und stornierte Rechnungen**. Daneben stehen zwei Summen: **Offen** und **Bezahlt in** im laufenden Jahr. Hat der Kunde eine Zahlung gemeldet, die Sie noch prüfen, steht dieser Betrag separat unter **Warte auf Bestätigung** und nicht im offenen Betrag.
+
+**Offen** addiert den **Restbetrag pro Beleg**, nicht den Bruttobetrag, und schließt Rechnungen ein, die bereits über ihr Fälligkeitsdatum hinaus sind. Eine Rechnung über 1.000 € mit einer Teilzahlung von 400 € trägt also 600 € zum offenen Betrag bei, und eine Gutschrift, die bereits mit ihrer Ursprungsrechnung verrechnet wurde, trägt 0 € bei, damit sie nicht zweimal abgezogen wird.
 
 Entwürfe erscheinen nie in der Rechnungsliste. Ein Portal-Link wird erst erzeugt, wenn eine Rechnung versendet wird; unversendete Entwürfe haben daher keine kundenseitige Ansicht und können nicht über das Portal eingesehen werden.
 
@@ -61,15 +63,15 @@ Der Scan-und-Bezahl-QR-Code auf der Rechnungs-PDF nutzt dieselbe feste Verlinkun
 
 #### Mollie-Zahlungseinstellungen
 
-Sobald Mollie verbunden ist, erhalten Sie einen **Betaalknop op facturen**-Schalter in Ihrem Arbeitsbereich unter **Geld → Zahlungen → Online betalingen**. Aktivieren Sie ihn, um eine Mollie-Schaltfläche mit dem Label **Jetzt bezahlen** auf jeder ausgehenden Rechnung anzuzeigen. Deaktivieren Sie ihn, und die Schaltfläche verschwindet, ohne Mollie zu trennen.
+Sobald Mollie verbunden ist, erhalten Sie den Schalter **Betaalknop op facturen** unter **Einstellungen › Bezahlung**, im Block **Kunden mit iDEAL bezahlen lassen**. Aktivieren Sie ihn, um jeder Rechnung, die Sie versenden, eine Mollie-Zahlungsschaltfläche hinzuzufügen. Deaktivieren Sie ihn, und die Schaltfläche verschwindet, ohne Mollie zu trennen.
 
 Unter dem Schalter befindet sich ein **Betaalmethoden**-Bereich, der jede in Ihrem Mollie-Dashboard aktivierte Zahlungsmethode auflistet (iDEAL, Bancontact, Kreditkarte und mehr). Standardmäßig sehen Kunden alle Methoden. Aktivieren Sie bestimmte Methoden, um die Auswahl einzugrenzen, nur diese erscheinen auf Ihren Rechnungen. Entfernen Sie alle Häkchen, um zu "alle anzeigen" zurückzukehren.
 
-Mit der Schaltfläche **Stuur testbetaling** können Sie einen kostenlosen €1-Test-Checkout über Mollie durchlaufen, um sicherzustellen, dass alles funktioniert, bevor Ihre Kunden es sehen. Es fließt kein echtes Geld.
+Mit der Schaltfläche **Stuur testbetaling** können Sie einen Checkout über 1 € im Testmodus von Mollie durchlaufen, um sicherzustellen, dass alles funktioniert, bevor Ihre Kunden es sehen. Es fließt kein echtes Geld.
 
 #### Stripe-Zahlungseinstellungen
 
-Sobald Stripe verbunden ist, erhalten Sie einen **Betaalknop op facturen**-Schalter in Ihrem Arbeitsbereich unter **Geld → Zahlungen → Online betalingen**. Aktivieren Sie ihn, um eine Stripe-Schaltfläche mit dem Label **Jetzt bezahlen** auf jeder ausgehenden Rechnung anzuzeigen. Deaktivieren Sie ihn, und die Schaltfläche verschwindet, ohne Stripe zu trennen. Der Schalter ist erst verfügbar, nachdem das Stripe-Onboarding (KYC) abgeschlossen ist.
+Sobald Stripe verbunden ist, erhalten Sie den Schalter **Betaalknop op facturen** unter **Einstellungen › Bezahlung**, im Block **Kunden mit iDEAL bezahlen lassen**. Aktivieren Sie ihn, um jeder Rechnung, die Sie versenden, eine Stripe-Zahlungsschaltfläche hinzuzufügen. Deaktivieren Sie ihn, und die Schaltfläche verschwindet, ohne Stripe zu trennen. Der Schalter ist erst verfügbar, nachdem das Stripe-Onboarding (KYC) abgeschlossen ist.
 
 Unter dem Schalter befindet sich ein **Betaalmethoden**-Bereich, der jede unterstützte Zahlungsmethode zeigt, abgeglichen mit den Capabilities Ihres Stripe-Kontos (Karte, iDEAL, Bancontact, SEPA-Lastschrift, PayPal, Klarna und Link by Stripe). Standardmäßig wählt Stripe Checkout automatisch die richtige Methode pro Kunde. Aktivieren Sie bestimmte Methoden, um die Auswahl einzuschränken, nur diese erscheinen im Checkout. Entfernen Sie alle Häkchen, um zur automatischen Auswahl zurückzukehren.
 
@@ -79,50 +81,46 @@ Die Schaltfläche **Open Stripe Dashboard** verlinkt Sie direkt zu Ihren Stripe-
 
 Ein Geschäftskunde, der selbst MyCompanyDesk benutzt, kann Ihre Rechnung mit der Schaltfläche **In meine Buchhaltung**, neben **PDF herunterladen**, direkt in die eigenen Ausgaben übernehmen. MyCompanyDesk importiert die Rechnung als Ausgabenentwurf in diesen Arbeitsbereich, mit den Beträgen, der Umsatzsteuer und der PDF, und öffnet sie, bereit zur Prüfung. Die Schaltfläche erscheint bei echten, gültigen Rechnungen für Geschäftskunden: Angebote, Gutschriften, stornierte Rechnungen und vollständig gutgeschriebene Rechnungen haben nichts zu buchen, also bleibt die Schaltfläche weg.
 
-Fehlt das Konto noch, zeigt die Seite, welche Rechnung es ist, wer sie geschickt hat und für wie viel, mit **Konto erstellen** und **Ich habe bereits ein Konto** daneben. Danach nimmt MyCompanyDesk den Import von selbst wieder auf, auf demselben Gerät, bis zu einer Woche lang (der Browser behält den wartenden Import sieben Tage, siehe `apps/web/utils/pendingInvoiceImport.ts#MAX_AGE_MS`).
+Fehlt das Konto noch, zeigt die Seite, welche Rechnung es ist, wer sie geschickt hat und für wie viel, mit **Konto erstellen** und **Ich habe bereits ein Konto** daneben. Danach nimmt MyCompanyDesk den Import von selbst wieder auf, auf demselben Gerät, bis zu einer Woche lang.
 
 Der Import teilt die Dublettenprüfung mit Rechnungen, die automatisch ankommen (siehe [Receiving invoices from other MyCompanyDesk users](/de/features/invoices#receiving-invoices-from-other-mycompanydesk-users)), sodass dieselbe Rechnung nie zweimal gebucht wird. Auf Ihrer eigenen Rechnung lesen Sie es danach: **Kunde hat die Rechnung in die eigene Buchhaltung übernommen**.
 
-### Angebote und Verträge
+### Angebote, Verträge und Dokumente
 
-Der Tab **Angebote und Verträge** zeigt, was dieser Kunde von Ihnen erhalten hat: Angebote, Verträge und andere unterschreibbare Dokumente. Dokumente, die auf eine Unterschrift warten, stehen oben, mit der Aktion **Ansehen und unterschreiben**; ein Angebot bleibt bis zu seiner Gültigkeit im Blick, und Status folgen dem Ablauf des Dokuments (erhalten, angenommen, abgelehnt, abgelaufen, unterschrieben). Unterschrieben wird auf einer gesicherten Signierseite, die eine SMS-Kennung verlangt, wenn Sie das für ein Dokument vorschreiben.
+Die Tabs **Angebote**, **Verträge** und **Dokumente** zeigen, was dieser Kunde von Ihnen erhalten hat. Ein Tab erscheint nur, wenn etwas darin steht: Ein Kunde mit nur Rechnungen sieht keinen leeren Angebote-Tab. Dokumente, die auf eine Unterschrift warten, stehen oben, mit der Aktion **Ansehen und unterschreiben**. Ein Angebot bleibt bis zu seinem Gültigkeitsdatum im Blick, und der Status folgt dem Ablauf des Dokuments (zum Beispiel **Wartet auf Sie**, **Angenommen**, **Abgelehnt**, **Abgelaufen** oder **Unterschrieben**). Unterschrieben wird auf einer gesicherten Signierseite, die einen SMS-Code verlangt, wenn Sie das für ein Dokument vorschreiben.
 
-Die Signierseite trägt dasselbe Gewand wie der Rest des Portals: Ihr Name im Kopf, das Dokument, eine Schrittlinie (lesen, unterschreiben, bestätigen) und eine Zustimmungszeile, **Ich bin mit diesem Angebot und den Bedingungen von {company} einverstanden** bei einem Angebot, bevor die Schaltfläche **Signieren und senden** heißt. Die Unterschrift selbst funktioniert wie bisher: Name zeichnen oder tippen, danach eine Bestätigungs-E-Mail und das PDF als Download. Die Signierseite trägt dasselbe Fragefeld wie der Rest des Portals, sodass eine Frage zu diesem Dokument in einem Gespräch landet statt am Rand.
+Die Signierseite trägt dasselbe Gewand wie der Rest des Portals: Ihr Name im Kopf, das Dokument, eine Schrittleiste (**Dokument lesen**, **Signatur platzieren**, **Bestätigen**) und bei einem Angebot eine Zustimmungszeile, **Ich bin mit diesem Angebot und den Bedingungen von {company} einverstanden.**, vor der Schaltfläche **Signieren und senden**. Ihr Kunde zeichnet oder tippt seinen Namen und erhält nach der Unterschrift eine Bestätigungs-E-Mail und das PDF als Download. Möchte er ein Angebot nicht annehmen, wählt er **Ich stimme nicht zu** und kann einen Grund angeben. Die Signierseite trägt dasselbe Fragefeld wie der Rest des Portals, sodass eine Frage zu diesem Dokument in einem Gespräch landet statt am Rand.
 
 ### Termine
 
-Das Portal zeigt die kommenden und vergangenen Termine dieses Kunden, auch die Plätze, die er für einen Gruppentermin (Workshop, Kurs, Führung) belegt hat; siehe [Online-Terminbuchung](/de/features/site-bookings). Termine lassen sich in den eigenen Kalender des Kunden übernehmen, Verschieben oder Absagen läuft über dieselbe Seite, auf die der Link in der Bestätigungsmail zeigt. Termine, die nicht mit der E-Mail-Adresse dieses Kunden gebucht wurden, bleiben unsichtbar.
+Das Portal zeigt die kommenden und vergangenen Termine dieses Kunden, auch die Plätze, die er für einen Gruppentermin (Workshop, Kurs, Führung) belegt hat; siehe [Online-Terminbuchung](/de/features/site-bookings). Mit **In meinen Kalender** übernimmt der Kunde einen Termin in seinen eigenen Kalender, und **Verschieben oder absagen** läuft über dieselbe Seite, auf die der Link in der Bestätigungsmail zeigt. Termine, die nicht mit der E-Mail-Adresse dieses Kunden gebucht wurden, bleiben unsichtbar.
 
 ### Fragen pro Dokument
 
-Jede Ansicht im Portal hat ein eigenes Gespräch: Zu einer Rechnung steht **Fragen zu dieser Rechnung**, zu einem Angebot **Fragen zu diesem Angebot**, und dasselbe Muster gilt für Verträge, übrige Dokumente und Termine. Der Kunde schreibt seine Frage, sie trifft in Ihrem Postfach in der App ein, und Ihre Antwort kommt sowohl im Gespräch als auch in der E-Mail des Kunden an. Eine Frage gehört zu dem Dokument, an dem sie gestellt wurde: jedes Gespräch bleibt bei seinem eigenen Bereich.
+Jede Ansicht im Portal hat ein eigenes Gespräch: Zu einer Rechnung steht **Fragen zu dieser Rechnung**, zu einem Angebot **Fragen zu diesem Angebot**, und dasselbe Muster gilt für Verträge, übrige Dokumente und Termine. Der Kunde schreibt seine Frage, sie trifft in Ihrem Postfach in der App ein, und Ihre Antwort kommt sowohl im Gespräch als auch in der E-Mail des Kunden an. Eine Frage gehört zu dem Dokument, an dem sie gestellt wurde: jedes Gespräch bleibt bei seinem eigenen Bereich. Einen separaten Nachrichten-Tab gibt es nicht: Jede Frage gehört zu dem Dokument, um das es geht, und die Übersicht zeigt pro Dokument, ob es Nachrichten gibt.
 
-Um eine Frage zu stellen, brauchen Sie das vollständige Portal. Wer allein über den Zahlungslink einer Rechnung hereinkommt, sieht, wo die Tür ist: das Portal bietet an, eine Login-Link an die Adresse zu mailen, die auf der Kundenkarte steht, und das Fragefeld erklärt, dass Fragen im vollständigen Portal gestellt werden. Nachrichten im Portal bleiben, wie sie geschrieben sind: die E-Mail, die bei Ihnen eintrifft, ist die Frage Ihres Kunden, ohne Mail-Signatur und ohne zitierte Vorgeschichte darunter.
-
-### Nachrichten
-
-Der Nachrichten-Tab ist die direkte Verbindung zu Ihrem Postfach. Der Kunde schreibt eine Frage oder Mitteilung, sie trifft in Ihrem Postfach in der App ein, und Ihre Antwort kommt sowohl im Portal als auch in der E-Mail des Kunden an. Kunden ohne E-Mail-Adresse auf ihrem Datensatz sehen einen Hinweis, Sie anzurufen oder zu mailen.
+Um eine Frage zu stellen, brauchen Sie das vollständige Portal. Wer allein über einen Rechnungslink hereinkommt, sieht, wo die Tür ist: Mit **Link senden** bietet das Portal an, einen Login-Link an die Adresse zu mailen, die auf der Kundenkarte steht, und das Fragefeld erklärt, dass Fragen im vollständigen Portal gestellt werden. Nachrichten im Portal bleiben, wie sie geschrieben sind: die E-Mail, die bei Ihnen eintrifft, ist die Frage Ihres Kunden, ohne Mail-Signatur und ohne zitierte Vorgeschichte darunter.
 
 ### Branding
 
 Das Kundenportal verwendet Ihr Unternehmensbranding:
 
 - Firmenlogo
-- Marktfarbe
+- Markenfarbe
 - Unternehmensinformationen
 
 Dies schafft ein professionelles, konsistentes Erlebnis für Ihre Kunden.
 
 ### So sieht es aus
 
-Unter **Einstellungen → Kundenportal** wählen Sie, wie alles aussieht, ohne Zusatzarbeit: Logo, Farbe und Unternehmensdaten haben bereits ihren eigenen Ort und werden von selbst mitgenommen. Hier stellen Sie selbst ein:
+Unter **Einstellungen › Kundenportal** wählen Sie, wie alles aussieht, ohne Zusatzarbeit: Logo, Farbe und Unternehmensdaten haben bereits ihren eigenen Ort und werden von selbst mitgenommen. Hier stellen Sie selbst ein:
 
-- **Stil**: fünf Stile, jeder aus Ihrer Marktfarbe abgeleitet, sodass eine blasse oder fast schwarze Farbe bei Ihrem Kunden genauso ausfällt wie in der Vorschau. **Ruhig** (weiß, Ihre Farbe nur in Schaltflächen und Akzenten), **Warm** (weiches Papier und runde Formen), **Farbe** (Ihre Farbe im Kopf und in der ersten Aufgabe), **Klar** (kantig und sachlich, ein klares Raster) oder **Abend** (ein dunkler Kopf mit großer Schrift). Jede Kachel in der Auswahl trägt eine kleine Vorschau in diesem Stil.
-- **Darstellung**: hell oder dunkel, oder lassen Sie sie auf **Wie Ihr Kunde möchte** stehen, sodass das Portal folgt, was das Gerät Ihres Kunden verlangt (Ihr Kunde kann es selbst immer umschalten).
-- **Begrüßungszeile**: eine kurze Zeile unter der Begrüßung. Lassen Sie sie leer, dann zeigen wir selbst, was für Ihren Kunden bereitliegt.
+- **Stil**: fünf Stile, jeder aus Ihrer Markenfarbe abgeleitet, sodass eine blasse oder fast schwarze Farbe bei Ihrem Kunden genauso ausfällt wie in der Vorschau. **Ruhig** (weiß, Ihre Farbe nur in Schaltflächen und Akzenten), **Warm** (weiches Papier und runde Formen), **Farbe** (Ihre Farbe im Kopf und in der ersten Aufgabe), **Klar** (kantig und sachlich, ein klares Raster) oder **Abend** (ein dunkler Kopf mit großer Schrift). Jede Kachel in der Auswahl trägt eine kleine Vorschau in diesem Stil.
+- **Darstellung**: **Immer hell** oder **Immer dunkel**, oder lassen Sie sie auf **Wie Ihr Kunde möchte** stehen, sodass das Portal folgt, was das Gerät Ihres Kunden verlangt (Ihr Kunde kann es selbst immer umschalten).
+- **Willkommenstext**: eine kurze Zeile unter der Begrüßung. Lassen Sie sie leer, dann zeigen wir selbst, was für Ihren Kunden bereitliegt.
 - **Ihr Foto auf der Karte**: mit einem Profilfoto stehen Sie mit Ihrem Namen auf der Kontaktkarte, statt Ihrem Unternehmen. Ihr Logo bleibt oben.
 
-Neben den Einstellungen steht die Vorschau: der echte Portalüberblick mit Beispieldaten, in der Breite, die Ihr Kunde bekommt, genau so, wie Ihr Kunde sie sieht. Der Inhalt der Firmenkarte und der Portallink verweisen an ihre eigenen Orte: Logo und Farbe passen Sie bei **Erscheinungsbild** an, die Unternehmensdaten bei **Firmendaten**.
+Neben den Einstellungen steht die Vorschau: der echte Portalüberblick mit Beispieldaten, in der Breite, die Ihr Kunde bekommt, genau so, wie Ihr Kunde sie sieht. Der Inhalt der Firmenkarte und der Portallink verweisen an ihre eigenen Orte: Logo und Farbe passen Sie bei **Logo und Farbe** an, die Unternehmensdaten bei **Unternehmensdaten**.
 
 Einem Kunden seinen Login-Link schicken oder ihn überall ausloggen, tun Sie auf der Kundenseite, im Block **Kundenportal**.
 
@@ -134,9 +132,9 @@ Rechnungsansicht und PDF-Download werden aus einer Momentaufnahme gerendert, die
 
 Jeder Portal-Link ist:
 
-- **Eindeutig** - Pro Rechnung generiert
-- **Token-basiert** - Mit einem einzigartigen Zugangstoken gesichert
-- **Rechnungsspezifisch** - Zeigt nur die spezifische Rechnung
+- **Eindeutig**: pro Rechnung erzeugt
+- **Gesichert**: mit einem einzigartigen Zugangstoken
+- **Begrenzt**: Ein Rechnungslink zeigt nur die Rechnungen dieses Kunden, keine Angebote, Termine oder Nachrichten
 
 Kunden benötigen kein MyCompanyDesk-Konto, um Rechnungen einzusehen und zu bezahlen. Jede Portalsitzung wird vom Server an genau einen Kunden bei einem Unternehmen gebunden, deshalb zeigt eine Sitzung bei einem Unternehmen nie Dokumente eines anderen, und Portalseiten werden immer ohne Caching versendet, damit personenbezogene Daten nie in geteilten Caches landen.
 
@@ -155,6 +153,6 @@ Dies hilft Ihnen, das Kundenengagement zu verstehen und effektiv nachzufassen.
 ## Tipps
 
 - Fügen Sie Ihrer Rechnungs-E-Mail eine persönliche Notiz hinzu, um die Portal-Nutzung zu fördern
-- Das Portal funktioniert auf allen Geräten - Mobiltelefon, Tablet und Desktop
+- Das Portal funktioniert auf allen Geräten: Mobiltelefon, Tablet und Desktop
 - Zahlungsbestätigungen werden sowohl an Sie als auch an den Kunden gesendet
 - Prüfen Sie den Kundenereignisverlauf auf der Rechnungsdetailseite, um Portal-Interaktionen einzusehen

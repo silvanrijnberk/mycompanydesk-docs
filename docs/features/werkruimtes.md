@@ -1,12 +1,12 @@
 ---
 title: Werkruimtes
 description: "Een centrale pagina voor alles wat je beheert, je eigen bedrijven en klantadministraties, zonder dat eigen geld en klantgeld ooit door elkaar lopen."
-last_verified: 2026-08-10
+last_verified: 2026-10-13
 ---
 
 # Werkruimtes
 
-De pagina Werkruimtes (`/werkruimtes`) is één centrale plek voor alles wat je beheert. Hij vervangt het oude boekhoudersportaal en past zich aan je daadwerkelijke rol aan: één werkruimte, meerdere eigen bedrijven, of klantadministraties.
+Werkruimtes (`/werkruimtes`) is één centrale plek voor alles wat je beheert. Het vervangt het oude boekhoudersportaal en past zich aan je daadwerkelijke rol aan: één werkruimte, meerdere eigen bedrijven, of klantadministraties.
 
 > **Eigen geld en klantgeld worden nooit door elkaar gehaald.** Eigen bedrijven optellen heeft zin, want het geld is van jou. Een totaal over klantenadministraties zegt niets, dus die houdt de pagina strikt gescheiden.
 
@@ -22,11 +22,14 @@ Als je in de kiezer een werkruimte kiest, wisselt de app nu zonder volledige pag
 
 ## De werkruimte-sectie
 
-De app-navigatie groepeert nu alle werkruimtepagina's onder **Werkruimtes**. De overzichtspagina blijft staan, en er zijn drie nieuwe pagina's bijgekomen:
+Zodra je in Werkruimtes bent, vervangt een eigen zijbalk de gewone navigatie. Die groepeert de pagina's zo:
 
-- **Agenda** (`/werkruimtes/agenda`) - alle deadlines over al je werkruimtes, gegroepeerd op datum.
-- **Werk** (`/werkruimtes/werk`) - je eigen openstaande taken plus openstaande klantverzoeken.
-- **Kantoor** (`/werkruimtes/kantoor`) - het kantooroverzicht voor accountants, met aparte pagina's voor facturatie en bulkexport.
+- **Overzicht**: **Vandaag** (`/werkruimtes`), **Agenda** (`/werkruimtes/agenda`) en **Werk** (`/werkruimtes/werk`). Deze drie staan er altijd.
+- **Van jou**: **Bedrijven** (`/werkruimtes/bedrijven`), het overzicht van je eigen bedrijven. Staat er ook altijd.
+- **Klantwerk**: **Klanten** (`/werkruimtes/klanten`), **Verzoeken** (`/werkruimtes/verzoeken`) en **Inzicht** (`/werkruimtes/inzicht`). Verschijnt zodra je toegang hebt tot een klantadministratie.
+- **Kantoor**: **Je kantoor** (`/werkruimtes/kantoor`), **Facturatie** en **Export**. Verschijnt als je bij een boekhouderskantoor hoort.
+
+**Vandaag** laat zien wat er nu aandacht vraagt, in twee aparte blokken: eerst je eigen bedrijven, dan je klanten (hooguit acht; wat daarbuiten valt wordt genoemd, niet stil weggelaten).
 
 ### Eigendomsindicator
 
@@ -42,11 +45,11 @@ De werkpagina toont open werk in twee blokken: eerst je eigen bedrijven, dan kla
 
 ### Kantoorpagina's (`/werkruimtes/kantoor/*`)
 
-Als je een accountantskantoor hebt, bevat de sectie Kantoor drie kantoorpagina's:
+Als je bij een boekhouderskantoor hoort, bevat de groep Kantoor drie pagina's:
 
-- **Kantooroverzicht** (`/werkruimtes/kantoor`) - kantoormedewerkers, openstaande klantuitnodigingen, partner-deellink en statistieken, en of Office gratis is toegekend.
-- **Facturatie** (`/werkruimtes/kantoor/facturatie`) - bied aan om een klantadministratie te betalen. De klant moet accepteren voordat er iets in rekening wordt gebracht; de prijs per overgenomen administratie staat vooraf op het scherm. Een openstaand aanbod zie je apart staan, zodat je het kunt intrekken zolang de klant nog niet heeft geantwoord.
-- **Export** (`/werkruimtes/kantoor/export`) - exporteer meerdere klantadministraties tegelijk. Kies jaar, periode en exportformaat, selecteer de administraties en de app downloadt per klant een archief. Eventuele mislukte exports blijven staan zodat je ziet wat niet is voltooid.
+- **Je kantoor** (`/werkruimtes/kantoor`): kantoormedewerkers, openstaande klantuitnodigingen, partner-deellink en statistieken, en of Office gratis is toegekend.
+- **Facturatie** (`/werkruimtes/kantoor/facturatie`): bied aan om een klantadministratie te betalen. De klant moet accepteren voordat er iets in rekening wordt gebracht; de prijs per overgenomen administratie staat vooraf op het scherm. Een openstaand aanbod zie je apart staan, zodat je het kunt intrekken zolang de klant nog niet heeft geantwoord.
+- **Export** (`/werkruimtes/kantoor/export`): exporteer meerdere klantadministraties tegelijk. Kies jaar, periode en exportformaat, selecteer de administraties en de app downloadt per klant een archief. Eventuele mislukte exports blijven staan zodat je ziet wat niet is voltooid.
 
 ## Laadstatus en fouten
 
@@ -56,20 +59,22 @@ Als het ophalen mislukt, toont de pagina een aparte foutstaat met een knop **Opn
 
 ## Als je één werkruimte hebt
 
-Je krijgt drie ingangen in plaats van een lege pagina:
+Op **Bedrijven** krijg je dan drie ingangen in plaats van een lege lijst:
 
-- **Bedrijf toevoegen** voor een holding, tweede BV of zaak ernaast. Elk bedrijf krijgt een eigen administratie met aparte btw, facturen en boekhouding.
-- **Boekhouder uitnodigen** als je samenwerkt met een externe boekhouder.
-- **Aanmelden als partner** als je zelf boekhouder bent en meerdere klantadministraties vanuit één plek wilt beheren.
+- **Meer dan één bedrijf?** met **Bedrijf toevoegen**, voor een holding, tweede BV of zaak ernaast. Elk bedrijf krijgt een eigen administratie met aparte btw, facturen en boekhouding.
+- **Werk je met een boekhouder?** met **Boekhouder uitnodigen**, als je samenwerkt met een externe boekhouder.
+- **Ben je zelf boekhouder?** met een link naar het partnerprogramma, als je meerdere klantadministraties vanuit één plek wilt beheren.
 
 ## Gecombineerde werkruimte: je eigen bedrijven
 
-Als je meer dan één eigen bedrijf hebt, opent de pagina met een gecombineerd overzicht:
+Als je meer dan één eigen bedrijf hebt, toont **Bedrijven** (`/werkruimtes/bedrijven`) een gecombineerd overzicht:
 
 - Eén zin vertelt wat je bedrijven dit jaar samen omzetten, en of dat een winst of verlies oplevert.
 - Een strip toont gezamenlijke omzet, resultaat, te innen en btw opzij.
 - Een aandeelbalk toont de omzetverdeling per bedrijf.
-- Onder de band staat één rij per bedrijf. De volgorde is vast (thuisbedrijf eerst, dan aanmaakdatum), zodat je altijd weet waar je moet zoeken.
+- Onder de cijfers staat één rij per bedrijf. De volgorde is vast (thuisbedrijf eerst, dan aanmaakdatum), zodat je altijd weet waar je moet zoeken.
+
+Met **Bekijk samen** open je **Samen** (`/werkruimtes/bedrijven/samen`): een tabel met je bedrijven naast elkaar voor een jaar dat je kiest, met een totaalregel eronder.
 
 ### Signalen in elke rij
 
@@ -78,20 +83,20 @@ Elke bedrijfsrij toont chips voor wat er nu aandacht vraagt. Elke chip is een li
 | Chip | Betekenis | Link |
 |---|---|---|
 | Btw-periode met deadline | Hoeveel dagen tot de aangifte, of hoe laat je bent | `/belastingen/btw` |
-| Openstaande facturen | Facturen die niet op tijd betaald zijn | `/facturen` |
-| Bonnetjes ontbreken | Kostenposten zonder bon | `/uitgaven` |
-| Concepten | Facturen die nog concept zijn | `/facturen` |
+| Openstaande facturen | Facturen die niet op tijd betaald zijn | `/invoices` |
+| Bonnetjes ontbreken | Kostenposten zonder bon | `/expenses` |
+| Concepten | Facturen die nog concept zijn | `/invoices` |
 | Btw ingediend | De vorige aangifte is ingediend | `/belastingen/btw` |
-| Proefperiode loopt af | Het bedrijf zit nog in een Office-proefperiode | `/settings/billing` |
-| Op non-actief | Het bedrijf is op non-actief gezet; je kunt nog inzien en exporteren | `/werkruimtes` |
+| Proefperiode loopt nog | Het bedrijf zit nog in een Office-proefperiode | Geen, alleen een notitie |
+| Op non-actief | Het bedrijf is op non-actief gezet; je kunt nog inzien en exporteren | Geen, alleen een notitie |
 
 Eigen bedrijven gebruiken dezelfde KPI's als het dashboard van elk afzonderlijk bedrijf, dus de cijfers kunnen niet tegenstrijdig zijn.
 
 ## Onderlinge posities
 
-Als je eigen bedrijven elkaar factureren, ziet elke werkruimte normaal gesproken alleen de eigen helft. De Werkruimtes-pagina toont nu het nettosaldo tussen elk paar eigen bedrijven, zodat de rekening-courant die je voorheen op papier bijhield, in de app zichtbaar is.
+Als je eigen bedrijven elkaar factureren, ziet elke werkruimte normaal gesproken alleen de eigen helft. De pagina Bedrijven toont het nettosaldo tussen elk paar eigen bedrijven, zodat de rekening-courant die je voorheen op papier bijhield, in de app zichtbaar is.
 
-Het blok verschijnt alleen als minstens twee van je eigen bedrijven daadwerkelijk openstaande facturen naar elkaar hebben, dus het blijft uit beeld voor iedereen die het niet nodig heeft. Het staat tussen het gecombineerde overzicht van je bedrijven en het klantendesk, omdat het een relatie tussen je bedrijven beschrijft en geen eigenschap van een enkel bedrijf.
+Het blok verschijnt alleen als minstens twee van je eigen bedrijven daadwerkelijk openstaande facturen naar elkaar hebben, dus het blijft uit beeld voor iedereen die het niet nodig heeft. Het staat onder het gecombineerde overzicht van je bedrijven, omdat het een relatie tussen je bedrijven beschrijft en geen eigenschap van een enkel bedrijf.
 
 - Koppelingen worden automatisch gemaakt als het btw-nummer van een klant overeenkomt met een van je andere werkruimtes. Die match kijkt alleen naar je eigen bedrijven, dus een klant van iemand anders wordt nooit bereikt.
 - Als de automatische koppeling niet klopt, of als er geen btw-nummer beschikbaar is, kun je een klant handmatig koppelen of ontkoppelen vanaf de klantenpagina. Een handmatige koppeling wint altijd van de automatische.
@@ -102,7 +107,7 @@ Het blok verschijnt alleen als minstens twee van je eigen bedrijven daadwerkelij
 
 ## Kantoor-werkruimte: klanten
 
-Als je boekhouder bent en klantadministraties beheert, wordt de pagina een triage-overzicht:
+Als je boekhouder bent en klantadministraties beheert, toont **Vandaag** welke klanten nu iets nodig hebben, en is **Klanten** (`/werkruimtes/klanten`) de volledige lijst om door te werken, met filters zoals wat te laat is, wie op je wacht en wat aan jou is toegewezen:
 
 - Een headline vertelt hoeveel van je klanten vandaag iets nodig hebben.
 - Een cijferstrip toont het totaal aantal klanten, deadlines deze week, klanten die aandacht vragen, en open uitnodigingen.
@@ -110,26 +115,26 @@ Als je boekhouder bent en klantadministraties beheert, wordt de pagina een triag
 - Een zoekveld is altijd zichtbaar, zodat je klantadministraties direct kunt filteren.
 - Open uitnodigingen staan in een eigen kaart; een uitgenodigde klant telt nog niet als actieve klant.
 
-De chips en werken hetzelfde als in de gecombineerde werkruimte, maar rijen gebruiken geaggregeerde signalen zodat het overzicht meegroeit met grote klantenbestanden. Het overzicht telt klantgeld niet bij elkaar op.
+De chips werken hetzelfde als in de gecombineerde werkruimte, maar rijen gebruiken geaggregeerde signalen zodat het overzicht meegroeit met grote klantenbestanden. Het overzicht telt klantgeld niet bij elkaar op.
 
 ### Medewerkers van het kantoor
 
-Werk je in een boekhouderskantoor, dan heeft het kantoor een eigen ledenlijst. Beheerders kunnen collega's uitnodigen via **Kantoorleden beheren**; iedereen krijgt een rol (lid of beheerder). Iemand toevoegen aan het kantoor geeft hem of haar nog geen toegang tot een klant; dat geef je per klant vanaf de Werkruimtes-pagina. In de rij van elk medewerker zie je bij hoeveel klanten diegene is gekoppeld, zodat je weet wie waar mee bezig is.
+Werk je in een boekhouderskantoor, dan heeft het kantoor een eigen ledenlijst onder **Medewerkers** op **Je kantoor**. Beheerders nodigen collega's uit met **Collega uitnodigen**; iedereen krijgt een rol (lid of beheerder). Iemand toevoegen aan het kantoor geeft hem of haar nog geen toegang tot een klant; dat geef je per klant, en alleen als die klant het toestaat. In de rij van elk medewerker zie je bij hoeveel klanten diegene is gekoppeld, zodat je weet wie waar mee bezig is.
 
 ### Werk aan een klant en verzoeken
 
 Elke klantrij toont een werk-chip zodra er iets wacht. Open deze om te zien wie de klant nu oppakt en wat je aan de klant hebt gevraagd.
 
 - **Ik pak dit op** wijst de klant aan jou toe. **Toch niet, geef terug** geeft het werk weer vrij, zodat een collega het kan oppakken. De status wordt live bijgewerkt voor iedereen in het kantoor, zodat twee mensen niet onwetend dezelfde aangifte starten.
-- **Vraag de klant** maakt een taak aan in de eigen werkruimte van de klant. Kies een soort verzoek (bijvoorbeeld ontbrekende bonnen), voeg een titel en een notitie toe, en de klant ziet het als een gewoon to-do. Zodra de klant de taak afvinkt, is het verzoek opgelost en verdwijnt de werk-chip. Er is geen handmatige status 'wacht op klant' die je moet terugzetten; die volgt gewoon uit een open verzoek.
+- **Iets vragen aan deze klant** maakt een taak aan in de eigen werkruimte van de klant, met een melding erbij. Kies waar het over gaat (bijvoorbeeld ontbrekende bonnen), zeg wat je vraagt en voeg een toelichting toe, en de klant ziet het als een gewoon to-do. Zodra de klant de taak afvinkt, is het verzoek opgelost en verdwijnt de werk-chip. Er is geen handmatige status 'wacht op klant' die je moet terugzetten; die volgt gewoon uit een open verzoek. Alle openstaande vragen over al je klanten staan samen op **Verzoeken**, de oudste eerst.
 
 ## Een eigen bedrijf toevoegen
 
 Open **Bedrijf toevoegen** en geef het nieuwe bedrijf een naam.
 
-Als je een betaald abonnement hebt (Office), toont de app de extra kosten voordat je bevestigt. Tijdens je eigen Office-proefperiode betaal je niets voor het extra bedrijf; daarna wordt het tegen het getoonde tarief op je abonnement gezet.
+Meerdere eigen bedrijven zitten in **Office**: een extra bedrijf kost € 5,99 per maand of € 59,90 per jaar (excl. btw) bovenop Office, tot maximaal 10 eigen bedrijven. Op Desk heb je één bedrijf. De app toont de extra kosten voordat je bevestigt. Tijdens je eigen Office-proefperiode betaal je niets voor het extra bedrijf; daarna wordt het tegen het getoonde tarief op je abonnement gezet.
 
-Als je een gratis Office-werkruimte hebt (bijvoorbeeld via een gunst of founding-member-regeling), blijft je eerste bedrijf gratis en biedt de app nu een aparte checkout voor een tweede bedrijf. De prijs staat vooraf vermeld; alleen het tweede bedrijf wordt op een eigen add-on-abonnement gezet. Nadat de betaling is bevestigd, kun je het tweede bedrijf een naam geven.
+Heb je Office gratis via een vaste afspraak, dan geldt dat gratis Office voor één bedrijf. Voor een tweede bedrijf biedt de app een aparte checkout. De prijs staat vooraf vermeld; alleen het tweede bedrijf wordt op een eigen abonnement gezet. Nadat de betaling is bevestigd, kun je het tweede bedrijf een naam geven.
 
 ## Instellingen overnemen van een ander bedrijf
 
@@ -174,7 +179,7 @@ De klant maakt zelf een account en blijft eigenaar van de administratie. Jij kri
 
 ## Navigatie volgt je rol
 
-De linker zijbalk verbergt nu items die je huidige werkruimterol niet mag gebruiken, zodat je geen links meer ziet die een 403 geven. De API stuurt dit aan via een deny-lijst: als een nieuw endpoint voor een rol wordt afgeschermd, verdwijnt het navigatie-item automatisch.
+De linker zijbalk verbergt nu items die je huidige werkruimterol niet mag gebruiken, zodat je geen links meer ziet die een 403 geven. Wordt een onderdeel voor een rol afgeschermd, dan verdwijnt het menu-item vanzelf.
 
 In een klantwerkruimte is de rail korter, want onderdelen die bij de klant zelf horen (inbox, website, abonnement, teaminstellingen, domeinen en AI-hulp) zijn voor een boekhouder niet beschikbaar. De werkruimtekiezer en het item Werkruimtes blijven altijd zichtbaar, zodat je altijd tussen administraties kunt schakelen.
 
@@ -186,7 +191,7 @@ In een klantwerkruimte is de rail korter, want onderdelen die bij de klant zelf 
 
 ## Inzicht voor accountants
 
-De pagina Inzicht, `/werkruimtes/inzicht`, zet klantadministraties naast elkaar en toont de werkdruk per periode. Hij is alleen zichtbaar in de kantoor-werkruimte en alleen als je meer dan één klantadministratie beheert.
+De pagina Inzicht, `/werkruimtes/inzicht`, zet klantadministraties naast elkaar en toont de werkdruk per periode. Hij staat in de groep Klantwerk, die verschijnt zodra je klantadministraties beheert.
 
 De pagina bewust over aantallen en dagen, niet over bedragen:
 
@@ -225,12 +230,12 @@ Gebruik deze tabel om een opstapeling te zien voordat hij een deadlineprobleem w
 
 ### Wat er bewust NIET op staat
 
-**"Percentage aangiftes op tijd"** stond in het oorspronkelijke plan maar staat er niet. In MyCompanyDesk betekent "ingediend" dat een periode wordt afgesloten in `period_locks`. Een klant die ergens anders aangifte doet, krijgt die rij nooit. Een historisch percentage zou zo'n klant stelselmatig te laat noemen. Dat is een beschuldiging op basis van ontbrekende data, geen onnauwkeurigheid. Een kwaliteitscijfer als dit heeft eerst een expliciet signaal per administratie nodig dat de aangifte hier gebeurt.
+Een **"Percentage aangiftes op tijd"** staat er bewust niet. In MyCompanyDesk betekent "ingediend" dat een periode hier is afgesloten. Een klant die ergens anders aangifte doet, heeft hier nooit een afgesloten periode. Een historisch percentage zou zo'n klant stelselmatig te laat noemen. Dat is een beschuldiging op basis van ontbrekende data, geen onnauwkeurigheid. Een kwaliteitscijfer als dit heeft eerst een expliciet signaal per administratie nodig dat de aangifte hier gebeurt.
 
-In plaats daarvan bevat de vergelijkingstabel nu een kolom **Door jou afgesloten**. Die toont hoeveel van de laatste perioden van de klant hier zijn afgesloten, op basis van dezelfde `period_locks`-data. Een klant die ergens anders aangifte doet, komt op 0 uit, want hier is niets afgesloten. De kolom is bewust neutraal en wordt nooit rood, omdat hij over jouw eigen administratie gaat, niet over het gedrag van de klant.
+In plaats daarvan bevat de vergelijkingstabel nu een kolom **Door jou afgesloten**. Die toont hoeveel van de laatste perioden van de klant hier zijn afgesloten, op basis van dezelfde afgesloten perioden. Een klant die ergens anders aangifte doet, komt op 0 uit, want hier is niets afgesloten. De kolom is bewust neutraal en wordt nooit rood, omdat hij over jouw eigen administratie gaat, niet over het gedrag van de klant.
 
 ## Gerelateerd
 
-- [Toegang en boekhouder](/settings/team) voor het uitnodigen van teamgenoten en boekhouders en het instellen van paginarechten
+- [Mensen met toegang en je boekhouder](/settings/team) voor het uitnodigen van teamgenoten en boekhouders en het instellen van paginarechten
 - [Rapporten](/features/reports) voor de weggebleven-klantenweergave en andere rapporten
 - [Dashboard](/features/dashboard) voor de dagelijkse briefing van één werkruimte

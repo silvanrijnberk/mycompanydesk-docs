@@ -1,7 +1,7 @@
 ---
 title: Peppol e-facturatie
 description: "Verstuur facturen en creditnota's als gestructureerde e-factuur via Peppol, rechtstreeks in de boekhouding van je klant, en ontvang ze net zo goed."
-last_verified: 2026-08-15
+last_verified: 2026-10-13
 ---
 
 # Peppol e-facturatie
@@ -18,7 +18,7 @@ Als de leverancier ook MyCompanyDesk gebruikt, kun je zijn gestructureerde factu
 
 ## Beschikbaarheid
 
-Peppol e-facturatie is beschikbaar op het Office-abonnement. Werkruimtes op Desk zien de opties voor e-factuurverzending en -ontvangst niet.
+Peppol e-facturatie is beschikbaar op het Office-abonnement. Op Desk zie je in de factuurinstellingen een knop om over te stappen in plaats van de Peppol-instellingen.
 
 ## Voordat je kunt versturen
 
@@ -32,7 +32,7 @@ Voordat je voor het eerst via Peppol verstuurt, heeft MyCompanyDesk je bedrijfsg
 
 Ontbreekt er een gegeven, dan vraagt de factuurinstellingenpagina je om deze aan te vullen voordat je e-facturatie kunt inschakelen. Je bestaande bedrijfsprofielvelden worden hergebruikt, dus je hoeft ze niet twee keer in te voeren.
 
-Als je e-facturatie inschakelt, geef je toestemming om je KVK-nummer, btw-nummer en bedrijfsadres te registreren bij het Peppol-toegangspunt. MyCompanyDesk maakt verbinding met het netwerk via een Recommand-toegangspunt.
+Als je e-facturatie inschakelt, geef je toestemming om je KVK-nummer, btw-nummer en bedrijfsadres te registreren bij het Peppol-toegangspunt. MyCompanyDesk maakt verbinding met het netwerk via een Recommand-toegangspunt. Peppol vraagt daarnaast eenmalig een identiteitscheck van iemand die tekenbevoegd is voor het bedrijf: de knop **Verifieer je identiteit** opent die check in een nieuw tabblad. Zolang die niet rond is, kun je nog geen e-facturen versturen of ontvangen.
 
 ## Een e-factuur versturen
 
@@ -77,7 +77,7 @@ Als je ontvangen inschakelt, worden je KVK-nummer en btw-nummer geregistreerd al
 
 ### Ontvangen inschakelen
 
-1. Open **Instellingen > Facturen** (`/settings/facturen`)
+1. Open **Instellingen › Facturen en offertes** (`/settings/facturen`)
 2. Klik in het Peppol-gedeelte op **Ontvangen inschakelen**
 3. Bevestig dat je KVK- en btw-nummer als ontvanger op het Peppol-netwerk mogen worden geregistreerd
 
@@ -93,7 +93,7 @@ Elke e-factuur landt als conceptuitgave bij **Uitgaven**. De conceptuitgave is v
 
 ### Ontvangen uitschakelen
 
-Open **Instellingen > Facturen**, ga naar het Peppol-gedeelte en klik op **Ontvangen uitschakelen**. Je ontvangt geen nieuwe e-facturen meer via Peppol, maar bestaande concept- en geboekte uitgaven blijven ongewijzigd. Je kunt ontvangen op elk moment weer aanzetten.
+Open **Instellingen › Facturen en offertes**, ga naar het Peppol-gedeelte en klik op **Ontvangen uitschakelen**. Je ontvangt geen nieuwe e-facturen meer via Peppol, maar bestaande concept- en geboekte uitgaven blijven ongewijzigd. Je kunt ontvangen op elk moment weer aanzetten.
 
 ## Peppol e-facturatie uitschakelen
 
@@ -101,7 +101,7 @@ Wil je niet langer e-facturen versturen of ontvangen via MyCompanyDesk, dan kun 
 
 Zo schakel je Peppol e-facturatie uit:
 
-1. Open **Instellingen > Facturen** (`/settings/facturen`)
+1. Open **Instellingen › Facturen en offertes** (`/settings/facturen`)
 2. Klik in het Peppol-gedeelte op **E-facturatie uitschakelen**
 3. Bevestig dat je je bedrijf wilt afmelden bij het Peppol-netwerk
 
@@ -109,8 +109,8 @@ Na bevestiging stoppen versturen en ontvangen direct. Wil je later toch weer geb
 
 ## Ondersteunde documenttypen
 
-- **Factuur** — standaard factuurtype
-- **Creditnota** — correctie voor terugbetalingen of aanpassingen
+- **Factuur**: standaard factuurtype
+- **Creditnota**: correctie voor terugbetalingen of aanpassingen
 
 ## Wat je klant nodig heeft
 
@@ -134,5 +134,5 @@ Je klant moet bereikbaar zijn op het Peppol-netwerk. In de praktijk betekent dit
 
 ## Zie ook
 
-- [Facturen](/features/invoices) — facturen aanmaken en versturen
-- [Instellingen: abonnement en betalingen](/settings/billing) — welke abonnementen Peppol e-facturatie bevatten
+- [Facturen](/features/invoices): facturen aanmaken en versturen
+- [Abonnement & betalingen](/settings/billing): welke abonnementen Peppol e-facturatie bevatten

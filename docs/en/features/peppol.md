@@ -1,7 +1,7 @@
 ---
 title: Peppol e-invoicing
 description: "Send invoices and credit notes as structured e-invoices over the Peppol network, straight into your customer's accounting software, and receive them too."
-last_verified: 2026-08-15
+last_verified: 2026-10-13
 ---
 
 # Peppol e-invoicing
@@ -18,7 +18,7 @@ If the supplier also uses MyCompanyDesk, you can receive their structured invoic
 
 ## Availability
 
-Peppol e-invoicing is available on the Office plan. Workspaces on Desk do not see the e-invoice sending or receiving options.
+Peppol e-invoicing is available on the Office plan. On Desk, the invoice settings show an upgrade button instead of the Peppol settings.
 
 ## Before you can send
 
@@ -32,7 +32,7 @@ Before the first Peppol send, MyCompanyDesk needs your company details. These ar
 
 If any of these are missing, the invoice settings page will ask you to complete them before you can enable e-invoicing. Your existing company profile fields are reused, so you do not enter them twice.
 
-When you enable e-invoicing, you consent to registering your KVK number, VAT number and business address with the Peppol access point. MyCompanyDesk uses a Recommand access point to connect to the network.
+When you enable e-invoicing, you consent to registering your KVK number, VAT number and business address with the Peppol access point. MyCompanyDesk uses a Recommand access point to connect to the network. Peppol also requires a one-time identity check by someone authorised to sign for the company: the **Verify your identity** button opens that check in a new tab. Until it is complete, you cannot send or receive e-invoices yet.
 
 ## Sending an e-invoice
 
@@ -77,7 +77,7 @@ When you enable receiving, your KVK number and VAT number are registered as a Pe
 
 ### Enabling receiving
 
-1. Open **Settings > Invoices** (`/settings/facturen`)
+1. Open **Settings › Invoices and quotes** (`/settings/facturen`)
 2. In the Peppol section, click **Enable receiving**
 3. Confirm that your KVK/VAT may be registered as a receiver on the Peppol network
 
@@ -93,7 +93,7 @@ Each e-invoice lands as a draft expense under **Expenses**. The draft is prefill
 
 ### Disabling receiving
 
-Open **Settings > Invoices**, go to the Peppol section and click **Disable receiving**. You will stop receiving new e-invoices via Peppol, but existing draft and booked expenses stay unchanged. You can re-enable receiving at any time.
+Open **Settings › Invoices and quotes**, go to the Peppol section and click **Disable receiving**. You will stop receiving new e-invoices via Peppol, but existing draft and booked expenses stay unchanged. You can re-enable receiving at any time.
 
 ## Disabling Peppol e-invoicing
 
@@ -101,7 +101,7 @@ If you no longer want to send or receive e-invoices through MyCompanyDesk, you c
 
 To disable Peppol e-invoicing:
 
-1. Open **Settings > Invoices** (`/settings/facturen`)
+1. Open **Settings › Invoices and quotes** (`/settings/facturen`)
 2. In the Peppol section, click **Disable e-invoicing**
 3. Confirm that you want to deregister from the Peppol network
 
@@ -109,8 +109,8 @@ After you confirm, sending and receiving e-invoices stops immediately. If you la
 
 ## Supported document types
 
-- **Invoice** — standard billing document
-- **Credit note** — adjustment for refunds or corrections
+- **Invoice**: standard billing document
+- **Credit note**: adjustment for refunds or corrections
 
 ## What your customer needs
 
@@ -134,5 +134,5 @@ Your customer must be reachable on the Peppol network. In practice this means th
 
 ## Related
 
-- [Invoices](/en/features/invoices) — creating and sending invoices
-- [Settings: Plan & payments](/en/settings/billing) — which plans include Peppol e-invoicing
+- [Invoices](/en/features/invoices): creating and sending invoices
+- [Plan & payments](/en/settings/billing): which plans include Peppol e-invoicing

@@ -6,7 +6,7 @@ last_verified: 2026-09-30
 
 # Dashboard
 
-The dashboard at `/dashboard` is the home screen of your workspace. It is one page (internally we call it **Mijn bedrijf**, my business) that holds the money, the parts of your business that ask for attention, and everything else you can switch on. Every number comes from your own data, today, without a second step after it.
+The dashboard at `/dashboard` is the home screen of your workspace. It is one page that holds the money, the parts of your business that ask for attention, and everything else you can switch on. Every number comes from your own data, today, without a second step after it.
 
 A second page sits behind it: **Figures** (`/cijfers`), the analysis view with the KPI tiles, the trend chart, ageing and the other deep figures that used to live on the dashboard. The money card links to it, and the sidebar has its own **Figures** entry.
 
@@ -26,7 +26,7 @@ When your trial is about to end, that appears here first, above everything else,
 
 One rule keeps this list free of noise: **Te laat** (overdue) only counts when MyCompanyDesk knows your payments. A payment registered in the last six months shows the book is being tracked; a bank connection or online payments alone does not, because a connection nobody ticks off, or online payments that stay switched on while customers transfer, would mark every invoice late. Invoices are only put in this list as overdue when that signal is there.
 
-The same list also lands in your mailbox every Monday: only when there is something to do, only for the workspace owner, and with a ping on your phone when something on it is urgent. You turn the mail on or off under Settings → Meldingen (notifications).
+The same list also lands in your mailbox every Monday: only when there is something to do, only for the workspace owner, and with a ping on your phone when something on it is urgent. You turn the mail on or off under Settings › Notifications.
 
 ## The money card
 
@@ -51,14 +51,14 @@ Each card reads its own source: the website card shows visitors and views (the d
 
 Parts that are running without their own card content do not get an empty card; they appear by name under **All modules** (Alle onderdelen) instead, so the grid only carries cards with something to show.
 
-## Set this up next (Zet dit op)
+## Set this up (Zet dit op)
 
-What you have not started yet comes in under **Set this up next**: up to three next steps to set up, each with a reason from your own data ("8 invoices still open? With a payment button in the mail your customers pay immediately"), a short minutes estimate, and a **Not for me** cross on any step you will never do. The steps are read live from your data, not from a fixed checklist: a done step closes itself, and it never disagrees with reality.
+What you have not started yet comes in under **Set this up**: up to three next steps to set up, each with a reason from your own data ("8 invoices still open? With a payment button in the mail your customers pay immediately"), a short minutes estimate, and a **Not for me** cross on any step you will never do. The steps are read live from your data, not from a fixed checklist: a done step closes itself, and it never disagrees with reality.
 
 The banners that used to stand above the dashboard are gone; every notification now sits where it belongs:
 
 - the trial that is about to end is the first line in **Do now**
-- securing your account, setting a payment method, push notifications and the free domain appear as steps in **Set this up next**
+- securing your account, setting a payment method, push notifications and the free domain appear as steps in **Set this up**
 - product news and the link to the app form a compact line under the rest
 
 If you had dismissed one of those banners before, it stays dismissed: the conditions and the hide switches are the same.
@@ -67,15 +67,15 @@ If you had dismissed one of those banners before, it stays dismissed: the condit
 
 Under the cards sits the **All modules** list: everything already in use without its own card, and everything not yet in use, as one discoverable list.
 
-- A cross turns a module in use off, the same switch you find under **Settings → Modules**. A switched-off module also disappears from the sidebar, so the menu and the page keep telling the same story, and it returns from the restore list at the bottom. On a module that has not started yet, the cross is a **Not for me** instead (see below).
+- A cross turns a module in use off, the same switch you find under **Settings › Modules**. A switched-off module also disappears from the sidebar, so the menu and the page keep telling the same story, and it returns from the restore list at the bottom. On a module that has not started yet, the cross is a **Not for me** instead (see below).
 - Where a module shares its switch with another one, both are switched and restored together.
 - A module your plan does not include stays visible, marked with the plan that unlocks it, so you know it exists.
 
 ## Not for me (Niet voor mij)
 
-A suggestion you will never act on can be told so once, for the whole workspace. On a chip under All modules, or on a setup step in **Set this up next**, the cross of a module you have not started yet is a **Not for me**: there is nothing to switch off, so the module is dismissed instead. Any such module that does carry its own card puts the same choice in the card menu.
+A suggestion you will never act on can be told so once, for the whole workspace. On a chip under All modules, or on a setup step in **Set this up**, the cross of a module you have not started yet is a **Not for me**: there is nothing to switch off, so the module is dismissed instead. Any such module that does carry its own card puts the same choice in the card menu.
 
-After that the dashboard stops proposing it: the step leaves **Set this up next** and the Monday mail, which reads the same list, and the module no longer comes back as a chip. **Do now** stays as it is, because that is real backlog, not suggestion. When the module starts running anyway, it simply gets its card back.
+After that the dashboard stops proposing it: the step leaves **Set this up** and the Monday mail, which reads the same list, and the module no longer comes back as a chip. **Do now** stays as it is, because that is real backlog, not suggestion. When the module starts running anyway, it simply gets its card back.
 
 Not everything can leave this way. A module that is running or asking for attention keeps its card, because you already work with it; a partly set up module with its own card content stays too, so your own data never leaves the dashboard at one click; and the core parts of the app never get this choice.
 
@@ -85,7 +85,7 @@ Everything marked this way returns from the bottom of the page: the list at the 
 
 ## First visit
 
-A new workspace receives the same page, because setup now happens there: there is no separate first-run takeover anymore. **Set this up next** puts **First invoice** at the top as long as no invoice has been sent. The old starting checklist, whose tasks closed but never reopened and slowly drifted away from reality, is gone. The app banner stays quiet until your first invoice has been sent, so a fresh workspace is not asked for the app before anything has gone out.
+A new workspace receives the same page, because setup now happens there: there is no separate first-run takeover anymore. **Set this up** puts **First invoice** at the top as long as no invoice has been sent. The old starting checklist, whose tasks closed but never reopened and slowly drifted away from reality, is gone. The app banner stays quiet until your first invoice has been sent, so a fresh workspace is not asked for the app before anything has gone out.
 
 ## For accountants
 
@@ -93,7 +93,7 @@ A bookkeeper looking along in someone else's books sees the dashboard the way th
 
 ## Figures: the analysis view
 
-The deep figures of the old dashboard live here. The page holds figures only: what wants something from you, such as the attention items and the recent-activity feed, stands on Mijn bedrijf instead. It is a single scrollable view built from the blocks below; a block only renders when your data satisfies the test for it.
+The deep figures of the old dashboard live here. The page holds figures only: what wants something from you, such as the attention items and the recent-activity feed, stands on the dashboard instead. It is a single scrollable view built from the blocks below; a block only renders when your data satisfies the test for it.
 
 ## Period switcher
 
@@ -105,22 +105,25 @@ The KPI row always shows five tiles. Each tile shows one headline figure, a comp
 
 | Tile | What it shows |
 |---|---|
-| **Cash** | Current cash position, either from a connected bank account or, without one, estimated from the liquid assets in your books, plus runway in weeks |
+| **Cash** | Current cash position from a connected bank account. Without one, the tile reads as an estimated balance taken from the liquid assets in your books. Plus runway in weeks |
 | **Receivables** | Outstanding invoices, with the overdue slice called out |
 | **Revenue** | Revenue for the selected period and the pace for the full period, with change vs the previous comparable period |
 | **Payables** | Money you still need to pay out, with the overdue slice called out |
 | **Profit** | Net profit for the selected period, with margin when it can be computed |
 
+When the hours block is on the page (you log hours), the row speaks the language of an hours-based business: **Revenue** and **Payables** make way for **Hours** (with the billable share) and **Unbilled work** (with how long the oldest work has been waiting).
+
 ### Cash tile
 
-The **Cash** tile shows, alongside your balance, what is already committed. Two lines break this down:
+The **Cash** tile shows, alongside your balance, what is already committed. Up to three lines break this down, only when something is actually reserved:
 
 - **Reserved for VAT** - the positive quarter balance that should already be set aside
+- **Tax on your profit** - the estimated tax on your profit so far
 - **Fixed costs per month** - your monthly fixed costs
 
 The final line shows **Free to spend**: what actually remains after those reservations. The VAT reservation uses the same quarter logic as the VAT card so monthly filers and early submitters do not see the wrong amount subtracted.
 
-The balance counts your business accounts: a linked personal account stays out of the cash position and the cash forecast. Its withdrawals that might be business expenses are named separately in the to-process lines instead, so the number you see here matches Boekhouding → Bank and the badge on Transacties.
+The balance counts your business accounts: a linked personal account stays out of the cash position and the cash forecast. Its withdrawals that might be business expenses are named separately in the to-process lines instead, so the number you see here matches Boekhouding › Bank and the badge on Transacties.
 
 A tile that has no honest history renders without a sparkline rather than invent a flat line. The colour of a delta badge follows meaning, not just direction: receivables rising is bad news even though the arrow points up.
 
@@ -139,12 +142,15 @@ The blocks below the KPI row appear only when they earn their place. The catalog
 | **Expense mix** | Cost breakdown by category, shown as bars |
 | **Cash chart** | Cash position over 12 months with forecast |
 | **VAT card** | Current VAT period, checklist progress, and next deadline |
+| **Hours these weeks** | Hours logged over the past weeks, billable and internal |
+| **Project margins** | Revenue, costs and margin per project |
+| **Fixed costs** | Monthly recurring income and costs, and how much of your fixed costs your contracts cover |
 
 On phones, large visual forms fall back to simpler forms so the numbers remain readable.
 
 ## Loading and error states
 
-A skeleton mirrors the final shape of the view, so the page never shifts under your eyes. If the load of **Mijn bedrijf** fails, the page says what is wrong and carries a retry button, instead of an all-clear built from empty data. If the card contents fail while the overall state did load, every card falls back to the one sentence of its state. On the **Figures** page an error carries the same retry, and a period switch that fails while older figures are on screen shows a stale notice with an inline retry.
+A skeleton mirrors the final shape of the view, so the page never shifts under your eyes. If the dashboard fails to load, the page says what is wrong and carries a retry button, instead of an all-clear built from empty data. If the card contents fail while the overall state did load, every card falls back to the one sentence of its state. On the **Figures** page an error carries the same retry, and a period switch that fails while older figures are on screen shows a stale notice with an inline retry.
 
 ## See also
 

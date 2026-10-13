@@ -23,7 +23,7 @@ chatbot:
 
 MyCompanyDesk kan klanten, facturen en uitgaven importeren uit een CSV-bestand. Andere gegevenstypes kun je niet importeren.
 
-De importpagina staat op `/profile/import`. Er is geen menu-ingang voor, dus open de pagina via de knop hierboven of door het adres direct in te voeren. Daarna:
+Je opent de importpagina ("CSV-gegevens importeren") via Instellingen › "Overstappen" met "Klanten importeren" of "Facturen importeren", of in de klantenlijst met de knop "Importeren". Daarna:
 
 1. Kies het gegevenstype: klanten, facturen of uitgaven
 2. Upload je CSV-bestand

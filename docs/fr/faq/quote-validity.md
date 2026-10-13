@@ -1,6 +1,6 @@
 ---
 title: "Validité des devis"
-description: "La validité des devis se règle à un seul endroit : allez dans Paramètres > Factures et devis."
+description: "La validité des devis se règle à un seul endroit : allez dans Paramètres › Factures et devis."
 last_verified: 2026-07-02
 chatbot:
   triggers: ["quote validity", "valid until quote", "quote expiry", "quote expiration", "how long quote valid", "quote valid days", "geldigheid offerte", "offerte geldig", "angebotsgultigkeit", "devis validite", "validez devis", "validez cotizacion", "validade proposta"]
@@ -10,7 +10,7 @@ chatbot:
 ---
 
 La validité des devis se règle à un seul endroit :
-1. Allez dans Paramètres → "Factures et devis"
+1. Allez dans Paramètres › "Factures et devis"
 2. Sous "Combien de temps un devis reste-t-il valable ?", choisissez 2 semaines, 1 mois ou 2 mois
 3. Les modifications sont enregistrées automatiquement
 

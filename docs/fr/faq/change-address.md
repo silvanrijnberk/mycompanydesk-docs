@@ -1,6 +1,6 @@
 ---
 title: "Modifier votre adresse"
-description: "Pour changer l'adresse de votre entreprise : allez dans Paramètres > Données de l'entreprise."
+description: "Pour changer l'adresse de votre entreprise : allez dans Paramètres › Données de l'entreprise."
 last_verified: 2026-08-08
 chatbot:
   triggers:
@@ -24,7 +24,7 @@ chatbot:
 ---
 
 Pour changer l'adresse de votre entreprise :
-1. Allez dans Paramètres → « Données de l'entreprise »
+1. Allez dans Paramètres › « Données de l'entreprise »
 2. Utilisez l'aide d'adresse pour rechercher puis appliquer la nouvelle adresse. Si l'aide ne peut pas résoudre l'adresse complètement, saisissez le code postal et la ville vous-même.
 3. Les nouveaux documents utiliseront ensuite l'adresse mise à jour
 

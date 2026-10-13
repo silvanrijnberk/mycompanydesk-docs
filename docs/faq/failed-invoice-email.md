@@ -13,7 +13,7 @@ chatbot:
 Zo los je een mislukte factuur-e-mail op:
 1. Controleer of het juiste e-mailadres bij de klant staat
 2. Open de detailpagina van de factuur en bekijk de bezorgstatus of eventuele foutmelding
-3. Controleer je e-mailinstellingen via Instellingen → "E-mail"
+3. Controleer je e-mailinstellingen via Instellingen › "E-mail"
 4. Verstuur de factuur opnieuw; ook een concept kun je gewoon mailen, Versturen is de hoofdactie en rondt het concept in dezelfde stap af
 5. Komt de mail nog steeds niet aan? Vraag de klant dan de spam- of ongewenste-mailmap te checken
 

@@ -21,30 +21,28 @@ Common use cases:
 
 ## Creating a recurring expense
 
-1. Go to **Recurring Expenses > New**
+1. Go to **Recurring**, tab **Expenses**, and click **Add recurring expense**
 2. Fill in the template:
-   - **Description**: what the expense is for
-   - **Supplier**: free-form supplier name, with autocomplete for previously used vendors
-   - **Country** and **Registration number (KVK)**: optional supplier identity fields; when filled, they flow into every expense generated from this template
-   - **Amount**: the recurring cost
-   - **Category**: expense category
-   - **VAT rate**: applicable VAT
-   - **VAT treatment**: how the expense is handled for your VAT return
-   - **Frequency**: weekly, monthly, quarterly, or yearly
+   - **Name**: what the expense is for
+   - **Supplier**: the supplier's name. As you type, the field suggests suppliers you used before and companies from the KVK register
+   - **Category**: the expense category
+   - **Description** and optionally a **Project**
+   - Under **Schedule**: the **Frequency** (weekly, monthly, quarterly or yearly) and the **Start Date**
+   - Under **Expense details**: the **Amount excl. VAT**, the **VAT Rate**, whether the VAT is deductible (**VAT deductible**) and the **VAT treatment**, which is how the expense is handled in your VAT return
 3. Click **Save**
 
-::: tip More options
-The recurring-expense form keeps optional details behind **More options**. Notes and the supplier identity fields sit there by default; expand the section when you want to add them.
+::: tip Expense details
+On a new recurring expense the **Expense details** block starts collapsed; expand it to fill in the amounts and VAT. When you edit an existing recurring expense, it is open straight away.
 :::
 
 ### Supplier identity
 
-Filling the supplier name, country, and KVK number on a recurring template has two effects:
+When you pick a company under **From the Trade Register (KVK)** in the **Supplier** field, the template also stores that supplier's KVK number and country, and a **KVK** label appears next to the name. That has two effects:
 
 - **Supplier suggestions** use the saved identity, so you do not have to reselect the same vendor each month.
 - **Generated expenses** carry the same supplier identity as the template, which means reverse-charge and import-VAT logic (for example EU B2B or non-EU suppliers) is applied automatically, just like on a manually entered expense.
 
-If you edit the supplier name later and it no longer matches the saved KVK record, the KVK and country fields are cleared to prevent stale identity data.
+If you edit the supplier name later and it no longer matches the chosen KVK company, the KVK number and country are cleared. **Unlink from KVK** removes the link yourself. That way no stale identity data stays behind.
 
 ## Frequency options
 

@@ -1,7 +1,7 @@
 ---
 title: "Mark an expense as paid"
-description: "To mark an expense as paid: open the expense from the list, click Mark as Paid, the status updates to Paid right away."
-last_verified: 2026-05-09
+description: "To mark an expense as paid: open the expense from the list, click Mark as paid, the status updates to Paid right away."
+last_verified: 2026-10-13
 chatbot:
   triggers:
     - "mark expense paid"
@@ -22,7 +22,7 @@ chatbot:
 
 To mark an expense as paid:
 1. Open the expense from the list
-2. Click "Mark as Paid"
+2. Click "Mark as paid"
 3. The status updates to Paid right away
 
 That single click is all it takes: there is no payment date prompt and no separate save step.

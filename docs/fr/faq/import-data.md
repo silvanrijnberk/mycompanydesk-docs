@@ -23,7 +23,7 @@ chatbot:
 
 MyCompanyDesk peut importer des clients, des factures et des dépenses depuis un fichier CSV. Les autres types de données ne peuvent pas être importés.
 
-La page d'import se trouve sur `/profile/import`. Il n'y a pas d'entrée de menu pour cette page ; ouvrez-la via le bouton ci-dessus ou en saisissant l'adresse directement. Ensuite :
+Vous ouvrez la page d'import (« Importer des données CSV ») via Paramètres › « Migration » avec « Importer des clients » ou « Importer des factures », ou avec le bouton « Importer » dans la liste des clients. Ensuite :
 
 1. Choisissez le type de données : clients, factures ou dépenses
 2. Téléversez votre fichier CSV

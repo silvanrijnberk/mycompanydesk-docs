@@ -1,93 +1,91 @@
 ---
-title: Depenses recurrentes
+title: Dépenses récurrentes
 description: "Automatisez les charges régulières comme le loyer, les abonnements, les assurances et les services avec des modèles qui créent les dépenses."
 ---
 
-# Depenses recurrentes
+# Dépenses récurrentes
 
-Automatisez le suivi de vos couts professionnels reguliers comme le loyer, les abonnements et les charges.
+Automatisez le suivi de vos coûts professionnels réguliers, comme le loyer, les abonnements et les charges.
 
 ## Vue d'ensemble
 
-Les depenses recurrentes fonctionnent comme les factures recurrentes mais pour les couts. Configurez un modele et laissez MyCompanyDesk creer automatiquement des enregistrements de depenses.
+Les dépenses récurrentes fonctionnent comme les factures récurrentes, mais pour les coûts. Configurez un modèle et laissez MyCompanyDesk créer automatiquement les dépenses.
 
 Cas d'utilisation courants :
 
 - Loyer du bureau
 - Abonnements logiciels
 - Primes d'assurance
-- Factures de charges
+- Factures d'énergie
 - Paiements de leasing
 
-## Creer une depense recurrente
+## Créer une dépense récurrente
 
-1. Allez dans **Depenses recurrentes > Nouveau**
-2. Remplissez le modele :
-   - **Description** : l'objet de la depense
-   - **Fournisseur**: nom de fournisseur libre, avec autocompletion pour les fournisseurs deja utilises
-   - **Pays** et **Numero d'enregistrement (KVK)**: champs optionnels pour l'identite du fournisseur; lorsqu'ils sont renseignes, ils sont reportes dans chaque depense generee a partir de ce modele
-   - **Montant**: le cout recurrent
-   - **Categorie**: categorie de depense
-   - **Taux de TVA**: TVA applicable
-   - **Traitement de TVA**: comment la depense est traitee pour la declaration de TVA
-   - **Frequence**: hebdomadaire, mensuelle, trimestrielle ou annuelle
+1. Ouvrez **Récurrent**, onglet **Dépenses**, et cliquez sur **Ajouter une dépense récurrente**
+2. Remplissez le modèle :
+   - **Nom** : l'objet de la dépense
+   - **Fournisseur** : le nom du fournisseur. Pendant la saisie, le champ propose les fournisseurs déjà utilisés et des entreprises du registre néerlandais du commerce (KVK)
+   - **Catégorie** : la catégorie de dépense
+   - **Description** et, si besoin, un **Projet**
+   - Sous **Planification** : la **Fréquence** (hebdomadaire, mensuelle, trimestrielle ou annuelle) et la **Date de début**
+   - Sous **Détails de la dépense** : le **Montant HT**, le **Taux de TVA**, la déductibilité de la TVA (**TVA déductible**) et le **Traitement TVA**, c'est-à-dire la façon dont la dépense entre dans votre déclaration de TVA
 3. Cliquez sur **Enregistrer**
 
-::: tip Plus d'options
-Dans le formulaire de depense recurrente, les champs optionnels restent ranges sous **Plus d'options**. Les notes et l'identite du fournisseur s'y trouvent par defaut; depliez la section pour les ajouter.
+::: tip Détails de la dépense
+Pour une nouvelle dépense récurrente, le bloc **Détails de la dépense** est replié ; dépliez-le pour saisir les montants et la TVA. Quand vous modifiez une dépense récurrente existante, il est ouvert d'emblée.
 :::
 
-### Identite du fournisseur
+### Identité du fournisseur
 
-Renseigner le nom du fournisseur, le pays et le numero KVK dans un modele recurrent a deux effets :
+Si vous choisissez dans le champ **Fournisseur** une entreprise sous **Depuis le registre du commerce (KVK)**, le modèle enregistre aussi le numéro KVK et le pays de ce fournisseur, et une étiquette **KVK** apparaît à côté du nom. Cela a deux effets :
 
-- **Les suggestions de fournisseurs** utilisent l'identite enregistree, ce qui evite de reselectionner le meme fournisseur chaque mois.
-- **Les depenses generees** conservent la meme identite de fournisseur que le modele. Ainsi, la logique d'autoliquidation ou de TVA a l'importation (par exemple pour des achats intracommunautaires ou hors UE) est appliquee automatiquement, comme pour une depense saisie manuellement.
+- **Les suggestions de fournisseurs** utilisent l'identité enregistrée, ce qui évite de resélectionner le même fournisseur chaque mois.
+- **Les dépenses générées** gardent la même identité de fournisseur que le modèle. Ainsi, la logique d'autoliquidation et de TVA à l'importation (par exemple pour des achats intracommunautaires ou hors UE) s'applique automatiquement, comme pour une dépense saisie à la main.
 
-Si vous modifiez le nom du fournisseur et qu'il ne correspond plus a l'enregistrement KVK enregistre, les champs KVK et pays sont effaces. Le formulaire evite ainsi qu'une identite de fournisseur obsolete persiste.
+Si vous modifiez plus tard le nom du fournisseur et qu'il ne correspond plus à l'entreprise KVK choisie, le numéro KVK et le pays sont effacés. **Dissocier la liaison KVK** retire aussi le lien vous-même. Aucune identité obsolète ne reste ainsi en place.
 
-## Options de frequence
+## Options de fréquence
 
-| Frequence | Description |
+| Fréquence | Description |
 |---|---|
 | **Hebdomadaire** | Tous les 7 jours |
-| **Mensuelle** | Le meme jour chaque mois |
+| **Mensuelle** | Le même jour chaque mois |
 | **Trimestrielle** | Tous les 3 mois |
 | **Annuelle** | Une fois par an |
 
-## Gerer les depenses recurrentes
+## Gérer les dépenses récurrentes
 
 ### Mettre en pause / Reprendre
 
-Activez ou desactivez la generation automatique. La mise en pause arrete la creation de nouvelles depenses ; la reprise continue a partir de la prochaine date programmee.
+Activez ou désactivez la génération automatique. La mise en pause arrête la création de nouvelles dépenses ; la reprise continue à partir de la prochaine date prévue.
 
 ### Modifier
 
-Les modifications du modele n'affectent que les depenses futures. Les depenses existantes ne sont pas modifiees.
+Les modifications du modèle n'affectent que les dépenses futures. Les dépenses existantes ne sont pas modifiées.
 
 ### Supprimer
 
-Supprimez le modele. Les depenses precedemment generees restent dans vos archives.
+Supprimez le modèle. Les dépenses déjà générées restent dans votre comptabilité.
 
-## Depenses generees
+## Dépenses générées
 
-Chaque depense generee :
+Chaque dépense générée :
 
-- Correspond au montant, a la categorie et aux parametres de TVA du modele
-- Reporte l'identite du fournisseur du modele (nom, pays et numero KVK) lorsque ces champs sont renseignes
-- Est datee a la date d'occurrence programmee
-- Peut etre modifiee independamment apres creation
+- reprend le montant, la catégorie et les réglages de TVA du modèle
+- reprend l'identité du fournisseur du modèle (nom, pays et numéro KVK) lorsqu'elle est renseignée
+- est datée du jour d'occurrence prévu
+- peut être modifiée indépendamment après sa création
 
 ## Lien source
 
-Si une depense a ete creee a partir d'un modele recurrent, la page de detail de la depense affiche un bandeau **Cree automatiquement depuis une depense recurrente**. Tant que le modele existe encore, le bandeau renvoie vers celui-ci et vous pouvez passer en un clic de la depense au modele qui l'a generee. S'il a ete supprime entre-temps, le bandeau affiche un simple texte au lieu d'un lien mort.
+Si une dépense a été créée à partir d'un modèle récurrent, la page de la dépense affiche un bandeau **Créée automatiquement depuis** suivi du nom de la dépense récurrente. Tant que le modèle existe, le bandeau renvoie vers lui et vous passez en un clic de la dépense au modèle qui l'a générée. S'il a été supprimé entre-temps, le bandeau affiche un simple texte au lieu d'un lien mort.
 
 ## Que se passe-t-il si ma formule change ?
 
-Les dépenses récurrentes font partie de la formule Office. En montant de version de Desk vers Office, la génération automatique démarre à la prochaine échéance. Si vous rétrogradez d'Office vers Desk, la génération se met en pause automatiquement. Le modèle et les dépenses déjà créées restent dans votre espace de travail, et le planning reprend lors d'une nouvelle montée de version.
+Les dépenses récurrentes font partie de la formule Office. En montant de version de Desk vers Office, la génération automatique démarre à la prochaine échéance. Si vous rétrogradez d'Office vers Desk, la génération se met en pause automatiquement. Le modèle et les dépenses déjà créées restent dans votre espace de travail, et le calendrier reprend lors d'une nouvelle montée de version.
 
 ## Conseils
 
-- Examinez periodiquement vos depenses recurrentes pour detecter les abonnements annules
-- Liez les depenses recurrentes aux projets pour un calcul precis des couts par projet
-- Utilisez les categories de maniere coherente pour des rapports pertinents
+- Passez régulièrement en revue vos dépenses récurrentes pour repérer les abonnements résiliés
+- Liez les dépenses récurrentes aux projets pour un calcul précis des coûts par projet
+- Utilisez les catégories de façon cohérente pour des rapports pertinents

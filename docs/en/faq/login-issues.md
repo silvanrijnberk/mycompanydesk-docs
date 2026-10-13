@@ -1,6 +1,6 @@
 ---
 title: "Login issues"
-description: "If you're having trouble logging in: try Forgot Password on the login page to reset, check your spam/junk folder for verification emails."
+description: "If you're having trouble logging in: try Forgot password on the login page to reset, check your spam/junk folder for verification emails."
 last_verified: 2026-10-13
 chatbot:
   triggers: ["cannot login", "cant login", "login problem", "forgot password", "reset password", "locked out", "verification email", "email not received", "kan niet inloggen", "wachtwoord vergeten", "passwort vergessen", "mot de passe oublie"]
@@ -9,10 +9,10 @@ chatbot:
 ---
 
 If you're having trouble logging in:
-1. Try "Forgot Password" on the login page to reset
+1. Try "Forgot password?" on the login page to reset
 2. Check your spam/junk folder for verification emails
 3. Make sure you're using the correct email address. When you resend a verification email from the login page, the on-screen confirmation tells you which address it was sent to
 4. Clear your browser cache and cookies
 5. Check the status page at [status.mycompanydesk.com](https://status.mycompanydesk.com): it shows whether MyCompanyDesk itself is having a problem
 
-If it still fails, share what step fails and any error message so I can guide the next troubleshooting step.
+If the problem persists, create a support ticket below.

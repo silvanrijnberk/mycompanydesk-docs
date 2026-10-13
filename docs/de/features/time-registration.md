@@ -19,7 +19,7 @@ Wechseln Sie mit der Auswahl oben zwischen vier Ansichten (auf Mobilgeräten wis
 
 Geplante Einträge tragen das Label **Vorläufig**; drücken Sie **Bestätigen**, sobald die Arbeit tatsächlich erledigt ist, um sie in erfasste Stunden umzuwandeln. Bestätigen Sie einen Eintrag, dessen Datum noch in der Zukunft liegt, fragt die App zuerst, ob diese Stunden schon mitzählen dürfen.
 
-Möchten Sie das nicht manuell erledigen? Aktivieren Sie **Vorläufige Zeit automatisch bestätigen** in den Zeitplan-Einstellungen. Vorläufige Einträge werden dann automatisch bestätigt, sobald ihr geplanter Termin verstrichen ist, auch wenn niemand den Zeitplan öffnet.
+Möchten Sie das nicht manuell erledigen? Aktivieren Sie **Vorläufige Zeit automatisch bestätigen** in den Kalendereinstellungen. Vorläufige Einträge werden dann automatisch bestätigt, sobald ihr geplanter Termin verstrichen ist, auch wenn niemand den Zeitplan öffnet.
 
 Summen zählen nur Stunden, die tatsächlich gearbeitet wurden. Vorläufige Einträge für spätere Tage bleiben außerhalb der Stundensummen im Dashboard, in den Berichten (**Erfasste Stunden**) und unter **Arbeit & Zeit**, bis Sie sie bestätigen; das Seitenpanel nennt diese Grundlage. Die Anzeige zum Stundenkriterium für die Einkommensteuer rechnet mit einer eigenen Grundlage, die unter der Anzeige steht: nur Ihre eigenen bestätigten Stunden plus Reisezeit, daher darf diese Zahl von den Summen hier abweichen.
 
@@ -27,7 +27,7 @@ Summen zählen nur Stunden, die tatsächlich gearbeitet wurden. Vorläufige Eint
 
 ### Timer
 
-Auf Mobilgeräten enthält die Tagesansicht einen Timer: Starten Sie ihn, wenn Sie mit der Arbeit beginnen, und stoppen Sie ihn, um die verstrichene Zeit als Eintrag zu erfassen. Über die Betriebsmodus-Einstellung machen Sie den Timer zu Ihrer Standardarbeitsweise (siehe Einstellungen unten).
+Auf Mobilgeräten enthält die Tagesansicht einen Timer: Starten Sie ihn, wenn Sie mit der Arbeit beginnen, und stoppen Sie ihn, um die verstrichene Zeit als Eintrag zu erfassen.
 
 ### Manuelle Einträge
 
@@ -50,7 +50,7 @@ Ihre eigene Eingabe wird nie überschrieben. Sobald Sie eine eigene Beschreibung
 
 ### Nur-Stunden-Modus
 
-Möchten Sie lieber nur eine Tagessumme erfassen? Aktivieren Sie **Nur Stunden Modus** in den Zeitplan-Einstellungen. Er blendet die Zeitleiste und die Eingaben für Start- und Endzeit aus, sodass Sie nur die Gesamtstunden pro Tag eintragen. Stundensatz und Abrechenbar-Feld bleiben verfügbar.
+Möchten Sie lieber nur eine Tagessumme erfassen? Aktivieren Sie **Nur Stunden Modus** in den Kalendereinstellungen. Er blendet die Zeitleiste und die Eingaben für Start- und Endzeit aus, sodass Sie nur die Gesamtstunden pro Tag eintragen. Stundensatz und Abrechenbar-Feld bleiben verfügbar.
 
 ## Ihre Stunden abrechnen
 
@@ -74,8 +74,8 @@ Rechnungszeilen werden automatisch beschrieben: zuerst die Beschreibung des Eint
 
 Das automatische Abrechnen regeln Sie pro Projekt. Auf einer Projektseite wählen Sie, wie die Stunden dieses Projekts abgerechnet werden:
 
-- **Manuell** (die Voreinstellung): Diese Rechnung erstellen Sie selbst aus den Stunden des Projekts.
-- **An festem Tag** (die Voreinstellung): Sie wählen den Rhythmus für das Projekt: jede Woche an einem Wochentag oder jeden Monat an einem Tag des Monats. Die Stunden, die bis einschließlich des vorigen Rechnungstags erfasst sind, gehen ergänzt um die weiterberechneten Ausgaben in einer Rechnung an den Kunden des Projekts. Der Monat rechnet am gewählten Tag ab, bis zum 28., oder am letzten Tag des Monats, damit kurze Monate nicht überspringen; die Regel steht in `packages/shared/src/logic/billing-schedule.ts#isValidBillingSchedule`.
+- **Manuell** (die Voreinstellung): Sie erstellen die Rechnung selbst aus den Stunden des Projekts.
+- **An einem festen Tag**: Sie wählen den Rhythmus für das Projekt: jede Woche an einem Wochentag oder jeden Monat an einem Tag des Monats. Die Stunden, die bis einschließlich des vorigen Rechnungstags erfasst sind, gehen ergänzt um die weiterberechneten Ausgaben in einer Rechnung an den Kunden des Projekts. Der Monat rechnet am gewählten Tag ab, bis zum 28., oder am letzten Tag des Monats, damit kurze Monate nicht überspringen.
 - **Beim Abschluss**: Markieren Sie das Projekt als abgeschlossen, geht alles, was noch offen ist, in eine Schlussrechnung für den Kunden.
 
 Fällt das Projekt unter einen Vertrag, der selbst fakturiert, entscheidet dieser Vertrag, und die Projektseite sagt Ihnen das auch; einem solchen Projekt geben Sie keinen eigenen Rhythmus.
@@ -89,9 +89,9 @@ Alles, was für denselben Kunden zum selben Moment fällig wird, landet auf eine
 
 Alles Ungewöhnliche hält den automatischen Versand zurück: ein Kunde ohne E-Mail-Adresse, Stunden ohne Satz, ein Betrag, der spürbar über den Vormonaten liegt, oder eine Rechnung, die einen längeren Zeitraum umfasst, weil das automatische Abrechnen eine Zeit still stand. Diese Rechnungen werden nur vorbereitet, und die Mitteilung sagt Ihnen, warum.
 
-Ausgaben fließen nur mit, wenn die Ausgabe selbst auf [dem Kunden weiterberechnen](/de/features/expenses#weiterberechnung-und-kostenänderungen) steht.
+Ausgaben fließen nur mit, wenn die Ausgabe selbst auf [dem Kunden weiterberechnen](/de/features/expenses#weiterberechnung-und-kostenanderungen) steht.
 
-Enthält Ihr Tarif das automatische Zeitabrechnen nicht, pausiert es, bis Ihr Tarif es wieder enthält; die Mitteilung sagt Ihnen das. Automatische Rechnungen verwenden den Standard-Mehrwertsteuersatz Ihres Arbeitsbereichs und berücksichtigen Ihre KOR- oder Mehrwertsteuerbefreiungseinstellungen, genau wie manuell erstellte Rechnungen.
+Das automatische Abrechnen gehört zum Office-Abonnement. In Desk pausiert es, bis Sie wieder Office nutzen; die Karte und die Mitteilung sagen Ihnen das. Automatische Rechnungen verwenden den Standard-Mehrwertsteuersatz Ihres Arbeitsbereichs und berücksichtigen Ihre KOR- oder Mehrwertsteuerbefreiungseinstellungen, genau wie manuell erstellte Rechnungen.
 
 ## Massenaktionen
 
@@ -103,7 +103,7 @@ Wählen Sie mehrere Einträge in der Listenansicht aus (langes Drücken auf Mobi
 
 ## Externen Kalender verbinden
 
-Verbinden Sie Google Kalender oder Outlook Kalender, um Agenda und Stunden zusammenzubringen. Öffnen Sie die Zeitplan-Einstellungen über **Einstellungen** > **Zeitplan** oder das Zahnrad auf der Zeitplan-Seite, und folgen Sie dem Kalender-Link. Sie können auch direkt zur Seite mit den verbundenen Kalendern gehen. Dort können Sie:
+Verbinden Sie Google Kalender oder Outlook Kalender, um Agenda und Stunden zusammenzubringen. Öffnen Sie die Kalendereinstellungen über **Einstellungen** › **Zeiterfassung & Kalender** oder das Zahnrad auf der Zeitplan-Seite, und wählen Sie **Kalender verbinden (Google oder Outlook)**. Sie können auch direkt zur Seite mit den verbundenen Kalendern gehen. Dort können Sie:
 
 - **Google Kalender** oder **Outlook Kalender** verbinden
 - Die Synchronisation pro Verbindung mit **Synchronisation aktivieren** einschalten
@@ -114,20 +114,19 @@ Termine aus einem verbundenen Kalender erscheinen in der Tages- und Wochenansich
 
 ## Online-Termine und Stunden
 
-Termine, die Kunden über den **Site Bookings**-Block auf Ihrer Website buchen, werden nach Freigabe automatisch in Ihren Kalender übernommen. Ein bestätigter Online-Termin zählt zugleich als erfasste Stunden im Zeitplan, sodass Sie ihn nicht separat erfassen müssen. Diese Stunden sind über den Zeitplan **nicht abrechenbar**; der Umsatz des Termins wird separat über den Termin selbst in Rechnung gestellt. Siehe [Online-Termine](/de/features/site-bookings) für das Einrichten Ihrer buchbaren Zeiten.
+Termine, die Kunden über den Terminblock auf Ihrer Website buchen, werden nach Freigabe automatisch in Ihren Kalender übernommen. Ein bestätigter Online-Termin zählt zugleich als erfasste Stunden im Zeitplan, sodass Sie ihn nicht separat erfassen müssen. Diese Stunden sind über den Zeitplan **nicht abrechenbar**; der Umsatz des Termins wird separat über den Termin selbst in Rechnung gestellt. Siehe [Online-Termine](/de/features/site-bookings) für das Einrichten Ihrer buchbaren Zeiten.
 
 ## Einstellungen
 
-Die Zeitplan-Einstellungen finden Sie unter **Einstellungen** > **Zeitplan** oder über das Zahnrad auf der Zeitplan-Seite. Hier konfigurieren Sie:
+Die Kalendereinstellungen finden Sie unter **Einstellungen** › **Zeiterfassung & Kalender** oder über das Zahnrad auf der Zeitplan-Seite. Hier konfigurieren Sie:
 
-- **Nur Stunden Modus**, **Vorläufige Zeit automatisch bestätigen**, und weiteres Eingabeverhalten
-- Den Betriebsmodus: **Stunden**, **Schicht** oder **Timer**
+- **Eingabeverhalten**: **Nur Stunden Modus** und **Vorläufige Zeit automatisch bestätigen**
 - Die auf der Zeitleiste sichtbaren Arbeitszeiten
-- Welche Schritte die Schnelleingabe zeigt (Projekt, Notizen, Fahrten)
-- Den Standard-Stundensatz (Team-Administratoren)
-- Fahrt-Standards wie Adressen, Fahrzeug und Kilometersatz
-- Nutzen Sie Ihren aktuellen Standort als Startpunkt für eine Fahrt, wenn Ihr Gerät das zulässt
+- Den **Standard-Stundensatz** und die **Zeitrundung** (Administratoren)
+- **Fahrten zu Kunden**: Adressen, Standard-Verkehrsmittel, Auto (privat oder Firmenwagen) und Kilometersatz
 - Einen Link zum Verbinden eines externen Kalenders
+
+Bei einer Fahrt im Eintragsformular können Sie Ihren aktuellen Standort als Startpunkt nutzen, wenn Ihr Gerät das zulässt.
 
 ## Tipps
 

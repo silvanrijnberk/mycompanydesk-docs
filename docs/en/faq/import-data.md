@@ -23,7 +23,7 @@ chatbot:
 
 MyCompanyDesk can import customers, invoices, and expenses from a CSV file. Other data types cannot be imported.
 
-The import page lives at `/profile/import`. There is no menu entry for it, so open it via the button above or by entering the address directly. Then:
+You open the import page ("Import CSV Data") from Settings › "Switching" with "Import customers" or "Import invoices", or with the "Import" button in the customer list. Then:
 
 1. Choose the data type: customers, invoices, or expenses
 2. Upload your CSV file

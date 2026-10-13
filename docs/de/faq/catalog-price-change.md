@@ -1,6 +1,6 @@
 ---
 title: Alle Preise auf einmal ändern
-description: "Gehen Sie zu Angebot und klicken Sie auf Preise, um zu sehen, was Sie verlangen, was Sie dafür erhalten haben und was eine Erhöhung bringen würde."
+description: "Gehen Sie zu Katalog und klicken Sie auf Preise, um zu sehen, was Sie verlangen, was Sie dafür erhalten haben und was eine Erhöhung bringen würde."
 last_verified: 2026-09-03
 chatbot:
   triggers:
@@ -17,31 +17,31 @@ chatbot:
     - "Kann ich eine Preisänderung rückgängig machen?"
 ---
 
-Gehen Sie zu **Angebot** und klicken Sie auf **Preise**, um viele Preise auf einmal zu aktualisieren. Die Seite zeigt, was Sie verlangen, was Sie dieses Jahr tatsächlich für Ihr Angebot erhalten haben und was eine Erhöhung bei gleichen Verkäufen bringen würde.
+Gehen Sie zu **Katalog** und klicken Sie auf **Preise**, um viele Preise auf einmal zu aktualisieren. Die Seite zeigt, was Sie verlangen, was Sie dieses Jahr tatsächlich für Ihr Angebot erhalten haben und was eine Erhöhung bei gleichen Verkäufen bringen würde.
 
 ## So funktioniert es
 
 1. Wählen Sie, was Sie ändern möchten:
-   - **Alles**: jedes Element in Ihrem Angebot.
+   - **Alle**: jedes Element in Ihrem Katalog.
    - **Dienstleistungen**, **Produkte** oder **Abonnements**: nur Elemente dieser Art.
 2. Wählen Sie, um wie viel:
    - **Prozentsatz**: erhöht oder senkt jeden Preis um einen Prozentsatz.
    - **Fester Betrag**: addiert oder subtrahiert den gleichen Betrag von jedem Preis.
    - Verwenden Sie ein Minuszeichen, um Preise zu senken.
 3. Wählen Sie die Rundung:
-   - **Auf Cent** behält die normale Dezimalpreis.
+   - **Auf Cent genau** behält den normalen Dezimalpreis.
    - **Auf ganze Euro** rundet auf ganze Euro.
-4. Klicken Sie auf **Änderungen prüfen**, um eine Vorschau zu öffnen, die jeden Artikel mit altem und neuem Preis auflistet.
-5. Prüfen Sie die Liste und klicken Sie auf **Preise ändern**, um sie anzuwenden.
+4. Klicken Sie auf **Ansehen, was sich ändert**, um eine Vorschau zu öffnen, die jeden Artikel mit altem und neuem Preis auflistet.
+5. Prüfen Sie die Liste und klicken Sie auf die Schaltfläche mit der Anzahl, zum Beispiel **12 Preise anpassen**, um sie anzuwenden.
 
 Die Vorschau zeigt auch, welche Artikel bestehen bleiben und warum: weil sie keinen Preis haben (zum Beispiel Artikel mit Preis auf Anfrage), weil es ein Paket ist, dessen Preis die Summe seiner Bestandteile ist, oder weil die Rundung den Preis nicht verändert. Außerdem warnen wir Sie, wenn eine aktive Aktion dadurch enden würde, weil der Aktionspreis dann nicht mehr unter dem regulären Preis liegt. Wenn Sie Abonnements auswählen, erklärt die Vorschau auch, dass laufende Abonnenten ihren aktuellen Preis behalten; der neue Preis gilt erst für die nächste Anmeldung.
 
 ## Was sich ändert und was nicht
 
-- Es werden nur die Preise in Ihrem **Angebot** geändert.
+- Es werden nur die Preise in Ihrem **Katalog** geändert.
 - Bestehende Rechnungen, Angebote und Verträge behalten die Preise, mit denen sie erstellt wurden.
 - Laufende Abonnements behalten den Preis, zu dem sie abgeschlossen wurden. Wenn Sie bestehende Abonnenten ebenfalls erhöhen möchten, ändern Sie deren wiederkehrende Rechnung.
-- Sie können eine Änderung direkt nach dem Anwenden rückgängig machen. Ein einziger Rückgängig-Schritt macht die gesamte Änderung auf einmal rückgängig.
+- Direkt nach dem Anwenden können Sie die Änderung mit **Rückgängig machen** in der Meldung zurücknehmen. Damit nehmen Sie die gesamte Änderung auf einmal zurück. Wurde ein Preis inzwischen erneut geändert, wird nichts zurückgesetzt.
 
 ## Inflationshinweis beim Bearbeiten eines einzelnen Artikels
 
@@ -53,7 +53,7 @@ Der Hinweis erscheint nur im Bearbeitungsmodus und nur für Artikel mit Festprei
 
 ## Preisliste drucken
 
-Sie können Ihr Angebot auch als kundenorientierte Preisliste ausdrucken. Öffnen Sie **Angebot** und klicken Sie auf **Preisliste**, um `/aanbod/prijslijst` zu öffnen.
+Sie können Ihr Angebot auch als kundenorientierte Preisliste ausdrucken. Dafür gibt es keine Schaltfläche im Menü: Rufen Sie in Ihrem Browser `/aanbod/prijslijst` in der App auf.
 
 Die Seite listet Ihre aktiven Artikel gruppiert nach **Dienstleistungen**, **Produkten**, **Paketen** und **Abonnements**, und leere Gruppen werden übersprungen. Hat Ihr Arbeitsbereich das Website-Modul, bekommen Sie zusätzlich den Schalter **Nur was auf Ihrer Website steht**, sodass Sie genau die Auswahl drucken, die Ihr Website-Builder zeigt. Ohne Website-Modul erscheinen Dienstleistungen und Produkte als eine Gruppe ohne Überschrift, während Pakete und Abonnements ihre eigene Überschrift behalten. Klicken Sie auf **Drucken oder als PDF speichern**, um den Druckdialog Ihres Browsers zu nutzen.
 

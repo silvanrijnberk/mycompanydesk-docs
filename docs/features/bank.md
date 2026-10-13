@@ -7,22 +7,24 @@ description: "Koppel je bankrekening zodat transacties binnenstromen. Regels mak
 
 Koppel je bankrekening aan MyCompanyDesk en je transacties stromen automatisch binnen. Regels en slimme categorisering maken van uitgaande betalingen concept-uitgaven, en jij bevestigt elk concept voordat het in je boekhouding belandt.
 
+De bankkoppeling zit in **Office** en je koppelt maximaal 3 bankrekeningen. Op Desk zie je in plaats van de koppelpagina een knop om over te stappen.
+
 ## Waar vind je het
 
-De bankfeed zit in het Uitgaven-gedeelte:
+De bankfeed zit in het Uitgaven-gedeelte en in de instellingen:
 
-- **Koppelingen en instellingen**: open **Uitgaven** en klik op het tandwiel in de paginakop. Daar koppel je banken, controleer je automatisch geïmporteerde uitgaven en beheer je regels en meldingen.
-- **Bankwachtrij**: bovenaan de uitgavenpagina zie je de rijen die nog moeten worden beoordeeld.
-- **Transactiefeed**: de knop **Transacties** in de paginakop van Uitgaven opent de lijst met geïmporteerde banktransacties.
+- **Koppelingen en instellingen**: **Instellingen › Bankrekening koppelen** (`/settings/bankkoppeling`), ook bereikbaar via de knop **Instellingen** op de pagina Uitgaven. Daar koppel je banken, en beheer je de feedinstellingen, regels en meldingen.
+- **Bankwachtrij**: bovenaan de uitgavenpagina staat het blok **Uit je bank** met de rijen die nog moeten worden beoordeeld.
+- **Transactiefeed**: het tabblad **Transacties** naast Uitgaven in de bovenbalk opent de lijst met geïmporteerde banktransacties.
 
 ## Een bankrekening koppelen
 
-1. Ga naar **Uitgaven** en klik op het tandwiel.
+1. Ga naar **Instellingen › Bankrekening koppelen**.
 2. Klik in het bankgedeelte op **Koppel je eerste bank**, of kies je bank direct wanneer er een bankkiezer staat.
 3. Bevestig de koppeling in de app of website van je eigen bank. Dit is een beveiligde PSD2-stroom: MyCompanyDesk kan alleen de transacties lezen die jij toestaat en kan nooit geld overmaken.
 4. Daarna kom je terug in MyCompanyDesk. De eerste sync haalt transacties van de afgelopen 90 dagen op; daarna blijft de feed automatisch actueel.
 
-Je kunt tot 10 rekeningen van verschillende banken koppelen. Elke rekening staat als eigen rij met het actuele saldo en het moment van de laatste sync. Met **Nog een bank koppelen** voeg je er meer toe. De banktoestemming verloopt periodiek volgens de PSD2-regels (meestal elke 90 dagen); je krijgt vooraf een seintje.
+Je kunt maximaal 3 bankrekeningen koppelen, ook van verschillende banken. Elke rekening staat als eigen rij met het actuele saldo en het moment van de laatste sync. Met **Nog een bank koppelen** voeg je er meer toe. De banktoestemming verloopt periodiek volgens de PSD2-regels (meestal elke 90 dagen); je krijgt vooraf een seintje.
 
 Per rekening kun je:
 
@@ -33,7 +35,7 @@ Per rekening kun je:
 
 ## Hoe vaak synchroniseren
 
-Hoe vaak MyCompanyDesk nieuwe transacties ophaalt is één instelling voor je hele werkruimte: **Realtime**, **Elke 4 uur** of **Dagelijks**. De handmatige sync per rekening werkt daar altijd bovenop.
+Hoe vaak MyCompanyDesk nieuwe transacties ophaalt is één instelling voor je hele werkruimte: **Elke 4 uur** of **Dagelijks om 06:00**. Realtime ophalen bestaat niet: een PSD2-koppeling haalt transacties periodiek op. Met **Nu synchroniseren** haal je meteen alles op, en de handmatige sync per rekening werkt daar altijd bovenop.
 
 ## Van transactie naar uitgave
 
@@ -52,7 +54,7 @@ Alleen uitgaande transacties worden uitgaven; inkomende betalingen worden nooit 
 
 ## De bankwachtrij
 
-De bankwachtrij is nu onderdeel van de hoofduitgavenlijst. Hij toont transacties die nog niet als uitgave zijn geboekt: review-rijen die de feed heeft voorbereid, plus uitgavekandidaten uit de bankfeed. Elke rij toont de leverancier, datum, het bedrag, de voorgestelde categorie en waar die suggestie vandaan komt (een van je regels, je standaardcategorie, een slimme suggestie of de bankfeed).
+De bankwachtrij staat als blok **Uit je bank** bovenaan de uitgavenlijst. Hij toont transacties die nog niet als uitgave zijn geboekt: review-rijen die de feed heeft voorbereid, plus uitgavekandidaten uit de bankfeed. Elke rij toont de leverancier, datum, het bedrag, de voorgestelde categorie en waar die suggestie vandaan komt (een van je regels, je standaardcategorie, een slimme suggestie of de bankfeed). Niets hiervan telt mee totdat je het boekt.
 
 De wachtrij is gecached binnen je sessie. Als je terugkeert naar Uitgaven, staan de rijen er meteen in het eerste frame en ververst de achtergrond ze op hun plek. Zo schuift de lijst eronder niet meer weg terwijl je al aan het lezen bent. De cache hoort bij je huidige werkruimte: bij een werkruimtewissel wordt hij opnieuw opgebouwd.
 
@@ -60,13 +62,15 @@ De wachtrij is gecached binnen je sessie. Als je terugkeert naar Uitgaven, staan
 De wachtrij laadt maximaal 100 review-rijen en 100 uitgavekandidaten per ophaalronde. Heeft de server meer rijen, dan geeft de wachtrij dat aan en haalt hij na een actie automatisch de volgende batch op. Op die manier komt niets meer vast te zitten achter een volle pagina.
 :::
 
-Per concept kun je:
+Per rij kun je:
 
-- **Bevestigen**: de uitgave boeken zoals hij is. Hij verschijnt in je uitgavenlijst en telt mee in rapportages en btw.
-- **Bewerken**: de uitgave openen om categorie, btw of bedrag aan te passen voordat je boekt.
-- **Afwijzen**: het concept verwijderen. De transactie gaat terug naar de feed voor handmatige afhandeling.
+- **Boeken**: de uitgave boeken met de gekozen categorie. Hij verschijnt in je uitgavenlijst en telt mee in rapportages en btw.
+- **Categorie kiezen**: een andere categorie kiezen voordat je boekt.
+- **Negeren**: de rij uit de wachtrij halen. Je vindt hem terug onder **Genegeerd** op het tabblad Transacties.
 
-Als de categoriechip die je hebt gekozen sinds het laden van de pagina is gearchiveerd, wordt de actie Bevestigen of Bewerken geweigerd met de fout `EXPENSE_CATEGORY_UNKNOWN` in plaats van stilzwijgend een andere categorie te kiezen. Ververs de pagina om de huidige categorielijst te laden en kies opnieuw.
+Met **Boek alles** en **Negeer alles** handel je de hele wachtrij in één keer af; Negeer alles vraagt eerst om bevestiging en is meteen terug te draaien.
+
+Als de categoriechip die je hebt gekozen sinds het laden van de pagina is gearchiveerd, wordt de actie Boeken geweigerd met de fout `EXPENSE_CATEGORY_UNKNOWN` in plaats van stilzwijgend een andere categorie te kiezen. Ververs de pagina om de huidige categorielijst te laden en kies opnieuw.
 
 ### Achterstand in één keer afschrijven
 
@@ -83,10 +87,12 @@ Op dezelfde instellingenpagina bepaal je hoe de feed zich gedraagt:
 - **Auto-import naar Uitgaven**: het automatisch aanmaken van concept-uitgaven aan- of uitzetten voor de hele werkruimte.
 - **Slim categoriseren**: laat MyCompanyDesk een categorie voorstellen voor transacties zonder regel.
 - **Negeer eigen overboekingen**: overboekingen tussen je eigen gekoppelde rekeningen overslaan.
-- **Vraag bonnetje op via e-mail**: een dagelijkse ronde mailt leveranciers één gebundeld verzoek voor bonnetjes die nog missen. Elke leverancier wordt per transactie maar één keer gevraagd. Met **Automatisch herinneren aan bonnetje** zet je dit om in een herhaalde herinnering: na het eerste verzoek worden leveranciers op dag 7 en dag 14 opnieuw benaderd totdat een bonnetje is geüpload. Een teller bij de instelling toont hoeveel betalingen momenteel op een bonnetje wachten.
+- **Vraag bonnetje op via e-mail**: een dagelijkse ronde mailt leveranciers één gebundeld verzoek voor bonnetjes die nog missen. Elke leverancier wordt per transactie maar één keer gevraagd. Een teller bij de instelling toont hoeveel betalingen momenteel op een bonnetje wachten.
 - **Minimumbedrag voor import**: transacties onder dit bedrag worden geen uitgaven.
-- **Standaardcategorie**: de categorie die geldt als niets anders matcht.
-- **Boekingsdatum**: kies of uitgaven de transactiedatum, de valutadatum of de bondatum gebruiken.
+- **Standaardcategorie bij geen match**: de categorie die geldt als niets anders matcht.
+- **Boekingsdatum**: kies of uitgaven de transactiedatum, de valutadatum of de datum van het bonnetje gebruiken.
+
+Slim categoriseren en het automatisch opvragen van ontbrekende bonnetjes staan ook samen onder **Instellingen › Automatisering**, in het blok **Uit je bank**.
 
 ## Regels
 
@@ -100,24 +106,22 @@ Het trefwoord wordt vergeleken met de omschrijving en de naam van de tegenpartij
 
 Een regel matcht op één trefwoord. Voorwaarden op bedrag worden niet ondersteund, en regels maak je op de instellingenpagina, niet vanuit de transactiefeed.
 
-## Vertrouwde leveranciersregels
+## Vaste leveranciers
 
-Als je regelmatig dezelfde leverancier betaalt, kan MyCompanyDesk die leverancier leren vertrouwen en het controlestap voor concepten overslaan bij matchende transacties. Je beheert dit op de instellingenpagina:
+Boek je een betaling aan een leverancier uit je bank, dan onthoudt MyCompanyDesk die leverancier met de categorie die je koos. Vanaf dan boeken uitgaven van die leverancier automatisch, ook zijn e-facturen. Op dat moment krijg je de melding **Vaste leverancier geleerd**, zodat dit nooit ongemerkt gebeurt.
 
-- **Leer vertrouwde leveranciers vanuit mijn bevestigde concepten**: wanneer ingeschakeld, wordt een leverancier 'vaste leverancier' na voldoende bevestigde concepten en gebruik van de bijbehorende categorisatieregel.
-- **Vertrouwde leveranciers vereisen mijn beoordeling**: kies of transacties van vaste leveranciers alsnog in de review-wachtrij verschijnen, of automatisch worden geboekt.
 
-Een leverancier wordt alleen vertrouwd bij een sterk, consistent patroon van bevestigde betalingen én een actieve categorisatieregel. Je kunt de functie altijd uitschakelen; dan wordt alle eerder opgedane leveranciersvertrouwen gewist en doorloopt elke transactie weer de normale controleflow.
+Een betaling die als privé is aangemerkt, of een overboeking naar je eigen rekening, leert geen regel. Hoeveel vaste leveranciers er automatisch boeken, zie je bij **Instellingen › Automatisering**. De regels zelf zie, wijzig en verwijder je in het blok **Leverancier → categorie regels** op de pagina Bankrekening koppelen.
 
 ## De transactiefeed
 
-Open **Transacties** vanuit de paginakop van Uitgaven om alle geïmporteerde transacties te zien, met bovenaan een paar snelle cijfers (transacties deze maand, het aandeel dat automatisch is geboekt en hoeveel er nog aandacht nodig hebben). Drie tabbladen verdelen de feed:
+Open het tabblad **Transacties** naast Uitgaven om alle geïmporteerde transacties te zien, met bovenaan een paar snelle cijfers (transacties deze maand, het aandeel dat automatisch is geboekt en hoeveel er nog aandacht nodig hebben). Drie tabbladen verdelen de feed:
 
-- **Te koppelen**: transacties die nog nergens aan gekoppeld zijn.
+- **Te verwerken**: transacties die nog nergens aan gekoppeld zijn.
 - **Gekoppeld**: transacties gekoppeld aan een factuur of uitgave, met een link naar dat record.
 - **Genegeerd**: transacties die je hebt genegeerd.
 
-Terwijl je de tab met ongekoppelde regels doorwerkt, staan regels die niet meetellen voor te verwerken in ingeklapte groepen eronder: **Privérekening** voor regels van een gekoppelde privérekening (de groep verschijnt pas als je er één hebt gekoppeld), en **Ouder** voor regels van vóór de datum waarop de feed met de rekening meekijkt. Een regel die als privé is gemarkeerd, krijgt een notitie dat hij buiten de boekhouding blijft; een regel die nog niet beoordeeld is, zegt dat ook. De tellers voor te verwerken op deze pagina, in Boekhouding → Bank en in de dashboardtegels delen één definitie en tellen ook de afschrijvingen op je privérekening mee die een zakelijke uitgave kunnen zijn, zodat de totalen overal gelijk zijn.
+Terwijl je de tab met ongekoppelde regels doorwerkt, staan regels die niet meetellen voor te verwerken in ingeklapte groepen eronder: **Privérekening** voor regels van een gekoppelde privérekening (de groep verschijnt pas als je er één hebt gekoppeld), en **Ouder** voor regels van vóór de datum waarop de feed met de rekening meekijkt. Een regel die als privé is gemarkeerd, krijgt een notitie dat hij buiten de boekhouding blijft; een regel die nog niet beoordeeld is, zegt dat ook. De tellers voor te verwerken op deze pagina, in Boekhouding › Bank en in de dashboardtegels delen één definitie en tellen ook de afschrijvingen op je privérekening mee die een zakelijke uitgave kunnen zijn, zodat de totalen overal gelijk zijn.
 
 Per openstaande transactie:
 
@@ -128,20 +132,23 @@ Het merendeel van het koppelen blijft een handmatige stap. MyCompanyDesk koppelt
 
 ## Meldingen
 
-Onderaan de instellingenpagina kun je vijf bankmeldingen los van elkaar aanzetten:
+Onderaan de pagina Bankrekening koppelen kun je drie bankmeldingen los van elkaar aanzetten:
 
 - **E-mail bij sync-fout**: een e-mail en in-app melding wanneer een bankkoppeling niet kan synchroniseren, met een link om het op te lossen.
 - **Wekelijks overzicht**: een e-mail op maandagochtend met de bankactiviteit van de afgelopen week. Deze wordt overgeslagen als er niets te melden was. Het wekelijkse overzicht staat standaard uit in elke werkruimte, zodat er op maandag maar één mail binnenkomt: staat het uit, dan verschijnen de bankregels die nog gekoppeld moeten worden in de maandagmail van **Nu doen**. Alleen werkruimtes bij wie de maandagmail al uit stond, houden het overzicht zoals het was, want er is dan geen andere mail die de bankregels zonder koppeling meeneemt. Zet het overzicht in deze lijst weer aan als je de aparte samenvatting terugwilt; de maandagmail laat die regels dan weer weg.
 - **Melding bij groot bedrag**: een melding wanneer een transactie een door jou ingesteld bedrag bereikt of overschrijdt.
-- **Leveranciersregel geleerd**: een in-app melding wanneer MyCompanyDesk een nieuwe vaste-leveranciersregel heeft geleerd vanuit je bevestigde concepten.
+
+Daarnaast krijg je altijd deze meldingen, zonder schakelaar:
+
+- **Vaste leverancier geleerd**: een in-app melding wanneer MyCompanyDesk een nieuwe vaste leverancier heeft geleerd vanuit een uitgave die je boekte.
 - **Vergrendelde btw-periode**: een eenmalige melding wanneer de bankfeed probeert een uitgaande transactie te boeken in een btw-periode die al is aangegeven en vergrendeld. De regel wordt definitief overgeslagen zodat de sync niet eindeloos opnieuw probeert, en de melding legt uit wat je kunt doen: boek de uitgave handmatig met een datum in de huidige open periode, of dien een suppletie-aangifte in.
 
 ## Problemen oplossen
 
-**Mijn bankkoppeling toont een fout.** Open de uitgaven-instellingen via het tandwiel op de Uitgaven-pagina. Als je bank een nieuwe autorisatie nodig heeft zie je dat op de rij van de koppeling; de sync-foutmelding linkt er ook naartoe.
+**Mijn bankkoppeling toont een fout.** Open **Instellingen › Bankrekening koppelen**. Als je bank een nieuwe autorisatie nodig heeft zie je dat op de rij van de koppeling; de sync-foutmelding linkt er ook naartoe.
 
 **Een transactie is geen uitgave geworden.** Controleer of auto-import aanstaat, of het bedrag boven je minimumbedrag ligt en of het een uitgaande betaling is. Je kunt de transactie altijd handmatig koppelen op de Transacties-pagina.
 
 **Een banktransactie valt in een vergrendelde btw-periode.** De bankfeed kan geen uitgaven automatisch boeken met een datum in een periode die al is aangegeven. Je krijgt een eenmalige melding "Banktransactie: btw-periode vergrendeld", de regel wordt gemarkeerd als definitief overgeslagen en de volgende sync probeert hem niet opnieuw. Om de kosten alsnog vast te leggen, boek je de uitgave handmatig met een datum in de huidige open periode, of vraag je je boekhouder of een suppletie-aangifte de juiste route is.
 
-**Ik krijg geen meldingen.** Controleer de meldingsschakelaars onderaan de uitgaven-instellingen.
+**Ik krijg geen meldingen.** Controleer de meldingsschakelaars onderaan de pagina Bankrekening koppelen.

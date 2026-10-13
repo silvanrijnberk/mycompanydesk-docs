@@ -1,6 +1,6 @@
 ---
 title: "Factuur annuleren"
-description: "Zo annuleer je een verstuurde factuur: open de factuur vanuit je factuurlijst, scrol in de zijbalk naar de sectie Gevarenzone."
+description: "Zo annuleer je een verstuurde factuur: open de factuur, kies in het menu Meer bovenaan voor Markeer als geannuleerd en bevestig."
 last_verified: 2026-08-14
 chatbot:
   triggers: ["cancel invoice", "void invoice", "annul invoice", "reverse invoice", "credit note", "undo invoice", "factuur annuleren", "factuur ongedaan", "hoe annuleer ik een factuur", "rechnung stornieren", "wie storniere ich eine rechnung", "annuler facture"]
@@ -11,15 +11,15 @@ chatbot:
 
 Zo annuleer je een verstuurde factuur:
 1. Open de factuur vanuit je factuurlijst
-2. Scrol in de zijbalk naar de sectie "Gevarenzone"
-3. Klik op "Markeer als geannuleerd"
+2. Open het menu "Meer" in de kop van de pagina (op je telefoon het ⋯-menu)
+3. Klik op "Markeer als geannuleerd" en bevestig
 4. De status van de factuur verandert naar Geannuleerd
 
 Ook worden meldingen over deze factuur, zoals achterstallig, deadline of concept, opgelost, zodat je geen actie "Herinnering versturen" meer voor hem ziet in de bel. Dit geldt ook wanneer je meerdere facturen tegelijk annuleert vanuit de factuurlijst.
 
 Is de factuur al (deels) betaald? Dan toont het bevestigingsvenster het geïncasseerde bedrag en waarschuwt dat je dit nog terug moet betalen aan de klant. Na het annuleren verschijnt op de detailpagina een melding dat een terugbetaling openstaat.
 
-Is de factuur al (deels) betaald? Open dan de originele factuur en gebruik "Creditnota / correctie maken".
+Is de factuur al volledig betaald, of staat er al een creditnota op? Dan kun je hem niet annuleren. Open de originele factuur en gebruik "Creditnota / correctie maken".
 
 Geannuleerde facturen kun je niet corrigeren met een creditnota. Wil je toch een correctie doorvoeren voor een al geannuleerde factuur? Dupliceer de geannuleerde factuur, pas de correctie toe en stuur hem opnieuw.
 

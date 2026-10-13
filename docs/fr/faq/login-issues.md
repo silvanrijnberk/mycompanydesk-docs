@@ -9,7 +9,7 @@ chatbot:
 ---
 
 Si vous avez des problèmes de connexion :
-1. Essayez « Mot de passe oublié »
+1. Essayez « Mot de passe oublié ? » sur la page de connexion
 2. Vérifiez votre dossier spam
 3. Assurez-vous d'utiliser la bonne adresse e-mail. Lorsque vous renvoyez un e-mail de vérification depuis la page de connexion, l'écran indique à quelle adresse il a été envoyé
 4. Videz le cache et les cookies

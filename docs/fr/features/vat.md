@@ -1,127 +1,117 @@
 ---
 title: TVA
-description: "Track collected and paid VAT, prepare your return and stay ahead of deadlines. The page mirrors the Dutch btw form for companies in the Netherlands."
+description: "Suivez la TVA collectée et payée, préparez votre déclaration et anticipez les échéances, selon le formulaire de la Belastingdienst."
 last_verified: 2026-10-13
 ---
 
-<!-- TODO(source-missing): RichardTool 5407b44 added historical Dutch VAT rates 6% and 19% to the valid invoice/quote/contract/recurring-invoice/catalog rate set. sources/vat-rates.yaml#countries.NL does not yet list those rates, so do not document the full valid set until the source is updated. -->
+<!-- TODO(source-missing): The app also accepts the historical Dutch VAT rates 6% and 19% on invoices, quotes, contracts, recurring invoices and catalog items. sources/vat-rates.yaml#countries.NL does not yet list those rates, so do not document the full valid set until the source is updated. -->
 
-# VAT
+# TVA
 
-Track collected and paid VAT, prepare your return, and stay ahead of deadlines. MyCompanyDesk supports country-specific VAT flows: the page mirrors the Dutch btw form for companies in the Netherlands, and uses each workspace country's filing deadlines and rules for other supported countries, so the numbers you see are the numbers you file.
+Suivez la TVA collectée et payée, préparez votre déclaration et gardez une longueur d'avance sur les échéances. MyCompanyDesk prend en charge des parcours de TVA propres à chaque pays : pour les entreprises néerlandaises, les pages TVA suivent le formulaire de déclaration de la Belastingdienst, et pour les autres pays pris en charge, ce sont les règles et échéances du pays qui s'appliquent. Les chiffres que vous voyez sont donc ceux que vous déclarez.
 
-## VAT settings leaf
+## Où la trouver
 
-Settings → **Belasting** (Tax) contains a compact **Btw** (VAT) card with the choices that drive the VAT page and many invoice defaults.
+Ouvrez **Impôts** dans la barre latérale. La section commence par les onglets TVA : **Aperçu**, **Déclaration**, **Contrôle**, **Transactions**, **Corrections** et **Périodes**. Après un séparateur viennent les onglets de l'impôt sur le revenu : **Déclaration de bénéfice** et, s'il vous concerne, **Box 3**. Les onglets TVA sont gratuits sur tous les abonnements ; les onglets de l'impôt sur le revenu nécessitent Office. L'onglet actif et la période figurent dans l'URL, si bien qu'actualiser la page ou revenir en arrière vous ramène au même endroit.
 
-### Filing frequency
+Le sélecteur **Période** de la barre d'outils suit la fréquence de déclaration de vos réglages TVA. En déclaration trimestrielle, vous voyez Q1 à Q4 plus l'année entière ; en mensuelle, M01 à M12 plus l'année entière ; en annuelle, seulement l'année entière. Changer de période met à jour chaque carte de chaque onglet. La même fréquence détermine les périodes proposées pour une correction manuelle. Le sélecteur d'année à côté des onglets fait passer l'ensemble à une autre année, et le bouton **Exporter** de la barre d'outils regroupe les téléchargements CSV pour votre comptable.
 
-The frequency sets which periods appear in the VAT page selector and which returns you must file:
+Comme l'onglet et la période sont dans l'URL, les liens issus du rappel d'échéance TVA dans le panneau de notifications, de la puce d'échéance de l'agenda, de la notification push et de la carte de période TVA dans Dépenses ouvrent exactement la période concernée, au lieu du trimestre en cours. Les anciens liens vers la page TVA fonctionnent toujours et arrivent sur la même période.
 
-| Choice | Dutch label | Periods shown |
-|---|---|---|
-| **Monthly** | Elke maand | M01 to M12 plus full year |
-| **Quarterly** | Elke 3 maanden | Q1 to Q4 plus full year |
-| **Yearly** | Eén keer per jaar | Full year only |
+## Réglages TVA
 
-Changing the frequency does not rewrite historical returns. It only affects how future periods are grouped on the VAT page. After the change, the current period label and deadline ring update immediately.
+**Paramètres › TVA** regroupe les choix qui pilotent les pages TVA et de nombreuses valeurs par défaut des factures.
 
-### VAT rate
+### Fréquence de déclaration
 
-- **Standard rate**: the default VAT rate applied to new invoice lines and other taxable items.
-- **Reduced rate option**: when your workspace is allowed to use a reduced VAT rate, the form shows the reduced rate as an option. This is not available for every business type.
+La question **À quelle fréquence déclarez-vous la TVA ?** détermine les périodes du sélecteur et les déclarations à déposer :
 
-### Suggestion de 9 % pour les aliments et les boissons
+| Choix | Périodes affichées |
+|---|---|
+| **Chaque mois** | M01 à M12 plus l'année entière |
+| **Tous les 3 mois** | Q1 à Q4 plus l'année entière |
+| **Une fois par an** | Année entière uniquement |
 
-Lorsque vous ajoutez un tout nouvel article dans Aanbod, MyCompanyDesk peut vous demander : « Vendez-vous à manger ou à boire ? Cela relève généralement de 9 % de TVA. » La question n'apparaît que si votre espace de travail n'a jamais choisi son propre taux par défaut dans Paramètres → TVA, si KOR et l'exonération sont tous deux désactivés, et si vos propres données (code KVK/SBI, réponse donnée à l'inscription ou description de l'entreprise, jamais le nom de l'entreprise) pointent clairement vers l'alimentation ou l'hôtellerie-restauration. Un clic sur **Passer à 9 %** applique le taux réduit (sources/vat-rates.yaml#countries.NL.reduced) à ce seul article. Rien n'est présélectionné : ignorer la question ne change rien, elle n'apparaît jamais pour un article existant, et les espaces de travail sous KOR ou exonérés ne la voient pas.
+Changer de fréquence ne réécrit pas les déclarations passées. Cela ne change que le regroupement des périodes à venir. Si le changement touche des périodes déjà déclarées, l'application les nomme et indique à partir de quelle période la nouvelle fréquence s'applique.
 
-### Default expense VAT rate
+### Taux de TVA
 
-Choose the VAT rate that is preselected when you add a new expense. You can still change it per expense.
+**Quel taux de TVA utilisez-vous généralement ?** fixe le taux par défaut des nouvelles lignes de facture et des autres éléments taxables : 21 %, 9 % ou 0 % (sources/vat-rates.yaml#countries.NL.standard, reduced, zero). Vous pouvez toujours choisir un autre taux par facture ou par reçu.
 
-### Small business scheme (KOR)
+### Suggestion de 9 % pour la nourriture et les boissons
 
-A toggle marks the workspace as participating in the Dutch **kleineondernemersregeling** (KOR). When enabled:
+Lorsque vous ajoutez un tout nouvel article à votre catalogue, MyCompanyDesk peut vous demander : « Vendez-vous de la nourriture ou des boissons ? C'est généralement 9 % de TVA. » La question n'apparaît que si votre espace de travail n'a jamais choisi lui-même de taux par défaut dans Paramètres › TVA, si le KOR et l'exonération sont tous deux désactivés, et si vos propres données (code KVK/SBI, votre réponse dans l'assistant de configuration ou la description de votre activité, jamais le nom de l'entreprise) désignent clairement l'alimentation ou la restauration. **Passer à 9 %** applique le taux réduit (sources/vat-rates.yaml#countries.NL.reduced) à ce seul article. Rien n'est présélectionné : ignorer la question ne change rien, elle n'apparaît jamais sur les articles existants, et les espaces sous KOR ou exonérés ne la voient pas.
 
-- The VAT return treats the business as exempt from charging VAT.
-- Collected VAT is not shown as payable; input VAT is not deducted.
-- A meter on the VAT page shows how much of the annual KOR revenue limit has been used (`{ytd} van {limit} dit jaar`).
-- When the meter approaches the limit, the UI warns that you are close to losing KOR eligibility.
+### Taux de TVA par défaut pour les dépenses
 
-If the business no longer qualifies for the KOR, turn the toggle off and double-check the next return with your accountant.
+**Et pour vos dépenses ?** définit le taux de TVA présélectionné lorsque vous ajoutez une nouvelle dépense. Vous pouvez toujours le modifier par dépense.
 
-### Exempt from VAT
+### Exonéré de TVA
 
-A separate **Vrijgesteld van btw** toggle is available for businesses that are explicitly exempt from VAT, for example certain financial or medical services. When this is on, new invoices default to a 0% VAT rate and the VAT page hides most filing détail. Do not confuse this with the KOR toggle; they have different rules.
+L'interrupteur **Mes services sont exonérés de TVA (par exemple soins ou enseignement)** s'adresse aux entreprises dont les services sont exonérés par la loi. Lorsqu'il est activé, les nouvelles lignes de facture et de devis sont exonérées par défaut, et l'onglet Contrôle vous rappelle que la TVA sur les coûts liés à des activités exonérées n'est pas déductible. Ne confondez pas avec le KOR : les règles sont différentes.
 
-### KOR meter states
+### Régime des petites entreprises (KOR)
 
-The app shows the KOR progress meter in a few states:
+La carte KOR vous demande si vous participez à la **kleineondernemersregeling** néerlandaise et comporte l'interrupteur **Je participe au KOR**. Lorsqu'il est activé :
 
-- **Under the limit**: normal progress colour, with the amount used and the limit.
-- **Near the limit**: an amber warning so you can plan for crossing the threshold.
-- **Over the limit**: a red warning that the KOR probably no longer applies; the next return should be filed as a normal VAT return.
+- vos factures ne portent pas de TVA et vous ne déposez pas de déclaration de TVA ;
+- la TVA collectée n'apparaît pas comme due et la TVA déductible n'est pas déduite ;
+- une jauge montre votre chiffre d'affaires de l'année à ce jour face au seuil.
 
-<!-- TODO(source-missing): verify exact threshold percentages that trigger near/over KOR meter warnings and whether the toggle is available for non-Dutch workspaces. -->
+La jauge a trois états :
 
-## Page layout
+- **Sous le seuil** : couleur de progression normale.
+- **Proche du seuil** : à partir de 80 % du seuil, la ligne sous la jauge vous invite à surveiller votre chiffre d'affaires, pour anticiper le dépassement. Si vous participez, un avis orange indique aussi, à partir de 90 %, la marge qui vous reste.
+- **Au-dessus du seuil** : dès que votre chiffre d'affaires de l'année dépasse 20 000 € hors TVA ([`sources/vat-rates.yaml#countries.NL.small_business_threshold_eur`](https://github.com/silvanrijnberk/mycompanydesk-docs/blob/main/sources/vat-rates.yaml)), un avertissement rouge indique que le KOR ne s'applique plus. À partir de la facture qui a franchi le seuil, vous facturez à nouveau la TVA, sur le montant total de cette facture. Désinscrivez-vous sans attendre auprès de la Belastingdienst : vous ne pouvez alors plus participer au KOR pour le reste de l'année et l'année suivante ([`sources/vat-rates.yaml#countries.NL.small_business_on_exceed`](https://github.com/silvanrijnberk/mycompanydesk-docs/blob/main/sources/vat-rates.yaml)).
 
-The VAT page has three tabs: **Overview**, **Filing** and **Transactions** (Overzicht, Aangifte and Transacties when your app language is Dutch). Both the active tab and the active period are kept in the URL, so refresh and the back button preserve your place.
+Les paliers de 80 % et 90 % sont des choix de MyCompanyDesk pour vous prévenir à temps ; la Belastingdienst ne fixe que le seuil de 20 000 €.
 
-A page-wide period selector sits next to the tab bar and follows the filing frequency in your tax settings. Quarterly filers see Q1 to Q4 plus full year, monthly filers see M01 to M12 plus full year, and yearly filers see the full-year option. Switching it updates every card on every tab. The same filing frequency drives the period labels when you book a manual correction, so monthly filers see M01 to M12, quarterly filers see Q1 to Q4, and yearly filers keep the full-year option. A year switcher at the top of the page moves everything to another year.
+<!-- TODO(source-missing): whether the KOR switch is offered to workspaces outside the Netherlands is not yet verified. -->
 
-The active tab and period are both in the URL, so links from the VAT deadline reminder in your notification panel, the agenda-deadline chip, the push notification, and the VAT-period card in Expenses all open the exact period the message refers to instead of defaulting to the current quarter.
+Si vous ne remplissez plus les conditions du KOR, désactivez l'interrupteur et vérifiez la déclaration suivante avec votre comptable. Pour en savoir plus sur le KOR, voir [plus bas](#kor).
 
-## Hero card
+## Onglet Aperçu
 
-The hero summarises the selected period:
+La carte du haut résume la période choisie :
 
-- **Balance**: the same net total as rubriek 5g on the Filing tab: VAT collected and self-charged (rubrieken 2a/4a/4b) minus the input VAT that goes into rubriek 5b, with manual corrections included. VAT owed through the OSS scheme is not part of it, because that belongs on its own return. It carries a "te betalen" or "terug te ontvangen" label and follows the period selector.
-- **Deadline ring**: a circular countdown to the next filing deadline, computed from your workspace country's schedule and your filing frequency. Red when 3 days or fewer remain, amber up to 14 days, green otherwise. Has a return been submitted but its amount is still open, the ring stays on that period until the payment date and the hint reads "Ingediend, nog betalen", with "Vandaag betalen" on the payment day itself; a submitted period that is settled, or one that came out as a refund, no longer holds the ring and the countdown moves on to the next filing.
+- **Solde** : le même total net que la rubrique 5g de l'onglet Déclaration : TVA collectée et autoliquidée (rubriques 2a/4a/4b) moins la TVA déductible de la rubrique 5b, corrections manuelles comprises. La TVA due au titre du guichet unique OSS n'en fait pas partie, car elle relève d'une déclaration distincte. Le solde porte la mention « À payer » ou « À récupérer » et suit le sélecteur de période.
+- **Anneau d'échéance** : un compte à rebours circulaire jusqu'à la prochaine échéance, calculé à partir du calendrier du pays de votre espace et de votre fréquence de déclaration. Rouge à 3 jours ou moins, orange jusqu'à 14 jours, vert sinon. Si une déclaration a été déposée mais pas encore payée, l'anneau reste sur cette période jusqu'à la date de paiement et affiche **Déclarée, reste à payer**, puis **À payer aujourd'hui** le jour même. Une période déposée et réglée, ou soldée par un remboursement, ne retient plus l'anneau et le compte à rebours passe à la déclaration suivante. Pour un espace néerlandais, l'échéance d'une déclaration mensuelle ou trimestrielle est le dernier jour du mois qui suit la période, et celle d'une déclaration annuelle tombe avant le 1er avril de l'année suivante (donc le 31 mars au plus tard). À cette date, la Belastingdienst doit avoir reçu à la fois la déclaration et le paiement ([`sources/nl-vat-filing.yaml#deadlines`](https://github.com/silvanrijnberk/mycompanydesk-docs/blob/main/sources/nl-vat-filing.yaml)).
 
-<!-- TODO(source-missing): RichardTool 8bd35ae1 introduced country-specific VAT filing deadlines (NL, GB, DE, and others). The exact deadline rules per country are not yet in sources/. Do not list specific per-country due dates until a human adds them to sources/. -->
-- **VAT savings pot (Btw-spaarpotje)**: a suggested reserve of the VAT you still have to pay plus a 10% buffer, shown when the balance is payable. When you are due money back, the tile flips to a green refund tile instead.
+<!-- TODO(source-missing): The app also uses country-specific VAT filing deadlines for workspaces outside the Netherlands (GB, DE and others). Those rules are not in sources/ yet; do not list per-country due dates for them until a human adds them. -->
+- **Réserve** : une somme à mettre de côté, soit la TVA encore à payer plus une marge de 10 %, affichée quand le solde est à payer. Si l'administration vous doit de l'argent, la tuile affiche le remboursement.
 
-Three buttons sit under the balance: **Open aangifte** jumps to the Filing tab, **How is this calculated?** walks through the math behind the balance, and **Open Mijn Belastingdienst Zakelijk** opens the business portal at `mijn.belastingdienst.nl/mbo-portaal/` so you can finish the submission without an extra chooser step.
+Deux boutons figurent sous le solde : **Vers la déclaration** ouvre l'onglet Déclaration, et **Comment est-ce calculé ?** détaille le calcul du solde.
 
-A banner above the hero warns when your data is incomplete (draft invoices or expenses without VAT), so you can fix it before filing.
+Au-dessus de cette carte, un bandeau vous avertit lorsque vos données sont incomplètes (factures en brouillon ou dépenses sans TVA), pour que vous puissiez corriger avant de déclarer.
 
-MyCompanyDesk also emails you once per VAT period as the filing deadline approaches. The email links straight to the VAT page and follows your VAT deadlines toggle in Settings → Notifications, so you can turn it off there.
+En dessous, les cartes de période de l'année indiquent pour chaque période le chiffre d'affaires, la TVA sortante et entrante et le solde, avec l'échéance. Une période déclarée affiche sa date de dépôt. Cliquez sur une carte pour changer la période de toute la page. Les périodes à venir restent vides tant qu'elles ne contiennent pas de données réelles.
 
-If your company is a Dutch BV or NV, the same VAT deadlines toggle also sends a once-per-year reminder ahead of the corporate income tax (vennootschapsbelasting) filing deadline. The reminder appears in the notification panel and is sent by email.
+Une carte annuelle clôt l'onglet : chiffre d'affaires, TVA due et TVA déductible sur l'année, plus une estimation de l'impôt sur le revenu (ou de l'impôt sur les sociétés pour une BV) de cette année, avec le lien **Voir le calcul**.
 
-## Overview tab
+MyCompanyDesk vous envoie aussi un e-mail une fois par période de TVA à l'approche de l'échéance. L'e-mail renvoie directement vers les pages TVA et suit l'interrupteur **Quand votre déclaration de TVA approche** dans Paramètres › Notifications, où vous pouvez le désactiver.
 
-### Quarter strip
+Si votre entreprise est une BV ou une NV néerlandaise, le même interrupteur envoie aussi, une fois par an, un rappel avant l'échéance de la déclaration d'impôt sur les sociétés (vennootschapsbelasting). Le rappel apparaît dans le panneau de notifications et arrive par e-mail.
 
-Four cards (Q1 to Q4) summarising revenue, VAT collected, VAT paid, and the balance per quarter, along with the filing deadline and a status badge. The badge comes from the same status model the periods manager uses, so the strip and the periods list always agree about a quarter: filed, to be filed (the period has ended but its filing deadline has not passed yet), late, temporarily open (a lock is lifted for a fix), locked, in progress, upcoming, or not applicable for quarters that ended before your workspace existed. A quarter whose deadline has passed without a filed return shows as late even when its bookings are already locked. Click a card to switch the page-wide period. Upcoming quarters stay empty until they contain actual data, then they show the balance and a status badge just like past quarters.
+## Onglet Contrôle
 
-### Pre-filing checks
+Une liste de vérifications exécutée sur la période active avant le dépôt. Chaque vérification comporte un lien qui vous mène directement aux écritures concernées :
 
-A checklist that runs against the active period. Every check has a fix link that takes you straight to the affected records:
+- **Brouillons** : factures encore en brouillon, qui ne comptent pas dans la déclaration.
+- **TVA manquante** : dépenses sans montant de TVA.
+- **Reçus manquants** : dépenses sans reçu joint.
+- **ICP en attente** : ventes B2B intra-UE à déclarer séparément sur l'ICP-opgaaf. Le montant et le nombre suivent les mêmes règles que l'ICP-opgaaf elle-même et correspondent donc aux lignes réellement déclarées.
+- **Origine de l'autoliquidation** : dépenses en autoliquidation dont le pays ou le numéro KVK du fournisseur manque, de sorte que les rubriques 2a/4a/4b ne peuvent pas être justifiées.
+- **Écart de déductibilité** : dépenses dont la TVA déductible diffère de la TVA totale, par exemple parce que la catégorie n'est pas entièrement déductible ou qu'il y a un usage privé. Cela correspond aux indicateurs de l'onglet Transactions.
 
-- **Drafts**: invoices still in draft that will not count in the aangifte.
-- **Missing VAT**: expenses without a VAT amount.
-- **Missing receipts**: expenses without an attached receipt.
-- **ICP pending**: EU B2B sales that need to be reported separately on the ICP-opgaaf. The amount and count use the same classification rules as the ICP return, so they match the lines that will actually appear on the submission.
-- **Reverse-charge origin**: expenses with reverse-charge VAT whose supplier country or KVK number is missing, so rubriek 2a/4a/4b cannot be proven.
-- **déductible mismatch**: expenses whose déductible VAT does not equal their total VAT, for example because the category is not fully déductible or private use applies. This mirrors the flags shown on the Transactions tab.
+L'en-tête indique combien de points restent ouverts, ou que tout est en ordre pour la période. Les régimes comme le KOR, l'exonération et l'usage privé de la voiture n'apparaissent ici que s'ils vous concernent. Tant que votre chiffre d'affaires reste dans la zone du KOR, cet onglet affiche aussi une suggestion avec un lien vers les réglages du KOR. Une ligne en bas ouvre vos archives de l'année : reçus, factures et contrats au même endroit.
 
-A badge in the header shows the number of blockers, or that everything is clear.
+## Onglet Déclaration
 
-### Summary and year totals
+### Tableau des rubriques
 
-Below the checks you see the year's key figures (revenue, expenses, profit, VAT collected and paid, an estimated tax burden, and a recommended reserve), plus a one-line total across the quarters.
+Un tableau qui reprend le formulaire de déclaration de la Belastingdienst :
 
-While your revenue is still in KOR territory, this tab also shows a hint pointing to the KOR settings (see below).
-
-## Filing tab
-
-### Rubrieken sheet
-
-A table that mirrors the Belastingdienst aangifteformulier:
-
-| Section | Codes |
+| Section | Rubriques |
 |---|---|
 | 1. Prestaties binnenland | 1a, 1b, 1c, 1d, 1e |
 | 2. Verleggingsregelingen binnenland | 2a |
@@ -129,129 +119,125 @@ A table that mirrors the Belastingdienst aangifteformulier:
 | 4. Prestaties vanuit het buitenland aan u verricht | 4a, 4b |
 | 5. Voorbelasting en berekening totaal | 5a, 5b, 5c |
 
-Each row shows the omzet (excl.) and the VAT amount. The bottom bar shows the total to pay or receive. Corrections that fall outside the form appear on their own rows: a generic booking correction is shown as **Correctie**, while a reduction under the old KOR scheme is shown as **Vermindering volgens de oude KOR**. The CSV summary adds a matching corrections line when these are nonzero, so the balance, collected and paid figures add up. The year-overview btw-saldo column uses the same net-VAT total as the rubrieken sheet, so its rows total to the same figure.
+Chaque ligne indique le montant (HT) et le montant de TVA. Les rubriques sans transaction sur la période sont regroupées en une seule ligne ; **Afficher toutes les rubriques** les déplie. La barre du bas affiche le total à payer ou à récupérer. Les corrections hors formulaire ont leurs propres lignes : une correction d'écriture générique apparaît comme **Correctie**, une réduction au titre de l'ancien KOR comme **Vermindering volgens de oude KOR**. Le récapitulatif CSV ajoute une ligne de corrections correspondante lorsqu'elles ne sont pas nulles, afin que solde, TVA collectée et TVA payée concordent. La colonne solde TVA de l'aperçu annuel utilise le même total net que le tableau des rubriques, si bien que ses lignes aboutissent au même chiffre.
 
-When you add a manual correction, enter a positive amount and choose a direction (VAT due or VAT refund). Negative amounts are rejected and the form shows an error asking you to pick the direction instead; the direction determines whether the correction increases VAT payable or decreases it.
+La rubrique 4a regroupe les achats en autoliquidation auprès de fournisseurs hors UE ; la rubrique 4b ceux auprès de fournisseurs de l'UE. MyCompanyDesk déduit la bonne rubrique du pays du fournisseur afin que le total de la rubrique 5a reste exact.
 
-The year field accepts tax years between 2000 and the current calendar year plus one. Years above that range are rejected with an inline message, because a correction saved for a future year would become unreachable on the VAT page.
+### Dépôt
 
-The référence year field for VAT corrections uses the same 2000-to-current-plus-one range. The référence year must be the tax year the original entry belongs to; choosing a year outside the range or a future référence year is blocked, because the correction would otherwise point to a period that cannot be reached from the VAT page.
+Un panneau à côté du tableau montre où en est la période (brouillon, déclarée, payée ou remboursement) et renvoie vers les onglets Contrôle, Transactions et Corrections, avec leurs compteurs. Une fois la période terminée, reportez les chiffres dans Mijn Belastingdienst Zakelijk : **Ouvrir Mijn Belastingdienst Zakelijk** ouvre le portail professionnel à l'adresse `mijn.belastingdienst.nl/mbo-portaal/` sans page de choix intermédiaire. Utilisez ensuite **Marquer comme déclarée** pour que MyCompanyDesk enregistre que vous avez déposé la déclaration. Après le dépôt, vous pouvez enregistrer la référence de paiement (betalingskenmerk) figurant sur votre confirmation.
 
-A correction is only counted in a return when its period matches your workspace's VAT filing frequency. For example, a correction saved as Q1 will not be included in any monthly or yearly return, and a correction saved as M03 will not be included in any quarterly return. The corrections card shows an orange warning badge and a hint when a correction's period does not appear in any return, so you can edit its period before filing.
+### Exports pour votre comptable
 
-Rubriek 4a captures reverse-charge purchases from suppliers outside the EU (`import_reverse_charge`); rubriek 4b captures reverse-charge purchases from EU suppliers (`b2b_reverse_charge`). MyCompanyDesk derives the correct rubriek from the supplier country so the total in 5a stays accurate.
+Le bouton **Exporter** de la barre d'outils propose des exports CSV : un export comptable, un récapitulatif TVA du trimestre choisi et un aperçu annuel. Les factures en brouillon et annulées ne sont pas comptées, de sorte que les totaux correspondent à votre déclaration.
 
-When you save or delete a correction, the rubrieken sheet, hero card, quarter strip and filing-action card update immediately; there is no need to refresh or switch periods. The company-car private-use card also refreshes live when its correction is booked.
+Le nom du fichier ZIP de l'export comptable contient le nom de l'entreprise, la période et le profil d'export, et le README qu'il contient nomme aussi l'entreprise. Un comptable qui télécharge des exports pour plusieurs clients distingue ainsi facilement les fichiers.
 
-### Exports for your accountant
+### Avertissement d'écart avec une déclaration déposée
 
-A download card next to the sheet offers CSV exports: a full export for your boekhouder, a btw summary for the selected quarter, and a year overview.
+Pour la TVA néerlandaise, l'onglet Déclaration continue de recalculer la déclaration à partir de vos écritures actuelles, même lorsque la période est marquée comme déclarée. Si le calcul ne correspond plus à ce que vous avez déposé, un bandeau d'avertissement apparaît au-dessus du tableau des rubriques. Il compare les montants déposés et actuels des rubriques 5a, 5b et du total net 5g, et indique l'écart pour chaque ligne.
 
-The ZIP filename includes the company name, the period and the export profile, and the README inside also names the company. This makes it easier for an accountant who downloads exports for several clients to tell the files apart.
+Le bandeau vous dit aussi quoi faire, selon l'écart sur le total net (5g). Jusqu'à 1 000 € de TVA inclus, vous reportez l'écart dans votre prochaine déclaration ordinaire. Au-delà de 1 000 €, une déclaration rectificative formelle (suppletieaangifte) est obligatoire, et c'est seulement dans ce cas que le bandeau affiche le bouton **Créer une suppletie** ([`sources/nl-vat-corrections.yaml#suppletie.next_return_threshold_eur`](https://github.com/silvanrijnberk/mycompanydesk-docs/blob/main/sources/nl-vat-corrections.yaml)). Si seules les rubriques ont bougé et que le montant à payer ou à récupérer est resté le même, le bandeau vous le signale et vous n'avez rien à comptabiliser.
 
-<!-- TODO(source-missing): RichardTool 4ffca446 surfaced a nil-return reminder that mentions a Belastingdienst invitation and a verzuimboete. sources/ has no entry for Dutch nil-VAT-return obligations or fines; do not quote the invitation requirement or the fine in docs until a human verifies the current rule at belastingdienst.nl. -->
+### Cartes internationales
 
-### Nil-return reminder
+En cas d'activité internationale, des cartes complémentaires apparaissent sous le tableau :
 
-If the selected period has ended and both rubriek 5a and 5b are zero, an info card appears on the Filing tab to remind you that a nil return may still need to be filed when your tax authority invited you to do so. The card is not shown for periods that ended before the workspace was created, because MyCompanyDesk holds no data for those periods.
+- **ICP-opgaaf** : ventes B2B intra-UE regroupées par numéro de TVA du client, et non par fiche client. Le regroupement et l'affichage utilisent le numéro normalisé (sans espaces ni points), un client sans numéro de TVA reste regroupé sous sa propre fiche, et un client ayant deux numéros de TVA apparaît sur deux lignes. Obligatoire si vous avez vendu des biens ou des services à des clients assujettis dans d'autres pays de l'UE. La carte suit le sélecteur de période, un export trimestriel ne liste donc que les clients UE de ce trimestre.
+- **OSS UE** : ventes B2C par pays pour le guichet unique (One Stop Shop).
+- **TVA étrangère** : TVA étrangère qui vous a été facturée et qui peut être récupérable via la procédure de remboursement de l'UE. Cette carte ne liste que des fournisseurs d'États membres de l'UE ; les dépenses auprès de fournisseurs hors UE n'y figurent pas. Comme une demande de remboursement est adressée à un seul État membre, la carte vérifie le montant minimal de l'UE pays par pays : lorsque le montant récupérable d'un pays est inférieur à ce minimum, un avertissement nomme les pays concernés. Les dépenses sans pays fournisseur sont vérifiées ensemble, comme un seul groupe.
 
-### Filed-return drift warning
+Ces cartes restent masquées tant qu'il n'y a pas de données internationales ; la plupart des espaces de travail ne les voient donc jamais.
 
-<!-- TODO(source-missing): RichardTool 28c9641 added a filed-return drift warning that uses a Belastingdienst threshold to choose between "include in the next regular return" and "formal suppletieaangifte required". sources/ has no entry for this threshold; do not quote the value or link target in docs until a human verifies the rule at belastingdienst.nl. -->
+## Onglet Corrections
 
-For Dutch VAT, once a period is marked as filed the Filing tab keeps recalculating the return from your live records. If the current calculation no longer matches what you submitted, a warning banner appears above the rubrieken sheet. It compares the filed and current amounts for rubriek 5a, 5b and the net total in 5g, and shows the difference for each row.
+On y trouve, par année, les écritures qui ne proviennent ni de factures ni de dépenses, avec le bouton **Ajouter une correction**. Chaque correction a un type, un sens, une année fiscale et une période, un montant de TVA et une note facultative ; la liste indique dans quelle déclaration elle est traitée :
 
-The banner tells you what to do next. It either tells you to include the difference in your next regular return, to file a formal suppletieaangifte, or to note that the rows shifted while the net payable or refundable amount stayed the same.
+- **Usage privé** (privé-onttrekking) compte dans la rubrique 1d.
+- **Déclaration rectificative** (suppletie, correction d'une déclaration antérieure) s'impute sur la rubrique 5a ou 5b (sous le KOR, elle n'affecte pas la TVA déductible, la rubrique 5b reste donc à zéro).
+- **Ajustement** n'a pas de case propre ; il ne fait que déplacer le total à payer ou à récupérer affiché par MyCompanyDesk, pas une rubrique que vous recopiez.
 
-### International cards
+Saisissez un montant positif et choisissez un sens (**TVA due** ou **TVA à récupérer**). Les montants négatifs sont refusés et le formulaire vous demande alors de choisir le sens ; c'est lui qui détermine si la correction augmente ou diminue la TVA à payer.
 
-When you have international activity, companion cards appear under the sheet:
+L'année fiscale accepte les années de 2000 à l'année en cours plus un. Une année postérieure est refusée avec un message, car une correction enregistrée sur une année future deviendrait introuvable. L'année d'origine d'une déclaration rectificative utilise la même plage et doit être l'année fiscale de l'écriture d'origine.
 
-- **ICP-opgaaf**: EU B2B sales grouped per customer VAT id, not per customer record. Grouping and display both use the normalised number (no spaces or dots), a customer without a VAT number still groups under its own record, and one customer with two VAT ids appears on two lines. Required when you sold goods or services to VAT-registered customers in other EU countries. The card follows the page-wide period selector, so a quarterly export lists only that quarter's'EU customers.
-- **OSS breakdown**: per-country B2C sales for the One Stop Shop scheme.
-- **Foreign VAT**: foreign VAT charged to you that may be reclaimable through the EU refund procédure. This card only lists suppliers from EU member states; expenses from non-EU suppliers are not shown here. Because a refund request goes to one member state, the card tests the EU minimum claim amount per country: when the reclaimable amount of a single country sits below that minimum, a warning appears and names the countries concerned, so you know which claims fall below it. Expenses on rows without a supplier country are tested as one group together.
-- **Corrections**: manual VAT corrections, each with a hint that explains where it lands on the return. A private withdrawal counts in rubriek 1d. A suppletie is offset against rubriek 5a or 5b (under the KOR it does not affect input VAT, so rubriek 5b stays zero). A generic adjustment does not get its own box; it only shifts the payable or refundable total shown by MyCompanyDesk, not a rubriek you copy across.
+Une correction n'est prise en compte dans une déclaration que si sa période correspond à votre fréquence de déclaration. Par exemple, une correction enregistrée en Q1 n'entre dans aucune déclaration mensuelle ou annuelle, et une correction en M03 dans aucune déclaration trimestrielle. Lorsque la période d'une correction n'apparaît dans aucune déclaration, la liste affiche un avertissement orange avec une explication, pour que vous puissiez modifier la période avant de déclarer.
 
+Lorsque vous enregistrez ou supprimez une correction, le tableau des rubriques, la carte du haut et les cartes de période se mettent à jour immédiatement ; inutile d'actualiser ou de changer de période.
 
-<!-- TODO(source-missing): RichardTool e671fd80 surfaces a Belastingdienst €1,000 threshold for suppletie corrections (under = next regular aangifte, over = formal suppletieaangifte required). sources/ has no entry for this threshold; do not invent the value or the link target until a human verifies the current rule at belastingdienst.nl. -->
+Pour une **Suppletie**, la liste indique aussi la voie que la Belastingdienst impose. Le seuil est de 1 000 € de TVA ([`sources/nl-vat-corrections.yaml#suppletie.next_return_threshold_eur`](https://github.com/silvanrijnberk/mycompanydesk-docs/blob/main/sources/nl-vat-corrections.yaml)) : 1 000 € ou moins peut être repris dans votre prochaine déclaration ordinaire, plus de 1 000 € exige une déclaration rectificative formelle (suppletieaangifte). MyCompanyDesk raisonne par période corrigée et additionne toutes les suppleties de cette période : une ligne de 600 € et une de 700 € comptent ensemble pour 1 300 €. Vous avez déclaré trop peu de TVA ? Déposez alors la suppletie dans les 8 semaines suivant la découverte de l'erreur ([`sources/nl-vat-corrections.yaml#suppletie.deadline_after_discovery_weeks`](https://github.com/silvanrijnberk/mycompanydesk-docs/blob/main/sources/nl-vat-corrections.yaml)). Vous pouvez corriger jusqu'à 5 ans après l'année concernée par la correction ([`sources/nl-vat-corrections.yaml#suppletie.correction_window_years`](https://github.com/silvanrijnberk/mycompanydesk-docs/blob/main/sources/nl-vat-corrections.yaml)).
 
-These cards stay hidden until there is actual international data, so most workspaces never see them.
+### Usage privé de la voiture
 
-### Company car private use
+Si vous déduisez la TVA d'une voiture de société, vous devez corriger l'usage privé en fin d'année. Lorsque vous enregistrez des frais de voiture, l'onglet Corrections affiche une ligne suggérée **Usage privé de la voiture** ; **Calculer** ouvre la correction :
 
-When you deduct VAT on a company car, you must correct for private use at the end of the year. MyCompanyDesk has a dedicated VAT correction flow for this:
+- Choisissez entre une correction forfaitaire basée sur le prix catalogue de la voiture et une correction selon l'usage réel, basée sur un registre de trajets complet (**Je tiens un registre complet des déplacements**).
+- Le forfait est de 2,7 % du prix catalogue, TVA et BPM comprises ([`sources/nl-vat-corrections.yaml#private_car_use.standard_pct_of_catalogue_value`](https://github.com/silvanrijnberk/mycompanydesk-docs/blob/main/sources/nl-vat-corrections.yaml)). Il passe à 1,5 % lorsque l'usage privé a lieu plus de 4 ans après l'année de mise en service de la voiture, ou lorsque la voiture a été achetée sans déduction de TVA, par exemple sous le régime de la marge ou auprès d'un particulier ([`sources/nl-vat-corrections.yaml#private_car_use.reduced_applies_when`](https://github.com/silvanrijnberk/mycompanydesk-docs/blob/main/sources/nl-vat-corrections.yaml)). Une voiture mise en service en 2021 relève donc de 2,7 % jusqu'en 2025 inclus et de 1,5 % à partir de 2026. Pour le taux réduit, activez **Véhicule de plus de 5 ans ou acheté sans déduction de TVA**.
 
-- Choose between a flat-rate correction based on the car's list price, or an actual-use correction based on a complete trip log.
-- The flat-rate percentage depends on whether the car is older than the threshold year or bought without VAT déduction.
+La ligne suggérée n'apparaît que dans la dernière période de l'année (Q4, M12 ou la déclaration annuelle), car la correction se fait dans la dernière déclaration de l'année ([`sources/nl-vat-corrections.yaml#private_car_use.declared_in`](https://github.com/silvanrijnberk/mycompanydesk-docs/blob/main/sources/nl-vat-corrections.yaml)). La correction est intégrée aux totaux de la période dans l'onglet Déclaration.
 
-The correction is rolled into the period totals on the Filing tab.
+## Onglet Transactions
 
-<!-- TODO(source-missing): The Dutch flat-rate percentages for company-car private-use VAT correction and the age threshold are not yet in sources/. Do not quote the values in docs until a human verifies the current rules at belastingdienst.nl. -->
+La liste de toutes les factures et dépenses qui alimentent la période choisie, pratique pour vérifier par sondage avant le dépôt. Cherchez par numéro ou par client et affinez la liste avec les puces **Tout**, **Ventes**, **Achats**, **Sans reçu**, **Sans TVA** et **Autoliquidation**. Chaque ligne indique sa rubrique et renvoie vers la facture ou la dépense correspondante.
 
-## Transactions tab
+Les dépenses qui ne sont pas entièrement déductibles portent un indicateur comme **TVA non déductible** ou **TVA partiellement déductible**. Survolez l'indicateur (ou donnez-lui le focus) pour voir quelle part de la TVA de la dépense compte comme TVA déductible en rubrique 5b. Sous le KOR, l'infobulle explique qu'aucune TVA n'est déduite car la rubrique 5b est nulle pour toute la période ; l'indicateur concerne alors la période, et non la dépense.
 
-A flat list of every invoice and expense feeding the selected period, useful for spot-checking records before you file. Filter chips narrow the list down: **All**, **Missing receipt**, **Missing VAT**, **Reverse charge** and **Foreign VAT**, each with a live count. Every row links to the underlying invoice or expense.
+## Onglet Périodes
 
-Expense rows that are not fully déductible show a flag such as **VAT not déductible** or **VAT partly déductible**. Hover the flag (or focus it) to see a tooltip explaining how much of the expense VAT counts as input VAT in rubriek 5b. If you use the KOR, the tooltip explains that no input VAT is deducted because rubriek 5b is zero for the whole period; the flag is then about the period, not the individual expense.
+L'onglet Périodes liste chaque période de l'année avec son statut, sa date de dépôt, sa référence de paiement et son solde. Le statut est **Déclarée**, **À déclarer** (la période est terminée mais l'échéance n'est pas encore passée), **En retard**, **Temporairement ouverte** (un verrou est levé pour une correction), **Verrouillée**, **En cours**, **À venir** ou **Non applicable** pour les périodes terminées avant la création de votre espace. Une période dont l'échéance est passée sans déclaration déposée apparaît **En retard**, même si ses écritures sont déjà verrouillées.
 
-## Period locking
+- **Verrouillage automatique** : dès que l'échéance d'une période est passée, MyCompanyDesk la verrouille automatiquement, pour que vos livres restent conformes à la déclaration déposée.
+- **Verrouillage manuel** : **Verrouiller** permet de verrouiller vous-même toute période passée de l'année choisie, par exemple juste après un dépôt anticipé. Verrouiller une période encore en cours déclenche un avertissement supplémentaire. Les périodes terminées avant la création de l'espace ne peuvent pas être verrouillées, car MyCompanyDesk n'a aucune donnée les concernant.
+- **Marquer comme déclarée** : marquez une période comme déclarée une fois la déclaration déposée. S'il existe une déclaration enregistrée pour une période non marquée, la liste le signale. Lorsque vous ouvrez un rappel d'échéance TVA dans le panneau de notifications, **Marquer comme déclarée** utilise la période nommée dans ce rappel et non la date du jour, afin de mettre à jour le bon trimestre ou le bon mois. Seuls les rappels de cette période sont clôturés, pas tous les rappels TVA en attente de l'espace.
+- **Annuler le marquage** : si vous avez marqué une période comme déclarée par erreur, vous pouvez supprimer cet enregistrement. MyCompanyDesk demande d'abord une confirmation. La période reste verrouillée, la tâche et l'échéance de déclaration reviennent, et rien ne change auprès de l'administration fiscale : une déclaration déposée reste déposée.
+- **Déverrouiller temporairement** : besoin de corriger quelque chose ? Déverrouillez une période pour 72 heures, après quoi elle se reverrouille d'elle-même, ou utilisez **Verrouiller à nouveau** quand vous avez terminé. Supprimer complètement un verrou n'est possible que tant que l'échéance n'est pas passée.
 
-A summary bar at the top of the VAT page shows how many periods are locked; expand it to manage them.
+Le statut de déclaration est suivi par période exacte, et non par plage. Une déclaration annuelle déposée ne marque pas les quatre trimestres comme déclarés, et un trimestre déposé ne marque pas ses mois. Le verrouillage, lui, couvre toute la plage : un verrou annuel protège donc chaque trimestre.
 
-- **Automatic locking**: once a period's filing deadline has passed, MyCompanyDesk locks it automatically, so your books keep matching the aangifte you filed.
-- **Manual locking**: period chips let you lock any past period of the selected year yourself, for example right after filing early. Locking a period that is still running triggers an extra warning. Periods that ended before the workspace was created cannot be locked, because MyCompanyDesk holds no data for them and cannot have filed a return on your behalf.
-- **Mark as filed**: flag a locked period as filed once you have submitted the aangifte. Filing a return from the Filing tab marks the period as filed in the same step, so this action is for returns you filed outside MyCompanyDesk. If an archived return exists for a period that is not marked as filed, the periods list says so and shows that return's date. When you open a btw-deadline reminder in the notification panel, the **Mark as filed** action uses the period named in that reminder rather than today's date, so it updates the correct quarter or month. It also resolves only the reminders for that period, not every outstanding VAT reminder in the workspace. Filed quarters show this in the quarter strip too.
-- **Unmark as filed**: if you marked a period as filed by mistake, you can remove that filing record. MyCompanyDesk asks for confirmation first, because the action removes the record that you filed for this period. The period stays locked, the filing task and deadline return, and nothing changes at the tax authority. Your submitted return remains submitted.
-- **Temporary unlock**: need to fix something? Unlock a period temporarily (72 hours) and it relocks by itself, or relock it manually when you are done. Removing a lock entirely is only possible while the filing deadline has not yet passed.
+**Moment du dépôt et corrections.** Vous ne pouvez marquer une période comme déclarée qu'une fois celle-ci terminée ; avant cela, le bouton indique à partir de quelle date c'est possible. Une période ne peut être marquée comme déclarée qu'une seule fois. Pour corriger une période déclarée, ajoutez une correction ou une déclaration rectificative dans une période ouverte.
 
-Filing status is tracked per exact tijdvak, not by range containment. A filed year return does not mark the four quarters as filed, and a filed quarter does not mark the months inside it as filed. Locking still covers the whole range, so a year lock still protects every quarter.
+**Périodes verrouillées et actions groupées.** Les actions groupées sur des dépenses ou des factures sont refusées si une ligne sélectionnée tombe dans une période de TVA verrouillée. Le message d'erreur nomme la période exacte (par exemple « 1 avr. 2026 au 30 juin 2026 ») et explique la marche à suivre. Si la période est déjà déclarée, la seule voie est une déclaration rectificative. S'il s'agit d'un simple verrou (échéance passée sans déclaration déposée), vous pouvez déverrouiller temporairement la période dans l'onglet Périodes, ou retirer de votre sélection les lignes de cette période et réessayer.
 
-**Filing timing and corrections.** You can only file a period after it ends. If you try to file before the last day of the period has passed, the app shows an error telling you to wait until the period is over. You can mark a period as filed only once; if it is already marked as filed, you cannot file it again from the VAT page. To correct a filed period, add a correction/suppletie in an open period instead. The Filing tab shows which periods are still open and which are already filed.
+La modification d'une facture ou d'une dépense dans une période verrouillée est bloquée dans le formulaire : les champs financiers passent en lecture seule (les notes restent modifiables) et le formulaire propose une voie de correction, comme une correction dans la période ouverte en cours ou une facture d'avoir. La même protection s'applique lorsque vous confirmez un rapprochement bancaire ou marquez une dépense comme payée : si la transaction tombe dans une période verrouillée, l'action est bloquée et l'application vous invite à passer par une correction dans la période ouverte en cours.
 
-**Locked periods and bulk actions.** Bulk actions on expenses or invoices are refused when any selected row falls inside a locked VAT period. The error message names the exact period (for example, "1 Apr 2026 to 30 Jun 2026") and explains the real next step. If the period is already filed, the only route is a supplementary VAT return. If it is a bare lock (the filing deadline has passed but no return was filed), the period can be unlocked temporarily from this page, or you can remove the rows in that period from your selection and retry.
-
-Editing an invoice or expense inside a locked period is blocked at the form: the financial fields turn read-only (notes stay editable) and the form offers a correction path instead, such as creating a correction in the current open period or a credit invoice. The same guard also applies when you confirm a bank-transaction match or mark an expense as paid: if the transaction falls in a locked period, the action is blocked and the app tells you to use a correction in the current open period instead.
-
-Concurrent filing attempts for the same period are serialized. If two submissions race, for example from a double click or two open tabs, the second request is rejected with a clear message instead of failing with a database error.
+Les tentatives de dépôt simultanées pour une même période sont traitées l'une après l'autre. Si deux envois se croisent, par exemple après un double clic ou depuis deux onglets ouverts, le second est refusé avec un message clair au lieu d'échouer.
 
 ## KOR
 
-The kleineondernemersregeling is managed under **Settings → Btw**: a card tracks your year revenue against the €20,000 threshold ([`sources/vat-rates.yaml#countries.NL.small_business_threshold_eur`](../../sources/vat-rates.yaml)) with a progress bar, explains what enrolment means for your invoicing, and has the enrolment toggle. You remain eligible up to and including exactly €20,000 of year revenue; only revenue above that ends KOR eligibility. While your revenue is still in the KOR range, the VAT page shows a hint linking there. With the KOR on, the rest of the VAT settings (filing frequency, default rate, exemption) fold away behind a **Show other VAT settings** button, and the top of the page reads "You take part in the KOR: you charge no VAT."
+La kleineondernemersregeling se gère dans **Paramètres › TVA** : une carte compare votre chiffre d'affaires annuel au seuil de 20 000 € ([`sources/vat-rates.yaml#countries.NL.small_business_threshold_eur`](https://github.com/silvanrijnberk/mycompanydesk-docs/blob/main/sources/vat-rates.yaml)) avec une barre de progression, explique ce que l'adhésion implique pour vos factures et contient l'interrupteur d'adhésion. Vous restez éligible jusqu'à 20 000 € de chiffre d'affaires annuel inclus ; seul le chiffre d'affaires au-delà met fin au KOR. Tant que votre chiffre d'affaires reste dans la zone du KOR, l'onglet Contrôle affiche une suggestion avec un lien vers ce réglage. Lorsque le KOR est activé, les autres réglages TVA (fréquence, taux par défaut, exonération) se replient derrière le bouton **Afficher les autres réglages TVA**, et le haut de la page indique « Vous participez à la KOR : vous ne facturez pas de TVA. »
 
-If you go above €20,000 while still enrolled, a warning banner appears at the top of the invoice editor. The banner title says you are above the KOR threshold, the body explains that the invoice must include VAT rather than 0%, and the CTA opens **Settings → Btw** so you can deregister with the Belastingdienst and turn KOR off.
+Si vous dépassez 20 000 € tout en participant encore, un bandeau d'avertissement apparaît en haut de l'éditeur de facture. Il indique que vous êtes au-dessus du seuil du KOR, explique que la facture doit comporter de la TVA au lieu de 0 %, et son bouton ouvre **Paramètres › TVA** pour que vous puissiez vous désinscrire auprès de la Belastingdienst et désactiver le KOR.
 
-The KOR can also be turned on from the invoice form itself. A new or draft invoice that carries VAT while the company has no VAT number and is not enrolled yet shows a KOR tip at the lines. **Turn on KOR** asks for confirmation first, and the switch applies to the VAT figures of the whole year and the returns that are still open, with open draft invoices and draft quotes going to 0% VAT along with it. Filed a VAT return yourself this year already? The dialog tells you a filed year needs a suppletie correction before the KOR lines up again. The tip does not appear on quotes, credit notes or reverse-charge invoices, and it stays away once you dismiss it, once a VAT number is on record or once the KOR is on.
+Le KOR peut aussi être activé depuis le formulaire de facture. Une facture nouvelle ou en brouillon portant de la TVA, alors que l'entreprise n'a pas de numéro de TVA et n'est pas encore inscrite, affiche une suggestion KOR près des lignes. **Activer le KOR** demande d'abord une confirmation ; l'activation s'applique aux chiffres de TVA de toute l'année et aux déclarations encore ouvertes, et les factures et devis en brouillon passent également à 0 % de TVA. Vous avez déjà déposé vous-même une déclaration de TVA cette année ? La boîte de dialogue précise qu'une année déclarée nécessite une rectification avant que le KOR concorde à nouveau. La suggestion n'apparaît pas sur les devis, les avoirs ni les factures en autoliquidation, et disparaît dès que vous la fermez, qu'un numéro de TVA est enregistré ou que le KOR est activé.
 
-While the KOR is on, invoices do not need a VAT number: the check before sending asks for an IBAN and no longer holds the invoice for a missing VAT ID. The setup wizard asks the KOR question with real answers: yes, no, or I don't know. I don't know leads with the rule that only signing up for the scheme with the Belastingdienst yourself puts you in it; low turnover alone is not enough, and the letter from the tax office tells you for sure. Choosing yes switches the scheme on and invoices are made without VAT, carrying a note that you take part in the KOR.
+Tant que le KOR est activé, les factures n'ont pas besoin de numéro de TVA : la vérification avant envoi demande un IBAN et ne bloque plus la facture pour un numéro de TVA manquant. L'assistant de configuration pose la question du KOR avec de vraies réponses : oui, non ou je ne sais pas. « Je ne sais pas » rappelle d'abord que seule votre propre inscription auprès de la Belastingdienst vous fait entrer dans le régime ; un faible chiffre d'affaires ne suffit pas, et le courrier de l'administration fiscale vous le confirme. Si vous répondez oui, le régime est activé et les factures sont établies sans TVA, avec une mention indiquant que vous participez au KOR.
 
-### Documents and emails under the KOR
+### Documents et e-mails sous le KOR
 
-While the KOR toggle is on, document lines count as 0% VAT. Invoice, quote, credit note and contract PDFs print **Subtotal** and **Total** without excl./incl. VAT labels and without a VAT line, invoice emails leave out the excl./incl. VAT summary under the lines, and new catalog items default to 0% VAT. The line editor keeps quiet about it too: a line shows no VAT rate and no "0% VAT" or "excl. VAT" label, in the line sheet, on the mobile line card and in the document détail. The signing page shows **Total** instead of **Total including VAT** when the quote carries no VAT. The same document wording applies while the separate exempt toggle (Vrijgesteld van btw) is on, and VAT wording in the terms you publish through your site stays neutral even after the KOR is switched off again.
+Lorsque le KOR est activé, les lignes des documents comptent comme TVA à 0 %. Les PDF de factures, devis, avoirs et contrats affichent **Sous-total** et **Total** sans mention HT/TTC et sans ligne de TVA, les e-mails de facture omettent le récapitulatif HT/TTC sous les lignes, et les nouveaux articles du catalogue sont à 0 % de TVA par défaut. L'éditeur de lignes reste discret lui aussi : une ligne n'affiche ni taux de TVA ni mention « 0 % TVA » ou « HT », que ce soit dans la fenêtre de ligne, sur la carte de ligne mobile ou dans le détail du document. La page de signature affiche **Total** au lieu de **Total TTC** lorsque le devis ne comporte pas de TVA. La même formulation s'applique tant que l'interrupteur d'exonération distinct est activé, et les mentions de TVA dans les conditions publiées via votre site restent neutres, même après la désactivation du KOR.
 
-## KIA and Box 3
+## KIA et Box 3
 
-KIA (kleinschaligheidsinvesteringsaftrek) and Box 3 are income tax topics and live under **Reports → Income tax**, not on the VAT page. The Box 3 card only appears for workspaces using the properties module.
+La KIA (kleinschaligheidsinvesteringsaftrek) et la Box 3 relèvent de l'impôt sur le revenu. Vous les trouvez dans les onglets **Déclaration de bénéfice** et **Box 3** de la section **Impôts**, après les onglets TVA, et elles nécessitent Office. L'onglet **Box 3** n'apparaît que si le module Propriétés est activé et que votre entreprise n'est pas une BV.
 
-## VAT assistant
+## Questions de TVA à l'assistant
 
-The built-in assistant can answer questions about your aangifte using your own workspace numbers, and its replies can jump straight to the matching tab or record.
+L'assistant intégré répond aux questions sur votre déclaration à partir des chiffres de votre propre espace, et ses réponses mènent directement à l'onglet ou à l'écriture concernés.
 
-## Tips
+## Conseils
 
-- Set the page period to the tijdvak you are filing; every card and metric updates together.
-- Run through the pre-filing checks before opening the Filing tab; a clean checklist usually means the rubrieken sheet matches the Belastingdienst form.
-- Use the savings pot as a target for what to set aside; it already includes a 10% buffer.
-- The deadline ring follows your filing frequency and goes red at three days. Treat that as a hard cue to file.
-- The dashboard VAT tile uses the same filing frequency as the VAT page, so the upcoming deadline and period it shows always match your actual aangifte rhythm.
-- Selling B2B in the EU? Open the ICP-opgaaf card before filing; it is a separate submission that is easy to forget.
-- Mark a period as filed right after submitting, then let the automatic lock protect it.
-- Zeroing an expense amount clears the derived VAT immediately, so a corrected expense cannot leave stale VAT on the aangifte.
+- Réglez la période sur celle que vous déclarez ; chaque carte et chaque indicateur suit.
+- Parcourez l'onglet Contrôle avant d'ouvrir l'onglet Déclaration ; une liste sans anomalie signifie généralement que le tableau des rubriques correspond au formulaire de la Belastingdienst.
+- Servez-vous de la réserve comme objectif d'épargne ; elle inclut déjà une marge de 10 %.
+- L'anneau d'échéance suit votre fréquence de déclaration et passe au rouge à trois jours. Prenez-le comme un signal ferme pour déclarer.
+- La tuile TVA du tableau de bord utilise la même fréquence que les pages TVA, l'échéance et la période affichées correspondent donc toujours à votre rythme réel de déclaration.
+- Vous vendez en B2B dans l'UE ? Ouvrez la carte ICP-opgaaf avant de déclarer ; c'est une déclaration distincte, facile à oublier.
+- Marquez une période comme déclarée juste après le dépôt, puis laissez le verrouillage automatique la protéger.
+- Mettre le montant d'une dépense à zéro efface aussitôt la TVA qui en découle, si bien qu'une dépense corrigée ne laisse pas de TVA obsolète dans la déclaration.
 
-## See also
+## Voir aussi
 
-- [How do I file a VAT return?](/en/faq/vat-return)
-- [Invoices](/en/features/invoices)
-- [Expenses](/en/features/expenses)
-- [Settings > Tax](/en/settings/company)
-
-<!-- TODO(source-missing): the exact Dutch VAT settings labels and help text should be double-checked against a live workspace before the next release. -->
+- [Comment déposer une déclaration de TVA ?](/fr/faq/vat-return)
+- [Factures](/fr/features/invoices)
+- [Dépenses](/fr/features/expenses)
+- [Paramètres de l'entreprise](/fr/settings/company)

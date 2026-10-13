@@ -1,6 +1,6 @@
 ---
 title: "Daten exportieren"
-description: "So exportieren Sie Daten: gehen Sie zu Einstellungen > Daten herunterladen für die schnellen Exportaktionen."
+description: "So exportieren Sie Daten: gehen Sie zu Einstellungen › Daten herunterladen für die schnellen Exportaktionen."
 last_verified: 2026-10-03
 chatbot:
   triggers: ["export data", "download data", "export csv", "export excel", "download report", "data exporteren", "gegevens downloaden", "daten exportieren", "exporter donnees"]
@@ -10,7 +10,7 @@ chatbot:
 ---
 
 So exportieren Sie Daten:
-1. Gehen Sie zu Einstellungen → „Daten herunterladen“ für die schnellen Exportaktionen
+1. Gehen Sie zu Einstellungen › „Daten herunterladen“ für die schnellen Exportaktionen
 2. Laden Sie dort CSV-Exporte für Rechnungen, Kunden und Ausgaben oder das Vollbackup herunter
 3. Nutzen Sie Exporte auf Bereichsebene in Rechnungen, Ausgaben oder Berichten, wenn Sie nur einen Datensatz brauchen
 

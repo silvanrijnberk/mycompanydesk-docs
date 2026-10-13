@@ -1,6 +1,6 @@
 ---
 title: "Find deleted expenses"
-description: "Deleted expenses are in Expenses > Trash. If you are already in the expense list, switch to the Trash view."
+description: "Deleted expenses are in Expenses: click Filters above the list and choose Trash under Show."
 last_verified: 2026-08-16
 chatbot:
   triggers:
@@ -27,7 +27,7 @@ chatbot:
     - "How do I restore an expense?"
 ---
 
-Deleted expenses are in Expenses -> Trash. If you are already in the expense list, switch to the Trash view.
+Deleted expenses are in Expenses: click Filters above the list and choose Trash under Show. On your phone, use the filter button at the top.
 
 Keep in mind that deletion is staged: the first delete on an active expense archives it, so if an expense is not in the Trash, check the Archive view. Deleting an archived expense moves it to the Trash, and deleting it from the Trash removes it permanently.
 

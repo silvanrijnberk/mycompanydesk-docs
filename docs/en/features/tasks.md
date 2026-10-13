@@ -9,7 +9,7 @@ Tasks keep track of things you need to do in MyCompanyDesk. Some tasks you creat
 
 ## Task list
 
-The tasks page lists your open and completed tasks. Each row shows the title, due date, status, priority, and the record the task is linked to. Tasks that come from a quote, expense, project, contract, or getting-started checklist show a source chip so you can see where they came from.
+The tasks page groups your tasks into **Overdue**, **Today**, **This week**, **Later** and **Completed** (the last 14 days). Each row shows the title, due date, status, priority, and the record the task is linked to. Tasks that were not created by hand show a source chip so you can see where they came from.
 
 Clicking a task opens the detail drawer.
 
@@ -20,7 +20,7 @@ The detail drawer is a read-only view that shows the full picture before you dec
 - The due date, status, and priority
 - The full description
 - The linked record
-- The task's source, for example a quote, expense, project, contract, or getting-started checklist
+- The task's origin, for example an invoice, a quote, an email or the VAT return
 - The project, if the task belongs to one
 - Tags
 - When the task was created
@@ -33,13 +33,16 @@ You can mark the task as done or reopen it directly from the detail drawer. To c
 Tasks can come from several places:
 
 - **Manual**: tasks you create yourself
-- **Quote**: generated from a quote
-- **Expense**: generated from an expense
-- **Project**: generated from a project
-- **Contract**: generated from a contract
-- **Getting started**: onboarding checklist items for a new workspace
+- **Invoice**: an invoice that is overdue
+- **From quote**: a quote that is about to expire
+- **Expense**: an expense that still lacks a category
+- **Contract**: a contract that is ending
+- **VAT**: an upcoming VAT return
+- **From email**: a task you create from a message in your inbox
+- **From project**: a task that belongs to a project
+- **Getting started**: setup steps for a new workspace
 
 ## Tips
 
 - Use the source chip to jump to the record a task is about.
-- The **Do now** list on the [dashboard](/en/faq/use-dashboard) puts the tasks that need action today ahead of everything else.
+- When tasks are overdue, the **Tasks** card on the [dashboard](/en/faq/use-dashboard) asks for attention, with a button to your task list.

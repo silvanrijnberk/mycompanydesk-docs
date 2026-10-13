@@ -15,10 +15,10 @@ To change the deadline for one invoice:
 2. In the Invoice Details card, update the "Due date" field
 3. Save the invoice
 
-If you want future invoices to start with a different deadline, update the customer's payment terms or the default at Settings → "Facturen en offertes" under "Hoeveel dagen krijgt een klant om te betalen?" (how many days does a customer get to pay?).
+If you want future invoices to start with a different deadline, update the customer's payment terms or the default at Settings › "Invoices and quotes" under "How many days does a customer get to pay?".
 
-Tip: Automatic payment reminders follow the due date, so a correct deadline also means reminders go out at the right moment.
+Tip: Automatic payment reminders (Office) follow the due date, so a correct deadline also means reminders go out at the right moment.
 
-If a customer has no payment terms of their own, the workspace default at **Settings → Facturen en offertes** is used before falling back to the platform default (14 days). That order used to be skipped when selecting a customer, which could produce an earlier due date than intended.
+If a customer has no payment terms of their own, the workspace default at **Settings › Invoices and quotes** is used before falling back to the platform default (14 days). That order used to be skipped when selecting a customer, which could produce an earlier due date than intended.
 
 Generated invoices from contracts and recurring invoices also receive a due date. For recurring invoices, the series' own payment-term field wins when it is set; otherwise they fall back to the platform default. For contracts, a filled-in contract payment term (more than 0 days) wins first; without one, contract invoices follow the same order as a manually created invoice: the customer's own payment term, then the workspace default, then the platform default. The email text about the payment term and the term printed on the contract itself follow the same sources.

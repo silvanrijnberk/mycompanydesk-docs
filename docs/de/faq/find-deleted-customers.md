@@ -1,6 +1,6 @@
 ---
 title: "Gelöschte Kunden finden"
-description: "Gelöschte Kunden finden Sie unter Kunden > Papierkorb. Wenn Sie bereits in der Kundenliste sind, wechseln Sie zur Ansicht Papierkorb."
+description: "Gelöschte Kunden finden Sie in Kunden: Klicken Sie auf Filter und wählen Sie unter Status die Ansicht Papierkorb."
 last_verified: 2026-05-09
 chatbot:
   triggers: ["where are deleted customers", "where can i find deleted customers", "where do i find deleted customers", "customer trash", "trashed customers", "deleted customers", "verwijderde klanten", "klanten prullenbak", "geloschte kunden", "geloeschte kunden", "geloeschten kunden", "kunden papierkorb", "clients supprimes", "mes clients supprimes", "corbeille clients"]
@@ -9,6 +9,6 @@ chatbot:
   follow_up: ["Where do I find archived customers?", "How do I search customers?", "How do I restore a customer?"]
 ---
 
-Gelöschte Kunden finden Sie unter Kunden -> Papierkorb. Wenn Sie bereits in der Kundenliste sind, wechseln Sie zur Ansicht Papierkorb.
+Gelöschte Kunden finden Sie in Kunden: Klicken Sie über der Liste auf Filter und wählen Sie unter Status die Ansicht Papierkorb. Auf dem Smartphone nutzen Sie dafür die Filterschaltfläche oben.
 
 Beachten Sie, dass das Löschen mehrstufig ist: Der erste Löschvorgang bei einem aktiven Kunden archiviert ihn. Wenn ein Kunde also nicht im Papierkorb ist, prüfen Sie zuerst die Ansicht Archiv.

@@ -1,7 +1,7 @@
 ---
 title: "Achterstallige facturen"
-description: "Om achterstallige facturen te bekijken en beheren: ga naar Facturen, filter op status Achterstallig, sorteer op vervaldatum."
-last_verified: 2026-05-09
+description: "Om achterstallige facturen te bekijken en beheren: ga naar Facturen, bekijk de groep Te laat of filter op de status Te laat."
+last_verified: 2026-10-13
 chatbot:
   triggers: ["overdue invoices", "late invoices", "unpaid invoices", "outstanding invoices", "invoices not paid", "achterstallige facturen", "onbetaalde facturen", "uberfaellige rechnungen", "factures impayees"]
   actions:
@@ -11,8 +11,8 @@ chatbot:
 
 Om achterstallige facturen te bekijken en beheren:
 1. Ga naar Facturen
-2. Filter op status "Achterstallig"
-3. Sorteer op vervaldatum
+2. Bovenaan de lijst staat de groep **Te laat**, met de oudste bovenaan. Wil je alleen die facturen zien, kies dan onder **Filters** de status "Te laat"
+3. Klik op de kolom Vervaldatum om op vervaldatum te sorteren
 4. Open een factuur om een herinnering te versturen of details te bekijken
 
-Het dashboard kan je ook terugleiden naar achterstallige totalen en bijbehorende lijsten.
+Op het tabblad **Wacht op betaling** zie je ook in één oogopslag hoeveel facturen te laat zijn, en het dashboard leidt je terug naar te late facturen.

@@ -1,7 +1,7 @@
 ---
 title: "Statut du devis"
 description: "Les statuts d'un devis : brouillon : encore modifiable, pas encore envoyé au client, envoyée : remis au client, acceptée : le client a accepté le devis."
-last_verified: 2026-09-28
+last_verified: 2026-10-13
 chatbot:
   triggers: ["quote status", "quote statuses", "quote lifecycle", "draft open sent canceled", "offerte status", "angebotsstatus", "statut devis", "estado cotizacion", "status proposta"]
   actions:
@@ -22,4 +22,4 @@ Quand vous convertissez un devis accepté en facture, le devis reste Acceptée e
 
 Sur la page de signature, le client reçoit une explication claire dès qu'un devis ne peut plus être signé : un devis dont la date de validité est dépassée invite le client à demander un nouveau devis ; un devis déjà transformé en facture ou en contrat indique qu'il n'y a plus rien à faire ; et un devis déjà accepté ne peut plus être refusé. Dans ce dernier cas, la page invite le client à vous contacter s'il a changé d'avis.
 
-Astuce : utilisez les filtres de la liste des devis pour vérifier d'abord les brouillons et les devis expirés.
+Astuce : dans la liste des devis, choisissez sous **Filtres** le statut À envoyer ou Expirés sans réponse pour vérifier d'abord les brouillons et les devis expirés.

@@ -1,174 +1,137 @@
 ---
-title: "Objecten & Activa"
-description: "Houd huurwoningen, voertuigen, apparatuur en andere bedrijfsactiva bij over hun hele levensduur. Zet de objectenmodule aan via Bedrijf, Functies."
+title: "Bezittingen"
+description: "Houd panden, voertuigen, machines en andere bezittingen bij: waarde, afschrijving, huur, kosten en WOZ. Op Office, aan te zetten bij Onderdelen."
 ---
 
-# Objecten & Activa
+# Bezittingen
 
-Houd huurwoningen, voertuigen, apparatuur en andere bedrijfsactiva bij met volledig levenscyclusbeheer.
+Houd bij wat je bedrijf bezit, wat het waard is en wat het oplevert: panden en garages die je verhuurt, je bedrijfsauto, machines, gereedschap en andere bezittingen.
 
 ::: info
-De objectenmodule is optioneel. Schakel deze in via **Bedrijf > Functies** als je hem niet in de navigatie ziet.
+**Bezittingen** zit in het Office-abonnement. Zie je het niet in de navigatie, zet dan **Bezittingen & objecten** aan via **Instellingen › Onderdelen**.
 :::
 
 ## Overzicht
 
-De objectenmodule is ontworpen voor bedrijven die fysieke activa beheren — met name verhuurbedrijven, vastgoedbeheerders en apparatuurverhuurdiensten. Elk object vertegenwoordigt een activum dat je bezit of beheert.
+De pagina **Bezittingen** toont al je bezittingen, gegroepeerd per soort (Panden, Vervoer, Gereedschap en machines, Inventaris, Elektronica, Overig). Bovenaan staan de kerngetallen: **Waarde nu**, **Huurinkomsten**, wat er **Staat leeg**, **Kosten dit jaar** en **Afschrijving dit jaar**.
 
-## Objecttypen
+## Typen
 
-| Type | Toepassing |
+Bij het aanmaken kies je een type: **Pand / Garage**, **Appartement**, **Kantoor**, **Winkel**, **Voertuig**, **Machine**, **Apparatuur**, **Meubilair**, **Elektronica** of **Overig**. Panden, appartementen, kantoren en winkels krijgen een adres en een WOZ-geschiedenis.
+
+## Statussen
+
+| Status | Betekenis |
 |---|---|
-| **Vastgoed** | Huurappartementen, kantoren, commerciele ruimten |
-| **Voertuig** | Auto's, vrachtwagens, bestelbussen, bouwvoertuigen |
-| **Machine** | Industriele apparatuur, gereedschap, generatoren |
-| **Overig** | Elk ander type activum |
-
-## Objectstatussen
-
-| Status | Beschrijving |
-|---|---|
+| **Actief** | In gebruik (de standaard voor een nieuwe bezitting) |
 | **Beschikbaar** | Klaar om verhuurd of gebruikt te worden |
-| **Verhuurd** | Momenteel verhuurd aan een klant |
-| **Inactief** | Niet beschikbaar (onderhoud, buiten gebruik) |
+| **Bezet** | In gebruik of verhuurd |
+| **Onderhoud** | Tijdelijk niet beschikbaar door onderhoud |
+| **Inactief** | Niet in gebruik |
+| **Verkocht** / **Afgestoten** | Uit je bedrijf verdwenen |
 
-## Een object aanmaken
+Een bezitting met een lopend huurcontract staat in de lijst als **Verhuurd**.
 
-1. Ga naar **Objecten > Nieuw object**
-2. Vul in:
-   - **Naam** - Een duidelijke identificatie (bijv. "Appartement 3B" of "Graafmachine CAT 320")
-   - **Type** - Vastgoed, Voertuig, Machine of Overig
+## Een bezitting toevoegen
+
+1. Ga naar **Bezittingen** en klik op **Bezitting toevoegen**
+2. Vul de **Naam** in (bijvoorbeeld "Garagebox Utrecht, box 12") en kies het **Type**
 3. Klik op **Opslaan**
 
-::: tip Meer opties
-Het formulier voor een nieuw object vraagt standaard alleen om de naam. Gebruik **Meer opties** om een omschrijving toe te voegen, en **Aanschaf en status** om aanschafdatum, prijs, huidige waarde, btw-regime en status in te stellen. Deze velden zijn niet verplicht om het object aan te maken; de status staat standaard op beschikbaar. Het btw-regime start standaard op Met btw; is het type een Appartement (woonruimte), dan start het op Zonder btw. Je eigen keus in het formulier geldt altijd, en bestaande objecten houden wat er bij ze is opgeslagen.
+::: tip Meer gegevens
+Alleen de naam is verplicht. In de inklapbare blokken vul je de rest in wanneer je wilt: **Adres / Locatie** (bij panden), **Details** (referentie, omschrijving, standaard huurprijs), **Waarde** (aankoopdatum, aankoopprijs, huidige waarde, verkoopdatum, opbrengst en btw-regime) en **Status**. Het btw-regime start op **Met btw**; bij een **Appartement** (woonruimte) start het op **Zonder btw**. Je eigen keus in het formulier geldt altijd, en bestaande bezittingen houden wat er bij ze is opgeslagen.
 :::
 
-## Objectdetailpagina
+## De pagina van een bezitting
 
-De detailpagina toont:
+De pagina van een bezitting toont:
 
-- Objectinformatie en type
-- Huidige status
-- **Totale omzet**: echte omzet op basis van betaalde facturen voor dit object, inclusief huur, servicekosten, losse facturen en verkoopfacturen die eraan zijn gekoppeld
-- **Actieve contracten**: aantal actieve contracten dat aan dit object is gekoppeld
-- **WOZ-geschiedenis** (bij Vastgoed) — jaarlijkse WOZ-waarden die de Box 3-berekening gebruikt
-- **Vermogensoverzicht** (bij Vastgoed-objecten met een geregistreerde WOZ-waarde) - geactiveerde waarde, cumulatieve afschrijving, huidige boekwaarde en de wettelijke ondergrens (bodemwaarde) voor het gebouw
-- Gekoppelde contracten
-- Verhuurgeschiedenis
-- **Facturen**: elke factuur die meetelt voor de totale omzet, met status en bedrag exclusief btw
+- Bovenaan de **Totale omzet** en de status, met het aantal actieve contracten
+- De kerngegevens: adres (met kaartlink), standaard huurprijs, huidige huurder en de aanschaf
+- **Geschiedenis**: contracten, facturen, onderhoud en documenten in één tijdlijn
+- **WOZ-geschiedenis** (bij panden)
+- **Bedrijfsmiddel**: aanschafwaarde, afschrijving en boekwaarde, zodra er een aankoop als investering aan de bezitting hangt
+- **Kilometeradministratie** (bij voertuigen met ritten)
+- **Financieel overzicht**: **Totale omzet**, **Totale kosten**, **Netto cashflow** en een uitsplitsing **Per jaar**
+- **Actiepunten**, bijvoorbeeld een ontbrekende WOZ-waarde voor box 3
 
-### Toegewezen facturen op dit object
+### Omzet en facturen
 
-Het tabblad Facturen op de objectdetailpagina toont elke factuur die bijdraagt aan het totale omzetbedrag:
+De **Totale omzet** telt alle betaalde facturen die aan de bezitting hangen, exclusief btw:
 
-- Facturen die zijn gegenereerd uit een contract dat aan dit object hangt
-- Facturen die direct aan het object zijn gekoppeld, zoals servicekostenafrekeningen, losse facturen en verkoopfacturen
+- facturen uit een contract dat aan deze bezitting hangt
+- facturen die direct aan de bezitting zijn gekoppeld, zoals servicekosten, losse facturen en verkoopfacturen
 
-Elke regel toont het factuurnummer, de klant, de datum, de status en het bedrag exclusief btw. Een toelichting legt uit dat het totaal alle betaalde facturen sommeert, terwijl het Box 3-rapport alleen ontvangen huur telt en uitgaat van de datum waarop het geld binnenkwam. Die twee bedragen kunnen daarom verschillen.
+Het Box 3-rapport telt alleen ontvangen huur en gaat uit van de datum waarop het geld binnenkwam. Die twee bedragen kunnen daarom verschillen; de pagina legt dat ook uit.
 
-### Contractoverzicht
+### Geschiedenis
 
-Boven de contractenlijst geeft een samenvattingsbalk je in een oogopslag inzicht in de contractuele staat van het object:
+De **Geschiedenis** zet contracten, facturen, onderhoud en documenten in één chronologische lijst. Via **Toevoegen** kies je **Onderhoud loggen** (datum, omschrijving, categorie, kosten, uitgevoerd door) of **Document toevoegen**. Onderhoud en documenten verwijder je hier; een contract of factuur beheer je op zijn eigen pagina.
 
-- **Totaal aantal contracten** gekoppeld aan dit object
-- **Getekende contracten**: hoeveel er volledig zijn ondertekend
-- **Maandelijks actief totaal**: de gecombineerde maandwaarde van alle actieve contracten, genormaliseerd uit contracten met verschillende frequenties (wekelijks, per kwartaal, jaarlijks)
+Een contract dat nog op een handtekening wacht, toont zijn ondertekenstatus: **Niet verstuurd**, **In afwachting**, **Deels getekend**, **Verlopen** of **Beëindigd**. Is het contract getekend, dan zie je weer of het actief is. Oudere contracten die nooit voor digitaal ondertekenen zijn opgezet, tonen geen ondertekenstatus.
 
-### WOZ-geschiedenis (Vastgoed-objecten)
+### WOZ-geschiedenis (panden)
 
-Bij objecten van het type **Vastgoed** bevat de detailpagina een WOZ-geschiedenissectie. WOZ-waarden (Waardering Onroerende Zaken) zijn de door de gemeente vastgestelde woningwaarden die worden gebruikt in de Nederlandse Box 3-belastingberekening.
+Bij panden, appartementen, kantoren en winkels houdt de pagina de WOZ-waarden per jaar bij. Box 3 gebruikt de WOZ-waarde die gold op 1 januari van dat jaar (de peildatum).
 
-- **Bekijk** jaarlijkse WOZ-waarden per jaar.
-- **Voeg** nieuwe waarden toe door het jaar en de WOZ-waarde van de gemeente in te vullen.
-- Box 3 hanteert de WOZ-waarde met peildatum 1 januari. Vul de waarde in die geldt voor de start van dat belastingjaar.
-- Als er nog geen waarden zijn ingevoerd, toont de sectie een lege staat met de vraag om de eerste toe te voegen.
+- Voeg een waarde toe met het jaar en de WOZ-waarde van de gemeente.
+- Heeft de bezitting een geldig Nederlands adres en is de geschiedenis nog leeg, dan haalt MyCompanyDesk de waarden zelf uit het Kadaster op. Met **Vernieuwen** haal je op elk moment de nieuwste gegevens op; die waarden krijgen het label **Kadaster**.
+- Heeft het Kadaster geen gegevens voor het adres (bijvoorbeeld bij nieuwbouw), dan zie je een melding en vul je de waarden zelf in.
 
-#### Kadaster-koppeling
+Is er een WOZ-geschiedenis uit het Kadaster, dan toont de kaart ook een **Geschatte huidige waarde**: de laatste WOZ-waarde, doorgerekend met de woningprijsindex van het CBS voor de regio van het pand.
 
-Wanneer je een Vastgoed-object met een geldig Nederlands adres toevoegt, kan MyCompanyDesk de WOZ-geschiedenis rechtstreeks uit het Kadaster ophalen. Dat scheelt handmatig invoeren en geeft je dezelfde waarden die de gemeente heeft geregistreerd.
+### Bedrijfsmiddel en bodemwaarde
 
-- **Automatisch ophalen**: als de WOZ-geschiedenis nog leeg is, haalt het systeem bij het openen van de detailpagina de beschikbare waarden uit het Kadaster op.
-- **Handmatig vernieuwen**: klik op **Vernieuwen** om op elk moment de nieuwste Kadaster-gegevens op te halen. Opgehaalde waarden krijgen een "Kadaster"-bronbadge.
-- **Ontbrekende gegevens**: als het Kadaster geen gegevens heeft voor het adres (bijvoorbeeld bij een nieuwbouwwoning), verschijnt er een melding en kun je de waarden handmatig invoeren.
+Hangt er een aankoop aan de bezitting die je als investering afschrijft (koppel de uitgave via het veld **Bezitting** in het uitgavenformulier), dan toont het blok **Bedrijfsmiddel**:
 
-#### Geschatte huidige waarde
+- **Aanschafwaarde**: wat je ervoor betaalde
+- **Op de balans**: het zakelijke deel dat geactiveerd is, na een eventueel niet-aftrekbaar btw-deel en privégebruik
+- **Afgeschreven tot nu** en **Afschrijving dit jaar tot nu**
+- **Boekwaarde**: wat er nog op de balans staat
+- Het afschrijvingsschema per kalenderjaar
 
-Bij woningen waarvan een WOZ-geschiedenis uit het Kadaster is opgehaald, projecteert MyCompanyDesk een geschatte huidige marktwaarde. Deze projectie neemt de meest recente WOZ-peildatum en past daarop de CBS PBK-prijsindex voor de COROP-regio van de woning toe. Zo krijg je een waarde die de actuele marktontwikkeling weerspiegelt.
-
-### Vermogensoverzicht en bodemwaarde (ondergrens gebouw)
-
-Vastgoed-objecten die als bezitting worden bijgehouden, tonen een vermogensoverzicht op de detailpagina:
-
-- **Aanschafwaarde**: het bedrag dat voor het activum is betaald.
-- **Geactiveerde waarde**: het zakelijke deel van de geactiveerde kosten, na toepassing van het aftrekpercentage van de categorie en eventueel privégebruikpercentage. Dit gebruikt dezelfde formule als de debetpost op de activarekening in het grootboek en de afschrijvingsregeling (`apps/api/src/modules/ledger/posting-engine.js`), zodat de drie plekken op één lijn blijven.
-- **Cumulatieve afschrijving**: alles wat tot nu toe is afgeschreven.
-- **Afschrijving dit jaar**: het afschrijfbedrag voor het huidige kalenderjaar.
-- **Boekwaarde**: de resterende waarde op de balans (geactiveerde waarde min cumulatieve afschrijving).
-- **Bodemwaarde**: de wettelijke ondergrens waaronder de boekwaarde van een gebouw niet mag zakken. Deze is gebaseerd op de WOZ-waarde die voor het pand is geregistreerd.
-
-De bodemwaarde staat naast de boekwaarde, want de twee zijn pas samen zinvol. MyCompanyDesk herschrijft niet stilletjes de geboekte afschrijvingsregeling; in plaats daarvan waarschuwt het als de huidige regeling al onder de ondergrens is uitgekomen, of geeft een melding wanneer de boekwaarde de ondergrens exact heeft bereikt.
-
-Als er een waarschuwing verschijnt, los je dat op door de restwaarde van de aankoop op de bodemwaarde te zetten. Wanneer het object één aankoop heeft, opent een link die aankoop direct, zodat jij of je boekhouder de aanpassing kunt doen.
-
-Deze regel geldt alleen voor gebouwen (bijvoorbeeld vastgoed, appartement, kantoor of winkel). Voertuigen, machines, apparatuur en andere activa die geen gebouw zijn, hebben geen bodemwaarde-ondergrens.
+Bij gebouwen staat daarnaast de **Bodemwaarde**: de wettelijke ondergrens, gebaseerd op de WOZ-waarde, waaronder de boekwaarde van een gebouw niet mag zakken. MyCompanyDesk past het schema niet stilletjes aan. Komt de afschrijving onder de bodemwaarde uit, dan zie je **Te ver afgeschreven**; staat de boekwaarde precies op de bodemwaarde, dan krijg je daar een melding van. Je lost het op door de restwaarde van de aankoop op de bodemwaarde te zetten. Heeft de bezitting één aankoop, dan opent de link **Open de aankoop om de restwaarde aan te passen** die direct. Voertuigen, machines en andere bezittingen die geen gebouw zijn, hebben geen bodemwaarde.
 
 ### Verkocht of afgestoten
 
-Als je een activum verkoopt, weggooit of anderszins uit je onderneming haalt, leg je dat vast bij **Aanschaf en status** in het objectformulier:
+Verkoop je een bezitting, gooi je hem weg of haal je hem anderszins uit je bedrijf, vul dan in het blok **Waarde** van het formulier in:
 
-- **Verkoopdatum:** de datum waarop het activum de onderneming verliet.
-- **Opbrengst (excl. btw):** het ontvangen bedrag. Laat het veld leeg als je het bedrag nog niet weet; vul 0 in als je het activum hebt weggegooid zonder opbrengst.
+- **Verkoopdatum**: de datum waarop de bezitting je bedrijf verliet.
+- **Opbrengst (excl. btw)**: het ontvangen bedrag. Laat het leeg als je het nog niet weet; vul 0 in als je hem zonder opbrengst hebt weggegooid.
 
-Zodra een verkoopdatum is opgeslagen, toont de objectdetailpagina een blok "Verkocht of afgestoten" met:
+Zodra de verkoopdatum is opgeslagen, toont het blok **Bedrijfsmiddel** een onderdeel **Verkocht of afgestoten** met de datum, de **Boekwaarde bij verkoop**, de **Opbrengst** en de **Boekwinst** of het **Boekverlies**. Zonder opbrengst zie je alleen de afgeschreven boekwaarde, met de melding dat de boekwinst of het boekverlies pas vast te stellen is als de opbrengst bekend is.
 
-- de verkoopdatum
-- de boekwaarde bij verkoop
-- de opbrengst, als je die hebt ingevuld
-- de boekwinst of het boekverlies
+Het blok waarschuwt ook als het afschrijvingsschema nog bedragen na de verkoopdatum plant. Die blijven in je winst-en-verliesrekening terechtkomen tot je de afschrijvingstermijn van de aankoop aanpast.
 
-Laat je de opbrengst leeg, dan zie je alleen de boekwaarde die is afgeschreven, met de melding dat de boekwinst of het boekverlies pas kan worden bepaald zodra de opbrengst bekend is.
+## Koppelen aan contracten, facturen en uitgaven
 
-Het vermogensoverzicht waarschuwt je ook wanneer de afschrijvingstermijn nog bedragen na de verkoopdatum plant. Afschrijvingsregels worden bij activatie in een keer voor de hele looptijd aangemaakt, dus die bedragen blijven in je winst-en-verliesrekening terechtkomen tenzij je de afschrijvingstermijn van de aankoop aanpast.
-
-### Ondertekenstatus van contracten
-
-Elke contractregel op de objectdetailpagina toont nu een ondertekenstatusbadge naast de actief/gepauzeerd-badge. De kleur volgt dezelfde indeling als op de contractdetailpagina:
-
-- **Getekend** (groen): alle partijen hebben ondertekend
-- **Deels getekend** (blauw): sommige partijen hebben getekend, anderen nog niet
-- **Verzonden** (geel): de ondertekenuitnodiging is verstuurd, nog geen handtekeningen
-- **Verlopen** of **Beeindigd** (rood): het ondertekenverzoek is niet langer geldig
-
-Volledig ondertekende contracten tonen een klein oogicoon waarmee je een inline preview van het ondertekende document opent. Zo kun je het afgeronde contract lezen zonder de objectdetailpagina te verlaten.
-
-Legacycontracten die zijn aangemaakt voordat de e-signing-feature werd toegevoegd, tonen geen ondertekenbadge. Het systeem detecteert legacycontracten op dezelfde manier als op de contractdetailpagina: een contract moet ondertekenpartijen, een template of ondertekencontent hebben om een badge te tonen.
-
-## Objecten koppelen aan contracten en facturen
-
-Objecten integreren met andere MyCompanyDesk-functies:
-
-- **Contracten** — Maak een huurcontract voor een object, met vermelding van de huurder (klant) en voorwaarden
-- **Facturen**: Facturen kunnen direct in het factuurformulier aan een object worden gekoppeld, of via een huurcontract worden doorgegeven. Beide routes tellen mee in de totale omzet van het object.
-- **Terugkerende facturen** — Stel automatische maandelijkse huurfacturatie per object in
+- **Contracten**: maak een huurcontract voor een bezitting, met de huurder (klant) en de voorwaarden.
+- **Facturen**: koppel een factuur in het factuurformulier direct aan een bezitting, of laat hem uit een huurcontract komen. Beide tellen mee in de totale omzet.
+- **Terugkerende facturen**: koppel een terugkerende factuur aan een bezitting voor automatische huurfacturatie.
+- **Uitgaven**: koppel kosten via het veld **Bezitting** aan een bezitting; ze tellen dan mee in de kosten van die bezitting.
 
 ## Filteren
 
-Filter je objecten op:
+Filter de lijst op:
 
-- **Type** — Vastgoed, Voertuig, Machine, Overig
-- **Status** — Beschikbaar, Verhuurd, Inactief
-- **Zoeken** — Zoek op naam of omschrijving
+- **Soort**: de groep (bijvoorbeeld Panden of Vervoer)
+- **Type**: het type van de bezitting
+- **Status**: een status, of **Leeg (met huurprijs)** voor bezittingen met een huurprijs die nu niet verhuurd zijn
+- **Zoeken** op naam of omschrijving
+
+Met **Weergave** wissel je tussen actieve, gearchiveerde en verwijderde bezittingen.
 
 ## Bulkacties
 
-- **Status wijzigen** — Werk beschikbaarheid in bulk bij
-- **Archiveren** — Verplaats naar archief
-- **Verwijderen** — Verwijder objecten
+- **Archiveer** en **Verwijderen** (naar de prullenbak) in de actieve lijst
+- **Herstellen naar actief** en **Naar prullenbak** in het archief
+- **Herstellen naar archief** en **Definitief verwijderen** in de prullenbak
+
+Een bezitting met actieve contracten kun je niet verwijderen.
 
 ## Tips
 
-- Gebruik het statusfilter om snel te zien welke objecten beschikbaar zijn voor verhuur
-- Koppel elke huurfactuur aan het bijbehorende object voor volledige financiele tracking per activum
-- Stel contracten met herhaling in voor automatische huurfacturatie
-- Bekijk de objectstatistieken bovenaan de pagina voor een beschikbaarheidsoverzicht
+- Gebruik het filter **Leeg (met huurprijs)** om snel te zien wat je kunt verhuren
+- Koppel elke huurfactuur en elke kostenpost aan de bijbehorende bezitting, dan kloppen omzet, kosten en netto cashflow per bezitting
+- Gebruik terugkerende facturen of contracten voor automatische huurfacturatie
+- Vul de WOZ-waarde per 1 januari in voor je box 3-aangifte

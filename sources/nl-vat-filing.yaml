@@ -1,0 +1,57 @@
+# NL btw-aangifte: tijdvakken en uiterste data aangifte en betaling.
+# Curated by hand. The mcd-public-surfaces-sync agent reads but never writes.
+
+last_verified: 2026-10-13
+verified_by: silvanrijnberk
+source_url: https://www.belastingdienst.nl/wps/wcm/connect/nl/btw/content/uiterste-aangifte-en-betaaldatums
+notes: |
+  Geldt voor in Nederland gevestigde ondernemers. Buitenlandse ondernemers
+  hebben andere termijnen (2 maanden na tijdvak), niet hier gemodelleerd.
+  Aangifte- en betaaldatum is de ONTVANGSTdatum (aangifte ontvangen, bedrag
+  bijgeschreven), niet de verzenddatum. Geen weekend/feestdagregel gevonden
+  op de geraadpleegde pagina's. Software-aangifte kan pas vanaf de 24e van
+  de laatste maand van het tijdvak.
+
+periods:
+  default: quarter     # "Meestal doet u aangifte per kwartaal."
+  allowed: [month, quarter, year]
+
+deadlines:
+  month_or_quarter:
+    rule: laatste dag van de maand die volgt op het tijdvak (aangifte en betaling)
+    filing_quote: "Dan doet u dat uiterlijk op de laatste dag van de maand die volgt op het kwartaal of de maand waarover u aangifte doet."
+    filing_source: https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/btw/btw_aangifte_doen_en_betalen/btw-aangifte-waar-moet-u-aan-denken/btw-aangifte-waar-moet-u-aan-denken
+    payment_quote: "U moet ervoor zorgen dat wij het btw-bedrag ontvangen binnen een maand na afloop van het aangiftetijdvak."
+    payment_source: https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/btw/btw_aangifte_doen_en_betalen/btw_betalen/op_tijd_betalen
+  year:
+    rule: vóór 1 april van het volgende jaar (aangifte en betaling), dus uiterlijk 31 maart
+    filing_quote: "Dan doet u aangifte vóór 1 april van het eerstvolgende jaar."
+    filing_source: https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/btw/btw_aangifte_doen_en_betalen/btw-aangifte-waar-moet-u-aan-denken/btw-aangifte-waar-moet-u-aan-denken
+    payment_quote: "Doet u per jaar aangifte? Dan moeten wij uw betaling vóór 1 april van het volgende jaar hebben ontvangen."
+    payment_source: https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/belastingdienst/zakelijk/btw/btw_aangifte_doen_en_betalen/btw_betalen/op_tijd_betalen
+  received_date_quote: "Als betaaldatum geldt de datum waarop uw betaling is bijgeschreven op onze rekening."
+
+# Tabel van de Belastingdienst ("Uw aangifte en betaling moeten binnen zijn op").
+calendar:
+  quarter:
+    2025-Q4: 2026-01-31
+    2026-Q1: 2026-04-30
+    2026-Q2: 2026-07-31
+    2026-Q3: 2026-10-31
+    2026-Q4: 2027-01-31
+  month:
+    2026-01: 2026-02-28
+    2026-02: 2026-03-31
+    2026-03: 2026-04-30
+    2026-04: 2026-05-31
+    2026-05: 2026-06-30
+    2026-06: 2026-07-31
+    2026-07: 2026-08-31
+    2026-08: 2026-09-30
+    2026-09: 2026-10-31
+    2026-10: 2026-11-30
+    2026-11: 2026-12-31
+    2026-12: 2027-01-31
+  year:
+    2025: 2026-03-31
+    2026: 2027-03-31

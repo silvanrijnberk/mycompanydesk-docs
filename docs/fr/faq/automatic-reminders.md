@@ -1,6 +1,6 @@
 ---
 title: "Rappels automatiques"
-description: "Pour configurer les rappels de paiement automatiques : allez dans Paramètres > Factures et devis."
+description: "Les rappels de paiement automatiques font partie d'Office. Activez-les dans Paramètres › Factures et devis ; les rappels manuels restent gratuits."
 last_verified: 2026-08-16
 chatbot:
   triggers: ["automatic reminders", "auto reminder", "scheduled reminders", "reminder automation", "automatische herinnering", "herinneringen instellen", "automatische erinnerung", "rappels automatiques"]
@@ -9,14 +9,16 @@ chatbot:
   follow_up: ["How do I send a manual reminder?", "How do I view overdue invoices?", "How do I set payment terms?"]
 ---
 
+Les rappels de paiement automatiques font partie d'Office. Avec Desk, le même emplacement affiche un bouton pour passer à Office ; envoyer un rappel à la main depuis la facture reste gratuit.
+
 Pour configurer les rappels de paiement automatiques :
-1. Allez dans Paramètres → "Factures et devis"
-2. Activez l'interrupteur "En retard ? Envoyer automatiquement un rappel"
+1. Allez dans Paramètres › « Factures et devis »
+2. Activez l'interrupteur « En retard ? Envoyer automatiquement un rappel »
 3. Les modifications sont enregistrées automatiquement
 
-Quand une facture dépasse de quelques jours sa date d'échéance, MyCompanyDesk envoie automatiquement un rappel courtois, puis le répète chaque semaine jusqu'au paiement. Le rappel indique le montant restant dû : le montant total de la facture moins les paiements déjà reçus. Si un client a déjà versé un acompte ou un paiement partiel, le rappel demande le solde, pas la totalité.
+Quand une facture envoyée dépasse de trois jours sa date d'échéance, MyCompanyDesk envoie automatiquement un rappel courtois, puis le répète chaque semaine jusqu'au paiement. Le rappel indique le montant restant dû : le montant total de la facture moins les paiements déjà reçus. Si un client a déjà versé un acompte ou un paiement partiel, le rappel demande le solde, pas la totalité.
 
-Si votre espace de travail a activé les paiements en ligne, le courriel de rappel offre au client les mêmes options de paiement que la facture d'origine : un bouton **Voir \u0026 payer**, un bouton **Confirmer le paiement** et un QR-code sur le PDF pour scanner et payer.
+Si votre espace de travail a activé les paiements en ligne, le courriel de rappel offre au client les mêmes options de paiement que la facture d'origine : un bouton **Payer maintenant**, un bouton **Déjà payé ? Signalez-le** et un QR-code sur le PDF pour scanner et payer.
 
 Les rappels automatiques ne sont pas envoyés si :
 - la facture est annulée

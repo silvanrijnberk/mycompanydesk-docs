@@ -1,236 +1,241 @@
 ---
 title: Espaces de travail
 description: "Une page centrale pour tout ce que vous gérez, vos propres sociétés et les dossiers clients, sans jamais mélanger votre argent et le leur."
-last_verified: 2026-08-10
+last_verified: 2026-10-13
 ---
 
 # Espaces de travail
 
-La page Espaces de travail (`/werkruimtes`) est un lieu central pour tout ce que vous gerez. Elle remplace l'ancien portail comptable et s'adapte a votre role reel : un espace de travail, plusieurs de vos propres entreprises, ou des administrations clientes.
+La page Espaces de travail (`/werkruimtes`) est un lieu central pour tout ce que vous gérez. Elle remplace l'ancien portail comptable et s'adapte à votre rôle réel : un espace de travail, plusieurs de vos propres entreprises, ou des administrations clientes.
 
-> **L'argent qui vous appartient et l'argent des clients ne sont jamais melanges.** Additionner vos propres entreprises a du sens, car l'argent vous appartient. Un total sur les administrations clientes serait denue de sens, donc la page les garde strictement separees.
+> **L'argent qui vous appartient et l'argent des clients ne sont jamais mélangés.** Additionner vos propres entreprises a du sens, car l'argent vous appartient. Un total sur les administrations clientes serait dénué de sens, donc la page les garde strictement séparées.
 
-## Ou la trouver
+## Où la trouver
 
-- Ouvrez le selecteur d'espace de travail dans la barre laterale et choisissez **Gerer les espaces de travail**.
-- Le meme selecteur se trouve aussi dans l'en-tete du menu mobile, pour atteindre l'apercu depuis le meme endroit sur tous les ecrans.
+- Ouvrez le sélecteur d'espace de travail dans la barre latérale et choisissez **Gérer les espaces de travail**.
+- Le même sélecteur se trouve aussi dans l'en-tête du menu mobile, pour atteindre l'aperçu depuis le même endroit sur tous les écrans.
 - L'ancienne URL `/boekhouder` redirige ici.
-- Le selecteur d'espace de travail affiche maintenant une ligne de synthese en haut. Vos propres entreprises et les administrations clientes sont regroupees separement, et un champ de recherche apparait des que vous avez plus de huit espaces de travail.
-- Chaque ligne affiche la propre marque de l'espace de travail : son logo, ou une tuile coloree avec ses initiales. Vos propres entreprises portent leur couleur; les administrations clientes restent neutres. L'espace de travail dans lequel vous vous trouvez actuellement est mis en evidence.
+- Le sélecteur d'espace de travail affiche maintenant une ligne de synthèse en haut. Vos propres entreprises et les administrations clientes sont regroupées séparément, et un champ de recherche apparaît dès que vous avez plus de huit espaces de travail.
+- Chaque ligne affiche la propre marque de l'espace de travail : son logo, ou une tuile colorée avec ses initiales. Vos propres entreprises portent leur couleur; les administrations clientes restent neutres. L'espace de travail dans lequel vous vous trouvez actuellement est mis en évidence.
 
-Quand vous choisissez un espace de travail dans le selecteur, l'application bascule maintenant sans rechargement complet de la page. Elle efface l'etat de l'espace de travail precedent des stores Pinia et des caches de modules, annule les requetes en vol qui arriveraient apres le basculement, recharge l'enveloppe pour mettre a jour la navigation et les droits, puis vous redirige vers la page cible.
+Quand vous choisissez un espace de travail dans le sélecteur, l'application bascule maintenant sans rechargement complet de la page. Elle efface l'état de l'espace de travail précédent des stores Pinia et des caches de modules, annule les requêtes en vol qui arriveraient après le basculement, recharge l'enveloppe pour mettre à jour la navigation et les droits, puis vous redirige vers la page cible.
 
 ## La section Espaces de travail
 
-La navigation de l'application regroupe maintenant toutes les pages d'espace de travail sous **Espaces de travail**. La page de synthese reste en place, et trois nouvelles pages l'accompagnent :
+Dès que vous êtes dans Espaces de travail, une barre latérale dédiée remplace la navigation habituelle. Elle regroupe les pages ainsi :
 
-- **Agenda** (`/werkruimtes/agenda`) - toutes les echeances de tous vos espaces de travail, groupees par date.
-- **Travail** (`/werkruimtes/werk`) - vos propres taches ouvertes plus les demandes clients ouvertes.
-- **Cabinet** (`/werkruimtes/kantoor`) - le tableau de bord du cabinet pour les comptables, avec des pages dediees pour la facturation et l'export en masse.
+- **Aperçu** : **Aujourd'hui** (`/werkruimtes`), **Agenda** (`/werkruimtes/agenda`) et **Travail** (`/werkruimtes/werk`). Ces trois pages sont toujours là.
+- **À vous** : **Entreprises** (`/werkruimtes/bedrijven`), la vue d'ensemble de vos propres entreprises. Toujours là aussi.
+- **Travail client** : **Clients** (`/werkruimtes/klanten`), **Demandes** (`/werkruimtes/verzoeken`) et **Aperçu** (`/werkruimtes/inzicht`). Apparaît dès que vous avez accès à une administration cliente.
+- **Cabinet** : **Votre cabinet** (`/werkruimtes/kantoor`), **Facturation** et **Export**. Apparaît si vous faites partie d'un cabinet comptable.
 
-### Indicateur de propriete
+**Aujourd'hui** montre ce qui demande votre attention maintenant, en deux blocs séparés : d'abord vos propres entreprises, puis vos clients (huit au maximum ; ce qui dépasse est signalé, pas omis en silence).
 
-Chaque ligne d'espace de travail et chaque element des nouvelles pages porte un petit indicateur de propriete. Vos propres entreprises conservent la couleur de leur espace de travail; les administrations clientes restent neutres. Vous le voyez dans le selecteur d'espace de travail, dans l'agenda et dans la liste de travail, pour toujours savoir de quel cote de la frontiere propre/client se situe une ligne.
+### Indicateur de propriété
+
+Chaque ligne d'espace de travail et chaque élément des nouvelles pages porte un petit indicateur de propriété. Vos propres entreprises conservent la couleur de leur espace de travail; les administrations clientes restent neutres. Vous le voyez dans le sélecteur d'espace de travail, dans l'agenda et dans la liste de travail, pour toujours savoir de quel côté de la frontière propre/client se situe une ligne.
 
 ### Agenda (`/werkruimtes/agenda`)
 
-L'agenda groupe toutes les echeances a venir de tous vos espaces de travail par date. Il regarde 30 jours en arriere et 90 jours en avant, de sorte qu'une echeance depassee de la semaine passee reste visible. Les echeances depassees apparaissent en premier. Chaque ligne montre l'espace de travail, le libelle de l'echeance et l'indicateur de propriete. Cliquez sur une ligne pour basculer dans cet espace de travail et ouvrir la page correspondante.
+L'agenda groupe toutes les échéances à venir de tous vos espaces de travail par date. Il regarde 30 jours en arrière et 90 jours en avant, de sorte qu'une échéance dépassée de la semaine passée reste visible. Les échéances dépassées apparaissent en premier. Chaque ligne montre l'espace de travail, le libellé de l'échéance et l'indicateur de propriété. Cliquez sur une ligne pour basculer dans cet espace de travail et ouvrir la page correspondante.
 
 ### Travail (`/werkruimtes/werk`)
 
-La page Travail liste le travail ouvert en deux blocs : vos propres entreprises d'abord, puis les administrations clientes. Cela separe les deux types de travail, car vos propres taches et les elements que vous attendez d'un client demandent des actions differentes. Chaque ligne montre l'espace de travail, la tache et un badge d'echeance. Cliquez sur une ligne pour basculer dans l'espace de travail et ouvrir la page correspondante; pour une demande client, c'est la demande elle-meme qui s'ouvre.
+La page Travail liste le travail ouvert en deux blocs : vos propres entreprises d'abord, puis les administrations clientes. Cela sépare les deux types de travail, car vos propres tâches et les éléments que vous attendez d'un client demandent des actions différentes. Chaque ligne montre l'espace de travail, la tâche et un badge d'échéance. Cliquez sur une ligne pour basculer dans l'espace de travail et ouvrir la page correspondante; pour une demande client, c'est la demande elle-même qui s'ouvre.
 
 ### Pages du cabinet (`/werkruimtes/kantoor/*`)
 
-Si vous dirigez un cabinet comptable, la section Cabinet contient trois pages au niveau du cabinet :
+Si vous faites partie d'un cabinet comptable, le groupe Cabinet contient trois pages :
 
-- **Tableau de bord du cabinet** (`/werkruimtes/kantoor`) - membres du cabinet, invitations clientes en attente, lien de partage partenaire et statistiques, ainsi que la possibilité qu'Office ait été accordé gratuitement.
-- **Facturation** (`/werkruimtes/kantoor/facturatie`) - proposez de prendre en charge l'abonnement d'une administration cliente. Le client doit accepter avant que quoi que ce soit soit facture; le prix par administration prise en charge est affiche avant confirmation. Une offre en attente s'affiche separement pour que vous puissiez la retirer tant que le client n'a pas repondu.
-- **Export** (`/werkruimtes/kantoor/export`) - exportez plusieurs administrations clientes a la fois. Choisissez l'annee, la periode et le format d'export, selectionnez les administrations, et l'application telecharge une archive par client. Les exports echoues restent a l'ecran pour que vous voyiez ce qui n'a pas ete termine.
+- **Votre cabinet** (`/werkruimtes/kantoor`) - membres du cabinet, invitations clientes en attente, lien de partage partenaire et statistiques, ainsi que la possibilité qu'Office ait été accordé gratuitement.
+- **Facturation** (`/werkruimtes/kantoor/facturatie`) - proposez de prendre en charge l'abonnement d'une administration cliente. Le client doit accepter avant que quoi que ce soit soit facturé ; le prix par administration prise en charge est affiché avant confirmation. Une offre en attente s'affiche séparément pour que vous puissiez la retirer tant que le client n'a pas répondu.
+- **Export** (`/werkruimtes/kantoor/export`) - exportez plusieurs administrations clientes à la fois. Choisissez l'année, la période et le format d'export, sélectionnez les administrations, et l'application télécharge une archive par client. Les exports échoués restent à l'écran pour que vous voyiez ce qui n'a pas été terminé.
 
-## Etats de chargement et erreurs
+## États de chargement et erreurs
 
-Quand vous ouvrez une page du cadre Espaces de travail, l'application attend d'abord que les donnees de coquille (liste des espaces, jeton, permissions) soient pretes, puis elle recupere les donnees de la page. Cela empeche une navigation a froid d'afficher un etat vide "rien a faire" pendant que la requete est encore en cours.
+Quand vous ouvrez une page du cadre Espaces de travail, l'application attend d'abord que les données de coquille (liste des espaces, jeton, permissions) soient prêtes, puis elle récupère les données de la page. Cela empêche une navigation à froid d'afficher un état vide "rien à faire" pendant que la requête est encore en cours.
 
-Si la recuperation echoue, la page affiche un etat d'erreur explicite avec un bouton **Reessayer** au lieu de faire comme s'il n'y avait rien a afficher. Le selecteur d'espace dans le rail reste utilisable, vous pouvez donc passer a un autre espace sans attendre que la page defectueuse se remette. Sur la page de facturation, la liste des clients et les montants de facturation se chargent separement : si les montants echouent, la liste des clients reste disponible et la colonne de prix reste vide plutot que d'afficher un faux zero.
+Si la récupération échoue, la page affiche un état d'erreur explicite avec un bouton **Réessayer** au lieu de faire comme s'il n'y avait rien à afficher. Le sélecteur d'espace dans le rail reste utilisable, vous pouvez donc passer à un autre espace sans attendre que la page défectueuse se remette. Sur la page de facturation, la liste des clients et les montants de facturation se chargent séparément : si les montants échouent, la liste des clients reste disponible et la colonne de prix reste vide plutôt que d'afficher un faux zéro.
 
 ## Si vous avez un seul espace de travail
 
-Vous obtenez trois entrees au lieu d'une page vide :
+Sur **Entreprises**, vous obtenez alors trois entrées au lieu d'une liste vide :
 
-- **Ajouter une entreprise** pour une holding, une deuxieme societe ou une activite annexe. Chaque entreprise obtient sa propre administration avec sa propre TVA, factures et comptabilite.
-- **Inviter un comptable** si vous travaillez avec un comptable externe.
-- **Programme partenaire** si vous etes vous-meme comptable et souhaitez gerer plusieurs administrations clientes en un seul lieu.
+- **Plus d'une entreprise ?** avec **Ajouter une entreprise**, pour une holding, une deuxième société ou une activité annexe. Chaque entreprise reçoit sa propre administration avec TVA, factures et comptabilité séparées.
+- **Vous travaillez avec un comptable ?** avec **Inviter un comptable**, si vous travaillez avec un comptable externe.
+- **Êtes-vous vous-même comptable ?** avec un lien vers le programme partenaire, si vous souhaitez gérer plusieurs administrations clientes en un seul lieu.
 
-## Espace de travail combine : vos propres entreprises
+## Espace de travail combiné : vos propres entreprises
 
-Si vous avez plus d'une entreprise, la page s'ouvre sur une vue combinee :
+Si vous avez plus d'une entreprise, **Entreprises** (`/werkruimtes/bedrijven`) affiche une vue combinée :
 
-- Une phrase indique ce que vos entreprises ont realise ensemble cette annee en chiffre d'affaires, et si cela donne un benefice ou une perte.
-- Une bande montre le chiffre d'affaires, le resultat, les creances et la TVA de cote.
-- Une barre de part montre la repartition du chiffre d'affaires par entreprise.
-- En dessous de la bande se trouve une ligne par entreprise. L'ordre est fixe (entreprise principale d'abord, puis date de creation), pour que vous sachiez toujours ou chercher.
+- Une phrase indique ce que vos entreprises ont réalisé ensemble cette année en chiffre d'affaires, et si cela donne un bénéfice ou une perte.
+- Une bande montre le chiffre d'affaires, le résultat, les créances et la TVA de côté.
+- Une barre de part montre la répartition du chiffre d'affaires par entreprise.
+- En dessous des chiffres se trouve une ligne par entreprise. L'ordre est fixe (entreprise principale d'abord, puis date de création), pour que vous sachiez toujours où chercher.
+
+**Voir ensemble** ouvre **Ensemble** (`/werkruimtes/bedrijven/samen`) : un tableau avec vos entreprises côte à côte pour l'année de votre choix, avec une ligne de total en dessous.
 
 ### Signaux dans chaque ligne
 
-Chaque ligne d'entreprise affiche des puces pour les elements qui demandent attention. Chaque puce est un lien : il bascule vers l'entreprise adequate et vous amene sur la page correspondant au signal.
+Chaque ligne d'entreprise affiche des puces pour les éléments qui demandent attention. Chaque puce est un lien : il bascule vers l'entreprise adéquate et vous amène sur la page correspondant au signal.
 
 | Puce | Signification | Lien |
 |---|---|---|
-| Periode TVA avec echeance | Combien de jours avant la declaration, ou de jours de retard | `/belastingen/btw` |
-| Factures en retard | Factures qui n'ont pas ete payees a temps | `/facturen` |
-| Recus manquants | Depenses sans justificatif | `/uitgaven` |
-| Brouillons | Factures encore en brouillon | `/facturen` |
-| TVA declaree | La declaration precedente a ete deposee | `/belastingen/btw` |
-| Periode d'essai en cours | L'entreprise est encore en periode d'essai Office | `/settings/billing` |
-| Desactivee | L'entreprise est desactivee ; vous pouvez toujours consulter et exporter | `/werkruimtes` |
+| Période TVA avec échéance | Combien de jours avant la déclaration, ou de jours de retard | `/belastingen/btw` |
+| Factures en retard | Factures qui n'ont pas été payées à temps | `/invoices` |
+| Reçus manquants | Dépenses sans justificatif | `/expenses` |
+| Brouillons | Factures encore en brouillon | `/invoices` |
+| TVA déclarée | La déclaration précédente a été déposée | `/belastingen/btw` |
+| Période d'essai en cours | L'entreprise est encore en période d'essai Office | Aucun, simple mention |
+| Désactivée | L'entreprise est désactivée ; vous pouvez toujours consulter et exporter | Aucun, simple mention |
 
-Vos propres entreprises utilisent les memes indicateurs que le tableau de bord de chaque entreprise, donc les chiffres ne peuvent pas etre contradictoires.
+Vos propres entreprises utilisent les mêmes indicateurs que le tableau de bord de chaque entreprise, donc les chiffres ne peuvent pas être contradictoires.
 
 ## Positions inter-entreprises (Onderling)
 
-Si vos propres entreprises se facturent entre elles, chaque espace de travail ne voit normalement que sa propre moitie. La page Espaces de travail affiche maintenant la position nette entre chaque paire de vos propres entreprises, de sorte que le compte courant que vous teniez auparavant sur papier est visible dans l'application.
+Si vos propres entreprises se facturent entre elles, chaque espace de travail ne voit normalement que sa propre moitié. La page Entreprises affiche la position nette entre chaque paire de vos propres entreprises, de sorte que le compte courant que vous teniez auparavant sur papier est visible dans l'application.
 
-Le bloc n'apparait que si au moins deux de vos propres entreprises ont effectivement des factures ouvertes l'une envers l'autre, et reste donc cache pour tous les autres. Il se situe entre l'apercu combine de vos entreprises et le bureau clients, car il decrit une relation entre vos entreprises et non une propriete d'une seule.
+Le bloc n'apparaît que si au moins deux de vos propres entreprises ont effectivement des factures ouvertes l'une envers l'autre, et reste donc caché pour tous les autres. Il se situe sous la vue combinée de vos entreprises, car il décrit une relation entre vos entreprises et non une propriété d'une seule.
 
-- Les liens se creent automatiquement quand le numero de TVA d'un client correspond a l'un de vos autres espaces de travail. Cette correspondance ne regarde que vos propres entreprises, donc un client d'une autre entreprise n'est jamais atteint.
-- Si la correspondance automatique est incorrecte, ou si aucun numero de TVA n'est disponible, vous pouvez lier ou delier un client a la main depuis la page client. Un lien manuel prime toujours sur le lien automatique.
-- La position est le solde net des factures ouvertes entre les deux entreprises, deduit des paiements enregistres. Un chiffre positif signifie qu'une entreprise doit de l'argent a l'autre.
-- Chaque paire est formulee comme une phrase du cote qui a encore droit a l'argent, par exemple "[creancier] a [montant] a recevoir de [debiteur]". Si la balance va dans l'autre sens, la phrase inverse creancier et debiteur au lieu d'afficher le montant en negatif.
-- La ligne indique aussi de combien de factures ouvertes le montant est compose.
+- Les liens se créent automatiquement quand le numéro de TVA d'un client correspond à l'un de vos autres espaces de travail. Cette correspondance ne regarde que vos propres entreprises, donc un client d'une autre entreprise n'est jamais atteint.
+- Si la correspondance automatique est incorrecte, ou si aucun numéro de TVA n'est disponible, vous pouvez lier ou délier un client à la main depuis la page client. Un lien manuel prime toujours sur le lien automatique.
+- La position est le solde net des factures ouvertes entre les deux entreprises, déduit des paiements enregistrés. Un chiffre positif signifie qu'une entreprise doit de l'argent à l'autre.
+- Chaque paire est formulée comme une phrase du côté qui a encore droit à l'argent, par exemple "[créancier] a [montant] à recevoir de [débiteur]". Si la balance va dans l'autre sens, la phrase inverse créancier et débiteur au lieu d'afficher le montant en négatif.
+- La ligne indique aussi de combien de factures ouvertes le montant est composé.
 - Quand plus d'une paire a un solde, la carte affiche en haut un total de toutes les positions inter-entreprises ouvertes.
 
 ## Espace de travail de cabinet : clients
 
-Si vous etes comptable et gerez des administrations clientes, la page devient un tableau de triage :
+Si vous êtes comptable et gérez des administrations clientes, **Aujourd'hui** montre quels clients ont besoin de quelque chose maintenant, et **Clients** (`/werkruimtes/klanten`) est la liste complète à traiter, avec des filtres comme ce qui est en retard, qui vous attend et ce qui vous est attribué :
 
 - Un titre indique combien de vos clients ont besoin de quelque chose aujourd'hui.
-- Une bande de chiffres montre le nombre total de clients, les echeances cette semaine, les clients necessitant une attention et les invitations ouvertes.
-- Les lignes sont triees par urgence, de sorte que les administrations necessitant une action aujourd'hui apparaissent en premier.
+- Une bande de chiffres montre le nombre total de clients, les échéances cette semaine, les clients nécessitant une attention et les invitations ouvertes.
+- Les lignes sont triées par urgence, de sorte que les administrations nécessitant une action aujourd'hui apparaissent en premier.
 - Un champ de recherche est toujours visible, pour que vous puissiez filtrer les administrations clientes sans attendre un seuil.
-- Les invitations ouvertes sont affichees dans leur propre carte ; une personne invitee ne compte pas encore comme client actif.
+- Les invitations ouvertes sont affichées dans leur propre carte ; une personne invitée ne compte pas encore comme client actif.
 
-Les puces fonctionnent comme dans l'espace de travail combine, mais les lignes utilisent des signaux agreges pour que le tableau puisse suivre une grande liste de clients. L'argent des clients n'est jamais additionne.
+Les puces fonctionnent comme dans l'espace de travail combiné, mais les lignes utilisent des signaux agrégés pour que le tableau puisse suivre une grande liste de clients. L'argent des clients n'est jamais additionné.
 
 ### Membres du cabinet comptable
 
-Si vous travaillez dans un cabinet comptable, le cabinet a sa propre liste de membres. Les administrateurs peuvent inviter des collegues via **Gerer les membres du cabinet** ; chaque membre recoit un role (membre ou administrateur). Ajouter quelqu'un au cabinet ne lui donne pas automatiquement acces a un client; vous accordez toujours l'acces client par client depuis la page Espaces de travail. La ligne de chaque collegue indique le nombre de clients auxquels il ou elle est associe, pour que vous sachiez qui travaille sur quoi.
+Si vous travaillez dans un cabinet comptable, le cabinet a sa propre liste de membres sous **Collaborateurs** sur **Votre cabinet**. Les administrateurs invitent des collègues avec **Inviter un collègue** ; chaque membre reçoit un rôle (membre ou administrateur). Ajouter quelqu'un au cabinet ne lui donne pas accès à un client ; vous accordez cet accès client par client, et seulement si ce client l'autorise. La ligne de chaque collègue indique le nombre de clients auxquels il ou elle est associé, pour que vous sachiez qui travaille sur quoi.
 
 ### Travail client et demandes
 
-Chaque ligne client affiche une puce de travail des qu'une tache est en attente. Ouvrez-la pour voir qui s'occupe actuellement du client et ce que vous avez demande au client.
+Chaque ligne client affiche une puce de travail dès qu'une tâche est en attente. Ouvrez-la pour voir qui s'occupe actuellement du client et ce que vous avez demandé au client.
 
-- **Je prends en charge** assigne le client a vous. **Je ne prends pas en charge** libere le travail pour qu'un collegue puisse le prendre. Le statut se met a jour en direct pour tout le cabinet, evitant ainsi que deux personnes ne commencent la meme declaration par megarde.
-- **Demander au client** cree une tache dans l'espace de travail du client. Choisissez un type de demande (par exemple pieces manquantes), ajoutez un titre et une note, et le client la voit comme une to-do normale. Des que le client coche la tache, la demande est resolue et la puce de travail disparait. Il n'y a pas d'etat manuel "en attente du client" a reinitialiser; il resulte simplement de la presence d'une demande ouverte.
+- **Je prends en charge** assigne le client à vous. **Je ne prends pas en charge** libère le travail pour qu'un collègue puisse le prendre. Le statut se met à jour en direct pour tout le cabinet, évitant ainsi que deux personnes ne commencent la même déclaration par mégarde.
+- **Demander quelque chose à ce client** crée une tâche dans l'espace de travail du client, avec une notification. Choisissez le sujet (par exemple des justificatifs manquants), dites ce que vous demandez et ajoutez une précision ; le client la voit comme une tâche ordinaire. Dès qu'il la coche, la demande est résolue et la puce de travail disparaît. Il n'y a pas de statut manuel « en attente du client » à remettre à zéro ; il découle simplement d'une demande ouverte. Toutes les questions ouvertes de tous vos clients sont regroupées sur **Demandes**, la plus ancienne en premier.
 
 ## Ajouter votre propre entreprise
 
-Ouvrez **Ajouter une entreprise** et donnez un nom a la nouvelle entreprise.
+Ouvrez **Ajouter une entreprise** et donnez un nom à la nouvelle entreprise.
 
-Si vous etes sur un plan payant (Office), l'application affiche le cout supplementaire avant la confirmation. Pendant votre propre periode d'essai Office, vous ne payez rien pour l'entreprise supplementaire; apres l'essai, elle est ajoutee a votre abonnement au tarif affiche.
+Plusieurs entreprises à vous font partie d'**Office** : une entreprise supplémentaire coûte 5,99 € par mois ou 59,90 € par an (HT) en plus d'Office, jusqu'à 10 entreprises à vous. Sur Desk, vous avez une entreprise. L'application affiche le coût supplémentaire avant la confirmation. Pendant votre propre période d'essai Office, vous ne payez rien pour l'entreprise supplémentaire ; ensuite, elle est ajoutée à votre abonnement au tarif affiché.
 
-Si votre espace de travail dispose d'un Office gratuit dans le cadre d'une disposition telle qu'un plan comped ou founding member, votre premiere entreprise reste gratuite et l'application propose maintenant un paiement separe pour une deuxieme entreprise. Le prix est affiche a l'avance; seule la deuxieme entreprise est facturee via un abonnement add-on dedie. Une fois le paiement confirme, vous pouvez nommer la deuxieme entreprise.
+Si vous utilisez Office gratuitement dans le cadre d'un accord fixe, cet Office gratuit couvre une entreprise. Pour une deuxième entreprise, l'application propose un paiement séparé. Le prix est affiché à l'avance ; seule la deuxième entreprise est facturée via son propre abonnement. Une fois le paiement confirmé, vous pouvez nommer la deuxième entreprise.
 
-## Copier les parametres d'une autre entreprise
+## Copier les paramètres d'une autre entreprise
 
-Lorsque vous ajoutez une entreprise, ou plus tard depuis le panneau **Gerer** d'une entreprise existante, vous pouvez reprendre la configuration d'une autre entreprise que vous possedez deja. Cela vous evite de ressaisir votre identite visuelle, la mise en page des factures et vos valeurs par defaut.
+Lorsque vous ajoutez une entreprise, ou plus tard depuis le panneau **Gérer** d'une entreprise existante, vous pouvez reprendre la configuration d'une autre entreprise que vous possédez déjà. Cela vous évite de ressaisir votre identité visuelle, la mise en page des factures et vos valeurs par défaut.
 
-Activez **Copier les parametres d'une entreprise que vous avez deja** et choisissez la source. Si vous n'avez qu'une seule autre entreprise, le choix apparait comme un interrupteur avec son nom. Les groupes suivants peuvent etre copies:
+Activez **Copier les paramètres d'une entreprise que vous avez déjà** et choisissez la source. Si vous n'avez qu'une seule autre entreprise, le choix apparaît comme un interrupteur avec son nom. Les groupes suivants peuvent être copiés :
 
-- **Identite visuelle** (logo, couleurs et polices).
-- **Factures et devis** (mise en page, delai de paiement, relances et vos propres textes d'e-mail).
-- **TVA** (periode de declaration et taux par defaut).
-- **Depenses et recus** (categorie par defaut, indemnite kilometrique et vos propres categories).
-- **Fonctionnalites** (les fonctionnalites activees, plus la configuration de votre suivi du temps).
-- **Adresse et contact** (adresse, telephone, e-mail et site web).
+- **Identité visuelle** (logo, couleurs et polices).
+- **Factures et devis** (mise en page, délai de paiement, relances et vos propres textes d'e-mail).
+- **TVA** (période de déclaration et taux par défaut).
+- **Dépenses et reçus** (catégorie par défaut, indemnité kilométrique et vos propres catégories).
+- **Modules** (les modules activés, plus la configuration de votre suivi du temps).
+- **Adresse et contact** (adresse, téléphone, e-mail et site web).
 
-Le numero d'immatriculation, le numero de TVA, le compte bancaire et la numerotation des factures ne sont jamais copies : ceux-ci appartiennent a une seule entreprise.
+Le numéro d'immatriculation, le numéro de TVA, le compte bancaire et la numérotation des factures ne sont jamais copiés : ceux-ci appartiennent à une seule entreprise.
 
-## Gerer ou supprimer une entreprise
+## Gérer ou supprimer une entreprise
 
-Ouvrez pour chaque entreprise le menu de ligne et choisissez **Gerer**. Un panneau lateral s'ouvre avec deux options.
+Ouvrez pour chaque entreprise le menu de ligne et choisissez **Gérer**. Un panneau latéral s'ouvre avec deux options.
 
-### Desactiver une entreprise
+### Désactiver une entreprise
 
-Choisissez **Desactiver** quand vous arretez de travailler dans une entreprise mais devez conserver ses archives. L'administration reste lisible et vous pouvez toujours tout exporter, car vous devez conserver les livres pour la duree legale de conservation. Vous ne pouvez plus ajouter de factures, de depenses ou de clients, et l'entreprise ne compte plus dans votre abonnement.
+Choisissez **Désactiver** quand vous arrêtez de travailler dans une entreprise mais devez conserver ses archives. L'administration reste lisible et vous pouvez toujours tout exporter, car vous devez conserver les livres pour la durée légale de conservation. Vous ne pouvez plus ajouter de factures, de dépenses ou de clients, et l'entreprise ne compte plus dans votre abonnement.
 
 Le panneau indique avant confirmation de combien votre paiement mensuel ou annuel va diminuer.
 
-Pour reprendre, ouvrez le meme panneau et choisissez **Reactiver**.
+Pour reprendre, ouvrez le même panneau et choisissez **Réactiver**.
 
 ### Supprimer une entreprise
 
-Choisissez **Supprimer** uniquement pour une entreprise creee par erreur. L'espace de travail verifie si des ecritures existent ; des qu'une facture, une depense ou un client existe, la suppression est refusee et vous devez desactiver l'entreprise a la place. Cette verification est cote serveur, de sorte que le message correspond toujours aux donnees reelles.
+Choisissez **Supprimer** uniquement pour une entreprise créée par erreur. L'espace de travail vérifie si des écritures existent ; dès qu'une facture, une dépense ou un client existe, la suppression est refusée et vous devez désactiver l'entreprise à la place. Cette vérification est côté serveur, de sorte que le message correspond toujours aux données réelles.
 
 ## Inviter un client
 
 Les comptables peuvent inviter un client directement depuis cette page :
 
 1. Cliquez sur **Inviter un client**.
-2. Renseignez l'adresse e-mail, le nom de l'entreprise et, en option, le numero de registre du commerce.
+2. Renseignez l'adresse e-mail, le nom de l'entreprise et, en option, le numéro de registre du commerce.
 3. Cliquez sur **Envoyer l'invitation**.
 
-Le client cree son propre compte et reste proprietaire de son administration. Vous obtenez l'acces des que l'invitation est acceptee, et le client peut la revoquer a tout moment. Les invitations ouvertes peuvent etre renvoyees ou revoquees. Le lien est valable 30 jours.
+Le client crée son propre compte et reste propriétaire de son administration. Vous obtenez l'accès dès que l'invitation est acceptée, et le client peut la révoquer à tout moment. Les invitations ouvertes peuvent être renvoyées ou révoquées. Le lien est valable 30 jours.
 
-## La navigation suit votre role
+## La navigation suit votre rôle
 
-La barre laterale de gauche masque desormais les elements que votre role d'espace de travail actuel n'est pas autorise a utiliser, de sorte que vous ne voyez plus de liens qui renverraient une erreur 403. L'API pilote cela via une liste de refus : si un nouveau point de terminaison est restreint pour un role, son element de navigation se cache automatiquement.
+La barre latérale de gauche masque désormais les éléments que votre rôle d'espace de travail actuel n'est pas autorisé à utiliser, de sorte que vous ne voyez plus de liens qui renverraient une erreur 403. Quand une partie de l'application est restreinte pour un rôle, son élément de menu disparaît automatiquement.
 
-Dans un espace de travail client, la barre laterale est plus courte, car les parties qui appartiennent au client (boite de reception, site web, abonnement, parametres d'equipe, domaines et assistants IA) ne sont pas disponibles pour un comptable. Le selecteur d'espace de travail et l'element Espaces de travail restent toujours visibles, pour que vous puissiez toujours basculer entre les administrations.
+Dans un espace de travail client, la barre latérale est plus courte, car les parties qui appartiennent au client (boîte de réception, site web, abonnement, paramètres d'équipe, domaines et assistants IA) ne sont pas disponibles pour un comptable. Le sélecteur d'espace de travail et l'élément Espaces de travail restent toujours visibles, pour que vous puissiez toujours basculer entre les administrations.
 
 ## Permissions
 
-- Les proprietaires d'espace de travail et les administrateurs d'equipe peuvent ajouter des entreprises et gerer les parametres de l'espace de travail.
-- Les comptables ne voient que les espaces de travail et les pages que leur client a autorises.
-- Les membres de l'equipe ne voient Espaces de travail que s'ils ont plus d'un espace de travail et que leur role le leur permet.
+- Les propriétaires d'espace de travail et les administrateurs d'équipe peuvent ajouter des entreprises et gérer les paramètres de l'espace de travail.
+- Les comptables ne voient que les espaces de travail et les pages que leur client a autorisés.
+- Les membres de l'équipe ne voient Espaces de travail que s'ils ont plus d'un espace de travail et que leur rôle le leur permet.
 
-## Apercu pour comptables
+## Aperçu pour comptables
 
-La page Apercu, `/werkruimtes/inzicht`, compare les administrations clientes et montre la charge de travail par periode. Elle n'est visible que dans l'espace de travail de cabinet et seulement si vous gerez plus d'une administration cliente.
+La page Aperçu, `/werkruimtes/inzicht`, compare les administrations clientes et montre la charge de travail par période. Elle se trouve dans le groupe Travail client, qui apparaît dès que vous gérez des administrations clientes.
 
-La page traite deliberement de nombres et de jours, pas de montants :
+La page traite délibérément de nombres et de jours, pas de montants :
 
-- L'argent des clients n'est jamais additionne, car il ne vous appartient pas.
-- Aucune "valeur de portefeuille" totale ou chiffre d'affaires par client n'apparait.
+- L'argent des clients n'est jamais additionné, car il ne vous appartient pas.
+- Aucune "valeur de portefeuille" totale ou chiffre d'affaires par client n'apparaît.
 
 ### Comparaison des clients
 
-Le premier tableau liste vos clients cote a cote :
+Le premier tableau liste vos clients côte à côte :
 
 | Colonne | Signification |
 |---|---|
 | Client | Nom de l'administration cliente. |
-| TVA | Si la periode TVA en cours est declaree, combien de jours avant l'echeance, ou combien de jours de retard. |
-| Cloture par vous | Combien des dernieres periodes de declaration du client vous avez cloturees dans ce cabinet. |
-| A recouvrer | Nombre de factures en retard. |
-| Recus | Nombre de justificatifs manquants. |
-| Paye | Nombre de factures payees dans l'annee selectionnee. |
-| Delai de paiement | Moyenne de jours de retard sur les factures payees, s'il y en a. |
+| TVA | Si la période TVA en cours est déclarée, combien de jours avant l'échéance, ou combien de jours de retard. |
+| Clôturé par vous | Combien des dernières périodes de déclaration du client vous avez clôturées dans ce cabinet. |
+| À recouvrer | Nombre de factures en retard. |
+| Reçus | Nombre de justificatifs manquants. |
+| Payé | Nombre de factures payées dans l'année sélectionnée. |
+| Délai de paiement | Moyenne de jours de retard sur les factures payées, s'il y en a. |
 
-Les lignes sont triees par urgence : les clients qui ont besoin d'une action aujourd'hui apparaissent en premier. Le badge TVA utilise la meme logique d'urgence que le tableau de bord d'un espace de travail.
+Les lignes sont triées par urgence : les clients qui ont besoin d'une action aujourd'hui apparaissent en premier. Le badge TVA utilise la même logique d'urgence que le tableau de bord d'un espace de travail.
 
-### Charge de travail par periode
+### Charge de travail par période
 
-Le deuxieme tableau montre la charge de travail sur tous vos clients, repartie par periode :
+Le deuxième tableau montre la charge de travail sur tous vos clients, répartie par période :
 
 | Colonne | Signification |
 |---|---|
-| Periode | La periode TVA ou "Autres taches" pour le travail non lie a une periode. |
-| Cloture | Administrations dont la periode est cloturee. |
+| Période | La période TVA ou "Autres tâches" pour le travail non lié à une période. |
+| Clôturé | Administrations dont la période est clôturée. |
 | En cours | Administrations avec un travail actif en cours. |
-| Ouvert | Administrations avec une periode ouverte qui n'a pas encore ete touchee. |
-| Rien encore | Administrations sans activite enregistree pour cette periode. |
+| Ouvert | Administrations avec une période ouverte qui n'a pas encore été touchée. |
+| Rien encore | Administrations sans activité enregistrée pour cette période. |
 
-Utilisez ce tableau pour repere un empilement avant qu'il ne devienne un probleme d'echeance. Les periodes sont independantes de l'annee ; le tableau de comparaison ci-dessus filtre par annee.
+Utilisez ce tableau pour repérer un empilement avant qu'il ne devienne un problème d'échéance. Les périodes sont indépendantes de l'année ; le tableau de comparaison ci-dessus filtre par année.
 
 ### Ce qui ne figure pas ici
 
-**"Pourcentage de declarations a temps"** figurait dans le plan initial, mais n'est pas affiche. Dans MyCompanyDesk, "declare" signifie qu'une periode est fermee dans `period_locks`. Un client qui declare ailleurs n'aura jamais cette ligne. Un pourcentage historique marquerait systematiquement ce client comme en retard. C'est une accusation fondee sur des donnees manquantes, pas une imprecision. Une telle mesure de qualite necessite d'abord un signal explicite par administration indiquant que la declaration se fait ici.
+Un **« Pourcentage de déclarations à temps »** n'est volontairement pas affiché. Dans MyCompanyDesk, « déclaré » signifie qu'une période a été clôturée ici. Un client qui déclare ailleurs n'aura jamais de période clôturée ici. Un pourcentage historique marquerait systématiquement ce client comme en retard. C'est une accusation fondée sur des données manquantes, pas une imprécision. Une telle mesure de qualité nécessite d'abord un signal explicite par administration indiquant que la déclaration se fait ici.
 
-A la place, le tableau de comparaison inclut maintenant une colonne **Cloture par vous**. Elle indique combien des dernieres periodes du client ont ete cloturees dans ce cabinet, en utilisant les memes donnees `period_locks`. Un client qui declare ailleurs affiche simplement 0, car rien n'a ete cloture ici. La colonne est deliberement neutre et ne devient jamais rouge, car elle decrit votre propre travail, pas le comportement du client.
+À la place, le tableau de comparaison inclut maintenant une colonne **Clôturé par vous**. Elle indique combien des dernières périodes du client ont été clôturées dans ce cabinet, sur la base des mêmes périodes clôturées. Un client qui déclare ailleurs affiche simplement 0, car rien n'a été clôturé ici. La colonne est délibérément neutre et ne devient jamais rouge, car elle décrit votre propre travail, pas le comportement du client.
 
 ## Voir aussi
 
-- [Acces et comptable](/fr/settings/team) pour inviter des collegues et des comptables et definir les permissions de page
+- [Personnes ayant accès et votre comptable](/fr/settings/team) pour inviter des collègues et des comptables et définir les permissions de page
 - [Rapports](/fr/features/reports) pour la vue des clients perdus et les autres rapports
 - [Tableau de bord](/fr/features/dashboard) pour le briefing quotidien d'un espace de travail

@@ -1,7 +1,7 @@
 ---
 title: Accountant forwarding
 description: "Send invoices and expenses to your accountant's own package, such as Exact, SnelStart, Twinfield or Yuki, automatically instead of one by one."
-last_verified: 2026-08-19
+last_verified: 2026-10-13
 ---
 
 # Accountant forwarding
@@ -10,11 +10,13 @@ If your accountant works in their own package, such as Exact, SnelStart, Twinfie
 
 ## Where to find it
 
-Go to **Settings** > **Access & accountant** (`/settings/team`) and open the **Accountant** section. Below the contact list is a card called **Automatic forwarding**.
+Go to **Settings › Your accountant** (`/settings/boekhouder`). Below the contact list is a card called **Automatic forwarding**.
+
+Automatic forwarding is part of **Office**. On Desk you see an upgrade button in that spot. Sending a single item to your accountant by hand (see below) works on every plan, and accountant access is free on every plan too.
 
 ## What you can set
 
-The card reads from and writes to `/api/team/accountant-delivery`. Any workspace member can read the settings; only team admins can change them.
+Any workspace member can read the settings; only team admins can change them.
 
 | Setting | Options |
 |---|---|
@@ -54,15 +56,15 @@ Only records that are ready for an accountant leave the workspace:
 - Invoices must be sent; draft invoices are not forwarded.
 - When the receipt requirement is on, expenses must have a receipt.
 
-The engine runs on a watermark (`last_delivered_at`), not on individual status hooks, so a record is never missed because a new payment path was added later.
+Forwarding remembers up to which moment everything was delivered and picks up everything added after that, so nothing is missed, even when a new way of paying is added later.
 
 ## Delivery log and activity
 
-The **Access & accountant** page keeps a delivery log showing what was forwarded and when. It also records an activity overview for the connected accountant: what they viewed or changed inside the workspace. Both logs are visible to workspace owners and team admins; the accountant can see the delivery log but cannot erase it.
+The **Your accountant** page keeps a delivery log under **Last sent**, showing what was forwarded and when. It also records an activity overview for the connected accountant: what they viewed or changed inside the workspace. Both logs are visible to workspace owners and team admins; the accountant can see the delivery log but cannot erase it.
 
 ## Manual forwarding from a record
 
-You can also send a single invoice, expense, or quote to your accountant straight from its detail page. Look for the **Send to accountant** button near the email actions. This records a manual delivery in the same log, so you can see it next to automatic forwarding. Failed manual sends are logged too, so you do not resend the same record by accident.
+You can also send a single invoice, expense, or quote to your accountant straight from its detail page, on every plan. Look for the **Send to accountant** button near the email actions. This records a manual delivery in the same log, so you can see it next to automatic forwarding. Failed manual sends are logged too, so you do not resend the same record by accident.
 
 ## Sent box
 
@@ -70,7 +72,7 @@ Manual sends and other workspace emails appear in the **Sent** box in your inbox
 
 ## Related
 
-- [Access & accountant](/en/settings/team) for inviting your accountant and choosing a contact
+- [People with access and your accountant](/en/settings/team) for inviting your accountant and choosing a contact (in the app: **Settings › Your accountant**)
 - [Invoices](/en/features/invoices) for sending and managing sales invoices
 - [Expenses](/en/features/expenses) for adding receipts and expenses
 - [Quotes](/en/features/quotes) for creating and converting estimates

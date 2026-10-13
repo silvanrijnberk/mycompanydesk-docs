@@ -1,7 +1,7 @@
 ---
 title: Quote validity
-description: "Quote validity is a single setting: go to Settings > Facturen en offertes."
-last_verified: 2026-07-02
+description: "Quote validity is a single setting: go to Settings › Invoices and quotes."
+last_verified: 2026-10-13
 chatbot:
   triggers: ["quote validity", "valid until quote", "quote expiry", "quote expiration", "how long quote valid", "quote valid days", "geldigheid offerte", "offerte geldig", "angebotsgultigkeit", "devis validite", "validez devis", "validez cotizacion", "validade proposta"]
   actions:
@@ -10,8 +10,8 @@ chatbot:
 ---
 
 Quote validity is a single setting:
-1. Go to Settings → "Facturen en offertes"
-2. Under "Hoe lang blijft een offerte geldig?" (how long does a quote stay valid?), pick 2 weeks, 1 month, or 2 months
+1. Go to Settings › "Invoices and quotes"
+2. Under "How long does a quote stay valid?", pick 2 weeks, 1 month, or 2 months
 3. Changes save automatically
 
 New quotes get their valid-until date from this choice. Once that date passes, the quote shows as Expired in your quote list.

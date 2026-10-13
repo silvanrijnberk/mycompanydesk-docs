@@ -11,103 +11,94 @@ Deze gids helpt je stap voor stap bij het maken en versturen van je eerste factu
 
 Zorg dat je het volgende hebt gedaan:
 
-- [Je bedrijfsinformatie ingesteld](/getting-started/company-setup) (naam, adres, btw-id, IBAN)
+- [Je bedrijfsinformatie ingesteld](/getting-started/company-setup) (naam, adres, btw-id, IBAN). Ontbreekt je btw-id of IBAN nog, dan vraagt MyCompanyDesk erom zodra je de factuur definitief maakt.
 - Ten minste een klant om te factureren (je kunt er een aanmaken tijdens het proces)
 
 ## Een factuur maken
 
-1. Navigeer naar **Facturen** in de zijbalk
-2. Klik op de knop **Nieuwe factuur** (of gebruik de **+** zwevende knop op mobiel)
-3. Vul het factuurformulier in:
+1. Ga naar **Facturen** in de zijbalk
+2. Klik op **Nieuwe factuur** (of gebruik de **+**-knop op je telefoon)
+3. Vul de factuur in
+
+Op je telefoon of tablet opent een nieuwe factuur in drie stappen: **Klant**, **Regels** en **Controleren**. Met **Verder** ga je naar de volgende stap. Op een groot scherm staat alles op één pagina.
 
 ### Selecteer een klant
 
-Begin met het typen van de klantnaam. Als de klant al bestaat, selecteer deze dan uit de lijst. Zo niet, typ dan de volledige naam en klik op **Klant aanmaken** om er direct een toe te voegen. Het inline formulier vraagt om een klantnaam en adres. De KVK-lookup kan Nederlandse bedrijven voorstellen en het adres automatisch invullen; particuliere klanten voeg je toe door het adres handmatig in te typen. Alleen de klantnaam is verplicht; e-mail en het volledige adres vul je later op de klantpagina aan.
+Begin in het veld **Zoek een klant...** met het typen van de klantnaam. Bestaat de klant al, selecteer hem dan uit de lijst. Zo niet, kies **Nieuwe klant toevoegen**. Het venster **Nieuwe klant** vraagt om het type klant (**Particulier** of **Bedrijf**), de naam en het adres. Voor bedrijven zoekt de KVK-opzoeking de gegevens op en vult het adres automatisch in; voor particuliere klanten typ je het adres zelf. E-mail is optioneel. Klik op **Toevoegen** en de klant staat op de factuur.
 
-### Regelitems toevoegen
+### Regels toevoegen
 
-Elk regelitem bevat:
+Elke regel bevat:
 
-- **Omschrijving** — Waarvoor je factureert
-- **Aantal** — Aantal eenheden
-- **Eenheidsprijs** — Prijs per eenheid
-<!-- TODO(source-missing): RichardTool 5407b44 widened the valid Dutch invoice/catalog VAT-rate set to include historical rates 6% and 19%. sources/vat-rates.yaml#countries.NL currently only lists 0%, 9% and 21%, so this line must stay unchanged until the source is updated. -->
+- **Omschrijving**: waarvoor je factureert
+- **Aantal**: aantal eenheden
+- **Prijs**: prijs per eenheid. Standaard typ je prijzen zonder btw; zet **Prijzen incl. btw** aan als je liever het bedrag typt dat je klant betaalt.
+<!-- TODO(source-missing): The app also accepts the historical Dutch rates 6% and 19% on invoices and catalog items. sources/vat-rates.yaml#countries.NL currently only lists 0%, 9% and 21%, so this line must stay unchanged until the source is updated. -->
 - **Btw-tarief**: Toepasselijk btw-percentage (0%, 9%, 21%, etc.)
 
-Klik op **Item toevoegen** om meer regelitems toe te voegen. Het totaal wordt automatisch berekend inclusief btw.
+Klik op **Regel toevoegen** voor meer regels, of kies een product of dienst uit je aanbod. Het totaal wordt automatisch berekend inclusief btw.
 
 ### Factuurgegevens instellen
 
-- **Factuurnummer** — Automatisch toegekend door MyCompanyDesk
-- **Factuurdatum** — Standaard vandaag
-- **Vervaldatum** — Berekend op basis van je standaard betalingstermijn (aanpasbaar)
-- **Notities** — Optionele notities die op de factuur verschijnen
+- **Factuurnummer**: automatisch voorgesteld. De factuur krijgt haar vaste nummer zodra je haar definitief maakt.
+- **Factuurdatum**: standaard vandaag
+- **Vervaldatum**: berekend op basis van je standaard betaaltermijn (aanpasbaar)
+- **Notities**: optionele notities die op de factuur verschijnen
 
 ### Opslaan
 
-Klik op **Opslaan** om de factuur aan te maken als **concept**. Je kunt alles nog bewerken voor het versturen.
+Je hebt twee knoppen:
+
+- **Concept opslaan**: bewaart de factuur als **Concept**. Je kunt alles nog aanpassen.
+- **Definitief maken**: geeft de factuur haar nummer en maakt haar klaar om te versturen. Daarna kun je de gegevens niet meer aanpassen (verplicht voor de Belastingdienst).
 
 ## Factuur bekijken
 
-Bekijk voor het versturen hoe de PDF eruitziet:
-
-1. Open de factuurdetailpagina
-2. Klik op **Voorbeeld** om de gegenereerde PDF te bekijken
-3. Controleer of alle informatie klopt — bedrijfsgegevens, klantinfo, regelitems, totalen
+Klik in het factuurformulier op **Voorbeeld bekijken** om te zien hoe de PDF eruitziet. Controleer of alle informatie klopt: bedrijfsgegevens, klantinfo, regels en totalen. Op de factuurpagina zie je het document ook en kun je het als **PDF downloaden**.
 
 ## Factuur versturen
 
-Wanneer je klaar bent om te versturen:
+Een definitieve factuur die nog niet weg is, heeft de status **Nog versturen**. Om haar te versturen:
 
-1. Klik op **Versturen** op de factuurdetailpagina
-2. Bekijk de e-mail die naar je klant wordt gestuurd:
-   - Onderwerpregel (aanpasbaar)
-   - E-mailtekst (gebaseerd op je e-mailsjabloon)
-   - PDF-bijlage
-   - Betaallink (indien ingeschakeld)
-3. Klik op **Versturen** om de factuur te bezorgen
+1. Klik op **Versturen** op de factuurpagina
+2. Controleer in het venster **E-mail versturen** de mail aan je klant:
+   - **Aan**: het e-mailadres van je klant
+   - **Onderwerp** en **Bericht** (aanpasbaar)
+   - Onder **Opnemen in e-mail**: de **Bekijk-knop (online link)**, de **Download-knop** en de **PDF-bijlage**. Via de online link bekijkt en betaalt je klant de factuur.
+3. Klik op **E-mail versturen**
 
-De factuurstatus verandert van **Concept** naar **Verzonden**.
+De factuurstatus verandert naar **Verzonden**. Stuurde je de factuur zelf, bijvoorbeeld via WhatsApp? Klik dan op **Markeer als verzonden**.
 
 ::: tip
-Je kunt je e-mailsjablonen aanpassen in **Instellingen > E-mail**. Sjablonen ondersteunen je huisstijl en kunnen per taal worden ingesteld.
+Je e-mailteksten pas je aan in **Instellingen › E-mail**. Je kunt ook in het verstuurvenster een tekst aanpassen en **Gebruik deze tekst voortaan voor facturen** aanvinken.
 :::
 
 ## Betaling bijhouden
 
-Na het versturen verschijnt de factuur in je **Verzonden** of **Achterstallig** overzichten. Wanneer de klant betaalt:
+Na het versturen staat de factuur bij **Wacht op betaling**, of bij **Te laat** zodra de vervaldatum voorbij is. Wanneer de klant betaalt:
 
-- Als de klant via de **betaallink** betaalt, wordt de factuur automatisch als betaald gemarkeerd
+- Betaalt de klant online (iDEAL, in te stellen via **Instellingen › Betalen**), dan wordt de factuur automatisch als betaald gemarkeerd
 - Voor bankoverschrijvingen klik je op **Markeer als betaald** op de factuur om de betaling handmatig te registreren
 
 ## Factuurstatussen
 
 | Status | Beschrijving |
 |---|---|
-| **Concept** | Aangemaakt maar nog niet verstuurd. Volledig bewerkbaar. |
+| **Concept** | Aangemaakt maar nog niet definitief. Volledig bewerkbaar. |
+| **Nog versturen** | Definitief, nog niet verstuurd. |
 | **Verzonden** | Bezorgd bij de klant. Wacht op betaling. |
-| **Achterstallig** | Voorbij de vervaldatum en nog niet betaald. |
+| **Te laat** | Voorbij de vervaldatum en nog niet betaald. |
+| **Klant zegt: betaald** | De klant gaf aan dat hij heeft betaald. Controleer het en markeer de factuur als betaald. |
 | **Betaald** | Betaling ontvangen en bevestigd. |
 | **Geannuleerd** | Factuur is geannuleerd. Geen betaling verwacht. |
-
-## Snel toevoegen
-
-Voor snellere factuuraanmaak gebruik je **Snel toevoegen**:
-
-1. Klik op het snel-toevoegen-icoon op de facturenlijstpagina
-2. Selecteer een klant
-3. Voeg items toe (of gebruik een opgeslagen sjabloon)
-4. Sla op en verstuur optioneel direct
-
-Snel toevoegen is ideaal voor routinefacturen waarbij je regelmatig vergelijkbare items factureert.
 
 ## Sjablonen gebruiken
 
 Bespaar tijd met factuursjablonen:
 
-1. Maak een factuur met je meestgebruikte regelitems
+1. Maak een nieuwe factuur met je meestgebruikte regels
 2. Klik op **Opslaan als sjabloon**
-3. De volgende keer begin je een nieuwe factuur vanuit het sjabloon — alle items zijn vooraf ingevuld
+3. De volgende keer kies je bij een nieuwe factuur **Vanuit sjabloon**, en alle regels zijn vooraf ingevuld
 
 ## Volgende stappen
 
@@ -115,5 +106,5 @@ Gefeliciteerd met het versturen van je eerste factuur! Ontdek meer functies:
 
 - [Uitgaven bijhouden](/features/expenses)
 - [Offertes maken](/features/quotes) voor potentieel werk
-- [Terugkerende facturen instellen](/features/recurring-invoices) voor regelmatige facturatie
-- [Rapportages bekijken](/features/reports) om je financien te begrijpen
+- [Terugkerende facturen instellen](/features/recurring-invoices) voor regelmatige facturatie (Office)
+- [Rapportages bekijken](/features/reports) om je financiën te begrijpen

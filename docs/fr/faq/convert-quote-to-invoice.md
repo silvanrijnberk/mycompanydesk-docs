@@ -1,6 +1,6 @@
 ---
 title: "Convertir un devis en facture"
-description: "Pour convertir un devis en facture : ouvrez la page du devis et cliquez sur Créer une facture depuis le devis, un brouillon reprend les lignes."
+description: "Pour convertir un devis en facture : ouvrez le devis finalisé et cliquez sur Convertir en facture, un brouillon reprend les lignes."
 last_verified: 2026-05-09
 chatbot:
   triggers:
@@ -26,7 +26,7 @@ chatbot:
 
 Pour convertir un devis en facture :
 1. Ouvrez la page détail du devis
-2. Cliquez sur « Créer une facture depuis le devis »
+2. Cliquez sur « Convertir en facture »
 3. Une facture brouillon est créée avec le client, les lignes et les notes copiés
 4. Vérifiez l'échéance et les conditions de paiement
 5. Enregistrez puis envoyez

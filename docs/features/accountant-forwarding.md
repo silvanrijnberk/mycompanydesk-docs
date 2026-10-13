@@ -1,7 +1,7 @@
 ---
 title: Doorsturen naar boekhouder
 description: "Stuur facturen en uitgaven automatisch door naar het pakket van je boekhouder, zoals Exact, SnelStart, Twinfield of Yuki, in plaats van stuk voor stuk."
-last_verified: 2026-08-19
+last_verified: 2026-10-13
 ---
 
 # Doorsturen naar boekhouder
@@ -10,23 +10,25 @@ Als je boekhouder in een eigen pakket werkt, zoals Exact, SnelStart, Twinfield o
 
 ## Waar vind je het
 
-Ga naar **Instellingen** > **Toegang en boekhouder** (`/settings/team`) en open het onderdeel **Boekhouder**. Onder de contactlijst staat een kaart **Automatisch doorsturen**.
+Ga naar **Instellingen › Je boekhouder** (`/settings/boekhouder`). Onder de contactlijst staat een kaart **Automatisch doorsturen**.
+
+Automatisch doorsturen zit in **Office**. Op Desk zie je op die plek een knop om over te stappen. Een los stuk met de hand naar je boekhouder sturen (zie hieronder) kan op elk abonnement, en boekhouder-toegang is ook op elk abonnement gratis.
 
 ## Wat je kunt instellen
 
-De kaart leest uit en schrijft naar `/api/team/accountant-delivery`. Elk werkruimtelid kan de instellingen bekijken; alleen team-admins kunnen ze wijzigen.
+Elk werkruimtelid kan de instellingen bekijken; alleen team-admins kunnen ze wijzigen.
 
 | Instelling | Opties |
 |---|---|
-| **Ontvanger** | Kies een bestaand boekhoudercontact, of geen |
-| **Verkoopfacturen** | Uit, zodra verstuurd, of zodra betaald |
-| **Uitgaven** | Uit, of zodra toegevoegd |
-| **Hoe vaak** | Direct, dagelijks, wekelijks (maandag), maandelijks of per kwartaal |
+| **Boekhouder** | Kies een bestaand boekhoudercontact, of geen |
+| **Verkoopfacturen** | Niet doorsturen, Zodra ik ze verstuur, of Zodra ze betaald zijn |
+| **Uitgaven** | Niet doorsturen, of Zodra ik ze toevoeg |
+| **Hoe vaak** | Direct, Dagelijks, Wekelijks op maandag, Maandelijks of Per kwartaal |
 | **Alleen uitgaven met bon** | Houd uitgaven zonder bon tegen |
-| **Bonnetjes meesturen** | Bonafbeeldingen als bijlage meesturen |
+| **Bonnetjes meesturen als bijlage** | Bonafbeeldingen als bijlage meesturen |
 | **Factuur-PDF meesturen** | De factuur-PDF bijvoegen |
 | **Offertes ook meesturen** | Ook geaccepteerde offertes doorsturen |
-| **Automatisch doorsturen staat aan** | Hoofdschakelaar |
+| **Automatisch doorsturen** | Hoofdschakelaar |
 
 De standaardcadans voor de meeste kantoren is wekelijks op maandag, omdat één gebundelde mail makkelijker te verwerken is dan een los bericht per record.
 
@@ -54,15 +56,15 @@ Alleen records die klaar zijn voor een boekhouder verlaten de werkruimte:
 - Facturen moeten verstuurd zijn; conceptfacturen worden niet doorgestuurd.
 - Als de bonplicht aan staat, moeten uitgaven een bon hebben.
 
-De engine werkt op basis van een watermerk (`last_delivered_at`), niet op losse status-hooks, dus een record wordt nooit gemist omdat er later een nieuw betaalpad bijkomt.
+Het doorsturen onthoudt tot welk moment alles is afgeleverd en neemt daarna alles mee wat erbij komt, dus een stuk wordt nooit gemist, ook niet als er later een nieuwe manier van betalen bijkomt.
 
 ## Afleverlog en activiteit
 
-De pagina **Toegang en boekhouder** houdt een afleverlog bij met wat is doorgestuurd en wanneer. Daarnaast registreert het een activiteitsoverzicht van de gekoppelde boekhouder: wat deze heeft bekeken of gewijzigd in de werkruimte. Beide logs zijn zichtbaar voor eigenaars en team-admins; de boekhouder ziet het afleverlog maar kan het niet wissen.
+De pagina **Je boekhouder** houdt onder **Laatst verstuurd** een afleverlog bij met wat is doorgestuurd en wanneer. Daarnaast registreert het een activiteitsoverzicht van de gekoppelde boekhouder: wat deze heeft bekeken of gewijzigd in de werkruimte. Beide logs zijn zichtbaar voor eigenaars en team-admins; de boekhouder ziet het afleverlog maar kan het niet wissen.
 
 ## Handmatig doorsturen vanuit een record
 
-Je kunt ook een losse factuur, uitgave of offerte direct vanaf de detailpagina naar je boekhouder sturen. Zoek de knop **Naar boekhouder versturen** bij de e-mailacties. Dit legt een handmatige aflevering vast in hetzelfde log, zodat je het naast automatisch doorsturen ziet. Mislukt een handmatige verzending, dan wordt dat ook gelogd, zodat je hetzelfde stuk niet per ongeluk twee keer verstuurt.
+Je kunt ook een losse factuur, uitgave of offerte direct vanaf de detailpagina naar je boekhouder sturen, op elk abonnement. Zoek de knop **Versturen naar boekhouder** bij de e-mailacties. Dit legt een handmatige aflevering vast in hetzelfde log, zodat je het naast automatisch doorsturen ziet. Mislukt een handmatige verzending, dan wordt dat ook gelogd, zodat je hetzelfde stuk niet per ongeluk twee keer verstuurt.
 
 ## Verzonden-items
 
@@ -70,7 +72,7 @@ Handmatige verzendingen en andere werkruimte-e-mails verschijnen in het overzich
 
 ## Gerelateerd
 
-- [Toegang en boekhouder](/settings/team) voor het uitnodigen van je boekhouder en het kiezen van een contact
+- [Mensen met toegang en je boekhouder](/settings/team) voor het uitnodigen van je boekhouder en het kiezen van een contact (in de app: **Instellingen › Je boekhouder**)
 - [Facturen](/features/invoices) voor het versturen en beheren van verkoopfacturen
 - [Uitgaven](/features/expenses) voor het toevoegen van bonnen en uitgaven
 - [Offertes](/features/quotes) voor het maken en omzetten van offertes

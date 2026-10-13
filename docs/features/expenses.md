@@ -10,41 +10,43 @@ Houd al je zakelijke uitgaven bij, scan bonnen met AI en categoriseer kosten voo
 
 ## Overzicht
 
-De uitgavenpagina toont al je geregistreerde uitgaven. De betaalstatus-tabs in de bovenste balk laten je snel wisselen tussen:
+De uitgavenpagina toont al je geregistreerde uitgaven. De tabs boven de lijst laten je snel wisselen tussen:
 
-- **Alles**: elke geregistreerde uitgave
-- **Onbetaald**: nog niet betaalde uitgaven
+- **Alle**: elke geregistreerde uitgave
+- **Nog betalen**: nog niet betaalde uitgaven
 - **Betaald**: al betaalde uitgaven
+- **Te bevestigen**: alleen zichtbaar als er iets klaarstaat, zoals bankregels en concepten die nog niet in je boeken staan
 
-Uitgaven die nog moeten worden bevestigd — concepten uit de bankfeed of inbox die nog niet in je boeken staan — tonen het label **Nog te bevestigen** in plaats van betaald/onbetaald. Ze krijgen een gestreepte rand en een warme tint zodat je ze niet verwart met bevestigde uitgaven, en ze kunnen niet worden geselecteerd voor bulkacties totdat je ze boekt.
+Uitgaven die nog moeten worden bevestigd (concepten uit de bankkoppeling of inbox die nog niet in je boeken staan) tonen het label **Nog te bevestigen** in plaats van betaald of onbetaald. Ze tellen nog nergens mee en kunnen niet worden geselecteerd voor bulkacties totdat je ze boekt.
 
-Je kunt nog steeds filteren op categorie, project, datumbereik of status. Klik op een uitgave om de detailpagina te openen; klik op **Nieuw** om er handmatig een toe te voegen, of **Scan bon** om er een te extraheren uit een afbeelding of PDF.
+Je kunt nog steeds filteren op categorie, status, gefactureerd of niet en periode, en onder **Tonen** wissel je tussen **Actief**, **Archief** en **Prullenbak**. Klik op een uitgave om de detailpagina te openen. Klik op **Nieuwe uitgave** om er een toe te voegen: je scant daar een bon of vult de gegevens zelf in.
 
 Uitgaven in de prullenbak zijn zichtbaar via de weergave Prullenbak, maar je kunt ze niet bewerken, als betaald markeren of hun bon vervangen. Zet de uitgave eerst terug als je iets wilt wijzigen.
 
 ## Uitgavecategorieën
 
-Categorieën worden per werkruimte bewaard in de tabel `expense_categories`; het is geen vaste lijst in de app. Elke categorie heeft:
+Categorieën horen bij je werkruimte; het is geen vaste lijst in de app. Elke categorie heeft:
 
-- Een **sleutel** (slug voor de API en het formulier).
+- Een **Naam** die jij herkent.
 - Een standaard **Btw-behandeling**.
-- Een **aftrekbar percentage** voor gedeeltelijk aftrekbare categorieën.
-- Een **investeringsvlag** die overeenkomende uitgaven automatisch als investering markeert.
-- Een standaard **afschrijvingstermijn** in maanden voor de afschrijvingsmotor.
+- Een **Aftrekbaar %** voor gedeeltelijk aftrekbare categorieën.
+- De keuze **Aankopen als investering behandelen (afschrijven)**, die nieuwe uitgaven in die categorie standaard als investering vastlegt.
+- Een **Gebruiksduur (maanden)** voor de afschrijving.
 
-De instelwizard plant een op de branche afgestemde set bovenop de elf standaardcategorieën, zodat een software-bedrijf extra sleutels als `cloud_services_eu` krijgt, terwijl een horeca-bedrijf bijvoorbeeld `food_client_meeting` krijgt. Nieuwe categorieën vanuit de wizard worden op dezelfde manier gevalideerd als standaardcategorieën; onbekende of verkeerd getypte sleutels worden geweigerd met een 400. Systeemcategorieën kun je niet bewerken of verwijderen, omdat ze de koppeling met de aangifte bevatten. Je kunt een categorie archiveren om hem uit het formulier te verbergen. Eigen categorieën toevoegen, bewerken en verwijderen doe je via **Instellingen > Uitgavencategorieën**. Verwijderen is geblokkeerd zolang een categorie nog gebruikt wordt door uitgaven of terugkerende uitgaven; archiveer hem dan in plaats daarvan.
+Elke werkruimte begint met zes standaardcategorieën: Algemene kosten, Kantoorkosten, Autokosten & reizen, Telefoon & internet, Representatiekosten en Inkoop & materiaal. Met **Categorieën voorstellen** voeg je daar een set aan toe die bij je branche past, zodat een softwarebedrijf bijvoorbeeld **Clouddiensten (EU-leverancier)** krijgt en een horecabedrijf **Eten en drinken (klantafspraak)**. Standaardcategorieën kun je bewerken en archiveren, maar niet verwijderen. Archiveren verbergt een categorie uit het formulier. Eigen categorieën toevoegen, bewerken en verwijderen doe je via **Instellingen › Uitgavencategorieën**. Verwijderen lukt niet zolang uitgaven of terugkerende uitgaven de categorie nog gebruiken; archiveer hem dan in plaats daarvan.
 
 ## Een uitgave aanmaken
 
 ### Handmatige invoer
 
-1. Ga naar **Uitgaven > Nieuwe uitgave**
+1. Ga naar **Uitgaven**, klik op **Nieuwe uitgave** en kies onderaan **Meer velden nodig?** om het volledige formulier te openen
 2. Vul in:
+   - **Leverancier** - Aan wie je hebt betaald
    - **Omschrijving** - Waarvoor de uitgave is
    - **Bedrag** - Totale kosten (inclusief of exclusief btw)
    - **Datum** - Wanneer de uitgave plaatsvond
-   - **Categorie** - Selecteer uit je werkruimtelijst (standaardcategorieën of zelf toegevoegde categorieën). Als je een standaard uitgavecategorie hebt ingesteld onder werkruimte-instellingen, is deze hier al vooringevuld.
-   - **Btw-tarief** - Wordt vooringevuld met het standaard btw-tarief voor uitgaven van je werkruimte (in te stellen onder werkruimte-instellingen). Je kunt het altijd per uitgave aanpassen.
+   - **Categorie** - Selecteer uit je werkruimtelijst (standaardcategorieën of zelf toegevoegde categorieën). Als je een standaard uitgavecategorie hebt ingesteld onder **Instellingen › Uitgaven**, is deze hier al vooringevuld.
+   - **Btw-percentage** - Wordt vooringevuld met het standaard btw-tarief voor uitgaven van je werkruimte (in te stellen onder **Instellingen › Uitgaven**). Je kunt het altijd per uitgave aanpassen.
    - **Betaalmethode** - Wordt vooringevuld met de standaard betaalmethode voor uitgaven van je werkruimte, indien ingesteld.
 3. Voeg optioneel een **bon**-afbeelding of PDF toe
 4. Koppel optioneel aan een **project** of **klant**
@@ -52,11 +54,11 @@ De instelwizard plant een op de branche afgestemde set bovenop de elf standaardc
 
 ### Snel toevoegen
 
-Gebruik de snel-toevoegen-lade voor snelle uitgaveninvoer:
+Voor de meeste uitgaven is het zijpaneel genoeg:
 
-1. Klik op de snel-toevoegen-knop op de uitgavenlijst
-2. Vul het bedrag en de omschrijving in
-3. Selecteer een snelle categorie
+1. Klik op **Nieuwe uitgave** op de uitgavenlijst
+2. Kies **Scan een bon** of upload een foto of PDF, of vul de gegevens zelf in
+3. Controleer leverancier, bedrag, datum, categorie en btw
 4. Sla op
 
 ### Vanuit een sjabloon
@@ -65,18 +67,18 @@ Bij het aanmaken van een nieuwe uitgave klik je op **Vanuit sjabloon** (alleen z
 
 ### Van banktransacties
 
-Wanneer je [bankfeed](/features/bank) is gekoppeld, worden gecategoriseerde uitgaande transacties automatisch omgezet naar conceptuitgaven. Elke uitgave krijgt de tegenpartij als leverancier, het absolute bedrag als bruto, het standaard btw-tarief en de behandeling van de categorie, en de boekingsdatum van de transactie. Conceptuitgaven verschijnen eerst in de beoordelingsinbox van de bankfeed, waar je ze kunt bevestigen, bewerken of afwijzen voordat ze in je boekhouding komen. Zie [auto-importuitgaven beoordelen](/features/bank#auto-importuitgaven-beoordelen) voor de volledige workflow.
+Wanneer je [bankrekening](/features/bank) is gekoppeld (Office), worden gecategoriseerde uitgaande transacties automatisch omgezet naar conceptuitgaven. Elke uitgave krijgt de tegenpartij als leverancier, het absolute bedrag als bruto, het standaard btw-tarief en de behandeling van de categorie, en de boekingsdatum van de transactie. Conceptuitgaven verschijnen eerst onder **Te bevestigen** op de uitgavenpagina, waar je ze kunt bevestigen, bewerken of afwijzen voordat ze in je boekhouding komen. Zie [van transactie naar uitgave](/features/bank#van-transactie-naar-uitgave) voor de volledige workflow.
 
 ### Bonnen scannen
 
 Laat AI automatisch uitgavegegevens uit bonnen extraheren:
 
-1. Ga naar **Uitgaven > Bon scannen**
+1. Ga naar **Uitgaven** en klik op **Nieuwe uitgave**. Met **Scan een bon** leest het zijpaneel de bon meteen uit. Wil je een bon in meerdere regels splitsen, open dan het volledige formulier en zet de bon bij **Begin met een bon**: je komt dan op het scanscherm
 2. Upload een bonafbeelding (JPEG, PNG, WebP) of PDF
-3. Kies de extractiemodus:
-   - **Enkel** - Een uitgave van de bon
-   - **Meervoudig** - Meerdere regelitems van een bon
-4. Controleer de geextraheerde gegevens (datum, bedrag, leverancier, omschrijving)
+3. Kies op het scanscherm eventueel onder **Geavanceerde instellingen** bij **Wat wil je scannen?**:
+   - **Eén totaal** - Eén uitgave van de bon
+   - **Meerdere items** - Meerdere regels van een bon
+4. Controleer de herkende gegevens (datum, bedrag, leverancier, omschrijving)
 5. Bevestig om de uitgave(n) aan te maken
 
 Staat er voor een gescande bon al een uitgave in je boeken, meestal de bankboeking van diezelfde betaling, dan draagt de controlekaart de knop **Bon hieraan toevoegen** (voor een uitgave die nog geen bon heeft): de bon hangt dan aan de bestaande uitgave in plaats van dat er een tweede wordt geboekt, en de rij valt uit de beoordeling. Dubbele bedragen op één bon worden gevlagd en blijven losse kosten. Zie [Bonnen scannen](/advanced/receipt-scanning) voor de details.
@@ -87,9 +89,9 @@ Bonnen scannen is beschikbaar op elk abonnement, ook op Desk. Het aantal scans p
 
 ### Vergrendelde btw-periodes
 
-Als een inboxbericht wordt omgezet naar een uitgave met een datum in een btw-periode die al is aangegeven, wordt de automatische boeking geweigerd om de ingediende aangifte te beschermen. In plaats van de factuur stilzwijgend te laten verdwijnen, maakt MyCompanyDesk een `inbox_expense_period_locked`-melding aan die de leverancier en factuurdatum noemt en aangeeft dat de btw-periode vergrendeld is. De melding brengt je naar de inboxlijst, zodat je de doorgestuurde factuur daar kunt terugvinden. Je hebt vervolgens dezelfde twee opties als bij andere gevallen van een vergrendelde periode: boek de uitgave handmatig met een datum in de huidige open periode, of dien een suppletieaangifte in voor de vergrendelde periode.
+Als een inboxbericht wordt omgezet naar een uitgave met een datum in een btw-periode die al is aangegeven, wordt de automatische boeking geweigerd om de ingediende aangifte te beschermen. In plaats van de factuur stilzwijgend te laten verdwijnen, maakt MyCompanyDesk een melding aan die de leverancier en factuurdatum noemt en aangeeft dat de btw-periode vergrendeld is. De melding brengt je naar de inboxlijst, zodat je de doorgestuurde factuur daar kunt terugvinden. Je hebt vervolgens dezelfde twee opties als bij andere gevallen van een vergrendelde periode: boek de uitgave handmatig met een datum in de huidige open periode, of dien een suppletieaangifte in voor de vergrendelde periode.
 
-De snelle invoerlade toont dezelfde btw-periodestatus naast het datumveld voordat je opslaat, zodat een vergrendelde of coulanceperiode zichtbaar is voordat de server de boeking weigert.
+Het zijpaneel van **Nieuwe uitgave** toont dezelfde btw-periodestatus naast het datumveld voordat je opslaat, zodat een vergrendelde of coulanceperiode zichtbaar is voordat de server de boeking weigert.
 
 Als een doorgestuurde e-mail of een scan wel een uitgave oplevert, maar de bijbehorende bon niet meegevoegd kan worden (bijvoorbeeld een niet-ondersteund bestandstype of een te groot bestand), wordt de uitgave toch aangemaakt en krijgt hij een notitie dat de bijlage ontbreekt. Upload de bon daarna handmatig op de detailpagina van de uitgave.
 
@@ -112,6 +114,7 @@ Het btw-bedrag wordt automatisch berekend en opgenomen in je [Btw-rapportages](/
 In speciale gevallen stel je de btw-behandeling van de uitgave in:
 
 - **Standaard**: binnenlandse btw.
+- **Btw verlegd naar mij (binnenland)**: een Nederlandse leverancier verlegt de btw naar jou, bijvoorbeeld een onderaannemer in de bouw. Dit komt in rubriek 2a.
 - **Verlegd (EU)**: je rekent de btw zelf af voor een zakelijke aankoop uit de EU, rubriek 4b.
 - **Verlegd (buiten de EU)**: leverancier buiten de EU factureert 0% btw (sources/vat-rates.yaml#countries.NL.zero), jij rekent zelf af in rubriek 4a. Gebruik dit bijvoorbeeld voor een Amerikaanse leverancier zoals Anthropic of OpenAI.
 - **Vrijgesteld**: de levering is btw-vrij.
@@ -127,9 +130,9 @@ Meestal berekent MyCompanyDesk het btw-bedrag uit het tarief en het nettobedrag.
 
 ### Correcties in vergrendelde perioden
 
-Zit een uitgave in een vergrendelde btw-periode, dan blokkeert het formulier wijzigingen in de financiële velden en biedt een correctiepad. De foutmelding komt via de code `PERIOD_LOCKED`, zodat je een Nederlandse toelichting ziet in plaats van de ruwe backend-tekst. De correctie wordt in een latere, open periode aangemaakt en verwijst naar de oorspronkelijke vergrendelde uitgave, zodat je later nog kunt zien wat er is gewijzigd.
+Zit een uitgave in een vergrendelde btw-periode, dan blokkeert het formulier wijzigingen in de financiële velden en biedt een correctiepad: **Correctie maken in huidige periode**. De correctie wordt in een latere, open periode aangemaakt en verwijst naar de oorspronkelijke vergrendelde uitgave, zodat je later nog kunt zien wat er is gewijzigd.
 
-De poort vergelijkt de waarden die daadwerkelijk weggeschreven zouden worden, niet alleen de velden die zichtbaar zijn in het formulier. Dat geldt ook voor meerregelige `lines`, investeringsvlaggen en afschrijvingsinvoer zoals restwaarde, gebruiksduur en privégebruikpercentage. Elke financieel relevante wijziging in een ingediende periode wordt geweigerd; niet-financiële aanpassingen zoals notities, betaalstatus of bonbijlagen blijven wel mogelijk.
+De poort vergelijkt de waarden die daadwerkelijk weggeschreven zouden worden, niet alleen de velden die zichtbaar zijn in het formulier. Dat geldt ook voor uitgaven met regels in meerdere btw-tarieven, de investeringsschakelaar en afschrijvingsinvoer zoals restwaarde, gebruiksduur en privégebruikpercentage. Elke financieel relevante wijziging in een ingediende periode wordt geweigerd; niet-financiële aanpassingen zoals notities, betaalstatus of bonbijlagen blijven wel mogelijk.
 
 ## Uitgaven koppelen
 
@@ -149,10 +152,8 @@ Op de uitgavedetail staat een regel **Gekoppelde factuur** zodra hij aan een fac
 
 Selecteer meerdere uitgaven voor bulkwerk. Tijdens een selectie verschijnt er een vinkjeskolom in de lijst; buiten een selectie zijn er geen vinkjes, en aan een lege lijst hangt helemaal geen selecteerknop. Je sortering op de lijst wordt onthouden en overleeft een herladen.
 
-- **Categoriseren** - Wijzig categorie in bulk
 - **Archiveren** - Verplaats naar archief. Als je meerdere onbetaalde uitgaven met een vervaldatum tegelijk archiveert, vallen hun openstaande betaalherinneringen stil. De bulkbalk toont eerst een bevestiging zodra een van de geselecteerde uitgaven onbetaald is én een vervaldatum heeft, zodat je weet hoeveel van de geselecteerde uitgaven hun herinnering kwijtraken. Zolang de uitgaven gearchiveerd zijn, blijft de herinnering uit. Zet je een gearchiveerde uitgave later terug, dan maakt de dagelijkse sweep de herinnering opnieuw aan, maar pas de volgende nacht op zijn vroegst.
-- **Verwijderen** - Permanent verwijderen
-- **Exporteren** - Download als CSV
+- **Verwijderen** - Verplaats naar de prullenbak, waar je de uitgave nog kunt terugzetten. In **Archief** kies je **Terugzetten naar actief** of **Naar prullenbak**; in **Prullenbak** kies je **Herstellen naar archief** of **Permanent verwijderen**.
 - **Markeer als betaald** - Markeer geselecteerde uitgaven als betaald. Als je een bank- of inbox-concept als betaald markeert, wordt de vlag "Te controleren" tegelijkertijd verwijderd, zodat de rij zichtbaar wordt in je rapportages, btw-aangifte en boekhoudersexport in plaats van verborgen te blijven. Dit gebeurt alleen als je de status op betaald zet, niet als je hem terugzet naar onbetaald.
 
 Als een bulkactie wordt geweigerd omdat één of meer geselecteerde regels in een vergrendelde btw-periode vallen, noemt de foutmelding het exacte tijdvak en legt hij uit wat je kunt doen. Een ingediende en vergrendelde periode kan alleen via een suppletieaangifte worden heropend. Een kaal slot (de aangiftedeadline is verstreken zonder dat er een aangifte is ingediend) kun je tijdelijk ontgrendelen op de btw-pagina. Haal de regels in dat tijdvak uit je selectie, of gebruik de passende correctieroute, en probeer het opnieuw.
@@ -161,33 +162,32 @@ Als een bulkactie wordt geweigerd omdat één of meer geselecteerde regels in ee
 
 Rij je privé zakelijk, dan kun je die ritten bundelen tot één uitgave met een kilometervergoeding. De ritten komen uit Uren en uit het rittenoverzicht hieronder, dus het boeken vraagt toegang tot die pagina's; zonder toegang zegt de uitleg wat je bij de beheerder moet vragen.
 
-1. Ga naar **Uitgaven** en open de kilometervergoeding.
+1. Ga naar **Uitgaven › Kilometers** en klik boven de lijst op **Nu boeken**. Je komt op **Kilometervergoeding boeken**.
 2. Kies de periode die je wilt boeken.
 3. Selecteer de ritten die je meeneemt.
-4. Klik op **Boek als uitgave**.
+4. Klik op **Boek als kosten**.
 
 De uitgave wordt aangemaakt met één regel voor het totaal aan zakelijke kilometers.
 
-<!-- TODO(source-missing): Het Nederlandse kilometervergoedingstarief per kilometer staat nog niet in sources/. Quote het tarief niet in de documentatie totdat een mens het huidige bedrag heeft gecontroleerd op belastingdienst.nl. -->
+De vergoeding is € 0,25 per zakelijke kilometer voor ritten in 2026 en € 0,23 voor ritten tot en met 2025 ([`sources/nl-mileage.yaml#ib_entrepreneur.per_km_eur`](https://github.com/silvanrijnberk/mycompanydesk-docs/blob/main/sources/nl-mileage.yaml)). Elke rit krijgt het bedrag van zijn eigen jaar, dus een periode over 1 januari heen telt beide bedragen. Over de vergoeding gaat geen btw, en brandstof, verzekering, tol en parkeren zitten er al in: die trek je niet nog eens apart af ([`sources/nl-mileage.yaml#ib_entrepreneur.conditions`](https://github.com/silvanrijnberk/mycompanydesk-docs/blob/main/sources/nl-mileage.yaml)).
 
 Als je werkruimte een bedrijfsauto gebruikt, zijn de werkelijke autokosten al als uitgave geboekt; een aparte kilometervergoeding is dan niet nodig.
 
 ## Investeringen en afschrijving
 
-Categorieën met `auto_flag_investment = true` (doorgaans uitrusting en andere investeringen) zetten een uitgave automatisch om in een investering:
+Zet je bij een uitgave de schakelaar **Investering (afschrijven)** aan, of staat bij de categorie **Aankopen als investering behandelen (afschrijven)** aan, dan wordt de uitgave een investering:
 
-- De uitgave krijgt `is_investment = true`.
-- Er wordt een maandelijkse afschrijvingsregeling aangemaakt op basis van `useful_life_months` van de categorie (standaard 60 maanden als deze niet is ingesteld).
+- Er wordt een maandelijkse afschrijvingsregeling aangemaakt over de looptijd bij **Afschrijven over (jaar)**, standaard de gebruiksduur van de categorie (60 maanden als die niet is ingesteld).
 - De regeling gebruikt lineaire afschrijving met dagpro rata voor de eerste en laatste kalendermaand, conform de richtlijnen van de Belastingdienst.
-- Regels worden bewaard in `expense_depreciation_lines` en doorgegeven aan rapportages.
+- De afschrijving telt mee in je rapportages.
 
-De afschrijfbare basis is gelijk aan de geactiveerde waarde die de grootboekpost boekt naar de activarekening (`apps/api/src/modules/ledger/posting-engine.js`), niet het bruto-bedrag exclusief btw. Daarmee worden ook niet-aftrekbare voorbelasting (voor categorieën met een aftrekpercentage onder de 100%) en het zakelijke deel na privégebruikpercentage meegenomen, zodat de afschrijvingsregeling, het objectenregister en de KIA-berekening allemaal van hetzelfde bedrag uitgaan.
+De afschrijfbare basis is gelijk aan de waarde die in de boekhouding als bezitting wordt geactiveerd, niet het bruto-bedrag exclusief btw. Daarmee worden ook niet-aftrekbare voorbelasting (voor categorieën met een aftrekpercentage onder de 100%) en het zakelijke deel na privégebruikpercentage meegenomen, zodat de afschrijvingsregeling, het objectenregister en de KIA-berekening allemaal van hetzelfde bedrag uitgaan.
 
 Het bewerken van categorie, datum, bedrag, btw-behandeling, privégebruikpercentage, gebruiksduur of restwaarde op een bestaande uitgave triggert herberekening. Als een bestaande afschrijvingsregel al in een vergrendelde btw-periode valt, wordt de herberekening geweigerd, zodat de ingediende aangifte niet stilletjes wijzigt. Het terugzetten van een investeringsuitgave naar een niet-investeringscategorie verwijdert de afschrijvingsregels.
 
-Een investering waarvan de eigen datum nog in een open periode valt, kan toch tegen een vergrendeld schema aanlopen als de afschrijvingsregels in een latere, vergrendelde btw-periode vallen. Dan toont het formulier de foutcode `DEPRECIATION_SCHEDULE_LOCKED` in plaats van `PERIOD_LOCKED`. Gebruik de actie **Tijdelijk ontgrendelen** voor dat tijdvak op de [Btw-pagina](/features/vat) en probeer de wijziging opnieuw.
+Een investering waarvan de eigen datum nog in een open periode valt, kan toch tegen een vergrendeld schema aanlopen als de afschrijvingsregels in een latere, vergrendelde btw-periode vallen. Dan meldt het formulier dat de afschrijving doorloopt in een vergrendelde btw-periode. Gebruik de actie **Tijdelijk ontgrendelen** voor dat tijdvak op de [Btw-pagina](/features/vat) en probeer de wijziging opnieuw.
 
-Treinkaartjes en andere autokosten kun je ook als gewone uitgave boeken via **Uitgaven > Nieuw** met leverancier, bedrag, datum en categorie.
+Treinkaartjes en andere autokosten kun je ook als gewone uitgave boeken via **Uitgaven › Nieuwe uitgave** met leverancier, bedrag, datum en categorie.
 
 ## Ritten
 
@@ -211,13 +211,13 @@ In de lijst toont een uitgave in vreemde valuta het omgerekende eurobedrag; de d
 
 ## Terugkerende uitgaven
 
-Voor regelmatige kosten (huur, abonnementen, etc.) stel je [terugkerende uitgaven](/features/recurring-expenses) in om het aanmaken te automatiseren.
+Voor regelmatige kosten (huur, abonnementen, etc.) stel je op Office [terugkerende uitgaven](/features/recurring-expenses) in om het aanmaken te automatiseren. Je vindt ze via de knop **Terugkerende uitgaven** op de uitgavenpagina.
 
 ## Importeren
 
 Importeer uitgaven vanuit CSV:
 
-1. Ga naar **Profiel > Importeren**
+1. Ga naar **Instellingen › Overstappen** en klik op **Facturen importeren**; je komt op **CSV-gegevens importeren**
 2. Selecteer **Uitgaven** als gegevenstype
 3. Upload je CSV-bestand
 4. Koppel kolommen aan velden
@@ -237,8 +237,8 @@ Het aanmaken van een uitgave schrijft voortaan voor elk ontstaanspad een regel i
 
 ## Tips
 
-- Stel je standaard btw-tarief, standaard uitgavecategorie en standaard betaalmethode voor uitgaven in onder **Instellingen > Uitgaven** zodat het formulier niet steeds leeg begint. Een 0%-btw-instelling werkt correct; het formulier behandelt die als een bewuste keuze.
-- Eigen categorieën beheer je in **Instellingen > Uitgavencategorieën**. Systeemcategorieën kun je niet verwijderen; archiveer ze als je ze niet meer wilt zien.
+- Stel je standaard btw-tarief, standaard uitgavecategorie en standaard betaalmethode voor uitgaven in onder **Instellingen › Uitgaven** zodat het formulier niet steeds leeg begint. Een 0%-btw-instelling werkt correct; het formulier behandelt die als een bewuste keuze.
+- Eigen categorieën beheer je in **Instellingen › Uitgavencategorieën**. Systeemcategorieën kun je niet verwijderen; archiveer ze als je ze niet meer wilt zien.
 - Schakel [AI-suggesties](/advanced/ai-features) in voor automatische categorie-aanbevelingen
 - Voeg altijd bonnen toe - ze zijn essentieel voor belastingcontroles
 - Gebruik projecten om de verhouding uitgaven-inkomsten bij te houden

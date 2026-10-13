@@ -1,7 +1,7 @@
 ---
-title: Teamtoegang
-description: "To manage who has access to your workspace: go to Settings > Toegang en boekhouder (access and accountant)."
-last_verified: 2026-09-15
+title: "Teamtoegang"
+description: "Zo beheer je wie toegang heeft tot je werkruimte: ga naar Instellingen, Mensen met toegang, en nodig iemand uit of beheer zijn rechten."
+last_verified: 2026-10-13
 chatbot:
   triggers:
     - "team access"
@@ -23,7 +23,7 @@ chatbot:
     - "teamleden"
     - "uitnodigen"
     - "werkruimte"
-    - "toegang en boekhouder"
+    - "mensen met toegang"
   actions:
     - { label: "Open access settings", to: "/settings/toegang" }
   follow_up:
@@ -34,11 +34,13 @@ chatbot:
 
 ---
 
-To manage who has access to your workspace:
+Zo beheer je wie toegang heeft tot je werkruimte:
 
-1. Go to Settings → **Toegang en boekhouder** (access and accountant)
-2. Review current members and roles in the **Mensen met toegang** (people with access) section
-3. Click **Iemand toegang geven** (give someone access) to invite a teammate by email
-4. Click the **Toegang beheren** (manage access) button or gear icon on a member row to set page permissions
+1. Ga naar Instellingen › **Mensen met toegang**
+2. Bekijk wie er al toegang heeft en met welke rol: **Eigenaar**, **Beheerder** of **Lid**
+3. Klik op **Geef iemand toegang**, vul het e-mailadres in en klik op **Verstuur uitnodiging**
+4. Wil je instellen wat iemand per pagina mag? Open het menu bij die persoon (op je telefoon de knop **Beheren**) en kies **Toegang beheren**
 
-Permissions are managed per page with Read, Write and Create options. Inviting team members requires the **Office** plan; the accountant section on the same page is free on every plan.
+Rechten stel je per pagina in met Lezen, Schrijven en Aanmaken, zie [Teamrechten](/faq/team-permissions). Mensen uitnodigen kan met het **Office**-abonnement, zoveel als je wilt en zonder kosten per persoon.
+
+Je boekhouder geef je toegang via Instellingen › **Je boekhouder**. Dat is gratis op elk abonnement.

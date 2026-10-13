@@ -1,6 +1,6 @@
 ---
 title: Changer le mot de passe
-description: "Pour changer votre mot de passe : allez dans Paramètres > Connexion, entrez votre mot de passe actuel, entrez puis confirmez votre nouveau mot de passe."
+description: "Pour changer votre mot de passe : allez dans Paramètres › Connexion, entrez votre mot de passe actuel, entrez puis confirmez votre nouveau mot de passe."
 last_verified: 2026-10-03
 chatbot:
   triggers: ["change password", "update password", "new password", "password security", "wachtwoord wijzigen", "nieuw wachtwoord", "passwort andern", "wie aendere ich mein passwort", "changer mot de passe"]
@@ -9,7 +9,7 @@ chatbot:
   follow_up: ["How do I reset my password if I forgot it?", "How do I change my email?"]
 ---
 Pour changer votre mot de passe :
-1. Allez dans Paramètres → « Connexion »
+1. Allez dans Paramètres › « Connexion »
 2. Entrez votre mot de passe actuel
 3. Entrez puis confirmez votre nouveau mot de passe
 4. Cliquez sur « Changer le mot de passe »

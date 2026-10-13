@@ -1,6 +1,6 @@
 ---
 title: "Créer un projet"
-description: "Pour créer un projet : ouvrez Projets puis Nouveau projet, saisissez le nom, le numéro, le client, le statut, le budget et le taux horaire."
+description: "Pour créer un projet : ouvrez Projets, cliquez sur Créer, puis saisissez le nom, le numéro, le client, le statut, le budget et le taux horaire."
 last_verified: 2026-05-09
 chatbot:
   triggers:
@@ -19,7 +19,7 @@ chatbot:
 ---
 
 Pour créer un projet :
-1. Ouvrez Projets puis « Nouveau projet »
+1. Ouvrez Projets et cliquez sur « Créer »
 2. Saisissez le nom, le numéro et la description du projet
 3. Associez le client si nécessaire
 4. Définissez le statut, les dates, le budget et le taux horaire utiles
