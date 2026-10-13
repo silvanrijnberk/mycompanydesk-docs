@@ -25,6 +25,7 @@ The quote form is similar to the invoice form — if you know how to create an i
 The form carries the same **Amounts incl. VAT** switch as the invoice form. With it on, you type the prices the customer pays and the VAT comes out of them. See [Invoices](/en/features/invoices#prices-including-vat).
 
 ## Photos on a quote
+
 A quote can hold up to twelve photos. They show what the quote is about: the spot, the current situation, or the damage before you start. Add them on the quote with **Add photos**, straight from the camera or from your gallery.
 
 Every photo carries an optional description, so the customer knows what they are looking at. You can reorder photos or remove them again. Photos you add before saving the quote are kept as pending: the quote is saved as a draft automatically, so nothing is lost.
